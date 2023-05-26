@@ -1,5 +1,5 @@
 ---
-title: AEMas a Cloud Service移轉歷程快速入門
+title: 迁移到AEMas a Cloud Service历程入门
 description: 通过熟悉迁移到 AEM as a Cloud Service 的基础知识，开始您的迁移之旅
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
@@ -9,37 +9,37 @@ ht-degree: 24%
 
 ---
 
-# AEMas a Cloud Service移轉歷程快速入門 {#getting-started}
+# 迁移到AEMas a Cloud Service历程入门 {#getting-started}
 
-在AEMas a Cloud Service移轉歷程的這一部分，您將瞭解將內部部署或Adobe Managed Services安裝的AEM移至雲端的基本知識。
+在AEMas a Cloud Service迁移历程的这一可选部分中，您将了解将内部部署或Adobe Managed Services安装的AEM迁移到云的基础知识。
 
 ## 目标 {#objective}
 
-本檔案可協助您瞭解為何應使用雲端原生AEM版本，以及移轉至AEMas a Cloud Service的不同階段。 閱讀本檔案後，您應該：
+本文档可帮助您了解为何应使用AEM的云原生版本，以及迁移到AEMas a Cloud Service的各个阶段。 阅读本文档后，您应：
 
-* 瞭解as a Cloud Service移動AEM的好處
-* 熟悉轉換至雲端所需完成的主要步驟
+* 了解as a Cloud Service移动AEM的好处
+* 熟悉过渡到云所必须执行的主要步骤
 
 ## 移动到 AEM as a Cloud Service 的好处 {#benefits-of-moving-to-aem-as-a-cloud-service}
 
-AEMas a Cloud Service為Experience Manager Assets、Forms和Screens提供可擴充、安全且敏捷的技術基礎，讓行銷人員和IT專業人員專注於大規模提供具影響力的體驗。
+AEMas a Cloud Service为Experience Manager Assets、Forms和Screens提供了可扩展、安全且敏捷的技术基础，使营销人员和IT专业人员能够专注于大规模提供有影响力的体验。
 
-借助 AEM as a Cloud Service，您的团队便可以将重心放在创新上面，而不是放在规划产品升级上面。新產品功能會經過徹底測試，並持續傳送給您的團隊，讓團隊隨時都能存取最新版AEM。
+借助 AEM as a Cloud Service，您的团队便可以将重心放在创新上面，而不是放在规划产品升级上面。新产品功能经过彻底测试，并在无任何中断的情况下交付给您的团队，以便他们始终可以访问最新版本的AEM。
 
-## 了解轉換至AEMas a Cloud Service {#understanding-transition-to-aem-as-a-cloud-service}
+## 了解过渡到AEMas a Cloud Service {#understanding-transition-to-aem-as-a-cloud-service}
 
-移轉至Cloud Service的歷程涉及以下階段：
+向Cloud Service的迁移历程涉及以下阶段：
 
-* 首先，判斷您的部署是否已準備好使用as a Cloud Service移至AEM [整備階段](/help/journey-migration/readiness.md). 在此階段中，您也應熟悉AEMas a Cloud Service所引入的變更
-* 接下來，使用讓您的程式碼和內容雲端做好準備 [實作階段](/help/journey-migration/implementation.md). 在此階段中，您將探索提供的工具Adobe以輕鬆移動到雲端
-* 一切準備就緒後，您就可以使用 [上線階段](/help/journey-migration/go-live.md)
-* 最後，請務必在移轉完成後監控問題並改善效能，位置在 [上線後階段](/help/journey-migration/post-go-live.md).
+* 首先，确定您的部署是否准备好通过as a Cloud Service移动到AEM [就绪阶段](/help/journey-migration/readiness.md). 在此阶段，您还应熟悉AEMas a Cloud Service引入的更改
+* 接下来，使用为您的代码和内容云做好准备 [实施阶段](/help/journey-migration/implementation.md). 在此阶段，您将浏览提供的工具Adobe以轻松移动到云端
+* 一切准备就绪后，您就可以使用 [上线阶段](/help/journey-migration/go-live.md)
+* 最后，请确保在迁移完成后监控问题并改进性能，在 [上线后阶段](/help/journey-migration/post-go-live.md).
 
-下圖顯示建議的AEMas a Cloud Service轉換歷程的高層級表示。
+下图显示了推荐的过渡到AEMas a Cloud Service历程的高级呈现。
 
 ![图像](/help/journey-migration/assets/move-aemcloud-process.png)
 
-您也可以參閱下圖，以取得更詳細、更精細的移轉歷程檢視。
+您还可以参阅下图，了解迁移历程的更详细、更精细的视图。
 
 ![图像](/help/journey-migration/assets/migration-process.png)
 
@@ -52,10 +52,10 @@ AEMas a Cloud Service為Experience Manager Assets、Forms和Screens提供可擴�
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html#aem-moving-to-aem-guide" text="迁移到 AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="对 AEM Sites as a Cloud Service 的重要更改"
 
-除了此歷程中概述的步驟外，Adobe還提供Cloud Acceleration Manager，這是一個雲端型應用程式，旨在引導您的IT團隊完成從規劃到Cloud Service上線的轉換歷程。 使用 Adobe 推荐的最佳实践、技巧、文档和工具在迁移到 AEM as Cloud Service 的历程中的每个阶段提供帮助，让您的团队成功完成迁移。
+除了此历程中概述的步骤外，Adobe还提供了Cloud Acceleration Manager，这是一个基于云的应用程序，旨在指导您的IT团队在Cloud Service上完成从规划到上线的过渡过程。 使用 Adobe 推荐的最佳实践、技巧、文档和工具在迁移到 AEM as Cloud Service 的历程中的每个阶段提供帮助，让您的团队成功完成迁移。
 
-您可以參閱 [Cloud Acceleration Manager檔案](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) 或觀看 [簡介影片](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) 以開始您的移轉歷程。
+您可参阅 [Cloud Acceleration Manager文档](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) 或观看 [简介视频](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) 以开始您的迁移历程。
 
 ## 后续内容 {#what-is-next}
 
-感謝您開始使用AEM Cloud Service移轉歷程！ 閱讀本檔案後，您應快速瞭解 [整備階段](/help/journey-migration/readiness.md)，可協助您判斷部署是否已準備好移至AEMas a Cloud Service。
+感谢您开始AEM Cloud Service迁移之旅！ 现在您已经阅读了本文档，您应该能够快速了解 [就绪阶段](/help/journey-migration/readiness.md)，这有助于您确定部署是否准备好移至AEMas a Cloud Service。

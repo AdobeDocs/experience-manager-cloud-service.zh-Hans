@@ -20,13 +20,13 @@ ht-degree: 88%
 
 体验片段：
 
-* 是體驗（頁面）的一部分。
-* 可以跨多個頁面使用。
-* 以範本為基礎（僅可編輯）以定義結構和元件。
+* 是体验（页面）的一部分。
+* 可以跨多个页面使用。
+* 基于模板（仅可编辑）来定义结构和组件。
 * 此模板用于创建体验片段的&#x200B;*根页面*。
-* 由段落系統中一或多個元件組成，具有版面。
-* 可以包含其他體驗片段。
-* 可與其他元件（包括其他體驗片段）結合以形成完整頁面（體驗）。
+* 由段落系统中一个或多个带布局的组件组成。
+* 可以包含其他体验片段。
+* 可以与其他组件（包括其他体验片段）组合以形成完整的页面（体验）。
 * 可以基于根页面创建一个或多个变体。
 * 这些变体可以共享内容和/或组件。
 * 可以划分为可在片段的多个变体中使用的构建块。
@@ -55,19 +55,19 @@ ht-degree: 88%
 >
 >* `experience-fragments-editors`
 >
->如果您遇到任何問題，請聯絡您的系統管理員。
+>如果您遇到任何问题，请联系您的系统管理员。
 
-## 何時應使用體驗片段？ {#when-should-you-use-experience-fragments}
+## 何时应使用体验片段？ {#when-should-you-use-experience-fragments}
 
-該使用「體驗片段」的情況：
+体验片段的使用说明：
 
-* 每當您想要重複使用體驗時。
-   * 將與相同或類似內容重複使用的體驗。
+* 当您希望重用体验时。
+   * 将与相同或相似内容重用的体验。
 * 当您使用 AEM 作为第三方的内容投放平台时。
    * 任何需要使用 AEM 作为内容投放平台的解决方案。
    * 将内容嵌入第三方触点。
-* 如果您有具有不同變數或轉譯的體驗。
-   * 管道或內容特定變數。
+* 如果您的体验包含不同的变体或演绎版。
+   * 特定于渠道或上下文的变量。
    * 一些对组有意义的体验（例如，在各渠道间具有不同体验的营销活动）。
 * 当您使用全渠道商业时。
    * 使触点具有事务性。
@@ -184,7 +184,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 1. 输入&#x200B;**体验片段**&#x200B;的&#x200B;**属性**。
 
-   A **標題** 為必填欄位。 如果 **名稱** 保留為空白，其衍生自 **標題**.
+   A **标题** 是必需的。 如果 **名称** 留空，将从 **标题**.
 
    ![体验片段属性](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -196,7 +196,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 1. 单击&#x200B;**创建**。
 
-   將顯示訊息。 选择:
+   将显示一条消息。 选择:
 
    * **完成**，可返回至控制台
    * **打开**，可打开片段编辑器
@@ -207,9 +207,9 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 >[!NOTE]
 >
->另請參閱 [編輯頁面內容](/help/sites-cloud/authoring/fundamentals/editing-content.md) 以取得有關如何使用頁面編輯器的詳細資訊。
+>参见 [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md) 有关如何使用页面编辑器的更多信息。
 
-下列範例程式說明如何為產品建立Teaser：
+以下示例过程说明了如何为产品创建Teaser：
 
 1. 从[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)中拖放所需的组件。
 
@@ -225,19 +225,19 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 ## 创建体验片段变体 {#creating-an-experience-fragment-variation}
 
-您可以根據需求建立體驗片段的變體：
+您可以根据自己的需求创建体验片段的变体：
 
-1. 開啟您的片段，用於 [編輯](#editing-your-experience-fragment).
+1. 打开片段，用于 [编辑](#editing-your-experience-fragment).
 1. 打开&#x200B;**变体**&#x200B;选项卡。
 
    ![创建体验片段变体](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **建立** 可讓您建立：
+1. **创建** 允许您创建：
 
    * **变体**
    * **live-copy 形式的变量**.
 
-1. 定義必要的屬性：
+1. 定义所需的属性：
 
    * **模板**
    * **标题**
@@ -256,7 +256,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 您现在可以在创作页面时使用您的体验片段：
 
-1. 開啟任何頁面進行編輯。
+1. 打开任意页面进行编辑。
 
 1. 在页面段落系统中创建体验片段组件的实例：
 
@@ -281,7 +281,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 要创建构建块，请执行以下操作：
 
-1. 在體驗片段編輯器中，選取您要重複使用的元件：
+1. 在体验片段编辑器中，选择要重复使用的组件：
 
    ![为构建块选择组件](/help/sites-cloud/authoring/assets/xf-09.png)
 
@@ -299,7 +299,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 #### 管理构建块 {#managing-a-building-block}
 
-您的构建块会显示在&#x200B;**构建块**&#x200B;选项卡中。對於每個區塊，都可使用下列動作：
+您的构建块会显示在&#x200B;**构建块**&#x200B;选项卡中。对于每个块，可以使用以下操作：
 
 * **转至母版**：在新选项卡中打开根页面变体
 * **重命名**
@@ -428,11 +428,11 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 或者，您也可以[发布到预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md)（再次从体验片段控制台或编辑器中发布）。
 
-## 匯出體驗片段 {#exporting-experience-fragments}
+## 导出体验片段 {#exporting-experience-fragments}
 
-依預設，體驗片段會以HTML格式傳送。 AEM和協力廠商管道均可使用此功能。
+默认情况下，体验片段以HTML格式交付。 AEM和第三方渠道均可使用此功能。
 
-若要匯出至Adobe Target，也可以使用JSON。 请参阅：
+要导出到Adobe Target，还可以使用JSON。 请参阅：
 
 * [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

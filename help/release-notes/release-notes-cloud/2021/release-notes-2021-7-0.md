@@ -15,7 +15,7 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021等版本。
+>从此处，您可以导航到早期版本的发行说明；例如，2020版、2021版等的发行说明。
 
 >[!NOTE]
 >
@@ -23,44 +23,44 @@ ht-degree: 50%
 
 ## 发布日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前版本(2021.7.0)為2021年7月29日。
-以下版本(2021.8.0)的發佈日期為2021年8月26日。
+的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前版本(2021.7.0)为2021年7月29日。
+以下版本(2021.8.0)的发布日期为2021年8月26日。
 
 ## 发布视频 {#release-video}
 
-請檢視 [2021年7月版本總覽](https://video.tv.adobe.com/v/335580) 影片以瞭解新增功能的摘要。
+请查看 [2021年7月发行版概述](https://video.tv.adobe.com/v/335580) 视频，以了解新增功能的摘要。
 
-## Experience Manager Foundationas a Cloud Service {#foundation}
+## Experience Manager基础as a Cloud Service {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 更靈活的Dispatcher設定：更輕鬆地組織專案。 例如，您現在可以包含反映網站結構的多個重寫規則檔案。 [瞭解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 此彈性模式，包括如何建構您的Dispatcher設定，以妥善運用。
-* 在復寫代理程式的「散發」標籤下方的樹狀結構復寫UI應視為不建議使用，並計畫於9月30日後移除。 [瞭解](/help/operations/replication.md#tree-activation) 替代復寫策略。
-* 組合 `org.apache.sling.datasource-1.0.4.jar` 的Sling資料來源支援已移除，因為其功能已過時且未由客戶使用。
+* 更灵活的Dispatcher配置：可以更轻松地组织项目。 例如，您现在可以包含反映站点结构的多个重写规则文件。 [了解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 这种灵活的模式，包括如何构建Dispatcher配置以对其进行利用。
+* 复制代理的“分发”选项卡下的树复制UI应被视为已弃用，计划在9月30日后删除。 [了解](/help/operations/replication.md#tree-activation) 替代复制策略。
+* 捆绑 `org.apache.sling.datasource-1.0.4.jar` 的for Sling数据源支持已删除，因为它具有过时的功能，并且未由客户使用。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* 內容自動化功能可讓 [!DNL Experience Manager Assets] 善用 [!DNL Adobe Creative Cloud] API可大規模自動化資產的製作。 它大幅減少建立相同資產變體所需的時間和反複工作，進而加快內容速度。 此功能不需要從DAM中進行任何程式設計和工作。 另請參閱 [使用Creative Cloud整合產生資產的變體](/help/assets/cc-api-integration.md).
+* 内容自动化功能允许 [!DNL Experience Manager Assets] 利用 [!DNL Adobe Creative Cloud] 用于大规模自动化资产生产的API。 它通过显着减少创建同一资源的变体所需的时间和迭代来提高内容速度。 该功能不需要进行任何编程，并且可在DAM内使用。 参见 [使用Creative Cloud集成生成资源变体](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] 包含 [!DNL Document Cloud] PDF檢視器以原生方式預覽PDF檔案。 此功能可讓使用者預覽多頁PDF檔案，而不需進行任何檔案處理或轉換。 此功能可改善 [!DNL Experience Manager] 6.5.檢視器中可用的控制項包括縮放、瀏覽至頁面、取消固定控制項，以及全熒幕檢視。 使用者案例也可預覽和跳至頁面和書籤。 支援檔案本身的註解，未來版本會新增對PDF檔案內內容的註解和附註。
+* [!DNL Experience Manager Assets] 包括 [!DNL Document Cloud] PDF查看器以本机预览PDF文档。 此功能允许用户预览多页PDF文件，而无需进行任何文件处理或转换。 此功能改进了与 [!DNL Experience Manager] 6.5.查看器中可用的控件包括缩放、导航到页面、取消停靠控件以及全屏查看。 用户案例还可以预览和跳转到页面和书签。 支持对文件本身进行评论，并且将在未来版本中添加对PDF文件中内容进行评论和批注。
 
-   ![在中預覽PDF檔案 [!DNL Experience Manager] 使用PDF檢視器](/help/assets/assets/preview-pdf-file-viewer.png)
+   ![在中预览PDF文件 [!DNL Experience Manager] 使用PDF查看器](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* Linkshare下載功能會使用可提高下載速度的非同步下載。 另請參閱 [下載使用連結共用所共用的資產](/help/assets/download-assets-from-aem.md#link-share-download).
+* Linkshare下载功能使用可提高下载速度的异步下载。 参见 [下载使用链接共享功能共享的资源](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![下載收件匣](/help/assets/assets/download-inbox.png)
+   ![下载收件箱](/help/assets/assets/download-inbox.png)
 
-* 已增強檢視設定，讓使用者可選擇預設檢視和預設排序引數。
+* 增强了视图设置以允许用户选择默认视图和默认排序参数。
 
-   ![設定預設檢視於 [!UICONTROL 檢視設定]](/help/assets/assets/view-settings-for-defaults.png)
+   ![在中设置默认视图 [!UICONTROL 查看设置]](/help/assets/assets/view-settings-for-defaults.png)
 
-* 使用者可以根據屬性述詞搜尋和篩選資料夾。
+* 用户可以根据属性谓词搜索和筛选文件夹。
 
-   ![使用搜尋述詞篩選搜尋資料夾](/help/assets/assets/search-folders-via-predicates.png)
+   ![使用搜索谓词筛选搜索文件夹](/help/assets/assets/search-folders-via-predicates.png)
 
-### 中可用的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
+### 中可用的新功能 [!DNL Assets] 预发行渠道 {#assets-prerelease-features}
 
 <!-- TBD: Not sure about GA of these enh. Shall check with the team.
 
@@ -73,11 +73,11 @@ ht-degree: 50%
   ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
 -->
 
-* 當您以連結形式共用數位資產時，使用者可以將URL複製到剪貼簿。 此增強功能可讓您以更快、更方便的方式共用資產。
+* 在将数字资产作为链接共享时，用户可以将URL复制到剪贴板。 增强功能可让您以更快、更方便的方式共享资产。
 
 ### [!DNL Assets] 中修复的错误 {#assets-bugs-fixed}
 
-API `com.day.cq.dam.api.collection.SmartCollection` 不可用於 [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
+API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experience Manager] as a [!DNL Cloud Service]. (CQ-4326322)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -88,7 +88,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 不可用於 [!DNL Experienc
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。此服務可讓您以同步模式產生檔案。 API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
    * 使用 XML 数据填充模板文件来生成文档。
    * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
    * 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
@@ -103,42 +103,42 @@ API `com.day.cq.dam.api.collection.SmartCollection` 不可用於 [!DNL Experienc
 
 ### 新增功能 {#what-is-new-cif}
 
-* CIF Core Components v2
-   * 簡化並改善PDP/PLP URL和SEO的設定
-   * 在製作模式中暫存產品資料的視覺指標，可更清楚顯示即將發生的變更
-   * 內容和商務頁面的新Sitemap元件
+* CIF核心组件v2
+   * 简化并改进了PDP/PLP URL和SEO的配置
+   * 创作模式下暂存产品数据的视觉指示器，用于更好地显示即将发生的更改
+   * 内容和商务页面的新站点地图组件
 
-* 支援 [Adobe Commerce Sensei產品推薦，由Adobe Sensei提供技術支援](https://business.adobe.com/products/magento/product-recommendations.html) 在AEM Storefront中使用預先定義或即時建立的建議
+* 支持 [Adobe Commerce Sensei产品推荐，由Adobe Sensei提供支持](https://business.adobe.com/products/magento/product-recommendations.html) 在AEM Storefront中使用预定义或动态创建的推荐
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 ### 错误修复 {#bug-fixes-screens}
 
-* 內容提供者設定現在會在建立或更新期間進行驗證。
+* 内容提供程序设置现在会在创建或更新过程中进行验证。
 
-* 所有顯示檢視都有資料夾欄。
+* 所有显示视图都有文件夹列。
 
-* 您可以展開Screens內容結構。
+* 您可以展开Screens内容结构。
 
-* `bulk-offline-update-service` 缺少某些環境的所有許可權。
+* `bulk-offline-update-service` 缺少某些环境的所有权限。
 
-* 更新說明連結以符合新的screens cloud檔案。
+* 更新了“帮助”链接以匹配新的screens cloud文档。
 
-* 現在可以取消指派播放清單並禁止移除已指派播放器的播放清單。
+* 现在可以取消分配播放列表并禁止删除已分配播放器的播放列表。
 
-* 「全部」快取清除後，播放器現在會重新下載資產。
+* 播放器现在会在“全部”缓存清除后重新下载资产。
 
-* 重複排程現在有效，如果 *結束時間* 設為隔天。
+* 现在，如果 *结束时间* 设置为第二天。
 
-* `Back&Forward` 現在適用於Screensas a Cloud ServiceUI。
+* `Back&Forward` 现在适用于Screensas a Cloud ServiceUI。
 
-* 無法更早建立具有相同名稱但不同名稱空間的標籤。
+* 以前无法创建具有相同名称但命名空间不同的标记。
 
-## Experience Manageras a Cloud Service的XML Documentation {#xml-documentation}
+## XML DocumentationExperience Manageras a Cloud Service {#xml-documentation}
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
-適用於Experience Manageras a Cloud Service的XML Documentation現已正式推出。 它可讓Experience Manageras a Cloud Service的客戶取得XML Documentation附加元件，以跨多個管道(包括Experience Manager Sites)匯入、建立、管理和傳遞技術內容。
+适用于Experience Manageras a Cloud Service的XML Documentation现已正式推出。 它允许Experience Manageras a Cloud Service的客户促使XML Documentation加载项跨多个渠道(包括Experience Manager Sites)导入、创建、管理和交付技术内容。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -146,7 +146,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 不可用於 [!DNL Experienc
 
 ### 发布日期 {#release-cm-july}
 
-AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年 7 月 15 日。下一版本計畫於2021年8月12日發行。
+AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年 7 月 15 日。下一个版本计划于2021年8月12日发布。
 
 ### 新增功能 {#what-is-new-cm-july}
 
@@ -184,12 +184,12 @@ AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 发布日期 {#release-date-july-cam}
 
-Cloud Acceleration Manager的發行日期為2021年7月15日。
+Cloud Acceleration Manager的发布日期是2021年7月15日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用 Adobe 推荐的最佳实践、技巧、文档和工具在迁移到 AEM as Cloud Service 的历程中的每个阶段提供帮助，让您的团队成功完成迁移。瞭解更多 [此處](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用 Adobe 推荐的最佳实践、技巧、文档和工具在迁移到 AEM as Cloud Service 的历程中的每个阶段提供帮助，让您的团队成功完成迁移。了解详情 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
 
 >[!NOTE]
 >
-> 檢查此 [Cloud Acceleration Manager示範影片](https://video.tv.adobe.com/v/335547).
+> 检查此 [Cloud Acceleration Manager演示视频](https://video.tv.adobe.com/v/335547).

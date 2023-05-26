@@ -12,19 +12,19 @@ ht-degree: 76%
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-本頁可協助您進一步瞭解AEM Screens以及此數位招牌解決方案的運作方式。 取得自助資源，並瞭解新增功能。
+本页可帮助您进一步了解AEM Screens以及此数字标牌解决方案的工作方式。 获取自助资源并了解新增功能。
 
 >[!NOTE]
->如需使用AEM 6.5的AEM Screens，請參閱 [AEM Screens使用手冊](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans).
+>有关带有AEM 6.5的AEM Screens，请参阅 [AEM Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans).
 
 
-## 重要內容與AEM Screensas a Cloud Service文章 {#key-articles}
+## 关键内容和AEM Screensas a Cloud Service文章 {#key-articles}
 
 * [简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
 * [入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
-* [設定Screens服務與內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
-* [在Screensas a Cloud Service中建立專案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
-* [安裝Screens播放器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
+* [配置Screens服务和内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
+* [as a Cloud Service在Screens中创建项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [安装Screens播放器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 

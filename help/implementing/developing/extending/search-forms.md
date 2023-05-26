@@ -1,6 +1,6 @@
 ---
 title: 配置搜索表单
-description: 設定Adobe Experience Manager as a Cloud Service的「搜尋Forms」。
+description: 为Adobe Experience Manager as a Cloud Service配置Search Forms。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -11,37 +11,37 @@ ht-degree: 16%
 
 # 配置搜索表单 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/sites-cloud/authoring/getting-started/search.md) 機制。
+Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 机制。
 
-除此之外，還有一組預先定義的選項，可協助您篩選內容。 這些會保留預先定義的Facet，例如 **修改日期**， **發佈狀態**，或 **即時副本狀態** 協助您快速向下展開至所需的資源。
+此外，还有一组预定义选项可帮助您筛选内容。 这些保留预定义的Facet，例如 **修改日期**， **发布状态**，或 **Livecopy状态** 帮助您快速深入了解所需的资源。
 
-![搜尋和篩選使用方式](assets/csf-usage.png)
+![搜索和筛选使用情况](assets/csf-usage.png)
 
-這些目標共同協助您快速輕鬆地從下列位置找到您的內容：
+这些目标共同帮助您从以下位置快速轻松地找到内容：
 
 * [搜索和筛选](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* 此 [資產瀏覽器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （編輯頁面時）
+* 此 [资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （编辑页面时）
 
 >[!NOTE]
 >
->您可以設定基礎 [內容搜尋與索引](/help/operations/indexing.md) 服務。
+>您可以配置基础 [内容搜索与索引](/help/operations/indexing.md) 服务。
 
-使用 **搜尋Forms**，您就可以根據自己的特定需求，自訂和擴充這些面板。
+使用 **搜索Forms**，您可以根据特定需求自定义和扩展这些面板。
 
-此 **搜尋Forms** 提供現成可用的 [述詞](#predicates-and-their-settings) 以組合和定義。 此 [用於設定這些表單的對話方塊](#configuring-your-search-forms) 可透過以下方式存取：
+此 **搜索Forms** 提供开箱即用的选择 [谓词](#predicates-and-their-settings) 进行组合和定义。 此 [用于配置这些表单的对话框](#configuring-your-search-forms) 可通过：
 
 * **工具**
    * **常规**
       * **搜索表单**
 
-## 預設Forms {#default-forms}
+## 默认Forms {#default-forms}
 
-當您第一次存取 **搜尋Forms** 控制檯您可以看到所有組態都有掛鎖符號。 這表示對應的設定是預設（現成可用）設定 — 無法刪除。 自訂並儲存設定後，鎖定將會消失。 當您 [刪除您的自訂設定](#deleting-a-configuration-to-reinstate-the-default)，則系統會恢復預設值（和掛鎖指標）。
+当您首次访问 **搜索Forms** 控制台您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置 — 无法删除。 自定义并保存配置后，锁定将消失。 它将在以下情况下重新显示： [删除自定义配置](#deleting-a-configuration-to-reinstate-the-default)，则默认（和挂锁指示器）将恢复。
 
-![設定搜尋表單概觀](assets/csf-overview.png)
+![配置搜索表单概述](assets/csf-overview.png)
 
-可用的預設設定（按字母順序列出）包括：
+可用的默认配置（按字母顺序列出）包括：
 
 * **资产管理员搜索边栏**
 * **页面编辑器（文档搜索）**
@@ -64,14 +64,14 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 >[!NOTE]
 >
->如需資產相關搜尋表單的詳細資訊，請參閱 [資產 — 搜尋Facet](/help/assets/search-facets.md)
+>有关资产相关搜索表单的更多详细信息，请参阅 [资产 — 搜索Facet](/help/assets/search-facets.md)
 
 
-## 述詞及其設定 {#predicates-and-their-settings}
+## 谓词及其设置 {#predicates-and-their-settings}
 
-### 述詞 {#predicates}
+### 谓词 {#predicates}
 
-視設定而定，以下述詞可供使用：
+以下谓词可用，具体取决于配置：
 
 <table>
  <tbody>
@@ -82,7 +82,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>分析</td>
-   <td>顯示Analytics支援的資料時，可在Sites瀏覽器中搜尋/篩選功能。 Analytics搜尋篩選器會載入以符合對應的自訂分析欄。</td>
+   <td>显示Analytics提供的数据时，站点浏览器中的搜索/筛选功能。 Analytics搜索筛选器将加载以匹配映射的自定义分析列。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -90,8 +90,8 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
     </ul> </td>
   </tr>
   <tr>
-   <td>核准狀態</td>
-   <td>根據核准狀態搜尋。</td>
+   <td>审批状态</td>
+   <td>根据审批状态搜索。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -102,7 +102,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>创作</td>
-   <td>根據作者搜尋。</td>
+   <td>根据作者搜索。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -113,7 +113,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>签出方</td>
-   <td>搜尋由特定使用者簽出的資產。</td>
+   <td>搜索由特定用户签出的资产。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -124,7 +124,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>签出状态</td>
-   <td>搜尋具有特定簽出狀態的資產。</td>
+   <td>搜索具有特定签出状态的资源。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -135,7 +135,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>组件</td>
-   <td>允許作者搜尋/篩選上面有特定元件的頁面。 例如，影像庫。<br /> </td>
+   <td>允许作者搜索/筛选包含特定组件的页面。 例如，图像库。<br /> </td>
    <td>
     <ul>
      <li>占位符</li>
@@ -146,20 +146,20 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>日期范围</td>
-   <td>搜尋在日期屬性的指定範圍內建立的資源。 在「搜尋」面板中，您可以指定「開始」和「結束」日期。</td>
+   <td>搜索在指定范围内为日期属性创建的资源。 在“搜索”面板中，您可以指定开始日期和结束日期。</td>
    <td>
     <ul>
      <li>字段标签</li>
      <li>占位符</li>
      <li>属性名称*</li>
-     <li>範圍文字（從）*</li>
-     <li>範圍文字（至）*</li>
+     <li>范围文本（自）*</li>
+     <li>范围文本（至）*</li>
      <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
    <td>到期状态</td>
-   <td>根據到期狀態搜尋資源。</td>
+   <td>根据到期状态搜索资源。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -168,8 +168,8 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
     </ul> </td>
   </tr>
   <tr>
-   <td>檔案大小</td>
-   <td>根據資源的大小篩選資源。</td>
+   <td>文件大小</td>
+   <td>根据资源的大小筛选资源。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -180,7 +180,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>文件类型</td>
-   <td>根據檔案/mime型別搜尋資產。</td>
+   <td>根据文件/MIME类型搜索资源。</td>
    <td>
     <ul>
      <li>字段标签</li> 
@@ -192,7 +192,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>全文</td>
-   <td>全文檢索搜尋的搜尋述詞。 它與jcr：contains運運算元對應。</td>
+   <td>全文搜索的搜索谓词。 它使用jcr：contains运算符进行映射。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -202,7 +202,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>组</td>
-   <td>群組的搜尋述詞（僅用於見解述詞中）。</td>
+   <td>组的搜索谓词（仅在分析谓词中使用）。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -211,7 +211,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>隐藏的筛选器</td>
-   <td>屬性與值的篩選器，使用者看不到。</td>
+   <td>对用户不可见的属性和值的筛选器。</td>
    <td>
     <ul>
      <li>属性名称*</li>
@@ -221,8 +221,8 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>见解</td>
-   <td>根據選定的Insights引數搜尋。</td>
-   <td>這是一個由多個述片語成的複雜述詞：
+   <td>根据选定的分析参数进行搜索。</td>
+   <td>这是一个由多个谓词组成的复杂谓词：
     <ul>
      <li>组</li>
      <li>范围</li>
@@ -231,8 +231,8 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
    </td>
   </tr>
   <tr>
-   <td>集合成員</td>
-   <td>搜尋屬於集合成員的資產</td>
+   <td>收藏集成员</td>
+   <td>搜索属于收藏集成员的资产</td>
    <td>
     <ul>
      <li>描述</li>
@@ -241,7 +241,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>多值属性</td>
-   <td>搜尋指定屬性的多個值。</td>
+   <td>搜索指定属性的多个值。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -256,20 +256,20 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>选项</td>
-   <td><p>選項是由使用者建立的內容節點。</p> <p>另請參閱 <a href="#addinganoptionspredicate">新增選項述詞</a> 以取得詳細資訊。</p> </td>
+   <td><p>选项是由用户创建的内容节点。</p> <p>参见 <a href="#addinganoptionspredicate">添加选项谓词</a> 了解更多信息。</p> </td>
    <td>
     <ul>
      <li>字段标签</li>
      <li>属性名称*</li>
      <li>单选</li>
      <li>添加选项</li>
-     <li>手動</li>
+     <li>手动</li>
      <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
    <td>选项 属性</td>
-   <td>搜尋選項的一或多個屬性。</td>
+   <td>搜索选项的一个或多个属性。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -282,7 +282,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>页面状态</td>
-   <td>根據頁面狀態來篩選頁面。</td>
+   <td>根据页面状态筛选页面。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -293,17 +293,17 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>路径</td>
-   <td>根據特定路徑篩選。 您可以將多個路徑指定為選項。</td>
+   <td>根据特定路径进行筛选。 您可以将多个路径指定为选项。</td>
    <td>
     <ul>
      <li>字段标签</li>
-     <li>新增搜尋路徑</li>
+     <li>添加搜索路径</li>
      <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
    <td>路径浏览器</td>
-   <td>提供路徑瀏覽器，以便在預先定義的根路徑下搜尋。</td>
+   <td>提供路径浏览器以在预定义的根路径下搜索。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -313,18 +313,18 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
    </td>
   </tr>
   <tr>
-   <td>路徑已隱藏</td>
-   <td>路徑上的篩選器，使用者看不到。</td>
+   <td>隐藏的路径</td>
+   <td>路径上的过滤器，用户不可见。</td>
    <td>
     <ul>
-     <li>屬性名稱(「path」)</li>
-     <li>屬性值('/content/dam')</li>
+     <li>属性名称(“path”)</li>
+     <li>属性值('/content/dam')</li>
     </ul> 
    </td>
   </tr>
   <tr>
    <td>属性</td>
-   <td>搜尋指定的屬性。</td>
+   <td>搜索指定的属性。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -337,8 +337,8 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
    </td>
   </tr>
   <tr>
-   <td>發佈狀態</td>
-   <td>根據資源的發佈狀態篩選資源。</td>
+   <td>发布状态</td>
+   <td>根据资源的发布状态筛选资源。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -348,7 +348,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>范围</td>
-   <td>搜尋位於指定範圍內的資源。 在「搜尋」面板中，您可以指定範圍的最小值和最大值。</td>
+   <td>搜索位于指定范围内的资源。 在“搜索”面板中，可以指定范围的最小值和最大值。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -358,7 +358,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>评分</td>
-   <td>根據資源的平均評等搜尋資源。<br /> </td>
+   <td>根据资源的平均评分搜索资源。<br /> </td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -369,7 +369,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>相对日期</td>
-   <td>根據資源的相對建立日期篩選資源。 例如，1週前、1個月前。</td>
+   <td>根据资源的相对创建日期筛选资源。 例如，1周前、1个月前。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -380,7 +380,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>滑块范围</td>
-   <td>使用滑桿功能擴充範圍述詞的常見搜尋述詞。 搜尋的屬性值必須介於滑桿限制之間。</td>
+   <td>使用滑块功能扩展范围谓词的常用搜索谓词。 搜索属性的值必须介于滑块限制之间。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -391,30 +391,30 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>状态</td>
-   <td>根據核准和結帳狀態進行搜尋。</td>
-   <td>這是一個由多個述片語成的複雜述詞：
+   <td>根据审批和结帐状态搜索。</td>
+   <td>这是一个由多个谓词组成的复杂谓词：
     <ul>
-     <li>核准狀態</li>
+     <li>审批状态</li>
      <li>签出状态</li>
     </ul> 
    </td>
   </tr>
   <tr>
    <td>标记</td>
-   <td>根據標籤進行搜尋。</td>
+   <td>根据标记进行搜索。</td>
    <td>
     <ul>
-     <li>欄位層級</li>
+     <li>字段层级</li>
      <li>占位符</li>
      <li>属性名称*</li>
      <li>显示匹配所有标记选项</li>
-     <li>根標籤路徑</li>
+     <li>根标记路径</li>
      <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
    <td>模板</td>
-   <td>根據選取的範本搜尋。</td>
+   <td>根据所选模板进行搜索。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -425,7 +425,7 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
   </tr>
   <tr>
    <td>翻译状态</td>
-   <td>根據翻譯狀態進行搜尋。</td>
+   <td>根据翻译状态搜索。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -477,10 +477,10 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 
 >[!NOTE]
 >
->常見的搜尋述詞定義於：
+>常见的搜索谓词定义于：
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->此資訊僅供參考，您不得對下列專案進行變更 `/libs`.
+>此信息仅供参考，您不得对 `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -489,201 +489,201 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
 >
 -->
 
-### 述詞設定 {#predicate-settings}
+### 谓词设置 {#predicate-settings}
 
-視述詞而定，有多種設定可供設定，包括：
+根据谓词，可以配置一系列设置，包括：
 
 * **字段标签**
 
-   將顯示為可摺疊標題或述詞欄位標籤的標籤。
+   将显示为可折叠标题或谓词字段标签的标签。
 
 * **描述**
 
-   使用者的描述性詳細資料。
+   用户的描述性详细信息。
 
 * **占位符**
 
-   空白文字或述詞的預留位置（若未輸入篩選文字）。
+   空文本或谓词的占位符（如果未输入过滤文本）。
 
 * **属性名称**
 
-   要搜尋的屬性。 它使用相對路徑和萬用字元 `*/*/*` 指定屬性相對於的深度 `jcr:content` 節點（每個星號代表一個節點層級）。
+   要搜索的属性。 它使用相对路径和通配符 `*/*/*` 指定属性相对于的深度 `jcr:content` 节点（每个星号表示一个节点级别）。
 
-   如果您只想搜尋具有下列專案的資源之第一層子節點： `x` 上的屬性 `jcr:content` 節點使用 `*/jcr:content/x`
+   如果只想搜索具有下列条件的资源的第一级子节点： `x` 上的属性 `jcr:content` 节点使用 `*/jcr:content/x`
 
 * **属性深度**
 
-   在資源中搜尋該屬性的最大深度。 因此，可針對資源及遞回子系執行該屬性的搜尋，直到子系層級等於指定的深度為止。
+   在资源中搜索该属性的最大深度。 因此，可以对该资源子项和递归子项执行该属性搜索，直到子项的级别等于指定的深度。
 
 * **属性值**
 
-   作為絕對字串或作為運算式語言的屬性值；例如， `cq:Page` 或
+   作为绝对字符串或表达式语言的属性值；例如， `cq:Page` 或
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
-* **範圍文字**
+* **范围文本**
 
-   中範圍欄位的標籤 **日期範圍** 述詞。
+   中范围字段的标签 **日期范围** 谓词。
 
 * **选项路径**
 
-   使用者可以使用述詞設定索引標籤中的路徑瀏覽器來選取路徑。 選取 **+** 圖示可將選取專案新增至有效選項清單(然後 **-** 圖示以視需要移除)。
+   用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择 **+** 图标用于将选定内容添加到有效选项列表(然后 **-** 图标（如果需要，可删除）。
 
-   選項是使用者建立的內容節點，結構如下：
+   这些选项是由用户创建的内容节点，具有以下结构：
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **選項節點路徑**
-實際上與 
-**選項路徑**，只有這個在「通用述詞」欄位中，其他則專用於資產。
+* **选项节点路径**
+实际上与 
+**选项路径**，只有公用谓词字段中包含此字段，其他字段则特定于资产。
 
-* **單選**
-如果勾選，這些選項會呈現為僅允許單一選取的核取方塊。 若誤選，可取消選取核取方塊。
+* **单选**
+如果选中，这些选项将呈现为仅允许单个选择的复选框。 如果错误地选中了复选框，则可以取消选中该复选框。
 
-* **發佈和即時副本屬性名稱**
-網站特定述詞的發佈和即時副本核取方塊的標籤。
+* **发布和Live Copy属性名称**
+站点特定谓词的发布和Live Copy复选框的标签。
 
-* &amp;ast；在中的欄位標籤上 **設定** tab表示欄位是必填欄位，如果留空，將顯示錯誤訊息。
+* 中的字段标签上的&amp;ast； **设置** 制表符表示字段为必填字段，如果留空，将显示错误消息。
 
-## 設定搜尋Forms {#configuring-your-search-forms}
+## 配置搜索Forms {#configuring-your-search-forms}
 
-### 建立/開啟自訂組態 {#creating-opening-a-customized-configuration}
+### 创建/打开自定义配置 {#creating-opening-a-customized-configuration}
 
-1. 導覽至 **工具**， **一般**， **搜尋Forms**.
+1. 导航到 **工具**， **常规**， **搜索Forms**.
 
-1. 選取您要自訂的設定。
-1. 使用 **編輯** 圖示以開啟設定以進行更新。
-1. 如果新的自訂專案，您可能想要 [新增述詞欄位並定義設定](#add-edit-a-predicate-field-and-define-field-settings) 視需要。 如果存在現有的自訂，您可以選取現有的欄位和 [更新設定](#add-edit-a-predicate-field-and-define-field-settings).
-1. 選取 **完成** 以儲存設定。 下次使用設定時即可看到您的變更。
+1. 选择要自定义的配置。
+1. 使用 **编辑** 图标以打开配置以进行更新。
+1. 如果进行了新的自定义，则您可能需要 [添加新谓词字段并定义设置](#add-edit-a-predicate-field-and-define-field-settings) 根据需要。 如果存在现有的自定义项，则可以选择现有字段和 [更新设置](#add-edit-a-predicate-field-and-define-field-settings).
+1. 选择 **完成** 以保存配置。 下次使用该配置时即可看到您所做的更改。
 
    >[!NOTE]
    >
-   >自訂的設定會視情況儲存在：
+   >自定义配置存储（根据需要）在以下位置：
    >
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### 新增/編輯述詞欄位和定義欄位設定 {#add-edit-a-predicate-field-and-define-field-settings}
+### 添加/编辑谓词字段并定义字段设置 {#add-edit-a-predicate-field-and-define-field-settings}
 
-您可以新增或編輯欄位，以及定義/更新其設定：
+您可以添加或编辑字段并定义/更新其设置：
 
-1. [開啟自訂設定](#creating-opening-a-customized-configuration) 以進行更新。
-1. 如果您想要新增欄位，請開啟 **選取述詞** 定位並拖曳所需的述詞至所需的位置。 例如， **日期範圍述詞**：
+1. [打开自定义配置](#creating-opening-a-customized-configuration) 以进行更新。
+1. 如果要添加新字段，请打开 **选择谓词** 制表符并将所需的谓词拖到所需的位置。 例如， **日期范围谓词**：
 
-   ![新增述詞](assets/csf-add-predicate.png)
+   ![添加谓词](assets/csf-add-predicate.png)
 
-1. 視以下情況而定：
+1. 取决于是否：
 
-   * 您正在新增欄位：
+   * 您正在添加新字段：
 
-      新增述詞後 **設定** 標籤會開啟並顯示可定義的屬性。
+      添加谓词后 **设置** 选项卡将打开并显示可定义的属性。
 
-   * 您要更新現有的述詞：
+   * 要更新现有谓词：
 
-      選取述詞欄位（在右側），然後開啟 **設定** 標籤。
-   例如， **日期範圍述詞**：
+      选择谓词字段（位于右侧），然后打开 **设置** 选项卡。
+   例如， **日期范围谓词**：
 
-   ![修改述詞](assets/csf-modify-predicate.png)
+   ![修改谓词](assets/csf-modify-predicate.png)
 
-1. 視需要進行變更，並確認： **完成**. 下次使用設定時即可看到您的變更。
+1. 根据需要进行更改并通过进行确认 **完成**. 下次使用该配置时即可看到您所做的更改。
 
-### 預覽搜尋組態 {#previewing-the-search-configuration}
+### 预览搜索配置 {#previewing-the-search-configuration}
 
-1. 選取「預覽」圖示：
+1. 选择预览图标：
 
-   ![預覽圖示](assets/csf-preview-icon.png)
+   ![预览图标](assets/csf-preview-icon.png)
 
-1. 如此將顯示搜尋表單，如同它們在適當主控台的「搜尋」欄中顯示（完全展開）一樣。
+1. 这将显示搜索表单，因为它们将显示（完全展开）在相应控制台的“搜索”列中。
 
-   ![預覽表單](assets/csf-preview-form.png)
+   ![预览表单](assets/csf-preview-form.png)
 
-1. **關閉** 預覽以傳回並完成設定。
+1. **关闭** 预览以返回并完成配置。
 
-### 刪除述詞欄位 {#deleting-a-predicate-field}
+### 删除谓词字段 {#deleting-a-predicate-field}
 
-1. [開啟自訂設定](#creating-opening-a-customized-configuration) 以進行更新。
-1. 選取述詞欄位（在右側），開啟 **設定** 標籤，然後選取 **刪除** 圖示（左下方）。
+1. [打开自定义配置](#creating-opening-a-customized-configuration) 以进行更新。
+1. 选择谓词字段（位于右侧），打开 **设置** 选项卡，然后选择 **删除** 图标（左下方）。
 
-   ![刪除圖示](assets/csf-delete-icon.png)
+   ![删除图标](assets/csf-delete-icon.png)
 
-1. 對話方塊會要求確認刪除動作。
+1. 此时将显示一个对话框，要求确认删除操作。
 
-1. 確認此變更和任何其他變更，透過 **完成**.
+1. 使用以下方式确认此更改和任何其他更改 **完成**.
 
-### 刪除組態（恢復預設值） {#deleting-a-configuration-to-reinstate-the-default}
+### 删除配置（恢复默认设置） {#deleting-a-configuration-to-reinstate-the-default}
 
-自訂設定後，這將覆蓋預設值。 您可以刪除自訂的設定，以重新指出預設設定。
+自定义配置后，这将覆盖默认值。 您可以通过删除自定义配置来重新声明默认配置。
 
 >[!NOTE]
 >
->您無法刪除預設設定。
+>您无法删除默认配置。
 
-從主控台刪除自訂設定完成：
+从控制台中删除自定义配置已完成：
 
-1. 選取所需的設定(例如， **頁面編輯器（段落搜尋）**)，然後按一下 **刪除** 圖示：
+1. 选择所需的配置(例如， **页面编辑器（段落搜索）**)，然后 **删除** 工具栏中的图标：
 
-   ![還原預設值](assets/csf-restore-default.png)
+   ![恢复默认值](assets/csf-restore-default.png)
 
-1. 自訂的設定將會刪除並恢復預設設定（這由主控台中掛鎖符號的重新出現表示）。
+1. 自定义配置将被删除，默认配置将恢复（控制台中挂锁符号的重新显示可指示此情况）。
 
-### 新增選項述詞 {#adding-options-predicates}
+### 添加选项谓词 {#adding-options-predicates}
 
-選項述詞（選項、選項屬性）可讓您設定要搜尋的專案。 它們通常用於搜尋頁面正下方的內容；例如，頁面節點上的屬性。
+选项谓词（选项、选项属性）允许您配置要搜索的项。 它们通常用于直接在页面下搜索某些内容；例如，页面节点上的属性。
 
-以下範例（根據用來建立頁面的範本進行搜尋）說明了相關步驟：
+以下示例（根据用于创建页面的模板进行搜索）说明了所涉及的步骤：
 
-1. 建立定義要搜尋之屬性的節點。
+1. 创建定义要搜索的属性的节点。
 
-   您需要一個根節點，其中包含使用者可用的個別選項定義。
+   您需要一个根节点，其中包含可供用户使用的各个选项的定义。
 
-   個別選項的節點需要屬性：
+   单个选项的节点需要以下属性：
 
-   * `jcr:title`  — 搜尋邊欄中顯示的欄位標籤
-   * `value`  — 要搜尋的屬性值
+   * `jcr:title`  — 要在搜索边栏中显示的字段标签
+   * `value`  — 要搜索的属性值
 
-   ![述詞定義](assets/csf-options-predicate-01.png)
+   ![谓词定义](assets/csf-options-predicate-01.png)
 
    >[!NOTE]
    >
-   >您 ***必須*** 不變更中的任何專案 `/libs` 路徑。
+   >您 ***必须*** 不更改 `/libs` 路径。
    >
-   >這是因為 `/libs` 下次升級執行個體時會被覆寫（而您在套用hotfix或feature pack時很可能會被覆寫）。
+   >这是因为 `/libs` 下次升级实例时将被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
    >
-   >設定和其他變更的建議方法是：
+   >配置和其他更改的推荐方法是：
    >
-   >1. 重新建立必要專案，因為它存在於中 `/libs`，下 `/apps`. 在此範例中，來自：
+   >1. 重新创建所需的项目，因为它存在于中 `/libs`，下 `/apps`. 在本例中，来自：
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. 進行任何變更 `/apps.`
+   >1. 在中进行任何更改 `/apps.`
 
 
-1. 開啟 **搜尋Forms** 控制檯並選取您要更新的設定。 例如， **網站管理搜尋邊欄**. 然後選取 **編輯**.
+1. 打开 **搜索Forms** 控制台并选择要更新的配置。 例如， **站点管理员搜索边栏**. 然后选择 **编辑**.
 
-1. 視設定而定，新增 **選項** 或 **Options屬性** 至設定。
-1. 更新欄位，特別是：
+1. 根据配置，添加 **选项** 或 **Options属性** 到配置。
+1. 更新字段，特别是：
 
    * **属性名称**
 
-      指定要在目標節點上搜尋的節點屬性。 例如：
+      指定要在目标节点上搜索的节点属性。 例如：
 
       `jcr:content/cq:template`
 
-   * **選項節點路徑**
+   * **选项节点路径**
 
-      選取保留選項的路徑。 例如：
+      选择保留选项的路径。 例如：
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-   ![選項述詞](assets/csf-options-predicate-02.png)
+   ![选项谓词](assets/csf-options-predicate-02.png)
 
-1. 選取 **完成** 以儲存您的設定。
-1. 導覽至適當的主控台(在此範例中， **網站**)並開啟 **搜尋 — 篩選器** 邊欄。 將顯示新定義的搜尋表單以及各種選項。 選取必要選項以檢視搜尋結果。
+1. 选择 **完成** 以保存您的配置。
+1. 导航到相应的控制台(在本例中， **站点**)并打开 **搜索 — 筛选器** 边栏。 新定义的搜索表单以及各种选项将可见。 选择所需的选项以查看搜索结果。
 
-   ![使用的選項](assets/csf-options-usage.png)
+   ![正在使用的选项](assets/csf-options-usage.png)
 
 
 ## 用户权限 {#user-permissions}
 
-下表列出對搜尋表單執行編輯、刪除和預覽動作所需的許可權。
+下表列出了对搜索表单执行编辑、删除和预览操作所需的权限。
 
 <table>
  <thead>
@@ -695,15 +695,15 @@ Adobe Experience Manager as a Cloud Service隨附強大的功能 [搜尋](/help/
  <tbody>
   <tr>
    <td>编辑 </td>
-   <td>的讀取、寫入許可權 <code>/apps </code>節點。</td>
+   <td>对的读、写权限 <code>/apps </code>节点。</td>
   </tr>
   <tr>
    <td>删除</td>
-   <td>對的讀取、寫入、刪除許可權 <code>/apps</code> 節點</td>
+   <td>对的读取、写入、删除权限 <code>/apps</code> 节点</td>
   </tr>
   <tr>
    <td>预览</td>
-   <td>對的讀取、寫入、刪除許可權 <code>/var/dam/content</code> 節點。<br /> 的讀取、寫入許可權 <code>/apps</code> 節點。</td>
+   <td>对的读取、写入、删除权限 <code>/var/dam/content</code> 节点。<br /> 对的读、写权限 <code>/apps</code> 节点。</td>
   </tr>
  </tbody>
 </table>

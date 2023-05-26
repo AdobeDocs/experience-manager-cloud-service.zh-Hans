@@ -1,6 +1,6 @@
 ---
 title: Cloud Acceleration Manager 快速入门
-description: 本頁面概述如何使用及開始使用Cloud Acceleration Manager。
+description: 本页概述了Cloud Acceleration Manager的使用和入门方法。
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -15,28 +15,28 @@ Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您�
 
 ## 目标 {#objective}
 
-本檔案可協助您瞭解如何開始使用Cloud Acceleration Manager (CAM)。 閱讀本檔案後，您應該能夠：
+本文档可帮助您了解如何开始使用Cloud Acceleration Manager (CAM)。 阅读本文档后，您应该能够：
 
-* 瞭解如何登入CAM
-* 從CAM的UI建立專案
+* 了解如何登录CAM
+* 从CAM的UI创建项目
 
 ## 使用 Cloud Acceleration Manager {#using-cam}
 
-Cloud Acceleration Manager (CAM)提供初始評估，以引導式歷程的形式提供移轉的一站式體驗，引導他們前往正確的工具、檔案和最佳實務，以確保成功上線AEMas a Cloud Service。
+Cloud Acceleration Manager (CAM)通过提供初始评估，引导式历程的形式为迁移提供一站式体验，引导他们找到正确的工具、文档和最佳实践，以确保成功上线AEMas a Cloud Service。
 
-### 瀏覽至Cloud Acceleration Manager {#navigating}
+### 导航到Cloud Acceleration Manager {#navigating}
 
-請依照下列步驟導覽至Cloud Acceleration Manager (CAM)：
+按照以下步骤导航到Cloud Acceleration Manager (CAM)：
 
-1. 登入 [Adobe Experience Cloud](https://experience.adobe.com).
+1. 登录 [Adobe Experience Cloud](https://experience.adobe.com).
 
-1. 按一下 **Experience Manager** 卡片。
+1. 单击 **Experience Manager** 信息卡。
 
-1. 按一下 **Launch** 從 **Cloud Acceleration Manager** 卡片以開啟登入頁面。
+1. 单击 **Launch** 从 **Cloud Acceleration Manager** 信息卡以打开登陆页面。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
-### 在Cloud Acceleration Manager中建立和管理專案 {#create-project}
+### 在Cloud Acceleration Manager中创建和管理项目 {#create-project}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_gettingstarted"
@@ -44,57 +44,57 @@ Cloud Acceleration Manager (CAM)提供初始評估，以引導式歷程的形式
 >abstract="创建您的项目并启动 AEM as a Cloud Service 历程。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=zh-Hans" text="使用 Cloud Acceleration Manager 的益处"
 
-Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專案。
+Cloud Acceleration Manager (CAM)的登陆页面允许您创建和编辑多个项目。
 
-請依照下列步驟建立新專案：
+请按照以下步骤创建新项目：
 
-1. 按一下 **建立專案** 從登陸頁面。
+1. 单击 **创建项目** 从登陆页面中。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
-   >第一次使用CAM的使用者將會看到建立新專案的對話方塊。 過去使用CAM的使用者將會看到預設專案或先前建立的專案。
+   >首次使用CAM的用户将看到用于创建新项目的对话框。 以前使用CAM的用户将看到默认项目或以前创建的项目。
 
-1. 輸入 **名稱** 和 **說明** ，然後按一下 **建立**.
+1. 输入 **名称** 和 **描述** ，然后单击 **创建**.
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-3.png)
 
-1. 專案現在已建立並顯示在 **Cloud Acceleration Manager** 登陸頁面。
+1. 该项目现已创建并显示在 **Cloud Acceleration Manager** 登陆页面。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
 
-1. 按一下專案卡以輸入專案。 這會將您帶往專案登陸頁面。
+1. 单击项目信息卡以输入项目。 这会将您引导至项目登陆页面。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-5.png)
 
-## 管理專案 {#manage-project}
+## 管理项目 {#manage-project}
 
-您可以編輯專案名稱、說明、縮圖影像或刪除專案。
+您可以编辑项目名称、描述、缩略图图像或删除项目。
 
-### 編輯專案 {#edit-project}
+### 编辑项目 {#edit-project}
 
-請依照下列步驟編輯您的專案：
+请按照以下步骤编辑您的项目：
 
-1. 選取專案並將滑鼠游標停留在專案上，然後按一下鉛筆圖示以編輯專案，如下圖所示。
+1. 选择项目并将鼠标悬停在该项目上，然后单击铅笔图标以编辑项目，如下图所示。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. 您可以編輯專案名稱、說明，甚至可以上傳新影像或編輯現有影像 **編輯專案** 對話方塊。
+1. 您可以编辑项目名称、描述，甚至可以从上传新图像或编辑现有图像 **编辑项目** 对话框。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
-1. 按一下 **更新** 以認可您的變更。
+1. 单击 **更新** 以提交更改。
 
-### 刪除專案 {#delete-project}
+### 删除项目 {#delete-project}
 
-請依照下列步驟刪除您的專案：
+请按照以下步骤删除您的项目：
 
-1. 選取專案並將滑鼠游標停留在專案上，然後按一下貯體圖示以刪除專案，如下圖所示。
+1. 选择项目并将鼠标悬停在该项目上，然后单击存储段图标以删除该项目，如下图所示。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. 按一下 **刪除** 以確認步驟。
+1. 单击 **删除** 以确认步骤。
 
 ## 后续内容 {#whats-next}
 
-瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以繼續檢閱中的下一個步驟了 [整備階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hans).
+了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在可以继续查看中的下一步 [就绪阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hans).

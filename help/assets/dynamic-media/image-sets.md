@@ -1,6 +1,6 @@
 ---
 title: 图像集
-description: 瞭解如何在Dynamic Media中使用影像集。
+description: 了解如何在Dynamic Media中使用图像集。
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
@@ -14,253 +14,253 @@ ht-degree: 5%
 
 # 图像集 {#image-sets}
 
-影像集為使用者提供整合的檢視體驗，使用者可以按一下縮圖影像來檢視專案的不同檢視。 「影像集」可讓您呈現專案的替代檢視，而檢視器則提供縮放工具，讓您更密切地檢查影像。
+图像集为用户提供了集成的查看体验，用户可通过单击缩略图图像来查看项目的不同视图。 图像集允许您展示项目的替代视图，查看器提供了缩放工具来仔细检查图像。
 
-图像集由带有单词的横幅来指定 `IMAGESET`。 此外，如果已發佈影像集，則發佈日期(以 **[!UICONTROL World]** 圖示在橫幅上。 此外，上次修改日期，由 **[!UICONTROL 鉛筆]** 圖示中顯示。
+图像集由带有单词的横幅来指定 `IMAGESET`。 此外，如果已发布图像集，则发布日期，由 **[!UICONTROL World]** 图标在横幅上。 此外，上次修改日期由 **[!UICONTROL 铅笔]** 图标。
 
 ![chlimage_1-133](assets/chlimage_1-339.png)
 
-在影像集內，您也可以建立影像集並新增縮圖來建立色票。
+在该图像集中，您还可以通过创建图像集并添加缩略图来创建色板。
 
-當您想要以不同的顏色、圖樣或成品顯示專案時，此應用程式非常有用。 若要建立包含色票的「影像集」，您需要為要呈現給使用者的每個不同顏色、圖樣或完成使用一個影像。 您還需要一個顏色、圖樣或精加工色票，用於每一個顏色、圖樣或精加工。
+当您想要以不同的颜色、图案或成品显示项目时，此应用程序非常有用。 要创建包含颜色样本的图像集，您需要为要呈现给用户的每种颜色、图案或完成程度都创建一个图像。 您还需要为每个颜色、图案或光洁度使用一个颜色、图案或光洁度色板。
 
-例如，假設您想要呈現不同顏色的紙幣的帽子影像；紙幣為紅色、綠色和藍色。 在此情況下，您需要三個相同帽子的鏡頭。 您需要一張紅底片、一張綠底片以及一張藍底片。 您也需要紅色、綠色和藍色色票。 顏色色票可作為縮圖，讓使用者在色票集檢視器中按一下，以檢視紅字、綠字或藍字上限。
+例如，假设您要用不同颜色的纸币显示大写字的图像；纸币为红色、绿色和蓝色。 这种情况下，你需要同一顶帽子打三针。 你需要一张红牌，一张绿牌，一张蓝牌。 您还需要红色、绿色和蓝色色板。 颜色样本用作缩略图，用户单击样本集查看器可查看红色计费、绿色计费或蓝色计费次数上限。
 
 >[!NOTE]
 >
->如需Assets使用者介面的詳細資訊，請參閱 [使用觸控式UI管理資產](/help/assets/manage-digital-assets.md).
+>有关Assets用户界面的信息，请参阅 [使用触屏UI管理资源](/help/assets/manage-digital-assets.md).
 
-建立影像集時，Adobe會建議下列最佳作法並強制實行下列限制：
+创建图像集时，Adobe建议采用以下最佳实践并强制实施以下限制：
 
-| 限制型別 | 最佳實務 | 強制限制 |
+| 限制类型 | 最佳实践 | 施加的限制 |
 | --- | --- | --- |
-| 每個集的重複資產數量 | 無重複專案 | 20 |
-| 每組影像的最大數量 | 每組5至10個影像 | 1000 |
+| 每集的重复资产数 | 无重复项 | 20 |
+| 每组图像的最大数量 | 每组5-10个图像 | 1000 |
 
-另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
+另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
-## 快速入門：影像集 {#quick-start-image-sets}
+## 快速入门：图像集 {#quick-start-image-sets}
 
-快速上手並執行：
+要让您快速启动并运行，请执行以下操作：
 
-1. 可选. [建立批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md) 並將其套用至上傳迴轉集影像的新資料夾。
+1. 可选. [创建批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md) 并将其应用到上传旋转集图像的新文件夹。
 
-   批次集預設集可協助您自動建立影像集。
+   批次集预设可以帮助您自动创建图像集。
 
    >[!IMPORTANT]
    >
-   >批次集由IPS (Image Production System)建立，作為資產擷取的一部分。
+   >批量集由IPS（图像生产系统）作为资产引入的一部分创建。
 
-1. [上傳您的主要來源影像以供多個檢視](#uploading-assets-in-image-sets).
+1. [上传主源图像以供多个视图使用](#uploading-assets-in-image-sets).
 
-   上傳影像集的影像。 請記住，使用者可以在影像集檢視器中放大影像。 因此，請謹慎選擇影像。 請確定影像的大小至少為2000畫素。
+   上传图像集的图像。 请记住，用户可以在图像集查看器中放大图像。 因此，请仔细选择您的图像。 确保图像的最大大小至少为2000像素。
 
-   另請參閱 [Dynamic Media — 支援的點陣影像格式](/help/assets/file-format-support.md#image-support-dynamic-media) 以取得「影像集」支援的格式清單。
+   参见 [Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media) 有关图像集支持的格式的列表。
 
-1. [建立影像集](#creating-image-sets).
+1. [创建图像集](#creating-image-sets).
 
-   在「影像集」中，使用者按一下「影像集檢視器」中的縮圖影像。
+   在图像集中，用户单击图像集查看器中的缩略图图像。
 
-   若要在資產中建立影像集，請選取 **[!UICONTROL 建立]** > **[!UICONTROL 影像集]**. 然後，新增影像並按一下 **[!UICONTROL 儲存]**.
+   要在Assets中创建图像集，请选择 **[!UICONTROL 创建]** > **[!UICONTROL 图像集]**. 然后，添加图像并单击 **[!UICONTROL 保存]**.
 
-   另請參閱 [準備影像集資產以上傳和上傳您的檔案](#uploading-assets-in-image-sets).
+   参见 [准备图像集资源以上传和上传文件](#uploading-assets-in-image-sets).
 
-   另請參閱 [使用選取器](/help/assets/dynamic-media/working-with-selectors.md).
+   参见 [使用选择器](/help/assets/dynamic-media/working-with-selectors.md).
 
-1. 新增 [影像集檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)，視需要而定。
+1. 添加 [图像集查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)（根据需要）。
 
-   管理員可以建立或修改影像集檢視器預設集。 若要檢視含有檢視器預設集的影像集，請選取該影像集，然後在左側導軌下拉式清單中選取 **[!UICONTROL 檢視者]**.
+   管理员可以创建或修改图像集查看器预设。 要查看带有查看器预设的图像集，请选择该图像集，然后在左边栏下拉列表中，选择 **[!UICONTROL 查看器]**.
 
-   若要建立或編輯檢視器預設集，請參閱 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 檢視器預設集]**.
+   要创建或编辑查看器预设，请参阅 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 查看器预设]**.
 
-1. （可選） [檢視影像集](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) 使用批次集預設集建立的。
-1. [預覽影像集](/help/assets/dynamic-media/previewing-assets.md).
+1. （可选） [查看图像集](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) 使用批次集预设创建的。
+1. [预览图像集](/help/assets/dynamic-media/previewing-assets.md).
 
-   選取「影像集」，即可預覽。 若要在選取的檢視器中檢查影像集，請選取縮圖圖示。 您可以從以下選擇不同的檢視器 **[!UICONTROL 檢視者]** 功能表，可從左側邊欄下拉式清單取得。
+   选择图像集并预览。 要在选定的查看器中检查图像集，请选择缩略图图标。 您可以从中选择不同的查看器 **[!UICONTROL 查看器]** 菜单，可从左边栏下拉列表中获得。
 
-1. [發佈影像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [发布图像集](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-   發佈影像集時會啟用URL和內嵌字串。 此外，您必須 [發佈任何自訂檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md) 您已建立的。 現成的檢視器預設集已發佈。
+   发布图像集将激活URL和嵌入字符串。 此外，您必须 [发布任何自定义查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md) 您已创建的内容。 现成的查看器预设已发布。
 
-1. [將URL連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 或 [內嵌視訊或影像檢視器](/help/assets/dynamic-media/embed-code.md).
+1. [将URL链接到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 或 [嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md).
 
-   Experience Manager Assets會為影像集建立URL呼叫，並在您發佈影像集後將其啟用。 您可以在預覽資產時複製這些URL。 或者，您也可以將其內嵌至您的網站。
+   Experience Manager Assets为图像集创建URL调用，并在您发布图像集后激活它们。 您可以在预览资产时复制这些URL。 或者，您也可以将它们嵌入到网站中。
 
-   選取「影像集」，然後在左側導軌下拉式清單中選取 **[!UICONTROL 檢視者]**.
+   选择图像集，然后在左边栏下拉列表中选择 **[!UICONTROL 查看器]**.
 
-   另請參閱 [將影像集連結至網頁](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 和 [內嵌視訊或影像檢視器](/help/assets/dynamic-media/embed-code.md).
+   参见 [将图像集链接到网页](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) 和 [嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md).
 
-若要編輯影像集，請參閱 [編輯影像集](#editing-image-sets). 此外，您也可以檢視和編輯 [影像集屬性](/help/assets/manage-digital-assets.md#editing-properties).
+要编辑图像集，请参阅 [编辑图像集](#editing-image-sets). 此外，您还可以查看和编辑 [图像集属性](/help/assets/manage-digital-assets.md#editing-properties).
 
-如果您無法建立集合，請參閱影像和集合，位置如下： [疑難排解Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
+如果在创建集时遇到问题，请参阅以下文档中的图像和集： [Dynamic Media疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
-## 上傳影像集的資產 {#uploading-assets-in-image-sets}
+## 上传图像集的资产 {#uploading-assets-in-image-sets}
 
-首先，請上傳影像集的影像資產。 請記住，使用者可以在影像集檢視器中放大影像。 因此，請謹慎選擇影像。 請確定影像的最大大小至少為2000畫素，以獲得最佳的縮放細節。 Dynamic Media可呈現每個高達2500萬畫素的影像。 例如，您可以使用5000x5000百萬畫素影像或任何其他大小組合，最多可達2500萬畫素。
+首先，上传图像集的图像资产。 请记住，用户可以在图像集查看器中放大图像。 因此，请仔细选择您的图像。 确保图像的最大大小至少为2000像素，以获得最佳的缩放细节。 Dynamic Media可渲染每个图像高达2500万像素。 例如，您可以使用5000x5000兆像素图像或任何其他大小组合，最多可达2500兆像素。
 
 <!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-另請參閱 [Dynamic Media — 支援的點陣影像格式](/help/assets/file-format-support.md#image-support-dynamic-media) 以取得「影像集」支援的格式清單。
+参见 [Dynamic Media — 支持的栅格图像格式](/help/assets/file-format-support.md#image-support-dynamic-media) 有关图像集支持的格式的列表。
 
-您可以依原樣上傳影像集的影像 [上傳資產中的任何其他資產](/help/assets/manage-digital-assets.md#uploading-assets).
+您可以像上传一样上传图像集的图像 [在Assets中上传任何其他资源](/help/assets/manage-digital-assets.md#uploading-assets).
 
-### 準備影像集資產以供上傳 {#preparing-image-set-assets-for-upload}
+### 准备图像集资源以供上传 {#preparing-image-set-assets-for-upload}
 
-在建立影像集之前，請確定影像的大小和格式正確。
+在创建图像集之前，请确保图像的大小和格式正确。
 
-若要建立多檢視影像集，您需要顯示不同檢視點專案的影像，或顯示同一專案的不同方面。 目標是要強調專案的重要功能，讓檢視者能完整瞭解專案的出現方式或用途。
+要创建多视图图像集，您需要从不同视点显示项目或显示同一项目的不同方面的图像。 目标是突出显示项目的重要功能，以便查看者能够全面了解项目的显示方式或用途。
 
-由於使用者可以在「影像集」中縮放影像，因此請確定影像的最大大小至少為2000畫素。 Experience Manager Assets支援許多影像檔案格式，但建議使用不失真TIFF、PNG和EPS影像。
-
->[!NOTE]
->
->如果您使用縮圖來表示產品色票，請執行下列動作：
->
->建立相同影像的暈映或不同快照，以不同的顏色、圖樣或完成顯示影像。 您還需要對應不同顏色、圖樣或筆畫的縮圖檔案。 例如，若要呈現縮圖，且「影像集」以黑色、棕色和綠色顯示相同夾克，您需要：
->
->* 同一件夾克的黑色、棕色和綠色照片。
->* 黑色、棕色和綠色的縮圖。
-
-
-## 建立影像集 {#creating-image-sets}
-
-您可以透過使用者介面或API建立影像集。
+由于用户可以在图像集中缩放图像，因此请确保图像的最大大小至少为2000像素。 Experience Manager Assets支持多种图像文件格式，但建议使用无损TIFF、PNG和EPS图像。
 
 >[!NOTE]
 >
->您也可以透過自動建立影像集 [批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md).
+>如果使用缩略图指示产品样本，请执行以下操作：
+>
+>创建同一图像的晕影或不同快照，以不同的颜色、图案或光洁度显示图像。 您还需要对应于不同颜色、图案或画面的缩略图文件。 例如，要呈现缩略图，其中图像集以黑色、棕色和绿色显示同一夹克，您需要：
+>
+>* 同一件夹克的黑色、棕色和绿色照片。
+>* 黑色、棕色和绿色的缩略图。
+
+
+## 创建图像集 {#creating-image-sets}
+
+您可以通过用户界面或API创建图像集。
+
+>[!NOTE]
+>
+>您还可以通过自动创建图像集 [批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md).
 >**重要信息：**&#x200B;批量集由 IPS（图像制作系统）作为资产引入的一部分创建。
 
-當您將資產新增至集時，資產會自動以英數字元順序新增。 在新增資產後，您可以手動重新排序或排序資產。
+在将资源添加到集时，会自动按字母数字顺序添加资源。 添加资源后，您可以手动对资源重新排序或排序。
 
 >[!NOTE]
 >
->檔案名稱中有「，」（逗號）的資產不支援影像集。
+>文件名中带有“，”（逗号）的资源不支持图像集。
 
-建立影像集時，Adobe會建議下列最佳作法並強制實行下列限制：
+创建图像集时，Adobe建议采用以下最佳实践并强制实施以下限制：
 
-| 限制型別 | 最佳實務 | 強制限制 |
+| 限制类型 | 最佳实践 | 施加的限制 |
 | --- | --- | --- |
-| 每個集的重複資產數量 | 無重複專案 | 20 |
-| 每組影像的最大數量 | 每組5至10個影像 | 1000 |
+| 每集的重复资产数 | 无重复项 | 20 |
+| 每组图像的最大数量 | 每组5-10个图像 | 1000 |
 
-另請參閱 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
+另请参阅 [Dynamic Media限制](/help/assets/dynamic-media/limitations.md).
 
-**若要建立影像集：**
+**要创建图像集，请执行以下操作：**
 
-1. 在Adobe Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台。
-1. 點選 **[!UICONTROL 導覽]** > **[!UICONTROL 資產]**. 導覽至您要建立影像集的位置，然後前往 **[!UICONTROL 建立]** > **[!UICONTROL 影像集]** 以開啟「影像集編輯器」頁面。
+1. 在Adobe Experience Manager中，选择Experience Manager徽标以访问全局导航控制台。
+1. 点按 **[!UICONTROL 导航]** > **[!UICONTROL 资产]**. 导航到要创建图像集的位置，然后转到 **[!UICONTROL 创建]** > **[!UICONTROL 图像集]** 以打开“图像集编辑器”页面。
 
    您还可以从包含资产的文件夹中创建旋转集。
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
-1. 在「影像集編輯器」頁面的 **[!UICONTROL 標題]** 欄位，輸入影像集的名稱。 該名稱會出現在影像集的橫幅中。 選擇性地輸入說明。
+1. 在“图像集编辑器”页面的 **[!UICONTROL 标题]** 字段中，输入图像集的名称。 该名称将显示在图像集的横幅中。 （可选）输入说明。
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
-1. 執行下列任一項作業：
+1. 执行以下任一操作：
 
-   * 在「影像集編輯器」頁面的左上角附近，選取 **[!UICONTROL 新增資產]**.
+   * 在“图像集编辑器”页面的左上角附近，选择 **[!UICONTROL 添加资产]**.
 
-   * 在「影像集編輯器」頁面中間附近，選取 **[!UICONTROL 點選以開啟資產選擇器]**.
-   點選以選取您要包含在影像集中的資產。 選取的資產上面有勾號圖示。 完成後，在頁面的右上角附近，選取 **[!UICONTROL 選取]**.
+   * 在“图像集编辑器”页面中间附近，选择 **[!UICONTROL 点按以打开资产选择器]**.
+   点按以选择要包含在图像集中的资产。 选定资源上面有一个复选标记图标。 完成后，在页面的右上角附近，选择 **[!UICONTROL 选择]**.
 
-   使用「資產選擇器」，您可以輸入關鍵字並選取 **[!UICONTROL 傳回]**. 您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。選取篩選，然後選取 **[!UICONTROL 篩選]** 圖示加以檢視。 選取「檢視」圖示並選取 **[!UICONTROL 欄檢視]**， **[!UICONTROL 卡片檢視]**，或 **[!UICONTROL 清單檢視]**.
+   借助资产选择器，您可以通过键入关键字并选择 **[!UICONTROL 返回]**. 您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后选择 **[!UICONTROL 筛选条件]** 图标。 通过选择视图图标并选择更改视图 **[!UICONTROL 列视图]**， **[!UICONTROL 卡片视图]**，或 **[!UICONTROL 列表视图]**.
 
-   另請參閱 [使用選取器](/help/assets/dynamic-media/working-with-selectors.md).
+   参见 [使用选择器](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
-1. 當您將資產新增至集時，資產會自動以英數字元順序新增。 在新增資產後，您可以手動重新排序或排序資產。
+1. 在将资源添加到集时，会自动按字母数字顺序添加资源。 添加资源后，您可以手动对资源重新排序或排序。
 
-   如有必要，請將資產的「重新排序」圖示拖曳至資產檔案名稱的右側，以將影像重新排序至集清單的上方或下方。
+   如有必要，请将资源的“重新排序”图标拖动到资源文件名的右侧，以将图像在集列表中向上或向下重新排序。
 
    ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
    如果要更改缩略图或色板，请单击图像旁的 **+** **缩略图**&#x200B;图标，然后导航到所需的缩略图或色板。选择完所有图像后，单击&#x200B;**[!UICONTROL 保存]**。
 
-1. （可選）執行下列任一項作業：
+1. （可选）执行以下任一操作：
 
-   * 若要刪除影像，請選取該影像，然後選取 **[!UICONTROL 刪除資產]**.
+   * 要删除图像，请选择该图像并选择 **[!UICONTROL 删除资源]**.
 
-   * 若要套用預設集，在頁面右上角附近，選取 **[!UICONTROL 預設集]**，然後選取要一次套用至所有資產的預設集。
+   * 要应用预设，请在页面的右上角附近，选择 **[!UICONTROL 预设]**，然后选择要一次性应用于所有资产的预设。
    >[!NOTE]
    >
-   >建立影像集時，您可以變更影像集縮圖。 或者，您也可以讓Experience Manager根據影像集中的資產自動選取縮圖。 若要選取縮圖，請選取 **[!UICONTROL 變更縮圖]** 位於「影像集編輯器」頁面上「標題」欄位上方。 然後，選取任何影像（您也可以導覽至其他資料夾以尋找影像）。 如果您已選取縮圖，然後決定要讓Experience Manager從影像集產生縮圖，請選取「 」 **[!UICONTROL 切換至]** **[!UICONTROL 自動縮圖]**.
+   >创建图像集时，您可以更改图像集缩略图。 或者，您也可以让Experience Manager根据图像集中的资源自动选择缩略图。 要选择缩略图，请选择 **[!UICONTROL 更改缩略图]** 位于图像集编辑器页面上的“标题”字段上方。 然后，选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定希望Experience Manager从图像集中生成缩略图，请选择 **[!UICONTROL 切换到]** **[!UICONTROL 自动缩略图]**.
 
-1. 单击“**[!UICONTROL 保存]**”。您新建立的影像集會顯示在您建立它的資料夾中。
+1. 单击“**[!UICONTROL 保存]**”。新创建的图像集将显示在您创建该图像集的文件夹中。
 
-## 檢視影像集 {#viewing-image-sets}
+## 查看图像集 {#viewing-image-sets}
 
-您可以在使用者介面中建立影像集，或自動使用 [批次集預設集](/help/assets/dynamic-media/batch-set-presets-dm.md).
+您可以在用户界面中创建图像集，也可以使用 [批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 >[!IMPORTANT]
 >
->批次集由IPS建立 [影像生產系統] 做為資產擷取的一部分。
+>批次集由IPS创建 [图像制作系统] 作为资产引入的一部分。
 
-不過，使用批次集預設集建立的集可以 *not* 顯示在使用者介面中。 您可以使用三種不同的方式檢視這些集合。 （即使您在使用者介面中建立了影像集，這些方法仍可使用）。
+但是，使用批次集预设创建的集可以 *非* 显示在用户界面中。 您可以通过三种不同的方式查看这些集合。 （即使在用户界面中创建了图像集，这些方法也可用）。
 
-* 開啟資產的屬性。 屬性會指出所選資產被參考或為其成員的設定。 若要檢視整個集合，請選取集合名稱。
+* 打开资源的属性。 属性指明所选资产被引用或作为成员的设置。 要查看整个集，请选择集名称。
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
-* 来自任何集的成员图像。選取 **[!UICONTROL 集合]** 功能表，以顯示資產所屬的集合。
+* 来自任何集的成员图像。选择 **[!UICONTROL 集]** 菜单以显示资产所属的集。
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* 在搜尋中，您可以選取 **[!UICONTROL 篩選]**，然後展開 **[!UICONTROL Dynamic Media]** 並選取 **[!UICONTROL 集合]**.
+* 在搜索中，您可以选择 **[!UICONTROL 筛选条件]**，然后展开 **[!UICONTROL Dynamic Media]** 并选择 **[!UICONTROL 集]**.
 
-   搜尋會傳回在UI中手動建立或通過批次集預設集自動建立的相符集。 對於自動化集，會使用「開頭為」來執行搜尋查詢。 此搜尋條件與使用「包含」的Experience Manager不同。 將篩選設定為 **[!UICONTROL 集合]** 是搜尋自動化集的唯一方法。
+   搜索会返回在UI中手动创建或通过批次集预设自动创建的匹配集。 对于自动化集，搜索查询使用“开头为”执行。 此搜索条件与基于使用“包含”的Experience Manager不同。 将筛选条件设置为 **[!UICONTROL 集]** 是搜索自动化集的唯一方法。
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
->您可以透過使用者介面檢視集合，如中所述 [編輯影像集](#editing-image-sets).
+>您可以通过用户界面查看集，如中所述 [编辑图像集](#editing-image-sets).
 
-## 編輯影像集 {#editing-image-sets}
+## 编辑图像集 {#editing-image-sets}
 
-您可以對「影像集」執行各種編輯工作，例如：
+您可以对图像集执行各种编辑任务，如下所示：
 
-* 將影像新增至影像集。
-* 重新排序影像集中的影像。
-* 刪除影像集中的資產。
-* 套用檢視器預設集。
-* 刪除影像集。
+* 将图像添加到图像集。
+* 对图像集中的图像重新排序。
+* 删除图像集中的资源。
+* 应用查看器预设。
+* 删除图像集。
 
-**若要編輯影像集：**
+**要编辑图像集，请执行以下操作：**
 
-1. 執行下列任一項作業：
+1. 执行以下任一操作：
 
-   * 暫留在影像集資產上，然後選取 **[!UICONTROL 編輯]** （鉛筆圖示）。
-   * 將滑鼠指標暫留在影像集資產上，選取 **[!UICONTROL 選取]** （勾選標籤圖示），然後選取 **[!UICONTROL 編輯]** （在工具列中）。
-   * 點選影像集資產，然後選取 **[!UICONTROL 編輯]** （鉛筆圖示）。
+   * 将鼠标悬停在图像集资源上，然后选择 **[!UICONTROL 编辑]** （铅笔图标）。
+   * 将鼠标悬停在图像集资源上，选择 **[!UICONTROL 选择]** （复选标记图标），然后选择 **[!UICONTROL 编辑]** 工具栏中。
+   * 点按图像集资源，然后选择 **[!UICONTROL 编辑]** （铅笔图标）。
 
-1. 若要編輯「影像集」中的影像，請執行下列任一項作業：
+1. 要编辑图像集中的图像，请执行下列任一操作：
 
-   * 若要重新排序資產，請將影像拖曳至新位置（選取重新排序圖示以移動專案）。
-   * 若要依遞增或遞減順序排序專案，請按一下欄標題。
-   * 若要新增資產或更新現有資產，請按一下 **[!UICONTROL 新增資產]**. 導覽至資產，選取該資產，然後選取 **[!UICONTROL 選取]** 靠近頁面的右上角。
+   * 要重新排序资产，请将图像拖动到新位置（选择重新排序图标以移动项目）。
+   * 要按升序或降序对项目排序，请单击列标题。
+   * 要添加资源或更新现有资源，请单击 **[!UICONTROL 添加资产]**. 导航到某个资源，选择该资源，然后选择 **[!UICONTROL 选择]** 在页面的右上角附近。
 
       >[!NOTE]
       >
-      >如果您以其他影像取代來刪除Experience Manager用於縮圖的影像，則原始資產仍會顯示。
-   * 若要刪除資產，請選取該資產並選取 **[!UICONTROL 刪除資產]**.
-   * 若要套用預設集，在頁面右上角附近，選取 **[!UICONTROL 預設集]**，然後選取檢視器預設集。
-   * 若要新增或變更縮圖，請選取資產右側旁的縮圖圖示。 導覽至新的縮圖或色票資產，選取該資產，然後選取 **[!UICONTROL 選取]**.
-   * 若要刪除整個影像集，請導覽至影像集，選取影像集，然後選取 **[!UICONTROL 刪除]**.
+      >如果通过将Experience Manager用于缩略图的图像替换为其他图像来删除该图像，则仍会显示原始资源。
+   * 要删除资源，请选择该资源并选择 **[!UICONTROL 删除资源]**.
+   * 要应用预设，请在页面的右上角附近，选择 **[!UICONTROL 预设]**，然后选择查看器预设。
+   * 要添加或更改缩略图，请选择资源右侧旁边的缩略图图标。 导航到新的缩略图或样本资源，选择它，然后选择 **[!UICONTROL 选择]**.
+   * 要删除整个图像集，请导航到该图像集，选择它，然后选择 **[!UICONTROL 删除]**.
 
    >[!NOTE]
    >
-   >您可以編輯影像集中的影像。 導覽至該集並選取 **[!UICONTROL 設定成員]** 在左側邊欄中。 若要開啟編輯視窗，請選取資產上的鉛筆圖示。
+   >您可以编辑图像集中的图像。 导航到集并选择 **[!UICONTROL 设置成员]** 在左边栏中。 要打开编辑窗口，请选择资产上的铅笔图标。
 
-1. 點選 **[!UICONTROL 儲存]** 完成編輯時。
+1. 点按 **[!UICONTROL 保存]** 完成编辑时。
 
-## 預覽影像集 {#previewing-image-sets}
+## 预览图像集 {#previewing-image-sets}
 
-另請參閱 [預覽資產](/help/assets/dynamic-media/previewing-assets.md).
+参见 [预览资源](/help/assets/dynamic-media/previewing-assets.md).
 
-## 發佈影像集 {#publishing-image-sets}
+## 发布图像集 {#publishing-image-sets}
 
-另請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+参见 [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

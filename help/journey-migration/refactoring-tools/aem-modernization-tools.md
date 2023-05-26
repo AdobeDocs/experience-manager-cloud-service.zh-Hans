@@ -11,7 +11,7 @@ ht-degree: 77%
 
 # AEM 现代化工具 {#aem-moderization-tools}
 
-AEM現代化工具提供了一套公用程式，可用來將舊版AEM功能轉換為AEMas a Cloud Service的現代化且受支援的功能。
+AEM现代化工具提供了一套实用程序，可用于将旧版AEM功能转换为AEMas a Cloud Service的现代且受支持的功能。
 
 
 ## 简介 {#introduction}

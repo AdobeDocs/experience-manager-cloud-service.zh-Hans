@@ -1,6 +1,6 @@
 ---
-title: 使用與共用相關報表
-description: 中的資產相關報表 [!DNL Adobe Experience Manager Assets] 可協助您瞭解數位資產的使用、活動和共用。
+title: 有关使用和共享的报告
+description: 有关您在中资源的报表 [!DNL Adobe Experience Manager Assets] 以帮助您了解数字资产的使用情况、活动和共享。
 contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
@@ -14,24 +14,24 @@ ht-degree: 8%
 
 # 资源报告 {#asset-reports}
 
-| 版本 | 文章連結 |
+| 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
-資產報告可讓您評估 [!DNL Adobe Experience Manager Assets] 部署。 替換為 [!DNL Assets]，您可為數位資產產生各種報表。 報表提供關於您系統使用情況、使用者如何與資產互動以及有哪些資產的有用資訊 <!-- downloaded and --> 已共用。
+通过资产报告，您可以评估 [!DNL Adobe Experience Manager Assets] 部署。 替换为 [!DNL Assets]，您可以为数字资产生成各种报表。 这些报表提供有关系统使用情况、用户如何与资源交互以及有哪些资源的有用信息 <!-- downloaded and --> 共享。
 
-使用報告中的資訊取得關鍵成功量度，以測量採用程度 [!DNL Assets] 企業內部和客戶。
+使用报告中的信息获得关键成功指标以衡量采用情况 [!DNL Assets] 企业内部和客户。
 
-此 [!DNL Assets] 報告框架使用 [!DNL Sling] 以循序方式非同步處理報表請求的作業。 它適用於大型存放庫。 非同步處理報告可提高產生報告的效率和速度。
+此 [!DNL Assets] 报告框架使用 [!DNL Sling] 作业以按顺序异步处理报表请求。 它对于大型存储库是可伸缩的。 异步报表处理提高了生成报表的效率和速度。
 
-報表管理介面具有直覺性，並包含存取已封存報表和檢視報表執行狀態（成功、失敗和已排入佇列）的精細選項和控制項。
+报告管理界面直观易用，包括访问存档报告和查看报告运行状态（成功、失败和排队）的细粒度选项和控件。
 
-產生報表時，系統會透過以下方式通知您： <!-- through an email (optional) and --> 收件匣通知。 您可以從報告清單頁面中檢視、下載或刪除報告，該頁面會顯示所有先前產生的報告。
+生成报告时，系统会通过以下方式通知您 <!-- through an email (optional) and --> 收件箱通知。 您可以从报告列表页面中查看、下载或删除报告，之前生成的所有报告都将显示在该页面中。
 
-## 產生報表 {#generate-reports}
+## 生成报告 {#generate-reports}
 
-[!DNL Experience Manager Assets] 會為您產生下列標準報表：
+[!DNL Experience Manager Assets] 会为您生成以下标准报表：
 
 * 上传
 * 下载
@@ -55,69 +55,69 @@ ht-degree: 8%
 * Link Share
 -->
 
-[!DNL Adobe Experience Manager] 管理員可輕鬆地產生和自訂這些報表，以供您實作。 管理員可以依照下列步驟產生報表：
+[!DNL Adobe Experience Manager] 管理员可以轻松地为您的实施生成和自定义这些报表。 管理员可以按照以下步骤生成报告：
 
-1. 在 [!DNL Experience Manager] 介面，按一下 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 報表]**.
+1. In [!DNL Experience Manager] 界面，单击 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 报告]**.
 
-   ![用於導覽資產報表的「工具」頁面](assets/navigation.png)
+   ![用于导航资产报表的“工具”页面](assets/navigation.png)
 
-1. 於 [!UICONTROL 資產報表] 頁面，按一下 **[!UICONTROL 建立]** （從工具列）。
-1. 從 **[!UICONTROL 建立報告]** 頁面上，選擇要建立的報表，然後按一下 **[!UICONTROL 下一個]**.
+1. 在 [!UICONTROL 资产报表] 页面，单击 **[!UICONTROL 创建]** 工具栏中。
+1. 从 **[!UICONTROL 创建报告]** 页面上，选择要创建的报告并单击 **[!UICONTROL 下一个]**.
 
-   ![選取報表型別](assets/choose_report.png)
+   ![选择报表类型](assets/choose_report.png)
 
-1. 設定標題、說明、縮圖和資料夾路徑等報表詳細資訊。 依預設，資料夾路徑為 `/content/dam`. 您可以指定不同的路徑，以在特定資料夾上執行報表。
+1. 配置报表详细信息，如标题、描述、缩略图和文件夹路径。 默认情况下，文件夹路径为 `/content/dam`. 您可以指定其他路径以在特定文件夹上执行报告。
 
-   ![新增報告詳細資料的頁面](assets/report_configuration.png)
+   ![用于添加报告详细信息的页面](assets/report_configuration.png)
 
-   選擇報表的日期範圍。 您可以選擇現在產生報表，或在未來日期及時間產生報表。
+   选择报表的日期范围。 您可以选择现在生成报告，也可以选择在未来的日期和时间生成报告。
 
    >[!NOTE]
    >
-   >如果您選擇稍後排程報表，請務必在「日期」和「時間」欄位中指定日期和時間。 如果您未指定任何值，報表引擎會將其視為要立即產生的報表。
+   >如果选择稍后计划报表，请确保在“日期”和“时间”字段中指定日期和时间。 如果您未指定任何值，则报告引擎会将其视为将立即生成的报告。
 
-   設定欄位可能會因您建立的報告型別而異。 例如， **[!UICONTROL 磁碟使用量]** 報表提供選項，可在計算資產使用的磁碟空間時包含資產轉譯。 您可以選擇包含或排除子資料夾中的資產，以計算磁碟使用量。
+   根据您创建的报告类型，配置字段可能有所不同。 例如， **[!UICONTROL 磁盘使用情况]** 报表提供了一些选项，用于在计算资产使用的磁盘空间时包含资产演绎版。 您可以选择在子文件夹中包括或排除资产以计算磁盘使用情况。
 
    >[!NOTE]
    >
    >**[!UICONTROL 磁盘使用情况]**&#x200B;报表不包含日期范围字段，因为它仅指示当前磁盘空间使用情况。
 
-   ![「磁碟使用量」報告的「詳細資訊」頁面](assets/disk_usage_configuration.png)
+   ![“磁盘使用情况”报告的“详细信息”页面](assets/disk_usage_configuration.png)
 
-   當您建立 **[!UICONTROL 檔案]** 報告，您可以包含/排除子資料夾。 不過，您無法包含此報表的資產轉譯。
+   当您创建 **[!UICONTROL 文件]** 报表中，您可以包含/排除子文件夹。 但是，您不能包含此报表的资产演绎版。
 
-   ![檔案報告的詳細資訊頁面](assets/files_report.png)
+   ![“文件”报告的“详细信息”页面](assets/files_report.png)
 
-   此 **[!UICONTROL 連結共用]** 報表會顯示資產的URL，這些資產是從中與外部使用者共用的 [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. -->列不可自定义。
+   此 **[!UICONTROL 链接共享]** 报表显示从内与外部用户共享的资产的URL [!DNL Assets]. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. -->列不可自定义。
 
-   此 **[!UICONTROL 連結共用]** 不包含子資料夾和轉譯的選項，因為它只會發佈顯示在下的共用URL `/var/dam/share`.
+   此 **[!UICONTROL 链接共享]** 报表，不包括子文件夹和呈现形式的选项，因为它仅发布显示在下的共享URL `/var/dam/share`.
 
-   ![連結共用報告的詳細資訊頁面](assets/link_share.png)
+   ![链接共享报告的详细信息页面](assets/link_share.png)
 
-1. 按一下 **[!UICONTROL 下一個]** （從工具列）。
+1. 单击 **[!UICONTROL 下一个]** 工具栏中。
 
-1. 在 **[!UICONTROL 設定欄]** 頁面，某些欄會依預設選取顯示在報表中。 您可以選取更多欄。 取消選取欄以在報告中將其排除。
+1. 在 **[!UICONTROL 配置列]** 页面中，某些列会默认显示在报表中。 您可以选择更多列。 取消选择列以在报告中将其排除。
 
-   ![選取或取消選取報告欄](assets/configure_columns.png)
+   ![选择或取消选择报表列](assets/configure_columns.png)
 
-   若要顯示自訂欄名稱或屬性路徑，請在 `jcr:content` CRX中的節點。 或者，透過屬性路徑選擇器新增它。
+   要显示自定义列名或属性路径，请在 `jcr:content` CRX中的节点。 或者，通过属性路径选取器添加它。
 
-   ![選取或取消選取報告欄](assets/custom_columns.png)
+   ![选择或取消选择报表列](assets/custom_columns.png)
 
-1. 按一下 **[!UICONTROL 建立]** （從工具列）。 訊息會通知已開始產生報表。
-1. 於 [!UICONTROL 資產報表] 頁面上，報表產生狀態是以報表工作的目前狀態為基礎，例如 [!UICONTROL 成功]， [!UICONTROL 已失敗]， [!UICONTROL 已排入佇列]，或 [!UICONTROL 已排程]. 通知收件匣中會顯示相同的狀態。若要檢視報告頁面，請按一下報告連結。 或者，選取報告，然後按一下 **[!UICONTROL 檢視]** （從工具列）。
+1. 单击 **[!UICONTROL 创建]** 工具栏中。 此时将显示一条消息，通知已开始生成报告。
+1. 在 [!UICONTROL 资产报表] 页面时，报表生成状态基于报表作业的当前状态，例如 [!UICONTROL 成功]， [!UICONTROL 失败]， [!UICONTROL 已排队]，或 [!UICONTROL 已计划]. 通知收件箱中将显示相同的状态。要查看报告页面，请单击报告链接。 或者，选择报告，然后单击 **[!UICONTROL 视图]** 工具栏中。
 
-   ![產生的報告](assets/report_page.png)
+   ![生成的报告](assets/report_page.png)
 
-   按一下 **[!UICONTROL 下載]** 從工具列下載CSV格式的報表。
+   单击 **[!UICONTROL 下载]** ，以CSV格式下载报表。
 
    >[!NOTE]
    >
-   >您可以根據過去360天內產生的事件產生報表。 Experience Manager會將使用者ID資料保留30天。
+   >您可以根据过去360天内生成的事件生成报告。 Experience Manager会将用户ID数据保留30天。
 
-## 新增自訂欄至報表 {#add-custom-columns}
+## 将自定义列添加到报表 {#add-custom-columns}
 
-您可以將自訂欄新增至下列報表，以顯示更多符合自訂需求的資料：
+您可以向以下报表添加自定义列，以显示符合自定义要求的更多数据：
 
 <!-- Remove download report.
 * Upload
@@ -136,26 +136,26 @@ ht-degree: 8%
 * [!DNL Brand Portal] 发布
 * 文件
 
-若要新增自訂欄到這些報表，請遵循下列步驟：
+要向这些报表中添加自定义列，请执行以下步骤：
 
-1. 在 [!DNL Manager interface]，按一下 **[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 報表]**.
-1. 於 [!UICONTROL 資產報表] 頁面，按一下 **[!UICONTROL 建立]** （從工具列）。
+1. 在 [!DNL Manager interface]，单击 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 报告]**.
+1. 在 [!UICONTROL 资产报表] 页面，单击 **[!UICONTROL 创建]** 工具栏中。
 
-1. 從 **[!UICONTROL 建立報告]** 頁面上，選擇要建立的報表。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 从 **[!UICONTROL 创建报告]** 页面中，选择要创建的报告。 单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 視適用情況設定報表詳細資訊，例如標題、說明、縮圖、資料夾路徑和日期範圍。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 配置报表详细信息，如标题、描述、缩略图、文件夹路径和日期范围（如果适用）。 单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 從清單中選取適用的資訊 **[!UICONTROL 預設欄]**. 若要顯示自訂欄，請指定下方的欄名稱 **[!UICONTROL 自訂欄]**.
+1. 从列表中选择适用的信息 **[!UICONTROL 默认列]**. 要显示自定义列，请在下指定列的名称 **[!UICONTROL 自定义列]**.
 
-   ![指定報表自訂欄的名稱](assets/custom_columns-1.png)
+   ![指定报表自定义列的名称](assets/custom_columns-1.png)
 
-1. 將屬性路徑新增至 `jcr:content` 使用屬性路徑選擇器的CRXDE中的節點。 或者，在屬性路徑欄位中輸入路徑。
+1. 将属性路径添加到 `jcr:content` 使用属性路径选取器的CRXDE中的节点。 或者，在属性路径字段中键入路径。
 
-   ![從jcr：content中的路徑對應屬性路徑](assets/property_picker.png)
+   ![从jcr：content中的路径映射属性路径](assets/property_picker.png)
 
-   若要新增更多自訂欄，請按一下 **[!UICONTROL 新增]** 並重複上述步驟。
+   要添加更多自定义列，请单击 **[!UICONTROL 添加]** 并重复上述步骤。
 
-1. 按一下 **[!UICONTROL 建立]** （從工具列）。 訊息會通知您已開始產生報表。
+1. 单击 **[!UICONTROL 创建]** 工具栏中。 此时将显示一条消息，通知已开始生成报告。
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -169,9 +169,9 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## 疑難排解資訊 {#tips-troubleshoot}
+## 疑难解答信息 {#tips-troubleshoot}
 
-* 如果 [!UICONTROL 磁碟使用情況報表] 不會產生，而且如果您使用 [!DNL Dynamic Media]，確定所有資產皆已正確處理。 若要解決，請重新處理資產並再次產生報表。
+* 如果 [!UICONTROL 磁盘使用情况报表] 不会生成，并且如果您使用 [!DNL Dynamic Media]，请确保正确处理了所有资源。 要解决此问题，请重新处理资产并再次生成报表。
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 

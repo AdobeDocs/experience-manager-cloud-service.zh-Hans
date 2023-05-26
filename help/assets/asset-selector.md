@@ -1,6 +1,6 @@
 ---
-title: 的資產選擇器 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: 使用資產選擇器，在您的應用程式中搜尋、尋找和擷取資產的中繼資料和轉譯。
+title: 的资源选择器 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: 使用资源选择器可在应用程序中搜索、查找和检索资源的元数据和演绎版。
 contentOwner: Adobe
 role: Admin,User
 source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
@@ -11,42 +11,42 @@ ht-degree: 3%
 ---
 
 
-# 微前端資產選擇器 {#Overview}
+# 微型前端资产选择器 {#Overview}
 
-Micro-Frontend Asset Selector提供的使用者介面可輕鬆與 [!DNL Experience Manager Assets as a Cloud Service] ，方便您瀏覽或搜尋存放庫中可用的數位資產，並在應用程式編寫體驗中使用這些資產。
+微型前端资产选择器提供了一个用户界面，可轻松与 [!DNL Experience Manager Assets as a Cloud Service] 存储库，以便您可以浏览或搜索存储库中可用的数字资产，并在应用程序创作体验中使用它们。
 
-Micro-Frontend使用者介面可在您的應用程式體驗中使用Asset Selector套件。 封裝的任何更新都會自動匯入，而最新部署的Asset Selector會在您的應用程式中自動載入。
+使用资产选择器软件包，可以在您的应用程序体验中使用Micro-Frontend用户界面。 将自动导入对包的任何更新，并在应用程序中自动加载最新部署的资产选择器。
 
 ![概述](assets/overview.png)
 
-Asset Selector提供許多優點，例如：
+资产选择器提供了许多好处，例如：
 
-* 使用Vanilla JavaScript程式庫輕鬆與任何Adobe或非Adobe應用程式整合。
-* Assets Selector套件的更新會自動部署至您的應用程式可用的資產選擇器，因此易於維護。 您的應用程式不需要更新，即可載入最新修改。
-* 易於自訂，因為有可用屬性可控制Asset Selector在您的應用程式中顯示。
+* 使用Vanilla JavaScript库轻松与任何Adobe或非Adobe应用程序集成。
+* 易于维护，因为资产选择器包的更新会自动部署到可用于您的应用程序的资产选择器。 您的应用程序中不需要更新即可加载最新修改。
+* 易于自定义，因为有一些属性可用于控制资产选择器显示在应用程序中。
 
-* 全文搜尋、現成可用的自訂篩選器，可快速導覽至資產，以便在編寫體驗中使用。
+* 全文搜索、现成和自定义筛选条件，可快速导航到要在创作体验中使用的资源。
 
-* 能夠在IMS組織內切換存放庫以進行資產選擇。
+* 能够在IMS组织内切换存储库以进行资产选择。
 
-* 可依名稱、維度和大小排序資產，並在「清單」、「格線」、「收藏館」或「瀑布」檢視中檢視資產。
+* 能够按名称、维度和大小对资源排序，并在列表、网格、图库或瀑布视图中查看这些资源。
 
-本文的範圍是示範如何搭配使用資產選擇器 [!DNL Adobe] Unified Shell下的應用程式，或您已針對驗證產生imsToken時。 本文將這些工作流程稱為非SUSI流程。
+本文的范围是演示如何将资产选择器与 [!DNL Adobe] Unified Shell下的应用程序，或者已经为身份验证生成了imsToken时。 本文将这些工作流称为非SUSI流。
 
-執行以下工作，將Asset Selector與您的整合和使用 [!DNL Experience Manager Assets as a Cloud Service] 存放庫：
+执行以下任务，将资产选择器与您的集成和使用 [!DNL Experience Manager Assets as a Cloud Service] 存储库：
 
-* [使用Vanilla JS整合資產選擇器](#integration-with-vanilla-js)
-* [定義資產選擇器顯示屬性](#asset-selector-properties)
-* [使用資產選擇器](#using-asset-selector)
+* [使用Vanilla JS集成资产选择器](#integration-with-vanilla-js)
+* [定义资源选择器显示属性](#asset-selector-properties)
+* [使用资源选择器](#using-asset-selector)
 
-## 使用Vanilla JS整合資產選擇器 {#integration-with-vanilla-js}
+## 使用Vanilla JS集成资产选择器 {#integration-with-vanilla-js}
 
-您可以整合任何 [!DNL Adobe] 或非Adobe應用程式 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 儲存庫並從應用程式中選取資產。
+您可以集成任何 [!DNL Adobe] 或非Adobe应用程序 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 并从应用程序中选择资源。
 
-整合是透過匯入Asset Selector套件並使用Vanilla JavaScript程式庫連線至Assets as a Cloud Service來完成。 您需要編輯 `index.html` 或任何應用程式內的適當檔案，以 — 
-* 定義驗證詳細資訊
-* 存取Assetsas a Cloud Service存放庫
-* 設定「資產選擇器」顯示屬性
+通过导入资产选择器软件包，并使用Vanilla JavaScript库连接到Assetsas a Cloud Service，可完成集成。 您需要编辑 `index.html` 或应用程序中的任何相应文件 — 
+* 定义身份验证详细信息
+* 访问Assetsas a Cloud Service存储库
+* 配置资源选择器显示属性
 
 <!--
 Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
@@ -59,10 +59,10 @@ You can perform authentication without defining some of the IMS properties, such
 Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining `imsScope` or `imsClientID` IMS properties is referred to as a non-SUSI flow in this article.
 -->
 
-在以下情況下，您可以在不定義某些IMS屬性的情況下執行身份驗證：
+在以下情况下，您可以在不定义某些IMS属性的情况下执行身份验证：
 
-* 您正在整合 [!DNL Adobe] 應用程式於 [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-* 您已產生用於驗證的IMS權杖。
+* 您正在集成 [!DNL Adobe] 应用程序 [Unifiedshell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* 您已经为身份验证生成了IMS令牌。
 
 ## 前提条件 {#prerequisites}
 
@@ -72,7 +72,7 @@ If your application requires user based authentication, out-of-the-box Asset Sel
 You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
 -->
 
-在中定義先決條件 `index.html` 應用程式實作中的檔案或類似檔案，用於定義驗證詳細資料以存取 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存放庫。 先決條件包括：
+在中定义先决条件 `index.html` 文件或应用程序实施中的类似文件，以定义用于访问 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存储库。 先决条件包括：
 * imsOrg
 * imsToken
 * apikey
@@ -101,9 +101,9 @@ For more information on these properties, refer to [Example for the SUSI flow](#
 
 ## 安装 {#installation}
 
-資產選取器可透過兩個ESM CDN使用(例如， [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/))和 [UMD](https://github.com/umdjs/umd) 版本。
+资产选择器可通过两个ESM CDN使用(例如， [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/))和 [UMD](https://github.com/umdjs/umd) 版本。
 
-在瀏覽器中使用 **UMD版本** （建議）：
+在浏览器中使用 **UMD版本** （推荐）：
 
 ```
 <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
@@ -113,7 +113,7 @@ For more information on these properties, refer to [Example for the SUSI flow](#
 </script>
 ```
 
-在瀏覽器中具有 `import maps` 支援使用 **ESM CDN版本**：
+在浏览器中，使用 `import maps` 支持使用 **ESM CDN版本**：
 
 ```
 <script type="module">
@@ -121,17 +121,17 @@ For more information on these properties, refer to [Example for the SUSI flow](#
 </script>
 ```
 
-在Deno/Webpack模組同盟中使用 **ESM CDN版本**：
+在Deno/Webpack模块联合中，使用 **ESM CDN版本**：
 
 ```
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
 ```
 
-### 選取的資產型別 {#selected-asset-type}
+### 选定的资源类型 {#selected-asset-type}
 
-選取的資產型別是一組物件，其中包含使用時的資產資訊 `handleSelection`， `handleAssetSelection`、和 `onDrop` 函式。
+选定的资源类型是一个对象数组，其中包含使用时的资源信息 `handleSelection`， `handleAssetSelection`、和 `onDrop` 函数。
 
-**結構描述語法**
+**架构语法**
 
 ```
 interface SelectedAsset {
@@ -161,35 +161,35 @@ interface SelectedAsset {
 }
 ```
 
-下表說明「選取的資產」物件的一些重要屬性。
+下表介绍了“选定的资产”对象的一些重要属性。
 
 | 属性 | 类型 | 解释 |
 |---|---|---|
-| *repo：repositoryId* | 字符串 | 儲存資產的存放庫的唯一識別碼。 |
-| *repo：id* | 字符串 | 資產的唯一識別碼。 |
-| *repo：assetClass* | 字符串 | 資產的分類（例如影像、影片或檔案）。 |
-| *repo：name* | 字符串 | 資產名稱，包括副檔名。 |
+| *repo：repositoryId* | 字符串 | 存储资产的存储库的唯一标识符。 |
+| *repo：id* | 字符串 | 资源的唯一标识符。 |
+| *repo：assetClass* | 字符串 | 资产的分类（例如，图像或视频、文档）。 |
+| *repo：name* | 字符串 | 资源的名称，包括文件扩展名。 |
 | *repo：size* | 数字 | 资源的大小，以字节为单位。 |
-| *repo：path* | 字符串 | 資產在存放庫中的位置。 |
-| *repo：ancestors* | `Array<string>` | 存放庫中資產的上階專案陣列。 |
-| *repo：state* | 字符串 | 存放庫中資產的目前狀態（例如，作用中、已刪除等）。 |
-| *repo：createdBy* | 字符串 | 建立資產的使用者或系統。 |
-| *repo：createDate* | 字符串 | 建立資產的日期和時間。 |
-| *repo：modifiedBy* | 字符串 | 上次修改資產的使用者或系統。 |
-| *repo：modifyDate* | 字符串 | 上次修改資產的日期和時間。 |
-| *dc:format* | 字符串 | 資產的格式，例如檔案型別(例如JPEG、PNG等)。 |
-| *tiff：imageWidth* | 数字 | 資產的寬度。 |
-| *tiff：imageLength* | 数字 | 資產的高度。 |
-| *計算後設資料* | `Record<string, any>` | 代表各種資產中繼資料（儲存庫、應用程式或內嵌中繼資料）貯體的物件。 |
-| *連結(_L)* | `Record<string, any>` | 相關資產的超媒體連結。 包含中繼資料和轉譯等資源的連結。 |
-| *_連結。http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | 包含資產轉譯相關資訊的物件陣列。 |
-| *_連結。http://ns.adobe.com/adobecloud/rel/rendition[].href* | 字符串 | 轉譯的URI。 |
-| *_連結。http://ns.adobe.com/adobecloud/rel/rendition[].type* | 字符串 | 轉譯的MIME型別。 |
-| *_連結。http://ns.adobe.com/adobecloud/rel/rendition[].&#39;repo：size`* | 数字 | 轉譯的大小（位元組）。 |
-| *_連結。http://ns.adobe.com/adobecloud/rel/rendition[].width* | 数字 | 轉譯的寬度。 |
-| *_連結。http://ns.adobe.com/adobecloud/rel/rendition[].height* | 数字 | 轉譯的高度。 |
+| *repo：path* | 字符串 | 资源在存储库中的位置。 |
+| *repo：ancestors* | `Array<string>` | 存储库中资产的上级项目数组。 |
+| *repo：state* | 字符串 | 存储库中资产的当前状态（例如，活动、已删除等）。 |
+| *repo：createdBy* | 字符串 | 创建资产的用户或系统。 |
+| *repo：createDate* | 字符串 | 创建资产的日期和时间。 |
+| *repo：modifiedBy* | 字符串 | 上次修改资产的用户或系统。 |
+| *repo：modifyDate* | 字符串 | 上次修改资产的日期和时间。 |
+| *dc:format* | 字符串 | 资源的格式，例如文件类型(例如，JPEG、PNG等)。 |
+| *tiff：imageWidth* | 数字 | 资源的宽度。 |
+| *tiff：imageLength* | 数字 | 资源的高度。 |
+| *计算元数据* | `Record<string, any>` | 一个对象，表示各种资产元数据（存储库、应用程序或嵌入元数据）的存储桶。 |
+| *链接(_L)* | `Record<string, any>` | 相关资产的超媒体链接。 包括元数据和演绎版等资源的链接。 |
+| *_链接。http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | 包含有关资源演绎版信息的对象数组。 |
+| *_链接。http://ns.adobe.com/adobecloud/rel/rendition[].href* | 字符串 | 呈现版本的URI。 |
+| *_链接。http://ns.adobe.com/adobecloud/rel/rendition[].type* | 字符串 | 节目的MIME类型。 |
+| *_链接。http://ns.adobe.com/adobecloud/rel/rendition[].&#39;repo：size`* | 数字 | 演绎版的大小（字节）。 |
+| *_链接。http://ns.adobe.com/adobecloud/rel/rendition[].width* | 数字 | 演绎版的宽度。 |
+| *_链接。http://ns.adobe.com/adobecloud/rel/rendition[].height* | 数字 | 节目高度。 |
 
-如需屬性的完整清單和詳細範例，請造訪 [資產選擇器程式碼範例](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+有关资产的完整列表和详细示例，请访问 [资源选择器代码示例](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 <!--
 ### ImsAuthProps {#ims-auth-props}
@@ -220,13 +220,13 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 | `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
 -->
 
-### 非SUSI流程的範例 {#non-susi-vanilla}
+### 非SUSI流的示例 {#non-susi-vanilla}
 
-此範例示範如何在執行時搭配非SUSI流程使用資產選擇器 [!DNL Adobe] Unified Shell下的應用程式，或當您已 `imsToken` 產生以進行驗證。
+此示例演示了如何在运行时为非SUSI流使用资产选择器 [!DNL Adobe] Unified Shell下的应用程序，或者当您已经拥有 `imsToken` 为身份验证生成。
 
-使用以下專案在您的程式碼中加入Asset Selector套件 `script` 標籤，如所示 _第6行至第15行_ 範例中的。 載入指令碼後， `PureJSSelectors` 全域變數可供使用。 定義資產選擇器 [屬性](#asset-selector-properties) 如所示 _第16到23行_. 此 `imsOrg` 和 `imsToken` 在非SUSI流程中驗證都需要屬性。 此 `handleSelection` 屬性用於處理選取的資產。 若要呈現資產選擇器，請呼叫 `renderAssetSelector` 中提及的函式 _第17行_. 資產選擇器會顯示在 `<div>` 容器元素，如所示 _第21行和第22行_.
+使用在您的代码中包含资产选择器软件包 `script` 标记，如中所示 _6到15行_ 下面示例中的。 加载脚本后， `PureJSSelectors` 全局变量可供使用。 定义资源选择器 [属性](#asset-selector-properties) 如所示 _第16行至第23行_. 此 `imsOrg` 和 `imsToken` 在非SUSI流中进行身份验证时，属性都是必需的。 此 `handleSelection` 属性用于处理选定的资产。 要呈现资产选择器，请调用 `renderAssetSelector` 中提到的函数 _17号线_. 资源选择器显示在 `<div>` 容器元素，如所示 _第21行和第22行_.
 
-依照這些步驟，您可以在中的非SUSI流程中使用資產選擇器 [!DNL Adobe] 應用程式。
+按照以下步骤操作，您可以在中使用具有非SUSI流的资产选择器 [!DNL Adobe] 应用程序。
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -257,7 +257,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 </html>
 ```
 
-如需詳細資訊，請造訪 [資產選擇器程式碼範例](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+有关详细的示例，请访问 [资源选择器代码示例](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 <!--
 ### Example for the SUSI flow {#susi-vanilla}
@@ -355,45 +355,45 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 ```
 -->
 
-## 使用資產選擇器屬性 {#asset-selector-properties}
+## 使用资源选择器属性 {#asset-selector-properties}
 
-您可以使用資產選擇器屬性來自訂資產選擇器的呈現方式。 下表列出可用於自訂和使用「資產選擇器」的屬性。
+您可以使用资源选择器属性自定义资源选择器的呈现方式。 下表列出了可用于自定义和使用Asset Selector的属性。
 
 | 属性 | 类型 | 必填 | 默认 | 描述 |
 |---|---|---|---|---|
-| *邊欄* | 布尔型 | 否 | false | 若已標籤 `true`，資產選擇器將會呈現在左側邊欄檢視中。 如果已標示 `false`，資產選擇器將會呈現在強制回應檢視中。 |
-| *imsOrg* | 字符串 | 是 |  | Adobe布建時指派的Identity Management系統(IMS) ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 為您的組織所用。 此 `imsOrg` 需要金鑰才能驗證您所存取的組織是否位於Adobe IMS之下。 |
-| *imsToken* | 字符串 | 否 |  | 用於驗證的IMS持有人權杖。 `imsToken` 如果您使用非SUSI流程，則為必要專案。 |
-| *apiKey* | 字符串 | 否 |  | 用於存取AEM Discovery服務的API金鑰。 `apiKey` 如果您使用非SUSI流程，則為必要專案。 |
-| *rootPath* | 字符串 | 否 | /content/dam/ | Asset Selector顯示您資產的資料夾路徑。 `rootPath` 也可以使用封裝的形式。 例如，假定路徑如下， `/content/dam/marketing/subfolder/`，Asset Selector不允許您周遊任何上層資料夾，但只會顯示下層資料夾。 |
-| *路径* | 字符串 | 否 |  | 呈現資產選擇器時，用來導覽至資產特定目錄的路徑。 |
-| *filterSchema* | 陣列 | 否 |  | 用來設定篩選屬性的模型。 當您想要限制「資產選擇器」中的某些篩選選項時，這會很有用。 |
-| *filterFormProps* | 对象 | 否 |  | 指定縮小搜尋範圍所需的篩選屬性。 例如，MIME型別JPG、PNG、GIF。 |
-| *selectedassets* | 数组 `<Object>` | 否 |  | 在呈現資產選擇器時指定選取的資產。 需要包含資產id屬性的物件陣列。 例如， `[{id: 'urn:234}, {id: 'urn:555'}]` 資產必須位於目前目錄中。 如果您需要使用其他目錄，請為 `path` 屬性。 |
-| *acvConfig* | 对象 | 否 |  | 包含要覆寫預設值的自訂設定之物件的資產集合檢視屬性。 |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |  | 如果OOTB翻譯無法滿足應用程式的需求，您可以公開介面，透過傳遞您自己的自訂本地化值 `i18nSymbols` prop. 透過此介面傳遞值會覆寫提供的預設翻譯，並改用您自己的翻譯。  若要執行覆寫，您必須傳遞有效的 [訊息描述項](https://formatjs.io/docs/react-intl/api/#message-descriptor) 物件至的索引鍵 `i18nSymbols` 您想要覆寫的專案。 |
-| *intl* | 对象 | 否 |  | 資產選擇器提供預設的OOTB翻譯。 您可以透過提供有效的地區設定字串，以選取翻譯語言 `intl.locale` prop. 例如： `intl={{ locale: "es-es" }}` </br></br> 支援的地區設定字串會遵循 [ISO 639 — 代碼](https://www.iso.org/iso-639-language-codes.html) 代表語言標準的名稱。 </br></br> 支援的地區設定清單：英文 — &#39;en-us&#39; （預設）西班牙文 — &#39;es-es&#39;德文 — &#39;de-de&#39;法文 — &#39;fr-fr&#39;義大利文 — &#39;it-it&#39;日文 — &#39;ja-jp&#39;韓文 — &#39;ko-kr&#39;葡萄牙文 — &#39;pt-br&#39;中文（繁體） - &#39;zh-cn&#39;中文（台灣） - &#39;zh-tw&#39; |
-| *repositoryId* | 字符串 | 否 | &quot; | 資產選擇器載入內容的存放庫。 |
-| *其他AemSolutions* | `Array<string>` | 否 | [ ] | 它可讓您新增其他AEM存放庫的清單。 如果此屬性未提供任何資訊，則只會考量媒體庫或AEM Assets存放庫。 |
-| *hideTreeNav* | 布尔型 | 否 |  | 指定是否要顯示或隱藏資產樹狀導覽側欄。 它只會用於模型檢視，因此此屬性在邊欄檢視中沒有任何影響。 |
-| *onDrop* | 函数 | 否 |  | 屬性可讓您拖放資產。 |
-| *dropOptions* | `{allowList?: Object}` | 否 |  | 使用&#39;allowList&#39;設定下拉選項。 |
-| *色彩配置* | 字符串 | 否 |  | 設定主題(`light` 或 `dark`)以做為資產選擇器。 |
-| *handleSelection* | 函数 | 否 |  | 在選取資產且 `Select` 已按一下強制回應視窗上的按鈕。 此函式僅在模組檢視中叫用。 針對邊欄檢視，請使用 `handleAssetSelection` 或 `onDrop` 函式。 示例: <pre>handleselection=(assets： Asset[])=> {...}</pre> 另請參閱 [選取的資產型別](#selected-asset-type) 以取得詳細資訊。 |
-| *handleAssetSelection* | 函数 | 否 |  | 在選取或取消選取資產時，以專案陣列叫用。 當您想要在使用者選取資產時監聽資產時，這會很有用。 示例: <pre>handleselection=(assets： Asset[])=> {...}</pre> 另請參閱 [選取的資產型別](#selected-asset-type) 以取得詳細資訊。 |
-| *onClose* | 函数 | 否 |  | 叫用時機 `Close` 已按下模組檢視中的按鈕。 這只會在 `modal` 在中檢視和忽略 `rail` 檢視。 |
-| *onFilterSubmit* | 函数 | 否 |  | 當使用者變更不同的篩選條件時，以篩選專案叫用。 |
-| *selectionType* | 字符串 | 否 | 单人 | 的設定 `single` 或 `multiple` 一次選取個資產。 |
+| *边栏* | 布尔型 | 否 | false | 如果已标记 `true`，资产选择器将在左边栏视图中渲染。 如果已标记 `false`，资产选择器将在模式视图中呈现。 |
+| *imsOrg* | 字符串 | 是 |  | Adobe在配置时分配的Identity Management System (IMS) ID [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 您的组织。 此 `imsOrg` 需要密钥来验证您访问的组织是否处于Adobe IMS下。 |
+| *imsToken* | 字符串 | 否 |  | 用于身份验证的IMS持有者令牌。 `imsToken` 如果您使用的是非SUSI流，则为必填项。 |
+| *apiKey* | 字符串 | 否 |  | 用于访问AEM Discovery服务的API密钥。 `apiKey` 如果您使用的是非SUSI流，则为必需。 |
+| *根路径* | 字符串 | 否 | /content/dam/ | 资源选择器显示资源的文件夹路径。 `rootPath` 也可以以封装的形式使用。 例如，给定以下路径， `/content/dam/marketing/subfolder/`，资产选择器不允许您遍历任何父文件夹，但仅显示子文件夹。 |
+| *路径* | 字符串 | 否 |  | 呈现资产选择器时用于导航到资产的特定目录的路径。 |
+| *filterschema* | 数组 | 否 |  | 用于配置过滤器属性的模型。 当您想要限制资源选择器中的某些过滤器选项时，这将很有用。 |
+| *filterFormProps* | 对象 | 否 |  | 指定优化搜索所需的过滤器属性。 例如，MIME类型JPG、PNG、GIF。 |
+| *selectedassets* | 数组 `<Object>` | 否 |  | 在呈现资源选择器时指定选定的资源。 需要包含资产的id属性的对象数组。 例如， `[{id: 'urn:234}, {id: 'urn:555'}]` 资源必须位于当前目录中。 如果需要使用其他目录，请为 `path` 产权。 |
+| *acvConfig* | 对象 | 否 |  | 包含要覆盖默认值的自定义配置的对象的资产收藏集视图属性。 |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |  | 如果OOTB翻译无法满足应用程序的需求，则可以公开一个界面，通过该界面可以通过传递您自己的自定义本地化值 `i18nSymbols` prop. 通过此界面传递值将覆盖提供的默认转换，并转而使用您自己的转换。  要执行覆盖，您必须传递一个有效的 [消息描述符](https://formatjs.io/docs/react-intl/api/#message-descriptor) 对象，指向的键 `i18nSymbols` 要覆盖的内容。 |
+| *intl* | 对象 | 否 |  | 资产选择器提供默认的OOTB翻译。 您可以通过以下方式提供有效的区域设置字符串来选择翻译语言 `intl.locale` prop. 例如： `intl={{ locale: "es-es" }}` </br></br> 支持的区域设置字符串遵循 [ISO 639 — 代码](https://www.iso.org/iso-639-language-codes.html) 用于表示语言标准的名称。 </br></br> 支持的区域设置列表：英语 — &#39;en-us&#39;（默认）西班牙语 — &#39;es-es&#39;德语 — &#39;de-de&#39;法语 — &#39;fr-fr&#39;意大利语 — &#39;it-it&#39;日语 — &#39;ja-jp&#39;韩语 — &#39;ko-kr&#39;葡萄牙语 — &#39;pt-br&#39;中文（繁体） — &#39;zh-cn&#39;中文（台湾） — &#39;zh-tw&#39; |
+| *repositoryId* | 字符串 | 否 | ” | 资源选择器从中加载内容的存储库。 |
+| *其他AemSolutions* | `Array<string>` | 否 | [ ] | 它允许您添加其他AEM存储库的列表。 如果此资产中未提供任何信息，则只会考虑Media Library或AEM Assets存储库。 |
+| *hideTreeNav* | 布尔型 | 否 |  | 指定是显示还是隐藏资源树导航侧栏。 它仅用于模态视图，因此此属性在边栏视图中没有任何影响。 |
+| *onDrop* | 函数 | 否 |  | 属性允许使用资源的拖放功能。 |
+| *dropOptions* | `{allowList?: Object}` | 否 |  | 使用“允许列表”配置放置选项。 |
+| *颜色方案* | 字符串 | 否 |  | 配置主题(`light` 或 `dark`)作为资产选择器。 |
+| *handleSelection* | 函数 | 否 |  | 在选择了资产且 `Select` 已单击模式上的按钮。 此函数仅在模态视图中调用。 对于边栏视图，请使用 `handleAssetSelection` 或 `onDrop` 函数。 示例: <pre>handleSelection=(assets：资源[])=> {...}</pre> 参见 [选定的资源类型](#selected-asset-type) 了解详细信息。 |
+| *handleAssetSelection* | 函数 | 否 |  | 在选中或取消选中资产时，使用项目数组调用。 当您想要在用户选择资产时侦听资产时，这将很有用。 示例: <pre>handleSelection=(assets：资源[])=> {...}</pre> 参见 [选定的资源类型](#selected-asset-type) 了解详细信息。 |
+| *onClose* | 函数 | 否 |  | 调用时间 `Close` 已按下模态视图中的按钮。 此调用仅在 `modal` 在中查看和忽略 `rail` 视图。 |
+| *onFilterSubmit* | 函数 | 否 |  | 在用户更改不同的筛选条件时，通过筛选项目调用。 |
+| *selectionType* | 字符串 | 否 | 单人 | 的配置 `single` 或 `multiple` 一次选择资源。 |
 
-## 使用資產選擇器屬性的範例 {#usage-examples}
+## 使用资源选择器属性的示例 {#usage-examples}
 
-您可以定義資產選擇器 [屬性](#asset-selector-properties) 在 `index.html` 檔案以自訂應用程式內的資產選擇器顯示。
+您可以定义资源选择器 [属性](#asset-selector-properties) 在 `index.html` 文件，以自定义应用程序中的资产选择器显示。
 
-### 範例1：邊欄檢視中的資產選擇器
+### 示例1：边栏视图中的资产选择器
 
-![rail-view-example](assets/rail-view-example-vanilla.png)
+![边栏视图示例](assets/rail-view-example-vanilla.png)
 
-如果AssetSelector `rail` 設為 `false` 或屬性中未提及，資產選擇器預設會顯示在「強制回應視窗」中。
+如果AssetSelector的值 `rail` 设置为 `false` 或者属性中未提及，默认情况下资产选择器会显示在模式视图中。
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -403,16 +403,16 @@ Use the `path` property to define the folder name that displays automatically wh
    ![selected-assets-example](assets/selected-assets-example-vanilla.png)
 -->
 
-### 範例2：中繼資料彈出視窗
+### 示例2：元数据弹出框
 
-使用各種屬性來定義您要使用資訊圖示檢視的資產的中繼資料。 資訊彈出視窗提供有關資產或資料夾的資訊集合，包括標題、維度、修改日期、位置和資產說明。 在以下範例中，各種屬性可用來顯示資產的中繼資料，例如， `repo:path` 屬性會指定資產的位置。 <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
+使用各种属性定义要使用信息图标查看的资源的元数据。 信息弹出窗口提供有关资源或文件夹的信息集合，包括资源的标题、维度、修改日期、位置和描述。 在以下示例中，使用各种属性来显示资源的元数据，例如， `repo:path` 属性指定资源的位置。 <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
 
 ![metadata-pover-example](assets/metadata-popover.png)
 
 
-### 範例3：邊欄檢視中的自訂篩選屬性
+### 示例3：边栏视图中的自定义过滤器属性
 
-除了多面向搜尋外，Assets Selector可讓您自訂各種屬性，以縮小您的搜尋範圍 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 應用程式。 您必須新增下列程式碼，才能在應用程式中新增自訂搜尋篩選器。 在以下範例中， `Type Filter` 依影像、檔案或影片篩選資產型別，或您為搜尋新增的篩選型別進行搜尋。
+除了面向搜索外，Assets Selector还允许您自定义各种属性以从以下来源优化搜索 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 应用程序。 您需要添加以下代码以在应用程序中添加自定义搜索过滤器。 在以下示例中， `Type Filter` 可在图像、文档或视频之间筛选资源类型，或筛选您为搜索添加的筛选器类型的搜索。
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -483,76 +483,76 @@ interface SelectedAsset {
 For the detailed example of Object Schema, click 
 -->
 
-## 使用物件結構描述處理資產的選取 {#handling-selection}
+## 使用对象架构处理资源的选择 {#handling-selection}
 
-此 `handleSelection` 屬性可用來處理Assets Selector中單一或多個資產選取專案。 以下範例說明使用的語法 `handleSelection`.
+此 `handleSelection` 属性用于处理Assets选择器中的单个或多个资产选择。 以下示例说明使用的语法 `handleSelection`.
 
-![控制代碼選取](assets/handling-selection.png)
+![句柄选择](assets/handling-selection.png)
 
-## 使用資產選擇器 {#using-asset-selector}
+## 使用资源选择器 {#using-asset-selector}
 
-設定「資產選擇器」並驗證您同意將「資產選擇器」用於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 應用程式，您可以選取資產或執行各種其他操作，以在存放庫中搜尋您的資產。
+设置资产选择器并验证您同意将资产选择器用于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 应用程序时，您可以选择资源或执行各种其他操作来搜索存储库中的资源。
 
 ![using-asset-selector](assets/using-asset-selector.png)
 
-* **A**： [隱藏/顯示面板](#hide-show-panel)
-* **B**： [存放庫切換器](#repository-switcher)
-* **C**： [資產](#repository)
-* **D**： [篩選器](#filters)
-* **E**： [搜尋列](#search-bar)
+* **A**： [隐藏/显示面板](#hide-show-panel)
+* **B**： [存储库切换器](#repository-switcher)
+* **C**： [资产](#repository)
+* **D**： [筛选器](#filters)
+* **E**： [搜索栏](#search-bar)
 * **F**： [排序](#sorting)
-* **G**： [以遞增或遞減順序排序](#sorting)
-* **H**： [檢視](#types-of-view)
+* **G**： [按升序或降序排序](#sorting)
+* **H**： [视图](#types-of-view)
 
-### 隱藏/顯示面板 {#hide-show-panel}
+### 隐藏/显示面板 {#hide-show-panel}
 
-若要在左側導覽中隱藏資料夾，請按一下 **[!UICONTROL 隱藏資料夾]** 圖示。 若要復原變更，請按一下 **[!UICONTROL 隱藏資料夾]** 圖示重新顯示。
+要在左侧导航中隐藏文件夹，请单击 **[!UICONTROL 隐藏文件夹]** 图标。 要撤消更改，请单击 **[!UICONTROL 隐藏文件夹]** 图标。
 
-### 存放庫切換器 {#repository-switcher}
+### 存储库切换器 {#repository-switcher}
 
-資產選擇器也可讓您切換存放庫以進行資產選擇。 您可以從左側面板提供的下拉式清單中選取您選擇的存放庫。 下拉式清單中可用的存放庫選項是根據 `repositoryId` 屬性定義於 `index.html` 檔案。 它會根據登入使用者存取之所選IMS組織的環境。 消費者可以傳遞偏好的 `repositoryID` 在此情況下，資產選擇器會停止轉譯存放庫切換器，並僅轉譯來自指定存放庫的資產。
+资产选择器还允许您切换存储库以进行资产选择。 您可以从左侧面板中提供的下拉列表中选择所选存储库。 下拉列表中可用的存储库选项基于 `repositoryId` 在中定义的属性 `index.html` 文件。 它基于登录用户访问的选定IMS组织的环境。 消费者可以传递首选 `repositoryID` 在这种情况下，资产选择器停止渲染存储库切换器，并仅渲染给定存储库中的资产。
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
 
-### 資產存放庫
+### 资产存储库
 
-它是資產資料夾的集合，可用來執行操作。
+它是可用于执行操作的资源文件夹的集合。
 
-### 現成可用的篩選器 {#filters}
+### 现成过滤器 {#filters}
 
-資產選擇器還提供現成的篩選選項來縮小您的搜尋結果。 可使用下列篩選器：
+资产选择器还提供现成的过滤器选项来优化搜索结果。 以下筛选器可用：
 
-* `File type`：包括資料夾、檔案、影像、檔案或影片
+* `File type`：包括文件夹、文件、图像、文档或视频
 * `MIME type`：包括JPG、GIF、PPTX、PNG、MP4、DOCX、TIFF、PDF、XLSX
-* `Image Size`：包括影像的最小/最大寬度、最小/最大高度
+* `Image Size`：包括图像的最小值/最大宽度、最小值/最大高度
 
-![rail-view-example](assets/filters-asset-selector.png)
+![边栏视图示例](assets/filters-asset-selector.png)
 
-### 自訂搜尋
+### 自定义搜索
 
-除了全文檢索搜尋之外，資產選擇器可讓您使用自訂搜尋功能來搜尋檔案中的資產。 您可以在強制回應檢視和邊欄檢視模式中使用自訂搜尋篩選器。
+除了全文搜索之外，资产选择器还允许您使用自定义搜索来搜索文件内的资产。 您可以在模态视图和边栏视图模式下使用自定义搜索过滤器。
 
 ![custom-search](assets/custom-search.png)
 
-您也可以建立預設搜尋篩選條件，以儲存您經常搜尋的欄位，並在稍後使用。 若要建立資產的自訂搜尋，您可以使用 `filterSchema` 屬性。
+您还可以创建默认搜索过滤器，以保存您经常搜索的字段并在以后使用。 要为资源创建自定义搜索，您可以使用 `filterSchema` 属性。
 
-### 搜尋列 {#search-bar}
+### 搜索栏 {#search-bar}
 
-資產選擇器可讓您對所選存放庫內的資產執行全文搜尋。 例如，如果您輸入關鍵字 `wave` 在搜尋列中，所有具有 `wave` 將顯示任何中繼資料屬性中提及的關鍵字。
+利用资源选择器，可对所选存储库中的资源执行全文搜索。 例如，如果键入关键字 `wave` 在搜索栏中，所有包含 `wave` 将显示在任意元数据属性中提到的关键字。
 
 ### 排序 {#sorting}
 
-您可以在「資產選擇器」中依資產名稱、維度或大小來排序資產。 您也可以依遞增或遞減順序排序資產。
+您可以在资源选择器中按名称、维度或资源大小对资源进行排序。 您还可以按升序或降序对资源排序。
 
-### 檢視型別 {#types-of-view}
+### 视图类型 {#types-of-view}
 
-資產選擇器可讓您以四種不同的檢視檢視資產：
+资产选择器允许您以四种不同的视图查看资产：
 
-* **![清單檢視](assets/do-not-localize/list-view.png) [!UICONTROL 清單檢視]**：清單檢視會在單一欄中顯示可捲動檔案和資料夾。
-* **![格點檢視](assets/do-not-localize/grid-view.png) [!UICONTROL 格點檢視]**：格線檢視會在列和欄的格線中顯示可捲動檔案和資料夾。
-* **![相簿檢視](assets/do-not-localize/gallery-view.png) [!UICONTROL 相簿檢視]**：相簿檢視會在置中鎖定的水準清單中顯示檔案或資料夾。
-* **![瀑布檢視](assets/do-not-localize/waterfall-view.png) [!UICONTROL 瀑布檢視]**：瀑布圖檢視會以Bridge的形式顯示檔案或資料夾。
+* **![列表视图](assets/do-not-localize/list-view.png) [!UICONTROL 列表视图]**：列表视图在一列中显示了可滚动的文件和文件夹。
+* **![网格视图](assets/do-not-localize/grid-view.png) [!UICONTROL 网格视图]**：网格视图在行和列的网格中显示可滚动的文件和文件夹。
+* **![图库视图](assets/do-not-localize/gallery-view.png) [!UICONTROL 图库视图]**：图库视图以中心锁定水平列表显示文件或文件夹。
+* **![瀑布视图](assets/do-not-localize/waterfall-view.png) [!UICONTROL 瀑布视图]**：瀑布视图以网桥的形式显示文件或文件夹。
 
 <!--
 ### Modes to view Asset Selector

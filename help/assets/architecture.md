@@ -1,6 +1,6 @@
 ---
-title: 架構 [!DNL Assets]
-description: Adobe Experience Manager Assets as a的架構 [!DNL Cloud Service]
+title: 架构 [!DNL Assets]
+description: Adobe Experience Manager Assets as a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
 role: Architect
@@ -12,11 +12,11 @@ ht-degree: 32%
 
 ---
 
-# Assets as a的架構 [!DNL Cloud Service] 解決方案 {#assets-architecture}
+# Assets as a [!DNL Cloud Service] 解决方案 {#assets-architecture}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 根據 [!DNL Adobe Experience Manager] 並與最新產品相提並論 [!DNL Experience Manager] 6.5.此 [!DNL Cloud Service] 產品具有調整後的架構和功能，可作為雲端原生服務。 基礎架構的變更不允許所有Experience Manager6.5功能屬於 [!DNL Cloud Service].
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 基于 [!DNL Adobe Experience Manager] 和最新推出的产品相提并论 [!DNL Experience Manager] 6.5. [!DNL Cloud Service] 产品具有经调整的架构和功能，可成为云原生服务。 底层架构中的更改不允许所有Experience Manager6.5功能成为 [!DNL Cloud Service].
 
-若要檢視資產微服務的架構概觀，請參閱此 [資產微服務概覽](asset-microservices-overview.md#asset-microservices-architecture).
+要查看资源微服务的架构概述，请参阅此 [资源微服务概述](asset-microservices-overview.md#asset-microservices-architecture).
 
 **另请参阅**
 
@@ -36,6 +36,6 @@ ht-degree: 32%
 >[!MORELIKETHIS]
 >
 >* [概述和新增功能](/help/assets/overview.md)
->* [支援的檔案格式和MIME型別](file-format-support.md)
+>* [支持的文件格式和MIME类型](file-format-support.md)
 >* [资产微服务概述](asset-microservices-overview.md)
 

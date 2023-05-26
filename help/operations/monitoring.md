@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的基础设施和服务监控
 description: AEM as a Cloud Service 中的基础设施和服务监控
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: a95c914502fbb279bd44abd6d5d4d141707e9a59
+source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '593'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ AEMas a Cloud Service使用数百个云原生监视器，以每年365天不间�
 
 >[!NOTE]
 >
-> 此功能仅面向具有以下特征的客户： [高级云支持。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) 如果您有任何问题，请联系您的Adobe客户团队。
+> 此功能仅面向具有以下特征的客户： [高级云支持。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) 如果您有任何疑问，请通过Admin Console提出支持案例。
 
 ## 内部模块监控 {#module-monitoring}
 

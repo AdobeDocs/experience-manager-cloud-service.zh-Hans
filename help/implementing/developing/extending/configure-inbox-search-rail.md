@@ -1,6 +1,6 @@
 ---
-title: 如何設定收件匣的搜尋篩選器？
-description: 瞭解如何設定收件匣專案的搜尋篩選器。
+title: 如何配置收件箱的搜索过滤器？
+description: 了解如何为收件箱项目配置搜索过滤器。
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 1%
 
 # 配置收件箱搜索过滤器 {#configure-search-filters-inbox}
 
-您可以設定收件匣專案的搜尋篩選器。 讓您的搜尋條件以特定收件匣欄為依據，以篩選結果。
+您可以为收件箱项目配置搜索过滤器。 根据特定的收件箱列确定搜索条件以筛选结果。
 
-例如，若要根據「出生日期」收件匣欄範圍來篩選「收件匣」專案，您可以使用日期範圍述詞來定義日期範圍。
+例如，要根据“出生日期”收件箱列范围筛选收件箱项目，您可以使用日期范围谓词来定义日期范围。
 
-以下是「收件匣」的可用述詞型別：
+以下是收件箱的可用谓词类型：
 
 * 范围谓词
 
@@ -27,85 +27,85 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->確定您是 `workflow-administrators` 群組來設定收件匣的搜尋篩選器。
+>确保您是 `workflow-administrators` 组，用于配置收件箱的搜索过滤器。
 
-## 建立或開啟自訂設定 {#creating-opening-customized-configuration}
+## 创建或打开自定义配置 {#creating-opening-customized-configuration}
 
-1. 導覽至 **[!UICONTROL 工具]**， **[!UICONTROL 一般]**， **[!UICONTROL 搜尋Forms]**.
+1. 导航到 **[!UICONTROL 工具]**， **[!UICONTROL 常规]**， **[!UICONTROL 搜索Forms]**.
 
-1. 選取 **[!UICONTROL 收件匣搜尋邊欄]** 設定並點選 **[!UICONTROL 編輯]**.
-1. 合併述片語態變更，使用 **[!UICONTROL 編輯搜尋Forms]**.
-1. 選取 **[!UICONTROL 完成]** 以儲存設定。
+1. 选择 **[!UICONTROL 收件箱搜索边栏]** 配置和点按 **[!UICONTROL 编辑]**.
+1. 使用以下方式合并谓词配置更改 **[!UICONTROL 编辑搜索Forms]**.
+1. 选择 **[!UICONTROL 完成]** 以保存配置。
 
-## 刪除自訂設定 {#delete-customized-configuration}
+## 删除自定义配置 {#delete-customized-configuration}
 
-若要刪除自訂組態：
+要删除自定义配置，请执行以下操作：
 
-1. 導覽至 **[!UICONTROL 工具]**， **[!UICONTROL 一般]**， **[!UICONTROL 搜尋Forms]**.
+1. 导航到 **[!UICONTROL 工具]**， **[!UICONTROL 常规]**， **[!UICONTROL 搜索Forms]**.
 
-1. 選取 **[!UICONTROL 收件匣搜尋邊欄]** 設定並點選 **[!UICONTROL 刪除]**.
+1. 选择 **[!UICONTROL 收件箱搜索边栏]** 配置和点按 **[!UICONTROL 删除]**.
 
-## 設定範圍述詞 {#range-predicate}
+## 配置范围谓词 {#range-predicate}
 
-您可以使用「範圍述詞」來篩選「收件匣」專案，以搜尋「收件匣」欄中的數字範圍。 您也可以選擇包含數字的小數值。
+您可以过滤收件箱项目，以使用范围谓词搜索收件箱列中的数字范围。 您还可以选择包含数字的小数值。
 
-設定範圍述詞：
+配置范围谓词：
 
-1. 開啟 [設定表單](#creating-opening-customized-configuration).
-1. 點選 **[!UICONTROL 選取述詞]** 定位並拖曳 **[!UICONTROL 範圍述詞]** 至表單。
-1. 在 **[!UICONTROL 設定]** 索引標籤中，選取作為搜尋基礎的收件匣欄名稱 **[!UICONTROL 欄名稱]** 欄位。
-1. 在中指定篩選的標籤 **[!UICONTROL 篩選標籤]** 欄位。 選取 **[!UICONTROL 啟用小數值]** 核取方塊，以在定義範圍時接受數字的小數值。
-1. 為設定指定選擇性說明，然後點選 **[!UICONTROL 完成]** 以儲存。
+1. 打开 [配置表单](#creating-opening-customized-configuration).
+1. 点按 **[!UICONTROL 选择谓词]** 制表符并拖动 **[!UICONTROL 范围谓词]** 到窗体。
+1. 在 **[!UICONTROL 设置]** 选项卡，从中选择作为搜索基础的收件箱列名称 **[!UICONTROL 列名称]** 字段。
+1. 在中指定过滤器的标签 **[!UICONTROL 筛选标签]** 字段。 选择 **[!UICONTROL 启用小数值]** 此复选框用于在定义范围时接受数字的小数值。
+1. 为配置指定可选描述，然后点击 **[!UICONTROL 完成]** 以保存它。
 
-設定變更會在您開啟「篩選器」頁面時反映出來。 您在步驟4中指定的篩選標籤會顯示為標籤，並附有定義最大值和最小值的選項。 當您按下Enter鍵時， [!DNL Experience Manager] 將搜尋條件套用至步驟3中指定的欄名稱，並傳回「收件匣」專案。
+当您打开“过滤器”页面时，配置更改会反映出来。 您在步骤4中指定的过滤器标签显示为标签，并带有定义最大值和最小值的选项。 按Enter键时， [!DNL Experience Manager] 对步骤3中指定的列名称应用搜索条件并返回收件箱项目。
 
 >[!NOTE]
 >
->本文列出最新的使用者介面選項。 在即將發行的版本中，使用者介面上的選項名稱將會更新。
+>本文列出了最新的用户界面选项。 在即将发行的版本中，用户界面上的选项名称将会更新。
 
-## 設定文字述詞 {#text-predicate}
+## 配置文本谓词 {#text-predicate}
 
-篩選收件匣專案，以使用文字述詞在收件匣欄中搜尋文字字串。
+筛选收件箱项目，以使用文本谓词搜索收件箱列中的文本字符串。
 
-設定文字述詞：
+配置文本谓词：
 
-1. 開啟 [設定表單](#creating-opening-customized-configuration).
-1. 點選 **[!UICONTROL 選取述詞]** 定位並拖曳 **[!UICONTROL 文字述詞]** 至表單。
-1. 在 **[!UICONTROL 設定]** 索引標籤中，選取作為搜尋基礎的收件匣欄名稱 **[!UICONTROL 欄名稱]** 欄位。
-1. 指定在「搜尋」文字方塊中顯示的文字，作為 **[!UICONTROL 搜尋文字方塊預留位置]** 欄位。
-1. 為設定指定選擇性說明，然後點選 **[!UICONTROL 完成]** 以儲存。
+1. 打开 [配置表单](#creating-opening-customized-configuration).
+1. 点按 **[!UICONTROL 选择谓词]** 制表符并拖动 **[!UICONTROL 文本谓词]** 到窗体。
+1. 在 **[!UICONTROL 设置]** 选项卡，从中选择作为搜索基础的收件箱列名称 **[!UICONTROL 列名称]** 字段。
+1. 指定在“搜索”文本框中作为占位符文本显示的文本。 **[!UICONTROL 搜索文本框占位符]** 字段。
+1. 为配置指定可选描述，然后点击 **[!UICONTROL 完成]** 以保存它。
 
-設定變更會在您開啟「篩選器」頁面時反映出來。 當您按下Enter鍵時， [!DNL Experience Manager] 將步驟4中指定的搜尋文字套用至步驟3中指定的欄名稱，並傳回「收件匣」專案。
+当您打开“过滤器”页面时，配置更改会反映出来。 按Enter键时， [!DNL Experience Manager] 将步骤4中指定的搜索文本应用于步骤3中指定的列名称，并返回收件箱项目。
 
-## 設定日期範圍述詞 {#date-range-predicate}
+## 配置日期范围谓词 {#date-range-predicate}
 
-您可以使用日期範圍述詞來篩選收件匣專案，以搜尋收件匣欄中的日期範圍。
+您可以过滤收件箱项目，以使用日期范围谓词在收件箱列中搜索日期范围。
 
-若要設定日期範圍述詞：
+要配置日期范围谓词，请执行以下操作：
 
-1. 開啟 [設定表單](#creating-opening-customized-configuration).
-1. 點選 **[!UICONTROL 選取述詞]** 定位並拖曳 **[!UICONTROL 日期範圍述詞]** 至表單。
-1. 在 **[!UICONTROL 設定]** 索引標籤中，選取作為搜尋基礎的收件匣欄名稱 **[!UICONTROL 欄名稱]** 欄位。
-1. 在中指定日期範圍篩選的標籤 **[!UICONTROL 篩選標籤]** 欄位。
-1. 指定篩選的開始日期和結束日期標籤。
-1. 為設定指定選擇性說明，然後點選 **[!UICONTROL 完成]** 以儲存。
+1. 打开 [配置表单](#creating-opening-customized-configuration).
+1. 点按 **[!UICONTROL 选择谓词]** 制表符并拖动 **[!UICONTROL 日期范围谓词]** 到窗体。
+1. 在 **[!UICONTROL 设置]** 选项卡，从中选择作为搜索基础的收件箱列名称 **[!UICONTROL 列名称]** 字段。
+1. 在中指定日期范围过滤器的标签 **[!UICONTROL 筛选标签]** 字段。
+1. 指定筛选器的开始日期和结束日期标签。
+1. 为配置指定可选描述，然后点击 **[!UICONTROL 完成]** 以保存它。
 
-設定變更會在您開啟「篩選器」頁面時反映出來。 您在步驟4中指定的篩選標籤顯示為日期範圍篩選的標籤，以及在步驟5中指定的開始日期和結束日期標籤。 [!DNL Experience Manager] 將搜尋條件套用至步驟3中指定的欄名稱，並傳回「收件匣」專案。
+当您打开“过滤器”页面时，配置更改会反映出来。 您在步骤4中指定的过滤器标签显示为日期范围过滤器的标签，以及在步骤5中指定的开始日期和结束日期标签。 [!DNL Experience Manager] 对步骤3中指定的列名称应用搜索条件并返回收件箱项目。
 
-## 設定自訂欄選項述詞 {#custom-column-options-predicate}
+## 配置自定义列选项谓词 {#custom-column-options-predicate}
 
-您可以使用自訂欄選項述詞來篩選收件匣專案，以搜尋收件匣欄中的自訂選項。
+您可以使用自定义列选项谓词来筛选收件箱项目，以搜索收件箱列中的自定义选项。
 
-設定自訂欄選項述詞：
+要配置自定义列选项谓词：
 
-1. 開啟 [設定表單](#creating-opening-customized-configuration).
-1. 點選 **[!UICONTROL 選取述詞]** 定位並拖曳 **[!UICONTROL 自訂欄選項述詞]** 至表單。
-1. 在 **[!UICONTROL 設定]** 索引標籤中，選取作為搜尋基礎的收件匣欄名稱 **[!UICONTROL 欄名稱]** 欄位。
-1. 指定中自訂欄選項篩選器的標籤 **[!UICONTROL 篩選標籤]** 欄位。
-1. 選取 **[!UICONTROL 單選]** 核取方塊，以啟用在收件匣欄套用篩選器時只選取一個選項。
-1. 在 **[!UICONTROL 新增選項]** 區段：
-   1. 選取 **[!UICONTROL 手動]** 以手動定義篩選條件搜尋選項。 點選 **[!UICONTROL 新增篩選器選項]** 以定義第一個選項。 指定欄選項的標籤和要搜尋的選項值文字。 例如，如果您想搜尋 **女性** 作為「收件匣」欄中的值，您可以指定 **F** 做為欄選項的標籤並新增 **女性** 作為選項值文字。 同樣地，您可以新增更多篩選選項。
-   1. 選取 **[!UICONTROL JSON路徑]** 以使用JSON檔案路徑來定義選項。 以下是定義篩選選項的JSON檔案範例：
+1. 打开 [配置表单](#creating-opening-customized-configuration).
+1. 点按 **[!UICONTROL 选择谓词]** 制表符并拖动 **[!UICONTROL 自定义列选项谓词]** 到窗体。
+1. 在 **[!UICONTROL 设置]** 选项卡，从中选择作为搜索基础的收件箱列名称 **[!UICONTROL 列名称]** 字段。
+1. 在中指定自定义列选项过滤器的标签 **[!UICONTROL 筛选标签]** 字段。
+1. 选择 **[!UICONTROL 单选]** 此复选框用于启用在收件箱列上应用过滤器时只选择一个选项。
+1. 在 **[!UICONTROL 添加选项]** 部分：
+   1. 选择 **[!UICONTROL 手动]** 以手动定义过滤器搜索选项。 点按 **[!UICONTROL 添加筛选器选项]** 以定义第一个选项。 为要搜索的列选项和选项值文本指定标签。 例如，如果要搜索 **女性** 作为“收件箱”列中的值，您可以指定 **F** 作为列选项的标签并添加 **女性** 作为选项值文本。 同样，您可以添加更多过滤器选项。
+   1. 选择 **[!UICONTROL JSON路径]** 以使用JSON文件路径定义选项。 以下是定义过滤器选项的JSON文件示例：
 
       ```JSON
           {
@@ -122,7 +122,7 @@ ht-degree: 1%
         }
       ```
 
-   1. 選取 **[!UICONTROL CRX選項路徑]** 以使用CRX存放庫路徑來定義選項。 點選 **[!UICONTROL 新增選項路徑]** 以新增多個路徑。 以下範例將定義 `Male` 和 `Female` 篩選選項：
+   1. 选择 **[!UICONTROL CRX选项路径]** 以使用CRX存储库路径定义选项。 点按 **[!UICONTROL 添加选项路径]** 以添加多个路径。 以下是一个要定义的示例 `Male` 和 `Female` 筛选器选项：
 
       ```JSON
          <gender jcr:primaryType="sling:OrderedFolder">
@@ -137,18 +137,18 @@ ht-degree: 1%
                     </gender>
       ```
 
-1. 為設定指定選擇性說明，然後點選 **[!UICONTROL 完成]** 以儲存。
+1. 为配置指定可选描述，然后点击 **[!UICONTROL 完成]** 以保存它。
 
-設定變更會在您開啟「篩選器」頁面時反映出來。 您在步驟4中指定的篩選標籤會顯示為「自訂欄選項」述詞的標籤。 [!DNL Experience Manager] 將步驟6中定義的搜尋條件套用至步驟3中指定的欄名稱，並傳回「收件匣」專案。
+当您打开“过滤器”页面时，配置更改会反映出来。 您在步骤4中指定的过滤器标签显示为自定义列选项谓词的标签。 [!DNL Experience Manager] 将步骤6中定义的搜索条件应用于步骤3中指定的列名称，并返回收件箱项目。
 
-以下影片說明根據 `true` 和 `false` 選項值。
+以下视频说明了根据 `true` 和 `false` 选项值。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335679)
 
-## 根據述詞檢視搜尋篩選器 {#view-search-filters-for-predicates}
+## 查看基于谓词的搜索筛选器 {#view-search-filters-for-predicates}
 
-您可以根據述詞檢視搜尋篩選器。 選取 **[!UICONTROL 篩選]** 在「收件匣」頁面上。 篩選器會顯示在左窗格中。 然後，您可以指定搜尋條件以篩選收件匣專案。
+您可以查看基于谓词的搜索过滤器。 选择 **[!UICONTROL 筛选条件]** 在收件箱页面上。 筛选器显示在左窗格中。 然后，您可以指定搜索条件以筛选收件箱项目。
 
-![篩選器頁面](assets/apply-filters.png)
+![“过滤器”页面](assets/apply-filters.png)
 
-如需管理述詞設定的詳細資訊，請參閱 [設定搜尋Forms](search-forms.md).
+有关管理谓词配置的更多信息，请参见 [配置搜索Forms](search-forms.md).

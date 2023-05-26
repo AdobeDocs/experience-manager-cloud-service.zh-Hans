@@ -1,6 +1,6 @@
 ---
 title: 管理数字资源
-description: 瞭解各種資產管理和編輯方法
+description: 了解各种资源管理和编辑方法
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
@@ -15,51 +15,51 @@ ht-degree: 11%
 
 # 管理资源 {#manage-assets}
 
-| 版本 | 文章連結 |
+| 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
-本文說明如何在中管理和編輯資產 [!DNL Adobe Experience Manager Assets]. 管理 [!DNL Content Fragments]，請參閱 [[!DNL Content Fragments]](content-fragments/content-fragments.md) 資產。
+本文介绍了如何在中管理和编辑资源 [!DNL Adobe Experience Manager Assets]. 要管理 [!DNL Content Fragments]，请参见 [[!DNL Content Fragments]](content-fragments/content-fragments.md) 资产。
 
 ## 创建文件夹 {#creating-folders}
 
-例如，組織資產集合時，所有 `Nature` 您可以建立資料夾來將它們放在一起。 您可以使用資料夾來分類及組織您的資產。 [!DNL Experience Manager Assets] 您不需要在資料夾中組織資產才能更佳運作。
+组织资产集合时，例如，所有 `Nature` 图像时，您可以创建文件夹以将它们放在一起。 您可以使用文件夹对资源进行分类和组织。 [!DNL Experience Manager Assets] 不要求您组织文件夹中的资产才能更好地工作。
 
 >[!NOTE]
 >
->* 共用型別的資產資料夾 `sling:OrderedFolder`，在共用至Experience Cloud時不受支援。 如果要共用資料夾，請勿選取 [!UICONTROL 已訂購] 建立資料夾時。
->* Experience Manager不允許使用 `subassets` word做為資料夾的名稱。 這是為包含複合資產之子資產的節點保留的關鍵字
+>* 共享该类型的资产文件夹 `sling:OrderedFolder`在共享到Experience Cloud时不支持。 如果要共享文件夹，请不要选择 [!UICONTROL 已排序] 创建文件夹时。
+>* Experience Manager不允许使用 `subassets` 单词作为文件夹的名称。 它是为包含复合资产的子资产的节点保留的关键字
 
 
-1. 導覽至數位資產資料夾中您要建立新資料夾的位置。 在功能表中，按一下 **[!UICONTROL 建立]**. 選取 **[!UICONTROL 新增資料夾]**.
-1. 在 **[!UICONTROL 標題]** 欄位中，提供資料夾名稱。 根據預設，DAM會使用您提供的標題作為資料夾名稱。 建立資料夾後，您可以覆寫預設值並指定另一個資料夾名稱。
-1. 单击&#x200B;**[!UICONTROL 创建]**。您的資料夾會顯示在數位資產資料夾中。
+1. 导航到数字资产文件夹中要创建新文件夹的位置。 在菜单中，单击 **[!UICONTROL 创建]**. 选择 **[!UICONTROL 新建文件夹]**.
+1. 在 **[!UICONTROL 标题]** 字段中，提供文件夹名称。 默认情况下，DAM使用您提供的标题作为文件夹名称。 创建文件夹后，您可以覆盖默认名称并指定其他文件夹名称。
+1. 单击&#x200B;**[!UICONTROL 创建]**。您的文件夹将显示在数字资产文件夹中。
 
-不支援下列（以空格分隔的）字元清單：
+不支持以下（以空格分隔的）字符列表：
 
-* 資產檔案名稱不能包含下列任一字元： `* / : [ \\ ] | # % { } ? &`
-* 資產資料夾名稱不能包含下列任一字元： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* 资源文件名不能包含以下任一字符： `* / : [ \\ ] | # % { } ? &`
+* 资源文件夹名称不能包含以下任一字符： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## 上传资源 {#uploading-assets}
 
-另請參閱 [將數位資產新增至Experience Manager](add-assets.md).
+参见 [向Experience Manager添加数字资源](add-assets.md).
 
-## 偵測重複資產 {#detect-duplicate-assets}
+## 检测重复资源 {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-如果DAM使用者上傳一個或多個已存在於存放庫中的資產， [!DNL Experience Manager] 會偵測重複並通知使用者。 重複資料偵測預設為停用，因為它可能會對效能造成影響，具體取決於存放庫的大小和上傳的資產數量。
+如果DAM用户上传一个或多个已存在于存储库中的资产， [!DNL Experience Manager] 检测复制并通知用户。 默认情况下禁用重复检测，因为它可能会影响性能，具体取决于存储库的大小和上传的资产数量。
 
-若要啟用此功能：
+要启用该功能，请执行以下操作：
 
-1. 導覽至 **[!UICONTROL 「工具>資產>資產設定」]**.
+1. 导航到 **[!UICONTROL 工具>资产>资产配置]**.
 
-1. 按一下 **[!UICONTROL 資產重複偵測器]**.
+1. 单击 **[!UICONTROL 资源重复检测器]**.
 
-1. 於 [!UICONTROL 資產重複偵測器頁面]，按一下 **[!UICONTROL 已啟用]**.
+1. 在 [!UICONTROL “资源重复检测器”页面]，单击 **[!UICONTROL 已启用]**.
 
-   `dam:sha1` 「偵測中繼資料」欄位的值可確保即使檔案名稱不同，仍會偵測到重複的資產。
+   `dam:sha1` “检测元数据”字段的值可确保即使文件名不同，也能检测到重复的资源。
 
 1. 单击“**[!UICONTROL 保存]**”。
 
@@ -67,63 +67,63 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->如果您已使用設定重複偵測器 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 設定檔案（OSGi設定），您可以繼續使用，但Adobe建議使用新方法。
+>如果您已使用配置了复制检测器 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 配置文件（OSGi配置），您可以继续使用它，但Adobe建议使用新的方法。
 
 
-啟用後，Experience Manager會將重複資產的通知傳送到Experience Manager收件匣。 此為多個重複專案的彙總結果。 使用者可以選擇根據結果移除資產。
+启用后，Experience Manager会将重复资源的通知发送到Experience Manager收件箱。 它是多个重复项的聚合结果。 用户可以选择根据结果删除资源。
 
-![重複資產的收件匣通知](assets/duplicate-detect-inbox-notification.png)
+![重复资产的收件箱通知](assets/duplicate-detect-inbox-notification.png)
 
 >[!NOTE]
 >
->當您將資產上傳到存放庫時，Experience Manager會偵測到重複並通知您前100個重複資產。
+>将资源上传到存储库时，Experience Manager会检测到重复并通知您前100个重复资源。
 
 ## 预览资源 {#previewing-assets}
 
-若要預覽資產，請依照下列步驟操作。
+要预览资源，请执行以下步骤。
 
-1. 從Assets使用者介面，導覽至您要預覽的資產位置。
-1. 點選所需的資產以將其開啟。
+1. 从Assets用户界面中，导航到要预览的资产位置。
+1. 点按所需的资产以将其打开。
 
-1. 在預覽模式中，縮放選項可用於 [支援的影像型別](/help/assets/file-format-support.md) （使用互動式編輯）。
+1. 在预览模式下，缩放选项仅可用于 [支持的图像类型](/help/assets/file-format-support.md) （通过交互式编辑）。
 
-   若要放大資產，請點選/按一下 `+` （或點選/按一下資產上的放大鏡）。 若要縮小顯示，請點選/按一下 `-`. 放大時，您可以透過平移仔細檢視影像的任何區域。 重設縮放箭頭會將您帶回原始檢視。
+   要放大资产，请点按/单击 `+` （或点按/单击资产上的放大镜）。 要缩小，请点按/单击 `-`. 放大时，可以通过平移仔细查看图像的任意区域。 重置缩放箭头将您带回原始视图。
 
-   點選 **[!UICONTROL 重設]** 將檢視重設為原始大小。
+   点按 **[!UICONTROL 重置]** 将视图重置为原始大小。
 
 ## 编辑属性 {#editing-properties}
 
-1. 導覽至您要編輯其中繼資料的資產位置。
+1. 导航到要编辑其元数据的资源的位置。
 
-1. 選取資產，然後點選/按一下 **[!UICONTROL 屬性]** 以檢視資產屬性。 或者，選擇 **[!UICONTROL 屬性]** 資產卡上的快速動作。
+1. 选择资产，然后点按/单击 **[!UICONTROL 属性]** ，以查看资源属性。 或者，选择 **[!UICONTROL 属性]** 资源信息卡上的快速操作。
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. 在 [!UICONTROL 屬性] 頁面，編輯各種標籤下的中繼資料屬性。 例如，在 **[!UICONTROL 基本]** 標籤、編輯標題、說明等。
+1. 在 [!UICONTROL 属性] 页面中，编辑各种选项卡下的元数据属性。 例如，在 **[!UICONTROL 基本]** 选项卡，编辑标题、描述等。
 
    >[!NOTE]
    >
-   >「 」的版面 [!UICONTROL 屬性] 頁面和可用的中繼資料屬性取決於基礎中繼資料結構。 若要瞭解如何修改 [!UICONTROL 屬性] 頁面，請參閱 [中繼資料結構](/help/assets/metadata-schemas.md).
+   >的布局 [!UICONTROL 属性] 页面和可用的元数据属性取决于基础元数据架构。 要了解如何修改 [!UICONTROL 属性] 页面，请参阅 [元数据架构](/help/assets/metadata-schemas.md).
 
 1. 要计划资产激活的特定日期/时间，请使用&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段旁边的日期选取器。
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. 若要在特定期間後停用資產，請從日期選擇器旁的停用日期/時間 **[!UICONTROL 關閉時間]** 欄位。 停用日期應晚於資產的啟用日期。 晚於 [!UICONTROL 關閉時間]，無法透過Assets網頁介面或HTTP API使用資產及其轉譯。
+1. 要在特定持续时间后停用资产，请从日期选择器旁边的停用日期/时间 **[!UICONTROL 关闭时间]** 字段。 停用日期应晚于资源的激活日期。 在 [!UICONTROL 关闭时间]，无法通过Assets Web界面或HTTP API访问资产及其演绎版。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 在 **[!UICONTROL 標籤]** 欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標簽名稱，然後選取 `Enter` 金鑰。 新標籤儲存在中 [!DNL Experience Manager].
+1. 在 **[!UICONTROL 标记]** 字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记的名称，然后选择 `Enter` 键。 新标记保存在 [!DNL Experience Manager].
 
-   YouTube需要標籤才能發佈，而且必須具備YouTube連結（如果可以找到合適的連結）。
+   YouTube需要标记才能发布，并且必须具有YouTube链接（如果可以找到合适的链接）。
 
    >[!NOTE]
    >
-   >若要建立標籤，您必須擁有寫入許可權： `/content/cq:tags/default` CRX存放庫中的路徑。
+   >要创建标记，您必须具有以下写入权限： `/content/cq:tags/default` CRX存储库中的路径。
 
-1. 點選/按一下 **[!UICONTROL 儲存並關閉]**.
+1. 点按/单击 **[!UICONTROL 保存并关闭]**.
 
-1. 導覽至「資產」使用者介面。 編輯的中繼資料屬性（包括標題、說明和標籤）會顯示在「卡片」檢視的資產卡片上，以及「清單」檢視的相關欄下。
+1. 导航到Assets用户界面。 编辑后的元数据属性（包括标题、描述和标记）将显示在卡片视图的资产卡片上，以及列表视图的相关列下。
 
 <!-- TBD: Uncomment after verification for Dec release.
 
@@ -143,101 +143,101 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 复制资产 {#copying-assets}
 
-當您複製資產或資料夾時，將會複製整個資產或資料夾及其內容結構。 複製的資產或資料夾會複製到目標位置。 來源位置的資產不會變更。
+复制资源或文件夹时，将会复制整个资源或文件夹及其内容结构。 在目标位置复制复制的资产或文件夹。 源位置的资源不会更改。
 
-資產特定副本的少數屬性不會結轉。 部分範例包括：
+资产的特定副本特有的几个属性不会结转。 一些示例包括：
 
-* 資產ID、建立日期和時間，以及版本和版本記錄。 其中一些屬性由屬性指示 `jcr:uuid`， `jcr:created`、和 `cq:name`.
+* 资产ID、创建日期和时间以及版本和版本历史记录。 其中一些属性由属性指示 `jcr:uuid`， `jcr:created`、和 `cq:name`.
 
-* 每個資產及其每個轉譯的建立時間和參照路徑都是唯一的。
+* 每个资源及其每个演绎版的创建时间和引用路径都是唯一的。
 
-其他屬性和中繼資料資訊會保留。 複製資產時不會建立部分副本。
+其他属性和元数据信息将保留。 复制资产时不会创建部分副本。
 
-1. 從「資產」UI中，選取一或多個資產，然後點選/按一下 **[!UICONTROL 複製]** 圖示加以檢視。 或者，選取 **[!UICONTROL 複製]** ![copy_icon](assets/copy_icon.png) 從資產卡片快速動作。
-
-   >[!NOTE]
-   >
-   >如果您使用 [!UICONTROL 複製] 快速動作，您一次只能複製一個資產。
-
-1. 導覽至您要複製資產的位置。
+1. 在资产UI中，选择一个或多个资产，然后点按/单击 **[!UICONTROL 复制]** 图标。 或者，选择 **[!UICONTROL 复制]** ![copy_icon](assets/copy_icon.png) 资产信息卡中的快速操作。
 
    >[!NOTE]
    >
-   >如果您在相同位置複製資產， [!DNL Experience Manager] 會自動產生名稱的變數。 例如，如果您複製標題為 `Square`， [!DNL Experience Manager] 自動為其副本產生標題 `Square1`.
+   >如果您使用 [!UICONTROL 复制] 快速操作，您一次只能复制一个资源。
 
-1. 按一下 **[!UICONTROL 貼上]** 工具列中的資產圖示。 資產會複製到此位置。
+1. 导航到要复制资产的位置。
+
+   >[!NOTE]
+   >
+   >如果在同一位置复制资产， [!DNL Experience Manager] 自动生成名称的变体。 例如，如果您复制一个名为 `Square`， [!DNL Experience Manager] 自动为其副本生成标题 `Square1`.
+
+1. 单击 **[!UICONTROL 粘贴]** 工具栏中的资源图标。 资产将复制到此位置。
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
    >[!NOTE]
    >
-   >此 **[!UICONTROL 貼上]** 圖示會一直顯示在工具列中，直到完成貼上作業為止。
+   >此 **[!UICONTROL 粘贴]** 图标在粘贴操作完成之前在工具栏中可用。
 
-### 移動或重新命名資產 {#moving-or-renaming-assets}
+### 移动或重命名资源 {#moving-or-renaming-assets}
 
-1. 導覽至您要移動的資產位置。
+1. 导航到要移动的资源的位置。
 
-1. 選取資產，然後點選/按一下 **[!UICONTROL 移動]** 圖示 ![move_icon](assets/move_icon.png) （從工具列）。
+1. 选择资产，然后点按/单击 **[!UICONTROL 移动]** 图标 ![move_icon](assets/move_icon.png) 工具栏中。
 
-1. 在「移動資產」精靈中，執行下列任一項作業：
+1. 在“移动资产”向导中，执行以下操作之一：
 
-   * 指定資產移動後的名稱。 然後點選/按一下 **[!UICONTROL 下一個]** 以繼續進行。
+   * 在移动资源后指定资源的名称。 然后点按/单击 **[!UICONTROL 下一个]** 以继续。
 
-   * 點選/按一下 **[!UICONTROL 取消]** 以停止程式。
+   * 点按/单击 **[!UICONTROL 取消]** 以停止该过程。
    >[!NOTE]
    >
-   >* 如果新位置沒有同名的資產，您可以為該資產指定相同的名稱。 不過，如果您將資產移至有相同名稱的資產存在的位置，則應使用不同的名稱。 如果您使用相同的名稱，系統會自動產生名稱的變數。 例如，如果資產的名稱為Square，則系統會為其副本產生名稱Square1。
-   >* 重新命名時，檔案名稱中不允許有空格。
+   >* 如果新位置中没有同名的资源，则可以为该资源指定相同的名称。 但是，如果将资产移动到具有相同名称的资产存在的位置，则应该使用其他名称。 如果使用相同的名称，系统会自动生成该名称的变体。 例如，如果资产的名称为Square，则系统会为其副本生成名称Square1。
+   >* 重命名时，文件名中不允许使用空格。
 
 
-1. 於 **[!UICONTROL 選取目的地]** 對話方塊，請執行下列任一項作業：
+1. 在 **[!UICONTROL 选择目标]** 对话框，请执行以下操作之一：
 
-   * 導覽至資產的新位置，然後點選/按一下 **[!UICONTROL 下一個]** 以繼續進行。
+   * 导航到资产的新位置，然后点按/单击 **[!UICONTROL 下一个]** 以继续。
 
-   * 點選/按一下 **[!UICONTROL 返回]** 以返回 **[!UICONTROL 重新命名]** 畫面。
+   * 点按/单击 **[!UICONTROL 返回]** 以返回 **[!UICONTROL 重命名]** 屏幕。
 
-1. 如果要移動的資產有任何參考頁面、資產或集合，則 **[!UICONTROL 調整引用]** 標籤會出現在 **[!UICONTROL 選取目的地]** 標籤。
+1. 如果要移动的资产具有任何引用页面、资产或收藏集，则 **[!UICONTROL 调整引用]** 选项卡出现在 **[!UICONTROL 选择目标]** 选项卡。
 
-   請執行以下任一項作業： **[!UICONTROL 調整引用]** 畫面：
+   在中执行以下操作之一 **[!UICONTROL 调整引用]** 屏幕：
 
-   * 根據新的詳細資料指定要調整的參照，然後點選/按一下 **[!UICONTROL 移動]** 以繼續進行。
+   * 指定要根据新详细信息调整的引用，然后点按/单击 **[!UICONTROL 移动]** 以继续。
 
-   * 從 **[!UICONTROL 調整]** 欄中，選取/取消選取資產的參照。
-   * 點選/按一下 **[!UICONTROL 返回]** 以返回 **[!UICONTROL 選取目的地]** 畫面。
+   * 从 **[!UICONTROL Adjust]** 列中，选择/取消选择对资源的引用。
+   * 点按/单击 **[!UICONTROL 返回]** 以返回 **[!UICONTROL 选择目标]** 屏幕。
 
-   * 點選/按一下 **[!UICONTROL 取消]** 以停止移動作業。
+   * 点按/单击 **[!UICONTROL 取消]** 停止移动操作。
 
-   如果您不更新引用，引用會繼續指向資產的上一個路徑。 如果您調整參照，參照會更新為新的資產路徑。
+   如果不更新引用，引用将继续指向资源的上一个路径。 如果调整引用，它们将会更新为新资源路径。
 
-### 管理轉譯 {#managing-renditions}
+### 管理演绎版 {#managing-renditions}
 
-1. 您可以新增或移除資產的轉譯，但原始資產除外。 導覽至您要新增或移除轉譯的資產位置。
+1. 您可以为资源添加或删除演绎版，但原始演绎版除外。 导航到要为其添加或删除演绎版的资源的位置。
 
-1. 點選/按一下資產以開啟其資產頁面。
+1. 点按/单击资产以打开其资产页面。
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. 點選/按一下「全域導覽」圖示，然後選取 **[!UICONTROL 轉譯]** 從清單中。
+1. 点按/单击全局导航图标，然后选择 **[!UICONTROL 演绎版]** 从名单上。
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. 在 **[!UICONTROL 轉譯]** 面板，檢視針對資產產生的轉譯清單。
+1. 在 **[!UICONTROL 演绎版]** 面板中，查看为资源生成的演绎版列表。
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >依預設， [!DNL Experience Manager Assets] 不會在預覽模式下顯示資產的原始轉譯。 如果您是管理員，則可以使用覆蓋圖來設定 [!DNL Assets] 在預覽模式下顯示原始轉譯。
+   >默认情况下， [!DNL Experience Manager Assets] 在预览模式下不显示资源的原始演绎版。 如果您是管理员，则可以使用叠加进行配置 [!DNL Assets] 以在预览模式下显示原始演绎版。
 
-1. 選取轉譯以檢視或刪除轉譯。
+1. 选择一个演绎版以查看或删除该演绎版。
 
-   **刪除轉譯**
+   **删除演绎版**
 
-   從中選擇轉譯 **[!UICONTROL 轉譯]** 面板，然後點選/按一下 **[!UICONTROL 刪除轉譯]** 圖示加以檢視。 資產處理完成後，無法大量刪除轉譯。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以進行自訂 [!DNL Experience Manager] 以刪除特定轉譯或刪除資產，並重新上傳已刪除的資產。
+   从中选择演绎版 **[!UICONTROL 演绎版]** 面板，然后点按/单击 **[!UICONTROL 删除演绎版]** 图标。 资源处理完成后无法批量删除演绎版。 对于单个资产，您可以从用户界面中手动删除演绎版。 对于多个资源，您可以自定义 [!DNL Experience Manager] 以删除特定演绎版或删除资源，并重新上传已删除的资源。
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
-   **上傳新轉譯**
+   **上传新演绎版**
 
    导航到资源的资源详细信息页面，然后点击/单击工具栏中的&#x200B;**[!UICONTROL “添加演绎版”]**&#x200B;图标以上传资源的新演绎版。
 
@@ -247,108 +247,108 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >
    >如果从&#x200B;**[!UICONTROL “演绎版”]**&#x200B;面板选择演绎版，则工具栏更改上下文并仅显示与该演绎版相关的那些操作。不显示“上传演绎版”图标等选项。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
 
-   您可以設定要在影像或視訊資產的詳細資訊頁面中顯示的轉譯尺寸。 根據您指定的維度，「資產」會顯示具有精確或最接近維度的轉譯。
+   您可以为希望在图像或视频资源的详细信息页面中显示的演绎版配置尺寸。 根据您指定的维度，Assets会显示具有精确或最接近维度的演绎版。
 
    要在资源详细信息级别配置图像的演绎版尺寸，请叠加 `renditionpicker` 节点 (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) 并配置宽度属性的值。配置属性&#x200B;**[!UICONTROL 大小（长）(以 KB 计）]**&#x200B;代替宽度，以根据图像大小在资源详细信息页面上自定义演绎版。对于基于大小的自定义，如果匹配的演绎版的大小大于原始演绎版，则属性 `preferOriginal` 将首选项分配给原始演绎版。
 
-   同樣地，您可以透過覆蓋來自訂註釋頁面影像 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
+   同样，您可以通过叠加来自定义“注释”页面图像 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   若要設定視訊資產的轉譯維度，請導覽至 `videopicker` CRX存放庫中位於位置的節點 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`，覆蓋節點，然後編輯適當的屬性。
+   要为视频资源配置演绎版维度，请导航到 `videopicker` CRX存储库中位于位置的节点 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`，覆盖节点，然后编辑相应的属性。
 
    >[!NOTE]
    >
-   >視訊註解僅支援使用HTML5相容視訊格式的瀏覽器。 此外，視瀏覽器而定，支援不同的視訊格式。 不過，視訊註解尚不支援MXF視訊格式。
+   >只有视频格式与HTML5兼容的浏览器才支持视频批注。 此外，根据浏览器的不同，支持不同的视频格式。 但是，视频注释尚不支持MXF视频格式。
 
-## 刪除資產 {#delete-assets}
+## 删除资源 {#delete-assets}
 
-若要從其他頁面解析或移除傳入參照，請先更新相關參照，然後再刪除資產。
+要从其他页面解析或删除传入引用，请在删除资产之前更新相关引用。
 
-此外，使用覆蓋圖停用強制刪除按鈕，以禁止使用者刪除參照的資產並留下中斷的連結。
+此外，使用叠加禁用强制删除按钮，以禁止用户删除引用的资产并留下断开的链接。
 
-1. 導覽至您要刪除的資產位置。
+1. 导航到要删除的资产所在的位置。
 
-1. 選取資產，然後按一下 **[!UICONTROL 刪除]** ![delete_icon](assets/do-not-localize/delete-icon.png) （從工具列）。
+1. 选择资产，然后单击 **[!UICONTROL 删除]** ![delete_icon](assets/do-not-localize/delete-icon.png) 工具栏中。
 
-1. 在確認對話方塊中，按一下：
+1. 在确认对话框中，单击：
 
-   * **[!UICONTROL 取消]** 停止動作
-   * **[!UICONTROL 刪除]** 若要確認動作：
+   * **[!UICONTROL 取消]** 停止操作
+   * **[!UICONTROL 删除]** 要确认操作，请执行以下操作：
 
-      * 如果資產沒有參考資料，則會刪除資產。
-      * 如果資產有參考資料，則會出現錯誤訊息，通知您 **[!UICONTROL 一個或多個資產被引用]**. 您可以選取 **[!UICONTROL 強制刪除]** 或 **[!UICONTROL 取消]**.
-
-   >[!NOTE]
-   >
-   >您需要dam/asset的刪除許可權才能刪除資產。 如果您只有修改許可權，則只能編輯資產中繼資料並將註解新增至資產。 不過，您無法刪除資產或其中繼資料。
+      * 如果资源没有引用，则会删除该资源。
+      * 如果资产具有引用，则会出现一条错误消息，通知您 **[!UICONTROL 一个或多个资产被引用]**. 您可以选择 **[!UICONTROL 强制删除]** 或 **[!UICONTROL 取消]**.
 
    >[!NOTE]
    >
-   >若要從其他頁面解析或移除傳入參照，請先更新相關參照，然後再刪除資產。 您可以禁止刪除參照的資產，因為這會造成連結損毀。 使用覆蓋圖停用強制刪除按鈕。
+   >您需要对dam/asset的删除权限才能删除资产。 如果您只有修改权限，则只能编辑资源元数据并向资源添加注释。 但是，无法删除资源或其元数据。
+
+   >[!NOTE]
+   >
+   >要从其他页面解析或删除传入引用，请在删除资产之前更新相关引用。 您可以禁止删除引用的资产，因为它会导致链接断开。 使用叠加禁用强制删除按钮。
 
 ## 下载资源 {#download-assets}
 
-另請參閱 [資產下載來源 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+参见 [从以下位置下载资源 [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## 發佈或取消發佈資產 {#publish-assets}
+## 发布或取消发布资产 {#publish-assets}
 
-1. 導覽至您要發佈或要從發佈環境移除（取消發佈）的資產或資產資料夾位置。
+1. 导航到要发布或者要从发布环境中移除（取消发布）的资源或资源文件夹的位置。
 
-1. 選取要發佈或取消發佈的資產或資料夾，然後選取 **[!UICONTROL 管理發布]** ![管理出版物選項](assets/do-not-localize/globe-publication.png) 工具列中的選項。 或者，若要快速發佈，請選取 **[!UICONTROL 快速發佈]** 工具列中的選項。 如果您要發佈的資料夾包含空白資料夾，則不會發佈空白資料夾。
+1. 选择要发布或取消发布的资源或文件夹，然后选择 **[!UICONTROL 管理发布]** ![管理发布选项](assets/do-not-localize/globe-publication.png) 选项。 或者，要快速发布，请选择 **[!UICONTROL 快速发布]** 选项。 如果要发布的文件夹包含空文件夹，则不会发布该空文件夹。
 
-1. 選取 **[!UICONTROL 發佈]** 或 **[!UICONTROL 取消發佈]** 選項。
+1. 选择 **[!UICONTROL Publish]** 或 **[!UICONTROL 取消发布]** 选项。
 
-   ![取消發佈動作](assets/unpublish_action.png)
-   *圖：發佈和取消發佈選項以及排程選項。*
+   ![取消发布操作](assets/unpublish_action.png)
+   *图：发布和取消发布选项以及计划选项。*
 
-1. 選取 **[!UICONTROL 現在]** 以立即對資產採取行動，或選取 **[!UICONTROL 稍後]** 以排程動作。 如果您選擇 **[!UICONTROL 稍後]** 選項。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 选择 **[!UICONTROL 现在]** 以立即对资产执行操作或选择 **[!UICONTROL 稍后]** 以计划操作。 如果您选择 **[!UICONTROL 稍后]** 选项。 单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 發佈時，如果資產參考其他資產，其參考會列在精靈中。 只會顯示自上次發佈後未發佈或修改的參考。 選擇要發佈的參照。
+1. 发布时，如果资产引用了其他资产，则向导中会列出其引用。 仅显示自上次发布以来未发布或修改的引用。 选择要发布的引用。
 
-1. 取消發佈時，如果資產參考其他資產，請選擇您要取消發佈的參考。 单击&#x200B;**[!UICONTROL 取消发布]**。在確認對話方塊中，按一下 **[!UICONTROL 取消]** 以停止動作，或按一下 **[!UICONTROL 取消發佈]** 以確認資產會在指定的日期取消發佈。
+1. 取消发布时，如果资产引用了其他资产，请选择要取消发布的引用。 单击&#x200B;**[!UICONTROL 取消发布]**。在确认对话框中，单击 **[!UICONTROL 取消]** 停止操作或单击 **[!UICONTROL 取消发布]** 以确认在指定的日期取消发布资产。
 
-瞭解以下與發佈或取消發佈資產或資料夾相關的限制和提示：
+了解以下与发布或取消发布资产或文件夹相关的限制和提示：
 
-* 的選項 [!UICONTROL 管理發布] 僅適用於具有復寫許可權的使用者帳戶。
-* 取消發佈複雜資產時，請僅取消發佈資產。 請避免取消發佈引用，因為這些引用可能會被其他已發佈的資產引用。
-* 未發佈空白資料夾。
-* 如果您發佈正在處理的資產，只會發佈原始內容。 缺少轉譯。 請等待處理完成，然後在處理完成時發佈或重新發佈資產。
+* 选项 [!UICONTROL 管理发布] 仅适用于具有复制权限的用户帐户。
+* 取消发布复杂资产时，请仅取消发布资产。 避免取消发布引用，因为其他已发布的资产可能会引用这些引用。
+* 未发布空文件夹。
+* 如果您发布正在处理的资产，则只会发布原始内容。 缺少演绎版。 等待处理完成，然后在处理完成后发布或重新发布资产。
 
-## 已關閉的使用者群組 {#closed-user-group}
+## 已关闭的用户组 {#closed-user-group}
 
-封閉式使用者群組(CUG)可用來限制存取從發佈的特定資產資料夾 [!DNL Experience Manager]. 如果您為資料夾建立CUG，則資料夾（包括資料夾資產和子資料夾）的存取權僅限於指派的成員或群組。 若要存取資料夾，使用者必須使用其安全性認證登入。
+封闭用户组(CUG)用于限制对从发布的特定资源文件夹的访问 [!DNL Experience Manager]. 如果为文件夹创建CUG，则对文件夹（包括文件夹资源和子文件夹）的访问权限仅限于分配的成员或组。 要访问该文件夹，用户必须使用其安全凭据登录。
 
-CUG是限制資產存取權的額外方式。 您也可以為資料夾設定登入頁面。
+CUG是限制对资源的访问的额外方法。 您还可以为文件夹配置登录页面。
 
-1. 從「資產」UI中選取資料夾，然後點選/按一下工具列中的「屬性」圖示以顯示屬性頁面。
-1. 從 **[!UICONTROL 許可權]** 標籤，新增成員或群組 **[!UICONTROL 已關閉的使用者群組]**.
+1. 从资产UI中选择一个文件夹，然后点按/单击工具栏中的属性图标以显示属性页面。
+1. 从 **[!UICONTROL 权限]** 选项卡，添加成员或组 **[!UICONTROL 已关闭的用户组]**.
 
    ![add_user](assets/add_user.png)
 
-1. 若要在使用者存取資料夾時顯示登入畫面，請選取 **[!UICONTROL 啟用]** 選項。 然後，選取登入頁面的路徑 [!DNL Experience Manager]，並儲存變更。
+1. 要在用户访问文件夹时显示登录屏幕，请选择 **[!UICONTROL 启用]** 选项。 然后，选择登录页面的路径 [!DNL Experience Manager]，并保存更改。
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >如果您未指定登入頁面的路徑， [!DNL Experience Manager] 會在發佈執行個體中顯示預設登入頁面。
+   >如果不指定登录页面的路径， [!DNL Experience Manager] 在发布实例中显示默认登录页面。
 
-1. 發佈資料夾，然後嘗試從發佈執行個體存取它。 登入畫面隨即顯示。
-1. 如果您是CUG成員，請輸入您的安全性認證。 資料夾顯示於 [!DNL Experience Manager] 驗證您的身分。
+1. 发布文件夹，然后尝试从发布实例访问该文件夹。 将显示登录屏幕。
+1. 如果您是CUG成员，请输入您的安全凭据。 文件夹显示在之后 [!DNL Experience Manager] 验证您的身份。
 
 ## 搜索资源 {#search-assets}
 
-搜尋資產是使用數位資產管理系統的核心，無論是供創意人員進一步使用、供業務使用者和行銷人員健全管理資產，還是DAM管理員管理。
+搜索资产对于数字资产管理系统的使用至关重要，无论它是供创意人员进一步使用、供业务用户和营销人员稳健管理资产，还是DAM管理员进行管理。
 
-如需簡單、進階和自訂搜尋以探索和使用最適當的資產，請參閱 [搜尋中的資產 [!DNL Experience Manager]](/help/assets/search-assets.md).
+有关简单、高级和自定义搜索以发现和使用最合适的资产的信息，请参阅 [在中搜索资源 [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## 快速操作 {#quick-actions}
 
-快速動作圖示一次只適用於單一資產。 視您的裝置而定，執行下列動作以顯示快速動作圖示：
+快速操作图标一次可用于单个资源。 根据您的设备，执行以下操作以显示快速操作图标：
 
-* 觸控裝置：觸控並按住。 例如，在iPad上，您可以點選並按住資產，以便顯示快速動作。
-* 非觸控裝置：游標暫留。 例如，在案頭裝置上，如果您將指標停留在資產縮圖上，則會顯示快速動作列。
+* 触摸设备：触摸并按住。 例如，在iPad上，您可以点按并按住资产，以便显示快速操作。
+* 非触控设备：悬停指针。 例如，在桌面设备上，如果将指针悬停在资源缩略图上，则会显示快速操作栏。
 
 <!-- Hiding this topic via cqdoc-18707
 
@@ -408,34 +408,34 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ## 时间线 {#timeline}
 
-時間軸可讓您檢視所選專案的各種事件，例如資產的使用中工作流程、註解/註解、活動記錄及版本。
+时间轴允许您查看选定项目的各种事件，例如资源的活动工作流、注释/注释、活动日志和版本。
 
-![排序資產的時間軸專案](assets/sort_timeline.gif)
-*圖：排序資產的時間軸專案*
-
->[!NOTE]
->
->在 [集合主控台](/help/assets/manage-collections.md#navigate-the-collections-console)，則 **[!UICONTROL 全部顯示]** list提供僅檢視註解和工作流程的選項。 此外，時間軸只會顯示在主控台中列出的頂層集合。 如果您在任何集合內導覽，則不會顯示它。
+![对资产的时间线条目排序](assets/sort_timeline.gif)
+*图：对资产的时间轴条目进行排序*
 
 >[!NOTE]
 >
->時間軸包含數個 [內容片段專屬選項](content-fragments/content-fragments.md).
-
-## 為資產加上註釋 {#annotating}
-
-註解是新增至影像或影片的評論或說明附註。 註解讓行銷人員能夠共同作業並留下有關資產的意見回饋。
-
-只有具備HTML5相容視訊格式的瀏覽器才支援視訊註解。 Assets支援的視訊格式取決於瀏覽器。 不過，視訊註解尚不支援MXF視訊格式。
+>在 [收藏集控制台](/help/assets/manage-collections.md#navigate-the-collections-console)，则 **[!UICONTROL 全部显示]** 列表提供了仅查看注释和工作流的选项。 此外，时间轴仅对控制台中列出的顶级收藏集显示。 如果您在任何收藏集中导航，则不会显示它。
 
 >[!NOTE]
 >
->對於內容片段， [註解會在片段編輯器中建立](content-fragments/content-fragments.md).
+>时间轴包含多个 [特定于内容片段的选项](content-fragments/content-fragments.md).
 
-1. 導覽至您要新增註解的資產位置。
-1. 點選/按一下 **[!UICONTROL 註釋]** 圖示來自下列其中一項：
+## 为资源作批注 {#annotating}
+
+注释是添加到图像或视频的注释或说明性注释。 注释为营销人员提供了协作和提供有关资产的反馈。
+
+只有视频格式与HTML5兼容的浏览器才支持视频批注。 Assets支持的视频格式取决于浏览器。 但是，视频注释尚不支持MXF视频格式。
+
+>[!NOTE]
+>
+>对于内容片段， [注释是在片段编辑器中创建的](content-fragments/content-fragments.md).
+
+1. 导航到要将注释添加到其中的资源的位置。
+1. 点按/单击 **[!UICONTROL 批注]** 图标，该图标来自以下项之一：
 
    * [快速操作](#quick-actions)
-   * 在選取資產或導覽至資產頁面後，從工具列移除
+   * 选择资产或导航到资产页面后，从工具栏中
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
@@ -449,26 +449,26 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->對於非管理員使用者，只有在使用者擁有下列專案的讀取許可權時，才會顯示建議： `/home` 在CRXDE中。
+>对于非管理员用户，仅当用户在以下位置具有读取权限时，才会显示建议： `/home` 在CRXDE中。
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. 新增註釋後，按一下 **[!UICONTROL 新增]** 以儲存。 註解的通知會傳送給Aaron。
+1. 添加注释后，单击 **[!UICONTROL 添加]** 以保存它。 注释的通知将发送到Aaron。
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
    >[!NOTE]
    >
-   >儲存註解之前，您可以新增多個註解。
+   >在保存批注之前，您可以添加多个批注。
 
-1. 點選/按一下 **[!UICONTROL 關閉]** 退出「註釋」模式。
-1. 若要檢視通知，請使用Aaron MacDonald的憑證登入Assets，然後按一下 **[!UICONTROL 通知]** 圖示以檢視通知。
+1. 点按/单击 **[!UICONTROL 关闭]** 退出“注释”模式。
+1. 要查看通知，请使用Aaron MacDonald的凭据登录资产，然后单击 **[!UICONTROL 通知]** 图标以查看通知。
 
    >[!NOTE]
    >
-   >註解也可以新增到視訊資產。 在註解視訊時，播放器會暫停，讓您在影格上註解。 如需詳細資訊，請參閱 [管理視訊資產](manage-video-assets.md). 不過，視訊註解尚不支援MXF視訊格式。
+   >注释也可以添加到视频资产中。 在对视频添加注释时，播放器会暂停以允许您在帧上添加注释。 有关详细信息，请参阅 [管理视频资产](manage-video-assets.md). 但是，视频注释尚不支持MXF视频格式。
 
-1. 若要選擇不同顏色以便區分使用者，請按一下/點選「設定檔」圖示，然後按一下/點選 **[!UICONTROL 我的偏好設定]**.
+1. 要选择不同的颜色以便区分用户，请单击/点按配置文件图标，然后单击/点按 **[!UICONTROL 我的首选项]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -478,21 +478,21 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->您也可以將註解新增至集合。 不過，如果集合包含子集合，您只能將註解/註解新增至父集合。 「註釋」選項不適用於子集合。
+>您还可以向收藏集添加注释。 但是，如果收藏集包含子收藏集，则只能将注释/注释添加到父收藏集。 “注释”选项不适用于子收藏集。
 
-### 檢視儲存的註解 {#viewing-saved-annotations}
+### 查看保存的注释 {#viewing-saved-annotations}
 
-您一次只能檢視一個註解。
+一次只能查看一个注释。
 
 >[!NOTE]
 >
->如果您選取多個註解，最新的註解將顯示在使用者介面上。
+>如果选择多个注释，则用户界面上将显示最新的注释。
 >
->僅支援將註解資產列印為PDF的多重選取。
+>仅支持将带注释的资源打印为PDF的多选。
 
-1. 若要檢視資產的已儲存附註，請導覽至資產位置，然後開啟資產的資產頁面。
+1. 要查看资产的已保存注释，请导航到资产的位置，然后打开资产的资产页面。
 
-1. 點選/按一下「全域導覽」圖示，然後選擇 **[!UICONTROL 時間表]** 從清單中。
+1. 点按/单击全局导航图标，然后选择 **[!UICONTROL 时间线]** 从名单上。
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -500,93 +500,93 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   點選/按一下中的註解 **[!UICONTROL 時間表]** 面板來檢視影像上的對應註解。
+   点按/单击中的评论 **[!UICONTROL 时间线]** 面板以查看图像上的相应批注。
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   點選/按一下 **[!UICONTROL 刪除]**，以刪除特定註解。
+   点按/单击 **[!UICONTROL 删除]**，以删除特定注释。
 
-### 列印註解 {#printing-annotations}
+### 打印批注 {#printing-annotations}
 
-如果資產有註解或受到稽核工作流程的約束，您可以列印資產以及註解和稽核狀態，作為PDF檔案供離線稽核。
+如果资源具有注释或遵循审阅工作流，您可以打印资源以及注释，并将审阅状态作为PDF文件供离线审阅。
 
-您也可以選擇只列印註解或檢閱狀態。
+您还可以选择仅打印注释或审阅状态。
 
 >[!NOTE]
 >
->將已附註的資產列印為PDF時，您可以選取多個附註。
+>在将带有注释的资源打印为PDF时，您可以选择多个注释。
 
-若要列印註釋和檢閱狀態，請點選/按一下 **[!UICONTROL 列印]** 圖示並依照精靈中的指示操作。 此 **[!UICONTROL 列印]** 圖示只有在資產至少有一個指派給它的註解或稽核狀態時才會出現在工具列中。
+要打印注释和审阅状态，请点按/单击 **[!UICONTROL 打印]** 图标，然后按照向导中的说明操作。 此 **[!UICONTROL 打印]** 图标仅在资产至少分配了一个注释或审阅状态时才会显示在工具栏中。
 
-1. 從Assets UI開啟資產的預覽頁面。
+1. 从资产UI中，打开资产的预览页面。
 1. 执行下列操作之一：
 
-   * 若要列印所有附註和稽核狀態，請略過步驟3並直接跳至步驟4。
-   * 若要列印特定註解及檢閱狀態，請開啟 [時間表](/help/assets/manage-digital-assets.md#timeline) 然後前往步驟3。
+   * 要打印所有注释和审阅状态，请跳过步骤3并直接转到步骤4。
+   * 要打印特定注释和审阅状态，请打开 [时间线](/help/assets/manage-digital-assets.md#timeline) 然后转到步骤3。
 
-1. 若要列印特定註解，請從時間軸中選取註解。
+1. 要打印特定注释，请从时间轴中选择注释。
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   若要僅列印稽核狀態，請從時間軸中選取它。
+   要仅打印审阅状态，请从时间线中选择它。
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
-1. 點選/按一下 **[!UICONTROL 列印]** 圖示加以檢視。
+1. 点按/单击 **[!UICONTROL 打印]** 图标。
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. 從「列印」對話方塊中，選擇您希望註釋/審閱狀態顯示在PDF上的位置。 例如，如果您希望註解/狀態列印在包含已列印影像的頁面的右上角，請使用 **左上方** 設定。 預設會選取它。
+1. 从“打印”对话框中，选择要在PDF上显示注释/审阅状态的位置。 例如，如果您希望注释/状态打印在包含已打印图像的页面的右上角，请使用 **左上方** 设置。 默认情况下，该复选框处于选中状态。
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
    您可以根据希望在打印的 PDF 中显示批注/状态的位置选择其他设置。如果希望批注/状态显示在与打印资产不同的页面中，请选择&#x200B;**[!UICONTROL 下一页]**。
 
-1. 按一下 **[!UICONTROL 列印]**. 根据您在步骤 2 中选择的选项，生成的 PDF 会在指定位置显示批注/状态。例如，如果您选择使用&#x200B;**左上角**&#x200B;设置打印批注和审阅状态，则生成的输出将类似于此处描述的 PDF 文件。
+1. 单击 **[!UICONTROL 打印]**. 根据您在步骤 2 中选择的选项，生成的 PDF 会在指定位置显示批注/状态。例如，如果您选择使用&#x200B;**左上角**&#x200B;设置打印批注和审阅状态，则生成的输出将类似于此处描述的 PDF 文件。
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. 使用右上方的選項下載或列印PDF。
+1. 使用右上方的选项下载或打印PDF。
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   若要修改演算PDF檔案的外觀，例如註解與狀態的字型顏色、大小與樣式、背景顏色，請開啟 **[!UICONTROL 註解PDF設定]** 從Configuration Manager中，修改所需的選項。 例如，若要變更已核准狀態的顯示顏色，請修改對應欄位中的顏色代碼。 如需有關變更註解字型顏色的資訊，請參閱 [註釋](/help/assets/manage-digital-assets.md#annotating).
+   要修改渲染PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请打开 **[!UICONTROL 注释PDF配置]** 从Configuration Manager中，修改所需的选项。 例如，要更改已批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注字体颜色的信息，请参阅 [注释](/help/assets/manage-digital-assets.md#annotating).
 
-   返迴轉譯的PDF檔案並重新整理。 重新整理的PDF會反映您所做的變更。
+   返回到渲染的PDF文件并刷新它。 刷新的PDF反映您所做的更改。
 
 ## 资源版本控制 {#asset-versioning}
 
-版本設定功能會在特定時間點建立數位資產的快照。 版本設定功能有助於將資產在稍後還原成先前的狀態。 例如，如果您要復原對資產所做的變更，請還原該資產的未編輯版本。
+版本控制可在特定时间点创建数字资产的快照。 版本控制有助于在以后将资源恢复到以前的状态。 例如，如果要撤消对资源所做的更改，请恢复该资源的未编辑版本。
 
-以下是建立版本的情況：
+以下是创建版本的情况：
 
-* 您可以修改不同應用程式中的影像，然後上傳至Assets。 會建立影像的版本，這樣就不會覆寫原始影像。
-* 您可以編輯資產的中繼資料。
-* 您使用 [!DNL Experience Manager] 案頭應用程式，以簽出現有資產並儲存您的變更。 每次儲存資產時都會建立新版本。
+* 您可以修改其他应用程序中的图像并上传到Assets。 将创建图像的版本，这样不会覆盖原始图像。
+* 您可以编辑资源的元数据。
+* 您使用 [!DNL Experience Manager] 桌面应用程序，用于签出现有资源并保存更改。 每次保存资产时都会创建一个新版本。
 
-您也可以透過工作流程啟用自動版本設定。 當您建立資產的版本時，中繼資料和轉譯會與版本一起儲存。 轉譯會取代相同的影像，例如上傳之JPEG檔案的PNG轉譯。
+您还可以通过工作流启用自动版本控制。 在为资源创建版本时，元数据和演绎版将随版本一起保存。 呈现版本是相同图像的替代版本，例如，已上传JPEG文件的PNG呈现版本。
 
-版本設定功能可讓您執行下列動作：
+版本控制功能允许您执行以下操作：
 
-* 建立資產的版本。
-* 檢視資產的目前修訂版本。
-* 將資產還原至舊版。
+* 创建资源的版本。
+* 查看资源的当前修订版本。
+* 将资源还原到以前的版本。
 
-1. 導覽至您要建立版本的資產位置，然後點選/按一下以開啟其資產頁面。
+1. 导航到要创建版本的资产的位置，然后点按/单击该位置以打开其资产页面。
 
-1. 點選/按一下「全域導覽」圖示，然後選擇 **[!UICONTROL 時間表]** 功能表中的。
+1. 点按/单击全局导航图标，然后选择 **[!UICONTROL 时间线]** 从菜单中。
 
    ![时间线](assets/timeline.png)
 
-1. 點選/按一下 **[!UICONTROL 動作]** （箭頭）圖示來檢視您可以對資產執行的可用動作。
+1. 点按/单击 **[!UICONTROL 操作]** （箭头）图标，以查看您可以对资源执行的可用操作。
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. 點選/按一下 **[!UICONTROL 另存為版本]** 以建立資產的版本。
+1. 点按/单击 **[!UICONTROL 另存为版本]** 以创建资源的版本。
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. 新增標籤和註解，然後按一下 **[!UICONTROL 建立]** 以建立版本。 或者，點選/按一下 **取消** 以結束作業。
+1. 添加标签和注释，然后单击 **[!UICONTROL 创建]** 以创建版本。 或者，点按/单击 **取消** 以退出操作。
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
@@ -594,44 +594,44 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    ![versions_option](assets/versions_option.png)
 
-1. 選取資產的特定版本以預覽資產，或讓資產出現在Assets UI中。
+1. 选择资源的特定版本以进行预览，或使它显示在资源UI中。
 
    ![select_version](assets/select_version.png)
 
-1. 為版本新增標籤和註解，以還原到Assets UI中的特定版本。
+1. 为版本添加标签和注释以还原到Assets UI中的特定版本。
 
    ![save_version](assets/save_version.png)
 
 1. 要为版本生成预览，请点按/单击&#x200B;**[!UICONTROL 预览版本]**。
-1. 若要在資產UI中顯示此版本，請選取「 」 **[!UICONTROL 還原為此版本]**.
-1. 若要比較兩個版本，請前往資產的資產頁面，然後點選/按一下要與目前版本比較的版本。
+1. 要在Assets UI中显示此版本，请选择 **[!UICONTROL 还原到此版本]**.
+1. 要比较两个版本，请转到资产的资产页面，然后点按/单击要与当前版本进行比较的版本。
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
-1. 從時間軸中，選取您要比較的版本，並將滑桿拖曳至左側，以將此版本重疊在目前版本上並進行比較。
+1. 从时间轴中，选择要比较的版本，并将滑块拖动到左侧，以将此版本叠加到当前版本上并进行比较。
 
    ![compare_versions](assets/compare_versions.png)
 
-### 在資產上開始工作流程 {#starting-a-workflow-on-an-asset}
+### 在资产上启动工作流 {#starting-a-workflow-on-an-asset}
 
-1. 導覽至您要開始工作流程的資產位置，然後點選/按一下資產以開啟資產頁面。
-1. 點選/按一下「全域導覽」圖示，然後選擇 **[!UICONTROL 時間表]** 從功能表顯示時間軸。
+1. 导航到要启动工作流的资产位置，然后点按/单击资产以打开资产页面。
+1. 点按/单击全局导航图标，然后选择 **[!UICONTROL 时间线]** 从菜单以显示时间轴。
 
-   ![時間軸–1](assets/timeline-1.png)
+   ![时间轴–1](assets/timeline-1.png)
 
-1. 點選/按一下 **[!UICONTROL 動作]** （箭頭）圖示來開啟資產可用的動作清單。
+1. 点按/单击 **[!UICONTROL 操作]** （箭头）图标，打开可用于资源的操作列表。
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. 點選/按一下 **[!UICONTROL 開始工作流程]** 從清單中。
+1. 点按/单击 **[!UICONTROL 启动工作流]** 从名单上。
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. 在 **[!UICONTROL 開始工作流程]** 對話方塊中，從清單中選取工作流程模型。
+1. 在 **[!UICONTROL 启动工作流]** 对话框中，从列表中选择工作流模型。
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. （選用）指定工作流程的標題，可用來參考工作流程例項。
+1. （可选）指定工作流的标题，该标题可用于引用工作流实例。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
@@ -641,20 +641,20 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ## 收藏集 {#collections}
 
-集合是一組經過排序的資產。 使用收藏集可在用户之间共享资源。
+收藏集是一组有序的资产。 使用收藏集可在用户之间共享资源。
 
-* 集合可以包含來自不同位置的資產，因為它們僅包含對這些資產的引用。 每個集合都會維護資產的參考完整性。
-* 您可以與具有不同許可權層級的多個使用者共用集合，包括編輯、檢視等。
+* 收藏集可以包含来自不同位置的资产，因为它们仅包含对这些资产的引用。 每个收藏集均保持资源的引用完整性。
+* 您可以与具有不同权限级别（包括编辑、查看等）的多个用户共享收藏集。
 
-若要瞭解集合管理的詳細資訊，請參閱 [管理集合](/help/assets/manage-collections.md).
+要了解收藏集管理的详细信息，请参阅 [管理收藏集](/help/assets/manage-collections.md).
 
-## 在案頭應用程式中檢視資產或AdobeAsset Link時隱藏過期的資產 {#hide-expired-assets-via-acp-api}
+## 在桌面应用程序或Adobe资源链接中查看资源时隐藏已过期的资源 {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] 案頭應用程式可讓您從Windows或Mac案頭存取DAM存放庫。 AdobeAsset Link允許從受支援記憶體取資產 [!DNL Creative Cloud] 案頭應用程式。
+[!DNL Experience Manager] 桌面应用程序允许从Windows或Mac桌面访问DAM存储库。 AdobeAsset Link允许从支持的访问中访问资源 [!DNL Creative Cloud] 桌面应用程序。
 
-從內瀏覽資產時 [!DNL Experience Manager] 使用者介面中，不會顯示過期的資產。 若要防止在從案頭應用程式和Asset Link瀏覽資產時檢視、搜尋和擷取已到期資產，管理員可以執行下列設定。 此設定適用於所有使用者，無論管理員許可權為何。
+在中浏览资产时 [!DNL Experience Manager] 用户界面中，将不会显示过期的资源。 要在从桌面应用程序和Asset Link浏览资产时阻止查看、搜索和获取已过期的资产，管理员可以执行以下配置。 该配置适用于所有用户，无论管理员是否拥有权限。
 
-執行下列CURL命令。 確定讀取存取權於 `/conf/global/settings/dam/acpapi/` 適用於存取資產的使用者。 屬於的使用者 `dam-user` 預設為群組擁有許可權。
+执行以下CURL命令。 确保对的读取权限 `/conf/global/settings/dam/acpapi/` 用于访问资产的用户。 属于的用户 `dam-user` 默认情况下，组具有权限。
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -666,7 +666,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-若要瞭解更多，請參閱如何 [使用案頭應用程式瀏覽DAM資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 和 [如何使用Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+要了解更多信息，请参阅如何 [使用桌面应用程序浏览DAM资产](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 和 [如何使用AdobeAsset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **另请参阅**
 

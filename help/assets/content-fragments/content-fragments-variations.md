@@ -1,6 +1,6 @@
 ---
-title: 变体 – 创作片段内容 （資產 — 內容片段）
-description: 瞭解變數如何讓您為片段撰寫內容，然後根據用途建立該內容的變數，從而使您在AEM中的Headless內容更加靈活。
+title: 变体 – 创作片段内容 （资产 — 内容片段）
+description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容更加灵活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 96%
 
 # 变体 – 创作片段内容{#variations-authoring-fragment-content}
 
-[變數](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM內容片段的一項重要功能，因為它們可讓您建立和編輯主要內容的副本，以用於特定頻道和/或情境，使headless內容傳送更靈活。
+[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本，以用于特定渠道和/或场景，从而使headless内容投放更加灵活。
 
 从&#x200B;**“变体”**&#x200B;选项卡，您可：
 

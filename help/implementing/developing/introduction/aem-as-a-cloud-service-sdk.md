@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service SDK
-description: AEMas a Cloud Service軟體開發套件概覽
+description: AEMas a Cloud Service软件开发工具包概述
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
@@ -11,35 +11,35 @@ ht-degree: 1%
 
 # AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
-AEMas a Cloud ServiceSDK由下列成品組成：
+AEMas a Cloud ServiceSDK由以下工件组成：
 
-* **快速入門Jar**  — 用於本機開發的AEM執行階段
-* **Java API Jar**  — 此Java Jar/Maven相依性會公開所有允許的Java API，這些API可用於針對AEM開發作為Cloud Service。 先前稱為Uberjar
-* **Javadoc Jar** - Java API Jar的Javadocs
-* **Dispatcher工具**  — 針對本機Dispatcher開發的一組工具。 為unix和windows分隔成品
+* **快速入门Jar**  — 用于本地开发的AEM运行时
+* **Java API Jar** - Java Jar/Maven依赖项，该依赖项公开所有允许的Java API，这些API可用于针对AEM as aCloud Service进行开发。 以前称为Uberjar
+* **Javadoc Jar** - Java API Jar的Javadoc
+* **Dispatcher工具**  — 用于针对本地Dispatcher开发的一组工具。 为unix和windows分隔对象
 
-此外，先前部署了AEM 6.5或更早版本的部分客戶將使用下列成品。 如果本機編譯無法搭配Quickstart jar使用，而您懷疑這是由於介面已從AEM部署的as a Cloud Service中移除，請聯絡客戶支援以判斷您是否需要存取許可權。 這需要後端進行變更。
+此外，以前使用AEM 6.5或更早版本部署的一些客户将使用以下工件。 如果本地编译不能使用快速入门jar，并且您怀疑这是由于接口已从AEM部署的as a Cloud Service中删除，请联系客户支持以确定您是否需要访问权限。 这将需要在后端进行更改。
 
-* **6.5已過時的Java API Jar**  — 自AEM 6.5之後已移除的另一組介面
-* **6.5已過時的Javadoc Jar**  — 其他已連線程式集的Javadoc
+* **6.5已弃用的Java API Jar**  — 自AEM 6.5之后已移除的另一组接口
+* **6.5已弃用的Javadoc Jar**  — 用于其他接口集的Javadoc
 
-## 針對SDK進行建置 {#building-for-the-sdk}
+## 针对SDK构建 {#building-for-the-sdk}
 
-AEMas a Cloud ServiceSDK可用來建置和部署自訂程式碼。 如需詳細資訊，請參閱 [AEM專案原型檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). 基本上，會執行下列步驟：
+AEMas a Cloud ServiceSDK用于生成和部署自定义代码。 欲知更多详情，请参见 [AEM项目原型文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). 在高级别上，将执行以下步骤：
 
-* **編譯程式碼**. 如預期般編譯原始程式碼，產生結果內容套件
-* **建置成品**. 在此過程中會建立成品
-* **分析套件組合**. 套件組合會使用Maven分析器外掛程式進行分析，外掛程式會尋找Maven專案中的問題，例如遺漏相依性
-* **部署成品**. 成品會部署至本機伺服器。
+* **编译代码**. 如预期，将编译源代码，生成生成的内容包
+* **生成工件**. 在此过程中会生成工件
+* **分析包**. 使用Maven分析器插件分析包，该插件会查找Maven项目中的问题，例如缺少依赖项
+* **部署工件**. 工件将部署到本地服务器。
 
-Cloud Manager在部署至雲端環境時也會執行相同的步驟。 在本機執行組建可進行本機開發和測試，讓開發人員在認可原始檔控制並觸發Cloud Manager部署（可能需要更長時間）之前，就能有效率地發現程式碼或結構問題。
+Cloud Manager在部署到云环境时执行相同的步骤。 在本地执行生成允许本地开发和测试，因此开发人员可以有效地发现代码或结构问题，而无需提交源代码控制并触发Cloud Manager部署（这可能需要更长时间）。
 
-## 存取AEMas a Cloud ServiceSDK {#accessing-the-aem-as-a-cloud-service-sdk}
+## 访问AEMas a Cloud ServiceSDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
-* 您可以檢查AEMAdmin Console **關於Adobe Experience Manager** 圖示來瞭解您正在生產環境中執行的AEM版本。
-* 快速入門jar和Dispatcher工具可以從 [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). 請注意，存取SDK清單的許可權僅限於具有AEM Managed Services或AEMas a Cloud Service環境的使用者。
-* Java API Jar和Javadoc Jar可以透過maven工具下載，可以是命令列或是使用您偏好的IDE。
-* Maven專案Pom應該參考以下API Jar套件。 在任何子封裝pom中也應參考此相依性。
+* 您可以检查AEMAdmin Console **关于Adobe Experience Manager** 图标以了解您正在生产环境中运行的AEM的版本。
+* 快速入门jar和Dispatcher工具可以作为zip文件从 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). 请注意，对SDK列表的访问仅限于具有AEM Managed Services或AEMas a Cloud Service环境的用户。
+* Java API Jar和Javadoc Jar可以通过maven工具（命令行或首选IDE）下载。
+* Maven项目Pom应引用以下API Jar包。 此外，还应在任何子包pom中引用此依赖项。
 
 ```
 <dependency>
@@ -52,44 +52,44 @@ Cloud Manager在部署至雲端環境時也會執行相同的步驟。 在本機
 
 >[!NOTE]
 >
->SDK的版本專案應符合AEMas a Cloud Service的版本。 您可以登入AEM，然後前往畫面右上角的問號並選取「 」，檢視您使用的版本 **[!UICONTROL 關於Adobe Experience Manager]**
+>SDK的版本条目应与AEMas a Cloud Service的版本匹配。 您可以通过登录到AEM，然后转到屏幕右上角的问号并选择 **[!UICONTROL 关于Adobe Experience Manager]**
 
 
-## 使用新SDK版本重新整理本機專案 {#refreshing-a-local-project-with-a-new-skd-version}
+## 使用新SDK版本刷新本地项目 {#refreshing-a-local-project-with-a-new-skd-version}
 
-何時建議使用新的SDK重新整理本機專案？
+建议何时使用新的SDK刷新本地项目？
 
-它是 *建議* 至少在每月維護發行後重新整理。
+它是 *推荐* ，以至少在每月维护版本发布后进行刷新。
 
-它是 *可選* 以在每日維護發行後重新整理。 當客戶的生產執行個體成功升級至新的AEM版本時，將會通知客戶。 對於每日維護發行而言，新的SDK可能不會有重大變更，如果有的話。 不過，建議您偶爾使用最新的SDK重新整理本機AEM開發人員環境，然後重建並測試自訂應用程式。 每月維護發行通常包含更具影響力的變更，因此開發人員應立即重新整理、重建和測試。
+它是 *可选* 以在发布任何日常维护版本后对其进行刷新。 当客户的生产实例成功升级到新的AEM版本时，将会通知客户。 对于每日维护版本，新的SDK预计不会发生显着变化（如果有的话）。 但是，建议偶尔使用最新的SDK刷新本地AEM开发人员环境，然后重建和测试自定义应用程序。 每月维护版本通常包括更具影响力的更改，因此开发人员应立即刷新、重建和测试。
 
-以下是重新整理本機環境的建議程式：
+以下是刷新本地环境的推荐过程：
 
-1. 請確定已將任何有用的內容提交到原始檔控制中的專案，或是可在可變內容套件中取得，以便稍後匯入
-1. 本機開發測試內容需要單獨儲存，這樣它就不會部署為Cloud Manager管道構建的一部分。 這是因為它只需要用於本機開發
-1. 停止目前執行中的快速入門
-1. 移動 `crx-quickstart` 資料夾放入不同的資料夾以便安全儲存
-1. 記下新的AEM版本，在Cloud Manager中記錄（這將用於識別新的QuickStart Jar版本以供進一步下載）
-1. 從軟體發佈入口網站下載版本符合生產AEM版本的QuickStart JAR
-1. 建立全新的資料夾，並將新的QuickStart Jar放入
-1. 使用所需的執行模式啟動新的QuickStart （重新命名檔案或透過以下方式傳入執行模式） `-r`)。
-   * 確定資料夾中沒有遺留的舊快速入門。
-1. 建置您的AEM應用程式
-1. 透過PackageManager將您的AEM應用程式部署到本機AEM
-1. 透過PackageManager安裝本機環境測試所需的任何可變內容套件
-1. 視需要繼續開發及部署變更
+1. 确保任何有用的内容都提交到源代码管理中的项目，或者可以在可变内容包中用于以后导入
+1. 本地开发测试内容需要单独存储，以便不会部署为Cloud Manager管道构建的一部分。 这是因为它只需要用于本地开发
+1. 停止当前正在运行的快速启动
+1. 移动 `crx-quickstart` 文件夹到其他文件夹以便安全保存
+1. 请注意新的AEM版本，Cloud Manager中对其进行了说明（该版本将用于标识新的快速入门Jar版本，以供进一步下载）
+1. 从软件分发门户下载其版本与生产AEM版本相匹配的QuickStart JAR
+1. 创建一个全新的文件夹，并将新的QuickStart Jar放入
+1. 使用所需的运行模式启动新的QuickStart（重命名文件或通过以运行模式传递） `-r`)。
+   * 确保文件夹中没有剩余的旧快速入门。
+1. 构建AEM应用程序
+1. 通过PackageManager将AEM应用程序部署到本地AEM
+1. 通过PackageManager安装本地环境测试所需的任何可变内容包
+1. 根据需要继续开发和部署更改
 
-如果有應隨每個新AEM快速入門版本一起安裝的內容，請將其納入內容套件和專案的原始檔控制中。 然後，每次都進行安裝。
+如果有应随每个新AEM快速入门版本一起安装的内容，请将其包含在内容包和项目的源代码控制中。 然后，每次都安装它。
 
-建議時常更新SDK （例如每兩週），並每天處置完整的本機狀態，以免意外依賴應用程式中的狀態資料。
+建议频繁更新SDK（例如每两周）并每天处理完整的本地状态，以免意外依赖于应用程序中的有状态数据。
 
-如果您依賴CryptoSupport ([藉由在AEM中設定Cloudservices或SMTP郵件服務的認證，或在您的應用程式中使用CryptoSupport API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html))，則加密的屬性將會以在AEM環境首次啟動時自動產生的金鑰加密。 雖然cloudsetup會負責自動重複使用環境特定的CryptoKey，但必須將密碼金鑰插入本機開發環境中。
+如果您依赖CryptoSupport ([通过在AEM中配置Cloudservices或SMTP邮件服务的凭据，或在应用程序中使用CryptoSupport API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html))，加密的属性将使用在AEM环境首次启动时自动生成的密钥进行加密。 虽然cloudsetup可自动重用特定于环境的CryptoKey，但必须将加密密钥注入本地开发环境中。
 
-根據預設，AEM設定為將關鍵資料儲存在資料夾的資料夾中，但為了方便在開發中重複使用，AEM程式可以在第一次啟動時以「`-Dcom.adobe.granite.crypto.file.disable=true`「。 這會在「 」產生加密資料`/etc/key`「。
+默认情况下，AEMAEM配置为将关键数据存储在一个文件夹的数据文件夹中，但为了便于在开发中重复使用，可以在首次启动时使用&quot;`-Dcom.adobe.granite.crypto.file.disable=true`“。 这将在“ ”处生成加密数据`/etc/key`“。
 
-若要能夠重複使用包含加密值的內容套件，您需要遵循以下步驟：
+要能够重用包含加密值的内容包，您需要执行以下步骤：
 
-* 當您最初啟動本機quickstart.jar時，請務必新增以下引數： 」`-Dcom.adobe.granite.crypto.file.disable=true`「。 建議一律新增此專案，但可省略。
-* 第一次啟動執行個體時，請建立包含根「 」篩選器的套件`/etc/key`「。 這會將密碼儲存在您希望重複使用的所有環境中重複使用
-* 匯出任何包含密碼的可變內容，或透過以下方式查詢加密值： `/crx/de` 以將其新增至將在安裝中重複使用的套件
-* 每當您啟動新的執行個體時（或是以新版本取代，或是多個開發環境應共用憑證以進行測試），請安裝步驟2和3中產生的套件，以便能夠重複使用內容，而無需手動重新設定。 這是因為加密金鑰現在處於同步狀態。
+* 最初启动本地quickstart.jar时，请确保添加以下参数： ”`-Dcom.adobe.granite.crypto.file.disable=true`“。 建议始终添加此标记，但可根据需要进行添加。
+* 第一次启动实例时，请创建包含根“ ”筛选器的包`/etc/key`“。 这将包含要在您希望重复使用它们的所有环境中重复使用的密码
+* 导出任何包含密码的可变内容，或通过查找加密值 `/crx/de` 以将其添加到将在安装中重用的包
+* 每当您启动新实例（替换为新版本或多个开发环境应共享凭据进行测试）时，请安装步骤2和3中生成的包，以便能够重用内容，而无需手动重新配置。 这是因为现在加密密钥处于同步状态。

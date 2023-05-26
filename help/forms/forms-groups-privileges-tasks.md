@@ -1,6 +1,6 @@
 ---
-title: 內建 [!DNL AEM Forms] as a Cloud Service群組
-description: 現成可用的使用者群組清單，以及指派給每個群組的許可權
+title: 内置 [!DNL AEM Forms] as a Cloud Service组
+description: 现成的用户组和分配给每个组的权限列表
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 5%
 
 # 组和权限 {#aem-forms-on-osgi-groups-and-privileges}
 
-您可以 [建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 並指派原則和 [使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 至群組。 這些原則可控制屬於群組之使用者的許可權。
+您可以 [创建组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 并分配策略和 [用户](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 到群组。 这些策略控制属于组的用户的权限。
 
-設定後 [!DNL AEM Forms] as a Cloud Service，下表列出的群組如下 [!DNL forms-users] 和表單 — 超級使用者，可自動用於指派：
+设置后 [!DNL AEM Forms] as a Cloud Service，下表列出的组，例如 [!DNL forms-users] 和表单 — 超级用户，可自动进行分配：
 
 <table>
  <tbody>
@@ -25,22 +25,22 @@ ht-degree: 5%
    <td>[!DNL forms-users] <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>建立、預覽、發佈和提交最適化Forms</li> 
+     <li>创建、预览、发布和提交自适应Forms</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>將資產上傳至AEM執行個體</li> 
-     <li>建立主題</li> 
+     <li>将资源上传到AEM实例</li> 
+     <li>创建主题</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
-     <li>建立、預覽、發佈和提交最適化Forms</li> 
+     <li>创建、预览、发布和提交自适应Forms</li> 
      <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
      <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>上傳資產（包括指令碼）</li> 
-     <li>建立主題</li> 
-     <li>匯入包含XDP的套件</li> 
+     <li>上传包括脚本在内的资源</li> 
+     <li>创建主题</li> 
+     <li>导入包含XDP的包</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>
@@ -55,14 +55,14 @@ ht-degree: 5%
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>建立及預覽最適化Forms <!-- or interactive communications --> 範本</li> 
+     <li>创建和预览自适应Forms <!-- or interactive communications --> 模板</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td><p>[!DNL fdm-authors]</p> </td> 
    <td>
     <ul> 
-     <li>建立和修改表單資料模型</li> 
+     <li>创建和修改表单数据模型</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>
@@ -95,7 +95,7 @@ ht-degree: 5%
     <ul> 
      <!-- <li>Configure PDF Generator</li> --> 
      <!-- <li>Configure Watched folder</li> -->
-     <li>管理工作流程應用程式</li> 
+     <li>管理工作流应用程序</li> 
     </ul> </td> 
   </tr>
  </tbody>

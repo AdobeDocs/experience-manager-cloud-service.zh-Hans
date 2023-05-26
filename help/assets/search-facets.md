@@ -1,6 +1,6 @@
 ---
 title: 搜索 Facet.
-description: 本文說明如何在Experience Manager中建立、修改和使用搜尋Facet。
+description: 本文介绍了如何在Experience Manager中创建、修改和使用搜索Facet。
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
@@ -13,68 +13,68 @@ ht-degree: 21%
 
 # 搜索 Facet {#search-facets}
 
-Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有時候，如果您只使用Experience Manager的一般搜尋功能，尋找合適的資產可能會很費時又費力。
+Adobe Experience Manager Assets的企业范围部署具有存储许多资源的能力。 有时，如果只使用Experience Manager的一般搜索功能，则查找正确的资源可能会很费时费力。
 
-使用「篩選器」面板中的搜尋Facet為您的搜尋體驗新增更多精細度，並讓搜尋功能更有效率且更通用。 搜尋Facet會新增多個維度（述詞），讓您執行更複雜的搜尋。 「篩選器」面板包含幾個標準Facet。 您也可以新增自訂搜尋多面向。
+在“筛选器”面板中使用搜索Facet为您的搜索体验添加更多粒度，并使搜索功能更高效、更通用。 搜索Facet会添加多个维度（谓词），使您能够执行更复杂的搜索。 “筛选器”面板包含几个标准Facet。 您还可以添加自定义搜索彩块化。
 
-總而言之，搜尋Facet可讓您以多種方式搜尋資產，而非使用單一、預先決定的分類順序。 您可以輕鬆向下鑽研至所需的詳細資訊層級，以更集中地搜尋。
+总之，通过搜索彩块化，您可以通过多种方式搜索资产，而不是按单一、预先确定的分类顺序搜索。 您可以轻松地深入到所需的详细级别以进行更集中的搜索。
 
-例如，如果您要尋找影像，您可以選擇想要點陣圖或向量影像。 您可以指定影像的MIME型別，進一步縮小搜尋範圍。 同樣地，在搜尋檔案時，您可以指定格式，例如PDF或MS Word。
+例如，如果您要查找图像，则可以选择是要位图还是矢量图像。 通过为图像指定MIME类型，可以进一步缩小搜索范围。 同样，在搜索文档时，可以指定格式，例如PDF或MS Word。
 
-## 新增述詞 {#adding-a-predicate}
+## 添加谓词 {#adding-a-predicate}
 
-「篩選器」面板中顯示的搜尋Facet是使用述詞在基礎搜尋表單中定義。 若要顯示更多或不同的Facet，您可以將述詞新增至預設表單，或使用包含您所選的Facet的自訂表單。
+“筛选器”面板中显示的搜索Facet是使用谓词在基础搜索表单中定义的。 要显示更多或不同的Facet，请将谓词添加到默认表单中，或者使用包含所选Facet的自定义表单。
 
-若要進行全文檢索，請新增 `Fulltext` 表單的述詞。 使用屬性述詞來搜尋符合您指定之單一屬性的資產。 使用「選項」述詞來搜尋符合特定屬性的一個或多個值的資產。 新增日期範圍述詞，以搜尋在指定日期範圍內建立的資產。
+对于全文搜索，请添加 `Fulltext` 表单谓词。 使用属性谓词可搜索与您指定的单个属性匹配的资产。 使用“选项”谓词可搜索与特定属性的一个或多个值匹配的资产。 添加日期范围谓词以搜索在指定日期范围内创建的资源。
 
-1. 按一下Experience Manager標誌，然後前往 **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 搜尋Forms]**.
-1. 從「搜尋Forms」頁面中選取 **[!UICONTROL 資產管理搜尋邊欄]**，然後點選  **編輯** ![aemassets_edit](assets/aemassets_edit.png).
+1. 单击Experience Manager徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**.
+1. 在“搜索Forms”页面中，选择 **[!UICONTROL 资产管理搜索边栏]**，然后点按  **编辑** ![aemassets_edit](assets/aemassets_edit.png).
 
-   ![找到並選取資產管理搜尋邊欄](assets/assets_admin_searchrail.png)
+   ![找到并选择Assets管理员搜索边栏](assets/assets_admin_searchrail.png)
 
-1. 在「編輯搜尋Forms」頁面中，從以下位置拖曳述詞： **[!UICONTROL 選取述詞]** 標籤移至主窗格。 例如，拖曳 **[!UICONTROL 屬性述詞]**.
+1. 在“编辑搜索Forms”页中，将谓词从 **[!UICONTROL 选择谓词]** 制表符进入主窗格。 例如，拖动 **[!UICONTROL 属性谓词]**.
 
-   ![選取並移動述詞以自訂搜尋篩選器](assets/drag_predicate.png)
+   ![选择并移动谓词以自定义搜索过滤器](assets/drag_predicate.png)
 
-   *圖：選取並移動述詞以自訂搜尋篩選器。*
+   *图：选择并移动谓词以自定义搜索过滤器。*
 
-1. 在「設定」標籤中，輸入述詞的欄位標籤、預留位置文字和說明。 為您要與述詞關聯的中繼資料屬性指定有效的名稱。 「設定」標籤中的標題標籤可識別所選述詞的型別。
+1. 在设置选项卡中，输入谓词的字段标签、占位符文本和描述。 为要与谓词关联的元数据属性指定有效名称。 “设置”选项卡中的标题标签标识所选谓词的类型。
 
-   ![使用「設定」標籤提供謂詞的必要選項](assets/settings.png)
+   ![使用“设置”选项卡提供谓词的必需选项](assets/settings.png)
 
-   *圖：使用設定索引標籤提供述詞的必要選項。*
+   *图：使用“Settings（设置）”选项卡提供谓词所需的选项。*
 
-1. 在&#x200B;**[!UICONTROL 属性名称]**&#x200B;字段中，为要与谓词关联的元数据属性指定有效名称。该名称是执行搜索时所依据的名称。例如，输入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。您也可以從選取對話方塊中選取現有節點。
+1. 在&#x200B;**[!UICONTROL 属性名称]**&#x200B;字段中，为要与谓词关联的元数据属性指定有效名称。该名称是执行搜索时所依据的名称。例如，输入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。也可以从选择对话框中选择现有节点。
 
-   ![在「屬性名稱」欄位中將中繼資料屬性與述詞建立關聯](assets/property_settings.png)
+   ![在属性名称字段中将元数据属性与谓词关联](assets/property_settings.png)
 
-   *圖：在中繼資料屬性與屬性名稱欄位中的述詞建立關聯。*
+   *图：在属性名称字段中将元数据属性与谓词关联。*
 
-1. 按一下 **[!UICONTROL 預覽]** ![預覽](assets/preview.png) 以產生「篩選器」面板在新增述詞後的預覽。
-1. 在預覽模式中檢閱述詞的配置。
+1. 单击 **[!UICONTROL 预览]** ![预览](assets/preview.png) 以生成过滤器面板在添加谓词后显示的预览。
+1. 在预览模式下查看谓词的布局。
 
-   ![在提交變更之前預覽搜尋表單](assets/preview-1.png)
+   ![在提交更改之前预览搜索表单](assets/preview-1.png)
 
-   在提交變更之前預覽搜尋表單
+   在提交更改之前预览搜索表单
 
-1. 若要關閉預覽，請按一下 **[!UICONTROL 關閉]** ![關閉](assets/do-not-localize/close_icon.png) 在預覽的右上角。
-1. 點選 **[!UICONTROL 完成]** 以儲存設定。
-1. 導覽至Assets使用者介面中的「搜尋」面板。 屬性述詞會新增至面板。
-1. 在文字方塊中輸入要搜尋之資產的說明。 例如，輸入「Adobe」。 執行搜尋時，描述符合「Adobe」的資產會列在搜尋結果中。
+1. 要关闭预览，请单击 **[!UICONTROL 关闭]** ![close](assets/do-not-localize/close_icon.png) 在预览的右上角。
+1. 点按 **[!UICONTROL 完成]** 以保存设置。
+1. 导航到Assets用户界面中的“搜索”面板。 属性谓词将添加到面板中。
+1. 在文本框中输入要搜索的资源的描述。 例如，输入“Adobe”。 执行搜索时，描述与“Adobe”匹配的资源将列在搜索结果中。
 
-## 新增選項述詞 {#adding-an-options-predicate}
+## 添加选项谓词 {#adding-an-options-predicate}
 
-選項述詞可讓您在「篩選器」面板中新增多個搜尋選項。 您可以在「篩選器」面板中選取這些選項中的一個或多個來搜尋資產。 例如，若要根據檔案型別搜尋資產，請在搜尋表單中設定選項，例如「影像」、「多媒體」、「檔案」和「封存」。 設定這些選項後，當您在「濾鏡」面板中選取「影像」選項時，會對GIF、JPEG、PNG等型別的資產執行搜尋。
+选项谓词允许您在“筛选器”面板中添加多个搜索选项。 您可以在“筛选器”面板中选择一个或多个选项来搜索资产。 例如，要根据文件类型搜索资产，请在搜索表单中配置选项，如“图像”、“多媒体”、“文档”和“存档”。 配置这些选项后，当您在“筛选器”面板中选择“图像”选项时，将会对GIF、JPEG、PNG等类型的资源执行搜索。
 
-若要將選項對應至個別屬性，請建立選項的節點結構，並在Options述詞的Property Name屬性中提供父節點的路徑。 父節點應為型別 `sling`： `OrderedFolder`. 選項應為型別 `nt:unstructured`. 選項節點應具有屬性 `jcr:title` 和 `value` 已設定。
+要将选项映射到相应的属性，请为选项创建节点结构，并在Options谓词的Property Name属性中提供父节点的路径。 父节点应为类型 `sling`： `OrderedFolder`. 选项应属于类型 `nt:unstructured`. 选项节点应具有属性 `jcr:title` 和 `value` 已配置。
 
-此 `jcr:title` 屬性是顯示在「篩選器」面板上之選項的使用者易記名稱。 此 `value` 欄位用於查詢，以符合指定的屬性。
+此 `jcr:title` 属性是显示在过滤器面板上的选项的用户友好名称。 此 `value` 字段在查询中用于匹配指定的属性。
 
-當您選取選項時，會根據 `value` 選項節點及其子節點的屬性（如果有）。 系統會遍歷option節點下的整個樹狀結構， `value` 每個子節點的屬性會使用OR運算來組合，以形成搜尋查詢。
+选择某个选项后，将根据 `value` 选项节点及其子节点的属性（如果有）。 将遍历选项节点下的整个树，并且 `value` 使用OR操作组合每个子节点的属性以形成搜索查询。
 
 例如，如果您为文件类型选择“图像”，则资产的搜索查询将通过使用 OR 操作组合 `value` 属性来构建。**********`jcr:content/metadata/dc:format`
 
-檔案型別的值屬性（如CRXDE中所見）可用於搜尋查詢
+文件类型的值属性（如CRXDE中所示）用于搜索查询运行
 
 您不必为 CRX 存储库中的选项手动创建节点结构，而是可以通过指定相应的键值对在 JSON 文件中定义选项。在&#x200B;**[!UICONTROL 属性名称]**&#x200B;字段中指定 JSON 文件的路径。例如，您可以定义键值对、`image/bmp`、`image/gif`、`image/jpeg` 和 `image/png`，并指定它们的值，如以下示例 JSON 文件中所示。在&#x200B;**[!UICONTROL 属性名称]**&#x200B;字段中，可以指定此文件的 CRX 路径。
 
@@ -90,80 +90,80 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
 }
 ```
 
-如果要使用現有節點，請使用選取對話方塊來指定它。
+如果要使用现有节点，请使用“选择”对话框指定该节点。
 
 >[!NOTE]
 >
->Options述詞是包含屬性述詞的自訂包裝函式，用於示範所描述的行為。 目前沒有可用的REST端點可原生支援此功能。
+>选项谓词是一个自定义包装器，其中包含用于演示所描述行为的属性谓词。 目前，没有可用的REST端点以本机方式支持该功能。
 
-1. 點選Experience Manager標誌，然後前往 **[!UICONTROL 「工具>一般>搜尋Forms」]**.
+1. 点按Experience Manager徽标，然后转到 **[!UICONTROL “工具”>“常规”>“搜索Forms”]**.
 1. 在“搜索 **[!UICONTROL 表单]** ”页面中，选择 **[!UICONTROL 资产管理员搜索边栏]**，然后点按编辑图标。
 1. 在“编 **[!UICONTROL 辑搜索表单]** ”页中，将“选 **[!UICONTROL 项谓词]** ”从“选 **** 择谓词”选项卡拖至主窗格。
 1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，输入属性的标签和名称。例如，要根据资产的格式搜索资产，请为标签指定用户友好名称，例如&#x200B;**[!UICONTROL 文件类型]**。在属性字段中指定执行搜索时所依据的属性，例如 `jcr:content/metadata/dc:format.`
 1. 执行下列操作之一：
 
-   * 在 **[!UICONTROL 屬性名稱]** 欄位，提及JSON檔案的路徑，您可在此定義選項的節點，並指定對應的索引鍵值配對。
-   * 點選 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 「選項」欄位旁邊，指定您要在「篩選器」面板中提供之選項的顯示文字和值。 若要新增其他選項，請點選/按一下 ![資產新增圖示](assets/do-not-localize/aem_assets_add_icon.png) 並重複此步驟。
+   * 在 **[!UICONTROL 属性名称]** 字段中，提及JSON文件的路径，在该路径中为选项定义节点并指定相应的键值对。
+   * 点按 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 在“选项”字段旁边，为要在“筛选器”面板中提供的选项指定显示文本和值。 要添加其他选项，请点按/单击 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 并重复该步骤。
 
 1. 确保取消选中&#x200B;**[!UICONTROL 单选]**，以允许用户一次为文件类型选择多个选项（例如，“图像”、“文档”、“多媒体”和“存档”）。如果选中&#x200B;**[!UICONTROL 单选]**，则用户一次只能为文件类型选择一个选项。
 
-   ![選項述詞中的可用欄位](assets/options_predicate.png)
+   ![选项谓词中的可用字段](assets/options_predicate.png)
 
-   選項述詞中的可用欄位
+   选项谓词中的可用字段
 
-1. 在 **說明** 欄位，輸入選擇性說明，然後按一下 **[!UICONTROL 完成]**.
-1. 導覽至「搜尋」面板。 「選項」述詞會新增至 **搜尋** 面板。 的選項 **[!UICONTROL 檔案型別]** 會顯示為核取方塊。
+1. 在 **描述** 字段，输入可选说明，然后单击 **[!UICONTROL 完成]**.
+1. 导航到“搜索”面板。 “选项”谓词将添加到 **搜索** 面板。 的选项 **[!UICONTROL 文件类型]** 显示为复选框。
 
-## 新增多值屬性述詞 {#adding-a-multi-value-property-predicate}
+## 添加多值属性谓词 {#adding-a-multi-value-property-predicate}
 
-此 `Multi Value Property` 述詞可讓您搜尋資產以取得多個值。 請考量您在中擁有多個產品影像的情況 [!DNL Assets] 且每個影像的中繼資料都包含與產品相關聯的SKU編號。 您可以使用此述詞來根據多個SKU編號搜尋產品影像。
+此 `Multi Value Property` 谓词用于搜索资产的多个值。 考虑以下情景：您在中拥有多个产品的图像 [!DNL Assets] 并且每个图像的元数据包括与产品相关联的SKU号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
 
-1. 按一下Experience Manager標誌，然後前往 **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 搜尋Forms]**.
-1. 在「搜尋Forms」頁面上，選取 **[!UICONTROL 資產管理搜尋邊欄]**，點選 **編輯** ![aemassets_edit](assets/aemassets_edit.png).
+1. 单击Experience Manager徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**.
+1. 在“搜索Forms”页面上，选择 **[!UICONTROL 资产管理搜索边栏]**，点按 **编辑** ![aemassets_edit](assets/aemassets_edit.png).
 1. 在“编辑搜索表单”页中，将&#x200B;**[!UICONTROL 多值属性谓词]**&#x200B;从&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡拖到主窗格。
-1. 在 **[!UICONTROL 設定]** 索引標籤中，輸入述詞的標籤和預留位置文字。 在屬性欄位中指定搜尋所依據的屬性名稱，例如 `jcr:content/metadata/dc:value`. 您也可以使用選取對話方塊來選取節點。
+1. 在 **[!UICONTROL 设置]** 选项卡，输入谓词的标签和占位符文本。 在属性字段中指定执行搜索时所依据的属性名称，例如 `jcr:content/metadata/dc:value`. 也可以使用“选择”对话框选择节点。
 1. 确保选中&#x200B;**[!UICONTROL 分隔符支持]**。在&#x200B;**[!UICONTROL 输入分隔符]**&#x200B;字段中，指定要用于分隔各个值的分隔符。默认情况下，指定逗号为分隔符。您可以指定其他分隔符。
-1. 在 **說明** 欄位，輸入選填的說明，然後點選 **[!UICONTROL 完成]**.
+1. 在 **描述** 字段中，输入可选描述，然后点按 **[!UICONTROL 完成]**.
 1. 导航到 Assets 用户界面中的“过滤器”面板。**[!UICONTROL 多值属性]**&#x200B;谓词已添加到面板。
-1. 在「多值」欄位中指定多個值（以分隔符號分隔），然後執行搜尋。 述詞會擷取與指定值完全相符的文字。
+1. 在多值字段中指定多个值（用分隔符分隔），然后执行搜索。 谓词会获取与您指定的值完全匹配的文本。
 
-## 新增標籤述詞 {#adding-a-tags-predicate}
+## 添加标记谓词 {#adding-a-tags-predicate}
 
-此 `Tags` 述詞可讓您對資產執行標籤式搜尋。 依預設， [!DNL Assets] 根據您指定的標籤，在資產中搜尋一或多個相符標籤。 換言之，搜尋查詢會使用指定的標籤執行OR操作。 不過，您可以使用「比對所有標籤」選項來搜尋包含您所指定之所有標籤的資產。
+此 `Tags` 谓词允许您对资源执行基于标记的搜索。 默认情况下， [!DNL Assets] 根据您指定的标记，在资产中搜索一个或多个标记匹配项。 换句话说，搜索查询使用指定的标记执行OR操作。 但是，您可以使用匹配所有标记选项来搜索包含您指定的所有标记的资产。
 
-1. 按一下Experience Manager標誌，然後前往 **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 搜尋Forms]**.
-1. 從「搜尋Forms」頁面中選取 **[!UICONTROL 資產管理搜尋邊欄]** 然後點選 **編輯** ![aemassets_edit](assets/aemassets_edit.png).
-1. 在「編輯搜尋表單」頁面中，拖曳 **[!UICONTROL 標籤述詞]** 從「選取述詞」標籤移至主窗格。
-1. 在設定索引標籤中，輸入述詞的預留位置文字。 在屬性欄位中指定搜尋所依據的屬性名稱，例如 `jcr:content/metadata/cq:tags`. 或者，您也可以從選取對話方塊中選取CRXDE中的節點。
-1. 設定此述詞的根標籤路徑屬性，以填入標籤清單中的各種標籤。
+1. 单击Experience Manager徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**.
+1. 在“搜索Forms”页面中，选择 **[!UICONTROL 资产管理搜索边栏]** 然后点按 **编辑** ![aemassets_edit](assets/aemassets_edit.png).
+1. 在“编辑搜索表单”页中，拖动 **[!UICONTROL 标记谓词]** 从“选择谓词”选项卡转到主窗格。
+1. 在设置选项卡中，输入谓词的占位符文本。 在属性字段中指定执行搜索时所依据的属性名称，例如 `jcr:content/metadata/cq:tags`. 或者，您也可以从选择对话框中选择CRXDE中的节点。
+1. 配置此谓词的根标记路径属性，以填充“标记”列表中的各种标记。
 1. 选择&#x200B;**[!UICONTROL 显示“匹配所有标记”选项]**，以搜索包含您指定的所有标记的资产。
 
-   ![標籤述詞的典型設定](assets/tags_predicate.png)
+   ![标记谓词的典型设置](assets/tags_predicate.png)
 
-1. 在 **[!UICONTROL 說明]** 欄位，輸入選填的說明，然後按一下/點選 **[!UICONTROL 完成]**.
-1. 導覽至「搜尋」面板。 此 **[!UICONTROL 標籤]** 述詞會新增至「搜尋」面板。
-1. 指定您要依據其搜尋資產的標籤，或從建議清單中選取。
-1. 選取 **[!UICONTROL 全部符合]** 以搜尋包含您所指定之所有標籤的相符專案。
+1. 在 **[!UICONTROL 描述]** 字段中，输入可选描述，然后单击/点按 **[!UICONTROL 完成]**.
+1. 导航到“搜索”面板。 此 **[!UICONTROL 标记]** 谓词将添加到“搜索”面板。
+1. 指定要基于其搜索资产的标记或从建议列表中选择。
+1. 选择 **[!UICONTROL 全部匹配]** 以搜索包含您指定的所有标记的匹配项。
 
-您可以根據 **[!UICONTROL 名稱]** （依字母順序）， **[!UICONTROL 已建立]** 日期，或 **[!UICONTROL 修改時間]** 日期。 在下圖中，標籤結構是根據 **[!UICONTROL 名稱]**.
+您可以根据 **[!UICONTROL 名称]** （按字母顺序）， **[!UICONTROL 已创建]** 日期，或 **[!UICONTROL 修改时间]** 日期。 在下图中，标记结构是根据 **[!UICONTROL 名称]**.
 
-![add-tag](assets/add-tags-to-asset.png)
+![添加标记](assets/add-tags-to-asset.png)
 
 
-## 新增其他述詞 {#adding-other-predicates}
+## 添加其他谓词 {#adding-other-predicates}
 
-與新增「屬性」述詞或「選項」述詞的方式類似，您也可以將下列其他述詞新增至「搜尋」面板：
+与添加“属性”谓词或“选项”谓词的方法类似，您也可以将以下附加谓词添加到“搜索”面板：
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>述詞名稱</strong></p> </td>
+   <td><p><strong>谓词名称</strong></p> </td>
    <td><p><strong>描述</strong></p> </td>
    <td><p><strong>属性</strong></p> </td>
   </tr>
   <tr>
    <td><p>全文</p> </td>
-   <td>搜尋述詞，以在整個資產節點上執行全文搜尋。 對應有 <code>jcr</code>：<code>contains</code> 運運算元。 如果要對資產節點的特定部分執行全文搜尋，您可以指定相對路徑。</td>
+   <td>搜索谓词，对整个资源节点执行全文搜索。 它映射为 <code>jcr</code>：<code>contains</code> 运算符。 如果要对资源节点的特定部分执行全文搜索，则可以指定相对路径。</td>
    <td>
     <ul>
      <li>标签</li>
@@ -174,7 +174,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
   </tr>
   <tr>
    <td>路径浏览器</td>
-   <td>搜尋述詞，以在預先設定的根路徑搜尋資料夾和子資料夾中的資產</td>
+   <td>搜索谓词以搜索文件夹和子文件夹中预配置的根路径下的资产</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -184,7 +184,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
   </tr>
   <tr>
    <td><p>路径</p> </td>
-   <td><p>使用它來篩選位置的結果。 您可以將不同的路徑指定為選項。</p> </td>
+   <td><p>使用它可按位置筛选结果。 您可以将不同的路径指定为选项。</p> </td>
    <td>
     <ul>
      <li>标签</li>
@@ -193,8 +193,8 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     </ul> </td>
   </tr>
   <tr>
-   <td><p>發佈狀態</p> </td>
-   <td><p>搜尋述詞，以根據資產的發佈狀態來搜尋資產</p> </td>
+   <td><p>发布状态</p> </td>
+   <td><p>搜索谓词，以基于资产的发布状态搜索资产</p> </td>
    <td>
     <ul>
      <li>标签</li>
@@ -204,17 +204,17 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
   </tr>
   <tr>
    <td><p>相对日期</p> </td>
-   <td><p>搜尋述詞，以根據資產的相對建立日期來搜尋資產。 例如，您可以設定選項，例如2個月前、3週前等。 </p> </td>
+   <td><p>搜索谓词，以根据资产的相对创建日期搜索资产。 例如，您可以配置选项，如2个月前、3周前等。 </p> </td>
    <td>
     <ul>
      <li>标签</li>
      <li>属性名称</li>
-     <li>相對日期</li>
+     <li>相对日期</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>范围</p> </td>
-   <td><p>搜尋述詞，可搜尋指定範圍內的資產。 在「搜尋」面板中，您可以指定範圍的最小值和最大值。</p> </td>
+   <td><p>搜索谓词，用于搜索指定范围内的资源。 在“搜索”面板中，可以指定范围的最小值和最大值。</p> </td>
    <td>
     <ul>
      <li>标签</li>
@@ -224,20 +224,20 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
   </tr>
   <tr>
    <td><p>日期范围</p> </td>
-   <td><p>搜尋述詞，以搜尋在指定範圍內建立的資產，以取得日期屬性。 在「搜尋」面板中，您可以使用日期選擇器來指定開始和結束日期。</p> </td>
+   <td><p>搜索谓词，以搜索在指定范围内为日期属性创建的资产。 在“搜索”面板中，您可以使用日期选取器指定开始日期和结束日期。</p> </td>
    <td>
     <ul>
      <li>标签</li>
      <li>占位符</li>
      <li>属性名称</li>
-     <li>範圍文字（從）</li>
-     <li>範圍文字（至）</li>
+     <li>范围文本（自）</li>
+     <li>范围文本（至）</li>
      <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>日期</p> </td>
-   <td><p>根據日期屬性的資產滑桿式搜尋的搜尋述詞。</p> </td>
+   <td><p>基于日期属性的资产基于滑块搜索的搜索谓词。</p> </td>
    <td>
     <ul>
      <li>标签</li>
@@ -246,8 +246,8 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     </ul> </td>
   </tr>
   <tr>
-   <td><p>檔案大小</p> </td>
-   <td><p>搜尋述詞，以根據資產的大小進行搜尋。 這是以Silder為基礎的述詞，您可以從可設定的節點選取滑桿選項。 預設選項定義於CRX存放庫中的/libs/dam/options/predicates/filesize 。 檔案大小以位元組為單位。</p> </td>
+   <td><p>文件大小</p> </td>
+   <td><p>搜索谓词，以根据资产的大小搜索资产。 它是一个基于silder的谓词，您可以从可配置的节点中选择滑块选项。 默认选项在CRX存储库的/libs/dam/options/predicates/filesize中定义。 文件大小以字节为单位。</p> </td>
    <td>
     <ul>
      <li>标签</li>
@@ -258,17 +258,17 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
   </tr>
   <tr>
    <td>上次修改的资源</td>
-   <td>搜尋述詞以搜尋最近修改的資產 </td>
+   <td>搜索谓词以搜索最近修改的资产 </td>
    <td>
     <ul>
      <li>属性名称</li>
-     <li>屬性值</li>
+     <li>属性值</li>
      <li>描述</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>發佈狀態</td>
-   <td>搜尋述詞，以根據資產的發佈狀態來搜尋資產 </td>
+   <td>发布状态</td>
+   <td>搜索谓词，以基于资产的发布状态搜索资产 </td>
    <td>
     <ul>
      <li>标签</li>
@@ -278,7 +278,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
   </tr>
   <tr>
    <td>到期状态</td>
-   <td>搜尋述詞，以根據資產的到期狀態來搜尋資產 </td>
+   <td>搜索谓词，以根据资产的到期状态搜索资产 </td>
    <td>
     <ul>
      <li>标签</li>
@@ -288,40 +288,40 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
   </tr>
   <tr>
    <td>隐藏</td>
-   <td>定義隱藏欄位屬性以搜尋資產的搜尋述詞</td>
+   <td>定义隐藏字段属性以搜索资产的搜索谓词</td>
    <td>
     <ul>
      <li>属性名称</li>
-     <li>屬性值</li>
+     <li>属性值</li>
      <li>描述</li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-## 還原預設搜尋Facet {#restoring-default-search-facets}
+## 恢复默认搜索Facet {#restoring-default-search-facets}
 
-依預設，「鎖定」圖示會出現在之前 **[!UICONTROL 資產管理搜尋邊欄]** 在 **[!UICONTROL 搜尋Forms]** 頁面。 如果您將搜尋Facet新增至表單，指出預設表單已修改，則「鎖定」圖示會消失。
+默认情况下，“锁定”图标会显示在之前 **[!UICONTROL 资产管理搜索边栏]** 在 **[!UICONTROL 搜索Forms]** 页面。 如果向表单中添加搜索彩块来指示默认表单已修改，则“锁定”图标将消失。
 
-「搜尋Forms」頁面上某個選項的鎖定圖示表示預設設定完整且未自訂。
+“搜索Forms”页面上的某个选项的“锁定”图标表示默认设置保持不变，且未进行自定义。
 
-若要還原預設的搜尋Facet，請執行下列步驟：
+要恢复默认搜索Facet，请执行以下步骤：
 
-1. 選取 **[!UICONTROL 資產管理搜尋邊欄]** 在 **[!UICONTROL 搜尋Forms]** 頁面。
-1. 點選 **[!UICONTROL 刪除]** ![刪除圖示](assets/do-not-localize/deleteoutline.png) （在工具列中）。
-1. 在確認對話方塊中，點選 **[!UICONTROL 刪除]** 以移除自訂變更。
+1. 选择 **[!UICONTROL 资产管理搜索边栏]** 在 **[!UICONTROL 搜索Forms]** 页面。
+1. 点按 **[!UICONTROL 删除]** ![删除图标](assets/do-not-localize/deleteoutline.png) 工具栏中。
+1. 在确认对话框中，点按 **[!UICONTROL 删除]** 以删除自定义更改。
 
    在删除对搜索彩块化的自定义更改后，“搜索表单”页面中的“资 **[!UICONTROL 产管理员搜索边栏]** ”前会重 **[!UICONTROL 新显示锁图标]** 。
 
-## 使用者許可權 {#user-permissions}
+## 用户权限 {#user-permissions}
 
-如果您未獲指派管理員角色，以下列出執行與搜尋Facet相關的編輯、刪除和預覽動作所需的許可權。
+如果您未分配管理员角色，请访问以下列表，了解执行涉及搜索Facet的编辑、删除和预览操作所需的权限。
 
 | 操作 | 权限 |
 |---|---|
-| 编辑 | 的讀取和寫入許可權 `/apps` CRX中的節點。 |
-| 删除 | 對的讀取、寫入和刪除許可權 `/apps` CRX中的節點。 |
-| 预览 | 對的讀取、寫入和刪除許可權 `/var/dam/content` CRX中的節點。 此外，的讀取和寫入許可權 `/apps` 節點。 |
+| 编辑 | 对的读写权限 `/apps` CRX中的节点。 |
+| 删除 | 对的读取、写入和删除权限 `/apps` CRX中的节点。 |
+| 预览 | 对的读取、写入和删除权限 `/var/dam/content` CRX中的节点。 另外，对的读取和写入权限 `/apps` 节点。 |
 
 **另请参阅**
 
@@ -339,5 +339,5 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
 
 >[!MORELIKETHIS]
 >
->* [搜尋數位資產](search-assets.md).
+>* [搜索数字资产](search-assets.md).
 

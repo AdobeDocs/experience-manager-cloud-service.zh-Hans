@@ -1,6 +1,6 @@
 ---
 title: 命名约定
-description: 存放庫中的節點須遵守Java內容存放庫的命名慣例
+description: 存储库中的节点遵循Java内容存储库的命名约定
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
@@ -11,35 +11,35 @@ ht-degree: 1%
 
 # 命名约定{#naming-conventions}
 
-存放庫中的節點會受到Java內容存放庫的命名慣例的約束。 不過，AEM對頁面節點名稱施加了進一步的慣例。
+存储库中的节点遵循Java内容存储库的命名约定。 但是，AEM对页面节点名称施加了进一步的约定。
 
-## 頁面的命名慣例 {#naming-conventions-for-pages}
+## 页面的命名约定 {#naming-conventions-for-pages}
 
-這些命名慣例會在不同的層級實作：
+这些命名惯例在各级实施：
 
-* JcrUtil：的AEM實施 [JCR公用程式](#jcr-utilities).
-* PageManager： [頁面管理員](#page-manager) 提供頁面層級作業的方法。
-* 在AEM UI內 {#ui-behavior}
+* JcrUtil：的AEM实现 [JCR实用程序](#jcr-utilities).
+* PageManager： [页面管理器](#page-manager) 提供页面级别操作的方法。
+* 在AEM UI中 {#ui-behavior}
 
-### JCR公用程式 {#jcr-utilities}
+### JCR实用程序 {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) 是JCR公用程式的AEM實作。 驗證名稱特別感興趣的是它控制的字元對應和以下驗證：
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) 是JCR实用程序的AEM实施。 验证名称特别感兴趣的是它控制的字符映射以及以下验证：
 
 * `isValidName`
-   * 檢查名稱是否非空白且僅包含有效字元。
-   * 可用來檢查建議的名稱是否有效。
+   * 检查名称是否不为空且仅包含有效字符。
+   * 可用于检查建议的名称是否有效。
 * `createValidName`
-   * 這會以任意字串建立有效的標籤。
-   * 它可用來從標題建立名稱。
+   * 这会根据任意字符串创建一个有效标签。
+   * 它可用于从标题创建名称。
 
-### 頁面管理員 {#page-manager}
+### 页面管理器 {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 提供頁面層級作業的方法，根據 [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 提供页面级别操作的方法，基于 [JCRUtil](#jcr-utilities).
 
-### AEM UI行為 {#ui-behavior}
+### AEM UI行为 {#ui-behavior}
 
-管理內容時，AEM UI：
+管理内容时，AEM UI会：
 
-* 符合下列任一情況時，請根據PageManager的限制來驗證名稱：
-   * 提供頁面標題，以轉換為節點名稱
-   * 提供了明確的節點名稱
+* 在执行以下任一操作时，根据PageManager施加的限制验证名称：
+   * 提供了页面标题以转换为节点名称
+   * 提供了显式节点名称

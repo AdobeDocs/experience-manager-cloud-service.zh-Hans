@@ -29,7 +29,7 @@ ht-degree: 81%
 
 ### 组件详细信息 {#component-details}
 
-若要檢視特定元件的詳細資訊，請點選/按一下所需的資源。 三個索引標籤提供：
+要查看有关特定组件的详细信息，请点按/单击所需的资源。 三个选项卡提供：
 
 * **属性**
 
@@ -39,9 +39,9 @@ ht-degree: 81%
 
    * 查看组件的常规属性。
       * 查看组件的图标或缩写定义的方式。<!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * 按一下圖示的來源會前往該元件。
-   * 檢視 **資源型別** 和 **資源超級型別** （如果已定義）。
-      * 按一下「資源超級型別」即可前往該元件。
+      * 单击图标的来源将转到该组件。
+   * 查看 **资源类型** 和 **资源超级类型** （如果已定义）。
+      * 单击“资源超级类型”将转到该组件。
 
    >[!NOTE]
    >

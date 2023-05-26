@@ -16,13 +16,13 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->如需使用AEM 6.5和傳統CIF的AEM內容與商務，請參閱 [AEM 6.5內容與商務](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>有关包含AEM 6.5和经典CIF的AEM Content and Commerce，请参阅 [AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
-## 重要內容和商務文章 {#key-articles}
+## 关键内容和商业文章 {#key-articles}
 
-* [AEM Content and Commerce簡介](introduction.md)
-* [AEM Content and Commerce入門](/help/commerce-cloud/getting-started.md)
-* [開發AEM Content and Commerce](/help/commerce-cloud/develop.md)
+* [AEM Content and Commerce简介](introduction.md)
+* [AEM Content and Commerce快速入门](/help/commerce-cloud/getting-started.md)
+* [开发AEM Content and Commerce](/help/commerce-cloud/develop.md)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 

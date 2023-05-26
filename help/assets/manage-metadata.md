@@ -1,6 +1,6 @@
 ---
-title: 管理數位資產的中繼資料
-description: 瞭解中繼資料的型別及方式 [!DNL Adobe Experience Manager Assets] 協助管理資產的中繼資料，以更輕鬆地進行資產分類和組織。 [!DNL Experience Manager] 可讓您根據資產的中繼資料自動組織和處理資產。
+title: 管理数字资源的元数据
+description: 了解元数据的类型以及方法 [!DNL Adobe Experience Manager Assets] 帮助管理资源的元数据，以便更轻松地分类和组织资源。 [!DNL Experience Manager] 使根据资产的元数据自动组织和处理资产成为可能。
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Metadata
@@ -13,42 +13,42 @@ ht-degree: 9%
 
 ---
 
-# 管理數位資產的中繼資料 {#managing-metadata-for-digital-assets}
+# 管理数字资源的元数据 {#managing-metadata-for-digital-assets}
 
-| 版本 | 文章連結 |
+| 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
-[!DNL Adobe Experience Manager Assets] 保留每個資產的中繼資料。 它可讓您更輕鬆地分類及組織資產，並協助尋找特定資產的人。 能夠自上傳至的檔案擷取中繼資料 [!DNL Experience Manager Assets]，中繼資料管理與創意工作流程整合。 有了使用資產保留和管理中繼資料的功能，您可以根據資產的中繼資料自動組織和處理資產。
+[!DNL Adobe Experience Manager Assets] 保留每个资源的元数据。 它允许更轻松地分类和组织资产，并且有助于寻找特定资产的人员。 能够从上传到的文件中提取元数据 [!DNL Experience Manager Assets]，元数据管理与创作工作流集成。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
 -->
 
-## 為什麼我們需要中繼資料 {#why-metadata}
+## 为什么我们需要元数据 {#why-metadata}
 
-中繼資料是指與資料有關的資料。 就此而言，資料是指您的數位資產，例如影像。 元数据对于高效的资源管理非常关键。
+元数据是指有关数据的数据。 在这方面，数据是指您的数字资产，例如图像。 元数据对于高效的资源管理非常关键。
 
-中繼資料是資產所有可用資料的集合，但不一定包含在該影像中。 中繼資料的一些範例包括：
+元数据是某个资源的所有可用数据的集合，但不一定包含在该图像中。 元数据的一些示例包括：
 
-* 資產名稱。
-* 上次修改的時間和日期。
-* 儲存於存放庫中的資產大小。
-* 包含它的資料夾名稱。
-* 相關資產或套用的標籤。
+* 资源的名称。
+* 上次修改的时间和日期。
+* 资源存储在存储库中的大小。
+* 包含它的文件夹的名称。
+* 相关资源或应用的标记。
 
-以上是基本的中繼資料屬性，可 [!DNL Experience Manager] 可管理資產，讓使用者檢視所有資產。 例如，嘗試探索最近新增或修改的資產時，依上次修改日期排序資產會很有用。
+以上是基本元数据属性，这些属性 [!DNL Experience Manager] 可以管理资产，这允许用户查看所有资产。 例如，在尝试发现最近添加或修改的资产时，按上次修改日期对资产排序很有用。
 
-您可以新增更多高階資料至數位資產，例如：
+您可以向数字资产添加更多高级数据，例如：
 
-* 資產型別（是影像、視訊、音訊剪輯或檔案？）。
-* 資產擁有者。
-* 資產標題。
-* 資產說明。
-* 指派給資產的標籤。
+* 资源类型（是图像、视频、音频剪辑还是文档？）。
+* 资产的所有者。
+* 资源的标题。
+* 资源的描述。
+* 分配给资源的标记。
 
-更多中繼資料可協助您進一步將資產分類，並隨著數位資訊量成長，提供相關實用資訊。 您可以僅根據檔案名稱管理數百個檔案。 但是，这种方法不具备扩展性。隨著相關人數和管理的資產數量增加，此方法尚嫌不足。
+更多元数据可帮助您进一步对资源进行分类，并随着数字信息量的增长而非常有用。 可以仅根据文件名管理数百个文件。 但是，这种方法不具备扩展性。当涉及的人数以及管理的资产数量增加时，这种方法很快就会出现不足。
 
 随着元数据的增加，数字资源的价值会随之增长，因为资源会变得：
 
@@ -56,116 +56,116 @@ ht-degree: 9%
 * 更易于管理 - 您可以轻松地找到具有一组相同属性的资源并对其应用更改。
 * 完整 - 元数据越多，资源就能携带更多信息和具体情境。
 
-基於這些原因， [!DNL Assets] 提供建立、管理和交換數位資產中繼資料的正確方法。
+出于这些原因， [!DNL Assets] 为您提供创建、管理和交换数字资源元数据的正确方法。
 
-## 中繼資料型別 {#types-of-metadata}
+## 元数据类型 {#types-of-metadata}
 
-兩種基本中繼資料型別為技術中繼資料和描述性中繼資料。
+元数据的两种基本类型是技术元数据和描述性元数据。
 
-技術中繼資料適用於處理數位資產的軟體應用程式，且不應手動維護。 [!DNL Experience Manager Assets] 和其他軟體會自動決定技術中繼資料，而中繼資料可能會在資產修改時變更。 資產可用的技術中繼資料主要取決於資產的檔案型別。 技術中繼資料的一些範例包括：
+技术元数据对于处理数字资产的软件应用程序非常有用，不应手动维护。 [!DNL Experience Manager Assets] 和其他软件会自动确定技术元数据，元数据可能会在资产被修改时发生变化。 资源的可用技术元数据在很大程度上取决于资源的文件类型。 技术元数据的一些示例包括：
 
-* 檔案的大小。
-* 影像的Dimension（高度和寬度）。
-* 音訊或視訊檔案的位元速率。
-* 影像的解析度（詳細程度）。
+* 文件的大小。
+* 图像的Dimension（高度和宽度）。
+* 音频或视频文件的比特率。
+* 图像的分辨率（细节级别）。
 
-描述性中繼資料是和應用程式網域相關的中繼資料，例如資產來自的業務。 無法自動判斷描述性中繼資料。 它是手動或半自動建立的。 例如，啟用GPS的相機可以自動追蹤經緯度，並在影像中新增地理標籤。
+描述性元数据是与应用程序域相关的元数据，例如资产来自的业务。 无法自动确定描述性元数据。 它是手动或半自动创建的。 例如，启用了GPS的相机可以自动跟踪纬度和经度，并在图像中添加地理标签。
 
-手動建立描述性中繼資料資訊的成本很高。 因此，建立標準是為了簡化軟體系統和組織之間的中繼資料交換。 [!DNL Experience Manager Assets] 支援中繼資料管理的所有相關標準。
+手动创建描述性元数据信息的成本很高。 因此，制定了各种标准来简化软件系统和组织之间的元数据交换。 [!DNL Experience Manager Assets] 支持元数据管理的所有相关标准。
 
-## 中繼資料和上次修改 {#last-modification}
+## 元数据和上次修改 {#last-modification}
 
-資產的上次修改日期反映上次修改資產原始檔案的時間。 因此，修改日期和使用者只會在以下情況變更：
+资源的上次修改日期反映上次修改资源原始文件的时间。 因此，修改日期和用户仅在以下情况下发生更改：
 
-* 資產的新版本已上傳
-* 已重新處理資產
+* 上传资源的新版本
+* 重新处理资产
 
-上次修改日期和使用者不會變更：
+上次修改日期和用户未更改：
 
-* 資產移動或重新命名時
-* 將資產簽出、簽入或版本時
-* 資產發佈或取消發佈時
-* 關於中繼資料更新
-* 參考或集合更新
+* 移动或重命名资产时
+* 当资产被签出、签入或版本时
+* 发布或取消发布资产时
+* 关于元数据更新
+* 引用或收藏集更新
 
-## 編碼標準 {#encoding-standards}
+## 编码标准 {#encoding-standards}
 
-有多種方式可以將中繼資料內嵌在檔案中。 支援一系列編碼標準：
+可通过多种方式将元数据嵌入文件。 支持一系列编码标准：
 
-* XMP：使用者 [!DNL Assets] 將擷取的中繼資料儲存在存放庫中。
-* ID3：適用於音訊和視訊檔案。
-* Exif：適用於影像檔案。
-* 其他/舊版：從 [!DNL Microsoft Word]， [!DNL PowerPoint]， [!DNL Excel]、等等。
+* XMP：使用者 [!DNL Assets] 将提取的元数据存储在存储库中。
+* ID3：用于音频和视频文件。
+* Exif：用于图像文件。
+* 其他/旧版：来自 [!DNL Microsoft Word]， [!DNL PowerPoint]， [!DNL Excel]，等等。
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)是一種開放標準，用於 [!DNL Experience Manager Assets] 用於所有中繼資料管理。 此標準提供可嵌入至所有檔案格式的通用中繼資料編碼。 Adobe和其他公司支援XMP標準，因為它提供豐富的內容模型。 XMP Standard的使用者和 [!DNL Experience Manager Assets] 擁有強大的平台作為建置基礎。 如需詳細資訊，請參閱 [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP)是一个开放标准，用于 [!DNL Experience Manager Assets] 用于所有元数据管理。 标准提供了可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司支持XMP标准，因为它提供了丰富的内容模型。 XMP标准的用户和 [!DNL Experience Manager Assets] 拥有强大的平台进行构建。 有关更多信息，请参阅 [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
-當您在電腦或可攜式MP3播放器上播放數位音訊檔案時，會顯示儲存在這些ID3標籤中的資料。
+在计算机上或便携式MP3播放器上回放数字音频文件时，会显示存储在这些ID3标记中的数据。
 
-ID3標籤是專為MP3檔案格式所設計。 格式的其他資訊：
+ID3标记专为MP3文件格式而设计。 有关格式的其他信息：
 
-* ID3標籤適用於MP3和mp3PRO檔案。
-* WAV沒有標籤。
-* WMA擁有不允許開放原始碼實作的專屬標籤。
-* Ogg Vorbis會使用內嵌於Ogg容器中的Xiph註解。
-* AAC使用專屬的標籤格式。
+* ID3标记适用于MP3和mp3PRO文件。
+* WAV没有标记。
+* WMA具有不允许开源实施的专有标记。
+* Ogg Vorbis使用嵌入到Ogg容器中的Xiph注释。
+* AAC使用专有标记格式。
 
 ### Exif {#exif}
 
-可交換影像檔案格式(Exif)是數位攝影中最常用的中繼資料格式。 它提供一種以許多檔案格式(例如JPEG、TIFF、RIFF和WAV)內嵌中繼資料屬性的固定辭彙的方法。 Exif會將中繼資料儲存為中繼資料名稱和中繼資料值的配對。 這些中繼資料名稱 — 值組也稱為標籤，切勿與中的標籤混淆 [!DNL Experience Manager]. 現代數位相機可建立Exif中繼資料，現代圖形軟體也支援此功能。 Exif格式是中繼資料管理（尤其是影像）的最低通用分母。
+可交换图像文件格式(Exif)是数字摄影中最常用的元数据格式。 它提供了一种以多种文件格式(如JPEG、TIFF、RIFF和WAV)嵌入元数据属性的固定词汇的方法。 Exif将元数据存储为元数据名称和元数据值的对。 这些元数据名称 — 值对也称为标记，切勿与中的标记混淆。 [!DNL Experience Manager]. 现代数码相机创建Exif元数据，现代图形软件支持该元数据。 Exif格式是元数据管理（尤其是图像）的最低通用分母。
 
-Exif的一個主要限制是一些常用的影像檔案格式(例如BMP、GIF或PNG)不支援它。
+Exif的一个主要限制是一些流行的图像文件格式(如BMP、GIF或PNG)不支持它。
 
-Exif定義的中繼資料欄位通常具有技術性質，在描述性中繼資料管理中的用途有限。 基於此原因， [!DNL Experience Manager Assets] 提供Exif屬性對映至 [常見中繼資料結構](metadata-schemas.md) 並進入XMP。
+由Exif定义的元数据字段通常具有技术性质，在描述性元数据管理中的用处有限。 出于这个原因， [!DNL Experience Manager Assets] 提供将Exif属性映射到 [通用元数据架构](metadata-schemas.md) 进入XMP。
 
-#### 其他中繼資料 {#other-metadata}
+#### 其他元数据 {#other-metadata}
 
-可從檔案嵌入的其他中繼資料包括 [!DNL Microsoft Word]， [!DNL PowerPoint]， [!DNL Excel]、等等。
+可从文件中嵌入的其他元数据包括 [!DNL Microsoft Word]， [!DNL PowerPoint]， [!DNL Excel]，等等。
 
-## 管理數位資產的中繼資料 {#manage-assets-metadata}
+## 管理数字资源的元数据 {#manage-assets-metadata}
 
-Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以便快速將常見的中繼資料變更大量傳播到資產。 使用 [!UICONTROL 屬性] 頁面以將中繼資料屬性變更為通用值，或新增或修改標籤。 若要自訂中繼資料「屬性」頁面，包括新增、修改、刪除中繼資料屬性，請使用結構描述編輯器。
+通过Enterprise Manager Assets，可以同时编辑多个资源的元数据，以便快速将常见的元数据更改批量传播到资源。 使用 [!UICONTROL 属性] 页面以将元数据属性更改为通用值或者添加或修改标记。 要自定义元数据属性页面（包括添加、修改和删除元数据属性），请使用架构编辑器。
 
 >[!NOTE]
 >
->大量編輯方法適用於資料夾或集合中可用的資產。 對於跨資料夾可用的資產或符合共同條件的資產，可以 [搜尋後大量更新中繼資料](/help/assets/search-assets.md#metadata-updates).
+>批量编辑方法适用于文件夹或收藏集中可用的资产。 对于跨文件夹可用的资源或符合通用条件的资源，可以 [搜索后批量更新元数据](/help/assets/search-assets.md#metadata-updates).
 
-1. 導覽至您要編輯的資產位置。
-1. 選取您要編輯其一般屬性的資產。
-1. 在工具列中點選/按一下 **[!UICONTROL 屬性]** 以開啟 [!UICONTROL 屬性] 頁面。
-
-   >[!NOTE]
-   >
-   >當您選取多個資產時，系統會為資產選取最低的通用父項表單。 換言之， [!UICONTROL 屬性] 頁面只會顯示跨以下專案通用的中繼資料欄位： [!UICONTROL 屬性] 所有個別資產的頁面。
-
-1. 修改各種標籤下所選資產的中繼資料屬性。
-1. 若要檢視特定資產的中繼資料編輯器，請取消選取清單中剩餘的資產。 中繼資料編輯器欄位會填入特定資產的中繼資料。
+1. 导航到要编辑的资源位置。
+1. 选择要编辑其公共属性的资源。
+1. 在工具栏中，点按/单击 **[!UICONTROL 属性]** 以打开 [!UICONTROL 属性] 页面。
 
    >[!NOTE]
    >
-   >* 在 [!UICONTROL 屬性] 頁面，您可以取消選取範圍以從資產清單中移除資產。 資產清單預設會選取所有資產。 您從清單中移除的資產中繼資料不會更新。
-   >* 在資產清單頂端，選取附近的核取方塊 **[!UICONTROL 標題]** 以在選取資產和清除清單之間切換。
+   >选择多个资源时，将为资源选择最低的常用父表单。 换句话说， [!UICONTROL 属性] 页面仅显示跨以下项公用的元数据字段： [!UICONTROL 属性] 所有单个资产的页面。
+
+1. 在各种选项卡下修改所选资源的元数据属性。
+1. 要查看特定资源的元数据编辑器，请取消选择列表中剩余的资源。 使用特定资源的元数据填充元数据编辑器字段。
+
+   >[!NOTE]
+   >
+   >* 在 [!UICONTROL 属性] 页面上，您可以通过取消选择来从资源列表中删除资源。 默认情况下，资源列表会选择所有资源。 您从列表中删除的资产元数据不会更新。
+   >* 在资源列表的顶部，选中附近的复选框 **[!UICONTROL 标题]** ，可在选择资源和清除列表之间切换。
 
 
-1. 若要為資產選取不同的中繼資料結構，請點選/按一下 **[!UICONTROL 設定]** 從工具列中，並選取所需的結構描述。 保存更改。
+1. 要为资产选择其他元数据架构，请点按/单击 **[!UICONTROL 设置]** 从工具栏中，然后选择所需的架构。 保存更改。
 1. 要将新元数据与现有元数据追加到包含多个值的字段中，请选择&#x200B;**[!UICONTROL 追加模式]**。如果不选中此选项，则新元数据将替换字段中的现有元数据。点按／单击 **[!UICONTROL 提交]**。
 
    >[!CAUTION]
    >
    >对于单值字段，即使选择&#x200B;**[!UICONTROL 追加模式]**，新元数据也不会追加到字段中的现有值中。
 
-## 使用處理設定檔的自訂中繼資料 {#metadata-compute-service}
+## 使用处理配置文件的自定义元数据 {#metadata-compute-service}
 
-Assets as a [!DNL Cloud Service] 可使用雲端原生服務為資產產生自訂中繼資料。 設定處理設定檔以產生自訂中繼資料。 另請參閱 [如何使用處理設定檔](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets as a [!DNL Cloud Service] 可以使用云原生服务为资源生成自定义元数据。 配置处理配置文件以生成自定义元数据。 参见 [如何使用处理配置文件](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
-![處理設定檔中的中繼資料轉譯](assets/processing-profile-metadata.png)
+![处理配置文件中的元数据演绎版](assets/processing-profile-metadata.png)
 
 >[!TIP]
 >
->一个文件夹只能应用一个处理配置文件。若要將多個處理套用至資料夾中的資產，請將更多選項新增至單一處理設定檔。 例如，單一設定檔可以產生轉譯、轉碼資產、產生自訂中繼資料等。 您可以對每個任務套用MIME型別篩選器，以便為所需的檔案格式觸發適當的任務。
+>一个文件夹只能应用一个处理配置文件。要将多个处理应用于文件夹中的资产，请将多个选项添加到单个处理配置文件。 例如，单个配置文件可以生成演绎版、对资源进行转码、生成自定义元数据等。 您可以为每个任务应用MIME类型过滤器，以便根据所需的文件格式触发相应的任务。
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
@@ -178,75 +178,75 @@ To prevent DOS-like situation, [!DNL Experience Manager] limits the number of pa
 To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
 -->
 
-## 中繼資料結構 {#metadata-schemata}
+## 元数据架构 {#metadata-schemata}
 
-中繼資料結構是預先定義的中繼資料屬性定義集，可用於各種應用程式。 屬性一律與資產相關聯，這表示屬性與資源「關於」。
+元数据架构是元数据属性定义的预定义集，可用于各种应用程序。 属性始终与资源关联，这意味着属性与资源是“关于”的。
 
-如果沒有符合您需求的中繼資料結構，您也可以自行設計中繼資料結構。 不要複製現有資訊。 在組織內，分隔結構描述可讓您更輕鬆地共用中繼資料。 [!DNL Experience Manager] 為您提供最受歡迎中繼資料結構的預設清單。 清單可協助您快速啟動中繼資料策略，並快速挑選所需的中繼資料屬性。
+如果不存在符合您需求的元数据架构，您还可以设计自己的元数据架构。 不要复制现有信息。 在组织内，分隔架构使元数据共享更加容易。 [!DNL Experience Manager] 为您提供最受欢迎的元数据架构的默认列表。 列表可帮助您快速启动元数据策略并快速选择所需的元数据属性。
 
-支援的中繼資料結構描述如下所列。
+下面列出了支持的元数据架构。
 
-### 標準中繼資料 {#standard-metadata}
+### 标准元数据 {#standard-metadata}
 
-* DC - [!DNL Dublin Core] 是一組重要且廣泛使用的中繼資料。
-* DICOM — 醫學的數位影像與通訊。
-* `Iptc4xmpCore` 和 `iptc4xmpExt` - International Press Communications Standard包含許多特定主題的中繼資料。
-* RDF — 資源說明架構 — 用於一般語意Web中繼資料。
+* DC - [!DNL Dublin Core] 是一组重要且广泛使用的元数据。
+* DICOM — 医学数字成像和通信。
+* `Iptc4xmpCore` 和 `iptc4xmpExt`  — 国际新闻传播标准包含许多特定主题的元数据。
+* RDF — 资源描述框架 — 用于通用语义Web元数据。
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpBJ`  — 基本工作票證設定。
+* `xmpBJ`  — 基本作业单据。
 
-### 應用程式專屬中繼資料 {#application-specific-metadata}
+### 特定于应用程序的元数据 {#application-specific-metadata}
 
-應用程式專屬的中繼資料包括技術和描述性中繼資料。 如果您使用這類中繼資料，其他應用程式可能無法使用中繼資料。 例如，不同的影像演算應用程式可能無法存取 [!DNL Adobe Photoshop] 中繼資料。 您可以建立工作流程步驟，將應用程式特定屬性變更為標準屬性。
+特定于应用程序的元数据包括技术和描述性元数据。 如果您使用此类元数据，则其他应用程序可能无法使用该元数据。 例如，其他图像渲染应用程序可能无法访问 [!DNL Adobe Photoshop] 元数据。 您可以创建工作流步骤，以将特定于应用程序的属性更改为标准属性。
 
-* ACDSee — 由管理的中繼資料 [!DNL ACDSee] 程式。 另請參閱 [www.acdsee.com/](https://www.acdsee.com/).
-* 相簿 —  [!DNL Adobe Photoshop Album].
+* ACDSee — 由管理的元数据 [!DNL ACDSee] 程序。 参见 [www.acdsee.com/](https://www.acdsee.com/).
+* 相册 —  [!DNL Adobe Photoshop Album].
 * CQ — 使用者 [!DNL Experience Manager Assets].
 * DAM — 使用者 [!DNL Experience Manager Assets].
-* DEX - [Optima SC說明總管](https://www.optimasc.com/products/dex/index.html) 是Windows作業系統的中繼資料和檔案管理工具集合。
+* DEX - [Optima SC说明资源管理器](https://www.optimasc.com/products/dex/index.html) 是用于Windows操作系统的元数据和文件管理的工具集合。
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
-* MicrosoftPhoto和MP - Microsoft像片。
+* MicrosoftPhoto和MP - Microsoft照片。
 * PDF和PDF/X。
 * Photoshop和psAux - [!DNL Adobe Photoshop].
 
-### Digital Rights Management中繼資料 {#digital-rights-management-metadata}
+### Digital Rights Management元数据 {#digital-rights-management-metadata}
 
 * 抄送 - [!DNL Creative Commons].
 * [!DNL XMPRights]。
-* 加 —  [圖片授權通用系統](https://www.useplus.com).
-* 稜鏡 —  [發佈產業標準中繼資料的需求](https://www.idealliance.org/prism-metadata).
-* PRL — 稜鏡許可權語言。
-* PUR - PRISM使用許可權。
-* `xmpPlus` - PLUS與XMP整合。
+* 加 —  [图片授权通用系统](https://www.useplus.com).
+* 棱镜 —  [发布行业标准元数据的要求](https://www.idealliance.org/prism-metadata).
+* PRL — 棱镜权限语言。
+* PUR - PRISM使用权限。
+* `xmpPlus` - PLUS与XMP的集成。
 
-### 攝影專屬中繼資料 {#photography-specific-metadata}
+### 特定于摄影的元数据 {#photography-specific-metadata}
 
-* Exif — 攝影機的技術資訊，包括GPS位置。
-* CRS - [!DNL Camera Raw] 結構描述。
+* Exif — 相机中的技术信息，包括GPS位置。
+* CRS - [!DNL Camera Raw] 架构。
 * `iptc4xmpCore` 和 `iptc4xmpExt`.
-* TIFF — 影像中繼資料(不適用於TIFF影像)。
+* TIFF — 图像元数据(不适用于TIFF图像)。
 
-### 列印特定中繼資料 {#print-specific-metadata}
+### 打印特定的元数据 {#print-specific-metadata}
 
-* PDF與PDF/X - Adobe PDF和協力廠商應用程式。
-* 稜鏡 —  [發佈產業標準中繼資料的需求](https://www.idealliance.org/prism-metadata).
+* PDF和PDF/X - Adobe PDF和第三方应用程序。
+* 棱镜 —  [发布行业标准元数据的要求](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG`  — 分頁文字的XMP中繼資料。
+* `xmpPG`  — 分页文本的XMP元数据。
 
-### 多媒體專屬中繼資料 {#multimedia-specific-metadata}
+### 特定于多媒体的元数据 {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
-* `xmpMM`  — 媒體管理。
+* `xmpMM`  — 介质管理。
 
-## 中繼資料導向的工作流程 {#metadata-driven-workflows}
+## 元数据驱动的工作流 {#metadata-driven-workflows}
 
-建立中繼資料導向的工作流程可協助您自動化某些流程，進而提高效率。 在中繼資料導向的工作流程中，工作流程管理系統會讀取工作流程，並因此執行一些預先定義的動作。 例如，使用中繼資料導向工作流程的部分方式：
+创建元数据驱动的工作流可帮助您自动化某些流程，从而提高效率。 在元数据驱动的工作流中，工作流管理系统读取工作流，从而执行一些预定义操作。 例如，可以使用元数据驱动工作流的某些方法：
 
-* 工作流程可檢查影像是否有標題。 如果不適用，系統會通知您新增標題。
-* 工作流程可檢查資產上的版權宣告是否允許發佈。 因此，系統會將資產傳送至其中一個伺服器。
-* 工作流程可以檢查沒有預先定義、強制中繼資料的資產，或具有 *無效* 中繼資料。
+* 工作流可以检查图像是否具有标题。 如果不包含，系统会通知添加标题。
+* 工作流可以检查资产上的版权声明是否允许分发。 因此，系统会将资产发送到一台服务器或另一台服务器。
+* 工作流可以检查没有预定义的强制性元数据的资产，或者检查具有以下特征的资产： *无效* 元数据。
 
 **另请参阅**
 
@@ -265,5 +265,5 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 >[!MORELIKETHIS]
 >
 >* [XMP 元数据](xmp-metadata.md)
->* [如何編輯或新增中繼資料](meta-edit.md)
+>* [如何编辑或添加元数据](meta-edit.md)
 

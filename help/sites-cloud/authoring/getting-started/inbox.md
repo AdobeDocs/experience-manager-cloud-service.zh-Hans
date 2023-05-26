@@ -1,6 +1,6 @@
 ---
 title: 您的收件箱
-description: 使用收件匣管理您的工作
+description: 使用收件箱管理任务
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
@@ -21,28 +21,28 @@ ht-degree: 76%
       * 这些项目是工作流&#x200B;**参与者**&#x200B;步骤的产物。
    * 失败项目，允许管理员重试失败的步骤
 
-您會在自己的收件匣中收到這些通知，您可以在其中檢視通知並採取行動。
+您会在自己的收件箱中收到这些通知，您可以在其中查看通知并执行操作。
 
 >[!NOTE]
 >
->如需有關料號型態的進一步資訊，另請參閱：
+>有关物料类型的详细信息，另请参阅：
 >
 >* [项目](/help/sites-cloud/authoring/projects/overview.md)
->* [專案 — 使用任務](/help/sites-cloud/authoring/projects/tasks.md)
+>* [项目 — 使用任务](/help/sites-cloud/authoring/projects/tasks.md)
 >* [工作流](/help/sites-cloud/authoring/workflows/overview.md)
 
 
 ## 标题中的收件箱 {#inbox-in-the-header}
 
-從任何控制檯中，收件匣中目前的專案數量會顯示在標題中。 指標也可以開啟，以提供對需要動作的頁面的快速存取權或收件匣的存取權：
+在任意控制台中，收件箱中的当前项目数会显示在标题中。 还可以打开指示器以提供对需要操作的页面的快速访问或对收件箱的访问：
 
 ![标题中的收件箱概述](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
 >
->某些動作也會顯示於 [適當資源的卡片檢視](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
+>某些操作也将显示在 [相应资源的卡片视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## 開啟收件匣 {#opening-the-inbox}
+## 打开收件箱 {#opening-the-inbox}
 
 打开 AEM 通知收件箱：
 
@@ -82,13 +82,13 @@ ht-degree: 76%
 
 ### 收件箱 – 视图设置 {#inbox-view-settings}
 
-對於這兩個檢視（「清單」和「行事曆」），您可以定義設定：
+对于这两个视图（“列表”和“日历”），您可以定义设置：
 
 * **日历视图**
 
-   對象 **行事曆檢視** 您可以設定：
+   对象 **日历视图** 您可以配置：
 
-   * **分組依據**
+   * **分组方式**
    * **计划**&#x200B;或&#x200B;**无**
    * **卡片大小**
 
@@ -96,9 +96,9 @@ ht-degree: 76%
 
 * **列表视图**
 
-   對象 **清單檢視** 您可以設定排序機制：
+   对象 **列表视图** 您可以配置排序机制：
 
-   * **排序依據**
+   * **排序方式**
    * **排序顺序**
 
    ![收件箱列表视图设置](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
@@ -113,7 +113,7 @@ ht-degree: 76%
 >
 >尽管可以选择多个项目，但一次只能对一个项目执行操作。
 
-1. 若要對專案執行動作，請選取適當專案的縮圖。 適用於該專案的動作圖示將顯示在工具列中：
+1. 要对项目执行操作，请选择相应项目的缩略图。 适用于该项目的操作的图标将显示在工具栏中：
 
    ![选择收件箱项目](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -134,7 +134,7 @@ ht-degree: 76%
    >
    >有关更多信息，请参阅：
    >
-   >* 工作流程專案 —  [參與工作流程](/help/sites-cloud/authoring/workflows/participating.md)
+   >* 工作流项目 —  [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. 根据所选项目，将会启动相应的操作；例如：
@@ -156,9 +156,9 @@ ht-degree: 76%
 
 ## 创建任务 {#creating-a-task}
 
-您可以從收件匣建立任務：
+在收件箱中，您可以创建任务：
 
-1. 選取 **建立**，則 **任務**.
+1. 选择 **创建**，则 **任务**.
 1. 填写&#x200B;**基本**&#x200B;和&#x200B;**高级**&#x200B;选项卡中的必需字段（只有&#x200B;**标题**&#x200B;是必填项，所有其他字段都是选填项）：
 
    * **基本**:
@@ -180,13 +180,13 @@ ht-degree: 76%
 
    ![收件箱添加任务高级选项](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
-1. 選取 **提交**.
+1. 选择 **提交**.
 
 ## 创建项目 {#creating-a-project}
 
-您可以針對特定工作建立 [專案](/help/sites-cloud/authoring/projects/overview.md) 根據該任務：
+对于某些任务，您可以创建 [项目](/help/sites-cloud/authoring/projects/overview.md) 根据该任务：
 
-1. 點選/按一下縮圖，選取適當的工作。
+1. 通过点按/单击缩略图，选择相应的任务。
 
    >[!NOTE]
    >
@@ -195,8 +195,8 @@ ht-degree: 76%
    >不能使用工作项（来自工作流）创建项目。
 
 1. 从工具栏中选择“**创建项目**”以打开向导。
-1. 選取適當的範本，然後 **下一個**.
-1. 指定必要的屬性：
+1. 选择相应的模板，然后 **下一个**.
+1. 指定所需的属性：
 
    * **基本**
 
@@ -204,15 +204,15 @@ ht-degree: 76%
       * **描述**
       * **开始日期**
       * **到期日期**
-      * **使用者** 和角色
+      * **用户** 和角色
    * **高级**
 
       * **名称**
    >[!NOTE]
    >
-   >另請參閱 [建立專案](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) 以取得完整資訊。
+   >参见 [创建项目](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) 以获取完整信息。
 
-1. 選取 **建立** 以確認動作。
+1. 选择 **创建** 以确认操作。
 
 ## 筛选 AEM 收件箱中的项目 {#filtering-items-in-the-aem-inbox}
 

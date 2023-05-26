@@ -1,7 +1,7 @@
 ---
-title: 參考主題
+title: 引用主题
 seo-title: Reference Themes
-description: AEM Forms提供最適化表單主題，您可以從Software Distribution取得，並使用這些主題來設定表單的樣式。
+description: AEM Forms提供了自适应表单主题，您可以从Software Distribution获取这些主题，并使用这些主题来设置表单的样式。
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
@@ -12,35 +12,35 @@ ht-degree: 3%
 
 ---
 
-# Formsas a Cloud Service參考資產 {#reference-themes}
+# Formsas a Cloud Service的参考资源 {#reference-themes}
 
-您可以安裝 [參考資產套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助於快速開始和加速您的Adaptive Forms開發。 您可以使用 [封裝管理員](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 以將此套件部署至您的AEM Formsas a Cloud Service環境。
+通过安装 [引用资源包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助于快速启动和加速自适应Forms开发。 您可以使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 以将此包部署到您的AEM Formsas a Cloud Service环境。
 
-套件中包含的參考資產包括：
+该资源包中包含的参考资源包括：
 
 ## 主题 {#themes}
 
-[主題](/help/forms/themes.md) 讓您無須深入瞭解CSS即可設定表單樣式。 包含下列主題：
+[主题](/help/forms/themes.md) 让您能够在不了解CSS的情况下为表单设置样式。 包括以下主题：
 
 * Beryl
-* 寧靜
-* Ultraminary
+* 宁静
+* Ultramarine
 * 城市
 * Canva
 
-每個主題都包含獨特且優雅的樣式，可用來為使用者建立愉快的最適化表單。 它包含面板、文字方塊、數值方塊、選項按鈕、表格和切換器等選擇器的獨特樣式。 這些主題中的樣式是根據需求。 例如，在特定案例中，您需要使用簡潔字型的極簡主題。 城市主題可讓您達到這個效果。
+每个主题都包含独特而优雅的样式，可用于为用户创建令人愉悦的自适应表单。 它包含面板、文本框、数字框、单选按钮、表格和开关等选择器的独特样式。 这些主题中的样式根据需求而定。 例如，在特定场景中，您需要使用简洁字体的极简主题。 都市化主题让您拥有这样的外观。
 
-![參考主題](/help/forms/assets/ref-themes.png)
+![引用主题](/help/forms/assets/ref-themes.png)
 
-此套件中包含的主題具有回應性，這些主題中的樣式是為行動裝置和案頭顯示器定義的。 各種裝置上的大部分現代化瀏覽器都能輕鬆轉譯套用這些主題之一的表單。
+此包中包含的主题是响应式的，并且这些主题中的样式是为移动和桌面显示定义的。 各种设备上的大多数现代浏览器都可以轻松渲染应用了这些主题之一的表单。
 
-如需安裝套件的詳細資訊，請參閱 [如何使用套件](/help/implementing/developing/tools/package-manager.md).
+有关安装软件包的更多信息，请参阅 [如何使用包](/help/implementing/developing/tools/package-manager.md).
 
 ### Beryl {#beryl}
 
-We.Gov最適化表單使用Beryl主題，並強調使用背景影像、透明度及大型平面圖示。 在下方熒幕擷圖中，您可以看到Beryl佈景主題的外觀，以及如何增強表單的樣式。
+We.Gov自适应表单使用Beryl主题，强调使用背景图像、透明度以及大平面图标。 在下面的屏幕快照中，您可以看到Beryl主题的外观以及它如何增强表单的样式。
 
-![柏瑞爾主題](/help/forms/assets/beryl.png)
+![Beryl主题](/help/forms/assets/beryl.png)
 
 <!--[Click to enlarge
 
@@ -73,26 +73,26 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 ![Liberty theme](/help/forms/assets/liberty.png) -->
 <!--[Click to enlarge](assets/liberty-1.png)-->
 
-### 寧靜 {#tranquil}
+### 宁静 {#tranquil}
 
-寧靜的主題提供寧靜色彩配置的光暗陰影，以反白顯示表單的不同元件。 例如，單選按鈕、面板和標籤會以不同的綠色陰影顯示。
+宁静主题提供宁静颜色方案的浅色和深色阴影，以突出显示表单的不同组件。 例如，单选按钮、面板和选项卡具有不同的绿色阴影。
 
-![寧靜主題](/help/forms/assets/tranquil.png)
+![宁静主题](/help/forms/assets/tranquil.png)
 
 <!--[Click to enlarge](assets/tranquil-1.png)-->
 
-### Ultraminary {#ultramarine}
+### Ultramarine {#ultramarine}
 
-超海洋主題使用深藍色陰影來反白顯示標籤、面板、文字方塊和按鈕等元件。
+超海洋主题使用深蓝色阴影突出显示选项卡、面板、文本框和按钮等组件。
 
-![超海洋主題](/help/forms/assets/ultramarine.png)
+![超海洋主题](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
 ### 城市 {#urbane}
 
-城市佈景主題強調您的外型應具有極簡主義與功能外觀。 當您將Urbane主題套用至表單時，您可以看到元件是平坦的。 這些面板的外框很細，可以打造現代外觀。
+都市化主题强调您形态的简约和功能外观。 将Urbane主题应用于表单时，您可以看到组件是平面的。 这些面板轮廓细腻，外观新颖。
 
-![都市佈景主題](/help/forms/assets/urbane.png)
+![城市主题](/help/forms/assets/urbane.png)
 <!--[Click to enlarge](assets/urbane-1.png)-->
 
 <!-- ## U.S. Web Design Standards {#u-s-web-design-standards}
@@ -105,28 +105,28 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ## 模板
 
-範本可讓您拖放元件以定義最適化表單的初始結構。 包括下列資產：
+通过模板，您可以拖放组件以定义自适应表单的初始结构。 包括以下资产：
 
 ### 基本 {#basic}
 
-基本範本可協助您快速建立登錄檔單。
+基本模板可帮助您快速创建注册表单。
 
-![基本主題](/help/forms/assets/exec.png)
+![基本主题](/help/forms/assets/exec.png)
 
 ### 空白 {#blank}
 
-基本範本提供空白畫布，供您為組織的調適型表單建立初始結構。
+基本模板提供了一个空画布，供您为组织的自适应表单创建初始结构。
 
 ## 表单数据模型
 
 ### Microsoft® Dynamics 365
 
-Microsoft Dynamics 365資料模型可協助您使用Microsoft Dynamics 365作為資料來源。 此外，也提供範例服務，可供您讀取、更新、刪除資料，以及將資料新增至Microsoft Dynamics 365資料來源。
+Microsoft Dynamics 365数据模型可帮助您使用Microsoft Dynamics 365作为数据源。 它还提供示例服务，用于读取、更新、删除数据以及将数据添加到Microsoft Dynamics 365数据源。
 
-![Microsoft® Dynamics 365表單資料模型](/help/forms/assets/microsoft-dynamic-fdm.png)
+![Microsoft® Dynamics 365表单数据模型](/help/forms/assets/microsoft-dynamic-fdm.png)
 
 ### Salesforce
 
-Salesforce資料模型可協助您使用Salesforce作為資料來源。 此外，還提供範例服務，可供您讀取、更新、刪除及新增資料至Salesforce。
+Salesforce数据模型可帮助您使用Salesforce作为数据源。 它还提供示例服务，用于读取、更新、删除数据以及将数据添加到Salesforce。
 
-![Salesforce表單資料模型](/help/forms/assets/salesforce-fdm.png)
+![Salesforce表单数据模型](/help/forms/assets/salesforce-fdm.png)

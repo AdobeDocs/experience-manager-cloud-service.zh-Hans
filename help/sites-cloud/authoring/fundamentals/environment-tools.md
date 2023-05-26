@@ -23,7 +23,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 编辑页面内容 {#editing-page-content}
 
-您可以使用頁面編輯器編輯頁面。 例如：
+您可以使用页面编辑器编辑页面。 例如：
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -31,9 +31,9 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 >[!NOTE]
 >
->第一次開啟頁面進行編輯時，系統會提供一系列投影片來導覽功能。
+>首次打开页面进行编辑时，一系列幻灯片将为您提供这些功能的概览。
 >
->您可以視需要略過導覽，並隨時透過選擇 **頁面資訊** 功能表。
+>您可以根据需要跳过导览，并通过从 **页面信息** 菜单。
 
 ## 访问帮助 {#accessing-help}
 
@@ -42,44 +42,44 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * [**页面信息**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)&#x200B;选择器，这将显示幻灯片介绍（在您第一次访问编辑器时显示）
 * 适用于特定组件的[配置](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)对话框（使用对话工具栏中的 ? 图标），其中将显示上下文相关帮助
 
-進一步的 [說明相關資源可從主控台取得](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
+更多 [控制台中提供了与帮助相关的资源](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
-## 元件瀏覽器 {#components-browser}
+## 组件浏览器 {#components-browser}
 
 组件是 AEM 内容的构建基块。您可以将多个组件放在一个页面上并配置其选项，以便使用 AEM 构建内容页面。
 
-元件瀏覽器會顯示可在目前頁面上使用的所有元件。 這些檔案可以拖曳至適當位置，然後編輯以新增您的內容。
+组件浏览器会显示可在当前页面上使用的所有组件。 可以将这些内容拖到相应的位置，然后进行编辑以添加您的内容。
 
 组件浏览器是侧面板中的一个选项卡（侧面板中还有[资产浏览器](#assets-browser)和[内容树](#content-tree)）。要打开（或关闭）侧面板，请使用工具栏左上方的图标：
 
 ![侧面板切换](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-當您開啟側面板時，它將從左側滑開(選取 **元件** 索引標籤（如有需要）。 開啟時，您可以瀏覽頁面可用的所有元件。
+打开侧面板时，它将从左侧滑开(选择 **组件** 选项卡（如有必要）。 打开时，您可以浏览页面可用的所有组件。
 
 实际外观和操作取决于您所使用的设备类型：
 
 * **移动设备（例如 iPad）**
 
-   元件瀏覽器會完整涵蓋正在編輯的頁面。
+   组件浏览器完全覆盖正在编辑的页面。
 
-   若要新增元件至頁面，請按住所需元件並向右移動，元件瀏覽器將關閉並重新顯示頁面 — 您可以在此處放置元件。
+   要将组件添加到页面，请按住所需的组件并将其向右移动，组件浏览器将关闭以再次显示页面 — 您可以在其中放置组件。
 
    ![移动设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
-* **案頭裝置**
+* **桌面设备**
 
-   元件瀏覽器會在視窗左側開啟。
+   组件浏览器将在窗口的左侧打开。
 
-   若要新增元件至頁面，請按一下所需元件，然後將其拖曳至所需位置。
+   要将组件添加到页面，请单击所需的组件，然后将其拖动到所需的位置。
 
    ![桌面设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   元件表示方式：
+   组件由表示
 
-   * 元件名稱
+   * 组件名称
    * 组件组（灰色）
-   * 圖示或縮寫
-      * 標準元件的圖示為單色。
+   * 图标或缩写
+      * 标准组件的图标是单色的。
       * 缩写始终由组件名称的前两个字符组成。
 
    从&#x200B;**组件**&#x200B;浏览器顶部的工具栏可以：
@@ -95,11 +95,11 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 >[!NOTE]
 >
->當寬度小於1024畫素時會偵測到行動裝置。 小型案頭視窗亦可如此。
+>当宽度小于1024像素时检测到移动设备。 对于小型桌面窗口也是如此。
 
 ## 资产浏览器 {#assets-browser}
 
-資產瀏覽器會顯示全部 [資產](/help/assets/home.md) 直接在您目前頁面上使用。
+资产浏览器会显示所有 [资产](/help/assets/home.md) 这些资源可在当前页面上直接使用。
 
 资产浏览器是侧面板中的一个选项卡，侧面板中还有[组件浏览器](#components-browser)和[内容树](#content-tree)。要打开或关闭侧面板，请使用工具栏左上角的图标：
 
@@ -109,44 +109,44 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![“资产浏览器”按钮](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
-當資產瀏覽器開啟時，您可以瀏覽頁面可用的所有資產。 如有需要，可使用無限捲動來展開清單。
+当资产浏览器打开时，您可以浏览页面可用的所有资产。 需要时可使用无限滚动来展开列表。
 
 ![资产浏览器](/help/sites-cloud/authoring/assets/assets-browser.png)
 
-若要將資產新增至頁面，請選取並拖曳至所需位置。 這可以是：
+要将资源添加到页面，请选择并拖动到所需的位置。 这可以是：
 
-* 適當型別的現有元件。
+* 相应类型的现有组件。
    * 例如，可以将图像类型的资产拖动到图像组件上。
 * 段落系统中用于创建相应类型新组件的[占位符](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder)。
    * 例如，可以将图像类型的资产拖动到段落系统中，以创建图像组件。
 
 >[!NOTE]
 >
->這適用於特定資產和元件型別。 另請參閱 [使用「資產瀏覽器」插入元件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) 以取得更多詳細資料。
+>这适用于特定资源和组件类型。 参见 [使用资产浏览器插入组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) 了解更多详细信息。
 
-從資產瀏覽器的頂端工具列，您可以依下列方式篩選資產：
+在资源浏览器的顶部工具栏中，您可以通过以下方式筛选资源：
 
 * 名称
 * 路径
 * 资产类型，如图像、视频、文档、段落、内容片段和体验片段
 * 资源特性，如方向和样式
-   * 僅適用於特定資產型別
+   * 仅适用于特定资源类型
 
 实际外观和操作取决于您所使用的设备类型：
 
 * **移动设备**
 
-   資產瀏覽器會完整涵蓋正在編輯的頁面。
+   资产浏览器会完全覆盖正在编辑的页面。
 
-   若要將資產新增至頁面，請觸控並按住所需資產，然後將其向右移動 — 資產瀏覽器將關閉並重新顯示頁面，您可以在其中將資產新增至所需元件。
+   要将资源添加到页面，请触控并按住所需资源，然后将其向右移动 — 资源浏览器将关闭以再次显示页面，您可以在其中将资源添加到所需组件。
 
    ![移动设备上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **桌面设备**
 
-   資產瀏覽器會在視窗左側開啟。
+   将在窗口左侧打开资产浏览器。
 
-   若要將資產新增至頁面，請按一下所需的資產，並將其拖曳至所需的元件或位置。
+   要将资源添加到页面，请单击所需的资源并将其拖动到所需的组件或位置。
 
    ![桌面设备上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
@@ -160,33 +160,33 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 内容树 {#content-tree}
 
-此 **內容樹狀結構** 提供階層中頁面所有元件的概觀，讓您一眼就能看到頁面的構成方式。
+此 **内容树** 以层次结构概览页面上的所有组件，以便您一眼就能看到页面的构成方式。
 
-內容樹狀結構是側面板中的標籤（連同元件和資產瀏覽器）。 要打开（或关闭）侧面板，请使用工具栏左上方的图标：
+内容树是侧面板中的一个选项卡（侧面板中还有组件和资产浏览器）。 要打开（或关闭）侧面板，请使用工具栏左上方的图标：
 
 ![“内容树”按钮](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-打开侧面板时，它将（从左侧）滑开。根据需要选择&#x200B;**内容树**&#x200B;选项卡。開啟時，您可以看到頁面或範本的樹狀檢視表示法，因此更容易瞭解其內容如何以階層方式建構。 此外，在複雜頁面上，它可讓您更輕鬆地在頁面的元件之間跳轉。
+打开侧面板时，它将（从左侧）滑开。根据需要选择&#x200B;**内容树**&#x200B;选项卡。打开时，您可以看到页面或模板的树视图表示形式，以便更容易了解其内容是如何按层次结构构建的。 此外，在复杂的页面上，还可以更轻松地在页面的组件之间跳转。
 
 ![内容树](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
-页面可以由许多相同类型的组件轻松组成，因此内容（组件）树会在组件类型名称（黑色）之后显示描述性文本（灰色）。描述性文字來自元件的常見屬性，例如標題或文字。
+页面可以由许多相同类型的组件轻松组成，因此内容（组件）树会在组件类型名称（黑色）之后显示描述性文本（灰色）。描述性文本来自组件的常见属性，如标题或文本。
 
-元件型別將以使用者語言顯示，而元件說明文字則來自頁面語言。
+组件类型将以用户语言显示，而组件描述文本则来自页面语言。
 
-按一下元件旁的>形箭號將會收合或展開該層級。
+单击组件旁边的V形标记将折叠或展开该级别。
 
 ![内容树 V 形扩展](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
 
-按一下元件即可在頁面編輯器中反白顯示該元件。 可用的動作取決於頁面狀態：
+单击组件将在页面编辑器中突出显示组件。 可用的操作将取决于页面状态：
 
-* 例如，基本頁面：
+* 例如，基本页面：
 
    ![突出显示的内容树](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
    基本页面的组件将具有常用选项。
 
-   如果您在樹狀結構中點選的元件可編輯，則名稱右側會出現扳手圖示。 按一下此圖示將直接啟動元件的編輯對話方塊。
+   如果单击树中的组件可编辑，则名称右侧将显示扳手图标。 单击此图标将直接启动组件的“编辑”对话框。
 
    ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -202,7 +202,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 引用 {#references}
 
-**引用** 顯示所選頁面的連線：
+**引用** 显示选定页面的连接：
 
 * Blueprint
 * 启动项
@@ -219,7 +219,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![引用详细信息](/help/sites-cloud/authoring/assets/references-detail.png)
 
-選取適當的參照型別以取得詳細資訊。 在某些情況下，當您選取特定參照時，可以使用進一步的動作，包括：
+有关详细信息，请选择相应的参照类型。 在某些情况下，当您选择特定引用时，还可以执行其他操作，包括：
 
 * **传入链接**，在选择特定链接后提供引用页面的页面列表，并可直接访问以&#x200B;**编辑**&#x200B;这些页面之一
 * 使用&#x200B;**引用**&#x200B;组件的借入和借出内容的实例，您可以从此处导航至正在引用/引用的页面
@@ -258,17 +258,17 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * [帮助](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [提升启动项](/help/sites-cloud/authoring/launches/promoting.md)（如果该页面是启动项）
 
-此外， **頁面資訊** 可讓您在適當時存取analytics和建議。
+此外， **页面信息** 在适当的时候，可以提供对analytics和推荐的访问权限。
 
-## 頁面模式 {#page-modes}
+## 页面模式 {#page-modes}
 
-編輯頁面時，有多種模式可允許不同的動作：
+在编辑页面时，有多种模式允许不同的操作：
 
-* [編輯](/help/sites-cloud/authoring/fundamentals/editing-content.md)  — 編輯頁面內容時使用的模式。
+* [编辑](/help/sites-cloud/authoring/fundamentals/editing-content.md)  — 编辑页面内容时使用的模式。
 * [布局](/help/sites-cloud/authoring/features/responsive-layout.md) - 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
-* [目標定位](/help/sites-cloud/authoring/personalization/targeted-content.md)  — 透過所有管道的目標定位和測量，提高內容關聯性。
-* [時間扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  — 可讓您檢視特定時間點的頁面狀態。
-* [即時副本狀態](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status)  — 可讓您快速概覽即時副本狀態以及不會繼承哪些元件。
+* [定位](/help/sites-cloud/authoring/personalization/targeted-content.md)  — 通过在所有渠道中进行定位和衡量来提高内容相关性。
+* [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  — 允许您查看特定时间点的页面状态。
+* [Live Copy状态](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status)  — 允许快速概述Live Copy状态以及哪些组件是/不是继承的。
 * [开发人员模式](/help/implementing/developing/tools/developer-mode.md)
 * [预览](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 用于查看将在发布环境中显示的页面；或使用内容中的链接进行导航。
 * [注释](/help/sites-cloud/authoring/fundamentals/annotations.md) - 用于在页面上添加或查看注释。
@@ -279,20 +279,20 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 >[!NOTE]
 >
->* 視頁面特性而定，某些模式可能無法使用。
->* 存取某些模式需要適當的許可權。
->* 由於空間限制，開發人員模式不適用於行動裝置。
+>* 根据页面的特性，某些模式可能不可用。
+>* 访问某些模式需要适当的权限。
+>* 由于空间限制，开发人员模式在移动设备上不可用。
 >* 使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) 可以在&#x200B;**预览**&#x200B;模式和当前选定的模式（例如，**编辑**、**布局**&#x200B;等）之间切换。
 >
 
 
 ## 路径选择 {#path-selection}
 
-通常在製作時，需要選取其他資源，例如定義指向其他頁面或資源的連結，或選取影像時。 若要輕鬆選取路徑， [路徑欄位](#path-fields) 優惠自動完成和 [路徑瀏覽器](#path-browser) 允許更強大的選擇。
+通常，在创作时，需要选择其他资源，例如定义指向其他页面或资源的链接或选择图像时。 要轻松选择路径， [路径字段](#path-fields) 优惠自动完成和 [路径浏览器](#path-browser) 允许进行更可靠的选择。
 
-### 路徑欄位 {#path-fields}
+### 路径字段 {#path-fields}
 
-此處用來說明的範例是影像元件。 如需使用和編輯元件的詳細資訊，請參閱 [用於頁面編寫的元件](/help/sites-cloud/authoring/fundamentals/components.md).
+此处用于说明的示例是图像组件。 有关使用和编辑组件的更多信息，请参阅 [用于页面创作的组件](/help/sites-cloud/authoring/fundamentals/components.md).
 
 路径字段现在具有自动完成和先行智能功能，可更方便地查找资源。
 
@@ -310,10 +310,10 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![路径浏览器](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* 選取資源後， **選取** 對話方塊右上角的按鈕會變成使用中。 按一下或點選以確認選取範圍或 **取消** 以中止。
+* 选择资源后， **选择** 对话框右上角的按钮变为活动状态。 单击或点按以确认选择或 **取消** 以中止。
 * 如果上下文允许选择多个资源，则选择某个资源也会激活“选择 **** ”按钮，但也会将选定资源的计数添加到窗口的右上角。 单击该 **数字旁边的** X可取消选择全部。
-* 當您瀏覽樹狀結構時，您的位置會反映在對話方塊頂端的階層連結中。 這些階層連結也可用來在資源階層內快速跳轉。
-* 您可以隨時使用對話方塊頂端的搜尋欄位。 按一下 **X** 以清除搜尋。
+* 在树中导航时，您的位置会反映在对话框顶部的痕迹导航中。 这些痕迹导航还可用于在资源层次结构中快速跳转。
+* 您可以随时使用对话框顶部的搜索字段。 单击 **X** 以清除搜索。
 * 要缩小搜索范围，您可以显示过滤器选项并按特定路径筛选结果。
 
    ![过滤器选项](/help/sites-cloud/authoring/assets/filters-option.png)

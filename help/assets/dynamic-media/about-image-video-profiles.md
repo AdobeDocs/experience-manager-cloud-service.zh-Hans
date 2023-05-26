@@ -1,6 +1,6 @@
 ---
-title: 關於Dynamic Media影像設定檔和視訊設定檔
-description: 影像設定檔或視訊設定檔是套用至上傳至資料夾之資產的選項。 例如，您可以指定要套用至上傳之Dynamic Media視訊資產的視訊編碼。 或是套用至Dynamic Media影像資產的影像設定檔，以便正確加以裁切。
+title: 关于Dynamic Media图像配置文件和视频配置文件
+description: 图像配置文件或视频配置文件是将哪些选项应用于您上传到文件夹的资源的脚本。 例如，您可以指定将什么视频编码应用于您上传的Dynamic Media视频资产。 或者，什么图像配置文件可以应用于Dynamic Media图像资源以正确裁剪它们。
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
@@ -12,47 +12,47 @@ ht-degree: 0%
 
 ---
 
-# 關於Dynamic Media影像設定檔和視訊設定檔{#about-dm-image-video-profiles}
+# 关于Dynamic Media图像配置文件和视频配置文件{#about-dm-image-video-profiles}
 
-影像設定檔或視訊設定檔是套用至上傳至資料夾之資產的選項。 例如，您可以指定要套用至上傳之Dynamic Media視訊資產的視訊編碼。 或是套用至Dynamic Media影像資產的影像設定檔，以便正確加以裁切。
+图像配置文件或视频配置文件是将哪些选项应用于您上传到文件夹的资源的脚本。 例如，您可以指定将什么视频编码应用于您上传的Dynamic Media视频资产。 或者，什么图像配置文件可以应用于Dynamic Media图像资源以正确裁剪它们。
 
-在Dynamic Media中，您可以建立兩種型別的設定檔，下列連結會詳細說明這些設定檔：
+在Dynamic Media中，您可以创建两种类型的用户档案，以下链接详细介绍了这些用户档案：
 
-* [Dynamic Media影像設定檔](/help/assets/dynamic-media/image-profiles.md)
-* [Dynamic Media視訊設定檔](/help/assets/dynamic-media/video-profiles.md)
+* [Dynamic Media图像配置文件](/help/assets/dynamic-media/image-profiles.md)
+* [Dynamic Media视频配置文件](/help/assets/dynamic-media/video-profiles.md)
 
-另請參閱 [中繼資料設定檔](/help/assets/metadata-profiles.md).
+另请参阅 [元数据配置文件](/help/assets/metadata-profiles.md).
 
-您必須擁有管理員許可權，才能建立、編輯和刪除Dynamic Media影像設定檔或Dynamic Media視訊設定檔。
+您必须具有管理员权限才能创建、编辑和删除Dynamic Media图像配置文件或Dynamic Media视频配置文件。
 
-建立影像設定檔或視訊設定檔後，請將其指派至一或多個用於新上傳Dynamic Media資產的資料夾。
+创建图像配置文件或视频配置文件后，可将其分配给一个或多个用于新上传的Dynamic Media资源的文件夹。
 
-另請參閱 [組織數位資產以使用處理設定檔的最佳實務](/help/assets/organize-assets.md).
+另请参阅 [组织数字资产以使用处理配置文件的最佳实践](/help/assets/organize-assets.md).
 
-
->[!NOTE]
->
->您從一個資料夾移至另一個資料夾的資產不會重新處理。 例如，假設您的資料夾1已指派設定檔A，而資料夾2已指派設定檔B。 如果您將資產從「資料夾1」移至「資料夾2」，則已移動的資產會保留「資料夾1」的原始處理作業。
->
->即使您在具有相同設定檔的兩個資料夾之間移動資產，情況也是如此。
-
-## 重新處理資料夾中的Dynamic Media資產 {#reprocessing-assets}
-
-若資料夾中已有您後來變更的現有Dynamic Media影像設定檔或Dynamic Media視訊設定檔，您可以重新處理該資料夾中的資產。
-
-例如，假設您建立了一個Dynamic Media影像設定檔，並將其指派給一個資料夾。 您上傳至資料夾的任何影像資產都會自動將影像設定檔套用至資產。 不過，您稍後會決定在「影像描述檔」中新增智慧型裁切比例。 現在，您只需執行 *Scene7：重新處理資產* 工作流程。
-
-您可以對首次處理失敗的資產執行重新處理工作流程。 即使您尚未編輯影像設定檔或視訊設定檔，或您已套用影像設定檔或視訊設定檔，您仍可隨時對資產的資料夾執行重新處理工作流程。
-
-您可以選擇調整重新處理工作流程的批次大小，從預設的50個資產調整至1000個資產。 當您執行 _Scene7：重新處理資產_ 工作流程時，資產會依批次分組，然後傳送至Dynamic Media伺服器以供處理。 處理之後，整個批次集中每個資產的中繼資料會更新於 [!DNL Adobe Experience Manager]. 如果批次大小很大，您可能會遇到處理延遲。 或者，如果批次大小太小，可能會導致Dynamic Media伺服器的往返次數過多。
-
-另請參閱 [調整重新處理工作流程的批次大小](#adjusting-load).
 
 >[!NOTE]
 >
->如果您要將資產從Dynamic Media Classic大量移轉至 [!DNL Experience Manager]，在Dynamic Media伺服器上啟用移轉復寫代理程式。 移轉完成後，請務必停用代理程式。
+>您从一个文件夹移动到另一个文件夹的资产不会重新处理。 例如，假设文件夹1已分配了配置文件A，文件夹2已分配了配置文件B。 如果将资产从文件夹1移动到文件夹2，则已移动的资产会保留其从文件夹1进行的原始处理。
 >
->必須在Dynamic Media伺服器上停用移轉發佈代理程式，才能讓重新處理工作流程按預期運作。
+>即使在分配了相同配置文件的两个文件夹之间移动资产时，也是如此。
+
+## 重新处理文件夹中的Dynamic Media资源 {#reprocessing-assets}
+
+如果文件夹已具有现有的Dynamic Media图像配置文件或您稍后更改的Dynamic Media视频配置文件，您可以重新处理该文件夹中的资产。
+
+例如，假设您创建了一个Dynamic Media图像配置文件并将其分配到某个文件夹。 您上传到文件夹的任何图像资产都会自动将图像配置文件应用于这些资产。 但是，稍后您决定向图像配置文件中添加新的智能裁剪比率。 现在，您只需运行 *Scene7：重新处理资源* 工作流。
+
+您可以对首次处理失败的资产运行重新处理工作流。 即使您尚未编辑图像配置文件或视频配置文件，或者您已经应用了图像配置文件或视频配置文件，您仍可以随时对资产的文件夹运行重新处理工作流。
+
+您可以选择调整重新处理工作流的批大小，从默认的50个资产调整到1000个资产。 当您运行 _Scene7：重新处理资源_ 工作流中，资产会进行批量分组，然后发送到Dynamic Media服务器以供处理。 处理之后，整个批次集中每个资源的元数据将在更新 [!DNL Adobe Experience Manager]. 如果批次大小很大，则可能会遇到处理延迟。 或者，如果批次大小太小，则可能会导致对Dynamic Media服务器的往返次数过多。
+
+参见 [调整重新处理工作流的批次大小](#adjusting-load).
+
+>[!NOTE]
+>
+>如果您要将资源从Dynamic Media Classic批量迁移到 [!DNL Experience Manager]，在Dynamic Media服务器上启用迁移复制代理。 迁移完成后，请确保禁用代理。
+>
+>必须在Dynamic Media服务器上禁用迁移发布代理，以便重新处理工作流可按预期运行。
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
@@ -60,67 +60,67 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**若要重新處理資料夾中的Dynamic Media資產：**
+**要重新处理文件夹中的Dynamic Media资源，请执行以下操作：**
 
-1. 在 [!DNL Experience Manager]，從「資產」頁面，導覽至已指派影像設定檔或視訊設定檔且您想要套用其的資產資料夾。 **Scene7：重新處理資產** 工作流程。
+1. In [!DNL Experience Manager]，从Assets页面，导航到分配了图像配置文件或视频配置文件的资源文件夹，并为其应用 **Scene7：重新处理资源** 工作流。
 
-   已指派影像設定檔或視訊設定檔的資料夾會以設定檔名稱直接顯示在「卡片檢視」的資料夾名稱下方。
+   分配了“图像配置文件”或“视频配置文件”的文件夹，其配置文件的名称会直接显示在“卡片视图”中的文件夹名称下方。
 
-1. 選取資料夾。
+1. 选择一个文件夹。
 
-   * 工作流程會遞回考量所選資料夾中的所有檔案。
-   * 如果主要選取資料夾中有一個或多個子資料夾包含資產，則工作流程會重新處理資料夾階層中的每個資產。
-   * 最佳做法是避免在擁有超過1000個資產的資料夾階層執行此工作流程。
+   * 工作流会递归考虑选定文件夹中的所有文件。
+   * 如果所选主文件夹中存在一个或多个具有资产的子文件夹，则工作流会重新处理文件夹层次结构中的每个资产。
+   * 作为最佳实践，请避免在具有超过1000个资产的文件夹层次结构上运行此工作流。
 
-1. 在頁面的左上角附近，從下拉式清單中選取 **[!UICONTROL 時間表]**.
-1. 在頁面的左下角附近， [!UICONTROL 註解] 欄位中，選取克拉圖示( **^** ) 。
+1. 在页面的左上角附近，从下拉列表中选择 **[!UICONTROL 时间线]**.
+1. 在页面的左下角附近， [!UICONTROL 注释] 字段中，选择克拉图标( **^** ) 。
 
-   ![「Experience Manager中的資產」熒幕擷圖顯示選取的資產資料夾、「時間軸」下拉式清單熒游標示、「開始工作流程」按鈕熒游標示，以及「註解」欄位右側的克拉圖示熒游標示。](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Experience Manager中资产的屏幕截图显示了资产的选定文件夹，突出显示了“时间轴”下拉列表，突出显示了“开始工作流”按钮，并且还突出显示了“评论”字段右侧的克拉图标。](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. 選取 **[!UICONTROL 開始工作流程]**.
-1. 從 **[!UICONTROL 開始工作流程]** 下拉式清單，選擇 **[!UICONTROL Scene7：重新處理資產]**.
-1. （選用）在 **輸入工作流程的標題** 文字欄位，輸入工作流程的名稱。 如有必要，您可以使用名稱來參照工作流程例項。
+1. 选择 **[!UICONTROL 启动工作流]**.
+1. 从 **[!UICONTROL 启动工作流]** 下拉列表，选择 **[!UICONTROL Scene7：重新处理资源]**.
+1. （可选）在 **输入工作流的标题** 文本字段，输入工作流的名称。 如有必要，您可以使用名称来引用工作流实例。
 
-   ![從「開始工作流程」下拉式清單中選取「Scene7：重新處理資產」且醒目提示「開始」按鈕的「時間軸」使用者介面熒幕擷圖。](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![从“开始工作流”下拉列表中选择“Scene7：重新处理资产”并选中“开始”按钮的“时间轴”用户界面屏幕截图。](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
-1. 選取 **[!UICONTROL 開始]**，然後選取 **[!UICONTROL 確認]**.
+1. 选择 **[!UICONTROL 开始]**，然后选择 **[!UICONTROL 确认]**.
 
-   若要監視工作流程或檢查其進度，請從 [!DNL Experience Manager] 主控台首頁面，選取 **[!UICONTROL 工具>工作流程]**. 在「工作流程例項」頁面上，選取工作流程。 在功能表列上，選取 **[!UICONTROL 開啟歷史記錄]**. 您也可以從同一個「工作流程例項」頁面終止、暫停或重新命名選取的工作流程。
+   要监视工作流或检查其进度，请从 [!DNL Experience Manager] 主控制台页面，选择 **[!UICONTROL “工具”>“工作流”]**. 在“工作流实例”页面上，选择一个工作流。 在菜单栏上，选择 **[!UICONTROL 打开历史记录]**. 您还可以从同一个“工作流实例”页面终止、暂停或重命名选定的工作流。
 
-### 調整重新處理工作流程的批次大小（選擇性） {#adjusting-load}
+### 调整重新处理工作流的批次大小（可选） {#adjusting-load}
 
-（選用）重新處理工作流程中的預設批次大小是每個工作50個資產。 此最佳批次大小是由執行重新處理的平均資產大小和MIME資產型別所控制。 較高的值表示您在一個重新處理作業中有許多檔案。 因此，處理橫幅會保持開啟 [!DNL Experience Manager] 資產保留更長時間。 不過，如果平均檔案大小為1 MB以下或小於1 MB，建議您將值增加到數100，但絕不要超過1000Adobe。 如果平均檔案大小為數百MB，Adobe建議您減少批次大小，最多為10。
+（可选）重新处理工作流中的默认批次大小是每个作业50个资产。 此最佳批次大小由平均资源大小和运行重新处理的资源的MIME类型控制。 值越高，表示在单个重新处理作业中有多个文件。 因此，处理横幅将保持打开 [!DNL Experience Manager] 资产保留更长时间。 但是，如果平均文件大小为1 MB或更小，则Adobe建议将该值增加到几个100，但不能超过1000。 如果平均文件大小为数百MB，则Adobe建议您将批次大小降低到10。
 
-**若要選擇性地調整重新處理工作流程的批次大小，請執行下列步驟：**
+**要根据需要调整重新处理工作流的批大小，请执行以下操作：**
 
-1. 在 [!DNL Experience Manager]，選取 **[!UICONTROL Adobe Experience Manager]** 若要存取全域導覽主控台，請選取 **[!UICONTROL 工具]** （槌子）圖示> **[!UICONTROL 工作流程>模型]**.
-1. 在「工作流程模型」頁面的「卡片檢視」或「清單檢視」中，選取 **[!UICONTROL Scene7：重新處理資產]**.
+1. In [!DNL Experience Manager]，选择 **[!UICONTROL Adobe Experience Manager]** 要访问全局导航控制台，请选择 **[!UICONTROL 工具]** （锤子）图标> **[!UICONTROL 工作流>模型]**.
+1. 在“工作流模型”页面的卡片视图或列表视图中，选择 **[!UICONTROL Scene7：重新处理资源]**.
 
-   ![在Experience Manager的卡片檢視中選取了「Scene7：重新處理資產」工作流程的「工作流程模型」頁面熒幕擷圖。](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![在Experience Manager的卡片视图中选择了“Scene7：重新处理资源”工作流的“工作流模型”页面的屏幕截图。](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
-1. 在工具列中，選取 **[!UICONTROL 編輯]**. 新的瀏覽器標籤會開啟「Scene7：重新處理資產」工作流程模型頁面。
-1. 在「Scene7：重新處理資產」工作流程頁面的右上角附近，選取「 」 **[!UICONTROL 編輯]** 以「解鎖」工作流程。
-1. 在工作流程中，選取「Scene7批次上傳」元件以開啟工具列，然後選取「 」 **[!UICONTROL 設定]** （在工具列中）。
+1. 在工具栏中，选择 **[!UICONTROL 编辑]**. 新的浏览器选项卡将打开Scene7：重新处理资产工作流模型页面。
+1. 在“Scene7：重新处理资源”工作流页面的右上角附近，选择 **[!UICONTROL 编辑]** 以“解锁”工作流。
+1. 在工作流中，选择Scene7批量上传组件以打开工具栏，然后选择 **[!UICONTROL 配置]** 工具栏中。
 
-   ![「Scene7：重新處理資產」頁面上的「Scene7批次上傳」元件熒幕擷圖，將滑鼠指標暫留在「設定」圖示上。](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![“Scene7：重新处理资产”页面上的“Scene7批量上传”组件屏幕截图，其中鼠标指针悬停在“配置”图标上。](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
-1. 於 **[!UICONTROL 批次上傳至Scene7 — 步驟屬性]** 對話方塊中，設定下列專案：
-   * 在 **[!UICONTROL 標題]** 和 **[!UICONTROL 說明]** 文字欄位，視需要輸入新的職稱和說明。
-   * 選取 **[!UICONTROL 處理常式前進]** 如果您的處理常式將前進到下一個步驟。
-   * 在 **[!UICONTROL 逾時]** 欄位，輸入外部程式逾時（秒）。
-   * 在 **[!UICONTROL 期間]** 欄位，輸入輪詢間隔（秒）以測試外部程式的完成。
-   * 在 **[!UICONTROL 批次欄位]**，輸入Dynamic Media伺服器批次處理上傳工作中要處理的資產數量上限(50-1000)。
-   * 選取 **[!UICONTROL 逾時前進]** 如果您想要在達到逾時值時推進。 如果達到逾時時間時仍要進入收件匣，請取消選取。
+1. 在 **[!UICONTROL 批量上传至Scene7 — 步骤属性]** 对话框中，设置以下内容：
+   * 在 **[!UICONTROL 标题]** 和 **[!UICONTROL 描述]** 文本字段，根据需要输入作业的新标题和描述。
+   * 选择 **[!UICONTROL 处理程序前进]** 如果您的处理程序将前进到下一步。
+   * 在 **[!UICONTROL 超时]** 字段中，输入外部进程超时（秒）。
+   * 在 **[!UICONTROL 期间]** 字段中，输入轮询间隔（秒）以测试外部进程的完成情况。
+   * 在 **[!UICONTROL 批处理字段]**，输入Dynamic Media服务器批处理上传作业中要处理的最大资源数(50-1000)。
+   * 选择 **[!UICONTROL 超时后前进]** 如果要在达到超时后前进，请执行以下操作。 如果要在达到超时时间后转至收件箱，请取消选择。
 
-   ![「批次上傳至Scene7 — 步驟屬性」頁面的熒幕擷圖。](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![“批量上传到Scene7 — 步骤属性”页面的屏幕截图。](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. 在的右上角 **[!UICONTROL 批次上傳至Scene7 — 步驟屬性]** 對話方塊，選取 **[!UICONTROL 完成]**.
+1. 在 **[!UICONTROL 批量上传至Scene7 — 步骤属性]** 对话框中，选择 **[!UICONTROL 完成]**.
 
-1. 在「Scene7：重新處理資產」工作流程模型頁面的右上角，選取 **[!UICONTROL 同步]**. 當您看到 **[!UICONTROL 已同步]**，工作流程執行階段模型已成功同步化，並準備好重新處理資料夾中的資產。
+1. 在“Scene7：重新处理资产”工作流模型页面的右上角，选择 **[!UICONTROL 同步]**. 当您看到 **[!UICONTROL 已同步]**，则工作流运行时模型已成功同步并准备好重新处理文件夹中的资产。
 
-   ![「Experience Manager中的資產」熒幕擷圖顯示選取的資產資料夾、「時間軸」下拉式清單熒游標示、「開始工作流程」按鈕熒游標示，以及「註解」欄位右側的克拉圖示熒游標示。](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Experience Manager中资产的屏幕截图显示了资产的选定文件夹，突出显示了“时间轴”下拉列表，突出显示了“开始工作流”按钮，并且还突出显示了“评论”字段右侧的克拉图标。](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. 關閉顯示「Scene7：重新處理資產」工作流程模型的瀏覽器標籤。
+1. 关闭显示“Scene7：重新处理资产”工作流模型的浏览器选项卡。
 
 <!-- MAY BE NEEDED IN THE FUTURE
 

@@ -1,6 +1,6 @@
 ---
-title: Screens中的Dispatcher設定as a Cloud Service
-description: 本頁面說明Screensas a Cloud Service中的Dispatcher設定。
+title: Screens中的Dispatcher配置as a Cloud Service
+description: 本页介绍了Screensas a Cloud Service中的Dispatcher配置。
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,15 +9,15 @@ ht-degree: 0%
 
 ---
 
-# Screens中的Dispatcher設定as a Cloud Service {#dispatcher-configurations-screens-cloud}
+# Screens中的Dispatcher配置as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
-本節說明Screensas a Cloud Service的Dispatcher設定。
+此部分介绍Screensas a Cloud Service的Dispatcher配置。
 
-## 在Dispatcher for Screensas a Cloud Service部署中新增篩選器和快取規則 {#deployment}
+## 在Dispatcher for Screensas a Cloud Service部署中添加筛选器和缓存规则 {#deployment}
 
-在Dispatcher中允許針對Screensas a Cloud Service中的發佈執行個體有下列篩選器和快取規則。
+在Dispatcher中允许在Screensas a Cloud Service中为发布实例使用以下筛选器和缓存规则。
 
-### AEM Screens篩選器 {#filters}
+### AEM Screens筛选器 {#filters}
 
 ```
 ## # Content Configurations
@@ -30,14 +30,14 @@ ht-degree: 0%
 /0210 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
 ```
 
-### 快取規則 {#cache-rules}
+### 缓存规则 {#cache-rules}
 
-* 新增 `/statfileslevel "10"` 至 `/cache` 中的區段 `publish_farm.any`/.
+* 添加 `/statfileslevel "10"` 到 `/cache` 中的部分 `publish_farm.any`/.
 
    >[!NOTE]
-   >此快取規則支援從快取docroot快取最多10個層級，並在內容發佈時讓內容失效而不是讓所有內容失效。 您可以根據內容結構的設定深度來變更此層級。
+   >此缓存规则支持从缓存docroot中缓存最多10个级别，并且在发布内容时使内容无效，而不是使所有内容无效。 您可以根据内容结构的设置深度更改此级别。
 
-* 將下列專案新增至 `/invalidate` 中的區段 `publish_farm.any`.
+* 将以下内容添加到 `/invalidate` 中的部分 `publish_farm.any`.
 
    ```
    /0003 {
@@ -46,7 +46,7 @@ ht-degree: 0%
    }
    ```
 
-* 將下列規則新增至 `/rules` 中的區段 `/cache` (在publish_farm.any中或包含在 `publish_farm.any`.
+* 将以下规则添加到 `/rules` 中的部分 `/cache` 在publish_farm.any中或从包含的文件中 `publish_farm.any`.
 
    ```
    ## Allow Dispatcher Cache for Screens channels

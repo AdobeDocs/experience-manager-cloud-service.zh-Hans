@@ -1,6 +1,6 @@
 ---
 title: 上线
-description: 瞭解在程式碼和內容準備就緒後，如何執行移轉
+description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
@@ -16,147 +16,147 @@ ht-degree: 4%
 >title="上线准备"
 >abstract="为确保 AEM as a Cloud Service 顺利上线，您应该规划代码和内容冻结期、测试迭代、内容增补、性能测试、安全测试等。"
 
-在歷程的這一部分，您將瞭解在程式碼和內容準備好移轉到AEMas a Cloud Service後，如何規劃和執行移轉。 此外，您將瞭解執行移轉時的最佳實務和已知限制。
+在此历程的这一可选部分中，您将了解在代码和内容准备好移至AEMas a Cloud Service后，如何规划和执行迁移。 此外，您将了解执行迁移时的最佳实践和已知限制。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在歷程的前幾個階段中：
+在历程的前几个阶段中：
 
-* 您已瞭解如何在中開始移至AEMas a Cloud Service [快速入門](/help/journey-migration/getting-started.md) 頁面。
-* 已判斷您的部署是否已準備好移至雲端。請閱讀 [整備階段](/help/journey-migration/readiness.md)
-* 熟悉工具和流程，讓您透過 [實作階段](/help/journey-migration/implementation.md).
+* 您已在中学习如何开始迁移到AEMas a Cloud Service [快速入门](/help/journey-migration/getting-started.md) 页面。
+* 通过阅读 [就绪阶段](/help/journey-migration/readiness.md)
+* 熟悉使代码和内容云可以使用 [实施阶段](/help/journey-migration/implementation.md).
 
 ## 目标 {#objective}
 
-熟悉歷程的先前步驟後，本檔案將幫助您瞭解如何執行移轉至AEMas a Cloud Service。 您將瞭解如何執行初始生產移轉，以及在移轉至AEMas a Cloud Service時遵循的最佳實務。
+本文档将帮助您了解在熟悉历程的先前步骤后，如何执行向AEMas a Cloud Service的迁移。 您将了解如何执行初始生产迁移，以及在迁移到AEMas a Cloud Service时遵循的最佳实践。
 
-## 初始生產移轉 {#initial-migration}
+## 初始生产迁移 {#initial-migration}
 
-在執行生產移轉之前，請遵循中概述的移轉步驟說明和證明 [內容移轉策略和時間表](/help/journey-migration/implementation.md##strategy-timeline) 部分 [實作階段](/help/journey-migration/implementation.md).
+在执行生产迁移之前，请遵循中概述的迁移步骤的设备和证明。 [内容迁移策略和时间表](/help/journey-migration/implementation.md##strategy-timeline) 部分 [实施阶段](/help/journey-migration/implementation.md).
 
-* 根據您在翻制上執行AEMas a Cloud Service階段移轉期間獲得的體驗，從生產環境啟動移轉：
+* 根据您在克隆上执行AEMas a Cloud Service阶段迁移期间获得的经验，启动从生产环境的迁移：
    * Author-Author
    * Publish-Publish
 
-* 驗證內嵌至AEMas a Cloud Service製作和發佈層級的內容。
-* 指示內容製作團隊在內嵌完成前，避免同時在來源和目的地移動內容
-* 可以新增、編輯或刪除新內容，但請避免移動。 這同時適用於來源和目的地。
-* 記錄 [花費時間](/help/journey-migration/implementation.md#gathering-data) 完整擷取和內嵌，需要估計未來追加移轉時間表。
-* 建立 [移轉規劃工具](/help/journey-migration/implementation.md#migration-plan) 適用於author和publish。
+* 验证摄取到AEMas a Cloud Service创作层和发布层的内容。
+* 指示内容创作团队在摄取完成之前避免在源和目标上移动内容
+* 可以添加、编辑或删除新内容，但应避免移动内容。 这同时适用于源和目标。
+* 记录 [所用时间](/help/journey-migration/implementation.md#gathering-data) 对于完全提取和摄取，要估计未来的增补迁移时间表。
+* 创建 [迁移规划者](/help/journey-migration/implementation.md#migration-plan) （创作和发布）。
 
-## 遞增增值 {#top-up}
+## 增量增补 {#top-up}
 
-從生產環境初次移轉後，您必須執行累加的追加，以確保您的內容在雲端例項上保持最新。 因此，建議您遵循下列最佳實務：
+从生产环境进行初始迁移后，您必须执行增量增补，以确保您的内容在云实例上保持最新。 因此，建议您遵循以下最佳实践：
 
-* 收集有關內容量的資料。 例如：每一週、兩週或一個月。
-* 請務必避免超過48小時的內容擷取和擷取時間，藉此規劃追加費用。 建議使用此功能，讓內容追加可符合週末的時間範圍。
-* 規劃所需的追加數量，並使用這些估計在上線日期進行規劃。
+* 收集有关内容量的数据。 例如：每一周、两周或一个月。
+* 确保计划增补，以避免超过48小时的内容提取和摄取。 建议这样做，以便内容增补能够适应周末时间范围。
+* 规划所需的增补数量，并使用这些估计在上线日期之前进行规划。
 
-## 識別移轉的程式碼和內容凍結時間表 {#code-content-freeze}
+## 确定迁移的代码和内容冻结时间线 {#code-content-freeze}
 
-如前所述，您必須排程程式碼和內容凍結期。 您可以使用下列問題來協助您計畫凍結期間：
+如前所述，您必须计划一个代码和内容冻结期。 您可以使用以下问题来帮助您计划冻结期：
 
-* 我需要將內容製作活動凍結多久？
-* 我應該要求我的傳送團隊停止新增功能多久？
+* 我需要将内容创作活动冻结多长时间？
+* 我应要求投放团队停止添加新功能多长时间？
 
-若要回答第一個問題，您應考量在非生產環境中執行試用執行所花的時間。 若要回答第二個問題，您必須在新增功能的團隊和重構程式碼的團隊之間密切合作。 目標應該是確保新增到現有部署的所有程式碼也新增、測試並部署至雲端服務分支。 一般而言，這表示程式碼凍結的數量會較低。
+要回答第一个问题，您应该考虑在非生产环境中执行试运行所用的时间。 要回答第二个问题，您需要在添加新功能的团队和重构代码的团队之间进行密切合作。 目标应当是确保添加到现有部署的所有代码均已添加、测试和部署到云服务分支。 一般而言，这意味着代码冻结量会较低。
 
-此外，您還需要在排程最終追加內容時規劃內容凍結。
+此外，您需要在计划最终内容增补时计划内容冻结。
 
 ## 最佳实践 {#best-practices}
 
-規劃或執行移轉時，您應考量下列准則：
+在规划或执行迁移时，应考虑以下准则：
 
-* 從作者移轉至作者，再從發佈移轉至發佈
-* 請求可用於下列作業的生產作業翻制：
-   * 擷取儲存區域統計資料
-   * 移轉活動證明
-   * 準備移轉計畫
-   * 識別內容凍結需求
-   * 識別從生產環境執行移轉時，生產環境上的任何規模調整需求
+* 从创作迁移到创作，从发布到发布
+* 请求一个生产克隆，该克隆可用于：
+   * 捕获资料档案库统计信息
+   * 迁移活动证明
+   * 准备迁移计划
+   * 确定内容冻结要求
+   * 在从生产环境执行迁移时，确定生产环境上的任何规模调整需求
 
-**內容轉移工具最佳實務**
+**内容传输工具最佳实践**
 
-請確定上線時，您會在生產環境執行內容移轉，而非翻制。 一個好方法是使用 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 進行初始移轉，然後經常（甚至每天）執行追加擷取，以擷取較小區塊，並避免來源AEM上的任何長期負載。
+确保上线时，您在生产环境中运行内容迁移，而不是克隆。 一个好的方法是使用 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 用于初始迁移，然后经常（甚至每天）运行增补提取以提取较小的块，并避免源AEM上的任何长期负载。
 
-執行生產移轉時，您應該避免從複製品執行「內容轉移工具」，因為：
+在执行生产迁移时，您应该避免从克隆运行内容传输工具，因为：
 
-* 如果客戶在追加移轉期間需要移轉內容版本，則從複製執行內容轉移工具不會移轉版本。 即使經常從即時作者重新建立翻制，每次建立翻制時，「內容轉移工具」用來計算增量值的查核點也會重設。
-* 由於複製無法重新整理為整體，因此必須使用ACL查詢套件來封裝和安裝從生產環境新增或編輯至複製環境的內容。 此方法的問題在於，除非從來源和翻制手動刪除，否則來源執行個體上任何已刪除的內容永遠無法進入翻制。 這可能會導致生產環境上已刪除的內容不會在翻制和AEMas a Cloud Service上刪除。
+* 如果客户在增补迁移期间需要迁移内容版本，则从克隆执行内容传输工具不会迁移这些版本。 即使经常从实时作者重新创建克隆，每次创建克隆时，内容传输工具用于计算增量值的检查点也会重置。
+* 由于克隆无法作为一个整体进行刷新，因此必须使用ACL查询包来打包和安装从生产环境添加到克隆环境或编辑的内容。 此方法的问题在于，除非从源和克隆中手动删除源实例上任何已删除的内容，否则这些内容将永远不会到达克隆。 这会造成生产环境中已删除的内容不会在克隆和AEMas a Cloud Service上删除。
 
-**在執行內容移轉時最佳化AEM來源的負載**
+**在执行内容迁移时优化AEM源上的负载**
 
-請記住，在提取階段期間，AEM來源的負載將會更大。 請留意：
+请记住，在提取阶段，AEM源上的负载将更大。 您应该了解：
 
-* 內容轉移工具是外部Java程式，使用4 GB的JVM棧積
-* 非AzCopy版本會下載二進位檔案，將其儲存在來源AEM作者的暫存空間中，消耗磁碟I/O，然後上傳到Azure容器，消耗網路頻寬
-* [AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 將blob直接從blob存放區傳輸至Azure容器，以儲存磁碟I/O和網路頻寬。 AzCopy版本仍會使用磁碟和網路頻寬，將資料從區段存放區擷取並上傳至Azure容器
-* 內容轉移工具程式在擷取階段的系統資源上較輕，因為它只會串流擷取記錄，而且就磁碟I/O或網路頻寬而言，來源執行個體的負載並不大。
+* 内容传输工具是一个外部Java进程，它使用4 GB的JVM栈
+* 非AzCopy版本下载二进制文件，将它们存储在源AEM作者上的临时空间中，占用磁盘I/O，然后上载到占用网络带宽的Azure容器中
+* [Azcopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 将blob直接从blob存储传输到Azure容器，从而节省了磁盘I/O和网络带宽。 AzCopy版本仍使用磁盘和网络带宽提取区段存储的数据，并将其上传到Azure容器中
+* 内容传输工具进程在摄取阶段对系统资源的影响较小，因为它只流式传输摄取日志，而且就磁盘I/O或网络带宽而言，源实例上的负载并不大。
 
 ## 已知限制 {#known-limitations}
 
-請考量，如果在擷取的移轉集中找到以下任何限制，則整個擷取會失敗：
+请考虑，如果在提取的迁移集中发现以下任何限制，则整个摄取将失败：
 
-* 名稱超過150個字元的JCR節點
-* 大於16 MB的JCR節點
-* 任何使用者/群組具有 `rep:AuthorizableID` 擷取已出現在AEMas a Cloud Service上的專案
-* 如果任何擷取並擷取的資產在移轉的下一個反複專案之前，會移至來源或目的地的不同路徑。
+* 名称长度超过150个字符的JCR节点
+* 大于16 MB的JCR节点
+* 任何用户/组具有 `rep:AuthorizableID` 被摄取，但在AEMas a Cloud Service上已存在
+* 如果在下次迭代迁移之前，提取并摄取的任何资源移动到源或目标上的其他路径。
 
-## 資產健康狀態 {#asset-health}
+## 资产运行状况 {#asset-health}
 
-與內嵌區段上方的區段比較 **不會** 失敗，因為有下列資產問題。 不過，強烈建議您在下列情況下採取適當的步驟：
+与摄取上方部分相比 **不会** 失败，因为存在以下资产问题。 但是，强烈建议在这些情况下采取适当的步骤：
 
-* 遺失原始轉譯的任何資產
-* 任何資料夾遺失 `jcr:content` 節點。
+* 缺少原始演绎版的任何资源
+* 任何缺少的文件夹 `jcr:content` 节点。
 
-以上兩個專案將會在 [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 報告。
+以上两项均将于以下文件中识别及报告： [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 报告。
 
-## 上線檢查清單 {#Go-Live-Checklist}
+## 上线清单 {#Go-Live-Checklist}
 
-請檢閱此活動清單，以確保您順利且成功地執行移轉。
+请查看此活动列表，以确保顺利成功地执行迁移。
 
-* 執行具有功能和UI測試的端對端生產管道，以確保 **永遠最新** AEM產品體驗。 請參閱下列資源。
+* 运行具有功能和UI测试的端到端生产管道，以确保 **始终最新** AEM产品体验。 请参阅以下资源。
    * [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
    * [自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI 测试](/help/implementing/cloud-manager/ui-testing.md)
-* 將內容移轉至生產環境，並確保在測試時可使用相關的子集進行測試。
-   * 請注意，AEM適用的DevOps最佳實務代表程式碼會從開發環境移至生產環境，而內容則會從生產環境下移。
-* 排程程式碼和內容凍結期間。
-   * 另請參閱區段 [移轉的程式碼和內容凍結時間表](#code-content-freeze)
-* 執行最終追加內容。
-* 驗證Dispatcher設定。
-   * 使用本機Dispatcher驗證器，以利在本機設定、驗證和模擬Dispatcher
-      * [設定本機Dispatcher工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
-   * 請仔細檢閱虛擬主機組態。
-      * 最簡單（且預設）的解決方案是包含 `ServerAlias *` 虛擬主機檔案中的 `/dispatcher/src/conf.d/available_vhostsfolder`.
-         * 這將允許產品功能測試、Dispatcher快取失效和複製使用的主機別名運作。
-      * 但是，如果 `ServerAlias *` 不可接受，至少符合下列條件 `ServerAlias` 除了您的自訂網域外，還必須允許輸入專案：
+* 将内容迁移到生产环境，并确保相关子集在暂存环境中可用于测试。
+   * 请注意，适用于AEM的DevOps最佳实践意味着，当内容从生产环境向下移动时，代码会从开发环境向上移动到生产环境。
+* 计划代码和内容冻结期。
+   * 另请参阅部分 [用于迁移的代码和内容冻结时间线](#code-content-freeze)
+* 执行最终内容增补。
+* 验证Dispatcher配置
+   * 使用本地Dispatcher验证器，这有助于在本地配置、验证和模拟Dispatcher
+      * [设置本地调度程序工具。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+   * 仔细检查虚拟主机配置。
+      * 最简单（默认）的解决方案是包括 `ServerAlias *` （在虚拟主机文件中） `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * 这将允许产品功能测试、Dispatcher缓存失效和克隆使用的主机别名正常运行。
+      * 但是，如果 `ServerAlias *` 不可接受，至少应满足以下条件 `ServerAlias` 除了自定义域外，还必须允许以下条目：
          * `localhost`
          * `*.local`
          * `publish*.adobeaemcloud.net`
          * `publish*.adobeaemcloud.com`
-* 設定CDN、SSL和DNS。
-   * 如果您使用自己的CDN，請輸入支援票證以設定適當的路由。
-      * 請參閱區段 [客戶CDN指向AEM Managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) 詳細資訊請參閱CDN檔案。
-      * 您需要根據CDN供應商的檔案設定SSL和DNS。
-   * 如果您未使用其他CDN，請依照以下檔案管理SSL和DNS：
+* 配置CDN、SSL和DNS。
+   * 如果您使用自己的CDN，请输入支持票证以配置相应的路由。
+      * 请参阅部分 [客户CDN指向AEM托管的CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) 有关详细信息，请参阅CDN文档。
+      * 您需要根据CDN供应商的文档配置SSL和DNS。
+   * 如果您没有使用其他CDN，请按照以下文档管理SSL和DNS：
       * 管理 SSL 证书
          * [管理 SSL 证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         * [管理SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      * 管理自訂網域名稱(DNS)
-         * 為了確保DNS轉換不會帶來非預期的問題，最好在您上線並進行一輪UAT測試之前，建立測試子網域以將您的生產執行個體連線到上。 因此，如果您的網域是example.com，您可以建立子網域test.example.com並將其套用至生產環境。 在網域的UAT測試期間，您將需要尋找適當的連結重新導向、快取和Dispatcher設定等。
+         * [管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * 管理自定义域名(DNS)
+         * 为了确保DNS直接转换不会引入意外问题，最好在正式启用并进行UAT测试之前，创建一个测试子域以将生产实例连接到该子域。 因此，如果您的域是example.com，则可以创建一个子域test.example.com并将其应用于生产环境。 在对域进行UAT测试期间，您需要查找适当的链接重定向、缓存和Dispatcher配置等内容。
          * [自定义域名简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         * [管理自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-   * 請記得驗證DNS記錄的TTL集合。
-      * TTL是在要求伺服器更新之前DNS記錄保留在快取中的時間。
-      * 如果您的TTL非常高，您的DNS記錄更新將需要更長的時間才能傳播。
-* 執行符合您業務需求和目標的效能和安全測試。
-* 切斷，並確定實際上線是在沒有任何新部署或內容更新的情況下執行的。
-* 建立Admin Console使用者通知設定檔。 另請參閱 [通知設定檔](/help/journey-onboarding/notification-profiles.md)
+         * [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * 请记住验证DNS记录的TTL集。
+      * TTL是在请求服务器更新之前DNS记录保留在缓存中的时间。
+      * 如果您的TTL非常高，则传播对DNS记录的更新将需要较长时间。
+* 运行符合您的业务要求和目标的性能测试和安全性测试。
+* 切换并确保无需任何新部署或内容更新即可执行实际上线。
+* 创建Admin Console用户通知配置文件。 参见 [通知配置文件](/help/journey-onboarding/notification-profiles.md)
 
-在執行移轉時，如果您需要重新校準工作，您可以隨時參考清單。
+在执行迁移时，如果您需要重新校准任务，您始终可以引用列表。
 
 ## 后续内容 {#what-is-next}
 
-瞭解如何移轉至AEMas a Cloud Service後，您可以檢查 [上線後](/help/journey-migration/post-go-live.md) 頁面，讓您的執行個體順利運作。
+了解如何迁移到AEMas a Cloud Service后，您可以检查 [上线后](/help/journey-migration/post-go-live.md) 页面来保持实例顺利运行。

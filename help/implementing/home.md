@@ -12,7 +12,7 @@ ht-degree: 92%
 
 # 实施 AEM as a Cloud Service 的应用程序 {#aem-implementation-guide}
 
-尋找Experience Manageras a Cloud Service實作的相關自助資源。 了解如何自定义 Experience Manager as a Cloud Service 部署。
+查找有关Experience Manageras a Cloud Service实施的自助资源。 了解如何自定义 Experience Manager as a Cloud Service 部署。
 
 ## 关键实施文章 {#key-articles}
 
@@ -32,7 +32,7 @@ ht-degree: 92%
 | [入门培训历程](/help/journey-onboarding/overview.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作和管理。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
-| [实施用户指南](/help/implementing/home.md) | 瞭解如何使用AEM的強大功能建置和自訂體驗。 |
+| [实施用户指南](/help/implementing/home.md) | 了解如何使用AEM的强大功能构建和自定义体验。 |
 | [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | 探索此引导式历程，了解如何通过 AEM 强大而灵活的 Headless 特性构建自己的第一个 Headless 项目。 |
 | [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到 Cloud Service 的历程。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |

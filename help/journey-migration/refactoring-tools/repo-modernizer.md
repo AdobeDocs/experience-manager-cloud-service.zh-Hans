@@ -11,35 +11,35 @@ ht-degree: 6%
 
 # 存储库现代化器 {#repo-modernizer}
 
-Repository Modernizer是一個公用程式，開發目的是將內容和程式碼分割為獨立套件，以與Adobe Experience Manager as a Cloud Service定義的專案結構相容，藉此重組現有的專案套件。
+Repository Modernizer是一个实用程序，开发用于通过将内容和代码分隔到单独的软件包来重构现有项目软件包，以便与为Adobe Experience Manager as a Cloud Service定义的项目结构兼容。
 
 ## 简介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service為您的AEM專案提供許多新功能和可能性。 不過，Adobe Experience Manager Maven專案必須進行一些變更，才能與AEM Cloud Service相容。 概略來說，AEM需要分隔 **內容** 和 **程式碼** 分成離散的子套件，以遵循可變和不可變內容之間的分割。 請參閱 [AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 以進一步瞭解Cloud Service的新AEM專案結構。
+Adobe Experience Manager as a Cloud Service为您的AEM项目提供了许多新功能和可能性。 但是，需要对Adobe Experience Manager Maven项目进行一些更改才能与AEM Cloud Service兼容。 从较高层面来看，AEM要求将 **内容** 和 **代码** 分为离散的子包，以遵循可变和不可变内容之间的拆分。 请参阅 [AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 有关用于Cloud Service的新AEM项目结构的更多详细信息。
 
-Repository Modernizer會建立下列部署結構，以建立相容的AEM Cloud Service專案結構：
+Repository Modernizer通过创建以下部署结构来创建兼容的AEM Cloud Service项目结构：
 
-* `ui.apps` 套件部署至 `/apps` 並包含所有程式碼
+* `ui.apps` 包部署到 `/apps` 并包含所有代码
 
-* `ui.content` 套件部署到執行階段可寫入的區域(例如， `/content`， `/conf`， `/home`，或不存在的任何專案 `/apps`)並包含所有內容和設定。
+* `ui.content` 软件包部署到运行时可写区域(例如， `/content`， `/conf`， `/home`，或任何其他内容 `/apps`)并包含所有内容和配置。
 
-* `all` 封裝是包含子封裝的容器封裝 `ui.apps` 和 `ui.content`.
+* `all` 包是包含子包的容器包 `ui.apps` 和 `ui.content`.
 
 >[!NOTE]
->專案結構是根據 *原型24* 適用於套件及其 `pom.xml/filter.xml files`. 請參閱 [原型24](https://github.com/adobe/aem-project-archetype) 以取得更多詳細資料。
+>项目结构基于 *原型24* 适用于包及其 `pom.xml/filter.xml files`. 请参阅 [原型24](https://github.com/adobe/aem-project-archetype) 了解更多详细信息。
 
-## 使用Repository Modernizer {#using-repo-modernizer}
+## 使用存储库现代化器 {#using-repo-modernizer}
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* 透過Adobe I/OCLI ：建議透過以下方式使用Repository Modernizer： `aio-cli-plugin-aem-cloud-service-migration` (Adobe I/OCLI的AEMas a Cloud Service程式碼重構外掛程式)。
+* 通过Adobe I/OCLI ：建议通过 `aio-cli-plugin-aem-cloud-service-migration` (适用于Adobe I/OCLI的AEMas a Cloud Service代码重构插件)。
 
-   請參閱 **[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 瞭解如何安裝及使用外掛程式。
+   请参阅 **[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 了解如何安装和使用插件。
 
-* 作為獨立公用程式： Repository Modernizer也可以作為獨立公用程式執行。
+* 作为独立实用程序：Repository Modernizer也可以作为独立实用程序执行。
 
-   請參閱 **[Git資源： Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** 以瞭解如何使用此工具。
+   请参阅 **[Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** 以了解如何使用此工具。
 
    >[!NOTE]
    >
-   >Repository Modernizer是使用NodeJS開發。 建議安裝NodeJS 10.0+。
+   >Repository Modernizer是使用NodeJS开发的。 建议安装NodeJS 10.0+。

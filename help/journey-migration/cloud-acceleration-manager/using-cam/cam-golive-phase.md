@@ -1,6 +1,6 @@
 ---
-title: Cloud Acceleration Manager的上線階段
-description: 本頁提供Cloud Acceleration Manager上線階段的概觀。
+title: Cloud Acceleration Manager中的上线阶段
+description: 本页概述了Cloud Acceleration Manager的上线阶段。
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,26 +9,26 @@ ht-degree: 2%
 
 ---
 
-# Cloud Acceleration Manager中的上線階段 {#golive-phase-cam}
+# Cloud Acceleration Manager中的上线阶段 {#golive-phase-cam}
 
-上線卡提供所有相關內容，重點說明準備工作、要採取的具體操作和徹底的考量，以確保在AEMas a Cloud Service上線順暢而成功。
+上线信息卡提供所有相关内容，重点说明准备工作、要采取的具体操作和周密考虑以确保顺利成功地上线AEMas a Cloud Service。
 
-按一下您的專案卡以開啟專案登入頁面，並導覽至 **上線** 區段，如下圖所示。
+单击项目信息卡以打开项目登陆页面并导航到 **上线** 部分，如下图所示。
 
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->請參閱 [在Cloud Acceleration Manager中建立和管理專案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) 以深入瞭解。
+>请参阅 [在Cloud Acceleration Manager中创建和管理项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project) 了解更多信息。
 
 
-## 使用上線活動卡 {#go-live}
+## 使用上线活动信息卡 {#go-live}
 
-請詳閱本節，以探索「上線」活動卡：
+阅读本节内容，探索上线活动信息卡：
 
-1. 按一下 **檢視** 按鈕來自 **上線** 卡片。
+1. 单击 **视图** 按钮来自 **上线** 信息卡。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
-1. 內容輪播會顯示移轉歷程這個階段的相關資訊。
+1. 内容轮播会显示此阶段迁移历程的相关信息。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)

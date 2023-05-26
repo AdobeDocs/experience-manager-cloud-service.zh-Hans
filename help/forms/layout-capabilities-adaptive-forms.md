@@ -1,7 +1,7 @@
 ---
-title: Adaptive Forms的版面配置功能
+title: 自适应Forms的布局功能
 seo-title: Layout capabilities of Adaptive Forms
-description: Adaptive Forms在各種裝置上的版面配置與外觀是由版面配置設定所控管。 瞭解各種版面以及如何套用它們。
+description: 自适应Forms在各种设备上的布局和外观受布局设置控制。 了解各种布局及其应用方式。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
@@ -10,103 +10,103 @@ ht-degree: 0%
 
 ---
 
-# Adaptive Forms的版面配置功能 {#layout-capabilities-of-adaptive-forms}
+# 自适应Forms的布局功能 {#layout-capabilities-of-adaptive-forms}
 
-[!DNL Adobe Experience Manager] 可讓您建立簡單易用的最適化Forms，為使用者提供動態體驗。 表單版面配置會控制專案或元件在最適化表單中的顯示方式。
+[!DNL Adobe Experience Manager] 可让您创建易于使用的自适应Forms，为最终用户提供动态体验。 表单布局控制项或组件在自适应表单中的显示方式。
 
 <!-- ## Prerequisite knowledge {#prerequisite-knowledge}
 
 Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms. -->
 
-## 版面型別 {#types-of-layouts}
+## 布局类型 {#types-of-layouts}
 
-最適化表單提供下列版面型別：
+自适应表单为您提供以下类型的布局：
 
-**[!UICONTROL 面板配置]** 控制面板內的專案或元件在裝置上的顯示方式。
+**[!UICONTROL 面板布局]** 控制面板中的项目或组件在设备上的显示方式。
 
-**[!UICONTROL 行動佈局]** 控制行動裝置上表單的導覽。 如果裝置寬度為768畫素或更高，此版面會被視為行動版面，並針對行動裝置進行最佳化。
+**[!UICONTROL 移动设备布局]** 控制表单在移动设备上的导航。 如果设备宽度为768像素或更高，则布局被视为移动设备布局并适用于移动设备。
 
-**[!UICONTROL 工具列配置]** 控制動作按鈕在表單中工具列或面板工具列中的位置。
+**[!UICONTROL 工具栏布局]** 控制操作按钮在表单工具栏或面板工具栏中的位置。
 
-所有這些面板配置均定義於 `/libs/fd/af/layouts` 位置。
+所有这些面板布局都定义在 `/libs/fd/af/layouts` 位置。
 
-若要變更最適化表單的版面，請在以下位置使用製作模式： [!DNL Experience Manager].
+要更改自适应表单的布局，请在以下位置使用创作模式 [!DNL Experience Manager].
 
 ## [!UICONTROL 面板布局] {#panel-layout}
 
-表單作者可以將版面配置與最適化表單的每個面板相關聯，包括根面板。
+表单作者可以将布局与自适应表单的每个面板（包括根面板）关联。
 
-面板配置位於 `/libs/fd/af/layouts/panel` 位置。 點選面板並選取 ![cmppr1](assets/configure-icon.svg) 以檢視面板屬性。
+面板布局位于 `/libs/fd/af/layouts/panel` 位置。 点按面板并选择 ![cmppr1](assets/configure-icon.svg) 查看面板属性。
 
-![最適化表單根面板的面板配置清單](assets/layouts.png)
+![自适应表单的根面板的面板布局列表](assets/layouts.png)
 
-### [!UICONTROL Responsive — 全部於單頁無需導覽] {#responsive-everything-on-one-page-without-navigation-br}
+### [!UICONTROL 响应式 — 页面上的所有内容，无需导航] {#responsive-everything-on-one-page-without-navigation-br}
 
-使用此面板版面配置可建立回應式版面，此版面可依裝置的熒幕大小進行調整，而不需要任何專門的導覽。
+使用此面板布局可创建响应式布局，该布局可调整到设备的屏幕大小，而无需任何专门的导航。
 
-使用此版面，您可以放置多個 **[!UICONTROL 面板最適化表單]** 元件在面板中一個接一個。
+使用此布局，您可以放置多个 **[!UICONTROL 面板自适应表单]** 组件在面板中逐个显示。
 
-![使用回應式版面的表單（如小熒幕所示）](assets/responsive-layout.png)
+![使用响应式布局的表单，如小屏幕上所示](assets/responsive-layout.png)
 
 ### [!UICONTROL 向导] {#wizard}
 
-使用此面板版面配置在表單內提供引導式導覽。 例如，當您想要在表單中擷取必要資訊，同時逐步引導使用者時，請使用此版面。
+使用此面板布局可在表单中提供引导式导航。 例如，当您要在表单中捕获必填信息时分步引导用户时，可使用此布局。
 
-使用 **[!UICONTROL 面板最適化表單]** 元件，在面板內提供逐步導覽。 使用此版面配置時，使用者只會在目前步驟完成後移至下一個步驟
+使用 **[!UICONTROL 面板自适应表单]** 组件，用于在面板中提供分步导航。 使用此布局时，用户仅在当前步骤完成后才移至下一步
 
 ```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
-![使用精靈配置的表單](assets/wizard-layout2.png)
+![使用向导布局的表单](assets/wizard-layout2.png)
 
 ### [!UICONTROL 折叠] {#layout-for-accordion-design}
 
-使用此版面，您可以放置 **[!UICONTROL 面板最適化表單]** 面板中的元件，具有摺疊式功能表樣式導覽。 使用此版面，您也可以建立可重複的面板。 可重複面板可讓您視需要動態新增或移除面板。 您可以定義面板重複的最小和最大次數。 此外，面板的標題可以根據面板專案中提供的資訊動態確定。
+使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 面板中具有折叠样式导航的组件。 使用此布局，您还可以创建可重复的面板。 可重复面板允许您根据需要动态添加或移除面板。 您可以定义面板重复的最小和最大次数。 此外，可以根据面板项中提供的信息来动态地确定面板的标题。
 
-摘要運算式可用來顯示一般使用者在最小化面板標題中提供的值。
+摘要表达式可用于显示最终用户在最小化面板的标题中提供的值。
 
-![在Adaptive Forms中使用摺疊式面板版面的可重複面板](assets/accordion-layout.png)
+![在自适应Forms中使用折叠布局的可重复面板](assets/accordion-layout.png)
 
-### [!UICONTROL 索引標籤版面配置 — 索引標籤顯示在左側 ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL 选项卡式布局 — 选项卡显示在左侧 ]{#tabbed-layout-tabs-appear-on-the-left}
 
-使用此版面，您可以放置 **[!UICONTROL 面板最適化表單]** 具有索引標籤導覽的面板中的元件。 標籤會放置在面板內容的左側。
+使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 带选项卡导航的面板中的组件。 选项卡位于面板内容的左侧。
 
-![在「索引標籤」配置圖中，索引標籤會顯示在左側](assets/tabs-on-left.png)
+![在选项卡式布局中，选项卡显示在左侧](assets/tabs-on-left.png)
 
-出現在面板左側的索引標籤
+显示在面板左侧的选项卡
 
-### [!UICONTROL 索引標籤版面配置 — 索引標籤顯示在頂端] {#tabbed-layout-tabs-appear-on-the-top}
+### [!UICONTROL 选项卡式布局 — 选项卡显示在顶部] {#tabbed-layout-tabs-appear-on-the-top}
 
-使用此版面，您可以放置 **[!UICONTROL 面板最適化表單]** 具有索引標籤導覽的面板中的元件。 索引標籤會放置在面板內容的頂端。
+使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 具有选项卡导航的面板中的组件。 选项卡位于面板内容的顶部。
 
-![最適化Forms中的索引標籤版面，頂端有索引標籤](assets/tabs-on-top.png)
+![带有顶部选项卡的自适应Forms中的选项卡式布局](assets/tabs-on-top.png)
 
-## 行動版面配置 {#mobile-layouts}
+## 移动设备布局 {#mobile-layouts}
 
-行動版面配置可在熒幕較小之行動裝置上進行方便好用的導覽。 行動版面會使用索引標籤或精靈樣式來進行表單導覽。 套用行動版面配置可為整個表單提供單一版面配置。
+移动设备布局允许在屏幕相对较小的移动设备上进行用户友好的导航。 移动设备布局使用选项卡式或向导式样式进行表单导航。 应用移动设备布局可为整个表单提供单个布局。
 
-此版面配置會使用導覽列和導覽功能表來控制導覽。 導覽列隨即顯示 **&lt;** 和 **>** 圖示表示 **[!UICONTROL 下一個]** 和 **[!UICONTROL 上一個]** 表單中的導覽步驟。
+此布局使用导航栏和导航菜单控制导航。 导航栏显示 **&lt;** 和 **>** 图标，指示 **[!UICONTROL 下一个]** 和 **[!UICONTROL 上一个]** 表单中的导航步骤。
 
-行動版面配置位於 `/libs/fd/af/layouts/mobile/` 位置。 下列行動版面預設可在Adaptive Forms中使用。
+移动设备布局位于 `/libs/fd/af/layouts/mobile/` 位置。 默认情况下，自适应Forms中提供了以下移动设备布局。
 
-![Adaptive Forms中的行動版面清單](assets/mobile-navigation.png)
+![自适应Forms中的移动设备布局列表](assets/mobile-navigation.png)
 
-選取 **[!UICONTROL 將回應式版面的可導覽專案新增至行動功能表]** 選項以檢視適用於行動版面配置中面板的可導覽選項。 可導覽選項只有在選取 **[!UICONTROL 回應式]** 面板的配置。
+选择 **[!UICONTROL 将响应布局的可导航项目添加到移动设备菜单]** 选项以查看可用于移动设备布局中面板的导航选项。 仅当您选择时，可导航选项才可见 **[!UICONTROL 响应式]** 面板布局。
 
-使用行動版面時，可點選表單功能表來存取各種表單面板 ![aem6forms_form_menu](assets/rail-icon.svg) 圖示。
+使用移动设备布局时，可通过点按访问各种表单面板的表单菜单 ![aem6forms_form_menu](assets/rail-icon.svg) 图标。
 
-### [!UICONTROL 在表單標題中使用面板標題的佈局] {#layout-with-panel-titles-in-the-form-header}
+### [!UICONTROL 表单标题中具有面板标题的布局] {#layout-with-panel-titles-in-the-form-header}
 
-如名稱所示，此版面會顯示面板標題以及導覽功能表和導覽列。 此版面配置也提供用於導覽的「下一個」和「上一個」圖示。
+顾名思义，此布局显示面板标题以及导航菜单和导航栏。 此布局还提供用于导航的“下一个”和“上一个”图标。
 
-![行動版面配置在表單標題中具有面板標題](assets/mobile-layout1.png)
+![在表单标题中具有面板标题的移动布局](assets/mobile-layout1.png)
 
-### [!UICONTROL 版面配置中表單標題沒有面板標題 ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL 表单标题中没有面板标题的布局 ]{#layout-without-panel-titles-in-the-form-header}
 
-如名稱所建議，此版面只會顯示導覽功能表和導覽列，而不會顯示面板標題。 此版面配置也提供用於導覽的「下一個」和「上一個」圖示。
+顾名思义，此布局仅显示没有面板标题的导航菜单和导航栏。 此布局还提供用于导航的“下一个”和“上一个”图标。
 
-![行動版面在表單標題中沒有面板標題](assets/mobile-layout2.png)
+![表单标题中没有面板标题的移动布局](assets/mobile-layout2.png)
 
 <!-- ## Toolbar layouts {#toolbar-layouts}
 

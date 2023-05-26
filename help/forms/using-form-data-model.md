@@ -1,6 +1,6 @@
 ---
-title: 如何使用表單資料模型？
-description: 瞭解如何根據表單資料模型建立最適化Forms和最適化表單片段。 透過為表單資料模型中的資料模型物件產生和編輯範例資料，深入瞭解。 您可以使用此資料來預覽和測試Adaptive Forms。
+title: 如何使用表单数据模型？
+description: 了解如何根据表单数据模型创建自适应Forms和自适应表单片段。 通过为表单数据模型中的数据模型对象生成和编辑样本数据深入了解。 您可以使用此数据预览和测试自适应Forms。
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
@@ -14,52 +14,52 @@ ht-degree: 0%
 
 # 使用表单数据模型 {#use-form-data-model}
 
-![資料整合](do-not-localize/data-integeration.png)
+![数据集成](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] 資料整合可讓您使用不同的後端資料來源，建立可作為各種最適化Forms中的結構描述的表單資料模型 <!--and interactive communications--> 工作流程。 它需要根據資料來源中可用的資料模型物件和服務來設定資料來源和建立表單資料模型。 如需詳細資訊，請參閱下列內容：
+[!DNL Experience Manager Forms] 通过数据集成，您可以使用不同的后端数据源来创建表单数据模型，以将其用作各种自适应Forms中的架构 <!--and interactive communications--> 工作流。 它需要根据数据源中可用的数据模型对象和服务配置数据源并创建表单数据模型。 有关更多信息，请参阅以下内容：
 
-* [[!DNL Experience Manager Forms] 資料整合](data-integration.md)
+* [[!DNL Experience Manager Forms] 数据集成](data-integration.md)
 * [配置数据源](configure-data-sources.md)
-* [建立表單資料模型](create-form-data-models.md)
-* [使用表單資料模型](work-with-form-data-model.md)
+* [创建表单数据模型](create-form-data-models.md)
+* [使用表单数据模型](work-with-form-data-model.md)
 
-表單資料模型是JSON結構描述的擴充功能，可用於：
+表单数据模型是JSON架构的扩展，可用于执行以下操作：
 
-* [建立Adaptive Forms和片段](#create-af)
+* [创建自适应Forms和片段](#create-af)
 
    <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
-* [使用範例資料預覽](#preview-ic)
-* [使用表單資料模型服務](#prefill)
-* [將提交的最適化表單資料寫入回資料來源](#write-af)
-* [使用最適化表單規則叫用服務](#invoke-services)
+* [使用示例数据预览](#preview-ic)
+* [使用表单数据模型服务](#prefill)
+* [将提交的自适应表单数据写回数据源](#write-af)
+* [使用自适应表单规则调用服务](#invoke-services)
 
-## 建立Adaptive Forms和片段 {#create-af}
+## 创建自适应Forms和片段 {#create-af}
 
-您可以建立 [最適化Forms](creating-adaptive-form.md) 和自適應表單片段 <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> 根據表單資料模型。 執行下列動作，在建立最適化表單或最適化表單片段時使用表單資料模型：
+您可以创建 [自适应Forms](creating-adaptive-form.md) 和自适应表单片段 <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> 基于表单数据模型。 创建自适应表单或自适应表单片段时，请执行以下操作以使用表单数据模型：
 
-1. 在「新增屬性」畫面的「表單模型」標籤中，選取 **[!UICONTROL 表單資料模型]** 在 **[!UICONTROL 選擇來源]** 下拉式清單。
+1. 在添加属性屏幕上的表单模型选项卡中，选择 **[!UICONTROL 表单数据模型]** 在 **[!UICONTROL 选择自]** 下拉列表。
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. 點選以展開 **[!UICONTROL 選取表單資料模型]**. 所有可用的表單資料模型都會列出。
+1. 点按以展开 **[!UICONTROL 选择表单数据模型]**. 将列出所有可用的表单数据模型。
 
-   從資料模型中選取。
+   从数据模型中选择一个。
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-1. (**僅最適化表單片段**)您可以根據表單資料模型中只有一個資料模型物件來建立最適化表單片段。 展開 **[!UICONTROL 表單資料模型定義]** 下拉式清單。 它會列出指定表單資料模型中的所有資料模型物件。 從清單中選取資料模型物件。
+1. (**仅自适应表单片段**)您可以仅根据表单数据模型中一个数据模型对象创建自适应表单片段。 展开 **[!UICONTROL 表单数据模型定义]** 下拉菜单。 它列出了指定表单数据模型中的所有数据模型对象。 从列表中选择一个数据模型对象。
 
    ![create-af-3](assets/create-af-3.png)
 
-   根據表單資料模型的最適化表單或最適化表單片段建立後，表單資料模型物件會出現在 **[!UICONTROL 資料來源]** 最適化表單編輯器中內容瀏覽器的索引標籤。
+   创建基于表单数据模型的自适应表单或自适应表单片段后，表单数据模型对象将显示在 **[!UICONTROL 数据源]** 在自适应表单编辑器中，选择内容浏览器的选项卡。
 
    >[!NOTE]
    >
-   >針對最適化表單片段，只有編寫時選取的資料模型物件及其關聯的資料模型物件會出現在資料來源標籤中。
+   >对于自适应表单片段，只有创作时选择的数据模型对象及其关联的数据模型对象会显示在数据源选项卡中。
 
    ![data-model-objects-tab](assets/data-model-objects-tab.png)
 
-   您可以將資料模型物件拖放至Adaptive Form或片段以新增表單欄位。 新增的表單欄位會保留中繼資料屬性，並與資料模型物件屬性繫結。 繫結可確保欄位值在表單提交時更新到對應的資料來源中，並在表單轉譯時預先填充。
+   您可以将数据模型对象拖放到自适应表单或片段上以添加表单字段。 添加的表单字段保留元数据属性，并与数据模型对象属性绑定。 绑定可确保字段值在表单提交时更新到对应的数据源中，并在表单呈现时预填充。
 
 <!-- ## Create interactive communications {#create-ic}
 
@@ -81,9 +81,9 @@ For more information, see:
 
 [List fragments](lists.md) -->
 
-## 使用範例資料預覽 {#preview-ic}
+## 使用示例数据预览 {#preview-ic}
 
-表單資料模型編輯器可讓您為表單資料模型中的資料模型物件產生和編輯範例資料。 您可以使用此資料來預覽和測試 <!--interactive communications and--> 最適化Forms。 您必須在預覽之前產生範例資料，如所述 [使用表單資料模型](work-with-form-data-model.md#sample).
+表单数据模型编辑器允许您生成和编辑表单数据模型中数据模型对象的示例数据。 您可以使用此数据来预览和测试 <!--interactive communications and--> 自适应Forms。 在预览之前必须生成示例数据，如中所述 [使用表单数据模型](work-with-form-data-model.md#sample).
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -95,15 +95,15 @@ The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-若要預覽含有範例資料的最適化表單，請在作者模式中開啟最適化表單，然後點選 **[!UICONTROL 預覽]**.
+要预览包含示例数据的自适应表单，请在创作模式下打开自适应表单，然后点按 **[!UICONTROL 预览]**.
 
-## 使用表單資料模型服務預填 {#prefill}
+## 使用表单数据模型服务预填充 {#prefill}
 
-[!DNL Experience Manager Forms] 提供現成可用的表單資料模型預填服務，您可針對最適化Forms啟用此服務 <!--and interactive communications--> 根據表單資料模型。 預填服務會查詢最適化表單中資料模型物件的資料來源 <!--and interactive communication--> 並因此在呈現表單或通訊時預先填入資料。
+[!DNL Experience Manager Forms] 提供现成的表单数据模型预填充服务，您可以为自适应Forms启用该服务 <!--and interactive communications--> 基于表单数据模型。 预填充服务在自适应表单中查询数据模型对象的数据源 <!--and interactive communication--> 并相应地预填充数据，同时呈现表单或通信。
 
-若要啟用最適化表單的表單資料模型預填服務，請開啟最適化表單容器屬性，然後選取 **[!UICONTROL 表單資料模型預填服務]** 從 **[!UICONTROL 預填服務]** 基本摺疊式功能表中的下拉式清單。 然後，儲存屬性。
+要为自适应表单启用表单数据模型预填充服务，请打开自适应表单容器属性，然后选择 **[!UICONTROL 表单数据模型预填充服务]** 从 **[!UICONTROL 预填充服务]** 基本折叠面板中的下拉列表。 然后，保存属性。
 
-![預填服務](assets/prefill-service.png)
+![预填充服务](assets/prefill-service.png)
 
 <!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
@@ -111,33 +111,33 @@ The interactive communication opens with prefilled sample data.
 
 Edit Properties dialog for an interactive communication-->
 
-## 將提交的最適化表單資料寫入資料來源 {#write-af}
+## 将提交的自适应表单数据写入数据源 {#write-af}
 
-當使用者根據表單資料模型提交表單時，您可以設定表單以將資料模型物件的提交資料寫入其資料來源。 若要達成此使用案例， [!DNL Experience Manager Forms] 提供 [表單資料模型提交動作](configuring-submit-actions.md)，現成僅可用於根據表單資料模型的最適化Forms。 它將資料模型物件的已提交資料寫入其資料來源中。
+当用户提交基于表单数据模型的表单时，您可以配置表单以将数据模型对象的已提交数据写入其数据源。 要实现此用例， [!DNL Experience Manager Forms] 提供 [表单数据模型提交操作](configuring-submit-actions.md)，仅适用于基于表单数据模型的自适应Forms。 它将为数据模型对象提交的数据写入其数据源。
 
-若要設定表單資料模型提交動作，請開啟最適化表單容器屬性，然後選取 **[!UICONTROL 使用表單資料模型提交]** 從「提交」設定追蹤器下的「提交動作」下拉式清單。 然後，瀏覽並選取資料模型物件，從 **[!UICONTROL 要提交的資料模型物件的名稱]** 下拉式清單。 儲存屬性。
+要配置表单数据模型提交操作，请打开自适应表单容器属性并选择 **[!UICONTROL 使用表单数据模型提交]** 从“提交”折叠面板下的“提交操作”下拉列表中。 然后，浏览并选择数据模型对象 **[!UICONTROL 要提交的数据模型对象的名称]** 下拉菜单。 保存属性。
 
-在表單提交時，會將已設定資料模型物件的資料寫入各自的資料來源。
+在表单提交时，将配置的数据模型对象的数据写入各自的数据源。
 
 <!--![data-submission](assets/data-submission.png)-->
 
-您也可以使用二進位資料模型物件屬性，將表單附件提交至資料來源。 執行下列動作，將附件提交至JDBC資料來源：
+您还可以使用二进制数据模型对象属性将表单附件提交到数据源。 执行以下操作以将附件提交到JDBC数据源：
 
-1. 將包含二進位屬性的資料模型物件新增至表單資料模型。
-1. 在最適化表單中，拖放 **[!UICONTROL 檔案附件]** 元件從元件瀏覽器移至最適化表單。
-1. 點選以選取新增的元件，然後點選 ![settings_icon](assets/configure-icon.svg) 以開啟元件的「屬性」瀏覽器。
-1. 在「繫結參考」欄位中，點選 ![foldersearch_18](assets/folder-search-icon.svg) 並導覽以選取您在表單資料模型中新增的二進位屬性。 視需要設定其他屬性。
+1. 将包含二进制属性的数据模型对象添加到表单数据模型。
+1. 在自适应表单中，拖放 **[!UICONTROL 文件附件]** 组件浏览器中的组件加载到自适应表单上。
+1. 点按以选择添加的组件，然后点按 ![settings_icon](assets/configure-icon.svg) 以打开组件的属性浏览器。
+1. 在绑定引用字段中，点按 ![foldersearch_18](assets/folder-search-icon.svg) 并导航以选择您在表单数据模型中添加的二进制属性。 根据需要配置其他属性。
 
-   點選 ![check — 按鈕](assets/save_icon.svg) 以儲存屬性。 附件欄位現在已繫結至表單資料模型的二進位屬性。
+   点按 ![check-button](assets/save_icon.svg) 以保存属性。 附件字段现在绑定到表单数据模型的二进制属性。
 
-1. 在最適化表單容器屬性的提交區段中，啟用 **[!UICONTROL 提交表單附件]**. 它會在表單提交時，將二進位屬性欄位中的附件提交至資料來源。
+1. 在自适应表单容器属性的“提交”部分中，启用 **[!UICONTROL 提交表单附件]**. 在提交表单时，它将二进制属性字段中的附件提交到数据源。
 
-## 使用規則在Adaptive Forms中叫用服務 {#invoke-services}
+## 使用规则在自适应Forms中调用服务 {#invoke-services}
 
-在基於表單資料模型的最適化表單中，您可以 [建立規則](rule-editor.md) 以叫用表單資料模型中設定的服務。 此 **[!UICONTROL 叫用服務]** 規則中的操作會列出表單資料模型中的所有可用服務，並允許您為服務選取輸入和輸出欄位。 您也可以使用 **[!UICONTROL 設定值]** 用於叫用表單資料模型服務並將欄位值設定為服務傳回的輸出的規則型別。
+在基于表单数据模型的自适应表单中，您可以 [创建规则](rule-editor.md) 以调用在表单数据模型中配置的服务。 此 **[!UICONTROL 调用服务]** 规则中的操作列出了表单数据模型中的所有可用服务，并允许您选择服务的输入和输出字段。 您还可以使用 **[!UICONTROL 设置值]** 用于调用表单数据模型服务并将字段的值设置为服务返回的输出的规则类型。
 
-例如，下列規則會叫用以Employee Id作為輸入的get服務，而傳回的值會填入表單中對應的Dependent Id、Last Name、First Name和Gender欄位。
+例如，以下规则调用一个将Employee ID作为输入的get服务，并且返回的值填充到表单中相应的Dependent ID、Last Name、First Name和Gender字段中。
 
 ![invoke-service](assets/invoke-service.png)
 
-此外，您可以使用 `guidelib.dataIntegrationUtils.executeOperation` API可在規則編輯器的程式碼編輯器中寫入JavaScript。 <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+此外，您还可以使用 `guidelib.dataIntegrationUtils.executeOperation` 用于在规则编辑器的代码编辑器中编写JavaScript的API。 <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->

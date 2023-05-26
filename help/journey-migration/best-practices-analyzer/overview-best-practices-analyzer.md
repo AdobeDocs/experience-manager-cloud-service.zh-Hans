@@ -20,11 +20,11 @@ ht-degree: 68%
 
 此工具会生成一个报告，用于标识潜在重构的区域，这是迁移到 AEM as a Cloud Service 的历程中的第一步。
 
-## Best Practices Analyzer報告 {#bpa-report}
+## Best Practices Analyzer报告 {#bpa-report}
 
 最佳实践分析器报告可用于概要了解一般升级就绪性。该报告包含在成功部署到 AEM as a Cloud Service 之前必须解决的各类问题的发现结果。
 
-Best Practices Analyzer報表包含下列類別：
+Best Practices Analyzer报告包括以下类别：
 
 * 必须重构的应用程序功能
 * 必须移至受支持位置的存储库项目
@@ -32,9 +32,9 @@ Best Practices Analyzer報表包含下列類別：
 * 部署和配置问题
 * 已被新功能取代或 AEM as a Cloud Service 当前不支持的 AEM 6.x 功能
 
-若需這些類別以及這些類別可能的相關影響和解決方案的其他資訊，可透過最佳實務分析報表中的連結取得。
+通过最佳实践分析器报告中的链接，可访问这些类别以及与这些类别相关的可能影响和解决方案的更多信息。
 
 >[!NOTE]
->最佳實務分析報告會提供原本必須手動收集和評估的資訊，以加速評估轉換為AEMas a Cloud Service所需的時間和成本。
+>最佳实践分析器报告通过提供原本必须手动收集和评估的信息，加快了迁移到AEMas a Cloud Service所需的时间和成本的评估过程。
 
-您也可以從AEM執行個體下載Best Practices Analyzer報表。 請參閱 [檢視Best Practices Analyzer報表](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 以取得更多詳細資料。
+您还可以从AEM实例下载最佳实践分析器报告。 请参阅 [查看Best Practices Analyzer报告](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 了解更多详细信息。

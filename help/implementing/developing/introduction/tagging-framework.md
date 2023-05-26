@@ -1,6 +1,6 @@
 ---
 title: AEM 标记框架
-description: 標籤內容並運用AEM標籤基礎架構，以便將其分類並組織。
+description: 标记内容并利用AEM标记基础架构对其进行分类和整理。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
 workflow-type: tm+mt
@@ -9,84 +9,84 @@ ht-degree: 0%
 
 ---
 
-# AEM標籤架構 {#aem-tagging-framework}
+# AEM标记框架 {#aem-tagging-framework}
 
-標籤可讓內容分類並整理。 標籤可依名稱空間和分類法來分類。 如需使用標籤的詳細資訊：
+标记允许对内容进行分类和整理。 标记可以按命名空间和分类法进行分类。 有关使用标记的详细信息：
 
-* 另請參閱 [使用標籤](/help/sites-cloud/authoring/features/tags.md) 有關將內容標籤為內容作者的資訊。
-* 請參閱管理標籤，以取得管理員對於建立和管理標籤以及已對哪些內容套用的觀點。
+* 参见 [使用标记](/help/sites-cloud/authoring/features/tags.md) 有关将内容标记为内容作者的信息。
+* 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅管理标记，这是管理员的视角。
 
-本文將著重於支援AEM中標籤的基本架構，以及如何以開發人員的身分加以運用。
+本文重点介绍支持AEM中标记的基础框架以及如何作为开发人员利用它。
 
 ## 简介 {#introduction}
 
-若要標籤內容並運用AEM標籤基礎結構：
+要标记内容并利用AEM标记基础架构，请执行以下操作：
 
-* 標籤必須作為型別的節點存在 [`cq:Tag`](#cq-tag-node-type) 在 [分類根節點。](#taxonomy-root-node)
-* 標籤的內容節點的 `NodeType` 必須包括 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
-* 此 [`TagID`](#tagid) 新增至內容節點的 [`cq:tags`](#cq-tags-property) 屬性並解析為型別的節點 [`cq:Tag`.](#cq-tag-node-type)
+* 标记必须作为类型的节点存在 [`cq:Tag`](#cq-tag-node-type) 在 [分类根节点。](#taxonomy-root-node)
+* 标记的内容节点的 `NodeType` 必须包括 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin。
+* 此 [`TagID`](#tagid) 添加到内容节点的 [`cq:tags`](#cq-tags-property) 属性并解析为类型的节点 [`cq:Tag`.](#cq-tag-node-type)
 
-## cq：Tag節點型別 {#cq-tag-node-type}
+## cq：Tag节点类型 {#cq-tag-node-type}
 
-標籤的宣告會擷取到存放庫中的型別節點中 `cq:Tag.`
+标记声明在存储库中捕获的节点类型为 `cq:Tag.`
 
-* 標籤可以是簡單的單字(例如， `sky`)或代表階層式分類法(例如， `fruit/apple`，代表類屬水果和更具體的蘋果)。
-* 標籤由唯一的 `TagID`.
-* 標籤具有可選的中繼資訊，例如標題、當地語系化的標題和說明。 標題應顯示在使用者介面中，而非 `TagID`，則為目前狀態。
+* 标记可以是一个简单的单词(例如， `sky`)或表示分层分类(例如， `fruit/apple`即普通水果和更具体的苹果)。
+* 标记由唯一的 `TagID`.
+* 标记具有可选的中继信息，例如标题、本地化的标题和描述。 标题应显示在用户界面中，而不是 `TagID`，如果存在。
 
-標籤架構也提供將作者和網站訪客限製為僅使用特定、預先定義的標籤的功能。
+标记框架还提供了将作者和网站访客限制为仅使用特定的预定义标记的功能。
 
-### 標籤特性 {#tag-characteristics}
+### 标记特征 {#tag-characteristics}
 
-* 節點型別為 `cq:Tag`.
-* 節點名稱是 [`TagID`.](#tagid)
-* 此 [`TagID`](#tagid) 一律包含 [名稱空間。](#tag-namespace)
-* 此 `jcr:title` 屬性（在UI中顯示的標題）為選用。
-* 此 `jcr:description` 屬性為選用。
-* 包含子節點時，稱為 [容器標籤。](#container-tags)
-* 標籤儲存在存放庫中，位於名為的基本路徑下方 [分類根節點。](#taxonomy-root-node)
+* 节点类型为 `cq:Tag`.
+* 节点名称是 [`TagID`.](#tagid)
+* 此 [`TagID`](#tagid) 始终包括 [命名空间。](#tag-namespace)
+* 此 `jcr:title` 属性（UI中显示的标题）是可选的。
+* 此 `jcr:description` 属性是可选的。
+* 当包含子节点时，称为 [容器标记。](#container-tags)
+* 标记存储在存储库中名为的基本路径的下方 [分类根节点。](#taxonomy-root-node)
 
 ### 标记 ID {#tagid}
 
-A `TagID` 會識別解析成存放庫中的標籤節點的路徑。
+A `TagID` 标识解析为存储库中标记节点的路径。
 
-通常， `TagID` 是縮寫 `TagID` 從名稱空間開始，也可以是絕對的 `TagID` 從 [分類根節點。](#taxonomy-root-node)
+通常， `TagID` 是一个缩写 `TagID` 以命名空间开头，也可以是绝对的 `TagID` 从 [分类根节点。](#taxonomy-root-node)
 
-標籤內容時，如果內容尚不存在， [`cq:tags`](#cq-tags-property) 屬性會新增至內容節點，且 `TagID` 新增至屬性的 `String` 陣列值。
+标记内容时，如果内容尚不存在，则 [`cq:tags`](#cq-tags-property) 属性将添加到内容节点，并且 `TagID` 添加到属性的 `String` 数组值。
 
-此 `TagID` 由以下專案組成： [名稱空間](#tag-namespace) 後面跟著本機 `TagID`. [容器標籤](#container-tags) 具有代表分類法中階層順序的子標籤。 子標籤可用於參照與任何本機標籤相同的標籤 `TagID`. 例如，使用標籤內容 `fruit` 即使它是具有子標籤的容器標籤也允許，例如 `fruit/apple` 和 `fruit/banana`.
+此 `TagID` 包含 [命名空间](#tag-namespace) 随后是本地 `TagID`. [容器标记](#container-tags) 具有表示分类法中层次结构顺序的子标记。 子标记可用于引用与任何本地标记相同的标记 `TagID`. 例如，使用标记内容 `fruit` 允许，即使它是带有子标记的容器标记也是如此，例如 `fruit/apple` 和 `fruit/banana`.
 
-### 分類根節點 {#taxonomy-root-node}
+### 分类根节点 {#taxonomy-root-node}
 
-分類根節點是存放庫中所有標籤的基本路徑。 分類根節點必須 *not* 為型別的節點 `cq:Tag`.
+分类根节点是存储库中所有标记的基本路径。 分类根节点必须 *非* 为类型的节点 `cq:Tag`.
 
-在AEM中，基底路徑為 `/content/cq:tags` 且根節點的型別為 `cq:Folder`.
+在AEM中，基本路径为 `/content/cq:tags` 并且根节点的类型为 `cq:Folder`.
 
-### 標籤名稱空間 {#tag-namespace}
+### 标记命名空间 {#tag-namespace}
 
-名稱空間允許將專案分組。 最典型的使用案例是每個網站或大型應用程式（例如Sites或Assets）都有一個名稱空間（例如公用和內部），但名稱空間可用於各種其他需求。 在使用者介面中使用名稱空間，以僅顯示適用於目前內容的標籤子集（即特定名稱空間的標籤）。
+命名空间允许对事物进行分组。 最典型的使用案例是每个站点或大型应用程序（例如，Sites或Assets）都有一个命名空间（例如公共与内部），但命名空间可用于各种其他需求。 命名空间在用户界面中用于仅显示适用于当前内容的标记（即特定命名空间的标记）的子集。
 
-標籤的名稱空間是分類子樹狀結構中的第一個層級，也就是 [分類根節點。](#taxonomy-root-node) 名稱空間是型別的節點 `cq:Tag` 其父項不是 `cq:Tag` 節點型別。
+标记的命名空间是分类子树中的第一级，即紧接在 [分类根节点。](#taxonomy-root-node) 命名空间是类型的节点 `cq:Tag` 其父项不是 `cq:Tag` 节点类型。
 
-所有標籤都有名稱空間。 如果未指定名稱空間，則會將標籤指派給預設名稱空間，也就是 `TagID` `default`，即 `/content/cq:tags/default`.  標題預設為 `Standard Tags`在這種情況下。
+所有标记都有一个命名空间。 如果未指定命名空间，则会将标记分配给默认命名空间，即 `TagID` `default`，即 `/content/cq:tags/default`.  标题默认为 `Standard Tags`在这种情况下。
 
-### 容器標籤 {#container-tags}
+### 容器标记 {#container-tags}
 
-容器標籤是型別的節點 `cq:Tag` 包含任何數量及型別的子節點，可讓您使用自訂中繼資料來增強標籤模型。
+容器标记是类型的节点 `cq:Tag` 包含任意数量和类型的子节点，这使得使用自定义元数据增强标记模型成为可能。
 
-此外，分類法中的容器標籤（或超級標籤）可作為所有子標籤的子加總：例如以下列標籤的內容： `fruit/apple` 視為已標籤 `fruit` 亦即，搜尋剛剛標籤的內容 `fruit` 也會找到以標籤的內容 `fruit/apple`.
+此外，分类法中的容器标记（或超级标记）充当所有子标记的子总和：例如，使用标记的内容 `fruit/apple` 被视为已标记 `fruit` 此外，即搜索刚刚使用标记的内容 `fruit` 也会找到带有以下标记的内容： `fruit/apple`.
 
-### 解析標籤ID {#resolving-tagids}
+### 解析标记ID {#resolving-tagids}
 
-如果標籤ID包含冒號(`:`)時，冒號會將名稱空間與標籤或子分類法分開，然後再以一般斜線(`/`)。 如果標籤ID沒有冒號，則會隱含預設名稱空間。
+如果标记ID包含冒号(`:`)，则冒号会将命名空间与标记或子分类分开，然后使用普通斜杠(`/`)。 如果标记ID没有冒号，则隐含默认命名空间。
 
-以下為標籤的標準及唯一位置 `/content/cq:tags`.
+下面是标记的标准位置（且是唯一位置） `/content/cq:tags`.
 
-參照不存在的路徑或不指向的路徑的標籤 `cq:Tag` 節點會被視為無效，並予以忽略。
+引用不存在的路径或不指向的路径的标记 `cq:Tag` 节点被视为无效，将被忽略。
 
-下表顯示一些範例 `TagID`及其元素，以及如何 `TagID` 解析為存放庫中的絕對路徑：
+下表显示了一些示例 `TagID`s、其元素，以及 `TagID` 解析为存储库中的绝对路径：
 
-| `TagID` | 命名空间 | 本機ID | 容器標籤 | 分葉標籤 | 存放庫絕對標籤路徑 |
+| `TagID` | 命名空间 | 本地Id | 容器标记 | 叶标记 | 存储库绝对标记路径 |
 |---|---|---|---|---|---|
 | `dam:fruit/apple/braeburn` | `dam` | `fruit/apple/braeburn` | `fruit`,`apple` | `braeburn` | `content/cq:tags/dam/fruit/apple/braeburn` |
 | `color/red` | `default` | `color/red` | `color` | `red` | `/content/cq:tags/default/color/red` |
@@ -94,46 +94,46 @@ A `TagID` 會識別解析成存放庫中的標籤節點的路徑。
 | `dam:` | `dam` | (无) | (无) | (无) | `/content/cq:tags/dam` |
 | `content/cq:tags/category/car` | `category` | `car` | `car` | `car` | `content/cq:tags/category/car` |
 
-### 標籤標題本地化 {#localization-of-tag-title}
+### 标记标题本地化 {#localization-of-tag-title}
 
-當標籤包含選用標題字串時 `jcr:title`，您可以新增屬性，將顯示的標題當地語系化 `jcr:title.<locale>`.
+当标记包含可选标题字符串时 `jcr:title`，可以通过添加属性来本地化要显示的标题 `jcr:title.<locale>`.
 
-如需詳細資訊，請參閱：
+有关更多详细信息，请参阅：
 
-* [不同語言的標籤，](tagging-applications.md#tags-in-different-languages) 說明作為開發人員使用API的情況
-* 管理不同語言的標籤，說明如何以管理員身分使用「標籤」主控台
+* [不同语言的标签，](tagging-applications.md#tags-in-different-languages) 其中描述如何作为开发人员使用API
+* 管理不同语言的标记，其中介绍了如何以管理员身份使用“标记”控制台
 
 ### 访问控制 {#access-control}
 
-標籤會作為節點存在於下的存放庫中 [分類根節點。](#taxonomy-root-node) 若要允許或拒絕作者和網站訪客在指定的名稱空間中建立標籤，可在存放庫中設定適當的ACL。
+标记作为节点存在于下的存储库中 [分类根节点。](#taxonomy-root-node) 通过在存储库中设置适当的ACL，可以允许或拒绝作者和网站访客在给定的命名空间中创建标记。
 
-拒絕某些標籤或名稱空間的讀取許可權將控制將標籤套用至特定內容的能力。
+拒绝某些标记或命名空间的读取权限将控制将标记应用于特定内容的能力。
 
 典型做法包括：
 
-* 允許 `tag-administrators` 群組/角色對所有名稱空間的寫入許可權(新增/修改 `/content/cq:tags`)。 此群組隨附AEM立即可用。
-* 允許使用者/作者讀取他們應該可以讀取的所有名稱空間（幾乎全部）。
-* 允許使用者/作者寫入對標籤應由使用者/作者自由定義的名稱空間的存取權(`add_node` 在 `/content/cq:tags/some_namespace`)
+* 允许 `tag-administrators` 对所有命名空间的组/角色写入权限(添加/修改 `/content/cq:tags`)。 此组提供开箱即用的AEM。
+* 允许用户/作者读取他们应该可以读取的所有命名空间（大多数是所有命名空间）。
+* 允许用户/作者写入对标记应由用户/作者自由定义的命名空间的访问权限(`add_node` 下 `/content/cq:tags/some_namespace`)
 
-## 可標籤內容：cq：Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## 可标记内容：cq：Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
-為了讓應用程式開發人員將標籤附加到內容型別，節點的註冊([CND](https://jackrabbit.apache.org/node-type-notation.html))必須包含 `cq:Taggable` mixin或 `cq:OwnerTaggable` mixin.
+为了使应用程序开发人员将标记附加到内容类型，节点的注册([CND](https://jackrabbit.apache.org/node-type-notation.html))必须包括 `cq:Taggable` mixin或 `cq:OwnerTaggable` mixin。
 
-此 `cq:OwnerTaggable` mixin，繼承自 `cq:Taggable`，表示內容可依所有者/作者分類。 在AEM中，它只是 `cq:PageContent` 節點。 此 `cq:OwnerTaggable` 標籤框架不需要mixin。
+此 `cq:OwnerTaggable` mixin，继承自 `cq:Taggable`，用于指示内容可以按所有者/作者进行分类。 在AEM中，它只是 `cq:PageContent` 节点。 此 `cq:OwnerTaggable` 标记框架不需要mixin。
 
 >[!NOTE]
 >
->建議僅在彙總內容專案的頂層節點(或其 `jcr:content` 節點)。 範例包括：
+>建议仅在聚合内容项目的顶级节点（或在其上）启用标记 `jcr:content` 节点)。 示例包括：
 >
->* 頁面(`cq:Page`)其中 `jcr:content`節點屬於型別 `cq:PageContent`，其中包括 `cq:Taggable` mixin.
->* 資產(`cq:Asset`)其中 `jcr:content/metadata` 節點一律具有 `cq:Taggable` mixin.
+>* 页面(`cq:Page`)，其中 `jcr:content`节点属于类型 `cq:PageContent`，其中包括 `cq:Taggable` mixin。
+>* 资产(`cq:Asset`)，其中 `jcr:content/metadata` 节点始终具有 `cq:Taggable` mixin。
 
 
-### 節點型別標籤法(CND) {#node-type-notation-cnd}
+### 节点类型表示法(CND) {#node-type-notation-cnd}
 
-節點型別定義以CND檔案的形式存在於存放庫中。 CND標籤法定義為 [JCR檔案。](https://jackrabbit.apache.org/node-type-notation.html).
+节点类型定义作为CND文件存在于存储库中。 CND表示法被定义为 [JCR文档。](https://jackrabbit.apache.org/node-type-notation.html).
 
-AEM中包含的「節點型別」的基本定義如下：
+AEM中包含的节点类型的基本定义如下：
 
 ```xml
 [cq:Tag] > mix:title, nt:base
@@ -150,54 +150,54 @@ AEM中包含的「節點型別」的基本定義如下：
     mixin
 ```
 
-## cq：tags屬性 {#cq-tags-property}
+## cq：tags属性 {#cq-tags-property}
 
-此 `cq:tags` 屬性是 `String` 用來儲存一或多個的陣列 `TagID`當作者或網站訪客將變數套用至內容時。 屬性只有在新增至使用定義的節點時才有意義 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
+此 `cq:tags` 属性是 `String` 用于存储一个或多个的数组 `TagID`当作者或网站访客将它们应用于内容时。 仅当添加到使用定义的节点时，属性才有意义 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin。
 
 >[!NOTE]
 >
->若要運用AEM標籤功能，自訂開發的應用程式不應定義以外的標籤屬性 `cq:tags`.
+>要利用AEM标记功能，自定义开发的应用程序不应定义以外的标记属性 `cq:tags`.
 
-## 移動和合併標籤 {#moving-and-merging-tags}
+## 移动和合并标记 {#moving-and-merging-tags}
 
-以下說明使用「標籤」主控台移動或合併標籤時，在存放庫中所產生的效果。
+下面说明了使用“标记”控制台移动或合并标记时在存储库中产生的效果。
 
-將標籤A移動或合併至下的標籤B時 `/content/cq:tags`：
+将标记A移动或合并到标记B中时 `/content/cq:tags`：
 
-* 標籤A未刪除並接收 `cq:movedTo` 屬性。
-   * `cq:movedTo` 指向標籤B。
-   * 此屬性表示標籤A已移動或合併至標籤B。
-   * 移動標籤B將會相應地更新此屬性。
-   * 標籤A因此會隱藏，並只會保留在存放庫中，以解析指向標籤A的內容節點中的標籤ID。
-   * 標籤垃圾回收器會移除標籤A之類的標籤，而內容節點不再指向這些標籤。
-   * 的特殊值 `cq:movedTo` 屬性為 `nirvana`，此專案會在刪除標籤時套用，但無法從存放庫中移除，因為有子標籤具有 `cq:movedTo` 必須保留。
-
-      >[!NOTE]
-      >
-      >此 `cq:movedTo` 只有在符合下列任一條件時，屬性才會新增至移動或合併的標籤：
-      >
-      > 1. 標籤用於內容中（這表示它有參考）。 或
-      > 1. 標籤具有已移動的子系。
-
-* 標籤B已建立（發生移動時）並接收 `cq:backlinks` 屬性。
-   * `cq:backlinks` 會將參照保持在另一個方向，即會保留所有已移至標籤B或與標籤B合併的標籤清單。
-   * 這通常需要保留 `cq:movedTo` 屬性是當標籤B移動/合併/刪除或是當標籤B啟動時的最新狀態，在這種情況下，其所有反向連結標籤也必須啟動。
+* 标记A未删除并接收 `cq:movedTo` 属性。
+   * `cq:movedTo` 指向标记B。
+   * 此属性表示标记A已移动或合并到标记B中。
+   * 移动标记B将相应地更新此属性。
+   * 标记A因此而隐藏，并且仅保留在存储库中以解决指向标记A的内容节点中的标记ID。
+   * 标记垃圾收集器会删除标记A等标记，内容节点不再指向这些标记。
+   * 的特殊值 `cq:movedTo` 属性为 `nirvana`，此变量在删除标记时应用，但无法从存储库中删除，因为存在带有标记的子标记 `cq:movedTo` 必须保留下来。
 
       >[!NOTE]
       >
-      >此 `cq:backlinks` 只有在符合下列任一條件時，屬性才會新增至移動或合併的標籤：
+      >此 `cq:movedTo` 仅当满足以下任一条件时，属性才会添加到已移动或已合并的标记中：
       >
-      > 1. 標籤用於內容中（這表示它有參考）。 或
-      > 1. 標籤具有已移動的子系。
+      > 1. 标记在内容中使用（这意味着它包含引用）。 或
+      > 1. 标记具有已移动的子项。
+
+* 创建标记B（如果移动）并接收 `cq:backlinks` 属性。
+   * `cq:backlinks` 保持对另一方向的引用，即保留已移动到标记B或与标记B合并的所有标记的列表。
+   * 这通常需要保留 `cq:movedTo` 属性是标记B移动/合并/删除或标记B激活时的最新属性，在这种情况下，还必须激活其所有反向链接标记。
+
+      >[!NOTE]
+      >
+      >此 `cq:backlinks` 仅当满足以下任一条件时，属性才会添加到已移动或已合并的标记中：
+      >
+      > 1. 标记在内容中使用（这意味着它包含引用）。 或
+      > 1. 标记具有已移动的子项。
 
 
-讀取 `cq:tags` 內容節點的屬性涉及以下解析度：
+阅读 `cq:tags` 内容节点的属性涉及以下分辨率：
 
-1. 如果底下沒有相符專案 `/content/cq:tags`，不會傳回任何標籤。
-1. 如果標籤具有 `cq:movedTo` 屬性集，則會接著參考的標籤ID。
-   * 只要後續的標籤具有 `cq:movedTo` 屬性。
-1. 如果追蹤的標籤沒有 `cq:movedTo` 屬性，則會讀取標籤。
+1. 如果下没有匹配项 `/content/cq:tags`，则不会返回任何标记。
+1. 如果标记具有 `cq:movedTo` 属性集内，将后跟引用的标记ID。
+   * 只要以下标记具有 `cq:movedTo` 属性。
+1. 如果后跟标记不包含 `cq:movedTo` 属性，则读取标记。
 
-若要在移動或合併標籤後發佈變更，請 `cq:Tag` 節點及其所有反向連結都必須複製。 在標籤管理主控台中啟動標籤時，會自動完成此作業。
+要在移动或合并标记后发布更改，请 `cq:Tag` 必须复制节点及其所有反向链接。 当在标记管理控制台中激活标记时，会自动完成此操作。
 
-稍後更新頁面的 `cq:tags` 屬性會自動清除舊參照。 由於透過API解析移動的標籤會傳回目的地標籤，因此會觸發此動作，進而提供目的地標籤ID。
+稍后对页面的 `cq:tags` 属性自动清理旧引用。 由于通过API解析移动的标记会返回目标标记，从而提供目标标记ID，因此会触发此事件。

@@ -1,6 +1,6 @@
 ---
-title: Markdown （資產 — 內容片段）
-description: 瞭解內容片段編輯器如何使用Markdown語法，讓您輕鬆建立Headless內容。
+title: Markdown（资产 — 内容片段）
+description: 了解内容片段编辑器如何使用Markdown语法，轻松地创建Headless内容。
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 # Markdown {#markdown}
 
-當您 [製作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，內容片段編輯器會使用 *markdown* 語法可讓您輕鬆撰寫Headless內容：
+当您 [创作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，内容片段编辑器使用 *Markdown* 语法让您能够轻松编写Headless内容：
 
 ![Markdown 编辑器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

@@ -443,8 +443,8 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
    ![比较语言副本](../assets/language-copy-compare.png)
 
-1. 兩個頁面（啟動項和來源）將並排開啟。
-   * 如需關於使用此功能的完整資訊，請參閱 [頁面差異](/help/sites-cloud/authoring/features/page-diff.md).
+1. 两个页面（启动项和源）将并排打开。
+   * 有关使用此功能的完整信息，请参阅 [页面差异](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## 移动或重命名源页面 {#move-source}
 

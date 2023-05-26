@@ -1,6 +1,6 @@
 ---
 title: API 参考材料
-description: AEM具有廣泛且強大的API，您可將這些API用於數位體驗專案。
+description: AEM具有广泛且强大的API，您可以将其用于数字体验项目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # API 参考材料 {#api-reference-materials}
 
-Adobe Experience Manager (AEM)提供許多API來開發應用程式和擴充AEM。 AEM是以許多開放原始碼技術為基礎所建置，這也可供運用。
+Adobe Experience Manager (AEM)提供了许多API用于开发应用程序和扩展AEM。 AEM构建在多种开源技术之上，这些技术也可以利用。
 
 ## AEM Core API {#core-aem-apis}
 
@@ -19,9 +19,9 @@ Adobe Experience Manager (AEM)提供許多API來開發應用程式和擴充AEM�
 
 | API | 描述 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 產品抽象概念，例如頁面、資產、工作流程等。 |
-| [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe的Open Web棧疊，提供各種基本元件（請注意，6.5 Granite材料適用於AEMaaCS） |
-| [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobe的雲端UI視覺樣式，旨在提供一致的使用者體驗 |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 产品抽象，如页面、资产、工作流等。 |
+| [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe的开放Web栈栈，提供各种基本组件（请注意，6.5 Granite材料适用于AEMaaCS） |
+| [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobe的云UI可视化样式，旨在提供用户体验的一致性 |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
@@ -29,57 +29,57 @@ Adobe Experience Manager (AEM)提供許多API來開發應用程式和擴充AEM�
 
 ## 其他框架 {#additional-apis}
 
-AEM需仰賴許多其他開放原始碼API。
+AEM依赖于许多其他开源API。
 
 | API | 描述 |
 |---|---|
-| [Apache Sling](https://sling.apache.org/apidocs/sling11/) | 使用Java Content Repository (JCR)儲存和管理內容的Web架構 |
-| [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 實作可擴充的高效能階層Java內容存放庫(JCR)，以作為現代世界級網站的基礎 |
-| [Java內容存放庫](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR 2.0版的規格 |
-| [Apache Felix](https://felix.apache.org) | 實作Open Services Gateway Initiative (OSGi)架構和服務平台 |
+| [Apache Sling](https://sling.apache.org/apidocs/sling11/) | 使用Java内容存储库(JCR)存储和管理内容的Web框架 |
+| [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 实施可扩展的高性能分层Java内容存储库(JCR)，用作现代世界一流网站的基础 |
+| [Java内容存储库](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR版本2.0的规范 |
+| [Apache Felix](https://felix.apache.org) | Open Services Gateway Initiative (OSGi)框架和服务平台的实施 |
 
-## API偏好設定准則 {#guidelines}
+## API偏好设置准则 {#guidelines}
 
-AEM是以下列四個主要Java API集為基礎建立，依偏好設定由上往下排序。
+AEM基于以下四个主要Java API集构建，按优先级降序排列。
 
 | 优先级 | API | 描述 |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 產品抽象概念，例如頁面、資產、工作流程等。 |
-| 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST和以資源為基礎的抽象化，例如資源、值對映和HTTP請求。 |
-| 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 節點、屬性和工作階段等資料和內容抽象概念。 |
-| 4 | [Apache Felix](https://felix.apache.org/) | OSGi應用程式容器抽象概念，例如服務和(OSGi)元件。 |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 产品抽象，如页面、资产、工作流等。 |
+| 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST和基于资源的抽象，如资源、值映射和HTTP请求。 |
+| 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 数据和内容抽象，如节点、属性和会话。 |
+| 4 | [Apache Felix](https://felix.apache.org/) | OSGi应用程序容器抽象，例如服务和(OSGi)组件。 |
 
-如果API是由AEM所提供，則偏好使用API而非Sling、JCR和OSGi。 如果AEM不提供API，則偏好使用Sling而非JCR和OSGi。
+如果API由AEM提供，则首选它而不是Sling、JCR和OSGi。 如果AEM不提供API，则首选使用Sling而不是JCR和OSGi。
 
 >[!TIP]
 >
->如需這些指引的詳細資訊，請參閱檔案 [瞭解Java API最佳實務。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>有关这些准则的详细信息，请参阅文档 [了解Java API最佳实践。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
-## AEM傳遞與內容管理服務與API {#delivery-apis}
+## AEM交付和内容管理服务及API {#delivery-apis}
 
-AEM提供可自訂的元件和內容傳送選項。
+AEM提供了可自定义的组件和内容交付选项。
 
 | 专题 | 描述 |
 |---|---|
-| [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) | 適用於AEM的標準化網頁內容管理(WCM)元件，可加快開發時間並降低網站的維護成本 |
-| [JSON匯出工具](/help/implementing/developing/components/json-exporter.md) | 以JSON資料模型格式傳遞任何AEM頁面的內容 |
-| [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md) | 根據模型程式框架產生元件內容的JSON匯出 |
-| [Assets API](/help/assets/mac-api-assets.md) | 允許對資產執行建立 — 讀取 — 更新 — 刪除(CRUD)操作，包括二進位、中繼資料、轉譯和註解。 請參閱AEM Assets HTTP API |
-| [內容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | 透過CRUD作業，直接透過HTTP API存取內容片段內容 |
-| [內容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在Headless CMS實作中有效率地將內容片段傳送至JavaScript使用者端 |
-| [內容片段資產HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支援的HTTP資產請求的確切格式 |
+| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) | 适用于AEM的标准化Web内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
+| [JSON导出程序](/help/implementing/developing/components/json-exporter.md) | 以JSON数据模型格式交付任何AEM页面的内容 |
+| [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md) | 基于建模器框架生成组件内容的JSON导出 |
+| [资产API](/help/assets/mac-api-assets.md) | 允许对资源（包括二进制、元数据、演绎版和注释）执行创建 — 读取 — 更新 — 删除(CRUD)操作。 请参阅AEM Assets HTTP API |
+| [内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | 通过CRUD操作直接通过HTTP API访问内容片段内容 |
+| [内容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在Headless CMS实施中实现向JavaScript客户端的有效内容片段投放 |
+| [内容片段资产HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支持的HTTP资产请求的确切格式 |
 
-## SPA專屬的API {#spa-apis}
+## SPA特定的API {#spa-apis}
 
-AEM單頁應用程式(SPA)編輯器SDK架構提供特定的JavaScript API參考。
+AEM单页应用程序(SPA)编辑器SDK框架提供了特定的JavaScript API引用。
 
 | API | 描述 |
 |---|---|
-| [元件對應](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | 提供單頁應用程式將前端元件對應至Adobe Experience Manager資源型別(AEM元件)的方法 |
-| [頁面模型管理員](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Adobe Experience Manager編輯器和Adobe Experience Manager單頁應用程式(SPA)編輯器之間的解譯 |
-| [React可編輯元件](https://www.npmjs.com/package/@adobe/aem-react-editable-components) | 提供React元件和整合層，讓您開始使用Adobe Experience Manager網站編輯器 |
-| [angular可編輯元件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | 提供Angular元件和整合層，讓您開始使用Adobe Experience Manager網站編輯器 |
+| [组件映射](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping) | 为单页应用程序提供一种将前端组件映射到Adobe Experience Manager资源类型(AEM组件)的方法 |
+| [页面模型管理器](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager) | Adobe Experience Manager编辑器和Adobe Experience Manager单页应用程序(SPA)编辑器之间的解释器 |
+| [React可编辑组件](https://www.npmjs.com/package/@adobe/aem-react-editable-components) | 提供React组件和集成层，以开始使用Adobe Experience Manager站点编辑器 |
+| [angular可编辑组件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components) | 提供Angular组件和集成层，以开始使用Adobe Experience Manager站点编辑器 |
 
 >[!TIP]
 >
->檢視 [SPA簡介和逐步解說](/help/implementing/developing/hybrid/introduction.md) 以取得單頁應用程式的詳細資訊。
+>查看 [SPA简介和演练](/help/implementing/developing/hybrid/introduction.md) 以了解有关单页应用程序的更多信息。

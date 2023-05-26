@@ -1,6 +1,6 @@
 ---
 title: App Builder安全性
-description: 瞭解App Builder應用程式安全性。
+description: 了解App Builder应用程序安全性。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # App Builder安全性
 
-瞭解Adobe執行階段動作安全性、使用者，以及AppBuilder驗證和授權。
+了解Adobe运行时操作安全性、用户以及AppBuilder身份验证和授权。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339249/?quality=12&learn=on)

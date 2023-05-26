@@ -1,6 +1,6 @@
 ---
 title: 创建分支
-description: 本頁面說明如何在Cloud Manager for Screensas a Cloud Service中建立分支。
+description: 本页介绍如何在Cloud Manager for Screensas a Cloud Service中创建分支。
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
@@ -9,37 +9,37 @@ ht-degree: 4%
 
 ---
 
-# 在Cloud Manager建立分支 {#create-branch-screens-cloud}
+# 在Cloud Manager中创建分支 {#create-branch-screens-cloud}
 
-本節說明如何在Cloud Manager中為您的方案建立分支。
+本节介绍如何在Cloud Manager中为项目创建分支。
 
 >[!NOTE]
->請參閱 [在Cloud Manager中使用精靈](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) 以瞭解如何使用精靈在Cloud Manager中建立AEM應用程式專案。
+>请参阅 [使用Cloud Manager中的向导](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=en) 了解如何使用向导在Cloud Manager中创建AEM应用程序项目。
 
 ## 目标 {#objective}
 
-以下章節說明如何使用精靈在Cloud Manager中為您的方案建立分支。
+以下部分介绍了如何使用向导在Cloud Manager中为程序创建分支。
 
-## 在Cloud Manager中為Screens專案建立分支的步驟 {#steps-branch-creation}
+## 在Cloud Manager中为屏幕项目创建分支的步骤 {#steps-branch-creation}
 
-1. 導覽至Cloud Manager並選取圖示以前往Cloud Manager概觀頁面。
+1. 导航到Cloud Manager并选择图标以转到Cloud Manager概述页面。
 
-1. 按一下 **建立** 以建立您的分支和專案。
+1. 单击 **创建** 以创建分支和项目。
 
    ![图像](/help/screens-cloud/assets/onboarding/create-branch1.png)
 
-1. 選取 **標題** 和 **新分支名稱** 從 **建立分支和專案** 精靈並按一下 **建立**.
+1. 选择 **标题** 和 **新分支名称** 起始日期 **创建分支和项目** 向导并单击 **创建**.
 
    ![图像](/help/screens-cloud/assets/onboarding/create-branch2.png)
 
-1. 您將會在Cloud Manager的 **概觀** 當專案建立進行時，頁面會更新狀態。
+1. 您将在Cloud Manager的 **概述** 正在创建项目，页面会更新状态。
 
    ![图像](/help/screens-cloud/assets/onboarding/create-branch3.png)
 
-1. 專案建立成功完成後，您將會在Cloud Manager的 **概觀** 頁面。
+1. 项目创建成功完成后，您将在Cloud Manager的 **概述** 页面。
 
    ![图像](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
 ## 后续内容 {#whats-next}
 
-瞭解如何在Cloud Manager中為專案建立分支後，您現在已準備好進入上線流程的下一步，即 [建立和設定環境](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).
+了解如何在Cloud Manager中为项目创建分支后，您现在可以继续载入流程中的下一步，即， [创建和设置环境](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).

@@ -23,43 +23,43 @@ ht-degree: 51%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager][!DNL Cloud Service] 当前版本 (2021.8.0) 的发布日期为 2021 年 26 月 8 日。以下版本(2021.9.0)的發佈日期為2021年10月6日。
+[!DNL Adobe Experience Manager][!DNL Cloud Service] 当前版本 (2021.8.0) 的发布日期为 2021 年 26 月 8 日。以下版本(2021.9.0)的发布日期为2021年10月6日。
 
 ## 发布视频 {#release-video}
 
-請檢視 [2021年8月版本總覽](https://video.tv.adobe.com/v/336277) 影片以瞭解新增功能的摘要。
+请查看 [2021年8月发行版概述](https://video.tv.adobe.com/v/336277) 视频，以了解新增功能的摘要。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* 以連結形式共用數位資產時，使用者可以立即將URL複製到剪貼簿。 此增強功能可讓您以更快、更方便的方式共用資產。 此功能可讓您更快、更方便地共用資產。
+* 在将数字资产作为链接共享时，用户可以立即将URL复制到剪贴板。 增强功能可让您以更快、更方便的方式共享资产。 此功能允许更快、更方便地共享资产。
 
-   ![以連結形式共用資產時複製URL選項](/help/assets/assets/link-share-copy-URL-option.png)
-   *圖：以連結形式共用資產時，您現在可以複製URL來分別共用。*
+   ![将资产作为链接共享时，复制URL选项](/help/assets/assets/link-share-copy-URL-option.png)
+   *图：将资产作为链接共享时，您现在可以复制URL以单独共享它。*
 
-* 當您上傳TXT檔案時，資產微服務會自動產生縮圖。 PNG縮圖是TXT檔案的轉譯，可幫助使用者在一定程度上識別內容或檔案，而不需要開啟檔案。 依預設，此功能不需要任何設定即可運作。
+* 上传TXT文件时，资源微服务会自动生成缩略图。 PNG缩略图是TXT文件的演绎版，可帮助用户在一定程度上标识内容或文件，而无需打开文件。 此功能不需要任何配置，默认可以使用。
 
-   ![TXT檔案的轉譯會由自動產生 [!DNL Assets] PNG格式](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *圖：會自動產生TXT檔案的轉譯，以協助您識別檔案而不需要開啟。*
+   ![TXT文件的演绎版由自动生成 [!DNL Assets] PNG格式](/help/assets/assets/thumbnail-rendition-txt-file.png)
+   *图：将自动生成TXT文件的演绎版，以帮助您识别文件而无需打开。*
 
-### 中的新功能 [!DNL Assets] 發行前通道 {#assets-prerelease-features}
+### 的新增功能 [!DNL Assets] 预发行渠道 {#assets-prerelease-features}
 
-* 使用者現在可以在「欄」和「卡片」檢視中排序搜尋結果內所顯示的資產。 排序功能適用於「名稱」、「已建立」、「已修改」或「無」欄。
+* 用户现在可以对列视图和卡片视图的搜索结果中显示的资源进行排序。 排序仅对名称、创建、修改或无列起作用。
 
-   ![將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中](/help/assets/assets/sort-searched-assets.png)
-   *圖：將搜尋結果排序於 [!DNL Assets] 在欄和卡片檢視中。*
+   ![将搜索结果排序于 [!DNL Assets] 在“列”和“卡片”视图中](/help/assets/assets/sort-searched-assets.png)
+   *图：将搜索结果排序于 [!DNL Assets] 在“列”和“卡片”视图中。*
 
 ### [!DNL Assets] 中修复的错误 {#assets-bugs-fixed}
 
-* 當投稿人群組成員導覽至 [!DNL Assets] 主控台，額外的 `POST` 會產生要求以嘗試建立集合。 此請求不是必要請求，它會因許可權問題而失敗，並在記錄中建立許多錯誤。 (CQ-4328856)
-* 使用者檢視資產並選取 [!UICONTROL 時間表] 從左側面板的躍現式選單中會顯示錯誤。 在記錄中，由於查詢錯誤，會記錄許多警告。 (CQ-4328919)
+* 当投稿人组的成员导航到 [!DNL Assets] 控制台，额外的 `POST` 将生成请求以尝试创建收藏集。 此请求不是必需的，它由于权限问题而失败，并在日志中创建大量错误。 (CQ-4328856)
+* 当用户查看资源并选择 [!UICONTROL 时间线] 从左侧面板的弹出菜单中，会显示错误。 在日志中，由于查询错误，将记录许多警告。 (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* automated forms conversion服務可以 [轉換義大利文和葡萄牙文的PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) 最適化Forms。
+* automated forms conversion服务可以 [用意大利语和葡萄牙语转换PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) 到自适应Forms。
 
 * **基于 Acroform 的记录文档**：除了基于 XFA 的表单模板，AEM Forms as a Cloud Service 还支持使用 [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作为记录文档的模板。
 
@@ -71,25 +71,25 @@ ht-degree: 51%
 
 * **Analytics for Adaptive Forms**：您现在可以通过 Adobe Analytics for Adaptive Forms 捕获和跟踪最终用户行为，从而收集最终用户洞察。这有助于根据数据做出明智的决策，从而改善最终用户体验。
 
-* **輕鬆將AEM Forms連線至Microsoft Dynamics和Salesforce.com**：此服務會提供Microsoft Dynamics和Salesforce.com適用的現成資料來源設定和資料模型，好讓開發人員更快且更輕鬆地將Microsoft Dynamics和Salesforce.com設定為最適化表單的資料來源。
+* **轻松地将AEM Forms与Microsoft Dynamics和Salesforce.com连接**：该服务为Microsoft Dynamics和Salesforce.com提供现成的数据源配置和数据模型，使得开发人员可以更快、更轻松地配置Microsoft Dynamics和Salesforce.com作为自适应表单的数据源。
 
 ## CIF 加载项 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
-* 新的類別選擇器UI可改善使用者體驗、提高效率，以及更好地支援複雜的產品目錄
+* 新的类别选择器UI改善了用户体验、提高了效率并更好地支持复杂的产品目录
 
-   ![新增類別選取器](/help/assets/CIF/category-picker.png)
+   ![新建类别选取器](/help/assets/CIF/category-picker.png)
 
-* CIF核心元件更好的A11Y支援
+* 对CIF核心组件的更佳A11Y支持
 
 ## Cloud Manager {#cloud-manager}
 
-本節概述AEMas a Cloud Service2021.8.0和2021.7.0中Cloud Manager的發行說明
+本部分概述了AEMas a Cloud Service2021.8.0和2021.7.0中的Cloud Manager发行说明。
 
 ## 发布日期 {#release-date-cm-aug}
 
-AEM as a Cloud Service 2021.8.0 中的 Cloud Manager 的发布日期是 2021 年 8 月 12 日。下一版本計畫於2021年9月9日發行。
+AEM as a Cloud Service 2021.8.0 中的 Cloud Manager 的发布日期是 2021 年 8 月 12 日。下一个版本计划于2021年9月9日发布。
 
 ### 新增功能 {#what-is-new-aug}
 
@@ -122,12 +122,12 @@ AEM as a Cloud Service 2021.8.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 发布日期 {#release-date-ctt-latest}
 
-內容轉移工具v1.5.6的發行日期為2021年8月11日。
+内容传输工具版本1.5.6的发布日期为2021年8月11日。
 
 ### 错误修复 {#bug-fixes-ctt}
 
-* 在某些情況下，並非所有使用者都已移轉至目標執行個體。 若要取得此修正，目標AEMas a Cloud Service執行個體上需要CTT v1.5.6以及aem-ethos-tools 1.2.354或更新版本。
+* 在某些情况下，并非所有用户都迁移到目标实例。 要获取此修补程序，需要在目标AEMas a Cloud Service实例上安装CTT v1.5.6以及aem-ethos-tools 1.2.354或更高版本。
 
-* 此 **停止內嵌** 按鈕在內嵌至發佈執行個體期間被停用。 這並非必要，因為發佈內嵌期間沒有mongo還原步驟。
+* 此 **停止引入** 在将按钮摄取到发布实例期间禁用了该按钮。 没有必要执行此操作，因为在发布引入期间没有mongo restore步骤。
 
-* CTT未清除 `/tmp` 成功擷取後的目錄。 這有時會導致磁碟空間問題。
+* CTT未清理 `/tmp` 成功提取后的目录。 这有时会导致磁盘空间问题。

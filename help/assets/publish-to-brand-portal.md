@@ -14,7 +14,7 @@ ht-degree: 97%
 
 # 将资产发布到 Brand Portal {#publish-assets-to-brand-portal}
 
-| 版本 | 文章連結 |
+| 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en) |
 | AEM as a Cloud Service | 本文 |

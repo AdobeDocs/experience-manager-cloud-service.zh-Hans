@@ -1,6 +1,6 @@
 ---
 title: XMP 元数据
-description: 瞭解用於中繼資料管理的XMP （可延伸中繼資料平台）中繼資料標準。 它可供Experience Manager用作建立、處理和交換中繼資料的標準化格式。
+description: 了解用于元数据管理的XMP（可扩展元数据平台）元数据标准。 它被Experience Manager用作创建、处理和交换元数据的标准化格式。
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -14,99 +14,99 @@ ht-degree: 18%
 
 # XMP 元数据 {#xmp-metadata}
 
-XMP （可延伸中繼資料平台）是Experience Manager Assets用於所有中繼資料管理的中繼資料標準。 XMP為各種應用程式的中繼資料的建立、處理和交換提供標準格式。
+XMP（可扩展元数据平台）是Experience Manager Assets用于所有元数据管理的元数据标准。 XMP为各种应用程序的元数据的创建、处理和交换提供了一个标准格式。
 
-除了提供可嵌入到所有檔案格式的通用中繼資料編碼之外，XMP還提供豐富的 [內容模型](#xmp-core-concepts) 和 [受Adobe支援](#advantages-of-xmp) 和其他公司，以便XMP的使用者能夠與 [!DNL Assets] 擁有強大的平台作為建置基礎。
+除了提供可以嵌入到所有文件格式的通用元数据编码之外，XMP还提供丰富的 [内容模型](#xmp-core-concepts) 和 [受Adobe支持](#advantages-of-xmp) 和其他公司，以便XMP的用户能够与 [!DNL Assets] 拥有强大的平台进行构建。
 
-## XMP概觀和生態系統 {#xmp-ecosystem}
+## XMP概述和生态系统 {#xmp-ecosystem}
 
-[!DNL Assets] 原生支援XMP中繼資料標準。 XMP是在數位資產中處理和儲存標準化和專屬中繼資料的標準。 XMP的設計目的是作為允許多個應用程式有效使用中繼資料的通用標準。
+[!DNL Assets] 原生支持XMP元数据标准。 XMP是在数字资产中处理和存储标准化的专有元数据的标准。 XMP旨在作为允许多个应用程序有效地使用元数据的通用标准。
 
-例如，生產專業人員可使用Adobe應用程式內建的XMP支援，以跨多種檔案格式傳遞資訊。 此 [!DNL Assets] 存放庫會擷取XMP中繼資料，並使用它來管理內容生命週期，並提供建立自動化工作流程的功能。
+例如，生产专业人员可以使用Adobe应用程序中内置的XMP支持，跨多种文件格式传递信息。 此 [!DNL Assets] 存储库提取XMP元数据并使用它来管理内容生命周期，并提供创建自动化工作流的功能。
 
-XMP透過提供資料模型、儲存模型和結構描述，將中繼資料的定義、建立和處理標準化。 本章節將介紹所有這些概念。
+XMP通过提供数据模型、存储模型和架构，实现了元数据的定义、创建和处理的标准化。 本节将介绍所有这些概念。
 
-來自EXIF、ID3或Microsoft Office的所有舊版中繼資料會自動轉譯為XMP，可延伸以支援客戶特定的中繼資料結構，例如產品目錄。
+来自EXIF、ID3或Microsoft Office的所有旧元数据会自动转换为XMP，该架构可以扩展为支持客户特定的元数据架构，例如产品目录。
 
-XMP中的中繼資料包含一組屬性。 這些屬性一律與稱為資源的特定實體相關聯；也就是說，屬性是「關於」資源的。 若是XMP，資源一律為資產。
+XMP中的元数据由一组属性组成。 这些属性始终与称为资源的特定实体相关联；即，这些属性是有关资源的。 对于XMP，资源始终是资源。
 
 XMP 定义了一个可与任何定义的元数据项集一起使用的[元数据](https://en.wikipedia.org/wiki/Metadata)模型。XMP 还为基本属性定义了一个特定的[架构[，这些基本属性可用于记录资源经过多个处理步骤的历史记录：从拍摄、](https://en.wikipedia.org/wiki/XML_schema)扫描](https://en.wikipedia.org/wiki/Image_scanner)或创作为文本，到照片编辑步骤（如[裁剪](https://en.wikipedia.org/wiki/Cropping_%28image%29)或颜色调整），再到组合到最终图像中。XMP 允许每个软件程序或设备向数字资源添加其自己的信息，该信息可保留在最终的数字文件中。
 
 XMP 最常使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [资源描述框架](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF) 的子集进行序列化和存储，该子集又以 [XML](https://en.wikipedia.org/wiki/XML) 形式表示。
 
-### XMP的優點 {#advantages-of-xmp}
+### XMP的优势 {#advantages-of-xmp}
 
-與其他編碼標準和結構描述相比，XMP具有以下優勢：
+与其他编码标准和架构相比，XMP具有以下优势：
 
-* XMP型中繼資料功能非常強大，且經過精細處理。
-* XMP可讓您一個屬性有多個值。
-* XMP已標準化編碼，讓您輕鬆交換中繼資料。
-* XMP可擴充。 您可以將其他資訊新增至資產。
+* 基于XMP的元数据功能非常强大且粒度非常细。
+* XMP允许您为一个属性使用多个值。
+* XMP具有标准化的编码，这使您能够轻松交换元数据。
+* XMP可扩展。 您可以将其他信息添加到资源中。
 
-XMP標準設計為可擴充，可讓您將自訂的中繼資料型別新增到XMP資料中。 而EXIF則否 — 它有無法擴充的固定屬性清單。
+XMP标准设计为可扩展，允许您向XMP数据添加自定义类型的元数据。 而EXIF则否 — 它有一个无法扩展的固定属性列表。
 
 >[!NOTE]
 >
->XMP通常不允許內嵌二進位資料型別。 若要在XMP中攜帶二進位資料（例如縮圖影像），這些影像必須以XML易記格式編碼，例如 `Base64`.
+>XMP通常不允许嵌入二进制数据类型。 要在XMP中携带二进制数据（例如缩略图图像），必须以XML友好格式对其进行编码，例如 `Base64`.
 
 ### XMP核心概念 {#xmp-core-concepts}
 
-**名稱空間和結構描述**
+**命名空间和架构**
 
-XMP結構描述是通用XML名稱空間中的一組屬性名稱，包括資料型別和描述性資訊。 XMP結構描述由其XML名稱空間URI識別。 使用名稱空間可防止名稱相同但含義不同的不同結構描述中的屬性之間發生衝突。
+XMP架构是公共XML命名空间中的一组属性名称，其中包括数据类型和描述性信息。 XMP架构由其XML命名空间URI标识。 使用命名空间可防止不同架构中具有相同名称但不同含义的属性之间发生冲突。
 
-例如， **建立者** 兩個獨立設計結構描述中的屬性可能代表建立資產的人，也可能代表建立資產的應用程式(例如Adobe Photoshop)。
+例如， **创建者** 两个独立设计的架构中的资产可能是指创建资产的人，也可能是指创建资产的应用程序(例如，Adobe Photoshop)。
 
-**XMP屬性和值**
+**XMP属性和值**
 
-XMP可能包含一或多個結構描述的屬性。 例如，許多Adobe應用程式使用的典型子集可能包括：
+XMP可以包含一个或多个架构的属性。 例如，许多Adobe应用程序使用的典型子集可能包括：
 
-* 都柏林核心結構描述： `dc:title`， `dc:creator`， `dc:subject`， `dc:format`， `dc:rights`
-* XMP基本結構描述： `xmp:CreateDate`， `xmp:CreatorTool`， `xmp:ModifyDate`， `xmp:metadataDate`
-* XMP許可權管理綱要： `xmpRights:WebStatement`， `xmpRights:Marked`
-* XMP媒體管理綱要： `xmpMM:DocumentID`
+* 都柏林核心模式： `dc:title`， `dc:creator`， `dc:subject`， `dc:format`， `dc:rights`
+* XMP基本架构： `xmp:CreateDate`， `xmp:CreatorTool`， `xmp:ModifyDate`， `xmp:metadataDate`
+* XMP权限管理架构： `xmpRights:WebStatement`， `xmpRights:Marked`
+* XMP媒体管理模式： `xmpMM:DocumentID`
 
-**替代語言**
+**替代语言**
 
-XMP讓您能夠新增 `xml:lang` 屬性至文字屬性，以指定文字的語言。
+XMP使您能够添加 `xml:lang` 属性到文本属性以指定文本的语言。
 
-## XMP回寫至轉譯 {#xmp-writeback-to-renditions}
+## XMP写回到演绎版 {#xmp-writeback-to-renditions}
 
-中的此XMP回寫功能 [!DNL Adobe Experience Manager Assets] 會將中繼資料變更複製到原始資產的轉譯。
-當您從內變更資產的中繼資料時 [!DNL Assets] 或者，在上傳資產時，變更最初會儲存在資產階層的中繼資料節點中。 回寫功能可讓您將中繼資料變更傳播至資產的所有或特定轉譯。 功能只會回寫那些使用的中繼資料屬性 `jcr` 名稱空間，也就是名為的屬性 `dc:title` 會寫回，但有一個屬性命名為 `mytitle` 不是。
+中的此XMP写回功能 [!DNL Adobe Experience Manager Assets] 将元数据更改复制到原始资源的演绎版。
+从中更改资源的元数据时 [!DNL Assets] 或者，在上传资源时，最初将更改存储在资源层次结构的元数据节点中。 回写功能允许您将元数据更改传播到资源的所有或特定演绎版。 该功能仅回写那些使用的元数据属性 `jcr` namespace，即名为的属性 `dc:title` 写回，但有一个名为 `mytitle` 不是。
 
-例如，假設您修改了 [!UICONTROL 標題] 標題為的資產屬性 `Classic Leather` 至 `Nylon`.
+例如，考虑一个方案，其中您修改了 [!UICONTROL 标题] 标题为的资产属性 `Classic Leather` 到 `Nylon`.
 
 ![元数据](assets/metadata.png)
 
-在這種情況下， [!DNL Assets] 將變更儲存至 **[!UICONTROL 標題]** 中的屬性 `dc:title` 資產階層中儲存的資產中繼資料引數。
+在这个案例中， [!DNL Assets] 将更改保存到 **[!UICONTROL 标题]** 中的属性 `dc:title` 资源层次结构中存储的资源元数据的参数。
 
-![中繼資料儲存在儲存庫的asset節點中](assets/metadata_stored.png)
+![元数据存储在存储库的资源节点中](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->預設不會在中啟用回寫功能 [!DNL Assets]. 瞭解如何 [啟用中繼資料回寫](#enable-xmp-writeback). 數位資產的MSM無法搭配啟用中繼資料回寫運作。 回寫時，繼承中斷。
+>默认情况下，中的回写功能未启用 [!DNL Assets]. 了解如何 [启用元数据写回](#enable-xmp-writeback). MSM for digital assets不适用于启用了元数据写回的情况。 在写回时，继承中断。
 
-### 啟用XMP回寫 {#enable-xmp-writeback}
+### 启用XMP写回 {#enable-xmp-writeback}
 
-[!UICONTROL DAM中繼資料回寫] 工作流程用於回寫資產的中繼資料。 若要啟用回寫，請遵循下列三種方法之一：
+[!UICONTROL DAM元数据写回] 工作流用于写回资源的元数据。 要启用写回，请遵循以下三种方法之一：
 
-* 使用啟動器。
-* 手動啟動 `DAM MetaData Writeback` 工作流程。
-* 將工作流程設定為後處理的一部分。
+* 使用启动器。
+* 手动启动 `DAM MetaData Writeback` 工作流。
+* 将工作流配置为后处理的一部分。
 
-若要使用「啟動器」，請遵循下列步驟：
+要使用启动器，请执行以下步骤：
 
-1. 以管理員身分，存取 **[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 啟動器]**.
-1. 選取 [!UICONTROL 啟動器] 對於 **[!UICONTROL 工作流程]** 欄顯示 **[!UICONTROL DAM中繼資料回寫]**. 按一下 **[!UICONTROL 屬性]** （從工具列）。
+1. 作为管理员，访问 **[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 启动器]**.
+1. 选择 [!UICONTROL 启动器] 对于 **[!UICONTROL 工作流]** 列显示 **[!UICONTROL DAM元数据写回]**. 单击 **[!UICONTROL 属性]** 工具栏中。
 
-   ![選取DAM中繼資料回寫啟動器，以修改其屬性並加以啟動](assets/launcher-properties-metadata-writeback1.png)
+   ![选择DAM元数据写回启动器以修改其属性并激活它](assets/launcher-properties-metadata-writeback1.png)
 
-1. 選取 **[!UICONTROL 啟動]** 於 **[!UICONTROL 啟動器屬性]** 頁面。 单击“**[!UICONTROL 保存并关闭]**”。
+1. 选择 **[!UICONTROL 激活]** 在 **[!UICONTROL 启动器属性]** 页面。 单击“**[!UICONTROL 保存并关闭]**”。
 
-若要隻手動將工作流程套用至資產一次，請套用 [!UICONTROL DAM中繼資料回寫] 工作流程左側邊欄。
+要仅将工作流手动应用于资产一次，请应用 [!UICONTROL DAM元数据写回] 工作流中的左边栏。
 
-若要將工作流程套用至所有上傳的資產，請將工作流程新增至後期處理設定檔。
+要将工作流应用于所有上传的资产，请将该工作流添加到后处理配置文件。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 

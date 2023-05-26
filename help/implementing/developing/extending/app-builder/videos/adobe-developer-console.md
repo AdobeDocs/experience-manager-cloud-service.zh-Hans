@@ -1,6 +1,6 @@
 ---
-title: App Builder的Adobe Developer主控台
-description: 瞭解Adobe Developer主控台和App Builder專案。
+title: 适用于App Builder的Adobe Developer控制台
+description: 了解Adobe Developer控制台和App Builder项目。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,26 +16,26 @@ ht-degree: 0%
 
 ---
 
-# App Builder的Adobe Developer主控台
+# 适用于App Builder的Adobe Developer控制台
 
-瞭解什麼是Adobe Developer Console，以及如何存取和導覽。
+了解Adobe Developer控制台是什么，以及如何访问和导航它。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
-## 使用專案和範本
+## 使用项目和模板
 
-瞭解如何使用Adobe Developer主控台的App Builder範本建立App Builder專案。
+了解如何使用Adobe Developer控制台的App Builder模板创建App Builder项目。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339163/?quality=12&learn=on)
 
-## 專案認證
+## 项目凭据
 
-瞭解如何使用Adobe Developer主控台的憑證選單和核准程式中的選項。
+了解如何使用Adobe Developer控制台的凭据菜单中的选项和审批流程。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 
-## 深入分析和配額使用量
+## 洞察和配额使用情况
 
-瞭解App Builder應用程式深入分析和配額使用情況。
+了解App Builder应用程序洞察和配额使用情况。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339165/?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: 程式碼重構工具的統一體驗
-description: 程式碼重構工具的統一體驗
+title: 用于代码重构工具的统一体验
+description: 用于代码重构工具的统一体验
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,40 +9,40 @@ ht-degree: 1%
 
 ---
 
-# 程式碼重構工具的統一體驗 {#unified-experience}
+# 用于代码重构工具的统一体验 {#unified-experience}
 
-我們開發了工具，可自動執行與AEMas a Cloud Service相容所需的一些程式碼重構任務。 為了降低安裝及設定不同程式碼重構工具的相關複雜性，我們開發了一個外掛程式，以統一在程式碼和存放庫上操作的工具。
+我们开发了工具，用于自动执行与AEMas a Cloud Service兼容所需的一些代码重构任务。 为了降低与安装和设置不同的代码重构工具相关的复杂性，我们开发了一个插件，以统一在代码和存储库上操作的工具。
 
 ## 好处 {#benefits}
 
-統一的Experience外掛程式提供下列優點：
+Unified Experience插件具有以下优势：
 
-* 將處理原始程式碼的工具統一為一個 `node.js` 應用程式公開為 `aio-cli ` 外掛程式以提供一致的使用者體驗。
+* 将处理源代码的工具统一为一个 `node.js` 应用程序公开为 `aio-cli ` 插件，以便为用户提供一致的用户体验。
 
-* 提供透過單一命令執行所有工具的功能，同時提供根據需要執行特定工具的靈活性。
+* 提供通过单个命令执行所有工具的功能，同时还提供根据需要执行特定工具的灵活性。
 
-* 提供擴充性，可簡化新工具的增加，同時保持一致的體驗。
+* 提供可扩展性以简化新工具的添加，同时保持体验的一致性。
 
-## 瞭解外掛程式 {#understanding-plugin}
+## 了解插件 {#understanding-plugin}
 
-此 `aio-cli-plugin-aem-cloud-service-migration` 外掛程式包含兩個主要部分：
+此 `aio-cli-plugin-aem-cloud-service-migration` 插件包含两个主要部分：
 
 * **用户界面**
 
-   * `aio-cli` 執行一或多個程式碼重構工具的命令（透過將要循序執行的工具鏈結在一起）。
-   * `config.yaml` 會採用必要的輸入引數。
+   * `aio-cli` 执行一个或多个代码重构工具的命令（通过链接要按顺序执行的工具）。
+   * `config.yaml` 它会采用所需的输入参数。
 
-* **基礎程式碼重構工具套裝**
+* **底层代码重构工具包**
 
-   程式碼重構工具透過以下方式執行其功能：
+   代码重构工具通过以下方式执行其功能：
 
-   * 掃描客戶程式碼的個別區段並操控程式碼（根據程式碼實作以獲得最佳實務）以產生輸出，然後可加以驗證和部署。
+   * 扫描客户代码的相应部分并处理代码（基于代码实施以获得最佳实践）以生成输出，然后可以验证和部署输出。
 
-   * 產生摘要報告以記錄執行期間執行的操作。
+   * 生成摘要报告，以记录执行期间执行的操作。
 
 ## 可用性 {#availability}
 
-請參閱 [Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 瞭解此使用方式，以及如何為GitHub中開放來源的外掛程式程式碼貢獻內容。
+请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 了解使用情况以及如何向此源自GitHub的插件代码投稿。
 
 >[!NOTE]
->目前，外掛程式已與AEM Dispatcher Converter和Repository Modernizer整合。
+>目前，该插件已与AEM Dispatcher Converter和Repository Modernizer集成。

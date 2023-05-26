@@ -19,17 +19,17 @@ Adobe Experience Manager 提供了大量现成的同步配置。在使用 Live C
 1. 如果现有转出配置未满足您的要求，请决定是否需要创建自己的转出配置。
 1. 指定要用于 Live Copy 的转出配置。
 
-## 已安裝及自訂轉出設定 {#installed-and-custom-rollout-configurations}
+## 已安装和自定义转出配置 {#installed-and-custom-rollout-configurations}
 
-本節提供有關已安裝轉出設定及其使用的同步化動作，以及如何視需要建立自訂設定的資訊。
+此部分提供有关已安装的转出配置和它们使用的同步操作的信息，以及根据需要如何创建自定义配置的信息。
 
 >[!CAUTION]
 >
 >建议&#x200B;**不要**&#x200B;更新或更改现成的转出配置。如果需要自定义实时操作，则应将其添加到自定义转出配置中。
 
-### 轉出觸發器 {#rollout-triggers}
+### 转出触发器 {#rollout-triggers}
 
-每個轉出設定都會使用轉出觸發器，導致轉出發生。 轉出設定可以使用下列其中一個觸發程式：
+每个转出配置都使用导致转出的转出触发器。 转出配置可以使用以下触发器之一：
 
 * **转出**：在 Blue Print 页面上使用&#x200B;**转出**&#x200B;命令，或者在 Live Copy 页面上使用&#x200B;**同步**&#x200B;命令。
 * **修改**：修改源页面。
@@ -63,7 +63,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 
 <!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
 
-| 動作名稱 | 描述 | 属性 |
+| 操作名称 | 描述 | 属性 |
 |---|---|---|
 | `contentCopy` | 当源节点在 Live Copy 上不存在时，此操作会将节点复制到 Live Copy。[配置 **CQ MSM 内容复制操作**&#x200B;服务](#excluding-properties-and-node-types-from-synchronization)，以指定要排除的节点类型、段落项和页面属性。 |  |
 | `contentDelete` | 此操作删除源上不存在的 Live Copy 的节点。[配置 **CQ MSM 内容删除操作**&#x200B;服务](#excluding-properties-and-node-types-from-synchronization)，以指定要排除的节点类型、段落项和页面属性。 |  |
@@ -100,7 +100,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 使用 AEM 时，可通过多种方法管理此类服务的配置设置。请参阅[配置 OSGi](/help/implementing/deploying/configuring-osgi.md)，以了解更多详细信息和建议的做法。
 
-下表列出您可以指定要排除的節點的同步化動作。 此表格提供要使用「Web主控台」設定的服務名稱，以及使用存放庫節點進行設定的PID。
+下表列出了您可以指定要排除的节点的同步操作。 该表提供了要使用Web控制台配置的服务的名称，以及使用存储库节点进行配置的PID。
 
 | 同步操作 | Web 控制台中的服务名称 | 服务 PID |
 |---|---|---|
@@ -119,11 +119,11 @@ The new rollout configuration is then available to you when configuring rollout 
 | 排除的页面属性 | `cq.wcm.msm.action.excludedprops` | 匹配要从同步操作中排除的页面属性的正则表达式 |
 | 忽略的 Mixin 节点类型 | `cq.wcm.msm.action.ignoredMixin` | 匹配要从同步操作中排除的 mixin 节点类型名称的正则表达式（或适用于 `contentUpdate` 操作） |
 
-#### CQ MSM內容更新動作 — 排除 {#cq-msm-content-update-action-exclusions}
+#### CQ MSM内容更新操作 — 排除项 {#cq-msm-content-update-action-exclusions}
 
-預設會排除數個屬性和節點型別，這些屬性和節點型別會在的OSGi設定中定義 **CQ MSM內容更新動作**，下 **排除的頁面屬性**.
+默认情况下会排除多个属性和节点类型，这些属性和节点类型在的OSGi配置中定义 **CQ MSM内容更新操作**，下 **排除的页面属性**.
 
-依預設，轉出時排除符合下列規則運算式的屬性（即未更新）：
+默认情况下，转出时排除匹配以下正则表达式的属性（即不更新）：
 
 ![Live Copy 排除正则表达式](../assets/live-copy-exclude.png)
 
@@ -139,7 +139,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 使用 AEM 时，可通过多种方法管理此类服务的配置设置。请参阅[配置 OSGi](/help/implementing/deploying/configuring-osgi.md)，以了解更多详细信息和建议的做法。
 
-下表列出您可以為其指定參照更新的同步化動作。 此表格提供要使用「Web主控台」設定的服務名稱，以及使用存放庫節點進行設定的PID。
+下表列出了可为其指定参照更新的同步操作。 该表提供了要使用Web控制台配置的服务的名称，以及使用存储库节点进行配置的PID。
 
 | Web 控制台属性 | OSGi 属性 | 描述 |
 |---|---|---|
@@ -157,7 +157,7 @@ MSM 允许您指定一般使用的转出配置集，并可在需要时覆盖特�
 * **Live Copy 父页面属性：**&#x200B;当 Live Copy 页面和 Blueprint 源页面均未配置转出配置时，将使用适用于 Live Copy 页面的父页面的转出配置。
 * **[系统默认值](live-copy-sync-config.md#setting-the-system-default-rollout-configuration)：**&#x200B;当无法确定 Live Copy 父页面的转出配置时，将使用系统默认转出配置。
 
-例如，某个 Blueprint 使用 [WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)站点作为源内容。從Blueprint建立網站。 下列清單中的每個專案都說明關於轉出設定的使用不同情境：
+例如，某个 Blueprint 使用 [WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)站点作为源内容。从Blueprint创建站点。 以下列表中的每一项都描述了有关使用转出配置的不同方案：
 
 * 所有 Blueprint 页面或 Live Copy 页面均未配置为使用转出配置。MSM 对所有 Live Copy 页面使用系统默认转出配置。
 * WKND 站点的根页面配置了多个转出配置。MSM 对所有 Live Copy 页面使用这些转出配置。
@@ -179,19 +179,19 @@ MSM 允许您指定一般使用的转出配置集，并可在需要时覆盖特�
 
 1. 如果需要，可调整 **Live Copy 继承**&#x200B;标记。如果选中，Live Copy 配置将在所有子项上都有效。
 
-1. 清除 **從父項繼承轉出設定** 屬性，然後從清單中選取一或多個轉出設定。
+1. 清除 **从父项继承转出配置** 属性，然后从列表中选择一个或多个转出配置。
 
-   選取的轉出設定會顯示在下拉式清單下方。
+   选定的转出配置显示在下拉列表下方。
 
    ![覆盖 Live Copy 配置继承](../assets/live-copy-inherit-override.png)
 
 1. 单击或点按&#x200B;**保存并关闭**。
 
-### 設定Blueprint頁面的轉出設定 {#setting-the-rollout-configuration-for-a-blueprint-page}
+### 设置Blueprint页面的转出配置 {#setting-the-rollout-configuration-for-a-blueprint-page}
 
-使用轉出設定來設定Blueprint頁面，以便在轉出Blueprint頁面時使用。
+使用转出配置配置Blueprint页面，以便在转出Blueprint页面时使用。
 
-請注意，Blueprint頁面的子頁面會繼承設定。 當您設定要使用的轉出設定時，可能會覆寫頁面從其父項繼承的設定。
+请注意，Blueprint页面的子页面继承配置。 在配置要使用的转出配置时，可能会覆盖页面从其父页面继承的配置。
 
 1. 使用&#x200B;**站点**&#x200B;控制台选择 Blueprint 的根页面。
 1. 从工具栏中选择&#x200B;**属性**。

@@ -1,6 +1,6 @@
 ---
 title: 验证内容转移
-description: 使用內容轉移工具來驗證內容轉移
+description: 使用内容传输工具验证内容传输
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
@@ -13,46 +13,46 @@ ht-degree: 2%
 
 ## 快速入门 {#getting-started}
 
-使用者能夠可靠地判斷「內容轉移工具」擷取的所有內容是否已成功擷取到目標例項中。 此驗證功能的運作方式是，比較擷取期間涉及的所有節點的路徑摘要，以及擷取期間涉及的所有節點的路徑摘要。 如果擷取摘要中納入的任何節點路徑遺漏了擷取摘要，則驗證會被視為失敗，且可能需要額外的手動驗證。
+用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。 此验证功能的工作方式是，比较提取期间涉及的所有节点的路径摘要，以及提取期间涉及的所有节点的路径摘要。 如果提取摘要中包含的任何节点路径在摄取摘要中缺失，则验证会被视为失败，可能需要额外的手动验证。
 
 >[!INFO]
 >
->此功能將在內容轉移工具(CTT) 1.8.x版發行後提供。 AEM Cloud Service目標環境必須至少執行6158版或更高版本。 還需要設定來源環境才能執行 [預先複製](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). 驗證功能會尋找來源上的azcopy.config檔案。 如果找不到此檔案，則不會執行驗證。 若要進一步瞭解如何設定azcopy.config檔案，請參閱 [此頁面](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>此功能将从内容传输工具(CTT) 1.8.x版开始可用。 AEM Cloud Service目标环境必须至少运行版本6158或更高版本。 它还需要设置源环境才能运行 [预复制](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). 验证功能在源上查找azcopy.config文件。 如果找不到此文件，将不会运行验证。 要了解有关如何配置azcopy.config文件的更多信息，请参阅 [此页面](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-驗證內容轉移是一項選擇性功能。 啟用此功能會增加執行擷取和擷取所需的時間。 若要使用此功能，請在來源AEM環境的「系統主控台」中啟用它，請執行以下步驟：
+验证内容传输是一项可选功能。 启用此功能将增加执行提取和摄取所需的时间。 要使用该功能，请在源AEM环境的System Console中启用该功能，请执行以下步骤：
 
-1. 導覽至來源執行個體上的Adobe Experience Manager Web Console，方法是前往 **工具 — 作業 — Web主控台** 或直接前往URL，網址為 *https://serveraddress:serverport/system/console/configMgr*
-1. 搜尋 **內容轉移工具提取服務設定**
-1. 使用鉛筆圖示按鈕來編輯其設定值
-1. 啟用 **在擷取期間啟用移轉驗證** 設定，然後按 **儲存**：
+1. 通过转到，导航到源实例上的Adobe Experience Manager Web Console **工具 — 操作 — Web控制台** 或直接转到URL，网址为 *https://serveraddress:serverport/system/console/configMgr*
+1. 搜索 **内容传输工具提取服务配置**
+1. 使用铅笔图标按钮编辑其配置值
+1. 启用 **在提取期间启用迁移验证** 设置，然后按 **保存**：
 
    ![图像](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
-啟用此設定且目標AEM Cloud Service環境執行相容版本時，將會在後續的所有擷取和擷取期間進行移轉驗證。
+如果启用此设置，并且目标AEM Cloud Service环境运行兼容版本，则在随后的所有提取和引入期间将进行迁移验证。
 
-如需如何安裝內容轉移工具的詳細資訊，請參閱 [內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
+有关如何安装内容传输工具的更多信息，请参阅 [内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
 
-## 如何驗證內容轉移 {#how-to-validate-a-content-transfer}
+## 如何验证内容传输 {#how-to-validate-a-content-transfer}
 
-在來源AEM環境中啟用移轉驗證後，開始擷取。
+在源AEM环境中启用迁移验证后，开始提取。
 
-若 **在擷取期間覆寫暫存容器** 已啟用，與擷取相關的所有節點將記錄到擷取路徑摘要。 使用此設定時，請務必啟用 **在內嵌之前擦除雲端例項上的現有內容** 在內嵌期間進行設定，否則在內嵌摘要中可能會遺漏節點。 這些是先前擷取中已經存在於目標上的節點。
+如果 **在提取期间覆盖暂存容器** 启用后，与提取相关的所有节点都将记录到提取路径摘要中。 使用此设置时，请务必启用 **在引入之前擦除云实例上的现有内容** 在摄取期间设置，否则摄取摘要中可能会显示缺失的节点。 这些是先前摄取中已存在于目标上的节点。
 
-如需圖解說明，請參考以下範例：
+有关图形说明，请参阅以下示例：
 
 ### 示例 1 {#example-1}
 
-* **擷取（覆寫）**
+* **提取（覆盖）**
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
-* **內嵌（擦去）**
+* **引入（划出）**
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **注释**
 
-   此「覆寫」和「擦去」的組合會產生一致的驗證結果，即使是重複擷取亦然。
+   这种“覆盖”和“划出”的组合将产生一致的验证结果，即使对于重复摄取也是如此。
 
 ### 示例 2 {#example-2}
 
@@ -60,27 +60,27 @@ ht-degree: 2%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
-* **內嵌**
+* **引入**
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **注释**
 
-   此「覆寫」和「擦去」的組合將導致初始內嵌的一致驗證結果。
+   此“覆盖”和“划出”的组合将为初始引入生成一致的验证结果。
 
-   如果重複內嵌，內嵌摘要將會是空的，而驗證將會顯示為失敗。 擷取摘要將為空白，因為此擷取的所有節點都將存在於目標上。
+   如果重复引入，则引入摘要将为空，并且验证将显示为失败。 摄取摘要将为空，因为此提取中的所有节点都将已存在于目标上。
 
-擷取完成後，即可開始內嵌。
+提取完成后，开始引入。
 
-內嵌記錄檔的頂端會包含一個專案，類似於 `aem-ethos/tools:1.2.438`. 確定此版本編號為 **1.2.438** 或更新的版本，否則您使用的AEMas a Cloud Service版本不支援驗證。
+摄取日志的顶部将包含一个条目，类似于 `aem-ethos/tools:1.2.438`. 确保此版本号为 **1.2.438** 或更高版本，否则您使用的AEMas a Cloud Service版本不支持验证。
 
-擷取完成並開始驗證後，將在擷取記錄中記錄以下記錄專案：
+完成摄取并开始验证后，将在摄取日志中记录以下日志条目：
 
 ```
 Gathering artifacts for migration validation...
 ```
 
-驗證的詳細資訊會在此專案後面。 尋找以下大型移轉的範例：
+验证详细信息将在此条目之后。 请从下面的大迁移中找到一个示例：
 
 ```
 Beginning publish migration validation. Migration job id=[3aba1f96-84b6-4bd0-8642-c61c0d528387]
@@ -99,9 +99,9 @@ Comparing the path digests took 29 seconds
 Migration validation took 33 minutes
 ```
 
-這是成功驗證的範例，因為擷取摘要中不存在擷取摘要中遺漏的專案。
+这是成功验证的示例，因为提取摘要中不存在缺失的条目。
 
-若要比較，以下說明驗證失敗時驗證報告的外觀：
+要比较，以下显示了验证失败时验证报告的外观：
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]
@@ -125,41 +125,41 @@ Comparing the path digests took 0 seconds
 Migration validation took 0 minutes
 ```
 
-上述失敗範例是透過執行內嵌，然後在停用擦去的情況下再次執行相同的內嵌來達成，這樣在內嵌期間不會涉及任何節點 — 目標上已存在所有內容。
+上述故障示例是通过运行引入，然后在禁用划出的情况下再次重新运行相同的引入来实现的，这样在引入期间不涉及任何节点 — 目标上已存在所有节点。
 
-除了包含在擷取記錄中外，驗證報告也可以從以下網址存取： **內嵌工作** Cloud Acceleration Manager中的使用者介面。 若要這麼做，請按一下三個點(**...**)然後按一下 **驗證報告** 以檢視驗證報告。
+除了包含在摄取日志中，还可以从访问验证报告 **引入作业** Cloud Acceleration Manager中的用户界面。 为此，请单击三个圆点(**...**)，然后单击 **验证报告** 查看验证报告。
 
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## 如何驗證主體移轉 {#how-to-validate-principal-migration}
+## 如何验证主体迁移 {#how-to-validate-principal-migration}
 
-另請參閱 [使用者對應和主體移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以瞭解主要移轉的詳細資料以及為何需要。
+参见 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以了解主要迁移的详细信息以及为什么需要这样做。
 
-成功完成擷取和內嵌後，即可使用主體移轉的摘要和報告。 此資訊可用於驗證哪些使用者和群組已成功移轉，或許也可用於判斷部分使用者及群組未成功移轉的原因。
+成功完成提取和引入后，即可使用主体迁移的摘要和报告。 此信息可用于验证哪些用户和组已成功迁移，也许还可用于确定为什么有些用户和组没有迁移。
 
-若要檢視此資訊，請前往Cloud Acceleration Manager。 按一下您的專案卡，然後按一下「內容轉移」卡。 導覽至 **內嵌工作** 並找到您要驗證的內嵌。 按一下三個點(**...**)，然後按一下 **檢視主體摘要** （在下拉式清單中）。
+要查看此信息，请转到Cloud Acceleration Manager。 单击您的项目信息卡，然后单击“内容传输”信息卡。 导航到 **引入作业** 并找到要验证的引入。 单击三个圆点(**...**)，然后单击 **查看主体摘要** 在下拉菜单中。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-您會看到包含摘要資訊的對話方塊。 使用說明圖示來閱讀更完整的說明。 按一下 **下載報告** 按鈕以下載完整的逗號分隔(CSV)報表。
+您将看到一个包含摘要信息的对话框。 使用帮助图标阅读更完整的说明。 单击 **下载报告** 按钮以下载完整的逗号分隔(CSV)报表。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 >[!NOTE]
 >
->如果停用使用者對應，則會顯示此對話方塊的另一個變體。 這會指出使用者對應已停用，且不會顯示提供使用者對應值的3個欄位。
+>如果禁用了用户映射，将显示此对话框的另一个变体。 它将指示用户映射已被禁用，并且不会显示给出用户映射值的3个字段。
 
 ## 疑难解答 {#troubleshooting}
 
 ### 验证失败. 现在该做什么？ {#validation-fail}
 
-第一步是判斷內嵌是否真的失敗，或擷取的內容是否已存在於目標環境中。 如果內嵌重複出現 **在內嵌之前擦除雲端例項上的現有內容** 選項已停用。
+第一步是确定摄取是否真的失败，或者提取的内容是否已存在于目标环境中。 如果通过重复引入，则可能会发生这种情况 **在引入之前擦除云实例上的现有内容** 选项已禁用。
 
-若要驗證，請從驗證報表中選擇路徑，並檢查該路徑是否存在於目標環境中。 如果這是發佈環境，您可能會受限於直接檢查頁面和資產。 如果您需要此步驟的協助，請透過客戶服務開立票證。
+要进行验证，请从验证报表中选择一个路径，并检查该路径是否存在于目标环境中。 如果这是发布环境，则您可能只能直接检查页面和资产。 如果您需要此步骤的相关帮助，请向客户关怀部门提交工单。
 
-### 節點計數低於我的預期。 為什麼？ {#node-count-lower-than-expected}
+### 节点数低于我的预期。 为什么会这样？ {#node-count-lower-than-expected}
 
-會刻意排除擷取和擷取摘要的部分路徑，以管理這些檔案的大小，目標是在擷取完成後的兩小時內計算移轉驗證結果。
+有意排除提取和摄取摘要中的某些路径，以保持这些文件的大小可管理，目标是能够在摄取完成后的两小时内计算迁移验证结果。
 
-我們目前從摘要中排除的路徑包括： `cqdam.text.txt` 轉譯，內的節點 `/home`，以及內的節點 `/jcr:system`.
+我们当前从摘要中排除的路径包括： `cqdam.text.txt` 演绎版，内的节点 `/home`，以及中的节点 `/jcr:system`.

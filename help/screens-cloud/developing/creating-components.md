@@ -1,6 +1,6 @@
 ---
 title: 创建组件
-description: AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內容。 請依照本頁所述操作，瞭解製作管道和演算元件的相關資訊。
+description: AEM组件用于保留、格式化和渲染网页上可用的内容。 请按照本页面了解如何创作渠道和渲染组件。
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -11,35 +11,35 @@ ht-degree: 3%
 
 # 创建组件 {#creating-components}
 
-AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內容。
+AEM组件用于保留、格式化和渲染网页上可用的内容。
 
-## 製作管道 {#authoring-channels}
+## 创作渠道 {#authoring-channels}
 
-色版是傳送至一組顯示器的內容中心物件。 因此，內容作者通常會在編輯器中開啟管道，以新增或修改內容。 由於頻道是 ***cq：Page*** 它會遵循相同的傳統UX模式，在通道上新增和變更元件。
+渠道是交付给一组显示器的内容的中心对象。 因此，内容作者通常会在编辑器中打开一个渠道来添加或修改内容。 由于渠道是 ***cq：Page*** 它将遵循与传统UX相同的模式，在渠道中添加和更改组件。
 
-不過，由於管道中的元件通常會在全熒幕上呈現，因此在嘗試編輯單一元件或撰寫新訂單時，編寫體驗會受到影響。 因此，管道將依賴選取器來呈現元件的不同檢視。 製作環境將利用編輯選擇器來啟動自訂管道呈現。
+但是，由于渠道中的组件通常会在全屏模式下呈现，因此，在尝试编辑单个组件或撰写新订单时，创作体验会受到影响。 因此，渠道将依赖选择器呈现组件的不同视图。 创作环境将利用编辑选择器激活自定义渠道渲染。
 
 例如，`http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
-編輯時，使用者不必將選擇器新增至URL。 使用者端邏輯正在接聽層切換事件，並在通道具有專用資源型別時新增選擇器 *screens/core/components/channel.*
+编辑时，用户无需将选择器添加到URL。 客户端逻辑正在侦听层切换事件，并在通道具有专用资源类型时添加选择器 *screens/core/components/channel.*
 
-## 演算元件 {#rendering-components}
+## 渲染组件 {#rendering-components}
 
-若要啟用正確編寫，元件需要提供下列兩種轉譯：
+要启用正确创作，组件需要提供以下两种渲染：
 
 | **Component** | **演绎版** |
 |---|---|
-| *my-component/my-component.html* | 生產呈現 |
-| *my-component/edit.html* | 在較小的檢視中編輯演算 |
+| *my-component/my-component.html* | 生产渲染 |
+| *my-component/edit.html* | 在较小的视图中编辑渲染 |
 
-內建元件會運用下列使用者端程式庫類別：
+内置组件利用以下客户端库类别：
 
 | **Component** | **客户端库** |
 |---|---|
-| *cq.screens.components.edit* | 編寫期間必須載入的CSS和JS |
-| *cq.screens.components.production* | 通道執行時須載入的CSS和JS |
-| *cq.screens.components* | 共用的CSS和JS |
+| *cq.screens.components.edit* | 创作期间必须加载的CSS和JS |
+| *cq.screens.components.production* | 渠道运行时必须加载的CSS和JS |
+| *cq.screens.components* | 共享CSS和JS |
 
 >[!NOTE]
 >
->若要開發自訂元件，請使用***[AEM Screens範例元件範本](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***。
+>要开发自定义组件，请使用***[AEM Screens示例组件模板](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***。

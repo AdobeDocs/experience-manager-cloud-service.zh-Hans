@@ -1,6 +1,6 @@
 ---
-title: 如何編輯或新增中繼資料
-description: 瞭解中的資產中繼資料 [!DNL Experience Manager Assets] 編輯資產中繼資料的各種方式。
+title: 如何编辑或添加元数据
+description: 了解中的资源元数据 [!DNL Experience Manager Assets] 编辑资源元数据的各种方式。
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -12,47 +12,47 @@ ht-degree: 15%
 
 ---
 
-# 如何編輯或新增中繼資料 {#how-to-edit-or-add-metadata}
+# 如何编辑或添加元数据 {#how-to-edit-or-add-metadata}
 
-中繼資料是可搜尋資產的其他相關資訊。 上傳影像時會自動擷取該影像。 您可以編輯現有的中繼資料，或將新的中繼資料屬性新增到現有欄位（例如，當中繼資料欄位為空白時）。
+元数据是可搜索资产的其他信息。 上传图像时，会自动提取该值。 您可以编辑现有元数据或向现有字段添加新元数据属性（例如，当元数据字段为空时）。
 
-由於公司需要受控且可靠的中繼資料辭彙， [!DNL Experience Manager Assets] 不允許臨時新增新的中繼資料屬性。 雖然作者無法為資產新增中繼資料欄位，但開發人員可以。 另請參閱 [建立資產的新中繼資料屬性](meta-edit.md#editing-metadata-schema).
+因为公司需要可控和可靠的元数据词汇， [!DNL Experience Manager Assets] 不允许临时添加新的元数据属性。 尽管作者无法为资产添加新元数据字段，但开发人员可以。 参见 [为资源创建新的元数据属性](meta-edit.md#editing-metadata-schema).
 
-## 編輯資產的中繼資料 {#editing-metadata-for-an-asset}
+## 编辑资源的元数据 {#editing-metadata-for-an-asset}
 
-若要編輯中繼資料：
+要编辑元数据，请执行以下操作：
 
 1. 执行下列操作之一：
 
-   * 從「資產」UI中選取資產，然後按一下/點選 **[!UICONTROL 檢視屬性]** 圖示加以檢視。
-   * 從資產縮圖中，選取 **[!UICONTROL 檢視屬性]** 快速動作。
-   * 在資產頁面中，按一下/點選 **[!UICONTROL 檢視屬性]** （從工具列）。
+   * 在资产UI中，选择资产，然后单击/点按 **[!UICONTROL 查看属性]** 图标。
+   * 从资源缩略图中，选择 **[!UICONTROL 查看属性]** 快速操作。
+   * 在资产页面中，单击/点按 **[!UICONTROL 查看属性]** 工具栏中。
 
-   資產頁面會顯示資產的所有中繼資料。 此中繼資料上傳（擷取）至Experience Manager Assets時，會自動擷取。
+   资源页面显示资源的所有元数据。 此元数据在上传（引入）到Experience Manager Assets后会自动提取。
 
 1. 根据需要，在各个选项卡下对元数据进行编辑，完成后，单击／点按工具栏中的 **[!UICONTROL 保存]** ，以保存更改。 单击／点 **[!UICONTROL 按关闭]** ，以返回到资产Web界面。
 
    >[!NOTE]
    >
-   >如果文字欄位為空，則沒有現有的中繼資料集。 您可以在欄位中輸入值，並儲存以新增該中繼資料屬性。
+   >如果文本字段为空，则不存在现有的元数据集。 您可以在字段中输入值并将其保存以添加该元数据属性。
 
-對資產中繼資料所做的任何變更，都會當作其XMP資料的一部分，回寫至原始二進位檔。 這可透過Experience Manager中繼資料回寫工作流程完成。 對現有屬性進行的變更(例如 `dc:title`)會被覆寫及新建立的屬性(包括自訂屬性，例如 `cq:tags`)與結構描述一起新增。
+对资源元数据所做的任何更改都将作为其XMP数据的一部分写回原始二进制文件。 这是通过Experience Manager元数据回写工作流完成的。 对现有属性进行的更改(例如 `dc:title`)被覆盖和新创建的属性(包括自定义属性，如 `cq:tags`)与架构一起添加。
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
-## 編輯中繼資料結構 {#editing-metadata-schema}
+## 编辑元数据架构 {#editing-metadata-schema}
 
-如需如何編輯中繼資料結構的詳細資訊，請參閱 [編輯中繼資料結構表單](metadata-schemas.md#edit-metadata-schema-forms).
+有关如何编辑元数据架构的详细信息，请参阅 [编辑元数据架构表单](metadata-schemas.md#edit-metadata-schema-forms).
 
-## 在Experience Manager中註冊自訂名稱空間 {#registering-a-custom-namespace-within-aem}
+## 在Experience Manager中注册自定义命名空间 {#registering-a-custom-namespace-within-aem}
 
-您可以在Experience Manager中新增您自己的名稱空間。 就像預先定義的名稱空間（例如cq、jcr和sling）一樣，您可以擁有存放庫中繼資料和xml處理的名稱空間。
+您可以在Experience Manager中添加自己的命名空间。 正如具有预定义命名空间（如cq、jcr和sling）一样，您也可以具有用于存储库元数据和xml处理的命名空间。
 
-1. 前往節點型別管理頁面 *https://&lt;host>：&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. 按一下或點選 **[!UICONTROL 名稱空間]** ，位於頁面頂端。 名稱空間管理頁面會顯示在視窗中。
+1. 转到节点类型管理页面 *https://&lt;host>：&lt;port>/crx/explorer/nodetypes/index.jsp*.
+1. 单击或点按 **[!UICONTROL 命名空间]** 页面顶部的。 命名空间管理页面显示在窗口中。
 
-1. 若要新增名稱空間，請按一下或點選 **[!UICONTROL 新增]** 在底部。
-1. 以XML名稱空間慣例指定自訂名稱空間（以URI格式指定ID，並為該ID指定關聯的前置詞），然後按一下或點選 **[!UICONTROL 儲存]**.
+1. 要添加命名空间，请单击或点按 **[!UICONTROL 新]** 在底部。
+1. 以XML命名空间约定指定自定义命名空间（以URI的形式指定ID，并为ID指定关联的前缀），然后单击或点按 **[!UICONTROL 保存]**.
 
 **另请参阅**
 

@@ -16,9 +16,9 @@ ht-degree: 92%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] 會在生產部署開始時在生產管道啟動和完成（成功或失敗）時傳送通知給您。
+[!UICONTROL Cloud Manager] 在生产部署开始时在生产管道启动和完成（成功或失败）时向您发送通知。
 
-這些通知會透過 [!UICONTROL Experience Cloud] 通知系統中的使用者 **業務負責人**， **計畫管理員**、和 **部署管理員** 角色。
+这些通知将通过 [!UICONTROL Experience Cloud] 通知系统中的用户 **业务负责人**， **项目经理**、和 **部署管理员** 角色。
 
 通知显示在 [!UICONTROL Cloud Manager] 和整个 Adobe [!UICONTROL Experience Cloud] 侧边栏中。当您有新通知时，标题中的铃铛图标将被标记。
 

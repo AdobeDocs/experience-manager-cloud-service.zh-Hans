@@ -1,6 +1,6 @@
 ---
-title: 建立並使用主題來風格化最適化表單
-description: 您可以使用主題來風格化最適化表單並提供視覺身分。 您可以在任何數量的Adaptive Forms中共用主題。
+title: 创建和使用主题使自适应表单风格化
+description: 您可以使用主题来使自适应表单风格化并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
@@ -9,98 +9,98 @@ ht-degree: 1%
 
 ---
 
-# 建立和使用主題 {#creating-and-using-themes}
+# 创建和使用主题 {#creating-and-using-themes}
 
-您可以建立並套用主題，使最適化表單風格化<!-- or an interactive communication-->. 主題包含元件和面板的樣式詳細資訊。 樣式包含背景顏色、狀態顏色、透明度、對齊方式及大小等屬性。 套用主題時，指定的樣式會反映在相應的元件上。 主題可獨立管理，不需參考最適化表單<!-- or interactive communication -->.
+您可以创建和应用主题以使自适应表单风格化<!-- or an interactive communication-->. 主题包含组件和面板的样式详细信息。 样式包括诸如背景颜色、状态颜色、透明度、对齐方式和大小等属性。 应用主题时，指定的样式反映在相应的组件上。 主题独立管理，无需引用自适应表单<!-- or interactive communication -->.
 
-您可以下載並安裝 [!DNL AEM Forms] 引用內容包來自 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 入口網站，將參考主題和範本匯入您的環境。
+您可以下载并安装 [!DNL AEM Forms] 引用内容包来自 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 门户，用于将引用主题和模板导入到您的环境。
 
-## 建立、下載或上傳主題 {#creating-downloading-or-uploading-a-theme}
+## 创建、下载或上传主题 {#creating-downloading-or-uploading-a-theme}
 
-主題會建立並儲存為單獨的實體，並包含如Adaptive Forms的中繼屬性。 它可讓您在多個最適化Forms中重複使用主題<!-- or  and interactive communications-->. 您也可以將佈景主題移動到不同的執行個體並重複使用。
+主题将作为单独的实体创建和保存，并具有像自适应Forms这样的元属性。 它允许在多个自适应Forms中重用主题<!-- or  and interactive communications-->. 您还可以将主题移动到其他实例并重复使用。
 
-### 建立主題 {#creating-a-theme}
+### 创建主题 {#creating-a-theme}
 
-若要建立佈景主題：
+要创建主题，请执行以下操作：
 
-1. 按一下 **[!UICONTROL Adobe Experience Manager]**，按一下 **[!UICONTROL Forms]**，然後按一下 **[!UICONTROL 主題]**.
+1. 单击 **[!UICONTROL Adobe Experience Manager]**，单击 **[!UICONTROL Forms]**，然后单击 **[!UICONTROL 主题]**.
 
-1. 在「佈景主題」頁面中，按一下 **[!UICONTROL 建立]** > **[!UICONTROL 主題]**.
-將啟動建立主題的精靈。
+1. 在“主题”页面中，单击 **[!UICONTROL 创建]** > **[!UICONTROL 主题]**.
+将启动创建主题的向导。
 
-1. 指定 **[!UICONTROL 名稱]** 主題的。
+1. 指定 **[!UICONTROL 名称]** 主题的。
 
-1. 指定表單以預覽中的主題 **[!UICONTROL 此主題的預設預覽]** 欄位。 按一下 **[!UICONTROL 使用預設值]** 以使用預設表單來預覽主題。
+1. 指定表单以预览中的主题 **[!UICONTROL 此主题的默认预览]** 字段。 单击 **[!UICONTROL 使用默认值]** 使用默认表单预览主题。
 
-1. 指定 **[!UICONTROL 設定容器]**. 您可以選擇 **[!UICONTROL 設定容器]** 包含您帳戶的Adobe字型組態詳細資訊。 您也可以暫時將選項保留為空白，並稍後從以下網址指定詳細資料： [主題屬性](#metadata-of-a-theme).
+1. 指定 **[!UICONTROL 配置容器]**. 您可以选择 **[!UICONTROL 配置容器]** 其中包含您帐户的Adobe字体的配置详细信息。 您还可以暂时将选项保留为空，并稍后从以下位置指定详细信息 [主题属性](#metadata-of-a-theme).
 
-1. 按一下 **[!UICONTROL 建立]** 然後按一下 **[!UICONTROL 編輯]** 以開啟主題編輯器中的主題，或按一下 **[!UICONTROL 完成]** 返回「主題」頁面。
+1. 单击 **[!UICONTROL 创建]** 然后单击 **[!UICONTROL 编辑]** 在主题编辑器中打开主题，或单击 **[!UICONTROL 完成]** 以返回“主题”页面。
 
-### Experience Manager6.5 Forms和舊版的主題差異 {#difference-in-themes}
+### 与Experience Manager6.5 Forms及先前版本上的主题不同 {#difference-in-themes}
 
-在Cloud Service例項上建立的主題：
+在Cloud Service实例上创建的主题：
 
-* 版本編號為2。
+* 版本号为2。
 
-* 儲存在 `/content/dam/formsanddocuments-themes/<theme-name>/`
+* 存储在 `/content/dam/formsanddocuments-themes/<theme-name>/`
 
-* 不提供使用者端程式庫選項。 您無法指定使用者端程式庫類別和路徑。
+* 不提供客户端库选项。 不能指定客户端库类别和路径。
 
-* 沒有/apps位置的寫入和更新許可權(Forms使用者群組沒有/apps位置的寫入和更新許可權)。
+* 没有/apps位置的写入和更新权限(Forms-user组没有/apps位置的写入和更新权限)。
 
-* 上傳在上建立的主題之前 [!DNL Experience Manager Forms] 6.5或舊版的Cloud Service執行個體，請確定使用者端程式庫位置已設為 `etc/clientlibs/fd/themes`. 如果使用者端程式庫不存在於 `etc` 資料夾，手動更新位置至 `etc/clientlibs/fd/themes`.  您可以變更您的 [!DNL Experience Manager Forms] 6.5或舊版例項。 設定使用者端資料庫的位置後，管理員可以將主題上傳到Cloud Service執行個體，或使用「內容轉移工具」將主題從6.5版或舊版執行個體移轉至Cloud Service執行個體。
+* 上传主题之前，创建于 [!DNL Experience Manager Forms] 对于Cloud Service实例，请确保将客户端库位置设置为 `etc/clientlibs/fd/themes`. 如果客户端库不存在于 `etc` 文件夹，手动将位置更新为 `etc/clientlibs/fd/themes`.  您可以对以下内容进行更改： [!DNL Experience Manager Forms] 6.5版本或以前的版本实例。 在设置客户端库的位置后，管理员可以将主题上传到Cloud Service实例，或者使用内容传输工具将主题从6.5版本或更低版本的实例迁移到Cloud Service实例。
 
-   此外，請變更類別的名稱。 如果未變更名稱，則會發生錯誤 `theme with same category name exists` 可能會發生。 當您變更類別名稱時，不會影響使用主題的最適化Forms。
+   此外，更改类别的名称。 如果未更改名称，则会出错 `theme with same category name exists` 可能会发生。 更改类别名称时，不会影响使用主题的自适应Forms。
 
-### 下載主題 {#downloading-a-theme}
+### 下载主题 {#downloading-a-theme}
 
-您可以將主題匯出為zip檔案，並在其他專案或Experience Manager例項中使用這些主題。 若要下載佈景主題：
+您可以将主题导出为zip文件，并在其他项目或Experience Manager实例中使用这些主题。 要下载主题，请执行以下操作：
 
-1. 按一下 **[!UICONTROL Adobe Experience Manager]**，按一下 **[!UICONTROL Forms]**，然後按一下 **[!UICONTROL 主題]**.
+1. 单击 **[!UICONTROL Adobe Experience Manager]**，单击 **[!UICONTROL Forms]**，然后单击 **[!UICONTROL 主题]**.
 
-1. 在「佈景主題」頁面中， **[!UICONTROL 選取]** 佈景主題，然後按一下 **[!UICONTROL 下載]**. 隨即顯示包含主題詳細資訊的對話方塊。
+1. 在“主题”页面中， **[!UICONTROL 选择]** 主题，然后单击 **[!UICONTROL 下载]**. 将显示一个对话框，其中包含主题的详细信息。
 
-1. 单击&#x200B;**[!UICONTROL 下载]**。主題會下載為zip檔案。
+1. 单击&#x200B;**[!UICONTROL 下载]**。主题将下载为zip文件。
 
 >[!NOTE]
 >
->如果您下載的主題有關聯的最適化表單，且關聯的最適化表單以自訂範本為基礎，則也要下載自訂範本。 上傳下載的主題和最適化表單時，也要上傳相關的自訂範本。
+>如果下载的主题具有与之关联的自适应表单，并且关联的自适应表单基于自定义模板，则也要下载自定义模板。 上传下载的主题和自适应表单时，也要上传相关的自定义模板。
 
-### 上傳主題 {#uploading-a-theme}
+### 上传主题 {#uploading-a-theme}
 
-具有管理員許可權的使用者可以上傳在中建立的主題 [!DNL Experience Manager Forms] 6.5或更早版本。
+具有管理员权限的用户可以上传在中创建的主题 [!DNL Experience Manager Forms] 6.5或更早版本。
 
-上傳佈景主題：
+要上传主题，请执行以下操作：
 
-1. 按一下 **[!UICONTROL Adobe Experience Manager]**，按一下 **[!UICONTROL Forms]**，然後按一下 **[!UICONTROL 主題]**.
+1. 单击 **[!UICONTROL Adobe Experience Manager]**，单击 **[!UICONTROL Forms]**，然后单击 **[!UICONTROL 主题]**.
 
-1. 在「佈景主題」頁面中，按一下 **[!UICONTROL 建立]** > **[!UICONTROL 檔案上傳]**.
-1. 在「檔案上傳」提示中，瀏覽並選取電腦上的主題套件，然後按一下 **[!UICONTROL 上傳]**.
-上傳的主題可在主題頁面中取得。
+1. 在“主题”页面中，单击 **[!UICONTROL 创建]** > **[!UICONTROL 文件上传]**.
+1. 在“文件上传”提示符下，浏览并选择计算机上的主题包，然后单击 **[!UICONTROL 上传]**.
+上传的主题可在主题页面中找到。
 
-## 主題的中繼資料 {#metadata-of-a-theme}
+## 主题的元数据 {#metadata-of-a-theme}
 
-主題的中繼屬性清單（可在主題的屬性頁面中找到）。
+主题的元属性列表（可在主题的属性页面中找到）。
 
 <table>
  <tbody>
   <tr>
    <th><p><strong>ID</strong></p> <p> </p> </th>
    <th><strong>名称</strong></th>
-   <th><strong>可以編輯</strong></th>
-   <th><strong>屬性說明</strong></th>
+   <th><strong>可以编辑</strong></th>
+   <th><strong>属性描述</strong></th>
   </tr>
   <tr>
    <td>1.</td>
    <td>标题</td>
    <td>是</td>
-   <td>主題的顯示名稱。</td>
+   <td>主题的显示名称。</td>
   </tr>
   <tr>
    <td>2.</td>
    <td>描述</td>
    <td>是</td>
-   <td>主題的相關說明。</td>
+   <td>有关主题的描述。</td>
   </tr>
   <tr>
    <td>3.</td>
@@ -108,51 +108,51 @@ ht-degree: 1%
    <td>否</td>
    <td>
     <ul>
-     <li>資產型別。</li>
-     <li>值一律為主題。</li>
+     <li>资源类型。</li>
+     <li>值始终为主题。</li>
     </ul> </td>
   </tr>
   <tr>
    <td>4.</td>
    <td>创建时间</td>
    <td>否</td>
-   <td>主題建立日期</td>
+   <td>主题创建日期</td>
   </tr>
   <tr>
    <td>5.</td>
-   <td>作者名稱</td>
+   <td>作者姓名</td>
    <td>是</td>
-   <td>主題的作者。 在建立佈景主題時計算。</td>
+   <td>主题的作者。 在主题创建时计算。</td>
   </tr>
   <tr>
    <td>6.</td>
    <td>上次修改日期</td>
    <td>否</td>
-   <td>上次修改主題的日期。</td>
+   <td>上次修改主题的日期。</td>
   </tr>
   <tr>
    <td>7.</td>
    <td>状态</td>
    <td>否</td>
-   <td>主題的狀態（已修改/已發佈）。</td>
+   <td>主题状态（已修改/已发布）。</td>
   </tr>
   <tr>
    <td>8.</td>
-   <td>準時發佈</td>
+   <td>准时发布</td>
    <td>是</td>
-   <td>自動發佈主題的時間。</td>
+   <td>自动发布主题的时间。</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>發佈關閉時間</td>
+   <td>发布关闭时间</td>
    <td>是</td>
-   <td>自動取消發佈主題的時間。</td>
+   <td>自动取消发布主题的时间。</td>
   </tr>
   <tr>
    <td>10.</td>
    <td>标记</td>
    <td>是</td>
-   <td>附加至用於識別的主題的標籤，用於改善搜尋。</td>
+   <td>附加到用于标识的主题的标签，用于改进搜索。</td>
   </tr>
   <!-- <tr>
    <td>11.</td>
@@ -191,194 +191,194 @@ ht-degree: 1%
  </tbody>
 </table>
 
-## 關於主題編輯器 {#about-the-theme-editor}
+## 关于主题编辑器 {#about-the-theme-editor}
 
-主題編輯器是商業使用者和Web設計人員/開發人員友善的介面，提供指定各種最適化表單樣式所需的功能 <!-- and interactive communication --> 元素輕鬆操作。 當您建立主題時，它會儲存為單獨的實體，例如表單 <!--  , interactive communications, letters, document fragments, and data dictionaries-->.
+主题编辑器是一个便于企业用户和Web设计人员/开发人员使用的界面，提供了指定各种自适应表单样式所需的功能 <!-- and interactive communication --> 元素简单。 创建主题时，该主题将存储为一个单独的实体，如表单 <!--  , interactive communications, letters, document fragments, and data dictionaries-->.
 
-主題編輯器可讓您自訂主題中設定樣式的元件樣式。 您可以自訂表單的方式 <!-- or interactive communication --> 尋找裝置。
+主题编辑器允许您自定义主题中样式化组件的样式。 您可以自定义表单的方式 <!-- or interactive communication --> 查看设备。
 
-主題編輯器分為兩個面板：
+主题编辑器分为两个面板：
 
-* **畫布**  — 顯示在右側。 它會顯示最適化表單範例 <!--  or interactive communication --> 其中所有的樣式變更都會立即反映。 您也可以直接從畫布中選取物件，以查詢與物件相關聯的樣式，並編輯這些樣式。 上方的裝置解析度尺標可控制畫布。 從尺標選取解析度中斷點會顯示範例表單的預覽 <!--  or interactive communication --> 以取得個別解析度。 畫布將詳細說明 [以下](themes.md#using-canvas).
+* **画布**  — 显示在右侧。 它显示了一个自适应表单示例 <!--  or interactive communication --> 其中所有样式更改都会立即反映。 您还可以直接从画布中选择对象来查找与其关联的样式，并编辑这些样式。 顶部的设备分辨率标尺控制画布。 从标尺中选择分辨率断点将显示示例表单的预览 <!--  or interactive communication --> 以取得相关决议案。 画布将进行详细讨论 [以下](themes.md#using-canvas).
 
-* **側欄** — 顯示在左側。 它有下列專案：
+* **侧栏** — 显示在左侧。 它包括以下项目：
 
-   * **選擇器：** 顯示為樣式化選取的元件，及其可設定樣式的屬性。 選取器代表型別的所有元件。 如果您在樣式設定主題中選取文字方塊元件，則表單中的所有文字方塊 <!-- or interactive communication --> 繼承樣式。 選取器可讓您選取一般元件或特定元件來設定樣式。 例如，欄位元件是類屬元件，而文字方塊是特定元件。
+   * **选择器：** 显示选定用于设置样式的组件及其可设置样式的属性。 选择器表示某个类型的所有组件。 如果选择主题中的文本框组件进行样式，则表单中的所有文本框 <!-- or interactive communication --> 继承样式。 选择器允许您选择通用组件或特定组件来设置样式。 例如，字段组件是通用组件，文本框是特定组件。
 
-      **樣式化一般元件：**
-欄位可以是數值方塊欄位（例如年齡）或文字方塊欄位（例如地址）。
-當您設定欄位樣式時，所有欄位（例如年齡、姓名、地址）都會設定樣式。
+      **设置通用组件样式：**
+字段可以是数字框字段（如年龄）或文本框字段（如地址）。
+设置字段样式时，所有字段（如年龄、姓名、地址）都会设置样式。
 
-      **設定特定元件的樣式**：特定元件會影響特定類別的物件。 當您在主題中設定數值方塊元件的樣式時，只有數值方塊物件會繼承樣式。
+      **设置特定组件的样式**：特定组件影响特定类别的对象。 当在主题中设置数字框组件的样式时，只有中的数字框对象会继承该样式。
 
-      例如，較長的文字方塊欄位（例如地址）和較短的數值方塊欄位（例如年齡）。 您可以選取數值方塊欄位、縮短其長度，並套用至您的表單。 表格中所有數值方塊欄位的寬度都會縮小。
+      例如，文本框字段（如地址较长）和数字框字段（如年龄较短）。 您可以选择数字框字段，缩短其长度，然后将其应用于表单。 表单中所有数字框字段的宽度都会缩小。
 
-      當您使用特定的背景顏色自訂所有欄位元件時，所有欄位（例如年齡、名稱和地址）都會繼承背景顏色。 當您選取數值方塊（例如年齡），並縮小其寬度時，所有數值方塊（例如年齡）的寬度、家庭人數都會減少。 文字方塊的寬度不會變更。
+      使用特定的背景颜色自定义所有字段组件时，所有字段（如年龄、名称和地址）将继承背景颜色。 如果选中数字框（如年龄），并减小其宽度，则所有数字框的宽度（如年龄）都会减少，家庭中的人数也会减少。 文本框的宽度不会更改。
 
-   * **狀態：** 可讓您自訂處於特定狀態的物件樣式。 例如，當物件處於預設狀態、焦點、停用、暫留或錯誤狀態時，您可以指定物件的外觀。
-   * **屬性類別：** 樣式屬性分為不同的類別。 例如Dimension和位置、文字、背景、邊框和效果。 在每個類別下，您會提供樣式資訊。 例如，在「背景」下，您可以提供「背景顏色」和「影像與漸層」。
+   * **状态：** 允许您自定义处于特定状态的对象的样式。 例如，可以指定对象在默认、集中、禁用、悬停或错误状态下的外观。
+   * **属性类别：** 样式属性分为各种类别。 例如Dimension和位置、文本、背景、边框和效果。 在每个类别下，您都会提供样式信息。 例如，在“背景”下，您可以提供“背景颜色”和“图像和渐变”。
 
-   * **進階：** 可讓您將自訂CSS新增至物件，這會覆寫視覺控制項所定義的屬性（如果有重疊）。
+   * **高级：** 允许您将自定义CSS添加到对象，这将覆盖可视化控件定义的属性（如果存在重叠）。
 
-   * **檢視CSS**：可讓您檢視所選元件的CSS。
-   此外，側欄底部會顯示箭頭。 按一下箭頭時，您會取得兩個其他選項： **模擬成功** 和 **模擬錯誤。** 這些選項以及上述選項均會詳細討論 [以下](themes.md#using-rail).
+   * **查看CSS**：用于查看所选组件的CSS。
+   此外，在侧栏的底部有一个箭头。 单击箭头时，您会获得两个其他选项： **模拟成功** 和 **模拟错误。** 详细讨论了这些选项以及上述选项 [以下](themes.md#using-rail).
 
-[ ![主題編輯器](assets/themes.png)](assets/themes-1.png) **答：** 側欄 **B.** 畫布
+[ ![主题编辑器](assets/themes.png)](assets/themes-1.png) **答：** 侧栏 **B.** 画布
 
-### 樣式元件 {#styling-components}
+### 设置组件样式 {#styling-components}
 
-您可以在多個最適化Forms中使用主題<!-- and interactive communications -->，會匯入您在主題中指定的元件格式。 您可以設定各種元件的樣式，例如標題、說明、面板、欄位、圖示和文字方塊。 使用Widget來設定主題中的元件屬性。 您不一定要具備CSS或LESS的先前知識，但是需要具備，不過CSS覆寫區段可讓您撰寫CSS程式碼或提供自訂選取器。 在側邊欄中選取元件時，CSS覆寫區段隨即顯示。
+您可以在多个自适应Forms中使用主题<!-- and interactive communications -->，用于导入在主题中指定的组件格式。 您可以为各种组件设置样式，例如标题、描述、面板、字段、图标和文本框。 使用小组件在主题中配置组件属性。 虽然CSS覆盖部分允许您编写CSS代码或提供自定义选择器，但并不要求具备CSS或LESS的先前知识。 在侧栏中选择组件时，将显示“CSS覆盖”部分。
 
-![側欄中的可設定樣式的元件](assets/stylable-components.png)
+![侧栏中的可样式组件](assets/stylable-components.png)
 
-側邊欄中的選項，可讓您選取不同元件並設定其樣式。
+侧栏中的选项，用于选择和设置不同组件的样式。
 
-按一下側邊欄中某個元件的編輯按鈕，可選取畫布中的元件，並讓您使用側邊欄中的選項來設定元件的樣式。
+单击侧栏中某个组件的编辑按钮时，会选择画布中的组件，并允许您使用侧栏中的选项设置组件的样式。
 
-文字方塊、數值方塊、選項按鈕和核取方塊等特定元件會歸類在「欄位」等類屬元件下。 例如，您想要自訂選項按鈕的樣式。 若要選取樣式設定選項按鈕，請選取 **[!UICONTROL 欄位]** > **[!UICONTROL Widget]** > **[!UICONTROL 選項按鈕]**.
+某些组件（如文本框、数字框、单选按钮和复选框）在类属组件（如“字段”）下分类。 例如，要自定义单选按钮的样式。 要选择用于样式设置的单选按钮，请选择 **[!UICONTROL 字段]** > **[!UICONTROL 构件]** > **[!UICONTROL 单选按钮]**.
 
-### 樣式化面板版面 {#styling-panel-layouts-br}
+### 样式化面板布局 {#styling-panel-layouts-br}
 
-中的主題 [!DNL AEM Forms] 支援表單中面板版面配置元素的樣式設定<!-- and  interactive communications -->. 現成可用的版面配置與自訂版面配置中的元素樣式受到支援。
+中的主题 [!DNL AEM Forms] 支持表单中面板布局元素的样式<!-- and  interactive communications -->. 支持对现成版面和自定义版面中的元素进行样式设置。
 
-現成可用的面板包括：
+现成的面板包括：
 
 * 左侧选项卡
 * 顶部选项卡
 * 折叠
 * 响应式
 * 向导
-* 行動佈局
+* 移动设备布局
 
-   * 標題中的面板標題
-   * 標題中沒有面板標題
+   * 标题中的面板标题
+   * 标题中没有面板标题
 
-選擇器會因每個版面而有所不同。
-從主題編輯器設定自訂配置樣式涉及：
+选择器因布局而异。
+从主题编辑器为自定义布局设置样式涉及：
 
-* 定義可設定樣式的版面元件，以及可唯一識別這些元件的CSS選取器。
-* 定義可套用在這些元件上的CSS屬性。
-* 從使用者介面以互動方式定義這些元件的樣式。
+* 为可设置样式的布局定义组件，以及为唯一标识这些组件的CSS选择器。
+* 定义可以应用于这些组件的CSS属性。
+* 从用户界面以交互方式定义这些组件的样式。
 
-### 不同熒幕大小的不同樣式 {#different-styles-for-different-screen-sizes-br}
+### 不同屏幕大小的不同样式 {#different-styles-for-different-screen-sizes-br}
 
-桌上型電腦和行動版面的樣式可能稍有不同，也可能完全不同。 對於行動裝置，平板電腦和手機除了元件大小外，都共用類似的版面。
+桌面版和移动设备版面可以具有略微不同的样式，也可以具有完全不同的样式。 对于移动设备，平板电脑和手机共享相似的布局，但组件大小除外。
 
-使用主題編輯器中斷點來定義不同熒幕大小的替代樣式。 您可以選取要開始建立佈景主題的基本裝置或解析度，系統會自動產生其他解析度的樣式變化。 您可以明確修改所有解析度的樣式。
+使用主题编辑器断点为不同的屏幕大小定义替代样式。 您可以选择开始构建主题的基本设备或分辨率，并自动生成其他分辨率的样式变化。 可显式修改所有分辨率的样式。
 
 >[!NOTE]
 >
->首先使用表單建立主題<!-- or interactive communication-->，然後套用至不同的表單<!-- or interactive communications-->. 佈景主題建立中使用的中斷點可能與表單不同 <!-- or interactive communication --> 套用佈景主題的位置。 CSS媒體查詢是根據表單 <!-- or interactive communication --> 用於建立佈景主題，而非表單 <!-- or interactive communication --> 套用佈景主題的位置。
+>首先使用表单创建主题<!-- or interactive communication-->，然后应用于不同的表单<!-- or interactive communications-->. 主题创建中使用的断点可能与表单不同 <!-- or interactive communication --> 应用主题的位置。 CSS媒体查询基于表单 <!-- or interactive communication --> 用于主题创建，而不是表单 <!-- or interactive communication --> 应用主题的位置。
 
-### 選取物件時，側邊欄中的樣式屬性前後關聯變更 {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
+### 选择对象时侧栏中的样式属性上下文更改 {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
-在「畫布」中選取元件時，其樣式屬性會列在側邊欄中。 選取物件型別及其狀態，然後提供其樣式。
+在画布中选择组件时，其样式属性会列在侧栏中。 选择对象类型及其状态，然后提供其样式。
 
-### 主題編輯器中最近使用的樣式 {#recently-used-styles-in-theme-editor}
+### 主题编辑器中最近使用的样式 {#recently-used-styles-in-theme-editor}
 
-主題編輯器會快取最多十個套用至元件的樣式。 您可以將快取樣式搭配主題的其他元件使用。 側邊欄中選取元件的正下方會顯示最近使用的樣式，以清單方塊顯示。 最初，最近使用的樣式清單是空的。
+主题编辑器可缓存最多十种应用于组件的样式。 您可以将缓存的样式与主题的其他组件一起使用。 侧栏中选定组件的正下方提供了最近使用的样式作为列表框。 最初，最近使用的样式列表为空。
 
 ![Asset-library](assets/asset-library.png)
 
-當您設定元件樣式時，會快取樣式並列在清單方塊中。 在此範例中，文字方塊的標籤會設定為變更字型大小和顏色。 您可以依照類似的步驟選擇影像或變更顏色來設定元件的樣式。 當欄位標籤樣式變更時，觀察樣式如何快取並列在清單方塊中。
+当设置组件的样式时，将缓存样式并将其列在列表框中。 在本例中，文本框的标签被设置为改变字体大小和颜色的样式。 可以按照类似步骤选择图像或更改颜色来设置组件的样式。 观察更改字段标签样式时，如何缓存样式并将其列在列表框中。
 
-![快取的字型樣式適用於其他可用的元件](assets/font-style-cached1.png)
+![为可用于其他组件的组件缓存的字体样式](assets/font-style-cached1.png)
 
-在此範例中，欄位標籤的樣式已變更，而且當為樣式選取回應式面板說明時，清單專案會新增到資產庫中。 資產庫中的專案可用於變更回應式面板說明的樣式。
+在此示例中，字段标签的样式进行了更改，并且当为样式选择响应式面板描述时，将在资源库中添加一个列表条目。 资源库中的条目可用于更改响应面板描述的样式。
 
-將樣式新增至資產庫時，該樣式可用於其他主題和 [樣式模式](inline-style-adaptive-forms.md) 表單編輯器UI的。 同樣地，當您使用表單編輯器的樣式模式時 <!-- or interactive communication editor --> UI可設定元件的樣式，樣式會快取並可在主題中使用。
+将样式添加到资产库后，该样式可用于其他主题和 [样式模式](inline-style-adaptive-forms.md) 表单编辑器UI的。 同样，使用表单编辑器的样式模式时 <!-- or interactive communication editor --> UI中用于设置组件的样式，样式会缓存，并可用于主题中。
 
-資產庫的加號按鈕可讓您以所提供的名稱永久儲存樣式。 即使您未按一下側邊欄中的「儲存」按鈕來將樣式套用至元件，加號按鈕也會儲存樣式。 樣式模式中無法使用儲存樣式以供日後使用的加號按鈕。
+通过资产库的加号按钮，您可以使用提供的名称永久保存样式。 即使未单击侧栏中的“保存”按钮以将样式应用于组件，加号按钮也会保存样式。 在样式模式下，用于保存样式以供以后使用的加号按钮不可用。
 
-![為資產庫提供自訂樣式名稱](assets/custom-style-name.png)
+![为资源库提供自定义样式名称](assets/custom-style-name.png)
 
-當您提供樣式的自訂名稱時，該樣式會繫結至主題，且無法再用於其他主題。 若要刪除已儲存的樣式：
+为样式提供自定义名称时，样式将绑定到主题，并且不再适用于其他主题。 要删除保存的样式，请执行以下操作：
 
-1. 在「畫布」工具列上，按一下 **[!UICONTROL 主題選項]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 管理樣式]**.
-1. 在「管理樣式」對話方塊中，選取已儲存的樣式，然後按一下 **[!UICONTROL 刪除]**.
+1. 在“画布”工具栏上，单击 **[!UICONTROL 主题选项]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 管理样式]**.
+1. 在“管理样式”对话框中，选择保存的样式，然后单击 **[!UICONTROL 删除]**.
 
-   ![刪除儲存的樣式](assets/manage-styles.png)
+   ![删除保存的样式](assets/manage-styles.png)
 
-### 即時預覽、儲存和捨棄變更 {#live-preview-save-and-discard-changes}
+### 实时预览、保存和放弃更改 {#live-preview-save-and-discard-changes}
 
-在樣式中所做的修改會立即反映在表單中 <!-- or interactive communication --> 已載入畫布中。 即時預覽可讓您以互動方式定義並檢視樣式的影響。 當您變更元件的樣式時， **[!UICONTROL 完成]** 按鈕已啟用。 若要保留變更，請使用 **[!UICONTROL 完成]** 按鈕。
-
->[!NOTE]
->
->在欄位中輸入無效字元時，欄位邊界顏色會變更為紅色，並在熒幕左上角顯示錯誤訊息。 例如，如果在接受數字字元作為輸入的文字方塊中輸入字母，則輸入方塊的邊界顏色會變更為紅色。 您必須解決熒幕中央底部顯示的錯誤，才能儲存此類主題。
-
-### 使用其他最適化表單的主題 {#theme-with-another-adaptive-form}
-
-建立主題時，會使用主題編輯器隨附的表單來建立主題。 您可以在此表單中提供元件的樣式。 您可以選取表單，而不是主題編輯器附帶的表單 <!-- or interactive communication --> 提供樣式並預覽其結果。
-
-若要取代目前的表單或 <!-- interactive communication --> 在主題編輯器畫布中：
-
-1. 在「主題編輯器」面板中，按一下 **[!UICONTROL 主題選項]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 設定]**.
-
-1. 在一般索引標籤中，瀏覽並選取表單 <!-- or interactive communication --> 的 **[!UICONTROL 最適化表單]** 欄位。
-
-### 取消復原/還原 {#redo-undo}
-
-您可以還原或重做意外發生的不想要的變更。 使用「畫布」中的重做/還原按鈕。
-
-![重做和還原動作](assets/redo_undo_new.png)
-
-當您在「主題編輯器」中設定元件樣式時，會顯示重做/復原按鈕。
-
-## 使用主題編輯器 {#using-the-theme-editor}
-
-主題編輯器可讓您編輯建立或上傳的主題。 導覽至 **[!UICONTROL Forms與檔案]** > **[!UICONTROL 主題]**，然後選取主題並開啟。 主題會在主題編輯器中開啟。
-
-如上所述，主題編輯器有兩個面板：側欄和畫布。
-![主題 — 編輯器](assets/theme-editor.png)
-
-在主題編輯器中自訂文字方塊Widget元件的成功狀態樣式。 元件在「畫布」中選取，其狀態在側欄中選取。 側邊欄中可用的樣式選項可用來自訂元件的外觀。
-
-### 使用畫布 {#using-canvas}
-
-主題是使用現成可用的表單或使用表單建立 <!-- or interactive communication --> 隨心所欲。 畫布會顯示表單預覽或 <!-- interactive communication --> 用於使用主題中指定的自訂來建立主題。 表單上方的尺標是用來根據裝置的顯示大小來決定版面。
-
-在「畫布」工具列中，您會看到：
-
-* **[!UICONTROL 切換側面板]** ![切換側面板](assets/toggle-side-panel.png)：可讓您顯示或隱藏側欄。
-* **[!UICONTROL 主題選項]** ![theme-options](assets/theme-options.png)：提供三個選項
-
-   * 設定：提供選取預覽表單的選項 <!-- or interactive communication , base clientlib, -->和Adobe Fonts設定。
-   * 檢視主題CSS：為選取的主題產生CSS。
-   * 管理樣式：提供管理文字和影像樣式的選項
-   * 說明：執行主題編輯器的影像導覽。
-
-* **[!UICONTROL 模擬器]** ![尺標](assets/ruler.png)：模擬不同顯示大小的主題外觀。 在模擬器中將顯示大小視為中斷點。 您可以選取中斷點並為其指定樣式。 例如，桌上型電腦和平板電腦是兩個中斷點。 您可以為每個中斷點指定不同的樣式。
-
-當您在畫布中選取元件時，您會看到其上方的元件工具列。 元件工具列可讓您選取元件，或切換到一般元件。 例如，在面板中選取數值文字方塊。 您會在元件工具列中看到下列選項：
-
-* **[!UICONTROL 數值方塊Widget]**：可讓您選取元件以自訂其在側欄中的外觀。
-* **[!UICONTROL 欄位Widget]**：可讓您選取用於樣式設定的一般元件。 在此範例中，會選取所有文字輸入元件（文字方塊/數值方塊/數值步進器/日期輸入）來設定樣式。
-
-* ![欄位層級](assets/select_parent_icon.svg)：可讓您選取樣式化的父元件。 如果您選取數值方塊並點選此圖示，則會選取欄位元件。 如果您選取欄位元件並點選此圖示，則會選取面板。 如果您持續點選此圖示進行選取，您最終會選取樣式配置。
+在样式中所做的修改会立即反映在表单中 <!-- or interactive communication --> 加载到画布中。 实时预览可让您以交互方式定义并查看样式的影响。 当您更改组件的样式时， **[!UICONTROL 完成]** 按钮处于启用状态。 要保留更改，请使用 **[!UICONTROL 完成]** 按钮。
 
 >[!NOTE]
 >
->元件工具列中的可用選項會根據您選取的元件而有所不同。
+>在字段中输入无效字符时，字段边界颜色将更改为红色，并在屏幕左上角显示错误消息。 例如，如果在接受数字字符作为输入的文本框中输入字母，则输入框边界颜色将更改为红色。 如果不解决屏幕中央底部显示的错误，则无法保存此类主题。
 
-### 使用側欄 {#using-rail}
+### 使用其他自适应表单的主题 {#theme-with-another-adaptive-form}
 
-主題編輯器中的側邊欄提供選項，用於自訂主題中元件的樣式，並使用選取器。 選取器可讓您選取一組元件或個別元件，並可在側欄中搜尋選取器。 您可以編寫自訂元件的選取器。
+创建主题时，使用主题编辑器附带的表单创建该主题。 您可以在此表单中提供组件的样式。 您可以选择表单，而不是主题编辑器附带的表单 <!-- or interactive communication --> 以提供样式并预览其结果。
 
-當您從側欄的畫布或選取器中選取元件時，側欄會顯示可讓您自訂其樣式的所有選項。
-以下是您在選取元件時於側邊欄中看到的選項：
+替换当前表单或 <!-- interactive communication --> 在主题编辑器画布中：
+
+1. 在主题编辑器面板中，单击 **[!UICONTROL 主题选项]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 配置]**.
+
+1. 在“常规”选项卡中，浏览并选择表单 <!-- or interactive communication --> 对于 **[!UICONTROL 自适应表单]** 字段。
+
+### 重做/撤消 {#redo-undo}
+
+您可以撤消或重做意外发生的不必要的更改。 使用画布中的重做/撤消按钮。
+
+![重做和撤消操作](assets/redo_undo_new.png)
+
+在主题编辑器中为组件设置样式时，会显示重做/撤消按钮。
+
+## 使用主题编辑器 {#using-the-theme-editor}
+
+主题编辑器允许您编辑创建或上传的主题。 导航到 **[!UICONTROL Forms和文档]** > **[!UICONTROL 主题]**，然后选择主题并将其打开。 主题将在主题编辑器中打开。
+
+如上所述，主题编辑器有两个面板：侧栏和画布。
+![主题编辑器](assets/theme-editor.png)
+
+在主题编辑器中自定义文本框构件组件的成功状态样式。 组件在画布中处于选中状态，其状态在侧栏中处于选中状态。 侧栏中可用的样式选项用于自定义组件的外观。
+
+### 使用画布 {#using-canvas}
+
+主题是使用现成表单或使用表单创建的 <!-- or interactive communication --> 你自己选择的。 画布显示表单预览或 <!-- interactive communication --> 用于使用主题中指定的自定义项创建主题。 表单上方的标尺用于根据设备的显示大小确定布局。
+
+在“画布”工具栏中，您会看到：
+
+* **[!UICONTROL 切换侧面板]** ![切换侧面板](assets/toggle-side-panel.png)：用于显示或隐藏侧栏。
+* **[!UICONTROL 主题选项]** ![theme-options](assets/theme-options.png)：提供三个选项
+
+   * 配置：提供选择预览表单的选项 <!-- or interactive communication , base clientlib, -->和Adobe Fonts配置。
+   * 查看主题CSS：为所选主题生成CSS。
+   * 管理样式：提供用于管理文本和图像样式的选项
+   * 帮助：运行主题编辑器的图像引导式教程。
+
+* **[!UICONTROL 模拟器]** ![标尺](assets/ruler.png)：模拟不同显示大小的主题外观。 在模拟器中将显示大小视为断点。 您可以选择断点并为其指定样式。 例如，台式机和平板电脑是两个断点。 您可以为每个断点指定不同的样式。
+
+在画布中选择组件时，您会看到其顶部的组件工具栏。 组件工具栏允许您选择组件，或切换到通用组件。 例如，在面板中选择一个数字文本框。 您会在组件工具栏中看到以下选项：
+
+* **[!UICONTROL 数值框小组件]**：用于选择组件以自定义其在侧栏中的外观。
+* **[!UICONTROL 字段小组件]**：用于选择用于样式设置的通用组件。 在此示例中，将选择所有文本输入组件（文本框/数字框/数字步进器/日期输入）来设置样式。
+
+* ![字段级](assets/select_parent_icon.svg)：用于选择用于设置样式的父组件。 如果选择数字框并点按此图标，则字段组件处于选中状态。 如果您选择字段组件并点击此图标，则面板被选中。 如果不断点按此图标进行选择，则最终将选择布局以进行样式设置。
+
+>[!NOTE]
+>
+>组件工具栏中可用的选项因您选择的组件而异。
+
+### 使用侧栏 {#using-rail}
+
+主题编辑器中的侧栏提供了用于自定义主题中组件的样式以及使用选择器的选项。 选择器允许您选择一组组件或单个组件，并可在侧栏中搜索选择器。 您可以为自定义组件编写选择器。
+
+从画布或侧栏中的选择器中选择组件时，侧栏会显示允许您为其自定义样式的所有选项。
+以下是您在选择组件时可在侧栏中看到的选项：
 
 * 状态
-* 特性表
-* 模擬錯誤/成功
+* 属性表
+* 模拟错误/成功
 
 #### 状态 {#state}
 
-狀態是使用者與元件互動的指標。 例如，當使用者在文字方塊中輸入錯誤資料時，文字方塊的狀態會變更為錯誤狀態。 主題編輯器可讓您指定特定狀態的樣式。
+状态是用户与组件交互的指示器。 例如，当用户在文本框中输入错误数据时，文本框的状态将更改为错误状态。 主题编辑器允许您为特定状态指定样式。
 
-自訂狀態樣式的選項會因元件而異。
+自定义状态样式的选项因组件而异。
 
-#### 特性表 {#property-sheet}
+#### 属性表 {#property-sheet}
 
 <table>
  <tbody>
@@ -388,113 +388,113 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><p>尺寸及位置</p> </td>
-   <td><p>可讓您在主題中樣式對齊、大小、定位和放置元件。 </p> <p>您的選項包括顯示設定、內距、邊界、寬度、高度和Z索引。</p> <p>您也可以使用佈局模式，透過簡單的拖放介面來定義元件的寬度。 如需詳細資訊，請參閱 <a href="resize-using-layout-mode.md">使用版面模式調整元件大小</a>.</p> </td>
+   <td><p>允许您在主题中样式对齐、大小、定位和放置组件。 </p> <p>选项包括显示设置、填充、边距、宽度、高度和Z索引。</p> <p>您还可以使用布局模式，通过简单的拖放界面来定义组件的宽度。 有关更多信息，请参阅 <a href="resize-using-layout-mode.md">使用布局模式调整组件大小</a>.</p> </td>
   </tr>
   <tr>
    <td><p>文本</p> </td>
-   <td><p>可讓您自訂主題元件中的文字樣式。</p> <p>例如，您想要變更文字方塊中輸入文字的外觀。</p> <p>您的選項包括字型系列、粗細、顏色、大小、行高、文字對齊、字母間距、文字縮排、底線、斜體、文字轉換、垂直對齊、基線和方向。 </p> </td>
+   <td><p>允许您自定义主题组件中的文本样式。</p> <p>例如，您希望更改在文本框中输入的文本的外观。</p> <p>选项包括字体系列、粗细、颜色、大小、行高、文本对齐、字母间距、文本缩进、下划线、斜体、文本转换、垂直对齐、基线和方向。 </p> </td>
   </tr>
   <tr>
    <td><p>背景 </p> </td>
-   <td><p>可讓您使用影像或顏色來填滿元件的背景。 </p> </td>
+   <td><p>允许您使用图像或颜色填充组件背景。 </p> </td>
   </tr>
   <tr>
    <td><p>边框</p> </td>
-   <td><p>可讓您選擇元件的邊框外觀。 例如，您想要文字方塊具有深紅色、厚邊框和虛線。 </p> <p>您的選項包括邊框寬度、樣式、半徑和顏色。</p> </td>
+   <td><p>允许您选择组件的边框外观。 例如，您希望文本框具有深红色、粗边框和虚线。 </p> <p>您的选项包括边框的宽度、样式、半径和颜色。</p> </td>
   </tr>
   <tr>
    <td><p>效果</p> </td>
-   <td><p>可讓您為元件加入特殊效果，例如不透明度、混合模式和陰影。 </p> </td>
+   <td><p>允许向元件添加特殊效果，如不透明度、混合模式和阴影。 </p> </td>
   </tr>
   <tr>
    <td><p>高级</p> </td>
-   <td><p>可讓您新增：</p>
+   <td><p>允许您添加：</p>
     <ul>
-     <li>屬性： <code>::before</code> 和 <code>::after</code> 虛擬元素，在選取器中的預設內容之後或之前新增內容，並為其設定樣式。<br /> 另請參閱 <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS虛擬元素</a>.</li>
-     <li>內嵌至元件的自訂CSS程式碼。</li>
-    </ul> <p>新增自訂CSS程式碼時，它會覆寫您使用側邊欄中的選項新增的自訂專案。 </p> </td>
+     <li>属性 <code>::before</code> 和 <code>::after</code> 伪元素，用于在选择器的默认内容之后或之前添加内容，并设置其样式。<br /> 参见 <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">CSS Pseudo元素</a>.</li>
+     <li>内联到组件的自定义CSS代码。</li>
+    </ul> <p>添加自定义CSS代码时，它会覆盖您使用侧边栏中的选项添加的自定义。 </p> </td>
   </tr>
  </tbody>
 </table>
 
-#### 模擬錯誤/成功 {#simulate-error-success}
+#### 模拟错误/成功 {#simulate-error-success}
 
-側邊欄底部提供「模擬錯誤」和「成功」選項。 您可以使用側邊欄底部顯示的顯示/隱藏箭頭來檢視它們。 使用主題編輯器，您可以設定元件的各種狀態的樣式。
+侧栏底部提供了“模拟错误”和“成功”选项。 您可以使用侧栏底部显示的显示/隐藏箭头查看它们。 使用主题编辑器，您可以设置组件的各种状态的样式。
 
-例如，您在表單中新增數值欄位，並在主題編輯器中指定其樣式。 當使用者在欄位中輸入英數字元值時，您想要變更文字方塊的背景顏色。 您選取主題中的數值欄位，並使用側邊欄中的狀態選項。 在側邊欄中選取「錯誤」狀態，然後將背景顏色變更為紅色。 若要預覽行為，您可以使用側邊欄中提供的「模擬錯誤」選項。 「模擬錯誤」和「成功」選項詳細說明如下：
+例如，在表单中添加数字字段，并在主题编辑器中指定其样式。 当用户在该字段中键入字母数字值时，您希望更改文本框的背景颜色。 在主题中选择数值字段，并在侧栏中使用状态选项。 在侧栏中选择Error状态，然后将背景颜色更改为红色。 要预览行为，您可以使用侧栏中提供的“模拟错误”选项。 下面详细介绍了“模拟错误”和“成功”选项：
 
-* **模擬成功**：可讓您檢視元件（如果您指定其樣式為成功狀態）的外觀。 例如，在表單中，客戶設定密碼。 使用者可以根據您提供的准則設定密碼。 當使用者按照您提供的所有准則輸入密碼時，文字方塊會變成綠色。 當文字方塊變成綠色時，它就會處於成功狀態。 您可以為處於成功狀態的元件指定樣式，並使用「模擬成功」選項來模擬其外觀。
+* **模拟成功**：您可以查看组件在指定成功状态样式时的外观。 例如，在表单中，客户设置密码。 用户可以根据您提供的指南设置密码。 当用户按照您提供的所有准则键入密码时，文本框将变为绿色。 当文本框变为绿色时，它处于成功状态。 您可以为处于成功状态的元件指定样式，并使用“模拟成功”选项模拟其外观。
 
-* **模擬錯誤**：可讓您檢視在錯誤狀態中指定元件樣式時元件的外觀。 例如，在表單中，客戶設定密碼。 使用者可以根據您提供的准則設定密碼。 當使用者鍵入的密碼未遵循您提供的所有准則時，文字方塊會變成紅色。 當文字方塊變成紅色時，它處於錯誤狀態。 您可以為處於錯誤狀態的元件指定樣式，並使用「模擬錯誤」選項來模擬其外觀。
+* **模拟错误**：您可以查看组件在指定错误状态样式时的外观。 例如，在表单中，客户设置密码。 用户可以根据您提供的指南设置密码。 当用户键入的密码未遵循您提供的所有准则时，文本框将变为红色。 当文本框变为红色时，它处于错误状态。 可为处于错误状态的元件指定样式，并使用“模拟错误”选项模拟其外观。
 
-### 設定元件樣式 {#styling-a-component}
+### 设置组件样式 {#styling-a-component}
 
-例如，您的表單中有兩種文字方塊型別：一種僅接受數值，另一種接受英數字元。 您可以自訂只接受數值的文字方塊（數值方塊）的樣式。
+例如，您的表单中有两种类型的文本框：一种仅接受数字值，另一种接受字母数字值。 您可以自定义仅接受数字值的文本框（数字框）的样式。
 
-若要自訂特定元件（此範例中的數值方塊）的樣式，請執行下列步驟：
+要自定义特定组件（本示例中的数字框）的样式，请执行以下步骤：
 
-1. 在主題編輯器中，選取畫布中的數字方塊。
-1. 當您選取數值方塊時，您可以看到包含三個選項的元件工具列：
+1. 在主题编辑器中，选择画布中的数字框。
+1. 选择数字框后，您可以看到包含三个选项的组件工具栏：
 
    * **[!UICONTROL 数值框小组件]**
    * **[!UICONTROL 字段小工具]**
 
-1. 選取 **[!UICONTROL 數值方塊Widget]**.
-1. 側欄標題會變更為數值方塊Widget，並顯示自訂其外觀的選項。
-使用 **[!UICONTROL Dimension與位置]** 側邊欄中的選項以自訂元件的大小。 確保州別 **[!UICONTROL 預設]**.
+1. 选择 **[!UICONTROL 数值框小组件]**.
+1. 侧栏标题将更改为数值框小组件，并显示用于自定义其外观的选项。
+使用 **[!UICONTROL Dimension和位置]** 用于自定义组件大小的侧栏中的选项。 确保国家能够 **[!UICONTROL 默认]**.
 
-不要選取 **[!UICONTROL 數值方塊Widget]**，選取 **[!UICONTROL 欄位Widget]** ，然後執行上述步驟。 當您選取的維度為 **[!UICONTROL 欄位Widget]** 選項時，除了數字方塊之外，其他所有文字方塊的大小都相同。
+不要选择 **[!UICONTROL 数值框小组件]**，选择 **[!UICONTROL 字段小组件]** ，然后执行上述步骤。 当您为以下对象选择维度时 **[!UICONTROL 字段小组件]** 选项时，除数字框之外的所有文本框都具有相同的大小。
 
-### 指定狀態的樣式欄位 {#styling-fields-given-state}
+### 给定状态的样式字段 {#styling-fields-given-state}
 
-使用元件工具列，您也可以指定不同狀態的元件樣式。 例如，如果元件已停用，則會處於已停用狀態。 您可以在主題編輯器中樣式化的元件常用狀態為：預設、焦點、已停用、錯誤、成功和暫留。 您可以在「畫布」中選取元件，並使用側邊欄中的「狀態」選項來自訂其外觀。
+通过组件工具栏，还可以为其不同状态指定组件的样式。 例如，如果某个组件被禁用，则它处于禁用状态。 可以在主题编辑器中样式化的组件的常用状态为：默认、集中、已禁用、错误、成功和悬停。 您可以在画布中选择一个组件，然后使用侧边栏中的“状态”选项自定义其外观。
 
-若要自訂處於特定狀態的元件的樣式，請執行下列步驟：
+要自定义处于特定状态的组件的样式，请执行以下步骤：
 
-1. 在「畫布」中選取元件，然後從元件工具列選取適當的選項。
-側邊欄會顯示自訂元件樣式的選項。
-1. 在側欄中選取狀態。 例如，錯誤狀態。
-1. 使用選項，例如 **[!UICONTROL 邊框，背景]** 以自訂元件的外觀。
-1. 使用 **[!UICONTROL 模擬錯誤]** 選項來檢視樣式在編輯時的外觀。
+1. 在画布中选择组件，然后从组件工具栏中选择相应的选项。
+侧栏显示用于自定义组件样式的选项。
+1. 在侧栏中选择一个状态。 例如，“错误”状态。
+1. 使用选项，例如 **[!UICONTROL 边框，背景]** 以自定义组件的外观。
+1. 使用 **[!UICONTROL 模拟错误]** 选项来查看样式在编辑时的外观。
 
-當您在指定元件的狀態後自訂其樣式時，只會針對指定的狀態顯示元件的自訂設定。 例如，如果您在選取暫留狀態時自訂元件的樣式。 當您將指標移動到已轉譯表單中的元件上時，會出現元件的自訂 <!-- or interactive communication --> 您套用佈景主題的目標位置。
+在指定组件的状态后自定义组件的样式时，将仅为组件的指定状态显示自定义设置。 例如，如果在选择了悬停状态时自定义组件的样式。 在渲染的表单中将指针移动到组件上时，将显示组件的自定义设置 <!-- or interactive communication --> 将主题应用到其中。
 
-若要模擬錯誤和成功以外的狀態行為，請使用預覽模式。 若要使用預覽模式，請按一下 **[!UICONTROL 預覽]** 在頁面工具列中。
+要模拟错误和成功以外的状态行为，请使用预览模式。 要使用预览模式，请单击 **[!UICONTROL 预览]** 页面工具栏中。
 
-### 較小顯示器的樣式配置 {#styling-layouts-for-smaller-displays}
+### 为较小的显示设置布局样式 {#styling-layouts-for-smaller-displays}
 
-使用「畫布」中的尺標，為顯示較小的裝置選取中斷點。 點按模擬器 ![尺標](assets/emulator-icon.svg) 在畫布中檢視尺標和中斷點。 中斷點可讓您預覽表單 <!-- or interactive communication --> 適用於不同裝置（例如手機和平板電腦）的顯示器大小。 主題編輯器中支援多種顯示大小。
+使用画布中的标尺为显示较小的设备选择断点。 点击模拟器 ![标尺](assets/emulator-icon.svg) 在画布中查看标尺和断点。 利用断点，可预览表单 <!-- or interactive communication --> 适用于不同设备（如手机和平板电脑）的显示器尺寸。 主题编辑器中支持多种显示大小。
 
-若要為不同的中斷點設定元件的樣式：
+要为不同的断点设置组件的样式，请执行以下操作：
 
-1. 在畫布中，選取尺標上方的中斷點。
-中斷點代表行動裝置及其顯示大小。
-1. 使用側邊欄來自訂表單的樣式 <!-- or interactive communication --> 主題中選取顯示大小的元件。
-1. 確保已儲存自訂。
+1. 在画布中，选择标尺上方的断点。
+断点表示移动设备及其显示大小。
+1. 使用侧栏自定义表单样式 <!-- or interactive communication --> 主题中选定显示大小的组件。
+1. 确保已保存自定义。
 
-您可以設定表單的樣式 <!-- or interactive communication --> 多個裝置的元件。 表單 <!-- and interactive communication --> 桌上型電腦和行動裝置的元件可能有完全不同的樣式。
+您可以为表单设置样式 <!-- or interactive communication --> 多个设备的组件。 表单 <!-- and interactive communication --> 适用于台式机和移动设备的组件可以具有完全不同的样式。
 
-### 在主題中使用Web Fonts {#using-web-fonts-in-a-theme}
+### 在主题中使用Web Fonts {#using-web-fonts-in-a-theme}
 
-您現在可以在最適化表單中使用Web服務中可用的字型 <!-- or interactive communication -->. 開箱即用， [Adobe Fonts](https://fonts.adobe.com/)Adobe的Web字型服務可作為設定使用。 若要使用Adobe Fonts，請建立套件、在其中新增字型，然後從取得套件ID [Adobe Fonts](https://fonts.adobe.com/).
+您现在可以在自适应表单中使用Web服务中可用的字体 <!-- or interactive communication -->. 开箱即用， [Adobe Fonts](https://fonts.adobe.com/)Adobe的Web字体服务作为配置提供。 要使用Adobe Fonts，请创建一个套件，在其中添加字体，然后从获取套件ID [Adobe Fonts](https://fonts.adobe.com/).
 
-若要在Experience Manager中設定Adobe Fonts，請執行以下步驟：
+要在Experience Manager中配置Adobe Fonts，请执行以下步骤：
 
-1. 在作者執行個體中，按一下 ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL &#x200B;工具&#x200B;]**![槌子](assets/hammer.png) >**[!UICONTROL &#x200B;部署&#x200B;]**>**[!UICONTROL  Cloud Services ]**.
-1. 於 **[!UICONTROL Cloud Services]** 頁面，導覽至並開啟 **[!UICONTROL Adobe Fonts]** 選項。 開啟設定資料夾，然後按一下 **[!UICONTROL 建立]**.
-1. 於 **[!UICONTROL 建立設定]** 對話方塊，指定設定的標題，然後按一下 **[!UICONTROL 建立]**.
+1. 在创作实例中，单击 ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL &#x200B;工具&#x200B;]**![锤子](assets/hammer.png) >**[!UICONTROL &#x200B;部署&#x200B;]**>**[!UICONTROL  Cloud Services ]**.
+1. 在 **[!UICONTROL Cloud Services]** 页面，导航到并打开 **[!UICONTROL Adobe Fonts]** 选项。 打开配置文件夹，然后单击 **[!UICONTROL 创建]**.
+1. 在 **[!UICONTROL 创建配置]** 对话框，指定配置的标题，然后单击 **[!UICONTROL 创建]**.
 
-   系統會將您重新導向至設定頁面。
+   您将被重定向到配置页面。
 
-1. 在出現的「編輯元件」對話方塊中，提供您的Kit ID並按一下 **[!UICONTROL 確定]**.
+1. 在出现的编辑组件对话框中，提供您的Kit ID并单击 **[!UICONTROL 确定]**.
 
-若要設定主題以使用Adobe Fonts設定，請執行以下步驟：
+要配置主题以使用Adobe Fonts配置，请执行以下步骤：
 
-1. 在作者執行個體上，在主題編輯器中開啟主題。
-1. 在主題編輯器中，導覽至 **[!UICONTROL 主題選項]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 設定]**.
-1. 在 **[!UICONTROL Adobe Fonts設定]** 欄位，選取套件，然後按一下 **[!UICONTROL 儲存]**.
+1. 在创作实例上，在主题编辑器中打开主题。
+1. 在主题编辑器中，导航到 **[!UICONTROL 主题选项]** ![theme-options](assets/theme-options.png) > **[!UICONTROL 配置]**.
+1. In **[!UICONTROL Adobe Fonts配置]** 字段，选择配套件，然后单击 **[!UICONTROL 保存]**.
 
-   現在，您可以看到字型已新增到主題的font-family屬性中。
+   现在，您可以看到字体已添加到主题的font-family属性中。
 
 <!-- >
 ### Listing and selecting fonts in theme editor {#listing-and-selecting-fonts-in-theme-editor}
@@ -508,47 +508,47 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. -->
 
-#### 在主題編輯器中選取字型 {#selecting-fonts-in-theme-editor}
+#### 在主题编辑器中选择字体 {#selecting-fonts-in-theme-editor}
 
-您可以使用+按鈕來新增字型。 新增字型時，它會列在側邊欄中。
+您可以使用+按钮添加字体。 添加字体时，该字体将列在侧栏中。
 
-![主題編輯器中列出新字型](assets/theme-font.png)
+![主题编辑器中列出了新字体](assets/theme-font.png)
 
-除了主題設定選項之外，您也可以從主題編輯器本身新增字型。 在側邊欄下方的字型系列欄位中輸入您要使用的字型，然後按鍵盤上的返回鍵。
+除了主题配置选项之外，您还可以从主题编辑器本身添加字体。 在侧栏下的字体系列字段中键入要使用的字体，然后按键盘上的返回键。
 
-![在主題編輯器中輸入和選取字型](assets/font-selection.png)
+![在主题编辑器中键入和选择字体](assets/font-selection.png)
 
-當您選取字型時，它會新增到字型系列清單下。 您可以使用主題編輯器中的「遮色片」選項來停用或啟用列出的字型。
+选取字体时，会将其添加到字体系列列表下。 您可以使用主题编辑器中的“蒙版”选项来禁用或启用列出的字体。
 
-![多字型](assets/multi-fonts.jpg)
+![多字体](assets/multi-fonts.jpg)
 
-您可以看到元件字型變更。
+您可以看到组件字体更改。
 
-「字型系列」欄位支援多種字型。 當您鍵入字型時，瀏覽器會尋找該字型並將其套用至所選的元件。 如果瀏覽器找不到字型，會在系列中尋找該字型旁邊的字型。 您可以先輸入您要尋找的特定字型。 如果找不到要使用的字型，可以在族中鍵入類屬字型並使用它。
+“字体系列”字段支持多种字体。 键入字体时，浏览器会查找该字体并将其应用于所选组件。 如果浏览器找不到字体，则会在系列中查找该字体旁边的字体。 您可以首先键入要查找的特定字体。 如果找不到要使用的字体，可以在族中键入通用字体并使用它。
 
-#### 套用至主題編輯器的遮色片樣式 {#mask-styles-applied-in-theme-editor}
+#### 在主题编辑器中应用的蒙版样式 {#mask-styles-applied-in-theme-editor}
 
-您可以遮罩套用到佈景主題中的樣式。 在主題編輯器側邊欄中，您可以使用 ![toggle_eye](assets/toggle_eye.png)圖示可停用套用的樣式。 例如，如果您變更表單中元件的尺寸 <!-- or interactive communication -->，然後您可以使用屬性左側的遮罩按鈕來停用它。 儲存佈景主題時，會保留選取的遮色片選項。
+您可以遮罩在主题中应用的样式。 在主题编辑器侧边栏中，您可以使用 ![toggle_eye](assets/toggle_eye.png)图标来禁用应用的样式。 例如，如果更改表单中组件的尺寸 <!-- or interactive communication -->，然后可以使用属性左侧的蒙版按钮来禁用它。 保存主题时，将保留所选的掩码选项。
 
-![主題編輯器側欄中可用的遮色片選項](assets/mask-styles.png)
+![主题编辑器侧栏中提供的蒙版选项](assets/mask-styles.png)
 
-以下範例顯示主題中遮色和未遮色的樣式。
+下面的示例显示主题中蒙版和未蒙版的样式。
 
-![遮色和未遮色的樣式](assets/mask2.png)
+![蒙版和未蒙版的样式](assets/mask2.png)
 
-## 將主題套用至表單 {#applying-a-theme-to-a-form-or-interactive-communication-br}
+## 将主题应用于表单 {#applying-a-theme-to-a-form-or-interactive-communication-br}
 
-若要將主題套用至最適化表單：
+要将主题应用于自适应表单，请执行以下操作：
 
-1. 在編輯模式下開啟您的表單。 若要以編輯模式開啟表單，請選取表單並按一下 **[!UICONTROL 開啟]**.
-1. 在編輯模式中，選取元件，然後按一下 ![欄位層級](assets/select_parent_icon.svg) > **[!UICONTROL 最適化表單容器]**，然後按一下 ![cmppr](assets/cmppr.png).
+1. 在编辑模式下打开表单。 要在编辑模式下打开表单，请选择一个表单并单击 **[!UICONTROL 打开]**.
+1. 在编辑模式下，选择一个组件，然后单击 ![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后单击 ![cmppr](assets/cmppr.png).
 
-   您可以在側邊欄中編輯表單的屬性。
+   您可以在侧栏中编辑表单的属性。
 
-1. 在側邊欄中，按一下 **[!UICONTROL 樣式]**.
-1. 從中選擇您的主題 **[!UICONTROL 最適化表單主題]** 下拉式清單，然後按一下 **[!UICONTROL 完成]** ![check — 按鈕](assets/check-button.png).
+1. 在侧栏中，单击 **[!UICONTROL 样式]**.
+1. 从中选择主题 **[!UICONTROL 自适应表单主题]** 下拉列表，然后单击 **[!UICONTROL 完成]** ![check-button](assets/check-button.png).
 
-您也可以在建立最適化表單時為其定義主題。
+您还可以在创建自适应表单时为其定义主题。
 
 <!-- To apply a theme to an interactive communication:
 
@@ -559,70 +559,70 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
 
-### 在執行階段變更表單主題 {#change-theme-of-a-form-at-runtime}
+### 在运行时更改表单主题 {#change-theme-of-a-form-at-runtime}
 
-佈景主題會設定表單中不同元件的樣式。 您可以使用 `themeOverride` 屬性以動態變更表單主題。 表單的典型URL為：
+主题为表单的不同组件设置样式。 您可以使用 `themeOverride` 属性以动态更改表单的主题。 表单的典型URL是：
 
 `https://<server>:<port>/content/forms/af/test.html`
 
-您可以使用themeOverride引數在執行階段上套用主題。
+可以使用themeOverride参数在运行时应用主题。
 
 `https://<server>:<port>/content/forms/af/test.html?themeOverride=/content/dam/formsanddocuments-themes/simpleEnrollmentTheme`
 
-此 `themeOverride` 選項可讓您提供主題的路徑。 它會變更表單的主題，並以更新的樣式重新整理表單。
+此 `themeOverride` 选项允许您提供主题的路径。 它会更改表单的主题，并使用更新的样式刷新表单。
 
-## 使用主題取得特定外觀 {#specific-af-appearance}
+## 使用主题获取特定外观 {#specific-af-appearance}
 
-替換為 [!DNL AEM Forms]，除了預設的現成畫布布主題外，還有許多其他主題。 如果您想要設計表單 <!-- or interactive communication --> 使用其他主題以及更多變更，從主題資料庫資料夾複製主題。 將複製的主題貼到「主題資料庫」資料夾之外，並根據您想要的變更來編輯複製的主題。
+替换为 [!DNL AEM Forms]，以及默认的现成画布主题，还有许多其他主题。 如果您想设计表单 <!-- or interactive communication --> 使用其他主题以及更多更改，从主题库文件夹中复制主题。 将复制的主题粘贴到主题库文件夹之外，并根据所需的更改编辑复制的主题。
 
-若要複製主題，請執行下列步驟：
+要复制主题，请执行以下步骤：
 
-1. 在製作例項中，導覽至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 主題]**.
-1. 開啟主題資料庫資料夾。
-1. 在「佈景主題資料庫」資料夾中，將指標暫留在對應的現成佈景主題上，然後點選 **[!UICONTROL 複製]**.
-1. 將複製的主題貼到主題資料庫資料夾之外。
-1. 自訂複製的主題。
+1. 在创作实例中，导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 主题]**.
+1. 打开主题库文件夹。
+1. 在主题库文件夹中，将指针悬停在相应的现成主题上，然后点按 **[!UICONTROL 复制]**.
+1. 将复制的主题粘贴到主题库文件夹之外。
+1. 自定义复制的主题。
 
-自訂主題後，請將其套用至您的表單 <!-- or interactive communication -->.
+自定义主题后，将其应用于表单 <!-- or interactive communication -->.
 
 >[!NOTE]
 >
->請勿修改主題資料庫資料夾中可用的主題。 此資料夾包含系統主題。 安裝較新版本或Hot Fix時會覆寫您對這些主題所做的任何變更 [!DNL AEM Forms].
+>请勿修改主题库文件夹中可用的主题。 此文件夹包含系统主题。 安装较新版本或热修复程序时，将覆盖您对这些主题所做的任何更改 [!DNL AEM Forms].
 
-## 對其他最適化表單使用案例的影響 {#impact-on-other-adaptive-form-use-cases}
+## 对其他自适应表单用例的影响 {#impact-on-other-adaptive-form-use-cases}
 
-* **發佈/取消發佈表單：** 發佈表單時，也會發佈套用至的主題（如果尚未發佈）
-* **匯入/匯出表單：** 匯入或匯出表單時，也會自動匯入或匯出與其關聯的主題。
-* **表單的參考：** 表單參照中的「參照」區段包含主題的額外專案。
-* **表單的上次修改時間：** 在相關主題變更時更新。
+* **发布/取消发布表单：** 发布表单时，也会发布应用于的主题（如果尚未发布）
+* **导入/导出表单：** 在导入或导出表单时，也会自动导入或导出与其关联的主题。
+* **表单的引用：** 表单引用中的“引用”部分包含主题的一个额外条目。
+* **表单的上次修改时间：** 在更改相关主题时更新。
 <!-- * **A/B Testing:** You can apply a different theme to two versions of the form in A/B testing. The information of the two themes is individually stored on the two guide containers. -->
 
-## CSS產生順序 {#css-generation-sequence}
+## CSS生成序列 {#css-generation-sequence}
 
-當您選取檢視CSS時，主題編輯器會收集所有樣式資訊，並建置CSS。 它會依照下列順序收集資訊：
+当您选择查看CSS时，主题编辑器会收集所有样式信息并构建CSS。 它按以下顺序收集信息：
 
 <!-- 1. Styling defined in the theme's base client library. -->
-1. 使用者定義的樣式，使用側邊欄中的屬性指定。
-1. 使用CSS覆寫選項提供的CSS樣式。
+1. 用户定义的样式，使用侧栏中的属性指定。
+1. 使用“CSS覆盖”选项提供的CSS样式。
 
-例如，文字方塊的背景顏色為藍色<!-- in the base client library-->. 您可以使用側邊欄中的屬性將其變更為粉紅色。 產生CSS時，文字方塊的背景顏色顯示為粉紅色。 使用屬性變更背景顏色後，另一位作者使用CSS覆寫選項將背景顏色文字方塊變更為白色。 產生CSS時，背景顏色在產生的CSS中會顯示為白色。
+例如，文本框的背景颜色为蓝色<!-- in the base client library-->. 可使用侧栏中的属性将其更改为粉红色。 在生成CSS时，您会看到文本框的背景颜色显示为粉红色。 使用属性更改背景颜色后，另一位作者使用CSS覆盖选项将背景颜色文本框更改为白色。 在生成CSS时，您会在生成的CSS中看到背景颜色显示为白色。
 
-## 偵錯樣式 {#debugging-styles}
+## 调试样式 {#debugging-styles}
 
-當您在主題編輯器中指定元件的樣式時，會產生CSS。 當您設定類屬元件的樣式時，也會設定包含在其中的多個元件的樣式。 例如，當您設定欄位樣式時，其中的文字方塊和標籤也會設定樣式。 當您在欄位中設定文字方塊的樣式時，它會有自己的CSS。 如果您要為欄位和元件產生的CSS除錯，主題編輯器會提供選項供您檢視CSS。
+在主题编辑器中指定组件的样式时，将生成CSS。 为类属组件设置样式时，也会为其中包含的多个组件设置样式。 例如，当为字段设置样式时，其中的文本框和标签也会设置样式。 当在字段中设置文本框的样式时，它将获得自己的CSS。 如果要调试为字段和组件生成的CSS，主题编辑器会提供允许您查看CSS的选项。
 
-您可以使用以下選項檢視產生的CSS：
+您可以使用以下选项查看生成的CSS：
 
-* **檢視CSS** 側欄中的選項：當您選取主題中的元件時，可以在側欄中看到「檢視CSS」選項。 它會顯示產生的CSS，包括 `::before` 和 `::after` 虛擬元素。
-* **檢視主題CSS** 選項在畫布工具列中：在畫布工具列中，按一下 ![theme-options](assets/theme-options.png) > **[!UICONTROL 檢視主題CSS]**. 您可以看到從您在主題編輯器中定義的屬性產生的整個主題CSS。
+* **查看CSS** 侧栏中的选项：在主题中选择组件时，您可以在侧栏中看到查看CSS选项。 它显示生成的CSS，包括的CSS `::before` 和 `::after` 伪元素。
+* **查看主题CSS** 选项在画布工具栏中：在画布工具栏中，单击 ![theme-options](assets/theme-options.png) > **[!UICONTROL 查看主题CSS]**. 您可以看到从主题编辑器中定义的属性生成的整个主题CSS。
 
-## 疑難排解、建議和最佳作法 {#troubleshooting-recommendations-and-best-practices}
+## 故障排除、建议和最佳实践 {#troubleshooting-recommendations-and-best-practices}
 
-* **避免使用其他佈景主題中的資產**
+* **避免从其他主题访问资源**
 
-   編輯主題時，您可以瀏覽並新增其他主題中的資產（例如影像）。 例如，您正在編輯頁面的背景。 例如，當您選取 **[!UICONTROL 頁面]** ![編輯按鈕](assets/edit-button.png)> **[!UICONTROL 背景]** > **[!UICONTROL 新增]** > **[!UICONTROL 影像]**，您會看到對話方塊，可讓您瀏覽並新增其他主題中的影像。
+   编辑主题时，您可以浏览和添加其他主题中的资产（如图像）。 例如，您正在编辑页面的背景。 例如，当您选择 **[!UICONTROL 页面]** ![编辑按钮](assets/edit-button.png)> **[!UICONTROL 背景]** > **[!UICONTROL 添加]** > **[!UICONTROL 图像]**，您将看到一个对话框，通过该对话框可以浏览并添加其他主题中的图像。
 
-* 如果從其他主題新增資產，而另一個主題被移動或刪除，則您可能會遇到目前主題的問題。 建議您避免瀏覽和新增其他主題中的資產。
+* 如果从其他主题添加资产，并且移动或删除了其他主题，则您可能会遇到当前主题的问题。 建议您避免浏览和添加其他主题中的资产。
 
 <!-- * **Using base clientlib, theme editor, and inline styling**
 
@@ -637,26 +637,26 @@ You can use the theme configuration service to add more fonts to the theme edito
         1. Click **[!UICONTROL Save]**.
 
       The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
-    您也可以建立主題、建立主題的副本，然後針對類似使用案例修改複製的主題中提供的樣式。
-    請參閱[使用主題取得特定外觀](#specific-af-appearance)
+    您还可以创建主题、创建主题的副本，然后为类似用例修改复制的主题中提供的样式。
+    请参阅[使用主题获取特定外观](#specific-af-appearance)
     
-    * **主題編輯器：**
+    * **主题编辑器：**
     
-    主題編輯器可讓您建立主題來設定表單的樣式 &lt;!> — 或互動式通訊 — >。 您可以在主題中指定元件的樣式，以便在多個表單之間實現外觀和感覺的一致性 &lt;!> — 或互動式通訊 — >由您開發。 建議在主題中指定樣式資訊，然後將主題套用至表單。
+    主题编辑器允许您创建主题来设置表单的样式 &lt;!> — 或交互式通信 — >。 您可以在主题中指定组件的样式，以使多个表单之间的外观和感觉保持一致 &lt;!> — 或交互式通信 — >由您来开发。 建议在主题中指定样式信息，然后将主题应用于表单。
     
-    * **內嵌樣式：**
+    * **内联样式：**
     
-    您可以在表單中使用「樣式」模式來設定元件的樣式 &lt;!> — 或互動式通訊 — >使用表單時的多頻道編輯器。 使用樣式模式變更表單元件樣式會覆寫主題中指定的樣式。 如果您想要變更特定表單中特定元件的樣式，請參閱[元件的內嵌樣式](inline-style-adaptive-forms.md)。
+    可以在表单中使用“样式”模式来设置组件的样式 &lt;!> — 或交互式通信 — >多渠道编辑器。 使用样式模式更改表单组件样式会覆盖主题中指定的样式。 如果要更改特定表单的某些组件的样式，请参阅[组件的内联样式](inline-style-adaptive-forms.md)。
 
 <!-- * **Using client-side libraries**
 
   If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
 
-* **變更容器面板配置寬度**
+* **更改容器面板布局宽度**
 
-   不建議變更容器面板配置寬度。 當您指定容器面板的寬度時，它會變成靜態，不會適應不同的顯示。
+   不建议更改容器面板布局宽度。 指定容器面板的宽度时，该宽度会变为静态并且不会适应不同的显示。
 
-* **何時使用表單編輯器或主題編輯器來處理頁首和頁尾**
+* **何时使用表单编辑器或主题编辑器处理页眉和页脚**
 
-   如果要使用字型樣式、背景和透明度等樣式選項來設定頁首和頁尾的樣式，請使用主題編輯器。
-如果您想在頁尾中提供標誌影像、公司名稱和版權資訊等資訊，請使用表單編輯器選項。
+   如果要使用字体样式、背景和透明度等样式选项来设置页眉和页脚的样式，请使用主题编辑器。
+如果要提供徽标图像、页眉中的公司名称和页脚中的版权信息等信息，请使用表单编辑器选项。

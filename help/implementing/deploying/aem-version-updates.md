@@ -1,6 +1,6 @@
 ---
 title: AEM 版本更新
-description: 瞭解AEMas a Cloud Service如何使用持續整合和傳遞(CI/CD)，讓您專案保持在最新版本。
+description: 了解AEMas a Cloud Service如何使用持续集成和交付(CI/CD)来将您的项目保持在最新版本。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
@@ -13,15 +13,15 @@ ht-degree: 23%
 
 # AEM 版本更新 {#aem-version-updates}
 
-瞭解AEMas a Cloud Service如何使用持續整合和傳遞(CI/CD)，讓您專案保持在最新版本。
+了解AEMas a Cloud Service如何使用持续集成和交付(CI/CD)来将您的项目保持在最新版本。
 
 ## CI/CD {#ci-cd}
 
-AEMas a Cloud Service使用持續整合和持續傳遞(CI/CD)，以確保您的專案使用最新的AEM版本。 这表示将生产实例和暂存实例更新到最新 AEM 版本而不中断用户的服务。
+AEMas a Cloud Service使用持续集成和持续交付(CI/CD)来确保您的项目使用的是最新的AEM版本。 这表示将生产实例和暂存实例更新到最新 AEM 版本而不中断用户的服务。
 
-版本更新只會自動套用至生產和中繼執行個體。 [AEM更新必須手動套用至所有其他執行個體。](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+版本更新仅自动应用于生产和暂存实例。 [必须手动将AEM更新应用于所有其他实例。](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
 
-## 更新型別 {#update-types}
+## 更新类型 {#update-types}
 
 有两种类型的 AEM 版本更新：
 
@@ -33,24 +33,24 @@ AEMas a Cloud Service使用持續整合和持續傳遞(CI/CD)，以確保您的�
 
 * **新增功能更新**
 
-   * 發行日期 [可預測、每月排程。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+   * 发布日期 [可预测、按月计划。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
 
-## 更新失敗 {#update-failure}
+## 更新失败 {#update-failure}
 
-AEM更新會透過密集且完全自動化的產品驗證管道進行，涉及多個步驟，確保不會中斷任何生產系統的服務。 健康情況檢查用於監視應用程式的健康情況。 如果這些檢查在AEMas a Cloud Service更新期間失敗，則發行將不會繼續，並且Adobe將調查更新導致此意外行為的原因。
+AEM更新通过密集且完全自动化的产品验证管道，其中涉及多个步骤，确保不中断任何生产系统中的服务。 运行状况检查用于监视应用程序的运行状况。 如果这些检查在AEMas a Cloud Service更新期间失败，则发布将不会继续，并且Adobe将调查更新导致此意外行为的原因。
 
-[產品測試和客戶功能測試，](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) 可防止產品升級和客戶程式碼推送破壞生產系統的功能，也會在AEM版本更新期間驗證。
+[产品测试和客户功能测试，](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) AEM版本更新期间还会验证用于防止产品升级和客户代码推送中断生产系统的功能。
 
 如果未能更新生产环境，Cloud Manager 将自动回滚到暂存环境。此操作将自动完成，以确保在更新完成后，暂存环境和生产环境均采用同一个 AEM 版本。
 
 >[!NOTE]
 >
->如果自訂程式碼推送至測試環境而非生產環境，下次AEM更新會移除這些變更，以反映上次成功客戶發佈至生產環境的Git標籤。 因此，必須再次部署僅可用於測試的自訂程式碼。
+>如果将自定义代码推送到暂存环境而不是生产环境，则下次AEM更新将删除这些更改，以反映上次成功发布到生产环境的客户的Git标记。 因此，必须再次部署仅在暂存时可用的自定义代码。
 
-## 複合節點存放區 {#composite-node-store}
+## 复合节点存储 {#composite-node-store}
 
-在大多數情況下，更新會產生零停機時間，包括製作執行個體（節點叢集）。 滾動更新可能的原因是 [Oak中的複合節點存放區功能。](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+在大多数情况下，更新不会产生停机时间，包括创作实例（节点集群）。 滚动更新可能是由于 [Oak中的复合节点存储功能。](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-此功能可讓AEM同時參照多個存放庫。 在滾動中 [藍綠色部署，](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 新的綠色AEM版本包含自己的 `/libs` （以TarMK為基礎的不可變存放庫），與舊版藍色AEM不同，不過兩者都參考共用的DocumentMK型可變存放庫，其中包含 `/content` ， `/conf` ， `/etc` 和其他。
+此功能允许AEM同时引用多个存储库。 在滚动中 [蓝绿部署，](/help/implementing/deploying/overview.md#how-rolling-deployments-work) 新的绿色AEM版本包含它自己的 `/libs` （基于TarMK的不可变存储库），与较旧的蓝色AEM版本不同，不过两者都引用基于DocumentMK的共享可变存储库，该存储库包含如下区域 `/content` ， `/conf` ， `/etc` 和其他人。
 
-因為藍色和綠色都有各自版本的 `/libs`中，在滾動更新期間兩者都可處於活動狀態，兩者都會接收流量，直到藍色被綠色完全取代為止。
+因为蓝色和绿色都有各自版本的 `/libs`中，它们都可以在滚动更新期间处于活动状态，并且都接受流量，直到蓝色被绿色完全替换为止。

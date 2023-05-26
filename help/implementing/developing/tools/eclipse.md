@@ -11,141 +11,141 @@ ht-degree: 3%
 
 # 适用于 Eclipse 的 AEM 开发人员工具{#aem-developer-tools-for-eclipse}
 
-![適用於Eclipse標誌的Experience Manager開發人員工具](assets/eclipse-logo.png)
+![适用于Eclipse徽标的Experience Manager开发人员工具](assets/eclipse-logo.png)
 
 ## 概述 {#overview}
 
-_Experience ManagerEclipse開發者工具_ 是Eclipse外掛程式，根據 [Apache Sling的Eclipse外掛程式](https://sling.apache.org/documentation/development/ide-tooling.html) 以Apache授權2發行。
+_适用于Eclipse的Experience Manager开发人员工具_ 是一个基于 [适用于Apache Sling的Eclipse插件](https://sling.apache.org/documentation/development/ide-tooling.html) 根据Apache许可证2发布。
 
-它提供數種讓AEM開發更輕鬆的功能：
+它提供了几项使AEM开发更轻松的功能：
 
-* 透過Eclipse伺服器聯結器與AEM執行個體緊密整合
-* 內容和OSGi套裝的同步
-* 使用程式碼熱抽換功能提供偵錯支援
-* 透過特定專案建立精靈簡單BootstrapAEM專案
-* 輕鬆編輯JCR屬性
+* 通过Eclipse服务器连接器与AEM实例无缝集成
+* 内容和OSGi捆绑包的同步
+* 使用代码热交换功能调试支持
+* 通过特定项目创建向导简单BootstrapAEM项目
+* 轻松编辑JCR属性
 
 ## 要求 {#requirements}
 
-使用AEM開發人員工具之前，您需要：
+在使用AEM Developer Tools之前，您需要：
 
-* 下載並安裝 [適用於企業Java™開發人員的Eclipse IDE](https://www.eclipse.org/downloads/packages/).
-* 設定eclipse安裝，透過編輯您的檔案，確保您至少有1 GB的棧積記憶體 `eclipse.ini` 組態檔，如 [Eclipse常見問題集](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
+* 下载并安装 [面向企业Java™开发人员的Eclipse IDE](https://www.eclipse.org/downloads/packages/).
+* 配置eclipse安装，通过编辑您的 `eclipse.ini` 配置文件，如 [Eclipse常见问题解答](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
 
 >[!NOTE]
 >
->在macOS上，您需要按一下右鍵 **Eclipse.app** 然後選取 **顯示封裝內容** 以尋找 `eclipse.ini`**.**
+>在macOS上，您需要右键单击 **Eclipse.app** 然后选择 **显示包内容** 以查找您的 `eclipse.ini`**.**
 
-## 如何安裝適用於Eclipse的AEM開發人員工具 {#how-to-install-the-aem-developer-tools-for-eclipse}
+## 如何安装适用于Eclipse的AEM开发人员工具 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-當您完成 [需求](#requirements) 如上所示，您可以安裝外掛程式：
+当您完成 [要求](#requirements) 如上所示，您可以安装插件：
 
-1. 開啟 [AEM開發人員工具網站](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. 打开 [AEM Developer Tools网站](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip). <!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
-1. 複製 **安裝連結**.
+1. 复制 **安装链接**.
 
-   您也可以下載封存，而不使用安裝連結。 此方法允許離線安裝，但您不會以這種方式收到未命中的自動更新通知。
+   或者，您也可以下载归档文件，而不是使用安装链接。 此方法允许脱机安装，但您不会以这种方式收到未命中的自动更新通知。
 
-1. 在Eclipse中，開啟 **說明** 功能表。
-1. 按一下 **安裝新軟體**.
-1. 按一下 **新增……**.
-1. 在 **名稱** 欄位，輸入 `AEM Developer Tools`.
-1. 在 **位置** 欄位中，複製安裝URL。
-1. 按一下 **新增**.
-1. 檢查兩者 **AEM** 和 **Sling** 外掛程式。
+1. 在Eclipse中，打开 **帮助** 菜单。
+1. 单击 **安装新软件**.
+1. 单击 **添加……**.
+1. 在 **名称** 字段，输入 `AEM Developer Tools`.
+1. 在 **位置** 字段中，复制安装URL。
+1. 单击 **添加**.
+1. 选中两者 **AEM** 和 **Sling** 插件。
 1. 单击&#x200B;**下一步**。
-1. 在 **安裝詳細資料** 視窗，按一下 **下一個** 再來一次。
-1. 接受授權合約，然後按一下 **完成**.
-1. 按一下 **RestartNow** 以重新啟動Eclipse。
+1. 在 **安装详细信息** 窗口，单击 **下一个** 再来一次。
+1. 接受许可协议，然后单击 **完成**.
+1. 单击 **RestartNow** 以重新启动Eclipse。
 
-## AEM觀點 {#the-aem-perspective}
+## AEM视角 {#the-aem-perspective}
 
-在Eclipse中，「透視」會決定視窗中可用的動作和檢視，並可與Eclipse中的資源進行以任務為導向的互動。 如需「透視」的詳細資訊，請參閱 [Eclipse檔案。](https://help.eclipse.org/latest/index.jsp)
+在Eclipse中，“透视”可确定窗口内可用的操作和视图，并支持与Eclipse中的资源进行面向任务的交互。 有关“透视”的更多详细信息，请参阅 [Eclipse文档。](https://help.eclipse.org/latest/index.jsp)
 
-_Eclipse的Experience Manager開發工具_ 提供AEM Perspective ，讓您能夠完全控制AEM專案和執行個體。 若要開啟「AEM透視」，請執行下列動作：
+_适用于Eclipse的Experience Manager开发工具_ 提供一个可让您完全控制AEM项目和实例的AEM Perspective。 要打开AEM Perspective，请执行以下操作：
 
-1. 從Eclipse功能表列中，選取 **視窗** -> **透視** -> **開啟透視** -> **其他**.
-1. 選取 **AEM** 在對話方塊中並按一下 **開啟**.
+1. 从Eclipse菜单栏中，选择 **窗口** -> **透视** -> **打开透视** -> **其他**.
+1. 选择 **AEM** 在对话框中，单击 **打开**.
 
-![Eclipse中的AEM觀點](assets/eclipse-aem-perspective.png)
+![Eclipse中的AEM视角](assets/eclipse-aem-perspective.png)
 
-## 多模組專案範例 {#sample-multi-module-project}
+## 示例多模块项目 {#sample-multi-module-project}
 
-此 _Experience ManagerEclipse開發者工具_ 隨附多模組專案範例，可幫助您快速熟悉Eclipse中的專案設定。 此外，它還是幾項AEM功能的最佳實務指南。 [進一步瞭解專案原型](https://github.com/adobe/aem-project-archetype).
+此 _适用于Eclipse的Experience Manager开发人员工具_ 随附一个多模块示例项目，可帮助您快速熟悉Eclipse中的项目设置。 它还可用作几项AEM功能的最佳实践指南。 [了解有关项目原型的更多信息](https://github.com/adobe/aem-project-archetype).
 
-請依照下列步驟建立範例專案：
+按照以下步骤创建示例项目：
 
-1. 在 **檔案** > **新增** > **專案** 功能表，瀏覽至 **AEM** 區段並選取 **AEM範例多模組專案**.
+1. 在 **文件** > **新** > **项目** 菜单，浏览到 **AEM** 部分并选择 **AEM示例多模块项目**.
 
-   ![AEM範例多模組專案](assets/aem-sample-project.png)
+   ![AEM示例多模块项目](assets/aem-sample-project.png)
 
 1. 单击&#x200B;**下一步**。
 
    >[!NOTE]
    >
-   >此步驟可能需要一些時間，因為m2eclipse需要掃描原型目錄。
+   >此步骤可能需要花些时间，因为m2eclipse需要扫描原型目录。
 
-1. 選擇 `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` 在功能表中，然後按一下 **下一個**.
+1. 选择 `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` 在菜单中，然后单击 **下一个**.
 
-   ![選取原型版本](assets/select-archetype.png)
+   ![选择原型版本](assets/select-archetype.png)
 
-1. 為範例專案提供下列欄位：
+1. 为示例项目提供以下字段：
 
    * **名称**
-   * **群組ID**
-   * **成品ID**
-   * **appId**  — 您可能需要展開 **進階** 設定此值的選項。
-   * **appTitle**  — 您可能需要展開 **進階** 設定此值的選項。
-   * **封裝**  — 您可能需要展開 **進階** 設定此值的選項。
+   * **组ID**
+   * **工件ID**
+   * **appId**  — 您可能需要展开 **高级** 设置此值的选项。
+   * **appTitle**  — 您可能需要展开 **高级** 设置此值的选项。
+   * **包**  — 您可能需要展开 **高级** 设置此值的选项。
 
-   ![定義原型屬性](assets/archetype-properties.png)
+   ![定义原型属性](assets/archetype-properties.png)
 
 1. 单击&#x200B;**下一步**。
 
-1. 接著，您可以設定Eclipse連線的AEM伺服器。
+1. 然后，配置与Eclipse连接的AEM服务器。
 
-   若要使用偵錯工具功能，您必須以偵錯模式啟動AEM — 這可以透過在命令列新增下列內容來實現：
+   要使用Debugger功能，您需要以调试模式启动AEM — 这可以通过在命令行中添加以下内容来实现：
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
    ```
 
-   ![連線到AEM伺服器](assets/connect-server.png)
+   ![连接到AEM服务器](assets/connect-server.png)
 
-1. 按一下 **完成**. 專案結構隨即建立。
+1. 单击 **完成**. 创建项目结构。
 
    >[!NOTE]
    >
-   >在新安裝中（更具體地說，當從未下載maven相依性時），您可能會收到建立有錯誤的專案。 在此情況下，請遵循中所述的程式 [解析無效的專案定義](#resolving-invalid-project-definition).
+   >在新安装中（更具体地说，从未下载maven依赖项时），您可能会创建项目，但出现错误。 在此情况下，请按照 [解析无效的项目定义](#resolving-invalid-project-definition).
 
-## 如何匯入現有專案 {#how-to-import-existing-projects}
+## 如何导入现有项目 {#how-to-import-existing-projects}
 
-您可以使用 **新增專案** 建立正確結構的功能：
+您可以使用 **新建项目** 创建正确结构的功能：
 
-1. 依照指示建立 [多模組專案範例](#sample-multi-module-project) 而且您已為您建立下列專案，可健康地分離疑慮：
+1. 按照说明创建 [示例多模块项目](#sample-multi-module-project) 并且您已经为您创建了以下项目，这些项目允许健康地分离问题：
 
-   * `PROJECT.ui.apps` 的 `/apps` 和 `/etc` 內容
-   * `PROJECT.ui.content` 的 `/content` 已製作
-   * `PROJECT.core` 對於Java™套裝(當您想要新增Java™程式碼時，這些套裝會變得有趣起來)
-   * `PROJECT.it.launcher` 和 `PROJECT.it.tests` 用於整合測試
+   * `PROJECT.ui.apps` 对象 `/apps` 和 `/etc` 内容
+   * `PROJECT.ui.content` 对象 `/content` 已创作
+   * `PROJECT.core` 对于Java™包(当您想要添加Java™代码时，这些包会变得很有趣)
+   * `PROJECT.it.launcher` 和 `PROJECT.it.tests` 用于集成测试
 
-1. 取代的內容 `PROJECT.ui.apps` 專案與 `apps` 和 `etc` 封裝資料夾：
+1. 替换的内容 `PROJECT.ui.apps` 使用的项目 `apps` 和 `etc` 包文件夹：
 
-   1. 在「專案總管」面板中，展開 `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
-   1. 以右鍵按一下 `apps` 資料夾並選擇 **顯示位置** > **System Explorer**.
-   1. 刪除 `apps` 和 `etc` 您現在應該看到的資料夾，並放置在這裡 `apps` 和 `etc` 內容封裝的資料夾。
-   1. 在Eclipse中，以滑鼠右鍵按一下 `PROJECT.ui.apps` 專案並選擇 **重新整理**.
+   1. 在“项目资源管理器”面板中，展开 `PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`.
+   1. 右键单击 `apps` 文件夹并选择 **显示位置** > **系统资源管理器**.
+   1. 删除 `apps` 和 `etc` 您现在应该看到的文件夹，并将其放在此处 `apps` 和 `etc` 内容包的文件夹。
+   1. 在Eclipse中，右键单击 `PROJECT.ui.apps` 项目并选择 **刷新**.
 
-1. 然後對 `PROJECT.ui.content` 並將其內容資料夾取代為您的其中一個套件：
+1. 然后对 `PROJECT.ui.content` 并将其内容文件夹替换为您的包之一：
 
-   1. 在「專案總管」面板中，展開 `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
-   1. 以滑鼠右鍵按一下較深入的內容資料夾，然後選擇 **顯示位置** -> **System Explorer**.
-   1. 刪除您現在應該看到的內容資料夾，並在此處放置內容包的內容資料夾。
-   1. 在Eclipse中，以滑鼠右鍵按一下 `PROJECT.ui.content` 專案並選擇 **重新整理**.
+   1. 在“项目资源管理器”面板中，展开 `PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`.
+   1. 右键单击更深入的内容文件夹并选择 **显示位置** -> **系统资源管理器**.
+   1. 删除您现在应该看到的内容文件夹，并在此处放置内容包的内容文件夹。
+   1. 在Eclipse中，右键单击 `PROJECT.ui.content` 项目并选择 **刷新**.
 
-1. 現在您必須更新 `filter.xml` 這兩個專案的檔案，以對應至內容封裝的內容。 為此，請開啟 `META-INF/vault/filter.xml` 在個別文字/程式碼編輯器中的內容套件檔案。
+1. 现在，您必须更新 `filter.xml` 这两个项目的文件，对应于内容包的内容。 为此，请打开 `META-INF/vault/filter.xml` 在单独的文本/代码编辑器中的内容包文件。
 
-   * 以下範例說明 `filter.xml` 檔案可以查詢：
+   * 以下示例说明 `filter.xml` 文件可以查找：
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -159,10 +159,10 @@ _Eclipse的Experience Manager開發工具_ 提供AEM Perspective ，讓您能夠
    </workspaceFilter>
    ```
 
-1. 至於分割為兩個專案的套件內容，您也必須將這些篩選規則分割為兩個並相應地更新 `filter.xml` 兩個專案的檔案。
+1. 对于已拆分为两个项目的资源包内容，还必须将这些筛选规则拆分为两个项目并相应地更新 `filter.xml` 这两个项目的文件。
 
-   1. 在Eclipse中，開啟 `PROJECT.ui.apps/src/main/content/META-INF/filter.xml`.
-   1. 取代 `<workspaceFilter>` 元素的開頭為您的套件規則 `/apps` 和 `/etc`
+   1. 在Eclipse中，打开 `PROJECT.ui.apps/src/main/content/META-INF/filter.xml`.
+   1. 替换的内容 `<workspaceFilter>` 元素的开头的包规则 `/apps` 和 `/etc`
       * 例如：
 
          ```xml
@@ -173,8 +173,8 @@ _Eclipse的Experience Manager開發工具_ 提供AEM Perspective ，讓您能夠
             <filter root="/etc/designs/foo"/>
          </workspaceFilter>
          ```
-   1. 然後開啟 `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
-   1. 將規則取代為您的套件中以開頭的規則 `/content`.
+   1. 然后打开 `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
+   1. 将规则替换为以开头的包中的规则 `/content`.
       * 例如：
 
          ```xml
@@ -187,41 +187,41 @@ _Eclipse的Experience Manager開發工具_ 提供AEM Perspective ，讓您能夠
          ```
 
 
-1. 請務必儲存所有變更。 您現在可以將新內容同步至您的AEM執行個體。
+1. 确保保存所有更改。 现在，您可以将该新内容同步到您的AEM实例。
 
-1. 在「伺服器」面板中，確定您的連線已啟動，若未啟動，則確定已啟動。
-1. 按一下 **清除並發佈** 圖示。
+1. 在“服务器”面板中，确保连接已启动，如果未启动，则确保连接已启动。
+1. 单击 **清理并发布** 图标。
 
-完成後，您應該在執行個體上執行套件，並在儲存時，任何變更都會自動同步到執行個體。
+完成后，您应在实例上运行包，保存后，任何更改都会自动同步到该实例。
 
-如果您想從專案重新建置套件，請用滑鼠右鍵按一下 `PROJECT.ui.apps` 或 `PROJECT.ui.content` 並選擇 **執行身分** -> **Maven安裝**.
+如果您希望从项目重新构建包，请右键单击 `PROJECT.ui.apps` 或 `PROJECT.ui.content` 并选择 **运行方式** -> **Maven安装**.
 
-您現在已建立目標資料夾，並在裡面裝入您的套件(例如，稱為 `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
+现在，您已经创建了一个目标文件夹，其中包含了您的包（例如，名为） `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
 
 ## 疑难解答 {#troubleshooting}
 
-### 解析無效的專案定義 {#resolving-invalid-project-definition}
+### 解析无效的项目定义 {#resolving-invalid-project-definition}
 
-若要解析無效的相依性和專案定義，請依照下列步驟進行：
+要解决无效的依赖项和项目定义，请按照以下步骤操作：
 
-1. 選取所有已建立的專案。
-1. 按一下滑鼠右鍵。
-1. 在快顯選單中，選取 **Maven** -> **更新專案**.
-1. Check **強制更新快照/版本**.
+1. 选择所有创建的项目。
+1. 右键单击。
+1. 在上下文菜单中，选择 **Maven** -> **更新项目**.
+1. Check **强制更新快照/版本**.
 1. 单击&#x200B;**确定**。
 
-Eclipse會下載必要的相依性。 這可能需要一些時間。
+Eclipse下载所需的依赖项。 这可能需要花些时间。
 
 ## 更多信息 {#more-information}
 
-適用於Eclipse網站的官方Apache Sling IDE工具提供您有用的資訊：
+适用于Eclipse网站的官方Apache Sling IDE工具为您提供了有用的信息：
 
-* 此 [**適用於Eclipse的Apache Sling IDE工具** 使用手冊](https://sling.apache.org/documentation/development/ide-tooling.html)，本檔案會逐步引導您瞭解AEM開發工具支援的整體概念、伺服器整合和部署功能。
-* 此 [疑難排解章節](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
-* 此 [已知問題清單](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
+* 此 [**适用于Eclipse的Apache Sling IDE工具** 用户指南](https://sling.apache.org/documentation/development/ide-tooling.html)，本文档将指导您了解AEM开发工具支持的整体概念、服务器集成和部署功能。
+* 此 [“疑难解答”部分](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
+* 此 [已知问题列表](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-下列官方 [Eclipse](https://www.eclipse.org/) 說明檔案有助於設定您的環境：
+以下官员 [Eclipse](https://www.eclipse.org/) 文档可以帮助设置环境：
 
-* [Eclipse快速入門](https://www.eclipse.org/getting-started/)
-* [Eclipse Luna說明系統](https://help.eclipse.org/latest/index.jsp)
-* [Maven整合(m2eclipse)](https://www.eclipse.org/m2e/)
+* [Eclipse快速入门](https://www.eclipse.org/getting-started/)
+* [Eclipse Luna帮助系统](https://help.eclipse.org/latest/index.jsp)
+* [Maven集成(m2eclipse)](https://www.eclipse.org/m2e/)

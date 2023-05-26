@@ -19,7 +19,7 @@ ht-degree: 99%
 
 ## 编辑键盘快捷键 {#editing-keyboard-shortcuts}
 
-| 位置 | 捷徑 | 描述 |
+| 位置 | 快捷键 | 描述 |
 |---|---|---|
 | 任何编辑窗口模式 | `Ctrl-Shift-m` | 在&#x200B;**预览**&#x200B;模式和当前选定的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a>（例如，**编辑**、**布局**&#x200B;等）之间切换* |
 | **编辑**&#x200B;模式 | `Ctrl-z` | [撤消最后一次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |

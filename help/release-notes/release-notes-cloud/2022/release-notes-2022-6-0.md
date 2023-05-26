@@ -11,7 +11,7 @@ ht-degree: 95%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明 {#release-notes}
 
-以下章節概述2022.6.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了2022.6.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中�
 
 * 改进了 I/O 运行时第三方连接器的兼容性和稳健性
 
-* 改善對GQL使用者端設定覆寫的支援（例如，設定自訂快取行為）
+* 改进了对客户端配置覆盖的支持（例如，设置自定义缓存行为）
 
 * 现在支持开箱即用的多个商务端点，并且可以通过 Cloud Manager 进行配置。 详情请见[此处](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554)的 CIF 博客。
 

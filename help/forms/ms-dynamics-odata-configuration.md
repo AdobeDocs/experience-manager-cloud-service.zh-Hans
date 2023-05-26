@@ -1,6 +1,6 @@
 ---
-title: 如何設定 [!DNL Microsoft Dynamics] OData？
-description: 瞭解如何根據中定義的實體、屬性和服務建立表單資料模型 [!DNL Microsoft Dynamics] 服務。 表單資料模型可用來建立最適化Forms，並與互動 [!DNL Microsoft Dynamics] 伺服器以啟用業務工作流程。
+title: 如何配置 [!DNL Microsoft Dynamics] OData？
+description: 了解如何基于中定义的实体、属性和服务创建表单数据模型 [!DNL Microsoft Dynamics] 服务。 表单数据模型可用于创建与交互的自适应Forms [!DNL Microsoft Dynamics] 服务器启用业务工作流。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
@@ -12,15 +12,15 @@ ht-degree: 2%
 
 ---
 
-# [!DNL Microsoft Dynamics] OData設定 {#microsoft-dynamics-odata-configuration}
+# [!DNL Microsoft Dynamics] OData配置 {#microsoft-dynamics-odata-configuration}
 
-![資料整合](assets/data-integeration.png)
+![数据集成](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] 是客戶關係管理(CRM)和企業資源規劃(ERP)軟體，提供企業解決方案，用於建立和管理客戶帳戶、聯絡人、銷售機會、機會和案例。 [[!DNL Experience Manager Forms] 資料整合](data-integration.md) 提供OData雲端服務設定，將Forms與線上和內部部署整合 [!DNL Microsoft Dynamics] 伺服器。 它可讓您根據中定義的實體、屬性和服務來建立表單資料模型 [!DNL Microsoft Dynamics] 服務。 表單資料模型可用來建立最適化Forms，並與互動 [!DNL Microsoft Dynamics] 伺服器以啟用業務工作流程。 例如：
+[!DNL Microsoft Dynamics] 是一款客户关系管理(CRM)和企业资源规划(ERP)软件，它提供用于创建和管理客户帐户、联系人、潜在客户、机会和案例的企业解决方案。 [[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供OData云服务配置以将Forms与在线和内部部署集成 [!DNL Microsoft Dynamics] 服务器。 它使您能够基于中定义的实体、属性和服务创建表单数据模型 [!DNL Microsoft Dynamics] 服务。 表单数据模型可用于创建与交互的自适应Forms [!DNL Microsoft Dynamics] 服务器启用业务工作流。 例如：
 
-* 查詢 [!DNL Microsoft Dynamics] 資料伺服器並預先填入Adaptive Forms
-* 將資料寫入 [!DNL Microsoft Dynamics] 在最適化表單提交上
-* 將資料寫入 [!DNL Microsoft Dynamics] 透過「表單資料模型」中定義的自訂實體（反之亦然）
+* 查询 [!DNL Microsoft Dynamics] server for data并预填充Adaptive Forms
+* 将数据写入 [!DNL Microsoft Dynamics] 关于自适应表单提交
+* 将数据写入 [!DNL Microsoft Dynamics] 通过表单数据模型中定义的自定义实体，反之亦然
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -29,46 +29,46 @@ ht-degree: 2%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics ODataCloud Service（OData服務）可用於所有執行模式。 有關設定執行模式的詳細資訊 [!DNL Experience Manager] 例項，請參閱 [執行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics ODataCloud Service（OData服务）在所有运行模式下均可用。 有关为配置运行模式的详细信息 [!DNL Experience Manager] 实例，请参见 [运行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
 
 ## 前提条件 {#prerequisites}
 
-開始設定與設定之前 [!DNL Microsoft Dynamics]，確定您擁有：
+在开始设置和配置之前 [!DNL Microsoft Dynamics]，确保您具有：
 
 <!--* Installed the [[!DNL Experience Manager Forms] add-on package](installing-configuring-aem-forms-osgi.md) -->
-* 已設定 [!DNL Microsoft Dynamics] 365已線上上或安裝下列其中一種執行個體 [!DNL Microsoft Dynamics] 版本：
+* 已配置 [!DNL Microsoft Dynamics] 365联机或安装了以下某个实例 [!DNL Microsoft Dynamics] 版本：
 
-   * [!DNL Microsoft Dynamics] 365內部部署
-   * [!DNL Microsoft Dynamics] 2016年內部部署
+   * [!DNL Microsoft Dynamics] 365内部部署
+   * [!DNL Microsoft Dynamics] 2016年内部部署
 
-* [已註冊以下專案的應用程式： [!DNL Microsoft Dynamics] 線上服務，使用 [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). 記下已註冊服務的使用者端ID （也稱為應用程式ID）和使用者端密碼的值。 這些值會用於 [為您的設定雲端服務 [!DNL Microsoft Dynamics] 服務](#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [已注册申请 [!DNL Microsoft Dynamics] 在线服务，使用 [!DNL Microsoft Azure] 活动目录](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). 记下已注册服务的客户端ID（也称为应用程序ID）和客户端密钥的值。 在以下情况下会使用这些值： [为您的配置云服务 [!DNL Microsoft Dynamics] 服务](#configure-cloud-service-for-your-microsoft-dynamics-service).
 
-## 設定已登入的回覆URL [!DNL Microsoft Dynamics] 應用計畫 {#set-reply-url-for-registered-microsoft-dynamics-application}
+## 设置已注册的回复URL [!DNL Microsoft Dynamics] 应用程序 {#set-reply-url-for-registered-microsoft-dynamics-application}
 
-執行下列動作，設定已登入的回覆URL [!DNL Microsoft Dynamics] 應用：
+执行以下操作可设置已注册的回复URL [!DNL Microsoft Dynamics] 应用程序：
 
 >[!NOTE]
 >
->只有在整合時才能使用此程式 [!DNL Experience Manager Forms] 使用線上 [!DNL Microsoft Dynamics] 伺服器。
+>仅在集成时使用此过程 [!DNL Experience Manager Forms] 在线 [!DNL Microsoft Dynamics] 服务器。
 
-1. 前往 [!DNL Microsoft Azure] Active Directory帳戶並在中新增下列雲端服務設定URL **[!UICONTROL 回覆URL]** 已註冊應用程式的設定：
+1. 转到 [!DNL Microsoft Azure] Active Directory帐户并在中添加以下云服务配置URL **[!UICONTROL 回复URL]** 已注册应用程序的设置：
 
    `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
-   ![Azure目錄](assets/azure_directory_new.png)
+   ![Azure目录](assets/azure_directory_new.png)
 
 1. 保存配置。
 
-## 設定 [!DNL Microsoft Dynamics] 若為IFD {#configure-microsoft-dynamics-for-ifd}
+## 配置 [!DNL Microsoft Dynamics] 用于IFD {#configure-microsoft-dynamics-for-ifd}
 
-[!DNL Microsoft Dynamics] 使用宣告型驗證來提供資料存取權，其位置 [!DNL Microsoft Dynamics] CRM伺服器至外部使用者。 若要啟用此功能，請執行以下動作以設定 [!DNL Microsoft Dynamics] 適用於網際網路對向部署(IFD)，並設定宣告設定。
+[!DNL Microsoft Dynamics] 使用基于声明的身份验证提供对数据的访问 [!DNL Microsoft Dynamics] CRM服务器到外部用户。 要启用此功能，请执行以下操作 [!DNL Microsoft Dynamics] 用于面向Internet的部署(IFD)并配置声明设置。
 
 >[!NOTE]
 >
->只有在整合時才能使用此程式 [!DNL Experience Manager Forms] 使用內部部署 [!DNL Microsoft Dynamics] 伺服器。
+>仅在集成时使用此过程 [!DNL Experience Manager Forms] 内部部署 [!DNL Microsoft Dynamics] 服务器。
 
-1. 設定 [!DNL Microsoft Dynamics] IFD的內部部署執行個體，如中所述 [設定IFD [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
-1. 使用Windows PowerShell執行以下命令，在啟用IFD時設定宣告設定 [!DNL Microsoft Dynamics]：
+1. 配置 [!DNL Microsoft Dynamics] IFD的内部部署实例，如中所述 [为配置IFD [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
+1. 使用Windows PowerShell运行以下命令，在启用IFD的情况下配置声明设置 [!DNL Microsoft Dynamics]：
 
    ```shell
    Add-PSSnapin Microsoft.Crm.PowerShell
@@ -77,69 +77,69 @@ ht-degree: 2%
     Set-CrmSetting -Setting $ClaimsSettings
    ```
 
-   另請參閱 [CRM內部部署的應用程式註冊(IFD)](https://msdn.microsoft.com/sl-si/library/dn531010(v=crm.7).aspx#bkmk_ifd) 以取得詳細資訊。
+   参见 [CRM内部部署(IFD)的应用程序注册](https://msdn.microsoft.com/sl-si/library/dn531010(v=crm.7).aspx#bkmk_ifd) 了解详细信息。
 
-## 在AD FS電腦上設定OAuth使用者端 {#configure-oauth-client-on-ad-fs-machine}
+## 在AD FS计算机上配置OAuth客户端 {#configure-oauth-client-on-ad-fs-machine}
 
-執行下列動作，在Active Directory Federation Services (AD FS)電腦上註冊OAuth使用者端並授與AD FS電腦上的存取權：
+执行以下操作可在Active Directory联合身份验证服务(AD FS)计算机上注册OAuth客户端并授予对AD FS计算机的访问权限：
 
 >[!NOTE]
 >
->只有在整合時才能使用此程式 [!DNL Experience Manager Forms] 使用內部部署 [!DNL Microsoft Dynamics] 伺服器。
+>仅在集成时使用此过程 [!DNL Experience Manager Forms] 内部部署 [!DNL Microsoft Dynamics] 服务器。
 
-1. 執行以下命令：
+1. 运行以下命令：
 
    `Add-AdfsClient -ClientId “<Client-ID>” -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
    其中：
 
-   * `Client-ID` 是您可以使用任何GUID產生器產生的使用者端ID。
-   * `redirect-uri` 為的URL [!DNL Microsoft Dynamics] 上的OData雲端服務 [!DNL Experience Manager Forms]. 預設雲端服務已安裝 [!DNL Experience Manager Forms] 部署於下列URL：
+   * `Client-ID` 是一个可以使用任何GUID生成器生成的客户端ID。
+   * `redirect-uri` 是的URL [!DNL Microsoft Dynamics] 上的OData云服务 [!DNL Experience Manager Forms]. 与一起安装的默认云服务 [!DNL Experience Manager Forms] 部署在以下URL上：
       `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
-1. 執行以下命令以授與AD FS電腦上的存取權：
+1. 运行以下命令以授予对AD FS计算机的访问权限：
 
    `Grant-AdfsApplicationPermission -ClientRoleIdentifier “<Client-ID>” -ServerRoleIdentifier <resource> -ScopeNames openid`
 
    其中：
 
-   * `resource` 是 [!DNL Microsoft Dynamics] 組織URL。
+   * `resource` 是 [!DNL Microsoft Dynamics] 组织URL。
 
-1. [!DNL Microsoft Dynamics] 使用HTTPS通訊協定。 從下列位置叫用AD FS端點： [!DNL Forms] 伺服器，安裝 [!DNL Microsoft Dynamics] 網站憑證使用到Java憑證存放區 `keytool` 執行的電腦上的命令 [!DNL Experience Manager Forms].
+1. [!DNL Microsoft Dynamics] 使用HTTPS协议。 要从中调用AD FS端点，请执行以下操作 [!DNL Forms] 服务器，安装 [!DNL Microsoft Dynamics] 使用将站点证书存储到Java证书存储区 `keytool` 运行计算机上的命令 [!DNL Experience Manager Forms].
 
-## 為您的設定雲端服務 [!DNL Microsoft Dynamics] 服務 {#configure-cloud-service-for-your-microsoft-dynamics-service}
+## 为配置云服务 [!DNL Microsoft Dynamics] 服务 {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-OData服務由其服務根URL識別。 若要在中設定OData服務 [!DNL Experience Manager] as a Cloud Service，請確定您有服務的服務根URL，然後執行下列動作：
+OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience Manager] as a Cloud Service，请确保您拥有服务的服务根URL，并执行以下操作：
 
 <!--The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with default OData configuration. To configure it to connect with your [!DNL Microsoft Dynamics] service, do the following.-->
 
 >[!NOTE]
 >
->如需設定的逐步指南 [!DNL Microsoft Dynamics 365]，線上或內部部署，請參閱 [[!DNL Microsoft Dynamics] OData設定](ms-dynamics-odata-configuration.md).
+>有关配置的分步指南 [!DNL Microsoft Dynamics 365]，在线或内部部署，请参阅 [[!DNL Microsoft Dynamics] OData配置](ms-dynamics-odata-configuration.md).
 
-1. 前往 **[!UICONTROL 「工具>Cloud Services>資料來源」]**. 點選以選取您要建立雲端設定的資料夾。
+1. 转到 **[!UICONTROL “工具”>“Cloud Services”>“数据源”]**. 点按以选择要创建云配置的文件夹。
 
-   另請參閱 [設定雲端服務設定的資料夾](#cloud-folder) 以取得為雲端服務設定建立和設定資料夾的資訊。
+   参见 [为云服务配置配置文件夹](#cloud-folder) 有关为Cloud Service配置创建和配置文件夹的信息。
 
-1. 點選 **[!UICONTROL 建立]** 以開啟 **[!UICONTROL 建立資料來源設定精靈]**. 指定設定的名稱及標題（選擇性），選取 **[!UICONTROL OData服務]** 從 **[!UICONTROL 服務型別]** 下拉式清單（選擇性）瀏覽並選取設定的縮圖影像，然後點選 **[!UICONTROL 下一個]**.
-在 **[!UICONTROL 驗證設定]** 標籤：
+1. 点按 **[!UICONTROL 创建]** 以打开 **[!UICONTROL 创建数据源配置向导]**. 指定配置的名称和（可选）标题，选择 **[!UICONTROL OData服务]** 从 **[!UICONTROL 服务类型]** 下拉列表（可选）浏览并选择配置的缩略图图像，然后点按 **[!UICONTROL 下一个]**.
+在 **[!UICONTROL 身份验证设置]** 选项卡：
 
-   1. 輸入 **[!UICONTROL 服務根目錄]** 欄位。 前往Dynamics執行個體並導覽至 **[!UICONTROL 開發人員資源]** 以檢視「服務根目錄」欄位的值。 例如， https://&lt;tenant-name>/api/data/v9.1/
+   1. 输入值 **[!UICONTROL 服务根目录]** 字段。 转到Dynamics实例并导航到 **[!UICONTROL 开发人员资源]** 查看“服务根”字段的值。 例如， https://&lt;tenant-name>/api/data/v9.1/
 
-   1. 選取 **[!UICONTROL OAuth 2.0]** 做為驗證型別。
+   1. 选择 **[!UICONTROL OAuth 2.0]** 作为身份验证类型。
 
-   1. 取代中的預設值 **[!UICONTROL 使用者端ID]** (也稱為 **應用程式ID**)， **[!UICONTROL 使用者端密碼]**， **[!UICONTROL OAuth URL]**， **[!UICONTROL 重新整理記號URL]**， **[!UICONTROL 存取權杖URL]**、和 **[!UICONTROL 資源]** 包含下列專案之值的欄位： [!DNL Microsoft Dynamics] 服務設定。 您必須在「 」中指定Dynamics執行個體URL **[!UICONTROL 資源]** 要設定的欄位 [!DNL Microsoft Dynamics] 使用表單資料模型。 使用服務根URL衍生動態執行個體URL。 例如， [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. 将缺省值替换为 **[!UICONTROL 客户端ID]** (也称为 **应用程序ID**)， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]**， **[!UICONTROL 刷新令牌URL]**， **[!UICONTROL 访问令牌URL]**、和 **[!UICONTROL 资源]** 字段及其值 [!DNL Microsoft Dynamics] 服务配置。 必须在以下位置指定动态实例URL： **[!UICONTROL 资源]** 要配置的字段 [!DNL Microsoft Dynamics] 表单数据模型。 使用服务根URL派生动态实例URL。 例如， [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
-   1. 指定 **[!UICONTROL openid]** 在 **[!UICONTROL 授權範圍]** 授權程式的欄位 [!DNL Microsoft Dynamics].
+   1. 指定 **[!UICONTROL openid]** 在 **[!UICONTROL 授权范围]** 授权流程的字段 [!DNL Microsoft Dynamics].
 
-      ![驗證設定](assets/dynamics_authentication_settings_new.png)
-表單資料模型
-1. 按一下 **[!UICONTROL 連線到OAuth]**. 您被重新導向至 [!DNL Microsoft Dynamics] 登入頁面。
-1. 使用您的登入 [!DNL Microsoft Dynamics] 認證並接受以允許雲端服務設定連線至 [!DNL Microsoft Dynamics] 服務。 在Cloud Service和服務之間建立表單資料模型是一次性工作。
+      ![身份验证设置](assets/dynamics_authentication_settings_new.png)
+表单数据模型
+1. 单击 **[!UICONTROL 连接到OAuth]**. 您将被重定向到 [!DNL Microsoft Dynamics] 登录页面。
+1. 使用您的登录 [!DNL Microsoft Dynamics] 凭据并接受以允许云服务配置连接到 [!DNL Microsoft Dynamics] 服务。 在云服务和服务之间建立表单数据模型是一项一次性任务。
 
-   您是表單資料模型Cloud Service設定頁面，此頁面會顯示OData設定已成功儲存的訊息。
+   您是云服务配置页面的表单数据模型，该页面显示已成功保存OData配置的消息。
 
-MS Dynamics ODataCloud Service（OData服務）雲端服務已設定，並已與您的Dynamics服務連線。 表單資料模型表單資料模型
+MS Dynamics ODataCloud Service（OData服务）云服务已配置并与您的Dynamics服务连接。 表单数据模型表单数据模型
 
 ## 创建表单数据模型 {#create-form-data-model}
 
@@ -153,14 +153,14 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-設定MS Dynamics OData雲端使用者表單資料模型(ce)雲端服務後，您可以在建立表單資料模型時使用該服務。 如需詳細資訊，請參閱 [建立表單資料模型](create-form-data-models.md).
+配置MS Dynamics OData云服务表单数据模型(ce)云服务后，您可以在创建表单数据模型时使用该服务。 有关更多信息，请参阅 [创建表单数据模型](create-form-data-models.md).
 
-接下來，您可以根據表單資料模型建立最適化表單，並將其用於各種最適化表單使用案例，例如：
+接下来，您可以创建基于表单数据模型模型的自适应表单，并将其用于各种自适应表单用例，例如：
 
-* 透過查詢資訊預填調適型表單 [!DNL Microsoft Dynamics] 實體和服務
-* 叫用 [!DNL Microsoft Dynamics] 使用最適化表單規則的表單資料模型中定義的伺服器作業
-* 將提交的表單資料寫入 [!DNL Microsoft Dynamics] 實體
+* 通过查询自适应表单中的信息预填充自适应表单 [!DNL Microsoft Dynamics] 实体和服务
+* 调用 [!DNL Microsoft Dynamics] 使用自适应表单规则的表单数据模型中定义的服务器操作
+* 将提交的表单数据写入 [!DNL Microsoft Dynamics] 实体
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
-如需在業務工作流程中建立和使用表單資料模型的詳細資訊，請參閱 [資料整合](data-integration.md).
+有关在业务工作流中创建和使用表单数据模型的更多信息，请参阅 [数据集成](data-integration.md).

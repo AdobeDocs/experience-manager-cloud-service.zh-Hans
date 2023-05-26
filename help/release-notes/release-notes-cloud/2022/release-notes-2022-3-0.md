@@ -11,7 +11,7 @@ ht-degree: 96%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明 {#release-notes}
 
-以下章節概述2022.3.0版的功能發行說明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了2022.3.0版本的的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ ht-degree: 96%
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* 現在，用於驗證伺服器對伺服器API呼叫(例如，GraphQL API請求)的認證，可在過期前從開發人員控制檯以自助服務方式重新整理。 如需更多信息，请参阅 [此](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 文档。
+* 现在，用于验证服务器到服务器API调用(例如，用于GraphQL API请求)的凭据可在过期之前从开发人员控制台以自助方式刷新。 如需更多信息，请参阅 [此](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 文档。
 
 * 以前未启用的版本清除和审核日志清除维护任务，将为新环境启用。请参阅[维护任务](/help/operations/maintenance.md)文章中的相关值。
 

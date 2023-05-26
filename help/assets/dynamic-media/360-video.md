@@ -1,6 +1,6 @@
 ---
-title: 360/VR影片
-description: 瞭解如何在Dynamic Media中使用360和虛擬現實(VR)影片。
+title: 360/VR视频
+description: 了解如何在Dynamic Media中使用360和虚拟现实(VR)视频。
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
@@ -12,63 +12,63 @@ ht-degree: 0%
 
 ---
 
-# 360/VR影片 {#vr-video}
+# 360/VR视频 {#vr-video}
 
-360°影片會同時錄製每個方向的檢視。 它們使用全方位相機或一系列相機拍攝。 在播放期間，在平面顯示器上，使用者可以控制視角；在行動裝置上播放通常套用他們內建的陀螺儀控制。
+360°视频同时记录每个方向的视图。 它们使用全方位相机或一系列相机拍摄。 在播放期间，在平面显示器上，用户可控制视角；在移动设备上播放通常应用其内置的陀螺仪控制。
 
-Dynamic Media包含原生支援，可傳送360個視訊資產。 依預設，檢視或播放不需要額外的設定。 您會使用標準視訊副檔名（例如.mp4、.mkv和.mov）來傳送360視訊。 最常見的轉碼器是H.264。
+Dynamic Media包含对360个视频资源交付的本机支持。 默认情况下，查看或播放无需其他配置。 您可使用标准视频扩展名(如.mp4、.mkv和.mov)来交付360视频。 最常见的编解码器是H.264。
 
-您可以使用360/VR視訊檢視器來轉譯等角視訊。 如此一來，您就能在房間、屬性、位置、風景、醫療程式等各方面獲得身臨其境的觀賞體驗。
+您可以使用360/VR视频查看器渲染等矩形视频。 结果是对房间、财产、位置、景观、医疗程序等的沉浸式观看体验。
 
-目前不支援空間音訊；如果音訊混合在立體聲中，平衡(L/R)不會隨著客戶變更相機視角而改變。
+当前不支持空间音频；如果音频混入立体声，则平衡(L/R)不会随着客户改变相机视角而改变。
 
-另請參閱 [透過AEM Assets使用Dynamic Media 360影片和自訂影片縮圖](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
+参见 [在AEM Assets中使用Dynamic Media 360视频和自定义视频缩略图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
-另請參閱 [管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md).
+另请参阅 [管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-## 360影片運作中 {#video-in-action}
+## 360视频的实际操作 {#video-in-action}
 
-選取 [360號空間站](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) 開啟瀏覽器視窗並觀看360度影片。 在視訊播放期間，將指標拖曳至新位置以變更視角。
+选择 [空间站360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) 打开浏览器窗口并观看360°视频。 在视频播放期间，将指针拖动到新位置以更改视角。
 
-![來自空間站360視訊的視訊影格](assets/6_5_360videoiss_simplified.png)
-*來自空間站360的視訊影格*
+![来自空间站360视频的视频帧](assets/6_5_360videoiss_simplified.png)
+*来自空间站360的视频帧*
 
-## 360/VR視訊與Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
+## 360/VR视频和Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-您可以使用AdobePremier Pro來檢視和編輯360/VR素材。 例如，您可以在場景中正確放置圖志和文字，並套用專為等矩形媒體設計的效果和轉場。
+您可以使用AdobePremier Pro查看和编辑360/VR素材。 例如，您可以在场景中正确放置徽标和文本，并应用专门为等矩形介质设计的效果和过渡。
 
-另請參閱 [編輯360/VR影片](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
+参见 [编辑360/VR视频](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
-## 上傳資產以與360視訊檢視器搭配使用 {#uploading-assets-for-use-with-the-video-viewer}
+## 上传资产以用于360视频查看器 {#uploading-assets-for-use-with-the-video-viewer}
 
-上傳至360個視訊資產 [!DNL Experience Manager] 標籤為 **多媒體** 資產頁面上，與一般視訊資產類似。
+上传到360个视频资产 [!DNL Experience Manager] 标记为 **多媒体** 在资产页面上，与普通视频资产类似。
 
-![在卡片檢視中看到的已上傳360視訊資產](assets/6_5_360video-selecttopreview.png)
-*在卡片檢視中看到的已上傳360視訊資產。 資產標示為多媒體。*
+![在卡片视图中看到的已上传360视频资产](assets/6_5_360video-selecttopreview.png)
+*在卡片视图中看到的已上传360视频资产。 该资源被标记为“多媒体”。*
 
-**上傳資產以搭配360視訊檢視器使用：**
+**上传资产以用于360视频查看器：**
 
-1. 已建立專用於您的360度影片資產的資料夾。
-1. [將最適化視訊設定檔套用至資料夾](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+1. 创建了一个专用于您的360视频资产的文件夹。
+1. [将自适应视频配置文件应用到文件夹](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   與標準非360度視訊內容相比，轉譯360度視訊內容對來源視訊解析度和編碼轉譯解析度的需求更高。
+   与标准的非360视频内容相比，渲染360视频内容对源视频分辨率和编码呈现版本分辨率提出了更高的要求。
 
-   您可以使用隨Dynamic Media提供的現成最適化視訊設定檔。 不過，若使用非360視訊檢視器轉譯的相同設定進行編碼，會產生明顯較低的360視訊品質。 因此，如果需要高品質360視訊，請執行下列動作：
+   您可以使用随Dynamic Media提供的现成自适应视频配置文件。 但是，它会导致明显的360视频质量低于使用非360视频查看器渲染的相同设置进行编码的非360视频的质量。 因此，如果需要高品质360视频，请执行以下操作：
 
-   * 理想情況下，您原本的360度影片內容具備下列其中一種解析度：
+   * 理想情况下，您的360视频原始内容具有以下分辨率之一：
 
-      * 1080p - 1920 x 1080，稱為Full HD或FHD解析度，或
-      * 2160p - 3840 x 2160，稱為4k、UHD或UltraHD解析度。 這種大型顯示器解析度最常出現在高檔電視機和電腦顯示器上。 2160p解析度通常稱為「4k」，因為寬度接近4000畫素。 換句話說，它提供1080p畫素的四倍。
-   * [建立自訂最適化視訊設定檔](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 提供更高品質的轉譯。 例如，您可以建立包含下列三個設定的最適化視訊設定檔：
+      * 1080p - 1920 x 1080，称为全高清或全高清分辨率，或者
+      * 2160p - 3840 x 2160，称为4k、UHD或Ultra高清分辨率。 这种大型显示器分辨率通常出现在高端电视机和计算机显示器上。 2160p分辨率通常称为“4k”，因为宽度接近4000像素。 换句话说，它提供1080p像素的4倍。
+   * [创建自定义自适应视频配置文件](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 高质量的演绎版。 例如，您可以创建包含以下三个设置的自适应视频配置文件：
 
-      * 寬度=自動；高度=720；位元速率=2500 kbps
-      * Width=auto； Height=1080； Bit rate=5000 kbps
-      * 寬度=自動；高度=1440；位元速率=6600 kbps
-   * 處理360影片資產專屬資料夾中的360影片內容。
+      * 宽度=自动；高度=720；比特率=2500 kbps
+      * 宽度=自动；高度=1080；比特率=5000 kbps
+      * 宽度=自动；高度=1440；比特率=6600 kbps
+   * 在专用于360个视频资产的文件夹中处理360个视频内容。
 
-   此方法對使用者的網路和CPU提出了更高的要求。
+   这种方法对于最终用户的网络和CPU提出了更高的要求。
 
-1. [將視訊上傳至資料夾](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+1. [将视频上传到文件夹](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
 <!--
 
@@ -91,50 +91,50 @@ Start by uploading 360 Videos.
 
 -->
 
-## 預覽360度影片 {#previewing-video}
+## 预览360视频 {#previewing-video}
 
-您可以使用「預覽」來檢視向客戶呈現的360影片外觀，並確保影片如預期般運作。
+您可以使用预览功能查看向客户显示的360视频效果，并确保其行为符合预期。
 
-另請參閱 [編輯檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
+另请参阅 [编辑查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
 
-當您對360視訊感到滿意時，可以將其發佈。
+如果您对360视频满意，则可以发布该视频。
 
-另請參閱 [將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md).
-另請參閱 [將URL連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 如果您的互動式內容具有具有具有相對URL的連結，尤其是以下連結的連結，則無法連結URL型方法： [!DNL Experience Manager Sites] 頁面。
-另請參閱 [將Dynamic Media資產新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+参见 [在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md).
+参见 [将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 如果您的交互式内容具有带相对URL的链接，尤其是指向的链接，则无法基于URL的链接方法 [!DNL Experience Manager Sites] 页数。
+参见 [将Dynamic Media资源添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-**若要預覽360部影片：**
+**要预览360个视频，请执行以下操作：**
 
-1. 在 **[!UICONTROL 資產]**，導覽至您建立的現有360影片。 若要以預覽模式開啟，請選取360視訊資產。
+1. In **[!UICONTROL 资产]**，导航到您创建的现有360视频。 要在预览模式下将其打开，请选择360视频资产。
 
-   ![在Experience Manager的卡片檢視中看到的已上傳360視訊資產的熒幕擷圖。](assets/6_5_360video-selecttopreview-1.png)
+   ![已上传360视频资源的屏幕截图，如Experience Manager的卡片视图中所示。](assets/6_5_360video-selecttopreview-1.png)
 
-   若要預覽視訊，請選取360度視訊資產。
+   要预览视频，请选择360视频资源。
 
-1. 在預覽頁面頁面的左上角附近，選取下拉式清單，然後選取 **[!UICONTROL 檢視者]**.
+1. 在预览页面的左上角附近，选择下拉列表，然后选择 **[!UICONTROL 查看器]**.
 
-   ![選取檢視器以檢視可用視訊檢視器清單的熒幕擷圖。](assets/6_5_360video-preview-viewers.png)
+   ![选择查看器以查看可用视频查看器列表的屏幕截图。](assets/6_5_360video-preview-viewers.png)
 
-   從「檢視器」清單中選取 **[!UICONTROL Video360_social]**，然後執行下列任一項作業：
+   从查看器列表中，选择 **[!UICONTROL Video360_social]**，然后执行以下操作之一：
 
-   * 若要改變靜態場景的視角，請在視訊上拖曳指標。
-   * 若要開始播放，請選取視訊的 **[!UICONTROL 播放]** 按鈕。 播放視訊時，拖曳指標橫跨視訊以改變視角。
+   * 要改变静态场景的视角，请将指针拖动到视频上。
+   * 要开始播放，请选择视频的 **[!UICONTROL 播放]** 按钮。 在视频播放时，拖动指针跨过视频以改变视角。
 
-   ![使用者選取Video360_Social檢視器以預覽360度視訊的熒幕擷圖。](assets/6_5_360video-preview-video360-social.png)*360度影片截圖。*
+   ![用户选择Video360_Social查看器预览360度视频的屏幕截图。](assets/6_5_360video-preview-video360-social.png)*360度视频截图。*
 
-   * 從「檢視器」清單中選取 **[!UICONTROL Video360VR]**.
+   * 从查看器列表中，选择 **[!UICONTROL Video360VR]**.
 
-      虛擬現實(VR)視訊是使用虛擬現實耳機存取的沈浸式視訊內容。 和一般視訊一樣，您一開始會使用360度攝影機錄製或擷取視訊，藉此建立VR視訊。
-   ![將滑鼠指標暫留在Video360VR Viewer選項上的使用者熒幕擷圖。](assets/6_5_360video-preview-video360vr.png)
-   *360 VR視訊熒幕擷圖。*
+      虚拟现实(Virtual Reality， VR)视频是使用虚拟现实耳机访问的沉浸式视频内容。 与普通视频一样，当视频使用360°摄像机录制或捕获时，您首先会创建VR视频。
+   ![将鼠标指针悬停在Video360VR Viewer选项上的用户屏幕截图。](assets/6_5_360video-preview-video360vr.png)
+   *360 VR视频截图。*
 
-1. 在預覽頁面的右上角附近，選取 **[!UICONTROL 關閉]**.
+1. 在预览页面的右上角附近，选择 **[!UICONTROL 关闭]**.
 
-## 發佈360度影片 {#publishing-video}
+## 正在发布360视频 {#publishing-video}
 
-若要使用360視訊，您必須將其發佈。 發佈360影片會啟用URL和內嵌程式碼。 此外，該公司也會將360影片發佈至Dynamic Media雲端，此雲端已與CDN整合，提供可擴充且優異的傳送效能。
+要使用360视频，您必须发布它。 发布360视频会激活URL和嵌入代码。 它还将360视频发布到与CDN集成的Dynamic Media云中，以实现可扩展的高性能交付。
 
-另請參閱 [發佈Dynamic Media資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 以取得發佈360度影片的詳細資訊。
-另請參閱 [將視訊或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md).
-另請參閱 [將URL連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 如果您的互動式內容具有具有具有相對URL的連結，尤其是以下連結的連結，則無法連結URL型方法： [!DNL Experience Manager Sites] 頁面。
-另請參閱 [將Dynamic Media資產新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+参见 [发布Dynamic Media资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 了解有关如何发布360视频的详细信息。
+另请参阅 [在网页上嵌入视频查看器或图像查看器](/help/assets/dynamic-media/embed-code.md).
+另请参阅 [将URL关联到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). 如果您的交互式内容具有带相对URL的链接，尤其是指向的链接，则无法基于URL的链接方法 [!DNL Experience Manager Sites] 页数。
+另请参阅 [将Dynamic Media资源添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).

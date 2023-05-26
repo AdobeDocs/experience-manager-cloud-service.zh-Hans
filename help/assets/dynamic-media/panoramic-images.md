@@ -1,6 +1,6 @@
 ---
 title: 全景图像
-description: 瞭解如何在Dynamic Media中使用全景影像。
+description: 了解如何在Dynamic Media中使用全景图像。
 contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
@@ -12,27 +12,27 @@ ht-degree: 2%
 
 ---
 
-# 全景影像{#panoramic-images}
+# 全景图像{#panoramic-images}
 
-本節說明如何使用「全景影像」檢視器來轉譯球面全景影像，以獲得房間、屬性、位置或橫向的360度沈浸式檢視體驗。
+本节介绍如何使用全景图像查看器渲染球面全景图像，以获得房间、属性、位置或横向的360°沉浸式观看体验。
 
-另請參閱 [管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md).
+另请参阅 [管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## 上傳資產以與全景影像檢視器搭配使用 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## 上传用于全景图像查看器的资产 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
-若要讓上傳的資產符合您要與全景影像檢視器一起使用的球面全景影像資格，資產必須具備下列其中一項或兩項條件：
+要使上传的资产符合作为要与全景图像查看器一起使用的球面全景图像的条件，该资产必须具有以下一项或两项：
 
-* 外觀比例為2。
+* 长宽比为2。
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* 以關鍵字標籤 `equirectangular`，或 `spherical`和 `panorama`，或 `spherical` 和 `panoramic`. 另請參閱 [使用標籤](/help/sites-cloud/authoring/features/tags.md).
+* 已用关键字标记 `equirectangular`，或 `spherical`和 `panorama`，或 `spherical` 和 `panoramic`. 参见 [使用标记](/help/sites-cloud/authoring/features/tags.md).
 
-外觀比例和關鍵字條件都適用於資產詳細資訊頁面和 `Panoramic Media` wcm元件。
+纵横比和关键字条件都适用于资产详细信息页面和 `Panoramic Media` WCM组件。
 
-若要上傳資產以與全景影像檢視器搭配使用，請參閱 [上傳資產](/help/assets/manage-digital-assets.md#uploading-assets).
+要上传用于全景图像查看器的资产，请参阅 [上传资产](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -77,10 +77,10 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 -->
 
-## 預覽全景影像 {#previewing-panoramic-images}
+## 预览全景图像 {#previewing-panoramic-images}
 
-另請參閱 [預覽資產](/help/assets/dynamic-media/previewing-assets.md).
+参见 [预览资源](/help/assets/dynamic-media/previewing-assets.md).
 
-## 發佈全景影像 {#publishing-panoramic-images}
+## 发布全景图像 {#publishing-panoramic-images}
 
-另請參閱 [發佈資產](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+参见 [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

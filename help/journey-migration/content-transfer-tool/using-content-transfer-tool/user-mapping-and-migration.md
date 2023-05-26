@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 12%
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="用户映射"
->abstract="内容转移工具可帮助您将用户和组从现有 Adobe Experience Manager (AEM) 系统移动到 AEM as a Cloud Service。必须将现有用户映射到其 IMS ID，以免用户在云服务创作实例上重复。"
+>abstract="内容传输工具可帮助您将用户和组从现有Adobe Experience Manager (AEM)系统移动到AEMas a Cloud Service。 必须将现有用户映射到其 IMS ID，以免用户在云服务创作实例上重复。"
 
 >[!NOTE]
 >有关用户映射工具的早期版本，请参阅 [旧版文档](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).

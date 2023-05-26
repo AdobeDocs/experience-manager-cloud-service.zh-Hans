@@ -1,6 +1,6 @@
 ---
-title: 部署應用程式建置器應用程式
-description: 瞭解如何部署App Builder應用程式
+title: 部署App Builder应用程序
+description: 了解如何部署应用程序生成器应用程序。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# 部署應用程式建置器應用程式
+# 部署App Builder应用程序
 
-瞭解部署對App Builder有何意義，以及如何使用Adobe I/OCLI部署App Builder應用程式。
+了解部署对App Builder意味着什么，以及如何使用Adobe I/OCLI部署App Builder应用程序。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

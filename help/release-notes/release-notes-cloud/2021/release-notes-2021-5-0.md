@@ -14,7 +14,7 @@ ht-degree: 50%
 以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的一般发行说明。
 
 >[!NOTE]
->從這裡，您可以瀏覽至舊版的發行說明；例如，2020、2021等版本。
+>从此处，您可以导航到早期版本的发行说明；例如，2020版、2021版等的发行说明。
 
 >[!NOTE]
 >
@@ -22,54 +22,54 @@ ht-degree: 50%
 
 ## 发布日期 {#release-date}
 
-的發行日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.5.0是2021年5月27日。
-下列版本(2021.6.0)將於2021年6月28日發行。
+的发布日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.5.0是2021年5月27日。
+下一个版本(2021.6.0)将于2021年6月28日发布。
 
-## AEMas a Cloud Service基礎 {#foundation}
+## AEMas a Cloud Service基础 {#foundation}
 
-### AEMas a Cloud Service基礎的新增功能 {#what-is-new-foundation}
+### AEMas a Cloud Service基础的新增功能 {#what-is-new-foundation}
 
-* [發行前通道](/help/release-notes/prerelease.md)：在即將上線的功能投入生產之前，先預覽整個月！
+* [预发行渠道](/help/release-notes/prerelease.md)：在即将推出的功能正式发布前的一个月内进行预览！
 
-* [API淘汰](/help/release-notes/deprecated-apis.md)：提供適用於AEMas a Cloud Service的最新已棄用API清單。
+* [API弃用](/help/release-notes/deprecated-apis.md)：提供了适用于AEMas a Cloud Service的最新弃用API的列表。
 
-* [AEMas a Cloud ServiceSDK建置分析器Maven外掛程式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：將您的Maven專案更新至最新版本，其中包括已棄用的Java API檢查和其他改進。
+* [AEMas a Cloud ServiceSDK构建分析器Maven插件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：将您的maven项目更新到最新版本，其中包括弃用的Java API检查和其他改进。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* 您很快就會能夠驗證新版本的內容 [預覽階層](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以模擬最終的體驗外觀，如同您在發佈層級上一樣。 這可由AEM Sites Managed Publication精靈啟用，現在可讓您在發佈或預覽之間選擇發佈目的地。 接著，您就可以透過專用的URL存取預覽體驗。 在「預覽」上進行驗證後，內容可以照常從「作者」發佈到「發佈」。 在AEMas a Cloud Service環境中啟用預覽服務將在未來幾週逐步推出。
+* 您很快便能够验证新版本上的内容 [预览层](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 模拟最终体验外观，就像在发布层上一样。 这是通过AEM Sites托管发布向导启用的，现在允许您在发布或预览之间选择发布目标。 随后，可以通过专用URL访问预览体验。 在“预览”上进行验证后，内容可以像往常一样从“创作”发布到“发布”。 在接下来的几周内将逐步在AEMas a Cloud Service环境中启用“预览”服务。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* 您可以使用「連結共用」功能下載共用的資產。 此下載現在使用非同步服務，提供更快速且無中斷的下載，即使對於非常大型的下載亦然。 另請參閱 [下載資產](/help/assets/download-assets-from-aem.md#link-share-download).
+* 您可以使用链接共享功能下载共享的资产。 现在，此下载使用异步服务，可提供更快且无中断的下载，即使对于非常大的下载也是如此。 参见 [下载资产](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![下載收件匣](/help/assets/assets/download-inbox.png)
+   ![下载收件箱](/help/assets/assets/download-inbox.png)
 
-### 發行前管道中可用的新功能 {#what-is-new-assets-prerelease}
+### 预发行渠道中可用的新功能 {#what-is-new-assets-prerelease}
 
-* 中繼資料結構描述可直接套用至資料夾屬性。
+* 可以将元数据架构直接应用于文件夹属性。
 
-   ![從資料夾屬性新增中繼資料結構](/help/assets/assets/metadata-schema-folder-properties.png)
+   ![从文件夹属性添加元数据架构](/help/assets/assets/metadata-schema-folder-properties.png)
 
-* 資產大量擷取工具可讓您在大量擷取期間新增中繼資料。
+* 在批量提取期间，可使用资源批量提取器工具添加元数据。
 
-* 使用者體驗增強功能會顯示資料夾中存在的資產數量。 若資料夾中有超過1000個資產， [!DNL Assets] 顯示1000+。
+* 用户体验增强功能会显示文件夹中存在的资源数量。 对于文件夹中的1000多项资源， [!DNL Assets] 显示1000+。
 
-   ![介面中顯示的資料夾資產數量](/help/assets/assets/browse-folder-number-of-assets.png)
+   ![文件夹中的资源数显示在界面上](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### [!DNL Assets] 中修复的错误 {#assets-bugs-fixed}
 
-* 上傳超大型檔案會當機 [!DNL Experience Manager desktop app]. (CQ-4320942)
-* 當從資料夾中選取相同的集合時，以及當從搜尋結果中選取集合時，工具列選項會不同。 (CQ-4321406)
+* 上传超大文件会导致 [!DNL Experience Manager desktop app]. (CQ-4320942)
+* 在从文件夹中选择同一收藏集或从搜索结果中选择收藏集时，工具栏选项会有所不同。 (CQ-4321406)
 
-#### Dynamic Media的新功能 {#what-is-new-dm}
+#### Dynamic Media的新增功能 {#what-is-new-dm}
 
-* 智慧型影像DPR （裝置畫素比）和網路頻寬最佳化可讓您在具有高解析度顯示器且網路頻寬受限的裝置上，有效率地提供最佳品質影像。 如需詳細資訊，請參閱 [智慧型影像常見問題集](/help/assets/dynamic-media/imaging-faq.md) 和 [使用新一代影像格式WebP和AVIF進行影像最佳化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
-* 在Dynamic Media傳送中推出對新一代影像格式AVIF的支援（fmt URL修飾元）。
+* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和受限网络带宽的设备上高效地提供最佳质量的图像。 有关更多信息，请参阅 [智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md) 和 [使用下一代图像格式WebP和AVIF优化图像。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* 在Dynamic Media交付中引入了对下一代图像格式AVIF的支持（fmt URL修饰符）。
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -119,7 +119,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * “环境详情”页面中的“域名”表将通过分页的方式显示最多 250 个域名。
 
-* 「新增計畫」和「編輯計畫」工作流程中的「解決方案」索引標籤將顯示解決方案，即使該計畫只有一個解決方案可用。
+* 即使程序只有一个解决方案可用，“添加程序”和“编辑程序”工作流中的“解决方案”选项卡将显示解决方案。
 
 * 当构建未生成任何部署的内容包时构建步骤日志中的错误消息不明确。
 
@@ -141,42 +141,42 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 发布日期 {#release-date-ctt-latest}
 
-內容轉移工具v1.4.6的發行日期為2021年5月27日。
+内容传输工具版本1.4.6的发布日期为2021年5月27日。
 
 ### 新增功能 {#what-is-new-ctt-latest}
 
-* 如果使用者沒有Java可執行檔的執行許可權，則會將新的記錄陳述式新增至快速入門的錯誤記錄檔。
+* 如果用户没有Java可执行文件的执行权限，则会在快速入门的错误日志中添加新的日志记录语句。
 
-* 當使用者從執行擷取的CTT UI刪除移轉集時， `tmp` 將會刪除與該移轉集相關聯的資料夾以節省空間。
+* 当用户从执行提取的CTT UI删除迁移集时， `tmp` 将删除与该迁移集关联的文件夹以节省空间。
 
 ### 错误修复 {#bug-fixes-ctt-latest}
 
-* 刪除移轉集時，CTT UI中偶爾會顯示無用的錯誤訊息。 此问题已得到修复。
+* 删除迁移集时，CTT UI中偶尔会显示一条无用的错误消息。 此问题已得到修复。
 
-* 執行使用者對應時，如果使用者在目標與主機上擁有相同的電子郵件地址，但使用者名稱不同，則整個擷取作業將會失敗。 此问题已得到修复。在此衝突情況下，使用者/群組會被略過，並在記錄檔中記錄為衝突。
+* 在运行用户映射时，如果用户在目标和主机上拥有相同的电子邮件地址，但用户名不同，则整个摄取操作将失败。 此问题已得到修复。在这种冲突场景中，用户/组被跳过，并在日志文件中记录为冲突。
 
 ### 发布日期 {#release-date-ctt}
 
-內容轉移工具v1.4.0的發行日期為2021年5月11日。
+内容传输工具版本1.4.0的发布日期为2021年5月11日。
 
 ### 新增功能 {#what-is-new-ctt-may}
 
-* 此版本的「內容轉移工具」會為移轉至Cloud Service的資產建立文字轉譯。 需要文字轉譯才能支援對所擷取的資產進行全文搜尋。
-* 使用者可建立的內容轉移工具移轉集數量上限已從4個增加到10個。
+* 此版本的内容传输工具为迁移到Cloud Service的资源创建文本演绎版。 需要文本演绎版才能支持对所摄取的资产进行全文搜索。
+* 用户可以创建的内容传输工具迁移集的最大数量已从4个增加到10个。
 
 ### 错误修复 {#bug-fixes-ctt-may}
 
-* 與「內容轉移工具」UI中的自動重新整理功能相關的多項錯誤修正。
-* 內容轉移工具，搭配 `wipe=true` 導致目標上的計數器索引不正確。 此问题已得到修复。
+* 与内容传输工具UI中的自动刷新功能相关的多个错误修复。
+* 内容传输工具 `wipe=true` 导致目标上的计数器索引不正确。 此问题已得到修复。
 
-## Commerce附加元件 {#cloud-services-commerce}
+## Commerce加载项 {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 產品主控台屬性中的相關內容支援分頁
+* 产品控制台属性中的关联内容支持分页
 
 ### 错误修复 {#bug-fixes-commerce}
 
-* 資產縮圖未顯示在產品屬性的「資產」標籤中
+* 资产缩略图未显示在产品属性的“资产”选项卡中
 
-* 階層連結會在產品主控台中重設預覽資料
+* 痕迹导航在产品控制台中重置预览数据

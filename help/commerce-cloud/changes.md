@@ -1,6 +1,6 @@
 ---
-title: Commerce Integration Framework (CIF)附加元件的重大變更
-description: Commerce Integration Framework (CIF)與舊CIF版本相比有重大變更。
+title: 对Commerce Integration Framework (CIF)加载项的显着更改
+description: 与旧版CIF相比，Commerce Integration Framework (CIF)发生了显着更改。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
 source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
 workflow-type: tm+mt
@@ -9,58 +9,58 @@ ht-degree: 3%
 
 ---
 
-# Commerce Integration Framework (CIF)附加元件的重大變更{#notable-changes}
+# 对Commerce Integration Framework (CIF)加载项的显着更改{#notable-changes}
 
-Adobe Experience Manager as a Cloud Service提供許多管理AEM專案的新功能，並帶來許多可能性。 若要進一步瞭解這些功能，請瀏覽以下連結瞭解 [Experience Manageras a Cloud Service的變更](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service为管理AEM项目提供了许多新功能和可能性。 要了解有关这些功能的更多信息，请访问链接 [对Experience Manageras a Cloud Service的更改](/help/release-notes/aem-cloud-changes.md).
 
-本檔案著重說明Commerce Integration Framework (CIF)附加元件和舊版CIF之間的重要差異，後者稱為CIF Classic (Quickstart)和CIF Open-source。
+本文档重点介绍Commerce Integration Framework (CIF)加载项与旧CIF版本(称为CIF Classic (Quickstart)和CIF Open-source)之间的重要差异。
 
-## 安裝與更新
+## 安装和更新
 
-AEM CIF附加元件會透過Cloud Manager安裝。 安裝需要CIF點數，但沙箱除外，因為可以安裝CIF而不需要點數。 您會透過在AEM合約中布建CIF附加元件來自動接收積分。
+AEM CIF加载项通过Cloud Manager进行安装。 安装需要CIF点数，但沙盒除外，因为沙盒可以安装CIF而不需要点数。 通过预配AEM合同中的CIF加载项，可自动接收积分。
 
-此附加元件會隨著一般AEMas a Cloud Service更新而自動更新。
+加载项在常规AEMas a Cloud Service更新期间自动更新。
 
-**舊版CIF**
+**早期CIF版本**
 
-* CIF Classic：不需要安裝，CIF是Quickstart的一部分。 CIF更新是定期AEM或Service Pack更新的一部分
-* AEM內部部署的CIF開放原始碼：透過GitHub安裝。 更新是手動更新/維護工作的一部分。
-* AEM Adobe Managed Services的CIF開放原始碼：透過Adobe帳戶團隊安裝。 更新是手動更新/維護工作的一部分。
+* CIF Classic：无需安装，CIF是快速入门的一部分。 CIF更新是定期AEM或Service Pack更新的一部分
+* 内部部署的AEM的CIF开放源代码：通过GitHub安装。 更新是手动更新/维护工作的一部分。
+* CIF Open-source for AEM Adobe Managed Services：通过Adobe帐户团队进行安装。 更新是手动更新/维护工作的一部分。
 
-## 端點設定
+## 端点配置
 
-端點會透過Cloud Manager UI或其CLI進行設定和更新。
+端点通过Cloud Manager UI或其CLI进行配置和更新。
 
-**舊版CIF**
+**早期CIF版本**
 
-* CIF Classic：透過AEM中的OSGi設定
-* CIF開放原始碼：透過CIF設定瀏覽器
+* CIF Classic：通过AEM中的OSGi配置
+* CIF开源：通过CIF配置浏览器
 
-## 部署CIF Venia專案
+## 部署CIF Venia项目
 
-中可用的專案 [Cloud Manager Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) 並透過以下方式完成部署： [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
+中可用的项目 [Cloud Manager Git存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) 和部署，通过 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 
-**舊版CIF**
+**早期CIF版本**
 
-* CIF Classic：透過AEM套件安裝
-* cif開放原始碼：透過 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* CIF Classic：通过AEM包安装
+* CIF开源：通过 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
-## 產品目錄資料
+## 产品目录数据
 
-透過對支援必要GraphQL API的外部端點的即時呼叫，可隨選要求產品目錄資料。 這些API支援在任何指定日期存取即時或分段資料。 不需要復寫。
+通过对支持所需GraphQL API的外部端点的实时调用，可按需请求产品目录数据。 这些API支持在任何给定日期访问实时数据或暂存数据。 无需复制。
 
-**舊版CIF**
+**早期CIF版本**
 
-* CIF Classic：透過完整或差異產品匯入，即時和分階段產品資料匯入並儲存在AEM Author上的JCR中。 即時產品資料會複製到AEM Publish。
+* CIF Classic：通过完整或增量产品导入，在AEM Author上导入实时和暂存产品数据并将其保留在JCR中。 将实时产品数据复制到AEM Publish。
 
-## 具有AEM轉譯的產品目錄體驗
+## 具有AEM渲染的产品目录体验
 
-AEM會使用已指派給產品和類別的AEM目錄範本，即時呈現產品目錄體驗。 不需要復寫。
+AEM使用已分配给产品和类别的AEM目录模板动态呈现产品目录体验。 无需复制。
 
-**舊版CIF**
+**早期CIF版本**
 
-* CIF Classic： AEM作者會使用目錄Blueprint工具，為每個類別/產品建立AEM頁面。 這些頁面會復寫到AEM Publish。
+* CIF Classic：AEM作者使用目录Blueprint工具为每个类别/产品创建一个AEM页面。 这些页面将复制到AEM Publish。
 
 >[!NOTE]
 >
->如需如何搭配AEM Managed Service或AEM On-premise使用CIF的其他檔案，請參閱 [Commerce整合框架](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>有关如何将CIF与AEM Managed Service或AEM On-premise结合使用的其他文档，请参阅 [Commerce集成框架](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

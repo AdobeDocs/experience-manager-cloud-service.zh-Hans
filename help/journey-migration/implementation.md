@@ -1,6 +1,6 @@
 ---
 title: 实施阶段
-description: 確定您的程式碼和內容已準備好移轉至雲端
+description: 确保您的代码和内容已准备好迁移到云
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
 workflow-type: tm+mt
@@ -11,154 +11,154 @@ ht-degree: 9%
 
 # 实施阶段 {#implementation-phase}
 
-在歷程的實作階段，您將探索可用來讓程式碼和內容準備好移至AEMas a Cloud Service的工具。
+在历程的实施阶段，您将探索用于使代码和内容准备好移至AEMas a Cloud Service的工具。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在歷程的上一部分中，您已完成 [熟悉AEMas a Cloud Service中的變更](/help/journey-migration/getting-started.md)，並判斷您的部署是否已準備好透過移至雲端。 [整備階段](/help/journey-migration/readiness.md).
+在历程的前面部分，您已完成 [熟悉AEMas a Cloud Service中的更改](/help/journey-migration/getting-started.md)，并确定您的部署是否已准备好通过移动到云 [就绪阶段](/help/journey-migration/readiness.md).
 
-本文繼續就如何使用Adobe提供的工具以確保您的程式碼和內容準備好移至雲端提供建議。
+本文接下来提供了有关如何使用Adobe提供的工具以确保您的代码和内容可以随时移动到云的建议。
 
 ## 目标 {#objective}
 
-本檔案旨在：
+本文档旨在：
 
-* 向您介紹Cloud Manager，AEM持續整合和傳送架構，用於部署計畫碼到AEMas a Cloud Service
-* 透過內容轉移工具，讓您快速上手
-* 說明為了將您的程式碼現代化，以便用於AEMas a Cloud Service而必須使用的程式碼重構工具
+* 向您介绍Cloud Manager，AEM持续集成和交付框架，用于将代码部署到AEMas a Cloud Service
+* 使用内容传输工具快速掌握
+* 描述必须使用的代码重构工具，以使代码符合AEMas a Cloud Service的现代化要求
 
 ## 使用 Cloud Manager {#using-cloud-manager}
 
-開始之前，您必須熟悉Cloud Manager，因為這是將程式碼部署到AEMas a Cloud Service的唯一機制。
+在开始之前，您必须熟悉Cloud Manager，因为它是将代码部署到AEMas a Cloud Service的唯一机制。
 
 Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义或更新。
 
-您可以參閱以下資源以熟悉使用Cloud Manager：
+您可以通过参阅以下资源来熟悉使用Cloud Manager：
 
-* [入門歷程](/help/journey-onboarding/overview.md) 瞭解有關Experience Manageras a Cloud Service入門的自助資源。
+* [载入历程](/help/journey-onboarding/overview.md) 了解有关Experience Manageras a Cloud Service入门的自助资源。
 
 * [将 Git 与 Adobe Cloud Manager 集成](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)，了解使用 Single Git 存储库来部署代码的相关信息。
 
 * [Adobe Experience as a Cloud Service 配置](/help/security/ims-support.md#aem-configuration)，了解有关在 Admin Console 中管理产品和用户访问权限的信息。
 
-## 使用Adobe提供的工具，讓您的內容和程式碼雲端做好準備 {#use-tools-to-make-code-and-content-cloud-ready}
+## 使用Adobe提供的工具使您的内容和代码云就绪 {#use-tools-to-make-code-and-content-cloud-ready}
 
-轉換至Cloud Service的確切步驟取決於您所購買的系統，以及所遵循的軟體開發生命週期作法。
+向Cloud Service过渡的确切步骤取决于您所购买的系统以及所遵循的软件开发生命周期惯例。
 
-下圖顯示階段中涉及的主要步驟，其中涉及轉換程式碼和內容以用於AEMas a Cloud Service：
+下图显示了此阶段涉及的主要步骤，其中涉及将代码和内容转换为用于AEMas a Cloud Service：
 
 ![图像](/help/journey-migration/assets/exec-image1.png)
 
-我們將在以下章節中開始詳細說明您需要使用的工具，以便達成此目標。
+我们将在以下各章中开始详细介绍实现此目标所需的工具。
 
 ## 内容迁移 {#content-migration}
 
-若要將內容從您目前的AEM執行個體移轉至Cloud Service執行個體，您可以使用Adobe的「內容轉移工具」。
+要将内容从当前AEM实例迁移到Cloud Service实例，您可以使用Adobe的内容传输工具。
 
 利用此工具，您可以指定要从源 AEM 实例传输到 AEM 云服务实例的所需内容子集。
 
-內容移轉是多步驟的程式，需要規劃、追蹤以及不同團隊之間的共同作業。
+内容迁移是一个多步骤的过程，需要不同团队之间的规划、跟踪和协作。
 
-如需有關工具運作方式以及我們建議您使用方式的相關完整詳細資訊，請參閱 [內容轉移工具檔案](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
+有关工具的工作方式以及我们建议您如何使用的完整详细信息，请参阅 [内容传输工具文档](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
 ## 代码重构 {#code-refactor}
 
-### 為開發設定 {#set-up-for-development}
+### 为开发设置 {#set-up-for-development}
 
-現在應該開始重構現有功能，使其與Cloud Services相容。
+现在应该开始重构现有功能，使其与Cloud Services兼容。
 
-為了執行此操作，您需要檢視檔案，詳細說明您將需要開始重構程式碼的基本工具：
+为此，您需要查看文档，其中详细说明了开始重构代码所需的基本工具：
 
 
-* 在規劃期間，建議您列出必須重構才能與AEMas a Cloud Service相容的區域。 您可以檢閱 [開發准則](/help/implementing/developing/introduction/development-guidelines.md) 瞭解更多有關如何重構和最佳化程式碼以進行Cloud Service的詳細資訊。
-* 詳閱如何 [管理設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) 在AEMas a Cloud Service中。
-* 瞭解如何下載以下載來設定本機開發環境 [AEMAS A CLOUD SERVICESDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
-* 最後，請熟悉 [AEMas a Cloud ServiceJava API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
+* 在规划过程中，最好列出必须重构才能与AEMas a Cloud Service兼容的区域。 您可以查看 [开发准则](/help/implementing/developing/introduction/development-guidelines.md) 有关如何重构和优化代码以进行Cloud Service的更多详细信息。
+* 详细了解如何 [管理配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) 在AEMas a Cloud Service中。
+* 了解如何通过下载 [AEMAS A CLOUD SERVICESDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
+* 最后，请熟悉 [AEMas a Cloud ServiceJava API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
-此外，您也可以：
+此外，您还可以：
 
-* 觀看此影片以瞭解如何在本機安裝Dispatcher SDK：
+* 观看以下视频，了解如何本地安装Dispatcher SDK：
 
    >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
-* 觀看此影片以瞭解如何設定Dispatcher SDK：
+* 观看以下视频，了解如何配置Dispatcher SDK：
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-### 心態改變 {#a-change-in-mindset}
+### 思维方式的改变 {#a-change-in-mindset}
 
-在AEMas a Cloud Service中開發及執行程式碼時，必須要改變心態。 需要注意的是，代码必须是可复原的，尤其是在实例可能随时停止时。在云服务中运行的代码必须意识到它始终在群集中运行这一事实。这意味着始终会有多个实例在运行。
+在AEMas a Cloud Service中开发和运行代码需要改变思维方式。 需要注意的是，代码必须是可复原的，尤其是在实例可能随时停止时。在云服务中运行的代码必须意识到它始终在群集中运行这一事实。这意味着始终会有多个实例在运行。
 
-AEM Maven專案必須進行某些變更，才能與雲端相容。 AEMas a Cloud Service需要分隔 *內容* 和 *程式碼* 放入不同的套件，以部署至AEM：
+AEM Maven项目需要进行某些更改才能与云兼容。 AEMas a Cloud Service需要将 *内容* 和 *代码* 部署到不同的包中，以部署到AEM中：
 
-* `/apps` 和 `/libs` 會視為AEM的不可變區域，因為這些區域在AEM啟動後（即執行階段）無法變更。 這包括建立、更新或刪除作業。 运行时对不可改变区域所做的任何更改尝试都将失败。
+* `/apps` 和 `/libs` 视为AEM的不可变区域，因为AEM启动后（即在运行时），无法更改这些区域。 这包括创建、更新或删除操作。 运行时对不可改变区域所做的任何更改尝试都将失败。
 
-* 存放庫中的所有其他專案(例如， `/content` ， `/conf` ， `/var` ， `/home` ， `/etc` ， `/oak:index` ， `/system` ， `/tmp`)都是可變區域，這表示可在執行階段變更這些區域。
+* 存储库中的其他所有内容(例如， `/content` ， `/conf` ， `/var` ， `/home` ， `/etc` ， `/oak:index` ， `/system` ， `/tmp`)都是可变区域，这意味着可在运行时更改这些区域。
 
-您可以參閱 [建議的封裝結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md#recommended-package-structure) 說明檔案。
+您可以通过参阅 [推荐的包结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md#recommended-package-structure) 文档。
 
 
-### 雲端移轉工具 {#cloud-migration-tools}
+### 云迁移工具 {#cloud-migration-tools}
 
-Adobe提供數種工具，可協助您加速某些程式碼重構任務。 瞭解這些工具及其解決的問題將降低移轉的複雜性和時間。
+Adobe提供了多种工具来帮助加速某些代码重构任务。 了解这些工具及其解决的问题将降低迁移的复杂性和时间。
 
-* [資產工作流程移轉](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)，此工具可用來自動移轉資產處理工作流程
-* [Dispatcher轉換工具](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)，此工具會將您現有的Dispatcher設定轉換為可供AEMas a Cloud Service使用的格式。
-* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en)，此工具會將AEM多模式專案當作輸入，並將其轉換為AEMas a Cloud Service專案
-* [索引轉換器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en)，此工具會將索引轉換為與AEMas a Cloud Service相容的表單
-* [現代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)，這是一套公用程式，可用來將舊版AEM功能轉換為AEMas a Cloud Service的現代化且受支援的功能。
+* [资源工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)，用于自动迁移资产处理工作流的工具
+* [Dispatcher转换器](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)，该工具可将您现有的Dispatcher配置转换为可供AEMas a Cloud Service使用的格式。
+* [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en)，该工具将AEM多模式项目作为输入并将其转换为AEMas a Cloud Service项目
+* [索引转换器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en)，此工具可将索引转换为与AEMas a Cloud Service兼容的表单
+* [现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)，这是一套实用程序，可用于将旧版AEM功能转换为AEMas a Cloud Service的现代、受支持的功能。
 
-AEM as a Cloud Service設定本機開發環境後，請透過參閱 [檔案](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+AEM as a Cloud Service设置本地开发环境后，请查阅 [文档](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
-### 排程程式碼凍結 {#schedule-a-code-freeze}
+### 计划代码冻结 {#schedule-a-code-freeze}
 
-若要管理您正在作用中AEM上開發的程式碼，以及轉換過程中的程式碼重構任務，我們建議您排程程式碼凍結期，直到完成Maven專案的重新建構以與AEMas a Cloud Service相容為止。
+要管理活动AEM上正在进行的代码开发以及过渡历程中的代码重构任务，我们建议您安排一个代码冻结期，直到完成Maven项目重组以与AEMas a Cloud Service兼容为止。
 
-專案重新建構完成後，您可以根據此新結構繼續新的程式碼開發。 這可減少Cloud Manager管道在程式碼部署和測試期間的故障。
+项目重组完成后，您可以基于此新结构继续新的代码开发。 这减少了代码部署和测试期间的Cloud Manager管道故障。
 
 >[!NOTE]
->「內容轉移」和「程式碼重構」任務不必依序完成。 这些任务可以相互独立地完成。但是，需要使用正确的项目结构来确保内容在云服务环境中成功呈现。
+>内容传输和代码重构任务不必按顺序完成。 这些任务可以相互独立地完成。但是，需要使用正确的项目结构来确保内容在云服务环境中成功呈现。
 
 ## 代码部署和测试的最佳实践 {#best-practices}
 
-Cloud Manager管道支援執行針對預備環境執行的測試。
+Cloud Manager管道支持执行针对暂存环境运行的测试。
 
-遵循以下檔案中有關程式碼品質測試的最佳實務：
+遵循以下文档中有关代码质量测试的最佳实践：
 
-* [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)，說明測試指令碼編寫程式的檔案，並說明建議涵蓋範圍至少50%的概念。
-* [瞭解自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md) 旨在說明Cloud Manager根據AEM Engineering最佳作法建立並執行的自訂程式碼品質規則。
+* [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)，该文档描述了编写测试脚本的过程，并说明了建议覆盖率至少为50%的概念。
+* [了解自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md) 该文档旨在描述Cloud Manager根据AEM Engineering的最佳实践创建的自定义代码质量规则。
 
-## 準備上線 {#preparing-for-go-live}
+## 准备上线 {#preparing-for-go-live}
 
-準備來源系統以進行移轉涉及系統和AEM管理員層級的任務。 您可以先檢查「 」，確認內容存放庫是否處於維護良好的狀態， [修訂清除](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 和 [資料存放區垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) 任務狀態。 如果您執行AEM 6.3版（因為「內容轉移工具」與6.3版以後相容），建議執行離線壓縮，然後執行資料存放區垃圾收集。
+准备源系统以进行迁移涉及系统和AEM管理员级别任务。 您可以首先通过检查 [修订清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 和 [数据存储垃圾收集](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html) 任务状态。 如果您正在运行AEM版本6.3（因为内容传输工具与版本6.3及更高版本兼容），建议执行离线压缩，然后执行数据存储垃圾收集。
 
-[資料一致性檢查](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) 建議在所有AEM版本中使用，以確保內容存放庫處於良好狀態，可以起始移轉活動。
+[数据一致性检查](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) 建议在所有AEM版本中使用，以确保内容存储库处于可启动迁移活动的良好状态。
 
-需要系統管理員層級的存取權才能安裝和設定 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+需要系统管理员级别的访问权限才能安装和配置 [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
 
-此外，建議您檢閱任何未使用的資產、頁面、AEM專案、使用者和群組，以節省移轉時間。 請參閱 [內容存放庫健康狀況](#repository-health) 區段。
+此外，还建议您查看任何未使用的资产、页面、AEM项目、用户和组，以节省迁移时间。 请参阅 [内容存储库运行状况](#repository-health) 部分。
 
-### 內容存放庫健康狀況 {#repository-health}
+### 内容存储库运行状况 {#repository-health}
 
-存取一次 [生產原地複製](#proof-of-migration) 建立後，繼續檢查存放庫的健康狀態。 如上一節所述，目標是在開始移轉之前，清理並壓縮來源上的存放庫。 此步驟可能會節省大量時間，否則會在移轉開始時用於疑難排解問題。
+访问一次 [生产克隆](#proof-of-migration) 已建立，继续检查存储库的运行状况。 如上一节中所述，目标是在开始迁移之前清理并压缩源上的存储库。 此步骤可能会节省很多时间，否则在迁移开始后需要花费在问题故障排除上。
 
-| 行動專案 | 重要技巧 |
+| 操作项 | 主要技巧 |
 |---------|----------|
-| 使用者、群組和許可權 | 您需要瞭解成員資格的使用者數量、群組和複雜性。 尋找機會，以在移轉前清理來源中未使用的使用者和群組。 |
-| 資產處理不完整 | 嘗試在開始移轉前完成來源系統中的資產處理，以避免移轉後AEMas a Cloud Service的潛在問題。 |
-| 內容健康狀態 | 建議您在開始移轉前查詢並清除不良內容。 例如，尋找沒有原始轉譯或卡在工作流程處理中的資產或頁面。 另請參閱 [資產健康狀態](#asset-health). |
+| 用户、组和权限 | 您需要了解成员资格相关的用户数量、组和复杂性。 在迁移之前，寻找机会清理源中所有未使用的用户和组。 |
+| 未完成资产处理 | 尝试在开始迁移之前完成源系统中的资产处理，以避免迁移后AEMas a Cloud Service中潜在的问题。 |
+| 内容运行状况 | 建议在开始迁移之前查询并清除不良内容。 例如，查找没有原始演绎版或停滞在工作流处理中的资产或页面。 另请参阅 [资产运行状况](#asset-health). |
 
-## 正在收集資料 {#gathering-data}
+## 正在收集数据 {#gathering-data}
 
 >[!NOTE]
-> 此 [內容移轉策略和時間表](#content-strategy-and-timeline) 本節進一步詳細說明如何推斷收集的資料並建立移轉計畫。
+> 此 [内容迁移策略和时间表](#content-strategy-and-timeline) 部分进一步详细说明了如何推断收集的数据和创建迁移计划。
 
-收集資料可協助您規劃移轉活動和相關工作。 擷取和內嵌時間特別有用，因為資料點可以與移轉集的特定大小相關聯。 因此，這些資料點可外推以得出計畫：
+收集数据可以帮助您规划迁移活动和相关任务。 提取和摄取时间特别有用，因为数据点可以与迁移集的特定大小相关联。 因此，可以推断这些数据点来制定计划：
 
-* 花費的總時間 [摘取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-* 花費的總時間 [內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-* 追加花費的總時間 [摘取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
-* 追加花費的總時間 [內嵌](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
+* 花费的总时间 [提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+* 花费的总时间 [摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+* 充值所花费的总时间 [提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+* 充值所花费的总时间 [摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
 
 <!-- Alexandru: hiding this for now
@@ -167,93 +167,93 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 -->
 
-這些資料點也可協助您 [建立KPI](/help/journey-migration/readiness.md#establish-kpis) 和其他移轉相關工作。
+这些数据点也可以帮助您 [建立KPI](/help/journey-migration/readiness.md#establish-kpis) 和其他迁移相关的任务。
 
-### 移轉計畫 {#migration-plan}
+### 迁移计划 {#migration-plan}
 
-根據您收集的資料點（請參閱上文），您可以建立可整合至巨集專案計畫的移轉計畫。 此步驟可讓所有主要利害關係人針對移轉活動進行視覺化和規劃。
+根据您收集的数据点（见上文），您可以创建可集成到宏项目计划中的迁移计划。 此步骤将使所有关键利益相关者能够围绕迁移活动进行可视化和规划。
 
-下表說明典型的移轉計畫：
+下表说明了典型的迁移计划：
 
-| 移轉反複專案 | 开始日期 | 預估結束日期 | 依赖项 | 估計持續時間（以天為單位） | 其他明細/行動專案 |
+| 迁移迭代 | 开始日期 | 估计结束日期 | 依赖项 | 估计持续时间（以天为单位） | 附加详细信息/措施项 |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
 | PRDCLONE-PUBLISH-TOP-UP-CSSTAGE-AUTHOR |  |  |  |  |  |
 
-如上表所示，遵循特定命名格式來識別移轉反複專案很有幫助，例如： **PRDCLONE** 對於來源AEM環境， **AUTHOR/PUBLISH** 針對AEMas a Cloud Service環境， **CSSTAGE-AUTHOR** AEMas a Cloud Service執行個體，依此類推。
+如上表所示，遵循特定命名格式标识迁移迭代很有帮助，例如： **PRDCLONE** 对于源AEM环境， **创作/发布** AEMas a Cloud Service环境， **CSSTAGE-AUTHOR** AEMas a Cloud Service实例，等等。
 
-影響移轉計畫的一些重要細節：
+影响迁移计划的一些重要详细信息：
 
-**所需的擷取總數**
+**所需的提取总数**
 
-* 特定環境中的作者和發佈擷取會視為兩個平行擷取，因為它們彼此獨立。
-* 根據特定時段內存放庫成長情況追加擷取的次數。
+* 特定环境中的创作提取和发布提取被视为两个并行提取，因为它们彼此独立。
+* 基于特定时间段内存储库增长的增补提取次数。
 
-**所需的內嵌總數**
+**所需的引入总数**
 
-* 請務必將此專案擷取至計畫中，因為擷取的集合可內嵌至多個Cloud Service環境中。
-* 追加擷取次數。
-* 將內容從來源作者移轉至Cloud Service作者例項，以及從來源發佈移轉至Cloud Service發佈是避免將所有作者內容擷取到Cloud Service發佈的最佳做法。
+* 将此项目捕获到计划中很重要，因为提取的一组数据可以摄取到多个Cloud Service环境中。
+* 增补摄取的次数。
+* 将内容从源作者迁移到Cloud Service Author实例，以及从源发布迁移到Cloud Service发布是避免将所有作者内容摄取到Cloud Service发布的最佳实践。
 
-### 移轉追蹤器 {#migration-tracker}
+### 迁移跟踪器 {#migration-tracker}
 
-您可以使用移轉追蹤器來記錄初始和追加執行的時間。 這些資料點將幫助您在最終追加之前制定現實的內容凍結要求。
+您可以使用迁移跟踪器记下初始运行和增补运行的时间。 这些数据点将帮助您在最终充值之前制定现实的内容冻结要求。
 
-追蹤器也可協助您：
+该跟踪器还将帮助您：
 
-* 識別與供需規劃員之間需要調整計畫或上線時間表的任何偏差
-* 提供可用於所有必要通訊的真實狀態
-* 規劃初始或未來的追加移轉
+* 确定需要调整计划或上线时间表的计划员的任何偏差
+* 提供可用于所有必要通信的现实状态
+* 规划初始或未来的增补迁移
 
-下表說明功能移轉追蹤器：
+下表说明了功能迁移跟踪器：
 
-| 來源（環境/執行個體/URL） | 目的地（環境/執行個體/URL） | 移轉集名稱、型別（初始或追加） | 移轉集大小(MB) | 使用者對應（是/否） | 擷取持續時間（開始、結束、所用時間） | 擷取持續時間（開始、結束、花費時間） | 問題/解決方案/詳細資料 |
+| 源（环境/实例/URL） | 目标（环境/实例/URL） | 迁移集名称、类型（初始或增补） | 迁移集大小(MB) | 用户映射（是/否） | 提取持续时间（开始、结束、所用时间） | 摄取持续时间（开始、结束、所用时间） | 问题/解决方案/详细信息 |
 |---|---|---|---|---|---|---|---|
 |  |  |  |  |  |  |  |  |
 
-## 內容移轉策略和時間表 {#content-strategyand-timeline}
+## 内容迁移策略和时间表 {#content-strategyand-timeline}
 
-下節顯示可用於制定內容移轉策略和時間表的重要步驟和相關工作。
+以下部分显示了可用于制定内容迁移策略和时间线的重要步骤和相关任务。
 
 ![图像](/help/journey-migration/assets/content-migration2.png)
 
-### 彎管頭 {#fitment}
+### 设备 {#fitment}
 
-* 執行修訂清理、資料存放區垃圾收集和資料一致性檢查。 另請參閱 [準備上線](#preparing-for-go-live)
-* [收集統計資料](#gathering-data) 關於AEM來源存放庫：
-   * 區段存放區大小
-   * 索引存放區大小
-   * 頁數
-   * 資產數量
-   * 使用者和群組數目
-* 瞭解AEM來源上是否啟用下列功能(AEMas a Cloud Service也需要)：
-   * 智慧標籤
-   * 相似性搜尋
-   * 搜尋包含Word和PDF檔案中的文字
-* 收集Best Practice Analyzer [報告](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
-* 將匯入 [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
-   * 請檢閱自我分析建議，以確定AEMas a Cloud Service可以處理儲存需求。
-* 繼續移轉計畫之前，請先建立Adobe支援票證以取得任何說明。
+* 执行修订清理、数据存储垃圾收集和数据一致性检查。 另请参阅 [准备上线](#preparing-for-go-live)
+* [收集统计数据](#gathering-data) 关于AEM源资料库：
+   * 区段存储大小
+   * 索引存储大小
+   * 页数
+   * 资源数
+   * 用户和组的数量
+* 了解是否在AEM源上启用了以下功能(AEMas a Cloud Service中也要求这样做)：
+   * 智能标记
+   * 相似性搜索
+   * 搜索包含Word和PDF文档中的文本
+* 收集Best Practice Analyser [报告](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
+* 将导入到 [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
+   * 查看自我分析建议，以确保AEMas a Cloud Service能够处理存储需求。
+* 在继续迁移计划之前，请为任何说明创建Adobe支持工单。
 
-### 移轉證明 {#proof-of-migration}
+### 迁移证明 {#proof-of-migration}
 
-* 要求符合以下條件的生產複製：
-   * 位於相同的網路區域
-   * 將提供使用者和群組等生產內容
-   * 復製作者和發佈 — 若是叢集或發佈伺服器陣列，則各一個節點
-* 選擇要移轉的內容子集，以便：
-   * 它是所有可用內容型別的組合
-   * 包含所有使用者和群組
-* 包含25%的內容或最高1 TB的內容（以較少者為準）。
-* 至少執行一個完整和 [追加](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 從生產複製移轉至AEMas a Cloud Service非生產環境
-* 解決任何潛在問題，例如：
-   * AEM來源上的磁碟空間
-   * AEM來源和AEMas a Cloud Service之間的連線
-   * 任何 [內嵌相關限制](go-live.md#known-limitations).
-* 記錄以下專案所花的時間： [擷取和擷取](#gathering-data)：
-   * 瞭解每週新增多少內容
-   * 根據移轉證明所測量的時間推算出來，建立 [移轉計畫](#migration-plan).
+* 请求生产克隆，该克隆应：
+   * 在同一网络区域中
+   * 将提供用户和组等生产内容
+   * 克隆创作和发布 — 在群集或发布场中每个节点一个
+* 选择要迁移的内容子集，以便：
+   * 它是所有可用内容类型的组合
+   * 包含所有用户和组
+* 包括25%的内容或高达1 TB的内容（以较小者为准）。
+* 至少执行一个完整和 [增补](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 从生产克隆迁移到AEMas a Cloud Service非生产环境
+* 解决任何潜在问题，例如：
+   * AEM源上的磁盘空间
+   * AEM源与AEMas a Cloud Service之间的连接
+   * 任意 [摄取相关限制](go-live.md#known-limitations).
+* 记录所用时间 [提取和摄取](#gathering-data)：
+   * 了解每周添加了多少内容
+   * 根据迁移证明推算时间以创建 [迁移计划](#migration-plan).
 
 ## 后续内容 {#what-is-next}
 
-在您完全瞭解如何評估您的AEM安裝是否已準備好移至雲端後，當我們瞭解如何使用所需的工具讓安裝準備就緒時，您可以繼續前往 [上線階段](/help/journey-migration/go-live.md).
+在您完全了解如何评估您的AEM安装是否已准备好迁移到云后（在我们了解如何使用做好准备所需的工具时），您可以转到 [上线阶段](/help/journey-migration/go-live.md).

@@ -1,6 +1,6 @@
 ---
-title: 開發適用於AEMas a Cloud Service的AEM Commerce
-description: 瞭解如何使用AEM專案原型產生啟用AEM的商務專案。 瞭解如何使用AEMas a Cloud ServiceSDK建置專案並將其部署至本機開發環境。
+title: 开发AEM Commerce for AEMas a Cloud Service
+description: 了解如何使用AEM项目原型生成支持商务的AEM项目。 了解如何使用AEMas a Cloud ServiceSDK构建项目并将项目部署到本地开发环境。
 topics: Commerce, Development
 feature: Commerce Integration Framework
 version: Cloud Service
@@ -15,108 +15,108 @@ ht-degree: 10%
 
 ---
 
-# 開發適用於AEMas a Cloud Service的AEM Commerce {#develop}
+# 开发AEM Commerce for AEMas a Cloud Service {#develop}
 
-根據Commerce Integration Framework (CIF)為AEMas a Cloud Service開發AEM Commerce專案也遵循相同的規則和最佳實務，就像在AEMas a Cloud Service上的其他AEM專案一樣。 請先檢閱下列內容：
+基于Commerce Integration Framework (CIF)为AEMas a Cloud Service开发AEM Commerce项目也遵循与AEMas a Cloud Service上的其他AEM项目相同的规则和最佳实践。 请先查看以下内容：
 
 - [AEM 项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)
 - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
 - [AEM as a Cloud Service 开发准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
-## 使用AEMas a Cloud ServiceSDK進行本機開發 {#local}
+## 使用AEMas a Cloud ServiceSDK进行本地开发 {#local}
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-建議使用本機開發環境搭配CIF專案使用。 為AEMas a Cloud Service提供的CIF附加元件也可用於本機開發。 您可從以下網址下載： [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+建议使用本地开发环境来处理CIF项目。 为AEMas a Cloud Service提供的CIF加载项也可用于本地开发。 可从以下网址下载： [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
-CIF附加元件是以Sling功能封存的形式提供。 軟體發佈入口網站上的zip檔案包含兩個Sling功能封存檔案，一個用於AEM作者，一個用於AEM發佈執行個體。
+CIF加载项作为Sling功能存档提供。 软件分发门户上提供的zip文件包括两个Sling功能存档文件，一个用于AEM创作，一个用于AEM发布实例。
 
-**不熟悉AEMas a Cloud Service？** 簽出 [有關使用AEMas a Cloud ServiceSDK設定本機開發環境的更詳細指南](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hans).
+**不熟悉AEMas a Cloud Service？** 签出 [有关使用AEMas a Cloud ServiceSDK设置本地开发环境的更详细指南](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hans).
 
-### 必要軟體
+### 所需的软件
 
-下列專案應在本機安裝：
+以下内容应安装在本地：
 
 - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) （3.3.9或更新版本）
+- [Apache Maven](https://maven.apache.org/) （3.3.9或更高版本）
 - [Node.js v10+](https://nodejs.org/en/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-### 存取CIF附加元件
+### 访问CIF加载项
 
-CIF附加元件可從以下網址下載為zip檔： [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip檔案包含CIF附加元件，做為 **Sling功能封存**，它不是AEM套件。 請注意，存取SDK清單的許可權僅限於具有AEMas a Cloud Service授權的使用者。
+CIF加载项可以从 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). zip文件包含CIF加载项，如 **Sling功能存档**，它不是AEM包。 请注意，对SDK列表的访问仅限于具有AEMas a Cloud Service许可证的用户。
 
 >[!TIP]
 >
->請務必使用最新的CIF附加元件版本。
+>确保始终使用最新的CIF加载项版本。
 
-### 本機設定
+### 本地设置
 
-對於使用AEMas a Cloud ServiceSDK的本機CIF附加元件開發，請執行以下步驟：
+对于使用AEMas a Cloud ServiceSDK进行本地CIF加载项开发，请执行以下步骤：
 
-1. 取得最新的AEMas a Cloud ServiceSDK
-1. 解壓縮AEM .jar以建立 `crx-quickstart` 資料夾，執行：
+1. 获取最新的AEMas a Cloud ServiceSDK
+1. 解压缩AEM .jar以创建 `crx-quickstart` 文件夹，运行：
 
    ```bash
    java -jar <jar name> -unpack
    ```
 
-1. 建立 `crx-quickstart/install` 資料夾
-1. 將CIF附加元件的正確Sling功能封存檔案複製到 `crx-quickstart/install` 資料夾。
+1. 创建 `crx-quickstart/install` 文件夹
+1. 将CIF加载项的正确Sling功能存档文件复制到 `crx-quickstart/install` 文件夹。
 
-   CIF附加元件zip檔案包含兩個Sling功能封存 `.far` 檔案。 請務必根據您計畫執行本機AEMas a Cloud ServiceSDK的方式，對AEM Author或AEM Publish使用正確的套裝。
+   CIF加载项zip文件包含两个Sling功能存档 `.far` 文件。 确保为AEM创作或AEM发布使用正确的编辑器，具体取决于您计划如何运行本地AEMas a Cloud ServiceSDK。
 
-1. 建立本機作業系統環境變數，命名為 `COMMERCE_ENDPOINT` 保留Adobe Commerce GraphQL端點。
+1. 创建名为的本地操作系统环境变量 `COMMERCE_ENDPOINT` 持有Adobe Commerce GraphQL端点。
 
-   範例Mac OSX：
+   示例Mac OSX：
 
    ```bash
    export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
-   範例Windows：
+   示例窗口：
 
    ```bash
    set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
-   AEM使用此變數來連線至您的商務系統。 此外，CIF附加元件包含本機反向Proxy，讓Commerce GraphQL端點可在本機使用。 CIF編寫工具（產品主控台和選擇器）和執行直接GraphQL呼叫的CIF使用者端元件會使用此專案。
+   AEM使用此变量连接到您的商务系统。 此外，CIF加载项包括一个本地反向代理，以使Commerce GraphQL端点可在本地使用。 CIF创作工具（产品控制台和选取器）和执行直接GraphQL调用的CIF客户端组件会使用此功能。
 
-   此外，此變數必須針對AEMas a Cloud Service環境進行設定。 如需變數的詳細資訊，請參閱 [為AEMas a Cloud Service設定OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   此外，还必须为AEMas a Cloud Service环境设置此变量。 有关变量的更多信息，请参阅 [为AEMas a Cloud Service配置OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. （選用）若要啟用分階段目錄功能，您必須為Adobe Commerce執行個體建立整合權杖。 請依照下列步驟操作： [快速入門](./getting-started.md#staging) 以建立Token。
+1. （可选）要启用暂存目录功能，必须为Adobe Commerce实例创建集成令牌。 请按照 [快速入门](./getting-started.md#staging) 以创建令牌。
 
-   以名稱設定OSGi密碼 `COMMERCE_AUTH_HEADER` 變更為下列值：
+   使用名称设置OSGi密码 `COMMERCE_AUTH_HEADER` 到以下值：
 
    ```xml
    Authorization: Bearer <Access Token>
    ```
 
-   如需秘密的詳細資訊，請參閱 [為AEMas a Cloud Service設定OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   有关密码的详细信息，请参阅 [为AEMas a Cloud Service配置OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. 啟動AEMas a Cloud ServiceSDK
+1. 启动AEMas a Cloud ServiceSDK
 
 >[!NOTE]
 >
->請務必在步驟5中設定環境變數的相同終端機視窗中啟動AEMas a Cloud ServiceSDK。 如果您在單獨的終端機視窗中啟動它，或是連按兩下.jar檔案，請確定環境變數是可見的。
+>确保在步骤5中设置的同一终端窗口中启动AEMas a Cloud ServiceSDK。 如果在单独的终端窗口中或通过双击.jar文件启动它，请确保环境变量可见。
 
-透過OSGI主控台驗證設定： `http://localhost:4502/system/console/osgi-installer`. 此清單應包含功能模型檔案中定義的CIF附加元件相關組合、內容套件和OSGI設定。
+通过OSGI控制台验证设置： `http://localhost:4502/system/console/osgi-installer`. 该列表应包括功能模型文件中定义的CIF附加组件相关包、内容包和OSGI配置。
 
 ## 项目设置 {#project}
 
-有兩種方法可針對AEMas a Cloud Service啟動您的CIF專案。
+有两种方法可以为AEMas a Cloud Service引导CIF项目。
 
-### 使用AEM專案原型
+### 使用AEM项目原型
 
-此 [AEM專案原型](https://github.com/adobe/aem-project-archetype) 是啟動預先設定的專案以開始使用CIF的主要工具。 CIF核心元件和所有的必要設定都可包含在產生的專案中，並提供一個額外的選項。
+此 [AEM项目原型](https://github.com/adobe/aem-project-archetype) 是引导预配置项目以开始使用CIF的主要工具。 CIF核心组件和所有必需的配置都可以通过一个附加选项包含在生成的项目中。
 
 >[!TIP]
 >
->一律使用最新版本的 [AEM專案原型](https://github.com/adobe/aem-project-archetype/releases) 以產生專案。
+>始终使用最新版本的 [AEM项目原型](https://github.com/adobe/aem-project-archetype/releases) 以生成项目。
 
-請參閱AEM專案原型 [使用指示](https://github.com/adobe/aem-project-archetype#usage) 如何產生AEM專案。 若要將CIF納入專案，請使用 `includeCommerce` 選項。
+请参阅AEM项目原型 [使用说明](https://github.com/adobe/aem-project-archetype#usage) 有关如何生成AEM项目。 要将CIF包含在项目中，请使用 `includeCommerce` 选项。
 
 例如：
 
@@ -131,7 +131,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
  -D includeCommerce=y
 ```
 
-CIF核心元件可透過包含提供的 `all` 套件或個別使用CIF內容套件和相關OSGI套件組合。 若要手動將CIF核心元件新增至專案，請使用下列相依性：
+CIF核心组件可通过包含提供的 `all` 使用CIF内容包和相关OSGi捆绑包进行打包或单独使用。 要手动将CIF核心组件添加到项目，请使用以下依赖项：
 
 ```java
 <dependency>
@@ -163,18 +163,18 @@ CIF核心元件可透過包含提供的 `all` 套件或個別使用CIF內容套�
 </dependency>
 ```
 
-### 使用AEM Venia參考存放區
+### 使用AEM Venia Reference Store
 
-啟動CIF專案的第二個選項是複製並使用 [AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia). AEM Venia Reference Store是範例參考店面應用程式，可示範AEM的CIF核心元件的使用方式。 其目的是作為一組最佳實務範例，以及開發您自己的功能的潛在起點。
+启动CIF项目的第二个选项是克隆并使用 [AEM Venia引用存储](https://github.com/adobe/aem-cif-guides-venia). AEM Venia Reference Store是一个示例引用店面应用程序，用于演示如何将CIF核心组件用于AEM。 它旨在作为一组最佳实践示例以及开发您自己的功能的潜在起点。
 
-若要開始使用Venia Reference Store，只要複製Git存放庫並開始根據您的需求自訂專案即可。
+要开始使用Venia引用存储，只需克隆Git存储库并开始根据您的需求自定义项目即可。
 
 >[!NOTE]
 >
->Venia Reference Store專案包含AEMas a Cloud Service和AEM 6.5的兩個組建設定檔。檢查 [專案readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) 以瞭解其使用方式。
+>Venia Reference Store项目包含AEMas a Cloud Service和AEM 6.5的两个生成配置文件。查看 [项目readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) 了解它们的使用方式。
 
 ## 其他资源
 
 - [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)
-- [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+- [AEM Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
+- [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)

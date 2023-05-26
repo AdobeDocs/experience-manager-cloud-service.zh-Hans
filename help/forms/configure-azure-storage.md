@@ -1,6 +1,6 @@
 ---
-title: 如何設定Azure儲存體？
-description: 瞭解如何將表單與Azure儲存伺服器整合。
+title: 如何配置Azure存储？
+description: 了解如何将表单与Azure Storage Server集成。
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
@@ -11,42 +11,42 @@ ht-degree: 1%
 
 # 配置[!DNL Azure]存储 {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms] 資料整合](data-integration.md) 提供 [!DNL Azure] 整合表單的儲存設定 [!DNL Azure] 儲存服務。 表單資料模型可用來建立最適化Forms，並與互動 [!DNL Azure] 伺服器以啟用業務工作流程。 例如：
+[[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供 [!DNL Azure] 用于集成表单的存储配置 [!DNL Azure] 存储服务。 表单数据模型可用于创建与交互的自适应Forms [!DNL Azure] 服务器启用业务工作流。 例如：
 
-* 將資料寫入 [!DNL Azure] 於最適化表單提交時。
-* 將資料寫入 [!DNL Azure] 透過「表單資料模型」中定義的自訂實體傳遞，反之亦然。
-* 查詢 [!DNL Azure] 伺服器以取得資料並預先填入Adaptive Forms。
-* 讀取資料來源 [!DNL Azure] 伺服器。
+* 将数据写入 [!DNL Azure] 在提交自适应表单时。
+* 将数据写入 [!DNL Azure] 通过表单数据模型中定义的自定义实体，反之亦然。
+* 查询 [!DNL Azure] 数据服务器并预填充Adaptive Forms。
+* 从以下位置读取数据 [!DNL Azure] 服务器。
 
-## 建立 [!DNL Azure] 儲存設定 {#create-azure-storage-configuration}
+## 创建 [!DNL Azure] 存储配置 {#create-azure-storage-configuration}
 
-執行這些步驟之前，請確定您已 [!DNL Azure] 存放裝置帳戶與存取金鑰，用於授權存取 [!DNL Azure] 儲存體帳戶。
+在执行这些步骤之前，请确保您拥有 [!DNL Azure] 存储帐户和访问密钥，用于授权访问 [!DNL Azure] 存储帐户。
 
-1. 導覽至 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure儲存體]**.
-1. 選取資料夾以建立設定並點選 **[!UICONTROL 建立]**.
-1. 在中指定設定的標題 **[!UICONTROL 標題]** 欄位。
-1. 指定 [!DNL Azure] 中的儲存體帳戶 **[!UICONTROL Azure儲存體帳戶]** 欄位。
-1. 指定用來存取Azure儲存體帳戶的金鑰 **[!UICONTROL Azure存取金鑰]** 欄位並點選 **[!UICONTROL 儲存]**.
+1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Azure存储]**.
+1. 选择一个文件夹以创建配置，然后点按 **[!UICONTROL 创建]**.
+1. 在中指定配置的标题 **[!UICONTROL 标题]** 字段。
+1. 指定 [!DNL Azure] 中的存储帐户 **[!UICONTROL Azure存储帐户]** 字段。
+1. 指定用于访问Azure存储帐户的密钥 **[!UICONTROL Azure访问密钥]** 字段并点按 **[!UICONTROL 保存]**.
 
 ## 创建表单数据模型 {#create-azure-form-data-model}
 
-建立之後 [!DNL Azure] 儲存設定，您可以 [建立表單資料模型](create-form-data-models.md). 指定包含 [!DNL Azure] 中的設定 **[!UICONTROL 資料來源組態]** 建立表單資料模型時的欄位。 然後，您可以從存在於指定資料夾名稱中的設定清單中選取設定。
+创建之后 [!DNL Azure] 存储配置，您可以 [创建表单数据模型](create-form-data-models.md). 指定包含 [!DNL Azure] 中的配置 **[!UICONTROL 数据源配置]** 创建表单数据模型时的字段。 然后，您可以从指定文件夹名称中存在的配置列表中选择配置。
 
-### 新增 [!DNL Azure] 表單資料模型的服務 {#add-azure-services}
+### 添加 [!DNL Azure] 表单数据模型的服务 {#add-azure-services}
 
-建立表單資料模型和資料模型物件後，您可以新增 [!DNL Azure] 表單資料模型的服務。
+创建表单数据模型和数据模型对象后，您可以添加 [!DNL Azure] 表单数据模型的服务。
 
-若要新增 [!DNL Azure] 服務：
+添加 [!DNL Azure] 服务：
 
-1. 在「編輯」模式中，從 **[!UICONTROL 服務]** 區段並點選 **[!UICONTROL 新增選取專案]**. 選取的服務會顯示在 **[!UICONTROL 服務]** 表單資料模型的索引標籤。
+1. 在“编辑”模式下，从 **[!UICONTROL 服务]** 部分并点按 **[!UICONTROL 添加选定项]**. 选定的服务将显示在 **[!UICONTROL 服务]** 表单数据模型的选项卡。
 
-   ![新增選取的服務](assets/select-services.png)
+   ![添加选定的服务](assets/select-services.png)
 
-1. 在 **[!UICONTROL 服務]** 索引標籤中，選取服務並 **[!UICONTROL 編輯屬性]**. 根據服務，定義服務的輸入或輸出模型物件。
+1. 在 **[!UICONTROL 服务]** 选项卡，选择服务并 **[!UICONTROL 编辑属性]**. 根据服务，为服务定义输入或输出模型对象。
 
-1. 點選 **[!UICONTROL 儲存]** 以儲存表單資料模型。
+1. 点按 **[!UICONTROL 保存]** 以保存表单数据模型。
 
-   下表說明可用的 [!DNL Azure] 服務：
+   下表描述了可用的组件 [!DNL Azure] 服务：
 
    <table>
     <tbody>
@@ -55,46 +55,46 @@ ht-degree: 1%
       <th><strong>描述</strong></th>
      </tr>
      <tr>
-      <td>從Azure取得Blob</td>
-      <td>使用ID或名稱擷取在Azure儲存空間中儲存為Blob的資料</td>
+      <td>从Azure获取Blob</td>
+      <td>使用ID或名称检索作为Azure存储中的Blob存储的数据</td>
      </tr>
      <tr>
-      <td>從Azure取得具有二進位檔URL的Blob</td>
-      <td>使用ID或名稱，針對Azure儲存體中的二進位檔案，擷取以URL儲存為Blob的資料</td>
+      <td>从Azure获取具有二进制文件URL的Blob</td>
+      <td>使用ID或名称检索Azure存储中二进制文件的URL存储为Blob的数据</td>
      </tr>
      <tr>
-      <td>在Azure中儲存Blob</td>
-      <td>使用Blob ID在Azure儲存空間中儲存資料</td>
+      <td>在Azure中保存Blob</td>
+      <td>使用Blob ID将数据保存在Azure存储中</td>
      </tr>
      <tr>
       <td>在Azure中更新Blob</td>
-      <td>使用Blob ID更新Azure儲存體中的資料</td>
+      <td>使用Blob ID更新Azure存储中的数据</td>
      </tr>
      <tr>
-      <td>從Azure擷取Blob ID清單</td>
-      <td>根據輸入請求中定義的數字從Azure擷取Blob ID清單。</td>
+      <td>从Azure检索Blob ID列表</td>
+      <td>根据输入请求中定义的编号从Azure检索Blob ID列表。</td>
      </tr>
      <tr>
-      <td>從Azure擷取Blob的SAS URL</td>
-      <td>根據輸入請求中的Blob ID從Azure擷取Blob的SAS URL。</td>
+      <td>从Azure检索Blob的SAS URL</td>
+      <td>根据输入请求中的Blob ID从Azure检索Blob的SAS URL。</td>
      </tr>
      <tr>
-      <td>從Azure刪除Blob</td>
-      <td>使用Blob ID從Azure儲存體刪除資料</td>
+      <td>从Azure中删除Blob</td>
+      <td>使用Blob ID从Azure存储中删除数据</td>
      </tr>
     </tbody>
    </table>
 
-### 將資料模型物件屬性定義為搜尋索引鍵 {#define-data-model-object-as-metadata}
+### 将数据模型对象属性定义为搜索键 {#define-data-model-object-as-metadata}
 
-若要將資料模型物件屬性定義為搜尋索引鍵，請執行下列動作：
+要将数据模型对象属性定义为搜索键，请执行以下操作：
 
-1. 在 **[!UICONTROL 模型]** 索引標籤中，選取資料模型物件屬性並點選 **[!UICONTROL 編輯屬性]**.
-1. 切換 **[!UICONTROL 搜尋索引鍵]** 切換選項至「開啟」狀態。 此選項僅適用於主要資料型別。
-1. 點選 **[!UICONTROL 完成]** 然後點選 **[!UICONTROL 儲存]** 以儲存表單資料模型。
+1. 在 **[!UICONTROL 模型]** 选项卡，选择数据模型对象属性并点按 **[!UICONTROL 编辑属性]**.
+1. 切换 **[!UICONTROL 搜索键]** 将选项切换到“开”状态。 此选项仅适用于主要数据类型。
+1. 点按 **[!UICONTROL 完成]** 然后点按 **[!UICONTROL 保存]** 以保存表单数据模型。
 
-將資料模型物件屬性定義為搜尋索引鍵後，雜湊值會儲存在Azure索引標籤中，而Base64編碼值會儲存在Azure中繼資料中。
+将数据模型对象属性定义为搜索键后，哈希值存储在Azure索引标记中，Base64编码值存储在Azure元数据中。
 
 >[!NOTE]
 >
->每個Azure實體僅允許10個搜尋索引鍵，因為Azure僅允許每個Blob有10個標籤，而且標籤為搜尋索引鍵的屬性值會在雜湊後儲存在Azure索引標籤中。
+>每个Azure实体仅允许10个搜索键，因为Azure仅允许每个Blob有10个标记，并且标记为搜索键的属性值在经过哈希处理后存储在Azure索引标记中。

@@ -1,6 +1,6 @@
 ---
 title: Flash 查看器生命周期终止通知
-description: 自2017年1月31日起，對Flash檢視器平台的支援將正式終止服務。
+description: 自2017年1月31日起，对Flash查看器平台的支持将正式终止服务。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
@@ -13,6 +13,6 @@ ht-degree: 15%
 
 # Flash 查看器生命周期终止 {#flash-viewers-end-of-life-notice}
 
-自2017年1月31日起，對Flash檢視器平台的支援將正式終止服務。
+自2017年1月31日起，对Flash查看器平台的支持将正式终止服务。
 
-請參閱 [Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) 以取得最新支援的檢視器。
+请参阅 [Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) 适用于最新支持的查看器。

@@ -1,6 +1,6 @@
 ---
-title: 在Cloud Manager中將Screens附加元件新增到現有計畫
-description: 本頁面說明如何在Cloud Manager for Screensas a Cloud Service中將Screens附加元件新增到現有程式。
+title: 在Cloud Manager中将Screens加载项添加到现有程序
+description: 本页介绍如何在Cloud Manager for Screensas a Cloud Service中将Screens加载项添加到现有程序。
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
@@ -9,39 +9,39 @@ ht-degree: 5%
 
 ---
 
-# 在Cloud Manager中將Screens附加元件新增到現有計畫 {#adding-screens-program}
+# 在Cloud Manager中将Screens加载项添加到现有程序 {#adding-screens-program}
 
-本節說明如何將Screens作為附加元件新增到Cloud Manager中的現有計畫。
+本节介绍如何将Screens作为加载项添加到Cloud Manager中的现有程序。
 
 >[!NOTE]
->請參閱 [瞭解方案和方案型別](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) 以進一步瞭解Cloud Manager計畫。
+>请参阅 [了解程序和程序类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) 了解有关Cloud Manager程序的更多信息。
 
 ## 目标 {#objective}
 
-以下步驟將允許您瞭解如何將Screens附加元件新增到Cloud Manager中的現有程式。
+通过执行以下步骤，您将了解如何将Screens加载项添加到Cloud Manager中的现有程序。
 
-## 在Cloud Manager中將Screens附加元件新增到現有計畫的步驟 {#edit-programs-screens-cloud}
+## 在Cloud Manager中将Screens加载项添加到现有程序的步骤 {#edit-programs-screens-cloud}
 
-請依照下列步驟，將Screens作為附加元件新增至現有程式：
+按照以下步骤将Screens作为加载项添加到现有程序：
 
-1. 導覽至 [Cloud Manager](https://my.cloudmanager.adobe.com/).
+1. 导航到 [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >請參閱 [Cloud Manager簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html？lang=en) 以瞭解Cloud Manager。
+   >请参阅 [Cloud Manager简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html？lang=en) 以了解Cloud Manager。
 
-1. 導覽至您的專案，然後按一下 **編輯計畫** Cloud Manager的選項 **概觀** 頁面。
+1. 导航到您的项目并单击 **编辑项目** Cloud Manager的选项 **概述** 页面。
 
    ![图像](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
-   >此 **編輯計畫** 頁面會顯示兩個標籤 **一般** 和 **解決方案和附加元件**.
+   >此 **编辑项目群** 页面显示两个选项卡 **常规** 和 **解决方案和加载项**.
 
-1. 此 **解決方案和附加元件** 索引標籤會顯示選項，例如Sites、Assets和Screens。 選取 **Screens** 附加元件選項，如下圖所示。
+1. 此 **解决方案和加载项** 选项卡显示选项，例如“站点”、“资产”和“屏幕”。 选择 **Screens** 插件选项，如下图所示。
 
    ![图像](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
-1. 按一下 **更新**，在您選取選項後。
+1. 单击 **更新**，选择选项后。
 
 ## 后续内容 {#whats-next}
 
-在您瞭解如何將Screens作為附加元件新增到現有Cloud Manager計畫，並在Cloud Manager的計畫和產品下看到您的計畫後，您現在已準備好進入上線流程的下一步，即 [在Cloud Manager中為您的專案建立分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+一旦您了解了如何将Screens作为加载项添加到现有Cloud Manager程序，并在Cloud Manager的程序和产品下看到您的程序，您现在已准备好进入新用户引导过程中的下一步，即， [在Cloud Manager中为项目创建分支](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

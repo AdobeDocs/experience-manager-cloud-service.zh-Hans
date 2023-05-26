@@ -55,7 +55,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 ### 什么是内容请求？ {#what-is-a-content-request}
 
-內容請求是進入AEM Sites或任何客戶提供的快取系統（例如內容傳遞網路）的請求，以HTML格式作為頁面檢視或JSON格式作為API呼叫傳遞內容或資料。
+内容请求是进入AEM Sites或任何客户提供的缓存系统（如内容交付网络）的请求，以HTML格式作为页面视图或JSON格式作为API调用交付内容或数据。
 
 每个页面视图或每五个 API 调用计算一个内容请求，在第一个接收内容请求的缓存系统入口测量。 内容请求仅按生产环境计算。
 
@@ -63,7 +63,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 ### Adobe Experience Manager 如何衡量内容请求？ {#how-are-content-requests-measured}
 
-內容請求在AEMas a Cloud Service的邊緣伺服器上受到追蹤。 源站流量不计入内容请求。 AEMas a Cloud Service內建的CDN會追蹤有效的HTML和JSON請求。
+内容请求在AEMas a Cloud Service的边缘服务器上进行跟踪。 源站流量不计入内容请求。 AEMas a Cloud Service中内置的CDN可跟踪有效的HTML和JSON请求。
 
 AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷新其搜索索引或服务的知名服务。
 
@@ -83,10 +83,10 @@ AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷�
 | 流量拦截器 | 在浏览器中使用跟踪拦截器可能会选择不跟踪某些请求。 |
 | 防火墙 | 防火墙可能会阻止分析跟踪。这在公司防火墙中更为常见。 |
 
-### 如果我想進一步瞭解我的內容請求量，該怎麼辦？ {#current-request-volumes}
+### 如果我想了解有关我的内容请求量的更多信息，该怎么办？ {#current-request-volumes}
 
-如果您想進一步瞭解授權儀表板中顯示的內容請求量，您的Adobe團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。 請聯絡您的Adobe團隊或Adobe客戶服務，以請求最佳使用報告。
+如果您想进一步了解许可证仪表板中显示的内容请求量，您的Adobe团队可以提供一个报表，其中显示内容请求的主要数量驱动因素。 请联系您的Adobe团队或Adobe客户关怀团队，以索取最佳使用报告。
 
 ### 如果我使用自己的 CDN 怎么办？ {#using-own-cdn}
 
-授權儀表板只會顯示Cloud ServiceCDN追蹤的資料。  如果您選擇使用自己的CDN (BYOCDN)，您將按照合約中的規定每年向Adobe報告您的內容請求量。
+许可证仪表板将仅显示Cloud ServiceCDN跟踪的数据。  如果您选择使用自己的CDN (BYOCDN)，您将按照合同中的规定每年向Adobe报告您的内容请求量。

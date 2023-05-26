@@ -1,6 +1,6 @@
 ---
-title: 管理產品目錄頁面和範本
-description: 瞭解如何管理產品目錄頁面和範本
+title: 管理产品目录页面和模板
+description: 了解如何管理产品目录页面和模板
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,109 +9,109 @@ ht-degree: 1%
 
 ---
 
-# 管理產品目錄頁面和範本 {#product-catalog}
+# 管理产品目录页面和模板 {#product-catalog}
 
-瞭解如何管理產品目錄頁面和範本。
+了解如何管理产品目录页面和模板。
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM Content and Commerce編寫歷程的上一個檔案中， [AEM CIF製作基本概念快速入門](getting-started.md)，您已學習CIF編寫的基本知識。
+在AEM Content and Commerce创作历程的上一个文档中， [AEM CIF创作基础知识快速入门](getting-started.md)，您已学习CIF创作的基础知识。
 
-本文基於這些基礎之上。
+本文基于这些基础之上。
 
 ## 目标 {#objective}
 
-本檔案可協助您瞭解如何管理產品目錄頁面和範本。 阅读本文档后，您应：
+本文档可帮助您了解如何管理产品目录页面和模板。 阅读本文档后，您应：
 
-* 瞭解目錄範本的概念
-* 一般範本的運作方式
-* 已建立個別範本
+* 了解目录模板的概念
+* 通用模板的工作原理
+* 已创建单个模板
 
 ## 基本概念 {#basic-concept}
 
-Venia storefront提供典型的產品目錄體驗，包括導覽、登陸、類別(PLP)和產品詳細資料頁面(PDP)。
+Venia storefront提供典型的产品目录体验，包括导航、登陆、类别(PLP)和产品详细信息页面(PDP)。
 
-目錄頁面是使用AEM CIF目錄範本及即時產品資料來動態建置，並會在需要時從商務端點擷取。 每個目錄都有產品和類別頁面的一般範本。
-![目錄結構](assets/catalog-structure.png)
+目录页面是使用AEM CIF目录模板以及实时产品数据动态构建的，在需要时可以从商业端点获取。 每个目录都有一个用于产品和类别页面的通用模板。
+![目录结构](assets/catalog-structure.png)
 
-導覽元件會顯示內容和目錄頁面。 可以在導覽中顯示目錄登陸頁面或第一級類別。 將滑鼠懸停在類別上會將第二層類別顯示為第二行。
-![目錄導覽](assets/catalog-navigation.png)
+导航组件显示内容和目录页面。 可以在导航中显示目录登陆页面或第一级类别。 将鼠标悬停在类别上会将二级类别显示为第二行。
+![目录导航](assets/catalog-navigation.png)
 
-按一下類別會開啟類別頁面（或產品清單頁面）。
+单击类别将打开类别页面（或产品列表页面）。
 
 ![PLP](assets/catalog-plp.png)
 
-按一下產品即會開啟產品詳細資料頁面。
+单击某个产品将打开产品详细信息页面。
 
 ![PLP](assets/catalog-pdp.png)
 
-## 範本 {#templates}
+## 模板 {#templates}
 
-### 通用範本 {#generic}
+### 通用模板 {#generic}
 
-一般Venia目錄範本使用產品清單核心元件。 此元件會顯示類別影像（如果可用）和類別中的產品。
-![類別範本](assets/category-template.png)
+通用Venia目录模板使用产品列表核心组件。 此组件显示类别图像（如果可用）和类别中的产品。
+![类别模板](assets/category-template.png)
 
-一般Venia產品範本使用產品詳細資料核心元件。 此元件會顯示各種產品型別和加入購物車動作的產品資訊。
-![產品範本](assets/product-template.png)
+通用Venia产品模板使用产品详细信息核心组件。 此组件显示各种产品类型和添加到购物车操作的产品信息。
+![产品模板](assets/product-template.png)
 
-### 編輯範本 {#edit-templates}
+### 编辑模板 {#edit-templates}
 
-您可以直接開啟範本頁面或在瀏覽產品目錄頁面時切換到編輯模式來編輯範本。 請記住，變更頁面將會變更範本，而不僅僅是產品/類別的特定頁面。
+可以通过直接打开模板页面或在浏览产品目录页面时切换到编辑模式来编辑模板。 请记住，更改页面将更改模板，而不只是产品/类别的特定页面。
 
-### 類別或產品特定範本 {#specific}
+### 类别或产品特定模板 {#specific}
 
-CIF僅需按幾下即可支援多個範本。 若要建立其他範本，請從個別類別中選取一般範本，然後使用 **建立** 動作。
+CIF仅需单击几下即可支持多个模板。 要创建另一个模板，请从相应的类别中选择通用模板，然后使用 **创建** 操作。
 
-![建立範本頁面](assets/create-template-page.png)
+![创建模板页面](assets/create-template-page.png)
 
-選取個別產品或類別範本。
+选择相应的产品或类别模板。
 
-![建立範本選取](assets/create-template-select.png)
+![创建模板选择](assets/create-template-select.png)
 
-輸入標題並建立頁面。
+输入标题并创建页面。
 
-![建立範本輸入](assets/create-template-enter.png)
+![创建模板enter](assets/create-template-enter.png)
 
-請注意，您現在在一般範本底下有一個特定範本。
+请注意，您现在可以在通用模板下找到特定模板。
 
-![建立範本階層](assets/create-template-hierachry.png)
+![创建模板层次结构](assets/create-template-hierachry.png)
 
-開啟範本。 它看起來完全像一般類別範本。
+打开模板。 它看起来与通用类别模板完全相似。
 
-![建立範本新增](assets/create-template-new.png)
+![新建模板](assets/create-template-new.png)
 
-在頁面上方新增任何影像。
+在页面顶部添加任何图像。
 
-![建立範本更新](assets/create-template-update.png)
+![创建模板更新](assets/create-template-update.png)
 
-此範本可與任何類別/產品一起預覽。 開啟 **頁面資訊** 然後選取 **使用類別/產品檢視**. 從選擇器中選取產品/類別，以取得此產品/類別的預覽。 選取 **購買外觀** 類別以取得更新範本的預覽。
+可以使用任何类别/产品预览模板。 打开 **页面信息** 然后选择 **使用类别/产品查看**. 从选取器中选择产品/类别，即可预览此产品/类别。 选择 **购买外观** 类别以获取已更新模板的预览。
 
-![建立範本 ](assets/create-template-picker.png)
+![创建模板 ](assets/create-template-picker.png)
 
-現在我們必須將此範本指派給特定類別。 在中開啟屬性 **頁面資訊** 選單並切換至商務標籤。 按一下資料夾圖示以選取 **購買外觀** 類別選擇器中的類別。 您可以啟用核取方塊，將多個類別指派給範本，並且包含子類別。
+现在，我们必须将此模板分配给特定类别。 在中打开属性 **页面信息** 菜单并切换到“商务”选项卡。 单击文件夹图标以选择 **购买外观** 类别选取器中的类别。 可以通过启用复选框将多个类别分配给模板，还可以包括子类别。
 
-![建立範本關聯](assets/create-template-associate.png)
+![创建模板关联](assets/create-template-associate.png)
 
-返回主首頁並按一下 **購買外觀** 類別，以檢視特定範本。 所有其他類別仍使用通用範本。
+返回主主页并单击 **购买外观** 类别以查看特定模板。 所有其他类别仍使用通用模板。
 
-![建立範本結果](assets/create-template-result.png)
+![创建模板结果](assets/create-template-result.png)
 
-可套用相同的工作流程來建立個別產品範本。
+可以应用相同的工作流程来创建各个产品模板。
 
 ## 后续内容 {#what-is-next}
 
-現在您已完成歷程的這一部分，您應：
+现在您已完成此历程部分，您应：
 
-* 瞭解目錄範本的概念
-* 一般範本的運作方式
-* 已建立個別範本
+* 了解目录模板的概念
+* 通用模板的工作原理
+* 已创建单个模板
 
-在此知識的基礎上繼續您的歷程，接下來檢視檔案 [管理分階段產品目錄體驗](staged-catalog.md)，瞭解如何使用分階段產品資料和AEM啟動。
+在此知识的基础上继续您的历程，接下来查看文档 [管理暂存的产品目录体验](staged-catalog.md)，了解如何使用暂存的产品数据和AEM启动次数。
 
 ## 其他资源 {#additional-resources}
 
-我們建議您檢閱檔案，繼續下一段歷程 [管理分階段產品目錄體驗](staged-catalog.md)下)是一些其他可選資源，這些資源對本文檔中提到的一些概念進行了更深入的探究，但並非繼續無頭之旅的必要：
+我们建议您查看文档来继续历程的下一部分 [管理暂存的产品目录体验](staged-catalog.md)，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续无头之旅所必需的：
 
-* [建立多個類別和產品頁面](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Experience Manager Cloud Service移轉指南](/help/commerce-cloud/migration.md)  — 如何從舊版本移轉至AEM Commerce Integration Framework (CIF)附加元件
+* [创建多个类别和产品页面](/help/commerce-cloud/authoring/multi-template-usage.md)
+* [Experience Manager Cloud Service迁移指南](/help/commerce-cloud/migration.md)  — 如何从旧版本迁移到AEM Commerce Integration Framework (CIF)加载项

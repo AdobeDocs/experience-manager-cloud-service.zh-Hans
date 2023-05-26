@@ -17,4 +17,4 @@ ht-degree: 78%
 
 * `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
-不支援AEM作者層的自訂網域名稱。
+不支持AEM创作层的自定义域名。

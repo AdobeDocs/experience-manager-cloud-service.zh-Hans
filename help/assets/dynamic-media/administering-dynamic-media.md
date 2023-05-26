@@ -1,6 +1,6 @@
 ---
 title: 设置 Dynamic Media
-description: 若要設定Dynamic Media，您必須設定Dynamic Media並管理影像和檢視器預設集。
+description: 要设置Dynamic Media，您必须配置Dynamic Media并管理图像和查看器预设。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # 设置 Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 協助您管理資產，提供豐富的視覺化銷售和行銷資產（隨選提供），並自動調整規模，以因應網路、行動裝置和社交網站的使用量。 Dynamic Media使用一組主要來源資產，透過其全球性、可擴充、效能最佳化的網路，即時產生並傳送多種多樣的豐富內容。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 通过按需提供丰富的可视化推销和营销资产，帮助您管理资产，并自动扩展以满足Web、移动和社交网站上的使用。 Dynamic Media使用一组主要源资源，通过其可扩展、性能优化的全球网络实时生成和提供多种多样的丰富内容。
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -25,21 +25,21 @@ ht-degree: 7%
 
 -->
 
-如果您正在管理Dynamic Media，以下是您感興趣的主題：
+如果您要管理Dynamic Media，则需要关注以下主题：
 
 * [配置 Dynamic Media](config-dm.md)
-* [管理影像預設集](managing-image-presets.md)
-* [管理檢視器預設集](managing-viewer-presets.md)
+* [管理图像预设](managing-image-presets.md)
+* [管理查看器预设](managing-viewer-presets.md)
 * [Dynamic Media 疑难解答](troubleshoot-dm.md)
 
-另請參閱下列主題：
+另请参阅以下主题：
 
-* [視訊編碼和視訊設定檔](video-profiles.md)
-* [影像設定檔](image-profiles.md)
+* [视频编码和视频配置文件](video-profiles.md)
+* [图像配置文件](image-profiles.md)
 
 >[!NOTE]
 >
->**如果您要升級：**
+>**如果您要升级：**
 >
->* Adobe之後 [!DNL Experience Manager] 啟動並執行時，您上傳的任何資產都會自動啟用Dynamic Media （除非您的系統管理員明確停用它）。 如果您在的升級執行個體上 [!DNL Experience Manager] 剛開始使用Dynamic Media時，您可能必須重新處理資產，才能將其啟用Dynamic Media。 另請參閱 [重新處理資料夾中的資產](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Adobe后 [!DNL Experience Manager] 启动并运行时，您上传的任何资源都会自动启用Dynamic Media（除非系统管理员明确禁用它）。 如果您在的升级实例上 [!DNL Experience Manager] 刚开始接触Dynamic Media的客户，您可能必须重新处理资源以使其启用Dynamic Media。 参见 [重新处理文件夹中的资产](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 

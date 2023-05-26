@@ -1,6 +1,6 @@
 ---
 title: 快速站点创建和前端自定义
-description: 瞭解快速網站建立工具如何使用網站範本、主題和前端管道，以快速部署新網站和分離前端開發。
+description: 了解快速站点创建工具如何使用站点模板、主题和前端管道来快速部署新站点并将前端开发脱钩。
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -11,26 +11,26 @@ ht-degree: 5%
 
 # 快速站点创建和前端自定义 {#quick-site-creation}
 
-瞭解快速網站建立工具如何使用網站範本、主題和前端管道，以快速部署新網站和分離前端開發。
+了解快速站点创建工具如何使用站点模板、主题和前端管道来快速部署新站点并将前端开发脱钩。
 
 ## 概述 {#overview}
 
-「快速網站建立」工具是易於使用的工具，可讓管理員快速部署新網站，讓前端開發人員可以立即開始自訂，而不受後端開發和網站內容建立的影響。
+快速站点创建工具是一种易于使用的工具，它允许管理员快速部署新站点，前端开发人员可以立即开始对其进行自定义，而不依赖于后端开发和站点内容创建。
 
-為此，「快速網站建立」工具會使用幾個強大的AEMas a Cloud Service功能：
+为此，快速站点创建工具使用几个强大的AEMas a Cloud Service功能：
 
-1. **AEM網站範本** 用於定義基本網站內容和結構以及網站樣式，並由管理員在建立新網站時選取。
-1. 一個 **AEM網站主題** 包含在範本中，並包含定義網站樣式的CSS、JavaScript和靜態資源。
-1. 此 **前端管道** 可用來將自訂專案部署至網站主題，而不受後端開發的影響。
+1. **AEM站点模板** 用于定义基本站点内容和结构以及站点样式，并且由管理员在创建新站点时选择。
+1. An **AEM站点主题** 包含在模板中，并包含定义站点样式的CSS、JavaScript和静态资源。
+1. 此 **前端管道** 可用于将自定义项部署到站点主题，而不依赖于后端开发。
 
 ## 快速站点创建历程 {#quick-site-creation-journey}
 
-如需「快速網站建立」工具運作方式的完整概觀，以及使用這些強大工具立即開始部署和自訂您自己的網站，請檢視 [快速網站建立歷程。](/help/journey-sites/quick-site/overview.md)
+有关快速站点创建工具的工作原理的完整概述，以及使用这些强大工具立即开始部署和自定义您自己的站点，请查看 [快速站点创建历程。](/help/journey-sites/quick-site/overview.md)
 
 ## 其他资源 {#additional-resources}
 
-由於「快速網站建立」工具會利用許多AEM功能，因此這些額外資源可能會有所幫助。
+由于快速站点创建工具利用了许多AEM功能，因此这些附加资源可能会很有帮助。
 
-* [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)  — 瞭解如何使用AEM網站範本來預先定義網站結構和初始內容，以便您快速建立新網站。
-* [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)  — 瞭解如何使用AEM網站主題來自訂網站的樣式和設計。
-* [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — 透過前端管道，前端開發人員可獲得更多獨立性，且開發流程可獲得大幅度的速度。 本檔案說明為了充分發揮此程式的潛力，應注意的一些注意事項。
+* [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md)  — 了解如何使用AEM站点模板来预定义站点结构和初始内容，以便您快速创建新站点。
+* [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md)  — 了解如何使用AEM站点主题自定义站点的样式和设计。
+* [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — 通过前端管道，为前端开发人员赋予了更大的独立性，并且开发过程可以大幅加速。 本文档介绍了一些需要注意的事项，以便充分发挥此过程的潜力。

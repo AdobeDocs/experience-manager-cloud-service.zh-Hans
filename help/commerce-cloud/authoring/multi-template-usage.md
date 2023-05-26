@@ -1,6 +1,6 @@
 ---
-title: 建立多個類別和產品頁面
-description: 瞭解如何使用目標行銷內容來豐富類別登陸和產品詳細資料頁面。
+title: 创建多个类别和产品页面
+description: 了解如何使用目标营销内容丰富“类别登录”和“产品详细信息”页面。
 sub-product: Commerce
 version: Cloud Service
 doc-type: feature-video
@@ -17,23 +17,23 @@ ht-degree: 3%
 
 ---
 
-# 建立多個類別和產品頁面 {#multiple}
+# 创建多个类别和产品页面 {#multiple}
 
 >[!NOTE]
 >
-> 此功能僅適用於以CIF為基礎的店面（例如Venia）。
+> 此功能仅适用于基于CIF的店面（例如Venia）。
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) 讓內容作者能夠建立其他類別和產品頁面。 這些頁面可以包含其他行銷內容，並設定為鎖定特定類別和產品。 以下影片會逐步介紹此功能的設定。
+[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components) 使内容作者能够创建其他类别和产品页面。 这些页面可以通过附加营销内容进行扩充，并配置为针对特定类别和产品。 以下视频介绍了此功能的设置。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-您可以依SKU或產品類別來選取特定產品頁面。 後者僅支援某些可用的預設產品頁面URL格式，因為它需要在產品URL中編碼類別資訊。
+可以按SKU或产品类别选择特定的产品页面。 仅某些可用的默认产品页面URL格式支持后者，因为它要求在产品URL中编码类别信息。
 
-您可以從下列資源中找到有關此主題的更多資訊：
+您可以从以下资源中找到有关此主题的更多信息：
 
-- [進階URL設定](../configuring/advanced-url-configuration.md)
-- [AEM CIF核心元件 — 多目錄頁面設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [高级URL配置](../configuring/advanced-url-configuration.md)
+- [AEM CIF核心组件 — 多目录页面配置](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## 相关资源 {#related}
 
-您也可以動態鎖定頁面的特定區域，並重複使用相同的範本。 瞭解如何 [透過關聯的AEM內容豐富產品資料](./enrich-product-associated-content.md).
+还可以动态定位页面的特定区域并重复使用相同的模板。 了解如何 [使用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md).

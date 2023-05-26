@@ -117,8 +117,8 @@ AEM 提供了一个内置定位引擎 [ContextHub](/help/implementing/developing
 
 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 定位引擎允许从 Adobe Target 中跟踪的页面访问收集信息。
 
-* 使用此鎖定目標引擎時，您可以使用從Adobe Target匯入的區段來定義體驗的對象。
-* 使用Adobe Target引擎的活動包括 [已同步至Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* 使用此定位引擎时，您可以使用从Adobe Target导入的区段来定义体验的受众。
+* 使用Adobe Target引擎的活动包括 [已同步到Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 [与 Adobe Target 集成后](/help/sites-cloud/integrating/integrating-adobe-target.md)，您便可以使用此引擎。
 

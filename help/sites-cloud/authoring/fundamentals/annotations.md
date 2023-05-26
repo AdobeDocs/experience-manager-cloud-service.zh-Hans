@@ -61,9 +61,9 @@ ht-degree: 97%
 
    ![添加注释](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   在這裡，您可以使用適當的欄位和/或圖示來：
+   在此，您可以使用相应的字段和/或图标来：
 
-   * 輸入註釋文字。
+   * 输入注释文本。
    * 创建草图（线和形状）以突出显示组件的某个区域。
 
 

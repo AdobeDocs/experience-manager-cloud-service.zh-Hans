@@ -1,6 +1,6 @@
 ---
-title: 通用Lucene索引移除
-description: 瞭解計畫移除的一般Lucene索引以及您會如何受到影響。
+title: 通用Lucene索引删除
+description: 了解计划删除的通用Lucene索引以及可能受到的影响方式。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,56 +9,56 @@ ht-degree: 0%
 
 ---
 
-# 通用Lucene索引移除 {#generic-lucene-index-removal}
+# 通用Lucene索引删除 {#generic-lucene-index-removal}
 
-Adobe打算移除「一般Lucene」索引(`/oak:index/lucene-*`)從Adobe Experience Manager as a Cloud Service取得。 自AEM 6.5起，此索引就已被取代。本檔案說明此決定的影響，並詳細說明如何檢查AEM執行個體是否受到影響。 它也包含變更查詢的方法，以便它們在不使用通用Lucene索引的情況下繼續運作。
+Adobe打算删除“通用Lucene”索引(`/oak:index/lucene-*`)从Adobe Experience Manager as a Cloud Service访问。 自AEM 6.5起，此索引已被弃用。本文档介绍了此决策的影响，并详细描述了如何检查AEM实例是否受到影响。 它还包含更改查询的方法，以便查询在没有通用Lucene索引的情况下继续运行。
 
 ## 背景 {#background}
 
-在AEM中，全文檢索查詢是指使用下列函式的查詢：
+在AEM中，全文查询是指使用以下函数的查询：
 
 * `jcr:contains()` 在JCR XPATH中
-* `CONTAINS` JCR-SQL2中
+* `CONTAINS` JCR-SQL2中的
 
-若不使用索引，這類查詢就無法傳回結果。 與只包含路徑或屬性限制的查詢不同，包含找不到索引（因而執行周遊）的全文限制查詢將始終返回零結果。
+如果不使用索引，此类查询无法返回结果。 与仅包含路径或属性限制的查询不同，包含找不到索引（因此执行遍历）的全文限制的查询将始终返回零结果。
 
-通用Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0起便已存在，以便在大部分存放庫階層中提供全文搜尋，不過有些路徑可能會 `/jcr:system` 和 `/var` 已一律從此排除。 不過，此索引在很大程度上已被更特定節點型別的索引取代(例如 `damAssetLucene-*` 的 `dam:Asset` 節點型別)，支援全文檢索和屬性搜尋。
+通用Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0以来一直存在，以便在大多数存储库层次结构中提供全文搜索，不过有些路径(例如 `/jcr:system` 和 `/var` 始终被排除在外。 但是，此索引在很大程度上已被更具体节点类型的索引取代(例如 `damAssetLucene-*` 对于 `dam:Asset` 节点类型)，支持全文和属性搜索。
 
-在AEM 6.5中，通用Lucene索引被標籤為已棄用，這表示它將在未來版本中移除。 此後，當使用索引時，會記錄WARN，如下列記錄程式碼片段所示：
+在AEM 6.5中，通用Lucene索引被标记为已弃用，这表示它将在未来版本中删除。 从那时起，当使用索引时，会记录WARN，如下面的日志片段所示：
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Please change the query or the index definitions.
 ```
 
-在近期AEM版本中，通用Lucene索引已用於支援極少數功能。 正在重新處理這些索引以使用其他索引，或是進行其他修改以移除對此索引的相依性。
+在最近的AEM版本中，通用Lucene索引已用于支持非常少的功能。 正在对这些索引进行重新处理以使用其他索引，或者进行其他修改以移除对此索引的依赖关系。
 
-例如，參考查閱查詢（如以下範例中的）現在應使用索引於 `/oak:index/pathreference`，僅索引 `String` 符合尋找JCR路徑的規則運算式的屬性值。
+例如，引用查找查询（如以下示例中的）现在应使用以下位置的索引 `/oak:index/pathreference`，仅索引 `String` 属性值，该值匹配查找JCR路径的正则表达式。
 
 ```text
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-為了支援較大的客戶資料量，Adobe將不再在新的AEMas a Cloud Service環境中建立通用的Lucene索引。 此外，Adobe將開始從現有存放庫中移除索引。 [檢視時間表](#timeline) 於本檔案末尾瞭解更多詳情。
+为了支持更大的客户数据卷，Adobe将不再在新的AEMas a Cloud Service环境中创建通用Lucene索引。 此外，Adobe将开始从现有存储库中删除索引。 [查看时间线](#timeline) ，以了解更多详细信息。
 
-Adobe已透過以下方式調整指數成本： `costPerEntry` 和 `costPerExecution` 屬性以確保其他索引，例如 `/oak:index/pathreference` 會儘可能優先使用。
+Adobe已透过以下方式调整指数成本： `costPerEntry` 和 `costPerExecution` 属性以确保其他索引，如 `/oak:index/pathreference` 会尽可能优先使用。
 
-若客戶應用程式使用的查詢仍依賴此索引，則應立即更新以利用其他現有索引，以便視需要自訂。 或者，也可以將新的自訂索引新增到客戶應用程式。 AEMas a Cloud Service索引管理的完整指示可在以下網址找到： [索引檔案。](/help/operations/indexing.md)
+如果客户应用程序使用的查询仍依赖于此索引，则应立即更新以利用其他现有索引，如果需要，可以自定义这些索引。 或者，也可以将新的自定义索引添加到客户应用程序中。 有关AEMas a Cloud Service中索引管理的完整说明，请参阅 [索引文档。](/help/operations/indexing.md)
 
-## 您有受到影響嗎？ {#are-you-affected}
+## 您是否受影响？ {#are-you-affected}
 
-如果沒有其他全文檢索索引可以為查詢提供服務，則通用Lucene索引目前會用作遞補。 使用此過時的索引時，類似以下的訊息將會記錄在WARN層級：
+如果没有其他全文索引可以为查询提供服务，则通用Lucene索引当前用作回退。 使用此已弃用的索引时，将在警告级别记录如下消息：
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-在某些情況下，Oak可能會嘗試使用其他全文索引(例如 `/oak:index/pathreference`)以支援全文檢索查詢，但如果查詢字串不符合索引定義上的規則運算式，則會在WARN層級記錄訊息，且查詢可能不會傳回結果。
+在某些情况下，Oak可能会尝试使用其他全文索引(例如 `/oak:index/pathreference`)以支持全文查询，但如果查询字符串与索引定义上的正则表达式不匹配，则将在WARN级别记录消息，并且查询可能不会返回结果。
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-移除通用Lucene索引後，如果全文檢索查詢找不到任何合適的索引定義，則會在WARN層級記錄如下所示的訊息：
+删除通用Lucene索引后，如果全文查询无法找到任何合适的索引定义，将在警告级别记录如下所示的消息：
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
@@ -66,23 +66,23 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 >[!IMPORTANT]
 >
->**需要客戶動作**
+>**需要客户操作**
 >
-> 如果記錄了上述任何警告訊息，您可能需要重新處理查詢以使用不同的全文索引，或提供新索引來支援查詢。
+> 如果记录了上述任何警告消息，您可能需要重新处理查询以使用不同的全文索引，或提供新索引来支持查询。
 >
->以下各節提供您可能會看到的相依性型別以及如何解決這些型別的詳細資訊。
+>以下部分提供了有关您可能会看到的依赖项类型以及如何解决这些类型的详细信息。
 
-## 一般Lucene索引的潛在相依性 {#potential-dependencies}
+## 对通用Lucene索引的潜在依赖性 {#potential-dependencies}
 
-在一些區域，您的應用程式和AEM安裝可能依賴於作者和發佈執行個體的通用Lucene索引。
+在很多方面，您的应用程序和AEM安装可能依赖于创作实例和发布实例的通用Lucene索引。
 
 ### 发布实例 {#publish-instance}
 
-#### 自訂應用程式查詢 {#custom-application-queries}
+#### 自定义应用程序查询 {#custom-application-queries}
 
-在發佈執行個體上使用通用Lucene索引的查詢最常見來源是自訂應用程式查詢。
+在发布实例上使用通用Lucene索引的最常见查询源是自定义应用程序查询。
 
-在最簡單的情況下，這些可能是未指定節點型別的查詢，因此意味著 `nt:base` 或 `nt:base` 已明確指定，例如：
+在最简单的情况下，这些查询可能是未指定节点类型的查询，因此意味着 `nt:base` 或 `nt:base` 已显式指定，例如：
 
 ```text
 /jcr:root/content/mysite//*[jcr:contains(., 'search term')]
@@ -91,83 +91,83 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 >[!IMPORTANT]
 >
->**需要客戶動作**
+>**需要客户操作**
 >
->上述查詢應修改為使用適當的節點型別，如下節所述。
+>应修改上述查询以使用适当的节点类型，如下节所述。
 
-例如，可以修改查詢以傳回符合頁面的結果或 `cq:Page node`. 因此，查詢可能會變成：
+例如，可以修改查询以返回与页面或下的任何聚合匹配的结果 `cq:Page node`. 因此，查询可以变为：
 
 ```text
 /jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
 ```
 
-在其他情況下，查詢可能會指定節點型別，但包含無法由其他全文檢索索引處理的全文檢索限制，例如：
+在其他情况下，查询可能指定节点类型，但包含其他全文索引无法处理的全文限制，例如：
 
 ```text
 /jcr:root/content/dam//element(*, dam:Asset)[jcr:contains(jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
 ```
 
-在此情況下，查詢具有 `dam:Asset` 節點型別，但包含相對節點的全文限制 `jcr:content/metadata/@cq:tags` 屬性。
+在这种情况下，查询具有 `dam:Asset` 节点类型，但包含对相对节点的全文限制 `jcr:content/metadata/@cq:tags` 属性。
 
-此屬性未標籤為在中分析 `damAssetLucene` index，最常用於針對 `dam:Asset` 節點型別。 因此，此索引無法用於此查詢。
+此属性未标记为在中分析 `damAssetLucene` index，最常用于针对 `dam:Asset` 节点类型。 因此，此索引不能用于此查询。
 
-因此，查詢會回覆為一般全文檢索索引，其中所有包含的屬性都標示為已由，其上的萬用字元比對結果分析。 `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
+因此，查询回退到通用全文索引，其中所包含的所有属性均被标记为已由 `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
 
 >[!IMPORTANT]
 >
->**需要客戶動作**
+>**需要客户操作**
 >
->標示 `jcr:content/metadata/@cq:tags` 在自訂版本中分析的屬性 `damAssetLucene` 索引將導致此查詢由此索引處理，並且不會記錄任何WARN。
+>标记 `jcr:content/metadata/@cq:tags` 在的自定义版本中分析的属性 `damAssetLucene` 索引将导致此查询由此索引处理，并且不会记录任何WARN。
 
 ### 创作实例 {#author-instance}
 
-除了在客戶應用程式servlet、OSGi元件和轉譯指令碼中進行的查詢之外，還有許多一般Lucene索引的作者特定用法。
+除了在客户应用程序servlet、OSGi组件和渲染脚本中进行查询之外，还可以使用许多特定于作者的通用Lucene索引。
 
-#### 參考搜尋 {#reference-search}
+#### 引用搜索 {#reference-search}
 
-在過去，通用Lucene索引用於支援參考搜尋或搜尋包含其他內容路徑參考的內容。 此類查詢應已更新為使用新的 `/oak:index/pathreference` 索引。
+以前，通用Lucene索引用于支持引用搜索或搜索包含对另一内容路径的引用的内容。 此类查询应已更新以使用新的 `/oak:index/pathreference` 索引。
 
-#### 路徑欄位選擇器搜尋 {#picker-search}
+#### 路径字段选取器搜索 {#picker-search}
 
-AEM包含具有Sling資源型別的自訂對話方塊元件 `granite/ui/components/coral/foundation/form/pathfield`，提供瀏覽器/選擇器來選取其他AEM路徑。 預設路徑欄位選擇器，無自訂時使用 `pickerSrc` 屬性定義於內容結構中，在快顯對話方塊中呈現搜尋列。
+AEM包含一个具有Sling资源类型的自定义对话框组件 `granite/ui/components/coral/foundation/form/pathfield`，它提供用于选择其他AEM路径的浏览器/选取器。 默认路径字段选取器，无自定义设置时使用 `pickerSrc` 属性在内容结构中定义，在弹出对话框中呈现搜索栏。
 
-可使用來指定要搜尋的節點型別 `nodeTypes` 屬性。
+可以使用指定要搜索的节点类型 `nodeTypes` 属性。
 
-目前，如果否 `nodeTypes` 屬性存在，則基礎搜尋查詢將使用 `nt:base` 節點型別，因此可能使用通用Lucene索引，通常記錄類似於以下的WARN訊息。
+目前，如果没有 `nodeTypes` 属性存在，则基础搜索查询将使用 `nt:base` 节点类型，因此可能使用通用Lucene索引，通常记录类似于以下内容的WARN消息。
 
 ```text
 20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Please change the query or the index definitions.
 ```
 
-在移除通用Lucene索引之前， `pathfield` 元件將會更新，以針對使用預設選擇器的元件隱藏搜尋方塊，這些元件不提供 `nodeTypes` 屬性。
+在删除通用Lucene索引之前， `pathfield` 将更新组件，以便使用默认选取器的组件隐藏搜索框，默认选取器不提供 `nodeTypes` 属性。
 
-| 包含搜尋的路徑欄位選擇器 | 不搜尋的路徑欄位選擇器 |
+| 带有搜索的路径字段选取器 | 路径字段选择器（不搜索） |
 |---|---|
-| ![包含搜尋的路徑欄位選擇器](assets/index-pathfield-picker-with-search.png) | ![不搜尋的路徑欄位選擇器](assets/index-pathfield-picker-without-search.png) |
+| ![带有搜索的路径字段选取器](assets/index-pathfield-picker-with-search.png) | ![路径字段选择器（不搜索）](assets/index-pathfield-picker-without-search.png) |
 
 >[!IMPORTANT]
 >
->**需要客戶動作**
+>**需要客户操作**
 >
->如果客戶想要保留路徑欄位選擇器中的搜尋功能，請 `nodeTypes` 應提供屬性，列出其要查詢的節點型別。 這些節點型別可指定為以逗號分隔的節點型別清單 `String` 屬性。 如果不需要搜尋，則不需要客戶採取任何動作。
+>如果客户希望在路径字段选取器中保留搜索功能，请 `nodeTypes` 应提供属性，其中列出要查询的节点类型。 这些节点类型可以指定为以逗号分隔的 `String` 属性。 如果不需要搜索，则无需客户执行任何操作。
 
 >[!NOTE]
 >
->內容片段模式編輯器使用具有Sling資源型別的專用路徑欄位 `dam/cfm/models/editor/components/contentreference`.
-> * 目前，這些執行查詢時未指定節點型別，導致由於使用通用Lucene索引而記錄WARN。
-> * 這些元件的例項很快就會自動預設為使用 `cq:Page` 和 `dam:Asset` 節點型別，無需客戶進一步操作。
-> * 此 `nodeTypes` 可以新增屬性來覆寫這些預設節點型別。
+>内容片段模型编辑器使用具有Sling资源类型的专用路径字段 `dam/cfm/models/editor/components/contentreference`.
+> * 目前，这些执行查询时未指定节点类型，导致由于使用通用Lucene索引而记录WARN。
+> * 这些组件的实例很快将自动默认为使用 `cq:Page` 和 `dam:Asset` 节点类型，无需客户进一步操作。
+> * 此 `nodeTypes` 可以添加属性以覆盖这些默认节点类型。
 
 
-## 一般Lucene移除的時間表 {#timeline}
+## 通用Lucene删除时间线 {#timeline}
 
-Adobe將採取兩階段方法移除通用Lucene索引。
+Adobe将采取两阶段方法移除通用Lucene索引。
 
-* **階段1** （計畫於2022年1月31日開始）：不再建立 `/oak:index/lucene-*` 新AEMas a Cloud Service環境中。
-* **階段2** （預計於2022年3月31日開始）：移除 `/oak:index/lucene-*` 從現有AEMas a Cloud Service環境建立索引。
+* **阶段1** （计划于2022年1月31日开始）：不再创建 `/oak:index/lucene-*` 在新的AEMas a Cloud Service环境中。
+* **阶段2** （计划于2022年3月31日开始）：删除 `/oak:index/lucene-*` 从现有AEMas a Cloud Service环境编制索引。
 
-Adobe將監控上述記錄訊息，並嘗試聯絡仍依賴通用Lucene索引的客戶。
+Adobe将监控上述日志消息，并尝试联系仍依赖于通用Lucene索引的客户。
 
-為了短期緩解此問題，Adobe會直接將自訂索引定義新增到客戶系統，以防止在必要時移除通用Lucene索引而導致功能或效能問題。
+作为短期缓解措施，Adobe将直接在客户系统中添加自定义索引定义，以防止因必要时删除通用Lucene索引而导致的功能或性能问题。
 
-在這種情況下，將向客戶提供更新的索引定義，並建議將其納入透過Cloud Manager的未來版本的應用程式。
+在这种情况下，将向客户提供更新的索引定义，并建议在未来的应用程序版本中通过Cloud Manager包含此定义。
