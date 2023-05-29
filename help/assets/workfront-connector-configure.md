@@ -4,14 +4,19 @@ description: 配置 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
 
 # 配置 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-configure.html) |
+| AEM as a Cloud Service | 本文 |
 
 在中具有管理员访问权限的用户 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 在安装增强型连接器后对其进行配置。 有关安装说明，请参阅 [安装连接器](/help/assets/workfront-integrations.md).
 
@@ -124,14 +129,14 @@ Adobe Workfront文档与资源之间的元数据映射在AEM元数据架构中�
    * AEM资产。 此引用应当相对于工作流有效负载。
    * 命名值。 应使用括号括住。
    * 上述3个项目的连接。 使用以下方式指定 `{+}`.
-   * 通过将值周围设置为来更改上述3个项目 `{replace(<value>,”old-char”,”new-char”)}`.
+   * 通过将值周围设置为来更改上述3个项目 `{replace(<value>,"old-char","new-char")}`.
 
 * 一些示例包括：
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![用于映射属性的配置](/help/assets/assets/wf-map-property-config.png)
 

@@ -5,14 +5,19 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 5%
+source-wordcount: '621'
+ht-degree: 6%
 
 ---
 
 # 中的私有文件夹 [!DNL Adobe Experience Manager Assets] {#private-folder}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en) |
+| AEM as a Cloud Service | 本文 |
 
 您可以在中创建专用文件夹 [!DNL Adobe Experience Manager Assets] 您专有的用户界面。 您可以将此专用文件夹共享给其他用户，并为他们分配各种权限。 根据您分配的权限级别，用户可以在文件夹上执行各种任务，例如，查看文件夹中的资源或编辑资源。
 

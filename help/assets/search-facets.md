@@ -4,14 +4,19 @@ description: 本文介绍了如何在Experience Manager中创建、修改和使�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2445'
 ht-degree: 21%
 
 ---
 
 # 搜索 Facet {#search-facets}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
+| AEM as a Cloud Service | 本文 |
 
 Adobe Experience Manager Assets的企业范围部署具有存储许多资源的能力。 有时，如果只使用Experience Manager的一般搜索功能，则查找正确的资源可能会很费时费力。
 
