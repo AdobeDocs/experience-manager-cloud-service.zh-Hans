@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3829'
 ht-degree: 16%
 
 ---
@@ -316,6 +316,7 @@ Experience Manager显示 `expired` 远程资产内容查找器中的资产状态
 ## 限制和最佳实践 {#tip-and-limitations}
 
 * 要获取有关资产使用情况的见解，请配置 [资产分析](/help/assets/assets-insights.md) 上的功能 [!DNL Sites] 实例。
+* 连接的资产不支持在创作组件中使用路径浏览器。
 
 ### 权限和资产管理 {#permissions-and-managing-assets}
 
