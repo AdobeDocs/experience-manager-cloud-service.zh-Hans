@@ -2,7 +2,7 @@
 title: 针对 AEM as a Headless CMS 进行创作 – 简介
 description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能为项目创作内容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 # 针对 AEM as a Headless CMS 进行创作 – 简介 {#author-headless-introduction}
 
 在 [AEM Headless 内容作者历程](overview.md)的这一部分中，您可以学习使用 Adobe Experience Manager (AEM) as a Cloud Service as a Headless CMS 创作内容时必须了解的（基本）概念和术语。这涉及构建和创建您的内容以进行 Headless 内容交付。
+
+{{headless-trials-promotion}}
 
 ## 目标 {#objective}
 
