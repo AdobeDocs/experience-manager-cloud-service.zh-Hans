@@ -6,16 +6,16 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c48885dc11b0162f0288962a53e1d95574a3d406
+source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3535'
 ht-degree: 1%
 
 ---
 
-# 智能成像常见问题解答 {#smart-imaging}
+# 智能成像 {#smart-imaging}
 
-## 关于智能成像
+## 关于智能成像{#about-smart-imaging}
 
 智能成像技术可应用Adobe Sensei AI功能，并与现有“图像预设”配合使用。 它致力于通过基于客户端浏览器功能自动优化图像格式、大小和质量来增强图像投放性能。
 
@@ -127,7 +127,7 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 * 以前，原始图像和派生图像都被缓存，缓存失效分为两步。 在最新的智能成像中，仅缓存衍生品，从而允许执行单步缓存失效过程。
 * 在规则集中使用自定义标头的客户可以从最新的智能成像中受益，因为与以前的智能成像版本不同，这些标头不会受到阻止。 例如，“计时允许来源”、“X-Robot”，如中所示 [向图像响应添加自定义标头值|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## 智能成像的工作原理
+## 智能成像的工作原理{#how-smart-imaging-works}
 
 当用户请求图像时，智能成像会检查用户特征，并根据使用的浏览器将其转换为相应的图像格式。 这些格式转换以不降低视觉保真度的方式进行。 智能成像根据浏览器功能，通过以下方式自动将图像转换为不同格式。
 
@@ -140,7 +140,7 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 
 如果原始图像大小小于智能成像生成的尺寸，则提供原始图像。
 
-## 智能成像中的图像格式支持
+## 智能成像中的图像格式支持{#image-format-support}
 
 智能成像支持以下图像格式：
 
@@ -151,11 +151,11 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 
 对于支持PNG等透明度的图像文件格式，您可以配置智能成像以传递有损的AVIF和WebP。 对于有损格式转换，智能成像使用图像URL中提到的品质，或者使用Dynamic Media公司帐户中配置的品质。
 
-## 智能成像中的图像服务命令支持
+## 智能成像中的图像服务命令支持{#imaging-serving-command-support}
 
 图像服务命令 `fmt` 和 `qlt` 不支持；支持所有其余命令。
 
-## 有关智能成像的常见问题解答
+## 有关智能成像的常见问题解答{#smart-imaging-faq}
 
 +++**智能成像是否存在相关许可成本？**
 
