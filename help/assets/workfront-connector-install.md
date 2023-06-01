@@ -4,9 +4,9 @@ description: 安装 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: d0d89c3905b2bf357de8a7599245c9360444e53b
+source-git-commit: 21f33c0b8710dd9d9db30543defff7dae9942c06
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '655'
 ht-degree: 2%
 
 ---
@@ -33,26 +33,11 @@ ht-degree: 2%
 
 在安装连接器之前，请按照以下预安装步骤操作：
 
-1. 如果您的AEMas a Cloud Service程序配置了高级联网并启用了IP允许列表，则需要将Workfront IP添加到此允许列表，以允许事件订阅和各种API调用传递到AEM。
+1. [配置防火墙](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html). 了解中的IP群集 [!DNL Workfront]，导航到 [!UICONTROL 设置] > [!UICONTROL 系统] > [!UICONTROL 客户信息].
 
-   * [Workfront群集IP](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). 了解中的IP群集 [!DNL Workfront]，导航到 **[!UICONTROL 设置]** > **[!UICONTROL 系统]** > **[!UICONTROL 客户信息]**.
+1. 在Dispatcher上，允许命名的HTTP标头 `authorization`， `username`、和 `apikey`. 允许 `GET`， `POST`、和 `PUT` 请求 `/bin/workfront-tools`.
 
-   * [Workfront事件订阅API IP](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
-   >[!IMPORTANT]
-   >
-   >* 如果您已为程序配置了高级网络并且正在使用IP允许列表，则由于增强Workfront连接器体系结构的限制，您还需要将程序出口IP添加到Cloud Manager中的允许列表。
-   >
-   >* p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
-   >* 要查找程序的IP，请打开终端窗口并运行命令，例如：
-
-      >
-      >    ```TXT
-      >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-      >
-      >    ```
-
-1. 确保中不存在以下叠加 [!DNL Experience Manager] 存储库。 如果您在这些路径上预先存在叠加图，则需要删除叠加图，或合并两个路径之间的更改增量：
+1. 确保中不存在以下路径 [!DNL Experience Manager] 存储库：
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
