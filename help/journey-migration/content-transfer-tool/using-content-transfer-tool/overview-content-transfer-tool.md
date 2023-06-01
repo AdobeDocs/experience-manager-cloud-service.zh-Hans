@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 58%
+ht-degree: 63%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概述"
->abstract="内容传输工具是由Adobe开发的工具，可用于启动现有内容从源AEM实例（内部部署或AMS）到目标AEM Cloud Service实例的迁移。 此工具还会自动传输主体（用户或组）。"
+>abstract="内容传输工具是 Adobe 开发的一个工具，可用于启动从源 AEM 实例（内部部署或 AMS）到目标 AEM Cloud Service 实例的现有内容迁移。此工具还会自动传输主体（用户或组）。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="准则和最佳实践"
 
 内容传输工具是由Adobe开发的工具，可用于启动现有内容从源AEM实例（内部部署或AMS）到目标AEM Cloud Service实例的迁移。
