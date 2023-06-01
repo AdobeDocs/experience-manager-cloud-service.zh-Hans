@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 100%
+source-wordcount: '4027'
+ht-degree: 99%
 
 ---
 
@@ -509,6 +509,7 @@ ht-degree: 100%
    + 设置和迁移 {#setup-configure-migrate}
       + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
+      + [在AEM Formsas a Cloud Service和本地开发环境中启用自适应Forms核心组件](/help/forms/enable-adaptive-forms-core-components.md)
       + [配置统一存储连接器](/help/forms/configure-unified-storage-connector.md)
       + [从  [!DNL AEM 6.5 Forms]  或更低版本迁移到  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
@@ -970,3 +971,4 @@ ht-degree: 100%
    + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
    + [属性和类型](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
+

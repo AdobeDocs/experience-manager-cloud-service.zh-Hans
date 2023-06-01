@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
 source-wordcount: '1495'
 ht-degree: 7%
@@ -29,7 +29,7 @@ ht-degree: 7%
 
 创建自适应表单需要满足以下条件：
 
-* **为您的环境启用自适应Forms核心组件**：创建新项目时，已为您的环境启用自适应Forms核心组件。 如果您有基于 Archetype 39 或更早版本的 Forms as a Cloud Service 环境，请[为您的环境启用自适应表单核心组件](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)。在为您的环境启用核心组件时，即将&#x200B;**自适应表单（核心组件）**&#x200B;模板和画布主题添加到您的环境。如果您的 AEM SDK 版本低于 2023.02.0，请[确保在您的环境上启用 `prerelease` 标志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)，因为自适应表单核心组件是 2023.02.0 发布之前预发布的一部分。
+* **为您的环境启用自适应Forms核心组件**：创建新项目时，已为您的环境启用自适应Forms核心组件。 如果您有基于 Archetype 39 或更早版本的 Forms as a Cloud Service 环境，请[为您的环境启用自适应表单核心组件](enable-adaptive-forms-core-components.md)。在为您的环境启用核心组件时，即将&#x200B;**自适应表单（核心组件）**&#x200B;模板和画布主题添加到您的环境。如果您的 AEM SDK 版本低于 2023.02.0，请[确保在您的环境上启用 `prerelease` 标志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)，因为自适应表单核心组件是 2023.02.0 发布之前预发布的一部分。
 
 * **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（布局和样式）。 它具有包含特定属性和内容结构的预格式化的组件。 它还提供定义主题和提交操作的选项。 主题定义外观，提交操作定义在提交自适应表单时要执行的操作。 例如，将收集的数据发送到数据源。 Cloud Service提供一个OOTB模板，名称为空：
 

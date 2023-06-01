@@ -2,10 +2,10 @@
 title: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
 description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 4%
+source-wordcount: '2818'
+ht-degree: 2%
 
 ---
 
@@ -329,201 +329,11 @@ Dispatcher上的缓存允许 [!DNL AEM Forms] 在客户端预填充自适应Form
 
 您的本地开发环境已准备就绪。
 
-## 为基于AEM原型的现有项目启用自适应Forms核心组件 {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
+## 在AEM Formsas a Cloud Service和本地开发环境中启用自适应Forms核心组件
 
-如果您使用基于AEM Archetype版本40或更高版本的AEM Formsas a Cloud Service程序，核心组件将自动为您的环境启用。 在为您的环境启用核心组件时，即将&#x200B;**自适应表单（核心组件）**&#x200B;模板和画布主题添加到您的环境。如果您的 AEM SDK 版本低于 2023.02.0，请[确保在您的环境上启用 `prerelease` 标志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hans#new-features)，因为自适应表单核心组件是 2023.02.0 发布之前预发布的一部分。
+在AEM Formsas a Cloud Service上启用自适应Forms核心组件，允许您使用AEM FormsCloud Service实例向多个渠道开始创建、发布和交付基于核心组件的自适应Forms和Headless Forms。 您需要启用自适应Forms核心组件的环境才能使用Headless自适应Forms。
 
-要基于旧版Archetype为AEM Formsas a Cloud Service环境启用自适应Forms核心组件，请在项目中嵌入WCM核心组件示例工件和Forms核心组件工件（包括示例）：
-
-1. 在纯文本代码编辑器中打开AEM Archetype项目文件夹。 例如，VS代码。
-
-1. 打开顶级 `.pom` AEM文件（父pom），将以下属性添加到该文件并保存。
-
-   ```XML
-   <properties>
-       <core.forms.components.version>2.0.4</core.forms.components.version> <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
-       <core.wcm.components.version>2.21.2</core.wcm.components.version>
-   </properties>
-   ```
-
-   对于的最新版本 `core.forms.components` 和 `core.wcm.components`，检查 [核心组件文档](https://github.com/adobe/aem-core-forms-components).
-
-1. 在顶级（父级）的依赖关系部分中 `pom.xml` 文件，添加以下依赖项：
-
-   ```XML
-       <!-- WCM Core Component Examples Dependencies -->
-           <dependency>
-               <groupId>com.adobe.cq</groupId>
-               <artifactId>core.wcm.components.examples.ui.apps</artifactId>
-               <type>zip</type>
-               <version>${core.wcm.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.cq</groupId>
-               <artifactId>core.wcm.components.examples.ui.content</artifactId>
-               <type>zip</type>
-               <version>${core.wcm.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.cq</groupId>
-               <artifactId>core.wcm.components.examples.ui.config</artifactId>
-               <version>${core.wcm.components.version}</version>
-               <type>zip</type>
-           </dependency>    
-           <!-- End of WCM Core Component Examples Dependencies -->
-            <!-- Forms Core Component Dependencies -->
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-core</artifactId>
-               <version>${core.forms.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-apps</artifactId>
-               <version>${core.forms.components.version}</version>
-               <type>zip</type>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-af-core</artifactId>
-               <version>${core.forms.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-af-apps</artifactId>
-               <version>${core.forms.components.version}</version>
-               <type>zip</type>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-examples-apps</artifactId>
-               <type>zip</type>
-               <version>${core.forms.components.version}</version>
-           </dependency>
-           <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>core-forms-components-examples-content</artifactId>
-               <type>zip</type>
-               <version>${core.forms.components.version}</version>
-           </dependency>
-     <!-- End of AEM Forms Core Component Dependencies -->
-   ```
-
-1. 打开 `all/pom.xml` 文件，并将以下依赖关系添加到 `embedded` 部分以将Adaptive Forms核心组件工件添加到AEM原型项目：
-
-   ```XML
-       <!-- WCM Core Component Examples Dependencies -->
-   
-           <!-- inside plugin config of filevault-package-maven-plugin -->  
-           <!-- embed wcm core components examples artifacts -->
-   
-           <embedded>
-           <groupId>com.adobe.cq</groupId>
-           <artifactId>core.wcm.components.examples.ui.apps</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-           </embedded>
-           <embedded>
-           <groupId>com.adobe.cq</groupId>
-           <artifactId>core.wcm.components.examples.ui.content</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-            </embedded>
-           <embedded>
-           <groupId>com.adobe.cq</groupId>
-           <artifactId>core.wcm.components.examples.ui.config</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-           </embedded>
-           <!-- embed forms core components artifacts -->
-           <embedded>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>core-forms-components-af-apps</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/application/install</target>
-            </embedded>
-           <embedded>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>core-forms-components-af-core</artifactId>
-           <target>/apps/${appId}-vendor-packages/application/install</target>
-            </embedded>
-           <embedded>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>core-forms-components-examples-apps</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-           </embedded>
-           <embedded>
-           <groupId>com.adobe.aem</groupId>
-           <artifactId>core-forms-components-examples-content</artifactId>
-           <type>zip</type>
-           <target>/apps/${appId}-vendor-packages/content/install</target>
-           </embedded>
-   ```
-
-   >[!NOTE]
-   将${appId}替换为您原型的appId。
-
-1. 在的依赖关系部分 `all/pom.xml` 文件，添加以下依赖项：
-
-   ```XML
-       <!-- Other existing dependencies -->
-       <!-- wcm core components examples dependencies -->
-        <dependency>
-        <groupId>com.adobe.cq</groupId>
-        <artifactId>core.wcm.components.examples.ui.apps</artifactId>
-        <type>zip</type>
-       </dependency>
-       <dependency>
-        <groupId>com.adobe.cq</groupId>
-        <artifactId>core.wcm.components.examples.ui.config</artifactId>
-        <type>zip</type>
-        </dependency>
-       <dependency>
-        <groupId>com.adobe.cq</groupId>
-        <artifactId>core.wcm.components.examples.ui.content</artifactId>
-        <type>zip</type>
-       </dependency>
-        <!-- forms core components dependencies -->
-       <dependency>
-        <groupId>com.adobe.aem</groupId>
-        <artifactId>core-forms-components-af-apps</artifactId>
-        <type>zip</type>
-       </dependency>
-       <dependency>
-        <groupId>com.adobe.aem</groupId>
-        <artifactId>core-forms-components-examples-apps</artifactId>
-        <type>zip</type>
-       </dependency>
-        <dependency>
-        <groupId>com.adobe.aem</groupId>
-        <artifactId>core-forms-components-examples-content</artifactId>
-        <type>zip</type>
-       </dependency>
-   ```
-
-1. 包括 `af-core bundle` 中的依赖关系 `ui.apps/pom.xml`
-
-   ```XML
-        <dependency>
-       <groupId>com.adobe.aem</groupId>
-       <artifactId>core-forms-components-af-core</artifactId>
-       </dependency>
-   ```
-
-   >[!NOTE]
-   确保您的项目中不包含以下自适应Forms核心组件工件。
-   `<dependency>`
-   `<groupId>com.adobe.aem</groupId>`
-   `<artifactId>core-forms-components-apps</artifactId>`
-   `</dependency>`
-   和
-   `<dependency>`
-   `<groupId>com.adobe.aem</groupId>`
-   `<artifactId>core-forms-components-core</artifactId>`
-   `</dependency>`
-
-1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html). 成功运行管道后，将为您的环境启用自适应Forms核心组件。 此外，自适应Forms（核心组件）模板和画布主题也已添加到您的Formsas a Cloud Service环境中。
+有关说明，请参阅 [在AEM Formsas a Cloud Service和本地开发环境中启用自适应Forms核心组件](/help/forms/enable-adaptive-forms-core-components.md)
 
 
 ## 升级本地开发环境 {#upgrade-your-local-development-environment}
