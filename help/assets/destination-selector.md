@@ -2,9 +2,8 @@
 title: AEMas a Cloud Service的目标选择器
 description: 使用AEM目标选择器可显示和选择可用作原始资源副本的资源。
 contentOwner: Adobe
-feature: destination selector
 role: Admin,User
-source-git-commit: fc156b95ebbdb0546f9fb334b0cb6f599f5f2692
+source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 37%
