@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
+source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 88%
+source-wordcount: '2491'
+ht-degree: 78%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 88%
 1. 客户将能够根据自己的需要设置警报。
 1. SRE 全天候监控系统运行状况，并将根据需要尽早采取措施。
 1. 通过部署更改索引配置。像其他内容更改一样配置索引定义更改。
-1. 在 AEM as a Cloud Service 的高层，随着引入[蓝绿部署模型](#index-management-using-blue-green-deployments)，将存在两组索引：一组用于旧版本（蓝色），另一组用于新版本（绿色）。
+1. 在AEMas a Cloud Service的高层次上，随着 [滚动部署模型](#index-management-using-rolling-deployments) 将存在两组索引：一组用于旧版本，另一组用于新版本。
 1. 客户可以在 Cloud Manager 生成页面上查看索引工作是否完成，并将在新版本准备好接收流量时收到通知。
 
 限制：
@@ -143,7 +143,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 <filter><root>/oak:index</root></filter>
 ```
 
-添加新的索引定义后，需要通过 Cloud Manager 部署新的应用程序。部署完毕后将开始执行两个作业，负责将索引定义分别添加到 MongoDB 和 Azure 段存储（如果需要，还可合并索引定义）以供编写和发布。在切换蓝绿之前，将用新的索引定义为底层存储库重新编制索引。
+添加新的索引定义后，需要通过 Cloud Manager 部署新的应用程序。部署后，将启动两个作业，负责将索引定义分别添加到MongoDB和Azure区段存储区（如果需要，还可合并索引定义）以供创作和发布。 在进行切换之前，基础存储库会使用新的索引定义重新编制索引。
 
 ### 注意
 
@@ -207,19 +207,19 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 >
 >有关 AEM as a Cloud Service 所需的包结构的更多详细信息，请参阅文档 [AEM 项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。
 
-## 使用蓝绿部署的索引管理 {#index-management-using-blue-green-deployments}
+## 使用滚动部署进行索引管理 {#index-management-using-rolling-deployments}
 
 ### 索引管理是什么 {#what-is-index-management}
 
 索引管理涉及添加、删除和更改索引。更改索引的&#x200B;*定义*&#x200B;很迅速，但应用更改（一般称为“编制索引”，对于现有索引称为“重新编制索引”）需要一段时间。此过程并非一蹴而就：必须扫描存储库才能为数据编制索引。
 
-### 蓝绿部署是什么 {#what-is-blue-green-deployment}
+### 什么是滚动部署 {#what-are-rolling-deployments}
 
-蓝绿部署可减少停机时间。它还可实现零停机升级并提供快速回滚。应用程序的旧版本（蓝色）与应用程序的新版本（绿色）同时运行。
+滚动部署可减少停机时间。 它还可实现零停机升级并提供快速回滚。应用程序的旧版本与应用程序的新版本同时运行。
 
 ### 只读和读写区域 {#read-only-and-read-write-areas}
 
-存储库的某些区域（存储库的只读部分）在应用程序的旧版本（蓝色）和新版本（绿色）中可能不同。存储库的只读区域一般为“`/app`”和“`/libs`”。在下面的示例中，斜体用于标记只读区域，而粗体用于标记读写区域。
+存储库的某些区域（存储库的只读部分）在应用程序的旧版本和新版本中可能不同。 存储库的只读区域通常为 `/app` 和 `/libs`. 在下面的示例中，斜体用于标记只读区域，而粗体用于标记读写区域。
 
 * **/**
 * */apps（只读）*
@@ -233,13 +233,13 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 在应用程序的所有版本之间共用存储库的读写区域，而对于应用程序的每个版本，都有一组特定的 `/apps` 和 `/libs`。
 
-### 没有蓝绿部署的索引管理 {#index-management-without-blue-green-deployment}
+### 索引管理（不滚动部署） {#index-management-without-rolling-deployments}
 
 在开发期间或在使用内部部署时，可在运行时添加、删除或更改索引。一旦有索引可用，即使用这些索引。如果还不需要在应用程序的旧版本中使用某个索引，则一般在计划停机期间编制该索引。删除索引或更改现有索引时也会发生同样的情况。在删除索引时，一旦删除，该索引即不可用。
 
-### 有蓝绿部署的索引管理 {#index-management-with-blue-green-deployment}
+### 使用滚动部署进行索引管理 {#index-management-with-rolling-deployments}
 
-有蓝绿部署时不会产生停机时间。在升级过程中，有时同时针对同一存储库运行应用程序的旧版本（例如，版本 1）和新版本（版本 2）。如果版本 1 要求某个索引可用，则在版本 2 中不得删除此索引：应稍后在确保应用程序的版本 1 不再运行时删除此索引，例如在版本 3 中。此外，应用程序应编写得即使版本 2 正在运行以及有版本 2 的索引可用，版本 1 也能正常运行。
+使用滚动部署，不会出现停机。 在更新过程中，应用程序的旧版本（例如，版本1）和新版本（版本2）会针对同一存储库并行运行。 如果版本1要求某个索引可用，则不得在版本2中删除此索引。索引应稍后删除，例如在版本3中，此时可以保证应用程序的版本1不再运行。 此外，应用程序应编写得即使版本 2 正在运行以及有版本 2 的索引可用，版本 1 也能正常运行。
 
 升级到新版本后，系统可以对旧索引进行垃圾回收。旧索引可能仍会保留一段时间，以加快回滚（如果需要回滚）。
 
