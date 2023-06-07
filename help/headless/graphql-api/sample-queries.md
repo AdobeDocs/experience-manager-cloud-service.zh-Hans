@@ -3,10 +3,10 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
+source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 100%
+source-wordcount: '1760'
+ht-degree: 92%
 
 ---
 
@@ -356,6 +356,58 @@ query {
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### 示例查询 – 所有城市的名称 已标记为城市间断 {#sample-names-all-cities-tagged-city-breaks}
+
+如果您：
+
+* 创建各种标记，已命名 `Tourism` ： `Business`， `City Break`， `Holiday`
+* 并将它们分配给各种主控变体 `City` 实例
+
+然后，您可以使用查询返回 `name` 和 `tags`中所有标记为“城市间断”的条目 `city`架构。
+
+**示例查询**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**示例结果**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1533,6 +1585,62 @@ query {
 }
 ```
 
+### 给定模型的多个内容片段及其变体的示例查询 {#sample-wknd-multiple-fragment-variations-given-model}
+
+此查询查找：
+
+* 类型为的内容片段 `article` 和所有变体
+
+**示例查询**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### 附加了特定标记的给定模型的内容片段变体示例查询{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+此查询查找：
+
+* 类型为的内容片段 `article` 具有一个或多个标记的变体 `WKND : Activity / Hiking`
+
+**示例查询**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
 ### 给定区域设置的多个内容片段的示例查询 {#sample-wknd-multiple-fragments-given-locale}
 
 此查询查找：
@@ -1610,6 +1718,84 @@ query {
         }
     }
 }
+```
+
+### 示例查询，按_tags ID进行筛选并排除变量 {#sample-filtering-tag-not-variations}
+
+此查询查找：
+
+* 类型为的内容片段 `vehicle` 具有标记 `big-block`
+* 排除变体
+
+**示例查询**
+
+```graphql
+query {
+  vehicleList(
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    items {
+      _variation
+      _path
+      type
+      name
+      model
+      fuel
+      _tags
+    }
+  }
+} 
+```
+
+### 按_tags ID筛选并包含变量的示例查询 {#sample-filtering-tag-with-variations}
+
+此查询查找：
+
+* 类型为的内容片段 `vehicle` 具有标记 `big-block`
+* 包括变体
+
+**示例查询**
+
+```graphql
+{
+  enginePaginated(after: "SjkKNmVkODFmMGQtNTQyYy00NmQ4LTljMzktMjhlNzQwZTY1YWI2Cmo5", first: 9 ,includeVariations:true, sort: "name",
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    edges{
+    node {
+        _variation
+        _path
+        name
+        type
+        size
+        _tags
+        _metadata {
+          stringArrayMetadata {
+            name
+            value
+          }
+        }
+    }
+      cursor
+    }
+  }
+} 
 ```
 
 ## 示例内容片段结构（用于 GraphQL） {#content-fragment-structure-graphql}

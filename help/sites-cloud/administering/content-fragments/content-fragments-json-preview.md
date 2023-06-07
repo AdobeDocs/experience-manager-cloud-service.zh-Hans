@@ -4,7 +4,7 @@ description: 了解如何在实施 AEM 无头解决方案时轻松预览内容�
 feature: Content Fragments
 role: User
 exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 0d7d89e0d8343e7e00fdecb91a20dd7d4a736851
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 100%
@@ -22,3 +22,7 @@ ht-degree: 100%
 您可以查看当前片段的 JSON 表示形式。 例如：
 
 ![内容片段编辑器 – 片段的预览](assets/cfm-preview-02.png)
+
+<!--
+**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+-->

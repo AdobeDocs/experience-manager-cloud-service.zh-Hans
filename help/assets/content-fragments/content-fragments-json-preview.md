@@ -2,7 +2,7 @@
 title: 预览 — JSON呈现（资产 — 内容片段）
 description: 了解如何在实施 AEM 无头解决方案时轻松预览内容片段的 JSON 表示形式。
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 94%
@@ -20,3 +20,7 @@ ht-degree: 94%
 您可以查看当前片段的 JSON 表示形式。 例如：
 
 ![内容片段编辑器 – 片段的预览](assets/cfm-preview-02.png)
+
+<!--
+**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+-->

@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
+source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
 workflow-type: tm+mt
-source-wordcount: '4789'
-ht-degree: 99%
+source-wordcount: '4934'
+ht-degree: 96%
 
 ---
 
@@ -935,6 +935,13 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 
 
+
+* 筛选条件 `includeVariations` 包含在 `List` 和 `Paginated` 查询类型。  要在查询结果中检索内容片段变体，请 `includeVariations` 筛选器必须设置为 `true`.
+
+   * 参见 [给定模型的多个内容片段及其变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   >[!CAUTION]
+   >筛选条件 `includeVariations` 和系统生成的字段 `_variation` 不能在同一查询定义中一起使用。
+
 * 如果您希望使用逻辑 OR：
    * 使用 ` _logOp: OR`
    * 请参阅[示例查询 – 所有名为“Jobs”或“Smith”的人](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
@@ -964,6 +971,10 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
          >
          >如果内容片段不存在给定的变量，则主控变量将作为（回退）默认值返回。
 
+         >[!CAUTION]
+         >
+         >系统生成的字段 `_variation` 不能与过滤器一起使用 `includeVariations`.
+
          * 请参阅[示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * 对于[图像传递](#image-delivery)：
 
@@ -976,6 +987,17 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
          * [具有完整参数的图像传递的示例查询](#image-delivery-full-parameters)
 
          * [具有单个指定参数的图像传递的示例查询](#image-delivery-single-specified-parameter)
+   * `_tags` ：用于显示包含标记的内容片段或变量的ID；这是一个数组 `cq:tags` 标识符。
+
+      * 参见 [示例查询 — 标记为城市分隔符的所有城市的名称](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * 参见 [附加了特定标记的给定模型的内容片段变体示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * 参见 [示例查询，按_tags ID进行筛选并排除变量](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * 参见 [按_tags ID筛选并包含变量的示例查询](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+      >[!NOTE]
+      >
+      >标记也可以通过列出内容片段的元数据来查询。
+
    * 以及操作：
 
       * `_operator`：应用特定运算符；`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`
@@ -985,6 +1007,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
          * 请参阅[示例查询 – 筛选数组中必须至少出现一次的项](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`：在查询时忽略大小写
          * 请参阅[示例查询 – 名称中包含 SAN 的所有城市，不考虑大小写](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 
