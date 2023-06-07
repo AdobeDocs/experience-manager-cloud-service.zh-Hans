@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 67e801cc22adfbe517b769e829e534eadb1806f5
+source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
 workflow-type: tm+mt
-source-wordcount: '3053'
-ht-degree: 100%
+source-wordcount: '3595'
+ht-degree: 84%
 
 ---
 
@@ -537,3 +537,34 @@ Header always set Cache-Control private
 > 此过程将导致在删除和重新创建之间停用高级网络服务
 
 如果停机会对业务产生重大影响，请联系客户支持以寻求帮助，并说明已创建的内容和更改的原因。
+
+## 其他发布区域的高级联网配置 {#advanced-networking-configuration-for-additional-publish-regions}
+
+当向已配置高级联网的环境添加其他区域时，来自其他发布区域的与高级联网规则匹配的流量将默认路由到主区域。 但是，如果主区域不可用，则如果未在其他区域启用高级网络，则将丢弃高级网络流量。 如果您希望在一个区域出现中断时优化延迟并提高可用性，则必须为其他发布区域启用高级联网。 以下各节介绍了两种不同的场景。
+
+>[!NOTE]
+>
+>所有区域共享相同的 [环境高级联网配置](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration)因此，无法根据流量流出的区域将流量路由到不同的目的地。
+
+### 专用出口IP地址 {#additional-publish-regions-dedicated-egress}
+
+#### 已在主区域中启用高级网络 {#already-enabled}
+
+如果已在主区域中启用高级联网配置，请按照以下步骤操作：
+
+1. 如果您已锁定基础架构，因此已将专用AEM IP地址列入允许列表，则建议暂时禁用该基础架构中的任何拒绝规则。 如果不这样做，则将在短期内由您自己的基础设施拒绝来自新区域IP地址的请求。 请注意，如果您已通过完全限定域名(FQDN)锁定基础架构，则无需执行此操作，(`p1234.external.adobeaemcloud.com`例如)，因为所有AEM区域都从同一FQDN输出高级联网流量
+1. 通过对Cloud Manager创建网络基础架构API的POST调用，为辅助区域创建程序范围内的网络基础架构，如高级网络文档中所述。 有效负载的JSON配置与主区域之间的唯一区别是区域属性
+1. 如果需要按IP锁定您的基础架构以允许AEM流量，请添加匹配的IP `p1234.external.adobeaemcloud.com`. 每个区域应该有一个。
+
+#### 尚未在任何区域配置高级网络 {#not-yet-configured}
+
+该过程与之前的说明大多相似。 但是，如果尚未为生产环境启用高级联网，则可以通过先在暂存环境中启用配置来测试配置：
+
+1. 通过POST [Cloud Manager创建网络基础架构API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). 有效负载的JSON配置与主区域之间的唯一区别是区域属性。
+1. 对于暂存环境，请通过运行启用和配置环境范围的高级联网 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. 有关更多信息，请参阅API文档 [此处](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. 如有必要，最好通过FQDN锁定外部基础架构(例如 `p1234.external.adobeaemcloud.com`)。 否则，您可以按IP地址执行此操作
+1. 如果暂存环境按预期工作，请为生产启用并配置环境范围的高级联网配置。
+
+#### VPN {#vpn-regions}
+
+此过程与专用出口IP地址说明几乎相同。 唯一的区别是，除了与主区域配置不同的区域属性外， `connections.gateway` 字段可以选择配置为路由到由您的组织运营的不同VPN端点，可能在地理上更接近新区域。

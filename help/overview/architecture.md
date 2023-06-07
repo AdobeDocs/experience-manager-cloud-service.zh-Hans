@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
+source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 100%
+source-wordcount: '1827'
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,15 @@ AEM as a Cloud Service 最初提供两种类型的程序：
       * 资产集成和处理会使用专用的资产计算服务。
    * 预览层由单个预览节点构成。这用于在发布到发布层之前保证内容质量。
 
-   * 发布层由单个发布场中的两个或多个节点组成：它们可以相互独立地运作。每个节点均由一个 AEM 发布者和一个配备 AEM 调度程序模块的 Web 服务器组成。它可根据站点流量需求自动缩放。
+   * 发布层由单个发布场中的两个或多个节点组成。
+
+      * 节点可以相互独立地运作。
+
+      * 每个节点均由一个 AEM 发布者和一个配备 AEM 调度程序模块的 Web 服务器组成。
+
+      * 它可根据站点流量需求自动缩放。
+
+      * 但是，默认情况下，主区域中有一个发布场 [其他发布区域](/help/operations/additional-publish-regions.md) 可能获得许可。
 
       * 最终用户或站点访客可通过 AEM 发布服务访问网站。
 
