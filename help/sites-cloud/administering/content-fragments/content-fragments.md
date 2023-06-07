@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2058'
-ht-degree: 100%
+source-wordcount: '2127'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +59,7 @@ ht-degree: 100%
 >* [内容片段配置用于呈现的组件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
+>* [使用MSM对资产重用内容片段](/help/assets/reuse-assets-using-msm.md) (只能通过 **资产** console)
 
 
 通信渠道的数量在逐年增加。 通常，渠道称为投放机制，如：
@@ -112,6 +113,16 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 >[!NOTE]
 >
 >AEM 还支持片段内容的翻译。 请参阅[翻译资产](/help/assets/translate-assets.md)以了解更多信息。
+
+## 发布并预览 {#publish-and-preview}
+
+与所有内容一样，您最终需要将内容片段发布到 **[发布服务](/help/overview/architecture.md#runtime-architecture)**.
+
+在此之前，您还可以预览使用内容片段交付的体验，方法是 [发布您的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) 到AEM **[预览服务](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>发布到 **预览服务** 只能从 **内容片段** 控制台。
 
 ## 内容类型 {#content-type}
 

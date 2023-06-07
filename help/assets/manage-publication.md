@@ -1,21 +1,20 @@
 ---
 title: 管理发布
 description: 将资产发布或取消发布到Experience Manager Assets、Dynamic Media和Brand Portal
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 10%
+source-wordcount: '1630'
+ht-degree: 6%
 
 ---
 
 # 在Experience Manager Assets中管理发布 {#manage-publication-in-aem}
 
-作为 [!DNL Adobe Experience Manager Assets] 管理员，您可以将资源和包含资源的文件夹从创作实例发布到 [!DNL Experience Manager Assets]， [!DNL Dynamic Media]、和 [!DNL Brand Portal]. 此外，您还可以安排在稍后的日期或时间执行资产或文件夹的发布工作流。发布后，用户可以访问资产并将其进一步分发给其他用户。 默认情况下，您可以将资源和文件夹发布到 [!DNL Experience Manager Assets]. 但是，您可以配置 [!DNL Experience Manager Assets] 启用发布到 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 和 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+作为 [!DNL Adobe Experience Manager Assets] 管理员，您可以将资源和包含资源的文件夹从创作实例发布到 [!DNL Experience Manager Assets]， [!DNL Dynamic Media]、和 [!DNL Brand Portal]. 此外，您还可以安排在稍后的日期或时间发布资源或文件夹。 发布后，用户可以访问资产并将其进一步分发给其他用户。 默认情况下，您可以将资源和文件夹发布到 [!DNL Experience Manager Assets]. 但是，您可以配置 [!DNL Experience Manager Assets] 启用发布到 [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html) 和 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
 您可以使用以下任一方式，在资产或文件夹级别发布或取消发布资产 **[!UICONTROL 快速发布]** 或 **[!UICONTROL 管理发布]** 中提供的选项 [!DNL Experience Manager Assets] 界面。 如果您对中的原始资源或文件夹进行后续修改 [!DNL Experience Manager Assets]，则在您从重新发布之前，更改不会反映在发布实例中 [!DNL Experience Manager Assets]. 它确保进行中的更改在发布实例中不可用。 发布实例中只有管理员发布的已批准更改才可用。
 
@@ -24,6 +23,7 @@ ht-degree: 10%
 * [稍后发布资产](#publish-assets-later)
 * [将资源发布到Dynamic Media](#publish-assets-to-dynamic-media)
 * [将资产发布到 Brand Portal](#publish-assets-to-brand-portal)
+* [请求发布](#request-publication)
 * [限制和提示](#limitations-and-tips)
 
 ## 使用快速发布功能发布资产 {#quick-publish}
@@ -177,24 +177,27 @@ Only the selected folder content and references are published.
 * [将文件夹发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
 * [将收藏集发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
 
+## 请求发布 {#request-publication}
+
+此 `Request Publication` 选项有助于在发布资产之前验证资产的工作流 [!DNL AEM] 资源环境。 [!DNL AEM] 为各种用户提供不同级别的权限。 您可以是 *参与者* 正在上传资产，但在验证上传后才能发布这些资产的用户。 此外，身为 *管理员* 您可以管理资产的读取和写入工作流。
+
+请求发布选项适用于以下用户：
+* **投稿人：** 如果您是可以对下列内容做出贡献的用户 [!DNL AEM] 因此，您对资源的访问权限有限。 [!DNL AEM] 资产工作流程。 `Manage publication` 按钮对您而言是隐藏的。 作为投稿人，您只能通过添加资产进行投稿，但无法发布资产或拥有工作流的读取访问权限。
+
+* **工作流用户：** 此用户无法发布资产，但具有工作流的读取访问权限。 作为工作流用户，您可以：
+   * 请求发布
+   * 视图 `Manage publication` 按钮
+   * 计划工作流并查看选项 `schedule now` 和 `schedule later`
+
+* **管理员：** 作为管理员类型的用户，您可以管理资产的整体工作流步骤。 `Manage publication` 按钮对您可见。 如果目标 `publish` 之后，您可以为工作流步骤计划资产。
+
+>[!NOTE]
+>
+>如果 [!DNL Dynamic Media] 选择作为目标，然后为禁用工作流步骤 **工作流用户** 和 **管理员** 用户。
+
 ## 限制和提示 {#limitations-and-tips}
 
-* 选项 [!UICONTROL 管理发布] 仅适用于具有复制权限的用户帐户。
+* `Manage publication` 至少对工作流具有读取权限的用户可以使用。
 * 未发布空文件夹。
 * 如果发布正在处理的资源，则仅发布原始内容。 缺少演绎版。 等待处理完成，然后在处理完成后发布或重新发布资产。
 * 取消发布复杂资产时，请仅取消发布资产。 避免取消发布引用，因为它们可能会被其他已发布的资产引用。
-
-**另请参阅**
-
-* [翻译资源](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [资源支持的文件格式](file-format-support.md)
-* [搜索资源](search-assets.md)
-* [连接的资源](use-assets-across-connected-assets-instances.md)
-* [资源报告](asset-reports.md)
-* [元数据架构](metadata-schemas.md)
-* [下载资源](download-assets-from-aem.md)
-* [管理元数据](manage-metadata.md)
-* [搜索 Facet](search-facets.md)
-* [管理收藏集](manage-collections.md)
-* [批量元数据导入](metadata-import-export.md)

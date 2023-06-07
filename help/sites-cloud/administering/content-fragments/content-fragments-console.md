@@ -5,10 +5,10 @@ landing-page-description: 了解如何从内容片段控制台中管理内容片
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
+source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 100%
+source-wordcount: '1106'
+ht-degree: 95%
 
 ---
 
@@ -102,11 +102,11 @@ ht-degree: 100%
 ![内容片段控制台 – 选定片段的工具栏](assets/cfc-fragment-toolbar.png)
 
 * **打开**
-* **发布**（和 **取消发布**）
+* **[发布](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)**（和 **[取消发布](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#unpublishing-a-fragment)**）
 * **复制**
 * **移动**
 * **重命名**
-* **删除**
+* **[删除](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#deleting-a-fragment)**
 
 >[!NOTE]
 >
@@ -124,6 +124,11 @@ ht-degree: 100%
    * 提供用于在控制台中打开文件夹的链接。将鼠标悬停在文件夹名称上将显示 JCR 路径。
 * **状态**
    * 仅供参考
+* **预览**
+   * 仅供参考:
+      * **同步**：内容片段在上同步 **作者** 和 **预览** 服务。
+      * **不同步**：内容片段在上的不同步 **作者** 和****预览** 服务。 您需要 **Publish** 到 **预览** 以确保两个实例恢复同步。
+      * blank：内容片段不存在于 **预览** 服务。
 * **修改时间**
    * 仅供参考
 * **修改人**

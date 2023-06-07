@@ -2,10 +2,10 @@
 title: 内容片段模型（资产 — 内容片段）
 description: 了解内容片段模型如何作为AEM中Headless内容的基础，以及如何使用结构化内容创建内容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 98%
+source-wordcount: '2917'
+ht-degree: 97%
 
 ---
 
@@ -179,6 +179,10 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
    >[!NOTE]
    >
    >变体可以具有与同一片段变体相同的&#x200B;*唯一*&#x200B;值，但与其他片段变体中使用的值不同。
+
+   >[!CAUTION]
+   >
+   >如果要使用MSM（这将创建内容片段的副本），则任意 **独特** 应从在相应的内容片段模型中使用的任何数据类型中删除约束。
 
 * 有关特定数据类型及其属性的更多详细信息，请参阅&#x200B;**[内容参考](#content-reference)**。
 

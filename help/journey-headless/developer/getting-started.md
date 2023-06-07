@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 100%
+source-wordcount: '3090'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,10 @@ ht-degree: 100%
 ### 发布实例 {#publish}
 
 在创作实例中创建内容后，必须发布内容以供其他服务使用。发布实例包含所有已发布的内容。
+
+### 预览服务 {#preview}
+
+在发布到发布实例之前，您还可以将内容片段发布到 **预览服务** 以进行测试和审查。 这是从以下位置完成的 **内容片段** 控制台。
 
 ### 复制 {#replication}
 

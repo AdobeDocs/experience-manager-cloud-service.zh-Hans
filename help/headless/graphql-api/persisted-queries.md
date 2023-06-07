@@ -3,10 +3,10 @@ title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
+source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 90%
 
 ---
 
@@ -355,7 +355,11 @@ curl -u admin:admin -X POST \
 
 >[!NOTE]
 >
->OSGi 配置仅适用于发布实例。创作实例上存在该配置，但忽略了它。
+>对于缓存控制，OSGi配置仅适用于发布实例。 创作实例上存在该配置，但忽略了它。
+
+>[!NOTE]
+>
+>此 **持久查询服务配置** 还用于 [配置查询响应代码](#configuring-query-response-code).
 
 发布实例的默认 OSGi 配置：
 
@@ -371,6 +375,26 @@ curl -u admin:admin -X POST \
    {style="table-layout:auto"}
 
 * 如果不可用，OSGi 配置将使用[发布实例的默认值](#publish-instances)。
+
+## 配置查询响应代码 {#configuring-query-response-code}
+
+默认情况下， `PersistedQueryServlet` 发送 `200` 执行查询时的响应，而不考虑实际结果。
+
+您可以 [配置OSGi设置](/help/implementing/deploying/configuring-osgi.md) 对于 **持久查询服务配置** 控制返回的状态代码 `/execute.json/persisted-query` 端点（当持久查询中存在错误时）。
+
+>[!NOTE]
+>
+>此 **持久查询服务配置** 还用于 [管理缓存](#cache-osgi-configration).
+
+字段 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`)可按要求定义：
+
+* `false` （默认值）：持久查询是否成功无关紧要。 此 `/execute.json/persisted-query` 将返回状态代码 `200` 和 `Content-Type` 返回的标头将为 `application/json`.
+
+* `true`：端点将返回 `400` 或 `500` 当运行持久查询时出现任何形式的错误时适用。 还有返回的 `Content-Type` 将为 `application/graphql-response+json`.
+
+   >[!NOTE]
+   >
+   >有关详细信息，请参阅https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## 为应用程序使用的查询 URL 编码 {#encoding-query-url}
 

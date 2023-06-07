@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9c4d416b37be684aae37d42a02cc86dfa87fbc2f
+source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
 workflow-type: tm+mt
-source-wordcount: '4769'
-ht-degree: 100%
+source-wordcount: '4789'
+ht-degree: 99%
 
 ---
 
@@ -134,12 +134,16 @@ AEM 提供将查询（两种类型）转换为[持久查询的功能，可由 Di
 
 您可以使用 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 测试和调试 GraphQL 查询。
 
-## 针对创作环境和发布环境的用例 {#use-cases-author-publish-environments}
+## 创作、预览和发布的用例 {#use-cases-author-preview-publish}
 
 用例可以依赖于 AEM as a Cloud Service 环境的类型：
 
 * 发布环境；用于：
    * 查询 JS 应用程序的数据（标准用例）
+
+* 预览环境；用于：
+   * 在发布环境中部署之前预览查询
+      * 查询 JS 应用程序的数据（标准用例）
 
 * 创作环境；用于：
    * 查询用于“内容管理用途”的数据：

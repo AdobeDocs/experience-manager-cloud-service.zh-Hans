@@ -4,10 +4,10 @@ description: 了解如何通过 AEM 强大的 Live Copy 和多站点管理器功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 100%
+source-wordcount: '2710'
+ht-degree: 99%
 
 ---
 
@@ -29,6 +29,10 @@ ht-degree: 100%
 * [配置 Live Copy 同步](live-copy-sync-config.md)
 * [MSM 转出冲突](rollout-conflicts.md)
 * [MSM 最佳实践](best-practices.md)
+
+>[!NOTE]
+>
+>MSM还可用于资产，包括内容片段。 有关更多详细信息，请参阅 [使用MSM对资产重用内容片段](/help/assets/reuse-assets-using-msm.md) （只能通过Assets控制台使用）。
 
 ## 可能的情况 {#possible-scenarios}
 

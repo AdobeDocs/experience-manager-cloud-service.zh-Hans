@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '3271'
-ht-degree: 11%
+source-wordcount: '3404'
+ht-degree: 12%
 
 ---
 
@@ -25,6 +25,16 @@ ht-degree: 11%
 * 只需创建资产一次，然后制作这些资产的副本以供在站点的其他区域重复使用。
 * 使多个副本保持同步，并更新一次原始主副本，以将更改推送到子副本。
 * 通过暂时或永久暂停父资产与子资产之间的链接来进行本地更改。
+
+>[!NOTE]
+>
+>的MSM [!DNL Assets] 功能包括内容片段，其存储为 [!DNL Assets] （尽管被视为Sites功能）。
+
+>[!CAUTION]
+>
+>内容片段的MSM仅在通过以下方式使用内容片段时可用 **[!UICONTROL 资产]** 控制台。
+>
+>MSM功能为 *非* 使用时可用 **[!UICONTROL 内容片段]** 控制台。
 
 ## 了解MSM的好处和概念 {#concepts}
 
@@ -43,7 +53,7 @@ MSM维护源资产与其活动副本之间的实时关系，以便：
 
 **Live Copy：** 与其源同步的源资产/文件夹的副本。 活动副本可以是更多活动副本的来源。 了解如何创建LC。
 
-**继承：** Live Copy资产/文件夹及其源之间的链接/引用，系统使用它来记住将更新发送到何处。 元数据字段的继承在粒度级别存在。 可以删除选择性元数据字段的继承，同时保留源及其Live Copy之间的实时关系。
+**继承：** Live Copy资产/文件夹及其源之间的链接/引用，系统使用它来记住将更新发送到何处。 元数据字段、内容片段变体和字段的继承在粒度级别存在。 可以删除所选项目的继承，同时保留源及其Live Copy之间的实时关系。
 
 **转出：** 一个操作，用于将对源所做的修改推送到其活动副本的下游。 可以使用转出操作一次性更新一个或多个活动副本。 请参阅转出。
 
@@ -66,7 +76,7 @@ MSM维护源资产与其活动副本之间的实时关系，以便：
 * 方法1：选择源资源并单击 **[!UICONTROL 创建]** > **[!UICONTROL Live Copy]** 从顶部的工具栏中。
 * 方法2：输入 [!DNL Experience Manager] 用户界面，单击 **[!UICONTROL 创建]** > **[!UICONTROL Live Copy]** 从界面的右上角。
 
-您可以一次创建一个资产或文件夹的活动副本。 您可以创建派生自作为Live Copy本身的资产或文件夹的Live Copy。 用例不支持内容片段(CF)。 在尝试创建活动副本时，CF将按原样复制，而不与任何关系。 复制的CF是及时快照，更新原始CF时不会更新。
+您可以一次创建一个资产或文件夹的活动副本。 您可以创建派生自作为Live Copy本身的资产或文件夹的Live Copy。
 
 要使用第一种方法创建活动副本，请执行以下步骤：
 
@@ -233,6 +243,38 @@ MSM维护源资产与其活动副本之间的实时关系，以便：
 >
 >如果关系已暂停，则同步操作在工具栏中不可用。 虽然同步操作在引用边栏中可用，但即使成功转出，修改也不会传播。
 
+## 取消并重新启用单个项目的继承 {#canceling-reenabling-inheritance-individual-items}
+
+您可以取消的Live Copy继承：
+
+* 元数据字段
+* 内容片段变量
+* 内容片段数据字段
+
+这意味着该项不再与源组件同步。 如果需要，您可以稍后启用继承。
+
+### 取消继承 {#cancel-inheritance}
+
+要取消继承，请执行以下操作：
+
+1. 选择 **取消继承** 图标，位于所需项目旁边：
+
+   ![同步操作提取对源所做的更改](assets/cancel-inheritance-icon.png)
+
+1. 在取消继承对话框中，单击是确认操作。
+
+### 重新启用继承 {#reenable-inheritance}
+
+要重新启用继承，请执行以下操作：
+
+1. 要启用项目的继承，请选择 **重新启用继承** 图标来查找所需项目：
+
+   ![同步操作提取对源所做的更改](assets/re-enable-inheritance-icon.png)
+
+   >[!NOTE]
+   >
+   >当您重新启用继承时，项目不会自动与源同步。 如果需要，您可以手动请求同步。
+
 ## 暂停和恢复关系 {#suspend-resume}
 
 您可以临时暂停关系，以阻止Live Copy接收对源资产或文件夹所做的修改。 也可以恢复Live Copy的关系，以开始从源接收修改。
@@ -319,11 +361,13 @@ Live Copy是创建时原始源的复制副本。 Live Copy的元数据值继承�
 * 不支持在的MSM中配置页面属性上的MSM锁定 [!DNL Assets].
 * 对于MSM，用于 [!DNL Assets]，仅使用 **[!UICONTROL 标准转出配置]**. 其他转出配置不适用于MSM的 [!DNL Assets].
 
+>[!NOTE]
+>
+>请记住，内容片段的MSM(通过 **[!UICONTROL 资产]** console)使用Assets功能；这是因为将它们存储为Assets（尽管视为Sites功能）。
+
 ## MSM的限制和已知问题 [!DNL Assets] {#limitations}
 
 以下是MSM对的限制 [!DNL Assets].
-
-* 不支持内容片段。 尝试创建活动副本时，内容片段按原样复制，没有任何关系。 复制的内容片段是及时快照，在更新原始内容片段时不会更新。
 
 * MSM不适用于已启用元数据写回的情况。 在写回时，继承中断。
 
@@ -341,3 +385,4 @@ Live Copy是创建时原始源的复制副本。 Live Copy的元数据值继承�
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [使用内容片段](/help/assets/content-fragments/content-fragments.md)

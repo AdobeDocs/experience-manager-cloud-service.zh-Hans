@@ -2,10 +2,10 @@
 title: 学习创作基础知识
 description: 了解使用内容片段为 Headless CMS 创作内容的概念和机制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 100%
+source-wordcount: '1711'
+ht-degree: 95%
 
 ---
 
@@ -28,16 +28,19 @@ ht-degree: 100%
 
 在您掌握内容片段之前，这里提供了有关如何使用 AEM 的（非常）简短的介绍....但没有什么能真正取代登录和尝试使用系统的体验。
 
-### 创作和发布 {#author-preview-publish}
+### “创作”、“预览”和“发布” {#author-preview-publish}
 
-AEM 安装通常至少包含两个环境：
+AEM安装通常包括三个环境：
 
 * 创作
 * 发布
+* 预览
 
 您登录并使用创作环境来生成您的内容。准备就绪后，您可以发布您的内容以使其公开可用。对于 Headless，这针对的是其他应用程序；对于网页，这针对的是网络上的读者。
 
 有关更多详细信息，请参阅创作概念。
+
+从 **内容片段** 控制台，您还可以发布到 **预览服务**，以进行测试和预览，然后再发布。 请参阅发布和预览片段。
 
 ### 登录 {#signing-in}
 
@@ -263,9 +266,13 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 完成片段后，您可以&#x200B;**发布**&#x200B;它，以便 Headless 应用程序可使用它。
 
-可以在编辑器中执行发布操作（或从&#x200B;**内容片段**&#x200B;控制台或 **Assets** 控制台的工具栏中）：
+发布操作在编辑器中可用：
 
 ![内容片段编辑器 – 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+
+>[!NOTE]
+>
+>您还可以从以下任一位置发布片段 **资产** 或 **内容片段** 控制台。
 
 ## 后续内容 {#whats-next}
 
@@ -289,21 +296,26 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
    * [边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-   * 发布
-
-      * [快速发布](/help/assets/manage-publication.md#quick-publish)
-
-      * [管理发布](/help/assets/manage-publication.md#manage-publication)
-
 * [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [将配置应用到 Assets 文件夹](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [将配置应用到 Assets 文件夹](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [创建内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [创建内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [变体 - 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
+   * 发布
+
+      * 从编辑器中，或 **资产** 控制台
+
+         * [快速发布](/help/assets/manage-publication.md#quick-publish)
+
+         * [管理发布](/help/assets/manage-publication.md#manage-publication)
+      * 从 **内容片段** 控制台
+
+         * [发布和预览内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
    * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [内容片段模型 – 数据类型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -311,6 +323,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
       * [内容片段模型 – 属性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+
 
 
 * 快速入门指南
