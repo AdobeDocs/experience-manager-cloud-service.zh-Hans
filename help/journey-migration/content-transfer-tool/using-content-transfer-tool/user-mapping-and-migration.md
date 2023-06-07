@@ -2,10 +2,10 @@
 title: 用户映射和主体迁移
 description: 用户映射和主体迁移概述
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 12%
+source-wordcount: '832'
+ht-degree: 11%
 
 ---
 
@@ -25,9 +25,13 @@ ht-degree: 12%
 
 对 AEM as a Cloud Service 的一项重大更改是完全集成使用 Adobe ID 来访问创作层。此过程需要使用 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 用于管理用户和用户组。 用户配置文件信息集中存储在AdobeIdentity Management System (IMS)中，可在所有Adobe云应用程序之间提供单点登录。 有关更多详细信息，请参阅 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)。由于此更改，现有用户必须映射到其IMS ID，以避免在Cloud Service创作实例上出现重复用户。 由于传统AEM中的组与IMS中的组存在根本上的不同，因此不会映射组，但在迁移完成后必须协调两组组。
 
-## 用户映射和迁移详细信息 {#user-mapping-detail}
+## 用户迁移详细信息 {#user-migration-detail}
 
-内容传输工具和Cloud Acceleration Manager会迁移与正在迁移的内容关联的任何用户。 此映射是自动完成的，是否完成可以在开始提取之前通过切换进行控制。 用户在开始提取时可以覆盖切换的默认设置。
+内容传输工具和Cloud Acceleration Manager会将与正在迁移的内容关联的任何用户迁移到云系统。
+
+## 用户映射详细信息 {#user-mapping-detail}
+
+可以将AEM用户映射到具有相同电子邮件地址的相应Adobe IMS用户。  此映射可以在CTT中自动完成，并且是否完成可以在开始提取之前通过切换进行控制。 用户在开始提取时可以覆盖切换的默认设置。
 
 * 如果源系统是一个创作实例，则默认情况下，执行映射的选择是 _日期_，因为这是推荐的流程。
 * 如果源系统是发布实例，则默认情况下，执行映射的选择是 _关闭_，因为通常不会迁移用户或在发布实例上使用用户。
