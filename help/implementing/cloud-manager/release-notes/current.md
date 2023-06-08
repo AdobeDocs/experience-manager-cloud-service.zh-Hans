@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.5.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.5.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.6.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.6.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4340b957cea86452f916ab615b383aabacc21676
+source-git-commit: 80a5f58119dc304161d324491cd65c50e981ccd4
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 100%
+source-wordcount: '210'
+ht-degree: 37%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.5.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.6.0 的发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.5.0 版本的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.6.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,15 +21,16 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 2023.5.0 中的 Cloud Manager 的发布日期是 2023 年 5 月 11 日。下一个版本计划于 2023 年 6 月 8 日发布。
+AEMas a Cloud Service中的Cloud Manager 2023.6.0版的发布日期是2023年6月8日。 下一个版本计划于2023年7月6日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 产品、功能和 UI 测试支持已扩大至[非生产管道测试](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
-* 除了启用测试上游之外，[UI 测试支持已扩大至 Cypress 测试。](/help/implementing/cloud-manager/ui-testing.md)
-* 现在可通过 Cloud Manager UI 从较高环境向较低环境执行[自助内容复制](/help/implementing/developing/tools/content-copy.md)。
-* 已增强管道执行验证步骤，以便在执行过程中的早期验证复制队列的状态。这样确保部署步骤不受队列被阻塞的影响，应由 AEM 管理员用户直接在创作环境中解决阻塞问题。
+* 创建新时 [项目或环境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 现在，该名称仅接受字母数字字符和一组有限的特殊字符。
+* 恢复时 [生产管道，](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 现在，批准步骤中会显示确认对话框。
+* 对于 **[客户功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** 和 **[自定义用户界面测试](/help/implementing/cloud-manager/ui-testing.md)** 管道步骤，新 `INCOMPLETE` 现在可以为status ，这表示此类测试不存在，因此未执行。
+   * 在这种情况下，管道不会失败并进入下一步。
 
 ## 错误修复 {#bug-fixes}
 
-* 在环境的名称中使用多字节字符时创建环境不再失败。
+* 此 [Web层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 不再错误地为仅用于Assets的项目启用。
+* 添加了更强大的验证，以防止在环境预配期间出现某些类型的故障。
