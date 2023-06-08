@@ -4,9 +4,9 @@ description: 了解如何为配置Adobe Acrobat Sign [!DNL AEM Forms] as a Cloud
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1932'
 ht-degree: 31%
 
 ---
@@ -81,6 +81,7 @@ ht-degree: 31%
    1. 选择为配置的应用程序 [!DNL AEM Forms]，然后点按 **[!UICONTROL 为应用程序配置OAuth]**.
    1. 在 **[!UICONTROL 重定向URL]** 框中，添加在上一步（步骤8）中复制的URL并单击 **[!UICONTROL 保存]**.
    1. 为以下内容启用以下范围 [!DNL Adobe Acrobat Sign] 应用程序并单击 **[!UICONTROL 保存]**.
+
    * [!DNL aggrement_read]
    * [!DNL aggrement_write]
    * [!DNL aggrement_send]
@@ -109,6 +110,9 @@ ht-degree: 31%
 现在，您可以 [使用将Adobe Acrobat Sign字段添加到自适应表单](working-with-adobe-sign.md). 确保将用于 Cloud Service 的配置容器添加到为 [!DNL Adobe Acrobat Sign] 启用的所有自适应表单。您可以在自适应表单的属性中指定配置容器。
 
 ## 将AEM Forms与适用于政府的Adobe Acrobat Sign Solutions连接 {#adobe-acrobat-sign-for-government}
+
+|注意|[!BADGE 预发行文档]{type=Caution tooltip="黄色状态"}
+<span class="preview"> 此部分包含预发行文档，这些信息可能会发生更改。</span>
 
 将AEM Forms与面向政府的Adobe Acrobat Sign Solutions连接是一个多步骤的过程。 它涉及：
 

@@ -4,15 +4,18 @@ description: 了解如何轻松创建自适应表单或将自适应表单无缝�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3196'
 ht-degree: 31%
 
 ---
 
 
 # 创建自适应表单或将自适应表单添加到 AEM Sites 页面 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|注意|[!BADGE 预发行文档]{type=Caution tooltip="黄色状态"}
+<span class="preview"> 这是预发行文档，可能会发生更改。</span>
 
 借助 AEM Forms，您可以将自适应表单无缝整合到您的网页中。这使您的访问者能够方便地填写和提交表格，而无需离开他们所在的页面。这样，他们便可以在与表单积极互动的同时，轻松地与网站的其他元素保持互动。
 
@@ -122,7 +125,7 @@ AEM Forms 会提供自适应表单容器和自适应表单嵌入组件。您可�
 
 +++
 
-+++ 启用 **[!UICONTROL 自适应表单容器]
++++ 启用自适应Forms容器
 
 若要启用模板策略中的[!UICONTROL 自适应表单容器]组件，请执行以下步骤：
 
@@ -246,7 +249,7 @@ AEM Forms 会提供自适应表单容器和自适应表单嵌入组件。您可�
 
 ### 使用Forms Portal草稿预填充服务 {#forms-portal-prefill-service}
 
-您可以使用Forms Portal草稿预填充服务预填充使用已保存自适应表单的草稿的表单字段。 在使用Forms门户草稿预填充服务之前，请确保 [已启用和配置自适应Forms Portal组件 ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) 为您的环境而设计。
+您可以使用Forms Portal草稿预填充服务预填充使用已保存自适应表单的草稿的表单字段。 在使用Forms Portal草稿预填充服务之前，请确保 [已启用和配置自适应Forms Portal组件](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) 为您的环境而设计。
 
 1. 打开包含自适应表单的AEM Sites页面编辑器或体验片段。
 1. 打开页面的属性并配置云配置。
