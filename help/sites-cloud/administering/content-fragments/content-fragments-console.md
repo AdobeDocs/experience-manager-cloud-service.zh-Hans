@@ -5,7 +5,7 @@ landing-page-description: 了解如何从内容片段控制台中管理内容片
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
+source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 95%
@@ -127,7 +127,7 @@ ht-degree: 95%
 * **预览**
    * 仅供参考:
       * **同步**：内容片段在上同步 **作者** 和 **预览** 服务。
-      * **不同步**：内容片段在上的不同步 **作者** 和****预览** 服务。 您需要 **Publish** 到 **预览** 以确保两个实例恢复同步。
+      * **不同步**：内容片段在上的不同步 **作者** 和 **预览** 服务。 您需要 **Publish** 到 **预览** 以确保两个实例恢复同步。
       * blank：内容片段不存在于 **预览** 服务。
 * **修改时间**
    * 仅供参考
