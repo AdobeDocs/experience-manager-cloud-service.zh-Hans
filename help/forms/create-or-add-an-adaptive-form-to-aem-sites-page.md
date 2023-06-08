@@ -4,9 +4,9 @@ description: 了解如何轻松创建自适应表单或将自适应表单无缝�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3182'
 ht-degree: 31%
 
 ---
@@ -277,4 +277,4 @@ AEM Forms 会提供自适应表单容器和自适应表单嵌入组件。您可�
 * [基于核心组件的自适应Forms的样式](using-themes-in-core-components.md)
 * [使用规则编辑器将动态行为添加到自适应Forms](rule-editor.md)
 * [更改自适应表单的版面](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [生成记录文档](generate-document-of-record-core-components.md)
+

@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a17f02b6544669e07adabfd4f50905eb6afd51e
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1049'
 ht-degree: 40%
 
 ---
@@ -74,26 +74,23 @@ ht-degree: 40%
 
 * **[将自适应表单提交到 Microsoft SharePoint 和 Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**：提高业务用户的敏捷性，以快速启用新表单并将提交的数据存储在日常使用工具中，例如 Microsoft SharePoint 站点或 OneDrive 文件夹。
 
-![将自适应表单提交到 Microsoft SharePoint 和 Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
-
-
 ### [!DNL Forms] 预发行版本中的功能 {#prerelease-features-forms}
 
-* 增强的Adobe Acrobat Sign集成和合规性：AEM Forms现在与面向政府的Adobe Acrobat Sign集成，为电子签名提供了更高级别的合规性和安全性，并为政府关联帐户（政府部门和机构）提供了自适应表单提交。
+* [增强了Adobe Acrobat Sign集成和合规性](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms现在与面向政府的Adobe Acrobat Sign集成，通过为政府关联帐户（政府部门和机构）提交的自适应表单，为电子签名提供高水平的合规性和安全性。
 
-与面向政府的Adobe Acrobat Sign集成使我们的合作伙伴和政府客户能够在Adaptive Forms中使用电子签名处理一些最关键和最敏感的业务线。 这一额外的安全层确保所有电子签名完全符合FedRAMP Moderate合规性，使我们的政府客户高枕无忧。
+   与面向政府的Adobe Acrobat Sign集成使我们的合作伙伴和政府客户能够在Adaptive Forms中使用电子签名处理一些最关键和最敏感的业务线。 这一额外的安全层确保所有电子签名完全符合FedRAMP Moderate合规性，使我们的政府客户高枕无忧。
 
-* AEM Sites编辑器中的自适应Forms：您现在可以使用AEM Sites编辑器快速创建多个表单并将其添加到站点页面。 此功能允许内容作者利用自适应表单组件的强大功能（包括动态行为、验证、数据集成、生成记录文档以及业务流程自动化），在Sites页面内创建无缝的数据捕获体验。 您可以：
+* [AEM Sites编辑器中的自适应Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您现在可以使用AEM Sites编辑器快速创建多个表单并将其添加到站点页面。 此功能允许内容作者利用自适应表单组件的强大功能（包括动态行为、验证、数据集成、生成记录文档以及业务流程自动化），在Sites页面内创建无缝的数据捕获体验。 您可以：
 
-   * 通过将表单组件拖放到AEM Sites编辑器中的自适应Forms容器组件来创建自适应表单。
+   * 通过将表单组件拖放到AEM Sites编辑器或体验片段中的自适应Forms容器组件来创建自适应表单。
    * 使用AEM Sites编辑器中的“自适应Forms向导”可创建独立于任何Sites页面的表单，从而让您自由地在多个页面中重用此类表单。
    * 将多个表单添加到Sites页面，从而简化用户体验并提供更大的灵活性。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 * 使用规则编辑器中的自定义错误处理程序增强错误处理：您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误，并为最终用户提供量身定制的响应，或者对服务返回的错误采取特定操作。 例如，您可以在后端中调用自定义工作流以获取特定错误代码，或告知客户服务已停用。
 
-通过引入基于标准的错误响应（可向后兼容OOTB错误处理程序），以及更大的灵活性和控制力，这有助于提高您的整体错误处理能力。
+   通过引入基于标准的错误响应（可向后兼容OOTB错误处理程序），以及更大的灵活性和控制力，这有助于提高您的整体错误处理能力。
 
 ## Headless 自适应表单早期采用者计划 {#forms-early-adopter}
 
