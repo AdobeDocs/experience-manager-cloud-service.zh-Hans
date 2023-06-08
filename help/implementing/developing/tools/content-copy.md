@@ -1,13 +1,13 @@
 ---
 title: 内容复制工具
 description: 内容复制工具使用户能够根据需要将可变内容从其AEMas a Cloud Service生产环境复制到较低环境，以进行测试。
-source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
+exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 64%
+source-wordcount: '1227'
+ht-degree: 60%
 
 ---
-
 
 # 内容复制工具 {#content-copy}
 
@@ -38,8 +38,8 @@ ht-degree: 64%
 
 | 内容复制功能 | AEM管理员组 | 部署经理角色 |
 |---|---|---|
-| 创建和修改[内容集](#create-content-set) | 必填 | 非必填 |
-| 开始或取消[内容复制过程](#copy-content) | 必填 | 必填 |
+| 创建和修改[内容集](#create-content-set) | 必需 | 非必填 |
+| 开始或取消[内容复制过程](#copy-content) | 必需 | 必需 |
 
 ## 创建内容集 {#create-content-set}
 
@@ -55,7 +55,7 @@ ht-degree: 64%
 
    ![内容集](assets/content-sets.png)
 
-1. 在 **详细信息** 选项卡中，为内容集提供名称和描述，然后点按或单击 **继续**.
+1. 在向导的&#x200B;**详细信息**&#x200B;选项卡上，为内容集提供名称和描述，然后点按或单击&#x200B;**继续**。
 
    ![内容集详细信息](assets/add-content-set-details.png)
 
@@ -101,6 +101,9 @@ ht-degree: 64%
 ## 复制内容 {#copy-content}
 
 创建内容集后，您可以使用它来复制内容。按照以下步骤操作来复制内容。
+
+>[!NOTE]
+> 不应在环境上启动内容复制 [内容传输](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 操作正在该环境中运行。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
@@ -159,7 +162,7 @@ ht-degree: 64%
 | 已完成 | 内容复制操作成功完成 |
 | 已取消 | 用户在启动内容复制操作后取消该操作 |
 
-### 取消复制流程 {#cancelling}
+### 取消复制流程 {#canceling}
 
 如果在启动内容复制操作后需要中止该操作，则可以选择取消该操作。
 
@@ -182,7 +185,7 @@ ht-degree: 64%
 * 跨程序的内容复制是不可能的。
 * 在同一环境中运行并发的内容复制操作是不可能的。
 * 每个内容集最多可以指定五十条路径。排除的路径没有限制。
-* 内容复制工具不应用作克隆或镜像工具，因为它无法跟踪源上移动或删除的内容。
-* 内容复制工具没有版本控制能力，并且无法自动检测自上次内容复制操作以来在内容集中的源环境上修改或新创建的内容。
+* 内容复制工具不应用作克隆或镜像工具，因为它不能跟踪源上移动或删除的内容。
+* 内容复制工具没有版本控制功能，并且自上次内容复制操作以来，无法自动检测内容集中的源环境中已修改的内容或新创建的内容。
    * 如果您希望仅使用自上次内容复制操作以来所做的内容更改来更新目标环境，则需要创建一个内容集，并在自上次内容复制操作以来进行了更改的源实例上指定路径。
 * 版本信息不包含在内容副本中。
