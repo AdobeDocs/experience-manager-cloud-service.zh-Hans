@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
->title="分配AEM产品配置文件"
->abstract="您无权使用Experience Manager Assets。 请联系您的管理员。"
+>title="分配 AEM 产品配置文件"
+>abstract="您无权使用 Experience Manager Assets。请联系您的管理员。"
 
 在[入门历程的这一可选部分中，](overview.md)您将了解如何使用 AEM 产品配置文件授予您的团队访问 AEM 的权限。
 
