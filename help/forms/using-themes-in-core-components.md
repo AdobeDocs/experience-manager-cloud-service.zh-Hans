@@ -2,7 +2,7 @@
 title: 创建和使用主题
 description: 您可以使用主题来使使用核心组件的自适应表单风格化并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 5%
@@ -49,6 +49,7 @@ ht-degree: 5%
 * 您应该有一个 [Git基础知识](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git) 和Cloud ServiceGit存储库。
 
 要自定义画布主题，请执行以下操作：
+
 1. [克隆画布主题](#1-download-canvas-theme-download-canvas-theme)
 1. [了解主题的结构](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [在package.json和package_lock.json中更改名称](#changename-packagelock-packagelockjson)
