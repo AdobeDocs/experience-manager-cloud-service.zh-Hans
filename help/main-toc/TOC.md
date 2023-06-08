@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7823f35e0b78584cfb17f0efed7f36e3a2cb408d
+source-git-commit: 0ef684cde1fe4fa47214fddf2c2a75d1743943e2
 workflow-type: tm+mt
-source-wordcount: '4049'
+source-wordcount: '4055'
 ht-degree: 99%
 
 ---
@@ -203,6 +203,9 @@ ht-degree: 99%
       + Best Practices Analyzer {#best-practices-analyzer}
          + [概述](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [使用 Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+      + 内容转换器 {#content-transformer}
+         + [概述](/help/journey-migration/content-transformer/overview.md)
+         + [使用内容转换器](/help/journey-migration/content-transformer/using.md)
       + 内容转移工具 {#content-transfer-tool}
          + [概述](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [内容转移工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
@@ -512,7 +515,7 @@ ht-degree: 99%
    + 设置和迁移 {#setup-configure-migrate}
       + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
-      + [在 AEM Forms as a Cloud Service 和开发环境上启用自适应表单核心组件](/help/forms/enable-adaptive-forms-core-components.md)
+      + [在 AEM Forms as a Cloud Service 和本地开发环境上启用自适应表单核心组件](/help/forms/enable-adaptive-forms-core-components.md)
       + [配置统一存储连接器](/help/forms/configure-unified-storage-connector.md)
       + [从  [!DNL AEM 6.5 Forms]  或更低版本迁移到  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
