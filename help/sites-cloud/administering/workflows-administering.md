@@ -3,11 +3,10 @@ title: 管理工作流实例
 description: 了解如何管理工作流实例
 feature: Administering
 role: Admin
-exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
+source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 100%
+source-wordcount: '1281'
+ht-degree: 77%
 
 ---
 
@@ -27,10 +26,19 @@ ht-degree: 100%
 ## 监控工作流实例状态 {#monitoring-the-status-of-workflow-instances}
 
 1. 使用“导航”，依次选择&#x200B;**工具**&#x200B;和&#x200B;**工作流**。
-1. 选择&#x200B;**实例**&#x200B;以显示当前正在进行的工作流实例的列表。
+1. 选择 **实例** 以显示当前正在运行的工作流实例的列表。
+1. 在顶部边栏的右角，工作流实例显示 **正在运行的工作流**， **状态**、和 **详细信息**.
+1. **正在运行的工作流** 显示正在运行的工作流的数量及其状态。 例如，在给定的图像中，显示的是 **正在运行的工作流** 和 **状态** AEM实例的。
+   ![状态 — 正常](/help/sites-cloud/administering/assets/status-healthy.png)
+   ![状态 — 不正常](/help/sites-cloud/administering/assets/status-unhealthy.png)
+1. 对象 **状态详细信息** 工作流实例的，单击 **详细信息**，以显示 **正在运行的工作流实例数**， **已完成的工作流实例**， **中止的工作流实例**， **失败的工作流实例**，等等。 例如，下面是显示以下内容的给定图像 **状态详细信息** 替换为 **状态：正常** 和 **状态：不正常**.
+   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   ![wf-97](/help/sites-cloud/administering/assets/wf-97.png)
+   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
+   >[!NOTE]
+   >
+   > 要保持工作流实例正常，请遵循以下位置的最佳实践： [定期清除工作流实例](#regular-purging-of-workflow-instances) 或 [工作流最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
 
 ## 搜索工作流实例 {#search-workflow-instances}
 
@@ -66,7 +74,7 @@ ht-degree: 100%
    >[!NOTE]
    >
    >
-   >工作流必须处于一种等待用户干预的状态（例如，在参与者步骤中），才能终止或中止工作流。尝试中止当前正在执行作业（正在执行的活动线程）的工作流可能无法生成预期结果。
+   >要终止或中止工作流，工作流必须处于等待用户干预的状态，如参与者步骤。 尝试中止当前正在执行作业（正在执行的活动线程）的工作流可能无法生成预期结果。
 
 
 ## 查看存档的工作流 {#viewing-archived-workflows}
@@ -75,14 +83,15 @@ ht-degree: 100%
 
 1. 选择&#x200B;**存档**&#x200B;以显示已成功完成的工作流实例的列表。
 
-   ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
+   ![archived-instances](/help/sites-cloud/administering/assets/archived-instances.png)
 
    >[!NOTE]
+   >
+   >
    >中止状态被视为成功终止，因为它是用户操作的结果；例如：
    >
    >* 使用&#x200B;**终止**&#x200B;操作
-   >* 当受工作流约束的页面被（强制）删除时，工作流将被终止
-
+   >* 当受工作流约束的页面被（强制）删除时，工作流被终止。
 
 
 1. 选择特定项目，然后&#x200B;**打开历史记录**&#x200B;以查看更多详细信息：
@@ -95,14 +104,14 @@ ht-degree: 100%
 
 * **故障详细信息**
 打开一个窗口以显示 
-**故障消息**、**步骤**&#x200B;和&#x200B;**故障堆栈**。
+**失败消息**、 **步骤和 **失败栈栈**.
 
 * **打开历史记录**
 显示工作流历史记录的详细信息。
 
 * **重试步骤**&#x200B;再次执行脚本步骤组件实例。修复导致原始错误的故障后，使用“重试步骤”命令。例如，在修复流程步骤执行的脚本中的错误后，重试该步骤。
 * **终止**&#x200B;如果错误导致工作流出现不可调和的情况，则终止工作流。例如，工作流可以依赖于环境条件，例如存储库中对工作流实例不再有效的信息。
-* **终止并重试**&#x200B;类似于&#x200B;**终止**，只不过使用原始有效负载、标题和描述来启动新的工作流实例。
+* **终止并重试** 类似于 **终止** 但新工作流实例将使用原始有效负载、标题和描述启动。
 
 要调查故障，然后恢复或终止工作流，请执行以下步骤：
 
@@ -111,15 +120,15 @@ ht-degree: 100%
 1. 选择&#x200B;**故障**&#x200B;以显示未成功完成的工作流实例的列表。
 1. 选择特定项目，然后选择适当的操作：
 
-   ![wf-47](/help/sites-cloud/administering/assets/wf-47.png)
+![工作流失败](/help/sites-cloud/administering/assets/workflow-failure.png)
 
 ## 定期清除工作流实例 {#regular-purging-of-workflow-instances}
 
 最大限度地减少工作流实例的数量可以提高工作流引擎的性能，因此，您可以定期从存储库中清除已完成或正在运行的工作流实例。
 
-配置 **Adobe Granite 工作流清除配置**&#x200B;以根据其时限和状态清除工作流实例。您还可以清除所有模型或特定模型的工作流实例。
+配置 **AdobeGranite工作流清除配置** 要根据工作流实例的年龄和状态清除工作流实例，请执行以下操作： 您还可以清除所有模型或特定模型的工作流实例。
 
-您还可以创建多个服务配置以清除满足不同条件的工作流实例。例如，创建一个配置，以便在特定工作流模型的实例的运行时间显著超出预期时间时清除这些实例。创建另一个配置，以便在一定天数后清除所有已完成的工作流，从而最大限度地减小存储库。
+您还可以创建多个服务配置以清除满足不同条件的工作流实例。例如，创建一个配置，以便在特定工作流模型的实例的运行时间显著超出预期时间时清除这些实例。创建另一个配置，以便在几天后清除所有已完成的工作流，从而最大限度地减小存储库。
 
 要配置服务，您可以配置 OSGi 配置文件，请参阅 [OSGi 配置文件](/help/implementing/deploying/configuring-osgi.md)。下表描述了任一方法所需的属性。
 
@@ -177,7 +186,7 @@ ht-degree: 100%
 
 ## 对客户拥有的数据存储使用工作流变量 {#using-workflow-variables-customer-datastore}
 
-工作流处理的数据存储在 Adobe 提供的存储 (JCR) 中。此类数据本质上可能是敏感的。您可能希望将所有用户定义的元数据/数据保存在您自己的托管存储中，而不是 Adobe 提供的存储中。这些部分描述了如何为外部存储设置这些变量。
+工作流处理的数据存储在 Adobe 提供的存储 (JCR) 中。此类数据本质上可能是敏感的。您可能希望将所有用户定义的元数据/数据保存在您自己的托管存储中，而不是Adobe提供的存储中。 以下各节将介绍如何为外部存储设置这些变量。
 
 ### 设置模型以使用元数据的外部存储 {#set-model-for-external-storage}
 
@@ -191,7 +200,7 @@ ht-degree: 100%
 
 ### 外部存储中的元数据的 API {#apis-for-metadata-external-storage}
 
-要在外部存储变量，您必须实施工作流公开的 API。
+要在外部存储变量，您必须实施工作流公开的API。
 
 UserMetaDataPersistenceContext
 

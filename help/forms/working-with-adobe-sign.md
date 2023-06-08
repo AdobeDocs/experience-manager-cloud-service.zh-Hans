@@ -5,10 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 3d713304512065819ed16bbc9604f2cf9d1cf43f
+source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
 workflow-type: tm+mt
-source-wordcount: '3072'
+source-wordcount: '3073'
 ht-degree: 1%
 
 ---
@@ -195,7 +194,11 @@ ht-degree: 1%
       >
       >确保第一个收件人或唯一收件人（如果只有一个收件人）的电子邮件地址与 [!DNL Adobe Sign] 用于配置AEM云服务的帐户。
 
-   * **[!UICONTROL 收件人身份验证方法]：** 指定在打开Adobe Sign协议之前对收件人进行身份验证的方法。 您可以在电话、知识库、基于社交身份的身份验证和 [政府机关标识](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html).
+   * **[!UICONTROL 收件人身份验证方法]：** 指定在打开Adobe Sign协议之前对收件人进行身份验证的方法。 您可以在电话、知识库、基于社交身份的身份验证和 [政府机关标识](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 对象 [!DNL Adobe Acrobat Sign].
+
+      <!-- 
+      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
+      -->
    >[!NOTE]
    >
    >    * 默认情况下，基于社交身份的身份验证提供使用Facebook、Google和LinkedIn进行身份验证的选项。 您可以联系 [!DNL Adobe Sign] 支持启用其他社交身份验证提供程序。
@@ -255,7 +258,7 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
          </afUnboundData>
          <afBoundData>
             <config xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-               <agreementID>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</agreementID>
+               <userName>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</userName>
                <dateOfBirth>0001-01-01</dateOfBirth>
             </config>
          </afBoundData>
@@ -311,6 +314,11 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
    * 云签名：使用 [数字标识](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) 由信任服务提供程序托管。
    * Adobe Acrobat或Reader：使用Adobe Acrobat或Reader下载并打开文档，以使用智能卡、USB令牌或基于文件的数字ID进行签名。
 
+      <!-- 
+      >[!NOTE]
+      >
+      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
+      -->
    将云签名字段添加到自适应表单后，执行以下步骤以完成配置过程：
 
    * [为自适应表单启用Adobe Sign](#enableadobsignforanadaptiveform)
