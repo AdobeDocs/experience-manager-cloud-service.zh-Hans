@@ -2,10 +2,10 @@
 title: 与 Adobe Target 集成时使用的 IMS 配置
 description: 了解与 Adobe Target 集成时使用的 IMS 配置
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '863'
+ht-degree: 99%
 
 ---
 
@@ -72,9 +72,9 @@ ht-degree: 100%
 1. 将显示您拥有的任何项目。选择&#x200B;**新建项目** – 位置和使用将取决于：
 
    * 如果您不具有任何项目，**新建项目**将位于底部中心。
-      ![新建项目 – 第一个项目](assets/integration-target-ims-02.png)
+     ![新建项目 – 第一个项目](assets/integration-target-ims-02.png)
    * 如果您已拥有项目，这些项目将列出，**新建项目**将位于右上方。
-      ![新建项目 – 多个项目](assets/integration-target-ims-03.png)
+     ![新建项目 – 多个项目](assets/integration-target-ims-03.png)
 
 
 1. 依次选择 **添加到项目**&#x200B;和 **API**：
@@ -87,7 +87,7 @@ ht-degree: 100%
    >
    >如果您已订阅 Adobe Target，但它并未列出，您应查看[先决条件](#prerequisites)。
 
-   ![](assets/integration-target-ims-12.png)
+   ![选择Adobe Target](assets/integration-target-ims-12.png)
 
 1. **上传公钥**，完成后，选择&#x200B;**下一步**：
 
@@ -105,7 +105,6 @@ ht-degree: 100%
    >
    >* Adobe Target Standard – 仅&#x200B;**默认工作区**&#x200B;可用
    >* Adobe Target Premium – 列出了所有可用的工作区，如下所示
-
 
    ![选择产品配置文件并保存配置的 API](assets/integration-target-ims-16.png)
 
@@ -185,7 +184,6 @@ ht-degree: 100%
    例如：
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. 选择您的配置。
 1. 从工具栏中选择&#x200B;**检查运行状况**，然后选择&#x200B;**查看**。
