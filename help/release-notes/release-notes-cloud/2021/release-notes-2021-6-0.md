@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 版的发行说明。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 9a08514f11c86b783ae68940a0c3c58fcada3dc2
+source-git-commit: 36b0af857d5b9b179f01a43b5fd36c51b48c795f
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1442'
 ht-degree: 48%
 
 ---
@@ -63,7 +63,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 为避免混淆，合并了“环境详细信息”页面上的“发布 AEM”和“发布 Dispatcher”区段行。
 
-   ![](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![Dispatcher环境](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * 添加了新代码质量规则来验证 `damAssetLucene` 索引的结构。 请参阅[自定义 DAM 资产 Lucene Oak 指数](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)，了解更多详细信息。
 
