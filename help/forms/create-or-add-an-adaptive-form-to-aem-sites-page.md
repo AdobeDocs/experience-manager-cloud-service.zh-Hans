@@ -4,10 +4,10 @@ description: 了解如何轻松创建自适应表单或将自适应表单无缝�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
-source-wordcount: '3061'
-ht-degree: 27%
+source-wordcount: '3073'
+ht-degree: 24%
 
 ---
 
@@ -136,14 +136,15 @@ AEM Forms 会提供自适应表单容器和自适应表单嵌入组件。您可�
 
 ## 创建自适应表单 {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-您可以直接在 AEM Sites 页面或体验片段中从头开始创建全新的表单，并根据您的要求和设计偏好对其进行专门定制。对于一次性表单，建议直接将其创作到 AEM Sites 页面，而体验片段非常适合需要在网站的多个页面上重复使用的表单。
+您可以从头开始创建全新的表单，直接在AEM Sites页面或体验片段中根据您的要求和设计偏好设置对其进行专门定制。 对于一次性表单，建议直接创作到AEM Sites页面，而体验片段则适用于需要在网站上的多个页面中重用的表单。
 
 * [在 AEM Sites 页面中创建一个表单](#create-an-adaptive-form-in-sites-editor)
 * [在体验片段中创建一个表单](#create-an-adaptive-form-in-experience-fragment)
+* [将AEM Sites页面中的自适应表单转换为体验片段](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### 在 AEM Sites 页面中创建一个表单 {#create-an-adaptive-form-in-sites-editor}
 
-您可以使用 AEM Sites 编辑器中的自适应表单容器组件来创建自定义表单。该组件允许您通过拖放表单组件来创建表单。表单组件基于核心组件。您可以根据组织的要求轻松地对其进行自定义。
+您可以使用AEM页面编辑器中的自适应表单容器组件来创建自定义表单。 该组件允许您通过拖放表单组件来创建表单。表单组件基于核心组件。您可以根据组织的要求轻松地对其进行自定义。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -169,7 +170,7 @@ AEM Forms 会提供自适应表单容器和自适应表单嵌入组件。您可�
 
 接下来，您 [设置提交操作](#configure-submit-action-for-form) 和高级属性。
 
-### 将AEM Sites页面中的自适应表单转换为体验片段
+### 将AEM Sites页面中的自适应表单转换为体验片段 {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 您可以将站点页面编辑器中的现有自适应表单转换为体验片段，以便在多个页面或站点中重用表单。
 
