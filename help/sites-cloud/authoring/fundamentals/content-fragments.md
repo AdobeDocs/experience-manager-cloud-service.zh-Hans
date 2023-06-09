@@ -3,7 +3,7 @@ title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 3f7c9240a81062c335c33b0e59971de43cacf87b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1227'
 ht-degree: 100%
 
@@ -73,7 +73,6 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
    >* [响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
-
 ### 选择元素或变体 {#selecting-the-element-or-variation}
 
 打开片段的&#x200B;**配置**&#x200B;对话框以配置片段在当前页面上使用。该对话框取决于所使用的组件。
@@ -92,9 +91,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 * **元素**
    * 可用的选项取决于所使用的模型。
 
-   >[!NOTE]
-   >
-   >可用的元素取决于所使用的模型。
+  >[!NOTE]
+  >
+  >可用的元素取决于所使用的模型。
 
 * **变体**
    * 默认主 **视图** 将始终可用。
@@ -146,7 +145,6 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 >
 >  这可能使其看起来像是相对位置发生了更改一样，因为中间段落与它们旁边的（片段）段落之间没有上下文关系。
 >* 除非两个段落结构产生冲突；在这种情况下，将不会显示中间内容（尽管它在内部依然存在）。
-
 
 ### 使用关联内容 {#using-associated-content}
 
