@@ -3,9 +3,9 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: 具有机密值和特定于环境的值的OSGi配置
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '3312'
+source-wordcount: '3323'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ AEMas a Cloud Service的运行模式根据环境类型和服务进行了良好�
 
 OSGi的常见用例使用内联OSGi配置值。 特定于环境的配置仅用于不同开发环境的值不同的特定用例。
 
-![](assets/choose-configuration-value-type_res1.png)
+![有关如何使用适当的配置值类型的决策树](assets/choose-configuration-value-type_res1.png)
 
 特定于环境的配置扩展了传统的静态定义的OSGi配置（其中包含内联值），从而提供了通过Cloud Manager API从外部管理OSGi配置值的功能。 了解何时应使用定义内联值并将其存储在Git中的常见和传统方法非常重要，而不是将这些值抽象为特定于环境的配置。
 
@@ -265,8 +265,7 @@ use $[secret:SECRET_VAR_NAME]
 >1. 客户不得引用带有前缀的变量 `INTERNAL_` 或 `ADOBE_` 也不是。
 >
 >1. 带前缀的环境变量 `AEM_` 由产品定义为供客户使用和设置的公共API。
-   >   而客户可以使用和设置以前缀开头的环境变量 `AEM_` 他们不应使用此前缀定义自己的变量。
-
+>   而客户可以使用和设置以前缀开头的环境变量 `AEM_` 他们不应使用此前缀定义自己的变量。
 
 ### 默认值 {#default-values}
 
@@ -317,7 +316,7 @@ org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secre
 * 分隔 `config.author` 和 `config.publish` 必须使用OSGi文件夹，如 [“运行模式分辨率”部分](#runmode-resolution).
 * 创建独立变量名称有两个选项，应该使用：
    * 推荐使用的第一个选项：在所有OSGi文件夹中(例如 `config.author` 和 `config.publish`)声明以定义不同的值，请使用相同的变量名称。 例如
-      `$[env:ENV_VAR_NAME;default=<value>]`，其中默认值对应于该层的默认值（创作或发布）。 通过设置环境变量时 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 或通过客户端，使用“服务”参数区分各层，如本中所述 [API参考文档](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). “service”参数会将变量的值绑定到适当的OSGi层。 它可以是“作者”、“发布”或“预览”。
+     `$[env:ENV_VAR_NAME;default=<value>]`，其中默认值对应于该层的默认值（创作或发布）。 通过设置环境变量时 [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) 或通过客户端，使用“服务”参数区分各层，如本中所述 [API参考文档](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). “service”参数会将变量的值绑定到适当的OSGi层。 它可以是“作者”、“发布”或“预览”。
    * 第二个选项是使用前缀（例如）声明不同的变量 `author_<samevariablename>` 和 `publish_<samevariablename>`
 
 ### 配置示例 {#configuration-examples}

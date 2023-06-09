@@ -2,9 +2,9 @@
 title: 复制
 description: 分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1341'
 ht-degree: 46%
 
 ---
@@ -53,7 +53,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 
 您可以通过选择&#x200B;**工具 – 工作流 – 模型**&#x200B;和复制&#x200B;**发布内容树**&#x200B;现成的工作流模型，如下所示：
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![“发布内容树”工作流信息卡](/help/operations/assets/publishcontenttreeworkflow.png)
 
 请勿修改或调用原始模型。 相反，请确保首先复制模型，然后修改或调用该副本。
 

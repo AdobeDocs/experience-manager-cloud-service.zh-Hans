@@ -2,10 +2,10 @@
 title: 访问存储库
 description: 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Git 存储库。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager 通过使用管道卡上突出显示的&#x200B;**访问存储库�
    * Git 用户名。
    * Git 密码，其值在单击&#x200B;**生成密码**&#x200B;按钮时显示。
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
+   ![存储库信息视图](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
 使用这些凭据，用户可以克隆存储库的本地副本，并在该本地存储库中进行更改，准备就绪后，可以将任何代码更改提交回 Cloud Manager 中的远程代码存储库。
 
