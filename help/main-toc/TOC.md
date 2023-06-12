@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3fe6553953866a33bb7d2f1473f066984425255c
+source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
 workflow-type: tm+mt
-source-wordcount: '4059'
+source-wordcount: '4064'
 ht-degree: 99%
 
 ---
@@ -546,7 +546,7 @@ ht-degree: 99%
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
             + [创建自适应表单 - AEM Sites 页面中的核心组件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
-            + [Summit 工作簿](/help/forms/summit-2023-workbook.md)
+            + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + 创作自适应表单 - 基础组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
