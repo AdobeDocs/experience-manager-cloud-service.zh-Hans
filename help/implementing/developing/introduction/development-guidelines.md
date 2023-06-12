@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2602'
 ht-degree: 4%
 
 ---
@@ -71,9 +71,11 @@ Adobe建议使用提供的 [Apache HttpComponents Client 4.x库](https://hc.apac
 
 AEMas a Cloud Service仅支持第三方客户代码的触屏UI。 经典UI不可自定义。
 
-## 避免使用本机二进制文件 {#avoid-native-binaries}
+## 无本机二进制文件或本机库 {#avoid-native-binaries}
 
-代码在运行时将无法下载二进制文件也无法对其进行修改。 例如，它将无法解包 `jar` 或 `tar` 文件。
+本机二进制文件和库不得部署到云环境中或安装在云环境中。
+
+此外，代码不应在运行时尝试下载本机二进制文件或本机Java扩展（例如JNI）。
 
 ## 没有流二进制文件通过AEMas a Cloud Service {#no-streaming-binaries}
 
@@ -128,7 +130,11 @@ AEMas a Cloud Service不支持从“发布”到“创作”的反向复制。 �
 
 如果需要始终登录，可以使用基于运行模式的OSGi配置定位为不同的AEM环境设置离散日志级别 `DEBUG` 在开发过程中。 例如：
 
-|环境 |按运行模式列出的OSGi配置位置 | `org.apache.sling.commons.log.level` 属性值 | | - | - | - | |开发 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json |调试 | |暂存 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json |警告 | |生产 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json |错误 |
+| 环境 | 按运行模式列出的OSGi配置位置 | `org.apache.sling.commons.log.level` 属性值 |
+| - | - | - |
+| 开发 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 调试 |
+| 暂存 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 警告 |
+| 生产 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 错误 |
 
 调试文件中的一行通常以DEBUG开头，然后提供日志级别、安装程序操作和日志消息。 例如：
 
