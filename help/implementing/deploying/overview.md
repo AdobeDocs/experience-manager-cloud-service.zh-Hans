@@ -3,10 +3,10 @@ title: 部署到 AEM as a Cloud Service
 description: 部署到 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
+source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 89%
+source-wordcount: '3542'
+ht-degree: 88%
 
 ---
 
@@ -115,7 +115,7 @@ ht-degree: 89%
 >[!NOTE]
 >内容包将部署到所有环境类型（开发、暂存、生产）。无法将部署限于特定环境。施加此限制以确保能够选择自动执行的测试运行。特定于环境的内容需要通过[包管理器](/help/implementing/developing/tools/package-manager.md)手动安装。
 
-此外，没有用于在应用可变内容包更改后回滚这些更改的机制。如果客户检测到问题，他们可以选择在下一个代码版本中修复它，或者在万不得已的情况下，将整个系统恢复到部署前的某个时间点。
+此外，在应用可变内容包更改后，没有机制可回滚这些更改。 如果客户检测到问题，他们可以选择在下一个代码版本中修复它，或者在万不得已的情况下，将整个系统恢复到部署前的某个时间点。
 
 必须确认任何包含的第三方包与 AEM as a Cloud Service 兼容，否则包含此包会导致部署失败。
 
@@ -130,9 +130,9 @@ ht-degree: 89%
 * 创建/删除用户
 * 添加 ACL
 
-   >[!NOTE]
-   >
-   >ACL 的定义要求节点结构已存在。因此，前面的创建路径语句可能是必需的。
+  >[!NOTE]
+  >
+  >ACL 的定义要求节点结构已存在。因此，前面的创建路径语句可能是必需的。
 
 * 添加路径（例如，根文件夹结构）
 * 添加 CND（节点类型定义）
