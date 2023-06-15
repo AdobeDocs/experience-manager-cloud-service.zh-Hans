@@ -2,10 +2,10 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 78%
+source-wordcount: '2336'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 78%
 
    * **添加环境**&#x200B;选项也可在&#x200B;**环境**&#x200B;选项卡上使用。
 
-      ![“环境”信息卡](assets/environments-tab.png)
+     ![“环境”信息卡](assets/environments-tab.png)
 
    * **添加环境**&#x200B;选项可能由于缺少权限或根据许可的资源而被禁用。
 
@@ -57,10 +57,10 @@ ht-degree: 78%
       * 可用/使用的环境数显示在环境类型名称后面的括号中。
    * 提供环境&#x200B;**名称**。
    * 提供环境&#x200B;**描述**。
-   * 如果您要添加 **生产+暂存** 环境，您需要为生产环境和暂存环境提供环境名称和描述。
+   * 如果您要添加&#x200B;**生产和暂存**&#x200B;环境，则需要为生产环境和暂存环境提供环境名称和描述。
    * 从下拉列表中选择&#x200B;**主要区域**。
       * 请注意，该项目一旦创建便无法更改。
-      * 根据您可用的权利，您也许能够配置 [多个区域。](#multiple-regions)
+      * 根据您的可用权限，您可以配置[多个区域。](#multiple-regions)
 
    ![添加环境对话框](assets/add-environment2.png)
 
@@ -70,54 +70,54 @@ ht-degree: 78%
 
 ## 多个发布区域 {#multiple-regions}
 
-用户具有 **业务负责人** 角色可以配置prod和暂存环境，以便在主区域之外最多包括三个附加发布区域。 其他发布区域可以提高可用性。 请参阅 [其他发布区域文档](/help/operations/additional-publish-regions.md) 了解更多详细信息。
+具有&#x200B;**业务所有者**&#x200B;角色的用户可以配置生产和暂存环境，以包括除了主要区域之外的最多三个额外的发布区域。增加发布区域可以提高可用性。有关更多详细信息，请参阅[其他发布区域文档。](/help/operations/additional-publish-regions.md)
 
 >[!TIP]
 >
->您可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) 以查询可用区域的当前列表。
+>您可以使用[ Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) 查询可用区域的当前列表。
 
 ### 将多个发布区域添加到新环境 {#add-regions}
 
-添加新环境时，可以选择配置主区域以外的其他区域。
+添加新环境时，除主要区域之外，您可以选择配置附加区域。
 
-1. 选择 **主要区域**.
-   * 请注意，在创建环境后无法更改此设置。
-1. 选择选项 **添加其他发布区域** 和新的 **其他发布区域** 此时将显示下拉列表。
-1. 在 **其他发布区域** 从下拉列表中，选择一个附加区域。
-1. 选定的区域会添加到下拉列表的下方，以指示其选择。
-   * 点按或单击选定区域旁边的X以取消选择它。
-1. 从中选择其他区域 **其他发布区域** 下拉菜单以添加其他区域。
-1. 点击或单击 **保存** 当您准备好创建环境时。
+1. 选择&#x200B;**主要区域。**
+   * 请注意，这在创建环境后无法更改。
+1. 选择选项&#x200B;**添加附加发布区域**，之后会出现新的&#x200B;**附加发布区域**&#x200B;下拉列表。
+1. 在&#x200B;**附加发布区域**&#x200B;下拉列表中，选择一个附加区域。
+1. 所选区域将会添加到下拉列表下方，以指示其选择。
+   * 点击或单击所选区域旁边的 X 以取消选择该区域。
+1. 从&#x200B;**附加发布区域**&#x200B;下拉列表中选择另一个区域以添加另一个地区。
+1. 当您准备好创建环境时，点击或单击&#x200B;**保存**。
 
 ![选择多个区域](assets/select-multiple-regions.png)
 
-选定的区域将应用于生产和暂存环境。
+所选区域将适用于生产环境和暂存环境。
 
-如果您未指定任何附加区域， [您可以在稍后创建环境后执行此操作。](#edit-regions)
+如果您不指定任何附加区域，[您可以在创建环境后执行此操作。](#edit-regions)
 
-如果您希望配置 [高级联网](/help/security/configuring-advanced-networking.md) 对于程序，建议在使用Cloud Manager API向环境添加其他发布区域之前执行此操作。 否则，其他发布区域的流量将通过主区域的代理。
+如果您希望为程序提供[高级网络](/help/security/configuring-advanced-networking.md)，建议在使用 Cloud Manager API 将附加发布区域添加到环境之前执行此操作。否则，附加发布区域的流量将会通过主要区域的代理。
 
 ### 编辑多个发布区域 {#edit-regions}
 
-如果您最初没有指定任何附加区域，则在创建环境后，如果您拥有必要的授权，则可以指定附加区域。
+如果您最初没有指定任何附加区域，并且您拥有必要的权限，则可以在创建环境后执行此操作。
 
-您还可以删除其他发布区域。 但是，在一个事务中只能添加或仅删除区域。 如果需要添加一个区域并移除一个区域，请先添加、保存更改，然后移除（反之亦然）。
+您还可以删除附加发布区域。但是，您只能在一次交易中添加或删除区域。如果您需要添加一个区域并删除一个区域，请先添加、保存您的更改，然后再删除（反之亦然）。
 
-1. 从程序的程序概述控制台中，单击生产环境的省略号按钮，然后选择 **编辑** 从菜单中。
+1. 从程序的“程序概述”控制台中，单击生产环境的省略号按钮并从菜单中选择&#x200B;**编辑。**
 
    ![编辑环境](assets/select-edit-environment.png)
 
-1. 在 **编辑生产环境** 对话框，请对其他发布区域进行必要的更改。
-   * 使用 **其他发布区域** 下拉列表以选择其他区域。
-   * 单击所选其他发布区域旁边的X以取消选择它们。
+1. 在&#x200B;**编辑生产环境**&#x200B;对话框中，对附加发布区域进行必要的更改。
+   * 使用&#x200B;**附加发布区域**&#x200B;下拉列表选择附加区域。
+   * 单击选定的附加发布区域旁边的 X 以取消选择它们。
 
    ![编辑环境](assets/edit-environment.png)
 
-1. 点击或单击 **保存** 以保存更改。
+1. 点击或单击&#x200B;**保存**&#x200B;以保存更改。
 
-对生产环境所做的更改将同时应用于生产和暂存环境。 对多个发布区域的更改只能在生产环境中编辑。
+对生产环境所做的更改将会同时应用于生产和暂存环境。只能在生产环境中编辑对多个发布区域的更改。
 
-如果您希望配置 [高级联网](/help/security/configuring-advanced-networking.md) 对于项目，建议在将其他发布区域添加到环境之前执行此操作。 否则，其他发布区域的流量将通过主区域的代理。
+如果您希望为程序提供[高级网络](/help/security/configuring-advanced-networking.md)，建议在将附加发布区域添加到环境之前执行此操作。否则，附加发布区域的流量将会通过主要区域的代理。
 
 ## 环境详细信息 {#viewing-environment}
 
@@ -129,7 +129,7 @@ ht-degree: 78%
 
    * 或者，单击&#x200B;**环境**&#x200B;信息卡上的&#x200B;**全部显示**&#x200B;按钮，直接跳转到&#x200B;**环境**&#x200B;选项卡。
 
-      ![显示所有选项](assets/environment-showall.png)
+     ![显示所有选项](assets/environment-showall.png)
 
 1. **环境**&#x200B;将打开并列出程序的所有环境。
 
@@ -231,12 +231,15 @@ Cloud Manager 将预览服务（作为附加发布服务提供）提供给每个
 >* 无法删除在生产程序中创建的生产和暂存环境。
 >* 可以删除沙盒程序中的生产和暂存环境。
 
-
 ## 管理访问权限 {#managing-access}
 
 从&#x200B;**环境**&#x200B;信息卡上环境的省略号菜单中选择&#x200B;**管理访问权限**。 您可以直接导航到作者实例并管理对环境的访问权限。
 
 ![管理访问权限选项](assets/environ-access.png)
+
+>[!TIP]
+>
+>查看文档 [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) 了解AEMas a Cloud Service团队和产品配置文件如何授予和限制对您的许可Adobe解决方案的访问权限。
 
 ## 访问开发人员控制台 {#accessing-developer-console}
 
