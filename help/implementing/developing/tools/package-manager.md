@@ -4,9 +4,9 @@ description: 了解AE的基础知识；使用包管理器管理包。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3788'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,37 @@ ht-degree: 4%
 >如果您看到此类错误，请不要重试安装。安装过程在后台正常进行。如果您重新启动安装，则多个并发导入进程可能会引入一些冲突。
 
 有关如何管理AEMaaCS包的更多详细信息，请查看文档 [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md) 《部署用户指南》中的。
+
+## 包大小 {#package-size}
+
+Adobe建议不要创建大型包。 这是为了避免在上传和下载包时出现超时问题。
+
+作为一般规则，一个包裹应在60秒内全部传送。 这提供了以下公式作为指导。
+
+```text
+MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
+```
+
+由于网络流量是可变的，并且始终小于通告的最大理论值，因此请尝试使用在线互联网连接速度测试工具。
+
+对于上传和下载，互联网速度几乎总是不同的。 假设您将需要上载和下载包，则应在计算中使用较低的值（通常为上载速度）。
+
+### 示例 {#example}
+
+通过使用互联网速度测试工具，我发现当前的上传速度约为100 Mbps。
+
+```text
+100 Mbps = 12.5 MB/s
+12.5 MB/s * 60 s = 750 MB
+```
+
+因此，我创建的任何包都应小于750 MB。
+
+>[!NOTE]
+>
+>网络速度受当前的本地条件限制。 即使最近进行了速度测试，实际吞吐量可能也会有所不同。
+>
+>因此，所提供的公式只是一个指导性公式，实际建议的最大包大小可能有所不同。
 
 ## 包管理器 {#package-manager}
 
@@ -237,6 +268,10 @@ Package Manager分为四个主要功能区域：
 
 创建包后不必立即构建包。 未构建的包不包含任何内容，并且仅由包的过滤器数据和其他元数据组成。
 
+>[!TIP]
+>
+>为避免超时，Adobe建议 [不创建大型包。](#package-size)
+
 ### 构建资源包 {#building-a-package}
 
 通常，构建包时也会同时构建包 [创建包](#creating-a-new-package)，但您可以稍后返回以构建或重建包。 如果存储库中的内容已更改或包过滤器已更改，则此功能会非常有用。
@@ -248,6 +283,10 @@ Package Manager分为四个主要功能区域：
 1. 单击 **生成**. 此时会出现一个对话框，要求您确认是否确实要生成包，因为任何现有的包内容都将被覆盖。
 
 1. 单击&#x200B;**确定**。AEM构建资源包，并在活动列表中列出添加到资源包的所有内容。 完成AEM后，将显示一个确认消息，确认程序包已生成，（关闭对话框时）更新程序包列表信息。
+
+>[!TIP]
+>
+>为避免超时，Adobe建议 [不创建大型包。](#package-size)
 
 ### 编辑资源包 {#edit-package}
 
@@ -313,6 +352,10 @@ Package Manager分为四个主要功能区域：
 
 1. AEM会将包下载到您的计算机。
 
+>[!TIP]
+>
+>为避免超时，Adobe建议 [不创建大型包。](#package-size)
+
 ### 从您的文件系统上传包 {#uploading-packages-from-your-file-system}
 
 1. [访问包管理器。](#accessing)
@@ -331,6 +374,10 @@ Package Manager分为四个主要功能区域：
 1. 单击 **确定** 并且将上传选定的资源包，并相应地更新资源包列表。
 
 包内容现在存在于AEM上，但要使内容可供使用，请确保 [安装包](#installing-packages).
+
+>[!TIP]
+>
+>为避免超时，Adobe建议 [不创建大型包。](#package-size)
 
 ### 验证包 {#validating-packages}
 
