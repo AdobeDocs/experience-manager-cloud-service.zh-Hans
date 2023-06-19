@@ -4,9 +4,9 @@ description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1760'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 92%
 >* [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
-
 
 要开始了解 GraphQL 查询以及它们如何与 AEM 内容片段结合使用，看一些具体的示例会有所帮助。
 
@@ -48,7 +47,6 @@ ht-degree: 92%
 >
 >* **工具** -> **常规** -> **GraphQL 查询编辑器**
 >* 直接；例如，`http://localhost:4502/aem/graphiql.html`
-
 
 >[!NOTE]
 >
@@ -364,14 +362,14 @@ query {
 }
 ```
 
-### 示例查询 – 所有城市的名称 已标记为城市间断 {#sample-names-all-cities-tagged-city-breaks}
+### 示例查询 – 所有城市的名称 标记为 City Breaks {#sample-names-all-cities-tagged-city-breaks}
 
 如果您：
 
-* 创建各种标记，已命名 `Tourism` ： `Business`， `City Break`， `Holiday`
-* 并将它们分配给各种主控变体 `City` 实例
+* 创建各种标签，命名为 `Tourism`：`Business`、`City Break`、`Holiday`
+* 并将其分配给各种 `City` 实例的主变体
 
-然后，您可以使用查询返回 `name` 和 `tags`中所有标记为“城市间断”的条目 `city`架构。
+然后，您可以使用查询返回`city`模式中标记为 City Breaks 的所有条目的 `name` 和 `tags` 的详细信息。
 
 **示例查询**
 
@@ -1157,12 +1155,11 @@ query {
 这些示例查询基于 WKND 项目。它具有：
 
 * 在以下位置提供的内容片段模型：
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 在以下位置提供的内容片段（和其他内容）：
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
-
-   `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd-shared/en`
 
 >[!NOTE]
 >
@@ -1589,7 +1586,7 @@ query {
 
 此查询查找：
 
-* 类型为的内容片段 `article` 和所有变体
+* `article` 类型和所有变体的内容片段
 
 **示例查询**
 
@@ -1612,11 +1609,11 @@ query {
 }
 ```
 
-### 附加了特定标记的给定模型的内容片段变体示例查询{#sample-wknd-fragment-variations-given-model-specific-tag}
+### 附加了特定标签的给定模型的内容片段变体的示例查询{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 此查询查找：
 
-* 类型为的内容片段 `article` 具有一个或多个标记的变体 `WKND : Activity / Hiking`
+* 带有一个或多个标签为 `WKND : Activity / Hiking` 的变体的 `article` 类型的内容片段
 
 **示例查询**
 
@@ -1675,7 +1672,7 @@ query {
 
 此查询查找：
 
-* 对于最多包含五篇文章的结果页面，从&#x200B;*完整*&#x200B;结果列表中的第五篇文章开始
+* 最多包含五篇文章的结果页面，从&#x200B;*完整*&#x200B;结果列表中的第五篇文章开始
 
 **示例查询**
 
@@ -1699,7 +1696,7 @@ query {
 
 此查询查找：
 
-* 对于包含最多五次冒险的结果页面，从&#x200B;*完整*&#x200B;结果列表中的给定光标项开始
+* 包含最多五次冒险的结果页面，从&#x200B;*完整*&#x200B;结果列表中的给定光标项开始
 
 **示例查询**
 
@@ -1720,11 +1717,11 @@ query {
 }
 ```
 
-### 示例查询，按_tags ID进行筛选并排除变量 {#sample-filtering-tag-not-variations}
+### 按 _tags ID 过滤并排除变体的示例查询 {#sample-filtering-tag-not-variations}
 
 此查询查找：
 
-* 类型为的内容片段 `vehicle` 具有标记 `big-block`
+* 带有 `big-block` 标签的 `vehicle` 类型的内容片段
 * 排除变体
 
 **示例查询**
@@ -1755,12 +1752,12 @@ query {
 } 
 ```
 
-### 按_tags ID筛选并包含变量的示例查询 {#sample-filtering-tag-with-variations}
+### 按 _tags ID 过滤并包含变体的示例查询 {#sample-filtering-tag-with-variations}
 
 此查询查找：
 
-* 类型为的内容片段 `vehicle` 具有标记 `big-block`
-* 包括变体
+* 带有 `big-block` 标签的 `vehicle` 类型的内容片段
+* 包含变体
 
 **示例查询**
 
@@ -1822,7 +1819,7 @@ query {
 
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
-| 公司名称 | 单行文本 |  |
+| 公司名称 | 单行文本 | |
 | CEO | 片段引用（单个字段） | [人员](#model-person) |
 | 员工 | 片段引用（多个字段） | [人员](#model-person) |
 
@@ -1832,8 +1829,8 @@ query {
 
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
-| 名称 | 单行文本 |  |
-| 名字 | 单行文本 |  |
+| 名称 | 单行文本 | |
+| 名字 | 单行文本 | |
 | 奖励 | 片段引用（多个字段） | [奖励](#model-award) |
 
 #### 奖励 {#model-award}
@@ -1842,8 +1839,8 @@ query {
 
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
-| 简称/ID | 单行文本 |  |
-| 标题 | 单行文本 |  |
+| 简称/ID | 单行文本 | |
+| 标题 | 单行文本 | |
 
 #### 城市 {#model-city}
 
@@ -1851,10 +1848,10 @@ query {
 
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
-| 名称 | 单行文本 |  |
-| 国家/地区 | 单行文本 |  |
-| 人口 | 数字 |  |
-| 类别 | 标记 |  |
+| 名称 | 单行文本 | |
+| 国家/地区 | 单行文本 | |
+| 人口 | 数字 | |
+| 类别 | 标记 | |
 
 ### 示例内容片段 {#sample-content-fragments}
 
@@ -1872,14 +1869,14 @@ query {
 
 | 姓名 | 名字 | 奖励 |
 |--- |--- |--- |
-| Lincoln | Abe |  |
-| Smith | Adam |  |
+| Lincoln | Abe | |
+| Smith | Adam | |
 | Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke |  |
-| Smith | Joe |  |
+| Marsh | Duke | |
+| Smith | Joe | |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
-| Jobs | Steve |  |
+| Jobs | Steve | |
 
 #### 奖励 {#fragment-award}
 
