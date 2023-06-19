@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发�
 
 ## 详细的用户流程 {#detailed-user-flow}
 
-单击电子邮件将带您进入“操作中心”，此时会出现一个弹出窗口，显示您单击的通知的上下文，在某些情况下，还会链接到描述如何采取更正操作的其他信息。
+单击电子邮件会将您转至操作中心，这将会出现一个弹出窗口，其中显示您单击的通知的上下文，在某些情况下，还会显示指向描述如何采取纠正措施的其他信息的链接。
 
 ![问题详细信息](/help/operations/assets/incident-details.png)
 
@@ -64,7 +64,7 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发�
 
 AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在“操作中心”，如下表中所示。
 
-| 通知类型 | 描述 | 如何配置 | 显示在操作中心 |
+| 通知类型 | 描述 | 如何配置 | 出现在操作中心 |
 |---|---|---|---|
 | 操作问题 | 需要立即采取行动的关键问题 | 分配给“事件通知 - Cloud Service”产品配置文件的用户 | X |
 | 主动建议 | 应该计划的优化 | 分配给“主动通知 - Cloud Service”产品配置文件的用户 | X |
