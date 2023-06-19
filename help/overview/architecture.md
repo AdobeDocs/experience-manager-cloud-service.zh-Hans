@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1827'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 可提供三种类型的环境：
 
 * **开发环境**：允许开发人员在与暂存环境和生产环境相同的运行时条件下实施 AEM 应用程序。
 
-   有关更多详细信息，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-hans#using-cloud-manager)。
+  有关更多详细信息，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-hans#using-cloud-manager)。
 
 * **快速开发环境**：允许快速开发迭代以调试新的或现有的代码。
 
@@ -90,7 +90,7 @@ AEM 程序是包含以下内容的容器：
 | 程序元素 | 个数 |
 |--- |--- |
 | 代码存储库 (Git) |  1 |
-| 基准图像（站点或资产） |  1 |
+| 基准图像（站点或资源） |  1 |
 | 暂存和生产环境集 (1:1) | 0 或 1 |
 | 非生产环境（RDE，开发或演示） | 0 到 N |
 | 每个环境的管道 | 0 或 1 |
@@ -99,7 +99,7 @@ AEM as a Cloud Service 最初提供两种类型的程序：
 
 * AEM 云站点服务
 
-* AEM 云资产服务
+* AEM 云资源服务
 
 这两类程序都允许访问许多特性和功能。所有程序的创作层将包含所有 Sites 和 Assets 功能，但 Assets 程序默认将没有发布层和预览层。
 
@@ -121,21 +121,21 @@ AEM as a Cloud Service 最初提供两种类型的程序：
 
       * 登录到创作层由 Adobe Identity Management Services (IMS) 进行管理。
 
-      * 资产集成和处理会使用专用的资产计算服务。
+      * 资源集成和处理会使用专用的资源计算服务。
+
    * 预览层由单个预览节点构成。这用于在发布到发布层之前保证内容质量。
 
    * 发布层由单个发布场中的两个或多个节点组成。
 
-      * 节点可以相互独立地运作。
+      * 节点可以彼此独立运行。
 
-      * 每个节点均由一个 AEM 发布者和一个配备 AEM 调度程序模块的 Web 服务器组成。
+      * 每个节点均由一个 AEM 发布者和一个配备 AEM Dispatcher 模块的 Web 服务器组成。
 
       * 它可根据站点流量需求自动缩放。
 
-      * 但是，默认情况下，主区域中有一个发布场 [其他发布区域](/help/operations/additional-publish-regions.md) 可能获得许可。
+      * 默认情况下，主要区域中只有一个发布场，但是[附加的发布区域](/help/operations/additional-publish-regions.md)可以获得许可。
 
       * 最终用户或站点访客可通过 AEM 发布服务访问网站。
-
 
 * 对于 AEM Assets as a Cloud Service：
 
@@ -151,9 +151,9 @@ AEM as a Cloud Service 最初提供两种类型的程序：
 
    * 内容获得创作层的批准即表示内容可以被激活，因此可以推送到发布层持久层，或（可选）推送到预览层。此操作可通过复制服务（一个中间件管道）实现。该管道通过订阅了推送到管道的内容的单独发布服务（或预览服务）节点接收新内容。
 
-      >[!NOTE]
-      >
-      >有关更多详细信息，请参阅[复制](/help/operations/replication.md)。
+     >[!NOTE]
+     >
+     >有关更多详细信息，请参阅[复制](/help/operations/replication.md)。
 
    * 开发人员和管理员可使用 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) 提供的连续集成/连续交付 (CI/CD) 服务管理 AEM as a Cloud Service 应用程序。这包括代码和使用 Cloud Manager 的 CI/CD 管道进行的配置部署。与监测、维护和疑难解答相关的任何内容（例如，日志文件）都会向 Cloud Manager 中的客户显示。
 
