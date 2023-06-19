@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3090'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 98%
 
 ### 预览服务 {#preview}
 
-在发布到发布实例之前，您还可以将内容片段发布到 **预览服务** 以进行测试和审查。 这是从以下位置完成的 **内容片段** 控制台。
+在发布到“发布”实例之前，您还可以将内容片段发布到&#x200B;**预览服务**，以进行测试和审查。这是通过&#x200B;**内容片段**&#x200B;控制台完成的。
 
 ### 复制 {#replication}
 
@@ -83,7 +83,7 @@ AEM 的 Headless 功能基于几项关键功能。历程的后面部分将详细
 为了以 Headless 方式修改您的内容，AEM 提供了两个功能强大的 API。
 
 * GraphQL API 允许您创建请求来访问和交付内容片段。
-* Assets REST API 允许您创建和修改内容片段（及其他资产）。
+* Assets REST API 允许您创建和修改内容片段（及其他资源）。
 
 您将在 AEM Headless 历程的后面部分中了解这些 API 及其使用者式。或参阅下面的[其他资源](#additional-resources)部分以获取其他文档。
 
@@ -293,6 +293,6 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – 有关内容片段模型的技术文档。
 * [GraphQL 技术文档](https://graphql.org) – GraphQL 定义（外部链接）
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) – 说明如何创建请求来访问和交付内容片段的技术文档
-* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) – 说明如何创建和修改内容片段（及其他资产）的技术文档
+* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) – 说明如何创建和修改内容片段（及其他资源）的技术文档
 * [持久查询](/help/headless/graphql-api/persisted-queries.md) – 有关 AEM 中的持久查询的技术文档
 * [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md) – 对 AEM 中可用的 Headless 集成级别的完整讨论
