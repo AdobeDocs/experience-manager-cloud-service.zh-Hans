@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2127'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -59,8 +59,7 @@ ht-degree: 96%
 >* [内容片段配置用于呈现的组件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
->* [使用MSM对资产重用内容片段](/help/assets/reuse-assets-using-msm.md) (只能通过 **资产** console)
-
+>* [通过适用于资源的 MSM 重用内容片段](/help/assets/reuse-assets-using-msm.md)（只能通过&#x200B;**资源**&#x200B;控制台使用）
 
 通信渠道的数量在逐年增加。 通常，渠道称为投放机制，如：
 
@@ -75,7 +74,7 @@ ht-degree: 96%
 * 创建和管理渠道中性的可编辑内容。
 * 为一系列渠道构建内容池。
 * 为特定渠道设计内容变体。
-* 通过插入资产（混合媒体片段），向文本中添加图像。
+* 通过插入资源（混合媒体片段），向文本中添加图像。
 * 创建嵌套内容以反映数据的复杂性。
 
 然后，可以组合这些内容片段以通过各种渠道提供体验。
@@ -112,17 +111,17 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 >[!NOTE]
 >
->AEM 还支持片段内容的翻译。 请参阅[翻译资产](/help/assets/translate-assets.md)以了解更多信息。
+>AEM 还支持片段内容的翻译。 请参阅[翻译资源](/help/assets/translate-assets.md)以了解更多信息。
 
-## 发布并预览 {#publish-and-preview}
+## 发布和预览 {#publish-and-preview}
 
-与所有内容一样，您最终需要将内容片段发布到 **[发布服务](/help/overview/architecture.md#runtime-architecture)**.
+与所有内容一样，建议您将内容片段发布到&#x200B;**[发布服务](/help/overview/architecture.md#runtime-architecture)**。
 
-在此之前，您还可以预览使用内容片段交付的体验，方法是 [发布您的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) 到AEM **[预览服务](/help/overview/architecture.md#runtime-architecture)**.
+在此之前，通过[将您的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment)发布到 AEM **[预览服务](/help/overview/architecture.md#runtime-architecture)**，您还可以预览使用内容片段交付的体验。
 
 >[!CAUTION]
 >
->发布到 **预览服务** 只能从 **内容片段** 控制台。
+>只能通过&#x200B;**内容片段**&#x200B;控制台使用发布到&#x200B;**预览服务**&#x200B;功能。
 
 ## 内容类型 {#content-type}
 
@@ -130,9 +129,9 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 * **站点**&#x200B;功能。
 
-* 存储为&#x200B;**资产**：
+* 存储为&#x200B;**资源**：
 
-   * 内容片段（及其变体）可以从&#x200B;**内容片段**&#x200B;控制台和&#x200B;**资产**&#x200B;控制台创建和维护。
+   * 内容片段（及其变体）可以从&#x200B;**内容片段**&#x200B;控制台和&#x200B;**资源**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
 * 通过内容片段组件](/help/sites-cloud/authoring/fundamentals/content-fragments.md)（引用组件）在[页面编辑器中使用：
@@ -150,21 +149,21 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 * 独立于投放机制（即页面、渠道）。
 
-### 包含可视资产的片段 {#fragments-with-visual-assets}
+### 包含可视资源的片段 {#fragments-with-visual-assets}
 
 为了让作者更好地控制其内容，可以将图像添加到内容片段和/或与其集成。
 
-资产可以通过多种方式与内容片段一起使用；各具优势：
+资源可以通过多种方式与内容片段一起使用；各具优势：
 
-* **插入资产**&#x200B;到片段（混合媒体片段）
+* **插入资源**&#x200B;到片段（混合媒体片段）
 
    * 是片段的组成部分（请参阅[内容片段的组成部分](#constituent-parts-of-a-content-fragment)）。
-   * 定义资产的位置。
-   * 请参阅[将资产插入片段](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)（在片段编辑器中）以了解更多信息。
+   * 定义资源的位置。
+   * 请参阅[将资源插入片段](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)（在片段编辑器中）以了解更多信息。
 
-   >[!NOTE]
-   >
-   >插入到内容片段本身的视觉资产附在前面的段落中。 将片段添加到页面后，在添加中间内容时，这些资产会相对于该段落进行移动。
+  >[!NOTE]
+  >
+  >插入到内容片段本身的视觉资源附在前面的段落中。 将片段添加到页面后，在添加中间内容时，这些资源会相对于该段落进行移动。
 
 * **关联的内容**
 
@@ -173,16 +172,16 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
    * 在页面上使用片段时，可轻松使用（作为中间内容）。
    * 请参阅[关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)以了解更多信息。
 
-* 页面编辑器的&#x200B;**资产浏览器**&#x200B;中的可用资产
+* 页面编辑器的&#x200B;**资源浏览器**&#x200B;中的可用资源
 
-   * 允许完全灵活地选择资产。
+   * 允许完全灵活地选择资源。
    * 具有一定的定位灵活性。
    * 不提供为特定片段批准的概念。
-   * 请参阅[资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)以了解更多信息。
+   * 请参阅[资源浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)以了解更多信息。
 
 ### 内容片段的组成部分 {#constituent-parts-of-a-content-fragment}
 
-内容片段资产由以下部分（直接或间接）组成：
+内容片段资源由以下部分（直接或间接）组成：
 
 * **片段元素**
 
@@ -197,9 +196,9 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
    * 在页面创作期间启用内容控制。
 
-* **插入到片段中的资产（混合媒体片段）**
+* **插入到片段中的资源（混合媒体片段）**
 
-   * 插入到实际片段中并用作片段内部内容的资产（图像）。
+   * 插入到实际片段中并用作片段内部内容的资源（图像）。
    * 嵌入在片段的段落系统中。
    * 可以[在页面上使用/引用片段时](/help/sites-cloud/authoring/fundamentals/content-fragments.md)进行格式化。
    * 只能使用片段编辑器在片段中添加、删除或移动到片段中。 无法在页面编辑器中执行这些操作。
@@ -207,27 +206,27 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
    * 只能添加到多行文本元素（任何片段类型）。
    * 附于前文（段落）。
 
-      >[!CAUTION]
-      >
-      >通过切换为纯文本格式，可以（意外）从片段中删除资产。
+     >[!CAUTION]
+     >
+     >通过切换为纯文本格式，可以（意外）从片段中删除资源。
 
-      >[!NOTE]
-      >
-      >在页面上使用片段时，资产也可以添加为[其他（中间）内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)；使用资产浏览器中的关联内容或资产。
+     >[!NOTE]
+     >
+     >在页面上使用片段时，资源也可以添加为[其他（中间）内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)；使用资源浏览器中的关联内容或资源。
 
 * **关联的内容**
 
    * 这是片段外部的内容，但与编辑相关。 通常是图像、视频或其他片段。
-   * 将收藏集中的单个资产添加到页面后，即可在页面编辑器中与片段一起使用。 这表示它们是可选的，具体取决于特定渠道的要求。
-   * 资产包括[通过收藏集关联到片段](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)；关联的收藏集允许作者决定在创作页面时要使用的资产。
+   * 将收藏集中的单个资源添加到页面后，即可在页面编辑器中与片段一起使用。 这表示它们是可选的，具体取决于特定渠道的要求。
+   * 资源包括[通过收藏集关联到片段](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)；关联的收藏集允许作者决定在创作页面时要使用的资源。
 
       * 收藏集可以作为默认内容与片段关联，也可以由作者在片段创作期间关联。
-      * [资产 (DAM) 收藏集](/help/assets/manage-collections.md)是片段关联内容的基础。
+      * [资源 (DAM) 收藏集](/help/assets/manage-collections.md)是片段关联内容的基础。
    * 或者，您也可以将片段本身添加到集合中以帮助跟踪。
 
 * **片段元数据**
 
-   * 使用[资产元数据架构](/help/assets/metadata-schemas.md)。
+   * 使用[资源元数据架构](/help/assets/metadata-schemas.md)。
    * 标记可在以下情况下创建：
 
       * 创建和创作片段
@@ -236,9 +235,9 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
          * 通过从控制台查看/编辑片段&#x200B;**属性**
          * 通过在片段编辑器中编辑&#x200B;**元数据**
 
-   >[!CAUTION]
-   >
-   >元数据处理配置文件不适用于内容片段。
+  >[!CAUTION]
+  >
+  >元数据处理配置文件不适用于内容片段。
 
 * **主控**
 
@@ -246,9 +245,9 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
       * 每个内容片段都有一个主控实例。
       * 无法删除主控。
+
    * 主控可以在&#x200B;**[变体](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)**&#x200B;下的片段编辑器中访问。
    * 主控不是此变体，而是所有变体的基础。
-
 
 * **变体**
 
@@ -268,7 +267,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 * 是在页面上使用/引用片段后，[在片段流中添加的其他内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content)。
 * 可用于[使用内容片段时的页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 * 中间内容可以添加到任何片段中，其中只有一个元素可见。
-* 关联内容的使用方式，以及相应浏览器中的资产和/或组件。
+* 关联内容的使用方式，以及相应浏览器中的资源和/或组件。
 
 >[!CAUTION]
 >
@@ -310,7 +309,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 WKND 项目包括：
 
 * 在以下位置提供的内容片段模型：
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 在以下位置提供的内容片段（和其他内容）：
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
