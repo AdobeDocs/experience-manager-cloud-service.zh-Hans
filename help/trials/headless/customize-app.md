@@ -4,10 +4,10 @@ description: 使用示例 React 应用程序以了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1038'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 1. 点按或单击编辑器屏幕右上角的&#x200B;**预览**&#x200B;按钮。
 
-1. 演示应用程序将在新选项卡中打开。该应用程序适用于虚构的 WKND 户外生活方式品牌。在周围单击以导航示例内容。
+1. 演示应用程序将在新选项卡中打开。该应用程序适用于虚构的 WKND 户外生活方式品牌。向下滚动页面以导航示例内容。
 
 1. 返回到内容片段编辑器的浏览器选项卡以继续。
 
