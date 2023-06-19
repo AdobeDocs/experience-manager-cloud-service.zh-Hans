@@ -2,9 +2,9 @@
 title: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 3a00faaf285be693243e3fb55159149520293610
+source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
@@ -15,18 +15,22 @@ ht-degree: 1%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.10的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 是2023年5月18日。
+最新版本1.9.11的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 为2023年6月19日。
 
 ## 发行亮点 {#release-highlights}
 
 最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包括以下更新：
 
-* Workfront根据从Experience Manager到Workfront的REST调用为重复事件订阅返回409 HTTP响应，这会导致空指针异常。
+* 配置高级联网后，将内容从Adobe Workfront发送到AEMas a Cloud Service时出现问题。
+
+>[!NOTE]
+>
+>AEM 6.4的扩展支持已终止。 欲知更多详情，请参阅我们的 [技术支持时段](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/?lang=en).
 
 
 >[!IMPORTANT]
 >
->Adobe建议您 [升级到最新的1.9.10版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建议您 [升级到最新的1.9.11版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知问题 {#known-issues}
 
@@ -35,6 +39,10 @@ ht-degree: 1%
 * 当您使用经典Workfront体验时， **[!UICONTROL 发送至]** 中提供的选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 此 **[!UICONTROL 发送至]** 选项通过使用 **[!UICONTROL 文档操作]** 下拉列表。 此 **[!UICONTROL 发送至]** 选项对以下各项正常工作 **[!UICONTROL 更多]** 下拉列表以及 **[!UICONTROL 文档操作]** 下拉列表(可从新的Workfront experience中获取)。
 
 ## 以前版本 {#previous-releases}
+
+### 2023年5月版 {#may-2023-release}
+
+* Workfront根据从Experience Manager到Workfront的REST调用为重复事件订阅返回409 HTTP响应，这会导致空指针异常。
 
 ### 2023年4月版 {#april-2023-release}
 
@@ -95,7 +103,7 @@ ht-degree: 1%
 
 * 启用 **[!UICONTROL 将资源发布到Brand Portal]** Workfront增强型连接器配置页面上的选项会创建不正确的事件。 即使禁用了该选项，该事件也不会被删除。
 
-   要解决此问题：
+  要解决此问题：
 
    1. 升级到1.9.5版本的增强型连接器。
 
@@ -123,9 +131,9 @@ ht-degree: 1%
       1. 删除错误的事件订阅。 对进行删除API调用 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          `200` 响应代码表示成功删除了错误的事件订阅。
-   >[!NOTE]
-   >
-   >如果在执行此过程中提到的步骤之前删除了错误的事件预订，则可以跳过此过程的最后一个步骤。
+  >[!NOTE]
+  >
+  >如果在执行此过程中提到的步骤之前删除了错误的事件预订，则可以跳过此过程的最后一个步骤。
 
 ### 2022年10月版 {#october-2022-release}
 
@@ -189,4 +197,3 @@ ht-degree: 1%
 >[!MORELIKETHIS]
 >
 >* [集成 [!DNL Workfront for Experience Manager enhanced connector] 使用Experience Manager6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
-
