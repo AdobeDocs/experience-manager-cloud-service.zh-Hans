@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4934'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,22 +30,21 @@ ht-degree: 96%
 >* [AEM Commerce 通过 GraphQL 使用来自 Commerce 平台的数据](/help/commerce-cloud/integrating/magento.md)。
 >* AEM 内容片段与 AEM GraphQL API（一种自定义实施，基于标准 GraphQL）配合使用，提供结构化内容用于您的应用程序。
 
-
 ## GraphQL API {#graphql-api}
 
 GraphQL 是：
 
 * “*...一种用于 API 和运行时的查询语言，使用您的现有数据满足这些查询。GraphQL 提供了 API 中数据的完整且可理解的描述，使客户端能够精确地请求所需要的数据，避免其他多余内容，让 API 更容易随时间演进，并提供了强大的开发人员工具。*”
 
-   请参阅 [GraphQL.org](https://graphql.org)。
+  请参阅 [GraphQL.org](https://graphql.org)。
 
 * “*...一种面向灵活 API 层的开发规格。将 GraphQL 放在现有后端之上，相比从前能够更快地构建产品...*”
 
-   请参阅[探索 GraphQL](https://www.graphql.com)。
+  请参阅[探索 GraphQL](https://www.graphql.com)。
 
 * *“...一种数据查询语言和规范，由 Facebook 在 2012 年内部开发，然后在 2015 年公开开源发布。它提供了对基于 REST 的架构的替代，其目的是为了提高开发人员的工作效率并尽可能减少传输的数据量。GraphQL 已由各种规模的数百家组织用于生产环境中...”*
 
-   请参阅 [GraphQL 基础](https://foundation.graphql.org/)。
+  请参阅 [GraphQL 基础](https://foundation.graphql.org/)。
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -125,7 +124,6 @@ AEM 提供将查询（两种类型）转换为[持久查询的功能，可由 Di
 >* 创建一个名为 `ENABLE_GRAPHQL_ENDPOINT` 的 [Cloud Manager 环境变量](/help/implementing/cloud-manager/environment-variables.md)
 >* 值为 `true`
 
-
 >[!NOTE]
 >
 >将来某个时候，执行直接查询的功能可能会被弃用。
@@ -134,7 +132,7 @@ AEM 提供将查询（两种类型）转换为[持久查询的功能，可由 Di
 
 您可以使用 [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 测试和调试 GraphQL 查询。
 
-## 创作、预览和发布的用例 {#use-cases-author-preview-publish}
+## 用于编写、预览和发布的用例 {#use-cases-author-preview-publish}
 
 用例可以依赖于 AEM as a Cloud Service 环境的类型：
 
@@ -154,7 +152,7 @@ AEM 提供将查询（两种类型）转换为[持久查询的功能，可由 Di
 
 权限是访问 Assets 所需的权限。
 
-GraphQL 查询是在基础请求的 AEM 用户的许可下执行的。如果用户对某些片段（存储为资产）没有读取权限，它们将不会成为结果集的一部分。
+GraphQL 查询是在基础请求的 AEM 用户的许可下执行的。如果用户对某些片段（存储为资源）没有读取权限，它们将不会成为结果集的一部分。
 
 此外，用户需要访问 GraphQL 端点才能执行 GraphQL 查询。
 
@@ -233,7 +231,7 @@ Sites GraphQL 服务监听（在后台）对内容片段模型所作的任何更
 
 * 您生成的字段。
 
-   使用选择的一组[数据类型](#Data-types)，根据您配置内容片段模型的方式来创建字段。字段名称获取自&#x200B;**数据类型**&#x200B;选项卡的&#x200B;**属性名称**。
+  使用选择的一组[数据类型](#Data-types)，根据您配置内容片段模型的方式来创建字段。字段名称获取自&#x200B;**数据类型**&#x200B;选项卡的&#x200B;**属性名称**。
 
    * 还需要考虑 **呈现为**&#x200B;设置，因为用户可以配置某些数据类型。例如，通过从下拉列表中选择 `multifield`，可以将单行文本字段配置为包含多个单行文本。
 
@@ -365,13 +363,13 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 >[!NOTE]
 >
->请注意，`_variations` 字段不包含 `master`变量，从技术上讲是原始数据（在 UI 中称为 *主控变量*）不被视为显式变量。
+>请注意，`_variations` 字段不包含 `master` 变体，从技术上讲是原始数据（在 UI 中称为 *主控变体*）不被视为显式变体。
 
-请参阅[示例查询 – 具有指定变量的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)。
+请参阅[示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)。
 
 >[!NOTE]
 >
->如果内容片段不存在给定的变量，则原始数据（也称为主控变量）将作为（回退）默认值返回。
+>如果内容片段不存在给定的变体，则原始数据（也称为主控变体）将作为（回退）默认值返回。
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -670,7 +668,6 @@ query {
 >
 >* 偏移量越高，从完整的 JCR 查询结果集中跳过项目所需的时间就越多。大型结果集的替代解决方案是使用带有 `first` 和 `after` 方法的分页查询。
 
-
 ### 分页查询 – 先和后 {#paginated-first-after}
 
 `...Paginated` 查询类型重用了大部分 `...List` 查询类型功能（过滤、排序），但没有使用 `offset`/`limit` 参数，它使用 `first`/`after` 参数，正如 [GraphQL 光标连接规范](https://relay.dev/graphql/connections.htm)所定义。您可以在 [GraphQL 介绍](https://graphql.org/learn/pagination/#pagination-and-edges) 中找到不太正式的介绍。
@@ -707,7 +704,6 @@ query {
 >
 >* 由于内部技术限制，如果对嵌套字段应用排序和过滤，性能会降低。因此，建议使用存储在根级别的过滤器/排序字段。如果要查询大型分页结果集，这也是推荐的方式。
 
-
 ## GraphQL 查询中的 Web 优化图像传递 {#web-optimized-image-delivery-in-graphql-queries}
 
 经 Web 优化的图像传递支持您使用 GraphQL 查询来：
@@ -716,9 +712,9 @@ query {
 
 * 通过查询传递参数，以便自动生成并返回图像的特定演绎版
 
-   >[!NOTE]
-   >
-   >指定的演绎版未存储在 AEM Assets 中。演绎版将生成并在缓存中保存一段较短的时间。
+  >[!NOTE]
+  >
+  >指定的演绎版未存储在 AEM Assets 中。演绎版将生成并在缓存中保存一段较短的时间。
 
 * 将 URL 作为 JSON 传递的一部分返回
 
@@ -887,17 +883,17 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
 
-      响应如下：
+     响应如下：
 
-      ![使用参数的图像传递](assets/cfm-graphiql-sample-image-delivery.png "使用参数的图像传递")
+     ![使用参数的图像传递](assets/cfm-graphiql-sample-image-delivery.png "使用参数的图像传递")
 
 * [多个参数](#dynamic-image-delivery-multiple-specified-parameters)；名为 `dynamic` 的持久查询
 
    * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
 
-      >[!CAUTION]
-      >
-      >在末尾需要添加 `;` 才能完全终止参数列表。
+     >[!CAUTION]
+     >
+     >在末尾需要添加 `;` 才能完全终止参数列表。
 
 ### 图像传递的限制 {#image-delivery-limitations}
 
@@ -921,26 +917,26 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * 将 `List` 添加到模型名称；例如，`cityList`
    * 请参阅[示例查询 – 关于所有城市的所有信息](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-   稍后您可以：
+  稍后您可以：
 
    * [对结果进行排序](#sorting)
 
       * `ASC` : 升序
       * `DESC` : 降序
+
    * 使用以下任一方法返回一页结果：
 
       * [带有偏移和限制的列表查询](#list-offset-limit)
       * [带有“先”和“后”的分页查询](#paginated-first-after)
+
    * 请参阅[示例查询 – 关于所有城市的所有信息](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
+* 过滤器 `includeVariations` 包含在 `List` 和 `Paginated` 查询类型中。要在查询结果中检索内容片段变体，则 `includeVariations` 过滤器必须设置为 `true`。
 
+   * 请参阅[给定模型的多个内容片段及其变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
-
-* 筛选条件 `includeVariations` 包含在 `List` 和 `Paginated` 查询类型。  要在查询结果中检索内容片段变体，请 `includeVariations` 筛选器必须设置为 `true`.
-
-   * 参见 [给定模型的多个内容片段及其变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
-   >[!CAUTION]
-   >筛选条件 `includeVariations` 和系统生成的字段 `_variation` 不能在同一查询定义中一起使用。
+  >[!CAUTION]
+  >过滤器 `includeVariations` 和系统生成的字段 `_variation` 不能在同一个查询定义中一起使用。
 
 * 如果您希望使用逻辑 OR：
    * 使用 ` _logOp: OR`
@@ -957,25 +953,31 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
       * `_locale`：用于显示语言；基于语言管理器
          * 请参阅[给定区域设置的多个内容片段的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-given-locale)
+
       * `_metadata`：用于显示片段的元数据
          * 请参阅[元数据的示例查询 – 列出标题为 GB 的奖励的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+
       * `_model`：允许查询内容片段模型（路径和标题）
          * 请参阅[来自模型的内容片段模型的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-content-fragment-model-from-model)
+
       * `_path`：存储库中内容片段的路径
          * 请参阅[示例查询 – 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+
       * `_reference`：用于显示引用，包括富文本编辑器中的内联引用
          * 请参阅[具有预获取引用的多个内容片段的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)
+
       * `_variation`：用于显示内容片段中的特定变体
 
-         >[!NOTE]
-         >
-         >如果内容片段不存在给定的变量，则主控变量将作为（回退）默认值返回。
+        >[!NOTE]
+        >
+        >如果内容片段不存在给定的变量，则主控变量将作为（回退）默认值返回。
 
-         >[!CAUTION]
-         >
-         >系统生成的字段 `_variation` 不能与过滤器一起使用 `includeVariations`.
+        >[!CAUTION]
+        >
+        >系统生成的字段 `_variation` 不能与过滤器 `includeVariations` 一起使用。
 
          * 请参阅[示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+
    * 对于[图像传递](#image-delivery)：
 
       * `_dynamicUrl`：在 `ImageRef` 引用上使用
@@ -987,36 +989,29 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
          * [具有完整参数的图像传递的示例查询](#image-delivery-full-parameters)
 
          * [具有单个指定参数的图像传递的示例查询](#image-delivery-single-specified-parameter)
-   * `_tags` ：用于显示包含标记的内容片段或变量的ID；这是一个数组 `cq:tags` 标识符。
 
-      * 参见 [示例查询 — 标记为城市分隔符的所有城市的名称](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
-      * 参见 [附加了特定标记的给定模型的内容片段变体示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
-      * 参见 [示例查询，按_tags ID进行筛选并排除变量](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
-      * 参见 [按_tags ID筛选并包含变量的示例查询](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+   * `_tags`：显示包含标签的内容片段或变体的 ID；这是一个 `cq:tags` 标识符的数组。
 
-      >[!NOTE]
-      >
-      >标记也可以通过列出内容片段的元数据来查询。
+      * 请参阅[示例查询 - 标记为“城市度假”的所有城市的名称](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
+      * 请参阅[附加了特定标签的给定模型的内容片段变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * 请参阅[按 _tags ID 过滤并排除变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * 请参阅[按 _tags ID 过滤并包括变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+     >[!NOTE]
+     >
+     >还可以通过列出内容片段的元数据来查询标签。
 
    * 以及操作：
 
       * `_operator`：应用特定运算符；`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`、`STARTS_WITH`
          * 请参阅[示例查询 – 所有名字不是“Jobs”的人](/help/headless/graphql-api/sample-queries.md#sample-all-persons-not-jobs)
          * 请参阅[示例查询 – `_path` 以特定前缀开头的所有冒险](/help/headless/graphql-api/sample-queries.md#sample-wknd-all-adventures-cycling-path-filter)
+
       * `_apply`：用于应用特定条件，例如 `AT_LEAST_ONCE`
          * 请参阅[示例查询 – 筛选数组中必须至少出现一次的项](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
+
       * `_ignoreCase`：在查询时忽略大小写
          * 请参阅[示例查询 – 名称中包含 SAN 的所有城市，不考虑大小写](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
 
 * 支持 GraphQL 合并类型：
 
