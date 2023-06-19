@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使�
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ ht-degree: 90%
 例如，如果存在名为 `my-query` 的特定查询，使用来自站点配置 `my-conf` 的模型 `my-model`：
 
 * 您可以使用 `my-conf` 特定的端点创建查询，然后查询将保存如下：
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * 您可以使用 `global` 端点创建相同的查询，但然后查询将保存如下：
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
@@ -355,46 +355,48 @@ curl -u admin:admin -X POST \
 
 >[!NOTE]
 >
->对于缓存控制，OSGi配置仅适用于发布实例。 创作实例上存在该配置，但忽略了它。
+>对于缓存控制，OSGi 配置仅适用于发布实例。创作实例上存在该配置，但忽略了它。
 
 >[!NOTE]
 >
->此 **持久查询服务配置** 还用于 [配置查询响应代码](#configuring-query-response-code).
+>**持久查询服务配置**&#x200B;也用于[配置查询响应代码](#configuring-query-response-code)。
 
 发布实例的默认 OSGi 配置：
 
 * 读取 Cloud Manager 变量（如果可用）：
 
-   | OSGi 配置属性 | 读取此项 | Cloud Manager 变量 |
-   |--- |--- |--- |
-   | `cacheControlMaxAge` | 读 | `graphqlCacheControl` |
-   | `surrogateControlMaxAge` | 读 | `graphqlSurrogateControl` |
-   | `surrogateControlStaleWhileRevalidate` | 读 | `graphqlStaleWhileRevalidate` |
-   | `surrogateControlStaleIfError` | 读 | `graphqlStaleIfError` |
+  | OSGi 配置属性 | 读取此项 | Cloud Manager 变量 |
+  |--- |--- |--- |
+  | `cacheControlMaxAge` | 读 | `graphqlCacheControl` |
+  | `surrogateControlMaxAge` | 读 | `graphqlSurrogateControl` |
+  | `surrogateControlStaleWhileRevalidate` | 读 | `graphqlStaleWhileRevalidate` |
+  | `surrogateControlStaleIfError` | 读 | `graphqlStaleIfError` |
 
-   {style="table-layout:auto"}
+  {style="table-layout:auto"}
 
 * 如果不可用，OSGi 配置将使用[发布实例的默认值](#publish-instances)。
 
 ## 配置查询响应代码 {#configuring-query-response-code}
 
-默认情况下， `PersistedQueryServlet` 发送 `200` 执行查询时的响应，而不考虑实际结果。
+默认情况下，无论实际结果如何，`PersistedQueryServlet`在执行查询时都会发送`200`响应。
 
-您可以 [配置OSGi设置](/help/implementing/deploying/configuring-osgi.md) 对于 **持久查询服务配置** 控制返回的状态代码 `/execute.json/persisted-query` 端点（当持久查询中存在错误时）。
+当持久化查询中出现错误时，您可以为&#x200B;**持久化查询服务配置**[配置 OSGi 设置](/help/implementing/deploying/configuring-osgi.md)，以控制 `/execute.json/persisted-query` 端点返回的状态代码。
 
 >[!NOTE]
 >
->此 **持久查询服务配置** 还用于 [管理缓存](#cache-osgi-configration).
+>**持久查询服务配置**&#x200B;也用于[管理缓存。](#cache-osgi-configration)
 
-字段 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`)可按要求定义：
+字段 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) 可以根据需要定义：
 
-* `false` （默认值）：持久查询是否成功无关紧要。 此 `/execute.json/persisted-query` 将返回状态代码 `200` 和 `Content-Type` 返回的标头将为 `application/json`.
+* `false`（默认值）：
+持久化查询成功与否无关紧要。`/execute.json/persisted-query` 会返回状态码 `200`，返回的 `Content-Type` 标题为 `application/json`。
 
-* `true`：端点将返回 `400` 或 `500` 当运行持久查询时出现任何形式的错误时适用。 还有返回的 `Content-Type` 将为 `application/graphql-response+json`.
+* `true`：
+当运行持久化查询时出现任何形式的错误时，端点将返回 `400` 或 `500`（视情况而定）。此外，返回的 `Content-Type` 将为 `application/graphql-response+json`。
 
-   >[!NOTE]
-   >
-   >有关详细信息，请参阅https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >[!NOTE]
+  >
+  >有关更多详细信息，请参阅https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## 为应用程序使用的查询 URL 编码 {#encoding-query-url}
 
