@@ -3,9 +3,9 @@ title: 访问存储库
 description: 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Git 存储库。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
