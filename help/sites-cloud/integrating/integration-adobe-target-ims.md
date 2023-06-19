@@ -3,9 +3,9 @@ title: 与 Adobe Target 集成时使用的 IMS 配置
 description: 了解与 Adobe Target 集成时使用的 IMS 配置
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 99%
    >
    >如果您已订阅 Adobe Target，但它并未列出，您应查看[先决条件](#prerequisites)。
 
-   ![选择Adobe Target](assets/integration-target-ims-12.png)
+   ![选择 Adobe Target](assets/integration-target-ims-12.png)
 
 1. **上传公钥**，完成后，选择&#x200B;**下一步**：
 
