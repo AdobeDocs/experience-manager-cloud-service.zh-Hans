@@ -3,9 +3,9 @@ title: 添加自定义域名
 description: 了解如何使用 Cloud Manager 添加自定义域名。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
