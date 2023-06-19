@@ -6,9 +6,9 @@ feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,14 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->此控制台仅显示内容片段。 它不会显示其他资产类型，如图像和视频。
+>此控制台仅显示内容片段。 它不会显示其他资源类型，如图像和视频。
 
 >[!NOTE]
 >
 >当前可通过以下方式访问您的内容片段：
 >
 >* 此&#x200B;**内容片段**&#x200B;控制台
->* **资产**&#x200B;控制台 – 参见[管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
-
+>* **资源**&#x200B;控制台 – 参见[管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
 
 >[!NOTE]
 >
@@ -87,13 +86,12 @@ ht-degree: 95%
 * [自定义表视图以显示选定的信息列](#select-available-columns)
 * 使用&#x200B;**在资源中打开**&#x200B;直接在&#x200B;**资源**&#x200B;控制台中打开当前位置。
 
-   >[!NOTE]
-   >
-   >**资产**&#x200B;控制台用于访问资产，例如图像、视频等。  此控制台可以访问：
-   >
-   >* 使用&#x200B;**在资产中打开**&#x200B;链接（在“内容片段”控制台中）
-   >* 直接从全局导航窗格
-
+  >[!NOTE]
+  >
+  >**资源**&#x200B;控制台用于访问资源，例如图像、视频等。  此控制台可以访问：
+  >
+  >* 使用&#x200B;**在资源中打开**&#x200B;链接（在“内容片段”控制台中）
+  >* 直接从全局导航窗格
 
 ### 针对（选定的）内容片段的操作 {#actions-selected-content-fragment}
 
@@ -126,9 +124,9 @@ ht-degree: 95%
    * 仅供参考
 * **预览**
    * 仅供参考:
-      * **同步**：内容片段在上同步 **作者** 和 **预览** 服务。
-      * **不同步**：内容片段在上的不同步 **作者** 和 **预览** 服务。 您需要 **Publish** 到 **预览** 以确保两个实例恢复同步。
-      * blank：内容片段不存在于 **预览** 服务。
+      * **同步中**：内容片段在&#x200B;**创作**&#x200B;和&#x200B;**预览**&#x200B;服务中同步。
+      * **不同步**：内容片段在&#x200B;**创作**&#x200B;和&#x200B;**预览**&#x200B;服务中不同步。您需要&#x200B;**发布**&#x200B;到&#x200B;**预览**，以确保两个实例恢复同步。
+      * 空白：**预览**&#x200B;服务上不存在内容片段。
 * **修改时间**
    * 仅供参考
 * **修改人**
@@ -141,17 +139,17 @@ ht-degree: 95%
 
    * 提供一个链接来打开一个列出该片段的所有父引用的对话框，包括引用内容片段、体验片段和页面。要打开某个特定的引用，请单击对话框中的&#x200B;**标题**。
 
-      ![内容片段控制台 –“引用”对话框](assets/cfc-console-references-dialog.png)
+     ![内容片段控制台 –“引用”对话框](assets/cfc-console-references-dialog.png)
 
 * **语言**
 
    * 指示内容片段的区域设置，以及与内容片段关联的区域设置/语言副本的总数。
 
-      ![内容片段控制台 – 语言指示器](assets/cfc-console-language-indicator.png)
+     ![内容片段控制台 – 语言指示器](assets/cfc-console-language-indicator.png)
 
       * 单击/点击计数可打开显示所有语言副本的对话框。要打开某个特定的语言副本，请单击对话框中的&#x200B;**标题**。
 
-         ![内容片段控制台 –“语言”对话框](assets/cfc-console-languages-dialog.png)
+        ![内容片段控制台 –“语言”对话框](assets/cfc-console-languages-dialog.png)
 
 ## 选择可用列 {#select-available-columns}
 
