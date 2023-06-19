@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1147'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 87%
 * 运行查询以立即查看结果
 * 管理&#x200B;**查询变量**
 * 保存并管理&#x200B;**持久查询**
-* 发布或取消发布， **持久查询**，通过 **Publish** 或 **预览** 服务；例如，到/从 `dev-publish`
+* 将&#x200B;**持久查询**&#x200B;发布到您的&#x200B;**发布**&#x200B;或&#x200B;**预览**&#x200B;服务，或对其进行取消发布；例如，到/从 `dev-publish` 
 * 请参阅之前查询的&#x200B;**历史记录**
 * 使用&#x200B;**文档资源管理器**&#x200B;访问文档；帮助您学习和理解可用的方法。
 
@@ -132,11 +132,11 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 
 ## 发布和预览持久查询 {#publishing-previewing-persisted-queries}
 
-从列表（左侧面板）中选择了持久查询后，您可以使用 **Publish** 操作。
+一旦从列表（左面板）中选择了持久查询，您就可以使用&#x200B;**发布**&#x200B;操作。 
 
-这会将查询激活到您选择的环境。 您可以选择您的 **Publish** 环境(例如， `dev-publish`)，或者您的 **预览** 环境，让您的应用程序在测试时轻松访问。
+这将会激活对您选择的环境的查询。您可以选择您的&#x200B;**发布**&#x200B;环境（例如，`dev-publish`），或者您的&#x200B;**预览**&#x200B;环境，以便您的应用程序在测试时轻松访问。
 
-![GraphiQL — 发布的持久查询](assets/cfm-graphiql-publish.png "GraphiQL — 发布持久查询")
+![GraphiQL - 发布持久查询 ](assets/cfm-graphiql-publish.png "GraphiQL - 发布持久查询")
 
 >[!NOTE]
 >
@@ -144,13 +144,13 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 
 ## 正在取消发布持久查询 {#unpublishing-persisted-queries}
 
-与发布时一样，一旦从列表（左侧面板）中选择了持久查询，您就可以使用 **取消发布** 操作。
+与发布时一样，一旦从列表（左面板）中选择了持久查询，您就可以使用&#x200B;**取消发布**&#x200B;操作。
 
-这将从您选择的环境中取消激活查询；您可以 **Publish** 环境，或 **预览** 环境。
+这将停用您选择的环境中的查询；即您的&#x200B;**发布**&#x200B;环境，或您的&#x200B;**预览**&#x200B;环境。
 
 >[!NOTE]
 >
->您还应该确保对客户端应用程序进行了必要的更改，以避免潜在问题。
+>您还应确保已对客户端应用程序进行了必要的更改，以避免出现潜在问题。
 
 ## 复制 URL 以直接访问查询 {#copy-url}
 
