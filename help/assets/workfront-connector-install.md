@@ -4,9 +4,9 @@ description: 安装 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: aa183901e80ba414fc3db5af01fbc49d082af7b6
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '854'
 ht-degree: 2%
 
 ---
@@ -22,6 +22,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
+>* 自2022年6月起，Adobe发布了一个新的原生集成，用于将Workfront与Adobe Experience Manager Assetsas a Cloud Service连接。 这种集成已成为连接这两种解决方案的必需方法。 未来任何新实施的增强型连接器（1.9.8及更高版本）都会被阻止，这些连接器用于将Workfront与AEM Assetsas a Cloud Service连接。 有关如何设置此集成的更多信息，请参阅 [配置Experience Manager Assetsas a Cloud Service集成](workfront-connector-configure.md).
 >* Adobe需要部署和配置 [!DNL Adobe Workfront for Experience Manager enhanced connector] 仅通过认证合作伙伴或 [!DNL Adobe Professional Services]. 如果部署与配置时没有认证合作伙伴或 [!DNL Adobe Professional Services]，它不受Adobe支持。
 >
 >* Adobe可能会将更新发布到 [!DNL Adobe Workfront] 和 [!DNL Adobe Experience Manager] 使此连接器成为冗余连接器；如果发生这种情况，客户可能需要从使用此连接器过渡。
@@ -46,7 +47,7 @@ ht-degree: 2%
    >
    >* 要查找程序的IP，请打开终端窗口并运行命令，例如：
    >
-   >    ```TXT
+   >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
    >
    >    ```

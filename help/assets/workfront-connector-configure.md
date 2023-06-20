@@ -4,9 +4,9 @@ description: 配置 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1787'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
+>* 自2022年6月起，Adobe发布了一个新的原生集成，用于将Workfront与Adobe Experience Manager Assetsas a Cloud Service连接。 这种集成已成为连接这两种解决方案的必需方法。 未来任何新实施的增强型连接器（1.9.8及更高版本）都会被阻止，这些连接器用于将Workfront与AEM Assetsas a Cloud Service连接。 有关如何设置此集成的更多信息，请参阅 [配置Experience Manager Assetsas a Cloud Service集成](workfront-connector-configure.md).
 >* Adobe需要部署和配置 [!DNL Adobe Workfront for Experience Manager enhanced connector] 仅通过认证合作伙伴或 [!DNL Adobe Professional Services]. 如果部署与配置时没有认证合作伙伴或 [!DNL Adobe Professional Services]，它不受Adobe支持。
 >
 >* Adobe可能会将更新发布到 [!DNL Adobe Workfront] 和 [!DNL Adobe Experience Manager] 使此连接器成为冗余连接器；如果发生这种情况，客户可能需要从使用此连接器过渡。
