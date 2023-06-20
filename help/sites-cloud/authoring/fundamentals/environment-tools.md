@@ -2,10 +2,10 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 56%
+source-wordcount: '2153'
+ht-degree: 55%
 
 ---
 
@@ -270,7 +270,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  — 允许您查看特定时间点的页面状态。
 * [Live Copy状态](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status)  — 允许快速概述Live Copy状态以及哪些组件是/不是继承的。
 * [开发人员模式](/help/implementing/developing/tools/developer-mode.md)
-* [预览](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 用于查看将在发布环境中显示的页面；或使用内容中的链接进行导航。
+* [预览](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)  — 用于查看在发布环境中显示的页面；或使用内容中的链接进行导航。
 * [注释](/help/sites-cloud/authoring/fundamentals/annotations.md) - 用于在页面上添加或查看注释。
 
 您可以使用右上角的图标访问这些模式。实际图标会因您当前所使用的模式而有所不同：

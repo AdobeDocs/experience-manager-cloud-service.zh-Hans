@@ -2,10 +2,10 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 65%
+source-wordcount: '1572'
+ht-degree: 61%
 
 ---
 
@@ -90,11 +90,11 @@ ht-degree: 65%
 
 1. 列视图：
 
-   * 点按/单击所需资源的缩略图 - 缩略图上将覆盖一个勾号，表示已选择该页面。
+   * 点按/单击所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该勾号。
 
 1. 列表视图：
 
-   * 点按/单击所需资源的缩略图 - 缩略图上将覆盖一个勾号，表示已选择该页面。
+   * 点按/单击所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该勾号。
 
 1. 卡片视图：
 
@@ -103,7 +103,7 @@ ht-degree: 65%
       * 在移动设备上：点按并按住卡片
       * 在桌面设备上：使用勾号图标表示的[快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)：
 
-   * 卡片上将覆盖一个勾号，表示已选择该页面。
+   * 卡片上覆盖有一个勾号，表示已选择该页面。
 
    ![示例卡片](/help/sites-cloud/authoring/assets/card.png)
 
@@ -259,7 +259,7 @@ ht-degree: 65%
 
    * [删除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)：
 
-      * 系统将要求您确认该操作。
+      * 系统会要求您确认操作。
 
    >[!NOTE]
    >
@@ -319,8 +319,8 @@ ht-degree: 65%
 
    * **恢复到此版本**
 
-      * 将恢复该版本。
+      * 版本已恢复。
 
    * **显示差异**
 
-      * 此时将打开页面，并突出显示（两个版本之间的）差异。
+      * 打开页面时，会高亮显示（两个版本之间的）差异。

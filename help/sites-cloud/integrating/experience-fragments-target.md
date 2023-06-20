@@ -2,10 +2,10 @@
 title: 将体验片段导出到 Adobe Target
 description: 将体验片段导出到 Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '2250'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 100%
 >
 >* AEM 体验片段将导出到 Adobe Target 的默认工作区。
 >* 必须按照[与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)下的说明将 AEM 与 Adobe Target 集成。
-
 
 您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)导出到 Adobe Target (Target)。然后，可以将它们用作 Target 活动中的选件以大规模测试和个性化体验。
 
@@ -56,7 +55,6 @@ ht-degree: 100%
 >* [Adobe Target – 如何使用 Adobe Experience Manager (AEM) 体验片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=zh-Hans)
 >* [AEM 6.5 – 手动配置与 Adobe Target 的集成 – 创建 Target 云配置](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 
-
 ## 前提条件 {#prerequisites}
 
 需要执行各种操作：
@@ -77,7 +75,7 @@ ht-degree: 100%
 * 选择 Target 工作区作为目标
 * 选择一个外部化器域以重写体验片段中的引用（可选）
 
-可以在所需的文件夹和/或片段的&#x200B;**页面属性**&#x200B;中选择所需的选项；将根据需要继承规范。
+可以在以下位置选择所需的选项： **页面属性** 所需的文件夹或/和片段；根据需要继承规范。
 
 1. 导航到&#x200B;**体验片段**&#x200B;控制台。
 
@@ -185,7 +183,7 @@ ht-degree: 100%
 
    * **A4T Analytics Cloud 配置**：选择用于 Target 活动目标和量度的 Analytics Cloud 配置。如果您在定位内容时使用 Adobe Analytics 作为报告源，则需要此项。
 
-      <!-- Is this needed?
+     <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -195,36 +193,36 @@ ht-degree: 100%
 
    * **客户端库：**&#x200B;默认值为 AT.js（已弃用 mbox.js）
 
-      >[!NOTE]
-      >
-      >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
-      >
-      >mbox.js 已被弃用，将在稍后阶段删除。
-      >
-      >Adobe 建议您使用 AT.js 而不是 mbox.js 作为客户端库。
-      >
-      >AT.js 对 mbox.js 库进行了多项改进：
-      >
-      >* 缩短了 Web 实现的页面加载时间
-      >* 提高了安全性
-      >* 改善了针对单页应用程序的实施选项
-      >* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
-      >
-      >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
+     >[!NOTE]
+     >
+     >Target 库文件 [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html) 是 Adobe Target 的新实施库，专为典型的 Web 实施和单页应用程序而设计。
+     >
+     >mbox.js 已被弃用，将在稍后阶段删除。
+     >
+     >Adobe 建议您使用 AT.js 而不是 mbox.js 作为客户端库。
+     >
+     >AT.js 对 mbox.js 库进行了多项改进：
+     >
+     >* 缩短了 Web 实现的页面加载时间
+     >* 提高了安全性
+     >* 改善了针对单页应用程序的实施选项
+     >* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
+     >
+     >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
 
    * **使用标记管理系统交付客户端库** – 选择此选项可使用 Adobe Launch 或其他标记管理系统（或 DTM，它已被弃用）中的客户端库。
 
    * **自定义 AT.js**：浏览以上传您的自定义 AT.js。留空可使用默认库。
 
-      >[!NOTE]
-      >
-      >默认情况下，当您选择加入 Adobe Target 配置向导时，将启用“准确定位”。
-      >
-      >准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
-      >
-      >对于创作实例，“准确定位”始终处于启用状态。但在发布实例上，您可以通过清除云服务配置中“准确定位”旁边的复选标记来选择全局关闭准确定位 (**http://localhost:4502/etc/cloudservices.html**)。无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
-      >
-      >如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。您必须直接对这些组件进行任何更改。
+     >[!NOTE]
+     >
+     >默认情况下，当您选择加入 Adobe Target 配置向导时，将启用“准确定位”。
+     >
+     >准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
+     >
+     >对于创作实例，“准确定位”始终处于启用状态。但在发布实例上，您可以通过清除云服务配置中“准确定位”旁边的复选标记来选择全局关闭准确定位 (**http://localhost:4502/etc/cloudservices.html**)。无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
+     >
+     >如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。您必须直接对这些组件进行任何更改。
 
 1. 单击&#x200B;**连接到 Adobe Target** 可初始化与 Target 的连接。如果连接成功，则将显示消息&#x200B;**连接成功**。单击消息上的&#x200B;**确定**，然后单击对话框上的&#x200B;**确定**。
 
@@ -373,10 +371,11 @@ When you associate a page with the framework, the child pages inherit the associ
 * 如果体验片段当前未在活动中使用，AEM 将允许用户删除片段而不显示警告消息。
 * 如果 Target 中的活动当前正在使用体验片段，则会出现一条错误消息，警告 AEM 用户删除该片段可能给活动带来的后果。
 
-   AEM 中的错误消息不会禁止用户（强制）删除体验片段。如果删除体验片段：
+  AEM 中的错误消息不会禁止用户（强制）删除体验片段。如果删除体验片段：
 
    * 带有 AEM 体验片段的 Target 选件可能会显示意外行为
 
       * 该选件可能仍会呈现，因为体验片段 HTML 已推送到 Target
       * 如果也从 AEM 中删除了引用的资产，则体验片段中的任何引用都无法正常工作。
+
    * 当然，由于体验片段在 AEM 中不再存在，因此无法对体验片段进行任何进一步的修改。

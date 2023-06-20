@@ -2,10 +2,10 @@
 title: 您的收件箱
 description: 使用收件箱管理任务
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 74%
+source-wordcount: '905'
+ht-degree: 71%
 
 ---
 
@@ -136,11 +136,11 @@ ht-degree: 74%
    >
    >* 工作流项目 —  [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. 根据所选项目，将会启动相应的操作；例如：
+2. 根据所选项目，将启动操作，例如：
 
-   * 将打开与操作对应的对话框
-   * 将启动操作向导
-   * 将打开文档页面
+   * 此时将打开一个适合该操作的对话框
+   * 操作向导已启动
+   * 文档页面已打开
 
    例如，**委派**&#x200B;操作将打开一个对话框：
 

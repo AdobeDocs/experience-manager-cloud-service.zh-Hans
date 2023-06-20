@@ -2,10 +2,10 @@
 title: 添加页面注释
 description: 使用注释模式可像使用便笺一样在页面上留下注释和草图，协助您的内容审阅过程
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 97%
 
 1. 单击/点按“添加注释”图标（工具栏左侧的加号）以开始添加注释。
 
-1. 单击/点按需要添加注释的组件（将以蓝色边框突出显示可添加注释的组件）并打开对话框：
+1. 单击或点按所需的组件（可添加注释的组件以蓝色边框突出显示）以添加注释，并打开对话框：
 
    ![添加注释](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -67,13 +67,13 @@ ht-degree: 97%
    * 创建草图（线和形状）以突出显示组件的某个区域。
 
 
-      ![“注释草图”按钮](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![“注释草图”按钮](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      创建草图时，光标将变成十字线。您可以绘制多条不同的线。草图线反映注释颜色，可为箭头、圆环或椭圆环。
+     创建草图时，光标将变成十字线。您可以绘制多条不同的线。草图线反映注释颜色，可为箭头、圆环或椭圆环。
 
    * 选择或更改颜色：
 
-      ![注释色板按钮](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![注释色板按钮](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. 单击/点按注释对话框外部可关闭该对话框。随后将显示截断的注释视图及任何草图：
 

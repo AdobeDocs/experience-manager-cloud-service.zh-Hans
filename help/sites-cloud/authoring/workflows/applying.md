@@ -2,10 +2,10 @@
 title: 将工作流应用于页面
 description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 60%
+source-wordcount: '661'
+ht-degree: 58%
 
 ---
 
@@ -31,7 +31,6 @@ ht-degree: 60%
 >
 >* 如何将工作流应用于 DAM 资产。
 >* [使用项目工作流](/help/sites-cloud/authoring/projects/workflows.md)。
-
 
 <!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
@@ -104,6 +103,7 @@ ht-degree: 60%
    * **包标题**
 
       * 您可以指定包的标题，以帮助识别。
+
    >[!NOTE]
    >
    >为多资源支持配置了工作流并选择了多个资源时，**保留工作流包**&#x200B;选项可用。
@@ -122,14 +122,14 @@ ht-degree: 60%
 
    * 现有资源以查看其他操作：
 
-      * **包括子项**，指定将该资源的子项包含在工作流中。
+      * **包括子项** 以指定将该资源的子级包含在工作流中。
 系统将打开一个对话框，允许您根据以下各项优化选择：
 
          * 仅包括下级子项.
          * 仅包括已修改的页面.
          * 仅包括已发布的页面.
 
-         指定的任何子项都会添加到将应用工作流的资源列表中。
+        指定的任何子项都会添加到将应用工作流的资源列表中。
 
       * **删除选择** 以从工作流中删除该资源。
 

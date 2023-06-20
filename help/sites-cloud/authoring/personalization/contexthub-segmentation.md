@@ -2,10 +2,10 @@
 title: 使用 ContextHub 配置分段
 description: 了解如何使用 ContextHub 配置分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 100%
+source-wordcount: '1694'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的�
 >
 >因此，在[创建区段](#creating-a-new-segment)时，只要比较的值的类型是已知的，就应选择&#x200B;**数据类型**。例如：
 >
->在比较属性 `profile/age` 时，您已知道比较的类型将为 **number**，因此即使未设置 `profile/age`，比较 `profile/age` 小于 30 将返回 **false**，如您预期的那样。
+>比较属性时 `profile/age`，您已知道比较的类型为 **数字**，因此即使 `profile/age` 未设置，比较 `profile/age` 返回小于30 **false**，如您所愿。
 
 ### 引用 {#references}
 
@@ -96,7 +96,7 @@ AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的�
 
    ![新区段](../assets/contexthub-new-segment.png)
 
-   每个区段都有一个 boost 参数，该参数用作加权因素。较大数字表示，如果存在多个有效区段，则具有较大数字的区段优先于具有较小数字的区段。
+   每个区段都有一个 boost 参数，该参数用作加权因素。数字越大，表示在多个区段有效的情况下，优先选择区段而不是数字越小的区段。
 
    * 最小值：`0`
    * 最大值：`1000000`
@@ -199,8 +199,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. 提供文件夹的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
-   * **名称**&#x200B;将成为存储库中的节点名称。
-      * 它会根据标题自动生成，并根据 [AEM 命名约定](/help/implementing/developing/introduction/naming-conventions.md)进行调整。
+   * 此 **名称** 将成为存储库中的节点名称。
+      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定。](/help/implementing/developing/introduction/naming-conventions.md)
       * 如有必要可以调整。
 
    ![创建文件夹](../assets/contexthub-create-folder.png)
@@ -212,7 +212,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 此文件夹将显示在区段列表中。
    * 您的列排序方式将影响新文件夹在列表中的显示位置。
    * 您可以点按或单击列标题来调整您的排序。
-      ![新文件夹](../assets/contexthub-folder.png)
+     ![新文件夹](../assets/contexthub-folder.png)
 
 ### 修改现有文件夹 {#modify-folders}
 

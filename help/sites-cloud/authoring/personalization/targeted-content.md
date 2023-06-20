@@ -2,10 +2,10 @@
 title: 使用定位模式创作目标内容
 description: 定位模式和Target组件提供了用于为体验创建内容的工具
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 45%
+source-wordcount: '5412'
+ht-degree: 44%
 
 ---
 
@@ -151,7 +151,7 @@ ht-degree: 45%
 
 >[!CAUTION]
 >
->在创作实例中已定位的组件禁用定位时，请务必谨慎。 相应的活动也将自动从发布实例中删除。
+>在创作实例中已定位的组件禁用定位时，请务必谨慎。 相应的活动也会自动从发布实例中删除。
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ ht-degree: 45%
 
    ![“定位”按钮](../assets/targeted-target-button.png)
 
-   该组件内容随即会成为默认体验的选件。定位某个组件后，其默认节点会被复制到每个体验中。在进行特定于体验的创作时，需要具有此默认节点，才能编辑正确的内容节点。对于默认体验之外的其他体验，可[添加自定义选件](#adding-a-custom-offer)或[添加库选件](#adding-an-offer-from-an-offer-library)。
+   该组件内容随即会成为默认体验的选件。定位某个组件时，其默认节点会被复制到每个体验中。 在进行特定于体验的创作时，需要具有此默认节点，才能编辑正确的内容节点。对于默认体验之外的其他体验，可[添加自定义选件](#adding-a-custom-offer)或[添加库选件](#adding-an-offer-from-an-offer-library)。
 
 #### 通过添加 Target 组件创建选件 {#creating-an-offer-by-adding-a-target-component}
 

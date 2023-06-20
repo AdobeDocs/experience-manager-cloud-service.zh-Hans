@@ -4,10 +4,10 @@ description: 与 Adobe Target 集成
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 98%
+source-wordcount: '1042'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 
 * 默认情况下，客户端代码（如果首先添加）也会自动复制到“租户 ID”字段中。
 * 您可以选择更改默认租户 ID 集。
-* 因此，对 Target 进行的后端调用将基于租户 ID，而对 Target 进行的客户端调用将基于客户端代码。
+* 因此，对Target的后端调用基于租户ID，而对Target的客户端调用基于客户端代码。
 
 如前所述，对于 AEM as a Cloud Service，第一种情况最常见。无论哪种方式，请确保&#x200B;**两个**&#x200B;字段都包含正确的信息，具体取决于您的要求。
 
@@ -112,7 +112,7 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 3. 选择&#x200B;**配置**&#x200B;按钮。请注意包含已导入 Target 帐户凭据的配置窗口，以及此扩展的 at.js 版本。
 4. 选择&#x200B;**保存**&#x200B;以将 Target 扩展添加到 Launch 属性。**安装的扩展**列表的下方应列出 Target 扩展。
    ![保存扩展](assets/configure_extension1.png "保存扩展")
-5. 重复上述步骤以搜索 **Adobe ContextHub** 扩展并安装它（这是与 ContextHub 参数集成所必需的，并基于将执行的定位）。
+5. 重复上述步骤以搜索 **AdobeContextHub** 扩展并安装它（这是与contexthub参数集成所必需的，并基于完成的定位）。
 
 ### 创建数据元素 {#data-element}
 
@@ -130,7 +130,7 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 
 1. 添加一组操作，如屏幕快照所示。
    ![操作](assets/rules1.png "操作")
-2. 在“将参数添加到所有 Mbox”中，将之前配置的数据元素（参见上面的数据元素）添加到将在 mbox 调用中发送的参数。
+2. 在Add Params to All Mbox中，将之前配置的数据元素（请参阅上面的数据元素）添加到在mbox调用中发送的参数中。
    ![Mbox](assets/map_data1.png "操作")
 
 ### 构建和发布 {#build-publish}

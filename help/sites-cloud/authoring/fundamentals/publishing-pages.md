@@ -2,10 +2,10 @@
 title: 发布页面
 description: 如何使用 AEM 发布和取消发布页面
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 80%
+source-wordcount: '1804'
+ht-degree: 73%
 
 ---
 
@@ -46,10 +46,9 @@ ht-degree: 80%
 >
 >如果您没有发布特定页面所需的权限，请执行以下操作：
 >
->* 将触发一个工作流，通知相应人员您的发布请求。
+>* 触发工作流以通知相应人员您的请求要发布。
 >* 您的开发团队可能已自定义此工作流。
->* 将显示一条简短的消息，通知您工作流已经触发。
-
+>* 系统会显示一条简短的消息，通知您工作流已触发。
 
 >[!NOTE]
 >
@@ -65,14 +64,14 @@ ht-degree: 80%
 
 1. 根据页面是否包含需要发布的引用：
 
-   * 如果不包含要发布的引用，则将直接发布页面。
-   * 如果页面包含需要发布的引用，则将在&#x200B;**发布**&#x200B;向导中列出该内容，从该向导中可以：
+   * 如果没有要发布的引用，则直接发布页面。
+   * 如果页面包含需要发布的引用，则这些引用将列在 **Publish** 向导，您可以在其中执行以下操作之一：
       * 指定要与页面一起发布的资产/标记/等，然后使用&#x200B;**发布**&#x200B;完成该过程。
       * 使用&#x200B;**取消**&#x200B;中止操作。
 
    ![使用页面发布引用](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. 选择&#x200B;**发布**&#x200B;会将页面复制到发布环境。在页面编辑器中，将显示一个确认发布操作的信息横幅。
+1. 选择&#x200B;**发布**&#x200B;会将页面复制到发布环境。在页面编辑器中，会显示一个确认发布操作的信息横幅。
 
    ![发布状态信息横幅](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -129,17 +128,18 @@ ht-degree: 80%
 
    * **操作**
 
-      选择发布或取消发布选定的页面。
+     选择发布或取消发布选定的页面。
 
    * **计划**
 
-      选择立即或稍后执行该操作。
+     选择立即或稍后执行该操作。
 
-      稍后发布会启动一个工作流，以在指定时间发布选定的一个或多个页面。 相反，稍后取消发布会启动一个工作流，以在特定时间取消发布选定的一个或多个页面。
+     稍后发布会启动一个工作流，以在指定时间发布选定的一个或多个页面。 相反，稍后取消发布会启动一个工作流，以在特定时间取消发布选定的一个或多个页面。
 
-      >[!NOTE]
-      >
-      >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
+     >[!NOTE]
+     >
+     >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
+
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 单击&#x200B;**下一步**&#x200B;以继续。
@@ -168,11 +168,11 @@ ht-degree: 80%
 
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   **已发布引用**&#x200B;对话框将显示选定内容的引用。默认情况下，这些引用全部处于选中状态并将进行发布/取消发布，但您可以取消选择它们，以便将它们排除在操作之外。
+   **已发布引用**&#x200B;对话框将显示选定内容的引用。默认情况下，这些组件处于已选中状态并已发布/取消发布，但您可以取消选中以取消选择它们，以便它们不会包含在操作中。
 
    单击&#x200B;**完成**&#x200B;以保存您所做的更改，或单击&#x200B;**取消**&#x200B;以取消所做的选择并返回到向导。
 
-   返回到向导后，**引用**&#x200B;列将进行相应的更新，以反映您选择的要发布或取消发布的引用。
+   返回到向导中， **引用** 列将更新，以反映您选择的要发布或取消发布的引用。
 
    ![管理发布选择页面](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -203,7 +203,7 @@ ht-degree: 80%
 
    >[!NOTE]
    >
-   >将根据用户可能拥有也可能没有的权限显示&#x200B;**工作流**&#x200B;步骤。有关详细信息，请参阅此页面前面部分与发布权限有关的注释以及管理工作流的访问权限和[将工作流应用到页面](/help/sites-cloud/authoring/workflows/applying.md)。
+   >此 **工作流** 显示的步骤基于用户可能拥有也可能没有的权限。 有关详细信息，请参阅此页面前面部分与发布权限有关的注释以及管理工作流的访问权限和[将工作流应用到页面](/help/sites-cloud/authoring/workflows/applying.md)。
 
    资源按触发的工作流和每个给定选项进行分组，以便：
 
@@ -287,14 +287,14 @@ ht-degree: 80%
 
 * 在[站点控制台上的资源概述信息](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中
 
-   ![信息卡视图中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
+  ![信息卡视图中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-   站点控制台的[信息卡](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)、[列](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)和[列表](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)视图中将显示发布状态。
+  站点控制台的[信息卡](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)、[列](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)和[列表](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)视图中将显示发布状态。
 
 * 在[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)中
 
-   ![时间线视图中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+  ![时间线视图中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * 在[“页面信息”菜单](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)中（编辑页面时）
 
-   ![“页面信息”菜单中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)
+  ![“页面信息”菜单中的发布状态](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)

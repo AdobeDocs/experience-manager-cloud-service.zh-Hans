@@ -2,10 +2,10 @@
 title: 启动项
 description: 通过启动项，您可以高效地为未来版本开发内容。 它们允许您进行更改，以便将来发布，同时维护当前页面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 41%
+source-wordcount: '903'
+ht-degree: 40%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 41%
 
 1. 在 **站点** 控制台中，导航到启动项的源。
 1. 打开 **引用** 边栏并选择源页面。
-1. 选择&#x200B;**启动项**，这将列出现有启动项以及对&#x200B;**启动项控制台**&#x200B;的访问：
+1. 选择 **启动次数**，则会列出现有启动项以及对的访问权限 **启动项控制台**：
 
    ![站点控制台中的启动项引用](/help/sites-cloud/authoring/assets/launches-references.png)
 

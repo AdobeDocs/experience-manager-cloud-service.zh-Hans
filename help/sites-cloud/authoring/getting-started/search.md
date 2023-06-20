@@ -2,10 +2,10 @@
 title: 搜索
 description: 通过全面的搜索更快地找到您的内容
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 65%
+source-wordcount: '491'
+ht-degree: 61%
 
 ---
 
@@ -96,7 +96,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
    ![使用名称保存搜索](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. 在下次访问搜索面板时，您可以从选择器中选择保存的搜索：
+1. 下次访问搜索面板时，可以从选择器中使用保存的搜索：
 
    ![保存的搜索](/help/sites-cloud/authoring/assets/saved-searches.png)
 

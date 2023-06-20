@@ -2,10 +2,10 @@
 title: 创建启动项
 description: 您可以创建启动项，以便能够更新现有网页的新版本以供将来激活。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 62%
+source-wordcount: '1042'
+ht-degree: 61%
 
 ---
 
@@ -28,7 +28,6 @@ ht-degree: 62%
 >无法编辑这些页面。您将看到以下消息：
 >
 >* **该页面不是启动项的一部分。请转到生产页面**
-
 
 ## 创建启动项 {#creating-a-launch}
 
@@ -80,7 +79,7 @@ ht-degree: 62%
 1. 在向导的&#x200B;**“属性”**&#x200B;步骤中，您可以指定：
 
    * **启动项标题**：启动项的名称。 该名称应该对作者有意义。
-   * **包含现有内容**：将使用原始内容创建启动项。
+   * **包含现有内容**：使用原始内容创建启动项。
    * **使用新模板替换页面**：有关更多详细信息，请参阅[使用新模板创建启动项](#create-launch-with-new-template)。
    * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过将启动项设为 [Live Copy](/help/sites-cloud/administering/msm/overview.md) 来实现该行为。默认情况下，此选项处于选中状态。-->
    * **启动日期**：激活启动副本的日期和时间（取决于&#x200B;**生产就绪**&#x200B;标记；请参阅[启动项 – 事件的顺序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)）。
@@ -113,7 +112,7 @@ ht-degree: 62%
 
 >[!CAUTION]
 >
->当使用其他模板时，新页面将为空。 由于页面结构不同，将不会复制任何内容。
+>当使用其他模板时，新页面为空。 由于页面结构不同，因此不会复制任何内容。
 >
 >此机制可用于更改 [现有页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)  — 但必须考虑内容丢失。
 

@@ -2,10 +2,10 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑内容以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 60%
+source-wordcount: '3004'
+ht-degree: 58%
 
 ---
 
@@ -42,51 +42,51 @@ ht-degree: 60%
 
 * **切换侧面板**
 
-   这将打开/关闭侧面板，侧面板中包含 [资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)， [组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)、和 [内容树](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
+  这将打开/关闭侧面板，侧面板中包含 [资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)， [组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)、和 [内容树](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
 
-   ![侧面板切换](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+  ![侧面板切换](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
 * **页面信息**
 
-   提供对的访问 [页面信息](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 菜单，其中包含页面详细信息以及可在页面上执行的操作，包括查看和编辑页面信息、查看页面属性以及发布/取消发布页面。
+  提供对的访问 [页面信息](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) 菜单，其中包含页面详细信息以及可在页面上执行的操作，包括查看和编辑页面信息、查看页面属性以及发布/取消发布页面。
 
-   ![“页面信息”按钮](/help/sites-cloud/authoring/assets/page-information-icon.png)
+  ![“页面信息”按钮](/help/sites-cloud/authoring/assets/page-information-icon.png)
 
 * **模拟器**
 
-   切换 [模拟器工具栏](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)，用于模拟页面在其他设备上的外观。 在布局模式下会自动切换。
+  切换 [模拟器工具栏](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)，用于模拟页面在其他设备上的外观。 在布局模式下会自动切换。
 
-   ![“模拟器”按钮](/help/sites-cloud/authoring/assets/emulator.png)
+  ![“模拟器”按钮](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
-   打开 [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)。仅在预览模式下可用。
+  打开 [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)。仅在预览模式下可用。
 
-   ![ContextHub 按钮](/help/sites-cloud/authoring/assets/context-hub.png)
+  ![ContextHub 按钮](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **页面标题**
 
-   这仅供参考。
+  这仅供参考。
 
-   ![页面标题](/help/sites-cloud/authoring/assets/page-title.png)
+  ![页面标题](/help/sites-cloud/authoring/assets/page-title.png)
 
 * **模式选择器**
 
-   显示当前 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 并允许您选择其他模式，例如编辑、布局、时间扭曲或定位。
+  显示当前 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 并允许您选择其他模式，例如编辑、布局、时间扭曲或定位。
 
-   ![“模式选择器”按钮](/help/sites-cloud/authoring/assets/mode-selector.png)
+  ![“模式选择器”按钮](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **预览**
 
-   启用 [预览模式](#preview-mode). 这会显示发布后显示的页面。
+  启用 [预览模式](#preview-mode). 这会显示发布后显示的页面。
 
-   ![“预览”按钮](/help/sites-cloud/authoring/assets/preview.png)
+  ![“预览”按钮](/help/sites-cloud/authoring/assets/preview.png)
 
 * **批注**
 
-   允许您添加 [批注](/help/sites-cloud/authoring/fundamentals/annotations.md) 查看页面时跳转到页面。 在第一个批注之后，图标将切换到指示页面上批注数量的数字。
+  允许您添加 [批注](/help/sites-cloud/authoring/fundamentals/annotations.md) 查看页面时跳转到页面。 在第一个批注之后，图标将切换到指示页面上批注数量的数字。
 
-   ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
+  ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
 
 ### 状态通知 {#status-notification}
 
@@ -112,21 +112,21 @@ ht-degree: 60%
 
 ## 组件占位符 {#component-placeholder}
 
-组件占位符是一个指示器，用于显示组件在放置时将放置的位置 — 在当前光标悬停的组件上方。
+组件占位符是一个指示器，用于显示组件在放置时的放置位置 — 在当前悬停的组件上方。
 
 * 将新组件添加到页面时（从组件浏览器中拖动）：
 
-   ![向页面添加新组件时的占位符](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
+  ![向页面添加新组件时的占位符](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
 * 移动现有组件时：
 
-   ![在页面上移动现有组件时的占位符](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+  ![在页面上移动现有组件时的占位符](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
 
 ## 插入组件 {#inserting-a-component}
 
 ### 使用组件浏览器插入组件 {#inserting-a-component-from-the-components-browser}
 
-您可以使用[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)添加新组件。[组件占位符](#component-placeholder)显示组件在放置时将占据的位置：
+您可以使用添加新组件 [组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). 此 [组件占位符](#component-placeholder) 显示组件的放置位置：
 
 1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 1. 打开[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。
@@ -146,15 +146,15 @@ ht-degree: 60%
 
    * 选择 **插入组件** 选项(+)(位于现有组件的工具栏或 **将组件拖动到此处** 盒子。
 
-      ![插入组件](/help/sites-cloud/authoring/assets/editing-insert-component.png)
+     ![插入组件](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
    * 如果您使用的是桌面设备，则可以双击&#x200B;**将组件拖动到此处**&#x200B;框。
 
    * **插入新组件**&#x200B;对话框将打开以允许您选择需要的组件：
 
-      ![“插入新组件”对话框](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+     ![“插入新组件”对话框](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. 选定的组件将被添加到页面底部。 [编辑](#edit-content) 所需的组件。
+1. 选定的组件将添加到页面底部。 [编辑](#edit-content) 所需的组件。
 
 ### 使用资产浏览器插入组件 {#inserting-a-component-using-the-assets-browser}
 
@@ -168,7 +168,7 @@ ht-degree: 60%
 1. 打开 [资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
 1. 将所需的资产拖动到所需位置。 此 [组件占位符](#component-placeholder) 显示组件的放置位置。
 
-   将在所需的位置创建一个适合该资源类型的组件 — 该组件将包含选定的资源。
+   在所需位置创建一个适合该资源类型的组件，该组件包含选定的资源。
 
 1. [编辑](#edit-content) 组件（如果需要）。
 
@@ -184,83 +184,83 @@ ht-degree: 60%
 
 选择组件后将打开工具栏。通过工具栏可访问能够对组件执行的各种不同操作。
 
-用户实际可用的操作将会根据相应的情况来显示，此处并未介绍所有这些操作。
+用户可用的实际操作会根据相应的情况显示，此处并非对所有操作都进行了描述。
 
 ![组件工具栏](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 * **编辑**
 
-   [根据组件类型](/help/sites-cloud/authoring/fundamentals/components.md)，此操作将允许您[编辑组件的内容](#edit-content)。通常会提供一个工具栏。
+  [取决于组件类型](/help/sites-cloud/authoring/fundamentals/components.md)，这允许您 [编辑组件的内容](#edit-content). 通常会提供一个工具栏。
 
-   ![编辑按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+  ![编辑按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **配置**
 
-   [根据组件类型](/help/sites-cloud/authoring/fundamentals/components.md)，此操作将允许您编辑和配置组件的属性。通常会打开一个对话框。
+  [取决于组件类型](/help/sites-cloud/authoring/fundamentals/components.md)，可编辑和配置组件的属性。 通常会打开一个对话框。
 
-   ![“配置”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
+  ![“配置”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
 * **复制**
 
-   这会将组件复制到剪贴板。 执行粘贴操作后，原始组件将保留。
+  这会将组件复制到剪贴板。 执行粘贴操作后，原始组件将保留。
 
-   ![“复制”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
+  ![“复制”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
 
 * **剪切**
 
-   这会将组件复制到剪贴板。 执行粘贴操作后，将删除原始组件。
+  这会将组件复制到剪贴板。 执行粘贴操作后，将删除原始组件。
 
-   ![“剪切”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
+  ![“剪切”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
 * **删除**
 
-   这将从页面中删除包含您确认的组件。
+  这将从页面中删除包含您确认的组件。
 
-   ![“删除”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
+  ![“删除”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **插入组件**
 
-   这将打开对话框，您可以 [添加新组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  这将打开对话框，您可以 [添加新组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![“插入”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
+  ![“插入”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
 * **粘贴**
 
-   这会将组件从剪贴板粘贴到页面。 原始是否保留，取决于您使用的是复制还是剪切。
+  这会将组件从剪贴板粘贴到页面。 原始是否保留，取决于您使用的是复制还是剪切。
 
    * 您可以粘贴到同一页面或不同页面。
-   * 粘贴的项目将粘贴到您选择粘贴操作的项目上方。
+   * 粘贴的项目将粘贴到您选择粘贴操作的项目的上方。
    * 仅当剪贴板上有内容时，才会显示粘贴操作。
 
-   ![“粘贴”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
+  ![“粘贴”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
-   >[!NOTE]
-   >
-   >如果在剪切/复制操作之前粘贴到已打开的其他页面，则必须刷新该页面才能查看粘贴的内容。
+  >[!NOTE]
+  >
+  >如果在剪切/复制操作之前粘贴到已打开的其他页面，则必须刷新该页面才能查看粘贴的内容。
 
 * **组**
 
-   这允许您同时选择多个组件。 在桌面设备上，可以通过以下方式实现相同目的 **按住Ctrl并单击** 或 **按住Command并单击**.
+  这允许您同时选择多个组件。 在桌面设备上，可以通过以下方式实现相同目的 **按住Ctrl并单击** 或 **按住Command并单击**.
 
-   ![“组”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
+  ![“组”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **父项**
 
-   此项允许您选择选定组件的父组件。
+  此项允许您选择选定组件的父组件。
 
-   ![“父项”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
+  ![“父项”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **布局**
 
-   这允许您修改 [布局](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 选定组件的ID。 这仅适用于选定的组件，不会激活 [布局模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 整个页面。
+  这允许您修改 [布局](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 选定组件的ID。 这仅适用于选定的组件，不会激活 [布局模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 整个页面。
 
-   ![“布局”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+  ![“布局”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **转换为体验片段变体**
 
-   允许您从选定的组件创建一个新的[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)，或将其添加到现有的体验片段中。
+  允许您从选定的组件创建一个新的[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)，或将其添加到现有的体验片段中。
 
-   ![“转换为体验片段”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+  ![“转换为体验片段”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## 编辑内容 {#edit-content}
 
@@ -277,23 +277,23 @@ ht-degree: 60%
 
 * 文本组件
 
-   ![文本组件的工具栏](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
+  ![文本组件的工具栏](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
 
 * 图像组件
 
-   ![图像组件的工具栏](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
+  ![图像组件的工具栏](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
 
-   >[!NOTE]
-   >
-   >无法对空的图像组件执行编辑操作。
-   >
-   >您必须先将图像拖动或上传到组件，然后才能开始编辑。
+  >[!NOTE]
+  >
+  >无法对空的图像组件执行编辑操作。
+  >
+  >您必须先将图像拖动或上传到组件，然后才能开始编辑。
 
 * 图像组件 — 全屏
 
-   [进入图像组件的全屏模式](#edit-content-full-screen-mode) ，可以留出更多空间来编辑图像，并显示额外的编辑选项，如“启动映射”和“重 **置缩放”******。 此外，全屏模式还允许选择裁剪预设。
+  [进入图像组件的全屏模式](#edit-content-full-screen-mode) ，可以留出更多空间来编辑图像，并显示额外的编辑选项，如“启动映射”和“重 **置缩放”******。 此外，全屏模式还允许选择裁剪预设。
 
-   ![图像组件的全屏模式](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
+  ![图像组件的全屏模式](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
 * 使用多个基本组件构建的组件首先将要求您确认所需的编辑选项集：
 
@@ -377,15 +377,15 @@ ht-degree: 60%
 
 * 取消继承
 
-   ![“取消继承”按钮](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
+  ![“取消继承”按钮](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
 
 * 重新启用继承（如果继承已取消）
 
-   ![“重新启用继承”按钮](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
+  ![“重新启用继承”按钮](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
 * “转出”操作也在 Blueprint 或 Live Copy 源中可用
 
-   ![“转出”按钮](/help/sites-cloud/authoring/assets/editing-rollout.png)
+  ![“转出”按钮](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## 编辑页面模板 {#editing-the-page-template}
 
@@ -420,7 +420,6 @@ ht-degree: 60%
 >* 内容中的链接是可见的，但在编辑模式下不可访问。
 >* 如果您希望使用链接进行导航，请使用任一预览选项。
 >* 使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` 可在预览和最后选择的模式之间切换。
-
 
 >[!NOTE]
 >
@@ -511,7 +510,6 @@ AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您�
 >* 也可使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` 撤消页面编辑操作。
 >* 也可使用键盘快捷键 `Ctrl-Y` 重做页面编辑操作。
 
-
 >[!NOTE]
 >
 >有关撤消和重做页面编辑时可执行操作的完整详细信息，请参阅[撤消和重做页面编辑 - 理论](#undoing-and-redoing-page-edits-the-theory)。
@@ -541,5 +539,4 @@ AEM 会按照您执行操作的顺序来存储这些操作的历史记录，这�
 >* 对文件和图像的更改执行撤消和重做操作需要特殊的权限。
 >* 文件和图像的更改历史记录至少会持续10小时。 然而，在这段时间之后，这些变化的撤销并非板上钉钉。 您的管理员可以更改10小时的默认时间。
 >* 系统管理员可以根据您实例的要求，配置撤消/重做功能的各个方面。
-   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
-
+<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

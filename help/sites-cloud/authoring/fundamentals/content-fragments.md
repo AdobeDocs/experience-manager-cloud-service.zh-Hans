@@ -2,10 +2,10 @@
 title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
@@ -62,7 +62,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
    >
    >备选方法是将特定的内容片段直接拖到页面上。这将自动创建关联的组件（内容片段）。
 
-4. 最初，将显示&#x200B;**主**&#x200B;元素和&#x200B;**母版**（变体）中的内容。您可以根据需要[选择其他元素和/或变体](#selecting-the-element-or-variation)。
+4. 最初，来自 **主要** 元素和 **主控** （变体）如图所示。 您可以根据需要[选择其他元素和/或变体](#selecting-the-element-or-variation)。
 
    ![资产浏览器中的内容片段](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -89,15 +89,15 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
    * **单个文本元素**
    * **多个元素**
 * **元素**
-   * 可用的选项取决于所使用的模型。
+   * 可用选择取决于所使用的模型。
 
   >[!NOTE]
   >
   >可用的元素取决于所使用的模型。
 
 * **变体**
-   * 默认主 **视图** 将始终可用。
-   * 如果变体是为片段而创建的，将有可选择的变体可用。
+   * 默认 **主控** 始终可用。
+   * 如果变体是为片段而创建的，则可以选择变量。
 
 * **ID**
 
@@ -160,7 +160,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 在将具有关联内容的片段添加到页面之后，将会在侧面板中打开一个新的选项卡（**关联内容**）。
 
-从此处，您可以将资产拖到所需的位置（可以是一个现有的组件，或是将在其中创建合适组件的所需位置）：
+从此处，您可以将资产拖动到所需的位置（可以拖动到现有组件，也可以拖动到创建相应组件的所需位置）：
 
 ![插入图像](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 

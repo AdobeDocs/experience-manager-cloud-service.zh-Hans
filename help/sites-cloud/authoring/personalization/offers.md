@@ -2,7 +2,7 @@
 title: 创建和管理选件（优惠控制台）
 description: 使用“选件”控制台，可创建您可以在活动体验中使用的选件
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 48%
@@ -64,7 +64,7 @@ ht-degree: 48%
 
    ![将遗留优惠转化为体验片段](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. 这时会出现一个对话框。在该对话框中可以选择所需的&#x200B;**操作**：
+1. 此时将显示一个对话框。 在该对话框中可以选择所需的&#x200B;**操作**：
 
    * 创建新的体验片段
    * 将内容添加到现有体验片段

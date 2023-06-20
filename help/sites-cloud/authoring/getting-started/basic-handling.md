@@ -2,10 +2,10 @@
 title: 基本处理
 description: 熟悉AEM及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 78%
+source-wordcount: '2986'
+ht-degree: 76%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->* 某些功能并非在所有控制台中均可用，而其他功能可能在某些控制台中可用。 其他页面上将更详细地介绍有关各个控制台及其相关功能的特定信息。
+>* 某些功能并非在所有控制台中均可用，而其他功能可能在某些控制台中可用。 有关各个控制台及其相关功能的特定信息，将在其他页面上详细介绍。
 >* 用户在整个 AEM 环境中都可以使用各种键盘快捷键，尤其是在[使用控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)和[编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)时。
 
 ## 触屏优化 UI {#a-touch-enabled-ui}
@@ -110,7 +110,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
   ![“通知”按钮](/help/sites-cloud/authoring/assets/notifications.png)
 
-  此图标将带有一个标记，显示当前分配的未完成通知的数量。
+  此图标带有当前分配的未完成通知数量的标记。
 
 * [用户属性](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
@@ -299,14 +299,14 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 * 您可以通过点按或单击资源名称或资源名称右侧的V形标记在树中向上和向下导航。
 
-   * 点按或单击时，资源名称和V形将突出显示。
+   * 点按或单击时，资源名称和V形高亮显示。
    * 已单击/已点按资源的子项显示在已单击/已点按资源右侧的列中。
    * 如果点按或单击没有子级的资源名称，其详细信息将显示在最后一列。
 
 * 点击或单击缩略图将选择资源。
 
-   * 选择后，缩略图上将叠加一个勾号，并且资源名称也会突出显示。
-   * 最后的列中将显示选定资源的详细信息。
+   * 选中后，缩略图上将叠加一个复选标记，并且资源名称也会突出显示。
+   * 所选资源的详细信息将显示在最后一列。
    * 操作工具栏将变为可用。
 
   在列视图中选择页面时，所选页面将与以下详细信息一起显示在最终列中：

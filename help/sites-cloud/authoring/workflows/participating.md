@@ -2,10 +2,10 @@
 title: 参与工作流
 description: 工作流通常包括需要人员在页面或资产上执行活动的步骤。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 45%
+source-wordcount: '1542'
+ht-degree: 43%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 45%
 
 为您分配了工作项（例如，**批准内容**）后，将显示各种警报和/或通知：
 
-* 您的 [通知](/help/sites-cloud/authoring/getting-started/inbox.md) 指示器（工具栏）将递增：
+* 您的 [通知](/help/sites-cloud/authoring/getting-started/inbox.md) 指示器（工具栏）递增：
 
-   ![通知工具栏](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![通知工具栏](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* 该工作项将在您的通知[收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)中列出：
+* 您的通知中列出了该项目 [收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)：
 
-   ![收件箱中的通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![收件箱中的通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * 使用页面编辑器时，状态栏将显示：
    * 应用于页面的工作流的名称；例如“请求激活”。
@@ -39,18 +39,18 @@ ht-degree: 45%
       * 使用左/右箭头浏览各种工作流的状态信息。
       * 单击/点按实际数字以打开所有适用工作流的下拉列表，然后选择要在状态栏中显示的工作流。
 
-   ![带多个工作流的页面](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![带多个工作流的页面](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >状态栏只对拥有工作流权限的用户可见；例如，`workflow-users` 组的成员。
-   >
-   >
-   >当当前用户直接参与工作流的当前步骤时，将显示操作。
+  >[!NOTE]
+  >
+  >状态栏只对拥有工作流权限的用户可见；例如，`workflow-users` 组的成员。
+  >
+  >
+  >当当前用户直接参与工作流的当前步骤时，将显示操作。
 
-* 当打开资源的&#x200B;**时间线**&#x200B;时，将会显示工作流步骤。单击/点按警报横幅时，也会显示可用的操作：
+* 时间 **时间线** 打开，则会显示工作流步骤。 单击/点按警报横幅时，也会显示可用的操作：
 
-   ![时间线中的工作流](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![时间线中的工作流](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### 完成参与者步骤 {#completing-a-participant-step}
 
@@ -109,7 +109,7 @@ ht-degree: 45%
 
 如果某个步骤已分配给您，但由于任何原因您无法执行操作，则可以将该步骤委派给其他用户或组。
 
-可以委派的用户取决于分配给谁的工作项：
+可委派的用户取决于分配给工作项的用户：
 
 * 如果工作项已分配给组，则组成员可用。
 * 如果将工作项分配给某个组，然后该组又将其委派给某个用户，则可以向该组的成员和该组进行委派。
@@ -219,19 +219,19 @@ ht-degree: 45%
 
 * **工作项**&#x200B;选项卡：
 
-   ![“工作项”选项卡](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  ![“工作项”选项卡](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * **工作流信息**&#x200B;选项卡：
 
-   ![“工作流”选项卡](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  ![“工作流”选项卡](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   如果为该模型配置了工作流暂存，则可以根据以下内容查看进度：<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  如果为该模型配置了工作流暂存，则可以根据以下内容查看进度：<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![工作流暂存](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![工作流暂存](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * **评论**&#x200B;选项卡：
 
-   ![“评论”选项卡](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![“评论”选项卡](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 您可以通过以下任一方式打开工作项详细信息：
 

@@ -4,10 +4,10 @@ description: Experience Cloud 设置自动化提供了一种简单且自动化�
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 100%
+source-wordcount: '754'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 1. 点按&#x200B;**基础 Analytics** 按钮。
 1. 在生成的对话框中，为&#x200B;**报告包 ID** 提供名称。
 
-   此字符串将用于在 Adobe Analytics 中创建新的[报告包 ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=zh-Hans) 作为选定 AEM 站点的分析数据的数据存储。将为提供的字符串附加环境和层标识符以确保唯一性。
+   此字符串用于创建新的 [报表包ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=zh-Hans) 在Adobe Analytics中作为所选AEM站点的Analytics数据的数据存储。 提供的字符串会附加环境和层标识符以确保唯一性。
 
 1. 刷新页面和面板，然后点按&#x200B;**查看集成状态**&#x200B;查看自动化的状态。
 

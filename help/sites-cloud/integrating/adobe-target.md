@@ -2,16 +2,16 @@
 title: 与 Adobe Target 集成
 description: 与 Adobe Target 集成
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: f40a2db6616aeaaf13f8ae19ab429a7301e6c05a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 100%
+source-wordcount: '726'
+ht-degree: 97%
 
 ---
 
 # 与 Adobe Target 集成{#integrating-with-adobe-target}
 
-作为 Adobe Marketing Cloud 的一部分，[Adobe Target](https://www.adobe.com/cn/solutions/testing-targeting/testandtarget.html) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。AEM as a Cloud Service 采用了 Adobe Target Standard 中使用的定位工作流。如果您使用 Target，您将熟悉 AEM as a Cloud Service 中的定位编辑环境。
+作为 Adobe Marketing Cloud 的一部分，[Adobe Target](https://www.adobe.com/cn/solutions/testing-targeting/testandtarget.html) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。AEM as a Cloud Service 采用了 Adobe Target Standard 中使用的定位工作流。如果您使用Target，则可以熟悉AEMas a Cloud Service中的定位编辑环境。
 
 将 AEM Sites 与 Adobe Target 集成以个性化页面中的内容：
 
@@ -54,7 +54,6 @@ ht-degree: 100%
 >* 4.x 通过 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) 进行配置
 >
 
-
 >[!CAUTION]
 >
 >您必须确保发布实例中的活动设置节点 **cq:ActivitySettings** 安全，以使其不可由普通用户访问。该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
@@ -83,4 +82,3 @@ ht-degree: 100%
 >* 2,000 个体验
 >* 50 个量度
 >* 50 个报告区段
-

@@ -2,10 +2,10 @@
 title: 编辑启动项
 description: 在为您的页面（或页面集）创建启动项后，您可以在页面的启动项副本中编辑内容。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 56%
+source-wordcount: '552'
+ht-degree: 54%
 
 ---
 
@@ -54,7 +54,7 @@ Live Copy 用于将&#x200B;**&#x200B;源分支&#x200B;**&#x200B;中的内容同�
 
    ![比较启动项和源](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. 此时将并列打开两个页面（启动页面和源页面）。
+1. 两个页面（启动项和源）并排打开。
 
    有关使用此功能的完整信息，请参阅[页面差异](/help/sites-cloud/authoring/features/page-diff.md)。
 

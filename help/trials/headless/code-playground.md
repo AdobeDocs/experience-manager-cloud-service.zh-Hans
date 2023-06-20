@@ -4,10 +4,10 @@ description: 用 CodePen 示例应用程序和 JavaScript 版 AEM Headless 客�
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 100%
+source-wordcount: '986'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 ## 从持久查询中提取数据 {#use-persisted-query}
 
-在第 25 行上，我们指出了应用程序应从中提取数据的 GraphQL 持久查询。该持久查询的名称是一个组合，依次包含端点名称（即`your-project` 或 `aem-demo-assets`）、正斜杠和查询名称。如果您完全按照前面的模块说明进行操作，您创建的持久查询将会位于 `your-project` 端点。
+在第 25 行上，我们指出了应用程序应从中提取数据的 GraphQL 持久查询。该持久查询的名称是一个组合，依次包含端点名称（即`your-project` 或 `aem-demo-assets`）、正斜杠和查询名称。如果您完全按照前面的模块说明进行操作，则您创建的持久查询位于 `your-project` 端点。
 
 1. 更新 `persistedQueryName` 变量以使用您在上一个模块中创建的持久查询。如果您遵循命名建议，则将在 `your-project` 端点中创建一个名为 `adventure-list` 的持久查询，并将 `persistedQueryName` 变量设置为 `your-project/adventure-list`：
 

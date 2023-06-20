@@ -2,10 +2,10 @@
 title: 页面差异
 description: 利用“页面差异”功能，可以方便地并排比较突出显示差异的两个页面。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 34%
+source-wordcount: '616'
+ht-degree: 29%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->如果浏览器宽度不能同时容纳处于全屏视图中的两个页面名称，则只会显示所显示页面的名称，而其他名称将显示在省略号后面。
+>如果浏览器宽度不能同时容纳全屏视图中的两个页面名称，则只显示所显示页面的名称，而另一个名称位于省略号后面。
 
 您也可以选择单击退出全屏图标来关闭全屏视图。
 
