@@ -2,10 +2,10 @@
 title: 内容转移工具快速入门
 description: 内容转移工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 22%
+source-wordcount: '1439'
+ht-degree: 21%
 
 ---
 
@@ -52,6 +52,8 @@ ht-degree: 22%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>此标记仅用于调试SSL问题。 请确保在运行提取之前禁用该标志，因为它可能需要大量磁盘空间。 这可能会占用驱动器容量，并导致提取过程失败。
 
 ## 运行内容传输工具 {#running-tool}
 
