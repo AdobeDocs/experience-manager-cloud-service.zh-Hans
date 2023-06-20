@@ -4,10 +4,10 @@ description: 一旦系统管理员设置了必要的云资源，就可以了解�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 100%
+source-wordcount: '1417'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 在您以开发人员或部署管理员的身份开始本文档中描述的任务之前，请确保您的系统管理员已完成此载入流程中的所有步骤。 这意味着：
 
 * 系统管理员已将开发人员和部署管理员分配给他们各自的产品配置文件。
-* 此外，开发人员还必须分配给 **AEM 用户**&#x200B;或 **AEM 管理员**&#x200B;产品配置文件，才能同时使用 AEM。
+* 开发人员还必须分配到 **AEM用户** 或 **AEM管理员** 产品配置文件也使用AEM。
 * 已设置云资源。
 
 ## 访问 Git {#accessing-git}

@@ -2,10 +2,10 @@
 title: Maven 项目版本处理
 description: 对于 AEM as a Cloud Service 的暂存和生产部署，Cloud Manager 会生成一个独特的递增版本。
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
-source-git-commit: 21607fadf33dac038c7f794b933b92f60b8e20a9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 100%
+source-wordcount: '266'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 >
 >必须在 Git 存储库分支中的顶层 `pom.xml` 文件的 `<version>` 元素中静态设置此原始项目版本值。
 
-如果原始版本不符合这些条件，则生成的版本将作为新版本段追加到原始版本。 此外，将略微修改生成的版本以包括正确的排序和版本处理。 例如，假设生成的 `2019.926.121356.0000020490` 版本会得到以下结果。
+如果原始版本符合这些标准，则生成的版本将作为新版本段追加到原始版本。 此外，将略微修改生成的版本以包括正确的排序和版本处理。 例如，假设生成的 `2019.926.121356.0000020490` 版本会得到以下结果。
 
 | 版本 | `pom.xml` 中的版本 | 注释 |
 |---|---|---|

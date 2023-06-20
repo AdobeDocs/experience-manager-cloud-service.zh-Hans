@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 98%
+source-wordcount: '795'
+ht-degree: 87%
 
 ---
 
@@ -60,7 +60,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 * **创建自适应表单的向导**：您可以使用商业用户友好向导快速创作自适应表单。 该向导提供了快速的选项卡导航，以便轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
-   ![创建自适应表单的向导](/help/release-notes/assets/wizard.png)
+  ![创建自适应表单的向导](/help/release-notes/assets/wizard.png)
 
 ## CIF 加载项 {#cloud-services-cif}
 
@@ -68,30 +68,30 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 * 快速访问产品驾驶舱：在站点编辑器中，通过一键单击即可轻松访问完整的详细产品信息
 
-   ![启用愿望清单](/help/assets/CIF/enable-wishlist.png)
+  ![启用愿望清单](/help/assets/CIF/enable-wishlist.png)
 
 * 支持其他营销商务组件：组件可以配置为显示添加到购物车和添加到愿望清单的号召性用语
 
-   ![站点编辑器到产品驾驶舱的快捷键](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![站点编辑器到产品驾驶舱的快捷键](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 复制代理管理屏幕&#x200B;**“分发”选项卡**&#x200B;下的“添加树”选项，之前宣布为已弃用，将于 2022 年 6 月 20 日或不久之后删除。 而应使用以树层次结构表示的内容包进行复制[管理发布](/help/operations/replication.md#manage-publication)或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)。
+* 复制代理管理屏幕下的“添加树”选项 **“分发”选项卡**&#x200B;之前宣布已弃用的SSF将于2022年6月20日或之后不久删除。 而应使用以树层次结构表示的内容包进行复制[管理发布](/help/operations/replication.md#manage-publication)或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)。
 
-* 使用复制代理管理屏幕或复制 API 分发大于 10 MB 的内容包（具有属性的节点，不包括二进制文件）已被弃用，并将在 2022 年 9 月 12 日或之后不久实施。相反，必须使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)来复制这些大型内容包。7 月，如果尝试复制这些大型内容包，复制代理管理屏幕的&#x200B;**分发选项卡**&#x200B;中将显示一条警告消息，并且每当使用复制 API 复制这些大型内容包时，AEM 错误日志中也会显示一条警告消息。在 9 月，警告将被替换为错误。 请相应地调整您的流程。
+* 使用复制代理管理屏幕或复制API分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）已被弃用，并且将在2022年9月12日或之后不久实施。 相反，必须使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)来复制这些大型内容包。7 月，如果尝试复制这些大型内容包，复制代理管理屏幕的&#x200B;**分发选项卡**&#x200B;中将显示一条警告消息，并且每当使用复制 API 复制这些大型内容包时，AEM 错误日志中也会显示一条警告消息。9月，警告被错误取代。 相应地调整您的流程。
 
 ### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}
 
-* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
+* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 参见 [Unified Shell上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 了解更多详细信息。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础安全性 {#foundation-security}
 
 ### 弃用 TLS 1.0、1.1
 
-从 2022 年 6 月 30 日开始，Experience Manager as a Cloud Service 将需要与用户系统进行更加安全的网络通信和数据交换。 AEM 将专门使用传输层安全性 (TLS) 1.2 协议。 弃用旧版 TLS 1.0 和 1.1。
+从 2022 年 6 月 30 日开始，Experience Manager as a Cloud Service 将需要与用户系统进行更加安全的网络通信和数据交换。 AEM 将专门使用传输层安全性 (TLS) 1.2 协议。 现已弃用旧版TLS 1.0和1.1。
 
 如果您继续将旧版 TLS 用作 1.0、1.1，则可能会失去对 Experience Manager as a Cloud Service 的访问权限。
 

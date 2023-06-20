@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 47%
+source-wordcount: '1533'
+ht-degree: 41%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 47%
 
 * 内容模型、增强型标记数据类型 — 现在可以配置标记数据类型，以允许创作单个或多个标记。
 
-* 内容模型、新选项卡占位符数据类型 — 新选项卡占位符数据类型允许将数据类型分组到多个部分中，这些部分将在内容片段编辑器中的选项卡下渲染。
+* 内容模型、新选项卡占位符数据类型 — 新选项卡占位符数据类型允许将数据类型分组到在内容片段编辑器中的选项卡下呈现的部分。
 
 ### [!DNL Sites] 中的错误修复 {#bug-fixes-sites}
 
@@ -67,7 +67,7 @@ ht-degree: 47%
 
 * 在编辑元数据架构时，会添加一种数据类型，以在元数据编辑器中提供自由格式文本区域。 用户可以使用此文本区域输入自由格式文本作为资源的元数据。 参见 [元数据架构编辑器](/help/assets/metadata-schemas.md).
 
-* 可以使用CSV文件批量导入许多资源的元数据，也可以将元数据导出到CSV文件。 默认日期格式现在为 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 用户可以通过更新列标题来利用不同的格式。 例如，添加 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 作为CSV文件中的列标题，而不是单词 `Date`.
+* 可以使用CSV文件批量导入许多资源的元数据，也可以将元数据导出到CSV文件。 默认日期格式现在为 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 用户可以通过更新列标题来使用不同的格式。 例如，添加 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 作为CSV文件中的列标题，而不是单词 `Date`.
 
 * 在列视图中浏览资源时，有一个视觉标志显示每个资源的已批准或已拒绝状态。
 
@@ -95,25 +95,25 @@ ht-degree: 47%
 
 * **在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法**
 
-   通过先进的机器学习算法，Adobe Sign 的 Government ID 流程让世界各地的公司均可确保高质量地验证其收件人的身份。现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
+  借助先进的机器学习算法，Adobe Sign的Government ID流程让世界各地的企业均可确保高质量地验证其接收者的身份。 现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
 
-   Government ID 是一种高级的身份验证方法，它指示收件人[上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然后评估该证明文件以确保真实有效。
+  Government ID是一种高级身份验证方法，它指示收件人 [上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然后评估该文档以确保真实有效。
 
 * **支持对异步提交自适应表单使用表单内签名体验**
 
-   现在，您可以使用表单内签名体验来异步提交自适应表单。还可将自适应表单嵌入到 [!DNL Experience Manager Sites] 页面中，并使用表单内签名体验提交自适应表单。
+  现在，您可以使用表单内签名体验来异步提交自适应表单。还可将自适应表单嵌入到 [!DNL Experience Manager Sites] 页面中，并使用表单内签名体验提交自适应表单。
 
 * **支持在为“分配任务”步骤预先填充自适应表单时使用变量指定附件**
 
-   在为“分配任务”步骤预先填充自适应表单时，现在可使用文档类型变量为该自适应表单选择输入附件。
+  在为“分配任务”步骤预先填充自适应表单时，现在可使用文档类型变量为该自适应表单选择输入附件。
 
 * **支持使用字面选项设置 JSON 类型变量的值**
 
-   可在 AEM Workflow 的“设置变量”步骤中使用字面选项设置 JSON 类型变量的值。通过字面选项，可按字符串的形式指定 JSON。
+  可在 AEM Workflow 的“设置变量”步骤中使用字面选项设置 JSON 类型变量的值。通过字面选项，可按字符串的形式指定 JSON。
 
 * **使用本地开发环境创建记录文档 (DoR)**
 
-   可在 Cloud Service 实例和 AEM Forms as a Cloud Service SDK（本地开发环境）上使用 XDP 作为文档记录模板。以前仅限 Cloud Service 实例支持这样做。
+  可在 Cloud Service 实例和 AEM Forms as a Cloud Service SDK（本地开发环境）上使用 XDP 作为文档记录模板。以前仅限 Cloud Service 实例支持这样做。
 
 ### [!DNL Forms] 中的错误修复 {#bug-fixes-forms}
 
@@ -165,7 +165,7 @@ AEM as a Cloud Service 2021.4.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * Adobe I/O 开发人员控制台中由 Cloud Manager 创建的项目不会再被无意中编辑或删除。
 
-* 当用户添加新环境时，将会通知他们，环境在创建后无法移动到其他区域。
+* 当用户添加新环境时，将会通知他们，在创建环境后，无法将其移动到其他区域。
 
 * 现在可以将环境变量的作用域限定为特定服务（创作或发布）。 要求 AEM 版本 2021.03.5104.20210328T185548Z 或更高版本。
 

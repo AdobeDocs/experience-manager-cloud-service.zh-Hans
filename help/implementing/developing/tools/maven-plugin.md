@@ -2,9 +2,9 @@
 title: Adobe内容包Maven插件
 description: 使用内容包Maven插件部署AEM应用程序
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1847'
 ht-degree: 6%
 
 ---
@@ -29,14 +29,13 @@ ht-degree: 6%
 >* 此 `content-package-maven-plugin` 不再支持从1.0.2版打包。
 >* 本文介绍 **部署** 将所构建的包打包到AEM的过程由Adobe内容包Maven插件执行。
 
-
 ## 包和AEM项目结构 {#aem-project-structure}
 
 AEMas a Cloud Service遵循由最新的AEM项目原型实现的包管理和项目结构的最新最佳实践。
 
 >[!TIP]
 >
->欲知更多详情，请参见 [AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service文档中的文章以及 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 文档。 AEM 6.5完全支持这两种版本。
+>欲知更多详情，请参见 [AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service文档中的文章以及 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 文档。 AEM 6.5完全支持这两种版本。
 
 ## 获取内容包Maven插件 {#obtaining-the-content-package-maven-plugin}
 
@@ -87,7 +86,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 下表中的参数对所有目标都是通用的，除非在 **目标** 列。
 
-| 名称 | 类型 | 必填 | 默认值 | 描述 | 目标 |
+| 名称 | 类型 | 必需 | 默认值 | 描述 | 目标 |
 |---|---|---|---|---|---|
 | `failOnError` | `boolean` | 否 | `false` | 值 `true` 出错时导致构建失败。 值 `false` 导致生成忽略该错误。 | 所有目标，但 `package` |
 | `name` | `String` | `build`：是， `install`：否， `rm`：是 | `build`：无默认值， `install`：的值 `artifactId` Maven项目的属性 | 要执行操作的包的名称 | 所有目标，但 `ls` |
@@ -95,7 +94,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 | `serverId` | `String` | 否 | 从中检索用于身份验证的用户名和密码的服务器ID | 所有目标，但 `package` |
 | `targetURL` | `String` | 是 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM包管理器的HTTP服务API的URL | 所有目标，但 `package` |
 | `timeout` | `int` | 否 | `5` | 用于与包管理器服务通信的连接超时（以秒为单位） | 所有目标，但 `package` |
-| `useProxy` | `boolean` | 否 | `true` | 值 `true` 导致Maven使用找到的第一个活动代理配置，以将请求代理到包管理器。 | 所有目标，但 `package` |
+| `useProxy` | `boolean` | 否 | `true` | 值 `true` 导致Maven使用找到的第一个活动代理配置，将请求代理到包管理器。 | 所有目标，但 `package` |
 | `userId` | `String` | 是 | `admin` | 用于通过AEM进行身份验证的用户名 | 所有目标，但 `package` |
 | `verbose` | `boolean` | 否 | `false` | 启用或禁用详细日志记录 | 所有目标，但 `package` |
 
@@ -119,7 +118,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 除了以下参数外，请参阅 [常用参数](#common-parameters) 部分。
 
-| 名称 | 类型 | 必填 | 默认值 | 描述 |
+| 名称 | 类型 | 必需 | 默认值 | 描述 |
 |---|---|---|---|---|
 | `artifact` | `String` | 否 | 的值 `artifactId` Maven项目的属性 | 表单的字符串 `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | 否 | 无 | 要安装的工件的ID |
@@ -166,7 +165,7 @@ rm目标的所有参数都在 [常用参数](#common-parameters) 部分。
 
 除了以下参数外，请参阅 `name` 中的参数 [常用参数](#common-parameters) 部分。
 
-| 名称 | 类型 | 必填 | 默认值 | 描述 |
+| 名称 | 类型 | 必需 | 默认值 | 描述 |
 |---|---|---|---|---|
 | `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | 否 | 无 | 要使用的存档配置 |
 | `builtContentDirectory` | `java.io.File` | 是 | Maven内部版本的输出目录的值 | 包含要包含在包中的内容的目录 |
@@ -182,7 +181,7 @@ rm目标的所有参数都在 [常用参数](#common-parameters) 部分。
 | `prefix` | `java.lang.String` | 否 | 无 |  |
 | `project` | `org.apache.maven.project.MavenProject` | 是 | 无 | Maven项目 |
 | `properties` | `java.util.Map` | 否 | 无 | 这些参数定义了可在 `properties.xml` 文件。 这些属性无法覆盖以下预定义属性： `group` (使用 `group` 要设置的参数)， `name` (使用 `name` 要设置的参数)， `version` (使用 `version` 要设置的参数)， `description` （在项目描述中设置）， `groupId` (`groupId` Maven项目描述符)， `artifactId` (`artifactId` Maven项目描述符)， `dependencies` (使用 `dependencies` 要设置的参数)， `createdBy` (值 `user.name` 系统属性)， `created` （当前系统时间）、 `requiresRoot` (使用 `requiresRoot` 要设置的参数)， `packagePath` （自动从组和包名称生成） |
-| `requiresRoot` | `boolean` | 是 | false | 定义包是否需要根。 这将会成为 `requiresRoot` 的属性 `properties.xml` 文件。 |
+| `requiresRoot` | `boolean` | 是 | false | 定义包是否需要根。 成为 `requiresRoot` 的属性 `properties.xml` 文件。 |
 | `subPackages` | `java.util.List` | 否 | 无 |  |
 | `version` | `java.lang.String` | 是 | Maven项目中定义的版本 | 内容包的版本 |
 | `workDirectory` | `java.io.File` | 是 | Maven项目（构建阶段）中定义的目录 | 包含要包含在包中的内容的目录 |
@@ -221,7 +220,7 @@ rm目标的所有参数都在 [常用参数](#common-parameters) 部分。
 
 #### 参数 {#parameters-6}
 
-| 名称 | 类型 | 必填 | 默认值 | 描述 |
+| 名称 | 类型 | 必需 | 默认值 | 描述 |
 |---|---|---|---|---|
 | `detail` | `boolean` | 否 | `false` | 确定是否显示每个目标的所有可设置属性 |
 | `goal` | `String` | 否 | 无 | 此参数定义要为其显示帮助的目标名称。 如果未指定值，则会显示所有目标的帮助。 |
@@ -268,4 +267,4 @@ rm目标的所有参数都在 [常用参数](#common-parameters) 部分。
 
 >[!TIP]
 >
->欲知更多详情，请参见 [AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service文档中的文章以及 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 文档。 AEM 6.5完全支持这两种版本。
+>欲知更多详情，请参见 [AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service文档中的文章以及 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 文档。 AEM 6.5完全支持这两种版本。

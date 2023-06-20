@@ -1,13 +1,13 @@
 ---
 title: Live Copy 概述控制台
-description: 学习 Live Copy 概述控制台的基础知识，以快速了解 Live Copy 的状态以便同步内容。
+description: 了解Live Copy概述控制台的基础知识，以快速了解要同步内容的Live Copy的状态。
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 可以在查看 Blueprint 页面的属性时打开 **Live Copy 概述**：
 
 1. 打开相应的 Blueprint 页面的&#x200B;**属性**。
-1. 打开 **Blueprint** 选项卡 – **Live Copy 概述**&#x200B;选项将显示在顶部工具栏中：
+1. 打开 **Blueprint** 选项卡 —  **Live Copy概述** 选项显示在顶部工具栏中：
 
    ![Blueprint“属性”选项卡](../assets/live-copy-blueprint-tab.png)
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 **Live Copy 概述**&#x200B;也可用于对 Live Copy 执行操作：
 
 1. 打开 **Live Copy 概述**。
-1. 选择所需的 Blueprint 或 Live Copy 页面，工具栏将更新以显示可用操作。可用[操作](overview.md#terms-used)取决于您选择的是 [Blueprint](#actions-for-a-blueprint-page) 还是 [Live Copy](#actions-for-a-live-copy-page) 页面。
+1. 选择所需的Blueprint或Live Copy页面，工具栏将更新以显示可用的操作。 可用[操作](overview.md#terms-used)取决于您选择的是 [Blueprint](#actions-for-a-blueprint-page) 还是 [Live Copy](#actions-for-a-live-copy-page) 页面。
 
 ### 适用于 Blueprint 页面的操作 {#actions-for-a-blueprint-page}
 

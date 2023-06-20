@@ -2,9 +2,9 @@
 title: 配置搜索表单
 description: 为Adobe Experience Manager as a Cloud Service配置Search Forms。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2037'
 ht-degree: 16%
 
 ---
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
 ## 默认Forms {#default-forms}
 
-当您首次访问 **搜索Forms** 控制台您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置 — 无法删除。 自定义并保存配置后，锁定将消失。 它将在以下情况下重新显示： [删除自定义配置](#deleting-a-configuration-to-reinstate-the-default)，则默认（和挂锁指示器）将恢复。
+当您首次访问 **搜索Forms** 控制台您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置 — 无法删除。 自定义并保存配置后，锁定将消失。 它将在以下情况下重新显示： [删除自定义配置](#deleting-a-configuration-to-reinstate-the-default)，则恢复默认设置（和挂锁指示器）。
 
 ![配置搜索表单概述](assets/csf-overview.png)
 
@@ -495,47 +495,46 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
 * **字段标签**
 
-   将显示为可折叠标题或谓词字段标签的标签。
+  将显示为可折叠标题或谓词字段标签的标签。
 
 * **描述**
 
-   用户的描述性详细信息。
+  用户的描述性详细信息。
 
 * **占位符**
 
-   空文本或谓词的占位符（如果未输入过滤文本）。
+  空文本或谓词的占位符（如果未输入过滤文本）。
 
 * **属性名称**
 
-   要搜索的属性。 它使用相对路径和通配符 `*/*/*` 指定属性相对于的深度 `jcr:content` 节点（每个星号表示一个节点级别）。
+  要搜索的属性。 它使用相对路径和通配符 `*/*/*` 指定属性相对于的深度 `jcr:content` 节点（每个星号表示一个节点级别）。
 
-   如果只想搜索具有下列条件的资源的第一级子节点： `x` 上的属性 `jcr:content` 节点使用 `*/jcr:content/x`
+  如果只想搜索具有下列条件的资源的第一级子节点： `x` 上的属性 `jcr:content` 节点使用 `*/jcr:content/x`
 
 * **属性深度**
 
-   在资源中搜索该属性的最大深度。 因此，可以对该资源子项和递归子项执行该属性搜索，直到子项的级别等于指定的深度。
+  在资源中搜索该属性的最大深度。 因此，可以对该资源子项和递归子项执行该属性搜索，直到子项的级别等于指定的深度。
 
 * **属性值**
 
-   作为绝对字符串或表达式语言的属性值；例如， `cq:Page` 或
+  作为绝对字符串或表达式语言的属性值；例如， `cq:Page` 或
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
 * **范围文本**
 
-   中范围字段的标签 **日期范围** 谓词。
+  中范围字段的标签 **日期范围** 谓词。
 
 * **选项路径**
 
-   用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择 **+** 图标用于将选定内容添加到有效选项列表(然后 **-** 图标（如果需要，可删除）。
+  用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择 **+** 图标用于将选定内容添加到有效选项列表(然后 **-** 图标（如果需要，可删除）。
 
-   这些选项是由用户创建的内容节点，具有以下结构：
+  这些选项是由用户创建的内容节点，具有以下结构：
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **选项节点路径**
-实际上与 
-**选项路径**，只有公用谓词字段中包含此字段，其他字段则特定于资产。
+实际上与 **选项路径**，只有公用谓词字段中包含此字段，其他字段则特定于资产。
 
 * **单选**
 如果选中，这些选项将呈现为仅允许单个选择的复选框。 如果错误地选中了复选框，则可以取消选中该复选框。
@@ -563,7 +562,6 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### 添加/编辑谓词字段并定义字段设置 {#add-edit-a-predicate-field-and-define-field-settings}
 
 您可以添加或编辑字段并定义/更新其设置：
@@ -577,11 +575,12 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
    * 您正在添加新字段：
 
-      添加谓词后 **设置** 选项卡将打开并显示可定义的属性。
+     添加谓词后 **设置** 选项卡将打开并显示可定义的属性。
 
    * 要更新现有谓词：
 
-      选择谓词字段（位于右侧），然后打开 **设置** 选项卡。
+     选择谓词字段（位于右侧），然后打开 **设置** 选项卡。
+
    例如， **日期范围谓词**：
 
    ![修改谓词](assets/csf-modify-predicate.png)
@@ -594,7 +593,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
    ![预览图标](assets/csf-preview-icon.png)
 
-1. 这将显示搜索表单，因为它们将显示（完全展开）在相应控制台的“搜索”列中。
+1. 在相应控制台的“搜索”列中显示（完全展开）搜索表单时显示搜索表单。
 
    ![预览表单](assets/csf-preview-form.png)
 
@@ -625,7 +624,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
    ![恢复默认值](assets/csf-restore-default.png)
 
-1. 自定义配置将被删除，默认配置将恢复（控制台中挂锁符号的重新显示可指示此情况）。
+1. 自定义配置将被删除，默认配置将恢复（在控制台中重新出现挂锁符号即表示这一点）。
 
 ### 添加选项谓词 {#adding-options-predicates}
 
@@ -656,7 +655,6 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. 在中进行任何更改 `/apps.`
 
-
 1. 打开 **搜索Forms** 控制台并选择要更新的配置。 例如， **站点管理员搜索边栏**. 然后选择 **编辑**.
 
 1. 根据配置，添加 **选项** 或 **Options属性** 到配置。
@@ -664,19 +662,20 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
    * **属性名称**
 
-      指定要在目标节点上搜索的节点属性。 例如：
+     指定要在目标节点上搜索的节点属性。 例如：
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **选项节点路径**
 
-      选择保留选项的路径。 例如：
+     选择保留选项的路径。 例如：
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
    ![选项谓词](assets/csf-options-predicate-02.png)
 
 1. 选择 **完成** 以保存您的配置。
-1. 导航到相应的控制台(在本例中， **站点**)并打开 **搜索 — 筛选器** 边栏。 新定义的搜索表单以及各种选项将可见。 选择所需的选项以查看搜索结果。
+1. 导航到相应的控制台(在本例中， **站点**)并打开 **搜索 — 筛选器** 边栏。 新定义的搜索表单以及各种选项均可见。 选择所需的选项以查看搜索结果。
 
    ![正在使用的选项](assets/csf-options-usage.png)
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2020.7.0版as a Cloud Service发行说明。”
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 78%
+ht-degree: 76%
 
 ---
 
@@ -61,7 +61,7 @@ AEM Commerce现在可在Cloud Service上使用。
 
 ### 新增功能 {#what-is-new-core-components}
 
-[AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)版本 2.11.0 现已作为 AEM Sites 的一部分提供，其中包括：
+[AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)版本 2.11.0 现已作为 AEM Sites 的一部分提供，其中包括：
 
 * 推出了新的 [PDF 查看器组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html)。
 
@@ -89,7 +89,7 @@ AEM Commerce现在可在Cloud Service上使用。
 * Cloud Manager 管道现在支持由客户设置的变量和密钥。
 
 
-   有关更多详细信息，请参阅管道变量。
+  有关更多详细信息，请参阅管道变量。
 
 * 现在支持绑定身份验证的专用 Maven 存储库。
 
@@ -121,7 +121,7 @@ AEM Commerce现在可在Cloud Service上使用。
 
 ### 新增功能 {#what-is-new-foundations}
 
-* [可以将日志转发给 Splunk 帐户](/help/implementing/developing/introduction/logging.md#splunk-logs)，从而让组织能够利用其 Splunk 投资。
+* [日志可以转发到Splunk帐户](/help/implementing/developing/introduction/logging.md#splunk-logs)，允许组织使用其Splunk投资。
 
 * 可以为使用 Java 代码编程的出站流量分配[静态的专用出口 IP 地址](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)，这对于某些集成来说，可能非常有用。
 
@@ -137,7 +137,7 @@ AEM Commerce现在可在Cloud Service上使用。
 
 * 无法在 Adobe Experience Manager (AEM) 6.1 上运行早期版本的云就绪分析器 (CRA)。明确向管理员组中的用户增加了允许他们运行 CRA 的相关支持。
 
-   有关更多详细信息，请参阅[在 AEM 6.1 上安装 CRA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)。
+  有关更多详细信息，请参阅[在 AEM 6.1 上安装 CRA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)。
 
 * 摘要报告上显示的到期时间戳不正确。
 

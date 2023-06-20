@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2932'
 ht-degree: 3%
@@ -143,7 +143,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ### 自定义用户档案示例 {#custom-profile-example}
 
-为了说明自定义配置文件的用法，让我们考虑一个用例，将一些自定义文本应用到Campaign图像。 您可以创建利用Photoshop API编辑图像的处理配置文件。
+为了说明自定义配置文件的用法，让我们考虑一个用例，将一些自定义文本应用到Campaign图像。 您可以创建使用Photoshop API编辑图像的处理配置文件。
 
 asset compute服务集成允许Experience Manager使用以下工具将这些参数传递到自定义应用程序： [!UICONTROL 服务参数] 字段。 然后，自定义应用程序调用Photoshop API并将这些值传递到API。 例如，您可以传递字体名称、文本颜色、文本粗细和文本大小，以将自定义文本添加到促销活动图像。
 
@@ -161,7 +161,7 @@ asset compute服务集成允许Experience Manager使用以下工具将这些参�
 
 * 管理员可以在中选择处理配置文件定义 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**，并使用 **[!UICONTROL 将配置文件应用到文件夹]** 操作。 它会打开一个内容浏览器，允许您导航到特定文件夹，选择它们并确认配置文件的应用程序。
 * 用户可以在Assets用户界面中选择文件夹，使用 **[!UICONTROL 属性]** 要打开文件夹属性屏幕，请单击 **[!UICONTROL 资产处理]** 选项卡，在 [!UICONTROL 处理配置文件] 列表中，为该文件夹选择适当的处理配置文件。 要保存更改，请单击&#x200B;**[!UICONTROL “保存并关闭”]**。
-   ![从资产属性选项卡将处理配置文件应用到文件夹](assets/folder-properties-processing-profile.png)
+  ![从资产属性选项卡将处理配置文件应用到文件夹](assets/folder-properties-processing-profile.png)
 
 * 用户可以在Assets用户界面中选择文件夹或特定资产以应用处理配置文件，然后选择 ![资产重新处理图标](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新处理资产]** 选项（从顶部可用的选项中）。
 
@@ -287,7 +287,6 @@ asset compute服务集成允许Experience Manager使用以下工具将这些参�
 >* [了解可扩展性和何时使用它](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 >* [如何创建自定义应用程序](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
 >* [各种用例支持的MIME类型](/help/assets/file-format-support.md).
-
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

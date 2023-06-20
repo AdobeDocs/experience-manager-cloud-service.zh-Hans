@@ -2,10 +2,10 @@
 title: 企业 DevOps
 description: 了解轻松部署和简化协作所需的流程、方法和通信。
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 100%
+source-wordcount: '1000'
+ht-degree: 96%
 
 ---
 
@@ -86,7 +86,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 通常包含多个环境，分
 
 已激活的内容将打包，并被放置在创作环境的复制队列中。然后，复制流程会将该内容传输到发布环境。
 
-为了将发布环境中生成的数据反向复制回创作环境，创作环境中的复制侦听器将轮询发布环境，并从发布环境的反向复制发件箱中检索此类内容。
+要将发布环境中生成的数据反向复制回创作环境，创作环境中的复制侦听器将轮询发布环境，并从发布环境的反向复制发件箱中检索此类内容。
 
 #### 发布 {#publish}
 

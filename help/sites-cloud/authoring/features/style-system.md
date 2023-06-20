@@ -2,10 +2,10 @@
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 63%
+source-wordcount: '1320'
+ht-degree: 59%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 63%
 样式系统针对模板作者和内容作者的要求提供了统一的解决方案：
 
 * 模板作者可以在组件的内容策略中定义样式类。
-* 然后，内容作者在页面上编辑组件时，可以从下拉菜单中选择这些类，以应用相应的样式。
+* 然后，内容作者在页面上编辑组件时，可以从下拉列表中选择这些类，以便应用相应的样式。
 
 然后，样式类将插入到组件的修饰包装元素中，这样组件开发人员就无需关心如何处理除了提供CSS规则之外的样式。
 
@@ -104,7 +104,7 @@ ht-degree: 63%
 
 >[!CAUTION]
 >
->配置为组件策略的样式属性的 CSS 类（以及任何必需的 Javascript）必须部署为[客户端库](/help/implementing/developing/introduction/clientlibs.md)才能正常工作。
+>配置为组件策略的样式属性的CSS类（以及任何必需的Javascript）必须部署为 [客户端库](/help/implementing/developing/introduction/clientlibs.md) 去工作。
 
 ## 设置 {#setup}
 
@@ -119,8 +119,7 @@ ht-degree: 63%
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
->[!NOTE]
->这通过 [Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)使用[叠加](/help/implementing/developing/introduction/overlays.md)。
+>[!NOTE]这通过 [Sling 资源合并器](/help/implementing/developing/introduction/overlays.md)使用[叠加](/help/implementing/developing/introduction/sling-resource-merger.md)。
 
 配置组件后，由AEM自动将页面作者配置的样式插入修饰元素上，AEM会自动将该修饰元素包装在每个可编辑组件周围。 组件本身无需执行任何其他操作即可实现此目的。
 
@@ -133,12 +132,11 @@ ht-degree: 63%
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
->[!NOTE]
->这通过 [Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)使用[叠加](/help/implementing/developing/introduction/overlays.md)。
+>[!NOTE]这通过 [Sling 资源合并器](/help/implementing/developing/introduction/overlays.md)使用[叠加](/help/implementing/developing/introduction/sling-resource-merger.md)。
 
 >[!NOTE]
 >
->默认情况下，“编辑”对话框中的“样式”选项卡处于未启用状态。
+默认情况下，“编辑”对话框中的“样式”选项卡处于未启用状态。
 
 ### 具有元素名称的样式 {#styles-with-element-names}
 
@@ -150,15 +148,13 @@ ht-degree: 63%
 
 >[!CAUTION]
 >
->避免为可组合的样式定义元素名称。 定义多个元素名称时，优先级顺序为：
+避免为可组合的样式定义元素名称。 定义多个元素名称时，优先级顺序为：
 >
->1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。
->1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 将被视为回退值。
-
+1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。
+1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 将被视为回退值。
 >
 
-
-这种定义样式名称的功能对于极其通用的组件（如布局容器或内容片段组件）非常有用，可为它们提供更多含义。
+这种定义样式名称的功能对于常规组件（如布局容器或内容片段组件）非常有用，可为它们提供额外的含义。
 
 例如，使用该功能可以为布局容器提供 `<main>`、`<aside>`、`<nav>` 等语义。

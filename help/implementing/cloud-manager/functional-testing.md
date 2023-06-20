@@ -2,10 +2,10 @@
 title: 功能测试
 description: 了解 AEM as a Cloud Service 部署过程内置的三种不同类型的功能测试，确保代码的质量和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service 中有三种不同类型的功能测试。
 
 ### 自定义功能测试 {#custom-functional-testing}
 
-虽然产品功能测试由 Adobe 定义，但您可以为自己的应用程序编写自己的质量测试。 这类质量测试将作为自定义功能测试执行，作为[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或（可选）[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)的一部分，用以确保应用程序的质量。
+虽然产品功能测试由 Adobe 定义，但您可以为自己的应用程序编写自己的质量测试。 该测试作为自定义功能测试的一部分运行。 [生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 或（可选） [非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以确保应用程序的质量。
 
 自定义功能测试既可用于自定义代码部署，也可用于推送升级，这对于编写良好的功能测试（防止 AEM 代码更改破坏应用程序代码）尤为重要。自定义功能测试步骤始终存在，不能跳过。
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service 中有三种不同类型的功能测试。
 
 ### 自定义 UI 测试 {#custom-ui-testing}
 
-自定义 UI 测试是一项可选功能，可用于为应用程序创建和自动运行 UI 测试。 UI 测试是打包在 Docker 映像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。
+自定义 UI 测试是一项可选功能，可用于为应用程序创建和自动运行 UI 测试。 UI测试是打包在Docker图像中的基于Selenium的测试，以允许进行广泛的语言和框架选择，例如Java和Maven、Node和WebDriver.io，或任何其他基于Selenium构建的框架和技术。
 
 请参阅[自定义 UI 测试](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)，了解更多信息。
 

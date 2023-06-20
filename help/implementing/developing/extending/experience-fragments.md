@@ -2,9 +2,9 @@
 title: 体验片段概述
 description: 扩展Adobe Experience Manager as a Cloud Service体验片段。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1648'
 ht-degree: 1%
 
 ---
@@ -85,8 +85,7 @@ HTML演绎版是使用Sling重写器管道生成的。 管道定义于 `/libs/ex
 
    1. 模板名称必须以下列内容开头：
       `experience-fragments`
-这允许用户在/content/experience-fragments中创建体验片段作为 
-`cq:allowedTemplates` 此文件夹的属性包括名称以开头的所有模板 `experience-fragment`. 客户可以更新此属性以包含他们自己的命名方案或模板位置。
+这允许用户在/content/experience-fragments中创建体验片段作为 `cq:allowedTemplates` 此文件夹的属性包括名称以开头的所有模板 `experience-fragment`. 客户可以更新此属性以包含他们自己的命名方案或模板位置。
 
 1. [允许的模板](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) 可以在体验片段控制台中配置。
 
@@ -160,7 +159,7 @@ This feature can be [enabled on an author instance of AEM](/help/sites-administe
    >
    >在大多数情况下，HTML中的内部链接是相对链接，但在某些情况下，自定义组件可能会在HTML中提供完整的URL。 默认情况下，AEM会忽略这些完全成熟的URL并且不会进行任何修改。
 
-   这些属性中的链接通过AEM链接外部化器运行 `publishLink()` 以便重新创建URL，就像它位于已发布的实例上一样，并且是公开可用的。
+   这些属性中的链接通过AEM链接外部化器运行 `publishLink()` 以重新创建URL，就像在已发布的实例上一样，并且该URL已公开可用。
 
 使用现成实施时，上述流程应足以从体验片段生成Target选件，然后将其导出到Adobe Target。 但是，有一些用例未在此流程中说明；这些用例包括：
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 要使用接口，您首先需要创建一个包，其中包含用于实现链接重写器提供程序接口的新服务组件。
 
-此服务将用于插入Experience Fragment Export to Target重写，以便访问各种链接。
+此服务用于插入Experience Fragment Export to Target重写，以便能够访问各种链接。
 
 例如， `ComponentService`：
 
@@ -266,7 +265,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 * `href` 仅限属性
 
 * 对于特定体验片段：
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 任何通过“导出到Target”系统的其他体验片段将被忽略，并且不受此服务中实施的更改的影响。
 
@@ -278,8 +277,8 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 作为输入，方法接收参数：
 
-* `link`不为目标组件考虑  
-`String` 表示当前正在处理的链接。 这通常是指向创作实例上资源的相对URL。
+* `link`
+此 `String` 表示当前正在处理的链接。 这通常是指向创作实例上资源的相对URL。
 
 * `tag`
 当前正在处理的HTML元素的名称。

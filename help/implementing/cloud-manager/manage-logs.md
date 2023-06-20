@@ -2,10 +2,10 @@
 title: 访问和管理日志
 description: 了解如何访问和管理日志，可促进您在 AEM as a Cloud Service 中的开发过程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 100%
+source-wordcount: '270'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-为了获得环境 Id（本例中为 1884）和可用的服务或日志名称选项，可以使用以下命令。
+要获取环境ID（本例中为1884）和可用的服务或日志名称选项，您可以使用以下命令。
 
 ```shell
 $ aio cloudmanager:list-environments

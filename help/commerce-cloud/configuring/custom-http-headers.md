@@ -2,9 +2,9 @@
 title: 自定义 HTTP 标头
 description: 配置自定义HTTP标头
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '268'
 ht-degree: 5%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 5%
 >[!NOTE]
 >
 >开发人员始终可以使用GraphQL客户端配置配置自定义HTTP标头。
+>
 
 ## 配置 {#configuration}
 

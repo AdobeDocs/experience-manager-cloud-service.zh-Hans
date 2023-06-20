@@ -4,10 +4,10 @@ description: 了解如何在 AEM 中创建和管理机器翻译项目和人工�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: d3194e646b326009dc204838ac74fc880952f286
-workflow-type: ht
-source-wordcount: '4086'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '4085'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
+>如果您不熟悉如何翻译内容，请参阅我们的 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
 
 在将资源添加到翻译项目时，将为其创建翻译作业。作业提供用于管理对资源执行的人工翻译和机器翻译工作流的命令和状态信息。
 
@@ -374,7 +374,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 1. 在项目控制台中，选择翻译项目。
 1. 在工具栏上，点按或单击&#x200B;**开始翻译作业**。
-1. 在对话框中，查看将开始的作业的列表，然后通过&#x200B;**开始**&#x200B;进行确认，或通过&#x200B;**取消**&#x200B;进行中止。
+1. 在对话框中，查看已启动的作业列表，然后使用进行确认 **开始** 或中止 **取消**.
 
 ### 取消翻译作业 {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 如果您选择&#x200B;**拒绝翻译**，则可以选择添加批注。
 
-如果拒绝内容，则会将内容发送回翻译供应商，以便他们查看批注。
+如果拒绝内容，则会将内容发送回能够查看评论的翻译供应商。
 
 ### 完成并存档翻译作业 {#completing-and-archiving-translation-jobs}
 
@@ -443,7 +443,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
    ![比较语言副本](../assets/language-copy-compare.png)
 
-1. 此时将并列打开两个页面（启动页面和源页面）。
+1. 两个页面（启动项和源）并排打开。
    * 有关使用此功能的完整信息，请参阅[页面差异](/help/sites-cloud/authoring/features/page-diff.md)。
 
 ## 移动或重命名源页面 {#move-source}

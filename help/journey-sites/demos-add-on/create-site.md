@@ -2,10 +2,10 @@
 title: 创建演示站点
 description: 基于预配置的模板库在 AEM 中创建演示站点。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 100%
+source-wordcount: '842'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
    ![站点创建向导](assets/site-creation-wizard.png)
 
-1. 在下一个屏幕中，为您的站点或 Screens 项目提供标题。可以提供站点名称，也可以从标题生成站点名称（如果被忽略）。点按或单击&#x200B;**创建**。
+1. 在下一个屏幕中，为您的站点或 Screens 项目提供标题。如果忽略，则可以从标题提供或生成站点名称。 点按或单击&#x200B;**创建**。
 
    * 站点标题显示在浏览器标题栏中。
    * 站点名称会成为 URL 的一部分。

@@ -4,10 +4,10 @@ description: 与 Adobe Target 集成
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 100%
+source-wordcount: '1046'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,6 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 > 1. 重新输入租户 ID。
 > 2. 重新连接到 Target。
 > 3. 保存配置。
-
 
 ### 编辑 Target 配置 {#edit-target-configuration}
 
@@ -157,4 +156,4 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 
 >[!NOTE]
 >
->现有客户仍支持旧版配置（未提供编辑配置或创建新配置的选项）。旧版配置将成为客户使用 VSTS 上传的内容包的一部分。
+>现有客户仍支持旧版配置（未提供编辑配置或创建新配置的选项）。旧版配置是客户使用VSTS上传的内容包的一部分。

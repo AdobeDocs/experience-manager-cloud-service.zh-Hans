@@ -2,10 +2,10 @@
 title: 利用 React 在 AEM 中开始使用 SPA
 description: 本文介绍了一个SPA应用程序示例，说明它是如何组合在一起的，并允许您使用React框架快速启动和运行自己的SPA。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 10%
+source-wordcount: '1142'
+ht-degree: 8%
 
 ---
 
@@ -39,7 +39,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 ## 依赖关系、配置和构建 {#dependencies-configuration-and-building}
 
-除了预期的React依赖项之外，示例SPA还可以利用其他库来提高SPA创建效率。
+除了预期的React依赖项之外，示例SPA还可以使用其他库来提高SPA创建效率。
 
 ### 依赖项 {#dependencies}
 
@@ -97,7 +97,7 @@ module.exports = {
 
 ### 正在生成 {#building}
 
-实际构建应用程序时所利用的资源 [网络包](https://webpack.js.org/) 用于翻译，以及用于自动创建客户端库的aem-clientlib-generator。 因此， build命令将类似于：
+实际构建应用程序使用 [网络包](https://webpack.js.org/) 用于翻译，以及用于自动创建客户端库的aem-clientlib-generator。 因此， build命令将类似于：
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -105,7 +105,7 @@ module.exports = {
 
 ### AEM 项目原型 {#aem-project-archetype}
 
-任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+任何AEM项目都应使用 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，支持使用React或Angular的SPA项目，并使用SPA SDK。
 
 ## 应用程序结构 {#application-structure}
 
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-的主要功能 `index.js` 就是利用 `ReactDOM.render` 函数来确定在DOM中插入应用程序的位置。
+的主要功能 `index.js` 是使用 `ReactDOM.render` 函数来确定在DOM中插入应用程序的位置。
 
 这是此函数的标准用法，不是此示例应用程序所特有的。
 

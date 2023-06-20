@@ -2,10 +2,10 @@
 title: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持
 description: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '283'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 此设置的默认值 (`SameSite=Lax`) 可能会导致 AEM 实例或服务之间的身份验证不起作用。这是因为这些服务的域或 URL 结构可能不受此 Cookie 策略的约束。
 
-要解决此问题，您需要将登录令牌的 SameSite Cookie 属性设置为 `None`。
+要解决此问题，您需要将SameSite Cookie属性设置为 `None` 用于登录令牌。
 
 >[!CAUTION]
 >
@@ -36,4 +36,4 @@ ht-degree: 100%
 1. 执行[使用 AEM SDK 快速入门生成 OSGi 配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中概述的步骤，为此特定设置生成 JSON 格式配置
 1. 按照[用于设置属性的 Cloud Manager API 格式](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi 文档中的步骤来应用设置。
 
-在更新此设置且用户注销并再次登录后，`login-token` Cookie 将具有 `None` 属性集，并且将包含在跨站点请求中。
+更新此设置且用户注销并再次登录后， `login-token` Cookie具有 `None` 属性集，并包含在跨站点请求中。

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 100%
+source-wordcount: '1406'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 ## AEM 存储内容的方式 {#content-in-aem}
 
-对于翻译专家来说，深入了解 AEM 管理内容的方式并不重要。但是，在您以后使用 AEM 的翻译工具时，熟悉基本概念和术语会很有帮助。最重要的是，您需要了解自己的内容及其结构，以便有效地翻译该内容。
+对于翻译专家来说，深入了解 AEM 管理内容的方式并不重要。但是，在您以后使用AEM翻译工具时，熟悉基本概念和术语会很有帮助。 最重要的是，您需要了解自己的内容以及内容的构建方式，以便有效地翻译内容。
 
 ### 站点控制台 {#sites-console}
 
@@ -97,7 +97,7 @@ ht-degree: 100%
 
 要编辑页面，请执行以下操作：
 
-1. 使用站点控制台查找并选择页面。请记住，您需要点按或单击单个页面的复选框才能将其选定。
+1. 使用站点控制台查找并选择页面。请记住，您需要点按或单击单个页面的复选框以将其选定。
 
    ![选择要编辑的页面](assets/sites-editor-select-page.png)
 
@@ -175,7 +175,7 @@ AEM 的内容由其结构驱动。AEM 对内容结构的要求很少，但在项
     |- ...
 ```
 
-您应记下内容的特定路径，因为稍后需要使用此路径来配置翻译。
+您应该记下内容的特定路径，因为稍后需要使用此路径来配置翻译。
 
 >[!NOTE]
 >

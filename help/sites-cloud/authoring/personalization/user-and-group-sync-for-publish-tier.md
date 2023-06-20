@@ -2,10 +2,10 @@
 title: 注册、登录和用户配置文件
 description: 了解 AEM as a Cloud Service 的注册、登录、用户数据和组同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1170'
+ht-degree: 95%
 
 ---
 
@@ -83,7 +83,7 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 
 ### 粘性会话和封装令牌 {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最终用户在每次请求时都被路由到相同的发布节点。为了提高性能，默认情况下将启用封装令牌功能，因此，无需在每次请求时都引用存储库中的用户记录。如果最终用户与之关联的发布节点被替换，则其用户 ID 记录将在新的发布节点上可用，如下面的数据同步部分中所述。
+AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最终用户在每次请求时都被路由到相同的发布节点。为了提高性能，默认情况下会启用封装令牌功能，因此无需在每次请求时都引用存储库中的用户记录。 如果最终用户与之关联的发布节点被替换，则其用户 ID 记录将在新的发布节点上可用，如下面的数据同步部分中所述。
 
 ## 用户配置文件 {#user-profile}
 
@@ -104,7 +104,7 @@ AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最�
 
 ## 权限（封闭用户组） {#permissions-closed-user-groups}
 
-发布层访问策略（也称为封闭用户组 (CUG)）是在 AEM 创作实例中定义的，如[此处所述](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=zh-Hans#applying-your-closed-user-group-to-content-pages)。为了限制某些用户访问网站的某些部分或页面，请使用 AEM 创作实例根据需要应用 CUG（如此处所述），并将它们复制到发布层。
+发布层访问策略（也称为封闭用户组 (CUG)）是在 AEM 创作实例中定义的，如[此处所述](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=zh-Hans#applying-your-closed-user-group-to-content-pages)。要限制某些用户访问网站的某些部分或页面，请使用AEM创作实例根据需要应用CUG（如此处所述），并将它们复制到发布层。
 
 * 如果用户通过使用 SAML 向标识提供者 (IdP) 进行身份验证来登录，则身份验证处理程序将识别用户的组成员资格（应与发布层上的 CUG 匹配），并通过存储库记录保留用户与组之间的关联
 * 如果在没有 IdP 集成的情况下完成登录，则自定义代码可应用相同的存储库结构关系。

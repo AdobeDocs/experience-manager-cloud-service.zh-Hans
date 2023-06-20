@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 内容搜索与索引
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2491'
-ht-degree: 78%
+source-wordcount: '2481'
+ht-degree: 74%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 78%
 
 1. 用户将无法再访问单个 AEM 实例的索引管理器以调试、配置或维护索引编制。它仅用于本地开发和内部部署。
 1. 用户将不会在单个 AEM 实例上更改索引，也不必再担心一致性检查或重新编制索引。
-1. 一般在投入生产之前开始更改索引，以免回避 Cloud Manager CI/CD 管道中的质量关卡以及影响生产过程中的业务 KPI。
-1. 客户可在运行时获得所有相关指标（包括生产过程中的搜索性能），以全面了解关于搜索和索引编制的话题。
-1. 客户将能够根据自己的需要设置警报。
+1. 通常，索引更改在投入生产之前启动，以免回避Cloud Manager CI/CD管道中的质量关卡以及影响生产中的业务KPI。
+1. 客户可在运行时获得所有相关指标（包括生产过程中的搜索性能），以全面了解搜索和索引编制主题。
+1. 客户能够根据自己的需求设置警报。
 1. SRE 全天候监控系统运行状况，并将根据需要尽早采取措施。
 1. 通过部署更改索引配置。像其他内容更改一样配置索引定义更改。
 1. 在AEMas a Cloud Service的高层次上，随着 [滚动部署模型](#index-management-using-rolling-deployments) 将存在两组索引：一组用于旧版本，另一组用于新版本。
@@ -257,7 +257,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 | /oak:index/acme.product-custom-2 | 否 | 否 | 是 |
 | /oak:index/cqPageLucene | 是 | 是 | 是 |
 
-每次更改索引时，版本号都增大。为了避免自定义索引名与产品本身的索引名冲突，自定义索引以及对开箱即用索引的更改必须以 `-custom-<number>` 结尾。
+每次更改索引时，版本号都增大。为了避免自定义索引名与产品本身的索引名冲突，自定义索引以及对开箱即用索引的更改必须以结尾 `-custom-<number>`.
 
 ### 对开箱即用索引的更改 {#changes-to-out-of-the-box-indexes}
 

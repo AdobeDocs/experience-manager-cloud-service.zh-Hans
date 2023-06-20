@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 16%
@@ -140,9 +140,9 @@ Adobe Stock中许可并保存为Experience Manager的资产可供访问Experienc
 
 ### 为何将资产存储在DAM中 {#why-assets-are-stored-in-dam}
 
-将资产存储在DAM中可轻松访问和查找。 它确保资产可供整个组织或生态系统（包括合作伙伴、客户等）中的众多用户利用。
+将资产存储在DAM中可轻松访问和查找。 它确保资产可供整个组织或生态系统（包括合作伙伴、客户等）中的许多用户使用。
 
-大多数组织选择仅存储与下游营销/LOB流程相关的资产(通过Experience Manager Sites发布到Web渠道等渠道，或发布到Adobe Experience Cloud提供的其他渠道(Marketing Cloud、Advertising Cloud和Analytics Cloud衡量的渠道，提供给用户/合作伙伴等)。 此外，组织还会在DAM中存储可能接受审查/批准流程的资产。 这样，DAM存储的大部分资产都极有可能被利用，并且避免了存储闲置资产。
+大多数组织选择仅存储与下游营销/LOB流程相关的资产(通过Experience Manager Sites发布到Web渠道等渠道，或发布到Adobe Experience Cloud提供的其他渠道(Marketing Cloud、Advertising Cloud和Analytics Cloud衡量的渠道，提供给用户/合作伙伴等)。 此外，组织还会在DAM中存储可能接受审查/批准流程的资产。 这样，DAM存储的大部分资产都具有高使用概率，并且避免存储闲置资产。
 
 存储资产还受技术和资源利用率考虑的约束。 DAM围绕存储的资产提供其他服务，包括提取元数据、版本控制、生成预览/转码、管理引用和添加访问控制信息。 这些服务会消耗额外的时间和基础架构资源。
 
@@ -222,7 +222,7 @@ Experience Manager桌面应用程序为在本机应用程序中打开的资产�
 
 请注意，此描述是指以可操作方式上传文件（例如，每周或每次拍照），作为桌面用户工作流的正常部分。 此处不涉及大型资产迁移。
 
-您可以利用以下上传功能：
+您可以使用以下上载功能：
 
 * Experience Manager要批量上传大型/分层文件夹，请使用提供 [文件夹上传](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets) 功能。 您还可以上载分层文件夹结构。 资产在后台上传，因此不会绑定到Web浏览器会话
 * 要从单个文件夹上传几个文件，请将这些文件直接拖到Web界面，或使用Experience Manager Assets Web界面中的“创建”选项。

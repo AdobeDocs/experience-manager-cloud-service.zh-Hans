@@ -2,9 +2,9 @@
 title: 创建 Adobe Experience Manager as a Cloud Service 的无障碍内容（WCAG 2.1 合规性）
 description: 使用 AEM as a Cloud Service 帮助残障人士访问和使用 Web 内容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '13870'
+source-wordcount: '13864'
 ht-degree: 83%
 
 ---
@@ -45,7 +45,6 @@ ht-degree: 83%
 >* [WCAG 2.1 准则的简称](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)。
 >* [WCAG 2.1 准则中使用的编号](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)，以便与 WCAG 网站进行交叉引用。
 
-
 ## 准则 1：可感知 {#principle-perceivable}
 
 [准则 1：可感知 – 信息和用户界面组件必须以可感知的方式呈现给用户。](https://www.w3.org/TR/WCAG/#perceivable)
@@ -73,6 +72,7 @@ ht-degree: 83%
 >[!NOTE]
 >
 >某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
+>
 在为您的 AEM 实例实施这些版本时，您的开发团队必须配置此类组件以支持 `alt` 属性。这样做可确保作者可以将其添加到该内容中（请参阅[添加对其他 HTML 元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
 
 默认情况下，AEM 要求填写&#x200B;**替换文本**&#x200B;字段。如果图像是纯粹的装饰并且不需要替换文本，则可以选中&#x200B;**图像具有装饰性**&#x200B;选项。
@@ -110,6 +110,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * 背景图像：背景图像是使用层叠样式表 (CSS) 而不是 HTML 实现的。这就意味着无法指定替换文本值。因此，背景图像不应提供重要的文本信息 - 即便提供，这些信息必须也要在页面的文本中有所提及。尽管如此，当图像无法显示时，也应务必显示替代背景。
 
 >[!NOTE]
+>
 背景和前景文本之间应具有适当级别的对比度；对此将进行更详细的讨论 [对比度（最小）(1.4.3)](#contrast-minimum).
 
 #### 更多信息 — 非文本内容(1.1.1) {#more-information-non-text-content}
@@ -157,12 +158,15 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
    * 或常用音频格式（如MP3）的等效音频描述。
 
 >[!NOTE]
+>
 如果音频或视频内容是作为同一网页上存在的其他格式内容的替换内容提供的，则可能不需要其他替换文本。
+>
 准则《[了解 WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)》提供了进一步的信息。
 
 在 AEM 网页中插入多媒体的方式与插入图像类似。但是，多媒体内容与静态图像相比还是更为复杂，而且在控制多媒体的播放方式时有各种不同的设置和选项。
 
 >[!NOTE]
+>
 如果将多媒体与信息性内容结合使用，则也必须创建替代内容的链接。例如，要加入文本记录，应创建一个用于显示记录的 HTML 页面，然后在音频内容旁边或下方添加一个链接。
 
 #### 更多信息 – 纯音频和纯视频（预先录制）(1.2.1) {#more-information-audio-only-and-video-only-prerecorded}
@@ -298,7 +302,7 @@ c
 
 #### 用途 — 信息和关系(1.3.1) {#purpose-info-and-relationships}
 
-残障人士使用的许多辅助型技术都依赖结构性信息才能有效地显示或“理解”**&#x200B;内容。此结构信息可以采用页面标题、表格行和列标题以及列表类型的形式。 例如，屏幕阅读器可允许用户在页面中从标题导航到标题。 但是，当页面内容似乎只有通过可视样式而非底层HTML的结构时，则辅助型技术将没有可用的结构信息，从而限制了其支持更轻松浏览的能力。
+残障人士使用的许多辅助型技术都依赖结构性信息来有效地显示或 *了解* 内容。 此结构信息可以采用页面标题、表格行和列标题以及列表类型的形式。 例如，屏幕阅读器可允许用户在页面中从标题导航到标题。 但是，当页面内容似乎只有通过可视样式而非底层HTML的结构时，则辅助型技术将没有可用的结构信息，从而限制了其支持更轻松浏览的能力。
 
 该成功标准旨在确保此类结构性信息通过 HTML 或其他代码技术以编程的方式提供，这样浏览器和辅助型技术便可以访问并利用这些信息。
 
@@ -316,9 +320,9 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
    * `<ol>` 元素用于表示&#x200B;*编号*&#x200B;列表。单个列表项使用 `<li>` 元素进行标识。
 在 RTE 中，使用**编号列表**&#x200B;图标。
 
-   如果要将现有内容更改为特定列表类型，请突出显示相应的文本并选择相应的列表类型。 与前面显示如何输入段落文本的示例一样，相应的列表元素会自动添加到HTML中。
+  如果要将现有内容更改为特定列表类型，请突出显示相应的文本并选择相应的列表类型。 与前面显示如何输入段落文本的示例一样，相应的列表元素会自动添加到HTML中。
 
-   在全屏模式下，单个&#x200B;**项目符号列表**&#x200B;和&#x200B;**编号列表**&#x200B;图标可见。 当不处于全屏模式时，这两个选项在单个&#x200B;**列表**&#x200B;图标的后面可用。
+  在全屏模式下，单个&#x200B;**项目符号列表**&#x200B;和&#x200B;**编号列表**&#x200B;图标可见。 当不处于全屏模式时，这两个选项在单个&#x200B;**列表**&#x200B;图标的后面可用。
 
 * **表**：数据表必须使用 HTML 表元素进行标识：
    * 一个 `<table>` 元素
@@ -326,71 +330,76 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
    * 每个行标题和列标题均使用 `<th>` 元素进行标识
    * 每个数据单元格均使用 `<td>` 元素进行标识
 
-   此外，辅助表会使用以下元素和属性：
+  此外，辅助表会使用以下元素和属性：
 
    * `<caption>` 元素用于为表提供可视描述。默认情况下，描述显示在表上方居中的位置，但是可以使用 CSS 相应地调整位置。描述采用编程方式与表相关联，因此这是一种提供内容简介的有用方法。
    * `<summary>` 元素通过总结视力正常的用户可以看到的内容，帮助失明的用户更加轻松地了解表中提供的信息。当使用了复杂或非常规的表布局时，这种工作流程非常有用（该属性不会显示在浏览器中，只会由辅助型技术读取）。
    * `<th>` 元素的 `scope` 属性用于指示某个单元格表示特定行的标题，还是特定列的标题。在复杂的表中，即数据单元格可能与一个或多个标题相关联的情况下，类似的方法是使用标题和 id 属性。
 
-   >[!NOTE]
-   默认情况下，这些元素和属性不直接可用，但系统管理员可以在&#x200B;**表属性**&#x200B;对话框中添加对这些值的支持（请参阅[添加对其他 HTML 元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
+  >[!NOTE]
+  >
+  默认情况下，这些元素和属性不直接可用，但系统管理员可以在&#x200B;**表属性**&#x200B;对话框中添加对这些值的支持（请参阅[添加对其他 HTML 元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。
 
-   打开 **表** 对话框，您可以在其中选择 **表属性** 选项卡：
+  打开 **表** 对话框，您可以在其中选择 **表属性** 选项卡：
 
    * 定义适当的 **题注**.
    * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、****** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
 
-   然后，您可以使用 **单元格属性** 要选择单元格是数据还是标题单元格，请执行以下操作：
+  然后，您可以使用 **单元格属性** 要选择单元格是数据还是标题单元格，请执行以下操作：
 
 * **强调**：使用 `<strong>` 或 `<em>` 元素指示要强调的内容。切勿在段落中使用标题突出显示文本。
    * 突出显示要强调的文本；
    * 单击&#x200B;**属性**&#x200B;面板中显示的 **B** 图标（表示 `<strong>`）或 **I** 图标（表示 `<em>`）（确保已选择 HTML）。
 
-      >[!NOTE]
-      标准 AEM 安装中的 RTE（富文本编辑器）设置为：
-      * `<b>`对象`<strong>`
-      * `<i>`对象`<em>`
-
-      尽管两种形式效果相同，但是最好使用 `<strong>` 和 `<em>`，因为从语义上来讲，它们才是正确的 HTML 标记。开发团队在开发项目实例时，可以将 RTE 配置为使用 `<strong>` 和 `<em>`（而非 `<b>` 和 `<i>`）。
+     >[!NOTE]
+     >
+     标准 AEM 安装中的 RTE（富文本编辑器）设置为：
+     >
+     * `<b>`对象`<strong>`
+     * `<i>`对象`<em>`
+     >
+     尽管两种形式效果相同，但是最好使用 `<strong>` 和 `<em>`，因为从语义上来讲，它们才是正确的 HTML 标记。开发团队在开发项目实例时，可以将 RTE 配置为使用 `<strong>` 和 `<em>`（而非 `<b>` 和 `<i>`）。
 
 * **复杂数据表**：有时，一些复杂表拥有两级或更多级标题，此时，基本的表属性可能不足以提供所有必需的结构性信息。对于此类复杂表，需要使用&#x200B;**标题**&#x200B;和 **id** 属性在标题和与之相关的单元格之间建立关系。
 
-   >[!NOTE]
-   ID属性在现成安装中不可用。 可以通过在RTE中配置HTML规则和序列化程序来启用它。
+  >[!NOTE]
+  >
+  ID属性在现成安装中不可用。 可以通过在RTE中配置HTML规则和序列化程序来启用它。
 
-   例如，在下表中，标题和 ID 是相匹配的，以便为辅助型技术用户建立程序化关联。
+  例如，在下表中，标题和 ID 是相匹配的，以便为辅助型技术用户建立程序化关联。
 
-   ```xml
-     <table>
-       <tr>
-         <th rowspan="2" id="h">Homework</th>
-         <th colspan="3" id="e">Exams</th>
-         <th colspan="3" id="p">Projects</th>
-       </tr>
-       <tr>
-         <th id="e1" headers="e">1</th>
-         <th id="e2" headers="e">2</th>
-         <th id="ef" headers="e">Final</th>
-         <th id="p1" headers="p">1</th>
-         <th id="p2" headers="p">2</th>
-         <th id="pf" headers="p">Final</th>
-       </tr>
-       <tr>
-         <td headers="h">15%</td>
-         <td headers="e e1">15%</td>
-         <td headers="e e2">15%</td>
-         <td headers="e ef">20%</td>
-         <td headers="p p1">10%</td>
-         <td headers="p p2">10%</td>
-         <td headers="p pf">15%</td>
-       </tr>
-     </table>
-   ```
+  ```xml
+    <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+        <td headers="h">15%</td>
+        <td headers="e e1">15%</td>
+        <td headers="e e2">15%</td>
+        <td headers="e ef">20%</td>
+        <td headers="p p1">10%</td>
+        <td headers="p p2">10%</td>
+        <td headers="p pf">15%</td>
+      </tr>
+    </table>
+  ```
 
-   要在 AEM 中实现此操作，使用源代码编辑模式直接添加标记。
+  要在 AEM 中实现此操作，使用源代码编辑模式直接添加标记。
 
-   >[!NOTE]
-   此功能在标准安装中不可立即使用。 它需要配置RTE、HTML规则和序列化器。
+  >[!NOTE]
+  >
+  此功能在标准安装中不可立即使用。 它需要配置RTE、HTML规则和序列化器。
 
 #### 更多信息 – 信息和关系 (1.3.1) {#more-information-info-and-relationships}
 
@@ -429,6 +438,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 同样，如果用户在获取信息时必须辨认不同的声音（例如，男性或女性讲话的内容），而且音频内容没有反映在任何替代文本中，则患有听觉障碍的用户就会遇到辅助功能问题。
 
 >[!NOTE]
+>
 有关颜色替代品的要求，请参阅 [颜色的使用](#use-of-color).
 
 #### 如何达到标准 — 感官特性(1.3.3) {#how-to-meet-sensory-characteristics}
@@ -439,6 +449,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 * 切勿将文本样式（例如，粗体或斜体文本）作为传递信息的唯一方式。
 
 >[!NOTE]
+>
 如果用户在非可视上下文中可以理解使用的描述性词语的含义，则可以使用描述性词语。例如，使用 *以上* 和 *以下* 通常可以接受，因为它们分别表示特定内容项之前和之后的内容；当大声说出内容时，这仍然有意义。
 
 #### 更多信息 - 感官特性 (1.3.3) {#more-information-sensory-characteristics}
@@ -457,6 +468,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 * 使用颜色：颜色不是传达信息、指示操作、提示响应或区分视觉元素的唯一视觉方式。
 
 >[!NOTE]
+>
 此成功标准专门针对颜色感知。 其他形式的感知包括 [可调整(1.3)](#adaptable)；包括以编程方式访问颜色和其他可视化演示文稿编码。
 
 #### 用途 — 使用颜色(1.4.1) {#purpose-use-of-color}
@@ -495,6 +507,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 因此，用户能够关闭背景声音是非常重要的。
 
 >[!NOTE]
+>
 控制音量包括能够将音量减小到零。
 
 #### 如何达到标准 – 音频控制 (1.4.2) {#how-to-meet-audio-control}
@@ -515,8 +528,9 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
    * 附属内容：文本或文本的图像是未激活的用户界面组件的一部分，只是[纯粹的装饰](https://www.w3.org/TR/WCAG/#dfn-pure-decoration)，对任何人都不可见，或者只是包含其他重要可视内容的图片的一部分，对于此类文本或文本的图像，没有对比度要求。
    * 商标标志：文本是徽标或品牌名称的一部分，对于此类文本，没有最低对比度要求。
 
-   >[!NOTE]
-   请参阅[了解非文本对比度](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)获取更多详细信息，从而帮助确保内容作者了解有关非文本元素（包括图标、界面元素等）的其他要求。
+  >[!NOTE]
+  >
+  请参阅[了解非文本对比度](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)获取更多详细信息，从而帮助确保内容作者了解有关非文本元素（包括图标、界面元素等）的其他要求。
 
 #### 用途 – 对比度（最小）(1.4.3) {#purpose-contrast-minimum}
 
@@ -526,6 +540,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 * 文本（如链接文本和非链接文本）的颜色编码在识别信息中起着重要的作用。
 
 >[!NOTE]
+>
 仅用于修饰目的的文本不在此成功标准中。
 
 #### 如何达到标准 — 对比度（最小）(1.4.3) {#how-to-meet-contrast-minimum}
@@ -537,15 +552,18 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 * 如果阵列化了背景，则任何文本周围的背景都应着色，以保持4.5:1或3:1的比例。
 
 >[!NOTE]
+>
 请记住，字体在呈现同等 PT/PX/EM 大小的方式上可能有所不同。
+>
 在为 Web 内容选择适当的字体和大小时，请在可读性和可用性方面做出良好的判断。
 
 >[!NOTE]
+>
 对以下短语执行网络搜索，以查找可以帮助您转换为其他单位的工具：
+>
 * Px 到 Em 计算器 <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
 * 字体大小转换：pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
 * 像素到 EM 转换器 <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
-
 
 要检查对比度，可使用颜色对比度工具，例如 [Paciello Group Color Contrast Analyzer](https://www.tpgi.com/resources/contrast-analyser.html) 或 [WebAIM Color Contrast Checker](https://webaim.org/resources/contrastchecker/)。这些工具允许您检查颜色对并报告任何对比度问题。
 
@@ -586,6 +604,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
    * 基本：文本的特殊表述对于所传达的信息至关重要。
 
 >[!NOTE]
+>
 徽标类型（作为徽标或品牌名称一部分的文本）被认为是必需的。
 
 #### 用途 — 文本的图像(1.4.5) {#purpose-images-of-text}
@@ -721,6 +740,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 * 闪光三次或低于阈值：网页不包含在任何一秒内闪光超过 3 次，或闪光低于一般闪光和红色闪光阈值的内容。
 
 >[!NOTE]
+>
 由于任何未达到此成功标准的内容会干涉用户使用整个页面的能力，因此网页上的所有内容（无论是否用来达到其他成功标准）必须达到此成功标准。请参阅[符合性要求 5：不干涉](https://www.w3.org/TR/WCAG/#cc5)。
 
 #### 用途 – 闪光三次或低于阈值 (2.3.1) {#purpose-three-flashes-or-below-threshold}
@@ -847,6 +867,7 @@ John Smith's publications
 ```
 
 >[!NOTE]
+>
 以上代码片段是一个插图，建议使用 **图像** 组件。
 
 虽然提供无需附加上下文即可标识链接目的的链接文本是一种建议的方法，但我们意识到这并不总是可行的。与上下文无关的链接可用于以下情况，其 HTML 示例详见：[如何达到成功标准 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)。
@@ -956,14 +977,15 @@ John Smith's publications
 要达到此成功标准，可以使用页面顶部 `<html>` 元素中的 `lang` 属性来识别网页的默认语言。例如：
 
 * 如果页面采用英语编写，则 `<html>` 元素应该写成：
-   `<html lang = "en">`
+  `<html lang = "en">`
 
 * 而要以西班牙语呈现的页面应该采用以下标准：
-   `<html lang = "es">`
+  `<html lang = "es">`
 
 在 AEM 中，页面的默认语言是在创建页面时设置的，但是也可以在编辑[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)时进行更改。
 
 >[!NOTE]
+>
 AEM 针对根语言的变体做了进一步的微调，例如，美式英语 - en-us、英式英语 - en-gb 和加拿大英语 - en-ca。这种详细级别对辅助型技术来说通常是多余的，尽管它可以用于标识页面内容中的区域变化。
 
 #### 更多信息 – 页面语言 (3.1.1) {#more-information-language-of-page}
@@ -999,6 +1021,7 @@ AEM 针对根语言的变体做了进一步的微调，例如，美式英语 - e
 ```
 
 >[!NOTE]
+>
 现成实例中不支持使用块引号。 可以开发自定义组件来支持该功能。
 
 同样，如果通过以下方式使用 `span` 元素，则浏览器可以准确地呈现不常见的外来词或短语：
@@ -1008,6 +1031,7 @@ AEM 针对根语言的变体做了进一步的微调，例如，美式英语 - e
 ```
 
 >[!NOTE]
+>
 如果包含使用不同语言的人名或城市，或者使用默认语言中常用的外来词或短语（如英语中的 *schadenfreude*），则不必遵循此成功标准。
 
 要添加包含相应语言的 span 元素，可以在 RTE 的源代码编辑模式下手动编辑 HTML 标记，以将其写成如上显示的方式。或者，也可以由系统管理员将 `lang` 属性添加到 RTE 中（请参阅[添加对其他 HTML 元素和属性的支持](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)）。

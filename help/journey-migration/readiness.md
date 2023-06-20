@@ -1,10 +1,10 @@
 ---
 title: 就绪阶段
-description: 了解您需要执行的步骤，以确保您的AEM安装已准备好移动到云
+description: 了解您需要执行的步骤，以便确保AEM安装已准备好移至云中
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2074'
 ht-degree: 8%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 8%
 
 ## 目标 {#objective}
 
-本文档有助于您了解必须考虑哪些因素，以确保您的AEM安装已准备好移至云中：
+本文档有助于您了解必须考虑的因素，这样您才能确保AEM安装已准备好迁移到云：
 
 * 了解显着更改和已弃用的功能
 * 了解如何规划迁移到AEMas a Cloud Service
@@ -90,7 +90,7 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
   <tr>
     <td>切换到异步操作</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">配置异步操作</a></td>
-    <td>为了提高环境的整体性能，某些操作会在异步模式下执行。 当系统资源可用时，异步作业将排队并执行。</td>
+    <td>为了提高环境的整体性能，某些操作会在异步模式下执行。 当系统资源可用时，异步作业将排队并运行。</td>
   </tr>
   <tr>
     <td>基于令牌的身份验证和集成策略</td>
@@ -150,7 +150,7 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
   <tr>
     <td>身份验证更改</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hans">AEM as a Cloud Service 的 IMS 支持</td>
-    <td>如果在迁移到Cloud Service之前，您之前在author和publish上使用SAML 2.0集成，则主要更改是AEMas a Cloud ServiceAuthor仅与Adobe IMS集成。 但是，AEMas a Cloud Service发布层仍然可以利用SAML或其他身份验证集成。 AEM as a Cloud Service 仅为作者、管理员和开发人员用户提供 IMS 身份验证支持。IMS身份验证不支持客户站点（如站点访客）的外部最终用户。</td>
+    <td>如果在迁移到Cloud Service之前，您之前在author和publish上使用SAML 2.0集成，则主要更改是AEMas a Cloud ServiceAuthor仅与Adobe IMS集成。 但是，AEMas a Cloud Service发布层仍可以使用SAML或其他身份验证集成。 AEM as a Cloud Service 仅为作者、管理员和开发人员用户提供 IMS 身份验证支持。IMS身份验证不支持客户站点（如站点访客）的外部最终用户。</td>
   </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ## 计划审查AEM安装 {#review-planning}
 
-在您习惯了AEMas a Cloud Service引入的更改后，现在应该开始规划审查现有安装，以衡量将其移动到云所需的更改级别。
+在您已经习惯了使用AEMas a Cloud Service引入的更改后，现在应该开始计划审查您的现有安装。 这样做有助于您衡量将其移动到云所需的更改级别。
 
 下图显示了审查阶段涉及的关键步骤：
 
@@ -198,7 +198,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 **使报表社会化**
 
-在Best Practices Analyzer报告完成后，请与相关团队共享这些报告，以确认您的发现并规划后续步骤。 根据偏好，您还可以使用以下方式分发报告的打印版本 [打印预览](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
+Best Practices Analyzer报告完成后，请与相关团队共享这些报告，以便您可以确认调查结果并规划后续步骤。 根据偏好，您还可以使用以下方式分发报告的打印版本 [打印预览](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### 审查资源计划 {#review-resource-planning}
 

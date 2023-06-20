@@ -2,10 +2,10 @@
 title: 检查域名状态
 description: 了解如何确定 Cloud Manager 是否已成功验证您的自定义域名。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 357c1b9c29b3a79ee7322f7f2176b6ae41fc9c2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 74%
+source-wordcount: '662'
+ht-degree: 67%
 
 ---
 
@@ -82,7 +82,7 @@ Fastly会将域锁定到注册它的初始帐户，没有其他帐户可以在�
 
 ## 自定义域名的预先存在CDN配置 {#pre-existing-cdn}
 
-如果您的自定义域名已有 CDN 配置，**自定义域名**&#x200B;和&#x200B;**环境**&#x200B;页面，鼓励您通过 UI 添加这些配置，以便它们在 Cloud Manager 中可见和可配置。
+如果您的自定义域名已有CDN配置，则 **自定义域名** 和 **环境** 页面，鼓励您通过UI添加这些配置，以便它们在Cloud Manager中可见和可配置。
 
 使用 UI 迁移所有预先存在的环境配置后，消息将消失。 消息可能需要 1-2 个工作日才能消失。
 

@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: AEM as a Cloud Service 中的缓存
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2819'
 ht-degree: 2%
 
 ---
@@ -33,56 +33,56 @@ Define DISABLE_DEFAULT_CACHING
 * HTML可以通过定义 `EXPIRATION_TIME` 中的变量 `global.vars` 使用AEMas a Cloud ServiceSDK Dispatcher工具。
 * 可以在更细粒度级别覆盖，包括独立控制CDN和浏览器缓存，并具有以下Apache `mod_headers` 指令：
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header set Cache-Control "max-age=200"
-        Header set Surrogate-Control "max-age=3600"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header set Cache-Control "max-age=200"
+       Header set Surrogate-Control "max-age=3600"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   >[!NOTE]
-   >Surrogate-Control标头适用于Adobe托管的CDN。 如果使用 [客户管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，根据您的CDN提供商，可能需要不同的标头。
+  >[!NOTE]
+  >Surrogate-Control标头适用于Adobe托管的CDN。 如果使用 [客户管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，根据您的CDN提供商，可能需要不同的标头。
 
-   在设置全局缓存控制标头或匹配宽正则表达式的标头时，请务必谨慎，这样它们就不会应用于需要保持私密的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 话虽如此，如果AEMas a Cloud Service检测到缓存标头已被应用于它检测到不可由Dispatcher缓存的内容，则会删除该缓存标头，如Dispatcher文档中所述。 要强制AEM始终应用缓存标头，可以添加 **始终** 选项如下所示：
+  在设置全局缓存控制标头或匹配宽正则表达式的标头时，请务必谨慎，这样它们就不会应用于需要保持私密的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 话虽如此，如果AEMas a Cloud Service检测到缓存标头已被应用于它检测到不可由Dispatcher缓存的内容，则会删除该缓存标头，如Dispatcher文档中所述。 要强制AEM始终应用缓存标头，可以添加 **始终** 选项如下所示：
 
-   ```
-   <LocationMatch "^/content/.*\.(html)$">
-        Header unset Cache-Control
-        Header unset Expires
-        Header always set Cache-Control "max-age=200"
-        Header set Age 0
-   </LocationMatch>
-   ```
+  ```
+  <LocationMatch "^/content/.*\.(html)$">
+       Header unset Cache-Control
+       Header unset Expires
+       Header always set Cache-Control "max-age=200"
+       Header set Age 0
+  </LocationMatch>
+  ```
 
-   您必须确保文件位于 `src/conf.dispatcher.d/cache` 具有以下规则（默认配置中）：
+  您必须确保文件位于 `src/conf.dispatcher.d/cache` 具有以下规则（默认配置中）：
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+  ```
+  /0000
+  { /glob "*" /type "allow" }
+  ```
 
 * 防止缓存特定内容 **在CDN**，将Cache-Control标头设置为 *私有*. 例如，以下内容将阻止在名为的目录下存在html内容 **secure** 从CDN缓存：
 
-   ```
-      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
-      Header unset Cache-Control
-      Header unset Expires
-      Header always set Cache-Control "private"
-     </LocationMatch>
-   ```
+  ```
+     <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+     Header unset Cache-Control
+     Header unset Expires
+     Header always set Cache-Control "private"
+    </LocationMatch>
+  ```
 
 * 虽然设置为私有的HTML内容将不会在CDN中缓存，但如果满足以下条件，则可以在Dispatcher中缓存 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans) 配置，确保只能向授权用户提供内容。
 
-   >[!NOTE]
-   >其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)中，将不会成功覆盖值。
+  >[!NOTE]
+  >其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)中，将不会成功覆盖值。
 
-   >[!NOTE]
-   >请注意，Dispatcher可能仍会根据自身缓存内容 [缓存规则](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 要使内容真正为私有，您应该确保Dispatcher不会缓存该内容。
+  >[!NOTE]
+  >请注意，Dispatcher可能仍会根据自身缓存内容 [缓存规则](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 要使内容真正为私有，您应该确保Dispatcher不会缓存该内容。
 
 ### 客户端库(js，css) {#client-side-libraries}
 
-* 使用AEM客户端库框架时，生成JavaScript和CSS代码的方式可让浏览器无限期地缓存它，因为任何更改都会显示为具有唯一路径的新文件。  换句话说，将根据需要生成引用客户端库的HTML，以便客户可以在发布新内容时体验这些内容。 对于不遵循“不可变”值的旧版浏览器，cache-control设置为“不可变”或30天。
+* 使用AEM客户端库框架时，生成JavaScript和CSS代码的方式可让浏览器无限期地缓存它，因为任何更改都会显示为具有唯一路径的新文件。  换句话说，会根据需要生成引用客户端库的HTML，以便客户可以在发布新内容时体验这些内容。 对于不遵循“不可变”值的旧版浏览器，cache-control设置为“不可变”或30天。
 * 请参阅部分 [客户端库和版本一致性](#content-consistency) 以了解更多详细信息。
 
 ### 足够大的图像和任何内容存储在Blob存储中 {#images}
@@ -102,7 +102,7 @@ Define DISABLE_DEFAULT_CACHING
 
 #### 新的默认缓存行为 {#new-caching-behavior}
 
-AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓存标头。 请注意，如果未设置缓存控制标头，则会缓存公共内容，并且经过身份验证的流量会设置为私有。 如果已设置缓存控制标头，则缓存标头将保持不变。
+AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓存标头。 请注意，如果未设置缓存控制标头，则会缓存公共内容，并且经过身份验证的流量会设置为私有。 如果已设置缓存控制标头，则缓存标头保持不变。
 
 | 是否存在缓存控制标头？ | 请求类型 | AEM将缓存标头设置为 |
 |------------------------------|---------------|------------------------------------------------|
@@ -142,68 +142,68 @@ AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓�
 
    * 在12小时内缓存可变的客户端库资源并在12小时后进行后台刷新。
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 通过后台刷新缓存不可变的客户端库资源长期（30天）以避免丢失。
 
-      ```
-      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 在浏览器上缓存HTML页5分钟，后台刷新时间为1小时，在CDN上缓存页面为12小时。 将始终添加Cache-Control标头，因此请务必确保在/content/*下匹配的html页面为公共页面。 如果不能，请考虑使用更具体的正则表达式。
 
-      ```
-      <LocationMatch "^/content/.*\.html$">
-         Header unset Cache-Control
-         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.html$">
+        Header unset Cache-Control
+        Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 在浏览器上缓存内容服务/Sling模型导出器json响应5分钟，后台刷新时间为1小时，在CDN上缓存响应时间为12小时。
 
-      ```
-      <LocationMatch "^/content/.*\.model\.json$">
-         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
-         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.model\.json$">
+        Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+        Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 通过后台刷新缓存来自核心图像组件的不可变URL长期（30天）以避免丢失。
 
-      ```
-      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
-         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+        Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
    * 从DAM中缓存可变资源（如图像和视频）24h，并在12h后刷新后台以避免丢失
 
-      ```
-      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
-         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
-         Header set Age 0
-      </LocationMatch>
-      ```
+     ```
+     <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+        Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+        Header set Age 0
+     </LocationMatch>
+     ```
 
 ### HEAD请求行为 {#request-behavior}
 
-在AdobeCDN上收到资源的HEAD请求时 **非** 缓存后，请求将进行转换，并作为GET请求由Dispatcher和/或AEM实例接收。 如果响应可缓存，则将从CDN提供后续HEAD请求。 如果响应不可缓存，则后续HEAD请求将在一段时间内传递给Dispatcher和/或AEM实例，具体时间取决于 `Cache-Control` 总计。
+在AdobeCDN上收到资源的HEAD请求时 **非** 缓存后，请求将进行转换，并作为GET请求由Dispatcher和/或AEM实例接收。 如果响应可缓存，则从CDN提供后续HEAD请求。 如果响应不可缓存，则后续HEAD请求将在一段时间内传递给Dispatcher或AEM实例，或同时传递这两者，具体时间取决于 `Cache-Control` 总计。
 
 ### 营销活动参数 {#marketing-parameters}
 
-网站URL通常包括用于跟踪营销活动成功的营销活动参数。 为了有效地使用Dispatcher缓存，建议您配置Dispatcher配置的 `ignoreUrlParams` 属性为 [在此处记录](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+网站URL通常包括用于跟踪营销活动成功的营销活动参数。 要有效地使用Dispatcher缓存，建议您配置Dispatcher配置的 `ignoreUrlParams` 属性为 [在此处记录](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
 
 此 `ignoreUrlParams` 部分必须取消注释，并应引用文件 `conf.dispatcher.d/cache/marketing_query_parameters.any`. 通过取消注释与营销渠道相关的参数对应的行，可以修改文件。 您还可以添加其他参数。
 
@@ -454,11 +454,11 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## 客户端库和版本一致性 {#content-consistency}
 
-页面由HTML、Javascript、CSS和图像组成。 我们鼓励客户利用 [客户端库(clientlibs)框架](/help/implementing/developing/introduction/clientlibs.md) 要将Javascript和CSS资源导入HTML页，请考虑JS库之间的依赖关系。
+页面由HTML、Javascript、CSS和图像组成。 我们鼓励客户使用 [客户端库(clientlibs)框架](/help/implementing/developing/introduction/clientlibs.md) 要将Javascript和CSS资源导入HTML页，请考虑JS库之间的依赖关系。
 
-clientlibs框架提供自动版本管理，这意味着开发人员可以在源代码管理中签入对JS库的更改，并且最新版本将在客户推送其版本时可用。 否则，开发人员将需要手动更改引用了新版库的HTML，如果许多HTML模板共享同一库，则更改操作会非常繁琐。
+clientlibs框架提供自动版本管理，这意味着开发人员可以在源代码管理中签入JS库的更改，并且在客户推送其版本时提供最新版本。 否则，开发人员将需要手动更改引用了新版库的HTML，如果许多HTML模板共享同一库，则更改操作会非常繁琐。
 
-将库的新版本发布到生产环境后，会更新引用HTML页面，并包含指向这些已更新库版本的新链接。 在给定HTML页面的浏览器缓存过期后，无需担心将从浏览器缓存中加载旧库，因为现在，已刷新的页面(来自AEM)肯定会引用库的新版本。 换言之，刷新的HTML页将包含所有最新的库版本。
+将库的新版本发布到生产环境后，会更新引用HTML页面，并包含指向这些已更新库版本的新链接。 在给定HTML页面的浏览器缓存过期后，无需担心旧库会从浏览器缓存中加载，因为现在，已刷新的页面(来自AEM)肯定会引用库的新版本。 换言之，刷新的HTML页将包含所有最新的库版本。
 
 实现此目标的机制是序列化哈希，该哈希会附加到客户端库链接中，从而确保浏览器有一个唯一的版本化URL来缓存CSS/JS。 仅当客户端库的内容更改时，才会更新序列化哈希。 这意味着，如果发生不相关的更新（即，即使使用新部署，也不会对客户端库的基础css/js进行任何更改），引用将保持不变，从而确保对浏览器缓存的中断较少。
 
@@ -485,4 +485,4 @@ HTML页面上的默认clientlib包含类似于以下示例：
    * 选中复选框以启用严格版本控制
    * 在标记为长期客户端缓存密钥的字段中，输入/的值。*；哈希
 1. 保存更改。无需在源代码管理中保存此配置，因为AEMas a Cloud Service会自动在开发、暂存和生产环境中启用此配置。
-1. 每当更改客户端库的内容时，都会生成一个新的哈希键并更新HTML引用。
+1. 每当更改客户端库的内容时，就会生成新的哈希键并更新HTML引用。

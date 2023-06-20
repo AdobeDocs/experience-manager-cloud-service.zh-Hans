@@ -2,10 +2,10 @@
 title: 启用渐进式 Web 应用程序功能
 description: AEM Sites 允许内容作者通过简单的配置而非编码为任何站点启用渐进式 Web 应用程序功能。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 
 ### 使用核心组件 {#adjust-components}
 
-核心组件版本 2.15.0 及更高版本完全支持 AEM Sites 的 PWA 功能。由于 AEMaaCS 始终包含最新版本的核心组件，因此您可以利用现成的 PWA 功能。您的 AEMaaCS 项目将自动满足此要求。
+核心组件版本 2.15.0 及更高版本完全支持 AEM Sites 的 PWA 功能。由于AEMaaCS始终包含最新版本的核心组件，因此您可以使用现成的PWA功能。 您的 AEMaaCS 项目将自动满足此要求。
 
 >[!NOTE]
 >
@@ -122,7 +122,6 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
       * `/etc/clientlibs/<sitename>`
 
       ![定义 PWA 离线路径](../assets/pwa-offline.png)
-
 
 1. 点按或单击&#x200B;**保存并关闭**。
 

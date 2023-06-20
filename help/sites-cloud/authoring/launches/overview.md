@@ -2,10 +2,10 @@
 title: 启动项
 description: 通过启动项，您可以高效地为未来版本开发内容。 它们允许您进行更改，以便将来发布，同时维护当前页面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 43%
+source-wordcount: '906'
+ht-degree: 41%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 43%
    * 顶级源页面称为&#x200B;**生产**。
       * 源页面可以从多个（单独的）分支获取。
 
-   ![启动项操作顺序](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![启动项操作顺序](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * 编辑启动项配置：
    * 在启动项中添加或删除页面和/或分支。
@@ -65,22 +65,22 @@ ht-degree: 43%
       * **启动**（**起始**）**日期**&#x200B;字段：可在创建或编辑启动项时设置此字段。
       * 此 **生产就绪** 标志：此项只能在编辑启动项时设置。
       * 如果 **生产就绪** 设置标记后，启动项将自动升级到指定上的生产页面 **Launch**(**实时**) **日期**. 提升后，生产页面会自动发布。\
-         如果未设置日期，该标记将不起作用。
+        如果未设置日期，该标记将不起作用。
 * 并行更新源页面和启动页面：
    * 对源页面所做的更改会自动体现在启动副本中（如果进行了继承设置，即设置为 Live Copy）。
    * 可以在不中断这些自动更新或源页面的情况下对启动副本进行更改。
 
-   ![并行操作](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![并行操作](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [创建嵌套启动项](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch)  — 启动项中的启动项：
    * 源是一个现有的启动项。
    * 您可以 [提升嵌套启动项](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) 指向任何目标；这可以是父启动项或顶级源页面（生产）。
 
-   ![嵌套启动项](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![嵌套启动项](/help/sites-cloud/authoring/assets/launches-nested.png)
 
-   >[!CAUTION]
-   >
-   >删除启动项时，将会删除该启动项本身及其所有下级嵌套启动项。
+  >[!CAUTION]
+  >
+  >删除启动项时，将会删除该启动项本身及其所有下级嵌套启动项。
 
 >[!NOTE]
 >
@@ -108,11 +108,11 @@ ht-degree: 43%
 
 * **引用**&#x200B;边栏的&#x200B;**启动项**&#x200B;部分底部的&#x200B;**启动项控制台**（在站点控制台中导航源内容时）。
 
-   ![站点控制台中的启动项引用中的启动项控制台](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![站点控制台中的启动项引用中的启动项控制台](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * 右上方的&#x200B;**启动项**&#x200B;按钮（在站点控制台中导航启动项内容时）：
 
-   ![站点控制台中的“启动项”选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![站点控制台中的“启动项”选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * 或直接访问，例如：
-   `https://<host>:<port>/libs/launches/content/launches.html`
+  `https://<host>:<port>/libs/launches/content/launches.html`

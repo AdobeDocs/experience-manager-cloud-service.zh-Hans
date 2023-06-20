@@ -2,10 +2,10 @@
 title: 自定义代码质量规则
 description: 此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 Adobe Experience Manager Engineering 的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 100%
+source-wordcount: '3504'
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **严重性**：严重
 * **开始版本**：版本 2018.6.0
 
-从 Experience Manager 应用程序内部执行 HTTP 请求时，请务必确保配置适当的超时以避免不必要的线程消耗。 不幸的是，Java™ 的默认 HTTP 客户端 (`java.net.HttpUrlConnection`) 和常用的 Apache HTTP 组件客户端的默认行为都是永不超时，因此必须明确设置超时。 此外，作为最佳实践，这些超时不应超过 60 秒。
+从Experience Manager应用程序内部执行HTTP请求时，请务必确保配置适当的超时以避免不必要的线程消耗。 不幸的是，Java™ 的默认 HTTP 客户端 (`java.net.HttpUrlConnection`) 和常用的 Apache HTTP 组件客户端的默认行为都是永不超时，因此必须明确设置超时。 此外，作为最佳实践，这些超时不应超过 60 秒。
 
 #### 不合规的代码 {#non-compliant-code-2}
 
@@ -811,7 +811,7 @@ Cloud Service 部署中不支持反向复制，如 Experience Manager as a Cloud
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-Experience Manager 客户端库可能包含静态资源，如图像和字体。如[使用预处理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)文档中所述，在使用代理的客户端库时，这些静态资源必须包含在名为 `resources` 的子文件夹中，才能在发布实例上有效引用这些资源。
+Experience Manager 客户端库可能包含静态资源，如图像和字体。如文档中所述 [使用预处理器，](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) 在使用代理的客户端库时，这些静态资源必须包含在名为的子文件夹中 `resources` 以便在发布实例上有效引用。
 
 #### 不合规的代码 {#non-compliant-proxy-enabled}
 

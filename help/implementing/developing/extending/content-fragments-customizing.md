@@ -2,9 +2,9 @@
 title: 自定义和扩展内容片段
 description: 内容片段扩展了标准资产。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1808'
 ht-degree: 2%
 
 ---
@@ -32,13 +32,13 @@ ht-degree: 2%
 * 模型由数据类型构建。
 * 添加新变体的函数等必须相应地更新片段。
 
-   >[!NOTE]
-   >
-   >要显示/渲染内容片段，您的帐户必须具有 `read` 模型的权限。
+  >[!NOTE]
+  >
+  >要显示/渲染内容片段，您的帐户必须具有 `read` 模型的权限。
 
-   >[!CAUTION]
-   >
-   >对现有内容片段模型所做的任何更改都会影响从属片段；这可能会导致这些片段中的属性孤立。
+  >[!CAUTION]
+  >
+  >对现有内容片段模型所做的任何更改都会影响从属片段；这可能会导致这些片段中的属性孤立。
 
 ### Sites与资产的集成 {#integration-of-sites-with-assets}
 
@@ -61,15 +61,14 @@ ht-degree: 2%
 * 所有内容都存储在 `jcr:content/data` 资源的节点：
 
    * 元素数据存储在主控子节点下：
-      `jcr:content/data/master`
+     `jcr:content/data/master`
 
    * 变量存储在子节点下，该子节点带有变量的名称：例如， `jcr:content/data/myvariation`
 
    * 每个元素的数据作为具有元素名称的属性存储在相应的子节点中：例如，元素的内容 `text` 存储为属性 `text` 日期 `jcr:content/data/master`
 
 * 元数据和关联内容存储在下方 `jcr:content/metadata`
-除了标题和描述之外，它们不被视为传统元数据并存储于 
-`jcr:content`
+除了标题和描述之外，它们不被视为传统元数据并存储于 `jcr:content`
 
 #### 资源位置 {#asset-location}
 
@@ -121,7 +120,7 @@ ht-degree: 2%
 >
 >在页面上使用内容片段时，将引用它所基于的内容片段模型。
 >
->这意味着，如果在您发布页面时模型尚未发布，则会标记该模型，并将模型添加到要与页面一起发布的资源中。
+>这意味着，如果在您发布页面时尚未发布模型，则会标记此状态并将模型添加到要与页面一起发布的资源中。
 
 ### 与其他框架集成 {#integration-with-other-frameworks}
 
@@ -129,24 +128,25 @@ ht-degree: 2%
 
 * **翻译**
 
-   内容片段与完全集成 [AEM翻译工作流](/help/sites-cloud/administering/translation/overview.md). 在架构级别，这意味着：
+  内容片段与完全集成 [AEM翻译工作流](/help/sites-cloud/administering/translation/overview.md). 在架构级别，这意味着：
 
    * 内容片段的各个翻译实际上是单独的片段；例如：
 
       * 它们位于不同的语言根下；但在相关语言根下共享完全相同的相对路径：
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         对比
+        对比
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
+
    * 除了基于规则的路径之外，内容片段的不同语言版本之间没有进一步的连接；它们作为两个单独的片段处理，尽管UI提供了在语言变体之间导航的方法。
-   >[!NOTE]
-   >
-   >AEM翻译工作流程适用于 `/content`：
-   >
-   >* 由于内容片段模型驻留在 `/conf`，这些不会包含在此类翻译中。 您可以国际化UI字符串。
 
+  >[!NOTE]
+  >
+  >AEM翻译工作流程适用于 `/content`：
+  >
+  >* 由于内容片段模型驻留在 `/conf`，这些不会包含在此类翻译中。 您可以国际化UI字符串。
 
 * **元数据架构**
 
@@ -154,9 +154,9 @@ ht-degree: 2%
 
    * CFM提供了自己的特定架构：
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      如果需要，可以扩展此功能。
+     如果需要，可以扩展此功能。
 
    * 相应的架构表单与片段编辑器集成。
 
@@ -176,9 +176,9 @@ ht-degree: 2%
 
 * **内容片段** ([内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-   利用此界面，可采用抽象方式处理内容片段。
+  利用此界面，可采用抽象方式处理内容片段。
 
-   该界面为您提供了以下方法：
+  该界面为您提供了以下方法：
 
    * 管理基本数据（例如，获取名称；获取/设置标题/描述）
    * 访问元数据
@@ -189,6 +189,7 @@ ht-degree: 2%
       * 创建新元素(请参阅 [注意事项](#caveats))
 
       * 访问元素数据(请参阅 `ContentElement`)
+
    * 为片段定义的列表变量
    * 全局创建新变体
    * 管理关联内容：
@@ -196,9 +197,10 @@ ht-degree: 2%
       * 列出收藏集
       * 添加收藏集
       * 删除收藏集
+
    * 访问片段的模型
 
-   表示片段的主要元素的界面包括：
+  表示片段的主要元素的界面包括：
 
    * **内容元素** ([内容元素](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -211,24 +213,20 @@ ht-degree: 2%
          * 创建新变体(请参阅 [注意事项](#caveats))
          * 删除变体(请参阅 [注意事项](#caveats))
          * 访问变量数据(请参阅 `ContentVariation`)
+
       * 解析变体的快捷方式（如果指定的变体不适用于元素，则应用一些其他特定于实施的回退逻辑）
+
    * **内容变体** ([Contentvariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 获取基本数据（名称、标题、描述）
       * 获取/设置内容
       * 基于上次修改信息的简单同步
 
-   所有三个接口( `ContentFragment`， `ContentElement`， `ContentVariation`)扩展 `Versionable` 界面，添加了内容片段所需的版本控制功能：
+  所有三个接口( `ContentFragment`， `ContentElement`， `ContentVariation`)扩展 `Versionable` 界面，添加了内容片段所需的版本控制功能：
 
    * 创建新版本的元素
    * 列出元素的版本
    * 获取版本化元素的特定版本的内容
-
-
-
-
-
-
 
 ### 适应 — 使用adaptTo() {#adapting-using-adaptto}
 
@@ -258,7 +256,7 @@ ht-degree: 2%
 
 * 可能需要额外工作的任务：
 
-   * 强烈建议从以下位置创建新变体： `ContentFragment`. 这可确保所有元素都将共享此变体，并根据需要更新相应的全局数据结构，以反映内容结构中新创建的变体。
+   * 强烈建议从以下位置创建新变体： `ContentFragment`. 这可确保所有元素都共享此变体，并确保根据需要更新相应的全局数据结构，以反映内容结构中新创建的变体。
 
    * 通过元素删除现有变体，使用 `ContentElement.removeVariation()`，将不会更新分配给变体的全局数据结构。 要确保这些数据结构保持同步，请使用 `ContentFragment.removeVariation()` 而是全局删除变体。
 
@@ -274,7 +272,7 @@ ht-degree: 2%
 
 * `filter.xml`
 
-   此 `filter.xml` 用于内容片段管理的配置为不与Assets核心内容包重叠。
+  此 `filter.xml` 用于内容片段管理的配置为不与Assets核心内容包重叠。
 
 ## 编辑会话 {#edit-sessions}
 

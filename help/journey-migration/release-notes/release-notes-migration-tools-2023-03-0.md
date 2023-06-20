@@ -2,10 +2,10 @@
 title: AEMas a Cloud Service2023.03.0版中迁移工具的发行说明
 description: AEMas a Cloud Service2022.03.0版中迁移工具的发行说明
 feature: Release Information
-source-git-commit: 70061cb1bbaab486f719541e919acb9e462d741c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 9%
+source-wordcount: '320'
+ht-degree: 10%
 
 ---
 
@@ -36,7 +36,7 @@ Best Practices Analyzer v2.1.40 的发布日期是 2023 年 3 月 03 日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 用户映射已得到简化并集成到内容提取步骤中。 无需进行设置，默认情况下，用户将在用户启动内容提取时自动完成用户映射。 如果需要，用户可以选择禁用用户映射。 了解详情 [此处。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
+* 用户映射已得到简化并集成到内容提取步骤中。 无需进行设置，默认情况下，用户会在启动内容提取时自动完成用户映射。 如果需要，用户可以选择禁用用户映射。 了解详情 [此处。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.html?lang=en#user-mapping-detail)
 * 预复制步骤，使用 [Azcopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 已与内容传输工具集成，以显着加快内容提取。 在安装此版本的CTT时，会自动配置和安装预复制。 默认情况下，在启动提取时，将对大于200 GB的迁移集自动运行预复制。 如果需要，用户可以选择禁用它。 了解详情 [此处。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)
 * CTT现在可以在Windows服务器上使用。
 

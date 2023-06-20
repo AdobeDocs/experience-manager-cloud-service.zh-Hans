@@ -2,9 +2,9 @@
 title: 扩展 [!DNL Adobe Experience Manager] 使用Adobe Developer App Builderas a Cloud Service。
 description: 扩展 [!DNL Adobe Experience Manager] 使用Adobe Developer App Builderas a Cloud Service。
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ App Builder提供了一个统一的第三方可扩展性框架，用于集成和
 
 App Builder为客户提供了一种方法，可用于在各种用例中轻松扩展Adobe Experience Manager：
 
-* 中间件可扩展性 — 将外部系统与Adobe应用程序连接起来，以构建自定义连接器，或利用一套预先构建的集成。
+* 中间件可扩展性 — 将外部系统与Adobe应用程序连接起来，以构建自定义连接器，或使用预建的集成套件。
 * 核心服务可扩展性 — 通过自定义功能和业务逻辑扩展默认行为，扩展核心应用程序功能。
 * 用户体验可扩展性 — 扩展核心体验以支持业务要求或构建特定于客户的数字资产、店面和后台应用程序。
 
@@ -27,7 +27,7 @@ App Builder为客户提供了一种方法，可用于在各种用例中轻松扩
 
 >[!NOTE]
 >
-> 对于希望使用App Builder的AEM 6.5客户，请访问 [使用Adobe Developer App Builder扩展Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> 对于希望使用App Builder的AEM 6.5客户，请参阅 [使用Adobe Developer App Builder扩展Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## 架构 {#architecture}
 
@@ -38,7 +38,7 @@ Adobe Developer App Builder不是开箱即用的解决方案，而是提供通�
 * 服务 — 用于在我们的无服务器平台上托管基础架构的I/O运行时，以及用于基于事件的集成的I/O事件。 我们还为存储数据和文件提供开箱即用支持。
 * Adobe Experience Cloud — 开发人员可以提交要在其Experience Cloud组织中发布的扩展和集成。然后，系统管理员可以审核、管理和批准这些扩展。 发布后，您的自定义App Builder扩展和工具可以与其他Adobe Experience Cloud应用程序一起找到。
 
-下图说明了基于App Builder构建的标准应用程序如何利用这些功能：
+下图说明了基于App Builder构建的标准应用程序如何使用这些功能：
 
 ![架构](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 

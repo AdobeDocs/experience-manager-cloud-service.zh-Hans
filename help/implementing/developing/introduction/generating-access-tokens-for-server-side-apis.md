@@ -2,9 +2,9 @@
 title: 为服务器端 API 生成访问令牌
 description: 了解如何通过生成安全JWT令牌来促进第三方服务器和AEMas a Cloud Service之间的通信
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2123'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 有权访问AEMas a Cloud Service开发人员控制台的用户将在开发人员控制台中看到给定环境的集成选项卡。 具有AEMas a Cloud Service环境管理员角色的用户可以创建、查看或管理凭据。
 
-单击 **创建新的技术帐户** 按钮时，将创建一组新的凭据，其中包含客户端id、客户端密钥、私钥、证书以及环境的创作层和发布层的配置，而不考虑面板选择。
+单击 **创建新的技术帐户** 按钮，将创建一组新凭据，其中包含客户端id、客户端密钥、私钥、证书以及环境的创作层和发布层的配置，而不考虑面板选择。
 
 ![创建新的技术帐户](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ### 生成JWT令牌并将其交换为访问令牌 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-在对Adobe的IMS服务的调用中使用凭据创建JWT令牌，以检索有效期为24小时的访问令牌。
+在调用Adobe的IMS服务时，使用这些凭据创建JWT令牌以检索访问令牌，该令牌的有效期限为24小时。
 
 可以使用为此目的而设计的客户端库将AEM CS服务凭据交换为访问令牌。 客户端库可从以下位置获得： [Adobe的公共GitHub存储库](https://github.com/adobe/aemcs-api-client-lib)，其中包含更详细的指导和最新信息。
 
@@ -162,7 +162,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 <u>**设置适当的组权限**</u>
 
-最后，使用所需的相应权限配置组，以适当调用或锁定API。 您可以通过以下方式执行此操作：
+最后，使用调用或适当锁定API所需的相应权限配置组。 您可以通过以下方式执行此操作：
 
 1. 登录到相应的创作实例并转到 **设置** - **安全性** - **权限**
 1. 在左窗格中搜索与产品配置文件对应的组的名称（在本例中为“只读API”），然后单击该组：
@@ -217,7 +217,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 * 使用 **添加证书** 按钮位于 **集成** - **技术帐户** 在开发人员控制台中，如下所示
 
-   ![凭据刷新](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+  ![凭据刷新](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
 * 按下按钮后，将生成一组包含新证书的凭据。 在off-AEM服务器上安装新凭据，并确保在不删除旧凭据的情况下按预期进行连接 
 * 在生成访问令牌时，请确保使用新凭据而不是旧凭据
@@ -229,7 +229,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 可执行以下步骤来做到这一点：
 
-1. 首先，添加新键。 这将生成包含新私钥和新证书的凭据。 新的私钥将在UI中标记为 **当前** 因此，今后将用于此技术帐户的所有新凭据。 请注意，与旧版私钥关联的凭据在撤消之前仍然有效。 要实现此目的，请按三个圆点(**...**)，然后按键 **添加新私钥**：
+1. 首先，添加新键。 此密钥生成包含新私钥和新证书的凭据。 新的私钥在UI中标记为 **当前** 因此，今后将用于此技术帐户的所有新凭据。 请注意，与旧版私钥关联的凭据在撤消之前仍然有效。 要实现此目的，请按三个圆点(**...**)，然后按键 **添加新私钥**：
 
    ![添加新私钥](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -237,7 +237,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![确认添加新私钥](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   将打开一个包含新密钥的新浏览选项卡，并更新UI以显示两个私钥，其中新密钥标记为 **当前**：
+   此时将打开一个包含新凭据的新浏览选项卡，并更新用户界面以显示两个私钥，其中新私钥标记为 **当前**：
 
    ![UI中的私钥](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

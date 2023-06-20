@@ -1,10 +1,10 @@
 ---
 title: AEM 标记框架
-description: 标记内容并利用AEM标记基础架构对其进行分类和整理。
+description: 标记内容，并使用AEM标记基础架构对其进行分类和整理。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 * 参见 [使用标记](/help/sites-cloud/authoring/features/tags.md) 有关将内容标记为内容作者的信息。
 * 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅管理标记，这是管理员的视角。
 
-本文重点介绍支持AEM中标记的基础框架以及如何作为开发人员利用它。
+本文重点介绍支持AEM中标记的基础框架以及如何作为开发人员使用它。
 
 ## 简介 {#introduction}
 
-要标记内容并利用AEM标记基础架构，请执行以下操作：
+要标记内容并使用AEM标记基础结构，请执行以下操作：
 
 * 标记必须作为类型的节点存在 [`cq:Tag`](#cq-tag-node-type) 在 [分类根节点。](#taxonomy-root-node)
 * 标记的内容节点的 `NodeType` 必须包括 [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin。
@@ -128,7 +128,6 @@ A `TagID` 标识解析为存储库中标记节点的路径。
 >* 页面(`cq:Page`)，其中 `jcr:content`节点属于类型 `cq:PageContent`，其中包括 `cq:Taggable` mixin。
 >* 资产(`cq:Asset`)，其中 `jcr:content/metadata` 节点始终具有 `cq:Taggable` mixin。
 
-
 ### 节点类型表示法(CND) {#node-type-notation-cnd}
 
 节点类型定义作为CND文件存在于存储库中。 CND表示法被定义为 [JCR文档。](https://jackrabbit.apache.org/node-type-notation.html).
@@ -156,7 +155,7 @@ AEM中包含的节点类型的基本定义如下：
 
 >[!NOTE]
 >
->要利用AEM标记功能，自定义开发的应用程序不应定义以外的标记属性 `cq:tags`.
+>要使用AEM标记功能，自定义开发的应用程序不应定义以外的标记属性 `cq:tags`.
 
 ## 移动和合并标记 {#moving-and-merging-tags}
 
@@ -171,25 +170,22 @@ AEM中包含的节点类型的基本定义如下：
    * 标记A因此而隐藏，并且仅保留在存储库中以解决指向标记A的内容节点中的标记ID。
    * 标记垃圾收集器会删除标记A等标记，内容节点不再指向这些标记。
    * 的特殊值 `cq:movedTo` 属性为 `nirvana`，此变量在删除标记时应用，但无法从存储库中删除，因为存在带有标记的子标记 `cq:movedTo` 必须保留下来。
-
-      >[!NOTE]
-      >
-      >此 `cq:movedTo` 仅当满足以下任一条件时，属性才会添加到已移动或已合并的标记中：
-      >
-      > 1. 标记在内容中使用（这意味着它包含引用）。 或
-      > 1. 标记具有已移动的子项。
-
+     >[!NOTE]
+     >
+     >此 `cq:movedTo` 仅当满足以下任一条件时，属性才会添加到已移动或已合并的标记中：
+     >
+     > 1. 标记在内容中使用（这意味着它包含引用）。 或
+     > 1. 标记具有已移动的子项。
+     >
 * 创建标记B（如果移动）并接收 `cq:backlinks` 属性。
    * `cq:backlinks` 保持对另一方向的引用，即保留已移动到标记B或与标记B合并的所有标记的列表。
    * 这通常需要保留 `cq:movedTo` 属性是标记B移动/合并/删除或标记B激活时的最新属性，在这种情况下，还必须激活其所有反向链接标记。
-
-      >[!NOTE]
-      >
-      >此 `cq:backlinks` 仅当满足以下任一条件时，属性才会添加到已移动或已合并的标记中：
-      >
-      > 1. 标记在内容中使用（这意味着它包含引用）。 或
-      > 1. 标记具有已移动的子项。
-
+     >[!NOTE]
+     >
+     >此 `cq:backlinks` 仅当满足以下任一条件时，属性才会添加到已移动或已合并的标记中：
+     >
+     > 1. 标记在内容中使用（这意味着它包含引用）。 或
+     > 1. 标记具有已移动的子项。
 
 阅读 `cq:tags` 内容节点的属性涉及以下分辨率：
 

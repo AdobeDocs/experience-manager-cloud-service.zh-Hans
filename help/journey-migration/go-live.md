@@ -2,9 +2,9 @@
 title: 上线
 description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1720'
 ht-degree: 4%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 4%
 * 我需要将内容创作活动冻结多长时间？
 * 我应要求投放团队停止添加新功能多长时间？
 
-要回答第一个问题，您应该考虑在非生产环境中执行试运行所用的时间。 要回答第二个问题，您需要在添加新功能的团队和重构代码的团队之间进行密切合作。 目标应当是确保添加到现有部署的所有代码均已添加、测试和部署到云服务分支。 一般而言，这意味着代码冻结量会较低。
+要回答第一个问题，您应该考虑在非生产环境中执行试运行所用的时间。 要回答第二个问题，您需要在添加新功能的团队和重构代码的团队之间进行密切合作。 目标是确保添加到现有部署的所有代码均已添加、测试和部署到云服务分支。 通常，这意味着代码冻结量较低。
 
 此外，您需要在计划最终内容增补时计划内容冻结。
 
@@ -86,7 +86,7 @@ ht-degree: 4%
 
 **在执行内容迁移时优化AEM源上的负载**
 
-请记住，在提取阶段，AEM源上的负载将更大。 您应该了解：
+请记住，在提取阶段，AEM源上的负载较大。 您应该了解：
 
 * 内容传输工具是一个外部Java进程，它使用4 GB的JVM栈
 * 非AzCopy版本下载二进制文件，将它们存储在源AEM作者上的临时空间中，占用磁盘I/O，然后上载到占用网络带宽的Azure容器中
@@ -109,7 +109,7 @@ ht-degree: 4%
 * 缺少原始演绎版的任何资源
 * 任何缺少的文件夹 `jcr:content` 节点。
 
-以上两项均将于以下文件中识别及报告： [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 报告。
+上述两项均于2014年12月31日识别及呈报于 [Best Practice Analyzer](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) 报告。
 
 ## 上线清单 {#Go-Live-Checklist}
 

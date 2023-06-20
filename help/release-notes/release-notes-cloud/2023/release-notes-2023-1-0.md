@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.1.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.1.0 版的发行说明。'
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ ht-degree: 100%
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* 现在利用资产报告，管理员可以从 Experience Manager Assets as a Cloud Service 部署中[生成资产下载报告](/help/assets/asset-reports.md)。此数据进一步支持管理员从关键成功量度获得见解，以便衡量在您的企业内和客户采用资产的情况。
+* 现在利用资产报告，管理员可以从 Experience Manager Assets as a Cloud Service 部署中[生成资产下载报告](/help/assets/asset-reports.md)。此数据使管理员能够进一步从关键成功指标中获得见解，以衡量在您的企业内和客户采用资源的情况。
 
-   ![其他格式的 PDF 演绎版](/help/release-notes/assets/choose_report.png)
+  ![其他格式的 PDF 演绎版](/help/release-notes/assets/choose_report.png)
 
 * 除了用于身份验证的访问密钥外，Experience Manager Assets 现在还[支持 SAS 令牌](/help/assets/add-assets.md#asset-bulk-ingestor)，同时还连接到 Azure Blob 存储数据源，从而使用“批量导入”工具摄取资产。
 
@@ -82,17 +82,17 @@ ht-degree: 100%
 
 * [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md) - RDE 使开发人员能够快速解决问题并在 AEM as a Cloud Service 上部署新功能。
 
-   快速开发环境是一种新型云环境，旨在提供快速、一致且可扩展的方式以验证在本地正常工作的代码在云中也可发挥预期的作用。可使用命令行工具快速地将包、捆绑、内容文件、OSGI 配置或 Dispatcher 配置同步到 RDE。观看以下视频，了解实际操作：
+  快速开发环境是一种新型云环境，旨在提供快速、一致且可扩展的方式以验证在本地正常工作的代码在云中也可发挥预期的作用。可使用命令行工具快速地将包、捆绑、内容文件、OSGI 配置或 Dispatcher 配置同步到 RDE。观看以下视频，了解实际操作：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   在 RDE 中成功验证代码后，鼓励部署到云开发环境以执行 Cloud Manager 质量门，然后再通过生产管道部署到暂存环境和生产环境。
+  在 RDE 中成功验证代码后，鼓励部署到云开发环境以执行 Cloud Manager 质量门，然后再通过生产管道部署到暂存环境和生产环境。
 
-   每个程序均包含一个 RDE，并且可以选择许可更多 RDE。
+  每个程序均包含一个 RDE，并且可以选择许可更多 RDE。
 
-   >[!NOTE]
-   >
-   >在接下来的几周内，将逐步推出 RDE；您可以将电子邮件发送到 aemcs-rde-support@adobe.com 来排在队伍前面。
+  >[!NOTE]
+  >
+  >在接下来的几周内，将逐步推出 RDE；您可以将电子邮件发送到 aemcs-rde-support@adobe.com 来排在队伍前面。
 
 * [对服务器端 API 访问令牌的扩展支持](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) - 您现在可以生成多个凭据，这在 API 具有不同特征的场景中很有用。现在还可以通过自助服务方式来撤销凭据。
 

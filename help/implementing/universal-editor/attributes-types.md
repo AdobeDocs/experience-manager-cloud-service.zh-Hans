@@ -2,10 +2,10 @@
 title: 属性和类型
 description: 了解 Universal Editor 所需的数据属性和类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 100%
+source-wordcount: '659'
+ht-degree: 84%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 100%
 | `itemprop` | 资源的属性，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
 | `itemtype` | 可编辑项目的类型（例如文本、图像、参考等） |
 | `data-editor-itemfilter` | 定义可以使用哪些参考 |
-| `data-editor-itemlabel` | 为编辑器中显示的可选项目定义自定义标签<br>如果设置了 `itemmodel`，则将通过模型检索标签 |
-| `data-editor-itemmodel` | 定义一个模型，该模型将用于属性边栏中基于表单的编辑 |
+| `data-editor-itemlabel` | 为编辑器中显示的可选项目定义自定义标签 <br>以防万一 `itemmodel` 设置，则通过模型检索标签 |
+| `data-editor-itemmodel` | 定义用于在属性边栏中进行基于表单的编辑的模型 |
 | `data-editor-behavior` | 定义检测的行为，例如独立的文本或图像也可以模仿一个组件，以使其可移动或可删除 |
 
 ## 项目类型 {#item-types}
@@ -38,10 +38,10 @@ ht-degree: 100%
 | `itemtype` | 描述 | `itemid` | `itemprop` | `data-editor-itemfilter` | `data-editor-itemlabel` | `data-editor-itemmodel` | `data-editor-behvior` |
 |---|---|---|---|---|---|---|---|
 | `text` | 文本在 HTML 标记内是可编辑的，但只能采用简单的文本格式，没有可用的富文本格式，例如，这通常用于标题组件 | 可选 | 必填 | 不适用 | 可选 | 不适用 | 可选 |
-| `richtext` | 文本是可编辑的，具有完整的富文本功能。RTE 将显示在右面板中 | 可选 | 必填 | 不适用 | 可选 | 不适用 | 可选 |
+| `richtext` | 文本是可编辑的，具有完整的富文本功能。RTE显示在右侧面板中 | 可选 | 必填 | 不适用 | 可选 | 不适用 | 可选 |
 | `media` | 可编辑是一种资产，例如图像或视频 | 可选 | 必填 | 可选<br>传递到资产选择器的图像或视频筛选条件列表 | 可选 | 不适用 | 可选 |
 | `container` | 可编辑的行为与组件的容器（也就是段落系统）的行为类似。 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>允许的组件列表 | 可选 | 不适用 | 不适用 |
-| `component` | 可编辑项是一个组件。不添加额外的功能，将需要指示 DOM 的可移动/可删除部分，用于打开属性边栏及其字段 | 必填 | 不适用 | 不适用 | 可选 | 可选 | 不适用 |
+| `component` | 可编辑项是一个组件。不添加其他功能，需要指示DOM的可移动/可删除部分以及打开属性边栏及其字段 | 必填 | 不适用 | 不适用 | 可选 | 可选 | 不适用 |
 | `reference` | 可编辑项是一个参考，例如内容片段、体验片段或产品 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>传递到参考选择器的内容片段、产品或体验片段筛选条件列表 | 可选 | 可选 | 不适用 |
 
 根据使用案例，可能需要也可能不需要 `itemprop` 或 `itemid`。例如：
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
-* [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
+* [通用编辑器简介](introduction.md)  — 了解通用编辑器如何支持编辑任何实施中任何内容的任何方面，以便您能够提供卓越的体验、提高内容速度并提供一流的开发人员体验。
 * [使用 Universal Editor 创作内容](authoring.md) – 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 * [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [AEM Universal Editor 快速入门 ](getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。

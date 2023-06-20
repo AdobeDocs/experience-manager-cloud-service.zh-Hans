@@ -3,10 +3,10 @@ title: 管理工作流实例
 description: 了解如何管理工作流实例
 feature: Administering
 role: Admin
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
-workflow-type: ht
-source-wordcount: '1281'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1279'
+ht-degree: 98%
 
 ---
 
@@ -189,7 +189,7 @@ ht-degree: 100%
 
 在工作流模型级别，提供了一个标志来指示模型（及其运行时实例）具有元数据的外部存储。对于为外部存储标记的模型的工作流实例，工作流变量将不会保留在 JCR 中。
 
-属性 *userMetadataPersistenceEnabled* 将存储在工作流模型的 *jcr:content 节点*&#x200B;上。此标志将作为 *cq:userMetaDataCustomPersistenceEnabled* 保留在工作流元数据中。
+属性 *userMetadataPersistenceEnabled* 存储在 *jcr：content节点* 工作流模型的。 此标记在工作流元数据中保留为 *cq：userMetaDataCustomPersistenceEnabled*.
 
 下图表明必须在工作流上设置标志。
 

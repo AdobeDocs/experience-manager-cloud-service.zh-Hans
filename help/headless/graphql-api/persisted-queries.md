@@ -3,10 +3,10 @@ title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1681'
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 100%
 
 例如，如果存在名为 `my-query` 的特定查询，使用来自站点配置 `my-conf` 的模型 `my-model`：
 
-* 您可以使用 `my-conf` 特定的端点创建查询，然后查询将保存如下：
+* 您可以使用创建查询 `my-conf` 特定的端点，然后查询将保存如下：
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* 您可以使用 `global` 端点创建相同的查询，但然后查询将保存如下：
+* 您可以使用创建相同的查询 `global` 终结点，但随后查询将保存如下：
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -389,10 +389,10 @@ curl -u admin:admin -X POST \
 字段 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) 可以根据需要定义：
 
 * `false`（默认值）：
-持久化查询成功与否无关紧要。`/execute.json/persisted-query` 会返回状态码 `200`，返回的 `Content-Type` 标题为 `application/json`。
+持久化查询成功与否无关紧要。此 `/execute.json/persisted-query` 返回状态代码 `200` 和 `Content-Type` 返回的标头是 `application/json`.
 
 * `true`：
-当运行持久化查询时出现任何形式的错误时，端点将返回 `400` 或 `500`（视情况而定）。此外，返回的 `Content-Type` 将为 `application/graphql-response+json`。
+当运行持久化查询时出现任何形式的错误时，端点将返回 `400` 或 `500`（视情况而定）。另外，返回的 `Content-Type` 是 `application/graphql-response+json`.
 
   >[!NOTE]
   >
@@ -442,7 +442,7 @@ URL 可以划分为以下部分：
 1. 点击&#x200B;**创建包**&#x200B;创建一个新包。 这将打开一个用于定义资源包的对话框。
 1. 在包定义对话框中，在&#x200B;**常规**&#x200B;下输入&#x200B;**名称**，如“wknd-persistent-queries”。
 1. 输入版本号，如“1.0”。
-1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。 使用路径查找器选择 `persistentQueries` 文件夹。 例如，`wknd` 的配置完整路径将为 `/conf/wknd/settings/graphql/persistentQueries`。
+1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。 使用路径查找器选择 `persistentQueries` 文件夹。 例如，对于 `wknd` 配置，完整路径为 `/conf/wknd/settings/graphql/persistentQueries`.
 1. 点击&#x200B;**保存**&#x200B;以保存新的包定义并关闭对话框。
 1. 在新创建的包定义中点击&#x200B;**生成**&#x200B;按钮。
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 100%
+source-wordcount: '1166'
+ht-degree: 96%
 
 ---
 
@@ -61,7 +61,7 @@ AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM �
 >
 >如果您选择使用 Microsoft Translator 连接器进行测试，则无需执行以下两个部分中的步骤：[创建翻译集成配置](#create-config)和[将配置与您的内容关联。](#associate)但建议您阅读这两个部分，以便熟悉需要配置首选连接器时要执行的步骤。
 >
->Microsoft Translator 连接器的试用许可证不用于生产目的，如果您决定对其进行许可，系统管理员必须执行本文档末尾的[其他资源](#additional-resources)部分中详述的步骤来配置该许可证。
+>Microsoft Translator连接器的试用许可证不用于生产目的，如果您决定对其进行许可，系统管理员必须执行 [其他资源](#additional-resources) 部分，以配置该许可证。
 
 ## 创建翻译集成配置 {#create-config}
 

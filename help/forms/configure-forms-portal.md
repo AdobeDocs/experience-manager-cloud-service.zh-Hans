@@ -2,9 +2,9 @@
 title: 如何在Experience Manager Sites页面上创建Forms门户
 description: 了解如何在AEM Sites页面上创建Forms门户以及使用现成的核心组件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1762'
 ht-degree: 1%
 
 ---

@@ -2,10 +2,10 @@
 title: 管理 SSL 证书简介
 description: 了解 Cloud Manager 如何为您提供自助服务工具来安装 SSL 证书。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 79%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
 >title="管理 SSL 证书"
->abstract="了解 Cloud Manager 如何为您提供自助服务工具来安装和管理 SSL 证书，以便为用户保护您的站点。Cloud Manager 使用平台 TLS 服务来管理客户拥有并从第三方认证机构获得的 SSL 证书和私钥。"
+>abstract="了解Cloud Manager如何为您提供自助服务工具来安装和管理SSL证书，以便为用户保护您的站点。 Cloud Manager 使用平台 TLS 服务来管理客户拥有并从第三方认证机构获得的 SSL 证书和私钥。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="查看、更新和替换 SSL 证书"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html" text="检查 SSL 证书的状态"
 
-Cloud Manager 为您提供自助服务工具来安装和管理 SSL 证书，以便为用户保护您的站点。 Cloud Manager 使用平台 TLS 服务来管理客户拥有并从第三方认证机构（如 Let&#39;s Encrypt）获得的 SSL 证书和私钥。
+Cloud Manager为您提供自助服务工具来安装和管理SSL证书，以便您能够为用户保护您的站点。 Cloud Manager使用平台TLS服务来管理客户拥有并从第三方认证机构（如Let’s Encrypt）获得的SSL证书和私钥。
 
 ## 证书简介 {#certificates}
 
-企业使用 SSL 证书来保护其网站，并允许客户信任这些证书。 为了使用 SSL 协议，Web 服务器需要使用 SSL 证书。
+企业使用 SSL 证书来保护其网站，并允许客户信任这些证书。 要使用SSL协议，Web服务器需要使用SSL证书。
 
-当实体从证书颁发机构 (CA) 请求证书时，CA 完成验证过程。 这可以从验证域名控制到收集公司注册文件和订阅者协议。 一旦实体的信息得到验证，CA 将使用 CA 的私钥对其公钥进行签名。 因为所有主要的证书颁发机构都在 Web 浏览器中有根证书，实体的证书将通过&#x200B;*信任链*&#x200B;链接，并且 Web 浏览器会将其识别为可信证书。
+当实体从证书颁发机构 (CA) 请求证书时，CA 完成验证过程。 这可以从验证域名控制到收集公司注册文件和订阅者协议。 一旦实体的信息得到验证，CA 将使用 CA 的私钥对其公钥进行签名。 由于所有主要的证书颁发机构在Web浏览器中都拥有根证书，因此实体的证书通过 *信任链* 并且Web浏览器会将其识别为可信证书。
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ Cloud Manager 支持以下客户 SSL 证书使用选项。
 AEM as a Cloud Service 仅支持安全`https`站点。
 
 * 具有多个自定义域的客户不希望每次添加域时都得上载证书。
-* 这样的客户将受益于获得一个具有多个域的证书。
+* 此类客户将因获得一个具有多个域的证书而受益。
 
 ## 要求 {#requirements}
 

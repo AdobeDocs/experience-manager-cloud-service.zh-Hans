@@ -2,10 +2,10 @@
 title: 为 Headless 内容配置翻译规则
 description: 了解如何定义翻译规则，标识要翻译的内容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,6 @@ ht-degree: 100%
 >* **可翻译**&#x200B;标志用于自动为您创建翻译规则，而无需干预。
 >* **可翻译**&#x200B;标志仅在翻译集成框架配置设置为&#x200B;**[为翻译启用内容模型字段](/help/sites-cloud/administering/translation/integration-framework.md)**&#x200B;时使用。
 >* 在 TIF 配置中启用此选项将取代任何手动创建的翻译规则。|
-
 
 ## 目标 {#objective}
 
@@ -77,7 +76,7 @@ ht-degree: 100%
 1. AEM 将保存配置。
 1. 您必须选择刚创建的上下文，然后点按或单击&#x200B;**编辑**。这将打开&#x200B;**翻译规则编辑器**以配置属性。
    ![翻译规则编辑器](assets/translation-rules-editor.png)
-1. 默认情况下，所有配置都继承自父路径，在此示例中为 `/content/dam`。取消选中选项&#x200B;**继承自`/content/dam`**&#x200B;以便向配置添加其他字段。
+1. 默认情况下，所有配置都继承自父路径，在此示例中为 `/content/dam`。取消选中选项 **继承自`/content/dam`** 以便向配置中添加其他字段。
 1. 取消选中后，在列表的&#x200B;**常规**&#x200B;部分下，添加您[之前标识为翻译字段](getting-started.md#content-models)的内容片段模型的属性名称。
    1. 在&#x200B;**新属性**&#x200B;字段中输入属性名称。
    1. 这将自动选中&#x200B;**翻译**&#x200B;和&#x200B;**继承**&#x200B;选项。

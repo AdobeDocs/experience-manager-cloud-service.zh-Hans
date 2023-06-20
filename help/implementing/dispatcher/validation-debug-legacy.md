@@ -4,9 +4,9 @@ description: 使用Dispatcher工具进行验证和调试（旧版）
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 1%
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-您可以拥有一个或多个这些文件。 它们包含 `<VirtualHost>` 条目匹配主机名，并允许Apache使用不同的规则处理每个域流量。 文件创建于 `available_vhosts` 目录，并通过中的符号链接启用 `enabled_vhosts` 目录。 从 `.vhost` 文件、重写和变量等其他文件将包括在内。
+您可以拥有一个或多个这些文件。 它们包含 `<VirtualHost>` 条目匹配主机名，并允许Apache使用不同的规则处理每个域流量。 文件创建于 `available_vhosts` 目录，并通过中的符号链接启用 `enabled_vhosts` 目录。 从 `.vhost` 文件、重写和变量等其他文件包括在内。
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-您可以有一个或多个这些文件，它们包含与主机名匹配的场，并允许Dispatcher模块使用不同的规则处理每个场。 文件创建于 `available_farms` 目录，并通过中的符号链接启用 `enabled_farms` 目录。 从 `.farm` 文件、过滤器、缓存规则等文件和其他文件将包括在内。
+您可以有一个或多个这些文件，它们包含与主机名匹配的场，并允许Dispatcher模块使用不同的规则处理每个场。 文件创建于 `available_farms` 目录，并通过中的符号链接启用 `enabled_farms` 目录。 从 `.farm` 文件、过滤器、缓存规则等其他文件也包括在内。
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 这些文件是基本框架的一部分，并强制执行标准和最佳实践。 这些文件被视为不可变，因为在本地修改或删除它们将不会对您的部署产生影响，因为它们将不会传输到您的云实例。
 
-建议上述文件引用下面列出的不可变文件，然后引用任何其他语句或覆盖。 将Dispatcher配置部署到云环境时，将使用不可变文件的最新版本，无论本地开发中使用了什么版本。
+建议上述文件引用下面列出的不可变文件，然后引用任何其他语句或覆盖。 将Dispatcher配置部署到云环境时，无论在本地开发中使用了什么版本，都会使用不可变文件的最新版本。
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -218,10 +218,10 @@ Phase 3 finished
 该脚本执行以下操作：
 
 1. 它运行验证器。 如果配置无效，脚本将失败。
-2. 它会执行 `httpd -t` 用于测试语法是否正确以使apache httpd可以启动的命令。 如果成功，配置应准备好进行部署。
+2. 它运行 `httpd -t` 用于测试语法是否正确以使apache httpd可以启动的命令。 如果成功，配置应准备好进行部署。
 3. 检查Dispatcher SDK配置文件的子集，该文件旨在不可变，如 [文件结构部分](##legacy-mode-file-structure)尚未修改。 这是随AEM SDK版本v2021.1.4738引入的新检查，其中还包含Dispatcher工具版本2.0.36。在此更新之前，客户可能错误地认为这些不可变文件的任何本地SDK修改也将应用于云环境。
 
-在Cloud Manager部署期间， `httpd -t` 语法检查也将执行，所有错误都将包含在Cloud Manager中 `Build Images step failure` 日志。
+在Cloud Manager部署期间， `httpd -t` 语法检查也会运行，所有错误都包含在Cloud Manager中 `Build Images step failure` 日志。
 
 ### 阶段1 {#first-phase}
 
@@ -355,7 +355,7 @@ Cloud manager validator 2.0.xx
 
 此阶段也可以独立运行 `validator full -d out src/dispatcher`，生成下一个命令所需的out目录 `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
-在Cloud Manager部署期间， `httpd -t` 语法检查也将执行，所有错误都将包含在Cloud Manager构建图像步骤失败日志中。
+在Cloud Manager部署期间， `httpd -t` 语法检查将运行，所有错误都包含在Cloud Manager构建图像步骤失败日志中。
 
 ### 阶段3 {#third-phase}
 

@@ -2,9 +2,9 @@
 title: 为查询生成器实施自定义谓词计算器
 description: AEM中的Query Builder提供了一种简单、可自定义的方法来查询内容存储库
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 0%
 >
 >* [在GitHub上打开aem-search-custom-predicate-evaluator项目](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* 将项目下载为 [ZIP文件](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
-
 
 >[!NOTE]
 >
@@ -106,7 +105,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->范围 `cq-search` 依赖关系设置为 `provided` 因为 `cq-search` 将由 `OSGi` 容器。
+>范围 `cq-search` 依赖关系设置为 `provided` 因为 `cq-search` 由 `OSGi` 容器。
 
 以下代码片段显示了 `pom.xml` 文件，在 [统一差异格式](https://en.wikipedia.org/wiki/Diff#Unified_format)
 

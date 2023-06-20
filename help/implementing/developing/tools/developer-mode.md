@@ -4,9 +4,9 @@ seo-title: Developer Mode
 description: 开发人员模式会打开一个侧面板，其中包含多个选项卡，这些选项卡向开发人员提供有关当前页面的信息
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 1%
 >* 在移动设备或桌面上的小窗口中不可用（由于空间限制）。
 >  * 当宽度小于1024像素时，会出现此情况。
 >* 仅适用于作为会员的用户 `administrators` 组。
-
 
 ## 打开开发人员模式 {#opening-developer-mode}
 
@@ -73,7 +72,7 @@ ht-degree: 1%
    * 用于呈现组件的所有组件脚本。
    * 此特定组件的存储库内容路径。
 
-      ![查看详细信息](assets/developer-mode-view-details.png)
+     ![查看详细信息](assets/developer-mode-view-details.png)
 
 * **编辑脚本：** 在CRXDE Lite中打开组件脚本的链接。
 

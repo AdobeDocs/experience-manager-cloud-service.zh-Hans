@@ -4,10 +4,10 @@ description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 100%
+source-wordcount: '1429'
+ht-degree: 95%
 
 ---
 
@@ -29,8 +29,8 @@ MSM 是用于自动化内容部署的可配置框架。实施通常涉及网站�
 
 使用 Blueprint 配置的额外好处是：
 
-* 允许作者对 Blueprint 使用&#x200B;**转出**&#x200B;信息，以便显式地将修改推送到从该 Blueprint 继承的 Live Copy。
-* 允许作者使用&#x200B;**创建站点**，以便轻松地选择语言并配置 Live Copy 的结构。
+* 允许作者使用 **转出** Blueprint上的选项，用于将修改明确推送到从此Blueprint继承的活动副本。
+* 允许作者使用 **创建站点** 以轻松选择语言并配置Live Copy的结构。
 * 为与 Blueprint 有关系的 Live Copy 定义默认转出配置。
 
 如果未引用 Blueprint 配置，则只能从 Live Copy 本身启动部署，本质上是从源中提取内容。
@@ -48,7 +48,7 @@ MSM 是用于自动化内容部署的可配置框架。实施通常涉及网站�
 * 组件转出时将与 Blueprint 中包含的任何资源同步。
 * 容器仅同步当前资源。
 
-这意味着组件将被视为聚合，并且在转出时，组件本身及其所有子组件都将替换为 Blueprint 中的组件。这意味着，如果本地将资源添加到此类组件中，它将在转出时移至 Blueprint 的内容中。
+这意味着组件将被视为聚合，并且在转出时，组件本身及其所有子组件都将替换为 Blueprint 中的组件。这意味着，如果资源在本地添加到此类组件中，它将在转出时丢失到Blueprint的内容中。
 
 为了支持组件的嵌套，以便在转出中维护本地添加的组件，必须将组件声明为容器。
 

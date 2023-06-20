@@ -2,10 +2,10 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2157'
-ht-degree: 57%
+source-wordcount: '2154'
+ht-degree: 56%
 
 ---
 
@@ -46,7 +46,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 组件浏览器 {#components-browser}
 
-组件是 AEM 内容的构建基块。您可以将多个组件放在一个页面上并配置其选项，以便使用 AEM 构建内容页面。
+组件是 AEM 内容的构建基块。您可以将多个组件放在一个页面上，并配置其选项以使用AEM构建内容页面。
 
 组件浏览器会显示可在当前页面上使用的所有组件。 可以将这些内容拖到相应的位置，然后进行编辑以添加您的内容。
 
@@ -60,21 +60,21 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 * **移动设备（例如 iPad）**
 
-   组件浏览器完全覆盖正在编辑的页面。
+  组件浏览器完全覆盖正在编辑的页面。
 
-   要将组件添加到页面，请按住所需的组件并将其向右移动，组件浏览器将关闭以再次显示页面 — 您可以在其中放置组件。
+  要将组件添加到页面，请按住所需的组件并将其向右移动，组件浏览器将关闭以再次显示页面 — 您可以在其中放置组件。
 
-   ![移动设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+  ![移动设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **桌面设备**
 
-   组件浏览器将在窗口的左侧打开。
+  组件浏览器将在窗口的左侧打开。
 
-   要将组件添加到页面，请单击所需的组件，然后将其拖动到所需的位置。
+  要将组件添加到页面，请单击所需的组件，然后将其拖动到所需的位置。
 
-   ![桌面设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+  ![桌面设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   组件由表示
+  组件由表示
 
    * 组件名称
    * 组件组（灰色）
@@ -82,16 +82,16 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
       * 标准组件的图标是单色的。
       * 缩写始终由组件名称的前两个字符组成。
 
-   从&#x200B;**组件**&#x200B;浏览器顶部的工具栏可以：
+  从&#x200B;**组件**&#x200B;浏览器顶部的工具栏可以：
 
    * 按名称筛选组件。
    * 使用下拉选择框将显示内容限定为特定组。
 
-   有关组件的更多详细说明，您可以单击或点按&#x200B;**组件**&#x200B;浏览器（如果可用）中组件旁边的信息图标。例如，对于&#x200B;**内容片段**：
+  有关组件的更多详细说明，您可以单击或点按&#x200B;**组件**&#x200B;浏览器（如果可用）中组件旁边的信息图标。例如，对于&#x200B;**内容片段**：
 
-   ![组件浏览器信息](/help/sites-cloud/authoring/assets/component-browser-information.png)
+  ![组件浏览器信息](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   有关可供您使用的组件的更多信息，请参阅[组件控制台](/help/sites-cloud/authoring/features/components-console.md)。
+  有关可供您使用的组件的更多信息，请参阅[组件控制台](/help/sites-cloud/authoring/features/components-console.md)。
 
 >[!NOTE]
 >
@@ -136,19 +136,19 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 * **移动设备**
 
-   资产浏览器会完全覆盖正在编辑的页面。
+  资产浏览器会完全覆盖正在编辑的页面。
 
-   要将资源添加到页面，请触控并按住所需资源，然后将其向右移动 — 资源浏览器将关闭以再次显示页面，您可以在其中将资源添加到所需组件。
+  要将资源添加到页面，请触控并按住所需资源，然后将其向右移动 — 资源浏览器将关闭以再次显示页面，您可以在其中将资源添加到所需组件。
 
-   ![移动设备上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+  ![移动设备上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **桌面设备**
 
-   将在窗口左侧打开资产浏览器。
+  将在窗口左侧打开资产浏览器。
 
-   要将资源添加到页面，请单击所需的资源并将其拖动到所需的组件或位置。
+  要将资源添加到页面，请单击所需的资源并将其拖动到所需的组件或位置。
 
-   ![桌面设备上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+  ![桌面设备上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 页面可以由许多相同类型的组件轻松组成，因此内容（组件）树会在组件类型名称（黑色）之后显示描述性文本（灰色）。描述性文本来自组件的常见属性，如标题或文本。
 
-组件类型将以用户语言显示，而组件描述文本则来自页面语言。
+组件类型以用户语言显示，而组件描述文本来自页面语言。
 
 单击组件旁边的V形标记将折叠或展开该级别。
 
@@ -182,13 +182,13 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 * 例如，基本页面：
 
-   ![突出显示的内容树](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+  ![突出显示的内容树](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   基本页面的组件将具有常用选项。
+  基本页面的组件将具有常用选项。
 
-   如果单击树中的组件可编辑，则名称右侧将显示扳手图标。 单击此图标将直接启动组件的“编辑”对话框。
+  如果单击树中的组件可编辑，则名称右侧将显示扳手图标。 单击此图标将直接启动组件的“编辑”对话框。
 
-   ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+  ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
 * 属于 [livecopy](/help/sites-cloud/administering/msm/overview.md) 一部分且其中组件继承自其他页面的页面。
 
@@ -285,7 +285,6 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 >* 使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) 可以在&#x200B;**预览**&#x200B;模式和当前选定的模式（例如，**编辑**、**布局**&#x200B;等）之间切换。
 >
 
-
 ## 路径选择 {#path-selection}
 
 通常，在创作时，需要选择其他资源，例如定义指向其他页面或资源的链接或选择图像时。 要轻松选择路径， [路径字段](#path-fields) 优惠自动完成和 [路径浏览器](#path-browser) 允许进行更可靠的选择。
@@ -316,7 +315,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * 您可以随时使用对话框顶部的搜索字段。 单击 **X** 以清除搜索。
 * 要缩小搜索范围，您可以显示过滤器选项并按特定路径筛选结果。
 
-   ![过滤器选项](/help/sites-cloud/authoring/assets/filters-option.png)
+  ![过滤器选项](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## 键盘快捷键 {#keyboard-shortcuts}
 

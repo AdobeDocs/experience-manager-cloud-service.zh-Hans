@@ -2,7 +2,7 @@
 title: 如何创建自适应表单模板？
 description: 使用模板编辑器创建自适应表单模板以定义基本结构和初始内容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: c101ed97388b06dc71edfc9e13fac8a3e889c249
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 
    * **切换侧面板**：用于显示或隐藏侧栏。
    * **页面信息**：用于指定发布/取消发布时间、缩略图、客户端库、页面策略和页面设计客户端库等信息。
-      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
+     <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **模式选择器：** 允许您更改模式。您可以选择 **[!UICONTROL 结构]** 模式， **[!UICONTROL 初始内容]**， **[!UICONTROL 布局控件]** 模式。 “结构”模式允许您添加和自定义页眉和页脚。 初始内容模式允许您自定义表单内容。
    * **预览：** 允许您预览模板在发布时的外观。 您可以使用“图层选择器”和“预览”来切换编辑和预览模式。
 * **侧栏：** 提供“内容”、“属性”、“资产”和“组件”浏览器。
@@ -156,7 +156,6 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 > * 您还可以配置 [!UICONTROL 记录文档] 自适应表单编辑器或自适应表单模板编辑器中的模板。 有关更多信息，请参阅 [为自适应Forms生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
-
 ## 将表单数据模型架构关联到模板 {#associating-form-data-model-schema-in-template}
 
 作者可以关联 [!UICONTROL 表单数据模型架构] 模板编辑器中的自适应表单模板。 它允许作者从模板编辑器中选择架构。 将架构与模板关联并且表单作者根据模板创建表单时，会为表单预先选择架构。 它有助于表单作者规范架构的使用，并节省表单作者的时间。 要在模板编辑器中选择表单数据模型架构，请执行以下操作：
@@ -191,7 +190,7 @@ Perform the following steps to show and hide templates:
 1. Locate and open the **FormsManager Configuration** settings:
 
     * To show or hide out of the box Adaptive Forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
-    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
+    * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, and you want it to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
 

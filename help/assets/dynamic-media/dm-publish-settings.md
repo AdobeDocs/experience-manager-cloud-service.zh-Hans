@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 26f697dab03e0a3387669304b7f7f14dc2182a6d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3481'
 ht-degree: 3%
 
 ---
@@ -86,16 +86,16 @@ Dynamic Media发布设置旨在供经验丰富的网站开发人员和程序员�
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 回复图像大小限制]** | 必填.<br>仅对于新的Dynamic Media帐户，默认大小限制会自动设置为宽度： `3000` 和高度： `3000` （对于两者） **[!UICONTROL 图像服务]** 和 **[!UICONTROL 测试图像服务]**.<br>指定返回给客户端的最大回复图像宽度和高度。 如果请求导致回复图像的宽度和/或高度大于此设置，则服务器会返回错误。<br>另请参阅 [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) 参数(在Dynamic Media查看器参考指南中)。 |
+| **[!UICONTROL 回复图像大小限制]** | 必需.<br>仅对于新的Dynamic Media帐户，默认大小限制会自动设置为宽度： `3000` 和高度： `3000` （对于两者） **[!UICONTROL 图像服务]** 和 **[!UICONTROL 测试图像服务]**.<br>指定返回给客户端的最大回复图像宽度和高度。 如果请求导致回复图像的宽度和/或高度大于此设置，则服务器会返回错误。<br>另请参阅 [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) 参数(在Dynamic Media查看器参考指南中)。 |
 | **[!UICONTROL 请求混淆模式]** | 如果希望将base64编码应用于有效请求，则启用。<br>另请参阅 [请求模糊处理](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) 参数(在Dynamic Media查看器参考指南中)。 |
 | **[!UICONTROL 请求锁定模式]** | 如果希望在请求中包含简单哈希锁，则启用。<br>另请参阅 [Requestlock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) 参数(在Dynamic Media查看器参考指南中)。 |
-| **[!UICONTROL 默认请求属性]** |  |
-| **[!UICONTROL 默认图像文件后缀]** | 必填.<br>如果路径不包含文件后缀，则附加到目录Path和MaskPath字段值的默认数据文件扩展名。<br>另请参阅 [默认分机](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) 参数(在Dynamic Media查看器参考指南中)。 |
+| **[!UICONTROL 默认请求属性]** | |
+| **[!UICONTROL 默认图像文件后缀]** | 必需.<br>如果路径不包含文件后缀，则附加到目录Path和MaskPath字段值的默认数据文件扩展名。<br>另请参阅 [默认分机](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) 参数(在Dynamic Media查看器参考指南中)。 |
 | **[!UICONTROL 默认字体名称]** | 指定在文本图层请求未提供任何字体时使用哪种字体。 如果指定，则它必须是此图像目录的字体映射或默认目录的字体映射中的有效字体名称值。<br>另请参阅 [默认字体](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) 参数(在Dynamic Media查看器参考指南中)。 |
 | **[!UICONTROL 默认图像]** | 提供一个默认图像，为响应未找到所请求图像的请求而返回。<br>另请参阅 [默认图像](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) 参数(在Dynamic Media查看器参考指南中)。<br>**注意**：如果您的Dynamic Media Classic帐户已经拥有 **[!UICONTROL 默认图像]** 选定（如下所设置） **[!UICONTROL 设置]** > **[!UICONTROL 应用程序]** > **[!UICONTROL 发布设置]**，下 **[!UICONTROL 默认请求属性]** 组)，则您的Dynamic MediaExperience Manager帐户将从Dynamic Media Classic中获取文件。 然后，当您打开 **[!UICONTROL Dynamic Media发布设置]** 第一次翻页。 |
 | **[!UICONTROL 默认图像模式]** | 启用滑块框（右侧的滑块）后， **[!UICONTROL 默认图像]** 将源图像中的每个缺失图层替换为默认图像，然后照常返回复合图像。 禁用滑块框（左侧滑块）后，默认图像将替换整个复合图像，即使缺少的图像只是多个图层中的一个图层也是如此。<br>另请参阅 [默认图像模式](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) 参数(在Dynamic Media查看器参考指南中)。 |
-| **[!UICONTROL 默认视图大小]** | 必填.<br>仅对于新的Dynamic Media帐户，默认视图大小会自动设置为宽度： `1280` 和高度： `1280` （对于两者） **[!UICONTROL 图像服务]** 和 **[!UICONTROL 测试图像服务]**.<br>如果请求未明确使用指定视图大小，服务器将限制回复图像不超过此宽度和高度 `wid=`， `hei=`，或 `scl=`.<br>另请参阅 [Defaultpix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) 参数(在Dynamic Media查看器参考指南中)。 |
-| **[!UICONTROL 默认缩略图大小]** | 必填.<br>已使用而不是属性 **[!UICONTROL 默认视图大小]** 对于缩略图请求(`req=tmb`)。 如果缩略图请求(`req=tmb`)不会使用显式指定大小 `wid=`， `hei=`，或 `scl=`.<br>另请参阅 [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) 参数(在Dynamic Media查看器参考指南中)。 |
+| **[!UICONTROL 默认视图大小]** | 必需.<br>仅对于新的Dynamic Media帐户，默认视图大小会自动设置为宽度： `1280` 和高度： `1280` （对于两者） **[!UICONTROL 图像服务]** 和 **[!UICONTROL 测试图像服务]**.<br>如果请求未明确使用指定视图大小，服务器将限制回复图像不超过此宽度和高度 `wid=`， `hei=`，或 `scl=`.<br>另请参阅 [Defaultpix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) 参数(在Dynamic Media查看器参考指南中)。 |
+| **[!UICONTROL 默认缩略图大小]** | 必需.<br>已使用而不是属性 **[!UICONTROL 默认视图大小]** 对于缩略图请求(`req=tmb`)。 如果缩略图请求(`req=tmb`)不会使用显式指定大小 `wid=`， `hei=`，或 `scl=`.<br>另请参阅 [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) 参数(在Dynamic Media查看器参考指南中)。 |
 | **[!UICONTROL 默认背景颜色]** | 指定用于填充不包含实际图像数据的回复图像的任意区域的RGB值。<br>另请参阅 [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html) 参数(在Dynamic Media查看器参考指南中)。 |
 | **[!UICONTROL JPEG 编码属性]** |  |
 | **[!UICONTROL 质量]** | <br>指定JPEG回复图像的默认属性。<br>仅对于新的Dynamic Media帐户， **[!UICONTROL 质量]** 默认值自动设置为 `80` （对于两者） **[!UICONTROL 图像服务]** 和 **[!UICONTROL 测试图像服务]**.<br>此字段在1 - 100的范围内定义。<br>另请参阅 [Jpeg品质](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) 参数(在Dynamic Media查看器参考指南中)。 |
@@ -195,13 +195,13 @@ Secure Testing服务当前支持以下资产类型和功能：
 * Web打印
 * UGC（用户生成的内容）服务
 
-   >[!IMPORTANT]
-   >
-   >从2023年5月1日开始，Dynamic Media中的UGC资源最多可在上传日期后60天内使用。 60天后，这些资产将被删除。
+  >[!IMPORTANT]
+  >
+  >从2023年5月1日开始，Dynamic Media中的UGC资源最多可在上传日期后60天内使用。 60天后，资产将被删除。
 
-   >[!NOTE]
-   >
-   >对AdobeDynamic Media中新增或现有UGC矢量图像资源的支持已于2021年9月30日终止。
+  >[!NOTE]
+  >
+  >对AdobeDynamic Media中新增或现有UGC矢量图像资源的支持已于2021年9月30日终止。
 
 ### 测试Secure Testing service {#test-secure-testing-service}
 

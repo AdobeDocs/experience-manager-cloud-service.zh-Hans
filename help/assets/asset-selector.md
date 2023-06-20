@@ -4,10 +4,10 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 98b96ea89489905561329569096501f6a3741cd2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2378'
-ht-degree: 100%
+source-wordcount: '2376'
+ht-degree: 99%
 
 ---
 
@@ -76,7 +76,6 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 * imsOrg
 * imsToken
 * apikey
-
 <!--
 The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
 
@@ -361,28 +360,28 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 | 属性 | 类型 | 必需 | 默认 | 描述 |
 |---|---|---|---|---|
-| *边栏* | 布尔型 | 否 | false | 如果标记为 `true`，则资源选择器将呈现在左边栏视图中。如果标记为 `false`，则资源选择器将呈现在模态视图中。 |
-| *imsOrg* | 字符串 | 是 |  | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。需要 `imsOrg` 密钥来验证您所访问的组织是否在 Adobe IMS 下。 |
-| *imsToken* | 字符串 | 否 |  | 用于身份验证的 IMS 持有者令牌。如果您使用的是非 SUSI 流，则需要 `imsToken`。 |
-| *apiKey* | 字符串 | 否 |  | 用于访问 AEM 发现服务的 API 密钥。如果您使用的是非 SUSI 流，则需要 `apiKey`。 |
+| *边栏* | 布尔型 | 否 | false | 如果已标记 `true`，资产选择器将在左边栏视图中渲染。 如果已标记 `false`，资产选择器将以模式视图呈现。 |
+| *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。需要 `imsOrg` 密钥来验证您所访问的组织是否在 Adobe IMS 下。 |
+| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用的是非 SUSI 流，则需要 `imsToken`。 |
+| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用的是非 SUSI 流，则需要 `apiKey`。 |
 | *rootPath* | 字符串 | 否 | /content/dam/ | 资源选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径 `/content/dam/marketing/subfolder/`，资源选择器不允许您遍历任何父文件夹，而只显示子文件夹。 |
-| *path* | 字符串 | 否 |  | 在呈现资源选择器时用于导航到特定资源目录的路径。 |
-| *filterSchema* | 数组 | 否 |  | 用于配置过滤器属性的模型。这在需要限制资源选择器中的某些过滤器选项时很有用。 |
-| *filterFormProps* | 对象 | 否 |  | 指定您需要用于细化搜索的过滤器属性。例如，MIME 类型 JPG、PNG、GIF。 |
-| *selectedAssets* | 数组 `<Object>` | 否 |  | 呈现资源选择器时指定选定资源。包含资源的 id 属性的必需对象数组。例如，`[{id: 'urn:234}, {id: 'urn:555'}]` 资源必须在当前目录中可用。如果您需要使用其他目录，请也为 `path` 属性提供一个值。 |
-| *acvConfig* | 对象 | 否 |  | 包含对象的资源收藏集视图属性，该对象包含用于覆盖默认值的自定义配置。 |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |  | 如果 OOTB 翻译不足以满足您的应用程序需求，您可以公开一个接口，利用该接口可通过 `i18nSymbols` 属性传递自定义本地化值。通过此接口传递值将覆盖提供的默认翻译，而改用您自己的翻译。要执行覆盖，您必须将一个有效的[消息描述符](https://formatjs.io/docs/react-intl/api/#message-descriptor)对象传递到要覆盖的 `i18nSymbols` 键。 |
-| *intl* | 对象 | 否 |  | 资源选择器提供默认的 OOTB 翻译。您可以通过用 `intl.locale` 属性提供有效的区域设置字符串来选择翻译语言。例如：`intl={{ locale: "es-es" }}` </br></br> 支持的区域设置字符串遵循语言标准名称表示的 [ISO 639 - 代码](https://www.iso.org/iso-639-language-codes.html)。</br></br> 支持的区域设置列表：英语 -“en-us”（默认）西班牙语 -“es-es”德语 -“de-de”法语 -“fr-fr”意大利语 -“it-it”日语 -“ja-jp”朝鲜语 -“ko-kr”葡萄牙语 -“pt-br”中文（繁体）-“zh-cn”中文（台湾地区）-“zh-tw” |
+| *path* | 字符串 | 否 | | 在呈现资源选择器时用于导航到特定资源目录的路径。 |
+| *filterSchema* | 数组 | 否 | | 用于配置过滤器属性的模型。这在需要限制资源选择器中的某些过滤器选项时很有用。 |
+| *filterFormProps* | 对象 | 否 | | 指定您需要用于细化搜索的过滤器属性。例如，MIME 类型 JPG、PNG、GIF。 |
+| *selectedAssets* | 数组 `<Object>` | 否 |                 | 呈现资源选择器时指定选定资源。包含资源的 id 属性的必需对象数组。例如，`[{id: 'urn:234}, {id: 'urn:555'}]` 资源必须在当前目录中可用。如果您需要使用其他目录，请也为 `path` 属性提供一个值。 |
+| *acvConfig* | 对象 | 否 | | 包含对象的资源收藏集视图属性，该对象包含用于覆盖默认值的自定义配置。 |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |                 | 如果 OOTB 翻译不足以满足您的应用程序需求，您可以公开一个接口，利用该接口可通过 `i18nSymbols` 属性传递自定义本地化值。通过此接口传递值将覆盖提供的默认翻译，而改用您自己的翻译。要执行覆盖，您必须将一个有效的[消息描述符](https://formatjs.io/docs/react-intl/api/#message-descriptor)对象传递到要覆盖的 `i18nSymbols` 键。 |
+| *intl* | 对象 | 否 | | 资源选择器提供默认的 OOTB 翻译。您可以通过用 `intl.locale` 属性提供有效的区域设置字符串来选择翻译语言。例如：`intl={{ locale: "es-es" }}` </br></br> 支持的区域设置字符串遵循语言标准名称表示的 [ISO 639 - 代码](https://www.iso.org/iso-639-language-codes.html)。</br></br> 支持的区域设置列表：英语 -“en-us”（默认）西班牙语 -“es-es”德语 -“de-de”法语 -“fr-fr”意大利语 -“it-it”日语 -“ja-jp”朝鲜语 -“ko-kr”葡萄牙语 -“pt-br”中文（繁体）-“zh-cn”中文（台湾地区）-“zh-tw” |
 | *repositoryId* | 字符串 | 否 | &#39;&#39; | 资源选择器从中加载内容的存储库。 |
 | *additionalAemSolutions* | `Array<string>` | 否 | [ ] | 它允许您添加其他 AEM 存储库的列表。如果此属性中未提供任何信息，则仅考虑媒体库或 AEM Assets 存储库。 |
 | *hideTreeNav* | 布尔型 | 否 |  | 指定是显示还是隐藏资源树导航侧边栏。它仅在模态视图中使用，因此，该属性在边栏视图中不起作用。 |
-| *onDrop* | 函数 | 否 |  | 该属性允许资源的删除功能。 |
-| *dropOptions* | `{allowList?: Object}` | 否 |  | 使用“allowList”配置删除选项。 |
-| *colorScheme* | 字符串 | 否 |  | 为资源选择器配置主题（`light` 或 `dark`）。 |
-| *handleSelection* | 函数 | 否 |  | 在资源已选定并单击模态上的 `Select` 按钮时调用资源项数组。仅在模态视图中调用此函数。对于边栏视图，请使用 `handleAssetSelection` 或 `onDrop` 函数。示例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 有关详细信息，请参阅[所选资源类型](#selected-asset-type)。 |
-| *handleAssetSelection* | 函数 | 否 |  | 在选择或取消选择资源时调用项目数组。如果您需要在用户选择资源时进行侦听，这会很有用。示例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 有关详细信息，请参阅[所选资源类型](#selected-asset-type)。 |
-| *onClose* | 函数 | 否 |  | 在按下模态视图中的 `Close` 按钮时调用。这仅在 `modal` 视图中被调用，在 `rail` 视图中将被忽略。 |
-| *onFilterSubmit* | 函数 | 否 |  | 当用户更改其他过滤器条件时调用过滤器项。 |
+| *onDrop* | 函数 | 否 | | 该属性允许资源的删除功能。 |
+| *dropOptions* | `{allowList?: Object}` | 否 | | 使用“allowList”配置删除选项。 |
+| *colorScheme* | 字符串 | 否 | | 为资源选择器配置主题（`light` 或 `dark`）。 |
+| *handleSelection* | 函数 | 否 | | 在资源已选定并单击模态上的 `Select` 按钮时调用资源项数组。仅在模态视图中调用此函数。对于边栏视图，请使用 `handleAssetSelection` 或 `onDrop` 函数。示例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 有关详细信息，请参阅[所选资源类型](#selected-asset-type)。 |
+| *handleAssetSelection* | 函数 | 否 | | 在选择或取消选择资源时调用项目数组。如果您需要在用户选择资源时进行侦听，这会很有用。示例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 有关详细信息，请参阅[所选资源类型](#selected-asset-type)。 |
+| *onClose* | 函数 | 否 | | 在按下模态视图中的 `Close` 按钮时调用。这仅在 `modal` 视图中被调用，在 `rail` 视图中将被忽略。 |
+| *onFilterSubmit* | 函数 | 否 | | 当用户更改其他过滤器条件时调用过滤器项。 |
 | *selectionType* | 字符串 | 否 | 单个 | 一次性为 `single` 或 `multiple` 资源选择配置。 |
 
 ## 有关使用资源选择器属性的示例 {#usage-examples}

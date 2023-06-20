@@ -2,10 +2,10 @@
 title: Headless 设置
 description: 利用本快速入门指南，学习 AEM as a Cloud Service 强大的 Headless 功能的基础知识，例如内容模型、内容片段和 GraphQL API。
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 94%
 
 ---
 
@@ -30,12 +30,11 @@ ht-degree: 100%
 >* [Headless 内容创作历程](/help/journey-headless/author/overview.md)
 >* [Headless 翻译历程](/help/journey-headless/translation/overview.md)
 
-
 ## 受众 {#audience}
 
 所述任务对于 AEM Headless 功能的基本端到端演示是必需的。具有测试 AEM 实例管理员访问权限的任意用户可以按照这些指南来了解 AEM 中的 Headless 投放，但用户最好具有开发人员经验。
 
-不过，在生产情况中，这些任务将由不同角色执行不同的次数。例如：
+但是在生产环境中，任务由不同角色执行不同的次数。 例如：
 
 * **管理员**&#x200B;需要为内容设置初始配置和文件夹结构，通常只需一次或者在偶发情况下。
 * **信息架构师**&#x200B;通常会根据组织需求的演变添加新模型。

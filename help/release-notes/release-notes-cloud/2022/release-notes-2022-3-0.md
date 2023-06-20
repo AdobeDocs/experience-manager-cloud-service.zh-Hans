@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 96%
+ht-degree: 88%
 
 ---
 
@@ -90,13 +90,13 @@ ht-degree: 96%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 为了对云环境中的自定义功能进行更高效的故障排除，我们发布了一个新的开发工具——[存储库浏览器](/help/implementing/developing/tools/repository-browser.md)。它是一个轻量级的只读 HTML 浏览器，可以从开发人员控制台启动。在发布者、作者和预览层以及所有环境（包括生产、暂存和开发）中查看内容存储库。浏览内容结构，查看属性，预览和下载二进制文件。
+* 为了更加高效和有效地为云环境中的自定义功能排除故障，我们发布了一个新的开发人员工具 —  [存储库浏览器](/help/implementing/developing/tools/repository-browser.md). 它是一个轻量级的只读HTML浏览器，您可以从开发人员控制台启动。 在发布者、作者和预览层以及所有环境（包括生产、暂存和开发）中查看内容存储库。浏览内容结构，查看属性，预览和下载二进制文件。
 
-   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * 现在，用于验证服务器到服务器API调用(例如，用于GraphQL API请求)的凭据可在过期之前从开发人员控制台以自助方式刷新。 如需更多信息，请参阅 [此](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 文档。
 
-* 以前未启用的版本清除和审核日志清除维护任务，将为新环境启用。请参阅[维护任务](/help/operations/maintenance.md)文章中的相关值。
+* 版本清除和审核日志清除维护任务（以前未启用）现在为新环境启用。 请参阅[维护任务](/help/operations/maintenance.md)文章中的相关值。
 
 * AEM as a Cloud Service SDK Dispatcher 工具现在支持带有 M1 芯片的 Mac 电脑
 
@@ -112,7 +112,7 @@ ht-degree: 96%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用检查大小功能，用户可以 1）在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及 2）估计迁移集大小并验证其是否受支持。如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size)。
+* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用“检查大小”功能，用户可以1)确定 `crx-quickstart` 子目录，以及2)估计迁移集大小并验证是否支持它。 如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size)。
 
 ## Best Practices Analyzer {#bpa-release}
 

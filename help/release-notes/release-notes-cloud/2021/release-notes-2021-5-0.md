@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 50%
+source-wordcount: '1352'
+ht-degree: 48%
 
 ---
 
@@ -47,19 +47,19 @@ ht-degree: 50%
 
 * 您可以使用链接共享功能下载共享的资产。 现在，此下载使用异步服务，可提供更快且无中断的下载，即使对于非常大的下载也是如此。 参见 [下载资产](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![下载收件箱](/help/assets/assets/download-inbox.png)
+  ![下载收件箱](/help/assets/assets/download-inbox.png)
 
 ### 预发行渠道中可用的新功能 {#what-is-new-assets-prerelease}
 
 * 可以将元数据架构直接应用于文件夹属性。
 
-   ![从文件夹属性添加元数据架构](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![从文件夹属性添加元数据架构](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * 在批量提取期间，可使用资源批量提取器工具添加元数据。
 
 * 用户体验增强功能会显示文件夹中存在的资源数量。 对于文件夹中的1000多项资源， [!DNL Assets] 显示1000+。
 
-   ![文件夹中的资源数显示在界面上](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![文件夹中的资源数显示在界面上](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### [!DNL Assets] 中修复的错误 {#assets-bugs-fixed}
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 公共 API 中的存储库端点现在包括 Git URL。
 
-* Cloud Manager 用户下载的部署日志将更具实用价值，现在其中包括关于失败和成功情况的详细信息。
+* Cloud Manager用户下载的部署日志具有更丰富的见解，其中包括有关失败和成功情况的详细信息。
 
 * 现已解决将代码推送到 Adobe git 时遇到的间歇性故障。
 
@@ -147,7 +147,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 如果用户没有Java可执行文件的执行权限，则会在快速入门的错误日志中添加新的日志记录语句。
 
-* 当用户从执行提取的CTT UI删除迁移集时， `tmp` 将删除与该迁移集关联的文件夹以节省空间。
+* 当用户从执行提取的CTT用户界面删除迁移集时， `tmp` 已删除与该迁移集关联的文件夹以节省空间。
 
 ### 错误修复 {#bug-fixes-ctt-latest}
 

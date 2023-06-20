@@ -2,10 +2,10 @@
 title: 通知
 description: 了解如何使用 Adobe Experience Cloud 通知系统接收有关管道部署的信息。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 92%
+source-wordcount: '558'
+ht-degree: 88%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 92%
 
 ### 优先级 {#priority}
 
-优先警报将标有&#x200B;**高**&#x200B;选项卡，并且可以配置为仅作为警报接收。在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
+优先警报标有 **高** 标签进行标记，并且可以配置为仅作为警报接收。 在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
 
 ![通知优先级](assets/notifications-priority.png)
 

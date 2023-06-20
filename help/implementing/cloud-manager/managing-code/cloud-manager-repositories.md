@@ -2,10 +2,10 @@
 title: Cloud Manager 存储库
 description: 了解如何在 Cloud Manager 中创建、查看和删除 Git 存储库。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 删除存储库将：
 
 * 使删除的存储库名称不可用于将来可能创建的新存储库。
-   * 在这种情况下，将显示错误消息 `Repository name should be unique within organization.`。
+   * 错误消息 `Repository name should be unique within organization.` 在此类情况中显示。
 * 使已删除的存储库在 Cloud Manager 中不可用，并且无法链接到管道。
 
 按照这些步骤删除 Cloud Manager 中的存储库。

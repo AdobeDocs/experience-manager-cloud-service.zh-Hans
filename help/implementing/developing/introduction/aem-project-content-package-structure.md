@@ -2,9 +2,9 @@
 title: AEM 项目结构
 description: 了解如何定义包结构以部署到Adobe Experience ManagerCloud Service。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2927'
 ht-degree: 12%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 >[!TIP]
 >
->熟悉基本知识 [AEM项目原型使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，以及 [FileVault Content Maven插件](/help/implementing/developing/tools/maven-plugin.md) 因为本文是在这些学习和概念的基础上进行的。
+>熟悉基本知识 [AEM项目原型使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，以及 [FileVault Content Maven插件](/help/implementing/developing/tools/maven-plugin.md) 因为本文是在这些学习和概念的基础上进行的。
 
 本文概述了Adobe Experience Manager Maven项目要与AEMas a Cloud Service兼容所需的更改，确保这些项目尊重对可变和不可变内容的拆分，建立依赖关系以创建无冲突的确定性部署，并将它们打包到可部署的结构中。
 
@@ -74,7 +74,7 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 >[!NOTE]
 >
->必须向所有环境部署相同的代码。 这是为了确保暂存环境上的置信度验证也处于生产状态所必需的。 有关更多信息，请参阅以下部分： [运行模式](/help/implementing/deploying/overview.md#runmodes).
+>必须向所有环境部署相同的代码。 需要此代码以确保暂存环境上的置信度验证级别也在生产环境中。 有关更多信息，请参阅以下部分： [运行模式](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### 内容包
@@ -93,11 +93,11 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 + 此 `all` 包是一个容器包，仅包含可部署构件、OSGI包Jar文件、 `ui.apps`， `ui.config` 和 `ui.content` 包作为嵌入。 此 `all` 包不得具有 **任何内容或代码** ，而是将所有部署委派给存储库的子包或OSGi捆绑Jar文件。
 
-   现在使用Maven包含包 [FileVault Package Maven插件的嵌入配置](#embeddeds)，而不是 `<subPackages>` 配置。
+  现在使用Maven包含包 [FileVault Package Maven插件的嵌入配置](#embeddeds)，而不是 `<subPackages>` 配置。
 
-   对于复杂的Experience Manager部署，可能需要创建多个 `ui.apps`， `ui.config` 和 `ui.content` 表示AEM中特定站点或租户的项目/包。 如果这样做，请确保遵循可变和不可变内容之间的拆分，并将所需的内容包和OSGi捆绑Jar文件作为子包嵌入到中 `all` 容器内容包。
+  对于复杂的Experience Manager部署，可能需要创建多个 `ui.apps`， `ui.config` 和 `ui.content` 表示AEM中特定站点或租户的项目/包。 如果这样做，请确保遵循可变和不可变内容之间的拆分，并将所需的内容包和OSGi捆绑Jar文件作为子包嵌入到中 `all` 容器内容包。
 
-   例如，复杂的部署内容包结构可能如下所示：
+  例如，复杂的部署内容包结构可能如下所示：
 
    + `all` 内容包嵌入以下包，以创建单个部署构件
       + `common.ui.apps` 部署所需的代码 **两者** 站点A和站点B
@@ -231,12 +231,12 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
-   >[!WARNING]
-   >
-   >按照惯例，子包嵌入式文件夹的名称带有后缀 `-packages`。这样可确保部署代码和内容包&#x200B;**不会**&#x200B;部署到任何子包 `/apps/<app-name>/...` 的目标文件夹，否则将会导致破坏性的循环安装行为。
+  >[!WARNING]
+  >
+  >按照惯例，子包嵌入式文件夹的名称带有后缀 `-packages`。这样可确保部署代码和内容包&#x200B;**不会**&#x200B;部署到任何子包 `/apps/<app-name>/...` 的目标文件夹，否则将会导致破坏性的循环安装行为。
 
 + 第三级文件夹必须是
-   `application`, `content` 或 `container`
+  `application`, `content` 或 `container`
    + 此 `application` 文件夹包含代码包
    + 此 `content` 文件夹包含内容包
    + 此 `container` 文件夹包含任意 [额外的应用程序包](#extra-application-packages) AEM应用程序可能包含的其他资源。
@@ -549,7 +549,7 @@ scripts=["
 
 >[!WARNING]
 >
->添加更多Maven存储库可能会延长Maven构建时间，因为将检查其他Maven存储库的依赖关系。
+>添加更多Maven存储库可能会延长Maven构建时间，因为会检查其他Maven存储库的依赖关系。
 
 在反应栈项目的 `pom.xml`，添加任何必要的第三方公共Maven存储库指令。 完整 `<repository>` 应可从第三方存储库提供程序获得配置。
 

@@ -2,10 +2,10 @@
 title: 设置您的管道
 description: 创建前端管道来管理站点主题的自定义。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 100%
+source-wordcount: '975'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 100%
    * 确保在&#x200B;**符合条件的部署环境**&#x200B;下选择正确的环境。
    * 选择正确的&#x200B;**存储库**。
    * 定义管道应关联到的 **Git 分支**。
-   * 定义&#x200B;**代码位置**（如果前端开发位于所选存储库中的特定路径下）。默认值是存储库的根，但通常前端开发和后端将位于不同的路径下。
+   * 定义&#x200B;**代码位置**（如果前端开发位于所选存储库中的特定路径下）。默认值为存储库的根，但通常前端开发和后端位于不同的路径下。
 
    ![用于添加管道的源代码信息](assets/add-pipeline-source-code.png)
 

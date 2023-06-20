@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2020.8.0版as a Cloud Service发行说明。”
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 39%
+source-wordcount: '1041'
+ht-degree: 33%
 
 ---
 
@@ -76,13 +76,13 @@ ht-degree: 39%
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
-* 内容审核是 Cloud Manager Sites 生产管道上启用的一项功能。 带有 Sites 的程序的生产管道配置现在包括名为&#x200B;**内容审核**&#x200B;的第三个选项卡。 无论何时运行生产管道，都会在自定义功能测试后在管道中包含一个新的“内容审核”步骤，该步骤将根据多个维度评估网站，包括性能、SEO（搜索引擎优化）、可访问性、最佳实践和 PWA (Progressive Web App)。
+* 内容审核是 Cloud Manager Sites 生产管道上启用的一项功能。 带有 Sites 的程序的生产管道配置现在包括名为&#x200B;**内容审核**&#x200B;的第三个选项卡。 无论何时运行生产管道，都会在自定义功能测试后在管道中包含一个新的内容审核步骤，该步骤根据多个维度评估站点，包括性能、SEO（搜索引擎优化）、可访问性、最佳实践和PWA（渐进式Web应用程序）。
 
 
-   >[!NOTE]
-   >内容审核已重命名为体验审核。
+  >[!NOTE]
+  >内容审核已重命名为体验审核。
 
-   有关详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)。
+  有关详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 * Assets 程序中新建环境现在将自动配置为智能内容服务。
 
@@ -116,7 +116,7 @@ ht-degree: 39%
 
 * “内容审核”选项卡使用作者域而非发布域错误地显示了基本 URL。
 
-* 为了激活“内容审核”步骤，用户必须编辑管道，也可以选择添加页面。 如果没有添加页面，将审核主页。
+* 要激活内容审核步骤，用户必须编辑管道并（可选）添加页面。 如果未添加页面，则审核主页。
 
 ## 内容传输工具 {#content-transfer-tool}
 

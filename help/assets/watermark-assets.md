@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 14%
@@ -42,7 +42,7 @@ ht-degree: 14%
    >如果您已使用配置了系统水印配置文件 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 配置文件（OSGi配置），您可以继续使用它，但Adobe建议使用新的方法。
 
 
-1. [创建处理配置文件](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 利用资产微服务来应用水印。
+1. [创建处理配置文件](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 以使用资源微服务应用水印。
 
    ![用于创建水印的资源处理配置文件](assets/watermark-processing-profile.png)
 
@@ -75,4 +75,3 @@ ht-degree: 14%
 >
 >* [资产微服务概述](/help/assets/asset-microservices-overview.md).
 >* [将资源微服务与处理配置文件结合使用](/help/assets/asset-microservices-configure-and-use.md).
-

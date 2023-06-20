@@ -2,16 +2,16 @@
 title: 对邮件服务的 OAuth2 支持
 description: Adobe Experience Manager as a Cloud Service 中对邮件服务的 Oauth2 支持
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 57667c1dda50b2a6a4ac2fccc428f5ccb252563c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 95%
+source-wordcount: '717'
+ht-degree: 85%
 
 ---
 
 # 对邮件服务的 OAuth2 支持 {#oauth2-support-for-the-mail-service}
 
-AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以便各组织能够遵守安全电子邮件要求。
+AEMas a Cloud Service为其集成的邮件服务提供OAuth2支持，以允许组织遵守安全电子邮件要求。
 
 您可以为多个电子邮件提供商配置 OAuth。以下分步说明针对在 Microsoft Office 365 Outlook 中配置 AEM 邮件服务以通过 OAuth2 进行身份验证。可通过类似方式配置其他供应商。
 
@@ -46,15 +46,15 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
 回顾一下，您将需要以下信息为 AEM 端的邮件服务配置 OAuth2：
 
-* 将使用租户 ID 构建的身份验证 URL。它采用以下形式：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* 将使用租户 ID 构建的令牌 URL。它采用以下形式：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* 将使用租户 ID 构建的刷新 URL。它采用以下形式：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 使用租户ID构建的身份验证URL。 它采用以下形式：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* 使用租户ID构建的令牌URL。 它采用以下形式：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 使用租户ID构建的刷新URL。 它采用以下形式：`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * 客户端 ID
 * 客户端密码
 
 ### 生成刷新令牌 {#generating-the-refresh-token}
 
-接下来，您需要生成刷新令牌，它将是后续步骤中的 OSGi 配置的一部分。
+接下来，您需要生成刷新令牌，该令牌是后续步骤中OSGi配置的一部分。
 
 可执行以下步骤来做到这一点：
 

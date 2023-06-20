@@ -2,10 +2,10 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 98%
+source-wordcount: '2325'
+ht-degree: 93%
 
 ---
 
@@ -70,17 +70,17 @@ ht-degree: 98%
 
 ## 多个发布区域 {#multiple-regions}
 
-具有&#x200B;**业务所有者**&#x200B;角色的用户可以配置生产和暂存环境，以包括除了主要区域之外的最多三个额外的发布区域。增加发布区域可以提高可用性。有关更多详细信息，请参阅[其他发布区域文档。](/help/operations/additional-publish-regions.md)
+具有&#x200B;**业务所有者**&#x200B;角色的用户可以配置生产和暂存环境，以包括除了主要区域之外的最多三个额外的发布区域。增加发布区域可以提高可用性。有关更多详细信息，请参阅[其他发布区域文档](/help/operations/additional-publish-regions.md)。
 
 >[!TIP]
 >
->您可以使用[ Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) 查询可用区域的当前列表。
+>您可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) 查询可用区域的当前列表。
 
 ### 将多个发布区域添加到新环境 {#add-regions}
 
 添加新环境时，除主要区域之外，您可以选择配置附加区域。
 
-1. 选择&#x200B;**主要区域。**
+1. 选择&#x200B;**主要区域**。
    * 请注意，这在创建环境后无法更改。
 1. 选择选项&#x200B;**添加附加发布区域**，之后会出现新的&#x200B;**附加发布区域**&#x200B;下拉列表。
 1. 在&#x200B;**附加发布区域**&#x200B;下拉列表中，选择一个附加区域。
@@ -153,11 +153,11 @@ Cloud Manager 将预览服务（作为附加发布服务提供）提供给每个
 
 使用该服务，您可以在网站到达实际发布环境并公开使用之前预览网站的最终体验。
 
-创建后，预览服务将应用标记为 `Preview Default [<envId>]` 的默认 IP 允许列表，它会阻止预览服务的所有流量。 要启用访问，必须从预览服务中主动取消应用默认 IP 允许列表。
+创建后，预览服务将应用标记为 `Preview Default [<envId>]` 的默认 IP 允许列表，它会阻止预览服务的所有流量。 您必须主动从预览服务中取消应用默认IP允许列表才能启用访问。
 
 ![预览服务及其允许列表](assets/preview-ip-allow.png)
 
-具有必要权限的用户必须在共享预览服务 URL 之前完成以下步骤，才能访问它。
+具有必要权限的用户必须在共享预览服务URL之前完成以下步骤，以确保访问它。
 
 1. 创建适当的 IP 允许列表，将其应用于预览服务，然后立即取消应用 `Preview Default [<envId>]` 允许列表。
 
@@ -216,7 +216,7 @@ Cloud Manager 将预览服务（作为附加发布服务提供）提供给每个
 
 ## 删除开发环境 {#deleting-environment}
 
-具有必要权限的用户将能够删除开发环境。
+具有必要权限的用户能够删除开发环境。
 
 在&#x200B;**环境**&#x200B;信息卡的程序&#x200B;**概述**&#x200B;屏幕上，单击要删除的开发环境的省略号按钮。
 
@@ -290,9 +290,9 @@ Cloud Manager 支持针对 Sites 程序的作者、发布和预览服务的 IP �
 
 ### 应用 IP 允许列表 {#apply-ip-allow-list}
 
-应用 IP 允许列表将允许列表定义中包含的所有 IP 范围与环境中的作者或发布服务相关联。 必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户才能应用 IP 允许列表。
+应用 IP 允许列表将允许列表定义中包含的所有 IP 范围与环境中的作者或发布服务相关联。 中的用户 **业务负责人** 或 **部署管理员** 必须登录角色才能应用IP允许列表。
 
-IP 允许列表必须存在于 Cloud Manager 中，才能将其应用于环境。 要了解有关 Cloud Manager 中 IP 允许列表的更多信息，请参阅文档 [Cloud Manager 中的 IP 允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+IP允许列表必须存在于Cloud Manager中才能将其应用于环境。 要了解有关 Cloud Manager 中 IP 允许列表的更多信息，请参阅文档 [Cloud Manager 中的 IP 允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
 按照以下步骤应用 IP 允许列表。
 
@@ -302,7 +302,7 @@ IP 允许列表必须存在于 Cloud Manager 中，才能将其应用于环境�
 
 ### 取消应用 IP 允许列表 {#unapply-ip-allow-list}
 
-取消应用 IP 允许列表会将允许列表定义中包含的所有 IP 范围与环境中的作者或发布者服务解除关联。 必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户才能取消应用 IP 允许列表。
+取消应用 IP 允许列表会将允许列表定义中包含的所有 IP 范围与环境中的作者或发布者服务解除关联。 中的用户 **业务负责人** 或 **部署管理员** 必须登录角色才能取消应用IP允许列表。
 
 按照以下步骤取消应用 IP 允许列表。
 

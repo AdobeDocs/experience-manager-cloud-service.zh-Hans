@@ -3,10 +3,10 @@ title: 配置非生产管道
 description: 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 100%
+source-wordcount: '1362'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 1. 如果您选择创建&#x200B;**部署管道**，则还需要定义&#x200B;**重要量度失败行为**。
 
    * **每次询问** – 这是默认设置，需要对任何重要失败进行手动干预。
-   * **立即失败** – 如果选定此选项，则只要发生重要失败，就会取消管道。这实际上是在模拟用户手动拒绝每个失败。
+   * **立即失败**  — 如果选定此选项，则只要发生重要失败，就会取消管道。 这实际上是在模拟用户手动拒绝每个失败。
    * **立即继续** – 如果选定此选项，则每当发生重要失败时，管道就会自动继续。这实际上是在模拟用户手动批准每个失败。
 
 1. 单击&#x200B;**“继续”**。
@@ -134,7 +134,7 @@ Web 层配置管道部署 HTTPD/Dispatcher 配置。 有关此类型管道的详
 
 >[!NOTE]
 >
->如果所选环境已存在 Web 层代码管道，则将禁用此选择。
+>如果所选环境已存在Web层代码管道，则将禁用此选择。
 
 要完成 Web 层代码非生产管道的配置，请执行以下步骤。
 
@@ -166,7 +166,7 @@ Web 层配置管道部署 HTTPD/Dispatcher 配置。 有关此类型管道的详
 
 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
 
-请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
+查看文档 [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此过程的工作方式以及一些需要注意的事项，以充分发挥此过程的潜力。
 
 ## 跳过 Dispatcher 程序包 {#skip-dispatcher-packages}
 

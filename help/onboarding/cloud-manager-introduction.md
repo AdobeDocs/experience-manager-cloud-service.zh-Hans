@@ -2,10 +2,10 @@
 title: Cloud Manager 简介
 description: 了解 Cloud Manager 如何通过其程序、环境和管道支持您的 AEM 项目。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 33d587baba27ad54b1c9e34a36fadbd1dc56e3f5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 100%
+source-wordcount: '851'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Cloud Manager 程序代表一系列支持业务计划逻辑分组的 Cloud Manag
 
 ## Cloud Manager 环境 {#cloud-manager-environments}
 
-您的云环境将通过 Cloud Manager 创建、访问和查看。 这些环境可以是生产、暂存或开发环境。 不同的环境有不同的用途，可以与不同的 CI/CD 管道一起使用。 环境由以下服务组成：
+您的云环境是通过Cloud Manager创建、访问和查看的。 这些环境可以是生产、暂存或开发环境。 不同的环境有不同的用途，可以与不同的 CI/CD 管道一起使用。 环境由以下服务组成：
 
 * [AEM 创作服务](#author-services)
 * [AEM 发布服务](#publish-services)

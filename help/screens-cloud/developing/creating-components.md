@@ -2,9 +2,9 @@
 title: 创建组件
 description: AEM组件用于保留、格式化和渲染网页上可用的内容。 请按照本页面了解如何创作渠道和渲染组件。
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ AEM组件用于保留、格式化和渲染网页上可用的内容。
 
 渠道是交付给一组显示器的内容的中心对象。 因此，内容作者通常会在编辑器中打开一个渠道来添加或修改内容。 由于渠道是 ***cq：Page*** 它将遵循与传统UX相同的模式，在渠道中添加和更改组件。
 
-但是，由于渠道中的组件通常会在全屏模式下呈现，因此，在尝试编辑单个组件或撰写新订单时，创作体验会受到影响。 因此，渠道将依赖选择器呈现组件的不同视图。 创作环境将利用编辑选择器激活自定义渠道渲染。
+但是，由于渠道中的组件通常会在全屏模式下呈现，因此，在尝试编辑单个组件或撰写新订单时，创作体验会受到影响。 因此，渠道将依赖选择器呈现组件的不同视图。 创作环境使用编辑选择器激活自定义渠道渲染。
 
 例如，`http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
@@ -32,7 +32,7 @@ AEM组件用于保留、格式化和渲染网页上可用的内容。
 | *my-component/my-component.html* | 生产渲染 |
 | *my-component/edit.html* | 在较小的视图中编辑渲染 |
 
-内置组件利用以下客户端库类别：
+内置组件使用以下客户端库类别：
 
 | **Component** | **客户端库** |
 |---|---|

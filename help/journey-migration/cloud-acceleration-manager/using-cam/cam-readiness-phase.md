@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述了Cloud Acceleration Manager中的就绪阶段。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1055'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,6 @@ ht-degree: 5%
    >* 选项 **另存为PDF** 建议并支持上述功能。
    >* 如果使用浏览器的打印按钮，它将只打印一页。
 
-
    ![图像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### 使用视图趋势线 {#trendline-view-cam}
@@ -121,7 +120,6 @@ ht-degree: 5%
    >您将看到两个显示以下趋势的图形：
    >1. **报告调查结果趋势**
    >1. **自定义组件和模板趋势**
-
    >
    >您可以通过下拉列表添加或更改图形视图，如下图所示：
    >![图像](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
@@ -138,7 +136,6 @@ ht-degree: 5%
 >* 单击每张信息卡以打开其关联的选项卡
 >* 将所有报表选项卡（包括筛选）加入书签，以便共享或将来检索
 >* 使用详细信息图标可查看每个报告查找结果的详细信息
-
 
 #### 报表属性 {#report-properties}
 
@@ -183,7 +180,7 @@ ht-degree: 5%
 * 评估
 * 内容迁移注意事项
 
-   ![图像](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![图像](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## 使用Planning and Setup卡 {#planning-setup}
 

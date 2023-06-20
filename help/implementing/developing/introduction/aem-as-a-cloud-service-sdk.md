@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service SDK
 description: AEMas a Cloud Service软件开发工具包概述
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1176'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Cloud Manager在部署到云环境时执行相同的步骤。 在本地执行生
 
 它是 *推荐* ，以至少在每月维护版本发布后进行刷新。
 
-它是 *可选* 以在发布任何日常维护版本后对其进行刷新。 当客户的生产实例成功升级到新的AEM版本时，将会通知客户。 对于每日维护版本，新的SDK预计不会发生显着变化（如果有的话）。 但是，建议偶尔使用最新的SDK刷新本地AEM开发人员环境，然后重建和测试自定义应用程序。 每月维护版本通常包括更具影响力的更改，因此开发人员应立即刷新、重建和测试。
+它是 *可选* 以在发布任何日常维护版本后对其进行刷新。 当客户的生产实例成功升级到新的AEM版本时，会通知客户。 对于每日维护版本，新的SDK预计不会发生显着变化（如果有的话）。 但是，建议偶尔使用最新的SDK刷新本地AEM开发人员环境，然后重建和测试自定义应用程序。 每月维护版本通常包括更具影响力的更改，因此开发人员应立即刷新、重建和测试。
 
 以下是刷新本地环境的推荐过程：
 
@@ -69,7 +69,7 @@ Cloud Manager在部署到云环境时执行相同的步骤。 在本地执行生
 1. 本地开发测试内容需要单独存储，以便不会部署为Cloud Manager管道构建的一部分。 这是因为它只需要用于本地开发
 1. 停止当前正在运行的快速启动
 1. 移动 `crx-quickstart` 文件夹到其他文件夹以便安全保存
-1. 请注意新的AEM版本，Cloud Manager中对其进行了说明（该版本将用于标识新的快速入门Jar版本，以供进一步下载）
+1. 请注意新的AEM版本，Cloud Manager中对其进行了说明（用于标识新的快速入门Jar版本，以便进一步下载）
 1. 从软件分发门户下载其版本与生产AEM版本相匹配的QuickStart JAR
 1. 创建一个全新的文件夹，并将新的QuickStart Jar放入
 1. 使用所需的运行模式启动新的QuickStart（重命名文件或通过以运行模式传递） `-r`)。
@@ -83,7 +83,7 @@ Cloud Manager在部署到云环境时执行相同的步骤。 在本地执行生
 
 建议频繁更新SDK（例如每两周）并每天处理完整的本地状态，以免意外依赖于应用程序中的有状态数据。
 
-如果您依赖CryptoSupport ([通过在AEM中配置Cloudservices或SMTP邮件服务的凭据，或在应用程序中使用CryptoSupport API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html))，加密的属性将使用在AEM环境首次启动时自动生成的密钥进行加密。 虽然cloudsetup可自动重用特定于环境的CryptoKey，但必须将加密密钥注入本地开发环境中。
+如果您依赖CryptoSupport ([通过在AEM中配置Cloudservices或SMTP邮件服务的凭据，或在应用程序中使用CryptoSupport API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html))，加密的属性由在AEM环境首次启动时自动生成的密钥加密。 虽然cloudsetup可自动重用特定于环境的CryptoKey，但必须将加密密钥注入本地开发环境中。
 
 默认情况下，AEMAEM配置为将关键数据存储在一个文件夹的数据文件夹中，但为了便于在开发中重复使用，可以在首次启动时使用&quot;`-Dcom.adobe.granite.crypto.file.disable=true`“。 这将在“ ”处生成加密数据`/etc/key`“。
 
@@ -91,5 +91,5 @@ Cloud Manager在部署到云环境时执行相同的步骤。 在本地执行生
 
 * 最初启动本地quickstart.jar时，请确保添加以下参数： ”`-Dcom.adobe.granite.crypto.file.disable=true`“。 建议始终添加此标记，但可根据需要进行添加。
 * 第一次启动实例时，请创建包含根“ ”筛选器的包`/etc/key`“。 这将包含要在您希望重复使用它们的所有环境中重复使用的密码
-* 导出任何包含密码的可变内容，或通过查找加密值 `/crx/de` 以将其添加到将在安装中重用的包
-* 每当您启动新实例（替换为新版本或多个开发环境应共享凭据进行测试）时，请安装步骤2和3中生成的包，以便能够重用内容，而无需手动重新配置。 这是因为现在加密密钥处于同步状态。
+* 导出任何包含密码的可变内容，或通过以下方式查找加密值 `/crx/de` 以将其添加到可跨安装重复使用的包中
+* 每当您启动新实例（用新版本替换或者多个开发环境应共享凭据进行测试）时，请安装步骤2和3中生成的包，以便能够重用内容，而无需手动重新配置。 这是因为现在加密密钥处于同步状态。

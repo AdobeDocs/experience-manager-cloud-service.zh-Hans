@@ -4,10 +4,10 @@ description: 在 AEM 中定义内容片段删除策略之前，请查看这些�
 feature: Content Fragments
 role: User
 exl-id: f6698dd8-3e2a-44ac-b00f-df578aa85ffe
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 96%
 
 ---
 

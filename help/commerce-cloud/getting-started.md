@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1092'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ AEM Commerceas a Cloud Service入门培训分为两步：
 
 第一个入门培训步骤由Adobe完成。 有关定价和配置的更多详细信息，您需要联系销售代表。
 
-配置CIF加载项后，它将应用于任何现有的Cloud Manager程序。 如果您没有Cloud Manager项目，则需要创建一个新项目。 有关更多详细信息，请参阅 [设置您的项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
+在您配置了CIF加载项后，它会应用到任何现有的Cloud Manager程序。 如果您没有Cloud Manager项目，则需要创建一个新项目。 有关更多详细信息，请参阅 [设置您的项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
 第二步是每个AEMas a Cloud Service环境的自助服务。 初始配置CIF加载项后，您需要执行一些其他配置。
 
@@ -41,7 +41,7 @@ AEM Commerceas a Cloud Service入门培训分为两步：
 - GraphQL通过由AEM核心组件和客户项目组件使用的一些常见可共享GraphQl客户端，从AEM调用Commerce后端。
 - 在每个AEM环境中设置GraphQL代理URL，变量设置位置为 `/api/graphql`. 这由AEM Commerce创作工具（CIF加载项）和CIF客户端组件使用。
 
-每个AEMas a Cloud Service环境可以使用不同的GraphQL端点URL。 通过这种方式，项目可以将AEM暂存环境与商务暂存系统和AEM生产环境连接到商务生产系统。 GraphQL端点必须可公开使用，不支持专用VPN或本地连接。 可选地，可以提供身份验证标头，以便使用需要身份验证的附加CIF功能。
+每个AEMas a Cloud Service环境可以使用不同的GraphQL端点URL。 通过这种方式，项目可以将AEM暂存环境与商务暂存系统和AEM生产环境连接到商务生产系统。 GraphQL端点必须可公开使用，不支持专用VPN或本地连接。 可选地，可以提供认证标头以使用需要认证的附加CIF功能。
 
 （可选）并且仅对于Adobe Commerce Enterprise/Cloud，CIF加载项支持为AEM作者使用暂存目录数据。 这要求配置授权标头。 出于安全原因，此标头仅在AEM创作实例上可用和使用。 AEM发布实例无法显示暂存数据。
 
@@ -51,7 +51,7 @@ AEM Commerceas a Cloud Service入门培训分为两步：
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-可使用“环境详细信息”页面上的对话框完成此操作。 查看启用了Commerce的程序的此页面时，如果当前未配置端点，将显示一个按钮：
+可使用“环境详细信息”页面上的对话框完成此操作。 查看启用了Commerce的程序的此页面时，如果当前未配置端点，则会显示一个按钮：
 
 ![CM环境信息](/help/commerce-cloud/assets/commerce-cmui.png)
 
@@ -59,7 +59,7 @@ AEM Commerceas a Cloud Service入门培训分为两步：
 
 ![CM商务端点](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-设置暂存目录支持的端点和（可选）授权标头后，端点将显示在详细信息页面上。 单击“编辑”图标将打开同一个对话框，可以在其中修改端点（如有必要）。
+设置用于暂存目录支持的端点和（可选）授权标头后，该端点会显示在详细信息页面上。 单击“编辑”图标将打开同一个对话框，可以在其中修改端点（如有必要）。
 
 ![CM环境信息](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -120,17 +120,17 @@ CIF加载项和 [CIF核心组件](https://github.com/adobe/aem-core-cif-componen
 - GraphQL客户端 — 为商务后端通信选择配置的GraphQL客户端。 这通常应保留为默认值。
 - 存储视图 — 存储视图标识符。 如果为空，则使用默认存储视图。
 - GraphQL代理路径 — AEM中的GraphQL代理用于向商业后端GraphQL端点代理请求的URL路径。
-   >[!NOTE]
-   >
-   > 在大多数设置中，默认值是 `/api/graphql` 不得更改。 只有未使用所提供的GraphQL代理的高级设置才应更改此设置。
+  >[!NOTE]
+  >
+  > 在大多数设置中，默认值是 `/api/graphql` 不得更改。 只有未使用所提供的GraphQL代理的高级设置才应更改此设置。
 - 启用目录UID支持 — 在商业后端GraphQL调用中启用对UID而不是ID的支持。
-   >[!NOTE]
-   >
-   > Adobe Commerce 2.4.2中引入了对UID的支持。仅当您的Commerce后端支持2.4.2版或更高版本的GraphQL架构时，才启用此选项。
+  >[!NOTE]
+  >
+  > Adobe Commerce 2.4.2中引入了对UID的支持。仅当您的Commerce后端支持2.4.2版或更高版本的GraphQL架构时，才启用此选项。
 - 目录根类别标识符 — 商店目录根的标识符（UID或ID）
-   >[!CAUTION]
-   >
-   > 从CIF核心组件版本2.0.0开始，支持 `id` 已被移除并替换为 `uid`. 如果您的项目使用CIF核心组件版本2.0.0，则必须启用目录UID支持，并使用有效的类别UID作为“目录根类别标识符”。
+  >[!CAUTION]
+  >
+  > 从CIF核心组件版本2.0.0开始，支持 `id` 已被移除并替换为 `uid`. 如果您的项目使用CIF核心组件版本2.0.0，则必须启用目录UID支持，并使用有效的类别UID作为“目录根类别标识符”。
 
 以上所示的配置仅供参考。 项目应提供自己的配置。
 

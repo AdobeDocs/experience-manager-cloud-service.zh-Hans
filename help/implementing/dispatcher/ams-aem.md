@@ -3,9 +3,9 @@ title: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
 description: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1445'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,7 @@ AEMas a Cloud Service中的Apache和Dispatcher配置与AMS配置非常相似。 
 
 * 在AEMas a Cloud Service中，不能使用某些Apache指令(例如 `Listen` 或 `LogLevel`)
 * 在AEMas a Cloud Service中，只能将Dispatcher配置的某些部分放入包含文件，并且其命名很重要。 例如，要跨不同主机重用的过滤器规则必须放在一个名为的文件中 `filters/filters.any`. 有关更多信息，请参阅参考页面。
-* 在AEMas a Cloud Service中，存在额外的验证，不允许使用编写筛选规则 `/glob` 以防止出现安全问题。 从 `deny *` 将使用，而不是 `allow *` （无法使用），客户将受益于在本地运行Dispatcher并进行试用和错误测试，查看日志以准确了解Dispatcher过滤器阻止了哪些路径以便添加这些路径。
+* 在AEMas a Cloud Service中，存在额外的验证，不允许使用编写筛选规则 `/glob` 以防止出现安全问题。 因为 `deny *` 使用，而不是 `allow *` （无法使用），客户可以从本地运行Dispatcher并进行试用和错误测试、查看日志以准确了解Dispatcher过滤器阻止了哪些路径以便添加这些路径中受益。
 
 ## 将Dispatcher配置从AMS迁移到AEMas a Cloud Service的准则
 

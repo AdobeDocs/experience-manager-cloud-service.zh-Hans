@@ -2,9 +2,9 @@
 title: AEM 项目存储库结构包
 description: Adobe Experience Manager as a Cloud Service Maven项目需要存储库结构子包定义，其唯一用途是定义项目的代码子包部署到其中的JCR存储库根。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 9%
 
 ---
@@ -69,12 +69,12 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>
@@ -171,7 +171,7 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 
 ## 错误和调试
 
-如果存储库结构包未正确设置，则会在Maven构建中报告错误：
+如果未正确设置存储库结构包，则会在Maven中报告构建错误：
 
 ```
 1 error(s) detected during dependency analysis.

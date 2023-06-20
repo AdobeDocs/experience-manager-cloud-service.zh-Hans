@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1315'
 ht-degree: 50%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 50%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 更灵活的Dispatcher配置：可以更轻松地组织项目。 例如，您现在可以包含反映站点结构的多个重写规则文件。 [了解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 这种灵活的模式，包括如何构建Dispatcher配置以对其进行利用。
+* 更灵活的Dispatcher配置：可以更轻松地组织项目。 例如，您现在可以包含反映站点结构的多个重写规则文件。 [了解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 这种灵活的模式，包括如何构建Dispatcher配置以便您进行充分利用。
 * 复制代理的“分发”选项卡下的树复制UI应被视为已弃用，计划在9月30日后删除。 [了解](/help/operations/replication.md#tree-activation) 替代复制策略。
 * 捆绑 `org.apache.sling.datasource-1.0.4.jar` 的for Sling数据源支持已删除，因为它具有过时的功能，并且未由客户使用。
 
@@ -42,23 +42,23 @@ ht-degree: 50%
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* 内容自动化功能允许 [!DNL Experience Manager Assets] 利用 [!DNL Adobe Creative Cloud] 用于大规模自动化资产生产的API。 它通过显着减少创建同一资源的变体所需的时间和迭代来提高内容速度。 该功能不需要进行任何编程，并且可在DAM内使用。 参见 [使用Creative Cloud集成生成资源变体](/help/assets/cc-api-integration.md).
+* 内容自动化功能允许 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] 用于大规模自动化资产生产的API。 它通过显着减少创建同一资源的变体所需的时间和迭代来提高内容速度。 该功能不需要进行任何编程，并且可在DAM内使用。 参见 [使用Creative Cloud集成生成资源变体](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] 包括 [!DNL Document Cloud] PDF查看器以本机预览PDF文档。 此功能允许用户预览多页PDF文件，而无需进行任何文件处理或转换。 此功能改进了与 [!DNL Experience Manager] 6.5.查看器中可用的控件包括缩放、导航到页面、取消停靠控件以及全屏查看。 用户案例还可以预览和跳转到页面和书签。 支持对文件本身进行评论，并且将在未来版本中添加对PDF文件中内容进行评论和批注。
+* [!DNL Experience Manager Assets] 包括 [!DNL Document Cloud] PDF查看器以本机预览PDF文档。 此功能允许用户预览多页PDF文件，而无需进行任何文件处理或转换。 此功能改进了与 [!DNL Experience Manager] 6.5.查看器中可用的控件包括缩放、导航到页面、取消停靠控件以及全屏查看。 用户案例还可以预览和跳转到页面和书签。 支持对文件本身进行注释。 未来版本中将添加对PDF文件中的内容进行注释和批注。
 
-   ![在中预览PDF文件 [!DNL Experience Manager] 使用PDF查看器](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![在中预览PDF文件 [!DNL Experience Manager] 使用PDF查看器](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * Linkshare下载功能使用可提高下载速度的异步下载。 参见 [下载使用链接共享功能共享的资源](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![下载收件箱](/help/assets/assets/download-inbox.png)
+  ![下载收件箱](/help/assets/assets/download-inbox.png)
 
 * 增强了视图设置以允许用户选择默认视图和默认排序参数。
 
-   ![在中设置默认视图 [!UICONTROL 查看设置]](/help/assets/assets/view-settings-for-defaults.png)
+  ![在中设置默认视图 [!UICONTROL 查看设置]](/help/assets/assets/view-settings-for-defaults.png)
 
 * 用户可以根据属性谓词搜索和筛选文件夹。
 
-   ![使用搜索谓词筛选搜索文件夹](/help/assets/assets/search-folders-via-predicates.png)
+  ![使用搜索谓词筛选搜索文件夹](/help/assets/assets/search-folders-via-predicates.png)
 
 ### 中可用的新功能 [!DNL Assets] 预发行渠道 {#assets-prerelease-features}
 

@@ -8,7 +8,7 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 8bf73e87b1dbd9cd536248010a44404bc1b3d5f6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 0%
@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 <!-- >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature will be generally available in the February 2022 release. -->
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. -->
 
 Dynamic Media URL和查看器嵌入代码包含您的公司帐户名称。 此帐户名是在配置Dynamic Media时创建的。 在某些情况下，您的企业可能会经历收购、品牌重塑，或者您只想使用更令人印象深刻的名称。 在这种情况下，在开箱即用的所有URL和查看器嵌入代码中手动更新公司帐户名称并不容易。 此外，还可能会影响现有Dynamic Media存储库或实时内容。 要解决此问题，您可以配置Dynamic Media公司别名帐户。
 

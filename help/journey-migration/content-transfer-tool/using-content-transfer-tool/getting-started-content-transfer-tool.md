@@ -2,9 +2,9 @@
 title: 内容转移工具快速入门
 description: 内容转移工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1396'
 ht-degree: 22%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 22%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. 将之前从CAM复制的提取密钥粘贴到的提取密钥输入字段 **创建迁移集** 表单。 执行此操作后，迁移集名称和Cloud Acceleration Manager (CAM)项目名称字段将自动填充。 这些名称应与CAM中的“迁移集”名称和您创建的CAM项目名称匹配。 您现在可以添加内容路径。 添加内容路径后，您将能够保存迁移集。 您可以使用包含或排除的版本运行提取。
+1. 将之前从CAM复制的提取密钥粘贴到的提取密钥输入字段 **创建迁移集** 表单。 执行此操作后，迁移集名称和Cloud Acceleration Manager (CAM)项目名称字段会自动填充。 这些名称应与CAM中的“迁移集”名称和您创建的CAM项目名称匹配。 您现在可以添加内容路径。 添加内容路径后，保存迁移集。 您可以使用包含或排除的版本运行提取。
 
    >[!NOTE]
    >
@@ -147,7 +147,6 @@ ht-degree: 22%
       >* `/home`
       >* `/etc` (部分 `/etc` 允许在CTT中选择路径)
 
-
 1. 单击 **保存** 填充以下位置的所有字段之后： **创建迁移集** 详细信息屏幕。
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
@@ -167,7 +166,8 @@ ht-degree: 22%
 ### 确定迁移集大小 {#migration-set-size}
 
 创建迁移集后，强烈建议在开始提取过程之前对迁移集运行大小检查。
-通过对迁移集运行大小检查，您将能够：
+通过对迁移集运行大小检查，您能够：
+
 * 确定中是否有足够的磁盘空间 `crx-quickstart` 子目录以成功完成提取。
 * 确定迁移集大小是否在受支持的产品限制范围内，并避免内容摄取失败。
 
@@ -185,11 +185,11 @@ ht-degree: 22%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. 一次 **检查大小** 进程已完成，状态将更改为 **已完成**. 选择相同的迁移集并单击 **检查大小** 以查看结果。 以下是 **检查大小** 没有警告的结果。
+1. 晚于 **检查大小** 进程已完成，状态将更改为 **已完成**. 选择相同的迁移集并单击 **检查大小** 以查看结果。 以下是 **检查大小** 没有警告的结果。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. 如果 **检查大小** 结果表示磁盘空间不足和/或迁移集超出产品限制， **警告** 将显示状态。
+1. 如果 **检查大小** 结果指示磁盘空间不足，或迁移集超出产品限制，或两者都超出 **警告** 将显示状态。
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

@@ -2,9 +2,9 @@
 title: 验证内容转移
 description: 使用内容传输工具验证内容传输
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1062'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 在源AEM环境中启用迁移验证后，开始提取。
 
-如果 **在提取期间覆盖暂存容器** 启用后，与提取相关的所有节点都将记录到提取路径摘要中。 使用此设置时，请务必启用 **在引入之前擦除云实例上的现有内容** 在摄取期间设置，否则摄取摘要中可能会显示缺失的节点。 这些是先前摄取中已存在于目标上的节点。
+如果 **在提取期间覆盖暂存容器** 如果启用了，则与提取相关的所有节点都将记录到提取路径摘要中。 使用此设置时，请务必启用 **在引入之前擦除云实例上的现有内容** 在摄取期间设置，否则摄取摘要中可能会显示缺失的节点。 这些是先前摄取中已存在于目标上的节点。
 
 有关图形说明，请参阅以下示例：
 
@@ -44,37 +44,37 @@ ht-degree: 2%
 
 * **提取（覆盖）**
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **引入（划出）**
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **注释**
 
-   这种“覆盖”和“划出”的组合将产生一致的验证结果，即使对于重复摄取也是如此。
+  这种“覆盖”和“划出”的组合将产生一致的验证结果，即使对于重复摄取也是如此。
 
 ### 示例 2 {#example-2}
 
 * **提取**
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **引入**
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **注释**
 
-   此“覆盖”和“划出”的组合将为初始引入生成一致的验证结果。
+  此“覆盖”和“划出”的组合将为初始引入生成一致的验证结果。
 
-   如果重复引入，则引入摘要将为空，并且验证将显示为失败。 摄取摘要将为空，因为此提取中的所有节点都将已存在于目标上。
+  如果重复引入，则引入摘要为空，验证似乎已失败。 摄取摘要为空，因为此提取中的所有节点都将已存在于目标上。
 
 提取完成后，开始引入。
 
 摄取日志的顶部将包含一个条目，类似于 `aem-ethos/tools:1.2.438`. 确保此版本号为 **1.2.438** 或更高版本，否则您使用的AEMas a Cloud Service版本不支持验证。
 
-完成摄取并开始验证后，将在摄取日志中记录以下日志条目：
+在摄取完成并开始验证后，将在摄取日志中记录以下日志条目：
 
 ```
 Gathering artifacts for migration validation...
@@ -136,7 +136,7 @@ Migration validation took 0 minutes
 
 参见 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以了解主要迁移的详细信息以及为什么需要这样做。
 
-成功完成提取和引入后，即可使用主体迁移的摘要和报告。 此信息可用于验证哪些用户和组已成功迁移，也许还可用于确定为什么有些用户和组没有迁移。
+成功完成提取和摄取后，即可使用主体迁移的摘要和报告。 此信息可用于验证哪些用户和组已成功迁移，也许还可用于确定为什么有些用户和组没有迁移。
 
 要查看此信息，请转到Cloud Acceleration Manager。 单击您的项目信息卡，然后单击“内容传输”信息卡。 导航到 **引入作业** 并找到要验证的引入。 单击三个圆点(**...**)，然后单击 **查看主体摘要** 在下拉菜单中。
 
@@ -148,7 +148,7 @@ Migration validation took 0 minutes
 
 >[!NOTE]
 >
->如果禁用了用户映射，将显示此对话框的另一个变体。 它将指示用户映射已被禁用，并且不会显示给出用户映射值的3个字段。
+>如果禁用了用户映射，则会显示此对话框的另一个变体。 它将指示用户映射已被禁用，并且不会显示给出用户映射值的3个字段。
 
 ## 疑难解答 {#troubleshooting}
 

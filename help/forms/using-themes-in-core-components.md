@@ -2,9 +2,9 @@
 title: 创建和使用主题
 description: 您可以使用主题来使使用核心组件的自适应表单风格化并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1664'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->不应将自适应表单主题与 [自适应表单模板。](/help/forms/template-editor.md) 自适应表单主题仅包含自适应表单的样式信息。 自适应表单模板定义表单结构和初始内容并包含主题，以便能够创建新内容 [自适应表单。](/help/forms/creating-adaptive-form.md)
+>不应将自适应表单主题与 [自适应表单模板。](/help/forms/template-editor.md) 自适应表单主题仅包含自适应表单的样式信息。 自适应表单模板定义表单结构和初始内容，并包含用于创建新内容的主题 [自适应表单。](/help/forms/creating-adaptive-form.md)
 
 ## 使用核心组件在自适应Forms中使用画布主题 {#using-theme-in-adaptive-form}
 
@@ -131,7 +131,6 @@ AEM_PROXY_PORT=7000
    > * 创建本地用户以本地登录。 为主题设计者提供参与者角色。
    > * 如果将AEM URL指定为 `http://localhost:[port]/` 在 `.env` 画布主题文件，您将直接重定向到浏览器。
 
-
 1. 登录后，将浏览器中的 URL 更改为指向 AEM 管理员提供给您的示例内容的路径。
 
    * 例如，如果提供的路径为 `/content/formname.html?wcmmode=disabled`，将URL更改为 `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
@@ -200,8 +199,7 @@ AEM_PROXY_PORT=7000
 
 1. 使用类似于的命令将正在编辑的主题存储库的文件移动到云存储库中
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-例如，使用此命令 
-`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+例如，使用此命令 `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
 1. 在云存储库的目录中，使用以下命令提交您移入的主题文件。
 
    ```text
@@ -246,15 +244,15 @@ AEM_PROXY_PORT=7000
 
 * **避免使用其他主题中的资源**
 
-   编辑主题时，您可以浏览和添加其他主题中的资产（如图像）。 例如，您正在编辑页面的背景。 例如，当您选择 **[!UICONTROL 页面]** ![编辑按钮](assets/edit-button.png)> **[!UICONTROL 背景]** > **[!UICONTROL 添加]** > **[!UICONTROL 图像]**，您将看到一个对话框，通过该对话框可以浏览并添加其他主题中的图像。
+  编辑主题时，您可以浏览和添加其他主题中的资产（如图像）。 例如，您正在编辑页面的背景。 例如，当您选择 **[!UICONTROL 页面]** ![编辑按钮](assets/edit-button.png)> **[!UICONTROL 背景]** > **[!UICONTROL 添加]** > **[!UICONTROL 图像]**，您将看到一个对话框，通过该对话框可以浏览并添加其他主题中的图像。
 
-   如果从其他主题添加资产，并且移动或删除了其他主题，则您可能会遇到当前主题的问题。 建议您避免浏览和添加其他主题中的资产。
+  如果从其他主题添加资产，并且移动或删除了其他主题，则您可能会遇到当前主题的问题。 建议您避免浏览和添加其他主题中的资产。
 
 * **更改容器面板布局宽度**
 
-   不建议更改容器面板布局宽度。 指定容器面板的宽度时，该宽度会变为静态并且不会适应不同的显示。
+  不建议更改容器面板布局宽度。 指定容器面板的宽度时，该宽度会变为静态并且不会适应不同的显示。
 
 * **使用表单编辑器或主题编辑器处理页眉和页脚**
 
-   如果要使用字体样式、背景和透明度等样式选项来设置页眉和页脚的样式，请使用主题编辑器。
+  如果要使用字体样式、背景和透明度等样式选项来设置页眉和页脚的样式，请使用主题编辑器。
 如果要提供徽标图像、页眉中的公司名称和页脚中的版权信息等信息，请使用表单编辑器选项。

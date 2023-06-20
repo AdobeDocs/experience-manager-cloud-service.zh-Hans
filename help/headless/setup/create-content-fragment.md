@@ -2,10 +2,10 @@
 title: 创建内容片段 – Headless 设置
 description: 了解如何使用 AEM 的内容片段设计、创建、管理和使用独立于页面的内容，用于 Headless 投放。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ## 如何创建内容片段 {#how-to-create-a-content-fragment}
 
-内容作者将创建任意数量的内容片段，用于呈现他们创建的内容。这将是他们在 AEM 中的主要任务。对于本指南快速入门，我们只需要创建一个。
+内容作者将创建任意数量的内容片段，用于呈现他们创建的内容。这是他们在AEM中的主要任务。 对于本指南快速入门，我们只需要创建一个。
 
 1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**导航** -> **内容片段**。
 

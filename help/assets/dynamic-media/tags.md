@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6679'
+source-wordcount: '6666'
 ht-degree: 7%
 
 ---
@@ -292,7 +292,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -420,7 +420,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 
 ## 配置Adobe Analytics以进行集成 {#configuring-adobe-analytics-for-the-integration}
 
-配置Adobe Analytics后，将为集成设置以下内容：
+配置Adobe Analytics后，将为该集成设置以下内容：
 
 * 已放置并选择一个报表包。
 * Analytics变量可用于接收跟踪数据。
@@ -460,7 +460,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 
    参见 [prop和eVar概述](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
-   对于此文档，将仅使用自定义流量(prop)变量，因为它们在Analytics报表中在网页上发生操作后几分钟内变为可用。
+   对于此文档，仅使用自定义流量(prop)变量，因为它们在Analytics报表中在网页上发生操作后几分钟内变为可用。
 
    要启用新的自定义流量变量，请在Adobe Analytics的工具栏上，转到 **[!UICONTROL 管理员]** > **[!UICONTROL 报表包]**.
 
@@ -487,7 +487,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 
 ## 为集成配置Experience Platform标记 {#configuring-adobe-launch-for-the-integration}
 
-配置Experience Platform标记后，将为集成设置以下内容：
+配置Experience Platform标记后，将为该集成设置以下内容：
 
 * 创建一个新资产，将所有配置放在一起。
 * 扩展的安装和设置。 资产中安装的所有扩展的客户端代码将一起编译到一个库中。 此库稍后供网页使用。
@@ -748,7 +748,7 @@ Experience Manager配置包含以下两个主要步骤：
    * **[!UICONTROL 标题]**  — 输入描述性帐户标题。
    * **[!UICONTROL 授权服务器]**  — 返回之前打开的集成详细信息页面。 选择 **[!UICONTROL JWT]** 选项卡。 复制服务器名称（不含路径），如下所示。
 
-（示例服务器名称仅用于解释）   返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将名称粘贴到相应的字段中。例如， `https://ims-na1.adobelogin.com/`
+   返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将名称粘贴到相应的字段中。例如， `https://ims-na1.adobelogin.com/`
 （示例服务器名称仅用于解释）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

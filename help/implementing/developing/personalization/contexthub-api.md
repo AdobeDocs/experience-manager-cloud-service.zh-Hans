@@ -2,9 +2,9 @@
 title: ContextHub Javascript API参考
 description: 将ContextHub组件添加到页面后，ContextHub Javascript API将可用于您的脚本
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4620'
 ht-degree: 2%
 
 ---
@@ -697,7 +697,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 当 `triggerForPastEvents` 参数为 `true`，此函数返回 `boolean` 指示事件是否在过去发生的值：
 
-* `true`：该事件发生在过去，并将调用处理程序。
+* `true`：该事件发生在过去，并调用了处理程序。
 * `false`：该事件在过去未发生。
 
 如果 `triggerForPastEvents` 是 `false`，此函数不返回任何值。
@@ -737,7 +737,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 当 `triggerForPastEvents` 参数为 `true`，此函数返回 `boolean` 指示事件是否在过去发生的值：
 
-* `true`：该事件发生在过去，并将调用处理程序。
+* `true`：该事件发生在过去，并调用了处理程序。
 * `false`：该事件在过去未发生。
 
 如果 `triggerForPastEvents` 是 `false`，此函数不返回任何值。

@@ -1,15 +1,15 @@
 ---
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 # Adobe Experience Manager 文档内容贡献准则
 
 ## 文档理念
 
-我们深知 Adobe Experience Manager 用户在竞争非常激烈的环境中工作，他们努力提供优质的数字体验，让自己在众多竞争对手中独树一帜。因此，至关重要的是，务必要了解 Adobe 何时在 AEM 中提供先进的新工具，以及这些工具是否随附了准确且清晰的文档，从而使客户能够立即充分利用 AEM 投资并最大限度地实现投资回报。
+我们深知 Adobe Experience Manager 用户在竞争非常激烈的环境中工作，他们努力提供优质的数字体验，让自己在众多竞争对手中独树一帜。因此，当Adobe在AEM中提供先进的新工具时，这些工具必须辅以准确和清晰的文档，以使客户能够立即使用其AEM投资并最大限度地提高ROI，这一点至关重要。
 
 撰写 AEM 文档的目标是，尽快将相应的文档提供给 AEM 用户。因此，我们优先考虑提供准确的可用文档，并努力不断更新和改进文档。
 
@@ -37,11 +37,11 @@ AEM 文档涵盖标准用例。因此，通常不会记录错误、错误产生�
 
 如果您有关于改进 AEM 文档的任何想法，欢迎向我们贡献内容。但是，评论、问题和拉取请求仅适用于&#x200B;*贡献内容*。它们不用于回答有关如何使用 AEM、实施 AEM 项目，或解决技术难题的问题。
 
-如果您对AEM的使用或技术错误有任何疑问，应通过常规支持流程通过[Experience Manager支持门户](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)报告，或在[Experience Manager社区](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)中讨论。
+如果您对 AEM 的使用有任何疑问或遇到任何技术问题，可按照常规支持流程通过 [Experience Manager 支持门户](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)报告，或在 [Experience Manager 社区](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)中讨论。
 
-***AEM文档贡献内容不是Adobe客户支持的替*** 代品，任何寻求支持相关问题答案的此类贡献内容都将被拒绝。
+***AEM 文档贡献内容无法替代 Adobe 客户支持，***&#x200B;任何试图获取支持相关问题答案的此类贡献内容都将被拒绝。
 
-### 贡献内容必须明确引用受影响的文档页面。
+### 贡献内容必须明确引用受影响的文档页面
 
 如果创建问题以建议对文档进行改进，则必须包含指向受影响页面的链接。如果使用文档页面上的&#x200B;**编辑此页面**&#x200B;链接创建问题，则会创建问题并自动包含指向该页面的链接。
 

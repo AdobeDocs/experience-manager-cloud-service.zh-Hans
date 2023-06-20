@@ -2,10 +2,10 @@
 title: 了解如何在 AEM 中创建内容片段模型
 description: 了解使用内容片段模型对 Headless CMS 进行内容建模的概念和机制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 选择此选项后，您导航到模型的位置并选择&#x200B;**创建**。您可以在此处输入各种关键详细信息。
 
-默认情况下，**启用模型**&#x200B;选项已激活。这意味着，您的模型一经保存即可立即使用（用于创建内容片段）。如果需要，您可以禁用此选项 - 可以稍后启用（或禁用）现有模型。
+默认情况下，**启用模型**&#x200B;选项已激活。这意味着保存模型后，即可在创建内容片段时使用。 如果需要，您可以禁用此选项 - 可以稍后启用（或禁用）现有模型。
 
 ![创建内容片段模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -96,7 +96,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->如果作者尝试发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
+>如果作者尝试发布的内容片段尚未发布模型，则会显示一个选择列表来指示该行为，并且模型会随该片段一起发布。
 
 模型一经发布，就会&#x200B;*锁定*&#x200B;为作者的只读架构。这旨在阻止进行可能导致现有 GraphQL 架构和查询出错的更改，尤其是在发布环境中。它在控制台中由&#x200B;**已锁定**&#x200B;指示。
 

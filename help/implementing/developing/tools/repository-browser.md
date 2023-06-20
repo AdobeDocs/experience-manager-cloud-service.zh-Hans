@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: 存储库浏览器为创作、发布和预览层上的所有环境提供对存储库的只读视图。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 对于发布，默认情况下，存储库浏览器将仅显示公共内容，因此某些文件夹 `/conf` 或 `/home` 将不可见。
 
-要使这些位置可见，您需要遵循以下步骤。
+要使这些位置可见，请执行以下操作。
 
 1. 单击所选环境旁边的三个圆点，然后选择 **管理访问权限**
 

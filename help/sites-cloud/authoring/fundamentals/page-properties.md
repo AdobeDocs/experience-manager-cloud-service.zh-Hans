@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2363'
-ht-degree: 100%
+source-wordcount: '2357'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 * **品牌化**
 
-   通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+  通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
 
    * **Brand Slug**
 
@@ -57,42 +57,40 @@ ht-degree: 100%
 
 * **开启/结束时间**
 
-   >[!NOTE]
-   >
-   > 请参阅[开启和结束时间 – 触发器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)，了解有关如何配置相关自动复制的详细信息。
+  >[!NOTE]
+  >
+  > 请参阅[开启和结束时间 – 触发器配置](/help/operations/replication.md#on-and-off-times-trigger-configuration)，了解有关如何配置相关自动复制的详细信息。
 
-   >[!NOTE]
-   >如果&#x200B;**开启时间**&#x200B;或&#x200B;**结束时间**&#x200B;是过去的时间，并且已配置自动复制，则将立即触发相关操作。
+  >[!NOTE]
+  >如果&#x200B;**开启时间**&#x200B;或&#x200B;**结束时间**&#x200B;是过去的时间，并且已配置自动复制，则将立即触发相关操作。
 
    * **开启时间** – 已发布页面在发布环境中可见（呈现）的日期和时间。该页面必须手动发布或通过预配置的自动复制进行发布。
 
       * 如果已经[发布（手动）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)，此页面将保持隐匿（隐藏）状态，直到在指定时间才呈现。
       * 如果未发布并配置为自动复制，则页面将在指定时间自动发布并呈现。
       * 如果未发布且未配置为自动复制，则该页面将不会自动发布，因此，在尝试访问该页面时将显示 404。
+
    * **结束时间** – 与&#x200B;**开启时间**&#x200B;类似并且经常与其结合使用，可定义已发布页面在发布环境中隐藏的时间。
 
    * 对要立即发布并在发布环境中可用的页面，将这两个字段（**开启时间**&#x200B;和&#x200B;**结束时间**）保留为空，直到它们被停用（一般场景）。
-
 
 * **虚 URL**
 
    * 允许您输入此页面的虚 URL，以便使用更短并且/或者含意更清楚的 URL。
    * 例如，如果将网站 `http://example.com` 的虚 URL 设置为由路径 `/v1.0/startpage` 标识的 `welcome` 页面，则 `http://example.com/welcome` 将成为 `http://example.com/content/v1.0/startpage` 的虚 URL
 
-   >[!CAUTION]
-   >
-   >虚 URL：
-   >
-   >* 必须是唯一的，因此您应该确保该值没有被其他页面使用。
-   >* 不支持正则表达式模式。
-   >* 不应设置为现有页面。
-
+  >[!CAUTION]
+  >
+  >虚 URL：
+  >
+  >* 必须是唯一的，因此您应该确保该值没有被其他页面使用。
+  >* 不支持正则表达式模式。
+  >* 不应设置为现有页面。
 
    * **添加** – 点按或单击此项可显示一个字段来定义页面的虚 URL。
       * 再次点按或单击此项可添加多个字段。
       * 点按或单击&#x200B;**删除**&#x200B;图标可删除虚 URL。
    * **重定向虚 URL** – 指示您是否希望页面使用虚 URL。
-
 
 ### 高级 {#advanced}
 
@@ -123,9 +121,9 @@ ht-degree: 100%
 
    * **启用** – 允许使用身份验证来访问页面
 
-      >[!NOTE]
-      >
-      >页面的已关闭的用户组在&#x200B;**[权限](#permissions)**&#x200B;选项卡上定义。
+     >[!NOTE]
+     >
+     >页面的已关闭的用户组在&#x200B;**[权限](#permissions)**&#x200B;选项卡上定义。
 
    * **登录页面** – 要用于登录的页面
 
@@ -139,9 +137,9 @@ ht-degree: 100%
 
    * **机器人标记** – 选择机器人标记来控制搜索引擎爬网程序的行为。
 
-      >[!NOTE]
-      >
-      >部分选项之间是相互冲突的。如果发生冲突，以更宽松的选项为准。
+     >[!NOTE]
+     >
+     >部分选项之间是相互冲突的。如果发生冲突，以更宽松的选项为准。
 
    * **生成 Sitemap** – 如果选中，则系统将为此页面及其子级页面生成 sitemap.xml。
 
@@ -149,11 +147,11 @@ ht-degree: 100%
 
 * **特色图像**
 
-   选择并配置要突出显示的图像。这用于引用页面的组件；例如，Teaser、页面列表等。
+  选择并配置要突出显示的图像。这用于引用页面的组件；例如，Teaser、页面列表等。
 
    * **图像**
 
-      您可以&#x200B;**选取**&#x200B;资源，或浏览找到要上传的文件，然后选择&#x200B;**编辑**&#x200B;或&#x200B;**清除**。
+     您可以&#x200B;**选取**&#x200B;资源，或浏览找到要上传的文件，然后选择&#x200B;**编辑**&#x200B;或&#x200B;**清除**。
 
    * **替换文本** – 用于表示图像的含义和/或功能的文本；例如，供屏幕阅读器使用。
 
@@ -161,7 +159,7 @@ ht-degree: 100%
 
 * **缩略图**
 
-   配置页面缩略图
+  配置页面缩略图
 
    * **生成预览** – 生成要用作缩略图的页面预览
    * **上传图像** – 上传要用作缩略图的图像
@@ -184,8 +182,9 @@ ht-degree: 100%
 * **定位配置**
 
    * **品牌** – 定义一个[品牌以指定定位的范围](/help/sites-cloud/authoring/personalization/targeted-content.md)。
-   >[!NOTE]
-   >此选项要求用户帐户属于 `Target Administrators` 组。
+
+  >[!NOTE]
+  >此选项要求用户帐户属于 `Target Administrators` 组。
 
 ### 权限 {#permissions}
 
@@ -201,7 +200,7 @@ ht-degree: 100%
 
 * **当前 Live Copy** – 列出基于此 Blueprint 页面的页面（即 Live Copy 页面）
 
-* **转出配置** – 控制将修改传播到 Live Copy 的情况
+* **转出配置**  — 控制将修改传播到Live Copy的情况
 
 ### Live Copy {#live-copy}
 
@@ -224,7 +223,7 @@ ht-degree: 100%
 
    * **Live Copy 继承** – 如果选中，Live Copy 配置将在所有子项上都有效
    * **从父项继承转出配置** – 如果选中，则从页面的父页面继承转出配置
-   * **选择转出配置** – 定义从 Blueprint 传播修改的情况，并且仅在未选择&#x200B;**从父项继承转出配置**&#x200B;时可用
+   * **选择转出配置**  — 定义从Blueprint传播修改的情况，并且仅在以下情况下可用 **从父项继承转出配置** 未选择
 
 ### 预览 {#preview}
 
@@ -277,7 +276,7 @@ ht-degree: 100%
 1. 使用以下任一方式为所需的页面选择&#x200B;**属性**&#x200B;选项：
    * [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * 此时将使用相应的选项卡显示页面属性。
+   * 使用相应的选项卡显示页面属性。
 1. 查看或编辑所需的属性。
 1. 然后，使用&#x200B;**保存**&#x200B;来保存您的更新，接着使用&#x200B;**关闭**&#x200B;返回到控制台。
 
@@ -313,7 +312,7 @@ ht-degree: 100%
 * 在浏览 **Sites** 控制台时
 * 在使用&#x200B;**搜索**&#x200B;找到一组页面后
 
-选择页面后，单击或点按&#x200B;**属性选项**，此时将会显示批量属性：
+选择页面，然后单击或点按 **“属性”选项**，则会显示批量属性：
 
 ![批量编辑页面属性](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -342,6 +341,6 @@ ht-degree: 100%
 * **编辑**
 
    * 您可以更新可用字段中的值。
-      * 当您选择&#x200B;**完成**&#x200B;时，新值将会应用于所有选定页面。
+      * 当您选择时，新值将应用于所有选定的页面 **完成**.
       * 当字段有多个值时（例如“标记”），您可以附加一个新值，也可以删除相同的值。
-   * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如，文本 `<Mixed Entries>`。
+   * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如文本 `<Mixed Entries>`.

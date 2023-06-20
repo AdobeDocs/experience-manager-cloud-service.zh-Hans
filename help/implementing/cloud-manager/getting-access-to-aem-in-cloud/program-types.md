@@ -2,9 +2,9 @@
 title: 程序和程序类型
 description: 了解 Cloud Manager 的层级，以及不同类型的程序如何适应其结构以及它们之间的差异。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 100%
 
 ---
@@ -59,5 +59,5 @@ $ git clone {URL}
    * 请参阅[生产程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)文档，了解更多详细信息。
 * 通常，创建&#x200B;**沙盒程序**&#x200B;是为了提供培训、运行演示、支持、概念验证 (POC) 或归档等目的。
    * 沙盒环境并不意味着要承载实时流量，并且会有生产程序所没有的限制。
-   * 它将包括 Sites 和 Assets，并将自动填充 Git 分支，其中包括示例代码、开发环境和非生产管道。
-   * 请参阅[沙盒程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)文档，了解更多详细信息。
+   * 它包括 Sites 和 Assets，交付时自动填充 Git 分支，其中包括示例代码、开发环境和非生产管道。
+   * 请参阅文档[沙盒程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)，了解更多详细信息。

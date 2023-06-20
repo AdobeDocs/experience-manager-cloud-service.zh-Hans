@@ -2,10 +2,10 @@
 title: 代码质量测试
 description: 了解管道代码质量测试的工作方式以及其提高部署质量的方式。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 100%
+source-wordcount: '1175'
+ht-degree: 97%
 
 ---
 
@@ -116,7 +116,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-如果 `myco-all-1.0.0-SNAPSHOT.zip` 中的唯一项目是两个跳过的内容包，则将扫描两个嵌入包而不是“所有”内容包。
+如果只有在 `myco-all-1.0.0-SNAPSHOT.zip` 是两个跳过的内容包，则会扫描两个嵌入包而不是“所有”内容包。
 
 对于产生数十个嵌入包的项目，此优化已被证明可将每次管道执行时间节省 10 分钟以上。
 
@@ -126,4 +126,3 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >
 >* 此优化不会影响部署到 AEM 的包。
 >* 由于将根据文件名匹配嵌入的内容包和跳过的内容包，因此，如果多个跳过的内容包具有完全相同的文件名或文件名在嵌入时发生变化，则无法进行此优化。
-

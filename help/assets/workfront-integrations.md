@@ -4,9 +4,9 @@ description: 集成简介 [!DNL Assets] 和 [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: e8607f5dfc9ad5fd5ababec47b4933bee131e566
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1317'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ Adobe优惠至 [集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Asset
 |----|----|----|-----|-----|
 | 部署方法 | 适合的 [!DNL Assets] 主动出击。 | Assets Essentials | Adobe Managed Services，内部部署 | 云服务 |
 | **常规** |
-| 发送数字文件 [!DNL Workfront] 到 [!DNL Assets] | WF文档的最新版本可以上传到AEM Assets，它将作为文档的新版本链接。 | ✓ | ✓ | ✓ |
+| 发送数字文件 [!DNL Workfront] 到 [!DNL Assets] | 可以将最新版本的WF文档上传到AEM Assets，该文档作为新版本链接。 | ✓ | ✓ | ✓ |
 | 手动将AEM文件夹链接到Workfront对象 | 现有AEM文件夹可以链接为Workfront文件夹，其子资产可以链接为新的Workfront文档。 | ✓ | ✓ | ✓ |
 | 链接 [!DNL Assets] 至Workfront对象 | AEM中的现有资源可以链接到新的Workfront文档，或作为现有文档的新版本。 | ✓ | ✓ | ✓ |
 | 添加到链接文件夹的资源会自动发送到AEM | 如果将文档添加到链接的文件夹，则会自动将关联的资源作为新资源上传到AEM Assets。 | ✓ | ✓ | ✓ |
@@ -77,7 +77,7 @@ Adobe优惠至 [集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Asset
 | 支持多个Workfront环境连接到一个AEM环境 | 来自多个Workfront环境的用户可以连接到单个AEM环境。 | ✓ | 否 | ✓ |
 | 支持多个AEM环境连接到单个Workfront环境 | 单个Workfront环境中的用户可以在多个AEM环境之间发送或链接资源。 | ✓ | ✓ | ✓ |
 | **元数据** |
-| 将Workfront资源元数据映射到AEM Assets | Workfront对象和自定义表单属性可以映射到AEM资源元数据属性。 值将在初始上传/链接时推送。 | ✓ | ✓ | ✓ |
+| 将Workfront资源元数据映射到AEM Assets | Workfront对象和自定义表单属性可以映射到AEM资源元数据属性。 值在初始上传/链接时推送。 | ✓ | ✓ | ✓ |
 | 在Workfront中自动创建文档自定义Forms | 使用AEM工作流将自定义表单附加到Workfront文档、任务和问题。 | 否 | ✓ | 否 |
 | AEM Assets和Workfront之间的元数据双向自动更新 | 在AEM Assets和Workfront之间自动更新元数据。 资源最初必须从Workfront推送到AEM，并且Workfront资源元数据必须映射到AEM资源，才能正确进行双向元数据更新。 | 否 | ✓ | 否 |
 | Workfront中的将元数据映射到AEM的实时视图 | 在“Workfront文档详细信息”和“文档摘要”面板中查看更新后的映射到AEM的元数据。 | ✓ | 否 | ✓ |

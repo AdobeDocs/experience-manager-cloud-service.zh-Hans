@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用客户端库
 description: AEM提供了客户端库文件夹，通过该文件夹，您可以在存储库中存储客户端代码(clientlibs)，将其组织为不同类别，并定义每个类别的代码何时以及如何提供给客户端
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2562'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ AEM将站点的CSS和Javascript收集到一个位于中心位置的文件中，�
 
 ## 创建客户端库文件夹 {#creating-clientlib-folders}
 
-客户端库必须位于 `/apps`. 这是为了更好地将代码与内容和配置隔离开。
+客户端库必须位于 `/apps`. 此规则是更好地将代码与内容和配置隔离所必需的。
 
 对于下的客户端库 `/apps` 要访问，将使用代理servelt。 仍会在客户端库文件夹上强制执行ACL，但servlet允许通过读取内容 `/etc.clientlibs/` 如果 `allowProxy` 属性设置为 `true`.
 
@@ -184,8 +184,8 @@ AEM中的客户端库文件夹支持许多其他功能。 但是，在AEMas a Cl
 
 其他文件夹属性包括允许控制依赖项和嵌入，但通常不再需要这些属性，因此建议不要使用这些属性：
 
-* `dependencies`：这是此库文件夹所依赖的其他客户端库类别的列表。 例如，给定两个 `cq:ClientLibraryFolder` 节点 `F` 和 `G`，如果文件位于 `F` 需要另一个文件 `G` 为了正常运行，则至少一个 `categories` 之 `G` 应该属于 `dependencies` 之 `F`.
-* `embed`：用于嵌入其他库中的代码。 If节点 `F` 嵌入节点 `G` 和 `H`，则生成的HTML将是来自节点的内容连接 `G` 和 `H`.
+* `dependencies`：这是此库文件夹所依赖的其他客户端库类别的列表。 例如，给定两个 `cq:ClientLibraryFolder` 节点 `F` 和 `G`，如果文件位于 `F` 需要另一个文件 `G` 才能正常运行，则 `categories` 之 `G` 应该属于 `dependencies` 之 `F`.
+* `embed`：用于嵌入其他库中的代码。 If节点 `F` 嵌入节点 `G` 和 `H`，则生成的HTML是来自节点的内容连接 `G` 和 `H`.
 
 ### 链接到依赖项 {#linking-to-dependencies}
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 100%
+source-wordcount: '1361'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->您可以在发布时选择多个项目（即多个语言文件夹），以便一次性发布多个翻译。
+>在发布以一次发布多个翻译时，您可以选择多个项目（即多个语言文件夹）。
 
 发布内容时还有其他选项（例如，计划发布时间），它们超出了此历程的范围。有关更多信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 

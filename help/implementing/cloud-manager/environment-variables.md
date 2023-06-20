@@ -2,10 +2,10 @@
 title: Cloud Manager 环境变量
 description: 标准环境变量可以通过 Cloud Manager 进行配置和管理，并提供给运行时环境，以便在 OSGi 配置中使用。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->您必须是&#x200B;[**部署管理员**&#x200B;角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)成员，才能添加或修改环境变量。
+>您必须是 [**部署管理员** 角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) 添加或修改环境变量。
 
 1. 登录 Adobe Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
 1. Cloud Manager 列出了可用的各种项目。选择要管理的项目。

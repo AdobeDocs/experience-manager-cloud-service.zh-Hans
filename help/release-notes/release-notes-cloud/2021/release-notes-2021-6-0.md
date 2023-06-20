@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 版的发行说明。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 36b0af857d5b9b179f01a43b5fd36c51b48c795f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 48%
+source-wordcount: '1441'
+ht-degree: 47%
 
 ---
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 的发布日期是 2021 年
 
   ![Dispatcher环境](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
-* 添加了新代码质量规则来验证 `damAssetLucene` 索引的结构。 请参阅[自定义 DAM 资产 Lucene Oak 指数](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)，了解更多详细信息。
+* 添加了新代码质量规则来验证 `damAssetLucene` 索引的结构。 请参阅[自定义 DAM 资源 Lucene Oak 指数](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)，了解更多详细信息。
 
 * “环境详细信息”页面现在将酌情显示发布和预览服务的多个域名。 请参阅[环境详情](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)，了解更多详细信息。
 
@@ -87,7 +87,7 @@ AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### [!DNL Assets] 中的新增功能 {#ga-features-assets}
 
-* 内容自动化功能允许 [!DNL Experience Manager Assets] 利用 [!DNL Adobe Creative Cloud] 用于大规模自动化资产生产的API。 它通过显着减少创建同一资源的变体所需的时间和迭代来提高内容速度。 该功能不需要任何代码，并且可在DAM内使用。
+* 内容自动化功能允许 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] 用于大规模自动化资产生产的API。 它通过显着减少创建同一资源的变体所需的时间和迭代来提高内容速度。 该功能不需要任何代码，并且可在DAM内使用。
 * [!DNL Adobe Asset Link] v3.0用于 [!DNL Adobe Photoshop]， [!DNL Adobe Illustrator]、和 [!DNL Adobe InDesign] 和 [!DNL Adobe Asset Link] v2.0用于 [!DNL Adobe XD] 已发布。 它提供：
 
    * 支持 [!DNL Assets Essentials].

@@ -1,8 +1,8 @@
 ---
 title: 图像编辑器
-description: 图像编辑器是AEM的核心部分，组件可以使用该编辑器来促进内容作者操作图像。
+description: 图像编辑器是AEM的一个核心部分，组件可以使用它来促进内容作者对图像的操作。
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
@@ -11,7 +11,7 @@ ht-degree: 10%
 
 # 图像编辑器 {#image-editor}
 
-图像编辑器是AEM的核心部分，组件可以使用该编辑器来促进内容作者操作图像。
+图像编辑器是AEM的一个核心部分，组件可以使用它来促进内容作者对图像的操作。
 
 ## 图像映射的相对单位 {#relative-units-for-image-map}
 
@@ -29,7 +29,7 @@ ht-degree: 10%
 
 `[SHAPE(COORDINATES)"HREF"|"TARGET"|"ALT"|(RELATIVE_COORDINATES)]`
 
-示例:
+示例：
 
 `[rect(0,0,10,10)"https://www.adobe.com"|"_self"|"alt"|(0,0,0.8,0.8)]`
 `[circle(10,10,10)"https://www.adobe.com"|"_self"|"alt"|(0.8,0.8,0.8)]`

@@ -4,10 +4,10 @@ description: 了解如何使用“内容片段”控制台管理 AEM 内容片�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 87%
+source-wordcount: '2053'
+ht-degree: 90%
 
 ---
 
@@ -34,10 +34,9 @@ ht-degree: 87%
 >* 创作页面时；请参阅[使用内容片段进行页面创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
 >* 用于[使用带有 GraphQL 的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)的 Headless 内容投放。
 
-
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资产**。 它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[资产](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。 它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[资源](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 内容片段控制台 {#content-fragments-console}
 
@@ -71,10 +70,10 @@ ht-degree: 87%
 
 1. **新内容片段**&#x200B;对话框随即会打开，您可以从此处指定：
 
-   * **位置** – 这将使用当前位置自动完成，但您可以根据需要选择其他位置
+   * **位置**  — 使用当前位置自动完成，但您可以根据需要选择其他位置
    * **内容片段模型** – 从下拉列表中选择要用作片段基础的模型
    * **标题**
-   * **名称** – 此操作将根据&#x200B;**标题**，但您可以根据需要进行编辑
+   * **名称**  — 已根据 **标题**，但您可以根据需要进行编辑
    * **描述**
 
    ![“新建内容片段”对话框](assets/cfm-managing-new-cf-01.png)
@@ -185,23 +184,23 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **保存**&#x200B;将保存最新更改并保留在编辑器中。
    * **保存并关闭**&#x200B;将保存最新更改并退出编辑器。
 
-   >[!CAUTION]
-   >
-   >要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
+  >[!CAUTION]
+  >
+  >要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
 
-   >[!NOTE]
-   >
-   >在保存之前，可以保留在编辑器中并进行一系列更改。
+  >[!NOTE]
+  >
+  >在保存之前，可以保留在编辑器中并进行一系列更改。
 
-   >[!CAUTION]
-   >
-   >除了仅保存您的更改外，这些操作还会更新任何引用，并确保 Dispatcher 按需要刷新。 这些更改可能需要一些时间才能处理。 因此，对于大型/复杂/重载系统，性能可能会受到影响。
-   >
-   >在使用&#x200B;**保存并关闭**&#x200B;时请记住这一点，然后快速重新进入片段编辑器以进行并保存进一步的更改。
+  >[!CAUTION]
+  >
+  >除了仅保存您的更改外，这些操作还会更新任何引用，并确保 Dispatcher 按需要刷新。 这些更改可能需要一些时间才能处理。 因此，对于大型/复杂/重载系统，性能可能会受到影响。
+  >
+  >在使用&#x200B;**保存并关闭**&#x200B;时请记住这一点，然后快速重新进入片段编辑器以进行并保存进一步的更改。
 
 * **关闭**
 
-   将退出编辑器，而不保存最新更改（即自上次&#x200B;**保存**）。
+  将退出编辑器，而不保存最新更改（即自上次&#x200B;**保存**）。
 
 在编辑您的内容片段时，AEM 会自动创建版本，以确保在您取消更改时可以恢复先前的内容（使用&#x200B;**关闭**&#x200B;而不保存）：
 
@@ -232,7 +231,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 将内容与片段关联 {#associating-content-with-your-fragment}
 
-您还可以[关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)与片段。 这提供了一个连接，以便在将资产（即图像）添加到内容页面时，可以（可选）与片段一起使用资产（即图像）。
+您还可以[关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)与片段。 这提供了一个连接，以便在将资源（即图像）添加到内容页面时，可以（可选）与片段一起使用资源（即图像）。
 
 ## 查看和编辑片段的元数据（属性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -240,62 +239,70 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 发布和预览片段 {#publishing-and-previewing-a-fragment}
 
-您可以将内容片段发布到：
+您可以将您的内容片段发布到：
 
-* 此 **[发布服务](/help/overview/architecture.md#runtime-architecture)**  — 完全公开访问
+* **[发布服务](/help/overview/architecture.md#runtime-architecture)** – 完全公开访问
 
-* 此 **[预览服务](/help/overview/architecture.md#runtime-architecture)**  — 在内容完全可用之前进行预览
+* **[预览服务](/help/overview/architecture.md#runtime-architecture)** – 在完全可用之前预览内容
 
-   >[!CAUTION]
-   将内容片段发布到 **预览服务** 只能从 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)；使用 **Publish** 操作。
+  >[!CAUTION]
+  >
+  只能通过[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)使用将内容片段发布到&#x200B;**预览服务**&#x200B;的功能；使用&#x200B;**发布**&#x200B;操作。
 
-   >[!NOTE]
-   有关预览环境的更多详细信息，请参阅：
-   * [管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-   * [配置预览层的 OSGi 设置](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-   * [使用 Developer Console 调试预览](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >[!NOTE]
+  >
+  有关预览环境的更多详细信息，请参阅：
+  >
+  * [管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  * [配置预览层的 OSGi 设置](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  * [使用 Developer Console 调试预览](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
-
-要使用发布内容片段，请执行以下操作 **Publish** 工具栏中的选项 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)：
+要使用[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)工具栏中的&#x200B;**发布**&#x200B;选项发布您的内容片段：
 
 >[!CAUTION]
+>
 如果您的片段基于模型，则应确保[模型已发布](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
-如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
+>
+如果发布的内容片段尚未发布模型，则会显示一个选择列表来指示该情况，并且模型会随该片段一起发布。
 
 1. 从列表中选择一个或多个片段。
 
-1. 在工具栏中，选择 **Publish** 然后执行以下任一操作以打开相应的对话框：
+1. 从工具栏中选择&#x200B;**发布**，然后执行以下任一操作以打开相应的对话框：
 
-   * **现在**  — 选择 **发布服务**，或 **预览服务**；确认后，片段将立即发布
+   * **现在**  — 选择 **发布服务**，或 **预览服务**；确认后，片段会立即发布
    * **计划**  — 除了所需的服务之外，您还可以选择片段的发布日期和时间
 
-   必要时，您需要指定要发布的引用。 默认情况下，引用也会发布到Preview服务，以确保内容中没有中断。
+   必要时，需要指定要发布的引用。 默认情况下，引用也会发布到预览服务，以确保内容中没有中断。
 例如，对于计划的发布请求：
    ![“发布”对话框](assets/cfm-publish-01.png)
 
 1. 确认发布操作。
 
-您还可以发布到 **发布服务** 从 [内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor) 使用：
+您也可以使用以下功能从[内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor)发布到&#x200B;**发布服务**：
 * **快速发布**
 * **管理发布**
 
 >[!NOTE]
-在您之后 [发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段将在页面引用中列出。
+>
+在您之后 [发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)中，片段在页面引用中列出。
 
 >[!CAUTION]
-片段发布和/或引用后，当作者再次打开片段进行编辑时，AEM 将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
+>
+片段发布、引用或两者兼有后，当作者再次打开片段进行编辑时，AEM会显示警告。 警告作者，对片段所做的更改也会影响引用的页面。
 
 ## 取消发布片段 {#unpublishing-a-fragment}
 
-要取消发布内容片段，请选择一个或多个片段，然后 **取消发布** 在的工具栏中 [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). 您可以选择 **现在** 或 **已计划**.
+要取消发布内容片段，请选择一个或多个片段，然后在[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)的工具栏中选择&#x200B;**取消发布。**&#x200B;您可以选择&#x200B;**现在**&#x200B;或&#x200B;**计划。**
 
-打开相关对话框后，您可以选择相应的服务：
-![“取消发布”对话框](assets/cfm-unpublish-01.png)
+当相关对话框打开时，您可以选择适当的服务：
+![取消发布对话框](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
+>
 此 **取消发布** 操作仅在发布的片段可用时可见。
 
 >[!CAUTION]
+>
 如果片段已从其他片段或页面引用，您将看到一条警告消息，需要您确认是否继续。
 
 ## 删除片段 {#deleting-a-fragment}
@@ -306,12 +313,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. 选择片段。
 
    >[!NOTE]
+   >
    **删除**&#x200B;操作不能作为快速操作使用。
 
 3. 从工具栏中选择&#x200B;**删除**。
 4. 确认&#x200B;**删除**&#x200B;操作。
 
    >[!CAUTION]
+   >
    如果该片段已被另一个片段或页面引用，您将看到一条警告消息，并且需要确认您要继续执行&#x200B;**强制删除**。 片段及其内容片段组件将从任何内容页面中删除。
 
 ## 查找片段的父引用 {#parent-references-fragment}
@@ -325,7 +334,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 内容片段的时间线 {#timeline-for-content-fragments}
 
 >[!NOTE]
-此功能仅在&#x200B;**资产**&#x200B;控制台中可用
+>
+此功能仅在&#x200B;**资源**&#x200B;控制台中可用
 
 除了标准选项外，[时间线](/help/assets/manage-digital-assets.md#timeline)提供特定于内容片段的信息和操作：
 
@@ -345,16 +355,18 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **删除**
 
 >[!NOTE]
+>
 评论包括：
-* 所有资产的标准功能
+>
+* 所有资源的标准功能
 * 在时间线中制造
-* 与片段资产相关
+* 与片段资源相关
 >
 注释（适用于内容片段）包括：
+>
 * 在片段编辑器中输入
 * 特定于片段中选定的文本区段
 >
-
 
 例如：
 
@@ -363,7 +375,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 比较片段版本 {#comparing-fragment-versions}
 
 >[!NOTE]
-此功能仅在&#x200B;**资产**&#x200B;控制台中可用
+>
+此功能仅在&#x200B;**资源**&#x200B;控制台中可用
 
 选择特定版本后，[时间线](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中的&#x200B;**与当前比较**&#x200B;操作可用。
 
@@ -373,7 +386,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 所选版本 **v&lt;*x.y*>**（右）
 
-它们将并排显示，其中：
+它们并排显示，其中：
 
 * 任何差异都会突出显示
 
@@ -386,6 +399,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * **完成**&#x200B;将返回控制台
 
 >[!NOTE]
+>
 比较片段时无法编辑片段内容。
 
 ![比较](assets/cfm-managing-06.png)
@@ -393,12 +407,13 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## 恢复到某个版本  {#reverting-to-a-version}
 
 >[!NOTE]
-此功能仅在&#x200B;**资产**&#x200B;控制台中可用
+>
+此功能仅在&#x200B;**资源**&#x200B;控制台中可用
 
 您可以还原到片段的特定版本：
 
 * 直接从[时间线](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)。
 
-   选择所需的版本，然后&#x200B;**还原到此版本**&#x200B;操作。
+  选择所需的版本，然后&#x200B;**还原到此版本**&#x200B;操作。
 
 * [将版本与当前版本进行比较](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions)时，您可以&#x200B;**还原**&#x200B;到所选版本。

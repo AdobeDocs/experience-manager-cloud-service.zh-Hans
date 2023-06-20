@@ -2,10 +2,10 @@
 title: 了解 AEM 中的 Headless 内容及其翻译方法
 description: 了解 Headless 概念、它们如何映射到 AEM 以及 AEM 翻译理论。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 全栈内容交付 {#full-stack}
 
-自易于使用的大型内容管理系统 (CMS) 兴起以来，组织便已将其用作管理消息、品牌化和通信的中心位置。通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
+自易于使用的大型内容管理系统(CMS)兴起以来，组织一直将其用作管理消息传送、品牌推广和通信的中心位置。 通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
 
 ![经典全栈 CMS](/help/journey-headless/developer/assets/full-stack.png)
 

@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 7d74772bf716e4a818633a18fa17412db5a47199
-workflow-type: ht
-source-wordcount: '3595'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '3579'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cl
 
 在调用后，通常需要大约 15 分钟来预配联网基础设施。对 Cloud Manager 的[网络基础设施 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 的调用将显示状态“就绪”。
 
-如果整个程序的灵活端口出口配置已就绪，则必须对每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点，以在环境级别启用联网，并可以选择声明任何端口转发规则。可以根据各个环境来配置参数以提供灵活性。
+如果整个程序的灵活端口出口配置已就绪，则必须对每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点，以在环境级别启用联网，并可以选择声明任何端口转发规则。可根据环境配置参数以提供灵活性。
 
 应为 80/443 以外的任何目标端口说明端口转发规则，但应仅在不使用 http 或 https 协议的情况下，通过指定目标主机集（名称或 IP 以及端口）来进行。对于每个目标主机，必须将指向的目标端口映射到 30000 到 30999 之间的端口。
 
@@ -70,7 +70,7 @@ API 应在几秒内响应，指示更新的状态，然后在大约 10 分钟后
 
 ### 禁用灵活端口出口 {#disabling-flexible-port-egress-provision}
 
-要&#x200B;**禁用**&#x200B;特定环境的灵活端口出口，请调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
+至 **disable** 灵活端口从特定环境的出口，调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 有关 API 的详细信息，请参阅 [Cloud Manager API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
@@ -195,7 +195,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 专用出口 IP 地址的配置方法与[灵活端口出口](#configuring-flexible-port-egress-provision)相同。
 
-主要差别在于，该流量始终从专用的唯一 IP 地址传出。要查找该 IP，请使用 DNS 解析器来确定与 `p{PROGRAM_ID}.external.adobeaemcloud.com` 关联的 IP 地址。该 IP 地址不应改变，但如果未来需要改变，则会提供高级通知。
+主要差别在于，该流量始终从专用的唯一 IP 地址传出。要查找该 IP，请使用 DNS 解析器来确定与 `p{PROGRAM_ID}.external.adobeaemcloud.com` 关联的 IP 地址。该IP地址预计不会更改，但如果将来需要更改，则会提供高级通知。
 
 除了 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点中的灵活端口出口支持的路由规则之外，专用出口 IP 地址还支持 `nonProxyHosts` 参数。这使得您可以声明一组主机，并且这组主机应通过共享 IP 地址范围而不是专用 IP 进行路由，由于通过共享 IP 传出的流量可能会进一步进行优化，此功能可能会很有用。`nonProxyHost` URL 可能会遵循 `example.com` 或 `*.example.com` 的模式，这种情况下仅支持在域的开头使用通配符。
 
@@ -203,7 +203,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 禁用专用出口 IP 地址 {#disabling-dedicated-egress-IP-address}
 
-为了&#x200B;**禁用**&#x200B;来自特定环境的专用出口 IP 地址，调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
+至 **disable** 来自特定环境的专用出口IP地址，调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
 有关 API 的详细信息，请参阅 [Cloud Manager API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)。
 
@@ -331,7 +331,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### 调试注意事项 {#debugging-considerations}
 
-为了验证该流量是否确实在预期的专用 IP 地址上传出，请查看目标服务中的日志（如果可用）。否则，调用 [https://ifconfig.me/IP](https://ifconfig.me/IP) 等调试服务可能会有帮助，调试服务会返回调用 IP 地址。
+要验证通信是否确实在预期的专用IP地址上传出，请查看目标服务中的日志（如果可用）。 否则，调用 [https://ifconfig.me/IP](https://ifconfig.me/IP) 等调试服务可能会有帮助，调试服务会返回调用 IP 地址。
 
 ## 旧版专用出口地址客户 {#legacy-dedicated-egress-address-customers}
 
@@ -356,7 +356,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 在调用后，通常需要 45 到 60 分钟来预配联网基础设施。可以调用 API 的 GET 方法以返回当前状态，这最终会从 `creating` 翻转到 `ready`。请参考 API 文档来了解所有状态。
 
-如果整个程序的 VPN 配置已就绪，则必须对每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点，以在环境级别启用联网并声明任何端口转发规则。可以根据各个环境来配置参数以提供灵活性。
+如果整个程序的 VPN 配置已就绪，则必须对每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点，以在环境级别启用联网并声明任何端口转发规则。可根据环境配置参数以提供灵活性。
 
 有关详细信息，请参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration)。
 
@@ -542,7 +542,7 @@ Header always set Cache-Control private
 
 ## 附加发布区域的高级网络配置 {#advanced-networking-configuration-for-additional-publish-regions}
 
-当将附加区域添加到已配置高级网络的环境中时，来自与高级网络规则匹配的附加发布区域的流量将默认路由通过主要区域。但是，如果主要区域变得不可用，在附加区域中未启用高级网络时，则高级网络流量将被丢弃。如果您希望在其中一个区域发生中断时优化延迟并提高可用性，则有必要为附加发布区域启用高级网络。以下部分描述了两种不同的场景。
+当将附加区域添加到已配置高级网络的环境中时，来自与高级网络规则匹配的附加发布区域的流量将默认路由通过主要区域。但是，如果主要区域不可用，则当其他区域未启用高级联网时，将丢弃高级联网流量。 如果您希望在其中一个区域发生中断时优化延迟并提高可用性，则有必要为附加发布区域启用高级网络。以下部分描述了两种不同的场景。
 
 >[!NOTE]
 >
@@ -554,15 +554,15 @@ Header always set Cache-Control private
 
 如果已在主要区域启用高级网络配置，请执行以下步骤：
 
-1. 如果您已锁定基础设施，使得专用 AEM IP 地址被列入允许列表，则建议暂时禁用该基础设施中的任何拒绝规则。如果不这样做，您自己的基础设施将在短时间内拒绝来自新区域的 IP 地址的请求。请注意，如果您已通过完全限定域名（FQDN）锁定您的基础设施（例如，`p1234.external.adobeaemcloud.com`），则没有必要这样做，因为所有 AEM 区域都会从相同的 FQDN 输出高级网络流量
-1. 如高级网络文档中所述，通过对 Cloud Manager Create Network Infrastructure API 的 POST 调用，为次要区域创建程序范围的网络基础设施。负载的 JSON 配置相对于主要区域的唯一区别是区域属性
+1. 如果您已锁定基础设施，使得专用 AEM IP 地址被列入允许列表，则建议暂时禁用该基础设施中的任何拒绝规则。如果不这样做，则会在短时间内由您自己的基础设施拒绝来自新区域IP地址的请求。 请注意，如果您已通过完全限定域名(FQDN)锁定基础架构，则无需执行此操作，(`p1234.external.adobeaemcloud.com`，例如)，因为所有AEM区域都从同一FQDN输出高级网络流量
+1. 如高级网络文档中所述，通过对 Cloud Manager Create Network Infrastructure API 的 POST 调用，为次要区域创建程序范围的网络基础设施。有效负载的JSON配置相对于主区域的唯一区别是区域属性
 1. 如果您的基础设施需要由 IP 锁定以允许 AEM 流量，请添加与 `p1234.external.adobeaemcloud.com` 匹配的 IP。每个区域应该有一个匹配的 IP。
 
 #### 尚未在任何区域配置高级网络 {#not-yet-configured}
 
 该过程与前面的说明大体相似。但是，如果生产环境尚未启用高级网络，则有机会通过首先在暂存环境中启用配置来测试配置：
 
-1. 通过 POST 调用 [Cloud Manager 创建网路基础设施 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 为所有区域创建网络基础设施。负载的 JSON 配置相对于主要区域的唯一区别是区域属性。
+1. 通过 POST 调用 [Cloud Manager 创建网路基础设施 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 为所有区域创建网络基础设施。有效负载的JSON配置与主区域之间的唯一区别是region属性。
 1. 对于暂存环境，通过运行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 启用和配置环境范围内的高级网络。有关更多信息，请在[此处](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)参阅 API 文档
 1. 如有必要，最好通过 FQDN（例如 `p1234.external.adobeaemcloud.com`）锁定外部基础设施。您可以通过 IP 地址进行锁定
 1. 如果暂存环境按预期工作，请为生产启用并配置环境范围内的高级网络配置。

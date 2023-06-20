@@ -2,9 +2,9 @@
 title: 示例ContextHub存储候选项
 description: ContextHub提供了几个可在解决方案中使用的示例商店候选项
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](cont
 
 >[!NOTE]
 >
->Chrome 50.x中引入的安全策略要求所有与地理位置相关的调用都通过安全连接进行。 因此，如果AEM也通过https运行，则AEM强制对地理位置API调用使用https。 否则，将使用http以遵守相同来源的策略。
+>Chrome 50.x中引入的安全策略要求所有与地理位置相关的调用都通过安全连接进行。 因此，如果AEM也通过https运行，则AEM强制对地理位置API调用使用https。 否则，会使用http来遵守相同来源的策略。
 >
 >参见 [此Google博客帖子](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) 以了解有关Chrome中更改的更多详细信息。
 

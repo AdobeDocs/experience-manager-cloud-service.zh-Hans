@@ -2,9 +2,9 @@
 title: 实施阶段
 description: 确保您的代码和内容已准备好迁移到云
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2353'
+source-wordcount: '2337'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 * 向您介绍Cloud Manager，AEM持续集成和交付框架，用于将代码部署到AEMas a Cloud Service
 * 使用内容传输工具快速掌握
-* 描述必须使用的代码重构工具，以使代码符合AEMas a Cloud Service的现代化要求
+* 描述必须使用的代码重构工具，以便您可以根据AEMas a Cloud Service对代码进行现代化改造
 
 ## 使用 Cloud Manager {#using-cloud-manager}
 
@@ -49,7 +49,7 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 ![图像](/help/journey-migration/assets/exec-image1.png)
 
-我们将在以下各章中开始详细介绍实现此目标所需的工具。
+我们将在以下各章中开始详细介绍您必须使用的工具，以便您实现这一目标。
 
 ## 内容迁移 {#content-migration}
 
@@ -67,10 +67,10 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 现在应该开始重构现有功能，使其与Cloud Services兼容。
 
-为此，您需要查看文档，其中详细说明了开始重构代码所需的基本工具：
+首先，查看详细说明基本工具的文档，然后开始重构您的代码：
 
 
-* 在规划过程中，最好列出必须重构才能与AEMas a Cloud Service兼容的区域。 您可以查看 [开发准则](/help/implementing/developing/introduction/development-guidelines.md) 有关如何重构和优化代码以进行Cloud Service的更多详细信息。
+* 在规划期间，最好是列出必须重构才能与AEMas a Cloud Service兼容的区域。 您可以查看 [开发准则](/help/implementing/developing/introduction/development-guidelines.md) 有关如何重构和优化代码以进行Cloud Service的更多详细信息。
 * 详细了解如何 [管理配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) 在AEMas a Cloud Service中。
 * 了解如何通过下载 [AEMAS A CLOUD SERVICESDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
 * 最后，请熟悉 [AEMas a Cloud ServiceJava API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
@@ -79,11 +79,11 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 * 观看以下视频，了解如何本地安装Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+  >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * 观看以下视频，了解如何配置Dispatcher SDK：
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### 思维方式的改变 {#a-change-in-mindset}
 
@@ -163,7 +163,7 @@ Cloud Manager管道支持执行针对暂存环境运行的测试。
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -177,8 +177,8 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 | 迁移迭代 | 开始日期 | 估计结束日期 | 依赖项 | 估计持续时间（以天为单位） | 附加详细信息/措施项 |
 |---|---|---|---|---|---|
-| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |  |  |  |  |  |
-| PRDCLONE-PUBLISH-TOP-UP-CSSTAGE-AUTHOR |  |  |  |  |  |
+| PRDCLONE-AUTHOR-INITIAL-USRMAP-CSSTAGE-AUTHOR |   |   |   |   |   |
+| PRDCLONE-PUBLISH-TOP-UP-CSSTAGE-AUTHOR |   |   |   |   |   |
 
 如上表所示，遵循特定命名格式标识迁移迭代很有帮助，例如： **PRDCLONE** 对于源AEM环境， **创作/发布** AEMas a Cloud Service环境， **CSSTAGE-AUTHOR** AEMas a Cloud Service实例，等等。
 
@@ -209,7 +209,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 | 源（环境/实例/URL） | 目标（环境/实例/URL） | 迁移集名称、类型（初始或增补） | 迁移集大小(MB) | 用户映射（是/否） | 提取持续时间（开始、结束、所用时间） | 摄取持续时间（开始、结束、所用时间） | 问题/解决方案/详细信息 |
 |---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
+|   |   |   |   |   |   |   |   |
 
 ## 内容迁移策略和时间表 {#content-strategyand-timeline}
 
@@ -241,7 +241,7 @@ One more important datapoint is the amount of time it takes to complete the [use
    * 在同一网络区域中
    * 将提供用户和组等生产内容
    * 克隆创作和发布 — 在群集或发布场中每个节点一个
-* 选择要迁移的内容子集，以便：
+* 选择已迁移内容的子集，以便：
    * 它是所有可用内容类型的组合
    * 包含所有用户和组
 * 包括25%的内容或高达1 TB的内容（以较小者为准）。

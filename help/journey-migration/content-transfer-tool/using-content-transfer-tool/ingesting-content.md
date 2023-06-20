@@ -2,9 +2,9 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1732'
 ht-degree: 12%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 12%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. 查看摄取核对清单，并确保已完成所有步骤。 这些是确保成功摄取的必要步骤。 您将能够继续到 **下一个** 仅当核对清单已完成时执行此步骤。
+1. 查看摄取核对清单，并确保已完成所有步骤。 这些是确保成功摄取的必要步骤。 继续执行 **下一个** 仅当核对清单完成时执行此步骤。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -36,20 +36,20 @@ ht-degree: 12%
 
    * 选择包含提取的数据作为源的迁移集。
       * 迁移集将在长时间不活动后过期，因此预计提取将在执行提取后不久进行。 审核 [迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 了解详细信息。
-   * 选择目标环境。 这是将摄取迁移集内容的地方。 选择层。 （创作/发布）。 不支持快速开发环境。
+   * 选择目标环境。 在此环境中摄取迁移集的内容。 选择层。 （创作/发布）。 不支持快速开发环境。
 
    >[!NOTE]
    >以下注释适用于摄取内容：
    > 如果源是Author，建议将其摄取到目标上的Author层。 同样，如果源是Publish，则目标也应是Publish。
-   > 如果目标层为 `Author`时，创作实例将在摄取期间关闭，并且将对用户（例如，作者或执行维护的任何人等）不可用。 这是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 请确保您的团队了解此事实。 另请注意，环境在创作引入期间似乎处于休眠状态。
+   > 如果目标层为 `Author`时，创作实例会在摄取期间关闭，并对用户（例如，作者或执行维护的任何人）不可用。 原因是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 确保您的团队了解此事实。 另请注意，环境在创作引入期间似乎处于休眠状态。
    > 您可以运行可选的预复制步骤，以显着加快摄取阶段。 请参阅 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 了解更多详细信息。
-   > 如果使用预复制引入（对于S3或Azure数据存储），建议先单独运行创作引入。 这将在稍后运行时加快发布引入。
-   > 摄取不支持快速开发环境(RDE)目标。 它们不会显示为可能的目标选择，即使用户有权访问它。
+   > 如果使用预复制引入（对于S3或Azure数据存储），建议先单独运行创作引入。 这样可加快稍后运行的发布引入。
+   > 摄取不支持快速开发环境(RDE)目标，即使用户有权访问，摄取也不会显示为可能的目标选择。
 
    >[!IMPORTANT]
    > 以下重要注意事项适用于摄取内容：
-   > 只有属于本地环境时，您才能够启动到目标环境的引入 **AEM管理员** Cloud Service创作服务上的组。 如果无法开始引入，请参阅 [无法开始引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 了解更多详细信息。
-   > 如果设置 **划出** 在摄取之前启用，它会删除整个现有存储库并创建一个新存储库以将内容摄取到。 这意味着它会重置所有设置，包括目标Cloud Service实例上的权限。 对于添加到的管理员用户也是如此 **管理员** 组。 您需要重新添加到管理员组才能开始引入。
+   > 仅当属于本地环境时，才可以开始摄取到目标环境 **AEM管理员** Cloud Service创作服务上的组。 如果无法开始引入，请参阅 [无法开始引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 了解更多详细信息。
+   > 如果设置 **划出** 在摄取之前启用，它会删除整个现有存储库并创建一个新存储库以将内容摄取到。 这意味着它会重置所有设置，包括目标Cloud Service实例上的权限。 对于添加到的管理员用户也是如此 **管理员** 组。 必须重新将您添加到管理员组才能开始引入。
 
 1. 单击 **摄取**
 
@@ -118,11 +118,11 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->令牌将可供属于本地的用户使用 **AEM管理员** Cloud Service创作服务上的组。
+>令牌可供属于本地的用户使用 **AEM管理员** Cloud Service创作服务上的组。
 
 ### 无法开始引入 {#unable-to-start-ingestion}
 
-只有属于本地环境时，您才能够启动到目标环境的引入 **AEM管理员** Cloud Service创作服务上的组。 如果您不属于AEM管理员组，则在尝试开始引入时，您将看到如下所示的错误。 您可以要求管理员将您添加到本地 **AEM管理员** 或者询问令牌本身，然后将其粘贴到 **迁移令牌输入** 字段。
+仅当属于本地环境时，才可以开始摄取到目标环境 **AEM管理员** Cloud Service创作服务上的组。 如果您不属于AEM管理员组，则在尝试开始引入时，您将看到如下所示的错误。 您可以要求管理员将您添加到本地 **AEM管理员** 或者询问令牌本身，然后将其粘贴到 **迁移令牌输入** 字段。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -138,7 +138,7 @@ ht-degree: 12%
 > 
 > 显示了“迁移令牌”字段，因为在少数情况下，实际上不允许检索该令牌。 通过允许手动提供，它可允许用户快速开始引入，而无需任何其他帮助。 如果提供了令牌，但消息仍然显示，则检索令牌不是问题。
 
-* AEMas a Cloud Service会维护环境状态，有时可能由于一些正常原因需要重新启动迁移服务。 如果该服务正在重新启动，则无法访问该服务，但很快便可使用。
+* AEMas a Cloud Service会维护环境状态，有时可能由于一些正常原因需要重新启动迁移服务。 如果该服务正在重新启动，则无法访问，但通常很快即可使用。
 * 可能正在实例上运行另一个进程。 例如，如果Release Orchestrator正在应用更新，则系统可能忙，并且迁移服务定期不可用。 这一点，以及破坏暂存或生产实例的可能性，是强烈建议在摄取期间暂停更新的原因。
 * 如果 [已应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 通过Cloud Manager，它将阻止Cloud Acceleration Manager访问迁移服务。 无法为引入添加IP地址，因为其地址非常动态。 目前，唯一的解决方案是在摄取运行时禁用IP允许列表。
 * 可能还有其他需要调查的原因。 如果摄取仍然失败，请联系Adobe客户关怀部门。

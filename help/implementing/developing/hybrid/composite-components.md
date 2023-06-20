@@ -2,16 +2,16 @@
 title: SPA 中的复合组件
 description: 了解如何创建自己的复合组件，这些组件由使用AEM单页应用程序(SPA)编辑器的其他组件组成。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
 
 # SPA 中的复合组件 {#composite-components-in-spas}
 
-复合组件通过将多个基本组件组合到一个组件中来利用AEM组件的模块化特性。 常见的复合组件用例是卡组件，由图像和文本组件组合而成。
+复合组件通过将多个基本组件组合到一个组件中，来使用AEM组件的模块化特性。 常见的复合组件用例是卡组件，由图像和文本组件组合而成。
 
 在AEM单页应用程序(SPA)编辑器框架中正确实施复合组件后，内容作者可以像拖放任何其他组件一样拖放此类组件，但仍然能够单独编辑构成复合组件的每个组件。
 
@@ -56,7 +56,7 @@ ht-degree: 1%
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-文本组件将类似于以下内容。
+文本组件类似于以下内容。
 
 ```javascript
 import React from 'react';

@@ -3,9 +3,9 @@ title: Screensas a Cloud Service的视频缩略图支持
 description: 本页介绍如何在Screensas a Cloud Service中为视频添加缩略图支持。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -62,13 +62,13 @@ ht-degree: 1%
 
 1. 单击 **预览**.
 
-1. 如果已在组件上设置视频，则会播放该视频。 如果未设置，并且设置了缩略图，则将播放缩略图。 否则，该组件被视为未配置，将被跳过。
+1. 如果已在组件上设置视频，则会播放视频。 如果未设置，并且设置了缩略图，则会播放缩略图。 否则，该组件会被视为未配置并被跳过。
 
 ## 在视频中使用缩略图时支持的用例 {#understand-use-case}
 
 视频中的缩略图支持以下用例：
 
-* 将跳过未设置任何内容的视频组件。
+* 跳过未设置任何内容的视频组件。
 
 * 仅具有缩略图集的视频组件将播放缩略图。
 

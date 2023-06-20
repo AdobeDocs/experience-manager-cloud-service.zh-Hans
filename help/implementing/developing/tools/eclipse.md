@@ -2,9 +2,9 @@
 title: 适用于 Eclipse 的 AEM 开发人员工具
 description: 适用于 Eclipse 的 AEM 开发人员工具
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1184'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ _适用于Eclipse的Experience Manager开发人员工具_ 是一个基于 [适�
 
 >[!NOTE]
 >
->在macOS上，您需要右键单击 **Eclipse.app** 然后选择 **显示包内容** 以查找您的 `eclipse.ini`**.**
+>在macOS上，您需要右键单击 **Eclipse.app**，然后选择 **显示包内容** 查找您的 `eclipse.ini`**.**
 
 ## 如何安装适用于Eclipse的AEM开发人员工具 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -56,7 +56,7 @@ _适用于Eclipse的Experience Manager开发人员工具_ 是一个基于 [适�
 1. 单击&#x200B;**下一步**。
 1. 在 **安装详细信息** 窗口，单击 **下一个** 再来一次。
 1. 接受许可协议，然后单击 **完成**.
-1. 单击 **RestartNow** 以重新启动Eclipse。
+1. 单击 **RestartNow** 重新启动Eclipse。
 
 ## AEM视角 {#the-aem-perspective}
 
@@ -165,27 +165,27 @@ _适用于Eclipse的Experience Manager开发工具_ 提供一个可让您完全�
    1. 替换的内容 `<workspaceFilter>` 元素的开头的包规则 `/apps` 和 `/etc`
       * 例如：
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/apps/foo"/>
-            <filter root="/apps/foundation/components/bar"/>
-            <filter root="/etc/designs/foo"/>
-         </workspaceFilter>
-         ```
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/apps/foo"/>
+           <filter root="/apps/foundation/components/bar"/>
+           <filter root="/etc/designs/foo"/>
+        </workspaceFilter>
+        ```
+
    1. 然后打开 `PROJECT.ui.content/src/main/content/META-INF/filter.xml`.
    1. 将规则替换为以开头的包中的规则 `/content`.
       * 例如：
 
-         ```xml
-         <?xml version="1.0" encoding="UTF-8"?>
-         <workspaceFilter version="1.0">
-            <filter root="/content/foo"/>
-            <filter root="/content/dam/foo"/>
-            <filter root="/content/usergenerated/content/foo"/>
-         </workspaceFilter>
-         ```
-
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <workspaceFilter version="1.0">
+           <filter root="/content/foo"/>
+           <filter root="/content/dam/foo"/>
+           <filter root="/content/usergenerated/content/foo"/>
+        </workspaceFilter>
+        ```
 
 1. 确保保存所有更改。 现在，您可以将该新内容同步到您的AEM实例。
 

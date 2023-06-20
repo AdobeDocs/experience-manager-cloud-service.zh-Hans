@@ -4,9 +4,9 @@ description: 了解AE的基础知识；使用包管理器管理包。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3782'
 ht-degree: 4%
 
 ---
@@ -445,7 +445,7 @@ Package Manager分为四个主要功能区域：
 
 **检查内容**
 
-此验证会检查正在添加哪些权限、如何处理这些权限（合并/替换），以及当前权限是否会受到影响。
+此验证会检查正在添加的权限、对这些权限的处理方式（合并/替换），以及当前权限是否受到影响。
 
 **如何报告**
 
@@ -453,7 +453,7 @@ Package Manager分为四个主要功能区域：
 
 **错误状态**
 
-无法提供显式错误。 验证仅指示安装包是否会添加或影响任何新ACL权限。
+无法提供显式错误。 验证仅指示安装包是否添加或影响任何新ACL权限。
 
 **错误解决**
 
@@ -522,13 +522,13 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 ### 安装包 {#installing-packages}
 
-上传资源包只会将该资源包内容添加到存储库，但不可访问。 您必须安装上传的包，才能使用包的内容。
+上传资源包只会将该资源包内容添加到存储库，但不可访问。 您必须安装上传的包才能使用包的内容。
 
 >[!CAUTION]
 >
 >安装包可能会覆盖或删除现有内容。 仅当您确保包不会删除或覆盖您需要的内容时，才上载包。
 
-在安装包之前，包管理器会自动创建一个快照包，其中包含将被覆盖的内容。 如果您卸载软件包，将重新安装此快照。
+在安装包之前，包管理器会自动创建一个快照包，其中包含被覆盖的内容。 如果您卸载软件包，则会重新安装此快照。
 
 1. [访问包管理器。](#accessing)
 

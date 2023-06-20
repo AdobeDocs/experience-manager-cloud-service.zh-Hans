@@ -2,10 +2,10 @@
 title: 从模板创建站点
 description: 了解如何使用站点模板快速创建新的 AEM 站点。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 100%
+source-wordcount: '1485'
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 100%
 
    ![选择模板](assets/select-site-template.png)
 
-1. 为站点提供标题。可以提供站点名称，也可以从标题生成站点名称（如果被忽略）。
+1. 为站点提供标题。如果忽略，则可以从标题提供或生成站点名称。
 
    * 站点标题显示在浏览器标题栏中。
    * 站点名称会成为 URL 的一部分。

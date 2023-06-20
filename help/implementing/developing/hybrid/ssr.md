@@ -2,9 +2,9 @@
 title: SPA和服务器端渲染
 description: 在SPA中使用服务器端渲染(SSR)可以加快页面的初始加载，然后将进一步的渲染传递给客户端。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SS
 
 以下字段可用于配置：
 
-* **内容路径模式**  — 正则表达式，以便匹配部分内容（如有必要）
+* **内容路径模式**  — 匹配部分内容的正则表达式（如有必要）
 * **远程端点URL**  — 负责生成内容的端点的URL
    * 如果不在本地网络中，则使用安全的HTTPS协议。
 * **其他请求标头**  — 要添加到发送到远程端点的请求的其他标头
@@ -72,7 +72,7 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SS
 
 >[!NOTE]
 >
->此配置利用 [远程内容呈现器、](#remote-content-renderer) 提供了其他扩展和自定义选项。
+>此配置使用 [远程内容呈现器、](#remote-content-renderer) 提供了其他扩展和自定义选项。
 
 ## AEM驱动的通信流 {#aem-driven-communication-flow}
 
@@ -130,7 +130,7 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SS
 
 ## 规划SSR {#planning-for-ssr}
 
-通常只需在服务器端渲染应用程序的一部分。 常见的示例是在服务器端呈现页面初始加载时显示在折叠上方的内容。 这通过向客户端交付已渲染的内容来节省时间。 当用户与SPA交互时，其他内容由客户端渲染。
+通常，只需在服务器端渲染应用程序的一部分。 一个常见的示例是，在页面的初始加载时，显示在折叠上方的内容在服务器端呈现。 这通过向客户端交付已渲染的内容来节省时间。 当用户与SPA交互时，其他内容由客户端渲染。
 
 在考虑为SPA实施服务器端渲染时，您需要查看应用程序的哪些部分需要渲染。
 
@@ -138,7 +138,7 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SS
 
 SPA组件可由客户端（在浏览器中）或服务器端渲染。 在渲染服务器端时，不存在浏览器属性，例如窗口大小和位置。 因此，SPA组件应当同构，而不对其呈现的位置做出任何假设。
 
-要利用SSR，您需要在AEM以及负责服务器端渲染的Adobe I/O Runtime上部署代码。 大多数代码将相同，但特定于服务器的任务将有所不同。
+要使用SSR，您必须在AEM和Adobe I/O Runtime上部署代码，后者负责服务器端渲染。 大多数代码是相同的，但特定于服务器的任务有所不同。
 
 ## AEM中适用于SPA的SSR {#ssr-for-spas-in-aem}
 
@@ -160,7 +160,7 @@ AEM中适用于SPA的SSR需要Adobe I/O Runtime，它用于渲染应用程序内
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-此 `RemoteContentRendererRequestHandlerServlet` 可用于以编程方式设置请求配置。 `DefaultRemoteContentRendererRequestHandlerImpl`（提供的默认请求处理程序实施）允许您创建多个OSGi配置，以将内容结构中的位置映射到远程端点。
+此 `RemoteContentRendererRequestHandlerServlet` 可用于以编程方式设置请求配置。 `DefaultRemoteContentRendererRequestHandlerImpl`（提供的默认请求处理程序实施）允许您创建多个OSGi配置，以便将内容结构中的位置映射到远程端点。
 
 要添加自定义请求处理程序，请实施 `RemoteContentRendererRequestHandler` 界面。 请务必设置 `Constants.SERVICE_RANKING` 组件属性到大于100的整数，该整数的排名是 `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -194,4 +194,4 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 要求 {#requirements}
 
-servlet利用Sling模型导出器来序列化组件数据。 默认情况下， `com.adobe.cq.export.json.ContainerExporter` 和 `com.adobe.cq.export.json.ComponentExporter` 支持作为Sling模型适配器。 如有必要，您可以使用 `RemoteContentRendererServlet` 并实施 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. 其他类必须扩展 `ComponentExporter`.
+servlet使用Sling模型导出器序列化组件数据。 默认情况下， `com.adobe.cq.export.json.ContainerExporter` 和 `com.adobe.cq.export.json.ComponentExporter` 支持作为Sling模型适配器。 如有必要，您可以使用 `RemoteContentRendererServlet` 并实施 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. 其他类必须扩展 `ComponentExporter`.

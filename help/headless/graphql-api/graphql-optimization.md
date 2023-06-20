@@ -2,10 +2,10 @@
 title: 优化 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中对内容片段进行筛选、分页和排序时优化 GraphQL 查询，以实现 headless 内容交付。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 100%
+source-wordcount: '1193'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ AEM 提供了两种方法来优化 GraphQL 查询：
 
 >[!NOTE]
 >
->出于技术原因（例如灵活性、片段嵌套），AEM 无法将整个筛选工作委派给 JCR。
+>由于技术原因（例如，灵活性、嵌套片段），AEM无法将整个筛选委派给JCR。
 
 此技术保留了 GraphQL 筛选提供的灵活性，同时将尽可能多的筛选工作委派给 JCR。
 
@@ -49,21 +49,20 @@ AEM 提供了两种方法来优化 GraphQL 查询：
 AEM 中的 GraphQL 支持两种类型的分页：
 
 * [基于限制/偏移的分页](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-此分页用于列表查询；它们以 
-`List` 结尾；例如 `articleList`。
+此分页用于列表查询；它们以`List` 结尾；例如 `articleList`。
 要使用它，您必须提供要返回的第一个项目的位置 (`offset`) 和要返回的项目数（`limit` 或页面大小）。
 
 * [基于光标的分页](/help/headless/graphql-api/content-fragments.md#paginated-first-after)（由 `first` 和 `after` 表示）
 这将为每个项目提供一个唯一 ID；也称为光标。
 在查询中，您指定上一页的最后一项的光标，以及页面大小（要返回的项目的最大数量）。
 
-   由于基于光标的分页不适合基于列表的查询的数据结构，因此，AEM 引入了 `Paginated` 查询类型；例如 `articlePaginated`。所使用的数据结构和参数遵循 [GraphQL 光标连接规范](https://relay.dev/graphql/connections.htm)。
+  由于基于光标的分页不适合基于列表的查询的数据结构，因此，AEM 引入了 `Paginated` 查询类型；例如 `articlePaginated`。所使用的数据结构和参数遵循 [GraphQL 光标连接规范](https://relay.dev/graphql/connections.htm)。
 
-   >[!NOTE]
-   >
-   >AEM 目前支持前向分页（使用 `after`/`first` 参数）。
-   >
-   >后向分页（使用 `before`/`last` 参数）不受支持。
+  >[!NOTE]
+  >
+  >AEM 目前支持前向分页（使用 `after`/`first` 参数）。
+  >
+  >后向分页（使用 `before`/`last` 参数）不受支持。
 
 ## 排序 {#sorting}
 
@@ -130,7 +129,7 @@ AEM 中的 GraphQL 支持两种类型的分页：
 
 ### 筛选表达式中的逻辑运算 {#logical-operations-in-filter-expressions}
 
-如果在嵌套片段上进行筛选，则仍可以通过提供使用 `AND` 运算符的顶级字段的附加筛选来利用 JCR 筛选。
+如果您正在筛选嵌套片段，您仍然可以应用JCR筛选，方法是为顶级字段提供一个随附的筛选器，该字段是使用组合的 `AND` 运算符。
 
 一个典型用例是，对顶级片段的 `_path` 字段使用筛选器来限制查询的范围，然后筛选可能位于顶级或嵌套片段上的其他字段。
 

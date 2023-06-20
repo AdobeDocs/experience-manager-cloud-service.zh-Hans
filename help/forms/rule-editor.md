@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6346'
+source-wordcount: '6321'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 * 创建规则时，一个典型的经验法则是在您编写规则的对象的上下文中考虑它。 假定您要根据用户在字段A中指定的值隐藏或显示字段B。在这种情况下，您将评估字段A的条件，并根据它返回的值，触发对字段B的操作。
 
-   因此，如果您在字段B（评估条件的对象）上编写规则，请使用condition-action结构或When规则类型。 同样，在字段A上使用操作条件结构或显示或隐藏规则类型。
+  因此，如果您在字段B（评估条件的对象）上编写规则，请使用condition-action结构或When规则类型。 同样，在字段A上使用操作条件结构或显示或隐藏规则类型。
 
 * 有时，必须根据一个条件执行多个操作。 在这种情况下，建议使用condition-action构造。 在此构造中，您可以计算一个条件一次，并指定多个操作语句。
 
-   例如，要根据检查用户在字段A中指定的值的条件隐藏字段B、C和D，请编写一条规则，其中具有条件 — 操作结构或字段A上的规则类型When，并指定操作以控制字段B、C和D的可见性。否则，您需要对字段B、C和D使用三个单独的规则，其中每个规则检查条件并显示或隐藏各自的字段。 在此示例中，在一个对象上编写When规则类型比在三个对象上编写Show或Hide规则类型更有效。
+  例如，要根据检查用户在字段A中指定的值的条件隐藏字段B、C和D，请编写一条规则，其中具有条件 — 操作结构或字段A上的规则类型When，并指定操作以控制字段B、C和D的可见性。否则，您需要对字段B、C和D使用三个单独的规则，其中每个规则检查条件并显示或隐藏各自的字段。 在此示例中，在一个对象上编写When规则类型比在三个对象上编写Show或Hide规则类型更有效。
 
 * 要根据多个条件触发操作，建议使用action-condition构造。 例如，要通过评估字段B、C和D的条件来显示和隐藏字段A，请在字段A中使用显示或隐藏规则类型。
 * 如果规则中包含适用于一个条件的一个操作，请使用条件 — 操作或操作条件构造。
@@ -537,71 +537,71 @@ While writing JavaScript code in the rule editor, the following visual cues help
 支持 `jsdoc` 标记：
 
 * **私人**
-语法：私有函数不作为自定义函数包括在内。`@private`
+语法： `@private`
 专用函数未作为自定义函数包含在内。
 
 * **名称**
-语法：可选 `@name funcName <Function Name>`
+语法： `@name funcName <Function Name>`
 或者 `,` 您可以使用： `@function funcName <Function Name>` **或** `@func` `funcName <Function Name>`.
-   `funcName` 是函数的名称（不允许有空格）。
-   `<Function Name>` 是函数的显示名称。
+  `funcName` 是函数的名称（不允许有空格）。
+  `<Function Name>` 是函数的显示名称。
 
 * **会员**
-语法：将命名空间附加到函数。`@memberof namespace`
+语法： `@memberof namespace`
 将命名空间附加到函数。
 
 * **参数**
-语法：或者，您可以使用： `@param {type} name <Parameter Description>`
+语法： `@param {type} name <Parameter Description>`
 或者，您可以使用： `@argument` `{type} name <Parameter Description>` **或** `@arg` `{type}` `name <Parameter Description>`.
 显示函数使用的参数。 一个函数可以有多个参数标记，每个参数按其出现顺序具有一个标记。
-   `{type}` 表示参数类型。 允许的参数类型包括：
+  `{type}` 表示参数类型。 允许的参数类型包括：
 
    1. 字符串
    1. 数字
    1. 布尔型
    1. 范围
 
-   范围是指自适应表单的字段。 当表单使用延迟加载时，您可以使用 `scope` 以访问其字段。 您可以在加载字段时访问字段，也可以将字段标记为全局字段。
+  范围是指自适应表单的字段。 当表单使用延迟加载时，您可以使用 `scope` 以访问其字段。 您可以在加载字段时访问字段，也可以将字段标记为全局字段。
 
-   所有参数类型均被归入上述参数类型之一。 不支持无。 确保选择以上类型之一。 类型不区分大小写。 参数中不允许有空格 `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  所有参数类型均被归入上述参数类型之一。 不支持无。 确保选择以上类型之一。 类型不区分大小写。 参数中不允许有空格 `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
 * **返回类型**
-语法：或者，您可以使用 `@return {type}`
+语法： `@return {type}`
 或者，您可以使用 `@returns {type}`.
 添加有关函数的信息，例如其目标。
-{type}表示函数的返回类型。 允许的返回类型包括：
+{type} 表示函数的返回类型。 允许的返回类型包括：
 
    1. 字符串
    1. 数字
    1. 布尔型
 
-   所有其他退货类型均归入上述任一类型之下。 不支持无。 确保选择以上类型之一。 返回类型不区分大小写。
+  所有其他退货类型均归入上述任一类型之下。 不支持无。 确保选择以上类型之一。 返回类型不区分大小写。
 
    * **此**
-语法： 
-`@this currentComponent`
-   使用@this可引用在其中写入规则的自适应表单组件。
+语法： `@this currentComponent`
 
-   以下示例基于字段值。 在以下示例中，规则隐藏了表单中的一个字段。 此 `this` 部分 `this.value` 是指用于编写规则的底层自适应表单组件。
+  使用@this可引用在其中写入规则的自适应表单组件。
 
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-   ```
+  以下示例基于字段值。 在以下示例中，规则隐藏了表单中的一个字段。 此 `this` 部分 `this.value` 是指用于编写规则的底层自适应表单组件。
 
-   >[!NOTE]
-   >
-   >使用自定义函数之前的注释进行摘要。 在遇到标记之前，摘要可以扩展到多行。 将大小限制为单个，以便在规则生成器中提供简要说明。
+  ```
+     /**
+     * @function myTestFunction
+     * @this currentComponent
+     * @param {scope} scope in which code inside function is run.
+     */
+     myTestFunction = function (scope) {
+        if(this.value == "O"){
+              scope.age.visible = true;
+        } else {
+           scope.age.visible = false;
+        }
+     }
+  ```
+
+  >[!NOTE]
+  >
+  >使用自定义函数之前的注释进行摘要。 在遇到标记之前，摘要可以扩展到多行。 将大小限制为单个，以便在规则生成器中提供简要说明。
 
 **添加自定义函数**
 

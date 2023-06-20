@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 站点模板来预定义站点结构和初�
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 >
 >不应混淆 AEM 站点模板与[页面模板。](/help/sites-cloud/authoring/features/templates.md)站点模板定义了站点的整体结构。页面模板定义了单个页面的结构和初始内容。
 >
->不应混淆 AEM 站点模板与 [AEM 站点主题。](site-themes.md)AEM 站点主题仅包含 AEM 站点的样式信息。AEM 站点模板定义站点结构和初始内容，并包含 AEM 站点主题，以便[快速创建站点](create-site.md)。
+>不应混淆 AEM 站点模板与 [AEM 站点主题。](site-themes.md)AEM 站点主题仅包含 AEM 站点的样式信息。AEM站点模板定义站点结构和初始内容，并包含要允许的AEM站点主题 [快速站点创建。](create-site.md)
 
 ## 将站点模板添加到 AEM {#adding}
 

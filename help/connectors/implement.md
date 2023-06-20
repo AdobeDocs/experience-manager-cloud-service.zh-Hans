@@ -2,10 +2,10 @@
 title: 实施 AEM 连接器
 description: 实施 AEM 连接器
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 100%
+source-wordcount: '966'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ AEM 是一个前沿的 Web 体验管理解决方案，提供了许多潜在的�
 * 配置和呈现自定义 UI 组件。例如，允许作者拖放视频组件并将特定视频配置为在实时站点上播放。
 * 使用合作伙伴服务对资产执行操作。例如，在发布页面时将资产发送到视频平台。
 * 在 AEM Admin Console 中分析站点、页面或资产。例如，提供针对现有页面或未发布的页面的 SEO 建议。
-* 对由外部服务维护的用户数据的页面级访问。例如，利用人口统计信息来个性化站点体验。了解 ContextHub，它是一个用于存储、操作和呈现上下文数据的框架。
+* 对由外部服务维护的用户数据的页面级访问。例如，使用人口统计信息使网站体验个性化。 了解 ContextHub，它是一个用于存储、操作和呈现上下文数据的框架。
 * 翻译站点副本或资产元数据。请参阅 [AEM 翻译框架引导连接器](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector)，查看使用 AEM 翻译框架的示例代码，它是翻译连接器的首选实施。
 
 
@@ -52,7 +52,7 @@ Experience Manager as a Cloud Service [文档](../overview/introduction.md)提�
 包结构规则
 -----------------------
 
-为了支持滚动部署，AEM as a Cloud Service 包（以连接器为例）在“不可变”和“可变”内容之间有严格的区分。应按包中的以下内容来明确区分各个包：
+为了支持滚动部署，AEMas a Cloud Service包（以连接器为例）在“不可变”和“可变”内容之间进行了严格分离。 应按包中的以下内容来明确区分各个包：
 
 * `/apps`
 * `/content` 和 `/conf`
@@ -74,7 +74,7 @@ Experience Manager as a Cloud Service [文档](../overview/introduction.md)提�
 上下文感知配置
 -----------------------------
 
-[上下文感知配置](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)允许跨不同的文件夹对配置进行分层，包括 `/libs`、`/apps`、`/conf` 以及 `/conf` 下的子文件夹。它支持继承，因此客户可以配置全局配置，同时对每个微型网站进行特定更改。由于可以将此功能用于云服务配置，因此，连接器代码应使用上下文感知配置 API 引用配置，而不是引用特定的配置节点。
+[上下文感知配置](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)允许跨不同的文件夹对配置进行分层，包括 `/libs`、`/apps`、`/conf` 以及 `/conf` 下的子文件夹。它支持继承，因此客户可以配置全局配置，同时对每个微型网站进行特定更改。由于可以将此功能用于Cloud Services配置，因此连接器代码应使用上下文感知配置API引用配置，而不是引用特定配置节点。
 
 如果在连接器中使用修改后的配置，则构建连接器以包含/合并对连接器提供的默认配置的任何未来更新与任何客户配置。请记住，在没有客户警告和同意的情况下更改自定义（如由客户更改的）内容或配置可能会破坏其连接器（或产生意外行为）。
 

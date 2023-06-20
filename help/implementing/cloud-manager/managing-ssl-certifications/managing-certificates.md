@@ -2,10 +2,10 @@
 title: 管理 SSL 证书
 description: 了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 100%
+source-wordcount: '634'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 * **绿色** – 此状态表示您的证书自当前日期起至少 60 天内有效。
 
 * **橙色** – 此状态表示您的证书将在 60 天内到期。
-   * 现在需要确保您有计划续订证书并通过 Cloud Manager UI 替换该证书，从而避免可能的站点访问中断。
+   * 现在需要确保您有续订证书的计划，并通过Cloud Manager用户界面替换证书，以避免可能的站点访问或中断。
    * Cloud Manager 将在 UI 中定期发送通知，提醒您证书即将到期。
 
 * **红色** – 此状态表示 SSL 证书已过期。
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色成员，才能在 Cloud Manager 中更新 SSL 证书。
+>用户必须是 **业务负责人** 或 **部署管理员** 用于更新Cloud Manager中SSL证书的角色。
 
 ## 替换 SSL 证书 {#replace-ssl-certificate}
 
@@ -59,11 +59,11 @@ Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。 
 
 >[!NOTE]
 >
->用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色成员，才能在 Cloud Manager 中删除 SSL 证书。
+>用户必须是 **业务负责人** 或 **部署管理员** 角色以删除Cloud Manager中的SSL证书。
 
 ## 预先存在的 CDN 配置 {#pre-existing-cdn}
 
-如果您的 SSL 证书已有 CDN 配置，则 **SSL 证书**&#x200B;页面上将显示一条信息性消息，鼓励您通过 UI 添加这些配置，以便它们在 Cloud Manager 中可见和可配置。
+如果您的SSL证书已有CDN配置，则 **SSL证书** 页面，鼓励您通过UI添加这些配置，以便它们在Cloud Manager中可见和可配置。
 
 使用 UI 迁移所有预先存在的环境配置后，消息将消失。 消息可能需要 1 – 2 个工作日才能消失。
 

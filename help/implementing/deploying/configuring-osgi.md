@@ -3,9 +3,9 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: 具有机密值和特定于环境的值的OSGi配置
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3318'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ OSGi配置通过组件的永久标识(PID)来定位OSGi组件，该PID默认为O
 
 如果同一PID有多个配置可用，则应用匹配运行模式数最多的配置。
 
-此规则的粒度处于PID级别。 这意味着您不能在中为同一PID定义某些属性 `/apps/example/config.author/` 以及中更具体的 `/apps/example/config.author.dev/` 相同PID的。 匹配运行模式数量最多的配置将对整个PID有效。
+此规则的粒度处于PID级别。 这意味着您不能在中为同一PID定义某些属性 `/apps/example/config.author/` 以及中更具体的 `/apps/example/config.author.dev/` 相同PID的。 匹配运行模式数量最多的配置对整个PID有效。
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ AEM SDK快速入门Jar的AEM Web控制台可用于配置OSGi组件，并将OSGi�
 
 >[!NOTE]
 >
->AEM Web控制台的配置UI不会写入 `.cfg.json` 文件放入存储库。 因此，请注意这一点，以避免在本地开发期间(当AEM项目定义的OSGi配置可能与生成的配置不同时)出现潜在的意外行为。
+>AEM Web控制台的配置UI不会写入 `.cfg.json` 文件放入存储库。 因此，请注意，当AEM项目定义的OSGi配置可能与生成的配置不同时，此工作流可避免在本地开发期间潜在的意外行为。
 
 1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户
 1. 导航到 **osgi** > **配置**

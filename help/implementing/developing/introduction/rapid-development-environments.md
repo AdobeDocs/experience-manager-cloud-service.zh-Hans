@@ -1,17 +1,17 @@
 ---
 title: 快速开发环境
-description: 了解如何利用快速开发环境在云环境中进行快速开发迭代。
+description: 了解如何使用快速开发环境在云环境中进行快速开发迭代。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3325'
+source-wordcount: '3317'
 ht-degree: 5%
 
 ---
 
 # 快速开发环境 {#rapid-development-environments}
 
-为了部署更改，当前的云开发环境需要使用采用称为CI/CD管道的广泛代码安全和质量规则的流程。 对于需要快速和反复更改的情况，Adobe引入了快速开发环境（简称RDE）。
+要部署更改，当前的云开发环境需要使用采用称为CI/CD管道的广泛代码安全和质量规则的流程。 对于需要快速和反复更改的情况，Adobe引入了快速开发环境（简称RDE）。
 
 RDE允许开发人员快速部署和审查更改，从而最大限度地减少测试经验证可在本地开发环境中工作的功能所需的时间。
 
@@ -26,7 +26,7 @@ RDE允许开发人员快速部署和审查更改，从而最大限度地减少�
 
 RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发环境不同，开发人员可以使用本地命令行工具将本地构建的代码同步到RDE。
 
-每个项目都配有RDE。 对于Sandbox帐户，它们将在不使用数小时后休眠。
+每个项目都配有RDE。 对于Sandbox帐户，它们会在数小时未使用后休眠。
 
 创建后，会将RDE设置为最新可用的AEM版本。 可以使用Cloud Manager执行的RDE重置将循环RDE并将其设置为最新可用的AEM版本。
 
@@ -50,7 +50,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
 
    * **添加环境**&#x200B;选项也可在&#x200B;**环境**&#x200B;选项卡上使用。
 
-      ![“环境”信息卡](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![“环境”信息卡](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * **添加环境**&#x200B;选项可能由于缺少权限或根据许可的资源而被禁用。
 
@@ -128,8 +128,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
    >
    >如果您看到 `Warning: cloudmanager:list-programs is not a aio command.` 错误，您需要安装 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 通过运行以下命令：
    >
-   >
-   ```
+   >```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
@@ -148,11 +147,11 @@ Adobe建议通过以下工作流程来开发新功能：
 
 * 当达到中间里程碑并通过AEMas a Cloud ServiceSDK在本地成功验证时，代码应提交到尚未成为主行一部分的Git功能分支，尽管提交到Git是可选的。 构成“中间里程碑”的因素因团队习惯而异。 示例包括几行新代码、半天的工作或完成一个子功能。
 
-* 如果RDE已由其他功能使用并且您希望 [将其重置为默认状态](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重置将需要几分钟的时间，并且所有现有内容和代码都将被删除。 您可以使用RDE status命令确认RDE已就绪。 RDE将带回最新的AEM发行版本。
+* 如果RDE已由其他功能使用并且您希望 [将其重置为默认状态](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重置将需要几分钟的时间，并且所有现有内容和代码都会被删除。 您可以使用RDE status命令确认RDE已就绪。 RDE将带回最新的AEM发行版本。
 
-   >[!IMPORTANT]
-   >
-   > 如果您的暂存环境和生产环境未收到自动AEM版本更新，并且远低于最新的AEM版本版本，请注意，在RDE上运行的代码可能与代码在暂存环境和生产环境中的运行方式不匹配。 在这种情况下，在将代码部署到生产环境之前，在暂存环境中对代码执行彻底测试尤为重要。
+  >[!IMPORTANT]
+  >
+  > 如果您的暂存环境和生产环境未收到自动AEM版本更新，并且远低于最新的AEM版本版本，请注意，在RDE上运行的代码可能与代码在暂存环境和生产环境中的运行方式不匹配。 在这种情况下，在将代码部署到生产环境之前，在暂存环境中对代码执行彻底测试尤为重要。
 
 
 * 使用RDE命令行界面，将本地代码同步到RDE。 选项包括安装内容包、特定捆绑包、OSGI配置文件、内容文件和Apache/Dispatcher配置的zip文件。 也可以引用远程内容包。 请参阅 [RDE命令行工具](#rde-cli-commands) 部分以了解更多信息。 您可以使用status命令来验证部署是否成功。 （可选）使用包管理器安装内容包。
@@ -185,11 +184,11 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 
 * 要获取命令列表，请键入：
 
-   `aio aem:rde`
+  `aio aem:rde`
 
 * 有关命令的详细帮助，请键入：
 
-   `aio aem rde <command> --help`
+  `aio aem rde <command> --help`
 
 ### 部署到RDE {#deploying-to-rde}
 
@@ -352,7 +351,7 @@ Environment: Ready
 
 例如，如果 `com.adobe.granite.demo.MyServlet.cfg.json` 已安装， `bsn` 只是 `com.adobe.granite.demo.MyServlet`，不使用 **cfg.json** 后缀。
 
-不支持删除内容包或内容文件。 为了删除它们，应重置RDE，以使其返回到默认状态。
+不支持删除内容包或内容文件。 要删除它们，应重置RDE，以使其恢复到默认状态。
 
 有关更多详细信息，请参阅以下示例：
 
@@ -366,17 +365,17 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 ## 重置 {#reset-rde}
 
-重置RDE会同时从创作实例和发布实例中删除所有自定义代码、配置和内容。 例如，如果已使用RDE测试特定功能，并且您想要将其重置为默认状态以测试其他功能，则此选项非常有用。
+重置RDE会同时从创作实例和发布实例中删除所有自定义代码、配置和内容。 例如，如果已使用RDE测试特定功能，并且您要将它重置为默认状态，以便可以测试其他功能，则这种重置非常有用。
 
 重置会将RDE设置为最新可用的AEM版本。
 
 <!-- Alexandru: hiding for now, please don't delete
 
-Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
+Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
 >[NOTE!]
 >
->You must be assigned the Cloud Manager Developer role in order to be able to use the reset feature. If not, a reset action will result in an error.
+>You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
 
 ### Reset the RDE via Command Line {#reset-the-rde-command-line}
 
@@ -400,7 +399,7 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
    * 或者，单击&#x200B;**环境**&#x200B;信息卡上的&#x200B;**全部显示**&#x200B;按钮，直接跳转到&#x200B;**环境**&#x200B;选项卡。
 
-      ![显示所有选项](/help/implementing/cloud-manager/assets/environment-showall.png)
+     ![显示所有选项](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. 此 **环境** 窗口将打开并列出程序的所有环境。
 
@@ -464,7 +463,7 @@ RDE与其他环境不同，因为其内容可以安装在/apps下的install.rde�
 
 ## RDE与云开发环境有何不同？ {#how-are-rds-different-from-cloud-development-environments}
 
-虽然RDE在许多方面类似于云开发环境，但为了允许代码的快速同步，存在一些细微的体系结构差异。 将代码获取到RDE的机制不同 — 对于RDE，一个代码从本地开发环境同步，而对于Cloud开发环境，一个代码通过Cloud Manager部署代码。
+虽然RDE在许多方面类似于云开发环境，但在体系结构上存在细微差异，因此无法快速同步代码。 将代码获取到RDE的机制不同 — 对于RDE，一个代码从本地开发环境同步，而对于Cloud开发环境，一个代码通过Cloud Manager部署代码。
 
 出于这些原因，建议在RDE环境中验证代码后，使用非生产管道将代码部署到云开发环境。 最后，在使用生产管道进行部署之前测试代码。
 

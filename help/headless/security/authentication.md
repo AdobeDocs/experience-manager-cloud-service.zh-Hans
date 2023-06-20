@@ -1,18 +1,18 @@
 ---
 title: 对内容片段的远程 AEM GraphQL 查询的身份验证
-description: 了解远程 AEM GraphQL 查询所需的身份验证，用于保护您的 Headless 内容投放。
+description: 了解远程AEM GraphQL查询所需的身份验证，以保护Headless内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
-source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 88%
 
 ---
 
 # 对内容片段的远程 AEM GraphQL 查询的身份验证 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-[用于内容片段投放的 Adobe Experience Manager as a Cloud Service (AEM) GraphQL API](/help/headless/graphql-api/content-fragments.md) 的主要用例是接受来自第三方应用程序或服务的远程查询。这些远程查询可能需要经过身份验证的 API 访问，以保护 Headless 内容投放。
+[用于内容片段投放的 Adobe Experience Manager as a Cloud Service (AEM) GraphQL API](/help/headless/graphql-api/content-fragments.md) 的主要用例是接受来自第三方应用程序或服务的远程查询。这些远程查询可能需要经过身份验证的API访问，以安全Headless内容交付。
 
 >[!NOTE]
 >

@@ -4,10 +4,10 @@ description: 与 Adobe Analytics 集成
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: e950f2399553c301c97c4fcac549a7ef6a234164
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 100%
+source-wordcount: '562'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 通过将 Adobe Analytics 与 AEM as a Cloud Service 集成，您可以跟踪您的网页活动。集成需要：
 
-* 使用 Touch UI 在 AEM as a Cloud Service 中创建 Analytics 配置。请注意，要将 Adobe Analytics 与 AEM as a Cloud Service 集成，需要 IMS 身份验证。
+* 使用 Touch UI 在 AEM as a Cloud Service 中创建 Analytics 配置。需要IMS身份验证才能将Adobe Analytics与AEMas a Cloud Service集成。
 * 在 [Adobe Launch](#analytics-launch) 中将 Adobe Analytics 添加为扩展并进行配置。有关 Adobe Launch 的更多详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)。
 
 与以前版本的 AEM 相比，AEM as a Cloud Service 的 Analytics 配置中不提供框架支持。相反，此操作现在通过 Adobe Launch 完成，后者是用于通过 Analytics 功能（JS 库）检测 AEM Site 的实际工具。在 Adobe Launch 中，创建了一个属性，可以在其中配置 Adobe Analytics 扩展并创建规则以将数据发送到 Adobe Analytics。Adobe Launch 已取代由 SiteCatalyst 提供的分析任务。
@@ -42,12 +42,12 @@ ht-degree: 100%
 |---|---|
 | 标题 | 配置名称 |
 | IMS 配置 | 选择 IMS 配置（参阅上面的章节） |
-| 区段 | 用于使用当前报告包中定义的 Analytics 区段的选项。将基于区段筛选 Analytics 报告。有关其他详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)。 |
+| 区段 | 用于使用当前报告包中定义的 Analytics 区段的选项。Analytics报表会根据区段进行过滤。 有关其他详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)。 |
 | 报告包 | 从中发送数据和提取报告的存储库。报告包定义针对某个所选网站、网站集合或网页子集的完整、独立的报告。您可以查看从单个报告包中获取的报告，并且可以根据您的要求随时在配置中编辑此字段。 |
 
 ### 具有 IMS 身份验证的 Adobe Analytics {#configuration-parameters-ims}
 
-需要 IMS 配置，才能将 Adobe Analytics 与 AEM as a Cloud Service 正确集成。 必须创建此配置，请参阅此[页面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)了解如何创建 Analytics IMS 配置。
+需要IMS配置才能将Adobe Analytics与AEMas a Cloud Service正确集成。 必须创建此配置，请参阅此[页面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)了解如何创建 Analytics IMS 配置。
 
 ### 将配置添加到站点 {#add-configuration}
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 98%
+source-wordcount: '842'
+ht-degree: 92%
 
 ---
 
@@ -51,14 +51,14 @@ ht-degree: 98%
 
 * Experience Manager Assets 现在允许您上传其他受支持格式类型的文档，并[使用随附的 Document Cloud 查看器预览文档](/help/assets/manage-pdf-documents.md)。支持的格式类型包括 TXT、RTF、DOC、DOCX、PPT、PPTX、XLS 和 XLSX。
 
-   ![其他格式的 PDF 演绎版](/help/release-notes/assets/multi-page-other-formats.png)
+  ![其他格式的 PDF 演绎版](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### [!DNL Assets] 预发布中的新增功能 {#prerelease-features-assets}
 
 * Experience Manager Assets 现在为图像智能标记使用改进的人工智能框架。 这种内容智能化可提高智能标记的相关性和准确性，可用于摄取的所有图像资产。 此外，方向信息填充在 `cq:tags` 中，这样可以使用“方向”过滤器获得更准确的搜索结果。
 
-   如果您有兴趣参与 Beta 测试，请在 11 月 14 日之前[填写这张表格](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u)。
+  如果您有兴趣参与 Beta 测试，请在 11 月 14 日之前[填写这张表格](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u)。
 
 * 除了用于身份验证的 Access 密钥外，Experience Manager Assets 现在还[支持 SAS 令牌](/help/assets/add-assets.md#asset-bulk-ingestor)，同时还连接到 Azure Blob 存储数据源，从而使用“批量导入”工具摄取资产。
 
@@ -88,7 +88,7 @@ ht-degree: 98%
 
 * AEM as a Cloud Service （创作服务）现与 Unified Shell 集成，可改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)，了解更多详细信息。
 
-* 如先前在发行说明中所述，使用复制代理管理屏幕或复制 API 分发大于 10 MB 的内容包（具有属性的节点，不包括二进制文件）已被弃用，并将在未来几天内实施。 有关复制这些大型内容包的建议方法，请参阅[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)。
+* 如先前在发行说明中所述，使用复制代理管理屏幕或复制API分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）现在已被弃用和强制使用。 参见 [管理发布](/help/operations/replication.md#manage-publication) 或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) 了解复制这些大型内容包的建议方法。
 
 * Dispatcher 配置现在引用了一个文件，其中列出了常见的营销活动查询参数。客户可以选择取消注释与其相关的参数，从而实现更好的缓存。 请参阅[营销活动参数](/help/implementing/dispatcher/caching.md#marketing-parameters)，了解更多详细信息。
 

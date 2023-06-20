@@ -2,10 +2,10 @@
 title: 数据保护和数据隐私条例 - Adobe Experience Manager as a Cloud Service Sites 准备工作
 description: 了解 Adobe Experience Manager as a Cloud Service Sites 对各种数据保护和数据隐私条例的支持，包括欧盟通用数据保护条例 (GDPR)、加州消费者隐私法案以及如何在实施新的 AEM as a Cloud Service 项目时实现合规性。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 93%
 
 ---
 
@@ -56,15 +56,16 @@ Adobe Experience Manager 受 Cookie 选择退出服务的约束，该服务用�
 
 1. 选择引用的链接；当前名为&#x200B;**此处**。
 
-1. 您将看到以下详细信息以及用于选择退出或选择加入的选项：
+1. 此时会显示以下详细信息以及选择退出或加入的选项：
 
    * 要选择退出对有关您访问本网站的数据进行聚合和分析，必须在浏览器上安装 Cookie。此 Cookie 表明您已选择退出。
 
-      如果您删除选择退出 Cookie，或者如果您更换计算机或 Web 浏览器，则需要再次选择退出。
+     如果您删除选择退出 Cookie，或者如果您更换计算机或 Web 浏览器，则需要再次选择退出。
 
-      选择退出 - 从访客会话聚合和分析中将我排除（安装 `amcglobal.sc.omtrdc.net` 选择退出 Cookie）- 单击此处。
+     选择退出 - 从访客会话聚合和分析中将我排除（安装 `amcglobal.sc.omtrdc.net` 选择退出 Cookie）- 单击此处。
 
-      选择加入 - 将我包含在访客会话聚合和分析中（不要安装 `amcglobal.sc.omtrdc.net` 选择退出 Cookie）- 单击此处。
+     选择加入 - 将我包含在访客会话聚合和分析中（不要安装 `amcglobal.sc.omtrdc.net` 选择退出 Cookie）- 单击此处。
+
    执行上述步骤以访问实际链接。
 
    >[!NOTE]
@@ -108,22 +109,22 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
 
 * 如果网站访客接受网站的条款和条件，则应删除 ContextHub 选择退出 Cookie：
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * 如果网站访客不接受网站的条款和条件，则应设置 ContextHub 选择退出 Cookie：
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * 要检查 ContextHub 是否正在选择退出模式下运行，应在浏览器的控制台中进行以下调用：
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### 预览 ContextHub 的持久存储 {#previewing-persistence-of-contexthub}
 
@@ -138,6 +139,7 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
          * “本地存储”>“（网站）”>“ContextHubPersistence”
          * “会话存储”>“（网站）”>“ContextHubPersistence”
          * “Cookie”>“（网站）”>“SessionPersistence”
+
    * Firefox：
 
       * 打开“开发人员工具”>“存储”：
@@ -145,6 +147,7 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
          * “本地存储”>“（网站）”>“ContextHubPersistence”
          * “会话存储”>“（网站）”>“ContextHubPersistence”
          * “Cookie”>“（网站）”>“SessionPersistence”
+
    * Safari：
 
       * 在菜单栏中打开“偏好设置”>“高级”>“显示开发”菜单
@@ -153,6 +156,7 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
          * “控制台”>“存储”>“本地存储”>“（网站）”>“ContextHubPersistence”
          * “控制台”>“存储”>“会话存储”>“（网站）”>“ContextHubPersistence”
          * “控制台”>“存储”>“Cookie”>“（网站）”>“ContextHubPersistence”
+
    * Internet Explorer：
 
       * 打开“开发人员工具”>“控制台”
@@ -160,9 +164,6 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
          * `localStorage.getItem('ContextHubPersistence')`
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
-
-
-
 
 * 在浏览器的控制台中使用 ContextHub API：
 
@@ -173,8 +174,7 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub 存储定义将使用哪个持久层，因此，要查看持久存储的当前状态，应检查所有层。
-
+     ContextHub存储定义使用哪个持久层，因此，要查看持久性的当前状态，应检查所有层。
 
 例如，要查看存储在 localStorage 中的数据，请执行以下操作：
 
@@ -187,12 +187,12 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
       * “本地存储”>“（网站）”>“ContextHubPersistence”
       * “会话存储”>“（网站）”>“ContextHubPersistence”
       * “Cookie”>“（网站）”>“SessionPersistence”
+
    * Firefox - 打开“开发人员工具”>“存储”：
 
       * “本地存储”>“（网站）”>“ContextHubPersistence”
       * “会话存储”>“（网站）”>“ContextHubPersistence”
       * “Cookie”>“（网站）”>“SessionPersistence”
-
 
 * 在浏览器的控制台中使用 ContextHub API：
 
@@ -203,8 +203,7 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      ContextHub 存储定义将使用哪个持久层，因此，要查看持久存储的当前状态，应检查所有层。
-
+     ContextHub存储定义使用哪个持久层，因此，要查看持久性的当前状态，应检查所有层。
 
 例如，要查看存储在 localStorage 中的数据，请执行以下操作：
 
@@ -219,27 +218,27 @@ console.log(storage.getTree());
 
 * 要清除当前加载的持久存储，请执行以下操作：
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
 * 要清除特定的持久层（例如 sessionStorage），请执行以下操作：
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * 要清除所有 ContextHub 持久层，必须为所有层调用适当的代码：
 

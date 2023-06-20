@@ -5,10 +5,10 @@ description: 缓存性能疑难解答
 seo-description: Troubleshooting caching performance
 contentOwner: khsingh
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 执行以下步骤来解决问题：
 
 1. 打开您的Experience Manager项目。
-1. 打开 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 进行编辑。
+1. 打开 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 以供编辑。
 1. 打开 `conf.d/httpd-dispatcher.conf` 或配置为在运行时加载的任何其他配置文件。
 1. 将以下代码添加到文件中并保存。 它是一个示例代码，可对其进行修改以适合您的环境。
 
@@ -49,7 +49,7 @@ ht-degree: 0%
     RewriteRule "^/content/forms/af/(.*)[.](.*).html$" "/content/forms/af/$1.$2.html" [PT]
 
     # Handle selector based redirection basded on browser language
-    # The Rewrite Condition is looking for the Accept-Language header and if found takes the first two character which most likely will be the desired language selector.
+    # The Rewrite Condition is looking for the Accept-Language header and if found takes the first two characters which most likely are the desired language selector.
     RewriteCond %{HTTP:Accept-Language} ^(..).*$ [NC]
     RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
     RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
@@ -72,5 +72,5 @@ CDN缓存在300秒后停止工作，所有在CDN上缓存的请求被重定向�
        </IfModule>
    ```
 
-1. 保存并关闭文件。
+1. 保存并关闭该文件。
 1. 修改软链接 `src\conf.d\enabled_vhosts\default.vhost` 指向新文件。

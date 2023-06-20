@@ -2,10 +2,10 @@
 title: 为演示站点启用 AEM Screens
 description: 了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2699'
-ht-degree: 100%
+source-wordcount: '2696'
+ht-degree: 98%
 
 ---
 
@@ -90,7 +90,7 @@ We.Cafe 位置具有以下布局。
 
 ## 部署演示 Screens 项目 {#deploy-project}
 
-要在您在[创建项目](create-program.md)步骤中创建的沙盒中使用演示内容，必须基于模板创建站点。
+要在您创建的沙盒中使用演示内容，请执行以下操作 [创建项目](create-program.md) 步骤，必须基于模板创建站点。
 
 如果您尚未创建 We.Cafe 演示站点，只需执行[创建演示站点](create-site.md)部分中的相同步骤即可。在选择模板时，只需选择 **We.Cafe 网站模板**。
 
@@ -207,7 +207,7 @@ We.Cafe 位置具有以下布局。
    }
    ```
 
-AEM Screens 可以使用此同一服务来访问模拟的天气数据。这将在下一步中进行配置。
+AEM Screens可以使用此同一服务来访问在下一步中配置的模拟天气数据。
 
 ### 配置 ContextHub {#configure-contexthub}
 

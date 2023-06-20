@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
-workflow-type: ht
-source-wordcount: '2127'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '2121'
+ht-degree: 99%
 
 ---
 
@@ -300,7 +300,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 ## 使用示例 {#example-usage}
 
-片段及其元素和变体可用于为多个渠道创建一致的内容。 在设计片段时，您需要考虑将在何处使用的内容。
+片段及其元素和变体可用于为多个渠道创建一致的内容。 在设计片段时，请考虑在何处使用的内容。
 
 ### WKND 示例 {#wknd-sample}
 

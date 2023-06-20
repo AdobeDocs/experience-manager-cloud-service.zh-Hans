@@ -2,16 +2,16 @@
 title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3659'
+source-wordcount: '3649'
 ht-degree: 2%
 
 ---
 
 # 组件参考指南 {#components-reference-guide}
 
-组件是在AEM中构建体验的核心。 此 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 和 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 使用一套现成的强大组件工具集轻松入门。 此 [wknd教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 引导开发人员了解如何使用这些工具以及如何构建自定义组件以创建新的AEM站点。
+组件是在AEM中构建体验的核心。 此 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 使用一套现成的强大组件工具集轻松入门。 此 [wknd教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md) 引导开发人员了解如何使用这些工具以及如何构建自定义组件以创建AEM站点。
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 ### 内容逻辑和渲染标记  {#content-logic-and-rendering-markup}
 
-您的组件将渲染为 [HTML。](https://www.w3schools.com/htmL/html_intro.asp) 您的组件需要定义获取所需内容所需的HTML，然后根据需要在Author和Publish环境中呈现内容。
+您的组件呈现为 [HTML](https://www.w3schools.com/htmL/html_intro.asp). 您的组件需要定义获取所需内容所需的HTML，然后根据需要在Author和Publish环境中呈现内容。
 
 建议将负责标记和渲染的代码与控制用于选择组件内容的逻辑的代码分开。
 
@@ -123,11 +123,11 @@ AEM组件的结构既强大又灵活。 主要内容包括：
    * 缩写应限制为两个字符。
    * 提供空字符串将构建 `jcr:title` 属性。
       * 例如，“Im”表示“图像”
-      * 本地化的标题将用于构建缩写。
+      * 本地化的标题用于构建缩写。
    * 仅组件具有以下特征时，才会翻译缩写： `abbreviation_commentI18n` 属性，然后用作翻译提示。
 1. `cq:icon.png` 或 `cq:icon.svg`  — 此组件的图标，显示在组件浏览器中
    * 20 x 20像素是标准组件的图标大小。
-      * 较大的图标将被缩小（客户端）。
+      * 较大的图标会缩小（客户端）。
    * 推荐的颜色为rgb(112， 112， 112) > #707070
    * 标准组件图标的背景透明。
    * 仅 `.png` 和 `.svg` 文件受支持。
@@ -272,7 +272,7 @@ Content not found
 
 ## 使用组件 {#using-components}
 
-创建组件后，需要启用它才能使用它。 使用它可显示组件的结构与存储库中结果内容的结构之间的关系。
+创建组件后，必须启用它才能使用它。 使用它可显示组件的结构与存储库中结果内容的结构之间的关系。
 
 ### 将组件添加到模板 {#adding-your-component-to-the-template}
 
@@ -415,7 +415,6 @@ AEM中有许多现有配置。 您可以使用中的查询工具轻松搜索特�
 >
 >* `aftermove`
 >* `aftercopy`
-
 
 事件处理程序可以通过自定义实施来实施。 例如(其中 `project.customerAction` 是静态方法)：
 

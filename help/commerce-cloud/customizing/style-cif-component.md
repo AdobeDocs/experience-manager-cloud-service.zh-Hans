@@ -10,10 +10,10 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 ## 您将构建的内容
 
-在本教程中，将为类似于信息卡的Product Teaser组件实施一个新样式。 从本教程中吸取的经验教训可以应用于其他CIF核心组件。
+在本教程中，将实施类似于信息卡的Product Teaser组件的新样式。 从本教程中吸取的经验教训可以应用于其他CIF核心组件。
 
 ![您将构建的内容](../assets/style-cif-component/what-you-will-build.png)
 
@@ -178,7 +178,7 @@ ht-degree: 3%
 
    这些客户端库不受 `ui.frontend` 模块。 相反，这些客户端库包含由Adobe提供的CSS和JavaScript依赖项。 这些客户端库的定义位于 `.content.xml` 文件（在每个文件夹下）。
 
-   **clientlib-base**  — 这是一个空的客户端库，它只是从嵌入必要的依赖项 [AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans). 类别为 `venia.base`.
+   **clientlib-base**  — 这是一个空的客户端库，它只是从嵌入必要的依赖项 [AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 类别为 `venia.base`.
 
    **clientlib-cif**  — 这也是一个空的客户端库，它只是从中嵌入必要的依赖项 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components). 类别为 `venia.cif`.
 
@@ -192,7 +192,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   > 在页面脚本中，只有基础库是“硬编码”的。 `venia.site` 不会包含在这些文件中，而是作为页面模板的一部分包含，以便更加灵活。 稍后将对此进行检查。
+   > 在页面脚本中，只有基础库是“硬编码”的。 `venia.site` 不会包含在这些文件中，而是作为页面模板的一部分包含，以便更加灵活。 稍后将检查此过程。
 
 1. 从终端，构建整个项目并将其部署到AEM的本地实例：
 
@@ -277,14 +277,14 @@ ht-degree: 3%
 
    ![页面策略 — 登陆页面](../assets/style-cif-component/page-policy-properties.png)
 
-   在右侧，您可以看到客户端库的列表 **类别** 该模板将被包含在使用此模板的所有页面中。
+   在右侧，您可以看到客户端库的列表 **类别** 包含在使用此模板的所有页面上的区段。
 
    * `venia.dependencies`  — 提供符合以下条件的任何供应商库： `venia.site` 取决于。
    * `venia.site`  — 这是的类别 `clientlib-site` 该 `ui.frontend` 模块生成。
 
    请注意，其他模板使用相同的策略， **内容页面**， **登陆页面**&#x200B;等……通过重复使用相同的策略，我们可以确保在所有页面上包含相同的客户端库。
 
-   使用模板和页面策略管理客户端库包含的好处是，您可以根据模板更改策略。 例如，您可能在同一个AEM实例中管理两个不同的品牌。 每个品牌都有自己独特的风格或 *主题* 但基础库和代码将相同。 另一个示例是，如果您有一个更大的客户端库，而您只想显示在某些页面上，则可以为该模板制定一个唯一的页面策略。
+   使用模板和页面策略管理客户端库包含的好处是，您可以根据模板更改策略。 例如，您可能在同一个AEM实例中管理两个不同的品牌。 每个品牌都有自己独特的风格或 *主题* 但基础库和代码是相同的。 另一个示例是，如果您有一个更大的客户端库，而您只想显示在某些页面上，则可以为该模板制定一个唯一的页面策略。
 
 ## 本地Webpack开发 {#local-webpack-development}
 
@@ -317,7 +317,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
    </body>
    ```
 
-   由于它们表示由生成的CSS和JavaScript的编译版本，因此将被删除 `ui.frontend` 模块。 保留将从正在运行的AEM实例代理的其他客户端库。
+   由于它们表示由生成的CSS和JavaScript的编译版本，因此将被删除 `ui.frontend` 模块。 将其他客户端库保留为将从正在运行的AEM实例代理的客户端库。
 
 1. 打开新的终端窗口并导航到 `ui.frontend` 文件夹。 运行命令 `npm start`：
 
@@ -340,7 +340,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
 
 ## 实施产品Teaser的卡片样式 {#update-css-product-teaser}
 
-接下来，修改 `ui.frontend` 模块，用于为Product Teaser实施类似卡片的样式。 webpack-dev-server将用于快速查看更改。
+接下来，修改 `ui.frontend` 模块，用于为Product Teaser实施类似卡片的样式。 webpack-dev-server用于快速查看更改。
 
 返回到IDE和生成的项目。
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a66215277ca83c011f2f4df621d055049c4c93a7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 98%
+source-wordcount: '1081'
+ht-degree: 97%
 
 ---
 
@@ -105,7 +105,7 @@ AEM as a Cloud Service 2022.01.0 中的 Cloud Manager 的发布日期是 2022 �
 * 当检测到在多个全栈管道执行中使用了相同的 git commit 时，Cloud Manager 将[避免重建代码库](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
 * 访问 AEM 环境日志现在需要 **Deployment Manager** 产品配置文件。没有此配置文件的用户将在用户界面中看到一个禁用的按钮。
 * 对于未将 Sites 作为解决方案启用的程序，该 UI 不允许进行前端管道配置。
-* 生成 git 密码时，将显示到期日期。
+* 在生成Git密码时，将显示到期日期。
 
 ### 错误修复 {#bug-fixes-cm}
 

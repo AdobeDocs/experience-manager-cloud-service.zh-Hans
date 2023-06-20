@@ -2,10 +2,10 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 8%
+source-wordcount: '1837'
+ht-degree: 6%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
 >title="处理大型内容存储库"
->abstract="为了显著加快内容转移活动的提取和引入阶段，从而将内容移至 AEM as a Cloud Service，CTT 可利用 AzCopy 作为可选的复制前步骤。配置此前置步骤后，在提取阶段，AzCopy 将 blob 从 Amazon S3 或 Azure Blob 存储复制到迁移集 blob 存储。在引入阶段，AzCopy 将 blob 从迁移集 blob 存储复制到目标 AEM as a Cloud Service blob 存储。"
+>abstract="为了显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service，CTT可以使用AzCopy作为可选的预复制步骤。 配置此前置步骤后，在提取阶段，AzCopy 将 blob 从 Amazon S3 或 Azure Blob 存储复制到迁移集 blob 存储。在引入阶段，AzCopy 将 blob 从迁移集 blob 存储复制到目标 AEM as a Cloud Service blob 存储。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="AzCopy 作为复制前步骤的快速入门"
 
 使用内容传输工具(CTT)复制大量Blob可能需要几天时间。
-为了显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service，CTT可以利用 [Azcopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 作为可选的预复制步骤。 当源AEM实例配置为使用Amazon S3、Azure Blob Storage数据存储或文件数据存储时，可以使用此预复制步骤。 预复制步骤对于第一次完全提取和摄取最有效。 但是，不建议对后续增补使用预复制（如果增补大小小于200 GB），因为这可能会增加整个过程的时间。 配置此预步骤后，在提取阶段，AzCopy会将blob从Amazon S3、Azure Blob存储或文件数据存储复制到迁移集blob存储。 在引入阶段，AzCopy 将 blob 从迁移集 blob 存储复制到目标 AEM as a Cloud Service blob 存储。
+要显着加快内容传输活动的提取和摄取阶段以将内容移动到AEMas a Cloud Service，CTT可以使用 [Azcopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) 作为可选的预复制步骤。 当源AEM实例配置为使用Amazon S3、Azure Blob Storage数据存储或文件数据存储时，可以使用此预复制步骤。 预复制步骤对于第一次完全提取和摄取最有效。 但是，不建议对后续增补使用预复制（如果增补大小小于200 GB），因为这可能会增加整个过程的时间。 配置此预步骤后，在提取阶段，AzCopy会将blob从Amazon S3、Azure Blob存储或文件数据存储复制到迁移集blob存储。 在引入阶段，AzCopy 将 blob 从迁移集 blob 存储复制到目标 AEM as a Cloud Service blob 存储。
 
 ## 开始前的重要注意事项 {#important-considerations}
 
 请阅读以下章节，以了解在开始之前的重要注意事项：
 
-* 从CTT版本2.0.16开始，预复制设置将在安装包时自动完成。 此外，如果迁移集大小大于200 GB，则提取过程将自动利用预复制功能。 azcopy.config文件在crx-quickstart/cloud-migration/目录中创建。 如果您使用的是CTT版本2.0.16或更高版本，则无需手动进行预复制设置。
+* 从CTT版本2.0.16开始，预复制设置会在安装包时自动完成。 此外，如果迁移集大小大于200 GB，则提取过程将自动利用预复制功能。 azcopy.config文件在crx-quickstart/cloud-migration/目录中创建。 如果您使用的是CTT版本2.0.16或更高版本，则无需手动进行预复制设置。
 
 * 源AEM版本需要是6.3 - 6.5。
 
@@ -40,7 +40,7 @@ ht-degree: 8%
 
 ### 如果将源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储区，则此情况下需要考虑的其他事项 {#additional-considerations-amazons3-azure}
 
-* 由于从Amazon S3和Azure Blob Storage中转移数据都会产生成本，因此转移成本将相对于现有存储容器中的数据总量(无论是否在AEM中引用)。 请参阅 [Amazon S3](https://aws.amazon.com/s3/pricing/) 和 [Azure Blob存储](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 了解更多详细信息。
+* 由于从Amazon S3和Azure Blob Storage中转移数据都会产生成本，因此转移成本与现有存储容器(无论是否在AEM中引用)中的数据总量有关。 请参阅 [Amazon S3](https://aws.amazon.com/s3/pricing/) 和 [Azure Blob存储](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 了解更多详细信息。
 
 * 您将需要现有源Amazon S3存储段的访问密钥和密钥对，或现有源Azure Blob存储容器的SAS URI（只读访问正常）。
 
@@ -55,7 +55,7 @@ ht-degree: 8%
 ## 设置使用AzCopy作为预复制步骤 {#setting-up-pre-copy-step}
 
 >[!NOTE]
->从CTT版本2.0.16开始，预复制设置将在安装包时自动完成。 此外，如果迁移集大小大于200 GB，则提取过程将自动利用预复制功能。 azcopy.config文件在crx-quickstart/cloud-migration/目录中创建。 如果要手动更新文件的配置，请查看以下部分。
+>从CTT版本2.0.16开始，预复制设置会在安装包时自动完成。 此外，如果迁移集大小大于200 GB，则提取过程将自动利用预复制功能。 azcopy.config文件在crx-quickstart/cloud-migration/目录中创建。 如果要手动更新文件的配置，请查看以下部分。
 
 阅读本节内容，了解如何设置将AzCopy用作内容传输工具的预复制步骤，以将内容迁移到AEMas a Cloud Service：
 
@@ -81,10 +81,10 @@ ht-degree: 8%
 #### 文件数据存储 {#file-data-store-determine-size}
 
 * 对于mac、UNIX系统，请在数据存储目录中运行du命令以获取其大小：
-   `du -sh [path to datastore on the instance]`. 例如，如果您的数据存储位于 `/mnt/author/crx-quickstart/repository/datastore`，以下命令将获取其大小： `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+  `du -sh [path to datastore on the instance]`. 例如，如果您的数据存储位于 `/mnt/author/crx-quickstart/repository/datastore`，以下命令将获取其大小： `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * 对于Windows，使用数据存储目录上的dir命令获取其大小：
-   `dir /a/s [location of datastore]`。
+  `dir /a/s [location of datastore]`。
 
 ### 1.安装AzCopy {#install-azcopy}
 
@@ -109,7 +109,7 @@ ht-degree: 8%
 在源AEM实例上，位于 `crx-quickstart/cloud-migration`，创建一个名为的新文件 `azcopy.config`.
 
 >[!NOTE]
->此配置文件的内容将因您的源AEM实例使用的是Azure数据存储区还是Amazon S3数据存储区或文件数据存储区而异。
+>此配置文件的内容有所不同，具体取决于您的源AEM实例使用的是Azure数据存储区、Amazon S3数据存储区还是文件数据存储区。
 
 #### Azure Blob存储数据存储 {#azure-blob-storage-data}
 
@@ -152,7 +152,7 @@ repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 
 azCopyPath属性必须包含源AEM实例上安装azCopy命令行工具的位置的完整路径。 如果缺少azCopyPath属性，将不执行blob预复制步骤。
 
-如果 `repository.home` azcopy.config中缺少属性，缺少默认数据存储位置 `/mnt/crx/author/crx-quickstart/repository/datastore` 将用于执行预复制。
+如果 `repository.home` azcopy.config中缺少属性，缺少默认数据存储位置 `/mnt/crx/author/crx-quickstart/repository/datastore` 用于执行预复制。
 
 ### 4.使用AzCopy提取 {#extracting-azcopy}
 
@@ -172,7 +172,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 恭喜！此日志条目表示您的配置被视为有效，并且AzCopy当前正在将所有blob从源容器复制到迁移容器。
 
-AzCopy中的日志条目将显示在提取日志中，并将以c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy为前缀 —  [AzCopy预复制]
+AzCopy中的日志条目显示在提取日志中，并以c.a.g.s.m.c.azcopy.AzCopyBlobPreCopy为前缀 —  [AzCopy预复制]
 
 >[!CAUTION]
 >
@@ -189,7 +189,7 @@ AzCopy中的日志条目将显示在提取日志中，并将以c.a.g.s.m.c.azcop
 
 在出现AzCopy问题的情况下，提取将立即失败，并且提取日志将包含有关失败的详细信息。
 
-在错误之前复制的任何Blob将在后续运行时由AzCopy自动跳过，并且不需要再次复制。
+AzCopy在后续运行时会自动跳过在错误之前复制的任何Blob，并且无需再次复制。
 
 #### 用于文件数据存储 {#file-data-store-extract}
 

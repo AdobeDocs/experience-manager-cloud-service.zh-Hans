@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1238'
 ht-degree: 5%
 
 ---
@@ -79,7 +79,7 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 
    | 下载选项 | 描述 |
    |---|---|
-   | **[!UICONTROL 为每个资产创建单独的文件夹]** | 选择此选项可为每个资源创建一个文件夹，其中包含资源的所有已下载演绎版。 如果未选中，则每个资产(及其演绎版（如果已选择下载）)都将包含在生成的存档的父文件夹中。 |
+   | **[!UICONTROL 为每个资产创建单独的文件夹]** | 选择此选项可为每个资源创建一个文件夹，其中包含资源的所有已下载演绎版。 如果未选择此项，则每个资产(及其演绎版（如果已选择下载）)都包含在生成的存档的父文件夹中。 |
    | **[!UICONTROL 电子邮件]** | 选择此选项可向其他用户发送电子邮件通知（包含下载链接）。 收件人用户必须是 `dam-users` 组。 标准电子邮件模板在以下位置提供：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 可在以下位置找到部署期间自定义的模板： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以将特定于租户的自定义模板存储在以下位置：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL 资产]** | 选择此选项可按原始表单下载资源。<br>如果原始资产具有子资产，则子资产选项可用。 |
    | **[!UICONTROL 演绎版]** | 演绎版是资源的二进制表示形式。 资产具有主要表示形式 — 已上传文件的表示形式。 它们可以有任意数量的呈现。 <br> 利用此选项，您可以选择要下载的演绎版。 可用的演绎版取决于您选择的资源。 |
@@ -155,4 +155,3 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 >* [下载受DRM保护的资产](drm.md)
 >* [在Win或Mac桌面上使用Experience Manager桌面应用程序下载资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [使用支持的Adobe Creative Cloud应用程序中的Adobe资源链接下载资源](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
-

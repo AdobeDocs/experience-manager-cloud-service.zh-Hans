@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 预发行渠道
 description: 了解如何使用预发行渠道预览 AEM as a Cloud Service 即将推出的功能。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1305'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
 
-要熟悉安排在以下功能版本中上线的功能，可订阅预发行版渠道（可通过配置开发环境或任何沙盒环境而访问该渠道）。可预览可通过 AEM UI 访问的更改，并可对照任何新的预发行版 API 构建代码。
+要熟悉计划于以下功能版本中上线的功能，您可以订阅预发行版渠道，您可以通过配置开发环境或任何沙盒环境来访问该渠道。 可预览可通过 AEM UI 访问的更改，并可对照任何新的预发行版 API 构建代码。
 
 [发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)中发布了给定功能版本的预发行版功能的列表。
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service 有两种类型的版本。
 
 此模式可确保持续发行而不会中断服务。
 
-通过预发行版渠道，可预览为即将推出的功能版本安排的功能，以评估即将推出的功能，并规划它可为您自己的项目使用的实现。通过它，可提前规划下一个功能版本。
+预发行渠道允许您预览为即将推出的功能发行安排的功能，以便您可以评估即将推出的功能，并为其可能在您自己的项目中的实施进行规划。 它可让您提前计划下一个功能发布。
 
 例如，如果现在是 5 月并且您订阅了预发行频道，则可以评估即将发行的 6 月版本中的功能。
 
@@ -97,22 +97,22 @@ AEM as a Cloud Service 有两种类型的版本。
 
 * 使用 [Cloud Manager API 的环境变量端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)将 `AEM_RELEASE_CHANNEL` 环境变量设置为值 `prerelease`。
 
-   ```text
-   PATCH /program/{programId}/environment/{environmentId}/variables
-   [
-           {
-                   "name" : "AEM_RELEASE_CHANNEL",
-                   "value" : "prerelease",
-                   "type" : "string"
-           }
-   ]
-   ```
+  ```text
+  PATCH /program/{programId}/environment/{environmentId}/variables
+  [
+          {
+                  "name" : "AEM_RELEASE_CHANNEL",
+                  "value" : "prerelease",
+                  "type" : "string"
+          }
+  ]
+  ```
 
 * [也可以使用 Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
 
-   ```shell
-   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
-   ```
+  ```shell
+  aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
+  ```
 
 如果要让环境恢复到常规（非预发行版）渠道的表现，可以删除该变量或者将其设置为其他值。
 
@@ -157,7 +157,7 @@ Javadocs 将发布到 Maven Central。
      </dependency>
    ```
 
-   要更改预发行版 SDK，只需将依赖关系从 `com.adobe.aem:aem-sdk-api` 更改为 `com.adobe.aem:aem-prerelease-sdk-api`，如下所述：
+   要更改预发行版SDK，只需将依赖关系从 `com.adobe.aem:aem-sdk-api` 到 `com.adobe.aem:aem-prerelease-sdk-api` 如下所述：
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Javadocs 将发布到 Maven Central。
 
 ## 培训您的用户 {#train-users}
 
-一旦您在预发行渠道中测试了新功能并决定在您的项目中利用它们，您就需要培训您的用户。
+在预发行渠道中测试新功能并决定在项目中使用它们后，您需要培训用户。
 
 Adobe Experience League 提供了大量学习 AEMaaCS 的资源。
 

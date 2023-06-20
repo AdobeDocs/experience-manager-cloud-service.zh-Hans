@@ -3,9 +3,9 @@ title: 如何将工作流分配给其他用户、发送电子邮件、在工作�
 description: 以Forms为中心的工作流允许您快速构建基于Forms的自适应工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将数据发送到多个数据源以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '7190'
+source-wordcount: '7189'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 
 * **[!UICONTROL 使用自适应表单]**：指定定位输入自适应表单的方法。 如果从“类型”下拉列表中选择“自适应表单”或“只读自适应表单”，则此选项可用。 您可以使用提交到工作流的自适应表单、在绝对路径上提供的自适应表单或变量中路径上提供的自适应表单。 您可以使用字符串类型的变量来指定路径。\
-   您可以将多个自适应Forms与一个工作流关联。 因此，您可以使用可用的输入方法在运行时指定自适应表单。
+  您可以将多个自适应Forms与一个工作流关联。 因此，您可以使用可用的输入方法在运行时指定自适应表单。
 
 <!-- 
 
@@ -80,7 +80,7 @@ ht-degree: 1%
    * **[!UICONTROL 使用以下方式选择输入数据文件]**：输入数据文件（.json、.xml、.doc或表单数据模型）的路径。 您可以使用相对于有效负荷的路径检索输入数据文件，或检索存储在Document、XML或JSON数据类型的变量中的文件。 例如，文件包含通过AEM收件箱应用程序为表单提交的数据。 示例路径为 [Payload_Directory]/workflow/data.
    * **[!UICONTROL 使用以下方式选择输入附件]**：该位置可用的附件会附加到与任务关联的表单。 路径可以相对于有效负荷，也可以检索存储在文档变量中的附件。 示例路径为 [Payload_Directory]/attachments/. 您可以指定相对于有效负荷放置的附件，也可以使用文档类型（“数组列表”>“文档”）变量来指定自适应表单的输入附件。
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
    * **[!UICONTROL 请求属性映射]**：使用“请求属性映射”部分定义 [请求属性的名称和值](work-with-form-data-model.md#bindargument). 根据请求中指定的属性名称和值从数据源检索详细信息。 您可以使用文本值或String数据类型的变量来定义请求属性值。
 
-   <!--  
+  <!--  
      
      The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
      
@@ -104,7 +104,7 @@ ht-degree: 1%
    * **[!UICONTROL 保存附件，使用]**：保存任务中提供的表单附件。 您可以使用相对于有效负荷的路径保存附件，或将其存储在Document数据类型的数组列表的变量中。
    * **[!UICONTROL 保存记录文档，使用]**：保存记录文档文件的路径。 例如， [Payload_Directory]/DocumentofRecord/credit-card.pdf. 您可以使用相对于有效负荷的路径保存记录文档，或将其存储到文档数据类型的变量中。 如果您选择 **[!UICONTROL 相对于有效负荷]** 选项，如果路径字段留空，则不生成记录文档。 仅当从“类型”下拉列表中选择“自适应表单”时，此选项才可用。
 
-   <!-- 
+  <!-- 
     
     * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
@@ -122,7 +122,7 @@ ht-degree: 1%
 * **[!UICONTROL 参数]**：在“参与者选择器”字段中选择RandomParticipantChoose脚本以外的脚本时，该字段可用。 利用字段，可为“参与者选择器”字段中选择的脚本提供逗号分隔参数的列表。
 
 * **[!UICONTROL 用户或组]**：任务已分配给选定的用户或组。 当满足以下条件时，该选项可用： **[!UICONTROL 至特定用户或组选项]** 已选中 **[!UICONTROL 分配选项]** 字段。 该字段列出了 [!DNL workflow-users] 组。\
-   此 **[!UICONTROL 用户或组]** 下拉菜单列出了登录用户有权访问的用户和组。 用户名显示取决于您是否拥有 **[!UICONTROL 用户]** crx-repository中用于特定用户的节点。
+  此 **[!UICONTROL 用户或组]** 下拉菜单列出了登录用户有权访问的用户和组。 用户名显示取决于您是否拥有 **[!UICONTROL 用户]** crx-repository中用于特定用户的节点。
 
 * **[!UICONTROL 发送通知电子邮件]**：选择此选项可向被分派人发送电子邮件通知。 当任务分配给用户或组时，将发送这些通知。 您可以使用 **[!UICONTROL 收件人电子邮件地址]** 用于指定检索电子邮件地址的机制的选项。
 
@@ -135,7 +135,7 @@ ht-degree: 1%
    * 当 **[!UICONTROL 允许被分派人通过收件箱共享进行共享]** 选项，并且用户共享其收件箱项目或允许其他用户访问其收件箱项目，只有之前提到的启用选项的任务才会与其他用户共享。
    * 当 **[!UICONTROL 允许被分派人使用“外出”设置进行委派]** 已选中。 被分派人可以启用将任务委派给其他用户的选项以及其他外出选项。 任何分配给休假用户的新任务都会自动委派（分配）给休假设置中提到的用户。
 
-   它允许其他用户在外出时选择被分派人任务，并且无法处理被分派的任务。
+  它允许其他用户在外出时选择被分派人任务，并且无法处理被分派的任务。
 
 * **[!UICONTROL 操作]** > **[!UICONTROL 默认操作]**：现成可用的提交、保存和重置操作。 默认启用所有默认操作。
 * **[!UICONTROL 路由变量]**：路由变量的名称。 route变量可捕获用户在AEM收件箱中选择的自定义操作。
@@ -354,7 +354,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
    * **[!UICONTROL 相对于有效负荷]**：使用选项可检索保存在相对于有效负荷的路径中的文件附件。 选择选项并指定包含文件附件的文件夹名称，或在文本框中指定文件附件名称。
 
-      例如，如果CRX存储库中的相对于有效负荷文件夹在 `attachment\attachment-folder` 位置，指定 `attachment\attachment-folder` 在文本框中，选择 **[!UICONTROL 相对于有效负荷]** 选项。
+     例如，如果CRX存储库中的相对于有效负荷文件夹在 `attachment\attachment-folder` 位置，指定 `attachment\attachment-folder` 在文本框中，选择 **[!UICONTROL 相对于有效负荷]** 选项。
 
    * **[!UICONTROL JSON点表示法]**：当要使用的值位于JSON文件中时，使用选项。 例如，insurance.customerDetails.emailAddress。 “JSON点表示法”选项仅在选择了“映射来自输入JSON的输入字段”选项时可用。
    * **[!UICONTROL 从输入JSON映射输入字段]**：指定JSON文件的路径，以从JSON文件中获取某些服务参数的输入值。 JSON文件的路径可以是相对于有效负载的路径、绝对路径，也可以使用JSON或表单数据模型类型的变量选择输入JSON文档。
@@ -526,7 +526,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 使用以下方式选择内容根位置]**：内容根是一个字符串值，它指定存储库中的URI、绝对引用或位置以检索表单设计使用的相对资源。 例如，如果窗体设计相对引用图像，例如 `../myImage.gif`， `myImage.gif` 必须位于 `repository://`. 默认值为 `repository://`，指向存储库的根级别。
 
-   从应用程序中选择资源时，内容根URI路径必须具有正确的结构。 例如，如果从名为SampleApp的应用程序中挑选表单，并将其放在 `SampleApp/1.0/forms/Test.xdp`，必须将内容根URI指定为 `repository://administrator@password/Applications/SampleApp/1.0/forms/`，或 `repository:/Applications/SampleApp/1.0/forms/` （当授权为空）。 以这种方式指定内容根URI时，表单中所有引用资产的路径都将针对此URI解析。
+  从应用程序中选择资源时，内容根URI路径必须具有正确的结构。 例如，如果从名为SampleApp的应用程序中挑选表单，并将其放在 `SampleApp/1.0/forms/Test.xdp`，必须将内容根URI指定为 `repository://administrator@password/Applications/SampleApp/1.0/forms/`，或 `repository:/Applications/SampleApp/1.0/forms/` （当授权为空）。 以这种方式指定内容根URI时，表单中所有引用资产的路径都将针对此URI解析。
 
 * **[!UICONTROL 使用以下方式选择XCI文件]**：XCI文件用于描述用于表单设计元素的字体和其他属性。 您可以将XCI文件相对于有效负荷保留在绝对路径上，或者使用Document数据类型的变量。
 
@@ -544,7 +544,7 @@ Send a document directly to a printer. It supports the following printing access
 
 ## 生成非交互式PDF输出步骤   {#generatePDFdocuments}
 
-1. 将“生成非交互式PDF输出”工作流拖动到Sidekick的“Forms Workflow”选项卡下。
+1. 将“生成非交互式PDF输出”工作流拖动到“Sidekick”的“Forms Workflow”选项卡下。
 1. 双击添加的工作流步骤以编辑组件。
 1. 在“编辑组件”对话框中，配置输入文档、输出文档和其他参数，然后单击 **[!UICONTROL 确定]**.
 

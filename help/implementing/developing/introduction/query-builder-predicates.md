@@ -2,9 +2,9 @@
 title: 查询生成器谓词参考
 description: 查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2280'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 * **`p.hits`**  — （仅适用于JSON servlet）选择点击作为JSON写入的方式，包括以下标准点击（可通过ResultHitWriter服务扩展）：
    * **`simple`**  — 最小项目，如 `path`， `title`， `lastmodified`， `excerpt` （如果已设置）
    * **`full`**  — 节点的sling JSON渲染，使用 `jcr:path` 指示点击的路径：默认情况下，仅列出节点的直接属性，包括更深的树 `p.nodedepth=N`，0表示整个、无限子树；添加 `p.acls=true` 在给定结果项上包含当前会话的JCR权限(映射： `create` = `add_node`， `modify` = `set_property`， `delete` = `remove`)
-   * **`selective`**  — 仅指定属性 `p.properties`，以空格分隔(使用 `+` （在URL中）相对路径列表；如果相对路径具有深度 `>1` 这些对象将表示为子对象；特殊对象 `jcr:path` 属性包括点击的路径
+   * **`selective`**  — 仅指定属性 `p.properties`，以空格分隔(使用 `+` （在URL中）相对路径列表；如果相对路径具有深度 `>1` 它们表示为子对象；特殊对象 `jcr:path` 属性包括点击的路径
 
 ### 组 {#group}
 
@@ -108,7 +108,7 @@ group.2_group.type=dam:Asset
 
 此谓词将两个JCR日期属性相互进行比较。 可以测试它们是否相等、不相等、大于或大于或等于。
 
-这是仅用于筛选的谓词，不能利用搜索索引。
+这是仅用于筛选的谓词，不能使用搜索索引。
 
 #### 属性 {#properties-2}
 
@@ -143,7 +143,7 @@ group.2_group.type=dam:Asset
 
 此谓词从路径与正则表达式匹配的结果中排除节点。
 
-这是仅用于筛选的谓词，不能利用搜索索引。
+这是仅用于筛选的谓词，不能使用搜索索引。
 
 它不支持Facet提取。
 
@@ -168,7 +168,7 @@ group.2_group.type=dam:Asset
 
 此谓词将结果限制在当前会话具有指定的项目 [JCR权限。](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
-这是仅用于筛选的谓词，不能利用搜索索引。 它不支持Facet提取。
+这是仅用于筛选的谓词，不能使用搜索索引。 它不支持Facet提取。
 
 #### 属性 {#properties-7}
 
@@ -178,7 +178,7 @@ group.2_group.type=dam:Asset
 
 此谓词查找采用特定语言的AEM页面。 这会查看页面语言属性和页面路径，后者通常包括顶级网站结构中的语言或区域设置。
 
-这是仅用于筛选的谓词，不能利用搜索索引。
+这是仅用于筛选的谓词，不能使用搜索索引。
 
 它支持Facet提取，并为每个唯一语言代码提供存储段。
 
@@ -190,7 +190,7 @@ group.2_group.type=dam:Asset
 
 此谓词检查节点是否是DAM主资产而不是子资产。 这基本上是子资产节点之外的每个节点。 请注意，这不会检查 `dam:Asset` 节点类型。 要使用此谓词，只需设置 `mainasset=true` 或 `mainasset=false`. 没有其他属性。
 
-这是仅用于筛选的谓词，不能利用搜索索引。
+这是仅用于筛选的谓词，不能使用搜索索引。
 
 它支持彩块化提取，并为主资源和子资源提供两个存储段。
 
@@ -202,7 +202,7 @@ group.2_group.type=dam:Asset
 
 此谓词查找属于特定成员的项 [sling资源集合](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
-这是仅用于筛选的谓词，不能利用搜索索引。
+这是仅用于筛选的谓词，不能使用搜索索引。
 
 它不支持Facet提取。
 
@@ -233,7 +233,7 @@ group.2_group.type=dam:Asset
 * **`notexpired`**  — 布尔值， `true` 尚未过期（未来日期或相等）， `false` 表示已过期（过去日期）（必需）
 * **`property`**  — 相对路径 `DATE` 要检查的属性（必需）
 
-### 路径 {#path}
+### path {#path}
 
 此谓词在给定路径内搜索。
 
@@ -244,8 +244,7 @@ group.2_group.type=dam:Asset
 * **`path`**  — 这定义路径模式。
    * 根据 `exact` 属性，则整个子树都将匹配(如附加 `//*` 在xpath中，但请注意，这不包括基本路径)或仅包含精确路径匹配，其中可以包括通配符(`*`)。
       * 默认为 `true`
-&lt;!— *如果 
-`self`属性设置后，将搜索包括基节点的整个子树。—>
+&lt;!— *如果 `self`属性设置后，将搜索包括基节点的整个子树。—>
 * **`exact`**  — 如果 `exact` 是 `true`，路径必须匹配，但可以包含简单通配符(`*`)，这些名称与名称匹配，但不匹配 `/`；如果为 `false` （默认）包括所有后代（可选）
 * **`flat`**  — 仅搜索直接子项(如附加 `/*` 在xpath中)(仅在 `exact` 不为true，可选)
 * **`self`**  — 搜索子树，但包含作为路径给定的基本节点（无通配符）。
@@ -267,7 +266,7 @@ group.2_group.type=dam:Asset
    * `equals` 用于完全匹配（默认）
    * `unequals` 不等式比较
    * `like` 使用 `jcr:like` xpath函数（可选）
-   * `not` 无匹配项(例如， `not(@prop)` 在xpath中， value param将被忽略)
+   * `not` 无匹配项(例如， `not(@prop)` 在xpath中，值参数被忽略)
    * `exists` 存在性检查
       * `true` 属性必须存在
       * `false` 与 `not` 和是默认值

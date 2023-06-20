@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # 使用资源微服务进行资源获取和处理概述 {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] 提供了一种云原生方法来利用 Experience Manager 应用程序和功能。这种新架构的关键元素之一是由资源微服务提供支持的资源摄取和处理。资源微服务使用云服务来对资源进行可扩展的弹性处理。Adobe 管理云服务以实施对不同的资源类型和处理选项的最优处理。云原生资源微服务的主要好处是：
+Adobe Experience Manager as a [!DNL Cloud Service] 提供了一种云原生方法来使用Experience Manager应用程序和功能。 这种新架构的关键元素之一是由资源微服务提供支持的资源摄取和处理。资源微服务使用云服务来对资源进行可扩展的弹性处理。Adobe 管理云服务以实施对不同的资源类型和处理选项的最优处理。云原生资源微服务的主要好处是：
 
 * 可扩展架构，允许无缝处理资源密集型操作。
 * 高效索引和文本提取，不影响 Experience Manager 环境的性能。
@@ -98,4 +98,3 @@ Experience Manager 客户端是产品的一部分，默认情况下都支持使�
 >* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
 >* [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [关于直接二进制访问的 Apache Oak 文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
-

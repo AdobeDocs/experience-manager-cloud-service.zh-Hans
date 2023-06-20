@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2529'
 ht-degree: 9%
 
 ---
@@ -61,7 +61,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 >
 >必须在与Experience Manager Assets as a相同的IMS组织上激活Brand Portal [!DNL Cloud Service] 实例。
 >
->如果您现有Brand Portal云配置([使用Adobe Developer控制台手动配置](#manual-configuration))，以及您的Experience Manager Assets as a [!DNL Cloud Service] 为另一个IMS组织(org2-new)配置了实例，从Cloud Manager激活Brand Portal会将Brand Portal IMS组织重置为 `org2-new`. 尽管手动配置的云配置位于 `org1-existing` 将在Experience Manager Assets创作实例中可见，但在从Cloud Manager激活Brand Portal后将不再使用。
+>如果您现有Brand Portal云配置([使用Adobe Developer控制台手动配置](#manual-configuration))，以及您的Experience Manager Assets as a [!DNL Cloud Service] 为另一个IMS组织(org2-new)配置了实例，从Cloud Manager激活Brand Portal会将Brand Portal IMS组织重置为 `org2-new`. 尽管手动配置的云配置位于 `org1-existing` 在Experience Manager Assets创作实例中可见，但在从Cloud Manager激活Brand Portal后将不再使用。
 >
 >如果现有Brand Portal云配置和Experience Manager Assets as a [!DNL Cloud Service] 实例使用相同的IMS组织(org1)，您只需从Cloud Manager激活Brand Portal即可。
 >
@@ -116,6 +116,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
    * **processing-queue**：用于将资源分发到Brand Portal。
 
    * **错误队列**：对于分发失败的资产。
+
    >[!NOTE]
    >
    >建议检查故障并清除 **错误队列** 定期。
@@ -339,7 +340,7 @@ IMS 配置包括两个步骤：
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 

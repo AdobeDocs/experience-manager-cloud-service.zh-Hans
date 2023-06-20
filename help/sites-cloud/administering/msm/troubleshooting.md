@@ -4,10 +4,10 @@ description: 了解如何解决与 MSM 相关的最常见问题并获得这些�
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 7c0be1a7bdc9ccb788ba41eb6ee83b89df94f500
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 88%
 
 ---
 
@@ -27,12 +27,12 @@ MSM 注册了几个 servlet，可以使用资源 URL 上的选择器来请求这
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * 在 Blueprint 页面上使用它可检索与之链接的所有 Live Copy 的列表，以及其他 Live Copy 状态信息。
    * 例如：
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * 在 Live Copy 页面上使用它可检索有关其与 Blueprint 页面的连接的高级信息。如果页面不是 Live Copy，则不会返回任何内容。
    * 例如：
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些消息也很有用。
 
@@ -55,7 +55,7 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 这些属性包含的信息应反映在 UI 中，但在进行问题排查时，在 MSM 操作发生时直接在存储库中观察 MSM 行为可能会很有用。
 
-了解这些属性对于查询您的存储库并找出处于特定状态的页面集也很有用。例如：
+了解这些属性也很有用，这样您就可以查询存储库并找出处于特定状态的页面集。 例如：
 
 * `select * from cq:LiveSync` 返回所有 Live Copy 根页面。
 
@@ -82,9 +82,9 @@ MSM 同步操作是高度可配置的。在转出期间修改哪些属性或组�
 
 如果转出 Blueprint 页面，它将更新其 Live Copy 页面或创建一个新的 Live Copy 页面（如果该页面不存在）（例如，首次转出或手动删除 Live Copy 页面时）。
 
-但在后一种情况下，如果存在不带 `cq:LiveRelationship` 属性的同名页面，则在创建 Live Copy 页面之前，会相应地重命名该页面。
+但在后一种情况下，如果页面不包含 `cq:LiveRelationship` 属性存在且名称相同，则在创建Live Copy页面之前，会相应地重命名此页面。
 
-默认情况下，转出需要一个链接的 Live Copy 页面（Blueprint 的更新将部署到该页面），或者没有页面（在创建 Live Copy 页面时）。
+默认情况下，转出需要一个链接的Live Copy页面（Blueprint的更新将转出到该页面），或者没有页面（在创建Live Copy页面时）。
 
 如果找到“独立”页面，MSM 会选择重命名该页面，并创建一个单独的、链接的 Live Copy 页面。
 

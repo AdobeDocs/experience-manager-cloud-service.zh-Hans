@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 6a633881be57b79ee167c3a16d514b903bc460ad
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 100%
+source-wordcount: '1595'
+ht-degree: 92%
 
 ---
 
@@ -64,7 +64,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 >[!NOTE]
 >
->如果您正在管理 New Relic One 用户，您还必须将自己添加为用户，以便您也可以访问。作为&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;没有足够权限访问 New Relic One。 您还必须将自己创建为用户。
+>如果您正在管理New Relic One用户，则还必须将自己添加为用户，以便也具有访问权限。 作为&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;没有足够权限访问 New Relic One。 您还必须将自己创建为用户。
 
 ## 激活您的 New Relic One 用户帐户 {#activate-account}
 
@@ -146,8 +146,8 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 以下限制适用于向 New Relic One 添加用户：
 
-* 最多可以添加 30 个用户。如果已达到最大用户数，请移除用户，以便能够添加新用户。
-* 添加到 New Relic 的用户将属于&#x200B;**受限**&#x200B;类型。有关详细信息，请参阅 [New Relic 文档。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* 最多可以添加 30 个用户。如果已达到最大用户数，请删除用户以便能够添加新用户。
+* 添加到New Relic的用户属于 **受限**，请参见 [有关详细信息，请参阅New Relic文档。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service 仅提供 New Relic One APM 解决方案，不支持警报、日志记录或 API 集成。
 
 有关您的 AEM as a Cloud Service 程序的 New Relic One 产品的更多帮助或更多指导，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持请求工单。
@@ -172,7 +172,7 @@ Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java �
 
 ### 谁可以访问 New Relic One 云服务数据？ {#access-new-relic-cloud}
 
-您的团队最多可以有 30 名成员获得完全读取权限。读取权限将包括 New Relic One 代理收集的所有 APM 量度。
+您最多可以将“完全读取”权限授予团队30名成员。 读取权限将包括 New Relic One 代理收集的所有 APM 量度。
 
 ### 是否支持自定义 SSO 配置？ {#custom-sso}
 
@@ -184,7 +184,7 @@ New Relic One 是 New Relic 推出的新可观察性平台，它使 Adobe 支持
 
 New Relic One 为用户提供了跨所有帐户搜索的能力，用户可以在一个视图中访问和可视化来自所有服务和主机的数据。
 
-虽然 Adobe 支持人员将使用 New Relic One 和其他内部工具作为您服务的一部分，将 AEM as a Cloud Service 应用程序进行监控，但您的团队可以继续利用 New Relic 提供本地托管服务和基础设施。他们将能够以可视化图表形式查看来自 Adobe New Relic One 帐户和客户管理的 New Relic 帐户的数据。
+虽然Adobe支持将使用New Relic One和其他内部工具作为您服务的一部分来监控AEMas a Cloud Service应用程序，但您的团队可以继续使用New Relic提供本地托管服务和基础架构。 他们能够可视化来自AdobeNew Relic One帐户和客户管理的New Relic帐户的数据。
 
 >[!NOTE]
 >

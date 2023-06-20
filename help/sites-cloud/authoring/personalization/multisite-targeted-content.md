@@ -2,9 +2,9 @@
 title: 在多个站点中使用目标内容
 description: 如果您需要管理目标内容（如网站之间的活动、体验和选件），则可以利用AEM针对目标内容的内置多站点支持
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2891'
 ht-degree: 31%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 31%
 >* 使用转出或活动副本时，需要MSM许可证。
 >* 当您使用与Adobe Target的同步时，需要Adobe Target许可证。
 >
-
 
 ## 用例 {#use-cases}
 
@@ -164,7 +163,7 @@ ht-degree: 31%
 
 ## 将区域创建为活动副本 {#creating-areas-as-live-copies}
 
-您可以创建一个区域作为Live Copy，以便跨站点结构继承目标内容。
+您可以创建一个区域作为Live Copy，以跨站点结构继承目标内容。
 
 要创建区域作为LiveCopy：
 
@@ -235,7 +234,6 @@ ht-degree: 31%
 >* 您只能在活动中暂停或分离活动副本。
 >* 您无需暂停或分离活动副本即可扩展继承的活动。 您可以随时创建 **新** 该活动的本地体验和选件。 如果要修改现有活动，则需要暂停继承。
 >
-
 
 ### 暂停继承 {#suspending-inheritance}
 

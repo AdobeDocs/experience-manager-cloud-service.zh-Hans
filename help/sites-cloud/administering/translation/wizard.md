@@ -4,10 +4,10 @@ description: 了解如何在 AEM 中使用语言复制向导。
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >如果您在上一步中选择了多种语言，则将创建多个翻译项目。
+   >如果您在上一步中选择了多种语言，则会创建多个翻译项目。
 
    ![向导的翻译步骤](../assets/language-copy-wizard-translate.png)
 

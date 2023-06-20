@@ -3,7 +3,7 @@ title: 如何将数据库连接到 [!DNL AEM Forms] as a Cloud Service？
 seo-title: AEM Forms Data Integration
 description: 您可以从以下位置检索数据并将其保存到RESTful Web服务、基于SOAP的Web服务和OData服务 [!DNL AEM Forms] as a Cloud Service。 该服务提供了一个专用工具，用于检索、测试、验证数据并将其发送到各种类型的数据源。
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ## 数据集成入门 {#get-started-with-data-integration}
 
-实施数据集成的第一步是标识和配置数据源，这些数据源存储了您希望在自适应Forms和交互式通信用例中利用的信息。 接下来，创建一个使用来自一个或多个数据源的数据模型对象、属性和服务的表单数据模型。 您可以基于表单数据模型创建自适应Forms和交互式通信，其中交互式通信中的自适应表单字段或占位符绑定到各自的数据源属性。
+实施数据集成的第一步是标识和配置数据源，其中存储了您希望在自适应Forms和交互式通信用例中使用的信息。 接下来，创建一个使用来自一个或多个数据源的数据模型对象、属性和服务的表单数据模型。 您可以基于表单数据模型创建自适应Forms和交互式通信，其中交互式通信中的自适应表单字段或占位符绑定到各自的数据源属性。
 
 [!DNL AEM Forms] 还允许您创建独立于数据源的表单数据模型，并在以后将表单数据模型中的数据模型对象和属性与数据源关联或绑定。 它在处理表单数据模型时消除了对数据源的任何依赖性。
 

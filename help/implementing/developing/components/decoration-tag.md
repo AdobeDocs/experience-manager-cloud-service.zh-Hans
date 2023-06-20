@@ -2,10 +2,10 @@
 title: 修饰标记
 description: 呈现网页中的组件后，可以生成一个 HTML 元素，以将呈现的组件封装在其中。对于开发人员而言，AEM 可提供清晰而简单的逻辑来控制用于封装所包含组件的修饰标记。
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 10%
+source-wordcount: '787'
+ht-degree: 11%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 10%
 * **`cq:htmlTag`节点：** 此节点可以添加到组件下，并且可以具有以下属性：
    * **`cq:tagName {String}`：** 这可用于指定用于封装组件的自定义HTML标记，而不是默认DIV元素。
    * **`class {String}`：** 这可用于指定要添加到包装器中的css类名。
-   * 其他属性名称将添加为HTML属性，其字符串值与提供的值相同。
+   * 其他属性名称将作为HTML属性添加，并具有与提供的字符串值相同的字符串值。
 
 ## 脚本控件 {#script-controls}
 

@@ -2,10 +2,10 @@
 title: 响应式布局
 description: AEM允许您为页面实现响应式布局
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 66%
+source-wordcount: '1764'
+ht-degree: 65%
 
 ---
 
@@ -28,11 +28,11 @@ AEM 使用一组机制为页面实现响应式布局：
 
 * [**布局容器**](#adding-a-layout-container-and-its-content-edit-mode)&#x200B;组件
 
-   此组件在[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)中可用，而且提供了一个网格段落系统，让您能够在响应式网格内添加和放置组件。您也可以将此组件设置为页面上的默认段落系统。
+  此组件在[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)中可用，而且提供了一个网格段落系统，让您能够在响应式网格内添加和放置组件。您也可以将此组件设置为页面上的默认段落系统。
 
 * [**布局模式**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   将布局容器放置到页面上后，就可以使用&#x200B;**布局**&#x200B;模式在响应式网格内放置内容。
+  将布局容器放置到页面上后，就可以使用&#x200B;**布局**&#x200B;模式在响应式网格内放置内容。
 
 * [**模拟器**](#selecting-a-device-to-emulate)
 模拟器让您能够创建并编辑响应式网站，这些网站可以根据设备/窗口大小，通过以交互方式调整组件大小来重新安排布局。随后，用户可以使用模拟器查看内容的呈现方式。
@@ -124,7 +124,6 @@ AEM允许您根据设备的宽度定义布局：
    * 如果所模拟设备的高度高于屏幕大小，则不会显示折线线。
    * 显示折页是为了方便作者查看，在已发布的页面上则不会显示折页。
 
-
 ## 添加布局容器及其内容（编辑模式） {#adding-a-layout-container-and-its-content-edit-mode}
 
 **布局容器**&#x200B;是一个段落系统，该系统：
@@ -190,53 +189,54 @@ AEM允许您根据设备的宽度定义布局：
 
 * 使用蓝点调整内容组件的大小。 调整大小将始终与网格对齐。 在调整背景网格大小时，将显示背景网格以帮助对齐：
 
-   ![调整组件大小](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+  ![调整组件大小](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >[!NOTE]
-   >
-   >在调整&#x200B;**图像**&#x200B;等组件的大小时，其比例和比率将保持不变。
+  >[!NOTE]
+  >
+  >比例及比率于以下各组成部分时维持不变： **图像** 将调整大小。
 
 * 单击/点按内容组件后，您可以使用工具栏执行以下操作：
    * **父项** - 允许您选择整个布局容器组件，以便对整体执行操作。
    * **浮动到新行** - 组件将被移动到新行，具体视网格内的可用间距而定。
    * **隐藏组件** - 组件将变得不可见（可以从布局容器的工具栏中恢复）。
 
-   ![隐藏组件](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+  ![隐藏组件](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
 * 在&#x200B;**布局**&#x200B;模式下，您可以点按/单击&#x200B;**将组件拖动到此处**&#x200B;来选择整个组件。这将显示此模式的工具栏。
 
-   根据布局组件及其所属组件的状态，工具栏将具有不同的选项。 例如：
+  根据布局组件及其所属组件的状态，工具栏将具有不同的选项。 例如：
 
    * **父项** - 选择父组件。
 
-      ![“父项”按钮](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+     ![“父项”按钮](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
    * **显示隐藏的组件** - 显示所有或各个组件。数字表示当前存在的隐藏组件数量。计数器显示隐藏的组件数量。
 
-      ![显示隐藏的组件按钮](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+     ![显示隐藏的组件按钮](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
    * **还原断点布局** - 还原到默认的布局。这意味着不再强制使用自定义布局。
 
-      ![还原断点布局按钮](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+     ![还原断点布局按钮](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
    * **浮动到新行** - 在间距允许的情况下将组件向上移动一个位置。
 
-      ![浮动到新行按钮](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+     ![浮动到新行按钮](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
    * **隐藏组件** - 隐藏当前的组件。
 
-      ![隐藏组件按钮](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]
-   >
-   >在以上示例中，浮动和隐藏操作之所以可用，是因为此布局容器嵌套在一个父布局容器内。
+     ![隐藏组件按钮](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
+
+  >[!NOTE]
+  >
+  >在以上示例中，浮动和隐藏操作之所以可用，是因为此布局容器嵌套在一个父布局容器内。
 
    * **取消隐藏组件**
-选择父组件会显示包含 
-**显示隐藏组件**&#x200B;选项的操作工具栏。 在此示例中，隐藏了两个组件。
+选择父组件会显示包含**显示隐藏的组件**&#x200B;选项的操作工具栏。在此示例中，隐藏了两个组件。
 
-      ![取消隐藏组件](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-   选择&#x200B;**显示隐藏的组件**&#x200B;选项时，当前隐藏的组件将以蓝色显示在它们的原始位置。
+     ![取消隐藏组件](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
-   ![恢复全部按钮](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+  选择&#x200B;**显示隐藏的组件**&#x200B;选项时，当前隐藏的组件将以蓝色显示在它们的原始位置。
 
-   选择&#x200B;**全部恢复**&#x200B;将取消隐藏所有隐藏的组件。
+  ![恢复全部按钮](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
+  选择&#x200B;**全部恢复**&#x200B;将取消隐藏所有隐藏的组件。

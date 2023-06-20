@@ -3,10 +3,10 @@ title: 使用带有 GraphQL 的内容片段的 Headless 内容投放 （资产 �
 description: 了解使用 GraphQL 中的内容片段实现 AEM Headless CMS 以进行 headless 内容投放的基本概念。
 feature: Content Fragments, GraphQL API
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 99%
+source-wordcount: '733'
+ht-degree: 97%
 
 ---
 
@@ -24,14 +24,12 @@ ht-degree: 99%
 >
 >* [Headless 和 AEM](/help/headless/introduction.md) 介绍 AEM Sites as a Cloud Service 的 Headless 开发。
 
-
 >[!NOTE]
 >
 >GraphQL 当前用于 Adobe Experience Manager (AEM) as a Cloud Service 中的两种（分隔的）场景：
 >
 >* [AEM Commerce 通过 GraphQL 使用来自 Commerce 平台的数据](/help/commerce-cloud/integrating/magento.md)。
 >* [AEM 内容片段与 AEM GraphQL API（一种自定义实现，基于标准 GraphQL）配合使用，提供结构化内容用于您的应用程序](/help/headless/graphql-api/content-fragments.md)。
-
 
 ## Headless CMS {#headless-cms}
 
@@ -41,7 +39,7 @@ ht-degree: 99%
 
 * 您可以使用内容片段来创作主要不打算在格式化页面上直接发布 (1:1) 的内容。
 
-* 您的内容片段的内容将以预先确定的方式构建 – 根据内容片段模型。 这简化了对应用程序的访问，这将进一步处理您的内容。
+* 您的内容片段的内容以预先确定的方式构建 — 根据内容片段模型。 这简化了对应用程序的访问，这将进一步处理您的内容。
 
 ## GraphQL — 概述 {#graphql-overview}
 
@@ -49,7 +47,7 @@ GraphQL 是：
 
 * ”*...一种用于 API 和运行时的查询语言，使用您的现有数据满足这些查询。*“。
 
-   请参阅 [GraphQL.org](https://graphql.org)
+  请参阅 [GraphQL.org](https://graphql.org)
 
 [AEM GraphQL API](#aem-graphql-api) 允许您对[内容片段](/help/assets/content-fragments/content-fragments.md)执行（复杂）查询；每个查询都根据特定的模型类型。 然后，您的应用程序可以使用返回的内容。
 

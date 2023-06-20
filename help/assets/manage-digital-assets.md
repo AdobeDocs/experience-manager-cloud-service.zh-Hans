@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4377'
 ht-degree: 11%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 11%
 >
 >* 共享该类型的资产文件夹 `sling:OrderedFolder`在共享到Experience Cloud时不支持。 如果要共享文件夹，请不要选择 [!UICONTROL 已排序] 创建文件夹时。
 >* Experience Manager不允许使用 `subassets` 单词作为文件夹的名称。 它是为包含复合资产的子资产的节点保留的关键字
-
 
 1. 导航到数字资产文件夹中要创建新文件夹的位置。 在菜单中，单击 **[!UICONTROL 创建]**. 选择 **[!UICONTROL 新建文件夹]**.
 1. 在 **[!UICONTROL 标题]** 字段中，提供文件夹名称。 默认情况下，DAM使用您提供的标题作为文件夹名称。 创建文件夹后，您可以覆盖默认名称并指定其他文件夹名称。
@@ -184,11 +183,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * 在移动资源后指定资源的名称。 然后点按/单击 **[!UICONTROL 下一个]** 以继续。
 
    * 点按/单击 **[!UICONTROL 取消]** 以停止该过程。
+
    >[!NOTE]
    >
    >* 如果新位置中没有同名的资源，则可以为该资源指定相同的名称。 但是，如果将资产移动到具有相同名称的资产存在的位置，则应该使用其他名称。 如果使用相同的名称，系统会自动生成该名称的变体。 例如，如果资产的名称为Square，则系统会为其副本生成名称Square1。
    >* 重命名时，文件名中不允许使用空格。
-
 
 1. 在 **[!UICONTROL 选择目标]** 对话框，请执行以下操作之一：
 
@@ -486,7 +485,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->如果选择多个注释，则用户界面上将显示最新的注释。
+>如果选择多个注释，则最新的注释将显示在用户界面上。
 >
 >仅支持将带注释的资源打印为PDF的多选。
 

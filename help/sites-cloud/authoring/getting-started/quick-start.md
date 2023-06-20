@@ -2,10 +2,10 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 69%
+source-wordcount: '1578'
+ht-degree: 65%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 69%
 
 * 重新排序页面
 
-   * 此操作可在[列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)中完成。更改将在其他视图中应用并可见。
+   * 这可以在以下位置完成 [列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). 更改在其他视图中可应用并显示。
 
 ### 页面创作 {#page-authoring}
 
@@ -52,7 +52,6 @@ ht-degree: 69%
 >
 >* [编辑页面时的键盘快捷键](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [控制台的键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
 
 ### 查找页面 {#finding-your-page}
 
@@ -103,6 +102,7 @@ ht-degree: 69%
 
       * 在移动设备上：点按并按住卡片
       * 在桌面设备上：使用勾号图标表示的[快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)：
+
    * 卡片上将覆盖一个勾号，表示已选择该页面。
 
    ![示例卡片](/help/sites-cloud/authoring/assets/card.png)
@@ -112,7 +112,7 @@ ht-degree: 69%
 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)可用：
 
 1. [导航](#finding-your-page)到要执行操作的页面。
-1. 将鼠标指针悬停在代表所需资源的卡片上方。将会显示快速操作：
+1. 将鼠标指针悬停在表示所需资源的卡片上。 此时会显示快速操作：
 
    ![卡片操作](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -138,27 +138,31 @@ ht-degree: 69%
       * 选择组件选项卡（[组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)）
       * 将所需组件拖放到页面中。
 
-      可以通过以下图标打开（或关闭）侧面板：
+     可以通过以下图标打开（或关闭）侧面板：
 
-      ![侧面板切换按钮](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+     ![侧面板切换按钮](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
    * [编辑现有组件的内容](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 在页面上：
 
       * 通过点按或单击打开组件工具栏。使用 **编辑** （铅笔）图标以打开对话框。
-      * 通过长按或双击打开组件的就地编辑器。 将显示可用的操作（对于某些组件，这将是有限的选择）。
+      * 通过长按或双击打开组件的就地编辑器。 将显示可用的操作（对于某些组件，这是有限的选择）。
       * 要查看所有可用操作，请使用以下方式进入全屏模式：
 
-         ![全屏按钮](/help/sites-cloud/authoring/assets/full-screen.png)
+        ![全屏按钮](/help/sites-cloud/authoring/assets/full-screen.png)
+
    * [配置现有组件的属性](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
       * 通过点按或单击打开组件工具栏。使用 **配置** （扳手）图标以打开对话框。
+
    * [移动组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) 可以：
 
       * 将所需的组件拖动到新位置。
       * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**剪切**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
+
    * [复制（和粘贴）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 组件：
 
       * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
+
    >[!NOTE]
    >
    >您可以将组件&#x200B;**粘贴**&#x200B;到同一页面或其他页面。如果在剪切/复制操作之前粘贴到已打开的其他页面，则表明该页面需要刷新。
@@ -166,14 +170,17 @@ ht-degree: 69%
    * [删除](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
       * 通过点按或单击打开组件工具栏，然后使用&#x200B;**删除**&#x200B;图标。
+
    * [添加注释](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) 到页面：
 
       * 选择 **批注** 模式（语音泡图标）。 使用添加注释 **添加注释** （加号）图标。 使用右上方的 X 退出注释模式。
 
-         ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
+        ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
+
    * [预览页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) （查看它将在发布环境中的显示方式）
 
       * 选择 **预览** 工具栏中。
+
    * 使用返回到编辑模式（或选择其他模式） **编辑** 下拉选择器。
 
    >[!NOTE]
@@ -194,8 +201,7 @@ ht-degree: 69%
 
       ![“属性”按钮](/help/sites-cloud/authoring/assets/properties.png)
 
-   1. 将会显示页面属性。您可以进行需要的更新，然后使用“保存”保留这些更改
-
+   1. 此时将显示页面属性。 您可以进行需要的更新，然后使用“保存”保留这些更改
 
 * 时间 [编辑页面](#editing-your-page-content)：
 
@@ -218,7 +224,6 @@ ht-degree: 69%
 
       ![“快速发布”按钮](/help/sites-cloud/authoring/assets/quick-publish.png)
 
-
 * 时间 [编辑页面](#editing-your-page-content)：
 
    1. 打开 **页面信息** 菜单。
@@ -226,11 +231,11 @@ ht-degree: 69%
 
 * 从控制台取消发布页面只能通过&#x200B;**管理发布**&#x200B;选项完成，该选项仅在工具栏上可用（不能通过快速操作）。
 
-   ![“管理发布”按钮](/help/sites-cloud/authoring/assets/manage-publication.png)
+  ![“管理发布”按钮](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   此 **取消发布页面** 选项仍可通过 **页面信息** 菜单。
+  此 **取消发布页面** 选项仍可通过 **页面信息** 菜单。
 
-   参见 [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 了解更多信息。
+  参见 [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 了解更多信息。
 
 ### 移动、复制和粘贴或删除页面 {#move-copy-and-paste-or-delete-your-page}
 
@@ -247,12 +252,15 @@ ht-degree: 69%
    * [复制](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page)：
 
       * 然后，您需要导航到新位置并粘贴。
+
    * [移动](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)：
 
       * 将打开相应的向导来收集移动页面时所需的信息。请按照屏幕上的说明操作。
+
    * [删除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)：
 
       * 系统将要求您确认该操作。
+
    >[!NOTE]
    >
    >快速操作中并未提供“删除”操作。
@@ -305,13 +313,14 @@ ht-degree: 69%
 
    ![时间线视图选项](/help/sites-cloud/authoring/assets/timeline.png)
 
-   如果页面的某个版本已经保存，则会在“时间线”中列出该版本。
+   如果页面的某个版本已保存，则会在“时间线”中列出该版本。
 
 1. 点按/单击要还原的版本 — 这将显示其他操作按钮：
 
    * **恢复到此版本**
 
       * 将恢复该版本。
+
    * **显示差异**
 
       * 此时将打开页面，并突出显示（两个版本之间的）差异。

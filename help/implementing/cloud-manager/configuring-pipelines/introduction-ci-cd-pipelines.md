@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道，以及如何使用它们高效地部署代码。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 87%
 
 ---
 
@@ -97,10 +97,10 @@ Cloud Manager 提供两种类型的管道：
 
 以下限制适用。
 
-* 用户必须以&#x200B;**部署管理员**&#x200B;角色登录，才能配置或运行管道。
+* 用户必须使用 **部署管理员** 配置或运行管道的角色。
 * 在任何时候，每个环境只能有一个全栈管道。
 
-此外，如果您选择引入 [Web 层配置管道](#web-tier-config-pipelines)，请注意全栈管道的行为。
+此外，如果您选择引入 [Web层配置管道。](#web-tier-config-pipelines)
 
 * 如果存在相应的 Web 层配置管道，则环境的完整堆栈管道将忽略 Dispatcher 配置。
 * 如果环境的相应 Web 层配置管道不存在，则用户可以配置全栈管道，包括或忽略 Dispatcher 配置。
@@ -115,7 +115,7 @@ Cloud Manager 提供两种类型的管道：
 
 >[!IMPORTANT]
 >
->您必须使用 AEM 版本 `2021.10.5933.20211012T154732Z ` 或更高版本，并启用 AEM Sites 以利用前端管道。
+>您必须使用AEM版本 `2021.10.5933.20211012T154732Z ` 或更高版本启用AEM Sites以使用前端管道。
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Cloud Manager 提供两种类型的管道：
 
 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
 
-请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
+请参阅文档 [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此过程的工作方式以及一些需要注意的事项，以充分发挥此过程的潜力。
 
 ### 配置全栈管道 {#configure-full-stack}
 
@@ -160,18 +160,18 @@ Web 层配置管道通过将 HTTPD/Dispatcher 配置与其他代码更改分离�
 
 以下限制适用。
 
-* 您必须使用 AEM 版本 `2021.12.6151.20211217T120950Z` 或更新版本才能使用 Web 层配置管道。
-* 您必须[选择启用 Dispatcher 工具的灵活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug)才能使用 Web 层配置管道。
-* 用户必须以&#x200B;**部署管理员**&#x200B;角色登录，才能配置或运行管道。
+* 您必须使用AEM版本 `2021.12.6151.20211217T120950Z` 更新版本以使用Web层配置管道。
+* 您必须 [选择启用Dispatcher工具的灵活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug) 以使用Web层配置管道。
+* 用户必须使用 **部署管理员** 配置或运行管道的角色。
 * 在任何时候，每个环境只能有一个 Web 层配置管道。
 * 当相应的全栈管道正在运行时，用户无法配置 Web 层配置管道。
 * Web 层结构必须遵循灵活的模式结构，如文档[云中 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug)中所定义。
 
-此外，请注意[全栈管道](#full-stack-pipeline)在引入 Web 层管道时的行为。
+此外，请了解 [全栈管道](#full-stack-pipeline) 在引入Web层管道时的行为。
 
 * 如果尚未为环境配置 Web 层配置管道，则用户可以在配置其相应的全栈管道时进行选择，以便在执行和部署期间包括或忽略 Dispatcher 配置。
 * 一旦为环境配置了 Web 层配置管道，其相应的全栈管道（如果存在）将在执行和部署期间忽略 Dispatcher 配置。
-* 一旦删除了 Web 层配置管道，其相应的全栈管道将重置为在执行期间部署 Dispatcher 配置。
+* 删除Web层配置管道后，其相应的全栈管道将重置为在执行期间部署Dispatcher配置。
 
 Web 层配置管道可以是代码质量类型或部署类型。
 

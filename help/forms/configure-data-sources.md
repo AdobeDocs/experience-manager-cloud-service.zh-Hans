@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ac525d2500177229221a5d6f79d2a8feeefe3f06
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 2%
@@ -78,7 +78,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties will be available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -134,7 +134,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
       * 方案： REST API使用的传输协议。 下拉列表中显示的方案类型数取决于 [!DNL Swagger] 源。
       * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
       * 基本路径：所有API路径的URL前缀。 它是一个可选字段。\
-         如有必要，请编辑这些字段的预填充值。
+        如有必要，请编辑这些字段的预填充值。
+
    * 选择身份验证类型 — None、OAuth2.0([授权码](https://oauth.net/2/grant-types/authorization-code/)， [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证、API密钥或自定义身份验证 — 用于访问RESTful服务，并相应地提供身份验证的详细信息。
 
    如果您选择 **[!UICONTROL API密钥]** 作为身份验证类型，请指定API密钥的值。 API密钥可作为请求标头或查询参数发送。 从中选择以下选项之一 **[!UICONTROL 位置]** 下拉列表，并在中指定标头的名称或查询参数 **[!UICONTROL 参数名称]** 字段。
@@ -232,10 +233,10 @@ RESTful服务Open API规范版本3.0不支持的一些操作包括：
    * 服务端点. 在此字段中指定一个值以覆盖WSDL中提到的服务端点。
    * 选择身份验证类型 — None、OAuth2.0([授权码](https://oauth.net/2/grant-types/authorization-code/)， [客户端凭据](https://oauth.net/2/grant-types/client-credentials/))、基本身份验证或自定义身份验证 — 用于访问SOAP服务，并相应地提供身份验证的详细信息。
 
-      <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
-      <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
+     <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
+     <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
 
-      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+     <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 点按 **[!UICONTROL 创建]** 创建SOAP Web服务的云配置。
 
@@ -277,6 +278,7 @@ OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience 
    如果您选择 **[!UICONTROL API密钥]** 作为身份验证类型，请指定API密钥的值。 API密钥可作为请求标头或查询参数发送。 从中选择以下选项之一 **[!UICONTROL 位置]** 下拉列表，并在中指定标头的名称或查询参数 **[!UICONTROL 参数名称]** 字段。
 
    >[!NOTE]
+   >
    您必须选择要连接的OAuth 2.0身份验证类型 [!DNL Microsoft® Dynamics] 使用OData端点作为服务根的服务。
 
 1. 点按 **[!UICONTROL 创建]** 为OData服务创建云配置。

@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 站点主题来自定义站点的样式和�
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: a77c31ebfce01834325bfdb806793dcd8ba169d4
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '353'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 站点主题是一个包，其中包含的 CSS、JavaScript 和静态资源�
 
 >[!NOTE]
 >
->不应混淆 AEM 站点主题与 [AEM 站点模板。](site-templates.md)AEM 站点主题仅包含 AEM 站点的样式信息。AEM 站点模板定义站点结构和初始内容，并包含 AEM 站点主题，以便[快速创建站点](create-site.md)。
+>不应混淆 AEM 站点主题与 [AEM 站点模板。](site-templates.md)AEM 站点主题仅包含 AEM 站点的样式信息。AEM站点模板定义站点结构和初始内容，并包含要允许的AEM站点主题 [快速站点创建。](create-site.md)
 
 ## 使用站点主题 {#using-themes}
 

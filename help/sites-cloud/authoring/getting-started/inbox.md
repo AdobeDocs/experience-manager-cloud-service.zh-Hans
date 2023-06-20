@@ -2,10 +2,10 @@
 title: 您的收件箱
 description: 使用收件箱管理任务
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 76%
+source-wordcount: '909'
+ht-degree: 74%
 
 ---
 
@@ -30,7 +30,6 @@ ht-degree: 76%
 >* [项目](/help/sites-cloud/authoring/projects/overview.md)
 >* [项目 — 使用任务](/help/sites-cloud/authoring/projects/tasks.md)
 >* [工作流](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## 标题中的收件箱 {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ ht-degree: 76%
 
 * **日历视图**
 
-   对象 **日历视图** 您可以配置：
+  对象 **日历视图** 您可以配置：
 
    * **分组方式**
    * **计划**&#x200B;或&#x200B;**无**
    * **卡片大小**
 
-   ![收件箱日历视图设置](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![收件箱日历视图设置](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **列表视图**
 
-   对象 **列表视图** 您可以配置排序机制：
+  对象 **列表视图** 您可以配置排序机制：
 
    * **排序方式**
    * **排序顺序**
 
-   ![收件箱列表视图设置](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![收件箱列表视图设置](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   您还可以将日历委派给其他用户，向其他用户请求委派以及管理您的委派。
+  您还可以将日历委派给其他用户，向其他用户请求委派以及管理您的委派。
 
-   ![收件箱列表视图委派设置](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![收件箱列表视图委派设置](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## 对某个项目执行操作 {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ ht-degree: 76%
       * 显示项目属性
       * 打开相应的功能板或向导以进一步执行操作
       * 打开相关文档
+
    * **回退**&#x200B;到上一步
    * 查看工作流的有效负荷
    * 从该项目创建一个项目
@@ -135,7 +135,6 @@ ht-degree: 76%
    >有关更多信息，请参阅：
    >
    >* 工作流项目 —  [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
-
 
 2. 根据所选项目，将会启动相应的操作；例如：
 
@@ -152,7 +151,6 @@ ht-degree: 76%
    * 确认相应的操作，例如重新分配。
    * 取消操作
    * 选择“上一步”箭头可返回到收件箱，例如，如果操作向导或文档页面已打开，则可返回收件箱。
-
 
 ## 创建任务 {#creating-a-task}
 
@@ -176,7 +174,7 @@ ht-degree: 76%
 
    * **高级**
 
-      * **名称**：这将用于组建 URL，如果留空，URL 将会基于&#x200B;**标题**。
+      * **名称**：用于形成URL，如果留空，则基于 **标题**.
 
    ![收件箱添加任务高级选项](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ ht-degree: 76%
       * **开始日期**
       * **到期日期**
       * **用户** 和角色
+
    * **高级**
 
       * **名称**
+
    >[!NOTE]
    >
    >参见 [创建项目](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) 以获取完整信息。

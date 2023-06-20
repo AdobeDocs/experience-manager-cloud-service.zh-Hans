@@ -4,9 +4,9 @@ description: 配置 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 0%
 >
 >* 参见 [Workfront for Experience Manager Assets增强型连接器的合作伙伴认证考试](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 有关考试的信息，请参见 [考试指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 ## 配置事件订阅 {#event-subscriptions}
 
 事件订阅用于通知AEM中发生的事件 [!DNL Adobe Workfront]. 有三个 [!DNL Workfront for Experience Manager enhanced connector] 需要事件订阅才能正常使用的功能包括：
@@ -45,7 +44,7 @@ ht-degree: 0%
 * 选择 [!UICONTROL Workfront自定义集成] 您在第6节中创建了。
 * 单击 [!UICONTROL 启用Workfront事件订阅].
 
-   ![事件订阅](/help/assets/assets/event-subs.png)
+  ![事件订阅](/help/assets/assets/event-subs.png)
 
 ## 配置链接的文件夹 {#linked-folders}
 
@@ -60,11 +59,11 @@ ht-degree: 0%
 1. 转到云服务中的项目链接文件夹选项卡。
 1. 链接文件夹父路径：在DAM中选择要在其中创建链接文件夹的文件夹。 如果留空，则默认为/content/dam。 确保Workfront工具元数据架构和Workfront链接文件夹元数据架构已应用于所选文件夹。
 1. 链接的文件夹结构：输入逗号分隔的值。 每个值应为 `DE:<some-project-custom-form-field>`、Portfolio、项目、年份、名称或一些“文本字符串值”（最后一个，带引号）。 它当前设置为Portfolio、项目、年、DE：项目类型、名称。
-1. 如果Workfront中的文件夹标题应包括结构中的所有文件夹，则应选中使用文件夹结构名称在Workfront中构建链接的文件夹标题复选框。 否则，这将是最后一个文件夹的标题。
+1. 如果Workfront中的文件夹标题应包括结构中的所有文件夹，则应选中使用文件夹结构名称在Workfront中构建链接的文件夹标题复选框。 否则，它是最后一个文件夹的标题。
 1. 子文件夹多字段允许您指定应创建为链接文件夹的子文件夹的文件夹列表。
-1. 项目状态：选择项目必须设置为的状态以创建链接文件夹。
-1. 在具有项目组合的项目中创建链接文件夹：项目必须属于的Portfolio列表以创建链接文件夹。 将此列表留空可为所有项目组合创建链接文件夹。
-1. 在具有自定义表单字段的项目中创建链接文件夹：自定义表单字段及其项目必须具有的相应值以创建链接文件夹。 如果留空，将忽略此配置。 选择 `CUSTOM FORMS: Create DAM Linked Folder` 字段和输入 `Yes` 值。
+1. 项目状态：选择创建链接文件夹时必须为其设置项目的状态。
+1. 在具有项目组合的项目中创建链接文件夹：项目必须属于的Portfolio列表，以便您可以创建链接文件夹。 将此列表留空可为所有项目组合创建链接文件夹。
+1. 在具有自定义表单字段的项目中创建链接文件夹：自定义表单字段及其项目必须具有的相应值，以便您可以创建链接文件夹。 如果留空，将忽略此配置。 选择 `CUSTOM FORMS: Create DAM Linked Folder` 字段和输入 `Yes` 值。
 1. 单击启用自动创建链接的文件夹。 如果您返回到“事件订阅”选项卡，现在将看到一个创建事件。
 
 ![链接的文件夹配置](/help/assets/assets/wf-linked-folder-config.png)
@@ -104,7 +103,7 @@ Adobe Workfront文档与资源之间的元数据映射在AEM元数据架构中�
    * 任务自定义表单字段
    * 项目概述字段（ID、名称、描述或参考编号）
 
-1. 如果 [!DNL Workfront] 字段已选择 [!UICONTROL Workfront自定义表单字段] 是Workfront用户提前键入字段，将需要指定要映射的Workfront用户字段。 为此，请选中从Workfront引用的对象字段获取值，然后指定的名称 [!UICONTROL Workfront用户自定义表单字段] 从中检索要映射的值。
+1. 如果 [!DNL Workfront] 字段已选择 [!UICONTROL Workfront自定义表单字段] 是Workfront用户预输入字段，因此需要指定要映射的Workfront用户字段。 为此，请选中从Workfront引用的对象字段获取值，然后指定的名称 [!UICONTROL Workfront用户自定义表单字段] 从中检索要映射的值。
 
    ![元数据映射配置](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -170,7 +169,7 @@ Adobe Workfront文档与资源之间的元数据映射在AEM元数据架构中�
 
 1. 在Experience Manager中，访问 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront工具配置]**，然后打开 **[!UICONTROL 高级]** 选项卡。
 
-1. 选择选项 **[!UICONTROL 存储与现有资源版本同名的资源]**. 选中此选项后，可将用与现有资产版本相同的名称上传并存储到相同位置的资产存储起来。 如果未选中，则将使用其他名称创建一个新资产(例如， `asset-name.pdf` 和 `asset-name-1.pdf`)。
+1. 选择选项 **[!UICONTROL 存储与现有资源版本同名的资源]**. 选中此选项后，可将用与现有资产版本相同的名称上传并存储到相同位置的资产存储起来。 如果未选中，则使用其他名称创建一个新资产(例如， `asset-name.pdf` 和 `asset-name-1.pdf`)。
 
 1. 选择选项 **[!UICONTROL 创建新版本时更新资源元数据]**. 选中此选项后，每当创建新版本的资源时，都会更新资源元数据。 如果未选中，则资源将保留其在创建新版本之前拥有的元数据。
 
@@ -182,7 +181,7 @@ Adobe Workfront文档与资源之间的元数据映射在AEM元数据架构中�
 
 ## 附加自定义表单 {#attach-custom-forms}
 
-此工作流步骤允许用户将自定义表单附加到 [!DNL Workfront] 成品。 此工作流步骤可以添加到任何工作流模型中。 此 [!DNL Workfront] 此步骤影响的工件将使用有效负荷中的相对路径查找。
+此工作流步骤允许用户将自定义表单附加到 [!DNL Workfront] 成品。 此工作流步骤可以添加到任何工作流模型中。 此 [!DNL Workfront] 此步骤影响的工件使用有效负荷中的相对路径进行查找。
 
 在Experience Manager的工作流编辑器中，编辑 [!UICONTROL Workfront — 附加自定义表单] 工作流步骤。
 
@@ -192,7 +191,7 @@ Adobe Workfront文档与资源之间的元数据映射在AEM元数据架构中�
 
 1. 在Experience Manager中，访问 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront工具配置]**，然后打开 **[!UICONTROL 高级]** 选项卡。
 
-1. 选择 **[!UICONTROL 从Workfront发送时自动发布资源]**. 当资产从Workfront发送到AEM时，此选项支持自动发布资产。 可以通过指定Workfront自定义表单字段及其应设置为的值，有条件地启用此功能。 无论何时将文档发送到AEM，如果它满足条件，则资源将自动发布。
+1. 选择 **[!UICONTROL 从Workfront发送时自动发布资源]**. 当资产从Workfront发送到AEM时，此选项支持自动发布资产。 可以通过指定Workfront自定义表单字段及其应设置为的值，有条件地启用此功能。 每当将文档发送到AEM时，如果它满足条件，则会自动发布资源。
 
 1. 选择 **[!UICONTROL 项目完成后将所有项目资源发布到Brand Portal]**. 此选项允许将资产自动发布到 [!DNL Brand Portal] 当他们所属的Workfront项目的状态更改为时 `Complete`.
 

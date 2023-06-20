@@ -2,10 +2,10 @@
 title: 可选 – 如何使用 AEM 创建单页应用程序 (SPA)
 description: 在 AEM Headless 开发人员历程的这一可选延续部分中，您将了解 AEM 如何将 Headless 交付与传统的全栈 CMS 功能相结合，以及您如何使用 AEM 的 SPA 编辑器框架来创建可编辑的 SPA。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 100%
+source-wordcount: '1274'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 * 有关使用 React 或 Angular 框架创建 SPA 的开发经验
 * 有关创建内容片段和使用编辑器的基本 AEM 技能
-* 请务必查看文档 [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)，了解可能的 SPA 集成的各种级别。
+* 请务必查看文档 [AEM中的Headful和Headless](/help/implementing/developing/headful-headless.md) 以便您尽可能了解各个级别的SPA集成。
 
 ### 工具 {#tools}
 
@@ -72,7 +72,7 @@ SPA 的工作方式的特性使其更快、更流畅且更类似于本机应用�
 
 ## AEM 如何处理 SPA
 
-在 AEM 上开发单页应用程序时，假定前端开发人员在创建 SPA 时遵循标准最佳实践。作为前端开发人员，如果您遵循这些一般最佳实践以及一些特定于 AEM 的原则，您的 SPA 将能够使用 AEM 及其内容创作功能。
+在 AEM 上开发单页应用程序时，假定前端开发人员在创建 SPA 时遵循标准最佳实践。作为前端开发人员，如果您遵循这些一般最佳实践以及一些AEM特定原则，则您的SPA将可以与AEM及其内容创作功能配合使用。
 
 * **可移植性** – 与任何组件一样，应构建尽可能可移植的 SPA 组件。应使用可移植且可重用的组件构建 SPA。
 * **AEM 推动站点结构** – 前端开发人员创建组件并拥有其内部结构，但依赖 AEM 来定义站点的内容结构。
@@ -93,7 +93,7 @@ AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中�
 
 ## 适应现有 SPA {#existing-spas}
 
-如果您目前拥有 SPA，AEM 支持将其嵌入 AEM 中，以便内容作者能够在 AEM 编辑器中看到它。对于在将使用通过内容片段创建的内容的最终应用程序的上下文中查看该内容，这很有用。
+如果您目前拥有 SPA，AEM 支持将其嵌入 AEM 中，以便内容作者能够在 AEM 编辑器中看到它。这对于查看他们通过内容片段在使用内容的最终应用程序上下文中创建的内容非常有用。
 
 此外，只需进行少量更改，即可在 AEM 编辑器中启用对外部 SPA 的某些编辑功能。
 

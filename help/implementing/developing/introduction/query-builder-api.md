@@ -2,9 +2,9 @@
 title: 查询生成器 API
 description: 资产共享查询生成器的功能通过Java API和REST API公开。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ orderby=path
    * `total=43`， `more=false`  — 表示点击总数为43。 UI可以在第一个页面中显示最多十个结果，并为接下来的三个页面提供分页。 您还可以使用此实施来显示描述性文本，如 **“找到43个结果”**.
    * `total=100`， `more=true`  — 表示点击总数大于100，但确切计数未知。 UI最多可以显示10个作为第一页的一部分，并为接下来的10个页面提供分页。 您还可以使用此选项来显示文本，例如 **“找到100个以上的结果”**. 当用户转到下一页时，调用查询生成器将增加限制 `guessTotal` 以及 `offset` 和 `limit` 参数。
 
-`guessTotal` 在UI需要使用无限滚动的情况下也应使用，以避免Query Builder确定确切的点击计数。
+`guessTotal` 在UI需要使用无限滚动以避免Query Builder确定确切点击计数的情况下，也应使用。
 
 ### 查找jar文件并对其进行排序，最新的先排序 {#find-jar-files-and-order-them-newest-first}
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## 优化返回的内容 {#refining-what-is-returned}
 
-默认情况下，QueryBuilder JSON Servlet将返回搜索结果中每个节点的默认属性集（例如，路径、名称、标题等）。 要获得对返回哪些属性的控制权，您可以执行以下操作之一：
+默认情况下，QueryBuilder JSON Servlet将返回搜索结果中每个节点的默认属性集（例如，路径、名称和标题）。 要获得对返回哪些属性的控制权，您可以执行以下操作之一：
 
 指定
 
@@ -332,7 +332,7 @@ p.nodedepth=n
 p.hits=full
 ```
 
-示例:
+示例：
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&p.nodedepth=5&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 

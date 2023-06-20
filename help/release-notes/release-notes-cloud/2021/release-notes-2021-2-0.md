@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2021.2.0版as a Cloud Service发行说明。”
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 35%
+source-wordcount: '1234'
+ht-degree: 33%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 35%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 有权预先配置 [!DNL Brand Portal] 实例。 此 [!DNL Cloud Manager] 用户可以激活 [!DNL Brand Portal] 日期 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. 参见 [激活Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=zh-Hans).
 
-* 现在，企业可以使用以下工具获取资产 [!DNL Brand Portal]. 资产源功能利用情况 [!DNL Brand Portal] 帮助客户与机构用户互动，为新的营销活动、照片拍摄和项目获取资产。 参见 [中的资产源 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans).
+* 现在，企业可以使用以下工具获取资产 [!DNL Brand Portal]. 资产源功能用途 [!DNL Brand Portal] 帮助客户与机构用户互动，为新的营销活动、照片拍摄和项目获取资产。 参见 [中的资产源 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans).
 
 * 此 [!DNL Brand Portal] 使用情况报告现在仅显示活动用户。 现在不显示非活动用户。 活动用户是指其帐户在中分配给产品配置文件的用户。 [!DNL Admin Console]. 参见 [[!DNL Brand Portal] 报告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service 2021.2.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * Cloud Manager UI 将通知暂时无法添加/更新域名的用户，因为关联的环境已连接正在运行的管道，或者当前正在等待批准步骤。
 
-* 以 Sonar 为前缀的客户 `pom.xml` 文件中设置的属性现已动态移除，以避免构建和质量扫描失败。
+* 客户中设置的属性 `pom.xml` 带有sonar前缀的文件现在会被动态移除，以避免构建和质量扫描失败。
 
 * 如果 SSL 证书正由当前部署的域名使用，Cloud Manager UI 将通知暂时无法选择该证书的用户。
 

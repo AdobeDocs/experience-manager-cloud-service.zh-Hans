@@ -2,9 +2,9 @@
 title: 如何配置收件箱的搜索过滤器？
 description: 了解如何为收件箱项目配置搜索过滤器。
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本文列出了最新的用户界面选项。 在即将发行的版本中，用户界面上的选项名称将会更新。
+>本文列出了最新的用户界面选项。 在即将发行的版本中，用户界面上的选项名称将更新。
 
 ## 配置文本谓词 {#text-predicate}
 

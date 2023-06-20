@@ -2,10 +2,10 @@
 title: Universal Visual Editor 简介
 description: 了解 Universal Visual Editor（又名 Universal Editor）如何实现所见即所得 (what-you-see-is-what-you-get, WYSIWYG) 编辑任何 Headless 和 Headful 体验。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 100%
+source-wordcount: '933'
+ht-degree: 89%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 100%
 
 ### 任意实施 {#any-implementation}
 
-由于可以通过多种不同方式构建体验，因此，任何实施都可以利用 Universal Editor，以便作者能够执行上下文编辑。
+由于体验可以通过多种不同的方式构建，因此任何实施都可以使用通用编辑器，以便作者可以执行上下文内编辑。
 
-用户通常认为 Headless 实施仅允许作者在基于表单的 UI 中编辑所有内容，但 Universal Editor 并非如此
+用户通常认为，Headless实施限制作者在基于表单的UI中编辑所有内容，但在通用编辑器中并非如此
 
-利用 Universal Editor 的实施的要求非常直接，并且支持：
+对于使用通用编辑器的实施，其要求是直接的，并且支持以下内容：
 
 * **任何架构** – 服务器端呈现、边缘端呈现、客户端呈现等。
 * **任何框架** – Vanilla AEM，或任何第三方框架，如 React、Next.js、Angular 等。
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 ![Universal Editor 的价值](assets/value.png)
 
-* **提供卓越的体验** – 为了使从业者能够为访客创造引人入胜的体验，Universal Editor 允许从业人员在预览上下文中创建和编辑内容。这使他们创建的内容既能适合体验设计，又能构成对访客有意义的历程。
+* **提供卓越的体验**  — 为了使从业人员能够为访客创造引人入胜的体验，通用编辑器允许从业人员在预览的上下文中创建和编辑内容。 这使他们创建的内容既能适合体验设计，又能构成对访客有意义的历程。
 * **提升内容速度** – 为了简化从业人员的管理工作流程，Universal Editor 允许在预览中编辑内容，通过仅显示与该上下文相关的选项来指导从业人员，并使工作流程独立于内容源。
 * **最先进的开发人员体验** – 为了支持真实的异构应用环境，Universal Editor 完全解耦且与技术无关，允许开发人员使用他们喜欢的技术堆栈来实施体验。
 

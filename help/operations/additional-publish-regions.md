@@ -1,10 +1,10 @@
 ---
 title: 新增发布区域
 description: 了解 AEM as a Cloud Service 如何支持附加的发布区域，以提高可用性并减少延迟。
-source-git-commit: 9fccc1672aad243b648115e657396be1ce4ed614
-workflow-type: ht
-source-wordcount: '547'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 ## 高级网络注意事项 {#advanced-networking-considerations}
 
-在已配置高级网络的程序上启用附加发布区域时，与高级网络规则匹配的附加发布区域中的流量将默认路由通过主要区域。为了利用更高的可用性，建议在附加区域启用高级网络。
+在已配置高级网络的程序上启用附加发布区域时，与高级网络规则匹配的附加发布区域中的流量将默认路由通过主要区域。为了利用更高的可用性，建议在其他区域启用高级联网。
 
 有关详细信息，请参阅高级网络文档中的[附加发布区域的高级网络配置](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions)部分，包括如何在不导致连接中断的情况下将高级网络配置添加到附加区域。
 

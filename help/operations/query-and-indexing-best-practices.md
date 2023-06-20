@@ -3,10 +3,10 @@ title: 查询和索引最佳实践
 description: 了解如何根据 Adobe 的最佳实践指南优化索引和查询。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 100%
+source-wordcount: '1558'
+ht-degree: 95%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 提供查询性能工具，该工具旨在支持实现高
 
 每个查询都应该使用索引来提供最佳性能。在大多数情况下，现有的开箱即用的索引应足以处理查询。
 
-有时需要将自定义属性添加到现有索引中，以使用该索引查询其他约束。有关详细信息，请参阅文档[内容搜索和索引](/help/operations/indexing.md#changing-an-index)。本文档的 [JCR 查询备忘表](#jcr-query-cheatsheet)部分描述了如何制定索引上的属性定义，才能支持特定的查询类型。
+有时需要将自定义属性添加到现有索引中，以使用该索引查询其他约束。有关详细信息，请参阅文档[内容搜索和索引](/help/operations/indexing.md#changing-an-index)。此 [JCR查询备忘单](#jcr-query-cheatsheet) 本文档的部分描述了如何对索引进行属性定义才能支持特定的查询类型。
 
 ### 使用正确的标准 {#use-the-right-criteria}
 

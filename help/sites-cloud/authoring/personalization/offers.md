@@ -2,10 +2,10 @@
 title: 创建和管理选件（优惠控制台）
 description: 使用“选件”控制台，可创建您可以在活动体验中使用的选件
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: c27870c39da80d664f208d658994eec83a19589f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 49%
+source-wordcount: '1392'
+ht-degree: 48%
 
 ---
 
@@ -51,7 +51,6 @@ ht-degree: 49%
 >
 >* 该&#x200B;**优惠**&#x200B;控制台将不再可用。
 >* 任何其他受影响组件的工具栏中的定位图标将不再出现。
-
 
 1. 打开包含优惠的页面进行编辑。
 
@@ -102,7 +101,7 @@ ht-degree: 49%
 >
 >因此，推荐使用“体验片段”选项，而非该选项。
 
-对于已有遗留优惠的客户，在定位&#x200B;**非**&#x200B;体验片段的组件时，“**使用优惠模板**”选项将可见：
+对于已有遗留优惠的客户， **使用优惠模板** 定位组件时，选项可见 **非** 体验片段：
 
 ![“转化为体验片段变体”对话框](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 

@@ -3,10 +3,10 @@ title: 配置生产管道
 description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 100%
+source-wordcount: '1513'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
    **重要量度失败行为r** – 在管道设置或编辑期间，**部署管理员**&#x200B;可以选择定义在任何质量审核出现重要失败时的管道行为。可用的选项为：
 
    * **每次询问** – 这是默认设置，需要对任何重要失败进行手动干预。
-   * **立即失败** – 如果选定此选项，则只要发生重要失败，就会取消管道。这实际上是在模拟用户手动拒绝每个失败。
+   * **立即失败**  — 如果选定此选项，则只要发生重要失败，就会取消管道。 这实际上是在模拟用户手动拒绝每个失败。
    * **立即继续** – 如果选定此选项，则每当发生重要失败时，管道就会自动继续。这实际上是在模拟用户手动批准每个失败。
 
    ![生产管道配置](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -73,6 +73,7 @@ ht-degree: 100%
 1. 在&#x200B;**源代码**&#x200B;选项卡上，必须定义以下选项。
 
    * **存储库** – 此选项定义管道应从中检索代码的 Git 存储库。
+
    >[!TIP]
    > 
    >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)文档，了解如何在 Cloud Manager 中添加和管理存储库。
@@ -101,6 +102,7 @@ ht-degree: 100%
 1. 在&#x200B;**源代码**&#x200B;选项卡上，必须定义以下选项。
 
    * **存储库** – 此选项定义管道应从中检索代码的 Git 存储库。
+
    >[!TIP]
    > 
    >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)文档，了解如何在 Cloud Manager 中添加和管理存储库。
@@ -124,18 +126,18 @@ ht-degree: 100%
 
    ![定义体验审核路径](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. 单击&#x200B;**添加页面**，路径将自动填写您的环境地址，并添加到路径表中。
+1. 单击 **添加页面** 路径将自动填写环境地址，并添加到路径表中。
 
    ![保存表的路径](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. 重复前两步，根据需要继续添加路径。
 
    * 最多可以添加 25 条路径。
-   * 如果您未定义任何路径，则默认情况下，网站主页将包含在体验审核中。
+   * 如果您未定义任何路径，则默认情况下，网站主页包含在体验审核中。
 
 1. 单击&#x200B;**保存**，保存您管道。
 
-为体验审核配置的路径将提交给服务，并在管道运行时根据性能、可访问性、SEO（搜索引擎优化）、最佳实践和 PWA (Progressive Web App) 测试进行评估。有关更多详细信息，请参阅[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md)。
+为体验审核配置的路径将提交给服务，并在管道运行时根据性能、可访问性、SEO（搜索引擎优化）、最佳实践和PWA（渐进式Web应用程序）测试进行评估。 有关更多详细信息，请参阅[了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 
@@ -148,6 +150,7 @@ Web 层配置管道部署 HTTPD/Dispatcher 配置。 有关此类型管道的详
 1. 在&#x200B;**源代码**&#x200B;选项卡上，必须定义以下选项。
 
    * **存储库** – 此选项定义管道应从中检索代码的 Git 存储库。
+
    >[!TIP]
    > 
    >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)文档，了解如何在 Cloud Manager 中添加和管理存储库。
@@ -174,7 +177,7 @@ Web 层配置管道部署 HTTPD/Dispatcher 配置。 有关此类型管道的详
 
 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
 
-请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
+请参阅文档 [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此过程的工作方式以及一些需要注意的事项，以充分发挥此过程的潜力。
 
 ## 跳过 Dispatcher 程序包 {#skip-dispatcher-packages}
 

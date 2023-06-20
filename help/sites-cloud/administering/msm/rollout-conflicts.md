@@ -4,10 +4,10 @@ description: 了解如何管理和解决多站点管理器转出冲突。
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 为了确保转出不被阻止，可能的定义可以包括：
 
 * 转出期间哪个页面（Blueprint 或 Live Copy）优先
-* 哪些页面将进行重命名（以及重命名的方式）
+* 重命名了哪些页面，以及重命名的方式
 * 这将如何影响任何发布的内容
 
 AEM 现成的默认行为是发布的内容将不会受到影响。因此，如果在 Live Copy 分支中手动创建的页面已发布，则仍将在冲突处理和转出后发布该内容。
@@ -35,11 +35,11 @@ AEM 现成的默认行为是发布的内容将不会受到影响。因此，如�
 
 * Blueprint：`/b`
 
-   带 1 个子页面的母版页，`bp-level-1`
+  带 1 个子页面的母版页，`bp-level-1`
 
 * Live Copy：`/b`
 
-   在 Live Copy 分支中手动创建的带 1 个子页面的页面，`lc-level-1`
+  在 Live Copy 分支中手动创建的带 1 个子页面的页面，`lc-level-1`
 
    * 在发布为 `/b` 时与子页面一起激活
 
@@ -83,13 +83,13 @@ AEM 提供：
 
 * Live Copy：`/b`
 
-   在 Live Copy 中移至 `/b_msm_moved`。这将充当备份，并确保不丢失任何内容。
+  在 Live Copy 中移至 `/b_msm_moved`。这将充当备份，并确保不丢失任何内容。
 
    * 不会移动 `lc-level-1`。
 
 * Blueprint：`/b`
 
-   转出到 Live Copy 页面 `/b`。
+  转出到 Live Copy 页面 `/b`。
 
    * `bp-level-1` 转出到 Live Copy。
 
@@ -127,11 +127,11 @@ AEM 提供：
 
 * Blueprint：`/b`
 
-   根本不复制，而是忽略。
+  根本不复制，而是忽略。
 
 * Live Copy：`/b`
 
-   保持不变。
+  保持不变。
 
 #### 转出后 {#after-rollout-no-conflict}
 

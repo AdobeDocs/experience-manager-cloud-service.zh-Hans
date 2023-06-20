@@ -2,10 +2,10 @@
 title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 100%
+source-wordcount: '524'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 无论何时编辑程序，包括添加或删除解决方案或插件，这些更改都将在下次部署后生效。
 
-如果您的生产程序启用了增强安全性，则&#x200B;**编辑程序**&#x200B;窗口中将提供一个额外的&#x200B;**增强安全性**&#x200B;选项卡以确认该程序的功能已激活。
+如果您的生产程序启用了增强安全性，则您可以 **增强的安全性** 选项卡位于 **编辑项目群** 窗口，以确认该功能对该程序是否处于活动状态。
 
 ![程序的增强安全性激活](assets/edit-program-enhanced.png)
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 版的发行说明。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 98%
+source-wordcount: '953'
+ht-degree: 86%
 
 ---
 
@@ -39,9 +39,9 @@ ht-degree: 98%
 
 * [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在支持[键盘快捷键](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
 
-* AEM as a Cloud Service 的 [Web 优化图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)，通过交付 WebP 等格式，大大提高了页面速度。这项新的服务还提供了更灵活的图像大小调整和转换选项。所有版本的[核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)都允许利用此服务，并可通过单击图像组件策略中的选项将图像作为 WebP 交付。
+* AEM作为Cloud Service的 [Web优化图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 通过提供WebP等格式，大大提高了页面速度。 这项新的服务还提供了更灵活的图像大小调整和转换选项。所有版本的 [核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 允许使用此服务，并通过单击图像组件策略中的选项将图像作为WebP交付。
 
-* AEM 个性化活动现在可以使用体验片段来代替我们的旧功能/服务。该功能：
+* AEM个性化活动现在可以使用体验片段来代替我们的旧版选件。 该功能：
    * 启用一个迁移路径，其中 AEM 内容会推广体验片段功能/服务，而不是旧的库功能/服务，以便提供与未来大规模个性化保持一致的具有适当样式的内容。
    * 防止内容作者意外在其网站上提供无样式内容。
    * 允许将任何组件的定位模式转换为使用可编辑模板的体验片段（JSON 和 HTML 类型）。
@@ -80,7 +80,7 @@ ht-degree: 98%
 
 * **[调用 DDX – AEM 工作流步骤](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**：DDX（文档描述 XML）是一种声明性标记语言，其元素代表文档的构建块。这些构建块包括 PDF 和 XDP 文档以及其他元素，例如注释、书签和样式文本。DDX 文档是文档模板，它描述了应出现在结果文档中的源文档的所需特征。单个 DDX 可用于一系列源文档。您可以使用 AEM 工作流中的调用步骤来执行各种操作，例如，汇编和反汇编文档、创建和修改 Acrobat 和 XFA 表单及其他操作，如 [DDX 参考](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)文档中所述。
 
-* **[转换为 PDF/A – AEM 工作流步骤](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**：PDF/A 是一种用于长期保存文档内容的存档格式，其中所有字体都将嵌入，并且文件未经压缩。现在，您可以使用 AEM 工作流中的“转换为 PDF/A”步骤，将任意格式的文档或文件转换为 PDF/A 格式。
+* **[转换为PDF/A - AEM Workflow步骤](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**：PDF/A是一种用于长期保存文档内容的存档格式，其中所有字体都将嵌入，并且文件是未压缩的。 现在，您可以使用 AEM 工作流中的“转换为 PDF/A”步骤，将任意格式的文档或文件转换为 PDF/A 格式。
 
 
 ## CIF 加载项 {#cloud-services-cif}
@@ -102,7 +102,7 @@ ht-degree: 98%
 ### 新增功能 {#what-is-new-foundation}
 
 * [存储库浏览器](/help/implementing/developing/tools/repository-browser.md)现在提供了一个路径输入字段，可用于直接跳转到存储库层次结构中的特定文件夹
-* Sling 内容分发 (SCD) 现在支持显式“无效”操作，以便在不发布内容的情况下使内容无效。有关更多详细信息，请参阅 [AEM as a Cloud Service 中的缓存](/help/implementing/dispatcher/caching.md#explicit-invalidation)页面。
+* Sling内容分发(SCD)现在支持显式“无效”操作，以便在不发布内容的情况下使内容无效。 有关更多详细信息，请参阅 [AEM as a Cloud Service 中的缓存](/help/implementing/dispatcher/caching.md#explicit-invalidation)页面。
 * AEM as a Cloud Service 现在提供 mod_macro。请参阅[此表](/help/implementing/dispatcher/disp-overview.md)以查看支持的 Apache 模块的列表。
 
 ### AEM as a Cloud Service SDK Dispatcher 工具增强功能 {#dispatcher-tools-enhancements}

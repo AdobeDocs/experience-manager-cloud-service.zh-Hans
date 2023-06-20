@@ -2,9 +2,9 @@
 title: 创建页面模板
 description: 模板定义了结果页面的结构，并且使用模板编辑器，创建和维护模板不再只是开发人员的任务
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4595'
 ht-degree: 61%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 61%
 >
 >切勿在模板中输入任何需要国际化的信息。<!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->对于必须本地化的模板元素（如页眉和页脚），请利用[核心组件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>对于必须本地化的模板元素（如页眉和页脚），请使用 [核心组件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
@@ -202,7 +202,7 @@ ht-degree: 61%
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   路径的顺序无关，将扫描所有路径并检索任何模板。
+   路径的顺序无关紧要。 将扫描所有路径并检索任何模板。
 
    >[!NOTE]
    >
@@ -513,18 +513,18 @@ ht-degree: 61%
 
 * 可编辑的已解锁组件将被标记。 选中后，它们具有蓝色边框：
 
-   ![初始内容模式](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
+  ![初始内容模式](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
 * 已解锁组件的工具栏允许您编辑和配置内容：
 
-   ![已解锁的组件](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![已解锁的组件](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * 如果已将某个容器组件解锁（在&#x200B;**结构**&#x200B;模式下），则您可以将新组件添加到该容器（在&#x200B;**初始内容**&#x200B;模式下）。可以在生成页面上移动或删除在&#x200B;**初始内容**&#x200B;模式下添加的组件。
 
-   您可以通过以下两种方式添加组件：使用&#x200B;**将组件拖动到此处**&#x200B;区域，或使用相应容器工具栏中的&#x200B;**插入新组件**&#x200B;选项。
+  您可以通过以下两种方式添加组件：使用&#x200B;**将组件拖动到此处**&#x200B;区域，或使用相应容器工具栏中的&#x200B;**插入新组件**&#x200B;选项。
 
-   ![添加组件](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![添加组件](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+  ![添加组件](/help/sites-cloud/authoring/assets/templates-add-component.png)
+  ![添加组件](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * 如果在基于模板创建页面后更新了模板的初始内容，则对模板的初始内容所做的更改不会影响这些页面。
 
@@ -566,24 +566,24 @@ ht-degree: 61%
 
 * 您可以从&#x200B;**选择策略**&#x200B;下拉列表中为页面选择现有策略。
 
-   ![策略选择器](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![策略选择器](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   此外，也可以通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，来添加新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。
+  此外，也可以通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，来添加新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。
 
-   ![“添加策略”按钮](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![“添加策略”按钮](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，可复制在此下拉列表中选定的现有策略以将其作为新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。默认情况下，复制的策略的标题将为 **X 的副本**，其中 X 是被复制的策略的标题。
+  使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，可复制在此下拉列表中选定的现有策略以将其作为新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。默认情况下，复制的策略的标题将为 **X 的副本**，其中 X 是被复制的策略的标题。
 
-   ![“复制策略”按钮](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![“复制策略”按钮](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * 在&#x200B;**策略标题**&#x200B;字段中定义策略的标题。策略需要具有标题，以便能够轻松地在&#x200B;**选择策略**&#x200B;下拉列表中对其进行选择。
 
-   ![策略标题](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![策略标题](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * **策略说明**&#x200B;字段中的策略说明是可选的。
 * 在&#x200B;**同时使用该选定策略的其他模板**&#x200B;部分中，您可以轻松地查看同时也使用了&#x200B;**选择策略**&#x200B;下拉列表中的选定策略的其他模板。
 
-   ![策略使用情况](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![策略使用情况](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### 页面属性 {#page-properties}
 
@@ -593,17 +593,17 @@ ht-degree: 61%
 
 * 指定要应用于使用此模板创建的页面的客户端库。 在的文本字段中输入库的名称 **客户端库** 部分。
 
-   ![客户端库](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![客户端库](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * 如果需要多个库，请单击“添加”按钮，以添加更多用于填写库名称的文本字段。
 
-   ![“添加”按钮](/help/sites-cloud/authoring/assets/templates-add-button.png)
+  ![“添加”按钮](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   为您的客户端库添加所需数量的文本字段。
+  为您的客户端库添加所需数量的文本字段。
 
 * 通过使用拖动手柄拖动字段，根据需要定义库的相对位置。
 
-   ![拖动手柄](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![拖动手柄](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -633,13 +633,16 @@ ht-degree: 61%
 
       * 这些操作会立即应用于生成的页面。
       * 访客仍需要发布更改的模板，才能看到所做的更改。
+
    * 对内容策略和设计配置的更改：
 
       * 这些规则将立即应用于生成页面。
       * 访客需要发布更改才能查看更改。
+
    * 对初始内容的更改：
 
       * 这些选项仅适用于对模板进行更改后创建的页面。
+
    * 布局更改取决于修改的组件是否属于以下组件：
 
       * 仅结构 — 立即应用

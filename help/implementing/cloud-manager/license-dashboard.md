@@ -2,10 +2,10 @@
 title: 许可证功能板
 description: Cloud Manager 提供了一个仪表板，用于轻松查看您的组织或租户可用的 AEMaaCS 产品权利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: d5e0ca924dee50d7dd4f9057010b1a39780b4352
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 80%
+source-wordcount: '875'
+ht-degree: 77%
 
 ---
 
@@ -79,7 +79,7 @@ AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷�
 | 报告包 | 属于同一 AEM 实例和域的页面可能会将数据发送到不同的 Analytics 报告包。 |
 | 第三方监控和安全工具 | 监控和安全扫描工具可能会为 AEM 生成 Analytics 报告中未跟踪的内容请求。 |
 | 预获取请求 | 使用预获取服务预加载页面来提高速度，可能会导致内容请求流量显著增加。 |
-| DDOS | 虽然 Adobe 竭尽全力自动检测和过滤 DDOS 攻击的流量，但无法保证检测到所有可能的 DDOS 攻击 |
+| DDOS | 虽然Adobe竭尽全力自动检测和过滤来自DDOS攻击的流量，但不能保证检测到所有可能的DDOS攻击 |
 | 流量拦截器 | 在浏览器中使用跟踪拦截器可能会选择不跟踪某些请求。 |
 | 防火墙 | 防火墙可能会阻止分析跟踪。这在公司防火墙中更为常见。 |
 

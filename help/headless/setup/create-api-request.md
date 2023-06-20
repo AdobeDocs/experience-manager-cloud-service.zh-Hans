@@ -2,10 +2,10 @@
 title: 创建 API 请求 – Headless 设置
 description: 了解如何使用 GraphQL API 实现内容片段的 Headless 投放，以及如何使用 AEM 的 Assets REST API 管理内容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ## 使用 GraphQL 及 GraphiQL 查询内容
 
-信息架构师需要为其渠道端点设计查询来投放内容。这些查询通常只需要为每个模型的每个端点考虑一次。对于本指南快速入门，我们只需要创建一个。
+信息架构师需要为其渠道端点设计查询来交付内容。 这些查询通常只需要为每个模型的每个端点考虑一次。对于本指南快速入门，我们只需要创建一个。
 
 GraphiQL 是一个 IDE，包含在您的 AEM 环境中； 在您[配置您的端点](#enable-graphql-endpoint)后，它是可访问/可见的。
 

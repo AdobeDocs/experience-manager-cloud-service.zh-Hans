@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
-workflow-type: ht
-source-wordcount: '3090'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '3087'
+ht-degree: 95%
 
 ---
 
@@ -91,9 +91,9 @@ AEM 的 Headless 功能基于几项关键功能。历程的后面部分将详细
 
 AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。然而，AEM 不仅提供了这两种独特的选择，还支持结合了两者优势的混合模型，从而让您的 Headless 项目具有独特的灵活性。
 
-为了确保您理解 Headless 概念，此 AEM Headless 开发人员历程重点说明了纯 Headless 模型，使您无需在 AEM 中编码即可尽快启动并运行。
+为了确保您了解Headless概念，本AEM Headless开发人员历程重点介绍纯Headless模型，以便您在不使用AEM编码的情况下尽快启动并运行。
 
-但是，在您了解 AEM 的 Headless 功能后，就应意识到额外的混合可能性。下面列出了这些情况以供您了解。在历程结束时，您将更详细地了解这些概念，以防您的项目需要这种灵活性。
+但是，在您了解 AEM 的 Headless 功能后，就应意识到额外的混合可能性。下面列出了这些情况以供您了解。在历程结束时，将为您详细介绍这些概念，以防您的项目需要此类灵活性。
 
 ### 您有 Headless 内容的外部使用者，例如单页应用程序 (SPA)。 {#already-have-a-spa}
 
@@ -145,7 +145,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 请务必明确定义项目的范围。范围告知验收标准，并允许您创建完成的定义。
 
-您必须提出的第一个问题是“我尝试使用 AEM Headless 实现什么目标？”一般来说，答案应该是您拥有或将来会拥有您使用自己的开发工具而非 AEM 构建的体验应用程序。此体验应用程序可以是移动应用程序、网站或任何其他面向最终用户客户的体验应用程序。使用 AEM Headless 的目标是为您的体验应用程序提供在 AEM 中创建、存储和管理的内容，并使用最先进的 API 调用 AEM Headless 以直接从体验应用程序中获取内容甚至完整的 CRUD 内容。如果这不是您想执行的操作，您可能需要[返回 AEM 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)，并找到更适合您要完成的操作的部分。
+您必须提出的第一个问题是“我尝试使用 AEM Headless 实现什么目标？”答案通常是，您已经拥有或将拥有使用自己的开发工具而不是使用AEM构建的体验应用程序。 此体验应用程序可以是移动应用程序、网站或任何其他面向最终用户客户的体验应用程序。使用 AEM Headless 的目标是为您的体验应用程序提供在 AEM 中创建、存储和管理的内容，并使用最先进的 API 调用 AEM Headless 以直接从体验应用程序中获取内容甚至完整的 CRUD 内容。如果这不是您想执行的操作，您可能需要[返回 AEM 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)，并找到更适合您要完成的操作的部分。
 
 ### 角色和职责 {#roles-responsibilities}
 
@@ -179,9 +179,9 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 * 您是否需要使用不同的语言来适应不同地区的具体情况？
 * 您是否希望图像或视频等富媒体内容在不同的区域设置下有所不同？
 
-清楚了解您的内容更新工作流。系统必须支持的审批流程是什么？是否能利用 AEM 工作流来自动实施此过程？
+清楚了解您的内容更新工作流。系统必须支持的审批流程是什么？是否可以使用AEM工作流自动执行此流程？
 
-请注意，可以利用您的[内容层级](#content-hierarchy)来简化翻译。
+请注意， [内容层次结构](#content-hierarchy) 更轻松地进行翻译。
 
 请参阅[其他资源](#additional-resources)部分，了解有关 AEM 工作流和翻译工具的其他文档，包括指向 AEM Headless 翻译历程的链接。
 
@@ -199,7 +199,7 @@ AEM 允许灵活的内容结构，并且层级可以任意大。不过，请务�
 * 防止内容作者创作不属于该文件夹的内容。
 * 通过在创建期间过滤文件夹中允许的内容类型，以仅显示有效的内容类型来优化内容创建过程。
 
-通过创建适当的内容结构，可以更轻松地跨渠道协调 Headless 内容创作，以最大程度地重用内容。跨多个渠道利用内容可大大提高内容生产效率并增强更改管理。
+通过创建适当的内容结构，可以更轻松地跨渠道协调Headless内容创作，从而最大限度地重用内容。 跨多个渠道利用内容可大大提高内容生产效率并增强更改管理。
 
 ##### 建立正确的命名惯例 {#naming-conventions}
 

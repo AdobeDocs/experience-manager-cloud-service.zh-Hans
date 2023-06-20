@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 使用 Dispatcher 工具进行验证和调试
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2859'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-您可以拥有一个或多个这些文件。 它们包含 `<VirtualHost>` 条目匹配主机名，并允许Apache使用不同的规则处理每个域流量。 文件创建于 `available_vhosts` 目录，并通过中的符号链接启用 `enabled_vhosts` 目录。 从 `.vhost` 文件、重写和变量等其他文件将包括在内。
+您可以拥有一个或多个这些文件。 它们包含 `<VirtualHost>` 条目匹配主机名，并允许Apache使用不同的规则处理每个域流量。 文件创建于 `available_vhosts` 目录，并通过中的符号链接启用 `enabled_vhosts` 目录。 从 `.vhost` 文件、重写和变量等其他文件包括在内。
 
 >[!NOTE]
 >
@@ -92,17 +92,17 @@ ht-degree: 1%
 
 ```
 <VirtualHost *:80>
-	ServerName	"example.com"
-	# Put names of which domains are used for your published site/content here
-	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
-	# Use a document root that matches the one in conf.dispatcher.d/default.farm
-	DocumentRoot "${DOCROOT}"
-	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
-	AllowEncodedSlashes NoDecode
-	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
-	<IfModule mod_headers.c>
-		Header add X-Vhost "publish-example-com"
-	</IfModule>
+    ServerName    "example.com"
+    # Put names of which domains are used for your published site/content here
+    ServerAlias     "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+    # Use a document root that matches the one in conf.dispatcher.d/default.farm
+    DocumentRoot "${DOCROOT}"
+    # URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+    AllowEncodedSlashes NoDecode
+    # Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+    <IfModule mod_headers.c>
+        Header add X-Vhost "publish-example-com"
+    </IfModule>
   ...
 </VirtualHost>
 ```
@@ -121,7 +121,7 @@ ht-degree: 1%
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-您可以有一个或多个这些文件，它们包含与主机名匹配的场，并允许Dispatcher模块使用不同的规则处理每个场。 文件创建于 `available_farms` 目录，并通过中的符号链接启用 `enabled_farms` 目录。 从 `.farm` 文件、过滤器、缓存规则等文件和其他文件将包括在内。
+您可以有一个或多个这些文件，它们包含与主机名匹配的场，并允许Dispatcher模块使用不同的规则处理每个场。 文件创建于 `available_farms` 目录，并通过中的符号链接启用 `enabled_farms` 目录。 从 `.farm` 文件、过滤器、缓存规则等其他文件也包括在内。
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 这些文件是基本框架的一部分，并强制执行标准和最佳实践。 这些文件被视为不可变，因为在本地修改或删除它们将不会对您的部署产生影响，因为它们将不会传输到您的云实例。
 
-建议上述文件引用下面列出的不可变文件，然后引用任何其他语句或覆盖。 将Dispatcher配置部署到云环境时，将使用不可变文件的最新版本，无论本地开发中使用了什么版本。
+建议上述文件引用下面列出的不可变文件，然后引用任何其他语句或覆盖。 将Dispatcher配置部署到云环境时，无论在本地开发中使用了什么版本，都会使用不可变文件的最新版本。
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -252,7 +252,7 @@ Phase 3 finished
 2. 它会执行 `httpd -t` 用于测试语法是否正确以使apache httpd可以启动的命令。 如果成功，配置应准备好进行部署。
 3. 检查Dispatcher SDK配置文件的子集，该文件旨在不可变，如 [文件结构部分](##flexible-mode-file-structure)尚未修改并与当前SDK版本匹配。
 
-在Cloud Manager部署期间， `httpd -t` 语法检查也将执行，所有错误都将包含在Cloud Manager中 `Build Images step failure` 日志。
+在Cloud Manager部署期间， `httpd -t` 语法检查也将执行，所有错误都包含在Cloud Manager中 `Build Images step failure` 日志。
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ Phase 3 finished
 
 如果未列入允许列表指令，则该工具会记录错误并返回非零退出代码。 此外，它还进一步扫描所有具有模式的文件 `conf.dispatcher.d/enabled_farms/*.farm` 并检查：
 
-* 不存在使用允许通过以下方式访问的筛选规则 `/glob` (请参阅 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) 了解更多详细信息。
+* 不存在使用允许通过以下方式访问的筛选规则 `/glob` (请参阅 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957))，以了解更多详细信息。
 * 未公开任何管理功能。 例如，访问路径，如 `/crx/de or /system/console`.
 
 请注意，验证工具仅报告禁止使用尚未列入允许列表的Apache指令。 它不会报告Apache配置的语法或语义问题，因为此信息仅对运行环境中的Apache模块可用。
@@ -400,7 +400,7 @@ Cloud manager validator 2.0.xx
 
 此阶段也可以独立运行 `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
-在Cloud Manager部署期间， `httpd -t` 语法检查也将执行，所有错误都将包含在Cloud Manager构建图像步骤失败日志中。
+在Cloud Manager部署期间， `httpd -t` 语法检查也会运行，所有错误都包含在Cloud Manager构建图像步骤失败日志中。
 
 ### 阶段3 {#third-phase}
 
@@ -530,7 +530,7 @@ ServerName ${ENVIRONMENT_TYPE}.company.com
 }
 ```
 
-或者，您可以在httpd/dispatcher配置中使用Cloud Manager环境变量，但不要使用环境密钥。 如果一个程序有多个开发环境，并且其中某些开发环境的httpd/dispatcher配置值不同，则此方法尤为重要。 将使用与上述示例中相同的${VIRTUALHOST}语法，但不会使用上述变量文件中的Define声明。 阅读 [Cloud Manager文档](/help/implementing/cloud-manager/environment-variables.md) 有关配置Cloud Manager环境变量的说明。
+或者，您可以在httpd/dispatcher配置中使用Cloud Manager环境变量，但不要使用环境密钥。 如果一个程序有多个开发环境，并且其中某些开发环境的httpd/dispatcher配置值不同，则此方法尤为重要。 相同的${VIRTUALHOST} 语法将如上述示例中那样使用，但不会使用上述变量文件中的Define声明。 阅读 [Cloud Manager文档](/help/implementing/cloud-manager/environment-variables.md) 有关配置Cloud Manager环境变量的说明。
 
 在本地测试配置时，您可以通过传递变量来模拟不同的环境类型 `DISP_RUN_MODE` 到 `docker_run.sh` 直接脚本：
 
@@ -573,7 +573,6 @@ $ docker exec d75fbd23b29 httpd-test
    * 提交文件 `opt-in/USE_SOURCES_DIRECTLY` 到由非生产管道部署到云开发环境的Git分支。
    * 使用Cloud Manager部署到云开发环境。
    * 彻底测试。 在将更改部署到更高环境之前，务必要验证Apache和Dispatcher配置是否按预期运行。 检查与自定义配置相关的所有行为！ 如果您认为部署的Dispatcher配置未反映您的自定义配置，请提交客户支持工单。
-
    >[!NOTE]
    >
    >在灵活模式下，您应该使用相对路径而不是绝对路径。

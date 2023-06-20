@@ -2,9 +2,9 @@
 title: ContextHub 诊断
 description: ContextHub提供了一个诊断页面，您可以在其中查看ContextHub框架的概述
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ContextHub诊断页面提供有关已创建的存储和UI模块、已加载的�
 
 >[!NOTE]
 >
->为了返回诊断信息，必须启用调试模式，否则诊断页面将为空白。 请参阅 [本文档](configuring-contexthub.md#debugging-contexthub) 了解有关如何启用调试模式的详细信息。
+>为了返回诊断信息，必须启用调试模式，否则诊断页面为空白。 请参阅 [本文档](configuring-contexthub.md#debugging-contexthub) 了解有关如何启用调试模式的详细信息。
 
 ## 商店 {#stores}
 

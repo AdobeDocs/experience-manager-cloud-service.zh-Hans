@@ -2,9 +2,9 @@
 title: 开发和页面差异
 description: 了解页面差异功能的工作方式以及它如何影响开发人员
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 操作详细信息 {#operation-details}
 
-在比较页面的版本时，用户希望比较的先前版本由AEM在后台重新创建，以便利比较。 需要此项才能渲染内容 [用于并排比较](/help/sites-cloud/authoring/features/page-diff.md).
+在比较页面的版本时，用户要比较的先前版本由AEM在后台重新创建，以促进差异。 需要此项才能渲染内容 [用于并排比较](/help/sites-cloud/authoring/features/page-diff.md).
 
 此娱乐操作由AEM在内部完成，对用户是透明的，无需干预。 但是，查看存储库（例如，在CRX DE Lite中）的管理员将在内容结构中看到这些重新创建的版本。
 

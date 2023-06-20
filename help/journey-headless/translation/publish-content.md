@@ -2,10 +2,10 @@
 title: 发布翻译的 Headless 内容
 description: 了解如何发布翻译的内容并在该内容更新时更新翻译。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1392'
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->您可以在发布时选择多个项目（即多个语言文件夹），以便一次性发布多个翻译。
+>您可以在发布时选择多个项目（即多个语言文件夹），以便同时发布多个翻译。
 
 发布内容时还有其他选项（例如，计划发布时间），它们超出了此历程的范围。有关更多信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 

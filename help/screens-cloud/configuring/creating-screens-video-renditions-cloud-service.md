@@ -2,9 +2,9 @@
 title: as a Cloud Service在Screens中创建视频演绎版
 description: 本页介绍如何在Screensas a Cloud Service中创建视频演绎版。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ ht-degree: 0%
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >请确保使用以“screens — ”开头的编码名称，只有这些视频演绎版才会被视为在Screens中以as a Cloud Service播放视频体验。 输入适用于您的视频的比特率（720px视频为2500kbps，1080px视频为5000 kbps）。
+   >请确保使用以“screens — ”开头的编码名称，只有这些视频演绎版被视为在Screens中以as a Cloud Service播放视频体验。 输入适用于您的视频的比特率（720px视频为2500kbps，1080px视频为5000 kbps）。
 
    >[!NOTE]
-   >可以添加具有不同宽度/高度/比特率的多个视频演绎版，以便使用您的视频。 请记住，所有屏幕 — 呈现都将由Screens设备下载，即使该设备仅播放视频呈现也是如此。
+   >可以添加具有不同宽度/高度/比特率的多个视频演绎版，以便使用您的视频。 Screens设备会下载所有屏幕和演绎版，即使设备只播放视频演绎版。
 
 1. 单击 **保存**.
 
@@ -66,4 +66,3 @@ ht-degree: 0%
    >[!NOTE]
    >* 您可以创建多个处理配置文件，并将它们应用到相应的文件夹，以便这些文件夹中的视频获得特定的视频演绎版。
    >* 当您将任何视频上传到应用处理配置文件的文件夹时，将处理视频并创建配置的演绎版，Screens设备会进一步使用这些演绎版来播放视频。
-

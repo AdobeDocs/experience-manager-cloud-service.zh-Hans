@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 版的发行说明。'
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 97%
+ht-degree: 91%
 
 ---
 
@@ -63,7 +63,7 @@ AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中
 
 最近添加了一个新分析器：
 
-* `content-packages-validation` – 验证在部署期间安装的包的格式正确的内容语法和结构
+* `content-packages-validation`  — 验证在部署期间安装的包的格式正确的内容语法和结构
 
 强烈建议使用最新版本的分析器更新您的 maven 项目，或者包含分析器（如果尚未更新）。 有关更多信息，请参阅此文档[此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)。
 
@@ -71,7 +71,7 @@ AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中
 
 ### 弃用 TLS 1.0、1.1
 
-从 2022 年 6 月 30 日开始，Experience Manager as a Cloud Service 将需要与用户系统进行更加安全的网络通信和数据交换。 AEM 将专门使用传输层安全性 (TLS) 1.2 协议。 弃用旧版 TLS 1.0 和 1.1。
+从 2022 年 6 月 30 日开始，Experience Manager as a Cloud Service 将需要与用户系统进行更加安全的网络通信和数据交换。 AEM打算专门使用传输层安全性(TLS) 1.2协议。 现已弃用旧版TLS 1.0和1.1。
 
 如果您继续将旧版 TLS 用作 1.0、1.1，则可能会失去对 Experience Manager as a Cloud Service 的访问权限。
 

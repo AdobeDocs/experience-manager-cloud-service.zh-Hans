@@ -2,7 +2,7 @@
 title: 自适应表单表达式
 seo-title: Adaptive Form Expressions
 description: 使用自适应Forms表达式可添加自动验证、计算以及打开或关闭部分的可见性。
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 0%
@@ -186,7 +186,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 在字段中添加验证的方法包括：
 
-### 必填 {#required}
+### 必需 {#required}
 
 要将组件设为必需，请在 **编辑** 对话框，您可以选择选项 **标题和文本>必需**. 您还可以添加相应的必需消息（可选） 。.
 
@@ -237,7 +237,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      gb.connect(function (){
 
-        //this function will be called after Adaptive Form is initialized
+        //this function is called after Adaptive Form is initialized
 
      })
 
@@ -275,7 +275,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 1. 打开已创建节点的“属性”选项卡。 例如，打开的“属性”选项卡 `textboxpatterns`. 添加 `guideComponentType` 属性，并将其值设置为 *fd/af/components/formatter/guideTextBox*.
 
 1. 此属性的值因要定义模式的字段而异。 对于数字字段，其值 `guideComponentType` 属性为 *fd/af/components/formatter/guideNumericBox*. “日期选取器”字段的值为 *fd/af/components/formatter/guideDatepicker*.”
-1. 您可以通过为添加自定义模式分配属性 `textboxpatterns` 节点。 添加具有名称的属性(例如 `pattern1`)，并将其值设置为要添加的pattern。 例如，添加属性 `pattern1` 值为Fax=text{99-999-9999999}。 该模式适用于您在自适应Forms中使用的所有文本框。
+1. 您可以通过为添加自定义模式分配属性 `textboxpatterns` 节点。 添加具有名称的属性(例如 `pattern1`)，并将其值设置为要添加的pattern。 例如，添加属性 `pattern1` 值为Fax=text{99-999-9999999}. 该模式适用于您在自适应Forms中使用的所有文本框。
 
    ![为CrxDe中的字段创建自定义模式](assets/creating-custom-patterns.png)
 

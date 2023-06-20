@@ -2,10 +2,10 @@
 title: 应用和取消应用 IP 允许列表
 description: 了解如何对环境应用和取消应用 IP 允许列表。
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 1. 在&#x200B;**环境**&#x200B;屏幕上导航到特定的环境详细信息页面，然后导航到 **IP 允许列表**。
 1. 使用表顶部的输入字段选择 IP 允许列表以及要应用它的作者或发布服务。
-   * IP 允许列表必须存在于 Cloud Manager 中才能应用它。
+   * IP允许列表必须存在于Cloud Manager中才能应用它。
 1. 单击&#x200B;**应用**，并确认您的提交。
 
 ## 取消应用允许列表 {#un-applying}

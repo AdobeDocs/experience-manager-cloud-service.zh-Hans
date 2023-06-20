@@ -2,9 +2,9 @@
 title: 为组件启用 JSON 导出
 description: 组件可以适用于基于建模器框架生成其内容的JSON导出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '472'
 ht-degree: 12%
 
 ---
@@ -66,11 +66,11 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 相应的Sling模型界面(`MyComponent`)，然后使用进行注释 [Jackson注释](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) 以定义应如何导出（序列化）。
 
-需要对模型接口进行正确注释以定义应序列化的方法。 默认情况下，将序列化所有符合getter的常规命名约定的方法，并将从getter名称中自然派生其JSON属性名称。 可以使用阻止或覆盖此项 `@JsonIgnore` 或 `@JsonProperty` 以重命名JSON属性。
+需要对模型接口进行正确注释以定义应序列化的方法。 默认情况下，将序列化所有遵守getter的常规命名约定的方法，并将从getter名称中自然派生其JSON属性名称。 可以使用阻止或覆盖此项 `@JsonIgnore` 或 `@JsonProperty` 以重命名JSON属性。
 
 ## 示例 {#example}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 支持JSON导出，可用作参考。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 支持JSON导出，可用作参考。
 
 有关示例，请参阅图像核心组件的Sling模型实施及其注释界面。
 
@@ -81,4 +81,4 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 和 [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

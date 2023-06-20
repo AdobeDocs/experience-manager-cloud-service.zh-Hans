@@ -2,7 +2,7 @@
 title: 与 Adobe Analytics 集成时使用的 IMS 配置
 description: 了解与 Adobe Analytics 集成时使用的 IMS 配置
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 100%
@@ -74,9 +74,9 @@ ht-degree: 100%
 1. 将显示您拥有的任何项目。选择&#x200B;**新建项目** – 位置和使用将取决于：
 
    * 如果您不具有任何项目，**新建项目**将位于底部中心。
-      ![新建项目 – 第一个项目](assets/integration-analytics-ims-02.png)
+     ![新建项目 – 第一个项目](assets/integration-analytics-ims-02.png)
    * 如果您已拥有项目，这些项目将列出，**新建项目**将位于右上方。
-      ![新建项目 – 多个项目](assets/integration-analytics-ims-03.png)
+     ![新建项目 – 多个项目](assets/integration-analytics-ims-03.png)
 
 
 1. 依次选择 **添加到项目**&#x200B;和 **API**：
@@ -176,7 +176,6 @@ ht-degree: 100%
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
-
 1. 选择您的配置。
 1. 从工具栏中选择&#x200B;**检查运行状况**，然后选择&#x200B;**查看**。
 
@@ -198,7 +197,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 

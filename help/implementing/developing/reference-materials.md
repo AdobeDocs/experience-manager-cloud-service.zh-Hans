@@ -1,8 +1,8 @@
 ---
 title: API 参考材料
-description: AEM具有广泛且强大的API，您可以将其用于数字体验项目。
+description: AEM具有广泛且强大的API，可用于您的数字体验项目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 9%
@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # API 参考材料 {#api-reference-materials}
 
-Adobe Experience Manager (AEM)提供了许多API用于开发应用程序和扩展AEM。 AEM构建在多种开源技术之上，这些技术也可以利用。
+Adobe Experience Manager (AEM)提供了许多API用于开发应用程序和扩展AEM。 AEM构建在多种开源技术之上，这些技术也可以使用。
 
 ## AEM Core API {#core-aem-apis}
 
@@ -61,7 +61,7 @@ AEM提供了可自定义的组件和内容交付选项。
 
 | 专题 | 描述 |
 |---|---|
-| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) | 适用于AEM的标准化Web内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
+| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 适用于AEM的标准化Web内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
 | [JSON导出程序](/help/implementing/developing/components/json-exporter.md) | 以JSON数据模型格式交付任何AEM页面的内容 |
 | [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md) | 基于建模器框架生成组件内容的JSON导出 |
 | [资产API](/help/assets/mac-api-assets.md) | 允许对资源（包括二进制、元数据、演绎版和注释）执行创建 — 读取 — 更新 — 删除(CRUD)操作。 请参阅AEM Assets HTTP API |

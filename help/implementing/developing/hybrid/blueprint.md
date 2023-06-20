@@ -1,10 +1,10 @@
 ---
 title: SPA Blueprint
-description: 本文档描述了为了在AEM中实施可编辑的SPA组件，任何SPA框架都应该履行的一般且独立于框架的合同。
+description: 本文档描述了任何SPA框架都应该履行的一般且独立于框架的合同，以便您可以在AEM中实施可编辑的SPA组件。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2056'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## 简介 {#introduction}
 
-本文档描述了为了在AEM中实施可编辑的SPA组件，任何AEM框架都应该履行的一般合同(即SPA支持层的类型)。
+本文档描述了任何SPA框架都应该履行的一般合同(即AEM支持层的类型)，以便您可以在AEM中实施可编辑的SPA组件。
 
 要使作者能够使用AEM页面编辑器编辑单页应用程序框架公开的数据，项目必须能够解释模型的结构，该模型表示为AEM存储库中的应用程序存储的数据的语义。 为实现此目标，提供了两个与框架无关的库： `PageModelManager` 和 `ComponentMapping`.
 
@@ -67,7 +67,7 @@ SPA组件必须与页面模型同步，并根据对内容所做的任何更改�
 
 ### 元字段 {#meta-fields}
 
-页面模型利用JSON模型导出器，它本身基于 [Sling模型](https://sling.apache.org/documentation/bundles/models.html) API。 可导出的sling模型显示以下字段列表，以便启用基础库解释数据模型：
+页面模型使用JSON模型导出器，它本身基于 [Sling模型](https://sling.apache.org/documentation/bundles/models.html) API。 可导出的sling模型显示以下字段列表，以启用基础库解释数据模型：
 
 * `:type`：AEM资源的类型（默认为资源类型）
 * `:children`：当前资源的层级子级。 子项不是当前资源的内部内容的一部分（可以在表示页面的项上找到）
@@ -175,7 +175,6 @@ SPA组件将映射到图形容器（如响应式网格），并且必须在创�
 >* `"aem-Grid-newComponent"`：标准化布局创作的组件
 >
 
-
 #### 组件映射 {#component-mapping}
 
 基础 [`Component Mapping`](#componentmapping) 库及其 `MapTo` 可以封装和扩展函数，以提供与当前组件类一起提供的编辑配置相关的功能。
@@ -204,7 +203,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 ```javascript
 /**
- * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
+ * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data is decorating the associated component
  *
  * @typedef {{}} EditConfig
  * @property {String} [dragDropName]       If defined, adds a specific class name enabling the drag and drop functionality

@@ -2,10 +2,10 @@
 title: 合适的人员，合适的职位
 description: 合适的人员，合适的职位
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -77,4 +77,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
-> 详细了解 Adobe Experience Cloud，并利用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 上的资源来通过 [Adobe Digital Learning](https://learning.adobe.com/certification.html) 获取认证。
+> 详细了解Adobe Experience Cloud并在上使用资源 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 并通过获得认证 [Adobe数字学习](https://learning.adobe.com/certification.html).

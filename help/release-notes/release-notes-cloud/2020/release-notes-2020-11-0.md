@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2020.11.0版as a Cloud Service发行说明。”
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 18%
+source-wordcount: '1264'
+ht-degree: 17%
 
 ---
 
@@ -32,15 +32,15 @@ ht-degree: 18%
 
 ### 的新增功能 [!DNL Assets] 和 [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **批量引入资源**：为客户提供利用的可扩展云原生摄取服务 [!DNL Experience Manager] as a Cloud Service架构，包括资产微服务。 关键用例包括大规模的摄取，以及监控、报告和计划，同时允许使用通用云上传工具将资产初始传输到云数据存储。 参见 [资源批量提取器工具](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **批量引入资源**：为客户提供使用的可扩展云原生摄取服务 [!DNL Experience Manager] as a Cloud Service架构，包括资产微服务。 关键用例包括大规模的摄取，以及监控、报告和计划，同时允许使用通用云上传工具将资产初始传输到云数据存储。 参见 [资源批量提取器工具](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-   此工具适用于系统管理员、顾问或实施合作伙伴角色。 此功能允许大规模摄取，最好在初始摄取或偶尔大量摄取期间使用。 对于较小的引入作业，请使用 [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 或 [使用Assets用户界面上传](/help/assets/add-assets.md#upload-assets).
+  此工具适用于系统管理员、顾问或实施合作伙伴角色。 此功能允许大规模摄取，最好在初始摄取或偶尔大量摄取期间使用。 对于较小的引入作业，请使用 [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) 或 [使用Assets用户界面上传](/help/assets/add-assets.md#upload-assets).
 
-   ![批量导入程序的配置](/help/assets/assets/bulk-import-config-low-res.png)
+  ![批量导入程序的配置](/help/assets/assets/bulk-import-config-low-res.png)
 
 * 用户现在可以在卡片视图和列视图中对数字资产进行排序。
 
-   ![排序资源](/help/assets/assets/asset-sort-options.png)
+  ![排序资源](/help/assets/assets/asset-sort-options.png)
 
 * 对中的辅助功能进行了以下增强 [!DNL Experience Manager Assets] 在此版本中。 有关更多信息，请参阅 [中的辅助功能 [!DNL Assets]](/help/assets/accessibility.md).
 
@@ -54,7 +54,7 @@ ht-degree: 18%
 
 * **Dynamic Media中的批次集预设**：现在，您可以在单独或使用批量摄取将资产文件上传到文件夹时，自动在图像集或旋转集中创建和组织多个资产。
 
-   参见 [关于批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md).
+  参见 [关于批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 * 以下辅助功能增强功能现已在以下位置提供： [!DNL Dynamic Media]：
 
@@ -67,7 +67,7 @@ ht-degree: 18%
    * 键盘和屏幕阅读器用户可以使用裁切功能。
    * 键盘用户可更好地管理热点。
 
-   参见 [中的辅助功能 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  参见 [中的辅助功能 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 

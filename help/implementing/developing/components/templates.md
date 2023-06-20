@@ -1,10 +1,10 @@
 ---
 title: 页面模板
-description: 创建将用作新页面基础的页面时，将使用页面模板
+description: 创建用作新页面基础的页面时，将使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3293'
 ht-degree: 5%
 
 ---
@@ -67,6 +67,7 @@ ht-degree: 5%
    * 内容策略定义组件的设计属性。
 
       * 例如，可用元件或最小/最大尺寸。
+
    * 这些选项适用于模板（以及使用模板创建的页面）。
 
    有关模板作者如何定义策略的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -424,7 +425,7 @@ GITHUB上的代码
 
 * **名称**: `jcr:title`
 * **名称**: `status`
-   * ``**类型**: `String`
+   * ”**类型**： `String`
    * **值**： `draft`， `enabled` 或 `disabled`
 
 ### 结构 {#structure}
@@ -432,8 +433,8 @@ GITHUB上的代码
 定义生成页面的结构：
 
 * 与初始内容合并( `/initial`)。
-* 对结构所做的更改将反映在使用模板创建的任何页面中。
-* 此 `root` ( `structure/jcr:content/root`)节点定义将在生成页面中可用的组件列表。
+* 对结构所做的更改会反映在使用模板创建的任何页面中。
+* 此 `root` ( `structure/jcr:content/root`)节点定义生成页面中可用的组件列表。
    * 不能在任何生成页面上移动或删除在模板结构中定义的组件。
    * 解锁组件后， `editable` 属性设置为 `true`.
    * 解锁已包含内容的组件后，此内容将移至 `initial` 分支。
@@ -461,13 +462,13 @@ GITHUB上的代码
 内容策略定义组件的设计属性。 例如，可用元件或最小/最大尺寸。 这些选项适用于模板（以及使用模板创建的页面）。 可以在模板编辑器中创建和选择内容策略。
 
 * 属性 `cq:policy`，位于 `root` 节点
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 为页面的段落系统提供对内容策略的相对引用。
 
 * 属性 `cq:policy`，在下的组件显式节点上 `root`，提供指向各个组件策略的链接。
 
 * 实际的策略定义存储在以下位置：
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ GITHUB上的代码
    * 在上设置状态属性 `jcr:content` 节点。
 
       * 例如，在：
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 定义属性：
 
@@ -500,9 +501,9 @@ GITHUB上的代码
 
    * [在上定义允许的模板路径 **页面属性**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 子分支的相应页面或根页面的属性。
    * 设置属性：
-      `cq:allowedTemplates`
-在 
-`jcr:content` 所需分支的节点。
+     `cq:allowedTemplates`
+在 `jcr:content` 所需分支的节点。
+
    例如，其值为：
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,13 +533,13 @@ GITHUB上的代码
 
 * **模板**:
 
-   * 此 `cq:template` 其属性 `jcr:content` 将引用节点以访问与该页面对应的模板。
+   * 此 `cq:template` 其属性 `jcr:content` 节点用于访问与该页面对应的模板。
 
 * **组件**:
 
    * 页面组件将合并 `structure/jcr:content` 模板树 `jcr:content` 页面的树。
       * 页面组件将仅允许作者编辑已标记为可编辑的模板结构的节点（以及任何子节点）。
-      * 在页面上呈现组件时，将从以下位置获取该组件的相对路径： `jcr:content` 节点；同一路径位于 `policies/jcr:content` 随后将搜索模板的节点。
+      * 在页面上呈现组件时，该组件的相对路径是从 `jcr:content` 节点；同一路径位于 `policies/jcr:content` 随后将搜索模板的节点。
          * 此 `cq:policy` 此节点的属性指向实际内容策略（即，它包含该组件的设计配置）。
             * 这样，您就可以拥有重复使用相同内容策略配置的多个模板。
 

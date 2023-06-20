@@ -2,10 +2,10 @@
 title: 为 AEM 开发 SPA
 description: 本文介绍了当让前端开发人员为AEM开发SPA时应考虑的重要问题，并概述了AEM与SPA相关的体系结构，以在在AEM上部署开发的SPA时牢记这一点。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 13%
+source-wordcount: '2072'
+ht-degree: 12%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 13%
 
 ## AEM的SPA开发原则 {#spa-development-principles-for-aem}
 
-在 AEM 上开发单页应用程序时，假定前端开发人员在创建 SPA 时遵循标准最佳实践。如果您作为前端开发人员，遵循这些常规最佳实践以及少量AEM特定原则，则您的SPA将通过 [AEM及其内容创作功能](introduction.md#content-editing-experience-with-spa).
+在 AEM 上开发单页应用程序时，假定前端开发人员在创建 SPA 时遵循标准最佳实践。作为前端开发人员，如果您遵循这些常规最佳实践以及一些AEM特定原则，则您的SPA可以 [AEM及其内容创作功能](introduction.md#content-editing-experience-with-spa).
 
 * **[可移植性](#portability)** – 与任何组件一样，应构建尽可能可移植的 组件。应使用可移植且可重用的组件构建 SPA。
 * **[AEM 推动站点结构](#aem-drives-site-structure)** – 前端开发人员创建组件并拥有其内部结构，但依赖 AEM 来定义站点的内容结构。
 * **[动态呈现](#dynamic-rendering)** – 所有呈现都应是动态的。
 * **[动态路由](#dynamic-routing)** – SPA 负责路由，AEM 负责侦听它并根据它进行提取。任何路由也应是动态的。
 
-如果您在开发SPA时牢记这些原则，那么在启用所有受支持的AEM创作功能时，它将会尽可能地灵活且经得起未来考验。
+如果您在开发SPA时牢记这些原则，那么在启用所有受支持的AEM创作功能时，将尽可能地灵活且经得起未来考验。
 
 如果您不需要支持AEM创作功能，则可能需要考虑其他 [SPA设计模型](#spa-design-models).
 
@@ -54,11 +54,11 @@ SPA应仅依赖于内容的动态渲染。 这是AEM获取并渲染内容结构�
 
 ## AEM 项目原型 {#aem-project-archetype}
 
-任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+任何AEM项目都应使用 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，支持使用React或Angular的SPA项目，并使用SPA SDK。
 
 ## SPA设计模型 {#spa-design-models}
 
-如果 [在AEM中开发SPA的原则](#spa-development-principles-for-aem) 之后，您的SPA将可以使用所有受支持的AEM内容创作功能。
+如果 [在AEM中开发SPA的原则](#spa-development-principles-for-aem) 之后，您的SPA即可使用所有受支持的AEM内容创作功能。
 
 但是，在某些情况下，这可能并非完全必要。 下表概述了各种设计模型、其优点和缺点。
 
@@ -72,7 +72,7 @@ SPA应仅依赖于内容的动态渲染。 这是AEM获取并渲染内容结构�
   <tr>
    <td>AEM用作Headless CMS，而不使用 <a href="/help/implementing/developing/hybrid/reference-materials.md">SPA编辑器SDK框架。</a></td>
    <td>前端开发人员对应用程序拥有完全控制权。</td>
-   <td><p>内容作者无法利用AEM内容创作体验。</p> <p>如果代码包含静态引用或路由，则该代码既不可移植，也无法重用。</p> <p>不允许使用模板编辑器，因此前端开发人员必须通过JCR维护可编辑模板。</p> </td>
+   <td><p>内容作者无法使用AEM内容创作体验。</p> <p>如果代码包含静态引用或路由，则该代码既不可移植，也无法重用。</p> <p>不允许使用模板编辑器，因此前端开发人员必须通过JCR维护可编辑模板。</p> </td>
   </tr>
   <tr>
    <td>前端开发人员使用SPA Editor SDK框架，但只向内容作者打开某些区域。</td>
@@ -80,7 +80,7 @@ SPA应仅依赖于内容的动态渲染。 这是AEM获取并渲染内容结构�
    <td><p>内容作者仅限于一组有限的AEM内容创作体验。</p> <p>如果代码包含静态引用或路由，则代码可能不可移植或重用。</p> <p>不允许使用模板编辑器，因此前端开发人员必须通过JCR维护可编辑模板。</p> </td>
   </tr>
   <tr>
-   <td>项目完全利用SPA编辑器SDK，并将前端组件开发为一个库，并将应用程序的内容结构委派给AEM。</td>
+   <td>项目完全使用SPA编辑器SDK，前端组件开发为一个库，并且应用程序的内容结构委派给AEM。</td>
    <td><p>该应用程序可重用和移植。</p> <p>内容作者可以使用AEM内容创作体验编辑应用程序。<br /> </p> <p>SPA与模板编辑器兼容。</p> </td>
    <td><p>开发人员无法控制应用程序的结构和委派给AEM的内容部分。</p> <p>开发人员仍然可以为不应使用AEM创作的内容保留应用程序的区域。</p> </td>
   </tr>
@@ -119,7 +119,7 @@ SPA应仅依赖于内容的动态渲染。 这是AEM获取并渲染内容结构�
 
 1. **实施组件的 `render()` 方法**
 
-   前端开发人员实施 `render()` 方法，因为它们认为适合，并且可以使用 `cqModel` 属性。 这将输出将插入到页面中的DOM和HTML片段。 这是在React中构建应用程序的标准方法。
+   前端开发人员实施 `render()` 方法，因为它们认为适合，并且可以使用 `cqModel` 属性。 这会输出插入到页面中的DOM和HTML片段。 这是在React中构建应用程序的标准方法。
 
 1. **通过以下方式将组件映射到AEM资源类型`MapTo()`**
 
@@ -172,16 +172,16 @@ AEM的常规架构（包括开发、创作和发布环境）在使用SPA时不�
 
 * **构建环境**
 
-   这是签出SPA应用程序源和组件源的位置。
+  这是签出SPA应用程序源和组件源的位置。
 
    * NPM clientlib生成器从SPA项目创建一个客户端库。
-   * 该库将由Maven获取，并由Maven Build插件与组件部署到AEM创作。
+   * 该库由Maven获取，并由Maven Build插件与组件部署到AEM创作。
 
 * **AEM Author**
 
-   在AEM创作实例上创建内容，包括创作SPA。
+  在AEM创作实例上创建内容，包括创作SPA。
 
-   在创作环境中使用SPA编辑器编辑SPA时：
+  在创作环境中使用SPA编辑器编辑SPA时：
 
    1. SPA请求外部HTML。
    1. CSS已加载。
@@ -191,11 +191,11 @@ AEM的常规架构（包括开发、创作和发布环境）在使用SPA时不�
 
 * **AEM 发布**
 
-   在此处发布创作内容和编译的库(包括SPA应用程序工件、clientlibs和组件)以供公众使用。
+  在此处发布创作内容和编译的库(包括SPA应用程序工件、clientlibs和组件)以供公众使用。
 
 * **Dispatcher / CDN**
 
-   Dispatcher用作网站访客的AEM缓存层。
+  Dispatcher用作网站访客的AEM缓存层。
    * 请求的处理方式与它们在AEM作者中的处理方式类似，但不会请求页面信息，因为只有编辑器需要它。
    * 缓存了Javascript、CSS、JSON和HTML，优化了页面以实现快速交付。
 

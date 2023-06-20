@@ -4,7 +4,7 @@ description: Experience Manager使用以下方式自动将上下文和描述性�
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 上传时智能标记视频 {#smart-tag-assets-on-ingestion}
 
-当您 [上传视频资产](add-assets.md#upload-assets) 到 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]，则会处理视频。 处理完成后，请参阅 [!UICONTROL 基本] 资产的选项卡 [!UICONTROL 属性] 页面。 智能标记会自动添加到下的视频中 [!UICONTROL 智能标记]. 资产微服务利用 [!DNL Adobe Sensei] 以创建这些智能标记。
+当您 [上传视频资产](add-assets.md#upload-assets) 到 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]，则会处理视频。 处理完成后，请参阅 [!UICONTROL 基本] 资产的选项卡 [!UICONTROL 属性] 页面。 智能标记会自动添加到下的视频中 [!UICONTROL 智能标记]. 资源微服务使用 [!DNL Adobe Sensei] 以创建这些智能标记。
 
 ![智能标记会添加到视频中，并在资产属性的基本选项卡中显示](assets/smart-tags-added-to-videos.png)
 
@@ -153,4 +153,3 @@ DAM中已存在的视频资产不会自动进行智能标记。 您需要 [!UICO
 >
 >* [管理智能标记和资产搜索](smart-tags.md#manage-smart-tags-and-searches)
 >* [培训智能标记服务并标记您的图像](smart-tags.md)
-

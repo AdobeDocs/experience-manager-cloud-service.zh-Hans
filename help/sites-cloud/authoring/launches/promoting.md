@@ -2,10 +2,10 @@
 title: 提升启动项
 description: 您需要提升启动页面，以便在发布之前将内容移回源（生产）。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 42%
+source-wordcount: '816'
+ht-degree: 41%
 
 ---
 
@@ -40,12 +40,11 @@ ht-degree: 42%
 >* [启动次数 — 事件的顺序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) 有关自动升级和发布的更多详细信息。
 >
 
-
 您可以通过以下任一方式提升启动项： **站点** 控制台或 **启动次数** 控制台：
 
 1. 打开：
    * **站点**&#x200B;控制台（导航源页面时）：
-      1. 打开[引用边栏](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)，然后使用[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)选择所需的源页面（或者先进行选择，然后再打开引用边栏，顺序不重要）。此时将显示所有引用。
+      1. 打开[引用边栏](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)，然后使用[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)选择所需的源页面（或者先进行选择，然后再打开引用边栏，顺序不重要）。将显示所有引用。
       1. 选择&#x200B;**启动项**（例如“启动项 (1)”），可显示特定启动项的列表。
       1. 选择特定启动项以显示可用的操作。
       1. 选择&#x200B;**提升启动项**&#x200B;以打开向导。
@@ -65,13 +64,13 @@ ht-degree: 42%
       * **提升当前页面**
       * **提升当前页面和子页面**
 
-      例如，当选择仅提升已修改的页面时：
+     例如，当选择仅提升已修改的页面时：
 
-      ![启动项提升](/help/sites-cloud/authoring/assets/launches-promote.png)
+     ![启动项提升](/help/sites-cloud/authoring/assets/launches-promote.png)
 
-      >[!NOTE]
-      >
-      >这涵盖单个启动项（如果您具有嵌套启动项），请参阅 [提升嵌套启动项](#promoting-a-nested-launch).
+     >[!NOTE]
+     >
+     >这涵盖单个启动项（如果您具有嵌套启动项），请参阅 [提升嵌套启动项](#promoting-a-nested-launch).
 1. 选择 **下一个** 以继续。
 1. 您可以查看要提升的页面，具体页面取决于您选择的页面范围：
 

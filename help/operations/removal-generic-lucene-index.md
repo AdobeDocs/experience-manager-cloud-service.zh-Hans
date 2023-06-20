@@ -2,9 +2,9 @@
 title: 通用Lucene索引删除
 description: 了解计划删除的通用Lucene索引以及可能受到的影响方式。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe打算删除“通用Lucene”索引(`/oak:index/lucene-*`)从Adobe Experie
 
 如果不使用索引，此类查询无法返回结果。 与仅包含路径或属性限制的查询不同，包含找不到索引（因此执行遍历）的全文限制的查询将始终返回零结果。
 
-通用Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0以来一直存在，以便在大多数存储库层次结构中提供全文搜索，不过有些路径(例如 `/jcr:system` 和 `/var` 始终被排除在外。 但是，此索引在很大程度上已被更具体节点类型的索引取代(例如 `damAssetLucene-*` 对于 `dam:Asset` 节点类型)，支持全文和属性搜索。
+通用Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0起便已存在，以便在大多数存储库层次结构中提供全文搜索，不过也有一些路径，例如 `/jcr:system` 和 `/var` 始终被排除在外。 但是，此索引在很大程度上已被更具体节点类型的索引取代(例如 `damAssetLucene-*` 对于 `dam:Asset` 节点类型)，支持全文和属性搜索。
 
 在AEM 6.5中，通用Lucene索引被标记为已弃用，这表示它将在未来版本中删除。 从那时起，当使用索引时，会记录WARN，如下面的日志片段所示：
 
@@ -38,30 +38,30 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-为了支持更大的客户数据卷，Adobe将不再在新的AEMas a Cloud Service环境中创建通用Lucene索引。 此外，Adobe将开始从现有存储库中删除索引。 [查看时间线](#timeline) ，以了解更多详细信息。
+为了支持更大的客户数据卷，Adobe不再在新的AEMas a Cloud Service环境中创建通用Lucene索引。 此外，Adobe会从现有存储库中删除索引。 [查看时间线](#timeline) ，以了解更多详细信息。
 
 Adobe已透过以下方式调整指数成本： `costPerEntry` 和 `costPerExecution` 属性以确保其他索引，如 `/oak:index/pathreference` 会尽可能优先使用。
 
-如果客户应用程序使用的查询仍依赖于此索引，则应立即更新以利用其他现有索引，如果需要，可以自定义这些索引。 或者，也可以将新的自定义索引添加到客户应用程序中。 有关AEMas a Cloud Service中索引管理的完整说明，请参阅 [索引文档。](/help/operations/indexing.md)
+如果客户应用程序使用的查询仍依赖于此索引，则应立即更新以使用其他现有索引，如果需要，可以自定义这些索引。 或者，也可以将新的自定义索引添加到客户应用程序中。 有关AEMas a Cloud Service中索引管理的完整说明，请参阅 [索引文档。](/help/operations/indexing.md)
 
 ## 您是否受影响？ {#are-you-affected}
 
-如果没有其他全文索引可以为查询提供服务，则通用Lucene索引当前用作回退。 使用此已弃用的索引时，将在警告级别记录如下消息：
+如果没有其他全文索引可以为查询提供服务，则通用Lucene索引当前用作回退。 使用此已弃用的索引时，会在WARN级别记录一条类似于以下内容的消息：
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-在某些情况下，Oak可能会尝试使用其他全文索引(例如 `/oak:index/pathreference`)以支持全文查询，但如果查询字符串与索引定义上的正则表达式不匹配，则将在WARN级别记录消息，并且查询可能不会返回结果。
+在某些情况下，Oak可能会尝试使用其他全文索引(例如 `/oak:index/pathreference`)以支持全文查询，但如果查询字符串与索引定义上的正则表达式不匹配，则会在WARN级别记录消息，并且查询可能不会返回结果。
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-删除通用Lucene索引后，如果全文查询无法找到任何合适的索引定义，将在警告级别记录如下所示的消息：
+删除通用Lucene索引后，如果全文查询无法找到任何合适的索引定义，则会在WARN级别记录如下所示的消息：
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -80,7 +80,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 
 #### 自定义应用程序查询 {#custom-application-queries}
 
-在发布实例上使用通用Lucene索引的最常见查询源是自定义应用程序查询。
+在发布实例上使用通用Lucene索引的查询最常见的原因是自定义应用程序查询。
 
 在最简单的情况下，这些查询可能是未指定节点类型的查询，因此意味着 `nt:base` 或 `nt:base` 已显式指定，例如：
 
@@ -117,7 +117,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 >
 >**需要客户操作**
 >
->标记 `jcr:content/metadata/@cq:tags` 在的自定义版本中分析的属性 `damAssetLucene` 索引将导致此查询由此索引处理，并且不会记录任何WARN。
+>标记 `jcr:content/metadata/@cq:tags` 在的自定义版本中分析的属性 `damAssetLucene` 索引导致此查询正由此索引处理，并且不记录WARN。
 
 ### 创作实例 {#author-instance}
 
@@ -157,7 +157,6 @@ AEM包含一个具有Sling资源类型的自定义对话框组件 `granite/ui/co
 > * 目前，这些执行查询时未指定节点类型，导致由于使用通用Lucene索引而记录WARN。
 > * 这些组件的实例很快将自动默认为使用 `cq:Page` 和 `dam:Asset` 节点类型，无需客户进一步操作。
 > * 此 `nodeTypes` 可以添加属性以覆盖这些默认节点类型。
-
 
 ## 通用Lucene删除时间线 {#timeline}
 

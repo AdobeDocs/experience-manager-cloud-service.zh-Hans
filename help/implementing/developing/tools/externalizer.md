@@ -2,9 +2,9 @@
 title: 将URL外部化
 description: Externalizer是一种OSGi服务，它允许您以编程方式将资源路径转换为外部和绝对URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Externalizer服务允许您集中定义可用于以编程方式为资源路径�
    * **`scheme`** 通常为http或https，但可以是其他协议。
 
       * 建议使用https来强制执行https链接。
-      * 如果客户端代码在请求URL外部化时未覆盖方案，则将使用该架构。
+      * 如果客户端代码在请求URL外部化时未覆盖方案，则使用此项。
+
    * **`server`** 是主机名（域名或ip地址）。
    * **`port`** （可选）是端口号。
    * **`contextpath`** （可选）仅当AEM作为Web应用程序安装在其他上下文路径下时，才会设置。
@@ -102,11 +103,11 @@ Externalizer服务允许您集中定义可用于以编程方式为资源路径�
 
 * **要将路径与“发布”域外部化，请执行以下操作：**
 
-   ```java
-   String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
+  ```
 
-   假定域映射：
+  假定域映射：
 
    * `publish https://www.website.com`
 
@@ -116,11 +117,11 @@ Externalizer服务允许您集中定义可用于以编程方式为资源路径�
 
 * **要将具有“作者”域的路径外部化，请执行以下操作：**
 
-   ```java
-   String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
+  ```
 
-   假定域映射：
+  假定域映射：
 
    * `author https://author.website.com`
 
@@ -130,11 +131,11 @@ Externalizer服务允许您集中定义可用于以编程方式为资源路径�
 
 * **要将具有“本地”域的路径外部化，请执行以下操作：**
 
-   ```java
-   String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
-   ```
+  ```java
+  String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
+  ```
 
-   假定域映射：
+  假定域映射：
 
    * `local https://publish-3.internal`
 

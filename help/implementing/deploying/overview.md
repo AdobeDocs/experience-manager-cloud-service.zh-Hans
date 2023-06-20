@@ -3,10 +3,10 @@ title: 部署到 AEM as a Cloud Service
 description: 部署到 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3542'
-ht-degree: 88%
+source-wordcount: '3523'
+ht-degree: 90%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 与 AEM 内部部署和 Managed Services 解决方案相比，AEM as a Cloud Service 中的代码开发基础是相似的。开发人员编写代码并在本地进行测试，然后将代码推送到远程 AEM as a Cloud Service 环境。需要使用 Cloud Manager，它是 Managed Services 的一个可选内容交付工具。现在，这是用于将代码部署到 AEM as a Cloud Service 开发、暂存和生产环境的唯一机制。要在部署上述环境之前进行快速功能验证和调试，可以将代码从本地环境同步到[快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)。
 
-[AEM 版本](/help/implementing/deploying/aem-version-updates.md)的更新始终是独立于推送[自定义代码](#customer-releases)的部署事件。从另一个角度来看，自定义代码版本应针对生产中的 AEM 版本进行测试，因为这是它将部署到其上的版本。之后将频繁进行 AEM 版本更新，并将自动应用这些更新。它们旨在与已部署的客户代码向后兼容。
+[AEM 版本](/help/implementing/deploying/aem-version-updates.md)的更新始终是独立于推送[自定义代码](#customer-releases)的部署事件。从另一个角度来看，自定义代码版本应该针对生产环境中的AEM版本进行测试，因为这是它部署在顶部的原因。 之后发生的AEM版本更新，这些更新很频繁，并且会自动应用。 它们旨在与已部署的客户代码向后兼容。
 
 本文档的其余部分将描述开发人员应如何调整他们的实践，以便他们同时使用 AEM as a Cloud Service 的版本更新和客户更新。
 
@@ -31,12 +31,12 @@ ht-degree: 88%
 
 对于以前的 AEM 解决方案，最新的 AEM 版本很少发生更改（约每年使用季度 Service Pack 更新一次），客户将根据自己的时间将生产实例更新到最新的快速入门，并参考 API Jar。但是，AEM as a Cloud Service 应用程序将更频繁地自动更新到最新版本的 AEM，因此，应针对最新的 AEM 版本构建内部版本的自定义代码。
 
-与现有的非云 AEM 版本一样，将支持基于特定快速入门的本地离线开发，在大多数情况下，它有望成为用于调试的首选工具。
+与现有的非云AEM版本一样，也支持基于特定快速入门的本地离线开发，并应在大多数情况下作为调试的首选工具。
 
 >[!NOTE]
 >应用程序在本地计算机上的行为方式与在 Adobe Cloud 上的行为方式之间存在细小的操作差异。在本地开发过程中必须考虑这些架构差异，并且这些差异会导致在云基础架构上部署时发生不同的行为。由于存在这些差异，在生产中推出新的自定义代码之前，在开发和暂存环境中执行详尽的测试非常重要。
 
-要为内部版本开发自定义代码，应下载并安装相关版本的 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。有关使用 AEM as a Cloud Service Dispatcher 工具的其他信息，请参阅[此页面](/help/implementing/dispatcher/disp-overview.md)。
+要为内部版本开发自定义代码，需使用 [AEMAS A CLOUD SERVICESDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 应下载并安装。 有关使用 AEM as a Cloud Service Dispatcher 工具的其他信息，请参阅[此页面](/help/implementing/dispatcher/disp-overview.md)。
 
 以下视频高度概述了如何将代码部署到 AEM as a Cloud Service：
 
@@ -67,7 +67,7 @@ ht-degree: 88%
 
 必须阿静存储在不可变存储库中的所有内容和代码签入 Git，并通过 Cloud Manager 部署它们。换句话说，与当前的 AEM 解决方案不同，代码绝不会直接部署到正在运行的 AEM 实例。这可确保在任意云环境中为给定版本运行的代码是相同的，从而消除生产中发生意外代码变化的风险。例如，OSGI 配置应提交给源代码管理，而不是在运行时通过 AEM Web 控制台的配置管理器进行管理。
 
-由于部署模式导致的应用程序更改是由交换机启用的，因此除了服务用户、其ACL、节点类型和索引定义更改之外，它们不能依赖于可变存储库中的更改。
+由于因部署模式产生的应用程序更改由开关启用，因此，它们不能依赖于可变存储库中的更改，但服务用户、其 ACL、节点类型和索引定义更改除外。
 
 对于拥有现有代码库的客户，请务必完成 AEM 文档中描述的存储库重构实践，以确保将以前位于 /etc 下的内容移动到正确的位置。
 
@@ -86,7 +86,7 @@ ht-degree: 88%
 
 在某些情况下，在源代码管理中准备内容更改可能会很有用，这样它就能在更新环境时由 Cloud Manager 进行部署。例如，为某些根文件夹结构投放种子或在可编辑模板中排列更改，以便在其中为应用程序部署更新的组件启用策略可能是合理的。
 
-可通过两种策略来描述将由 Cloud Manager 部署到可变存储库的内容、可变内容包和 repoinit 语句。
+有两种策略可描述Cloud Manager部署到可变存储库、可变内容包和repoinit语句的内容。
 
 ### 可变内容包 {#mutable-content-packages}
 
@@ -140,9 +140,9 @@ ht-degree: 88%
 由于 Repoinit 的以下好处，对于这些受支持的内容修改用例，Repoinit 更可取：
 
 * Repoinit 在启动时创建资源，因此，逻辑可以将这些资源的存在视为理所当然。在可变内容包方法中，资源是在启动后创建的，因此依赖这些资源的应用程序代码可能会失败。
-* Repoinit 是一个相对安全的指令集，因为您可以明确控制要执行的操作。此外，唯一支持的操作是累加的，但几种与安全相关的情况除外，这些情况允许删除用户、服务用户和组。相比之下，在可变内容包方法中删除某些内容是明确的；在定义过滤器时，过滤器涵盖的任何内容都将被删除。不过，应谨慎行事，因为对于任何内容，在一些场景中，新内容的存在都会更改应用程序的行为。
+* Repoinit 是一个相对安全的指令集，因为您可以明确控制要执行的操作。此外，唯一支持的操作是累加的，但几种与安全相关的情况除外，这些情况允许删除用户、服务用户和组。相反，明确删除可变内容包方法中的某些内容；定义过滤器时，过滤器覆盖的任何内容都将被删除。 不过，应谨慎行事，因为对于任何内容，在一些场景中，新内容的存在都会更改应用程序的行为。
 * Repoinit 执行快速和原子操作。相比之下，可变内容包在性能方面可能在很大程度上取决于过滤器涵盖的结构。即使您更新单个节点，也可能创建大型树的快照。
-* 可以在运行时在本地开发环境中验证 repoinit 语句，因为在注册 OSGi 配置时将执行这些语句。
+* 运行时可以在本地开发环境中验证repoinit语句，因为它们会在OSGi配置注册时运行。
 * Repoinit 语句是原子和显式的，如果状态已匹配，则会将其跳过。
 
 当 Cloud Manager 部署应用程序时，它会独立于任何内容包的安装来执行这些语句。
@@ -174,12 +174,12 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="包管理器 – 迁移可变内容包"
->abstract="探究包管理器在应“一次性”安装内容包的用例中的用法，其中包括将特定内容从生产导入到暂存来调试生产问题，将小型内容包从内部部署环境传输到 AEM 云环境等。"
+>abstract="探索包管理器的用法，以了解应将内容包安装为“一次性”的用例，包括将特定内容从生产环境导入到暂存环境以调试生产问题，将小型内容包从内部部署环境传输到AEM云环境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans#cloud-migration" text="内容传输工具"
 
-在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境来调试生产问题。在这些场景中，可以在 AEM as a Cloud Service 环境中使用[包管理器](/help/implementing/developing/tools/package-manager.md)。
+在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境以调试生产问题。 在这些场景中，可以在 AEM as a Cloud Service 环境中使用[包管理器](/help/implementing/developing/tools/package-manager.md)。
 
-由于包管理器是一个运行时概念，无法将内容或代码安装到不可变存储库中，因此这些内容包应只包含可变内容（主要是 `/content` 或 `/conf`）。如果内容包包含混合内容（可变内容和不可变内容），则只安装可变内容。
+由于包管理器是一个运行时概念，无法将内容或代码安装到不可变存储库中，因此这些内容包应只包含可变内容（主要是 `/content` 或 `/conf`）。如果内容包中包含混合的内容（可变和不可变内容），则只会安装可变内容。
 
 >[!IMPORTANT]
 >
@@ -239,23 +239,23 @@ above appears to be internal, to confirm with Brian -->
 
 ## 滚动部署的工作原理 {#how-rolling-deployments-work}
 
-与 AEM 更新一样，客户版本使用滚动部署策略进行部署，以便在适当的情况下消除创作群集停机时间。下面介绍了事件的常规序列，其中具有旧版本和新版本客户代码的节点运行的是相同版本的AEM代码。
+与AEM更新类似，客户版本也使用滚动部署策略进行部署，以便在适当的情况下消除创作群集停机。 下面描述了事件的一般顺序，其中具有旧版本和新版本客户代码的节点运行相同版本的 AEM 代码。
 
-* 具有旧版本的节点处于活动状态，并且已构建新版本的发行候选版本，该版本将变得可用。
-* 如果存在任何新的或更新的索引定义，则处理相应的索引。请注意，旧版本的节点将始终使用旧索引，而新版本的节点将始终使用新索引。
-* 具有新版本的节点在旧版本仍提供流量时启动。
-* 运行旧版本的节点并保持服务，同时通过运行状况检查检查新版本的节点是否已准备就绪。
-* 新版本已就绪的节点将接受通信量并使用已停止运行的旧版本替换节点。
-* 随着时间的推移，具有旧版本的节点将由具有新版本的节点替换，直到仅具有新版本的节点保留，从而完成部署。
+* 具有旧版本的节点处于活动状态，新版本的候选发布版本已构建并可用。
+* 如果存在任何新的或更新的索引定义，则处理相应的索引。请注意，旧版本的节点将始终使用旧索引，而新版本的节点则始终使用新索引。
+* 具有新版本的节点启动，而旧版本仍然提供流量。
+* 具有旧版本的节点正在运行并继续服务，而新版本的节点则通过运行状况检查是否准备就绪。
+* 准备就绪的新版本节点将接受流量，并替换旧版本且已关闭的节点。
+* 随着时间的推移，旧版本的节点被新版本的节点替换，直到只剩下新版本的节点，从而完成部署。
 * 然后部署任何新的或修改后的可变内容。
 
 ## 索引 {#indexes}
 
-新索引或修改的索引将导致在新版本能够接收流量之前执行额外的索引或重新索引步骤。 有关 AEM as a Cloud Service 中的索引管理的详细信息，请参阅[本文](/help/operations/indexing.md)。您可以在 Cloud Manager 生成页面上查看索引工作的状态，并将在新版本准备好接收流量时收到通知。
+在新版本可以接受流量之前，新的或修改后的索引将导致额外的索引或重新索引步骤。有关 AEM as a Cloud Service 中的索引管理的详细信息，请参阅[本文](/help/operations/indexing.md)。您可以在 Cloud Manager 生成页面上查看索引工作的状态，并将在新版本准备好接收流量时收到通知。
 
 >[!NOTE]
 >
->滚动部署所需的时间因索引的大小而异，因为新版本在生成新索引之前无法接受流量。
+>滚动部署所需的时间因索引大小而异，因为新版本在生成新索引之前无法接受流量。
 
 目前，AEM as a Cloud Service 无法与 ACS Commons Ensure Oak Index 工具等索引管理工具配合使用。
 
@@ -263,7 +263,7 @@ above appears to be internal, to confirm with Brian -->
 
 发布机制与 [AEM Replication Java API](https://helpx.adobe.com/cn/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html) 向后兼容。
 
-为了使用云就绪 AEM 快速入门来开发和测试复制，需要将经典的复制功能与创作/发布设置结合使用。如果已为云删除 AEM 创作上的 UI 入口点，用户将转到 `http://localhost:4502/etc/replication` 以进行配置。
+要使用Cloud Ready AEM快速入门开发和测试复制，需要将Classic复制功能与“创作/发布”设置一起使用。 如果已为云删除 AEM 创作上的 UI 入口点，用户将转到 `http://localhost:4502/etc/replication` 以进行配置。
 
 ## 用于滚动部署的向后兼容代码 {#backwards-compatible-code-for-rolling-deployments}
 
@@ -273,15 +273,15 @@ above appears to be internal, to confirm with Brian -->
 
 ### 服务用户和 ACL 更改 {#service-users-and-acl-changes}
 
-更改访问内容或代码所需的服务用户或 ACL 可能会导致旧 AEM 版本出错，从而导致使用过期的服务用户访问该内容或代码。要解决此行为，建议在至少两个版本中进行更改，其中第一个版本在后续版本中进行清理之前充当桥接器。
+更改访问内容或代码所需的服务用户或 ACL 可能会导致旧 AEM 版本出错，从而导致使用过期的服务用户访问该内容或代码。要处理此行为，建议在至少两个版本中进行更改，第一个版本充当桥梁，然后在后续版本中进行清理。
 
 ### 索引更改 {#index-changes}
 
-如果对索引进行了更改，则新版本应继续使用其索引，直到被终止，而旧版本则使用自己的修改后的索引集，这一点非常重要。 开发人员应采用[本文](/help/operations/indexing.md)中描述的索引管理方法。
+如果对索引进行了更改，新版本必须继续使用其索引直至被终止，而旧版本使用自己的一组已修改的索引。开发人员应采用[本文](/help/operations/indexing.md)中描述的索引管理方法。
 
 ### 用于回滚的保守编码 {#conservative-coding-for-rollbacks}
 
-如果在部署后报告或检测到故障，则可能需要回滚到旧版本。 建议确保新代码与该新版本创建的任何新结构兼容，因为不会回退新结构（任何可变内容内容）。 如果旧代码不兼容，则需要在后续的客户版本中应用修复。
+如果在部署后报告或检测到故障，则可能需要回滚到旧版本。 建议确保新代码与新版本所创建的任何新结构兼容，因为新结构（任何可变内容）将不会回滚。如果旧代码不兼容，则需要在后续的客户版本中应用修复。
 
 ## 快速开发环境 (RDE) {#rde}
 

@@ -2,9 +2,9 @@
 title: 编辑器限制
 description: 触屏UI中的编辑器利用叠加与iframe中限定的内容进行交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 10%
 
 ---

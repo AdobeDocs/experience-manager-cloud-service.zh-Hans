@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
-workflow-type: ht
-source-wordcount: '4934'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '4925'
+ht-degree: 95%
 
 ---
 
@@ -199,7 +199,7 @@ Sites GraphQL 服务监听（在后台）对内容片段模型所作的任何更
 
 1. 安装包含 `Content-Fragment-Model-1` 和 `Content-Fragment-Model-2` 的软件包：
 
-   1. 将生成用于 `Model-1` 和 `Model-2` 的 GraphQL 类型。
+   1. GraphQL类型 `Model-1` 和 `Model-2` 生成。
 
 1. 然后修改 `Content-Fragment-Model-2`：
 
@@ -257,7 +257,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 ### 帮助程序字段 {#helper-fields}
 
-在用户生成的字段数据类型之外，GraphQL for AEM 还生成了多种&#x200B;*帮助程序* 字段，用于帮助标识内容片段，或者提供有关内容片段的额外信息。
+除了用户生成的字段的数据类型之外，GraphQL for AEM还生成大量字段 *辅助函数* 帮助标识内容片段或提供有关内容片段的附加信息的字段。
 
 这些[帮助程序字段](#helper-fields)使用前缀 `_` 标记，用于区分哪些字段由用户定义，哪些字段为自动生成。
 
@@ -369,7 +369,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 >[!NOTE]
 >
->如果内容片段不存在给定的变体，则原始数据（也称为主控变体）将作为（回退）默认值返回。
+>如果内容片段不存在给定的变量，则原始数据(也称为主控变量)将作为（回退）默认值返回。
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -569,7 +569,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 排序标准：
 
 * 是表示字段路径的逗号分隔值列表
-   * 列表中的第一个字段将定义主要排序顺序，如果主要排序标准的两个值相等，将使用第二个字段，如果前两个标准相等，则使用第三个字段，等等。
+   * 列表中的第一个字段将定义主要排序顺序，如果主要排序标准的两个值相等，则使用第二个字段，如果前两个标准相等，则使用第三个字段，等等。
    * 点分符号，即 field1.subfield.subfield 等...
 * 带有可选的订单方向
    * ASC（升序）或 DESC（降序）；作为默认 ASC 应用
@@ -664,7 +664,7 @@ query {
 
 >[!NOTE]
 >
->* 分页需要稳定的排序顺序才能在请求同一结果集的不同页面的多个查询中正常工作。默认情况下，它使用结果集中每个项目的存储库路径来确保顺序始终相同。如果使用不同的排序顺序，并且如果无法在 JCR 查询级别进行排序，则会对性能产生负面影响，因为在确定页面之前必须将整个结果集加载到内存中。
+>* 分页需要稳定的排序顺序才能在请求同一结果集的不同页面的多个查询中正常工作。默认情况下，它使用结果集中每个项目的存储库路径来确保顺序始终相同。如果使用不同的排序顺序，并且如果无法在JCR查询级别进行排序，则会对性能产生负面影响，因为在确定页面之前必须将整个结果集加载到内存中。
 >
 >* 偏移量越高，从完整的 JCR 查询结果集中跳过项目所需的时间就越多。大型结果集的替代解决方案是使用带有 `first` 和 `after` 方法的分页查询。
 
@@ -739,7 +739,7 @@ GraphQL 中的解决方案意味着您可以：
 结构和语法是：
 
 * `format`：按扩展名包含所有支持的格式的枚举：GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL 或 WEBPLY
-* `seoName`：将用作文件名而不是节点名的字符串
+* `seoName`：用作文件名而不是节点名称的字符串
 * `crop`：框架子结构，如果省略宽度或高度，则宽度或高度将用作同一值
    * `xOrigin`：框架的 x 原点，它是强制性的
    * `yOrigin`：框架的 y 原点，它是强制性的
@@ -751,7 +751,7 @@ GraphQL 中的解决方案意味着您可以：
 * `rotation`：所有支持的旋转的枚举：R90、R180、R270
 * `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL 的枚举
 * `quality`：1 和 100 之间的整数，表示图像质量的百分比
-* `width`：定义输出图像宽度的整数，但会被图像生成器忽略
+* `width`：一个整数，它定义输出图像的宽度，但被图像生成器忽略
 * `preferWebp`：指示是否首选 webp（默认值为 false）的布尔值
 
 URL 转换适用于所有查询类型：按路径、列表或分页。
@@ -1045,4 +1045,4 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 ## 教程 – AEM Headless 和 GraphQL 快速入门 {#tutorial}
 
-正在寻找实践教程？请查看 [AEM Headless 和 GraphQL 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans)端到端教程，其中说明了在 Headless CMS 场景中，如何使用 AEM GraphQL API 构建和公开内容并由外部应用程序使用。
+正在寻找实践教程？签出 [AEM Headless和GraphQL快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans) 端到端教程，其中演示了如何在Headless CMS场景中使用AEM GraphQL API构建和公开内容并由外部应用程序使用。

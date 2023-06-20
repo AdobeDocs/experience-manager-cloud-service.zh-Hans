@@ -2,9 +2,9 @@
 title: 创建和管理屏幕中的显示as a Cloud Service
 description: 本页介绍如何创建和管理Screensas a Cloud Service显示。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '663'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 发布渠道后，现在可以在Screens服务提供商中创建显示区。
 
-“显示”是屏幕的虚拟分组，通常位于彼此旁边。 对于安装而言，显示通常是永久性的。 这是内容作者将使用的对象，并且始终引用为逻辑显示，而不是其物理计数器部分。
+“显示”是屏幕的虚拟分组，通常位于彼此旁边。 对于安装而言，显示通常是永久性的。 此对象内容是作者使用并始终引用的逻辑显示内容，而不是其物理计数器部分。
 
 ## 目标 {#objective}
 

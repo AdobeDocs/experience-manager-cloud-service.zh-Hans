@@ -2,10 +2,10 @@
 title: 添加 SSL 证书
 description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: d0d4b22cdca02d81ca755e4045ffccb110739303
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '574'
+ht-degree: 86%
 
 ---
 
@@ -25,21 +25,21 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
 * 将 PFX 转化为 PEM
 
-   ```shell
-   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-   ```
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
 
 * 将 P7B 转化为 PEM
 
-   ```shell
-   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-   ```
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
 
 * 将 DER 转化为 PEM
 
-   ```shell
-   openssl x509 -inform der -in certificate.cer -out certificate.pem
-   ```
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## 添加证书 {#adding-a-cert}
 
@@ -49,7 +49,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 从左侧导航面板中单击 **SSL 证书**。 主屏幕上将显示一个包含任何现有 SSL 证书详细信息的表。
+1. 从左侧导航面板中单击 **SSL 证书**。 主屏幕上将显示一个表，其中包含任何现有SSL证书的详细信息。
 
    ![添加 SSL 证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -65,7 +65,6 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
       * 在保存证书之前，必须解决所有错误。
       * 请参阅[证书错误](#certificate-errors)部分，了解有关解决常见错误的更多信息。
 
-
 1. 单击&#x200B;**保存**，保存您的证书。
 
 保存后，您将看到证书在表中显示为新行。
@@ -74,7 +73,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
 >[!NOTE]
 >
->用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色成员，才能在 Cloud Manager 中安装 SSL 证书。
+>用户必须是 **业务负责人** 或 **部署管理员** 用于在Cloud Manager中安装SSL证书的角色。
 
 ## 证书错误 {#certificate-errors}
 
@@ -154,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->这两个命令的输出必须完全相同。 如果您找不到 `main/server` 证书的匹配私钥，您将需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
+>这两个命令的输出必须完全相同。 如果您找不到与您的密钥匹配的私钥， `main/server` 证书，您需要通过生成新的CSR和/或向SSL供应商请求更新的证书来重新加密证书。
 
 ### 证书有效日期 {#certificate-validity-dates}
 

@@ -2,10 +2,10 @@
 title: 创建项目
 description: 了解如何设置新项目和管道以部署加载项。
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 100%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->您的用户必须是组织的 Cloud Manager 中的&#x200B;**业务负责人**&#x200B;角色的成员才能创建项目。
+>您的用户必须是 **业务负责人** 您在组织的Cloud Manager中用于创建程序的角色。
 
 1. 登录 Adobe Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
 

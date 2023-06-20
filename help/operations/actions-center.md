@@ -4,10 +4,10 @@ description: 利用操作中心可方便地针对问题和其他重要信息采�
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
-workflow-type: ht
-source-wordcount: '705'
-ht-degree: 100%
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发�
 
 单击&#x200B;**了解更多**&#x200B;链接可将用户导航至本文，可参考以下[受支持的通知类型列表](#supported-notification-types)中的通知类型，其中提供了有关执行哪项操作的指南。
 
-在“操作中心”，您可以查看其他最新通知的列表。建议使用“操作”列表来确认通知，以便向 Adobe 表明您的组织已了解该任务，并稍后在采取纠正措施后解决该通知。
+在“操作中心”，您可以查看其他最新通知的列表。建议您使用“操作”列表确认通知，以指示Adobe您的组织已了解此任务，并在以后采取纠正操作时解决此通知。
 
 ![通知列表](/help/operations/assets/notification-list.png)
 

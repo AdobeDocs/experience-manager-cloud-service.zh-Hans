@@ -1,19 +1,19 @@
 ---
 title: 启用前端管道
-description: 了解如何启用现有站点的前端管道，以利用站点主题更快地自定义您的站点。
+description: 了解如何启用现有站点的前端管道以使用站点主题更快地自定义您的站点。
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 87%
 
 ---
 
 # 启用前端管道 {#enable-front-end-pipeline}
 
-了解如何启用现有站点的前端管道，以利用站点主题更快地自定义您的站点。
+了解如何启用现有站点的前端管道以使用站点主题更快地自定义您的站点。
 
 ## 概述 {#overview}
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 此管道仅处理前端代码，而不是进行全栈部署，这可加快流程速度，并使前端开发人员无需了解 AEM 即可轻松快速地自定义您的站点。
 
-默认情况下，基于站点模板的站点可以利用前端管道。本文档描述了如何调整现有站点以利用前端管道。
+默认情况下，基于站点模板的站点可以使用前端管道。 本文档描述了如何调整现有站点以利用前端管道。
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ AEM 可以自动调整您的现有站点以使用前端管道。要做到这一�
 
    ![启用前端管道](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
-1. AEM 会提示您确认将进行的更改的概述。确认并调整您的网站。
+1. AEM会提示您确认将进行的更改的概述。 确认并调整您的网站。
 
 现在您的站点已能够使用前端管道。要了解有关前端管道和管理站点主题的更多信息，请参阅：
 

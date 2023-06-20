@@ -2,10 +2,10 @@
 title: 项目设置
 description: 了解如何使用 Maven 构建 AEM 项目，以及创建自己的项目时必须遵守的标准。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 100%
+source-wordcount: '1404'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## 项目设置详情 {#project-setup-details}
 
-AEM 项目需要遵守以下准则才能使用 Cloud Manager 成功地构建和部署：
+要使用Cloud Manager成功构建和部署，AEM项目需要遵循以下准则：
 
 * 必须使用 [Apache Maven](https://maven.apache.org) 构建项目。
 * Git 存储库的根目录中必须有一个 `pom.xml` 文件。 此 `pom.xml` 文件可以根据需要引用尽可能多的子模块（这些子模块又可能包含其他子模块等）。
@@ -112,14 +112,14 @@ AEM 项目需要遵守以下准则才能使用 Cloud Manager 成功地构建和�
 >
 >由于通过此机制部署的代码目前没有在 Cloud Manager 的质量关卡中实现的所有[代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)中运行，因此只能非常谨慎地使用受密码保护的 Maven 存储库中的工件。 因此，它只应在少数情况下使用，并且适用于与 AEM 无关的代码。 此外，还建议将 Java 源以及整个项目源代码和二进制文件一起部署。
 
-要在 Cloud Manager 中使用受密码保护的 Maven 存储库，请执行以下操作：
+要在Cloud Manager中使用受密码保护的Maven存储库，请执行以下操作：
 
 1. 将密码（也可以是用户名）指定为机密[管道变量](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。
 1. 然后在 Git 存储库中名为 `.cloudmanager/maven/settings.xml` 的文件中引用该密码，它遵循 [Maven 设置文件](https://maven.apache.org/settings.html)模式。
 
 当 Cloud Manager 构建过程开始时：
 
-* 此文件中的 `<servers>` 元素将合并到 Cloud Manager 提供的默认 `settings.xml` 文件中。
+* 此 `<servers>` 元素会合并到缺省值中 `settings.xml` 文件由Cloud Manager提供。
    * 以 `adobe` 和 `cloud-manager` 开头的服务器 ID 被视为保留项，不应由自定义服务器使用。
    * Cloud Manager 绝不会对不带上述某个前缀的服务器 ID 或默认 ID `central` 进行镜像。
 * 有了此文件，将从 `pom.xml` 文件中的 `<repository>` 和/或 `<pluginRepository>` 元素中引用服务器 ID。
@@ -240,9 +240,9 @@ AEM 项目需要遵守以下准则才能使用 Cloud Manager 成功地构建和�
 
 ## 跳过内容包 {#skipping-content-packages}
 
-在 Cloud Manager 中，构建可以生成任意数量的内容包。出于各种原因，可能需要生成内容包但不部署它。 例如，当构建仅用于测试的内容包或将由构建过程中的另一步骤重新打包的内容包时，即作为另一个包的子包时。
+在 Cloud Manager 中，构建可以生成任意数量的内容包。出于各种原因，可能需要生成内容包但不部署它。 例如，在构建仅用于测试的内容包或由构建过程中的另一个步骤重新打包的内容包时。 也就是另一个包裹。
 
-为了适应这些情况，Cloud Manager 将在构建内容包的属性中查找名为 `cloudManagerTarget` 的属性。 如果此属性设置为 `none`，则将跳过并且不部署包。
+为了适应这些情况，Cloud Manager会查找名为的属性 `cloudManagerTarget` 在构建内容包的属性中。 如果此属性设置为 `none`，则会跳过该包且不部署。
 
 设置此属性的机制取决于生成内容包的方式。 例如，使用 `filevault-maven-plugin` 可以如下配置插件。
 
@@ -322,11 +322,11 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 1. 开发管道构建和执行 `foo`。
 1. 随后，生产管道构建和执行 `bar`。
 
-在此情况下，来自 `foo` 的工件将重用于生产管道，因为已识别同一承诺哈希。
+在本例中，来自 `foo` 由于识别出相同的承诺哈希，因此重用于生产管道。
 
 ### 选择退出 {#opting-out}
 
-如果需要，可以通过将管道变量 `CM_DISABLE_BUILD_REUSE` 设置为 `true` 来禁止再次使用特定管道。如果设置了此变量，则仍将提取承诺哈希，并且将存储生成的工件以供以后使用，但不会再次使用任何之前存储的工件。为了理解此行为，请考虑以下场景。
+如果需要，可以通过将管道变量 `CM_DISABLE_BUILD_REUSE` 设置为 `true` 来禁止再次使用特定管道。如果设置了此变量，则仍将提取承诺哈希，并且将存储生成的工件以供以后使用，但不会重用任何之前存储的工件。 为了理解此行为，请考虑以下场景。
 
 1. 创建一个新的管道。
 1. 执行此管道（执行 #1），当前 HEAD 承诺为 `becdddb`。 执行成功，并且将存储生成的构件。
@@ -341,5 +341,5 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 * 无论承诺哈希是否相同，生成工件都不会在不同的项目中再次使用。
 * 即使分支和/或管道不同，生成工件也将在同一项目中再次使用。
 * [Maven 版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)仅在生产管道中替换项目版本。 因此，如果在开发部署执行和生产管道执行中使用同一承诺，并且首先执行开发部署管道，则版本将部署到暂存和生产环境中且不会进行更改。 不过，在此情况下仍会创建标记。
-* 如果无法检索已存储的构件，则将执行构建步骤，就像未存储任何构件一样。
+* 如果无法检索已存储的构件，则将运行构建步骤，就像未存储任何构件一样。
 * 当 Cloud Manager 决定重用之前创建的构建构件时，不会考虑 `CM_DISABLE_BUILD_REUSE` 之外的管道变量。

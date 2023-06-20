@@ -1,10 +1,10 @@
 ---
 title: AEM日志as a Cloud Service
-description: 了解如何使用AEMas a Cloud Service的日志记录功能，为中央日志记录服务配置全局参数、为各个服务配置特定设置或者如何请求数据日志记录。
+description: 了解如何使用AEMas a Cloud Service日志记录功能为中央日志记录服务配置全局参数、为各个服务配置特定设置或者如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2376'
 ht-degree: 3%
 
 ---
@@ -94,7 +94,7 @@ AEMas a Cloud Service提供对Java log语句的访问。 AEM应用程序的开�
 
 虽然Java日志记录支持其他多个级别的日志记录粒度，但AEMas a Cloud Service建议使用上述三个级别。
 
-AEM日志级别是通过OSGi配置为每个环境类型设置的，这些配置将提交到Git，并通过Cloud Manager部署到AEMas a Cloud Service。 因此，最好保持日志语句的一致性并且让环境类型熟悉，以确保通过AEM as Environment提供的日志在最佳日志级别可用，而无需使用更新的日志级别配置重新部署应用程序。Cloud Service
+AEM日志级别是通过OSGi配置为每个环境类型设置的，这些配置将提交到Git，并通过Cloud Manager部署到AEMas a Cloud Service。 因此，最好保持日志语句的一致性并且让环境类型熟悉，以确保通过AEM as Cloud Service提供的日志在最佳日志级别可用，而无需使用更新的日志级别配置重新部署应用程序。
 
 **示例日志输出**
 

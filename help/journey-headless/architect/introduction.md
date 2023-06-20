@@ -2,10 +2,10 @@
 title: 对 AEM as a Headless CMS 进行内容建模 - 简介
 description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能对项目进行内容建模。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 全栈内容交付 {#full-stack}
 
-自易于使用的大型内容管理系统 (CMS) 兴起以来，组织便已将其用作管理消息、品牌化和通信的中心位置。通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
+自易于使用的大型内容管理系统(CMS)兴起以来，组织一直将其用作管理消息传送、品牌推广和通信的中心位置。 通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
 
 ![经典全栈 CMS](/help/journey-headless/developer/assets/full-stack.png)
 

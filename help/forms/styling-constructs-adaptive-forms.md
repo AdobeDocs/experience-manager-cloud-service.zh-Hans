@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
 ht-degree: 3%
@@ -24,7 +24,7 @@ CSS和LESS框架的相关知识。
 
 ## 可自定义的内容 {#what-can-be-customized}
 
-本文列出了自适应Forms的公开可用的css类。 您可以利用这些类为自适应表单的各种组件设置样式。 创作组件（如显示警告的对话框和状态栏）的样式超出了本文的范围。 仅当您无法通过以下方式为组件设置样式时，才使用这些样式构造创建样式（使用CSS或更少）： [主题编辑器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+本文列出了自适应Forms的公开可用的css类。 您可以使用这些类为自适应表单的各种组件设置样式。 创作组件（如显示警告的对话框和状态栏）的样式超出了本文的范围。 仅当您无法通过以下方式为组件设置样式时，才使用这些样式构造创建样式（使用CSS或更少）： [主题编辑器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## 在自适应Forms中自定义样式 {#customizing-styles-in-adaptive-forms}
 
@@ -519,7 +519,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>table-header-bg-color</code></p> </td>
-   <td><p>标题行的背景颜色。 默认值为 <code>#333</code>。<br /> </p> </td>
+   <td><p>标题行的背景颜色。 默认值为 <code>#333</code>.<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>table-odd-row-bg-color</code></p> </td>

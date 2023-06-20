@@ -2,9 +2,9 @@
 title: as a Cloud Service在Screens中创建和管理渠道
 description: 本页介绍如何在Screens中以as a Cloud Service方式创建和管理渠道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 ### 在分配给显示区时使用默认分配详细信息 {#default-display}
 
-可以将具有默认分配详细信息的渠道分配给以与常规渠道相同的显示方式，添加了选项以利用默认分配详细信息，而不是每次手动定义自定义详细信息。
+可以将具有默认分配详细信息的渠道分配给显示方式，与常规渠道相同，并添加了使用默认分配详细信息的选项，而不是每次都手动定义自定义分配详细信息。
 
 1. 导航到要为其分配渠道的显示详细信息页面，然后单击 **分配渠道**.
 或者，在库存视图中选择所需的显示，然后单击 **分配渠道**.
@@ -141,7 +141,7 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/display/Assignments8.png)
 
-**注意：** 利用默认分配详细信息的渠道分配在显示的上下文中将不可编辑。
+**注意：** 使用默认分配详细信息的渠道分配在显示的上下文中将不可编辑。
 
 * 如果您需要将其更改为自定义分配，则必须先删除它，然后使用 **设置自定义分配详细信息** 选项。
 * 如果您需要更改默认分配详细信息的属性，则必须直接从渠道详细信息页面执行此操作。
@@ -154,7 +154,7 @@ ht-degree: 1%
 
    ![图像](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. 将显示确认对话框，详细信息将与以下条件之一匹配：
+1. 将显示确认对话框，详细信息符合以下条件之一：
    **答：** 渠道未用于任何显示。
 
    ![图像](/help/screens-cloud/assets/display/Assignments10.png)

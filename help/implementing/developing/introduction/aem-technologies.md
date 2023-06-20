@@ -2,9 +2,9 @@
 title: AEM 技术基础
 description: AEM的技术基础概述，包括AEM的结构以及基础技术，如JCR、Sling和OSGi。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2180'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 * 映射使用从请求中提取的内容路径来定位资源。
 * 找到相应的资源后，将提取sling资源类型，并用于定位要用于呈现内容的脚本。
 
-下图说明了使用的机制，将在以下各节中更详细地讨论。
+下图说明了所使用的机构，以下几节将对此进行更详细的讨论。
 
 ![URL映射机制](assets/url-mapping.png)
 
@@ -146,7 +146,7 @@ Sling还允许将JCR节点以外的内容作为资源，但这是一项高级功
 
 其他几点需要注意的是：
 
-* 当需要方法(GET、POST)时，将根据HTTP规范以大写形式指定，例如， `jobs.POST.esp`
+* 当需要方法(GET、POST)时，根据HTTP规范以大写形式指定，例如， `jobs.POST.esp`
 * 虽然支持各种脚本引擎，但常见的推荐脚本是HTL和JavaScript。
 
 Felix管理控制台上列出了给定的AEM实例支持的脚本引擎列表( `http://<host>:<port>/system/console/slingscripting`)。
@@ -154,22 +154,22 @@ Felix管理控制台上列出了给定的AEM实例支持的脚本引擎列表( `
 使用上一个示例，如果 `sling:resourceType` 是 `hr/jobs` 然后用于：
 
 * 以结尾的GET/HEAD请求和URL `.html` （默认请求类型，默认格式）
-   * 脚本将为 `/apps/hr/jobs/jobs.esp`；的最后一个部分 `sling:resourceType` 形成文件名。
+   * 脚本为 `/apps/hr/jobs/jobs.esp`；的最后一个部分 `sling:resourceType` 形成文件名。
 * POST请求(除GET/HEAD之外的所有请求类型，方法名称必须大写)
-   * POST将在脚本名称中使用。
-   * 脚本将为 `/apps/hr/jobs/jobs.POST.esp`.
+   * POST在脚本名称中使用。
+   * 脚本为 `/apps/hr/jobs/jobs.POST.esp`.
 * 其他格式的URL，结尾不是 `.html`
    * 例如 `../content/corporate/jobs/developer.pdf`
-   * 脚本将为 `/apps/hr/jobs/jobs.pdf.esp`；后缀将添加到脚本名称中。
+   * 脚本为 `/apps/hr/jobs/jobs.pdf.esp`；后缀将添加到脚本名称中。
 * 带有选择器的URL
    * 选择器可用于以替代格式显示相同的内容。 例如，打印机友好版本、rss馈送或摘要。
    * 如果查看适合打印的版本，则选择器可能是 `print`；如所示 `../content/corporate/jobs/developer.print.html`
-   * 脚本将为 `/apps/hr/jobs/jobs.print.esp`；选择器将添加到脚本名称中。
+   * 脚本为 `/apps/hr/jobs/jobs.print.esp`；选择器将添加到脚本名称中。
 * 如果否 `sling:resourceType` 已定义，则：
-   * 内容路径将用于搜索适当的脚本(如果路径基于 `ResourceTypeProvider` 活动)。
+   * 内容路径用于搜索合适的脚本(如果路径基于 `ResourceTypeProvider` 活动)。
    * 例如，的脚本 `../content/corporate/jobs/developer.html` 会在以下位置生成搜索： `/apps/content/corporate/jobs/`.
-   * 将使用主节点类型。
-* 如果根本找不到脚本，则将使用默认脚本。
+   * 使用主节点类型。
+* 如果根本找不到脚本，则使用默认脚本。
    * 当前支持以纯文本格式呈现默认演绎版(`.txt`)，HTML(`.html`)和JSON (`.json`)，所有这些属性都将列出节点的属性（格式合适）。 扩展的默认演绎版 `.res`（或没有请求扩展名的请求）将假脱机资源（如果可能）。
 * 对于http错误处理（代码403或404），Sling将在以下任一位置查找脚本：
    * 位置 `/apps/sling/servlet/errorhandler` 用于自定义脚本

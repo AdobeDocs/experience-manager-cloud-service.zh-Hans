@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2020.9.0版as a Cloud Service发行说明。”
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 20%
+source-wordcount: '723'
+ht-degree: 18%
 
 ---
 
@@ -74,7 +74,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * 内容审核已重新标记为体验审核。
 * 构建过程分为三个单独的 Maven 命令。
-* 如果 Git 存储库无法克隆，则最多允许重复尝试三次。
+* 如果无法克隆Git存储库，则最多重新尝试三次。
 
 ### 错误修复 {#bug-fixes-cm}
 
@@ -118,8 +118,8 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * AIO-CLI插件支持Repository Modernizer，并允许用户使用插件执行该工具。
 
-   请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 了解更多详细信息。
+  请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 了解更多详细信息。
 
 * Repository Modernizer实用程序可用于将现有项目包重构为与为AEMas a Cloud Service定义的项目结构兼容的包。
 
-   请参阅 [Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 了解更多详细信息。
+  请参阅 [Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 了解更多详细信息。

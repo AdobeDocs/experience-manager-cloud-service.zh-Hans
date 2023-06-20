@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 发行说明
 description: Experience Manager 2020.6.0 发行说明
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 98%
+source-wordcount: '1939'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 ### 新增功能 {#whats-new-2020.6.0}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)版本 2.9.0 现已作为 AEM Sites 的一部分提供，包括：
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)版本 2.9.0 现已作为 AEM Sites 的一部分提供，包括：
 
 * [Adobe 客户端数据层](https://github.com/adobe/adobe-client-data-layer)与核心组件的集成
 * 适用于所有组件的可配置 HTML ID 属性
@@ -48,9 +48,9 @@ ht-degree: 98%
 
 ## AEM as a Cloud Service 的新增基础功能 {#foundations}
 
-通过删除 AEM 项目的 pom.xml 中对远程存储库 `https://downloads.experiencecloud.adobe.com/content/maven/public` 的所有引用，AEM 项目构建时间将会缩短。
+通过删除AEM项目的pom.xml中对远程存储库的所有引用，AEM项目构建时间将会缩短 `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Maven Central（即 Maven 的默认项目存储库）中。
+AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven Central（即Maven的默认工件存储库）中。
 
 ## Cloud Manager 的新增功能 {#cloud-manager}
 
@@ -60,11 +60,11 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 
 * 在 Cloud Manager 中，具有“业务所有者”**&#x200B;角色的用户现在可以从登陆页面（通过项目卡上的快速操作按钮）或项目中删除沙盒程序。
 
-   有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
+  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
 * 在 Cloud Manager 中，具有“业务所有者”**&#x200B;或“部署管理者”**&#x200B;角色的沙盒程序用户现在可以通过 Cloud Manager UI 删除其生产和暂存环境集。删除选项现在可从&#x200B;**项目概述**&#x200B;页面和&#x200B;**环境**&#x200B;页面上的环境卡中使用。在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
 
-   有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
+  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
 * 在登陆页面上显示引导标记，以告知和指示用户如何进行基本导航。
 
@@ -72,15 +72,15 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 
 * 现在 Cloud Manager 中提供了&#x200B;**学习**&#x200B;页面，可通过顶部导航访问该页面。该页面包含可帮助用户了解与他们在 Cloud Manager 中分配的角色相关的最常用工作流的资源。
 
-* 沙盒程序现在通过&#x200B;**沙盒**&#x200B;徽章进行标识，该徽章将显示在登陆页面的项目卡上，以及&#x200B;**项目概述**&#x200B;页面中项目名称的旁边。
+* 沙盒程序现在通过 **沙盒** 徽章，显示在登陆页面的项目卡上，以及中项目名称旁边 **计划概述** 页面。
 
 * 具有 SysAdmin 角色的用户现在通过一次单击即可访问 Admin Console 中的相应位置，以管理用户角色或 Cloud Manager 权限。现在，登陆页面上的&#x200B;**添加项目**&#x200B;按钮旁边提供了&#x200B;**管理访问权限**&#x200B;按钮。
 
-   有关更多详细信息，请参阅 [SysAdmin 任务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)。
+  有关更多详细信息，请参阅 [SysAdmin 任务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)。
 
 * 具有 SysAdmin 角色的用户现在通过一次单击即可直接从 Cloud Manager 中访问创作实例。
 
-   有关更多详细信息，请参阅[管理对创作实例的访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)。
+  有关更多详细信息，请参阅[管理对创作实例的访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)。
 
 * “生成”日志现在包含已发现项目的列表，包括跳过的内容包。
 
@@ -98,7 +98,7 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 
 ### 已知问题 {#known-issues-cm}
 
-* 在某一特定时间段内未检测到活动时，沙盒程序内的环境将会休眠。在 Cloud Manager 中不会观察到此状态。但是，可通过开发人员控制台观察到此状态。即将发布的版本中将解决此问题。
+* 在某一特定时间段内未检测到活动时，沙盒程序内的环境将休眠。 在 Cloud Manager 中不会观察到此状态。但是，可通过开发人员控制台观察到此状态。即将发布的版本中将解决此问题。
 
 * 直接从 Cloud Manager 链接到开发人员控制台不会显示用于将沙盒程序的环境解除休眠/休眠的选项。要解决此问题，请在开发人员控制台中，将模式 `#release-cm-p1234-e5678` 添加到 URL 的末尾，其中 *1234* 是项目 ID，*5678* 是环境 ID。即将发布的版本中将解决此问题。
 
@@ -175,7 +175,7 @@ AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于 Mav
 * 能够使用资产处理配置文件重新处理资产，让用户完全控制该流程（运行完全资产处理，仅应用特定处理配置文件，并确定是否应运行处理后工作流）。
 * 现在，当基础群集实例在后台重新启动时，搜索查询返回结果的速度更快（之前在此类情况下，初始搜索运行可能会持续较长时间）。
 * 在 Assets 界面的列表视图和搜索结果中查看资产时，可按“名称”排序。请参阅[搜索资产](/help/assets/search-assets.md#sort)。
-* 在 Assets 界面的列表视图和搜索结果中查看资产时，可按“创建时间”（日期）排序。请参阅[搜索资产](/help/assets/search-assets.md#sort)。
+* 在Assets界面的列表视图和搜索结果中查看资产时，按“创建日期”排序。 请参阅[搜索资产](/help/assets/search-assets.md#sort)。
 * 支持使用资产微服务将 EPS 文件转换为图像。
 
 ### 错误修复 {#assets-bug-fixes}
