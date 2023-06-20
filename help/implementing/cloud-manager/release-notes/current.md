@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: deef27dd90be22669b2328f6e394b8d3df99b4b9
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
@@ -21,17 +21,17 @@ ht-degree: 33%
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中的Cloud Manager 2023.6.0版的发布日期是2023年6月8日。 下一个版本计划于2023年7月6日发布。
+AEM as a Cloud Service 中的 Cloud Manager 2023.6.0 版本的发布日期是 2023 年 6 月 8 日。下一个版本计划于 2023 年 7 月 6 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 除了主区域之外，客户还可以购买其他辅助发布区域，从而带来与减少延迟和提高可用性相关的好处。 注意：某些限制可能适用。
-* 创建新时 [项目或环境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 现在，该名称仅接受字母数字字符和一组有限的特殊字符。
-* 恢复时 [生产管道，](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 现在，批准步骤中会显示确认对话框。
-* 对于 **[客户功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** 和 **[自定义用户界面测试](/help/implementing/cloud-manager/ui-testing.md)** 管道步骤，新 `INCOMPLETE` 现在可以为status ，这表示此类测试不存在，因此未执行。
-   * 在这种情况下，管道不会失败并进入下一步。
+* 除了主要区域之外，客户还可以购买额外的次要发布区域，从而获得减少延迟和提高可用性等方面的好处。注释：可能存在某些限制。
+* 创建新的[程序或环境时，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)名称现在仅限于接受字母数字字符和一组有限的特殊字符。
+* 当恢复[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)时，现在在批准步骤中会显示一个确认对话框。
+* 对于&#x200B;**[客户功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)**&#x200B;和&#x200B;**[自定义 UI 测试](/help/implementing/cloud-manager/ui-testing.md)**&#x200B;管道步骤，现在可能出现新的 `INCOMPLETE` 状态，这表明此类测试不存在，因此未执行。
+   * 在这种情况下，管道不会出现故障，并会进入下一步。
 
 ## 错误修复 {#bug-fixes}
 
-* 此 [Web层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 不再错误地为仅用于Assets的项目启用。
-* 添加了更强大的验证，以防止在环境预配期间出现某些类型的故障。
+* [Web 层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)不再为仅资源程序以错误的方式启用。
+* 添加了更强大的验证功能，以防止在环境配置期间出现某些类型的故障。
