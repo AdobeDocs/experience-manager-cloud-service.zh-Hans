@@ -3,7 +3,7 @@ title: 程序和程序类型
 description: 了解 Cloud Manager 的层级，以及不同类型的程序如何适应其结构以及它们之间的差异。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
 ht-degree: 100%
 
