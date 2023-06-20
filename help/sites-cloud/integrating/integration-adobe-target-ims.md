@@ -3,7 +3,7 @@ title: 与 Adobe Target 集成时使用的 IMS 配置
 description: 了解与 Adobe Target 集成时使用的 IMS 配置
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
 ht-degree: 100%
 
