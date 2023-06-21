@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1105'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 60%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="维护任务"
->abstract="维护任务是指按计划运行以优化存储库的过程。 使用 AEM as a Cloud Service 会大幅减小客户配置维护任务操作属性的需求。 客户可以将资源集中在应用程序级别的问题上，而 Adobe 则会处理基础设施方面的操作。"
+>abstract="维护任务是按计划运行以优化存储库的过程。使用 AEM as a Cloud Service 会大幅减小客户配置维护任务操作属性的需求。 客户可以将资源集中在应用程序级别的问题上，而 Adobe 则会处理基础设施方面的操作。"
 
-维护任务是指按计划运行以优化存储库的过程。 使用 AEM as a Cloud Service 会大幅减小客户配置维护任务操作属性的需求。 客户可以将资源集中在应用程序级别的问题上，而 Adobe 则会处理基础设施方面的操作。
+维护任务是按计划运行以优化存储库的过程。使用 AEM as a Cloud Service 会大幅减小客户配置维护任务操作属性的需求。 客户可以将资源集中在应用程序级别的问题上，而 Adobe 则会处理基础设施方面的操作。
 
 ## 配置维护任务 {#maintenance-tasks-configuring}
 
