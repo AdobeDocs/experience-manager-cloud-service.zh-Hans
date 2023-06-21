@@ -3,9 +3,9 @@ title: Screensas a Cloud Service的视频缩略图支持
 description: 本页介绍如何在Screensas a Cloud Service中为视频添加缩略图支持。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -42,19 +42,19 @@ ht-degree: 1%
 
 1. 选择渠道并单击 **编辑** 以打开编辑器。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![打开编辑器](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. 添加或编辑现有视频组件，如下图所示。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![编辑组件](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
 1. 选择视频并单击 *扳手* 图标以打开视频属性。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![单击扳手](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
 1. 此 **视频** 这将打开一个对话框，您将在其中查看 **缩略图** 放置区域。
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![查看缩略图](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. 将图像从资产选取器拖放到 **缩略图** 放置区域并单击 **完成**.
 

@@ -2,9 +2,9 @@
 title: as a Cloud Service在Screens中创建视频演绎版
 description: 本页介绍如何在Screensas a Cloud Service中创建视频演绎版。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 1. 单击左侧导航栏中的“工具”部分，然后单击 **资产** 然后单击 **处理配置文件**.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![单击处理配置文件](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. 单击 **创建** 以创建新的处理配置文件。
 
-   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![单击“创建”](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. 输入 **名称**，例如 **ScreensProcessingProfile**.
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 1. 选择处理配置文件，然后单击 **将配置文件应用到文件夹**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
+   ![将配置文件应用到文件夹](/help/screens-cloud/assets/configure/screens-video-5.png)
 
 1. 选择保存Screens视频的文件夹，然后单击 **应用**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![单击应用](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >* 您可以创建多个处理配置文件，并将它们应用到相应的文件夹，以便这些文件夹中的视频获得特定的视频演绎版。

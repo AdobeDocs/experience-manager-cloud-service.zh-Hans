@@ -2,9 +2,9 @@
 title: 如何在AEM Workflow步骤中添加变量？
 description: 了解如何创建变量、为变量设置值以及将其用于 [!DNL AEM Forms] 工作流步骤。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 要创建变量，请执行以下操作：
 
-1. 在AEM实例上，导航到工具 ![](assets/hammer-icon.svg) >工作流>模型。
+1. 在AEM实例上，导航到工具 ![锤子图标](assets/hammer-icon.svg) >工作流>模型。
 1. 点按 **[!UICONTROL 创建]** 和为工作流模型指定标题和可选名称。 选择模型并点按 **[!UICONTROL 编辑]**.
 1. 点按工作流模型Sidekick中可用的变量图标，然后点按 **[!UICONTROL 添加变量]**.
 
