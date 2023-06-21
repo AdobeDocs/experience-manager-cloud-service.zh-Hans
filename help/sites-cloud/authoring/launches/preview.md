@@ -1,11 +1,11 @@
 ---
 title: 使用启动项预览将来的情况
-description: 利用时间扭曲功能，您可以查看基于启动项的内容。
+description: 借助时间扭曲，您可以根据启动项查看内容。
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0edd0e3deeba89dcbd2dc1a07859138b24e2220
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 56%
+ht-degree: 45%
 
 ---
 
