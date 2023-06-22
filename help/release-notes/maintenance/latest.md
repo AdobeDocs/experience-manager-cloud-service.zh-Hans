@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 37%
+source-wordcount: '382'
+ht-degree: 31%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 37%
 
 以下是维护版本12255的持续改进，该版本于2023年6月13日公开发布。 此维护版本是对上一个维护版本 12142 的更新。
 
-此维护版本的功能支持将为您提供完整功能集。有关完整详细信息，请参阅[最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+此维护版本的功能启用将为您提供功能激活2023.6.0的完整功能集。请参阅 [Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 了解更多信息。
 
 ### 增强 {#enhancements-12255}
 
 无。
-
-### 已知问题 {#known-issues-12255}
-
-- ASSETS-25729 — 视图切换器菜单被切断
-- ASSETS-25728 — 重新处理资产选项在搜索视图中不可用
-- ASSETS-22603 — 某些下载类型的资产报表列在UI中显示“null”值。 可下载的CSV不受影响。
 
 ### 修复的问题 {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ ht-degree: 37%
 - ASSETS-23981 — 标题排序功能在收藏集链接中不起作用
 - ASSETS-24723 — 再次重新处理已发布的资产，无需用户干预
 - GRANITE-45385 — 迁移树激活以使用sling作业而不是工作流
+
+### 已知问题 {#known-issues-12255}
+
+- ASSETS-25729 — 视图切换器菜单被切断
+- ASSETS-25728 — 重新处理资产选项在搜索视图中不可用
+- ASSETS-22603 — 某些下载类型的资产报表列在UI中显示“null”值。 可下载的CSV不受影响。
 
 ### 嵌套的技术 {#embedded-tech-12255}
 
