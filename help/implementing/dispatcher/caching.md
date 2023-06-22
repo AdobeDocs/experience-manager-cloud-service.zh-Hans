@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: AEM as a Cloud Service 中的缓存
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
-source-wordcount: '2819'
+source-wordcount: '2793'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 2%
 # 简介 {#intro}
 
 流量通过CDN传递到Apache Web服务器层，该层支持包括Dispatcher在内的模块。 为了提高性能，Dispatcher主要用作缓存，以限制发布节点上的处理。
-可以将规则应用于Dispatcher配置以修改任何默认缓存过期设置，从而在CDN上缓存缓存。 请注意，在以下情况下，Dispatcher还会遵循生成的缓存过期标头： `enableTTL` 在Dispatcher配置中启用，这意味着它将刷新特定内容，即使在重新发布的内容之外也是如此。
+可以将规则应用于Dispatcher配置以修改任何默认缓存过期设置，从而在CDN上缓存缓存。 在以下情况下，Dispatcher还会遵循生成的缓存过期标头： `enableTTL` 在Dispatcher配置中启用，这意味着它刷新特定内容，即使是在要重新发布的内容之外也是如此。
 
-此页面还介绍了Dispatcher缓存如何失效以及缓存如何在浏览器级别对客户端库进行工作。
+此页面还介绍了Dispatcher缓存如何失效以及在浏览器级别上缓存如何用于客户端库。
 
 ## 缓存 {#caching}
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 Define DISABLE_DEFAULT_CACHING
 ```
 
-这在业务逻辑需要微调页面标头（具有基于日历天的值）时很有用，因为默认情况下，页面标头设置为0。 话虽如此， **关闭默认缓存时，请务必谨慎。**
+例如，当您的业务逻辑需要微调年龄标题（具有基于日历天的值）时，此方法很有用，因为默认情况下，年龄标题设置为0。 话虽如此， **关闭默认缓存时请务必小心。**
 
 * HTML可以通过定义 `EXPIRATION_TIME` 中的变量 `global.vars` 使用AEMas a Cloud ServiceSDK Dispatcher工具。
 * 可以在更细粒度级别覆盖，包括独立控制CDN和浏览器缓存，并具有以下Apache `mod_headers` 指令：
@@ -44,7 +44,7 @@ Define DISABLE_DEFAULT_CACHING
   >[!NOTE]
   >Surrogate-Control标头适用于Adobe托管的CDN。 如果使用 [客户管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，根据您的CDN提供商，可能需要不同的标头。
 
-  在设置全局缓存控制标头或匹配宽正则表达式的标头时，请务必谨慎，这样它们就不会应用于需要保持私密的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 话虽如此，如果AEMas a Cloud Service检测到缓存标头已被应用于它检测到不可由Dispatcher缓存的内容，则会删除该缓存标头，如Dispatcher文档中所述。 要强制AEM始终应用缓存标头，可以添加 **始终** 选项如下所示：
+  在设置与宽正则表达式匹配的全局缓存控制标头或类似缓存标头时，请务必小心，这样它们就不会应用于必须保持私密的内容。 请考虑使用多个指令，以确保以细粒度方式应用规则。 话虽如此，如果AEMas a Cloud Service检测到缓存标头已被应用于它检测到不可由Dispatcher缓存的内容，则会删除该标头，如Dispatcher文档中所述。 要强制AEM始终应用缓存标头，可以添加 **`always`** 选项如下所示：
 
   ```
   <LocationMatch "^/content/.*\.(html)$">
@@ -55,7 +55,7 @@ Define DISABLE_DEFAULT_CACHING
   </LocationMatch>
   ```
 
-  您必须确保文件位于 `src/conf.dispatcher.d/cache` 具有以下规则（默认配置中）：
+  确保文件位于 `src/conf.dispatcher.d/cache` 具有以下规则（默认配置中）：
 
   ```
   /0000
@@ -72,17 +72,17 @@ Define DISABLE_DEFAULT_CACHING
     </LocationMatch>
   ```
 
-* 虽然设置为私有的HTML内容将不会在CDN中缓存，但如果满足以下条件，则可以在Dispatcher中缓存 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans) 配置，确保只能向授权用户提供内容。
+* 虽然设置为私有的HTML内容不会在CDN中缓存，但可以在以下情况下在Dispatcher中缓存 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans) 配置，确保只能向授权用户提供内容。
 
   >[!NOTE]
-  >其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)中，将不会成功覆盖值。
+  >其他方法，包括 [Dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)，无法成功覆盖值。
 
   >[!NOTE]
-  >请注意，Dispatcher可能仍会根据自身缓存内容 [缓存规则](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 要使内容真正为私有，您应该确保Dispatcher不会缓存该内容。
+  >Dispatcher仍可能会根据其自身的缓存内容 [缓存规则](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). 要使内容真正为私有，请确保Dispatcher未缓存该内容。
 
 ### 客户端库(js，css) {#client-side-libraries}
 
-* 使用AEM客户端库框架时，生成JavaScript和CSS代码的方式可让浏览器无限期地缓存它，因为任何更改都会显示为具有唯一路径的新文件。  换句话说，会根据需要生成引用客户端库的HTML，以便客户可以在发布新内容时体验这些内容。 对于不遵循“不可变”值的旧版浏览器，cache-control设置为“不可变”或30天。
+* 使用AEM客户端库框架时，生成JavaScript和CSS代码的方式可让浏览器无限期地缓存它，因为任何更改都会显示为具有唯一路径的新文件。 换句话说，会根据需要生成引用客户端库的HTML，以便客户可以在发布新内容时体验这些内容。 对于不遵循“不可变”值的旧版浏览器，cache-control设置为“不可变”或30天。
 * 请参阅部分 [客户端库和版本一致性](#content-consistency) 以了解更多详细信息。
 
 ### 足够大的图像和任何内容存储在Blob存储中 {#images}
@@ -98,11 +98,11 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-在Dispatcher层修改缓存标头时，请注意不要缓存太广，请参阅HTML/文本部分中的讨论 [以上](#html-text). 此外，请确保应保持私有（而不是缓存）的资产不属于 `LocationMatch` 指令过滤器。
+在Dispatcher层修改缓存标头时，请小心不要缓存得过宽。 请参阅HTML/文本部分中的讨论 [以上](#html-text). 此外，请确保应保持私有（而不是缓存）的资产不属于 `LocationMatch` 指令过滤器。
 
 #### 新的默认缓存行为 {#new-caching-behavior}
 
-AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓存标头。 请注意，如果未设置缓存控制标头，则会缓存公共内容，并且经过身份验证的流量会设置为私有。 如果已设置缓存控制标头，则缓存标头保持不变。
+AEM层根据是否已设置缓存标头以及请求类型的值来设置缓存标头。 如果未设置缓存控制标头，则会缓存公共内容，并且经过身份验证的流量会设置为private。 如果设置了缓存控制标头，则缓存标头保持不变。
 
 | 是否存在缓存控制标头？ | 请求类型 | AEM将缓存标头设置为 |
 |------------------------------|---------------|------------------------------------------------|
@@ -117,12 +117,12 @@ AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓�
 默认情况下，AEM层不会缓存blob内容。
 
 >[!NOTE]
->建议将Cloud Manager环境变量AEM_BLOB_ENABLE_CACHING_HEADERS设置为true，以将旧的默认行为更改为与新行为(高于65000的程序ID)一致。 如果项目已上线，请确保您验证在更改后，内容的行为符合预期。
+>通过将Cloud Manager环境变量AEM_BLOB_ENABLE_CACHING_HEADERS设置为true，将旧的默认行为更改为与新行为(高于65000的程序ID)一致。 如果项目已上线，请确保您验证在更改后，内容的行为符合预期。
 
-目前，无法使用将blob存储中标记为私有的图像缓存在调度程序中 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans). 始终从AEM源请求图像，如果用户获得授权，则提供图像。
+现在，无法使用在Dispatcher中缓存标记为private的Blob存储中的图像 [权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans). 始终从AEM源请求图像，如果用户获得授权，则提供图像。
 
 >[!NOTE]
->其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)中，将不会成功覆盖值。
+>其他方法，包括 [dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)时，请勿成功覆盖值。
 
 ### 节点存储中的其他内容文件类型 {#other-content}
 
@@ -132,15 +132,15 @@ AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓�
 
 ### 进一步优化 {#further-optimizations}
 
-* 避免使用 `User-Agent` 作为 `Vary` 标头。 旧版本的默认Dispatcher设置（原型版本28之前）包含此项，我们建议您使用以下步骤将其删除。
+* 避免使用 `User-Agent` 作为 `Vary` 标头。 旧版本的默认Dispatcher设置（在原型版本28之前）包含它，Adobe建议您使用以下步骤将其删除。
    * 在中找到vhost文件 `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
-   * 删除或注释掉该行： `Header append Vary User-Agent env=!dont-vary` 所有vhost文件，但default.vhost除外，它是只读的
+   * 删除或注释掉该行： `Header append Vary User-Agent env=!dont-vary` 从所有vhost文件，但default.vhost只读文件除外
 * 使用 `Surrogate-Control` 标头，用于控制独立于浏览器缓存的CDN缓存
 * 考虑应用 [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) 和 [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) 用于允许后台刷新和避免缓存丢失的指令，为用户保持内容的快速刷新。
-   * 有许多方法可应用这些指令，但添加30分钟 `stale-while-revalidate` 对于所有缓存控制标头，这是一个很好的起点。
-* 下面是各种内容类型的示例，在设置自己的缓存规则时，可参考这些示例。 请仔细考虑并测试您的具体设置和要求：
+   * 有许多方法可应用这些指令，但添加30分钟即可 `stale-while-revalidate` 对于所有缓存控制标头，这是一个很好的起点。
+* 下面是各种内容类型的示例，在设置自己的缓存规则时，可参考这些示例。 请仔细考虑并测试您的特定设置和要求：
 
-   * 在12小时内缓存可变的客户端库资源并在12小时后进行后台刷新。
+   * 将可变客户端库资源缓存12小时，并在12小时后进行后台刷新。
 
      ```
      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
@@ -158,7 +158,7 @@ AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓�
      </LocationMatch>
      ```
 
-   * 在浏览器上缓存HTML页5分钟，后台刷新时间为1小时，在CDN上缓存页面为12小时。 将始终添加Cache-Control标头，因此请务必确保在/content/*下匹配的html页面为公共页面。 如果不能，请考虑使用更具体的正则表达式。
+   * 在浏览器上缓存HTML页五分钟，后台刷新一小时，在CDN上缓存12小时。 将始终添加Cache-Control标头，因此请务必确保在/content/*下匹配的html页面是公共页面。 如果不能，请考虑使用更具体的正则表达式。
 
      ```
      <LocationMatch "^/content/.*\.html$">
@@ -169,7 +169,7 @@ AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓�
      </LocationMatch>
      ```
 
-   * 在浏览器上缓存内容服务/Sling模型导出器json响应5分钟，后台刷新时间为1小时，在CDN上缓存响应时间为12小时。
+   * 将内容服务/Sling模型导出器json响应缓存五分钟，后台刷新在浏览器上持续1小时，在CDN上持续12小时。
 
      ```
      <LocationMatch "^/content/.*\.model\.json$">
@@ -188,7 +188,7 @@ AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓�
      </LocationMatch>
      ```
 
-   * 从DAM中缓存可变资源（如图像和视频）24h，并在12h后刷新后台以避免丢失
+   * 将来自DAM的可变资源（如图像和视频）缓存24小时，并在12小时后进行后台刷新以避免MISS。
 
      ```
      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
@@ -199,7 +199,7 @@ AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓�
 
 ### HEAD请求行为 {#request-behavior}
 
-在AdobeCDN上收到资源的HEAD请求时 **非** 缓存后，请求将进行转换，并作为GET请求由Dispatcher和/或AEM实例接收。 如果响应可缓存，则从CDN提供后续HEAD请求。 如果响应不可缓存，则后续HEAD请求将在一段时间内传递给Dispatcher或AEM实例，或同时传递这两者，具体时间取决于 `Cache-Control` 总计。
+在AdobeCDN上收到资源的HEAD请求时 **非** 缓存后，请求将进行转换，并作为GET请求由Dispatcher和/或AEM实例接收。 如果响应可缓存，则从CDN提供后续HEAD请求。 如果响应不可缓存，则后续HEAD请求将在一段时间内传递给Dispatcher或AEM实例，或同时这两者，具体时间取决于 `Cache-Control` 总计。
 
 ### 营销活动参数 {#marketing-parameters}
 
@@ -223,13 +223,13 @@ AEM层将根据是否已设置缓存标头以及请求类型的值来设置缓�
 与以前版本的AEM一样，发布或取消发布页面会清除Dispatcher缓存中的内容。 如果怀疑存在缓存问题，应重新发布有问题的页面，并确保有可用的虚拟主机与 `ServerAlias` Dispatcher缓存失效所需的localhost。
 
 >[!NOTE]
->为了使Dispatcher正确失效，请确保来自“127.0.0.1”、“localhost”、“.local”、“.adobeaemcloud.com”和“.adobeaemcloud.net”的请求均由vhost配置匹配和处理，以便可以提供这些请求。 为此，可以按照参考中的模式在全局vhost配置中匹配“*” [AEM原型](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) 或通过确保上述列表由其中一台主机捕获。
+>为了使Dispatcher正确失效，请确保来自“127.0.0.1”、“localhost”、“.local”、“.adobeaemcloud.com”和“.adobeaemcloud.net”的请求都通过vhost配置进行匹配和处理，以便能够为该请求提供服务。 在执行此任务时，可以按照参考中的模式在捕获所有vhost配置中全局匹配“*” [AEM原型](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost). 或者，您可以确保前面提到的列表由其中一台主机捕获。
 
-当发布实例从作者那里收到新版本的页面或资产时，它使用刷新代理使其Dispatcher上的适当路径失效。 更新后的路径及其父路径会从Dispatcher缓存中删除，最多可达到一个级别(您可以使用 [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
+当发布实例从作者那里收到新版本的页面或资产时，它使用刷新代理使其Dispatcher上的适当路径失效。 更新后的路径及其父路径会从Dispatcher缓存中删除，最多可删除一个级别(您可以使用 [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level))。
 
 ## Dispatcher缓存显式失效 {#explicit-invalidation}
 
-Adobe建议依赖标准缓存标头来控制内容交付生命周期。 但是，如果需要，可以直接使Dispatcher中的内容失效。
+Adobe建议您依赖标准缓存标头来控制内容交付生命周期。 但是，如果需要，可以直接使Dispatcher中的内容失效。
 
 以下列表包含可能希望显式使缓存失效的情景（同时可以选择侦听是否完成失效）：
 
@@ -239,7 +239,7 @@ Adobe建议依赖标准缓存标头来控制内容交付生命周期。 但是�
 有两种方法可明确使缓存失效：
 
 * 首选方法是使用Author的Sling内容分发(SCD)。
-* 使用复制API调用发布Dispatcher刷新复制代理。
+* 另一种方法是使用复制API调用发布Dispatcher刷新复制代理。
 
 这些方法在层可用性、消除重复事件的能力和事件处理保证方面有所不同。 下表总结了这些选项：
 
@@ -313,20 +313,20 @@ Adobe建议依赖标准缓存标头来控制内容交付生命周期。 但是�
   </tbody>
 </table>
 
-请注意，与缓存失效直接相关的两个操作是Sling内容分发(SCD) API失效和复制API停用。
+与缓存失效直接相关的两个操作是Sling内容分发(SCD) API失效和复制API停用。
 
-另外，从表中我们观察到：
+此外，从表中可以看到：
 
-* 当必须保证每个事件（例如，与需要准确知识的外部系统同步）时，需要SCD API。 如果在失效调用时存在发布层升级事件，则当每个新发布处理失效时，将引发一个额外事件。
+* 当必须保证每个事件（例如，与需要准确知识的外部系统同步）时，需要SCD API。 如果在失效调用时存在发布层升级事件，则当每个新发布处理失效时，会引发一个额外事件。
 
-* 使用复制API不是常见的用例，但应在使缓存失效的触发器来自发布层而不是创作层的情况下使用。 如果配置了Dispatcher TTL，这可能会很有用。
+* 使用复制API不是常见用例，但可用于使缓存失效的触发器来自发布层而不是创作层的情况。 如果配置了Dispatcher TTL，此方法可能很有用。
 
 最后，如果您希望使Dispatcher缓存失效，建议的选项是使用作者的SCD API失效操作。 此外，您还可以监听事件，以便随后触发进一步的下游操作。
 
 ### Sling内容分发(SCD) {#sling-distribution}
 
 >[!NOTE]
->使用下面提供的说明时，请注意，您应在AEM Cloud Service开发环境中测试自定义代码，而不是在本地测试。
+>使用下面提供的说明时，请在AEM Cloud Service开发环境中测试自定义代码，而不是在本地测试。
 
 使用来自作者的SCD操作时，实施模式如下：
 
@@ -454,13 +454,13 @@ The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushe
 
 ## 客户端库和版本一致性 {#content-consistency}
 
-页面由HTML、Javascript、CSS和图像组成。 我们鼓励客户使用 [客户端库(clientlibs)框架](/help/implementing/developing/introduction/clientlibs.md) 要将Javascript和CSS资源导入HTML页，请考虑JS库之间的依赖关系。
+页面由HTML、JavaScript、CSS和图像组成。 我们鼓励客户使用 [客户端库(clientlibs)框架](/help/implementing/developing/introduction/clientlibs.md) 要将JavaScript和CSS资源导入HTML页，请考虑JS库之间的依赖关系。
 
-clientlibs框架提供自动版本管理，这意味着开发人员可以在源代码管理中签入JS库的更改，并且在客户推送其版本时提供最新版本。 否则，开发人员将需要手动更改引用了新版库的HTML，如果许多HTML模板共享同一库，则更改操作会非常繁琐。
+clientlibs框架提供自动版本管理。 这意味着开发人员可以在源代码管理中签入对JS库的更改，并且在客户推送其版本时提供最新版本。 如果没有此工作流，开发人员必须手动更改HTML，并引用库的新版本，如果同一库共享许多HTML模板，则更改操作会非常繁琐。
 
-将库的新版本发布到生产环境后，会更新引用HTML页面，并包含指向这些已更新库版本的新链接。 在给定HTML页面的浏览器缓存过期后，无需担心旧库会从浏览器缓存中加载，因为现在，已刷新的页面(来自AEM)肯定会引用库的新版本。 换言之，刷新的HTML页将包含所有最新的库版本。
+将库的新版本发布到生产环境后，会更新引用HTML页面，并包含指向这些已更新库版本的新链接。 在给定HTML页的浏览器缓存过期后，无需担心旧库会从浏览器缓存中加载。 原因在于，现在，刷新页面(来自AEM)必定会引用库的新版本。 即，刷新的HTML页包含所有最新的库版本。
 
-实现此目标的机制是序列化哈希，该哈希会附加到客户端库链接中，从而确保浏览器有一个唯一的版本化URL来缓存CSS/JS。 仅当客户端库的内容更改时，才会更新序列化哈希。 这意味着，如果发生不相关的更新（即，即使使用新部署，也不会对客户端库的基础css/js进行任何更改），引用将保持不变，从而确保对浏览器缓存的中断较少。
+实现此功能的机制是一个序列化哈希，该哈希会附加到客户端库链接中。 它确保浏览器有一个唯一的版本化URL来缓存CSS/JS。 仅当客户端库的内容更改时，才会更新序列化哈希。 这意味着，如果发生不相关的更新（即不更改客户端库的基础css/js），则引用将保持不变。 反过来，它可以确保对浏览器缓存的中断较小。
 
 ### 启用客户端库的Longcache版本 — AEMas a Cloud ServiceSDK快速入门 {#enabling-longcache}
 
@@ -482,7 +482,7 @@ HTML页面上的默认clientlib包含类似于以下示例：
 
 1. 导航到OSGi配置管理器 `<host>/system/console/configMgr`
 1. 查找AdobeGraniteHTML库管理器的OSGi配置：
-   * 选中复选框以启用严格版本控制
-   * 在标记为长期客户端缓存密钥的字段中，输入/的值。*；哈希
+   * 选中复选框，以便启用严格版本控制
+   * 在标记为的字段中 **长期客户端缓存密钥**&#x200B;中，输入/的值。*；哈希
 1. 保存更改。无需在源代码管理中保存此配置，因为AEMas a Cloud Service会自动在开发、暂存和生产环境中启用此配置。
-1. 每当更改客户端库的内容时，就会生成新的哈希键并更新HTML引用。
+1. 无论何时更改客户端库的内容，都会生成新的散列密钥并更新HTML引用。
