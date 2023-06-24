@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1030'
 ht-degree: 10%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 10%
 * 键 [Adobe文件格式](#adobe-formats) 由Adobe应用程序和服务生成，包括 [!DNL Adobe Photoshop]， [!DNL Adobe InDesign]， [!DNL Adobe Illustrator]， [!DNL Adobe XD]， [!DNL Adobe Dimension]、和 [!DNL Adobe Acrobat] 或PDF。
 * 键 [图像文件格式](#image-formats).
 * [Camera Raw文件格式](#camera-raw-formats) 适用于各种相机，包括佳能、尼康、富士胶片、奥林巴斯和其他厂商(由Adobe Camera Raw提供支持)。
-* 公共 [文档格式](#document-formats)，包括Microsoft Office和Open Document格式。
+* 公共 [文档格式](#document-formats)，包括Microsoft®Office和Open Document格式。
 * 各种[视频](#video-formats)和[音频](#audio-formats)格式.
 
 以下图例描述了每种格式的支持级别。
@@ -41,6 +41,7 @@ ht-degree: 10%
 | 人工智能 | ✓ | - | ✓ | ✓ |
 | 拼贴 | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
+| SBSAR | ✓ | - | ✓ | ✓ |
 | 构思 | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -50,7 +51,7 @@ ht-degree: 10%
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\*表示 [!DNL Adobe InDesign] 文件(INDD)，格式副本的大小由嵌入到INDD文件中的预览决定。 在中配置首选项 [!DNL InDesign] (**[!UICONTROL 首选项>文件处理>始终保存预览图像和文档，预览大小]**)以嵌入更大的演绎版。
+\*表示 [!DNL Adobe InDesign] 文件(INDD)，格式副本的大小由嵌入到INDD文件中的预览决定。 在中配置首选项 [!DNL InDesign] (**[!UICONTROL 首选项>文件处理>始终保存预览图像和文档，预览大小]**)以便嵌入更大的演绎版。
 
 ## 图像格式 {#image-formats}
 
@@ -63,7 +64,7 @@ ht-degree: 10%
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | RGB | ✓ | ✓ | ✓ | ✓ |
 | RGBA | ✓ | ✓ | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
+| SGI™ | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 | WebP | ✓ | ✓ | ✓ | ✓ |
@@ -77,13 +78,16 @@ ht-degree: 10%
 | 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| 对象 | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| 对象 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| 美元z | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| 美元z | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## [!DNL Camera RAW] 格式 {#camera-raw-formats}
+## [!DNL Camera Raw] 格式 {#camera-raw-formats}
 
 | 文件格式 | 缩略图生成 | 元数据提取 | 宽度/高度 |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -181,20 +185,20 @@ ht-degree: 10%
 * Windows Media Video (WMV)/ASF (.wmv、.asf)
 * AVI（未压缩8位/10位） (.avi)
 * MP4 (.mp4、.m4a、.m4v)
-* Microsoft数字视频录制(DVR-MS) (.dvr-ms)
+* Microsoft®数字视频录制(DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## 提示和限制 {#limitations-and-tips}
 
-* 目前，元数据提取的文件大小限制约为15 GB。 上传非常大的资产时，有时元数据提取操作失败。
+* 目前，元数据提取的文件大小限制约为15 GB。 上传大型资产时，有时元数据提取操作失败。
 
 ## Dynamic Media — 支持的用于转码的输入视频格式 {#video-dynamic-media-transcoding}
 
 | 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
 | --- | --- | --- | --- |
-| AVI | A/V交错 | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V交错 | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft®视频1 (MS-CRAM) |
 | FLV、F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
@@ -202,9 +206,9 @@ ht-degree: 10%
 | MP4 | MPEG-4 | H264/AVC（所有配置文件） | − |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | − |
 | MXF ‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | − |
-| OGV， OGG | Ogg | 狄拉克副总裁Theora | − |
+| OGV， OGG | OGG | 狄拉克副总裁Theora | − |
 | WebM | WebM | Google VP8 | − |
-| WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting (G2M2、G2M3、G2M4) | Microsoft屏幕(MSS2)、Microsoft照片故事(WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting (G2M2、G2M3、G2M4) | Microsoft®屏幕(MSS2)、Microsoft®照片故事(WVP2) |
 
 ‡尚不支持将此视频格式用于Dynamic Media中的交互式视频，也不支持将其用于Experience Manager Assets中的注释。
 
@@ -253,9 +257,9 @@ ht-degree: 10%
 | 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
 |---|---|---|---|
 | GLB | 二进制GL传输 | model/gltf-binary | 将材料和纹理作为单个资产包含在内。 |
-| 对象 | WaveFront 3D对象文件 | application/x-tgif |  |
-| STL | 立体光刻 | application/vnd.ms-pki.stl |  |
-| USDZ | 通用场景描述Zip存档 | model/vnd.usdz+zip | *仅支持摄取；不可查看或交互。* USDZ是一种专有的3D格式，可供Safari或iOS本机查看。 |
+| 对象 | WaveFront 3D对象文件 | application/x-tgif | |
+| STL | 立体光刻 | application/vnd.ms-pki.stl | |
+| USDZ | 通用场景描述Zip存档 | model/vnd.usdz+zip | *支持摄取和缩略图生成；尚不支持3D预览。* USDZ是一种3D格式，可供Safari或iOS本机查看。 |
 
 **另请参阅**
 
@@ -275,4 +279,3 @@ ht-degree: 10%
 >
 >* [使用资源微服务处理资源](asset-microservices-overview.md)
 >* [基于文本的资源智能标记支持的文件格式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
-

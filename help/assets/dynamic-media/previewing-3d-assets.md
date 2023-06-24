@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 10%
+source-wordcount: '631'
+ht-degree: 6%
 
 ---
 
@@ -19,15 +19,27 @@ ht-degree: 10%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=zh-Hans) |
 | AEM as a Cloud Service | 本文 |
 
-Experience Manager支持在创作过程中上传、交付和以交互方式预览3D资源。
+Experience Manager Assets支持3D资源的摄取、管理、预览和交付。
 
-交互式3D查看器可在Experience Manager的资源详细信息页面中找到。 该查看器提供了各种控件，其中包括一组交互式相机控件，可让您对 3D 资产执行绕行、缩放和平移操作。
+您可以使用自动生成的缩略图演绎版或交互式3D查看器预览3D资产。 交互式3D查看器可在Experience Manager的资源详细信息页面中找到。 该查看器包括一系列交互式相机控件，可让您围绕3D场景旋转、缩放和平移。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Experience Manager中支持的3D预览格式{#supported-3d-previewing-assets}
+## Experience Manager中缩略图预览支持的格式{#supported-thumbnail-previewing-assets}
 
-Experience Manager中的交互式3D预览支持以下文件格式：
+默认情况下，Experience Manager会为以下文件格式生成缩略图：
+
+| 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
+|---|---|---|---|
+| GLB | 二进制GL传输 | model/gltf-binary |  |
+| FBX | Autodesk FBX | application/octet-stream |  |
+| 对象 | WaveFront 3D对象文件 | application/x-tgif |  |
+| 3DS | 3D Studio模型 | application/x-3ds |  |
+| 美元z | 通用场景描述 | model/vnd.usdz+zip |  |
+
+## Experience Manager中交互式3D预览支持的格式{#supported-3d-previewing-assets}
+
+Experience Manager本身支持以下文件格式的“交互式3D预览”：
 
 | 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
 |---|---|---|---|
@@ -35,8 +47,7 @@ Experience Manager中的交互式3D预览支持以下文件格式：
 | GLTF | GL传输格式 | model/gltf+json | 请参阅 **注释** 下面的。 |
 | 对象 | WaveFront 3D对象文件 | application/x-tgif |  |
 | STL | 立体光刻 | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | 仅支持摄取；预览不可用。 |
-| USDZ | 通用场景描述Zip存档 | model/vnd.usdz+zip | 仅支持摄取；预览不可用。 |
+
 
 >[!NOTE]
 >
@@ -80,7 +91,7 @@ Experience Manager中的交互式3D预览支持以下文件格式：
    | **平移相机** | 向左、向右、向上或向下平移视图。 | 右键单击+拖动。 | 两指按下+拖动。 |
    | **缩放相机** | 移入和移出3D场景区域。 | 滚轮。 | 两指捏合。 |
    | **重新居中相机** | 将相机重新居中到3D场景中对象上的某个点。 | 双击。 | 双击。 |
-   | **重置** | 在页面的右下角附近，选择“重置”图标以将视图目标点恢复到3D资产的中心。 重置也会将相机移近或移远一点，以便以合理的查看大小完整地显示资产。 |  |  |
-   | **全屏模式** | 要进入全屏模式，请在页面的右下角选择全屏图标。 |  |  |
+   | **重置** | 在页面的右下角附近，选择“重置”图标以将视图目标点恢复到3D资产的中心。 重置也会将相机移近或移远一点，以便以合理的查看大小完整地显示资产。 |   |   |
+   | **全屏模式** | 要进入全屏模式，请在页面的右下角选择全屏图标。 |   |   |
 
 1. 完成后，在页面的右上角附近，选择 **[!UICONTROL 关闭]**.
