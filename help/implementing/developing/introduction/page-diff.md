@@ -2,9 +2,9 @@
 title: 开发和页面差异
 description: 了解页面差异功能的工作方式以及它如何影响开发人员
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '333'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 ## 操作详细信息 {#operation-details}
 
-在比较页面的版本时，用户要比较的先前版本由AEM在后台重新创建，以促进差异。 需要此项才能渲染内容 [用于并排比较](/help/sites-cloud/authoring/features/page-diff.md).
+在比较页面的版本时，用户要比较的先前版本由AEM在后台重新创建，以促进差异。 呈现内容时需要此以前的版本 [用于并排比较](/help/sites-cloud/authoring/features/page-diff.md).
 
-此娱乐操作由AEM在内部完成，对用户是透明的，无需干预。 但是，查看存储库（例如，在CRX DE Lite中）的管理员将在内容结构中看到这些重新创建的版本。
+此娱乐操作由AEM在内部完成，对用户是透明的，无需干预。 但是，查看存储库的管理员(例如CRXDE Lite中的管理员)会在内容结构中看到这些重新创建的版本。
 
 比较内容时，将在以下位置重新创建截至要比较的页面的整个树：
 
@@ -31,9 +31,9 @@ ht-degree: 1%
 
 ## 限制 {#limitations}
 
-差异发生在客户端，通过DOM比较，使差异过程变得简单，但开发人员需要考虑许多限制。
+差异发生在客户端，通过DOM比较，使得差异过程变得简单。 但是，开发人员必须考虑以下几个限制。
 
-* 此功能使用的CSS类与AEM产品没有命名空间。 如果页面上包含其他具有相同名称的自定义CSS类或第三方CSS类，则差异的显示可能会受到影响。
+* 此功能使用的CSS类没有命名空间到AEM产品。 如果页面上包含其他具有相同名称的自定义CSS类或第三方CSS类，则差异的显示可能会受到影响。
 
    * `html-added`
    * `html-removed`
@@ -42,8 +42,8 @@ ht-degree: 1%
    * `cq-component-moved`
    * `cq-component-changed`
 
-* 由于diff是客户端的，并在页面加载时执行，因此不会考虑在客户端差异服务运行后对DOM所做的任何调整。 这可能会影响
+* 由于diff是客户端的，并在页面加载时运行，因此不会考虑在客户端差异服务运行后对DOM进行的任何调整。 此过程可能会影响以下内容：
 
    * 使用AJAX包含内容的组件
    * 单页面应用程序
-   * 基于Javascript的组件，可在用户交互时处理DOM。
+   * 基于JavaScript的组件，可在用户交互时处理DOM。

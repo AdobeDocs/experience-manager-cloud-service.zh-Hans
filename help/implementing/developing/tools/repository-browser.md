@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: 存储库浏览器为创作、发布和预览层上的所有环境提供对存储库的只读视图。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '844'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 2%
 * 用户必须具有 **Cloud Manager — 开发人员** Admin Console中用于查看创作实例和发布实例的角色。
 * 此外，对于作者，具有AEM用户产品配置文件的用户能够以最低的读取访问权限查看存储库浏览器；浏览存储库时用户的权限受到尊重。 具有AEM管理员产品配置文件的用户可以使用完全读取权限查看存储库浏览器。
 
-有关设置用户权限的更多信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+有关设置用户权限的更多信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### 启动存储库浏览器 {#launching-the-repository-browser}
 
@@ -56,25 +56,25 @@ ht-degree: 2%
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. 通过单击 **打开存储库浏览器** 链接更靠下方。 这将启动与选定层的代表性实例(pod)对应的浏览器。 这将启动与选定层的代表性实例(pod)对应的浏览器。 请注意，您无法控制已启动层的特定面板。
+1. 通过单击 **打开存储库浏览器** 链接更靠下方。 启动与选定层的代表性实例(pod)对应的浏览器。 您无法控制已启动层的特定面板。
 
 ## 功能 {#features}
 
 ### 在层次结构中定位 {#navigate-the-hierarchy}
 
-您可以使用左侧导航窗格来导航内容层次结构。 单击每个文件夹或节点将显示其子项。 文件夹结构反映了Sling资源树，它是JCR节点树的超集。
+您可以使用左侧导航窗格在内容层次结构中导航。 单击每个文件夹或节点会显示其子项。 文件夹结构反映了Sling资源树，它是JCR节点树的超集。
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-或者，您也可以通过在以下位置输入路径来直接导航到该路径： **路径** 字段，如下所示。 这还将扩展其在左侧内容层次结构视图中的位置。
+或者，您也可以通过在以下位置输入路径来直接导航到该路径： **路径** 字段，如下所示。 此路径还会扩展其在左侧内容层次结构视图中的位置。
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-每当您单击左侧的文件夹时，“路径”字段都会自动填充其位置。 这可用于复制和粘贴值以供以后使用。
+单击左侧的文件夹时，“路径”字段会自动填充其位置。 此功能对于复制和粘贴值以供以后使用很有用。
 
-此外，单击文件夹时，URL会动态修改以包含该文件夹的路径。 这允许使用可书签的URL。
+此外，单击文件夹时，URL会被动态修改以包含该文件夹的路径。 此功能允许使用可书签的URL。
 
-对于发布，默认情况下，存储库浏览器将仅显示公共内容，因此某些文件夹 `/conf` 或 `/home` 将不可见。
+默认情况下，对于发布，存储库浏览器仅显示公共内容，因此某些文件夹 `/conf` 或 `/home` 不可见。
 
 要使这些位置可见，请执行以下操作。
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. 为发布管理员创建新的产品配置文件。 在以下示例中，将其称为 **开发 — AEM管理员发布**
+1. 为发布管理员创建产品配置文件。 在以下示例中，将其称为 **开发 — AEM管理员发布**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -95,7 +95,7 @@ ht-degree: 2%
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
 1. 等待几分钟，然后打开 **AEM创作** 控制台
-1. 将对应于新产品配置文件的组添加为管理员组的成员。 您可以通过单击 **工具 — 安全 — 作者群组**，然后单击 **管理员** 组。 然后，添加该组，如下所示
+1. 通过单击，将与新产品配置文件对应的组添加为管理员组的成员 **工具 — 安全 — 作者群组**，然后单击 **管理员** 组。 然后，添加该组，如下所示
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. 作为良好的安全实践，请删除新的 **开发 — AEM管理员发布** 上的管理员组中的组 **作者** 所以新组织是孤立的
+1. 作为良好的安全实践，请删除新的 **开发 — AEM管理员发布** 组（位于上） **作者** 所以新组织是孤立的
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
@@ -111,17 +111,17 @@ ht-degree: 2%
 
 ### 查看JCR属性 {#view-jcr-properties}
 
-单击节点将在导航浏览器的右侧窗格中显示其JCR属性。 以下示例适用于 `experience-fragments` 节点。
+单击某个节点会在导航浏览器的右侧窗格中显示其JCR属性。 以下示例适用于 `experience-fragments` 节点。
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
 ### 查看内容 {#view-content}
 
-您可以通过单击导航窗格中的资源，使用存储库浏览器查看内容。 这将在浏览器右侧的选项卡下打开预览，该选项卡以相应资源命名。
+您可以使用存储库浏览器查看内容。 单击导航窗格中的资源，以便在浏览器右侧的以相应资源命名的选项卡下打开预览。
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
-预览当前可用于以下列表中的图像类型：
+预览适用于以下图像类型：
 
 * apng
 * avif

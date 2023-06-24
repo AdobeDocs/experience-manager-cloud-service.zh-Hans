@@ -6,10 +6,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 3%
+source-wordcount: '546'
+ht-degree: 4%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 3%
 
 `localhost:4503/content/we-retail/en/products.html`
 
-访问方式：
+要使用访问：
 
 `localhost:4503/we-retail/en/products.html`
 
-因为映射将自动添加前缀 `/content` 到 `/we-retail/en/products.html`.
+由于映射会自动添加前缀 `/content` 到 `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->请参阅Sling文档，以及 [资源解析的映射](https://sling.apache.org/site/resources.html) 和 [资源](https://sling.apache.org/site/mappings-for-resource-resolution.html) 以进一步了解。
+>请参阅Sling文档，以及 [资源解析的映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 和 [资源](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 以进一步了解。
 
 ## 查看映射定义 {#viewing-mapping-definitions}
 
@@ -56,7 +56,7 @@ ResourceResolver.resolve方法用于将URL映射到资源的条目列表。
 * **映射映射条目**
 ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
 
-这两个列表显示了各种条目，包括由应用程序定义为默认值的条目。 这些规则通常旨在简化用户的URL。
+这两个列表显示了各种条目，包括由应用产品定义为默认值的条目。 这些条目通常旨在简化用户的URL。
 
 列表对 **图案**，与请求匹配的正则表达式，带有 **替换** 这定义了要强制执行的重定向。
 
@@ -64,15 +64,15 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
 
 **图案** `^[^/]+/[^/]+/welcome$`
 
-将触发：
+触发：
 
 **替换** `/libs/cq/core/content/welcome.html`.
 
-要重定向请求：
+要重定向请求，请执行以下操作：
 
 `https://localhost:4503/welcome` ``
 
-到:
+收件人:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -80,7 +80,7 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
 
 >[!NOTE]
 >
->有许多资源可帮助解释如何定义正则表达式；例如 [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>有许多资源可帮助解释如何定义正则表达式。 例如， [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### 在AEM中创建映射定义 {#creating-mapping-definitions-in-aem}
 
@@ -88,7 +88,7 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
 
 `/etc/map/http`
 
-这是为HTTP协议定义映射时使用的结构。 其他文件夹( `sling:Folder`)可以在下创建 `/etc/map` 任何其他要映射的协议。
+此文件夹是在为HTTP协议定义映射时使用的结构。 其他文件夹( `sling:Folder`)可以在下创建 `/etc/map` 任何其他要映射的协议。
 
 #### 配置到/content的内部重定向 {#configuring-an-internal-redirect-to-content}
 
@@ -96,7 +96,7 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
 
 1. 使用CRXDE导航到 `/etc/map/http`.
 
-1. 创建新节点：
+1. 创建节点：
 
    * **类型** `sling:Mapping`
 此节点类型适用于此类映射，不过其用法不是强制性的。
@@ -111,26 +111,26 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
       * **类型** `String`
 
       * **值** `localhost.4503/`
+
    * **名称** `sling:internalRedirect`
 
       * **类型** `String`
 
       * **值** `/content/`
 
-
 1. 单击 **全部保存**.
 
-这将处理如下请求：
+此映射处理请求，例如：
 `localhost:4503/geometrixx/en/products.html`
 就好象：
 `localhost:4503/content/geometrixx/en/products.html`
-已被请求。
+已请求。
 
 >[!NOTE]
 >
->参见 [资源](https://sling.apache.org/site/mappings-for-resource-resolution.html) 有关sling可用属性及其配置方式的更多信息，请参阅Sling文档。
->例如， [字符串插值](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) 非常有用，因为它允许配置通过环境变量获取每个环境值的映射。
+>参见 [资源](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 有关sling可用属性及其配置方式的更多信息，请参阅Sling文档。
+>例如， [字符串插值](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) 非常有用，因为它允许您配置通过环境变量获取每个环境值的映射。
 
 >[!NOTE]
 >
->您可以使用 `/etc/map.publish` 保存发布环境的配置。 然后必须复制这些文件，并且新位置( `/etc/map.publish`)配置的 **映射位置** 的 [Apache Sling资源解析程序](/help/overview/seo-and-url-management.md#etc-map) 发布环境的。
+>您可以使用 `/etc/map.publish` 保存发布环境的配置。 必须复制这些配置，并且新位置( `/etc/map.publish`)配置的 **映射位置** 的 [Apache Sling资源解析程序](/help/overview/seo-and-url-management.md#etc-map) 发布环境的。
