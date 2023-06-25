@@ -2,10 +2,10 @@
 title: 如何使用 Headless 应用程序上线
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何通过在 Git 中获取本地代码并将其移动到 CI/CD 管道的 Cloud Manager Git 来实时部署 Headless 应用程序。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 96%
+source-wordcount: '1065'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 96%
 
 * 避免创建输出超过 15kb JSON（以 gzip 格式压缩）的查询。长 JSON 文件是客户端应用程序要分析的资源密集型文件。
 * 避免超过五个嵌套级别的片段层级。其他级别会使内容作者难以考虑其更改产生的影响。
-* 使用多对象查询而不是在模型中使用依赖项层级对查询进行建模。这将带来更长期的灵活性以便重构 JSON 输出，而无需进行大量内容更改。
+* 使用多对象查询而不是在模型中使用依赖项层级对查询进行建模。这允许具有更大的长期灵活性，无需更改许多内容，即可重新构建JSON输出。
 
 ## 最大程度地提高 CDN 缓存命中率 {#maximize-cdn}
 

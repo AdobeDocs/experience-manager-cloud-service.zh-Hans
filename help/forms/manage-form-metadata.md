@@ -4,7 +4,7 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: 元数据允许更轻松地分类和组织资源，并帮助正在查找特定资源的用户。
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1658'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 [!DNL AEM Forms]默认情况下，会为每个资源类型提供一组定义的元数据。 除了默认元数据之外，您还可以将自定义元数据添加到每个资源类型。 [!DNL AEM Forms] 还为您提供了正确的方法，以便有效地为表单创建、管理和交换所有这些元数据。
 
-<!-- If you're a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you're using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
+<!-- If you are a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you are using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
 ## [!DNL AEM Forms] 中的元数据 {#metadata-in-aem-forms}
 

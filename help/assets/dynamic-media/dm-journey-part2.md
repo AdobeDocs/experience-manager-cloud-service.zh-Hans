@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2875'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ _“我真的很想拍这张照片，好让大手指4个，小手指1个，好�
 ![主要文件方法](/help/assets/dynamic-media/assets/dm-onefile.png)
 _最佳：一个文件，其中包含使用图像预设即时创建的多个演绎版，例如 `Search_Grid` 和 `Thumbnail`._
 
-| **为何使用图像预设？** |  |
+| **为何使用图像预设？** | |
 |---|---|
 | 标准 | 图像预设对由其请求的任何图像强制执行标准图像处理处理。 |
 | 变更管理 | 如果必须更改图像处理，则只需编辑现有图像预设的参数即可。 更新的定义会自动传播到所有请求。 |
@@ -199,7 +199,7 @@ _此 `Running` 应用了弹出查看器的图像集。_
 
 当你考虑作为消费者生活时，或者当你从事日常工作时，当你访问不同的网站时，你会看到类似这样的事情。 思考如何做到这一点，以及如何在您自己的工作和您公司的网站上使用Dynamic Media的强大功能。
 
-你只需要读一点关于影像集和观众的知识。 让我们看一下其他几个查看者，并在单个资产上尝试它们。 要重置查看器，请单击 **[!UICONTROL 刷新]** 按钮。
+您刚刚读到了图像集和查看器。 让我们看一下其他几个查看者，并在单个资产上尝试它们。 要重置查看器，请单击 **[!UICONTROL 刷新]** 按钮。
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

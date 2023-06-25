@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3496'
 ht-degree: 16%
 
 ---
@@ -208,7 +208,7 @@ AdobeAsset Link对此用例提供了良好的支持：
 * 此外，由于资产位于Creative Cloud帐户中，因此该资产也可在用户可能拥有的其他设备上使用(例如，可以在专用的Creative Cloud移动设备应用程序中打开或编辑该资产)，并可与其他Creative Cloud用户共享以用于协作目的。
 * 当创意用户完成更改后，他们可以在其Creative Cloud应用程序中对该文件执行签入操作，并带有可选注释。 Experience Manager中的相应资源将进行版本控制，并使用新二进制文件更新为。 Experience Manager用户（如营销人员或LOB用户）可以通过Experience Manager资源时间线UI访问主要资源更改或里程碑。
 
-Experience Manager桌面应用程序为在本机应用程序中打开的资产提供网络共享。 默认情况下，在本地完成的所有更改都会在短时间内自动上传到Experience Manager。 有了这样的配置，工作进行阶段频繁进行的保存操作都将上载到Experience Manager并进行版本控制，从而带来大量网络流量和潜在的可扩展性难题，更不用说Experience Manager中的不必要版本了。
+Experience Manager桌面应用程序为在本机应用程序中打开的资产提供网络共享。 默认情况下，在本地完成的所有更改都会在短时间内自动上传到Experience Manager。 通过这样的配置，在工作阶段频繁进行的保存操作都将上载到Experience Manager并进行版本控制，从而产生大量网络流量和潜在的可扩展性难题，更不用说Experience Manager中的不必要版本了。
 
 此处推荐的方法是，使用Experience Manager桌面应用程序中的选项来关闭自动更新，并利用应用程序的资源状态UI中的上传更改操作将更改上传到资源以手动Experience Manager。
 

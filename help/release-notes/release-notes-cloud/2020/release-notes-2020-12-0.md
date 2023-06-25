@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 版的发行说明。'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 20%
+source-wordcount: '691'
+ht-degree: 17%
 
 ---
 
@@ -48,9 +48,9 @@ AEM as a Cloud Service 2020.12.0 中的 Cloud Manager 的发布日期是 2020 �
 
 ### [!DNL Cloud Manager] 的新增功能 {#what-is-new-cm}
 
-* [SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)和[自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)的自助管理。
+* 自助服务管理 [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 和 [自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* [IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)自助管理。
+* 自助服务管理 [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * 更新后的&#x200B;**环境**&#x200B;详细信息页面现在允许用户管理其环境中的自定义域名和 IP 允许列表。
 

@@ -2,7 +2,7 @@
 title: 查询生成器 API
 description: 资产共享查询生成器的功能通过Java API和REST API公开。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 0%

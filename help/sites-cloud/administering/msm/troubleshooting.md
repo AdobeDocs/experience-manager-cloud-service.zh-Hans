@@ -4,10 +4,10 @@ description: 了解如何解决与 MSM 相关的最常见问题并获得这些�
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 88%
+source-wordcount: '763'
+ht-degree: 87%
 
 ---
 
@@ -61,7 +61,7 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 ## 常见问题 {#faq}
 
-以下是与 MSM 和 Live Copy 相关的一些常见问题。
+以下是与MSM和Live Copy相关的一些常见问题。
 
 ### 为什么一些属性（例如标题、注释）在 MSM 转出期间未更新？ {#missing-properties}
 

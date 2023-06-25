@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2463'
 ht-degree: 6%
 
 ---
@@ -51,8 +51,8 @@ ht-degree: 6%
 | image/x-portable-graymap | SRT |  |
 | image/x-portable-pixmap | TXT |  |
 | image/x-rgb | VTT |  |
-| image/x-xbitmap |  |  |
-| image/x-xpixmap |  |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -82,7 +82,7 @@ ht-degree: 6%
 
 ![示例图像，用于说明培训准则](assets/do-not-localize/coherence.png)
 
-**覆盖率**：训练中的图像应具有足够的多样性。 我们的想法是，提供一些合理多样化的示例，以便 [!DNL Experience Manager] 学习如何专注于正确的事情。 如果您要在视觉上不同的图像上应用相同的标记，请至少包含每种类型的五个示例。 例如，对于标记 *模型向下姿态*，包含更多与下面高亮显示的图像类似的训练图像，以便该服务在标记期间更准确地识别相似图像。
+**覆盖率**：训练中的图像应具有足够的多样性。 我们的想法是，提供一些合理多样化的示例，以便 [!DNL Experience Manager] 学习如何专注于正确的事情。 如果您要在视觉上不同的图像上应用相同的标记，则请至少包含每种类型的五个示例。 例如，对于标记 *模型向下姿态*，包含更多与下面高亮显示的图像类似的训练图像，以便该服务在标记期间更准确地识别相似图像。
 
 ![示例图像，用于说明培训准则](assets/do-not-localize/coverage_1.png)
 
@@ -277,4 +277,3 @@ ht-degree: 6%
 >
 >* [了解智能标记如何帮助您管理数字文件](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [对视频使用智能标记](smart-tags-video-assets.md)
-

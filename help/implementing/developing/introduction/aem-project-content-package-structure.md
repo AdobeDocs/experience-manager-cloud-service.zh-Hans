@@ -2,7 +2,7 @@
 title: AEM 项目结构
 description: 了解如何定义包结构以部署到Adobe Experience ManagerCloud Service。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 12%

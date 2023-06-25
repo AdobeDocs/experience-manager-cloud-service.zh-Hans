@@ -2,7 +2,7 @@
 title: ContextHub Javascript API参考
 description: 将ContextHub组件添加到页面后，ContextHub Javascript API将可用于您的脚本
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 2%
@@ -347,7 +347,7 @@ A `string` 表示引用的键的值。 如果未解析任何引用，则其值 `
 
 向存储中添加一个键/值对。
 
-触发 `data` 仅当键的值不同于当前为键存储的值时才会发生事件。 您可以选择防止触发 `data` 事件。
+触发 `data` 仅当键的值不同于当前为键存储的值时，才会发生事件。 您可以选择防止触发 `data` 事件。
 
 事件数据包括存储名称、键、上一个值、新值和操作类型 `set`.
 

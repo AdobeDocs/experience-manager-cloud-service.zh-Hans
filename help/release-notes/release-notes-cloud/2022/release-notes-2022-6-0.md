@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 95%
+source-wordcount: '638'
+ht-degree: 87%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 95%
 
 * 新的[用户界面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在可供内容管理员和内容作者有效管理（执行发布、取消发布、复制、移动等操作）、搜索/过滤内容片段，并为 Headless 用例创建内容片段。
 
-   ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
+  ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
 
 * 新[目录组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html)不仅可以与核心组件配合使用，还可与所有组件配合使用，以在内容页面上自动呈现目录。 而且，由于它呈现在服务器端并由调度程序完全缓存，因此也可以有效地加载。
 
@@ -47,7 +47,7 @@ ht-degree: 95%
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用](/help/assets/color-tag-images.md)。 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记为图像的颜色数量（在 1 到 40 之间），以便以后可以根据这些颜色搜索图像。
+Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用](/help/assets/color-tag-images.md)。 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记到图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -57,7 +57,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中�
 
 * **创建自适应表单的向导**：您可以使用商业用户友好向导快速创作自适应表单。 该向导提供了快速的选项卡导航，以便轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
-   ![创建自适应表单的向导](/help/release-notes/assets/wizard.png)
+  ![创建自适应表单的向导](/help/release-notes/assets/wizard.png)
 
 ## CIF 加载项 {#cloud-services-cif}
 
@@ -94,7 +94,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中�
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 如 5 月 (2022.5.0) 发行说明中所述，复制代理管理屏幕的&#x200B;**分发**&#x200B;选项卡下的“添加树”选项已被删除。 应该使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)工作流来复制具有内容树层次结构的包。
+* 如5月(2022.5.0)发行说明中所述，复制代理管理屏幕中的 **分发** 选项卡已被删除。 应该使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)工作流来复制具有内容树层次结构的包。
 
 ## Cloud Manager {#cloud-manager}
 

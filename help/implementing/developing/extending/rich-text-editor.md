@@ -3,9 +3,9 @@ title: 配置富文本编辑器以在中创作内容 [!DNL Adobe Experience Mana
 description: 配置富文本编辑器以在中创作内容 [!DNL Adobe Experience Manager] as a Cloud Service。
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1875'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ RTE的基本功能由的值激活或停用 `features` 属性的特定于相应�
 | 图像 | `image` | 基本图像支持（从内容或内容查找器拖动）。 根据浏览器的不同，对作者的支持有不同的行为 |
 | 键 | - | 要定义此值，请参阅 [制表符大小](configure-rich-text-editor-plug-ins.md#tabsize). |
 | 两端对齐 | `justifyleft`、`justifycenter`、`justifyright` | 段落对齐方式。 |
-| 链接 | `modifylink`、`unlink`、`anchor` | [超链接和锚点](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| links | `modifylink`、`unlink`、`anchor` | [超链接和锚点](configure-rich-text-editor-plug-ins.md#linkstyles). |
 | 列表 | `ordered`, `unordered`, `indent`, `outdent` | 此插件会同时控制两者 [缩进和列表](configure-rich-text-editor-plug-ins.md#indentmargin)；包括嵌套列表。 |
 | misctools | `specialchars`、`sourceedit` | 其他工具允许作者输入 [特殊字符](configure-rich-text-editor-plug-ins.md#spchar) 或编辑HTML源。 此外，您还可以添加 [特殊字符的范围](configure-rich-text-editor-plug-ins.md#definerangechar) 如果您想要定义自己的列表。 |
 | 参数格式 | `paraformat` | 默认段落格式为段落、标题1、标题2和标题3 (`<p>`， `<h1>`， `<h2>`、和 `<h3>`)。 您可以 [添加更多段落格式](configure-rich-text-editor-plug-ins.md#paraformats) 或者扩展列表。 |
@@ -128,7 +128,7 @@ RTE的基本功能由的值激活或停用 `features` 属性的特定于相应�
 >不要将节点命名为 `cq:inplaceEditing` 作为 `config`. 日期 `cq:inplaceEditing` 节点，定义以下属性：
 >
 >* **名称**: `configPath`
->* **类型**: `String`
+>* **类型**： `String`
 >* **值**：包含实际配置的节点的路径
 >
 >不要将RTE配置节点命名为 `config`. 否则，RTE配置将仅对管理员生效，而不对组中的用户生效 `content-author`.
@@ -282,4 +282,3 @@ RTE中的可用选项会从用户界面配置下游流向内容策略。
 >* [配置RTE插件](configure-rich-text-editor-plug-ins.md)
 >* [使用富文本编辑器进行创作](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [为可访问的站点配置RTE](rte-accessible-content.md)
-

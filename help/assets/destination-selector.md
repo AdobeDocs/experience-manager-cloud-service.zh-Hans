@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 的目标选择器
 description: 使用 AEM 目标选择器显示和选择可用作原始资源副本的资源。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
-workflow-type: ht
-source-wordcount: '1907'
-ht-degree: 100%
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+workflow-type: tm+mt
+source-wordcount: '1909'
+ht-degree: 95%
 
 ---
 
@@ -144,7 +144,7 @@ interface SelectedDestination {
 
 此示例说明如何在 Unified Shell 下运行 [!DNL Adobe] 应用程序时或在您已生成用于身份验证的 `imsToken` 时，将目标选择器与非 SUSI 流结合使用。
 
-在您的代码中使用 `script` 标记引入目标选择器包，如以下示例中的&#x200B;_第 6 行至第 15 行_&#x200B;中所示。加载该脚本后，`PureJSSelectors` 全局变量将可供使用。定义目标选择器[属性](#destination-selector-properties)，如&#x200B;_第 16 行至第 23 行_&#x200B;中所示。`imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现目标选择器，请调用 `renderDestinationSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。目标选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
+使用以下工具在您的代码中包含目标选择器包 `script` 标记，如中所示 _第6-15行_ 下面示例中的。 加载脚本后， `PureJSSelectors` 全局变量可供使用。 定义目标选择器 [属性](#destination-selector-properties) 如所示 _第16-23行_. `imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现目标选择器，请调用 `renderDestinationSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。目标选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
 
 通过执行这些步骤，您可以在 [!DNL Adobe] 应用程序中将目标选择器用于非 SUSI 流。
 
@@ -185,9 +185,9 @@ interface SelectedDestination {
 
 | 属性 | 类型 | 必需 | 默认 | 描述 |
 |---|---|---|---|---|
-| *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。需要 `imsOrg` 密钥来验证您所访问的组织是否在 Adobe IMS 下。 |
-| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用的是 SUSI 流，则不需要 `imsToken`。但是，如果您使用的是非 SUSI 流，则需要。 |
-| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用的是 SUSI 流，则不需要 `apiKey`。但是，它在非 SUSI 流程中是必需的。 |
+| *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。此 `imsOrg` 需要密钥来验证您访问的组织是否处于Adobe IMS下。 |
+| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。`imsToken` 如果您使用的是SUSI流，则不是必需的。 但是，如果您使用的是非SUSI流，则需要使用此参数。 |
+| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。`apiKey` 如果您使用的是SUSI流，则不是必需的。 但是，它在非 SUSI 流程中是必需的。 |
 | *rootPath* | 字符串 | 否 | /content/dam/ | 目标选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径 `/content/dam/marketing/subfolder/`，目标选择器不允许您遍历任何父文件夹，而只显示子文件夹。 |
 | *hasMore* | 布尔型 | 否 | | 当应用程序有更多内容要显示时，您可以使用此属性添加加载器，并加载内容以使其在应用程序中可见。它是一个表示内容加载正在进行的指示器。 |
 | *orgName* | 布尔型 | 否 | | 它是与 AEM 关联的组织名称（可能是 orgID） |

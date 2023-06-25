@@ -2,7 +2,7 @@
 title: as a Cloud Service在Screens中创建和管理渠道
 description: 本页介绍如何在Screens中以as a Cloud Service方式创建和管理渠道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -84,8 +84,8 @@ ht-degree: 1%
 
 | 可用模板 | 描述 |
 |--- |--- |
-| 渠道文件夹 | 允许创建用于存储渠道集合的文件夹。 |
-| 序列渠道 | 允许创建一个按顺序播放组件的渠道（在幻灯片中逐一播放）。 |
+| 渠道文件夹 | 允许您创建用于存储渠道集合的文件夹。 |
+| 序列渠道 | 允许您创建一个按顺序播放组件的渠道（在幻灯片中逐一播放）。 |
 | 左或右L栏分屏渠道 | 允许内容作者在大小合适的区域中查看不同类型的资产。 |
 
 ## 为渠道使用默认分配详细信息 {#default-channels}

@@ -4,10 +4,10 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2376'
-ht-degree: 99%
+source-wordcount: '2375'
+ht-degree: 97%
 
 ---
 
@@ -208,7 +208,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 ### ImsAuthService {#ims-auth-service}
 
-`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you're using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
 
 | Function Name | Description |
 |---|---|
@@ -223,7 +223,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 此示例说明如何在 Unified Shell 下运行 [!DNL Adobe] 应用程序时或在您已生成用于身份验证的 `imsToken` 时，将资源选择器与非 SUSI 流结合使用。
 
-在您的代码中使用 `script` 标记引入资源选择器包，如以下示例中的&#x200B;_第 6 行至第 15 行_&#x200B;中所示。加载该脚本后，`PureJSSelectors` 全局变量将可供使用。定义资源选择器[属性](#asset-selector-properties)，如&#x200B;_第 16 行至第 23 行_&#x200B;中所示。`imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现资源选择器，请调用 `renderAssetSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。资源选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
+使用在您的代码中包含资产选择器软件包 `script` 标记，如中所示 _第6-15行_ 下面示例中的。 加载该脚本后，`PureJSSelectors` 全局变量将可供使用。定义资源选择器 [属性](#asset-selector-properties) 如所示 _第16-23行_. `imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现资源选择器，请调用 `renderAssetSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。资源选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
 
 通过执行这些步骤，您可以在 [!DNL Adobe] 应用程序中将资源选择器用于非 SUSI 流。
 
@@ -361,7 +361,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | 属性 | 类型 | 必需 | 默认 | 描述 |
 |---|---|---|---|---|
 | *边栏* | 布尔型 | 否 | false | 如果已标记 `true`，资产选择器将在左边栏视图中渲染。 如果已标记 `false`，资产选择器将以模式视图呈现。 |
-| *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。需要 `imsOrg` 密钥来验证您所访问的组织是否在 Adobe IMS 下。 |
+| *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。此 `imsOrg` 需要密钥来验证您访问的组织是否处于Adobe IMS下。 |
 | *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用的是非 SUSI 流，则需要 `imsToken`。 |
 | *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用的是非 SUSI 流，则需要 `apiKey`。 |
 | *rootPath* | 字符串 | 否 | /content/dam/ | 资源选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径 `/content/dam/marketing/subfolder/`，资源选择器不允许您遍历任何父文件夹，而只显示子文件夹。 |

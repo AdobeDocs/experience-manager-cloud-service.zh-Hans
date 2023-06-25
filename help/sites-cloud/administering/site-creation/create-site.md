@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 创建站点，并使用站点模板定义�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 98%
+source-wordcount: '787'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 98%
 
 >[!TIP]
 >
->[WKND 参考站点](https://wknd.site)提供功能齐全的户外体验品牌网站的最佳实践实施。探索该站点，了解构建良好的 AEM 站点的结构。
+>[WKND引用站点](https://wknd.site) 提供功能齐全的户外体验品牌网站的最佳实践实施。 探索该站点，了解构建良好的 AEM 站点的结构。
 
 ## 站点模板 {#site-templates}
 

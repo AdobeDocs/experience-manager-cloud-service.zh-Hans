@@ -2,10 +2,10 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑内容以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3004'
-ht-degree: 58%
+source-wordcount: '3002'
+ht-degree: 56%
 
 ---
 
@@ -443,7 +443,7 @@ ht-degree: 58%
 
 ## 锁定页面 {#locking-a-page}
 
-AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您要对某个特定页面做出大量编辑，或者需要冻结页面一段时间时，此功能非常有用。
+AEM允许您锁定页面，这样其他人就无法编辑其内容。 在对一个特定页面进行大量编辑时，或者需要冻结页面一段时间时，此锁定很有用。
 
 可以从以下任一位置锁定页面：
 

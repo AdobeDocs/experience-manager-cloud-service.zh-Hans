@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4121'
+source-wordcount: '4120'
 ht-degree: 0%
 
 ---
@@ -195,10 +195,9 @@ ht-degree: 0%
    >[!NOTE]
    >
    > * 如果使用静态模板，请将head.jsp覆盖在：
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * 如果您使用可编辑的模板，请在以下位置叠加aftemplatedpage.jsp：
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. 设置 [!DNL paramMap] 请求属性的。 例如，将以下代码包含在apps文件夹的.jsp文件中：
 
@@ -292,7 +291,8 @@ ht-degree: 0%
    * **[!UICONTROL 属性]**：指定属性的类型、子类型和格式。 您还可以指定所选属性是否是数据模型对象的主键。
    * **[!UICONTROL 服务]**：指定服务的输入模型对象、输出类型和参数。 对于Get服务，您可以指定它是否应返回数组。
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    获取服务的“编辑属性”对话框
 
 1. 点按 **[!UICONTROL 完成]** 以保存属性，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
@@ -518,7 +518,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
  </tbody> 
 </table>
 
-在此示例中，根据Swagger文件中定义的最大值、最小值和所需约束来验证输入数据。 仅当存在订单ID且其值介于1和10之间时，输入数据才符合验证标准。
+在此示例中，根据Swagger文件中定义的最大值、最小值和所需约束来验证输入数据。 仅当存在订单ID且其值为1-10时，输入数据才满足验证标准。
 
 ```json
    parameters: [

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2646'
 ht-degree: 23%
 
 ---
@@ -124,7 +124,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 添加到现有翻译项目 {#add-to-existing-translation-project}
 
-如果使用此选项，则对于运行以前的翻译工作流后添加到源文件夹中的资产，会运行翻译工作流。 只有新添加的资产才会复制到包含先前翻译的资产的目标文件夹。 在这种情况下，不会创建新的翻译项目。
+如果使用此选项，则对于运行以前的翻译工作流后添加到源文件夹中的资产，会运行翻译工作流。 只有新添加的资产才会复制到包含以前翻译的资产的目标文件夹。 在这种情况下，不会创建新的翻译项目。
 
 1. 在Assets UI中，导航到包含未翻译资产的源文件夹。
 1. 选择要翻译的资产，然后打开&#x200B;**[!UICONTROL “引用”窗格]**。**[!UICONTROL 语言副本]**&#x200B;部分显示当前可用的翻译副本数。
@@ -147,14 +147,13 @@ Also see, [Creating translation projects for content fragments](creating-transla
    >* 如果您使用机器翻译，则不会翻译资产二进制文件。
    >* 如果添加到翻译作业的资源包含子资源，请选择子资源并删除它们，以便翻译在没有出现任何错误的情况下继续。
 
-
 1. 要开始资产的翻译，请单击/点按 **[!UICONTROL 翻译作业]** 拼贴并选择 **[!UICONTROL 开始]** 从名单上。 消息会通知翻译作业已开始。
 1. 要查看翻译作业的状态，请单击/点按 **[!UICONTROL 翻译作业]** 图块。 <!-- For more details, see [Monitoring the Status of a Translation Job](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job). -->
 1. 翻译完成后，状态将更改为“准备好审查”。 导航到资产UI，然后打开每个已翻译资产的属性页面以查看已翻译的元数据。
 
 ### 更新语言副本 {#update-language-copies}
 
-运行此工作流可翻译任何其他资产集，并将其包含在特定区域设置的语言副本中。 在这种情况下，会将已翻译的资产添加到已包含先前翻译的资产的目标文件夹。 根据选项选择，会为新资产创建翻译项目或更新现有翻译项目。 更新语言副本工作流包含以下选项：
+运行此工作流可翻译任何其他资产集，并将其包含在特定区域设置的语言副本中。 在这种情况下，会将已翻译的资产添加到已包含以前翻译的资产的目标文件夹。 根据选项选择，将为新资产创建翻译项目或更新现有翻译项目。 更新语言副本工作流包含以下选项：
 
 * 创建新翻译项目
 * 添加到现有翻译项目
@@ -207,7 +206,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 
 **更新语言副本**
 
-您可以运行此工作流来翻译其他资产组，并将其包含在特定区域设置的语言副本中。 在这种情况下，会将已翻译的资产添加到已包含先前翻译的资产的目标文件夹。
+您可以运行此工作流来翻译其他资产组，并将其包含在特定区域设置的语言副本中。 在这种情况下，会将已翻译的资产添加到已包含以前翻译的资产的目标文件夹。
 
 >[!NOTE]
 >

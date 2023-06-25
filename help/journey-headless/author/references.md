@@ -2,10 +2,10 @@
 title: 了解如何在内容片段中使用引用
 description: 了解如何在内容片段中对内容、其他片段和其他资产（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 100%
 
 可以使用片段引用来表示这些相互关系，因为您（作者）和 Headless 应用程序都已理解它们。
 
-作为作者，虽然您不负责定义这些关系（这项工作由内容架构师在创建内容片段模型时完成），但您需要知道如何识别和编辑引用。
+作为作者，您无需负责定义这些关系（由内容架构师在创建内容片段模型时完成），但您需要知道如何识别和编辑引用。
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
@@ -117,6 +117,7 @@ ht-degree: 100%
       * [将配置应用到 Assets 文件夹](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [创建内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [变体 - 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
    * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
@@ -124,7 +125,6 @@ ht-degree: 100%
       * [内容片段模型 – 数据类型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
       * [内容片段模型 – 属性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
-
 
 * 快速入门指南
    * [创建 Assets 文件夹 – Headless 设置](/help/headless/setup/create-assets-folder.md)

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2932'
+source-wordcount: '2933'
 ht-degree: 3%
 
 ---
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理员访问权限 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**. 单击&#x200B;**[!UICONTROL 创建]**。
 1. 提供一个名称，帮助您在应用到文件夹时唯一地标识该配置文件。
-1. 要生成FPO演绎版，请在 **[!UICONTROL 图像]** 选项卡，启用 **[!UICONTROL 创建FPO演绎版]**. 输入 **[!UICONTROL 质量]** 值介于1和100之间。
+1. 要生成FPO演绎版，请在 **[!UICONTROL 图像]** 选项卡，启用 **[!UICONTROL 创建FPO演绎版]**. 输入 **[!UICONTROL 质量]** 值介于1-100之间。
 1. 要生成其他演绎版，请单击 **[!UICONTROL 新增]** 并提供以下信息：
 
    * 每个演绎版的文件名。
@@ -101,7 +101,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 自定义用户档案和用例 {#custom-config}
 
-此 [!DNL Asset Compute Service] 支持各种用例，例如默认处理、处理特定于Adobe的格式(如Photoshop文件)，以及实施自定义或特定于组织的处理。 过去需要的DAM更新资产工作流自定义可自动处理，或通过处理用户档案配置进行处理。 如果这些处理选项无法满足业务需求，Adobe建议开发和使用 [!DNL Asset Compute Service] 以扩展缺省功能。 有关概述，请参阅 [了解可扩展性和何时使用它](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+此 [!DNL Asset Compute Service] 支持各种用例，例如默认处理、处理特定于Adobe的格式(如Photoshop文件)，以及实施自定义或特定于组织的处理。 过去需要的DAM更新资产工作流自定义可自动处理或通过处理用户档案配置的方式进行处理。 如果这些处理选项无法满足业务需求，Adobe建议开发和使用 [!DNL Asset Compute Service] 以扩展缺省功能。 有关概述，请参阅 [了解可扩展性和何时使用它](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ asset compute服务集成允许Experience Manager使用以下工具将这些参�
 
 ## 最佳实践和限制 {#best-practices-limitations-tips}
 
-* 在设计工作流时，请考虑您对所有类型的演绎版的需求。 如果您预计将来不需要格式副本，请从工作流中删除其创建步骤。 之后无法批量删除演绎版。 长时间使用后，不需要的演绎版可能会占用大量存储空间 [!DNL Experience Manager]. 对于单个资产，您可以从用户界面中手动删除演绎版。 对于多个资源，您可以自定义 [!DNL Experience Manager] 以删除特定演绎版或删除资产，然后再次上传这些演绎版。
+* 在设计工作流时，请考虑您对所有类型的演绎版的需求。 如果您预计将来不需要格式副本，请从工作流中删除其创建步骤。 之后无法批量删除演绎版。 长期使用后，不需要的演绎版可能会占用大量存储空间 [!DNL Experience Manager]. 对于单个资产，您可以从用户界面中手动删除演绎版。 对于多个资源，您可以自定义 [!DNL Experience Manager] 以删除特定演绎版或删除资产，然后再次上传这些演绎版。
 * 目前，支持仅限于生成演绎版。 不支持生成新资产。
 * 目前，元数据提取的文件大小限制约为15 GB。 上传非常大的资产时，有时元数据提取操作失败。
 

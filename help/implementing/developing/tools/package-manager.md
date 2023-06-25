@@ -4,9 +4,9 @@ description: 了解AE的基础知识；使用包管理器管理包。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3782'
+source-wordcount: '3780'
 ht-degree: 4%
 
 ---
@@ -244,7 +244,7 @@ Package Manager分为四个主要功能区域：
 
    >[!TIP]
    >
-   >如果您的实例具有大量包，则可能存在文件夹结构。 在这种情况下，创建新资源包之前，可以更轻松地导航到所需的目标文件夹。
+   >如果您的实例具有许多包，则可能存在文件夹结构。 在这种情况下，创建新资源包之前，可以更轻松地导航到所需的目标文件夹。
 
 1. 在 **新建包** 对话框，请输入以下字段：
 

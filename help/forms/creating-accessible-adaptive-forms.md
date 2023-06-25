@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2024'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,6 @@ Ultramine-Accessible主题是参考主题。 它有助于演示如何在自适�
 >
 >* 单选按钮和复选框只能有两个辅助功能选项，即“自定义文本”和“标题”。
 >* 对于基于XFA的自适应Forms，辅助功能选项继承自XDP中设置的辅助功能选项。 XDP中的工具提示映射到简短描述，而标题映射到标题。 其他选项按原样工作。
-
 
 ### 3.为图像提供等效文本 {#provide-text-equivalents-for-images}
 

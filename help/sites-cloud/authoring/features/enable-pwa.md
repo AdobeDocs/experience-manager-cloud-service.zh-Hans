@@ -2,10 +2,10 @@
 title: 启用渐进式 Web 应用程序功能
 description: AEM Sites 允许内容作者通过简单的配置而非编码为任何站点启用渐进式 Web 应用程序功能。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 94%
+source-wordcount: '1998'
+ht-degree: 93%
 
 ---
 
@@ -217,7 +217,7 @@ Adobe 建议您限制要预缓存的页数。
 
 AEM 核心组件的图像组件决定了要获取的前端的最佳演绎版。此机制还包括与该资源的最后修改时间对应的时间戳。此机制使 PWA 预缓存的配置难以理解。
 
-在配置预缓存时，用户需要列出所有可获取的路径变体。这些变体由质量和宽度等参数组成。强烈建议将这些变体的数量减少到最多三个：小、中、大。 您可以通过[图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)的内存策略对话框来执行此操作。
+在配置预缓存时，用户需要列出所有可获取的路径变体。这些变体由质量和宽度等参数组成。建议将这些变体的数量减少到最多三个：小、中、大。 您可以通过[图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)的内存策略对话框来执行此操作。
 
 如果不仔细配置，内存和网络消耗会严重影响 PWA 的性能。此外，如果您打算预缓存 50 个图像，并且每个图像具有 3 个宽度，则维护站点的用户将必须在页面属性的 PWA 预缓存部分中维护最多 150 个条目的列表。
 

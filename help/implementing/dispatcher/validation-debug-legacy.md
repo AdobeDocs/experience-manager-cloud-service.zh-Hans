@@ -4,9 +4,9 @@ description: 使用Dispatcher工具进行验证和调试（旧版）
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2338'
 ht-degree: 1%
 
 ---
@@ -262,7 +262,7 @@ Phase 3 finished
 
 **文件包含在未知位置： ...**
 
-在您的场配置中，有四个部分允许您包含自己的文件： `/clientheaders`， `filters`， `/rules` 在 `/cache` 部分和 `/virtualhosts`. 包含的文件需要按如下方式命名：
+在您的场配置中，您可以包含自己的文件，共分四个部分： `/clientheaders`， `filters`， `/rules` 在 `/cache` 部分和 `/virtualhosts`. 包含的文件需要按如下方式命名：
 
 | 分区 | 包括文件名 |
 |------------------|--------------------------------------|

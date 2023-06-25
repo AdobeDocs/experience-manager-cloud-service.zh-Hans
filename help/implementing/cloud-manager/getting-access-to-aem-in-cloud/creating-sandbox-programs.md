@@ -2,10 +2,10 @@
 title: 创建沙盒程序
 description: 了解如何使用 Cloud Manager 创建自己的沙盒程序，用于培训、演示、POC 或其他非生产目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 95%
+source-wordcount: '463'
+ht-degree: 92%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
 您可以查看沙盒设置的详细信息，也可以通过查看程序概述页面访问环境（一旦可用）。
 
-1. 从 Cloud Manager 登陆页面中，单击新创建程序上的省略号按钮。
+1. 在Cloud Manager登陆页面中，单击新创建程序上的省略号按钮。
 
    ![访问程序概述](assets/program-overview-sandbox.png)
 

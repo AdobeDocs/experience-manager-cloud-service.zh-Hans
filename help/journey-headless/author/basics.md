@@ -2,10 +2,10 @@
 title: 学习创作基础知识
 description: 了解使用内容片段为 Headless CMS 创作内容的概念和机制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 97%
+source-wordcount: '1709'
+ht-degree: 95%
 
 ---
 
@@ -141,7 +141,7 @@ You can view additional information about items using the Rail Selector. This al
 
 #### 使用路径和标记限制文件夹中可用的内容片段模型 {#tags-paths-for-models-in-folder}
 
-此部分的内容略为深入一些。如果您刚开始尝试，则并不是真的需要它；但当您有大量片段时，它&#x200B;*非常*&#x200B;有用。了解它是件好事，即使您尚未使用它。
+此部分的内容略为深入一些。如果你只是从头开始，尝试一些事情，你并不真的需要它，但它是真的 *非常* 当您有多个片段时，此变量将非常有用。 因此，了解这一点很好，即使您尚未完全使用它。
 
 您的内容架构师将创建您的当前项目以及其他一些项目所需的所有内容片段模型。为了帮助您和其他作者简化工作，您可以限制可用于特定文件夹的模型列表。
 
