@@ -2,9 +2,9 @@
 title: Adobe内容包Maven插件
 description: 使用内容包Maven插件部署AEM应用程序
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 6%
 
 ---
@@ -212,7 +212,7 @@ rm目标的所有参数都在 [常用参数](#common-parameters) 部分。
 
 * **合并：** 将添加存储库中尚未包含的包内容。 包和存储库中的内容保持不变。 不会从存储库中删除任何内容。
 * **替换：** 包中不在存储库中的内容将添加到存储库中。 存储库中的内容替换为包中的匹配内容。 当内容在包中不存在时，将从存储库中删除该内容。
-* **更新：** 包中不在存储库中的内容将添加到存储库中。 存储库中的内容替换为包中的匹配内容。 现有内容将从存储库中删除。
+* **更新：** 包中不在存储库中的内容将添加到存储库中。 存储库中的内容替换为包中的匹配内容。
 
 当过滤器不包含时 `mode` 元素，默认值 `replace` 已使用。
 
