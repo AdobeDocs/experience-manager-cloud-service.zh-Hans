@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
+source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1433'
 ht-degree: 3%
 
 ---
@@ -29,12 +29,11 @@ CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）�
 >* 上的离线模式下不支持自适应Forms中的验证码 [!DNL AEM Forms] 应用程序。
 >
 
-
-## 通过Google配置ReCAPTCHA服务 {#google-recaptcha}
+## 通过Google配置reCAPTCHA服务 {#google-reCAPTCHA}
 
 表单作者可以使用Google的reCAPTCHA服务在自适应Forms中实施CAPTCHA。 它提供高级验证码功能以保护您的站点。 有关reCAPTCHA工作方式的更多信息，请参阅 [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
-![Recaptcha](assets/recaptcha_new.png)
+![reCAPTCHA](assets/recaptcha_new.png)
 
 在中实施reCAPTCHA服务 [!DNL AEM Forms]：
 
@@ -49,10 +48,10 @@ CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）�
 
       1. 在配置属性对话框中，启用 **[!UICONTROL 云配置]**.
       1. 点按 **[!UICONTROL 保存并关闭]** 保存配置并退出对话框。
+
    1. 在配置浏览器中，点按 **[!UICONTROL 创建]**.
    1. 在创建配置对话框中，指定文件夹的标题并启用 **[!UICONTROL 云配置]**.
    1. 点按 **[!UICONTROL 创建]** 以创建为云服务配置启用的文件夹。
-
 
 1. 为reCAPTCHA配置云服务。
 
@@ -83,16 +82,16 @@ CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）�
    >
    >验证码对时间敏感，大约一分钟后过期。 因此，建议将Captcha组件放在自适应表单中的“提交”按钮之前。
 
-1. 选择您添加的验证码组件并点按 ![cmppr](assets/configure-icon.svg) 以编辑其属性。
+1. 选择您添加的Captcha组件并点按 ![cmppr](assets/configure-icon.svg) 以编辑其属性。
 1. 指定CAPTCHA小部件的标题。 默认值为 **[!UICONTROL 验证码]**. 选择 **[!UICONTROL 隐藏标题]** 如果您不想显示标题。
-1. 从 **[!UICONTROL 验证码服务]** 下拉列表，选择 **[!UICONTROL recaptcha]** 启用reCAPTCHA服务（如果已按中的说明进行配置） [Google的ReCAPTCHA服务](#google-recaptcha). 从“设置”下拉列表中选择一个配置。
+1. 从 **[!UICONTROL 验证码服务]** 下拉列表，选择 **[!UICONTROL reCAPTCHA]** 启用reCAPTCHA服务（如果已按中的说明进行配置） [Google提供的reCAPTCHA服务](#google-reCAPTCHA). 从“设置”下拉列表中选择一个配置。
 1. 选择类型 **[!UICONTROL 普通]** 或 **[!UICONTROL 紧凑]** 用于reCAPTCHA构件。 您也可以选择 **[!UICONTROL 不可见]** 选项仅在可疑活动的情况下显示CAPTCHA质询。 受保护的表单上会显示下面显示的reCAPTCHA保护徽章。
 
    ![受reCAPTCHA徽章保护的Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >不选择 **[!UICONTROL 默认]** 从Captcha服务下拉列表中，默认的Experience ManagerCAPTCHA服务已弃用。
+   >* 不选择 **[!UICONTROL 默认]** 从Captcha服务下拉列表中，默认的Experience ManagerCAPTCHA服务已弃用。
 
 1. 保存属性。
 
@@ -107,6 +106,10 @@ CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）�
 点按 **[!UICONTROL 货币值]** 字段，并创建以下规则：
 
 ![显示或隐藏规则](assets/rules-show-hide-captcha.png)
+
+>[!NOTE]
+>
+>* 如果选择reCAPTCHA v2配置且大小为 [!UICONTROL 不可见] 则显示/隐藏选项不适用。
 
 ### 验证验证码 {#validate-captcha}
 
@@ -206,7 +209,7 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` 是指 `g_recaptcha_response` 在表单中求解验证码后生成的验证码。
 
-### 编辑reCAPTCHA服务域 {#recaptcha-service-domain}
+### 编辑reCAPTCHA服务域 {#reCAPTCHA-service-domain}
 
 reCAPTCHA服务使用 `https://www.recaptcha.net/` 作为默认域。 您可以修改要设置的设置 `https://www.google.com/` 或任何用于加载、渲染和验证reCAPTCHA服务的自定义域名。
 
