@@ -3,10 +3,10 @@ title: 管理工作流实例
 description: 了解如何管理工作流实例
 feature: Administering
 role: Admin
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 98%
+source-wordcount: '1284'
+ht-degree: 94%
 
 ---
 
@@ -28,12 +28,21 @@ ht-degree: 98%
 1. 使用“导航”，依次选择&#x200B;**工具**&#x200B;和&#x200B;**工作流**。
 1. 选择&#x200B;**实例**&#x200B;以显示当前正在运行的工作流实例的列表。
 1. 在顶部边栏的右上角，工作流实例会显示&#x200B;**正在运行的工作流**、**状态**&#x200B;和&#x200B;**详情。**
-1. **正在运行的工作流**&#x200B;显示正在运行的工作流的数量及其状态。 例如，在给定的图像中，显示的是&#x200B;**正在运行的工作流**&#x200B;的数量和 AEM 实例的&#x200B;**状态。**
-   ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
-   ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. 对于工作流实例的&#x200B;**状态详细信息**，单击&#x200B;**详细信息**，显示&#x200B;**正在运行的工作流实例**、**已完成的工作流实例**、**已中止的工作流实例**、**失败的工作流实例**&#x200B;等的数量。例如，以下是显示&#x200B;**状态详细信息**&#x200B;以及&#x200B;**状态：健康**&#x200B;和&#x200B;**状态：不健康**的给定图像。
-   ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
-   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **正在运行的工作流**&#x200B;显示正在运行的工作流的数量及其状态。 例如，在给定的图像中，显示的是 **正在运行的工作流** 和 **状态** 的AEM实例：
+
+   * **状态：健康**
+     ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **状态：不健康**
+     ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. 对于工作流实例的&#x200B;**状态详细信息**，单击&#x200B;**详细信息**，显示&#x200B;**正在运行的工作流实例**、**已完成的工作流实例**、**已中止的工作流实例**、**失败的工作流实例**&#x200B;等的数量。例如，下面是显示以下内容的给定图像 **状态详细信息** 替换为：
+
+   * **状态详细信息：正常**
+     ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **状态详细信息：不正常**
+     ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
@@ -191,7 +200,7 @@ ht-degree: 98%
 
 属性 *userMetadataPersistenceEnabled* 存储在 *jcr：content节点* 工作流模型的。 此标记在工作流元数据中保留为 *cq：userMetaDataCustomPersistenceEnabled*.
 
-下图表明必须在工作流上设置标志。
+下图显示了如何在工作流中设置标记。
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
