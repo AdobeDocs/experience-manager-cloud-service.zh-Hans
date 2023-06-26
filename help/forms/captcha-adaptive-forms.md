@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 3%
@@ -70,17 +70,14 @@ CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）�
 
    >[!NOTE]
    >
-   >确保在创建自适应表单时选择的配置容器包含reCAPTCHA云服务。 您还可以编辑自适应表单属性以更改与表单关联的配置容器。
+   > 确保在创建自适应表单时选择的配置容器包含reCAPTCHA云服务。 您还可以编辑自适应表单属性以更改与表单关联的配置容器。
 
 1. 在组件浏览器中，拖放 **[!UICONTROL 验证码]** 自适应表单上的组件。
 
    >[!NOTE]
    >
-   >不支持在自适应表单中使用多个验证码组件。 此外，不建议在标记为延迟加载的面板或片段中使用验证码。
-
-   >[!NOTE]
-   >
-   >验证码对时间敏感，大约一分钟后过期。 因此，建议将Captcha组件放在自适应表单中的“提交”按钮之前。
+   > * 不支持在自适应表单中使用多个验证码组件。 此外，不建议在标记为延迟加载的面板或片段中使用验证码。
+   > * 验证码对时间敏感，大约一分钟后过期。 因此，建议将Captcha组件放在自适应表单中的“提交”按钮之前。
 
 1. 选择您添加的Captcha组件并点按 ![cmppr](assets/configure-icon.svg) 以编辑其属性。
 1. 指定CAPTCHA小部件的标题。 默认值为 **[!UICONTROL 验证码]**. 选择 **[!UICONTROL 隐藏标题]** 如果您不想显示标题。
@@ -91,7 +88,7 @@ CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）�
 
    >[!NOTE]
    >
-   >* 不选择 **[!UICONTROL 默认]** 从Captcha服务下拉列表中，默认的Experience ManagerCAPTCHA服务已弃用。
+   > 不选择 **[!UICONTROL 默认]** 从Captcha服务下拉列表中，默认的Experience ManagerCAPTCHA服务已弃用。
 
 1. 保存属性。
 
@@ -109,7 +106,7 @@ CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）�
 
 >[!NOTE]
 >
->* 如果选择reCAPTCHA v2配置且大小为 [!UICONTROL 不可见] 则显示/隐藏选项不适用。
+> 如果选择reCAPTCHA v2配置且大小为 [!UICONTROL 不可见] 则显示/隐藏选项不适用。
 
 ### 验证验证码 {#validate-captcha}
 
