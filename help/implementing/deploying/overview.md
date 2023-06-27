@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 43%
+ht-degree: 48%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 43%
 
 与 AEM 内部部署和 Managed Services 解决方案相比，AEM as a Cloud Service 中的代码开发基础是相似的。开发人员编写代码并在本地对其进行测试，然后将该代码推送到AEMas a Cloud Service上的远程环境。 需要使用 Cloud Manager，它是 Managed Services 的一个可选内容交付工具。此投放工具现在是将代码部署到AEMas a Cloud Service开发、暂存和生产环境的唯一机制。 为了在部署上述环境之前快速验证和调试功能，可以将代码从本地环境同步到 [快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-[AEM 版本](/help/implementing/deploying/aem-version-updates.md)的更新始终是独立于推送[自定义代码](#customer-releases)的部署事件。从另一个角度来看，自定义代码版本应该针对生产环境中的AEM版本进行测试，因为这是它部署在顶部的原因。 之后发生的AEM版本更新，这些更新很频繁，并且会自动应用。 它们旨在与已部署的客户代码向后兼容。
+[AEM 版本](/help/implementing/deploying/aem-version-updates.md)的更新始终是独立于推送[自定义代码](#customer-releases)的部署事件。从另一个角度来看，自定义代码版本应针对生产中的 AEM 版本进行测试，因为这是它部署到其上的版本。之后将频繁进行 AEM 版本更新，并会自动应用这些更新。它们旨在与已部署的客户代码向后兼容。
 
 本文档的其余部分描述了开发人员应如何调整其实践，以便他们能够与AEMas a Cloud Service的版本更新和客户更新一起使用。
 
@@ -36,7 +36,7 @@ ht-degree: 43%
 >[!NOTE]
 >应用程序在本地计算机上的行为方式与在 Adobe Cloud 上的行为方式之间存在细小的操作差异。在本地开发过程中必须考虑这些架构差异，并且这些差异会导致在云基础架构上部署时发生不同的行为。由于存在这些差异，因此，在生产中推出新的自定义代码之前，务必要在开发和暂存环境中执行详尽的测试。
 
-要为内部版本开发自定义代码，需使用 [AEMAS A CLOUD SERVICESDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 应下载并安装。 有关使用 AEM as a Cloud Service Dispatcher 工具的其他信息，请参阅[此页面](/help/implementing/dispatcher/disp-overview.md)。
+若要为内部版本开发自定义代码，应下载并安装相关版本的 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。有关使用 AEM as a Cloud Service Dispatcher 工具的其他信息，请参阅[此页面](/help/implementing/dispatcher/disp-overview.md)。
 
 以下视频提供了有关如何将代码部署到AEMas a Cloud Service的高级概述：
 
@@ -115,7 +115,7 @@ ht-degree: 43%
 >[!NOTE]
 >内容包将部署到所有环境类型（开发、暂存、生产）。无法将部署限于特定环境。施加此限制以确保能够选择自动执行的测试运行。特定于环境的内容需要手动安装，方式为 [包管理器。](/help/implementing/developing/tools/package-manager.md)
 
-此外，在应用可变内容包更改后，没有机制可回滚这些更改。 如果客户检测到问题，他们可以选择在下一个代码版本中修复它，或者在万不得已的情况下，将整个系统恢复到部署前的某个时间点。
+此外，没有用于在应用可变内容包更改后回滚这些更改的机制。如果客户检测到问题，他们可以选择在下一个代码版本中修复它，或者在万不得已的情况下，将整个系统恢复到部署前的某个时间点。
 
 必须验证任何包含的第三方软件包是否与AEMas a Cloud Service兼容，否则其包含会导致部署失败。
 
@@ -140,7 +140,7 @@ ht-degree: 43%
 由于 Repoinit 的以下好处，对于这些受支持的内容修改用例，Repoinit 更可取：
 
 * `Repoinit` 在启动时创建资源，因此，逻辑可以将这些资源的存在视为理所当然。在可变内容包方法中，资源是在启动后创建的，因此依赖这些资源的应用程序代码可能会失败。
-* `Repoinit` 是一个相对安全的指令集，因为您可以明确控制要执行的操作。此外，除了一些与安全相关的情况（允许删除用户、服务用户和组）之外，仅支持附加操作。 相反，明确删除可变内容包方法中的某些内容；定义过滤器时，过滤器覆盖的任何内容都将被删除。 不过，应谨慎行事，因为对于任何内容，在一些场景中，新内容的存在都会更改应用程序的行为。
+* `Repoinit` 是一个相对安全的指令集，因为您可以明确控制要执行的操作。此外，除了一些与安全相关的情况（允许删除用户、服务用户和组）之外，仅支持附加操作。 相比之下，在可变内容包方法中删除某些内容是明确的；在定义过滤器时，过滤器涵盖的任何内容都会被删除。不过，应谨慎行事，因为对于任何内容，在一些场景中，新内容的存在都会更改应用程序的行为。
 * `Repoinit` 执行快速和原子操作。相比之下，可变内容包在性能方面可能在很大程度上取决于过滤器涵盖的结构。即使您更新单个节点，也可能创建大型树的快照。
 * 可以验证 `repoinit` 运行时本地开发环境上的语句，因为它们在OSGi配置注册时运行。
 * `Repoinit` 语句为原子且显式，如果状态已匹配，则跳过这些语句。
@@ -179,7 +179,7 @@ above appears to be internal, to confirm with Brian -->
 
 在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境以调试生产问题。 对于这些方案， [包管理器](/help/implementing/developing/tools/package-manager.md) 可以在AEMas a Cloud Service的环境中使用。
 
-由于包管理器是一个运行时概念，无法将内容或代码安装到不可变存储库中，因此这些内容包应只包含可变内容（主要是 `/content` 或 `/conf`）。如果内容包中包含混合的内容（可变和不可变内容），则只会安装可变内容。
+由于包管理器是一个运行时概念，无法将内容或代码安装到不可变存储库中，因此这些内容包应只包含可变内容（主要是 `/content` 或 `/conf`）。如果内容包包含混合内容（可变内容和不可变内容），则只会安装可变内容。
 
 >[!IMPORTANT]
 >
@@ -239,7 +239,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 滚动部署的工作原理 {#how-rolling-deployments-work}
 
-与AEM更新类似，客户版本也使用滚动部署策略进行部署，以便在适当的情况下消除创作群集停机。 下面描述了事件的一般顺序，其中具有旧版本和新版本客户代码的节点运行相同版本的 AEM 代码。
+与 AEM 更新一样，客户版本使用滚动部署策略进行部署，以便在适当的情况下消除创作群集停机时间。下面描述了事件的一般顺序，其中具有旧版本和新版本客户代码的节点运行相同版本的 AEM 代码。
 
 * 具有旧版本的节点处于活动状态，新版本的候选发布版本已构建并可用。
 * 如果存在任何新的或更新的索引定义，则处理相应的索引。旧版本的节点始终使用旧索引，而新版本的节点始终使用新索引。
@@ -281,7 +281,7 @@ above appears to be internal, to confirm with Brian -->
 
 ### 用于回滚的保守编码 {#conservative-coding-for-rollbacks}
 
-如果在部署后报告或检测到故障，则可能需要回滚到旧版本。 确保新代码与该新版本创建的任何新结构兼容，因为新结构（任何可变内容）不会回滚。 如果旧代码不兼容，则必须在后续客户版本中应用修复。
+如果部署后报告或检测到失败，则可能需要回滚到旧版本。确保新代码与该新版本创建的任何新结构兼容，因为新结构（任何可变内容）不会回滚。 如果旧代码不兼容，则必须在后续客户版本中应用修复。
 
 ## 快速开发环境 (RDE) {#rde}
 

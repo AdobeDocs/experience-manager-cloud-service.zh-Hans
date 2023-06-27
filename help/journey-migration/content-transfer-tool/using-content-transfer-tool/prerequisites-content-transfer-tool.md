@@ -5,7 +5,7 @@ exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
 source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
 workflow-type: tm+mt
 source-wordcount: '551'
-ht-degree: 8%
+ht-degree: 16%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
 >title="有关使用内容转移工具的重要注意事项"
->abstract="查看有关使用内容传输工具的重要注意事项，包括Java™和AEM版本、支持的数据存储类型、用户组注意事项等。"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en" text="使用内容传输工具的重要注意事项"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#best-practices" text="最佳实践和准则"
+>abstract="查看有关使用内容转移工具的重要注意事项，包括 Java™ 和 AEM 版本、支持的数据存储类型、用户组注意事项等。"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hans?lang=en" text="使用内容传输工具的重要注意事项"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hans?lang=en#best-practices" text="最佳实践和准则"
 
 下表总结了使用内容传输工具的先决条件。
 
