@@ -6,7 +6,7 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 欢迎使用面向 Adobe Experience Manager Headless CMS 新手开发人员的文档！
 
-了解强大而灵活的Headless特性、它们的功能以及如何在您的第一个Headless开发项目中使用它们。 此历程为您提供了开发第一个 Headless 应用程序所需的所有信息。
+了解强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 开发项目中利用它们。此历程为您提供了开发第一个 Headless 应用程序所需的所有信息。
 
 {{headless-trials-promotion}}
 

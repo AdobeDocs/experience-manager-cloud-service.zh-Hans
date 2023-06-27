@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也�
 * 安装在 AEM 管理的 CDN 中的自定义域名（以及证书）通过 Cloud Manager 进行管理。
 * 安装在您自己的 CDN 中的自定义域名（以及证书）在该特定的 CDN 中进行管理。
 
-在您自己的CDN中管理的域无需通过Cloud Manager进行安装。 它们通过X-Forwarded-Host可供AEM使用，并与Dispatcher中定义的vhosts匹配。 请参阅 [CDN文档](/help/implementing/dispatcher/cdn.md).
+在您自己的 CDN 中管理的域不需要通过 Cloud Manager 安装。它们会通过 X-Forwarded-Host 提供给 AEM，并会匹配 Dispatcher 中定义的虚拟主机。请参阅[ CDN 文档](/help/implementing/dispatcher/cdn.md)。
 
 在一个环境中，您可以有一个安装在 AEM 管理的 CDN 中的域和一个安装在您自己的 CDN 中的域。
 

@@ -16,8 +16,8 @@ ht-degree: 33%
 >id="aemcloud_golive_ipallowlist"
 >title="管理 IP 允许列表"
 >abstract="可通过 Internet 访问 AEM as a Cloud Service，并通过用户身份验证和授权保护它。Cloud Manager 的 IP 允许列表可用于仅限访问受信任的 IP 地址和控制此类访问。具有适当权限的 Cloud Manager 用户可创建受信任的 IP 地址的允许列表，其站点的用户可从这些地址访问其 AEM 域。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html" text="添加 IP 允许列表"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists.html" text="查看和更新 IP 允许列表"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=zh-Hans" text="添加 IP 允许列表"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists.html?lang=zh-Hans" text="查看和更新 IP 允许列表"
 
 默认情况下，可通过Internet访问AEM as a cloud service。 虽然安全性是通过用户身份验证和授权处理的，但IP允许列表是一种将访问限制为仅受信任的IP地址的方法。
 

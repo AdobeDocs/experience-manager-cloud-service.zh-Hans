@@ -18,10 +18,10 @@ ht-degree: 21%
 >id="aemcloud_ctt_download"
 >title="下载"
 >abstract="可从软件分发门户下载 zip 文件形式的内容转移工具。您可以通过包管理器在源 Adobe Experience Manager (AEM) 实例上安装该包。确保下载最新版本。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans" text="发行说明"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans" text="发行说明"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="软件分发门户"
 
-可从软件分发门户下载 zip 文件形式的内容转移工具。您可以通过以下方式安装包 [包管理器](/help/implementing/developing/tools/package-manager.md) 源Adobe Experience Manager (AEM)实例上的。 确保下载最新版本。有关最新版本的更多详细信息，请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=zh-Hans).
+可从软件分发门户下载 zip 文件形式的内容转移工具。您可以通过以下方式安装包 [包管理器](/help/implementing/developing/tools/package-manager.md) 源Adobe Experience Manager (AEM)实例上的。 确保下载最新版本。有关最新版本的更多详细信息，请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=zh-Hans).
 
 仅支持版本2.0.0及更高版本，建议使用最新版本。
 
@@ -62,7 +62,7 @@ ht-degree: 21%
 >title="运行内容转移工具"
 >abstract="了解如何使用内容转移工具将内容迁移到 AEM as a Cloud Service（创作/发布）。"
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 观看演示"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="教程 - 使用内容转移工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=zh-Hans#migration" text="教程 - 使用内容转移工具"
 
 以下部分适用于内容传输工具的新版本。 阅读本节内容，了解如何使用内容传输工具将内容迁移到AEMas a Cloud Service：
 
@@ -72,7 +72,7 @@ ht-degree: 21%
 >id="aemcloud_ctt_extraction_setup"
 >title="提取设置阶段"
 >abstract="了解如何创建和管理迁移集以及如何复制提取密钥。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="教程 - 使用内容转移工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=zh-Hans#migration" text="教程 - 使用内容转移工具"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
@@ -112,7 +112,7 @@ ht-degree: 21%
 >id="aemcloud_ctt_populate_migrationset"
 >title="填充迁移集"
 >abstract="创建迁移集后，需要为它填入需要从源实例移至 AEM as a Cloud Service 环境的内容。为此，需要在源实例上安装内容转移工具。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="提取内容"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=zh-Hans" text="提取内容"
 
 要填充您在Cloud Acceleration Manager中创建的迁移集，您需要在源Adobe Experience Manager (AEM)实例上安装最新版本的内容传输工具。 阅读本节内容，了解如何填充迁移集。
 

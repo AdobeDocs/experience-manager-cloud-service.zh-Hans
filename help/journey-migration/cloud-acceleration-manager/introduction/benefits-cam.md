@@ -15,7 +15,7 @@ ht-degree: 34%
 >id="aemcloud_cam_benefits"
 >title="使用 Cloud Acceleration Manager 的益处"
 >abstract="Cloud Acceleration Manager (CAM) 为您的团队营造一种引导式体验，其中采用 Adobe 推荐的最佳实践和方法，从而帮助您的团队充满信心地规划、实施和上线。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html" text="Cloud Acceleration Manager 快速入门"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=zh-Hans" text="Cloud Acceleration Manager 快速入门"
 
 由于有广泛的业务要求和自定义设置，迁移到云可能会是一个涉及的项目。 Cloud Acceleration Manager (CAM) 为您的团队营造一种引导式体验，其中采用 Adobe 推荐的最佳实践和方法，从而帮助您的团队充满信心地规划、实施和上线。
 

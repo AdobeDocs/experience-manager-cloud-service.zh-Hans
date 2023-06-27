@@ -15,8 +15,8 @@ ht-degree: 21%
 >id="aemcloud_migration_overview"
 >title="迁移至 AEM as a Cloud Service"
 >abstract="概述推荐的分阶段方法，将客户从各种 Experience Manager 部署过渡到 Experience Manager as a Cloud Service，并帮助现有客户提供无中断的互联体验"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html" text="新增功能和不同功能"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html" text="AEM as a Cloud Service 简介."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=zh-Hans" text="新增功能和不同功能"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=zh-Hans" text="AEM as a Cloud Service 简介."
 
 Adobe Experience Manager (AEM) as a Cloud Service提供了重新构建的Experience Manager基础，它基于基于容器的基础架构、API驱动的开发和引导式DevOps流程而构建，允许营销人员和开发人员始终在客户体验管理创新方面保持领先。
 
@@ -130,7 +130,7 @@ Cloud Service将Adobe Experience Manager丰富的开箱即用功能和可扩展�
 </tr>
 <tr>
 <td>审核</td>
-<td><ul><li>根据发现，执行工作估算和资源配置练习</li></ul></td>
+<td><ul><li>根据发现，执行工作量评估和资源配置练习</li></ul></td>
 </tr>
 <tr>
 <td>衡量</td>
