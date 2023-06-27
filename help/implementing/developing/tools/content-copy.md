@@ -2,9 +2,9 @@
 title: 内容复制工具
 description: 内容复制工具使用户能够根据需要将可变内容从AEMas a Cloud Service上的生产环境复制到较低环境，以进行测试。
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1203'
 ht-degree: 41%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 ## 简介 {#introduction}
 
-当前的真实数据对于测试、验证和用户验收很有价值。内容复制工具允许您将内容从生产AEM环境复制到暂存、开发或 [快速开发环境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 用于此类测试的环境。
+当前的真实数据对于测试、验证和用户验收很有价值。内容复制工具允许您将内容从生产AEMas a Cloud Service环境复制到暂存、开发或 [快速开发环境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 用于此类测试的环境。
 
 要复制的内容由内容集定义。内容集由一系列JCR路径组成，这些路径包含要在同一Cloud Manager程序内从源创作服务环境复制到目标创作服务环境的可变内容。 内容集中允许使用以下路径。
 
