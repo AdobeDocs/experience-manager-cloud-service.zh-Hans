@@ -2,9 +2,9 @@
 title: 导航到 Screens Services Provider
 description: 本页介绍如何导航到Screens Services Provider。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '263'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 ## 目标 {#objective}
 
-以下部分介绍如何配置和设置Screens Services Provider。
+以下部分介绍了如何配置和设置Screens Services Provider。
 
 ## 设置Screens服务提供程序的步骤 {#screens-services-provider}
 
@@ -31,7 +31,7 @@ ht-degree: 6%
    >[!CAUTION]
    >如果您有权访问多个组织，请确保您已登录到正确的组织。 要更改您的组织，请单击屏幕右上角的组织名称，然后选择您需要访问的所需组织。
 
-2. 单击“项目”（左上角）旁边的齿轮图标
+2. 单击项目旁边的齿轮图标（左上角）
 
    ![图像](/help/screens-cloud/assets/configure/configure-screens0.png)
 
@@ -43,7 +43,7 @@ ht-degree: 6%
 
 4. 单击 **保存** 连接到Screens内容提供程序
 
-5. 选择 **渠道** 导航栏中的，然后单击 **在内容提供程序中打开**.
+5. 选择 **渠道** 导航栏中，然后单击 **在内容提供程序中打开**.
 
    ![图像](/help/screens-cloud/assets/configure/configure-screens1.png)
 
@@ -53,4 +53,4 @@ ht-degree: 6%
 
 ## 后续内容 {#whats-next}
 
-了解如何设置Screens服务提供商后，您可以导航到 [使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end) 了解更多详细信息。
+了解如何设置Screens服务提供程序后，导航到 [使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end#screens-content-provider) 了解更多详细信息。

@@ -1,45 +1,45 @@
 ---
 title: 查询生成器 API
-description: 资产共享查询生成器的功能通过Java API和REST API公开。
+description: 资产共享查询生成器的功能通过Java&trade； API和REST API公开。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
 
 # 查询生成器 API {#query-builder-api}
 
-查询生成器提供了一种查询AEM内容存储库的简单方法。 该功能通过Java API和REST API公开。 本文档介绍了这些API。
+查询生成器提供了一种查询AEM内容存储库的简单方法。 该功能通过Java™ API和REST API公开。 本文档介绍了这些API。
 
-服务器端查询生成器([`QueryBuilder`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html))将接受查询描述，创建并运行XPath查询，可以选择筛选结果集，并根据需要提取Facet。
+服务器端查询生成器([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html))接受查询描述，创建并运行XPath查询，可以选择筛选结果集，并根据需要提取Facet。
 
-查询描述只是一组谓词([`Predicate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html))。 示例包括一个全文谓词，该谓词对应于 `jcr:contains()` 函数。
+查询描述只是一组谓词([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html))。 示例包括一个全文谓词，该谓词对应于 `jcr:contains()` 函数。
 
-对于每个谓词类型，都有一个计算器组件([`PredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html))，知道如何处理XPath、筛选和Facet提取的特定谓词。 创建自定义评估器非常简单，这些评估器通过OSGi组件运行时插入。
+对于每个谓词类型，都有一个计算器组件([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html))，知道如何处理XPath、筛选和Facet提取的特定谓词。 可以轻松创建自定义评估器，这些评估器通过OSGi组件运行时插入。
 
-REST API通过HTTP提供对完全相同的功能的访问，响应以JSON发送。
+REST API通过HTTP提供对相同功能的访问，响应以JSON发送。
 
 >[!NOTE]
 >
->QueryBuilder API是使用JCR API构建的。 您还可以使用OSGi捆绑包中的JCR API查询AEM JCR。 有关信息，请参阅 [使用JCR API查询Adobe Experience Manager数据](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+>QueryBuilder API是使用JCR API构建的。 您还可以使用OSGi捆绑包中的JCR API查询AEM JCR。 有关信息，请参阅 [使用JCR API查询Adobe Experience Manager数据](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 ## Gem会话 {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) 是Adobe专家对Adobe Experience Manager进行的一系列深入技术探讨。
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en) 是Adobe专家对Adobe Experience Manager进行的一系列深入技术探讨。
 
-您可以 [查看专门用于查询生成器的会话](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) 有关工具的概述和使用。
+您可以 [查看专门用于查询生成器的会话](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=en) 有关工具的概述和使用。
 
 ## 示例查询 {#sample-queries}
 
-这些示例以Java属性样式表示法提供。 要将其与Java API结合使用，请使用Java `HashMap` 与下面的API示例中一样。
+这些示例以Java™属性样式表示法提供。 要将其与Java™ API结合使用，请使用Java™ `HashMap` 与下面的API示例中一样。
 
-对于 `QueryBuilder` JSON Servlet，每个示例都包含一个指向AEM安装的示例链接(在默认位置， `http://<host>:<port>`)。 请注意，您必须先登录AEM实例，然后才能使用这些链接。
+对于 `QueryBuilder` JSON Servlet，每个示例都包含一个指向AEM安装的示例链接(在默认位置， `http://<host>:<port>`)。 在使用这些链接之前，请登录到您的AEM实例。
 
 >[!CAUTION]
 >
->默认情况下，查询生成器JSON servlet最多显示10次点击。
+>默认情况下，查询生成器JSON servlet最多可显示10次点击。
 >
 >添加以下参数可让servlet显示所有查询结果：
 >
@@ -51,7 +51,7 @@ REST API通过HTTP提供对完全相同的功能的访问，响应以JSON发送�
 
 ### 返回所有结果 {#returning-all-results}
 
-以下查询将 **返回十个结果** （精确地说，最多为10个），但通知您 **点击次数：** 实际可用的URL路径：
+以下查询 **返回十个结果** （精确地说，最多为10个），但会通知您 **点击次数：** 可用的：
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path`
 
@@ -63,7 +63,7 @@ path=/content
 orderby=path
 ```
 
-相同查询（使用参数） `p.limit=-1`)将 **返回所有结果** （根据您的实例，此数字可能会很高）：
+相同查询（使用参数） `p.limit=-1`) **返回所有结果** （根据您的实例，它可能是一个很高的数字）：
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&orderby=path&p.limit=-1`
 
@@ -78,9 +78,9 @@ orderby=path
 
 ### 使用p.guessTotal返回结果 {#using-p-guesstotal-to-return-the-results}
 
-目的 `p.guessTotal` 参数是返回适当数目的结果，这些结果可以通过组合最小可行值来显示 `p.offset` 和 `p.limit` 值。 使用该参数的优点是改善了性能，且结果集大。 这样可避免计算全部总计(例如，调用 `result.getSize()`)并读取整个结果集，优化一直到OAK引擎和索引。 当执行时间和内存使用量都达到数十万个结果时，这可能是一个显着差异。
+目的 `p.guessTotal` 参数是返回适当数目的结果，这些结果可以通过组合最小可行值来显示 `p.offset` 和 `p.limit` 值。 使用该参数的优点是改善了性能，且结果集大。 此参数还可避免计算全部总计(例如，调用 `result.getSize()`)并读取整个结果集，优化一直到Oak引擎和索引。 当执行时间和内存使用量都达到数十万条结果时，此过程可能会产生显着差异。
 
-该参数的缺点是用户看不到确切的总数。 但您可以设置以下最小值 `p.guessTotal=1000` 因此它始终会读取多达1000个结果，因此您可以获得较小结果集的精确总计，但如果读取的量大于1000个，则只能显示“更多”。
+该参数的缺点是用户看不到确切的总数。 但您可以设置以下最小值 `p.guessTotal=1000` 所以它总能读到1000条。 通过这种方式，您可以获得较小结果集的确切总计，但如果更多，则只能显示“和更多”。
 
 添加 `p.guessTotal=true` ，以了解其工作原理：
 
@@ -95,7 +95,7 @@ p.guessTotal=true
 orderby=path
 ```
 
-查询将返回 `p.limit` 默认 `10` 结果带有 `0` 偏移：
+查询返回 `p.limit` 默认 `10` 结果带有 `0` 偏移：
 
 ```xml
 "success": true,
@@ -109,7 +109,7 @@ orderby=path
 
 `http://<host>:<port>/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=wknd/components/structure/page&1_property.operation=like&p.guessTotal=50&orderby=path`
 
-它将返回一个数字，该数字与10个结果的默认限制相同，偏移量为0，但最多只显示50个结果：
+它返回一个数字，该数字与具有0偏移量的缺省限制10个结果相同，但只显示最多50个结果：
 
 ```xml
 "success": true,
@@ -121,19 +121,19 @@ orderby=path
 
 ### 实施分页 {#implementing-pagination}
 
-默认情况下，查询生成器还会提供点击量。 根据结果大小，这可能需要较长时间，因为确定准确计数涉及检查每个结果的访问控制。 通常，总计用于对最终用户UI实现分页。 由于确定确切计数可能会很慢，因此建议使用guessTotal功能实施分页。
+默认情况下，查询生成器还会提供点击量。 根据结果大小，此数字可能需要较长时间，因为确定准确计数涉及检查每个结果的访问控制。 通常，总计用于对最终用户UI实现分页。 由于确定确切计数可能会很慢，因此建议您使用guessTotal功能实施分页。
 
 例如，UI可以调整以下方法：
 
-* 获取并显示总点击量的准确计数([SearchResult.getTotalMatches()](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) 或以下项目中的总计： `querybuilder.json` 响应)小于或等于100；
-* 设置 `guessTotal` 调用查询生成器时为100。
+* 获取并显示总点击量的准确计数([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) 或以下项目中的总计： `querybuilder.json` 响应)小于或等于100；
+* 设置 `guessTotal` 到100调用查询生成器。
 
 * 响应可能会产生以下结果：
 
    * `total=43`， `more=false`  — 表示点击总数为43。 UI可以在第一个页面中显示最多十个结果，并为接下来的三个页面提供分页。 您还可以使用此实施来显示描述性文本，如 **“找到43个结果”**.
-   * `total=100`， `more=true`  — 表示点击总数大于100，但确切计数未知。 UI最多可以显示10个作为第一页的一部分，并为接下来的10个页面提供分页。 您还可以使用此选项来显示文本，例如 **“找到100个以上的结果”**. 当用户转到下一页时，调用查询生成器将增加限制 `guessTotal` 以及 `offset` 和 `limit` 参数。
+   * `total=100`， `more=true`  — 表示点击总数大于100，但确切计数未知。 UI最多可以显示10个作为第一页的一部分，并为接下来的10个页面提供分页。 您还可以使用此功能来显示文本，例如 **“找到100个以上的结果”**. 当用户转到后续页面时，对查询生成器的调用将增加限制 `guessTotal` 以及 `offset` 和 `limit` 参数。
 
-`guessTotal` 在UI需要使用无限滚动以避免Query Builder确定确切点击计数的情况下，也应使用。
+此外，使用 `guessTotal` 在用户界面必须使用无限滚动以避免Query Builder确定确切点击计数的情况下。
 
 ### 查找jar文件并对其进行排序，最新的先排序 {#find-jar-files-and-order-them-newest-first}
 
@@ -189,7 +189,7 @@ tagid.property=jcr:content/cq:tags
 
 使用 `tag` 标记标题路径的谓词（不含空格）。
 
-因为在上一个示例中，您正在搜索页面(`cq:Page` 节点)，则需要使用该节点的相对路径 `tagid.property` 谓词，即 `jcr:content/cq:tags`. 默认情况下， `tagid.property` 就只是 `cq:tags`.
+在上一个示例中，由于您正在搜索页面(`cq:Page` 节点)，使用该节点的相对路径 `tagid.property` 谓词，即 `jcr:content/cq:tags`. 默认情况下， `tagid.property` 将为 `cq:tags`.
 
 ### 搜索多个路径（使用组） {#search-under-multiple-paths-using-groups}
 
@@ -210,7 +210,7 @@ group.2_path=/content/wknd/us/en/adventures
 
 此 `p` 在 `p.or` 是一个特殊分隔符，指示随后出现的内容(在本例中为 `or`)是 *参数* 组的一个子谓词，例如 `1_path`.
 
-如果否 `p.or` 然后对所有谓词进行AND运算，即每个结果必须满足所有谓词。
+如果否 `p.or` 给定，然后对所有谓词进行AND运算，即，每个结果必须满足所有谓词。
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ property=cq:template
 property.value=/conf/wknd/settings/wcm/templates/adventure-page-template
 ```
 
-这有一个缺点 `jcr:content` 返回的是页面的节点，而不是页面本身。 要解决此问题，您可以按相对路径搜索：
+缺点是 `jcr:content` 返回的是页面的节点，而不是页面本身。 要解决此问题，您可以按相对路径搜索：
 
 `http://<host>:<port>/bin/querybuilder.json?property=jcr%3acontent%2fcq%3atemplate&property.value=%2fconf%2fwknd%2fsettings%2fwcm%2ftemplates%2fadventure-page-template&type=cq%3aPage`
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## 优化返回的内容 {#refining-what-is-returned}
 
-默认情况下，QueryBuilder JSON Servlet将返回搜索结果中每个节点的默认属性集（例如，路径、名称和标题）。 要获得对返回哪些属性的控制权，您可以执行以下操作之一：
+默认情况下，QueryBuilder JSON Servlet返回搜索结果中每个节点的默认属性集（例如，路径、名称和标题）。 要获得对返回哪些属性的控制权，您可以执行以下操作之一：
 
 指定
 
@@ -320,13 +320,13 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-您还可以在查询生成器响应中包含子节点。 为此，您需要指定
+您还可以在查询生成器响应中包含子节点。 指定
 
 ```xml
 p.nodedepth=n
 ```
 
-位置 `n` 是您希望查询返回的级别数。 请注意，要返回子节点，它必须由属性选择器指定
+位置 `n` 是您希望查询返回的级别数。 对于要返回的子节点，必须由属性选择器指定
 
 ```xml
 p.hits=full
@@ -347,9 +347,9 @@ p.nodedepth=5
 
 有关更多谓词，请参见 [查询生成器谓词引用页](query-builder-predicates.md).
 
-您还可以检查 [的Javadoc `PredicateEvaluator` 类](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). 这些类的Javadoc包含您可以使用的属性列表。
+您还可以检查 [的Javadoc `PredicateEvaluator` 类](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). 这些类的Javadoc包含您可以使用的属性列表。
 
-类名的前缀(例如， `similar` 在 [`SimilarityPredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html))是 *主体属性* 是班级的。 此属性也是要在查询中使用的谓词名称（小写）。
+类名的前缀(例如， `similar` 在 [`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html))是 *主体属性* 是班级的。 此属性也是要在查询中使用的谓词名称（小写）。
 
 对于此类主体属性，您可以缩短查询和使用 `similar=/content/en` 而不是完全限定的变量 `similar.similar=/content/en`. 类的所有非主体属性都必须使用完全限定的表单。
 
@@ -421,13 +421,13 @@ p.nodedepth=5
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-使用时 [`QueryBuilder#storeQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) 方法，给定 `Query` 作为文件或属性存储在存储库中，具体情况如下： `createFile` 参数值。 以下示例说明如何保存 `Query` 到路径 `/mypath/getfiles` 作为文件：
+使用时 [`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-) 方法，给定 `Query` 作为文件或属性存储在存储库中，具体情况如下： `createFile` 参数值。 以下示例说明如何保存 `Query` 到路径 `/mypath/getfiles` 作为文件：
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-任何之前存储的查询都可以使用从存储库中加载 [`QueryBuilder#loadQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) 方法：
+任何之前存储的查询都可以使用从存储库中加载 [`QueryBuilder#loadQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-) 方法：
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -445,11 +445,11 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 `http://<host>:<port>/libs/cq/search/content/querydebug.html`
 
-或者查询生成器JSON servlet位于
+或者，也可以使用位于的查询生成器JSON servlet
 
 `http://<host>:<port>/bin/querybuilder.json?path=/tmp`
 
-`path=/tmp` 只是一个例子。
+此 `path=/tmp` 只是一个示例。
 
 ### 常规调试Recommendations {#general-debugging-recommendations}
 
@@ -458,11 +458,11 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 说明 **所有** 在开发周期期间针对目标索引集进行查询。
 
 1. 为QueryBuilder启用DEBUG日志，以获取基础、可解释的XPath查询
-   * 导航到 `https://<host>:<port>/system/console/slinglog`。为创建新的记录器 `com.day.cq.search.impl.builder.QueryImpl` 在 **调试**.
-1. 为上述类启用DEBUG后，日志将显示查询生成器生成的XPath。
+   * 导航到 `https://<host>:<port>/system/console/slinglog`。为创建记录器 `com.day.cq.search.impl.builder.QueryImpl` 在 **调试**.
+1. 为上述类启用DEBUG后，日志显示由Query Builder生成的XPath。
 1. 从关联的Query Builder查询的日志条目中复制XPath查询，例如：
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
-1. 将XPath查询粘贴到Explain Query中作为XPath以获取查询计划。
+1. 将XPath查询粘贴到Explain Query as XPath中，以便获取查询计划。
 
 ### 通过Query Builder Debugger获取可解释的XPath {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
@@ -473,11 +473,11 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 1. 在Query Builder Debugger中提供查询生成器查询
 1. 执行搜索
 1. 获取生成的XPath
-1. 将XPath查询粘贴到Explain Query中作为XPath以获取查询计划
+1. 将XPath查询粘贴到Explain Query as XPath中，以便获取查询计划
 
 >[!NOTE]
 >
->非查询生成器查询(XPath、JCR-SQL2)可以直接提供给Explain查询。
+>可以直接提供非查询生成器查询(XPath、JCR-SQL2)来解释查询。
 
 ## 使用日志记录调试查询 {#debugging-queries-with-logging}
 
@@ -502,7 +502,7 @@ com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```
 
-如果您有一个使用谓词计算器的查询，该计算器过滤或使用按比较器排序的自定义顺序，这也会在查询中记录：
+如果您有一个使用谓词计算器的查询，该计算器过滤或使用按比较器排序的自定义顺序，则查询中会注明该值：
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -521,10 +521,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **描述** |
 |---|---|
-| [com.day.cq.search](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | 基本查询生成器和查询API |
-| [com.day.cq.search.result](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | 结果API |
-| [com.day.cq.search.facets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Facet |
-| [com.day.cq.search.facets.buckets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 分段（包含在Facet中） |
-| [com.day.cq.search.eval](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | 谓词求值器 |
-| [com.day.cq.search.facets.extractors](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet提取器（用于评估器） |
-| [com.day.cq.search.writer](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | 查询生成器servlet的JSON结果点击编写器(`/bin/querybuilder.json`) |
+| [com.day.cq.search](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | 基本查询生成器和查询API |
+| [com.day.cq.search.result](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | 结果API |
+| [com.day.cq.search.facets](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Facet |
+| [com.day.cq.search.facets.buckets](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 分段（包含在Facet中） |
+| [com.day.cq.search.eval](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | 谓词求值器 |
+| [com.day.cq.search.facets.extractors](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet提取器（用于评估器） |
+| [com.day.cq.search.writer](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | 查询生成器servlet的JSON结果点击编写器(`/bin/querybuilder.json`) |

@@ -1,11 +1,11 @@
 ---
-title: Cloud Manager 常见问题解答
+title: Cloud Manager 常见问题
 description: 在AEMas a Cloud Service中查找有关Cloud Manager的最常见问题的答案。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 91%
+source-wordcount: '987'
+ht-degree: 64%
 
 ---
 
@@ -14,25 +14,25 @@ ht-degree: 91%
 
 本文档针对AEMas a Cloud Service中有关Cloud Manager的最常见问题提供了答案。
 
-## 是否可以将 Java 11 与 Cloud Manager 构建一起使用？ {#java-11-cloud-manager}
+## 是否可以将Java™ 11与Cloud Manager内部版本一起使用？ {#java-11-cloud-manager}
 
-是。您将需要添加 `maven-toolchains-plugin` 和恰当的 Java 11 设置。
+是。添加 `maven-toolchains-plugin` 具有适用于Java™ 11的正确设置。
 
 [此处](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)记录了该流程。
 
 有关示例，请参阅 [wknd 示例项目代码](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
-## 从Java 8切换到Java 11后，我的构建失败，并显示一个有关maven-scr-plugin的错误。 我该怎么办？ {#build-fails-maven-scr-plugin}
+## 从Java™ 8切换到Java™ 11后，我的构建失败，并显示一个有关maven-scr-plugin的错误。 我该怎么办？ {#build-fails-maven-scr-plugin}
 
-尝试将AEM Cloud Manager内部版本从Java 8切换到11时，该内部版本可能会失败。 如果您遇到以下错误，则需要移除 `maven-scr-plugin` 并将所有 OSGi 注释转换为 OSGi R6 注释。
+尝试将AEM Cloud Manager内部版本从Java™ 8切换到11时，该内部版本可能会失败。 如果遇到以下错误，则必须删除 `maven-scr-plugin` 并将所有OSGi注释转换为OSGi R6注释。
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-有关如何删除此插件的说明，请见[此处](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)。
+有关如何删除此插件的说明，请参阅 [此处](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
-## 从Java 8切换到Java 11后，我的内部版本失败，并显示一个有关RequireJavaVersion的错误。 我该怎么办？ {#build-fails-requirejavaversion}
+## 从Java™ 8切换到Java™ 11后，我的内部版本失败，并显示一个有关RequireJavaVersion的错误。 我该怎么办？ {#build-fails-requirejavaversion}
 
 对于 Cloud Manager 构建，`maven-enforcer-plugin` 可能会失败，并显示此错误。
 
@@ -40,9 +40,9 @@ ht-degree: 91%
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-这是一个已知问题，导致此问题的原因是 Cloud Manager 使用其他版本的 Java 来运行 maven 命令而不是编译代码。 只需从 `maven-enforcer-plugin` 配置中忽略 `requireJavaVersion`。
+此错误是一个已知问题，原因在于Cloud Manager使用其他版本的Java™运行maven命令而不是编译代码。 只需从 `maven-enforcer-plugin` 配置中忽略 `requireJavaVersion`。
 
-## 代码质量检查失败，并且我们的部署出现卡滞。 是否能通过某种方式绕过此检查？ {#deployment-stuck}
+## 代码质量检查失败，部署停滞。 是否能通过某种方式绕过此检查？ {#deployment-stuck}
 
 是。除了安全性评级之外，所有代码质量检查故障都是非关键量度，因此，可以在部署管道中，通过扩展结果 UI 中的项目来绕过它们。
 
@@ -54,9 +54,9 @@ ht-degree: 91%
 
 是。对于开发人员部署，Git 分支 `pom.xml` 文件必须在 `<version>` 值的末尾包含 `-SNAPSHOT`。
 
-这样一来，在版本未更改的情况下，仍能安装后续部署。 在开发人员部署中，不会为 Maven 构建添加或生成自动版本。
+当版本未更改时，此值允许仍安装后续部署。 在开发人员部署中，不会为 Maven 构建添加或生成自动版本。
 
-您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager 会自动设置适当的版本号并在 Git 中为您创建标记。 如果需要，可以稍后参考此标记。
+您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager 会自动设置适当的版本号并在 Git 中为您创建标记。 如有必要，可以稍后引用此标记。
 
 [此处记录了](/help/implementing/cloud-manager/managing-code/project-version-handling.md)有关版本处理的更多详细信息。
 
@@ -66,7 +66,7 @@ ht-degree: 91%
 
 对于暂存和生产部署中的自定义版本控制，请设置适当的三部分 maven 版本，如 `1.0.0`。 每次部署到生产环境时提高版本。
 
-Cloud Manager 自动将其版本添加到暂存和生产构建，并创建 Git 分支。 无需特殊配置。 如果您未如前所述设置 maven 版本，部署仍将成功，并且会自动设置版本。
+Cloud Manager 自动将其版本添加到暂存和生产构建，并创建 Git 分支。 无需特殊配置。 如果您未按照之前所述设置maven版本，则部署仍会成功，并且会自动设置版本。
 
 ## 虽然在 Cloud Manager 部署中，我的 maven 构建失败，但它会在本地构建，并且不会产生错误。 有什么问题吗？ {#maven-build-fail}
 
@@ -85,11 +85,11 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-`sling-distribution-importer` 用户需要对 `ui.content package` 中定义的内容路径拥有附加权限。  这通常意味着您需要为 `/conf` 和 `/var`添加权限。
+`sling-distribution-importer` 用户需要对 `ui.content package` 中定义的内容路径拥有附加权限。  此规则通常意味着您必须为两者添加权限 `/conf` 和 `/var`.
 
 解决方案是向应用程序部署包中添加 [RepositoryInitializer OSGi 配置](/help/implementing/deploying/overview.md#repoint)脚本，为 `sling-distribution-importer` 用户添加 ACL。
 
-在前面的示例错误中，包 `myapp-base.ui.content-*.zip` 包括 `/conf` 和 `/var/workflow` 下的内容。 为了成功部署，需要这些路径下的 `sling-distribution-importer` 的权限。
+在前面的示例错误中，包 `myapp-base.ui.content-*.zip` 包括 `/conf` 和 `/var/workflow` 下的内容。 为了部署成功，请将 `sling-distribution-importer` 在这些路径下是必要的。
 
 以下是 [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi 配置的示例，该配置为 `sling-distribution-importer` 用户添加附加权限。  该配置在 `/var` 下添加权限。  此类配置必须添加到 `/apps/myapp/config`（其中 myapp 是存储应用程序代码的文件夹）下的应用程序包中。
 
@@ -98,22 +98,22 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 如果[添加 RepositoryInitializer OSGi 配置](#cloud-manager-deployment-cloud-service)并未修复错误，则可能是由于这些附加问题之一。
 
 * 部署可能失败，因为 OSGi 配置不正确，中断了现成的服务。
-   * 在部署期间检查日志，查看是否存在任何明显错误。
+   * 在部署期间检查日志，以便查看是否存在任何明显的错误。
 
-* 由于 Dispatcher 或 Apache 配置不正确，部署可能会失败。
-   * 确保使用 SDK 中包含的 Docker 映像在本地测试 Apache 和 Dispatcher 配置。
-   * 请参阅[云中 Dispatcher](/help/implementing/dispatcher/disp-overview.md#content-delivery)，了解如何设置 Dispatcher Docker 容器可促进本地测试。
+* 由于Dispatcher或Apache配置错误，部署可能会失败。
+   * 确保使用SDK中包含的Docker映像在本地测试Apache和Dispatcher配置。
+   * 参见 [云中的调度程序](/help/implementing/dispatcher/disp-overview.md#content-delivery) 有关如何设置Dispatcher Docker容器以轻松进行本地测试。
 
 * 在将内容包（Sling 分发）从作者复制到发布实例的过程中，由于其他一些故障，部署可能会失败。
-   * 按照以下步骤在本地设置上模拟问题。
+   * 请按照以下步骤操作，以便能够在本地设置中模拟问题。
       1. 使用最新的 AEM SDK jar 在本地安装作者和发布实例。
-      1. 登录作者实例。
+      1. 登录到创作实例。
       1. 前往&#x200B;**工具** -> **部署** -> **分发**。
       1. 分发作为代码库一部分的内容包，并查看队列是否因错误而阻塞。
 
 ## 我无法使用 aio 命令设置变量。 我该怎么办？ {#set-variable}
 
-在尝试通过 `aio` 命令列出或设置管道变量时，您可能会收到如下所示的 `403` 错误。
+您可能会收到 `403` 尝试通过列出或设置管道变量时出现以下错误 `aio` 命令。
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222
@@ -131,6 +131,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-在此情况下，需要在 Admin Console 中将执行这些命令的用户添加到&#x200B;**部署经理**&#x200B;角色。
+在这种情况下，必须将运行这些命令的用户添加到 **部署管理员** Admin Console中的角色。
 
-有关更多详细信息，请参阅 [API 权限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)。
+有关更多详细信息，请参阅 [API 权限](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)。

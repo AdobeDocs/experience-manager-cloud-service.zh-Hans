@@ -2,9 +2,9 @@
 title: 体验片段概述
 description: 扩展Adobe Experience Manager as a Cloud Service体验片段。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1641'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 An [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 由一个或多个组件组成，包括可在页面中引用的内容和布局。
 
-体验片段主控和/或变体使用：
+体验片段主控或/和变体使用：
 
 * `sling:resourceType` ： `/libs/cq/experience-fragments/components/xfpage`
 
-因为没有 `/libs/cq/experience-fragments/components/xfpage/xfpage.html` 它还原为
+因为没有 `/libs/cq/experience-fragments/components/xfpage/xfpage.html`，它还原为
 
 * `sling:resourceSuperType` : `wcm/foundation/components/page`
 
@@ -27,7 +27,7 @@ An [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.
 
 使用 `.plain.` 选择器时，您可以访问纯HTML演绎版。
 
-这可以从浏览器中获得，但其主要目的是允许其他应用程序（例如，第三方Web应用程序、自定义移动实施）仅使用URL直接访问体验片段的内容。
+可以从浏览器中使用此演绎版。 但是，其主要目的是允许其他应用程序（例如，第三方Web应用程序、自定义移动实施）仅使用URL直接访问体验片段的内容。
 
 纯HTML演绎版将协议、主机和上下文路径添加到路径中，这些路径为：
 
@@ -41,11 +41,11 @@ An [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.
 
 >[!NOTE]
 >
->链接始终引用发布实例。 这些链接旨在由第三方使用，因此将始终从发布实例而不是作者中调用链接。
+>链接始终引用发布实例。 它们旨在供第三方使用，因此始终从发布实例（而非创作实例）调用链接。
 
 ![普通HTML演绎版](assets/xf-14.png)
 
-纯格式副本选择器使用转换器，而不是其他脚本； [Sling重写器](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 用作转换器。 此配置于
+纯格式副本选择器使用转换器，而不是其他脚本。 此 [Sling重写器](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) 用作转换器。 此转换器配置如下：
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -55,12 +55,12 @@ HTML演绎版是使用Sling重写器管道生成的。 管道定义于 `/libs/ex
 
 * `allowedCssClasses`
    * 匹配应保留在最终演绎版中的CSS类的RegEx表达式。
-   * 如果客户想要删除某些特定的CSS类，这将很有用
+   * 如果客户想要删除某些特定的CSS类，则此选项非常有用
 * `allowedTags`
    * 最终演绎版中允许的HTML标签列表。
    * 默认情况下，允许使用以下标记（无需配置）：html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link和script
 
-建议使用叠加配置重写器。 参见 [AEMas a Cloud Service中的叠加](/help/implementing/developing/introduction/overlays.md)
+Adobe建议使用叠加配置重写器。 参见 [AEMas a Cloud Service中的叠加](/help/implementing/developing/introduction/overlays.md).
 
 ## 体验片段的模板 {#templates-for-experience-fragments}
 
@@ -71,9 +71,9 @@ HTML演绎版是使用Sling重写器管道生成的。 管道定义于 `/libs/ex
 <!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
 
-在开发体验片段的新模板时，您可以遵循可编辑模板的标准实践。
+为体验片段开发新模板时，您可以遵循可编辑模板的标准实践。
 
-<!-- When developing a new template for Experience Fragments you can follow follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+<!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
 创建由检测到的体验片段模板 **创建体验片段** 向导中，必须遵循以下规则集之一：
@@ -85,7 +85,7 @@ HTML演绎版是使用Sling重写器管道生成的。 管道定义于 `/libs/ex
 
    1. 模板名称必须以下列内容开头：
       `experience-fragments`
-这允许用户在/content/experience-fragments中创建体验片段作为 `cq:allowedTemplates` 此文件夹的属性包括名称以开头的所有模板 `experience-fragment`. 客户可以更新此属性以包含他们自己的命名方案或模板位置。
+此模式允许用户在/content/experience-fragments中创建体验片段作为 `cq:allowedTemplates` 此文件夹的属性包括名称以开头的所有模板 `experience-fragment`. 客户可以更新此属性以包含他们自己的命名方案或模板位置。
 
 1. [允许的模板](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) 可以在体验片段控制台中配置。
 
@@ -102,7 +102,7 @@ HTML演绎版是使用Sling重写器管道生成的。 管道定义于 `/libs/ex
 
 开发要与/在体验片段中使用的组件时，应遵循标准实践。
 
-唯一额外的配置是确保模板上允许组件，这是通过内容策略实现的。
+唯一额外的配置是确保模板上允许组件。 此津贴通过内容政策实现。
 
 <!--
 [Developing components](/help/sites-developing/components.md) for use with/in Experience Fragments follow standard practices.
@@ -136,15 +136,15 @@ The only additional configuration is to ensure that the components are [allowed 
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-链接外部化器用于确定在创建Target选件的HTML版本(随后将发送到Adobe Target)时所需的正确URL。 这是必需的，因为Adobe Target要求可以公开访问TargetHTML选件中的所有链接；这意味着链接引用的任何资源以及体验片段本身必须在使用之前发布。
+链接外部化器用于确定在创建Target选件的HTML版本时所需的正确URL，然后会将该URL发送到Adobe Target。 此流程是必要的，因为Adobe Target要求可以公开访问TargetHTML选件中的所有链接。 这意味着链接引用的任何资源以及体验片段本身必须在使用之前发布。
 
 默认情况下，当您构建TargetHTML选件时，会向AEM中的自定义Sling选择器发送请求。 此选择器名为 `.nocloudconfigs.html`. 顾名思义，它创建了体验片段的纯HTML渲染，但不包括云配置（这会是多余的信息）。
 
-生成HTML页后，Sling重写器管道对输出进行修改：
+生成“HTML”页面后，Sling重写器管道将修改为输出：
 
-1. 此 `html`， `head`、和 `body` 元素将被替换为 `div` 元素。 此 `meta`， `noscript` 和 `title` 元素会被删除（它们是原始元素的子元素） `head` 元素取代，则由元素取代时不予以考虑 `div` 元素)。
+1. 此 `html`， `head`、和 `body` 元素将被替换为 `div` 元素。 此 `meta`， `noscript`、和 `title` 元素会被删除（它们是原始元素的子元素） `head` 元素所取代，且由取代时不会考虑 `div` 元素)。
 
-   这样做是为了确保可将HTMLTarget选件包含在Target活动中。
+   完成此过程是为了确保Target活动可以包含HTMLTarget选件。
 
 2. AEM修改HTML中存在的任何内部链接，以便这些链接指向已发布的资源。
 
@@ -152,16 +152,16 @@ This feature can be [enabled on an author instance of AEM](/help/sites-administe
 
    1. `src` 属性
    2. `href` 属性
-   3. `*-src` 属性（如data-src、custom-src等）
-   4. `*-href` 属性(如 `data-href`， `custom-href`， `img-href`、等)
+   3. `*-src` 属性(例如 `data-src`、和 `custom-src`)
+   4. `*-href` 属性(例如 `data-href`， `custom-href`、和 `img-href`)
 
    >[!NOTE]
    >
-   >在大多数情况下，HTML中的内部链接是相对链接，但在某些情况下，自定义组件可能会在HTML中提供完整的URL。 默认情况下，AEM会忽略这些完全成熟的URL并且不会进行任何修改。
+   >HTML中的内部链接是相对链接，但在某些情况下，自定义组件可能会在HTML中提供完整的URL。 默认情况下，AEM会忽略这些完全成熟的URL并且不会进行任何修改。
 
    这些属性中的链接通过AEM链接外部化器运行 `publishLink()` 以重新创建URL，就像在已发布的实例上一样，并且该URL已公开可用。
 
-使用现成实施时，上述流程应足以从体验片段生成Target选件，然后将其导出到Adobe Target。 但是，有一些用例未在此流程中说明；这些用例包括：
+使用现成实施时，上述流程应足以从体验片段生成Target选件，然后将其导出到Adobe Target。 但是，有一些用例未在此流程中说明。 未说明的这些情况包括以下几种：
 
 * Sling映射仅在发布实例上可用
 * Dispatcher重定向
@@ -170,13 +170,13 @@ This feature can be [enabled on an author instance of AEM](/help/sites-administe
 
 ### 链接重写器提供程序接口 {#link-rewriter-provider-interface}
 
-对于更复杂的案例，不属于 [默认](#default-link-rewriting)，AEM提供链接重写器提供程序接口。 这是 `ConsumerType` 接口，您可以在捆绑包中实施该接口作为服务。 它绕过AEM对HTML选件的内部链接执行的修改（从体验片段渲染）。 此界面允许您自定义重写内部HTML链接的流程，以符合您的业务需求。
+对于更复杂的案例，不属于 [默认](#default-link-rewriting)，AEM提供链接重写器提供程序接口。 此界面是一个 `ConsumerType` 接口，您可以在捆绑包中实施该接口作为服务。 它绕过AEM对HTML选件的内部链接执行的修改（从体验片段渲染）。 此界面允许您自定义重写内部HTML链接的流程，以符合您的业务需求。
 
 实施此接口作为服务的用例示例包括：
 
 * Sling映射在发布实例上启用，但在创作实例上未启用
-* 调度程序或类似技术用于在内部重定向URL
-* 有 `sling:alias mechanisms` 资源就位
+* Dispatcher或类似技术用于在内部重定向URL
+* 此 `sling:alias mechanisms` 资源已准备就绪
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 ### 如何使用链接重写器提供程序界面 {#how-to-use-the-link-rewriter-provider-interface}
 
-要使用接口，您首先需要创建一个包，其中包含用于实现链接重写器提供程序接口的新服务组件。
+要使用该接口，首先必须创建一个包，其中包含用于实现链接重写器提供程序接口的新服务组件。
 
 此服务用于插入Experience Fragment Export to Target重写，以便能够访问各种链接。
 
@@ -232,7 +232,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 }
 ```
 
-要使服务正常工作，现在需要在服务中实施三种方法：
+要使服务正常工作，现在必须在服务中实施三种方法：
 
 * `[shouldRewrite](#shouldrewrite)`
 * `[rewriteLink](#rewritelink)`
@@ -243,7 +243,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 #### 应重写 {#shouldrewrite}
 
-您需要向系统指示在对特定体验片段变量调用“导出到Target”时是否需要重写链接。 要执行此操作，请实施以下方法：
+向系统指示在对特定体验片段变量调用“导出到Target”时是否必须重写链接。 您可以实施以下方法：
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
@@ -256,9 +256,9 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
-此方法接收导出到Target系统当前正在重写的体验片段变体作为参数。
+此方法接收导出到Target系统正在重写的体验片段变体作为参数。
 
-在上面的示例中，我们要重写：
+在上例中，您要重写：
 
 * 链接存在于 `src`
 
@@ -271,22 +271,22 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 #### rewritelink {#rewritelink}
 
-对于受重写过程影响的体验片段变体，它会继续让服务处理链接重写。 每当在内部HTML中遇到链接时，都会调用以下方法：
+对于受重写过程影响的体验片段变体，它会继续让服务处理链接重写。 每次在内部HTML中遇到链接时，都会调用以下方法：
 
 `rewriteLink(String link, String tag, String attribute)`
 
 作为输入，方法接收参数：
 
 * `link`
-此 `String` 表示当前正在处理的链接。 这通常是指向创作实例上资源的相对URL。
+此 `String` 表示正在处理的链接。 此表示法通常是指向创作实例上资源的相对URL。
 
 * `tag`
-当前正在处理的HTML元素的名称。
+正在处理的HTML元素的名称。
 
 * `attribute`
 确切的属性名称。
 
-例如，如果“导出到目标”系统当前正在处理此元素，则可以定义 `CSSInclude` 作为：
+例如，如果“导出至目标”系统正在处理此元素，则可以定义 `CSSInclude` 作为：
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -298,9 +298,9 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
 ```
 
-在创建服务时，您可以根据给定的输入做出决策，然后相应地重写链接。
+在创建服务时，您的决策基于给定的输入，然后相应地重写链接。
 
-例如，我们想要删除 `/etc.clientlibs` URL的一部分并添加相应的外部域。 为了简单起见，我们将考虑我们有权访问用于您服务的资源解析程序，例如 `rewriteLinkExample2`：
+例如，您要删除 `/etc.clientlibs` URL的一部分并添加相应的外部域。 为简化操作，请考虑您有权访问服务的资源解析程序，例如 `rewriteLinkExample2`：
 
 >[!NOTE]
 >
@@ -337,7 +337,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->如果上述方法返回 `null`，则Export to Target系统将保持链接不变，即指向资源的相对链接。
+>如果上述方法返回 `null`之后，导出到Target系统会将链接保持原样，即指向资源的相对链接。
 
 #### 优先级 — getPriority {#priorities-getpriority}
 

@@ -2,9 +2,9 @@
 title: 存储库现代化器
 description: 存储库现代化器
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '301'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ Repository Modernizer是一个实用程序，开发用于通过将内容和代�
 
 ## 简介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service为您的AEM项目提供了许多新功能和可能性。 但是，需要对Adobe Experience Manager Maven项目进行一些更改才能与AEM Cloud Service兼容。 从较高层面来看，AEM要求将 **内容** 和 **代码** 分为离散的子包，以遵循可变和不可变内容之间的拆分。 请参阅 [AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 有关用于Cloud Service的新AEM项目结构的更多详细信息。
+Adobe Experience Manager as a Cloud Service为您的AEM项目提供了许多新功能和可能性。 但是，需要对Adobe Experience Manager Maven项目进行一些更改才能与AEM Cloud Service兼容。 从较高层面来看，AEM要求将 **内容** 和 **代码** 分成离散的子包，以遵循可变和不可变内容之间的拆分。 参见 [AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) 有关用于Cloud Service的新AEM项目结构的更多详细信息。
 
 Repository Modernizer通过创建以下部署结构来创建兼容的AEM Cloud Service项目结构：
 
@@ -32,14 +32,14 @@ Repository Modernizer通过创建以下部署结构来创建兼容的AEM Cloud S
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* 通过Adobe I/OCLI ：建议通过 `aio-cli-plugin-aem-cloud-service-migration` (适用于Adobe I/OCLI的AEMas a Cloud Service代码重构插件)。
+* 通过Adobe Developer CLI ：建议通过 `aio-cli-plugin-aem-cloud-service-migration` (适用于Adobe Developer CLI的AEMas a Cloud Service代码重构插件)。
 
-   请参阅 **[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 了解如何安装和使用插件。
+  参见 **[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 以便您了解如何安装和使用插件。
 
 * 作为独立实用程序：Repository Modernizer也可以作为独立实用程序执行。
 
-   请参阅 **[Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** 以了解如何使用此工具。
+  参见 **[Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** 以便您了解如何使用此工具。
 
-   >[!NOTE]
-   >
-   >Repository Modernizer是使用NodeJS开发的。 建议安装NodeJS 10.0+。
+  >[!NOTE]
+  >
+  >Repository Modernizer是使用NodeJS开发的。 建议安装NodeJS 10.0+。
