@@ -2,10 +2,10 @@
 title: 组件
 description: 组件是 AEM 中内容页面的基本创作构建基块
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 72%
+source-wordcount: '349'
+ht-degree: 63%
 
 ---
 
@@ -39,9 +39,11 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 ## 核心组件 {#core-components}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
 
 它们是使用 AEM 最佳实践构建的，是 AEM 创作体验的基础。开发人员可以轻松扩展核心组件，以满足特定项目需求。
+
+除了WCM核心组件之外，您还可以使用 [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). 这些核心组件提供了更易于使用的标准方法 [在AEM Sites页面中创建表单或添加表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### 配置模板 {#configuring-templates}
 

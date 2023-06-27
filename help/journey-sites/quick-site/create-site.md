@@ -2,10 +2,10 @@
 title: 从模板创建站点
 description: 了解如何使用站点模板快速创建新的 AEM 站点。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
 workflow-type: tm+mt
-source-wordcount: '1485'
-ht-degree: 99%
+source-wordcount: '1513'
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 99%
 
 使用模板创建新站点是非常轻松的。
 
-1. 登录您的 AEM 创作环境并导航到站点控制台
+1. 登录您的 AEM 创作环境并导航到 Sites 控制台
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
@@ -85,7 +85,7 @@ ht-degree: 99%
 
    ![选择模板](assets/select-site-template.png)
 
-1. 为站点提供标题。如果忽略，则可以从标题提供或生成站点名称。
+1. 为站点提供标题。可以提供站点名称，也可以从标题生成站点名称（如果被忽略）。
 
    * 站点标题显示在浏览器标题栏中。
    * 站点名称会成为 URL 的一部分。
@@ -98,7 +98,7 @@ ht-degree: 99%
 
    ![“成功”对话框](assets/success.png)
 
-1. 在站点控制台中，新站点是可见的，并且可以导航以探索其由模板定义的基本结构。
+1. 在 Sites 控制台中，新站点是可见的，并且可以导航以探索其由模板定义的基本结构。
 
    ![新站点结构](assets/new-site.png)
 
@@ -133,7 +133,7 @@ ht-degree: 99%
 
 现已创建站点，可以下载模板生成的站点主题，并将它提供给前端开发人员进行自定义。
 
-1. 在站点控制台上，显示&#x200B;**站点**&#x200B;边栏。
+1. 在 Sites 控制台上，显示&#x200B;**站点**&#x200B;边栏。
 
    ![显示站点边栏](assets/show-site-rail.png)
 
@@ -184,3 +184,4 @@ ht-degree: 99%
 * [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) – 如果您希望在从模板创建 AEM 站点后进一步对其进行自定义，可参考本指南以详细了解如何管理 AEM 站点的页面。
 * [如何使用包](/help/implementing/developing/tools/package-manager.md) – 可使用包导入和导出存储库内容。本文档说明了在 AEM 6.5 中使用包的方式，此方式也适用于 AEMaaCS。
 * [站点管理文档](/help/sites-cloud/administering/site-creation/create-site.md) – 查看有关站点创建的技术文档，了解有关快速站点创建工具的功能的更多详细信息。
+* [在AEM Sites页面中创建表单或添加表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)  — 了解将表单集成到网站中的分步技术和最佳实践，优化数字体验以发挥最大影响。
