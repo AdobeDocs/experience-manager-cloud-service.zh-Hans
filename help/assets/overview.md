@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 68%
 
 ---
 
@@ -36,6 +36,22 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云�
 * **始终在线**：零停机时间 (0dt)，这得益于部署在具有备份和冗余的群集中的实例。升级也可以实现 0dt。
 * **持续监控**：系统监控是自动实施的，内置检查和触发器可帮助保持性能、可用性和整体可靠性。
 * **无忧部署**：云中的 Experience Manager 操作是完全自动执行的，无需手动干预。对于自动化部署，Cloud Manager (CM) 组件将使构建包含自定义代码的可部署 Docker 图像的过程的自动化。
+
+## 可用的基于角色的体验
+
+Adobe 为您提供强大的数字资产管理（DAM）解决方案，让您能够充分利用数字资产。 Adobe Experience Manager Assets具有两个使用同一Cloud Services存储库的独立体验：
+
+* **管理员视图**：现有的Assetsas a Cloud Service用户界面。 使用“管理员视图”可获得所有高级资产管理功能，包括集成、工作流、内容自动化、发布等。
+
+* **资产视图**：Adobe的轻量级资源管理体验，可用于存储、管理、发现和使用数字资源。 简化的用户界面，包含基本资产管理功能。 专为轻量级DAM用户设计，重点关注上传、元数据管理、搜索、下载和共享。
+
+有权访问“管理员”视图的用户还可以访问“资产”视图。 Assets视图提供了简化的用户界面，让您能够轻松管理、发现和分发数字资产。 来自不同职能部门（包括创意人员、营销和业务线团队）的广泛用户可就资产进行协作，并在需要时随时随地访问正确的、经过批准的资产。 许多临时DAM用户更喜欢资产视图，因为它只包含功能的子集。 该体验面向创意人员、只读资产使用者和较轻的DAM用户。
+
+DAM库管理员、开发人员和超级用户可以根据需要继续使用管理员视图或在用户界面之间切换。 您可以选择最适合您的角色的体验。
+
+![添加标记](assets/newui-overview.svg)
+
+有关如何通过“管理员”视图访问“资产”视图及其提供的一些简化情况的信息，请参阅“资产”视图。
 
 ## 新 Assets 功能 {#whats-new-assets}
 
