@@ -2,10 +2,10 @@
 title: 使用Screens内容提供程序
 description: 本页介绍如何使用Screens Content Provider创建内容。
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 21%
+ht-degree: 16%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 21%
 
 ## 目标 {#objective}
 
-以下部分介绍设置后如何使用Screens内容提供程序 [Screens服务提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en).
+以下部分介绍设置后如何使用Screens内容提供程序 [Screens服务提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en).
 
 ## 使用 Screens Content Provider {#screens-content-provider}
 
 >[!NOTE]
 >**先决条件**
->在开始阅读本节之前，请参阅 [设置Screens服务提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) 以了解如何从Screens Services Provider导航到此用户界面。
+>在开始阅读本节之前，请参阅 [设置Screens服务提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) 以了解如何从Screens Services Provider导航到此用户界面。
 
-按照以下步骤登录Screens Content Provider：
+按照以下步骤登录到Screens内容提供程序：
 
 1. 导航到 [Adobe Experience Cloud](https://experience.adobe.com) 主页。
 
@@ -40,16 +40,15 @@ ht-degree: 21%
    ![](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >如果您尚未创建任何程序，请参阅 [首次登录Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)，这将引导您在Cloud Manager中为Screensas a Cloud Service添加新程序。
+   >如果您尚未创建任何程序，请参阅 [首次登录Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en). 本主题将指导您在Cloud Manager中添加Screensas a Cloud Service程序。
 
-
-1. 从中选择链接 **环境** 用于访问Screens Content Provider的卡。
+1. 从中选择链接 **环境** 信息卡，以便您可以访问Screens内容提供商。
 
    ![](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
    登录Screens Content Provider后，您现在可以在内容播放中创建内容。
 
-   您必须使用Screens内容提供程序来创建和管理：
+   使用Screens Content Provider创建和管理以下内容：
 
    * 项目
    * 渠道
@@ -57,4 +56,4 @@ ht-degree: 21%
 
 ## 后续内容 {#whats-next}
 
-现在，您已了解如何导航到Screens内容提供商，您现在应通过下一次查看文档来继续您的Screensas a Cloud Service历程， [在Screens中创建和管理项目as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
+现在您已了解如何导航到Screens内容提供商，请通过查看文档继续您的Screensas a Cloud Service历程， [在Screens中创建和管理项目as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).

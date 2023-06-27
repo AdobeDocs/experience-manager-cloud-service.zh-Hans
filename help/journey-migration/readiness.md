@@ -1,11 +1,11 @@
 ---
 title: 就绪阶段
-description: 了解您需要执行的步骤，以便确保AEM安装已准备好移至云中
+description: 了解您必须执行的步骤，以便能够确保AEM安装已准备好移动到云。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 8%
+source-wordcount: '2066'
+ht-degree: 4%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
 >title="规划过渡"
->abstract="在开始过渡到 Cloud Service 的历程之前，您应该熟悉 AEM as a Cloud Service，并查看已对它所做的显著更改以及已替换或已弃用的功能。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
+>abstract="在开始Cloud Service过渡历程之前，请熟悉AEMas a Cloud Service。 查看对其所做的显着更改以及被替换或弃用的功能。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
 
-在AEMas a Cloud Service迁移历程的这一阶段，您将熟悉AEMas a Cloud Service、审查引入的显着更改并了解成功迁移到云需要做哪些规划。
+在AEMas a Cloud Service迁移历程的这一阶段，您需要熟悉AEMas a Cloud Service。 您可以查看引入的显着更改，并了解为成功迁移到云进行规划需要些什么。
 
 ## 迄今为止的故事 {#story-so-far}
 
-上一份文件， [AEMas a Cloud Service迁移入门](/help/journey-migration/getting-started.md)，概述了迁移到AEMas a Cloud Service所需经历的阶段列表，以及这样做的优势。
+上一份文件， [AEMas a Cloud Service迁移入门](/help/journey-migration/getting-started.md)，概述了您必须经历的阶段列表，以便您可以迁移到AEMas a Cloud Service。 它还概述了进行迁移的好处。
 
 ## 目标 {#objective}
 
@@ -32,7 +32,7 @@ ht-degree: 8%
 
 ## 查看AEMas a Cloud Service架构中的显着更改 {#notable-changes-in-aem-cloud-service-architecture}
 
-AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性。
+AEMas a Cloud Service为管理AEM项目提供了许多新功能和可能性。
 
 随着这些改进，与AEMas a Cloud Service相比，AEM和Adobe Managed Services的内部部署安装存在一些差异。
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
 <tbody>
   <tr>
     <td>将可变和不可变过滤器分隔到相应的包中</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">AEMas a Cloud Service显着更改</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">适用于AEM的AEM项目结构as a Cloud Service</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=zh-Hans">AEMas a Cloud Service显着更改</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">适用于AEM的AEM项目结构as a Cloud Service</a></td>
     <td>可部署到AEMas a Cloud Service的单个包可以具有子包，主要用于包含分隔到其自己的包中的可变和不可变内容。</td>
   </tr>
   <tr>
@@ -70,7 +70,7 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
   <tr>
     <td>复制代理已由Sling Content Distribution替换</td>
     <td></td>
-    <td>Sing Content Distribution取代了复制代理的概念。 如果存在利用复制代理的自定义，则必须重新设计它们。<br>不支持反向复制</td>
+    <td>Sing Content Distribution取代了复制代理的概念。 如果有使用复制代理的自定义项，则必须重新设计它们。<br>不支持反向复制</td>
   </tr>
   <tr>
     <td>CRX/DE和包管理器</td>
@@ -85,22 +85,22 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
   <tr>
     <td>长时间运行的作业</td>
     <td></td>
-    <td>避免执行长时间运行的作业（如Sling调度程序或Cron作业），因为容器中执行的AEM实例可以随时来来去去。<br>重新思考这些功能以将其卸载到Adobe I/O。</td>
+    <td>避免长时间运行作业，例如Sling调度程序或Cron作业，因为容器中运行的AEM实例随时可以来去去。<br>重新思考这些功能，以便将其卸载到Adobe Developer。</td>
   </tr>
   <tr>
     <td>切换到异步操作</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">配置异步操作</a></td>
-    <td>为了提高环境的整体性能，某些操作会在异步模式下执行。 当系统资源可用时，异步作业将排队并运行。</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/asynchronous-jobs.html?lang=en#configuring-asynchronous-msm-operations">配置异步操作</a></td>
+    <td>为了提高环境的整体性能，某些操作在异步模式下运行。 当系统资源可用时，异步作业将排队并运行。</td>
   </tr>
   <tr>
     <td>基于令牌的身份验证和集成策略</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">为服务器端API生成访问令牌</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">基于令牌的身份验证教程</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#the-server-to-server-flow">为服务器端API生成访问令牌</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication">基于令牌的身份验证教程</a></td>
     <td>AEM外部的系统通常会尝试在AEM中执行HTTP操作。<br>建议的方法是实施此处概述的策略，而不是依赖在AEM中使用密码创建本地用户名。</td>
   </tr>
   <tr>
     <td>文件IO/磁盘使用情况</td>
     <td></td>
-    <td>由于无法保证分配了多少磁盘空间以及容器中的实例来来去去，因此不建议使用文件I/O操作从附加到AEM实例的磁盘中写入或读取。</td>
+    <td>无法保证分配了多少磁盘空间，并且容器中的实例会来来去去。 因此，不建议使用文件I/O操作从连接到AEM实例的磁盘中写入或读取。</td>
   </tr>
   <tr>
     <td>DAM更新资产工作流</td>
@@ -109,48 +109,48 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
   </tr>
   <tr>
     <td>AEMas a Cloud Service中的资源上传方法和支持的工作流流程步骤</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">上传API比较和支持的WF流程步骤</a></td>
-    <td>在AEMas a Cloud Service中，在上传或下载资源期间，资源将直接流入或流出二进制存储。</br>AEMaaCS并不支持所有工作流流程步骤。</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis.html?lang=en#post-processing-workflows-steps">上传API比较和支持的WF流程步骤</a></td>
+    <td>在AEMas a Cloud Service中，在上传或下载资源期间，资源将直接流入或流出二进制存储。 <br>AEMaaCS并不支持所有工作流流程步骤。</td>
   </tr>
   <tr>
     <td>工作流启动器</td>
     <td></td>
-    <td>从代码中删除任何触发OOTB或自定义DAM更新资产工作流的工作流启动器。</br>Asset Processing Service将处理上传到AEMas a Cloud Service的所有资源。 有关自定义步骤，请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> 后处理工作流</a> 介绍如何设置和配置后处理工作流。</td>
+    <td>从代码中删除触发现成或自定义DAM更新资产工作流的任意工作流启动器。 <br>Asset Processing Service将处理上传到AEMas a Cloud Service的所有资源。 有关自定义步骤，请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> 后处理工作流</a> 介绍如何设置和配置后处理工作流。</td>
   </tr>
   <tr>
     <td>自定义演绎版步骤</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en#manage">处理配置文件</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en">处理配置文件</a></td>
     <td>必须通过创建相应的处理配置文件，将任何自定义演绎版生成、图像转换或视频编码卸载到资产处理服务。</td>
   </tr>
   <tr>
     <td>内容搜索与索引</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en">内容搜索和索引更改</a></td>
-    <td>索引的基础处理及其生效时间发生了重大变化。<br>在您将部署的代码中管理Oak索引之前，请完全了解并重新重构这些索引。</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=en">内容搜索和索引更改</a></td>
+    <td>索引的基础处理及其生效时间发生了重大变化。<br>在部署代码中管理Oak索引之前，请完全了解和重构这些索引。</td>
   </tr>
   <tr>
     <td>并非所有维护任务都是可配置的</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=en">AEMas a Cloud Service维护任务</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=en">AEMas a Cloud Service维护任务</a></td>
     <td>您只能使用AEMas a Cloud Service配置某些维护任务。</td>
   </tr>
   <tr>
     <td>对发布存储库的更改</td>
     <td></td>
-    <td>不允许直接更改发布存储库，但/home下的更改除外。 始终建议对作者进行更改并分发这些更改。 所有代码和配置更改必须通过相应的Cloud Manager管道部署。</td>
+    <td>不允许直接更改发布存储库，但/home下的更改除外。 始终建议分发对作者所做的任何更改。 所有代码和配置更改必须通过相应的Cloud Manager管道部署。</td>
   </tr>
   <tr>
     <td>Dispatcher配置和缓存</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=en#content-delivery">云中的调度程序</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=en#other-content">缓存管理<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">云中的调度程序</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=en#other-content">缓存管理<br></td>
     <td>Dispatcher配置必须遵循特定结构。<br>配置必须作为代码的一部分进行管理，并通过Cloud Manager管道进行部署。</td>
   </tr>
   <tr>
     <td>备份和恢复</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en">AEMas a Cloud Service备份和恢复</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en">AEMas a Cloud Service备份和恢复</a></td>
     <td></td>
   </tr>
   <tr>
     <td>身份验证更改</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hans">AEM as a Cloud Service 的 IMS 支持</td>
-    <td>如果在迁移到Cloud Service之前，您之前在author和publish上使用SAML 2.0集成，则主要更改是AEMas a Cloud ServiceAuthor仅与Adobe IMS集成。 但是，AEMas a Cloud Service发布层仍可以使用SAML或其他身份验证集成。 AEM as a Cloud Service 仅为作者、管理员和开发人员用户提供 IMS 身份验证支持。IMS身份验证不支持客户站点（如站点访客）的外部最终用户。</td>
+    <td>如果您之前在转到Cloud Service之前在创作和发布上都使用SAML 2.0集成，则主要更改是AEMas a Cloud Service创作仅与Adobe IMS集成。 但是，AEMas a Cloud Service发布层仍可以使用SAML或其他身份验证集成。 AEMas a Cloud Service仅为作者、管理员和开发用户提供IMS身份验证支持。 IMS身份验证不支持客户站点（如站点访客）的外部最终用户。</td>
   </tr>
 </tbody>
 </table>
@@ -159,7 +159,7 @@ AEM as a Cloud Service 为管理 AEM 项目提供了许多新功能和可能性�
 
 Adobe 不断评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。
 
-我们建议您查阅 [已弃用功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features) 熟悉Experience Manageras a Cloud Service中标记为已弃用的特性和功能，并了解对您的AEM部署有何影响。
+Adobe建议您参阅 [已弃用功能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html#deprecated-features) 熟悉Experience Manageras a Cloud Service中标记为已弃用的特性和功能。 了解对您的AEM部署有何影响。
 
 ## 计划审查AEM安装 {#review-planning}
 
@@ -169,15 +169,15 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ![图像](/help/journey-migration/assets/planning-phaseimg1.png)
 
-接下来，我们将详细探究每个步骤的含义。
+接下来，您将详细探究每个步骤的含义。
 
 ### 评估云服务准备情况 {#assess-cloud-readiness}
 
 第一步是评估您是否已准备好从现有AEM版本迁移至Cloud Service，并确定需要重构才能与AEMas a Cloud Service兼容的区域。
 
-您需要根据显着更改和已弃用功能对当前AEM源代码进行全面评估，以确定过渡历程中预期的工作量。
+根据显着更改和已弃用的功能，对当前AEM源代码进行全面评估，以确定过渡历程中预期的工作量。
 
-调查结果的数量将直接影响时间表和项目的整体成功。 因此，建议尽可能多地探索如何计划交付或开始重新设计符合AEMas a Cloud Service最佳实践所需的任何自定义项所需的对话。
+发现结果的数量会直接影响时间表和项目的整体成功。 因此，Adobe建议您尽可能多地发现，以便可以计划投放。 或者，启动对话，以便您可以重新设计符合AEMas a Cloud Service最佳实践所需的任何自定义设置。
 
 **Best Practice Analyzer**
 
@@ -187,7 +187,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 **创建云就绪性评估报告**
 
-下一步是根据迄今为止获得的所有知识编写报告。 为此，您可以从暂存和生产实例生成最佳实践分析器报告， [然后将其上传到Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#readiness-phase-cam) 操作项的可消化报告。
+下一步是根据迄今为止获得的所有知识创建报告。 您可以通过从暂存实例和生产实例生成最佳实践分析器报告来创建报告， [然后将其上传到Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#readiness-phase-cam) 操作项的可消化报告。
 
 典型报表应包含以下输入内容：
 
@@ -208,7 +208,7 @@ Best Practices Analyzer报告完成后，请与相关团队共享这些报告，
 
 如果您以前尚未建立关键绩效指标(KPI)，则建议为您的AEM实施建立KPI，以帮助您的团队专注于最重要的事情。
 
-参见 [开发KPI](https://guided.adobe.com/welcome/aem/part6.html) 以了解如何为您的业务目标选择合适的KPI。
+参见 [开发KPI](https://experienceleague.adobe.com/welcome/aem/part6.html) 这样您就可以了解如何为您的业务目标选择合适的KPI。
 
 ## 后续内容 {#what-is-next}
 
@@ -216,8 +216,8 @@ Best Practices Analyzer报告完成后，请与相关团队共享这些报告，
 
 ## 其他资源 {#additional-resources}
 
-* [Cloud Acceleration Manager快速入门](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)  — 有关如何使用Cloud Acceleration Manager加快迁移到云的综合指南
+* [Cloud Acceleration Manager快速入门](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)  — 有关如何使用Cloud Acceleration Manager加快迁移到云的综合指南。
 * [AEMas a Cloud Service：简介、架构和思维方式不同](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
 * [AEMCloud Service主页](/help/overview/home.md)  — 有关Experience Manageras a Cloud Service文档的概述，请从此处开始。
 * [AEMas a Cloud Service概述](/help/overview/home.md)  — 本指南提供了Experience Manageras a Cloud Service的概述，包括简介、术语和架构。
-* [载入历程](/help/journey-onboarding/overview.md) — 本指南概述了如何开始使用Experience Manageras a Cloud Service，包括如何获取访问权限和设置团队
+* [载入历程](/help/journey-onboarding/overview.md) — 本指南概述了如何开始使用Experience Manageras a Cloud Service，包括如何获取访问权限和设置团队。

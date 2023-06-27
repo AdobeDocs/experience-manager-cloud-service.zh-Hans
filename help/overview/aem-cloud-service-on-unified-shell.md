@@ -2,10 +2,10 @@
 title: Unified Shell 上的 AEM as a Cloud Service
 description: Unified Shell 上的 AEM as a Cloud Service
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 24ae6187813de801813236f0bbcb2ea51e8fe5e1
+source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '395'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service （创作服务）与 Unified Shell 集成，可改进用
 
 其好处包括：
 
-* 跨所有 Experience Cloud 应用程序进行单点登录
+* 跨所有Experience Cloud应用程序进行单点登录
 * 在组织之间轻松切换或切换到其他应用程序
 * 改进了产品帮助
 * 简单的产品内反馈按钮，用于报告问题或与 Adobe 分享想法
@@ -32,19 +32,19 @@ AEM as a Cloud Service （创作服务）与 Unified Shell 集成，可改进用
 >[!NOTE]
 >只有具有管理权限的帐户才能禁用 Unified Shell。
 
-1. 导航到&#x200B;**工具 – Cloud Services**。
+1. 单击 **“工具”>“Cloud Services”**.
 
-   管理员用户将看到 Unified Shell 配置信息卡，如下所示：
+   管理员用户会看到Unified Shell配置卡，如下所示：
 
    ![图像](/help/overview/assets/unifiedshell2.png)
 
-1. 单击 **Unified Shell 配置**。 然后，取消选中下面显示的复选框以禁用 Unified Shell：
+1. 单击 **Unified Shell配置**. 然后，取消选中下面显示的复选框以禁用 Unified Shell：
 
    ![图像](/help/overview/assets/unifiedshell3.png)
 
 ## 更改为深色主题 {#changing-to-dark-theme}
 
-要更改为深色主题，请单击您的用户档案图标。 此时将显示一个弹出窗口，如下所示。 您可以使用切换开关切换到 Unified Shell 程序的深色主题。
+要更改为深色主题，请单击您的配置文件图标。 此操作会显示一个弹出窗口，如下所示。 您可以使用切换开关切换到 Unified Shell 程序的深色主题。
 
 >[!INFO]
 >
@@ -60,7 +60,7 @@ AEM as a Cloud Service 提供三种类型的环境：“生产”、“暂存”
 
 ## 访问 AEM 收件箱 {#accessing-the-aem-inbox}
 
-单击 Unified Shell 中的铃铛图标，即可访问 AEM 收件箱。
+单击Unified Shell中的铃铛图标可访问AEM收件箱。
 
 >[!INFO]
 >
@@ -68,6 +68,6 @@ AEM as a Cloud Service 提供三种类型的环境：“生产”、“暂存”
 
 ![图像](/help/overview/assets/unifiedshell5.png)
 
-单击弹出窗口中的收件箱按钮，以转到您的 AEM 收件箱：
+单击弹出框中的“收件箱”按钮，即可转到AEM收件箱：
 
 ![图像](/help/overview/assets/unifiedshell6.png)
