@@ -6,10 +6,10 @@ role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 94825e3b60d970fec5bf696d932ca66bb83fd2f3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 11%
+source-wordcount: '358'
+ht-degree: 10%
 
 ---
 
@@ -31,8 +31,9 @@ ht-degree: 11%
 
 * AEM Formsas a Cloud Service不会为XDP和JSON架构文件生成缩略图。 该服务显示默认图标来代替缩略图。
 
-   ![Forms缩略图已知问题](/help/forms/assets/forms-tumbnail-known-issue.png)
+  ![Forms缩略图已知问题](/help/forms/assets/forms-tumbnail-known-issue.png)
 
+* 使用包含可重复元素的架构创建基于核心组件的自适应表单时，从自适应Forms编辑器中的数据模型树拖放可重复元素的选项不起作用。
 
 ## 限制 {#limitations}
 

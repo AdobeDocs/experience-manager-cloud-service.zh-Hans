@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1436'
 ht-degree: 3%
 
 ---
@@ -106,7 +106,7 @@ CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）�
 
 >[!NOTE]
 >
-> 如果选择reCAPTCHA v2配置且大小为 [!UICONTROL 不可见] 则显示/隐藏选项不适用。
+> 当您选择reCAPTCHA v2配置并且大小设置为 [!UICONTROL 不可见]，则显示/隐藏选项保持禁用状态。
 
 ### 验证验证码 {#validate-captcha}
 
