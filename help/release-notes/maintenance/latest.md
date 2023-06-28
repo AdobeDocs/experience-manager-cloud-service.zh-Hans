@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39696141a50bf8204d37341a85a4f4a8acae69db
+source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 32%
+source-wordcount: '297'
+ht-degree: 47%
 
 ---
 
@@ -13,44 +13,36 @@ ht-degree: 32%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 12255 {#release-12255}
+## 版本 12441 {#release-12441}
 
-以下是维护版本12255的持续改进，该版本于2023年6月13日公开发布。 此维护版本是对上一个维护版本 12142 的更新。
+下面总结了维护版本 12441 的持续改进，该版本已于 2023 年 6 月 27 日公开发布。此维护版本是对上一个维护版本 12255 的更新。
 
-2023.6.0功能激活将提供此维护版本的完整功能集。 请参阅 [Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 了解更多信息。
+2023.7.0功能激活将提供此维护版本的完整功能集。 请参阅 [Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 了解更多信息。
 
-### 增强 {#enhancements-12255}
+### 增强 {#enhancements-12441}
+
+- SITES-8769：改进ResponsiveGrid中的StyleImpl调用
+
+### 修复的问题 {#fixed-issues-12441}
+
+- 各种与辅助功能相关的更新
+- SITES-12688：页面编辑器：逻辑运算符或无法在资产查找器搜索中正常工作
+- SITES-4951：页面编辑器：页面编辑器中的标记搜索未找到子标记
+- SITES-12465：体验片段：箭头键在体验片段组件对话框中不起作用
+- SITES-12893：体验片段：对体验片段应用循环引用验证
+- SITES-12715：体验片段：应用于体验片段文件夹的云服务配置不持久
+- SITES-13097：体验片段：无法将体验片段添加到翻译项目
+- SITES-13165： GraphQL：恢复用于筛选空值的默认行为
+- SITES-12577：链接检查器：转换器不会间歇性地重写链接
+- SITES-13559：转出组件时引发“不可修改”异常
+- SITES-11757： MSM：从父项继承转出配置不会为子页面恢复配置
+- SITES-14073：站点管理员：选择要导出的属性时，CSV报表失败，返回500
+
+### 已知问题 {#known-issues-12441}
 
 无。
 
-### 修复的问题 {#fixed-issues-12255}
-
-- 各种与辅助功能相关的更新
-- ASSETS-15116 — “资产”搜索视图中提供的“转到位置”选项
-- ASSETS-17453 - (Dynamic Media)无法为视频选择自定义缩略图
-- ASSETS-19279 — 大型文件的资产下载存档
-- ASSETS-19544 — 用户上次修改以获取资源更新
-- ASSETS-20146 — （触屏UI）资产下载报表由于验证错误而失败的报表始终显示在报表列表页面的顶部
-- ASSETS-21056 — 优化资产引用性能以最大限度地减少写入
-- ASSETS-21909 — 当vtt下载失败时，无法查看智能裁剪视频
-- ASSETS-22261 — 链接共享下载文件夹结构与资产UI下载不一致
-- ASSETS-22550 — 默认情况下搜索筛选器面板现在打开
-- ASSETS-22920 — 从Brand Portal中取消发布文件夹不会将中的资产标记为未发布
-- ASSETS-22922 — 禁用的查看器预设显示在Dynamic Media组件中
-- ASSETS-23461 — 从“资源”搜索视图中快速发布Brand Portal
-- ASSETS-23466 -InDesign Server无法访问链接处理无法解析包含空格的AAL链接
-- ASSETS-23469 — 默认资源筛选器与自定义筛选器冲突
-- ASSETS-23981 — 标题排序功能在收藏集链接中不起作用
-- ASSETS-24723 — 再次重新处理已发布的资产，无需用户干预
-- GRANITE-45385 — 迁移树激活以使用sling作业而不是工作流
-
-### 已知问题 {#known-issues-12255}
-
-- ASSETS-25729 — 视图切换器菜单被切断
-- ASSETS-25728 — 重新处理资产选项在搜索视图中不可用
-- ASSETS-22603 — 某些下载类型的资产报表列在UI中显示“null”值。 可下载的CSV不受影响。
-
-### 嵌套的技术 {#embedded-tech-12255}
+### 嵌套的技术 {#embedded-tech-12441}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
