@@ -4,10 +4,10 @@ description: 使用您之前创建的内容片段模型来创建可用于页面�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 95%
+source-wordcount: '657'
+ht-degree: 83%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="新建内容"
->abstract="使用您在上一个模块中创建的模型，您将学习如何创建可用于页面创作或作为 Headless 内容基础的内容。"
+>abstract="使用您在上一个模块中创建的模型，您将了解如何创建可用于页面创作或作为Headless内容基础的内容。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 内容片段代表 Headless 内容，并且基于预定义的结构，即内容片段模型。您已经在之前的模块中创建了一个模型。
 
-在本模块中，您将使用内容片段控制台基于该模型创建一个新的内容片段。可以将内容片段控制台视为您的 Headless 内容库。使用它来创建新的内容片段并管理现有的片段。
+在本模块中，您将通过使用内容片段控制台基于该模型创建一个新的内容片段。 可以将内容片段控制台视为您的 Headless 内容库。使用它来创建新的内容片段并管理现有的片段。
 
 1. 点按或单击该控制台右上角的&#x200B;**创建**&#x200B;按钮。
 
@@ -49,11 +49,11 @@ ht-degree: 95%
 
 >[!TIP]
 >
->根据您的浏览器设置，新的浏览器选项卡可能会被弹出窗口阻止程序禁止。如果您的新片段在单击&#x200B;**创建并打开**&#x200B;后没有打开，请检查您的浏览器设置。
+>根据您的浏览器设置，新的浏览器选项卡可能会被弹出窗口阻止程序禁止。如果您的新片段在单击后未打开 **创建并打开**，请检查浏览器设置。
 
 ## 将内容添加到内容片段 {#add-content}
 
-保存并打开新内容片段后，内容片段编辑器将在新选项卡上打开。您可以在此处添加新片段的内容。
+保存并打开新内容片段后，内容片段编辑器将在新选项卡上打开。 您可以在此处添加新片段的内容。
 
 1. 内容片段编辑器显示您在所选模型中定义的字段。在这里，您可以向每个字段添加内容以完成内容片段。您的进度将自动保存。
 

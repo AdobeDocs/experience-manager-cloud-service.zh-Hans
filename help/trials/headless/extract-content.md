@@ -4,10 +4,10 @@ description: 了解如何使用内容片段和 GraphQL API 作为 Headless 内�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 100%
+source-wordcount: '1116'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
->title="做得好！您已了解两种基本类型的查询以及如何查询您自己的内容。现在您了解了如何使用 AEM GraphQL API 创建高效的查询，并且以应用程序期望的格式交付内容。"
+>title="做得好！您已了解两种基本类型的查询以及如何查询您自己的内容。 现在您了解了如何使用 AEM GraphQL API 创建高效的查询，并且以应用程序期望的格式交付内容。"
 >abstract=""
 
 ## 查询示例内容列表 {#list-query}
@@ -66,11 +66,11 @@ ht-degree: 100%
 
    ![列表查询](assets/do-not-localize/list-query-1-3-4-5.png)
 
-您刚刚验证了针对所有内容片段的完整列表的列表查询。此过程可帮助确保响应符合应用程序的预期，其结果说明了您的应用程序和网站将如何检索在 AEM 中创建的内容。
+您刚刚验证了针对所有内容片段的完整列表的列表查询。 此过程可帮助确保响应符合应用程序的预期，其结果说明了您的应用程序和网站将如何检索在 AEM 中创建的内容。
 
 >[!NOTE]
 >
->如果您无法从下拉菜单中选择 **AEM 演示资产**&#x200B;端点，请联系 Adobe 客户服务或联系 [AEM 试用 Slack 频道](https://adobe-dx-support.slack.com/)。
+>如果您无法选择 **AEM演示资产** 从下拉菜单中的端点，联系Adobe客户关怀部门或联系 [AEM试用Slack渠道。](https://adobe-dx-support.slack.com/)
 
 ## 查询特定的示例内容 {#bypath-query}
 
@@ -109,7 +109,7 @@ ht-degree: 100%
 
    ![byPath 查询结果](assets/do-not-localize/bypath-query-2-3-4.png)
 
-您刚刚通过验证 byPath 查询来检索由该片段的路径标识的特定内容片段。
+您刚刚验证了byPath查询，以检索由该片段的路径标识的特定内容片段。
 
 ## 查询自己的内容 {#own-queries}
 
