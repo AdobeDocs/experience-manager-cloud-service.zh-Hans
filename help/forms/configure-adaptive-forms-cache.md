@@ -1,17 +1,15 @@
 ---
 title: 配置自适应Forms缓存
-seo-title: Configure Adaptive Forms cache
 description: 自适应Forms缓存专为自适应Forms和文档设计。 它缓存自适应Forms和自适应文档，旨在减少在客户端渲染自适应表单或文档所需的时间。
-seo-description: The Adaptive Forms cache is designed specifically for Adaptive Forms and documents. It caches Adaptive Forms and adaptive documents with the objective of reducing the time required to render an Adaptive Form or document on the client.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '962'
 ht-degree: 1%
 
 ---
@@ -25,7 +23,7 @@ ht-degree: 1%
 
 1. 转到AEM Web控制台配置管理器，网址为 `https://[server]:[port]/system/console/configMgr`.
 1. 单击 **[!UICONTROL 自适应表单和交互式通信Web渠道配置]** 以编辑其配置值。
-1. 在 [!UICONTROL 编辑配置值] 对话框，指定AEM实例的最大表单或文档数 [!DNL Forms] 服务器可以在以下位置缓存： **[!UICONTROL 自适应Forms的数量]** 字段。 默认值为 100。
+1. 在 [!UICONTROL 编辑配置值] 对话框，指定AEM实例的最大表单数或文档数 [!DNL Forms Server] 可以在以下位置缓存 **[!UICONTROL 自适应Forms的数量]** 字段。 默认值为 100。
 
    >[!NOTE]
    >
@@ -40,7 +38,7 @@ ht-degree: 1%
 
 ## （可选）在Dispatcher上配置自适应表单缓存 {#configure-the-cache}
 
-您还可以在Dispatcher上配置自适应表单缓存，以实现额外的性能提升。
+您还可以在Dispatcher上配置自适应表单缓存，以进一步提升性能。
 
 ### 先决条件 {#pre-requisites}
 
@@ -51,7 +49,7 @@ ht-degree: 1%
 
 * 使用自适应Forms缓存时，请使用AEM [!DNL Dispatcher] 缓存自适应表单的客户端库（CSS和JavaScript）。
 * 在开发自定义组件时，在用于开发的服务器上，禁用Adaptive Forms缓存。
-* 不缓存不带扩展名的URL。 例如，具有模式模式的URL`/content/forms/[folder-structure]/[form-name].html` 缓存，缓存会忽略具有模式的URL `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. 因此，请使用带有扩展名的URL来获得缓存的好处。
+* 不缓存不带扩展名的URL。 例如，包含模式的URL `/content/forms/[folder-structure]/[form-name].html` 缓存，缓存会忽略具有模式的URL `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. 因此，请使用带有扩展名的URL来获得缓存的好处。
 * 本地化自适应Forms的注意事项：
    * 使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 请求自适应表单的本地化版本，而不是 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * 禁用使用浏览器区域设置 <!-- [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) -->对于格式为的URL `http://host:port/content/forms/af/<adaptivefName>.html`.
@@ -60,7 +58,7 @@ ht-degree: 1%
 
 ### 在Dispatcher上启用缓存
 
-执行以下列出的步骤以在Dispatcher上启用和配置自适应Forms缓存：
+执行以下列出的步骤，以便您可以在Dispatcher上启用和配置自适应Forms缓存：
 
 1. 为环境的每个发布实例打开以下URL，并配置复制代理：
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
@@ -93,7 +91,7 @@ ht-degree: 1%
 
    * 自适应表单会保留在缓存中，直到未发布该表单的更新版本。
 
-   * 发布自适应表单中引用的较新版本的资源时，受影响的自适应Forms自动失效。 引用资源的自动失效有一些例外。 有关例外的解决方法，请参见 [故障排除](#troubleshooting) 部分。
+   * 发布自适应表单中引用的较新版本的资源时，受影响的自适应表单会自动失效。 引用资源的自动失效有一些例外。 有关例外的解决方法，请参见 [故障排除](#troubleshooting) 部分。
 1. [添加以下规则dispatcher.any或自定义规则文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-documents-to-cache). 它不包括不支持缓存的URL。 例如，交互式通信。
 
    ```JSON
@@ -128,7 +126,7 @@ ht-degree: 1%
       }
    ```
 
-您的AEM环境配置为缓存自适应Forms。 它缓存所有类型的自适应Forms。 如果您需要在交付缓存页面之前检查页面的用户访问权限，请参阅 [缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans).
+您的AEM环境配置为缓存自适应Forms。 它缓存所有类型的自适应Forms。 如果在交付缓存页面之前需要检查页面的用户访问权限，请参阅 [缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans).
 
 ## 疑难解答 {#troubleshooting}
 
@@ -136,7 +134,7 @@ ht-degree: 1%
 
 #### 问题 {#issue1}
 
-当您通过资产浏览器选择图像或视频并将其添加到自适应表单并在资产编辑器中编辑这些图像或视频时，包含此类图像的自适应Forms不会自动从Dispatcher缓存中失效。
+当您通过资产浏览器选择图像或视频并将其添加到自适应表单，并在资产编辑器中编辑它们时，此类资产不会自动从Dispatcher缓存中失效。
 
 #### 解决方案 {#Solution1}
 
@@ -156,11 +154,9 @@ ht-degree: 1%
 
 #### 问题 {#issue3}
 
-当自适应表单URL没有任何本地化信息时，以及 **[!UICONTROL 使用浏览器区域设置]** 在配置管理器中启用时，会提供自适应表单的本地化版本，并且只缓存自适应表单的第一个实例并将其交付给每个后续用户。
+当自适应表单URL没有任何本地化信息时，以及 **[!UICONTROL 使用浏览器区域设置]** 配置管理器中的已启用。 提供了自适应表单的本地化版本，并且只缓存自适应表单的第一个实例并将其交付给每个后续用户。
 
 #### 解决方案 {#Solution3}
-
-执行以下步骤来解决问题：
 
 1. 打开conf.d/httpd-dispatcher.conf或配置为在运行时加载的任何其他配置文件。
 

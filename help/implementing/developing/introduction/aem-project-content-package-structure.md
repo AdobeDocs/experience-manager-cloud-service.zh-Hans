@@ -2,10 +2,10 @@
 title: AEM 项目结构
 description: 了解如何定义包结构以部署到Adobe Experience ManagerCloud Service。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '2927'
-ht-degree: 12%
+source-wordcount: '2918'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 12%
 >
 >熟悉基本知识 [AEM项目原型使用](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，以及 [FileVault Content Maven插件](/help/implementing/developing/tools/maven-plugin.md) 因为本文是在这些学习和概念的基础上进行的。
 
-本文概述了Adobe Experience Manager Maven项目要与AEMas a Cloud Service兼容所需的更改，确保这些项目尊重对可变和不可变内容的拆分，建立依赖关系以创建无冲突的确定性部署，并将它们打包到可部署的结构中。
+本文概述了Adobe Experience Manager Maven项目要与AEMas a Cloud Service兼容，需要进行的更改，确保它们尊重可变和不可变内容的拆分。 此外，建立依赖关系以创建无冲突的确定性部署，并将它们打包到可部署的结构中。
 
 AEM应用程序部署必须由单个AEM包组成。 此包继而应包含子包，子包中包含应用程序运行所需的一切，包括代码、配置和任何支持的基线内容。
 
@@ -29,9 +29,9 @@ AEM需要分离 **内容** 和 **代码**，这意味着单个内容包 **无法
 
 ## 存储库的可变区域与不可变区域 {#mutable-vs-immutable}
 
-`/apps` 和 `/libs`**被视为 AEM 中的不可变区域，因为 AEM 启动后（例如，运行时），无法对其进行更改（创建、更新、删除）。**&#x200B;运行时对不可改变区域所做的任何更改尝试都将失败。
+此 `/apps` 和 `/libs` 考虑AEM的领域 **不可变** 因为它们在AEM启动（即在运行时）后无法更改（创建、更新、删除）。 在运行时更改不可变区域的任何尝试都将失败。
 
-存放库中的所有其他内容， `/content`， `/conf`， `/var`， `/etc`， `/oak:index`， `/system`， `/tmp`等。 全部 **可变** 区域，这意味着它们可以在运行时更改。
+存放库中的所有其他内容， `/content`， `/conf`， `/var`， `/etc`， `/oak:index`， `/system`， `/tmp`，等等，都是 **可变** 区域，这意味着它们可以在运行时更改。
 
 >[!WARNING]
 >
@@ -39,13 +39,13 @@ AEM需要分离 **内容** 和 **代码**，这意味着单个内容包 **无法
 
 ### Oak索引 {#oak-indexes}
 
-Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这是因为Cloud Manager必须等到部署任何新索引并完全重新索引后，才能切换到新代码映像。
+Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程管理。 这是因为Cloud Manager必须等到部署任何新索引并完全重新索引后，才能切换到新代码映像。
 
 因此，尽管Oak索引在运行时是可变的，但必须将其部署为代码，以便在安装任何可变包之前可以安装它们。 因此 `/oak:index` 配置是代码包的一部分，而不是内容包的一部分 [如下所述](#recommended-package-structure).
 
 >[!TIP]
 >
->有关AEMas a Cloud Service索引的更多详细信息，请参阅此文档 [内容搜索与索引](/help/operations/indexing.md).
+>有关AEMas a Cloud Service索引的更多详细信息，请参阅 [内容搜索与索引](/help/operations/indexing.md).
 
 ## 推荐的包结构 {#recommended-package-structure}
 
@@ -60,12 +60,12 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 + 将生成OSGi捆绑包Jar文件，并直接嵌入到所有项目中。
 
 + 此 `ui.apps` 包中包含要部署的所有代码，并且仅部署到 `/apps`. 的常见元素 `ui.apps` 包包括但不限于：
-   + [组件定义和HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans) 脚本
+   + [组件定义和HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 脚本
       + `/apps/my-app/components`
    + JavaScript和CSS(通过 [客户端库](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [叠加](/help/implementing/developing/introduction/overlays.md) 之 `/libs`
-      + `/apps/cq`， `/apps/dam/`等。
+      + `/apps/cq`, `/apps/dam/`, 依此类推.
    + 回退上下文感知配置
       + `/apps/settings`
    + ACL（权限）
@@ -74,7 +74,7 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 >[!NOTE]
 >
->必须向所有环境部署相同的代码。 需要此代码以确保暂存环境上的置信度验证级别也在生产环境中。 有关更多信息，请参阅以下部分： [运行模式](/help/implementing/deploying/overview.md#runmodes).
+>必须向所有环境部署相同的代码。 此代码可确保将暂存环境中的验证也投放到生产环境中。 有关更多信息，请参阅以下部分： [运行模式](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### 内容包
@@ -82,8 +82,8 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 + 此 `ui.content` 包包含所有内容和配置。 内容包包含 `ui.apps` 或 `ui.config` 包，或者换言之，任何不在 `/apps` 或 `/oak:index`. 的常见元素 `ui.content` 包包括但不限于：
    + 上下文感知配置
       + `/conf`
-   + 必需、复杂的内容结构(即 内容构建，构建并扩展了存储库初始中定义的过去基准内容结构。)
-      + `/content`， `/content/dam`等。
+   + 必需的复杂内容结构（即基于过去在存储库初始化中定义的基准内容结构构建和扩展的内容构建）。
+      + `/content`, `/content/dam`, 依此类推.
    + 受控制的标记分类
       + `/content/cq:tags`
    + 旧版etc节点（最好将这些节点迁移到非/etc位置）
@@ -91,11 +91,11 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 ### 容器包
 
-+ 此 `all` 包是一个容器包，仅包含可部署构件、OSGI包Jar文件、 `ui.apps`， `ui.config` 和 `ui.content` 包作为嵌入。 此 `all` 包不得具有 **任何内容或代码** ，而是将所有部署委派给存储库的子包或OSGi捆绑Jar文件。
++ 此 `all` 包是一个容器包，仅包含可部署构件、OSGI包Jar文件、 `ui.apps`， `ui.config`、和 `ui.content` 包作为嵌入。 此 `all` 包不得具有 **任何内容或代码** ，而是将所有部署委派给存储库的子包或OSGi捆绑包Jar文件。
 
-  现在使用Maven包含包 [FileVault Package Maven插件的嵌入配置](#embeddeds)，而不是 `<subPackages>` 配置。
+  现在使用Maven包含包 [FileVault Package Maven插件的嵌入式配置](#embeddeds)，而不是 `<subPackages>` 配置。
 
-  对于复杂的Experience Manager部署，可能需要创建多个 `ui.apps`， `ui.config` 和 `ui.content` 表示AEM中特定站点或租户的项目/包。 如果这样做，请确保遵循可变和不可变内容之间的拆分，并将所需的内容包和OSGi捆绑Jar文件作为子包嵌入到中 `all` 容器内容包。
+  对于复杂的Experience Manager部署，可能需要创建多个 `ui.apps`， `ui.config`、和 `ui.content` 表示AEM中特定站点或租户的项目/包。 如果完成了此方法，请确保遵循可变和不可变内容之间的拆分，并将所需的内容包和OSGi捆绑Jar文件作为子包嵌入到中 `all` 容器内容包。
 
   例如，复杂的部署内容包结构可能如下所示：
 
@@ -130,7 +130,7 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 如果AEM部署使用其他AEM项目（这些项目本身由它们自己的代码和内容包组成），则其容器包应嵌入到项目的 `all` 包。
 
-例如，包含2个供应商AEM应用程序的AEM项目可能如下所示：
+例如，包含两个供应商AEM应用程序的AEM项目可能如下所示：
 
 + `all` 内容包嵌入以下包，以创建单个部署构件
    + `core` AEM应用程序所需的OSGi包Jar
@@ -157,7 +157,7 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 ## 通过AdobeCloud Manager将包标记为部署 {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-默认情况下，Adobe Cloud Manager 会收集由 Maven 内部版本生成的所有包，但是，由于容器 (`all`) 包是包含所有代码和内容包的单个部署对象，因此我们必须确保&#x200B;**仅**&#x200B;部署容器 (`all`) 包。要确保这一点，Maven 内部版本生成的其他包必须使用 `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` 的 FileVault Content Package Maven Plug-In 配置进行标记。
+默认情况下，AdobeCloud Manager会收集由Maven内部版本生成的所有包。 但是，由于容器(`all`)包是包含所有代码和内容包的单个部署对象，您必须确保 **仅限** 容器(`all`)包已部署。 要确保这一点，Maven 内部版本生成的其他包必须使用 `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` 的 FileVault Content Package Maven Plug-In 配置进行标记。
 
 >[!TIP]
 >
@@ -167,7 +167,7 @@ Oak索引(`/oak:index`)由AEMas a Cloud Service部署过程专门管理。 这�
 
 Repo Init提供定义JCR结构的说明或脚本，从文件夹树等常见节点结构到用户、服务用户、组和ACL定义。
 
-Repo Init的主要优势是，它们具有执行由其脚本定义的所有操作的隐式权限，并且在部署生命周期的早期调用它们，从而确保在代码执行时存在所有必需的JCR结构。
+Repo Init的主要优势在于，它们具有执行由其脚本定义的所有操作的隐式权限。 而且，此类脚本会在部署生命周期的早期调用，以确保在运行代码时存在所有必需的JCR结构。
 
 虽然Repo Init脚本本身在 `ui.config` “项目”作为脚本，可以也应该使用它们来定义以下可变结构：
 
@@ -177,15 +177,15 @@ Repo Init的主要优势是，它们具有执行由其脚本定义的所有操�
 + 组
 + ACL
 
-Repo Init脚本存储为 `scripts` 条目 `RepositoryInitializer` 因此，OSGi工厂配置可以通过运行模式隐式定位，从而允许AEM Author和AEM Publish Services的Repo Init脚本之间甚至环境之间（开发、暂存和生产）的差异。
+Repo Init脚本存储为 `scripts` 条目 `RepositoryInitializer` OSGi工厂配置。 因此，它们可以通过运行模式隐式定位，从而在AEM Author和AEM Publish Services的Repo Init脚本之间甚至环境之间（Dev、Stage和Prod）产生差异。
 
 Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) 因为它们支持多行，这与使用的最佳实践不同 [`.cfg.json` 定义OSGi配置](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
-请注意，在定义用户和组时，只有组被视为应用程序的一部分，应在此处定义对其功能的组成部分。 组织用户和组仍应在运行时在AEM中定义；例如，如果自定义工作流将工作分配给指定组，则应通过AEM应用程序中的Repo Init在中定义该组，但是，如果分组只是组织性的，例如“Wendy&#39;s Team”和“Sean&#39;s Team”，则最好在AEM中定义和管理这些组。
+在定义用户和组时，只有组被视为应用程序的一部分，并且是其功能的组成部分。 您仍然可以在运行时在AEM中定义“组织用户和组”。 例如，如果自定义工作流将工作分配给指定组，请在AEM应用程序中通过Repo Init定义该组。 但是，如果分组只是组织性的，例如“Wendy&#39;s Team”和“Sean&#39;s Team”，则最好在AEM中运行时定义和管理这些组。
 
 >[!TIP]
 >
->Repo Init脚本 *必须* 在内联中定义 `scripts` 字段，以及 `references` 配置无法正常工作。
+>Repo Init脚本 *必须* 在内联中定义 `scripts` 字段，或 `references` 配置不起作用。
 
 有关Repo Init脚本的完整词汇表，请访问 [Apache Sling Repo初始文档](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language).
 
@@ -195,21 +195,21 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
 
 ## 存储库结构包 {#repository-structure-package}
 
-代码包需要配置FileVault Maven插件的配置以引用 `<repositoryStructurePackage>` 这会强制结构依赖关系的正确性（以确保一个代码包不会安装在其他代码包上）。 您可以 [为您的项目创建自己的存储库结构包](repository-structure-package.md).
+代码包需要配置FileVault Maven插件的配置以引用 `<repositoryStructurePackage>` 这会强制实现结构依赖关系的正确性（以确保一个代码包不会安装在另一个代码包上）。 您可以 [为您的项目创建自己的存储库结构包](repository-structure-package.md).
 
-此操作&#x200B;**仅适用于**&#x200B;代码包，即任何标有 `<packageType>application</packageType>` 的包。
+**仅必需** 对于代码包，是指任何标有 `<packageType>application</packageType>`.
 
 要了解如何为您的应用程序创建存储库结构包，请参阅 [开发存储库结构包](repository-structure-package.md).
 
-请注意，内容包(`<packageType>content</packageType>`) **不要** 需要此存储库结构包。
+内容包(`<packageType>content</packageType>`) **不要** 需要此存储库结构包。
 
 >[!TIP]
 >
 >请参阅 [POM XML片段](#xml-repository-structure-package) 部分，了解完整的代码片段。
 
-## 在容器软件包中嵌入子软件包{#embeddeds}
+## 在容器包中嵌入子包{#embeddeds}
 
-内容或代码包放置在特殊的“side-car”文件夹中，并可定向为在AEM author和/或AEM publish上安装，使用FileVault Maven插件的 `<embeddeds>` 配置。 请注意 `<subPackages>` 不应使用配置。
+内容或代码包放置在特殊的“side-car”文件夹中，并可定向为在AEM author和/或AEM publish上安装，使用FileVault Maven插件的 `<embeddeds>` 配置。 请勿使用 `<subPackages>` 配置。
 
 常见用例包括：
 
@@ -219,7 +219,7 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
 
 ![嵌入包](assets/embeddeds.png)
 
-要定位AEM作者和/或AEM发布，包将嵌入到 `all` 容器包位于特殊的文件夹位置，格式如下：
+要定位AEM创作、AEM发布或两者，包将嵌入到 `all` 容器包位于特殊的文件夹位置，格式如下：
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
@@ -233,7 +233,7 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
 
   >[!WARNING]
   >
-  >按照惯例，子包嵌入式文件夹的名称带有后缀 `-packages`。这样可确保部署代码和内容包&#x200B;**不会**&#x200B;部署到任何子包 `/apps/<app-name>/...` 的目标文件夹，否则将会导致破坏性的循环安装行为。
+  >按照惯例，子包嵌入文件夹的名称带有后缀 `-packages`. 此命名可确保部署代码和内容包能够 **非** 已部署任何子包的目标文件夹 `/apps/<app-name>/...`  导致破坏性的循环安装行为。
 
 + 第三级文件夹必须是
   `application`, `content` 或 `container`
@@ -241,10 +241,10 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
    + 此 `content` 文件夹包含内容包
    + 此 `container` 文件夹包含任意 [额外的应用程序包](#extra-application-packages) AEM应用程序可能包含的其他资源。
 此文件夹名称对应于 [包类型](#package-types) 包中包含的包中。
-+ 第 4 级文件夹包含子包，且必须是以下包之一：
-   + `install`，以在 AEM 作者&#x200B;**和** AEM 发布上安装
-   + `install.author`，以&#x200B;**仅**&#x200B;在 AEM 作者上安装
-   + `install.publish` 到 **仅限** 在AEM发布上安装请注意，仅 `install.author` 和 `install.publish` 是受支持的目标。 不支持其 **他运行模式** 。
++ 第4级文件夹包含子包，并且必须是以下项之一：
+   + `install` 因此您安装 **两者** AEM创作和AEM发布
+   + `install.author` 因此您安装 **仅限** 在AEM作者上
+   + `install.publish` 因此您安装 **仅限** 仅在AEM上发布 `install.author` 和 `install.publish` 是受支持的目标。 不支持其 **他运行模式** 。
 
 例如，包含AEM创作和发布特定包的部署可能如下所示：
 
@@ -260,7 +260,7 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
 
 ### 容器包的过滤器定义 {#container-package-filter-definition}
 
-由于在容器包中嵌入了代码和内容子包，因此必须将嵌入的目标路径添加到容器项目的 `filter.xml` 以确保在构建时容器包中包含嵌入的包。
+由于代码和内容子包嵌入到了容器包中，因此必须将嵌入的目标路径添加到容器项目的 `filter.xml`. 这样做可以确保在构建容器包时将嵌入的包包含在容器包中。
 
 只需添加 `<filter root="/apps/<my-app>-packages"/>` 包含要部署的子包的任意第二级文件夹的条目。
 
@@ -272,9 +272,9 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
 
 所有软件包必须可通过 [Adobe的公共Maven工件存储库](https://repo1.maven.org/maven2/com/adobe/) 或可访问的公共、可引用的第三方Maven对象存储库。
 
-如果第三方包位于 **Adobe 的公共 Maven 对象存储库**，则 Adobe Cloud Manager 无需进一步配置即可解析对象。
+如果第三方包位于 **Adobe的公共Maven工件存储库**，AdobeCloud Manager无需进一步配置即可解析工件。
 
-如果第三方包位于&#x200B;**公共的第三方 Maven 对象存储库**，则必须在项目的 `pom.xml` 中注册此存储库，并将其嵌入到[以上所述](#embeddeds)的以下方法中。
+如果第三方包位于 **公共第三方Maven工件存储库**，此存储库必须在项目的 `pom.xml` 并嵌入到方法之后 [上面概述](#embeddeds).
 
 第三方应用程序/连接器应使用其 `all` 在您的项目容器中打包为容器(`all`)包。
 
@@ -290,7 +290,7 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
 
 一般规则是包含可变内容的包(`ui.content`)应依赖于不可变代码(`ui.apps`)，支持呈现和使用可变内容。
 
-此常规规则的一个显着例外是如果不可变代码包(`ui.apps` 或任何其他)， __仅限__ 包含OSGi包。 如果是，则任何AEM包都不应声明依赖该包。 这是因为不可变的代码包 __仅限__ 包含OSGi捆绑包未在AEM中注册 [包管理器，](/help/implementing/developing/tools/package-manager.md) 因此，任何依赖于它的AEM包都将具有不满足的依赖关系，并且无法安装。
+此常规规则的一个显着例外是如果不可变代码包(`ui.apps` 或任何其他)， __仅限__ 包含OSGi包。 如果是，则任何AEM包都不应声明依赖该包。 原因在于，不可变的代码包能够 __仅限__ 包含OSGi包，未向AEM注册 [包管理器](/help/implementing/developing/tools/package-manager.md). 因此，任何依赖它的AEM包都存在未满足的依赖关系，无法安装。
 
 >[!TIP]
 >
@@ -327,7 +327,7 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
 
 ### 包类型 {#xml-package-types}
 
-作为子包部署的代码和内容包必须声明&#x200B;**应用程序**&#x200B;或&#x200B;**内容**&#x200B;包类型,具体取决于它们包含的内容。
+作为子包部署的代码和内容包必须声明的包类型为 **应用程序** 或 **内容**，具体取决于它们包含的内容。
 
 #### 容器包类型 {#container-package-types}
 
@@ -411,9 +411,9 @@ Repo Init OSGi配置最好写入 [`.config` OSGi配置格式](https://sling.apac
 
 ### 存储库初始{#snippet-repo-init}
 
-包含Repo初始脚本的Repo初始脚本在 `RepositoryInitializer` OSGi工厂配置，通过 `scripts` 属性。 请注意，由于这些脚本是在OSGi配置中定义的，因此可以使用常规运行模式轻松限定其作用域 `../config.<runmode>` 文件夹语义。
+包含Repo初始脚本的Repo初始脚本在 `RepositoryInitializer` OSGi工厂配置，通过 `scripts` 属性。 由于这些脚本是在OSGi配置中定义的，因此可以使用常规运行模式轻松限定其作用域 `../config.<runmode>` 文件夹语义。
 
-请注意，由于脚本通常是多行声明，因此更易于在中定义它们 `.config` 文件，而不是基于JSON的 `.cfg.json` 格式。
+由于脚本通常是多行声明，因此更易于在中定义它们 `.config` 文件，而不是基于JSON的 `.cfg.json` 格式。
 
 `/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
 
@@ -457,9 +457,9 @@ scripts=["
     ...
 ```
 
-### 在容器软件包中嵌入子软件包 {#xml-embeddeds}
+### 在容器包中嵌入子包 {#xml-embeddeds}
 
-在 `all/pom.xml`，添加以下内容 `<embeddeds>` 指令 `filevault-package-maven-plugin` 插件声明。 记住， **不要** 使用 `<subPackages>` 配置，因为这将包含中的子包 `/etc/packages` 而不是 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
+在 `all/pom.xml`，添加以下内容 `<embeddeds>` 指令 `filevault-package-maven-plugin` 插件声明。 记住， **不要** 使用 `<subPackages>` 配置。 原因是它包括中的子包 `/etc/packages` 而不是 `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 
 ```xml
 ...
@@ -537,7 +537,7 @@ scripts=["
 
 ### 容器包的过滤器定义 {#xml-container-package-filters}
 
-在 `all` 项目的 `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`) 中，**包括**&#x200B;要部署的任何包含子包的 `-packages` 文件夹：
+在 `all` 项目的 `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`)， **include** 任意 `-packages` 包含要部署的子包的文件夹：
 
 ```xml
 <filter root="/apps/my-app-packages"/>
@@ -551,7 +551,7 @@ scripts=["
 >
 >添加更多Maven存储库可能会延长Maven构建时间，因为会检查其他Maven存储库的依赖关系。
 
-在反应栈项目的 `pom.xml`，添加任何必要的第三方公共Maven存储库指令。 完整 `<repository>` 应可从第三方存储库提供程序获得配置。
+在反应栈项目的 `pom.xml`，添加任何必要的第三方公共Maven存储库指令。 完整 `<repository>` 配置应该可以从第三方存储库提供商获得。
 
 ```xml
 <repositories>
@@ -600,7 +600,7 @@ scripts=["
 
 ### 正在清除容器项目的目标文件夹 {#xml-clean-container-package}
 
-在 `all/pom.xml` 添加 `maven-clean-plugin` 一个插件，用于在Maven构建之前清理目标目录。
+在 `all/pom.xml`，添加 `maven-clean-plugin` 此插件用于在Maven构建之前清理目标目录。
 
 ```xml
 <plugins>

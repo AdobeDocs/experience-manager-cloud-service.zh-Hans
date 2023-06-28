@@ -2,28 +2,28 @@
 title: SPA和服务器端渲染
 description: 在SPA中使用服务器端渲染(SSR)可以加快页面的初始加载，然后将进一步的渲染传递给客户端。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1486'
 ht-degree: 0%
 
 ---
 
 # SPA和服务器端渲染{#spa-and-server-side-rendering}
 
-单页应用程序(SPA)可以为用户提供丰富的动态体验，该体验以熟悉的方式反应和行为，通常就像本机应用程序一样。 [这是依靠客户端预先加载内容，然后执行处理用户交互的重提升](introduction.md#how-does-a-spa-work) 从而最大限度地减少客户端和服务器之间所需的通信量，使应用程序更具反应性。
+单页应用程序(SPA)可以为用户提供丰富的动态体验，该体验以熟悉的方式反应和行为，通常就像本机应用程序一样。 [此功能是通过依赖客户端预先加载内容，然后执行处理用户交互的繁重任务来实现的](introduction.md#how-does-a-spa-work). 此过程可最大程度地减少客户端和服务器之间所需的通信量，从而使应用程序更具反应性。
 
-但是，这可能会导致初始加载时间较长，尤其是当SPA较大且内容丰富时。 为了优化加载时间，可以在服务器端渲染某些内容。 使用服务器端渲染(SSR)可以加快页面的初始加载，然后将进一步的渲染传递给客户端。
+但是，此过程可能会导致初始加载时间更长，尤其是当SPA较大且内容丰富时。 为了优化加载时间，可以在服务器端渲染某些内容。 使用服务器端渲染(SSR)可以加快页面的初始加载，然后将进一步的渲染传递给客户端。
 
 ## 何时使用SSR {#when-to-use-ssr}
 
 并非所有项目都需要SSR。 尽管AEM完全支持适用于SPA的JS SSR，但Adobe建议不要为每个项目系统地实施它。
 
-在决定实施SSR时，您必须首先估计增加SSR对项目实际意味着哪些额外的复杂性、工作量和成本，包括长期维护。 只有在增加值明显超过估计成本时，才应选择SSR架构。
+在决定实施SSR时，您必须首先估计增加SSR对于项目（包括长期维护）实际上意味着什么额外的复杂性、工作量和成本。 只有在增加值明显超过估计成本时，才应选择SSR架构。
 
 当以下任一问题明确为“是”时，SSR通常会提供一些值：
 
-* **SEO：** 是否仍需要SSR才能让带来流量的搜索引擎对您的网站正确编制索引？ 请记住，主搜索引擎爬虫程序现在评估JS。
+* **SEO：** 您的网站是否仍需要SSR才能由带来流量的搜索引擎正确编制索引？ 请记住，主搜索引擎爬虫程序现在评估JS。
 * **页面速度：** SSR是否可以在实际环境中提供可衡量的速度提升，并增加总体用户体验？
 
 只有当这两个问题中至少有一个问题得到明确的“是”回答时，Adobe才会建议实施SSR。 以下部分介绍了如何使用Adobe I/O Runtime（的一部分）执行此操作 [App Builder](https://developer.adobe.com/app-builder).
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 如果您 [确信您的项目需要实施SSR](#when-to-use-ssr)，Adobe推荐的解决方案是使用Adobe I/O Runtime。
 
-有关Adobe I/O Runtime的更多信息，请参阅
+有关Adobe I/O Runtime的更多信息，请参阅以下内容：
 
 * [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime)  — 概述App Builder的运行时功能
 * [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder)  — 以了解有关完整版应用程序生成器的详细信息
@@ -45,15 +45,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe建议为每个环境（暂存、生产、测试等）使用单独的Adobe I/O Runtime工作区。 这样一来，对于部署到不同环境的单个应用程序的不同版本，就可以采用典型的系统开发生命周期(SDLC)模式。  查看文档 [App Builder应用程序的CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 了解更多信息。
+>Adobe建议为每个环境（暂存、生产、测试等）使用一个单独的Adobe I/O Runtime工作区。 这样做允许使用典型的系统开发生命周期(SDLC)模式，将不同版本的单个应用程序部署到不同环境。 参见 [App Builder应用程序的CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 了解更多信息。
 >
 >每个实例（创作、发布）不需要单独的工作区，除非每个实例类型的运行时实施存在差异。
 
 ## 远程渲染器配置 {#remote-content-renderer-configuration}
 
-AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SSR实施的模型，](#adobe-i-o-runtime) 您需要向AEM指定如何访问此远程渲染服务。
+AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SSR实施的模型，](#adobe-i-o-runtime) 您必须向AEM指定如何访问此远程渲染服务。
 
-这是通过 **RemoteContentRenderer — 配置工厂OSGi服务**. 在Web控制台配置控制台中搜索字符串“RemoteContentRenderer”，网址为 `http://<host>:<port>/system/console/configMgr`.
+此服务通过以下方式完成 **RemoteContentRenderer — 配置工厂OSGi服务**. 在Web控制台配置控制台中搜索字符串“RemoteContentRenderer”，网址为 `http://<host>:<port>/system/console/configMgr`.
 
 ![渲染器配置](assets/renderer-configuration.png)
 
@@ -87,7 +87,7 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SS
 
 ## Adobe I/O Runtime驱动的通信流 {#adobe-i-o-runtime-driven-communication-flow}
 
-上一部分介绍了与AEM中的SPA有关的服务器端渲染的标准实施和建议实施，AEM在该环境中执行内容引导和提供。
+上一部分介绍了有关AEM中SPA的服务器端渲染的标准实施和推荐实施，AEM在此执行内容引导和提供。
 
 或者，可以实现SSR，以便Adobe I/O Runtime负责自引导，有效地反转通信流。
 
@@ -105,7 +105,7 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SS
    <td>
     <ul>
      <li>AEM在需要时管理注入库</li>
-     <li>仅需在AEM上维护资源<br /> </li>
+     <li>仅在AEM上维护资源<br /> </li>
     </ul> </td>
    <td>
     <ul>
@@ -120,7 +120,7 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SS
     </ul> </td>
    <td>
     <ul>
-     <li>应用程序所需的Clientlib资源（如CSS和JavaScript）将由AEM开发人员通过 <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> 属性<br /> </li>
+     <li>应用程序所需的Clientlib资源（如CSS和JavaScript）必须由AEM开发人员通过 <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> 属性<br /> </li>
      <li>必须在AEM和Adobe I/O Runtime之间同步资源<br /> </li>
      <li>要启用SPA的创作，可能需要Adobe I/O Runtime的代理服务器</li>
     </ul> </td>
@@ -130,9 +130,9 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [您选择为SS
 
 ## 规划SSR {#planning-for-ssr}
 
-通常，只需在服务器端渲染应用程序的一部分。 一个常见的示例是，在页面的初始加载时，显示在折叠上方的内容在服务器端呈现。 这通过向客户端交付已渲染的内容来节省时间。 当用户与SPA交互时，其他内容由客户端渲染。
+通常，只有应用程序的一部分必须在服务器端渲染。 一个常见的示例是，在页面的初始加载时，显示在折叠上方的内容在服务器端呈现。 此过程通过向客户端交付已渲染的内容来节省时间。 当用户与SPA交互时，其他内容由客户端渲染。
 
-在考虑为SPA实施服务器端渲染时，您需要查看应用程序的哪些部分需要渲染。
+在考虑为SPA实施服务器端渲染时，请检查应用程序的哪些部分有必要。
 
 ## 使用SSR开发SPA {#developing-an-spa-using-ssr}
 
@@ -142,7 +142,7 @@ SPA组件可由客户端（在浏览器中）或服务器端渲染。 在渲染�
 
 ## AEM中适用于SPA的SSR {#ssr-for-spas-in-aem}
 
-AEM中适用于SPA的SSR需要Adobe I/O Runtime，它用于渲染应用程序内容服务器端。 在应用程序的HTL中，调用Adobe I/O Runtime上的资源来渲染内容。
+AEM中适用于SPA的SSR需要使用Adobe I/O Runtime，它会在渲染应用程序内容服务器端时调用。 在应用程序的HTL中，调用Adobe I/O Runtime上的资源来渲染内容。
 
 正如AEM支持开箱即用的Angular和React SPA框架一样，Angular和React应用程序也支持服务器端渲染。 有关更多详细信息，请参阅这两个框架的NPM文档。
 
@@ -152,7 +152,7 @@ AEM中适用于SPA的SSR需要Adobe I/O Runtime，它用于渲染应用程序内
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` 是一项OSGi服务，用于检索在远程服务器上渲染的内容，例如从Adobe I/O中渲染的内容。发送到远程服务器的内容基于传递的请求参数。
+`RemoteContentRenderingService` 用于检索在远程服务器上渲染的内容(例如从Adobe I/O)的OSGi服务。发送到远程服务器的内容基于传递的请求参数。
 
 `RemoteContentRenderingService` 在需要额外内容操作时，可以通过依赖关系反转插入自定义Sling模型或servlet中。
 
@@ -160,7 +160,7 @@ AEM中适用于SPA的SSR需要Adobe I/O Runtime，它用于渲染应用程序内
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-此 `RemoteContentRendererRequestHandlerServlet` 可用于以编程方式设置请求配置。 `DefaultRemoteContentRendererRequestHandlerImpl`（提供的默认请求处理程序实施）允许您创建多个OSGi配置，以便将内容结构中的位置映射到远程端点。
+此 `RemoteContentRendererRequestHandlerServlet` 用于以编程方式设置请求配置。 `DefaultRemoteContentRendererRequestHandlerImpl`（提供的默认请求处理程序实施）允许您创建多个OSGi配置，以便将内容结构中的位置映射到远程端点。
 
 要添加自定义请求处理程序，请实施 `RemoteContentRendererRequestHandler` 界面。 请务必设置 `Constants.SERVICE_RANKING` 组件属性到大于100的整数，该整数的排名是 `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -179,7 +179,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 远程内容渲染器使用情况 {#usage}
 
-要执行servlet获取并返回一些可以插入到页面中的内容，请执行以下操作：
+执行servlet获取并返回一些插入到页面中的内容：
 
 1. 确保您的远程服务器可访问。
 1. 向AEM组件的HTL模板中添加以下代码片段之一。

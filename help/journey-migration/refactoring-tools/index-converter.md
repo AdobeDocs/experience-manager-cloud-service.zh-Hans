@@ -2,9 +2,9 @@
 title: 索引转换器
 description: 索引转换器
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '276'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Index Converter是一个实用程序，用于迁移客户的索引定义，为�
 * `under /apps` （通过任何自定义内容包）
 * 直接在 `/oak:index` 路径
 
-如果 [确保Oak索引](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) 使用的是，请注意，AEMas a Cloud Service上不支持“确保定义”，因此需要先将它们转换为Oak索引定义，然后需要迁移到与AEMas a Cloud Service兼容的自定义Oak索引定义，如下所示：
+如果 [确保Oak索引](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) 使用，请确保AEMas a Cloud Service上不支持定义。 因此，必须首先将它们转换为Oak索引定义，然后迁移到与AEMas a Cloud Service兼容的自定义Oak索引定义，如下所示：
 
 * 如果属性忽略设置为 `true`，忽略或跳过确保定义
 * 更新 `jcr:primaryType` 到 `oak:QueryIndexDefinition`
@@ -34,10 +34,10 @@ Index Converter是一个实用程序，用于迁移客户的索引定义，为�
 
 ## 使用索引转换器 {#using-index-converter}
 
-* 通过Adobe I/OCLI ：建议通过以下方式使用索引转换器： `aio-cli-plugin-aem-cloud-service-migration` (适用于Adobe I/OCLI的AEMas a Cloud Service代码重构插件)。
+* 通过Adobe I/OCLI ：建议通过以下方式使用索引转换器 `aio-cli-plugin-aem-cloud-service-migration` (适用于Adobe I/OCLI的AEMas a Cloud Service代码重构插件)。
 
-   请参阅 **[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 了解如何安装和使用插件。
+  请参阅 **[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 了解如何安装和使用插件。
 
 * 作为独立实用程序：索引转换器也可以作为独立实用程序执行。
 
-   请参阅 **[Git资源：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** 以了解如何使用此工具。
+  请参阅 **[Git资源：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** 以了解如何使用此工具。

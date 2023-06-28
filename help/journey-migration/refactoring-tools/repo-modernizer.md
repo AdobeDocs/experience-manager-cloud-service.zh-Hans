@@ -2,9 +2,9 @@
 title: 存储库现代化器
 description: 存储库现代化器
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '303'
 ht-degree: 6%
 
 ---
@@ -32,7 +32,7 @@ Repository Modernizer通过创建以下部署结构来创建兼容的AEM Cloud S
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* 通过Adobe Developer CLI ：建议通过 `aio-cli-plugin-aem-cloud-service-migration` (适用于Adobe Developer CLI的AEMas a Cloud Service代码重构插件)。
+* 通过Adobe I/OCLI ：建议通过以下方式使用Repository Modernizer `aio-cli-plugin-aem-cloud-service-migration` (适用于Adobe I/OCLI的AEMas a Cloud Service代码重构插件)。
 
   参见 **[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 以便您了解如何安装和使用插件。
 
