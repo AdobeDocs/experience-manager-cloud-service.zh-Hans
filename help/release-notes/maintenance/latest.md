@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
+source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 47%
+source-wordcount: '604'
+ht-degree: 23%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 47%
 ### 增强 {#enhancements-12441}
 
 - SITES-8769：改进ResponsiveGrid中的StyleImpl调用
+- Forms-5054：增加了对所有 [雕像](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) 受Adobe Sign支持。
 
 ### 修复的问题 {#fixed-issues-12441}
 
@@ -37,6 +38,21 @@ ht-degree: 47%
 - SITES-13559：转出组件时引发“不可修改”异常
 - SITES-11757： MSM：从父项继承转出配置不会为子页面恢复配置
 - SITES-14073：站点管理员：选择要导出的属性时，CSV报表失败，返回500
+- Forms-7648：数字框组件的“最大位数”字段的验证不起作用。
+- Forms-8177：当Forms服务处于活动状态时，遇到“com.adobe.aem.formsndocuments.publish.AssetReferenceProvider无法检索资源依赖项”错误。
+- Forms-8300：当用户尝试在打开任务后委派任务时，委派响应会重新加载任务，而不是打开用户的AEM收件箱UI。
+- Forms-8500：在启用了IE模式选项的Microsoft® Edge浏览器上，HTML5 Forms无法打开。
+- Forms-8541：渲染自适应Forms时，发生空指针异常。
+- Forms-8964：在Google Chrome或Mozilla Firefox的Android™设备上打开表单时，无法删除在文本框组件中输入的文本。
+- Forms-9026：当用户基于复杂且有效的JSON架构创建自适应表单时，将相关的JSON架构字段拖到自适应Forms编辑器以创建自适应Forms字段，并刷新自适应Forms编辑器窗口，所有字段都将被删除并且自适应Forms编辑器显示为空白。
+- Forms-9263：当复选框选项的显示文本包含特殊字符时，用户无法选中此类复选框。
+- Forms-8668：呈现表单的“PDF预览”时，错误日志中会显示一些不需要的Java™栈栈转储。 但是，渲染表单时没有问题。
+- Forms-8116：将规则应用于自适应Forms容器组件时，未保存应用的规则。
+- Forms-7906：将自适应表单添加到AEM Sites容器组件时，无法打开规则编辑器。
+- Forms-8846： Bind引用属性不适用于自适应Forms附件组件。
+- Forms-9072：在创建表单片段时搜索方案时，搜索结果不会返回任何方案以供选择。
+- Forms：修复了多个与辅助功能相关的错误，以提高AEM Forms功能的辅助功能。
+
 
 ### 已知问题 {#known-issues-12441}
 
