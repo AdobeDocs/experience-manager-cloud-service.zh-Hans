@@ -2,9 +2,9 @@
 title: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 版发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 0cc57a144b69799cfabc8baae2051e9ac8701d49
+source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1158'
 ht-degree: 1%
 
 ---
@@ -30,13 +30,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe建议您 [升级到最新的1.9.11版本](../assets/update-workfront-enhanced-connector.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建议您 [升级到最新的1.9.11版本](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知问题 {#known-issues}
 
 * 使用AEM 6.4配置项目链接文件夹时，Experience Manager不保存值 **[!UICONTROL 子文件夹]** 和 **[!UICONTROL 在具有项目组合的项目中创建链接文件夹]** 字段。 的值 **[!UICONTROL 子文件夹]** 字段更新至 **[!UICONTROL 未定义]** 和的值 **[!UICONTROL 在具有项目组合的项目中创建链接文件夹]** 字段更新至 **[!UICONTROL 默认Portfolio]** 在保存配置后自动。
 
-* 当您使用经典Workfront体验时， **[!UICONTROL 发送至]** 中提供的选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 此 **[!UICONTROL 发送至]** 选项通过使用 **[!UICONTROL 文档操作]** 下拉列表。 此 **[!UICONTROL 发送至]** 选项对以下各项正常工作 **[!UICONTROL 更多]** 下拉列表以及 **[!UICONTROL 文档操作]** 下拉列表(可从新的Workfront experience中获取)。
+* 当您使用经典Workfront体验时， **[!UICONTROL 发送至]** 中提供的选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 此 **[!UICONTROL 发送至]** 选项通过使用 **[!UICONTROL 文档操作]** 下拉列表。 此 **[!UICONTROL 发送至]** 选项对以下各项正常工作 **[!UICONTROL 更多]** 下拉列表和 **[!UICONTROL 文档操作]** 下拉列表(可从新的Workfront experience中获取)。
 
 ## 以前版本 {#previous-releases}
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 [!DNL Workfront for Experience Manager enhanced connector] 版本1.9.4于2007年10月发布，其中包括以下更新：
 
-* 由于大量事件，无法在增强型连接器配置页面上查看“事件订阅”选项卡。
+* 由于许多事件，无法在增强型连接器配置页面上查看“事件订阅”选项卡。
 
 * Workfront无法获取项目中现有文件夹的列表，从而导致创建重复的文件夹。
 
@@ -147,7 +147,7 @@ ht-degree: 1%
 
 [!DNL Workfront for Experience Manager enhanced connector] 版本1.9.3于9月16日发布，包括以下更新：
 
-* 无法上载大小超过8 GB的文件。
+* 无法上传大于8 GB的文件。
 * 自动发布从Workfront发送到AEM的资产时出现问题。
 * 编辑默认元数据架构表单时，根路径字段不可用于“标记”字段。
 * 使用AEM工作流在Workfront中添加新版本时出现问题。
@@ -178,7 +178,7 @@ ht-degree: 1%
 
 [!DNL Workfront for Experience Manager enhanced connector] 现在包含以下更新：
 
-* 当您通过链接的文件夹上传或使用 `Send To` Workfront中可用于将资源上传到Experience Manageras a Cloud Service的操作，这些资源已损坏，无法在Adobe Photoshop中打开。
+* 当您通过链接的文件夹上传或使用 `Send To` Workfront中可用于将资源上传到Experience Manageras a Cloud Service的操作，资源已损坏，无法在Adobe Photoshop中打开。
 
 ### 2022年3月版 {#march-2022-release}
 
