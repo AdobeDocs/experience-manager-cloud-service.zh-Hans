@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2558'
 ht-degree: 9%
 
 ---
@@ -101,11 +101,11 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 
 1. 从 **工具** 面板，导航到 **[!UICONTROL 部署]** > **[!UICONTROL 分发]**.
 
-   ![](assets/test-bpconfig1.png)
+   ![使用Brand Portal配置AEM Assetsas a Cloud Service](assets/test-bpconfig1.png)
 
    Brand Portal分发代理(**[!UICONTROL bpdistributionagent0]**)创建于 **[!UICONTROL 发布到Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![创建分发代理](assets/test-bpconfig2.png)
 
 
 1. 单击 **[!UICONTROL 发布到Brand Portal]** 以打开分发代理。
@@ -121,11 +121,11 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
    >
    >建议检查故障并清除 **错误队列** 定期。
 
-   ![](assets/test-bpconfig3.png)
+   ![处理资产分发队列](assets/test-bpconfig3.png)
 
 1. 验证Experience Manager Assets as a之间的连接 [!DNL Cloud Service] 和Brand Portal，单击 **[!UICONTROL 测试连接]** 图标。
 
-   ![](assets/test-bpconfig4.png)
+   ![验证AEM与Brand Portal之间的连接](assets/test-bpconfig4.png)
 
    此时将显示一条消息，表明 *测试包已成功交付*.
 
@@ -156,7 +156,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 1. 请按照（从1到4）中的步骤操作，如 **测试连接** 部分，然后导航到分发代理页面。
 1. 单击 **[!UICONTROL 日志]** 查看处理和错误日志。
 
-   ![](assets/test-bpconfig5.png)
+   ![处理和错误日志](assets/test-bpconfig5.png)
 
 分发代理已生成以下日志：
 
