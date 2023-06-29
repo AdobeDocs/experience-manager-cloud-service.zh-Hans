@@ -4,7 +4,7 @@ description: 与 Adobe Target 集成
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 68%
@@ -50,7 +50,7 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 在这两种情况下：
 
 * 默认情况下，客户端代码（如果首先添加）也会自动复制到“租户 ID”字段中。
-* 您可以选择更改默认租户ID集。
+* 如果需要，您可以更改默认租户ID集。
 * 对Target的后端调用基于租户ID，而对Target的客户端调用基于客户端代码。
 
 如前所述，对于 AEM as a Cloud Service，第一种情况最常见。无论哪种方式，请确保&#x200B;**两个**&#x200B;字段都包含正确的信息，具体取决于您的要求。
@@ -156,4 +156,4 @@ In **规则**，它会定义一系列在网站上运行的操作并对这些操�
 
 >[!NOTE]
 >
->现有客户仍支持旧版配置（没有编辑或创建这些配置的选项）。 旧版配置是客户使用 VSTS 上传的内容包的一部分。
+>现有客户仍支持旧版配置（没有编辑或创建的选项）。 旧版配置是客户使用 VSTS 上传的内容包的一部分。

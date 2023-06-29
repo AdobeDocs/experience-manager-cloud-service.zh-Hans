@@ -2,9 +2,9 @@
 title: 学习创作基础知识
 description: 了解使用内容片段为 Headless CMS 创作内容的概念和机制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1715'
 ht-degree: 91%
 
 ---
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 例如：
 
-* 只需要多条信息（其中一些信息具有特定类型）的片段。对于Headless内容，引用是关键，您稍后可以在旅程中了解这些内容。
+* 只需要多条信息（其中一些信息具有特定类型）的片段。对于Headless内容，引用是关键（您稍后将在历程中了解这些内容）。
 
   ![内容片段编辑器 – 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 #### 您（可能）无需担心的问题 {#what-you-probably-do-not-need-to-worry-about}
 
-好的，这可能看起来有点奇怪，但在您打开内容片段编辑器并开始探索后，您可以看到各种选项（可能）不适用于您作为内容作者的Headless历程。 因此，这只是一个快速提示，说明您应该能够在 Headless 上下文中忽略的内容：
+好的，这可能看起来有点奇怪，但当您打开内容片段编辑器并开始探索时，您会看到各种选项（可能）不适用于您作为内容作者的Headless历程。 因此，这只是一个快速提示，说明您应该能够在 Headless 上下文中忽略的内容：
 
 * **内容片段模型**
 

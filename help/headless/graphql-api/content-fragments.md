@@ -3,7 +3,7 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
 ht-degree: 98%
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 此查询将返回完整的作者列表。没有`another`变量的作者将回退到原始数据（在这种情况下，`_variation` 将报告 `master`）。
 
-如果要将列表限制为提供指定变量的作者（并跳过会回退到原始数据的作者），请应用 [过滤器](#filtering)：
+应用 [过滤器](#filtering)，如果要将列表限制为提供指定变量的作者（并跳过会回退到原始数据的作者）：
 
 ```graphql
 query($variation: String!) {

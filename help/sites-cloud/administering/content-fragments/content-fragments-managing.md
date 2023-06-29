@@ -4,9 +4,9 @@ description: 了解如何使用“内容片段”控制台管理 AEM 内容片�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2052'
 ht-degree: 94%
 
 ---
@@ -251,7 +251,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!NOTE]
   >
-  有关预览环境的更多详细信息，请参阅以下内容：
+  有关预览环境的更多详细信息，请参阅：
   >
   * [管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [配置预览层的 OSGi 设置](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)

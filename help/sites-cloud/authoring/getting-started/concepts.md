@@ -2,9 +2,9 @@
 title: 创作概念
 description: 在 AEM 中进行创作的概念
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 39%
 
 ---
@@ -20,7 +20,7 @@ AEM 安装通常至少包含两个环境：
 
 创作环境提供了用于在实际发布内容前创建、更新和审核该内容的机制：
 
-* 作者创建和审阅内容。内容可以包含多种类型，例如页面、资源和出版物。
+* 作者创建和审阅内容。内容可以包含许多不同类型，包括页面、资源和出版物。
 * 这些内容将在某一时刻发布到您的网站。
 
 ![作者、发布者和调度程序示意图](/help/sites-cloud/authoring/assets/author-publish.png)

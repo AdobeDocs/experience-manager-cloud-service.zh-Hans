@@ -2,9 +2,9 @@
 title: 变体 – 创作片段内容 （资产 — 内容片段）
 description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容更加灵活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2438'
 ht-degree: 93%
 
 ---
@@ -196,8 +196,12 @@ ht-degree: 93%
 1. 指定属性；例如&#x200B;**标题**。
 1. 选择&#x200B;**“创建”**。
 1. 最后：
-   1. **完成** 返回（到原始片段）并引用新片段。
-   1. **打开** 引用新片段并在新的浏览器选项卡中打开新片段进行编辑。
+   1. **完成**:
+      * 返回（到原始片段）
+      * 引用新片段
+   1. **打开**:
+      * 引用新片段
+      * 打开新片段以在新的浏览器选项卡中编辑
 
 ### 查看关键统计信息 {#viewing-key-statistics}
 
