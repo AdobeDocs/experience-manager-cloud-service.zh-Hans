@@ -3,9 +3,9 @@ title: 如何汇总您的应用程序和 AEM Headless 中的内容
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用您的 AEM Project（包括内容片段）、GraphQL 调用、REST API 调用和您的应用程序，并为上线做好准备。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1065'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 91%
 
 ## AEM SDK {#the-aem-sdk}
 
-AEM SDK 用于构建和部署自定义代码。它是您所需要的主要工具，因此您可以在上线之前开发和测试Headless应用程序。 它包含以下构件：
+AEM SDK 用于构建和部署自定义代码。它是您在上线前开发和测试 Headless 应用程序所需的主要工具。它包含以下构件：
 
 * 快速入门 jar – 可用于设置创作和发布实例的可执行的 jar 文件
 * Dispatcher 工具 – Dispatcher 模块及其对基于 Windows 的系统和基于 Unix® 的系统的依赖项
@@ -64,7 +64,7 @@ Node.js 是一个 JavaScript 运行时环境，用于处理 AEM 项目的 `ui.fr
 
 接下来，让我们看看 AEM 环境的组成部分。
 
-完整的 AEM 环境由创作、发布和 Dispatcher 构成。这些相同的组件在本地开发运行时中可用，因此您可以更轻松地在代码和内容上线之前进行预览。
+完整的 AEM 环境由创作、发布和 Dispatcher 构成。这些相同的组件在本地开发运行时中可用，以便您在上线前更轻松地预览您的代码和内容。
 
 * **Author 服务**&#x200B;是内部用户创建、管理和预览内容的地方。
 
@@ -74,7 +74,7 @@ Node.js 是一个 JavaScript 运行时环境，用于处理 AEM 项目的 `ui.fr
 
 ## 本地开发工作流 {#the-local-development-workflow}
 
-本地开发项目基于 Apache Maven 构建，并使用 Git 进行源代码管理。要更新项目，开发人员可以使用他们首选的集成开发环境，如Eclipse、Visual Studio Code或IntelliJ等。
+本地开发项目基于 Apache Maven 构建，并使用 Git 进行源代码管理。若要更新项目，开发人员可以使用他们喜欢的集成开发环境，例如 Eclipse、Visual Studio Code 或 IntelliJ 等。
 
 要测试 Headless 应用程序摄取的代码或内容更新，您必须将更新部署到本地 AEM 运行时，其中包括 AEM 创作和发布服务的本地实例。
 
@@ -84,7 +84,7 @@ Node.js 是一个 JavaScript 运行时环境，用于处理 AEM 项目的 `ui.fr
 
 ## 使用本地开发环境在本地预览您的代码和内容 {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-要准备您的AEM Headless项目以进行启动，您需要确保项目的所有组成部分都正常运行。
+若要准备启动 AEM Headless 项目，您需要确保项目的所有组成部分都运行良好。
 
 为此，您必须将所有内容放在一起：代码、内容和配置，并在本地开发环境中测试这些内容以准备上线。
 
