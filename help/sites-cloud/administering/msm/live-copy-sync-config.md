@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2335'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Adobe Experience Manager 提供了大量现成的同步配置。在使用 Live C
 1. 如果现有转出配置未满足您的要求，请决定是否需要创建自己的转出配置。
 1. 指定要用于 Live Copy 的转出配置。
 
-## 已安装和自定义转出配置 {#installed-and-custom-rollout-configurations}
+## 已安装的自定义转出配置 {#installed-and-custom-rollout-configurations}
 
-此部分提供有关已安装的转出配置和它们使用的同步操作的信息，以及根据需要如何创建自定义配置的信息。
+本部分提供有关已安装转出配置、其所使用的同步操作以及如何在需要时创建自定义配置的信息。
 
 >[!CAUTION]
 >
@@ -29,7 +29,7 @@ Adobe Experience Manager 提供了大量现成的同步配置。在使用 Live C
 
 ### 转出触发器 {#rollout-triggers}
 
-每个转出配置都使用导致转出的转出触发器。 转出配置可以使用以下触发器之一：
+每个转出配置都使用一个可执行转出的转出触发器。转出配置可以使用以下触发器之一：
 
 * **转出**：在 Blue Print 页面上使用&#x200B;**转出**&#x200B;命令，或者在 Live Copy 页面上使用&#x200B;**同步**&#x200B;命令。
 * **修改**：修改源页面。
@@ -69,7 +69,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | `contentDelete` | 此操作删除源上不存在的 Live Copy 的节点。[配置 **CQ MSM 内容删除操作**&#x200B;服务](#excluding-properties-and-node-types-from-synchronization)，以指定要排除的节点类型、段落项和页面属性。 |  |
 | `contentUpdate` | 此操作使用来自源的更改来更新 Live Copy 内容。[配置 **CQ MSM 内容更新操作**&#x200B;服务](#excluding-properties-and-node-types-from-synchronization)，以指定要排除的节点类型、段落项和页面属性。 |  |
 | `editProperties` | 此操作编辑 Live Copy 的属性。`editMap` 属性确定编辑哪些属性及其值。`editMap` 属性的值必须采用以下格式：<br>`[property_name_n]#[current_value]#[new_value]`<br>`current_value` 和 `new_value` 是正则表达式，`n` 是递增整数。<br>例如，考虑 `editMap` 的以下值：<br>`sling:resourceType#/(contentpage`‖`homepage)#/mobilecontentpage,cq:template#/contentpage#/mobilecontentpage`<br>此值编辑 Live Copy 节点的属性，如下所示：将设置为 `contentpage` 或 `homepage` 的 <br>`sling:resourceType` 属性设置为 `mobilecontentpage`。<br>将设置为 `contentpage` 的 `cq:template` 属性设置为 `mobilecontentpage`。 | `editMap: (String)` 标识属性、当前值和新值。有关更多信息，请参阅描述。 |
-| `notify` | 此操作发送已转出的页面的页面事件。要接收通知，需要先订阅转出事件。 |  |
+| `notify` | 此操作发送已转出的页面的页面事件。要接收通知，首先需要订阅转出事件。 |  |
 | `orderChildren` | 此操作根据 Blueprint 上的顺序对子节点进行排序。 |  |
 | `referencesUpdate` | 此同步操作会更新 Live Copy 上的引用。<br>它将搜索 Live Copy 页面中指向 Blueprint 内资源的路径。找到后，它会更新路径以指向 Live Copy 内的相关资源。具有 Blueprint 外部目标的引用不会发生更改。<br>[配置 **CQ MSM 引用更新操作**&#x200B;服务](#excluding-properties-and-node-types-from-synchronization)，以指定要排除的节点类型、段落项和页面属性。 |  |
 | `targetVersion` | 此操作创建 Live Copy 的版本。<br>此操作必须是转出配置中包含的唯一同步操作。 |  |
@@ -100,7 +100,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 使用 AEM 时，可通过多种方法管理此类服务的配置设置。请参阅[配置 OSGi](/help/implementing/deploying/configuring-osgi.md)，以了解更多详细信息和建议的做法。
 
-下表列出了您可以指定要排除的节点的同步操作。 该表提供了要使用Web控制台配置的服务的名称，以及使用存储库节点进行配置的PID。
+下表列出了可以为其指定要排除节点的同步操作。该表提供了要使用 Web 控制台进行配置的服务名称以及要使用存储库节点进行配置的 PID。
 
 | 同步操作 | Web 控制台中的服务名称 | 服务 PID |
 |---|---|---|
@@ -119,11 +119,11 @@ The new rollout configuration is then available to you when configuring rollout 
 | 排除的页面属性 | `cq.wcm.msm.action.excludedprops` | 匹配要从同步操作中排除的页面属性的正则表达式 |
 | 忽略的 Mixin 节点类型 | `cq.wcm.msm.action.ignoredMixin` | 匹配要从同步操作中排除的 mixin 节点类型名称的正则表达式（或适用于 `contentUpdate` 操作） |
 
-#### CQ MSM内容更新操作 — 排除项 {#cq-msm-content-update-action-exclusions}
+#### CQ MSM 内容更新操作 – 排除 {#cq-msm-content-update-action-exclusions}
 
-默认情况下会排除多个属性和节点类型，这些属性和节点类型在的OSGi配置中定义 **CQ MSM内容更新操作**，下 **排除的页面属性**.
+默认情况下，将排除多个属性和节点类型，这些属性和节点类型在 **CQ MSM 内容更新操作**&#x200B;的&#x200B;**已排除页面属性**&#x200B;下的 OSGi 配置中定义。
 
-默认情况下，转出时排除匹配以下正则表达式的属性（即不更新）：
+默认情况下，在转出时排除（即不更新）与以下正则表达式匹配的属性：
 
 ![Live Copy 排除正则表达式](../assets/live-copy-exclude.png)
 
@@ -139,7 +139,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 使用 AEM 时，可通过多种方法管理此类服务的配置设置。请参阅[配置 OSGi](/help/implementing/deploying/configuring-osgi.md)，以了解更多详细信息和建议的做法。
 
-下表列出了可为其指定参照更新的同步操作。 该表提供了要使用Web控制台配置的服务的名称，以及使用存储库节点进行配置的PID。
+下表列出了可以为其指定引用更新的同步操作。该表提供了要使用 Web 控制台进行配置的服务名称以及要使用存储库节点进行配置的 PID。
 
 | Web 控制台属性 | OSGi 属性 | 描述 |
 |---|---|---|
@@ -157,7 +157,7 @@ MSM 允许您指定一般使用的转出配置集，并可在需要时覆盖特�
 * **Live Copy 父页面属性：**&#x200B;当 Live Copy 页面和 Blueprint 源页面均未配置转出配置时，将使用适用于 Live Copy 页面的父页面的转出配置。
 * **[系统默认值](live-copy-sync-config.md#setting-the-system-default-rollout-configuration)：**&#x200B;当无法确定 Live Copy 父页面的转出配置时，将使用系统默认转出配置。
 
-例如，某个 Blueprint 使用 [WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)站点作为源内容。从Blueprint创建站点。 以下列表中的每一项都描述了有关使用转出配置的不同方案：
+例如，某个 Blueprint 使用 [WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)站点作为源内容。从该 Blueprint 创建一个网站。以下列表中的每个项都描述了有关使用转出配置的不同场景：
 
 * 所有 Blueprint 页面或 Live Copy 页面均未配置为使用转出配置。MSM 对所有 Live Copy 页面使用系统默认转出配置。
 * WKND 站点的根页面配置了多个转出配置。MSM 对所有 Live Copy 页面使用这些转出配置。
@@ -179,19 +179,19 @@ MSM 允许您指定一般使用的转出配置集，并可在需要时覆盖特�
 
 1. 如果需要，可调整 **Live Copy 继承**&#x200B;标记。如果选中，Live Copy 配置将在所有子项上都有效。
 
-1. 清除 **从父项继承转出配置** 属性，然后从列表中选择一个或多个转出配置。
+1. 清除&#x200B;**继承父项的转出配置**&#x200B;属性，然后从列表中选择一个或多个转出配置。
 
-   选定的转出配置显示在下拉列表下方。
+   选择的转出配置将显示在下拉列表下。
 
    ![覆盖 Live Copy 配置继承](../assets/live-copy-inherit-override.png)
 
 1. 单击或点按&#x200B;**保存并关闭**。
 
-### 设置Blueprint页面的转出配置 {#setting-the-rollout-configuration-for-a-blueprint-page}
+### 为 Blueprint 页面设置转出配置 {#setting-the-rollout-configuration-for-a-blueprint-page}
 
-使用转出配置配置Blueprint页面，以便在转出Blueprint页面时使用。
+使用要在转出 Blueprint 页面时使用的转出配置对 Blueprint 页面进行配置。
 
-请注意，Blueprint页面的子页面继承配置。 在配置要使用的转出配置时，可能会覆盖页面从其父页面继承的配置。
+请注意，Blueprint 页面的子页面将继承该配置。在配置要使用的转出配置时，可能会覆盖页面从其父页面继承的配置。
 
 1. 使用&#x200B;**站点**&#x200B;控制台选择 Blueprint 的根页面。
 1. 从工具栏中选择&#x200B;**属性**。
