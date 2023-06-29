@@ -3,9 +3,9 @@ title: 创建项目
 description: 了解如何设置新项目和管道以部署加载项。
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '713'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->您的用户必须是 **业务负责人** 您在组织的Cloud Manager中用于创建程序的角色。
+>您的用户必须是组织的 Cloud Manager 中的&#x200B;**业务负责人**&#x200B;角色成员才能创建项目。
 
 1. 登录 Adobe Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
 
@@ -90,7 +90,7 @@ ht-degree: 97%
 
 管道完成后，即可在 AEM 创作环境中使用加载项及其演示内容。
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 现在您已完成 AEM 参考演示加载项历程的这一部分，您应：
 
