@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
+source-git-commit: 6d445943fb8a79eb549c954bb88daf61242a8b10
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2553'
 ht-degree: 9%
 
 ---
@@ -101,7 +101,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 
 1. 从 **工具** 面板，导航到 **[!UICONTROL 部署]** > **[!UICONTROL 分发]**.
 
-   ![使用Brand Portal配置AEM Assetsas a Cloud Service](assets/test-bpconfig1.png)
+   ![导航到分发选项](assets/test-bpconfig1.png)
 
    Brand Portal分发代理(**[!UICONTROL bpdistributionagent0]**)创建于 **[!UICONTROL 发布到Brand Portal]**.
 
