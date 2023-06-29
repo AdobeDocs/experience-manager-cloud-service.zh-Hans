@@ -3,14 +3,14 @@ title: 开始使用 [!DNL Assets View]
 description: 如何访问  [!DNL Assets View]，其登录体验，支持的用例以及已知问题
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5af7f9160b0028d0eff5358c3c1a43729b86883b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 94%
+source-wordcount: '345'
+ht-degree: 86%
 
 ---
 
-# 开始使用 [!DNL Adobe Experience Manager Assets View] {#assets-view-get-started}
+# 开始使用资产视图 {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -25,11 +25,9 @@ ht-degree: 94%
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## 获取对 [!DNL Assets View] 的访问权限 {#get-access}
+## 访问“资源”视图 {#access-assets-view}
 
-Adobe 配置解决方案并将您的组织中的指定人员添加作为管理员。管理员可以使用 [[!DNL Admin Console]](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 向组织中的不同用户提供访问权限。对于与您的访问权限相关的请求，请联系组织的管理员。
-
-在登录时，提供凭据之后，[!DNL Assets View] 提示您选择帐户。在此例中，选择 `Company or School Account` 以继续。
+参见 [如何访问资源视图](/help/assets/assets-view-introduction.md#how-to-access-assets-view) 有关如何访问“资源”视图的详细说明。
 
 ## 配置 [!DNL Assets View] {#configuration}
 

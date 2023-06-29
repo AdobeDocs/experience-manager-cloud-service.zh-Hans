@@ -2,9 +2,9 @@
 title: Assets视图如何使您受益？
 description: 详细了解Assets视图的主要优势
 mini-toc-levels: 3
-source-git-commit: 4e31a57a6bcbc6783398c205075bb8e1b1a5dc74
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1118'
 ht-degree: 11%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 11%
 
 ### 文件夹上传以设置组织的层次结构 {#folder-uploads}
 
-通过上传本地文件系统上存在的文件夹，使用资产视图快速为您的组织设置文件夹结构。 您无需在根文件夹下创建文件夹，然后手动将资产上传到这些文件夹以维护逻辑层次结构。 根文件夹下的所有文件夹和资产会自动上传到Experience Manager Assets。
+通过上传本地文件系统上存在的文件夹，使用资产视图快速为您的组织设置文件夹结构。 您无需在根文件夹下创建文件夹，然后手动将资产上传到这些文件夹，即可维护逻辑层次结构。 根文件夹下的所有文件夹和资产会自动上传到Experience Manager Assets。
 
 ![上传文件夹](assets/folder-uploads.gif)
 
@@ -120,6 +120,11 @@ ht-degree: 11%
 * 将具有不同名称的新版本资产从本地文件系统上传到资产存储库。 上传的资产可用作新版本，其名称与原始资产的名称相同。
 
 * 重命名存储库中可用的资源和文件夹。
+
+使用这些链接可快速开始使用资产视图：
+
+* [我的工作区](/help/assets/my-workspace-assets-view.md)
+* [开始使用资源视图](/help/assets/get-started-assets-view.md)
 
 ## 结论 {#conclusion}
 

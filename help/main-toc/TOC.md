@@ -8,7 +8,7 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 99%
@@ -502,7 +502,7 @@ ht-degree: 99%
       + [Flash 查看器生命周期终止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 查看器生命周期终止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + 使用资产视图 {#assets-view}
-      + [介绍](/help/assets/assets-view-introduction.md)
+      + [简介](/help/assets/assets-view-introduction.md)
       + [快速入门](/help/assets/get-started-assets-view.md)
       + [我的工作区](/help/assets/my-workspace-assets-view.md)
       + [支持的文件类型和用例](/help/assets/supported-file-formats-assets-view.md)
