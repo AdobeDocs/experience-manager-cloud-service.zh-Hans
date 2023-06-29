@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '922'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 为了确保转出不被阻止，可能的定义可以包括：
 
 * 转出期间哪个页面（Blueprint 或 Live Copy）优先
-* 重命名了哪些页面，以及重命名的方式
+* 哪些页面会进行重命名（以及重命名的方式）
 * 这将如何影响任何发布的内容
 
 AEM 现成的默认行为是发布的内容将不会受到影响。因此，如果在 Live Copy 分支中手动创建的页面已发布，则仍将在冲突处理和转出后发布该内容。
