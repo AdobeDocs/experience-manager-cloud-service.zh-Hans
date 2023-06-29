@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2705'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -148,7 +148,7 @@ ht-degree: 96%
 
 ### 使用的术语 {#terms-used}
 
-作为介绍，下表概述了用于 MSM 的主要术语。后续部分和页面中将更详细地介绍这些术语。
+作为介绍，下表概述了用于 MSM 的主要术语。后续部分和页面中会更详细地介绍这些术语。
 
 | 术语 | 定义 | 更多详细信息 |
 |---|---|---|
@@ -161,7 +161,7 @@ ht-degree: 96%
 | 章节 | 要包含在 Live Copy 中的 Blueprint 部分 | 这些通常是根的子页面 |
 | 同步 | 源和 Live Copy 之间内容同步的通用术语（通过&#x200B;**转出**&#x200B;和&#x200B;**同步**&#x200B;选项） |  |
 | 转出 | 从源同步到 Live Copy | 可以由作者（在 Blueprint 页面上）或系统事件（由转出配置定义）触发 |
-| 转出配置 | 确定同步哪些属性、同步方式和时间的规则 |  |
+| 转出配置 | 用于确定将会同步的属性及其同步方式和时间的规则 |  |
 | 同步 | 从 Live Copy 页面发出的手动同步请求 |  |
 | 继承 | 发生同步时，Live Copy 页面/组件从其源页面/组件继承内容 |  |
 | 暂停 | 临时删除 Live Copy 与其 Blueprint 页面之间的实时关系。 |  |
@@ -231,15 +231,15 @@ Live Copy 的基本形式具有：
 当您（或流程）[在现有 Live Copy 中创建新页面](#live-copy-with-non-live-copy-pages)时，此新页面也可以设置为其他 Blueprint 的 Live Copy。这称作嵌套式 Live Copy。在嵌套式 Live Copy 中，第一个或外部 Live Copy 会对第二个或内部 Live Copy 的行为产生如下影响：
 
 * 为顶级 Live Copy 触发的深转出可以继续在嵌套式 Live Copy 中执行。
-* 源之间的任何链接都会在活动副本中重写。
+* 源之间的任何链接都会在 Live Copy 中重写。
 
-例如，从第二个指向第一个Blueprint的链接将被重写为从嵌套/第二个Live Copy指向第一个Live Copy的链接。
+例如，从第二个 Blueprint 指向第一个 Blueprint 的链接会被重写为从嵌套式/第二个 Live Copy 指向第一个 Live Copy 的链接。
 
 ![嵌套式 Live Copy](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
->如果在Live Copy分支中移动或重命名页面，则会将其视为嵌套式Live Copy，以使AEM能够跟踪关系。
+>如果您在 Live Copy 分支中移动或重命名页面，这会被视为嵌套式 Live Copy，以使 AEM 能够跟踪关系。
 
 #### 堆叠式 Live Copy {#stacked-live-copies}
 
