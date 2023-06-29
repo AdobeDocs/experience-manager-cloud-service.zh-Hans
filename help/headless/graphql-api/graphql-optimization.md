@@ -3,9 +3,9 @@ title: 优化 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中对内容片段进行筛选、分页和排序时优化 GraphQL 查询，以实现 headless 内容交付。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM 提供了两种方法来优化 GraphQL 查询：
 
 >[!NOTE]
 >
->由于技术原因（例如，灵活性、嵌套片段），AEM无法将整个筛选委派给JCR。
+>出于技术原因（例如灵活性、片段嵌套），AEM 无法将整个筛选工作委派给 JCR。
 
 此技术保留了 GraphQL 筛选提供的灵活性，同时将尽可能多的筛选工作委派给 JCR。
 
@@ -129,7 +129,7 @@ AEM 中的 GraphQL 支持两种类型的分页：
 
 ### 筛选表达式中的逻辑运算 {#logical-operations-in-filter-expressions}
 
-如果您正在筛选嵌套片段，您仍然可以应用JCR筛选，方法是为顶级字段提供一个随附的筛选器，该字段是使用组合的 `AND` 运算符。
+如果在嵌套片段上进行筛选，则仍可以通过提供使用 `AND` 运算符的顶级字段的附加筛选来利用 JCR 筛选。
 
 一个典型用例是，对顶级片段的 `_path` 字段使用筛选器来限制查询的范围，然后筛选可能位于顶级或嵌套片段上的其他字段。
 
