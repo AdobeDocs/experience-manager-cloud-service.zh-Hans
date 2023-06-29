@@ -5,9 +5,9 @@ feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 97%
 
 * 您可以使用内容片段来创作主要不打算在格式化页面上直接发布 (1:1) 的内容。
 
-* 您的内容片段的内容以预先确定的方式构建 — 根据内容片段模型。 这简化了对应用程序的访问，这将进一步处理您的内容。
+* 您的内容片段的内容会以预先确定的方式构建（根据内容片段模型）。 这简化了对应用程序的访问，这将进一步处理您的内容。
 
 ## GraphQL — 概述 {#graphql-overview}
 
