@@ -3,15 +3,15 @@ title: AEM Headless 内容架构师历程
 description: 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '786'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 # AEM Headless 内容架构师历程 {#aem-headless-content-architect-journey}
 
-从这里开始，引导您了解AEM强大而灵活的Headless特性、它们的功能以及如何在您的第一个Headless项目中使用它们。
+从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中利用它们。
 
 {{headless-trials-promotion}}
 
@@ -37,11 +37,11 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 
 ## 受众 {#audience}
 
-此历程专为内容架构师角色设计。作为内容架构师，您正在定义内容的结构。 然后，内容作者在创建实际内容时使用这些定义。
+此历程专为内容架构师角色设计。作为内容架构师，您需要定义内容的结构。之后，内容作者在创建实际内容时会使用这些定义。
 
 该历程从内容架构师的角度列出了 AEM Headless 项目的要求、步骤和方法。此历程将定义内容架构师为成功实施项目而必须与之互动的其他角色，但历程的观点是内容架构师的观点。
 
-此历程中的信息当然对其他角色很有用，但某些信息对某些角色来说是多余的。 请继续关注即将推出的涵盖其他角色的历程。
+虽然此历程中的信息对其他角色很有用，但一些信息对特定角色来说是多余的。请继续关注即将推出的涵盖其他角色的历程。
 
 ## Headless 内容架构师历程 {#the-journey}
 
@@ -68,6 +68,6 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [Headless 创作历程](/help/journey-headless/author/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
-* [AEM Headless开发人员历程](/help/journey-headless/developer/overview.md)  — 从这里开始，引导您了解AEM强大而灵活的Headless特性、它们的功能以及如何在您的第一个开发项目中使用它们。
+* [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
 * [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您已对 AEM 和 Headless 技术有一定的了解，则可能需要直接参阅深入的技术文档。
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。
