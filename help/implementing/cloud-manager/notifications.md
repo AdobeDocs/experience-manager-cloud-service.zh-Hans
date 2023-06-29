@@ -3,9 +3,9 @@ title: 通知
 description: 了解如何使用 Adobe Experience Cloud 通知系统接收有关管道部署的信息。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '558'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 88%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] 在生产部署开始时在生产管道启动和完成（成功或失败）时向您发送通知。
+[!UICONTROL Cloud Manager] 在生产部署开始时，当生产管道启动和完成（成功或失败）时向您发送通知。
 
-这些通知将通过 [!UICONTROL Experience Cloud] 通知系统中的用户 **业务负责人**， **项目经理**、和 **部署管理员** 角色。
+这些通知通过 [!UICONTROL Experience Cloud] 通知系统发送给角色为&#x200B;**业务负责人**、**程序管理员**&#x200B;和&#x200B;**部署管理员**&#x200B;的用户。
 
 通知显示在 [!UICONTROL Cloud Manager] 和整个 Adobe [!UICONTROL Experience Cloud] 侧边栏中。当您有新通知时，标题中的铃铛图标将被标记。
 
@@ -60,7 +60,7 @@ ht-degree: 88%
 
 ### 优先级 {#priority}
 
-优先警报标有 **高** 标签进行标记，并且可以配置为仅作为警报接收。 在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
+优先警报标有&#x200B;**高**&#x200B;选项卡，并且可以配置为仅作为警报接收。在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
 
 ![通知优先级](assets/notifications-priority.png)
 
