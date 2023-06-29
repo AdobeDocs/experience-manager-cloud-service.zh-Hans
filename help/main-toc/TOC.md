@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 40393340131a72a86503c00a0a2e9e78a28b7e69
+source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4139'
 ht-degree: 99%
 
 ---
@@ -501,23 +501,22 @@ ht-degree: 99%
       + [HTTP2 内容投放常见问题解答](/help/assets/dynamic-media/http2faq.md)
       + [Flash 查看器生命周期终止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 查看器生命周期终止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-
-+ 使用资产视图 {#assets-view}
-   + [快速入门](/help/assets/get-started-assets-view.md)
-   + [我的工作区](/help/assets/my-workspace-assets-view.md)
-   + [支持的文件类型和用例](/help/assets/supported-file-formats-assets-view.md)
-   + [查看资源](/help/assets/navigate-assets-view.md)
-   + [上传和添加资源](/help/assets/add-delete-assets-view.md)
-   + [搜索和发现资源](/help/assets/search-assets-view.md)
-   + [资源管理任务](/help/assets/manage-organize-assets-view.md)
-   + [编辑图像](/help/assets/edit-images-assets-view.md)
-   + [管理资源元数据](/help/assets/metadata-assets-view.md)
-   + [共享资源](/help/assets/share-links-for-assets-view.md)
-   + [管理收藏集](/help/assets/manage-collections-assets-view.md)
-   + [监视资产、文件夹和收藏集](/help/assets/manage-notifications-assets-view.md)
-   + [管理报表](/help/assets/manage-reports-assets-view.md)
-   + [管理标记](/help/assets/tagging-management-assets-view.md)
-
+   + 使用资产视图 {#assets-view}
+      + [介绍](/help/assets/assets-view-introduction.md)
+      + [快速入门](/help/assets/get-started-assets-view.md)
+      + [我的工作区](/help/assets/my-workspace-assets-view.md)
+      + [支持的文件类型和用例](/help/assets/supported-file-formats-assets-view.md)
+      + [查看资源](/help/assets/navigate-assets-view.md)
+      + [上传和添加资源](/help/assets/add-delete-assets-view.md)
+      + [搜索和发现资源](/help/assets/search-assets-view.md)
+      + [资源管理任务](/help/assets/manage-organize-assets-view.md)
+      + [编辑图像](/help/assets/edit-images-assets-view.md)
+      + [管理资源元数据](/help/assets/metadata-assets-view.md)
+      + [共享资源](/help/assets/share-links-for-assets-view.md)
+      + [管理收藏集](/help/assets/manage-collections-assets-view.md)
+      + [监视资产、文件夹和收藏集](/help/assets/manage-notifications-assets-view.md)
+      + [管理报表](/help/assets/manage-reports-assets-view.md)
+      + [管理标记](/help/assets/tagging-management-assets-view.md)
    + 与 Adobe Workfront 集成 {#integrations}
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
       + [配置资源元数据映射](/help/assets/configure-asset-metadata-mapping.md)
@@ -525,6 +524,7 @@ ht-degree: 99%
       + [移除现有安装的外部依赖](/help/assets/remove-external-dependencies.md)
       + [为  [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
