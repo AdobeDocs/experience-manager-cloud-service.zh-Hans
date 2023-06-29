@@ -6,15 +6,15 @@ feature: Asset Compute Microservices,Workflow,Release Information,Asset Processi
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '850'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 使用资源微服务进行资源获取和处理概述 {#asset-microservices-overview}
 
-Adobe Experience Manager as a [!DNL Cloud Service] 提供了一种云原生方法来使用Experience Manager应用程序和功能。 这种新架构的关键元素之一是由资源微服务提供支持的资源摄取和处理。资源微服务使用云服务来对资源进行可扩展的弹性处理。Adobe 管理云服务以实施对不同的资源类型和处理选项的最优处理。云原生资源微服务的主要好处是：
+Adobe Experience Manager as a [!DNL Cloud Service] 提供了一种云原生方法来利用 Experience Manager 应用程序和功能。这种新架构的关键元素之一是由资源微服务提供支持的资源摄取和处理。资源微服务使用云服务来对资源进行可扩展的弹性处理。Adobe 管理云服务以实施对不同的资源类型和处理选项的最优处理。云原生资源微服务的主要好处是：
 
 * 可扩展架构，允许无缝处理资源密集型操作。
 * 高效索引和文本提取，不影响 Experience Manager 环境的性能。
