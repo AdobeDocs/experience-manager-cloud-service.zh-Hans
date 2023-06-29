@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使�
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1681'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 96%
 
 ## 持久查询及端点 {#persisted-queries-and-endpoints}
 
-持久查询必须始终使用与[相应站点配置](graphql-endpoint.md)相关的端点，因此它们可以使用以下项之一或全部：
+持久查询必须始终使用与[相应 Sites 配置](graphql-endpoint.md)相关的端点，因此它们可以使用以下项之一或全部：
 
 * 全球配置和端点
 查询具有对所有内容片段模型的访问权限。
-* 特定站点配置和端点
-为特定站点配置创建持久查询需要对应的站点配置特定的端点（用于提供对相关内容片段模型的访问权限）。
+* 特定 Sites 配置和端点
+为特定 Sites 配置创建持久查询需要对应的 Sites 配置特定的端点（用于提供对相关内容片段模型的访问权限）。
 例如，要创建特定于 WKND Sites 配置的持久查询，必须预先创建对应的 WKND 特定的端点。
 
 >[!NOTE]
@@ -36,11 +36,11 @@ ht-degree: 96%
 >
 >对于适当的 Sites 配置，**需要启用 GraphQL 持久查询**。
 
-例如，如果存在名为 `my-query` 的特定查询，使用来自站点配置 `my-conf` 的模型 `my-model`：
+例如，如果存在名为 `my-query` 的特定查询，使用来自 Sites 配置 `my-conf` 的模型 `my-model`：
 
-* 您可以使用创建查询 `my-conf` 特定的端点，然后查询将保存如下：
+* 您可以使用 `my-conf` 特定的端点创建查询，然后查询会保存如下：
   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* 您可以使用创建相同的查询 `global` 终结点，但随后查询将保存如下：
+* 您可以使用 `global` 端点创建相同的查询，但此后查询会保存如下：
   `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
@@ -265,7 +265,7 @@ query getAdventuresByActivity($activity: String!) {
 
 默认情况下，AEM 将根据生存时间 (TTL) 定义使缓存失效。可通过以下参数定义这些 TTL。可通过多种方式访问这些参数，其名称因所使用的机制而异：
 
-| 缓存类型 | [HTTP 标头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi 配置  | Cloud Manager |
+| 缓存类型 | [HTTP 标头](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi 配置  | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | 浏览器 | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
@@ -389,10 +389,10 @@ curl -u admin:admin -X POST \
 字段 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) 可以根据需要定义：
 
 * `false`（默认值）：
-持久化查询成功与否无关紧要。此 `/execute.json/persisted-query` 返回状态代码 `200` 和 `Content-Type` 返回的标头是 `application/json`.
+持久化查询成功与否无关紧要。`/execute.json/persisted-query` 返回状态码 `200`，返回的 `Content-Type` 标题为 `application/json`。
 
 * `true`：
-当运行持久化查询时出现任何形式的错误时，端点将返回 `400` 或 `500`（视情况而定）。另外，返回的 `Content-Type` 是 `application/graphql-response+json`.
+当运行持久化查询时出现任何形式的错误时，端点将返回 `400` 或 `500`（视情况而定）。此外，返回的 `Content-Type` 是 `application/graphql-response+json`。
 
   >[!NOTE]
   >
@@ -442,7 +442,7 @@ URL 可以划分为以下部分：
 1. 点击&#x200B;**创建包**&#x200B;创建一个新包。 这将打开一个用于定义资源包的对话框。
 1. 在包定义对话框中，在&#x200B;**常规**&#x200B;下输入&#x200B;**名称**，如“wknd-persistent-queries”。
 1. 输入版本号，如“1.0”。
-1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。 使用路径查找器选择 `persistentQueries` 文件夹。 例如，对于 `wknd` 配置，完整路径为 `/conf/wknd/settings/graphql/persistentQueries`.
+1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。 使用路径查找器选择 `persistentQueries` 文件夹。 例如，对于 `wknd` 配置，完整路径为 `/conf/wknd/settings/graphql/persistentQueries`。
 1. 点击&#x200B;**保存**&#x200B;以保存新的包定义并关闭对话框。
 1. 在新创建的包定义中点击&#x200B;**生成**&#x200B;按钮。
 
