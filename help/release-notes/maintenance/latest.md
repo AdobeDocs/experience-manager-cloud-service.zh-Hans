@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
+source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '600'
 ht-degree: 23%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 23%
 - SITES-13559：转出组件时引发“不可修改”异常
 - SITES-11757： MSM：从父项继承转出配置不会为子页面恢复配置
 - SITES-14073：站点管理员：选择要导出的属性时，CSV报表失败，返回500
-- Forms-7648：数字框组件的“最大位数”字段的验证不起作用。
-- Forms-8177：当Forms服务处于活动状态时，遇到“com.adobe.aem.formsndocuments.publish.AssetReferenceProvider无法检索资源依赖项”错误。
+- Forms-7648：无法验证数字框组件中的最大位数。 验证脚本不起作用。
+- Forms-8177：当Forms服务处于活动状态时， `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` 遇到错误。
 - Forms-8300：当用户尝试在打开任务后委派任务时，委派响应会重新加载任务，而不是打开用户的AEM收件箱UI。
 - Forms-8500：在启用了IE模式选项的Microsoft® Edge浏览器上，HTML5 Forms无法打开。
 - Forms-8541：渲染自适应Forms时，发生空指针异常。
@@ -52,7 +52,6 @@ ht-degree: 23%
 - Forms-8846： Bind引用属性不适用于自适应Forms附件组件。
 - Forms-9072：在创建表单片段时搜索方案时，搜索结果不会返回任何方案以供选择。
 - Forms：修复了多个与辅助功能相关的错误，以提高AEM Forms功能的辅助功能。
-
 
 ### 已知问题 {#known-issues-12441}
 
