@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ AEM 会自动为所有内容创建翻译规则。要查看这些规则，请执�
 
    ![翻译规则编辑器](assets/translation-rules-editor.png)
 
-1. 已翻译的页面属性位于 **常规** 列表的部分。 您可以添加或更新要明确包含在翻译中的现有属性名称。
+1. 翻译的页面属性位于列表的&#x200B;**常规**&#x200B;部分下。您可以添加或更新要明确包含在翻译中的现有属性名称。
    1. 在&#x200B;**新属性**&#x200B;字段中输入属性名称。
    1. 这将自动选中&#x200B;**翻译**&#x200B;和&#x200B;**继承**&#x200B;选项。
    1. 点按或单击&#x200B;**添加**。
