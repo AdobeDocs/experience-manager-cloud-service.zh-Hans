@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 版的发行说明。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 38%
+source-wordcount: '1569'
+ht-degree: 37%
 
 ---
 
@@ -75,7 +75,7 @@ CQ-4328183 was not reported on CS so not documented here.
 ### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-prerelease}
 
 * **统一存储连接器：**&#x200B;使用统一存储连接器将客户管理的存储库中的进程内数据外部化。例如，您可以
-   * 启用 Forms Portal 的保存和恢复功能，将自适应表单草稿存储到客户管理的数据存储库中。
+   * 启用Forms Portal的保存和恢复功能，将自适应表单草稿存储到客户管理的数据存储库中。
    * 将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
@@ -111,7 +111,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### 新增功能 {#what-is-new-screens}
 
-* Screens as a Cloud Service现在支持基本回放监控。 播放器现在将报告每次ping（默认为30秒）的各种播放量度。 基于量度，它提供检测各种边缘情况（卡住体验、空白屏幕、计划问题等）的能力。 此功能允许团队远程监控播放器是否正确播放内容，改善对空白屏幕或现场中断体验的反应性，并降低向最终用户显示中断体验的风险。
+* Screens as a Cloud Service现在支持基本回放监控。 播放器现在将报告每次ping（默认为30秒）的各种播放量度。 基于量度，它提供检测各种边缘情况（停滞体验、空白屏幕、计划问题等）的能力。 此功能允许团队远程监控播放器是否正确播放内容，改善对空白屏幕或现场中断体验的反应性，并降低向最终用户显示中断体验的风险。
 参见 [基本回放监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 了解更多详细信息。
 
 * 现在，Screensas a Cloud Service支持视频的缩略图。 内容作者可以定义视频的缩略图，以便在适当的团队最终确定实际视频的同时，将图像用作占位符并正确测试内容播放和定位。 在视频播放失败时，也可以使用该图像。
@@ -145,7 +145,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 **索引优化**
 
-为了提高搜索查询和索引的性能，不再在中现成使用全文索引lucene-2 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 此版本中的。 为了根据AEM客户的要求在AEM环境中删除此全文索引，Adobe工程部单独与客户一起积极主动地工作，以温和、可持续的方式删除Lucene全文索引。 请访问 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [文档](/help/operations/indexing.md#index-optimizations) 如果您有任何问题，请直接联系我们的支持人员，以获取更多信息。
+为了提高搜索查询和索引的性能，不再在中现成使用全文索引lucene-2 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 此版本中的。 为了根据AEM客户的要求在AEM环境中删除此全文索引，Adobe工程部单独与客户一起积极主动地工作，以温和、可持续的方式删除Lucene全文索引。 访问 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [文档](/help/operations/indexing.md#index-optimizations) 如果您有任何问题，请直接联系我们的支持人员，以获取更多信息。
 
 ## Cloud Manager {#cloud-manager}
 

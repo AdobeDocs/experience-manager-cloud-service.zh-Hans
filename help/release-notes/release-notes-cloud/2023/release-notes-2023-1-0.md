@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.1.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.1.0 版的发行说明。'
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 97%
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* 现在利用资产报告，管理员可以从 Experience Manager Assets as a Cloud Service 部署中[生成资产下载报告](/help/assets/asset-reports.md)。此数据使管理员能够进一步从关键成功指标中获得见解，以衡量在您的企业内和客户采用资源的情况。
+* 现在利用资产报告，管理员可以从 Experience Manager Assets as a Cloud Service 部署中[生成资产下载报告](/help/assets/asset-reports.md)。此数据进一步支持管理员从关键成功量度获得见解，以便衡量在您的企业内和客户采用资产的情况。
 
   ![其他格式的 PDF 演绎版](/help/release-notes/assets/choose_report.png)
 
@@ -102,7 +102,7 @@ ht-degree: 97%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 月度发行版本的完整列表。
+您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月发布的完整列表。
 
 ## 迁移工具 {#migration-tools}
 

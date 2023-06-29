@@ -3,9 +3,9 @@ title: 配置富文本编辑器以在中创作内容 [!DNL Adobe Experience Mana
 description: 配置富文本编辑器以在中创作内容 [!DNL Adobe Experience Manager] as a Cloud Service。
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1875'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2021.3.0版as a Cloud Service发行说明。”
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 36%
+source-wordcount: '1290'
+ht-degree: 37%
 
 ---
 
@@ -74,9 +74,9 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 * 现在可以在任何内容页面上使用和配置产品详细信息组件
 
-* 发布了CIF Venia参考网站 — 2021.03.25，其中包括最新的CIF核心组件版本v1.9.0。请参阅 [CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) 了解更多详细信息。
+* 发布了CIF Venia参考网站 — 2021.03.25，其中包括最新的CIF核心组件版本v1.9.0。参见 [CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) 了解更多详细信息。
 
-* 发布了CIF核心组件v1.9.0。请参阅 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) 了解更多详细信息。
+* 发布了CIF核心组件v1.9.0。参见 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) 了解更多详细信息。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -127,7 +127,7 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 有时，即使未部署配置，用户也会在 IP 允许列表旁边看到绿色的“活动”状态。
 
-* 所有现有生产管道都将通过体验审核步骤自动启用。
+* 所有现有生产管道都会通过体验审核步骤自动启用。
 
 ## 内容转移工具 {#content-transfer-tool}
 
@@ -146,7 +146,7 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 的发布日期是 2021 年
 ### 内容传输工具的新增功能 {#what-is-new-ctt-march}
 
 * CTT现在安装到 `/apps` 而不是 `/libs` 特定页面的浏览器书签可能不再有效。
-* 安装CTT后，用户必须导航到其他级别才能访问“内容传输”页面。 参见 [使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) 了解更多详细信息。
+* 安装CTT后，用户必须导航到其他级别才能访问“内容传输”页面。 参见 [使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hans) 了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-ctt-march}
 
@@ -160,19 +160,19 @@ Best Practices Analyzer v2.1.8 的发布日期是 2021 年 3 月 22 日。
 
 ### Best Practices Analyzer的新增功能 {#what-is-new-bpa}
 
-* 能够从UI中的BPA报告以及导出为CSV文件的报告中过滤掉ACS Commons调查结果。
+* 能够从用户界面中的BPA报告和导出为CSV文件的报告中过滤掉ACS Commons调查结果。
 
 ## 代码重构工具 {#code-refactoring-tools}
 
 ### 代码重构工具的新增功能 {#what-is-new-crt}
 
-* Repository Modernizer的新增功能和增强。 请参阅 [GitHub资源： Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 获取最新版本。
+* Repository Modernizer的新增功能和增强。 参见 [GitHub资源： Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 获取最新版本。
    * 将OSGi配置（RepoInit配置除外）规范化为首选的.cfg.json格式。
    * 将OSGi配置文件夹重命名为指定的格式。
    * 生成ui.apps.structure项目。
    * 创建分析模块。
 
-* Dispatcher Converter的新增功能和增强功能。 请参阅 [GitHub资源： Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+* Dispatcher Converter的新增功能和增强功能。 参见 [GitHub资源： Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
    * 为不同的包含内容创建单独的文件，而不是对内容进行排队。
    * 能够处理vhosts的文件夹路径和vhost文件的路径。
    * 生成具有大客户配置（范围在600个及更多）的场文件。

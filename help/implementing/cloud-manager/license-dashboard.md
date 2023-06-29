@@ -2,10 +2,10 @@
 title: 许可证功能板
 description: Cloud Manager 提供了一个仪表板，用于轻松查看您的组织或租户可用的 AEMaaCS 产品权利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 77%
+source-wordcount: '873'
+ht-degree: 95%
 
 ---
 
@@ -49,13 +49,13 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 >[!TIP]
 >
->请参阅 [Admin Console 概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)，了解如何从 Admin Console 管理整个组织的 Adobe 权利。
+>参见 [Admin Console概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 了解如何通过Admin Console管理整个组织的Adobe授权。
 
 ## 常见问题解答 {#faq}
 
 ### 什么是内容请求？ {#what-is-a-content-request}
 
-内容请求是进入AEM Sites或任何客户提供的缓存系统（如内容交付网络）的请求，以HTML格式作为页面视图或JSON格式作为API调用交付内容或数据。
+内容请求是进入 AEM Sites 或任何客户提供的缓存系统（如内容交付网络）的请求，以 HTML 格式作为页面视图或 JSON 格式作为 API 调用交付内容或数据。
 
 每个页面视图或每五个 API 调用计算一个内容请求，在第一个接收内容请求的缓存系统入口测量。 内容请求仅按生产环境计算。
 
@@ -63,7 +63,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 ### Adobe Experience Manager 如何衡量内容请求？ {#how-are-content-requests-measured}
 
-内容请求在AEMas a Cloud Service的边缘服务器上进行跟踪。 源站流量不计入内容请求。 AEMas a Cloud Service中内置的CDN可跟踪有效的HTML和JSON请求。
+内容请求在 AEM as a Cloud Service 的边缘服务器进行跟踪。 源站流量不计入内容请求。 AEM as a Cloud Service 中内置的 CDN 跟踪有效的 HTML 和 JSON 请求。
 
 AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷新其搜索索引或服务的知名服务。
 
@@ -79,14 +79,14 @@ AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷�
 | 报告包 | 属于同一 AEM 实例和域的页面可能会将数据发送到不同的 Analytics 报告包。 |
 | 第三方监控和安全工具 | 监控和安全扫描工具可能会为 AEM 生成 Analytics 报告中未跟踪的内容请求。 |
 | 预获取请求 | 使用预获取服务预加载页面来提高速度，可能会导致内容请求流量显著增加。 |
-| DDOS | 虽然Adobe竭尽全力自动检测和过滤来自DDOS攻击的流量，但不能保证检测到所有可能的DDOS攻击 |
+| DDOS | 虽然 Adobe 竭尽全力自动检测和过滤 DDOS 攻击的流量，但无法保证检测到所有可能的 DDOS 攻击 |
 | 流量拦截器 | 在浏览器中使用跟踪拦截器可能会选择不跟踪某些请求。 |
 | 防火墙 | 防火墙可能会阻止分析跟踪。这在公司防火墙中更为常见。 |
 
-### 如果我想了解有关我的内容请求量的更多信息，该怎么办？ {#current-request-volumes}
+### 如果我想了解有关我的内容请求量的更多信息怎么办？ {#current-request-volumes}
 
-如果您想进一步了解许可证仪表板中显示的内容请求量，您的Adobe团队可以提供一个报表，其中显示内容请求的主要数量驱动因素。 请联系您的Adobe团队或Adobe客户关怀团队，以索取最佳使用报告。
+如果您想进一步了解许可证仪表板中显示的内容请求量，您的 Adob&#x200B;e 团队可以提供一份报告，其中会显示内容请求的主要驱动因素。请联系您的Adobe团队或Adobe客户关怀团队，以请求获取最佳使用报表。
 
 ### 如果我使用自己的 CDN 怎么办？ {#using-own-cdn}
 
-许可证仪表板将仅显示Cloud ServiceCDN跟踪的数据。  如果您选择使用自己的CDN (BYOCDN)，您将按照合同中的规定每年向Adobe报告您的内容请求量。
+许可证仪表板仅会显示 Cloud Service CDN 跟踪的数据。如果您选择使用自己的 CDN (BYOCDN)，您将按照合同中的规定每年向 Adob&#x200B;e 报告您的内容请求量。

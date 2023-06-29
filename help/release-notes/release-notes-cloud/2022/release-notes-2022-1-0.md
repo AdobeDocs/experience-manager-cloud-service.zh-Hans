@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 97%
+source-wordcount: '1080'
+ht-degree: 96%
 
 ---
 
@@ -122,7 +122,7 @@ AEM as a Cloud Service 2022.01.0 中的 Cloud Manager 的发布日期是 2022 �
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容验证 - 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。要使用此功能，您需要在源 AEM 环境的 `System Console` 中启用它。有关更多详细信息，请参阅[验证内容传输 - 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hans#getting-started)。
+* 内容验证 - 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。要使用此功能，您需要在源 AEM 环境的 `System Console` 中启用它。参见 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hans#getting-started) 了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-ctt}
 

@@ -6,10 +6,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -37,11 +37,11 @@ ht-degree: 2%
 
 +++ 启用 **[!UICONTROL 自适应Forms容器]** 组件。
 
-启用 [!UICONTROL 自适应Forms容器] 组件时，请执行以下步骤：
+若要启用模板策略中的[!UICONTROL 自适应表单容器]组件，请执行以下步骤：
 
 1. 转到 [!UICONTROL 页面信息] > [!UICONTROL 编辑模板]
 1. 单击 [!UICONTROL 策略] 并选择 **[!UICONTROL 自适应Forms容器]**  复选框。 **[AEM原型项目名称]  — 自适应表单**.
-1. 单击 **[!UICONTROL 完成]**.
+1. 单击&#x200B;**[!UICONTROL 完成]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
 
@@ -51,15 +51,15 @@ ht-degree: 2%
 
 要在AEM Sites页面中使用自适应Forms组件，请使用AEM Archetype/Git存储库和部署管道将Customheaderlibs和Customfooterlibs客户端库包含到AEM Sites页面。
 
-1. 打开您的 [AEM Forms原型或克隆的Git存储库](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 文本编辑器中的项目。 例如，Visual Studio Code。
+1. 打开您的 [AEM Forms原型或克隆的Git存储库](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 文本编辑器中的项目。 例如，Visual Studio Code。
 1. 导航到 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
 1. 复制值 `sling:resourceSuperType`. 例如，值为 `core/wcm/components/page/v3/page`.
 
-   ![sling资源](/help/forms/assets/slingresource.png)
+   ![Sling 资源](/help/forms/assets/slingresource.png)
 
 1. 在该位置创建类似结构 `ui.apps/src/main/content/jcr_root/apps` 与 `core/wcm/components/page/v3/page`.
 
-   ![叠加结构](/help/forms/assets/overlaystructure.png)
+   ![覆盖结构](/help/forms/assets/overlaystructure.png)
 
 1. 添加 `customheaderlibs.html` 和 `customfooterlibs.html` 文件。
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
 要使用创建自适应表单，请执行以下操作 [!UICONTROL 自适应Forms容器] 组件：
 
-1. 在编辑模式下打开AEM Sites页面。
+1. 以编辑模式打开 AEM Sites 页面。
 1. 在组件浏览器面板中，拖放 **[!UICONTROL 自适应Forms容器]** 组件。
 1. 使用自适应Forms组件创建自适应表单。
 1. 保存设置。
@@ -112,12 +112,12 @@ ht-degree: 2%
    * **预填充服务**：您可以使用预填充服务使用现有数据自动填充自适应表单的字段。 当用户打开表单时，这些字段的值会预先填充。 有关预填充服务的信息，请参阅 [预填自适应表单字段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **客户端库类别**：指定 [JavaScript函数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) 在表达式中使用并且受自适应Forms支持的受众。
 * **数据模型**：数据模型允许您将实体和服务从不同的数据源集成到自适应表单。 选择 **[!UICONTROL 表单数据模型]** 如果要创建的自适应表单涉及从多个数据源获取数据并将数据写入多个数据源。
-   * **表单数据模型**：表单数据模型允许自适应表单与不同的数据源通信。 有关配置数据源的信息，请参阅 [配置数据源。](/help/forms/configure-data-sources.md)
+   * **表单数据模型**：表单数据模型允许自适应表单与不同的数据源通信。 有关配置数据源的信息，请参阅 [配置数据源](/help/forms/configure-data-sources.md).
    * **架构**：架构表示组织中的后端系统生成或使用数据的结构。 您可以 [将架构关联到自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) 并使用其元素将动态内容添加到自适应表单。
 
-      >[!NOTE]
-      >
-      > 配置表单数据模型后，无法更改关联的表单模型。 但是，可以修改与表单数据模型关联的架构。
+     >[!NOTE]
+     >
+     > 配置表单数据模型后，无法更改关联的表单模型。 但是，可以修改与表单数据模型关联的架构。
 
 * **“提交”选项卡**
 
@@ -133,7 +133,7 @@ ht-degree: 2%
          * 提交到 OneDrive
          * 提交到 Azure Blob Storage
 
-   您还可以 [扩展默认提交操作](custom-submit-action-form.md) 以创建您自己的自定义提交操作。
+  您还可以 [扩展默认提交操作](custom-submit-action-form.md) 以创建您自己的自定义提交操作。
 
 * **显示消息**
    * **消息内容**：使用富文本编辑器编写消息，以在表单提交时显示。 仅当您选择显示感谢消息时，此选项才可用。
@@ -155,7 +155,7 @@ ht-degree: 2%
 1. 转到 [!UICONTROL 页面信息] > [!UICONTROL 编辑模板]
 
 1. 单击 [!UICONTROL 策略] 并选择 **[!UICONTROL 自适应表单 — 嵌入(v2)]** 复选框。 **[!UICONTROL [AEM原型项目名称] - FORMS]** 组。
-1. 单击 **[!UICONTROL 完成]**.
+1. 单击&#x200B;**[!UICONTROL 完成]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
 
@@ -169,15 +169,15 @@ ht-degree: 2%
 
 要在AEM Sites页面中使用自适应Forms组件，请包含 `Customheaderlibs` 和 `Customfooterlibs` 使用AEM原型/Git存储库和部署管道将客户端库发送到AEM Sites页面。
 
-1. 打开您的 [AEM Forms原型或克隆的Git存储库](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 文本编辑器中的项目。 例如，Visual Studio Code。
+1. 打开您的 [AEM Forms原型或克隆的Git存储库](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 文本编辑器中的项目。 例如，Visual Studio Code。
 1. 导航到 `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
 1. 复制值 `sling:resourceSuperType`. 例如，值为 `core/wcm/components/page/v3/page`.
 
-   ![sling资源](/help/forms/assets/slingresource.png)
+   ![Sling 资源](/help/forms/assets/slingresource.png)
 
 1. 在该位置创建类似结构 `ui.apps/src/main/content/jcr_root/apps` 与 `core/wcm/components/page/v3/page`.
 
-   ![叠加结构](/help/forms/assets/overlaystructure.png)
+   ![覆盖结构](/help/forms/assets/overlaystructure.png)
 
 1. 添加 `customheaderlibs.html` 和 `customfooterlibs.html` 文件。
 
@@ -203,7 +203,7 @@ ht-degree: 2%
 
 ### 将现有的自适应表单添加到AEM Sites页面 {#embed-existing-af}
 
-1. 在编辑模式下打开AEM Sites页面。
+1. 以编辑模式打开 AEM Sites 页面。
 1. 在组件浏览器面板中，拖放 [!UICONTROL 自适应Forms — 嵌入] 组件。
 1. 点按 [!UICONTROL 自适应Forms — 嵌入] “站点”页面中的组件并点按 ![settings_icon](/help/forms/assets/Smock_Wrench_18_N.svg) 在操作栏上。 此 **[!UICONTROL 编辑自适应Forms — 嵌入]** 对话框打开。
 1. 浏览并选择要嵌入到中的自适应表单 [!UICONTROL 资源路径].
@@ -215,7 +215,7 @@ ht-degree: 2%
 
 ### “创建新的自适应表单并将其添加到AEM Sites”页面 {#embed-new-af}
 
-1. 在编辑模式下打开AEM Sites页面。
+1. 以编辑模式打开 AEM Sites 页面。
 1. 在组件浏览器面板中，拖放 [!UICONTROL 自适应Forms — 嵌入(v2)] 组件。
 1. 单击 **加号** 图标，此时您将被重定向到表单创建向导。
 
@@ -244,7 +244,7 @@ ht-degree: 2%
 
 ### 发布添加了使用自适应表单的自适应Forms — 嵌入(v2)组件  {#publish-embedded-adaptive-form}
 
-请考虑以下使用发布添加的自适应Forms的情景 **[!UICONTROL 自适应表单 — 嵌入(v2)]** 组件：
+考虑以下使用发布添加的自适应Forms的情景 **[!UICONTROL 自适应表单 — 嵌入(v2)]** 组件：
 
 * 首次发布AEM Sites页面时，会自动发布添加到“站点”页面的表单。
 * 修改添加到已发布Sites页面的自适应表单时，手动发布相应的自适应Forms。

@@ -1,10 +1,10 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0 版的发行说明。'
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 98%
 
 ### [!DNL Experience Manager Sites] 预发布中的新增功能 {#prerelease-sites}
 
-* 将内容片段作为 JSON 选件从 AEM as a Cloud Service 导出到 Adobe Target。
+* 将内容片段作为 JSON 优惠从 AEM as a Cloud Service 导出到 Adobe Target。
 * 现在，利用对 GraphQL 分页和排序的支持以及内部缓存增强功能，可以在使用复杂的 GraphQL 查询和筛选条件从 AEM 获取大型内容集时帮助提高已解耦客户端应用程序的性能。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -86,7 +86,7 @@ ht-degree: 98%
 * 使用选定的编程语言构建高质量的多渠道表单
 * 将表单本机集成到您的桌面和移动应用程序、网站和聊天应用程序
 * 在表单应用程序中重复使用您的专有 UI 组件
-* 利用Adobe Experience Manager Forms的强大功能
+* 利用 Adobe Experience Manager Forms 的强大功能
 
 您可以使用官方电子邮件 ID 将电子邮件发送到 aem-forms-headless@adobe.com 以加入早期采用者计划。
 
@@ -96,7 +96,7 @@ ht-degree: 98%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 月度发行版本的完整列表。
+您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月发布的完整列表。
 
 ## 迁移工具 {#migration-tools}
 

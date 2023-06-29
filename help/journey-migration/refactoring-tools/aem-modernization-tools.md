@@ -2,10 +2,10 @@
 title: AEM 现代化工具
 description: AEM 现代化工具
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 77%
+source-wordcount: '129'
+ht-degree: 51%
 
 ---
 
@@ -26,8 +26,8 @@ AEM 现代化工具可轻松完成以下转换：
 >[!NOTE]
 >AEM 现代化工具是社区共同努力的结果，Adobe 不为其提供支持或保证。
 
-请参阅 **[AEM 现代化工具简介](https://opensource.adobe.com/aem-modernize-tools/)**，了解有关 AEM 现代化工具套件的规划、配置和开发的更多信息。
+参见 **[AEM现代化工具简介](https://opensource.adobe.com/aem-modernize-tools/)** 详细了解AEM现代化工具套件的规划、配置和开发。
 
 ## 安装和实施 AEM 现代化工具套件 {#installing-implementing}
 
-请参阅 **[Git 资源：AEM 现代化工具套件](https://github.com/adobe/aem-modernize-tools)**，了解有关安装和实施的信息。
+参见 **[Git资源：AEM现代化工具套件](https://github.com/adobe/aem-modernize-tools)** 了解有关安装和实施的信息。

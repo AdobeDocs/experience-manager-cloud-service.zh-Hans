@@ -2,9 +2,9 @@
 title: 使用定位模式创作目标内容
 description: 定位模式和Target组件提供了用于为体验创建内容的工具
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5412'
+source-wordcount: '5410'
 ht-degree: 44%
 
 ---
@@ -445,7 +445,7 @@ ht-degree: 44%
 
 ## 目标和设置：配置活动和设置目标 {#goals-settings-configuring-the-activity-and-setting-goals}
 
-[定位流程](#the-targeting-process-create-target-and-goals-settings)的“目标和设置”步骤涉及配置品牌活动的行为。指定活动开始和结束的时间以及活动优先级。 此外，您还可以跟踪目标。 具体来说，您可以决定要在活动中测量哪些指标。
+[定位流程](#the-targeting-process-create-target-and-goals-settings)的“目标和设置”步骤涉及配置品牌活动的行为。指定活动的开始和结束时间以及活动优先级。 此外，您还可以跟踪目标。 具体来说，您可以决定要在活动中测量哪些指标。
 
 仅当您使用Adobe Target作为定位引擎时，“目标量度”才可用。 您必须至少定义一个目标量度。 如果您已配置Adobe Analytics并且具有A4T Analytics云配置，则可以选择您希望报表源是Adobe Target还是Adobe Analytics。
 
@@ -549,7 +549,7 @@ ht-degree: 44%
 1. 如果您想要更好地控制成功量度的计数方式，请单击或点按&#x200B;**高级设置**&#x200B;以访问相应的设置。
 1. 单击&#x200B;**保存**。
 
-配置后，您可以 [查看活动的性能](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) 使用Adobe Target（体验或A/B测试定位）的客户。 此外，通过A/B测试定位，您可以 [转换入选者。](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+配置后，您可以 [查看活动的性能](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) 使用Adobe Target（体验或A/B测试定位）的客户。 此外，通过A/B测试定位，您可以 [转换入选者](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
 
 ## 模拟体验 {#simulating-an-experience}
 
@@ -634,4 +634,4 @@ ht-degree: 44%
 >
 >如果要使用 ContextHub 进行定位，请选择 **ContextHub** 作为引擎。有关更多信息，请参阅“配置 ContextHub”。
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
+<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

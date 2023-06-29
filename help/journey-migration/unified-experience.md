@@ -2,9 +2,9 @@
 title: 用于代码重构工具的统一体验
 description: 用于代码重构工具的统一体验
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Unified Experience插件具有以下优势：
 
 * **底层代码重构工具包**
 
-   代码重构工具通过以下方式执行其功能：
+  代码重构工具通过以下方式执行其功能：
 
    * 扫描客户代码的相应部分并处理代码（基于代码实施以获得最佳实践）以生成输出，然后可以验证和部署输出。
 
@@ -42,7 +42,7 @@ Unified Experience插件具有以下优势：
 
 ## 可用性 {#availability}
 
-请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 了解使用情况以及如何向此源自GitHub的插件代码投稿。
+参见 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 了解使用情况以及如何向此源自GitHub的插件代码投稿。
 
 >[!NOTE]
 >目前，该插件已与AEM Dispatcher Converter和Repository Modernizer集成。

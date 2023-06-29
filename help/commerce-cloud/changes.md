@@ -2,9 +2,9 @@
 title: 对Commerce Integration Framework (CIF)加载项的显着更改
 description: 与旧版CIF相比，Commerce Integration Framework (CIF)发生了显着更改。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---

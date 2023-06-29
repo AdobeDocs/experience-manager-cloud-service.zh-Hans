@@ -2,10 +2,10 @@
 title: 配置和配置浏览器
 description: 了解AEM配置以及它们如何管理AEM中的工作区设置。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 4%
+source-wordcount: '1485'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +29,7 @@ AEM配置用于管理AEM中的设置，并用作工作区。
 
 ## 管理员配置 {#configurations-administrator}
 
-AEM管理员和作者可以将配置视为工作区。 通过实施这些功能的访问权限，这些工作区可用于收集设置组及其关联内容，以便进行组织。
+AEM管理员和作者可以将配置视为工作区。 通过实施这些功能的访问权限，这些工作区可用于将设置组及其关联内容收集在一起，以便进行组织。
 
 可以为AEM中的许多不同功能创建配置。
 
@@ -75,8 +75,8 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
    ![创建配置](assets/configuration-create.png)
 
    * **标题**&#x200B;应为描述性的。
-   * 此 **名称** 将成为存储库中的节点名称。
-      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定。](naming-conventions.md)
+   * **名称**&#x200B;会成为存储库中的节点名称。
+      * 它会根据标题自动生成，并根据 [AEM 命名约定](naming-conventions.md)进行调整。
       * 如有必要可以调整。
 1. 检查要允许的配置类型。
    * [上下文中心区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -155,7 +155,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 在此示例中，我们假定此处存在特定于WKND的DAM文件夹以及相应的配置。 从该文件夹开始 `/content/dam/wknd`，我们将看到一个名为的字符串属性 `cq:conf` 引用应用于子树的配置。 属性通常将设置为 `jcr:content` 资源文件夹或页面的URL。 这些 `conf` 链接是显式的，因此只需查看CRXDE中的内容即可轻松跟踪这些链接。
 
-跳入 `/conf`，我们会按照参考内容查看 `/conf/wknd` 节点。 这是一个配置。 请注意，其查找对应用程序代码是完全透明的。 示例代码从未有专门的引用，它隐藏在 `Conf` 对象。 要应用哪种配置，完全由JCR内容控制。
+跳入 `/conf`，我们会按照参考内容查看 `/conf/wknd` 节点。 这是一个配置。 它的查找对应用程序代码是完全透明的。 示例代码从未有专门的引用，它隐藏在 `Conf` 对象。 要应用哪种配置，完全由JCR内容控制。
 
 我们看到配置包含一个固定名称 `settings` 包含实际项目的节点，包括 `dam/imageserver` 在我们的案子中，我们需要。 此类项目可视为“设置文档”，通常由 `cq:Page` 包括 `jcr:content` 保存实际内容。
 
@@ -194,7 +194,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 使用配置 {#using-configurations}
 
-AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置 [如上一个示例中所述。](#developer-example)
+AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了一个可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置 [如上一个示例中所述。](#developer-example)
 
 有关上下文感知配置、示例及其使用方式的更多详细信息， [请参阅Sling文档。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 

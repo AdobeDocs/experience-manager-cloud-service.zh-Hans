@@ -2,10 +2,10 @@
 title: 使沙盒环境休眠和解除沙盒环境休眠
 description: 了解沙盒程序的环境如何自动进入休眠模式，以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**开发人员控制台**。
 
-   * 有关开发人员控制台的更多详细信息，请参阅文档[访问开发人员控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
+   * 参见 [访问开发人员控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) 有关开发人员控制台的其他详细信息。
 
    ![“开发人员控制台”菜单选项](assets/developer-console-menu-option.png)
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 
 1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**开发人员控制台**。
 
-   * 有关开发人员控制台的更多详细信息，请参阅文档[访问开发人员控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
+   * 参见 [访问开发人员控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) 有关开发人员控制台的其他详细信息。
 
 1. 单击&#x200B;**解除休眠**。
 

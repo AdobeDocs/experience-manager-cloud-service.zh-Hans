@@ -2,10 +2,10 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 95%
+source-wordcount: '805'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 95%
 
 ## 请求访问 Universal Editor {#request-access}
 
-您首先需要请求访问 Universal Editor。请转到 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)，登录，然后验证您是否有权访问 Universal Editor。
+您首先需要请求访问 Universal Editor。参见 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)，登录，然后验证您是否有权访问通用编辑器。
 
 如果您无权访问，则可通过同一页面上链接的表单请求访问。
 
@@ -66,7 +66,7 @@ import "@adobe/universal-editor-cors";
 
 要能够使用 Universal Editor 通过应用程序编辑 AEM 内容，必须在 AEM 中完成 CORS 和 Cookie 设置。
 
-[必须在 AEM 创作实例上设置以下 OSGi 配置。](/help/implementing/deploying/configuring-osgi.md)
+以下各项 [必须在AEM创作实例上设置OSGi配置](/help/implementing/deploying/configuring-osgi.md).
 
 * `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` 中的 `SameSite Cookies = None`
 * 移除 X-FRAME-OPTIONS：`org.apache.sling.engine.impl.SlingMainServlet` 中的 SAMEORIGIN 标头
@@ -161,17 +161,17 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## 您已准备好使用 Universal Editor {#youre-ready}
+## 您已准备好使用通用编辑器 {#youre-ready}
 
 您的应用程序现已插桩，可以使用 Universal Editor 了！
 
-请参阅文档[使用 Universal Editor 创作内容](authoring.md)，了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
+参见 [使用通用编辑器创作内容](authoring.md) 了解内容作者使用通用编辑器创建内容是多么简单直观。
 
 ## 其他资源 {#additional-resources}
 
 要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
-* [通用编辑器简介](introduction.md)  — 了解通用编辑器如何支持编辑任何实施中任何内容的任何方面，以便您能够提供卓越的体验、提高内容速度并提供一流的开发人员体验。
+* [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
 * [使用 Universal Editor 创作内容](authoring.md) – 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 * [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。

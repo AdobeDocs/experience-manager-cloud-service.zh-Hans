@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2020.11.0版as a Cloud Service发行说明。”
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 17%
+source-wordcount: '1261'
+ht-degree: 18%
 
 ---
 
@@ -73,9 +73,9 @@ ht-degree: 17%
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 发布了CIF Venia参考网站 — 2020.11.05，其中包括最新的CIF核心组件版本v1.5.0。请参阅 [CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) 了解更多详细信息。
+* 发布了CIF Venia参考网站 — 2020.11.05，其中包括最新的CIF核心组件版本v1.5.0。参见 [CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) 了解更多详细信息。
 
-* 发布了CIF核心组件v1.5.0。请参阅 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) 了解更多详细信息。
+* 发布了CIF核心组件v1.5.0。参见 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) 了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 的发布日期是 2020 �
 ### [!DNL Cloud Manager] 的新增功能 {#what-is-new-cm}
 
 * 新的菜单选项 **本地登录** 现在可供用户从 **环境** 信息卡和 **环境** 摘要页面。
-有关更多详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md#login-locally)。
+参见 [管理环境](/help/implementing/cloud-manager/manage-environments.md#login-locally) 了解更多详细信息。
 
 * Cloud Manager 中的&#x200B;**学习**&#x200B;选项卡已在 UI 中用新图像刷新。
 
@@ -99,7 +99,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 的发布日期是 2020 �
 * 在构建执行之前完成的依赖项加载需要下载 Maven 插件。
 * Cloud Manager 页脚中用于选择语言的链接现在将导航到正确的位置。
 * 有时在代码扫描期间，SonarQube 进程不会启动。 现在将自动检测并尝试重新启动。
-* 所有现有生产管道都将通过体验审核步骤自动启用。
+* 所有现有生产管道都会通过体验审核步骤自动启用。
 
 ## Adobe Experience Manager as a Cloud Service 基础 {#cloud-service-foundation}
 

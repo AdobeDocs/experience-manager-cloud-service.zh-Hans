@@ -2,10 +2,10 @@
 title: 页面模板
 description: 创建用作新页面基础的页面时，将使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 5%
 
 创建页面模板主要是通过 [模板控制台和模板编辑器](/help/sites-cloud/authoring/features/templates.md) 模板作者。 本节概述了此过程，并在后面介绍了技术级别发生的情况。
 
-在创建新的可编辑模板时，您可以：
+创建新的可编辑模板时，您需要执行以下步骤：
 
 1. 创建 [模板文件夹](#template-folders). 这不是强制性的，但建议使用最佳实践。
 1. 选择 [模板类型](#template-type). 复制此选项是为了创建 [模板定义](#template-definitions).
@@ -54,8 +54,8 @@ ht-degree: 5%
    **结构**
 
    * 利用结构，可为模板定义组件和内容。
-   * 不能在生成的页面上移动模板结构中定义的组件，也不能从任何生成的页面中删除这些组件。
-   * 如果您希望页面作者能够添加和删除组件，请向模板中添加一个段落系统。
+   * 不能在生成页面上移动在模板结构中定义的组件，也不能从任何生成页面中删除这些组件。
+   * 如果要使页面作者能够添加和删除组件，请在模板中添加段落系统。
    * 可以解锁组件，然后再将其锁定，以便定义初始内容。
 
    有关模板作者如何定义结构的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -66,9 +66,9 @@ ht-degree: 5%
 
    * 内容策略定义组件的设计属性。
 
-      * 例如，可用元件或最小/最大尺寸。
+      * 例如，可用的组件或最小/最大尺寸。
 
-   * 这些选项适用于模板（以及使用模板创建的页面）。
+   * 这些属性适用于模板（和使用模板创建的页面）。
 
    有关模板作者如何定义策略的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
@@ -197,7 +197,7 @@ ht-degree: 5%
 
 ### 使用配置浏览器 {#using-the-configuration-browser}
 
-1. 转到 **全局导航** -> **工具** > [**配置浏览器**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. 转到 **全局导航** -> **工具** > [**配置浏览器**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    左侧列出了现有文件夹，包括 `global` 文件夹。
 
@@ -304,7 +304,7 @@ ht-degree: 5%
 
 * AEM提供少量现成的模板类型，如“HTML5页”和“自适应表单页”。
 
-   * 以下部分提供了其他示例 [wknd教程。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+   * 以下部分提供了其他示例 [wknd教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 * 模板类型通常由开发人员定义。
 
@@ -328,7 +328,7 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->模板类型必须遵循正确的文件夹结构(即 `/settings/wcm/...`)，否则将无法找到模板类型。
+>模板类型必须遵循正确的文件夹结构(即， `/settings/wcm/...`)，否则将无法找到模板类型。
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -459,7 +459,7 @@ GITHUB上的代码
 
 ### 内容策略 {#content-policies}
 
-内容策略定义组件的设计属性。 例如，可用元件或最小/最大尺寸。 这些选项适用于模板（以及使用模板创建的页面）。 可以在模板编辑器中创建和选择内容策略。
+内容策略定义组件的设计属性。 例如，可用的组件或最小/最大尺寸。这些属性适用于模板（和使用模板创建的页面）。可以在模板编辑器中创建和选择内容策略。
 
 * 属性 `cq:policy`，位于 `root` 节点
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
@@ -538,9 +538,9 @@ GITHUB上的代码
 * **组件**:
 
    * 页面组件将合并 `structure/jcr:content` 模板树 `jcr:content` 页面的树。
-      * 页面组件将仅允许作者编辑已标记为可编辑的模板结构的节点（以及任何子节点）。
+      * 页面组件将仅允许作者编辑已标记为可编辑的模板结构的节点（以及任何子项）。
       * 在页面上呈现组件时，该组件的相对路径是从 `jcr:content` 节点；同一路径位于 `policies/jcr:content` 随后将搜索模板的节点。
-         * 此 `cq:policy` 此节点的属性指向实际内容策略（即，它包含该组件的设计配置）。
+         * 此 `cq:policy` 此节点的属性指向实际内容策略（即，包含该组件的设计配置）。
             * 这样，您就可以拥有重复使用相同内容策略配置的多个模板。
 
 ### 模板可用性 {#template-availability}

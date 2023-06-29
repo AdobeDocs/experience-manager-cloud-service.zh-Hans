@@ -2,10 +2,10 @@
 title: 内容传输工具概述
 description: 内容传输工具概述
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 63%
+source-wordcount: '645'
+ht-degree: 60%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 63%
 
 1. **提取**：提取是指将内容从源 AEM 实例提取到称为&#x200B;*迁移集*&#x200B;的临时区域。*迁移集*&#x200B;是 Adobe 提供的云存储区域，用于临时存储源 AEM 实例和云服务 AEM 实例之间的传输内容。
 
-   有关更多详细信息，请参阅[内容传输中的提取流程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
+   参见 [内容传输中的提取流程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解更多详细信息。
 
    >[!NOTE]
    >现在，用户映射将作为提取阶段的一部分在创作实例上自动运行（但可以选择在创作实例上禁用或在发布实例上启用）。 参见 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 了解更多详细信息。
@@ -55,9 +55,9 @@ ht-degree: 63%
 >[!NOTE]
 >初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。
 
-在提取阶段，要对现有迁移集进行&#x200B;***增补***，则必须禁用&#x200B;*覆盖*&#x200B;选项。有关更多详细信息，请参阅[增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)。
+在提取阶段，要对现有迁移集进行&#x200B;***增补***，则必须禁用&#x200B;*覆盖*&#x200B;选项。参见 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 了解更多详细信息。
 
-在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。有关更多详细信息，请参阅[增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)。
+在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。参见 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 了解更多详细信息。
 
 ## 迁移集到期 {#migration-set-expiry}
 

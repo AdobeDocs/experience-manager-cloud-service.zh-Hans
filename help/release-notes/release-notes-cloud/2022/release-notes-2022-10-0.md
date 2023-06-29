@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 92%
+source-wordcount: '838'
+ht-degree: 85%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 92%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* [体验片段的个性化选项卡](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)支持体验片段编辑器进行分段详述，以及灵活创建嵌套体验片段，从而可以为多个片段创建页眉和页脚变化。在此功能推出之前，AEM 提供的个性化仅适用于网站页面，不适用于体验片段。
+* 此 [体验片段的个性化选项卡](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 允许体验片段编辑器的分段规范功能和创建嵌套体验片段的灵活性，从而可以为多个片段创建页眉和页脚变化。 在此功能推出之前，AEM 提供的个性化仅适用于网站页面，不适用于体验片段。
 
 * [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在使用户能够有效地管理翻译的内容片段。 还提供一键访问以查看所有语言副本。用户还可按其感兴趣的区域设置筛选表格视图。
 
@@ -86,15 +86,15 @@ ht-degree: 92%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* AEM as a Cloud Service （创作服务）现与 Unified Shell 集成，可改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)，了解更多详细信息。
+* AEM as a Cloud Service （创作服务）现与 Unified Shell 集成，可改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅AEM as a [Unified Shell上的Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 了解更多详细信息。
 
 * 如先前在发行说明中所述，使用复制代理管理屏幕或复制API分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）现在已被弃用和强制使用。 参见 [管理发布](/help/operations/replication.md#manage-publication) 或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) 了解复制这些大型内容包的建议方法。
 
-* Dispatcher 配置现在引用了一个文件，其中列出了常见的营销活动查询参数。客户可以选择取消注释与其相关的参数，从而实现更好的缓存。 请参阅[营销活动参数](/help/implementing/dispatcher/caching.md#marketing-parameters)，了解更多详细信息。
+* Dispatcher 配置现在引用了一个文件，其中列出了常见的营销活动查询参数。客户可以选择取消注释与其相关的参数，从而实现更好的缓存。 参见 [营销活动参数](/help/implementing/dispatcher/caching.md#marketing-parameters) 了解更多详细信息。
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 月度发行版本的完整列表。
+您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月发布的完整列表。
 
 ## 迁移工具 {#migration-tools}
 

@@ -2,9 +2,9 @@
 title: 使用内容传输工具的准则和最佳实践
 description: 使用内容传输工具的准则和最佳实践
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 19%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 19%
 
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
 
-* 完成 *提取* 内容传输过程的阶段以及开始 *摄取阶段* 将内容摄取到AEMas a Cloud Service *暂存* 或 *生产* 实例中，您需要记录支持工单以通知Adobe您打算运行 *引入* 以便Adobe能够确保在故障期间不发生中断， *引入* 进程。 您需要比计划提前1周记录支持工单 *引入* 日期。 提交支持工单后，支持团队将提供后续步骤的指导。 您可以记录支持工单，并提供以下详细信息：
+* 完成 *提取* 内容传输过程的阶段以及开始 *摄取阶段* 将内容摄取到AEMas a Cloud Service *暂存* 或 *生产* 实例中，您需要记录支持工单以通知Adobe您打算运行 *引入* 以便Adobe能够确保在故障期间不发生中断， *引入* 进程。 您需要比计划提前1周记录支持工单 *引入* 日期。 提交支持工单后，支持团队会提供后续步骤的指导。 您可以记录支持工单，并提供以下详细信息：
 
    * 计划开始的确切日期和预计时间（以您的时区为准） *引入* 阶段。
    * 您计划将数据摄取到的环境类型（暂存或生产）。
@@ -85,13 +85,13 @@ ht-degree: 19%
 
 * 使用时 `Amazon S3` 或 `Azure` 作为源AEM系统上的数据存储，数据存储应进行配置，以便存储的blob无法删除（垃圾收集）。 这样可以确保索引数据的完整性，如果未能按此方式进行配置，则可能会导致因缺少此索引数据的完整性而导致提取失败。
 
-* 如果使用自定义索引，则必须确保为自定义索引配置 `tika` 节点。 请参阅 [准备新索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 了解更多详细信息。
+* 如果使用自定义索引，则必须确保为自定义索引配置 `tika` 节点。 参见 [准备新索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 了解更多详细信息。
 
-* 如果您打算进行增补，则必须不要更改现有内容的内容结构，即从初次提取时更改到运行增补提取时。 无法对自初始提取以来结构已更改的内容运行增补。 请确保在迁移过程中对此进行限制。
+* 如果您打算进行增补，则必须不要更改现有内容的内容结构，即从初次提取时更改到运行增补提取时。 无法对自初始提取以来结构已更改的内容运行增补。 确保在迁移过程中对此进行限制。
 
 * 如果您打算将版本包含在迁移集中，并使用执行增补 `wipe=false`，则由于内容传输工具中的当前限制，您必须禁用版本清除。 如果您希望启用版本清除，并且要对迁移集执行增补，则必须按以下方式执行引入 `wipe=true`.
 
-* 迁移集将在长时间不活动后过期，之后其数据将不再可用。 请查阅 [迁移集到期](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 了解更多详细信息。
+* 迁移集将在长时间不活动后过期，之后其数据将不再可用。 审核 [迁移集到期](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 了解更多详细信息。
 
 ## 后续内容 {#whats-next}
 

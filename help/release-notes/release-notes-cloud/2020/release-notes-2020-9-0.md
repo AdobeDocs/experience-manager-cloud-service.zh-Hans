@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2020.9.0版as a Cloud Service发行说明。”
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '720'
 ht-degree: 18%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 18%
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* 单页面应用程序 (SPA) 编辑器 JavaScript SDK [现已开源](/help/implementing/developing/hybrid/reference-materials.md)。
+* 单页应用程序(SPA)编辑器JavaScript SDK [现在是开放源代码](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -50,7 +50,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 发布了CIF核心组件v1.3.0。请参阅 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 了解更多详细信息。
+* 发布了CIF核心组件v1.3.0。参见 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 了解更多详细信息。
 
 * 产品和类别模板的产品/类别预览功能现已可用。 这允许AEM中的业务用户/营销人员查看包含真实数据的产品/类别模板。
 
@@ -74,7 +74,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * 内容审核已重新标记为体验审核。
 * 构建过程分为三个单独的 Maven 命令。
-* 如果无法克隆Git存储库，则最多重新尝试三次。
+* 如果 Git 存储库无法克隆，则最多允许重复尝试三次。
 
 ### 错误修复 {#bug-fixes-cm}
 
@@ -118,8 +118,8 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * AIO-CLI插件支持Repository Modernizer，并允许用户使用插件执行该工具。
 
-  请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 了解更多详细信息。
+  参见 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 了解更多详细信息。
 
 * Repository Modernizer实用程序可用于将现有项目包重构为与为AEMas a Cloud Service定义的项目结构兼容的包。
 
-  请参阅 [Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 了解更多详细信息。
+  参见 [Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 了解更多详细信息。

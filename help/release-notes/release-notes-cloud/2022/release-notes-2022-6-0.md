@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 87%
+source-wordcount: '639'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 87%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 新的[用户界面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在可供内容管理员和内容作者有效管理（执行发布、取消发布、复制、移动等操作）、搜索/过滤内容片段，并为 Headless 用例创建内容片段。
+* 新 [用户界面](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) 内容管理员和内容作者现在可以有效地管理（执行发布、取消发布、复制、移动等操作）、搜索/筛选和为Headless用例创建内容片段。
 
   ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
 
@@ -67,7 +67,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中�
 
 ![产品驾驶舱属性概述](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* 改进了 I/O 运行时第三方连接器的兼容性和稳健性
+* 改进了I/O运行时第三方连接器的兼容性和稳健性
 
 * 改进了对客户端配置覆盖的支持（例如，设置自定义缓存行为）
 
@@ -98,7 +98,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中�
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 月度发行版本的完整列表。
+您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月发布的完整列表。
 
 ## 迁移工具 {#migration-tools}
 

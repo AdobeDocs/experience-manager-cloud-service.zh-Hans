@@ -2,10 +2,10 @@
 title: 不同功能与新增功能 – Adobe Experience Manager as a Cloud Service
 description: 不同功能与新增功能 – Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 97%
+source-wordcount: '1896'
+ht-degree: 96%
 
 ---
 
@@ -113,11 +113,11 @@ Cloud Manager：
 
 Cloud Manager 已经演变成为自助服务门户，在其中可以创建和配置 AEM as a Cloud Service 的主要组件：
 
-* 创建和管理新程序。有关详细信息，请参阅[了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
+* 创建和管理新程序。参见 [了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 了解更多详细信息。
 
-* 在这些程序中创建和管理 AEM 环境。有关详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)。
+* 在这些程序中创建和管理 AEM 环境。参见 [管理环境](/help/implementing/cloud-manager/manage-environments.md) 了解更多详细信息。
 
-* 创建和管理管道，用于将客户代码以及相关配置部署到特定环境。有关详细信息，请参阅[配置 CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
+* 创建和管理管道，用于将客户代码以及相关配置部署到特定环境。参见 [配置CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 了解更多详细信息。
 
 * 获得有关这些组件的重要生命周期事件（例如，产品更新）的通知。
 
@@ -150,7 +150,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!TIP]
 >
->有关载入流程的完整概述，请参阅 [入门历程。](/help/journey-onboarding/overview.md)
+>有关载入流程的完整概述，请参阅 [入门培训历程](/help/journey-onboarding/overview.md).
 
 ## 开发 {#developing}
 
@@ -172,7 +172,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 此流程通常称为云优先的开发。由于端到端持续时间预计需要很多分钟（根据应用程序的复杂性，可能需要 20 到 50 分钟），在云中尝试挂起的代码和配置更改之前，务必要采用快速开发方法。
 
-用于管理 OSGI 捆绑包及其关联配置的 Web 控制台（以前是 AEM 快速入门的一部分）在 AEM as a Cloud Service 中不再可用。新的开发人员控制台为大多数运行时信息提供了一个只读界面。 通过这个控制台，开发者可以直接选择并登录作者或发布服务的任何特定节点，并查看相关信息。
+用于管理 OSGI 捆绑包及其关联配置的 Web 控制台（以前是 AEM 快速入门的一部分）在 AEM as a Cloud Service 中不再可用。新的 Developer Console 为大多数运行时信息提供了一个只读界面。 通过这个控制台，开发者可以直接选择并登录作者或发布服务的任何特定节点，并查看相关信息。
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 ### 本地开发 {#aem-as-a-cloud-service-developing-local-development}
 
-为了支持快速迭代和开发，还可以在AEMas a Cloud Service环境之外开发AEM应用程序。 出于此目的，向开发人员提供了以下工件：
+为了支持快速迭代和开发，还可以在 AEM as a Cloud Service 环境之外开发 AEM 应用程序。出于此目的，向开发人员提供了以下工件：
 
 * AEM as a Cloud Service QuickStart：最新 AEM 代码库的独立安装程序，它基于 `.jar`，具有相同的功能和 API 表面。
 
@@ -242,7 +242,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 >
 >如需了解详细信息，[基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md)是一个很好的起点。
 
-对于Sites和Assets，以前使用过AEM的任何用户都会非常熟悉创作用户界面(UI)的基本原则。
+对于 Sites 和 Assets，以前使用过 AEM 的任何用户都会非常熟悉创作用户界面 (UI) 的基本原则。
 
 主要差别在于 UI 完全支持触摸；经典 UI 不再可用。除此之外，基本的东西保持不变，只有一些明显的小变化。
 
@@ -274,6 +274,6 @@ Assets 产品包括云中的新一代资源处理以及高性能资源引入和�
 
 >[!TIP]
 >
->在大致了解 AEM as a Cloud Service 后，您可以查看[入门培训历程](/help/journey-onboarding/overview.md)来快速入门。
+>概述AEMas a Cloud Service后，您可以查看 [载入历程](/help/journey-onboarding/overview.md).
 >
 >已完成入门培训或准备开始深入测试 AEM 的功能？安装 [AEM 参考演示加载项](/help/journey-sites/demos-add-on/overview.md)，使用丰富的示例探究 AEM 的强大功能。

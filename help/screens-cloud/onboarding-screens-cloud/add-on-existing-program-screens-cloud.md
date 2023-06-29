@@ -2,9 +2,9 @@
 title: 在Cloud Manager中将Screens加载项添加到现有程序
 description: 本页介绍如何在Cloud Manager for Screensas a Cloud Service中将Screens加载项添加到现有程序。
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '267'
 ht-degree: 5%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 5%
 本节介绍如何将Screens作为加载项添加到Cloud Manager中的现有程序。
 
 >[!NOTE]
->请参阅 [了解程序和程序类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) 了解有关Cloud Manager程序的更多信息。
+>参见 [了解程序和程序类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) 了解有关Cloud Manager程序的更多信息。
 
 ## 目标 {#objective}
 
@@ -27,7 +27,7 @@ ht-degree: 5%
 1. 导航到 [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >请参阅 [Cloud Manager简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html？lang=en) 以了解Cloud Manager。
+   >参见 [Cloud Manager简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html？lang=en) 以了解Cloud Manager。
 
 1. 导航到您的项目并单击 **编辑项目** Cloud Manager的选项 **概述** 页面。
 

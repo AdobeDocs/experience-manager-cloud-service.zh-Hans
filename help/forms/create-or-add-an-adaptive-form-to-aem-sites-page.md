@@ -3,9 +3,9 @@ title: 如何将自适应表单添加到AEM Sites页面？
 description: 了解如何轻松地在AEM Sites页面中创建或添加自适应表单。 了解将表单集成到网站的分步技术和最佳实践，优化数字体验以发挥最大影响。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3245'
 ht-degree: 21%
 
 ---

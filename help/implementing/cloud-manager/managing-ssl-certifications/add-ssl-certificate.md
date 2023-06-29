@@ -2,10 +2,10 @@
 title: 添加 SSL 证书
 description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 86%
+source-wordcount: '571'
+ht-degree: 95%
 
 ---
 
@@ -49,7 +49,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 从左侧导航面板中单击 **SSL 证书**。 主屏幕上将显示一个表，其中包含任何现有SSL证书的详细信息。
+1. 从左侧导航面板中单击 **SSL 证书**。 主屏幕上显示一个包含任何现有 SSL 证书详细信息的表。
 
    ![添加 SSL 证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -61,9 +61,9 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
    ![添加“SSL 证书”对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * 将显示检测到的任何错误。
+   * 显示检测到的任何错误。
       * 在保存证书之前，必须解决所有错误。
-      * 请参阅[证书错误](#certificate-errors)部分，了解有关解决常见错误的更多信息。
+      * 参见 [证书错误](#certificate-errors) 部分，了解有关解决常见错误的更多信息。
 
 1. 单击&#x200B;**保存**，保存您的证书。
 
@@ -73,7 +73,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
 >[!NOTE]
 >
->用户必须是 **业务负责人** 或 **部署管理员** 用于在Cloud Manager中安装SSL证书的角色。
+>用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色成员，才能在 Cloud Manager 中安装 SSL 证书。
 
 ## 证书错误 {#certificate-errors}
 
@@ -81,7 +81,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
 ### 证书策略 {#certificate-policy}
 
-如果您看到以下错误，请检查证书的策略。
+如果看到以下错误，请检查证书的策略。
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.
@@ -153,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->这两个命令的输出必须完全相同。 如果您找不到与您的密钥匹配的私钥， `main/server` 证书，您需要通过生成新的CSR和/或向SSL供应商请求更新的证书来重新加密证书。
+>这两个命令的输出必须完全相同。 如果您找不到 `main/server` 证书的匹配私钥，您需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
 
 ### 证书有效日期 {#certificate-validity-dates}
 

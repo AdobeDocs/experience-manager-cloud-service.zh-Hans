@@ -6,7 +6,7 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 1%
@@ -128,7 +128,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
->建议不要在绑定面板（具有非空的面板）中使用未绑定字段 `bindRef` （通过从Sidekick或“数据源”选项卡拖动组件而创建）。 它可能会导致这些未绑定字段的数据丢失。 此外，建议整个表单中的字段名称是唯一的，尤其是未绑定的字段。
+>建议不要在绑定面板（具有非空的面板）中使用未绑定字段 `bindRef` (通过从“Sidekick”或“数据源”选项卡拖动组件而创建)。 它可能会导致这些未绑定字段的数据丢失。 此外，建议整个表单中的字段名称是唯一的，尤其是未绑定的字段。
 
 #### 不含afData和afBoundData包装器的示例 {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -199,7 +199,8 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
-> 在绑定面板（具有非空bindRef的面板，这些面板是通过从Sidekick或“数据源”选项卡拖动组件创建的）中使用未绑定字段是 **非** 建议这样做，因为它可能会导致未绑定字段的数据丢失。 建议在表单中保留唯一的字段名称，尤其是未绑定的字段。
+> 在绑定面板(通过从“Sidekick”或“数据源”选项卡拖动组件而创建的具有非空bindRef的面板)中使用未绑定字段是 **非** 建议这样做，因为它可能会导致未绑定字段的数据丢失。 建议在表单中保留唯一的字段名称，尤其是未绑定的字段。
+>
 
 ### 无表单模型的自适应表单 {#adaptive-form-with-no-form-model}
 
@@ -247,7 +248,6 @@ Prefill-Submit-Data-ContentPackage.zip
 > - 默认情况下，所有类型的自适应Forms（XSD、XDP、JSON、FDM和不基于表单模型）都允许通过crx文件预填充。 仅允许对JSON和XML文件使用预填充。
 > - crx协议负责预填充的数据安全性，因此默认情况下允许使用。 使用通用正则表达式通过其他协议进行预填充可能会导致漏洞。 在配置中，指定用于保护数据的安全URL配置。
 
-
 ## 可重复面板的奇特案例 {#the-curious-case-of-repeatable-panels}
 
 通常，绑定（表单架构）和未绑定字段是在同一自适应表单中创作的，但如果绑定是可重复的，以下是一些例外情况：
@@ -292,7 +292,7 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-- SERVICE_NAME是指OSGI预填充服务的名称。 参考 [创建并运行预填充服务](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- SERVICE_NAME是指OSGI预填充服务的名称。 参见 [创建并运行预填充服务](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 - IDENTIFIER是指OSGI预填充服务获取预填充数据所需的任何元数据。 登录用户的标识符是可以使用的元数据示例。
 
 >[!NOTE]

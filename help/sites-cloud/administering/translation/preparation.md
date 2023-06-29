@@ -4,10 +4,10 @@ description: 了解如何准备内容以进行翻译。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '765'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
 
 [WKND 教程站点](/help/implementing/developing/introduction/develop-wknd-tutorial.md)包括几个语言分支并使用以下结构：
 
@@ -92,7 +92,7 @@ AEM 提供了一个&#x200B;**引用**&#x200B;边栏来显示已创建的语言�
 
 ![语言根](../assets/language-roots.png)
 
-使用[边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)通过以下过程查看页面的语言副本。
+使用以下过程查看页面的语言副本： [边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. 在站点控制台上，选择站点的页面，然后单击或点按&#x200B;**引用**。
 

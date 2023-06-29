@@ -2,9 +2,9 @@
 title: 内容转移工具快速入门
 description: 内容转移工具快速入门
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1436'
 ht-degree: 21%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 21%
 
    >[!NOTE]
    >
-   >确保提取密钥有效并且未接近其到期时间。 您可以将此信息放在 **创建迁移集** 对话框。 如果出现连接错误，请参阅 [源环境连接](#source-environment-connectivity) 了解更多信息。
+   >确保提取密钥有效并且未接近其到期时间。 您可以将此信息放在 **创建迁移集** 对话框。 如果出现连接错误，请参见 [源环境连接](#source-environment-connectivity) 了解更多信息。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 

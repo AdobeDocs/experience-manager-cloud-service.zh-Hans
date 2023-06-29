@@ -2,10 +2,10 @@
 title: 添加自定义域名
 description: 了解如何使用 Cloud Manager 添加自定义域名。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 94%
+source-wordcount: '560'
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->用户必须具有 **业务负责人** 或 **部署管理员** 在Cloud Manager中添加自定义域名的角色
+>用户必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色，才能在 Cloud Manager 中添加自定义域名
 
 ## 从域设置页面添加自定义域名 {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ ht-degree: 94%
    >
    >输入域时不要包含 `http://`、`https://` 或空格。
 
-1. 选择 **环境** 其服务与域名相关联。
+1. 选择其服务与域名关联的&#x200B;**环境**。
 
 1. 选择&#x200B;**发布**&#x200B;或&#x200B;**预览**&#x200B;服务。
 
@@ -54,17 +54,17 @@ ht-degree: 94%
 
 CDN 部署需要有效的 SSL 证书和成功的 TXT 验证。 这由状态&#x200B;**已验证和已部署**&#x200B;表示。
 
-请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)文档，了解有关各种状态的更多信息以及如何解决潜在问题。
+参见 [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 详细了解各种状态以及如何解决潜在问题。
 
 >[!NOTE]
 >
 >由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。
 >
->Cloud Manager 将验证所有权并更新可在域设置表中看到的状态。 请参阅文档[检查自定义域名驻阿根廷](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，了解更多详细信息。
+>Cloud Manager 将验证所有权并更新可在域设置表中看到的状态。 参见 [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 了解更多详细信息。
 
 >[!TIP]
 >
->请参阅[添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，了解有关 TXT 记录的更多信息。
+>参见 [添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) 了解有关TXT记录的更多信息。
 
 ## 从“环境”页面添加自定义域名 {#adding-cdn-environments}
 
@@ -98,14 +98,14 @@ CDN 部署需要有效的 SSL 证书和成功的 TXT 验证。 这由状态&#x20
 
 CDN 部署需要有效的 SSL 证书和成功的 TXT 验证。 这由状态&#x200B;**已验证和已部署**&#x200B;表示。
 
-请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)文档，了解有关各种状态的更多信息以及如何解决潜在问题。
+参见 [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 详细了解各种状态以及如何解决潜在问题。
 
 >[!NOTE]
 >
 >由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。
 >
->Cloud Manager 将验证所有权并更新可在域设置表中看到的状态。 请参阅文档[检查自定义域名驻阿根廷](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，了解更多详细信息。
+>Cloud Manager 将验证所有权并更新可在域设置表中看到的状态。 参见 [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) 了解更多详细信息。
 
 >[!TIP]
 >
->请参阅[添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，了解有关 TXT 记录的更多信息。
+>参见 [添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) 了解有关TXT记录的更多信息。

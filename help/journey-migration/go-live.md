@@ -2,9 +2,9 @@
 title: 上线
 description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1710'
 ht-degree: 4%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 4%
 
 ## 目标 {#objective}
 
-本文档将帮助您了解在熟悉历程的先前步骤后，如何执行向AEMas a Cloud Service的迁移。 您将了解如何执行初始生产迁移，以及在迁移到AEMas a Cloud Service时遵循的最佳实践。
+本文档可帮助您了解在熟悉历程的先前步骤后，如何执行向AEMas a Cloud Service的迁移。 您将了解如何执行初始生产迁移，以及迁移到AEMas a Cloud Service时应遵循的最佳实践。
 
 ## 初始生产迁移 {#initial-migration}
 
-在执行生产迁移之前，请遵循中概述的迁移步骤的设备和证明。 [内容迁移策略和时间表](/help/journey-migration/implementation.md##strategy-timeline) 部分 [实施阶段](/help/journey-migration/implementation.md).
+在执行生产迁移之前，请遵循中概述的迁移步骤的调整和验证 [内容迁移策略和时间表](/help/journey-migration/implementation.md##strategy-timeline) 部分 [实施阶段](/help/journey-migration/implementation.md).
 
 * 根据您在克隆上执行AEMas a Cloud Service阶段迁移期间获得的经验，启动从生产环境的迁移：
    * Author-Author
@@ -95,7 +95,7 @@ ht-degree: 4%
 
 ## 已知限制 {#known-limitations}
 
-请考虑，如果在提取的迁移集中发现以下任何限制，则整个摄取将失败：
+请注意如果在提取的迁移集中发现以下任何限制，则整个摄取将失败：
 
 * 名称长度超过150个字符的JCR节点
 * 大于16 MB的JCR节点
@@ -113,14 +113,14 @@ ht-degree: 4%
 
 ## 上线清单 {#Go-Live-Checklist}
 
-请查看此活动列表，以确保顺利成功地执行迁移。
+请查看此活动列表，确保顺利成功地执行迁移。
 
 * 运行具有功能和UI测试的端到端生产管道，以确保 **始终最新** AEM产品体验。 请参阅以下资源。
    * [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
    * [自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI 测试](/help/implementing/cloud-manager/ui-testing.md)
 * 将内容迁移到生产环境，并确保相关子集在暂存环境中可用于测试。
-   * 请注意，适用于AEM的DevOps最佳实践意味着，当内容从生产环境向下移动时，代码会从开发环境向上移动到生产环境。
+   * 适用于AEM的DevOps最佳实践意味着，当内容从生产环境向下移动时，代码会从开发环境向上移动到生产环境。
 * 计划代码和内容冻结期。
    * 另请参阅部分 [用于迁移的代码和内容冻结时间线](#code-content-freeze)
 * 执行最终内容增补。

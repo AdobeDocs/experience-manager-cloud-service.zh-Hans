@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
-ht-degree: 95%
+source-wordcount: '3706'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 在 AEM 项目中评估 URL 时，请问自己以下问题：
 
-*“如果用户看到此URL而页面上没有内容，他们能否描述此页内容？”*
+*“如果用户看到此 URL 但未看到页面上的任何内容，他们能否描述此页内容？”*
 
 如果能做到，那么可能该 URL 对于搜索引擎可正常工作。
 
@@ -76,9 +76,9 @@ ht-degree: 95%
 
 * 确保每个页面仅通过一种协议提供。
 
-   * 有时，站点是通过以下方式提供 `http` 在用户访问包含结账或登录表单之类的页面之前，它会切换到 `https`. 从此页面进行链接时，如果用户可返回 `http` 页面并通过 `https` 访问这些页面，则搜索引擎跟踪这些页面作为两个单独的页面。
+   * 有时，网站会通过 `http` 提供，直到用户访问包含结账或登录表单等内容的页面时为止，此时网站将切换成 `https`。从此页面进行链接时，如果用户可返回 `http` 页面并通过 `https` 访问这些页面，则搜索引擎跟踪这些页面作为两个单独的页面。
 
-   * 目前，Google 首选的页面是 `https` 而不是 `http`。因此，通过提供整个站点，往往会给人们的生活带来便利 `https`.
+   * 目前，Google 首选的页面是 `https` 而不是 `http`。因此，通过 `https` 提供整个站点，往往会给人们的生活带来便利。
 
 ### 服务器配置 {#server-configuration}
 
@@ -189,7 +189,7 @@ Resource myPage = req.getResource();
 * 而最好是让用户访问以下 URL：
   `www.mydomain.com/es/casa.html`。
 
-本地化页面名称的挑战在于，AEM平台上许多可用的本地化工具都依赖于让页面名称在各个区域设置之间匹配，以保持内容同步。
+本地化页面名称的挑战在于，AEM 平台上的许多可用本地化工具都依赖于让页面名称在各个不同区域环境中匹配，以保持内容同步。
 
 `sling:alias` 属性让您能够一举两得。可将 `sling:alias` 作为属性添加到任何资源，以便使用该资源的别名。在上一个示例中，您将拥有：
 
@@ -369,7 +369,7 @@ Apache Sling Sitemap 模块将区分为 `sling:sitemapRoot` 属性设置为 `tru
 
 在默认配置中，“页面属性”对话框提供了一个选项，用于将页面标记为 Sitemap 根（如上所述）并生成 Sitemap 本身及其后代。此行为通过实施 `SitemapGenerator` 接口来实现，并且可以通过添加替代实施进行扩展。但是，由于重新生成 XML Sitemap 的频率在很大程度上取决于内容创作工作流和工作负载，因此，该产品不提供任何 `SitemapScheduler` 配置。这使得该功能可以有效地选择启用。
 
-启用生成XML Sitemap的后台作业 `SitemapScheduler` 必须配置。 为此，可为 PID `org.apache.sling.sitemap.impl.SitemapScheduler` 创建 OSGI 配置。调度程序表达式 `0 0 0 * * ?` 可用作起点，以在每天的午夜重新生成所有 XML Sitemap 一次。
+若要启用生成 XML Sitemap 的后台作业，必须配置 `SitemapScheduler`。为此，可为 PID `org.apache.sling.sitemap.impl.SitemapScheduler` 创建 OSGI 配置。调度程序表达式 `0 0 0 * * ?` 可用作起点，以在每天的午夜重新生成所有 XML Sitemap 一次。
 
 ![Apache Sling Sitemap - 调度程序](assets/sling-sitemap-scheduler.png)
 
@@ -457,7 +457,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-此外，为 XML Sitemap 实施的功能也可用于不同的用例，例如将规范链接或语言替代项添加到页头。有关更多信息，请参阅 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 接口。
+此外，为 XML Sitemap 实施的功能也可用于不同的用例，例如将规范链接或语言替代项添加到页头。请参阅 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 界面以了解更多信息。
 
 ### 为旧版 URL 创建 301 重定向 {#creating-redirects-for-legacy-urls}
 
@@ -470,7 +470,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ## 其他资源 {#additional-resources}
 
-有关详细信息，请参阅以下其他资源：
+有关更多信息，请参阅以下其他资源：
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

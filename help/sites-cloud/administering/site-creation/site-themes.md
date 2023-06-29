@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 站点主题来自定义站点的样式和�
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 79%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 站点主题是一个包，其中包含的 CSS、JavaScript 和静态资源�
 
 >[!NOTE]
 >
->不应混淆 AEM 站点主题与 [AEM 站点模板。](site-templates.md)AEM 站点主题仅包含 AEM 站点的样式信息。AEM站点模板定义站点结构和初始内容，并包含要允许的AEM站点主题 [快速站点创建。](create-site.md)
+>不应混淆AEM站点主题 [AEM站点模板](site-templates.md). AEM 站点主题仅包含 AEM 站点的样式信息。AEM站点模板定义站点结构和初始内容，并包含要允许的AEM站点主题 [快速站点创建](create-site.md).
 
 ## 使用站点主题 {#using-themes}
 
@@ -34,7 +34,7 @@ AEM 站点主题是一个包，其中包含的 CSS、JavaScript 和静态资源�
 
 >[!TIP]
 >
->可以在[快速站点创建历程](/help/journey-sites/quick-site/overview.md)中找到从模板创建站点并自定义其主题的过程的端到端描述。
+>有关从模板创建站点并自定义其主题的过程的端到端描述，请参阅 [快速站点创建历程](/help/journey-sites/quick-site/overview.md).
 
 ## 站点主题结构 {#structure}
 
@@ -53,4 +53,4 @@ Adobe 提供了一个最佳实践参考主题，您可以基于此主题创建�
 
 Adobe 提供 AEM 站点主题生成器作为一组用于创建新站点主题的脚本。
 
-[GitHub 上提供了 AEM 站点主题生成器与使用文档。](https://github.com/adobe/aem-site-theme-builder)需要前端开发经验才能自定义主题。
+[GitHub上提供了AEM站点主题生成器与使用文档](https://github.com/adobe/aem-site-theme-builder). 需要前端开发经验才能自定义主题。

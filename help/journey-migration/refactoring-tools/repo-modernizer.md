@@ -2,9 +2,9 @@
 title: 存储库现代化器
 description: 存储库现代化器
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '302'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ Repository Modernizer通过创建以下部署结构来创建兼容的AEM Cloud S
 * `all` 包是包含子包的容器包 `ui.apps` 和 `ui.content`.
 
 >[!NOTE]
->项目结构基于 *原型24* 适用于包及其 `pom.xml/filter.xml files`. 请参阅 [原型24](https://github.com/adobe/aem-project-archetype) 了解更多详细信息。
+>项目结构基于 *原型24* 适用于包及其 `pom.xml/filter.xml files`. 参见 [原型24](https://github.com/adobe/aem-project-archetype) 了解更多详细信息。
 
 ## 使用存储库现代化器 {#using-repo-modernizer}
 

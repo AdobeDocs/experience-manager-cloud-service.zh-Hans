@@ -1,11 +1,11 @@
 ---
 title: 页面差异
-description: 利用“页面差异”功能，可以方便地并排比较突出显示差异的两个页面。
+description: 通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 29%
+source-wordcount: '612'
+ht-degree: 87%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 29%
 
 ## 简介 {#introduction}
 
-内容创建是一个反复的过程。 高效的创作要求能够查看在不同的迭代中发生了什么变化。 查看一个页面版本然后查看另一个页面版本会效率低下，并且容易出错。 作者希望能够轻松地将当前页面与另一个版本并排比较。
+内容创建是一个迭代过程。要进行高效创作，需要能够发现从一次迭代到另一次迭代所发生的更改。逐个查看页面版本的方式效率低下且容易出错。作者希望能够方便地将当前页面与另一个版本并排比较。
 
-利用“页面差异”功能，可以方便地并排比较突出显示差异的两个页面。
+通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
 
 >[!NOTE]
 >
->用户必须具有 **修改/创建/删除** 节点的权限 `/content/versionhistory` 以使用该功能。
+>用户必须具有针对节点 `/content/versionhistory` 的&#x200B;**修改/创建/删除**&#x200B;权限，才能使用此功能。
 >
 >请参阅[开发和页面差异](/help/implementing/developing/introduction/page-diff.md#operation-details)，以了解有关此功能的更多技术详细信息。
 
@@ -32,40 +32,40 @@ ht-degree: 29%
 * [启动项](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) – 将启动项与其源进行比较
 * [语言副本](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) – 将翻译之前和翻译之后（重新翻译）的页面进行比较
 
-请参阅相关主题，了解如何在这些上下文中开始差异。
+请参阅有关如何在这些情况下启动差异比较的相关主题。
 
-### 差异显示 {#presentation-of-differences}
+### 差异表示形式 {#presentation-of-differences}
 
-无论比较的内容是什么，差异的表示形式保持不变。
+无论比较何种内容，差异的表示形式都保持相同。
 
-* 启动差异时选择的内容将显示在左侧（差异入口点）。
-* 比较内容显示在右侧（所选内容与之比较）。
+* 启动差异比较时选择的内容显示在左侧（差异入口点）。
+* 要与之比较的内容则显示在右侧（要将所选内容与之比较的内容）。
 
 例如，如果比较版本，则左侧显示当前版本，右侧显示先前版本。
 
-两个页面的源均清楚地显示在浏览器窗口顶部的标题栏中。
+两个页面的源会清楚地显示在浏览器窗口顶部的标题栏中。
 
 ![版本并排视图](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
-差异检测组件和HTML级别的更改。 已更改的项目会以不同的颜色突出显示。
+差异比较会检测在组件和 HTML 级别发生的更改。发生更改的项目会以不同的颜色突出显示。
 
 **组件更改**
 
-* 浅绿色 — 已添加组件
-* 粉红色 — 组件已移除
+* 浅绿色 - 添加了组件
+* 粉红色 - 删除了组件
 
-**HTML更改**
+**HTML 更改**
 
-* 深绿色 — 已添加HTML
+* 深绿色 - 添加了 HTML
 * 红色 - 删除了 HTML
 
 >[!NOTE]
 >
->在比较语言副本时，会取消高亮显示，因为在翻译中，所有内容都会更改并高亮显示，没有任何好处。
+>在比较语言副本时，会取消激活突出显示功能，因为在翻译中，所有内容都会发生更改，突出显示没有任何用处。
 
 ### 全屏和退出 {#fullscreen-and-exiting}
 
-要集中查看特定内容，您可以单击并排差异比较中任一“侧”的全屏图标，以将其放大到整个浏览器窗口。
+若要集中查看特定内容，您可以单击并排差异比较任何一侧的全屏图标，以将其放大到整个浏览器窗口。
 
 ![全屏按钮](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
@@ -81,15 +81,15 @@ ht-degree: 29%
 
 ![退出全屏模式](/help/sites-cloud/authoring/assets/versions-exit-full-screen.png)
 
-您可以随时通过单击标题中的关闭按钮退出并排比较。
+您可以通过单击标题中的“关闭”按钮，随时退出并排差异比较。
 
 ## 限制 {#limitations}
 
-在某些情况下，页面差异可能无法按预期检测到差异。
+在某些情况下，页面差异功能可能检测不到预期的差异。
 
-* 当版本和启动次数不同时，差异不会考虑痕迹导航、菜单、产品列表或徽标等动态组件（依赖站点结构呈现其内容的组件）。
+* 在比较版本和启动项时，差异不会考虑动态组件，如痕迹导航、菜单、产品列表或徽标（依赖站点结构呈现其内容的组件）。
 * 对于版本，差异不会重新创建访问控制策略和 Live Copy 关系。
-* 如果移动了页面，您将无法再对移动前创建的任何版本执行差异分析。
+* 如果页面发生移动，将无法再使用移动前制作的任何版本执行差异。
    * 如果您遇到差异问题，请检查页面的[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)以查看页面是否已被移动。
 
 >[!NOTE]

@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1358'
 ht-degree: 98%
 
 ---
@@ -81,9 +81,9 @@ ht-degree: 98%
 
 >[!TIP]
 >
->在发布以一次发布多个翻译时，您可以选择多个项目（即多个语言文件夹）。
+>您可以在发布时选择多个项目（即多个语言文件夹），以便一次性发布多个翻译。
 
-发布内容时还有其他选项（例如，计划发布时间），它们超出了此历程的范围。有关更多信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
+发布内容时还有其他选项（例如，计划发布时间），它们超出了此历程的范围。请参阅 [其他资源](#additional-resources) 部分以了解更多信息。
 
 ## 更新翻译的内容 {#updating-translations}
 
@@ -117,7 +117,7 @@ ht-degree: 98%
 
 ![已添加其他翻译作业](assets/additional-translation-job.png)
 
-您可能会发现，新信息卡上列出的统计数据有所不同。这是因为 AEM 可以识别自上次翻译以来发生的变化，并且仅包含需要翻译的内容。这包括已更新内容的重新翻译以及新内容的首次翻译。
+您可能会发现，新信息卡上列出的统计数据有所不同。这是因为 AEM 可以识别自上次翻译以来发生的变化，并且仅包含需要翻译的内容。这包括更新内容的重新翻译和新内容的首次翻译。
 
 从此时起，您可以[像处理初始翻译一样启动和管理您的翻译作业。](translate-content.md#using-translation-project)
 

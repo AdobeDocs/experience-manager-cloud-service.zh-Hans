@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 预发行渠道
 description: 了解如何使用预发行渠道预览 AEM as a Cloud Service 即将推出的功能。
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 91%
+source-wordcount: '1304'
+ht-degree: 92%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 91%
 
 Adobe Experience Manager as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
 
-要熟悉计划于以下功能版本中上线的功能，您可以订阅预发行版渠道，您可以通过配置开发环境或任何沙盒环境来访问该渠道。 可预览可通过 AEM UI 访问的更改，并可对照任何新的预发行版 API 构建代码。
+若要熟悉安排在以下功能版本中上线的功能，可订阅预发行版渠道（可通过配置开发环境或任何沙盒环境而访问该渠道）。您可以预览可通过AEM用户界面访问的更改，并针对任何新的预发行版API构建代码。
 
-[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)中发布了给定功能版本的预发行版功能的列表。
+给定功能版本的预发行版功能列表发布在 [发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## AEM as a Cloud Service 版本 {#releases}
 
@@ -31,13 +31,13 @@ AEM as a Cloud Service 有两种类型的版本。
 
 此模式可确保持续发行而不会中断服务。
 
-预发行渠道允许您预览为即将推出的功能发行安排的功能，以便您可以评估即将推出的功能，并为其可能在您自己的项目中的实施进行规划。 它可让您提前计划下一个功能发布。
+通过预发行版渠道，可预览为即将推出的功能版本安排的功能，以评估即将推出的功能，并规划它可为您自己的项目使用的实现。通过它，可提前规划下一个功能版本。
 
-例如，如果现在是 5 月并且您订阅了预发行频道，则可以评估即将发行的 6 月版本中的功能。
+例如，如果现在是5月并且您订阅了预发行渠道，则可以评估即将发行的6月版本中的功能。
 
 ![预发行节奏图形](assets/prerelease-cadence.png)
 
-预发行版为您提供为期一个月的滚动窗口，了解即将推出的 AEMaaCS 功能，让您有时间评估任何新功能对您的项目和自定义的影响，以及计划推出此类功能、测试和用户培训。
+预发行版为您提供为期一个月的滚动窗口，了解即将推出的AEMaaCS功能，让您有时间评估任何新功能对您的项目和自定义的影响，并计划推出此类功能、测试和用户培训。
 
 有效利用预发行渠道需要四个步骤。
 
@@ -118,7 +118,7 @@ AEM as a Cloud Service 有两种类型的版本。
 
 ### 本地 SDK {#local-sdk}
 
-通过配置您的 maven 项目引用 Maven Central 中的预发行版 `API Jar`，可以在本地快速入门 SDK 的站点控制台中查看新功能，并针对预发行版中的新 API 进行编码。您还可以通过在预发行版模式下启动常规快速入门 SDK，在本地开发环境中查看这些预发行版功能。
+通过配置您的 maven 项目引用 Maven Central 中的预发行版 `API Jar`，可以在本地快速入门 SDK 的 Sites 控制台中查看新功能，并针对预发行版中的新 API 进行编码。您还可以通过在预发行版模式下启动常规快速入门 SDK，在本地开发环境中查看这些预发行版功能。
 
 #### 以预发行模式启动“快速启动 SDK” {#prerelease-mode}
 
@@ -157,7 +157,7 @@ Javadocs 将发布到 Maven Central。
      </dependency>
    ```
 
-   要更改预发行版SDK，只需将依赖关系从 `com.adobe.aem:aem-sdk-api` 到 `com.adobe.aem:aem-prerelease-sdk-api` 如下所述：
+   若要更改预发行版 SDK，只需将依赖关系从 `com.adobe.aem:aem-sdk-api` 更改为 `com.adobe.aem:aem-prerelease-sdk-api`，如下所述：
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Javadocs 将发布到 Maven Central。
 
 ## 培训您的用户 {#train-users}
 
-在预发行渠道中测试新功能并决定在项目中使用它们后，您需要培训用户。
+在预发行渠道中测试了新功能并决定在您的项目中利用它们后，您就需要培训您的用户。
 
 Adobe Experience League 提供了大量学习 AEMaaCS 的资源。
 

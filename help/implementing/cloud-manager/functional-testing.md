@@ -2,10 +2,10 @@
 title: 功能测试
 description: 了解 AEM as a Cloud Service 部署过程内置的三种不同类型的功能测试，确保代码的质量和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 88%
+source-wordcount: '539'
+ht-degree: 81%
 
 ---
 
@@ -35,9 +35,9 @@ AEM as a Cloud Service 中有三种不同类型的功能测试。
 * [自定义功能测试](#custom-functional-testing)
 * [自定义 UI 测试](#custom-ui-testing)
 
-对于所有功能测试，可以使用构建概述屏幕中的&#x200B;**下载构建日志**&#x200B;按钮作为[部署过程](/help/implementing/cloud-manager/deploy-code.md)的一部分，将测试的详细结果作为 `.zip` 文件下载。
+对于所有功能测试，测试的详细结果可以下载为 `.zip` 文件，使用 **下载内部版本日志** 按钮作为的一部分 [部署过程](/help/implementing/cloud-manager/deploy-code.md).
 
-这些日志不包括实际 AEM 运行时进程的日志。 要访问这些日志，请参阅文档[访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)，了解更多详细信息。
+这些日志不包括实际 AEM 运行时进程的日志。 要访问这些日志，请参阅 [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md) 了解更多详细信息。
 
 产品功能测试和样本自定义功能测试都基于 [AEM 测试客户端](https://github.com/adobe/aem-testing-clients)。
 
@@ -48,20 +48,20 @@ AEM as a Cloud Service 中有三种不同类型的功能测试。
 * [生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)：每当您将新代码部署到 Cloud Manager 时，产品功能测试都会自动运行，不能跳过。
 * [非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)：可以选择在执行非生产管道时运行产品功能测试。
 
-产品功能测试作为开源项目进行维护。有关详细信息，请参阅 GitHub 中的[产品功能测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)。
+产品功能测试作为开源项目进行维护。参见 [产品功能测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 详细信息。
 
 ### 自定义功能测试 {#custom-functional-testing}
 
-虽然产品功能测试由 Adobe 定义，但您可以为自己的应用程序编写自己的质量测试。 该测试作为自定义功能测试的一部分运行。 [生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 或（可选） [非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以确保应用程序的质量。
+虽然产品功能测试由 Adobe 定义，但您可以为自己的应用程序编写自己的质量测试。 这类质量测试将作为自定义功能测试运行，作为[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)或（可选）[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)的一部分，用以确保应用程序的质量。
 
-自定义功能测试既可用于自定义代码部署，也可用于推送升级，这对于编写良好的功能测试（防止 AEM 代码更改破坏应用程序代码）尤为重要。自定义功能测试步骤始终存在，不能跳过。
+自定义功能测试会针对自定义代码部署和推送升级运行，这使得编写良好的功能测试尤为重要，这些测试可防止AEM代码更改破坏应用程序代码。 自定义功能测试步骤始终存在，不能跳过。
 
-有关更多信息，请参阅 [Java 功能测试](/help/implementing/cloud-manager/java-functional-testing.md)。
+参见 [Java功能测试](/help/implementing/cloud-manager/java-functional-testing.md) 了解更多信息。
 
 
 ### 自定义 UI 测试 {#custom-ui-testing}
 
-自定义 UI 测试是一项可选功能，可用于为应用程序创建和自动运行 UI 测试。 UI测试是打包在Docker图像中的基于Selenium的测试，以允许进行广泛的语言和框架选择，例如Java和Maven、Node和WebDriver.io，或任何其他基于Selenium构建的框架和技术。
+自定义 UI 测试是一项可选功能，可用于为应用程序创建和自动运行 UI 测试。 UI 测试是基于 Selenium 的测试，打包为 Docker 映像，并可选择多种语言和框架（如 Java 和 Maven、Node 和 WebDriver.io 或任何其他基于 Selenium 构建的框架和技术）。
 
-请参阅[自定义 UI 测试](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)，了解更多信息。
+参见 [自定义用户界面测试](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) 了解更多信息。
 

@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 以下步骤显示如何发送 `addToCart` 使用CIF — 事件连接器将事件数据从AEM渲染的产品Experience Platform发送到Experience Platform。 通过使用Adobe Experience Platform Debugger浏览器扩展，您可以测试和查看提交的数据。
 
-![在Adobe Experience Platform Debugger中查看addToCart事件数据](../assets/aep-integration/EventData-AEM-AEP.png)
+![查看Adobe Experience Platform Debugger中的addToCart事件数据](../assets/aep-integration/EventData-AEM-AEP.png)
 
 ## 前提条件 {#prerequisites}
 
@@ -382,7 +382,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 - 在新页面上， __搜索并选择__ 您在上一步中创建的架构，然后单击 __下一个__ 按钮。
 
-   ![AEP创建数据集选择架构](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![AEP创建数据集选择架构](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. 使用命名数据集 __配置数据集>名称__ 字段，然后单击 __完成__ 按钮。
 

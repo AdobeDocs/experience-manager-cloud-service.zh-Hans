@@ -3,7 +3,7 @@ title: 部署到 AEM as a Cloud Service
 description: 部署到 AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 48%
@@ -113,7 +113,7 @@ ht-degree: 48%
 可以通过在 `/apps` 下的 install.author 或 install.publish 文件夹中嵌入包，来仅允许创作或发布可变内容安装。在 AEM 6.5 中进行了重构以反映此分离，可以在 [AEM 6.5 文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中找到有关推荐的项目重构的详细信息。
 
 >[!NOTE]
->内容包将部署到所有环境类型（开发、暂存、生产）。无法将部署限于特定环境。施加此限制以确保能够选择自动执行的测试运行。特定于环境的内容需要手动安装，方式为 [包管理器。](/help/implementing/developing/tools/package-manager.md)
+>内容包将部署到所有环境类型（开发、暂存、生产）。无法将部署限于特定环境。施加此限制以确保能够选择自动执行的测试运行。特定于环境的内容需要手动安装，方式为 [包管理器](/help/implementing/developing/tools/package-manager.md).
 
 此外，没有用于在应用可变内容包更改后回滚这些更改的机制。如果客户检测到问题，他们可以选择在下一个代码版本中修复它，或者在万不得已的情况下，将整个系统恢复到部署前的某个时间点。
 
@@ -195,7 +195,7 @@ above appears to be internal, to confirm with Brian -->
 
 客户通常包括来自第三方来源(如Adobe的翻译合作伙伴等软件供应商)的预建软件包。 建议在远程存储库中托管这些包，并在 `pom.xml` 中引用它们。此方法适用于公共存储库和具有密码保护的专用存储库，如中所述 [受密码保护的maven存储库](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-如果无法将包存储在远程存储库中，客户可以将其放在基于文件系统的本地Maven存储库中，该存储库作为项目的一部分提交给SCM。 任何依靠它的东西都会引用它。 存储库在项目pom中声明，如下所示：
+如果无法将包存储在远程存储库中，客户可以将包放在基于文件系统的本地Maven存储库中，该存储库作为项目的一部分提交给SCM。 任何依靠它的东西都会引用它。 存储库在项目pom中声明，如下所示：
 
 
 ```

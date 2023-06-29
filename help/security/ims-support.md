@@ -2,10 +2,10 @@
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 对Adobe Experience Manager as a Cloud Service的映像管理系统支持
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 40%
+source-wordcount: '1993'
+ht-degree: 54%
 
 ---
 
@@ -31,8 +31,8 @@ AEMas a Cloud Service仅为作者、管理员和开发用户提供IMS身份验�
 
 * Admin Console将客户表示为IMS组织，将创作实例和发布实例表示为产品上下文实例。 此表示法允许系统和产品管理员管理对实例的访问。
 * Admin Console中的产品配置文件决定了用户可以访问的实例。
-* 客户可以使用自己的符合SAML 2规范的身份提供程序（简称IDP）进行单点登录。
-* 仅支持客户单点登录的Enterprise ID或Federated ID，不支持个人AdobeID。
+* 客户能够使用自己的符合 SAML 2 规范的身份提供程序（简称 IDP）进行单点登录。
+* 仅支持客户单点登录的 Enterprise ID 或 Federated ID，不支持个人 Adobe ID。
 
 ## 架构 {#architecture}
 
@@ -50,7 +50,7 @@ IMS 身份验证在 AEM 和 Adobe IMS 端点之间使用 OAuth 协议进行工�
 
 第一步，客户必须在Adobe IMS中设置组织。 Adobe企业客户在中表示为IMS组织 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html). 此区域是Adobe客户管理其用户和组的产品权利的门户。
 
-AEM客户应已设置组织，作为IMS设置的一部分，客户实例在Admin Console中可用，用于管理用户权利和访问权限。
+AEM 客户应已设置组织，作为 IMS 设置的一部分，客户实例将在 Admin Console 中可用，以用于管理用户权利和访问权限。
 
 客户作为IMS组织存在后，必须按照以下内容概述配置其系统：
 
@@ -59,7 +59,7 @@ AEM客户应已设置组织，作为IMS设置的一部分，客户实例在Admin
 1. 指定的系统管理员将会收到登录到 Cloud Manager 的邀请。登录 Cloud Manager 后，系统管理员可以选择配置 AEM 程序和环境，或导航到 Admin Console 以执行管理任务。
 1. 系统管理员声明一个域以确认相应域（例如 acme.com）的所有权
 1. 系统管理员设置用户目录
-1. 系统管理员在Admin Console中执行IDP配置以设置单点登录。
+1. 系统管理员在 Admin Console 中进行 IDP 配置以设置单点登录。
 1. AEM 管理员可以像往常一样管理本地组以及权限。
 
 [此处](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)介绍了 Adobe Identity Management 基础知识，包括 IDP 配置。
@@ -84,9 +84,9 @@ AEM客户应已设置组织，作为IMS设置的一部分，客户实例在Admin
 
 **用户同步工具**
 
-用户同步工具（简称UST）使Adobe企业客户能够使用Active Directory创建和管理Adobe用户。 此UST也适用于其他经过测试的OpenLDAP目录服务。 目标用户是能够安装和配置该工具的IT标识管理员（企业目录或系统管理员）。 该开源工具是可自定义的，这样您修改该工具的客户就可以满足您自己的特定要求。
+用户同步工具（简称UST）使Adobe企业客户能够使用Active Directory创建和管理Adobe用户。 此UST也适用于其他经过测试的OpenLDAP目录服务。 目标用户是 IT 标识管理员（企业目录或系统管理员），他们能够安装和配置该工具。该开源工具是可自定义的，这样您修改该工具的客户就可以满足您自己的特定要求。
 
-运行User Sync时，它会从组织的Active Directory中获取用户列表，并将其与Admin Console中的用户列表进行比较。 然后，它调用Adobe用户管理API，以便Admin Console与组织的目录同步。 更改流程完全是单向的。不会将在 Admin Console 中所做的任何编辑推送到该目录。
+当用户同步运行时，它会从组织的 Active Directory 中获取用户列表，并将其与 Admin Console 中的用户列表进行比较。然后，它会调用 Adobe User Management API，以便将 Admin Console 与组织的目录同步。更改流程完全是单向的。不会将在 Admin Console 中所做的任何编辑推送到该目录。
 
 借助该工具，系统管理员可以将客户目录中的用户组与Admin Console中的产品配置和用户组进行映射。
 
@@ -106,7 +106,7 @@ AEM客户应已设置组织，作为IMS设置的一部分，客户实例在Admin
 
 **用户同步文档**
 
-有关更多详细信息，请参阅 [UST 文档](https://adobe-apiplatform.github.io/user-sync.py/en/)。
+参见 [UST文档](https://adobe-apiplatform.github.io/user-sync.py/en/) 了解更多详细信息。
 
 用户同步工具必须使用以下过程注册为Adobe Developer客户端UMAPI [此处](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -118,9 +118,9 @@ AEM客户应已设置组织，作为IMS设置的一部分，客户实例在Admin
 
 >[!NOTE]
 >
->在配置AEM环境和实例时，将自动配置所需的AEM IMS配置。 但是，管理员可以根据自己的需求使用[此处](/help/implementing/deploying/overview.md)描述的方法进行修改。
+>在配置 AEM 环境和实例时，会自动配置所需的 AEM IMS 配置。但是，管理员可以根据自己的需求使用[此处](/help/implementing/deploying/overview.md)描述的方法进行修改。
 
-在配置AEM环境和实例时，将自动配置所需的AEM IMS配置。 客户管理员可以根据自己的要求修改部分配置
+在配置 AEM 环境和实例时，会自动配置所需的 AEM IMS 配置。客户管理员可以根据自己的要求修改部分配置
 
 大致方法是将 Adobe IMS 配置为 OAuth 提供程序。可以像修改 LDAP 同步一样修改 **Apache Jackrabbit Oak 默认同步处理程序**。
 
@@ -140,9 +140,9 @@ AEM客户应已设置组织，作为IMS设置的一部分，客户实例在Admin
 
 ![实例登录 2](/help/security/assets/ims7.png)
 
-在每个产品上下文实例下，都存在跨生产、暂存或开发环境的创作或发布服务的实例。 每个实例都与产品配置文件或Cloud Manager角色相关联。 这些产品配置文件用于为具有所需权限的用户和组分配访问权限。
+在每个产品上下文实例下，都会有一些实例跨生产、阶段或开发环境中的创作或发布服务。每个实例都会与产品配置文件或 Cloud Manager 角色相关联。这些产品配置文件用于为具有所需权限的用户和组分配访问权限。
 
-此 **AEM管理员_xxx** 配置文件用于在关联的AEM实例中授予管理员权限，而 **AEM用户_xxx** 配置文件用于添加常规用户。
+**AEM Administrators_xxx** 配置文件会用于在关联的 AEM 实例中授予管理员特权，而 **AEM Users_xxx** 配置文件用于添加常规用户。
 
 在此产品配置文件下添加的任何用户和组都可以登录该实例，如下例所示：
 
@@ -179,11 +179,11 @@ AEM 可继续支持管理员用户在本地登录。登录屏幕允许您本地�
 
 ![IMS 登录 3](/help/security/assets/ims12.png)
 
-如果在初始Admin Console设置期间配置了联合IDP，则用户将被重定向到用于SSO的客户IDP：
+如果在初始 Admin Console 设置过程中配置了联合 IDP，则用户会被重定向到用于 SSO 的客户 IDP：
 
 ![IMS 登录 4](/help/security/assets/ims13.png)
 
-身份验证完成后，用户将被重定向回AEM并登录：
+身份验证完成后，用户会被重定向回 AEM 并登录：
 
 ![IMS 登录 5](/help/security/assets/ims14.png)
 
@@ -214,7 +214,7 @@ ACL和权限将继续在AEM中进行管理。 可以将从 IMS 同步的用户�
 
 要能够访问Cloud Manager或AEMas a Cloud Service上的环境，必须将您分配给Cloud Manager产品的配置文件。
 
-请参阅“角色定义”，了解有关用于控制 Cloud Manager 中特定功能可用性的用户角色的更多信息。
+请参阅角色定义，了解有关用于控制Cloud Manager中特定功能可用性的用户角色的更多信息。
 
 >[!NOTE]
 >Cloud Manager 预配置了一些具有适当权限的角色。要了解每个具有特定权限的角色、预配置的任务或与每个角色关联的权限，请参阅 [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
@@ -241,7 +241,7 @@ ACL和权限将继续在AEM中进行管理。 可以将从 IMS 同步的用户�
 >[!IMPORTANT]
 >授予您访问 AEM as a Cloud Service 中的实例权限之前，必须完成上一节中提到的步骤。
 
-要访问AEM实例，请执行以下操作 **Admin Console**，您应该会在的产品列表中看到Cloud Manager项目和项目内的环境 **Admin Console**.
+要在 **Admin Console** 中访问 AEM 实例，您应在 **Admin Console** 的产品列表中看到 Cloud Manager 计划和该计划中的环境。
 
 例如，在下面的屏幕快照中，您会看到两个可用的环境，即 *开发作者* 和 *发布*.
 

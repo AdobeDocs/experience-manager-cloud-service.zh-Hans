@@ -2,10 +2,10 @@
 title: 启用渐进式 Web 应用程序功能
 description: AEM Sites 允许内容作者通过简单的配置而非编码为任何站点启用渐进式 Web 应用程序功能。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 93%
+source-wordcount: '1997'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 93%
 >* 了解缓存策略
 >* 来自开发团队的支持
 >
->在使用此功能之前，建议您与开发团队进行讨论以确定将它用于项目的最佳方式。
+>在使用此功能之前，建议您与开发团队进行讨论以确定将它用于项目的最佳方法。
 
 ## 简介 {#introduction}
 
@@ -50,7 +50,7 @@ ht-degree: 93%
 
 ### 使用核心组件 {#adjust-components}
 
-核心组件版本 2.15.0 及更高版本完全支持 AEM Sites 的 PWA 功能。由于AEMaaCS始终包含最新版本的核心组件，因此您可以使用现成的PWA功能。 您的 AEMaaCS 项目将自动满足此要求。
+核心组件版本 2.15.0 及更高版本完全支持 AEM Sites 的 PWA 功能。由于 AEMaaCS 始终包含最新版本的核心组件，因此您可以利用现成的 PWA 功能。您的 AEMaaCS 项目将自动满足此要求。
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### 调整您的 Dispatcher {#adjust-dispatcher}
 
-PWA 功能会生成和使用 `/content/<sitename>/manifest.webmanifest` 文件。默认情况下，[Dispatcher](/help/implementing/dispatcher/overview.md) 不会公开此类文件。要公开这些文件，开发人员必须将以下配置添加到您的站点项目中。
+PWA 功能会生成和使用 `/content/<sitename>/manifest.webmanifest` 文件。默认情况下， [调度程序](/help/implementing/dispatcher/overview.md) 不会公开此类文件。 要公开这些文件，开发人员必须将以下配置添加到您的站点项目中。
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -160,20 +160,20 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * **最小化 UI** – 浏览器的大部分组件是隐藏的，就像本地应用程序一样，但会显示基础导航控件。
    * **全屏** – 浏览器是完全隐藏的，就像本地应用程序，但在全屏模式下将呈现。
       * 利用此选项，必须能够使用站点页面上的链接和组件完全通过内容进行应用程序导航，而无需使用浏览器的导航控件。
-* **屏幕方向** – 作为本地应用程序，PWA 需要了解如何处理[设备转向](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)。
+* **屏幕方向**  — 作为本地应用程序，PWA需要了解如何处理这些请求 [设备方向](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **任意** – 该应用程序会根据用户设备的方向进行调整。 这是默认值。
    * **纵向** – 强制应用程序以纵向布局打开，而不管用户设备的方向如何。
    * **横向** – 强制应用程序以横向布局打开，而不管用户设备的方向如何。
 * **主题颜色** – 定义[应用程序的颜色](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)，将影响本地用户的操作系统显示本机 UI 工具栏和导航控件的方式。它可能会影响其他应用程序演示元素，具体取决于浏览器。
    * 使用颜色井弹出窗口选择颜色。
    * 颜色也可以由十六进制值或 RGB 值定义。
-* **背景颜色** – 定义[应用程序的背景颜色](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)，此颜色在应用程序加载时显示。
+* **背景颜色**  — 这定义 [应用程序的背景颜色](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)，会在应用程序加载时显示。
    * 使用颜色井弹出窗口选择颜色。
    * 颜色也可以由十六进制值或 RGB 值定义。
    * 某些浏览器会自动从应用程序名称、背景颜色和图标[构建启动画面](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens)。
 * **图标** – 这将定义在用户设备上表示应用程序的[图标](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons)。
    * 图标必须是大小为 512x512 像素的 png 文件。
-   * 图标必须[存储在 DAM 中](/help/assets/overview.md)。
+   * 图标必须为 [存储在DAM中](/help/assets/overview.md).
 
 ### 缓存管理（高级） {#offline-configuration}
 
@@ -211,7 +211,7 @@ Adobe 建议您限制要预缓存的页数。
 
 ### 在使项目脚本和样式表稳定后启用 PWA。 {#pwa-stabilized}
 
-客户端库在交付时添加了一个缓存选择器，并遵循以下模式 `lc-<checksumHash>-lc`。当构成库的某个文件（和依赖项）发生更改时，此选择器也会发生更改。如果您列出了要由 service-worker 预缓存的客户端库，并且想引用新版本，您可以手动检索并更新该条目。因此，我们建议您在使项目脚本和样式表稳定后将站点配置为 PWA。
+客户端库在交付时添加了一个缓存选择器，并遵循以下模式 `lc-<checksumHash>-lc`。当构成库的某个文件（和依赖项）发生更改时，此选择器也会发生更改。如果您列出了要由 service-worker 预缓存的客户端库，并且想引用新版本，您可以手动检索并更新该条目。因此，我们建议您在使项目脚本和样式表稳定后将 Sites 配置为 PWA。
 
 ### 最大程度地减少图像变体的数量。 {#minimize-variations}
 
@@ -221,4 +221,4 @@ AEM 核心组件的图像组件决定了要获取的前端的最佳演绎版。�
 
 如果不仔细配置，内存和网络消耗会严重影响 PWA 的性能。此外，如果您打算预缓存 50 个图像，并且每个图像具有 3 个宽度，则维护站点的用户将必须在页面属性的 PWA 预缓存部分中维护最多 150 个条目的列表。
 
-Adobe 还建议您在使用图像的项目稳定后将站点配置为 PWA。
+Adobe 还建议您在使用图像的项目稳定后将 Sites 配置为 PWA。

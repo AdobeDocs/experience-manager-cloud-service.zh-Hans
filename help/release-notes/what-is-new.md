@@ -2,7 +2,7 @@
 title: 新增功能
 description: Adobe Experience Manager (AEM) as a Cloud Service 的新增功能。
 exl-id: f854aaf8-e84d-4904-832f-f72433590920
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
@@ -20,7 +20,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 是一个云原生平台，在
 * Adobe Experience Manager as a Cloud Service 的[架构](/help/overview/architecture.md)
 * [AEM as a Cloud Service 概述 - 新增功能和改进功能](/help/overview/what-is-new-and-different.md)
 
-<!-- Please link to introduction or what's new of Sites. -->
+<!-- Link to introduction or what's new of Sites. -->
 
 有关资产的概述，请参阅 [Assets as a Cloud Service 简介](/help/assets/overview.md)。
 

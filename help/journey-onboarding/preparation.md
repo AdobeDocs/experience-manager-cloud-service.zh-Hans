@@ -2,10 +2,10 @@
 title: 入门准备
 description: 在载入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '763'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ AEM as a Cloud Service 是一个功能强大、灵活的工具，提供了多种
 * 该合同如何影响载入流程。
 * 如何准备入门培训通话。
 
-如果您不熟悉本页上使用的所有术语，请不要担心。 这些术语将在历程的下一部分进行解释。
+如果您不熟悉本页上使用的所有术语，请不要担心。 这些术语会在历程的下一部分进行解释。
 
 ## 视频 {#video}
 
@@ -42,13 +42,13 @@ AEM as a Cloud Service 是一个功能强大、灵活的工具，提供了多种
 * 您的 Premier Support 级别（如果适用）。
 * 您的入门培训联系人。
 
-如果您不知道这些细节，请联系您组织内的合同团队。
+如果您不知道这些详细信息，请联系您组织内的合同团队。
 
 合同签署后，Adobe 将为您提供环境，向合同中定义的入门培训联系人发送欢迎电子邮件，并由 Adobe 组织入门培训通话。 这通常发生在合同结束后几天，除非安排了未来的服务开始日期。
 
 ## 系统配置 {#provisioning}
 
-合同签署后，合同涵盖的所有AEM云环境将由Adobe自动配置。 同样，这些环境也将链接到 Cloud Manager 中的程序（本教程稍后将对此主题进行详细介绍）。 这些 AEM 云环境包含在每个 AEM as a Cloud Service 订阅中，通常由至少一个生产环境、一个暂存环境以及（可选）一个或多个开发或测试环境组成。
+签订合同后，合同涵盖的所有 AEM 云环境会由 Adobe 自动供应。 同样，这些环境也将链接到 Cloud Manager 中的程序（本教程稍后将对此主题进行详细介绍）。 这些 AEM 云环境包含在每个 AEM as a Cloud Service 订阅中，通常由至少一个生产环境、一个暂存环境以及（可选）一个或多个开发或测试环境组成。
 
 ## 载入通话 {#onboarding-call}
 
@@ -60,7 +60,7 @@ AEM as a Cloud Service 是一个功能强大、灵活的工具，提供了多种
 * 技术从业者
 * 您的实施合作伙伴
 
-Adobe乃以下列方式呈列：
+Adobe 会由以下人员代表参加：
 
 * 入门培训专家
 * 您的技术客户经理（如适用）
@@ -88,4 +88,4 @@ Adobe乃以下列方式呈列：
 * 该合同如何影响载入流程。
 * 如何准备入门培训通话。
 
-现在您已经熟悉了这些准备步骤，您基本上可以自己登录系统了。 但首先，您需要从系统管理员的角度简要概述 AEM as a Cloud Service 的结构，并了解一些重要术语。请继续培训历程的下一部分：[AEM as a Cloud Service 术语](terminology.md)。
+现在您已经熟悉了这些准备步骤，您基本上可以自己登录系统了。 但首先，您需要从系统管理员的角度简要概述 AEM as a Cloud Service 的结构，并了解一些重要术语。继续下一段历程， [AEMas a Cloud Service术语](terminology.md).

@@ -2,9 +2,9 @@
 title: AEM - Commerce Integration使用Commerce Integration Framework的常见问题解答
 description: AEM - Commerce Integration使用Commerce Integration Framework的常见问题解答
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ CIF提供搜索栏和搜索结果组件。 搜索栏组件将带有搜索词的G
 
 ## 14.在整个展示层中使用AEM时，我们如何确保PCI合规性？
 
-我们建议使用抽象的支付方式。 这使得浏览器客户端与支付网关提供商直接通信，这样Adobe或商业解决方案都不会保留或传递持卡人数据。 此方法只需要第3级PCI合规性。 但是，还需要考虑其他完全符合PCI标准的因素，例如员工如何与系统和数据交互。 有关Adobe Commerce PCI合规性的更多信息，请参阅 [PCI合规性要求](https://business.adobe.com/products/magento/pci-compliance.html).
+我们建议使用抽象的支付方式。 这使得浏览器客户端与支付网关提供商直接通信，这样Adobe或商业解决方案都不会保留或传递持卡人数据。 此方法只需要第3级PCI合规性。 但是，还需要考虑其他完全符合PCI标准的因素，例如员工如何与系统和数据交互。 有关Adobe Commerce PCI合规性的详细信息，请参见 [PCI合规性要求](https://business.adobe.com/products/magento/pci-compliance.html).
 
 ## 15.如果我使用AEM和Adobe Commerce云版本，则此联合解决方案是否符合PCI标准？
 

@@ -3,7 +3,7 @@ title: AEM 版本更新
 description: 了解AEMas a Cloud Service如何使用持续集成和交付(CI/CD)将您的项目保持在最新版本。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 23%
@@ -19,7 +19,7 @@ ht-degree: 23%
 
 AEMas a Cloud Service使用持续集成和持续交付(CI/CD)来确保您的项目使用的是最新的AEM版本。 这表示将生产实例和暂存实例更新到最新 AEM 版本而不中断用户的服务。
 
-版本更新仅自动应用于生产和暂存实例。 [必须手动将AEM更新应用于所有其他实例。](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+版本更新仅自动应用于生产和暂存实例。 [必须手动将AEM更新应用于所有其他实例](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
 
 ## 更新类型 {#update-types}
 

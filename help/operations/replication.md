@@ -2,9 +2,9 @@
 title: 复制
 description: 分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 46%
 
 ---
@@ -182,7 +182,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 ### 使内容失效的方法 {#invalidating-content}
 
-您可以直接使内容失效，方法是使用作者的Sling内容失效(SCD)（首选方法），或使用复制API调用发布Dispatcher刷新复制代理。 请参阅[缓存](/help/implementing/dispatcher/caching.md)页面以了解更多详细信息。
+您可以直接使内容失效，方法是使用作者的Sling内容失效(SCD)（首选方法），或使用复制API调用发布Dispatcher刷新复制代理。 参见 [缓存](/help/implementing/dispatcher/caching.md) 页面，了解更多详细信息。
 
 **复制 API 容量限制**
 

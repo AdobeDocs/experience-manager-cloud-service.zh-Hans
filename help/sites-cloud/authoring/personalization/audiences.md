@@ -2,10 +2,10 @@
 title: 管理受众
 description: 通过“受众”控制台，您可以创建、组织和管理 Adobe Target 帐户的受众，或管理 ContextHub 的区段
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 64%
+source-wordcount: '963'
+ht-degree: 62%
 
 ---
 
@@ -44,7 +44,7 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
    >
    >您可以通过点按或单击&#x200B;**已修改**&#x200B;来对修改列表进行降序排序，以查看任何新创建的受众。
 
-有关使用 ContextHub 创建区段的更多详细信息，请参阅“使用 ContextHub 配置分段”文档。<!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
+有关使用ContextHub创建区段的更多详细信息，请参阅使用ContextHub配置分段文档。 <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
 ## 使用Audience Console创建Adobe Target受众 {#creating-an-adobe-target-audience-using-the-audience-console}
 

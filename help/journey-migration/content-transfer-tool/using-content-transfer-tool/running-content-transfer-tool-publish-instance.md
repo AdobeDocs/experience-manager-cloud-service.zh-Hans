@@ -2,9 +2,9 @@
 title: 在发布实例上运行内容转移工具
 description: 在发布实例上运行内容转移工具
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '251'
 ht-degree: 11%
 
 ---
@@ -29,6 +29,6 @@ ht-degree: 11%
 * 在引入以发布期间，发布层不会缩放（与作者不同）。
 
   >[!IMPORTANT]
-  >为了以防万一，请避免用户发起任何写入操作，例如：
+  >作为预防措施，请避免任何用户启动的写入操作，例如：
   > * 从AEMas a Cloud Service创作环境分发内容以在该环境中发布
   > * 发布实例之间的用户同步

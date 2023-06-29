@@ -2,10 +2,10 @@
 title: Cloud Manager 常见问题
 description: 在AEMas a Cloud Service中查找有关Cloud Manager的最常见问题的答案。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 64%
+ht-degree: 62%
 
 ---
 
@@ -58,11 +58,11 @@ ht-degree: 64%
 
 您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager 会自动设置适当的版本号并在 Git 中为您创建标记。 如有必要，可以稍后引用此标记。
 
-[此处记录了](/help/implementing/cloud-manager/managing-code/project-version-handling.md)有关版本处理的更多详细信息。
+有关版本处理的更多详细信息包括 [在此处记录](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## 包和捆绑包版本控制如何用于暂存和生产部署？ {#snapshot-version}
 
-在暂存和生产部署中，将生成自动版本，[如该处所记录](/help/implementing/cloud-manager/managing-code/project-version-handling.md)。
+在暂存和生产部署中，自动版本将生成为 [在此处记录](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 对于暂存和生产部署中的自定义版本控制，请设置适当的三部分 maven 版本，如 `1.0.0`。 每次部署到生产环境时提高版本。
 

@@ -2,9 +2,9 @@
 title: 如何在AEM Workflow步骤中添加变量？
 description: 了解如何创建变量、为变量设置值以及将其用于 [!DNL AEM Forms] 工作流步骤。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2060'
 ht-degree: 0%
 
 ---
@@ -278,4 +278,4 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## 引用 {#references}
 
-有关在中使用变量的更多示例 [!DNL AEM Forms] 工作流步骤，请参阅 [AEM工作流中的变量](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+有关在中使用变量的更多示例 [!DNL AEM Forms] 工作流步骤，请参见 [AEM工作流中的变量](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

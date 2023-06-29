@@ -1,13 +1,13 @@
 ---
 title: Live Copy 概述控制台
-description: 了解Live Copy概述控制台的基础知识，以快速了解要同步内容的Live Copy的状态。
+description: 学习 Live Copy 概述控制台的基础知识，以快速了解 Live Copy 的状态以便同步内容。
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 92%
 
 您可以从以下位置打开 Live Copy 概述：
 
-* [Blueprint 页面（站点控制台）的引用侧面板](#opening-live-copy-overview-references-for-a-blueprint-page)
+* [Blueprint 页面（ Sites 控制台）的引用侧面板](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [Blueprint 页面的属性](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
 ### 对 Blueprint 页面的引用 {#references-to-a-blueprint-page}
 
 可以从&#x200B;**站点**&#x200B;控制台的&#x200B;**引用**&#x200B;侧面板打开 **Live Copy 概述**：
 
-1. 在&#x200B;**站点**&#x200B;控制台中，[导航到您的 Blueprint 页面并将其选定。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. 在 **站点** 控制台， [导航到您的Blueprint页面并将其选定](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;边栏并选择 **Live Copy**。
 
    ![引用边栏中的 Live Copy](../assets/live-copy-references.png)
@@ -42,20 +42,20 @@ ht-degree: 92%
    >您也可以先打开引用，然后选择 Blueprint。
 
 1. 选择 **Live Copy 概述**&#x200B;以显示和使用与所选 Blueprint 相关的所有 Live Copy 的概述。
-1. 使用&#x200B;**关闭**&#x200B;以退出，并返回到&#x200B;**站点**&#x200B;控制台。
+1. 使用&#x200B;**关闭**&#x200B;以退出，并返回到&#x200B;**Sites**&#x200B;控制台。
 
 ### Blueprint 页面的属性 {#properties-of-a-blueprint-page}
 
 可以在查看 Blueprint 页面的属性时打开 **Live Copy 概述**：
 
 1. 打开相应的 Blueprint 页面的&#x200B;**属性**。
-1. 打开 **Blueprint** 选项卡 —  **Live Copy概述** 选项显示在顶部工具栏中：
+1. 打开 **Blueprint** 选项卡 – **Live Copy 概述**&#x200B;选项会显示在顶部工具栏中：
 
    ![Blueprint“属性”选项卡](../assets/live-copy-blueprint-tab.png)
 
 1. 选择 **Live Copy 概述**&#x200B;以显示和使用与当前 Blueprint 相关的所有 Live Copy 的概述。
 
-1. 使用&#x200B;**关闭**&#x200B;以退出，并返回到&#x200B;**站点**&#x200B;控制台。
+1. 使用&#x200B;**关闭**&#x200B;以退出，并返回到&#x200B;**Sites**&#x200B;控制台。
 
 ## 使用 Live Copy 概述 {#using-the-live-copy-overview}
 
@@ -72,7 +72,7 @@ ht-degree: 92%
 **Live Copy 概述**&#x200B;也可用于对 Live Copy 执行操作：
 
 1. 打开 **Live Copy 概述**。
-1. 选择所需的Blueprint或Live Copy页面，工具栏将更新以显示可用的操作。 可用[操作](overview.md#terms-used)取决于您选择的是 [Blueprint](#actions-for-a-blueprint-page) 还是 [Live Copy](#actions-for-a-live-copy-page) 页面。
+1. 选择所需的 Blueprint 或 Live Copy 页面，工具栏会更新以显示可用操作。可用[操作](overview.md#terms-used)取决于您选择的是 [Blueprint](#actions-for-a-blueprint-page) 还是 [Live Copy](#actions-for-a-live-copy-page) 页面。
 
 ### 适用于 Blueprint 页面的操作 {#actions-for-a-blueprint-page}
 

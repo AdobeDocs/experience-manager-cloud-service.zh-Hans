@@ -1,17 +1,17 @@
 ---
 title: 处理页面版本
-description: 创建、比较和恢复页面的版本
+description: 创建、比较和恢复页面版本
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 41%
+ht-degree: 58%
 
 ---
 
 # 处理页面版本 {#working-with-page-versions}
 
-版本控制可在特定时间点创建页面的“快照”。 通过版本控制，您可以执行以下操作：
+版本控制可创建页面在特定时间点的“快照”。使用版本控制，您可以执行下列操作：
 
 * 创建页面的版本。
 * 恢复一个或多个页面的先前版本以：
@@ -52,7 +52,7 @@ ht-degree: 41%
 
 1. 导航以显示要为其创建版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
-1. 选择 **创建** 选项。
+1. 从工具栏中选择&#x200B;**创建**。
 1. 此时将打开同一个对话框。 您可以输入 **标签** 和 **注释**（如有必要）。
 1. 通过&#x200B;**创建**&#x200B;确认新版本。
 
@@ -86,7 +86,7 @@ ht-degree: 41%
 >1. 初始标签和版本节点名称是1.0、1.1、1.2，依此类推。
 >1. 恢复第一个版本；即1.0。
 >1. 再次创建版本。
->1. 生成的标签和节点名称现在为1.0.0、1.0.1、1.0.2，依此类推。
+>1. 此时生成的标签和节点名称会表示为 1.0.0、1.0.1、1.0.2 等。
 
 ### 恢复到某个版本 {#revert-to-a-version}
 
@@ -94,12 +94,12 @@ ht-degree: 41%
 
 1. 导航以显示要还原到先前版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
-1. 打开“ **时间线** ”列，然后选择“ **显示全部** ”或“ **版本**”。 将列出所选页面的页面版本。
-1. 选择要还原到的版本。 下面显示了可能的选项：
+1. 打开“ **时间线** ”列，然后选择“ **显示全部** ”或“ **版本**”。 所选页面的页面版本会予以列出。
+1. 选择要还原到的版本。 显示可能的选项：
 
    ![恢复到此版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. 选择 **还原到此版本**. 恢复所选版本并更新时间线中的信息。
+1. 选择“**还原到此版本**”。恢复所选版本并更新时间线中的信息。
 
 ### 恢复版本 {#restore-version}
 
@@ -118,7 +118,7 @@ ht-degree: 41%
    >
    >由于没有适用的版本，显示内容会变为空白。
 
-1. 列出了可用版本：
+1. 可用版本会列出：
 
    ![恢复版本 – 文件夹中所有页面的列表](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
@@ -150,9 +150,9 @@ ht-degree: 41%
 
 1. 根据需要设置标志&#x200B;**保留的非版本化页面**：
 
-   * 如果处于活动状态（选中），则任何非版本化页面都将得到维护并且不受恢复的影响。
+   * 如果处于活动状态（选中），则任何非版本化页面都会得到维护并且不受恢复的影响。
 
-   * 如果处于非活动状态（未选中），则会删除任何非版本化页面，因为这些页面在版本化树中不存在。
+   * 如果处于非活动状态（未选中），则会删除任何非版本化页面，因为它们在版本化树中不存在。
 
 1. 对于要恢复为&#x200B;*当前*&#x200B;版本的树的所选版本，选择&#x200B;**恢复**。
 
@@ -163,30 +163,30 @@ ht-degree: 41%
 1. 导航以显示要比较的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
 1. 打开&#x200B;**时间线**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。
-1. 将列出页面版本。 选择要预览的版本：
+1. 页面版本会列出。选择要预览的版本：
 
    ![预览版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. 选择 **预览**. 该页面将显示在新选项卡中。
+1. 选择&#x200B;**预览**。该页面将显示在新选项卡中。
 
    >[!CAUTION]
    >
-   >如果页面已移动，您将无法再对移动之前创建的任何版本执行预览。
+   >如果页面发生移动，将无法再对移动前制作的任何版本执行预览。
    >
    >如果您遇到问题，请检查页面的[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)以查看页面是否已被移动。
 
 ## 将页面的某个版本与当前版本进行比较 {#comparing-a-version-with-current-page}
 
-要将以前的版本与当前页面进行比较，请执行以下操作：
+要将页面的之前版本与当前版本进行比较，请执行以下操作：
 
 1. 导航以显示要比较的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
 1. 打开&#x200B;**时间线**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。
-1. 将列出页面版本。 选择要比较的版本：
+1. 页面版本会列出。选择要比较的版本：
 
    ![比较版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. 选择 **与当前比较**. 此 [页面差异](/help/sites-cloud/authoring/features/page-diff.md) 打开并显示差异。
+1. 选择&#x200B;**与当前比较**。此 [页面差异](/help/sites-cloud/authoring/features/page-diff.md) 打开并显示差异。
 
 ## 时间扭曲 {#timewarp}
 
@@ -194,9 +194,9 @@ ht-degree: 41%
 
 >[!TIP]
 >
->[时间扭曲也可以与启动项一起使用来预览未来情况。](/help/sites-cloud/authoring/launches/preview.md)
+>[时间扭曲也可以与启动项一起使用来预览未来情况](/help/sites-cloud/authoring/launches/preview.md)。
 
-由于内容创建是一个持续的协作过程，因此时间扭曲旨在允许作者随时间跟踪已发布的网站，以便他们了解内容发生了什么变化。 此功能使用页面版本来确定发布环境的状态。
+由于内容创建是一个持续的协作过程，因此时间扭曲旨在允许作者随时间跟踪已发布的网站，以了解内容的更改情况。此功能使用页面版本来确定发布环境的状态。
 
 要使用此功能：
 
@@ -207,9 +207,9 @@ ht-degree: 41%
 
 ### 使用时间扭曲 {#using-timewarp}
 
-时间扭曲是 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 页面编辑器的。 要启动它，只需像切换任何其他模式一样切换它即可。
+时间扭曲是页面编辑器的一种[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。要启动此模式，只需像切换任何其他模式一样切换此模式即可。
 
-1. 启动要从中启动时间扭曲的页面的编辑器，然后选择 **时间扭曲** 在模式选择中。
+1. 为希望启动时间扭曲的页面启动编辑器，然后在模式选择中选择&#x200B;**时间扭曲**。
 
    ![时间扭曲模式](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
@@ -217,7 +217,7 @@ ht-degree: 41%
 
    ![时间扭曲目标日期](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
-1. 根据日期集显示页面。 时间扭曲模式通过窗口顶部的蓝色状态栏指示。 使用状态栏中的链接，以便选择新的目标日期或退出时间扭曲模式。
+1. 将根据设置的日期显示该页面。时间扭曲模式通过窗口顶部的蓝色状态栏指示。 使用状态栏中的链接，以便选择新的目标日期或退出时间扭曲模式。
 
    ![在时间扭曲模式下](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 

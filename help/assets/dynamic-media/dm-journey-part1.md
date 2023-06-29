@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3708'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Dynamic Media整合了Adobe Experience Manager Assets数字资产管理解决方
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![AdobeDynamic Media可将相同的主图像以不同的大小和格式提供给不同的介质。](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![AdobeDynamic Media可将相同的主图像以不同的大小和格式提供给不同的介质](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _AdobeDynamic Media可确保向任何屏幕提供一致、优质的体验，而不管其大小或带宽如何。_
 
 随着您继续阅读，您将了解更多有关“一个主要资源文件，无限可能性”这一概念为什么重要的原因。
@@ -182,7 +182,7 @@ Dynamic Media为解决的另一个用例是视频。 视频很复杂。 它很�
 
 来到Dynamic Media的客户会遇到以下他们希望解决的问题：
 
-”_我们拿到了视频，花了很多钱制作它。 但我们一直回避把它放在网页上，或者投放，因为从我们的测试来看，我们真的无法保证视频的质量，或者它是否真的要播放。 最终，这会影响我们的品牌，并有可能影响我们的角色甚至转化。_”
+”_我们有视频，我们花了很多钱来制作它。 但是我们避免把它放在网页上，或者传送它，因为从我们的测试中，我们无法保证视频的质量，或者它是否真的要播放。 最终，这会影响我们的品牌，并有可能影响我们的角色甚至转化。_”
 
 Dynamic Media的解决方案是取用那个主视频文件，让Dynamic Media通过转码过程生成所有大小。 然后，将其与Dynamic Media的智能视频播放器配对。 此工作流可确保无论您是在主登陆页面上，还是在类别或产品详细信息页面上使用该视频，在整个过程中都将会保持一致，并高质量地提供该视频。
 
@@ -291,7 +291,7 @@ _Dynamic Media查看器_
 
 ## 此Dynamic Media历程的后续内容 {#whats-next}
 
-在此历程的第二部分中，您将更进一步了解Dynamic Media URL，以更好地了解交付资产时发生了什么情况。 您还将了解有关创建图像预设以渲染资产的基础知识的更多信息，并了解图像集、旋转集和混合媒体集及其创建方式。
+在此历程的第二部分中，您会更进一步检查Dynamic Media URL，以更好地了解交付资产时发生了什么情况。 您还将了解有关创建图像预设以渲染资产的基础知识的更多信息，并了解图像集、旋转集和混合媒体集及其创建方式。
 
 带我前往 [Dynamic Media历程：基础知识，第二部分](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 

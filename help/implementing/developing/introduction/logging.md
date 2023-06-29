@@ -2,9 +2,9 @@
 title: AEM日志as a Cloud Service
 description: 了解如何使用AEMas a Cloud Service日志记录功能为中央日志记录服务配置全局参数、为各个服务配置特定设置或者如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2375'
 ht-degree: 3%
 
 ---

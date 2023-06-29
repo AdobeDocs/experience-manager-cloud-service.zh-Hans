@@ -2,9 +2,9 @@
 title: 自定义错误页面
 description: AEM提供了用于处理HTTP错误的标准错误处理程序，该处理程序可以自定义。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ HTTP [500内部服务器错误](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
    * HTTP响应代码500
    * 异常栈栈跟踪
 
-按 [自定义错误处理程序显示的页面](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` 可创建脚本。 但是，它仅在以下情况下使用 `HttpServletResponse.sendError(500)` 显式执行；即从异常捕获器中执行。
+按 [自定义错误处理程序显示的页面](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` 可创建脚本。 但是，它仅在以下情况下使用 `HttpServletResponse.sendError(500)` 显式执行；即从异常捕获器执行。
 
 否则，响应代码将设置为500，但 `500.jsp` 脚本未执行。
 
@@ -77,6 +77,6 @@ HTTP [500内部服务器错误](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 >
 >在创作实例上， [CQ WCM调试过滤器](/help/implementing/deploying/configuring-osgi.md) 默认情况下处于启用状态。 这始终导致响应代码200。 默认错误处理程序通过向响应写入完整栈栈跟踪进行响应。
 >
->对于自定义错误处理程序，需要代码为500的响应，因此 [需要禁用CQ WCM调试过滤器。](/help/implementing/deploying/configuring-osgi.md) 这样可确保返回响应代码500，这反过来会触发正确的Sling错误处理程序。
+>对于自定义错误处理程序，需要代码为500的响应，因此 [需要禁用CQ WCM调试过滤器](/help/implementing/deploying/configuring-osgi.md). 这样可确保返回响应代码500，这反过来会触发正确的Sling错误处理程序。
 >
 >在发布实例上，CQ WCM调试过滤器为 **始终** 已禁用（即使配置为已启用）。

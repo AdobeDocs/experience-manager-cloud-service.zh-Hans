@@ -2,9 +2,9 @@
 title: 将URL外部化
 description: Externalizer是一种OSGi服务，它允许您以编程方式将资源路径转换为外部和绝对URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 由于AEMas a Cloud Service实例无法知道其外部可见的URL，并且有时必须在请求范围之外创建链接，因此此服务提供了一个中心位置来配置这些外部URL并构建它们。
 
-本文介绍了如何配置Externalizer服务及其使用方法。 欲知该服务的技术详情，请参阅 [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
+本文介绍了如何配置Externalizer服务及其使用方法。 有关服务的技术详细信息，请参阅 [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## 外部化器的默认行为以及如何覆盖 {#default-behavior}
 

@@ -2,10 +2,10 @@
 title: 了解参考演示加载项安装
 description: 了解 Cloud Manager 以及如何使用它安装加载项。
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 98%
+source-wordcount: '956'
+ht-degree: 46%
 
 ---
 
@@ -15,21 +15,21 @@ ht-degree: 98%
 
 >[!TIP]
 >
->如果您已体验 Cloud Manager 或希望直接了解加载项的配置和使用，则可以跳到[创建项目和管道](create-program.md)
+>如果您已体验Cloud Manager或希望直接了解加载项的配置和使用，请跳至 [创建项目和管道](create-program.md)
 >
->如果您想了解 Cloud Manager 和 AEM 如何协作以创建您的演示环境以及如何设置和使用您自己的环境，请继续阅读当前文档。
+>如果您想了解Cloud Manager和AEM如何协作以创建您的演示环境以及如何设置和使用您自己的环境，请继续阅读当前文档。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解参考演示加载项安装过程的工作原理，并说明了各个部分的协作方式。阅读本文档后，您应：
+本文档可帮助您了解参考演示加载项安装过程的工作原理，并说明了各个部分的协作方式。 阅读本文档后，您应：
 
 * 基本了解 Cloud Manager。
 * 了解管道如何将内容和配置交付给 AEM。
-* 了解如何通过单击几下来使用模板创建已预填充演示内容的新站点。
+* 了解模板如何通过单击几下即可创建预填充演示内容的站点。
 
-在继续此历程的下一步来开始安装之前，可通过本文档了解 AEM 参考演示加载项的这些基本部分。
+在继续此历程的下一步来开始安装之前，本文档重点介绍AEM参考演示加载项的这些基本部分。
 
-虽然建议您逐步完成此历程，但如果您已体验 Cloud Manager 或希望直接了解加载项的配置和使用，则可以跳到[创建项目和管道](create-program.md)
+虽然建议您继续此历程，但如果您已体验Cloud Manager，或希望直接了解加载项的配置和使用，请跳到 [创建项目和管道](create-program.md).
 
 ## 负责角色 {#responsible-role}
 
@@ -51,15 +51,15 @@ ht-degree: 98%
 
 Cloud Manager 是 AEM as a Cloud Service 的必要组件，并且充当平台的单一入口点。
 
-Cloud Manager 用于管理支持您的 AEM 项目的云资源，包括所需的环境和工具。在此历程中，无需全面了解 Cloud Manager。但您需要熟悉一些基本概念。
+Cloud Manager用于管理支持您的AEM项目的云资源，包括所需的环境和工具。 在此历程中，无需全面了解 Cloud Manager。但是，您必须熟悉一些基本概念。
 
 >[!TIP]
 >
->如果您希望深入了解 Cloud Manager，请参阅本文的[其他资源](#additional-resources)部分，获取指向更多信息的链接。
+>如果您希望深入了解Cloud Manager，请参阅 [其他资源](#additional-resources) 部分，以获取指向更多信息的链接。
 
 ### 项目 {#programs}
 
-登录 Cloud Manager 时，您可以访问一个或多个&#x200B;**项目**。虽然可以通过多种不同的方式定义项目，但最简单的方式是将它视为与某个品牌标识相关的站点和体验相关联。
+登录Cloud Manager时，您有权访问一个或多个 **程序**. 虽然可以通过多种不同的方式定义项目，但最简单的方式是将它视为与某个品牌标识相关的站点和体验相关联。
 
 如果您登录表示 **WKND 旅游和冒险企业**&#x200B;的 Cloud Manager，则可以创建 **WKND Nightlife** 项目和 **WKND Backyard Projects** 项目。这两个项目都将具有用于管理其关联站点的 AEM 环境。
 
@@ -68,20 +68,20 @@ Cloud Manager 用于管理支持您的 AEM 项目的云资源，包括所需的�
 项目可以是生产项目或沙盒项目。
 
 * 当您的项目准备好上线时，将创建一个&#x200B;**生产项目**&#x200B;以最终允许实时流量。
-* 创建&#x200B;**沙盒项目**&#x200B;以实施培训、运行演示、支持、POC 等，而不是用于实时流量。
+* **沙盒程序** 专门为培训、运行演示、支持、概念验证(POC)等而创建，不适用于实时流量。
 
 要安装AEM参考演示加载项，请创建沙盒程序。
 
 >[!NOTE]
 >
->AEM 参考演示加载项仅适用于沙盒项目。
+>AEM参考演示加载项仅在沙盒程序中可用。
 
 ## 安装和使用流 {#installation-flow}
 
-现在，您已了解 Cloud Manager 的一些基本概念，从概念上说，AEM 参考演示加载项的安装很简单。
+现在，您已了解Cloud Manager的一些基本概念，从概念上说，AEM参考演示加载项的安装很简单。
 
 1. 登录 Cloud Manager。
-1. 创建一个新的沙盒 AEM 项目，并激活 AEM 参考演示加载项作为项目的一个选项。
+1. 创建一个沙盒AEM程序，激活AEM参考演示加载项作为程序的一个选项。
 1. 演示内容和配置将部署到项目中。演示内容包含：
    * 用于使用 AEM 功能创建各种 AEM 站点的站点模板，其中预填充了最佳实践示例。
    * 用于管理演示内容的配置工具。
@@ -90,24 +90,24 @@ Cloud Manager 用于管理支持您的 AEM 项目的云资源，包括所需的�
 
 ## AEM 站点模板 {#site-templates}
 
-AEM 站点模板是包含站点的预定义内容和结构的包。可以自定义站点模板以满足特定项目的需求，这使得在 AEM 管理员创建新站点时，他们可以从适用于其业务案例的模板中进行选择。
+AEM 站点模板是包含站点的预定义内容和结构的包。可以自定义站点模板以满足特定项目的需求，以便在AEM管理员创建站点时，他们可以从适用于其业务案例的模板中进行选择。
 
-AEM 参考演示加载项包括多个模板，可满足各种测试和演示需求。在创建项目并部署管道以安装加载项后，您可以登录 AEM 并基于多个演示模板创建站点
+AEM参考演示加载项包括多个模板，可满足各种测试和演示需求。 在创建项目并部署管道以安装加载项后，您可以登录 AEM 并基于多个演示模板创建站点
 
 ## 下一步 {#what-is-next}
 
-现在您已完成 AEM 参考演示加载项历程的这一部分，您应：
+现在您已完成AEM参考演示加载项历程的这一部分，您应：
 
 * 基本了解 Cloud Manager。
 * 了解管道如何将内容和配置交付给 AEM。
-* 了解如何通过单击几下来使用模板创建已预填充演示内容的新站点。
+* 了解模板如何通过单击几下即可创建预填充演示内容的站点。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[创建项目和管道](create-program.md)，您将了解如何设置新项目和管道以部署加载项。
+在此知识的基础上继续您的AEM快速站点创建历程，方法是查看 [创建项目和管道，](create-program.md) 在这里，您可以了解如何设置新项目和管道以部署加载项。
 
 ## 其他资源 {#additional-resources}
 
-我们建议您查看文档[创建项目和管道](create-program.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
+我们建议您查看以下内容以进入快速站点创建历程的下一部分 [创建项目和管道](create-program.md)下，以下是一些其他可选资源。 这些资源对本文档中提到的概念进行了更深入的探讨。 但是，无需他们即可继续旅程。
 
-* [了解项目和项目类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html) – 从这里开始了解实时项目和沙盒项目之间的区别。
+* [了解项目和项目类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) – 从这里开始了解实时项目和沙盒项目之间的区别。
 * [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md) – 如果您想详细了解站点模板的结构以及如何使用它们创建站点，请参阅本文档。
-* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
+* [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。

@@ -2,9 +2,9 @@
 title: 快速开发环境
 description: 了解如何使用快速开发环境在云环境中进行快速开发迭代。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3313'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ RDE允许开发人员快速部署和审查更改，从而最大限度地减少�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-您可以参考其他演示视频 [如何设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)， [如何使用](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)，以及 [开发生命周期](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) 使用RDE。
+您可以看到其他演示视频 [如何设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)， [如何使用](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html)，以及 [开发生命周期](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle.html) 使用RDE。
 
 ## 简介 {#introduction}
 
@@ -42,7 +42,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
 
 1. 单击要向其添加RDE的程序以显示其详细信息。
 
-   * 可以将RDE添加到这两个 [沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 和 [生产程序。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+   * 可以将RDE添加到这两个 [沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 和 [生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md).
 
 1. 从&#x200B;**程序概述**&#x200B;页面，单击&#x200B;**环境**&#x200B;信息卡上的&#x200B;**添加环境**&#x200B;以添加环境。
 
@@ -70,7 +70,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
 
 创建后，会将RDE设置为最新可用的AEM版本。 也可以使用Cloud Manager执行的RDE重置将循环RDE并将其设置为最新可用的AEM版本。
 
-有关使用Cloud Manager创建环境、管理有权访问环境的人以及分配自定义域的更多信息，请参阅 [Cloud Manager文档。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+有关使用Cloud Manager创建环境、管理有权访问环境的人以及分配自定义域的更多信息，请参阅 [Cloud Manager文档](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 ## 安装RDE命令行工具 {#installing-the-rde-command-line-tools}
 
@@ -147,7 +147,7 @@ Adobe建议通过以下工作流程来开发新功能：
 
 * 当达到中间里程碑并通过AEMas a Cloud ServiceSDK在本地成功验证时，代码应提交到尚未成为主行一部分的Git功能分支，尽管提交到Git是可选的。 构成“中间里程碑”的因素因团队习惯而异。 示例包括几行新代码、半天的工作或完成一个子功能。
 
-* 如果RDE已由其他功能使用并且您希望 [将其重置为默认状态](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重置将需要几分钟的时间，并且所有现有内容和代码都会被删除。 您可以使用RDE status命令确认RDE已就绪。 RDE将带回最新的AEM发行版本。
+* 如果RDE已由其他功能使用并且您希望 [将其重置为默认状态](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->重置将需要几分钟的时间，并且所有现有内容和代码都会被删除。 您可以使用RDE status命令确认RDE已就绪。 RDE将带回最新的AEM发行版本。
 
   >[!IMPORTANT]
   >
@@ -276,7 +276,7 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 
 >[!TIP]
 >
->上述命令假定您部署的是 [WKND](https://github.com/adobe/aem-guides-wknd) 项目的Dispatcher配置。 请确保更换 `X.X.X` 使用相应的WKND项目版本号或特定于项目的版本号部署项目的Dispatcher配置时。
+>上述命令假定您部署的是 [WKND](https://github.com/adobe/aem-guides-wknd) 项目的Dispatcher配置。 确保更换 `X.X.X` 使用相应的WKND项目版本号或特定于项目的版本号部署项目的Dispatcher配置时。
 
 >[!NOTE]
 >
@@ -347,7 +347,7 @@ Environment: Ready
 
 ### 从RDE删除 {#deleting-from-rde}
 
-您可以通过CLI工具删除以前部署到RDE的配置和捆绑包。 使用 `status` 命令以列出可删除的内容，其中包括 `bsn` 对于捆绑包和 `pid` 用于在delete命令中引用的配置。
+您可以通过CLI工具删除以前部署到RDE的配置和捆绑包。 使用 `status` 命令以列出可删除的内容，其中包括 `bsn` 对于捆绑包和 `pid` 用于要在delete命令中引用的配置。
 
 例如，如果 `com.adobe.granite.demo.MyServlet.cfg.json` 已安装， `bsn` 只是 `com.adobe.granite.demo.MyServlet`，不使用 **cfg.json** 后缀。
 
@@ -369,7 +369,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 重置会将RDE设置为最新可用的AEM版本。
 
-<!-- Alexandru: hiding for now, please don't delete
+<!-- Alexandru: hiding for now, do not delete
 
 Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
@@ -417,7 +417,7 @@ This usually takes a few minutes. Use the [status command](#checking-rde-status)
 
    ![重置横幅通知](/help/implementing/cloud-manager/assets/rde-reset-banner.png)
 
-RDE重置过程启动后，通常需要几分钟才能完成，并且环境将恢复到其默认状态。 您可以随时在中查看重置过程的状态。 **状态** 列 **环境** 信息卡或 **环境** 窗口。
+RDE重置过程启动后，通常需要几分钟才能完成，并使环境恢复到默认状态。 您可以随时在中查看重置过程的状态。 **状态** 列 **环境** 信息卡或 **环境** 窗口。
 
 ![RDE重置状态](/help/implementing/cloud-manager/assets/rde-reset-status-environments-card.png)
 
@@ -425,7 +425,7 @@ RDE重置过程启动后，通常需要几分钟才能完成，并且环境将�
 
 ![从环境信息卡重置RDE](/help/implementing/cloud-manager/assets/rde-reset-environments-card.png)
 
-有关如何使用Cloud Manager管理环境的更多信息，请参阅 [Cloud Manager文档。](/help/implementing/cloud-manager/manage-environments.md)
+有关如何使用Cloud Manager管理环境的更多信息，请参阅 [Cloud Manager文档](/help/implementing/cloud-manager/manage-environments.md).
 
 ## 运行模式 {#runmodes}
 

@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2192'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   > 参考 [使用JDBC数据源池的SQL连接](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 以了解更多详细信息。
+   > 参见 [使用JDBC数据源池的SQL连接](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) 以了解更多详细信息。
 
 1. 点按 **[!UICONTROL 保存]** 以保存配置。
 
@@ -170,7 +170,7 @@ RESTful服务Open API规范版本3.0不支持的一些操作包括：
 * 链接
 * 针对单次操作的不同MIME类型的不同请求主体
 
-您可以引用 [OpenAPI 3.0规范](https://swagger.io/specification/v3/) 以了解详细信息。
+参见 [OpenAPI 3.0规范](https://swagger.io/specification/v3/) 以了解详细信息。
 
 ### 表单数据模型HTTP客户端配置以优化性能 {#fdm-http-client-configuration}
 

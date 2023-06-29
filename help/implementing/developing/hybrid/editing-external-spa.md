@@ -2,9 +2,9 @@
 title: 在 AEM 中编辑外部 SPA
 description: 本文档介绍了将独立SPA上传到AEM实例、添加可编辑的内容部分和启用创作的建议步骤。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2421'
 ht-degree: 2%
 
 ---

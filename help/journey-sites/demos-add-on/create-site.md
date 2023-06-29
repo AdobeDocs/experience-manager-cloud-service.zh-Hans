@@ -2,9 +2,9 @@
 title: 创建演示站点
 description: 基于预配置的模板库在 AEM 中创建演示站点。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '841'
 ht-degree: 98%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 98%
 
    ![访问站点](assets/access-sites.png)
 
-1. 从站点控制台中，点按或单击屏幕右上方的&#x200B;**创建**，然后在下拉菜单中选择&#x200B;**从模板创建站点**。
+1. 从 Sites 控制台中，点按或单击屏幕右上方的&#x200B;**创建**，然后在下拉菜单中选择&#x200B;**从模板创建站点**。
 
    ![从模板创建站点](assets/create-site-from-template.png)
 
@@ -51,7 +51,7 @@ ht-degree: 98%
 
    ![站点创建向导](assets/site-creation-wizard.png)
 
-1. 在下一个屏幕中，为您的站点或 Screens 项目提供标题。如果忽略，则可以从标题提供或生成站点名称。 点按或单击&#x200B;**创建**。
+1. 在下一个屏幕中，为您的站点或 Screens 项目提供标题。可以提供站点名称，也可以从标题生成站点名称（如果被忽略）。点按或单击&#x200B;**创建**。
 
    * 站点标题显示在浏览器标题栏中。
    * 站点名称会成为 URL 的一部分。
@@ -69,9 +69,9 @@ ht-degree: 98%
 
 现已创建您的演示站点，您可以像在 AEM 中导航和使用任何其他站点一样导航和使用您的站点。
 
-1. 站点现在显示在站点控制台中。
+1. 站点现在显示在 Sites 控制台中。
 
-   ![站点控制台中的新演示站点](assets/new-demo-site.png)
+   ![ Sites 控制台中的新演示站点](assets/new-demo-site.png)
 
 1. 在屏幕的右上角，确保控制台视图设置为&#x200B;**列视图**。
 
@@ -110,5 +110,5 @@ ht-degree: 98%
 
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
 * [创建站点](/help/sites-cloud/administering/site-creation/create-site.md) – 了解如何使用 AEM 创建站点，并使用站点模板定义站点的样式和结构。
-* [AEM 的页面命名惯例。](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices) – 请参阅此页面，了解用于组织 AEM 页面的惯例。
-* [AEM 基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 如果您不熟悉 AEM，请参阅本文档了解导航和控制台组织等基本概念。
+* [AEM页面命名约定](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).  — 请参阅此页面以了解用于组织AEM页面的惯例。
+* [AEM 基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 如果您不熟悉 AEM，请参阅本文档，了解导航和控制台组织等基本概念。

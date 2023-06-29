@@ -2,10 +2,10 @@
 title: SPA 简介和演练
 description: 本文介绍了 SPA 的概念，演练了如何使用基本 SPA 应用程序进行创作，并展示了它与底层 AEM SPA Editor 的关系。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 94%
+source-wordcount: '2068'
+ht-degree: 92%
 
 ---
 
@@ -42,11 +42,11 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本�
 
 >[!TIP]
 >
->任何AEM项目都应使用 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，支持使用React或Angular的SPA项目，并使用SPA SDK。
+>任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ### 什么是 SPA？ {#what-is-a-spa}
 
-单页应用程序 (SPA) 与传统页面的不同之处在于，它在客户端呈现且主要由 Javascript 驱动，并且依靠 Ajax 调用来加载数据和动态更新页面。大多数内容或所有内容在单个页面加载中检索一次，并基于用户与页面的交互按需异步加载其他资源。
+单页应用程序(SPA)与传统页面不同，因为它在客户端渲染，主要由JavaScript驱动，依赖Ajax调用加载数据和动态更新页面。 大多数内容或所有内容在单个页面加载中检索一次，并基于用户与页面的交互按需异步加载其他资源。
 
 这减少了页面刷新需求，并为用户提供了一种无缝、快速且更类似于本机应用程序体验的体验。
 
@@ -71,11 +71,11 @@ SPA 的工作方式的特性使其更快、更流畅且更类似于本机应用�
 #### 开发人员 {#developers}
 
 * 开发人员希望完全分离内容和表示形式之间的关注点。
-* 完全分离可提高系统的可扩展性，并允许独立的前端开发。
+* 干净的分隔使得系统更具可扩展性，并允许独立的前端开发。
 
 ### SPA 的工作原理是什么？ {#how-does-a-spa-work}
 
-SPA的主要思想是，减少对服务器的调用和对服务器的依赖性，以最大限度地减少由服务器延迟导致的延迟，使SPA接近本机应用程序的响应能力。
+SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度地减少因服务器延迟而导致的延迟，从而使 SPA 接近本机应用程序的响应能力。
 
 在传统的连续网页中，仅加载即时页面所需的数据。这意味着，当访客移至另一个页面时，将调用服务器以获取其他资源。当访客与页面上的元素交互时，可能需要额外调用。由于页面必须与访客的请求同步，因此多次调用可能会给人一种滞后或延迟的感觉。
 
@@ -96,7 +96,7 @@ SPA的主要思想是，减少对服务器的调用和对服务器的依赖性�
 
 ## SPA 的内容编辑体验 {#content-editing-experience-with-spa}
 
-当构建SPA以使用AEM SPA编辑器时，内容作者注意到在编辑和创建内容时没有区别。 提供了常用 AEM 功能，而无需更改作者的工作流。
+在构建 SPA 以利用 AEM SPA Editor 时，内容作者在编辑和创建内容时不会发现任何差异。提供了常用 AEM 功能，而无需更改作者的工作流。
 
 1. 在 AEM 中编辑 WKND SPA Project 应用程序。
 
@@ -177,7 +177,7 @@ SPA的主要思想是，减少对服务器的调用和对服务器的依赖性�
 
 1. 切换到检查器中的“网络”选项卡并重新加载页面。
 
-   忽略图像请求，请注意，为页面加载的主要资源包括页面本身、CSS、React Javascript、其依赖项以及页面的 JSON 数据。
+   忽略图像请求，请注意，为页面加载的主要资源是页面本身、CSS、React JavaScript、其依赖项以及页面的JSON数据。
 
    ![WKND SPA Project 网络活动](assets/wknd-network.png)
 
@@ -187,9 +187,9 @@ SPA的主要思想是，减少对服务器的调用和对服务器的依赖性�
 
    ![WKND SPA Project 的 JSON 主页](assets/wknd-json.png)
 
-   AEM SPA编辑器使用 [AEM内容服务](/help/sites-cloud/administering/content-fragments/content-fragments.md) 以JSON模型形式交付页面的整个内容。
+   AEM SPA Editor 利用 [AEM 内容服务](/help/sites-cloud/administering/content-fragments/content-fragments.md)将页面的全部内容作为 JSON 模型交付。
 
-   通过实施特定接口，Sling 模型为 SPA 提供了必要信息。将 JSON 数据的交付工作向下委派给每个组件（从页面到段落再到组件等）。
+   通过实施特定接口，Sling 模型为 SPA 提供了必要信息。JSON数据的投放向下委托给每个组件（从页面、段落到组件等）。
 
    每个组件选择它公开的内容及其呈现方式（在服务器端，使用 HTL；在客户端，使用 React 或 Angular）。本文重点介绍使用 React 进行客户端呈现。
 
@@ -207,7 +207,7 @@ SPA的主要思想是，减少对服务器的调用和对服务器的依赖性�
 
 ### 与 SPA 编辑器进行交互 {#interaction-with-the-spa-editor}
 
-通过使用示例 WKND SPA Project 应用程序，可以清楚地了解应用程序在发布时的行为和加载方式，如何使用内容服务进行 JSON 内容交付以及如何异步加载资源。
+使用示例WKND SPA项目应用程序，可以清楚地了解该应用程序在发布时的行为和加载方式，并利用内容服务进行JSON内容交付和异步加载资源。
 
 此外，对于内容作者而言，在 AEM 中使用 SPA 编辑器创建内容是无缝操作。
 
@@ -241,7 +241,7 @@ SPA的主要思想是，减少对服务器的调用和对服务器的依赖性�
 
 ## AEM 中的 Headful 和 Headless {#headful-headless}
 
-可以通过 AEM 中灵活的集成级别启用 SPA，包括在 AEM 外部开发和维护的 SPA。此外，SPA可以在AEM中使用，同时还可以使用AEM无头地向其他端点提供内容。
+可以通过 AEM 中灵活的集成级别启用 SPA，包括在 AEM 外部开发和维护的 SPA。此外，可以在 AEM 中利用 SPA，同时使用 AEM 以 Headless 方式将内容交付给其他端点。
 
 >[!TIP]
 >
@@ -254,4 +254,4 @@ SPA的主要思想是，减少对服务器的调用和对服务器的依赖性�
 * [使用 React 在 AEM 中开始使用 SPA](getting-started-react.md) 说明了如何使用 React 构建基本 SPA 以与 AEM 中的 SPA 编辑器结合使用
 * [使用 Angular 在 AEM 中开始使用 SPA](getting-started-angular.md) 说明了如何使用 Angular 构建基本 SPA 以与 AEM 中的 SPA 编辑器结合使用
 * [SPA 编辑器概述](editor-overview.md)更深入地介绍了 AEM 和 SPA 之间的通信模型。
-* [为 AEM 开发 SPA](developing.md) 介绍了如何让前端开发人员为 AEM 开发 SPA，以及 SPA 如何与 AEM 的架构进行交互。
+* [开发SPA for AEM](developing.md) 介绍如何让前端开发人员参与开发适用于AEM的SPA，以及SPA如何与AEM架构交互。

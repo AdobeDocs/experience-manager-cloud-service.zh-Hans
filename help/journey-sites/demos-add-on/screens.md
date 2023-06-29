@@ -1,17 +1,17 @@
 ---
 title: 为演示站点启用 AEM Screens
-description: 了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
+description: 了解在您的演示网站上启用完整AEM Screensas a Cloud Service体验的步骤。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 97%
+source-wordcount: '2666'
+ht-degree: 58%
 
 ---
 
 # 为演示站点启用 AEM Screens {#enable-screens}
 
-了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
+了解在您的演示网站上启用完整AEM Screensas a Cloud Service体验的步骤。
 
 >[!NOTE]
 >
@@ -19,17 +19,17 @@ ht-degree: 97%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM 参考演示加载项历程的上一个文档[创建演示站点](create-site.md)中，您基于参考演示加载项模板创建了一个新的演示站点。您现在应：
+在AEM参考演示加载项历程的上一个文档中， [创建演示站点，](create-site.md) 您已基于参考演示加载项的模板创建了一个演示站点。 您现在应：
 
 * 了解如何访问 AEM 创作环境。
 * 了解如何基于模板创建站点。
 * 了解导航站点结构和编辑页面的基础知识。
 
-现在您已拥有自己的演示站点，可以探索和了解有助于您管理演示站点的工具，您现在可以为演示站点启用完整的 AEM Screens as a Cloud Service 体验。
+现在您已拥有自己的演示站点，可以探索并了解有助于您管理演示站点的工具，并为演示站点启用完整的AEM Screensas a Cloud Service体验。
 
 ## 目标 {#objective}
 
-AEM 参考演示加载项包含适用于咖啡店垂直业务 We.Cafe 的 AEM Screens 内容。本文档有助于您了解如何在 AEM Screens 的上下文中执行 We.Cafe 演示设置。阅读本文档后，您应：
+AEM参考演示加载项包含适用于咖啡店垂直业务We.Cafe的AEM Screens内容。 本文档有助于您了解如何在 AEM Screens 的上下文中执行 We.Cafe 演示设置。阅读本文档后，您应：
 
 * 了解 AEM Screens 的基础知识。
 * 了解 We.Cafe 演示内容。
@@ -47,11 +47,11 @@ AEM Screens as a Cloud Service 是一种数字标牌解决方案，允许营销�
 >
 >有关 AEM Screens as a Cloud Service 的完整详细信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 
-通过安装 AEM 参考演示加载项，您可以在演示创作环境中自动获得适用于 AEM Screens 的 We.Cafe 内容。利用[部署演示 Screens 项目](#deploy-project)中描述的步骤，您可以通过发布该内容并将其部署到媒体播放器等来启用完整的 AEM Screens 体验。
+通过安装AEM参考演示加载项，您可以在演示创作环境中自动获得适用于AEM Screens的We.Cafe内容。 中所述的步骤 [部署演示Screens项目](#deploy-project) 通过发布该内容并将其部署到媒体播放器等，帮助您实现完整的AEM Screens体验。
 
 ## 了解演示内容 {#demo-content}
 
-We.Cafe 咖啡店在美国有三家店，分别在三个不同的位置。这三家店提供了三种相似的体验：
+We.Cafe咖啡店在美国有三家店，分布在三个地方。 这三家店提供了三种相似的体验：
 
 * 柜台上方有一个菜单展示板，带有两个或三个垂直面板
 * 配备了一个水平或垂直面板的当街入口显示，旨在邀请客户进店
@@ -70,7 +70,7 @@ We.Cafe 咖啡店在美国有三家店，分别在三个不同的位置。这三
 
 >[!NOTE]
 >
->如果您决定连接到[连接 Screens as a Cloud Service](#connect-screens) 部分中的 Screens Cloud Service，请在显示下创建位置作为文件夹。有关显示的更多信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
+>Cloud Service如果您决定连接到 [Connect Screensas a Cloud Service](#connect-screens) 部分，在显示下将位置创建为文件夹。 有关显示的更多信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 
 ### 咖啡馆布局 {#care-layouts}
 
@@ -84,19 +84,19 @@ We.Cafe 位置具有以下布局。
 
 ### 入口 {#entrance}
 
-入口显示是分时段的，只会将第一张图像从早上更改为下午。在每次播放序列时，它还将宣传一种不同的特别咖啡制品，每次都使用计量的嵌入序列播放不同的物品。
+入口显示是分时段的，只是将第一张图像从早上更改为下午。 在每次播放序列时，它还会宣传一种不同的特别咖啡制品，每次都使用计量的嵌入式序列播放不同的物品。
 
-入口渠道上的最后一个图像也是基于外部温度来确定的（即动态变化），可以像[创建模拟数据源](#data-source)部分中所述的那样进行模拟。
+入口通道上的最后一个图像也是基于外部温度来确定的（即动态变化），可以模拟外部温度，如 [创建模拟数据源](#data-source) 部分。
 
 ## 部署演示 Screens 项目 {#deploy-project}
 
-要在您创建的沙盒中使用演示内容，请执行以下操作 [创建项目](create-program.md) 步骤，必须基于模板创建站点。
+要在您在中创建的沙盒中使用演示内容，请执行以下操作 [创建项目](create-program.md) 步骤，必须基于模板创建站点。
 
 如果您尚未创建 We.Cafe 演示站点，只需执行[创建演示站点](create-site.md)部分中的相同步骤即可。在选择模板时，只需选择 **We.Cafe 网站模板**。
 
 ![We.Cafe 模板](assets/wecafe-template.png)
 
-在向导完成后，您会发现内容已部署到站点下，并且可以像导航和浏览任何其他内容一样导航和浏览该内容。
+向导完成后，您会发现内容已部署在Sites下，并且可以像导航和浏览任何其他内容一样导航和浏览该内容。
 
 ![We.Cafe 内容](assets/wecafe-content.png)
 
@@ -107,19 +107,19 @@ We.Cafe 位置具有以下布局。
 
 ## 动态更改 Screens 内容 {#dynamically-change}
 
-与AEM Sites 一样，AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，已将渠道配置为根据当前温度显示不同的内容。为了模拟这一点，我们需要创建自己的简单天气服务。
+与AEM Sites 一样，AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，已将渠道配置为根据当前温度显示不同的内容。要模拟此体验，您必须创建自己的简单天气服务。
 
 ### 创建模拟数据源 {#data-source}
 
-由于在演示期间或测试时很难更改天气，因此必须模拟温度变化。我们通过将温度值存储在 AEM 的 ContextHub 将调用以检索温度的 Google Sheet 电子表格中来模拟天气服务。
+由于在演示期间或测试时很难更改天气，因此必须模拟温度变化。 天气服务通过将温度值存储在AEM ContextHub调用以检索温度的Google Sheet电子表格中来模拟。
 
 #### 创建 Google API 密钥 {#create-api-key}
 
-首先，我们需要创建一个 Google API 密钥来促进数据交换。
+首先，您必须创建一个Google API密钥来促进数据交换。
 
-1. 登录 Google 帐户。
+1. 登录到Google帐户。
 1. 使用以下链接打开 Cloud Console：`https://console.cloud.google.com`。
-1. 通过单击 **Google Cloud Platform** 标签后面的工具栏左上方的当前项目名称来创建新项目。
+1. 通过单击工具栏左上角位于以下位置后面的当前项目名称来创建项目： **Google Cloud平台** 标签。
 
    ![Google Cloud Console](assets/google-cloud-console.png)
 
@@ -131,7 +131,7 @@ We.Cafe 位置具有以下布局。
 
    ![创建项目](assets/create-project.png)
 
-1. 确保已选择您的新项目，然后在 Cloud Console 的仪表板中的汉堡菜单中，选择 **API 和服务**。
+1. 确保已选择您的新项目，然后在Cloud Console的仪表板中的汉堡菜单中，选择 **API和服务**.
 
    ![API 和服务](assets/apis-services.png)
 
@@ -139,21 +139,21 @@ We.Cafe 位置具有以下布局。
 
    ![凭据](assets/credentials.png)
 
-1. 在对话框中，复制新的 API 密钥并将其保存以供将来使用。单击&#x200B;**关闭**&#x200B;以关闭对话框。
+1. 在对话框中，复制新的API密钥并保存以供将来使用。 单击 **关闭** 以便退出对话框。
 
 #### 启用 Google Sheets API {#enable-sheets}
 
-要允许使用 API 密钥交换 Google Sheets 数据，您需要启用 Google Sheets API。
+要允许使用API密钥交换Google工作表数据，您必须启用Google工作表API。
 
 1. 返回项目的 Google Cloud Console，网址为 `https://console.cloud.google.com`，然后使用汉堡菜单选择 **API 和服务 -> 库**。
 
    ![API 库](assets/api-library.png)
 
-1. 在“API 库”屏幕中，滚动以查找对 **Google Sheets API** 的搜索。单击它。
+1. 在“API库”屏幕中，滚动以查找您的搜索 **Google Sheets API**，然后单击它。
 
    ![API 库搜索](assets/api-library-search.png)
 
-1. 在 **Google Sheets API** 窗口中，单击&#x200B;**启用**。
+1. 在 **Google Sheets API** 窗口，单击 **启用**.
 
    ![Google sheets API](assets/sheets-api.png)
 
@@ -161,9 +161,9 @@ We.Cafe 位置具有以下布局。
 
 现在您可以创建 Google Sheets 电子表格来存储天气数据。
 
-1. 转至 `https://docs.google.com` 并创建新的 Google Sheets 电子表格。
+1. 转到 `https://docs.google.com` 并创建一个Google Sheets电子表格。
 1. 在单元格 A2 中输入 `32` 来定义温度。
-1. 通过单击窗口右上方的&#x200B;**共享**&#x200B;来共享文档，并在&#x200B;**获取链接**&#x200B;下，单击&#x200B;**更改**。
+1. 通过单击共享文档 **共享** 位于窗口右上角和下方 **获取链接**，单击 **更改**.
 
    ![共享表](assets/share-sheet.png)
 
@@ -173,7 +173,7 @@ We.Cafe 位置具有以下布局。
 
 1. 找到表 ID。
 
-   * 表 ID 是您在 `d/` 之后和 `/edit` 之前复制的表链接中的随机字符串。
+   * 表ID是您在之后复制的表链接中的随机字符串 `d/` 和之前 `/edit`.
    * 例如：
       * 如果您的 URL 为 `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0`
       * 表 ID 为 `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`。
@@ -207,46 +207,46 @@ We.Cafe 位置具有以下布局。
    }
    ```
 
-AEM Screens可以使用此同一服务来访问在下一步中配置的模拟天气数据。
+AEM Screens 可以使用相同的服务访问下一步配置的模拟天气数据。
 
 ### 配置 ContextHub {#configure-contexthub}
 
-AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，利用 AEM 的 ContextHub 将渠道配置为根据当前温度显示不同的内容。
+AEM Screens 可以根据上下文动态更改内容。在We.Cafe演示中，使用AEM ContextHub将渠道配置为根据当前温度显示不同的内容。
 
 >[!TIP]
 >
 >有关 ContextHub 的完整详细信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 
-在显示屏幕内容时，ContextHub 将调用天气服务来查找当前温度以决定要显示的内容。
+显示屏幕内容时，ContextHub会调用天气服务来查找当前温度，以确定要显示的内容。
 
-在演示中，可以更改表中的值。ContextHub 将识别这一点，并且内容将根据更新后的温度在渠道中进行调整。
+在演示中，可以更改表中的值。ContextHub可识别此事实，并且内容会根据更新的温度在渠道中进行调整。
 
 1. 在 AEMaaCS 创作实例上，转至&#x200B;**全局导航 -> 工具 ->站点-> ContextHub**。
 1. 选择与您从 **We.Cafe 网站模板**&#x200B;创建的 Screens 项目同名的配置容器。
 1. 选择&#x200B;**配置 -> ContextHub 配置 -> Google Sheets**，然后单击右上方的&#x200B;**下一步**。
-1. 该配置应已具有预配置的 JSON 数据。有两个值需要更改：
-   1. 将 `[your Google Sheets id]` 替换为您之前保存的表 ID[。](#create-spreadsheet)
-   1. 将 `[your Google API Key]` 替换为您之前保存的 API 密钥[。](#create-api-key)
-1. 单击&#x200B;**保存**。
+1. 该配置应已具有预配置的 JSON 数据。有两个值必须更改：
+   1. Replace `[your Google Sheets id]` 表ID为 [您之前保存过](#create-spreadsheet).
+   1. Replace `[your Google API Key]` 使用API密钥， [您之前保存过](#create-api-key).
+1. 单击“**保存**”。
 
-现在您可以更改 Google Sheet 电子表格中的温度值，ContextHub 将在“显示天气变化”时动态更新 Screens。
+现在，您可以在Google Sheet电子表格中更改温度值，ContextHub会在“看到天气变化”时动态更新Screens。
 
 ### 测试动态数据 {#test-dynamic}
 
-现在，AEM Screens 和 ContextHub 已连接到您的天气服务，您可以对其进行测试以了解 Screens 如何动态更新内容。
+现在AEM Screens和ContextHub已连接到您的天气服务，您可以对其进行测试以了解Screens如何动态更新内容。
 
 1. 访问您的沙盒创作实例。
-1. 通过&#x200B;**全局导航 -> 站点** 导航到站点控制台，然后选择以下页面 **Screens -> &lt;project-name> -> 渠道 -> 入口早上显示(纵向)**。
+1. 通过&#x200B;**全局导航 -> 站点** 导航到 Sites 控制台，然后选择以下页面 **Screens -> &lt;project-name> -> 渠道 -> 入口早上显示(纵向)**。
 
    ![选择演示项目内容](assets/project-content.png)
 
-1. 单击工具栏中的“编辑”或键入快捷键 `e` 以编辑页面。
+1. 单击 **编辑** 在工具栏中或键入快捷键 `e` 以便编辑页面。
 
-1. 在编辑器中，您可以查看内容。请注意，一个图像以蓝色突出显示，角落有一个定位图标。
+1. 在编辑器中，您可以查看内容。一个图像以蓝色突出显示，角落有一个定位图标。
 
    ![编辑器中的 Screens 内容](assets/screens-content-editor.png)
 
-1. 将您在电子表格中输入的温度从 32 更改为 70，然后观察内容变化。
+1. 将您在电子表格中输入的温度从32更改为70，然后观察内容变化。
 
    ![编辑器中的 Screens 内容](assets/screens-content-editor-2.png)
 
@@ -268,7 +268,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
 ### 配置 AEM Screens as a Cloud Service {#configure-screens}
 
-首先，您需要将 Screens 演示内容发布到 AEM Screens as a Cloud Service 并配置该服务。
+首先，您必须将Screens演示内容发布到AEM Screensas a Cloud Service并配置该服务。
 
 1. 发布演示 Screens 项目的内容。
 1. 在 `https://experience.adobe.com/screens` 上导航到 Screens as a Cloud Service 并登录。
@@ -276,31 +276,31 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
    ![查看 Screens 组织](assets/screens-org.png)
 
-1. 单击左上方的齿轮型&#x200B;**编辑设置**&#x200B;图标。
+1. 在左上角附近，单击 **编辑设置** 图标，形状像齿轮。
 
    ![编辑设置](assets/screens-edit-settings.png)
 
-1. 提供已在其中创建演示站点的 AEMaaCS 创作和发布实例的 URL，并单击&#x200B;**保存**。
+1. 提供已在其中创建演示站点的AEMaaCS创作和发布实例的URL，然后单击 **保存**.
 
    ![Screens 设置](assets/screens-settings.png)
 
-1. 连接到您的演示实例后，Screens 将拉入您的渠道内容。单击左侧面板中的&#x200B;**渠道**&#x200B;查看发布的渠道。填充信息可能需要一些时间。您可以单击屏幕右上方的蓝色&#x200B;**同步**&#x200B;按钮以更新信息。
+1. 连接到您的演示实例后，Screens会拉入您的渠道内容。 单击 **渠道** ，以便查看已发布的渠道。 填充信息可能需要一些时间。您可以单击屏幕右上方的蓝色&#x200B;**同步**&#x200B;按钮以更新信息。
 
    ![演示渠道信息](assets/screens-channels.png)
 
-1. 单击左侧面板中的&#x200B;**显示**。您尚未为您的演示创建任何显示。我们将通过为每个显示创建文件夹来模拟 We.Cafe 的位置。单击屏幕右上方的&#x200B;**创建**，并选择&#x200B;**文件夹**。
+1. 单击 **显示** （在左侧面板中）。 您尚未为您的演示创建任何显示。您可以通过为每个We.Cafe创建文件夹来模拟We.Cafe的位置。 单击 **创建** 选择位于屏幕右上角的 **文件夹**.
 
    ![创建显示](assets/screens-displays.png)
 
-1. 在对话框中，提供文件夹名称，例如 **San Jose**，然后单击&#x200B;**创建**。
+1. 在对话框中，提供文件夹名称，例如 **圣何塞** 并单击 **创建**.
 
-1. 通过单击文件夹以将其打开，然后单击右上方的&#x200B;**创建**&#x200B;并选择&#x200B;**显示**。
+1. 单击文件夹以将其打开，然后单击 **创建** 选择右上角的 **显示**.
 
 1. 提供显示名称，然后单击&#x200B;**创建**。
 
    ![创建显示](assets/create-display.png)
 
-1. 创建显示后，单击显示屏的名称以打开显示详细信息屏幕。 必须为显示分配一个已从您的演示站点同步的渠道。单击屏幕右上方的&#x200B;**分配渠道**。
+1. 创建显示后，单击显示名称以打开显示详细信息屏幕。 必须为显示分配一个已从您的演示站点同步的渠道。单击 **分配渠道** 屏幕右上角。
 
    ![渠道详细信息](assets/channel-detail.png)
 
@@ -308,24 +308,24 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
    ![分配渠道](assets/assign-channel.png)
 
-您可以对其他位置和显示重复这些步骤。完成这些步骤后，您的演示站点便与 AEM Screens 链接并且已完成必要的配置。
+您可以对其他位置和显示重复这些步骤。完成后，您已将演示站点与AEM Screens链接并完成了必要的配置。
 
 您可以在 AEMaaCS 上的渠道编辑器中预览演示。
 
 ### 使用 Screens 播放器 {#screens-player}
 
-要在实际屏幕上查看内容，您可以下载播放器并在本地进行设置。之后，AEM Screens as a Cloud Service 会将内容投放给播放器
+要在实际屏幕上查看内容，您可以下载播放器并在本地进行设置。AEM Screensas a Cloud Service会将内容交付给播放器
 
 #### 生成注册码 {#registration-code}
 
-首先，您需要创建一个注册码以将播放器安全地连接到 AEM Screens as a Cloud Service。
+首先，您必须创建一个注册码，以将播放器安全地连接到AEM Screensas a Cloud Service。
 
 1. 在 `https://experience.adobe.com/screens` 上导航到 Screens as a Cloud Service 并登录。
 1. 在屏幕的右上方，确保您在正确的组织中。
 
    ![查看 Screens 组织](assets/screens-org.png)
 
-1. 在左侧面板中，单击&#x200B;**播放器管理 -> 注册码**，然后单击屏幕右上方的&#x200B;**创建代码**。
+1. 在左侧面板中，单击 **播放器管理 — >注册码** 然后单击 **创建代码** 屏幕右上角。
 
 ![注册码](assets/registration-codes.png)
 
@@ -340,11 +340,12 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 #### 安装和配置播放器 {#install-player}
 
 1. 从 `https://download.macromedia.com/screens/` 下载并安装平台的播放器。
-1. 运行播放器，然后切换到&#x200B;**配置**&#x200B;选项卡，滚动到底部以单击并确认&#x200B;**重置为出厂设置**&#x200B;和&#x200B;**更改为云模式**。
+1. 运行播放器，然后切换到 **配置** 选项卡。
+1. 滚动到底部，然后单击并确认两者 **重置为出厂设置** 和 **更改为云模式** 选项。
 
    ![播放器设置](assets/player-configuration.png)
 
-1. 播放器将自动变为&#x200B;**播放器注册**&#x200B;选项卡。输入您之前生成的代码，然后单击&#x200B;**注册**。
+1. 播放器会自动更改为 **播放器注册** 选项卡。 输入您之前生成的代码，然后单击 **注册**.
 
    ![播放器注册](assets/player-registration-code.png)
 
@@ -359,15 +360,15 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
    ![查看 Screens 组织](assets/screens-org.png)
 
-1. 在左侧面板中，单击&#x200B;**播放器管理 -> 播放器**，您将看到之前安装并注册的播放器。
+1. 在左侧面板中，单击 **播放器管理 — >播放器** 您会看到之前安装并注册的播放器。
 
    ![播放器](assets/players.png)
 
-1. 单击播放器名称以打开其详细信息，然后单击屏幕右上方的&#x200B;**分配给显示**。
+1. 单击播放器名称，以便打开其详细信息。 单击 **分配给显示区** 屏幕右上角的。
 
    ![将播放器分配给显示](assets/assign-to-display.png)
 
-1. 在对话框中，选择您之前创建的显示，然后单击&#x200B;**选择**。
+1. 在对话框中，选择您之前创建的显示，然后单击 **选择**.
 
    ![分配显示](assets/assign-a-display.png)
 
@@ -381,7 +382,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
 ## 下一步 {#what-is-next}
 
-现在您已完成 AEM 参考演示加载项历程的这一部分，您应：
+现在您已完成AEM参考演示加载项历程的这一部分，您应：
 
 * 了解 AEM Screens 的基础知识。
 * 了解 We.Cafe 演示内容。

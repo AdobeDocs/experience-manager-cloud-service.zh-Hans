@@ -2,9 +2,9 @@
 title: 面向合作伙伴的 Experience Manager as a Cloud Service 迁移指南
 description: 面向合作伙伴的 Experience Manager as a Cloud Service 迁移指南
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2120'
 ht-degree: 21%
 
 ---
@@ -126,7 +126,7 @@ Cloud Service将Adobe Experience Manager丰富的开箱即用功能和可扩展�
 <table>
 <tr>
 <td>项目发现和评估</td>
-<td><ul><li>请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=zh-Hans">对Experience Manageras a Cloud Service的重要更改</a> 了解Adobe Experience Manager as a Cloud Service与Experience Manager6.x之间的重要差异。</li><li>请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=en">已弃用功能</a> 详细了解已标记为已弃用的特性和功能。</li><li>[仅适用于Cloud Service迁移]评估Cloud Service就绪性：运行 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en">Best Practices Analyzer(BPA)</a> 在源环境中 </li><li>针对Experience ManagerCS中的显着更改和已弃用功能完成评估</li></ul></td>
+<td><ul><li>参见 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=zh-Hans">对Experience Manageras a Cloud Service的重要更改</a> 了解Adobe Experience Manager as a Cloud Service与Experience Manager6.x之间的重要差异。</li><li>参见 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=en">已弃用功能</a> 详细了解已标记为已弃用的特性和功能。</li><li>[仅适用于Cloud Service迁移]评估Cloud Service就绪性：运行 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en">Best Practices Analyzer(BPA)</a> 在源环境中 </li><li>针对Experience ManagerCS中的显着更改和已弃用功能完成评估</li></ul></td>
 </tr>
 <tr>
 <td>审核</td>

@@ -2,10 +2,10 @@
 title: 合适的人员，合适的职位
 description: 合适的人员，合适的职位
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 80%
+source-wordcount: '831'
+ht-degree: 82%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 80%
 
 数字治理首先要弄清楚谁负责什么内容，谁在做哪些数字化工作。 您可能需要进行一些战略性的招聘工作来补充具备所需技能的人手。更大的挑战是推动文化转变 — 为新技术赢得广泛支持，并帮助人们习惯新的工作方式。 该工作的一个关键部分在于创建数字社区，让人们能够从中学习和互相支持。
 
-目前，我们侧重于将合适的人员放在合适的职位上，以帮助推动Adobe Experience Manager部署。 对于每个核心产品(Experience Manager Sites和Experience Manager Assets)，我们提供了您需要填充的职位列表，以及使人员能够在各种职位上发挥效用的技能、专业水平和属性。
+目前，重点是让合适的人员担任合适的职位，帮助推动Adobe Experience Manager部署。 对于每个核心产品(Experience Manager Sites和Experience Manager Assets)，Adobe都提供了一个您必须担任的职位列表，以及使人在各种职位上高效工作的技能、专业水平和属性。
 
 您本周的任务是与实施团队一起查看这些清单，确保在各个职位上都有具备相关资质的人员。
 
@@ -77,4 +77,4 @@ ht-degree: 80%
 
 >[!TIP]
 >
-> 详细了解Adobe Experience Cloud并在上使用资源 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 并通过获得认证 [Adobe数字学习](https://learning.adobe.com/certification.html).
+> 详细了解 Adobe Experience Cloud，并利用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 上的资源来通过 [Adobe Digital Learning](https://learning.adobe.com/certification.html) 获取认证。

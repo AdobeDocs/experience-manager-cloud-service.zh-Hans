@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 88%
+source-wordcount: '1149'
+ht-degree: 87%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 88%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 月度发行版本的完整列表。
+您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月发布的完整列表。
 
 ## 内容转移工具 {#ctt-release}
 
@@ -112,7 +112,7 @@ ht-degree: 88%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用“检查大小”功能，用户可以1)确定 `crx-quickstart` 子目录，以及2)估计迁移集大小并验证是否支持它。 如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。有关更多详细信息，请参阅[“确定迁移集大小和磁盘空间”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size)。
+* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用“检查大小”功能，用户可以1)确定 `crx-quickstart` 子目录，以及2)估计迁移集大小并验证是否支持它。 如果违反了其中一项或两项检查，用户将在 CTT UI 中看到警告。有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。参见 [确定迁移集大小和磁盘空间](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans#migration-set-size) 了解更多详细信息。
 
 ## Best Practices Analyzer {#bpa-release}
 

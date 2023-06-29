@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 96%
+source-wordcount: '1164'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM �
 >
 >如果您选择使用 Microsoft Translator 连接器进行测试，则无需执行以下两个部分中的步骤：[创建翻译集成配置](#create-config)和[将配置与您的内容关联。](#associate)但建议您阅读这两个部分，以便熟悉需要配置首选连接器时要执行的步骤。
 >
->Microsoft Translator连接器的试用许可证不用于生产目的，如果您决定对其进行许可，系统管理员必须执行 [其他资源](#additional-resources) 部分，以配置该许可证。
+>Microsoft Translator 连接器的试用许可证不用于生产目的，如果您决定对其进行许可，系统管理员必须执行本文档末尾的[其他资源](#additional-resources)部分中详述的步骤来配置该许可证。
 
 ## 创建翻译集成配置 {#create-config}
 
@@ -82,7 +82,7 @@ AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM �
 1. 单击或点按工具栏中的&#x200B;**创建**&#x200B;以创建新的配置。
 1. 在字段中提供以下信息，然后单击或点按&#x200B;**创建**。
    1. 在下拉列表中选择&#x200B;**配置类型**。从列表中选择&#x200B;**翻译集成**。
-   1. 为您的配置输入一个&#x200B;**标题**。**标题**&#x200B;在&#x200B;**云服务**&#x200B;控制台中以及页面属性下拉列表中标识该配置。
+   1. 为您的配置输入一个&#x200B;**标题**。此 **标题** 标识中的配置 **Cloud Services** 控制台和“页面属性”下拉列表中。
    1. （可选）键入一个&#x200B;**名称**&#x200B;以用于存储该配置的存储库节点。
 
    ![创建翻译配置](assets/create-translation-configuration.png)

@@ -2,7 +2,7 @@
 title: 实施阶段
 description: 确保您的代码和内容已准备好迁移到云
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 9%
@@ -256,4 +256,4 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 ## 后续内容 {#what-is-next}
 
-在您完全了解如何评估您的AEM安装是否已准备好迁移到云后（在我们了解如何使用做好准备所需的工具时），您可以转到 [上线阶段](/help/journey-migration/go-live.md).
+在您完全了解如何评估您的AEM安装是否已准备好迁移到云后，在我们了解如何使用做好准备所需的工具时，您应该转到 [上线阶段](/help/journey-migration/go-live.md).

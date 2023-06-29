@@ -2,7 +2,7 @@
 title: 在 AEM 应用程序中生成标记
 description: 以编程方式使用自定义AEM应用程序中的标记或扩展标记
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 1%
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## 标记垃圾收集器 {#the-tag-garbage-collector}
 
-标记垃圾收集器是一种后台服务，用于清理隐藏和未使用的标记。 隐藏和未使用的标记是以下标记 `/content/cq:tags` 具有 `cq:movedTo` 属性和，而不是在内容节点上使用。 他们数为零。 通过使用这种延迟删除流程，内容节点(即 `cq:tags` 属性)不必作为移动或合并操作的一部分进行更新。 中的引用 `cq:tags` 属性在以下情况下自动更新： `cq:tags` 例如，通过页面属性对话框更新属性。
+标记垃圾收集器是一种后台服务，用于清理隐藏和未使用的标记。 隐藏和未使用的标记是以下标记 `/content/cq:tags` 具有 `cq:movedTo` 属性和，而不是在内容节点上使用。 他们数为零。 通过这种延迟删除过程，内容节点(即 `cq:tags` 属性)不必作为移动或合并操作的一部分进行更新。 中的引用 `cq:tags` 属性在以下情况下自动更新： `cq:tags` 例如，通过页面属性对话框更新属性。
 
 默认情况下，标记垃圾回收器每天运行一次。 这可以在以下位置配置：
 
@@ -168,4 +168,4 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 >[!NOTE]
 >
->新语言需要是AEM认可的语言之一，即它需要作为以下节点提供 `/libs/wcm/core/resources/languages`.
+>新语言需要是AEM认可的语言之一，也就是说，它需要作为以下节点提供 `/libs/wcm/core/resources/languages`.

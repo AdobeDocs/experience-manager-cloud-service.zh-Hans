@@ -2,9 +2,9 @@
 title: 快速站点创建和前端自定义
 description: 了解快速站点创建工具如何使用站点模板、主题和前端管道来快速部署新站点并将前端开发脱钩。
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '325'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 ## 快速站点创建历程 {#quick-site-creation-journey}
 
-有关快速站点创建工具的工作原理的完整概述，以及使用这些强大工具立即开始部署和自定义您自己的站点，请查看 [快速站点创建历程。](/help/journey-sites/quick-site/overview.md)
+要全面了解快速站点创建工具的工作方式，并立即开始使用这些强大工具部署和自定义您自己的站点，请查看 [快速站点创建历程](/help/journey-sites/quick-site/overview.md).
 
 ## 其他资源 {#additional-resources}
 

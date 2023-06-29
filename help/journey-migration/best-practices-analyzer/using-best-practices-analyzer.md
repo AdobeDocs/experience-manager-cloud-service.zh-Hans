@@ -2,9 +2,9 @@
 title: 使用 Best Practices Analyzer
 description: 使用 Best Practices Analyzer
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2479'
+source-wordcount: '2474'
 ht-degree: 46%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 46%
 * 版本6.1及更高版本的AEM实例支持BPA。
 
   >[!NOTE]
-  >请参阅 [在AEM 6.1上安装](#installing-on-aem61) 了解在AEM 6.1上安装BPA的特殊要求。
+  >参见 [在AEM 6.1上安装](#installing-on-aem61) 了解在AEM 6.1上安装BPA的特殊要求。
 
 * BPA可以在任何环境中运行，但最好在 *暂存* 环境。
 
@@ -107,7 +107,7 @@ ht-degree: 46%
    ![图像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >不应忽略ACS Commons调查结果。 请参阅 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。
+   >不应忽略ACS Commons调查结果。 参见 [文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) 以确定与AEMas a Cloud Service的兼容性。
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -144,7 +144,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 每个发现结果都分配有一个重要性级别，以指示粗略的操作优先级。
 
 >[!NOTE]
->要了解有关每个发现结果类别的更多信息，请参阅 [模式检测器类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+>要详细了解每个发现结果类别，请参阅 [模式检测器类别](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 请参阅下表，了解重要性级别：
 
@@ -192,7 +192,7 @@ HTTP 接口可用于多种方法。
 
 一种简单的方法是，在您已经以管理员身份登录 AEM 的同一浏览器中打开一个浏览器选项卡。您可以在该浏览器选项卡中输入 URL，并让浏览器显示或下载结果。
 
-您还可以使用命令行工具，如 `curl` 或 `wget`，以及任何 HTTP 客户端应用程序。如果不将浏览器选项卡用于经过身份验证的会话，则必须在注释中提供管理用户名和密码。
+也可以使用命令行工具，例如 `curl` 或 `wget` 和任何HTTP客户端应用程序。 如果不将浏览器选项卡用于经过身份验证的会话，则必须在注释中提供管理用户名和密码。
 
 以下是如何实现此操作的示例：
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`。

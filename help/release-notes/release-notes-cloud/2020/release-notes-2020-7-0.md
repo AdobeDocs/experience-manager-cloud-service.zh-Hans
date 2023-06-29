@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2020.7.0版as a Cloud Service发行说明。”
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 76%
+source-wordcount: '1033'
+ht-degree: 73%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 76%
 
 AEM Commerce现在可在Cloud Service上使用。
 
-请参阅 [AEM Commerceas a Cloud Service快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 了解更多详细信息。
+参见 [AEM Commerceas a Cloud Service快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) 了解更多详细信息。
 
 ## 核心组件 {#core-components}
 
@@ -66,7 +66,7 @@ AEM Commerce现在可在Cloud Service上使用。
 * 推出了新的 [PDF 查看器组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html)。
 
 * 核心组件的加速移动页面 (AMP) 支持功能现已可用。通过输入来自 Google 移动设备搜索结果的站点，可实现页面即时转换，这有助于提高用户参与度和 SEO，从而实现更快速的客户体验。
-有关更多详细信息，请参阅[核心组件的 AMP 支持](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)。
+参见 [核心组件的AMP支持](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 了解更多详细信息。
 
 * 与 [Adobe 客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)版本 1.0.2 的兼容性。
 
@@ -93,7 +93,7 @@ AEM Commerce现在可在Cloud Service上使用。
 
 * 现在支持绑定身份验证的专用 Maven 存储库。
 
-* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多详细信息，请参阅使用 Java 11 支持。
+* Cloud Manager 内部版本容器现在同时支持 Java 8 和 Java 11。有关更多详细信息，请参阅使用Java 11支持。
 
 ### 错误修复 {#bug-fixes-cm}
 
@@ -137,7 +137,7 @@ AEM Commerce现在可在Cloud Service上使用。
 
 * 无法在 Adobe Experience Manager (AEM) 6.1 上运行早期版本的云就绪分析器 (CRA)。明确向管理员组中的用户增加了允许他们运行 CRA 的相关支持。
 
-  有关更多详细信息，请参阅[在 AEM 6.1 上安装 CRA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)。
+  参见 [在AEM 6.1上安装CRA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) 了解更多详细信息。
 
 * 摘要报告上显示的到期时间戳不正确。
 

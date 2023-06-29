@@ -3,9 +3,9 @@ title: AEMas a Cloud Service2022.5.0版中迁移工具的发行说明
 description: AEMas a Cloud Service2022.5.0版中迁移工具的发行说明
 feature: Release Information
 exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
-source-git-commit: 01c4a21b980918ba99ac174419d80b577bc96dda
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 15%
 
 ---
@@ -53,4 +53,4 @@ Cloud Acceleration Manager的发布日期是2022年6月2日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager现在允许用户启动和管理内容传输，以便在迁移项目中将内容从客户的AEM实例（内部部署或Adobe Managed Services）移动到AEMas a Cloud Service。 请参阅 [使用内容传输卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) 了解更多详细信息。
+* Cloud Acceleration Manager现在允许用户启动和管理内容传输，以便在迁移项目中将内容从客户的AEM实例（内部部署或Adobe Managed Services）移动到AEMas a Cloud Service。 参见 [使用内容传输卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) 了解更多详细信息。

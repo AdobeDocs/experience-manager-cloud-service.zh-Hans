@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 版的发行说明。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 86%
+source-wordcount: '949'
+ht-degree: 82%
 
 ---
 
@@ -102,8 +102,8 @@ ht-degree: 86%
 ### 新增功能 {#what-is-new-foundation}
 
 * [存储库浏览器](/help/implementing/developing/tools/repository-browser.md)现在提供了一个路径输入字段，可用于直接跳转到存储库层次结构中的特定文件夹
-* Sling内容分发(SCD)现在支持显式“无效”操作，以便在不发布内容的情况下使内容无效。 有关更多详细信息，请参阅 [AEM as a Cloud Service 中的缓存](/help/implementing/dispatcher/caching.md#explicit-invalidation)页面。
-* AEM as a Cloud Service 现在提供 mod_macro。请参阅[此表](/help/implementing/dispatcher/disp-overview.md)以查看支持的 Apache 模块的列表。
+* Sling内容分发(SCD)现在支持显式“无效”操作，以便在不发布内容的情况下使内容无效。 参见 [AEMas a Cloud Service中的缓存](/help/implementing/dispatcher/caching.md#explicit-invalidation) 页面，了解更多详细信息。
+* AEM as a Cloud Service 现在提供 mod_macro。参见 [此表](/help/implementing/dispatcher/disp-overview.md) 以获取支持的Apache模块的列表。
 
 ### AEM as a Cloud Service SDK Dispatcher 工具增强功能 {#dispatcher-tools-enhancements}
 
@@ -112,7 +112,7 @@ ht-degree: 86%
 
 ### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}
 
-* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
+* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 参见 [Unified Shell上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 了解更多详细信息。
 
 ## Adobe Learning Manager 连接器 {#learn-manage}
 
@@ -120,7 +120,7 @@ ht-degree: 86%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 月度发行版本的完整列表。
+您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月发布的完整列表。
 
 ## 迁移工具 {#migration-tools}
 

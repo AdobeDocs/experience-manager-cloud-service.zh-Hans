@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的就绪阶段
 description: 本页概述了Cloud Acceleration Manager中的就绪阶段。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1049'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 5%
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >请参阅在Cloud Acceleration Manager中创建和管理项目，以了解更多信息。
+   >请参阅在Cloud Acceleration Manager中创建和管理项目以了解更多信息。
 
 ## 使用最佳实践分析卡 {#best-practices-analysis}
 
@@ -62,7 +62,7 @@ ht-degree: 5%
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. 查看并探索CAM中的最佳实践分析仪表板。 请参阅以下部分 [审核最佳实践分析报告](#analysis-report) 了解更多详细信息。
+1. 查看并探索CAM中的最佳实践分析仪表板。 参见 [审核最佳实践分析报告](#analysis-report) 了解更多详细信息。
 
    >[!NOTE]
    >上传新报告会重置所有评估。
@@ -158,7 +158,7 @@ ht-degree: 5%
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->请参阅 [解释Best Practices Analyzer报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 了解调查结果类别和重要性级别。
+>参见 [解释Best Practices Analyzer报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) 了解调查结果类别和重要性级别。
 
 #### 最佳实践评估 {#best-practices-assessment}
 

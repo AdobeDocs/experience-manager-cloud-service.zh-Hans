@@ -2,10 +2,10 @@
 title: AEM 快速站点创建历程
 description: 从这里开始引导式历程，通过易用的 AEM 快速站点创建工具来简化 AEM 站点的前端开发并在不具备 AEM 后端知识的情况下快速自定义您的站点。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 91%
+source-wordcount: '1034'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 ## 简介 {#introduction}
 
-AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者可以使用站点编辑器轻松创建数字体验，并使用站点控制台组织内容，同时能够实时查看AEM跨渠道交付给受众的内容。
+AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者可以使用站点编辑器轻松创建数字体验，并使用 Sites 控制台组织内容，同时能够实时查看 AEM 通过不同的渠道交付给受众的内容。
 
 借助 AEM 快速站点创建工具，非开发人员可以使用站点模板从头开始快速创建新站点。创建后，还可利用快速站点创建工具快速自定义 AEM 站点的主题和样式（JavaScript、CSS 和静态资源）。这样一来，无需了解 AEM 的前端开发人员既可独立于内容创建者工作，又可与内容创建者并行工作。AEM 管理员只需下载站点主题并将它提供给前端开发人员，后者会使用他们喜欢的工具来自定义站点主题，再将更改提交到 AEM 代码存储库，随后进行部署。
 
@@ -37,7 +37,7 @@ AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者�
 
 ## 受众 {#audience}
 
-此历程列出了自定义 AEM Sites 主题的要求、步骤和方法。其主要受众是前端开发人员，他们无需了解 AEM。但是，为了说明整个过程，该历程涉及假定具有基本AEM Sites和Cloud Manager知识的管理员。 在实践中，多个人员可以充当多个角色，此历程支持来自管理员和前端开发人员的观点。
+此历程列出了自定义 AEM Sites 主题的要求、步骤和方法。其主要受众是前端开发人员，他们无需了解 AEM。但是，为了说明整个流程，在此历程中，已假定管理员基本了解 AEM Sites 和 Cloud Manager。在实践中，多个人员可以充当多个角色，此历程支持来自管理员和前端开发人员的观点。
 
 | 角色 | 描述 | 历程中的角色 |
 |---|---|---|
@@ -52,20 +52,20 @@ AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者�
 
 | # | 文章 | 描述 | 负责角色 |
 |---|---|---|--|
-| 0 | AEM 快速站点创建历程 | 本文档 | AEM和Cloud Manager管理员 |
+| 0 | AEM 快速站点创建历程 | 本文档 | AEM 和 Cloud Manager 管理员 |
 | 1 | [了解 Cloud Manager 和快速站点创建工作流](cloud-manager.md) | 了解 Cloud Manager 以及它如何将新的快速站点创建流程联系起来。 | AEM 管理员 |
 | 2 | [从模板创建站点](create-site.md) | 了解如何使用站点模板快速创建新的 AEM 站点。 | AEM 管理员 |
 | 3 | [设置您的管道](pipeline-setup.md) | 创建前端管道来管理站点主题的自定义。 | Cloud Manager 管理员 |
 | 4 | [向前端开发人员授予访问权限](grant-access.md) | 将前端开发人员载入 Cloud Manager 以便他们能够访问 AEM 站点 Git 存储库和管道。 | Cloud Manager 管理员 |
 | 5 | [检索 Git 存储库访问信息](retrieve-access.md) | 了解前端开发人员如何使用 Cloud Manager 访问 Git 存储库信息。 | 前端开发人员 |
-| 6 | [自定义站点主题](customize-theme.md) | 了解如何使用实时AEM内容构建、自定义和测试站点主题。 | 前端开发人员 |
+| 6 | [自定义站点主题](customize-theme.md) | 了解如何使用实时 AEM 内容构建、自定义和测试站点主题。 | 前端开发人员 |
 | 7 | [部署自定义主题](deploy-theme.md) | 了解如何使用管道部署站点主题。 | 前端开发人员 |
 
 ## 后续内容 {#what-is-next}
 
 您现在已准备好开始您的 Adobe 快速站点创建历程。
 
-* 如果您是 AEM 或 Cloud Manager 管理员、同时担任前端开发人员和管理员角色或只想了解 AEM 中的端到端流程，请在开始历程时，首先参阅[了解 Cloud Manager](cloud-manager.md)，如下所述。
+* 如果您是AEM或Cloud Manager管理员、同时担任前端开发人员和管理员角色，或者您只想了解AEM中的端到端流程，请从历程的开头开始 [了解Cloud Manager](cloud-manager.md) 如下所述。
 * 如果您只负责前端开发，并且会与 AEM 和 Cloud Manager 管理员进行交互，则可以直接跳转至[检索 Git 存储库访问信息](retrieve-access.md)以获取对 AEM Git 存储库的访问权限并开始进行自定义。
 * 如果您已了解 AEM Sites 和 Cloud Manager 的协作方式，并且希望直接从配置开始操作，则可以[直接跳至“从模板创建新站点”](create-site.md)。
 

@@ -2,9 +2,9 @@
 title: as a Cloud Service在Screens中创建视频演绎版
 description: 本页介绍如何在Screensas a Cloud Service中创建视频演绎版。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 1. 在Screens Content Provider中导航到您的渠道。
 
    >[!NOTE]
-   >请参阅 [使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) 了解更多详细信息。
+   >参见 [使用Screens内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) 了解更多详细信息。
 
 1. 单击左侧导航栏中的“工具”部分，然后单击 **资产** 然后单击 **处理配置文件**.
 

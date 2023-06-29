@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager中的实施阶段
 description: 本页概述了Cloud Acceleration Manager中的实施阶段。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 4%
+source-wordcount: '662'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 4%
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->请参阅 [在Cloud Acceleration Manager中创建和管理项目](getting-started-cam.md#create-project) 了解更多信息。
+>参见 [在Cloud Acceleration Manager中创建和管理项目](getting-started-cam.md#create-project) 了解更多信息。
 
 
 ## 使用本地开发卡 {#local-development}
@@ -63,7 +63,7 @@ ht-degree: 4%
 >[!NOTE]
 >查看这些选项卡中的内容，了解Best Practices Analyzer未涵盖的一些其他区域。
 
-此 **调度程序** 选项卡提供了有关如何构建AEMas a Cloud ServiceApache和Dispatcher配置的信息，以及如何在部署到云环境之前在本地验证和运行该配置的信息。 它还介绍了在云环境中进行调试。
+此 **调度程序** 选项卡提供有关如何构建AEMas a Cloud ServiceApache和Dispatcher配置的信息，以及如何在部署到云环境之前在本地验证和运行该配置的信息。 它还介绍了在云环境中进行调试。
 
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
@@ -105,9 +105,9 @@ AEMas a Cloud Service部署卡提供所有相关内容，可帮助您将代码�
    >迁移集在长时间不活动后过期。 参见 [迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 了解详细信息。
 
    >[!NOTE]
-   >参见 [先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 和 [最佳实践和准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) ，然后再使用内容传输工具。
+   >参见 [先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hans) 和 [最佳实践和准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) ，然后再使用内容传输工具。
 
-1. 下载并安装内容传输工具以填充迁移集并完成内容传输的提取阶段。 审核 [内容传输工具快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) 以了解如何使用内容传输工具。
+1. 下载并安装内容传输工具以填充迁移集并完成内容传输的提取阶段。 审核 [内容传输工具快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans) 以了解如何使用内容传输工具。
 
 1. 要将内容从迁移集摄取到AEMas a Cloud Service上的环境中，您必须开始摄取。 导航到 **引入作业** 并单击 **新引入**. 审核 [将内容引入目标](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) 这样您就可以了解如何完成内容传输的摄取阶段。
 

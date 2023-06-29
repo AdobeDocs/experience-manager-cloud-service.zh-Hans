@@ -2,10 +2,10 @@
 title: 更新内容片段以进行优化的 GraphQL 筛选
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中更新内容片段以进行优化的 GraphQL 筛选，从而进行 Headless 内容投放。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 97%
+source-wordcount: '908'
+ht-degree: 93%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 97%
       <td>所有 </td>
       <td> </td>
       <td>变量 </td>
-      <td>用于在迁移后保存内容片段数量的批次大小。<br>这与在一个批次中保存到存储库的CF数量相关，并且可用于优化写入存储库的次数。 </td>
+      <td>用于在迁移后保存内容片段数量的批次大小。<br>这与在一个批次中保存到存储库的 CF 数量有关，并且可以用于优化对存储库的写入次数。 </td>
      </tr>
      <tr>
       <td>4</td>
@@ -99,7 +99,7 @@ ht-degree: 97%
       <td>所有 </td>
       <td> </td>
       <td>变量 </td>
-      <td>处理剩余内容片段直到下一个限制的时间间隔（秒）<br>此时间间隔也被视为开始作业之前的等待时间，以及处理每个后续 CF_MIGRATION_LIMIT 个 CF 之间的延迟。<br>(*)</td>
+      <td>处理剩余内容片段直至下一个限制的时间间隔（秒）<br>此间隔还被视为启动作业之前的等待时间，以及处理每个后续CF_MIGRATION_LIMIT数CF之间的延迟。<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -146,7 +146,7 @@ ht-degree: 97%
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   使用 Splunk 启用对环境日志的访问的客户可以使用下面的示例查询来监控升级过程。有关启用 Splunk 记录的详细信息，请参阅[调试生产和阶段](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage)页面。
+   使用 Splunk 启用对环境日志的访问的客户可以使用下面的示例查询来监控升级过程。有关启用Splunk日志记录的详细信息，请参阅 [调试生产和暂存](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 页面。
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -224,7 +224,7 @@ ht-degree: 97%
 
 1. 验证更新程序的完成情况。
 
-   您可以使用 Cloud Manager 开发人员控制台中的存储库浏览器来检查内容片段数据，从而验证更新的成功完成情况。
+   您可以使用 Cloud Manager Developer Console 中的存储库浏览器来检查内容片段数据，从而验证更新的成功完成情况。
 
    * 在第一次完整迁移之前，`cfGlobalVersion` 属性将不存在。
 因此，JCR 节点 `/content/dam` 上此属性的值为 `1`，确认迁移完成情况。

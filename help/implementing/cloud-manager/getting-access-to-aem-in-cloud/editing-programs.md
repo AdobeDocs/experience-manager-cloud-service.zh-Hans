@@ -2,16 +2,16 @@
 title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 94%
+source-wordcount: '520'
+ht-degree: 93%
 
 ---
 
 # 编辑程序 {#editing-programs}
 
-具有必要权限的用户可以编辑[在您的组织中创建的生产程序](creating-production-programs.md)以及在您的企业中创建的[沙盒程序。](creating-sandbox-programs.md)通过编辑程序，您可以：
+具有必要权限的用户可以编辑 [在您的组织中创建的生产程序](creating-production-programs.md) 和 [在您的组织中创建的沙盒程序。](creating-sandbox-programs.md)通过编辑程序，您可以：
 
 * 将 Sites 解决方案添加到具有 Assets 的现有程序，反之亦然。
 * 从具有 Sites 和 Assets 的现有计划中删除 Sites 或 Assets。
@@ -59,11 +59,11 @@ ht-degree: 94%
 
 无论何时编辑程序，包括添加或删除解决方案或插件，这些更改都将在下次部署后生效。
 
-如果您的生产程序启用了增强安全性，则您可以 **增强的安全性** 选项卡位于 **编辑项目群** 窗口，以确认该功能对该程序是否处于活动状态。
+如果您的生产程序启用了增强安全性，则&#x200B;**编辑程序**&#x200B;窗口中会提供一个额外的&#x200B;**增强安全性**&#x200B;选项卡以确认该程序的功能已激活。
 
 ![程序的增强安全性激活](assets/edit-program-enhanced.png)
 
-一旦创建了程序，就不能修改此设置。有关增强安全选项的更多信息，请参阅[创建生产程序](creating-production-programs.md)文档。
+一旦创建了程序，就不能修改此设置。有关增强安全性选项的详细信息，请参阅 [创建生产程序](creating-production-programs.md) 文档。
 
 ## 删除沙盒程序 {#delete-sandbox-program}
 

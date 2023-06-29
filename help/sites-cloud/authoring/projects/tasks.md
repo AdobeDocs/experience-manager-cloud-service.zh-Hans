@@ -2,9 +2,9 @@
 title: 处理任务
 description: 任务表示要在内容上完成的工作项，并在项目中用于确定当前任务的完整性级别
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '576'
 ht-degree: 19%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 19%
 
 * **任务列表：**&#x200B;单击“任务拼贴”时，将显示任务列表。此列表包含与项目相关的所有任务的详细信息。
 
-两者都列出了工作流任务以及您直接在中创建的任务 **任务** 图块。
+两者都列出了工作流任务和您直接在中创建的任务 **任务** 图块。
 
 ### 任务拼贴 {#task-tile}
 

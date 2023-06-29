@@ -2,10 +2,10 @@
 title: 迁移到AEM Commerce Integration Framework (CIF)加载项
 description: 如何从旧版本迁移到AEM Commerce Integration Framework (CIF)加载项
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 28%
+source-wordcount: '490'
+ht-degree: 23%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 ## CIF加载项
 
-对于 Experience Manager as a Cloud Service，CIF 加载项是 Adobe Commerce 和第三方 Commerce 唯一支持的 Commerce 集成解决方案。CIF 加载项自动为 Experience Manager as a Cloud Service 上的客户部署，无需手动部署。请参阅 [AEM Commerce as a Cloud Service 快速入门](getting-started.md)。
+对于Experience Manageras a Cloud Service，CIF加载项是Adobe Commerce和第三方商务解决方案唯一支持的商务集成解决方案。 CIF 加载项自动为 Experience Manager as a Cloud Service 上的客户部署，无需手动部署。请参阅 [AEM Commerce as a Cloud Service 快速入门](getting-started.md)。
 
 要支持部署CIFAdobe的项目，请提供 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components).
 

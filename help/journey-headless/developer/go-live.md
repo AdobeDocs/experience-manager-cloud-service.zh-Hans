@@ -2,10 +2,10 @@
 title: 如何使用 Headless 应用程序上线
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何通过在 Git 中获取本地代码并将其移动到 CI/CD 管道的 Cloud Manager Git 来实时部署 Headless 应用程序。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 94%
+source-wordcount: '1066'
+ht-degree: 97%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 94%
    * 尽可能使用持久查询。
    * 提供超过 600 秒的 CDN TTL，以便 CDN 缓存它们。
    * AEM 可以计算模型更改对现有查询的影响。
-* 在低内容更改率和高内容更改率之间拆分JSON文件/GraphQL查询，以便减少到CDN的客户端流量并分配更高的TTL。 这可以最大程度地减少使用源服务器重新验证 JSON 的 CDN。
+* 将 JSON 文件/GraphQL 查询拆分为低内容变化率和高内容变化率，以减少客户端到 CDN 的流量并分配更高的 TTL。这可以最大程度地减少使用源服务器重新验证 JSON 的 CDN。
 * 要主动使来自 CDN 的内容无效，请使用软清除。这可让 CDN 重新下载内容，而不会导致缓存未命中。
 
 ## 缩短下载 Headless 内容的时间 {#improve-download-time}
@@ -101,7 +101,7 @@ ht-degree: 94%
 
 ### 借助支持记录错误 {#logging-a-bug-with-support}
 
-要在您需要进一步帮助的情况下通过支持高效地记录错误，请执行以下操作：
+要在需要进一步帮助的情况下借助支持有效记录错误，请执行以下操作：
 
 * 如有必要，可拍摄问题屏幕快照
 * 记录重现问题的方法
@@ -124,7 +124,7 @@ ht-degree: 94%
 
 ### 探究单页应用程序 {#explore-spa}
 
-但 AEM 中的 Headless 存储不需要止步于此。您可能还记得，在[历程的快速入门部分](getting-started.md#integration-levels)中，我们简要讨论了 AEM 如何支持 Headless 交付和传统全栈模型，并支持结合了两者优点的混合模型。
+不过，AEM中的Headless商店不需要止步于此。 您可能还记得，在[历程的快速入门部分](getting-started.md#integration-levels)中，我们简要讨论了 AEM 如何支持 Headless 交付和传统全栈模型，并支持结合了两者优点的混合模型。
 
 如果您的项目需要这种灵活性，请继续进行历程的可选附加部分[如何使用 AEM 创建单页应用程序 (SPA)。](create-spa.md)
 

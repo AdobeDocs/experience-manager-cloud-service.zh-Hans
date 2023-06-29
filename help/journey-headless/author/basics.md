@@ -2,10 +2,10 @@
 title: 学习创作基础知识
 description: 了解使用内容片段为 Headless CMS 创作内容的概念和机制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 95%
+source-wordcount: '1712'
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ AEM 安装通常包含三个环境：
 
 ### 登录 {#signing-in}
 
-与大多数系统一样，您需要登录。 作为作者，您会获得：
+与大多数系统一样，您需要登录。作为作者，您会获得：
 
 * 用户（帐户）名
 * 密码
@@ -56,7 +56,7 @@ AEM 安装通常包含三个环境：
 
 首次登录时，简短的在线教程将重点介绍用户界面的一些主要功能。
 
-之后，您可以使用导航面板访问 AEM 的关键区域。对于内容片段，您可以使用 **内容片段** 控制台(对于某些操作，您还将使用 **资产** 控制台)。
+之后，您可以使用导航面板访问 AEM 的关键区域。对于内容片段，您要使用&#x200B;**内容片段**&#x200B;控制台（对于某些操作，您还将使用 **Assets** 控制台）。
 
 可以通过依次选择左上角的 Adobe 图标和小型指南针图标来打开导航面板。
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## 创作内容片段 {#authoring-content-fragments}
 
-虽然这是对 AEM 用户界面 (UI) 的非常简要的介绍，但希望您有机会尝试一下。现在，我们开始探究您真正感兴趣的内容 – Headless 的内容片段。
+所以，这是对AEM用户界面(UI)的非常快速的介绍，但希望您有机会尝试一下它。 现在，我们开始探究您真正感兴趣的内容 – Headless 的内容片段。
 
 我们必须从头到尾探究这些内容，但您的实例可能已创建文件夹和/或片段，并且它们可能位于不同的位置。准则是一样的。
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 您可以在创建片段后立即打开它，或者通过从“内容片段”控制台（也可以从 Assets 控制台）中选择它来将其打开。
 
-在编辑器首次打开时，您将看到：
+当编辑器首次打开时，您会看到：
 
 * 左侧的图标列表 – 可利用这些图标访问各种功能区域。编辑器在&#x200B;**变体**&#x200B;选项卡中打开，将在此处完成大部分编辑工作。您可能还对&#x200B;**批注**&#x200B;和&#x200B;**元数据**&#x200B;选项卡感兴趣。
 
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 例如：
 
-* 只需要多条信息（其中一些信息具有特定类型）的片段。对于 Headless 内容，引用很重要，您将在历程的后面部分中了解相关信息。
+* 只需要多条信息（其中一些信息具有特定类型）的片段。对于Headless内容，引用是关键，您稍后可以在旅程中了解这些内容。
 
   ![内容片段编辑器 – 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 >
 >有关更多详细信息，您可以参阅“变体 – 创作内容片段”。
 
-#### 您（可能）无需担心的事情 {#what-you-probably-do-not-need-to-worry-about}
+#### 您（可能）无需担心的问题 {#what-you-probably-do-not-need-to-worry-about}
 
-好吧，这似乎是一个有点奇怪的部分，但在您打开内容片段编辑器并开始浏览之后，您将看到各种选项，它们（可能）不适用于您（作为内容作者）的 Headless 历程。因此，这只是一个快速提示，说明您应该能够在 Headless 上下文中忽略的内容：
+好的，这可能看起来有点奇怪，但在您打开内容片段编辑器并开始探索后，您可以看到各种选项（可能）不适用于您作为内容作者的Headless历程。 因此，这只是一个快速提示，说明您应该能够在 Headless 上下文中忽略的内容：
 
 * **内容片段模型**
 
@@ -258,7 +258,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **更新页面引用**
 
-  可从 **...**（省略号）下拉列表中执行此操作。Headless 作者对它并不感兴趣，因为它与页面创作有关。
+  此操作可从以下位置获取： **...** （省略号）下拉列表。 Headless 作者对它并不感兴趣，因为它与页面创作有关。
 
 ### 发布 {#publishing}
 
@@ -272,7 +272,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 >[!NOTE]
 >
->您也可以从&#x200B;**资源**&#x200B;或&#x200B;**内容片段**»控制台发布您的片段。
+>您也可以从&#x200B;**Assets**&#x200B;或&#x200B;**内容片段**»控制台发布您的片段。
 
 ## 后续内容 {#whats-next}
 
@@ -282,7 +282,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 此页面主要基于&#x200B;**站点**&#x200B;控制台，但许多/大多数功能也用于在 **Assets** 控制台下创作&#x200B;**内容片段**。
+* [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 此页面主要基于&#x200B;**Sites**&#x200B;控制台，但许多/大多数功能也用于在 **Assets** 控制台下创作&#x200B;**内容片段**。
 
    * [“导航”面板](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 

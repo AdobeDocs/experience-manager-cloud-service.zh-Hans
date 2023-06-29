@@ -4,10 +4,10 @@ description: 了解如何解决与 MSM 相关的最常见问题并获得这些�
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 87%
+source-wordcount: '761'
+ht-degree: 91%
 
 ---
 
@@ -55,7 +55,7 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 这些属性包含的信息应反映在 UI 中，但在进行问题排查时，在 MSM 操作发生时直接在存储库中观察 MSM 行为可能会很有用。
 
-了解这些属性也很有用，这样您就可以查询存储库并找出处于特定状态的页面集。 例如：
+了解这些属性对于查询您的存储库并找出处于特定状态的页面集也很有用。例如：
 
 * `select * from cq:LiveSync` 返回所有 Live Copy 根页面。
 
@@ -67,7 +67,7 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 MSM 同步操作是高度可配置的。在转出期间修改哪些属性或组件直接取决于这些配置的属性。
 
-有关此主题的更多信息，请参阅[本文](best-practices.md)。
+参见 [本文](best-practices.md) 以了解有关此主题的详细信息。
 
 ### 如何删除一组作者的转出权限？ {#remove-rollout-permissions}
 
@@ -80,11 +80,11 @@ MSM 同步操作是高度可配置的。在转出期间修改哪些属性或组�
 
 ### 为什么我会看到带有后缀“_msm_moved”的 Live Copy 页面？ {#moved-pages}
 
-如果转出 Blueprint 页面，它将更新其 Live Copy 页面或创建一个新的 Live Copy 页面（如果该页面不存在）（例如，首次转出或手动删除 Live Copy 页面时）。
+如果转出Blueprint页面，它将更新其Live Copy页面或创建Live Copy页面（如果该页面不存在）（例如，首次转出或手动删除Live Copy页面时）。
 
-但在后一种情况下，如果页面不包含 `cq:LiveRelationship` 属性存在且名称相同，则在创建Live Copy页面之前，会相应地重命名此页面。
+但在后一种情况下，如果存在不带 `cq:LiveRelationship` 属性的同名页面，则在创建 Live Copy 页面之前，会相应地重命名该页面。
 
-默认情况下，转出需要一个链接的Live Copy页面（Blueprint的更新将转出到该页面），或者没有页面（在创建Live Copy页面时）。
+默认情况下，转出需要一个链接的 Live Copy 页面（Blueprint 的更新会部署到该页面），或者没有页面（在创建 Live Copy 页面时）。
 
 如果找到“独立”页面，MSM 会选择重命名该页面，并创建一个单独的、链接的 Live Copy 页面。
 

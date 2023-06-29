@@ -2,10 +2,10 @@
 title: Cloud Manager 环境变量
 description: 标准环境变量可以通过 Cloud Manager 进行配置和管理，并提供给运行时环境，以便在 OSGi 配置中使用。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 93%
+source-wordcount: '1018'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->您必须是 [**部署管理员** 角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) 添加或修改环境变量。
+>您必须是&#x200B;[**部署管理员**&#x200B;角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)成员，才能添加或修改环境变量。
 
 1. 登录 Adobe Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
 1. Cloud Manager 列出了可用的各种项目。选择要管理的项目。
@@ -59,7 +59,7 @@ ht-degree: 93%
 
 1. 选择&#x200B;**保存**&#x200B;来保存变量。
 
-状态为&#x200B;**更新**&#x200B;的指标显示在表的顶部和新添加的变量旁边，表示正在使用配置更新环境。 完成后，新的环境变量将显示在表中。
+状态为&#x200B;**更新**&#x200B;的指标显示在表的顶部和新添加的变量旁边，表示正在使用配置更新环境。 完成后，新的环境变量会显示在表中。
 
 ![更新变量](assets/updating-variables.png)
 
@@ -88,9 +88,9 @@ ht-degree: 93%
 
    ![编辑变量](assets/edit-variable.png)
 
-1. 完成所有必需的配置更改后，请选择&#x200B;**保存**。
+1. 完成所有必需的配置更改后，选择 **保存**.
 
-[当添加变量时](#add-variables)，状态为&#x200B;**更新**&#x200B;的指标显示在表的顶部和新更新的变量旁边，表示正在使用配置更新环境。 完成后，更新的环境变量将显示在表中。
+[当添加变量时](#add-variables)，状态为&#x200B;**更新**&#x200B;的指标显示在表的顶部和新更新的变量旁边，表示正在使用配置更新环境。 完成后，更新的环境变量会显示在表中。
 
 >[!TIP]
 >
@@ -128,8 +128,8 @@ ht-degree: 93%
 
 ### OSGi 配置 {#osgi}
 
-可在 [OSGi 配置](/help/implementing/deploying/configuring-osgi.md)中使用常规环境变量和密钥。
+常规环境变量和密钥均可用于 [OSGi配置](/help/implementing/deploying/configuring-osgi.md).
 
 ### 管道变量 {#pipeline}
 
-除了环境变量，还有在构建阶段公开的管道变量。[可在此处详细了解管道变量。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+除了环境变量，还有在构建阶段公开的管道变量。[在此处了解有关管道变量的更多信息](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

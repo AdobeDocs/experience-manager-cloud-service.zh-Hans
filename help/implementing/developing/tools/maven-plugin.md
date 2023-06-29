@@ -2,9 +2,9 @@
 title: Adobe内容包Maven插件
 description: 使用内容包Maven插件部署AEM应用程序
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1838'
 ht-degree: 6%
 
 ---
@@ -135,7 +135,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### ls {#ls}
 
-列出部署到的包 [包管理器。](/help/implementing/developing/tools/package-manager.md)
+列出部署到的包 [包管理器](/help/implementing/developing/tools/package-manager.md).
 
 #### 参数 {#parameters-2}
 
@@ -143,7 +143,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### rm {#rm}
 
-从删除包 [包管理器。](/help/implementing/developing/tools/package-manager.md)
+从删除包 [包管理器](/help/implementing/developing/tools/package-manager.md).
 
 #### 参数 {#parameters-3}
 
@@ -229,7 +229,7 @@ rm目标的所有参数都在 [常用参数](#common-parameters) 部分。
 
 ## 在包中包含缩略图图像或属性文件 {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-替换默认软件包配置文件以自定义软件包属性。 例如，包含缩略图图像以区分中的包 [包管理器。](/help/implementing/developing/tools/package-manager.md)
+替换默认软件包配置文件以自定义软件包属性。 例如，包含缩略图图像以区分中的包 [包管理器](/help/implementing/developing/tools/package-manager.md).
 
 源文件可以位于文件系统中的任何位置。 在POM文件中，定义生成资源以将源文件复制到 `target/vault-work/META-INF` 以包含在包中。
 
@@ -238,7 +238,7 @@ rm目标的所有参数都在 [常用参数](#common-parameters) 部分。
 ```xml
 <build>
     <resources>
-        <!-- vault META-INF resources (thumbnail etc.) -->
+        <!-- vault META-INF resources (thumbnail and so on) -->
         <resource>
             <directory>${basedir}/src/main/content/META-INF</directory>
             <targetPath>../vault-work/META-INF</targetPath>

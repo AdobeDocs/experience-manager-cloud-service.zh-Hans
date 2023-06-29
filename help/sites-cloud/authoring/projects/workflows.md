@@ -2,10 +2,10 @@
 title: 使用项目工作流
 description: 各种项目工作流都可开箱即用。
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 46%
+ht-degree: 41%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 46%
 
 根据您选择的项目模板，您具有某些可用的工作流：
 
-|  | **简单项目** | **翻译项目** |
+|   | **简单项目** | **翻译项目** |
 |---|:-:|:-:|
 | 项目审批工作流 | x |  |
 | 请求启动项 | x |  |
 | 请求登陆页面 | x |  |
-| 请求电子邮件 | x |  |
+| 请求电子邮件 | x | |
 | DAM 创建语言副本&amp;ast; |  | x |
-| DAM 创建和翻译语言副本&amp;ast; |  | x |
+| DAM 创建和翻译语言副本&amp;ast; |   | x |
 
 >[!NOTE]
 >
->&amp;ast;这些工作流不会从项目中的&#x200B;**工作流**&#x200B;拼贴启动。参见 [正在创建资产的语言副本。](/help/sites-cloud/administering/translation/managing-projects.md)
+>&amp;ast;这些工作流不会从项目中的&#x200B;**工作流**&#x200B;拼贴启动。参见 [创建资产的语言副本](/help/sites-cloud/administering/translation/managing-projects.md).
 
 无论您选择哪个工作流，启动和完成工作流的步骤都是相同的。 只有步骤会更改。
 
@@ -70,4 +70,4 @@ ht-degree: 46%
 
 ## 为资产创建（和翻译）语言副本工作流 {#create-and-translate-language-copy-workflow-for-assets}
 
-[为资产创建语言副本](/help/assets/translate-assets.md)中详细介绍了&#x200B;**创建语言副本**&#x200B;和&#x200B;**创建和翻译语言副本**&#x200B;工作流。
+此 **创建语言副本** 和 **创建和翻译语言副本** 中详细介绍了这些工作流 [为资源创建语言副本](/help/assets/translate-assets.md).

@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 95%
+source-wordcount: '991'
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
 
 >[!NOTE]
 >
->从2022年4月开始，OracleJDK成为开发和运行AEM应用程序的默认JDK。 Cloud Manager的构建过程会自动切换为使用OracleJDK，即使已在Maven工具链中明确选定替代选项也是如此。 请参阅2022年4月发行说明。
+>从 2022 年 4 月开始，Oracle JDK 会成为用于开发和运行 AEM 应用程序的默认 JDK。Cloud Manager 构建过程会自动切换为使用 Oracle JDK，即使已在 Maven 工具链中明确选定替代选项也是如此。请参阅 2022 年 4 月发行说明。
 
 #### 替代 Maven 执行 JDK 版本 {#alternate-maven-jdk-version}
 
@@ -229,4 +229,4 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 >[!TIP]
 >
->有关前端构建环境的详细信息，请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)。
+>有关前端构建环境的详细信息，请参阅 [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).

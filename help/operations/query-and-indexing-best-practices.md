@@ -3,10 +3,10 @@ title: 查询和索引最佳实践
 description: 了解如何根据 Adobe 的最佳实践指南优化索引和查询。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 95%
+source-wordcount: '1556'
+ht-degree: 94%
 
 ---
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service 提供查询性能工具，该工具旨在支持实现高
 
 为了支持创建高效的 JCR 查询和索引定义，[JCR 查询备忘表](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet)可供下载，并可在开发过程中用作参考。
 
-它包含 QueryBuilder、XPath 和 SQL-2 的示例查询，并涵盖了在查询性能方面表现不同的多个场景。它还提供了关于如何构建或定制 Oak 索引的建议。本备忘单的内容适用于 AEM as a Cloud Service 以及 AEM 6.5。
+它包含 QueryBuilder、XPath 和 SQL-2 的示例查询，并涵盖了在查询性能方面表现不同的多个场景。它还提供了关于如何构建或定制 Oak 索引的建议。本备忘单的内容适用于AEMas a Cloud Service和AEM 6.5。
 
 ## 具有大型结果集的查询 {#queries-with-large-result-sets}
 

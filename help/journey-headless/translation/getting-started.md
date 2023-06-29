@@ -2,10 +2,10 @@
 title: AEM Headless 翻译快速入门
 description: 了解如何组织您的 Headless 内容以及 AEM 的翻译工具的工作原理。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。“基本操作”文档不是历程的一部分，因此，请在完成后返回此页面。
+>如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。基本处理文档不是历程的一部分。 因此，完成后，请返回此页面。
 
 ### 工具 {#tools}
 
@@ -64,7 +64,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 
 ## AEM 存储 Headless 内容的方式 {#headless-content-in-aem}
 
-对于翻译专家来说，深入了解 AEM 管理 Headless 内容的方式并不重要。但是，在您以后使用AEM翻译工具时，熟悉基本概念和术语会很有帮助。 最重要的是，您需要了解自己的内容及其结构，以便能够有效地翻译该内容。
+对于翻译专家来说，深入了解 AEM 管理 Headless 内容的方式并不重要。但是，在您以后使用 AEM 的翻译工具时，熟悉基本概念和术语会很有帮助。最重要的是，您需要了解自己的内容及其结构，以便有效地翻译该内容。
 
 ### 内容模型 {#content-models}
 
@@ -153,7 +153,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
         |- ...
 ```
 
-您应该记下内容的特定路径，因为稍后需要使用此路径来配置翻译。
+您应记下内容的特定路径，因为稍后需要使用此路径来配置翻译。
 
 >[!NOTE]
 >

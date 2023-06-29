@@ -2,9 +2,9 @@
 title: 从源中提取内容
 description: 从源中提取内容
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '700'
 ht-degree: 27%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 27%
 请按照以下步骤从内容传输工具中提取迁移集：
 
 >[!NOTE]
->如果使用Amazon S3、Azure数据存储或文件数据存储作为数据存储类型，则可以运行可选的预复制步骤以显着加快提取阶段。 预复制步骤对于第一次完全提取和摄取最有效。 请参阅 [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 了解更多详细信息。
+>如果使用Amazon S3、Azure数据存储或文件数据存储作为数据存储类型，则可以运行可选的预复制步骤以显着加快提取阶段。 预复制步骤对于第一次完全提取和摄取最有效。 参见 [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) 了解更多详细信息。
 
 1. 从中选择一个迁移集 **内容传输** 向导并单击 **Extract** 以开始提取。
 
@@ -64,7 +64,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。如果您已使用预复制步骤进行第一次完整提取，则可以跳过预复制以进行后续增补提取（如果增补迁移集大小小于200 GB），因为它可能会增加整个过程的时间。
->此外，至关重要的是，现有内容的内容结构不应从初次提取时更改为运行增补提取时。 无法对自初始提取以来结构已更改的内容运行增补。 请确保在迁移过程中对此进行限制。
+>此外，至关重要的是，现有内容的内容结构不应从初次提取时更改为运行增补提取时。 无法对自初始提取以来结构已更改的内容运行增补。 确保在迁移过程中对此进行限制。
 
 完成提取流程后，可以使用增补提取方法传输增量内容。
 

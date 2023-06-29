@@ -4,10 +4,10 @@ description: 了解翻译规则如何标识需要翻译的内容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 94%
+source-wordcount: '1291'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 >[!TIP]
 >
->如果您不熟悉如何翻译内容，请参阅我们的 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
 
 ## 内容片段和翻译规则 {#content-fragments}
 
@@ -163,7 +163,7 @@ ht-degree: 94%
 
 在翻译规则 UI 中，您可以：
 
-1. **添加上下文**，可添加路径。
+1. **添加上下文**，可让您添加路径。
 
    ![添加翻译上下文](../assets/add-translation-context.png)
 
@@ -186,7 +186,7 @@ ht-degree: 94%
 
 **`isDeep`** 适用于节点过滤器且默认情况下为 true。它检查节点（或其祖先）是否在过滤器中包含具有指定属性值的属性。如果为 false，则仅检查当前节点。
 
-例如，即使父节点具有属性，子节点也会添加到翻译作业中 `draftOnly` 设置为true可标记草稿内容。 此时 `isDeep` 将发挥作用，并检查父节点是否已将属性 `draftOnly` 设置为 true 并排除这些子节点。
+例如，即使父节点将属性 `draftOnly` 设置为 true 以标记草稿内容，子节点也会添加到翻译作业中。此时 `isDeep` 将发挥作用，并检查父节点是否已将属性 `draftOnly` 设置为 true 并排除这些子节点。
 
 在编辑器中，您可以在&#x200B;**过滤器**&#x200B;选项卡中选中/取消选中 **Is Deep**。
 

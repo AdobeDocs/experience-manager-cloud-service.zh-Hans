@@ -2,10 +2,10 @@
 title: 将内容片段导出到 Adobe Target
 description: 将内容片段导出到 Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 97%
+source-wordcount: '2222'
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 97%
 
 1. 您必须[将 AEM 与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)。
 
-<!-- link rewriter - targets in content-fragments-customizing don't exist yet
+<!-- link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -175,7 +175,7 @@ ht-degree: 97%
 
    * **租户 ID**：租户 ID
 
-   * **IMS 配置**：从下拉列表中选择所需的配置
+   * **IMS配置**：从下拉列表中选择所需的配置
 
    * **API 类型**：默认值为 REST（已弃用 XML）
 
@@ -324,7 +324,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    ![导出到 Adobe Target](assets/cfm-export-target-01.png)
 
-   <!-- this note doesn't seem to be accurate for CFs -->
+   <!-- this note does not seem to be accurate for CFs -->
 
    <!--
    
@@ -364,7 +364,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在 Adobe Target 中使用内容片段 {#using-your-content-fragments-in-adobe-target}
 
-执行上述任务后，将在 Target 中的选件页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)，了解可执行的操作。
+执行上述任务后，将在 Target 中的选件页面上显示内容片段。参见 [特定Target文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) 了解可以实现的目标。
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 更多资源 {#further-resources}
 
-有关更多信息，另请参阅：
+有关更多信息，请参阅以下内容：
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

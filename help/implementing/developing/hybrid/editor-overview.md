@@ -2,10 +2,10 @@
 title: SPA 编辑器概述
 description: 本文全面概述了 SPA 编辑器及其工作原理，包括 SPA 编辑器在 AEM 中进行交互的详细工作流程。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -31,11 +31,11 @@ AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中�
 
 ## 设计 {#design}
 
-SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素。此操作将委派给 SPA 框架。从 JCR 中以 JSON 数据结构形式获取子组件或模型的呈现。之后，根据该结构将 SPA 组件添加到页面。此行为将页面组件的初始主体构图与非 SPA 对应项区分开来。
+SPA的页面组件不通过JSP或HTL文件提供其子组件的HTML元素。 此操作将委派给 SPA 框架。从 JCR 中以 JSON 数据结构形式获取子组件或模型的呈现。之后，根据该结构将 SPA 组件添加到页面。此行为将页面组件的初始主体构图与非 SPA 对应项区分开来。
 
 ### 页面模型管理 {#page-model-management}
 
-页面模型的解析和管理工作将委派给提供的 `PageModel` 库。SPA必须使用页面模型库，以便SPA编辑器能够初始化和创作它。 页面模型库通过 `aem-react-editable-components` npm 间接提供给 AEM 页面组件。页面模型是 AEM 和 SPA 之间的解释器，因此必须始终存在。创作页面时，会附加一个库 `cq.authoring.pagemodel.messaging` 必须添加才能启用与页面编辑器的通信。
+页面模型的解析和管理工作将委派给提供的 `PageModel` 库。SPA 必须使用页面模型库才能由 SPA 编辑器进行初始化和创作。页面模型库通过 `aem-react-editable-components` npm 间接提供给 AEM 页面组件。页面模型是 AEM 和 SPA 之间的解释器，因此必须始终存在。在创作页面时，必须额外添加一个 `cq.authoring.pagemodel.messaging` 库以便支持与页面编辑器的通信。
 
 如果 SPA 页面组件继承自页面核心组件，则可通过两个选项使 `cq.authoring.pagemodel.messaging` 客户端库类别可用：
 
@@ -64,7 +64,7 @@ SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素
 * 页面编辑器和 SPA 之间的通信采用的是 JSON 而不是 HTML。
 * 页面编辑器通过 iframe 和消息 API 向 SPA 提供最新版本的页面模型。
 * 页面模型管理器告知编辑器它已准备好进行编辑，并将页面模型作为 JSON 结构进行传递。
-* 编辑器不更改或访问正在创作的页面的 DOM 结构，而是提供最新的页面模型。
+* 编辑器不会更改甚至访问所创作页面的DOM结构，而是提供最新的页面模型。
 
 ![SPA 工作流](assets/workflow.png)
 
@@ -78,7 +78,7 @@ SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素
 1. SPA 是在一个单独的框架中加载的。
 1. SPA 请求 JSON 内容并在客户端呈现组件。
 1. SPA 编辑器检测呈现的组件并生成叠加。
-1. 作者单击“叠加”，显示组件的编辑工具栏。
+1. 作者单击叠加，这将显示组件的编辑工具栏。
 1. SPA 编辑器通过向服务器发出 POST 请求来保存编辑内容。
 1. SPA 编辑器向 SPA 编辑器请求更新的 JSON，后者通过 DOM 事件发送到 SPA。
 1. SPA 重新呈现相关组件，并更新其 DOM。
@@ -147,7 +147,7 @@ SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素
 
 ## 要求和限制 {#requirements-limitations}
 
-要使作者能够使用页面编辑器编辑 SPA 的内容，必须实施您的 SPA 应用程序以便与 AEM SPA Editor SDK 进行交互。请参阅[使用 React 在 AEM 中开始使用 SPA](getting-started-react.md) 文档，了解开始使用 SPA 的最低要求。
+要使作者能够使用页面编辑器编辑 SPA 的内容，必须实施您的 SPA 应用程序以便与 AEM SPA Editor SDK 进行交互。请参阅 [在AEM中使用React快速入门SPA](getting-started-react.md) 记录运行所需了解的最少信息。
 
 ### 支持的框架 {#supported-frameworks}
 
@@ -160,7 +160,7 @@ SPA 编辑器 SDK 支持以下最低版本：
 
 ### 其他框架 {#additional-frameworks}
 
-可以实施其他 SPA 框架以与 AEM SPA Editor SDK 结合使用。请查看 [SPA Blueprint](blueprint.md) 此文档介绍了框架在创建由模块、组件和服务组成的框架特定层以使用AEM SPA编辑器时必须满足的要求。
+可以实施其他 SPA 框架以与 AEM SPA Editor SDK 结合使用。请参阅 [SPA Blueprint](blueprint.md) 此文档介绍了框架在创建由模块、组件和服务组成的框架特定层以使用AEM SPA编辑器时必须满足的要求。
 
 ### 使用多个选择器 {#multiple-selectors}
 
@@ -173,7 +173,7 @@ SPA 编辑器 SDK 支持以下最低版本：
 1. 在包含文本 HTML 的容器包装器元素上设置属性（可以是任意属性）。对于 WKND SPA Project，它是一个 `<div>` 元素，并且使用的选择器是 `data-rte-editelement`。
 1. 在指向该选择器的相应 AEM 文本组件的 `cq:InplaceEditingConfig` 上设置配置 `editElementQuery`，例如 `data-rte-editelement`。这可让编辑器知道哪个 HTML 元素包装了 HTML 文本。
 
-有关富文本编辑器的 `editElementQuery` 属性和配置的更多信息，请参阅[配置富文本编辑器。](/help/implementing/developing/extending/rich-text-editor.md)
+欲知关于 `editElementQuery` 属性和富文本编辑器的配置，请参见 [配置富文本编辑器](/help/implementing/developing/extending/rich-text-editor.md).
 
 ### 限制 {#limitations}
 

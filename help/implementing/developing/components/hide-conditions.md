@@ -2,7 +2,7 @@
 title: 使用隐藏条件
 description: 隐藏条件可用于确定是否呈现组件资源。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -49,7 +49,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 ## 示例 {#example}
 
-隐藏条件的示例可在整个AEM和 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 尤其是。 例如，考虑 [列出核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在中实施 [wknd教程。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+隐藏条件的示例可在整个AEM和 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 尤其是。 例如，考虑 [列出核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在中实施 [wknd教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 [使用模板编辑器](/help/sites-cloud/authoring/features/templates.md)，模板作者可以在“设计”对话框中定义列表组件的哪些选项可供页面作者使用。 例如，是否允许列表为静态列表、子页面的列表、已标记页面的列表等。 可以启用或禁用。
 

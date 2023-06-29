@@ -2,7 +2,7 @@
 title: SPA 中的复合组件
 description: 了解如何创建自己的复合组件，这些组件由使用AEM单页应用程序(SPA)编辑器的其他组件组成。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -118,7 +118,7 @@ function Home() {
 }
 ```
 
-这将在编辑器中为文本和图像显示一个空占位符。 使用编辑器输入这些属性的值时，它们存储在指定的页面路径(即 `/content/wknd-spa/home`  在根级别使用 `itemPath`.
+这将在编辑器中为文本和图像显示一个空占位符。 使用编辑器输入这些值的值时，它们存储在指定的页面路径中， `/content/wknd-spa/home`  在根级别使用 `itemPath`.
 
 ![编辑器中的复合卡组件](assets/composite-card.png)
 
@@ -156,7 +156,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 添加已创建的 `wknd-spa/components/imagecard` 组件到容器组件允许的组件 [在页面模板中。](/help/sites-cloud/authoring/features/templates.md)
+1. 添加已创建的 `wknd-spa/components/imagecard` 组件到容器组件允许的组件 [在页面模板中](/help/sites-cloud/authoring/features/templates.md).
 
 现在， `imagecard` 组件可直接添加到AEM编辑器中的容器。
 

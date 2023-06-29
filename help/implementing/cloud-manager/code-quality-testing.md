@@ -2,10 +2,10 @@
 title: 代码质量测试
 description: 了解管道代码质量测试的工作方式以及其提高部署质量的方式。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 97%
+source-wordcount: '1161'
+ht-degree: 87%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 代码质量测试根据一组质量规则评估应用程序代码。 它是代码质量专用管道的主要目的，并在所有生产和非生产管道的构建步骤之后立即执行。
 
-请参阅[配置您的 CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)文档，了解更多有关不同类型管道的信息。
+参见 [配置CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 了解有关不同类型管道的更多信息。
 
 ## 代码质量规则 {#understanding-code-quality-rules}
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->可以[使用此链接](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下载规则的完整列表。
+>您可以下载规则的完整列表 [通过此链接](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 ### 三层评级 {#three-tiered-gate}
 
@@ -60,16 +60,16 @@ ht-degree: 97%
 | 范围 | 在以下公式中结合使用单元测试行覆盖率和条件覆盖率来定义：<br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = 在运行单元测试时已评估为 `true` 至少一次的条件</li><li>`CF` = 在运行单元测试时已评估为 `false` 至少一次的条件</li><li>`LC` = 覆盖的行 = lines_to_cover - uncovered_lines</li><li>`B` = 条件总数</li><li>`EL` = 可执行的行总数 (lines_to_cover)</li></ul> | 重要 | &lt; 50% |
 | 跳过的单元测试 | 跳过的单元测试数 | 信息 | > 1 |
 | 未结问题 | 整体问题类型 – 漏洞、错误和代码异味 | 信息 | > 0 |
-| 重复行 | 定义为重复块中涉及的行数。 在以下条件下，代码块被视为重复。<br>非 Java 项目：<ul><li>应有至少 100 个连续和重复的令牌。</li><li>这些令牌应至少分布在： </li><li>30 个代码行（对于 COBOL） </li><li>20 个代码行（对于 ABAP） </li><li>10 个代码行（对于其他语言）</li></ul>Java 项目：<ul></li><li> 无论令牌和行的数量如何，都应至少有 10 个连续和重复的语句。</li></ul>检测重复项时将忽略缩进和字符串文本的差异。 | 信息 | > 1% |
+| 重复行 | 定义为重复块中涉及的行数。 在以下条件下，代码块被视为重复。<br>非 Java 项目：<ul><li>应有至少 100 个连续和重复的令牌。</li><li>这些令牌应至少分布在： </li><li>30 个代码行（对于 COBOL） </li><li>20 个代码行（对于 ABAP） </li><li>10 个代码行（对于其他语言）</li></ul>Java 项目：<ul></li><li> 无论令牌和行的数量如何，都应至少有 10 个连续和重复的语句。</li></ul>检测重复项时，缩进和字符串文字中的差异将被忽略。 | 信息 | > 1% |
 | Cloud Service 兼容性 | 确定的 Cloud Service 兼容性问题数 | 信息 | > 0 |
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅 [SonarQube 的量度定义](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)。
+>参见 [SonarQube的量度定义](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) 了解更多详细定义。
 
 >[!NOTE]
 >
->要了解有关 [!UICONTROL Cloud Manager] 执行的自定义代码质量规则的更多信息，请参阅[自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)文档。
+>要了解有关由运行的自定义代码质量规则的更多信息，请执行以下操作 [!UICONTROL Cloud Manager]，请参见 [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## 处理误报 {#dealing-with-false-positives}
 
@@ -103,10 +103,10 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->虽然最佳实践是尽可能创建具体的 `@SuppressWarnings` 注释（仅注释导致问题的特定语句或块），但可以添加类级别注释。
+>虽然最佳做法是使 `@SuppressWarnings` 注释尽可能具体，即仅注释导致问题的特定语句或块，可以添加类级别注释。
 
 >[!NOTE]
->虽然没有明确的安全测试步骤，但在代码质量步骤中会评估与安全相关的代码质量规则。 请参阅 [AEM as a Cloud Service 安全性概述](/help/security/cloud-service-security-overview.md)文档，了解更多有关 Cloud Service 的安全性。
+>虽然没有明确的安全测试步骤，但在代码质量步骤中会评估与安全相关的代码质量规则。 参见 [AEMas a Cloud Service安全概述](/help/security/cloud-service-security-overview.md) 以详细了解Cloud Service中的安全性。
 
 ## 内容包扫描优化 {#content-package-scanning-optimization}
 
@@ -116,11 +116,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-如果只有在 `myco-all-1.0.0-SNAPSHOT.zip` 是两个跳过的内容包，则会扫描两个嵌入包而不是“所有”内容包。
+如果 `myco-all-1.0.0-SNAPSHOT.zip` 中的唯一项目是两个跳过的内容包，则会扫描两个嵌入包而不是“所有”内容包。
 
 对于产生数十个嵌入包的项目，此优化已被证明可将每次管道执行时间节省 10 分钟以上。
 
-当“所有”内容包包含跳过的内容包和 OSGi 捆绑包的组合时，可能会出现特殊情况。 例如，如果 `myco-all-1.0.0-SNAPSHOT.zip` 包含前面提到的两个嵌入式包以及一个或多个 OSGi 捆绑包，则仅使用 OSGi 捆绑包构建一个新的最小内容包。 此包始终名为 `cloudmanager-synthetic-jar-package`，并且包含的捆绑包将放置在 `/apps/cloudmanager-synthetic-installer/install` 中。
+当“所有”内容包包含跳过的内容包和 OSGi 捆绑包的组合时，可能会出现特殊情况。 例如，如果 `myco-all-1.0.0-SNAPSHOT.zip` 包含前面提到的两个嵌入包和一个或多个OSGi包，然后构建一个仅包含OSGi包的新的最小内容包。 此包始终名为 `cloudmanager-synthetic-jar-package`，并且包含的捆绑包将放置在 `/apps/cloudmanager-synthetic-installer/install` 中。
 
 >[!NOTE]
 >

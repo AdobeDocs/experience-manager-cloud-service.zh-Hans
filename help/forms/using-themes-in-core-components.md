@@ -2,7 +2,7 @@
 title: 创建和使用主题
 description: 您可以使用主题来使使用核心组件的自适应表单风格化并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->不应将自适应表单主题与 [自适应表单模板。](/help/forms/template-editor.md) 自适应表单主题仅包含自适应表单的样式信息。 自适应表单模板定义表单结构和初始内容，并包含用于创建新内容的主题 [自适应表单。](/help/forms/creating-adaptive-form.md)
+>不应将自适应表单主题与 [自适应表单模板](/help/forms/template-editor.md). 自适应表单主题仅包含自适应表单的样式信息。 自适应表单模板定义表单结构和初始内容，并包含用于创建新内容的主题 [自适应表单](/help/forms/creating-adaptive-form.md).
 
 ## 使用核心组件在自适应Forms中使用画布主题 {#using-theme-in-adaptive-form}
 

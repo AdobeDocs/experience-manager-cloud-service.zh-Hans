@@ -1,13 +1,13 @@
 ---
 title: 内容片段 – 配置浏览器
-description: 了解如何在配置浏览器中启用内容片段和GraphQL功能，以使用AEM Headless投放功能。
+description: 了解如何在配置浏览器中启用内容片段和 GraphQL 功能，从而可利用 AEM 无头交付功能。
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 34%
+ht-degree: 42%
 
 ---
 
@@ -61,8 +61,8 @@ ht-degree: 34%
 1. 使用&#x200B;**“创建”**&#x200B;来打开对话框，您需要：
 
    1. 指定&#x200B;**标题**。
-   1. 此 **名称** 将成为存储库中的节点名称。
-      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定。](/help/implementing/developing/introduction/naming-conventions.md)
+   1. **名称**&#x200B;会成为存储库中的节点名称。
+      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定](/help/implementing/developing/introduction/naming-conventions.md).
       * 如有必要，您可以对其进行调整。
    1. 要启用其用法，请选择
       * **内容片段模型**

@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的 CDN
 description: AEM as a Cloud Service 中的 CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1022'
 ht-degree: 25%
 
 ---
@@ -34,7 +34,7 @@ AEM管理的CDN可满足大多数客户的性能和安全要求。 对于发布�
 
 默认情况下，对于AEM托管的CDN设置，所有公共流量都可以进入发布服务，无论对于生产环境还是非生产（开发和暂存）环境。 您可以通过Cloud Manager用户界面限制给定环境（例如，按IP地址范围限制暂存）的发布服务流量。
 
-请参阅[管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)了解详情。
+参见 [管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) 了解更多信息。
 
 >[!CAUTION]
 >

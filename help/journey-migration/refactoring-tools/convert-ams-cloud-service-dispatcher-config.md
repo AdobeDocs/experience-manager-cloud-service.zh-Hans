@@ -1,10 +1,10 @@
 ---
 title: 将 AMS 转换为 Adobe Experience Manager as a Cloud Service Dispatcher 配置
 description: 将 AMS 转换为 Adobe Experience Manager as a Cloud Service Dispatcher 配置
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 44%
+source-wordcount: '1278'
+ht-degree: 39%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 44%
 
    * 移除任何名为 base_rewrite.rules 和 xforwarded_forcessl_rewrite.rules 的文件，并记得移除虚拟主机文件中引用这些文件的 Include 语句。
 
-   * 如果 conf.d/rewrites 现在包含单个文件，则应将其重命名为 rewrite.rules，并且不要忘记修改虚拟主机文件中引用该文件的 Include 语句。
+   * 如果conf.d/rewrites现在包含单个文件，则应将其重命名为rewrite.rules，并且不要忘记修改虚拟主机文件中引用该文件的Include语句。
 
    * 但是，如果该文件夹包含多个特定于虚拟主机的文件，则应将其内容复制到虚拟主机文件中引用这些文件的Include语句中。
 
@@ -59,7 +59,7 @@ ht-degree: 44%
 
    1. 移除任何名为 ams_default.vars 的文件，并记得移除虚拟主机文件中引用这些文件的 Include 语句。
 
-   1. 如果 conf.d/variables 现在包含单个文件，则应将其重命名为 custom.vars，并且不要忘记修改虚拟主机文件中引用该文件的 Include 语句。
+   1. 如果conf.d/variables现在包含单个文件，则应将其重命名为custom.vars，并且不要忘记修改虚拟主机文件中引用该文件的Include语句。
 
    1. 但是，如果该文件夹包含多个特定于虚拟主机的文件，则应将其内容复制到虚拟主机文件中引用这些文件的Include语句中。
 

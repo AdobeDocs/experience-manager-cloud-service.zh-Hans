@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 84%
+source-wordcount: '1142'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 84%
 
 ## 简介 {#introduction}
 
-通用编辑器支持编辑任何实施中任何内容的任何方面，因此您可以提供卓越的体验、提高内容速度并提供一流的开发人员体验。
+Universal Editor 支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
 
 为此，它为内容作者提供了一个直观的 UI，只需进行最少培训即可轻松使用它开始编辑内容。
 
@@ -29,17 +29,17 @@ ht-degree: 84%
 
 ## 准备应用程序 {#prepare-app}
 
-要使用通用编辑器为应用程序创作内容，应用程序必须由开发人员检测才能支持该编辑器。
+要使用 Universal Editor 为应用程序创作内容，应用程序必须由开发人员进行检测以支持编辑器。
 
 >[!TIP]
 >
->请参阅文档 [AEM Universal Editor 快速入门](getting-started.md)，查看有关如何配置 AEM 应用程序以使用 Universal Editor 的示例。
+>参见 [AEM中的通用编辑器快速入门](getting-started.md) 有关如何配置AEM应用程序以使用通用编辑器的示例。
 
 ## 登录 {#sign-in}
 
 在应用程序经过检测可使用 Universal Editor 后，您将需要登录 Universal Editor。您将需要一个 Adobe ID 才能登录并[访问 Universal Editor](getting-started.md#request-access)。
 
-登录后，在 [地址栏。](#address-bar) 这样你就可以开始 [编辑内容。](#edit-content)
+登录后，在[地址栏中输入要编辑的页面的 URL。](#address-bar)以便开始[编辑内容。](#edit-content)
 
 ## 了解 UI {#ui}
 
@@ -84,19 +84,19 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### 通知 {#notifications}
 
-此图标带有当前分配的未完成数量的标记 [通知。](/help/implementing/cloud-manager/notifications.md)
+此图标带有当前分配的未完成数量的标记 [通知](/help/implementing/cloud-manager/notifications.md).
 
 ![通知](assets/notifications.png)
 
 #### 用户属性 {#user-properties}
 
-点按或单击代表用户的图标来访问用户设置。如果您未配置用户图片，则会随机分配一个图标。
+点按或单击代表用户的图标来访问用户设置。如果您尚未配置用户图片，系统会随机分配一个图标。
 
 ![用户属性](assets/user-properties.png)
 
 ### Universal Editor 标题 {#universal-editor-header}
 
-Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud 标题的正下方。](#experience-cloud-header)它为您提供了快速访问权限，以便导航到另一个页面进行编辑以及发布当前页面。
+Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud 标题的正下方。](#experience-cloud-header) 通过它，可快速导航到要编辑的其他页面并发布当前页面。
 
 ![Universal Editor 标题](assets/universal-editor-header.png)
 
@@ -132,7 +132,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 发布 {#publish}
 
-点按或单击发布按钮，以便您可以将更改发布到实时内容以供读者使用。
+点按或单击“发布”按钮可实时发布对内容的更改以供阅读器使用。
 
 ![“发布”按钮](assets/publish.png)
 
@@ -172,7 +172,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ## 编辑内容 {#editing-content}
 
-编辑内容是简单而直观的。In [编辑模式，](#edit-mode) 将鼠标悬停在编辑器中的内容上时，可编辑内容会以蓝色框突出显示。
+编辑内容是简单而直观的。在[编辑模式](#edit-mode)中，当您将鼠标悬停在编辑器中的内容上方时，可编辑内容会用蓝色框突出显示。
 
 ![可编辑内容子用蓝色框突出显示](assets/editable-content.png)
 
@@ -192,7 +192,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
-* [通用编辑器简介](introduction.md)  — 了解通用编辑器如何支持编辑任何实施中任何内容的任何方面，以便您能够提供卓越的体验、提高内容速度并提供一流的开发人员体验。
+* [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
 * [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [AEM Universal Editor 快速入门 ](getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。

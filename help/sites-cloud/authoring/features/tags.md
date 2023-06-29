@@ -2,10 +2,10 @@
 title: 使用标记
 description: 标记是一种对网站中的内容进行分类的快速轻松的方法
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 81%
+source-wordcount: '563'
+ht-degree: 74%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 81%
 
 标记是一种对网站中的内容进行分类的快速轻松的方法。 标记可以被视为关键字或标签，它们可以附加到页面、资产或其他内容以启用搜索来查找该内容和相关内容。
 
-* 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅“管理标记”。<!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* 有关标记框架以及在自定义应用程序中包括和扩展标记的信息，请参阅[针对开发人员的标记](/help/implementing/developing/introduction/tagging-framework.md)。
+* 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅管理标记。 <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* 参见 [为开发人员添加标记](/help/implementing/developing/introduction/tagging-framework.md) 有关标记框架以及在自定义应用程序中包括和扩展标记的信息。
 
 ## 使用标记的十大理由 {#ten-reasons-to-use-tagging}
 
@@ -47,7 +47,7 @@ ht-degree: 81%
 
 * 激活单个标记。
 
-   与页面一样，新创建的标记需要先激活，然后才能在发布环境中使用。
+  与页面一样，新创建的标记需要先激活，然后才能在发布环境中使用。
 
 >[!NOTE]
 >

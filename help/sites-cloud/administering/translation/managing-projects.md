@@ -4,10 +4,10 @@ description: 了解如何在 AEM 中创建和管理机器翻译项目和人工�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4085'
-ht-degree: 97%
+source-wordcount: '4078'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->如果您不熟悉如何翻译内容，请参阅我们的 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
 
 在将资源添加到翻译项目时，将为其创建翻译作业。作业提供用于管理对资源执行的人工翻译和机器翻译工作流的命令和状态信息。
 
@@ -42,9 +42,9 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 * 为 `/content/wknd/en/products` 页面及其所有子页面创建翻译项目，并以法语副本为目标。由于语言副本不包含 `/content/wknd/fr/products` 页面，因此，AEM 会立即将 `/content/wknd/en/products` 页面及其所有子页面复制到法语副本。这些副本也包含在翻译项目中。
 * 为 `/content/wknd/en` 页面及其所有子页面创建翻译项目，并以法语副本为目标。由于语言副本包含与 `/content/wknd/en` 页面对应的页面（语言根），因此，AEM 将复制 `/content/wknd/en` 页面及其所有子页面，并将它们添加到启动项。这些副本也包含在翻译项目中。
 
-## 站点控制台中的翻译 {#performing-initial-translations-and-updating-existing-translations}
+##  Sites 控制台中的翻译 {#performing-initial-translations-and-updating-existing-translations}
 
-可以直接从站点控制台创建或更新翻译项目。
+可以直接从 Sites 控制台创建或更新翻译项目。
 
 ### 使用“引用”面板创建翻译项目 {#creating-translation-projects-using-the-references-panel}
 
@@ -74,7 +74,7 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 
 ### 为新语言副本创建翻译项目 {#create-translation-projects-for-a-new-language-copy}
 
-1. 使用站点控制台选择要添加到翻译项目的页面。
+1. 使用 Sites 控制台选择要添加到翻译项目的页面。
 
 1. 利用工具栏，打开&#x200B;**引用**&#x200B;边栏。
 
@@ -96,7 +96,7 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 
 ### 为现有语言副本创建翻译项目 {#create-translation-projects-for-an-existing-language-copy}
 
-1. 使用站点控制台选择要添加到翻译项目的页面。
+1. 使用 Sites 控制台选择要添加到翻译项目的页面。
 
 1. 利用工具栏，打开&#x200B;**引用**&#x200B;边栏。
 
@@ -122,7 +122,7 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 
 与创建新项目时一样，在添加页面时，页面的副本会在必要时添加到启动项中，避免覆盖现有语言副本。（请参阅[为现有语言副本创建翻译项目](#performing-initial-translations-and-updating-existing-translations)。）
 
-1. 使用站点控制台选择要添加到翻译项目的页面。
+1. 使用 Sites 控制台选择要添加到翻译项目的页面。
 
 1. 利用工具栏，打开&#x200B;**引用**&#x200B;边栏。
 
@@ -150,7 +150,7 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 
 填充您的语言副本，使它包含您正在翻译的主语言的内容。您必须先为语言副本[创建语言根](preparation.md#creating-a-language-root)，然后再填充语言副本。
 
-1. 使用站点控制台选择用作源的主语言的语言根。
+1. 使用 Sites 控制台选择用作源的主语言的语言根。
 1. 通过单击或点按工具栏中的&#x200B;**引用**&#x200B;来打开引用边栏。
 
    ![引用](../assets/references.png)
@@ -172,7 +172,7 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 
 翻译内容的手动编辑可以同步回翻译管理系统 (TMS)，以训练其翻译记忆。
 
-1. 在站点控制台中，更新已翻译页面中的文本内容后，选择&#x200B;**更新翻译记忆库**。
+1. 在 Sites 控制台中，更新已翻译页面中的文本内容后，选择&#x200B;**更新翻译记忆库**。
 1. 列表视图显示每个已编辑的文本组件的源和翻译的并排比较。选择应将哪些翻译更新同步到翻译记忆库，然后选择&#x200B;**更新记忆库**。
 
 ![比较翻译记忆库的更改](../assets/update-translation-memory-compare.png)
@@ -194,13 +194,13 @@ AEM 会更新已配置的 TMS 的翻译记忆中现有字符串的翻译。
 
 ### 检查页面翻译状态 {#check-translation-status}
 
-可以在站点控制台的列表视图中选择一个属性，该属性指示页面是已翻译、正在翻译还是尚未翻译。
+可以在 Sites 控制台的列表视图中选择一个属性，该属性指示页面是已翻译、正在翻译还是尚未翻译。
 
-1. 在站点控制台中，切换到[列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
+1. 在站点控制台中，切换到 [列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. 点按或单击视图下拉列表中的&#x200B;**视图设置**。
 1. 在对话框中，选中&#x200B;**已翻译**&#x200B;属性，并点按或单击&#x200B;**更新**。
 
-站点控制台现在显示&#x200B;**已翻译**&#x200B;列，其中显示已列出页面的翻译状态。
+ Sites 控制台现在显示&#x200B;**已翻译**&#x200B;列，其中显示已列出页面的翻译状态。
 
 ![列表视图中的翻译状态](../assets/translation-status-list-view.png)
 
@@ -210,7 +210,7 @@ AEM 会更新已配置的 TMS 的翻译记忆中现有字符串的翻译。
 
 ### 了解项目控制台
 
-AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/authoring/projects/overview.md)如果您不熟悉 AEM 项目，请查看该文档。
+AEM中的翻译项目使用标准 [AEM项目控制台](/help/sites-cloud/authoring/projects/overview.md). 如果您不熟悉AEM项目，请查看该文档。
 
 与任何其他项目一样，翻译项目由显示项目任务概述的拼贴组成。
 
@@ -229,7 +229,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 ### 使用项目控制台创建翻译项目 {#creating-a-translation-project-using-the-projects-console}
 
-如果您更喜欢使用项目控制台而不是站点控制台，则可以手动创建翻译项目。
+如果您更喜欢使用项目控制台而不是 Sites 控制台，则可以手动创建翻译项目。
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 ### 将标记添加到翻译作业 {#adding-tags-to-a-translation-job}
 
-您可以将标记添加到翻译项目，类似于[将资源和页面添加到项目。](#adding-pages-assets-to-a-translation-job)只需选择&#x200B;**添加**&#x200B;菜单下的&#x200B;**标记**，然后执行相同的步骤。
+您可以将标记添加到翻译项目，类似于 [如何将资源和页面添加到项目](#adding-pages-assets-to-a-translation-job). 只需选择&#x200B;**添加**&#x200B;菜单下的&#x200B;**标记**，然后执行相同的步骤。
 
 ### 查看翻译项目详细信息 {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 ### 监控翻译作业状态 {#monitoring-the-status-of-a-translation-job}
 
-翻译项目的翻译作业拼贴提供了翻译作业的状态，以及作业中页面和资源的数量。
+翻译项目的翻译作业拼贴提供翻译作业的状态，以及作业中的页面和资产数量。
 
 ![翻译作业](../assets/translation-job.png)
 
@@ -344,7 +344,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 设定翻译作业的范围，从翻译服务提供商处获得翻译成本的估计值。在设定作业范围时，源文件将提交给翻译供应商，后者会将文本与其存储的翻译池（翻译记忆库）进行比较。通常，范围是需要翻译的字数。
 
-要获取有关范围设定结果的更多信息，请联系您的翻译供应商。
+要获取有关范围设定结果的更多信息，请与您的翻译供应商联系。
 
 >[!NOTE]
 >
@@ -374,7 +374,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 1. 在项目控制台中，选择翻译项目。
 1. 在工具栏上，点按或单击&#x200B;**开始翻译作业**。
-1. 在对话框中，查看已启动的作业列表，然后使用进行确认 **开始** 或中止 **取消**.
+1. 在对话框中，查看开始的作业的列表，然后通过&#x200B;**开始**&#x200B;进行确认，或通过&#x200B;**取消**&#x200B;进行中止。
 
 ### 取消翻译作业 {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 如果您选择&#x200B;**拒绝翻译**，则可以选择添加批注。
 
-如果拒绝内容，则会将内容发送回能够查看评论的翻译供应商。
+如果拒绝内容，则会将内容发送回翻译供应商，以便他们查看批注。
 
 ### 完成并存档翻译作业 {#completing-and-archiving-translation-jobs}
 
@@ -411,7 +411,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 ## 审查并使用已翻译的内容 {#reviewing-and-promoting-updated-content}
 
-您可以使用站点控制台审查内容、比较语言副本和激活内容。
+您可以使用 Sites 控制台审查内容、比较语言副本和激活内容。
 
 ### 提升更新的内容 {#promoting-updated-content}
 
@@ -436,14 +436,14 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 要将语言副本与语言母版进行比较，请执行以下操作：
 
-1. 在站点控制台中，导航到要比较的语言副本。
-1. 打开[引用边栏](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)。
+1. 在 Sites 控制台中，导航到要比较的语言副本。
+1. 打开 [引用边栏](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
 1. 在&#x200B;**副本**&#x200B;标题下，选择&#x200B;**语言副本**。
 1. 选择特定的语言副本，然后您可以单击&#x200B;**与母版比较**&#x200B;或&#x200B;**与上一个比较**（如果适用）。
 
    ![比较语言副本](../assets/language-copy-compare.png)
 
-1. 两个页面（启动项和源）并排打开。
+1. 此时会并列打开两个页面（启动页面和源页面）。
    * 有关使用此功能的完整信息，请参阅[页面差异](/help/sites-cloud/authoring/features/page-diff.md)。
 
 ## 移动或重命名源页面 {#move-source}

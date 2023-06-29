@@ -4,10 +4,10 @@ description: 一旦系统管理员设置了必要的云资源，就可以了解 
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 100%
+source-wordcount: '579'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 100%
 * 访问 Cloud Manager.
 * 登录 AEM as a Cloud Service 实例。
 
-恭喜！现在，您可以编写和发布 AEM 内容了。 请参阅[其他资源](#additional-resources)部分，了解有关如何在 AEM 中创作内容以及如何管理内容的更多详细信息。
+恭喜！现在，您可以编写和发布 AEM 内容了。 参见 [其他资源](#additional-resources) 部分，了解有关如何在AEM中创作内容以及如何管理内容的更多详细信息。
 
 如果您对开发人员和部署管理员如何为 AEM as a Cloud Service 创建和管理自定义应用程序感兴趣，请继续进行入门历程的第二个可选部分——[AEM 开发人员任务](developers.md)。
 

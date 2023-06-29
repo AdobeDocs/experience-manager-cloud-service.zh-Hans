@@ -2,10 +2,10 @@
 title: Cloud Manager 存储库
 description: 了解如何在 Cloud Manager 中创建、查看和删除 Git 存储库。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 96%
+source-wordcount: '575'
+ht-degree: 92%
 
 ---
 
@@ -32,13 +32,13 @@ ht-degree: 96%
 
    ![添加“存储库”对话框](/help/implementing/cloud-manager/assets/repos/repo-1.png)
 
-向导关闭时，您的新存储库将显示在表中。
+向导关闭时，您的新存储库会显示在表中。
 
 您可以在表中选择存储库，然后单击省略号按钮，然后选择&#x200B;**复制存储库 URL**、**查看和更新**&#x200B;或&#x200B;**删除**。
 
 ![存储库选项](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-在 Cloud Manager 中创建的存储库也可供您在添加或编辑管道时选择。 请参阅 [CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)文档，了解更多信息。
+在 Cloud Manager 中创建的存储库也可供您在添加或编辑管道时选择。 参见 [CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 了解更多信息。
 
 任何给定的管道都有一个主存储库或分支。 通过 [Git 子模块支持](#git-submodule-support)，可以在构建时包括许多二级分支。
 
@@ -51,7 +51,7 @@ ht-degree: 96%
 删除存储库将：
 
 * 使删除的存储库名称不可用于将来可能创建的新存储库。
-   * 错误消息 `Repository name should be unique within organization.` 在此类情况中显示。
+   * 在这种情况下，会显示错误消息 `Repository name should be unique within organization.`。
 * 使已删除的存储库在 Cloud Manager 中不可用，并且无法链接到管道。
 
 按照这些步骤删除 Cloud Manager 中的存储库。
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 这项技术是文档[使用多源 Git 存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)中所述解决方案的潜在替代方案，适用于习惯使用 Git 子模块且不想管理外部合并过程。
 
-例如，假设有三个存储库，每个存储库均包含一个名为 `main` 的分支。 在“主”存储库（即，在管道中配置的存储库）中，`main` 分支包含一个 `pom.xml` 文件，声明其他两个存储库所包含的项目。
+例如，假设有三个存储库，每个存储库均包含一个名为 `main` 的分支。 在主存储库（即，在管道中配置的存储库）中， `main` 分支具有 `pom.xml` 文件，声明包含在其他两个存储库中的项目。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -121,7 +121,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ### 限制和建议 {#limitations-recommendations}
 
-使用 Git 子模块时，请注意以下限制。
+使用Git子模块时，请注意以下限制。
 
 * Git URL 必须完全遵循上一节所述语法。
 * 仅支持分支的根目录中的子模块。

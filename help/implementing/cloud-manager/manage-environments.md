@@ -2,9 +2,9 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为Cloud Manager项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2274'
 ht-degree: 48%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 48%
 1. 在 **其他发布区域** 在下拉列表中，选择一个额外的区域。
 1. 所选区域将会添加到下拉列表下方，以指示其选择。
    * 点按或单击 `X` ，以便取消选择该区域。
-1. 从&#x200B;**附加发布区域**&#x200B;下拉列表中选择另一个区域以添加另一个地区。
+1. 从中选择其他区域 **其他发布区域** 下拉菜单以添加其他区域。
 1. 当您准备好创建环境时，点击或单击&#x200B;**保存**。
 
 ![选择多个区域](assets/select-multiple-regions.png)
@@ -157,13 +157,13 @@ Cloud Manager为每个AEMas a Cloud Service环境提供预览服务（作为额�
 
 ![预览服务及其允许列表](assets/preview-ip-allow.png)
 
-具有必要权限的用户必须在共享预览服务URL之前完成以下步骤，以确保访问它。
+具有必要权限的用户必须在共享预览服务 URL 之前完成以下步骤，才能访问它。
 
 1. 创建适当的IP允许列表，将其应用于预览服务，然后立即取消应用 `Preview Default [<envId>]` 允许列表。
 
    * 参见 [应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 了解更多详细信息。
 
-1. 使用更新 **IP 允许列表**&#x200B;工作流，移除默认 IP 并根据需要添加 IP。 请参阅[管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)了解详情。
+1. 使用更新 **IP 允许列表**&#x200B;工作流，移除默认 IP 并根据需要添加 IP。 参见 [管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) 了解更多信息。
 
 解锁预览服务的访问权限后，预览服务名称前面的锁定图标不再显示。
 
@@ -241,9 +241,9 @@ Cloud Manager为每个AEMas a Cloud Service环境提供预览服务（作为额�
 >
 >参见 [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) 如果您想了解AEMas a Cloud Service团队和产品配置文件如何能够授予和限制对您的许可Adobe解决方案的访问权限。
 
-## 访问开发人员控制台 {#accessing-developer-console}
+## 访问 Developer Console {#accessing-developer-console}
 
-从&#x200B;**环境**&#x200B;信息卡上环境的省略号菜单中选择&#x200B;**开发人员控制台**。 新选项卡将在您的浏览器中打开，登录页面指向 **开发人员控制台**.
+从&#x200B;**环境**&#x200B;信息卡上环境的省略号菜单中选择&#x200B;**Developer Console**。 新选项卡将在您的浏览器中打开，登录页面指向 **开发人员控制台**.
 
 ![登录到开发人员控制台](assets/environ-devconsole.png)
 

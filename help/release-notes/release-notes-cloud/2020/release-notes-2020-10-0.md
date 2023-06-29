@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2020.10.0版as a Cloud Service发行说明。”
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 26%
+source-wordcount: '1194'
+ht-degree: 25%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 26%
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* **[核心组件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)**：Adobe Experience Manager as a Cloud Service受益于对最新版本核心组件的自动更新。 版本2.12.0包括社区贡献的最新改进。 改进包括 [新的POST表单处理程序；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 能够包含自定义CSS、JavaScript和元数据 [通过上下文感知配置进行标记；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 实用工具，可简化自定义组件中的Adobe数据层集成。 请参阅 [更改列表](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 在2.12.0中。
+* **[核心组件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)**：Adobe Experience Manager as a Cloud Service受益于对最新版本核心组件的自动更新。 版本2.12.0包括社区贡献的最新改进。 改进包括 [新的POST表单处理程序；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data) 能够包含自定义CSS、JavaScript和元数据 [通过上下文感知配置进行标记；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading) 和 [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components) 实用工具，可简化自定义组件中的Adobe数据层集成。 请参阅 [更改列表](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) 在2.12.0中。
 
-* **[项目原型24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**：推荐的启动新Experience Manager项目的基础越来越好。 它现在包含新的 [Adobe客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)，选项 [在AMP中投放站点，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 和新 [扩展点以添加项目CSS/JS。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
+* **[项目原型24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)**：推荐的启动新Experience Manager项目的基础越来越好。 它现在包含新的 [Adobe客户端数据层](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)，选项 [在AMP中投放站点，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) 和新 [扩展点以添加项目CSS/JS。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
 
 * **[ContextHub文件夹](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：能够创建受众文件夹，以便轻松组织、查找和选择要用于ContextHub选件定位功能的受众区段。
 
@@ -63,9 +63,9 @@ ht-degree: 26%
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 发布了CIF Venia参考网站 — 2020.10.2，其中包括最新的CIF核心组件版本v1.4.0。请参阅 [CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 了解更多详细信息。
+* 发布了CIF Venia参考网站 — 2020.10.2，其中包括最新的CIF核心组件版本v1.4.0。参见 [CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 了解更多详细信息。
 
-* 发布了CIF核心组件v1.4.0。请参阅 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 了解更多详细信息。
+* 发布了CIF核心组件v1.4.0。参见 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-commerce}
 
@@ -89,7 +89,7 @@ Experience Manageras a Cloud Service2020.10.0中的Cloud Manager的发布日期�
 
 * 每个环境的环境变量数量已增加至 200 个。
 
-* “概述”页面上的“环境”信息卡现在最多可列出三个环境。 用户可以选择&#x200B;**全部显示**&#x200B;按钮导航到“环境”摘要页面，查看包含完整环境列表的表。 有关更多信息，请参阅[查看环境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)。
+* “概述”页面上的“环境”信息卡现在最多可列出三个环境。 用户可以选择&#x200B;**全部显示**&#x200B;按钮导航到“环境”摘要页面，查看包含完整环境列表的表。 参见 [查看环境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-cloud-manager}
 

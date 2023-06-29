@@ -2,16 +2,16 @@
 title: 编辑页面属性
 description: 为页面定义所需的属性
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 82%
+source-wordcount: '2341'
+ht-degree: 85%
 
 ---
 
 # 编辑页面属性 {#editing-page-properties}
 
-您可以为页面定义所需的属性。这些属性会因页面性质而异。例如，某些页面可能连接到Live Copy，而其他页面未连接到，因此Live Copy信息会根据需要可用。
+您可以为页面定义所需的属性。这些属性会因页面性质而异。例如，某些页面可能连接到Live Copy，而其他页面未连接到，因此Live Copy信息会根据需要提供。
 
 ## 页面属性 {#page-properties}
 
@@ -66,7 +66,7 @@ ht-degree: 82%
 
    * **准时**  — 已发布页面在发布环境中可见（呈现）的日期和时间。 该页面必须手动发布或通过预配置的自动复制进行发布。
 
-      * 如果已存在 [已发布（手动）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 此页面将保持隐匿（隐藏）状态，直到在指定时间才呈现。
+      * 如果已存在 [已发布（手动）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 此页面保持隐匿（隐藏）状态，直到在指定时间才呈现。
       * 如果未发布并配置为自动复制，则页面将在指定的时间自动发布，然后呈现。
       * 如果未发布且未配置为自动复制，则不会自动发布该页面，因此在尝试访问该页面时将会显示404。
 
@@ -196,15 +196,15 @@ ht-degree: 82%
 
 ### Blueprint {#blueprint}
 
-此选项卡仅对用作 Blueprint 的页面可见。Blueprint 用作 Live Copy 的基础，并且是[多站点管理](/help/sites-cloud/administering/msm/overview.md)的一部分。
+此选项卡仅对用作 Blueprint 的页面可见。Blueprint是活动副本的基础，并且是 [多站点管理](/help/sites-cloud/administering/msm/overview.md).
 
-* **当前 Live Copy** – 列出基于此 Blueprint 页面的页面（即 Live Copy 页面）
+* **当前活动副本**  — 列出基于此Blueprint页面的页面（即活动副本）
 
-* **转出配置**  — 控制将修改传播到Live Copy的情况
+* **转出配置** – 控制修改内容会传播到 Live Copy 的情况
 
 ### Live Copy {#live-copy}
 
-此选项卡仅对配置为 Live Copy 的页面可见。与 Blueprint 一样，Live Copy 是[多站点管理](/help/sites-cloud/administering/msm/overview.md)的一部分。
+此选项卡仅对配置为 Live Copy 的页面可见。与Blueprint一样，活动副本是 [多站点管理](/help/sites-cloud/administering/msm/overview.md).
 
 * **同步** – 将 Live Copy 与 Blueprint 同步，并保留本地修改
 * **重置** – 将 Live Copy 重置为 Blueprint 的状态，并删除本地修改
@@ -223,7 +223,7 @@ ht-degree: 82%
 
    * **Live Copy 继承** – 如果选中，Live Copy 配置将在所有子项上都有效
    * **从父项继承转出配置** – 如果选中，则从页面的父页面继承转出配置
-   * **选择转出配置**  — 定义从Blueprint传播修改的情况，并且仅在以下情况下可用 **从父项继承转出配置** 未选择
+   * **选择转出配置** – 定义从 Blueprint 传播修改的情况，并且仅在未选择&#x200B;**从父项继承转出配置**&#x200B;时可用
 
 ### 预览 {#preview}
 
@@ -276,7 +276,7 @@ ht-degree: 82%
 1. 使用以下任一方式为所需的页面选择&#x200B;**属性**&#x200B;选项：
    * [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * 使用相应的选项卡显示页面属性。
+   * 此时会使用相应的选项卡显示页面属性。
 1. 查看或编辑所需的属性。
 1. 然后，使用&#x200B;**保存**&#x200B;来保存您的更新，接着使用&#x200B;**关闭**&#x200B;返回到控制台。
 
@@ -312,7 +312,7 @@ ht-degree: 82%
 * 在浏览 **Sites** 控制台时
 * 在使用&#x200B;**搜索**&#x200B;找到一组页面后
 
-选择页面，然后单击或点按 **“属性”选项**，则会显示批量属性：
+选择页面后，单击或点按&#x200B;**属性选项**，此时会显示批量属性：
 
 ![批量编辑页面属性](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
@@ -341,6 +341,6 @@ ht-degree: 82%
 * **编辑**
 
    * 您可以更新可用字段中的值。
-      * 当您选择时，新值将应用于所有选定的页面 **完成**.
+      * 当您选择&#x200B;**完成**&#x200B;时，新值会应用于所有选定页面。
       * 当字段有多个值时（例如“标记”），您可以附加一个新值，也可以删除相同的值。
-   * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如文本 `<Mixed Entries>`.
+   * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如，文本 `<Mixed Entries>`。

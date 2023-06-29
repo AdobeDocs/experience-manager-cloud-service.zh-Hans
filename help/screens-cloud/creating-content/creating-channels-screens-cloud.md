@@ -2,9 +2,9 @@
 title: as a Cloud Service在Screens中创建和管理渠道
 description: 本页介绍如何在Screens中以as a Cloud Service方式创建和管理渠道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > 此 **创建** 向导在创建渠道时提供不同类型的模板。 请参阅一节 [可用模板](#available-templates) 创建向导中的详细信息。
+   > 此 **创建** 向导在创建渠道时提供不同类型的模板。 参见 [可用模板](#available-templates) 创建向导中的详细信息。
 
 1. 输入序列渠道的名称，例如， **LoopingChannelOne** 并单击 **创建**.
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
    您现在将看到 **LoopingChannelOne** 在AEM Screens项目的“渠道”文件夹中。
 
-   创建渠道后，您现在可以向渠道添加内容。 请参阅 [向渠道添加内容](#add-content) 以了解如何将资产（图像/视频）添加到您的渠道。
+   创建渠道后，您现在可以向渠道添加内容。 参见 [向渠道添加内容](#add-content) 以了解如何将资产（图像/视频）添加到您的渠道。
 
 ## 管理渠道 {#managing-channels}
 
@@ -143,8 +143,8 @@ ht-degree: 1%
 
 **注意：** 使用默认分配详细信息的渠道分配在显示的上下文中将不可编辑。
 
-* 如果您需要将其更改为自定义分配，则必须先删除它，然后使用 **设置自定义分配详细信息** 选项。
-* 如果您需要更改默认分配详细信息的属性，则必须直接从渠道详细信息页面执行此操作。
+* 如果您必须将其更改为自定义分配，请先删除它，然后使用重新添加 **设置自定义分配详细信息** 选项。
+* 如果必须更改默认分配详细信息的属性，请直接从渠道详细信息页面进行更改。
 
 ### 从渠道中删除默认分配详细信息 {#remove-display}
 
@@ -174,4 +174,4 @@ ht-degree: 1%
 
 ## 后续内容 {#whats-next}
 
-现在，您已在项目中设置AEM Screens渠道，接下来需要发布渠道。 请参阅 [as a Cloud Service发布Screens中的渠道](manage-publish.md) 从Screens服务提供商管理播放器之前。
+现在，您已在项目中设置AEM Screens渠道，接下来需要发布渠道。 参见 [as a Cloud Service发布Screens中的渠道](manage-publish.md) 从Screens服务提供商管理播放器之前。

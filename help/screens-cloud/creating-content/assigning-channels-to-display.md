@@ -2,16 +2,16 @@
 title: 将渠道分配给Screens中的显示as a Cloud Service
 description: 本页介绍如何在Screensas a Cloud Service中为显示分配渠道。
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 1%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
 # 将渠道分配给Screens中的显示as a Cloud Service {#assign-channel-displays-screens-cloud}
 
-项目设置完成后，您必须将渠道分配给显示区，才能查看内容。
+项目设置完成后，必须将渠道分配给显示区，才能查看内容。
 
 ## 目标 {#objective}
 
@@ -43,6 +43,7 @@ ht-degree: 1%
 
       >[!NOTE]
       >优先级用于对分配进行排序，以防多个分配符合播放标准。 值最高的总是优先于较低的值。 例如，如果存在两个渠道A和B。A的优先级为1，B的优先级为2，然后显示信道B，因为它的优先级高于A。
+
    1. 选择开始日期和结束日期 **Activation**.
 
 1. 单击 **+添加重复项** 为渠道添加周期性计划。
@@ -50,18 +51,18 @@ ht-degree: 1%
    ![图像](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
    >[!NOTE]
-   >您可以向渠道添加多个周期性计划。 周期性时间表引入了DayParting，它允许您设置全局时间表，让多个渠道在一天中的特定时间运行，并一次性将该设置重新用于所有显示。
+   >您可以向渠道添加多个周期性计划。 周期性时间表引入了DayParting，可让您设置全局时间表，在一天中的特定时间运行多个渠道，并重复使用对所有显示所做的设置。
 
    您可以设置以下选项：
 
    * **名称**：周期性计划的标题。
    * **重复**：选择计划是每天、每周、每月还是每年运行。
    * **开始**：计划的开始时间。
-   * **结束**：计划的结束时间。 您可以按时间或持续时间设置它。
+   * **结束**：计划的结束时间。 您可以按时间或持续时间进行设置。
    * **时间**：计划将在指定的时间结束。
    * **持续时间**：计划在特定时间段内运行，以小时或分钟为单位。
 
-1. 单击 **创建** 现在，您将看到为该显示分配了渠道，如下图所示。
+1. 单击&#x200B;**创建**。您可以看到已为该显示分配了渠道，如下图所示。
 
    ![图像](/help/screens-cloud/assets/display/assignchannel-3.png)
 

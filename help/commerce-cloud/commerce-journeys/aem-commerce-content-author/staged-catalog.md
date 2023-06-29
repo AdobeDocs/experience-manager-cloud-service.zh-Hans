@@ -2,9 +2,9 @@
 title: 管理分阶段的产品目录体验
 description: 了解如何管理暂存的产品目录体验。
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '493'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 10%
 
     >[！注意]
     >
-    >此功能仅适用于支持基于令牌的身份验证的Adobe Commerce或Cloud Edition以及第三方连接器。 有关更多信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
+    >此功能仅适用于Adobe Commerce或Cloud Edition以及支持基于令牌的身份验证的第三方连接器。 有关更多信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
 
 首先，让我们看一看作者如何使用CIF访问暂存的产品数据。
 

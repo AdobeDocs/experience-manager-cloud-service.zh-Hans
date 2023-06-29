@@ -2,10 +2,10 @@
 title: 创建配置 - Headless 设置
 description: 以创建配置作为第一步，开始在 AEM as a Cloud Service 中使用 Headless。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 92%
 1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**工具 -> 常规 -> 配置浏览器**。
 1. 提供配置的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
-   * 此 **名称** 将成为存储库中的节点名称。
-      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定。](/help/implementing/developing/introduction/naming-conventions.md)
+   * **名称**&#x200B;会成为存储库中的节点名称。
+      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定](/help/implementing/developing/introduction/naming-conventions.md).
       * 如有必要可以调整。
 1. 查看以下选项：
    * **内容片段模型**
@@ -51,4 +51,4 @@ ht-degree: 92%
 
 >[!TIP]
 >
->有关配置浏览器的完整详细信息，[请参阅配置浏览器文档](/help/implementing/developing/introduction/configurations.md)。
+>有关配置浏览器的完整详细信息， [请参阅配置浏览器文档](/help/implementing/developing/introduction/configurations.md).

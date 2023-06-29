@@ -2,9 +2,9 @@
 title: SPA模型路由
 description: 对于AEM中的单页应用程序，由应用程序负责路由选择。 本文档介绍了路由机制、合同和可用选项。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 架构 {#architecture}
 
-欲知详细说明，请参阅 [PageModelManager](blueprint.md#pagemodelmanager) SPA部分。
+有关详细说明，请参阅 [PageModelManager](blueprint.md#pagemodelmanager) SPA部分。
 
 ## 模型路由器 {#modelrouter}
 

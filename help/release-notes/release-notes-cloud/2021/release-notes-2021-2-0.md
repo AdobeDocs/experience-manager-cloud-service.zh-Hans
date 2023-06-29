@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 版的发行说明。'
 description: ”[!DNL Adobe Experience Manager] 2021.2.0版as a Cloud Service发行说明。”
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 32%
+source-wordcount: '1228'
+ht-degree: 34%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 32%
 
 * 发布了CIF Venia参考网站 — 2021.02.24，其中包括最新的CIF核心组件版本v1.8.0。参见 [CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) 了解更多详细信息。
 
-* 发布了CIF核心组件v1.8.0。请参阅 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) 了解更多详细信息。
+* 发布了CIF核心组件v1.8.0。参见 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) 了解更多详细信息。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service 2021.2.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * Cloud Manager UI 将通知暂时无法添加/更新域名的用户，因为关联的环境已连接正在运行的管道，或者当前正在等待批准步骤。
 
-* 客户中设置的属性 `pom.xml` 带有sonar前缀的文件现在会被动态移除，以避免构建和质量扫描失败。
+* 以 Sonar 为前缀的客户 `pom.xml` 文件中设置的属性现已动态移除，以避免构建和质量扫描失败。
 
 * 如果 SSL 证书正由当前部署的域名使用，Cloud Manager UI 将通知暂时无法选择该证书的用户。
 
@@ -136,7 +136,7 @@ AEM as a Cloud Service 2021.2.0 中的 Cloud Manager 的发布日期是 2021 年
 ### 内容传输工具的新增功能 {#what-is-new-ctt}
 
 * 内容传输工具中添加了新功能和UI — 用户映射工具。 此功能在内容迁移活动中自动将现有用户和组映射到其AdobeIdentity Management系统ID。
-请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) 了解更多详细信息。
+有关更多详细信息，请参阅[使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
 * 内容传输工具现在迁移在迁移集中引用的所有组和用户，包括儿童。
 * 允许用户选择下的特定路径 `/etc` 创建迁移集时。
 
@@ -159,9 +159,9 @@ Best Practices Analyzer v2.1.2的发布日期是2021年2月18日。
 ### 代码重构工具的新增功能 {#what-is-new-crt}
 
 * 新版本的AIO-CLI插件已发布。 此插件的最新版本包括对Repository Modernizer的多个错误修复。
-请参阅 [统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 以了解有关此插件的更多信息。
+参见 [统一体验](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) 以了解有关此插件的更多信息。
 
 ### 错误修复 {#bug-fixes-crt}
 
 * 对Repository Modernizer进行了若干错误修复。
-请参阅 [GitHub资源：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 了解更多详细信息。
+参见 [GitHub资源：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 了解更多详细信息。

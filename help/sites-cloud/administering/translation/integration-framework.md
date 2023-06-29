@@ -4,10 +4,10 @@ description: 了解如何配置翻译集成框架以与第三方翻译服务集�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 803a7788cde37fb0026f7cc3582efb33c10e1358
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1518'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
 
 ## 连接到翻译服务提供商 {#connecting-to-a-translation-service-provider}
 
@@ -73,7 +73,7 @@ ht-degree: 100%
 1. 在您的内容结构中导航到要创建该配置的位置。这一般为站点专属的位置，但也可为全局位置。
 1. 在字段中提供以下信息，然后单击或点按&#x200B;**创建**。
    1. 在下拉列表中选择&#x200B;**配置类型**。
-   1. 为您的配置输入一个&#x200B;**标题**。**标题**&#x200B;在&#x200B;**云服务**&#x200B;控制台中以及页面属性下拉列表中标识该配置。
+   1. 为您的配置输入一个&#x200B;**标题**。此 **标题** 标识中的配置 **Cloud Services** 控制台和“页面属性”下拉列表中。
    1. （可选）键入一个&#x200B;**名称**&#x200B;以用于存储该配置的存储库节点。
 1. 在&#x200B;**编辑配置**&#x200B;窗口中，配置&#x200B;**站点**&#x200B;和&#x200B;**资产**&#x200B;选项卡上的属性，然后单击或点按&#x200B;**保存并关闭**。
 

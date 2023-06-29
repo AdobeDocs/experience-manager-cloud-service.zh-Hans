@@ -2,9 +2,9 @@
 title: 适用于 Eclipse 的 AEM 开发人员工具
 description: 适用于 Eclipse 的 AEM 开发人员工具
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1183'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ _适用于Eclipse的Experience Manager开发工具_ 提供一个可让您完全�
 
    >[!NOTE]
    >
-   >在新安装中（更具体地说，从未下载maven依赖项时），您可能会创建项目，但出现错误。 在此情况下，请按照 [解析无效的项目定义](#resolving-invalid-project-definition).
+   >在新安装中（更具体地说，从未下载maven依赖项时），您可能会创建项目，但出现错误。 在这种情况下，请按照 [解析无效的项目定义](#resolving-invalid-project-definition).
 
 ## 如何导入现有项目 {#how-to-import-existing-projects}
 

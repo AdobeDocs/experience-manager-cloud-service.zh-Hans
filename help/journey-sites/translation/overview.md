@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 ## 简介 {#introduction}
 
-AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者可以使用站点编辑器轻松创建数字体验，并使用站点控制台组织内容，同时能够实时查看AEM跨渠道交付给受众的内容。
+AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者可以使用站点编辑器轻松创建数字体验，并使用 Sites 控制台组织内容，同时能够实时查看 AEM 通过不同的渠道交付给受众的内容。
 
 AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将该内容交付给其他地区或区域的受众。本文档历程向您介绍了创作工具，以便您了解如何在 AEM 中创建和管理内容，然后深入探究了管理您自己的翻译项目所需的知识。
 
@@ -47,7 +47,7 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 | 管理员 | 管理 AEM 的基本设置和配置 | 翻译专家与管理员共同进行翻译所需的配置更改，例如安装翻译连接器。 |
 | 内容架构师 | 分析必须作为站点交付的数据的要求并定义此数据的结构 | 翻译专家与内容架构师共同定义内容的编排以便轻松翻译。 |
 
-虽然此历程中的信息对所有角色都很有用，但一些信息可能对特定角色来说是多余的。请继续关注[即将推出的涵盖其他角色的历程。](/help/journey-documentation/documentation-journeys.md#journeys)
+虽然此历程中的信息对所有角色都很有用，但一些信息可能对特定角色来说是多余的。请密切关注 [即将推出的涵盖其他角色的历程](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## 站点翻译历程 {#the-journey}
 
@@ -75,6 +75,6 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 
 * [Headless 创作历程](/help/journey-headless/author/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
 * [Headless 架构师历程](/help/journey-headless/architect/overview.md) – 从这里开始了解 Adobe Experience Manager as a Cloud Service 强大而灵活的 Headless 功能，以及如何对项目内容进行建模。
-* [AEM Headless开发人员历程](/help/journey-headless/developer/overview.md)  — 从这里开始，引导您了解AEM强大而灵活的Headless特性、它们的功能以及如何在您的第一个开发项目中使用它们。
+* [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
 * [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您已对 AEM 和 Headless 技术有一定的了解，则可能需要直接参阅深入的技术文档。
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。

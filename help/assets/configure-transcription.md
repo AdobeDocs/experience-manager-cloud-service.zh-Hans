@@ -2,7 +2,7 @@
 title: 配置转录服务
 seo-title: Configure transcription service
 description: Adobe Experience Manager Assets 配置了 [!DNL Azure Media Services] ，它可以自动生成 WebVTT (vtt) 格式的支持音频或视频文件中的口语文本转录。
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
+seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,16 +11,16 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 96%
+source-wordcount: '1694'
+ht-degree: 94%
 
 ---
 
 # 在[!DNL Experience Manager Assets]中配置转录 {#configure-transcription-service}
 
-转录是使用语音识别技术将音频或视频文件中的音频转换为文本（语音到文本）的过程。[!DNL Adobe Experience Manager Assets] 配置了 [!DNL Azure Media Services]，它可以自动生成 WebVTT (vtt) 格式的支持音频或视频文件中的口语文本转录。在[!DNL Experience Manager Assets] 中处理音频或视频资产时，转录服务会自动生成音频或视频资产的文本转录演绎版，并将其存储在原始资产所在的 Assets 存储库中的同一位置。[!DNL Experience Manager Assets] 转录服务允许营销人员通过增加文本内容的可发现性来有效管理其音频和视频内容，并通过支持可访问性和本地化来提高这些资产的 ROI。
+转录是使用语音识别技术将音频或视频文件中的音频转换为文本（语音到文本）的过程。[!DNL Adobe Experience Manager Assets] 配置了 [!DNL Azure Media Services]，它可以自动生成 WebVTT (vtt) 格式的支持音频或视频文件中的口语文本转录。在[!DNL Experience Manager Assets] 中处理音频或视频资产时，转录服务会自动生成音频或视频资产的文本转录演绎版，并将其存储在原始资产所在的 Assets 存储库中的同一位置。此 [!DNL Experience Manager Assets] 转录服务允许营销人员通过增加文本内容的可发现性来有效管理其音频和视频内容，并通过支持可访问性和本地化来提高这些资产的ROI。
 
 转录是口语内容的文本版本；例如，您在任何 OTT 平台上观看的电影通常都包括解说词或字幕，帮助您访问或使用其他语言的内容。或任何用于营销、学习或娱乐目的的音频或视频文件。这些体验从转录开始，然后根据需要进行格式化或翻译。当手动执行时，转录音频或视频是一个很耗时间且容易出错的过程。鉴于对音频视频内容的需求不断增加，扩展手动过程也是一个挑战。[!DNL Experience Manager Assets] 使用Azure基于人工智能的转录，允许对音频和视频资产进行大规模处理，并生成文本转录（.vtt文件）以及时间戳细节。 除了 Assets，Dynamic Media 也支持转录功能。
 
@@ -87,7 +87,7 @@ ht-degree: 96%
 * 在&#x200B;**[!UICONTROL “工具”]**>**[!UICONTROL “Assets”]**>**[!UICONTROL “处理配置文件”]**&#x200B;中选择处理配置文件演绎版，并使用&#x200B;**[!UICONTROL “将配置文件应用到文件夹”]**&#x200B;操作。内容浏览器允许您导航到特定文件夹，选择文件夹并确认配置文件的应用。
 * 在 Assets 用户界面中选择一个文件夹，然后单击打开文件夹&#x200B;**[!UICONTROL 属性]**&#x200B;的操作。单击&#x200B;**[!UICONTROL “资产处理”]**&#x200B;选项卡，并从&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;列表中为文件夹选择适当的处理配置文件。要保存更改，请单击&#x200B;**[!UICONTROL “保存并关闭”]**。
 
-   ![configure-transcription-service](assets/video-processing-profile3.png)
+  ![configure-transcription-service](assets/video-processing-profile3.png)
 
 * 用户可以在 Assets 用户界面中选择文件夹或特定资产以应用处理配置文件，然后从顶部可用的选项中选择&#x200B;**[!UICONTROL 重新处理资产]**。
 

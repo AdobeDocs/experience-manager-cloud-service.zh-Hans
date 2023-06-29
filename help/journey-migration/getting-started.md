@@ -2,9 +2,9 @@
 title: 迁移到AEMas a Cloud Service历程入门
 description: 通过熟悉迁移到 AEM as a Cloud Service 的基础知识，开始您的迁移之旅
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 24%
 
 ---

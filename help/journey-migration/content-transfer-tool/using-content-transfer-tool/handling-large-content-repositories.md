@@ -2,9 +2,9 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1813'
 ht-degree: 6%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 6%
 
 ### 如果将源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储区，则此情况下需要考虑的其他事项 {#additional-considerations-amazons3-azure}
 
-* 从Amazon S3和Azure Blob Storage中传输数据会产生成本。 传输成本与现有存储容器中的数据总量有关(无论是否在AEM中引用)。 请参阅 [Amazon S3](https://aws.amazon.com/s3/pricing/) 和 [Azure Blob存储](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 了解更多详细信息。
+* 从Amazon S3和Azure Blob Storage中传输数据会产生成本。 传输成本与现有存储容器中的数据总量有关(无论是否在AEM中引用)。 参见 [Amazon S3](https://aws.amazon.com/s3/pricing/) 和 [Azure Blob存储](https://azure.microsoft.com/en-us/pricing/details/bandwidth/) 了解更多详细信息。
 
 * 您需要现有源Amazon S3存储段的访问密钥和密钥对，或现有源Azure Blob存储容器的SAS URI（只读访问正常）。
 
@@ -117,7 +117,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
-> 如果您不想授予对现有blob存储容器的写入权限，则可以生成一个仅具有读取和列表权限的新SAS URI。
+> 如果不希望授予对现有blob存储容器的写入权限，则可以生成一个仅具有读取和列表权限的新SAS URI。
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -162,7 +162,7 @@ azCopyPath属性必须包含源AEM实例上安装azCopy命令行工具所在位�
 >如果未正确配置AzCopy，您将在日志中看到以下消息：
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`。
 
-1. 从CTT UI开始提取。 请参阅 [内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 和 [提取过程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解更多详细信息。
+1. 从CTT UI开始提取。 参见 [内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 和 [提取过程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 了解更多详细信息。
 
 1. 确认在提取日志中打印了以下行：
 
@@ -198,7 +198,7 @@ AzCopy在后续运行时会自动跳过在错误之前复制的任何Blob，并�
 
 ### 5.使用AzCopy引入 {#ingesting-azcopy}
 
-请参阅 [将内容引入目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+参见 [将内容引入目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
 有关从Cloud Acceleration Manager (CAM)将内容摄取到目标的一般信息，包括在“新摄取”对话框中有关如何使用AzCopy（预复制）或不使用的说明。
 
 要在摄取期间利用AzCopy，Adobe要求您使用的是至少版本2021.6.5561的AEMas a Cloud Service版本。
@@ -209,7 +209,7 @@ AzCopy在后续运行时会自动跳过在错误之前复制的任何Blob，并�
 *************** Beginning AzCopy pre-copy phase ***************
 INFO: Scanning...
 INFO: Failed to create one or more destination container(s). Your transfers may still succeed if the container already exists.
-INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+INFO: Any empty folders will not be processed, because source and/or destination does not have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started

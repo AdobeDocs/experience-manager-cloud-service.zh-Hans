@@ -2,10 +2,10 @@
 title: 了解 Cloud Manager 和快速站点创建工作流
 description: 了解 Cloud Manager 以及它如何将新的快速站点创建流程联系起来。
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 100%
+source-wordcount: '1128'
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->如果您不熟悉 Cloud Manager 角色和角色管理，请参阅[其他资源](#additional-resources)部分中的“基于角色的权限”文档。
+>如果您不熟悉Cloud Manager角色和角色管理，请参阅 [其他资源](#additional-resources) 部分。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -124,6 +124,6 @@ Cloud Manager 是 AEM as a Cloud Service 的必要组件，并且充当平台的
 我们建议您查看文档[从模板创建站点](create-site.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
-* [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) – Cloud Manager 预配置了一些具有适当权限的角色。有关这些角色及其管理方式的详细信息，请参阅本文档。
+* [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) – Cloud Manager 预配置了一些具有适当权限的角色。有关这些角色以及如何管理这些角色的详细信息，请参阅此文档。
 * [npm](https://www.npmjs.com) – 用于快速构建站点的 AEM 主题基于 npm。
 * [webpack](https://webpack.js.org) – 用于快速构建站点的 AEM 主题依赖 webpack。

@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1532'
 ht-degree: 41%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 41%
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 支持类别UID — 这为将字符串用作类别ID的系统解锁了第三方商业集成
+* 支持类别UID — 对于将字符串用作类别ID的系统，这为他们解锁了第三方商业集成
 
 * 用于PWA Studio的AEM扩展，包括 示例集成
 
@@ -163,7 +163,7 @@ AEM as a Cloud Service 2021.4.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * Cloud Manager 使用的 AEM 项目原型的版本已更新到版本 27。
 
-* Adobe I/O 开发人员控制台中由 Cloud Manager 创建的项目不会再被无意中编辑或删除。
+* Adobe I/O Developer Console 中由 Cloud Manager 创建的项目不会再被无意中编辑或删除。
 
 * 当用户添加新环境时，将会通知他们，在创建环境后，无法将其移动到其他区域。
 

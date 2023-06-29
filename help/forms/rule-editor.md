@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '6321'
+source-wordcount: '6324'
 ht-degree: 0%
 
 ---
@@ -366,7 +366,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E.完成和取消按钮 {#done-and-cancel-buttons}
 
-此 **[!UICONTROL 完成]** 按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整无效，不执行。 当您下次从同一表单对象启动规则编辑器时，会列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关更多信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p).
+此 **[!UICONTROL 完成]** 按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整的内容无效，因此不会运行。 当您下次从同一表单对象启动规则编辑器时，会列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关更多信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p).
 
 此 **[!UICONTROL 取消]** 按钮会放弃对规则所做的任何更改并关闭规则编辑器。
 

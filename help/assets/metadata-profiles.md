@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1409'
 ht-degree: 20%
 
 ---
@@ -34,13 +34,13 @@ ht-degree: 20%
    * **[!UICONTROL 字段标签]**  — 元数据属性的显示名称。 仅供用户参考。
    * **[!UICONTROL 映射到属性]**  — 此属性的值提供资产节点的相对路径/名称，资产节点将保存在存储库中。 该值应始终以开头 `./` 因为它指示路径在资产的节点下。
 
-      您为指定的值 **[!UICONTROL 映射到属性]** 作为属性存储在资产的元数据节点下。 例如，如果您指定`/jcr:content/metadata/dc:desc` 作为的名称 **[!UICONTROL 映射到属性]**， [!DNL Adobe Experience Manager Assets] 存储值 `dc:desc` 在资产的元数据节点上。
+     您为指定的值 **[!UICONTROL 映射到属性]** 作为属性存储在资产的元数据节点下。 例如，如果您指定`/jcr:content/metadata/dc:desc` 作为的名称 **[!UICONTROL 映射到属性]**， [!DNL Adobe Experience Manager Assets] 存储值 `dc:desc` 在资产的元数据节点上。
 
    * **[!UICONTROL 默认值]**  — 使用此属性为元数据组件添加默认值。 例如，如果您指定“My description”，则此值将分配给属性 `dc:desc` 在资产的元数据节点上。
 
-      >[!NOTE]
-      >
-      >向新元数据属性(该属性不存在于 `/jcr:content/metadata` 默认情况下，不会在该资产的“属性”页面上显示属性及其值。 要查看上的新资产，请执行以下操作： [!UICONTROL 属性] 页面，修改相应的架构表单。
+     >[!NOTE]
+     >
+     >向新元数据属性(该属性不存在于 `/jcr:content/metadata` 默认情况下，不会在该资产的“属性”页面上显示属性及其值。 要查看上的新资产，请执行以下操作： [!UICONTROL 属性] 页面，修改相应的架构表单。
 
 1. （可选）从“构建表单”选项卡中向“编辑表单”添 **[!UICONTROL 加更多组件]** ，然后在“设置”选项卡中配置 **[!UICONTROL 其属性]** 。 “构建表单”选项卡中提供 **[!UICONTROL 以下属性]** :
 
@@ -53,7 +53,7 @@ ht-degree: 20%
 | 日期 | 字段标签，映射到属性，默认值 |
 | 标准标记 | 字段标签、映射到属性、默认值、描述 |
 
-1. 单击 **[!UICONTROL 完成]**. 元数据配置文件将添加到中的配置文件列表 **[!UICONTROL 元数据配置文件]** 页面。
+1. 单击&#x200B;**[!UICONTROL 完成]**。元数据配置文件将添加到中的配置文件列表 **[!UICONTROL 元数据配置文件]** 页面。
 
 ## 复制元数据配置文件 {#copying-a-metadata-profile}
 

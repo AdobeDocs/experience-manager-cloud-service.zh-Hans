@@ -2,9 +2,9 @@
 title: 发布翻译的 Headless 内容
 description: 了解如何发布翻译的内容并在该内容更新时更新翻译。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1389'
 ht-degree: 98%
 
 ---
@@ -78,9 +78,9 @@ ht-degree: 98%
 
 >[!TIP]
 >
->您可以在发布时选择多个项目（即多个语言文件夹），以便同时发布多个翻译。
+>您可以在发布时选择多个项目（即多个语言文件夹），以便一次性发布多个翻译。
 
-发布内容时还有其他选项（例如，计划发布时间），它们超出了此历程的范围。有关更多信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
+发布内容时还有其他选项（例如，计划发布时间），它们超出了此历程的范围。请参阅 [其他资源](#additional-resources) 部分以了解更多信息。
 
 ## 更新翻译的内容 {#updating-translations}
 
@@ -114,7 +114,7 @@ ht-degree: 98%
 
 ![已添加其他翻译作业](assets/additional-translation-job.png)
 
-您可能会发现，新信息卡上列出的统计数据（资产和内容片段数量）有所不同。这是因为 AEM 可以识别自上次翻译以来发生的变化，并且仅包含需要翻译的内容。这包括已更新内容的重新翻译以及新内容的首次翻译。
+您可能会发现，新信息卡上列出的统计数据（资产和内容片段数量）有所不同。这是因为 AEM 可以识别自上次翻译以来发生的变化，并且仅包含需要翻译的内容。这包括更新内容的重新翻译和新内容的首次翻译。
 
 从此时起，您可以[像处理初始翻译一样启动和管理您的翻译作业。](translate-content.md#using-translation-project)
 

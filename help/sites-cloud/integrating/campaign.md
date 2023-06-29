@@ -1,39 +1,39 @@
 ---
-title: 将AEMas a Cloud Service与Adobe Campaign集成
-description: 了解AEMas a Cloud Service支持与Adobe Campaign集成。
+title: 将 AEM as a Cloud Service 与 Adobe Campaign 集成
+description: 了解 AEM as a Cloud Service 对与 Adob​e Campaign 集成的支持。
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 6d391ea86a950a3777311543492b5b89813ae377
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 6%
+source-wordcount: '175'
+ht-degree: 89%
 
 ---
 
 
-# 将AEMas a Cloud Service与Adobe Campaign集成 {#integrating-campaign}
+# 将 AEM as a Cloud Service 与 Adobe Campaign 集成 {#integrating-campaign}
 
-了解AEMas a Cloud Service支持与Adobe Campaign集成。
+了解 AEM as a Cloud Service 对与 Adob&#x200B;e Campaign 集成的支持。
 
 >[!NOTE]
 >
->本文档介绍了如何将Adobe Campaign与AEMas a Cloud Service(云原生的AEM解决方案)集成。
+>本文档介绍了 Adob&#x200B;e Campaign 与 AEM as a Cloud Service 的集成，即云原生 AEM 解决方案。
 >
->有关将Adobe Campaign与AEM 6.5、内部部署或AMS托管的AEM解决方案集成的详细信息， [请参阅此文档。](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)
+>有关将Adobe Campaign与AEM 6.5、内部部署或AMS托管的AEM解决方案集成的详细信息， [查看此文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
 
 ## 与 Adobe Campaign Classic 集成 {#acc}
 
-Adobe Campaign Classic (ACC)有许多版本。 是否支持与AEMas a Cloud Service集成，取决于您实施的ACC版本。
+Adob&#x200B;e Campaign Classic (ACC) 有许多版本。对于与 AEM as a Cloud Service 集成的支持取决于您实施的 ACC 版本。
 
-| ACC版本 | 与AEMaaCS集成 |
+| ACC 版本 | 与 AEMaaCS 集成 |
 |---|---|
 | [v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 不受支持 |
 | [v8](https://experienceleague.adobe.com/docs/campaign-v8.html) | 不受支持 |
 | Web UI* | 支持 |
 
-*Adobe Campaign Classic的Web UI预计在2023年底之前提供。
+*Adobe Campaign Classic 的 Web UI 预计将于 2023 年底推出。
 
-## 与Adobe Campaign Standard集成 {#acs}
+## 与 Adob&#x200B;e Campaign Standard 集成 {#acs}
 
-AEMas a Cloud Service不支持与集成 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS)。
+AEM as a Cloud Service 不支持与 [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS) 集成。

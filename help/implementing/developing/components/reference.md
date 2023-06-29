@@ -2,9 +2,9 @@
 title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3650'
 ht-degree: 2%
 
 ---
@@ -166,7 +166,7 @@ AEM组件的结构既强大又灵活。 主要内容包括：
 | 名称 | 类型 | 描述 |
 |---|---|---|
 | `.` | `cq:Component` | 这表示当前组件。 组件属于节点类型 `cq:Component`. |
-| `componentGroup` | `String` | 这表示可以在中选择组件的组 [组件浏览器。](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) 以开头的值 `.` 用于无法从UI中选择的组件，例如其他组件继承自的基本组件。 |
+| `componentGroup` | `String` | 这表示可以在中选择组件的组 [组件浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). 以开头的值 `.` 用于无法从UI中选择的组件，例如其他组件继承自的基本组件。 |
 | `cq:isContainer` | `Boolean` | 这指示组件是否为容器组件，因此可以包含其他组件，例如段落系统。 |
 | `cq:dialog` | `nt:unstructured` | 这是组件的“编辑”对话框的定义。 |
 | `cq:design_dialog` | `nt:unstructured` | 这是组件的“设计”对话框的定义。 |
@@ -383,7 +383,7 @@ AEM中有许多现有配置。 您可以使用中的查询工具轻松搜索特�
 
 ### 处理字段事件 — cq：listeners {#cq-listeners}
 
-处理对话框字段上的事件的方法通过自定义中的侦听器完成 [客户端库。](/help/implementing/developing/introduction/clientlibs.md)
+处理对话框字段上的事件的方法通过自定义中的侦听器完成 [客户端库](/help/implementing/developing/introduction/clientlibs.md).
 
 要在字段中注入逻辑，您应：
 
@@ -416,7 +416,7 @@ AEM中有许多现有配置。 您可以使用中的查询工具轻松搜索特�
 >* `aftermove`
 >* `aftercopy`
 
-事件处理程序可以通过自定义实施来实施。 例如(其中 `project.customerAction` 是静态方法)：
+事件处理程序可以通过自定义实施来实施。 例如，(其中 `project.customerAction` 是静态方法)：
 
 `afteredit = "project.customerAction"`
 
@@ -469,7 +469,7 @@ AEM中有许多现有配置。 您可以使用中的查询工具轻松搜索特�
 
 ![组件结构中的README.md](assets/components-documentation.png)
 
-然后，此Markdown将显示在 [组件控制台。](/help/sites-cloud/authoring/features/components-console.md)
+然后，此Markdown将显示在 [组件控制台](/help/sites-cloud/authoring/features/components-console.md).
 
 ![组件控制台中可见的README.md](assets/components-documentation-console.png)
 

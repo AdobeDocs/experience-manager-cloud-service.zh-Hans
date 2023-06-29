@@ -1,11 +1,11 @@
 ---
 title: 您的收件箱
-description: 使用收件箱管理任务
+description: 使用收件箱管理您的任务
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 71%
+source-wordcount: '906'
+ht-degree: 91%
 
 ---
 
@@ -21,25 +21,25 @@ ht-degree: 71%
       * 这些项目是工作流&#x200B;**参与者**&#x200B;步骤的产物。
    * 失败项目，允许管理员重试失败的步骤
 
-您会在自己的收件箱中收到这些通知，您可以在其中查看通知并执行操作。
+您可以在自己的收件箱中接收这些通知，以便查看并采取相应操作。
 
 >[!NOTE]
 >
->有关物料类型的详细信息，另请参阅：
+>有关物料类型的详细信息，请参阅以下内容：
 >
 >* [项目](/help/sites-cloud/authoring/projects/overview.md)
->* [项目 — 使用任务](/help/sites-cloud/authoring/projects/tasks.md)
+>* [项目 - 处理任务](/help/sites-cloud/authoring/projects/tasks.md)
 >* [工作流](/help/sites-cloud/authoring/workflows/overview.md)
 
 ## 标题中的收件箱 {#inbox-in-the-header}
 
-在任意控制台中，收件箱中的当前项目数会显示在标题中。 还可以打开指示器以提供对需要操作的页面的快速访问或对收件箱的访问：
+任何控制台的标题中都会显示收件箱中的当前项目数。还可以打开指示器以快速访问需要执行操作的页面或访问收件箱：
 
 ![标题中的收件箱概述](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
 >
->某些操作也将显示在 [相应资源的卡片视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
+>某些操作也将显示在[相应资源的卡片视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)中。
 
 ## 打开收件箱 {#opening-the-inbox}
 
@@ -81,13 +81,13 @@ ht-degree: 71%
 
 ### 收件箱 – 视图设置 {#inbox-view-settings}
 
-对于这两个视图（“列表”和“日历”），您可以定义设置：
+对于这两个视图（列表和日历），您可以定义设置：
 
 * **日历视图**
 
-  对象 **日历视图** 您可以配置：
+  对于&#x200B;**日历视图**，您可以配置：
 
-   * **分组方式**
+   * **分组依据**
    * **计划**&#x200B;或&#x200B;**无**
    * **卡片大小**
 
@@ -95,14 +95,14 @@ ht-degree: 71%
 
 * **列表视图**
 
-  对象 **列表视图** 您可以配置排序机制：
+  对于&#x200B;**列表视图**，您可以配置排序机制：
 
    * **排序方式**
    * **排序顺序**
 
   ![收件箱列表视图设置](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  您还可以将日历委派给其他用户，向其他用户请求委派以及管理您的委派。
+  您还可以将日历委派给其他用户、请求其他用户委派以及管理您的委派。
 
   ![收件箱列表视图委派设置](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -112,7 +112,7 @@ ht-degree: 71%
 >
 >尽管可以选择多个项目，但一次只能对一个项目执行操作。
 
-1. 要对项目执行操作，请选择相应项目的缩略图。 适用于该项目的操作的图标将显示在工具栏中：
+1. 要对某个项目执行操作，请选择相应项目的缩略图。适用于该项目的操作的图标将显示在工具栏中：
 
    ![选择收件箱项目](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -132,9 +132,9 @@ ht-degree: 71%
 
    >[!NOTE]
    >
-   >有关更多信息，请参阅：
+   >有关更多信息，请参阅以下内容：
    >
-   >* 工作流项目 —  [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
+   >* 工作流项目 - [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 
 2. 根据所选项目，将启动操作，例如：
 
@@ -154,9 +154,9 @@ ht-degree: 71%
 
 ## 创建任务 {#creating-a-task}
 
-在收件箱中，您可以创建任务：
+您可以从收件箱中创建任务：
 
-1. 选择 **创建**，则 **任务**.
+1. 选择&#x200B;**创建**，然后选择&#x200B;**任务**。
 1. 填写&#x200B;**基本**&#x200B;和&#x200B;**高级**&#x200B;选项卡中的必需字段（只有&#x200B;**标题**&#x200B;是必填项，所有其他字段都是选填项）：
 
    * **基本**:
@@ -174,17 +174,17 @@ ht-degree: 71%
 
    * **高级**
 
-      * **名称**：用于形成URL，如果留空，则基于 **标题**.
+      * **名称**：用于组建 URL，如果留空，URL 会基于&#x200B;**标题**。
 
    ![收件箱添加任务高级选项](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
-1. 选择 **提交**.
+1. 选择&#x200B;**提交**。
 
 ## 创建项目 {#creating-a-project}
 
-对于某些任务，您可以创建 [项目](/help/sites-cloud/authoring/projects/overview.md) 根据该任务：
+对于某些任务，您可以创建一个基于该任务的[项目](/help/sites-cloud/authoring/projects/overview.md)：
 
-1. 通过点按/单击缩略图，选择相应的任务。
+1. 通过点按/单击缩略图选择相应的任务。
 
    >[!NOTE]
    >
@@ -193,8 +193,8 @@ ht-degree: 71%
    >不能使用工作项（来自工作流）创建项目。
 
 1. 从工具栏中选择“**创建项目**”以打开向导。
-1. 选择相应的模板，然后 **下一个**.
-1. 指定所需的属性：
+1. 选择相应的模板，然后选择&#x200B;**下一步**。
+1. 指定所需属性：
 
    * **基本**
 
@@ -202,7 +202,7 @@ ht-degree: 71%
       * **描述**
       * **开始日期**
       * **到期日期**
-      * **用户** 和角色
+      * **用户**&#x200B;和角色
 
    * **高级**
 
@@ -210,9 +210,9 @@ ht-degree: 71%
 
    >[!NOTE]
    >
-   >参见 [创建项目](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) 以获取完整信息。
+   >有关完整信息，请参阅[创建项目](/help/sites-cloud/authoring/projects/managing.md#creating-a-project)。
 
-1. 选择 **创建** 以确认操作。
+1. 选择&#x200B;**创建**&#x200B;以确认操作。
 
 ## 筛选 AEM 收件箱中的项目 {#filtering-items-in-the-aem-inbox}
 

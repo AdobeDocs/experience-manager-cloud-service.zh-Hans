@@ -4,9 +4,9 @@ seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms允许您添加新的区域设置来本地化自适应表单。 英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和朝鲜语(ko-KR)语言环境。
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1190'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 
 * **I18N.js** 定义 `xfalib.locale.Strings` 对于 `<locale>` 如中的定义 `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 * **js.txt** 包含以下内容：
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+  */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 ##### 3.2.为区域设置locale-name文件夹添加自适应表单客户端库
 
@@ -129,16 +129,15 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 * 正在按列出的顺序检索以下参数：
 
    * 请求参数 `afAcceptLang`
-要覆盖用户的浏览器区域设置，您可以传递 
-`afAcceptLang` 请求参数以强制设置区域设置。 例如，以下URL强制以加拿大 — 法语区域设置呈现表单：
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
+要覆盖用户的浏览器区域设置，您可以传递 `afAcceptLang` 请求参数以强制设置区域设置。 例如，以下URL强制以加拿大 — 法语区域设置呈现表单：
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
 
    * 用户的浏览器区域设置，在请求中使用 `Accept-Language` 标头。
 
 如果所请求区域设置的客户端库不存在，它将检查客户端库是否存在区域设置中存在的语言代码。 例如，如果请求的区域设置为 `en_ZA` （南非英语）和客户库 `en_ZA` 不存在，自适应表单将客户端库用于 `en` （英语）语言（如果存在）。 但是，如果这些字典都不存在，则自适应表单会将该字典用于 `en` 区域设置。
 
 
-标识区域设置后，自适应表单会选取特定于表单的词典。 如果找不到所请求区域设置的表单特定词典，则它会使用用于创作自适应表单的语言的词典。
+标识区域设置后，自适应表单会选取特定于表单的词典。 如果找不到所请求区域设置的表单特定词典，则会使用自适应表单创作语言的词典。
 
 如果区域设置信息不存在，则自适应表单将以表单的原始语言交付。 原始语言是开发自适应表单时使用的语言。
 

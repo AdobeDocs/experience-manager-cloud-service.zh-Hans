@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: 开发人员模式会打开一个侧面板，其中包含多个选项卡，这些选项卡向开发人员提供有关当前页面的信息
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 1%
@@ -76,7 +76,7 @@ ht-degree: 1%
 
 * **编辑脚本：** 在CRXDE Lite中打开组件脚本的链接。
 
-* **查看组件详细信息：** 在中打开组件的详细信息 [组件控制台。](/help/sites-cloud/authoring/features/components-console.md)
+* **查看组件详细信息：** 在中打开组件的详细信息 [组件控制台](/help/sites-cloud/authoring/features/components-console.md).
 
 通过点按或单击V形标记来展开组件条目也可显示：
 

@@ -2,10 +2,10 @@
 title: 访问 Admin Console
 description: 一旦您了解了入门所需的准备工作和 AEMaaCS 结构的基础知识，您就可以首次登录 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 97%
+source-wordcount: '1107'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Admin Console 是管理 Adobe 产品许可证和用户的中心位置。 A
 
 要登录到 Admin Console，您需要一个 Adobe ID。 Adobe ID 是一个绑定到特定电子邮件地址的帐户，登录和访问 AEM as a Cloud Service 或任何 Adobe 解决方案都需要该帐户。 通过使用 Adobe ID，您可以将所有 Adobe 计划和产品与单个帐户关联。
 
-当您作为系统管理员在Admin Console中设置团队时，请指定用作Adobe ID的电子邮件地址。
+当您作为系统管理员在 Admin Console 中设置团队时，请指定用作 Adobe ID 的电子邮件地址。
 
 Adobe ID 有三种类型：
 
@@ -58,7 +58,7 @@ Adobe ID 有三种类型：
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. 如果您可以访问多个组织，请确保您登录到了正确的组织。 要更改您的组织，请单击右上角的组织名称，然后选择您需要访问的所需组织。
+1. 如果您有权访问多个组织，请确保您已登录到正确的组织。 要更改您的组织，请单击右上角的组织名称，然后选择您需要访问的所需组织。
 
    ![更改组织](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 

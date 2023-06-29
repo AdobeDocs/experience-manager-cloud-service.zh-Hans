@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3496'
-ht-degree: 16%
+source-wordcount: '3491'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 16%
 
 Adobe Experience Manager Assets是一种数字资源管理(DAM)解决方案，可与Adobe Creative Cloud集成以帮助DAM用户与创意团队合作，从而简化内容创建过程中的协作。
 
-Adobe Creative Cloud为创意团队提供了一个解决方案和服务生态系统，以帮助他们创建数字资产。 它包括桌面和移动应用程序、云服务（如具有桌面同步或Web体验的存储设备）以及Adobe Stock等市场。
+Adobe Creative Cloud为创意团队提供了一个解决方案和服务生态系统，以帮助他们创建数字资产。 它包括桌面和移动应用程序、云服务（如具有桌面同步或Web体验的存储设备）和市场(如Adobe Stock)。
 
 请阅读并了解根据您的用例在桌面版和企业级DAM之间选择哪些集成，以及连接工作流的关联最佳实践是什么。
 
@@ -34,7 +34,7 @@ Adobe Creative Cloud为创意团队提供了一个解决方案和服务生态系
 
 | 要求 | 用例 | 涉及的曲面 |
 |---|---|---|
-| 简化创意人员在台式机上的体验 | 简化从DAM访问资产的操作([!DNL Assets])适用于创意专业人士或更广义地说，适用于在本机资产创建应用程序中工作的桌面版用户。 他们需要一种简单直接的方式来发现、使用（打开）、编辑和保存对Experience Manager所做的更改，以及上传新文件。 | Win或Mac桌面；Creative Cloud应用程序 |
+| 简化创意人员在台式机上的体验 | 简化从DAM访问资产的操作([!DNL Assets])适用于创意专业人士或更广义地说，适用于在本机资产创建应用程序中工作的桌面版用户。 他们需要一种简单而直接的方式来发现、使用（打开）、编辑和保存对Experience Manager的更改以及上传新文件。 | Win或Mac桌面；Creative Cloud应用程序 |
 | 从以下位置提供高质量、现成可用的资产： [!DNL Adobe Stock] | 营销人员通过协助进行资产来源和发现，帮助加快内容创建过程。 创意专业人士直接在其创意工具中使用批准的资产。 | [!DNL Assets]； [!DNL Adobe Stock] 商城；元数据字段 |
 | 按组织分发和共享资产 | 内部部门/本地分支机构以及外部合作伙伴、分销商和代理机构使用由上级组织共享的批准资产。 公司希望安全、无缝地共享所创建的资产，以便更广泛地重复使用。 | [!DNL Brand Portal]、[!DNL Asset Share Commons] |
 | 自动生成已上传资产的预定义变体 | 利用Adobe独特的介质处理和转换技术自动处理资源，以执行预定义操作。 创建自定义逻辑以使用API和资产微服务定义您自己的操作。 | [!DNL Assets] 用户界面 |
@@ -119,7 +119,7 @@ Adobe Creative Cloud为创意团队提供了一个解决方案和服务生态系
 * **了解在 DAM 中存储资产的原因和时间：**&#x200B;将提供给组织中更广泛团队的更新
 * **关注共享的资产数量：**&#x200B;如果您的用例是资产分发，则管理和安全可能是最重要的方面。考虑使用为大规模操作而构建的工具，如 Brand Portal。
 * **了解资产生命周期：**&#x200B;了解组织中不同团队处理资产的方式
-* **谨慎处理对资产的频繁保存：** Adobe Asset Link 通过 PS、AI、ID 为您提供相关服务。对于其他应用程序，除非您需要在 DAM 中完成所有更改，否则不要在映射/共享文件夹中执行正在进行的任务
+* **谨慎处理对资产的频繁保存：** Adobe Asset Link 通过 PS、AI、ID 为您提供相关服务。对于其他应用程序，除非您需要在DAM中进行所有更改，否则不要在映射/共享文件夹中执行正在进行的任务
 
 ### 从Experience Manager Assets访问Adobe Stock资源 {#access-to-adobe-stock-assets-from-aem-assets}
 

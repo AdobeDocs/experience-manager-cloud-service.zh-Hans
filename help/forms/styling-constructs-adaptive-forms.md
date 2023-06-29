@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2310'
 ht-degree: 3%
 
 ---
@@ -941,7 +941,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
  </tbody>
 </table>
 
-面板节点分为导航器和内容。 那里 `` `` 对于内容，没有单独的样式组件。 所描述的变量适用于导航器以及内容。
+面板节点分为导航器和内容。 那里 `` `` 对于内容，没有单独的样式组件。 所描述的变量适用于导航器和内容。
 
 最上面的面板(RootPanel)没有此类。
 

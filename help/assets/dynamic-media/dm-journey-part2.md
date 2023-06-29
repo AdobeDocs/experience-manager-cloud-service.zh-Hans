@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2875'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -141,7 +141,7 @@ _应用图像预设媒体以生成图像的演绎版。_
 ![静态和动态图像预设](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _静态和动态图像预设。 观看图像是使用 `PDP-page` 图像预设。_
 
-但是，如果您必须更改网站上的图像，该怎么办？ 例如，假设您已经进行了一些测试，发现图像为120 x 120 (即 `Cart` 图像预设)未按您预期的那样被接收。 您必须通过将宽度增加到175像素并将高度增加到175像素来增大图像。 传统上，您必须进入Adobe Photoshop并重新创建所有这些购物车图像。 但使用Dynamic Media，您只需通过将宽度和高度值更新为175并保存预设来编辑图像预设即可，如下例所示。
+但是，如果您必须更改网站上的图像，该怎么办？ 例如，假设您已经进行了一些测试，发现图像为120 x 120 (即 `Cart` 图像预设)未按您预期接收。 您必须通过将宽度增加到175像素并将高度增加到175像素来增大图像。 传统上，您必须进入Adobe Photoshop并重新创建所有这些购物车图像。 但使用Dynamic Media，您只需通过将宽度和高度值更新为175并保存预设来编辑图像预设即可，如下例所示。
 
 ![编辑图像预设](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _编辑的宽度和高度 `Cart` 图像预设。_
@@ -208,7 +208,7 @@ _此 `Running` 应用了弹出查看器的图像集。_
 
 ## 可选 — 了解详情
 
-如果您想详细了解刚刚阅读的内容，请使用以下材料更详细地探索概念。 否则，您的Dynamic Media历程已完成！
+如果要详细了解您刚刚阅读的内容，请使用以下材料更详细地探索概念。 否则，您的Dynamic Media历程已完成！
 
 _Dynamic Media帮助主题_
 

@@ -2,10 +2,10 @@
 title: 上线后
 description: 了解如何监测问题并提高性能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 39%
+source-wordcount: '482'
+ht-degree: 28%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 39%
 
 开发人员控制台中提供了调试AEMas a Cloud Service开发人员环境的功能，可用于开发、暂存和生产环境。
 
-请参阅[实施 AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools)，了解有关开发工具的更多信息。
+参见 [为AEMas a Cloud Service实施](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) 了解有关开发工具的更多信息。
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -45,13 +45,13 @@ ht-degree: 39%
 >[!IMPORTANT]
 >写入不可变的存储库，如 `/libs` 和 `/apps` 在运行时导致错误。 此外，您无法访问用于暂存和生产环境的开发人员工具。
 
-请参阅[使用 CRXDE Lite 进行开发](/help/implementing/developing/tools/crxde.md)，了解如何使用 CRXDE Lite 来开发 AEM 应用程序。
+参见 [使用CRXDE Lite进行开发](/help/implementing/developing/tools/crxde.md) 了解如何使用CRXDE Lite开发AEM应用程序。
 
 ## 管理日志 {#managing-logs}
 
 用户可以访问选定环境的可用日志文件列表。
 
-请参阅[访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)，了解如何通过 UI 或通过 Cloud Manager 从 API 访问和管理日志。
+参见 [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md) 了解如何通过UI或通过Cloud Manager从API访问和管理日志。
 
 ## 联系支持人员 {#contacting-support}
 

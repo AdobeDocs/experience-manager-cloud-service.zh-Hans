@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
 description: 介绍 Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 * 作者使用这些功能创建无障碍网站。
 
-   创建无障碍内容是一个过程。虽然 AEM 提供了一些功能，但内容作者需要确保遵循创建无障碍内容所要求的技术。
+  创建无障碍内容是一个过程。虽然 AEM 提供了一些功能，但内容作者需要确保遵循创建无障碍内容所要求的技术。
 
 * 在实施网站设计时，模板开发人员还应注意到此类问题。
 
@@ -64,4 +64,4 @@ WCAG 2.1 提供了[涵盖无障碍级别和如何符合这些级别的准则（�
 
 ## Adobe 辅助功能 {#accessibility-at-adobe}
 
-有关其他信息，请访问 [Adobe 辅助功能资源中心](https://www.adobe.com/cn/accessibility/)。
+有关其他信息，请参阅 [Adobe辅助功能资源中心](https://www.adobe.com/cn/accessibility/).

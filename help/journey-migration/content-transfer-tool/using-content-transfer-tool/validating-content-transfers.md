@@ -2,9 +2,9 @@
 title: 验证内容转移
 description: 使用内容传输工具验证内容传输
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1055'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 如果 **在提取期间覆盖暂存容器** 如果启用了，则与提取相关的所有节点都将记录到提取路径摘要中。 使用此设置时，请务必启用 **在引入之前擦除云实例上的现有内容** 在摄取期间设置，否则摄取摘要中可能会显示缺失的节点。 这些是先前摄取中已存在于目标上的节点。
 
-有关图形说明，请参阅以下示例：
+有关这方面的图形说明，请参阅以下示例：
 
 ### 示例 1 {#example-1}
 
@@ -115,7 +115,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets
@@ -127,7 +127,7 @@ Migration validation took 0 minutes
 
 上述故障示例是通过运行引入，然后在禁用划出的情况下再次重新运行相同的引入来实现的，这样在引入期间不涉及任何节点 — 目标上已存在所有节点。
 
-除了包含在摄取日志中，还可以从访问验证报告 **引入作业** Cloud Acceleration Manager中的用户界面。 为此，请单击三个圆点(**...**)，然后单击 **验证报告** 查看验证报告。
+除了包含在摄取日志中，还可以从访问验证报告 **引入作业** Cloud Acceleration Manager中的用户界面。 为此，请单击三个圆点(**...**)，然后单击 **验证报告** ，以查看验证报告。
 
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -138,7 +138,7 @@ Migration validation took 0 minutes
 
 成功完成提取和摄取后，即可使用主体迁移的摘要和报告。 此信息可用于验证哪些用户和组已成功迁移，也许还可用于确定为什么有些用户和组没有迁移。
 
-要查看此信息，请转到Cloud Acceleration Manager。 单击您的项目信息卡，然后单击“内容传输”信息卡。 导航到 **引入作业** 并找到要验证的引入。 单击三个圆点(**...**)，然后单击 **查看主体摘要** 在下拉菜单中。
+要查看此信息，请转到Cloud Acceleration Manager。 单击您的项目信息卡，然后单击“内容传输”信息卡。 导航到 **引入作业** 并找到要验证的引入。 单击三个圆点(**...**)，然后单击 **查看主体摘要** 下拉列表中的每个字段。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 

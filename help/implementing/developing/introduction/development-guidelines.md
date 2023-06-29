@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2586'
 ht-degree: 4%
 
 ---
@@ -65,11 +65,11 @@ Adobe建议使用提供的 [Apache HttpComponents Client 4.x库](https://hc.apac
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不推荐，因为它已过时且已被版本4.x替换）
 * [确定Http](https://square.github.io/okhttp/) (AEM未提供)
 
-除了提供超时之外，还应该实施对此类超时以及意外HTTP状态代码的正确处理。
+除了提供超时之外，还应该实施对此类超时和意外HTTP状态代码的正确处理。
 
 ## 无经典UI自定义 {#no-classic-ui-customizations}
 
-AEMas a Cloud Service仅支持第三方客户代码的触屏UI。 经典UI不可自定义。
+AEMas a Cloud Service仅支持第三方客户代码的Touch UI。 经典UI不可自定义。
 
 ## 无本机二进制文件或本机库 {#avoid-native-binaries}
 
@@ -282,8 +282,8 @@ org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/pat
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-请查看 [Apache Oak文档](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) 了解更多详细信息。
+请参阅 [Apache Oak文档](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) 了解更多详细信息。
 
 ## [!DNL Assets] 开发指南和用例 {#use-cases-assets}
 
-要了解Assetsas a Cloud Service的开发用例、建议和参考材料，请参阅 [适用于资产的开发人员参考。](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+要了解Assetsas a Cloud Service的开发用例、建议和参考材料，请参阅 [Assets开发人员参考](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

@@ -2,9 +2,9 @@
 title: 缓存和性能
 description: 了解各种配置，这些配置可用于启用GraphQL和内容缓存以优化Commerce实施的性能。
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: afbcd1e50a12a9b0642c586d7d81bb90ea91a58d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '840'
 ht-degree: 2%
 
 ---

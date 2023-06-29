@@ -4,9 +4,9 @@ description: 了解AE的基础知识；使用包管理器管理包。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3780'
+source-wordcount: '3775'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->包只能包含内容。 任何功能（例如，存储在下的内容） `/apps`)必须是 [使用Cloud Manager中的CI/CD管道部署。](/help/implementing/cloud-manager/deploy-code.md)
+>包只能包含内容。 任何功能（例如，存储在下的内容） `/apps`)必须是 [使用Cloud Manager中的CI/CD管道部署](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ ht-degree: 4%
 >
 >如果您看到此类错误，请不要重试安装。安装过程在后台正常进行。如果您重新启动安装，则多个并发导入进程可能会引入一些冲突。
 
-有关如何管理AEMaaCS包的更多详细信息，请查看文档 [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md) 《部署用户指南》中的。
+有关如何管理AEMaaCS包的更多详细信息，请参阅 [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md) 《部署用户指南》中的。
 
 ## 包大小 {#package-size}
 
@@ -57,7 +57,7 @@ MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
 
 由于网络流量是可变的，并且始终小于通告的最大理论值，因此请尝试使用在线互联网连接速度测试工具。
 
-对于上传和下载，互联网速度几乎总是不同的。 假设您将需要上载和下载包，则应在计算中使用较低的值（通常为上载速度）。
+对于上传和下载，互联网速度几乎总是不同的。 假定您必须同时上载和下载包，则应在计算中使用较低的值（通常为上载速度）。
 
 ### 示例 {#example}
 
@@ -110,7 +110,7 @@ Package Manager分为四个主要功能区域：
 * **活动日志**  — 此面板最初最小化，然后展开以详细说明包管理器的活动，如生成或安装包时。 在“活动日志”选项卡中，还有其它按钮可用于：
    * **清除日志**
    * **显示/隐藏**
-* **工具栏**  — 工具栏包含左侧导航面板和包列表的刷新按钮，以及用于搜索、创建和上传包的按钮。
+* **工具栏**  — 工具栏包含左侧导航面板和包列表的刷新按钮以及用于搜索、创建和上传包的按钮。
 
 ![包管理器UI](assets/package-manager-ui.png)
 
@@ -409,7 +409,7 @@ Package Manager分为四个主要功能区域：
 
 如果不满足依赖关系，则包中具有这些依赖关系的OSGi捆绑包将不会启动。 这会导致应用程序部署中断，因为依赖未启动的OSGi捆绑包的任何内容都将无法正常运行。
 
-**错误解决**
+**错误解决方案**
 
 要解决由于未满足的OSGi捆绑包导致的错误，必须调整包含未满足的导入的捆绑包中的依赖项版本。
 
@@ -433,7 +433,7 @@ Package Manager分为四个主要功能区域：
 
 错误状态表示包尝试部署的文件已经覆盖，因此包中的更改将被覆盖覆盖（因此“隐藏”），并且不会生效。
 
-**错误解决**
+**错误解决方案**
 
 要解决此问题，中的叠加文件维护者 `/apps` 必须查看对中的覆盖文件所做的更改 `/libs` 并将所需的更改合并到叠加中( `/apps`)，并重新部署覆盖的文件。
 
@@ -455,7 +455,7 @@ Package Manager分为四个主要功能区域：
 
 无法提供显式错误。 验证仅指示安装包是否添加或影响任何新ACL权限。
 
-**错误解决**
+**错误解决方案**
 
 使用验证提供的信息，可以在CRXDE中查看受影响的节点，并根据需要在包中调整ACL。
 

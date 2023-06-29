@@ -2,10 +2,10 @@
 title: AEM Headless 内容作者历程
 description: 从此处开始，借助 AEM 强大而灵活的 Headless 功能、相应的功能以及为项目创作内容的方法，实施引导式历程。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '865'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -39,11 +39,11 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 
 ## 受众 {#audience}
 
-此历程专为内容作者角色设计。作为内容作者，您可以在内容片段中创建实际内容。
+此历程专为内容作者角色设计。作为内容作者，您会在内容片段中创建实际内容。
 
 该历程列出了有关为 AEM Headless 项目创作内容的要求、步骤和方法。此历程将定义作者为成功实施项目而必须与之互动的其他角色，但历程的观点是内容作者的观点。
 
-此历程中的信息当然对其他角色很有用，但某些信息对某些角色来说是多余的。 请继续关注即将推出的涵盖其他角色的历程。
+虽然此历程中的信息对其他角色很有用，但一些信息对特定角色来说是多余的。请继续关注即将推出的涵盖其他角色的历程。
 
 ## Headless 内容作者历程 {#the-journey}
 
@@ -66,7 +66,7 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
 
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So please consider these two options.
+However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So, consider these two options.
 
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
@@ -79,7 +79,7 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 因为此类历程被设计成独立的历程。不过，其中的许多历程可以相互关联。查看这些附加历程，详细了解 AEM 的强大功能如何协作。
 
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
-* [AEM Headless开发人员历程](/help/journey-headless/developer/overview.md)  — 从这里开始，引导您了解AEM强大而灵活的Headless特性、它们的功能以及如何在您的第一个开发项目中使用它们。
+* [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
 * [Headless 架构师历程](/help/journey-headless/architect/overview.md) – 从这里开始了解 Adobe Experience Manager as a Cloud Service 强大而灵活的 Headless 功能，以及如何对项目内容进行建模。
 * [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您已对 AEM 和 Headless 技术有一定的了解，则可能需要直接参阅深入的技术文档。
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。

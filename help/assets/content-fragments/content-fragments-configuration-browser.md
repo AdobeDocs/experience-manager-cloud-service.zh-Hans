@@ -2,10 +2,10 @@
 title: 内容片段 — 配置浏览器（资产 — 内容片段）
 description: 了解如何在配置浏览器中启用内容片段功能。
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 27%
+ht-degree: 30%
 
 ---
 
@@ -59,8 +59,8 @@ ht-degree: 27%
 1. 使用&#x200B;**“创建”**&#x200B;来打开对话框，您需要：
 
    1. 指定&#x200B;**标题**。
-   1. 此 **名称** 将成为存储库中的节点名称。
-      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定。](/help/implementing/developing/introduction/naming-conventions.md)
+   1. **名称**&#x200B;会成为存储库中的节点名称。
+      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定](/help/implementing/developing/introduction/naming-conventions.md).
       * 如有必要，您可以对其进行调整。
    1. 要启用其用法，请选择
       * **内容片段模型**

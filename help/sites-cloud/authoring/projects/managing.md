@@ -2,10 +2,10 @@
 title: 管理项目
 description: 通过“项目”，您可以将资源分组到一个实体中，以便在“项目”控制台中对其进行访问和管理，从而组织项目
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 51%
+source-wordcount: '893'
+ht-degree: 49%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 51%
 
 ![“项目”控制台](/help/sites-cloud/authoring/assets/projects-console.png)
 
-在“项目”中，您可以创建项目、将资源与项目相关联，还可以删除项目或资源链接。 您可能需要打开图块以查看其内容并向图块中添加项目。 本主题将介绍这些过程。
+在“项目”中，您可以创建项目、将资源与项目相关联，还可以删除项目或资源链接。 您可能需要打开图块以查看其内容并将项目添加到图块。 本主题将介绍这些过程。
 
 ## 创建项目 {#creating-a-project}
 
@@ -57,7 +57,7 @@ AEM提供了这些现成的模板，可在创建项目时从中进行选择：
 
    >[!NOTE]
    >
-   >有关可与项目关联的项目拼贴的详细说明，请参阅[项目拼贴](/help/sites-cloud/authoring/projects/overview.md#project-tiles)。
+   >中详细介绍了可与项目关联的项目拼贴 [项目拼贴](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
 1. 点按/单击&#x200B;**创建**。您的资源随即会链接到项目，从现在开始，您便可以从项目中访问该资源。
 
@@ -134,6 +134,7 @@ AEM提供了这些现成的模板，可在创建项目时从中进行选择：
 1. 在 **项目** 控制台，打开您的项目，然后找到 **项目信息** 图块。
 
    >[!NOTE]
+   >
    如果此图块尚未在项目中存在，您可能需要添加它。 参见 [添加拼贴](#adding-items-to-a-tile).
 
 1. 点按/单击&#x200B;**编辑**。

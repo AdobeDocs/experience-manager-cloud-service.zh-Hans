@@ -4,10 +4,10 @@ description: 了解如何使用“内容片段”控制台管理 AEM 内容片�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 90%
+source-wordcount: '2054'
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。 它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[资源](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
+>内容片段存储为&#x200B;**资源**。 它们主要通过&#x200B;**内容片段**&#x200B;控制台进行管理，但也可以从[ Assets ](/help/assets/content-fragments/content-fragments-managing.md)控制台进行管理。
 
 ## 内容片段控制台 {#content-fragments-console}
 
@@ -70,10 +70,10 @@ ht-degree: 90%
 
 1. **新内容片段**&#x200B;对话框随即会打开，您可以从此处指定：
 
-   * **位置**  — 使用当前位置自动完成，但您可以根据需要选择其他位置
-   * **内容片段模型** – 从下拉列表中选择要用作片段基础的模型
+   * **位置** – 使用当前位置自动完成，但您可以根据需要选择其他位置
+   * **内容片段模型**  — 从下拉列表中选择要用作片段基础的模型
    * **标题**
-   * **名称**  — 已根据 **标题**，但您可以根据需要进行编辑
+   * **名称** – 根据&#x200B;**标题**&#x200B;自动完成，但您可以根据需要进行编辑
    * **描述**
 
    ![“新建内容片段”对话框](assets/cfm-managing-new-cf-01.png)
@@ -144,7 +144,7 @@ ht-degree: 90%
 
 ![模式](assets/cfm-managing-top-toolbar.png)
 
-* 当内容页面上已引用片段时，将显示一条消息。 您可以&#x200B;**关闭**&#x200B;消息。
+* 当内容页面上已引用片段时，会显示一条消息。 您可以&#x200B;**关闭**&#x200B;消息。
 
 * 可以使用&#x200B;**切换侧面板**&#x200B;图标来隐藏/显示侧面板。
 
@@ -196,11 +196,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
   >
   >除了仅保存您的更改外，这些操作还会更新任何引用，并确保 Dispatcher 按需要刷新。 这些更改可能需要一些时间才能处理。 因此，对于大型/复杂/重载系统，性能可能会受到影响。
   >
-  >在使用&#x200B;**保存并关闭**&#x200B;时请记住这一点，然后快速重新进入片段编辑器以进行并保存进一步的更改。
+  >使用时，请记住此过程时间 **保存并关闭**，然后快速重新输入片段编辑器以进行并保存进一步的更改。
 
 * **关闭**
 
-  将退出编辑器，而不保存最新更改（即自上次&#x200B;**保存**）。
+  将退出编辑器，而不保存最新更改（即自上次更改以来所做的更改） **保存**)。
 
 在编辑您的内容片段时，AEM 会自动创建版本，以确保在您取消更改时可以恢复先前的内容（使用&#x200B;**关闭**&#x200B;而不保存）：
 
@@ -231,7 +231,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 将内容与片段关联 {#associating-content-with-your-fragment}
 
-您还可以[关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)与片段。 这提供了一个连接，以便在将资源（即图像）添加到内容页面时，可以（可选）与片段一起使用资源（即图像）。
+您还可以[关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)与片段。 这提供了一个连接，以便在将资产（即图像）添加到内容页面时，可以（可选）与片段一起使用资产（即图像）。
 
 ## 查看和编辑片段的元数据（属性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -251,7 +251,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!NOTE]
   >
-  有关预览环境的更多详细信息，请参阅：
+  有关预览环境的更多详细信息，请参阅以下内容：
   >
   * [管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [配置预览层的 OSGi 设置](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
@@ -263,16 +263,16 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 如果您的片段基于模型，则应确保[模型已发布](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
 >
-如果发布的内容片段尚未发布模型，则会显示一个选择列表来指示该情况，并且模型会随该片段一起发布。
+如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型会随该片段一起发布。
 
 1. 从列表中选择一个或多个片段。
 
 1. 从工具栏中选择&#x200B;**发布**，然后执行以下任一操作以打开相应的对话框：
 
-   * **现在**  — 选择 **发布服务**，或 **预览服务**；确认后，片段会立即发布
-   * **计划**  — 除了所需的服务之外，您还可以选择片段的发布日期和时间
+   * **现在** – 选择&#x200B;**发布服务**，或者&#x200B;**预览服务**；确认后，片段会立即发布
+   * **计划** – 除了所需服务外，您还可以选择片段的发布日期和时间
 
-   必要时，需要指定要发布的引用。 默认情况下，引用也会发布到预览服务，以确保内容中没有中断。
+   必要时，您需要指定要发布的引用。默认情况下，引用也会发布到预览服务，以确保内容中没有中断。
 例如，对于计划的发布请求：
    ![“发布”对话框](assets/cfm-publish-01.png)
 
@@ -284,11 +284,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-在您之后 [发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)中，片段在页面引用中列出。
+在您[发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)后，片段会在页面引用中列出。
 
 >[!CAUTION]
 >
-片段发布、引用或两者兼有后，当作者再次打开片段进行编辑时，AEM会显示警告。 警告作者，对片段所做的更改也会影响引用的页面。
+片段发布、引用或同时发布和引用后，当作者再次打开片段进行编辑时，AEM 会显示警告。作者会收到警告——对片段所做的更改也会影响引用的页面。
 
 ## 取消发布片段 {#unpublishing-a-fragment}
 
@@ -299,7 +299,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-此 **取消发布** 操作仅在发布的片段可用时可见。
+仅在可用已发布的片段时，**取消发布**&#x200B;操作才可见。
 
 >[!CAUTION]
 >
@@ -321,7 +321,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!CAUTION]
    >
-   如果该片段已被另一个片段或页面引用，您将看到一条警告消息，并且需要确认您要继续执行&#x200B;**强制删除**。 片段及其内容片段组件将从任何内容页面中删除。
+   如果该片段已被另一个片段或页面引用，您将看到一条警告消息，并且需要确认您要继续执行&#x200B;**强制删除**。 片段及其内容片段组件会从任何内容页面中删除。
 
 ## 查找片段的父引用 {#parent-references-fragment}
 
@@ -386,7 +386,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 所选版本 **v&lt;*x.y*>**（右）
 
-它们并排显示，其中：
+它们会并排显示，其中：
 
 * 任何差异都会突出显示
 

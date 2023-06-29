@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 48%
+source-wordcount: '1353'
+ht-degree: 46%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 48%
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* 您可以使用链接共享功能下载共享的资产。 现在，此下载使用异步服务，可提供更快且无中断的下载，即使对于非常大的下载也是如此。 参见 [下载资产](/help/assets/download-assets-from-aem.md#link-share-download).
+* 您可以使用链接共享功能下载共享的资产。 现在，此下载使用异步服务，即使对于非常大的下载，该服务也能提供更快且无中断的下载。 参见 [下载资产](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![下载收件箱](/help/assets/assets/download-inbox.png)
 
@@ -105,7 +105,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 新增功能 {#what-is-new-may}
 
-* PackageOverlaps 质量规则现在可检测多次部署同一个包的情况；即在同一个部署的包集中部署在多个嵌入位置。
+* PackageOverlaps质量规则现在可检测多次部署同一个包的情况，即在同一个部署的包集中部署在多个嵌入位置。
 
 * 公共 API 中的存储库端点现在包括 Git URL。
 
@@ -145,7 +145,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 新增功能 {#what-is-new-ctt-latest}
 
-* 如果用户没有Java可执行文件的执行权限，则会在快速入门的错误日志中添加新的日志记录语句。
+* 如果用户没有Java可执行文件的运行权限，则会在快速入门的错误日志中添加新的日志记录语句。
 
 * 当用户从执行提取的CTT用户界面删除迁移集时， `tmp` 已删除与该迁移集关联的文件夹以节省空间。
 

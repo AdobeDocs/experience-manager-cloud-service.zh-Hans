@@ -4,9 +4,9 @@ description: 将您的数字资产添加到 [!DNL Adobe Experience Manager] as a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2b597707a26726eec26541c04914ac36e8909fc5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3156'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 除了最常用的浏览器上传之外，还可以使用其他方法将资产添加到 [!DNL Experience Manager] 存储库存在。 这些其他方法包括桌面客户端，如AdobeAsset Link或 [!DNL Experience Manager] 桌面应用程序、客户将创建的上传和摄取脚本，以及添加为的自动摄取集成 [!DNL Experience Manager] 扩展。
 
-同时，您可以上传和管理中的任何二进制文件 [!DNL Experience Manager]，最常用的文件格式支持其他服务，例如元数据提取或预览/演绎版生成。 请参阅 [支持的文件格式](file-format-support.md) 了解详细信息。
+同时，您可以上传和管理中的任何二进制文件 [!DNL Experience Manager]，最常用的文件格式支持其他服务，例如元数据提取或预览/演绎版生成。 参见 [支持的文件格式](file-format-support.md) 了解详细信息。
 
 您还可以选择对上传的资产执行其他处理。 可以在上传资产的文件夹上配置多个资产处理配置文件，以添加特定的元数据、演绎版或图像处理服务。 参见 [上传时处理资源](#process-when-uploaded).
 

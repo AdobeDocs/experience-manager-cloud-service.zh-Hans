@@ -2,10 +2,10 @@
 title: 项目
 description: 通过项目，您可以将资源分组到一个实体中，该实体通过共享的公共环境可轻松管理项目
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 51%
+source-wordcount: '1255'
+ht-degree: 49%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 51%
 
 ![链接](/help/sites-cloud/authoring/assets/project-links.png)
 
-您可以使用易于识别的名称来命名链接并更改其缩略图。
+您可以使用易于识别的名称来命名链接并更改缩略图。
 
 ![添加链接](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ ht-degree: 51%
 
 ![项目信息](/help/sites-cloud/authoring/assets/project-info.png)
 
-您可以从该拼贴和“团队”拼贴中分配和删除团队成员（或者更改其角色）。
+可以从该拼贴和“团队”拼贴中分配和删除团队成员（或者更改其角色）。
 
 ![将团队成员添加到项目](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -137,11 +137,11 @@ ht-degree: 51%
 
 您可以按照特定工作流分配项目。 根据您选择的项目，您有不同的可用工作流。
 
-有关这些功能的说明，请参见 [使用项目工作流。](/help/sites-cloud/authoring/projects/workflows.md)
+有关这些功能的说明，请参见 [使用项目工作流](/help/sites-cloud/authoring/projects/workflows.md).
 
 ### 启动项 {#launches}
 
-“启动项”图块显示已请求的任何启动项。 [请求启动工作流。](/help/sites-cloud/authoring/projects/workflows.md)
+“启动项”图块显示已请求的任何启动项。 [请求启动项工作流程](/help/sites-cloud/authoring/projects/workflows.md).
 
 ![启动项](/help/sites-cloud/authoring/assets/project-launches.png)
 

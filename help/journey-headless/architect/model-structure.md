@@ -2,10 +2,10 @@
 title: 了解如何在 AEM 中创建内容片段模型
 description: 了解使用内容片段模型对 Headless CMS 进行内容建模的概念和机制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 89%
+source-wordcount: '687'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 选择此选项后，您导航到模型的位置并选择&#x200B;**创建**。您可以在此处输入各种关键详细信息。
 
-默认情况下，**启用模型**&#x200B;选项已激活。这意味着保存模型后，即可在创建内容片段时使用。 如果需要，您可以禁用此选项 - 可以稍后启用（或禁用）现有模型。
+默认情况下，**启用模型**&#x200B;选项已激活。这意味着，您的模型一经保存即可立即使用（用于创建内容片段）。如果需要，您可以禁用此选项 - 可以稍后启用（或禁用）现有模型。
 
 ![创建内容片段模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -63,7 +63,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![定义字段](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-在添加数据类型后，您需要为该字段定义&#x200B;**属性**。这些都取决于将使用的类型。例如：
+添加数据类型后，您需要定义 **属性** 为那个场地。 这些都取决于将使用的类型。例如：
 
 ![数据属性](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ### 您的内容作者 {#your-content-authors}
 
-您的内容作者看不到您用于创建模型的实际数据类型和属性。这意味着您可能需要提供有关他们如何填写特定字段的帮助和信息。对于基本信息，您可以使用字段标签和默认值，但在更复杂的情况下，可能需要考虑项目特定的文档。
+您的内容作者看不到您用于创建模型的实际数据类型和属性。 这意味着您可能需要提供有关他们如何填写特定字段的帮助和信息。对于基本信息，您可以使用字段标签和默认值，但在更复杂的情况下，可能需要考虑项目特定的文档。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->如果作者尝试发布的内容片段尚未发布模型，则会显示一个选择列表来指示该行为，并且模型会随该片段一起发布。
+>如果作者尝试发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
 模型一经发布，就会&#x200B;*锁定*&#x200B;为作者的只读架构。这旨在阻止进行可能导致现有 GraphQL 架构和查询出错的更改，尤其是在发布环境中。它在控制台中由&#x200B;**已锁定**&#x200B;指示。
 
@@ -110,7 +110,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 此页面主要基于&#x200B;**站点**&#x200B;控制台，但许多/大多数功能也用于在&#x200B;**常规**&#x200B;控制台下导航到并操作&#x200B;**内容片段模型**。
+* [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 此页面主要基于&#x200B;**Sites**&#x200B;控制台，但许多/大多数功能也用于在&#x200B;**常规**&#x200B;控制台下导航到并操作&#x200B;**内容片段模型**。
 
 * [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 

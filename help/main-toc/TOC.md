@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9e8ad6d9fe0cf749b0f7981164d05e051d531248
+source-git-commit: 40393340131a72a86503c00a0a2e9e78a28b7e69
 workflow-type: tm+mt
-source-wordcount: '4139'
+source-wordcount: '4138'
 ht-degree: 99%
 
 ---
@@ -678,7 +678,7 @@ ht-degree: 99%
          + [构建产品体验](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 集成 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [第三方商业解决方案](/help/commerce-cloud/integrating/third-party.md)
+      + [第三方商务解决方案](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
       + [快速入门](/help/commerce-cloud/getting-started.md)

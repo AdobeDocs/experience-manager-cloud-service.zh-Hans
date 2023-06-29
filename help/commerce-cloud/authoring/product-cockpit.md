@@ -2,10 +2,10 @@
 title: 产品 Cockpit
 description: 使用产品驾驶舱
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 3%
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 3%
 
 ## 配置 {#configuration}
 
-需要在AEM中配置产品目录。 参见 [配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?#catalog) 了解更多信息。
+必须在AEM中配置产品目录。 参见 [配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) 了解更多信息。
 
-启用暂存目录功能需要身份验证。 参见 [快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) 了解更多信息。
+启用暂存目录功能需要身份验证。 参见 [快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) 了解更多信息。
 
 >[!NOTE]
 >
@@ -43,11 +43,11 @@ ht-degree: 3%
 
 ![已配置的目录](../assets/catalog-overview.png)
 
-单击某个类别将加载已单击类别的子项。
+单击某个类别可加载已单击类别的子项。
 
 ![类别子项](../assets/catalog-category-children.png)
 
-单击产品将加载产品变体（如果可用）。
+单击产品可加载产品变体（如果可用）。
 
 ![产品变体](../assets/catalog-product-variation.png)
 
@@ -63,13 +63,13 @@ ht-degree: 3%
 
 ## 浏览暂存产品目录 {#staged-product-catalogs}
 
-默认情况下，产品驾驶舱显示实时产品目录数据。 使用左侧过滤器选项卡中的“暂存目录”将加载任何选定日期的产品目录。
+默认情况下，产品驾驶舱显示实时产品目录数据。 使用左侧过滤器选项卡中的“暂存目录”可加载任何选定日期的产品目录。
 
 ![暂存目录](../assets/staged-cockpit.png)
 
 ## 产品目录属性 {#catalog-properties}
 
-单击产品或类别的属性图标将打开选定对象的属性视图。 产品变体的打开属性等于打开主产品属性。
+单击产品或类别的属性图标可打开选定对象的属性视图。 产品变体的打开属性等于打开主产品属性。
 
 ### 商务选项卡 {#tabs}
 

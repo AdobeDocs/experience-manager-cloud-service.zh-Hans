@@ -2,10 +2,10 @@
 title: 程序和程序类型
 description: 了解 Cloud Manager 的层级，以及不同类型的程序如何适应其结构以及它们之间的差异。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '531'
-ht-degree: 100%
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Manager 程序将自动配置自己的 Git 存储库。
 
 要访问 Cloud Manager Git 存储库，用户需要使用带有命令行工具的 Git 客户端、独立的可视 Git 客户端或用户选择的 IDE，如 Eclipse、IntelliJ 或 NetBeans。
 
-一旦设置了 Git 客户端，就可以从 Cloud Manager UI 管理 Git 存储库。 要了解如何使用 Cloud Manager UI 管理 Git，请参阅[访问 Git 文档。](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+设置Git客户端后，您可以从Cloud Manager用户界面管理Git存储库。 要了解如何使用Cloud Manager用户界面管理Git，请参阅 [访问Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 要开始开发 AEM Cloud 应用程序，必须通过将应用程序代码从 Cloud Manager 存储库签出到本地计算机上的某个位置来制作应用程序代码的本地副本。
 
@@ -56,8 +56,8 @@ $ git clone {URL}
 用户可以创建一个&#x200B;**生产**&#x200B;程序或&#x200B;**沙盒**&#x200B;程序。
 
 * 创建&#x200B;**生产程序**，以便为您的站点启用实时流量。
-   * 请参阅[生产程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)文档，了解更多详细信息。
+   * 参见 [生产程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) 了解更多详细信息。
 * 通常，创建&#x200B;**沙盒程序**&#x200B;是为了提供培训、运行演示、支持、概念验证 (POC) 或归档等目的。
    * 沙盒环境并不意味着要承载实时流量，并且会有生产程序所没有的限制。
    * 它包括 Sites 和 Assets，交付时自动填充 Git 分支，其中包括示例代码、开发环境和非生产管道。
-   * 请参阅文档[沙盒程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)，了解更多详细信息。
+   * 参见 [沙盒程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) 了解更多详细信息。

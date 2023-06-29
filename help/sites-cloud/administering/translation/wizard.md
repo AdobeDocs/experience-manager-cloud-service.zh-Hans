@@ -4,10 +4,10 @@ description: 了解如何在 AEM 中使用语言复制向导。
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 95%
+source-wordcount: '282'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅我们的[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 要访问该向导，请执行以下操作：
 
-1. 在站点控制台中，选择页面，然后点按或单击&#x200B;**创建**&#x200B;并选择&#x200B;**语言复制**。
+1. 在 Sites 控制台中，选择页面，然后点按或单击&#x200B;**创建**&#x200B;并选择&#x200B;**语言复制**。
 
    ![从向导创建语言副本](../assets/language-copy-wizard.png)
 

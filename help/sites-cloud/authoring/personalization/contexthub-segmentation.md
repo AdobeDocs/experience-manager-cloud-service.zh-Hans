@@ -2,10 +2,10 @@
 title: 使用 ContextHub 配置分段
 description: 了解如何使用 ContextHub 配置分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 94%
+source-wordcount: '1691'
+ht-degree: 89%
 
 ---
 
@@ -21,7 +21,7 @@ AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的�
 
 ## 访问区段 {#accessing-segments}
 
-[受众](audiences.md)控制台用于管理 ContextHub 的区段以及 Adobe Target 帐户的受众。本文档介绍了如何管理 ContextHub 的区段。
+此 [受众](audiences.md) 控制台用于管理Adobe Target帐户的ContextHub区段和受众。 本文档介绍了如何管理 ContextHub 的区段。
 
 要访问您的区段，请在全局导航中，选择&#x200B;**导航 > 个性化 > 受众**。选择您的配置（例如 WKND 站点）并查看区段：
 
@@ -65,7 +65,7 @@ AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的�
 
 >[!NOTE]
 >
->在比较值时，如果未设置比较的数据类型（即设置为自动检测），则 ContextHub 的分段引擎将像 javascript 那样简单地比较值。它不会将值转换为预期类型，这可能导致误导性的结果。例如：
+>在比较值时，如果未设置比较的数据类型（即设置为自动检测），则ContextHub的分段引擎将像javascript那样简单地比较值。 它不会将值转换为预期类型，这可能导致误导性的结果。例如：
 >
 >`null < 30 // will return true`
 >
@@ -92,7 +92,7 @@ AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的�
 
    ![添加区段](../assets/contexthub-create-segment.png)
 
-1. 在&#x200B;**新 ContextHub 区段**&#x200B;中，输入区段的标题以及 boost 值（如果需要），然后点按或单击&#x200B;**创建**。
+1. 在 **新建ContextHub区段**，输入区段的标题和boost值（如果需要），然后点按或单击 **创建**.
 
    ![新区段](../assets/contexthub-new-segment.png)
 
@@ -175,7 +175,7 @@ AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的�
 
 1. 将脚本注册到 `ContextHub.SegmentEngine.ScriptManager.register`。
 
-如果脚本依赖于其他属性，则脚本应调用 `this.dependOn()`。例如，如果脚本依赖于 `profile/age`，则：
+如果脚本依赖于其他属性，则脚本应调用 `this.dependOn()`。例如，如果脚本依赖于 `profile/age`：
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -199,8 +199,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 1. 提供文件夹的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
-   * 此 **名称** 将成为存储库中的节点名称。
-      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定。](/help/implementing/developing/introduction/naming-conventions.md)
+   * **名称**&#x200B;会成为存储库中的节点名称。
+      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定](/help/implementing/developing/introduction/naming-conventions.md).
       * 如有必要可以调整。
 
    ![创建文件夹](../assets/contexthub-create-folder.png)
@@ -279,7 +279,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 此类测试也可在内容页面上执行，并与目标内容以及相关的&#x200B;**活动**&#x200B;和&#x200B;**体验**&#x200B;相结合。
 
-如果您已设置活动和体验，则可使用活动轻松测试您的区段。有关设置活动的详细信息，请参阅[有关创作目标内容的文档](targeted-content.md)。
+如果您已设置活动和体验，则可使用活动轻松测试您的区段。有关设置活动的详细信息，请参阅 [有关创作目标内容的文档](targeted-content.md).
 
 1. 在已设置目标内容的页面的编辑模式下，您可以看到已通过内容上的箭头图标来目标内容。
 1. 切换到预览模式并使用 ContextHub，切换到与为体验配置的分段不匹配的角色。

@@ -3,9 +3,9 @@ title: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
 description: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1451'
 ht-degree: 19%
 
 ---
@@ -35,7 +35,7 @@ Managed Services和AEMas a Cloud Service中的Dispatcher配置结构存在差异
 
 ### 删除未使用的子文件夹和文件
 
-删除子文件夹 `conf` 和 `conf.modules.d`以及文件匹配 `conf.d/*.conf`.
+删除子文件夹 `conf` 和 `conf.modules.d`和文件匹配 `conf.d/*.conf`.
 
 ### 删除所有未发布的虚拟主机
 

@@ -2,16 +2,16 @@
 title: 配置 ContextHub
 description: 了解如何配置上下文中心。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1680'
 ht-degree: 1%
 
 ---
 
 # 配置 ContextHub {#configuring-contexthub}
 
-ContextHub是一个用于存储、操作和呈现上下文数据的框架。 有关ContextHub的更多详细信息，请参阅 [ContextHub开发人员概述](contexthub.md).
+ContextHub是一个用于存储、操作和呈现上下文数据的框架。 有关ContextHub的详细信息，请参阅 [ContextHub开发人员概述](contexthub.md).
 
 您可以配置ContextHub工具栏以控制它是否显示在预览模式下、创建ContextHub存储区以及添加UI模块。
 
@@ -149,7 +149,7 @@ contexthub.generic-jsonp存储已配置为存储服务调用的数据 `https://m
 
 Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSONP服务或Web服务检索数据。 对于此存储候选项，请使用存储配置提供要使用的JSONP服务的详细信息。
 
-此 [init](contexthub-api.md#init-name-config) 的功能 `ContextHub.Store.JSONPStore` Javascript类定义 `config` 初始化此存储候选项的对象。 此 `config` 对象包含 `service` 包含有关JSONP服务的详细信息的对象。 要配置存储，您需要提供 `service` JSON格式的对象，作为详细信息配置属性的值。
+此 [init](contexthub-api.md#init-name-config) 的功能 `ContextHub.Store.JSONPStore` JavaScript类定义 `config` 初始化此存储候选项的对象。 此 `config` 对象包含 `service` 包含有关JSONP服务的详细信息的对象。 要配置存储，您需要提供 `service` JSON格式的对象，作为详细信息配置属性的值。
 
 要从jsontest.com站点的MD5服务中保存数据，请按照以下步骤操作： [创建ContextHub存储](#creating-a-contexthub-store) 使用以下属性：
 
@@ -159,21 +159,21 @@ Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSON
 * **已启用：** 选择
 * **详细配置 (JSON):**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### 为md5数据添加UI模块 {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSON
 * **模块类型：** contexthub.base
 * **详细配置 (JSON):**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## 调试ContextHub {#debugging-contexthub}
 

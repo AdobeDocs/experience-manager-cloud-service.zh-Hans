@@ -4,10 +4,10 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 97%
+source-wordcount: '2379'
+ht-degree: 94%
 
 ---
 
@@ -85,7 +85,7 @@ The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI
 *   imsToken
 *   apikey
 
-For more information on these properties, refer to [Asset Selector Properties](#asset-selector-properties).
+For more information on these properties, see [Asset Selector Properties](#asset-selector-properties).
 
 **SUSI flow**
 
@@ -95,7 +95,7 @@ For more information on these properties, refer to [Asset Selector Properties](#
 *   imsOrg
 *   apikey
 
-For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
+For more information on these properties, see [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
 -->
 
 ## 安装 {#installation}
@@ -171,12 +171,12 @@ interface SelectedAsset {
 | *repo:size* | 数字 | 资源的大小，以字节为单位。 |
 | *repo:path* | 字符串 | 资源在存储库中的位置。 |
 | *repo:ancestors* | `Array<string>` | 存储库中资源的祖先项数组。 |
-| *repo:state* | 字符串 | 存储库中资源的当前状态（例如，活动、已删除等）。 |
+| *repo:state* | 字符串 | 存储库中资产的当前状态（例如，活动、删除等）。 |
 | *repo:createdBy* | 字符串 | 创建资源的用户或系统。 |
 | *repo:createDate* | 字符串 | 资源的创建日期和时间。 |
 | *repo:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
 | *repo:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
-| *dc:format* | 字符串 | 资源的格式，例如文件类型（例如 JPEG、PNG 等）。 |
+| *dc:format* | 字符串 | 资源的格式，例如文件类型(例如，JPEG、PNG等)。 |
 | *tiff:imageWidth* | 数字 | 资源的宽度。 |
 | *tiff:imageLength* | 数字 | 资源的高度。 |
 | *computedMetadata* | `Record<string, any>` | 一个对象，表示所有类型的所有资源元数据（存储库、应用程序或嵌入式元数据）的存储桶。 |
@@ -364,7 +364,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。此 `imsOrg` 需要密钥来验证您访问的组织是否处于Adobe IMS下。 |
 | *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用的是非 SUSI 流，则需要 `imsToken`。 |
 | *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用的是非 SUSI 流，则需要 `apiKey`。 |
-| *rootPath* | 字符串 | 否 | /content/dam/ | 资源选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径 `/content/dam/marketing/subfolder/`，资源选择器不允许您遍历任何父文件夹，而只显示子文件夹。 |
+| *rootPath* | 字符串 | 否 | /content/dam/ | 资源选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径， `/content/dam/marketing/subfolder/`，资产选择器不允许您遍历任何父文件夹，但仅显示子文件夹。 |
 | *path* | 字符串 | 否 | | 在呈现资源选择器时用于导航到特定资源目录的路径。 |
 | *filterSchema* | 数组 | 否 | | 用于配置过滤器属性的模型。这在需要限制资源选择器中的某些过滤器选项时很有用。 |
 | *filterFormProps* | 对象 | 否 | | 指定您需要用于细化搜索的过滤器属性。例如，MIME 类型 JPG、PNG、GIF。 |
@@ -477,7 +477,7 @@ interface SelectedAsset {
 | tiff:imageLength | number | The height of an image type of Asset |
 | repo:state | string | The `Approved`, `Rejected`, or `Expired`state of an Asset |
 | computedMetadata | string | It is an object that represents a bucket for all the Asset's metadata of all kinds (repository, application or embedded metadata) |
-| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, etc.  |
+| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, and so on  |
 
 For the detailed example of Object Schema, click 
 -->

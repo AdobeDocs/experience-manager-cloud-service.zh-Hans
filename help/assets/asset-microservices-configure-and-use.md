@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2933'
+source-wordcount: '2931'
 ht-degree: 3%
 
 ---
@@ -204,7 +204,7 @@ asset compute服务集成允许Experience Manager使用以下工具将这些参�
 
 后处理工作流模型是常规的 [!DNL Experience Manager] 工作流模型。 如果您需要对不同的存储库位置或资源类型进行不同的处理，请创建不同的模型。
 
-根据需要添加处理步骤。 您可以同时使用两个受支持的可用步骤以及任何自定义实施的工作流步骤。
+根据需要添加处理步骤。 您可以同时使用这两个步骤、可用的受支持步骤以及任何自定义实施的工作流步骤。
 
 确保每个后处理工作流的最后一步是 `DAM Update Asset Workflow Completed Process`. 最后一步可帮助确保Experience Manager知道何时完成资源处理。
 

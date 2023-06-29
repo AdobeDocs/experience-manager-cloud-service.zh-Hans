@@ -2,7 +2,7 @@
 title: SPA Blueprint
 description: 本文档描述了任何SPA框架都应该履行的一般且独立于框架的合同，以便您可以在AEM中实施可编辑的SPA组件。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2056'
 ht-degree: 2%
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 #### 对组件映射进行动态建模 {#dynamic-model-to-component-mapping}
 
-有关如何在Javascript SPA SDK for AEM中发生动态模型到组件映射的详细信息，请参阅文章 [SPA的动态模型到组件映射](model-to-component-mapping.md).
+有关如何在JavaScript SPA SDK for AEM中发生动态模型到组件映射的详细信息，请参阅文章 [SPA的动态模型到组件映射](model-to-component-mapping.md).
 
 ### 特定于Framework的层 {#framework-specific-layer}
 
@@ -106,7 +106,7 @@ npm模块： [@adobe/aem-angular-editable-components](https://www.npmjs.com/pack
 
 项目组件必须将模型片段的访问权限委派给模型提供程序。 然后，模型提供程序负责侦听对模型的指定片段所做的更改，并将更新的模型返回到委托组件。
 
-为此，模型提供程序必须注册到 [`PageModelManager`](#pagemodelmanager). 然后，当发生更改时，它会接收更新后的数据，并将其传递到委托组件。 按照惯例，提供给将承载模型片段的委托组件的属性被命名为 `cqModel`. 实施可以免费为组件提供此属性，但应考虑与框架架构集成、可发现性和易用性等方面。
+为此，模型提供程序必须注册到 [`PageModelManager`](#pagemodelmanager). 然后，当发生更改时，它会接收更新的数据并将该数据传递到委托组件。 按照惯例，提供给将承载模型片段的委托组件的属性被命名为 `cqModel`. 实施可以免费为组件提供此属性，但应考虑与框架架构集成、可发现性和易用性等方面。
 
 ### 组件HTML装饰器 {#the-component-html-decorator}
 
