@@ -3,9 +3,9 @@ title: 创建生产程序
 description: 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '581'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 96%
 1. 在&#x200B;**解决方案和插件** 选项卡，选择要包含在程序中的解决方案。
 
    * 如果您不确定是否需要一个或多个项目来提供各种解决方案，请选择您最感兴趣的项目。您可以稍后通过[编辑项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)来激活其他解决方案。有关更多项目设置建议，请参阅[生产项目简介文件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
-   * 如果您选择了 **启用增强安全性** 以前，您只能选择HIPAA权利可用的解决方案。
+   * 如果您之前选择了&#x200B;**启用增强安全性**，您只能选择 HIPAA 权利可用的解决方案。
 
    ![选择解决方案](assets/setup-prod-select.png)
 
