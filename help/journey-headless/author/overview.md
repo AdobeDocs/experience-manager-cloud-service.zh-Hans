@@ -3,7 +3,7 @@ title: AEM Headless 内容作者历程
 description: 从此处开始，借助 AEM 强大而灵活的 Headless 功能、相应的功能以及为项目创作内容的方法，实施引导式历程。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '865'
 ht-degree: 100%
 
