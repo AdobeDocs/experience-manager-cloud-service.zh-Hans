@@ -3,9 +3,9 @@ title: 数据保护和数据隐私条例 - Adobe Experience Manager as a Cloud S
 description: 了解 Adobe Experience Manager as a Cloud Service Sites 对各种数据保护和数据隐私条例的支持，包括欧盟通用数据保护条例 (GDPR)、加州消费者隐私法案以及如何在实施新的 AEM as a Cloud Service 项目时实现合规性。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Adobe Experience Manager 受 Cookie 选择退出服务的约束，该服务用�
 
 1. 选择引用的链接；当前名为&#x200B;**此处**。
 
-1. 此时会显示以下详细信息以及选择退出或加入的选项：
+1. 您会看到以下详细信息以及用于选择退出或选择加入的选项：
 
    * 要选择退出对有关您访问本网站的数据进行聚合和分析，必须在浏览器上安装 Cookie。此 Cookie 表明您已选择退出。
 
@@ -174,7 +174,7 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     ContextHub存储定义使用哪个持久层，因此，要查看持久性的当前状态，应检查所有层。
+     ContextHub 存储会定义使用哪个持久层，因此，要查看持久存储的当前状态，应检查所有层。
 
 例如，要查看存储在 localStorage 中的数据，请执行以下操作：
 
@@ -203,7 +203,7 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-     ContextHub存储定义使用哪个持久层，因此，要查看持久性的当前状态，应检查所有层。
+     ContextHub 存储会定义使用哪个持久层，因此，要查看持久存储的当前状态，应检查所有层。
 
 例如，要查看存储在 localStorage 中的数据，请执行以下操作：
 
