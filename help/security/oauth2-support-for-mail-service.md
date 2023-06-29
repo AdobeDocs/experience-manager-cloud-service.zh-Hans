@@ -100,7 +100,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 >
 > 您可以从[此位置](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)获取 Postman API 收藏集。
 >
-> 请参阅MSFT Oauth文档 [此处](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) 了解更多详细信息。
+> 请参阅MSFT Oauth文档 [此处](https://learn.microsoft.com/zh-cn/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) 了解更多详细信息。
 
 ### 与 AEM as a Cloud Service 集成 {#integration-with-aem-as-a-cloud-service}
 
@@ -133,7 +133,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
    * `email`
    * `profile`
 1. 使用以下语法创建 OSGI 属性文件 `called com.day.cq.mailer.DefaultMailService.cfg.json`
-（在`/apps/<my-project>/osgiconfig/config` 下）。此 `smtp.host` 和 `smtp.port` 值反映高级联网配置，如 [电子邮件服务教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
+（在`/apps/<my-project>/osgiconfig/config` 下）。此 `smtp.host` 和 `smtp.port` 值反映高级联网配置，如 [电子邮件服务教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=zh-Hans).
 
    ```
    {

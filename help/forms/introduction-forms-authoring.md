@@ -155,7 +155,7 @@ XML 和 JSON 架构代表组织中的后端系统在其中生成或使用数据�
   </tr>
   <tr>
    <td>文件附件</td>
-   <td><p>添加一个按钮，可让用户浏览支持文档并将其附加到表单。</p> <p><strong>注意：</strong>文件附件组件支持为 Adobe Sign 启用的自适应表单中的一组预定义的文件格式。有关更多信息，请参阅<a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">支持的文件格式</a>。</p> </td>
+   <td><p>添加一个按钮，可让用户浏览支持文档并将其附加到表单。</p> <p><strong>注意：</strong>文件附件组件支持为 Adobe Sign 启用的自适应表单中的一组预定义的文件格式。有关更多信息，请参阅<a href="https://helpx.adobe.com/cn/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">支持的文件格式</a>。</p> </td>
   </tr>
   <tr>
    <td>文件附件列表</td>

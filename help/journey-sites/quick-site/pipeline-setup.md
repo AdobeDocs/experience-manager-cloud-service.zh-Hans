@@ -104,7 +104,7 @@ ht-degree: 91%
 >
 >如果您已熟悉AEMaaCS中的管道并希望详细了解不同类型管道之间的差异，包括有关前端管道的更多详细信息，请参阅配置CI/CD管道 — 中链接的Cloud Services [其他资源](#additional-resources) 部分。
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 现在您已完成 AEM 快速站点创建历程的这一部分，您应：
 

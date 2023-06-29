@@ -2,10 +2,10 @@
 title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 92%
+source-wordcount: '1223'
+ht-degree: 88%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，另请参见[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
+>有关更多信息，请参阅 [了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 >[!CAUTION]
 >
@@ -115,7 +115,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 当指定的内容片段被添加到页面时，在片段的每个 HTML 段落之间（和顶部/底部）会有一个&#x200B;**将组件拖动到此处**&#x200B;占位符。
 
-这允许您在片段内容[中间](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的任何可用位置添加额外内容（即中间内容），而无需更改根片段。
+这允许您添加额外内容 [中间内容（即中间内容）](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) 片段内容（在任何可用点），无需更改根片段。
 
 对于中间内容，您可以：
 
@@ -137,7 +137,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 >[!CAUTION]
 >
->在将中间内容添加到页面上的内容片段之后，更改基础内容片段的结构（例如在内容片段编辑器中）可能会导致错误/意外的结果。
+>将中间内容添加到页面上的内容片段后，更改基础内容片段的结构（即，在内容片段编辑器中）可能会导致错误/意外结果。
 >
 >在发生此问题时，中间内容会按原样保留：
 >
@@ -148,7 +148,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 ### 使用关联内容 {#using-associated-content}
 
-如果您拥有 [关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) 使用 [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 这些资产可从侧面板（在将片段放置到内容页面后）中使用。 关联内容实际上是[中间内容](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
+如果您有与[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)[关联的内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)，则这些资产在侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是[中间内容](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
 
 >[!NOTE]
 >

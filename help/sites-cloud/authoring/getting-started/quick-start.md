@@ -2,10 +2,10 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 61%
+source-wordcount: '1569'
+ht-degree: 92%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 61%
 
 * 重新排序页面
 
-   * 这可以在以下位置完成 [列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). 更改在其他视图中可应用并显示。
+   * 这可以在[列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)中完成。更改已应用并在其他视图中可见。
 
 ### 页面创作 {#page-authoring}
 
 * 导航链接
 
-   * **链接不可用于导航** 当您在 **编辑** 模式。 要使用链接进行导航，您需要 [预览页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) 使用：
+   * 当您处于&#x200B;**编辑**&#x200B;模式下时，**链接不可用于导航**。要通过链接导航，您需要使用以下任一方式来[预览页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)：
 
       * [预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [以发布的形式查看](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
@@ -48,7 +48,7 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->有许多键盘快捷键可简化创作体验。
+>有许多键盘快捷键可帮助您更轻松地创作体验。
 >
 >* [编辑页面时的键盘快捷键](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [控制台的键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -57,7 +57,7 @@ ht-degree: 61%
 
 查找页面时存在很多方面；您可以导航和/或搜索：
 
-1. 打开&#x200B;**站点**&#x200B;控制台（使用&#x200B;**全局导航**&#x200B;中的[站点](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)选项 - 它将在您选择 Adobe Experience Manager（左上方）时以下拉菜单的形式触发）。
+1. 打开 **站点** 控制台(使用 **站点** 中的选项 [全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)  — 当您选择Adobe Experience Manager链接（左上方）时，会触发（下拉列表）。
 
 1. 通过点按/单击相应的页面，在树中向下导航。页面资源的显示方式取决于您所使用的视图 - [卡片视图、列表视图或列视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)：
 
@@ -67,7 +67,7 @@ ht-degree: 61%
 
    ![痕迹导航下拉列表](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
-1. 您还可以 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 对于页面。 您可以从显示的结果中选择页面。
+1. 您还可以[搜索](/help/sites-cloud/authoring/getting-started/search.md)页面。您可以从所显示的结果中选择页面。
 
    ![搜索字段](/help/sites-cloud/authoring/assets/search.png)
 
@@ -76,17 +76,17 @@ ht-degree: 61%
 要[创建新的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，请执行以下操作：
 
 1. [导航到要创建新页面的位置](#finding-your-page)。
-1. 使用 **创建** 图标，然后选择 **页面** 从列表中：
+1. 使用&#x200B;**创建**&#x200B;图标，然后从列表中选择&#x200B;**页面**：
 
    ![“创建”按钮](/help/sites-cloud/authoring/assets/create.png)
 
-1. 这将打开向导，引导您收集以下情况下所需的信息： [创建新页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page). 按照屏幕上的说明操作。
+1. 这将打开向导，逐步指导您收集[创建新页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)时所需的信息。按照屏幕上的说明操作。
 
-### 选择页面以执行进一步操作 {#selecting-your-page-for-further-action}
+### 选择页面以执行其他操作 {#selecting-your-page-for-further-action}
 
-您可以选择某个页面以便对其执行操作。 选择页面将自动更新工具栏，以便显示与该资源相关的操作。
+您可以选择一个页面，以对其执行操作。选择页面后，工具栏将自动更新，以显示与该资源相关的操作。
 
-如何选择页面取决于您在控制台中使用的视图：
+选择页面的方式取决于您在控制台中所使用的视图：
 
 1. 列视图：
 
@@ -112,7 +112,7 @@ ht-degree: 61%
 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)可用：
 
 1. [导航](#finding-your-page)到要执行操作的页面。
-1. 将鼠标指针悬停在表示所需资源的卡片上。 此时会显示快速操作：
+1. 将鼠标指针悬停在代表所需资源的卡片上方。快速操作会显示：
 
    ![卡片操作](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -130,7 +130,7 @@ ht-degree: 61%
    * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
    * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
 
-1. 打开编辑器后，您可以：
+1. 编辑器打开后，您可以：
 
    * 通过以下方式[向页面中添加新组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component)：
 
@@ -142,24 +142,24 @@ ht-degree: 61%
 
      ![侧面板切换按钮](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-   * [编辑现有组件的内容](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 在页面上：
+   * [编辑页面中现有组件的内容](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)：
 
-      * 通过点按或单击打开组件工具栏。使用 **编辑** （铅笔）图标以打开对话框。
-      * 通过长按或双击打开组件的就地编辑器。 将显示可用的操作（对于某些组件，这是有限的选择）。
-      * 要查看所有可用操作，请使用以下方式进入全屏模式：
+      * 通过点按或单击打开组件工具栏。使用&#x200B;**编辑**（铅笔）图标打开对话框。
+      * 通过点按住或慢速双击打开组件的就地编辑器。此时会显示可用的操作（对于某些组件，该选择将受到限制）。
+      * 要查看所有可用的操作，请使用以下图标进入全屏模式：
 
         ![全屏按钮](/help/sites-cloud/authoring/assets/full-screen.png)
 
    * [配置现有组件的属性](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * 通过点按或单击打开组件工具栏。使用 **配置** （扳手）图标以打开对话框。
+      * 通过点按或单击打开组件工具栏。使用&#x200B;**配置**（扳手）图标打开对话框。
 
-   * [移动组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) 可以：
+   * 通过以下任一方式[移动组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)：
 
-      * 将所需的组件拖动到新位置。
+      * 将所需组件拖动到新位置。
       * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**剪切**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
 
-   * [复制（和粘贴）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 组件：
+   * [复制（并粘贴）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
       * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
 
@@ -171,52 +171,52 @@ ht-degree: 61%
 
       * 通过点按或单击打开组件工具栏，然后使用&#x200B;**删除**&#x200B;图标。
 
-   * [添加注释](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) 到页面：
+   * 向页面[添加注释](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations)：
 
-      * 选择 **批注** 模式（语音泡图标）。 使用添加注释 **添加注释** （加号）图标。 使用右上方的 X 退出注释模式。
+      * 选择&#x200B;**注释**&#x200B;模式（对话气泡图标）。使用&#x200B;**添加注释**（加号）图标添加注释。使用右上方的 X 退出注释模式。
 
         ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
 
-   * [预览页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) （查看它将在发布环境中的显示方式）
+   * [预览页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)（用于查看页面在发布环境中的显示情况）
 
-      * 选择 **预览** 工具栏中。
+      * 从工具栏中选择&#x200B;**预览**。
 
    * 使用返回到编辑模式（或选择其他模式） **编辑** 下拉选择器。
 
    >[!NOTE]
    >
-   >要使用内容中的链接进行导航，您必须使用 [预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
+   >要使用内容中的链接导航，您必须使用[预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)。
 
 ### 编辑页面属性 {#editing-the-page-properties}
 
-有两个（主要）方法 [编辑页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)：
+[编辑页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)的方法（主要）有两种：
 
 * 从&#x200B;**站点**&#x200B;控制台中：
 
-   1. [导航到页面](#finding-your-page) 您要发布。
-   1. 选择 **属性** 图标：
+   1. [导航](#finding-your-page)到要发布的页面。
+   1. 从以下任一位置选择&#x200B;**属性**&#x200B;图标：
 
       * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
       * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
 
       ![“属性”按钮](/help/sites-cloud/authoring/assets/properties.png)
 
-   1. 此时将显示页面属性。 您可以进行需要的更新，然后使用“保存”保留这些更改
+   1. 页面属性会显示。您可以进行需要的更新，然后使用“保存”保留这些更改
 
-* 时间 [编辑页面](#editing-your-page-content)：
+* 在[编辑页面](#editing-your-page-content)时：
 
-   1. 打开 **页面信息** 菜单。
-   1. 选择 **打开属性** 打开对话框以编辑属性。
+   1. 打开&#x200B;**页面信息**&#x200B;菜单。
+   1. 选择&#x200B;**打开属性**&#x200B;以打开用于编辑属性的对话框。
 
       ![“页面信息”按钮](/help/sites-cloud/authoring/assets/page-information.png)
 
 ### 发布页面（或取消发布） {#publishing-your-page-or-unpublishing}
 
-有两种主要方法 [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) （以及取消发布）：
+[发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)（和取消发布）的方法主要有两种：
 
 * 从&#x200B;**站点**&#x200B;控制台中：
 
-   1. [导航到页面](#finding-your-page) 您要发布。
+   1. [导航](#finding-your-page)到要发布的页面。
    1. 从以下任一位置选择&#x200B;**快速发布**&#x200B;图标：
 
       * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
@@ -224,27 +224,27 @@ ht-degree: 61%
 
       ![“快速发布”按钮](/help/sites-cloud/authoring/assets/quick-publish.png)
 
-* 时间 [编辑页面](#editing-your-page-content)：
+* 在[编辑页面](#editing-your-page-content)时：
 
-   1. 打开 **页面信息** 菜单。
-   1. 选择 **发布页面**.
+   1. 打开&#x200B;**页面信息**&#x200B;菜单。
+   1. 选择&#x200B;**发布页面**。
 
 * 从控制台取消发布页面只能通过&#x200B;**管理发布**&#x200B;选项完成，该选项仅在工具栏上可用（不能通过快速操作）。
 
   ![“管理发布”按钮](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-  此 **取消发布页面** 选项仍可通过 **页面信息** 菜单。
+  **取消发布页面**&#x200B;选项仍可通过编辑器中的&#x200B;**页面信息**&#x200B;菜单使用。
 
-  参见 [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) 了解更多信息。
+  请参阅[发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)以了解更多信息。
 
-### 移动、复制和粘贴或删除页面 {#move-copy-and-paste-or-delete-your-page}
+### 移动、复制并粘贴或删除页面 {#move-copy-and-paste-or-delete-your-page}
 
-这些操作均可通过以下方式触发：
+这些操作全部可以通过以下项触发：
 
-1. [导航到页面](#finding-your-page) 要移动、复制和粘贴或删除。
+1. [导航](#finding-your-page)到要移动、复制并粘贴或删除的页面。
 1. 使用以下任一方式根据需要选择复制（然后粘贴）、移动或删除图标：
 
-   * [快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only) （对于所需资源）。
+   * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
    * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
 
    然后，取决于您的操作：
@@ -259,7 +259,7 @@ ht-degree: 61%
 
    * [删除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)：
 
-      * 系统会要求您确认操作。
+      * 系统会要求您确认该操作。
 
    >[!NOTE]
    >
@@ -270,7 +270,7 @@ ht-degree: 61%
 [锁定页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) ，可阻止其他作者在您处理页面时对其进行处理。 可以找到“锁定”（和“解锁”）图标／按钮：
 
 * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
-* 编辑页面时显示的[“页面信息”下拉菜单](#editing-the-page-properties)。
+* 此 [“页面信息”下拉菜单](#editing-the-page-properties) 编辑页面时。
 * 编辑页面（页面处于锁定状态）时显示的页面工具栏
 
 例如，“锁定”图标如下所示：
@@ -289,9 +289,9 @@ ht-degree: 61%
 
    ![引用视图](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 点按/单击所需的引用类型以显示更多详细信息，并（在适当时）采取进一步操作。
+1. 点按/单击所需的引用类型，以显示更多详细信息并（视需要）执行进一步操作。
 
-### 创建页面的版本 {#creating-a-version-of-your-page}
+### 创建页面版本 {#creating-a-version-of-your-page}
 
 要创建页面的[版本](/help/sites-cloud/authoring/features/page-versions.md)：
 
@@ -313,9 +313,9 @@ ht-degree: 61%
 
    ![时间线视图选项](/help/sites-cloud/authoring/assets/timeline.png)
 
-   如果页面的某个版本已保存，则会在“时间线”中列出该版本。
+   如果页面的某个版本已经保存，则会在“时间轴”中列出该版本。
 
-1. 点按/单击要还原的版本 — 这将显示其他操作按钮：
+1. 点按/单击要恢复的版本 - 这将显示其他操作按钮：
 
    * **恢复到此版本**
 

@@ -380,7 +380,7 @@ AEM Screens 可以根据上下文动态更改内容。在We.Cafe演示中，使�
 
 ![入口显示（横向）](assets/entrance-landscape.jpg)
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 现在您已完成AEM参考演示加载项历程的这一部分，您应：
 

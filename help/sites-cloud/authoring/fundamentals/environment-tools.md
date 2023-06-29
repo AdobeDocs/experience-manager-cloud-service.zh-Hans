@@ -2,10 +2,10 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
-ht-degree: 55%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 编辑页面内容 {#editing-page-content}
 
-您可以使用页面编辑器编辑页面。 例如：
+您可以使用页面编辑器来编辑页面。例如：
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -31,9 +31,9 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 >[!NOTE]
 >
->首次打开页面进行编辑时，一系列幻灯片将为您提供这些功能的概览。
+>当您首次打开页面进行编辑时，会显示一系列幻灯片，带您浏览各项功能。
 >
->您可以根据需要跳过导览，并通过从 **页面信息** 菜单。
+>如果不想浏览，可以跳过；如果想重新浏览，可以随时从&#x200B;**页面信息**&#x200B;菜单中进行选择。
 
 ## 访问帮助 {#accessing-help}
 
@@ -42,39 +42,39 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * [**页面信息**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)&#x200B;选择器，这将显示幻灯片介绍（在您第一次访问编辑器时显示）
 * 适用于特定组件的[配置](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)对话框（使用对话工具栏中的 ? 图标），其中将显示上下文相关帮助
 
-更多 [控制台中提供了与帮助相关的资源](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
+其他[与帮助相关的资源可以从控制台中访问](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)。
 
 ## 组件浏览器 {#components-browser}
 
-组件是 AEM 内容的构建基块。您可以将多个组件放在一个页面上，并配置其选项以使用AEM构建内容页面。
+组件是 AEM 内容的构建基块。您可以将多个组件放在一个页面上并配置其选项，以便使用 AEM 构建内容页面。
 
-组件浏览器会显示可在当前页面上使用的所有组件。 可以将这些内容拖到相应的位置，然后进行编辑以添加您的内容。
+组件浏览器会显示当前页面上可用的所有组件。这些组件可拖动至相应的位置，然后进行编辑以添加您的内容。
 
 组件浏览器是侧面板中的一个选项卡（侧面板中还有[资产浏览器](#assets-browser)和[内容树](#content-tree)）。要打开（或关闭）侧面板，请使用工具栏左上方的图标：
 
 ![侧面板切换](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-打开侧面板时，它将从左侧滑开(选择 **组件** 选项卡（如有必要）。 打开时，您可以浏览页面可用的所有组件。
+打开侧面板时，它将从左侧滑开（根据需要选择&#x200B;**组件**&#x200B;选项卡）。打开后，您可以浏览所有可用于页面的组件。
 
 实际外观和操作取决于您所使用的设备类型：
 
 * **移动设备（例如 iPad）**
 
-  组件浏览器完全覆盖正在编辑的页面。
+  组件浏览器完整覆盖了编辑的页面。
 
-  要将组件添加到页面，请按住所需的组件并将其向右移动，组件浏览器将关闭以再次显示页面 — 您可以在其中放置组件。
+  要向页面添加组件，请长按所需的组件，然后将其向右移动 - 组件浏览器将关闭以重新显示该页面，此时您便可以放置组件。
 
   ![移动设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **桌面设备**
 
-  组件浏览器将在窗口的左侧打开。
+  将在窗口左侧打开组件浏览器。
 
-  要将组件添加到页面，请单击所需的组件，然后将其拖动到所需的位置。
+  要向页面添加组件，请单击所需的组件，然后将其拖动到所需的位置。
 
   ![桌面设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-  组件由表示
+  组件通过以下形式来表示
 
    * 组件名称
    * 组件组（灰色）
@@ -85,7 +85,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
   从&#x200B;**组件**&#x200B;浏览器顶部的工具栏可以：
 
    * 按名称筛选组件。
-   * 使用下拉选择框将显示内容限定为特定组。
+   * 使用下拉选择将显示限制为特定组。
 
   有关组件的更多详细说明，您可以单击或点按&#x200B;**组件**&#x200B;浏览器（如果可用）中组件旁边的信息图标。例如，对于&#x200B;**内容片段**：
 
@@ -95,11 +95,11 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 >[!NOTE]
 >
->当宽度小于1024像素时检测到移动设备。 对于小型桌面窗口也是如此。
+>系统能够检测到宽度小于 1024 像素的移动设备。这种情况也可能出现在较小的桌面窗口中。
 
 ## 资产浏览器 {#assets-browser}
 
-资产浏览器会显示所有 [资产](/help/assets/home.md) 这些资源可在当前页面上直接使用。
+资产浏览器会显示当前页面上可直接使用的所有[资产](/help/assets/home.md)。
 
 资产浏览器是侧面板中的一个选项卡，侧面板中还有[组件浏览器](#components-browser)和[内容树](#content-tree)。要打开或关闭侧面板，请使用工具栏左上角的图标：
 
@@ -109,11 +109,11 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![“资产浏览器”按钮](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
-当资产浏览器打开时，您可以浏览页面可用的所有资产。 需要时可使用无限滚动来展开列表。
+打开资产浏览器后，您可以浏览所有可用于页面的资产。如果需要，可使用无限滚动展开列表。
 
 ![资产浏览器](/help/sites-cloud/authoring/assets/assets-browser.png)
 
-要将资源添加到页面，请选择并拖动到所需的位置。 这可以是：
+要向页面添加资产，请选择资产并将其拖动到所需的位置。可以添加的资产包括：
 
 * 相应类型的现有组件。
    * 例如，可以将图像类型的资产拖动到图像组件上。
@@ -122,23 +122,23 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 >[!NOTE]
 >
->这适用于特定资源和组件类型。 参见 [使用资产浏览器插入组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) 了解更多详细信息。
+>此功能适用于特定资产和组件类型。有关更多详细信息，请参阅[使用资产浏览器插入组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser)。
 
-在资源浏览器的顶部工具栏中，您可以通过以下方式筛选资源：
+从资产浏览器的顶部工具栏中，可以按以下条件筛选资产：
 
 * 名称
 * 路径
 * 资产类型，如图像、视频、文档、段落、内容片段和体验片段
 * 资源特性，如方向和样式
-   * 仅适用于特定资源类型
+   * 仅适用于某些资产类型
 
 实际外观和操作取决于您所使用的设备类型：
 
 * **移动设备**
 
-  资产浏览器会完全覆盖正在编辑的页面。
+  资产浏览器完全覆盖了所编辑的页面。
 
-  要将资源添加到页面，请触控并按住所需资源，然后将其向右移动 — 资源浏览器将关闭以再次显示页面，您可以在其中将资源添加到所需组件。
+  要向页面添加资产，请长按所需的资产，然后将其向右移动 - 资产浏览器将关闭以重新显示该页面，此时您便可以向所需的组件添加资产。
 
   ![移动设备上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
@@ -146,13 +146,13 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
   将在窗口左侧打开资产浏览器。
 
-  要将资源添加到页面，请单击所需的资源并将其拖动到所需的组件或位置。
+  要向页面添加资产，请单击所需的资产，然后将其拖动到所需的组件或位置。
 
   ![桌面设备上的资产浏览器](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
->在宽度小于 1024 像素时将视为检测到移动设备，这种情况也可能出现在较小的桌面窗口中。
+>当宽度小于1024像素时检测到移动设备；即，也是在小型桌面窗口上。
 
 如果您需要快速更改资产，可以直接从资产浏览器启动[资产编辑器](/help/assets/manage-digital-assets.md)，方法是单击资产名称旁边显示的编辑图标。
 
@@ -160,25 +160,25 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 内容树 {#content-tree}
 
-此 **内容树** 以层次结构概览页面上的所有组件，以便您一眼就能看到页面的构成方式。
+**内容树**&#x200B;概述了层次结构中页面上的所有组件，以便您能够快速了解页面的组成方式。
 
-内容树是侧面板中的一个选项卡（侧面板中还有组件和资产浏览器）。 要打开（或关闭）侧面板，请使用工具栏左上方的图标：
+内容树是侧面板中的一个选项卡（侧面板中还有组件浏览器和资产浏览器）。要打开（或关闭）侧面板，请使用工具栏左上方的图标：
 
 ![“内容树”按钮](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-打开侧面板时，它将（从左侧）滑开。根据需要选择&#x200B;**内容树**&#x200B;选项卡。打开时，您可以看到页面或模板的树视图表示形式，以便更容易了解其内容是如何按层次结构构建的。 此外，在复杂的页面上，还可以更轻松地在页面的组件之间跳转。
+打开侧面板时，它将（从左侧）滑开。根据需要选择&#x200B;**内容树**&#x200B;选项卡。打开该选项卡后，您会看到页面或模板的树视图表现形式，以便您更方便地了解其内容的层次构成方式。此外，您还可以更轻松地在复杂页面上的组件之间进行跳转。
 
 ![内容树](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
-页面可以由许多相同类型的组件轻松组成，因此内容（组件）树会在组件类型名称（黑色）之后显示描述性文本（灰色）。描述性文本来自组件的常见属性，如标题或文本。
+页面可以由许多相同类型的组件轻松组成，因此内容（组件）树会在组件类型名称（黑色）之后显示描述性文本（灰色）。描述性文本来自组件的常见属性，例如标题或文本。
 
-组件类型以用户语言显示，而组件描述文本来自页面语言。
+组件类型会以用户语言显示，而组件描述文本将来自页面语言。
 
-单击组件旁边的V形标记将折叠或展开该级别。
+单击组件旁边的 V 形图标将折叠或展开该级别。
 
 ![内容树 V 形扩展](/help/sites-cloud/authoring/assets/content-tree-chevron.png)
 
-单击组件将在页面编辑器中突出显示组件。 可用的操作将取决于页面状态：
+单击组件将在页面编辑器中突出显示组件。可用的操作将取决于页面状态：
 
 * 例如，基本页面：
 
@@ -186,7 +186,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
   基本页面的组件将具有常用选项。
 
-  如果单击树中的组件可编辑，则名称右侧将显示扳手图标。 单击此图标将直接启动组件的“编辑”对话框。
+  如果在树中单击的组件是可编辑的，则会在其名称右侧显示一个扳手图标。单击此图标将直接启动组件的编辑对话框。
 
   ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -202,7 +202,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 引用 {#references}
 
-**引用** 显示选定页面的连接：
+**引用**&#x200B;显示了与所选页面的所有关联：
 
 * Blueprint
 * 启动项
@@ -219,7 +219,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![引用详细信息](/help/sites-cloud/authoring/assets/references-detail.png)
 
-有关详细信息，请选择相应的参照类型。 在某些情况下，当您选择特定引用时，还可以执行其他操作，包括：
+选择相应的引用类型可获取详细信息。在某些情况下，当您选择了某个特定引用后，您还可以执行其他操作，包括：
 
 * **传入链接**，在选择特定链接后提供引用页面的页面列表，并可直接访问以&#x200B;**编辑**&#x200B;这些页面之一
 * 使用&#x200B;**引用**&#x200B;组件的借入和借出内容的实例，您可以从此处导航至正在引用/引用的页面
@@ -258,17 +258,17 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * [帮助](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [提升启动项](/help/sites-cloud/authoring/launches/promoting.md)（如果该页面是启动项）
 
-此外， **页面信息** 在适当的时候，可以提供对analytics和推荐的访问权限。
+另外，在适当时，**页面信息**&#x200B;还允许访问分析和建议。
 
 ## 页面模式 {#page-modes}
 
-在编辑页面时，有多种模式允许不同的操作：
+编辑页面时可以使用多种模式来执行不同的操作：
 
-* [编辑](/help/sites-cloud/authoring/fundamentals/editing-content.md)  — 编辑页面内容时使用的模式。
+* [编辑](/help/sites-cloud/authoring/fundamentals/editing-content.md) - 编辑页面内容时使用的模式。
 * [布局](/help/sites-cloud/authoring/features/responsive-layout.md) - 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
-* [定位](/help/sites-cloud/authoring/personalization/targeted-content.md)  — 通过在所有渠道中进行定位和衡量来提高内容相关性。
-* [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  — 允许您查看特定时间点的页面状态。
-* [Live Copy状态](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status)  — 允许快速概述Live Copy状态以及哪些组件是/不是继承的。
+* [定位](/help/sites-cloud/authoring/personalization/targeted-content.md) - 通过在所有渠道中进行定位和衡量来提高内容相关性。
+* [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 允许您查看页面在特定时间点的状态。
+* [Live Copy 状态](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) – 允许快速查看 Live Copy 状态以及继承/未继承的组件。
 * [开发人员模式](/help/implementing/developing/tools/developer-mode.md)
 * [预览](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages)  — 用于查看在发布环境中显示的页面；或使用内容中的链接进行导航。
 * [注释](/help/sites-cloud/authoring/fundamentals/annotations.md) - 用于在页面上添加或查看注释。
@@ -280,18 +280,18 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 >[!NOTE]
 >
 >* 根据页面的特性，某些模式可能不可用。
->* 访问某些模式需要适当的权限。
->* 由于空间限制，开发人员模式在移动设备上不可用。
+>* 某些模式需要相应的许可/权限才能访问。
+>* 由于空间限制，“开发人员”模式在移动设备上不可用。
 >* 使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) 可以在&#x200B;**预览**&#x200B;模式和当前选定的模式（例如，**编辑**、**布局**&#x200B;等）之间切换。
 >
 
 ## 路径选择 {#path-selection}
 
-通常，在创作时，需要选择其他资源，例如定义指向其他页面或资源的链接或选择图像时。 要轻松选择路径， [路径字段](#path-fields) 优惠自动完成和 [路径浏览器](#path-browser) 允许进行更可靠的选择。
+在创作时，通常需要选择其他资源，例如在定义指向其他页面或资源的链接或者选择图像时。为了轻松选择路径，[路径字段](#path-fields)提供了自动完成功能，并且还可通过[路径浏览器](#path-browser)做出更可靠的选择。
 
 ### 路径字段 {#path-fields}
 
-此处用于说明的示例是图像组件。 有关使用和编辑组件的更多信息，请参阅 [用于页面创作的组件](/help/sites-cloud/authoring/fundamentals/components.md).
+此处所用的说明示例是图像组件。有关使用和编辑组件的更多信息，请参阅[页面创作组件](/help/sites-cloud/authoring/fundamentals/components.md)。
 
 路径字段现在具有自动完成和先行智能功能，可更方便地查找资源。
 
@@ -305,14 +305,14 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ### 路径浏览器 {#path-browser}
 
-路径浏览器的组织方式与站点控制台的[列视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)相似，允许查看更多详细资源选择选项。
+路径浏览器的组织方式与 Sites 控制台的[列视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)相似，允许查看更多详细资源选择选项。
 
 ![路径浏览器](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* 选择资源后， **选择** 对话框右上角的按钮变为活动状态。 单击或点按以确认选择或 **取消** 以中止。
+* 选择资源后，对话框右上角的&#x200B;**选择**&#x200B;按钮将变为活动状态。单击或点按以确认选择，或者单击或点按&#x200B;**取消**&#x200B;以中止操作。
 * 如果上下文允许选择多个资源，则选择某个资源也会激活“选择 **** ”按钮，但也会将选定资源的计数添加到窗口的右上角。 单击该 **数字旁边的** X可取消选择全部。
-* 在树中导航时，您的位置会反映在对话框顶部的痕迹导航中。 这些痕迹导航还可用于在资源层次结构中快速跳转。
-* 您可以随时使用对话框顶部的搜索字段。 单击 **X** 以清除搜索。
+* 在树中导航时，您的位置会反映在对话框顶部的痕迹导航中。还可使用这些痕迹导航在资源层次结构中快速跳转。
+* 您随时都可以使用对话框顶部的搜索字段。单击搜索字段中的 **X** 可清除搜索。
 * 要缩小搜索范围，您可以显示过滤器选项并按特定路径筛选结果。
 
   ![过滤器选项](/help/sites-cloud/authoring/assets/filters-option.png)

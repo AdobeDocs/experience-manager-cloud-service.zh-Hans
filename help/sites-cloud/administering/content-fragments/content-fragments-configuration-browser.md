@@ -1,6 +1,6 @@
 ---
 title: 内容片段 – 配置浏览器
-description: 了解如何在配置浏览器中启用内容片段和 GraphQL 功能，从而可利用 AEM 无头交付功能。
+description: 了解如何在配置浏览器中启用内容片段和 GraphQL 功能，从而可利用 AEM Headless 交付功能。
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5

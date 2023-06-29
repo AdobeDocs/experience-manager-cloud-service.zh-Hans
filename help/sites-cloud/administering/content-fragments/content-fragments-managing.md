@@ -288,7 +288,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!CAUTION]
 >
-片段发布、引用或同时发布和引用后，当作者再次打开片段进行编辑时，AEM 会显示警告。作者会收到警告——对片段所做的更改也会影响引用的页面。
+片段发布、引用或同时发布和引用后，当作者再次打开片段进行编辑时，AEM 会显示警告。作者会收到警告，表示对片段所做的更改也会影响引用的页面。
 
 ## 取消发布片段 {#unpublishing-a-fragment}
 

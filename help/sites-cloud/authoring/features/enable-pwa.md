@@ -26,18 +26,18 @@ ht-degree: 91%
 
 ## 简介 {#introduction}
 
-利用[渐进式 Web 应用程序 (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)，可以将 AEM 站点本地存储在用户计算机上并使其可供脱机访问，从而实施针对 AEM 站点的像应用程序一样的沉浸式体验。即使失去 Internet 连接，用户也可以在旅途中浏览站点。即使网络丢失或不稳定，PWA 也能提供无缝体验。
+利用[渐进式 Web 应用程序 (PWA)](https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps)，可以将 AEM 站点本地存储在用户计算机上并使其可供脱机访问，从而实施针对 AEM 站点的像应用程序一样的沉浸式体验。即使失去 Internet 连接，用户也可以在旅途中浏览站点。即使网络丢失或不稳定，PWA 也能提供无缝体验。
 
 内容作者无需对站点进行任何重新编码，而是能够将 PWA 属性配置为站点的[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)中的附加选项卡。
 
-* 在保存或发布后，此配置会触发一个写出[清单文件](https://developer.mozilla.org/en-US/docs/Web/Manifest)的事件处理程序和一个在站点上启用 PWA 功能的 [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)。
+* 在保存或发布后，此配置会触发一个写出[清单文件](https://developer.mozilla.org/zh-CN/docs/Web/Manifest)的事件处理程序和一个在站点上启用 PWA 功能的 [Service Worker](https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API)。
 * 此外，还将维护 Sling 映射，确保从应用程序根提供 Service Worker 以启用代理内容，从而允许应用程序内的离线功能。
 
 利用 PWA，用户可以获得站点的本地副本，并提供像应用程序一样的体验，即使没有 Internet 连接也是如此。
 
 >[!NOTE]
 >
->渐进式 Web 应用程序是一项不断发展的技术，并且支持本地应用程序安装和其他功能，[具体取决于您使用的浏览器。](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+>渐进式 Web 应用程序是一项不断发展的技术，并且支持本地应用程序安装和其他功能，[具体取决于您使用的浏览器。](https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
 
 ## 前提条件 {#prerequisites}
 
@@ -131,7 +131,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 现在，您[已配置站点以支持 PWA](#enabling-pwa-for-your-site)，您可以自行体验它。
 
-1. 在[受支持的浏览器](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)中访问站点。
+1. 在[受支持的浏览器](https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)中访问站点。
 1. 您将在浏览器的地址栏中看到一个新图标，这表明该站点可作为本地应用程序安装。
    * 此图标可能会因浏览器而异，并且浏览器也可能会显示一个通知（例如，横幅或对话框），指示可以作为本地应用程序安装。
 1. 安装应用程序。
@@ -147,31 +147,31 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 利用这些设置，可以将您的站点安装在访客的主屏幕上并离线使用，从而使它像本机应用程序一样运行。
 
 * **启用 PWA** – 这是为站点启用 PWA 的主开关。
-* **启动 URL** – 这是用户加载本地安装的应用程序时应用程序将打开的[首选启动 URL](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url)。
+* **启动 URL** – 这是用户加载本地安装的应用程序时应用程序将打开的[首选启动 URL](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/start_url)。
    * 它可以是您的内容结构中的任意路径。
    * 它不一定是根，通常是应用程序的专用欢迎页面。
    * 如果此 URL 是相对的，则清单 URL 将用作基础 URL 以对其进行解析。
    * 如果保留为空，该功能将使用从中安装 Web 应用程序的网页的地址。
    * 建议设置一个值。
-* **显示模式** – 启用了 PWA 的应用程序仍然是通过浏览器交付的 AEM 站点。[这些显示选项](https://developer.mozilla.org/en-US/docs/Web/Manifest/display)定义应如何隐藏浏览器或如何以其他方式将浏览器提供给本地设备上的用户。
+* **显示模式** – 启用了 PWA 的应用程序仍然是通过浏览器交付的 AEM 站点。[这些显示选项](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/display)定义应如何隐藏浏览器或如何以其他方式将浏览器提供给本地设备上的用户。
    * **独立** – 浏览器对用户完全隐藏，看起来像一个本地应用程序。这是默认值。
       * 利用此选项，必须能够使用站点页面上的链接和组件完全通过内容进行应用程序导航，而无需使用浏览器的导航控件。
    * **浏览器** – 在访问站点时，浏览器将正常显示。
    * **最小化 UI** – 浏览器的大部分组件是隐藏的，就像本地应用程序一样，但会显示基础导航控件。
    * **全屏** – 浏览器是完全隐藏的，就像本地应用程序，但在全屏模式下将呈现。
       * 利用此选项，必须能够使用站点页面上的链接和组件完全通过内容进行应用程序导航，而无需使用浏览器的导航控件。
-* **屏幕方向**  — 作为本地应用程序，PWA需要了解如何处理这些请求 [设备方向](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
+* **屏幕方向**  — 作为本地应用程序，PWA需要了解如何处理这些请求 [设备方向](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/orientation).
    * **任意** – 该应用程序会根据用户设备的方向进行调整。 这是默认值。
    * **纵向** – 强制应用程序以纵向布局打开，而不管用户设备的方向如何。
    * **横向** – 强制应用程序以横向布局打开，而不管用户设备的方向如何。
-* **主题颜色** – 定义[应用程序的颜色](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)，将影响本地用户的操作系统显示本机 UI 工具栏和导航控件的方式。它可能会影响其他应用程序演示元素，具体取决于浏览器。
+* **主题颜色** – 定义[应用程序的颜色](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/theme_color)，将影响本地用户的操作系统显示本机 UI 工具栏和导航控件的方式。它可能会影响其他应用程序演示元素，具体取决于浏览器。
    * 使用颜色井弹出窗口选择颜色。
    * 颜色也可以由十六进制值或 RGB 值定义。
-* **背景颜色**  — 这定义 [应用程序的背景颜色](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)，会在应用程序加载时显示。
+* **背景颜色**  — 这定义 [应用程序的背景颜色](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/background_color)，会在应用程序加载时显示。
    * 使用颜色井弹出窗口选择颜色。
    * 颜色也可以由十六进制值或 RGB 值定义。
-   * 某些浏览器会自动从应用程序名称、背景颜色和图标[构建启动画面](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens)。
-* **图标** – 这将定义在用户设备上表示应用程序的[图标](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons)。
+   * 某些浏览器会自动从应用程序名称、背景颜色和图标[构建启动画面](https://developer.mozilla.org/zh-CN/docs/Web/Manifest#Splash_screens)。
+* **图标** – 这将定义在用户设备上表示应用程序的[图标](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/icons)。
    * 图标必须是大小为 512x512 像素的 png 文件。
    * 图标必须为 [存储在DAM中](/help/assets/overview.md).
 

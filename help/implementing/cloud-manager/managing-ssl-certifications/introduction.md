@@ -2,10 +2,10 @@
 title: 管理 SSL 证书简介
 description: 了解 Cloud Manager 如何为您提供自助服务工具来安装 SSL 证书。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 100%
+source-wordcount: '630'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ OV 和 EV 证书为用户提供额外的 CA 验证信息，可用于确定网站
 
 ## 了解详情 {#learn-more}
 
-具有必要权限的用户可以使用 Cloud Manager 管理程序的 SSL 证书。 有关使用这些功能的详细信息，请参阅以下文档。
+具有必要权限的用户可以使用 Cloud Manager 管理程序的 SSL 证书。 有关使用这些功能的更多详细信息，请参阅以下文档。
 
 * [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [查看、更新或替换 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

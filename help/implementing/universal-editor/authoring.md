@@ -39,7 +39,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 在应用程序经过检测可使用 Universal Editor 后，您将需要登录 Universal Editor。您将需要一个 Adobe ID 才能登录并[访问 Universal Editor](getting-started.md#request-access)。
 
-登录后，在[地址栏中输入要编辑的页面的 URL。](#address-bar)以便开始[编辑内容。](#edit-content)
+登录后，在[地址栏中输入要编辑的页面的 URL，](#address-bar)以便开始[编辑内容。](#edit-content)
 
 ## 了解 UI {#ui}
 

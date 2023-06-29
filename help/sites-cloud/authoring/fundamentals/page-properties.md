@@ -66,7 +66,7 @@ ht-degree: 85%
 
    * **准时**  — 已发布页面在发布环境中可见（呈现）的日期和时间。 该页面必须手动发布或通过预配置的自动复制进行发布。
 
-      * 如果已存在 [已发布（手动）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 此页面保持隐匿（隐藏）状态，直到在指定时间才呈现。
+      * 如果已存在 [已发布（手动）](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 此页面将保持隐匿（隐藏）状态，直到在指定时间才呈现。
       * 如果未发布并配置为自动复制，则页面将在指定的时间自动发布，然后呈现。
       * 如果未发布且未配置为自动复制，则不会自动发布该页面，因此在尝试访问该页面时将会显示404。
 

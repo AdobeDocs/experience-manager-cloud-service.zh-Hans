@@ -126,7 +126,7 @@ AEM 是一种灵活而强大的工具，它通过多个连接器和多种配置�
 
 ![选择云服务配置](assets/select-cloud-service-configurations.png)
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 现在您已完成 AEM Sites 翻译历程的这一部分，您应：
 

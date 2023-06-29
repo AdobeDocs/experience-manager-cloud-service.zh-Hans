@@ -255,7 +255,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
    * CEO（人员）– 片段引用
    * 员工（人员）– 片段引用
 * 人员
-   * 姓名 - 文本
+   * 姓名 – 文本
    * 名字 – 文本
 
 如您所见，“CEO”和“员工”字段引用“人员”片段。
@@ -373,6 +373,6 @@ query {
 * [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
    * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [JSON 输出](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
-* [了解跨源资源共享 (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
+* [了解跨源资源共享 (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hans#understand-cross-origin-resource-sharing-(cors))
 * [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [AEM Headless 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 一个简短的视频教程系列，概述了如何使用 AEM 的 Headless 功能，包括内容建模和 GraphQL。

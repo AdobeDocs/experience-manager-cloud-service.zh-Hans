@@ -4,10 +4,10 @@ description: 配置云资源后，您需要使用 AEM 产品配置文件授予�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 94%
+source-wordcount: '898'
+ht-degree: 99%
 
 ---
 
@@ -39,10 +39,10 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->每个分配给 AEM as a Cloud Service 产品配置文件的用户都只能通过 **Cloud Manager 用户**&#x200B;角色只读地访问 Cloud Manager。
+>每个分配给 AEM as a Cloud Service 产品配置文件的用户都只能通过 **Cloud Manager 用户**&#x200B;角色以只读方式访问 Cloud Manager。
 >
->具有的用户 **Cloud Manager** 用户角色只能使用程序菜单选项登录Cloud Manager并导航到AEM创作环境（如果存在）。 **Cloud Manager 用户**角色不足以访问项目详细信息。如果需要此类访问，则必须由系统管理员为用户授予其他角色。
->请参阅 [下面的“其他资源”部分](#additional-resources) 有关Cloud Manager用户角色的详细信息。
+>仅有 **Cloud Manager 用户**&#x200B;角色的用户可登录到 Cloud Manager 并使用项目菜单选项导航到 AEM 作者环境（如果存在这些环境）。**Cloud Manager 用户**角色不足以访问项目详细信息。如果需要此类访问，则必须由系统管理员为用户授予其他角色。
+>有关 Cloud Manager 用户角色的更多信息，请参阅以下[其他资源](#additional-resources)部分。
 
 >[!CAUTION]
 >
@@ -113,7 +113,7 @@ ht-degree: 94%
 
 如果您想了解入门历程以外的内容，以下是额外的可选资源。
 
-* [AEM as a Cloud Service 团队和生产简介](/help/onboarding/aem-cs-team-product-profiles.md) – 了解 AEM as a Cloud Service 团队和产品简介，以及如何授予和限制对您许可的 Adobe 解决方案的访问权限。
+* [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) – 了解 AEM as a Cloud Service 团队和产品配置文件如何授予和限制访问您经许可的 Adobe 解决方案。
 * [在 Admin Console 管理产品和用户访问权限](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) – 了解如何使用 Admin Console 管理用户访问权限。
 * [配置 AEM 演练的访问权限](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) – 查看此简化演练，了解如何在 Admin Console 中配置 Adobe IMS 用户、用户组和产品配置文件。
 

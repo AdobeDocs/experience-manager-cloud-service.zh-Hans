@@ -175,17 +175,17 @@ AEM 可继续支持管理员用户在本地登录。登录屏幕允许您本地�
 
 他们将被重定向到IMS登录屏幕，并且必须输入其凭据：
 
-![IMS 登录 2](/help/security/assets/ims11.png)
+![IMS Login2](/help/security/assets/ims11.png)
 
-![IMS 登录 3](/help/security/assets/ims12.png)
+![IMS Login3](/help/security/assets/ims12.png)
 
 如果在初始 Admin Console 设置过程中配置了联合 IDP，则用户会被重定向到用于 SSO 的客户 IDP：
 
-![IMS 登录 4](/help/security/assets/ims13.png)
+![IMS Login4](/help/security/assets/ims13.png)
 
 身份验证完成后，用户会被重定向回 AEM 并登录：
 
-![IMS 登录 5](/help/security/assets/ims14.png)
+![IMS Login5](/help/security/assets/ims14.png)
 
 ### 在 Adobe Experience Manager as a Cloud Service 中管理权限和 ACL {#managing-permissions-in-aem}
 

@@ -6,7 +6,7 @@ role: Admin
 source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -198,7 +198,7 @@ ht-degree: 94%
 
 在工作流模型级别，提供了一个标志来指示模型（及其运行时实例）具有元数据的外部存储。对于为外部存储标记的模型的工作流实例，工作流变量将不会保留在 JCR 中。
 
-属性 *userMetadataPersistenceEnabled* 存储在 *jcr：content节点* 工作流模型的。 此标记在工作流元数据中保留为 *cq：userMetaDataCustomPersistenceEnabled*.
+属性 *userMetadataPersistenceEnabled* 会存储在工作流模型的 *jcr:content 节点*&#x200B;上。此标志会作为 *cq:userMetaDataCustomPersistenceEnabled* 保留在工作流元数据中。
 
 下图显示了如何在工作流中设置标记。
 

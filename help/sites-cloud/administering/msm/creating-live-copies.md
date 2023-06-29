@@ -544,7 +544,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 ### 重置 Live Copy 页面 {#resetting-a-live-copy-page}
 
-您可以通过以下操作重置 Live Copy 页面以：
+您可以重置 Live Copy 页面以执行以下操作：
 
 * 删除所有继承取消并
 * 将页面返回到与源页面相同的状态。

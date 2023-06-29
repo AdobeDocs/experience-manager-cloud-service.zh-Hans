@@ -28,7 +28,7 @@ ht-degree: 91%
 >有关物料类型的详细信息，请参阅以下内容：
 >
 >* [项目](/help/sites-cloud/authoring/projects/overview.md)
->* [项目 - 处理任务](/help/sites-cloud/authoring/projects/tasks.md)
+>* [项目 – 处理任务](/help/sites-cloud/authoring/projects/tasks.md)
 >* [工作流](/help/sites-cloud/authoring/workflows/overview.md)
 
 ## 标题中的收件箱 {#inbox-in-the-header}
@@ -134,7 +134,7 @@ ht-degree: 91%
    >
    >有关更多信息，请参阅以下内容：
    >
-   >* 工作流项目 - [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
+   >* 工作流项目 – [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 
 2. 根据所选项目，将启动操作，例如：
 

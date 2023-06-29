@@ -102,7 +102,7 @@ X-Frame-Options：SAMEORIGIN 阻止在 iframe 中呈现 AEM 页面。移除标�
 
 Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 来为正在编辑的应用程序内容识别和使用正确的后端系统。因此，需要 URN 模式将内容映射回内容资源。
 
-添加到页面的监测属性主要由 [HTML 微数据](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)构成，这是一种行业标准，也可用于使 HTML 更具语义，使 HTML 文档可建立索引等。
+添加到页面的监测属性主要由 [HTML 微数据](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Microdata)构成，这是一种行业标准，也可用于使 HTML 更具语义，使 HTML 文档可建立索引等。
 
 ### 创建连接 {#connections}
 

@@ -6,13 +6,13 @@ exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 26%
+ht-degree: 31%
 
 ---
 
 # 对内容片段的远程 AEM GraphQL 查询的身份验证 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-的主要用例 [用于内容片段投放的Adobe Experience Manager as a Cloud Service (AEM) GraphQL API](/help/headless/graphql-api/content-fragments.md) 是接受来自第三方应用程序或服务的远程查询。 这些远程查询可能需要经过身份验证的API访问，以安全Headless内容交付。
+的主要用例 [用于内容片段投放的Adobe Experience Manager as a Cloud Service (AEM) GraphQL API](/help/headless/graphql-api/content-fragments.md) 是接受来自第三方应用程序或服务的远程查询。 这些远程查询可能需要经过身份验证的 API 访问，以保护 Headless 内容投放。
 
 >[!NOTE]
 >

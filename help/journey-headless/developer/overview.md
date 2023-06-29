@@ -3,10 +3,10 @@ title: AEM Headless CMS 开发人员历程
 description: 了解通过将 Adobe Experience Manager (AEM) 用作 Headless CMS 进行的 Headless 开发。了解如何使用内容模型、内容片段和 GraphQL API 等功能来增强 Headless 内容交付。
 landing-page-description: 了解 Headless 内容交付和实施。详细了解如何在您的企业内制定策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1082'
+ht-degree: 96%
 
 ---
 
@@ -89,7 +89,7 @@ AEM 的 Headless 实施使用内容片段模型和内容片段来专注于创建
 
 查看这些附加历程，详细了解 AEM 的强大功能如何协作。
 
-* [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并拥有 AEM 的现有知识，请参阅我们的按 API 和框架编排的实践教程，这些教程探究了如何创建和使用基于 AEM Headless 构建的应用程序。
+* [AEM Headless教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)  — 如果您更喜欢通过实践学习并拥有AEM的现有知识，请参加我们的按API和框架编排的实践教程，探究如何创建和使用基于AEM Headless的应用程序。
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [Headless 创作历程](/help/journey-headless/author/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
 * [Headless 架构师历程](/help/journey-headless/architect/overview.md) – 从这里开始了解 Adobe Experience Manager as a Cloud Service 强大而灵活的 Headless 功能，以及如何对项目内容进行建模。

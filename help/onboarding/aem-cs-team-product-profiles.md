@@ -23,7 +23,7 @@ AEM as a Cloud Service 是一种全云本地服务，将 AEM 作为服务提供�
 
 您的 AEM as a Cloud Service 团队成员在载入期间通过 Admin Console 添加并分配到以下一个或多个产品配置文件。
 
-* **AEM 管理员**：AEM 管理员通常分配给开发人员，尤其是需要访问开发环境的开发人员。例如，开发环境。 AEM 管理员的产品配置文件用于授予关联 AEM 实例中的管理员权限。
+* **AEM 管理员**：AEM 管理员通常分配给开发人员，尤其是需要访问开发环境的开发人员。例如，开发环境。AEM 管理员的产品配置文件用于授予关联 AEM 实例中的管理员权限。
 
 * **AEM 用户**：AEM 用户是您组织中通常使用 AEM as a Cloud Service 来创建内容的用户。 这些用户需要访问 AEM 才能执行任务。 AEM 用户产品配置文件通常分配给创建和审查内容的 AEM 内容作者。 此内容可以是多种类型，例如页面、资产、出版物等。 下面显示的 AEM 用户产品配置文件已分配给这些成员。
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service 是一种全云本地服务，将 AEM 作为服务提供�
 
 >[!NOTE]
 >
->每个分配给 AEM as a Cloud Service 产品配置文件的用户都只能通过 **Cloud Manager 用户**&#x200B;角色只读地访问 Cloud Manager。
+>每个分配给 AEM as a Cloud Service 产品配置文件的用户都只能通过 **Cloud Manager 用户**&#x200B;角色以只读方式访问 Cloud Manager。
 >
 >仅有 **Cloud Manager 用户**&#x200B;角色的用户可登录到 Cloud Manager 并使用&#x200B;**项目**&#x200B;菜单选项导航到 AEM 作者环境（如果存在这些环境）。**Cloud Manager 用户**&#x200B;角色不足以访问项目详细信息。如果需要此类访问，则必须由系统管理员为用户授予其他角色。
 

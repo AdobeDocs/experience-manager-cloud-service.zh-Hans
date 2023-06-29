@@ -68,11 +68,11 @@ ht-degree: 87%
    * DASH 是自适应视频流式处理的国际标准协议，在业界得到广泛应用
    * 可在所有地区使用，可通过支持票证启用
 
-* Dynamic Media _快照_ - 体验测试图像或 Dynamic Media URL，以查看不同图像修改器的输出，以及针对文件大小（使用 WebP 和 AVIF 交付）、网络带宽和设备像素比率使用智能成像优化。请参阅 [Dynamic Media 快照。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)
+* Dynamic Media _快照_ – 体验测试图像或 Dynamic Media URL，查看不同图像修改器的输出，以及针对文件大小（使用 WebP 和 AVIF 交付）、网络带宽和设备像素比率使用智能成像优化。请参阅 [Dynamic Media 快照。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)
 
 ### [!DNL Assets] 预发行版本中的功能 {#prerelease-feature-assets}
 
-* Dynamic Media - 图像配置文件中一些与 Smart Crop 相关的字段的用户界面现已更新，以反映当前定义 Smart Crop 的指南。请参阅[裁切选项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options)。
+* Dynamic Media – 图像配置文件中一些与 Smart Crop 相关的字段的用户界面现已更新，可反映当前定义 Smart Crop 的指南。请参阅[裁切选项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hans#crop-options)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -92,7 +92,7 @@ ht-degree: 87%
 
 * [Adobe Acrobat Sign Solutions政府版](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms现在与面向政府的Adobe Acrobat Sign Solutions集成。 这种集成为政府型账户（政府部门和机构）的自适应表单提交提供了高级的电子签名合规性和安全性。
 
-  与 Adob&#x200B;&#x200B;e Acrobat Sign 政府版的集成使 Adobe 的合作伙伴和政府客户能够在一些最关键和敏感的业务领域使用自适应表单中的电子签名功能。这层额外的安全保障机制确保所有电子签名完全符合 FedRAMP Moderate 合规性，使 Adobe 的政府客户能够安心使用。
+  与 Adobe Acrobat Sign 政府版的集成使 Adobe 的合作伙伴和政府客户能够在一些最关键和敏感的业务领域使用自适应表单中的电子签名功能。这层额外的安全保障机制确保所有电子签名完全符合 FedRAMP Moderate 合规性，使 Adobe 的政府客户能够安心使用。
 
 * 使用规则编辑器中的自定义错误处理程序增强的错误处理：您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误，并向最终用户提供量身定制的响应。 或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端为特定的错误代码调用自定义工作流，或者通知客户服务已停止。
 

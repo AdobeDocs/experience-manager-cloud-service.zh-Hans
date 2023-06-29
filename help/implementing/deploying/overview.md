@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 48%
+ht-degree: 50%
 
 ---
 
@@ -174,7 +174,7 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="包管理器 – 迁移可变内容包"
->abstract="探索包管理器的用法，以了解应将内容包安装为“一次性”的用例。 安装包括将特定内容从生产环境导入到暂存环境以调试生产问题，将小型内容包从内部部署环境传输到AEM云环境等。"
+>abstract="探索将包管理器用于某些用例的情况，在这些用例中应“一次性”安装内容包。安装过程包括将特定内容从生产导入到暂存以调试生产问题，并将小型内容包从内部部署环境转移到 AEM 云环境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="内容传输工具"
 
 在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境以调试生产问题。 对于这些方案， [包管理器](/help/implementing/developing/tools/package-manager.md) 可以在AEMas a Cloud Service的环境中使用。
@@ -195,7 +195,7 @@ above appears to be internal, to confirm with Brian -->
 
 客户通常包括来自第三方来源(如Adobe的翻译合作伙伴等软件供应商)的预建软件包。 建议在远程存储库中托管这些包，并在 `pom.xml` 中引用它们。此方法适用于公共存储库和具有密码保护的专用存储库，如中所述 [受密码保护的maven存储库](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-如果无法将包存储在远程存储库中，客户可以将包放在基于文件系统的本地Maven存储库中，该存储库作为项目的一部分提交给SCM。 任何依靠它的东西都会引用它。 存储库在项目pom中声明，如下所示：
+如果无法将包存储在远程存储库中，客户可以将其放在基于文件系统的本地Maven存储库中，该存储库作为项目的一部分提交给SCM。 任何依靠它的东西都会引用它。 存储库在项目pom中声明，如下所示：
 
 
 ```
