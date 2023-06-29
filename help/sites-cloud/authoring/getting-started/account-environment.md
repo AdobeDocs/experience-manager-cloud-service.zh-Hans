@@ -1,17 +1,17 @@
 ---
 title: 配置帐户环境
-description: AEM使您能够配置帐户和创作环境的某些方面
+description: AEM 提供了用于配置帐户和创作环境的某些方面的功能
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # 配置帐户环境 {#configuring-your-account-environment}
 
-AEM 提供了配置帐户和创作环境某些方面的功能。
+AEM 提供了用于配置帐户和创作环境的某些方面的功能。
 
 通过使用[标题](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)和关联的[我的首选项](#my-preferences)对话框中的[用户](#user-settings)选项，您可以修改用户选项。
 
@@ -19,7 +19,7 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 ## 用户设置 {#user-settings}
 
-此 **用户** 通过“设置”对话框，您可以访问：
+在&#x200B;**用户**&#x200B;设置对话框中，您可以访问：
 
 * 模拟为
    * 借助“模拟为”功能，用户可以代表其他用户工作。<!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -40,29 +40,29 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 * **语言**
 
-  这会定义用于创作环境UI的语言。 从可用列表中选择所需的语言。
+  此选项定义要用于创作环境 UI 的语言。从可用列表中选择所需语言。
 
 * **窗口管理**
 
-  这将定义打开窗口的行为。 选择：
+  此选项定义打开窗口的行为。选择：
 
-   * **多窗口** （默认）
+   * **多窗口**（默认）
 
-      * 页面将在新窗口中打开。
+      * 页面会在新窗口中打开。
 
    * **单窗口**
 
-      * 页面在当前窗口中打开。
+      * 页面会在当前窗口中打开。
 
 * **显示适用于资产的桌面操作**
 
-  此选项需要使用AEM桌面应用程序。
+  此选项要求使用 AEM 桌面应用程序。
 
 * **注释颜色**
 
-  这会定义进行注释时使用的默认颜色。
+  此选项定义创建注释时使用的默认颜色。
 
-   * 单击颜色块以打开样本选择器来选择颜色。
+   * 单击颜色块可打开色板选择器以选择一种颜色。
    * 或者，可在字段中输入所需颜色的十六进制代码。
 
 * **相对日期显示**
@@ -85,7 +85,7 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
    * [用于编辑页面的键盘快捷键](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [控制台的键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-  此选项启用键盘快捷键。 默认情况下，这些功能处于启用状态，但可以禁用它们（例如，如果用户具有特定的辅助功能要求）。
+  此选项可启用键盘快捷键。默认情况下，这些键盘快捷键处于启用状态，但也可以将其禁用，例如，当用户要求使用特定辅助功能时。
 
 * **启用资产主页**
 
@@ -93,4 +93,4 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 
 * **Stock 配置**
 
-  此选项允许指定首选的Adobe Stock配置，并且仅在系统管理员已启用时才可用 [Adobe Stock集成](/help/assets/aem-assets-adobe-stock.md).
+  此选项允许指定首选的 Adobe Stock 配置，并且仅在系统管理员已启用 [Adobe Stock 集成](/help/assets/aem-assets-adobe-stock.md)时才可用。
