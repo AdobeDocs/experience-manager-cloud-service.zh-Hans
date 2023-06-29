@@ -3,9 +3,9 @@ title: Universal Editor 身份验证
 description: 了解 Universal Editor 如何进行身份验证。
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Universal Editor 使用 Adobe Identity Management System (IMS) 身份验证（�
 
 要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
-* [通用编辑器简介](introduction.md)  — 了解通用编辑器如何支持编辑任何实施中任何内容的任何方面，以便您能够提供卓越的体验、提高内容速度并提供一流的开发人员体验。
+* [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
 * [使用 Universal Editor 创作内容](authoring.md) – 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 * [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [AEM Universal Editor 快速入门 ](getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
