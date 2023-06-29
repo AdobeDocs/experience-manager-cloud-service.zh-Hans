@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 96%
 >在使用 GraphiQL IDE 之前，您必须在[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)中[配置您的端点](/help/headless/graphql-api/graphql-endpoint.md)。
 
 **GraphiQL** 工具允许您测试和调试 GraphQL 查询，方法是：
-* 选择适用于您要用于查询的站点配置的&#x200B;**端点**
+* 选择适用于您要用于查询的 Sites 配置的&#x200B;**端点**
 * 直接输入新查询
 * 创建并访问&#x200B;**[持久查询](/help/headless/graphql-api/persisted-queries.md)**
 * 运行查询以立即查看结果
@@ -45,7 +45,7 @@ ht-degree: 96%
 
 ## 选择您的端点 {#selecting-endpoint}
 
-第一步，您需要选择您想用于查询的&#x200B;**[端点](/help/headless/graphql-api/graphql-endpoint.md)**。该端点适用于您要用于查询的站点配置。
+第一步，您需要选择您想用于查询的&#x200B;**[端点](/help/headless/graphql-api/graphql-endpoint.md)**。该端点适用于您要用于查询的 Sites 配置。
 
 这可以从右上角的下拉列表中获得。
 
@@ -74,13 +74,13 @@ ht-degree: 96%
 
 从&#x200B;**持久查询**&#x200B;面板（最左边）的列表中选择要更新的查询。
 
-查询将显示在编辑器面板中。 进行任何需要的更改，然后使用&#x200B;**保存**&#x200B;将更新提交到持久查询。
+查询会显示在编辑器面板中。进行任何需要的更改，然后使用&#x200B;**保存**&#x200B;将更新提交到持久查询。
 
 ## 正在运行查询 {#running-queries}
 
-您可以立即运行新查询，或者加载并运行持久查询。要加载持久查询，请从列表中选择它 — 查询将显示在编辑器面板中。
+您可以立即运行新查询，或者加载并运行持久查询。要加载持久查询，请从列表中选择它，查询会显示在编辑器面板中。
 
-在任一情况下，编辑器面板中显示的查询都是在以下情况下运行的查询：
+在两种情况下，编辑器面板中显示的查询都是在以下情况下运行的查询：
 
 * 点击/点按&#x200B;**“执行查询”**&#x200B;图标
 * 使用键盘组合`Control-Enter`
