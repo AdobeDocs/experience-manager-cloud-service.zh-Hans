@@ -7,9 +7,9 @@ keywords: 添加自定义错误处理程序、添加默认错误处理程序、�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1981'
 ht-degree: 2%
 
 ---
@@ -119,9 +119,7 @@ AEM Forms为表单提交提供开箱即用的成功和错误处理程序。 它�
 
 显示错误响应的一些选项包括：
 
-+++
-
-+++  基于自适应表单字段名称
++++  基于自适应表单fieldName属性
 
 
 * **`Header:`** `content-type:application/problem+json`
@@ -148,7 +146,7 @@ AEM Forms为表单提交提供开箱即用的成功和错误处理程序。 它�
 +++
 
 
-+++ 基于自适应表单dataRef
++++ 基于自适应表单dataRef属性
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
@@ -171,8 +169,8 @@ AEM Forms为表单提交提供开箱即用的成功和错误处理程序。 它�
 
 您可以查看 **[!UICONTROL 属性]** 窗体组件的窗口。
 
-
 +++
+
 
 ## 使用规则编辑器添加错误处理程序 {#add-error-handler-using-rule-editor}
 
