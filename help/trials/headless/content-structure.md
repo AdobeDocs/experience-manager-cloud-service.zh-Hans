@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 34%
+ht-degree: 41%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 34%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="为您的应用程序创建内容结构"
->abstract="跟着本交互式指南系列，您将学习如何创建作为Headless内容基础结构的结构（称为内容片段模型）。"
+>abstract="您按照此系列的交互式指南学习如何创建一个结构（也称为内容片段模型），它充当您的 Headless 内容的基础结构。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="启动模型控制台"
->abstract="让我们探讨如何在 Adobe Experience Manager as a Cloud Service 中为您的内容创建一个可重复使用的架构，即内容片段模型。观看视频，以便您了解为什么此步骤很重要。 <br><br>在本学习模块中，您将使用旅游网站作为示例，并逐步创建表示旅程的模型。<br><br>单击下方按钮在新选项卡中启动该模块，然后遵循该指南。"
+>abstract="让我们探讨如何在 Adobe Experience Manager as a Cloud Service 中为您的内容创建一个可重复使用的架构，即内容片段模型。观看视频以了解为什么这一步很重要。<br><br>在本学习单元中，您会以一个旅游网站为例，演练如何创建一个展示旅行的模型。<br><br>单击下方按钮在新选项卡中启动该模块，然后遵循该指南。"
 >additional-url="https://video.tv.adobe.com/v/3413261" text="内容结构介绍视频"
 
 >[!CONTEXTUALHELP]

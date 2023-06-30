@@ -5,7 +5,7 @@ exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 43%
+ht-degree: 50%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 43%
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
 >title="调整 KPI"
->abstract="在数字世界中，您几乎可以衡量一切指标。为Adobe Experience Manager实施选择合适的KPI可帮助您的团队将注意力放在最重要的事情上。"
+>abstract="在数字世界中，您几乎可以衡量一切指标。为 Adobe Experience Manager 实施选择合适的 KPI 可帮助您的团队将注意力放在最重要的事情上。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=en" text="评估 KPI"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=en" text="选择合适的团队"
 
