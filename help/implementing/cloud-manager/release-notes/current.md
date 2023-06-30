@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.6.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.6.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.7.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.7.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 93%
+ht-degree: 35%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.6.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.7.0 的发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.6.0 版本的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.7.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,17 +21,18 @@ ht-degree: 93%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2023.6.0 版本的发布日期是 2023 年 6 月 8 日。下一个版本计划于 2023 年 7 月 6 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 2023.7.0 版本的发布日期是 2023 年 6 月 29 日。下一个版本计划于 2023 年 8 月 10 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 除了主要区域之外，客户还可以购买额外的次要发布区域，从而获得减少延迟和提高可用性等方面的好处。注释：可能存在某些限制。
-* 创建新的[程序或环境时，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)名称现在仅限于接受字母数字字符和一组有限的特殊字符。
-* 当恢复[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)时，现在在批准步骤中会显示一个确认对话框。
-* 对于&#x200B;**[客户功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)**&#x200B;和&#x200B;**[自定义 UI 测试](/help/implementing/cloud-manager/ui-testing.md)**&#x200B;管道步骤，现在可能出现新的 `INCOMPLETE` 状态，这表明此类测试不存在，因此未执行。
-   * 在这种情况下，管道不会出现故障，并会进入下一步。
+* Cloud Manager登陆页面上的信息卡现在指示是否 [增强的安全性](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 为其项目启用。
+* 如果开发 [管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 不包含测试步骤，用户现在可以选择在以下情况下包含测试步骤： [启动管道。](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * 这将分阶段推出。
+* 时间 [正在取消执行，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 管道执行审批步骤现在要求用户提供取消的原因。
+   * 这将分阶段推出。
 
 ## 错误修复 {#bug-fixes}
 
-* [Web 层配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)不再为仅资源程序以错误的方式启用。
-* 添加了更强大的验证功能，以防止在环境配置期间出现某些类型的故障。
+* 登录后，从Cloud Manager导航到创作UI再也无法重定向到Unified Shell。
+* 现在，通过上线构件编辑上线日期将导航到 **上线** 制表符而不是 **增强的安全性** 选项卡。
+* 在启动复制操作时，用户将无法再选择已调用复制操作的环境。
