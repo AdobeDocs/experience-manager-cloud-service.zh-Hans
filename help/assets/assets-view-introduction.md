@@ -2,10 +2,10 @@
 title: Assets视图如何使您受益？
 description: 详细了解Assets视图的主要优势
 mini-toc-levels: 3
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 11%
+source-wordcount: '1064'
+ht-degree: 12%
 
 ---
 
@@ -121,14 +121,15 @@ ht-degree: 11%
 
 * 重命名存储库中可用的资源和文件夹。
 
+新的Adobe Experience Manager Assets视图专为简化工作流、促进协作和加快资产交付而定制。 通过拥抱内容周转率，营销人员可以释放其数字资产的全部潜力，并以前所未有的方式释放创造力。
+
+
 使用这些链接可快速开始使用资产视图：
 
 * [我的工作区](/help/assets/my-workspace-assets-view.md)
 * [开始使用资源视图](/help/assets/get-started-assets-view.md)
 
-## 结论 {#conclusion}
 
-数字优先时代已经到来，是时候改造我们的营销工具以支持不断演变的业务格局了。 新的Adobe Experience Manager Assets视图专为简化工作流、促进协作和加快资产交付而定制。 通过拥抱内容周转率，营销人员可以释放其数字资产的全部潜力，并以前所未有的方式释放创造力。 准备好利用Adobe新的资产视图体验的强大功能，在您的营销活动中实现卓越的成效。 是时候拥抱DAM的未来并推动您的业务向前发展了。
 
 
 
