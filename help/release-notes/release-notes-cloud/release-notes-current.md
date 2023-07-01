@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
+source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 43%
+source-wordcount: '1372'
+ht-degree: 33%
 
 ---
 
@@ -113,15 +113,11 @@ Assets视图现在可生成常见3D文件格式（包括gLB、USDz、FBX、3DS�
 
 ### [!DNL Forms] 中的新增功能 {#new-features-available-in-channel}
 
-* [AEM 页面编辑器中的自适应表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您现在可以使用 AEM 页面编辑器快速创建多个表单并将其添加到您的 Sites 页面。通过使用该功能，内容作者可以使用自适应表单组件（包括动态行为、验证、数据集成、生成记录文档和业务流程自动化）的强大功能，在 Sites 页面内创建无缝的数据捕获体验。您可以：
+* [AEM页面编辑器和体验片段中的自适应Forms](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)：您现在可以使用AEM页面编辑器和体验片段快速创建多个表单并将其添加到您的AEM Sites页面。 此功能允许内容作者使用自适应Forms组件的强大功能（包括动态行为、验证、数据集成、生成记录文档和业务流程自动化），在Sites页面中创建无缝的数据捕获体验。
 
-   * 通过将表单组件拖放到 AEM Sites 编辑器或体验片段中的自适应表单容器组件来创建自适应表单。
-   * 使用 AEM Sites 编辑器中的自适应表单向导创建独立于任何 Sites 页面的表单，让您可以自由地在多个页面中重复使用此类表单。
-   * 将多个表单添加到 Sites 页面，简化用户体验并提供更大的灵活性。
-
-     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
-
-* [Adobe Acrobat Sign Solutions政府版](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms现在与面向政府的Adobe Acrobat Sign Solutions集成。 这种集成为政府型账户（政府部门和机构）的自适应表单提交提供了高级的电子签名合规性和安全性。
+      >[！VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
+  
+* [将Adobe Acrobat Sign Solutions用于政府（HIPPA投诉）与AEM Forms结合使用](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms现在与面向政府的Adobe Acrobat Sign Solutions集成。 这种集成为政府型账户（政府部门和机构）的自适应表单提交提供了高级的电子签名合规性和安全性。
 
   与面向政府的Adobe Acrobat Sign Solutions集成使Adobe的合作伙伴和政府客户能够在Adaptive Forms中使用电子签名处理一些任务最关键和最敏感的业务线。 这层额外的安全保障机制确保所有电子签名完全符合 FedRAMP Moderate 合规性，使 Adobe 的政府客户能够安心使用。
 
@@ -129,15 +125,15 @@ Assets视图现在可生成常见3D文件格式（包括gLB、USDz、FBX、3DS�
 
   该功能有助于通过引入基于标准的错误响应来提高整体错误处理能力，这些错误响应与 OOTB 错误处理程序向后兼容，并具有更大的灵活性和控制能力。
 
-* [表单数据模型的增强身份验证方法](/help/forms/configure-data-sources.md)：通过引入基于客户端凭据的身份验证，将AEM Forms与兼容的数据源连接，体验增强的安全性。 此增强功能消除了对模拟或用户登录的需要，增强了数据的保护。
+* [表单数据模型的增强身份验证方法](/help/forms/configure-data-sources.md)：通过引入基于客户端凭据的身份验证，将AEM Forms（表单数据模型）与兼容的数据源连接，体验增强的安全性。 此增强功能消除了对模拟或用户登录的需要，增强了数据的保护。
 
-* [带有可重复部分的自适应Forms](/help/forms/create-forms-repeatable-sections.md)：您现在可以制作 [可折叠项](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 基于核心组件的自适应表单中的组件，以创建可重复部分。
+* [使用可重复部分创建自适应Forms](/help/forms/create-forms-repeatable-sections.md)：您现在可以制作 [可折叠项](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 基于核心组件的自适应表单中的组件，以创建可重复部分。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   这些可重复部分允许您提供不限数量的条目，而无需固定字段计数。 当所需的数据实例事先未知时，此变量将非常有用。 Forms用户可以轻松地添加或删除部分，使表单能够适应不同的数据输入方案，并简化相同数据的多次发生收集。
 
-* **[将自适应表单提交到 Microsoft® SharePoint 和 Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：提高业务用户的敏捷性，以快速启用新表单并将提交的数据存储在日常使用工具中，例如 Microsoft® SharePoint 站点或 OneDrive 文件夹。
+* **[将自适应Forms提交到Microsoft®SharePoint和Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：您现在可以将自适应Forms数据提交到Microsoft®SharePoint Site或Microsoft® OneDrive等日常工具。
 
 ### Headless 自适应表单早期采用者计划 {#forms-early-adopter}
 
