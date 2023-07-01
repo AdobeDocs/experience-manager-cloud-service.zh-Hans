@@ -2,9 +2,9 @@
 title: 注意事项已知问题和最佳实践
 description: 通信最佳实践、已知问题和限制
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1709'
 ht-degree: 0%
 
 ---
@@ -161,11 +161,11 @@ Communications API以默认的XCI文件（或修改的文件）开头。 然后�
 
 * 在打印选项列表中，只能使用一次特定的渲染类型(PDF、打印)。 例如，不能有两个PRINT选项，每个选项都指定PCL渲染类型。
 
-* 对于批处理配置，只有OutputType(PDF、打印)和RenderType（PostScript、PCL、IPL、ZPL等）值组合的一个实例 允许。
+* 对于批处理配置，只允许一个OutputType(PDF、打印)和RenderType（PostScript、PCL、IPL、ZPL等）值的组合实例。
 
 * 对于异步API（批处理），默认记录级别设置为2。 您可以使用自定义XCI将记录级别更改为1。
 
-* 配置默认XCI后，它将包含到原始演绎版的路径。 例如 `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* 配置默认XCI后，它将包含到原始演绎版的路径。 例如，`/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 

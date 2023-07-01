@@ -2,10 +2,10 @@
 title: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
 description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2818'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -191,25 +191,25 @@ AEM Forms as aCloud Services提供了一个基于Docker的SDK环境，更便于�
    * (Apple macOS)安装 [适用于Mac的Docker桌面](https://hub.docker.com/editions/community/docker-ce-desktop-mac). 它包括Docker引擎、Docker CLI客户端、Docker撰写、Docker内容信任、Kubernetes和凭据帮助程序。
 
    * (对于Linux®)安装 [Docker引擎](https://docs.docker.com/engine/install/#server) 和 [Docker撰写](https://docs.docker.com/compose/install/) 在你的电脑上。
+
    >[!NOTE]
    >
    > * 对于Apple macOS，请允许列表包含本地AEM创作实例的文件夹。
    >
    > * Docker Desktop for Windows支持两个后端，Hyper-V
-      > （旧版）和WSL2（新版）。 文件共享是自动进行的
-      > 使用WSL2（新版）时由Docker管理。 你必须要
-      > 在使用Hyper-V（旧版）时明确配置文件共享。
+   > （旧版）和WSL2（新版）。 文件共享是自动进行的
+   > 使用WSL2（新版）时由Docker管理。 你必须要
+   > 在使用Hyper-V（旧版）时明确配置文件共享。
 
-
-1. 创建与创作实例和发布实例并行的文件夹（例如aem-sdk）。 例如C:\aem-sdk。
+1. 创建与创作实例和发布实例并行的文件夹（例如aem-sdk）。 例如，C:\aem-sdk。
 
 1. 提取 `aem-forms-addon-<version>.zip\aem-forms-addon-native-<version>.zip` 文件。
 
    ![提取的aem forms加载项（本机）](assets/microservice-docker.png)
 
-1. 创建一个环境变量AEM_HOME，并指向本地AEM Author安装。 例如C:\aem\author\。
+1. 创建一个环境变量AEM_HOME，并指向本地AEM Author安装。 例如，C:\aem\author\。
 
-1. 打开sdk.bat或sdk.sh进行编辑。 将AEM_HOME设置为指向本地AEM Author安装。 例如C:\aem\author\。
+1. 打开sdk.bat或sdk.sh进行编辑。 将AEM_HOME设置为指向本地AEM Author安装。 例如，C:\aem\author\。
 
 1. 打开命令提示符并导航到 `aem-forms-addon-native-<version>` 文件夹。
 
@@ -234,7 +234,7 @@ AEM Forms as aCloud Services提供了一个基于Docker的SDK环境，更便于�
 ---------|----------|---------
 | 画布3.0 | 基本 | Microsoft® Dynamics 365 |
 | 宁静 | 空白 | Salesforce |
-| 城市 |  |  |
+| 城市 |   |  |
 | Ultramarine |  |  |
 | Beryl |  |  |
 
@@ -329,9 +329,9 @@ Dispatcher上的缓存允许 [!DNL AEM Forms] 在客户端预填充自适应Form
 
 您的本地开发环境已准备就绪。
 
-## 在AEM Formsas a Cloud Service和本地开发环境中启用自适应Forms核心组件
+## 在 AEM Forms as a Cloud Service 和本地开发环境上启用自适应表单核心组件
 
-在AEM Formsas a Cloud Service上启用自适应Forms核心组件，允许您使用AEM FormsCloud Service实例向多个渠道开始创建、发布和交付基于核心组件的自适应Forms和Headless Forms。 您需要启用自适应Forms核心组件的环境才能使用Headless自适应Forms。
+在 AEM Forms as a Cloud Service 上启用自适应表单核心组件后，您可以使用 AEM Forms Cloud Service 实例为多个渠道创建、发布和投放基于核心组件的自适应表单和 Headless 表单。您需要具备启用了自适应表单核心组件的环境才能使用 Headless 自适应表单。
 
 有关说明，请参阅 [在AEM Formsas a Cloud Service和本地开发环境中启用自适应Forms核心组件](/help/forms/enable-adaptive-forms-core-components.md)
 

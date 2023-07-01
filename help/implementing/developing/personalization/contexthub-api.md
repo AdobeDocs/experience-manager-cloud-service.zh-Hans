@@ -1,21 +1,21 @@
 ---
-title: ContextHub Javascript API参考
-description: 将ContextHub组件添加到页面后，ContextHub Javascript API将可用于您的脚本
+title: ContextHub JavaScript API参考
+description: 将ContextHub组件添加到页面后，ContextHub JavaScript API将可用于您的脚本
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 2%
 
 ---
 
-# ContextHub Javascript API参考 {#contexthub-javascript-api-reference}
+# ContextHub JavaScript API参考 {#contexthub-javascript-api-reference}
 
-在以下情况下，您的脚本可以使用ContextHub Javascript API： [已将ContextHub组件添加到页面](adding-contexthub.md).
+在以下情况下，您的脚本可以使用ContextHub JavaScript API： [已将ContextHub组件添加到页面](adding-contexthub.md).
 
 ## contexthub常量 {#contexthub-constants}
 
-ContextHub Javascript API定义的常量值。
+ContextHub JavaScript API定义的常量值。
 
 ### 事件常量 {#event-constants}
 
@@ -62,7 +62,7 @@ ContextHub Javascript API定义的常量值。
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | 在UI容器初始化时触发 | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | 指示活动的UI模式 | `/_/active-ui-mode` |
 
-## ContextHub Javascript API参考 {#contexthub-javascript-api-reference-2}
+## ContextHub JavaScript API参考 {#contexthub-javascript-api-reference-2}
 
 ContextHub对象提供对所有存储的访问。
 
@@ -89,7 +89,7 @@ var geoloc = allStores.geolocation
 
 #### getStore(name) {#getstore-name}
 
-将存储检索为Javascript对象。
+将存储检索为JavaScript对象。
 
 ##### 参数 {#parameters-}
 
@@ -369,7 +369,7 @@ A `boolean` 值：
 
 包含JSON数据的存储。 数据检索自外部JSONP服务，或者可选地检索自返回JSON数据的服务。 使用指定服务详细信息 [`init`](#init-name-config) 函数创建此类的实例。
 
-存储使用内存中持久性（Javascript变量）。 存储数据仅在页面的生命周期内可用。
+存储使用内存中持久性（JavaScript变量）。 存储数据仅在页面的生命周期内可用。
 
 ContextHub.Store.JSONPStore扩展 [ContextHub.Store.Core](#contexthub-store-core) 并继承了该类的函数。
 
@@ -441,7 +441,7 @@ A `string` 表示服务URL的值。
 * **`config`：** （对象）包含服务属性的对象。 JSONPStore对象使用 `service` 用于构建JSONP服务的URL的对象：
    * `eventDeferring`: 32.
    * `eventing`：此存储的ContextHub.Utils.Eventing对象。 默认值为 `ContextHub.eventing` 对象。
-   * `persistence`：此存储的ContextHub.Utils.Persistence对象。 默认情况下，使用内存持久性（Javascript对象）。
+   * `persistence`：此存储的ContextHub.Utils.Persistence对象。 默认情况下，使用内存持久性（JavaScript对象）。
    * `service`: (对象)
       * `host`：（字符串）服务器名称或IP地址。
       * `jsonp`：（布尔）如果值为true，则表示该服务是JSONP服务；否则为false。 如果为true，则 `{callback: "ContextHub.Callbacks.*Object.name*}`对象已添加到 `service.params`.
@@ -489,7 +489,7 @@ A `string` 表示服务URL的值。
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-`ContextHub.Store.SessionStore` 扩展 [ContextHub.Store.Core](#contexthub-store-core) 所以它继承了类的所有功能。 使用内存中持久性（Javascript对象）保留此存储中的数据。
+`ContextHub.Store.SessionStore` 扩展 [ContextHub.Store.Core](#contexthub-store-core) 所以它继承了类的所有功能。 使用内存中持久性（JavaScript对象）保留此存储中的数据。
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -773,7 +773,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 返回 {#returns-parse}
 
-Javascript对象。
+JavaScript对象。
 
 ##### 示例 {#example-parse}
 
@@ -795,7 +795,7 @@ Object {
 
 #### strinify(data) {#stringify-data}
 
-将Javascript值和对象序列化为JSON格式的字符串值。
+将JavaScript值和对象序列化为JSON格式的字符串值。
 
 ##### 参数 {#parameters-stringify}
 
@@ -869,7 +869,7 @@ ContextHub.Utils.JSON.stringify({
 
 ##### 示例 {#example-getitem-2}
 
-请考虑以下Javascript对象：
+请考虑以下JavaScript对象：
 
 ```javascript
 myObject {
@@ -1045,7 +1045,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 ##### 示例 {#example-setitem-2}
 
-请考虑以下Javascript代码：
+请考虑以下JavaScript代码：
 
 ```javascript
 var myObject = {

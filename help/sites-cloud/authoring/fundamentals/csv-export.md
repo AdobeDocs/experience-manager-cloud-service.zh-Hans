@@ -2,10 +2,10 @@
 title: 导出到 CSV
 description: 将页面相关信息导出到本地系统上的CSV文件
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 90%
+source-wordcount: '198'
+ht-degree: 85%
 
 ---
 
@@ -48,9 +48,9 @@ ht-degree: 90%
 
 1. 必要时，打开&#x200B;**站点**&#x200B;控制台并导航到所需的位置。
    * 在浏览&#x200B;**站点**&#x200B;控制台（在“列表”视图中）时，可以使用创建 **CSV 报表**&#x200B;选项
-   * 它是&#x200B;**创建**&#x200B;下拉菜单的一个选项：
+   * 它是 **创建** 下拉菜单：
 
-      ![创建 CSV 选项](/help/sites-cloud/authoring/assets/csv-create.png)
+     ![创建 CSV 选项](/help/sites-cloud/authoring/assets/csv-create.png)
 
 1. 从工具栏中，选择&#x200B;**创建**，然后选择 **CSV 报表**，以打开向导：
 

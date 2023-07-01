@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 3%
@@ -38,7 +38,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种特殊类型的资产。 它可用于访问结构化数据，如文本、数字、日期等。 由于与以下内容存在若干差异： `standard` 资产（如图像或文档）中，一些其他规则适用于处理内容片段。
 
-有关详细信息，请参阅 [中的内容片段支持 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
+有关更多信息，请参阅 [中的内容片段支持 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## 数据模型 {#data-model}
 

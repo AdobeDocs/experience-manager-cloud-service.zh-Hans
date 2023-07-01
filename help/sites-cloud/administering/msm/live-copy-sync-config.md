@@ -4,10 +4,10 @@ description: 了解可用的强大 Live Copy 同步选项以及如何根据项�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
 source-wordcount: '2335'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -123,7 +123,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 默认情况下，将排除多个属性和节点类型，这些属性和节点类型在 **CQ MSM 内容更新操作**&#x200B;的&#x200B;**已排除页面属性**&#x200B;下的 OSGi 配置中定义。
 
-默认情况下，在转出时排除（即不更新）与以下正则表达式匹配的属性：
+默认情况下，转出时将排除（即不更新）匹配以下正则表达式的属性：
 
 ![Live Copy 排除正则表达式](../assets/live-copy-exclude.png)
 
@@ -196,7 +196,7 @@ MSM 允许您指定一般使用的转出配置集，并可在需要时覆盖特�
 1. 使用&#x200B;**站点**&#x200B;控制台选择 Blueprint 的根页面。
 1. 从工具栏中选择&#x200B;**属性**。
 1. 打开 **Blueprint** 选项卡。
-1. 使用下拉选择器选择一个或多个&#x200B;**转出配置**。
+1. 选择一个或多个 **转出配置** 使用下拉选择器。
 1. 使用&#x200B;**保存**&#x200B;持久存储您的更新。
 
 ### 设置系统默认转出配置 {#setting-the-system-default-rollout-configuration}

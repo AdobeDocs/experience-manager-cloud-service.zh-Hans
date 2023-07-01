@@ -2,9 +2,9 @@
 title: 创建启动项
 description: 您可以创建启动项，以便能够更新现有网页的新版本以供将来激活。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1043'
 ht-degree: 61%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 61%
 
    >[!NOTE]
    >
-   >要将页面和/或分支添加到启动项，这些页面和/或分支必须位于站点中；即位于公共顶级根之下。
+   >要将页面和/或分支添加到启动项，这些页面和/或分支必须位于站点中；即，位于公共顶级根之下。
    >
    >如果站点在顶级下包含语言根，则启动项的页面和分支必须位于公共语言根下。
 

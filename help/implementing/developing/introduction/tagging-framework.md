@@ -2,7 +2,7 @@
 title: AEM 标记框架
 description: 标记内容，并使用AEM标记基础架构对其进行分类和整理。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 0%

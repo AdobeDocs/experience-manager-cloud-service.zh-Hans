@@ -2,10 +2,10 @@
 title: 与 Adobe Analytics 集成时使用的 IMS 配置
 description: 了解与 Adobe Analytics 集成时使用的 IMS 配置
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 92%
+source-wordcount: '886'
+ht-degree: 91%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 92%
 1. 在 AEM 中，打开&#x200B;**工具**&#x200B;菜单。
 1. 在&#x200B;**安全性**&#x200B;部分中，选择 **Adobe IMS 配置**。
 1. 选择&#x200B;**创建**，打开 **Adobe IMS 技术帐户配置**。
-1. 使用&#x200B;**云配置**&#x200B;下的下拉列表，选择 **Adobe Analytics**。
+1. 使用下的下拉列表 **云配置**，选择 **Adobe Analytics**.
 1. 激活&#x200B;**新建证书**&#x200B;并输入新别名。
 1. 选择&#x200B;**创建证书**&#x200B;来确认。
 

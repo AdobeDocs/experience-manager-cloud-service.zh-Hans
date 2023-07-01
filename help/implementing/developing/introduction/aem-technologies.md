@@ -2,7 +2,7 @@
 title: AEM 技术基础
 description: AEM的技术基础概述，包括AEM的结构以及基础技术，如JCR、Sling和OSGi。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2144'
 ht-degree: 1%

@@ -2,7 +2,7 @@
 title: 示例ContextHub UI模块类型
 description: ContextHub提供了几个可在解决方案中使用的示例UI模块
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -35,7 +35,7 @@ contexthub.base UI模块类型是所有其他UI模块类型的基类型。 因�
 
 ### 配置 {#configuration}
 
-使用JSON格式的Javascript对象配置contexthub.base UI模块。 包括以下任意属性以配置UI模块功能：
+使用JSON格式的JavaScript对象配置contexthub.base UI模块。 包括以下任意属性以配置UI模块功能：
 
 * **图像：** 显示为图标的图像的URL。
 * **图标：** 的名称 [Coral UI图标](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 类。 如果同时为图标和图像属性指定值，则会使用图像。

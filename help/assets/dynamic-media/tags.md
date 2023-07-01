@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '6666'
+source-wordcount: '6665'
 ht-degree: 7%
 
 ---
@@ -591,7 +591,7 @@ Experience Platform标记中的所有可用扩展都列在 **[!UICONTROL 扩展]
 
 Experience Platform标记可能具有多个开发环境、一个暂存环境和一个生产环境。 默认情况下，Experience Manager中的Experience Platform标签云配置将Experience Manager创作节点指向Platform Tags的暂存环境。 Experience Manager发布节点指向Experience Platform标记的生产环境。 这种安排意味着在默认Experience Manager设置下，有必要将Experience Platform标记库发布到暂存环境。 这样，您就可以在Experience Manager创作中使用它。 然后，您可以将其发布到生产环境中，以便在Experience Manager发布中使用。
 
-参见 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) 有关Experience Platform标签环境的更多信息。
+参见 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hans) 有关Experience Platform标签环境的更多信息。
 
 发布库涉及以下两个步骤：
 

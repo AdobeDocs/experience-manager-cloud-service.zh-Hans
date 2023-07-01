@@ -2,9 +2,9 @@
 title: 将工作流应用于页面
 description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 58%
 
 ---

@@ -1,17 +1,16 @@
 ---
-source-git-commit: 3409c713ea1ca033a2835d0070d0da4fec58fd18
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '97'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 59%
 
 ---
-# Adobe Experience Manager作为Cloud Service文档
+# Adobe Experience Manager as a Cloud Service文档
 
-这是Adobe Experience Manager的Cloud Service文档库。 本文档涵盖安装、管理、创作使用以及如何自定义体验使用作为Cloud Service。
+这是Adobe Experience Manager as a Cloud Service文档的存储库。 本文档介绍了安装、管理、创作使用以及如何使用as a Cloud Service自定义Experience。
 
-欢迎您对文档做出贡献。 请参阅以下资源：
+欢迎您贡献文档内容。请参阅以下资源：
 
-* [comtribiting.](contributing.md) md有关如何为文档做出贡献的概述。
-* [guidelines.](guidelines.md) md有关稿件中预期内容以及如何编写文档稿件的概述。
-* [code-of-cond.md有关](code-of-conduct.md) 我们在您为本文档项目做出贡献时所期待的行为标准的概述。
+* [contributing.md](contributing.md) 概述如何贡献文档内容。
+* [guidelines.md](guidelines.md) 概述应贡献哪些内容以及如何撰写文档贡献内容。
+* [code-of-conduct.md](code-of-conduct.md) 概述为文档项目贡献内容时应遵循的行为标准。

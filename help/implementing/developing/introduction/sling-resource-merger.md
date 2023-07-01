@@ -2,9 +2,9 @@
 title: 在Adobe Experience Manager as a Cloud Service中使用Sling资源合并器
 description: Sling资源合并器提供访问和合并资源的服务
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1160'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Sling资源合并器提供访问和合并资源的服务。 它为以下两种�
 
 通过Sling资源合并器，叠加/覆盖资源和/或属性与原始资源/属性合并：
 
-* 自定义定义的内容比原始定义的内容优先级更高(即 *叠加* 或 *覆盖* it)。
+* 自定义定义的内容的优先级高于原始定义的优先级(即 *叠加* 或 *覆盖* it)。
 
 * 必要时， [属性](#properties) 在自定义设置中定义，指示如何使用从原始内容合并的内容。
 
@@ -117,7 +117,7 @@ Sling资源合并器提供访问和合并资源的服务。 它为以下两种�
 
 >[!NOTE]
 >
->在使用Sling资源合并器（即处理标准的触屏UI时）时，不建议从复制整个结构 `/libs` 因为这会导致太多信息被保存在 `/apps`. 以任何方式升级系统时，这都可能导致问题。
+>在使用Sling资源合并器（即，处理标准的触屏UI时）时，不建议从复制整个结构 `/libs` 因为这会导致太多信息被保存在 `/apps`. 以任何方式升级系统时，这都可能导致问题。
 
 ### 用例 {#use-cases}
 

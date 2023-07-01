@@ -2,10 +2,10 @@
 title: 将体验片段导出到 Adobe Target
 description: 将体验片段导出到 Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 98%
+source-wordcount: '2245'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->有关更多信息，另请参阅：
+>有关更多信息，请参阅以下内容：
 >
 >* [Adobe Target 开发](https://developers.adobetarget.com/)
 >* [核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
@@ -177,7 +177,7 @@ ht-degree: 98%
 
    * **租户 ID**：租户 ID
 
-   * **IMS 配置**：从下拉列表中选择所需的配置
+   * **IMS配置**：从下拉列表中选择所需的配置
 
    * **API 类型**：默认值为 REST（已弃用 XML）
 
@@ -356,7 +356,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在 Adobe Target 中使用体验片段 {#using-your-experience-fragments-in-adobe-target}
 
-执行上述任务后，体验片段将显示在 Target 的“选件”页面上。请查看[特定 Target 文档](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html)以了解可以实现的目标。
+执行上述任务后，体验片段将显示在 Target 的“选件”页面上。参见 [特定Target文档](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) 了解可以实现的目标。
 
 >[!NOTE]
 >

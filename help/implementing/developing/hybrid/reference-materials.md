@@ -2,7 +2,7 @@
 title: SPA参考资料
 description: 单页应用程序API引用和源代码存储库概述
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
-source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 3%
@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # SPA参考资料 {#spa-reference-materials}
 
-## NMP模块的SPA Javascript API参考 {#api-references}
+## NMP模块的SPA JavaScript API参考 {#api-references}
 
 以下是AEM SPA编辑器SDK框架的NPM模块的可用JavaScript API引用。
 

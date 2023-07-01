@@ -2,9 +2,9 @@
 title: 自定义和扩展内容片段
 description: 内容片段扩展了标准资产。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1811'
 ht-degree: 2%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 2%
 
 * 该组件允许中间内容：
 
-   * 在这里，组件允许您放置其他资产（图像等） 在所引用片段的段落之间。
+   * 在这里，组件允许您在引用片段的段落之间放置其他资产（图像等）。
 
    * 对于中间内容，您需要：
 
@@ -278,7 +278,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->请考虑此背景信息。 您不应在此更改任何内容(因为它被标记为 *专用区域* 但在某些情况下，了解事物背后的工作原理可能会有所帮助。
+>请仔细研究一下这些背景信息。 您不应在此更改任何内容(因为它被标记为 *专用区域* 但在某些情况下，了解事物背后的工作原理可能会有所帮助。
 
 编辑内容片段(可以跨多个视图(=HTML页面))是原子级的。 因此，这种原子多视图编辑功能不是典型的AEM概念，内容片段使用所谓的 *编辑会话*.
 
@@ -343,6 +343,6 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ## 用于页面创作的组件 {#components-for-page-authoring}
 
-有关详细信息，请参阅
+有关更多信息，请参阅
 
 * [核心组件 — 内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans) （推荐）

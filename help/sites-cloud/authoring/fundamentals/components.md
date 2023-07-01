@@ -2,10 +2,10 @@
 title: 组件
 description: 组件是 AEM 中内容页面的基本创作构建基块
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 63%
+source-wordcount: '347'
+ht-degree: 59%
 
 ---
 
@@ -31,7 +31,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 * [编辑内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [编辑内容 – 全屏模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-有关将组件添加到页面的进一步信息，请参阅文章[编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)。
+有关向页面添加组件的更多信息，请参阅 [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
 ## 全部组件概述 {#overview-of-all-components}
 

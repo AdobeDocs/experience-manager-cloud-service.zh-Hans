@@ -2,10 +2,10 @@
 title: 管理内容片段（资产 — 内容片段）
 description: 了解如何使用Assets控制台管理您的AEM内容片段（Headless内容的基础）。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 76%
+source-wordcount: '1755'
+ht-degree: 71%
 
 ---
 
@@ -175,7 +175,7 @@ ht-degree: 76%
 
 ![模式](assets/cfm-managing-top-toolbar.png)
 
-* 当内容页面上已引用片段时，将显示一条消息。 您可以&#x200B;**关闭**&#x200B;消息。
+* 当内容页面上已引用片段时，会显示一条消息。 您可以&#x200B;**关闭**&#x200B;消息。
 
 * 可以使用&#x200B;**切换侧面板**&#x200B;图标来隐藏/显示侧面板。
 
@@ -227,11 +227,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
   >
   >除了仅保存您的更改外，这些操作还会更新任何引用，并确保 Dispatcher 按需要刷新。 这些更改可能需要一些时间才能处理。 因此，对于大型/复杂/重载系统，性能可能会受到影响。
   >
-  >在使用&#x200B;**保存并关闭**&#x200B;时请记住这一点，然后快速重新进入片段编辑器以进行并保存进一步的更改。
+  >使用时，请牢记此过程 **保存并关闭** 然后快速重新进入片段编辑器以进行并保存更多更改。
 
 * **关闭**
 
-  将退出编辑器，而不保存最新更改（即自上次&#x200B;**保存**）。
+  将退出编辑器，而不保存最新更改（即自上次更改以来所做的更改） **保存**)。
 
 在编辑您的内容片段时，AEM 会自动创建版本，以确保在您取消更改时可以恢复先前的内容（使用&#x200B;**关闭**&#x200B;而不保存）：
 
@@ -262,7 +262,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 将内容与片段关联 {#associating-content-with-your-fragment}
 
-您还可以[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段。 这提供了一个连接，以便在将资源（即图像）添加到内容页面时，可以（可选）与片段一起使用资源（即图像）。
+您还可以[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段。 这提供了一个连接，以便在将资产（即图像）添加到内容页面时，可以（可选）与片段一起使用资产（即图像）。
 
 ## 查看和编辑片段的元数据（属性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

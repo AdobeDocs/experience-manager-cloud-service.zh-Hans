@@ -1,12 +1,12 @@
 ---
 title: 持久 GraphQL 查询
-description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
+description: 了解如何在Adobe Experience Manager as a Cloud Service中使用持久GraphQL查询优化性能。 持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 其中 `PERSISTENT_PATH` 是保存持久查询的缩略路径。
 
-1. 例如，`wknd` 是配置名称，`plain-article-query` 为持久查询的名称。要执行查询：
+1. 例如， `wknd` 是配置名称和 `plain-article-query` 是持久查询的名称。 要执行查询：
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-例如，以下查询包含一个变量 `activity` 要根据活动值过滤列表，请执行以下操作：
+例如，以下查询包含一个变量 `activity` 要根据活动值筛选列表，请执行以下操作：
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -400,7 +400,7 @@ curl -u admin:admin -X POST \
 
 ## 为应用程序使用的查询 URL 编码 {#encoding-query-url}
 
-对于应用程序，在构建查询变量时使用的任何特殊字符（即分号 (`;`)、等号 (`=`)、斜杠 `/`）才能使用相应的 UTF-8 编码。
+对于应用程序，在构建查询变量时使用的任何特殊字符(即分号(`;`)，等号(`=`)，斜杠 `/`)必须转换为使用相应的UTF-8编码。
 
 例如：
 

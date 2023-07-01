@@ -2,10 +2,10 @@
 title: 使用内容片段 （资产 — 内容片段）
 description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和 headless 投放。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2132'
-ht-degree: 91%
+source-wordcount: '2134'
+ht-degree: 89%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 91%
 * 物理渠道；例如，台式机、移动设备。
 * 实物渠道中的投放形式；例如，“产品详细信息页面”、“产品类别页面”（适用于桌面）或“移动设备 Web”（适用于移动设备的移动设备应用程序）。
 
-但是，您（可能）不希望在所有渠道中使用完全相同的内容 – 您需要根据特定渠道优化内容。
+但是，您（可能）不希望在所有渠道中使用完全相同的内容，您需要根据特定渠道优化内容。
 
 内容片段允许您：
 
@@ -84,7 +84,7 @@ ht-degree: 91%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关详细信息，另请参见[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
+>有关更多信息，另请参阅 [了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 

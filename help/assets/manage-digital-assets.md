@@ -6,7 +6,7 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 11%
@@ -273,7 +273,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 1. 在确认对话框中，单击：
 
    * **[!UICONTROL 取消]** 停止操作
-   * **[!UICONTROL 删除]** 要确认操作，请执行以下操作：
+   * **[!UICONTROL 删除]**&#x200B;可确认操作：
 
       * 如果资源没有引用，则会删除该资源。
       * 如果资产具有引用，则会出现一条错误消息，通知您 **[!UICONTROL 一个或多个资产被引用]**. 您可以选择 **[!UICONTROL 强制删除]** 或 **[!UICONTROL 取消]**.

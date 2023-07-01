@@ -2,9 +2,9 @@
 title: ContextHub 诊断
 description: ContextHub提供了一个诊断页面，您可以在其中查看ContextHub框架的概述
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '438'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ContextHub诊断页面提供有关已创建的存储和UI模块、已加载的�
 
 >[!NOTE]
 >
->为了返回诊断信息，必须启用调试模式，否则诊断页面为空白。 请参阅 [本文档](configuring-contexthub.md#debugging-contexthub) 了解有关如何启用调试模式的详细信息。
+>为了返回诊断信息，必须启用调试模式，否则诊断页面为空白。 参见 [本文档](configuring-contexthub.md#debugging-contexthub) 了解有关如何启用调试模式的详细信息。
 
 ## 商店 {#stores}
 
@@ -52,8 +52,8 @@ Clientlibs部分列出了所有 [客户端库文件夹](/help/implementing/devel
 URL部分包含指向ContextHub功能的链接：
 
 * **配置编辑器：** 打开 [ContextHub配置页面](configuring-contexthub.md) 可在其中配置商店、UI模式和UI模块。
-* **ContextHub模块的配置：** 打开 `/etc/cloudsettings/default/contexthub.config.kernel.js` 文件，其中包含ContextHub存储配置的Javascript对象表示形式。
-* **ContextHub UI的配置：** 打开 `/etc/cloudsettings/default/contexthub.config.ui.js` 文件，其中包含ContextHub UI模式配置的Javascript对象表示形式。
+* **ContextHub模块的配置：** 打开 `/etc/cloudsettings/default/contexthub.config.kernel.js` 文件，其中包含ContextHub存储配置的JavaScript对象表示形式。
+* **ContextHub UI的配置：** 打开 `/etc/cloudsettings/default/contexthub.config.ui.js` 文件，其中包含ContextHub UI模式配置的JavaScript对象表示形式。
 * **kernel.js：** 打开 `/etc/cloudsettings/default/contexthub.kernel.js` 文件，其中包含实施ContextHub框架的客户端库的源代码、区段引擎和存储类型。
 * **ui.js：** 打开 `/etc/cloudsettings/default/contexthub.ui.js` 文件，其中包含实施ContextHub UI和UI模块类型的客户端库的源代码。
 * **style.css：** 打开 `/etc/cloudsettings/default/contexthub.styles.css` 文件，其中包含ContextHub UI和UI模块的CSS样式。

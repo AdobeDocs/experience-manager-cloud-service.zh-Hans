@@ -2,10 +2,10 @@
 title: 管理活动
 description: 通过“活动”控制台，您可以创建、组织和管理品牌的营销活动
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2019'
-ht-degree: 47%
+source-wordcount: '2020'
+ht-degree: 48%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 47%
 
 * XT - Adobe Target体验定位
 * A/B - Adobe Target A/B测试
-* AEM – Adobe Experience Manager 定位（即 ContextHub 驱动的）
+* AEM - Adobe Experience Manager定位（即ContextHub驱动的）
 
 ![活动类型](/help/sites-cloud/authoring/assets/activities-types.png)
 
@@ -63,8 +63,8 @@ ht-degree: 47%
    ![导航到活动](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
 1. 在“活动”控制台中，单击或点按 **创建**&#x200B;则&#x200B;**创建品牌**.
-1. 选择品牌模板，然后单击或点按 **下一个**.
-1. 键入您希望品牌在“活动”和“选件”控制台中显示的标题。 （可选）键入或选择一个或多个要与品牌关联的标记。
+1. 选择品牌模板，然后单击或点按&#x200B;**下一步**。
+1. 键入您希望品牌在“活动”和“选件”控制台中显示的标题。 （可选）键入或选择要与该品牌关联的一个或多个标记。
 1. 单击或点按&#x200B;**创建**。您的品牌将显示在“活动”控制台中。
 
 ## 使用“活动”控制台添加/编辑活动 {#adding-editing-an-activity-using-the-activities-console}

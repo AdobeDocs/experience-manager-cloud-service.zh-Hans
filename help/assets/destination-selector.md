@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 的目标选择器
 description: 使用 AEM 目标选择器显示和选择可用作原始资源副本的资源。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 95%
+source-wordcount: '1911'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ interface SelectedDestination {
 | *repo:size* | 数字 | 资源的大小，以字节为单位。 |
 | *repo:path* | 字符串 | 资源在存储库中的位置。 |
 | *repo:ancestors* | `Array<string>` | 存储库中资源的祖先项数组。 |
-| *repo:state* | 字符串 | 存储库中资源的当前状态（例如，活动、已删除等）。 |
+| *repo:state* | 字符串 | 存储库中资产的当前状态（例如，活动、删除等）。 |
 | *repo:createdBy* | 字符串 | 创建资源的用户或系统。 |
 | *repo:createDate* | 字符串 | 资源的创建日期和时间。 |
 | *repo:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
@@ -188,7 +188,7 @@ interface SelectedDestination {
 | *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。此 `imsOrg` 需要密钥来验证您访问的组织是否处于Adobe IMS下。 |
 | *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。`imsToken` 如果您使用的是SUSI流，则不是必需的。 但是，如果您使用的是非SUSI流，则需要使用此参数。 |
 | *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。`apiKey` 如果您使用的是SUSI流，则不是必需的。 但是，它在非 SUSI 流程中是必需的。 |
-| *rootPath* | 字符串 | 否 | /content/dam/ | 目标选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径 `/content/dam/marketing/subfolder/`，目标选择器不允许您遍历任何父文件夹，而只显示子文件夹。 |
+| *rootPath* | 字符串 | 否 | /content/dam/ | 目标选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径， `/content/dam/marketing/subfolder/`，目标选择器不允许您遍历任何父文件夹，但仅显示子文件夹。 |
 | *hasMore* | 布尔型 | 否 | | 当应用程序有更多内容要显示时，您可以使用此属性添加加载器，并加载内容以使其在应用程序中可见。它是一个表示内容加载正在进行的指示器。 |
 | *orgName* | 布尔型 | 否 | | 它是与 AEM 关联的组织名称（可能是 orgID） |
 | *initRepoID* | 字符串 | 否 | | 这是您要在默认初始视图中使用的资源存储库的路径 |

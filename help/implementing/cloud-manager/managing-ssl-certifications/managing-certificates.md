@@ -2,10 +2,10 @@
 title: 管理 SSL 证书
 description: 了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '634'
-ht-degree: 100%
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
+source-wordcount: '626'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 从 Cloud Manager 中移除证书是一个无法撤消的永久操作。 作为最佳实践，Adobe 建议在 Cloud Manager 中删除 SSL 文件之前，先在本地保存这些文件。
 
-Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。 在删除 SSL 证书之前，必须删除所有关联的域。 请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)文档，了解更多信息。
+Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。 在删除 SSL 证书之前，必须删除所有关联的域。 参见 [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) 了解更多信息。
 
 按照以下步骤删除 SSL 证书。
 
@@ -67,6 +67,6 @@ Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。 
 
 使用 UI 迁移所有预先存在的环境配置后，消息将消失。 消息可能需要 1 – 2 个工作日才能消失。
 
-请参阅文档[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)，了解更多详细信息。
+参见 [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 了解更多详细信息。
 
 **IP 允许列表**&#x200B;和&#x200B;**环境**&#x200B;页面上也提供了类似的消息，这些环境具有 IP 允许列表或自定义域名的预先存在的 CDN 配置。

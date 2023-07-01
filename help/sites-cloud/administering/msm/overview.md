@@ -4,10 +4,10 @@ description: 了解如何通过 AEM 强大的 Live Copy 和多站点管理器功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '2705'
-ht-degree: 100%
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
+source-wordcount: '2706'
+ht-degree: 99%
 
 ---
 
@@ -155,7 +155,7 @@ ht-degree: 100%
 | 源 | 用作 Live Copy 的基础的原始页面 | 与 Blueprint 和/或 Blueprint 页面同义 |
 | Live Copy | （源的）副本，由转出配置定义的同步操作维护 |  |
 | Live Copy 配置 | Live Copy 的配置详细信息的定义 |  |
-| 实时关系 | 给定资源的继承的有效定义，即源和 Live Copy 之间的连接 | 确保对源所做的更改能够与 Live Copy 同步 |
+| 实时关系 | 给定资源的继承的有效定义，即源与活动副本之间的连接 | 确保对源所做的更改能够与 Live Copy 同步 |
 | Blueprint | 与源同义 | 可由 Blueprint 配置定义 |
 | Blueprint 配置 | 用于指定源路径的预定义的配置 | 在 Blueprint 配置中引用 Blueprint 页面时，“转出”命令将变为可用 |
 | 章节 | 要包含在 Live Copy 中的 Blueprint 部分 | 这些通常是根的子页面 |
