@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '5096'
+source-wordcount: '5162'
 ht-degree: 6%
 
 ---
@@ -37,7 +37,7 @@ AEM中的资源搜索支持以下用例，本文介绍这些用例的使用、�
 | [限制](#limitations) 和 [提示](#tips) | | |
 | [说明示例](#samples) | | |
 
-使用顶部的Omnisearch字段搜索资源 [!DNL Experience Manager] Web界面。 转到 **[!UICONTROL 资产]** > **[!UICONTROL 文件]** 在 [!DNL Experience Manager]，单击 ![search_icon](assets/do-not-localize/search_icon.png) 在顶部栏中，输入搜索关键字，然后选择 `Return`. 或者，使用关键字快捷键 `/` （正斜杠）以打开Omnisearch字段。 `Location:Assets` 已预选中，以将搜索限制在DAM资产。 [!DNL Experience Manager] 在开始键入搜索关键词时提供建议。
+使用顶部的Omnisearch字段搜索资源 [!DNL Experience Manager] Web界面。 转到 **[!UICONTROL 资产]** > **[!UICONTROL 文件]** 在 [!DNL Experience Manager]，单击 ![search_icon](assets/do-not-localize/search_icon.png) 在顶部栏中，输入搜索关键字，然后选择 `Return`. 或者，使用关键字快捷键 `/` （正斜杠）以打开Omnisearch字段。 `Location:Assets` 已预选中，以将搜索限制在DAM资产。 `Path:/content/dam` 当您在根级别执行搜索时，也会显示 **[!UICONTROL 文件]** 文件夹。 如果导航到任何其他文件夹， `Path:/content/dam/<folder name>` 显示在Omnisearch字段中，以将搜索范围限制为当前文件夹。 [!DNL Experience Manager] 会在您开始键入搜索关键词时提供建议。
 
 使用 **[!UICONTROL 筛选器]** 用于搜索资源、文件夹、标记和元数据的面板。 您可以根据各种选项（谓词）筛选搜索结果，例如文件类型、文件大小、上次修改日期、资源状态、分析数据和Adobe Stock许可。 您可以自定义“筛选器”面板，并使用添加或删除搜索谓词 [搜索Facet](/help/assets/search-facets.md). 此 [!UICONTROL 文件类型] 在中筛选 [!UICONTROL 筛选器] 面板具有混合状态复选框。 因此，除非选择所有嵌套的谓词（或格式），否则将部分选中第一级复选框。
 
@@ -415,6 +415,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 * 启动工作流
 * 关联或取消关联资产
 * 使用执行搜索后自动显示的过滤器面板应用过滤器以缩小搜索结果范围。
+* 导航到资源位置
 
 ### 对搜索结果排序 {#sort}
 
@@ -466,6 +467,10 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 ### 关联和取消关联资产 {#relate-unrelate-assets}
 
 关联和取消关联搜索结果中显示的资源。 选择资源并单击 **[!UICONTROL 相关]** 或 **[!UICONTROL 取消关联]**.
+
+### 导航到资产文件夹位置 {#navigate-asset-folder-location}
+
+导航到搜索结果中显示的资产的文件夹位置。 选择资源并单击 **[!UICONTROL 显示文件位置]**.
 
 ## 意外的搜索结果和问题 {#unexpected-results}
 

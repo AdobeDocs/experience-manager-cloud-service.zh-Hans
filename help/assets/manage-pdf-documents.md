@@ -4,9 +4,9 @@ description: 在中管理PDF文档 [!DNL Adobe Experience Manager] as a [!DNL Cl
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '853'
 ht-degree: 4%
 
 ---
@@ -22,6 +22,7 @@ Document CloudPDF查看器可通过以下方式为AEM Assets带来好处：
 
 > 提示
 > 如果您无法获取之前上传的PDF文档的多页预览，请选择该PDF并单击 **![重新处理](/help/assets/assets/Reprocess.svg) 重新处理资产**.
+>
 
 ## 支持PDFDocument Cloud查看器组件 {#pdf-doc-cloud}
 
@@ -55,6 +56,7 @@ Adobe Experience Manager Assets允许您预览包含多页的PDF文档。 要预
 
 > 注意
 > 您可以预览的资源的最大大小为100 MB。
+>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -110,6 +112,10 @@ Experience Manager Assets允许您向PDF文档添加注释。 一个PDF文档可
         </tr>
     </table>
 
+>[!NOTE]
+>
+>您添加到PDF文档的注释在预览模式下可用。 但是，下载或打印PDF文档时不会显示注释。
+
 ## 支持其他格式文档的多页预览 {#multi-format}
 
 除了PDF文档之外，您还可以预览其他格式类型的文档的多页。 支持的文档格式类型为TXT、RTF、DOC、DOCX、PPT、PPTX、XLS和XLSX。 Experience Manager Assets会自动将这些文档格式转换为PDF格式，并使它们可用于预览。
@@ -126,7 +132,6 @@ Experience Manager Assets允许您向PDF文档添加注释。 一个PDF文档可
 > * 您可以预览的资源的最大大小为100 MB。
 > * 要预览的XLS或XLSX文件的最大大小为20 MB。
 >
-
 
 **另请参阅**
 

@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
+source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 33%
@@ -56,9 +56,9 @@ ht-degree: 33%
 
 Experience Manager Assets现在允许您从搜索结果用户界面执行更多操作：您现在可以：
 
-* 默认情况下，在当前存储库位置内执行搜索，而不是在整个存储库中搜索关键字。
+* [在当前存储库位置中执行搜索](/help/assets/search-assets.md) 默认情况下，不会搜索整个存储库中的关键字。
 
-* 导航到搜索结果中显示的资产的文件夹位置。
+* [导航到文件夹位置](/help/assets/search-assets.md#aftersearch) 对于显示在搜索结果中的资源。
 
 **3D资产的缩略图预览**
 
