@@ -3,32 +3,32 @@ title: 如何将自适应表单添加到AEM Sites页面？
 description: 了解如何轻松地在AEM Sites页面中创建或添加自适应表单。 了解将表单集成到网站的分步技术和最佳实践，优化数字体验以发挥最大影响。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bbb01d049083d0aef09bc2365235a7930fb53070
 workflow-type: tm+mt
-source-wordcount: '3245'
-ht-degree: 21%
+source-wordcount: '3264'
+ht-degree: 20%
 
 ---
 
 
-# 在AEM Sites页面或AEM Experience Fragment中创建自适应表单 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# 在AEM Sites页面或体验片段中创建自适应表单 {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | 本文 |
 
-借助AEM Forms，您可以无缝地向AEM Sites页面添加自适应表单。 这使得您的访问者无需离开其所在的页面，即可方便地填写和提交表格。这样，他们即可在主动与表单交互的同时轻松地与网站的其他元素保持互动。
+借助AEM Forms，您可以无缝地向AEM Sites页面添加表单。 这使得您的访问者无需离开其所在的页面，即可方便地填写和提交表格。这样，他们即可在主动与表单交互的同时轻松地与网站的其他元素保持互动。
 
 您可以使用AEM页面编辑器快速创建多个表单并将其添加到AEM Sites页面。 使用AEM页面编辑器，内容作者可以利用自适应表单组件的强大功能（包括动态行为、验证、数据集成、生成记录文档和业务流程自动化），在Sites页面中创建无缝的数据捕获体验。 通过它，您还可以使用 AEM Sites 页面的各种功能，例如版本控制、定位、翻译和多站点管理器等。
 
-AEM Forms 会提供自适应表单容器和自适应表单嵌入组件。您可以使用自适应表单容器在体验片段或AEM Sites页面中创建新表单，而自适应Forms — 嵌入组件允许您添加现有自适应表单或使用自适应Forms编辑器创建新表单。
+AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组件。 您可以使用自适应表单容器在AEM Sites页面或体验片段中创建新表单，而自适应Forms — 嵌入组件允许您添加现有自适应表单或使用自适应Forms编辑器创建新表单。
 
 ![AEM Sites页面中的自适应表单示例](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-## 为何在AEM Sites页面或AEM体验片段中创建自适应表单？
+## 为何使用自适应Forms核心组件在AEM Sites页面或体验片段中创建自适应表单？
 
-通过AEM页面编辑器中的自适应表单容器，您可以使用自适应Forms组件的强大功能（包括动态行为、验证、数据集成、生成记录文档和业务流程自动化）在Sites页面中创建无缝的数据捕获体验。 它还允许您使用AEM Sites页面的各种功能，如版本控制、定位、翻译和多站点管理器，从而增强整体表单创建和管理体验。 让我们来探索一下其中的一些功能：
+如果您以前曾为您的站点创建自适应Forms基础组件或基于HTML的普通表单，则Adobe建议使用自适应Forms核心组件在AEM Sites页面或体验片段中创建自适应表单。 它允许您使用AEM Sites页面的各种功能，如版本控制、定位、翻译和多站点管理器，从而增强自适应Forms的整体表单创建和管理体验。 让我们来探索一下其中的一些功能：
 
 * **版本控制：** AEM Sites pages产品 [强大的版本控制功能](/help/sites-cloud/authoring/features/page-versions.md)，允许您跟踪和管理表单的不同版本。 这使您能够对表单进行更改和增强，同时保持根据需要回滚到以前版本的能力。 版本控制可确保采用有控制的组织方法来形成开发和演变。
 * **定位(与Adobe Target集成)：** 借助AEM Sites页面定位功能，您还可以 [为不同受众个性化表单体验](/help/sites-cloud/integrating/integration-adobe-target-ims.md). 通过利用用户区段和定位标准，您可以根据特定用户组定制表单的内容、设计或行为。 这使您能够提供个性化的相关表单体验，从而提高参与度和转化率。
@@ -38,7 +38,7 @@ AEM Forms 会提供自适应表单容器和自适应表单嵌入组件。您可�
 * **标记：** AEM Sites页面允许您 [为页面、资产或其他内容分配标记或标签](/help/implementing/developing/introduction/tagging-framework.md). 标记是关键字或元数据标签，为根据特定条件分类和整理内容提供了一种方法。 您可以为AEM中的页面、资源或任何其他内容项分配一个或多个标记，以改进搜索并对资源进行分类。
 * **锁定和解锁内容：** AEM Sites允许用户 [控制对页面的访问和修改](/help/sites-cloud/authoring/fundamentals/editing-content.md) 在AEM Sites环境中。 锁定页面时，意味着页面可以免受其他用户未经授权的更改或编辑。 只有锁定了内容的用户或指定的管理员才能解锁内容以允许修改。
 
-此外，AEM页面编辑器中的自适应Forms使用 [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). 这些核心组件提供了更容易使用的标准方法来样式化和自定义组件，与 [AEM Sites WCM组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans).
+此外，AEM页面编辑器中的自适应Forms使用 [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). 这些核心组件提供了更容易使用的标准方法来样式化和自定义组件，与 [AEM Sites WCM组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 
 ## 如何在AEM Sites页面或AEM体验片段中创建或添加自适应表单？ {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -262,4 +262,9 @@ AEM Forms 会提供自适应表单容器和自适应表单嵌入组件。您可�
 * [为表单创建样式或主题](using-themes-in-core-components.md)
 * [使用规则编辑器将动态行为添加到表单](rule-editor.md)
 * [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+
+## 相关文章 {#related-article}
+
+* [创建基于独立核心组件的自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
