@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0efdb9353ef908cf5a655c989ae7be1107c8f3de
+source-git-commit: e302d24261f24697aeb5f97b99ffee1fc2135959
 workflow-type: tm+mt
-source-wordcount: '2849'
+source-wordcount: '2783'
 ht-degree: 4%
 
 ---
@@ -24,20 +24,17 @@ ht-degree: 4%
 
 通过自适应Forms，您可以创建有吸引力的响应式、动态自适应表单。 AEM Forms为企业提供了便于用户使用的向导，以快速创建自适应Forms。 该向导具有快速选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
+![创建自适应表单的向导](/help/release-notes/assets/wizard.png){width="100%" align="center"}
+
 在开始之前，请了解可供您使用的Forms组件类型：
 
-* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)：这些是标准化数据捕获组件。 这些组件为您的数字注册体验提供自定义功能、缩短开发时间并降低维护成本。 开发人员可以轻松自定义这些组件并为它们设置样式。 **Adobe建议使用这些现代且可扩展的组件来开发自适应Forms**.
+* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)：这些是标准化数据捕获组件。 这些组件为您的数字注册体验提供自定义功能、缩短开发时间并降低维护成本。 开发人员可以轻松自定义这些组件并为它们设置样式。 您可以访问 [https://aemcomponents.dev/](https://aemcomponents.dev/) 查看可用的核心组件的运行情况 **Adobe建议使用这些现代且可扩展的组件来开发自适应Forms**.
 
 * [自适应Forms Foundation组件](creating-adaptive-form.md)：它们是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑现有的基于基础组件的自适应表单。 如果要创建新表单，Adobe建议使用  [创建自适应Forms的核心组件Forms](#create-an-adaptive-form-core-components).
 
-![创建自适应表单的向导](/help/release-notes/assets/wizard.png){width="100%" align="center"}
-
-
 >[!BEGINTABS]
 
->[!TAB 使用核心组件创建自适应Forms]
-
-## 先决条件 {#pre-requisites-to-create-a-core-components-based-adaptive-form}
+>[!TAB 使用核心组件创建自适应Forms（推荐）]
 
 创建自适应表单需要满足以下条件：
 
@@ -101,25 +98,20 @@ ht-degree: 4%
    * **[!UICONTROL 名称：]** 指定表单的名称。 在存储库中创建具有指定名称的节点。 开始键入标题时，将自动生成“名称”字段的值。 您可以更改建议值。 名称字段只能包含字母数字字符、连字符和下划线。 所有无效输入均被替换为连字符。
    * **[!UICONTROL 路径：]** 指定保存自适应表单的位置。 您可以直接将自适应表单保存在 `/content/dam/formsanddocuments` 或创建文件夹，例如 `/content/dam/formsanddocuments/adaptiveforms` 以保存自适应表单。 请确保先创建文件夹，然后再在路径中使用它。 此 **[!UICONTROL 路径]** 字段不会自动创建文件夹。
 
-1. 点按 **[!UICONTROL 创建]**. 创建自适应表单，并在自适应Forms编辑器中打开该表单。 编辑器将显示模板中可用的内容。  根据自适应表单的类型，关联表单中显示的表单元素 <!--XFA form template, XML schema or --> JSON架构或表单数据模型显示在 **[!UICONTROL 数据模型对象]** 的选项卡 **[!UICONTROL 内容浏览器]** 在侧栏中。 您还可以拖放这些元素来构建自适应表单。
+1. 点按 **[!UICONTROL 创建]**. 创建自适应表单，并在自适应Forms编辑器中打开该表单。 编辑器将显示模板中可用的内容。  根据自适应表单的类型，关联表单中显示的表单元素 <!--XFA form template, XML schema or --> JSON架构或表单数据模型显示在 **[!UICONTROL 数据模型对象]** 的选项卡 **[!UICONTROL 内容浏览器]** 在侧栏中。
 
-现在，您可以将自适应Forms核心组件拖放到自适应Forms容器中来设计和创建表单。
+现在，您可以拖放 [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) 或架构元素来构建自适应表单。
 
-## 可用的自适应Forms核心组件 {#available-core-components}
-
-自适应Forms核心组件是标准化的数据捕获组件。 这些组件提供自定义功能，有助于缩短开发时间，并降低数字注册体验的维护成本。 [自适应Forms核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans) 提供了可用组件的详细列表以及有关每个组件功能的详细信息。 您也可以访问 [https://aemcomponents.dev/](https://aemcomponents.dev/) 查看可用的核心组件运行情况。
 
 ## 编辑自适应表单的表单模型属性 {#edit-form-model-core-components-based-adaptive-forms}
 
-1. 选择自适应表单并点按 ![页面信息](/help/forms/assets/Smock_Properties_18_N.svg){width="100%" align="center"} > **[!UICONTROL 打开属性]**. 此时将打开“表单属性”页面。
+1. 选择自适应表单并点按 ![页面信息](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 打开属性]**. 此时将打开“表单属性”页面。
 
 1. 转到 **[!UICONTROL 表单模型]** 选项卡并选择表单模型。 如果自适应表单没有表单模型，您可以自由选择JSON架构或表单数据模型。 另一方面，如果自适应表单已基于表单模型，则可以选择切换到相同类型的另一个表单模型。 例如，如果表单使用JSON架构，您可以轻松切换到另一个JSON架构，同样，如果表单使用表单数据模型，您可以切换到另一个表单数据模型。
 
 1. 点按 **[!UICONTROL 保存]** 以保存属性。
 
 >[!TAB 使用基础组件创建自适应Forms]
-
-## 先决条件 {#pre-requisites-to-create-a-foundation-components-based-adaptive-form}
 
 创建自适应表单需要满足以下条件：
 
@@ -254,7 +246,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 您还可以从自适应表单编辑器或自适应表单模板编辑器中修改表单模型属性。
 
 1. 选择 **[!UICONTROL 自适应表单容器（根）]** 组件。
-1. 单击 ![“配置”图标](/help/forms/assets/configure-icon.svg){width="100%" align="center"} 图标以打开 **[!UICONTROL 属性]** 自适应表单容器的。
+1. 单击 ![“配置”图标](/help/forms/assets/configure-icon.svg) 图标以打开 **[!UICONTROL 属性]** 自适应表单容器的。
 1. 选择 **[!UICONTROL 数据模型]** 选项卡，然后执行以下操作之一：
 
    * 如果自适应表单没有表单模型，则可以选择表单模型，然后相应地选择 <!-- a form template, --> XML或JSON架构，或表单数据模型。
