@@ -2,9 +2,9 @@
 title: 管理内容片段（资产 — 内容片段）
 description: 了解如何使用Assets控制台管理您的AEM内容片段（Headless内容的基础）。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1770'
 ht-degree: 71%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 71%
 
    选择后，使用 **下一个** 以继续。
 
-   ![片段基础](assets/cfm-managing-01.png)
+   ![选择内容片段模型](assets/cfm-managing-01.png)
 
 1. 在属性 **步骤中** ，指定：
 
@@ -92,7 +92,7 @@ ht-degree: 71%
 * 从工具栏中；选择片段后，所有适当的操作都可用。
 * 作为 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)；可用于单个片段卡片的一组操作。
 
-![操作](assets/cfm-managing-02.png)
+![工具栏中的操作](assets/cfm-managing-02.png)
 
 选择片段以显示包含适用操作的工具栏：
 
@@ -167,13 +167,13 @@ ht-degree: 71%
 * [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [预览](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![模式](assets/cfm-managing-04.png)
+![内容片段编辑器中的模式](assets/cfm-managing-04.png)
 
 ### 内容片段编辑器中的工具栏操作 {#toolbar-actions-in-the-content-fragment-editor}
 
 顶部工具栏中的某些功能可以从多种模式使用：
 
-![模式](assets/cfm-managing-top-toolbar.png)
+![各种模式下可用的工具栏操作](assets/cfm-managing-top-toolbar.png)
 
 * 当内容页面上已引用片段时，会显示一条消息。 您可以&#x200B;**关闭**&#x200B;消息。
 
@@ -331,7 +331,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 比较片段时无法编辑片段内容。
 
-![比较](assets/cfm-managing-06.png)
+![比较变量](assets/cfm-managing-06.png)
 
 ## 恢复到某个版本  {#reverting-to-a-version}
 

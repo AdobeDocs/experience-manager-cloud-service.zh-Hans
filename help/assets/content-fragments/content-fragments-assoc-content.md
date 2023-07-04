@@ -2,10 +2,10 @@
 title: 关联内容（资产 — 内容片段）
 description: 了解AEM关联内容功能如何提供连接，以便可以选择将资源与片段一起使用。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 53%
+source-wordcount: '231'
+ht-degree: 54%
 
 ---
 
@@ -36,9 +36,9 @@ AEM关联内容功能提供了连接，以便在将资产添加到内容页面�
 
    ![选择收藏集](assets/cfm-assoc-content-02.png)
 
-1. 确认（使用&#x200B;**选择**）。 收藏集将列为已关联。
+1. 确认（使用&#x200B;**选择**）。 收藏集会列为是关联的。
 
-   ![cfm-6420-05](assets/cfm-assoc-content-03.png)
+   ![已确认关联](assets/cfm-assoc-content-03.png)
 
 ## 编辑关联内容 {#editing-associated-content}
 

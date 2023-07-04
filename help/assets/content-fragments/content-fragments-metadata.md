@@ -2,10 +2,10 @@
 title: 元数据 — 片段属性（资产 — 内容片段）
 description: 了解如何查看和编辑 内容片段的元数据属性。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 80%
+source-wordcount: '223'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,8 @@ ht-degree: 80%
 
    * 选择&#x200B;[**“查看属性”**&#x200B;打开对话框](/help/assets/manage-digital-assets.md#editing-properties). 打开进行查看后，您还可以编辑。
    * 打开内容片段进行编辑，然后从侧面板中选择&#x200B;**“元数据”**。
-   ![元数据](assets/cfm-metadata-01.png)
+
+   ![侧面板中的元数据](assets/cfm-metadata-01.png)
 
 3. **“基本”**&#x200B;选项卡提供了可查看或编辑的选项：
 
@@ -34,9 +35,11 @@ ht-degree: 80%
       * [标记](/help/sites-cloud/authoring/features/tags.md)在组织片段时可发挥强大作用，因为其可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
 例如，您可以将相关片段标记为“圣诞节发布”，以仅允许作为子集浏览这些片段，或复制这些片段以供将来在新文件夹中再次发布。
 
-         >[!NOTE]
-         >
-         >**标记** 在以下情况下也可以添加 [创作变体内容](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) 和时间 [创建变体](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
-   * **已创建** （仅显示）
+        >[!NOTE]
+        >
+        >[创作变体内容](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)和[创建变体](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation)时，也可以添加&#x200B;**标签。**
+
+   * **已创建（仅显示）**
+
    例如：
-   ![元数据](assets/cfm-metadata-02.png)
+   ![元数据示例](assets/cfm-metadata-02.png)

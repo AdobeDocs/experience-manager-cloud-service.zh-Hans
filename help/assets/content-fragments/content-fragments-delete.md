@@ -2,10 +2,10 @@
 title: 内容片段 — 删除注意事项（资产 — 内容片段）
 description: 在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 94%
 >
 >编辑/更新内容片段所需的删除权限包含在通过用户和/或群组管理分配的“删除”权限中。 <!-- The delete permissions, required to edit/update a Content Fragment, are included in the Delete permission [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
-编辑/更新片段所需的权限需要应用于包含内容片段的节点或适当的父节点（在 `/content/dam` 下的任何级别）。当分配给此类父节点时，权限将应用于该分支中的所有节点。
+编辑/更新片段所需的权限需要应用于包含内容片段的节点或适当的父节点（在 `/content/dam` 下的任何级别）。当分配给此类父节点时，权限会应用于该分支中的所有节点。
 
 例如，将包含所有内容片段的文件夹，例如：
 
@@ -88,5 +88,5 @@ The `add` and `modify` privileges can also be administered in CRXDE Lite, or usi
 
 For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
 
-![cf-delete-03](assets/cf-delete-03.png)
+![Remove privileges](assets/cf-delete-03.png)
 -->

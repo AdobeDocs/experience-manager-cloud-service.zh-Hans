@@ -4,7 +4,7 @@ description: 了解内容片段编辑器如何使用Markdown语法，轻松地�
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: c15ef1cc9b14466105e5565c8ccc15120346f0f2
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 当您 [创作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，内容片段编辑器使用 *Markdown* 语法让您能够轻松编写Headless内容：
 
-![Markdown 编辑器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![Markdown编辑器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 您可以定义：
 
