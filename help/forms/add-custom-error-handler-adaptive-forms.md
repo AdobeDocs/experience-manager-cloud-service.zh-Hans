@@ -7,9 +7,9 @@ keywords: 添加自定义错误处理程序、添加默认错误处理程序、�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
+source-git-commit: 11ab8d41b911afc73fe5339d43ca3a0fc80a5f8d
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1926'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ AEM Forms为表单提交提供开箱即用的成功和错误处理程序。 它�
     ]
     originCode : <target error Code>
     originMessage : <unstructured error message returned by service>
-}
+    }
 ```
 
 
@@ -125,20 +125,20 @@ AEM Forms为表单提交提供开箱即用的成功和错误处理程序。 它�
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
 
-      ```javascript
-      {
-      &quot;type&quot;： &quot;VALIDATION_ERROR&quot;，
-      &quot;validationErrors&quot;： [
-      {
-      &quot;fieldName&quot;： &quot;guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]&quot;，
-      &quot;dataRef&quot;： &quot;&quot;，
-      &quot;details&quot;： [
-      “提供的ID无效。 提供的值不正确！”
-      ]
-      }
-      ]}
-      ```
-  
+  ```javascript
+          {
+              "type": "VALIDATION_ERROR",
+              "validationErrors": [
+              {
+              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+              "dataRef": "",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+          ]
+          }
+          ]}
+  ```
+
   您可以通过点按自适应表单中任何字段并选择 **[!UICONTROL 查看SOM表达式]**.
 
   ![在自定义错误处理程序中显示错误响应的自适应表单字段的SOM表达式](/help/forms/assets/custom-error-handler-somexpression.png)
@@ -152,17 +152,17 @@ AEM Forms为表单提交提供开箱即用的成功和错误处理程序。 它�
 * **`Response:`**
 
   ```javascript
-  {
-      "type": "VALIDATION_ERROR",
-      "validationErrors": [
       {
-          "fieldName": "",
-          "dataRef": "/Pet/id",
-          "details": [
-          "Invalid ID supplied. Provided value is not correct!"
-          ]
-          }
-  ]}
+          "type": "VALIDATION_ERROR",
+          "validationErrors": [
+          {
+              "fieldName": "",
+              "dataRef": "/Pet/id",
+              "details": [
+              "Invalid ID supplied. Provided value is not correct!"
+              ]
+              }
+      ]}
   ```
 
   ![在自定义错误处理程序中显示错误响应的自适应表单字段的数据引用](/help/forms/assets/custom-errorhandler-dataref.png)
@@ -235,21 +235,21 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 1. 添加JavaScript文件，例如 `function.js`. 该文件包含自定义错误处理程序的代码。
 让我们将以下代码添加到JavaScript文件中，以在浏览器控制台中显示从REST服务端点收到的响应和标头。
 
-       ```javascript
+   ```javascript
        /**
-       *自定义错误处理程序
-       * @name customErrorHandler自定义错误处理程序函数
+       * Custom Error handler
+       * @name customErrorHandler Custom Error Handler Function
        * @errorHandler
        */
-       函数customErrorHandler(response， headers)
+       function customErrorHandler(response, headers)
        {
-       console.log（“自定义错误处理程序处理开始……”）；
-       console.log(&quot;response：&quot;+JSON.stringify(response))；
-       console.log(&quot;headers：&quot;+JSON.stringify(headers))；
-       console.log（“自定义错误处理程序处理结束……”）；
+           console.log("Custom Error Handler processing start...");
+           console.log("response:"+JSON.stringify(response));
+           console.log("headers:"+JSON.stringify(headers));
+           console.log("Custom Error Handler processing end...");
        }
-       ```
-   
+   ```
+
    <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
         `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
 1. 保存 `function.js` 文件。
