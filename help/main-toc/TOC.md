@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e60a734d7e0887a23978efac8d896ac3745dbb5d
+source-git-commit: 823d9875f1cd293df834cc6e2fc16fc8f7e0d37b
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4160'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,6 @@ ht-degree: 98%
       + [移除现有安装的外部依赖](/help/assets/remove-external-dependencies.md)
       + [为  [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
@@ -627,9 +626,10 @@ ht-degree: 98%
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
    + 开发人员 API 参考 {#aem-forms-developer-api-reference}
+      + [自适应Forms API参考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 通信 API 参考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms Cloud Service JavaScript API 参考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [AEM Forms Cloud Service Java API 参考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [AEM Forms Cloud Service Java API 参考](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + 疑难解答 {#troubleshooting-aem-forms-cloud-service}
       + [安装和配置](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 缓存](/help/forms/troubleshooting-caching-performance.md)
