@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
+source-git-commit: b738d351a8ec607bef6c82880616061a88968e7f
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 33%
+ht-degree: 43%
 
 ---
 
@@ -60,9 +60,9 @@ Experience Manager Assets现在允许您从搜索结果用户界面执行更多�
 
 * [导航到文件夹位置](/help/assets/search-assets.md#aftersearch) 对于显示在搜索结果中的资源。
 
-**3D资产的缩略图预览**
+**3D 资源的缩略图预览**
 
-[!DNL Experience Manager Assets] 现在生成 [常见3D文件格式的缩略图预览](/help/assets/file-format-support.md) 包括gLB、USDz、FBX、3DS、OBJ和SBSAR。 上传这些文件时，默认情况下会自动生成缩略图。
+[!DNL Experience Manager Assets] 现在可以生成常见 3D 文件格式的缩略图预览，包括 gLB、USDz、FBX、3DS、OBJ 和 SBSAR。[](/help/assets/file-format-support.md)上传这些文件时，默认情况下会自动生成缩略图。
 
 **链接共享配置**
 
@@ -76,23 +76,23 @@ Experience Manager Assets现在允许您从搜索结果用户界面执行更多�
 
 ### Assets视图中的新增功能 {#assets-view-features}
 
-**资产的分层标记可加快搜索体验**
+**资源的分层标记可提供更快的搜索体验**
 
-随着时间的推移，受控词汇的平面列表变得难以管理。 资源视图现在支持 [分层标记结构](/help/assets/tagging-management-assets-view.md)，这有助于应用相关元数据、对资产进行分类、支持搜索、重用标记、提高可发现性等。
+随着时间的推移，受控词汇的扁平列表变得难以管理。资源视图现在支持 [分层标记结构](/help/assets/tagging-management-assets-view.md)，这有助于应用相关元数据、对资产进行分类、支持搜索、重用标记、提高可发现性等。
 
 ![标记管理](/help/assets/assets/tags-hierarchy.png)
 
-**固定文件、文件夹和收藏集以进行快速访问**
+**固定文件、文件夹和集合以便快速访问**
 
-您现在可以 [固定文件、文件夹和收藏集以加快访问速度](/help/assets/my-workspace-assets-view.md) 到这些项目（稍后需要）。 固定项目显示在 **快速访问** 部分。 您可以使用“我的工作区”访问它们，而不是导航到将它们保存在存储库中的位置。
+您现在可以 [固定文件、文件夹和收藏集以加快访问速度](/help/assets/my-workspace-assets-view.md) 到这些项目（稍后需要）。 经过固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分。您可以使用“我的工作区”访问它们，而无需导航到存储库中保存它们的位置。
 
 ![工作区中的“任务”](/help/assets/assets/quick-access.png)
 
-**在垃圾桶文件夹中筛选资源**
+**过滤“垃圾箱”文件夹中的资源**
 
-现在通过“资源”视图，您可以 [筛选可在垃圾桶文件夹中找到的资源](/help/assets/navigate-assets-view.md). 您可以应用标准或自定义筛选条件，在垃圾桶文件夹内搜索相应的资源以恢复或永久删除它们。
+现在通过“资源”视图，您可以 [筛选可在垃圾桶文件夹中找到的资源](/help/assets/navigate-assets-view.md). 您还可以应用标准或自定义过滤器来搜索“垃圾箱”文件夹中的相应资源，以恢复或永久删除它们。
 
-**3D资产的缩略图预览**
+**3D 资源的缩略图预览**
 
 Assets视图现在可生成常见3D文件格式（包括gLB、USDz、FBX、3DS、OBJ和SBSAR）的缩略图预览。 这些文件上传到“资产”视图后，系统会默认自动生成缩略图。
 
@@ -100,7 +100,7 @@ Assets视图现在可生成常见3D文件格式（包括gLB、USDz、FBX、3DS�
 
 **查看热门搜索词**
 
-资源视图现在支持 [查看部署中的热门搜索词](/help/assets/my-workspace-assets-view.md) 使用 **分析** 部分。 您还可以导航到详细分析，以查看过去30天或12个月内的热门搜索。
+资源视图现在支持 [查看部署中的热门搜索词](/help/assets/my-workspace-assets-view.md) 使用 **分析** 部分。 您还可以访问详细的见解，以查看过去 30 天或 12 个月内的热门搜索。
 
 ![工作区中的“任务”](/help/assets/assets/insights-top-searches.png)
 
