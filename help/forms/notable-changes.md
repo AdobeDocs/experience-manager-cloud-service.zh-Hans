@@ -3,9 +3,9 @@ title: AEM 6.5 Forms与AEM Cloud Services之间的差异
 description: 您是否是Experience Manager Forms用户，并且希望升级到Adobe Experience Manager Formsas a Cloud Service？ 在升级或迁移到Cloud Service之前，比较AEM 6.5 Forms和AEM Cloud Services并了解最显着的更改。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 54a1ae1cc030030e44612b502b70c9b567144538
+source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 * 开发人员维护通用的Cloud Service和本地开发环境的代码 [git存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html). 在创建AEMas a Cloud Service程序时，会自动创建基于AEM原型的Git存储库。
 
-   ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Formsas a Cloud Service的开发流程与AEM Cloud Service的AEM Archetype保持一致。 但是，需要对Adobe Experience Manager Maven项目进行一些更改才能与AEM Cloud Service兼容。 从较高层面来看，AEM需要将内容和代码分离为离散的子包，以遵循可变内容和不可变内容之间的拆分。 使用 [Repository Modernizer工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) 通过将内容和代码分隔到单独的软件包来重构现有项目软件包，使其与为Adobe Experience Manager as a Cloud Service定义的项目结构兼容。
 
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 * **规则编辑器：** AEM Formsas a Cloud Service提供强化的功能 [规则编辑器](rule-editor.md#visual-rule-editor). 代码编辑器在Formsas a Cloud Service上不可用。
 
-   此 [迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md) 帮助您迁移具有自定义规则（在代码编辑器中创建）的表单。 该实用程序会将此类规则转换为Formsas a Cloud Service上支持的自定义函数。 您可以将可重用的函数与 规则编辑器结合使用，以继续获取通过规则脚本获取的结果。此 `onSubmitError` 或 `onSubmitSuccess` 函数现在可用作规则编辑器中的操作。
+  此 [迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md) 帮助您迁移具有自定义规则（在代码编辑器中创建）的表单。 该实用程序会将此类规则转换为Formsas a Cloud Service上支持的自定义函数。 您可以将可重用的函数与 规则编辑器结合使用，以继续获取通过规则脚本获取的结果。此 `onSubmitError` 或 `onSubmitSuccess` 函数现在可用作规则编辑器中的操作。
 
 * **预填充服务：** 默认情况下，预填充服务在客户端将数据与自适应表单合并，而不是在AEM 6.5 Forms中合并服务器上的数据。 该功能有助于缩短预填自适应表单所需的时间。 您始终可以配置以在Adobe Experience Manager Forms服务器上运行合并操作。
 
@@ -113,4 +113,13 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 * 您可以使用Communications API在Formsas a Cloud Service上按需或批量生成个性化文档。 您可以将AEM 6.5 Forms环境用于交互式通信和Agent UI用例。
 
+## 查看下一个
 
+* [从AEM Forms（内部部署和AMS环境）迁移到AEM Formsas a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [“在AEM Sites中添加或创建自适应Forms”页](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [创建自适应表单（核心组件）](/help/forms/creating-adaptive-form-core-components.md)
+
+## 附加信息
+
+* [AEM Formsas a Cloud Service简介](/help/forms/home.md)
+* [设置本地开发环境和初始开发项目](/help/forms/setup-local-development-environment.md)

@@ -1,16 +1,16 @@
 ---
 title: 如何从AEM 6.5 Forms迁移到 [!DNL AEM Forms] as a Cloud Service环境？
 description: 从迁移 [!DNL AEM Forms] （内部部署和AMS环境）到 [!DNL AEM Forms] as a Cloud Service环境。
-keywords: 将6.5 forms迁移到CLOUD service 、 6.5 forms迁移到CS 、将6.5 forms迁移到CS 、将6.5 forms升级到CS 、将6.5 forms迁移到CS 、将AEM 6.5升级到CS
+keywords: 6.5 forms到CLOUD Service，6.5 forms到CS，将6.5 forms迁移到CS，将6.5 forms迁移到CLOUD Service，将6.5 forms升级到CS，将AEM 6.5 forms升级到CS，将AEM Forms 6.5 forms升级到CS，将AEM forms迁移到Cloud Service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1590'
 ht-degree: 5%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 5%
 
    Cloud Service不支持规则编辑器脚本。 此 **[!UICONTROL 代码编辑器脚本迁移]** tool可将环境中的所有规则脚本转换为可重用的函数，并将可重用的函数应用于适当位置的可视化编辑器。 这些可重用的功能以客户端库的形式进行保存，并帮助您保持现有功能不变。 该工具会自动将生成的可重用函数应用于相应的自适应Forms。
 
-   使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) 将可重用函数（客户端库）导出到资源包。
+   AEM Form迁移到Cloud Service，请使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement) 将可重用函数（客户端库）导出到资源包。
 
 1. [部署](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying-content-packages-via-cloud-manager-and-package-manager) 可重用函数（客户端库）包， [自定义代码、组件、配置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html#cloud-manager)，自定义特定于区域设置的库 [!DNL AEM] as a Cloud Service环境。
 
@@ -152,7 +152,7 @@ ht-degree: 5%
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-要迁移AEM Workflow模型，请指定以下路径：
+将AEM Workflow模型从AEM Forms 6.5迁移到Cloud Service时，请指定以下路径：
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
@@ -164,7 +164,7 @@ ht-degree: 5%
 * [载入AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html)
 * [在Cloud Service上创建您的第一个自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)
 
-## 其他信息
+## 附加信息
 
 迁移实用程序可帮助您迁移基于基础组件的自适应Forms。 此外，Formsas a Cloud Service还支持自适应Forms核心组件。 因此，您可以：
 
