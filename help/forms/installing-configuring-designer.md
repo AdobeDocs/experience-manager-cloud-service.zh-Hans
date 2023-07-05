@@ -2,9 +2,9 @@
 title: 如何下载和安装Forms Designer以创建记录文档模板？
 description: 您可以使用Forms Designer创建用作记录文档模板的XDP和PDF表单模板。 设计器可用于 [!DNL AEM Forms] 许可证。
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '262'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,7 @@ Designer是一种点击式图形表单设计工具，它简化了XDP和PDF表单
 * 视频硬件加速（可选）
 * Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC。
 * 安装Designer的管理权限。
+* Microsoft Visual C++ 2019（VC 14.28或更高版本） 32位运行时
 
 ## 安装设计器 {#install-designer}
 
