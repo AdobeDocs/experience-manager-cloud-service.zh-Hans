@@ -1,12 +1,12 @@
 ---
 title: Experience Manager as a Cloud Service 站点的支持资源
-description: 获取所有AdobeAEM Cloud Services支持资源的完整列表。 查找AEM Sites as Cloud Service 问题的答案。
+description: 获取所有 Adobe AEM Cloud Services 支持资源的完整列表。查找AEM Sites as Cloud Service 问题的答案。
 landing-page-description: 了解 AEM Sites as a Cloud Service 的创作和管理方法。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 71%
+ht-degree: 74%
 
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL AEM Forms] as a Cloud Service 简介'
-description: 探索 AEM Forms 并了解它如何帮助您生成业务就绪的表单和文档。了解Platform-as-a-Service (PaaS)，如何管理企业级数字表单和业务流程，以及如何将Forms连接到Adobe Sign和当前数据源。
+description: 探索 AEM Forms 并了解它如何帮助您生成业务就绪的表单和文档。了解 Platform-as-a-Service (PaaS)、如何管理企业级数字表单和业务流程和如何将 Forms 连接到 Adobe Sign 和当前数据源。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
