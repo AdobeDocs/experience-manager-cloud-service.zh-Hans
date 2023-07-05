@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="新建内容"
->abstract="使用您在上一个模块中创建的模型，您将了解如何创建可用于页面创作或作为Headless内容基础的内容。"
+>abstract="使用您在前一单元中创建的模型学习如何创建可用于创作页面或作为 Headless 内容的基础的内容。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"

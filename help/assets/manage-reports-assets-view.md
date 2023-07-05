@@ -5,7 +5,7 @@ exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
 source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 71%
+ht-degree: 75%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 71%
 >[!CONTEXTUALHELP]
 >id="assets_reports"
 >title="报表"
->abstract="通过资源报表，管理员可了解Adobe Experience Manager Assets视图环境的活动。 这些数据提供关于用户如何与内容和产品进行交互的有用信息。所有分配给管理员产品配置文件的用户均可访问 Insights 仪表板或创建用户定义的报表。"
+>abstract="管理员可通过资源报表深入了解 Adobe Experience Manager Assets 视图环境的活动。这些数据提供关于用户如何与内容和产品进行交互的有用信息。所有分配给管理员产品配置文件的用户均可访问 Insights 仪表板或创建用户定义的报表。"
 
-通过资源报表，管理员可了解Adobe Experience Manager Assets视图环境的活动。 这些数据提供关于用户如何与内容和产品进行交互的有用信息。
+管理员可通过资源报表深入了解 Adobe Experience Manager Assets 视图环境的活动。这些数据提供关于用户如何与内容和产品进行交互的有用信息。
 
 ## 访问报表 {#access-reports}
 

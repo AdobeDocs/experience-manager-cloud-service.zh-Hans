@@ -5,7 +5,7 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
 >title="规划过渡"
->abstract="在开始Cloud Service过渡历程之前，请熟悉AEMas a Cloud Service。 查看对其所做的显着更改以及被替换或弃用的功能。"
+>abstract="在开始过渡到云服务的历程之前，请先熟悉 AEM as a Cloud Service。查看对它作出的重大更改和被取代或弃用的功能。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
 
 在AEMas a Cloud Service迁移历程的这一阶段，您需要熟悉AEMas a Cloud Service。 您可以查看引入的显着更改，并了解为成功迁移到云进行规划需要些什么。
