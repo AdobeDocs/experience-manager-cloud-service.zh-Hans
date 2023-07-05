@@ -2,7 +2,7 @@
 title: 将体验片段导出到 Adobe Target
 description: 将体验片段导出到 Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
 workflow-type: tm+mt
 source-wordcount: '2245'
 ht-degree: 97%
@@ -242,7 +242,7 @@ ht-degree: 97%
 
    这将打开框架页面。Sidekick 提供的组件表示来自可以映射的 [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) 信息。
 
-   <!-- ![chlimage_1-162](assets/chlimage_1-162.png) -->
+   <!-- ![Framework](assets/chlimage_1-162.png) -->
 
 1. 将表示要用于映射的数据的客户端上下文组件拖动到放置目标。或者，将 **ContextHub 存储**&#x200B;组件拖动到框架。
 
@@ -252,11 +252,11 @@ ht-degree: 97%
 
    例如，要使用有关站点访客的&#x200B;**配置文件数据**&#x200B;来控制 Target 活动，请将&#x200B;**配置文件数据**&#x200B;组件拖动到页面。可用于映射到 Target 参数的配置文件数据变量随即显示。
 
-   <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
+   <!-- ![Profile Data](assets/chlimage_1-163.png) -->
 
 1. 通过选中相应列中的&#x200B;**共享**&#x200B;复选框，选择要对 Adobe Target 系统可见的变量。
 
-   <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
+   <!-- ![Share](assets/chlimage_1-164.png) -->
 
    >[!NOTE]
    >
@@ -293,7 +293,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-  ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![Cloud Service Configuration](assets/chlimage_1-165.png)
 
 1. Select the framework you want under **Configuration Reference**.
 
