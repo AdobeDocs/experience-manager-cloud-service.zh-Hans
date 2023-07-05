@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion"
 >title="内容引入"
 >abstract="引入是指将内容从迁移集引入到目标云服务实例中。内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans" text="增补摄取"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="增补摄取"
 
 请按照以下步骤从内容传输工具中摄取迁移集：
 
@@ -43,7 +43,7 @@ ht-degree: 12%
    > 如果源是Author，建议将其摄取到目标上的Author层。 同样，如果源是Publish，则目标也应是Publish。
    > 如果目标层为 `Author`时，创作实例会在摄取期间关闭，并且变得不可用于用户（例如，作者或执行维护的任何人）。 原因是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 确保您的团队了解此事实。 另请注意，环境在创作引入期间似乎处于休眠状态。
    > 您可以运行可选的预复制步骤，以显着加快摄取阶段。 参见 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 了解更多详细信息。
-   > 如果使用预复制引入（对于S3或Azure数据存储），建议先单独运行创作引入。 这样做可加快稍后运行的发布引入。
+   > 如果使用预复制引入（对于S3或Azure数据存储），建议先单独运行创作引入。 这样可加快稍后运行的发布引入。
    > 摄取不支持快速开发环境(RDE)目标，即使用户有权访问，摄取也不会显示为可能的目标选择。
 
    >[!IMPORTANT]
@@ -92,7 +92,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="增补摄取"
->abstract="使用增补功能可移动自上次内容传输活动以来修改的内容。 引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
+>abstract="使用增补功能移动自上次内容转移活动以来修改的内容。引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hans" text="查看日志"
 
 内容传输工具具备支持差异内容&#x200B;*增补*&#x200B;的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 将ContextHub添加到您的页面以启用ContextHub功能并链接到ContextHub JavaScript库。
 
-ContextHub JavaScript API提供了对ContextHub管理的上下文数据的访问权限。 本页简要描述了用于访问和处理上下文数据的API的主要功能。 单击API参考文档的链接可查看详细信息和代码示例。
+ContextHub JavaScript API提供了对ContextHub管理的上下文数据的访问权限。 本页简要描述了用于访问和处理上下文数据的API的主要功能。 请访问指向API参考文档的链接，以查看详细信息和代码示例。
 
 ## 将ContextHub添加到页面组件 {#adding-contexthub-to-a-page-component}
 

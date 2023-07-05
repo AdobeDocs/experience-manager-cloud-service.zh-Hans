@@ -231,7 +231,7 @@ rm目标的所有参数都在 [常用参数](#common-parameters) 部分。
 
 替换默认软件包配置文件以自定义软件包属性。 例如，包含缩略图图像以区分中的包 [包管理器](/help/implementing/developing/tools/package-manager.md).
 
-源文件可以位于文件系统中的任何位置。 在POM文件中，定义生成资源以将源文件复制到 `target/vault-work/META-INF` 以包含在包中。
+源文件可以位于文件系统中的任意位置。 在POM文件中，定义生成资源以将源文件复制到 `target/vault-work/META-INF` 以包含在包中。
 
 以下POM代码将文件添加到 `META-INF` 包的项目源的文件夹：
 

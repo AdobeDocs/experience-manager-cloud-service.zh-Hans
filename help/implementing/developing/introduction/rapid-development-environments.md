@@ -347,7 +347,7 @@ Environment: Ready
 
 ### 从RDE删除 {#deleting-from-rde}
 
-您可以通过CLI工具删除以前部署到RDE的配置和捆绑包。 使用 `status` 命令以列出可删除的内容，其中包括 `bsn` 对于捆绑包和 `pid` 用于要在delete命令中引用的配置。
+您可以通过CLI工具删除以前部署到RDE的配置和捆绑包。 使用 `status` 命令以列出可删除的内容，其中包括 `bsn` 对于捆绑包和 `pid` 用于在delete命令中引用的配置。
 
 例如，如果 `com.adobe.granite.demo.MyServlet.cfg.json` 已安装， `bsn` 只是 `com.adobe.granite.demo.MyServlet`，不使用 **cfg.json** 后缀。
 
