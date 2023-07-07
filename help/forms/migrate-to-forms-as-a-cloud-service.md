@@ -1,16 +1,17 @@
 ---
 title: 如何从AEM 6.5 Forms迁移到 [!DNL AEM Forms] as a Cloud Service环境？
-description: 从迁移 [!DNL AEM Forms] （内部部署和AMS环境）到 [!DNL AEM Forms] as a Cloud Service环境。
-keywords: 6.5 forms到CLOUD Service，6.5 forms到CS，将6.5 forms迁移到CS，将6.5 forms迁移到CLOUD Service，将6.5 forms升级到CS，将AEM 6.5 forms升级到CS，将AEM Forms 6.5 forms升级到CS，将AEM forms迁移到Cloud Service
+description: 迁移到AEMas a Cloud Service历程入门 |Adobe Experience Manager。 从迁移 [!DNL AEM Forms] （内部部署和AMS环境）到 [!DNL AEM Forms] as a Cloud Service环境。
+keywords: 6.5 forms到CLOUD Service，6.5 forms到CS，6.5 forms到CS迁移，6.5 forms到CLOUD Service，6.5 forms升级到CS，6.5 forms到CS迁移，AEM 6.5升级到CS，AEM Forms 6.5升级到Cloud Service，AEM forms迁移到cloud Service，历程迁移到AEM as a Cloud Service |Adobe Experience Manager
 contentOwner: khsingh
 feature: Adaptive Forms
+feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
+source-git-commit: 8dc89bf4b20d12bdb380797b6e56db1a2ce6ce0a
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1632'
 ht-degree: 5%
 
 ---
@@ -22,7 +23,8 @@ ht-degree: 5%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service | 本文 |
 
-您可以从以下位置迁移或升级自适应Forms、主题、模板和云配置 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi上的AEM 6.5 Forms至 [!DNL AEM] as a Cloud Service。 在迁移这些资产之前，请使用迁移实用程序将早期版本中使用的格式转换为中使用的格式 [!DNL AEM] as a Cloud Service。 运行Migration Utility时，将更新以下资产：
+您可以从以下位置迁移或升级自适应Forms、主题、模板和云配置 <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi上的AEM 6.5 Forms至 [!DNL AEM] as a Cloud Service。 在迁移这些资产之前，请使用迁移实用程序将早期版本中使用的格式转换为中使用的格式 [!DNL AEM] as a Cloud Service。
+让我们开始迁移到AEMas a Cloud Service的过程 |Adobe Experience Manager。 运行Migration Utility时，将更新以下资产：
 
 * 自适应Forms的自定义组件
 * 自适应Forms模板和主题
