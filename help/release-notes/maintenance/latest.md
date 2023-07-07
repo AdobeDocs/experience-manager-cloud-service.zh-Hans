@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c7143ce939ca8c06fc678fc30f90c71981e4f8d7
+source-git-commit: 1251f36ece4449d8be6a40f34421351161bf3b23
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 20%
+source-wordcount: '640'
+ht-degree: 19%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 20%
 
 ### 增强 {#enhancements-12549}
 
-- SITES-8769：改进ResponsiveGrid中的StyleImpl调用
 - Forms-5054：增加了对所有 [雕像](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) 受Adobe Sign支持。
 
 ### 修复的问题 {#fixed-issues-12549}
@@ -55,7 +54,7 @@ ht-degree: 20%
 
 ### 已知问题 {#known-issues-12549}
 
-无。
+- SKYOPS-61385：通过最新的Dispatcher更新，以前静默忽略的某些无效正则表达式 `libpcre1` 不再被更新者接受 `libpcre2` 在部署期间。 Dispatcher配置检查将很快更新，以便更早地识别这些内容。
 
 ### 嵌套的技术 {#embedded-tech-12549}
 
