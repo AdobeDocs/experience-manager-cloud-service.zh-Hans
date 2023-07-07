@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 95%
+source-wordcount: '1557'
+ht-degree: 58%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 Universal Editor 支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
 
-为此，它为内容作者提供了一个直观的 UI，只需进行最少培训即可轻松使用它开始编辑内容。
+为此，通用编辑器为内容作者提供了一个直观的UI，只需很少的培训即可跳入并开始编辑内容。
 
 >[!TIP]
 >
@@ -39,16 +39,17 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 在应用程序经过检测可使用 Universal Editor 后，您将需要登录 Universal Editor。您将需要一个 Adobe ID 才能登录并[访问 Universal Editor](getting-started.md#request-access)。
 
-登录后，在[地址栏中输入要编辑的页面的 URL，](#address-bar)以便开始[编辑内容。](#edit-content)
+登录后，在 [位置栏。](#location-bar) 这样您就可以开始编辑内容，例如 [文本内容](#text-mode) 或 [媒体内容。](#media-mode)
 
 ## 了解 UI {#ui}
 
-UI 分为四个主要区域。
+UI分为五个主要区域。
 
 * [Experience Cloud 标题](#experience-cloud-header)
 * [Universal Editor 标题](#universal-editor-header)
-* [边栏](#rail)
+* [模式边栏](#mode-rail)
 * [编辑器](#editor)
+* [组件边栏](#component-rail)
 
 ![Universal Editor UI](assets/ui.png)
 
@@ -84,7 +85,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### 通知 {#notifications}
 
-此图标带有当前分配的未完成数量的标记 [通知](/help/implementing/cloud-manager/notifications.md).
+此图标带有一个标记，显示当前分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)的数量。
 
 ![通知](assets/notifications.png)
 
@@ -106,11 +107,11 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ![汉堡菜单](assets/hamburger-menu.png)
 
-#### 位置栏 {#Location-bar}
+#### 位置栏 {#location-bar}
 
 位置栏为您显示正在编辑的页面的位置。点按或单击此项可输入要编辑的另一个页面的地址。
 
-![位置栏](assets/address-bar.png)
+![位置栏](assets/location-bar.png)
 
 >[!TIP]
 >
@@ -120,6 +121,24 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >您想使用 Universal Editor 编辑的任何页面都必须[进行插桩以支持 Universal Editor](getting-started.md)。
 
+#### 模拟器设置 {#emulator}
+
+点按或单击模拟图标以定义通用编辑器如何渲染页面。
+
+![“模拟器”图标](assets/emulator.png)
+
+点击或单击模拟图标将显示选项。
+
+![模拟选项](assets/emulation-options.png)
+
+默认情况下，该编辑器将在桌面布局中打开，其中高度和宽度由浏览器自动定义。
+
+您还可以选择在Universal Editor中模拟移动设备：
+
+* 定义其方向
+* 定义宽度和高度
+* 更改方向
+
 #### 打开应用程序预览 {#open-app-preview}
 
 点按或单击“打开应用程序预览”图标可在其自己的浏览器中打开您当前正在编辑的页面，无需编辑器即可预览更改。
@@ -128,7 +147,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 >[!TIP]
 >
->使用热键 `O` 可打开应用程序预览。
+>使用热键 `O` （字母O）以打开应用程序预览。
 
 #### 发布 {#publish}
 
@@ -140,11 +159,11 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >有关使用 Universal Editor 发布内容的更多信息，请参阅文档[使用 Universal Visual Editor 发布内容](publishing.md)。
 
-### 边栏 {#rail}
+### 模式边栏 {#rail}
 
-边栏始终显示在编辑器的左侧。可利用它在预览模式和编辑模式之间轻松切换编辑器。
+模式边栏始终显示在编辑器的左侧。 它允许在不同的编辑模式之间轻松切换编辑器。
 
-![边栏](assets/rail.png)
+![模式边栏](assets/mode-rail.png)
 
 #### 预览模式 {#preview-mode}
 
@@ -156,23 +175,87 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >使用热键 `P` 可切换到预览模式。
 
-#### 编辑模式 {#edit-mode}
+#### 文本模式 {#text-mode}
 
-在编辑模式中，页面在编辑器中呈现，但内容作者可以单击以选择内容进行编辑。在加载页面时，这是编辑器的默认模式。
+在文本模式下，页面将在编辑器中呈现，但内容作者可以单击以选择文本内容来进行编辑。 在加载页面时，这是编辑器的默认模式。
 
-![编辑模式](assets/edit-mode.png)
+![文本模式](assets/text-mode.png)
+
+>[!TIP]
+>
+>使用热键 `T` 切换到文本模式。
+
+#### 媒体模式 {#media-mode}
+
+在媒体模式下，页面会在编辑器中呈现，但内容作者可以单击以选择媒体内容来编辑页面。
+
+![媒体模式](assets/media-mode.png)
+
+>[!TIP]
+>
+>使用热键 `M` 切换到媒体模式。
+
+#### 组件模式 {#component-mode}
+
+在组件模式下，页面将在编辑器中呈现，但内容作者可以单击选择页面组件。
+
+![组件模式](assets/component-mode.png)
+
+>[!TIP]
+>
+>使用热键 `C` 切换到组件模式。
+
+>[!NOTE]
+>
+>组件模式仍在开发中，当前仅限于选择组件。
 
 ### 编辑器 {#editor}
 
-编辑器占据了窗口的大部分区域，并且其中将呈现[地址栏](#address-bar)中指定的页面。
+编辑器占据大部分窗口，并且是中指定页面的位置 [位置栏](#location-bar) 已呈现。
 
-根据编辑器是处于[编辑模式](#edit-mode)还是[预览模式](#edit-mode)，内容将分别可编辑或可导航。
+* 如果编辑器处于编辑模式，例如 [文本模式](#text-mode) 或 [媒体模式，](#media-mode) 内容将可编辑，并且您无法关注链接。
+* 如果编辑器位于 [预览模式，](#preview-mode) 内容将可导航，您可以关注链接，但无法编辑内容。
 
 ![编辑器](assets/editor.png)
 
+### 组件边栏 {#component-rail}
+
+组件边栏始终位于编辑器的左侧。 根据其模式，它可以显示内容或页面内容层次结构中所选组件的详细信息。
+
+![组件边栏](assets/component-rail.png)
+
+#### 属性模式 {#properties-mode}
+
+在属性模式中，边栏显示编辑器中当前选定组件的属性。 这是加载页面时组件边栏的默认模式。
+
+![属性模式](assets/properties-mode.png)
+
+所选组件的详细信息将显示在边栏中。 请注意，并非所有组件都具有可显示的详细信息。
+
+![组件详细信息](assets/component-details.png)
+
+>[!TIP]
+>
+>使用热键 `D` 切换到属性模式。
+
+#### 内容树模式 {#Content-tree-mode}
+
+在内容树模式下，边栏显示页面内容的层次结构。
+
+![内容树模式](assets/content-tree-mode.png)
+
+在内容树中选择项目时，编辑器将滚动到该内容并选择它。
+
+![内容树](assets/content-tree.png)
+
+>[!TIP]
+>
+>使用热键 `F` 切换到内容树模式。
+
+
 ## 编辑内容 {#editing-content}
 
-编辑内容是简单而直观的。在[编辑模式](#edit-mode)中，当您将鼠标悬停在编辑器中的内容上方时，可编辑内容会用蓝色框突出显示。
+编辑内容是简单而直观的。在编辑模式中([文本模式](#text-mode)， [媒体模式](#media-mode)、和 [组件模式](#component-mode))，将鼠标悬停在编辑器中的内容上时，可编辑内容会以蓝色框突出显示。
 
 ![可编辑内容子用蓝色框突出显示](assets/editable-content.png)
 
@@ -182,11 +265,13 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 请注意，在编辑模式中，点按或单击内容会尝试选择该内容以进行编辑。如果您要使用链接来导航内容，请切换到[预览模式](#preview-mode)。
 
+根据您所在的模式和您选择的内容，您可能有不同的就地编辑选项。 此外，您还可以使用查看内容的其他属性 [组件边栏。](#component-rail)
+
 ## 预览内容 {#previewing-content}
 
 编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
 
-请注意，在预览模式中，点按或单击内容的反应与对内容阅读器的反应一样。如果您想选择内容以进行编辑，请切换到[编辑模式](#edit-mode)。
+请注意，在预览模式中，点按或单击内容的反应与对内容阅读器的反应一样。如果要选择要编辑的内容，请切换到编辑模式，例如 [文本模式](#text-mode) 或 [媒体模式。](#media-mode)
 
 ## 其他资源 {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 92%
+source-wordcount: '804'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ import "@adobe/universal-editor-cors";
 
 要能够使用 Universal Editor 通过应用程序编辑 AEM 内容，必须在 AEM 中完成 CORS 和 Cookie 设置。
 
-以下各项 [必须在AEM创作实例上设置OSGi配置](/help/implementing/deploying/configuring-osgi.md).
+[必须在 AEM 创作实例上设置以下 OSGi 配置。](/help/implementing/deploying/configuring-osgi.md)
 
 * `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` 中的 `SameSite Cookies = None`
 * 移除 X-FRAME-OPTIONS：`org.apache.sling.engine.impl.SlingMainServlet` 中的 SAMEORIGIN 标头
@@ -161,7 +161,7 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## 您已准备好使用通用编辑器 {#youre-ready}
+## 您已准备好使用 Universal Editor {#youre-ready}
 
 您的应用程序现已插桩，可以使用 Universal Editor 了！
 

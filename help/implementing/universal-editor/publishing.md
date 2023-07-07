@@ -2,12 +2,13 @@
 title: 使用 Universal Visual Editor 发布内容
 description: 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 78%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
+
 
 # 使用 Universal Visual Editor 发布内容 {#publishing}
 
@@ -31,6 +32,6 @@ ht-degree: 78%
 
 ## 摘要 {#summary}
 
-通用编辑器的目标是不强加任何特定模式，以便执行工作能够以完全分离的方式最好地实现其目标，同时仍然保持执行工作的一切简单和直接。
+Universal Editor 的目标是不强加任何特定模式，以便以完全解耦的方式最大限度地实现实施目标，同时仍然保持简单和直接的实施。
 
 同样，Universal Editor 不对任何特定项目应如何确定从哪一层交付内容作出任何要求。相反，它支持多种可能性，并允许项目确定最适合其自身需求的解决方案。
