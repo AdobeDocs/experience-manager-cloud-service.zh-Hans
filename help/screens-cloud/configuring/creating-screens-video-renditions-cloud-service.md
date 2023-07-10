@@ -2,9 +2,9 @@
 title: as a Cloud Service在Screens中创建视频演绎版
 description: 本页介绍如何在Screensas a Cloud Service中创建视频演绎版。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -37,15 +37,15 @@ ht-degree: 0%
 
 1. 输入 **名称**，例如 **ScreensProcessingProfile**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![显示“名称”字段突出显示的“处理配置文件”对话框。](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. 导航到 **视频** 选项卡，以便添加视频编码，然后单击 **新增**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![显示“新增”按钮的“处理配置文件”对话框。](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. 输入 **编码名称** 例如， **screens-fullhd** 和 **比特率** 作为 **2500**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![显示“保存”按钮的“处理配置文件”对话框。](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >使用以“screens — ”开头的编码名称。 只有这些视频演绎版被视为在Screens中以as a Cloud Service方式播放视频体验。 输入适用于您的视频的比特率（720-px视频为2500 kbps，1080 px视频为5000 kbps）。

@@ -2,10 +2,10 @@
 title: as a Cloud Service在Screens中创建和管理渠道
 description: 本页介绍如何在Screens中以as a Cloud Service方式创建和管理渠道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 1%
+source-wordcount: '1094'
+ht-degree: 2%
 
 ---
 
@@ -36,17 +36,18 @@ ht-degree: 1%
 
 1. 选择 **渠道** 项目中的文件夹，例如 **FirstdigitalExperience** —> **渠道** 并单击 **创建** 操作栏中的。
 
-   ![](/help/screens-cloud/assets/create-content/channel-create1.png)
+   ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
 1. 选择模板，例如， **序列渠道** 从 **创建** 向导并单击 **下一个**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create2.png)
+   ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
+
    >[!NOTE]
    > 此 **创建** 向导在创建渠道时提供不同类型的模板。 参见 [可用模板](#available-templates) 创建向导中的详细信息。
 
 1. 输入序列渠道的名称，例如， **LoopingChannelOne** 并单击 **创建**.
 
-   ![](/help/screens-cloud/assets/create-content/channel-create3.png)
+   ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
    您现在将看到 **LoopingChannelOne** 在AEM Screens项目的“渠道”文件夹中。
 
@@ -58,7 +59,7 @@ ht-degree: 1%
 
 导航到项目中的渠道并选择该渠道，如下图所示。 您现在可以选择相应的选项，例如编辑渠道、查看属性、预览内容、管理出版物或删除操作栏中的渠道。
 
-![](/help/screens-cloud/assets/create-content/channelprop1.png)
+![channelprop1](/help/screens-cloud/assets/create-content/channelprop1.png)
 
 ### 向渠道添加内容 {#add-content}
 
@@ -66,17 +67,17 @@ ht-degree: 1%
 
 1. 选择要编辑的频道，如下图所示。 单击 **编辑** 从操作栏的左上角打开编辑器。
 
-   ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
+   ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
 1. 编辑器允许您向要发布的渠道添加资产/组件。
 
 1. 从左侧窗格中拖放资源并将其添加到编辑器。
 
-   ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
+   ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
    >单击 **预览** 以预览渠道的内容。
-   >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
+   >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 创建向导中的可用模板 {#available-templates}
 
