@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
+source-git-commit: e0bee5134bea71010cacf4bf16eac0baa3dee725
 workflow-type: tm+mt
-source-wordcount: '5868'
+source-wordcount: '6251'
 ht-degree: 2%
 
 ---
@@ -27,27 +27,26 @@ ht-degree: 2%
 >* 参见 [配置Dynamic MediaCloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) 在配置Dynamic Media和 [Dynamic Media疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md).
 >
 
-
 1. **上传Dynamic Media视频** ，方法是：
 
    * 创建您自己的视频编码配置文件。 或者，您只需使用预定义的 _自适应视频编码_ Dynamic Media随附的资料。
 
       * [创建视频编码配置文件](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * 详细了解 [视频编码的最佳实践](#best-practices-for-encoding-videos).
+
    * 将视频处理配置文件与一个或多个要上传主源视频的文件夹关联。
 
       * [将视频配置文件应用到文件夹](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * 详细了解 [组织数字资源](/help/assets/organize-assets.md).
+
    * 将您的主源视频上传到文件夹。 将视频添加到文件夹时，会根据您分配给该文件夹的视频处理配置文件对它们进行编码。
 
       * Dynamic Media主要支持最长30分钟、最小分辨率大于25 x 25的短格式视频。
       * 您可以上传每个大小不超过15 GB的视频文件。
       * [上传您的视频](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * 详细了解 [支持的输入文件格式](/help/assets/file-format-support.md).
+
    * 监视方式 [视频编码正在进行](#monitoring-video-encoding-and-youtube-publishing-progress) 从资产或工作流视图中。
-
-
-
 
 1. **管理您的Dynamic Media视频** 通过执行以下任一操作：
 
@@ -55,21 +54,24 @@ ht-degree: 2%
 
       * [组织数字资源](/help/assets/organize-assets.md)
       * [搜索视频资产](/help/assets/search-assets.md#custompredicates) 或 [搜索资源](/help/assets/manage-digital-assets.md#search-assets)
+
    * 预览和发布视频资产
 
       * 查看源视频、视频的编码演绎版及其相关缩略图：
-         [预览视频](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 或 [预览资源](/help/assets/dynamic-media/previewing-assets.md)
-         [管理视频演绎版](/help/assets/manage-digital-assets.md#managing-renditions)
+        [预览视频](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) 或 [预览资源](/help/assets/dynamic-media/previewing-assets.md)
+        [管理视频演绎版](/help/assets/manage-digital-assets.md#managing-renditions)
 
       * [管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)
       * [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+
    * 使用视频元数据
 
       * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
-         [编辑视频属性](/help/assets/manage-digital-assets.md#editing-properties)
+        [编辑视频属性](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [管理数字资源的元数据](/help/assets/manage-metadata.md)
       * [元数据架构](/help/assets/metadata-schemas.md)
+
    * 审查、批准和注释视频，并保持完整的版本控制
 
       * [为视频添加批注](/help/assets/manage-video-assets.md#annotate-video-assets) 或 [对资产添加注释](/help/assets/manage-digital-assets.md#annotating)
@@ -80,26 +82,23 @@ ht-degree: 2%
       * [查看文件夹资产](/help/assets/bulk-approval.md)
       * [项目](/help/sites-cloud/authoring/projects/overview.md)
 
-
-
-
 1. **发布Dynamic Media视频** 通过执行以下操作之一：
 
    * 如果您使用Experience Manager作为WCM（Web内容管理）系统，则可以直接将视频添加到网页。
 
       * [将视频添加到网页](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+
    * 如果您使用的是第三方Web内容管理系统，则可以将视频链接或嵌入到网页。
 
       * 使用URL集成视频：
-         [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+        [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * 在网页上使用嵌入代码集成视频：
-         [在网页上嵌入视频查看器](/help/assets/dynamic-media/embed-code.md).
+        [在网页上嵌入视频查看器](/help/assets/dynamic-media/embed-code.md).
+
    * [生成视频报表](#viewing-video-reports).
 
    * [向视频添加字幕](#adding-captions-to-video).
-
-
 
 ## 在Dynamic Media中处理视频 {#working-with-video-in-dynamic-media}
 
@@ -600,15 +599,15 @@ Dynamic Media可以将字幕文件转换为JSON（JavaScript对象表示法）�
 
    * 要获得弹出式视频查看器体验，请选择 **[!UICONTROL URL]**. 在URL对话框中，选择URL并将其复制到剪贴板，然后将URL粘贴到简单的文本编辑器中。 使用以下语法附加复制的视频URL：
 
-      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
+     `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      请注意 `,1` 标题路径末尾。 紧跟路径中的VTT文件扩展名之后，您可以选择启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮，方法是设置为 `,1` 或 `,0`，则不会显示任何内容。
+     请注意 `,1` 标题路径末尾。 紧跟路径中的VTT文件扩展名之后，您可以选择启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮，方法是设置为 `,1` 或 `,0`，则不会显示任何内容。
 
    * 要获得嵌入式视频查看器体验，请选择 **[!UICONTROL 嵌入代码]**. 在“嵌入代码”对话框中，选择，然后将嵌入代码复制到剪贴板，然后将该代码粘贴到简单的文本编辑器中。 使用以下语法附加复制的嵌入代码：
 
-      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
+     `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      请注意 `,1` 标题路径末尾。 紧跟路径中的VTT文件扩展名之后，您可以选择启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮，方法是设置为 `,1` 或 `,0`，则不会显示任何内容。
+     请注意 `,1` 标题路径末尾。 紧跟路径中的VTT文件扩展名之后，您可以选择启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮，方法是设置为 `,1` 或 `,0`，则不会显示任何内容。
 
 ## 向视频添加章节标记 {#adding-chapter-markers-to-video}
 
@@ -688,51 +687,49 @@ Cost-efficient access to rapidly evolving technology.
      </tbody>
    </table>
 
-<!--
 
-## About video thumbnails {#about-video-thumbnails}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail should serve to encourage a customer to select the video.
+## 关于视频缩略图 {#about-video-thumbnails}
 
-All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+视频缩略图是视频帧的缩减版本，或者向客户表示视频的图像资产。 缩略图应当用于鼓励客户选择视频。
 
-Note that a custom video thumbnail image that you select from a video is not extracted and saved in the DAM as a separate and distinct asset. However, a custom video thumbnail that you select from an existing image asset is saved to the JCR. The path of the selected asset gets stored under the video asset's node as in the following example path:
+Experience Manager中的所有视频都必须有关联的缩略图；如果不替换缩略图，则无法删除缩略图。 默认情况下，将视频上传到Experience Manager时，会使用第一帧作为缩略图。 但是，您可以自定义缩略图，例如，用于品牌推广或视觉搜索目的。 自定义视频缩略图时，您可以播放视频并在要使用的帧上暂停，也可以选择已上传的图像资源并且 *已发布* 在您的数字资产管理器中。
 
-`/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
+请注意，一旦更改了视频的缩略图，将跳过在重新处理视频时通过Asset compute服务生成缩略图。
 
-The ability to customize a video thumbnail is only available after you have applied a video profile to the folder where the video is located.
+自定义视频缩略图的功能仅在您将视频配置文件应用到视频所在的文件夹之后才可用。
 
-### Adding a custom video thumbnail {#adding-a-custom-video-thumbnail}
+### 添加自定义视频缩略图 {#adding-a-custom-video-thumbnail}
 
-1. Be sure you have already done the following:
+1. 确保您已完成以下操作：
 
-    * Created a folder for your video assets.
-    * [Applied a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+   * 已为您的视频资产创建文件夹。
+   * [已将视频配置文件应用到文件夹](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-    * [Uploaded your videos to the folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+   * [已将您的视频上传到文件夹](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
-1. Navigate to an uploaded video asset whose thumbnail image you want to change.
-1. In asset selection mode either from **[!UICONTROL List View]** or **[!UICONTROL Card View]**, select the video asset.
-1. On the toolbar, select the **[!UICONTROL Properties** icon (a circle with an "i" in it).
-1. On the video's Properties page, select **[!UICONTROL Change Thumbnail]**.
-1. On the Change Thumbnail page, do one of the following:
+1. 导航到要更改其缩略图图像的已上传视频资产。
+1. 在资源选择模式下，可以从 **[!UICONTROL 列表视图]** 或 **[!UICONTROL 卡片视图]**，选择视频资源。
+1. 在工具栏上，选择 **[!UICONTROL 属性]** 图标（一个圆圈，内有“i”）。
+1. 在视频的“属性”页面上，选择 **[!UICONTROL 更改缩略图]**.
+1. 在“更改缩略图”页面上，执行下列操作之一：
 
-    * To use a frame from the video as the new thumbnail:
+   * 要将视频中的帧用作新缩略图，请执行以下操作：
 
-        * On the toolbar, select **[!UICONTROL Select Frame from video]**.
-        * Select the Play button, then select the Pause button on the frame you want to capture as the video's new thumbnail.
+      * 在工具栏上，选择 **[!UICONTROL 从视频中选择帧]**.
+      * 选择“播放”按钮，然后在要作为视频的新缩略图捕获的帧上选择“暂停”按钮。
 
-    * To use an image asset as the new thumbnail:
+   * 要将图像资源用作新缩略图，请执行以下操作：
 
-        * On the toolbar, select **[!UICONTROL Select Thumbnail from Assets]**.
-        * Select **[!UICONTROL Select Thumbnail]**.
-        * Navigate to a previously uploaded and published image asset you want to use. Note that the asset will automatically be resized to serve as a thumbnail image for the video.
-        * Select the image asset, then select **[!UICONTROL Select]**.
+      * 在工具栏上，选择 **[!UICONTROL 从资源中选择缩略图]**.
+      * 选择 **[!UICONTROL 选择缩略图]**.
+      * 导航到要使用的之前上传和发布的图像资产。 请注意，资产大小将自动调整为用作视频的缩略图。
+      * 选择图像资源，然后选择 **[!UICONTROL 选择]**.
 
-1. On the Change Thumbnail page, select **[!UICONTROL Save Change]**.
-1. On the video's Properties page, in the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. 在更改缩略图页面上，选择 **[!UICONTROL 保存更改]**.
+1. 在视频的“属性”页面的右上角，选择 **[!UICONTROL 保存并关闭]**.
 
--->
+
 
 <!--
 
