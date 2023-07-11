@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service 中的维护任务
 description: AEM as a Cloud Service 中的维护任务
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 19a3ebd981a7a62fe78a9ec909547b6a70c55121
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 63%
@@ -44,7 +44,7 @@ ht-degree: 63%
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>对于现有环境（即2023年6月1日之前创建的环境），清除功能处于禁用状态，并且将来不会启用，除非客户明确启用此功能，届时，他们还可以使用自定义值来配置此功能。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新环境（从2023年6月1日开始创建的环境）默认情况下将使用以下值启用清除，客户可以使用自定义值配置。
+    <td>对于现有环境（即2023年9月1日之前创建的环境），清除功能处于禁用状态，并且将来不会启用，除非客户明确启用此功能，届时，他们还可以使用自定义值来配置此功能。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新环境（从2023年9月1日开始创建的环境）将默认启用清除，其值如下，客户可以使用自定义值配置。
      <ol>
        <li>超过 30 天的版本将会被删除</li>
        <li>保留过去 30 天内的最新 5 个版本</li>
@@ -56,7 +56,7 @@ ht-degree: 63%
   <tr>
     <td>审核日志清除</td>
     <td>Adobe</td>
-    <td>对于现有环境（即2023年6月1日之前创建的环境），清除功能处于禁用状态，并且将来不会启用，除非客户明确启用此功能，届时，他们还可以使用自定义值来配置此功能。<br><br> <!-- See above for the two line breaks -->新环境（从2023年6月1日开始创建的环境）将默认启用 <code>/content</code> 节点，具体情况如下：
+    <td>对于现有环境（即2023年9月1日之前创建的环境），清除功能处于禁用状态，并且将来不会启用，除非客户明确启用此功能，届时，他们还可以使用自定义值来配置此功能。<br><br> <!-- See above for the two line breaks -->新环境（从2023年9月1日开始创建的环境）将默认启用 <code>/content</code> 节点，具体情况如下：
      <ol>
        <li>对于复制审核，将删除超过 3 天的审核日志</li>
        <li>对于 DAM (Assets)，将删除超过 30 天的审核日志</li>
