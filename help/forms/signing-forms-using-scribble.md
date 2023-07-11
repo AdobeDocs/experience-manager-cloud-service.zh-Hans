@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 点按“完成”后 ![aem_forms_save](assets/aem_forms_save.png) 图标时，无法编辑签名。 如果想要编辑签名，则必须忽略当前签名并使用上面的“画笔/键盘”选项重新签名。
 
-您可以点按 **配置** ![](assets/configure.png) 图标来设置涂写签名画布的长宽比。
+您可以点按 **配置** ![配置图标](assets/configure.png) 图标来设置涂写签名画布的长宽比。
 * 当Scribble Signature画布的长宽比小于1时，地理位置信息将添加到Scribble Signature画布的底部。
 
 
@@ -46,6 +46,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >签名始终以PNG格式保存。
+>
 
 ## 配置自适应表单以使用涂鸦签名 {#configure-an-adaptive-form-to-use-scribble-signature}
 
