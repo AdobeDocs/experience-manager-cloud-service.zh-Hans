@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service SDK
 description: AEMas a Cloud Service软件开发工具包概述
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 33ba3e88a4116674c70c44a29273a04544b6b39b
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 1%
+source-wordcount: '1239'
+ht-degree: 2%
 
 ---
 
@@ -33,6 +33,10 @@ AEMas a Cloud ServiceSDK用于生成和部署自定义代码。 欲知更多详�
 * **部署工件**. 工件将部署到本地服务器。
 
 Cloud Manager在部署到云环境时执行相同的步骤。 在本地执行内部版本允许本地开发和测试。 开发人员可以在提交源代码控制并触发Cloud Manager部署（这可能需要更长时间）之前高效地发现代码或结构问题。
+
+>[!NOTE]
+>
+>AEMas a Cloud ServiceSDK应使用支持的Java分发和版本进行构建 [Cloud Manager的构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEMas a Cloud Service客户可以从以下网站下载OracleJDK： [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 并且由于Adobe对Adobe Experience Manager项目中使用的OracleJava技术的许可和支持条款，将Java 11的支持延长到2026年9月。
 
 ## 访问AEMas a Cloud ServiceSDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
