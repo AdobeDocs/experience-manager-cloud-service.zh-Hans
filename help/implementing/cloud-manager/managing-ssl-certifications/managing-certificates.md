@@ -2,12 +2,13 @@
 title: 管理 SSL 证书
 description: 了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 97%
+source-wordcount: '646'
+ht-degree: 94%
 
 ---
+
 
 # 管理 SSL 证书 {#managing-ssl-certificates}
 
@@ -34,6 +35,7 @@ ht-degree: 97%
 1. 从&#x200B;**环境**&#x200B;页面导航到 **SSL 证书**&#x200B;屏幕。
 1. 您将看到一个表，其中包含已在程序中成功安装的每个 SSL 证书的行。 单击要更新的证书行最右侧的省略号按钮，然后选择&#x200B;**查看和更新**。
 1. 将显示证书详细信息并可以更新。
+1. 运行管道以部署更新的证书。
 
 >[!NOTE]
 >
@@ -56,6 +58,7 @@ Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。 
 1. 从&#x200B;**环境**&#x200B;页面导航到 **SSL 证书**&#x200B;屏幕。
 1. 您将看到一个表，其中包含已在程序中成功安装的每个 SSL 证书的行。 单击要删除的证书行最右侧的省略号按钮，然后选择&#x200B;**删除**。
 1. 在&#x200B;**删除 SSL 证书**&#x200B;对话框中，确认删除操作。
+1. 运行管道以取消部署已删除的证书。
 
 >[!NOTE]
 >
