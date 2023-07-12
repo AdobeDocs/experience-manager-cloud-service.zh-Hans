@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
+source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 58%
+source-wordcount: '1682'
+ht-degree: 52%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 58%
 
 Universal Editor 支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
 
-为此，通用编辑器为内容作者提供了一个直观的UI，只需很少的培训即可跳入并开始编辑内容。
+为此，通用编辑器为内容作者提供了一个直观的UI，只需很少的培训即可跳入并开始编辑内容。 本文档介绍了通用编辑器的创作体验。
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!NOTE]
 >
->Universal Editor 仍处于开发阶段，目前无法编辑所有内容类型。
+>通用编辑器仍在开发中。 它当前无法编辑所有内容类型。
 
 ## 准备应用程序 {#prepare-app}
 
@@ -201,13 +201,23 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ![组件模式](assets/component-mode.png)
 
+当您选择内容片段时，其详细信息会显示在 [组件边栏。](#component-rail)
+
 >[!TIP]
 >
 >使用热键 `C` 切换到组件模式。
 
->[!NOTE]
+#### 编辑 {#edit}
+
+时间 [组件模式，](#component-mode) 如果选择内容片段，则模式边栏上将显示编辑选项。
+
+![“编辑”图标](assets/edit.png)
+
+点击或单击编辑按钮将在新选项卡中打开内容片段编辑器，允许您在通用编辑器中编辑引用的内容以及文本和媒体内容。
+
+>[!TIP]
 >
->组件模式仍在开发中，当前仅限于选择组件。
+>使用热键 `E` 以编辑选定的组件。
 
 ### 编辑器 {#editor}
 
@@ -230,9 +240,11 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ![属性模式](assets/properties-mode.png)
 
-所选组件的详细信息将显示在边栏中。 请注意，并非所有组件都具有可显示的详细信息。
+所选组件的详细信息将显示在边栏中。 如果您已使用以下方式选择内容片段 [组件模式，](#component-mode) 您可以在组件边栏中修改其设置。 更改由通用编辑器自动保存。
 
 ![组件详细信息](assets/component-details.png)
+
+请注意，并非所有组件都具有可以显示的详细信息。
 
 >[!TIP]
 >
@@ -259,13 +271,17 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ![可编辑内容子用蓝色框突出显示](assets/editable-content.png)
 
-只需点按或单击蓝色框中的内容即可启动就地编辑器来进行更改。按 Enter 键保存更改。
+只需点按或单击蓝色框中的内容即可启动就地编辑器来进行更改。您的更改会自动保存。
 
 ![编辑内容](assets/editing-content.png)
 
 请注意，在编辑模式中，点按或单击内容会尝试选择该内容以进行编辑。如果您要使用链接来导航内容，请切换到[预览模式](#preview-mode)。
 
-根据您所在的模式和您选择的内容，您可能有不同的就地编辑选项。 此外，您还可以使用查看内容的其他属性 [组件边栏。](#component-rail)
+根据 [模式](#mode-rail) 您所在的和您选择的内容，不同的就地编辑选项可能有所不同。
+
+此外，您还可以使用查看内容的其他属性 [组件边栏。](#component-rail) 例如，如果选择富文本组件，则可以在组件边栏中编辑格式选项。
+
+![编辑富文本组件](assets/rich-text-editing.png)
 
 ## 预览内容 {#previewing-content}
 
