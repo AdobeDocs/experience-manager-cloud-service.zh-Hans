@@ -2,10 +2,10 @@
 title: 将内容提取到目标
 description: 将内容提取到目标
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 13%
+source-wordcount: '1925'
+ht-degree: 11%
 
 ---
 
@@ -155,7 +155,7 @@ Release Orchestrator通过自动应用更新来自动使环境保持最新。 �
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### 增补摄取失败
+### 由于违反唯一性约束而导致的增补摄取失败
 
 导致此问题的常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是节点id中的冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载引入日志，并查找类似以下内容的条目：
 
@@ -166,6 +166,18 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 如果目标上的节点在摄取和后续增补摄取之间移动，也会发生这种情况。
 
 必须手动解决此冲突。 熟悉内容的用户必须确定必须删除这两个节点中的哪个节点，并牢记引用该节点的其他内容。 解决方案可能要求再次执行增补提取，而不考虑违规节点。
+
+### 由于无法删除引用的节点，增补摄取失败
+
+另一个常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是目标实例上特定节点的版本冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载引入日志，并查找类似以下内容的条目：
+>java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakIntegrity0001：无法删除引用的节点：8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+如果在摄取和后续增补摄取之间修改了目标上的节点，从而创建了新版本，则可能会发生这种情况。 如果引入启用了“包含版本”，则可能会发生冲突，因为目标现在具有版本历史记录和其他内容所引用的较新版本。 摄取进程将无法删除违规版本节点，因为它已被引用。
+
+解决方案可能要求再次执行增补提取，而不考虑违规节点。 或者，创建一个有问题的节点的小型迁移集，但禁用“包含版本”。
+
+最佳实践表明，如果必须在运行wipe=false和“include version”=true的情况下进行引入，则务必尽可能少地修改目标上的内容，直到迁移历程完成。 否则，可能会发生这些冲突。
+
 
 ## 后续内容 {#whats-next}
 
