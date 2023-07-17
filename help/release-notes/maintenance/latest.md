@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 241dcc75e9f2c840be85c34800d8145457baa58d
+source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 43%
+source-wordcount: '283'
+ht-degree: 49%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 43%
 
 维护版本12697的不断改进概述如下，该版本于2023年7月14日公开发布。 此维护版本是对上一个维护版本 12549 的更新。维护版本12697取代了12585以更正一个问题。
 
-2023.7.0功能激活将提供此维护版本的完整功能集。 请参阅 [Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html) 了解更多信息。
+激活 2023.7.0 功能后可为此次维护版本提供完整的功能集。有关更多信息，请参阅[ Experience Manager 发布路线图。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
 
 ### 增强 {#enhancements-12697}
 
@@ -34,6 +34,7 @@ ht-degree: 43%
 - AEM Guides：各种本机PDF增强功能和稳定性修复
 - SKYOPS-53130：改进RDE中的AC工具支持
 - SKYOPS-57146：修复AEM启动时的Sling死锁
+- SKYOPS-61646：升级到版本12585后，上次复制日期未更新
 
 ### 已知问题 {#known-issues-12697}
 
