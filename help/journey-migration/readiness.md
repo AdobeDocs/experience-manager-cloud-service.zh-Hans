@@ -5,7 +5,7 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
 workflow-type: tm+mt
 source-wordcount: '2066'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 >id="aemcloud_cam_planning"
 >title="规划过渡"
 >abstract="在开始过渡到云服务的历程之前，请先熟悉 AEM as a Cloud Service。查看对它作出的重大更改和被取代或弃用的功能。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=zh-Hans" text="Best Practices Analyzer"
 
 在AEMas a Cloud Service迁移历程的这一阶段，您需要熟悉AEMas a Cloud Service。 您可以查看引入的显着更改，并了解为成功迁移到云进行规划需要些什么。
 
@@ -150,7 +150,7 @@ AEMas a Cloud Service为管理AEM项目提供了许多新功能和可能性。
   <tr>
     <td>身份验证更改</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hans">AEM as a Cloud Service 的 IMS 支持</td>
-    <td>如果您之前在转到Cloud Service之前在创作和发布上都使用SAML 2.0集成，则主要更改是AEMas a Cloud Service创作仅与Adobe IMS集成。 但是，AEMas a Cloud Service发布层仍可以使用SAML或其他身份验证集成。 AEMas a Cloud Service仅为作者、管理员和开发用户提供IMS身份验证支持。 IMS身份验证不支持客户站点（如站点访客）的外部最终用户。</td>
+    <td>如果您之前在转到Cloud Service之前在创作和发布上都使用SAML 2.0集成，则主要更改是AEMas a Cloud Service创作仅与Adobe IMS集成。 但是，AEMas a Cloud Service发布层仍可以使用SAML或其他身份验证集成。 AEM as a Cloud Service 仅为作者、管理员和开发人员用户提供 IMS 身份验证支持。IMS身份验证不支持客户站点（如站点访客）的外部最终用户。</td>
   </tr>
 </tbody>
 </table>
