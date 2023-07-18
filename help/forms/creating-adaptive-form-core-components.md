@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 5%
+source-wordcount: '2246'
+ht-degree: 6%
 
 ---
 
-# 创建自适应表单（核心组件） {#creating-an-adaptive-form-core-components}
+# 创建自适应表单 {#creating-an-adaptive-form-core-components}
 
 通过自适应Forms，您可以创建有吸引力的响应式、动态自适应表单。 AEM Forms为企业提供了便于用户使用的向导，以快速创建自适应Forms。 该向导具有快速选项卡导航，可轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
@@ -44,7 +44,7 @@ ht-degree: 5%
 * **权限**：将您的用户添加到 [!DNL forms-users] 组。 董事会成员 [!DNL forms-users] 组有权创建自适应表单。 有关特定于表单的用户组的详细列表，请参阅 [组和权限](forms-groups-privileges-tasks.md).
 
 
-## 创建自适应表单（核心组件） {#create-an-adaptive-form-core-components}
+## 创建自适应表单  {#create-an-adaptive-form-core-components}
 
 1. 登录 [!DNL Experience Manager Forms] 创作实例。 它可以是云实例或本地开发实例。
 

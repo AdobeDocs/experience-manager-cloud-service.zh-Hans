@@ -2,10 +2,10 @@
 title: 内置 [!DNL AEM Forms] as a Cloud Service组
 description: 现成的用户组和分配给每个组的权限列表
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '155'
+ht-degree: 12%
 
 ---
 
@@ -31,19 +31,19 @@ ht-degree: 5%
      <li>创建主题</li> 
     </ul> </td> 
   </tr>
-  <tr>
+  <!-- <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
-     <li>创建、预览、发布和提交自适应Forms</li> 
-     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
-     <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>上传包括脚本在内的资源</li> 
-     <li>创建主题</li> 
-     <li>导入包含XDP的包</li> 
+     <li>Create, preview, publish, and submit Adaptive Forms</li> 
+     <li>Create, preview, and publish interactive communications and document fragments</li> 
+     <li>Create scripts for Adaptive Forms using code editor</li> 
+     <li>Upload assets including scripts</li> 
+     <li>Create themes</li> 
+     <li>Import packages containing XDP</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+ <tr>
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
@@ -100,3 +100,14 @@ ht-degree: 5%
   </tr>
  </tbody>
 </table>
+
+## 另请参阅
+
+* [载入Cloud Service环境](/help/forms/setup-forms-cloud-service.md)
+* [设置本地开发环境](/help/forms/setup-local-development-environment.md)
+* [从AEM 6.5 Forms迁移到Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [创建独立的自适应表单](/help/forms/creating-adaptive-form-core-components.md)
+* [将自适应表单添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+

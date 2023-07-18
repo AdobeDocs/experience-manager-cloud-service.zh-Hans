@@ -1,17 +1,17 @@
 ---
 title: 如何将自适应表单添加到AEM Sites页面？
-description: 了解如何轻松地在AEM Sites页面中创建或添加自适应表单。 了解将表单集成到网站的分步技术和最佳实践，优化数字体验以发挥最大影响。
+description: 了解如何在AEM Sites页面上创建或添加自适应表单。 还可了解将表单集成到网站中的好处和各种方式。
 feature: Adaptive Forms, Page Editor, Authoring
-Keywords: adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
+Keywords: af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
+source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
 workflow-type: tm+mt
-source-wordcount: '3232'
+source-wordcount: '3214'
 ht-degree: 21%
 
 ---
 
 
-# 将自适应表单添加到AEM Sites页面或体验片段 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# 在 AEM Sites 页面或体验片段中添加自适应表单 {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -181,7 +181,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
 1. 在编辑模式下打开包含自适应表单的AEM Sites页面(在自适应Forms容器组件中)。
 1. 打开内容树，然后选择 **[!UICONTROL 自适应Forms容器]** ，用于托管您的自适应表单。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。
-1. 在菜单栏上，选择 ![“转换为体验片段变量”图标](/help/forms/assets/Smock_FilingCabinet_18_N.svg) “转换为体验片段”变量图标。
+1. 在菜单栏上，选择 ![“转换为体验片段”图标](/help/forms/assets/Smock_FilingCabinet_18_N.svg) “转换为体验片段”变量图标。
    ![单击文件柜徽标可将AEM Sites中的自适应表单页面转换为体验片段](/help/forms/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    出现一个对话框，用于将自适应表单容器转换为新的体验片段或添加到现有的体验片段
@@ -200,7 +200,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 1. 打开包含自适应表单的AEM页面编辑器或体验片段。
 1. 打开内容树，然后选择 **[!UICONTROL 自适应Forms容器]** ，用于托管您的自适应表单。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。
 1. 单击自适应表单容器属性 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 图标。 随即会打开用于配置提交操作的“自适应表单容器”对话框。
-   ![单击扳手图标以打开自适应表单容器对话框以配置提交操作](/help/forms/assets/adaptive-forms-container.png)
+   ![单击扳手图标以打开自适应表单容器对话框，从而配置自适应表单的提交操作](/help/forms/assets/adaptive-forms-container.png)
 1. 根据您的要求，选择并配置提交操作。 有关提交操作的详细信息，请参阅 [自适应表单提交操作](/help/forms/configuring-submit-actions.md)
 
 
@@ -216,7 +216,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 1. 打开包含自适应表单的AEM页面编辑器或体验片段。
 1. 打开内容树，然后选择 **[!UICONTROL 自适应Forms容器]** ，用于托管您的自适应表单。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。
 1. 单击自适应表单容器属性 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 图标。 随即会打开用于配置数据模型的自适应表单容器对话框。
-   ![单击扳手图标以打开“自适应表单容器”对话框，并为自适应表单配置数据模型](/help/forms/assets/form-data-model-adaptive-forms-container.png)
+   ![单击扳手图标以配置自适应表单的数据模型](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. 根据您的要求，选择并配置JSON架构或表单数据模型。 有关提交操作的详细信息，请参阅 [自适应表单提交操作](/help/forms/configuring-submit-actions.md).
 
    * 当您选择 **[!UICONTROL 表单模型]** 选项，使用 **[!UICONTROL 选择表单数据模型]** 选项以选择预配置的表单数据模型。
@@ -238,7 +238,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 1. 打开包含自适应表单的AEM页面编辑器或体验片段。
 1. 打开内容树，然后选择 **[!UICONTROL 自适应Forms容器]** ，用于托管您的自适应表单。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。
 1. 单击自适应表单容器属性 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 图标。 随即会打开用于配置数据模型的自适应表单容器对话框。
-   ![单击扳手图标以打开自适应表单容器对话框以配置预填充服务](/help/forms/assets/adaptive-forms-container.png)
+   ![单击扳手图标以打开自适应表单容器对话框，从而配置自适应表单的预填充服务](/help/forms/assets/adaptive-forms-container.png)
 1. 选择表单数据模型. 打开 **[!UICONTROL 基本]** 选项卡。 在预填充服务中，选择 **[!UICONTROL 表单数据模型预填充服务]**.
 1. 单击&#x200B;**[!UICONTROL 完成]**。您的自适应表单现在配置为使用表单数据模型预填充。 您现在可以使用 [规则编辑器](rule-editor.md) 创建规则以预填充表单的字段。
 
@@ -265,5 +265,4 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
 ## 相关文章 {#related-article}
 
-* [创建基于独立核心组件的自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
-
+* [创建基于独立核心组件的自适应表单](/help/forms/creating-adaptive-form-core-components.md)
