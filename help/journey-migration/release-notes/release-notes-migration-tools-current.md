@@ -1,29 +1,37 @@
 ---
-title: AEMas a Cloud Service2023.06.0版中迁移工具的发行说明
-description: AEMas a Cloud Service2022.06.0版中迁移工具的发行说明
+title: AEMas a Cloud Service2023.07.0版中迁移工具的发行说明
+description: AEMas a Cloud Service2022.07.0版中迁移工具的发行说明
 feature: Release Information
 exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: a1597e4102589dfc9b5bdb8c2a54e8e9ec3392b7
+source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 2%
+source-wordcount: '156'
+ht-degree: 7%
 
 ---
 
-# AEMas a Cloud Service2023.06.0版中迁移工具的发行说明 {#release-notes}
+# AEMas a Cloud Service2023.07.0版中迁移工具的发行说明 {#release-notes}
 
-此页概述了AEMas a Cloud Service2022.06.0中迁移工具的发行说明。
+此页概述了AEMas a Cloud Service2022.07.0中迁移工具的发行说明。
 
-## 内容转移工具 {#ctt-release}
+## Best Practices Analyzer {#bpa-release}
 
-### 发布日期 {#release-date-ctt}
+### 发布日期 {#release-date-bpa}
 
-内容传输工具版本2.0.20的发布日期是2023年6月8日。
+Best Practices Analyzer v2.1.42的发布日期是2023年7月6日。
 
-### 新增功能 {#what-is-new-ctt}
+### 新增功能 {#what-is-new-bpa}
 
-* 新的迁移工具 — 内容转换器(CT)已与此版本中的内容传输工具(CTT)集成。 内容转换器可以自动检测并修复由报告的相关内容问题。 [Best Practices Analyzer (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en) 在将内容从当前AEM实施(内部部署或Managed Services)迁移到AEMas a Cloud Service之前。
-内容转换器提供的好处包括：
-   * 故障保护：内容转换器每次对存储库进行修改以修复问题时，都会创建一个包。 如果需要，可以通过安装包恢复为以前的状态。
-   * 易于使用： Content Transformer已与Content Transfer Tool集成，并带有直观的简单用户界面。
-   * 节省时间：当大量内容问题属于一种模式类别时，只需几次单击即可使用Content Transformer解决所有这些问题，从而显着减少时间和迁移复杂性。
+* 向此版本的Best Practices Analyzer添加了多个最佳实践模式。 其中包括：
+   * 确定最低维护任务配置
+   * 检测长时间运行的/大量查询
+   * 检测大量处于运行或陈旧状态的创作工作流
+   * 检测OSGI Apache sling作业配置
+   * 检测自定义Guava缓存
+
+### 错误修复 {#bug-fixes-bpa}
+
+* 改进了BPA，以防止出现内存不足报告生成失败。
+* 改进了BPA以检测路径中的转义字符，以防止在将内容迁移到AEMas a Cloud Service时内容摄取失败。
+
+

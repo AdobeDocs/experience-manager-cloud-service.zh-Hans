@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: af26c42ddd1594e5622e9b32334ce5508d097582
+source-git-commit: 88227693b7dfc3cbd30751718dc85e55ee67bb96
 workflow-type: tm+mt
-source-wordcount: '4174'
-ht-degree: 98%
+source-wordcount: '4177'
+ht-degree: 99%
 
 ---
 
@@ -129,6 +129,7 @@ ht-degree: 98%
    + 迁移工具的发行说明{#migration-tools}
       + [最新发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2023 {#2023}
+         + [2023.6.0 的发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
          + [2023.3.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
       + 2022 {#2022}
          + [2022.12.0 版发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2022-12-0.md)
@@ -505,7 +506,7 @@ ht-degree: 98%
       + [HTTP2 内容投放常见问题解答](/help/assets/dynamic-media/http2faq.md)
       + [Flash 查看器生命周期终止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 查看器生命周期终止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + 使用资产视图 {#assets-view}
+   + 使用资源视图{#assets-view}
       + [简介](/help/assets/assets-view-introduction.md)
       + [快速入门](/help/assets/get-started-assets-view.md)
       + [我的工作区](/help/assets/my-workspace-assets-view.md)
@@ -518,7 +519,7 @@ ht-degree: 98%
       + [管理资源元数据](/help/assets/metadata-assets-view.md)
       + [共享资源](/help/assets/share-links-for-assets-view.md)
       + [管理收藏集](/help/assets/manage-collections-assets-view.md)
-      + [监视资产、文件夹和收藏集](/help/assets/manage-notifications-assets-view.md)
+      + [监视资源、文件夹和收藏集](/help/assets/manage-notifications-assets-view.md)
       + [管理报表](/help/assets/manage-reports-assets-view.md)
       + [管理标记](/help/assets/tagging-management-assets-view.md)
    + 与 Adobe Workfront 集成 {#integrations}
@@ -562,7 +563,7 @@ ht-degree: 98%
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
    + 自适应表单 {#adaptive-forms-authoring}
       + [创建自适应表单](/help/forms/create-an-adaptive-form.md)
-      + [将自适应表单添加到AEM Sites页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+      + [在 AEM Sites 页面或体验片段中添加自适应表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 创作自适应表单 - 核心组件 {#authoring-adaptive-forms-core-components}
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
@@ -571,7 +572,7 @@ ht-degree: 98%
             + [创建自适应表单 - AEM Sites 页面中的核心组件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [使用机器翻译或人工翻译来翻译自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
-            + [创建包含可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
+            + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
       + 创作自适应表单 - 基础组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -598,7 +599,7 @@ ht-degree: 98%
             + [将内联 CSS 样式应用于各个自适应表单组件](/help/forms/inline-style-adaptive-forms.md)
          + 在自适应表单中添加规则和使用表达式 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [将规则添加到自适应表单](/help/forms/rule-editor.md)
-            + [使用规则编辑器的Invoke服务添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [使用规则编辑器的调用服务添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
             + [使用 Adobe Sign 对自适应表单进行电子签名](/help/forms/working-with-adobe-sign.md)
          + 配置提交操作和元数据提交 {#configure-submit-actions-and-metadata-submission}
@@ -684,7 +685,7 @@ ht-degree: 98%
          + [构建产品体验](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 集成 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [第三方商务解决方案](/help/commerce-cloud/integrating/third-party.md)
+      + [第三方商业解决方案](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
       + [快速入门](/help/commerce-cloud/getting-started.md)
