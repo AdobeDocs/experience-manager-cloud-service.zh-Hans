@@ -3,9 +3,9 @@ title: 设置您的管道
 description: 创建前端管道来管理站点主题的自定义。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '967'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 91%
 * 您需要具有对 Cloud Manager 的访问权限。
 * 您需要成为 Cloud Manager 中的&#x200B;**部署管理器**&#x200B;角色的成员。
 * 必须在 Cloud Manager 中设置 AEM 环境的 Git 存储库。
-   * 对于任何活动项目，通常会是这种情况。但如果不是这种情况，请参阅Cloud Manager存储库文档，该文档位于 [其他资源](#additional-resources) 部分。
+   * 对于任何活动项目，通常会是这种情况。但如果不是这种情况，请参阅[其他资源](#additional-resources)部分下提供的 Cloud Manager 存储库文档。
 
 ## 什么是前端管道 {#front-end-pipeline}
 
@@ -51,7 +51,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->前端管道只能部署 JavaScript、CSS 和静态资源来设置 AEM 站点的样式。无法在管道中部署页面或资产等站点内容。
+>前端管道只能部署 JavaScript、CSS 和静态资源来设置 AEM 站点的样式。无法在管道中部署页面或资源等站点内容。
 
 ## 访问 Cloud Manager {#login}
 
@@ -102,7 +102,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->如果您已熟悉AEMaaCS中的管道并希望详细了解不同类型管道之间的差异，包括有关前端管道的更多详细信息，请参阅配置CI/CD管道 — 中链接的Cloud Services [其他资源](#additional-resources) 部分。
+>如果您已熟悉 AEMaaCS 中的管道并希望详细了解不同类型管道之间的差异，包括有关前端管道的更多详细信息，请参阅以下[其他资源](#additional-resources)部分中链接的“配置 CI/CD 管道 – Cloud Service”。
 
 ## 后续内容 {#what-is-next}
 
@@ -118,5 +118,5 @@ ht-degree: 91%
 我们建议您查看文档[自定义站点主题](customize-theme.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
-* [Cloud Manager存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)  — 如果您想详细了解如何为AEMaaCS项目设置和管理Git存储库，请参阅此文档。
-* [配置 CI/CD 管道 – 云服务](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) – 在此文档中了解有关设置全堆栈管道和前端管道的更多详细信息。
+* [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) – 如果您想详细了解如何为 AEMaaCS 项目设置和管理 Git 存储库，请参阅此文档。
+* [配置 CI/CD 管道 – Cloud Service](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) – 在此文档中了解有关设置全堆栈管道和前端管道的更多详细信息。
