@@ -3,9 +3,9 @@ title: 访问 Admin Console
 description: 一旦您了解了入门所需的准备工作和 AEMaaCS 结构的基础知识，您就可以首次登录 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1107'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Adobe ID 有三种类型：
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. 如果您有权访问多个组织，请确保您已登录到正确的组织。 要更改您的组织，请单击右上角的组织名称，然后选择您需要访问的所需组织。
+1. 如果您可以访问多个组织，请确保您登录到了正确的组织。 若要更改您的组织，请单击右上角的组织名称，然后选择您需要访问的组织。
 
    ![更改组织](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 
