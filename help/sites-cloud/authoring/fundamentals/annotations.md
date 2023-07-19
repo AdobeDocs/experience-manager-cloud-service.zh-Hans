@@ -3,9 +3,9 @@ title: 添加页面注释
 description: 使用注释模式可像使用便笺一样在页面上留下注释和草图，协助您的内容审阅过程
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '698'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -57,11 +57,11 @@ ht-degree: 94%
 
 1. 单击/点按“添加注释”图标（工具栏左侧的加号）以开始添加注释。
 
-1. 单击或点按所需的组件（可添加注释的组件以蓝色边框突出显示）以添加注释，并打开对话框：
+1. 单击或点按需要添加注释的组件（可添加注释的组件会用蓝色边框突出显示），此时会打开如下对话框：
 
    ![添加注释](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   在此，您可以使用相应的字段和/或图标来：
+   在此处，可使用相应的字段和/或图标执行以下操作：
 
    * 输入注释文本。
    * 创建草图（线和形状）以突出显示组件的某个区域。
@@ -132,5 +132,5 @@ ht-degree: 94%
 
 除了组件之外，您还可以对各种资源添加注释：
 
-* 对资产添加注释[对资产添加注释](/help/assets/manage-digital-assets.md#annotating)
-* 对视频资产添加注释[对视频资产添加注释](/help/assets/manage-video-assets.md#annotate-video-assets)
+* 对资源添加注释[对资源添加注释](/help/assets/manage-digital-assets.md#annotating)
+* 对视频资源添加注释[对视频资源添加注释](/help/assets/manage-video-assets.md#annotate-video-assets)
