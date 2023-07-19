@@ -3,9 +3,9 @@ title: 添加 SSL 证书
 description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
    * 显示检测到的任何错误。
       * 在保存证书之前，必须解决所有错误。
-      * 参见 [证书错误](#certificate-errors) 部分，了解有关解决常见错误的更多信息。
+      * 请参阅[证书错误](#certificate-errors)部分，了解有关解决常见错误的更多信息。
 
 1. 单击&#x200B;**保存**，保存您的证书。
 
@@ -81,7 +81,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
 ### 证书策略 {#certificate-policy}
 
-如果看到以下错误，请检查证书的策略。
+如果您看到以下错误，请检查证书的策略。
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.
