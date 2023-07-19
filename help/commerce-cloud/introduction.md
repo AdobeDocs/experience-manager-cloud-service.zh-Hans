@@ -4,9 +4,9 @@ description: Content and Commerce 的简介和概述。Experience Manager Commer
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 
 随着客户对在线商务体验的期望不断提高，品牌不得不更快地交付差异化的体验和更多内容。然而，实施内容管理平台通常需要花费大量时间和预算来开发基础元素（例如，自定义组件和创作工具），并且会增加维护和升级成本。Experience Manager Sites 提供 Content and Commerce 作为 Experience Manager as a Cloud Service 的附加模块，这将提供现成的商务核心组件、创作工具和引用店面，以加速上线，实现跨团队的无缝协作并提高转化率。
 
-Brands可以将Experience Manager与Adobe Commerce(Adobe Experience Cloud的一部分)和任何选择的商业引擎集成。 借助 Experience Manager Content and Commerce，品牌可以：
+品牌可以将 Experience Manager 与 Adobe Commerce（Adobe Experience Cloud 的一部分）以及任何选定商务引擎集成。借助 Experience Manager Content and Commerce，品牌可以：
 
 * 更快地扩展和创新
 * 用于推动转化的个性化体验
@@ -42,11 +42,11 @@ Brands可以将Experience Manager与Adobe Commerce(Adobe Experience Cloud的一�
 
 ## 自 2013 年以来，CIF 一直为客户提供强有力的支持 {#support}
 
-CIF 拥有 200 多家客户，已成为促使 Content and Commerce 项目取得成功的重要因素。这为当今和将来的 IT 和企业提供了价值。最近的一些客户项目将CIF描述为“一个伟大的加速器和一个具有大量价值的巨大时间节约器”。
+CIF 拥有 200 多家客户，已成为促使 Content and Commerce 项目取得成功的重要因素。这为当今和将来的 IT 和企业提供了价值。最近的客户项目将 CIF 描述为“用于加速和节省大量时间的绝佳工具，具有巨大的价值”。
 
 ## CIF 好处 {#cif-benefits}
 
-CIF 提供现成的商务核心组件，可减少对自定义代码的需求，从而加快品牌的上市速度。所有核心组件均与Adobe的客户端数据层现成集成，以补充客户用户档案，例如统一用户档案。 此配置文件详细捕获访客的行为，可用于实时预测客户历程并使其个性化。
+CIF 提供现成的商务核心组件，可减少对自定义代码的需求，从而加快品牌的上市速度。所有核心组件都与 Adobe 的客户端数据层即时集成以补充客户配置文件（例如，统一配置文件）。此配置文件详细捕获访客行为，可用于实时预测和个性化设置客户历程。
 
 CIF 加载项将产品上下文引入 Experience Manager 中，并提供产品控制台和产品/类别选取器等创作工具，使营销人员能够在 Experience Manager 中创建和交付可购买的体验，而无需依靠开发人员。优势包括：
 
@@ -79,6 +79,6 @@ CIF 利用基于最佳实践的标准化集成模式来为客户提供支持。�
 
 ## 历程 {#journey}
 
-如果您正在执行Commerce历程，请转到下一步：
+如果您正在进行 Commerce 历程，请转到下一步：
 
 * [AEM 内容作者历程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
