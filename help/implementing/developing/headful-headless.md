@@ -1,17 +1,17 @@
 ---
 title: AEM 中的 Headful 和 Headless
-description: AEM项目可以在headful和headless模型中实施，但选择不是二进制的。 利用 AEM，可以在一个项目中灵活地运用这两种模型的优势。
+description: AEM 项目可以在 Headful 和 Headless 模型中实施，但这不是一个二选一的选择。利用 AEM，可以在一个项目中灵活地运用这两种模型的优势。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1010'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # AEM 中的 Headful 和 Headless {#headful-headless}
 
-Adobe Experience Manager项目可以在headful和headless模型中实施，但选择不是二进制的。 利用 AEM，可以在一个项目中灵活地运用这两种模型的优势。本文档概述了不同的模型，并描述了 SPA 集成的级别。
+Adobe Experience Manager 项目可以在 Headful 和 Headless 模型中实施，但这不是一个二选一的选择。利用 AEM，可以在一个项目中灵活地运用这两种模型的优势。本文档概述了不同的模型，并描述了 SPA 集成的级别。
 
 ## 概述 {#overview}
 
@@ -43,7 +43,7 @@ AEM 还可用于简单地管理内容，并允许呈现和交付要由另一个�
 
 >[!NOTE]
 >
->当然，您也可以将Web Shop SPA重新实施为功能齐全的AEM SPA [使用AEM SPA Editor框架](/help/implementing/developing/hybrid/introduction.md). 如果您已拥有 AEM 并希望创建新的网上商店或其他 SPA，建议使用此方式，但本文档未对此方式进行介绍。
+>当然，您也可以[使用 AEM SPA Editor 框架](/help/implementing/developing/hybrid/introduction.md)将网上商店 SPA 作为功能齐全的 AEM SPA 重新实施。如果您已拥有 AEM 并希望创建新的网上商店或其他 SPA，我们建议您使用此方式，但本文档未对此方式进行介绍。
 
 ## SPA 集成级别 {#integration-levels}
 
@@ -54,18 +54,18 @@ SPA 集成归入 AEM 中包含四个级别的系列中。
    * 在两个独立的系统中单独创建、管理和交付内容。
 * **级别 1：内容片段集成**
    * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)在 AEM 中用于创建和管理 SPA 的有限内容。
-   * SPA通过AEM检索此内容 [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
+   * SPA 通过 AEM 的 [GraphQL API](/help/headless/graphql-api/content-fragments.md) 检索此内容。
    * 在 AEM 中管理一些内容，在外部系统中管理另一些内容。
    * 只能在 SPA 中查看内容。
 * **级别 2：将 SPA 嵌入 AEM**
    * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)在 AEM 中用于创建和管理 SPA 的内容。
-   * SPA通过AEM检索此内容 [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
+   * SPA 通过 AEM 的 [GraphQL API](/help/headless/graphql-api/content-fragments.md) 检索此内容。
    * 在 AEM 中管理一些内容，在外部系统中管理另一些内容。
    * 可在 AEM 中的上下文中查看内容。
    * 可在 AEM 中编辑有限内容。
 * **级别 3：在 AEM 中嵌入并完全启用 SPA**
    * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)在 AEM 中用于创建和管理 SPA 的内容。
-   * SPA通过AEM检索此内容 [GRAPHQL API](/help/headless/graphql-api/content-fragments.md).
+   * SPA 通过 AEM 的 [GraphQL API](/help/headless/graphql-api/content-fragments.md) 检索此内容。
    * 可在 AEM 中的上下文中查看内容。
    * 可在 AEM 中编辑大多数内容。
 
@@ -80,6 +80,6 @@ AEM 中提供了不同的工具，具体取决于您选择的集成级别。每�
 * **级别 1：**&#x200B;内容片段和 [AEM Headless 框架](/help/headless/introduction.md)可用于将 AEM 内容交付给 SPA。
 * **级别 2：**&#x200B;除了级别 1 之外：
    * [RemotePage 组件](/help/implementing/developing/hybrid/remote-page.md)可用于将外部 SPA 嵌入到 AEM 中，这样便能在上下文中查看 AEM 内容。
-   * SPA上的某些点也可以启用 [允许在AEM中进行有限编辑](/help/implementing/developing/hybrid/editing-external-spa.md).
+   * 还可以启用 SPA 上的某些点以[允许在 AEM 中进行有限编辑。](/help/implementing/developing/hybrid/editing-external-spa.md)
 * **级别 3：**&#x200B;除了级别 2 之外：
    * 可以启用 SPA 的整个区域以允许在 AEM 中进行全面编辑。
