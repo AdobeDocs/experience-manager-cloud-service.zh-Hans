@@ -3,9 +3,9 @@ title: 用于页面编辑的键盘快捷键
 description: 用户在整个 AEM 环境中都可以使用各种键盘快捷键，包括某些用于页面编辑的快捷键
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 91%
 |  | `Ctrl-y` | [重做最后一次更改](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 选择多个段落 |
 |  | `Ctrl-c` | 复制所选段落 |
-|  | `Ctrl-x` | 剪切所选段落，（剪切的段落在粘贴之前不会在用户界面中消失） |
+|  | `Ctrl-x` | 剪切选定段落（剪切的段落在粘贴之前仍会显示在用户界面中） |
 |  | `Ctrl-v` | 粘贴先前剪切或复制的段落 |
 |  | `Ctrl-Backspace` | 删除所选段落 |
 | **编辑**&#x200B;模式 - 富文本编辑器 | `Ctrl-b` | 粗体 |
