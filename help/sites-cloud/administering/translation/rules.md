@@ -5,19 +5,19 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1291'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 标识要翻译的内容 {#identifying-content-to-translate}
 
-翻译规则为翻译项目中包含或排除的页面、组件和资产标识要翻译的内容。在翻译页面或资产时，AEM 会提取此内容，以便将其发送到翻译服务。
+翻译规则为翻译项目中包含或排除的页面、组件和资源标识要翻译的内容。在翻译页面或资源时，AEM 会提取此内容，以便将其发送到翻译服务。
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
 
 ## 内容片段和翻译规则 {#content-fragments}
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 
 ## 概述 {#overview}
 
-页面和资产在 JCR 存储库中表示为节点。提取的内容是节点的一个或多个属性值。翻译规则标识包含要提取的内容的属性。
+页面和资源在 JCR 存储库中表示为节点。提取的内容是节点的一个或多个属性值。翻译规则标识包含要提取的内容的属性。
 
 翻译规则以 XML 格式表示，并且可能存储在以下位置：
 
@@ -56,7 +56,7 @@ ht-degree: 97%
 >
 >AEM 支持资源类型和引用属性之间的一对一映射，以便翻译页面上的引用内容。
 
-## 页面、组件和资产的规则语法 {#rule-syntax-for-pages-components-and-assets}
+## 页面、组件和资源的规则语法 {#rule-syntax-for-pages-components-and-assets}
 
 规则是一个 `node` 元素，它包含一个或多个子 `property` 元素以及零个或多个子 `node` 元素：
 
@@ -100,9 +100,9 @@ ht-degree: 97%
 </node>
 ```
 
-## 用于从页面提取资产的规则语法  {#rule-syntax-for-extracting-assets-from-pages}
+## 用于从页面提取资源的规则语法  {#rule-syntax-for-extracting-assets-from-pages}
 
-使用以下规则语法可包含嵌入在组件中或从组件中引用的资产：
+使用以下规则语法可包含嵌入在组件中或从组件中引用的资源：
 
 ```xml
 <assetNode resourceType="path to component" assetReferenceAttribute="property that stores asset"/>
@@ -111,7 +111,7 @@ ht-degree: 97%
 每个 `assetNode` 元素均具有以下特性：
 
 * 一个 `resourceType` 属性，代表解析为组件的路径
-* 一个 `assetReferenceAttribute` 属性，代表存储资产二进制文件（用于嵌入资产）的属性的名称或引用资产的路径
+* 一个 `assetReferenceAttribute` 属性，代表存储资源二进制文件（用于嵌入资源）的属性的名称或引用资源的路径
 
 以下示例从图像组件中提取图像：
 
