@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '931'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 | 管理员 | 管理 AEM 的基本设置和配置 | 翻译专家与管理员共同进行翻译所需的配置更改，例如安装翻译连接器。 |
 | 内容架构师 | 分析必须作为站点交付的数据的要求并定义此数据的结构 | 翻译专家与内容架构师共同定义内容的编排以便轻松翻译。 |
 
-虽然此历程中的信息对所有角色都很有用，但一些信息可能对特定角色来说是多余的。请密切关注 [即将推出的涵盖其他角色的历程](/help/journey-documentation/documentation-journeys.md#journeys).
+虽然此历程中的信息对所有角色都很有用，但一些信息可能对特定角色来说是多余的。请继续关注[即将推出的涵盖其他角色的历程。](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## 站点翻译历程 {#the-journey}
 
