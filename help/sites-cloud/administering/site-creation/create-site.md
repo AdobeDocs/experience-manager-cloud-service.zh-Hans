@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '775'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -23,25 +23,25 @@ ht-degree: 79%
 
 创建后，还可利用快速站点创建工具快速自定义 AEM 站点的主题和样式（JavaScript、CSS 和静态资源）。这样一来，无需了解 AEM 的前端开发人员既可独立于内容创建者工作，又可与内容创建者并行工作。AEM 管理员只需下载站点主题并将它提供给前端开发人员，后者会使用他们喜欢的工具来自定义站点主题，再将更改提交到 AEM 代码存储库，随后进行部署。
 
-本文档重点介绍如何使用快速站点创建工具来创建站点。如果您想大致了解站点创建和自定义工作流，请参阅 [AEM快速站点创建历程](/help/journey-sites/quick-site/overview.md)
+本文档重点介绍如何使用快速站点创建工具来创建站点。如果您希望大致了解站点创建和自定义工作流，请参阅 [AEM 快速站点创建历程](/help/journey-sites/quick-site/overview.md)
 
 ## 规划站点结构 {#structure}
 
-花点时间提前考虑您站点的目的以及规划的内容。这将改善站点结构的设计方式。良好的站点结构支持站点访客轻松导航和发现内容，并支持各种AEM功能，例如 [多站点管理和翻译](/help/sites-cloud/administering/msm-and-translation.md).
+花点时间提前考虑您站点的目的以及规划的内容。这将改善站点结构的设计方式。良好的站点结构有助于站点访客轻松导航和探索内容，并支持各种 AEM 功能，例如[多站点管理和翻译。](/help/sites-cloud/administering/msm-and-translation.md)
 
 >[!TIP]
 >
->[WKND引用站点](https://wknd.site) 提供功能齐全的户外体验品牌网站的最佳实践实施。 探索该站点，了解构建良好的 AEM 站点的结构。
+>[WKND 参考站点](https://wknd.site)提供功能齐全的户外体验品牌网站的最佳实践实施。探索该站点，了解构建良好的 AEM 站点的结构。
 
 ## 站点模板 {#site-templates}
 
 由于站点结构对于站点的成功非常重要，因此使用预定义的结构可以方便地根据一组现有标准快速部署新站点。站点模板是一种将基本站点内容组合成方便且可重用的包的方法。
 
-站点模板通常包含基本站点内容和结构以及站点样式信息，以便快速启动新站点。 模板具有强大的功能，因为它们可重用和自定义。 由于您可以在 AEM 安装中使用多个模板，因此可以灵活地创建不同的站点来满足各种业务需求。
+站点模板通常包含基本站点内容和结构以及站点样式信息，以便快速启动新站点。模板具有强大的功能，因为它们可重用和自定义。由于您可以在 AEM 安装中使用多个模板，因此可以灵活地创建不同的站点来满足各种业务需求。
 
 >[!TIP]
 >
->有关站点模板的更多详细信息，请参阅 [站点模板](site-templates.md).
+>有关站点模板的更多详细信息，请参阅[站点模板。](site-templates.md)
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ ht-degree: 79%
 
    * 站点标题显示在浏览器标题栏中。
    * 站点名称会成为 URL 的一部分。
-   * 站点名称必须符合 [AEM页面命名约定](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
+   * 站点名称必须遵循 [AEM 的页面命名惯例。](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
 
 1. 点按或单击&#x200B;**创建**，将从站点模板创建站点。
 
@@ -95,8 +95,8 @@ ht-degree: 79%
 
 如果您的站点需要在可用模板之外进行自定义，您将有很多选择。
 
-* 如果需要调整站点结构或初始内容， [可以自定义站点模板以满足您的要求](site-templates.md).
-* 如果需要调整站点样式， [可以下载站点主题并对其进行自定义](/help/journey-sites/quick-site/overview.md).
-* 如果需要调整站点功能， [站点可以完全自定义](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+* 如果需要调整站点结构或初始内容，[可以自定义站点模板以满足要求。](site-templates.md)
+* 如果需要调整站点样式，[可以下载站点主题并对该主题进行自定义。](/help/journey-sites/quick-site/overview.md)
+* 如果需要调整站点功能，[可以完全自定义站点。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 任何自定义都应在开发团队的支持下进行。
