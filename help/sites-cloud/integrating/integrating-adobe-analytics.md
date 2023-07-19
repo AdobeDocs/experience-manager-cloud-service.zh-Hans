@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '558'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -42,16 +42,16 @@ ht-degree: 95%
 |---|---|
 | 标题 | 配置名称 |
 | IMS 配置 | 选择 IMS 配置（参阅上面的章节） |
-| 区段 | 用于使用当前报告包中定义的 Analytics 区段的选项。基于区段筛选 Analytics 报告。参见 [此页面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) 以了解更多详细信息。 |
+| 区段 | 用于使用当前报告包中定义的 Analytics 区段的选项。基于区段筛选 Analytics 报告。有关其他详细信息，请参阅[此页面。](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) |
 | 报告包 | 从中发送数据和提取报告的存储库。报告包定义针对某个所选网站、网站集合或网页子集的完整、独立的报告。您可以查看从单个报告包中获取的报告，并且可以根据您的要求随时在配置中编辑此字段。 |
 
 ### 具有 IMS 身份验证的 Adobe Analytics {#configuration-parameters-ims}
 
-需要 IMS 配置，才能将 Adobe Analytics 与 AEM as a Cloud Service 正确集成。 必须创建此配置，请参见 [页面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) 了解如何创建Analytics IMS配置。
+需要 IMS 配置，才能将 Adobe Analytics 与 AEM as a Cloud Service 正确集成。 必须创建此配置，因此请参阅此[页面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)，了解如何创建 Analytics IMS 配置。
 
 ### 将配置添加到站点 {#add-configuration}
 
-要将 Touch UI 配置应用于站点，请转至：**站点** → **选择任何站点页面** → **属性** → **高级** → **配置** → 选择配置租户。
+要将 Touch UI 配置应用于站点，请转至：**Sites** → **选择任何站点页面** → **属性** → **高级** → **配置** → 选择配置租户。
 
 ## 使用 Adobe Launch 在AEM Sites 上集成 Adobe Analytics {#analytics-launch}
 
