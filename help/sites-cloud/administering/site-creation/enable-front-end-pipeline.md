@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->如果您不熟悉前端管道以及如何使用它和站点模板快速部署站点，请参阅 [快速站点创建历程](/help/journey-sites/quick-site/overview.md) 来做个介绍。
+>如果您不熟悉前端管道以及如何结合使用此管道和站点模板来快速部署站点，请查看[快速站点创建历程](/help/journey-sites/quick-site/overview.md)以大致了解相关内容。
 
 如果您尚未基于站点模板和主题创建现有站点，则 AEM 会将您的 Sites 配置为加载使用前端管道部署在现有客户端库之上的主题。
 
