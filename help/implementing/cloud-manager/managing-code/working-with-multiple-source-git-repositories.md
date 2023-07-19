@@ -3,9 +3,9 @@ title: 使用多个存储库
 description: 了解如何在使用 Cloud Manager 时管理多个 Git 存储库。
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '752'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ jobs:
           git -C ${MAIN_BRANCH} push
 ```
 
-使用 GitHub 操作非常灵活。 可以执行Git存储库的分支之间的任何映射，以及将单独的Git项目映射到主项目的目录布局中。
+使用 GitHub 操作非常灵活。 可以执行 Git 存储库的分支之间的任何映射，以及将单独的 Git 项目映射到主项目的目录布局中。
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ git commit -F ../commit.txt
 git push
 ```
 
-使用 Jenkins 作业非常灵活。 可以执行Git存储库的分支之间的任何映射，以及将单独的Git项目映射到主项目的目录布局中。
+使用 Jenkins 作业非常灵活。 可以执行 Git 存储库的分支之间的任何映射，以及将单独的 Git 项目映射到主项目的目录布局中。
 
 >[!NOTE]
 >
