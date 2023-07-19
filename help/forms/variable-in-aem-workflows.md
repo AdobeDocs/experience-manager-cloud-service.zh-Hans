@@ -2,14 +2,19 @@
 title: 如何在AEM Workflow步骤中添加变量？
 description: 了解如何创建变量、为变量设置值以及将其用于 [!DNL AEM Forms] 工作流步骤。
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2060'
-ht-degree: 0%
+source-wordcount: '2080'
+ht-degree: 1%
 
 ---
 
 # 以Forms为中心的AEM Workflow中的变量 {#variables-in-aem-forms-workflows}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service | 本文 |
 
 工作流模型中的变量是一种根据其数据类型存储值的方法。 您可以在任何工作流步骤中使用变量的名称来检索存储在变量中的值。 您还可以使用变量名称来定义用于做出路由选择的表达式。
 

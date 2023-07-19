@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 97%
 
 ---
 
 # 多步骤表单序列简介 {#introduction-to-multi-step-form-sequence}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
+| AEM as a Cloud Service | 本文 |
 
 利用自适应表单，表单作者可以很轻松地创建多步骤数据捕获体验。它内部支持创建多个面板并将每个面板与不同的导航模式关联。表单作者可以在逻辑部中分对表单字段进行分组，并将一个组表示为一个面板。面板之间的整体导航通过面板布局进行控制。作者可以选择按不同的布局排列面板，例如，使用向导布局按顺序放置或使用选项卡式布局以临时方式放置。有关面板布局的信息，请参阅[自适应表单的布局功能](layout-capabilities-adaptive-forms.md)。
 
@@ -37,9 +42,8 @@ ht-degree: 100%
 
       * Adobe Document Cloud eSign 服务
       * 连笔签名
+
    * **[!UICONTROL 确认]**：它包含&#x200B;**[!UICONTROL 摘要]**&#x200B;组件，该组件在用户签署表单并到达序列中的“确认（摘要）”步骤后，显示一条确认表单提交的消息。作者可以配置[!UICONTROL 摘要]组件的文本、显示感谢消息、显示生成的 PDF 的链接等。
-
-
 
 1. 选择根面板的布局作为&#x200B;**[!UICONTROL 向导]**。
 1. 完成其余步骤以创建表单模板。<!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->

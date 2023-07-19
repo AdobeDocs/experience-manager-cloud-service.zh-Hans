@@ -4,14 +4,20 @@ seo-title: Creating and managing reviews in forms
 description: 审阅是一种允许一个或多个审阅人对表单进行评论的机制。
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
-source-git-commit: 3efd7d81424369ce6430802373129ab91b7356ab
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 0%
+source-wordcount: '672'
+ht-degree: 1%
 
 ---
 
 # 创建和管理表单审核{#creating-and-managing-reviews-to-forms}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM as a Cloud Service | 本文 |
 
 ## 审核 {#review}
 
@@ -35,7 +41,6 @@ ht-degree: 0%
    >* 管理员可以访问与表单用户关联的任何组。
    >* 服务用户组不可选择进行审阅。
 
-
 ### 设置审核时发生的操作 {#actions-that-occur-when-a-review-is-set-up}
 
 本节介绍创建或设置审阅时会发生什么情况。
@@ -55,7 +60,6 @@ ht-degree: 0%
 >
 >* 只能修改正在进行的审阅。
 >* 无法修改已完成的审核。
-
 
 1. 导航到表单选项卡并选择表单。
 
@@ -107,4 +111,5 @@ ht-degree: 0%
    1. **审阅者**：对于每个审阅人，与审阅相关的未完成任务将终止。 任务在查看者的“通知”部分中不再显示为“待处理”。
    1. **发起者**：分配给审阅发起人的任务被标记为“完成”。 任务将从审阅发起人的Notification部分删除。
    1. **全部**：该审阅显示在以前的审阅部分中。 无法添加其他注释。
+
    ![审查完成](assets/review-complete-imgg.png)

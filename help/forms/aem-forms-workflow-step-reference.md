@@ -3,14 +3,19 @@ title: 如何将工作流分配给其他用户、发送电子邮件、在工作�
 description: 以Forms为中心的工作流允许您快速构建基于Forms的自适应工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将数据发送到多个数据源以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '7189'
+source-wordcount: '7209'
 ht-degree: 1%
 
 ---
 
 # 以Forms为中心的AEM工作流 — 步骤参考 {#forms-centric-workflow-on-osgi-step-reference}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM as a Cloud Service | 本文 |
 
 您可以使用工作流模型将业务逻辑转换为自动重复流程。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是瞬态的还是使用多个资源。 您可以 [在模型中包括各种AEM Workflow步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
@@ -45,7 +50,7 @@ ht-degree: 1%
 * **[!UICONTROL 描述]**：任务中执行的操作说明。 当您在共享开发环境中工作时，此信息对于其他流程开发人员非常有用。
 
 * **[!UICONTROL 缩略图路径]**：任务缩略图的路径。 如果未指定路径，则会为自适应表单显示默认缩略图，为记录文档显示默认图标。
-* **[!UICONTROL 工作流暂存]**：一个工作流可以有多个阶段。 这些阶段显示在AEM收件箱中。 您可以在模型的属性（Sidekick >页面>页面属性>阶段）中定义这些阶段。
+* **[!UICONTROL 工作流暂存]**：一个工作流可以有多个阶段。 这些阶段显示在AEM收件箱中。 您可以在模型的属性(Sidekick>页面>页面属性>阶段)中定义这些阶段。
 * **[!UICONTROL 优先级]**：选定的优先级显示在AEM收件箱中。 可用的选项包括“高”、“中”和“低”。 默认值为Medium。
 * **[!UICONTROL 到期日期]**：指定任务被标记为超期的天数或小时数。 如果您选择 **[!UICONTROL 关闭]**，则任务永远不会标记为过期。 您还可以指定超时处理程序，以便在任务过期后执行特定任务。
 
@@ -142,7 +147,7 @@ ht-degree: 1%
 * **[!UICONTROL 路由]**：任务可以分支到不同的路由。 在AEM收件箱中选择后，该路由会返回一个值，并根据所选路由选择工作流分支。 您可以将路由存储在String数据类型的数组变量中，也可以选择 **[!UICONTROL 文本]** 以手动添加路由。
 
 * **[!UICONTROL 路由标题]**：指定路由的标题。 它显示在AEM收件箱中。
-* **[!UICONTROL Coral图标]**：指定coral图标的HTML属性。 AdobeCorelUI库提供了一组数量庞大的“触摸优先”图标。 您可以选择并使用路由的图标。 它与AEM收件箱中的标题一起显示。 如果将路由存储在变量中，则这些路由使用默认的“标记”珊瑚图标。
+* **[!UICONTROL Coral图标]**：指定coral图标的HTML属性。 AdobeCorelUI库提供了一组数量庞大的“触摸优先”图标。 您可以选择并使用路由图标。 它与AEM收件箱中的标题一起显示。 如果将路由存储在变量中，则这些路由使用默认的“标记”珊瑚图标。
 * **[!UICONTROL 允许被分派人添加评论]**：选择此选项可启用任务的注释。 被分派人可以在任务提交时从AEM收件箱中添加注释。
 * **[!UICONTROL 在变量中保存注释]**：将评论保存在String数据类型的变量中。 仅当您选择 **[!UICONTROL 允许被分派人添加评论]** 复选框。
 
@@ -544,7 +549,7 @@ Send a document directly to a printer. It supports the following printing access
 
 ## 生成非交互式PDF输出步骤   {#generatePDFdocuments}
 
-1. 将“生成非交互式PDF输出”工作流拖动到“Sidekick”的“Forms Workflow”选项卡下。
+1. 将“生成非交互式PDF输出”工作流拖动到Sidekick的“Forms Workflow”选项卡下。
 1. 双击添加的工作流步骤以编辑组件。
 1. 在“编辑组件”对话框中，配置输入文档、输出文档和其他参数，然后单击 **[!UICONTROL 确定]**.
 

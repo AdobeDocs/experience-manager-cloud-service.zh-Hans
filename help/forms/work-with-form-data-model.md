@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '4120'
+source-wordcount: '4140'
 ht-degree: 0%
 
 ---
 
 # 处理表单数据模型 {#work-with-form-data-model}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
+| AEM as a Cloud Service | 本文 |
+
 
 ![数据集成](do-not-localize/data-integeration.png)
 

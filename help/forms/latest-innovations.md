@@ -2,9 +2,9 @@
 title: 探索Adobe Experience Manager Formsas a Cloud Service中的最新创新。
 description: “了解以下各项的最新功能 [!DNL AEM Forms] as a Cloud Service创建、管理和发布企业级表单和业务流程。”
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: 784d01c4ed24d425a7f3bcb36cedadb4feac1be2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1184'
 ht-degree: 5%
 
 ---
@@ -21,6 +21,11 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 
 # 顶级 Adobe Experience Manager Forms 创新 {#latest-innovations}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/release-notes-new-features/whats-new.html) |
+| AEM as a Cloud Service | 本文 |
 
 Adobe Experience Manager Forms中的一些主要创新包括：
 

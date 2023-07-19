@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 0%
+source-wordcount: '1030'
+ht-degree: 2%
 
 ---
 
 # 使用表单数据模型 {#use-form-data-model}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
+| AEM as a Cloud Service | 本文 |
+
 
 ![数据集成](do-not-localize/data-integeration.png)
 
@@ -26,8 +32,7 @@ ht-degree: 0%
 表单数据模型是JSON架构的扩展，可用于执行以下操作：
 
 * [创建自适应Forms和片段](#create-af)
-
-   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
+  <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [使用示例数据预览](#preview-ic)
 * [使用表单数据模型服务](#prefill)
 * [将提交的自适应表单数据写回数据源](#write-af)

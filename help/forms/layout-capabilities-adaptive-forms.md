@@ -3,14 +3,19 @@ title: 自适应Forms的布局功能
 seo-title: Layout capabilities of Adaptive Forms
 description: 自适应Forms在各种设备上的布局和外观受布局设置控制。 了解各种布局及其应用方式。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 0%
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
 
 # 自适应Forms的布局功能 {#layout-capabilities-of-adaptive-forms}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager] 可让您创建易于使用的自适应Forms，为最终用户提供动态体验。 表单布局控制项或组件在自适应表单中的显示方式。
 
@@ -68,7 +73,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![在自适应Forms中使用折叠布局的可重复面板](assets/accordion-layout.png)
 
-### [!UICONTROL 选项卡式布局 — 选项卡显示在左侧 ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL 选项卡式布局 — 选项卡显示在左侧]{#tabbed-layout-tabs-appear-on-the-left}
 
 使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 带选项卡导航的面板中的组件。 选项卡位于面板内容的左侧。
 
@@ -102,7 +107,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![在表单标题中具有面板标题的移动布局](assets/mobile-layout1.png)
 
-### [!UICONTROL 表单标题中没有面板标题的布局 ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL 表单标题中没有面板标题的布局]{#layout-without-panel-titles-in-the-form-header}
 
 顾名思义，此布局仅显示没有面板标题的导航菜单和导航栏。 此布局还提供用于导航的“下一个”和“上一个”图标。
 

@@ -2,14 +2,19 @@
 title: 创建和使用主题使自适应表单风格化
 description: 您可以使用主题来使自适应表单风格化并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '5499'
+source-wordcount: '5519'
 ht-degree: 1%
 
 ---
 
 # 创建和使用主题 {#creating-and-using-themes}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM as a Cloud Service | 本文 |
 
 您可以创建和应用主题以使自适应表单风格化<!-- or an interactive communication-->. 主题包含组件和面板的样式详细信息。 样式包括诸如背景颜色、状态颜色、透明度、对齐方式和大小等属性。 应用主题时，指定的样式反映在相应的组件上。 主题独立管理，无需引用自适应表单<!-- or interactive communication -->.
 

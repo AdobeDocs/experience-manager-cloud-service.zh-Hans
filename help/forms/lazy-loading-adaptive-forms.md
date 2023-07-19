@@ -5,14 +5,20 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1017'
 ht-degree: 1%
 
 ---
 
 # 使用延迟加载改进大型表单的性能{#improve-performance-of-large-forms-with-lazy-loading}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
+| AEM as a Cloud Service | 本文 |
+
 
 ## 延迟加载简介 {#introduction-to-lazy-loading}
 
@@ -27,17 +33,17 @@ ht-degree: 1%
 * **标识和创建片段**
 您只能为延迟加载配置自适应表单片段。 片段是驻留在自适应表单之外的独立区段，可以跨表单重复使用。 因此，实施延迟加载的第一步是识别表单中的逻辑部分并将其转换为片段。 您可以从头开始创建片段或将现有表单面板另存为片段。
 
-   <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
+  <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
 
 * **标识和标记全局值**
 基于Forms的交易涉及动态元素，用于从用户捕获相关数据并对其进行处理以简化表单填写体验。 例如，您的表单在片段X中有字段A，其值决定了另一个片段中字段B的有效性。 在这种情况下，如果片段X标记为延迟加载，则字段A的值必须可用于验证字段B，即使未加载片段X也是如此。 要实现此目的，您可以将字段A标记为全局字段，以确保在未加载片段X时，其值可用于验证字段B。
 
-   有关如何使字段值全局的信息，请参见 [配置延迟加载](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  有关如何使字段值全局的信息，请参见 [配置延迟加载](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **编写规则以控制字段的可见性**
 Forms包含一些字段和部分，不适用于所有用户且适用于所有条件。 Forms作者和开发人员使用可见性或显示隐藏规则，根据用户输入控制他们的可见性。 例如，Office Address字段不会显示在表单的就业状态字段中选择失业的用户面前。 有关编写规则的更多信息，请参阅 [使用规则编辑器](rule-editor.md).
 
-   您可以在延迟加载的片段中使用可见性规则，以便仅在需要时显示条件字段。 此外，标记条件字段全局，以便在延迟加载片段的可见性表达式中引用它。
+  您可以在延迟加载的片段中使用可见性规则，以便仅在需要时显示条件字段。 此外，标记条件字段全局，以便在延迟加载片段的可见性表达式中引用它。
 
 ## 配置延迟加载 {#configuring-lazy-loading}
 
@@ -81,4 +87,4 @@ Forms包含一些字段和部分，不适用于所有用户且适用于所有条
 * 使用字段的全局可用属性，使位于延迟加载面板中的字段值可用于表单的所有其他面板。
 * 无论字段是否在片段中全局标记，都不要转发延迟面板中字段的引用值。
 * 使用面板重置功能，可通过以下单击表达式重置面板上可见的所有内容。\
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()

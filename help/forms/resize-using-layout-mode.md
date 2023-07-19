@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 0%
+source-wordcount: '1100'
+ht-degree: 1%
 
 ---
 
 # 使用版面模式调整组件大小 {#use-layout-mode-to-resize-components}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/resize-using-layout-mode.html) |
+| AEM as a Cloud Service | 本文 |
 
 通过自适应表单创作界面，您可以使用布局模式调整组件大小。 拖动列中的蓝点以定义起点和终点来定位组件。 点按响应式网格中的组件后，会显示蓝点。 响应式网格由12列相等组成。 备用列中的白色和蓝色阴影将一列与另一列区分开来。
 

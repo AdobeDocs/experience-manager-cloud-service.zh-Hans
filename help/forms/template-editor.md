@@ -2,14 +2,19 @@
 title: 如何创建自适应表单模板？
 description: 使用模板编辑器创建自适应表单模板以定义基本结构和初始内容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2038'
 ht-degree: 1%
 
 ---
 
 # 创建自适应表单模板 {#adaptive-form-templates}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
+| AEM as a Cloud Service | 本文 |
 
 在创作表单时，可在编辑器中添加字段和组件以定义表单结构、内容和操作。 您可以在 `guideRootPanel` 表单容器的。 使用模板编辑器，您可以创建一个模板，其中包含作者可用于创建表单的基本结构和初始内容。
 

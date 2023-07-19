@@ -4,14 +4,20 @@ seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: 您可以使用自适应Forms -Embed组件将自适应Forms添加或嵌入到AEM Sites页面，以便填写和提交表单，而无需离开AEM Sites页面。
 feature: Adaptive Forms
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 0%
+source-wordcount: '1174'
+ht-degree: 1%
 
 ---
 
 # 将自适应表单嵌入到AEM站点页面 {#embed-an-adaptive-form-to-aem-sites-page}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
+| AEM as a Cloud Service | 本文 |
+
 
 ## 概述 {#overview}
 

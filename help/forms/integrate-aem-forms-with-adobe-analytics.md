@@ -2,14 +2,19 @@
 title: 如何将AEM Forms与Adobe Analytics集成？
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 0%
+source-wordcount: '1707'
+ht-degree: 1%
 
 ---
 
 # 与[!DNL Adobe Analytics] 集成  {#integrate-aem-forms-with-adobe-analytics}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM as a Cloud Service | 本文 |
 
 AEM Forms与 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) 允许您捕获和跟踪已发布表单的性能指标。 分析这些量度背后的目标是使商业用户能够洞察最终用户行为并优化数据捕获体验。 您可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）用户的行为。
 
@@ -140,7 +145,7 @@ AEM Forms与 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics
 
    * **[!UICONTROL 清除变量]**：使用此操作类型可清除数据跟踪，以便事件在中只注册一次 [!DNL Adobe Analytics].
 
-      推荐的方法是使用 **[!UICONTROL 设置变量]** 操作类型以配置事件和数据元素，然后使用 **[!UICONTROL 发送信标]** 以发送数据，然后使用 **[!UICONTROL 清除变量]** 以清除数据跟踪。
+     推荐的方法是使用 **[!UICONTROL 设置变量]** 操作类型以配置事件和数据元素，然后使用 **[!UICONTROL 发送信标]** 以发送数据，然后使用 **[!UICONTROL 清除变量]** 以清除数据跟踪。
 
 1. 在 **[!UICONTROL Prop]** 部分，将下拉列表中可用的报表包选项映射到使用定义的数据元素 [配置数据元素](#configure-data-elements).
 

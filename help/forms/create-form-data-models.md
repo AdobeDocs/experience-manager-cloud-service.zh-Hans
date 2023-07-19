@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 0%
+source-wordcount: '1551'
+ht-degree: 1%
 
 ---
 
 # 创建表单数据模型 {#create-form-data-model}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
+| AEM as a Cloud Service | 本文 |
+
 
 ![数据集成](do-not-localize/data-integeration.png)
 
@@ -77,7 +83,7 @@ ht-degree: 0%
    * 要使用相同类型的另一个数据源替换现有数据源，请点按 **[!UICONTROL 编辑]** 图标，并从可用数据源列表中选择。
    * 要删除现有数据源，请点按 **[!UICONTROL 删除]** 图标。 如果在表单数据模型中添加了数据源中的数据模型对象，则“删除”图标将被禁用。
 
-      ![fdm-properties](assets/fdm-properties.png)
+     ![fdm-properties](assets/fdm-properties.png)
 
 1. 点按 **[!UICONTROL 保存并关闭]** 以保存更新。
 
@@ -108,22 +114,19 @@ ht-degree: 0%
 
 1. 创建Apache Sling上下文感知配置。 要创建OSGi配置，请执行以下操作：
    1. **在中设置OSGi配置文件 [!DNL Experience Manager] 原型项目。**
-使用PID创建OSGi工厂配置文件 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. 在每个运行模式文件夹下创建同名文件，其中每个运行模式的值需要更改。 有关详细信息，请参阅 [为配置OSGi [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+使用PID创建OSGi工厂配置文件 `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. 在每个运行模式文件夹下创建同名文件，其中每个运行模式的值需要更改。 有关详细信息，请参阅 [为配置OSGi [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **设置OSGI配置json。** 要使用Apache Sling上下文感知配置覆盖提供程序，请执行以下操作：
       1. 在本地开发实例上 `/system/console/configMgr`，选择名为的工厂OSGi配置 **[!UICONTROL Apache Sling上下文感知配置覆盖提供程序： OSGi配置]**.
       1. 提供描述。
       1. 选择 **[!UICONTROL 已启用]**.
-      1. 在覆盖下，提供需要根据sling覆盖语法中的环境进行更改的字段。 有关详细信息，请参阅 [Apache Sling上下文感知配置 — 覆盖](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如， `cloudconfigs/fdm/{configName}/url="newURL"`.
-通过选择可添加多个覆盖 **[!UICONTROL +]**.
+      1. 在覆盖下，提供需要根据sling覆盖语法中的环境进行更改的字段。 有关详细信息，请参阅 [Apache Sling上下文感知配置 — 覆盖](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如：`cloudconfigs/fdm/{configName}/url="newURL"`。通过选择可添加多个覆盖 **[!UICONTROL +]**.
       1. 选择&#x200B;**[!UICONTROL 保存]**。
       1. 要获取OSGi配置JSON，请按照中的步骤操作 [使用AEM SDK快速入门生成OSGi配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. 将JSON放置在上一步中创建的OSGi工厂配置文件中。
       1. 更改值 `newURL` 基于环境（或运行模式）。
       1. 要根据runmode更改密码值，可以使用创建密码变量 [cloud manager API](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) 之后可在以下位置引用： [OSGi配置](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
 当通过CM管道部署此原型项目时，覆盖将在不同的环境（或运行模式）中提供不同的值。
-
       >[!NOTE]
       >
       >[!DNL Adobe Managed Service] 用户可以使用加密支持对密码值进行加密(有关详细信息，请参阅 [对配置属性的加密支持](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) 并将加密的文本放在值之后 [上下文感知配置在service pack 6.5.13.0中可用](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).

@@ -4,14 +4,19 @@ seo-title: Reuse metadata properties of an Adaptive Form
 description: 您可以重用现有的自适应表单来创建新的自适应Forms。
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 2%
+source-wordcount: '554'
+ht-degree: 4%
 
 ---
 
 # 重用自适应表单的元数据属性 {#reusing-adaptive-forms}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/reusing-adaptive-forms.html) |
+| AEM as a Cloud Service | 本文 |
 
 如果要使用现有自适应表单的某些属性来生成新表单，则只需使用复制粘贴功能即可。 此外，您还可以将新的自适应表单粘贴到所需的文件夹路径。 将复制所有元数据属性，并复制基于XFA和XSD的自适应Forms的XFA和XSD。
 

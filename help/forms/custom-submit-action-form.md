@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 0%
+source-wordcount: '1767'
+ht-degree: 1%
 
 ---
 
 # 为自适应Forms创建自定义提交操作 {#writing-custom-submit-action-for-adaptive-forms}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service | 本文 |
 
 自适应表单提供多个现成的提交操作(OOTB)。 提交操作指定要对通过自适应表单收集的数据执行的操作的详细信息。 例如，通过电子邮件发送数据。
 
@@ -72,7 +77,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 * 文件附件的大小为0字节。
 
-* 文件附件的格式未在 [支持的文件类型](https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) 部分。
+* 文件附件的格式未在 [支持的文件类型](https://helpx.adobe.com/cn/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) 部分。
 
 ### 转发路径和重定向URL {#forward-path-and-redirect-url}
 

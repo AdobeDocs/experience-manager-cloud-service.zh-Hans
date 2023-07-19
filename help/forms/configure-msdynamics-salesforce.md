@@ -2,14 +2,19 @@
 title: 如何为自适应表单配置现成的Microsoft Dynamics 365和Salesforce表单数据模型？
 description: 了解如何将Microsoft Dynamics 365和Salesforce与自适应表单集成。
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 1%
+source-wordcount: '957'
+ht-degree: 2%
 
 ---
 
 # 配置[!DNL Microsoft Dynamics 365]和 [!DNL Salesforce]Cloud Service {#configure-azure-storage}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | 本文 |
 
 [[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 云服务，用于将自适应表单与现成的表单数据模型集成。 然后，自适应Forms可以与 [!DNL Microsoft Dynamics 365] 和 [!DNL Salesforce] 启用业务工作流的服务器。 例如：
 
@@ -30,11 +35,11 @@ ht-degree: 1%
 
 * [创建启用了OAuth的已连接文件 [!DNL Salesforce] 应用程序](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5). 创建已连接时 [!DNL Salesforce] 应用程序中，以下列格式指定回调URL：
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   其中，服务器和端口是指的主机名和端口号， [!DNL AEM Forms] 服务器。
+  其中，服务器和端口是指的主机名和端口号， [!DNL AEM Forms] 服务器。
 
 * 创建连接的时 [!DNL Salesforce] 应用程序，指定 `full` 和 `offline_access` 作为OAuth范围的值。
 
@@ -56,7 +61,7 @@ ht-degree: 1%
 
 A [!DNL Salesforce] 表单数据模型可在 [!DNL AEM Forms] 服务器在您之后 [为基于Experience Manager原型的Forms设置开发项目](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-要访问表单数据模型，请导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 数据集成]**. 可用文件夹的列表包括一个具有为指定的标题的文件夹 `DappTitle`  while [生成AEM原型项目](setup-local-development-environment.md##forms-cloud-service-local-development-environment). 点按文件夹名称，选择 **[!UICONTROL Salesforce数据模型]**，然后点按编辑 ![编辑](assets/edit.png) 图标以查看表单数据模型。
+要访问表单数据模型，请导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 数据集成]**. 可用文件夹的列表包括一个具有为指定的标题的文件夹 `DappTitle`  同时 [生成AEM原型项目](setup-local-development-environment.md##forms-cloud-service-local-development-environment). 点按文件夹名称，选择 **[!UICONTROL Salesforce数据模型]**，然后点按编辑 ![编辑](assets/edit.png) 图标以查看表单数据模型。
 
 配置之后 [[!DNL Salesforce] 云配置服务](#configure-salesforce-cloud-service)，您可以将自适应表单与开箱即用的集成 [!DNL Salesforce] 数据模型。
 
@@ -66,11 +71,11 @@ A [!DNL Salesforce] 表单数据模型可在 [!DNL AEM Forms] 服务器在您之
 
 * [注册应用程序 [!DNL Microsoft Dynamics 365] 使用Azure Active Directory](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/walkthrough-register-app-azure-active-directory). 创建已连接时 [!DNL Microsoft Dynamics 365] 应用程序中，以下列格式指定回复URL：
 
-   ```
-   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
-   ```
+  ```
+  https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+  ```
 
-   其中，服务器和端口是指的主机名和端口号， [!DNL AEM Forms] 服务器。
+  其中，服务器和端口是指的主机名和端口号， [!DNL AEM Forms] 服务器。
 
 * 记下所连接应用程序的客户端ID（也称为应用程序ID）和客户端密钥的值。
 
@@ -92,6 +97,6 @@ A [!DNL Salesforce] 表单数据模型可在 [!DNL AEM Forms] 服务器在您之
 
 A [!DNL Microsoft Dynamics 365] 表单数据模型可在 [!DNL AEM Forms] 服务器在您之后 [为基于Experience Manager原型的Forms设置开发项目](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 
-要访问表单数据模型，请导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 数据集成]**. 可用文件夹的列表包括一个具有为指定的标题的文件夹 `DappTitle`  同时 [生成AEM原型项目](setup-local-development-environment.md##forms-cloud-service-local-development-environment). 点按文件夹名称，选择 **[!UICONTROL Microsoft Dynamics 365数据模型]**，然后点按编辑 ![编辑](assets/edit.png) 图标以查看表单数据模型。
+要访问表单数据模型，请导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 数据集成]**. 可用文件夹的列表包括一个具有为指定的标题的文件夹 `DappTitle`  while [生成AEM原型项目](setup-local-development-environment.md##forms-cloud-service-local-development-environment). 点按文件夹名称，选择 **[!UICONTROL Microsoft Dynamics 365数据模型]**，然后点按编辑 ![编辑](assets/edit.png) 图标以查看表单数据模型。
 
 配置之后 [[!DNL Microsoft Dynamics 365] 云配置服务](#configure-dynamics-cloud-service)，您可以将自适应表单与开箱即用的集成 [!DNL Microsoft Dynamics 365] 数据模型。

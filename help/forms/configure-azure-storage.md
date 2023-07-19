@@ -2,14 +2,17 @@
 title: 如何配置Azure存储？
 description: 了解如何将表单与Azure Storage Server集成。
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
 
 # 配置[!DNL Azure]存储 {#configure-azure-storage}
+
+
+![数据集成](assets/data-integeration.png)
 
 [[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供 [!DNL Azure] 用于集成表单的存储配置 [!DNL Azure] 存储服务。 表单数据模型可用于创建与交互的自适应Forms [!DNL Azure] 服务器启用业务工作流。 例如：
 

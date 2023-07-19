@@ -5,14 +5,19 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
 
 # [!DNL Microsoft Dynamics] OData配置 {#microsoft-dynamics-odata-configuration}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM as a Cloud Service | 本文 |
 
 ![数据集成](assets/data-integeration.png)
 
@@ -95,7 +100,7 @@ ht-degree: 2%
 
    * `Client-ID` 是一个可以使用任何GUID生成器生成的客户端ID。
    * `redirect-uri` 是的URL [!DNL Microsoft Dynamics] 上的OData云服务 [!DNL Experience Manager Forms]. 与一起安装的默认云服务 [!DNL Experience Manager Forms] 部署在以下URL上：
-      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+     `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 运行以下命令以授予对AD FS计算机的访问权限：
 

@@ -2,14 +2,19 @@
 title: 如何在Experience Manager Sites页面上创建Forms门户
 description: 了解如何在AEM Sites页面上创建Forms门户以及使用现成的核心组件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1782'
 ht-degree: 1%
 
 ---
 
 # 在门户上列出自适应Forms {#publish-forms-on-portal}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM as a Cloud Service | 本文 |
 
 在以表单为中心的典型门户部署方案中，表单开发和门户开发是两个相互分离的活动。 当表单设计人员将表单设计和存储在存储库中时，Web开发人员会创建一个Web应用程序来列出表单并处理表单提交。 由于Forms存储库和Web应用程序之间没有通信，因此Forms会复制到Web层。
 

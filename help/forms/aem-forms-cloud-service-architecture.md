@@ -2,14 +2,19 @@
 title: Experience Manager [!DNL AEM Forms] as a Cloud Service架构
 description: 了解 [!DNL AEM Forms] as a Cloud Service了解平台的可扩展性、可复原性和性能。
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 4%
+source-wordcount: '1065'
+ht-degree: 5%
 
 ---
 
 # [!DNL AEM] Formsas a Cloud Service架构 {#architecture}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
+| AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Experience Manager Forms] as a Cloud Service是一种云原生解决方案，适用于创建、管理、发布和更新复杂的数字表单和通信，同时将提交的数据与后端流程、业务规则集成，并将数据保存在外部数据存储中。 它扩展了 [!DNL Adobe Experience Manager as a Cloud Service]. 要了解有关扩展、部署、环境和其他基础架构的更多信息，请参阅 [的架构简介 [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
 
@@ -91,7 +96,7 @@ Formsas a Cloud Service提供了将内容存储在外部存储系统（如Blob�
 
 ### Cloud Manager
 
-Cloud Manager是 [AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). 它是我们客户的运营和开发人员角色的单一入口点。 这是可以管理AEM程序和环境的位置。 Cloud Manager已经演变成为自助服务门户，在其中可以创建和配置AEMas a Cloud Service的主要组件：
+Cloud Manager是 [AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=zh-Hans). 它是我们客户的运营和开发人员角色的单一入口点。 这是可以管理AEM程序和环境的位置。 Cloud Manager已经演变成为自助服务门户，在其中可以创建和配置AEMas a Cloud Service的主要组件：
 
 * 创建和管理程序
 * 在程序中创建和管理AEM环境

@@ -2,10 +2,10 @@
 title: 自适应表单中的重复性（核心组件）
 description: 使用面板组件的重复特征以自适应形式重复相似部分。
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
@@ -84,12 +84,12 @@ ht-degree: 1%
 
 面板的父级应包含一个删除按钮，用于删除可重复面板的实例。 执行以下步骤以将按钮插入到父项，并在按钮上启用脚本以删除可重复面板：
 
-1. 添加 **按钮组件** 至面板的父面板，在下面的视频中，带标签名称的按钮组件 **delete** 和字段名称 **DeletePanel** 已使用。 选择组件并点按 ![edit-rules](/help/forms/assets/edit-rules.png). 按钮组件的规则将在规则编辑器中打开。
+1. 添加 **按钮组件** 至面板的父面板，在下面的视频中，带标签名称的按钮组件 **delete** 和字段名称 **删除面板** 已使用。 选择组件并点按 ![edit-rules](/help/forms/assets/edit-rules.png). 按钮组件的规则将在规则编辑器中打开。
 1. 在规则编辑器窗口中，单击 **创建**.
 
    选择 **可视编辑器** “表单对象和函数”行中的。
 
-   1. 在规则区域中的WHEN下 **DeletePanel**，选择状态 **已单击**.
+   1. 在规则区域中的WHEN下 **删除面板**，选择状态 **已单击**.
    1. 在THEN下，选择 **删除实例**，并使用拖放面板 ![切换侧面板](/help/forms/assets/toggle-side-panel.png) 或使用以下方式选择它 **拖放对象或在此选择。**
 
    选择 **代码编辑器** “表单对象和函数”行中的。 单击 **编辑规则** 在代码区域中：
@@ -97,6 +97,7 @@ ht-degree: 1%
    * 要创建删除面板按钮，请指定 `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    单击&#x200B;**完成**。
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

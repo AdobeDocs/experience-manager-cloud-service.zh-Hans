@@ -4,14 +4,19 @@ description: 了解如何为配置Adobe Acrobat Sign [!DNL AEM Forms] as a Cloud
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1939'
 ht-degree: 31%
 
 ---
 
 # Connect [!DNL AEM Forms] as a Cloud Service于 [!DNL Adobe Acrobat Sign] {#integrate-adobe-sign-with-aem-forms}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | 本文 |
 
 [!DNL Adobe Acrobat Sign] 为自适应Forms和AEM工作流启用电子签名工作流。 电子签名改进了法律、销售、工资单、人力资源管理和其他许多方面的文档的处理工作流。
 

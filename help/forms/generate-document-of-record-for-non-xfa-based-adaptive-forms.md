@@ -2,14 +2,19 @@
 title: 为自适应Forms生成记录文档
 description: 介绍如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4086'
 ht-degree: 2%
 
 ---
 
 # 为自适应表单生成记录文档
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM as a Cloud Service | 本文 |
 
 ## 概述 {#overview}
 
@@ -359,6 +364,7 @@ When you select a form model, configure Document of Record using options availab
       * **免责声明文本**：免责声明文本。
 
       ![母版页  属性](/help/forms/assets/masterpagepropertiesdor.png)
+
    >[!NOTE]
    >
    >如果您使用的自适应表单模板是使用6.3之前的Designer版本创建的，为了使重色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
