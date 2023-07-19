@@ -3,9 +3,9 @@ title: 创建资源文件夹 – Headless 设置
 description: 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 88%
 
 但是，您首先需要创建用于存储这些内容的资源文件夹。
 
-资源文件夹用于 [组织传统内容资产](/help/assets/manage-digital-assets.md) 例如图像和视频，以及内容片段。
+资源文件夹用于[组织传统内容资源](/help/assets/manage-digital-assets.md)，例如图像和视频以及内容片段。
 
 ## 如何创建资源文件夹 {#how-to-create-an-assets-folder}
 
@@ -30,11 +30,11 @@ ht-degree: 88%
 1. 提供文件夹的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
    * **名称**&#x200B;会成为存储库中的节点名称。
-      * 它根据标题自动生成，并根据以下内容进行调整 [AEM命名约定](/help/implementing/developing/introduction/naming-conventions.md).
+      * 它会根据标题自动生成，并根据 [AEM 命名约定](/help/implementing/developing/introduction/naming-conventions.md)进行调整。
       * 如有必要可以调整。
 
    ![创建文件夹](../assets/assets-folder-create.png)
-1. 将光标悬停在其上并点击复选标记，选择您刚创建的文件夹。然后选择 **属性** (或使用 `p` [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))。
+1. 将光标悬停在其上并点击复选标记，选择您刚创建的文件夹。然后从工具栏中选择&#x200B;**属性**（或者使用 `p` [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)）。
 1. 在&#x200B;**属性**&#x200B;窗口中，选择 **Cloud Services** 选项卡。
 1. 对于&#x200B;**云配置**，选择[您之前创建的配置。](create-configuration.md)
    ![配置资源文件夹](../assets/assets-folder-configure.png)
