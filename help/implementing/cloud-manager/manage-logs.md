@@ -3,9 +3,9 @@ title: 访问和管理日志
 description: 了解如何访问和管理日志，可促进您在 AEM as a Cloud Service 中的开发过程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 70%
 
 ## 通过 API 下载的日志 {#logs-through-api}
 
-除了通过UI下载日志外，还可以通过API和命令行界面下载日志。
+除了通过 UI 下载日志外，还可以通过 API 和命令行界面下载日志。
 
 要下载特定环境的日志文件，命令如下所示。
 
@@ -48,13 +48,13 @@ ht-degree: 70%
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-此外，您还可以通过命令行界面跟踪日志。
+您还可以通过命令行界面跟踪日志。
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-要获取环境ID（本例中为1884）和可用的服务或日志名选项，可以使用以下命令。
+若要获得环境 Id（本例中为 1884）和可用的服务或日志名称选项，可以使用以下命令。
 
 ```shell
 $ aio cloudmanager:list-environments
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### 其他资源 {#resources}
 
-请参阅以下其他资源，了解有关Cloud Manager API和Adobe I/OCLI的更多信息：
+请参阅以下附加资源，了解有关 Cloud Manager API 和 Adobe I/O CLI 的更多信息：
 
 * [Cloud Manager API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
