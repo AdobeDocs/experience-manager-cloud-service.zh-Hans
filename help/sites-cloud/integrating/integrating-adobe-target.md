@@ -5,26 +5,26 @@ feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1018'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # 与 Adobe Target 集成{#integrating-with-adobe-target}
 
-作为Adobe Experience Cloud的一部分，Adobe Target允许您通过在所有渠道中进行定位和衡量来提高内容相关性。 集成 Adobe Target 和 AEM as a Cloud Service 需要：
+作为 Adobe Experience Cloud 的一部分，Adobe Target 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。集成 Adobe Target 和 AEM as a Cloud Service 需要：
 
 * 使用 Touch UI 在 AEM as a Cloud Service 中创建 Target 配置（需要 IMS 配置）。
 * 在 [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) 中将 Adobe Target 添加为扩展并进行配置。
 
-Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的客户端属性所必需的。也就是说，“体验定位”需要与Launch集成。
+Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的客户端属性所必需的。也就是说，需要与 Launch 集成才能实施“体验定位”。
 
 若要将体验片段和/或内容片段导出到 Target，您只需要 [Adobe Target 配置和 IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md)。
 
 >[!NOTE]
 >
->没有现有Target帐户的客户可以请求访问Target Foundation Pack以进行Experience Cloud。 此 Foundation Pack 提供了对 Target 的限量使用。
+>不具有现有 Target 帐户的 客户可以请求对 Target Foundation Pack for Experience Cloud 的访问权限。此 Foundation Pack 提供了对 Target 的限量使用。
 
 ## 创建 Adobe Target 配置 {#create-configuration}
 
@@ -38,20 +38,20 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 
 ### IMS 配置 {#ims-configuration}
 
-需要适用于 Launch 和 Target 的 IMS 配置才能将 Target 与 AEM 和 Launch 正确集成。虽然已在 AEM as a Cloud Service 中预配置适用于 Launch 的 IMS 配置，但必须创建 Target IMS 配置（在设置 Target 后）。参见 [与Adobe Target集成时使用的IMS配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md) 和视频 [集成Experience Platform Launch和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) 了解如何创建Target IMS配置。
+需要适用于 Launch 和 Target 的 IMS 配置才能将 Target 与 AEM 和 Launch 正确集成。虽然已在 AEM as a Cloud Service 中预配置适用于 Launch 的 IMS 配置，但必须创建 Target IMS 配置（在设置 Target 后）。请参考[与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)并观看视频[集成 Experience Platform Launch 和 AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)，了解如何创建 Target IMS 配置。
 
 ### Adobe Target 租户 ID 和 Adobe Target 客户端代码 {#tenant-client}
 
-配置Adobe Target租户ID和Adobe Target客户端代码字段时，请注意以下事项：
+在配置 Adobe Target 租户 ID 和 Adobe Target 客户端代码字段时，请注意以下几点：
 
-1. 对于大多数客户来说，租户 ID 和客户代码是相同的。也就是说，两个字段包含相同的信息并且是相同的。 确保在这两个字段中输入租户 ID。
+1. 对于大多数客户来说，租户 ID 和客户代码是相同的。也就是说，这两个字段包含相同的信息并且是相同的。确保在这两个字段中输入租户 ID。
 2. 对于遗留问题，您还可以在“租户 ID”和“客户端代码”字段中输入不同的值。
 
 在这两种情况下：
 
 * 默认情况下，客户端代码（如果首先添加）也会自动复制到“租户 ID”字段中。
-* 如果需要，您可以更改默认租户ID集。
-* 对Target的后端调用基于租户ID，而对Target的客户端调用基于客户端代码。
+* 如果需要，您可以更改默认租户 ID 集。
+* 对 Target 进行的后端调用会基于租户 ID，而对 Target 进行的客户端调用会基于客户端代码。
 
 如前所述，对于 AEM as a Cloud Service，第一种情况最常见。无论哪种方式，请确保&#x200B;**两个**&#x200B;字段都包含正确的信息，具体取决于您的要求。
 
@@ -59,8 +59,8 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 >
 > 如果要更改现有 Target 配置，请：
 >
-> 1. 重新输入租户ID。
-> 2. 重新连接到Target。
+> 1. 重新输入租户 ID。
+> 2. 重新连接到 Target。
 > 3. 保存配置。
 
 ### 编辑 Target 配置 {#edit-target-configuration}
@@ -74,15 +74,15 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 
 ### 将配置添加到站点 {#add-configuration}
 
-要将Touch UI配置应用于站点，请转到： **站点** > **选择任意网站页面** > **属性** > **高级** > **配置** >选择配置租户。
+要将 Touch UI 配置应用于站点，请转至：**Sites** > **选择任何站点页面** > **属性** > **高级** > **配置** > 选择配置租户。
 
 ## 使用 Adobe Launch 在 AEM Sites 上集成 Adobe Target {#integrate-target-launch}
 
-AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Target 扩展添加到 Experience Platform Launch，您可以在 AEM 网页上使用 Adobe Target 的功能。Target库仅使用Launch进行渲染。
+AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Target 扩展添加到 Experience Platform Launch，您可以在 AEM 网页上使用 Adobe Target 的功能。Target 库仅通过 Launch 呈现。
 
 >[!NOTE]
 >
->虽然现有（旧式）框架仍有效，但无法在 Touch UI 中进行配置。Adobe建议您在Launch中重新构建变量映射配置。
+>虽然现有（旧式）框架仍有效，但无法在 Touch UI 中进行配置。Adobe 建议在 Launch 中重新构建变量映射配置。
 
 作为一般概述，集成步骤为：
 
@@ -104,7 +104,7 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 
 ### 添加所需的扩展 {#add-extension}
 
-**扩展** 是管理核心库设置的容器。 Adobe Target 扩展通过使用适用于现代 Web at.js 的 Target JavaScript SDK 来支持客户端实施。添加这两个 **Adobe Target** 和 **AdobeContextHub** 扩展。
+**扩展**&#x200B;是管理核心库设置的容器。Adobe Target 扩展通过使用适用于现代 Web at.js 的 Target JavaScript SDK 来支持客户端实施。同时添加 **Adobe Target** 和 **Adobe ContextHub** 扩展。
 
 1. 选择“扩展目录”选项，然后在过滤器中搜索 Target。
 2. 选择 **Adobe Target** at.js，然后单击“安装”选项。
@@ -112,7 +112,7 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 3. 选择&#x200B;**配置**&#x200B;按钮。请注意包含已导入 Target 帐户凭据的配置窗口，以及此扩展的 at.js 版本。
 4. 选择&#x200B;**保存**&#x200B;以将 Target 扩展添加到 Launch 属性。**安装的扩展**列表的下方应列出 Target 扩展。
    ![保存扩展](assets/configure_extension1.png "保存扩展")
-5. 重复上述步骤以搜索 **AdobeContextHub** 扩展并安装它（此扩展是与contexthub参数集成所必需的，并基于完成的定位）。
+5. 重复上述步骤以搜索 **Adobe ContextHub** 扩展并安装它（该扩展是实现与 ContextHub 参数集成所必需的，并基于已执行的定位）。
 
 ### 创建数据元素 {#data-element}
 
@@ -126,16 +126,16 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 
 ### 创建页面规则 {#page-rule}
 
-In **规则**，它会定义一系列在网站上运行的操作并对这些操作进行排序，以实现定位。
+在&#x200B;**规则**&#x200B;中，它定义了对站点运行的一系列操作并对它们进行了排序以实现定位。
 
 1. 添加一组操作，如屏幕快照所示。
    ![操作](assets/rules1.png "操作")
-2. 在Add Params to All Mbox中，将之前配置的数据元素（请参阅上面的数据元素）添加到在mbox调用中发送的参数中。
+2. 在“将参数添加到所有 Mbox”中，将之前配置的数据元素（参见上面的数据元素）添加到在 mbox 调用中发送的参数。
    ![Mbox](assets/map_data1.png "操作")
 
 ### 构建和发布 {#build-publish}
 
-要了解如何构建和发布，请参阅 [页面](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
+要了解如何构建和发布，请参阅[页面。](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)
 
 ## 经典和 Touch UI 配置之间的内容结构变化 {#changes-content-structure}
 
@@ -156,4 +156,4 @@ In **规则**，它会定义一系列在网站上运行的操作并对这些操�
 
 >[!NOTE]
 >
->现有客户仍支持旧版配置（没有编辑或创建的选项）。 旧版配置是客户使用 VSTS 上传的内容包的一部分。
+>现有客户仍支持旧版配置（没有编辑或创建选项）。旧版配置是客户使用 VSTS 上传的内容包的一部分。
