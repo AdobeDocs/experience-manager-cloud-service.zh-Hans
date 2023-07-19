@@ -3,9 +3,9 @@ title: 为 Headless 内容配置翻译规则
 description: 了解如何定义翻译规则，标识要翻译的内容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '942'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 97%
 >仅当您未在内容片段上使用&#x200B;**可翻译**&#x200B;标志时，需要执行文档历程的这一步骤。
 >
 >* **可翻译**&#x200B;标志用于自动为您创建翻译规则，而无需干预。
->* 此 **可翻译** 仅当翻译集成框架配置设置为时，才使用标志 **[为翻译启用内容模型字段](/help/sites-cloud/administering/translation/integration-framework.md)**.
+>* **可翻译**&#x200B;标志仅在翻译集成框架配置设置为&#x200B;**[为翻译启用内容模型字段](/help/sites-cloud/administering/translation/integration-framework.md)**&#x200B;时使用。
 >* 在 TIF 配置中启用此选项将取代任何手动创建的翻译规则。|
 
 ## 目标 {#objective}
@@ -91,7 +91,7 @@ ht-degree: 97%
 
 可以将许多附加属性配置为翻译规则的一部分。此外，您可以手动将规则指定为 XML，这可以提高特殊性和灵活性。
 
-通常，无需此类功能即可开始本地化您的 Headless 内容，但如果您愿意，可以参阅[其他资源](#additional-resources)部分以了解详情。
+通常，无需此类功能即可开始本地化您的 Headless 内容，但如果您愿意，可以参阅[其他资源](#additional-resources)部分以了解详细信息。
 
 ## 后续内容 {#what-is-next}
 
