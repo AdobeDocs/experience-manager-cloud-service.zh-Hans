@@ -1,28 +1,28 @@
 ---
 title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
-description: 了解如何将GraphQL与AEM结合使用，以便通过浏览示例内容和查询来无头提供内容。
+description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1752'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询 {#learn-graphql-with-aem-sample-content-queries}
 
-了解如何将GraphQL与AEM结合使用，以便通过浏览示例内容和查询来无头提供内容。
+通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 
 >[!NOTE]
 >
->请阅读本页及以下内容：
+>阅读本页以及以下内容：
 >
 >* [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 >* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 >* [用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
-要开始使用GraphQL查询以及它们如何与AEM内容片段结合使用，查看一些实际示例会有所帮助。
+要开始了解 GraphQL 查询以及它们如何与 AEM 内容片段结合使用，看一些具体的示例会有所帮助。
 
 有关这方面的帮助，请查看：
 
@@ -41,7 +41,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->根据您的实例，您可以直接访问 [AEM GraphQL API中包含的GraphiQL接口](/help/headless/graphql-api/graphiql-ide.md) 用于提交和测试查询。
+>根据您的实例，您可以直接访问 [AEM GraphQL API 中包含的 GraphiQL 接口](/help/headless/graphql-api/graphiql-ide.md)，用于提交和测试查询。
 >
 >您可以通过以下任一方式访问查询编辑器：
 >
@@ -54,7 +54,7 @@ ht-degree: 80%
 
 ### 示例查询 – 所有可用架构和数据类型 {#sample-all-schemes-datatypes}
 
-返回所有 `types` 用于所有可用架构。
+返回所有可用架构的所有 `types`。
 
 **示例查询**
 
@@ -147,7 +147,7 @@ ht-degree: 80%
 
 ### 示例查询 – 关于所有城市的所有信息 {#sample-all-information-all-cities}
 
-要检索有关所有城市的所有信息，您可以使用以下基本查询：
+要检索有关所有城市的所有信息，您可以使用以下基本的查询：
 **示例查询**
 
 ```graphql
@@ -158,7 +158,7 @@ ht-degree: 80%
 }
 ```
 
-运行时，系统自动扩展查询以包含所有字段：
+在运行时，系统会自动扩展查询，以包含所有字段：
 
 ```graphql
 {
@@ -230,7 +230,7 @@ ht-degree: 80%
 
 ### 示例查询 – 所有城市的名称 {#sample-names-all-cities}
 
-一个直接的查询返回 `name`中所有条目的 `city`架构。
+可返回`city`架构中`name`所有条目的直接查询。
 
 **示例查询**
 
@@ -280,7 +280,7 @@ query {
 
 ### 示例查询 – 一个特定城市片段 {#sample-single-specific-city-fragment}
 
-用于返回存储库中特定位置单个片段条目的详细信息的查询。
+可返回存储库中特定位置的单个片段条目的详细信息的查询。
 
 **示例查询**
 
@@ -321,7 +321,7 @@ query {
 
 ### 示例查询 – 具有指定变体的所有城市 {#sample-cities-named-variation}
 
-如果您创建一个名为“柏林中心”(`berlin_centre`)，对于 `city` 然后，您可以使用查询返回变体的详细信息。
+如果您为 `city` 柏林创建了一个名为“柏林中心” (`berlin_centre`) 的变体，则可以使用查询返回变体的详细信息。
 
 **示例查询**
 
@@ -366,8 +366,8 @@ query {
 
 如果您：
 
-* 创建各种标记，已命名 `Tourism` ： `Business`， `City Break`， `Holiday`
-* 并将其分配给各种主控变体 `City` 实例
+* 创建各种标签，并命名为 `Tourism` : `Business`, `City Break`, `Holiday`
+* 并将其分配给各种 `City` 实例的主变体
 
 然后，您可以使用查询返回`city`模式中标记为 City Breaks 的所有条目的 `name` 和 `tags` 的详细信息。
 
@@ -544,7 +544,7 @@ query {
 
 ### 示例查询 – 所有名为“Jobs”或“Smith”的人 {#sample-all-persons-jobs-smith}
 
-筛选所有内容的查询 `persons` 任何具有此名称的 `Jobs`或 `Smith`.
+用于筛选所有名称为 `Jobs` 或 `Smith` 的 `persons` 的查询。
 
 **示例查询**
 
@@ -598,7 +598,7 @@ query {
 
 ### 示例查询 – 所有名字不是“Jobs”的人 {#sample-all-persons-not-jobs}
 
-筛选所有内容的查询 `persons` 任何具有此名称的 `Jobs`或 `Smith`.
+用于筛选所有名称为 `Jobs` 或 `Smith` 的 `persons` 的查询。
 
 **示例查询**
 
@@ -708,9 +708,9 @@ query {
 }
 ```
 
-### 示例查询 — 德国或瑞士境内人口介于400000到999999之间的所有城市 {#sample-all-cities-d-ch-population}
+### 示例查询 – 位于德国或瑞士且人口在 400000 到 999999 之间的所有城市。 {#sample-all-cities-d-ch-population}
 
-此处筛选了字段组合。 使用 `AND`（隐式）来选择 `population` 范围，使用 `OR`（显式）来选择所需的城市。
+以下是筛选的字段组合。使用 `AND`（隐式）来选择 `population` 范围，使用 `OR`（显式）来选择所需的城市。
 
 **示例查询**
 
@@ -1152,7 +1152,7 @@ query {
 
 ## 使用 WKND 项目的示例查询 {#sample-queries-using-wknd-project}
 
-这些示例查询基于 WKND 项目。它具有以下功能：
+这些示例查询基于 WKND 项目。它包括以下内容：
 
 * 在以下位置提供的内容片段模型：
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1163,7 +1163,7 @@ query {
 
 >[!NOTE]
 >
->由于结果可能会很庞大，此处不再复述。
+>由于结果可能会很庞大，所以这里不再重复。
 
 ### 具有指定属性的特定模型的所有内容片段示例查询 {#sample-wknd-all-model-properties}
 
@@ -1446,7 +1446,7 @@ query {
 
 #### 具有附件的多个内容片段的示例查询 {#sample-wknd-multiple-fragments-attachments}
 
-以下查询返回所有 `attachments`  — 类型为的特定字段（子组） `content-reference`：
+以下查询返回所有 `attachments` – 类型为 `content-reference` 的特定字段（子组）：
 
 >[!NOTE]
 >
@@ -1538,7 +1538,7 @@ query {
 此查询查找：
 
 * 特定路径下类型为 `author` 的单个内容片段
-   * 在该片段中，数据关联到变体： `another`
+   * 在该片段中，与变体相关的数据：`another`
 
 **示例查询**
 
@@ -1564,7 +1564,7 @@ query {
 
 >[!NOTE]
 >
->此查询演示没有的内容片段的回退 [变量](/help/headless/graphql-api/content-fragments.md#variations) 指定名称的。
+>该查询会演示没有指定名称的[变化](/help/headless/graphql-api/content-fragments.md#variations)的内容片段的回退。
 
 **示例查询**
 
@@ -1717,7 +1717,7 @@ query {
 }
 ```
 
-### 按_tags ID筛选并排除变体的示例查询 {#sample-filtering-tag-not-variations}
+### 按 _tags ID 过滤并排除变体的示例查询 {#sample-filtering-tag-not-variations}
 
 此查询查找：
 
@@ -1752,7 +1752,7 @@ query {
 } 
 ```
 
-### 按_tags ID筛选并包含变体的示例查询 {#sample-filtering-tag-with-variations}
+### 按 _tags ID 过滤并包含变体的示例查询 {#sample-filtering-tag-with-variations}
 
 此查询查找：
 
@@ -1805,7 +1805,7 @@ query {
 
 ### 示例内容片段模型（架构） {#sample-content-fragment-models-schemas}
 
-对于示例查询，您可以使用以下内容模型及其相互关系（引用 — >）：
+对于相同的查询，使用以下内容模型及其相互关系（引用 ->）：
 
 * [公司](#model-company)
 -> [人员](#model-person)
