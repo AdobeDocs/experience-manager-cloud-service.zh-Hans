@@ -5,19 +5,19 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # 连接到 Microsoft Translator {#connecting-to-microsoft-translator}
 
-为 [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) 云服务创建配置以使用 Microsoft Translation 帐户来翻译 AEM 页面内容或资产。
+为 [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) 云服务创建配置以使用 Microsoft Translation 帐户来翻译 AEM 页面内容或资源。
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 90%
 1. 点按或单击&#x200B;**创建**&#x200B;按钮。
 1. 定义您的配置。
    1. 在下拉列表中选择 **Microsoft Translator**。
-   1. 为您的配置键入标题。标题在“Cloud Services”控制台和页面属性下拉列表中标识该配置。
+   1. 为您的配置键入标题。标题在 Cloud Service 控制台中以及页面属性下拉列表中标识该配置。
    1. （可选）键入一个名称以用于存储该配置的存储库节点。
 
    ![创建翻译配置](../assets/create-translation-config.png)
