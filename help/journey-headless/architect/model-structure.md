@@ -3,9 +3,9 @@ title: 了解如何在 AEM 中创建内容片段模型
 description: 了解使用内容片段模型对 Headless CMS 进行内容建模的概念和机制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -59,11 +59,11 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 那么 - 该如何操作？
 
-您可以拖动的实例 **数据类型** 左侧的空格中 — 您已定义模型！
+您可以将&#x200B;**数据类型**&#x200B;的实例拖到左侧空白区域，您已定义模型！
 
 ![定义字段](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-添加数据类型后，您需要定义 **属性** 为那个场地。 这些都取决于将使用的类型。例如：
+在添加数据类型后，您需要为该字段定义&#x200B;**属性。**&#x200B;这些都取决于将使用的类型。例如：
 
 ![数据属性](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ### 您的内容作者 {#your-content-authors}
 
-您的内容作者看不到您用于创建模型的实际数据类型和属性。 这意味着您可能需要提供有关他们如何填写特定字段的帮助和信息。对于基本信息，您可以使用字段标签和默认值，但在更复杂的情况下，可能需要考虑项目特定的文档。
+您的内容作者看不到您用于创建模型的实际数据类型和属性。这意味着您可能需要提供有关他们如何填写特定字段的帮助和信息。对于基本信息，您可以使用字段标签和默认值，但在更复杂的情况下，可能需要考虑项目特定的文档。
 
 >[!NOTE]
 >
