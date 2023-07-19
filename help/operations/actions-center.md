@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 >[!NOTE]
 >此功能尚未发布。
 
-AEM as aCloud Service会在发生需要立即采取行动的严重事件时向操作中心发送电子邮件通知，并提供主动优化建议。 示例包括阻塞队列或一组即将过期的凭据；可在[下表](#supported-notification-types)中查看完整的“操作中心”通知类型集，此表也会随着时间不断扩充。
+AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发送“操作中心”电子邮件通知，并主动提出优化建议。示例包括阻塞队列或一组即将过期的凭据；可在[下表](#supported-notification-types)中查看完整的“操作中心”通知类型集，此表也会随着时间不断扩充。
 
 收到“操作中心”电子邮件通知后，可以单击它以打开 AEM as a Cloud Service 的“操作中心”，这将出现一个弹出窗口，其中显示的附加上下文对客户需要执行的操作进行了说明。
 
