@@ -3,9 +3,9 @@ title: 如何通过 AEM 交付 API 访问您的内容
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用 GraphQL 查询访问内容片段的内容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1360'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 98%
    * 深入了解 AEM GraphQL API 的详细信息。
    * 查看一些示例查询以实际工作原理。
 
-## 那么您希望访问您的内容吗？ {#so-youd-like-to-access-your-content}
+## 您想访问您的内容？ {#so-youd-like-to-access-your-content}
 
-因此，您已经拥有了所有这些内容，结构整齐（在内容片段中），并且只是在等待为您的新应用程序提供内容。 问题是如何做到这一点？
+那么...您已获得所有这些结构整齐的内容（在内容片段中），并且正等待为您的新应用程序提供信息。问题是如何做到这一点？
 
 您需要通过一种方式来定位特定的内容，选择所需内容并将其返回到您的应用程序以供进一步处理。
 
