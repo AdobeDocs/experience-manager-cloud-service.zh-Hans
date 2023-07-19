@@ -3,9 +3,9 @@ title: 使沙盒环境休眠和解除沙盒环境休眠
 description: 了解沙盒程序的环境如何自动进入休眠模式，以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '685'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 ### 使用手动休眠 {#using-manual-hibernation}
 
-您可以从开发人员控制台手动休眠沙盒程序。 Cloud Manager 的任何用户都可以访问开发人员控制台获取沙盒程序。
+您可以从 Developer Console 手动休眠沙盒程序。 Cloud Manager 的任何用户都可以访问 Developer Console 获取沙盒程序。
 
 按照以下步骤手动休眠沙盒程序环境。
 
@@ -33,13 +33,13 @@ ht-degree: 96%
 
 1. 单击要休眠的程序，显示其详细信息。
 
-1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**开发人员控制台**。
+1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**Developer Console**。
 
-   * 参见 [访问开发人员控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) 有关开发人员控制台的其他详细信息。
+   * 有关 Developer Console 的更多详细信息，请参阅[访问 Developer Console。](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)
 
-   ![“开发人员控制台”菜单选项](assets/developer-console-menu-option.png)
+   ![Developer Console 菜单选项](assets/developer-console-menu-option.png)
 
-1. 在开发人员控制台中，单击&#x200B;**休眠**。
+1. 在 Developer Console 中，单击&#x200B;**休眠**。
 
    ![休眠按钮](assets/hibernate-1.png)
 
@@ -47,17 +47,17 @@ ht-degree: 96%
 
    ![确认休眠](assets/hibernate-2.png)
 
-当休眠成功时，您将在&#x200B;**开发人员控制台**&#x200B;屏幕中看到针对您环境的休眠进程完成通知。
+当休眠成功时，您将在&#x200B;**Developer Console**&#x200B;屏幕中看到针对您环境的休眠进程完成通知。
 
 ![休眠确认](assets/hibernate-4.png)
 
-在开发人员控制台中，您还可以单击 **Pod** 下拉菜单上的痕迹导航中的&#x200B;**环境**&#x200B;链接，查看要休眠的环境列表。
+在 Developer Console 中，您还可以单击 **Pod** 下拉菜单上的痕迹导航中的&#x200B;**环境**&#x200B;链接，查看要休眠的环境列表。
 
 ![要休眠的环境列表](assets/hibernate-1b.png)
 
 ## 解除休眠 {#de-hibernation-introduction}
 
-您可以从开发人员控制台手动休眠沙盒程序。
+您可以从 Developer Console 手动休眠沙盒程序。
 
 >[!IMPORTANT]
 >
@@ -67,9 +67,9 @@ ht-degree: 96%
 
 1. 单击要休眠的程序，显示其详细信息。
 
-1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**开发人员控制台**。
+1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**Developer Console**。
 
-   * 参见 [访问开发人员控制台](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) 有关开发人员控制台的其他详细信息。
+   * 有关 Developer Console 的更多详细信息，请参阅[访问 Developer Console。](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)
 
 1. 单击&#x200B;**解除休眠**。
 
@@ -88,17 +88,17 @@ ht-degree: 96%
    ![解除休眠完成](assets/de-hibernation-img4.png)
 
 
-在开发人员控制台中，您还可以单击 **Pod** 下拉菜单上的痕迹导航中的&#x200B;**环境**&#x200B;链接，查看要解除休眠的环境列表。
+在 Developer Console 中，您还可以单击 **Pod** 下拉菜单上的痕迹导航中的&#x200B;**环境**&#x200B;链接，查看要解除休眠的环境列表。
 
 ![休眠 Pod 列表](assets/de-hibernate-1b.png)
 
 ### 解除休眠的权限 {#permissions-de-hibernate}
 
-任何拥有将 AEM as a Cloud Service 访问权限的产品配置文件的用户都应该能够访问&#x200B;**开发人员控制台**，从而使他们能够解除环境休眠。
+任何拥有将 AEM as a Cloud Service 访问权限的产品配置文件的用户都应该能够访问&#x200B;**Developer Console**，从而使他们能够解除环境休眠。
 
 ## 正在访问休眠环境 {#accessing-hibernated-environment}
 
-当对休眠环境的作者、预览或发布服务发出任何浏览器请求时，用户将看见描述环境休眠状态的登陆页面，以及一个指向可在其中解除服务休眠的开发人员控制台的链接。
+当对休眠环境的作者、预览或发布服务发出任何浏览器请求时，用户将看见描述环境休眠状态的登陆页面，以及一个指向可在其中解除服务休眠的 Developer Console 的链接。
 
 ![休眠服务登陆页面](assets/de-hibernation-img5.png)
 
