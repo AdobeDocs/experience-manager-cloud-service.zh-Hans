@@ -3,9 +3,9 @@ title: 了解 CMS Headless 开发
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 Headless 技术以及使用它的原因。
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1621'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Headless 展示了交付数字体验方面的灵活度。但这种灵活度本�
 
 拥有许多不同的渠道可能意味着它们均有自己的呈现系统。尽管它们通过相同的 API 使用相同内容，但由于呈现方式不同，体验可能会有所不同。必须给予关注以确保客户体验的一致性。
 
-通过实施仔细的设计系统、共享模式库以及利用可重用设计组件和已建立的、开放的客户端框架，可以确保一致的体验，但必须对此进行规划。
+通过实施精心设计的系统、共享模式库、利用可重用的设计组件以及已建立的开放式客户端框架，可以确保提供一致体验，但必须规划这些工作。
 
 ## 未来是 Headless，未来即在眼前 {#future}
 
