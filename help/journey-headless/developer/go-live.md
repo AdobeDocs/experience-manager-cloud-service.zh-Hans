@@ -3,9 +3,9 @@ title: 如何使用 Headless 应用程序上线
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何通过在 Git 中获取本地代码并将其移动到 CI/CD 管道的 Cloud Manager Git 来实时部署 Headless 应用程序。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1066'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 97%
 
 * 避免创建输出超过 15kb JSON（以 gzip 格式压缩）的查询。长 JSON 文件是客户端应用程序要分析的资源密集型文件。
 * 避免超过五个嵌套级别的片段层级。其他级别会使内容作者难以考虑其更改产生的影响。
-* 使用多对象查询而不是在模型中使用依赖项层级对查询进行建模。这允许具有更大的长期灵活性，无需更改许多内容，即可重新构建JSON输出。
+* 使用多对象查询而不是在模型中使用依赖项层级对查询进行建模。这将带来更长期的灵活性以便重构 JSON 输出，而无需进行大量内容更改。
 
 ## 最大程度地提高 CDN 缓存命中率 {#maximize-cdn}
 
@@ -59,7 +59,7 @@ ht-degree: 97%
 * 确保 HTTP 客户端接受 gzip 的标头请求。
 * 最大程度地减少用于托管 JSON 的域和引用的构件的数量。
 * 利用 `Last-modified-since` 刷新资源。
-* 使用 JSON 文件中的 `_reference` 输出开始下载资产，而无需分析完整的 JSON 文件。
+* 使用 JSON 文件中的 `_reference` 输出开始下载资源，而无需分析完整的 JSON 文件。
 
 ## 部署到生产 {#deploy-to-production}
 
@@ -71,7 +71,7 @@ ht-degree: 97%
 
 ## 性能监控 {#performance-monitoring}
 
-要让用户在使用 AEM Headless 应用程序时获得最佳体验，请务必监控关键性能指标，详情如下：
+要让用户在使用 AEM Headless 应用程序时获得最佳体验，请务必监控关键性能指标，详细信息如下：
 
 * 验证应用程序的预览版和生产版
 * 验证当前服务可用性状态的 AEM 状态页面
@@ -124,7 +124,7 @@ ht-degree: 97%
 
 ### 探究单页应用程序 {#explore-spa}
 
-不过，AEM中的Headless商店不需要止步于此。 您可能还记得，在[历程的快速入门部分](getting-started.md#integration-levels)中，我们简要讨论了 AEM 如何支持 Headless 交付和传统全栈模型，并支持结合了两者优点的混合模型。
+但 AEM 中的 Headless 存储不需要止步于此。您可能还记得，在[历程的快速入门部分](getting-started.md#integration-levels)中，我们简要讨论了 AEM 如何支持 Headless 交付和传统全栈模型，并支持结合了两者优点的混合模型。
 
 如果您的项目需要这种灵活性，请继续进行历程的可选附加部分[如何使用 AEM 创建单页应用程序 (SPA)。](create-spa.md)
 
