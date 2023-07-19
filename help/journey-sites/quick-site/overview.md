@@ -3,9 +3,9 @@ title: AEM 快速站点创建历程
 description: 从这里开始引导式历程，通过易用的 AEM 快速站点创建工具来简化 AEM 站点的前端开发并在不具备 AEM 后端知识的情况下快速自定义您的站点。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者�
 
 您现在已准备好开始您的 Adobe 快速站点创建历程。
 
-* 如果您是AEM或Cloud Manager管理员、同时担任前端开发人员和管理员角色，或者您只想了解AEM中的端到端流程，请从历程的开头开始 [了解Cloud Manager](cloud-manager.md) 如下所述。
+* 如果您是 AEM 或 Cloud Manager 管理员、同时担任前端开发人员和管理员角色或只想了解 AEM 中的端到端流程，请在开始历程时，首先参阅[了解 Cloud Manager](cloud-manager.md)，如下所述。
 * 如果您只负责前端开发，并且会与 AEM 和 Cloud Manager 管理员进行交互，则可以直接跳转至[检索 Git 存储库访问信息](retrieve-access.md)以获取对 AEM Git 存储库的访问权限并开始进行自定义。
 * 如果您已了解 AEM Sites 和 Cloud Manager 的协作方式，并且希望直接从配置开始操作，则可以[直接跳至“从模板创建新站点”](create-site.md)。
 
