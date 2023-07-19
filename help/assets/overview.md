@@ -6,9 +6,9 @@ feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '740'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云�
 
 ## 解决方案好处 {#solution-benefits}
 
-以下是 Assets as a [!DNL Cloud Service] 的主要好处。要了解详情，请参阅 [Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md) 概述。
+以下是 Assets as a [!DNL Cloud Service] 的主要好处。要了解详细信息，请参阅 [Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md) 概述。
 
 * **用于资源处理的现代云服务**：新的资源微服务是一项基于云、可扩展、可靠、无忧的资源处理服务。
 * **高度可扩展**：跨所有类型的部署的有弹性的可扩展性。在需要时按需提供的几乎无限的资源。与传统系统相比，节省了过度设计的成本。
@@ -39,19 +39,19 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云�
 
 ## 可用的基于角色的体验 {#persona-based-experiences}
 
-Adobe 为您提供强大的数字资产管理（DAM）解决方案，让您能够充分利用数字资产。 Adobe Experience Manager Assets具有两个使用同一Cloud Services存储库的独立体验：
+Adobe 为您提供强大的数字资源管理（DAM）解决方案，让您能够充分利用数字资源。 Adobe Experience Manager Assets 具有两种使用相同 Cloud Service 存储库的独立体验：
 
-* **管理员视图**：现有的Assetsas a Cloud Service用户界面。 使用“管理员视图”可获得所有高级资产管理功能，包括集成、工作流、内容自动化、发布等。
+* **管理视图**：现有资源作为 Cloud Service 用户界面。使用管理视图实现所有高级资源管理功能，包括集成、工作流程、内容自动化、发布等。
 
-* **资产视图**：Adobe的轻量级资源管理体验，可用于存储、管理、发现和使用数字资源。 简化的用户界面，包含基本资产管理功能。 专为轻量级DAM用户设计，重点关注上传、元数据管理、搜索、下载和共享。
+* **资源视图**：Adobe 的轻量级资源管理体验，用于存储、管理、发现和使用数字资源。简化的用户界面包含基本的资源管理功能。专为轻量级 DAM 用户设计，专注于上传、元数据管理、搜索、下载和共享。
 
-有权访问“管理员”视图的用户还可以访问“资产”视图。 Assets视图提供了简化的用户界面，让您能够轻松管理、发现和分发数字资产。 来自不同职能部门（包括创意人员、营销和业务线团队）的广泛用户可就资产进行协作，并在需要时随时随地访问正确的、经过批准的资产。 许多临时DAM用户更喜欢资产视图，因为它只包含功能的子集。 该体验面向创意人员、只读资产使用者和较轻的DAM用户。
+有权访问管理视图的用户也可以访问资源视图。资源视图提供简化的用户界面，使您可以轻松管理、探索和分发数字资源。 来自不同职能部门（包括创意团队、营销团队和业务线团队）的广泛用户可以就资源进行协作，并在需要时随时随地访问正确的、经批准的资源。许多临时 DAM 用户更喜欢资源视图，因为它只包含一部分功能。该体验面向创意人员、只读资源消费者和轻量级 DAM 用户。
 
-DAM库管理员、开发人员和超级用户可以根据需要继续使用管理员视图或在用户界面之间切换。 您可以选择最适合您的角色的体验。
+DAM 库管理员、开发人员和超级用户可以继续使用管理视图，或根据需要在这些用户界面之间切换。您可以选择最适合您角色的体验。
 
 ![添加标记](assets/newui-overview.svg)
 
-有关如何通过“管理员”视图访问“资产”视图及其提供的一些简化的信息，请参阅 [“资产”视图简介](/help/assets/assets-view-introduction.md).
+有关如何访问资源视图及其通过“管理”视图提供的一些简化功能的信息，请参阅[资源视图简介。](/help/assets/assets-view-introduction.md)
 
 ## 新 Assets 功能 {#whats-new-assets}
 
