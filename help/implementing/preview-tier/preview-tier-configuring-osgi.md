@@ -3,9 +3,9 @@ title: 配置预览层的 OSGi 设置
 description: 了解如何配置 AEM 预览服务在内容上线前进行预览。
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ AEM 提供站点预览服务，让开发人员和内容作者可以在网站到�
 
 >[!NOTE]
 >
->有关预览环境的更多详细信息，请参阅 [管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>有关预览环境的更多详细信息，请参阅[管理环境。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
 
 ## 配置预览层的 OSGi 设置 {#configuring-osgi-settings-for-the-preview-tier}
 
