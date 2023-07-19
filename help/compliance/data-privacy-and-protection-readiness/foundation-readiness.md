@@ -1,11 +1,11 @@
 ---
 title: 数据保护和数据隐私条例 - Adobe Experience Manager as a Cloud Service Foundation 准备工作
-description: 了解Adobe Experience Manager as a Cloud Service Foundation对各种数据保护和数据隐私条例的支持。 本文内容包括《欧盟通用数据保护条例》(GDPR)、《加州消费者隐私法案》，以及如何在实施新的AEMas a Cloud Service项目时实现合规性。
+description: 了解 Adobe Experience Manager as a Cloud Service 对各种数据保护和数据隐私条例的基础支持。本文包括欧盟通用数据保护条例 (EU General Data Protection Regulation, GDPR)、加州消费者隐私法案 (California Consumer Privacy Act)，以及实施新的 AEM as a Cloud Service 项目时如何保持合规。
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 58%
 >
 >本文档的内容不构成法律建议，也不会代替法律建议。
 >
->请咨询贵公司的法律部门，以获取有关数据保护和数据隐私条例的建议。
+>请咨询您公司的法律部门，以获取关于数据保护和数据隐私条例的建议。
 
 >[!NOTE]
 >
->有关Adobe对隐私问题的响应以及这对于您这样的Adobe客户有何意义的更多信息，请参阅 [Adobe隐私中心](https://www.adobe.com/cn/privacy.html).
+>要详细了解 Adobe 对隐私问题的响应以及这对于您这样的 Adobe 客户的意义，请参阅 [Adobe 隐私中心。](https://www.adobe.com/cn/privacy.html)
 
 ## AEM Foundation 数据隐私和保护支持 {#aem-foundation-data-privacy-and-protection-support}
 
-在 AEM Foundation 级别，存储的个人数据保存在用户配置文件中。因此，本文中的信息主要介绍如何访问和删除用户配置文件，以便您可以分别处理访问请求和删除请求。
+在 AEM Foundation 级别，存储的个人数据保存在用户配置文件中。因此，本文中的信息主要介绍如何访问和删除用户配置文件，以便分别处理访问和删除请求。
 
 ## 访客用户配置文件 {#accessing-a-user-profile}
 
@@ -79,15 +79,15 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### 禁用用户 {#disable-user}
 
 1. 如上所述，打开用户管理控制台并搜索有问题的用户。
-2. 将鼠标悬停在用户上方并单击选择图标。配置文件变为灰色，表示已选中。
+2. 将鼠标悬停在用户上方并单击选择图标。配置文件显示为灰色，表明它已被选中。
 
-3. 在上部菜单中，单击 **禁用** 要禁用（关闭）用户，请执行以下操作：
+3. 在上方菜单中，点击&#x200B;**禁用**，以禁用（关闭）用户：
 
    ![禁用帐户](assets/dpp-foundation-03.png)
 
 4. 最后，确认操作。
 
-   用户界面指示用户帐户已被停用，方法是将用户档案卡变灰并添加锁定：
+   用户界面会通过灰显该配置文件卡并添加锁标记来指示用户帐户已被停用：
 
    ![帐户已禁用](assets/dpp-foundation-04.png)
 
@@ -95,11 +95,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->对于AEMas a Cloud Service，由于无法访问CRXDE，因此UI中没有可用的手动过程来删除用户配置文件。
+>对于 AEM as a Cloud Service，UI 中没有用于删除用户配置文件的手动过程，因为 CRXDE 不可访问。
 
 ### HTTP API {#http-api-1}
 
-以下过程使用 `curl` 命令行工具，说明如何使用 **[!UICONTROL cavery]** `userId` 并删除默认位置提供的用户配置文件。
+以下过程使用 `curl` 命令行工具说明如何使用 **[!UICONTROL cavery]** `userId` 禁用用户，并删除默认位置提供的用户配置文件。
 
 **发现用户主页：**
 
