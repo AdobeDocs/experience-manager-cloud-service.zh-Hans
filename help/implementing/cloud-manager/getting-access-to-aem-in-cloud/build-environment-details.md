@@ -3,9 +3,9 @@ title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '991'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -229,4 +229,4 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 >[!TIP]
 >
->有关前端构建环境的详细信息，请参阅 [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).
+>有关前端构建环境的详细信息，请参阅[使用前端管道开发站点。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
