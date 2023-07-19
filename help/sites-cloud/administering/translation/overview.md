@@ -5,22 +5,22 @@ feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # 翻译多语言站点的内容 {#translating-content-for-multilingual-sites}
 
-自动翻译页面内容和资产以创建和维护多语言网站。要自动化翻译工作流，您可以将翻译服务提供商与 AEM 集成并创建项目以将内容翻译成多种语言。AEM 支持人工翻译工作流和机器翻译工作流。
+自动翻译页面内容和资源以创建和维护多语言网站。要自动化翻译工作流，您可以将翻译服务提供商与 AEM 集成并创建项目以将内容翻译成多种语言。AEM 支持人工翻译工作流和机器翻译工作流。
 
 * **人工翻译：**&#x200B;内容将发送给您的翻译提供商并由专业翻译人员进行翻译。完成后，将返回翻译的内容并将其导入 AEM。当您的翻译提供商与 AEM 集成时，内容会在 AEM 和翻译提供商之间自动发送。
 * **机器翻译：**&#x200B;机器翻译服务将立即翻译您的内容。
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
 
 翻译内容涉及以下步骤：
 
