@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1400'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 93%
 
 >[!TIP]
 >
->如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。基本处理文档不是历程的一部分。 因此，完成后，请返回此页面。
+>如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。基本处理文档不是历程的一部分。因此，完成后返回此页面。
 
 ### 工具 {#tools}
 
@@ -59,9 +59,9 @@ ht-degree: 93%
 
 对于翻译专家来说，深入了解 AEM 管理内容的方式并不重要。但是，在您以后使用 AEM 的翻译工具时，熟悉基本概念和术语会很有帮助。最重要的是，您需要了解自己的内容及其结构，以便有效地翻译该内容。
 
-###  Sites 控制台 {#sites-console}
+### Sites 控制台 {#sites-console}
 
-站点控制台提供了内容结构的概述，通过创建新页面、移动和复制页面以及发布内容，可以轻松导航和管理内容。
+Sites 控制台提供了内容结构的概览，可让您通过创建新页面、移动并复制页面以及发布内容来轻松浏览和管理内容。
 
 要访问 Sites 控制台，请执行以下操作：
 
@@ -75,7 +75,7 @@ ht-degree: 93%
 
    ![内容层次结构](assets/sites-console-hierarchy.png)
 
-1. 通过点按或单击列中某个项目的复选框，它会选择该项目并在右侧的列中显示选定项目的详细信息，并在上面的工具栏中显示许多可用于选定项目的操作。
+1. 通过点按或单击列中某个项目的复选框，它会选择该项目并在右侧列中显示所选项目的详细信息，以及在上面的工具栏中显示许多可用于所选项目的操作。
 
    ![内容选择](assets/sites-console-selection.png)
 
@@ -93,7 +93,7 @@ ht-degree: 93%
 
 ### 页面编辑器 {#page-editor}
 
- Sites 控制台可让您浏览内容并提供其结构的概述。要查看单个页面的详细信息，您需要使用站点编辑器。
+Sites 控制台可让您浏览内容并提供其结构的概述。要查看单个页面的详细信息，您需要使用站点编辑器。
 
 要编辑页面，请执行以下操作：
 
