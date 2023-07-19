@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '175'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 89%
 >
 >本文档介绍了 Adob&#x200B;e Campaign 与 AEM as a Cloud Service 的集成，即云原生 AEM 解决方案。
 >
->有关将Adobe Campaign与AEM 6.5、内部部署或AMS托管的AEM解决方案集成的详细信息， [查看此文档](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html).
+>有关将 Adob&#x200B;e Campaign 与 AEM 6.5（内部部署或 AMS 托管的 AEM 解决方案）集成的详细信息，[请参阅该文件。](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)
 
 ## 与 Adobe Campaign Classic 集成 {#acc}
 
