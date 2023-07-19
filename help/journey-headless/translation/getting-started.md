@@ -3,9 +3,9 @@ title: AEM Headless 翻译快速入门
 description: 了解如何组织您的 Headless 内容以及 AEM 的翻译工具的工作原理。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1407'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 98%
 
 >[!TIP]
 >
->如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。基本处理文档不是历程的一部分。 因此，完成后，请返回此页面。
+>如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。基本处理文档不是历程的一部分。因此，完成后返回此页面。
 
 ### 工具 {#tools}
 
@@ -100,7 +100,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 
 如果内容模型是内容的模式，内容片段则为基于这些模式的实际内容。内容片段表示必须翻译的内容。
 
-在数字资产管理 (DAM) 中，内容片段在 AEM 中作为资产进行管理。这一点很重要，因为它们都位于路径 `/content/dam` 下。
+在数字资源管理 (DAM) 中，内容片段在 AEM 中作为资源进行管理。这一点很重要，因为它们都位于路径 `/content/dam` 下。
 
 ## 建议的内容结构 {#recommended-structure}
 
