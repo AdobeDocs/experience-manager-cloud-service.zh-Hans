@@ -3,9 +3,9 @@ title: 创建演示站点
 description: 基于预配置的模板库在 AEM 中创建演示站点。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 98%
 
    ![访问创作环境](assets/access-author.png)
 
-1. 从 AEM 主菜单中，点按或单击&#x200B;**站点**。
+1. 从 AEM 主菜单中，点按或单击&#x200B;**Sites**。
 
    ![访问站点](assets/access-sites.png)
 
@@ -85,7 +85,7 @@ ht-degree: 98%
 
    ![选择页面](assets/select-page.png)
 
-1. 您可以像编辑任何其他 AEM 内容页面一样编辑该页面，例如添加或编辑组件/资产以及测试 AEM 的功能。
+1. 您可以像编辑任何其他 AEM 内容页面一样编辑该页面，例如添加或编辑组件/资源以及测试 AEM 的功能。
 
    ![编辑页面](assets/edit-page.png)
 
@@ -110,5 +110,5 @@ ht-degree: 98%
 
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
 * [创建站点](/help/sites-cloud/administering/site-creation/create-site.md) – 了解如何使用 AEM 创建站点，并使用站点模板定义站点的样式和结构。
-* [AEM页面命名约定](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).  — 请参阅此页面以了解用于组织AEM页面的惯例。
+* [AEM 的页面命名惯例。](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices) – 请参阅此页面，了解用于组织 AEM 页面的惯例。
 * [AEM 基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 如果您不熟悉 AEM，请参阅本文档，了解导航和控制台组织等基本概念。
