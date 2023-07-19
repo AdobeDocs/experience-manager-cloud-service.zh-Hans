@@ -3,9 +3,9 @@ title: 管理受众
 description: 通过“受众”控制台，您可以创建、组织和管理 Adobe Target 帐户的受众，或管理 ContextHub 的区段
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -13,23 +13,23 @@ ht-degree: 62%
 
 通过“受众”控制台，您可以创建、组织和管理 Adobe Target 帐户的受众，或管理 ContextHub 的区段：
 
-* 添加受众 — Adobe Target受众或ContextHub区段。
+* 添加受众 - Adobe Target 受众或 ContextHub 区段。
 * 管理受众。
 
-ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的一类访客，可确定哪些人会看到目标活动。定位活动时，您可以直接在定位流程中选择受众，或在“受众”控制台中创建新受众。
+ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的一类访客，可确定哪些人会看到目标活动。定位活动时，您可以直接在“定位”过程中选择受众，也可以在“受众”控制台中创建新受众。
 
-在“受众”控制台中，受众按品牌进行组织。
+在“受众”控制台中，各受众按品牌进行组织。
 
-在“定位”模式下，可以使用受众来[创作目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md)，您也可以在该模式下创建受众（但您需要在“受众”控制台中创建 Adobe Target 受众）。您在定位模式下创建的受众将显示在受众控制台中。
+在“定位”模式下，可以使用受众来[创作目标内容](/help/sites-cloud/authoring/personalization/targeted-content.md)，您也可以在该模式下创建受众（但您需要在“受众”控制台中创建 Adobe Target 受众）。在“定位”模式下创建的受众会显示在“受众”控制台中。
 
-显示受众时，其标签描述定义的受众类型：
+受众显示有相应的标签，用于说明定义的受众类型：
 
-* ch - ContextHub区段
-* AT - Adobe Target受众
+* CH - ContextHub 区段
+* AT - Adobe Target 受众
 
-## 在受众控制台中创建ContextHub区段 {#creating-a-contexthub-segment-in-the-audiences-console}
+## 在“受众”控制台中创建 ContextHub 区段 {#creating-a-contexthub-segment-in-the-audiences-console}
 
-您可以在“受众”控制台中或在定位过程中创建ContextHub区段。
+您可以在“受众”控制台中或在定位过程中创建 ContextHub 区段。
 
 要在“受众”控制台中创建 ContextHub 区段，请执行以下操作：
 
@@ -44,15 +44,15 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
    >
    >您可以通过点按或单击&#x200B;**已修改**&#x200B;来对修改列表进行降序排序，以查看任何新创建的受众。
 
-有关使用ContextHub创建区段的更多详细信息，请参阅使用ContextHub配置分段文档。 <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
+有关使用 ContextHub 创建区段的更多详细信息，请参阅“使用 ContextHub 配置分段”文档。<!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
-## 使用Audience Console创建Adobe Target受众 {#creating-an-adobe-target-audience-using-the-audience-console}
+## 使用“受众”控制台创建 Adobe Target 受众 {#creating-an-adobe-target-audience-using-the-audience-console}
 
-您可以使用受众控制台直接在AEM中创建Adobe Target受众。
+您可以直接在 AEM 中使用“受众”控制台创建 Adobe Target 受众。
 
-受众由确定目标活动中包括哪些人的规则定义。 受众定义可以包含多个规则，每个规则可以包含多个参数。
+受众由确定目标活动中包含哪些人的规则进行定义。受众定义可以包含多个规则，每个规则可以包含多个参数。
 
-如果使用多个规则，这些规则将由布尔运算符AND组合，这意味着任何潜在受众成员都必须满足要包含在活动中的所有已定义条件。 例如，如果定义操作系统规则和浏览器规则，则只有同时使用定义的操作系统和定义的浏览器的访客才会包含在活动中。
+使用多个规则时，这些规则会通过布尔运算符 AND 进行组合，这意味着任何潜在的受众成员必须满足所有定义的条件才能包含在活动中。例如，如果您定义了操作系统规则和浏览器规则，则只有同时使用定义的操作系统和定义的浏览器的访客才会包含在活动中。
 
 >[!NOTE]
 >
@@ -68,16 +68,16 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
    ![创建目标受众](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. 在 **Adobe Target配置** 对话框中，选择目标配置，然后点按或单击 **确定**.
-1. 在规则编号1区域，点按或单击属性类型，然后在可用字段中输入任何属性信息。 完成后，选择属性右侧的复选标记以保存它。 参见 [属性及其选项](#attributes-and-their-options) 以获取有关所有属性的信息。
+1. 在 **Adobe Target 配置**&#x200B;对话框中，选择目标配置，然后单击或点按&#x200B;**确定**。
+1. 在“规则#1”区域中，单击或点按属性类型并在可用字段中输入任何属性信息。完成后，选中该属性右侧的复选标记以保存该属性。有关所有属性的信息，请参阅[属性及其选项](#attributes-and-their-options)。
 1. 单击 **添加规则** ，以添加其他规则。 根据需要输入任意数量的规则。 规则与布尔运算符AND相结合，这意味着受众必须满足每个规则的所有要求才能符合活动条件。
 1. 点按或单击&#x200B;**下一步**。
-1. 输入受众的名称，然后点按或单击 **保存**.
-1. 点按或单击&#x200B;**保存**。您的受众会列在“受众”列表中。
+1. 为受众输入一个名称，然后单击或点按&#x200B;**保存**。
+1. 点按或单击&#x200B;**保存**。受众随即会列在“受众”列表中。
 
 ### 属性及其选项 {#attributes-and-their-options}
 
-您可以为以下每个属性创建定位规则：
+您可以为以下每个属性创建定位规则。
 
 | **属性** | **描述** | **有关更多信息** |
 |---|---|---|
@@ -89,11 +89,11 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 | **访客配置文件** | 定位满足特定配置文件参数的访客。 | 请参阅 Adobe Target 上的[访客配置文件文档](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html)。 |
 | **流量源** | 根据将访客转至您的站点的搜索引擎或登陆页来定位访客。 | 请参阅 Adobe Target 上的[流量源文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)。 |
 
-## 在受众控制台中修改受众 {#modifying-an-audience-in-the-audiences-console}
+## 在“受众”控制台中修改受众 {#modifying-an-audience-in-the-audiences-console}
 
 >[!NOTE]
 >
->您只能编辑在编辑的相同AEM实例中创建的Adobe Target受众。 无法编辑在不同AEM环境中创建的Target受众。
+>您只能编辑在当前所编辑的相同 AEM 实例中创建的 Adobe Target 受众。无法编辑在不同的 AEM 环境中创建的目标受众。
 
 您可以从“受众”控制台中编辑任何 ContextHub 受众。您也可以编辑 Adobe Target 受众，但只能编辑在 AEM 中创建的受众：
 
