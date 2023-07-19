@@ -1,18 +1,18 @@
 ---
 title: 管理环境
-description: 了解您可以创建的环境类型以及如何为Cloud Manager项目创建环境。
+description: 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 48%
+source-wordcount: '2558'
+ht-degree: 88%
 
 ---
 
 
 # 管理环境 {#managing-environments}
 
-了解您可以创建的环境类型以及如何为Cloud Manager项目创建环境。
+了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境。
 
 ## 环境类型 {#environment-types}
 
@@ -22,7 +22,7 @@ ht-degree: 48%
 
 * **开发** – 开发环境可以创建用于开发和测试目的，并且只能与非生产管道相关联。
 
-* **快速开发**  — 快速开发环境(RDE)允许开发人员快速部署和审查更改，从而最大限度地减少测试经验证可在本地开发环境中工作的功能所需的时间。 参见 [快速开发环境文档](/help/implementing/developing/introduction/rapid-development-environments.md) 以了解有关如何使用RDE的详细信息。
+* **快速开发环境** - 快速开发环境 (RDE) 允许开发人员快速部署和审查更改，最大程度地减少测试已证明适用于本地开发环境的功能所需的时间。请参阅[快速开发环境文档](/help/implementing/developing/introduction/rapid-development-environments.md)，了解有关如何使用 RDE 的详细信息。
 
 单个环境的功能取决于环境的[程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中启用的解决方案。
 
@@ -41,7 +41,7 @@ ht-degree: 48%
 
 1. 单击要为其添加环境的程序。
 
-1. 从 **计划概述** 页面，单击 **添加环境** 在 **环境** 信息卡以添加环境。
+1. 从&#x200B;**程序概述**&#x200B;页面，单击&#x200B;**环境**&#x200B;信息卡上的&#x200B;**添加环境**&#x200B;以添加环境。
 
    ![环境信息卡](assets/no-environments.png)
 
@@ -57,10 +57,10 @@ ht-degree: 48%
       * 可用/使用的环境数显示在环境类型名称后面的括号中。
    * 提供环境&#x200B;**名称**。
    * 提供环境&#x200B;**描述**。
-   * 如果您要添加 **生产+暂存** 环境，您必须为生产和暂存环境提供环境名称和描述。
+   * 如果您要添加&#x200B;**生产和暂存**&#x200B;环境，则需要为生产环境和暂存环境提供环境名称和描述。
    * 从下拉列表中选择&#x200B;**主要区域**。
-      * 创建后无法更改主区域。
-      * 根据您可用的权利，您也许能够配置 [多个区域](#multiple-regions).
+      * 主区域创建后无法更改。
+      * 根据您的可用权限，您可以配置[多个区域。](#multiple-regions)
 
    ![添加环境对话框](assets/add-environment2.png)
 
@@ -70,7 +70,7 @@ ht-degree: 48%
 
 ## 多个发布区域 {#multiple-regions}
 
-用户具有 **业务负责人** 角色可以配置生产和暂存环境，以便除了主区域之外，还包括最多三个额外的发布区域。 增加发布区域可以提高可用性。有关更多详细信息，请参阅[其他发布区域文档](/help/operations/additional-publish-regions.md)。
+具有&#x200B;**业务所有者**&#x200B;角色的用户可以配置生产和暂存环境，以包括除了主要区域之外的最多三个额外的发布区域。增加发布区域可以提高可用性。有关更多详细信息，请参阅[其他发布区域文档](/help/operations/additional-publish-regions.md)。
 
 >[!TIP]
 >
@@ -78,30 +78,30 @@ ht-degree: 48%
 
 ### 将多个发布区域添加到新环境 {#add-regions}
 
-添加环境时，可以选择配置主区域以外的其他区域。
+添加新环境时，除主要区域之外，您可以选择配置附加区域。
 
 1. 选择&#x200B;**主要区域**。
    * 创建环境后无法更改主区域。
-1. 选择选项 **添加其他发布区域** 和新的 **其他发布区域** 选项下拉菜单出现。
-1. 在 **其他发布区域** 在下拉列表中，选择一个额外的区域。
+1. 选择选项&#x200B;**添加附加发布区域**，之后会出现新的&#x200B;**附加发布区域**&#x200B;选项下拉列表。
+1. 在&#x200B;**附加发布区域**&#x200B;下拉列表中，选择一个额外的区域。
 1. 所选区域将会添加到下拉列表下方，以指示其选择。
-   * 点按或单击 `X` ，以便取消选择该区域。
-1. 从中选择其他区域 **其他发布区域** 下拉菜单以添加其他区域。
+   * 点击或单击所选区域旁边的 `X` 以取消选择该区域。
+1. 从&#x200B;**附加发布区域**&#x200B;下拉列表中选择另一个区域以添加另一个地区。
 1. 当您准备好创建环境时，点击或单击&#x200B;**保存**。
 
 ![选择多个区域](assets/select-multiple-regions.png)
 
-所选区域同时适用于生产和暂存环境。
+所选区域适用于生产环境和暂存环境。
 
 如果您不指定任何附加区域，[您可以在创建环境后执行此操作。](#edit-regions)
 
-如果您要预配 [高级联网](/help/security/configuring-advanced-networking.md) 对于程序，建议先完成此配置，然后再使用Cloud Manager API向环境添加其他发布区域。 否则，其他发布区域的流量将通过主区域的代理。
+如果您希望为程序提供[高级网络](/help/security/configuring-advanced-networking.md)，建议在使用 Cloud Manager API 将附加发布区域添加到环境之前完成此配置。否则，附加发布区域的流量会通过主要区域的代理。
 
 ### 编辑多个发布区域 {#edit-regions}
 
 如果您最初没有指定任何附加区域，并且您拥有必要的权限，则可以在创建环境后执行此操作。
 
-您还可以删除附加发布区域。但是，您只能在一次交易中添加或删除区域。如果必须添加一个区域并移除一个区域，请先添加、保存更改，然后移除（反之亦然）。
+您还可以删除附加发布区域。但是，您只能在一次交易中添加或删除区域。如果您需要添加一个区域并删除一个区域，请先添加、保存您的更改，然后再删除（反之亦然）。
 
 1. 从程序的“程序概述”控制台中，单击生产环境的省略号按钮并从菜单中选择&#x200B;**编辑。**
 
@@ -115,19 +115,19 @@ ht-degree: 48%
 
 1. 点击或单击&#x200B;**保存**&#x200B;以保存更改。
 
-对生产环境所做的更改同时适用于生产和暂存环境。 只能在生产环境中编辑对多个发布区域的更改。
+对生产环境所做的更改会同时应用于生产和暂存环境。只能在生产环境中编辑对多个发布区域的更改。
 
-如果您要预配 [高级联网](/help/security/configuring-advanced-networking.md) 对于程序，建议先完成此配置，然后再向环境添加其他发布区域。 否则，其他发布区域的流量将通过主区域的代理。
+如果您希望为程序提供[高级网络](/help/security/configuring-advanced-networking.md)，建议在将附加发布区域添加到环境之前完成该设置。否则，附加发布区域的流量会通过主要区域的代理。
 
 ## 环境详细信息 {#viewing-environment}
 
-您可以使用 **环境** “概述”页面上的信息卡，可通过两种方式访问环境的详细信息。
+您可以使用概述页面上的&#x200B;**环境**&#x200B;信息卡，以两种方式访问环境详细信息。
 
-1. 从 **概述** 页面上，单击 **环境** 选项卡。
+1. 在&#x200B;**概述**&#x200B;页面中，单击屏幕顶部的&#x200B;**环境**&#x200B;选项卡。
 
    ![“环境”信息卡](assets/environments-tab2.png)
 
-   * 或者，单击 **全部显示** 上的按钮 **环境** 用于直接跳转到 **环境** 选项卡。
+   * 或者，单击&#x200B;**环境**&#x200B;信息卡上的&#x200B;**全部显示**&#x200B;按钮，直接跳转到&#x200B;**环境**&#x200B;选项卡。
 
      ![显示所有选项](assets/environment-showall.png)
 
@@ -135,7 +135,7 @@ ht-degree: 48%
 
    ![“环境”选项卡](assets/environment-view-2.png)
 
-1. 单击列表中的某个环境，以便您可以显示其详细信息。
+1. 单击列表中的环境以显示其详细信息。
 
    ![环境详细信息](assets/environ-preview1.png)
 
@@ -145,39 +145,71 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->**环境**&#x200B;信息卡仅列出三个新环境。 单击 **全部显示** 如前所述，查看程序的所有环境。
+>**环境**&#x200B;信息卡仅列出三个新环境。 如前所述，单击&#x200B;**全部显示**&#x200B;按钮，查看程序的所有环境。
 
 ### 访问预览服务 {#access-preview-service}
 
-Cloud Manager为每个AEMas a Cloud Service环境提供预览服务（作为额外的发布服务提供）。
+Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每个 AEM as a Cloud Service 环境。
 
 使用该服务，您可以在网站到达实际发布环境并公开使用之前预览网站的最终体验。
 
-允许列表创建后，预览服务应用了标记为的默认IP `Preview Default [<envId>]`，会阻止预览服务的所有流量。 允许列表从预览服务中取消应用默认IP，以便启用访问。
+创建后，预览服务会应用标记为 `Preview Default [<envId>]` 的默认 IP 允许列表，它会阻止预览服务的所有流量。 取消应用预览服务中的默认 IP 允许列表，以便启用访问。
 
 ![预览服务及其允许列表](assets/preview-ip-allow.png)
 
 具有必要权限的用户必须在共享预览服务 URL 之前完成以下步骤，才能访问它。
 
-1. 创建适当的IP允许列表，将其应用于预览服务，然后立即取消应用 `Preview Default [<envId>]` 允许列表。
+1. 创建适当的 IP 允许列表，将其应用于预览服务，然后立即取消应用 `Preview Default [<envId>]` 允许列表。
 
-   * 参见 [应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 了解更多详细信息。
+   * 请参阅[应用和取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)，了解更多详情。
 
-1. 使用更新 **IP 允许列表**&#x200B;工作流，移除默认 IP 并根据需要添加 IP。 参见 [管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) 了解更多信息。
+1. 使用更新 **IP 允许列表**&#x200B;工作流，移除默认 IP 并根据需要添加 IP。 请参阅[管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)了解详情。
 
-解锁预览服务的访问权限后，预览服务名称前面的锁定图标不再显示。
+在解锁对预览服务的访问后，预览服务名称前面的锁定图标不会再显示。
 
-激活后，您可以使用 AEM 中的管理发布 UI 将内容发布到预览服务。 参见 [预览内容](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 了解更多详细信息。
+激活后，您可以使用 AEM 中的管理发布 UI 将内容发布到预览服务。 有关更多详细信息，请参阅[预览内容。](/help/sites-cloud/authoring/fundamentals/previewing-content.md)
 
 >[!NOTE]
 >
 >您的环境必须是 AEM 版本 `2021.05.5368.20210529T101701Z` 或更新版本才能使用预览服务。确保更新管道已在您的环境中成功运行，以便您可以使用预览服务。
 
+### 其他发布区域的状态 {#additional-region-status}
+
+如果您已经激活了其他发布区域，则可以从 **环境** 信息卡。
+
+1. 在 **概述** 页面，找到 **环境** 信息卡。
+
+1. 在 **环境** 信息卡， **状态** 列将反映配置的附加发布区域是否存在任何问题。 单击 **信息** 图标，以了解地区的详细信息。
+
+   ![环境信息卡上的其他发布区域状态信息](assets/additional-publish-region-status-environments-card.png)
+
+或者，您也可以从以下位置访问相同的信息 **环境** 选项卡。
+
+1. 在 **概述** 页面上，选择 **环境** 选项卡。
+
+1. 在 **环境** 选项卡，在左侧导航面板中选择要查询的环境。
+
+1. 选择环境后：
+
+   * 此 **环境信息** 该表将显示为所选环境配置的区域。
+   * 此 **状态** 列 **环境区段** 该表将反映配置的其他发布区域是否存在任何问题。 将鼠标悬停在状态上可获取任何问题的详细信息。
+
+   ![“环境”选项卡上的其他发布区域状态信息](assets/additional-publish-region-status-environments-tab.png)
+
+如果报告任何与附加发布区域有关的问题：
+
+1. 请耐心等待。 Cloud Manager将不断尝试恢复该区域，并且随时可能可用。
+1. 如果问题在数小时后仍然存在，您可以删除其他发布区域，并重新添加它（同一区域或其他区域），以触发完整部署。
+
+在采取其他操作之前，需要等待系统自行恢复多长时间，取决于该区域的故障对系统造成的影响。
+
+请注意，无论如何， [流量将始终路由到另一个最近在线的区域。](/help/operations/additional-publish-regions.md) 如果您仍然遇到问题，请联系Adobe客户关怀团队。
+
 ## 更新环境 {#updating-dev-environment}
 
 作为云本地服务，Adobe 会自动管理生产程序中暂存和生产环境的更新。
 
-但是，对开发环境和沙盒程序中环境的更新是在程序中管理的。 当此类环境未运行最新的公开可用AEM版本时， **环境** 上的信息卡 **概述** 程序的屏幕显示 **有可用更新**.
+然而，对开发环境以及沙盒程序中环境的更新是在程序中管理的。 当此类环境未运行最新的公开可用 AEM 版本时，程序&#x200B;**概述**&#x200B;屏幕上的&#x200B;**环境**&#x200B;信息状态会显示&#x200B;**可用更新。**
 
 ![环境更新状态](assets/environ-update.png)
 
@@ -185,7 +217,7 @@ Cloud Manager为每个AEMas a Cloud Service环境提供预览服务（作为额�
 
 管道是[将代码部署到 AEM as a Cloud Service 环境的唯一方法。](deploy-code.md)因此，每个管道都与特定的 AEM 版本相关联。
 
-如果Cloud Manager检测到有比上次随管道部署的AEM更新的版本可用，则会显示 **有可用更新** 环境的状态。
+如果 Cloud Manager 检测到有比上次随管道部署的 AEM 更新的版本可用，则会显示环境的&#x200B;**可用更新**&#x200B;状态。
 
 因此，更新过程分为两步：
 
@@ -194,11 +226,11 @@ Cloud Manager为每个AEMas a Cloud Service环境提供预览服务（作为额�
 
 ### 更新您的环境 {#updating-your-environments}
 
-此 **更新** 选项可从以下网址获得： **环境** 卡用于开发环境和沙盒程序中的环境，方法是单击环境的省略号按钮。
+单击环境的省略号按钮，可从用于开发环境和沙盒程序环境的&#x200B;**环境**&#x200B;信息卡中获得&#x200B;**更新**&#x200B;选项。
 
 ![从“环境”信息卡更新选项](assets/environ-update2.png)
 
-也可以通过单击 **环境** 选项卡，然后选择环境的省略号按钮。
+单击程序的&#x200B;**环境**&#x200B;选项卡，然后选择环境的省略号按钮，也可以使用此选项。
 
 ![从“环境”选项卡更新选项](assets/environ-update3.png)
 
@@ -218,11 +250,11 @@ Cloud Manager为每个AEMas a Cloud Service环境提供预览服务（作为额�
 
 具有必要权限的用户能够删除开发环境。
 
-从 **概述** 上的程序屏幕 **环境** 卡片上，单击要删除的开发环境的省略号按钮。
+在&#x200B;**环境**&#x200B;信息卡的程序&#x200B;**概述**&#x200B;屏幕上，单击要删除的开发环境的省略号按钮。
 
 ![删除选项](assets/environ-delete.png)
 
-在程序&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡上，也可以使用该删除选项。单击环境的省略号按钮，然后选择 **删除**.
+在程序&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡上，也可以使用该删除选项。单击环境的省略号按钮，然后选择&#x200B;**删除。**
 
 ![“环境”选项卡上的删除选项](assets/environ-delete2.png)
 
@@ -239,27 +271,27 @@ Cloud Manager为每个AEMas a Cloud Service环境提供预览服务（作为额�
 
 >[!TIP]
 >
->参见 [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) 如果您想了解AEMas a Cloud Service团队和产品配置文件如何能够授予和限制对您的许可Adobe解决方案的访问权限。
+>如果您想了解 AEM as a Cloud Service 团队和产品配置文件如何授予和限制对您获得许可的 Adobe 解决方案的访问权限，请参阅 [AEM as a Cloud Service 团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## 访问 Developer Console {#accessing-developer-console}
 
-从&#x200B;**环境**&#x200B;信息卡上环境的省略号菜单中选择&#x200B;**Developer Console**。 新选项卡将在您的浏览器中打开，登录页面指向 **开发人员控制台**.
+从&#x200B;**环境**&#x200B;信息卡上环境的省略号菜单中选择&#x200B;**Developer Console**。 浏览器中会打开一个新的选项卡，其中包含&#x200B;**Developer Console**&#x200B;的登录页面。
 
-![登录到开发人员控制台](assets/environ-devconsole.png)
+![登录 Developer Console](assets/environ-devconsole.png)
 
-仅限具有下列属性的用户： **开发人员** 角色具有对的访问权限 **开发人员控制台**. 但是，对于沙盒程序，任何有权访问沙盒程序的用户都可以访问 **开发人员控制台**.
+只有具有&#x200B;**开发人员**&#x200B;角色的用户才能访问&#x200B;**Developer Console。** 但是，对于沙盒程序来说，任何有权访问沙盒程序的用户都可以访问&#x200B;**Developer Console。**
 
-参见 [使沙盒环境休眠和解除沙盒环境休眠](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation) 了解更多详细信息。
+有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation)
 
 单击单个环境的省略号菜单时，也可以从&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡中找到此选项。
 
 ## 本地登录 {#login-locally}
 
-选择 **本地登录** 从环境的省略号菜单中 **环境** 信息卡，以便您能够在本地登录到Adobe Experience Manager。
+从&#x200B;**环境**&#x200B;信息卡中的省略号菜单中选择&#x200B;**本地登录**，可本地登录到 Adobe Experience Manager。
 
 ![本地登录](assets/environ-login-locally.png)
 
-此外，您还可以从以下位置本地登录： **环境** 的选项卡 **概述** 页面。
+此外，您可以从&#x200B;**概述**&#x200B;页面的&#x200B;**环境**&#x200B;选项卡中本地登录。
 
 ![从“环境”选项卡本地登录](assets/environ-login-locally-2.png)
 
@@ -267,7 +299,7 @@ Cloud Manager为每个AEMas a Cloud Service环境提供预览服务（作为额�
 
 在 Cloud Manager for Sites 程序中，发布和预览网站服务程序都支持自定义域名。 每个 Cloud Manager 环境最多可以为环境托管 250 个自定义域。
 
-要配置自定义域名，请导航到 **环境** 选项卡，然后单击环境以查看环境详细信息。
+要配置自定义域名，请导航到&#x200B;**环境**&#x200B;选项卡，然后单击环境查看环境详细信息。
 
 ![环境详细信息](assets/domain-names.png)
 
@@ -284,29 +316,29 @@ Cloud Manager为每个AEMas a Cloud Service环境提供预览服务（作为额�
 
 ## 管理 IP 允许列表 {#manage-ip-allow-lists}
 
-Cloud Manager中支持IP允许列表，用于Sites程序的创作、发布和预览服务。
+Cloud Manager 支持针对 Sites 程序的作者、发布和预览服务的 IP 允许列表。
 
-要管理IP允许列表，请导航到 **环境** 的选项卡 **概述** 页面。 单击单个环境，以便您可以管理其详细信息。
+要管理 IP 允许列表，请导航到程序的&#x200B;**概述**&#x200B;页面的&#x200B;**环境**&#x200B;选项卡。 单击单个环境管理其详细信息。
 
 ### 应用 IP 允许列表 {#apply-ip-allow-list}
 
-应用IP会将允许列表允许列表定义中包含的所有IP范围与环境中的创作或发布服务相关联。 中的用户 **业务负责人** 或 **部署管理员** 允许列表必须登录角色才能应用IP。
+应用 IP 允许列表将允许列表定义中包含的所有 IP 范围与环境中的作者或发布服务相关联。 必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户才能应用 IP 允许列表。
 
-IP允许列表必须存在于Cloud Manager中才能将其应用于环境。 要了解有关Cloud Manager中IP允许列表的更多信息，请参阅 [Cloud Manager中的IP允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+IP 允许列表必须存在于 Cloud Manager 中，才能将其应用于环境。 要了解有关 Cloud Manager 中 IP 允许列表的更多信息，请参阅 [Cloud Manager 中的 IP 允许列表简介。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
-**允许列表要应用IP，请执行以下操作：**
+**若要应用 IP 允许列表：**
 
 1. 从程序&#x200B;**概述**&#x200B;屏幕的&#x200B;**环境**&#x200B;选项卡中导航到特定环境，然后导航到 **IP 允许列表**&#x200B;表格。
-1. 允许列表 允许列表使用IP表顶部的输入字段，以便选择IP以及要应用它的作者或发布服务。
+1. 使用 IP 允许列表表顶部的输入字段选择 IP 允许列表以及要应用它的作者或发布服务。
 1. 单击&#x200B;**应用**，并确认您的提交。
 
-### 取消应用IP允许列表 {#unapply-ip-allow-list}
+### 取消应用 IP 允许列表 {#unapply-ip-allow-list}
 
-允许列表 允许列表取消应用IP将取消环境中的IP范围（包含在定义中）与创作或发布者服务的关联。 中的用户 **业务负责人** 或 **部署管理员** 允许列表角色必须登录才能取消应用IP。
+取消应用 IP 允许列表会将允许列表定义中包含的所有 IP 范围与环境中的作者或发布者服务解除关联。 必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户才能取消应用 IP 允许列表。
 
-**允许列表要取消应用IP，请执行以下操作：**
+**若要取消应用 IP 允许列表：**
 
 1. 从程序&#x200B;**概述**&#x200B;屏幕的&#x200B;**环境**&#x200B;选项卡中导航到特定环境，然后导航到 **IP 允许列表**&#x200B;表格。
-1. 确定列出要取消应用的IP允许列表规则的行。
+1. 确定列出要取消应用的 IP 允许列表规则的行。
 1. 从行末选择省略号按钮。
 1. 单击&#x200B;**取消应用**，并确认您的提交。
