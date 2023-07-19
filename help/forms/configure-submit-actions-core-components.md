@@ -3,7 +3,7 @@ title: 如何为自适应表单配置提交操作
 description: 自适应表单提供多个提交操作。 提交操作定义提交后如何处理自适应表单。 您可以使用内置的提交操作或创建自己的提交操作。
 hide: true
 hidefromtoc: true
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
 workflow-type: tm+mt
 source-wordcount: '3366'
 ht-degree: 2%
@@ -12,17 +12,17 @@ ht-degree: 2%
 
 # 自适应表单提交操作 {#configuring-the-submit-action}
 
+<span class="preview"> Adobe建议使用核心组件来 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) 或 [创建独立的自适应Forms](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | 本文 |
+| 应用到 | ✅自适应表单核心组件，❎ [自适应表单基础组件](/help/forms/configuring-submit-actions.md) |
 
-**应用于**：✔️自适应表单核心组件❌ [自适应表单基础组件](/help/forms/configuring-submit-actions.md). Adobe建议使用核心组件来 [将自适应Forms添加到AEM Sites页面](create-or-add-an-adaptive-form-to-aem-sites-page.md) 或 [创建独立的自适应Forms](creating-adaptive-form-core-components.md).
 
-提交操作允许您选择通过自适应表单捕获的数据的目标。 当用户单击 **[!UICONTROL 提交]** 按钮。
-
-Formsas a Cloud Service针对基于核心组件构建的自适应Forms，提供了一系列预建提交操作。 这些现成的提交操作使您能够：
+提交操作允许您选择通过自适应表单捕获的数据的目标。 当用户单击 **[!UICONTROL 提交]** 按钮。 Formsas a Cloud Service针对基于核心组件的自适应Forms，提供了一系列预建提交操作。 这些现成的提交操作使您能够：
 
 * 通过电子邮件轻松发送表单数据。
 * 在传输数据时启动Microsoft Power Automate流或AEM Workflow。
