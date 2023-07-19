@@ -3,9 +3,9 @@ title: Cloud Manager 环境变量
 description: 标准环境变量可以通过 Cloud Manager 进行配置和管理，并提供给运行时环境，以便在 OSGi 配置中使用。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1018'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 94%
 1. Cloud Manager 列出了可用的各种项目。选择要管理的项目。
 1. 为所选程序选择&#x200B;**环境**&#x200B;选项卡，然后在左侧导航面板中选择要为其创建环境变量的环境。
 1. 在环境的详细信息中，选择&#x200B;**配置**&#x200B;选项卡，然后选择&#x200B;**添加**，打开&#x200B;**环境配置**&#x200B;对话框。
-   * 如果您是首次添加环境变量，您将看到 **添加配置** 按钮来打开页面。 您可以使用此按钮或&#x200B;**添加**&#x200B;功能，打开&#x200B;**环境配置**&#x200B;对话框。
+   * 如果您是第一次添加环境变量，您会在页面中央看到&#x200B;**添加配置**&#x200B;按钮。 您可以使用此按钮或&#x200B;**添加**&#x200B;功能，打开&#x200B;**环境配置**&#x200B;对话框。
 
    ![配置选项卡](assets/configuration-tab.png)
 
@@ -88,9 +88,9 @@ ht-degree: 94%
 
    ![编辑变量](assets/edit-variable.png)
 
-1. 完成所有必需的配置更改后，选择 **保存**.
+1. 完成所有必需的配置更改后，请选择&#x200B;**保存。**
 
-[当添加变量时](#add-variables)，状态为&#x200B;**更新**&#x200B;的指标显示在表的顶部和新更新的变量旁边，表示正在使用配置更新环境。 完成后，更新的环境变量会显示在表中。
+[当添加变量时](#add-variables)，状态为&#x200B;**更新**&#x200B;的指标会显示在表的顶部和新更新的变量旁边，表示正在使用该配置更新环境。 完成后，更新的环境变量会显示在表中。
 
 >[!TIP]
 >
@@ -128,8 +128,8 @@ ht-degree: 94%
 
 ### OSGi 配置 {#osgi}
 
-常规环境变量和密钥均可用于 [OSGi配置](/help/implementing/deploying/configuring-osgi.md).
+可在 [OSGi 配置](/help/implementing/deploying/configuring-osgi.md)中使用常规环境变量和密钥。
 
 ### 管道变量 {#pipeline}
 
-除了环境变量，还有在构建阶段公开的管道变量。[在此处了解有关管道变量的更多信息](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+除了环境变量，还有在构建阶段公开的管道变量。[可在此处详细了解管道变量。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
