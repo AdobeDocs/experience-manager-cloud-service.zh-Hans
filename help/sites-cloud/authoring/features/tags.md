@@ -1,20 +1,20 @@
 ---
 title: 使用标记
-description: 标记是一种对网站中的内容进行分类的快速轻松的方法
+description: 标记是用于对网站中的内容进行分类的简单快捷方法
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '563'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # 使用标记 {#using-tags}
 
-标记是一种对网站中的内容进行分类的快速轻松的方法。 标记可以被视为关键字或标签，它们可以附加到页面、资产或其他内容以启用搜索来查找该内容和相关内容。
+标记是用于对网站中的内容进行分类的简单快捷方法。可以将标记视为可附加到页面、资源或其他内容，以便在进行搜索时能够找到该内容及相关内容的关键字或标签。
 
-* 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅管理标记。 <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
-* 参见 [为开发人员添加标记](/help/implementing/developing/introduction/tagging-framework.md) 有关标记框架以及在自定义应用程序中包括和扩展标记的信息。
+* 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅“管理标记”。<!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* 有关标记框架以及在自定义应用程序中包括和扩展标记的信息，请参阅[针对开发人员的标记](/help/implementing/developing/introduction/tagging-framework.md)。
 
 ## 使用标记的十大理由 {#ten-reasons-to-use-tagging}
 
@@ -27,9 +27,9 @@ ht-degree: 74%
 1. **启用 SEO** - 作为页面属性应用的标记将自动显示在页面的元标记中，以对搜索引擎可见。
 1. **化繁为简** - 可以简单地通过一个词语和触摸按钮来创建标记。之后，可以添加标题、描述和无限数量的标签以向标记提供更多语义。
 1. **核心一致性** - 标记系统是 AEM 的核心组件，可供所有 AEM 功能用来对内容分类。此外，开发人员可以使用标记 API 来创建支持标记的应用程序，以便访问相同的分类。
-1. **结构化与灵活性相结合** - 鉴于对页面和路径的嵌套，AEM 非常适合处理结构化信息。由于内置的全文搜索，在处理非结构化信息时，此功能同样强大。 标记结合了结构和灵活性的优势。
+1. **结构化与灵活性相结合** - 鉴于对页面和路径的嵌套，AEM 非常适合处理结构化信息。凭借内置的全文搜索功能，它在处理非结构化信息时也非常强大。标记兼具结构化和灵活性的强大优势。
 
-在设计站点的内容结构和资产的元数据架构时，请考虑标记提供的轻量级且可访问的方法。
+在设计站点的内容结构和资源的元数据架构时，请考虑使用标记提供的轻量级可行方法。
 
 ## 应用标记 {#applying-tags}
 
