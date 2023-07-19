@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.4.0 版的发行说明。'
 source-git-commit: 104065f208adf9bcc8e6a090b224517a7904f5f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -37,14 +37,14 @@ ht-degree: 87%
 
 ### [!DNL Experience Manager Sites] 中的新增功能 {#sites-features}
 
-* 以JSON格式将内容片段从AEMas a Cloud Service导出到Adobe Target，并在Target中创建相应的JSON选件。
+* 将内容片段从 AEM as a Cloud Service 以 JSON 格式导出到 Adob&#x200B;&#x200B;e Target，并在 Target 中创建相应的 JSON 产品。
 * 现在，利用对 GraphQL 分页和排序的支持以及内部缓存增强功能，可以在使用复杂的 GraphQL 查询和筛选条件从 AEM 获取大型内容集时帮助提高已解耦客户端应用程序的性能。
 
 ### [!DNL Experience Manager Sites] 预发行版本中的新增功能 {#prerelease-sites}
 
 * 内容片段及其引用现在可以使用[内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hans)发布到 [AEM 预览服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans#access-preview-service)，允许用户在上线前在解耦的预览应用程序上预览最终体验。
-* 现在可以使用AEM GraphQL在Headless场景中为Web投放动态优化图像。 [查询变量](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) 可以在GraphQL查询中定义，以允许分离的客户端应用程序从AEM请求相应地优化的图像。
-* 上的标记 [内容片段变量](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) 现在可以使用AEM GraphQL内容投放API输出到JSON。
+* 现在可以使用 AEM GraphQL 在 Headless 场景中动态优化图像以实现 Web 交付。[查询变量](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables)可以在 GraphQL 查询中定义，以允许解耦的客户端应用程序从 AEM 请求相应优化的图像。
+* [内容片段变体](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en)上的标记现在可以使用 AEM GraphQL 内容交付 API 将其输出为 JSON。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -89,11 +89,11 @@ ht-degree: 87%
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
-* [Adobe Acrobat Sign Solutions政府版](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms现在与面向政府的Adobe Acrobat Sign Solutions集成。 这种集成为政府型账户（政府部门和机构）的自适应表单提交提供了高级的电子签名合规性和安全性。
+* [Adobe Acrobat Sign 解决方案政府版](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms 现在可与 Adobe Acrobat Sign 解决方案政府版集成。这种集成为政府型账户（政府部门和机构）的自适应表单提交提供了高级的电子签名合规性和安全性。
 
   与 Adobe Acrobat Sign 政府版的集成使 Adobe 的合作伙伴和政府客户能够在一些最关键和敏感的业务领域使用自适应表单中的电子签名功能。这层额外的安全保障机制确保所有电子签名完全符合 FedRAMP Moderate 合规性，使 Adobe 的政府客户能够安心使用。
 
-* 使用规则编辑器中的自定义错误处理程序增强的错误处理：您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误，并向最终用户提供量身定制的响应。 或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端为特定的错误代码调用自定义工作流，或者通知客户服务已停止。
+* 增强了使用规则编辑器中的自定义错误处理程序处理错误的功能：您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误，并为最终用户提供量身定制的响应，或对服务返回的错误采取特定操作，并为最终用户提供量身定制的响应。或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端为特定的错误代码调用自定义工作流，或者通知客户服务已停止。
 
   该功能有助于通过引入基于标准的错误响应来提高整体错误处理能力，这些错误响应与 OOTB 错误处理程序向后兼容，并具有更大的灵活性和控制能力。
 
