@@ -4,13 +4,13 @@ description: 如何访问  [!DNL Assets View]，其登录体验，支持的用�
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
 source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# 开始使用资产视图 {#assets-view-get-started}
+# 开始使用资源视图 {#assets-view-get-started}
 
 <!-- TBD: Make links for these steps. -->
 
@@ -25,9 +25,9 @@ ht-degree: 86%
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
-## 访问“资源”视图 {#access-assets-view}
+## 访问资源视图 {#access-assets-view}
 
-参见 [如何访问资源视图](/help/assets/assets-view-introduction.md#how-to-access-assets-view) 有关如何访问“资源”视图的详细说明。
+请参阅[如何访问资源视图](/help/assets/assets-view-introduction.md#how-to-access-assets-view)，了解有关如何访问资源视图的详细说明。
 
 ## 配置 [!DNL Assets View] {#configuration}
 
@@ -55,9 +55,9 @@ ht-degree: 86%
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何开始使用资产视图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
+* [观看视频，了解如何开始使用资源视图](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html)
 
-* 使用提供产品反馈 [!UICONTROL 反馈] “资产视图”用户界面上可用的选项
+* 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
