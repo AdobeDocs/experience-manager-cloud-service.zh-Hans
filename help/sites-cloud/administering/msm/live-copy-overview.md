@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 98%
 
 ### 对 Blueprint 页面的引用 {#references-to-a-blueprint-page}
 
-可以从&#x200B;**站点**&#x200B;控制台的&#x200B;**引用**&#x200B;侧面板打开 **Live Copy 概述**：
+可以从&#x200B;**Sites**&#x200B;控制台的&#x200B;**引用**&#x200B;侧面板打开 **Live Copy 概述**：
 
-1. 在 **站点** 控制台， [导航到您的Blueprint页面并将其选定](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. 在&#x200B;**Sites**&#x200B;控制台中，[导航到您的 Blueprint 页面并将其选定。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;边栏并选择 **Live Copy**。
 
    ![引用边栏中的 Live Copy](../assets/live-copy-references.png)
