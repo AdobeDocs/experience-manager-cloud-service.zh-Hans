@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2919'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ AEM 中的内容片段模型定义了[内容片段](/help/sites-cloud/administer
         >
         >当为数据类型手动更新某个&#x200B;**属性名称**&#x200B;时，请注意，名称必须仅包含 A – Z、a – z、0 – 9 和下划线“_”作为特殊字符。
         >
-        >如果在早期版本的AEM中创建的模型包含非法字符，请删除或更新这些字符。
+        >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
      例如：
 
@@ -145,7 +145,7 @@ AEM 中的内容片段模型定义了[内容片段](/help/sites-cloud/administer
 
   >[!CAUTION]
   >
-  >如果在早期版本的AEM中创建的模型包含非法字符，请删除或更新这些字符。
+  >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
 * **呈现为**
 用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者是否能看到字段的单个实例，还是允许作者创建多个实例。
