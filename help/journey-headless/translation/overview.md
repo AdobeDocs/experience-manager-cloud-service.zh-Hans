@@ -3,9 +3,9 @@ title: AEM Headless 翻译历程
 description: 从这里开始，通过使用 AEM 强大的翻译工具来翻译您的 Headless 内容，实施引导式历程。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1029'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 | 管理员 | 管理 AEM 的基本设置和配置 | 翻译专家与管理员共同进行翻译所需的配置更改，例如安装翻译连接器。 |
 | 内容架构师 | 分析必须以 Headless 方式交付的数据的要求并定义此数据的结构 | 翻译专家与内容架构师共同定义内容的编排以便轻松翻译。 |
 
-虽然此历程中的信息对所有角色都很有用，但一些信息可能对特定角色来说是多余的。请密切关注 [即将推出的涵盖其他角色的历程](/help/journey-documentation/documentation-journeys.md#journeys).
+虽然此历程中的信息对所有角色都很有用，但一些信息可能对特定角色来说是多余的。请继续关注[即将推出的涵盖其他角色的历程。](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## Headless 翻译历程 {#the-journey}
 
