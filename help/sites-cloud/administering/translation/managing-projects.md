@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4078'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅 [站点翻译历程、](/help/journey-sites/translation/overview.md) 该指南将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
 
 在将资源添加到翻译项目时，将为其创建翻译作业。作业提供用于管理对资源执行的人工翻译和机器翻译工作流的命令和状态信息。
 
@@ -196,7 +196,7 @@ AEM 会更新已配置的 TMS 的翻译记忆中现有字符串的翻译。
 
 可以在 Sites 控制台的列表视图中选择一个属性，该属性指示页面是已翻译、正在翻译还是尚未翻译。
 
-1. 在站点控制台中，切换到 [列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. 在 Sites 控制台中，切换到[列表视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
 1. 点按或单击视图下拉列表中的&#x200B;**视图设置**。
 1. 在对话框中，选中&#x200B;**已翻译**&#x200B;属性，并点按或单击&#x200B;**更新**。
 
@@ -210,7 +210,7 @@ AEM 会更新已配置的 TMS 的翻译记忆中现有字符串的翻译。
 
 ### 了解项目控制台
 
-AEM中的翻译项目使用标准 [AEM项目控制台](/help/sites-cloud/authoring/projects/overview.md). 如果您不熟悉AEM项目，请查看该文档。
+AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/authoring/projects/overview.md)如果您不熟悉 AEM 项目，请查看该文档。
 
 与任何其他项目一样，翻译项目由显示项目任务概述的拼贴组成。
 
@@ -277,7 +277,7 @@ AEM中的翻译项目使用标准 [AEM项目控制台](/help/sites-cloud/authori
 
 ### 将标记添加到翻译作业 {#adding-tags-to-a-translation-job}
 
-您可以将标记添加到翻译项目，类似于 [如何将资源和页面添加到项目](#adding-pages-assets-to-a-translation-job). 只需选择&#x200B;**添加**&#x200B;菜单下的&#x200B;**标记**，然后执行相同的步骤。
+您可以将标记添加到翻译项目，类似于[将资源和页面添加到项目。](#adding-pages-assets-to-a-translation-job)只需选择&#x200B;**添加**&#x200B;菜单下的&#x200B;**标记**，然后执行相同的步骤。
 
 ### 查看翻译项目详细信息 {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ AEM中的翻译项目使用标准 [AEM项目控制台](/help/sites-cloud/authori
 
 ### 监控翻译作业状态 {#monitoring-the-status-of-a-translation-job}
 
-翻译项目的翻译作业拼贴提供翻译作业的状态，以及作业中的页面和资产数量。
+翻译项目的翻译作业拼贴提供了翻译作业的状态，以及作业中页面和资源的数量。
 
 ![翻译作业](../assets/translation-job.png)
 
@@ -344,7 +344,7 @@ AEM中的翻译项目使用标准 [AEM项目控制台](/help/sites-cloud/authori
 
 设定翻译作业的范围，从翻译服务提供商处获得翻译成本的估计值。在设定作业范围时，源文件将提交给翻译供应商，后者会将文本与其存储的翻译池（翻译记忆库）进行比较。通常，范围是需要翻译的字数。
 
-要获取有关范围设定结果的更多信息，请与您的翻译供应商联系。
+要获取有关范围设定结果的更多信息，请联系您的翻译供应商。
 
 >[!NOTE]
 >
@@ -437,7 +437,7 @@ AEM中的翻译项目使用标准 [AEM项目控制台](/help/sites-cloud/authori
 要将语言副本与语言母版进行比较，请执行以下操作：
 
 1. 在 Sites 控制台中，导航到要比较的语言副本。
-1. 打开 [引用边栏](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
+1. 打开[引用边栏。](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
 1. 在&#x200B;**副本**&#x200B;标题下，选择&#x200B;**语言副本**。
 1. 选择特定的语言副本，然后您可以单击&#x200B;**与母版比较**&#x200B;或&#x200B;**与上一个比较**（如果适用）。
 
