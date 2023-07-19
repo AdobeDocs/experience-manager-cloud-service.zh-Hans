@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3084'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ AEM 的 Headless 功能基于几项关键功能。历程的后面部分将详细
 * GraphQL API 允许您创建请求来访问和交付内容片段。
 * Assets REST API 允许您创建和修改内容片段（及其他资源）。
 
-您将在 AEM Headless 历程的后面部分中了解这些 API 及其使用者式。或者，请参阅 [其他资源](#additional-resources) 部分，以获取其他文档。
+您将在 AEM Headless 历程的后面部分中了解这些 API 及其使用者式。或参阅下面的[其他资源](#additional-resources)部分以获取其他文档。
 
 ## Headless 集成级别 {#integration-levels}
 
@@ -145,7 +145,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 请务必明确定义项目的范围。范围告知验收标准，并允许您创建完成的定义。
 
-您必须提出的第一个问题是“我尝试使用 AEM Headless 实现什么目标？”答案通常是，您现在或将来会有一个使用自己的开发工具而不是使用AEM构建的体验应用程序。 此体验应用程序可以是移动应用程序、网站或任何其他面向最终用户客户的体验应用程序。使用 AEM Headless 的目标是为您的体验应用程序提供在 AEM 中创建、存储和管理的内容，并使用最先进的 API 调用 AEM Headless 以直接从体验应用程序中获取内容甚至完整的 CRUD 内容。如果这不是您想执行的操作，您可能需要[返回 AEM 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)，并找到更适合您要完成的操作的部分。
+您必须提出的第一个问题是“我尝试使用 AEM Headless 实现什么目标？”一般来说，答案应该是您拥有或将来会拥有您使用自己的开发工具而非 AEM 构建的体验应用程序。此体验应用程序可以是移动应用程序、网站或任何其他面向最终用户客户的体验应用程序。使用 AEM Headless 的目标是为您的体验应用程序提供在 AEM 中创建、存储和管理的内容，并使用最先进的 API 调用 AEM Headless 以直接从体验应用程序中获取内容甚至完整的 CRUD 内容。如果这不是您想执行的操作，您可能需要[返回 AEM 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)，并找到更适合您要完成的操作的部分。
 
 ### 角色和职责 {#roles-responsibilities}
 
@@ -158,7 +158,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 #### 管理员 {#administrator}
 
-管理员负责系统的基本设置和配置。例如，管理员在 Adobe 用户管理系统（称为 Identity Management System (IMS)）中设置您的组织。Adobe 在 IMS 中创建您的组织后，管理员是组织中第一个收到来自 Adobe 的电子邮件邀请的用户。管理员可以登录 IMS 并添加其他角色的用户。
+管理员负责系统的基本设置和配置。例如，管理员在 Adobe User Management 系统（称为 Identity Management System (IMS)）中设置您的组织。Adobe 在 IMS 中创建您的组织后，管理员是组织中第一个收到来自 Adobe 的电子邮件邀请的用户。管理员可以登录 IMS 并添加其他角色的用户。
 
 在管理员配置用户后，他们将获得对所有 AEM 资源的访问权限，以完成他们作为投稿人的工作，并使用 AEM Headless 交付体验应用程序。
 
@@ -190,7 +190,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 文件夹层级可以解决与内容管理有关的两个主要问题：
 
 * [翻译](#translation) – AEM 通过在特定于区域设置的文件夹中维护内容副本来管理内容翻译。
-* 组织 — 文件夹用于定义支持翻译需求和从逻辑上管理内容片段所需的内容层次结构。
+* 组织 - 文件夹用于定义支持翻译需求以及逻辑管理内容片段所需的内容层级。
 
 AEM 允许灵活的内容结构，并且层级可以任意大。不过，请务必了解一点，文件夹结构中的任何更改都可能对现有查询产生意外后果，这些查询[依赖内容路径。](#developer)因此，预先清楚列明的明确定义的层级可能对您的内容作者会很有用。
 
