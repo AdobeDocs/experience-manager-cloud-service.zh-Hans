@@ -3,9 +3,9 @@ title: 部署自定义主题
 description: 了解如何使用管道部署站点主题。
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1023'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 92%
 * 如何使用代理的 AEM 内容自定义和测试主题并将这些更改提交到 AEM Git。
 * 如何使用管道部署前端自定义项。
 
-您现在已准备好自定义自己的 AEM 站点的主题。但在您开始使用多个前端管道创建不同的工作流之前，请查看文档 [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). 它可以通过以下方式帮助您充分利用前端开发：
+您现在已准备好自定义自己的 AEM 站点的主题。但在您开始使用多个前端管道创建不同的工作流之前，请查看文档[使用前端管道开发站点。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)它可以通过以下方式帮助您充分利用前端开发：
 
 * 维护单个真实来源。
 * 维护关注点分离。
@@ -105,8 +105,8 @@ AEM 是一个功能强大的工具，并且提供了许多其他选项。查看[
 * [使用站点边栏管理站点主题](/help/sites-cloud/administering/site-creation/site-rail.md) – 了解站点边栏的强大功能，这可帮助您轻松自定义和管理站点主题，包括下载主题源和管理主题版本。
 * [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您已对 AEM 有一定的了解，则可能需要直接参阅深入的技术文档。
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
-* [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) – Cloud Manager 预配置了一些具有适当权限的角色。有关这些角色以及如何管理这些角色的详细信息，请参阅此文档。
-* [Cloud Manager存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)  — 如果您想详细了解如何为AEMaaCS项目设置和管理Git存储库，请参阅此文档。
+* [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) – Cloud Manager 预配置了一些具有适当权限的角色。有关这些角色及其管理方式的详细信息，请参阅本文档。
+* [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) – 如果您想详细了解如何为 AEMaaCS 项目设置和管理 Git 存储库，请参阅此文档。
 * [配置 CI/CD 管道 – 云服务](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) – 在此文档中了解有关设置全堆栈管道和前端管道的更多详细信息。
 * [AEM 标准站点模板](https://github.com/adobe/aem-site-template-standard) – 这是 AEM 标准站点模板的 GitHub 存储库。
 * [AEM 站点主题](https://github.com/adobe/aem-site-template-standard-theme-e2e) – 这是 AEM 站点主题的 GitHub 存储库。
