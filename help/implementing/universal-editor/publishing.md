@@ -3,9 +3,9 @@ title: 使用 Universal Visual Editor 发布内容
 description: 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 88%
 
 确定是否应访问作者或发布层可以通过在应用程序中加入简单的条件语句来完成，以便在检测到它正在编辑器中打开时选择适当的作者或发布端点。
 
-另一种选择是将应用程序部署到配置不同的两个不同环境，以便一个从作者层检索其内容，另一个从发布层检索。要允许作者在通用编辑器中打开已发布的URL，可以创建一个小型脚本，将发布端URL“转换”为创作环境中的等效项(例如，在前面追加 `author` 子域)，以便作者被自动重定向。
+另一种选择是将应用程序部署到配置不同的两个不同环境，以便一个从作者层检索其内容，另一个从发布层检索。为了允许作者在 Universal Editor 中打开已发布的 URL，可以创建一个小脚本来将发布端 URL“转换”为作者环境中的等效 URL（例如，通过在 `author` 子域前添加）)，以便作者自动重定向。
 
 ## 摘要 {#summary}
 
