@@ -4,10 +4,10 @@ description: 用 CodePen 示例应用程序和 JavaScript 版 AEM Headless 客�
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 58%
+source-wordcount: '977'
+ht-degree: 96%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 58%
 
 ## CodePen {#codepen}
 
-CodePen 是用于前端 Web 开发的在线代码编辑器和活动天地。它可让您在浏览器中编写HTML、CSS和JavaScript代码，并几乎立即查看您的工作结果。 您还可以保存您的工作并与他人分享。Adobe已在CodePen中创建了一个应用程序，您可以使用它从试用环境中提取JSON数据。 [适用于JavaScript的AEM Headless客户端](https://github.com/adobe/aem-headless-client-js). 您可以按原样使用此应用程序，或将其分叉到您自己的 CodePen 帐户中以进一步自定义。
+CodePen 是用于前端 Web 开发的在线代码编辑器和活动天地。它允许您在浏览器中编写 HTML、CSS 和 JavaScript 代码，并且几乎可以立即看到您的工作结果。您还可以保存您的工作并与他人分享。Adobe 在 CodePen 中创建了一个应用程序，您可以使用[适用于 JavaScript 的 AEM Headless 客户端](https://github.com/adobe/aem-headless-client-js)从试用环境中获取 JSON 数据。您可以按原样使用此应用程序，或将其分叉到您自己的 CodePen 帐户中以进一步自定义。
 
-单击 **启动示例代码笔应用程序** 试用版中的按钮会将您转到代码笔中的应用程序。 该应用程序用作使用 JavaScript 获取 JSON 数据的最小示例。该示例应用程序旨在渲染返回的任何 JSON 内容，而不管底层内容片段模型的结构如何。开箱即用的应用程序会从 `aem-demo-assets` 试用环境中包含的持久查询。 您应该会看到类似于以下内容的 JSON 响应：
+点击试用版中的&#x200B;**启动示例 CodePen 应用程序**&#x200B;按钮，您会进入 CodePen 中的应用程序。该应用程序用作使用 JavaScript 获取 JSON 数据的最小示例。该示例应用程序旨在渲染返回的任何 JSON 内容，而不管底层内容片段模型的结构如何。开箱即用，该应用程序会从您的试用环境中包含的`aem-demo-assets`持久查询中获取数据。您应该会看到类似于以下内容的 JSON 响应：
 
 ```json
 {
@@ -47,21 +47,21 @@ CodePen 是用于前端 Web 开发的在线代码编辑器和活动天地。它�
           ...
 ```
 
-如果您看到错误，请查看浏览器控制台以获取更多详细信息或通过[ Slack ](https://adobe-dx-support.slack.com)进行联系。
+如果您反而看到错误，请检查浏览器控制台以了解更多详细信息或联系 [按电子邮件](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
 
 现在您对 CodePen 有了一些了解，接下来您将会配置该应用程序，以从您在上一个模块中创建的持久查询中获取数据。
 
 ## JavaScript 代码演练 {#code-walkthrough}
 
-此 **JS** codePen中右侧的窗格包含示例应用程序的JavaScript。 从第2行开始，您可以从Skypack CDN导入AEM Headless Client for JavaScript。 Skypack 用于在没有构建步骤的情况下加快开发，但您也可以在自己的项目中将 AEM Headless Client 与 NPM 或 Yarn 结合使用。查看[自述文件](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript)中的使用说明，了解更多详细信息。
+CodePen 右侧的 **JS** 窗格包含示例应用程序的 JavaScript。从第 2 行开始，从 Skypack CDN 导入适用于 JavaScript 的 AEM Headless Client。Skypack 用于在没有构建步骤的情况下加快开发，但您也可以在自己的项目中将 AEM Headless Client 与 NPM 或 Yarn 结合使用。查看[自述文件](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript)中的使用说明，了解更多详细信息。
 
 ```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
-在第6行中，您的发布主机详细信息是从 `publishHost` 查询参数。 此参数是AEM Headless客户端从中提取数据的主机。 此功能通常会被编码到您的应用程序中，但您使用的是查询参数，以便让CodePen应用程序更轻松地与不同环境一起使用。
+在第 6 行上，您的发布主机详细信息是从`publishHost`查询参数中读取的。此参数是 AEM Headless 客户端从中获取数据的主机。该功能通常会编码到您的应用程序中，但使用查询参数可使 CodePen 应用程序能够在不同的环境中更轻松地运行。
 
-在第12行配置AEM Headless客户端：
+您在第 12 行配置 AEM Headless 客户端：
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -75,15 +75,15 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 
 >[!NOTE]
 >
->此 **serviceURL** 设置为使用代理Adobe I/O Runtime函数以避免CORS问题。 您自己的项目不需要此代理，但CodePen应用程序需要此代理才能与试用环境配合使用。 代理函数已配置为使用查询参数中提供的 **publishHost** 值。
+>该&#x200B;**服务网址**&#x200B;已设置为使用代理 Adobe I/O Runtime 功能来避免 CORS 问题。您自己的项目不需要此代理，但必须为 CodePen 应用程序执行此操作，以便其可在您的试用环境中工作。代理函数已配置为使用查询参数中提供的 **publishHost** 值。
 
-最后，使用函数 `fetchJsonFromGraphQL()` 在 AEM Headless 客户端中执行提取请求。每次更改代码时都会调用该函数，也可以通过点击&#x200B;**“重新提取”**&#x200B;链接来触发它。实际的 `aemHeadlessClient.runPersistedQuery(..)` 调用是在第 34 行上执行的。稍后，您更改了此JSON数据的呈现方式，但现在，请将其打印到 `#output` div使用 `resultToPreTag(queryResult)` 函数。
+最后，使用函数 `fetchJsonFromGraphQL()` 在 AEM Headless 客户端中执行提取请求。每次更改代码时都会调用该函数，也可以通过点击&#x200B;**“重新提取”**&#x200B;链接来触发它。实际的 `aemHeadlessClient.runPersistedQuery(..)` 调用是在第 34 行上执行的。稍后，您会更改此 JSON 数据的呈现方式，但现在只需使用 `resultToPreTag(queryResult)` 函数将其输出到 `#output` div。
 
 ## 从持久查询中提取数据 {#use-persisted-query}
 
-在第25行，您可以指示GraphQL从哪个持久化查询应用程序中应获取数据。 持久查询名称是终结点名称(即， `your-project` 或 `aem-demo-assets`)，后跟一个正斜杠，然后是查询的名称。 如果您完全按照前面的模块说明进行操作，则您创建的持久查询位于 `your-project` 端点。
+在第 25 行上，您指出应用程序应该从哪个 GraphQL 持久查询中获取数据。持久查询名称是端点名称的组合（即 `your-project` 或者 `aem-demo-assets`)，后跟一个正斜杠，然后是查询的名称。如果您完全按照前面的模块说明进行操作，您创建的持久查询会位于 `your-project` 端点。
 
-1. 更新 `persistedQueryName` 变量，以使其使用您在上一个模块中创建的持久查询。 如果您遵循命名建议，则将在 `your-project` 端点中创建一个名为 `adventure-list` 的持久查询，并将 `persistedQueryName` 变量设置为 `your-project/adventure-list`：
+1. 更新 `persistedQueryName` 变量以使用您在上一个模块中创建的持久查询。如果您遵循命名建议，则将在 `your-project` 端点中创建一个名为 `adventure-list` 的持久查询，并将 `persistedQueryName` 变量设置为 `your-project/adventure-list`：
 
    ```javascript
    //
@@ -92,13 +92,13 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. 做出此更改后，应用程序将自动刷新，并将来自持久查询的原始 JSON 响应输出到 `#output` div。如果显示一条错误消息，请在控制台中查看更多详细信息。如果您在此步骤中仍有问题，请通过 [Slack ](https://adobe-dx-support.slack.com)进行联系。
+1. 做出此更改后，应用程序将自动刷新，并将来自持久查询的原始 JSON 响应输出到 `#output` div。如果显示一条错误消息，请在控制台中查看更多详细信息。伸手 [按电子邮件](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) 如果您在此步骤中仍然遇到问题。
 
 1. 此 JSON 是否包含您的应用程序所需的确切属性？如果没有，请返回[使用 GraphQL API 提取内容](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql)学习指南进行更改。请记住，请在完成后保存并发布您的查询。
 
 ## 更改 JSON 渲染 {#change-rendering}
 
-JSON按原样渲染到 `pre` 标记时不会太有创意。 您可以切换代码笔以使用 `resultToDom()` 函数，以说明如何迭代JSON响应以创建更有趣的结果。
+JSON 按原样渲染在 `pre` 标记中，这并不是很有创意。您可以切换 CodePen，改用 `resultToDom()` 函数来说明如何迭代 JSON 响应，创建更有趣的结果。
 
 1. 要进行此更改，请注释掉第 37 行并删除第 40 行中的注释：
 
@@ -110,14 +110,14 @@ JSON按原样渲染到 `pre` 标记时不会太有创意。 您可以切换代�
    resultToDom(queryResult);
    ```
 
-1. 此函数将JSON响应中包含的任何图像渲染为 `img` 标记之前。 如果您创建的&#x200B;**冒险**&#x200B;内容片段不包含任何图像，则可以通过修改第 25 行来尝试切换为使用 `aem-demo-assets/adventures-all` 持久查询：
+1. 此函数会将包含在 JSON 响应中的所有图像渲染为 `img` 标记。如果您创建的&#x200B;**冒险**&#x200B;内容片段不包含任何图像，则可以通过修改第 25 行来尝试切换为使用 `aem-demo-assets/adventures-all` 持久查询：
 
    ```javascript
    persistedQueryName = 'aem-demo-assets/adventures-all';
    ```
 
-此查询会生成一个包含图像的JSON响应，并且 `resultToDom()` 函数将它们渲染为内联。
+此查询会产生一个包含图像的 JSON 响应，并且 `resultToDom()` 函数会以内联方式渲染其中图像。
 
 ![adventures-all 查询和 resultToDom 渲染函数的结果](assets/do-not-localize/adventures-all-query-result.png)
 
-现在您已完成了构建模型和查询的工作，您的内容团队可以轻松接管。 在下一个模块中，您将展示内容创作流程。
+现在您已经完成了构建模型和查询的工作，您的内容团队可以轻松接手。我们将在下一个模块中展示内容创作流程。

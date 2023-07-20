@@ -4,10 +4,10 @@ description: 了解如何使用内容片段和 GraphQL API 作为 Headless 内�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 94%
+source-wordcount: '1086'
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 94%
 
 1. 您的 AEM Headless 试用版附带了一个已预加载内容片段的端点，您可以从中提取内容用于测试。确保在编辑器右上角的&#x200B;**端点**&#x200B;下拉菜单中选定 **AEM 演示资源**&#x200B;端点。
 
-1. 为预加载的 **AEM 演示资产**&#x200B;端点的列表查询复制以下代码片段。列表查询会返回使用特定内容片段模型的所有内容的列表。库存和类别页面通常使用此查询格式。
+1. 为预加载的 **AEM 演示资源**&#x200B;端点的列表查询复制以下代码片段。列表查询会返回使用特定内容片段模型的所有内容的列表。库存和类别页面通常使用此查询格式。
 
    ```text
    {
@@ -66,17 +66,13 @@ ht-degree: 94%
 
    ![列表查询](assets/do-not-localize/list-query-1-3-4-5.png)
 
-您刚刚验证了针对所有内容片段的完整列表的列表查询。 此过程可帮助确保响应符合应用程序的预期，其结果说明了您的应用程序和网站将如何检索在 AEM 中创建的内容。
-
->[!NOTE]
->
->如果您无法选择 **AEM演示资产** 从下拉菜单中的端点，联系Adobe客户关怀部门或联系 [AEM试用Slack渠道。](https://adobe-dx-support.slack.com/)
+您刚刚验证了针对所有内容片段的完整列表的列表查询。此过程可帮助确保响应符合应用程序的预期，其结果说明了您的应用程序和网站将如何检索在 AEM 中创建的内容。
 
 ## 查询特定的示例内容 {#bypath-query}
 
 运行 byPath 查询可让您检索特定内容片段的内容。产品详细信息页面和专注于一组特定内容的页面通常需要此类查询。
 
-1. 为预加载的 **AEM 演示资产**&#x200B;端点的 byPath 查询复制以下代码片段。
+1. 为预加载的 **AEM 演示资源**&#x200B;端点的 byPath 查询复制以下代码片段。
 
    ```text
     {
@@ -109,7 +105,7 @@ ht-degree: 94%
 
    ![byPath 查询结果](assets/do-not-localize/bypath-query-2-3-4.png)
 
-您刚刚验证了byPath查询，以检索由该片段的路径标识的特定内容片段。
+您刚刚通过验证 byPath 查询来检索由该片段的路径标识的特定内容片段。
 
 ## 查询自己的内容 {#own-queries}
 
