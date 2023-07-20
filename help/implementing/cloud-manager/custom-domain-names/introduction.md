@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也�
 
 添加自定义域名需要 DNS 服务和云管理器之间的交互。 因此，需要执行若干步骤以安装、配置和验证自定义域名。下表概述了所需的步骤，包括发生常见错误时的操作。
 
-| 步骤 | 描述 | 责任 | 了解详情 |
+| 步骤 | 描述 | 责任 | 了解详细信息 |
 |--- |--- |--- |---|
 | 1 | 将 SSL 证书添加到 Cloud Manager | 客户 | [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | 添加 TXT 记录验证域 | 客户 | [添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
@@ -74,4 +74,4 @@ AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也�
 * 同一域名不能在多个环境中使用。
 * 一次只能添加一个域名。
 * AEM as a Cloud Service 不支持通配符，例如`*.example.com`。
-* 在添加自定义域名之前，必须为程序安装包含自定义域名（通配符证书有效）的有效 SSL 证书。参见 [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 了解更多信息。
+* 在添加自定义域名之前，必须为程序安装包含自定义域名（通配符证书有效）的有效 SSL 证书。请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)，以了解更多信息。

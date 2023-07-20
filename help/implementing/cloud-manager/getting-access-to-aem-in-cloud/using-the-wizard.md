@@ -5,7 +5,7 @@ exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 96%
 
 现在，您有一个基于 AEM 原型的 AEM 项目添加到您的 Git 存储库中，作为您自己项目的开发基础。 接下来，您可以创建可以在其中部署项目代码的环境。
 
-参见 [管理环境](/help/implementing/cloud-manager/manage-environments.md) 以了解如何添加或管理环境。
+请参阅[管理您的环境](/help/implementing/cloud-manager/manage-environments.md)，了解如何添加或管理环境。
 
 >[!NOTE]
 >

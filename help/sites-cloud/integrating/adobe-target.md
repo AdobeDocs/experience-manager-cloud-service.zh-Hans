@@ -5,15 +5,15 @@ exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # 与 Adobe Target 集成{#integrating-with-adobe-target}
 
-作为Adobe Experience Cloud的一部分， [Adobe Target](https://business.adobe.com/products/target/adobe-target.html) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。 营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。AEM as a Cloud Service 采用了 Adobe Target Standard 中使用的定位工作流。如果您使用Target，则可以熟悉AEMas a Cloud Service中的定位编辑环境。
+作为 Adobe Experience Cloud 的一部分，[Adobe Target](https://business.adobe.com/products/target/adobe-target.html) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。AEM as a Cloud Service 采用了 Adobe Target Standard 中使用的定位工作流。如果您使用 Target，则会熟悉 AEM as a Cloud Service 中的定位编辑环境。
 
-将AEM站点与Adobe Target集成，以使页面中的内容个性化：
+将 AEM Sites 与 Adobe Target 集成以个性化页面中的内容：
 
 * 实施内容定位。
 * 使用 Target 受众创建个性化体验。
@@ -22,7 +22,7 @@ ht-degree: 72%
 
 >[!NOTE]
 >
->没有现有Target帐户的客户可以请求访问Target Foundation Pack以进行Experience Cloud。 此 Foundation Pack 提供了对 Target 的限量使用。
+>不具有现有 Target 帐户的 客户可以请求对 Target Foundation Pack for Experience Cloud 的访问权限。此 Foundation Pack 提供了对 Target 的限量使用。
 
 
 要与 Target 集成，请执行以下任务：
@@ -33,7 +33,7 @@ ht-degree: 72%
 
    * [使用 Adobe I/O 与 Adobe Target 集成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
    * [集成 Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-   * [通过Adobe I/O将AEM与AdobeLaunch集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=en)
+   * [通过 Adobe I/O 将 AEM 与 Adobe Launch 集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=en)
    * [了解 AEM 与 Adobe Launch、Analytics 和 Target 的集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
 
 >[!NOTE]
@@ -44,11 +44,11 @@ ht-degree: 72%
 
 >[!CAUTION]
 >
->在 AEM as a Cloud Service 中，默认情况下，将选件和活动从 AEM 同步到 Adobe Target 的复制代理处于禁用状态。联系 [Adobe支持](https://experienceleague.adobe.com/?support-solution=General#support) 组（如果必须重新启用复制代理）。
+>在 AEM as a Cloud Service 中，默认情况下，将选件和活动从 AEM 同步到 Adobe Target 的复制代理处于禁用状态。如果您需要重新启用此复制代理，请联系 [Adobe 支持](https://experienceleague.adobe.com/?support-solution=General#support)团队。
 
 >[!NOTE]
 >
->如果您将Target与自定义代理配置一起使用，则必须同时配置HTTP客户端代理配置，因为AEM的某些功能使用的是3.x API，而其他一些功能使用的是4.x API：
+>如果您将 Target 与自定义代理配置一起使用，则需要配置 HTTP 客户端代理配置，因为 AEM 的某些功能使用的是 3.x API，而其他一些功能使用的是 4.x API：
 >
 >* 3.x 通过 [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) 进行配置
 >* 4.x 通过 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) 进行配置
@@ -56,11 +56,11 @@ ht-degree: 72%
 
 >[!CAUTION]
 >
->保护活动设置节点 **cq：ActivitySettings** ，以便普通用户无法访问。 该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
+>确保发布实例中的活动设置节点 **cq:ActivitySettings** 安全，以使其不可由普通用户访问。该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
 >
 >请参阅[与 Adobe Target 集成的先决条件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node)，以了解详细信息。
 
-在集成完成后，您可以[创作目标内容](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html)来将访客数据发送到 Adobe Target。页面组件需要特定代码才能启用内容定位。 （请参阅[针对目标内容进行开发](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html)。）
+在集成完成后，您可以[创作目标内容](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html)来将访客数据发送到 Adobe Target。页面组件需要特定代码才能启用内容定位。（请参阅[针对目标内容进行开发](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html)。）
 
 >[!NOTE]
 >

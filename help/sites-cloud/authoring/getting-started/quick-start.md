@@ -5,7 +5,7 @@ exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1569'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 在开始使用快速入门指南之前，请查看下面列出的一些常规提示，您应牢记这些提示，并根据创作系统的各个区域分别使用它们。
 
-### 在“站点”控制台中 {#sites-console}
+### 在 Sites 控制台中 {#sites-console}
 
 * 创建按钮
 
@@ -44,7 +44,7 @@ ht-degree: 92%
       * [预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [以发布的形式查看](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* 无法从页面编辑器启动/创建版本。现在，可以从&#x200B;**站点**&#x200B;控制台完成（通过对所选资源选择&#x200B;**创建**&#x200B;或[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)）。
+* 无法从页面编辑器启动/创建版本。现在，可以从&#x200B;**Sites**&#x200B;控制台完成（通过对所选资源选择&#x200B;**创建**&#x200B;或[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)）。
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ ht-degree: 92%
 
 查找页面时存在很多方面；您可以导航和/或搜索：
 
-1. 打开 **站点** 控制台(使用 **站点** 中的选项 [全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)  — 当您选择Adobe Experience Manager链接（左上方）时，会触发（下拉列表）。
+1. 打开&#x200B;**Sites**&#x200B;控制台（使用&#x200B;**全局导航**&#x200B;中的[ Sites ](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)选项 - 它会在您选择 Adobe Experience Manager（左上方）链接时以下拉菜单的形式触发）。
 
 1. 通过点按/单击相应的页面，在树中向下导航。页面资源的显示方式取决于您所使用的视图 - [卡片视图、列表视图或列视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)：
 
@@ -90,11 +90,11 @@ ht-degree: 92%
 
 1. 列视图：
 
-   * 点按/单击所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该勾号。
+   * 点按/单击所需资源的缩略图 - 缩略图上会覆盖一个勾号，表示已选择该页面。
 
 1. 列表视图：
 
-   * 点按/单击所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该勾号。
+   * 点按/单击所需资源的缩略图 - 缩略图上会覆盖一个勾号，表示已选择该页面。
 
 1. 卡片视图：
 
@@ -103,9 +103,9 @@ ht-degree: 92%
       * 在移动设备上：点按并按住卡片
       * 在桌面设备上：使用勾号图标表示的[快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)：
 
-   * 卡片上覆盖有一个勾号，表示已选择该页面。
+   * 信息卡上会覆盖一个勾号，表示已选择该页面。
 
-   ![示例卡片](/help/sites-cloud/authoring/assets/card.png)
+   ![信息卡示例](/help/sites-cloud/authoring/assets/card.png)
 
 ### 快速操作（仅限卡片视图/桌面） {#quick-actions-card-view-desktop-only}
 
@@ -181,7 +181,7 @@ ht-degree: 92%
 
       * 从工具栏中选择&#x200B;**预览**。
 
-   * 使用返回到编辑模式（或选择其他模式） **编辑** 下拉选择器。
+   * 使用&#x200B;**编辑**&#x200B;下拉选择器返回编辑模式（或选择其他模式）。
 
    >[!NOTE]
    >
@@ -191,7 +191,7 @@ ht-degree: 92%
 
 [编辑页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)的方法（主要）有两种：
 
-* 从&#x200B;**站点**&#x200B;控制台中：
+* 从&#x200B;**Sites**&#x200B;控制台中：
 
    1. [导航](#finding-your-page)到要发布的页面。
    1. 从以下任一位置选择&#x200B;**属性**&#x200B;图标：
@@ -214,7 +214,7 @@ ht-degree: 92%
 
 [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)（和取消发布）的方法主要有两种：
 
-* 从&#x200B;**站点**&#x200B;控制台中：
+* 从&#x200B;**Sites**&#x200B;控制台中：
 
    1. [导航](#finding-your-page)到要发布的页面。
    1. 从以下任一位置选择&#x200B;**快速发布**&#x200B;图标：
@@ -270,7 +270,7 @@ ht-degree: 92%
 [锁定页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) ，可阻止其他作者在您处理页面时对其进行处理。 可以找到“锁定”（和“解锁”）图标／按钮：
 
 * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
-* 此 [“页面信息”下拉菜单](#editing-the-page-properties) 编辑页面时。
+* 编辑页面时显示的[“页面信息”下拉菜单](#editing-the-page-properties)。
 * 编辑页面（页面处于锁定状态）时显示的页面工具栏
 
 例如，“锁定”图标如下所示：
@@ -319,8 +319,8 @@ ht-degree: 92%
 
    * **恢复到此版本**
 
-      * 版本已恢复。
+      * 该版本会恢复。
 
    * **显示差异**
 
-      * 打开页面时，会高亮显示（两个版本之间的）差异。
+      * 该页面会打开，并突出显示（两个版本之间的）差异。

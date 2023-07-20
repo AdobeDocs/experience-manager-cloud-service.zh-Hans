@@ -5,7 +5,7 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 85%
 
 沙盒程序通常是为了满足培训、运行演示、启用或概念验证 (POC) 的目的而创建的，因此不会承载实时流量。
 
-沙盒程序是 AEM Cloud Service 中可用的两种程序之一，另一种是[生产程序。](introduction-production-programs.md) 参见 [了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 了解有关程序类型的更多信息。
+沙盒程序是 AEM Cloud Service 中可用的两种程序之一，另一种是[生产程序。](introduction-production-programs.md)请参阅[了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)，以了解有关程序类型的更多信息。
 
 ## 自动创建 {#auto-creation}
 
@@ -49,7 +49,7 @@ ht-degree: 85%
 
 ### 无高级网络 {#advanced-networking}
 
-[高级联网功能](/help/security/configuring-advanced-networking.md) 沙盒程序中不提供（例如，自助预配VPN、非标准端口、专用出口IP地址等）。
+[高级网络功能](/help/security/configuring-advanced-networking.md)（例如 VPN、非标准端口、专用出口 IP 地址的自助供应等） 在沙盒程序中不可用。
 
 ### 手动 AEM 更新 {#updates}
 
@@ -58,15 +58,15 @@ AEM 更新不会自动推送到沙盒程序，但可以手动应用到沙盒程�
 * 只有目标环境具有正确配置的管道时，才能运行手动更新。
 * 手动更新生产环境或暂存环境将自动更新其他环境。生产 + 暂存环境集必须位于同一 AEM 版本上。
 
-参见 [AEM版本更新](/help/implementing/deploying/aem-version-updates.md) 了解更多详细信息。
+有关更多详细信息，请参阅 [AEM 版本更新。](/help/implementing/deploying/aem-version-updates.md)
 
-参见 [更新环境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) 以了解如何更新环境。
+请参阅[更新环境](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)了解具体操作步骤。
 
 ### 休眠和删除 {#hibernation}
 
 沙盒程序中的环境在八小时不活动后自动休眠。沙盒环境在连续休眠六个月后将被删除。
 
-参见 [使沙盒环境休眠和解除沙盒环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) 了解有关如何解除环境休眠和自动沙盒删除的更多详细信息。
+请参阅[沙盒环境休眠和解除休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)以了解有关如何解除环境休眠和自动删除沙箱的更多详细信息。
 
 ### 无技术支持 {#no-support}
 

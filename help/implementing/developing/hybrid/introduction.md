@@ -5,7 +5,7 @@ exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2068'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本�
 
 ### 什么是 SPA？ {#what-is-a-spa}
 
-单页应用程序(SPA)与传统页面不同，因为它在客户端渲染，主要由JavaScript驱动，依赖Ajax调用加载数据和动态更新页面。 大多数内容或所有内容在单个页面加载中检索一次，并基于用户与页面的交互按需异步加载其他资源。
+单页应用程序 (SPA) 与传统页面的不同之处在于，它在客户端呈现且主要由 JavaScript 驱动，并且依靠 Ajax 调用来加载数据和动态更新页面。大多数内容或所有内容在单个页面加载中检索一次，并基于用户与页面的交互按需异步加载其他资源。
 
 这减少了页面刷新需求，并为用户提供了一种无缝、快速且更类似于本机应用程序体验的体验。
 
@@ -71,7 +71,7 @@ SPA 的工作方式的特性使其更快、更流畅且更类似于本机应用�
 #### 开发人员 {#developers}
 
 * 开发人员希望完全分离内容和表示形式之间的关注点。
-* 干净的分隔使得系统更具可扩展性，并允许独立的前端开发。
+* 完全分离可提高系统的可扩展性，并允许独立的前端开发。
 
 ### SPA 的工作原理是什么？ {#how-does-a-spa-work}
 
@@ -112,9 +112,9 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 
    ![编辑文本](assets/wknd-edit-text.png)
 
-1. 使用资产浏览器将新图像拖放到图像组件中。
+1. 使用资源浏览器将新图像拖放到图像组件中。
 
-   ![删除图像资产](assets/wkdn-drop-image.png)
+   ![删除图像资源](assets/wkdn-drop-image.png)
 
 1. 将保留更改。
 
@@ -177,7 +177,7 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 
 1. 切换到检查器中的“网络”选项卡并重新加载页面。
 
-   忽略图像请求，请注意，为页面加载的主要资源是页面本身、CSS、React JavaScript、其依赖项以及页面的JSON数据。
+   忽略图像请求，请注意，为页面加载的主要资源包括页面本身、CSS、React JavaScript、其依赖项以及页面的 JSON 数据。
 
    ![WKND SPA Project 网络活动](assets/wknd-network.png)
 
@@ -189,7 +189,7 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 
    AEM SPA Editor 利用 [AEM 内容服务](/help/sites-cloud/administering/content-fragments/content-fragments.md)将页面的全部内容作为 JSON 模型交付。
 
-   通过实施特定接口，Sling 模型为 SPA 提供了必要信息。JSON数据的投放向下委托给每个组件（从页面、段落到组件等）。
+   通过实施特定接口，Sling 模型为 SPA 提供了必要信息。将 JSON 数据的交付工作向下委派给每个组件（从页面到段落再到组件等）。
 
    每个组件选择它公开的内容及其呈现方式（在服务器端，使用 HTL；在客户端，使用 React 或 Angular）。本文重点介绍使用 React 进行客户端呈现。
 
@@ -207,7 +207,7 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 
 ### 与 SPA 编辑器进行交互 {#interaction-with-the-spa-editor}
 
-使用示例WKND SPA项目应用程序，可以清楚地了解该应用程序在发布时的行为和加载方式，并利用内容服务进行JSON内容交付和异步加载资源。
+通过使用示例 WKND SPA Project 应用程序，可以清楚地了解应用程序在发布时的行为和加载方式，如何使用内容服务进行 JSON 内容交付以及如何异步加载资源。
 
 此外，对于内容作者而言，在 AEM 中使用 SPA 编辑器创建内容是无缝操作。
 
@@ -231,7 +231,7 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 
    这是编辑器将组件识别为 SPA 中的可编辑组件所需的唯一标记属性。根据此属性，SPA 编辑器将确定哪项可编辑的配置与组件关联，以便加载正确的框架、工具栏等。
 
-   还为标记占位符和资产拖放功能添加了一些特定的类名。
+   还为标记占位符和资源拖放功能添加了一些特定的类名。
 
    >[!NOTE]
    >
@@ -254,4 +254,4 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 * [使用 React 在 AEM 中开始使用 SPA](getting-started-react.md) 说明了如何使用 React 构建基本 SPA 以与 AEM 中的 SPA 编辑器结合使用
 * [使用 Angular 在 AEM 中开始使用 SPA](getting-started-angular.md) 说明了如何使用 Angular 构建基本 SPA 以与 AEM 中的 SPA 编辑器结合使用
 * [SPA 编辑器概述](editor-overview.md)更深入地介绍了 AEM 和 SPA 之间的通信模型。
-* [开发SPA for AEM](developing.md) 介绍如何让前端开发人员参与开发适用于AEM的SPA，以及SPA如何与AEM架构交互。
+* [为 AEM 开发 SPA](developing.md) 介绍了如何让前端开发人员为 AEM 开发 SPA，以及 SPA 如何与 AEM 的架构进行交互。

@@ -5,7 +5,7 @@ exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->有关物料类型的详细信息，请参阅以下内容：
+>有关项目类型的更多信息，请参阅以下内容：
 >
 >* [项目](/help/sites-cloud/authoring/projects/overview.md)
 >* [项目 – 处理任务](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ ht-degree: 91%
 
   ![收件箱列表视图设置](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  您还可以将日历委派给其他用户、请求其他用户委派以及管理您的委派。
+  您还可以将日历委派给其他用户，向其他用户请求委派以及管理您的委派。
 
   ![收件箱列表视图委派设置](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -112,7 +112,7 @@ ht-degree: 91%
 >
 >尽管可以选择多个项目，但一次只能对一个项目执行操作。
 
-1. 要对某个项目执行操作，请选择相应项目的缩略图。适用于该项目的操作的图标将显示在工具栏中：
+1. 要对某个项目执行操作，请选择相应项目的缩略图。工具栏中显示适用于该项目的操作图标：
 
    ![选择收件箱项目](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
@@ -136,11 +136,11 @@ ht-degree: 91%
    >
    >* 工作流项目 – [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
 
-2. 根据所选项目，将启动操作，例如：
+2. 根据所选项目，会启动相应的操作；例如：
 
-   * 此时将打开一个适合该操作的对话框
-   * 操作向导已启动
-   * 文档页面已打开
+   * 与操作对应的对话框会打开
+   * 操作向导会启动
+   * 文档页面会打开
 
    例如，**委派**&#x200B;操作将打开一个对话框：
 

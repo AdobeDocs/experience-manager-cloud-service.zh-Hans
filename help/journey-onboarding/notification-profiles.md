@@ -7,7 +7,7 @@ exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Adobe 有时需要就 AEM as a Cloud Service 环境联系用户。 除了产品�
 
 >[!NOTE]
 >
->Cloud Manager **产品配置文件名称**&#x200B;必须与提供的完全一样。 复制并粘贴提供的产品配置文件名称以避免错误。 任何偏差或拼写错误都将导致通知无法按要求发送。
+>Cloud Manager **产品配置文件名称**&#x200B;必须与提供的完全一样。 请复制并粘贴提供的产品配置文件名称以避免错误。 任何偏差或拼写错误都将导致通知无法按要求发送。
 >
 >如果出现错误或未定义配置文件，Adobe 将默认通知分配给 **Cloud Manager 开发人员**&#x200B;或者&#x200B;**部署管理器**&#x200B;配置文件的现有用户。
 

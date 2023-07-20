@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 92%
 
 Adobe Experience Manager as a Cloud Service 根据 [Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
 
-若要熟悉安排在以下功能版本中上线的功能，可订阅预发行版渠道（可通过配置开发环境或任何沙盒环境而访问该渠道）。您可以预览可通过AEM用户界面访问的更改，并针对任何新的预发行版API构建代码。
+若要熟悉安排在以下功能版本中上线的功能，可订阅预发行版渠道（可通过配置开发环境或任何沙盒环境而访问该渠道）。可预览可通过 AEM 用户界面访问的更改，并可对照任何新的预发行版 API 构建代码。
 
-给定功能版本的预发行版功能列表发布在 [发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md).
+[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)中发布了给定功能版本的预发行版功能的列表。
 
 ## AEM as a Cloud Service 版本 {#releases}
 
@@ -33,11 +33,11 @@ AEM as a Cloud Service 有两种类型的版本。
 
 通过预发行版渠道，可预览为即将推出的功能版本安排的功能，以评估即将推出的功能，并规划它可为您自己的项目使用的实现。通过它，可提前规划下一个功能版本。
 
-例如，如果现在是5月并且您订阅了预发行渠道，则可以评估即将发行的6月版本中的功能。
+例如，如果现在是 5 月并且您订阅了预发行频道，则可以评估即将发行的 6 月版本中的功能。
 
 ![预发行节奏图形](assets/prerelease-cadence.png)
 
-预发行版为您提供为期一个月的滚动窗口，了解即将推出的AEMaaCS功能，让您有时间评估任何新功能对您的项目和自定义的影响，并计划推出此类功能、测试和用户培训。
+预发行版为您提供为期一个月的滚动窗口，了解即将推出的 AEMaaCS 功能，让您有时间评估任何新功能对您的项目和自定义的影响，以及计划推出此类功能、测试和用户培训。
 
 有效利用预发行渠道需要四个步骤。
 

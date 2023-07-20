@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 如何支持附加的发布区域，�
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->此功能目前仅适用于 AEM Sites。它也不能应用于沙盒程序。此外，请注意，其他发布区域功能要求您的程序更新到AEM版本12142或更高版本。
+>此功能目前仅适用于 AEM Sites。它也不能应用于沙盒程序。此外，请注意，要使用附加发布区域功能，您的程序需要更新到 12142 或更高版本的 AEM。
 
 ## 用例 {#use-cases}
 
@@ -40,11 +40,11 @@ ht-degree: 88%
 
 在已配置高级网络的程序上启用附加发布区域时，与高级网络规则匹配的附加发布区域中的流量将默认路由通过主要区域。为了利用更高的可用性，建议在附加区域启用高级网络。
 
-请参阅 [其他发布区域的高级联网配置](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) 部分，以了解详细信息，包括如何向其他区域添加高级联网配置而不会导致连接丢失。
+有关详细信息，请参阅高级网络文档中的[附加发布区域的高级网络配置](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions)部分，包括如何在不导致连接中断的情况下将高级网络配置添加到附加区域。
 
 ## 限制 {#limitations}
 
-在考虑使用其他发布区域时，请牢记以下限制。
+在考虑使用附加发布区域时，请考虑以下这些限制。
 
 * 附加发布区域只能添加到 AEM Sites。其他发布区域不会扩展到其他 AEM 解决方案或部署在同一程序中的相关功能（例如 AEM Forms 或 Adob&#x200B;&#x200B;e Learning Manager）。
 * 仅当关联的权限在租户中可用但未使用时，才能添加附加区域。

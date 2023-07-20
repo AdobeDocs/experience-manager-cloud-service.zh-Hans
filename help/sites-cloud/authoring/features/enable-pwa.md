@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1997'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 91%
 >* 了解缓存策略
 >* 来自开发团队的支持
 >
->在使用此功能之前，建议您与开发团队进行讨论以确定将它用于项目的最佳方法。
+>在使用此功能之前，建议您与开发团队进行讨论以确定将它用于项目的最佳方式。
 
 ## 简介 {#introduction}
 
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### 调整您的 Dispatcher {#adjust-dispatcher}
 
-PWA 功能会生成和使用 `/content/<sitename>/manifest.webmanifest` 文件。默认情况下， [调度程序](/help/implementing/dispatcher/overview.md) 不会公开此类文件。 要公开这些文件，开发人员必须将以下配置添加到您的站点项目中。
+PWA 功能会生成和使用 `/content/<sitename>/manifest.webmanifest` 文件。默认情况下，[Dispatcher](/help/implementing/dispatcher/overview.md) 不会公开此类文件。要公开这些文件，开发人员必须将以下配置添加到您的站点项目中。
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -160,20 +160,20 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * **最小化 UI** – 浏览器的大部分组件是隐藏的，就像本地应用程序一样，但会显示基础导航控件。
    * **全屏** – 浏览器是完全隐藏的，就像本地应用程序，但在全屏模式下将呈现。
       * 利用此选项，必须能够使用站点页面上的链接和组件完全通过内容进行应用程序导航，而无需使用浏览器的导航控件。
-* **屏幕方向**  — 作为本地应用程序，PWA需要了解如何处理这些请求 [设备方向](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/orientation).
+* **屏幕方向** – 作为本地应用程序，PWA 需要了解如何处理[设备转向](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/orientation)。
    * **任意** – 该应用程序会根据用户设备的方向进行调整。 这是默认值。
    * **纵向** – 强制应用程序以纵向布局打开，而不管用户设备的方向如何。
    * **横向** – 强制应用程序以横向布局打开，而不管用户设备的方向如何。
 * **主题颜色** – 定义[应用程序的颜色](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/theme_color)，将影响本地用户的操作系统显示本机 UI 工具栏和导航控件的方式。它可能会影响其他应用程序演示元素，具体取决于浏览器。
    * 使用颜色井弹出窗口选择颜色。
    * 颜色也可以由十六进制值或 RGB 值定义。
-* **背景颜色**  — 这定义 [应用程序的背景颜色](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/background_color)，会在应用程序加载时显示。
+* **背景颜色** – 定义[应用程序的背景颜色](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/background_color)，此颜色在应用程序加载时显示。
    * 使用颜色井弹出窗口选择颜色。
    * 颜色也可以由十六进制值或 RGB 值定义。
    * 某些浏览器会自动从应用程序名称、背景颜色和图标[构建启动画面](https://developer.mozilla.org/zh-CN/docs/Web/Manifest#Splash_screens)。
 * **图标** – 这将定义在用户设备上表示应用程序的[图标](https://developer.mozilla.org/zh-CN/docs/Web/Manifest/icons)。
    * 图标必须是大小为 512x512 像素的 png 文件。
-   * 图标必须为 [存储在DAM中](/help/assets/overview.md).
+   * 图标必须[存储在 DAM 中](/help/assets/overview.md)。
 
 ### 缓存管理（高级） {#offline-configuration}
 
@@ -181,12 +181,12 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 * **缓存策略和内容刷新频率** – 此设置定义 PWA 的缓存模型。
    * **适度** – [此设置](https://web.dev/stale-while-revalidate/)适用于大多数站点，并且是默认值。
-      * 通过此设置，用户首先查看的内容将从缓存中加载，当用户使用该内容时，缓存中的其余内容将被重新验证。
+      * 利用此设置，会从缓存中加载用户首先查看的内容，而当用户使用该内容时，缓存中的其余内容会经过重新验证。
    * **频繁** – 这适用于拍卖行等需要快速更新的站点。
       * 利用此设置，应用程序将首先通过网络查找最新内容，如果该内容不可用，则将回滚到本地缓存。
    * **很少** – 这适用于几乎静态的站点（例如参考页）。
       * 利用此设置，应用程序将首先在缓存中查找内容，如果该内容不可用，则将回滚到网络来检索它。
-* **文件预缓存**  — 这些托管在AEM上的文件将在安装Service Worker时和使用它之前保存到本地浏览器缓存中。 这可保证 Web 应用程序在离线时具有完整功能。
+* **文件预缓存** – 这些托管于 AEM 上的文件会在安装 Service Worker 时和使用它之前保存到本地浏览器缓存中。这可保证 Web 应用程序在离线时具有完整功能。
 * **路径包含** – 根据配置的&#x200B;**缓存策略和内容刷新频率**，拦截定义路径的网络请求并返回缓存内容。
 * **缓存排除** – 绝不会缓存这些文件，不管&#x200B;**文件预缓存**&#x200B;和&#x200B;**路径包含**&#x200B;下的设置如何。
 

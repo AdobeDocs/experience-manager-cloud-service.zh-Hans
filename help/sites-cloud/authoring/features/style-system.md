@@ -5,7 +5,7 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1320'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 93%
 * 模板作者可以在组件的内容策略中定义样式类。
 * 之后，内容作者在页面上编辑组件时，可以从下拉列表中选择这些类，以便应用相应的样式。
 
-然后，样式类将插入到组件的修饰包装元素中，这样组件开发人员就无需关心如何处理除了提供CSS规则之外的样式。
+样式类随后会插入到组件的装饰包装器元素中，这样组件开发人员除了提供 CSS 规则之外，便无需关注样式的处理。
 
 ## 概述 {#overview}
 
@@ -46,7 +46,7 @@ ht-degree: 93%
 
 1. 之后，AEM 页面作者可以在页面编辑器中通过组件工具栏的样式菜单选择设计的样式。
 
-请注意，实际上只有最后三个步骤在 AEM 中执行。这意味着无需使用AEM，即可完成必要CSS和JavaScript的所有开发。
+请注意，实际上只有最后三个步骤在 AEM 中执行。这意味着，必需的 CSS 和 JavaScript 的所有开发工作都可以在没有 AEM 的情况下完成。
 
 实际上，要实施这些样式，只需在 AEM 上部署并在所需模板的组件中进行选择即可。
 
@@ -104,7 +104,7 @@ ht-degree: 93%
 
 >[!CAUTION]
 >
->配置为组件策略的样式属性的CSS类（以及任何必需的JavaScript）必须部署为 [客户端库](/help/implementing/developing/introduction/clientlibs.md) 去工作。
+>配置为组件策略的样式属性的 CSS 类（以及任何必需的 JavaScript）必须部署为[客户端库](/help/implementing/developing/introduction/clientlibs.md)才能正常工作。
 
 ## 设置 {#setup}
 
@@ -152,7 +152,7 @@ ht-degree: 93%
 >
 1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。
-1. 最后，组件的 `cq:htmlTag`/ `cq:tagName` 视为回退值。
+1. 最后，组件的 `cq:htmlTag`/`cq:tagName` 会被视为回退值。
 >
 
 这种定义样式名称的功能对于通用的组件（如布局容器或内容片段组件）非常有用，可为它们提供更多含义。

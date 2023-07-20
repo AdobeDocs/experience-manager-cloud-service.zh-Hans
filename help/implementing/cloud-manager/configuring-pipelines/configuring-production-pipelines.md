@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1509'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -133,11 +133,11 @@ ht-degree: 96%
 1. 重复前两步，根据需要继续添加路径。
 
    * 最多可以添加 25 条路径。
-   * 如果您未定义任何路径，则默认情况下，网站主页包含在体验审核中。
+   * 如果您未定义任何路径，则默认情况下，网站主页会包含在体验审核中。
 
 1. 单击&#x200B;**保存**，保存您管道。
 
-为体验审核配置的路径会提交给服务，并在管道运行时根据性能、可访问性、SEO（搜索引擎优化）、最佳实践和 PWA（Progressive Web 应用程序）测试进行评估。参见 [了解体验审核结果](/help/implementing/cloud-manager/experience-audit-testing.md) 了解更多详细信息。
+为体验审核配置的路径会提交给服务，并在管道运行时根据性能、可访问性、SEO（搜索引擎优化）、最佳实践和 PWA（Progressive Web 应用程序）测试进行评估。有关更多详细信息，请参阅[了解体验审核结果。](/help/implementing/cloud-manager/experience-audit-testing.md)
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 
@@ -177,7 +177,7 @@ Web 层配置管道部署 HTTPD/Dispatcher 配置。 有关此类型管道的详
 
 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
 
-参见 [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此过程的工作方式以及一些需要注意的事项，以充分发挥此过程的潜力。
+请参阅[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
 
 ## 跳过 Dispatcher 程序包 {#skip-dispatcher-packages}
 

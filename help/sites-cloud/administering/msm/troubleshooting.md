@@ -7,7 +7,7 @@ exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -61,13 +61,13 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 ## 常见问题 {#faq}
 
-以下是与MSM和Live Copy相关的一些常见问题。
+以下是与 MSM 和 Live Copy 相关的一些常见问题。
 
 ### 为什么一些属性（例如标题、注释）在 MSM 转出期间未更新？ {#missing-properties}
 
 MSM 同步操作是高度可配置的。在转出期间修改哪些属性或组件直接取决于这些配置的属性。
 
-参见 [本文](best-practices.md) 以了解有关此主题的详细信息。
+有关此主题的更多信息，请参阅[本文。](best-practices.md)
 
 ### 如何删除一组作者的转出权限？ {#remove-rollout-permissions}
 
@@ -80,7 +80,7 @@ MSM 同步操作是高度可配置的。在转出期间修改哪些属性或组�
 
 ### 为什么我会看到带有后缀“_msm_moved”的 Live Copy 页面？ {#moved-pages}
 
-如果转出Blueprint页面，它将更新其Live Copy页面或创建Live Copy页面（如果该页面不存在）（例如，首次转出或手动删除Live Copy页面时）。
+如果转出 Blueprint 页面，它会更新其 Live Copy 页面或创建一个 Live Copy 页面（如果该页面不存在）（例如，首次转出或手动删除 Live Copy 页面时）。
 
 但在后一种情况下，如果存在不带 `cq:LiveRelationship` 属性的同名页面，则在创建 Live Copy 页面之前，会相应地重命名该页面。
 

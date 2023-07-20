@@ -5,7 +5,7 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '846'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,11 +45,11 @@ AEM Cloud Service 为管理 AEM 项目提供了许多新功能和可能性。但
 
 * [发布端投放](#publish-side-delivery)
 
-* [资产处理和投放](#asset-handling)
+* [资源处理和投放](#asset-handling)
 
 ## /apps 和 /libs 在运行时不可更改 {#apps-libs-immutable}
 
-`/apps` 和 `/libs` 中的所有内容和子文件夹均为只读。任何希望在这两处做出更改的功能或自定义代码都将无法进行。返回一个错误，指出此类内容是只读的，无法完成写入操作。 这对 AEM 的许多方面都有影响：
+`/apps` 和 `/libs` 中的所有内容和子文件夹均为只读。任何希望在这两处做出更改的功能或自定义代码都将无法进行。返回一个错误，指出此类内容为只读，无法完成写入操作。这对 AEM 的许多方面都有影响：
 
 * `/libs` 中不允许进行任何更改。
    * 这不是新规则，只是在先前的 AEM 内部部署版本中未强制执行。
@@ -115,6 +115,6 @@ AEM Cloud Service 中不能使用其他运行模式或自定义运行模式。
 
 要通过 AMS 或 On-Premise 安装进行项目转换，Adobe 强烈建议利用内置 CDN，因为 AEM Cloud Service 中的功能已针对提供的 CDN 进行了优化。
 
-## 资产处理和投放 {#asset-handling}
+## 资源处理和投放 {#asset-handling}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 中已优化资产上传、处理和下载。 [!DNL Assets] 现在更高效，支持更多扩展，并可让您以更快的速度上传和下载。此外，它会影响现有的自定义代码和一些操作。有关更改列表以及与 [!DNL Experience Manager] 6.5 功能的等同性，请参阅[更改 [!DNL Assets]](/help/assets/assets-cloud-changes.md)。
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 中已优化资源上传、处理和下载。 [!DNL Assets] 现在更高效，支持更多扩展，并可让您以更快的速度上传和下载。此外，它会影响现有的自定义代码和一些操作。有关更改列表以及与 [!DNL Experience Manager] 6.5 功能的等同性，请参阅[更改 [!DNL Assets]](/help/assets/assets-cloud-changes.md)。

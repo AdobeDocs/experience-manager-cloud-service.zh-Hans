@@ -5,17 +5,17 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2978'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # 基本处理 {#basic-handling}
 
-此文档旨在概述使用 AEM 创作环境时的基本处理。 它使用&#x200B;**站点**&#x200B;控制台作为基础。
+此文档旨在概述使用 AEM 创作环境时的基本处理。 它使用&#x200B;**Sites**&#x200B;控制台作为基础。
 
 >[!NOTE]
 >
->* 某些功能并不是在所有控制台中均可用，而且某些控制台可能会提供额外的功能。有关各个控制台及其相关功能的特定信息，将在其他页面上详细介绍。
+>* 某些功能并不是在所有控制台中均可用，而且某些控制台可能会提供额外的功能。其他页面中会更详细地介绍有关具体控制台及其相关功能的特定信息。
 >* 用户在整个 AEM 环境中都可以使用各种键盘快捷键，尤其是在[使用控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)和[编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)时。
 
 ## 触屏优化 UI {#a-touch-enabled-ui}
@@ -28,7 +28,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ![“导航”面板](/help/sites-cloud/authoring/assets/navigation.png)
 
-为了使您更好地了解 AEM 的基本用法，本文档基于&#x200B;**站点**&#x200B;控制台进行了介绍。请单击或点按&#x200B;**站点**&#x200B;以开始操作。
+为了使您更好地了解 AEM 的基本用法，本文档基于&#x200B;**Sites**&#x200B;控制台进行了介绍。请单击或点按&#x200B;**站点**&#x200B;以开始操作。
 
 ## 产品导航 {#product-navigation}
 
@@ -42,7 +42,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ## 全局导航 {#global-navigation}
 
-您可以使用全局导航面板在控制台之间导航。当您单击或点按屏幕左上角的Adobe Experience Manager链接时，会触发此功能。
+您可以使用全局导航面板在控制台之间导航。单击或点按屏幕左上角的 Adobe Experience Manager 链接，将显示一个全屏下拉菜单以供全局导航。
 
 通过单击或点按&#x200B;**关闭**&#x200B;可关闭全局导航面板，以返回到您之前所在的位置。
 
@@ -68,15 +68,15 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 | 控制台 | 用途 |
 |---|---|
 | 项目 | 通过“项目”控制台，您可以直接访问您的项目。[项目是虚拟功能板](/help/sites-cloud/authoring/projects/overview.md)，可用于组建团队。然后，您可以为该团队提供对资源、工作流和任务的访问权限，从而让人们朝着一个共同目标努力。 |
-| Sites | “站点”控制台让您可以[创建、查看和管理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)在 AEM 实例中运行的站点。通过此控制台，您可以创建、编辑、复制、移动和删除页面、启动工作流以及发布页面。 |
+| Sites | Sites 控制台让您可以[创建、查看和管理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)在 AEM 实例中运行的站点。通过此，您可以创建、编辑、复制、移动和删除页面、启动工作流以及发布页面。 |
 | 体验片段 | [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)是独立的体验，可以跨渠道重复使用，也可以具有变体，从而避免反复地复制和粘贴体验或体验的部分内容。 |
-| 资产 | 通过“资产”控制台，您可以导入和管理[数字资产，如图像、视频、文档和音频文件](/help/assets/overview.md)。 随后，这些资产便可由同一 AEM 实例上运行的任何站点使用。您还可以从 Assets 控制台创建和管理[内容片段](/help/assets/content-fragments/content-fragments.md)。 |
-| 个性化 | 此控制台提供了一个工具框架，用于 [创作目标内容和呈现个性化体验](/help/sites-cloud/authoring/personalization/overview.md). |
+| 资源 | 通过“资源”控制台，您可以导入和管理[数字资源，如图像、视频、文档和音频文件](/help/assets/overview.md)。 随后，这些资源便可由同一 AEM 实例上运行的任何站点使用。您还可以从 Assets 控制台创建和管理[内容片段](/help/assets/content-fragments/content-fragments.md)。 |
+| 个性化 | 此控制台为[创作目标内容和呈现个性化体验](/help/sites-cloud/authoring/personalization/overview.md)提供了一个工具框架。 |
 | 内容片段 | 您可使用[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)设计、创建、管理和发布独立于页面的内容。 它们允许您准备结构化内容，以准备在多个位置/多个渠道上使用，非常适合于页面创作和 headless 投放。 |
 
 ## “工具”面板 {#tools-panel}
 
-在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。 “工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资产及内容存储库的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。 “工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资源及内容存储库的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![“工具”面板](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -120,7 +120,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
   ![“边栏选择器”按钮](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-  显示的选项取决于您当前所在的控制台。例如，在&#x200B;**站点**&#x200B;中，您可以选择仅限内容（默认）、时间线、引用或过滤器侧面板。
+  显示的选项取决于您当前所在的控制台。例如，在&#x200B;**Sites**&#x200B;中，您可以选择仅限内容（默认）、时间线、引用或过滤器侧面板。
 
   ![边栏选择器示例](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
@@ -206,7 +206,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ## “操作”工具栏 {#actions-toolbar}
 
-每当选择资源（例如，一个页面或资产）时，工具栏中都会显示一些包含说明性文本的图标以指示各种操作。 这些操作取决于以下要素：
+每当选择资源（例如，一个页面或资源）时，工具栏中都会显示一些包含说明性文本的图标以指示各种操作。 这些操作取决于以下要素：
 
 * 当前控制台
 * 当前上下文
@@ -216,7 +216,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 [选择资源](#viewing-and-selecting-resources)的方式依视图而定。
 
-由于某些窗口存在空间限制，因此工具栏的长度可能很快就会超过可用空间。如果发生此情况，将会显示额外的选项。单击或点按省略号(三个点或 **...**)会打开一个下拉选择器，其中包含所有其余的操作。 例如，在 **Sites** 控制台中选择了一个页面之后：
+由于某些窗口存在空间限制，因此工具栏的长度可能很快就会超过可用空间。如果发生此情况，将会显示额外的选项。单击或点按省略号（三个点或 **...**）会打开下拉选择器，其中包含所有剩余操作。例如，在 **Sites** 控制台中选择了一个页面之后：
 
 ![其他选项](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -226,7 +226,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ## 快速操作 {#quick-actions}
 
-In [卡片视图](#card-view) 某些操作以快速操作图标的形式提供，并位于工具栏上。 快速操作图标一次只能用于一个项目，因此无需预先选择。
+在[信息卡视图](#card-view)中，某些操作以快速操作图标的形式呈现，同时也在工具栏中提供。快速操作图标一次只能用于一个项目，因此无需预先选择。
 
 当您将鼠标（桌面设备）悬停在资源信息卡上时，会见到快速操作。可用的快速操作取决于控制台和上下文。例如，下面是适用于 **Sites** 控制台中的页面的快速操作：
 
@@ -244,7 +244,7 @@ In [卡片视图](#card-view) 某些操作以快速操作图标的形式提供�
 
 >[!NOTE]
 >
->默认情况下，AEM Assets 不会在 UI 中将资产的原始呈现版本显示为任何视图中的缩略图。如果您是管理员，可以使用叠加来配置 AEM Assets，以将原始呈现版本显示为缩略图。
+>默认情况下，AEM Assets 不会在 UI 中将资源的原始呈现版本显示为任何视图中的缩略图。如果您是管理员，可以使用叠加来配置 AEM Assets，以将原始呈现版本显示为缩略图。
 
 ### 选择资源 {#selecting-resources}
 
@@ -281,7 +281,7 @@ In [卡片视图](#card-view) 某些操作以快速操作图标的形式提供�
 
 #### 选择示例 {#selecting-example}
 
-1. 例如，在卡片视图中：
+1. 例如在信息卡视图中：
 
    ![信息卡视图选择](/help/sites-cloud/authoring/assets/card-view-select.png)
 
@@ -299,15 +299,15 @@ In [卡片视图](#card-view) 某些操作以快速操作图标的形式提供�
 
 * 点按或单击资源名称或资源名称右侧的 V 形标记，可以在树中向上和向下导航。
 
-   * 点按或单击时，资源名称和V形高亮显示。
+   * 资源名称和 V 形标记在被点按或单击时会突出显示。
    * 单击/点按的资源的子资源将在其右侧的列中显示。
    * 如果点按或单击的资源名称没有子资源，则会在最后的列中显示其详细信息。
 
 * 点按或单击缩略图会选择该资源。
 
-   * 选中后，缩略图上将叠加一个复选标记，并且资源名称也会突出显示。
-   * 所选资源的详细信息将显示在最后一列。
-   * 操作工具栏将变为可用。
+   * 选择后，缩略图上会叠加一个勾号，并且资源名称也会突出显示。
+   * 最后的列中会显示选定资源的详细信息。
+   * 操作工具栏会变得可用。
 
   在列视图中选择页面后，选定的页面将与以下详细信息一起显示在最后的列中：
 
@@ -390,7 +390,7 @@ In [卡片视图](#card-view) 某些操作以快速操作图标的形式提供�
 
 ![扩展的边栏选择器](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-例如，在&#x200B;**站点**&#x200B;控制台中，您可以选择“仅限内容”（默认）、“内容树”、“时间线”、“引用”、“站点详细信息”或“过滤器”侧面板。
+例如，在&#x200B;**Sites**&#x200B;控制台中，您可以选择“仅限内容”（默认）、“内容树”、“时间线”、“引用”、“站点详细信息”或“过滤器”侧面板。
 
 如果选择“仅限内容”，则只会显示边栏图标。如果选择其他任何选项，则边栏图标旁边会显示选项名称。
 
@@ -402,7 +402,7 @@ In [卡片视图](#card-view) 某些操作以快速操作图标的形式提供�
 
 使用内容树，可以快速地在侧面板内的站点层次结构中进行导航，并详细查看当前文件夹中的页面相关信息。
 
-通过将内容树侧面板与列表视图或信息卡视图结合使用，用户可以轻松地查看项目的层次结构，并通过内容树侧面板在内容结构中轻松导航，并在列表视图中查看详细的页面信息。
+通过将内容树侧面板与列表视图或信息卡视图结合使用，用户可以方便地查看项目的层次结构，并通过内容树侧面板在内容结构中轻松导航，还可以在列表视图中查看详细的页面信息。
 
 ![内容树](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -410,7 +410,7 @@ In [卡片视图](#card-view) 某些操作以快速操作图标的形式提供�
 >
 >在层次结构视图中选择某个条目后，可以使用箭头键在层次结构中快速导航。
 >
->参见 [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 了解更多信息。
+>有关更多信息，请参阅[键盘快捷键。](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 ### 时间线 {#timeline}
 
@@ -460,15 +460,15 @@ In [卡片视图](#card-view) 某些操作以快速操作图标的形式提供�
 
 ### 站点 {#site}
 
-**站点** 显示网站的详细信息 [使用站点模板创建](/help/sites-cloud/administering/site-creation/create-site.md).
+**站点**&#x200B;显示[使用站点模板创建的](/help/sites-cloud/administering/site-creation/create-site.md)站点的详细信息。
 
 ![站点边栏](../assets/site-rail.png)
 
-查看文档 [使用站点边栏管理站点主题](/help/sites-cloud/administering/site-creation/site-rail.md) 有关如何使用边栏管理 [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md).
+参阅文档[使用站点边栏管理站点主题](/help/sites-cloud/administering/site-creation/site-rail.md)，了解有关如何使用边栏管理[站点主题](/help/sites-cloud/administering/site-creation/site-themes.md)的更多详细信息。
 
 >[!TIP]
 >
->从模板创建新站点并自定义其主题的过程的端到端描述，请参阅 [快速站点创建历程](/help/journey-sites/quick-site/overview.md).
+>可以在[快速站点创建历程](/help/journey-sites/quick-site/overview.md)中找到从模板创建新站点并自定义其主题的过程的端到端描述。
 
 ### 过滤器 {#filter}
 

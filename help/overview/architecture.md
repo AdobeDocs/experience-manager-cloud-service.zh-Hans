@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service 基于使用一个编排引擎，该引擎可以：
 ## 环境 {#environments}
 
 >[!NOTE]
->有关更多信息，请参阅 [部署 — 运行模式](/help/implementing/deploying/overview.md#runmodes)
+>有关更多信息，请参阅[部署 - 运行模式](/help/implementing/deploying/overview.md#runmodes)
 
 AEM as a Cloud Service 可用作单个实例，每个实例代表一个完整的 AEM 环境。
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 可提供三种类型的环境：
 
 * **开发环境**：允许开发人员在与暂存环境和生产环境相同的运行时条件下实施 AEM 应用程序。
 
-  参见 [管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-hans#using-cloud-manager) 了解更多详细信息。
+  有关详细信息，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-hans#using-cloud-manager)。
 
 * **快速开发环境**：允许快速开发迭代以调试新的或现有的代码。
 

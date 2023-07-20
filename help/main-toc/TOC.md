@@ -74,8 +74,8 @@ ht-degree: 99%
    + AEMaaCS 维护发行说明{#maintenance}
       + [当前维护发行说明](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [版维护发行说明 2023.7.0 版](/help/release-notes/maintenance/2023/2023.7.0.md)
-         + [版维护发行说明 2023.6.0 版](/help/release-notes/maintenance/2023/2023.6.0.md)
+         + [2023.7.0 维护版本发行说明](/help/release-notes/maintenance/2023/2023.7.0.md)
+         + [2023.6.0 维护版本发行说明](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [版维护发行说明 2023.4.0 版](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [版维护发行说明 2023.2.0 版](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [版维护发行说明 2023.1.0 版](/help/release-notes/maintenance/2023/2023.1.0.md)

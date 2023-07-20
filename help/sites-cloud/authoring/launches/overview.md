@@ -5,7 +5,7 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 92%
 * 为多个根目录分支创建启动项。虽然您可以为整个站点创建启动项（并从中做出更改），但由于需要复制整个站点，因此这可能不切实际。当涉及数百甚至数千个页面时，系统要求和性能会受到复制操作以及后续提升任务所需的比较操作的影响。
 * 嵌套启动项（一个启动项嵌套在另一个启动项中），以便能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
-此部分介绍了如何从“站点”控制台或[“启动项”控制台](#the-launches-console)中创建、编辑和提升（以及在必要[删除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)）启动页面：
+此部分介绍了如何从 Sites 控制台或[“启动项”控制台](#the-launches-console)中创建、编辑和提升（以及在必要[删除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)）启动页面：
 
 * [创建启动项](/help/sites-cloud/authoring/launches/creating.md)
 * [编辑启动项](/help/sites-cloud/authoring/launches/editing.md)
@@ -64,10 +64,10 @@ ht-degree: 92%
    * 自动 – 这涉及以下各项：
       * **启动**（**起始**）**日期**&#x200B;字段：可在创建或编辑启动项时设置此字段。
       * **生产就绪**&#x200B;标记：只能在编辑启动项时设置此标记。
-      * 如果 **生产就绪** 设置标记后，启动项将自动升级到指定上的生产页面 **Launch**(**实时**) **日期**. 提升后，生产页面会自动发布。\
+      * 如果&#x200B;**生产就绪**&#x200B;标志已设置，则启动项会于指定的&#x200B;**启动**（**起始**）**日期**&#x200B;自动提升到生产页面。提升后，生产页面会自动发布。\
         如果未设置日期，该标记将不起作用。
 * 并行更新源页面和启动页面：
-   * 对源页面所做的更改会自动在启动副本中实施（如果通过继承进行设置；即作为Live Copy）。
+   * 对源页面所做的更改会自动体现在启动副本中（如果进行了继承设置，即设置为 Live Copy）。
    * 可以在不中断这些自动更新或源页面的情况下对启动副本进行更改。
 
   ![并行操作](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -90,9 +90,9 @@ ht-degree: 92%
 
 ## “引用”（Sites 控制台）中的启动项 {#launches-in-references-sites-console}
 
-1. 在&#x200B;**站点**&#x200B;控制台中，导航到启动项的源。
+1. 在&#x200B;**Sites**&#x200B;控制台中，导航到启动项的源。
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。
-1. 选择 **启动次数**，则会列出现有启动项以及对的访问权限 **启动项控制台**：
+1. 选择&#x200B;**启动项**，这会列出现有启动项以及对&#x200B;**启动项控制台**&#x200B;的访问：
 
    ![ Sites 控制台中的启动项引用](/help/sites-cloud/authoring/assets/launches-references.png)
 
@@ -108,7 +108,7 @@ ht-degree: 92%
 
 * **引用**&#x200B;边栏的&#x200B;**启动项**&#x200B;部分底部的&#x200B;**启动项控制台**（在 Sites 控制台中导航源内容时）。
 
-  ![ Sites 控制台中的启动项引用中的启动项控制台](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![Sites 控制台中的启动项引用中的启动项控制台](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * 右上方的&#x200B;**启动项**&#x200B;按钮（在 Sites 控制台中导航启动项内容时）：
 

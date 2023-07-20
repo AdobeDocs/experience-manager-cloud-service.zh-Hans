@@ -5,7 +5,7 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -33,12 +33,12 @@ Universal Editor 由四个基本构建块组成，这些构建块将进行交互
 
 ### 编辑器 {#editors}
 
-* **Universal Editor** – Universal Editor 使用已插桩的 DOM 来允许就地编辑内容。 参见 [属性和类型](attributes-types.md) 以了解有关必要元数据的详细信息。 请参阅文档 [AEM Universal Editor 快速入门](getting-started.md)，了解 AEM 中插桩示例。
+* **Universal Editor** – Universal Editor 使用已插桩的 DOM 来允许就地编辑内容。 请参阅[属性和类型](attributes-types.md)，了解有关必要元数据的详细信息。请参阅文档 [AEM Universal Editor 快速入门](getting-started.md)，了解 AEM 中插桩示例。
 * **属性边栏** – 无法在上下文中编辑组件的某些属性，例如轮播的轮换时间或应始终打开或关闭哪个折叠选项卡。为了允许编辑此类组件信息，在编辑器的侧边栏中提供了一个基于表单的编辑器。
 
 ### 远程应用程序 {#remote-app}
 
-要在 Universal Editor 中使应用程序可在上下文中编辑，必须对 DOM 进行插桩。 远程应用程序必须在 DOM 中呈现某些属性。参见 [属性和类型](attributes-types.md) 以了解有关必要元数据的详细信息。 请参阅文档 [AEM Universal Editor 快速入门](getting-started.md)，了解 AEM 中插桩示例。
+要在 Universal Editor 中使应用程序可在上下文中编辑，必须对 DOM 进行插桩。 远程应用程序必须在 DOM 中呈现某些属性。请参阅[属性和类型](attributes-types.md)，了解有关必要元数据的详细信息。请参阅文档 [AEM Universal Editor 快速入门](getting-started.md)，了解 AEM 中插桩示例。
 
 Universal Editor 力求成为最小 SDK，因此，插桩是远程应用程序实施的责任。
 

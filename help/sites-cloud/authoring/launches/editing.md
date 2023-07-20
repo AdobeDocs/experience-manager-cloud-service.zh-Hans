@@ -5,7 +5,7 @@ exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Live Copy 用于将&#x200B;**&#x200B;源分支&#x200B;**&#x200B;中的内容同�
 
 要跟踪您所做的更改，您可以在&#x200B;**引用**&#x200B;中查看启动项，并将启动页面与其源页面进行比较：
 
-1. 在&#x200B;**站点**&#x200B;控制台中，[导航到启动项的源页面并选择其中一个源页面](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
+1. 在&#x200B;**Sites**&#x200B;控制台中，[导航到启动项的源页面并选择其中一个源页面](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
 1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板，然后选择&#x200B;**启动项**。
 1. 选择您的特定启动项，然后选择&#x200B;**和源比较**：
 
@@ -65,14 +65,14 @@ Live Copy 用于将&#x200B;**&#x200B;源分支&#x200B;**&#x200B;中的内容同�
 1. 从以下任一位置访问并选择启动项：
    * [“启动项”控制台](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)：
       * 选择&#x200B;**编辑**。
-   * [“引用”（“站点”控制台）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)，可显示可用操作：
+   * [“引用”（Sites 控制台）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)，可显示可用操作：
       * 选择&#x200B;**编辑启动项**。
       * 此时会显示源页面。
 1. 进行所需的更改，然后使用&#x200B;**保存**&#x200B;进行确认。
 
 >[!NOTE]
 >
->要将页面添加到启动项，这些页面必须位于公共语言根之下；即，位于单个站点中。
+>要将页面添加到启动项，这些页面必须位于通用语言根目录下；即，在单个站点内。
 
 ## 编辑启动项配置 {#editing-a-launch-configuration}
 
@@ -81,7 +81,7 @@ Live Copy 用于将&#x200B;**&#x200B;源分支&#x200B;**&#x200B;中的内容同�
 1. 从以下任一位置访问并选择启动项：
    * [“启动项”控制台](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)：
       * 选择&#x200B;**属性**。
-   * [“引用”（“站点”控制台）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)，可显示可用操作：
+   * [“引用”（Sites 控制台）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)，可显示可用操作：
       * 选择&#x200B;**编辑属性**。
       * 详细信息会显示。
 1. 进行所需的更改，然后使用&#x200B;**保存**&#x200B;进行确认。
@@ -89,6 +89,6 @@ Live Copy 用于将&#x200B;**&#x200B;源分支&#x200B;**&#x200B;中的内容同�
 
 ## 发现页面的启动状态 {#discovering-the-launch-status-of-a-page}
 
-从“引用”选项卡中选择特定启动项时，将会显示状态（请参阅[“引用”（“站点”控制台）中的启动项](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)）。
+从“引用”选项卡中选择特定启动项时，将会显示状态（请参阅[“引用”（Sites 控制台）中的启动项](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)）。
 
 ![发现启动项状态](/help/sites-cloud/authoring/assets/launches-status.png)

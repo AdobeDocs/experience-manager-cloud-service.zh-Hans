@@ -7,7 +7,7 @@ exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Blueprint 配置标识要用作一个或多个 Live Copy 页面的源的现有�
 
 Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因此，必须使用 CI/CD 管道通过 Git 部署任何配置更改。
 
-有关更多信息，请参阅本文 [对Adobe Experience Manager (AEM)as a Cloud Service的重要更改](/help/release-notes/aem-cloud-changes.md).
+有关更多信息，请参阅[对 Adobe Experience Manager (AEM) as a Cloud Service 的重要更改](/help/release-notes/aem-cloud-changes.md)一文。
 
 以下步骤仅可供管理员对本地开发实例执行以进行测试和开发。这些选项在任何 AEMaaCS 云实例中均不可用。
 
@@ -106,7 +106,7 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
 要创建 Live Copy，请执行以下操作：
 
-1. 在&#x200B;**站点**&#x200B;控制台中，依次选择&#x200B;**创建**&#x200B;和 **Live Copy**。
+1. 在&#x200B;**Sites**&#x200B;控制台中，依次选择&#x200B;**创建**&#x200B;和 **Live Copy**。
 
    ![创建 Live Copy](../assets/create-live-copy.png)
 
@@ -164,7 +164,7 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
 要从 Blueprint 配置创建站点的 Live Copy，请执行以下操作：
 
-1. 在 **站点** 控制台，选择 **创建**，则 **站点** 从下拉选择器中。
+1. 在&#x200B;**Sites**&#x200B;控制台中，选择&#x200B;**创建**，然后从下拉选择器中选择&#x200B;**站点**。
 1. 选择要用作 Live Copy 源的 Blueprint 配置，然后单击&#x200B;**下一步**&#x200B;以继续：
 
    ![从 Blueprint 创建站点](../assets/create-site-from-blueprint.png)
@@ -178,7 +178,7 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
    ![创建站点时指定属性](../assets/create-site-properties.png)
 
 1. 使用&#x200B;**初始章节**&#x200B;下拉列表选择要包含在 Live Copy 中的 Blueprint 的部分。虽然默认情况下会包含所有可用章节，但可以删除这些章节。
-1. 提供剩余属性的值，然后选择&#x200B;**创建**。在确认对话框中，选择&#x200B;**完成**&#x200B;以返回&#x200B;**站点**&#x200B;控制台，或选择&#x200B;**打开站点**&#x200B;以打开站点的根页面。
+1. 提供剩余属性的值，然后选择&#x200B;**创建**。在确认对话框中，选择&#x200B;**完成**&#x200B;以返回&#x200B;**Sites**&#x200B;控制台，或选择&#x200B;**打开站点**&#x200B;以打开站点的根页面。
 
 ### 在 Live Copy（Blueprint 配置）中创建 Live Copy {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
@@ -200,7 +200,7 @@ Live Copy 页面的属性显示有关 Live Copy 的以下信息：
 
 要查看属性，请执行以下操作：
 
-1. 在&#x200B;**站点**&#x200B;控制台中，选择 Live Copy 页面并打开属性。
+1. 在&#x200B;**Sites**&#x200B;控制台中，选择 Live Copy 页面并打开属性。
 1. 选择 **Live Copy** 选项卡。
 
    例如：
@@ -231,7 +231,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 #### 从页面属性转出 Blueprint {#rolling-out-a-blueprint-from-page-properties}
 
-1. 在&#x200B;**站点**&#x200B;控制台中，选择 Blueprint 中的页面并打开属性。
+1. 在&#x200B;**Sites**&#x200B;控制台中，选择 Blueprint 中的页面并打开属性。
 1. 打开 **Blueprint** 选项卡。
 1. 选择&#x200B;**转出**。
 
@@ -245,11 +245,11 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
    ![定义转出时间](../assets/rollout-now-later.png)
 
-转出作为异步作业处理，并且可在 [***异步作业状态** 页面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+转出作为异步作业处理，并且可在[***异步作业状态**&#x200B;页面上进行查看。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
 #### 从引用边栏转出 Blueprint {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. 在&#x200B;**站点**&#x200B;控制台中，从 Live Copy 中选择此页面，然后从工具栏中打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板。
+1. 在&#x200B;**Sites**&#x200B;控制台中，从 Live Copy 中选择此页面，然后从工具栏中打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板。
 1. 从列表中选择 **Blueprint** 选项以查看与此页面关联的 Blueprint。
 1. 从列表中选择所需的 Blueprint。
 1. 单击或点按&#x200B;**转出**。
@@ -270,7 +270,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 1. 确认这些详细信息后，选择&#x200B;**转出**&#x200B;以执行此操作。
 
-转出作为异步作业处理，并且可在 [**异步作业状态** 页面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+转出作为异步作业处理，并且可在&#x200B;[**异步作业状态**&#x200B;页面上进行查看。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
 #### 从 Live Copy 概述转出 Blueprint {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
    ![定义转出计划](../assets/rollout-now-later.png)
 
-转出作为异步作业处理，并且可在 [**异步作业状态** 页面](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
+转出作为异步作业处理，并且可在&#x200B;[**异步作业状态**&#x200B;页面上进行查看。](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
 ### 同步 Live Copy {#synchronizing-a-live-copy}
 
@@ -303,7 +303,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 >
 >同步执行使用[转出](live-copy-sync-config.md#rollout-triggers)触发器的转出配置。
 
-1. 在&#x200B;**站点**&#x200B;控制台中，选择 Live Copy 页面并打开属性。
+1. 在&#x200B;**Sites**&#x200B;控制台中，选择 Live Copy 页面并打开属性。
 1. 打开 **Live Copy** 选项卡。
 1. 单击或点按&#x200B;**同步**。
 
@@ -367,7 +367,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 要暂停页面上的继承，请执行以下操作：
 
-1. 使用&#x200B;**站点**&#x200B;控制台的&#x200B;**查看属性**&#x200B;命令或页面工具栏上的&#x200B;**页面信息**&#x200B;来打开 Live Copy 页面的属性。
+1. 使用&#x200B;**Sites**&#x200B;控制台的&#x200B;**查看属性**&#x200B;命令或页面工具栏上的&#x200B;**页面信息**&#x200B;来打开 Live Copy 页面的属性。
 1. 单击或点按 **Live Copy** 选项卡。
 1. 从工具栏中选择&#x200B;**暂停**。之后，您可以选择：
 
@@ -429,7 +429,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 ### 更改继承深度（浅/深） {#changing-inheritance-depth-shallow-deep}
 
-在现有Live Copy上，您可以更改页面的深度，即是否包含子页面。
+在现有 Live Copy 上，您可以更改页面的深度，即是否包含子页面。
 
 * 切换到浅 Live Copy：
 
@@ -450,7 +450,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 要指定或更改深度，请执行以下操作：
 
-1. 使用&#x200B;**站点**&#x200B;控制台的&#x200B;**查看属性**&#x200B;命令或页面工具栏上的&#x200B;**页面信息**&#x200B;来打开 Live Copy 页面的属性。
+1. 使用&#x200B;**Sites**&#x200B;控制台的&#x200B;**查看属性**&#x200B;命令或页面工具栏上的&#x200B;**页面信息**&#x200B;来打开 Live Copy 页面的属性。
 1. 单击或点按 **Live Copy** 选项卡。
 1. 在&#x200B;**配置**&#x200B;部分中，根据是否包含子页面来设置或清除 **Live Copy 继承**&#x200B;选项：
 
@@ -529,7 +529,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 >
 >当您重新启用继承时，Live Copy 页面属性不会自动与源属性同步。如果需要，您可以手动请求同步。
 
-1. 使用&#x200B;**站点**&#x200B;控制台的&#x200B;**查看属性**&#x200B;选项或页面工具栏上的&#x200B;**页面信息**&#x200B;图标来打开 Live Copy 页面的属性。
+1. 使用&#x200B;**Sites**&#x200B;控制台的&#x200B;**查看属性**&#x200B;选项或页面工具栏上的&#x200B;**页面信息**&#x200B;图标来打开 Live Copy 页面的属性。
 1. 要取消属性的继承，请单击或点按属性右侧显示的链接图标。
 
    ![“取消继承”按钮](../assets/cancel-inheritance-button.png)
@@ -553,7 +553,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 #### 从页面属性重置 Live Copy 页面 {#reset-a-live-copy-page-from-the-page-properties}
 
-1. 在&#x200B;**站点**&#x200B;控制台中，选择 Live Copy 页面，然后选择&#x200B;**查看属性**。
+1. 在&#x200B;**Sites**&#x200B;控制台中，选择 Live Copy 页面，然后选择&#x200B;**查看属性**。
 1. 打开 **Live Copy** 选项卡。
 1. 从工具栏中选择&#x200B;**重置**。
 
@@ -575,7 +575,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 要跟踪您所做的更改，您可以在&#x200B;**引用**&#x200B;中查看 Blueprint 页面，并将该页面与其源页面进行比较：
 
-1. 在 **站点** 控制台， [导航到Blueprint或Live Copy页面并将其选定](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. 在 **Sites**&#x200B;控制台中，[导航到 Blueprint 或 Live Copy 页面并将其选定。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板，并根据上下文选择：
 
    * **Blueprint**
@@ -635,7 +635,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 要分离 Live Copy，请执行以下操作：
 
-1. 在&#x200B;**站点**&#x200B;控制台中，选择 Live Copy 页面，然后单击或点按&#x200B;**查看属性**。
+1. 在&#x200B;**Sites**&#x200B;控制台中，选择 Live Copy 页面，然后单击或点按&#x200B;**查看属性**。
 1. 打开 **Live Copy** 选项卡。
 1. 在工具栏上，选择&#x200B;**分离**。
 

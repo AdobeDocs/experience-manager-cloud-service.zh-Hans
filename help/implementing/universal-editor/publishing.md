@@ -3,7 +3,7 @@ title: 使用 Universal Visual Editor 发布内容
 description: 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 100%
 

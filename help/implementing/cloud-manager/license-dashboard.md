@@ -5,7 +5,7 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '873'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 >[!TIP]
 >
->参见 [Admin Console概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 了解如何通过Admin Console管理整个组织的Adobe授权。
+>请参阅 [Admin Console 概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)，了解如何从 Admin Console 管理整个组织的 Adobe 权利。
 
 ## 常见问题解答 {#faq}
 
@@ -85,7 +85,7 @@ AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷�
 
 ### 如果我想了解有关我的内容请求量的更多信息怎么办？ {#current-request-volumes}
 
-如果您想进一步了解许可证仪表板中显示的内容请求量，您的 Adob&#x200B;e 团队可以提供一份报告，其中会显示内容请求的主要驱动因素。请联系您的Adobe团队或Adobe客户关怀团队，以请求获取最佳使用报表。
+如果您想进一步了解许可证仪表板中显示的内容请求量，您的 Adob&#x200B;e 团队可以提供一份报告，其中会显示内容请求的主要驱动因素。请联系您的 Adob&#x200B;e 团队或 Adob&#x200B;e 客户关怀部门，以请求获得有关最高使用率的报告。
 
 ### 如果我使用自己的 CDN 怎么办？ {#using-own-cdn}
 

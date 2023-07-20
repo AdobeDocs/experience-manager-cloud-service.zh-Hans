@@ -5,7 +5,7 @@ exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 93%
       <td>所有 </td>
       <td> </td>
       <td>变量 </td>
-      <td>处理剩余内容片段直至下一个限制的时间间隔（秒）<br>此间隔还被视为启动作业之前的等待时间，以及处理每个后续CF_MIGRATION_LIMIT数CF之间的延迟。<br>(*)</td>
+      <td>处理剩余内容片段直到下一个限制的时间间隔（秒）<br>此时间间隔也被视为开始作业之前的等待时间，以及处理每个后续 CF_MIGRATION_LIMIT 个 CF 之间的延迟。<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -146,7 +146,7 @@ ht-degree: 93%
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   使用 Splunk 启用对环境日志的访问的客户可以使用下面的示例查询来监控升级过程。有关启用Splunk日志记录的详细信息，请参阅 [调试生产和暂存](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) 页面。
+   使用 Splunk 启用对环境日志的访问的客户可以使用下面的示例查询来监控升级过程。有关启用 Splunk 记录的详细信息，请参阅[调试生产和阶段](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage)页面。
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 

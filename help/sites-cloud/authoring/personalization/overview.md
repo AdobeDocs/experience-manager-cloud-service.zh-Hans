@@ -5,7 +5,7 @@ exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ AEM 提供了用于以下情形的工具框架：
 
 构成体验的一组组件。
 
-[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)由内容和信息（样式等）组成以创造体验；它们可以在页面创作时直接使用。 它们可以视为 AEM 页面的子集。它们允许内容作者跨渠道（包括Sites页面和第三方系统）重用内容。
+[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)由内容和信息（样式等）组成以创造体验；它们可以在页面创作时直接使用。 它们可以视为 AEM 页面的子集。支持内容创作者可在渠道（包括 Sites 页面和第三方系统）间重用内容。
 
 对于个性化示例，可以组合标题、图像、描述和号召性用语按钮以形成 Teaser 体验。使用体验片段是使用 Adobe Target 个性化的关键部分。
 
@@ -117,8 +117,8 @@ AEM 提供了一个内置定位引擎 [ContextHub](/help/implementing/developing
 
 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 定位引擎允许从 Adobe Target 中跟踪的页面访问收集信息。
 
-* 使用此定位引擎时，您可以使用从Adobe Target导入的区段来定义体验的受众。
-* 使用Adobe Target引擎的活动包括 [已同步到Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* 使用此定位引擎时，您可以使用从 Adobe Target 导入的区段来定义体验受众。
+* 使用 Adobe Target 引擎的活动会[同步到 Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)。
 
 [与 Adobe Target 集成后](/help/sites-cloud/integrating/integrating-adobe-target.md)，您便可以使用此引擎。
 

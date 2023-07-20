@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3706'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -177,7 +177,7 @@ Resource myPage = req.getResource();
 
 #### 虚 URL {#vanity-urls}
 
-如果作者出于促销目的，希望从另一个位置访问页面，则 AEM 逐页定义的虚 URL 可能会有用。要为页面添加虚 URL，请在&#x200B;**站点**&#x200B;控制台中导航到该页面，并编辑页面属性。在&#x200B;**基本**&#x200B;选项卡的底部，您会看到可添加虚 URL 的部分。请记住，通过多个 URL 访问特定页面会分割该页面的 SEO 价值，因此，应向页面添加规范 URL 标记以避免出现此问题。
+如果作者出于促销目的，希望从另一个位置访问页面，则 AEM 逐页定义的虚 URL 可能会有用。要为页面添加虚 URL，请在&#x200B;**Sites**&#x200B;控制台中导航到该页面，并编辑页面属性。在&#x200B;**基本**&#x200B;选项卡的底部，您会看到可添加虚 URL 的部分。请记住，通过多个 URL 访问特定页面会分割该页面的 SEO 价值，因此，应向页面添加规范 URL 标记以避免出现此问题。
 
 #### 本地化的页面名称 {#localized-page-names}
 
@@ -284,7 +284,7 @@ Resource myPage = req.getResource();
 
 到目前为止，您已经与组件中的逻辑一起实施了映射，以便在将 URL 输出到页面时使用这些映射。
 
-最后一步就是缩短的 URL 进入 Dispatcher 后如何进行处理，这正是 `mod_rewrite` 发挥作用的时候。使用获得的最大好处 `mod_rewrite` URL会映射回其长格式 *早于* 它们会被发送到Dispatcher模块。 这意味着，Dispatcher 将向发布服务器请求长 URL 并相应地对其进行缓存。因此，从发布服务器传入的任何 Dispatcher 刷新都将能够成功地使此内容失效。
+最后一步就是缩短的 URL 进入 Dispatcher 后如何进行处理，这正是 `mod_rewrite` 发挥作用的时候。使用 `mod_rewrite` 最大的好处是，在将 URL 发送到 Dispatcher 模块&#x200B;*之前*，该 URL 会映射回其长格式。这意味着，Dispatcher 将向发布服务器请求长 URL 并相应地对其进行缓存。因此，从发布服务器传入的任何 Dispatcher 刷新都将能够成功地使此内容失效。
 
 要实施这些规则，可以在 Apache HTTP Server 配置的虚拟主机下添加 `RewriteRule` 元素。如果要将前面示例中缩短的 URL 展开，您可以实施如下规则：
 
@@ -347,7 +347,7 @@ Disallow: /
 
 或者，在实时环境中，您可以选择禁止某些不希望索引的路径。
 
-配售WSL及WSL之 `robots.txt` 站点根目录中的文件是，Dispatcher刷新请求可能会清除此文件，并且URL映射可能会将该站点根目录放置在与 `DOCROOT` 如Apache HTTP Server配置中所定义。 因此，通常将该文件放在站点根目录的作者实例上，并将其复制到发布实例。
+将 `robots.txt` 文件放在站点根目录时应当注意，Dispatcher 刷新请求可能会清除此文件，同时 URL 映射可能会将该站点根目录放置在与 Apache HTTP Server 配置中定义的 `DOCROOT` 不同的位置。因此，通常将该文件放在站点根目录的作者实例上，并将其复制到发布实例。
 
 ### 在 AEM 上构建 XML Sitemap {#building-an-xml-sitemap-on-aem}
 
@@ -457,7 +457,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-此外，为 XML Sitemap 实施的功能也可用于不同的用例，例如将规范链接或语言替代项添加到页头。请参阅 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 界面以了解更多信息。
+此外，为 XML Sitemap 实施的功能也可用于不同的用例，例如将规范链接或语言替代项添加到页头。有关更多信息，请参阅 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 接口。
 
 ### 为旧版 URL 创建 301 重定向 {#creating-redirects-for-legacy-urls}
 
@@ -470,7 +470,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
 ## 其他资源 {#additional-resources}
 
-有关更多信息，请参阅以下其他资源：
+有关详细信息，请参阅以下其他资源：
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

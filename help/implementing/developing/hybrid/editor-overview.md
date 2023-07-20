@@ -5,7 +5,7 @@ exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中�
 
 ## 设计 {#design}
 
-SPA的页面组件不通过JSP或HTL文件提供其子组件的HTML元素。 此操作将委派给 SPA 框架。从 JCR 中以 JSON 数据结构形式获取子组件或模型的呈现。之后，根据该结构将 SPA 组件添加到页面。此行为将页面组件的初始主体构图与非 SPA 对应项区分开来。
+SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素。此操作将委派给 SPA 框架。从 JCR 中以 JSON 数据结构形式获取子组件或模型的呈现。之后，根据该结构将 SPA 组件添加到页面。此行为将页面组件的初始主体构图与非 SPA 对应项区分开来。
 
 ### 页面模型管理 {#page-model-management}
 
@@ -64,7 +64,7 @@ SPA的页面组件不通过JSP或HTL文件提供其子组件的HTML元素。 此
 * 页面编辑器和 SPA 之间的通信采用的是 JSON 而不是 HTML。
 * 页面编辑器通过 iframe 和消息 API 向 SPA 提供最新版本的页面模型。
 * 页面模型管理器告知编辑器它已准备好进行编辑，并将页面模型作为 JSON 结构进行传递。
-* 编辑器不会更改甚至访问所创作页面的DOM结构，而是提供最新的页面模型。
+* 编辑器不更改或访问正在创作的页面的 DOM 结构，而是提供最新的页面模型。
 
 ![SPA 工作流](assets/workflow.png)
 
@@ -147,7 +147,7 @@ SPA的页面组件不通过JSP或HTL文件提供其子组件的HTML元素。 此
 
 ## 要求和限制 {#requirements-limitations}
 
-要使作者能够使用页面编辑器编辑 SPA 的内容，必须实施您的 SPA 应用程序以便与 AEM SPA Editor SDK 进行交互。请参阅 [在AEM中使用React快速入门SPA](getting-started-react.md) 记录运行所需了解的最少信息。
+要使作者能够使用页面编辑器编辑 SPA 的内容，必须实施您的 SPA 应用程序以便与 AEM SPA Editor SDK 进行交互。请参阅[使用 React 在 AEM 中开始使用 SPA](getting-started-react.md) 文档，了解开始使用 SPA 的最低要求。
 
 ### 支持的框架 {#supported-frameworks}
 
@@ -160,7 +160,7 @@ SPA 编辑器 SDK 支持以下最低版本：
 
 ### 其他框架 {#additional-frameworks}
 
-可以实施其他 SPA 框架以与 AEM SPA Editor SDK 结合使用。请参阅 [SPA Blueprint](blueprint.md) 此文档介绍了框架在创建由模块、组件和服务组成的框架特定层以使用AEM SPA编辑器时必须满足的要求。
+可以实施其他 SPA 框架以与 AEM SPA Editor SDK 结合使用。请参阅 [SPA Blueprint](blueprint.md) 文档，了解框架必须满足哪些要求，才能创建由模块、组件和服务组成的框架特定的层以与 AEM SPA Editor 结合使用。
 
 ### 使用多个选择器 {#multiple-selectors}
 
@@ -173,7 +173,7 @@ SPA 编辑器 SDK 支持以下最低版本：
 1. 在包含文本 HTML 的容器包装器元素上设置属性（可以是任意属性）。对于 WKND SPA Project，它是一个 `<div>` 元素，并且使用的选择器是 `data-rte-editelement`。
 1. 在指向该选择器的相应 AEM 文本组件的 `cq:InplaceEditingConfig` 上设置配置 `editElementQuery`，例如 `data-rte-editelement`。这可让编辑器知道哪个 HTML 元素包装了 HTML 文本。
 
-欲知关于 `editElementQuery` 属性和富文本编辑器的配置，请参见 [配置富文本编辑器](/help/implementing/developing/extending/rich-text-editor.md).
+有关富文本编辑器的 `editElementQuery` 属性和配置的更多信息，请参阅[配置富文本编辑器。](/help/implementing/developing/extending/rich-text-editor.md)
 
 ### 限制 {#limitations}
 

@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: b738d351a8ec607bef6c82880616061a88968e7f
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 43%
+ht-degree: 87%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 43%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.6.0) 的发布日期为 2023 年 6 月 29 日。下一个功能版本(2023.7.0)计划于2023年7月27日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2023.6.0) 的发布日期为 2023 年 6 月 29 日。下一个功能版本 (2023.7.0) 计划于 2023 年 7 月 27 日发布。
 
 ## 发布视频 {#release-video}
 
@@ -39,74 +39,74 @@ ht-degree: 43%
 ### [!DNL Experience Manager Sites] 中的新增功能 {#sites-features}
 
 * 内容片段及其引用现在可以使用[内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hans)发布到 [AEM 预览服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans#access-preview-service)，允许用户在上线前在解耦的预览应用程序上预览最终体验。
-* 现在可以使用AEM GraphQL在Headless场景中为Web投放动态优化图像。 [查询变量](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) 可以在GraphQL查询中定义，以允许分离的客户端应用程序从AEM请求相应地优化的图像。
-* 上的标记 [内容片段变量](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) 现在可以使用AEM GraphQL内容投放API输出到JSON。
+* 现在可以使用 AEM GraphQL 在 Headless 场景中动态优化图像以实现 Web 交付。[查询变量](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables)可以在 GraphQL 查询中定义，以允许解耦的客户端应用程序从 AEM 请求相应优化的图像。
+* [内容片段变体](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en)上的标记现在可以使用 AEM GraphQL 内容交付 API 将其输出为 JSON。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-**新资源视图的可用性**
+**新的资源视图的可用性**
 
-此 [新建资源视图](/help/assets/assets-view-introduction.md) 现已在Experience Manager Assets中提供。 Assets View提供了简化的用户界面，使您能够轻松管理、发现和分发数字资产。 该体验面向创意人员、只读资产使用者和较轻的DAM用户。
+[新的资源视图](/help/assets/assets-view-introduction.md)现已在 Experience Manager Assets 中提供。资源视图提供简化的用户界面，使您可以轻松管理、探索和分发数字资源。 该体验面向创意人员、只读资源消费者和轻量级 DAM 用户。
 
 ![标记管理](/help/assets/assets/my-workspace.png)
 
-**搜索体验增强功能**
+**搜索体验增强**
 
-Experience Manager Assets现在允许您从搜索结果用户界面执行更多操作：您现在可以：
+Experience Manager Assets 现在使您能够通过搜索结果用户界面执行更多操作：您现在可以：
 
-* [在当前存储库位置中执行搜索](/help/assets/search-assets.md) 默认情况下，不会搜索整个存储库中的关键字。
+* [默认情况下在当前存储库位置内执行搜索，而不是在整个存储库中搜索关键字。](/help/assets/search-assets.md)
 
-* [导航到文件夹位置](/help/assets/search-assets.md#aftersearch) 对于显示在搜索结果中的资源。
+* [导航到搜索结果中显示的资源的文件夹位置。](/help/assets/search-assets.md#aftersearch)
 
 **3D 资源的缩略图预览**
 
-[!DNL Experience Manager Assets] 现在可以生成常见 3D 文件格式的缩略图预览，包括 gLB、USDz、FBX、3DS、OBJ 和 SBSAR。[](/help/assets/file-format-support.md)上传这些文件时，默认情况下会自动生成缩略图。
+[!DNL Experience Manager Assets] 现在可以生成常见 3D 文件格式的缩略图预览，包括 gLB、USDz、FBX、3DS、OBJ 和 SBSAR。[](/help/assets/file-format-support.md)当这些文件上传时，默认情况下会自动生成缩略图。
 
 **链接共享配置**
 
-改进的新用户体验，用于 [创建链接共享](/help/assets/share-assets.md) 以及一组全新的配置，管理员可通过这些配置自定义用户使用此功能的默认行为。
+为[创建链接共享](/help/assets/share-assets.md)提供了改进的全新用户体验，以及一组全新的配置，其中管理员可以为您的用户自定义此功能的默认行为。
 
 ![标记管理](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media：更新了图像配置文件中与智能裁剪相关的字段**
 
-图像配置文件中一些与智能裁剪相关的字段的用户界面现已更新，以反映当前定义智能裁剪的准则。 请参阅[裁切选项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hans#crop-options)。
+图像配置文件中一些与 Smart Crop 相关的字段的用户界面现已更新，可反映当前定义 Smart Crop 的指南。请参阅[裁切选项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en#crop-options)。
 
-### Assets视图中的新增功能 {#assets-view-features}
+### 资源视图中的新增功能 {#assets-view-features}
 
 **资源的分层标记可提供更快的搜索体验**
 
-随着时间的推移，受控词汇的扁平列表变得难以管理。资源视图现在支持 [分层标记结构](/help/assets/tagging-management-assets-view.md)，这有助于应用相关元数据、对资产进行分类、支持搜索、重用标记、提高可发现性等。
+随着时间的推移，受控词汇的扁平列表变得难以管理。资源视图现在支持[分层的标记结构](/help/assets/tagging-management-assets-view.md)，该结构便于应用相关的元数据、为资源分类、支持搜索、重用标记、提高可发现性等。
 
 ![标记管理](/help/assets/assets/tags-hierarchy.png)
 
 **固定文件、文件夹和集合以便快速访问**
 
-您现在可以 [固定文件、文件夹和收藏集以加快访问速度](/help/assets/my-workspace-assets-view.md) 到这些项目（稍后需要）。 经过固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分。您可以使用“我的工作区”访问它们，而无需导航到存储库中保存它们的位置。
+您现在可以[固定文件、文件夹和集合，以便在以后需要时更快地访问](/help/assets/my-workspace-assets-view.md)这些项目。经过固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分。您可以使用“我的工作区”访问它们，而无需导航到存储库中保存它们的位置。
 
 ![工作区中的“任务”](/help/assets/assets/quick-access.png)
 
 **过滤“垃圾箱”文件夹中的资源**
 
-现在通过“资源”视图，您可以 [筛选可在垃圾桶文件夹中找到的资源](/help/assets/navigate-assets-view.md). 您还可以应用标准或自定义过滤器来搜索“垃圾箱”文件夹中的相应资源，以恢复或永久删除它们。
+现在通过资源视图可以[筛选“垃圾箱”文件夹中的资源。](/help/assets/navigate-assets-view.md)您还可以应用标准或自定义过滤器来搜索“垃圾箱”文件夹中的相应资源，以恢复或永久删除它们。
 
 **3D 资源的缩略图预览**
 
-Assets视图现在可生成常见3D文件格式（包括gLB、USDz、FBX、3DS、OBJ和SBSAR）的缩略图预览。 这些文件上传到“资产”视图后，系统会默认自动生成缩略图。
+资源视图现在可以生成常见 3D 文件格式的缩略图预览，包括 gLB、USDz、FBX、3DS、OBJ 和 SBSAR。当这些文件上传到资源视图时，默认情况下系统会自动生成缩略图。
 
 ![工作区中的“任务”](/help/assets/assets/3d-preview.png)
 
 **查看热门搜索词**
 
-资源视图现在支持 [查看部署中的热门搜索词](/help/assets/my-workspace-assets-view.md) 使用 **分析** 部分。 您还可以访问详细的见解，以查看过去 30 天或 12 个月内的热门搜索。
+现在支持使用“我的工作区”的&#x200B;**“见解”**&#x200B;部分[查看资源视图部署](/help/assets/my-workspace-assets-view.md)中搜索最多的术语。您还可以访问详细的见解，以查看过去 30 天或 12 个月内的热门搜索。
 
 ![工作区中的“任务”](/help/assets/assets/insights-top-searches.png)
 
 **元数据表单增强功能**
 
-现在通过“资源”视图，您可以 [添加多值文本和下拉列表属性组件](/help/assets/metadata-assets-view.md#property-components) 到元数据表单。
+资源视图现在允许您[向元数据表单添加多值文本和下拉列表属性组件。](/help/assets/metadata-assets-view.md#property-components)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -119,25 +119,25 @@ Assets视图现在可生成常见3D文件格式（包括gLB、USDz、FBX、3DS�
 
 * [将Adobe Acrobat Sign Solutions用于政府（HIPPA投诉）与AEM Forms结合使用](/help/forms/adobe-sign-integration-adaptive-forms.md)：AEM Forms现在与面向政府的Adobe Acrobat Sign Solutions集成。 这种集成为政府型账户（政府部门和机构）的自适应表单提交提供了高级的电子签名合规性和安全性。
 
-  与面向政府的Adobe Acrobat Sign Solutions集成使Adobe的合作伙伴和政府客户能够在Adaptive Forms中使用电子签名处理一些任务最关键和最敏感的业务线。 这层额外的安全保障机制确保所有电子签名完全符合 FedRAMP Moderate 合规性，使 Adobe 的政府客户能够安心使用。
+  与 Adobe Acrobat Sign 解决方案政府版的集成使 Adobe 的合作伙伴和政府客户能够在一些最关键和敏感的业务领域使用自适应表单中的电子签名功能。这层额外的安全保障机制确保所有电子签名完全符合 FedRAMP Moderate 合规性，使 Adobe 的政府客户能够安心使用。
 
-* [在规则编辑器中使用自定义错误处理程序增强了错误处理能力](/help/forms/add-custom-error-handler-adaptive-forms.md)：您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误，并为最终用户提供量身定制的响应。 或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端为特定的错误代码调用自定义工作流，或者通知客户服务已停止。
+* [增强了使用规则编辑器中的自定义错误处理程序处理错误的功能：您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误，并为最终用户提供量身定制的响应，或对服务返回的错误采取特定操作，并为最终用户提供量身定制的响应。](/help/forms/add-custom-error-handler-adaptive-forms.md)或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端为特定的错误代码调用自定义工作流，或者通知客户服务已停止。
 
   该功能有助于通过引入基于标准的错误响应来提高整体错误处理能力，这些错误响应与 OOTB 错误处理程序向后兼容，并具有更大的灵活性和控制能力。
 
-* [表单数据模型的增强身份验证方法](/help/forms/configure-data-sources.md)：通过引入基于客户端凭据的身份验证，将AEM Forms（表单数据模型）与兼容的数据源连接，体验增强的安全性。 此增强功能消除了对模拟或用户登录的需要，增强了数据的保护。
+* [表单数据模型的增强身份验证方法](/help/forms/configure-data-sources.md)：通过引入基于客户端凭据的身份验证，将AEM Forms（表单数据模型）与兼容的数据源连接，体验增强的安全性。 此增强功能消除了模拟或用户登录的需要，从而增强了对数据的保护。
 
 * [使用可重复部分创建自适应Forms](/help/forms/create-forms-repeatable-sections.md)：您现在可以制作 [可折叠项](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 基于核心组件的自适应表单中的组件，以创建可重复部分。
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
-  这些可重复部分允许您提供不限数量的条目，而无需固定字段计数。 当所需的数据实例事先未知时，此变量将非常有用。 Forms用户可以轻松地添加或删除部分，使表单能够适应不同的数据输入方案，并简化相同数据的多次发生收集。
+  这些可重复的部分允许您提供无限数量的条目，而无需固定的字段数。当预先未知所需的数据实例时，它非常有用。Forms 用户可以轻松添加或删除相关部分，使表单可适应不同的数据输入场景，并简化对同一数据发生次数的收集。
 
 * **[将自适应Forms提交到Microsoft®SharePoint和Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**：您现在可以将自适应Forms数据提交到Microsoft®SharePoint Site或Microsoft® OneDrive等日常工具。
 
 ### Headless 自适应表单早期采用者计划 {#forms-early-adopter}
 
-使用 [Headless自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 使您的开发人员能够创建、发布和管理交互式表单，这些表单可通过API（而不是通过传统的图形用户界面）访问和交互。 Headless 自适应表单可帮助您：
+使用 [Headless 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)可让您的开发人员创建、发布和管理交互式表单，这些交互式表单可通过 API 而不是传统的图形用户界面进行访问和交互。Headless 自适应表单可帮助您：
 
 * 使用选定的编程语言构建高质量的多渠道表单
 * 将表单本机集成到您的桌面和移动应用程序、网站和聊天应用程序

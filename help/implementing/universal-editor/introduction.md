@@ -5,7 +5,7 @@ exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 95%
 
 请务必注意，Universal Editor 正处于开发阶段，本文档中列出的一些功能是最终编辑器的愿景，而不一定表示是其当前功能。
 
-有关为Universal Editor计划的即将推出的功能的详细信息，请与Adobe联系人联系。
+请与您的 Adobe 联系人联系，了解有关为 Universal Editor 规划的即将推出的功能的详细信息.
 
 ## 其他资源 {#additional-resources}
 

@@ -7,7 +7,7 @@ exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ AEM 提供：
 默认冲突处理程序为 `ResourceNameRolloutConflictHandler`
 
 * 对于此处理程序，Blueprint 页面将获得优先权。
-* 此处理程序的服务排名设置得很低，即低于 `service.ranking` 属性，因为假设自定义处理程序需要更高的排名。 然而，排名并不是在必要时确保灵活性的绝对最低标准。
+* 此处理程序的服务排名设置得很低，即低于 `service.ranking` 属性的默认值，因为假设自定义处理程序需要更高的排名。然而，排名并不是在必要时确保灵活性的绝对最低标准。
 
 此处理程序为 Blueprint 页面提供优先权。例如，Live Copy 页面 `/b` 在 Live Copy 分支中移至 `/b_msm_moved`。
 

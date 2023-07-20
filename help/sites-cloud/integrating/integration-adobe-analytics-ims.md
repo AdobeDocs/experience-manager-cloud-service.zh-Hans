@@ -5,7 +5,7 @@ exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 91%
 1. 在 AEM 中，打开&#x200B;**工具**&#x200B;菜单。
 1. 在&#x200B;**安全性**&#x200B;部分中，选择 **Adobe IMS 配置**。
 1. 选择&#x200B;**创建**，打开 **Adobe IMS 技术帐户配置**。
-1. 使用下的下拉列表 **云配置**，选择 **Adobe Analytics**.
+1. 使用&#x200B;**云配置**&#x200B;下的下拉列表，选择 **Adobe Analytics。**
 1. 激活&#x200B;**新建证书**&#x200B;并输入新别名。
 1. 选择&#x200B;**创建证书**&#x200B;来确认。
 
@@ -55,7 +55,7 @@ ht-degree: 91%
 
    >[!CAUTION]
    >
-   >保持此配置处于打开状态，在以下情况下会再次需要它： [在AEM中完成IMS配置](#completing-the-ims-configuration-in-aem).
+   >将此配置保持开放状态，供[在 AEM 中完成 IMS 配置](#completing-the-ims-configuration-in-aem)时再次使用。
 
    ![下载证书](assets/integrate-analytics-ims-02.png)
 
@@ -71,11 +71,11 @@ ht-degree: 91%
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. 将显示您拥有的任何项目。 选择&#x200B;**新建项目** – 位置和使用将取决于：
+1. 您拥有的任何项目都会显示出来。选择&#x200B;**新建项目** – 位置和使用将取决于：
 
-   * 如果您还没有任何项目， **创建新项目** 是中间，底部。
+   * 如果您不具有任何项目，**新建项目**会位于底部中心。
      ![新建项目 – 第一个项目](assets/integration-analytics-ims-02.png)
-   * 如果您已有项目，则会列出这些项目和 **创建新项目** 右上角。
+   * 如果您已拥有项目，这些项目会列出，**新建项目**会位于右上方。
      ![新建项目 – 多个项目](assets/integration-analytics-ims-03.png)
 
 
@@ -107,7 +107,7 @@ ht-degree: 91%
 
    ![选择所需的产品配置文件](assets/integration-analytics-ims-16.png)
 
-1. 配置已确认。
+1. 配置得到确认。
 
 ### 将权限分配给集成 {#assigning-privileges-to-the-integration}
 
@@ -160,7 +160,7 @@ ht-degree: 91%
 
 1. 选择&#x200B;**创建**&#x200B;来确认。
 
-1. 您的Adobe Analytics配置将显示在AEM控制台中。
+1. 您的 Adobe Analytics 配置会显示在 AEM 控制台中。
 
    ![IMS 配置](assets/integrate-analytics-ims-11.png)
 

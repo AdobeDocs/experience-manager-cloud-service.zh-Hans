@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 98%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参阅 [了解AEM中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)
 
 ## 内容片段和内容服务 {#content-fragments-and-content-services}
 
@@ -127,7 +127,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 内容片段包括：
 
-* **站点**&#x200B;功能。
+* **Sites**&#x200B;功能。
 
 * 存储为&#x200B;**资源**：
 

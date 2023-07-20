@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -17,21 +17,21 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 >[!NOTE]
 >
->本节仅讨论标准AEM安装中现成可用的组件。
+>此部分仅讨论在标准 AEM 安装中现成可用的组件。
 >
->根据您的实例，您可能已针对您的要求明确开发了自定义组件。 这些组件甚至可能具有与此处讨论的某些组件相同的名称。
+>根据您的实例，您可能已经拥有明确按照您的要求开发的自定义组件。这些组件甚至会与此处讨论的某些组件同名。
 
-## 常规用法 {#general-usage}
+## 一般用法 {#general-usage}
 
-这些组件在以下位置提供： **组件** 选项卡的页面编辑器 [编辑页面](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+[编辑页面](/help/sites-cloud/authoring/fundamentals/editing-content.md)时，可以在页面编辑器侧面板上的&#x200B;**组件**&#x200B;选项卡中使用组件。
 
-您可以选择组件并将其拖动到页面上的所需位置。 然后，您可以使用以下内容编辑它：
+您可以选择一个组件，并将其拖动到页面上的所需位置。然后，可以使用下列方法编辑该组件：
 
 * [配置属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [编辑内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 * [编辑内容 – 全屏模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-content-full-screen-mode)
 
-有关向页面添加组件的更多信息，请参阅 [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+有关将组件添加到页面的更多信息，请参阅[编辑页面内容。](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 ## 全部组件概述 {#overview-of-all-components}
 
@@ -43,7 +43,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 它们是使用 AEM 最佳实践构建的，是 AEM 创作体验的基础。开发人员可以轻松扩展核心组件，以满足特定项目需求。
 
-除了WCM核心组件之外，您还可以使用 [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). 这些核心组件提供了更易于使用的标准方法 [在AEM Sites页面中创建表单或添加表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+除了 WCM 核心组件之外，您还可以使用[自适应表单核心组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features)这些核心组件提供了更简单的标准方法，以便[创建表单或将表单添加到 AEM Sites 页面。](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 ### 配置模板 {#configuring-templates}
 

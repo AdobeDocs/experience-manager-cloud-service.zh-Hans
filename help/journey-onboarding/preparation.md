@@ -5,7 +5,7 @@ exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service 是一个功能强大、灵活的工具，提供了多种
 * 您的 Premier Support 级别（如果适用）。
 * 您的入门培训联系人。
 
-如果您不知道这些详细信息，请联系您组织内的合同团队。
+如果您不知道这些细节，请联系您组织内的合同团队。
 
 合同签署后，Adobe 将为您提供环境，向合同中定义的入门培训联系人发送欢迎电子邮件，并由 Adobe 组织入门培训通话。 这通常发生在合同结束后几天，除非安排了未来的服务开始日期。
 
@@ -88,4 +88,4 @@ Adobe 会由以下人员代表参加：
 * 该合同如何影响载入流程。
 * 如何准备入门培训通话。
 
-现在您已经熟悉了这些准备步骤，您基本上可以自己登录系统了。 但首先，您需要从系统管理员的角度简要概述 AEM as a Cloud Service 的结构，并了解一些重要术语。继续下一段历程， [AEMas a Cloud Service术语](terminology.md).
+现在您已经熟悉了这些准备步骤，您基本上可以自己登录系统了。 但首先，您需要从系统管理员的角度简要概述 AEM as a Cloud Service 的结构，并了解一些重要术语。请继续培训该历程的下一部分：[AEM as a Cloud Service 术语。](terminology.md)

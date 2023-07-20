@@ -8,7 +8,7 @@ exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1358'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 98%
 >
 >您可以在发布时选择多个项目（即多个语言文件夹），以便一次性发布多个翻译。
 
-发布内容时还有其他选项（例如，计划发布时间），它们超出了此历程的范围。请参阅 [其他资源](#additional-resources) 部分以了解更多信息。
+发布内容时还有其他选项（例如，计划发布时间），它们超出了此历程的范围。有关更多信息，请参阅本文档末尾的[其他资源](#additional-resources)部分。
 
 ## 更新翻译的内容 {#updating-translations}
 
@@ -95,7 +95,7 @@ ht-degree: 98%
 
 ### 更新自动创建的翻译项目 {#updating-automatic-project}
 
-1. 导航到&#x200B;**导航** -> **资产** -> **文件**。请记住，AEM 中的内容存储在 `/content` 下。
+1. 导航到&#x200B;**导航** -> **资源** -> **文件**。请记住，AEM 中的内容存储在 `/content` 下。
 1. 选择项目的语言根。在此示例中，我们已选择 `/content/wknd/en`。
 1. 点按或单击边栏选择器，这将显示&#x200B;**引用**&#x200B;面板。
 1. 点按或单击&#x200B;**语言副本**。
@@ -117,7 +117,7 @@ ht-degree: 98%
 
 ![已添加其他翻译作业](assets/additional-translation-job.png)
 
-您可能会发现，新信息卡上列出的统计数据有所不同。这是因为 AEM 可以识别自上次翻译以来发生的变化，并且仅包含需要翻译的内容。这包括更新内容的重新翻译和新内容的首次翻译。
+您可能会发现，新信息卡上列出的统计数据有所不同。这是因为 AEM 可以识别自上次翻译以来发生的变化，并且仅包含需要翻译的内容。这包括已更新内容的重新翻译以及新内容的首次翻译。
 
 从此时起，您可以[像处理初始翻译一样启动和管理您的翻译作业。](translate-content.md#using-translation-project)
 

@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -113,11 +113,11 @@ Cloud Manager：
 
 Cloud Manager 已经演变成为自助服务门户，在其中可以创建和配置 AEM as a Cloud Service 的主要组件：
 
-* 创建和管理新程序。参见 [了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 了解更多详细信息。
+* 创建和管理新程序。有关详细信息，请参阅[了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
 
-* 在这些程序中创建和管理 AEM 环境。参见 [管理环境](/help/implementing/cloud-manager/manage-environments.md) 了解更多详细信息。
+* 在这些程序中创建和管理 AEM 环境。有关详细信息，请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)。
 
-* 创建和管理管道，用于将客户代码以及相关配置部署到特定环境。参见 [配置CI-CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 了解更多详细信息。
+* 创建和管理管道，用于将客户代码以及相关配置部署到特定环境。有关详细信息，请参阅[配置 CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 * 获得有关这些组件的重要生命周期事件（例如，产品更新）的通知。
 
@@ -150,7 +150,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!TIP]
 >
->有关载入流程的完整概述，请参阅 [入门培训历程](/help/journey-onboarding/overview.md).
+>有关载入流程的完整概述，请参阅 [入门历程。](/help/journey-onboarding/overview.md)
 
 ## 开发 {#developing}
 
@@ -248,7 +248,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 ## AEM Sites {#aem-sites}
 
-Adobe Experience Manager Sites as a Cloud Service 使您可以将 AEM Content Management System 与 AEM 数字资产管理的强大功能结合起来，向客户提供以内容引导的个性化体验。
+Adobe Experience Manager Sites as a Cloud Service 使您可以将 AEM Content Management System 与 AEM 数字资源管理的强大功能结合起来，向客户提供以内容引导的个性化体验。
 
 有关详细信息，请参阅[对站点的更改](/help/sites-cloud/sites-cloud-changes.md)概述。
 
@@ -262,7 +262,7 @@ Assets 产品包括云中的新一代资源处理以及高性能资源引入和�
 
 ## 了解 Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
-有关更多信息，请参阅：
+有关更多信息，请参阅:
 
 * [Adobe Experience Manager as a Cloud Service 简介](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service 的[架构](/help/overview/architecture.md)
@@ -274,6 +274,6 @@ Assets 产品包括云中的新一代资源处理以及高性能资源引入和�
 
 >[!TIP]
 >
->概述AEMas a Cloud Service后，您可以查看 [载入历程](/help/journey-onboarding/overview.md).
+>在大致了解 AEM as a Cloud Service 后，您可以查看[入门培训历程](/help/journey-onboarding/overview.md)来快速入门。
 >
 >已完成入门培训或准备开始深入测试 AEM 的功能？安装 [AEM 参考演示加载项](/help/journey-sites/demos-add-on/overview.md)，使用丰富的示例探究 AEM 的强大功能。

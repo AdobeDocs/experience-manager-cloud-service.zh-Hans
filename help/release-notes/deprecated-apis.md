@@ -5,7 +5,7 @@ exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1116'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -111,7 +111,7 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
-    <td>已弃用 Apache Felix 元类型和 SCR API。请改用OSGi元类型和声明性服务API。</td>
+    <td>已弃用 Apache Felix 元类型和 SCR API。请改用 OSGi 元类型和 Declarative Service API。</td>
     <td>5/27/21</td>
     <td>已删除</td>
   </tr>
@@ -158,13 +158,13 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Apache Felix Http Whiteboard 不再受支持。将您的代码迁移到OSGi Http Whiteboard。</td>
+    <td>Apache Felix Http Whiteboard 不再受支持。请将代码迁移到 OSGi Http Whiteboard。</td>
     <td>1/27/2022</td>
     <td>03/24/2022</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
-    <td>此API已弃用，请将您的代码迁移到JDK提供的XML API。</td>
+    <td>此 API 已被弃用，请将您的代码迁移到 JDK 提供的 XML API。</td>
     <td>1/27/2022</td>
     <td>3/24/2022</td>
   </tr>
@@ -206,7 +206,7 @@ ht-degree: 96%
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>该 API 已弃用。 请改用Apache Sling的构建器。</td>
+    <td>该 API 已弃用。 请改用 Apache Sling 的构建器。</td>
     <td>10/31/2022</td>
     <td>01/01/2023</td>
   </tr>

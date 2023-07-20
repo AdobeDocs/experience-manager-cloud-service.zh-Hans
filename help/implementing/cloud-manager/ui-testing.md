@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2389'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe 建议使用 Cypress，因为它提供实时重新加载和自动等待，
 >
 >Adobe 建议使用 Cypress，遵循 [AEM 测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)中提供的代码进行 UI 测试。
 > 
->Adobe还提供了基于带有WebdriverIO的JavaScript的UI测试模块示例(请参阅 [AEM项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests))和带有WebDriver的Java(请参见 [AEM测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver))。
+>Adobe 还提供了一些 UI 测试模块示例，分别基于 JavaScript WebdriverIO（请参考 [AEM 项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)）以及基于 Java WebDriver（请参考 [AEM 测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)）。
 
 ## 开始使用 UI 测试 {#get-started-ui-tests}
 
@@ -53,7 +53,7 @@ Adobe 建议使用 Cypress，因为它提供实时重新加载和自动等待，
 
    * 对于 Java 和 WebDriver，请使用来自 [AEM 测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)的示例代码。
 
-   * 有关其他编程语言，请参阅部分 [构建UI测试](#building-ui-tests) 以设置测试项目。
+   * 对于其他编程语言，请参阅本文档中的[构建 UI 测试](#building-ui-tests)部分来设置测试项目。
 
 1. 确保根据本文档的[客户选择启用](#customer-opt-in)部分中的说明操作来激活 UI 测试。
 
@@ -69,7 +69,7 @@ Maven 项目生成 Docker 构建上下文。 此 Docker 构建上下文描述了
 
 >[!TIP]
 >
->此 [AEM项目原型](https://github.com/adobe/aem-project-archetype) 如果您对编程语言没有特殊要求，可以生成符合以下说明的UI测试项目。
+>如果您对编程语言没有特殊要求，[AEM 项目原型](https://github.com/adobe/aem-project-archetype)会为您生成符合以下说明的 UI 测试项目。
 
 ### 生成 Docker 构建上下文 {#generate-docker-build-context}
 
@@ -236,7 +236,7 @@ Docker 映像必须以 JUnit XML 格式生成测试报告，并将其保存在�
 
 >[!NOTE]
 >
->仅根据测试报告评估 UI 测试步骤的结果。确保为测试执行相应地生成报告。
+>仅根据测试报告评估 UI 测试步骤的结果。请确保为您的测试执行生成相应报告。
 >
 >使用断言而不是仅仅将错误记录到 STDERR 或返回非零退出代码，否则，您的部署管道可能会正常进行。
 
@@ -259,7 +259,7 @@ Docker 映像必须以 JUnit XML 格式生成测试报告，并将其保存在�
 
 >[!NOTE]
 >
-> 如果您需要更多资源，请创建客户关怀案例并描述您的用例；Adobe将审核您的请求并提供适当的帮助。
+> 如果您需要更多资源，请创建一个客户服务案例，并描述您的用例；Adobe 会审核您的请求并提供适当的帮助。
 
 ## 特定于 Selenium 详细信息
 
@@ -345,7 +345,7 @@ Docker 映像可能会产生额外的测试输出（例如，屏幕快照或视�
 >
 >日志文件存储在存储库的 `target/` 文件夹中.
 >
->有关详细信息，请参阅 [AEM测试示例存储库](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>有关详细信息，请参阅 [AEM 测试示例存储库。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)
 
 ### JavaScript WebdriverIO 测试示例 {#javascript-sample}
 
@@ -369,7 +369,7 @@ Docker 映像可能会产生额外的测试输出（例如，屏幕快照或视�
 >* 日志文件存储在存储库的 `target/reports` 文件夹中
 >* 您需要确保计算机运行的是最新版本的 Chrome，因为测试会自动下载最新版本的 ChromeDriver 以进行测试。
 >
->有关详细信息，请参阅 [AEM项目原型存储库](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>有关详细信息，请参阅 [AEM 项目原型存储库。](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
 
 ### Java Selenium WebDriver 测试示例 {#java-sample}
 
@@ -392,4 +392,4 @@ Docker 映像可能会产生额外的测试输出（例如，屏幕快照或视�
 >
 >日志文件存储在存储库的 `target/reports` 文件夹中.
 >
->有关详细信息，请参阅 [AEM测试示例存储库](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>有关详细信息，请参阅 [AEM 测试示例存储库。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)

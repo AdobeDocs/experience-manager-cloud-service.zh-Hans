@@ -5,7 +5,7 @@ exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 >
 >本文档的内容不构成法律建议，也不会代替法律建议。
 >
->请咨询贵公司的法律部门，以获取有关数据保护和数据隐私条例的建议。
+>请咨询您公司的法律部门，以获取关于数据保护和数据隐私条例的建议。
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 92%
 
 Adobe Experience Manager as a Cloud Service Sites 可以帮助客户履行其数据隐私和保护合规性义务。此页面将指导客户完成在 AEM Sites 中处理此类请求的过程。它描述了私有数据的存储位置，以及如何手动或使用代码删除私有数据。
 
-欲了解更多信息，请参见 [Adobe隐私中心](https://www.adobe.com/cn/privacy.html).
+有关更多信息，请参阅 [Adobe 隐私中心。](https://www.adobe.com/cn/privacy.html)
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service Sites 可以帮助客户履行其数
 
 [AEM Foundation 文档](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)涵盖了发布服务器上用于验证网站访客的用户帐户和 UGC 内容。
 
-默认情况下，AEM Sites 组件不会存储访客在发布服务器上输入的表单数据。建议将数据转发到第三方系统或Adobe Campaign以供进一步处理。
+默认情况下，AEM Sites 组件不会存储访客在发布服务器上输入的表单数据。建议将数据转发到第三方系统或 Adobe Campaign 以供进一步处理。
 
 ## 选择加入/选择退出 {#opt-in-opt-out}
 
@@ -76,13 +76,13 @@ Adobe Experience Manager 受 Cookie 选择退出服务的约束，该服务用�
 
 AEM Sites 包括与 Analytics Foundation 的可选集成，该集成使用 Adobe Analytics On-demand Service 中的功能。
 
-有关管理与Adobe Analytics相关的数据主题请求的更多信息，请参阅 [Adobe Analytics和数据隐私](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+有关管理与 Adobe Analytics 相关的数据主题请求的更多信息，请参阅 [Adobe Analytics 和数据隐私。](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites 包括与 Personalization Foundation by Target 的可选集成，该集成使用 Adobe Target On-demand Service 中的功能。
 
-有关管理与Adobe Target相关的数据主题请求的信息，请参阅 [Adobe Target — 隐私和《通用数据保护条例》](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+有关管理与 Adobe Target 相关的数据主题请求的更多信息，请参阅 [Adobe Target - 隐私和一般数据保护条例。](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
 ## ContextHub {#contexthub}
 

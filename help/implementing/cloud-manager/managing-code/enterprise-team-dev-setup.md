@@ -5,7 +5,7 @@ exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 ## 简介 {#introduction}
 
-为了支持客户进行企业开发设置，AEMas a Cloud Service与Cloud Manager及其专门构建的完全集成 [教条式CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md). 这些管道和服务基于最佳实践构建，确保全面实施 [测试和最高的代码质量](/help/implementing/cloud-manager/code-quality-testing.md).
+为了支持客户进行企业开发设置，AEM as a Cloud Service 与 Cloud Manager 及其特设[专用 CI/CD 管道完全集成。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)这些管道和服务是基于最佳实践构建的，确保全面[测试和最佳代码质量。](/help/implementing/cloud-manager/code-quality-testing.md)
 
 ## Cloud Manager 在企业团队开发设置中的支持 {#cloud-manager}
 
@@ -70,7 +70,7 @@ Cloud Manager 的 git 存储库中的设置有两个分支。
 * 稳定发行版分支包含来自所有团队的生产代码。
 * 开发分支包含来自所有团队的开发代码。
 
-在开发或稳定分支中，每次推送到团队的Git存储库都会触发 [GitHub操作](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code).
+在开发或稳定分支中，每次推送到团队的 git 存储库都会触发一个 [GitHub 操作。](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md#managing-code)
 
 所有项目都遵循稳定分支的相同设置。 推送到项目的稳定分支会自动推送到 Cloud Manager 的 git 存储库中的稳定分支。 Cloud Manager 中的生产管道经配置，可通过推送到稳定分支来触发。 因此，生产管道可由任何团队每次推送到稳定的分支机构来执行，如果所有质量关卡均通过，生产部署就会更新。
 
@@ -82,7 +82,7 @@ Cloud Manager 的 git 存储库中的设置有两个分支。
 
 对于本地开发，使用 [AEM as a Cloud Service 的 SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md#developing)。 SDK 允许设置本地作者、发布者和分发者。 这实现了离线开发和快速周转。 有时只使用作者环境进行开发，但快速设置 Dispatcher 和发布环境支持在推送到 git 存储库之前在本地测试所有内容。
 
-每个团队的成员通常会从共享Git中签出代码，以获取他们自己的项目代码。 没有必要签出其他项目，因为这些项目是独立的。
+每个团队的成员通常会从共享 git 中签出代码以及自己的项目代码。 没有必要签出其他项目，因为这些项目是独立的。
 
 ![本地签出及 SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
@@ -90,7 +90,7 @@ Cloud Manager 的 git 存储库中的设置有两个分支。
 
 >[!TIP]
 >
->参见 [使用多个源Git存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code) 了解关于此设置的更多信息。
+>请参阅[使用多个源 Git 存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html#managing-code)，了解有关此设置的更多信息。
 
 ### 多团队设置的注意事项 {#considerations}
 

@@ -1,18 +1,18 @@
 ---
-title: Experience Manager as a Cloud Service 站点的支持资源
+title: Experience Manager as a Cloud Service Sites 的支持资源
 description: 获取所有 Adobe AEM Cloud Services 支持资源的完整列表。查找AEM Sites as Cloud Service 问题的答案。
 landing-page-description: 了解 AEM Sites as a Cloud Service 的创作和管理方法。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-本页提供了所有AdobeAEM Cloud Services支持资源的完整列表。 获取有关以下内容的问题的答案： [!DNL AEM Sites as a Cloud Service].
+此页面提供了 Adobe 所有 AEM Cloud Service 支持资源的完整列表。获得您关于 [!DNL AEM Sites as a Cloud Service] 的问题的解答。
 
 ## 关键站点文章 {#key-articles}
 
@@ -31,14 +31,14 @@ ht-degree: 74%
 
 | 用户指南 | 描述 |
 |---|---|
-| [概述](/help/overview/home.md) | 本指南提供了Experience Manageras a Cloud Service的概述，包括简介、术语和架构。 |
-| [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的Experience Manageras a Cloud Service的重要信息，包括新增功能、已弃用或已删除的功能以及已知问题。 |
+| [概述](/help/overview/home.md) | 本指南提供了 Experience Manager as a Cloud Service 的概述（包括简介、术语、架构等）。 |
+| [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门培训历程](/help/journey-onboarding/overview.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
 | [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到 Cloud Service 的历程。 |
 | [实施用户指南](/help/implementing/home.md) | 通过探索这些开发和部署主题，了解如何使用 AEM 的强大功能来构建和自定义体验。 |
-| [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | 探索此引导式历程，了解AEM强大而灵活的Headless功能，以便您为第一个Headless项目做好准备。 |
+| [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | 探索此引导式历程，了解如何通过 AEM 强大而灵活的 Headless 特性构建自己的第一个 Headless 项目。 |
 | [连接器用户指南](/help/connectors/home.md) | 了解如何将连接器集成到 Experience Manager as a Cloud Service 中。 |
 | [操作用户指南](/help/operations/home.md) | 了解 Experience Manager as a Cloud Service 的后端操作，如添加索引和维护任务。 |
 | [Commerce 用户指南](/help/commerce-cloud/home.md) | 了解 AEM as a Cloud Service 上的 Commerce 集成框架。 |

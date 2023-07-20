@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1339'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 ## 简介 {#introduction}
 
-Cloud Manager 中的 CI/CD 管道是一种从源存储库构建代码并将其部署到环境中的机制。 管道可以由事件触发，例如来自源代码存储库的拉取请求（即代码更改），也可以定期触发以匹配发布节奏。
+Cloud Manager 中的 CI/CD 管道是一种从源存储库构建代码并将其部署到环境中的机制。 管道可以由事件触发，例如源代码存储库的拉取请求（即代码更改），也可以按常规计划触发，匹配发布节奏。
 
 要配置管道，必须：
 
@@ -44,7 +44,7 @@ Cloud Manager 提供两种类型的管道：
 
 >[!TIP]
 >
->参见 [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 了解更多详细信息。
+>有关详细信息，请参阅[配置生产管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
 
 ## 非生产管道  {#non-prod-pipeline}
 
@@ -52,7 +52,7 @@ Cloud Manager 提供两种类型的管道：
 
 >[!TIP]
 >
->参见 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 了解更多详细信息。
+>有关详细信息，请参阅[配置非生产管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
 ## 代码源 {#code-sources}
 
@@ -85,13 +85,13 @@ Cloud Manager 提供两种类型的管道：
 
 全栈管道将后端代码、前端代码和 Web 层配置同时部署到 AEM 运行时。
 
-* 后端代码 — 不可变内容，如Java代码、OSGi配置、repoinit和可变内容
+* 后端代码 – 不可变内容，如 Java 代码、OSGi 配置、Repoinit 以及可变内容
 * 前端代码 – 应用程序 UI 资源，如 JavaScript、CSS、字体
 * Web 层配置管道 – HTTPD/Dispatcher 配置
 
 全栈管道表示一个“uber”管道，可以同时完成所有操作，同时使用户可以选择分别通过前端管道和 Web 层配置管道专门部署其前端代码或 Dispatcher 配置。
 
-全栈管道将前端代码(JavaScript/CSS)打包为 [AEM客户端库](/help/implementing/developing/introduction/clientlibs.md).
+全栈管道将前端代码 (JavaScript/CSS) 打包为 [AEM 客户端库。](/help/implementing/developing/introduction/clientlibs.md)
 
 如果未配置 [Web 层配置管道](#web-tier-config-pipelines)，则全栈管道可能会部署 Web 层配置。
 
@@ -127,7 +127,7 @@ Cloud Manager 提供两种类型的管道：
 
 ### 配置前端管道之前 {#before-start}
 
-在配置前端管道之前，请查看 [AEM快速站点创建历程](/help/journey-sites/quick-site/overview.md) 获取易于使用的AEM快速站点创建工具的端到端指南。 此过程将帮助您简化前端开发，并允许您在不了解后端 AEM 的情况下快速定制站点。
+在配置前端管道之前，请查看[AEM 快速网站创建历程](/help/journey-sites/quick-site/overview.md)，全面了解易于使用的“AEM 快速站点创建”工具的端到端指南。此过程将帮助您简化前端开发，并允许您在不了解后端 AEM 的情况下快速定制站点。
 
 ### 配置前端管道 {#configure-front-end}
 
@@ -140,7 +140,7 @@ Cloud Manager 提供两种类型的管道：
 
 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
 
-参见 [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此过程的工作方式以及一些需要注意的事项，以充分发挥此过程的潜力。
+请参阅[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
 
 ### 配置全栈管道 {#configure-full-stack}
 
@@ -165,7 +165,7 @@ Web 层配置管道通过将 HTTPD/Dispatcher 配置与其他代码更改分离�
 * 用户必须以&#x200B;**部署管理员**&#x200B;角色登录，才能配置或运行管道。
 * 在任何时候，每个环境只能有一个 Web 层配置管道。
 * 当相应的全栈管道正在运行时，用户无法配置 Web 层配置管道。
-* Web层结构必须遵循文档中定义的灵活模式结构 [云中的调度程序](/help/implementing/dispatcher/disp-overview.md#validation-debug).
+* Web 层结构必须遵循灵活的模式结构，如文档[云中 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug)中所定义。
 
 此外，请注意[全栈管道](#full-stack-pipeline)在引入 Web 层管道时的行为。
 
@@ -177,7 +177,7 @@ Web 层配置管道可以是代码质量类型或部署类型。
 
 ### 配置 Web 层配置管道 {#configure-web-tier-config-pipelines}
 
-要了解如何配置Web层配置管道，请参阅以下文档：
+要了解如何配置 Web 层管道，请参阅以下文档：
 
 * [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)

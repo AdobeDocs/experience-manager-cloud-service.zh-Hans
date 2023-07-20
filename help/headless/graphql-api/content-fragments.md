@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '4918'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ GraphQL 是：
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-有关GraphQL API的信息，请参阅以下部分（以及许多其他资源）：
+有关 GraphQL API 的信息，请参阅以下部分（以及多种其他资源）：
 
 * 位于 [graphql.org](https://graphql.org)：
 
@@ -377,7 +377,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 ## GraphQL 变量 {#graphql-variables}
 
-GraphQL 允许在查询中放入变量。有关更多信息，请参阅 [变量的GraphQL文档](https://graphql.org/learn/queries/#variables).
+GraphQL 允许在查询中放入变量。有关详细信息，请参阅 [GraphQL 的变量文档。](https://graphql.org/learn/queries/#variables)
 
 例如，要获取具有特定变量（如有）的类型为 `Author` 的所有内容片段，您可以在 GraphiQL 中指定参数 `variation`。
 
@@ -407,7 +407,7 @@ query($variation: String!) {
 
 此查询将返回完整的作者列表。没有`another`变量的作者将回退到原始数据（在这种情况下，`_variation` 将报告 `master`）。
 
-应用 [过滤器](#filtering)，如果要将列表限制为提供指定变量的作者（并跳过会回退到原始数据的作者）：
+如果您想将列表限制为提供指定变量的作者（并跳过会回退到原始数据的作者），请应用[过滤器：](#filtering)
 
 ```graphql
 query($variation: String!) {
@@ -431,7 +431,7 @@ query($variation: String!) {
 
 在 GraphQL 中，可以更改基于变量的查询，这称为 GraphQL 指令。
 
-例如，您可以在此处包含 `adventurePrice` 查询中的字段 `AdventureModels`，基于变量 `includePrice`.
+例如，您可在针对所有 `AdventureModels`、基于变量 `includePrice` 的查询中包含 `adventurePrice` 字段。
 
 ![GraphQL 指令](assets/cfm-graphqlapi-04.png "GraphQL 指令")
 
@@ -570,7 +570,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 * 是表示字段路径的逗号分隔值列表
    * 列表中的第一个字段将定义主要排序顺序，如果主要排序标准的两个值相等，则会使用第二个字段，如果前两个标准相等，则使用第三个字段，等等。
-   * 点分符号，即field1.subfield.subfield等……
+   * 点分符号，即 field1.subfield.subfield 等...
 * 带有可选的订单方向
    * ASC（升序）或 DESC（降序）；作为默认 ASC 应用
    * 可以按字段指定方向；这意味着您可以对一个字段按升序排序，对另一个字段按降序排序（姓名，firstName DESC）
@@ -750,7 +750,7 @@ GraphQL 中的解决方案意味着您可以：
    * `height`：维度的高度
 * `rotation`：所有支持的旋转的枚举：R90、R180、R270
 * `flip`：HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL 的枚举
-* `quality`：表示图像质量百分比的1-100之间的整数
+* `quality`：1 和 100 之间的整数，表示图像质量的百分比
 * `width`：定义输出图像宽度的整数，但会被图像生成器忽略
 * `preferWebp`：指示是否首选 webp（默认值为 false）的布尔值
 

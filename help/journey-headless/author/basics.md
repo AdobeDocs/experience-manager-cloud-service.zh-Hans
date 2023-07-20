@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1715'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ## 创作内容片段 {#authoring-content-fragments}
 
-所以，这是对AEM用户界面(UI)的非常快速的介绍，但希望您有机会尝试一下它。 现在，我们开始探究您真正感兴趣的内容 – Headless 的内容片段。
+虽然这是对 AEM 用户界面 (UI) 的非常简要的介绍，但希望您有机会尝试一下。现在，我们开始探究您真正感兴趣的内容 – Headless 的内容片段。
 
 我们必须从头到尾探究这些内容，但您的实例可能已创建文件夹和/或片段，并且它们可能位于不同的位置。准则是一样的。
 
@@ -141,7 +141,7 @@ You can view additional information about items using the Rail Selector. This al
 
 #### 使用路径和标记限制文件夹中可用的内容片段模型 {#tags-paths-for-models-in-folder}
 
-此部分的内容略为深入一些。如果你只是从头开始，尝试一些事情，你并不真的需要它，但它是真的 *非常* 当您有多个片段时，此变量将非常有用。 因此，了解这一点很好，即使您尚未完全使用它。
+此部分的内容略为深入一些。如果您刚开始尝试，则并不是真的需要它；但当您有大量片段时，它&#x200B;*非常*&#x200B;有用。即使您尚未使用它，也建议您了解它。
 
 您的内容架构师将创建您的当前项目以及其他一些项目所需的所有内容片段模型。为了帮助您和其他作者简化工作，您可以限制可用于特定文件夹的模型列表。
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 您可以在创建片段后立即打开它，或者通过从“内容片段”控制台（也可以从 Assets 控制台）中选择它来将其打开。
 
-当编辑器首次打开时，您会看到：
+在编辑器首次打开时，您将看到：
 
 * 左侧的图标列表 – 可利用这些图标访问各种功能区域。编辑器在&#x200B;**变体**&#x200B;选项卡中打开，将在此处完成大部分编辑工作。您可能还对&#x200B;**批注**&#x200B;和&#x200B;**元数据**&#x200B;选项卡感兴趣。
 
@@ -213,7 +213,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 例如：
 
-* 只需要多条信息（其中一些信息具有特定类型）的片段。对于Headless内容，引用是关键（您稍后将在历程中了解这些内容）。
+* 只需要多条信息（其中一些信息具有特定类型）的片段。对于 Headless 内容，引用很重要（您将在历程的后面部分中了解相关信息）。
 
   ![内容片段编辑器 – 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 >
 >有关更多详细信息，您可以参阅“变体 – 创作内容片段”。
 
-#### 您（可能）无需担心的问题 {#what-you-probably-do-not-need-to-worry-about}
+#### 您（可能）无需担心的事情 {#what-you-probably-do-not-need-to-worry-about}
 
-好的，这可能看起来有点奇怪，但当您打开内容片段编辑器并开始探索时，您会看到各种选项（可能）不适用于您作为内容作者的Headless历程。 因此，这只是一个快速提示，说明您应该能够在 Headless 上下文中忽略的内容：
+好吧，这似乎是一个有点奇怪的部分，但在您打开内容片段编辑器并开始浏览之后，您会看到各种选项，它们（可能）不适用于您（作为内容作者）的 Headless 历程。因此，这只是一个快速提示，说明您应该能够在 Headless 上下文中忽略的内容：
 
 * **内容片段模型**
 
@@ -244,7 +244,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
   >[!NOTE]
   >
-  >如果您想了解详情，可以参阅“AEM Headless 内容架构师历程”。
+  >如果您想了解详细信息，可以参阅“AEM Headless 内容架构师历程”。
 
 * **关联的内容**
 
@@ -258,7 +258,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 * **更新页面引用**
 
-  此操作可从以下位置获取： **...** （省略号）下拉列表。 Headless 作者对它并不感兴趣，因为它与页面创作有关。
+  可从 **...**（省略号）下拉列表中执行此操作。Headless 作者对它并不感兴趣，因为它与页面创作有关。
 
 ### 发布 {#publishing}
 

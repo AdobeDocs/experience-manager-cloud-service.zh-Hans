@@ -5,7 +5,7 @@ exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 80%
+ht-degree: 98%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 80%
 
 在您的组织中，可能会有多个部门负责数字体验的不同层面。如果没有合适的治理方式，这一阶段就会出现无休止的争论、内斗和混乱。
 
-数字治理首先要弄清楚谁负责什么内容，谁在做哪些数字化工作。 您可能需要进行一些战略性的招聘工作来补充具备所需技能的人手。更大的挑战是推动文化转变 — 为新技术赢得广泛支持，并帮助人们习惯新的工作方式。 该工作的一个关键部分在于创建数字社区，让人们能够从中学习和互相支持。
+数字治理过程首先需要明确，由谁来负责什么内容，由谁来完成与数字化相关的工作。您可能需要进行一些战略性的招聘工作来补充具备所需技能的人手。而更大的挑战在于推动文化转变，树立起对新技术的全面支持，并帮助人们习惯于新的工作开展方式。该工作的一个关键部分在于创建数字社区，让人们能够从中学习和互相支持。
 
-目前，重点是让合适的人员担任合适的职位，帮助推动Adobe Experience Manager部署。 对于每个核心产品(Experience Manager Sites和Experience Manager Assets)，Adobe都提供了一个您必须担任的职位列表，以及使人在各种职位上高效工作的技能、专业水平和属性。
+目前，我们会侧重于将合适的人员放在合适的职位上，帮助推动 Adobe Experience Manager 部署。对于每个核心产品（Experience Manager Sites 和 Experience Manager Assets），Adobe 已经提供了一个您需要填充的职位清单，包括在各个职位上高效开展工作所需的技能、专业知识水平和特性。
 
 您本周的任务是与实施团队一起查看这些清单，确保在各个职位上都有具备相关资质的人员。
 
@@ -46,7 +46,7 @@ ht-degree: 80%
 
 <br>
 
-![审查实施角色](assets/team_involvement.png)
+![审查实施的角色](assets/team_involvement.png)
 
 **与实施团队一起查看这些清单**，确保在各个职位上都有具备相关资质的人员。不太熟悉 Adobe Experience Cloud 的团队成员可以使用 [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) 学习资源来通过 [Adobe Digital Learning](https://learning.adobe.com/certification.html) 获取认证。
 
@@ -54,7 +54,7 @@ ht-degree: 80%
 
 从架构师到 ScrumMaster，此团队中的每个职位都密不可分，包括 DAM 库管理员。
 
-您可能已经有了可成功开展 Adobe Experience Manager Assets 实施的大部分人员。此列表与Adobe Experience Manager Sites的列表相似，仅增加了重要的一项：您需要一位库管理员来确保以易于查找的方式整理和标记数字资源。
+您可能已经有了可成功开展 Adobe Experience Manager Assets 实施的大部分人员。此清单与 Adobe Experience Manager Sites 的清单相似，仅增加了重要的一项：您需要一位库管理员来确保以易于查找的方式整理和标记数字资源。
 
 | 职位 | 技能 | 能力水平 | 素养 |
 |--- |--- |--- |--- |

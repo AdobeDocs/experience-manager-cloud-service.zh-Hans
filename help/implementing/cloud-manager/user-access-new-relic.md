@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1589'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 * 检测了 New Relic One APM 代理，该代理使用行号显示准确的方法调用，包括外部依赖项和数据库
 
-* 通过结合基础架构级别监控和应用程序(Adobe Experience Manager)监控的关键指标，实现整体性能优化
+* 通过结合基础架构级别监控和应用程序 (Adobe Experience Manager) 监控的关键指标，实现整体性能优化
 
 * 将 AEM as a Cloud Service JMX Mbeans 和健康检查直接暴露在 New Relic Insights 量度中，支持深入检查应用程序堆栈性能和健康量度。
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. New Relic 将向您发送一封电子邮件，其中包含确认帐户的链接。
 
-如果您没有收到来自New Relic的确认电子邮件，请参阅 [疑难解答部分。](#troubshooting)
+如果您没有收到 New Relic 的确认电子邮件，请参阅[故障排除部分。](#troubshooting)
 
 ## 正在访问 New Relic One {#accessing-new-relic}
 
@@ -114,9 +114,9 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 如果在登录 New Relic One 时要求您验证电子邮件，这意味着您的电子邮件与多个帐户关联。 这允许您选择要访问的帐户。
 
-如果不验证您的电子邮件地址，New Relic将尝试使用与您的电子邮件地址关联的最近创建的用户记录登录。 要避免在每次登录时验证您的电子邮件，请单击登录屏幕中的&#x200B;**记住我**&#x200B;复选框。
+如果您不验证您的电子邮件地址，New Relic 会尝试使用与您的电子邮件关联的最近创建的用户记录登录。要避免在每次登录时验证您的电子邮件，请单击登录屏幕中的&#x200B;**记住我**&#x200B;复选框。
 
-要获得更多帮助，请通过 [AEM支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html).
+有关更多帮助，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持问题。
 
 ## New Relic One 访问故障排除 {#troubleshooting}
 
@@ -134,13 +134,13 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. New Relic 将向您发送一封电子邮件，其中包含确认帐户的链接。
 
-如果您完成了注册过程，并且由于电子邮件或密码错误消息而无法登录到您的帐户，请通过 [Admin Console。](https://adminconsole.adobe.com/)
+如果您完成了注册过程，并且由于电子邮件或密码错误消息而无法登录到您的帐户，请通过 [Admin Console 提交支持请求工单。](https://adminconsole.adobe.com/)
 
-如果您没有收到来自New Relic的电子邮件：
+如果您没有收到 New Relic 的电子邮件：
 
 * 检查您的[垃圾邮件过滤器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)。
 * 如果适用，[请将 New Relic 添加到您的电子邮件允许列表中](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)。
-* 如果这两个建议都没有帮助，请提供有关支持票证的反馈，Adobe支持团队可以帮助您。
+* 如果这两个建议都没有帮助，请提供有关支持请求工单的反馈，Adobe 支持团队可以帮助您。
 
 ## 限制 {#limitations}
 
@@ -150,7 +150,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 * 添加到 New Relic 的用户属于&#x200B;**受限**&#x200B;类型。有关详细信息，请参阅 [New Relic 文档。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service 仅提供 New Relic One APM 解决方案，不支持警报、日志记录或 API 集成。
 
-有关AEMas a Cloud Service计划的New Relic One产品的更多帮助或其他指导，请通过 [AEM支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html).
+有关您的 AEM as a Cloud Service 程序的 New Relic One 产品的更多帮助或更多指导，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持请求工单。
 
 ## 关于 New Relic One 的常见问题 {#faqs}
 

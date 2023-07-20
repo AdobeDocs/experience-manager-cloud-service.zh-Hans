@@ -5,7 +5,7 @@ exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->推荐使用该工作流将遗留优惠转化为体验片段。
+>推荐使用该工作流程将遗留优惠转化为体验片段。
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ ht-degree: 98%
 
    ![将遗留优惠转化为体验片段](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. 此时将显示一个对话框。 在该对话框中可以选择所需的&#x200B;**操作**：
+1. 对话框会显示出来。在该对话框中可以选择所需的&#x200B;**操作**：
 
    * 创建新的体验片段
    * 将内容添加到现有体验片段

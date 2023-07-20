@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
 source-wordcount: '1682'
-ht-degree: 52%
+ht-degree: 55%
 
 ---
 
@@ -33,7 +33,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!TIP]
 >
->参见 [AEM中的通用编辑器快速入门](getting-started.md) 有关如何配置AEM应用程序以使用通用编辑器的示例。
+>请参阅 [AEM Universal Editor 快速入门](getting-started.md)，查看有关如何配置 AEM 应用程序以使用 Universal Editor 的示例。
 
 ## 登录 {#sign-in}
 
@@ -97,7 +97,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 ### Universal Editor 标题 {#universal-editor-header}
 
-Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud 标题的正下方。](#experience-cloud-header) 通过它，可快速导航到要编辑的其他页面并发布当前页面。
+Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud 标题的正下方。](#experience-cloud-header)它为您提供了快速访问权限，以便导航到另一个页面进行编辑以及发布当前页面。
 
 ![Universal Editor 标题](assets/universal-editor-header.png)
 

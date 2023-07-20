@@ -58,7 +58,7 @@ ht-degree: 88%
    * 提供环境&#x200B;**名称**。
    * 提供环境&#x200B;**描述**。
    * 如果您要添加&#x200B;**生产和暂存**&#x200B;环境，则需要为生产环境和暂存环境提供环境名称和描述。
-   * 从下拉列表中选择&#x200B;**主要区域**。
+   * 从下拉列表中选择&#x200B;**主要区域。**
       * 主区域创建后无法更改。
       * 根据您的可用权限，您可以配置[多个区域。](#multiple-regions)
 
@@ -80,7 +80,7 @@ ht-degree: 88%
 
 添加新环境时，除主要区域之外，您可以选择配置附加区域。
 
-1. 选择&#x200B;**主要区域**。
+1. 选择&#x200B;**主要区域。**
    * 创建环境后无法更改主区域。
 1. 选择选项&#x200B;**添加附加发布区域**，之后会出现新的&#x200B;**附加发布区域**&#x200B;选项下拉列表。
 1. 在&#x200B;**附加发布区域**&#x200B;下拉列表中，选择一个额外的区域。
@@ -161,9 +161,9 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 1. 创建适当的 IP 允许列表，将其应用于预览服务，然后立即取消应用 `Preview Default [<envId>]` 允许列表。
 
-   * 请参阅[应用和取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)，了解更多详情。
+   * 请参阅[应用和取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)，了解更多详细信息。
 
-1. 使用更新 **IP 允许列表**&#x200B;工作流，移除默认 IP 并根据需要添加 IP。 请参阅[管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)了解详情。
+1. 使用更新 **IP 允许列表**&#x200B;工作流，移除默认 IP 并根据需要添加 IP。 请参阅[管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)了解详细信息。
 
 在解锁对预览服务的访问后，预览服务名称前面的锁定图标不会再显示。
 

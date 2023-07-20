@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cl
 * [专用出口 IP 地址](#dedicated-egress-IP-address) – 配置从唯一 IP 传出 AEM as a Cloud Service 的流量
 * [虚拟专用网络 (VPN)](#vpn) – 面向采用 VPN 技术的客户，保护客户的基础设施与 AEM as a Cloud Service 之间的流量
 
-此文章详细介绍了上述各个选项，包括如何对它们进行配置。作为常规配置策略，在程序级别调用 `/networkInfrastructures` API 端点，以声明所需的高级联网类型，接着调用每个环境的 `/advancedNetworking` 端点，以启用基础设施并配置特定于环境的参数。有关每个正式语法以及请求和响应示例，请参阅Cloud Manager API文档中的相应端点。
+此文章详细介绍了上述各个选项，包括如何对它们进行配置。作为常规配置策略，在程序级别调用 `/networkInfrastructures` API 端点，以声明所需的高级联网类型，接着调用每个环境的 `/advancedNetworking` 端点，以启用基础设施并配置特定于环境的参数。要了解每个正式语法以及请求和响应示例，请参考 Cloud Manager API 文档中的相应端点。
 
 一个程序可以预配一个高级联网变体。在灵活端口出口和专用出口 IP 地址之间进行选择时，如果无需特定 IP 地址，则建议您选择灵活端口出口，因为 Adobe 可以优化灵活端口出口流量的性能。
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cl
 
 >[!NOTE]
 >
->对于已经预配了旧版专用出口技术的客户，在需要配置这些选项之一时，不应这样操作，否则网站连接可能会受到影响。请联系Adobe支持部门以获取帮助。
+>对于已经预配了旧版专用出口技术的客户，在需要配置这些选项之一时，不应这样操作，否则网站连接可能会受到影响。如需帮助，请与 Adobe 支持部门联系。
 
 ## 灵活端口出口 {#flexible-port-egress}
 
@@ -44,11 +44,11 @@ AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cl
 
 ### 注意事项 {#flexible-port-egress-considerations}
 
-如果您不需要VPN并且不需要专用出口IP地址，则建议选择灵活端口出口，因为不依赖专用出口的流量可以实现更高的吞吐量。
+如果流量不依赖于专用出口就可以实现较高的吞吐量，因而您不需要 VPN 和专用出口 IP 地址，那么推荐选择灵活端口出口。
 
 ### 配置 {#configuring-flexible-port-egress-provision}
 
-每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `flexiblePortEgress` 值。端点使用 `network_id`以及包括状态在内的其他信息。 完整的参数集和确切的语法，以及一些重要信息，如哪些参数以后不能更改， [可在API文档中引用。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `flexiblePortEgress` 值。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。[API 文档中可以引用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)完整的参数集和精确的语法，以及一些重要信息，如哪些参数以后不能更改。
 
 在调用后，通常需要大约 15 分钟来预配联网基础设施。对 Cloud Manager 的[网络基础设施 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) 的调用将显示状态“就绪”。
 
@@ -179,7 +179,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->如果您已在2021年9月版本(10/6/21)之前预配了专用出口IP，请参阅 [旧版专用出口地址客户](#legacy-dedicated-egress-address-customers).
+>如果您已在 2021 年 9 月发布 (10/6/21) 之前预配了专用出口 IP，请参阅[旧版专用出口地址客户](#legacy-dedicated-egress-address-customers)。
 
 ### 好处 {#benefits}
 
@@ -352,7 +352,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### 创建 {#vpn-creation}
 
-每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，传入配置信息的负载，包括：`kind` 参数的“VPN”值、区域、地址空间（CIDR 列表，请注意此项以后不可修改）、DNS 解析器（用于解析客户网络中的名称）以及 VPN 连接信息（例如网关配置、共享 VPN 密钥以及 IP 安全性策略）。端点使用 `network_id`以及包括状态在内的其他信息。 要查看完整的参数集和确切的语法，可参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)。
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，传入配置信息的负载，包括：`kind` 参数的“VPN”值、区域、地址空间（CIDR 列表，请注意此项以后不可修改）、DNS 解析器（用于解析客户网络中的名称）以及 VPN 连接信息（例如网关配置、共享 VPN 密钥以及 IP 安全性策略）。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。要查看完整的参数集和确切的语法，可参阅 [API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)。
 
 在调用后，通常需要 45 到 60 分钟来预配联网基础设施。可以调用 API 的 GET 方法以返回当前状态，这最终会从 `creating` 翻转到 `ready`。请参考 API 文档来了解所有状态。
 
@@ -423,7 +423,7 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
   </tr>
   <tr>
     <td></td>
-    <td>如果IP未处于 <i>VPN网关地址空间</i> 范围以及通过http代理配置（默认情况下为使用标准Java HTTP客户端库的http/s流量配置）</td>
+    <td>如果 IP 没有处于 <i>VPN 网关地址</i>空间范围内，并且通过 http 代理配置传输流量（默认情况下使用标准 Java HTTP 客户端库为 http/https 流量进行配置）</td>
     <td>任意</td>
     <td>通过专用出口 IP</td>
     <td></td>
@@ -452,7 +452,7 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
   </tr>
   <tr>
     <td></td>
-    <td>如果IP未处于 <i>VPN网关地址空间</i> 范围和客户端连接到 <code>AEM_PROXY_HOST</code> 环境变量使用 <code>portOrig</code> 在中声明 <code>portForwards</code> API参数</td>
+    <td>如果 IP 没有处于 <i>VPN 网关地址空间</i>范围内，并且客户端使用在 <code>portForwards</code> API 参数中声明的 <code>portOrig</code> 连接到 <code>AEM_PROXY_HOST</code> 环境变体</td>
     <td>任意</td>
     <td>通过专用出口 IP</td>
     <td></td>
@@ -563,7 +563,7 @@ Header always set Cache-Control private
 该过程与前面的说明大体相似。但是，如果生产环境尚未启用高级网络，则有机会通过首先在暂存环境中启用配置来测试配置：
 
 1. 通过 POST 调用 [Cloud Manager 创建网路基础设施 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 为所有区域创建网络基础设施。负载的 JSON 配置相对于主要区域的唯一区别是区域属性。
-1. 对于暂存环境，通过运行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 启用和配置环境范围内的高级网络。有关更多信息，请参阅API文档 [此处](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. 对于暂存环境，通过运行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 启用和配置环境范围内的高级网络。有关更多信息，请在[此处](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)参阅该 API 文档。
 1. 如有必要，最好通过 FQDN（例如 `p1234.external.adobeaemcloud.com`）锁定外部基础设施。您可以通过 IP 地址进行锁定
 1. 如果暂存环境按预期工作，请为生产启用并配置环境范围内的高级网络配置。
 

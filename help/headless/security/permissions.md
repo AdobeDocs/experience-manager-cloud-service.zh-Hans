@@ -6,7 +6,7 @@ exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Author 服务是内部用户创建、管理和发布内容的地方。权限以�
 
 ### DAM 用户
 
-在此上下文中，“DAM”表示数字资产管理。**DAM 用户**&#x200B;是 AEM 中现成可用的组，可用于管理数字资产和内容片段的“日常”用户。此组提供权限以&#x200B;**查看**、**添加**、**更新**、**删除**&#x200B;和&#x200B;**发布**&#x200B;内容片段及 AEM Assets 中的所有其他文件。
+在此上下文中，“DAM”表示数字资源管理。**DAM 用户**&#x200B;是 AEM 中现成可用的组，可用于管理数字资源和内容片段的“日常”用户。此组提供权限以&#x200B;**查看**、**添加**、**更新**、**删除**&#x200B;和&#x200B;**发布**&#x200B;内容片段及 AEM Assets 中的所有其他文件。
 
 如果为组成员资格使用 IMS，请添加相应的 IMS 组作为 **DAM 用户**&#x200B;组的成员。登录 AEM 环境时，IMS 组的成员继承了 DAM 用户组的权限。
 
@@ -52,7 +52,7 @@ Author 服务是内部用户创建、管理和发布内容的地方。权限以�
 
 最好不要直接修改现成可用组的权限。而是应该创建自己的组，按照 **DAM 用户**&#x200B;组权限建模，然后进一步限制对 AEM Assets 中不同&#x200B;**文件夹**&#x200B;的访问权限。
 
-要获得更细粒度的权限，请使用 **权限** AEM中的控制台并更新路径 `/content/dam` 更具体的路径， `/content/dam/mycontentfragments`.
+有关更细粒度的权限，请使用 AEM 中的&#x200B;**权限**&#x200B;控制台，并将路径从 `/content/dam` 更新为更具体的路径，即 `/content/dam/mycontentfragments`。
 
 可能最好向此组提供用户创建和编辑内容片段的权限，但不提供删除权限。要查看和分配编辑的权限而不分配删除权限，请参阅[内容片段 - 删除注意事项](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)。
 
