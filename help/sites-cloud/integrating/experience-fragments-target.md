@@ -3,9 +3,9 @@ title: 将体验片段导出到 Adobe Target
 description: 将体验片段导出到 Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2245'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 97%
 * 选择 Target 工作区作为目标
 * 选择一个外部化器域以重写体验片段中的引用（可选）
 
-可以在以下位置选择所需的选项： **页面属性** 所需的文件夹或/和片段；根据需要继承规范。
+可以在所需的文件夹和/或片段的&#x200B;**页面属性**&#x200B;中选择所需的选项；规范会根据需要继承。
 
 1. 导航到&#x200B;**体验片段**&#x200B;控制台。
 
@@ -177,7 +177,7 @@ ht-degree: 97%
 
    * **租户 ID**：租户 ID
 
-   * **IMS配置**：从下拉列表中选择所需的配置
+   * **IMS 配置**：从下拉列表中选择所需的配置
 
    * **API 类型**：默认值为 REST（已弃用 XML）
 
@@ -313,9 +313,9 @@ When you associate a page with the framework, the child pages inherit the associ
 
 >[!CAUTION]
 >
->对于媒体资产（例如图像），仅将引用导出到 Target。资产本身仍存储在 AEM Assets 中，并且从 AEM 发布实例进行交付。
+>对于媒体资源（例如图像），仅将引用导出到 Target。资源本身仍存储在 AEM Assets 中，并且从 AEM 发布实例进行交付。
 >
->因此，在导出到 Target 之前，需要发布包含所有相关资产的体验片段。
+>因此，在导出到 Target 之前，需要发布包含所有相关资源的体验片段。
 
 要将体验片段从 AEM 导出到 Target（在指定云配置之后），请执行以下操作：
 
@@ -356,7 +356,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在 Adobe Target 中使用体验片段 {#using-your-experience-fragments-in-adobe-target}
 
-执行上述任务后，体验片段将显示在 Target 的“选件”页面上。参见 [特定Target文档](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) 了解可以实现的目标。
+执行上述任务后，体验片段将显示在 Target 的“选件”页面上。请查看[特定 Target 文档](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html)以了解可以实现的目标。
 
 >[!NOTE]
 >
@@ -376,6 +376,6 @@ When you associate a page with the framework, the child pages inherit the associ
    * 带有 AEM 体验片段的 Target 选件可能会显示意外行为
 
       * 该选件可能仍会呈现，因为体验片段 HTML 已推送到 Target
-      * 如果也从 AEM 中删除了引用的资产，则体验片段中的任何引用都无法正常工作。
+      * 如果也从 AEM 中删除了引用的资源，则体验片段中的任何引用都无法正常工作。
 
    * 当然，由于体验片段在 AEM 中不再存在，因此无法对体验片段进行任何进一步的修改。
