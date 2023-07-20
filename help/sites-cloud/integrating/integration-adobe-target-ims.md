@@ -3,9 +3,9 @@ title: 与 Adobe Target 集成时使用的 IMS 配置
 description: 了解与 Adobe Target 集成时使用的 IMS 配置
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '855'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 91%
 1. 在 AEM 中，打开&#x200B;**工具**&#x200B;菜单。
 1. 在&#x200B;**安全性**&#x200B;部分中，选择 **Adobe IMS 配置**。
 1. 选择&#x200B;**创建**，打开 **Adobe IMS 技术帐户配置**。
-1. 使用下的下拉列表 **云配置**，选择 **Adobe Target**.
+1. 使用&#x200B;**云配置**&#x200B;下的下拉列表，选择 **Adobe Target**。
 1. 激活&#x200B;**新建证书**&#x200B;并输入新别名。
 1. 选择&#x200B;**创建证书**&#x200B;来确认。
 
@@ -53,7 +53,7 @@ ht-degree: 91%
 
    >[!CAUTION]
    >
-   >保持此配置处于打开状态，在以下情况下会再次需要它： [在AEM中完成IMS配置](#completing-the-ims-configuration-in-aem).
+   >将此配置保持开放状态，供[在 AEM 中完成 IMS 配置](#completing-the-ims-configuration-in-aem)时再次使用。
 
    ![下载证书](assets/integrate-target-ims-02.png)
 
@@ -69,11 +69,11 @@ ht-degree: 91%
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. 将显示您拥有的任何项目。 选择&#x200B;**新建项目** – 位置和使用将取决于：
+1. 您拥有的任何项目都会显示出来。选择&#x200B;**新建项目** – 位置和使用将取决于：
 
-   * 如果您还没有任何项目， **创建新项目** 是中间，底部。
+   * 如果您不具有任何项目，**新建项目**会位于底部中心。
      ![新建项目 – 第一个项目](assets/integration-target-ims-02.png)
-   * 如果您已有项目，则会列出这些项目和 **创建新项目** 右上角。
+   * 如果您已拥有项目，这些项目会列出，**新建项目**会位于右上方。
      ![新建项目 – 多个项目](assets/integration-target-ims-03.png)
 
 
@@ -108,7 +108,7 @@ ht-degree: 91%
 
    ![选择产品配置文件并保存配置的 API](assets/integration-target-ims-16.png)
 
-1. 已确认创建。
+1. 这会确认创建。
 
 <!--
 1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
@@ -169,7 +169,7 @@ ht-degree: 91%
 
 1. 选择&#x200B;**创建**&#x200B;来确认。
 
-1. 您的Adobe Target配置将显示在AEM控制台中。
+1. 您的 Adobe Target 配置会显示在 AEM 控制台中。
 
    ![IMS 配置](assets/integrate-target-ims-11.png)
 
