@@ -3,9 +3,9 @@ title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 94%
 
 ## 请求访问 Universal Editor {#request-access}
 
-您首先需要请求访问 Universal Editor。参见 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)，登录，然后验证您是否有权访问通用编辑器。
+您首先需要请求访问 Universal Editor。请参阅 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)登录并验证您是否有权访问 Universal Editor。
 
 如果您无权访问，则可通过同一页面上链接的表单请求访问。
 
@@ -165,7 +165,7 @@ itemid="urn:<referenceName>:<resource>"
 
 您的应用程序现已插桩，可以使用 Universal Editor 了！
 
-参见 [使用通用编辑器创作内容](authoring.md) 了解内容作者使用通用编辑器创建内容是多么简单直观。
+请参阅[使用 Universal Editor 创作内容](authoring.md)，了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 
 ## 其他资源 {#additional-resources}
 
