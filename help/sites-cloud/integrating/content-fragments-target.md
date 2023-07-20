@@ -3,9 +3,9 @@ title: 将内容片段导出到 Adobe Target
 description: 将内容片段导出到 Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2222'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -69,9 +69,9 @@ ht-degree: 96%
 * 选择 Target 工作区作为目标
 * 选择一个外部化器域以重写内容片段中的引用（可选）
 
-可以在以下位置选择所需的选项： **页面属性** 所需的文件夹或/和片段；根据需要继承规范。
+可以在所需的文件夹和/或片段的&#x200B;**页面属性**&#x200B;中选择所需的选项；规范会根据需要继承。
 
-1. 导航到&#x200B;**资产**&#x200B;控制台。
+1. 导航到&#x200B;**资源**&#x200B;控制台。
 
 1. 打开相应的文件夹或片段的&#x200B;**页面属性**。
 
@@ -175,7 +175,7 @@ ht-degree: 96%
 
    * **租户 ID**：租户 ID
 
-   * **IMS配置**：从下拉列表中选择所需的配置
+   * **IMS 配置**：从下拉列表中选择所需的配置
 
    * **API 类型**：默认值为 REST（已弃用 XML）
 
@@ -311,13 +311,13 @@ When you associate a page with the framework, the child pages inherit the associ
 
 >[!CAUTION]
 >
->对于媒体资产（例如图像），仅将引用导出到 Target。资产本身仍存储在 AEM Assets 中，并且从 AEM 发布实例进行交付。
+>对于媒体资源（例如图像），仅将引用导出到 Target。资源本身仍存储在 AEM Assets 中，并且从 AEM 发布实例进行交付。
 >
->因此，在导出到 Target 之前，需要发布包含所有相关资产的内容片段。
+>因此，在导出到 Target 之前，需要发布包含所有相关资源的内容片段。
 
 要将内容片段从 AEM 导出到 Target（在指定云配置之后），请执行以下操作：
 
-1. 在&#x200B;**资产**&#x200B;控制台中导航到您的内容片段。
+1. 在&#x200B;**资源**&#x200B;控制台中导航到您的内容片段。
 1. 选择要导出到 Target 的内容片段。
 
 1. 点按/单击&#x200B;**导出到 Adobe Target 选件**。
@@ -338,9 +338,9 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >显示的实际操作取决于片段和相关资产的状态。
+   >显示的实际操作取决于您的片段和相关资源的状态。
    >
-   >如果所有内容都已发布，并且从那时起未进行任何修改，则会跳过此步骤。
+   >如果已发布所有内容，并且此后未进行任何修改，则会跳过此步骤。
 
    >[!NOTE]
    >
@@ -364,7 +364,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在 Adobe Target 中使用内容片段 {#using-your-content-fragments-in-adobe-target}
 
-执行上述任务后，将在 Target 中的选件页面上显示内容片段。参见 [特定Target文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html) 了解可以实现的目标。
+执行上述任务后，将在 Target 中的选件页面上显示内容片段。请查看[特定 Target 文档](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)以了解可以实现的目标。
 
 >[!NOTE]
 >
@@ -372,7 +372,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 删除已导出到 Adobe Target 的内容片段 {#deleting-a-content-fragment-already-exported-to-adobe-target}
 
-与导出一样，也可以在选定片段后，从&#x200B;**资产**&#x200B;控制台的顶部工具栏中选择从 Adobe Target 中删除内容片段：
+与导出一样，也可以在选定片段后，从&#x200B;**资源**&#x200B;控制台的顶部工具栏中选择从 Adobe Target 中删除内容片段：
 
 ![在 Adobe Target 中删除](assets/cfm-export-target-02.png)
 
@@ -390,7 +390,7 @@ When you associate a page with the framework, the child pages inherit the associ
    * 带有 AEM 内容片段的 Target 选件可能会显示意外行为
 
       * 该选件可能仍会呈现，因为内容片段已推送到 Target
-      * 如果引用的资产也已经从 AEM 中删除，则内容片段中的任何引用都无法正常工作。
+      * 如果引用的资源也已经从 AEM 中删除，则内容片段中的任何引用都无法正常工作。
 
    * 当然，由于内容片段在 AEM 中不再存在，因此无法对内容片段进行任何进一步的修改。
 
