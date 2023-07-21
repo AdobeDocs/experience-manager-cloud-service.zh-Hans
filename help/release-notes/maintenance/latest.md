@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39b2afda66e3bcb7db8ae63a2d0dcd27014ce377
+source-git-commit: 704f4e250975d8c0cbcfdc5e49b9c03d3a3e2939
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 77%
+source-wordcount: '190'
+ht-degree: 73%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 77%
 
 ### 已知问题 {#known-issues-12790}
 
-无。
+- GRANITE-46601 — 如果在以下情况下无法启动Quickstart SDK 11.0.20 `-Djdk.util.zip.disableZip64ExtraFieldValidation=true` java选项
 
 ### 嵌套的技术 {#embedded-tech-12790}
 
