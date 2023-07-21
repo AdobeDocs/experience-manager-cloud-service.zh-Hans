@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: eca0903050bb178f13d37073f8d65354f4bf36d3
+source-git-commit: 39b2afda66e3bcb7db8ae63a2d0dcd27014ce377
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 49%
+source-wordcount: '180'
+ht-degree: 77%
 
 ---
 
@@ -13,34 +13,25 @@ ht-degree: 49%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 发行版本 12697 {#release-12697}
+## 发行版本 12790 {#release-12790}
 
-维护版本12697的不断改进概述如下，该版本于2023年7月14日公开发布。 此维护版本是对上一个维护版本 12549 的更新。维护版本12697取代了12585以更正一个问题。
+维护版本12790的不断改进概述如下，该版本于2023年7月21日公开发布。 此维护版本是对上一个维护版本 12697 的更新。
 
 激活 2023.7.0 功能后可为此次维护版本提供完整的功能集。有关更多信息，请参阅[ Experience Manager 发布路线图。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
 
-### 增强 {#enhancements-12697}
-
-- 常规RDE稳定性改进(SKYOPS-61133、SKYOPS-55281、SKYOPS-61216和SKYOPS-61401)
-- DXML-12327： AEM Guides：支持本机PDF发布中的语言变量
-- DXML-11518： AEM Guides：增强了本机PDF发布中的元数据支持
-- DXML-10093： AEM Guides：支持连接到外部数据源并将数据插入dita主题
-- DXML-10699： AEM Guides：支持翻译中的XLIFF格式
-- DXML-10141： AEM Guides：使用基于微服务的发布进行PDF（本机和DITA-OT）、HTML和自定义预设类型的选项
-- SKYOPS-61385 — 更新Dispatcher以在Apache HTTPD中评估正则表达式时使用libpcre2
-
-### 修复的问题 {#fixed-issues-12697}
-
-- AEM Guides：各种本机PDF增强功能和稳定性修复
-- SKYOPS-53130：改进RDE中的AC工具支持
-- SKYOPS-57146：修复AEM启动时的Sling死锁
-- SKYOPS-61646：升级到版本12585后，上次复制日期未更新
-
-### 已知问题 {#known-issues-12697}
+### 增强 {#enhancements-12790}
 
 无。
 
-### 嵌套的技术 {#embedded-tech-12697}
+### 修复的问题 {#fixed-issues-112790}
+
+- SLING-11974 — 修复了SlingHttpServletRequest#getUserPrincipal中对未经身份验证的请求的回归。 该修复确保即使对于未经身份验证的请求，也能返回主体。
+
+### 已知问题 {#known-issues-12790}
+
+无。
+
+### 嵌套的技术 {#embedded-tech-12790}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
