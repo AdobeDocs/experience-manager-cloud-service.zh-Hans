@@ -2,9 +2,9 @@
 title: 翻译基于核心组件的自适应表单
 description: 使用机器翻译或人工翻译来翻译基于核心组件的自适应表单
 feature: Adaptive Forms
-source-git-commit: a33b380570210a32f4a4a1f26c9a2fe37c885bb1
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 4%
 1. 在底部 **摘要** 图块，单击 **椭圆**. 这将打开翻译项目属性屏幕。
 1. 打开 **[!UICONTROL 高级]** 选项卡顶部的 **翻译项目属性** 屏幕。 对于 **[!UICONTROL 翻译字段]**，选择 **[!UICONTROL 人工翻译]**. 单击 **保存并关闭** 在屏幕顶部。
 1. 在 **翻译作业** 图块，单击 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 图标，然后单击 **导出**. 在导出对话框中，单击下载导出的文件选项。 它下载.zip文件。
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
+   ![导出翻译文件](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. 解压缩下载的.zip文件。 提取的文件夹有两个文件：
    * translation_export_summary.xml
    * [form-fields-file].xml.
@@ -79,6 +79,6 @@ ht-degree: 4%
 1. 将translation_export_summary.xml和 [form-fields-file].xml.
 1. 在 **翻译作业** 图块，单击 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 图标，然后单击 **导入**. 选择包含的档案 [form-fields-file].xml. 表单字段的本地化字符串和消息。
 
-   ![](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
+   ![导入翻译文件](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
 1. 要预览本地化表单，请在AEM Forms UI中选择本地化表单。 单击 **[!UICONTROL 预览]** >**[!UICONTROL 预览为HTML]**. 在添加后重新打开表单 `afAcceptLang=<locale code>` 到表单的URL。 例如，添加 `afAcceptLang=de`以打开德语版窗体。

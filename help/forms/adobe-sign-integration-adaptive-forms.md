@@ -4,9 +4,9 @@ description: 了解如何为配置Adobe Acrobat Sign [!DNL AEM Forms] as a Cloud
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1943'
 ht-degree: 31%
 
 ---
@@ -123,7 +123,7 @@ ht-degree: 31%
 * 从Adobe Sign团队接收凭据
 * 使用收到的凭据将AEM Forms与适用于政府的Adobe Acrobat Sign Solutions连接
 
-![](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
+![Adobe Sign政府工作流程](/help/forms/assets/adobe-acrobat-sign-govt-workflow.png)
 
 
 AEM Formsas a Cloud Service提供开发、暂存和生产环境。 您可以开始将的开发环境与适用于政府的Adobe Acrobat Sign Solutions连接，并在以后连接暂存环境和生产环境。
