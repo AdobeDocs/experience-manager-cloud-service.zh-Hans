@@ -2,12 +2,13 @@
 title: 内容复制工具
 description: 内容复制工具使用户能够根据需要将可变内容从AEMas a Cloud Service上的生产环境复制到较低环境，以进行测试。
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
+source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 41%
+source-wordcount: '1308'
+ht-degree: 38%
 
 ---
+
 
 # 内容复制工具 {#content-copy}
 
@@ -41,11 +42,13 @@ ht-degree: 41%
 | 创建和修改[内容集](#create-content-set) | 必需 | 非必填 |
 | 开始或取消[内容复制过程](#copy-content) | 必需 | 必需 |
 
+有关权限以及如何设置这些权限的更多详细信息，请参阅文档 [AEMas a Cloud Service团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md)
+
 ## 创建内容集 {#create-content-set}
 
 在可以复制任何内容之前，必须定义一个内容集。定义后，可以重用内容集来复制内容。 请按照以下步骤操作，以便您可以创建内容集。
 
-1. 登录到Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择适当的组织和项目。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 中登录 Cloud Manager 并选择适当的组织和项目。
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
@@ -174,6 +177,16 @@ ht-degree: 41%
 >取消内容复制操作时，可能会导致在目标环境中复制部分内容。 这种情况可能会使目标环境处于不可用状态。
 >
 >如果您的环境由于取消而处于这种状态，请联系Adobe客户关怀部门寻求帮助。
+
+### 访问日志 {#accessing-logs}
+
+您可以查看源环境和目标环境的日志，以了解任何已完成的内容复制过程。
+
+为此，请在 **复制内容活动** 页面上，选择 **日志** 操作来自复制过程的省略号菜单，您要查看其日志，然后选择哪个环境。
+
+![访问复制内容过程的日志](assets/copy-content-logs.png)
+
+日志将下载到您的本地计算机。 如果下载未开始，请检查弹出窗口阻止程序设置。
 
 ## 限制 {#limitations}
 
