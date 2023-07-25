@@ -10,17 +10,19 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 115f8dfc8d3ba025f1e815bb8ae87cfb8a513e65
+source-git-commit: 07e0e7c14ac6bac04542a34d50e67b3b846281b8
 workflow-type: tm+mt
 source-wordcount: '1513'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # 在自适应Forms中使用CAPTCHA{#using-captcha-in-adaptive-forms}
 
-|版本 |文章链接 | |青瓦-------- |青瓦---------------------------- | | AEM 6.5 |    [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html)                  | | AEMAS A CLOUD SERVICE |本文 |
-=======
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
+| AEM as a Cloud Service | 本文 |
 
 <span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
 
