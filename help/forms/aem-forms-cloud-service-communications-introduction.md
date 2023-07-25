@@ -2,14 +2,19 @@
 title: Forms as a Cloud Service 通信简介
 description: 自动将数据与 XDP 和 PDF 模板合并，或以 PCL、ZPL 和 PostScript 格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
+source-git-commit: 94b24e3fb1ce009fb31506a1b0a6d5159c4907eb
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 100%
+source-wordcount: '1156'
+ht-degree: 99%
 
 ---
 
 # 使用 AEM Forms as a Cloud Service 通信 {#frequently-asked-questions}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html) |
+| AEM as a Cloud Service | 本文 |
 
 通信功能可帮助您创建品牌批准的、个性化的和标准化的文档，例如商业信函、对帐单、理赔处理函、收益通知函、月度帐单或欢迎套件。
 
