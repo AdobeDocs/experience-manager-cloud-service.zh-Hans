@@ -1,22 +1,22 @@
 ---
-title: 编辑上下文中
-description: 探索如何使用通用编辑器在任何实施中就地和上下文中编辑内容的任何方面。
+title: 在上下文中编辑
+description: 探索如何使用通用编辑器在任何实施中的就地和上下文中编辑内容的任何方面。
 hidefromtoc: true
 index: false
-source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
+source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 6%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
 
-# 编辑上下文中 {#editing-in-context}
+# 在上下文中编辑 {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="编辑上下文中"
->abstract="了解您的Headless应用程序可怎样利用通用编辑器将低摩擦的上下文编辑带到作者的指尖。"
+>title="在上下文中编辑"
+>abstract="了解您的Headless应用程序可怎样利用通用编辑器在上下文编辑中为作者带来低摩擦。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,12 +25,16 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="在本模块中，您已了解如何使用通用编辑器在上下文中和就地自定义内容。"
+>title="在本模块中，您已了解如何使用通用编辑器在上下文中就地自定义内容。"
 >abstract=""
 
-## 编辑上下文中的文本 {#edit-text}
+## 在上下文中编辑文本 {#edit-text}
 
-在就地和上下文中编辑通常比在内容片段编辑器中编辑结构化Headless内容更有利，正如您在以前的模块中所看到的。
+在就地和上下文中编辑通常比在内容片段编辑器中编辑结构化Headless内容更有利，就像在以前的模块中看到的一样。
+
+>[!NOTE]
+>
+>为了在此试用版中使用通用编辑器，您必须将Chrome用作浏览器，而不是在无痕模式下使用。 这是试用体验的限制，而不是通用编辑器的限制。
 
 使用通用编辑器，您可以灵活地在上下文中就地编辑文本，从而实现简单直观的内容创作。
 
@@ -47,6 +51,26 @@ ht-degree: 6%
 1. 按Enter/Return键或点按或单击文本组件外部，此时将自动保存更改。
 
 通用编辑器会自动将更改保存在创作环境中。 您仍需要发布这些文档以供读者查看，我们将在后续步骤中执行此操作。
+
+## 在上下文中编辑媒体 {#edit-media}
+
+您还可以使用通用编辑器在仍保留在内容上下文中的情况下交换图像。
+
+1. 将编辑器更改为 **媒体** 模式(点按或单击 **媒体** 按钮。
+
+1. 点按或单击冲浪者的图像以将其选定。
+
+1. 在组件边栏中，您可以查看资源的详细信息。 点击或单击 **Replace**.
+
+   ![选择要编辑的图像](assets/do-not-localize/ue-edit-media.png)
+
+1. 在 **选择资源** 窗口，向下滚动并点按或单击 `surfer-wave-02.JPG` 图像以选择它。
+
+1. 点击或单击 **选择** 在 **选择资源** 窗口。
+
+   ![使用“选择资产”窗口选择图像](assets/do-not-localize/ue-select-asset.png)
+
+图像将替换为您选择的图像。
 
 ## 像Reader一样体验您的内容 {#emulators}
 
@@ -102,6 +126,5 @@ ht-degree: 6%
 1. 新 **编辑** 图标显示在模式边栏上。 点按或单击 **编辑** 图标以在新选项卡上打开内容片段编辑器。
 
 ![在通用编辑器中选择内容片段](assets/do-not-localize/ue-content-fragments.png)
-
 
 在新选项卡上，您现在可以编辑在通用编辑器中选择的内容片段。
