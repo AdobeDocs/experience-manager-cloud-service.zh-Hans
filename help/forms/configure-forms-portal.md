@@ -2,14 +2,16 @@
 title: 如何在Experience Manager Sites页面上创建Forms门户
 description: 了解如何在AEM Sites页面上创建Forms门户以及使用现成的核心组件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1839'
 ht-degree: 1%
 
 ---
 
 # 在门户上列出自适应Forms {#publish-forms-on-portal}
+
+<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |

@@ -10,14 +10,16 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1493'
 ht-degree: 3%
 
 ---
 
 # 在自适应Forms中使用CAPTCHA{#using-captcha-in-adaptive-forms}
+
+<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
 
 CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。 它会提出挑战，并评估用户响应以确定是人类还是机器人与网站交互。 它可以在测试失败时阻止用户继续操作，并通过阻止机器人发送垃圾邮件或恶意目的，帮助确保在线交易的安全。
 

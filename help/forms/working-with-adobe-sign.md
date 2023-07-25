@@ -5,15 +5,18 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3174'
 ht-degree: 1%
 
 ---
 
 
 # 使用 [!DNL Adobe Sign] 在自适应表单中 {#using-adobe-sign-in-an-adaptive-form}
+
+<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
+
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -23,7 +26,7 @@ ht-degree: 1%
 
 [!DNL Adobe Sign] 支持自适应表单的电子签名工作流。电子签名改进了法律、销售、工资单、人力资源管理和其他领域的文档处理工作流。
 
-在典型的 [!DNL Adobe Sign] 和自适应Forms场景中，用户填写自适应表单以申请需要一个或多个参与方签名的服务。 例如，抵押贷款和信用卡申请需要所有借款人和共同申请人的合法签名。 要为类似方案启用电子签名工作流，您可以集成 [!DNL Adobe Sign] 使用自适应表单。 还有几个示例是，您可以使用 [!DNL Adobe Sign] 到：
+在典型的 [!DNL Adobe Sign] 和自适应Forms场景中，用户填写自适应表单以申请需要一个或多个参与方签名的服务。 例如，抵押贷款和信用卡申请需要所有借款人和共同申请人的合法签名。 要为类似方案启用电子签名工作流，您可以集成 [!DNL Adobe Sign] 使用自适应表单。 还有几个示例是，您可以使用 [!DNL Adobe Sign] 至：
 
 * 使用完全自动化的计划书、报价和合同流程从任何设备完成交易。
 * 更快地完成人力资源流程，并为员工提供数字体验。

@@ -2,14 +2,16 @@
 title: 创建和使用主题使自适应表单风格化
 description: 您可以使用主题来使自适应表单风格化并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '5519'
+source-wordcount: '5576'
 ht-degree: 1%
 
 ---
 
 # 创建和使用主题 {#creating-and-using-themes}
+
+<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |

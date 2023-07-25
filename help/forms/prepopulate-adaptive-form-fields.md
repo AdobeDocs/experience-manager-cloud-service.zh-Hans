@@ -6,14 +6,16 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '2025'
 ht-degree: 2%
 
 ---
 
 # 预填自适应表单字段{#prefill-adaptive-form-fields}
+
+<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -204,7 +206,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
-> 在绑定面板(通过从“Sidekick”或“数据源”选项卡拖动组件而创建的具有非空bindRef的面板)中使用未绑定字段是 **非** 建议这样做，因为它可能会导致未绑定字段的数据丢失。 建议在表单中保留唯一的字段名称，尤其是未绑定的字段。
+> 在绑定面板（具有非空bindRef的面板，这些面板是通过从Sidekick或“数据源”选项卡拖动组件创建的）中使用未绑定字段是 **非** 建议这样做，因为它可能会导致未绑定字段的数据丢失。 建议在表单中保留唯一的字段名称，尤其是未绑定的字段。
 >
 
 ### 无表单模型的自适应表单 {#adaptive-form-with-no-form-model}

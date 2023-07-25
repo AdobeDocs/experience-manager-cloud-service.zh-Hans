@@ -2,14 +2,16 @@
 title: 脚注支持
 description: RTE对脚注的支持。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 0%
+source-wordcount: '426'
+ht-degree: 1%
 
 ---
 
 # 脚注组件 {#footnotecomponent}
+
+<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
 
 **[!UICONTROL 脚注]** 是显示在页面末尾的信息或注释的额外位。 [!UICONTROL 脚注] 由以数字作为上标在文本中表示的注释组成。
 
@@ -44,13 +46,11 @@ ht-degree: 0%
    >* 脚注会自动编号，并以在自适应表单中创建的方式显示。
    >* 如果存在重复的脚注，则所有重复的脚注的编号相同。
 
-
 1. 在组件浏览器中，拖放 **[!UICONTROL 脚注占位符]** 自适应表单上的组件。
    >[!NOTE]
    >
    >* 在发布实例中，脚注显示在位置 **[!UICONTROL 脚注占位符]** 组件放在自适应表单上。
    >* 在不同面板之间导航时，只有可见的脚注会显示在 **[!UICONTROL 脚注占位符]** 导航面板中存在的属性。
-
 
 1. 保存属性。
 

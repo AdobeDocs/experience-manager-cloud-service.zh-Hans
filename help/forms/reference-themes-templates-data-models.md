@@ -4,14 +4,16 @@ seo-title: Reference Themes, Templates, and Form Data models
 description: AEM Forms提供了可从Software Distribution中获取的自适应表单主题、模板和表单数据模型
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '836'
 ht-degree: 2%
 
 ---
 
 # 参考主题、模板和表单数据模型 {#reference-themes-templates-and-data-models}
+
+<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
 
 AEM Formsas a Cloud Service提供了多个参考主题、模板和表单数据模型，以帮助您快速开始创建自适应Forms。 您可以下载 [来自软件分发门户的引用内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 并使用 [包管理器](/help/implementing/developing/tools/package-manager.md) 安装 [引用内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 在生产、开发或本地开发环境中，将这些参考资产引入您的环境。
 
@@ -22,11 +24,11 @@ AEM Formsas a Cloud Service提供了多个参考主题、模板和表单数据�
 ---------|----------|---------
 | 画布3.0 | 基本 | Microsoft Dynamics 365 |
 | 宁静 | 空白 | Salesforce |
-| 城市 |  |  |
+| 城市 |   |  |
 | Ultramarine |  |  |
 | Beryl |  |  |
-| 医疗保健 |  |  |
-| FSI |  |  |
+| 医疗保健 |  |   |
+| FSI |   |   |
 
 ## 引用主题 {#reference-themes}
 
