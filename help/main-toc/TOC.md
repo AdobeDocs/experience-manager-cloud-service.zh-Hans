@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4194'
 ht-degree: 99%
 
 ---
@@ -192,7 +192,7 @@ ht-degree: 99%
       + [创建 Headless 内容](/help/trials/headless/create-content.md)
       + [通过 GraphQL API 提取内容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 获取 JSON 内容](/help/trials/headless/code-playground.md)
-      + [使用通用编辑器编辑内联](/help/trials/headless/universal-editor.md)
+      + [使用通用编辑器内联编辑](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [就绪阶段](/help/journey-migration/readiness.md)
@@ -340,7 +340,6 @@ ht-degree: 99%
             + [检索 Git 存储库访问信息](/help/journey-sites/quick-site/retrieve-access.md)
             + [自定义站点主题](/help/journey-sites/quick-site/customize-theme.md)
             + [部署自定义主题](/help/journey-sites/quick-site/deploy-theme.md)
-      + [管理工作流](/help/sites-cloud/administering/workflows-administering.md)
       + 重用内容 {#reusing-content}
          + [MSM 和翻译](/help/sites-cloud/administering/msm-and-translation.md)
          + 多站点管理器 {#msm}
@@ -369,6 +368,8 @@ ht-degree: 99%
             + [配置翻译集成框架](/help/sites-cloud/administering/translation/integration-framework.md)
             + [连接到 Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [翻译最佳实践](/help/sites-cloud/administering/translation/best-practices.md)
+      + [管理标记](/help/sites-cloud/administering/tags.md)
+      + [管理工作流](/help/sites-cloud/administering/workflows-administering.md)
    + 与 AEM as a Cloud Service 集成 {#integrations}
       + [与 Adobe Analytics 集成](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [与 Adobe Analytics 自动化设置集成](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
