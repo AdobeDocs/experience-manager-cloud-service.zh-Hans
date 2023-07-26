@@ -4,10 +4,10 @@ description: 使用示例 React 应用程序以了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
+source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1044'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 
    ![从片段中移除图像](assets/do-not-localize/swap-image-4.png)
 
-1. 点按或单击&#x200B;**添加资产**。
+1. 点击或单击 **添加资源** 然后 **浏览资源** 在弹出菜单中。
 
 1. **选择资产**&#x200B;对话框打开，并会为您自动选择路径 **sample-wknd-app** > **en** > **image-files**。
 
