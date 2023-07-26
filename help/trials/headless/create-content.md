@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 88%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="创建Headless内容"
+>title="创建 Headless 内容"
 >abstract="使用您在前一单元中创建的模型学习如何创建可用于创作页面或作为 Headless 内容的基础的内容。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="启动内容片段控制台"
->abstract="创建可在您的应用程序和网站上无缝运行的一致、高质量的内容可以带来出色的客户体验。本模块将指导您使用内容片段控制台创建您的第一个Headless内容。<br><br>单击下方按钮在新选项卡中启动该模块，然后遵循该指南。"
+>abstract="创建可在您的应用程序和网站上无缝运行的一致、高质量的内容可以带来出色的客户体验。本模块将指导您使用内容片段控制台创建第一个 Headless 内容。<br><br>单击下方按钮在新选项卡中启动该模块，然后遵循该指南。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="做得好！在本模块中，您已了解如何根据之前创建的模型将Headless内容创作为内容片段。 您现在了解内容团队如何独立于开发周期为应用程序和网站创建和管理内容。"
+>title="做得好！在本模块中，您已了解如何基于之前创建的模型创作 Headless 内容作为内容片段。您现在了解内容团队如何独立于开发周期为应用程序和网站创建和管理内容。"
 >abstract=""
 
 ## 创建内容片段 {#create-fragment}
@@ -35,7 +35,7 @@ ht-degree: 88%
 
 在本模块中，您会使用内容片段控制台基于该模型创建一个新的内容片段。可以将内容片段控制台视为您的 Headless 内容库。使用它来创建新的内容片段并管理现有的片段。
 
-内容片段控制台用于跨投放渠道创建和编辑Headless内容，它独立于上下文，这可能是许多创作情况下最有效的方法。 在稍后的模块中，我们将探索在上下文和就地编辑Headless内容。
+内容片段控制台用于跨投放渠道和独立于上下文创建和编辑Headless内容，在许多创作情况下，这可能是最有效的方法。 在稍后的模块中，我们将探索在上下文中就地编辑Headless内容。
 
 1. 点按或单击该控制台右上角的&#x200B;**创建**&#x200B;按钮。
 
