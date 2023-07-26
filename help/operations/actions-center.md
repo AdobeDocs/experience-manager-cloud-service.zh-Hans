@@ -4,10 +4,10 @@ description: 利用操作中心可方便地针对问题和其他重要信息采�
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '701'
-ht-degree: 100%
+source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在
 
 ## 支持的通知类型 {#supported-notification-types}
 
-下表列出了“操作中心”当前支持的通知类型。
+下表列出了“操作中心”当前支持的通知类型。通知当前仅限于生产环境。
 
 | 通知类型 | 相关产品配置文件 | 纠正措施 |
 |---|---|---|
