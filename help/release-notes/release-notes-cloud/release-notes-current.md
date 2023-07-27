@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8efe5d66929d1e2ccd7af71a2de8ae02f2bbc290
+source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 44%
+source-wordcount: '981'
+ht-degree: 41%
 
 ---
 
@@ -77,10 +77,9 @@ Assets Essentials现在提供用于选择在“资源列表”视图中显示的
 
 * [**现成主题**](/help/forms/using-themes-in-core-components.md) **和模板**：利用我们现成的OOTB主题和模板启动表单创建流程，这些主题和模板经过定制，可增强经验丰富的专业人员和新表单作者的能力。 通过无缝使用自适应Forms核心组件构建，这些精心策划的主题和模板允许您为常见用例快速创建表单。
 
+!![现成模板](/help/forms/assets/form-templates-ootb.png)
 
 * **适用于Headless Forms的React组件**：您现在可以使用现成的React组件预览和自定义Headless自适应表单演绎版。 这些组件利用自适应Forms核心组件的BEM类进行样式设置，使您能够轻松根据特定要求自定义其外观。
-
-  与 Adobe Acrobat Sign 解决方案政府版的集成使 Adobe 的合作伙伴和政府客户能够在一些最关键和敏感的业务领域使用自适应表单中的电子签名功能。这层额外的安全保障机制确保所有电子签名完全符合 FedRAMP Moderate 合规性，使 Adobe 的政府客户能够安心使用。
 
 * [**创建包含可重复部分的自适应Forms**](/help/forms/create-forms-repeatable-sections.md)：您现在可以制作 [折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)， [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、和 [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) 可重复用于多个数据记录捕获的基于组件的自适应表单。  这些可重复部分允许您轻松提供多个数据条目。 当预先未知所需的数据实例时，它非常有用。表单填充器可以轻松地添加或移除部分，使表单适应不同的数据输入方案，并简化相同数据记录的多个发生次数的收集。
 
