@@ -3,7 +3,7 @@ title: 如何将自适应表单添加到AEM Sites页面？
 description: 了解如何在AEM Sites页面上创建或添加自适应表单。 还可了解将表单集成到网站的好处和各种方式。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: ecc881ac1a9f8dd98cd57bbeb44cc35deddcbb8e
+source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 22%
@@ -84,6 +84,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
        ```
        //Customheaderlibs.html
+       
        &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
        &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&amp;#39;core.forms.components.runtime.all&amp;#39;}&quot; />
        &lt;/sly>
