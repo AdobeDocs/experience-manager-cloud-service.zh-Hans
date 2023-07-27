@@ -1,20 +1,15 @@
 ---
 title: 操作中心
 description: 利用操作中心可方便地针对问题和其他重要信息采取行动
-hidefromtoc: true
-hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 99%
+source-wordcount: '727'
+ht-degree: 95%
 
 ---
 
 # 操作中心 {#actions-center}
-
->[!NOTE]
->此功能尚未发布。
 
 AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发送“操作中心”电子邮件通知，并主动提出优化建议。示例包括阻塞队列或一组即将过期的凭据；可在[下表](#supported-notification-types)中查看完整的“操作中心”通知类型集，此表也会随着时间不断扩充。
 
@@ -40,7 +35,7 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发�
 
 ## 详细的用户流程 {#detailed-user-flow}
 
-单击电子邮件会将您转至操作中心，这将会出现一个弹出窗口，其中显示您单击的通知的上下文，在某些情况下，还会显示指向描述如何采取纠正措施的其他信息的链接。
+单击电子邮件会将您转至操作中心，这将会出现一个弹出窗口，其中显示您单击的通知的上下文，在某些情况下，还会显示指向描述如何采取纠正措施的其他信息的链接。您还可以直接从以下位置访问操作中心： [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)，您可以在其中选择相关的项目和环境。
 
 ![问题详细信息](/help/operations/assets/incident-details.png)
 

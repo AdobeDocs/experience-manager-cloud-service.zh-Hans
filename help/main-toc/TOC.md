@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
+source-git-commit: 0b79cc8ee956226e10cffdfec05c7c38caccaee0
 workflow-type: tm+mt
-source-wordcount: '4194'
+source-wordcount: '4197'
 ht-degree: 99%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 99%
    + AEMaaCS 功能发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
+         + [2023.6.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [2023.4.0 版发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [2023.2.0 版发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
          + [2023.1.0 版发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
@@ -192,7 +193,7 @@ ht-degree: 99%
       + [创建 Headless 内容](/help/trials/headless/create-content.md)
       + [通过 GraphQL API 提取内容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 获取 JSON 内容](/help/trials/headless/code-playground.md)
-      + [使用通用编辑器内联编辑](/help/trials/headless/universal-editor.md)
+      + [使用 Universal Editor 进行内联编辑](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [就绪阶段](/help/journey-migration/readiness.md)
@@ -575,7 +576,7 @@ ht-degree: 99%
             + [使用机器翻译或人工翻译来翻译自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
-            + [为自适应表单配置提交操作](/help/forms/configure-submit-actions-core-components.md)
+            + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
       + 创作自适应表单 - 基础组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -633,7 +634,7 @@ ht-degree: 99%
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
    + 开发人员 API 参考 {#aem-forms-developer-api-reference}
-      + [自适应Forms API参考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
+      + [自适应表单 API 参考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 通信 API 参考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [AEM Forms Cloud Service JavaScript API 参考](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
       + [AEM Forms Cloud Service Java API 参考](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
