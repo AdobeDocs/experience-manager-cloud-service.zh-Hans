@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
+source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 41%
@@ -77,7 +77,7 @@ Assets Essentials现在提供用于选择在“资源列表”视图中显示的
 
 * [**现成主题**](/help/forms/using-themes-in-core-components.md) **和模板**：利用我们现成的OOTB主题和模板启动表单创建流程，这些主题和模板经过定制，可增强经验丰富的专业人员和新表单作者的能力。 通过无缝使用自适应Forms核心组件构建，这些精心策划的主题和模板允许您为常见用例快速创建表单。
 
-!![现成模板](/help/forms/assets/form-templates-ootb.png)
+  ![现成模板](/help/forms/assets/form-templates-ootb.png)
 
 * **适用于Headless Forms的React组件**：您现在可以使用现成的React组件预览和自定义Headless自适应表单演绎版。 这些组件利用自适应Forms核心组件的BEM类进行样式设置，使您能够轻松根据特定要求自定义其外观。
 
