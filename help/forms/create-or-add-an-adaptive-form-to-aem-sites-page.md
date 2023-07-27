@@ -3,9 +3,9 @@ title: 如何将自适应表单添加到AEM Sites页面？
 description: 了解如何在AEM Sites页面上创建或添加自适应表单。 还可了解将表单集成到网站的好处和各种方式。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: c5a3b5a22283e0e14b8d0a8464b9bba460a80c71
+source-git-commit: 6a462b7a437f74e659a43f7f5d4a95663b92c2cf
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3308'
 ht-degree: 22%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 22%
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | 本文 |
+
+## 概述 {#overview}
 
 借助AEM Forms，您可以无缝地向AEM Sites页面添加表单。 这使得您的访问者无需离开其所在的页面，即可方便地填写和提交表格。这样，他们即可在主动与表单交互的同时轻松地与网站的其他元素保持互动。
 
@@ -51,11 +53,12 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
 * **[将自适应表单转换为体验片段](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)：** 将添加到AEM Sites页面的自适应表单转换为体验片段，以便在多个AEM Sites页面中重用该表单。
 
-* **将多个表单添加到AEM Sites页面或体验片段：**  您可以在AEM Sites页面上创建或添加多个自适应Forms，以根据用户的偏好和要求为其提供多个选择。 这些表单可以包括从头开始创建的全新表单和现有的表单。
+* **[根据批准的模板创建表单并将其添加到AEM Sites页面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** 您可以利用预批准的模板快速创建符合您组织的品牌准则和设计标准的自适应Forms。 选项仅适用于使用自适应Forms编辑器或自适应Forms — 嵌入组件创建的自适应Forms 。
 
-* **根据批准的模板创建表单并将其添加到AEM Sites页面：** 您可以利用预批准的模板快速创建符合您组织的品牌准则和设计标准的自适应Forms。 选项仅适用于使用自适应Forms编辑器或自适应Forms — 嵌入组件创建的自适应Forms 。
+* **[将现有表单添加到AEM Sites页面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** 您可以将已创建的表单轻松集成到网站中，从而使访客能够直接与表单进行交互。 选项仅适用于使用自适应Forms编辑器或自适应Forms — 嵌入组件创建的自适应Forms 。
 
-* **将现有表单添加到AEM Sites页面：** 您可以将已创建的表单轻松集成到网站中，从而使访客能够直接与表单进行交互。 选项仅适用于使用自适应Forms编辑器或自适应Forms — 嵌入组件创建的自适应Forms 。
+
+* **将多个表单添加到AEM Sites页面或体验片段：**  您可以在AEM Sites页面上创建或添加多个自适应Forms，以根据用户的偏好和要求为其提供多个选择。 这些表单可以包括从头开始创建的全新表单和现有的表单。您可以使用 **[!UICONTROL 自适应表单容器]** 多次组件，以在AEM Sites页面中添加自适应Forms。 您可以使用 **[!UICONTROL 自适应Forms — 嵌入]** 在AEM Sites页面中多次使用组件，仅当 **[!UICONTROL 表单覆盖框架的整个宽度]** 已选中选项。 如果 **[!UICONTROL 表单覆盖框架的整个宽度]** 选项未选中，AEM Sites页面仅支持一个不带iframe的自适应表单。 要添加更多自适应Forms，请使用 **[!UICONTROL 自适应Forms — 嵌入]** 组件，选择 **[!UICONTROL 表单覆盖框架的整个宽度]** 选项。
 
 ## 在AEM Sites页面或AEM Experience Fragment中创建自适应表单的注意事项 {#consideration}
 
