@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
+source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 5%
@@ -734,7 +734,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## 启用符合架构的数据 {#enablig-schema-compliant-data}
 
-要启用自适应表单以在表单提交时生成与架构兼容的数据，请执行以下步骤：
+要启用所有基于JSON架构的自适应Forms在提交表单时生成与架构兼容的数据，请执行以下步骤：
 
 1. 转到Experience ManagerWeb控制台，网址为 `https://server:host/system/console/configMgr`.
 1. 定位 **[!UICONTROL 自适应表单和互动通信Web渠道配置]**.
