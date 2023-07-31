@@ -5,7 +5,7 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 96%
 1. 从&#x200B;**环境**&#x200B;页面导航到 **SSL 证书**&#x200B;屏幕。
 1. 您将看到一个表，其中包含已在程序中成功安装的每个 SSL 证书的行。 单击要更新的证书行最右侧的省略号按钮，然后选择&#x200B;**查看和更新**。
 1. 将显示证书详细信息并可以更新。
-1. 运行管道以部署更新的证书。
+1. 运行管道以部署更新后的证书。
 
 >[!NOTE]
 >

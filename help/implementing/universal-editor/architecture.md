@@ -5,7 +5,7 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Universal Editor 由四个基本构建块组成，这些构建块将进行交互
 
 >[!TIP]
 >
->要查看通用编辑器及其架构的实际运行情况，请参阅文档 [AEM中的通用编辑器快速入门](getting-started.md) 了解如何访问通用编辑器以及如何开始检测您的第一个AEM应用程序以使用它。
+>要查看 Universal Editor 及其架构的实际操作，请参阅文档 [AEM 中的 Universal Editor 快速入门](getting-started.md)以了解有权访问 Universal Editor 以及如何开始让第一个 AEM 应用程序使用它。
 
 ### 编辑器 {#editors}
 

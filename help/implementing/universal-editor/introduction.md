@@ -5,7 +5,7 @@ exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 
 由于可以通过多种不同方式构建体验，因此，任何实施都可以利用 Universal Editor，以便作者能够执行上下文编辑。
 
-用户通常认为，Headless实施限制作者在基于表单的UI中编辑所有内容，但通用编辑器并非如此
+用户一般认为 Headless 实施仅限作者编辑基于表单的 UI 中的所有内容，但 Universal Editor 并非如此
 
 利用 Universal Editor 的实施的要求非常直接，并且支持以下内容：
 

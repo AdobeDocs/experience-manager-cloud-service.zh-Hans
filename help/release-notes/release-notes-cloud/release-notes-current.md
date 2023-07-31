@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 43%
+ht-degree: 49%
 
 ---
 
@@ -60,19 +60,19 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-**改进了图像智能标记的人工智能框架**
+**适用于图像智能标记的改进的人工智能框架**
 
-Experience Manager Assets 现在为图像智能标记使用改进的人工智能框架。 这种内容智能化可提高智能标记的相关性和准确性，可用于摄取的所有图像资产。 
+Experience Manager Assets 现在为图像智能标记使用改进的人工智能框架。这种内容智能化可提高智能标记的相关性和准确性，可用于摄取的所有图像资源。
 
-**配置资产列表视图的列显示**
+**配置资源列表视图的列显示**
 
-Assets Essentials现在提供用于选择在“资源列表”视图中显示的列的功能，如状态、格式、Dimension、大小等。
+Assets Essentials 现在可让您选择资源列表视图中显示的列，例如“状态”、“格式”、“维度”、“大小”等。
 
 ![配置列](/help/release-notes/assets/configure-columns.png)
 
-**根据相关性对搜索结果排序**
+**根据相关性对搜索结果进行排序**
 
-默认情况下，Assets Essentials现在会根据相关性对搜索结果进行排序。 可按 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的升序或降序为搜索到的资源排序。
+默认情况下，Assets Essentials 现在根据相关性对搜索结果进行排序。可按 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的升序或降序为搜索到的资源排序。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
 source-wordcount: '977'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ CodePen 是用于前端 Web 开发的在线代码编辑器和活动天地。它�
           ...
 ```
 
-如果您反而看到错误，请检查浏览器控制台以了解更多详细信息或联系 [按电子邮件](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request).
+如果您看到的却是错误，请检查浏览器控制台以了解更多详情或[通过电子邮件](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request)进行联系。
 
 现在您对 CodePen 有了一些了解，接下来您将会配置该应用程序，以从您在上一个模块中创建的持久查询中获取数据。
 
@@ -92,7 +92,7 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
    persistedQueryName = 'your-project/adventure-list';
    ```
 
-1. 做出此更改后，应用程序将自动刷新，并将来自持久查询的原始 JSON 响应输出到 `#output` div。如果显示一条错误消息，请在控制台中查看更多详细信息。伸手 [按电子邮件](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request) 如果您在此步骤中仍然遇到问题。
+1. 做出此更改后，应用程序将自动刷新，并将来自持久查询的原始 JSON 响应输出到 `#output` div。如果显示一条错误消息，请在控制台中查看更多详细信息。如果您在此步骤中仍有问题，请[通过电子邮件](mailto:aem-headless-trials-support@adobe.com?subject=AEM%20Trials%20support%20request)进行联系。
 
 1. 此 JSON 是否包含您的应用程序所需的确切属性？如果没有，请返回[使用 GraphQL API 提取内容](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql)学习指南进行更改。请记住，请在完成后保存并发布您的查询。
 
