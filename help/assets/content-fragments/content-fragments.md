@@ -1,17 +1,17 @@
 ---
 title: 使用内容片段 （资产 — 内容片段）
-description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和 headless 投放。
+description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和 headless 投放。以及它们如何与MSM结合使用。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2159'
 ht-degree: 89%
 
 ---
 
 # 使用内容片段 {#working-with-content-fragments}
 
-借助Adobe Experience Manager (AEM)as a Cloud Service，内容片段允许您设计、创建、管理和 [发布独立于页面的内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 利用这些功能，可准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。
+利用Adobe Experience Manager (AEM)as a Cloud Service，内容片段允许您设计、创建、策划和 [发布独立于页面的内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 利用这些功能，可准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。 它们也可以与一起使用 [多站点管理使您能够重复使用内容](#reusing-content-fragments-with-msm-assets).
 
 内容片段包含结构化内容：
 
@@ -34,7 +34,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。 现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但您仍然可以从以下位置管理它们： **资产** 控制台。 本节介绍来自以下各项的管理： **资产** 控制台。
+>内容片段存储为&#x200B;**资源**。 现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
 
 本页和以下页面介绍了创建、配置、维护和使用内容片段的任务：
 
@@ -45,7 +45,7 @@ ht-degree: 89%
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) – 使用片段的 markdown 语法
 * [使用关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md) – 添加关联内容
 * [元数据 – 片段属性](/help/assets/content-fragments/content-fragments-metadata.md) – 查看和编辑片段属性
-* 使用 [内容片段与GraphQL一起交付内容](/help/assets/content-fragments/content-fragments-graphql.md) 以便在您的应用程序中使用。 要帮助您完成此操作，您可以预览 [JSON输出](/help/assets/content-fragments/content-fragments-json-preview.md).
+* 使用 [内容片段，与GraphQL一起提供内容](/help/assets/content-fragments/content-fragments-graphql.md) 以便在您的应用程序中使用。 要帮助您完成此操作，您可以预览 [JSON输出](/help/assets/content-fragments/content-fragments-json-preview.md).
 * [使用MSM对资产重用内容片段](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
@@ -112,13 +112,13 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 ## 通过MSM for Assets重用内容片段 {#reusing-content-fragments-with-msm-assets}
 
-通过 **资产** 控制台您可以使用MSM并为片段创建活动副本。
+通过访问时 **资产** 控制台您可以使用MSM并为片段创建活动副本。
 
 有关更多详细信息，请参阅 [使用MSM对资产重用内容片段](/help/assets/reuse-assets-using-msm.md).
 
 >[!CAUTION]
 >
->如果要使用MSM（这将创建内容片段的副本），则任意 **独特** 应从在相应数据集中使用的任何数据类型中删除约束 [内容片段模型](/help/assets/content-fragments/content-fragments-models.md).
+>如果要使用MSM（这将创建内容片段的副本），则任意 **独特** 应从在各自中使用的所有数据类型中删除约束 [内容片段模型](/help/assets/content-fragments/content-fragments-models.md).
 
 ## 内容类型 {#content-type}
 
@@ -126,7 +126,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 * 存储为&#x200B;**资源**：
 
-   * 内容片段（及其变体）可以从以下网站创建和维护 **资产** 控制台。
+   * 内容片段（及其变体）可以从以下内容创建和维护： **资产** 控制台。
    * 在内容片段编辑器中创作和编辑。
 
 * 通过内容片段组件](/help/sites-cloud/authoring/fundamentals/content-fragments.md)（引用组件）在[页面编辑器中使用：
@@ -295,7 +295,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 ## 使用示例 {#example-usage}
 
-片段及其元素和变体可用于为多个渠道创建一致的内容。 在设计片段时，请考虑使用的内容以及在何处使用。
+片段及其元素和变体可用于为多个渠道创建一致的内容。 设计片段时，请考虑使用的内容以及在何处。
 
 ### WKND 示例 {#wknd-sample}
 
