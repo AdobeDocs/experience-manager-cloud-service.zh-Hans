@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
+source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1200'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # 核心组件中的示例主题、模板和表单数据模型 {#sample-themes-templates-and-data-models}
 
-AEM Formsas a Cloud Service提供了示例参考主题、模板和表单数据模型，可帮助您快速开始使用核心组件创建自适应Forms。 您可以 [启用自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本地开发环境中，获取参考OOTB模板和 [使用和自定义主题](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
+AEM Formsas a Cloud Service提供了示例参考主题、模板和表单数据模型，可帮助您快速开始使用核心组件创建自适应Forms。 您可以 [启用自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本地开发环境中，获取OOTB示例模板并 [使用和自定义示例主题](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
 
 参考内容包中包含的示例主题、模板和表单数据模型包括：
 
@@ -26,14 +26,13 @@ AEM Formsas a Cloud Service提供了示例参考主题、模板和表单数据�
 | 基本 | 画布 | Microsoft® Dynamics 365 |
 | 空白 | WKND | Salesforce |
 | 联系我们 | 画架 |  |
+| 联系人详细信息更新 |   |   |
 | 同意书 | |  |
-| 提出投诉 | | |
 | 记录服务请求 |  |  |
 | 提供反馈 |  |  |
 | 福利登记 |  |   |
 | 雇员福利汇总 |   |   |
 | 申请帐户对帐单 |   |   |
-| 联系人详细信息更新 |   |   |
 | 安全检查表 |   |   |
 | 质量控制检查 |   |   |
 | 购买请求 |  |  |
@@ -77,15 +76,15 @@ WKND主题体现了生动、富于想象力且引人入胜的设计，在您的�
 
 >[!TAB 桌面]
 
-    ![基本模板桌面](assets/Basic-template-desktop-view.png)
+![基本模板桌面](assets/Basic-template-desktop-view.png)
 
 >[!TAB 手机]
 
-    ![基本模板电话](assets/Basic-template-phone-view.png)
+![基本模板电话](assets/Basic-temp-phone-view.png)
 
 >[!TAB 平板电脑]
 
-    ![基本模板平板电脑](assets/Basic-template-tablet-view.png)
+![基本模板平板电脑](assets/Basic-temp-tablet-view.png)
 
 >[!ENDTABS]
 
@@ -96,11 +95,9 @@ WKND主题体现了生动、富于想象力且引人入胜的设计，在您的�
 
 ![空白模板](assets/Blank-template.png)
 
-### 帐户对帐单请求 {#Request-for-Account-Statement}
+### 联系我们 {#Contact-Us}
 
-Request for account statement模板有助于创建表单，以启动获取准确且最新的客户对帐单的过程。 报表提供财务交易、活动的详细记录或使用此表格的客户的其他相关信息。
-
-![Request-for-account-statement](assets/Request-for-account-statment.png)
+“联系我们”表单模板用于创建表单，以促进网站访客与管理员之间的通信。 用户可以通过表单提交查询、反馈或支持请求。
 
 ### 联系人详细信息更新 {#Contact-Details-Update}
 
@@ -108,38 +105,9 @@ Request for account statement模板有助于创建表单，以启动获取准确
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
-### 安全检查 {#Safety-Inspection}
-
-安全检查表单模板有助于创建表单以输入安全工作环境的详细信息。 通过使用此表格进行定期检查，可以识别潜在危险。 该表格涵盖多个方面，例如紧急出口、消防安全、电气安全、危险材料、个人防护设备、工作站人机工程学，以保障员工、访客和客户的安全和福祉。
-
-### 购买请求 {#Purchase-Request}
-
-采购申请表模板有助于建立表单，以启动采购流程，并允许员工正式请求购买其工作所需的货物或服务。 该表单可捕获基本详细信息，如物料说明、数量、首选供应商（如果适用）、预算分配、采购理由、交货信息和所需批准。
-
-![purchase-request](assets/purchase-request.gif)
-
-### 员工福利汇总 {#Employee-Benefits-Summary}
-
-员工福利汇总表单模板用于创建表单，以收集有关个人福利的基本详细信息。 它有助于快速准确地评估覆盖范围，为高效的协助和支持提供全面的概述。
-
-### 福利登记 {#Benefits-Enrollment}
-
-福利登记表单模板用于创建一个表单，以从员工那里收集有关其首选福利和保险选项的基本信息。 它通常伴随年度福利登记期。
-
-
-### 质量控制检验 {#Quality-Control-Inspection}
-
-质量控制检查表单模板用于创建表单，以评估和记录产品或项目的视觉外观、尺寸、功能、文档、测试结果以及总体质量。 它有助于识别缺陷、不符合项以及确保符合质量标准所必需的纠正措施。
-
-
 ### 同意书 {#Consent-Form}
 
 同意书模板用于创建一个表格，用于从参与特定活动、研究、医疗程序或可能涉及其个人信息或权利的任何情况的参与者处获取法律文档。 该表格确保透明度，保护参与者的权利，并明确理解个人所同意的内容。
-
-
-### 联系我们 {#Contact-Us}
-
-“联系我们”表单模板用于创建表单，以促进网站访客与管理员之间的通信。 用户可以通过表单提交查询、反馈或支持请求。
 
 ### 记录服务请求 {#Log-Service-Request}
 
@@ -148,6 +116,34 @@ Log service request template可帮助创建向服务提供商请求特定日志�
 ### 提供反馈 {#Give-Feedback}
 
 提供反馈表单模板有助于构建一个表单，以向另一个人员或团队提供建设性的反馈。 该表单有助于确保反馈清晰、具体和可操作，并促进开放式沟通和改进。
+
+### 福利登记 {#Benefits-Enrollment}
+
+福利登记表单模板用于创建一个表单，以从员工那里收集有关其首选福利和保险选项的基本信息。 它通常伴随年度福利登记期。
+
+### 员工福利汇总 {#Employee-Benefits-Summary}
+
+员工福利汇总表单模板用于创建表单，以收集有关个人福利的基本详细信息。 它有助于快速准确地评估覆盖范围，为高效的协助和支持提供全面的概述。
+
+### 帐户对帐单请求 {#Request-for-Account-Statement}
+
+Request for account statement模板有助于创建表单，以启动获取准确且最新的客户对帐单的过程。 报表提供财务交易、活动的详细记录或使用此表格的客户的其他相关信息。
+
+![Request-for-account-statement](assets/Request-for-account-statment.png)
+
+### 安全检查 {#Safety-Inspection}
+
+安全检查表单模板有助于创建表单以输入安全工作环境的详细信息。 通过使用此表格进行定期检查，可以识别潜在危险。 该表格涵盖多个方面，例如紧急出口、消防安全、电气安全、危险材料、个人防护设备、工作站人机工程学，以保障员工、访客和客户的安全和福祉。
+
+### 质量控制检验 {#Quality-Control-Inspection}
+
+质量控制检查表单模板用于创建表单，以评估和记录产品或项目的视觉外观、尺寸、功能、文档、测试结果以及总体质量。 它有助于识别缺陷、不符合项以及确保符合质量标准所必需的纠正措施。
+
+### 购买请求 {#Purchase-Request}
+
+采购申请表模板有助于建立表单，以启动采购流程，并允许员工正式请求购买其工作所需的货物或服务。 该表单可捕获基本详细信息，如物料说明、数量、首选供应商（如果适用）、预算分配、采购理由、交货信息和所需批准。
+
+![purchase-request](assets/purchase-request.gif)
 
 ## 引用表单数据模型 {#reference-models}
 
