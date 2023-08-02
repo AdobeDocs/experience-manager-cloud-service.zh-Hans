@@ -3,21 +3,21 @@ title: 核心组件中的示例主题、模板和表单数据模型
 description: AEM Forms核心组件提供自适应表单主题、模板和表单数据模型示例
 solution: Experience Manager Forms
 topic: Administration
-role: Author
+role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 12c99aa55871f9b24ec7b007b14898f0100bfe2f
+source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1207'
 ht-degree: 4%
 
 ---
 
+
 # 核心组件中的示例主题、模板和表单数据模型 {#sample-themes-templates-and-data-models}
 
-AEM Formsas a Cloud Service提供了几个示例参考主题、模板和表单数据模型，可帮助您快速开始使用核心组件创建自适应Forms。 您可以 [启用自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本地开发环境中，获取参考OOTB模板和 [使用和自定义主题](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
+AEM Formsas a Cloud Service提供了示例参考主题、模板和表单数据模型，可帮助您快速开始使用核心组件创建自适应Forms。 您可以 [启用自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本地开发环境中，获取参考OOTB模板和 [使用和自定义主题](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
 
 参考内容包中包含的示例主题、模板和表单数据模型包括：
 
@@ -40,29 +40,28 @@ AEM Formsas a Cloud Service提供了几个示例参考主题、模板和表单�
 
 ## 示例主题 {#Sample-Themes}
 
-引用主题可帮助您定义表单的样式，而无需具备CSS专业知识，即使您可以根据需要自定义主题。 您可以 [启用自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本地开发环境中获取这些主题，描述如下：
+参考示例主题可帮助作者定义和自定义表单的样式，甚至具有CSS基础知识的作者也可以根据需要自定义主题。 表单作者 [启用自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本地开发环境中获取这些主题，描述如下：
 
 ![OOTB主题](assets/OOTB-themes.png)
 
 ### 画布 {#Canvas}
 
-画布是自适应Forms的默认主题，它强调使用基本颜色、透明度和平面图标。 在下面的屏幕截图中，您可以看到画布主题的外观。
+画布主题是表单的默认主题，强调使用基本颜色、透明度和平面图标。 在下面的屏幕截图中，您可以看到画布主题的外观。
+
 ![画布主题](assets/canvas-theme.png)
 
 ### WKND {#WKND}
 
-WKND主题体现了生动、富有想象力且引人入胜的设计，以您的形式展示时尚的外观。 主题基于 [WKND站点](https://wknd.site/us/en.html) 这是一个旅游和冒险网站 [Adobe Experience Manager核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+WKND主题体现了生动、富于想象力且引人入胜的设计，在您的表单上展示时尚的外观。 主题基于 [WKND站点](https://wknd.site/us/en.html) 这是一个旅游和冒险网站 [Adobe Experience Manager核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
 
 ![WKND主题](assets/WKND-theme.png)
 
 
 ### 画架 {#Easel}
 
-画架主题是指易于设置的特定类型的模板设计，并且经过自定义以简化和便于用户使用。 画架主题是基于一个概念，即艺术家在创作画作时，使用便携式展位支撑画布。
+框架主题有助于创建吸引人且易于设置的表单外观，并且经过自定义以简化并方便用户使用。 画架主题是基于一个概念，即艺术家在创作画作时，使用便携式展位支撑画布。
 
 ![画框主题](assets/Easel-theme.png)
-
-
 
 ## 示例模板 {#Sample-templates}
 
@@ -72,7 +71,7 @@ WKND主题体现了生动、富有想象力且引人入胜的设计，以您的�
 
 ### 基本 {#Basic}
 
-基本模板可帮助您快速创建注册体验表单。 您还可以用它来预览自适应Forms核心组件的功能。 它提供了用于逐节呈现数据的向导布局。
+基本模板可帮助您快速创建注册体验表单。 您还可以使用它来预览的功能 [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction). 它提供了用于逐节呈现数据的向导布局。
 
 >[!BEGINTABS]
 
@@ -93,67 +92,68 @@ WKND主题体现了生动、富有想象力且引人入胜的设计，以您的�
 
 ### 空白 {#Blank}
 
-使用空白画布模板从头开始创建自适应表单结构、内容和规则。 未合并任何表组件。
+使用空白画布模板从头开始创建自适应表单结构、内容和规则。 空白模板中未预先纳入任何表单元件。
 
 ![空白模板](assets/Blank-template.png)
 
 ### 帐户对帐单请求 {#Request-for-Account-Statement}
 
-请求帐户对帐单表单，以请求交易对帐单。 本报表详细记录个人的财务交易、活动或其他相关信息。 通过填写此表单，您可以启动获取记录的准确和最新报表的过程。
+Request for account statement模板有助于创建表单，以启动获取准确且最新的客户对帐单的过程。 报表提供财务交易、活动的详细记录或使用此表格的客户的其他相关信息。
 
 ![Request-for-account-statement](assets/Request-for-account-statment.png)
 
 ### 联系人详细信息更新 {#Contact-Details-Update}
 
-地址和联系人详细信息更新表单旨在帮助您更新与订阅或权益相关的个人信息，以确保无缝通信以及无中断访问您获得的服务或权益。
+联系人详细信息更新模板可帮助作者创建用于客户地址和联系人详细信息更新的表单。 该表单还可帮助客户更新与订阅或权益相关的个人信息，以确保无缝通信以及不间断地访问服务或权益。
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
 ### 安全检查 {#Safety-Inspection}
 
-《安全检查表》是维护安全工作环境的。 通过使用此表格进行定期检查，可以识别潜在危险。 它涵盖了紧急出口、消防安全、电气安全、危险材料、个人防护设备、工作站人机工程学等各个方面。 为员工、访客和客户的安全与福祉着想，并为所有人创造安全的环境。
+安全检查表单模板有助于创建表单以输入安全工作环境的详细信息。 通过使用此表格进行定期检查，可以识别潜在危险。 该表格涵盖多个方面，例如紧急出口、消防安全、电气安全、危险材料、个人防护设备、工作站人机工程学，以保障员工、访客和客户的安全和福祉。
 
 ### 购买请求 {#Purchase-Request}
 
-采购申请表，用于启动采购流程，并允许员工正式申请购买其工作所需的货物或服务。 该表单可捕获基本详细信息，如物料说明、数量、首选供应商（如果适用）、预算分配、采购理由、交货信息和所需批准。 该表单的目的是简化采购流程并记录采购流程，确保对请求的采购进行适当的授权和跟踪。
+采购申请表模板有助于建立表单，以启动采购流程，并允许员工正式请求购买其工作所需的货物或服务。 该表单可捕获基本详细信息，如物料说明、数量、首选供应商（如果适用）、预算分配、采购理由、交货信息和所需批准。
 
 ![purchase-request](assets/purchase-request.gif)
 
 ### 员工福利汇总 {#Employee-Benefits-Summary}
 
-“员工福利汇总”表单用于收集有关个人福利的基本详细信息。 它有助于快速准确地评估覆盖范围，为高效的协助和支持提供全面的概述。
+员工福利汇总表单模板用于创建表单，以收集有关个人福利的基本详细信息。 它有助于快速准确地评估覆盖范围，为高效的协助和支持提供全面的概述。
 
 ### 福利登记 {#Benefits-Enrollment}
 
-福利登记表单模板，用于从其员工收集有关其首选福利和保险选项的基本信息。 它通常伴随年度福利登记期。
+福利登记表单模板用于创建一个表单，以从员工那里收集有关其首选福利和保险选项的基本信息。 它通常伴随年度福利登记期。
 
 
 ### 质量控制检验 {#Quality-Control-Inspection}
 
-质量控制检查表，用于评估和记录产品或项目的视觉外观、尺寸、功能、文档、测试结果以及总体质量。 它有助于识别缺陷、不符合项以及确保符合质量标准所必需的纠正措施。
+质量控制检查表单模板用于创建表单，以评估和记录产品或项目的视觉外观、尺寸、功能、文档、测试结果以及总体质量。 它有助于识别缺陷、不符合项以及确保符合质量标准所必需的纠正措施。
 
 
 ### 同意书 {#Consent-Form}
 
-同意书是一种法律文件，在个人或参与者参与特定活动、研究学习、医疗程序或可能涉及其个人信息或权利的任何情况之前，试图获得他们的自愿和知情同意。 同意书的目的是确保透明度，保护参与者的权利，并明确了解个人同意的内容。
+同意书模板用于创建一个表格，用于从参与特定活动、研究、医疗程序或可能涉及其个人信息或权利的任何情况的参与者处获取法律文档。 该表格确保透明度，保护参与者的权利，并明确理解个人所同意的内容。
+
 
 ### 联系我们 {#Contact-Us}
 
-地址和联系人详细信息更新表单旨在帮助您更新与订阅或权益相关的个人信息，以确保无缝通信以及无中断访问您获得的服务或权益。
+“联系我们”表单模板用于创建表单，以促进网站访客与管理员之间的通信。 用户可以通过表单提交查询、反馈或支持请求。
 
 ### 记录服务请求 {#Log-Service-Request}
 
-向服务提供商请求特定日志记录服务的日志服务请求表单。 该表单用作创建票证的正式请求，该票证记录了特定事件、活动或数据以便监控或跟踪状态。
+Log service request template可帮助创建向服务提供商请求特定日志记录服务的表单。 该表单用作创建票证的正式请求，该票证记录了特定事件、活动或数据以便监控或跟踪状态。
 
 ### 提供反馈 {#Give-Feedback}
 
-“提供反馈”模板，用于向其他人员或团队提供建设性的反馈。 该模板有助于确保反馈清晰、具体和可操作，促进开放式沟通和改进。
+提供反馈表单模板有助于构建一个表单，以向另一个人员或团队提供建设性的反馈。 该表单有助于确保反馈清晰、具体和可操作，并促进开放式沟通和改进。
 
 ## 引用表单数据模型 {#reference-models}
 
-然后，自适应Forms可以与Microsoft® Dynamics 365和Salesforce服务器交互以启用业务工作流。 例如：
+创建 [自适应表单](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 基于 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)，您可以将表单的后端与数据库Microsoft®Dynamics 365和Salesforce服务器连接以启用业务工作流。 例如：
 
-* 将数据写入Microsoft® Dynamics 365和Salesforce on Adaptive Form提交。
+* 在Microsoft®Dynamics 365和Salesforce中写入自适应表单提交的数据。
 * 通过表单数据模型中定义的自定义实体在Microsoft®Dynamics 365和Salesforce中写入数据，反之亦然。
 * 查询Microsoft®Dynamics 365和Salesforce服务器以获取数据并预填充自适应Forms。
 * 从Microsoft®Dynamics 365和Salesforce服务器读取数据。
