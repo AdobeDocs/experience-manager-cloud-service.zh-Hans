@@ -2,9 +2,9 @@
 title: 在自适应Forms中使用reCAPTCHA
 description: 了解如何在自适应Forms中配置Google reCAPTCHA服务。
 topic-tags: adaptive_forms, author
-source-git-commit: 4b6c22667bb79bb6cac22675fa22f741b0262210
+source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1913'
 ht-degree: 3%
 
 ---
@@ -106,7 +106,7 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
    >[!NOTE]
    >
    >* 不支持在自适应表单中使用多个验证码组件。 此外，不建议在标记为延迟加载的面板或片段中使用验证码。
-   >* reCaptcha对时间敏感，大约一分钟后过期。 因此，建议在自适应表单中将Captcha组件放在提交按钮之前。
+   >* reCaptcha对时间敏感，大约会在几分钟后过期。 因此，建议在自适应表单中将Captcha组件放在提交按钮之前。
 
 1. 选择您添加并点按的Captcha组件 ![cmppr](assets/cmppr.png) 以编辑其属性。
 1. 指定验证码小部件的标题。 默认值为 **验证码**. 选择 **隐藏标题** 如果您不希望显示标题。
