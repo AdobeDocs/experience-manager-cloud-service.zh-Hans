@@ -2,10 +2,10 @@
 title: 程序和程序类型
 description: 了解 Cloud Manager 的层级，以及不同类型的程序如何适应其结构以及它们之间的差异。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '520'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ $ git clone {URL}
 
 ## 程序类型 {#program-types}
 
-用户可以创建一个&#x200B;**生产**&#x200B;程序或&#x200B;**沙盒**&#x200B;程序。
+用户可以创建 **生产** 项目或 **沙盒** 程序。
 
 * 创建&#x200B;**生产程序**，以便为您的站点启用实时流量。
    * 请参阅[生产程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)，了解更多详细信息。
