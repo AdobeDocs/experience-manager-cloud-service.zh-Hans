@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 4%
 
 ---
@@ -80,7 +80,7 @@ WKND主题体现了生动、富于想象力且引人入胜的设计，在您的�
 
 >[!TAB 手机]
 
-![基本模板电话](assets/Basic-temp-phone-view.png)
+![基本模板电话](assets/Basic-temp-phone-view.png){width：&quot;25%&quot;}
 
 >[!TAB 平板电脑]
 
@@ -93,7 +93,21 @@ WKND主题体现了生动、富于想象力且引人入胜的设计，在您的�
 
 使用空白画布模板从头开始创建自适应表单结构、内容和规则。 空白模板中未预先纳入任何表单元件。
 
-![空白模板](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB 桌面]
+
+![空白模板桌面](assets/Blank-temp-desktop-view.png)
+
+>[!TAB 手机]
+
+![基本模板电话](assets/Blank-temp-phone-view.png){width：&quot;25%&quot;}
+
+>[!TAB 平板电脑]
+
+![基本模板平板电脑](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### 联系我们 {#Contact-Us}
 
@@ -147,7 +161,7 @@ Request for account statement模板有助于创建表单，以启动获取准确
 
 ## 引用表单数据模型 {#reference-models}
 
-创建 [自适应表单](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 基于 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)，您可以将表单的后端与数据库Microsoft®Dynamics 365和Salesforce服务器连接以启用业务工作流。 例如：
+创建 [自适应表单](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 基于 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)，您可以将表单与数据库Microsoft®Dynamics 365和Salesforce服务器连接以启用业务工作流。 例如：
 
 * 在Microsoft®Dynamics 365和Salesforce中写入自适应表单提交的数据。
 * 通过表单数据模型中定义的自定义实体在Microsoft®Dynamics 365和Salesforce中写入数据，反之亦然。
