@@ -1,11 +1,11 @@
 ---
 title: 实施 AEM 连接器
-description: 了解如何构建和实施AEM连接器。
+description: 了解如何构建、测试和实施AEM连接器。 此外，您还将了解常见的集成模式。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 99%
+source-wordcount: '980'
+ht-degree: 98%
 
 ---
 

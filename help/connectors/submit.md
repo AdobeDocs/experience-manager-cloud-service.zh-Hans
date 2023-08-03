@@ -1,11 +1,11 @@
 ---
 title: 提交 AEM 连接器
-description: 了解如何使用Cloud Manager部署连接器。
+description: 了解如何在AEMas a Cloud Service中正确引用和部署连接器。
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 97%
+source-wordcount: '307'
+ht-degree: 95%
 
 ---
 

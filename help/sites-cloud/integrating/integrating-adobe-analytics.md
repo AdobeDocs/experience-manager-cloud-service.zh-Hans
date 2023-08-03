@@ -1,13 +1,13 @@
 ---
 title: 与 Adobe Analytics 集成
-description: 了解如何将Adobe Analytics与AEMas a Cloud Service集成。
+description: 了解如何使用触屏Ui和Adobe Launch将Adobe Analytics与AEMas a Cloud Service集成。
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 97%
+source-wordcount: '574'
+ht-degree: 96%
 
 ---
 
