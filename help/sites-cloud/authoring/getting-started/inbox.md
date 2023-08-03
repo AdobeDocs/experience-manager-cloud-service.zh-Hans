@@ -1,11 +1,11 @@
 ---
 title: 您的收件箱
-description: 使用收件箱管理您的任务
+description: 了解如何使用到达收件箱中的通知来管理您的任务。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '914'
+ht-degree: 98%
 
 ---
 

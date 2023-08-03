@@ -1,11 +1,11 @@
 ---
 title: 编辑页面属性
-description: 为页面定义所需的属性
+description: 了解如何在AEM中定义管理页面所需的属性。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2341'
-ht-degree: 100%
+source-wordcount: '2347'
+ht-degree: 99%
 
 ---
 

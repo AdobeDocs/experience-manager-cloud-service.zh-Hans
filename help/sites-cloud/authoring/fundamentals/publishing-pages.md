@@ -1,11 +1,11 @@
 ---
 title: 发布页面
-description: 如何使用 AEM 发布和取消发布页面
+description: 了解如何使用AEM中的各种机制发布和取消发布页面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 100%
+source-wordcount: '1807'
+ht-degree: 99%
 
 ---
 

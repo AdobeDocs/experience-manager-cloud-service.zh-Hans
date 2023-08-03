@@ -1,11 +1,11 @@
 ---
 title: WCAG 2.1 快速指南
-description: WCAG 2.1 快速指南
+description: Web内容无障碍准则(WCAG) 2.1版快速指南。
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1774'
-ht-degree: 100%
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
