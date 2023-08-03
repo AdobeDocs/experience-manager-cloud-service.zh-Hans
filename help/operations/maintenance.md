@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service 中的维护任务
-description: AEM as a Cloud Service 中的维护任务
+description: 了解AEMas a Cloud Service中的维护任务以及如何配置它们。
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 19a3ebd981a7a62fe78a9ec909547b6a70c55121
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 63%
+source-wordcount: '1114'
+ht-degree: 62%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 63%
 
 >[!CAUTION]
 >
->Adobe保留覆盖客户的维护任务配置设置的权利，以缓解性能下降等问题。
+>Adobe保留覆盖客户维护任务配置设置的权利，以缓解性能下降等问题。
 
 下表说明了 AEM as a Cloud Service 发布时存在的维护任务。
 
@@ -44,24 +44,24 @@ ht-degree: 63%
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>对于现有环境（即2023年9月1日之前创建的环境），清除功能处于禁用状态，并且将来不会启用，除非客户明确启用此功能，届时，他们还可以使用自定义值来配置此功能。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新环境（从2023年9月1日开始创建的环境）将默认启用清除，其值如下，客户可以使用自定义值配置。
+    <td>对于现有环境（2023年9月1日之前创建的环境），清除处于禁用状态，并且将来不会启用，除非客户明确启用此功能，届时，他们还可以使用自定义值来配置此功能。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新环境（从2023年9月1日开始创建的环境）默认情况下将启用清除，但值如下，客户可以使用自定义值配置。
      <ol>
        <li>超过 30 天的版本将会被删除</li>
        <li>保留过去 30 天内的最新 5 个版本</li>
        <li>无论上述规则如何，都会保留最新版本。</li>
-       <br>建议有法规要求的客户将站点页面完全按照特定日期显示，并与专门的外部服务集成。
+       <br>建议有法规要求的客户将站点页面呈现为与特定日期显示的完全一样，并与专门的外部服务集成。
      </ol></td>
   </td>
   </tr>
   <tr>
     <td>审核日志清除</td>
     <td>Adobe</td>
-    <td>对于现有环境（即2023年9月1日之前创建的环境），清除功能处于禁用状态，并且将来不会启用，除非客户明确启用此功能，届时，他们还可以使用自定义值来配置此功能。<br><br> <!-- See above for the two line breaks -->新环境（从2023年9月1日开始创建的环境）将默认启用 <code>/content</code> 节点，具体情况如下：
+    <td>对于现有环境（2023年9月1日之前创建的环境），清除处于禁用状态，并且将来不会启用，除非客户明确启用此功能，届时，他们还可以使用自定义值来配置此功能。<br><br> <!-- See above for the two line breaks -->新环境（从2023年9月1日开始创建的环境）在下的默认将启用清除 <code>/content</code> 节点，具体行为如下：
      <ol>
        <li>对于复制审核，将删除超过 3 天的审核日志</li>
        <li>对于 DAM (Assets)，将删除超过 30 天的审核日志</li>
        <li>对于页面审核，将删除超过 3 天的日志。</li>
-       <br>建议有法规要求的客户制作不可编辑的审核日志，并与专门的外部服务集成。
+       <br>建议有管理法规要求的客户制作不可编辑的审核日志，并与专门的外部服务集成。
      </ol></td>
    </td>
   </tr>
@@ -75,15 +75,15 @@ ht-degree: 63%
     <td>临时任务清理</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。覆盖下的开箱即用维护窗口配置节点 <code>/libs</code> 方法是在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>， <code>granite_daily</code> 或 <code>granite_monthly</code>.</p>
-    <p>有关其他配置详细信息，请参阅下面的维护窗口表。通过在上述节点下添加另一个节点来启用维护任务。 将其命名 <code>granite_TaskPurgeTask</code>，具有属性 <code>sling:resourceType</code> 设置为 <code>granite/operations/components/maintenance/task</code> 和属性 <code>granite.maintenance.name</code> 设置为 <code>TaskPurge</code>. 配置OSGI属性，请参见 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> 属性列表。</p>
+    <p>必须在 git 中完成。覆盖下的开箱即用维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>， <code>granite_daily</code> 或 <code>granite_monthly</code>.</p>
+    <p>有关其他配置详细信息，请参阅下面的维护窗口表。通过在上述节点下添加另一个节点来启用维护任务。 将其命名为 <code>granite_TaskPurgeTask</code>，具有属性 <code>sling:resourceType</code> 设置为 <code>granite/operations/components/maintenance/task</code> 和属性 <code>granite.maintenance.name</code> 设置为 <code>TaskPurge</code>. 配置OSGI属性，请参见 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> 以获取属性列表。</p>
   </td>
   </tr>
     <tr>
     <td>工作流清除</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。覆盖下的开箱即用维护窗口配置节点 <code>/libs</code> 方法是在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>， <code>granite_daily</code> 或 <code>granite_monthly</code>. 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
+    <p>必须在 git 中完成。覆盖下的开箱即用维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>， <code>granite_daily</code> 或 <code>granite_monthly</code>. 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
     <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_WorkflowPurgeTask</code>），启用维护任务。配置 OSGI 属性，请参见<a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances"> AEM 6.5 维护任务文档</a>。</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ ht-degree: 63%
     <td>项目清除</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。覆盖下的开箱即用维护窗口配置节点 <code>/libs</code> 方法是在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>， <code>granite_daily</code> 或 <code>granite_monthly</code>. 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
+    <p>必须在 git 中完成。覆盖下的开箱即用维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>， <code>granite_daily</code> 或 <code>granite_monthly</code>. 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
     <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。请参阅“Adobe项目清除配置”下的OSGI属性列表。</p>
   </td>
   </tr>
@@ -126,7 +126,7 @@ ht-degree: 63%
     <p><strong>windowStartTime=HH:MM</strong> 用作 24 小时时钟。定义与每周维护窗口关联的维护任务应何时开始执行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 用作 24 小时时钟。定义与每周维护窗口关联的维护任务在尚未完成时应何时停止执行。</p>
     <p>在此时间范围内，维护任务不能执行多次。</p>
-    <p><strong>windowScheduleWeekdays =由1-7中的两个值组成的数组（例如，[5,5]）</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
+    <p><strong>windowScheduleWeekdays =由1 - 7（例如，[5,5]）中的两个值组成的数组</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
     </td>
   </tr>
   <tr>
@@ -138,8 +138,8 @@ ht-degree: 63%
     <p><strong>windowStartTime=HH:MM</strong> 用作 24 小时时钟。定义与每月维护窗口关联的维护任务应何时开始执行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 用作 24 小时时钟。定义与每月维护窗口关联的维护任务在尚未完成时应何时停止执行。</p>
     <p>在此时间范围内，维护任务不能执行多次。</p>
-    <p><strong>windowScheduleWeekdays =由1-7中的两个值组成的数组（例如，[5,5]）</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 表示安排在每月的第一周，或 1 表示安排在每月最后一周。如果没有值，则实际上会将作业调度在受windowScheduleWeekdays控制的日期（每月）。</p>
+    <p><strong>windowScheduleWeekdays =由1 - 7（例如，[5,5]）中的两个值组成的数组</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 表示安排在每月的第一周，或 1 表示安排在每月最后一周。如果没有值，则会有效地在受windowScheduleWeekdays控制的日期（每月）计划作业。</p>
     </td>
     </tr>
     </tbody>
