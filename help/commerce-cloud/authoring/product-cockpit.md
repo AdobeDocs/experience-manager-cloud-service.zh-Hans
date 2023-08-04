@@ -1,10 +1,10 @@
 ---
 title: 产品 Cockpit
-description: 使用产品驾驶舱
+description: 了解如何使用产品驾驶舱，它提供了链接产品目录和相关内容的统一概述。
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '448'
 ht-degree: 1%
 
 ---
@@ -13,19 +13,19 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-产品驾驶舱提供链接的产品目录和相关内容的统一概述。 所有关联内容都有链接，可从驾驶舱快速访问这些内容。
+产品驾驶舱提供链接的产品目录和相关内容的统一概述。 所有关联内容都有链接，可通过驾驶舱快速访问这些内容。
 
-暂存的产品数据包括未来的任何突变，例如新类别、产品或更新的属性。
+暂存的产品数据包括未来的任何突变，例如新类别、产品或更新的资产。
 
 >[!NOTE]
 >
->术语产品目录与商务商店、商店视图和类似表达式可互换。
+>术语产品目录可与商务商店、商店视图和类似表达式互换。
 
 ## 配置 {#configuration}
 
-必须在AEM中配置产品目录。 参见 [配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) 了解更多信息。
+必须在AEM中配置产品目录。 请参阅 [配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) 以了解更多信息。
 
-启用暂存目录功能需要身份验证。 参见 [快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) 了解更多信息。
+启用暂存目录功能需要身份验证。 请参阅 [快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) 以了解更多信息。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 ![已配置的目录](../assets/catalog-overview.png)
 
-单击某个类别可加载已单击类别的子项。
+单击某个类别可加载该已单击类别的子项。
 
 ![类别子项](../assets/catalog-category-children.png)
 
@@ -71,14 +71,14 @@ ht-degree: 1%
 
 单击产品或类别的属性图标可打开选定对象的属性视图。 产品变体的打开属性等于打开主产品属性。
 
-### 商务选项卡 {#tabs}
+### 商业选项卡 {#tabs}
 
-常规和变量选项卡显示来自商业后端的预定义商业属性。 此数据(包括 变体)是AEM中的只读数据，因为记录系统是商务后端。 变体选项卡仅对具有变体的产品显示，并显示所有变体的列表。
+常规和变量选项卡显示来自商业后端的预定义商业属性。 此数据(包括 变体)是AEM中的只读数据，因为记录系统是商务后端。 变体选项卡仅显示具有变体的产品，并显示所有变体的列表。
 
 ![目录属性](../assets/catalog-properties.png)
 
 ### AEM内容选项卡 {#content-tabs}
 
-这些按AEM内容类型（体验片段、内容片段、关联资产）分组的选项卡显示与商业对象关联的AEM内容。 “查看详细信息”操作将打开一个包含选定内容的新浏览器选项卡。
+这些按AEM内容类型（体验片段、内容片段、关联的资产）分组的选项卡显示与商务对象关联的AEM内容。 “查看详细信息”操作将打开一个包含选定内容的新浏览器选项卡。
 
 ![内容属性](../assets/content-properties.png)
