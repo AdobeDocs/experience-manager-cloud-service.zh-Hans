@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 发行说明
-description: Experience Manager 2020.6.0 发行说明
+description: '"[!DNL Adobe Experience Manager] 2020.6.0版as a Cloud Service发行说明。”'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 91%
+source-wordcount: '1933'
+ht-degree: 95%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 91%
 
 通过删除AEM项目的pom.xml中对远程存储库的所有引用，AEM项目构建时间将会缩短 `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven Central（即Maven的默认工件存储库）中。
+AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven Central（即Maven的默认项目存储库）中。
 
 ## Cloud Manager 的新增功能 {#cloud-manager}
 
@@ -60,11 +60,11 @@ AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven 
 
 * 在 Cloud Manager 中，具有“业务所有者”**&#x200B;角色的用户现在可以从登陆页面（通过项目卡上的快速操作按钮）或项目中删除沙盒程序。
 
-  参见 [删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 了解更多详细信息。
+  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
-* 在 Cloud Manager 中，具有“业务所有者”**&#x200B;或“部署管理者”**&#x200B;角色的沙盒程序用户现在可以通过 Cloud Manager UI 删除其生产和暂存环境集。删除选项现在可从上的两个环境信息卡中使用 **程序概述** 页面和 **环境** 页面。 在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
+* 在 Cloud Manager 中，具有“业务所有者”**&#x200B;或“部署管理者”**&#x200B;角色的沙盒程序用户现在可以通过 Cloud Manager UI 删除其生产和暂存环境集。删除选项现在可从&#x200B;**项目概述**&#x200B;页面和&#x200B;**环境**&#x200B;页面上的环境卡中使用。在生产或暂存环境中选择删除选项也会删除环境集中的另一个环境。
 
-  参见 [删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 了解更多详细信息。
+  有关更多详细信息，请参阅[删除沙盒程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)。
 
 * 在登陆页面上显示引导标记，以告知和指示用户如何进行基本导航。
 
@@ -72,15 +72,15 @@ AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven 
 
 * 现在 Cloud Manager 中提供了&#x200B;**学习**&#x200B;页面，可通过顶部导航访问该页面。该页面包含可帮助用户了解与他们在 Cloud Manager 中分配的角色相关的最常用工作流的资源。
 
-* 沙盒程序现在通过 **沙盒** 徽章，显示在登陆页面的项目卡上，以及中项目名称旁边 **计划概述** 页面。
+* 沙盒程序现在通过&#x200B;**沙盒**&#x200B;徽章进行标识，该徽章会显示在登陆页面的项目卡上，以及&#x200B;**项目概述**&#x200B;页面中项目名称的旁边。
 
 * 具有 SysAdmin 角色的用户现在通过一次单击即可访问 Admin Console 中的相应位置，以管理用户角色或 Cloud Manager 权限。现在，登陆页面上的&#x200B;**添加项目**&#x200B;按钮旁边提供了&#x200B;**管理访问权限**&#x200B;按钮。
 
-  参见 [Systadmin任务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) 了解更多详细信息。
+  有关更多详细信息，请参阅 [SysAdmin 任务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)。
 
 * 具有 SysAdmin 角色的用户现在通过一次单击即可直接从 Cloud Manager 中访问创作实例。
 
-  参见 [管理对创作实例的访问权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) 了解更多详细信息。
+  有关更多详细信息，请参阅[管理对创作实例的访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)。
 
 * “生成”日志现在包含已发现项目的列表，包括跳过的内容包。
 
@@ -108,7 +108,7 @@ AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven 
 
 除通用智能标记以外，增强型智能标记还允许组织培训智能标记模型，以根据客户特定的业务标记识别图像。
 
-在此版本中，提供了新的引导式用户体验，可帮助为客户特定标记集设置智能标记培训，并使用资产进行培训，这些资产应会在将来进行识别和标记。现在提供了更直观的体验。使用增强型智能标记，可更直观地培训智能标记。参见 [如何将智能标记添加到资产](/help/assets/smart-tags.md).
+在此版本中，提供了新的引导式用户体验，可帮助为客户特定标记集设置智能标记培训，并使用资产进行培训，这些资产应会在将来进行识别和标记。现在提供了更直观的体验。使用增强型智能标记，可更直观地培训智能标记。请参阅 [如何将智能标记添加到资产](/help/assets/smart-tags.md).
 
 **支持 3D 内容的摄取、预览和交付**
 
@@ -175,7 +175,7 @@ AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven 
 * 能够使用资产处理配置文件重新处理资产，让用户完全控制该流程（运行完全资产处理，仅应用特定处理配置文件，并确定是否应运行处理后工作流）。
 * 现在，当基础群集实例在后台重新启动时，搜索查询返回结果的速度更快（之前在此类情况下，初始搜索运行可能会持续较长时间）。
 * 在 Assets 界面的列表视图和搜索结果中查看资产时，可按“名称”排序。请参阅[搜索资产](/help/assets/search-assets.md#sort)。
-* 在Assets界面的列表视图和搜索结果中查看资产时，按“创建日期”排序。 请参阅[搜索资产](/help/assets/search-assets.md#sort)。
+* 在Assets界面的列表视图和搜索结果中查看资产时，可按“创建时间”（日期）排序。 请参阅[搜索资产](/help/assets/search-assets.md#sort)。
 * 支持使用资产微服务将 EPS 文件转换为图像。
 
 ### 错误修复 {#assets-bug-fixes}
@@ -188,4 +188,4 @@ AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven 
 * 下载资产时，如果选择了电子邮件选项，即使提供了有效的电子邮件 ID，下载选项也不可用。(CQ-4296535)
 * 另存为智能收藏集的自定义筛选器无法正确应用于资产。(CQ-4294942)
 * 多项搜索和索引增强功能与错误修复使性能得以提高。(CQ-4286373)
-* 在Assets中无法访问文件夹属性选项卡，并返回500错误。 (CQ-4295701)
+* 无法在Assets中访问文件夹属性选项卡，并返回500错误。 (CQ-4295701)
