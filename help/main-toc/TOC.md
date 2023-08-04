@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
+source-git-commit: 5022e392a570ac28944824ab193a1cc8d390d757
 workflow-type: tm+mt
-source-wordcount: '4236'
-ht-degree: 98%
+source-wordcount: '4226'
+ht-degree: 99%
 
 ---
 
@@ -572,7 +572,6 @@ ht-degree: 98%
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
-            + [核心组件中的示例主题、模板和表单数据模型](/help/forms/sample-themes-templates-form-data-models-core-components.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
             + [创建自适应表单 - AEM Sites 页面中的核心组件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [使用机器翻译或人工翻译来翻译自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
