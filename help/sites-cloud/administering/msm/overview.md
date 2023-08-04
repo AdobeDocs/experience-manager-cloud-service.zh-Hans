@@ -4,10 +4,10 @@ description: 了解如何通过 AEM 强大的 Live Copy 和多站点管理器功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
 workflow-type: tm+mt
-source-wordcount: '2706'
-ht-degree: 100%
+source-wordcount: '2719'
+ht-degree: 99%
 
 ---
 
@@ -170,11 +170,9 @@ ht-degree: 100%
 | 浅 | 单页面的 Live Copy |  |
 | 深 | 页面的 Live Copy 及其子页面 |  |
 
-<!--
 >[!TIP]
 >
->See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
--->
+>请参阅文档 [扩展多站点管理器](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 对象名称的。
 
 ## Live Copy {#live-copies}
 

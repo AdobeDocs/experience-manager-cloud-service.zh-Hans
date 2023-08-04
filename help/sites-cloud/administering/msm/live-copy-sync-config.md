@@ -4,12 +4,13 @@ description: 了解可用的强大 Live Copy 同步选项以及如何根据项�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
 workflow-type: tm+mt
-source-wordcount: '2335'
-ht-degree: 100%
+source-wordcount: '2426'
+ht-degree: 96%
 
 ---
+
 
 # 配置 Live Copy 同步 {#configuring-live-copy-synchronization}
 
@@ -44,9 +45,7 @@ Adobe Experience Manager 提供了大量现成的同步配置。在使用 Live C
 
 下表列出了随 AEM 一起提供的现成的转出配置。该表包含每个转出配置的触发器和同步操作。
 
-<!--
-If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
--->
+如果安装的转出配置操作不符合您的要求，您可以 [创建新的转出配置。](#creating-a-rollout-configuration)
 
 | 名称 | 描述 | 触发器 | [同步操作](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +60,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 
 下表列出了随 AEM 一起提供的现成的同步操作。
 
-<!--If the installed actions do not meet your requirements, you can [Create a New Synchronization Action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).-->
+如果安装的操作不符合您的要求，您可以 [创建新的同步操作。](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
 
 | 操作名称 | 描述 | 属性 |
 |---|---|---|
@@ -83,16 +82,14 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | `PageMoveAction` | 当页面在 Blueprint 中移动时将应用 `PageMoveAction`。<br>该操作会将（相关的）Live Copy 页面从移动前的位置复制到移动后的位置，而不是移动页面。<br>`PageMoveAction` 不会更改位于移动前位置的 Live Copy 页面。因此，对于连续转出配置，它具有不带 Blueprint 的实时关系状态。<br>[配置 **CQ MSM 页面移动操作**&#x200B;服务](#excluding-properties-and-node-types-from-synchronization)，以指定要排除的节点类型、段落项和页面属性。<br>此操作必须是转出配置中包含的唯一同步操作。 | 将 `prop_referenceUpdate: (Boolean)` 设置为 true（默认）可更新引用。 |
 | `markLiveRelationship` | 此操作指示启动项创建的内容存在实时关系。 |  |
 
-<!--
-### Creating a Rollout Configuration {#creating-a-rollout-configuration}
+### 创建转出配置 {#creating-a-rollout-configuration}
 
-You can [create a rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) when the installed rollout configurations do not meet your application requirements by performing the following steps.
+您可以 [创建转出配置](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) 当安装的转出配置不符合您的应用程序要求时，请执行以下步骤。
 
-1. [Create the rollout configuration](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-1. [Add synchronization actions to the rollout configuration](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+1. [创建转出配置 — ](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [将同步操作添加到转出配置。](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
-The new rollout configuration is then available to you when configuring rollout configurations on a blueprint or Live Copy page.
--->
+然后，在Blueprint或Live Copy页面上配置转出配置时，您可以使用新的转出配置。
 
 ### 从同步中排除属性和节点类型 {#excluding-properties-and-node-types-from-synchronization}
 
