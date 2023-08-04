@@ -1,11 +1,11 @@
 ---
 title: Universal Editor 身份验证
-description: 了解 Universal Editor 如何进行身份验证。
+description: 了解通用编辑器如何使用Adobe的Identity Management System (IMS)进行身份验证。
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
-workflow-type: ht
-source-wordcount: '326'
-ht-degree: 100%
+source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 96%
 
 ---
 
