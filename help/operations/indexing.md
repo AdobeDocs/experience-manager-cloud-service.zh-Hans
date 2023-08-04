@@ -1,10 +1,10 @@
 ---
 title: 内容搜索与索引
-description: 内容搜索与索引
+description: 了解AEMas a Cloud Service中的“内容搜索”和“索引”。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: a16e627fc758c6aa8516b01aedd622da5b77318b
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2325'
 ht-degree: 34%
 
 ---

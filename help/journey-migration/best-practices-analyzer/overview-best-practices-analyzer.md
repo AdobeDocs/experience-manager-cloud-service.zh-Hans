@@ -1,11 +1,11 @@
 ---
 title: Best Practices Analyzer概述
-description: Best Practices Analyzer概述
+description: 了解如何使用最佳实践分析器来评估AEM实施对推荐最佳实践的遵守情况
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 68%
+source-wordcount: '366'
+ht-degree: 65%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 68%
 
 最佳实践分析器报告可用于概要了解一般升级就绪性。该报告包含在成功部署到 AEM as a Cloud Service 之前必须解决的各类问题的发现结果。
 
-Best Practices Analyzer报告包括以下类别：
+最佳实践分析器报告包含以下类别：
 
 * 必须重构的应用程序功能
 * 必须移至受支持位置的存储库项目
@@ -37,4 +37,4 @@ Best Practices Analyzer报告包括以下类别：
 >[!NOTE]
 >最佳实践分析器报告通过提供原本必须手动收集和评估的信息，加快了迁移到AEMas a Cloud Service所需的时间和成本的评估过程。
 
-您还可以从AEM实例下载最佳实践分析器报告。 参见 [查看Best Practices Analyzer报告](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 了解更多详细信息。
+您还可以从AEM实例下载最佳实践分析器报告。 请参阅 [查看Best Practices Analyzer报告](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) 以了解更多详细信息。
