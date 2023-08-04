@@ -7,17 +7,17 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
+source-git-commit: 2b290be134be05bc15891082e8b54efef62076d0
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 4%
+source-wordcount: '1277'
+ht-degree: 3%
 
 ---
 
 
 # 核心组件中的示例主题、模板和表单数据模型 {#sample-themes-templates-and-data-models}
 
-AEM Forms核心组件提供示例参考主题、模板和表单数据模型，帮助您快速开始使用核心组件创建自适应Forms。 您可以 [启用自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本地开发环境中，获取OOTB示例模板并 [使用和自定义示例主题](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 在 [!DNL AEM Forms].
+[!DNL AEM Forms] 核心组件提供现成的示例主题、模板和表单数据模型，以快速创建通用的自适应表单。 这些内容还有助于作者学习的可扩展性、适应性和响应性 [AEM Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 在无缝连接数据库的同时快速创建简单的表单和复杂的表单。
 
 参考内容包中包含的示例主题、模板和表单数据模型包括：
 
@@ -39,7 +39,13 @@ AEM Forms核心组件提供示例参考主题、模板和表单数据模型，�
 
 ## 示例主题 {#Sample-Themes}
 
-参考示例主题可帮助作者定义和自定义表单的样式，甚至具有CSS基础知识的作者也可以根据需要自定义主题。 表单作者 [启用自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service和本地开发环境中获取这些主题，描述如下：
+参考示例主题可帮助作者定义和自定义表单的样式，甚至具有CSS基础知识的作者也可以根据需要自定义主题。
+
+**如何获取这些主题？**
+* 要了解这些主题，请执行以下操作 **Formsas a Cloud Service** 环境， [启用自适应Forms核心组件](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 并使用 [前端管道](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) 以部署这些主题。
+* 将这些主题放在 **AEM 6.5 Forms** 环境， [启用自适应Forms核心组件](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) 并使用 [包管理器](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) 以部署这些主题。
+
+此 **开箱即用** [自适应表单核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 主题描述如下：
 
 ![OOTB主题](assets/OOTB-themes.png)
 
@@ -51,7 +57,7 @@ AEM Forms核心组件提供示例参考主题、模板和表单数据模型，�
 
 ### WKND {#WKND}
 
-WKND主题体现了生动、富于想象力且引人入胜的设计，在您的表单上展示时尚的外观。 主题基于 [WKND站点](https://wknd.site/us/en.html) 这是一个旅游和冒险网站 [Adobe Experience Manager核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+WKND主题体现了生动、富于想象力且引人入胜的设计，在您的表单上展示时尚的外观。 主题基于 [WKND站点](https://wknd.site/us/en.html) 这是一个旅游和冒险网站 [Adobe Experience Manager核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
 
 ![WKND主题](assets/Safety-Inspection-Form-Theme.png)
 
@@ -64,7 +70,12 @@ WKND主题体现了生动、富于想象力且引人入胜的设计，在您的�
 
 ## 示例模板 {#Sample-templates}
 
-模板定义了要在表单中复制的初始表单结构、内容和操作，或者使用与表单类似的模板结构，例如同意表单、福利注册表单等。 您可以通过以下方式获取以下模板 [启用自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) 在AEM Formsas a Cloud Service或本地开发环境中。 自适应Forms核心组件中的示例模板包括：
+模板定义了要在表单中复制的初始表单结构、内容和操作，或者使用与表单类似的模板结构，例如同意表单、福利注册表单等。
+
+**如何获取这些模板？**
+您可以通过部署 [基于AEM Archetype 43或更高版本的项目](https://github.com/adobe/aem-project-archetype) 敬您的 **AEM Formsas a Cloud Service** 或 **AEM 6.5** Forms环境。
+
+此 **开箱即用** [自适应表单核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 模板说明如下：
 
 ![引用模板](assets/reference-templates-core-components.png)
 
@@ -82,7 +93,7 @@ WKND主题体现了生动、富于想象力且引人入胜的设计，在您的�
 
 ### 联系我们 {#Contact-Us}
 
-“联系我们”表单模板用于创建表单，以促进网站访客与管理员之间的通信。 用户可以通过表单提交查询、反馈或支持请求。
+联系我们的表单模板用于创建表单，以促进网站访客与表单管理员之间的通信。 用户可以通过表单提交查询、反馈或支持请求。
 
 ![联系我们模板](assets/Contact-us-desktop-view.png)
 
@@ -100,7 +111,7 @@ WKND主题体现了生动、富于想象力且引人入胜的设计，在您的�
 
 ### 记录服务请求 {#Log-Service-Request}
 
-Log service request template可帮助创建向服务提供商请求特定日志记录服务的表单。 该表单用作创建票证的正式请求，该票证记录了特定事件、活动或数据以便监控或跟踪状态。
+Log service request template可帮助创建向服务提供程序请求特定于日志的记录服务的表单。 该表单可用作创建票证的正式请求，用于记录事件、活动或数据以监控或跟踪状态。
 
 ![记录服务请求模板](assets/Log-service-request-desktop-view.png)
 
@@ -152,7 +163,7 @@ Request for account statement模板有助于创建表单，以启动获取准确
 
 ## 引用表单数据模型 {#reference-models}
 
-创建 [自适应表单](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) 基于 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components)，您可以将表单与数据库Microsoft®Dynamics 365和Salesforce服务器连接以启用业务工作流。 例如：
+创建 [自适应表单](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) 基于 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components)，您可以将表单与数据库Microsoft®Dynamics 365和Salesforce服务器连接以启用业务工作流。 例如：
 
 * 在Microsoft®Dynamics 365和Salesforce中写入自适应表单提交的数据。
 * 通过表单数据模型中定义的自定义实体在Microsoft®Dynamics 365和Salesforce中写入数据，反之亦然。
@@ -164,4 +175,4 @@ Request for account statement模板有助于创建表单，以启动获取准确
 * Microsoft® Dynamics 365
 * Salesforce
 
-有关使用这些模型的信息，请参阅 [配置Microsoft®Dynamics 365和Salesforce云服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+有关使用这些模型的信息，请参阅 [配置Microsoft®Dynamics 365和Salesforce云服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
