@@ -4,10 +4,10 @@ description: 您可以使用主题来通过核心组件使自适应表单风格�
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: 创建新主题、自定义主题、上传新主题、在表单中使用主题、使用前端管道自定义主题
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
+source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
 workflow-type: tm+mt
-source-wordcount: '2697'
-ht-degree: 5%
+source-wordcount: '2711'
+ht-degree: 4%
 
 ---
 
@@ -417,6 +417,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [生成自适应Forms记录文档（核心组件）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [创建包含可重复部分的自适应Forms](/help/forms/create-forms-repeatable-sections.md)
+* [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## 相关文章 {#related-article}

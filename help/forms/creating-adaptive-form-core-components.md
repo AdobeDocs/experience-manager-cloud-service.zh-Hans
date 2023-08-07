@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: e6358044af395ee0fc785db3531465a3a6fbd5d5
 workflow-type: tm+mt
-source-wordcount: '2266'
-ht-degree: 69%
+source-wordcount: '2280'
+ht-degree: 68%
 
 ---
 
@@ -188,6 +188,7 @@ ht-degree: 69%
 * [为表单创建样式或主题](using-themes-in-core-components.md)
 * [使用规则编辑器将动态行为添加到表单](rule-editor.md)
 * [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## 相关文章 {#related-article}
