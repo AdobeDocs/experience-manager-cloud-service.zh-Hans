@@ -1,15 +1,20 @@
 ---
 title: 内置 [!DNL AEM Forms] as a Cloud Service组
-description: 现成的用户组和分配给每个组的权限列表
+description: 现成的用户组和分配给每个组的权限的列表
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 12%
+source-wordcount: '175'
+ht-degree: 25%
 
 ---
 
 # 组和权限 {#aem-forms-on-osgi-groups-and-privileges}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
+| AEM as a Cloud Service | 本文 |
 
 您可以 [创建组](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 并分配策略和 [用户](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) 到群组。 这些策略控制属于组的用户的权限。
 
@@ -103,9 +108,9 @@ ht-degree: 12%
 
 ## 另请参阅
 
-* [载入Cloud Service环境](/help/forms/setup-forms-cloud-service.md)
+* [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
 * [设置本地开发环境](/help/forms/setup-local-development-environment.md)
-* [从AEM 6.5 Forms迁移到Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+* [从 AEM 6.5 Forms 迁移到 Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [创建独立的自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 * [将自适应表单添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
