@@ -3,10 +3,10 @@ title: AEM 版本更新
 description: 了解AEMas a Cloud Service如何使用持续集成和交付(CI/CD)将您的项目保持在最新版本上。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
+source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 11%
+source-wordcount: '800'
+ht-degree: 9%
 
 ---
 
@@ -58,6 +58,37 @@ AEM更新需要执行大量且完全自动化的产品验证管道，该管道�
 >[!NOTE]
 >
 >如果自定义代码推送到暂存而不是生产环境，则下次AEM更新将删除这些更改，以反映上次成功发布到生产环境的客户的Git标记。 因此，必须再次部署仅在暂存时可用的自定义代码。
+
+## 最佳实践 {#best-practices}
+
+* 
+   * **暂存环境使用**
+   * 使用其他环境（而不是暂存）完成较长的QA/UAT周期。
+   * 在暂存环境中完成健全性测试后，移至生产环境中进行验证。
+
+* 
+   * **生产管道**
+   * 在部署到生产环境之前暂停。
+   * 在暂存部署后取消管道表示代码是“放弃的”，不是有效的生产候选项，请参阅 [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+
+* 
+   * **非生产管道**
+* 配置 [非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* 
+   * 加快生产管道故障的投放速度/频率。  通过启用产品功能测试、自定义功能测试和自定义UI测试，识别非生产管道中的问题。
+
+* 
+   * **内容复制**
+   * 使用 [内容复制](/help/implementing/developing/tools/content-copy.md) 将相似的内容集移动到非生产环境。
+
+* 
+   * **自动化功能测试**
+* 在您的管道中包含自动测试以测试关键功能。
+* [客户功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 和 [自定义用户界面测试](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) 正在阻止，如果失败，将不会推出AEM版本。
+
+## 回归 {#regression}
+
+如果您遇到与回归相关的问题，请通过Admin Console提出支持案例。  如果问题为阻止程序并且正在影响生产，则应引发P1。  提供重现回归问题所需的所有详细信息。
 
 ## 复合节点存储 {#composite-node-store}
 
