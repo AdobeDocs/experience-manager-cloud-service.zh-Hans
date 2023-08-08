@@ -3,9 +3,9 @@ title: AEM 版本更新
 description: 了解AEMas a Cloud Service如何使用持续集成和交付(CI/CD)将您的项目保持在最新版本上。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
+source-git-commit: ca91e969014415e872ecf8e42fe86ffc9ca41e10
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '801'
 ht-degree: 9%
 
 ---
@@ -19,9 +19,7 @@ ht-degree: 9%
 
 AEMas a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的项目使用的是最新的AEM版本。 此过程可无缝更新您的生产、暂存和开发实例，而不会造成任何用户中断。
 
-在自动更新实例之前，新的AEM维护版本会提前3-5天发布。 在此期间，您可以选择执行以下操作
-[触发开发实例的手动更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).
-此时间过后，版本更新会首先自动应用于您的开发环境。 如果更新成功，则更新流程将继续到暂存和生产实例。 开发和暂存实例充当自动质量关口，在生产环境中应用更新之前，将在其中执行自定义编写的测试。
+在自动更新实例之前，新的AEM维护版本会提前3-5天发布。 在此期间，您可以选择执行以下操作 [触发开发实例的手动更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment).此时间过后，版本更新会首先自动应用于您的开发环境。 如果更新成功，则更新流程将继续到暂存和生产实例。 开发和暂存实例充当自动化的质量关卡，在生产环境中应用更新之前，将在其中执行自定义编写的测试。
 
 >[!NOTE]
 >
@@ -44,13 +42,9 @@ AEMas a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的�
 
 ## 更新失败 {#update-failure}
 
-AEM更新需要执行大量且完全自动化的产品验证管道，该管道包含多个步骤，可确保生产中的任何系统都不会出现服务中断。
-运行状况检查用于监视应用程序的运行状况。
-如果这些检查在AEMas a Cloud Service更新期间失败，则发布将不会继续，并且Adobe将调查更新导致此意外行为的原因。
+AEM更新需要执行大量且完全自动化的产品验证管道，该管道包含多个步骤，可确保生产中的任何系统都不会出现服务中断。 运行状况检查用于监视应用程序的运行状况。 如果这些检查在AEMas a Cloud Service更新期间失败，则发布将不会继续，并且Adobe将调查更新导致此意外行为的原因。
 
-当您在环境中部署新版本的自定义代码时，
-[产品和自定义功能测试](/help/implementing/cloud-manager/overview-test-results.md#functional-testing)
-在确保生产系统在应用更改后仍保持稳定和功能方面发挥着关键作用。 AEM版本更新过程中也利用这些测试。
+当您在环境中部署新版本的自定义代码时， [产品和自定义功能测试](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) 在确保生产系统在应用更改后仍保持稳定和功能方面发挥着关键作用。 AEM版本更新过程中也利用这些测试。
 
 如果未能更新生产环境，Cloud Manager 将自动回滚到暂存环境。此操作将自动完成，以确保在更新完成后，暂存环境和生产环境均采用同一个AEM版本。
 同样，如果自动更新开发环境失败，将不会更新暂存和生产环境。
