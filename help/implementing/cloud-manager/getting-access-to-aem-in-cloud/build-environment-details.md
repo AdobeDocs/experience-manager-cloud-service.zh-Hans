@@ -3,9 +3,9 @@ title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
 
 [Maven 工具链插件](https://maven.apache.org/plugins/maven-toolchains-plugin/)允许项目选择特定的 JDK（或工具链）以在工具链感知的 Maven 插件的上下文中使用。 通过在项目的 `pom.xml` 文件中指定供应商和版本值来做到这一点。
 
-此工具链插件可以作为配置文件的一部分添加，如下所示。
+此工具链插件可作为配置文件的一部分添加，如下所示。
 
 ```xml
 <profile>
