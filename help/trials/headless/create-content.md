@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '702'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 93%
 
 在本模块中，您会使用内容片段控制台基于该模型创建一个新的内容片段。可以将内容片段控制台视为您的 Headless 内容库。使用它来创建新的内容片段并管理现有的片段。
 
-内容片段控制台用于跨投放渠道和独立于上下文创建和编辑Headless内容，在许多创作情况下，这可能是最有效的方法。 在稍后的模块中，我们将探索在上下文中就地编辑Headless内容。
+内容片段控制台用于跨投放渠道、独立于上下文创建和编辑 Headless 内容，对于许多创作案例，这是最有效的方法。在后面的模块中，我们将会探索如何在上下文中和就地编辑 Headless 内容。
 
 1. 点按或单击该控制台右上角的&#x200B;**创建**&#x200B;按钮。
 
