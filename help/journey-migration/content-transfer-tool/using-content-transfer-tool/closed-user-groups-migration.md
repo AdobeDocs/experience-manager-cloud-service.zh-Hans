@@ -1,0 +1,48 @@
+---
+title: 迁移封闭用户组
+description: 本页提供了在迁移到Adobe Experience Manager as a Cloud Service内容后启用封闭用户组所需的特别注意事项。
+hide: true
+hidefromtoc: true
+source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 0%
+
+---
+
+# 迁移封闭用户组 {#migrating-closed-user-groups}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cug_migration"
+>title="迁移封闭用户组"
+>abstract="迁移封闭用户组(CUG)目前需要在迁移后进行一些检查和操作步骤。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM中的封闭用户组"
+
+目前，封闭用户组(CUG)需要一些额外的步骤才能在迁移的目标环境中正常运行。  本文档将介绍此方案，以及要求它们以预期方式保护节点所需的步骤。
+
+## 组迁移
+
+如果主体（包括组）通过内容的ACL与迁移的内容相关联，则它们会自动包含在迁移到Adobe Experience Manager as a Cloud Service的操作中。
+
+## 迁移中的封闭用户组
+
+当前，关联的组 *仅限* 使用封闭用户组(CUG)策略时 *非* 自动包含在摄取中。 如果它们通过ACL与任何内容相关联（如上所述），则将迁移它们。 应在上线之前验证组是否存在。 主体报表是通过“引入作业”视图下载的，可用于查看相关组是否包括，或是否包括，因为它不在ACL中。 如果组不存在，则应在创作实例中创建该组（包括添加相应成员），并激活该组以使它存在于发布实例上。
+
+最后，必须触发流程才能启用CUG。 为此，需要重新发布包含CUG策略的任何内容。 因此，在您的正常测试过程中，如果发现CUG不起作用，请重新发布该内容（即使未修改，也应确保已发布）。
+
+这应该会在发布中启用CUG策略，并且内容将只能由那些经过身份验证的用户（与策略关联的组的成员）访问。
+
+## 主动开发
+
+迁移团队正在努力使CUG策略自动迁移并正常运行，而无需在摄取内容后执行任何附加步骤。
+在尝试上线之前，建议在任何测试流程中包含CUG功能。
+
+## 摘要
+
+总之，以下是迁移后启用CUG的步骤：
+
+1. 确保在迁移后，发布上存在CUG策略中使用的每个组。
+   - 如果某个组包含在迁移内容的ACL中，则该组可能已存在。
+   - 如果不包含，请使用包将其安装在目标实例上（或在其中手动创建），并激活它及其成员。 然后，验证它在Publish上是否存在。
+1. 如果CUG策略尚未保护节点，请重新发布页面（确保即使未对该页面进行任何更改也会发布该页面）。
+   - 验证每个受CUG保护的节点。

@@ -2,9 +2,9 @@
 title: 用户映射和主体迁移
 description: AEMas a Cloud Service中的用户映射和主体迁移概述。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '855'
 ht-degree: 10%
 
 ---
@@ -57,6 +57,7 @@ AEM用户可映射到具有相同电子邮件地址的相应Adobe IMS用户。  
 * 如果设置 **请擦除云实例上的现有内容后再引入** 设置，Cloud Service实例中已转移的用户将与整个现有存储库一起删除。 此外，还创建一个新存储库，内容将摄取到该存储库中。 此过程还会重置所有设置，包括目标Cloud Service实例的权限，对于添加到中的管理员用户，此过程同样有效。 **管理员** 组。 必须将管理员用户阅读至 **管理员** 组以检索CTT的访问令牌。
 * 执行内容增补时，如果由于上次传输后内容未更改而未传输内容，则与该内容关联的用户和组也不会传输。 即使用户和组在此期间已发生更改，此规则仍然适用。 原因在于，用户和组将随其关联的内容一起迁移。
 * 如果目标AEM Cloud Service实例中的某个用户与源AEM实例中的某个用户具有不同的用户名但电子邮件地址相同，并且启用了用户映射，则日志会记录一条错误消息。 此外，不会传输源AEM用户，因为目标系统上只允许一个具有给定电子邮件地址的用户。
+* 请参阅 [迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) 有关在封闭用户组(CUG)策略中使用的组的其他注意事项。
 
 ## 最终摘要和报告 {#final-report}
 
