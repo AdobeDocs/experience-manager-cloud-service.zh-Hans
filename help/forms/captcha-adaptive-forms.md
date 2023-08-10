@@ -2,10 +2,10 @@
 title: 在自适应Forms中使用reCAPTCHA
 description: 了解如何在自适应Forms中配置Google reCAPTCHA服务。
 topic-tags: adaptive_forms, author
-source-git-commit: a1689c61715f01cb4eb62882dbcd6e202b74ffc9
+source-git-commit: b4665d0291ee1223e46c8ecf13ca13ea336107d3
 workflow-type: tm+mt
 source-wordcount: '1913'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 3%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
 | AEM as a Cloud Service | 本文 |
 
-<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。 它会提出挑战，并评估用户响应以确定是人类还是机器人与网站交互。 它可防止用户在测试失败时继续操作，并通过防止机器人发送垃圾邮件或恶意目的而确保在线交易的安全。
 
@@ -207,7 +207,7 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 > 
 > 不选择 **[!UICONTROL 默认]** 从“验证码服务”下拉列表中，默认的AEM CAPTCHA服务已弃用。
 
->[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422641/recaptcha-google-adaptive-forms/?quality=12&learn=on)
 
 ### 根据规则显示或隐藏验证码组件 {#show-hide-captcha}
 
