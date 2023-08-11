@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.8.0 �
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.8.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: d1640c14c796d7b7b6a7b236b38077e360559966
+source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 31%
+source-wordcount: '540'
+ht-degree: 24%
 
 ---
 
@@ -28,7 +28,11 @@ AEM as a Cloud Service 2023.8.0 中的 Cloud Manager 的发布日期是 2023 年
 * 配置内容集时 [复制内容，](/help/implementing/developing/tools/content-copy.md) [上下文感知配置](/help/implementing/developing/introduction/configurations.md) 现在允许在UI的内容集中使用。
 * 增强了以提高Cloud Manager UI中错误消息的可理解性和显示性。
 
-## 自助内容恢复提前采用计划 {#early-adoption}
+## 提前采用计划 {#early-adoption}
+
+加入我们的早期采用计划，并有机会测试即将推出的某些功能。
+
+### 自助内容恢复 {#content-restore}
 
 [新的自助内容恢复功能](/help/operations/restore.md) 现在提供长达7天的备份恢复，供早期采用者用于评估，其特点是：
 
@@ -38,8 +42,16 @@ AEM as a Cloud Service 2023.8.0 中的 Cloud Manager 的发布日期是 2023 年
 如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `aemcs-restorefrombackup-adopter@adobe.com` 来自与Adobe ID关联的电子邮件。 请注意：
 
 * 早期采用者计划仅适用于开发环境。
-* 率先采用者计划的可用性有限。
+* 此功能早期采用者计划的可用性有限。
 * 此功能用于恢复意外删除的内容，而不是用于灾难恢复。
+
+### 体验审核功能板 {#experience-audit-dashboard}
+
+[Cloud Manager体验审核功能板](/help/implementing/cloud-manager/experience-audit-dashboard.md) 包括您的页面性能分数的趋势视图，以及可帮助您改进这些分数的见解和推荐。 体验审核作为Cloud Manager生产管道中的步骤包括在内。
+
+功能板利用Google Lighthouse（一种开源自动工具）来提高Web应用程序的质量。 您可以针对任何网页（公共网页或需要身份验证的网页）运行它。 它审核性能、可访问性、渐进式Web应用程序、SEO等。
+
+有兴趣试驾新仪表板？ 请发送电子邮件至 `aem-lighthouse-pilot@adobe.com` 从与Adobe ID关联的电子邮件中，我们可以帮助您入门。
 
 ## 错误修复 {#bug-fixes}
 
