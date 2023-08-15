@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2f187eaec2f8418b63e54dc4f377d5798f8ed07a
+source-git-commit: d092e68b4f6dbc4f2bcfc45d2e522cfbfa831c0d
 workflow-type: tm+mt
-source-wordcount: '4238'
+source-wordcount: '4242'
 ht-degree: 99%
 
 ---
@@ -75,6 +75,7 @@ ht-degree: 99%
    + AEMaaCS 维护发行说明{#maintenance}
       + [当前维护发行说明](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [2023.8.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.8.0.md)
          + [2023.7.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.7.0.md)
          + [2023.6.0 的维护J发行说明](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [2023.4.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.4.0.md)
@@ -83,7 +84,7 @@ ht-degree: 99%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
-         + [2023.7.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
+         + [2023.7.0 版发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [2023.6.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
@@ -241,7 +242,7 @@ ht-degree: 99%
       + [统一体验](/help/journey-migration/unified-experience.md)
       + [存储库现代化器](/help/journey-migration/refactoring-tools/repo-modernizer.md)
       + [索引转换器](/help/journey-migration/refactoring-tools/index-converter.md)
-      + [资源工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+      + [资源工作流程迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 转换器](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
@@ -288,7 +289,7 @@ ht-degree: 99%
          + [使用项目](/help/sites-cloud/authoring/projects/overview.md)
          + [管理项目](/help/sites-cloud/authoring/projects/managing.md)
          + [处理任务](/help/sites-cloud/authoring/projects/tasks.md)
-         + [使用项目工作流](/help/sites-cloud/authoring/projects/workflows.md)
+         + [使用项目工作流程](/help/sites-cloud/authoring/projects/workflows.md)
       + 启动项 {#launches}
          + [使用启动项](/help/sites-cloud/authoring/launches/overview.md)
          + [创建启动项](/help/sites-cloud/authoring/launches/creating.md)
@@ -296,10 +297,10 @@ ht-degree: 99%
          + [编辑启动项](/help/sites-cloud/authoring/launches/editing.md)
          + [使用回溯预览启动项](/help/sites-cloud/authoring/launches/preview.md)
          + [提升启动项](/help/sites-cloud/authoring/launches/promoting.md)
-      + 工作流 {#workflows}
-         + [使用工作流](/help/sites-cloud/authoring/workflows/overview.md)
-         + [将工作流应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
-         + [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
+      + 工作流程 {#workflows}
+         + [使用工作流程](/help/sites-cloud/authoring/workflows/overview.md)
+         + [将工作流程应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
+         + [参与工作流程](/help/sites-cloud/authoring/workflows/participating.md)
       + 个性化 {#personalization}
          + [个性化概述](/help/sites-cloud/authoring/personalization/overview.md)
          + [使用 ContextHub 数据预览页面](/help/sites-cloud/authoring/personalization/contexthub.md)
@@ -372,7 +373,7 @@ ht-degree: 99%
             + [连接到 Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [翻译最佳实践](/help/sites-cloud/administering/translation/best-practices.md)
       + [管理标记](/help/sites-cloud/administering/tags.md)
-      + [管理工作流](/help/sites-cloud/administering/workflows-administering.md)
+      + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
    + 与 AEM as a Cloud Service 集成 {#integrations}
       + [与 Adobe Analytics 集成](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [与 Adobe Analytics 自动化设置集成](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -580,7 +581,7 @@ ht-degree: 99%
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
-            + [在自适应表单中使用Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
       + 创作自适应表单 - 基础组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -625,9 +626,9 @@ ht-degree: 99%
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
          + [创建和管理评论](/help/forms/create-reviews-forms.md)
-   + 以表单为中心的工作流 {#create-form-centric-workflows}
-      + [在工作流中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
-      + [在以表单为中心的工作流中使用变体](/help/forms/variable-in-aem-workflows.md)
+   + 以表单为中心的工作流程 {#create-form-centric-workflows}
+      + [在工作流程中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
+      + [在以表单为中心的工作流程中使用变体](/help/forms/variable-in-aem-workflows.md)
       + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
    + 通信 API {#using-communications}
       + [通信 API 简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -969,7 +970,7 @@ ht-degree: 99%
       + [扩展控制台](/help/implementing/developing/extending/consoles.md)
       + [扩展页面属性](/help/implementing/developing/extending/page-properties.md)
       + [扩展批量编辑器](/help/implementing/developing/extending/bulk-editor.md)
-      + [扩展MSM](/help/implementing/developing/extending/msm.md)
+      + [扩展 MSM](/help/implementing/developing/extending/msm.md)
    + 部署到 AEM as a Cloud Service {#deploying}
       + [部署到 AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
