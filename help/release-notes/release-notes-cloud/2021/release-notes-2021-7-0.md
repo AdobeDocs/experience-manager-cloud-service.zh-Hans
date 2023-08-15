@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 50%
+source-wordcount: '1314'
+ht-degree: 48%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->从此处，您可以导航到早期版本的发行说明；例如，2020版、2021版等的发行说明。
+>从此处，您可以导航到以前版本的发行说明；例如，2020版、2021版等的发行说明。
 
 >[!NOTE]
 >
@@ -24,31 +24,31 @@ ht-degree: 50%
 ## 发布日期 {#release-date}
 
 的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前版本(2021.7.0)为2021年7月29日。
-以下版本(2021.8.0)的发布日期为2021年8月26日。
+2021年8月26日推出以下版本(2021.8.0)。
 
 ## 发布视频 {#release-video}
 
-请查看 [2021年7月发行版概述](https://video.tv.adobe.com/v/335580) 视频，以了解新增功能的摘要。
+请查看 [2021年7月发行版概述](https://video.tv.adobe.com/v/335580) 视频以了解新增功能的摘要。
 
 ## Experience Manager基础as a Cloud Service {#foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 更灵活的Dispatcher配置：可以更轻松地组织项目。 例如，您现在可以包含反映站点结构的多个重写规则文件。 [了解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 这种灵活的模式，包括如何构建Dispatcher配置以便您进行充分利用。
-* 复制代理的“分发”选项卡下的树复制UI应被视为已弃用，计划在9月30日后删除。 [了解](/help/operations/replication.md#tree-activation) 替代复制策略。
-* 捆绑 `org.apache.sling.datasource-1.0.4.jar` 的for Sling数据源支持已删除，因为它具有过时的功能，并且未由客户使用。
+* 更灵活的Dispatcher配置：可更轻松地整理项目。 例如，您现在可以包含反映站点结构的多个重写规则文件。 [了解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 这种灵活的模式，包括如何构建您的Dispatcher配置，以便您能够利用它。
+* 复制代理的“分发”选项卡下的树复制UI应被视为弃用，计划在9月30日之后删除。 [了解](/help/operations/replication.md#tree-activation) 替代复制策略。
+* 捆绑 `org.apache.sling.datasource-1.0.4.jar` for Sling数据源支持已删除，因为其功能已过时且没有客户使用它。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* 内容自动化功能允许 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] 用于大规模自动化资产生产的API。 它通过显着减少创建同一资源的变体所需的时间和迭代来提高内容速度。 该功能不需要进行任何编程，并且可在DAM内使用。 参见 [使用Creative Cloud集成生成资源变体](/help/assets/cc-api-integration.md).
+* 内容自动化功能允许 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] API可大规模自动进行资源生产。 它通过显着减少创建同一资源的变体所需的时间和反复操作来提高内容速度。 该功能不需要进行任何编程，并且可在DAM内使用。 请参阅 [使用Creative Cloud集成生成资源变体](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] 包括 [!DNL Document Cloud] PDF查看器以本机预览PDF文档。 此功能允许用户预览多页PDF文件，而无需进行任何文件处理或转换。 此功能改进了与 [!DNL Experience Manager] 6.5.查看器中可用的控件包括缩放、导航到页面、取消停靠控件以及全屏查看。 用户案例还可以预览和跳转到页面和书签。 支持对文件本身进行注释。 未来版本中将添加对PDF文件中的内容进行注释和批注。
+* [!DNL Experience Manager Assets] 包括 [!DNL Document Cloud] PDF查看器以本机预览PDF文档。 利用此功能，用户无需进行任何文件处理或转换即可预览多页PDF文件。 此功能改进了与 [!DNL Experience Manager] 6.5.查看器中可用的控件包括缩放、导航到页面、取消停靠控件以及全屏查看。 用户案例还可以预览和跳转到页面和书签。 支持对文件本身进行注释。 未来版本中将添加对PDF文件中的内容进行注释和批注。
 
   ![在中预览PDF文件 [!DNL Experience Manager] 使用PDF查看器](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* Linkshare下载功能使用可提高下载速度的异步下载。 参见 [下载使用链接共享功能共享的资源](/help/assets/download-assets-from-aem.md#link-share-download).
+* Linkshare下载功能使用可提高下载速度的异步下载。 请参阅 [下载使用链接共享功能共享的资源](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![下载收件箱](/help/assets/assets/download-inbox.png)
 
@@ -97,16 +97,16 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 * **基于 Acroform 的记录文档**：除了基于 XFA 的表单模板，您还可以[使用 Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作为记录文档的模板。
 
-* **Microsoft Azure 数据存储连接器**：您现在可以[将表单数据模型连接到 Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它可让您检索自适应表单数据并将这些数据作为 BLOB 存储到 Microsoft Azure Storage。
+* **Microsoft Azure 数据存储连接器**：您现在可以[将表单数据模型连接到 Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它可让您检索自适应表单数据并将其作为BLOB存储到Microsoft Azure Storage。
 
 ## CIF 加载项 {#cloud-services-cif}
 
 ### 新增功能 {#what-is-new-cif}
 
 * CIF核心组件v2
-   * 简化并改进了PDP/PLP URL和SEO的配置
-   * 创作模式下暂存产品数据的视觉指示器，用于更好地显示即将发生的更改
-   * 内容和商务页面的新站点地图组件
+   * 简化并改进了PDP/PLP URL和SEO配置
+   * 创作模式下暂存的产品数据的视觉指示器，用于更好地显示即将发生的更改
+   * 内容和商务页面的新Sitemap组件
 
 * 支持 [Adobe Commerce Sensei产品推荐，由Adobe Sensei提供支持](https://business.adobe.com/products/magento/product-recommendations.html) 在AEM Storefront中使用预定义或动态创建的推荐
 
@@ -114,7 +114,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 ### 错误修复 {#bug-fixes-screens}
 
-* 内容提供程序设置现在会在创建或更新过程中进行验证。
+* 现在，在创建或更新期间将验证内容提供程序设置。
 
 * 所有显示视图都有文件夹列。
 
@@ -126,9 +126,9 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 * 现在可以取消分配播放列表并禁止删除已分配播放器的播放列表。
 
-* 播放器现在会在“全部”缓存清除后重新下载资产。
+* 播放器现在会在清除“全部”缓存后重新下载资产。
 
-* 现在，如果 *结束时间* 设置为第二天。
+* 现在，如果 *结束时间* 设置为后天。
 
 * `Back&Forward` 现在适用于Screensas a Cloud ServiceUI。
 
@@ -192,4 +192,4 @@ Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您�
 
 >[!NOTE]
 >
-> 检查此 [Cloud Acceleration Manager演示视频](https://video.tv.adobe.com/v/335547).
+> 选中此 [Cloud Acceleration Manager演示视频](https://video.tv.adobe.com/v/335547).

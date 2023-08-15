@@ -3,10 +3,10 @@ title: 如何配置自适应表单的提交操作
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 hide: true
 hidefromtoc: true
-source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
-workflow-type: ht
-source-wordcount: '3366'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '3365'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 | 应用到 | ✅ 自适应表单核心组件，❎[自适应表单基础组件](/help/forms/configuring-submit-actions.md) |
 
 
-提交操作允许您选择通过自适应表单捕获的数据的目标。当用户单击自适应表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，将触发此操作。Forms as a Cloud Service（针对基于核心组件的自适应表单）提供了一系列预建的提交操作。这些现成的提交操作可让您：
+提交操作允许您选择通过自适应表单捕获的数据的目标。 当用户单击自适应表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，将触发此操作。Forms as a Cloud Service（针对基于核心组件的自适应表单）提供了一系列预建的提交操作。这些现成的提交操作可让您：
 
 * 通过电子邮件轻松发送表单数据。
 * 在传输数据时启动 Microsoft Power Automate 流程或 AEM 工作流。

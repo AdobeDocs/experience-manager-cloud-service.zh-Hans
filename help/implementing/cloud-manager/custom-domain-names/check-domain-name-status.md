@@ -2,10 +2,10 @@
 title: 检查域名状态
 description: 了解如何确定 Cloud Manager 是否已成功验证您的自定义域名。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 100%
+source-wordcount: '649'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息�
 
 #### 错误原因 {#cause}
 
-快速将域锁定到注册该域的初始帐户，任何其他帐户都不能在不请求权限的情况下注册子域。此外，Fastly 只允许您将一个 Apex 域和关联子域分配给一个 Fastly 服务和帐户。 如果您现有的 Fastly 帐户链接了 AEM Cloud Service 域使用的相同 Apex 和子域，您将看到此错误。
+快速将域锁定到注册该域的初始帐户，任何其他帐户都不能在不请求权限的情况下注册子域。此外，Fastly只允许您将一个Apex域和关联的子域分配给一个Fastly服务和帐户。 如果您现有的 Fastly 帐户链接了 AEM Cloud Service 域使用的相同 Apex 和子域，您将看到此错误。
 
 #### 错误解决方案 {#resolution}
 

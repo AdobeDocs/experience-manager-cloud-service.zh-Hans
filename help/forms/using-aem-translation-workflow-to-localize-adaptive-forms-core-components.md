@@ -2,9 +2,9 @@
 title: 翻译基于核心组件的自适应表单
 description: 使用机器翻译或人工翻译来翻译基于核心组件的自适应表单
 feature: Adaptive Forms
-source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '880'
 ht-degree: 4%
 
 ---

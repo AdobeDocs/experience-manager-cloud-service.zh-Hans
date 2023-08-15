@@ -5,10 +5,10 @@ description: 您可以使用自适应Forms — 嵌入组件在AEM Sites页面中
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: df772533b5b8b55a80780d848e21b2432bea253c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3232'
-ht-degree: 7%
+source-wordcount: '3230'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 
 AEM Forms允许表单开发人员将自适应Forms无缝嵌入到AEM Sites页面或AEM外部托管的网页中。 嵌入式自适应表单功能齐全，用户无需离开页面即可填写和提交表单。 它有助于用户保留在网页上其他元素的上下文中，同时与表单交互。 这允许您的用户方便地填写和提交表单，而无需离开他们所在的页面。 此集成提供了一种便捷的方式，可重复使用他们已创建的自适应Forms。
 
-您可以使用AEM页面编辑器快速将多个表单嵌入到AEM Sites页面。 通过使用AEM页面编辑器，内容创作者可以使用自适应Forms组件的强大功能（包括动态行为、验证、数据集成、生成记录文档和业务流程自动化）在Sites页面中创建无缝的数据捕获体验。 通过它，您还可以使用 AEM Sites 页面的各种功能，例如版本控制、定位、翻译和多站点管理器等。
+您可以使用AEM页面编辑器快速将多个表单嵌入到AEM Sites页面。 通过使用AEM页面编辑器，内容创作者可以使用自适应Forms组件的强大功能（包括动态行为、验证、数据集成、生成记录文档和业务流程自动化）在Sites页面中创建无缝的数据捕获体验。 它还允许您使用AEM Sites页面的各种功能，例如，版本控制、定位、翻译和多站点管理器。
 
 AEM Forms提供 **[!UICONTROL 自适应表单容器]** 和 **[!UICONTROL 自适应Forms — 嵌入(v2)]** 组件。 您可以使用 **[!UICONTROL 自适应Forms — 嵌入(v2)]** 组件，用于添加现有的自适应表单或使用自适应Forms编辑器创建表单，而 **[!UICONTROL 自适应表单容器]** 在体验片段或AEM Sites页面中创建新表单。
 
@@ -34,12 +34,12 @@ AEM Forms提供 **[!UICONTROL 自适应表单容器]** 和 **[!UICONTROL 自适�
 
 ## Why embed an Adaptive Form in AEM Sites page or AEM Experience Fragment? 
 
-Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor allows you to create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
+Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you create seamless data capture experiences within a Sites page using the power of Adaptive Forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also lets you use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager, enhancing the overall form creation and management experience. Let's explore some of these features:
 
 * **Versioning:** AEM Sites pages offer [robust versioning capabilities](/help/sites-cloud/authoring/features/page-versions.md), allowing you to track and manage different versions of your forms. This enables you to make changes and enhancements to forms while maintaining the ability to roll back to previous versions if needed. Versioning ensures a controlled and organized approach to form development and evolution.
 * **Targeting (Integration with Adobe Target):** With AEM Sites pages targeting capabilities, you can also [personalize the form experience for different audiences](/help/sites-cloud/integrating/integration-adobe-target-ims.md). By leveraging user segments and targeting criteria, you can tailor the form's content, design, or behavior to specific groups of users. This enables you to provide a personalized and relevant form experience, increasing engagement and conversion rates.
 * **Translation:** AEM Sites [seamless integration with translation services](/help/sites-cloud/administering/translation/overview.md), allowing you to translate forms into multiple languages easily. This feature simplifies the localization process, ensuring that your forms are accessible to a global audience. You can manage translations efficiently within AEM translation projects, reducing time and effort required for multilingual form support. See considerations section for more information on translation.  
-* **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now allows you to reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
+* **Multi-site Management and Live Copy:** AEM Sites provide robust [Multi-site Management and Live Copy capabilities](/help/sites-cloud/administering/msm/overview.md), enabling you to create and manage multiple websites within a single environment. This feature now lets you reuse forms across different sites, ensuring consistency and reducing duplication efforts. With centralized control and management, you can efficiently maintain and update forms across multiple websites.
 * **Themes:** AEM Sites pages provide a framework for designing and maintaining consistent visual styles across multiple web pages. These define colors, fonts, style sheets, and other visual elements that contribute to the overall look and feel of the website. [You can use the themes designed for an AEM Sites page for an Adaptive Form, saving time and effort](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes). 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/fundamentals/editing-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
@@ -68,7 +68,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 * 使用或添加表单时 **[!UICONTROL 自适应Forms — 嵌入(v2)]** 表单的翻译和本地化过程均采用AEM Forms翻译流程。 在这种情况下，Sites 页面的所有语言副本中会维护和引用一个表单。**[!UICONTROL 自适应Forms — 嵌入(v2)]** 组件不提供对AEM Sites页面的各种功能（如版本控制、定位、翻译和多站点管理器）的访问权限。
 
-* 当您使用 **[!UICONTROL 自适应表单容器]** 要创建表单，表单将通过AEM Sites翻译流程进行翻译和本地化。 对于每种语言，系统都会生成网站页面和相应表单的单独副本（语言副本），而当内容作者修改父页面上表单中的规则时，必须在该表单的所有语言副本中进行相同的更改。**[!UICONTROL 通过自适应表单容器，您还可以使用 AEM Sites 页面的各种功能，例如版本控制、定位、翻译和多站点管理器等。]**
+* 当您使用 **[!UICONTROL 自适应表单容器]** 要创建表单，表单将通过AEM Sites翻译流程进行翻译和本地化。 对于每种语言，系统都会生成网站页面和相应表单的单独副本（语言副本），而当内容作者修改父页面上表单中的规则时，必须在该表单的所有语言副本中进行相同的更改。**[!UICONTROL 自适应表单容器]** 还允许您使用AEM Sites页面的各种功能，如，版本控制、定位、翻译和多站点管理器。
 
 
 ## 在AEM Sites页面或AEM Experience Fragment中嵌入自适应表单的要求 {#before-you-start-embedding-an-adaptive-form}
@@ -331,7 +331,7 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
 1. Save the settings. The Adaptive Form  is now embedded in the page.
 
 
-AEM site also allows you to create an Adaptive Form on the fly using the Adaptive Forms - Embed component. Follow the steps to create an Adaptive Form using the **Adaptive Forms - Embed component** on AEM sites page:
+AEM site also lets you create an Adaptive Form on the fly using the Adaptive Forms - Embed component. Follow the steps to create an Adaptive Form using the **Adaptive Forms - Embed component** on AEM sites page:
 1. Open the AEM sites page, in edit mode, in which you want to embed an Adaptive Form.
 1. From the Component browser panel, drag-drop the Adaptive Forms - Embed component on the page.
 1. Click the **Plus** icon and you are redirected to the form creation wizard.

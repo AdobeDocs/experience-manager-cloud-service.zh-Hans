@@ -2,10 +2,10 @@
 title: 添加 SSL 证书
 description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '571'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '570'
+ht-degree: 94%
 
 ---
 
@@ -153,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->这两个命令的输出必须完全相同。 如果您找不到 `main/server` 证书的匹配私钥，您需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
+>这两个命令的输出必须完全相同。 如果您找不到与您的密钥匹配的私钥， `main/server` 证书，您需要通过生成新的CSR和/或向SSL供应商请求更新的证书来重新键入证书。
 
 ### 证书有效日期 {#certificate-validity-dates}
 

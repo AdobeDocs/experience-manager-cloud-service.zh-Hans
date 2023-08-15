@@ -2,10 +2,10 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2990'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '2983'
+ht-degree: 97%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 * **模式选择器**
 
-  显示当前的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)并允许您选择其他模式，例如编辑、布局、时间扭曲或定位。
+  显示当前 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 并允许您选择其他模式，如编辑、布局、时间扭曲或定位。
 
   ![“模式选择器”按钮](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -84,7 +84,7 @@ ht-degree: 100%
 
 * **批注**
 
-  允许您在审核页面时向页面中添加[注释](/help/sites-cloud/authoring/fundamentals/annotations.md)。添加第一个注释后，该图标将切换为数字，以指示页面上的注释数量。
+  允许您添加 [注释](/help/sites-cloud/authoring/fundamentals/annotations.md) 查看页面时跳转到页面。 添加第一个注释后，该图标将切换为数字，以指示页面上的注释数量。
 
   ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -240,25 +240,25 @@ ht-degree: 100%
 
 * **组**
 
-  此操作允许您一次选择多个组件。在桌面设备上&#x200B;**按住 Ctrl 并单击**&#x200B;或&#x200B;**按住 Command 并单击**&#x200B;可实现同样的操作。
+  这使您能够一次选择多个组件。 在桌面设备上&#x200B;**按住 Ctrl 并单击**&#x200B;或&#x200B;**按住 Command 并单击**&#x200B;可实现同样的操作。
 
   ![“组”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **父项**
 
-  此项允许您选择选定组件的父组件。
+  允许您选择选定组件的父组件。
 
   ![“父项”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **布局**
 
-  允许您修改选定组件的[布局](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)。此操作仅适用于选定组件，而不会激活整个页面的[布局模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
+  这可让您修改 [布局](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 选定组件的。 此操作仅适用于选定组件，而不会激活整个页面的[布局模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 
   ![“布局”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **转换为体验片段变体**
 
-  允许您从选定的组件创建一个新的[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)，或将其添加到现有的体验片段中。
+  这让您能够创建新的 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 或将它添加到现有的体验片段中。
 
   ![“转换为体验片段”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -492,7 +492,7 @@ AEM 允许您锁定页面，这样其他人就无法编辑页面内容。当您�
 >
 >Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
 >
->Pages can not be unlocked by impersonating the user who locked the page.
+>Pages cannot be unlocked by impersonating the user who locked the page.
 -->
 
 <!--

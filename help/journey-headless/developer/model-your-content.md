@@ -2,10 +2,10 @@
 title: 如何为您的内容建模
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用内容建模与内容片段模型和内容片段对 AEM Headless 交付进行内容建模。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: ht
-source-wordcount: '1830'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 97%
 
 ---
 
@@ -147,7 +147,7 @@ AEM 使用内容片段提供以 Headless 方式将内容交付到应用程序所
 >
 >内容片段模型还用作 AEM GraphQL 架构的基础，用于检索您的内容 - 稍后的会话中提供了更多相关信息。
 
-使用 AEM GraphQL API 发出对您的内容的请求，这是标准 GraphQL API 的自定义实施。AEM GraphQL API 允许您对内容片段执行（复杂）查询，每个查询都根据特定的模型类型。
+使用 AEM GraphQL API 发出对您的内容的请求，这是标准 GraphQL API 的自定义实施。AEM GraphQL API允许您对内容片段执行（复杂）查询，每个查询都根据特定的模型类型。
 
 然后，您的应用程序可以使用返回的内容。
 
@@ -169,7 +169,7 @@ AEM 使用内容片段提供以 Headless 方式将内容交付到应用程序所
 1. **数据类型**可让您定义单个属性。
 例如，以**文本**&#x200B;形式定义包含教师姓名的字段，并以&#x200B;**数字**&#x200B;形式定义其服务年数。
 1. 数据类型&#x200B;**内容引用**&#x200B;和&#x200B;**片段引用**&#x200B;可让您在 AEM 中创建与其他内容的关系。
-1. **片段引用**&#x200B;数据类型可让您通过嵌套内容片段（根据模型类型）来实施结构的多个层次。这对于您的内容建模是至关重要的。
+1. 此 **片段引用** 数据类型允许您通过嵌套内容片段（根据模型类型）实现多个级别的结构。 这对于您的内容建模是至关重要的。
 
 例如：
 ![使用内容片段进行内容建模](assets/headless-modeling-01.png "使用内容片段进行内容建模")

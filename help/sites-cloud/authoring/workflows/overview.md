@@ -2,16 +2,16 @@
 title: 使用工作流
 description: 通过 AEM 中的工作流，您可以自动完成对页面或资源执行的一系列步骤。
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '178'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 88%
 
 ---
 
 # 使用工作流 {#working-with-workflows}
 
-通过 AEM 工作流，您可以自动完成对（一个或多个）页面和/或资源执行的一系列步骤。
+通过AEM Workflows，您可以自动执行在（一个或多个）页面和/或资产上执行的一系列步骤。
 
 例如，在发布时，编辑者必须在站点管理员激活页面之前审查内容。自动完成此示例的工作流会通知每位参与者何时需要执行其必须完成的工作：
 
@@ -26,5 +26,5 @@ ht-degree: 100%
 
 以下页面包含相关内容：
 
-* [将工作流应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
-* [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
+* [将工作流程应用于页面](/help/sites-cloud/authoring/workflows/applying.md)
+* [参与工作流程](/help/sites-cloud/authoring/workflows/participating.md)

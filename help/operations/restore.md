@@ -1,10 +1,10 @@
 ---
 title: AEM as a Cloud Service 中的内容恢复
 description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud Service 内容。
-source-git-commit: 6813b5b9570a4d115cd0600bcccd4d787dc42154
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 76%
 
 ---
 
@@ -59,11 +59,11 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 1. 在环境详细信息页面的&#x200B;**还原内容**&#x200B;选项卡上，首先在&#x200B;**还原时间**&#x200B;下拉菜单下选择还原的时间范围。
 
-   1. 如果您选择&#x200B;**过去 24 小时**，则相邻的&#x200B;**时间**&#x200B;字段允许您指定过去 24 小时内的准确时间来恢复。
+   1. 如果您选择 **最近24小时** 邻居 **时间** 字段可让您指定过去24小时内的准确时间来恢复。
 
       ![最近 24 小时](assets/backup-time.png)
 
-   1. 如果您选择 **上周**，相邻的&#x200B;**天**&#x200B;字段可让您选择过去七天内的日期（不包括之前的 24 小时）。
+   1. 如果您选择 **上周** 邻居 **天** 字段允许您选择过去七天内的日期（不包括之前的24小时）。
 
       ![上周](assets/backup-date.png)
 

@@ -2,9 +2,9 @@
 title: 构建产品体验
 description: 了解如何构建随后可在各种渠道中使用的产品内容，以创建沉浸式购物体验。
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 412e206a66de470e2798aafc58bcac93dc7e3cad
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1165'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 4%
 
 ![pem占位符](assets/pem-placeholder.png)
 
-打开组件的对话框，并输入此占位符的名称。 占位符名称为必填，允许您根据需要添加任意数量的占位符。
+打开组件的对话框，并输入此占位符的名称。 占位符名称为必填，可让您根据需要添加任意数量的占位符。
 
 ![pem XF对话框](assets/pem-dialog-xf.png)
 

@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 97%
 
 ---
 
@@ -62,7 +62,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 >[!NOTE]
 >
->您无法编辑运行中的管道。
+>无法编辑正在运行的管道。
 
 ## 删除管道 {#deleting-pipelines}
 
@@ -72,7 +72,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 >[!NOTE]
 >
->您无法删除运行中的管道。
+>您无法删除正在运行的管道。
 
 ## 查看详细信息 {#view-details}
 

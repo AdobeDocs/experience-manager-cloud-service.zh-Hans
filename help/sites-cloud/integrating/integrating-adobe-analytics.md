@@ -1,19 +1,19 @@
 ---
 title: 与 Adobe Analytics 集成
-description: 了解如何使用触屏UI和Adobe Launch将Adobe Analytics与AEMas a Cloud Service集成。
+description: 了解如何使用 Touch UI 和 Adob​​e Launch 将 Adob​​e Analytics 与 AEM as a Cloud Service 集成。
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 96%
+source-wordcount: '573'
+ht-degree: 97%
 
 ---
 
 # 与 Adobe Analytics 集成{#integrating-with-adobe-analytics}
 
-通过将 Adobe Analytics 与 AEM as a Cloud Service 集成，您可以跟踪您的网页活动。集成需要：
+通过将Adobe Analytics与AEMas a Cloud Service集成，您可以跟踪您的网页活动。 集成需要：
 
 * 使用 Touch UI 在 AEM as a Cloud Service 中创建 Analytics 配置。若要将 Adobe Analytics 与 AEM as a Cloud Service 集成，需要 IMS 身份验证。
 * 在 [Adobe Launch](#analytics-launch) 中将 Adobe Analytics 添加为扩展并进行配置。有关 Adobe Launch 的更多详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)。

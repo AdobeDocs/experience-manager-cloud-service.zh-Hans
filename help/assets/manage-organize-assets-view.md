@@ -4,10 +4,10 @@ description: 在  [!DNL Assets view] 中移动、删除、复制、重命名、�
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 92%
+source-wordcount: '1034'
+ht-degree: 93%
 
 ---
 
@@ -88,7 +88,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 **所需的权限：资源的**`Can Edit`、`Owner` 或管理员权限。
 
-资产视图允许您为存储库中可用的资产设置状态。 设置资源状态以更好地治理和管理下游对数字资源的使用。
+通过“资源”视图，您可以为存储库中可用的资源设置状态。 设置资源状态以更好地治理和管理下游对数字资源的使用。
 
 您可以为资源设置以下状态：
 
@@ -111,7 +111,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ### 设置资源过期日期 {#set-asset-expiration-date}
 
-“资源”视图还允许您为存储库中可用的资源设置到期日期。 然后，可根据 `Expired` 资源状态[筛选搜索结果](search-assets-view.md#refine-search-results)。此外，还可指定资源的到期日期范围以进一步筛选搜索结果。
+通过“资源”视图，您还可以设置存储库中可用资源的到期日期。 然后，可根据 `Expired` 资源状态[筛选搜索结果](search-assets-view.md#refine-search-results)。此外，还可指定资源的到期日期范围以进一步筛选搜索结果。
 
 要设置资源过期日期，请执行以下操作：
 
@@ -141,9 +141,9 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在“资产”视图中管理资产](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
+* [观看视频，了解如何在“资产”视图中进行资产管理](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
-* 使用提供产品反馈 [!UICONTROL 反馈] Assets视图用户界面上可用的选项
+* 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 

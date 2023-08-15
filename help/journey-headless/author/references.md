@@ -2,10 +2,10 @@
 title: 了解如何在内容片段中使用引用
 description: 了解如何在内容片段中对内容、其他片段和其他资源（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 92%
 
 ---
 
@@ -39,11 +39,11 @@ ht-degree: 100%
 
 ## 内容引用 {#content-references}
 
-内容引用就是这样做的 – 它们允许您引用任何其他内容。这将打开一个浏览器以便您能够选择内容项。
+内容引用就是这样做的 – 它们允许您引用任何其他内容。这将打开一个浏览器，允许您选择内容项目。
 
 ## 资源/媒体引用 {#assets-media-references}
 
-可以使用&#x200B;**插入资源**&#x200B;选项在文本块中引用资源（例如，图像或媒体）。这将打开一个浏览器以便您能够选择资源。
+可以使用&#x200B;**插入资源**&#x200B;选项在文本块中引用资源（例如，图像或媒体）。这将打开一个浏览器，允许您选择资产。
 
 ![内容片段 – 插入资源](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 
 ### 如何创作嵌套片段 {#author-nested-fragment}
 
-创作片段引用非常简单（尽管该字段通常将不被标记为&#x200B;**片段引用**）。您可以直接键入引用，或者（更有可能）选择文件夹图标以打开浏览器，以便导航并选择所需的片段。
+创作片段引用非常简单（尽管该字段通常将不被标记为&#x200B;**片段引用**）。您可以直接键入引用，或（更有可能的是）选择文件夹图标以打开浏览器，从中导航并选择所需的片段。
 
 ![内容片段 – 引用](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

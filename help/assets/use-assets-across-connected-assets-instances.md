@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62649d9aaa7c4307351cc83eefbab14806f91378
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3871'
+source-wordcount: '3870'
 ht-degree: 16%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 16%
 
 ### 连接的资产体系结构 {#connected-assets-architecture}
 
-Experience Manager允许您将远程DAM部署作为源连接到多个Experience Manager [!DNL Sites] 部署。 但是，您可以连接 [!DNL Sites] 只有一个远程DAM部署的部署。
+通过Experience Manager，您可以将远程DAM部署作为源连接到多个Experience Manager [!DNL Sites] 部署。 但是，您可以连接 [!DNL Sites] 只有一个远程DAM部署的部署。
 
 评估连接到远程DAM部署的最佳站点实例数量。 Adobe建议将Sites实例增量连接到部署，并测试远程DAM上的性能不会受到影响，因为每个连接的Sites实例都会贡献远程DAM上的数据流量。
 

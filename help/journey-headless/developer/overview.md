@@ -3,10 +3,10 @@ title: AEM Headless CMS 开发人员历程
 description: 了解通过将 Adobe Experience Manager (AEM) 用作 Headless CMS 进行的 Headless 开发。了解如何使用内容模型、内容片段和 GraphQL API 等功能来增强 Headless 内容交付。
 landing-page-description: 了解 Headless 内容交付和实施。详细了解如何在您的企业内制定策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1082'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ AEM 的 Headless 实施使用内容片段模型和内容片段来专注于创建
 
 我们将在此历程中涵盖许多主题，您可从中了解 AEM 中的 Headless 的基础知识。
 
-虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。我们建议您从头开始，然后循序渐进。
+虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。Adobe建议您从头开始，然后循序渐进。
 
 | # | 文章 | 描述 |
 |---|---|---|

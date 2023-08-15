@@ -1,11 +1,11 @@
 ---
 title: 导入和导出资源
 seo-title: Import and export assets to [!DNL AEM Forms]
-description: 您可以将Adaptive Forms和相关资源导入和导出到AEM实例。 这有助于迁移表单或跨系统移动表单。
+description: 您可以将自适应Forms和相关资源导入和导出到AEM实例。 这有助于迁移表单或跨系统移动表单。
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1323'
 ht-degree: 1%
 
 ---
@@ -13,17 +13,17 @@ ht-degree: 1%
 
 # 导入和导出资源 {#importing-and-exporting-assets-to-aem-forms}
 
-您可以在不同的表单、主题、模板、文档片段、主题和其他资产之间移动这些资产 [!DNL AEM Forms] 实例。 将系统或从开发或暂存服务器向生产服务器迁移表单时，需要执行此类移动。
+您可以在不同的页面之间移动表单、主题、模板、文档片段、主题和其他资源 [!DNL AEM Forms] 实例。 将系统或从开发或暂存服务器向生产服务器迁移表单时，需要执行此类移动。
 
-对于通过以下方式上传和导入的资产： [!DNL AEM Forms] 支持UI，建议使用Forms UI进行导出或导入。 不建议使用AEM包管理器导出或导入此类资产。
+对于通过以下方式上传和导入的资产： [!DNL AEM Forms] UI受支持，建议使用Forms UI进行导出或导入。 不建议使用AEM包管理器导出或导入此类资源。
 
 ## 下载或上传Forms &amp; Documents资源 {#download-or-upload-forms-amp-documents-assets}
 
 [!DNL AEM Forms] 用户界面允许您将资源下载为AEM CRX包或二进制文件，从而从AEM实例导出资源。 然后，您可以将下载的AEM CRX包或二进制文件导入到另一个AEM实例中。
 
-导出和导入方式 [!DNL AEM Forms] 除自适应表单模板和自适应表单内容策略之外，所有资产都支持用户界面。 因此，从导出自适应表单时 [!DNL AEM Forms] UI、相关的自适应表单模板和内容策略不会像其他相关资产一样自动导出。
+导出和导入方式 [!DNL AEM Forms] 所有资产（自适应表单模板和自适应表单内容策略除外）都支持用户界面。 因此，从导出自适应表单时 [!DNL AEM Forms] UI、相关的自适应表单模板和内容策略不会像其他相关资产一样自动导出。
 
-对于这些资源类型，必须使用AEM包管理器在源AEM服务器上创建CRX包，并在目标服务器上安装该包。 有关创建和安装软件包的信息，请参见 [部署到AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html).
+对于这些资源类型，必须使用AEM包管理器在源AEM服务器上创建CRX包，并在目标服务器上安装该包。 有关创建和安装软件包的信息，请参见 [部署到AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hans).
 
 ### 下载Forms和文档资源 {#download-forms-amp-documents-assets}
 
@@ -34,8 +34,8 @@ ht-degree: 1%
 1. 选择表单资产并点按 **[!UICONTROL 下载]** 图标。
 1. 在下载资产中，选择以下选项之一，然后点按 **[!UICONTROL 下载]**.
 
-   * **下载为CRX包：** 使用选项从以下位置下载并移动所有选定的资源和相关依赖项： [!DNL AEM Forms] 实例到另一个实例。 它将所有资源和文件夹下载为crx包。 任何表单资源(包括在AEM(自适应Forms和自适应表单片段)、PDF文档和资源（XSD、XFS、图像）中创作的表单)都可从以下位置作为包下载： [!DNL AEM Forms] UI。
-将资源下载为包的优势在于，它还可以下载选定下载的资源已使用的资源。 例如，如果您有一个自适应表单，该表单使用表单模板、XSD和图像。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也都已下载。
+   * **下载为CRX包：** 使用选项从下载并移动所有选定的资产和相关依赖项 [!DNL AEM Forms] 实例到另一个实例。 它将所有资源和文件夹下载为crx包。 任何表单资源(包括在AEM(Adaptive Forms和自适应表单片段)、PDF文档和资源（XSD、XFS、图像）中创作的表单)都可从以下位置作为包下载： [!DNL AEM Forms] UI。
+将资源下载为包的优势在于，它还可以下载选定要下载的资源已使用的资源。 例如，如果您有一个自适应表单，该表单使用表单模板、XSD和图像。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也会下载。
 
    * **将资产下载为二进制文件：** 使用选项可仅下载表单模板(XDP)、PDF forms(PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它将具有二进制文件的表单资源(如XSD、XDP、图像、PDF和XDP)下载为.zip文件。
 您无法通过下载自适应Forms、自适应表单片段和主题 **[!UICONTROL 将资产下载为二进制文件]** 选项。 要下载这些资源，您应使用 **[!UICONTROL 下载为CRX包]** 选项。
@@ -44,11 +44,11 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >AEM包和二进制文件都将作为存档（.zip文件）下载。 资产的模板不会随资产一起下载。 您需要单独导出资源模板。
+   >AEM包和二进制文件都将作为存档（.zip文件）下载。 资产的模板不会与资产一起下载。 您需要单独导出资产模板。
 
 ### 上传资源 {#upload-forms-amp-documents-assets}
 
-要上传Forms和Documents资源，请执行以下操作：
+要上传Forms和文档资源，请执行以下操作：
 
 1. 登录到 [!DNL AEM Forms] 实例。
 1. 点按Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标>导航 ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
@@ -61,21 +61,21 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >上传包不会替换现有文件夹层次结构。 例如，如果一台服务器上的位置/content/dam/formsanddocuments有一个名为“Training”的自适应表单。 您可以下载自适应表单并将表单上传到其他服务器上。 第二台服务器还在同一位置/content/dam/formsanddocuments有一个名为“Training”的文件夹。 上传失败。
+   >上传包不会替换现有文件夹层次结构。 例如，如果一台服务器上位于/content/dam/formsanddocuments的位置有一个名为“Training”的自适应表单。 您下载自适应表单并将表单上传到其他服务器。 第二台服务器还在同一位置/content/dam/formsanddocuments具有一个名为“Training”的文件夹。 上传失败。
 
 ## 下载或上传主题 {#downloading-or-uploading-a-theme}
 
-替换为 [!DNL AEM Forms]，您可以创建、下载或上传主题。 创建主题的方法与其他资产（如表单、文档和信件）类似。 您可以创建主题、下载主题，然后将其上传到单独的实例上以重复使用。 有关主题的更多信息，请参阅 [主题](themes.md) 在 [!DNL AEM Forms].
+替换为 [!DNL AEM Forms]，您可以创建、下载或上传主题。 创建主题的方式与创建表单、文档和信件等其他资产类似。 您可以创建主题，下载主题，然后将其上传到单独的实例上以重复使用。 有关主题的更多信息，请参阅 [主题](themes.md) 在 [!DNL AEM Forms].
 
 ### 下载主题 {#downloading-a-theme}
 
-您可以在中导出主题 [!DNL AEM Forms] 在其他项目或实例中可以使用的插件。 AEM允许您将主题下载为zip文件，以便在实例上上上传。
+您可以在中导出主题 [!DNL AEM Forms] 您可在其他项目或实例中使用的任何其他插件。 AEM允许您将主题下载为zip文件，并可在实例上上上传。
 
 要下载主题，请执行以下操作：
 
 1. 登录到 [!DNL AEM Forms] 实例。
 1. 点按Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标>导航 ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL 主题]**.
-1. 选择主题并点按 **[!UICONTROL 下载]**. 主题下载为存档（.zip文件）。
+1. 选择主题并点按 **[!UICONTROL 下载]**. 主题将下载为存档（.zip文件）。
 
 ### 上传主题 {#uploading-a-theme}
 
@@ -162,25 +162,25 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 ## 导出工作流应用程序 {#export-a-workflow-application}
 
-您可以使用AEM包管理器导出工作流应用程序。 该过程如下所示：
+您可以使用AEM包管理器导出工作流应用程序。 此过程如下所示：
 
 1. 打开 [!DNL AEM Forms] 包管理器。
 1. 单击 **[!UICONTROL 创建包]**. 此 **[!UICONTROL 新建包]** 对话框。
 1. 指定包的名称、版本和组。 单击&#x200B;**[!UICONTROL 确定]**。
-1. 单击 **[!UICONTROL 编辑]** 然后打开 **[!UICONTROL 筛选器]** 选项卡。 单击 **[!UICONTROL 添加筛选器]**. 指定工作流应用程序的路径。 例如，/etc/fd/dashboard/startpoints/homemortgage。 单击 **[!UICONTROL 添加规则]**.
+1. 单击 **[!UICONTROL 编辑]** 然后打开 **[!UICONTROL 过滤器]** 选项卡。 单击 **[!UICONTROL 添加筛选器]**. 指定工作流应用程序的路径。 例如，/etc/fd/dashboard/startpoints/homemortgage。 单击 **[!UICONTROL 添加规则]**.
 
-1. 打开&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。选择 **[!UICONTROL Merge]** 或 **[!UICONTROL 覆盖]** 在ACL处理字段中。 单击“**[!UICONTROL 保存]**”。
+1. 打开&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。选择 **[!UICONTROL 合并]** 或 **[!UICONTROL 覆盖]** 在ACL处理字段中。 单击&#x200B;**[!UICONTROL 保存]**。
 1. 单击 **[!UICONTROL 生成]** 以创建包。
 
-   生成包后，您可以下载包并将其导入到其他服务器。 工作流应用程序显示在上传包的服务器上。
+   生成包后，您可以下载包并将其导入其他服务器。 工作流应用程序会出现在上传包的服务器上。
 
    >[!NOTE]
    >
-   >为了使工作流应用程序正常工作，还要将相应的自适应表单和工作流模型与工作应用程序一起导出。
+   >为使工作流应用程序正常工作，还应将相应的自适应表单和工作流模型导出到工作应用程序。
 
 ## 文件夹和组织资源 {#folders-and-organizing-assets}
 
-[!DNL AEM Forms] 用户界面使用文件夹排列资产。 这些文件夹用于排列在中创建的资产 [!DNL AEM Forms] 用户界面。 您可以重命名、创建子文件夹并将资产和文档存储在这些文件夹中。 通过在文件夹中组织文档和资产，您可以将文件分组在一起以便轻松管理。 您可以选择文件夹，然后选择下载或删除该文件夹。
+[!DNL AEM Forms] 用户界面使用文件夹排列资源。 这些文件夹用于排列在中创建的资源 [!DNL AEM Forms] 用户界面。 您可以重命名、创建子文件夹并将资源和文档存储在这些文件夹中。 在文件夹中组织文档和资产，可让您将文件分组在一起以便于管理。 您可以选择文件夹，然后选择下载或删除该文件夹。
 
 要创建文件夹，请完成以下步骤：
 
@@ -196,13 +196,13 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    >[!NOTE]
    >
-   >默认情况下，“名称”字段的值会自动从标题中填充。 名称只能包含字母数字字符，或连字符(-)和下划线(_)特殊字符。 在标题中输入的任何其他特殊字符都会自动替换为连字符，并提示您确认新名称。 您可以选择继续使用建议的名称或进一步编辑它。
+   >默认情况下，“名称”字段的值会自动从标题中填充。 名称只能包含字母数字字符，或连字符(-)和下划线(_)特殊字符。 在标题中输入的任何其他特殊字符都会自动替换为连字符，并提示您确认新名称。 您可以选择使用建议的名称继续操作或进一步编辑它。
 
-1. 带有您定义标题的新文件夹将显示在资产列表中的当前位置。
+1. 具有您定义的标题的新文件夹将显示在资产列表中的当前位置。
 
-   如果存在具有指定名称的文件夹，提交会失败并出现错误。 您可以将鼠标悬停在该错误上来查看错误消息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 图标显示在名称字段旁。
+   如果存在具有指定名称的文件夹，则提交会失败并出现错误。 您可以通过将鼠标悬停在错误上来查看错误消息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 显示在“名称”字段旁边的图标。
 
-   您可以点按新创建的文件夹以进入该文件夹，并在该文件夹中创建资产或文件夹。 此外，您还可以选择一个文件夹，然后选择将其排队等待下载、删除或编辑其名称。
+   您可以点按新创建的文件夹以进入该文件夹，并在该文件夹中创建资产或文件夹。 此外，您还可以选择一个文件夹，并选择将该文件夹排入下载队列、删除或编辑其名称。
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 
@@ -221,9 +221,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-[!DNL AEM Forms] UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+[!DNL AEM Forms] UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, [!DNL AEM Forms] displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -239,7 +239,7 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).
 

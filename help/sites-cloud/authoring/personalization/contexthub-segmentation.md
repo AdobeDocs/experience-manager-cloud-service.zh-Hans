@@ -2,10 +2,10 @@
 title: 使用 ContextHub 配置分段
 description: 了解如何使用 ContextHub 配置分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 之后，这些区段可用于为访客提供具体的目标内容。此处定义的[活动](activities.md)可以包含在任何页面上，并定义专用内容适用于的访客区段。
 
-AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的结果。
+AEM可让您轻松个性化用户体验。 它还允许您验证区段定义的结果。
 
 ## 访问区段 {#accessing-segments}
 
@@ -29,8 +29,8 @@ AEM 可让您轻松个性化用户体验。它还允许您验证区段定义的�
 
 ## 区段编辑器 {#segment-editor}
 
-<!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-**区段编辑器**&#x200B;可让您轻松修改区段。要编辑区段，请在区段列表中选择一个区段，然后单击&#x200B;**编辑**&#x200B;按钮。
+<!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
+此 **区段编辑器** 可让您轻松修改区段。 要编辑区段，请在区段列表中选择一个区段，然后单击&#x200B;**编辑**&#x200B;按钮。
 
 ![区段编辑器](../assets/contexthub-segment-editor.png)
 

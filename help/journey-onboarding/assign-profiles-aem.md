@@ -4,10 +4,10 @@ description: 配置云资源后，您需要使用 AEM 产品配置文件授予�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->为了加入 AEM，我们建议您首先添加将参与即时任务的用户，例如管理员、开发人员和内容作者。 您可以在不添加所有用户的情况下继续其余的载入。 完成载入后，您可以稍后扩展到更多的用户。
+>为了载入AEM，Adobe建议您首先添加将参与即时任务的用户，例如管理员、开发人员和内容作者。 您可以在不添加所有用户的情况下继续其余的载入。 完成载入后，您可以稍后扩展到更多的用户。
 
 ## 查看 AEM 产品配置文件 {#view-profiles}
 

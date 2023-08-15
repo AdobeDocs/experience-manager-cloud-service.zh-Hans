@@ -1,19 +1,19 @@
 ---
 title: 利用 Angular 在 AEM 中开始使用 SPA
-description: 本文介绍了一个SPA应用程序示例，说明它是如何组合在一起的，并允许您使用Angular框架快速启动和运行自己的SPA。
+description: 本文介绍了一个SPA应用程序示例，说明它是如何组合在一起的，并使您能够使用Angular框架快速启动和运行自己的SPA。
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 9%
+source-wordcount: '990'
+ht-degree: 12%
 
 ---
 
 # 利用 Angular 在 AEM 中开始使用 SPA {#getting-started-with-spas-in-aem-using-angular}
 
-单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用SPA框架构建站点，而作者希望能够在AEM中无缝编辑使用SPA框架构建的站点的内容。
+单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用SPA框架构建站点，而创作者希望能够在AEM中顺畅地为使用SPA框架构建的站点编辑内容。
 
-SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA。 本文介绍了在Angular框架上实现的简化SPA应用程序，并说明它是如何进行组合，使您能够快速启动和运行自己的SPA。
+SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA。 本文在Angular框架上提供了一个简化的SPA应用程序，并说明它是如何进行组合，使您能够快速启动和运行自己的SPA。
 
 >[!NOTE]
 >
@@ -31,19 +31,19 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 >[!NOTE]
 >
->为了能够在SPA中创作内容，内容必须存储在AEM中，并由内容模型公开。
+>为了能够在SPA中创作内容，内容必须存储在AEM中并由内容模型公开。
 >
->在AEM之外开发的SPA如果不遵守内容模型合同，则无法创作。
+>如果不遵守内容模型合同，则在AEM之外开发的SPA将无法创作。
 
-本文档将逐步说明简化SPA的结构，并阐述其工作方式，以便您将此理解应用于自己的SPA。
+本文档将逐步介绍简化SPA的结构，并说明其工作方式，以便您将此理解应用于自己的SPA。
 
-## 依赖关系、配置和构建 {#dependencies-configuration-and-building}
+## 依赖项、配置和构建 {#dependencies-configuration-and-building}
 
-除了预期的Angular依赖项之外，示例SPA还可以使用其他库来更有效地创建SPA。
+除了预期的Angular依赖关系之外，示例SPA还可以使用其他库来更有效地创建SPA。
 
 ### 依赖项 {#dependencies}
 
-此 `package.json` file定义整个SPA包的要求。 此处列出了所需的最低AEM依赖项。
+此 `package.json` 文件定义整个SPA包的要求。 此处列出了最低必需的AEM依赖项。
 
 ```
 "dependencies": {
@@ -90,7 +90,7 @@ module.exports = {
 
 ### 正在生成 {#building}
 
-实际构建应用程序使用 [网络包](https://webpack.js.org/) 用于翻译，以及用于自动创建客户端库的aem-clientlib-generator。 因此， build命令将类似于：
+实际构建应用程序使用 [网络包](https://webpack.js.org/) 用于转换，并且使用aem-clientlib-generator自动创建客户端库。 因此，构建命令将类似于：
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -98,19 +98,19 @@ module.exports = {
 
 ### AEM 项目原型 {#aem-project-archetype}
 
-任何AEM项目都应使用 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，支持使用React或Angular的SPA项目，并使用SPA SDK。
+任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ## 应用程序结构 {#application-structure}
 
-如前所述，包括依赖项和构建应用程序将为您留下一个有效的SPA包，您可以将该包上传到您的AEM实例。
+如前所述，包括依赖项和构建应用程序将为您提供一个有效的SPA包，您可以将该包上传到您的AEM实例。
 
-本文档的下一部分将引导您了解AEM中SPA的结构方式、驱动应用程序的重要文件以及它们如何协同工作。
+本文档的下一部分将介绍如何构建AEM中的SPA、驱动应用程序的重要文件以及它们如何协同工作。
 
-使用简化的图像组件作为示例，但应用程序的所有组件都基于相同的概念。
+以简化的图像组件为例，但应用程序的所有组件都基于相同的概念。
 
 ### app.module.ts {#app-module-ts}
 
-进入SPA的入口点是 `app.module.ts` 此处显示的文件进行了简化，以重点关注重要内容。
+SPA的入口点为 `app.module.ts` 此处显示的文件被简化为重点介绍重要内容。
 
 ```
 // app.module.ts
@@ -137,11 +137,11 @@ export class AppModule {}
 
 #### 静态实例化 {#static-instantiation}
 
-使用组件模板静态实例化组件时，必须将值从模型传递到组件的属性。 模型中的值作为属性传递，以便以后作为组件属性使用。
+使用组件模板静态实例化组件时，必须将值从模型传递到组件的属性。 模型中的值作为属性进行传递，以便以后作为组件属性使用。
 
 ### app.component.ts {#app-component-ts}
 
-一次 `app.module.ts` bootstraps `AppComponent`之后，它可以初始化应用程序，此处以简化版的形式显示，以重点关注重要内容。
+一次 `app.module.ts` bootstraps `AppComponent`，然后它可以初始化应用程序，此处以简化版的形式显示了应用程序，以便重点关注重要内容。
 
 ```
 // app.component.ts
@@ -175,7 +175,7 @@ export class AppComponent {
 
 ### main-content.component.ts {#main-content-component-ts}
 
-通过处理页面， `app.component.ts` 调用 `main-content.component.ts` 此处以简化版列出。
+通过处理页面， `app.component.ts` 调用 `main-content.component.ts` 此处以简化版本列出。
 
 ```
 import { Component } from '@angular/core';
@@ -206,11 +206,11 @@ export class MainContentComponent {
 }
 ```
 
-此 `MainComponent` 摄取页面模型的JSON表示形式，并处理内容以环绕/装饰页面的每个元素。 有关详情，请参阅 `Page` 可以在文档中找到 [SPA Blueprint](blueprint.md).
+此 `MainComponent` 摄取页面模型的JSON表示形式并处理内容以包装/装饰页面的每个元素。 有关更多详情，请参阅 `Page` 可以在文档中找到 [SPA Blueprint](blueprint.md).
 
 ### image.component.ts {#image-component-ts}
 
-此 `Page` 由组件组成。 引入JSON后， `Page` 可以处理这些组件，例如 `image.component.ts` 如下所示。
+此 `Page` 由组件组成。 摄取JSON后， `Page` 可以处理这些组件，例如 `image.component.ts` 如下所示。
 
 ```
 /// image.component.ts
@@ -255,7 +255,7 @@ AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在修改内�
 
 ### image.component.html {#image-component-html}
 
-最后，可以在中渲染图像 `image.component.html`.
+最后，可以在中呈现图像 `image.component.html`.
 
 ```
 // image.component.html
@@ -264,7 +264,7 @@ AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在修改内�
 
 ## 在SPA组件之间共享信息 {#sharing-information-between-spa-components}
 
-单页应用程序中的组件经常需要共享信息。 有几种推荐的方法可以实现这一点，按复杂性递增的顺序列示如下。
+单页应用程序中的组件经常需要共享信息。 有几种推荐的方法可以做到这一点，按复杂性递增的顺序如下所示。
 
 * **选项1：** 例如，通过使用util类作为纯面向对象的解决方案，将逻辑集中并广播到必要的组件。
 * **选项2：** 使用状态库（如NgRx）共享组件状态。
@@ -276,4 +276,4 @@ AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在修改内�
 * [SPA 编辑器概述](editor-overview.md)更深入地介绍了 AEM 和 SPA 之间的通信模型。
 * [WKND SPA项目](wknd-tutorial.md) 是一个分步教程，用于在AEM中实施简单的SPA项目。
 * [SPA的动态模型到组件映射](model-to-component-mapping.md) 说明动态模型到组件的映射以及它在AEM中的SPA中的工作方式。
-* [SPA Blueprint](blueprint.md) 深入了解SPA SDK for AEM的工作原理，以防您希望在AEM中为React或Angular以外的框架实施SPA，或者只是希望更深入地了解。
+* [SPA Blueprint](blueprint.md) 如果您希望在AEM中为React或Angular以外的框架实施SPA，或者只是希望更深入地了解SPA SDK for AEM，您可以深入了解SDK的工作原理。

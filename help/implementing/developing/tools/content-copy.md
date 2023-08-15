@@ -2,9 +2,9 @@
 title: 内容复制工具
 description: 内容复制工具使用户能够按需将可变内容从AEMas a Cloud Service上的生产环境复制到较低环境，以进行测试。
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1306'
 ht-degree: 38%
 
 ---

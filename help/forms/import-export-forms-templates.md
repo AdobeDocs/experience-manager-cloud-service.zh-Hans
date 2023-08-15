@@ -1,13 +1,13 @@
 ---
 title: 导入、导出和组织自适应Forms、PDF forms和其他资源
 seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
-description: 是否希望将自适应Forms和资产迁移到AEM实例，以及从实例迁移资产？ 在此处了解如何从导入和导出自适应Forms、PDF forms、主题和其他支持资源 [!DNL AEM Forms] 实例。
+description: 是否希望将自适应Forms和资源迁移到AEM实例或从中迁移它们？ 在此处了解如何从导入和导出自适应Forms、PDF forms、主题和其他支持资源 [!DNL AEM Forms] 实例。
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1210'
 ht-degree: 1%
 
 ---
@@ -20,28 +20,28 @@ ht-degree: 1%
 
 ## 下载自适应Forms、PDF forms或相关资源 {#download-forms-amp-documents-assets}
 
-要下载表单或相关资产，请执行以下操作：
+要下载表单或相关资源，请执行以下操作：
 
 1. 登录 [!DNL AEM Forms] 实例。
 1. 点按 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标> **[!UICONTROL 导航]** ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
 1. 选择资产并点按 **[!UICONTROL 下载]** 图标。
 1. 在下载资产中，选择以下选项之一，然后点按 **[!UICONTROL 下载]**.
 
-   * **下载为CRX包：** 使用选项从以下位置下载并移动所有选定的资源和相关依赖项： [!DNL AEM Forms] 实例到另一个实例。 它将所有资源和文件夹下载为CRX包，包括在AEM中创作的表单(自适应Forms和自适应表单片段)、表单集、表单数据模型、表单模板、PDF文档和引用的资源（XSD和图像）。
-将资源下载为资源包的优势在于，它还可以下载选定资源引用的资源。 例如，如果您有一个自适应表单，该表单使用表单模板、XSD和图像。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也都已下载。
+   * **下载为CRX包：** 使用选项从下载和移动所有选定的资源和相关依赖项 [!DNL AEM Forms] 实例到另一个实例。 它以CRX包形式下载所有资源和文件夹，包括在AEM中创作的表单(自适应Forms和自适应表单片段)、表单集、表单数据模型、表单模板、PDF文档以及引用的资源（XSD和图像）。
+将资源下载为资源包的优势在于它还可以下载选定资源引用的资源。 例如，如果您有一个使用表单模板、XSD和图像的自适应表单。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也会下载。
 
-   * **将资产下载为二进制文件：** 使用选项可仅下载表单模板(XDP)、PDF forms(PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它将具有二进制文件的资源(如图像、PDF和其他支持的格式)下载为.zip文件。
+   * **将资产下载为二进制文件：** 使用选项可仅下载表单模板(XDP)、PDF forms(PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它会将具有二进制文件的资源(例如图像、PDF和其他支持的格式)下载为.zip文件。
 您无法使用以下内容下载自适应Forms、自适应表单片段、主题和表单集 **[!UICONTROL 将资产下载为二进制文件]** 选项。 要下载这些资源，您应使用 **[!UICONTROL 下载为CRX包]** 选项。
 
    选定的资产将下载为存档（.zip文件）。
 
    >[!NOTE]
    >
-   >AEM包和二进制文件都将作为存档（.zip文件）下载。 资产的模板不会随资产一起下载。 您需要单独导出资源模板。
+   >AEM包和二进制文件都将作为存档（.zip文件）下载。 资产的模板不会与资产一起下载。 您需要单独导出资产模板。
 
 ## 上传自适应Forms、PDF forms或相关资源 {#upload-forms-amp-documents-assets}
 
-您可以单独上传支持的资源类型，也可以将其上传为ZIP存档。 对于ZIP文件，将显示所有受支持资源的相对路径。 ZIP文件中不受支持的资源将被忽略并且不会列出。 但是，如果ZIP存档仅包含不支持的资产，则会显示错误消息，而不是弹出对话框。
+您可以单独上传支持的资源类型，也可以以ZIP存档的形式上传。 对于ZIP文件，将显示所有受支持资源的相对路径。 ZIP文件中不受支持的资源将被忽略并且不会列出。 但是，如果ZIP存档仅包含不支持的资源，则会显示错误消息，而不是弹出对话框。
 要上传表单或相关资源，请执行以下操作：
 
 1. 登录 [!DNL AEM Forms] 实例。
@@ -55,20 +55,19 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   > * 当名称与不同的资源类型冲突时，上传包不会替换现有文件夹层次结构。 例如，如果一台服务器上的位置/content/dam/formsanddocuments有一个名为“Training”的自适应表单。 您可以下载自适应表单并将表单上传到其他服务器上。 第二台服务器还在同一位置/content/dam/formsanddocuments有一个名为“Training”的文件夹。 上传失败。
-   > * 只有以下成员之一： `form-power-user` 组可以上传XDP文件。
-
+   > * 当名称与不同的资源类型冲突时，上传包不会替换现有的文件夹层次结构。 例如，如果一台服务器上位于/content/dam/formsanddocuments的位置有一个名为“Training”的自适应表单。 您下载自适应表单并将表单上传到其他服务器。 第二台服务器还在同一位置/content/dam/formsanddocuments具有一个名为“Training”的文件夹。 上传失败。
+   > * 仅属于 `form-power-user` 组可以上传XDP文件。
 
 
 ## 下载主题 {#downloading-a-theme}
 
-您可以在中导出主题 [!DNL AEM Forms] 在其他项目或实例中可以使用的插件。 AEM允许您将主题下载为zip文件，并可在实例上上传这些主题。
+您可以在中导出主题 [!DNL AEM Forms] 您可在其他项目或实例中使用的任何其他插件。 AEM允许您将主题下载为zip文件，并可在实例上上传这些主题。
 
 要下载主题，请执行以下操作：
 
 1. 登录 [!DNL AEM Forms] 实例。
 1. 点按 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标> **[!UICONTROL 导航]** ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL 主题]**.
-1. 选择主题并点按 **[!UICONTROL 下载]**. 主题下载为存档（.zip文件）。
+1. 选择主题并点按 **[!UICONTROL 下载]**. 主题将下载为存档（.zip文件）。
 
 ## 上传主题 {#uploading-a-theme}
 
@@ -150,25 +149,25 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 ## 导出工作流应用程序 {#export-a-workflow-application}
 
-您可以使用包管理器导出工作流应用程序。 该过程如下所示：
+您可以使用包管理器导出工作流应用程序。 此过程如下所示：
 
 1. 打开 [!DNL AEM Forms] 包管理器。 包管理器的URL为 `https://[server]:[port]/crx/packmgr`.
 1. 单击 **[!UICONTROL 创建包]**. 此 **[!UICONTROL 新建包]** 对话框。
 1. 指定包的名称、版本和组。 单击&#x200B;**[!UICONTROL 确定]**。
-1. 单击 **[!UICONTROL 编辑]** 然后打开 **[!UICONTROL 筛选器]** 选项卡。 单击 **[!UICONTROL 添加筛选器]**. 指定工作流应用程序的路径。 例如，/etc/fd/dashboard/startpoints/homemortgage。 单击 **[!UICONTROL 添加规则]**.
+1. 单击 **[!UICONTROL 编辑]** 然后打开 **[!UICONTROL 过滤器]** 选项卡。 单击 **[!UICONTROL 添加筛选器]**. 指定工作流应用程序的路径。 例如，/etc/fd/dashboard/startpoints/homemortgage。 单击 **[!UICONTROL 添加规则]**.
 
-1. 打开&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。选择 **[!UICONTROL Merge]** 或 **[!UICONTROL 覆盖]** 在ACL处理字段中。 单击“**[!UICONTROL 保存]**”。
+1. 打开&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。选择 **[!UICONTROL 合并]** 或 **[!UICONTROL 覆盖]** 在ACL处理字段中。 单击&#x200B;**[!UICONTROL 保存]**。
 1. 单击 **[!UICONTROL 生成]** 以创建包。
 
-   生成包后，您可以下载包并将其导入到其他服务器。 工作流应用程序显示在上传包的服务器上。
+   生成包后，您可以下载包并将其导入其他服务器。 工作流应用程序会出现在上传包的服务器上。
 
    >[!NOTE]
    >
-   >为了使工作流应用程序正常工作，还要将相应的自适应表单和工作流模型与工作应用程序一起导出。
+   >为使工作流应用程序正常工作，还应将相应的自适应表单和工作流模型导出到工作应用程序。
 
-## 使用文件夹整理Adaptive Forms、PDF forms和相关资源  {#folders-and-organizing-assets}
+## 使用文件夹整理自适应Forms、PDF forms和相关资源  {#folders-and-organizing-assets}
 
-您可以使用文件夹来排列和组织资源。 通过在文件夹中组织文档和资产，可将文件分组以便于管理。 您可以选择文件夹，然后选择下载或删除该文件夹。 要创建文件夹，请完成以下步骤：
+您可以使用文件夹来排列和组织资源。 在文件夹中组织文档和资产可让您将文件分组以便于管理。 您可以选择文件夹，然后选择下载或删除该文件夹。 要创建文件夹，请完成以下步骤：
 
 ### 创建文件夹 {#create-a-folder}
 
@@ -182,13 +181,13 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    >[!NOTE]
    >
-   >默认情况下，“名称”字段的值会自动从标题中填充。 名称只能包含字母数字字符，或连字符(-)和下划线(_)特殊字符。 在标题中输入的任何其他特殊字符都会自动替换为连字符，并提示您确认新名称。 您可以选择继续使用建议的名称或进一步编辑它。
+   >默认情况下，名称字段的值会自动从标题中填充。 名称只能包含字母数字字符，或连字符(-)和下划线(_)特殊字符。 在标题中输入的任何其他特殊字符都会自动替换为连字符，并提示您确认新名称。 您可以选择继续使用建议的名称或对其进行编辑。
 
-1. 带有您定义标题的新文件夹将显示在资产列表中的当前位置。
+1. 具有您定义的标题的新文件夹将显示在资产列表中的当前位置。
 
-   如果存在具有指定名称的文件夹，提交会失败并出现错误。 您可以将鼠标悬停在该错误上来查看错误消息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 图标显示在名称字段旁。
+   如果存在具有指定名称的文件夹，则提交会失败并出现错误。 您可以通过将鼠标悬停在错误上来查看错误消息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 显示在“名称”字段旁边的图标。
 
-   您可以点按新创建的文件夹以进入该文件夹，并在该文件夹中创建资产或文件夹。 此外，您还可以选择一个文件夹，然后选择将其排队等待下载、删除或编辑其名称。
+   您可以点按新创建的文件夹以进入该文件夹，并在该文件夹中创建资产或文件夹。 此外，您还可以选择一个文件夹，并选择将该文件夹排入下载队列、删除或编辑其名称。
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
@@ -208,7 +207,7 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -224,6 +223,6 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->

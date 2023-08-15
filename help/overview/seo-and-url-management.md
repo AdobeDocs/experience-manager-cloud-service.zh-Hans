@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3706'
-ht-degree: 100%
+source-wordcount: '3705'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ Resource myPage = req.getResource();
 
 本地化页面名称的挑战在于，AEM 平台上的许多可用本地化工具都依赖于让页面名称在各个不同区域环境中匹配，以保持内容同步。
 
-`sling:alias` 属性让您能够一举两得。可将 `sling:alias` 作为属性添加到任何资源，以便使用该资源的别名。在上一个示例中，您将拥有：
+此 `sling:alias` 属性让您能够一举两得。 可将 `sling:alias` 作为属性添加到任何资源，以便使用该资源的别名。在上一个示例中，您将拥有：
 
 * JCR 中的页面指向：
   `…/es/home`

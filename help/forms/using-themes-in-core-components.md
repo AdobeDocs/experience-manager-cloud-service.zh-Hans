@@ -4,10 +4,10 @@ description: 您可以使用主题来通过核心组件使自适应表单风格�
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: 创建新主题、自定义主题、上传新主题、在表单中使用主题、使用前端管道自定义主题
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2711'
-ht-degree: 4%
+source-wordcount: '2709'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Forms的主题：
 
 * [画布主题](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND主题](https://github.com/adobe/aem-forms-theme-wknd)
+* [WKND 主题](https://github.com/adobe/aem-forms-theme-wknd)
 * [画架主题](https://github.com/adobe/aem-forms-theme-easel)
 
 ## 了解主题的结构
@@ -47,7 +47,7 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Forms的主题。
 
 * [画布主题](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND主题](https://github.com/adobe/aem-forms-theme-wknd)
+* [WKND 主题](https://github.com/adobe/aem-forms-theme-wknd)
 * [画架主题](https://github.com/adobe/aem-forms-theme-easel)
 
 您可以 [自定义这些主题中的任意主题以创建新主题](#customize-a-theme-core-components).
@@ -61,7 +61,7 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 ### 前提条件 {#prerequisites-to-customize}
 
 * 熟悉 [在Cloud Manager中设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) 并且具备有关如何设置管道的基本知识可帮助您有效地管理和部署主题自定义项。
-* 了解如何 [使用参与者角色配置用户](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). 了解如何使用参与者角色配置用户，可以授予进行主题自定义所需的权限。
+* 了解如何 [使用参与者角色配置用户](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). 通过了解如何使用参与者角色配置用户，您可以授予进行主题自定义所需的权限。
 * 安装最新版本的 [Apache Maven。](https://maven.apache.org/download.cgi) Apache Maven是一种常用于Java™项目的构建自动化工具。 安装最新版本可确保您具有主题自定义所需的依赖项。
 * 安装纯文本编辑器。 例如，Microsoft® Visual Studio Code。 使用Microsoft等纯文本编辑器®Visual Studio Code为编辑和修改主题文件提供了用户友好的环境。
 
@@ -96,7 +96,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 要克隆基于核心组件的自适应Forms的主题，请选择以下主题之一：
 
 * [画布主题](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND主题](https://github.com/adobe/aem-forms-theme-wknd)
+* [WKND 主题](https://github.com/adobe/aem-forms-theme-wknd)
 * [画架主题](https://github.com/adobe/aem-forms-theme-easel)
 
 要克隆主题，请执行以下步骤：

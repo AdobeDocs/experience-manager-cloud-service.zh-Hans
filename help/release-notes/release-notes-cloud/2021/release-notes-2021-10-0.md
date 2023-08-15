@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.10.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.10.0 版的发行说明。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 71%
+source-wordcount: '1437'
+ht-degree: 73%
 
 ---
 
@@ -28,25 +28,25 @@ ht-degree: 71%
 
 ## 发布视频 {#release-video}
 
-请查看 [2021年10月发行版概述](https://video.tv.adobe.com/v/338253) 视频，以了解新增功能的摘要。
+请查看 [2021年10月发行版概述](https://video.tv.adobe.com/v/338253) 视频以了解新增功能的摘要。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### 中的新增功能 [!DNL Sites] {#sites-features}
 
-* 内容片段模型现在在发布后自动设置为只读状态，以避免在重新发布已编辑的模型后意外中断实时API查询。 在尝试编辑已发布的模型时，系统会提示用户并发出警告。 接受警告后可进行编辑。
+* 内容片段模型现在在发布后自动设置为只读状态，以避免在重新发布已编辑的模型后无意中中断实时API查询。 在尝试编辑已发布的模型时，系统会提示用户并显示警告。 接受警告时可以进行编辑。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* [!DNL Experience Manager] 现在支持使用内置连接器从支持的音频和视频资源自动生成文本转录，用于 [!DNL Azure Media Services]. 此 [支持的文件类型](/help/assets/file-format-support.md#audio-video-transcription-formats) 自动转录，文本以WebVTT格式存储。 WebVTT字幕用于更有效的搜索、字幕或翻译。 此外，该功能还提高了资源的可访问性、可发现性和本地化程度。
+* [!DNL Experience Manager] 现在支持使用内置连接器从支持的音频和视频资源自动生成文本转录，以 [!DNL Azure Media Services]. 此 [支持的文件类型](/help/assets/file-format-support.md#audio-video-transcription-formats) 将自动转录，文本以WebVTT格式存储。 WebVTT字幕用于更有效的搜索、字幕或翻译。 此外，该功能还提高了资源的可访问性、可发现性和本地化程度。
 
 ### 的新增功能 [!DNL Assets] 预发行渠道 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 图像智能裁切和色板功能现在由最新的 Sensei 服务提供支持，可生成改进的裁切和色板。还推出了一项增强功能，可生成宽高比相同但分辨率不同的各种裁切内容。此外，如果图像配置文件中的宽度和高度没有变化，则在重新处理时将保留任何手动编辑。
+* [!DNL Dynamic Media] 图像智能裁切和色板功能现在由最新的 Sensei 服务提供支持，可生成改进的裁切和色板。还推出了一项增强功能，可生成宽高比相同但分辨率不同的各种裁切内容。此外，如果图像配置文件中的宽度和高度没有变化，则在重新处理时将保留任何手动编辑内容。
 
-* 智能标记使用资产微服务自动应用于资产，而不是智能内容服务。 更新底层模型以改善标记结果并减少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
+* 智能标记是使用资产微服务而不是智能内容服务自动应用于资产的。 更新底层模型以改善标记结果并减少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
 <!-- Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
@@ -66,7 +66,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] 的 Beta 版功能 {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hans) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务允许您以同步模式和批处理模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hans) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务允许您以同步和批处理模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
 
    * 使用 XML 数据填充模板文件（PDF 和 XDP）来生成文档。
    * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
@@ -77,15 +77,15 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### 新增功能 {#what-is-new-cif}
 
-* CIF加载项支持具有新GraphQL API和架构的最新Commerce v2.4.3
+* CIF加载项支持最新的Commerce v2.4.3以及新的GraphQL API和架构
 
 * 作者可以使用富文本编辑器(RTE)在文本字段中添加指向产品和目录页面的链接。 RTE工具栏中添加了一个CIF图标，该图标将打开选取器，以便在不离开上下文的情况下快速搜索和选择产品或类别。
 
-* 现有的弹出购物车和结帐页面已替换为专用的AEM购物车和结帐页面。 这些页面上的组件是使用Adobe Commerce的可扩展Peregrine组件构建的
+* 现有的弹出购物车和结帐已替换为专用的AEM购物车和结帐页面。 这些页面上的组件是使用Adobe Commerce的可扩展Peregrine组件构建的
 
 * 商家可以使用Commerce后端在导航中隐藏某些产品目录类别。 CIF导航核心组件遵循商务后端配置“包含在菜单中”以在导航中显示/隐藏类别
 
-* 如果找不到类别或产品页面，AEM Storefront Venia会返回HTTP 404错误
+* 如果找不到类别或产品页面，AEM Storefront Venia返回HTTP 404错误
 
 ## Cloud Manager {#cloud-manager}
 
@@ -98,10 +98,10 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 的发布日期是 2021 �
 
 ### 新增功能 {#what-is-new-cm-nov}
 
-* 用户现在可以使用新的前端管道以加速方式专门部署前端代码。 有关更多信息，请参阅 [Cloud Manager 前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)。
+* 用户现在可以使用新的前端管道专门加速部署前端代码。有关更多信息，请参阅 [Cloud Manager 前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)。
 
   >[!IMPORTANT]
-  >您必须使用AEM版本 `2021.10.5933.20211012T154732Z` 使用新的前端管道。
+  >您必须使用 AEM 版本 `2021.10.5933.20211012T154732Z` 才能使用新的前端管道。
 
 * 通过以更有效的方式执行代码分析而无需构建整个 AEM 映像，大大缩短了代码质量管道持续时间。此更改将在版本发布后的几周内逐步推出。
 

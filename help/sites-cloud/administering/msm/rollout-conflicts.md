@@ -4,10 +4,10 @@ description: 了解如何管理和解决多站点管理器转出冲突。
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '920'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 冲突处理 {#conflict-handling}
 
-当 Blueprint 和 Live Copy 分支中的页面存在冲突时，MSM 允许您定义应如何（甚至是否）处理冲突。
+当Blueprint和Live Copy分支中的页面存在冲突时，MSM允许您定义应如何（甚至是否）处理冲突。
 
 为了确保转出不被阻止，可能的定义可以包括：
 
@@ -69,7 +69,7 @@ AEM 提供：
 * [默认冲突处理程序](#default-conflict-handler)：
    * `ResourceNameRolloutConflictHandler`
 * 实施[自定义处理程序](#customized-handlers)的可能性
-* 服务排名机制，可让您设置每个单独处理程序的优先级
+* 服务排名机制，允许您设置每个单独处理程序的优先级
    * 使用排名最高的服务。
 
 ### 默认冲突处理程序 {#default-conflict-handler}

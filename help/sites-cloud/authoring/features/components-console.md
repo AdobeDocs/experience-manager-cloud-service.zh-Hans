@@ -2,10 +2,10 @@
 title: 组件控制台
 description: 组件控制台允许您浏览针对实例定义的所有组件
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 81%
+source-wordcount: '273'
+ht-degree: 68%
 
 ---
 
@@ -33,34 +33,34 @@ ht-degree: 81%
 
 * **属性**
 
-   ![组件控制台属性](/help/sites-cloud/authoring/assets/components-console-properties.png)
+  ![组件控制台属性](/help/sites-cloud/authoring/assets/components-console-properties.png)
 
-   在“属性”选项卡上，您可以：
+  在“属性”选项卡上，您可以：
 
    * 查看组件的常规属性。
       * 查看组件的图标或缩写定义的方式。<!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * 单击图标的来源将转到该组件。
+      * 单击图标的来源将会转到该组件。
    * 查看 **资源类型** 和 **资源超级类型** （如果已定义）。
       * 单击“资源超级类型”将转到该组件。
 
-   >[!NOTE]
-   >
-   >由于 `/apps` 在运行时不可编辑，因此组件控制台为只读。
+  >[!NOTE]
+  >
+  >由于 `/apps` 在运行时不可编辑，因此组件控制台为只读。
 
 * **策略**
 
-   ![组件控制台策略](/help/sites-cloud/authoring/assets/components-console-policies.png)
+  ![组件控制台策略](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **实时使用情况**
 
-   ![组件的实时使用情况](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+  ![组件的实时使用情况](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
 
-   >[!CAUTION]
-   >
-   >由于为此视图收集的信息的性质所致，它可能需要一段时间才能进行整理/显示。
+  >[!CAUTION]
+  >
+  >由于为此视图收集的信息的性质所致，它可能需要一段时间才能进行整理/显示。
 
 * **文档**
 
-   如果开发人员提供了组件相关文档，则该文档将会显示在&#x200B;**文档**&#x200B;选项卡中。如果没有可用文档，则不会显示&#x200B;**文档**&#x200B;选项卡。<!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+  如果开发人员提供了组件相关文档，则该文档将会显示在&#x200B;**文档**&#x200B;选项卡中。如果没有可用文档，则不会显示&#x200B;**文档**&#x200B;选项卡。<!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-   ![组件文档](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+  ![组件文档](/help/sites-cloud/authoring/assets/components-console-documentation.png)

@@ -2,10 +2,10 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 100%
+source-wordcount: '1568'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 100%
 
    ![查看选择下拉列表](/help/sites-cloud/authoring/assets/views.png)
 
-1. 使用[标头中的痕迹导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)对树进行向上导航，这允许您返回到选定的位置：
+1. 使用向上导航树 [标题中的痕迹导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)，可让您返回选定的位置：
 
    ![痕迹导航下拉列表](/help/sites-cloud/authoring/assets/breadcrumb.png)
 

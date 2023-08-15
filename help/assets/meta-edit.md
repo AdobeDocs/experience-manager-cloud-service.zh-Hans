@@ -1,22 +1,22 @@
 ---
 title: 如何编辑或添加元数据
-description: 了解中的资源元数据 [!DNL Experience Manager Assets] 编辑资源元数据的各种方式。
+description: 了解中的资产元数据 [!DNL Experience Manager Assets] 编辑资源元数据的各种方式。
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 15%
 
 ---
 
 # 如何编辑或添加元数据 {#how-to-edit-or-add-metadata}
 
-元数据是可搜索资产的其他信息。 上传图像时，会自动提取该值。 您可以编辑现有元数据或向现有字段添加新元数据属性（例如，当元数据字段为空时）。
+元数据是可搜索的资产的其他相关信息。 上传图像时，会自动提取该值。 您可以编辑现有元数据或向现有字段添加新元数据属性（例如，当元数据字段为空时）。
 
-因为公司需要可控和可靠的元数据词汇， [!DNL Experience Manager Assets] 不允许临时添加新的元数据属性。 尽管作者无法为资产添加新元数据字段，但开发人员可以。 参见 [为资源创建新的元数据属性](meta-edit.md#editing-metadata-schema).
+因为公司需要可控且可靠的元数据词汇， [!DNL Experience Manager Assets] 不允许临时添加新的元数据属性。 尽管作者无法为资产添加新元数据字段，但开发人员可以。 请参阅 [为资源创建新的元数据属性](meta-edit.md#editing-metadata-schema).
 
 ## 编辑资源的元数据 {#editing-metadata-for-an-asset}
 
@@ -46,13 +46,13 @@ ht-degree: 15%
 
 ## 在Experience Manager中注册自定义命名空间 {#registering-a-custom-namespace-within-aem}
 
-您可以在Experience Manager中添加自己的命名空间。 正如具有预定义命名空间（如cq、jcr和sling）一样，您也可以具有用于存储库元数据和xml处理的命名空间。
+您可以在Experience Manager中添加自己的命名空间。 就像存在预定义的命名空间（如cq、jcr和sling）一样，您也可以具有用于存储库元数据和xml处理的命名空间。
 
 1. 转到节点类型管理页面 *https://&lt;host>：&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. 单击或点按 **[!UICONTROL 命名空间]** 页面顶部的。 命名空间管理页面显示在窗口中。
+1. 单击或点按 **[!UICONTROL 命名空间]** 页面顶部的。 命名空间管理页面将显示在窗口中。
 
-1. 要添加命名空间，请单击或点按 **[!UICONTROL 新]** 在底部。
-1. 以XML命名空间约定指定自定义命名空间（以URI的形式指定ID，并为ID指定关联的前缀），然后单击或点按 **[!UICONTROL 保存]**.
+1. 要添加命名空间，请单击或点按 **[!UICONTROL 新建]** 在底部。
+1. 以XML命名空间惯例指定自定义命名空间（以URI形式指定ID并为ID指定关联的前缀），然后单击或点按 **[!UICONTROL 保存]**.
 
 **另请参阅**
 

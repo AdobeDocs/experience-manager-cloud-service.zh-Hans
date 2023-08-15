@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 100%
+source-wordcount: '1586'
+ht-degree: 97%
 
 ---
 
@@ -120,7 +120,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 ## New Relic One 访问故障排除 {#troubleshooting}
 
-如果您按照[管理 New Relic One 用户](#manage-users)一节中所述被添加为 New Relic One 用户，并且无法找到原始帐户确认电子邮件，请执行以下步骤。
+如果您被添加为New Relic One用户，如一节中所述 [管理New Relic One用户](#manage-users) 并且无法按照以下步骤找到原始帐户确认电子邮件。
 
 1. 导航至 New Relic 的登录页面，网址为 [`login.newrelic.com/login`](https://login.newrelic.com/login)。
 

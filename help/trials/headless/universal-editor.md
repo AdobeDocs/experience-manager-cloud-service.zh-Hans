@@ -3,10 +3,10 @@ title: 在上下文中编辑
 description: 探索如何使用 Universal Editor 在任何实施中就地编辑和在上下文中编辑内容的任何方面。
 hidefromtoc: true
 index: false
-source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 100%
+source-wordcount: '959'
+ht-degree: 96%
 
 ---
 
@@ -74,7 +74,7 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
 ## 像读者一样体验您的内容 {#emulators}
 
-通过 Universal Editor 可在内容的上下文中与内容交互，其中看到的内容如同投放到用户的设备。
+通用编辑器允许您在其上下文中与内容交互，查看内容交付到用户设备的过程。
 
 1. 默认情况下，该编辑器将呈现内容的桌面版本。点按或单击该编辑器右上角的模拟器按钮以更改目标设备。
 
@@ -116,7 +116,7 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
 1. 在页面上进一步向下滚动到&#x200B;**冒险**&#x200B;部分。
 
-1. 在该编辑器左侧的模式边栏中，选择&#x200B;**组件**。这样即可在该编辑器中选择页面组件。
+1. 在该编辑器左侧的模式边栏中，选择&#x200B;**组件**。这允许您在编辑器中选择页面组件。
 
 1. 点按或单击其中一个冒险以将其选定。
 

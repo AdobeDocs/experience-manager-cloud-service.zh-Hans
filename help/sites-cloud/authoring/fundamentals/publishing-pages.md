@@ -1,11 +1,11 @@
 ---
 title: 发布页面
-description: 了解如何使用AEM中的各种机制发布和取消发布页面。
+description: 了解如何使用 AEM 中的各种机制发布和取消发布页面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 99%
+source-wordcount: '1804'
+ht-degree: 98%
 
 ---
 
@@ -46,9 +46,9 @@ ht-degree: 99%
 >
 >如果您没有必要的权限来发布特定页面：
 >
->* 会触发一个工作流，向相应的人员通知您的发布请求。
->* 您的开发团队可能已自定义此工作流。
->* 短暂显示一条简短的消息，通知您工作流已经触发。
+>* 会触发一个工作流程，向相应的人员通知您的发布请求。
+>* 您的开发团队可能已自定义此工作流程。
+>* 短暂显示一条简短的消息，通知您工作流程已经触发。
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->无法发布编辑器中按[别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
+>页面访问者 [别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 在编辑器中无法发布。 编辑器中的发布选项仅适用于通过其实际路径访问的页面。
 
 ### 从控制台中发布 {#publishing-from-the-console}
 
@@ -116,7 +116,7 @@ Sites 控制台中有两个用于发布的选项：
 
 #### 管理发布 {#manage-publication}
 
-与&#x200B;**快速发布**&#x200B;相比，**管理发布**&#x200B;提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
+与&#x200B;**快速发布**&#x200B;相比，**管理发布**&#x200B;提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流程，并且还提供了在以后的日期发布的选项。
 
 要使用“管理发布”发布或取消发布页面，请执行以下操作：
 
@@ -124,7 +124,7 @@ Sites 控制台中有两个用于发布的选项：
 
    ![选择要发布的页面](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. 此时会启动&#x200B;**管理发布**&#x200B;向导。第一个步骤&#x200B;**选项**&#x200B;允许您：
+1. 此时会启动&#x200B;**管理发布**&#x200B;向导。第一步， **选项**，允许您：
 
    * **操作**
 
@@ -134,11 +134,11 @@ Sites 控制台中有两个用于发布的选项：
 
      选择立即还是在以后的日期执行该操作。
 
-     稍后发布会启动一个在指定时间发布选定的一个或多个页面的工作流。相反，稍后取消发布则会启动一个在指定时间取消发布选定的一个或多个页面的工作流。
+     稍后发布会启动一个在指定时间发布选定的一个或多个页面的工作流程。相反，稍后取消发布则会启动一个在指定时间取消发布选定的一个或多个页面的工作流程。
 
      >[!NOTE]
      >
-     >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
+     >如果您要稍后撤消发布/取消发布页面，请转到[“工作流程”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流程。
 
    ![管理发布选项](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -197,19 +197,19 @@ Sites 控制台中有两个用于发布的选项：
 
    返回到 Sites 控制台后，将显示一条确认发布的通知消息。
 
-1. 如果发布的页面与工作流相关联，则这些工作流可能会显示在发布向导的最后一个步骤&#x200B;**工作流**&#x200B;中。
+1. 如果发布的页面与工作流程相关联，则这些工作流程可能会显示在发布向导的最后一个步骤&#x200B;**工作流程**&#x200B;中。
 
    ![管理发布选择页面](/help/sites-cloud/authoring/assets/publishing-manage-publication-workflow.png)
 
    >[!NOTE]
    >
-   >根据用户可能拥有或可能没有的权限显示&#x200B;**工作流**&#x200B;步骤。有关详细信息，请参阅此页面前面部分与发布权限有关的注释以及管理工作流的访问权限和[将工作流应用到页面](/help/sites-cloud/authoring/workflows/applying.md)。
+   >根据用户可能拥有或可能没有的权限显示&#x200B;**工作流程**&#x200B;步骤。有关详细信息，请参阅此页面前面部分与发布权限有关的注释以及管理工作流程的访问权限和[将工作流程应用到页面](/help/sites-cloud/authoring/workflows/applying.md)。
 
-   资源将按触发的工作流分组，并且每组都提供了用于执行以下操作的选项：
+   资源将按触发的工作流程分组，并且每组都提供了用于执行以下操作的选项：
 
-   * 定义工作流的标题。
-   * 保留工作流包，前提是工作流具有多资源支持。
-   * 在选择保留工作流包的选项时，定义工作流包的标题。
+   * 定义工作流程的标题。
+   * 保留工作流程包，前提是工作流程具有多资源支持。
+   * 在选择保留工作流程包的选项时，定义工作流程包的标题。
 
 1. 单击&#x200B;**发布**&#x200B;或&#x200B;**稍后发布**&#x200B;以完成发布。
 
@@ -228,7 +228,7 @@ Sites 控制台中有两个用于发布的选项：
 
 >[!NOTE]
 >
->无法取消发布编辑器中按[别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
+>页面访问者 [别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 无法取消发布编辑器中的。 编辑器中的发布选项仅适用于通过其实际路径访问的页面。
 
 ### 从控制台中取消发布 {#unpublishing-from-the-console}
 
@@ -239,11 +239,11 @@ Sites 控制台中有两个用于发布的选项：
 
    ![取消发布 – 选项](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
-   正如稍后发布会启动一个工作流，以在指定时间发布此版本页面一样，稍后取消激活也会启动一个工作流，以在指定时间取消发布选定的一个或多个页面。
+   正如稍后发布会启动一个工作流程，以在指定时间发布此版本页面一样，稍后取消激活也会启动一个工作流程，以在指定时间取消发布选定的一个或多个页面。
 
    >[!NOTE]
    >
-   >如果您要稍后撤消发布/取消发布页面，请转到[“工作流”](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流。
+   >如果您要稍后撤消发布/取消发布页面，请转到[“工作流程”](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流程。
 
    >[!NOTE]
    >如果您有一个[预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md)环境，您可以在管理发布期间选择&#x200B;**目标**。

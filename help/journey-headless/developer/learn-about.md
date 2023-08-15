@@ -2,10 +2,10 @@
 title: 了解 CMS Headless 开发
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 Headless 技术以及使用它的原因。
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1621'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1620'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Headless 是从内容的呈现中分离内容的示例。或者，从更通用�
 
 ## 技术基础 {#technology}
 
-Headless 方法允许您构建一个技术堆栈，从而轻松快速地适应未来的数字体验需求。
+Headless方法允许您构建技术栈栈，以便轻松快速地适应未来的数字体验需求。
 
 过去的适用于 CMS 的 API 通常基于 REST。代表性状态传输 (REST) 采用无状态方式以文本形式提供资源。这允许使用一组预定义的操作来读取和修改资源。通过确保内容的无状态表示形式，REST 允许各种 Web 服务之间进行良好的互操作。
 

@@ -2,10 +2,10 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 100%
+source-wordcount: '2150'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 管理您的站点 {#managing-your-site}
 
-**Sites**&#x200B;控制台允许您使用标题栏、工具栏、操作图标（适用于所选资源）和痕迹导航来导航和管理您的网站，选择后还可使用辅助边栏（例如时间线和引用）。
+此 **站点** 通过console，您可以使用标题栏、工具栏、操作图标（适用于所选资源）和痕迹导航来导航和管理您的网站，选择后还可使用辅助边栏（例如时间轴和引用）。
 
 例如，列视图：
 
@@ -265,9 +265,9 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 编辑页面时可以使用多种模式来执行不同的操作：
 
 * [编辑](/help/sites-cloud/authoring/fundamentals/editing-content.md) - 编辑页面内容时使用的模式。
-* [布局](/help/sites-cloud/authoring/features/responsive-layout.md) - 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
+* [布局](/help/sites-cloud/authoring/features/responsive-layout.md)  — 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
 * [定位](/help/sites-cloud/authoring/personalization/targeted-content.md) - 通过在所有渠道中进行定位和衡量来提高内容相关性。
-* [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 允许您查看页面在特定时间点的状态。
+* [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  — 允许您查看特定时间点的页面状态。
 * [Live Copy 状态](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) – 允许快速查看 Live Copy 状态以及继承/未继承的组件。
 * [开发人员模式](/help/implementing/developing/tools/developer-mode.md)
 * [预览](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 用于查看在发布环境中显示的页面；或使用内容中的链接进行导航。

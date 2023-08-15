@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1531'
 ht-degree: 41%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 41%
 以下部分概述了当前（最新）版本的 [!DNL Adobe Experience Manager] as a Cloud Service 的一般发行说明。
 
 >[!NOTE]
->从此处，您可以导航到早期版本的发行说明；例如，2020版、2021版等的发行说明。
+>在此处，您可以导航到早期版本的发行说明；例如，2020版、2021版等的发行说明。
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 41%
 ## 发布日期 {#release-date}
 
 的发布日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.4.0是2021年5月6日。
-以下版本(2021.5.0)将于2021年5月27日发布。
+下一个版本(2021.5.0)将于2021年5月27日发布。
 
 ## AEMas a Cloud Service基础{#aem-as-a-cloud-service-foundation}
 
@@ -35,13 +35,13 @@ ht-degree: 41%
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* GraphQL端点 — 现在可以为单个AEM Sites配置启用AEM GraphQL API，并使用新的GraphQL Console UI为这些配置创建自定义GraphQL端点。 该UI还允许管理GraphQL端点。
+* GraphQL端点 — 现在可以为单个AEM Sites配置启用AEM GraphQL API，并使用新的GraphQL Console UI为这些配置创建自定义GraphQL端点。 通过该用户界面，还可管理GraphQL端点。
 
-* 内容模型增强了日期和时间数据类型 — 现在可以配置日期和时间数据类型，以便可创作只有日期、只有时间或有日期和时间的信息。
+* 内容模型增强了日期和时间数据类型 — 现在可配置日期和时间数据类型，以便可创作只有日期、只有时间或有日期和时间的信息。
 
-* 内容模型、增强型标记数据类型 — 现在可以配置标记数据类型，以允许创作单个或多个标记。
+* 内容模型增强了标记数据类型 — 现在可以配置标记数据类型，以便可创作单个或多个标记。
 
-* 内容模型、新选项卡占位符数据类型 — 新选项卡占位符数据类型允许将数据类型分组到在内容片段编辑器中的选项卡下呈现的部分。
+* 内容模型、新选项卡占位符数据类型 — 新的选项卡占位符数据类型允许将数据类型分组到在内容片段编辑器中的选项卡下呈现的部分。
 
 ### [!DNL Sites] 中的错误修复 {#bug-fixes-sites}
 
@@ -53,39 +53,39 @@ ht-degree: 41%
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* [!DNL Experience Manager] 不会将下载原始文件的单个资产存档到下载位置。 此增强可加快下载速度。
+* [!DNL Experience Manager] 不会将下载的单个资源存档在下载原始文件的地方。 此增强可加快下载速度。
 
-* 当通过linkshare选项下载资产时，您现在可以选择下载或不下载演绎版。 以前，会下载所有资源演绎版。
+* 现在，通过链接共享选项下载资产时，您可以选择下载或不下载演绎版。 以前，会下载所有资源演绎版。
 
-* 管理员可以配置 [!DNL Experience Manager] 在批量引入资源后删除资源的来源。 参见 [批量资源摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 管理员可以配置 [!DNL Experience Manager] 在批量引入资源后删除资源的来源。 请参阅 [批量资源摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* 在执行运行状况检查以批量导入资源时，Experience Manager现在提供更多有关失败原因的信息。 参见 [批量资源摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 在执行运行状况检查以批量导入资源时，Experience Manager现在提供失败原因的详细信息。 请参阅 [批量资源摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* 使用批量导入工具导入资源时，管理员现在可以选择在导入成功后删除源文件。 参见 [批量资源摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 使用批量导入工具导入资源时，管理员现在可以选择在导入成功后删除源文件。 请参阅 [批量资源摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * 在编辑元数据架构时，新的根路径选择器字段允许管理员快速轻松地作出选择，从而减少配置时间。
 
-* 在编辑元数据架构时，会添加一种数据类型，以在元数据编辑器中提供自由格式文本区域。 用户可以使用此文本区域输入自由格式文本作为资源的元数据。 参见 [元数据架构编辑器](/help/assets/metadata-schemas.md).
+* 在编辑元数据架构时，会添加一种数据类型，以在元数据编辑器中提供自由格式文本区域。 用户可以使用此文本区域输入自由格式文本作为资源的元数据。 请参阅 [元数据架构编辑器](/help/assets/metadata-schemas.md).
 
-* 可以使用CSV文件批量导入许多资源的元数据，也可以将元数据导出到CSV文件。 默认日期格式现在为 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 用户可以通过更新列标题来使用不同的格式。 例如，添加 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 作为CSV文件中的列标题，而不是单词 `Date`.
+* 可以使用CSV文件批量导入许多资源的元数据，也可以将元数据导出到CSV文件。 默认日期格式现在为 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 用户可以通过更新列标题来使用不同的格式。 例如，添加 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 作为CSV文件中的列标题，而不是Word `Date`.
 
 * 在列视图中浏览资源时，有一个视觉标志显示每个资源的已批准或已拒绝状态。
 
-* 在“列”视图中浏览资源时，为已过期的资源显示一个视觉标志。
+* 在列视图中浏览资源时，为已过期的资源显示一个视觉标志。
 
 ### [!DNL Assets] 中的错误修复 {#bug-fixes-assets}
 
 * 当尝试移动多个资源或文件夹时，控制台中会记录一个错误，并且移动操作未完成。 如果无法更新标题，移动操作失败。 (CQ-4322080)
 
-* 可根据规则隐藏元数据字段，以便在满足预定义条件时，元数据不是必需的。 但是，此类隐藏的元数据字段显示为必填字段。 (CQ-4321285)
+* 可根据规则隐藏元数据字段，以便在满足预定义条件时，该元数据不是必需的。 但是，此类隐藏的元数据字段显示为必填字段。 (CQ-4321285)
 
 * 由于日期格式不正确，批量元数据导入失败。 (CQ-4319014)
 
 * 在属性页面中选择更新元数据时，如果架构提供了许多选项，则界面响应缓慢。 (CQ-4318538)
 
-* 在单行文本字段中更新和保存元数据值时，即使下拉菜单上禁用了编辑，下拉菜单中的值也会被删除。 (CQ-4317077)
+* 在单行文本字段中更新和保存元数据值时，即使下拉菜单上禁用编辑，下拉菜单中的值也会被删除。 (CQ-4317077)
 
-* 您可以使用省略号作为注释来查看资产。 使用小椭圆时，椭圆与打印版本中的注释编号重叠。 (CQ-4316792)
+* 您可以将省略号用作注释来查看资产。 使用小椭圆时，椭圆与打印版本中的注释编号重叠。 (CQ-4316792)
 
 * 在搜索资产后从搜索结果中选择资产时，不会显示快速发布选项。 (CQ-4317748)
 
@@ -95,9 +95,9 @@ ht-degree: 41%
 
 * **在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法**
 
-  借助先进的机器学习算法，Adobe Sign的Government ID流程让世界各地的企业均可确保高质量地验证其接收者的身份。 现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
+  借助先进的机器学习算法，Adobe Sign的Government ID流程让世界各地的企业均可确保高质量地验证其收件人的身份。 现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
 
-  Government ID是一种高级身份验证方法，它指示收件人 [上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然后评估该文档以确保真实有效。
+  Government ID是一种高级的身份验证方法，它指示收件人 [上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然后评估该文档以确保真实有效。
 
 * **支持对异步提交自适应表单使用表单内签名体验**
 
@@ -109,7 +109,7 @@ ht-degree: 41%
 
 * **支持使用字面选项设置 JSON 类型变量的值**
 
-  可在 AEM Workflow 的“设置变量”步骤中使用字面选项设置 JSON 类型变量的值。通过字面选项，可按字符串的形式指定 JSON。
+  可在 AEM Workflow 的“设置变量”步骤中使用字面选项设置 JSON 类型变量的值。通过字面选项，可按字符串的形式指定JSON。
 
 * **使用本地开发环境创建记录文档 (DoR)**
 
@@ -128,19 +128,19 @@ ht-degree: 41%
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 支持类别UID — 对于将字符串用作类别ID的系统，这为他们解锁了第三方商业集成
+* 支持类别UID — 这为将字符串用于类别ID的系统解锁了第三方商业集成
 
-* 用于PWA Studio的AEM扩展，包括 示例集成
+* 适用于PWA Studio的AEM扩展，包括 集成示例
 
-* 扩展WCM导航核心组件的新CIF导航核心组件
+* 新增扩展WCM导航核心组件的CIF导航核心组件
 
-* AEM店面中暂存目录数据的视觉指示器
+* AEM店面中暂存的目录数据的视觉标志
 
 * 现在可通过Cloud Manager UI配置商业端点
 
 ### 错误修复 {#bug-fixes-commerce}
 
-* 根类别字段未显示在类别页面的页面属性中的commerce选项卡下
+* 根类别字段未显示在类别页面的页面属性中的商务选项卡下
 
 ## Cloud Manager {#cloud-manager}
 
@@ -165,7 +165,7 @@ AEM as a Cloud Service 2021.4.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * Adobe I/O Developer Console 中由 Cloud Manager 创建的项目不会再被无意中编辑或删除。
 
-* 当用户添加新环境时，将会通知他们，在创建环境后，无法将其移动到其他区域。
+* 当用户添加新环境时，将会通知他们，环境在创建后无法移动到其他区域。
 
 * 现在可以将环境变量的作用域限定为特定服务（创作或发布）。 要求 AEM 版本 2021.03.5104.20210328T185548Z 或更高版本。
 
@@ -191,5 +191,5 @@ Best Practices Analyzer v2.1.12的发布日期是2021年4月12日。
 
 ### 错误修复 {#bug-fixes-bpa-april}
 
-* 报告的BPA中存在重复行。 此问题已得到修复。
-* AEM版本6.4.2上的BPA UI引发了JS错误，该错误会禁用“生成报告”按钮。 此问题已得到修复
+* 在BPA报告中发现重复行。 此问题已得到修复。
+* AEM版本6.4.2上的BPA UI引发了JS错误，该错误会禁用“生成报表”按钮。 此问题已得到修复

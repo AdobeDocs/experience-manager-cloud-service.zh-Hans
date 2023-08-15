@@ -2,10 +2,10 @@
 title: Cloud Manager 环境变量
 description: 标准环境变量可以通过 Cloud Manager 进行配置和管理，并提供给运行时环境，以便在 OSGi 配置中使用。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1018'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1014'
+ht-degree: 99%
 
 ---
 
@@ -118,9 +118,9 @@ ht-degree: 100%
 
 ### Dispatcher {#dispatcher}
 
-只有常规环境变量可用于 [Dispatcher。无法使用 ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 密钥。
+只有常规环境变量可用于 [Dispatcher。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 不能使用Secretses。
 
-但是，无法在 `IfDefine` 指令中使用环境变量。
+但是，环境变量不能用于 `IfDefine` 指令。
 
 >[!TIP]
 >

@@ -6,10 +6,10 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 93%
+source-wordcount: '1042'
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | 本文 |
 
-在 AEM Forms as a Cloud Service 上启用自适应表单核心组件后，您可以使用 AEM Forms Cloud Service 实例为多个渠道创建、发布和投放基于核心组件的自适应表单和 Headless 表单。您需要具备启用了自适应表单核心组件的环境才能使用 Headless 自适应表单。
+在AEM Formsas a Cloud Service上启用自适应Forms核心组件，允许您使用AEM FormsCloud Service实例在多个渠道中创建、发布和交付基于核心组件的自适应Forms和Headless Forms。 您需要具备启用了自适应表单核心组件的环境才能使用 Headless 自适应表单。
 
 ## 注意事项
 

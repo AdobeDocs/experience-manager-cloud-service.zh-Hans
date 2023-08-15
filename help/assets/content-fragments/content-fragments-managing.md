@@ -1,17 +1,17 @@
 ---
 title: 管理内容片段（资产 — 内容片段）
-description: 了解如何使用Assets控制台管理您的AEM内容片段（Headless内容的基础）。
+description: 了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 71%
+source-wordcount: '1768'
+ht-degree: 73%
 
 ---
 
 # 管理内容片段 {#managing-content-fragments}
 
-了解如何使用Assets控制台管理您的AEM内容片段（Headless内容的基础）。
+了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
 
 定义完您的[内容片段模型](#creating-a-content-model)后，您可以使用这些模型[创建您的内容片段](#creating-a-content-fragment)。
 
@@ -34,7 +34,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。 现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但您仍然可以从以下位置管理它们： **资产** 控制台。 本节介绍来自以下各项的管理： **资产** 控制台。
+>内容片段存储为&#x200B;**资源**。 现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
 
 ## 创建内容片段 {#creating-content-fragments}
 
@@ -83,14 +83,14 @@ ht-degree: 71%
 1. 选 **择创建** ，以完成操作，然后打开片段 **进行编辑** ，或返回控制台并执行完 **成**。
 
    >[!NOTE]
-   >In **列表** 控制台的模式，您可以更新 **查看设置** 以启用 **内容片段模型** 列。
+   >在 **列表** 控制台模式，您可以更新 **查看设置** 以启用 **内容片段模型** 列。
 
 ## 资产控制台中的内容片段操作 {#actions-for-a-content-fragment-assets-console}
 
-在 **资产** 控制台为您的内容片段提供了一系列可用的操作，包括：
+在 **资产** 控制台为您的内容片段提供了一系列可用操作，包括：
 
-* 从工具栏中；选择片段后，所有适当的操作都可用。
-* 作为 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)；可用于单个片段卡片的一组操作。
+* 在工具栏中；选择片段后，所有适当的操作都可用。
+* 作为 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)；可用于各个片段信息卡的操作的子集。
 
 ![工具栏中的操作](assets/cfm-managing-02.png)
 
@@ -105,7 +105,7 @@ ht-degree: 71%
 * **签出**
 * **属性**
 
-   * 用于查看和/或编辑片段的元数据。
+   * 用于查看、编辑或同时查看或编辑片段的元数据。
 
 * **编辑**
 
@@ -131,8 +131,8 @@ ht-degree: 71%
 >
 >要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
 
-1. 使用 **资产** 控制台导航到内容片段的位置。
-1. 通过以下任一方式打开片段进行编辑：
+1. 使用 **资产** 控制台以导航到内容片段的位置。
+1. 打开片段进行编辑，方法是：
 
    * 单击/点按片段或片段链接（具体取决于控制台视图）。
    * 选择片段，然后 **编辑** 工具栏中。
@@ -173,7 +173,7 @@ ht-degree: 71%
 
 顶部工具栏中的某些功能可以从多种模式使用：
 
-![各种模式下可用的工具栏操作](assets/cfm-managing-top-toolbar.png)
+![各种模式中可用的工具栏操作](assets/cfm-managing-top-toolbar.png)
 
 * 当内容页面上已引用片段时，会显示一条消息。 您可以&#x200B;**关闭**&#x200B;消息。
 
@@ -231,7 +231,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * **关闭**
 
-  将退出编辑器，而不保存最新更改（即自上次更改以来所做的更改） **保存**)。
+  会退出编辑器，而不保存最新更改（即自上次&#x200B;**保存**&#x200B;后进行的更改）。
 
 在编辑您的内容片段时，AEM 会自动创建版本，以确保在您取消更改时可以恢复先前的内容（使用&#x200B;**关闭**&#x200B;而不保存）：
 
@@ -262,7 +262,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 将内容与片段关联 {#associating-content-with-your-fragment}
 
-您还可以[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段。 这提供了一个连接，以便在将资产（即图像）添加到内容页面时，可以（可选）与片段一起使用资产（即图像）。
+您还可以[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段。 这会提供一个连接，以便在将资源（即图像）添加到内容页面时，可以（可选）与片段一起使用资源（即图像）。
 
 ## 查看和编辑片段的元数据（属性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -349,16 +349,16 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 如果您的片段基于模型，则应确保[模型已发布](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
 >
-如果您发布的内容片段尚未发布模型，则会显示一个选择列表来指示该情况，并且模型会与片段一起发布。
+如果发布的内容片段尚未发布模型，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
 必须发布内容片段才能在发布环境中使用。 可使用标准资产功能完成此操作: 
 
 * [快速发布](/help/assets/manage-publication.md#quick-publish)
 * [管理发布](/help/assets/manage-publication.md#manage-publication)
 
-该控制台可以访问：
+此地址可以访问：
 
-* 创建后；使用 [“资产”控制台中可用的操作](#actions-for-a-content-fragment-assets-console).
+* 创建后；使用 [资产控制台中可用的操作](#actions-for-a-content-fragment-assets-console).
 * 从[内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor).
 
 此外，当您 [发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段在页面引用中列出。

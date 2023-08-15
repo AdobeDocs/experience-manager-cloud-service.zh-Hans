@@ -3,10 +3,10 @@ title: 在 AEM 中使用 GraphiQL IDE
 description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1144'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 >[!NOTE]
 >在使用 GraphiQL IDE 之前，您必须在[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)中[配置您的端点](/help/headless/graphql-api/graphql-endpoint.md)。
 
-**GraphiQL** 工具允许您测试和调试 GraphQL 查询，方法是：
+此 **GraphiQL** 工具允许您测试和调试GraphQL查询，方法是：
 * 选择适用于您要用于查询的 Sites 配置的&#x200B;**端点**
 * 直接输入新查询
 * 创建并访问&#x200B;**[持久查询](/help/headless/graphql-api/persisted-queries.md)**
@@ -87,7 +87,7 @@ ht-degree: 100%
 
 ## 查询变量 {#query-variables}
 
-GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content-fragments.md#graphql-variables)。
+GraphiQL IDE还允许您管理 [查询变量](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 例如：
 
@@ -154,7 +154,7 @@ GraphiQL IDE 还允许您管理[查询变量](/help/headless/graphql-api/content
 
 ## 复制 URL 以直接访问查询 {#copy-url}
 
-**“复制 URL”**&#x200B;选项允许您通过复制用于直接访问持久查询并查看结果的 URL 来模拟查询。然后可以将其用于测试；例如，通过在浏览器中访问：
+此 **复制URL** 选项允许您通过复制用于直接访问持久查询并查看结果的URL来模拟查询。 然后可以将其用于测试；例如，通过在浏览器中访问：
 
 <!--
   >[!NOTE]

@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 83%
+source-wordcount: '2266'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +26,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!NOTE]
 >
->Universal Editor 仍在开发中。目前，它无法编辑所有内容类型。
+>Universal Editor 仍在开发中。它当前无法编辑所有内容类型。
 
 ## 准备应用程序 {#prepare-app}
 
@@ -74,7 +74,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### 解决方案 {#solutions}
 
-点按或单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
+通过点按或单击解决方案切换器，您可以快速跳转到其他Experience Cloud解决方案。
 
 ![解决方案切换器](assets/solutions.png)
 
@@ -217,8 +217,8 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 编辑器占据窗口的大部分区域，并在其中呈现在[地址栏](#location-bar)中指定的页面。
 
-* 如果编辑器处于[文本模式](#text-mode)或[媒体模式](#media-mode)等编辑模式下，则内容是可编辑的，但您无法访问链接。
-* 如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
+* 如果编辑器处于编辑模式，例如 [文本模式](#text-mode) 或 [媒体模式，](#media-mode) 内容将可编辑，但您无法关注链接。
+* 如果编辑器位于 [预览模式，](#preview-mode) 内容将可导航，您可以关注链接，但无法编辑内容。
 
 ![编辑器](assets/editor.png)
 

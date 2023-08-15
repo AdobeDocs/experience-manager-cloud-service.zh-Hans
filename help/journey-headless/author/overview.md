@@ -2,10 +2,10 @@
 title: AEM Headless 内容作者历程
 description: 从此处开始，借助 AEM 强大而灵活的 Headless 功能、相应的功能以及为项目创作内容的方法，实施引导式历程。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
 source-wordcount: '865'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 
 您将在此历程中探究多个主题。以下文章为您提供了 AEM 中的 Headless 的基础知识以及指向详细技术文档的链接。
 
-虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是初次使用 AEM 中的 Headless，我们建议您从头开始，然后循序渐进。
+虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您不熟悉AEM中的Headless，Adobe建议您从头开始，然后循序渐进。
 
 | # | 文章 | 描述 |
 |---|---|---|

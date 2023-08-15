@@ -4,10 +4,10 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2379'
-ht-degree: 94%
+source-wordcount: '2373'
+ht-degree: 91%
 
 ---
 
@@ -176,7 +176,7 @@ interface SelectedAsset {
 | *repo:createDate* | 字符串 | 资源的创建日期和时间。 |
 | *repo:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
 | *repo:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
-| *dc:format* | 字符串 | 资源的格式，例如文件类型(例如，JPEG、PNG等)。 |
+| *dc:format* | 字符串 | 资源的格式，如文件类型(例如，JPEG、PNG等)。 |
 | *tiff:imageWidth* | 数字 | 资源的宽度。 |
 | *tiff:imageLength* | 数字 | 资源的高度。 |
 | *computedMetadata* | `Record<string, any>` | 一个对象，表示所有类型的所有资源元数据（存储库、应用程序或嵌入式元数据）的存储桶。 |
@@ -223,7 +223,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 此示例说明如何在 Unified Shell 下运行 [!DNL Adobe] 应用程序时或在您已生成用于身份验证的 `imsToken` 时，将资源选择器与非 SUSI 流结合使用。
 
-使用在您的代码中包含资产选择器软件包 `script` 标记，如中所示 _第6-15行_ 下面示例中的。 加载该脚本后，`PureJSSelectors` 全局变量将可供使用。定义资源选择器 [属性](#asset-selector-properties) 如所示 _第16-23行_. `imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现资源选择器，请调用 `renderAssetSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。资源选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
+使用在您的代码中包含资产选择器包 `script` 标记，如中所示 _第6-15行_ 例如下面的示例。 加载该脚本后，`PureJSSelectors` 全局变量将可供使用。定义资产选择器 [属性](#asset-selector-properties) 如中所示 _第16-23行_. `imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现资源选择器，请调用 `renderAssetSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。资源选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
 
 通过执行这些步骤，您可以在 [!DNL Adobe] 应用程序中将资源选择器用于非 SUSI 流。
 
@@ -373,7 +373,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |                 | 如果 OOTB 翻译不足以满足您的应用程序需求，您可以公开一个接口，利用该接口可通过 `i18nSymbols` 属性传递自定义本地化值。通过此接口传递值将覆盖提供的默认翻译，而改用您自己的翻译。要执行覆盖，您必须将一个有效的[消息描述符](https://formatjs.io/docs/react-intl/api/#message-descriptor)对象传递到要覆盖的 `i18nSymbols` 键。 |
 | *intl* | 对象 | 否 | | 资源选择器提供默认的 OOTB 翻译。您可以通过用 `intl.locale` 属性提供有效的区域设置字符串来选择翻译语言。例如：`intl={{ locale: "es-es" }}` </br></br> 支持的区域设置字符串遵循语言标准名称表示的 [ISO 639 - 代码](https://www.iso.org/iso-639-language-codes.html)。</br></br> 支持的区域设置列表：英语 -“en-us”（默认）西班牙语 -“es-es”德语 -“de-de”法语 -“fr-fr”意大利语 -“it-it”日语 -“ja-jp”朝鲜语 -“ko-kr”葡萄牙语 -“pt-br”中文（繁体）-“zh-cn”中文（台湾地区）-“zh-tw” |
 | *repositoryId* | 字符串 | 否 | &#39;&#39; | 资源选择器从中加载内容的存储库。 |
-| *additionalAemSolutions* | `Array<string>` | 否 | [ ] | 它允许您添加其他 AEM 存储库的列表。如果此属性中未提供任何信息，则仅考虑媒体库或 AEM Assets 存储库。 |
+| *additionalAemSolutions* | `Array<string>` | 否 | [ ] | 它允许您添加其他AEM存储库的列表。 如果此属性中未提供任何信息，则仅考虑媒体库或 AEM Assets 存储库。 |
 | *hideTreeNav* | 布尔型 | 否 |  | 指定是显示还是隐藏资源树导航侧边栏。它仅在模态视图中使用，因此，该属性在边栏视图中不起作用。 |
 | *onDrop* | 函数 | 否 | | 该属性允许资源的删除功能。 |
 | *dropOptions* | `{allowList?: Object}` | 否 | | 使用“allowList”配置删除选项。 |
@@ -411,7 +411,7 @@ Use the `path` property to define the folder name that displays automatically wh
 
 ### 示例 3：边栏视图中的自定义过滤器属性
 
-除了 Facet 搜索之外，资源选择器还允许您自定义各种属性来细化 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 应用程序中的搜索。您需要添加以下代码来在应用程序中添加自定义搜索过滤器。在下面的示例中，`Type Filter` 搜索过滤图像、文档或视频中的资源类型或已为搜索添加的过滤器类型。
+除了面向搜索之外，您还可以通过资产选择器自定义各种属性以完善您的搜索，这些属性来自 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 应用程序。 您需要添加以下代码来在应用程序中添加自定义搜索过滤器。在下面的示例中，`Type Filter` 搜索过滤图像、文档或视频中的资源类型或已为搜索添加的过滤器类型。
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -509,7 +509,7 @@ For the detailed example of Object Schema, click
 
 ### 存储库切换器 {#repository-switcher}
 
-资源选择器还允许您切换存储库来选择资源。您可以从左侧面板中可用的下拉列表中选择所选存储库。下拉列表中可用的存储库选项基于 `index.html` 文件中定义的 `repositoryId` 属性。它基于由已登录用户访问的所选 IMS 组织中的环境。消费者可以传递首选 `repositoryID`，在这种情况下，资源选择器将停止呈现存储库切换器，并且仅呈现给定存储库中的资源。
+通过资产选择器，您还可以切换存储库以进行资产选择。 您可以从左侧面板中可用的下拉列表中选择所选存储库。下拉列表中可用的存储库选项基于 `index.html` 文件中定义的 `repositoryId` 属性。它基于由已登录用户访问的所选 IMS 组织中的环境。消费者可以传递首选 `repositoryID`，在这种情况下，资源选择器将停止呈现存储库切换器，并且仅呈现给定存储库中的资源。
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -530,7 +530,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 ### 自定义搜索
 
-除了全文搜索之外，资源选择器还允许您使用自定义搜索来搜索文件中的资源。您可以在“模态”视图和“边栏”视图模式下使用自定义搜索过滤器。
+除了全文搜索之外，资产选择器还允许您使用自定义搜索在文件中搜索资产。 您可以在“模态”视图和“边栏”视图模式下使用自定义搜索过滤器。
 
 ![custom-search](assets/custom-search.png)
 
@@ -538,7 +538,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 ### 搜索栏 {#search-bar}
 
-资源选择器允许您在所选存储库中对资源进行全文搜索。例如，如果您在搜索栏中键入关键字 `wave`，则将显示任意元数据属性中提及的所有带 `wave` 关键字的资源。
+通过资源选择器，您可以对所选存储库中的资源执行全文搜索。 例如，如果您在搜索栏中键入关键字 `wave`，则将显示任意元数据属性中提及的所有带 `wave` 关键字的资源。
 
 ### 排序 {#sorting}
 
@@ -546,7 +546,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 ### 视图类型 {#types-of-view}
 
-资源选择器允许您在四种不同的视图中查看资源：
+通过资源选择器，您可以在四种不同的视图中查看资源：
 
 * **![列表视图](assets/do-not-localize/list-view.png)[!UICONTROL 列表视图]**：列表视图在单个列中显示可滚动的文件和文件夹。
 * **![网格视图](assets/do-not-localize/grid-view.png)[!UICONTROL 网格视图]**：网格视图在行和列的网格中显示可滚动的文件和文件夹。
@@ -571,7 +571,7 @@ Asset Selector supports two types of out of the box views:
 ### Application Integration
 
 Asset Selector is flexible and can be integrated within your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application. It is accessible and localized to add, search, and select assets in your application. With Asset Selector you can:
-*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It allows you to control the display of various text or symbols as per your choice.
+*   **Configure** You can configure the files/folders that you want to show at the upfront. The assets that are chosen to view can be of any supported formats, for example, JPEG. It lets you control the display of various text or symbols as per your choice.
 *   **Perfect fit** Asset selector easily fits in your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application and choose the way you want to view. The mode of view can be inline, rail, or modal view.
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
@@ -596,15 +596,15 @@ You can make default multi-selection of assets by specifying the assets to the c
 ### Action buttons
 
 When you customize your application with Asset Selector based on ReactJS, you are provided with the following action buttons to perform various actions:
-*   **Open in media library** Allows you to open the asset in media library.
-*   **Upload** Allows you to upload an asset directly.
+*   **Open in media library** Lets you open the asset in media library.
+*   **Upload** Lets you upload an asset directly.
 *   **Download** Downloads the asset in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 -->
 <!--
 
 ### Status of an asset
 
-Asset Selector allows you to know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
+Asset Selector lets you know the status of your uploaded assets. The status can be `Approved`, `Rejected`, or `Expired` of the asset. 
 -->
 <!--
 

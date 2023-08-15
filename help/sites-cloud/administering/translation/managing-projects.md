@@ -4,10 +4,10 @@ description: 了解如何在 AEM 中创建和管理机器翻译项目和人工�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '4078'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '4077'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 * 为 `/content/wknd/en/products` 页面及其所有子页面创建翻译项目，并以法语副本为目标。由于语言副本不包含 `/content/wknd/fr/products` 页面，因此，AEM 会立即将 `/content/wknd/en/products` 页面及其所有子页面复制到法语副本。这些副本也包含在翻译项目中。
 * 为 `/content/wknd/en` 页面及其所有子页面创建翻译项目，并以法语副本为目标。由于语言副本包含与 `/content/wknd/en` 页面对应的页面（语言根），因此，AEM 将复制 `/content/wknd/en` 页面及其所有子页面，并将它们添加到启动项。这些副本也包含在翻译项目中。
 
-## Sites 控制台中的翻译 {#performing-initial-translations-and-updating-existing-translations}
+##  Sites 控制台中的翻译 {#performing-initial-translations-and-updating-existing-translations}
 
 可以直接从 Sites 控制台创建或更新翻译项目。
 

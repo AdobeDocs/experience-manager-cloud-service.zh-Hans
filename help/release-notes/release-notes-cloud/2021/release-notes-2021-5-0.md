@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 46%
+source-wordcount: '1352'
+ht-degree: 47%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 46%
 以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的一般发行说明。
 
 >[!NOTE]
->从此处，您可以导航到早期版本的发行说明；例如，2020版、2021版等的发行说明。
+>从此处，您可以导航到以前版本的发行说明；例如，2020版、2021版等的发行说明。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 46%
 
 ### AEMas a Cloud Service基础的新增功能 {#what-is-new-foundation}
 
-* [预发行渠道](/help/release-notes/prerelease.md)：在即将推出的功能正式发布前的一个月内进行预览！
+* [预发行渠道](/help/release-notes/prerelease.md)：在即将推出的功能正式发布前的一个月进行预览！
 
 * [API弃用](/help/release-notes/deprecated-apis.md)：提供了适用于AEMas a Cloud Service的最新弃用API的列表。
 
@@ -39,13 +39,13 @@ ht-degree: 46%
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* 您很快便能够验证新版本上的内容 [预览层](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 模拟最终体验外观，就像在发布层上一样。 这是通过AEM Sites托管发布向导启用的，现在允许您在发布或预览之间选择发布目标。 随后，可以通过专用URL访问预览体验。 在“预览”上进行验证后，内容可以像往常一样从“创作”发布到“发布”。 在接下来的几周内将逐步在AEMas a Cloud Service环境中启用“预览”服务。
+* 您很快便能够验证新版本上的内容 [预览层](/help/sites-cloud/authoring/fundamentals/previewing-content.md) 以模拟最终的体验外观，就像在发布层上一样。 这项功能通过“AEM Sites托管发布”向导启用，现在允许您在“发布”或“预览”之间选择发布目标。 随后，可以通过专用URL访问预览体验。 在“预览”上进行验证后，内容可以像往常一样从“作者”发布到“发布”。 在接下来的几周内将逐步在AEMas a Cloud Service环境中启用预览服务。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* 您可以使用链接共享功能下载共享的资产。 现在，此下载使用异步服务，即使对于非常大的下载，该服务也能提供更快且无中断的下载。 参见 [下载资产](/help/assets/download-assets-from-aem.md#link-share-download).
+* 您可以使用链接共享功能下载共享的资源。 现在，此下载使用异步服务，即使对于非常大的下载，该服务也能提供更快且无中断的下载。 请参阅 [下载资产](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![下载收件箱](/help/assets/assets/download-inbox.png)
 
@@ -57,18 +57,18 @@ ht-degree: 46%
 
 * 在批量提取期间，可使用资源批量提取器工具添加元数据。
 
-* 用户体验增强功能会显示文件夹中存在的资源数量。 对于文件夹中的1000多项资源， [!DNL Assets] 显示1000+。
+* 用户体验增强功能可显示文件夹中存在的资源数量。 对于文件夹中的1000多种资源， [!DNL Assets] 显示1000+。
 
   ![文件夹中的资源数显示在界面上](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### [!DNL Assets] 中修复的错误 {#assets-bugs-fixed}
 
-* 上传超大文件会导致 [!DNL Experience Manager desktop app]. (CQ-4320942)
-* 在从文件夹中选择同一收藏集或从搜索结果中选择收藏集时，工具栏选项会有所不同。 (CQ-4321406)
+* 上传超大文件会崩溃 [!DNL Experience Manager desktop app]. (CQ-4320942)
+* 从文件夹中选择同一收藏集或从搜索结果中选择该收藏集时，工具栏选项会有所不同。 (CQ-4321406)
 
 #### Dynamic Media的新增功能 {#what-is-new-dm}
 
-* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和受限网络带宽的设备上高效地提供最佳质量的图像。 有关更多信息，请参阅 [智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md) 和 [使用下一代图像格式WebP和AVIF优化图像。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和受限网络带宽的设备上高效地提供最佳质量的图像。 有关更多信息，请参阅 [智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md) 和 [使用新一代图像格式WebP和AVIF优化图像。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * 在Dynamic Media交付中引入了对下一代图像格式AVIF的支持（fmt URL修饰符）。
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ ht-degree: 46%
 
 ### 即将推出的 [!DNL Forms] Beta 版功能 {#what-is-new-forms-prerelease}
 
-Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步和异步批处理模式生成文档。Output 服务使您能够创建应用程序，这些应用程序允许您：
+Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步和异步批处理模式生成文档。 Output 服务使您能够创建应用程序，这些应用程序允许您：
 
 * 使用 XML 数据填充模板文件来生成最终表单文档。
 * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
@@ -105,7 +105,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 新增功能 {#what-is-new-may}
 
-* PackageOverlaps质量规则现在可检测多次部署同一个包的情况，即在同一个部署的包集中部署在多个嵌入位置。
+* PackageOverlaps 质量规则现在可检测多次部署同一个包的情况；即在同一个部署的包集中部署在多个嵌入位置。
 
 * 公共 API 中的存储库端点现在包括 Git URL。
 
@@ -117,7 +117,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 已更新编辑程序体验。
 
-* “环境详情”页面中的“域名”表将通过分页的方式显示最多 250 个域名。
+* “环境详细信息”页面中的“域名”表将通过分页的方式显示最多 250 个域名。
 
 * 即使程序只有一个解决方案可用，“添加程序”和“编辑程序”工作流中的“解决方案”选项卡将显示解决方案。
 
@@ -151,9 +151,9 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 错误修复 {#bug-fixes-ctt-latest}
 
-* 删除迁移集时，CTT UI中偶尔会显示一条无用的错误消息。 此问题已得到修复。
+* 删除迁移集时，CTT UI中有时会显示一条无用的错误消息。 此问题已得到修复。
 
-* 在运行用户映射时，如果用户在目标和主机上拥有相同的电子邮件地址，但用户名不同，则整个摄取操作将失败。 此问题已得到修复。在这种冲突场景中，用户/组被跳过，并在日志文件中记录为冲突。
+* 在运行用户映射时，如果用户在目标和主机上具有相同的电子邮件地址，但用户名不同，则整个摄取将失败。 此问题已得到修复。在这种冲突情况下，将跳过用户/组，并在日志文件中将其记录为冲突。
 
 ### 发布日期 {#release-date-ctt}
 
@@ -167,16 +167,16 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 ### 错误修复 {#bug-fixes-ctt-may}
 
 * 与内容传输工具UI中的自动刷新功能相关的多个错误修复。
-* 内容传输工具 `wipe=true` 导致目标上的计数器索引不正确。 此问题已得到修复。
+* 内容传输工具，带有 `wipe=true` 导致目标上的计数器索引不正确。 此问题已得到修复。
 
 ## Commerce加载项 {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 产品控制台属性中的关联内容支持分页
+* 产品控制台属性中对相关内容的分页支持
 
 ### 错误修复 {#bug-fixes-commerce}
 
-* 资产缩略图未显示在产品属性的“资产”选项卡中
+* 产品属性的“资产”选项卡中不显示资产缩略图
 
 * 痕迹导航在产品控制台中重置预览数据

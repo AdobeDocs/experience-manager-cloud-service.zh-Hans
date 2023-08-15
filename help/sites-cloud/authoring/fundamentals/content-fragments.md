@@ -2,10 +2,10 @@
 title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 100%
+source-wordcount: '1222'
+ht-degree: 97%
 
 ---
 
@@ -115,7 +115,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 当指定的内容片段被添加到页面时，在片段的每个 HTML 段落之间（和顶部/底部）会有一个&#x200B;**将组件拖动到此处**&#x200B;占位符。
 
-这允许您在片段内容[中间](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的任何可用位置添加额外内容（即中间内容），而无需更改根片段。
+这允许您添加额外内容 [中间（即中间内容）](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) 片段内容（在任何可用点），无需更改根片段。
 
 对于中间内容，您可以：
 

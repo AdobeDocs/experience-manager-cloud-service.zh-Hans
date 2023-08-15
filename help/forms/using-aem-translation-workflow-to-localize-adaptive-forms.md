@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
@@ -18,30 +18,30 @@ ht-degree: 1%
 
 # 使用AEM翻译工作流本地化自适应Forms和记录文档 {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-本地化的表单可帮助您跨地理区域为更广泛的受众提供服务。 Adobe Experience Manager翻译工作流可帮助您本地化自适应Forms及其记录文档。 您可以使用 **机器翻译** 或 **人工翻译** 本地化自适应表单。
+本地化的表单可帮助您跨地域提供更广泛的受众。 Adobe Experience Manager翻译工作流可帮助您本地化自适应Forms及其记录文档。 您可以使用 **机器翻译** 或 **人工翻译** 本地化自适应表单。
 
-本文介绍了将AEM翻译工作流与Adaptive Forms和记录文档结合使用的过程。
+本文介绍了将AEM翻译工作流与自适应Forms和记录文档结合使用的过程。
 
 ## 使用机器翻译本地化自适应表单和记录文档 {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
 机器翻译服务会立即翻译自适应表单和记录文档中的内容。 [!DNL AEM Forms] 已预配置为使用 [!DNL Microsoft Translator] 用于机器翻译。 执行以下步骤以启用自适应Forms和记录文档的机器翻译：
 
-1. 在 [!DNL AEM Forms] 用户界面，选择表单，然后点按 **添加词典** 选项。
-1. In **将字典添加到翻译项目** 屏幕中，选择 **创建新翻译项目** 或 **添加到现有翻译项目** 选项。
+1. 在 [!DNL AEM Forms] 在UI中，选择表单，然后点按 **添加字典** 选项。
+1. 在 **添加字典至翻译项目** 屏幕上，选择 **创建新翻译项目** 或 **添加到现有翻译项目** 选项。
 1. 在 **项目标题** 字段中，指定标题。 例如，`Government Reference Site - German locale.`
-1. 在 **目标语言** 字段，指定区域设置(例如， `German(de)`)，然后单击 **完成**. 您可以指定多个区域设置。 该表单已翻译为 **目标语言** 字段。
+1. 在 **目标语言** 字段，指定区域设置(例如， `German(de)`)，然后单击 **完成**. 您可以指定多个区域设置。 该表单将转换为 **目标语言** 字段。
 1. 在“添加的词典”对话框中，单击 **打开项目**. 在“项目”屏幕中，打开新创建的项目。
-1. 单击 **椭圆** 在底部 **翻译摘要** 图块。 将打开“翻译摘要”屏幕。
-1. 单击 **编辑** 图标顶部的 **翻译摘要** 屏幕。 打开 **翻译** 选项卡，并在中选择机器翻译 **翻译方法** 屏幕。 选择适当的 **翻译提供商** 和 **云配置**. 单击 **完成** 图标。
-1. 在 **翻译作业** 图块，单击 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 图标，然后单击 **开始**. 图块的状态将更改为“草稿”。 翻译完成后，状态将更改为 **准备审查**. 几分钟后刷新页面并验证状态。
-1. 在状态更改为之后 **准备审查** 在 **翻译作业** 平铺，在浏览器窗口中打开表单。 此时将显示表单的本地化版本。
+1. 单击 **椭圆** 在底部 **翻译摘要** 磁贴。 这将打开翻译摘要屏幕。
+1. 单击 **编辑** 顶部图标 **翻译摘要** 屏幕。 打开 **翻译** 选项卡，并在中选择机器翻译 **翻译方法** 屏幕。 选择适当的 **翻译提供商** 和 **云配置**. 单击 **完成** 图标。
+1. 在 **翻译作业** 图块，单击 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 图标，然后单击 **开始**. 图块的状态将更改为“草稿”。 翻译完成后，状态将更改为 **准备好审查**. 几分钟后刷新页面并验证状态。
+1. 在状态更改为后 **准备好审查** 在 **翻译作业** 平铺，在浏览器窗口中打开该表单。 此时将显示表单的本地化版本。
 
    >[!NOTE]
    >
-   >* 在浏览器窗口中打开本地化的表单版本之前，请确保将浏览器的区域设置设置为与表单的区域设置相匹配。 例如，如果表单已翻译为德语(de)语言，则将浏览器的区域设置设置为德语(de)。
+   >* 在浏览器窗口中打开本地化的表单版本之前，请确保将浏览器的区域设置设置为与表单的区域设置相匹配。 例如，如果表单转换为德语(de)语言，则将浏览器的区域设置设置为德语(de)。
    >* 自适应表单组件不支持从右至左(RTL)语言。 例如，希伯来语。
 
-   除了自适应表单，自动生成的记录文档也进行了本地化。
+   除了自适应表单之外，自动生成的记录文档也进行了本地化。
 
    有关记录文档设置和配置的更多信息，请参阅：
 
@@ -49,8 +49,8 @@ ht-degree: 1%
 
 [记录文档设置](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [自定义记录文档的品牌信息](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) 并确保将浏览器区域设置设置为与使用计算机语言本地化自适应表单所用的语言相同的语言。 浏览器区域设置有助于将记录文档中的品牌信息本地化。
-1. 要查看本地化的记录文档，请点按生成预览。 记录文档PDF将在您的浏览器中生成并在新选项卡中打开。
+1. [自定义记录文档的品牌信息](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) 并确保将浏览器区域设置设置为与使用机器语言将自适应表单本地化的语言相同的语言。 浏览器区域设置有助于将记录文档中的品牌信息本地化。
+1. 要查看本地化的记录文档，请点按生成预览。 生成记录文档PDF并在浏览器的新选项卡中打开。
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

@@ -1,11 +1,11 @@
 ---
 title: 将体验片段导出到 Adobe Target
-description: 了解如何将您的体验片段导出到Adobe Target，以测试和个性化体验。
+description: 了解如何将体验片段导出到 Adob​​e Target，以测试和个性化体验。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2254'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -306,7 +306,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 -->
 
 ## 将体验片段导出到 Adobe Target {#exporting-an-experience-fragment-to-adobe-target}

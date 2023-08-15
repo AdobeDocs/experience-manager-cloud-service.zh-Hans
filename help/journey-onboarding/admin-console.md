@@ -2,10 +2,10 @@
 title: 访问 Admin Console
 description: 一旦您了解了入门所需的准备工作和 AEMaaCS 结构的基础知识，您就可以首次登录 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1107'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '1104'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## Admin Console {#admin-console}
 
-Adobe Admin Console 是管理 Adobe 产品许可证和用户的中心位置。 Admin Console 允许您在单个位置而不是在各种单独的解决方案中创建和管理用户。
+Adobe Admin Console 是管理 Adobe 产品许可证和用户的中心位置。 利用Admin Console，可在单个位置而不是在各种单独的解决方案中创建和管理用户。
 
 ## Adobe ID {#adobe-id}
 
@@ -50,7 +50,7 @@ Adobe ID 有三种类型：
 
 1. 作为系统管理员，您将在载入流程中收到来自 Adobe 的多封电子邮件。 查找欢迎电子邮件，其中提供了有关您被授予访问权限的组织名称的信息。
 
-1. 单击欢迎电子邮件中的&#x200B;**开始使用**&#x200B;链接，导航到 Admin Console。 如果找不到电子邮件，请直接在浏览器中输入网址 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 打开 Admin Console。
+1. 单击欢迎电子邮件中的&#x200B;**开始使用**&#x200B;链接，导航到 Admin Console。 如果找不到电子邮件，请直接打开浏览器在以下位置Admin Console： [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![欢迎电子邮件](/help/journey-onboarding/assets/get-started-email.png)
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service 预先配置了 Adobe Identity Management System（也称
 
 ![“支持”选项卡](/help/journey-onboarding/assets/support-menu.png)
 
-该选项卡允许您创建和管理案例，直接与 Adobe 客户支持代表聊天，以及安排与专家的会议。 系统管理员和支持管理员必须登录才能访问支持案例和专家会话选项。
+选项卡允许您创建和管理案例，直接与Adobe客户支持代表聊天，以及安排与专家的会议。 系统管理员和支持管理员必须登录才能访问支持案例和专家会话选项。
 
 ## 后续内容 {#whats-next}
 

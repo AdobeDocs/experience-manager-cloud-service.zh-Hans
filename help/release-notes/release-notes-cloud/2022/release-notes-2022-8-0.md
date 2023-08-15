@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 版的发行说明。'
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 96%
+source-wordcount: '624'
+ht-degree: 93%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 版的发行说明 {#release-notes}
 
-以下部分概述了2022.8.0版本的的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了2022.8.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ ht-degree: 96%
 
 * [自适应表单向导](/help/forms/creating-adaptive-form.md)：AEM Forms 提供便于企业用户使用的向导以快速创作自适应表单。该向导可快速地在选项卡之间导航，从而轻松地选择预先配置的模板、样式、字段和提交选项以创建自适应表单。此版本的向导有以下改进：
 
-   * 选择或取消选择字段：可在向导中创建基于 JSON 和表单数据模型架构的自适应表单。现在可选择架构中的一部分字段以包括在自适应表单中。所选的字段被转换为相应的自适应表单数据捕获组件以快速创建所需的自定义表单。
+   * 选择或取消选择字段：可在向导中创建基于JSON和表单数据模型架构的自适应表单。 现在可选择架构中的一部分字段以包括在自适应表单中。所选的字段被转换为相应的自适应表单数据捕获组件以快速创建所需的自定义表单。
 
    * 使用静态模板：在传统静态模板中有长期投入的客户可通过在模板中使用静态模板创作自适应表单，继续其采用云的历程。这样使客户有更多时间可将旧有的静态模板迁移到现代的可编辑模板。
 

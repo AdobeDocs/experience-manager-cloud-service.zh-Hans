@@ -2,10 +2,10 @@
 title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 100%
 
 ![程序的增强安全性激活](assets/edit-program-enhanced.png)
 
-一旦创建了程序，就不能修改此设置。有关增强安全选项的更多信息，请参阅[创建生产程序](creating-production-programs.md)文档。
+一旦创建了程序，便无法修改此设置。 有关增强安全选项的更多信息，请参阅[创建生产程序](creating-production-programs.md)文档。
 
 ## 删除沙盒程序 {#delete-sandbox-program}
 

@@ -2,9 +2,9 @@
 title: 自定义和扩展内容片段
 description: 内容片段扩展了标准资产。 了解如何对其进行自定义。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1812'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 3%
 
 * 所有内容都存储在 `jcr:content/data` 资源的节点：
 
-   * 元素数据存储在主控子节点下：
+   * 元素数据存储在主子节点下：
      `jcr:content/data/master`
 
    * 变体存储在子节点下，该子节点带有变体的名称：例如， `jcr:content/data/myvariation`
@@ -106,7 +106,7 @@ ht-degree: 3%
 
 * 该组件允许中间内容：
 
-   * 在这里，组件允许您在被引用片段的段落之间放置其他资产（图像等）。
+   * 在这里，利用组件可以在引用片段的段落之间放置其他资产（图像等）。
 
    * 对于中间内容，您需要：
 
@@ -176,7 +176,7 @@ ht-degree: 3%
 
 * **内容片段** ([内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-  利用此界面，可采用抽象方式处理内容片段。
+  利用此界面，您可以以抽象方式处理内容片段。
 
   该界面为您提供了以下方法：
 
@@ -256,7 +256,7 @@ ht-degree: 3%
 
 * 可能需要额外工作的任务：
 
-   * 强烈建议从以下位置创建新变体： `ContentFragment`. 这可确保所有元素都共享此变量，并根据需要更新适当的全局数据结构，以反映内容结构中新创建的变量。
+   * 强烈建议从以下位置创建新变体： `ContentFragment`. 这可确保所有元素都共享此变体，并根据需要更新适当的全局数据结构，以反映内容结构中新创建的变体。
 
    * 通过元素删除现有变体，使用 `ContentElement.removeVariation()`，将不会更新分配给变体的全局数据结构。 要确保这些数据结构保持同步，请使用 `ContentFragment.removeVariation()` 而是全局删除变体。
 

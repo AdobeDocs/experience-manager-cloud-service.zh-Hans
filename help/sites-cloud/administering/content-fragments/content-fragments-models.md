@@ -4,10 +4,10 @@ description: 了解内容片段模型如何作为 AEM 中内容片段的基础�
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2919'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '2916'
+ht-degree: 98%
 
 ---
 
@@ -222,6 +222,7 @@ AEM 中的内容片段模型定义了[内容片段](/help/sites-cloud/administer
 * **[片段引用](#fragment-reference-nested-fragments)**（嵌套片段）
    * 引用其他片段，具体取决于指定的特定模型。
    * 允许您包含/检索结构化数据。
+
      >[!NOTE]
      >
      >此方法与使用 GraphQL 内容片段的 [Headless 内容投放特别相关](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)。
@@ -239,7 +240,7 @@ AEM 中的内容片段模型定义了[内容片段](/help/sites-cloud/administer
 
 ### 内容引用 {#content-reference}
 
-内容引用允许您呈现来自其他源的内容，例如，图像或内容片段。
+内容引用允许您呈现来自其他源的内容；例如，图像或内容片段。
 
 除了标准属性之外，您还可以指定：
 

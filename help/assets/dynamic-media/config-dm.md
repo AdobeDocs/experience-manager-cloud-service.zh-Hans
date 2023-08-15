@@ -4,16 +4,16 @@ description: 了解如何在Adobe Experience Manager as a Cloud Service中配置
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3794'
 ht-degree: 3%
 
 ---
 
 # 关于配置Dynamic MediaCloud Service {#configuring-dynamic-media}
 
-如果您将Adobe Experience Manager用于不同的环境，例如开发、暂存和实时生产，请为每个环境配置Dynamic MediaCloud Services。
+如果您将Adobe Experience Manager用于不同的环境，例如开发、暂存和实时生产，则请为每个环境配置Dynamic MediaCloud Service。
 
 另请参阅 [配置Dynamic Media公司别名帐户](/help/assets/dynamic-media/dm-alias-account.md)
 
@@ -21,11 +21,11 @@ ht-degree: 3%
 
 以下架构图描述了Dynamic Media的工作方式。
 
-借助新架构，Experience Manager负责主要源资产，并与Dynamic Media同步，以进行资产处理和发布：
+凭借新的架构，Experience Manager负责主要源资产，并与Dynamic Media同步，以进行资产处理和发布：
 
-1. 将主源资产上传到Adobe Experience Manager as a Cloud Service后，会将其复制到Dynamic Media。 届时，Dynamic Media将处理所有资源处理和演绎版生成，例如视频编码和图像的动态变量。
-1. 生成演绎版后，Experience Manageras a Cloud Service可以安全地访问和预览远程Dynamic Media演绎版(不会将二进制文件发送回Experience Manageras a Cloud Service实例)。
-1. 内容准备好发布和批准后，它会触发Dynamic Media服务将内容推送至交付服务器，并在CDN（内容交付网络）处缓存内容。
+1. 将主要源资产上传到Adobe Experience Manager as a Cloud Service后，将会将其复制到Dynamic Media。 届时，Dynamic Media将处理所有资源处理和演绎版生成，例如视频编码和图像的动态变量。
+1. 生成呈现版本后，Experience Manageras a Cloud Service可以安全地访问和预览远程Dynamic Media呈现版本(不会将二进制文件发送回Experience Manageras a Cloud Service实例)。
+1. 内容准备发布并批准后，它会触发Dynamic Media服务将内容推送到交付服务器并在CDN（内容交付网络）处缓存内容。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -39,7 +39,6 @@ ht-degree: 3%
 >* [HTTP/2 内容交付](/help/assets/dynamic-media/http2faq.md)
 >* CDN级别的URL重定向
 >* Akamai ChinaCDN（用于在中国实现最佳交付）
-
 
 <!-- OBSOLETE CONTENT
 
@@ -61,64 +60,64 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## 在Cloud Services中创建Dynamic Media配置 {#configuring-dynamic-media-cloud-services}
+## 在Cloud Service中创建Dynamic Media配置 {#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. 在Experience Manageras a Cloud Service中，选择Experience Manageras a Cloud Service徽标以访问全局导航控制台。
-1. 在控制台左侧，选择工具图标，然后转到 **[!UICONTROL Cloud Services> Dynamic Media配置]**.
-1. 在“Dynamic Media配置浏览器”页面的左侧窗格中，选择 **[!UICONTROL 全局]** (请勿选择左侧的文件夹图标 **[!UICONTROL 全局]**)。 然后选择 **[!UICONTROL 创建]**.
-1. 在 **[!UICONTROL 创建Dynamic Media配置]** 页面上，输入Dynamic Media帐户的公司管理员的标题、Dynamic Media帐户电子邮件地址和密码，然后选择您所在的区域。 此信息通过在预配电子邮件中Adobe向您提供。 如果您没有收到此电子邮件，请联系Adobe客户支持。
+1. 在控制台左侧，选择“工具”图标，然后转到 **[!UICONTROL Cloud Service> Dynamic Media配置]**.
+1. 在Dynamic Media配置浏览器页面的左侧窗格中，选择 **[!UICONTROL 全局]** (请勿选择左侧的文件夹图标 **[!UICONTROL 全局]**)。 然后选择 **[!UICONTROL 创建]**.
+1. 在 **[!UICONTROL 创建Dynamic Media配置]** 页面上，输入Dynamic Media帐户的公司管理员的标题、Dynamic Media帐户的电子邮件地址和密码，然后选择您所在的区域。 此信息通过在预配电子邮件中的Adobe向您提供。 如果您没有收到此电子邮件，请联系Adobe客户支持。
 1. 选择 **[!UICONTROL 连接到Dynamic Media]**.
-1. 在 **[!UICONTROL 更改密码]** 对话框，在 **[!UICONTROL 新密码]** 字段中，输入包含8-25个字符的新密码。 密码必须至少包含以下任一项：
+1. 在 **[!UICONTROL 更改密码]** 对话框，在 **[!UICONTROL 新密码]** 字段中，输入包含8-25个字符的新密码。 密码必须至少包含以下项之一：
 
    * 大写字母
    * 小写字母
    * 数字
    * 特殊字符： `# $ & . - _ : { }`
 
-   此 **[!UICONTROL 当前密码]** 字段会刻意预填充并隐藏起来，以防交互。
+   此 **[!UICONTROL 当前密码]** 字段会刻意预填充并隐藏在交互中。
 
    如有必要，可以通过选择密码眼睛图标显示密码来检查已键入或重新键入的密码的拼写。 再次选择图标可隐藏密码。
 
 1. 在 **[!UICONTROL 重复密码]** 字段，重新键入新密码，然后选择 **[!UICONTROL 完成]**.
 
-   新密码会在您选择时保存 **[!UICONTROL 保存]** 右上角的 **[!UICONTROL 创建Dynamic Media配置]** 页面。
+   新密码会在您选择时保存 **[!UICONTROL 保存]** 位于的右上角 **[!UICONTROL 创建Dynamic Media配置]** 页面。
 
-   如果您已选择 **[!UICONTROL 取消]** 在 **[!UICONTROL 更改密码]** 对话框，您仍然必须在保存新创建的Dynamic Media配置时输入新密码。
+   如果您选择 **[!UICONTROL 取消]** 在 **[!UICONTROL 更改密码]** 对话框，在保存新创建的Dynamic Media配置时，仍必须输入新密码。
 
-   另请参阅 [将密码更改为Dynamic Media](#change-dm-password).
+   另请参阅 [更改Dynamic Media密码](#change-dm-password).
 
-1. 连接成功后，可以设置以下内容：
+1. 当连接成功时，可以设置以下内容：
 
    | 属性 | 描述 |
    |---|---|
-   | 公司 | Dynamic Media帐户的名称。<br>**重要**：一个Experience Manager实例仅支持Cloud Services中的一个Dynamic Media配置；请勿添加多个配置。 一个Experience Manager实例上的多个Dynamic Media配置是 _非_ 受Adobe支持或推荐。<!-- CQDOC-19579 and CQDOC-19612 --><br>另请参阅 [配置Dynamic Media公司别名帐户](/help/assets/dynamic-media/dm-alias-account.md). |
+   | 公司 | Dynamic Media帐户的名称。<br>**重要**：Experience Manager实例仅支持Cloud Service中的一个Dynamic Media配置；请勿添加多个配置。 一个Experience Manager实例上的多个Dynamic Media配置为 _非_ 受Adobe支持或推荐。<!-- CQDOC-19579 and CQDOC-19612 --><br>另请参阅 [配置Dynamic Media公司别名帐户](/help/assets/dynamic-media/dm-alias-account.md). |
    | 公司根文件夹路径 | 您公司的根文件夹路径。 |
-   | 发布资产 | 您可以从以下三个选项中进行选择：<br>**[!UICONTROL 立即&#x200B;]**— 上传资产时，系统会摄取资产并立即提供URL/Embed。 发布资产无需用户干预。<br>**[!UICONTROL 激活]**  — 必须先明确发布资产，然后才能提供URL/嵌入链接。<br>**[!UICONTROL 选择性发布&#x200B;]**— 仅出于安全预览目的，自动发布资产。 它们还可以明确发布到Experience Manageras a Cloud Service，而无需发布到DMS7以供在公共域中交付。 将来，此选项旨在将资源发布到Experience Manageras a Cloud Service并将资源发布到Dynamic Media，二者相互排斥。 也就是说，您可以将资源发布到DMS7，以便使用智能裁剪或动态呈现版本等功能。 或者，您也可以仅发布采用Experience Manageras a Cloud Service的资产以供预览；这些相同的资产不会发布在DMS7中以供在公共域中交付。 |
-   | 安全预览服务器 | 用于指定安全演绎版预览服务器的URL路径。 也就是说，在生成演绎版之后，Experience Manageras a Cloud Service可以安全地访问和预览远程Dynamic Media演绎版(不会将二进制文件发送回Experience Manageras a Cloud Service实例)。<br>除非您有特殊安排使用自己公司的服务器或特殊服务器，否则Adobe建议您保留指定的此设置。 |
-   | 同步所有内容 | 默认选中。 如果要有选择地在同步到Dynamic Media时包含或排除资源，请取消选择此选项。 取消选择此选项可以从以下两种Dynamic Media同步模式中进行选择：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 默认启用&#x200B;]**— 默认情况下，该配置将应用于所有文件夹，除非您专门将文件夹标记为排除。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 默认禁用]**  — 除非您明确地将选定的文件夹标记为同步到Dynamic Media，否则该配置不会应用于任何文件夹。<br>要将选定的文件夹标记为同步到Dynamic Media，请选择一个资源文件夹，然后在工具栏中选择 **[!UICONTROL 属性]**. 在 **[!UICONTROL 详细信息]** 选项卡，在 **[!UICONTROL Dynamic Media同步模式]** 从以下三个选项中进行选择。 完成后，选择 **[!UICONTROL 保存]**. _请记住：如果选择，则以下三个选项不可用&#x200B;**同步所有内容**更早。_ 另请参阅 [在Dynamic Media中使用文件夹级别的选择性发布](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL 已继承&#x200B;]**— 文件夹中没有显式同步值。 相反，文件夹会从其上级文件夹之一或云配置中的默认模式继承同步值。 继承的详细状态通过工具提示显示。<br>**[!UICONTROL 为子文件夹启用]**  — 包含此子树中的所有内容，以便同步到Dynamic Media。 文件夹特定的设置会覆盖云配置中的默认模式。<br>**[!UICONTROL 已为子文件夹禁用&#x200B;]**— 从同步到Dynamic Media中排除此子树中的所有内容。 |
+   | 发布资产 | 您可以从以下三个选项中进行选择：<br>**[!UICONTROL 立即&#x200B;]**— 上传资产时，系统会摄取资产并立即提供URL/Embed。 发布资产无需用户干预。<br>**[!UICONTROL 激活]**  — 必须先显式发布资产，然后才能提供URL/嵌入链接。<br>**[!UICONTROL 选择性发布&#x200B;]**— 仅出于安全预览目的自动发布资产。 它们还可以明确发布到Experience Manageras a Cloud Service，而无需发布到DMS7以供在公共域中交付。 将来，此选项旨在将资产发布到Experience Manageras a Cloud Service并将资产发布到Dynamic Media，二者相互排斥。 也就是说，您可以将资源发布到DMS7，以便使用智能裁剪或动态呈现版本等功能。 或者，您也可以仅在Experience Manageras a Cloud Service中发布资源以供预览；在DMS7中不会发布这些相同的资源以供在公共域中交付。 |
+   | 安全预览服务器 | 用于指定安全呈现版本预览服务器的URL路径。 也就是说，在生成演绎版之后，Experience Manageras a Cloud Service可以安全地访问和预览远程Dynamic Media演绎版(不会将二进制文件发送回Experience Manageras a Cloud Service实例)。<br>除非您有特殊安排使用您自己公司的服务器或特殊服务器，否则Adobe建议您保留指定的此设置。 |
+   | 同步所有内容 | 默认选中。 如果您要在同步到Dynamic Media的过程中有选择地包含或排除资源，请取消选择此选项。 取消选择此选项可从以下两种Dynamic Media同步模式中进行选择：<br>**[!UICONTROL Dynamic Media同步模式]**<br>**[!UICONTROL 默认启用&#x200B;]**— 默认情况下，该配置将应用于所有文件夹，除非您专门将文件夹标记为排除。 <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL 默认禁用]**  — 除非您明确将选定的文件夹标记为同步到Dynamic Media，否则该配置不会应用于任何文件夹。<br>要将选定的文件夹标记为同步到Dynamic Media，请选择一个资源文件夹，然后在工具栏中，选择 **[!UICONTROL 属性]**. 在 **[!UICONTROL 详细信息]** 选项卡，在 **[!UICONTROL Dynamic Media同步模式]** 从以下三个选项中进行选择。 完成后，选择 **[!UICONTROL 保存]**. _请记住：如果选择，则以下三个选项不可用&#x200B;**同步所有内容**更早。_ 另请参阅 [在Dynamic Media中使用文件夹级别的选择性发布](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL 已继承&#x200B;]**— 文件夹中没有显式同步值。 相反，文件夹会从其上级文件夹之一继承同步值，或者在云配置中继承默认模式。 继承的详细状态通过工具提示显示。<br>**[!UICONTROL 为子文件夹启用]**  — 包含此子树中的所有内容，以便同步到Dynamic Media。 文件夹特定的设置会覆盖云配置中的默认模式。<br>**[!UICONTROL 已为子文件夹禁用&#x200B;]**— 从同步到Dynamic Media中排除此子树中的所有内容。 |
 
    >[!NOTE]
    >
-   >Dynamic Media 不支持版本控制。此外，延迟激活仅适用于以下情况 **[!UICONTROL 发布资产]** 在“编辑Dynamic Media配置”页面中，设置为 **[!UICONTROL 激活时]**.然后，直到首次激活资产为止。
+   >Dynamic Media 不支持版本控制。此外，仅当出现以下情况时延迟激活才适用 **[!UICONTROL 发布资产]** 在“编辑Dynamic Media配置”页面中，将设置为 **[!UICONTROL 激活时]**.然后，直到首次激活资产为止。
    >
    >
-   >激活资产后，任何更新都会立即实时发布到S7交付。
+   >激活资产后，所有更新都会立即实时发布到S7交付。
 
    ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。将保存新的Dynamic Media密码和配置。 如果您已选择 **[!UICONTROL 取消]** 而是不会更新密码。
-1. 在 **[!UICONTROL 配置Dynamic Media]** 对话框中，选择 **[!UICONTROL 确定]** 以开始配置。
+1. 选择&#x200B;**[!UICONTROL 保存]**。新的Dynamic Media密码和配置已保存。 如果您选择 **[!UICONTROL 取消]** 而是不会进行密码更新。
+1. 在 **[!UICONTROL 配置Dynamic Media]** 对话框，选择 **[!UICONTROL 确定]** 以开始配置。
 
    >[!IMPORTANT]
    >
-   >当新的Dynamic Media配置完成设置时，您会在Experience Manageras a Cloud Service的收件箱中收到一个状态通知。
+   >当设置完新的Dynamic Media配置时，您将在Experience Manageras a Cloud Service的收件箱中收到状态通知。
    >
    >此收件箱通知会告知您配置是否成功。
-   > 参见 [新Dynamic Media配置疑难解答](#troubleshoot-dm-config) 和 [您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md) 了解更多信息。
+   > 请参阅 [新Dynamic Media配置疑难解答](#troubleshoot-dm-config) 和 [您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md) 以了解更多信息。
 
-1. 为了在Dynamic Media内容发布之前安全地预览内容，Experience Manageras a Cloud Service使用基于令牌的验证，因此默认情况下，Experience Manager作者会预览Dynamic Media内容。 但是，您可以 *允许列表* 更多IP用于为用户提供安全预览内容的访问权限。 要在Experience Manageras a Cloud Service中设置此操作，请参阅 [为图像服务器配置Dynamic Media发布设置 — “安全”选项卡](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. 为了在发布Dynamic Media内容之前安全地预览该内容，Experience Manageras a Cloud Service会使用基于令牌的验证，默认情况下，Experience Manager作者会预览Dynamic Media内容。 但是，您可以 *允许列表* 更多IP，以便让用户能够安全地预览内容。 要在Experience Manageras a Cloud Service中设置此操作，请参阅 [为图像服务器配置Dynamic Media发布设置 — “安全”选项卡](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
@@ -128,13 +127,13 @@ To migrate any custom viewer presets and configurations that you have created fr
     * To enable (turn on) the address, select the check box, then enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
     * Select **[!UICONTROL Save]**. -->
 
-现在，您已经完成了基本配置；可以开始使用Dynamic Media。
+现在，您完成了基本配置；接下来可以使用Dynamic Media。
 
-如果您想进一步自定义配置，如启用ACL（访问控制列表）权限，您可以选择完成以下任务中的任何一项： [在Dynamic Media中配置高级设置](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+如果您想进一步自定义配置，如启用ACL （访问控制列表）权限，您可以选择完成以下任何任务 [在Dynamic Media中配置高级设置](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### 新Dynamic Media配置疑难解答 {#troubleshoot-dm-config}
 
-当设置完新的Dynamic Media配置时，您会在Experience Manageras a Cloud Service的收件箱中收到一个状态通知。 此通知会告知您配置是否成功，如收件箱中以下相应图像所示。
+当设置完新的Dynamic Media配置时，您将在Experience Manageras a Cloud Service的收件箱中收到状态通知。 此通知会告知您配置是否成功，如收件箱中相应图像的内容所示。
 
 ![Experience Manager收件箱成功](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
 
@@ -151,15 +150,15 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![Dynamic Media设置失败](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. 在 **[!UICONTROL DMSETUP]** 页中，查看描述失败的配置详细资料。 特别是，请注意任何错误消息或错误代码。 请联系Adobe客户支持部门并提供此信息。
+1. 在 **[!UICONTROL DMSETUP]** 页中，查看描述故障的配置详细资料。 特别是，请注意任何错误消息或错误代码。 请联系Adobe客户支持并提供此信息。
 
    ![Dynamic Media设置页面](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
-### 将密码更改为Dynamic Media {#change-dm-password}
+### 更改Dynamic Media密码 {#change-dm-password}
 
 Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
-密码必须至少包含以下任一项：
+密码必须至少包含以下项之一：
 
 * 大写字母
 * 小写字母
@@ -168,28 +167,28 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
 如有必要，可以通过选择密码眼睛图标显示密码来检查已键入或重新键入的密码的拼写。 再次选择图标可隐藏密码。
 
-选择后会保存更改后的密码 **[!UICONTROL 保存]** 右上角的 **[!UICONTROL 编辑Dynamic Media配置]** 页面。
+选择后会保存更改后的密码 **[!UICONTROL 保存]** 位于的右上角 **[!UICONTROL 编辑Dynamic Media配置]** 页面。
 
 1. 在Experience Manageras a Cloud Service中，选择Experience Manageras a Cloud Service徽标以访问全局导航控制台。
-1. 在控制台左侧，选择工具图标，然后转到 **[!UICONTROL Cloud Services> Dynamic Media配置]**.
-1. 在“Dynamic Media配置浏览器”页面的左侧窗格中，选择 **[!UICONTROL 全局]**. 不要选择左侧的文件夹图标 **[!UICONTROL 全局]**. 然后，选择 **[!UICONTROL 编辑]**.
+1. 在控制台左侧，选择“工具”图标，然后转到 **[!UICONTROL Cloud Service> Dynamic Media配置]**.
+1. 在Dynamic Media配置浏览器页面的左侧窗格中，选择 **[!UICONTROL 全局]**. 请勿选择左侧的文件夹图标 **[!UICONTROL 全局]**. 然后，选择 **[!UICONTROL 编辑]**.
 1. 在 **[!UICONTROL 编辑Dynamic Media配置]** 页面，紧接在 **[!UICONTROL 密码]** 字段，选择 **[!UICONTROL 更改密码]**.
 1. 在 **[!UICONTROL 更改密码]** 对话框中，执行以下操作：
 
    * 在 **[!UICONTROL 新密码]** 字段中，输入新密码。
 
-      此 **[!UICONTROL 当前密码]** 字段会刻意预填充并隐藏起来，以防交互。
+     此 **[!UICONTROL 当前密码]** 字段会刻意预填充并隐藏在交互中。
 
    * 在 **[!UICONTROL 重复密码]** 字段，重新键入新密码，然后选择 **[!UICONTROL 完成]**.
 
-1. 在 **[!UICONTROL 编辑Dynamic Media配置]** 页面，选择 **[!UICONTROL 保存]**，然后选择 **[!UICONTROL 确定]**.
+1. 在右上角 **[!UICONTROL 编辑Dynamic Media配置]** 页面，选择 **[!UICONTROL 保存]**，然后选择 **[!UICONTROL 确定]**.
 
 ## （可选）在Dynamic Media中配置高级设置{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 要进一步自定义Dynamic Media的配置和设置，或优化其性能，您可以完成以下一项或多项操作 _可选_ 任务：
 
 * [（可选）在Dynamic Media中启用ACL权限](#optional-enable-acl)
-* [（可选）设置和配置Dynamic Media设置](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
+* [（可选）Dynamic Media设置的设置和配置](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [（可选）调整Dynamic Media的性能](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 <!--
@@ -200,7 +199,7 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
 ### （可选）在Dynamic Media中启用访问控制列表权限 {#optional-enable-acl}
 
-在AEM上运行Dynamic Media时，它会立即转发 `/is/image` 请求在不检查PlatformServerServlet上的ACL（访问控制列表）权限的情况下保护预览图像服务。 不过，你可以， _启用_ acl权限。 这样做会转发授权的 `/is/image` 请求。 如果用户无权访问资产，则显示“403 — 禁止”错误。
+在AEM上运行Dynamic Media时，它会当前转发 `/is/image` 请求无需检查PlatformServerServlet上的ACL（访问控制列表）权限即可安全预览图像服务。 不过，你可以， _启用_ ACL权限。 这样做会转发授权的 `/is/image` 请求。 如果用户无权访问资产，则会显示“403 — 禁止访问”错误。
 
 **要在Dynamic Media中启用ACL权限，请执行以下操作：**
 
@@ -212,54 +211,53 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. 在页面上，滚动到名称 _Adobe CQ Scene7 Platform Server_.
+1. 在页面上，滚动到名称 _Adobe CQ Scene7平台服务器_.
 
 1. 在名称的右侧，选择铅笔图标(**[!UICONTROL 编辑配置值]**)。
 
-1. 在 **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** 页面中，选中以下两个设置的复选框：
+1. 在 **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** 页面上，选中以下两个设置的复选框：
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name`  — 启用时，此设置将缓存权限结果两分钟（默认）以保存。
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name`  — 启用后，此设置将在用户通过Dynamic Media Image Server预览资源时验证用户的访问权限。
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name`  — 启用时，此设置将缓存权限结果两分钟（默认值）以保存。
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name`  — 启用后，此设置将在用户通过Dynamic Media图像服务器预览资源时验证用户的访问权限。
 
    ![在Dynamic Media - Scene7模式下启用访问控制列表设置](/help/assets/dynamic-media/assets/acl.png)
 
 1. 在页面的右下角附近，选择 **[!UICONTROL 保存]**.
 
-### （可选）设置和配置Dynamic Media设置 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
+### （可选）Dynamic Media设置的设置和配置 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
 使用Dynamic Media Classic用户界面更改您的Dynamic Media设置。
 
 <!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
-设置和配置任务包括以下内容：
+安装和配置任务包括：
 
 * [为图像服务器配置Dynamic Media发布设置](#publishing-setup-for-image-server)
 * [配置Dynamic Media常规设置](#configuring-application-general-settings)
 * [配置颜色管理](#configuring-color-management)
 * [编辑所支持格式的MIME类型](#editing-mime-types-for-supported-formats)
 * [为不支持的格式添加MIME类型](#adding-mime-types-for-unsupported-formats)
-
 <!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
 #### 为图像服务器配置Dynamic Media发布设置 {#publishing-setup-for-image-server}
 
 “Dynamic Media发布设置”页面可建立默认设置，以确定如何将资源从AdobeDynamic Media服务器传递到网站或应用程序。
 
-参见 [为图像服务器配置Dynamic Media发布设置](/help/assets/dynamic-media/dm-publish-settings.md).
+请参阅 [为图像服务器配置Dynamic Media发布设置](/help/assets/dynamic-media/dm-publish-settings.md).
 
 #### 配置Dynamic Media常规设置 {#configuring-application-general-settings}
 
-配置Dynamic Media **[!UICONTROL 发布服务器名称]** URL和 **[!UICONTROL 源服务器名称]** URL。 您还可以指定 **[!UICONTROL 上载到应用程序]** 设置和 **[!UICONTROL 默认上传选项]** 这些都基于您的特定用例。
+配置Dynamic Media **[!UICONTROL 发布服务器名称]** URL和 **[!UICONTROL 原始服务器名称]** URL。 您还可以指定 **[!UICONTROL 上载到应用程序]** 设置和 **[!UICONTROL 默认上载选项]** 所有这一切都基于您的特定用例。
 
-参见 [配置Dynamic Media常规设置](/help/assets/dynamic-media/dm-general-settings.md).
+请参阅 [配置Dynamic Media常规设置](/help/assets/dynamic-media/dm-general-settings.md).
 
 #### 配置颜色管理 {#configuring-color-management}
 
-Dynamic Media色彩管理允许您对资源进行色彩校正。 通过颜色校正，摄取的资产可保留其色彩空间(RGB、CMYK、灰度)和嵌入的色彩配置文件。 请求动态演绎版时，使用CMYK、RGB或灰度输出将图像颜色校正到目标颜色空间中。
+通过Dynamic Media色彩管理，您可以对资源进行色彩校正。 通过颜色校正，摄取的资产可保留其颜色空间(RGB、CMYK、灰色)和嵌入的颜色配置文件。 请求动态演绎版时，将使用CMYK、RGB或灰度输出将图像颜色校正到目标颜色空间中。
 
-参见 [配置图像预设](/help/assets/dynamic-media/managing-image-presets.md).
+请参阅 [配置图像预设](/help/assets/dynamic-media/managing-image-presets.md).
 
-要配置默认颜色属性，以便在请求图像时启用颜色校正，请执行以下操作：
+要配置默认颜色属性以便在请求图像时启用颜色校正，请执行以下操作：
 
 1. 打开 [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后使用在配置期间提供的凭据登录到您的帐户。
 1. 转到 **[!UICONTROL 设置>应用程序设置]**.
@@ -272,7 +270,7 @@ Dynamic Media色彩管理允许您对资源进行色彩校正。 通过颜色校
    | CMYK默认颜色空间 | 默认CMYK颜色配置文件的名称。 |
    | 灰度默认颜色空间 | 默认灰色颜色配置文件的名称。 |
    | RGB默认色彩空间 | 默认RGB颜色配置文件的名称。 |
-   | 颜色转换调色 | 指定渲染方法。 可接受的值为： **[!UICONTROL 可感知]**， **[!UICONTROL 相对色度]**， **[!UICONTROL 饱和度]**， **[!UICONTROL 绝对色度]**. Adobe建议 **[!UICONTROL 相对]** 作为默认值。 |
+   | 颜色转换调色 | 指定渲染方法。 可接受的值为： **[!UICONTROL 可感知]**， **[!UICONTROL 相对色度]**， **[!UICONTROL 饱和度]**， **[!UICONTROL 绝对色度]**. Adobe推荐 **[!UICONTROL 相对]** 作为默认值。 |
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -282,20 +280,20 @@ Dynamic Media色彩管理允许您对资源进行色彩校正。 通过颜色校
 
 * 为RGB和CMYK图像启用颜色校正。
 * 假定没有颜色配置文件的RGB图像在 *sRGB* 颜色空间。
-* 假定没有颜色配置文件的CMYK图像位于 *WebCoated* 颜色空间。
+* 假定没有颜色配置文件的CMYK图像在 *WebCoat* 颜色空间。
 * 返回RGB输出的动态演绎版，在 *sRGB* 颜色空间。
-* 返回CMYK输出的动态演绎版，在 *WebCoated* 颜色空间。
+* 返回CMYK输出的动态演绎版，在 *WebCoat* 颜色空间。
 
 #### 编辑所支持格式的MIME类型 {#editing-mime-types-for-supported-formats}
 
-您可以定义Dynamic Media处理的资源类型，并自定义高级资源处理参数。 例如，您可以指定资源处理参数以执行以下操作：
+您可以定义Dynamic Media处理的资源类型，并自定义高级资源处理参数。 例如，您可以指定资产处理参数，以执行以下操作：
 
 * 将Adobe PDF转换为eCatalog资源。
 * 将Adobe Photoshop文档(.platform)转换为PSD横幅模板资源以进行个性化。
-* 栅格化Adobe Illustrator文件(.AI)或Adobe Photoshop封装PostScript®文件(.EPS)。
+* 栅格化Adobe Illustrator文件(.AI)或Adobe Photoshop封装的PostScript®文件(.EPS)。
 * [视频配置文件](/help/assets/dynamic-media/video-profiles.md) 和 [图像配置文件](/help/assets/dynamic-media/image-profiles.md) 分别用于定义视频和图像的处理。
 
-参见 [上传资产](/help/assets/add-assets.md).
+请参阅 [上传资源](/help/assets/add-assets.md).
 
 **要编辑所支持格式的MIME类型，请执行以下操作：**
 
@@ -311,21 +309,21 @@ Dynamic Media色彩管理允许您对资源进行色彩校正。 通过颜色校
    ![MIME类型](assets/mimetypes.png)
 
 1. 在mimeTypes文件夹下，选择MIME类型。
-1. 在“CRXDE Lite”页面的右侧，位于下部：
+1. 在CRXDE Lite页面的右侧，位于下部：
 
    * 双击 **[!UICONTROL 已启用]** 字段。 默认情况下，将启用所有资源MIME类型(设置为 **[!UICONTROL true]**)，这意味着资产将同步到Dynamic Media以供处理。 如果要从处理中排除此资源MIME类型，请将此设置更改为 **[!UICONTROL false]**.
 
-   * 双击 **[!UICONTROL jobParam]** 以打开其关联的文本字段。 参见 [支持的MIME类型](/help/assets/file-format-support.md) 获取可用于给定MIME类型的允许处理参数值列表。
+   * 双击 **[!UICONTROL jobParam]** 以打开其关联的文本字段。 请参阅 [支持的MIME类型](/help/assets/file-format-support.md) 以获取可用于给定MIME类型的允许处理参数值列表。
 
 1. 执行下列操作之一：
    * 重复步骤3-4以编辑更多MIME类型。
-   * 在CRXDE Lite页的菜单栏上，选择 **[!UICONTROL 全部保存]**.
+   * 在CRXDE Lite页面的菜单栏上，选择 **[!UICONTROL 全部保存]**.
 
 1. 在页面的左上角，选择 **[!UICONTROL CRXDE Lite]** 以返回Experience Manageras a Cloud Service。
 
 #### 为不支持的格式添加MIME类型 {#adding-mime-types-for-unsupported-formats}
 
-您可以为Experience Manager Assets中不支持的格式添加自定义MIME类型。 要确保Experience Manager不会删除您在CRXDE Lite中添加的任何新节点，请将MIME类型移动到之前 `image_`. 此外，请确保将其启用值设置为 **[!UICONTROL false]**.
+您可以为Experience Manager Assets中不支持的格式添加自定义MIME类型。 要确保Experience Manager不会删除您在CRXDE Lite中添加的任何新节点，请将MIME类型移动到之前 `image_`. 另外，请确保将其启用值设置为 **[!UICONTROL false]**.
 
 **为不支持的格式添加MIME类型：**
 
@@ -344,7 +342,7 @@ Dynamic Media色彩管理允许您对资源进行色彩校正。 通过颜色校
 
 1. 在 **Adobe CQ Scene7 Asset MIME类型服务** 页面上，选择任意加号图标&lt;+>。 在表格中选择加号以添加新MIME类型的位置微不足道。
 
-   ![Adobe CQ Scene7 Asset Mime类型服务](assets/2019-08-02_16-27-27.png)
+   ![Adobe CQ Scene7资源Mime类型服务](assets/2019-08-02_16-27-27.png)
 
 1. 类型 `DWG=image/vnd.dwg` 在刚刚添加的空文本字段中。
 
@@ -356,7 +354,7 @@ Dynamic Media色彩管理允许您对资源进行色彩校正。 通过颜色校
 
    此时，您可以关闭已打开Adobe Experience Manager Web控制台配置页面的浏览器选项卡。
 
-1. 返回到具有已打开的Experience Manageras a Cloud Service控制台的“浏览器”选项卡。
+1. 返回到具有已打开的Experience Manageras a Cloud Service控制台的浏览器选项卡。
 1. 从Experience Manageras a Cloud Service，转到 **[!UICONTROL “工具”>“常规”>“CRXDE Lite”]**.
 
    如果您无权访问CRXDE Lite，请参阅 [使用CRXDE Lite](/help/implementing/developing/tools/crxde.md).
@@ -367,11 +365,11 @@ Dynamic Media色彩管理允许您对资源进行色彩校正。 通过颜色校
 
    `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-1. 拖动MIME类型 `image_vnd.dwg` 然后把它直接放在上面 `image_` 在树中，如下面的屏幕快照所示。
+1. 拖动MIME类型 `image_vnd.dwg` 将它直接放在上面 `image_` 在树中，如下面的屏幕截图所示。
 
    ![编辑CRXDE Lite的DWG文件](assets/crxdelite_cqdoc-14627.png)
 
-1. 使用MIME类型 `image_vnd.dwg` 仍被选中，从 **[!UICONTROL 属性]** 选项卡，在 **[!UICONTROL 已启用]** 行，在 **[!UICONTROL 值]** 列标题，双击该值。 此 **[!UICONTROL 值]** 下拉列表已打开。
+1. 使用MIME类型 `image_vnd.dwg` 仍被选中，从 **[!UICONTROL 属性]** 选项卡，在 **[!UICONTROL 已启用]** 行，在 **[!UICONTROL 值]** 列标题，双击值。 此 **[!UICONTROL 值]** 此时将打开下拉列表。
 1. 类型 `false` 在字段中(或选择 **[!UICONTROL false]** （从下拉列表中）。
 
    ![在CRXDE Lite中编辑MIME类型](assets/2019-08-02_16-60-30.png)
@@ -380,24 +378,24 @@ Dynamic Media色彩管理允许您对资源进行色彩校正。 通过颜色校
 
 ### （可选）调整Dynamic Media的性能 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-保留Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> Adobe建议通过以下同步性能/可扩展性微调提示来顺利运行：
+保留Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> Adobe建议通过以下同步性能/可扩展性微调提示来运行顺畅：
 
 * [更新预定义的作业参数以处理不同的文件格式](#update-job-para).
 * [更新预定义的Granite工作流队列（视频资产）工作线程](#update-granite-workflow-queue-worker-threads-video)
 * [更新预定义的Granite临时工作流队列（图像和非视频资产）工作线程](#update-granite-transient-workflow-queue-worker-threads-images).
-* [更新到Dynamic Media Classic (Scene7)服务器的最大上传连接数](#update-max-s7-upload-connections).
+* [更新与Dynamic Media Classic (Scene7)服务器的最大上传连接数](#update-max-s7-upload-connections).
 
 #### 更新预定义的作业参数以处理不同的文件格式 {#update-job-para}
 
-您可以调整作业参数，以便在上载文件时更快地处理。 例如，如果上传PSD文件，但不希望将它们作为模板处理，则可以将图层提取设置为false（关闭）。 在这种情况下，调谐的作业参数如下所示： `process=None&createTemplate=false`.
+您可以调整作业参数，以便在上载文件时更快地处理。 例如，如果上传PSD文件，但不希望将它们作为模板处理，则可以将图层提取设置为false（关闭）。 在这种情况下，所调整的作业参数如下所示： `process=None&createTemplate=false`.
 
 如果确实要启用模板创建，请使用以下参数： `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe建议对PDF、PostScript®和PSD文件使用以下“优化”作业参数：
+Adobe建议为PDF、PostScript®和PSD文件使用以下“优化”作业参数：
 
-| 文件类型 | 推荐的作业参数 |
+| 文件类型 | 建议的作业参数 |
 | ---| ---|
 | PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
 | PostScript® | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
@@ -405,17 +403,17 @@ Adobe建议对PDF、PostScript®和PSD文件使用以下“优化”作业参数
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-要更新其中的任何参数，请参阅 [编辑所支持格式的MIME类型](#editing-mime-types-for-supported-formats).
+要更新其中的任何参数，请参见 [编辑所支持格式的MIME类型](#editing-mime-types-for-supported-formats).
 
 另请参阅 [为不支持的格式添加MIME类型](#adding-mime-types-for-unsupported-formats).
 
 #### 更新预定义的Granite工作流队列（视频资产）工作线程 {#update-granite-workflow-queue-worker-threads-video}
 
-Granite工作流队列用于非临时工作流。 在Dynamic Media中，它以前使用来处理视频 **[!UICONTROL Dynamic Media编码视频]** 工作流。
+Granite工作流队列用于非临时工作流。 在Dynamic Media中，它以前使用 **[!UICONTROL Dynamic Media编码视频]** 工作流。
 
 >[!NOTE]
 >
->您必须以产品管理员身份登录Experience Manageras a Cloud Service才能完成此任务。
+>您必须以产品管理员身份登录Experience Manager as a Cloud Service才能完成此任务。
 
 如果您无权访问OSGi，请参阅 [OSGi配置](/help/implementing/developing/components/overview.md#osgi-configuration).
 
@@ -429,7 +427,7 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它以�
 
 1. 在 **[!UICONTROL 最大并行作业数]** 字段，将数字更改为所需的值。
 
-   默认情况下，最大并行作业数取决于可用CPU核心的数量。 例如，在4核服务器上，它分配两个工作线程。 （介于0.0和1.0之间的值基于比率，或者任何大于1的数字都分配工作线程的数量。）
+   默认情况下，最大并行作业数取决于可用CPU核心的数量。 例如，在4核服务器上，它分配两个工作线程。 （介于0.0和1.0之间的值基于比率，或任何大于1的数字均分配工作线程数。）
 
    对于大多数用例，0.5的默认设置就足够了。
 
@@ -443,12 +441,12 @@ Granite传输工作流队列用于 **[!UICONTROL DAM更新资产]** 工作流。
 
 >[!NOTE]
 >
->您必须以产品管理员身份登录Experience Manageras a Cloud Service才能完成此任务。
+>您必须以产品管理员身份登录Experience Manager as a Cloud Service才能完成此任务。
 
 **要更新预定义的Granite临时工作流队列工作线程，请执行以下操作：**
 
-1. 导航到 **Adobe Experience Manager Web控制台配置** 在 `http://<host>:<port>/system/console/configMgr`
-1. 搜索 **队列： Granite临时工作流队列**.
+1. 导航至 **Adobe Experience Manager Web控制台配置** 在 `http://<host>:<port>/system/console/configMgr`
+1. 搜索 **队列：Granite临时工作流队列**.
 
    >[!NOTE]
    >
@@ -466,22 +464,22 @@ Granite传输工作流队列用于 **[!UICONTROL DAM更新资产]** 工作流。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-#### 更新到Dynamic Media Classic (Scene7)服务器的最大上传连接数 {#update-max-s7-upload-connections}
+#### 更新与Dynamic Media Classic (Scene7)服务器的最大上传连接数 {#update-max-s7-upload-connections}
 
-Dynamic Media Classic (Scene7) Upload Connection设置将Experience Manager资源同步到Dynamic Media Classic服务器。
+Dynamic Media Classic (Scene7)上传连接设置将Experience Manager资源同步到Dynamic Media Classic服务器。
 
 >[!NOTE]
 >
->您必须以产品管理员身份登录Experience Manageras a Cloud Service才能完成此任务。
+>您必须以产品管理员身份登录Experience Manager as a Cloud Service才能完成此任务。
 
-**要更新与Dynamic Media Classic (Scene7)服务器的最大上传连接数，请执行以下操作：**
+**要更新到Dynamic Media Classic (Scene7)服务器的最大上传连接数，请执行以下操作：**
 
 1. 导航至 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
-1. 在 **[!UICONTROL 连接数]** 字段，或 **[!UICONTROL 活动作业超时]** 字段（或两者）根据需要更改数字。
+1. 在 **[!UICONTROL 连接数]** 字段，或 **[!UICONTROL 活动作业超时]** 字段，或同时使用两者，根据需要更改数字。
 
-   此 **[!UICONTROL 连接数]** 设置可控制Experience Manager到Dynamic Media上传所允许的最大HTTP连接数。 通常，预定义十个连接的值就足够了。
+   此 **[!UICONTROL 连接数]** 设置可控制Experience Manager到Dynamic Media上传时允许的最大HTTP连接数。 通常，预定义十个连接值就足够了。
 
-   此 **[!UICONTROL 活动作业超时]** 设置确定上传的Dynamic Media资源在投放服务器中发布的等待时间。 此值默认为2100秒或35分钟。
+   此 **[!UICONTROL 活动作业超时]** 设置确定在投放服务器中发布已上传Dynamic Media资源的等待时间。 此值默认为2100秒或35分钟。
 
    对于大多数用例，设置2100就足够了。
 

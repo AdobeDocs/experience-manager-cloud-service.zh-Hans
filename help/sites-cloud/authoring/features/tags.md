@@ -2,10 +2,10 @@
 title: 使用标记
 description: 标记是用于对网站中的内容进行分类的简单快捷方法
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '563'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 96%
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: 将内容片段导出到 Adobe Target
-description: 了解如何将您的内容片段导出到Adobe Target，以测试和个性化体验。
+description: 了解如何将内容片段导出到 Adob​​e Target，以测试和个性化体验。
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2231'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -304,7 +304,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
+   >If the framework you attached to the page was not activated yet, a wizard opens which lets you publish it as well.
 -->
 
 ## 将内容片段导出到 Adobe Target {#exporting-a-content-fragment-to-adobe-target}

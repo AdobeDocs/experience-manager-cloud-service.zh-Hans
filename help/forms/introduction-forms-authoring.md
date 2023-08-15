@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 86da8e784e3e5ff034efdb9186cf134d4b1c6e9c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2486'
-ht-degree: 100%
+source-wordcount: '2482'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ XML 和 JSON 架构代表组织中的后端系统在其中生成或使用数据�
 
 ### 侧栏 {#sidebar}
 
-侧栏可让您：
+侧栏允许您
 
 * 在您的 AEM 数字资源管理 (DAM) 存储库中搜索、查看和使用资源。
 * 查看面板、组件、字段和布局等表单内容。
@@ -94,7 +94,7 @@ XML 和 JSON 架构代表组织中的后端系统在其中生成或使用数据�
 
    * **数据模型对象**
 可让您查看表单模型层级。
-它可让您将表单模型元素拖放到自适应表单上。已添加的元素会自动转换为表单组件，同时保留其原始属性。当表单使用 XML 架构、JSON 架构或 XDP 模板时，您会看到数据模型对象。
+它可让您将表单模型元素拖放到自适应表单上。 已添加的元素会自动转换为表单组件，同时保留其原始属性。当表单使用 XML 架构、JSON 架构或 XDP 模板时，您会看到数据模型对象。
 
 * **属性浏览器**
 
@@ -178,7 +178,7 @@ XML 和 JSON 架构代表组织中的后端系统在其中生成或使用数据�
   </tr>
   <tr>
    <td>图像</td>
-   <td>可让您插入图像。</td>
+   <td>允许您插入图像。</td>
   </tr>
   <tr>
    <td>图像选择</td>
@@ -234,7 +234,7 @@ XML 和 JSON 架构代表组织中的后端系统在其中生成或使用数据�
   </tr>
   <tr>
    <td>文本</td>
-   <td>可让您指定静态文本。</td>
+   <td>用于指定静态文本。</td>
   </tr>
   <tr>
    <td>“提交”按钮</td>

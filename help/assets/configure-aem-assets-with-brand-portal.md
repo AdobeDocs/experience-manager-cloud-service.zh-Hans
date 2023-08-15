@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2562'
 ht-degree: 9%
 
 ---
@@ -23,24 +23,24 @@ ht-degree: 9%
 
 ## 使用Cloud Manager激活Brand Portal {#activate-brand-portal}
 
-Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Cloud Service] 实例。 激活工作流在后端创建所需的配置(授权令牌、IMS配置和Brand Portal云服务)，并在Cloud Manager中反映Brand Portal租户的状态。 激活Brand Portal可让Experience Manager Assets用户将资产发布到Brand Portal，并将它们分发给Brand Portal用户。
+Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Cloud Service] 实例。 激活工作流在后端创建所需的配置(授权令牌、IMS配置和Brand Portal云服务)，并在Cloud Manager中反映Brand Portal租户的状态。 激活Brand Portal可让Experience Manager Assets用户将资源发布到Brand Portal，并将它们分发给Brand Portal用户。
 
 **前提条件**
 
-您需要满足以下条件，才能在Experience Manager Assets as a上激活Brand Portal [!DNL Cloud Service] 实例：
+要将Brand Portal激活到Experience Manager Assets as a，您需要以下项 [!DNL Cloud Service] 实例：
 
-* 启动并运行的Experience Manager Assets as a [!DNL Cloud Service] 实例。
-* 有权访问Cloud Manager的用户，已分配给Cloud Manager产品的配置文件。 参见 [访问Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) 了解更多信息。
+* 已启动并运行的Experience Manager Assets as a [!DNL Cloud Service] 实例。
+* 有权访问Cloud Manager的用户，已分配给Cloud Manager产品的配置文件。 请参阅 [访问Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) 以了解更多信息。
 
 >[!NOTE]
 >
->Experience Manager Assets as a需要配置的生产环境 [!DNL Cloud Service] 用于与Brand Portal租户连接的实例。
+>Experience Manager Assets as a需要配置的生产环境 [!DNL Cloud Service] 实例以连接到Brand Portal租户。
 
 **激活Brand Portal的步骤**
 
-您可以在为Experience Manager Assets as a创建生产环境时激活Brand Portal [!DNL Cloud Service] 实例，或单独使用。 假设环境已创建，现在需要您激活Brand Portal。
+您可以在为Experience Manager Assets as a创建生产环境时激活Brand Portal [!DNL Cloud Service] 实例或单独。 假设环境已创建，此时您需要激活Brand Portal。
 
-1. 登录AdobeCloud Manager并导航到 **[!UICONTROL 环境]**.
+1. 登录AdobeCloud Manager并导航至 **[!UICONTROL 环境]**.
 
    此 **[!UICONTROL 环境]** 页面显示所有现有环境的列表。
 
@@ -61,9 +61,9 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 >
 >必须在与Experience Manager Assets as a相同的IMS组织上激活Brand Portal [!DNL Cloud Service] 实例。
 >
->如果您现有Brand Portal云配置([使用Adobe Developer控制台手动配置](#manual-configuration))，以及您的Experience Manager Assets as a [!DNL Cloud Service] 为另一个IMS组织(org2-new)配置了实例，从Cloud Manager激活Brand Portal会将Brand Portal IMS组织重置为 `org2-new`. 尽管手动配置的云配置位于 `org1-existing` 在Experience Manager Assets创作实例中可见，但在从Cloud Manager激活Brand Portal后将不再使用。
+>如果您现有Brand Portal云配置([使用Adobe Developer控制台手动配置](#manual-configuration))以及Experience Manager Assets as a [!DNL Cloud Service] 为另一个IMS组织(org2-new)配置了实例，从Cloud Manager激活Brand Portal会将Brand Portal IMS组织重置为 `org2-new`. 尽管手动配置的云配置位于 `org1-existing` 在Experience Manager Assets创作实例中可见，但在从Cloud Manager激活Brand Portal后将不再使用。
 >
->如果现有Brand Portal云配置和Experience Manager Assets as a [!DNL Cloud Service] 实例使用相同的IMS组织(org1)，您只需从Cloud Manager激活Brand Portal即可。
+>如果现有Brand Portal云配置和Experience Manager Assets as a [!DNL Cloud Service] 实例使用的是相同的IMS组织(org1)，您只需从Cloud Manager激活Brand Portal即可。
 >
 >请勿修改任何自动生成的设置。
 
@@ -78,7 +78,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 
 在Cloud Manager中激活Brand Portal租户后，您可以从Admin Console或直接使用租户URL登录到Brand Portal。
 
-您的Brand Portal租户的默认URL是： `https://<tenant-id>.brand-portal.adobe.com/`.
+Brand Portal租户的默认URL为： `https://<tenant-id>.brand-portal.adobe.com/`.
 
 其中，租户ID是IMS组织。
 
@@ -88,7 +88,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 1. 从左侧面板中，选择 **[!UICONTROL ADOBE EXPERIENCE MANAGER BRAND PORTAL - BRAND PORTAL]**.
 1. 单击 **[!UICONTROL 转到Brand Portal]** 直接在浏览器中打开Brand Portal。
 
-   或从以下位置复制Brand Portal租户URL： **[!UICONTROL 转到Brand Portal]** 将其链接并粘贴到浏览器中以打开Brand Portal界面。
+   或从复制Brand Portal租户URL **[!UICONTROL 转到Brand Portal]** 将其链接并粘贴到浏览器中以打开Brand Portal界面。
 
    ![访问Brand Portal](assets/access-bp-on-cloud.png)
 
@@ -99,7 +99,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 
 1. 登录Experience Manager Assets。
 
-1. 从 **工具** 面板，导航到 **[!UICONTROL 部署]** > **[!UICONTROL 分发]**.
+1. 从 **工具** 面板，导航到 **[!UICONTROL 部署]** > **[!UICONTROL 分布]**.
 
    ![导航到分发选项](assets/test-bpconfig1.png)
 
@@ -113,15 +113,15 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
    您可以在 **[!UICONTROL 状态]** 选项卡。
 
    分发代理包含两个队列：
-   * **processing-queue**：用于将资源分发到Brand Portal。
+   * **processing-queue**：用于将资源分配到Brand Portal。
 
    * **错误队列**：对于分发失败的资产。
 
    >[!NOTE]
    >
-   >建议检查故障并清除 **错误队列** 定期。
+   >建议检查故障并清除 **错误队列** 定期地。
 
-   ![处理资产分发队列](assets/test-bpconfig3.png)
+   ![处理用于分配资产的队列](assets/test-bpconfig3.png)
 
 1. 验证Experience Manager Assets as a之间的连接 [!DNL Cloud Service] 和Brand Portal，单击 **[!UICONTROL 测试连接]** 图标。
 
@@ -133,7 +133,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
    >
    >请避免禁用分发代理，因为这可能导致资产分发（在队列中运行）失败。
 
-验证Experience Manager Assets as a之间的关系 [!DNL Cloud Service] 实例和Brand Portal租户，将资产从Experience Manager Assets发布到Brand Portal。 如果连接成功，则发布的资源将在Brand Portal界面中可见。
+验证Experience Manager Assets as a之间的关系 [!DNL Cloud Service] 实例和Brand Portal租户，将资源从Experience Manager Assets发布到Brand Portal。 如果连接成功，则发布的资源将在Brand Portal界面中可见。
 
 
 您现在可以：
@@ -145,7 +145,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 * [将预设、架构和 Facet 发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [将标记发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-参见 [Brand Portal文档](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 了解更多信息。
+请参阅 [Brand Portal文档](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 以了解更多信息。
 
 **分发日志**
 
@@ -153,14 +153,14 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 
 现在，让我们将资源从Experience Manager Assets发布到Brand Portal并查看日志。
 
-1. 请按照（从1到4）中的步骤操作，如 **测试连接** 部分，然后导航到分发代理页面。
+1. 请按照中的步骤（从1到4）操作 **测试连接** 部分，然后导航到分发代理页面。
 1. 单击 **[!UICONTROL 日志]** 查看处理和错误日志。
 
    ![处理和错误日志](assets/test-bpconfig5.png)
 
 分发代理已生成以下日志：
 
-* 信息：这是系统生成的日志，会在成功配置分发代理时触发。
+* 信息：这是系统生成的日志，在成功配置分发代理时触发。
 * DSTRQ1（请求1）：测试连接时触发。
 
 发布资产时，会生成以下请求和响应日志：
@@ -168,20 +168,20 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 **分发代理请求**：
 
 * DSTRQ2（请求 2）：触发资产发布请求。
-* DSTRQ3（请求3）：系统会触发另一个请求，以发布Experience Manager Assets文件夹（资产所在文件夹），并复制Brand Portal中的文件夹。
+* DSTRQ3（请求3）：系统会触发另一个请求，以发布Experience Manager Assets文件夹（资产位于该文件夹中），并复制Brand Portal中的文件夹。
 
 **分发代理响应**：
 
 * queue-bpdistributionagent0(DSTRQ2)：将资产发布到 Brand Portal。
-* queue-bpdistributionagent0 (DSTRQ3)：系统会复制Brand Portal中的Experience Manager Assets文件夹（包含资源）。
+* queue-bpdistributionagent0 (DSTRQ3)：系统会复制Brand Portal中的Experience Manager Assets文件夹（包含资产）。
 
-在上述示例中，还会触发其他请求和响应。 由于资产是首次发布，系统在Brand Portal中找不到父文件夹（添加路径），因此，触发了另一个请求，即在Brand Portal中创建在其中发布资产的同名父文件夹。
+在上述示例中，还会触发其他请求和响应。 由于资产是首次发布，系统在Brand Portal中找不到父文件夹（添加路径），因此，触发了一个额外的请求，即在Brand Portal中创建要将资产发布到的同名父文件夹。
 
 >[!NOTE]
 >
->如果父文件夹在Brand Portal中不存在或在Experience Manager Assets中已被修改，则会生成其他请求。
+>如果父文件夹在Brand Portal中不存在或在Experience Manager Assets中被修改，则会生成其他请求。
 
-以及在Experience Manager Assets as a上激活Brand Portal的自动化工作流 [!DNL Cloud Service]，可以使用其他方法手动配置Experience Manager Assets as a [!DNL Cloud Service] 使用Adobe Developer Console的Brand Portal时，不再建议这样做。
+以及在Experience Manager Assets as a上激活Brand Portal的自动化工作流 [!DNL Cloud Service]，则存在其他方法可手动配置Experience Manager Assets as a [!DNL Cloud Service] 不再建议使用Brand Portal的Adobe Developer控制台来实施。
 
 >[!NOTE]
 >
@@ -189,9 +189,9 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 
 ## 使用Adobe Developer控制台手动配置 {#manual-configuration}
 
-以下部分介绍了如何手动配置Experience Manager Assets as a [!DNL Cloud Service] 使用Adobe Developer Console的Brand Portal。
+以下部分将介绍如何手动配置Experience Manager Assets as a [!DNL Cloud Service] 使用Adobe Developer Console的Brand Portal。
 
-更早版本，Experience Manager Assets as a [!DNL Cloud Service] 是通过Adobe Developer控制台使用Brand Portal手动配置的，该控制台可获取Adobe的Identity Management服务(IMS)帐户令牌以授权Brand Portal租户。 它需要在Experience Manager Assets和Adobe Developer Console中进行配置。
+更早版本，Experience Manager Assets as a [!DNL Cloud Service] 是通过Brand Portal控制台使用Adobe Developer手动配置的，该控制台可获取Adobe的Identity Management Services (IMS)帐户令牌以授权Brand Portal租户。 它需要在Experience Manager Assets和Adobe Developer Console中进行配置。
 
 1. 在Experience Manager Assets中，创建IMS帐户并生成公钥（证书）。
 1. 在Adobe Developer Console中，为您的Brand Portal租户（组织）创建一个项目。
@@ -209,7 +209,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 
 您需要以下各项才能使用Brand Portal配置Experience Manager Assets：
 
-* 启动并运行的Experience Manager Assets as a [!DNL Cloud Service] 实例
+* 已启动并运行的Experience Manager Assets as a [!DNL Cloud Service] 实例
 * Brand Portal租户URL
 * 对Brand Portal租户的IMS组织具有系统管理员权限的用户
 
@@ -239,7 +239,7 @@ IMS 配置包括两个步骤：
 1. 从 **工具** 面板，导航到 **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**.
 1. 在“Adobe IMS配置”页面中，单击 **[!UICONTROL 创建]**. 它将重定向到 **[!UICONTROL Adobe IMS技术帐户配置]** 页面。 默认情况下， **证书** 选项卡打开。
 1. 选择 **[!UICONTROL AdobeBrand Portal]** 在 **[!UICONTROL 云解决方案]** 下拉列表。
-1. 选择 **[!UICONTROL 创建新证书]** 复选框，并指定 **别名** 用于公钥。 别名用作公钥的名称。
+1. 选择 **[!UICONTROL 创建新证书]** 复选框，并指定 **别名** 用于公共密钥。 别名将用作公钥的名称。
 1. 单击&#x200B;**[!UICONTROL 创建证书]**。然后，单击 **[!UICONTROL 确定]** 以生成公钥。
 
    ![创建证书](assets/ims-config2.png)
@@ -252,15 +252,15 @@ IMS 配置包括两个步骤：
 
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
 
-   在 **帐户** 选项卡中创建的Adobe IMS帐户需要在Adobe Developer Console中生成的服务帐户凭据。 暂时保持此页面打开。
+   在 **帐户** 选项卡中创建的Adobe IMS帐户需要在Adobe Developer控制台中生成的服务帐户凭据。 暂时保持此页面打开。
 
-   打开新选项卡并 [在Adobe Developer控制台中创建服务帐户(JWT)连接](#createnewintegration) 获取用于配置IMS帐户的凭据和JWT有效负载。
+   打开新选项卡并 [在Adobe Developer控制台中创建服务帐户(JWT)连接](#createnewintegration) 获取用于配置IMS帐户的凭据和JWT有效负荷。
 
 ### 创建服务帐户(JWT)连接 {#createnewintegration}
 
-在Adobe Developer控制台中，项目和API是在Brand Portal租户（组织）级别配置的。 配置API会创建服务帐户(JWT)连接。 配置API的方法有两种：生成密钥对（私钥和公钥）或上传公钥。 要使用Brand Portal配置Experience Manager Assets，您必须在Experience Manager Assets中生成公钥（证书），并通过上传公钥在Adobe Developer控制台中创建凭据。 在Experience Manager Assets中配置IMS帐户需要这些凭据。 配置IMS帐户后，您可以在Experience Manager Assets中配置Brand Portal云服务。
+在Adobe Developer控制台中，项目和API在Brand Portal租户（组织）级别配置。 配置API将创建服务帐户(JWT)连接。 配置API的方法有两种：生成密钥对（私钥和公钥）或上传公钥。 要使用Brand Portal配置Experience Manager Assets，您必须在Experience Manager Assets中生成公钥（证书），并通过上传公钥在Adobe Developer Console中创建凭据。 在Experience Manager Assets中配置IMS帐户需要这些凭据。 配置IMS帐户后，您可以在Experience Manager Assets中配置Brand Portal云服务。
 
-执行以下步骤可生成服务帐户凭据和JWT有效负载：
+执行以下步骤以生成服务帐户凭据和JWT有效负载：
 
 1. 使用IMS组织(Adobe Developer租户)的系统管理员权限登录到Brand Portal控制台。 默认URL为 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
@@ -303,7 +303,7 @@ IMS 配置包括两个步骤：
 
    ![服务帐户凭据](assets/service-account5.png)
 
-1. 导航到 **[!UICONTROL 生成JWT]** 制表并复制 **[!UICONTROL JWT有效负荷]** 信息。
+1. 导航至 **[!UICONTROL 生成JWT]** 制表并复制 **[!UICONTROL JWT有效负荷]** 信息。
 
 您现在可以将客户端ID（API密钥）、客户端密钥和JWT有效负载用于 [配置IMS帐户](#create-ims-account-configuration) 在Experience Manager Assets中。
 
@@ -351,15 +351,15 @@ IMS 配置包括两个步骤：
 * [获取公共证书](#public-certificate)
 * [创建服务帐户(JWT)连接](#createnewintegration)
 
-执行以下步骤来配置IMS帐户。
+执行以下步骤以配置IMS帐户。
 
-1. 打开IMS配置并导航到 **[!UICONTROL 帐户]** 选项卡。 您保持页面打开的时间 [获取公共证书](#public-certificate).
+1. 打开IMS配置并导航到 **[!UICONTROL 帐户]** 选项卡。 你保持页面打开 [获取公共证书](#public-certificate).
 
 1. 为 IMS 帐户指定&#x200B;**[!UICONTROL 标题]**。
 
    在 **[!UICONTROL 授权服务器]** 字段中，指定URL： [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   在中指定客户端ID **[!UICONTROL API密钥]** 字段， **[!UICONTROL 客户端密码]**、和 **[!UICONTROL 有效负荷]** （JWT有效负荷）之前复制的时间 [创建服务帐户(JWT)连接](#createnewintegration).
+   在中指定客户端ID **[!UICONTROL API密钥]** 字段， **[!UICONTROL 客户端密码]**、和 **[!UICONTROL 有效负荷]** （JWT有效负荷）您已复制的时间 [创建服务帐户(JWT)连接](#createnewintegration).
 
    单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -370,7 +370,7 @@ IMS 配置包括两个步骤：
 
 1. 选择IMS帐户配置并单击 **[!UICONTROL 检查运行状况]**.
 
-   单击 **[!UICONTROL Check]** 对话框中。 成功配置后，将显示一条消息，指出 *已成功检索令牌*.
+   单击 **[!UICONTROL Check]** 对话框中。 成功配置时，将显示一条消息： *已成功检索令牌*.
 
    ![Adobe IMS配置检查运行状况。](assets/create-new-integration5.png)
 
@@ -382,17 +382,17 @@ IMS 配置包括两个步骤：
 
 ### 配置云服务 {#configure-the-cloud-service}
 
-执行以下步骤来配置Brand Portal云服务：
+执行以下步骤以配置Brand Portal云服务：
 
 1. 登录Experience Manager Assets。
 
-1. 从 **工具** 面板，导航到 **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. 从 **工具** 面板，导航到 **[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**.
 
-1. 在“Brand Portal配置”页面中，单击 **[!UICONTROL 创建]**.
+1. 在Brand Portal配置页面中，单击 **[!UICONTROL 创建]**.
 
 1. 指定配置的&#x200B;**[!UICONTROL 标题]**。
 
-   选择您在以下时间创建的IMS配置： [配置IMS帐户](#create-ims-account-configuration).
+   选择您在创建IMS配置时 [配置IMS帐户](#create-ims-account-configuration).
 
    在 **[!UICONTROL 服务URL]** 字段中，指定您的Brand Portal租户（组织）URL。
 
@@ -404,7 +404,7 @@ IMS 配置包括两个步骤：
 
 您现在可以通过检查分发代理并将资产发布到Brand Portal来测试配置。
 
-**如果启用了安全预览，则SPS中的允许列表出口IP**
+**如果启用了安全预览，则在SPS中允许列表出口IP**
 如果将Dynamic Media-Scene7与 [已启用安全预览](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) （对于公司），则建议Scene7公司管理员 [允许列表公共出口IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) 适用于使用SPS (Scene7 Publishing System) Flash UI的各个地区。
 出口IP如下所示：
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 85%
+source-wordcount: '836'
+ht-degree: 80%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 85%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 此 [体验片段的个性化选项卡](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 允许体验片段编辑器的分段规范功能和创建嵌套体验片段的灵活性，从而可以为多个片段创建页眉和页脚变化。 在此功能推出之前，AEM 提供的个性化仅适用于网站页面，不适用于体验片段。
+* 此 [体验片段的个性化选项卡](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 允许体验片段编辑器进行分段详述，并灵活创建嵌套体验片段，从而可以为多个片段创建页眉和页脚变化。 在此功能推出之前，AEM 提供的个性化仅适用于网站页面，不适用于体验片段。
 
 * [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在使用户能够有效地管理翻译的内容片段。 还提供一键访问以查看所有语言副本。用户还可按其感兴趣的区域设置筛选表格视图。
 
@@ -49,7 +49,7 @@ ht-degree: 85%
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* Experience Manager Assets 现在允许您上传其他受支持格式类型的文档，并[使用随附的 Document Cloud 查看器预览文档](/help/assets/manage-pdf-documents.md)。支持的格式类型包括 TXT、RTF、DOC、DOCX、PPT、PPTX、XLS 和 XLSX。
+* Experience Manager Assets现在允许您上传其他受支持格式类型的文档，并且[使用包含的Document Cloud查看器预览文档](/help/assets/manage-pdf-documents.md). 支持的格式类型包括 TXT、RTF、DOC、DOCX、PPT、PPTX、XLS 和 XLSX。
 
   ![其他格式的 PDF 演绎版](/help/release-notes/assets/multi-page-other-formats.png)
 
@@ -64,9 +64,9 @@ ht-degree: 85%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms]预发行渠道中提供的新功能 {#prerelease-features-forms}
+### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
 
-* **自适应表单模板编辑器**：模板编辑器允许您预定义组织自适应表单的基本结构和外观。 此版本的模板编辑器有以下改进：
+* **自适应Forms模板编辑器**：模板编辑器可让您预定义组织自适应Forms的基本结构和外观。 此版本的模板编辑器有以下改进：
    * **[模板编辑器中的表单数据模型](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**：您可以在模板编辑器中将表单数据模型架构关联到自适应表单模板。 这样有助于减少创建自适应表单所需的时间。该选项也已添加到自适应表单编辑器中，用户可选择或更改现有表单的表单数据模型。
    * **[模板编辑器中的记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**：您现在可以为使用模板创建的所有表单标准化记录文档生成的过程。这有助于增强组织要求的合规性和标准化。
 
@@ -86,11 +86,11 @@ ht-degree: 85%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* AEM as a Cloud Service （创作服务）现与 Unified Shell 集成，可改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅AEM as a [Unified Shell上的Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 了解更多详细信息。
+* AEM as a Cloud Service （创作服务）现与 Unified Shell 集成，可改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅AEM as a [Unified Shell上的Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
 
-* 如先前在发行说明中所述，使用复制代理管理屏幕或复制API分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）现在已被弃用和强制使用。 参见 [管理发布](/help/operations/replication.md#manage-publication) 或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) 了解复制这些大型内容包的建议方法。
+* 如先前在发行说明中所述，使用复制代理管理屏幕或复制API分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）现在已弃用和强制使用。 请参阅 [管理发布](/help/operations/replication.md#manage-publication) 或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) 了解复制这些大型内容包的建议方法。
 
-* Dispatcher 配置现在引用了一个文件，其中列出了常见的营销活动查询参数。客户可以选择取消注释与其相关的参数，从而实现更好的缓存。 参见 [营销活动参数](/help/implementing/dispatcher/caching.md#marketing-parameters) 了解更多详细信息。
+* Dispatcher 配置现在引用了一个文件，其中列出了常见的营销活动查询参数。客户可以选择取消注释与其相关的参数，从而实现更好的缓存。 请参阅 [营销活动参数](/help/implementing/dispatcher/caching.md#marketing-parameters) 以了解更多详细信息。
 
 ## Cloud Manager {#cloud-manager}
 

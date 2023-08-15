@@ -4,10 +4,10 @@ description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 100%
+source-wordcount: '1420'
+ht-degree: 95%
 
 ---
 
@@ -82,7 +82,7 @@ MSM 可通过两种方式来帮助创建多语言网站：
 在创建语言母版时，请记住以下几点：
 
 * 虽然 MSM 本身&#x200B;**不提供内容翻译**，但它可以与第三方翻译连接器集成。请注意以下事项：
-   * MSM 允许您在页面和/或组件级别取消继承。这有助于防止在下一次转出时覆盖已翻译的内容（来自 Live Copy，以及来自 Blueprint 的尚未翻译的内容）。
+   * MSM允许您在页面和/或组件级别取消继承。 这有助于防止在下一次转出时覆盖已翻译的内容（来自 Live Copy，以及来自 Blueprint 的尚未翻译的内容）。
       * 一些第三方翻译连接器会自动实施对 MSM 继承的管理。
       * 请与您的翻译服务提供商联系以获取更多信息。
       * 创建并翻译语言母版的另一种方法是将语言副本与 AEM 的现成的翻译集成框架结合使用。
@@ -113,9 +113,9 @@ MSM 可通过两种方式来帮助创建多语言网站：
    * 不要向此配置添加其他操作。
 1. 定位新配置。
    * 要在 Live Copy 中的旧位置删除相应页面时完全转出页面移动，请执行以下操作：
-      * 将新创建的配置放置在标准转出配置的前面。标准转出配置将负责删除旧位置的页面。
+      * 将新创建的配置放置在标准转出配置之前。 标准转出配置将负责删除旧位置的页面。
       * 要转出页面移动并将相应页面保留在 Live Copy 中的旧位置（实质上是复制内容），请执行以下操作：
-         * 将新创建的配置放置在标准转出配置的后面。这将确保未在 Live Copy 中删除内容或从发布中停用内容。
+         * 将新创建的配置放置在标准转出配置的后面。 这将确保未在 Live Copy 中删除内容或从发布中停用内容。
 
 ## 自定义转出 {#customizing-rollouts}
 
@@ -140,7 +140,7 @@ MSM 转出配置是高度自定义的。您应意识到，自动化转出可能�
 
 ### 节点类型/属性 {#node-types-properties}
 
-除了自定义转出操作之外，MSM 还允许您自定义正在转出的节点属性。[MSM OSGi 配置允许您排除](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization)从源复制到 Live Copy 的节点类型。
+除了自定义转出操作之外，MSM还允许您自定义正在转出的节点属性。 此 [MSM OSGi配置允许您排除节点类型](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) 从源复制到Live Copy的过程中。
 
 ## 更多信息 {#further-information}
 

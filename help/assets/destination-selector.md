@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 的目标选择器
 description: 使用 AEM 目标选择器显示和选择可用作原始资源副本的资源。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 93%
+source-wordcount: '1902'
+ht-degree: 86%
 
 ---
 
@@ -144,7 +144,7 @@ interface SelectedDestination {
 
 此示例说明如何在 Unified Shell 下运行 [!DNL Adobe] 应用程序时或在您已生成用于身份验证的 `imsToken` 时，将目标选择器与非 SUSI 流结合使用。
 
-使用以下工具在您的代码中包含目标选择器包 `script` 标记，如中所示 _第6-15行_ 下面示例中的。 加载脚本后， `PureJSSelectors` 全局变量可供使用。 定义目标选择器 [属性](#destination-selector-properties) 如所示 _第16-23行_. `imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现目标选择器，请调用 `renderDestinationSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。目标选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
+使用以下方式在您的代码中包含目标选择器包 `script` 标记，如中所示 _第6-15行_ 例如下面的示例。 加载脚本后， `PureJSSelectors` 全局变量可供使用。 定义目标选择器 [属性](#destination-selector-properties) 如中所示 _第16-23行_. `imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现目标选择器，请调用 `renderDestinationSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。目标选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
 
 通过执行这些步骤，您可以在 [!DNL Adobe] 应用程序中将目标选择器用于非 SUSI 流。
 
@@ -186,18 +186,18 @@ interface SelectedDestination {
 | 属性 | 类型 | 必需 | 默认 | 描述 |
 |---|---|---|---|---|
 | *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。此 `imsOrg` 需要密钥来验证您访问的组织是否处于Adobe IMS下。 |
-| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。`imsToken` 如果您使用的是SUSI流，则不是必需的。 但是，如果您使用的是非SUSI流，则需要使用此参数。 |
+| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。`imsToken` 如果您使用的是SUSI流，则不是必需的。 但是，如果您使用的是非SUSI流，则需要使用。 |
 | *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。`apiKey` 如果您使用的是SUSI流，则不是必需的。 但是，它在非 SUSI 流程中是必需的。 |
 | *rootPath* | 字符串 | 否 | /content/dam/ | 目标选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径， `/content/dam/marketing/subfolder/`，目标选择器不允许您遍历任何父文件夹，但仅显示子文件夹。 |
 | *hasMore* | 布尔型 | 否 | | 当应用程序有更多内容要显示时，您可以使用此属性添加加载器，并加载内容以使其在应用程序中可见。它是一个表示内容加载正在进行的指示器。 |
 | *orgName* | 布尔型 | 否 | | 它是与 AEM 关联的组织名称（可能是 orgID） |
 | *initRepoID* | 字符串 | 否 | | 这是您要在默认初始视图中使用的资源存储库的路径 |
-| *onCreateFolder* | 字符串 | 否 | | `onCreateFolder` 属性允许您添加在应用程序中添加新文件夹的图标。 |
+| *onCreateFolder* | 字符串 | 否 | | 此 `onCreateFolder` 属性允许您添加图标，以在应用程序中添加新文件夹。 |
 | *onConfirm* | 字符串 | 否 | | 当您点击确认按钮时，这是一个回调。 |
 | *confirmDisabled* | 字符串 | 否 | | 此属性可控制确认按钮的切换。 |
 | *viewType* | 字符串 | 否 | | `viewType` 属性用于指定用于显示资源的视图。 |
 | *viewTypeOptions* | 字符串 | 否 | | 此属性与 `viewType` 属性相关。您可以指定一个或多个视图来显示资源。可用的 viewTypeOptions 有：列表视图、网格视图、图库视图、瀑布视图和树视图。 |
-| *itemNameFormatter* | 字符串 | 否 | | 此属性允许您格式化项目名称 |
+| *itemNameFormatter* | 字符串 | 否 | | 此属性允许您设置项名称的格式 |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |  | 如果 OOTB 翻译不足以满足您的应用程序需求，您可以公开一个接口，利用该接口可通过 `i18nSymbols` 属性传递自定义本地化值。通过此接口传递值将覆盖提供的默认翻译，而改用您自己的翻译。要执行覆盖，您必须将一个有效的[消息描述符](https://formatjs.io/docs/react-intl/api/#message-descriptor)对象传递到要覆盖的 `i18nSymbols` 键。 |
 | *inlineAlertSetup* | 字符串 | 否 | | 它可添加您要在应用程序中传递的警报消息。例如，添加一条警报消息，提示您没有访问该文件夹的权限。 |
 | *intl* | 对象 | 否 | | 目标选择器提供默认的 OOTB 翻译。您可以通过用 `intl.locale` 属性提供有效的区域设置字符串来选择翻译语言。例如：`intl={{ locale: "es-es" }}` </br></br> 支持的区域设置字符串遵循语言标准名称表示的 [ISO 639 - 代码](https://www.iso.org/iso-639-language-codes.html)。</br></br> 支持的区域设置列表：英语 -“en-us”（默认）西班牙语 -“es-es”德语 -“de-de”法语 -“fr-fr”意大利语 -“it-it”日语 -“ja-jp”朝鲜语 -“ko-kr”葡萄牙语 -“pt-br”中文（繁体）-“zh-cn”中文（台湾地区）-“zh-tw” |
@@ -208,7 +208,7 @@ interface SelectedDestination {
 
 ### 示例 1：在目标选择器中创建文件夹
 
-目标选择器允许您创建一个新文件夹以在特定位置上传、移动或复制资源。
+目标选择器可让您创建新文件夹以在特定位置上传、移动或复制资产。
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -241,7 +241,7 @@ interface SelectedDestination {
 
 ### 搜索栏 {#search-bar}
 
-目标选择器允许您在所选存储库中对资源进行全文搜索。例如，如果您在搜索栏中键入关键字 `wave`，则将显示任意元数据属性中提及的所有带 `wave` 关键字的资源。
+通过目标选择器，您可以对所选存储库中的资源执行全文搜索。 例如，如果您在搜索栏中键入关键字 `wave`，则将显示任意元数据属性中提及的所有带 `wave` 关键字的资源。
 
 ### 排序 {#sorting}
 
@@ -249,7 +249,7 @@ interface SelectedDestination {
 
 ### 资源存储库 {#assets-repo}
 
-目标选择器还允许您查看 AEM 应用程序中可用的所选存储库的数据。您可以使用 `repositoryID` 属性来初始化要在目标选择器的第一个实例中查看的目标文件夹的路径。
+目标选择器还允许您查看AEM应用程序中提供的所选存储库的数据。 您可以使用 `repositoryID` 属性来初始化要在目标选择器的第一个实例中查看的目标文件夹的路径。
 
 ### 添加后缀或前缀 {#add-suffix-or-prefix}
 
@@ -257,11 +257,11 @@ interface SelectedDestination {
 
 ### 创建新文件夹 {#create-new-folder}
 
-它允许您在 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的目标文件夹中创建一个新文件夹。
+它允许您在的目标文件夹中创建新文件夹 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### 视图类型 {#types-of-view}
 
-目标选择器允许您在四种不同的视图中查看资源：
+通过目标选择器，您可以在四种不同的视图中查看资源：
 
 * **![列表视图](assets/do-not-localize/list-view.png)[!UICONTROL 列表视图]**：列表视图在单个列中显示可滚动的文件和文件夹。
 * **![网格视图](assets/do-not-localize/grid-view.png)[!UICONTROL 网格视图]**：网格视图在行和列的网格中显示可滚动的文件和文件夹。
@@ -270,8 +270,8 @@ interface SelectedDestination {
 
 ### 信息 {#info}
 
-信息或信息图标允许您查看所选资源的元数据。它包括各种详细信息，例如维度、大小、描述、路径、修改日期和创建日期。在上传或复制或创建新资源时提供元数据信息。
+通过信息或信息图标，可查看所选资源的元数据。 它包括各种详细信息，例如维度、大小、描述、路径、修改日期和创建日期。在上传或复制或创建新资源时提供元数据信息。
 
 ### 选择文件夹 {#select-folder}
 
-“选择”文件夹按钮允许您选择资源，以便在目标选择器上执行与[属性](#destination-selector-properties)相关的各种操作。
+通过选择文件夹按钮，您可以选择资源以执行与关联的各种操作 [属性](#destination-selector-properties) 在目标选择器上。

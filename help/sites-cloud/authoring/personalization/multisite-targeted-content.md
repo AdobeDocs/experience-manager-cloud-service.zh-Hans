@@ -2,10 +2,10 @@
 title: 在多个站点中使用目标内容
 description: 如果您需要在多个站点间管理目标内容（例如活动、体验和优惠），则可以利用 AEM 中内置的目标内容多站点支持功能
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: ht
-source-wordcount: '2891'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '2890'
+ht-degree: 99%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 
 ## 示例：根据地域定位内容 {#example-targeting-content-based-on-geography}
 
-使用目标内容的多站点支持功能，您可以共享、转出个性化内容，或将个性化内容单独分离出来。为了更好地说明如何使用此功能，请设想一个您想要控制如何根据地域转出目标内容的情景，如下所述：
+通过将多站点用于目标内容，您可以共享、转出或隔离个性化内容。 为了更好地说明如何使用此功能，请设想一个您想要控制如何根据地域转出目标内容的情景，如下所述：
 
 同一个站点具有四个按地域划分的版本：
 

@@ -2,10 +2,10 @@
 title: 设置您的管道
 description: 创建前端管道来管理站点主题的自定义。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '967'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '966'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->前端管道只能部署 JavaScript、CSS 和静态资源来设置 AEM 站点的样式。无法在管道中部署页面或资源等站点内容。
+>前端管道只能部署 JavaScript、CSS 和静态资源来设置 AEM 站点的样式。无法在管道中部署页面或资产等站点内容。
 
 ## 访问 Cloud Manager {#login}
 

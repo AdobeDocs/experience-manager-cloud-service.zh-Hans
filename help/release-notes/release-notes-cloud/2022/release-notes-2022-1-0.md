@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 96%
+source-wordcount: '1079'
+ht-degree: 95%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明 {#release-notes}
 
-以下部分概述了2022.1.0版本的的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了2022.1.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ ht-degree: 96%
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[Communication API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hans) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务允许您以同步模式和批处理模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[Communication API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hans) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务允许您以同步和批处理模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
 
    * 使用 XML 数据填充模板文件来生成文档。
    * 生成各种格式的表单，包括非交互式 PDF 打印流。
@@ -122,7 +122,7 @@ AEM as a Cloud Service 2022.01.0 中的 Cloud Manager 的发布日期是 2022 �
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容验证 - 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。要使用此功能，您需要在源 AEM 环境的 `System Console` 中启用它。参见 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hans#getting-started) 了解更多详细信息。
+* 内容验证 - 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。要使用此功能，您需要在源 AEM 环境的 `System Console` 中启用它。请参阅 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hans#getting-started) 以了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-ctt}
 

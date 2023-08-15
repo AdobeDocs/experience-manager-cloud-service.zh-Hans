@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '3571'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cl
 
 ## 灵活端口出口 {#flexible-port-egress}
 
-此高级联网功能允许您对 AEM as a Cloud Service 进行配置，通过默认打开的 HTTP（端口 80）和 HTTPS（端口 443）以外的端口来传入流量。
+此高级联网功能允许您配置AEMas a Cloud Service以通过默认打开的HTTP（端口80）和HTTPS（端口443）以外的端口来输出流量。
 
 ### 注意事项 {#flexible-port-egress-considerations}
 
@@ -197,7 +197,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 主要差别在于，该流量始终从专用的唯一 IP 地址传出。要查找该 IP，请使用 DNS 解析器来确定与 `p{PROGRAM_ID}.external.adobeaemcloud.com` 关联的 IP 地址。该 IP 地址不应改变，但如果未来需要改变，则会提供高级通知。
 
-除了 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点中的灵活端口出口支持的路由规则之外，专用出口 IP 地址还支持 `nonProxyHosts` 参数。这使得您可以声明一组主机，并且这组主机应通过共享 IP 地址范围而不是专用 IP 进行路由，由于通过共享 IP 传出的流量可能会进一步进行优化，此功能可能会很有用。`nonProxyHost` URL 可能会遵循 `example.com` 或 `*.example.com` 的模式，这种情况下仅支持在域的开头使用通配符。
+除了 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点中的灵活端口出口支持的路由规则之外，专用出口 IP 地址还支持 `nonProxyHosts` 参数。这样，您就可以声明一组主机，这些主机应通过共享IP地址范围而不是专用IP进行路由，由于通过共享IP传出的流量可能会得到进一步优化，此功能可能会很有用。 `nonProxyHost` URL 可能会遵循 `example.com` 或 `*.example.com` 的模式，这种情况下仅支持在域的开头使用通配符。
 
 在灵活端口出口和专用出口 IP 地址之间进行选择时，如果无需特定 IP 地址，客户应选择灵活端口出口，因为 Adobe 可以优化灵活端口出口流量的性能。
 
@@ -554,7 +554,7 @@ Header always set Cache-Control private
 
 如果已在主要区域启用高级网络配置，请执行以下步骤：
 
-1. 如果您已锁定基础设施，使得专用 AEM IP 地址被列入允许列表，则建议暂时禁用该基础设施中的任何拒绝规则。如果不这样做，您自己的基础设施会在短时间内拒绝来自新区域的 IP 地址的请求。请注意，如果您已通过完全限定域名 (FQDN) 锁定您的基础设施（例如，`p1234.external.adobeaemcloud.com`），则没有必要这样做，因为所有 AEM 区域都会从相同的 FQDN 输出高级网络流量
+1. 如果您已锁定基础设施，使得专用 AEM IP 地址被列入允许列表，则建议暂时禁用该基础设施中的任何拒绝规则。如果不这样做，您自己的基础设施会在短时间内拒绝来自新区域的 IP 地址的请求。请注意，如果您已通过完全限定的域名(FQDN)锁定了基础架构，则无需执行此操作，(`p1234.external.adobeaemcloud.com`，例如)，因为所有AEM区域都从同一FQDN输出高级网络流量
 1. 如高级网络文档中所述，通过对 Cloud Manager Create Network Infrastructure API 的 POST 调用，为次要区域创建程序范围的网络基础设施。负载的 JSON 配置相对于主要区域的唯一区别是区域属性
 1. 如果您的基础设施需要由 IP 锁定以允许 AEM 流量，请添加与 `p1234.external.adobeaemcloud.com` 匹配的 IP。每个区域应该有一个匹配的 IP。
 

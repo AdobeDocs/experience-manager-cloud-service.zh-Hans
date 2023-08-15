@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 版的发行说明。'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 51%
+source-wordcount: '1027'
+ht-degree: 50%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 51%
 
 ## 发布视频 {#release-video}
 
-请查看 [2021年8月发行版概述](https://video.tv.adobe.com/v/336277) 视频，以了解新增功能的摘要。
+请查看 [2021年8月发行版概述](https://video.tv.adobe.com/v/336277) 视频以了解新增功能的摘要。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -38,32 +38,32 @@ ht-degree: 51%
   ![将资产作为链接共享时，复制URL选项](/help/assets/assets/link-share-copy-URL-option.png)
   *图：将资产作为链接共享时，您现在可以复制URL以单独共享它。*
 
-* 上传TXT文件时，资源微服务会自动生成缩略图。 PNG缩略图是TXT文件的演绎版，可帮助用户在一定程度上标识内容或文件，而无需打开文件。 此功能不需要任何配置，默认可以使用。
+* 上传TXT文件时，资源微服务会自动生成缩略图。 PNG缩略图是TXT文件的演绎版，在不打开文件的情况下，在一定程度上帮助用户识别内容或文件。 此功能不需要进行任何配置，默认可以使用。
 
-  ![TXT文件的演绎版由自动生成 [!DNL Assets] PNG格式](/help/assets/assets/thumbnail-rendition-txt-file.png)
-  *图：将自动生成TXT文件的演绎版，以帮助您识别文件而无需打开。*
+  ![TXT文件的格式副本由自动生成 [!DNL Assets] 采用PNG格式](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *图：将自动生成TXT文件的演绎版，以帮助您在不打开文件的情况下识别文件。*
 
 ### 的新增功能 [!DNL Assets] 预发行渠道 {#assets-prerelease-features}
 
 * 用户现在可以对列视图和卡片视图的搜索结果中显示的资源进行排序。 排序仅对名称、创建、修改或无列起作用。
 
-  ![将搜索结果排序于 [!DNL Assets] 在“列”和“卡片”视图中](/help/assets/assets/sort-searched-assets.png)
-  *图：将搜索结果排序于 [!DNL Assets] 在“列”和“卡片”视图中。*
+  ![将搜索结果排序于 [!DNL Assets] 在列视图和卡片视图中](/help/assets/assets/sort-searched-assets.png)
+  *图：对搜索结果排序 [!DNL Assets] 在“列”和“卡片”视图中。*
 
 ### [!DNL Assets] 中修复的错误 {#assets-bugs-fixed}
 
-* 当投稿人组的成员导航到 [!DNL Assets] 控制台，额外的 `POST` 将生成请求以创建收藏集。 此请求不是必需的；由于权限问题而失败，并在日志中创建许多错误。 (CQ-4328856)
+* 当投稿人组的成员导航到 [!DNL Assets] 控制台，额外的 `POST` 将生成请求以创建收藏集。 此请求不是必需的；它由于权限问题而失败，并在日志中创建许多错误。 (CQ-4328856)
 * 当用户查看资源并选择 [!UICONTROL 时间线] 从左侧面板的弹出菜单中，会显示错误。 在日志中，由于查询错误，将记录许多警告。 (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* automated forms conversion服务可以 [用意大利语和葡萄牙语转换PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) 到自适应Forms。
+* automated forms conversion服务可以 [转换意大利语和葡萄牙语的PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) 到自适应Forms。
 
 * **基于 Acroform 的记录文档**：除了基于 XFA 的表单模板，AEM Forms as a Cloud Service 还支持使用 [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作为记录文档的模板。
 
-* **Microsoft Azure 数据存储连接器**：您现在可以[将表单数据模型连接到 Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它可让您检索自适应表单数据并将这些数据作为 BLOB 存储到 Microsoft Azure Storage。
+* **Microsoft Azure 数据存储连接器**：您现在可以[将表单数据模型连接到 Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它可让您检索自适应表单数据并将其作为BLOB存储到Microsoft Azure Storage。
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
 
@@ -77,15 +77,15 @@ ht-degree: 51%
 
 ### 新增功能 {#what-is-new-cif}
 
-* 新的类别选择器UI改善了用户体验、提高了效率并更好地支持复杂的产品目录
+* 新的类别选取器UI，可改善用户体验、提高效率并更好地支持复杂的产品目录
 
   ![新建类别选取器](/help/assets/CIF/category-picker.png)
 
-* 对CIF核心组件的更佳A11Y支持
+* 更好地支持CIF核心组件的A11Y
 
 ## Cloud Manager {#cloud-manager}
 
-本部分概述了AEMas a Cloud Service2021.8.0和2021.7.0中的Cloud Manager发行说明。
+本节概述了AEMas a Cloud Service2021.8.0和2021.7.0中的Cloud Manager发行说明。
 
 ## 发布日期 {#release-date-cm-aug}
 
@@ -128,6 +128,6 @@ AEM as a Cloud Service 2021.8.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 在某些情况下，并非所有用户都迁移到目标实例。 要获取此修补程序，需要在目标AEMas a Cloud Service实例上安装CTT v1.5.6以及aem-ethos-tools 1.2.354或更高版本。
 
-* 此 **停止引入** 在将按钮摄取到发布实例期间禁用了该按钮。 没有必要执行此操作，因为在发布引入期间没有mongo restore步骤。
+* 此 **停止引入** 在将按钮摄取到发布实例期间被禁用。 没有必要执行此操作，因为在发布引入期间没有执行mongo restore步骤。
 
 * CTT未清理 `/tmp` 成功提取后的目录。 这有时会导致磁盘空间问题。

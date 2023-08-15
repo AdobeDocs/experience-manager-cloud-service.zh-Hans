@@ -2,10 +2,10 @@
 title: 为 Headless 内容配置翻译规则
 description: 了解如何定义翻译规则，标识要翻译的内容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '942'
-ht-degree: 100%
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 100%
 
 在&#x200B;**翻译配置** UI 中，提供了可用于翻译规则的大量选项。在这里，我们重点介绍基本 Headless 本地化配置所需的大多数必需和典型的步骤。
 
-1. 点按或单击&#x200B;**添加上下文**，这可让您添加路径。这是受规则影响的内容的路径。
+1. 点击或单击 **添加上下文**，可添加路径。 这是受规则影响的内容的路径。
    ![添加上下文](assets/add-translation-context.png)
 1. 使用路径浏览器选择所需的路径，然后点按或单击&#x200B;**确认**&#x200B;按钮进行保存。请记住，包含 Headless 内容的内容片段通常位于 `/content/dam/<your-project>` 下。
    ![选择路径](assets/select-context.png)

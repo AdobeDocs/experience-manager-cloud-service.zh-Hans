@@ -2,16 +2,16 @@
 title: 变体 – 创作片段内容 （资产 — 内容片段）
 description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容更加灵活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 93%
+source-wordcount: '2435'
+ht-degree: 94%
 
 ---
 
 # 变体 – 创作片段内容{#variations-authoring-fragment-content}
 
-[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本，以用于特定渠道和/或场景，从而使headless内容投放更加灵活。
+[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本，用于特定渠道和/或场景，从而使headless内容投放更加灵活。
 
 从&#x200B;**“变体”**&#x200B;选项卡，您可：
 
@@ -89,7 +89,7 @@ ht-degree: 93%
 
 ### 操作 {#actions}
 
-以下操作也可用(对于所有 [格式](#formats))打开全屏编辑器（即多行文本）时：
+当全屏编辑器（即多行文本）打开时，以下操作也可用（适用于所有[格式](#formats)）
 
 * 选择[格式](#formats)（[富文本](#rich-text)、[纯文本、](#plain-text) [Markdown](#markdown)）
 
@@ -150,7 +150,7 @@ ht-degree: 93%
 >
 >有关完整信息，请参阅 [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) 文档。
 
-这允许您使用 Markdown 设置文本格式。 您可以定义：
+这允许您使用Markdown设置文本格式。 您可以定义：
 
 * 标题
 * 段落和换行符
@@ -198,9 +198,9 @@ ht-degree: 93%
 1. 最后：
    1. **完成**:
       * 返回（到原始片段）
-      * 引用新片段
+      * 引用新的片段
    1. **打开**:
-      * 引用新片段
+      * 引用新的片段
       * 打开新片段以在新的浏览器选项卡中编辑
 
 ### 查看关键统计信息 {#viewing-key-statistics}
@@ -352,7 +352,7 @@ ht-degree: 93%
    >[!CAUTION]
    >
    如果在添加资源后，您将格式更改为：
-   * **纯文本**：资产会从片段中完全丢失。
+   * **纯文本**：资源会从片段中完全丢失。
    * **Markdown**：资源将不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍将存在。
 
 ### 将内容片段插入片段 {#inserting-content-fragment-into-your-fragment}
@@ -432,7 +432,7 @@ ht-degree: 93%
 
 1. 打开片段，然后从侧面板中选择&#x200B;**“变体”**。
 1. 选择所需的变体。
-1. 选择 **重命名** 从 **操作** 下拉菜单。
+1. 从&#x200B;**操作**&#x200B;下拉列表中选择&#x200B;**重命名。**
 
 1. 在结果对话框中输入新的&#x200B;**标题**&#x200B;和/或&#x200B;**描述**。
 
@@ -448,7 +448,7 @@ ht-degree: 93%
 
 1. 打开片段，然后从侧面板中选择&#x200B;**变体**。
 1. 选择所需的变体。
-1. 选择 **删除** 从 **操作** 下拉菜单。
+1. 从&#x200B;**“操作”**&#x200B;下拉菜单中选择&#x200B;**“删除”。**
 
 1. 确认对话框中的&#x200B;**删除**&#x200B;操作。
 
@@ -476,7 +476,7 @@ ht-degree: 93%
 
 1. 选择一个特定的变体，然后从以下任一位置选择相应的同步操作：
 
-   * 此 **操作** 下拉选择器 —  **将当前元素与主控同步**
+   * **“操作”**&#x200B;下拉选择器 – **将当前元素与母版同步**
 
      ![与母版同步](assets/cfm-variations-11a.png)
 
@@ -484,7 +484,7 @@ ht-degree: 93%
 
      ![与母版同步](assets/cfm-variations-11b.png)
 
-1. 主控和变量并排显示：
+1. 母版和变体并排显示：
 
    * 绿色表示添加的内容（添加到变体）
    * 红色表示内容已移除（从变体中）

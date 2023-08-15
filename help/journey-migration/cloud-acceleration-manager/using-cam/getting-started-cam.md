@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager 快速入门
 description: 本页概述了Cloud Acceleration Manager的使用和入门方法。
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 22%
 
 ---
@@ -30,9 +30,9 @@ Cloud Acceleration Manager (CAM)为迁移提供一站式体验。 它以引导�
 
 1. 登录 [Adobe Experience Cloud](https://experience.adobe.com).
 
-1. 单击 **Experience Manager** 信息卡。
+1. 单击 **Experience Manager** 卡片。
 
-1. 单击 **Launch** 从 **Cloud Acceleration Manager** 信息卡，以便您能够打开登陆页面。
+1. 单击 **Launch** 从 **Cloud Acceleration Manager** 信息卡，以打开登陆页面。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
@@ -46,9 +46,9 @@ Cloud Acceleration Manager (CAM)为迁移提供一站式体验。 它以引导�
 
 Cloud Acceleration Manager (CAM)的登陆页面允许您创建和编辑多个项目。
 
-按照以下步骤创建项目：
+请按照以下步骤创建项目：
 
-1. 单击 **创建项目** 从登陆页面中。
+1. 单击 **创建项目** 从登陆页面访问。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
@@ -63,7 +63,7 @@ Cloud Acceleration Manager (CAM)的登陆页面允许您创建和编辑多个项
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
 
-1. 单击项目信息卡，以便输入项目。 此时您将转到项目登录页面。
+1. 单击项目卡以输入项目。 您将转到项目登录页面。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-5.png)
 
@@ -79,7 +79,7 @@ Cloud Acceleration Manager (CAM)的登陆页面允许您创建和编辑多个项
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. 您可以编辑项目名称、描述，甚至可以从上传新图像或编辑现有图像 **编辑项目** 对话框。
+1. 您可以编辑项目名称、描述，甚至可以上传新图像或从编辑现有图像 **编辑项目** 对话框。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 

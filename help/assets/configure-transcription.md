@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 94%
 >
 >应用于文件夹的处理配置文件适用于整个树，但是，可以被应用于子文件夹的另一个配置文件覆盖。
 >
->将资源上传到文件夹后，Experience Manager会与包含文件夹的属性进行通信，以确定处理配置文件。 如果未应用任何配置文件，则会检查层级中的父文件夹以确定要应用的处理配置文件。
+>将资源上传到文件夹后，Experience Manager与包含文件夹的属性进行通信，以确定处理配置文件。 如果未应用任何配置文件，则会检查层级中的父文件夹以确定要应用的处理配置文件。
 
 
 ## 生成音频或视频资产的转录 {#generate-transcription}

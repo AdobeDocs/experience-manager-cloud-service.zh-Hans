@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4918'
-ht-degree: 100%
+source-wordcount: '4913'
+ht-degree: 98%
 
 ---
 
@@ -158,7 +158,7 @@ GraphQL 查询是在基础请求的 AEM 用户的许可下执行的。如果用�
 
 ## 架构生成 {#schema-generation}
 
-GraphQL 是一种强类型的 API，这意味着数据必须有明确的结构并按类型整理。
+GraphQL是强类型的API，这意味着数据必须结构明确并按类型整理。
 
 GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。为执行此操作，客户端需要提取[架构](#schema-generation)，其中包含查询所需的全部类型。
 
@@ -631,7 +631,7 @@ query {
 >
 >要获得最佳性能，请考虑[更新内容片段以在 GraphQL 筛选中进行分页和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)。
 
-此功能允许您对返回列表的查询类型执行分页。提供了两种方法：
+此功能允许您对返回列表的查询类型执行分页。 提供了两种方法：
 
 * 在 `List` 查询中的 `offset` 和 `limit`
 * 在 `Paginated` 查询中的 `first` 和 `after`
@@ -706,7 +706,7 @@ query {
 
 ## GraphQL 查询中的 Web 优化图像传递 {#web-optimized-image-delivery-in-graphql-queries}
 
-经 Web 优化的图像传递支持您使用 GraphQL 查询来：
+通过Web优化的图像交付，您可以使用Graphql查询执行以下操作：
 
 * 请求 AEM Assets 图像的 URL
 
@@ -724,7 +724,7 @@ query {
 
 这意味着将在查询执行期间应用命令，方式与这些图像的 GET 请求中的 URL 参数相同。
 
-该操作将允许您为 JSON 传递动态创建图像演绎版，从而无需手动创建这些演绎版并将其存储在存储库中。
+这让您能够为JSON投放动态创建图像演绎版，从而避免在存储库中手动创建和存储这些演绎版。
 
 GraphQL 中的解决方案意味着您可以：
 

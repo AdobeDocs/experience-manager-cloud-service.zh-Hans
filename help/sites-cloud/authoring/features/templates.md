@@ -2,10 +2,10 @@
 title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '4577'
-ht-degree: 100%
+source-wordcount: '4570'
+ht-degree: 97%
 
 ---
 
@@ -230,7 +230,7 @@ ht-degree: 100%
 
 创建或编辑模板时，您可以定义模板的多个方面。编辑模板类似于页面创作。
 
-使用工具栏中的&#x200B;**模式**&#x200B;选择器，可以选择并编辑模板的相应方面：
+此 **模式** 使用工具栏中的选择器，可以选择并编辑模板的相应方面：
 
 * [结构](#editing-a-template-structure-template-author)
 * [初始内容](#editing-a-template-initial-content-author)
@@ -238,7 +238,7 @@ ht-degree: 100%
 
 ![模板编辑器模式选择器](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-而使用&#x200B;**页面信息**&#x200B;菜单中的&#x200B;**页面策略**&#x200B;选项，可以[选择所需的页面策略](#page-policies)：
+而 **页面策略** 上的选项 **页面信息** 菜单允许您 [选择所需的页面策略](#page-policies)：
 
 ![模板编辑器页面信息](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -323,7 +323,7 @@ ht-degree: 100%
 
 #### 组件操作 {#component-actions}
 
-将组件添加到模板后，可以对其执行一些操作。每个实例都有其各自的工具栏，以供您访问可用的操作。显示的工具栏取决于组件类型。
+将组件添加到模板后，可以对其执行一些操作。每个实例都有一个用于访问可用操作的工具栏，该工具栏取决于组件类型。
 
 ![模板组件的操作工具栏](/help/sites-cloud/authoring/assets/templates-component-actions.png)
 
@@ -407,7 +407,7 @@ ht-degree: 100%
 
 ###### 功能 {#features}
 
-**功能**&#x200B;选项卡允许您启用或禁用组件的其他功能。
+此 **功能** 选项卡可让您启用或禁用组件的其他功能。
 
 例如，对于图像组件，您可以定义裁剪比例、允许的图像方向，以及是否允许上传。
 

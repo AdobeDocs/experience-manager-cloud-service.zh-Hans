@@ -3,10 +3,10 @@ title: 配置生产管道
 description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 100%
+source-wordcount: '1507'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->在程序创建完成、Git 存储库至少有一个分支以及创建生产和暂存环境集之前，无法设置生产管道。
+>在程序创建完成、Git存储库至少有一个分支以及创建生产和暂存环境集之前，无法设置生产管道。
 
 在开始部署代码之前，必须从 [!UICONTROL Cloud Manager] 配置管道设置。
 
