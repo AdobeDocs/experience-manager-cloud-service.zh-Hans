@@ -1,11 +1,11 @@
 ---
 title: 自定义域名简介
-description: Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。
+description: Cloud Manager的UI允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 81%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="管理自定义域名"
->abstract="Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。"
+>abstract="Cloud Manager的UI允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html" text="添加自定义域名"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html" text="查看和更新自定义域名"
 
-Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。 Adobe Experience Manager as a Cloud Service 配置有默认域名，以 `*.adobeaemcloud.com` 结尾。即使您将自定义域名与网站相关联，此默认域名仍会保留。
+Cloud Manager的UI允许您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。 Adobe Experience Manager as a Cloud Service 配置有默认域名，以 `*.adobeaemcloud.com` 结尾。即使您将自定义域名与网站相关联，此默认域名仍会保留。
 
 ## 什么是自定义域名？ {#what-are-custom-domain-names}
 
-每个网站都有一个唯一的、机器可读的数字地址，例如 `184.33.123.64`。域名系统 (DNS) 允许您将数字地址转换为令人印象深刻的地址，例如 `wknd.com`，从而将定制的品牌域名连接到网站。
+每个网站都有一个唯一的、机器可读的数字地址，例如 `184.33.123.64`。域名系统(DNS)允许您将数字地址转换为令人印象深刻的地址，例如 `wknd.com`.
 
 为您的网站提供一个让客户印象深刻并能展示您品牌的域名是很好做法。
 
@@ -35,7 +35,7 @@ Cloud Manager 的 UI 允许您添加自定义域，以自助方式使用唯一�
 
 ## 自定义域名和 BYO CDN {#byo-cdn}
 
-AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也允许您自带 (BYO) CDN 以与 AEM 一起使用。自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
+AEMas a Cloud Service提供内置的内容交付网络(CDN)服务，但允许您自行创建(BYO) CDN以与AEM一起使用。 自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
 
 * 安装在 AEM 管理的 CDN 中的自定义域名（以及证书）通过 Cloud Manager 进行管理。
 * 安装在您自己的 CDN 中的自定义域名（以及证书）在该特定的 CDN 中进行管理。
@@ -70,8 +70,8 @@ AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也�
 
 * Cloud Manager 支持为 Sites 程序提供发布和预览服务的自定义域名。不支持作者服务的自定义域。
 * 每个 Cloud Manager 环境最多可以为每个环境托管 500 个自定义域。
-* 如果有当前正在运行的管道连接到这些环境，则无法将域名添加到这些环境。
-* 同一域名不能在多个环境中使用。
+* 如果有当前正在运行的管道连接到这些环境，则无法将域名称添加到这些环境。
+* 同一个域名称不能在多个环境中使用。
 * 一次只能添加一个域名。
 * AEM as a Cloud Service 不支持通配符，例如`*.example.com`。
 * 在添加自定义域名之前，必须为程序安装包含自定义域名（通配符证书有效）的有效 SSL 证书。请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)，以了解更多信息。
