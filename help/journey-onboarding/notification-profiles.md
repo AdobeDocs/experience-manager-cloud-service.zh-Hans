@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中创建用户配置文件来管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 100%
+source-wordcount: '970'
+ht-degree: 98%
 
 ---
 
@@ -139,3 +139,9 @@ Adobe 有时需要就 AEM as a Cloud Service 环境联系用户。 除了产品�
 1. 单击&#x200B;**保存**，将向您添加的用户发送欢迎电子邮件。 
 
 受邀用户现在将收到通知。 对您团队中您希望接收通知的用户重复这些步骤。
+
+## 其他资源 {#additional-resources}
+
+如果您想了解入门历程以外的内容，以下是额外的可选资源。
+
+* [操作中心](/help/operations/actions-center.md)  — 利用行动中心方便地对事件和其他重要信息采取行动。
