@@ -1,11 +1,11 @@
 ---
 title: 处理页面版本
-description: 了解如何在AEM中创建、比较和恢复页面的版本。
+description: 了解如何在 AEM 中创建、比较和恢复页面的版本。
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1507'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 99%
    ![时间线边栏中的版本](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
 1. 选择&#x200B;**保存为版本**。
-1. 根据需要输入&#x200B;**标签**&#x200B;和&#x200B;**评论。**
+1. 根据需要输入&#x200B;**标签**&#x200B;和&#x200B;**评论**。
 
    ![为版本添加标签](/help/sites-cloud/authoring/assets/versions-add-label.png)
 
@@ -53,7 +53,7 @@ ht-degree: 99%
 1. 导航以显示要为其创建版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
 1. 从工具栏中选择&#x200B;**创建**。
-1. 相同的对话框会打开。您可以根据需要输入&#x200B;**标签**&#x200B;和&#x200B;**评论。**
+1. 相同的对话框会打开。您可以根据需要输入&#x200B;**标签**&#x200B;和&#x200B;**评论**。
 1. 通过&#x200B;**创建**&#x200B;确认新版本。
 
 时间线会打开，并且其信息会更新以指示新版本。
@@ -94,12 +94,12 @@ ht-degree: 99%
 
 1. 导航以显示要还原到之前版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
-1. 打开“ **时间线** ”列，然后选择“ **显示全部** ”或“ **版本**”。 所选页面的页面版本会予以列出。
+1. 打开&#x200B;**时间线**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。所选页面的页面版本会予以列出。
 1. 选择要还原到的版本。显示可能的选项：
 
    ![恢复到此版本](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. 选择“**还原到此版本**”。恢复到所选版本，并在时间线中更新信息。
+1. 选择&#x200B;**还原到此版本**。恢复到所选版本，并在时间线中更新信息。
 
 ### 恢复版本 {#restore-version}
 
@@ -213,7 +213,7 @@ ht-degree: 99%
 
    ![时间扭曲模式](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. 在对话框中设置目标日期和时间，然后单击&#x200B;**设置日期。** 如果不选择时间，则会默认使用当前的时间。
+1. 在对话框中设置目标日期和时间，然后单击&#x200B;**设置日期**。如果不选择时间，则会默认使用当前的时间。
 
    ![时间扭曲目标日期](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
