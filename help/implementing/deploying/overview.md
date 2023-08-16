@@ -1,12 +1,12 @@
 ---
 title: 部署到 AEM as a Cloud Service
-description: 了解部署到AEMas a Cloud Service的基础知识和最佳实践
+description: 了解部署到 AEM as a Cloud Service 的基础知识和最佳实践
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 99%
 
 ### 不可变内容包 {#immutabe-content-packages}
 
-必须阿静存储在不可变存储库中的所有内容和代码签入 Git，并通过 Cloud Manager 部署它们。换句话说，与当前的 AEM 解决方案不同，代码绝不会直接部署到正在运行的 AEM 实例。该工作流程可确保在任意云环境中为给定版本运行的代码是相同的，从而消除生产中发生意外代码变化的风险。例如，OSGI 配置应提交给源代码管理，而不是在运行时通过 AEM Web 控制台的配置管理器进行管理。
+必须阿静存储在不可变存储库中的所有内容和代码签入 Git，并通过 Cloud Manager 部署它们。换句话说，与当前的 AEM 解决方案不同，代码绝不会直接部署到正在运行的 AEM 实例。该工作流程程可确保在任意云环境中为给定版本运行的代码是相同的，从而消除生产中发生意外代码变化的风险。例如，OSGI 配置应提交给源代码管理，而不是在运行时通过 AEM Web 控制台的配置管理器进行管理。
 
 由于因部署模式产生的应用程序更改由开关启用，因此，它们不能依赖于可变存储库中的更改，但服务用户、其 ACL、节点类型和索引定义更改除外。
 
@@ -177,7 +177,7 @@ above appears to be internal, to confirm with Brian -->
 >abstract="探索将包管理器用于某些用例的情况，在这些用例中应“一次性”安装内容包。安装过程包括将特定内容从生产导入到暂存以调试生产问题，并将小型内容包从内部部署环境转移到 AEM 云环境等。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans" text="内容传输工具"
 
-在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境来调试生产问题。在这些场景中，可以在 AEM as a Cloud Service 上的环境中使用[包管理器。](/help/implementing/developing/tools/package-manager.md)
+在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境来调试生产问题。在这些场景中，可以在 AEM as a Cloud Service 上的环境中使用[包管理器](/help/implementing/developing/tools/package-manager.md)。
 
 由于包管理器是一个运行时概念，无法将内容或代码安装到不可变存储库中，因此这些内容包应只包含可变内容（主要是 `/content` 或 `/conf`）。如果内容包包含混合内容（可变内容和不可变内容），则只会安装可变内容。
 
