@@ -1,13 +1,13 @@
 ---
 title: 与 Adobe Target 集成
-description: 了解如何使用触屏UI和Adobe Launch将Adobe Target与AEMas a Cloud Service集成。
+description: 了解如何使用 Touch UI 和 Adob​​e Launch 将 Adob​​e Target 与 AEM as a Cloud Service 集成。
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1034'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 
 ### 构建和发布 {#build-publish}
 
-要了解如何构建和发布，请参阅[页面。](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)
+要了解如何构建和发布，请参阅[页面](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)。
 
 ## 经典和 Touch UI 配置之间的内容结构变化 {#changes-content-structure}
 
