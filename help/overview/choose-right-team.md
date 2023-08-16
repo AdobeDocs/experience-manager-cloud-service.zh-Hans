@@ -1,11 +1,11 @@
 ---
 title: 合适的人员，合适的职位
-description: 了解如何为您的项目选择合适的人员，并将他们分配给合适的角色。
+description: 了解如何为您的项目选择合适的人员，并为他们分配合适的角色。
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
