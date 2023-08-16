@@ -1,11 +1,11 @@
 ---
 title: 实施 AEM 连接器
-description: 了解如何构建、测试和实施AEM连接器。 此外，您还将了解常见的集成模式。
+description: 了解如何构建、测试和实施 AEM 连接器。此外，您还可了解常见的集成模式。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '980'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ AEM 是一个前沿的 Web 体验管理解决方案，提供了许多潜在的�
 
 * 将数据从外部系统提取到 AEM 中。例如，从 CRM 导出联系信息，以供访问 AEM 支持的网站的更广泛受众使用。实施应使用 Sling 的[计划作业](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs)，从而确保即使容器发生故障也能执行作业。代码应设计为假设作业可能会被多次触发。
 * 将数据从 AEM 导出到外部系统中。例如，在 AEM 支持的网站上提交给 CRM 的新闻稿订阅设置。
-* 从 AEM 中检索资产。例如，引用存储在 AEM Assets 中的资产的外部内容管理系统 (CMS)。或者，作为另一个示例，链接到 AEM Assets 中的图像的 PIM 系统。
-* 将资产存储在 AEM 基础架构中。例如，营销资产管理 (MRM) 系统将批准的资产存储在 AEM Assets 中。
+* 从 AEM 中检索资源。例如，引用存储在 AEM Assets 中的资源的外部内容管理系统 (CMS)。或者，作为另一个示例，链接到 AEM Assets 中的图像的 PIM 系统。
+* 将资源存储在 AEM 基础架构中。例如，营销资源管理 (MRM) 系统将批准的资源存储在 AEM Assets 中。
 * 配置和呈现自定义 UI 组件。例如，允许作者拖放视频组件并将特定视频配置为在实时站点上播放。
-* 使用合作伙伴服务对资产执行操作。例如，在发布页面时将资产发送到视频平台。
-* 在 AEM Admin Console 中分析站点、页面或资产。例如，提供针对现有页面或未发布的页面的 SEO 建议。
+* 使用合作伙伴服务对资源执行操作。例如，在发布页面时将资源发送到视频平台。
+* 在 AEM Admin Console 中分析站点、页面或资源。例如，提供针对现有页面或未发布的页面的 SEO 建议。
 * 对由外部服务维护的用户数据的页面级访问。例如，利用人口统计信息来个性化站点体验。了解 ContextHub，它是一个用于存储、操作和呈现上下文数据的框架。
-* 翻译站点副本或资产元数据。请参阅 [AEM 翻译框架引导连接器](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector)，查看使用 AEM 翻译框架的示例代码，它是翻译连接器的首选实施。
+* 翻译站点副本或资源元数据。请参阅 [AEM 翻译框架引导连接器](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector)，查看使用 AEM 翻译框架的示例代码，它是翻译连接器的首选实施。
 
 
 有用的文档
@@ -68,7 +68,7 @@ Experience Manager as a Cloud Service [文档](../overview/introduction.md)提�
 云服务配置
 -----------------------------
 
-连接器实施的一个方面是支持连接器配置的代码。此代码会导致带有连接器名称的信息卡出现在“工具”>“操作”>“云服务”下。在单击时，会弹出一个[配置浏览器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)，客户可在其中选择要包含连接器配置的父文件夹。连接器的代码将生成一个包含所有必须配置的属性的表单，最终将值存储在 `/conf` 下的配置文件夹中。稍后可以在“站点属性”选项卡或“资产属性”选项卡下选择此文件夹。
+连接器实施的一个方面是支持连接器配置的代码。此代码会导致带有连接器名称的信息卡出现在“工具”>“操作”>“云服务”下。在单击时，会弹出一个[配置浏览器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)，客户可在其中选择要包含连接器配置的父文件夹。连接器的代码将生成一个包含所有必须配置的属性的表单，最终将值存储在 `/conf` 下的配置文件夹中。稍后可以在“站点属性”选项卡或“资源属性”选项卡下选择此文件夹。
 
 
 上下文感知配置
