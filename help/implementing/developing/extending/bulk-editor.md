@@ -39,9 +39,9 @@ ht-degree: 93%
 1. 导航至`cq:dialog` 定义中的必填字段。
 1. 在字段节点上定义以下属性：
 
-   * **名称**: `allowBulkEdit`
-   * **类型**: `Boolean`
-   * **值**: `true`
+   * **名称**：`allowBulkEdit`
+   * **类型**：`Boolean`
+   * **值**：`true`
 
 1. 选择&#x200B;**保存全部**，以保留您的更新。
 

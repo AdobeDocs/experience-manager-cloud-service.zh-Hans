@@ -243,7 +243,7 @@ Sites 控制台中有两个用于发布的选项：
 
    >[!NOTE]
    >
-   >如果您要稍后撤消发布/取消发布页面，请转到[“工作流程”](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流程。
+   >如果您要稍后撤消发布/取消发布页面，请转到[“工作流程”控制台](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)以终止相应的工作流程。
 
    >[!NOTE]
    >如果您有一个[预览](/help/sites-cloud/authoring/fundamentals/previewing-content.md)环境，您可以在管理发布期间选择&#x200B;**目标**。

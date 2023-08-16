@@ -26,7 +26,7 @@ ht-degree: 97%
 
 ## 创建 Adobe Analytics 配置 {#analytics-configuration}
 
-1. 导航到&#x200B;**工具** → **Cloud Service**。
+1. 导航到&#x200B;**工具** → **云服务**。
 2. 选择 **Adobe Analytics**。
    ![Adobe Analytics 窗口](assets/analytics_screen2.png "Adobe Analytics 窗口")
 3. 选择&#x200B;**创建**&#x200B;按钮。
@@ -42,12 +42,12 @@ ht-degree: 97%
 |---|---|
 | 标题 | 配置名称 |
 | IMS 配置 | 选择 IMS 配置（参阅上面的章节） |
-| 区段 | 用于使用当前报告包中定义的 Analytics 区段的选项。基于区段筛选 Analytics 报告。有关其他详细信息，请参阅[此页面。](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) |
+| 区段 | 用于使用当前报告包中定义的 Analytics 区段的选项。基于区段筛选 Analytics 报告。有关其他详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)。 |
 | 报告包 | 从中发送数据和提取报告的存储库。报告包定义针对某个所选网站、网站集合或网页子集的完整、独立的报告。您可以查看从单个报告包中获取的报告，并且可以根据您的要求随时在配置中编辑此字段。 |
 
 ### 具有 IMS 身份验证的 Adobe Analytics {#configuration-parameters-ims}
 
-需要 IMS 配置，才能将 Adobe Analytics 与 AEM as a Cloud Service 正确集成。 必须创建此配置，因此请参阅此[页面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)，了解如何创建 Analytics IMS 配置。
+需要 IMS 配置，才能将 Adobe Analytics 与 AEM as a Cloud Service 正确集成。必须创建此配置，因此请参阅此[页面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)，了解如何创建 Analytics IMS 配置。
 
 ### 将配置添加到站点 {#add-configuration}
 

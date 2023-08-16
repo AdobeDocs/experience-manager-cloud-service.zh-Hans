@@ -16,7 +16,7 @@ ht-degree: 100%
 >* AEM 体验片段将导出到 Adobe Target 的默认工作区。
 >* 必须按照[与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)下的说明将 AEM 与 Adobe Target 集成。
 
-您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)导出到 Adobe Target (Target)。然后，可以将它们用作 Target 活动中的选件以大规模测试和个性化体验。
+您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)导出到 Adobe Target (Target)。然后，可以将其用作 Target 活动中的选件以大规模测试和打造个性化体验。
 
 有三个选项可用于将体验片段导出到 Adobe Target：
 

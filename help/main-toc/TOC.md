@@ -84,7 +84,7 @@ ht-degree: 99%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
-         + [2023.7.0 版发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
+         + [2023.7.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [2023.6.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
          + [2023.4.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)

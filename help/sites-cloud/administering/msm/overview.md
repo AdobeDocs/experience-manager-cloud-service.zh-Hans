@@ -172,7 +172,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->有关对象名称，请参阅文档[扩展多站点管理器。](/help/implementing/developing/extending/msm.md#overview-of-the-java-api)
+>有关对象名称，请参阅文档[扩展多站点管理器](/help/implementing/developing/extending/msm.md#overview-of-the-java-api)。
 
 ## Live Copy {#live-copies}
 

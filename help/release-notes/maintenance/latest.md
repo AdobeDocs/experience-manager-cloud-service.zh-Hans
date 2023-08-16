@@ -17,7 +17,7 @@ ht-degree: 22%
 
 以下总结了维护版本13099的不断改进，该版本于2023年8月15日公开发布。 此维护版本是对上一个维护版本 12874 的更新。
 
-激活 2023.8.0 功能后可为此次维护版本提供完整的功能集。有关更多信息，请参阅[ Experience Manager 发布路线图。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+激活 2023.8.0 功能后可为此次维护版本提供完整的功能集。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
 ### 增强 {#enhancements-13099}
 
