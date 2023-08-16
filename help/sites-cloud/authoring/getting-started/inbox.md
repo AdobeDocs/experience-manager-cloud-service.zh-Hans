@@ -1,24 +1,24 @@
 ---
 title: 您的收件箱
-description: 了解如何使用到达收件箱中的通知来管理您的任务。
+description: 了解如何使用收件箱中收到的通知来管理您的任务。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '914'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 您的收件箱 {#your-inbox}
 
-您可以接收来自 AEM 各个区域的通知，包括工作流和项目。例如，您可能会收到有关以下内容的通知：
+您可以接收来自 AEM 各个区域的通知，包括工作流程和项目。例如，您可能会收到有关以下内容的通知：
 
 * 任务：
    * 这些任务也可以在 AEM UI 的不同位置创建，例如在&#x200B;**项目**&#x200B;下创建。
-   * 这些任务可以是&#x200B;**创建任务**&#x200B;工作流或&#x200B;**创建项目任务**&#x200B;步骤的产物。
-* 工作流：
+   * 这些任务可以是&#x200B;**创建任务**&#x200B;工作流程或&#x200B;**创建项目任务**&#x200B;步骤的产物。
+* 工作流程：
    * 表示您需要对页面内容执行的操作的工作项
-      * 这些项目是工作流&#x200B;**参与者**&#x200B;步骤的产物。
+      * 这些项目是工作流程&#x200B;**参与者**&#x200B;步骤的产物。
    * 失败项目，允许管理员重试失败的步骤
 
 您可以在自己的收件箱中接收这些通知，以便查看并采取相应操作。
@@ -29,7 +29,7 @@ ht-degree: 98%
 >
 >* [项目](/help/sites-cloud/authoring/projects/overview.md)
 >* [项目 – 处理任务](/help/sites-cloud/authoring/projects/tasks.md)
->* [工作流](/help/sites-cloud/authoring/workflows/overview.md)
+>* [工作流程](/help/sites-cloud/authoring/workflows/overview.md)
 
 ## 标题中的收件箱 {#inbox-in-the-header}
 
@@ -47,8 +47,8 @@ ht-degree: 98%
 
 1. 单击/点按工具栏中的指示器。
 
-1. 选择&#x200B;**查看全部**。此时将打开 **AEM 收件箱**。收件箱会显示工作流、项目和任务中的项目。
-1. 默认视图为“列 [表视图](#inbox-list-view)”，但您也可以切换到“日历 [视图”](#inbox-calendar-view)。 这是通过视图选择器（工具栏，右上方）完成的。
+1. 选择&#x200B;**查看全部**。此时将打开 **AEM 收件箱**。收件箱会显示工作流程、项目和任务中的项目。
+1. 默认视图为[列表视图](#inbox-list-view)，但您也可以切换到[日历视图](#inbox-calendar-view)。这是通过视图选择器（工具栏，右上方）完成的。
 
    对于这两个视图，您还可以定义[视图设置](#inbox-view-settings)。可用选项取决于当前视图。
 
@@ -127,14 +127,14 @@ ht-degree: 98%
       * 打开相关文档
 
    * **回退**&#x200B;到上一步
-   * 查看工作流的有效负荷
+   * 查看工作流程的有效负荷
    * 从该项目创建一个项目
 
    >[!NOTE]
    >
    >有关更多信息，请参阅以下内容：
    >
-   >* 工作流项目 – [参与工作流](/help/sites-cloud/authoring/workflows/participating.md)
+   >* 工作流程项目 – [参与工作流程](/help/sites-cloud/authoring/workflows/participating.md)
 
 2. 根据所选项目，会启动相应的操作；例如：
 
@@ -190,7 +190,7 @@ ht-degree: 98%
    >
    >只有使用&#x200B;**收件箱**&#x200B;的&#x200B;**创建**&#x200B;选项创建的任务才能用于创建项目。
    >
-   >不能使用工作项（来自工作流）创建项目。
+   >不能使用工作项（来自工作流程）创建项目。
 
 1. 从工具栏中选择“**创建项目**”以打开向导。
 1. 选择相应的模板，然后选择&#x200B;**下一步**。
