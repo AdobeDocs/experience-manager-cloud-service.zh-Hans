@@ -1,12 +1,12 @@
 ---
 title: 云中的 Dispatcher
-description: 了解Dispatcher工具、支持的Apache模块以及旧版和灵活模式。
+description: 了解 Dispatcher 工具、受支持的 Apache 模块以及传统模式和灵活模式。
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
