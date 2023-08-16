@@ -1,11 +1,11 @@
 ---
 title: Unified Shell 上的 AEM as a Cloud Service
-description: 了解Unified Shell上AEMas a Cloud Service的好处
+description: 了解 Unified Shell 上的 AEM as a Cloud Service 的优势
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 ## 概述 {#overview}
 
-AEM as a Cloud Service （创作服务）与 Unified Shell 集成，可改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 此集成的影响可在应用程序的顶部标题中查看，如下所示。
+AEM as a Cloud Service （创作服务）与 Unified Shell 集成，可改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。此集成的影响可在应用程序的顶部标题中查看，如下所示。
 
 ![图像](/help/overview/assets/unifiedshell_header.png)
 
@@ -27,24 +27,24 @@ AEM as a Cloud Service （创作服务）与 Unified Shell 集成，可改进用
 
 ## 禁用 Unified Shell {#disabling-unified-shell}
 
-开箱即用地，AEM as a Cloud Service 已启用 Unified Shell。 但是，如果已自定义顶部标头，则建议禁用 Unified Shell 以避免自定义项出现任何问题。 要禁用 Unified Shell，请执行以下步骤：
+开箱即用地，AEM as a Cloud Service 已启用 Unified Shell。但是，如果已自定义顶部标头，则建议禁用 Unified Shell 以避免自定义项出现任何问题。要禁用 Unified Shell，请执行以下步骤：
 
 >[!NOTE]
 >只有具有管理权限的帐户才能禁用 Unified Shell。
 
-1. 单击&#x200B;**工具 > Cloud Services。**
+1. 单击&#x200B;**工具 > 云服务**。
 
    管理员用户看到 Unified Shell 配置信息卡，如下所示：
 
    ![图像](/help/overview/assets/unifiedshell2.png)
 
-1. 单击 **Unified Shell 配置。** 然后，取消选中下面显示的复选框以禁用 Unified Shell：
+1. 单击 **Unified Shell 配置**。然后，取消选中下面显示的复选框以禁用 Unified Shell：
 
    ![图像](/help/overview/assets/unifiedshell3.png)
 
 ## 更改为深色主题 {#changing-to-dark-theme}
 
-要更改为深色主题，请单击您的用户档案图标。 该操作会显示一个弹出窗口，如下所示。 您可以使用切换开关切换到 Unified Shell 程序的深色主题。
+要更改为深色主题，请单击您的用户档案图标。该操作会显示一个弹出窗口，如下所示。您可以使用切换开关切换到 Unified Shell 程序的深色主题。
 
 >[!INFO]
 >
@@ -54,7 +54,7 @@ AEM as a Cloud Service （创作服务）与 Unified Shell 集成，可改进用
 
 ## 识别 AEM as a Cloud Service 环境 {#identify-aemaacs-environment}
 
-AEM as a Cloud Service 提供三种类型的环境：“生产”、“暂存”和“开发”。有关更多详细信息，请参阅[环境类型。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)与 Unified Shell 进行这种集成后，将通过下方所示的标签在顶部标题上显示用户在 Author 服务上登录到的环境的类型。
+AEM as a Cloud Service 提供三种类型的环境：“生产”、“暂存”和“开发”。有关更多详细信息，请参阅[环境类型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans)。与 Unified Shell 进行这种集成后，将通过下方所示的标签在顶部标题上显示用户在 Author 服务上登录到的环境的类型。
 
 ![图像](/help/overview/assets/unifiedshell_header_label.png)
 
