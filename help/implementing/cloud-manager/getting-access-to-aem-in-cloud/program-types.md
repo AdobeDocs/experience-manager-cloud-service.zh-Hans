@@ -3,25 +3,25 @@ title: 程序和程序类型
 description: 了解 Cloud Manager 的层级，以及不同类型的程序如何适应其结构以及它们之间的差异。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # 程序和程序类型 {#understanding-programs}
 
-Cloud Manager 是围绕实体的层次结构构建的。 这方面的细节对于您在 Cloud Manager 中的日常工作并不重要，但概述将有助于您了解程序并设置自己的程序。
+Cloud Manager 是围绕实体的层次结构构建的。这方面的细节对于您在 Cloud Manager 中的日常工作并不重要，但概述将有助于您了解程序并设置自己的程序。
 
 ![Cloud Manager 层级](assets/program-types1.png)
 
-* **租户** – 这是层次结构的顶层。 每个客户均配有一个租户。
-* **程序** – 每个租户都有一个或多个项目，[这些项目通常反映了客户的许可解决方案。](introduction-production-programs.md)
+* **租户** – 这是层次结构的顶层。每个客户均配有一个租户。
+* **程序** – 每个租户都有一个或多个项目，[这些项目通常反映了客户的许可解决方案](introduction-production-programs.md)。
 * **环境** – 每个项目都有多个环境，例如用于实时内容的生产环境、一个用于暂存的环境，一个用于开发的环境。
    * 每个程序只能有一个生产环境，但可以有多个非生产环境。
 * **存储库** – 程序有 Git 存储库，其中应用程序和前端代码被维护的环境。
-* **工具和工作流** – 管道管理从存储库到环境的代码部署，而其他工具允许访问日志、监控和环境管理。
+* **工具和工作流程** – 管道管理从存储库到环境的代码部署，而其他工具允许访问日志、监控和环境管理。
 
 示例通常有助于将此层级置于上下文中。
 
@@ -35,7 +35,7 @@ Cloud Manager 程序将自动配置自己的 Git 存储库。
 
 要访问 Cloud Manager Git 存储库，用户需要使用带有命令行工具的 Git 客户端、独立的可视 Git 客户端或用户选择的 IDE，如 Eclipse、IntelliJ 或 NetBeans。
 
-一旦设置了 Git 客户端，就可以从 Cloud Manager 用户界面管理 Git 存储库。 要了解如何使用 Cloud Manager 用户界面管理 Git，请参阅[访问 Git。](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+一旦设置了 Git 客户端，就可以从 Cloud Manager 用户界面管理 Git 存储库。要了解如何使用 Cloud Manager 用户界面管理 Git，请参阅[访问 Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
 要开始开发 AEM Cloud 应用程序，必须通过将应用程序代码从 Cloud Manager 存储库签出到本地计算机上的某个位置来制作应用程序代码的本地副本。
 
@@ -43,7 +43,7 @@ Cloud Manager 程序将自动配置自己的 Git 存储库。
 $ git clone {URL}
 ```
 
-因此，该工作流是一个标准的 Git 工作流。
+因此，该工作流程是一个标准的 Git 工作流程。
 
 1. 用户克隆 Git 存储库的本地副本。
 1. 用户在本地代码存储库中进行更改。
@@ -53,7 +53,7 @@ $ git clone {URL}
 
 ## 程序类型 {#program-types}
 
-用户可以创建 **生产** 项目或 **沙盒** 程序。
+用户可以创建一个&#x200B;**生产**&#x200B;程序或&#x200B;**沙盒**&#x200B;程序。
 
 * 创建&#x200B;**生产程序**，以便为您的站点启用实时流量。
    * 请参阅[生产程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)，了解更多详细信息。
