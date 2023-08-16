@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2426'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Experience Manager 提供了大量现成的同步配置。在使用 Live C
 
 下表列出了随 AEM 一起提供的现成的转出配置。该表包含每个转出配置的触发器和同步操作。
 
-如果安装的转出配置操作不符合您的要求，您可以 [创建新的转出配置。](#creating-a-rollout-configuration)
+如果已安装的转出配置操作不符合您的要求，您可以[创建新的转出配置](#creating-a-rollout-configuration)。
 
 | 名称 | 描述 | 触发器 | [同步操作](#synchronization-actions) |
 |---|---|---|---|
@@ -60,7 +60,7 @@ Adobe Experience Manager 提供了大量现成的同步配置。在使用 Live C
 
 下表列出了随 AEM 一起提供的现成的同步操作。
 
-如果安装的操作不符合您的要求，您可以 [创建新的同步操作。](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+如果安装的操作不满足您的要求，您可以[创建新的同步操作](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)。
 
 | 操作名称 | 描述 | 属性 |
 |---|---|---|
@@ -74,7 +74,7 @@ Adobe Experience Manager 提供了大量现成的同步配置。在使用 Live C
 | `targetVersion` | 此操作创建 Live Copy 的版本。<br>此操作必须是转出配置中包含的唯一同步操作。 |  |
 | `targetActivate` | 此操作激活 Live Copy。<br>此操作必须是转出配置中包含的唯一同步操作。 |  |
 | `targetDeactivate` | 此操作停用 Live Copy。<br>此操作必须是转出配置中包含的唯一同步操作。 |  |
-| `workflow` | 此操作启动由 Target 属性定义的工作流（仅适用于页面），并将 Live Copy 作为有效负载。<br>目标路径是模型节点的路径。 | `target: (String)` 是工作流模型的路径。 |
+| `workflow` | 此操作启动由 Target 属性定义的工作流程（仅适用于页面），并将 Live Copy 作为有效负载。<br>目标路径是模型节点的路径。 | `target: (String)` 是工作流程模型的路径。 |
 | `mandatory` | 此操作为特定用户组将 Live Copy 页面上多个 ACL 的权限设置为只读。配置以下 ACL：<br>`ActionSet.ACTION_NAME_REMOVE`<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>仅对页面使用此操作。 | `target: (String)` 是要为其设置权限的组的 ID。 |
 | `mandatoryContent` | 此操作为特定用户组将 Live Copy 页面上多个 ACL 的权限设置为只读。配置以下 ACL：<br>`ActionSet.ACTION_NAME_SET_PROPERTY`<br>`ActionSet.ACTION_NAME_ACL_MODIFY`<br>仅对页面使用此操作。 | `target: (String)` 是要为其设置权限的组的 ID。 |
 | `mandatoryStructure` | 此操作为特定用户组将 Live Copy 页面上 `ActionSet.ACTION_NAME_REMOVE` ACL 的权限设置为只读。<br>仅对页面使用此操作。 | `target: (String)` 是要为其设置权限的组的 ID。 |
@@ -84,12 +84,12 @@ Adobe Experience Manager 提供了大量现成的同步配置。在使用 Live C
 
 ### 创建转出配置 {#creating-a-rollout-configuration}
 
-您可以 [创建转出配置](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) 当安装的转出配置不符合您的应用程序要求时，请执行以下步骤。
+当安装的转出配置不符合您的应用程序要求时，您可以采取以下步骤[创建转出配置：](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration)
 
-1. [创建转出配置 — ](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [将同步操作添加到转出配置。](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [创建转出配置-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [将同步操作添加到转出配置中。](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
 
-然后，在Blueprint或Live Copy页面上配置转出配置时，您可以使用新的转出配置。
+然后，在 Blueprint 或 Live Copy 页面上配置转出配置时，您就可以使用新的转出配置。
 
 ### 从同步中排除属性和节点类型 {#excluding-properties-and-node-types-from-synchronization}
 
@@ -193,7 +193,7 @@ MSM 允许您指定一般使用的转出配置集，并可在需要时覆盖特�
 1. 使用&#x200B;**Sites**&#x200B;控制台选择 Blueprint 的根页面。
 1. 从工具栏中选择&#x200B;**属性**。
 1. 打开 **Blueprint** 选项卡。
-1. 使用下拉选择器选择一个或多个&#x200B;**转出配置。**
+1. 使用下拉选择器选择一个或多个&#x200B;**转出配置**。
 1. 使用&#x200B;**保存**&#x200B;持久存储您的更新。
 
 ### 设置系统默认转出配置 {#setting-the-system-default-rollout-configuration}
