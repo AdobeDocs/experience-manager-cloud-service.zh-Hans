@@ -1,11 +1,11 @@
 ---
 title: 提交 AEM 连接器
-description: 了解如何在AEMas a Cloud Service中正确引用和部署连接器。
+description: 了解如何在 AEM as a Cloud Service 中正确引用和部署连接器。
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
