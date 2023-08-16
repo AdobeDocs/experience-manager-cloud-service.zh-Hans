@@ -1,11 +1,11 @@
 ---
 title: Universal Editor 身份验证
-description: 了解通用编辑器如何使用Adobe的Identity Management System (IMS)进行身份验证。
+description: 了解 Universal Editor 如何使用 Adob​​e 的 Identity Management System (IMS) 进行身份验证。
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 Universal Editor 使用 Adobe Identity Management System (IMS) 身份验证（通过 Unified Shell 提供）。
 
-所有应用程序/远程页面负责对所需后端系统进行身份验证。 由于 Universal Editor Service 是一项独立服务，因此它需要对后端系统进行此身份验证才能执行 CRUD 操作。
+所有应用程序/远程页面负责对所需后端系统进行身份验证。由于 Universal Editor Service 是一项独立服务，因此它需要对后端系统进行此身份验证才能执行 CRUD 操作。
 
 ## 标准流程 {#standard-flow}
 
