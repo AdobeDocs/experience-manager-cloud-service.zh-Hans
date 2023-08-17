@@ -1,11 +1,11 @@
 ---
 title: 对 AEM Cloud Service 中的 AEM Sites 的重要更改
-description: 对 AEM Cloud Service 中的 AEM Sites 的重要更改
+description: 详细了解AEM Cloud Service中对AEM Sites的重要更改
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 8e06dff01e06ced62686a4784619278f29345082
+source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '537'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,6 @@ AEM Sites as a Cloud Service 提供了体验管理功能作为云原生 AEM as a
 >* [对 AEM Assets as a Cloud Service 的重要更改](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 简介](/help/assets/overview.md)
 >* [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hans)
-
 
 AEM Sites as a Cloud Service 中的更改和补充如下所示：
 
