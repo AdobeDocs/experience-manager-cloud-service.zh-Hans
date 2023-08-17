@@ -1,12 +1,12 @@
 ---
-title: AEM 6.5 Forms与AEM Cloud Services之间的差异
-description: 您是否是Experience Manager Forms用户，并想要升级到Adobe Experience Manager Formsas a Cloud Service？ 比较AEM 6.5 Forms和AEM Cloud Service，并了解在升级或迁移到Cloud Service之前最突出的更改。
+title: AEM 6.5 Forms与AEMCloud Service之间的差异
+description: 您是否是Experience Manager Forms用户，并想要升级到Adobe Experience Manager Formsas a Cloud Service？ 比较AEM 6.5 Forms和AEMCloud Services，并了解在升级或迁移到Cloud Service之前最显着的更改。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
+source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## 云原生功能
 
-* 该服务具有云原生架构，允许根据负载自动扩展、升级零停机时间、频繁推出新功能和更新后以及针对最大弹性和效率优化的拓扑。
+* 该服务具有云原生架构，允许根据负载自动扩展、升级时无需停机时间、频繁推出新功能和更新后以及优化拓扑以最大程度地提高弹性和效率。
 
 * 该服务不包含将数据存储到Adobe Experience ManagerCloud Service实例的提交操作，因此非常安全。 通过表单捕获的数据将直接发送到配置的数据存储。
 
@@ -60,11 +60,11 @@ ht-degree: 2%
 
 * **基于XSD的自适应Forms：** 您可以使用XDP模板为记录文档设计模板。 该服务不支持基于XFA的自适应Forms
 
-* **组件**：您可以使用 [自适应Forms核心组件](/help/forms/creating-adaptive-form-core-components.md) 来设计您的表单。 这些组件基于WCM核心组件，遵循BEM标准，并可轻松进行自定义。 该服务不支持表单内签名体验，也不包含自适应表单的“摘要”和“验证”组件
+* **组件**：该服务不支持表单内签名体验，也不包含自适应表单的“摘要”和“验证”组件。
+
+* **向导界面：** 您可以使用 [向导界面](/help/forms/creating-adaptive-form-core-components.md) 以快速配置常用选项并轻松创建自适应表单。
 
 ## Forms Portal
-
-* 您可以使用Forms Portal的“搜索和列表程序”、“草稿和提交”和“链接”组件来列出登录用户的表单。 开箱即用(OOTB)不支持匿名使用Forms Portal。 您可以自定义Forms Portal，以便能够显示未登录用户的表单。
 
 * 该服务未保留草稿和已提交的自适应Forms的元数据。
 
@@ -85,7 +85,7 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 ## 数据集成（表单数据模型）
 
-* 该服务还支持JDBC连接器、Microsoft Dynamics、SalesForce、基于SOAP的Web服务和支持OData的服务。
+* 该服务还支持Microsoft Dynamics、SalesForce、基于SOAP的Web服务和支持OData的服务。
 
 * 您还可以连接AEM用户配置文件以检索和更新用户信息。
 
@@ -96,8 +96,6 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 ## 电子签名
 
-* 该服务提供了与Adobe Sign的OOTB集成，并支持DocuSign进行电子签名。
-
 * 该服务还支持Adobe Sign角色。 您可以在自适应Forms编辑器中为商业用户配置角色，以便轻松配置签名工作流。
 
 
@@ -105,7 +103,7 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 * 您可以使用AEM 6.5 Forms环境执行以下操作：
 
-   * 将基于XDP的表单渲染为HTML5 Forms。 该服务不支持HTML5 Forms (Mobile Forms)。
+   * 将基于XDP的表单渲染为HTML5 Forms。 该服务不支持HTML5 Forms。
 
    * 离线捕获数据，并在下次您返回在线时对其进行同步 [AEM Forms工作区](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 应用程序。
 
