@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
+source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 22%
+source-wordcount: '661'
+ht-degree: 21%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 22%
 - SITES-13906： GraphQL — 升级到graphql-java 20.1。
 - SITES-8972： GraphQL — 在JSON中为枚举数据类型添加选项标签。
 - SITES-9689： GraphQL — 在JSON中为内容引用数据类型添加标题和描述。
-- SITES-13052：内容片段 — 将内容片段导出到Adobe Target
+- sites-13052：内容片段 — 将内容片段导出到Adobe Target。
 
 ### 修复的问题 {#fixed-issues-13099}
 
@@ -54,7 +54,9 @@ ht-degree: 22%
 
 ### 已知问题 {#known-issues-13099}
 
-- SITES-15359：变量名称模式无法正确匹配具有以下特征的变量 ```'_'``` 在资源名称中。
+- SITES-15359：内容片段 — 变量名称模式无法正确匹配具有以下特征的变量 ```'_'``` 在资源名称中。
+- SITES-15463：站点模板 — 无法发布模板（解决方法：使用分发控制台）。
+- CQ-4354191：工作流 — 由于nt：unstructured节点上存在复制元数据，自定义启动器可能会触发许多次（解决方法：更新启动器以排除复制元数据属性以避免重叠）。
 
 ### 嵌套的技术 {#embedded-tech-13099}
 
