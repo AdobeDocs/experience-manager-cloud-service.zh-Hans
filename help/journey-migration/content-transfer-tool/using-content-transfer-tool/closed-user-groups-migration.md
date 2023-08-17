@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: ca3c4bae2e652d75190d68c76b1dd4e09239f16c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cug_migration"
->title="迁移封闭用户组"
->abstract="迁移封闭用户组(CUG)目前需要在迁移后进行一些检查和操作步骤。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM中的封闭用户组"
+>title="封闭用户组的迁移"
+>abstract="封闭用户组 (CUG) 的迁移当前需要进行一些检查和步骤才能在迁移后进行操作。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html" text="AEM 中的封闭用户组"
 
 目前，封闭用户组(CUG)需要一些额外的步骤才能在迁移的目标环境中正常运行。  本文档将介绍此方案，以及要求它们以预期方式保护节点所需的步骤。
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 当前，关联的组 *仅限* 使用封闭用户组(CUG)策略时 *非* 自动包含在摄取中。 如果它们通过ACL与任何内容相关联（如上所述），则将迁移它们。 应在上线之前验证组是否存在。 主体报表是通过“引入作业”视图下载的，可用于查看相关组是否包括，或是否包括，因为它不在ACL中。 如果组不存在，则应在创作实例中创建该组（包括添加相应成员），并激活该组以使它存在于发布实例上。
 
-最后，必须触发流程才能启用CUG。 为此，需要重新发布包含CUG策略的任何内容。 因此，在您的正常测试过程中，如果发现CUG不起作用，请重新发布该内容（即使未修改，也应确保已发布）。
+最后，必须触发流程才能启用CUG。 为此，需要重新发布包含CUG策略的任何内容。 因此，在您的正常测试流程中，如果发现CUG不起作用，请重新发布该内容（即使未修改内容也确保已发布）。
 
 这应该会在发布中启用CUG策略，并且内容将只能由那些经过身份验证的用户（与策略关联的组的成员）访问。
 
