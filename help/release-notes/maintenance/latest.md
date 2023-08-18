@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 25af1b0d99f7c5971245f99a95c74d04ca943936
+source-git-commit: 6e491a68dedc55609349db75ac13691aeda2f0dc
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 21%
+source-wordcount: '673'
+ht-degree: 20%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 21%
 
 - SITES-15359：内容片段 — 变量名称模式无法正确匹配具有以下特征的变量 ```'_'``` 在资源名称中。
 - SITES-15463：站点模板 — 无法发布模板（解决方法：使用分发控制台）。
+- Forms-10444：自适应Forms模板 — 无法发布模板（解决方法：使用分发控制台）。
 - CQ-4354191：工作流 — 由于nt：unstructured节点上存在复制元数据，自定义启动器可能会触发许多次（解决方法：更新启动器以排除复制元数据属性以避免重叠）。
 
 ### 嵌套的技术 {#embedded-tech-13099}
