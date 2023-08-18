@@ -1,12 +1,12 @@
 ---
-title: 在  [!DNL Assets view] 中搜索和发现资源
-description: 在  [!DNL Assets view] 中搜索和发现资源。
+title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
+description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现适用的资源，并帮助您提升内容速度。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: ed7ce8be17ad1445132b9aa38a0efa84ffa70fdf
+source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 94%
+source-wordcount: '924'
+ht-degree: 93%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 94%
 
 **所需的权限：**`Can Edit`、`Owner` 或管理员。
 
-通过“资产”视图，您还可以向用户界面添加自定义筛选条件。 除了[标准筛选条件](#refine-search-results)之外，您还可以应用这些自定义筛选条件来优化您的搜索结果。
+资产视图还允许您向用户界面添加自定义筛选条件。 除了[标准筛选条件](#refine-search-results)之外，您还可以应用这些自定义筛选条件来优化您的搜索结果。
 
 资产视图提供了以下自定义筛选条件：
 
@@ -144,9 +144,9 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在“资产”视图中搜索资产](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html)
+* [观看视频，了解如何在“资产”视图中搜索资产](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=zh-Hans)
 
-* 使用提供产品反馈 [!UICONTROL 反馈] Assets视图用户界面上可用的选项
+* 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 

@@ -1,10 +1,10 @@
 ---
 title: 您如何从AEM中获取新的AEM Assets UI或Assets视图？
-description: 详细了解新的AEM Assets UI或AEM中的新Assets视图的主要优势
+description: 详细了解新的AEM Assets UI或AEM中的新Assets视图的主要优势。 Adobe 利用其在支持营销和创意专业人士方面的专业知识，推出了变革性的全新用户体验。
 mini-toc-levels: 3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1132'
 ht-degree: 66%
 
 ---
