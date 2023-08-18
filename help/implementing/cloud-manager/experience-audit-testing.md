@@ -2,7 +2,7 @@
 title: 体验审核测试
 description: 了解体验审核如何验证您的部署过程，并帮助确保部署的更改符合性能、可访问性、最佳实践和 SEO 的基线标准。
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: e9f205a506fb2d2b7f5e634b353b112bf077058a
+source-git-commit: 9f305e1127957fdba6dae978da4ac5fce4d3a776
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 93%
@@ -35,7 +35,7 @@ Cloud Manager 中的体验审核可确保最终用户在网站上的体验达到
 
 >[!INFO]
 >
->自2023年8月28日起，体验审核将过渡为展示特定于移动平台的结果。 请注意，移动性能量度通常注册的比桌面性能要低，因此请预计在此更改后报告的性能会有变化。
+>自2023年8月31日起，体验审核将过渡为展示特定于移动平台的结果。 请注意，移动性能量度通常注册的比桌面性能要低，因此请预计在此更改后报告的性能会有变化。
 
 >[!TIP]
 >
