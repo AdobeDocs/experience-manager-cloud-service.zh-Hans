@@ -2,10 +2,10 @@
 title: GraphQL持久查询 — 在Dispatcher中启用缓存
 description: Dispatcher 是位于 Adobe Experience Manager 发布环境前的缓存和安全层。您可以在AEM Headless中为持久查询启用缓存。
 feature: Dispatcher, GraphQL API
-source-git-commit: 6f07089812e587834784aeda7e62d3e4614f45a1
+source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 5%
+source-wordcount: '317'
+ht-degree: 10%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 5%
 >Dispatcher不缓存 `Vary` 标题。
 >
 >可以在Dispatcher中启用其他CORS相关标头的缓存，但是当有多个CORS源时，该功能可能不够。
+
+>[!NOTE]
+>
+>有关 Dispatcher 的详细文档，请参阅 [Dispatcher 指南。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 
 ## 启用持久查询的缓存 {#enable-caching-persisted-queries}
 
