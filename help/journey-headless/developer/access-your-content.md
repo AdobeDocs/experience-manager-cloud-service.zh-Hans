@@ -2,10 +2,10 @@
 title: 如何通过 AEM 交付 API 访问您的内容
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用 GraphQL 查询访问内容片段的内容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 99%
+source-wordcount: '1366'
+ht-degree: 98%
 
 ---
 
@@ -374,5 +374,6 @@ query {
    * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
    * [JSON 输出](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
 * [了解跨源资源共享 (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hans#understand-cross-origin-resource-sharing-(cors))
+* [GraphQL持久查询 — 在Dispatcher中启用缓存](/help/headless/deployment/dispatcher-caching.md)
 * [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [AEM Headless 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 一个简短的视频教程系列，概述了如何使用 AEM 的 Headless 功能，包括内容建模和 GraphQL。

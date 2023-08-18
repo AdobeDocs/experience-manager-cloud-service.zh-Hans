@@ -3,9 +3,9 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4922'
 ht-degree: 98%
 
 ---
@@ -116,6 +116,8 @@ AEM 提供将查询（两种类型）转换为[持久查询的功能，可由 Di
 不建议使用 POST 请求的 GraphQL 查询，因为它们未缓存，因此在默认实例中，Dispatcher 配置为阻止此类查询。
 
 虽然 GraphQL 也支持 GET 请求，但这些请求可能会达到限制（例如 URL 的长度），而使用“持久查询”可以避免这些限制。
+
+请参阅 [启用持久查询的缓存](/help/headless/deployment/dispatcher-caching.md) 以了解更多详细信息。
 
 >[!NOTE]
 >

@@ -3,14 +3,18 @@ title: 使用 AEM Headless 的跨源资源共享 (CORS) 配置
 description: Adobe Experience Manager 的跨源资源共享 (CORS) 允许 Headless Web 应用程序对 AEM 发出客户端调用。启用对 GraphQL 端点的访问需要 CORS 配置。
 feature: GraphQL API
 exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '230'
+ht-degree: 90%
 
 ---
 
 # 跨源资源共享 (CORS) 配置
+
+>[!CAUTION]
+>
+>如果 [Dispatcher中的缓存已启用](/help/headless/deployment/dispatcher-caching.md) 则无需使用CORS过滤器，因此可以忽略此部分。
 
 >[!NOTE]
 >
