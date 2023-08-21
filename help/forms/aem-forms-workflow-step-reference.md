@@ -1,23 +1,23 @@
 ---
-title: 如何将工作流分配给其他用户、发送电子邮件、在工作流中使用Adobe Sign？
+title: 使用以表单为中心的AEM工作流自动化业务流程
 description: 以Forms为中心的工作流允许您快速构建基于自适应Forms的工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将数据发送到多个数据源以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '7192'
 ht-degree: 2%
 
 ---
 
-# 以Forms为中心的AEM工作流 — 步骤参考 {#forms-centric-workflow-on-osgi-step-reference}
+# 使用以Forms为中心的AEM Workflows — 步骤参考以自动化业务流程{#forms-centric-workflow-on-osgi-step-reference}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 本文 |
 
-您可以使用工作流模型将业务逻辑转换为自动重复流程。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以 [在模型中包括各种AEM Workflow步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem).
+您可以使用工作流模型。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以 [在模型中包括各种AEM Workflow步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem).
 
 ## 以Forms为中心的步骤 {#forms-workflow-steps}
 
@@ -282,7 +282,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
  <tbody> 
   <tr> 
    <td>属性</td> 
-   <td>值<br /> </td> 
+   <td>价值<br /> </td> 
   </tr> 
   <tr> 
    <td>名字<br /> </td> 

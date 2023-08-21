@@ -1,20 +1,19 @@
 ---
-title: 在适用于AEM的自适应Forms的自适应Forms中添加自定义错误处理程序
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
+title: 在AEM自适应Forms中添加自定义错误处理程序
 description: AEM Forms使用配置为调用外部服务的REST端点为表单提供现成的成功和错误处理程序。 您可以在AEM自适应表单中添加默认错误处理程序以及自定义错误处理程序。
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: 添加自定义错误处理程序、添加默认错误处理程序、在表单中添加错误处理程序、使用规则编辑器的调用服务添加自定义错误处理程序、配置规则编辑器添加自定义错误处理程序、使用规则编辑器添加自定义错误处理程序
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 5%
 
 ---
 
-# 自适应Forms中的错误处理程序 {#error-handlers-in-adaptive-form}
+# 在AEM自适应Forms中添加自定义错误处理程序 {#error-handlers-in-adaptive-form}
 
 <span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 

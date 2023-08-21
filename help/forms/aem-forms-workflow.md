@@ -1,14 +1,9 @@
 ---
 title: OSGi上以Forms为中心的工作流
-seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: 使用 [!DNL AEM Forms] 此工作流用于自动化和快速构建审阅和批准，以启动文档服务
 seo-description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
-uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
-docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
 source-wordcount: '2361'
 ht-degree: 2%
@@ -16,7 +11,7 @@ ht-degree: 2%
 ---
 
 
-# OSGi上以Forms为中心的工作流{#forms-centric-workflow-on-osgi}
+# OSGi上以Forms为中心的工作流 {#forms-centric-workflow-on-osgi}
 
 ![主页横幅](do-not-localize/header.png)
 

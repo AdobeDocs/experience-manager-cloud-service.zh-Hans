@@ -1,18 +1,16 @@
 ---
-title: 导入、导出和组织自适应Forms、PDF forms和其他资源
-seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
+title: 导入或导出自适应Forms和AEM Forms资源
 description: 是否希望将自适应Forms和资源迁移到AEM实例或从中迁移它们？ 在此处了解如何从导入和导出自适应Forms、PDF forms、主题和其他支持资源 [!DNL AEM Forms] 实例。
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1210'
-ht-degree: 1%
+source-wordcount: '1206'
+ht-degree: 0%
 
 ---
 
-# 导入、导出和组织自适应表单、PDF 表单和其他资源{#importing-and-exporting-assets-to-aem-forms}
+# 导入或导出自适应Forms和AEM Forms资源 {#importing-and-exporting-assets-to-aem-forms}
 
 您可以在以下位置移动自适应Forms和相关资源，例如自适应表单主题、表单数据模型、自适应表单模板、文档片段和PDF forms [!DNL AEM Forms] 实例。 您可以导入和导出CRX包或二进制文件格式的资产。
 

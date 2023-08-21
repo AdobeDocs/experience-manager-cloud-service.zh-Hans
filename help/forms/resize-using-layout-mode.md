@@ -1,18 +1,18 @@
 ---
-title: 如何使用布局模式调整自适应Forms的组件大小？
+title: 使用布局模式调整自适应Forms的组件大小
 description: 使用在布局模式下可用的响应式网格定义组件的位置。 了解如何访问布局模式、调整组件大小、调整面板大小、为面板定义多列布局、为旧响应布局启用新响应式网格以及为具有旧响应式布局的表单禁用布局模式。
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 7%
+source-wordcount: '1157'
+ht-degree: 6%
 
 ---
 
-# 使用版面模式调整组件大小 {#use-layout-mode-to-resize-components}
+# 使用布局模式调整自适应Forms的组件大小 {#use-layout-mode-to-resize-components}
 
 <span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 

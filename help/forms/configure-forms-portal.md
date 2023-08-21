@@ -1,15 +1,14 @@
 ---
-title: 如何在Experience Manager Sites页面上创建Forms门户
+title: 将Forms Portal添加到AEM Sites页面
 description: 了解如何在AEM Sites页面上创建Forms Portal并使用现成的核心组件。
-exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1835'
 ht-degree: 4%
 
 ---
 
-# 在门户上列出自适应Forms {#publish-forms-on-portal}
+# 将Forms Portal添加到AEM Sites页面 {#publish-forms-on-portal}
 
 <span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 

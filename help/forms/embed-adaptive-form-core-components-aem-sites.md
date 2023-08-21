@@ -1,14 +1,12 @@
 ---
-title: 在AEM Sites页面中添加或创建自适应表单（核心组件）
-seo-title: How to add or create an Adaptive Form (Core Components) to an AEM Sites page?
+title: 使用AEM Sites编辑器创建或添加自适应表单
 description: 您可以在AEM Sites页面中使用自适应表单（核心组件）来填写和提交表单，而无需离开AEM Sites页面。
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2129'
 ht-degree: 6%
 
 ---
