@@ -1,16 +1,16 @@
 ---
-title: 使用涂鸦签名将电子签名应用于表单
+title: 使用涂鸦签名对表单进行电子签名
 description: 使用涂写对表单签名
 seo-description: Signing forms using scribble
 topic-tags: author
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '714'
 ht-degree: 9%
 
 ---
 
-# 使用涂鸦签名将电子签名应用于表单{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# 使用涂鸦签名对表单进行电子签名{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 <span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 

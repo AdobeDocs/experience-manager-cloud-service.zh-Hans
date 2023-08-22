@@ -1,15 +1,15 @@
 ---
-title: 使用Forms Designer创建DOR模板和表单片段
+title: 使用AEM Forms Designer
 description: 使用 [!DNL AEM Forms] 设计器以创建记录文档模板。
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-# 使用Forms Designer创建记录文档(DoR)模板和表单片段 {#install-designer}
+# 使用AEM Forms Designer {#install-designer}
 
 Designer是一款点击式图形表单设计工具，可简化XDP表单模板的创建。 您可以设计表单模板、定义其逻辑以及满足严格的法规要求。 这些模板用作自适应表单的记录文档模板。 这些表单模板与不同 [自适应表单模板](template-editor.md).
 

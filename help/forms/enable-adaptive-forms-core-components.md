@@ -5,15 +5,15 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1020'
 ht-degree: 89%
 
 ---
 
 
-# 在 AEM Forms as a Cloud Service 和本地开发环境上启用自适应表单核心组件 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# 启用自适应Forms核心组件 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
