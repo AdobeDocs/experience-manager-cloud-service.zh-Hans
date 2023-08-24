@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 * 多站点管理器 (MSM) 及其 Live Copy 功能可让您在多个位置使用相同的站点内容并允许以下变化：
    * [重用内容：多站点管理器和 Live Copy](msm/overview.md)
-* 通过翻译，您可以自动翻译页面内容以创建和维护多语言网站：
+* 利用翻译工具，您可以自动化页面内容的翻译以创建和维护多语言网站：
    * [翻译多语言站点的内容](translation/overview.md)
 
 可以结合使用这两种功能，以满足[跨国和多语言](#multinational-and-multilingual-sites)网站的需求。
@@ -41,7 +41,7 @@ ht-degree: 96%
 >
 >仅允许将多站点管理器用于采用一种语言的内容。
 >
->例如，使用英语母版为美国、加拿大和英国创建英文版页面。 然后，使用法语母版为法国、瑞士、加拿大等创建法语版页面。
+>例如，使用英语母版为美国、加拿大和英国创建英文版页面。然后，使用法语母版为法国、瑞士、加拿大等创建法语版页面。
 
 下图说明了主要概念的相交部分（但未显示涉及的所有级别/元素）：
 
