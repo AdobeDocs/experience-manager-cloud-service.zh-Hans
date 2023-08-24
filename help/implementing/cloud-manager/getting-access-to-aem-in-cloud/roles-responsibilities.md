@@ -2,9 +2,9 @@
 title: 角色和职责
 description: 角色和职责
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="aemcloud_raci"
 >title="角色和职责"
->abstract="Adobe 围绕 Experience Manager as a Cloud Service 的配置、开发、暂存和生产提供了一系列服务。 为了尽可能高效地进行解决方案的开发和部署，客户和定制人员必须理解并履行其职责，如此处所述。"
+>abstract="Adobe 围绕 Experience Manager as a Cloud Service 的配置、开发、暂存和生产提供了一系列服务。为了尽可能高效地进行解决方案的开发和部署，客户和定制人员必须理解并履行其职责，如此处所述。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=zh-Hans" text="选择合适的人员、合适的角色"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-Hans" text="调整 KPI"
 
 <br></br>
-Adobe 围绕 Experience Manager as a Cloud Service 的配置、开发、暂存和生产提供了一系列服务。 为了尽可能高效地进行解决方案的开发和部署，客户和定制人员必须理解并履行其职责，如以下所述。
+Adobe 围绕 Experience Manager as a Cloud Service 的配置、开发、暂存和生产提供了一系列服务。为了尽可能高效地进行解决方案的开发和部署，客户和定制人员必须理解并履行其职责，如以下所述。
 
 
 | 活动 | 子活动 | 客户 | 自定义程序 | Adobe | Cloud Manager 功能 |
@@ -60,6 +60,6 @@ Adobe 围绕 Experience Manager as a Cloud Service 的配置、开发、暂存�
 
 >[!NOTE]
 >
-> 以上假设包括 Premier Support。 该表可能会根据客户和自定义程序之间的协议进行修改。 如果您需要澄清上述任何问题，Adobe建议您与Adobe销售和定制团队合作。
-> 不想自己进行自定义的客户应获得Adobe的Professional Services团队或Experience Manager合作伙伴的服务。
+> 以上假设包括 Premier Support。该表可能会根据客户和自定义程序之间的协议进行修改。如果您需要澄清上述任何问题，Adobe 建议您与 Adobe 销售和定制团队合作。
+> 不想自己进行自定义的客户可获得 Adobe Professional Services 团队或 Experience Manager 合作伙伴的服务。
 >为了保持高质量水平，Adobe 要求参与 Experience Manager as a Cloud Service 开发项目的合作伙伴至少配备一名获得 Experience Manager 软件高级开发人员认证的人员。
