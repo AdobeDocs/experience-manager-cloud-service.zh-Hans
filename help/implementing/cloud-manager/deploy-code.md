@@ -3,9 +3,9 @@ title: 部署代码
 description: 了解如何使用 AEM as a Cloud Service 中的 Cloud Manager 管道部署代码。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 2d1d3ac98f8fe40ba5f9ab1ccec946c8448ddc43
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1193'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 77%
 
 ![非生产管道图标](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-通过生产管道将代码无缝部署到暂存环境，然后再部署到生产环境。 生产管道执行分为两个逻辑阶段。
+通过生产管道将代码无缝部署到暂存环境，然后再部署到生产环境。生产管道执行分为两个逻辑阶段。
 
 1. 部署到暂存环境
    * 构建并部署代码到暂存环境中，用于自动化功能测试、UI 测试、体验审计和用户验收测试 (UAT)。
@@ -37,7 +37,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
    ![行动号召 (CTA)](assets/deploy-code1.png)
 
-1. 这将显示&#x200B;**管道执行**&#x200B;屏幕。 单击&#x200B;**构建**&#x200B;开始此流程。
+1. 这将显示&#x200B;**管道执行**&#x200B;屏幕。单击&#x200B;**构建**&#x200B;开始此流程。
 
    ![管道执行屏幕](assets/deploy-code2.png)
 
@@ -53,9 +53,9 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 ## 暂存部署阶段 {#stage-deployment}
 
-**暂存部署**&#x200B;阶段。 包括这些步骤。
+**暂存部署**&#x200B;阶段。包括这些步骤。
 
-* **验证** – 此步骤可确保将管道配置为使用当前可用的资源。 例如，测试配置的分支存在其中且环境可用的资源。
+* **验证** – 此步骤可确保将管道配置为使用当前可用的资源。例如，测试配置的分支存在其中且环境可用的资源。
 * **构建和单元测试** – 此步骤运行容器化的构建过程。
    * 有关构件环境的详细信息，请参阅[构建环境详细信息。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
 * **代码扫描** – 此步骤评估应用程序代码的质量。
@@ -72,14 +72,14 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 * **产品功能测试** – Cloud Manager 管道执行针对暂存环境运行的测试。
    * 有关详细信息，请参阅[产品功能测试。](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)
 
-* **自定义功能测试** – 管道中的此步骤始终执行，不能跳过。 如果构建没有生成测试 JAR，则默认情况下测试通过。
+* **自定义功能测试** – 管道中的此步骤始终执行，不能跳过。如果构建没有生成测试 JAR，则默认情况下测试通过。
    * 有关详细信息，请参阅[自定义功能测试。](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
 
 * **自定义 UI 测试** – 此步骤是一个可选功能，可自动运行为自定义应用程序创建的 UI 测试。
    * UI 测试是打包在 Docker 图像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。
    * 有关详细信息，请参阅[自定义 UI 测试。](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)
 
-* **体验审核** – 管道中的此步骤始终执行，不能跳过。 在执行生产管道时，在将运行检查的自定义功能测试之后，会包含体验审核步骤。
+* **体验审核** – 管道中的此步骤始终执行，不能跳过。在执行生产管道时，在将运行检查的自定义功能测试之后，会包含体验审核步骤。
    * 配置的页面将提交给服务并进行评估。
    * 审核结果是信息性的，显示分数以及当前分数和以前分数之间的变化。
    * 此细节对于确定当前部署中是否会引入回归非常有用。
@@ -120,7 +120,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 ## 部署过程 {#deployment-process}
 
-所有 Cloud Service 部署都遵循滚动过程，以确保零停机。 请参阅[滚动部署的工作原理](/help/implementing/deploying/overview.md#how-rolling-deployments-work)，以了解更多信息。
+所有 Cloud Service 部署都遵循滚动过程，以确保零停机。请参阅[滚动部署的工作原理](/help/implementing/deploying/overview.md#how-rolling-deployments-work)，以了解更多信息。
 
 >[!NOTE]
 >
@@ -128,36 +128,36 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 ## 重新执行生产部署 {#reexecute-deployment}
 
-在极少数情况下，生产部署步骤可能会由于临时原因而失败。 在这种情况下，只要生产部署步骤已完成，则支持重新执行生产部署步骤，而不管完成类型如何（例如，已取消或不成功）。 重新执行将使用包含三个步骤的同一管道来创建一个新的执行。
+在罕见的情况下，生产部署步骤可能会因短暂的原因而失败。在此类情况下，只要生产部署步骤已完成，无论完成的类型是什么（例如，已取消或失败），都支持重新执行生产部署步骤。重新执行将使用包含三个步骤的同一管道创建新的执行。
 
-1. 验证步骤 — 此步骤基本上与正常管道执行期间进行的验证相同。
-1. 构建步骤 — 在重新执行的上下文中，构建步骤将复制工件，而实际上并不执行新的构建过程。
-1. 生产部署步骤 — 此步骤使用与正常管道执行中的生产部署步骤相同的配置和选项。
+1. 验证步骤 - 此步骤基本上就是在正常管道执行期间进行的相同验证。
+1. 构建步骤 - 在重新执行的上下文中，构建步骤复制工件，但实际上并不执行新的构建过程。
+1. 生产部署步骤 - 此步骤使用与正常管道执行中的生产部署步骤相同的配置和选项。
 
-在这种情况下，如果可以重新执行，生产管道状态页面将提供 **重新执行** 选项位于常规选项旁边 **下载内部版本日志** 选项。
+在此类能够重新执行的情况下，生产管道状态页面在平常的&#x200B;**下载构建日志**&#x200B;选项旁提供&#x200B;**重新执行**&#x200B;选项。
 
-![管道概述窗口中的重新执行选项](assets/re-execute.png)
+![管道概述窗口中的“重新执行”选项](assets/re-execute.png)
 
 >[!NOTE]
 >
->在重新执行时，UI中会标记构建步骤，以反映它将复制而不是重新构建工件。
+>在重新执行中，在 UI 中为构建步骤加上标签以反映它复制工件而非重新构建。
 
 ### 限制 {#limitations}
 
 * 生产部署步骤的重新执行仅适用于上一次执行。
-* 重新执行不适用于推送更新执行。 
+* 重新执行不适用于推送更新执行。
    * 如果最后一次执行是推送更新执行，则不可能重新执行。
 * 如果上一次执行在生产部署步骤前的任何时间点失败，则无法重新执行。
 
 ### 重新执行 API {#reexecute-API}
 
-除了在UI中可用之外，您还可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 触发重新执行并确定作为重新执行触发的执行。
+除了在 UI 中可用之外，您还可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/参考/API/#tag/管道执行) 触发重新执行以及标识已作为重新执行触发的执行。
 
 #### 触发重新执行 {#reexecute-deployment-api}
 
-要触发重新执行，请向HAL链接发出PUT请求 `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` 在生产部署步骤状态。
+要触发重新执行，请在生产部署步骤状态的 HAL 链接 `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` 发出 PUT 请求。
 
-* 如果存在此链接，则可以从该步骤重新开始执行。 
+* 如果存在此链接，则可以从该步骤重新开始执行。
 * 如果此链接不存在，则无法从该步骤重新开始执行。
 
 此链接仅适用于生产部署步骤。
@@ -197,10 +197,10 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
   "status": "FINISHED"
 ```
 
-HAL链接的href值的语法只是一个示例。 应始终从 HAL 链接读取而不是生成实际值。
+HAL 链接的 href 值的语法只是一个示例。应始终从 HAL 链接读取而不是生成实际值。
 
 通过将 PUT 请求提交到此端点，会产生 201 响应（如果成功），并且响应正文会是新执行的表示形式。这类似于通过 API 开始常规执行。
 
-#### 识别重新执行的执行 {#identify-reexecution}
+#### 识别“重新执行”的执行 {#identify-reexecution}
 
-重新执行的执行可以通过值来标识 `RE_EXECUTE` 在 `trigger` 字段。
+可以通过 `trigger` 字段中的 `RE_EXECUTE` 值识别重新执行的执行。
