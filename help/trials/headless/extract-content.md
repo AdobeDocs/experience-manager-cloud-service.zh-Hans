@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1085'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 98%
 
 ## 查询特定的示例内容 {#bypath-query}
 
-运行byPath查询可让您检索特定内容片段的内容。 产品详细信息页面和专注于一组特定内容的页面通常需要此类查询。
+运行 byPath 查询可让您检索特定内容片段的内容。产品详细信息页面和专注于一组特定内容的页面通常需要此类查询。
 
 1. 为预加载的 **AEM 演示资源**&#x200B;端点的 byPath 查询复制以下代码片段。
 
