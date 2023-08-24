@@ -3,9 +3,9 @@ title: 检查域名状态
 description: 了解如何确定 Cloud Manager 是否已成功验证您的自定义域名。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息�
 
    * 请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)，了解更多信息。
 
-当您在&#x200B;**添加自定义域**&#x200B;向导的验证步骤中选择&#x200B;**保存**&#x200B;时，Cloud Manager 将自动触发 TXT 验证。 对于后续验证，必须主动选择状态旁边的再次验证图标。
+当您在&#x200B;**添加自定义域**&#x200B;向导的验证步骤中选择&#x200B;**保存**&#x200B;时，Cloud Manager 将自动触发 TXT 验证。对于后续验证，必须主动选择状态旁边的再次验证图标。
 
 ## 域名错误 {#domain-error}
 
@@ -60,15 +60,15 @@ Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息�
 
 #### 错误原因 {#cause}
 
-快速将域锁定到注册该域的初始帐户，任何其他帐户都不能在不请求权限的情况下注册子域。此外，Fastly只允许您将一个Apex域和关联的子域分配给一个Fastly服务和帐户。 如果您现有的 Fastly 帐户链接了 AEM Cloud Service 域使用的相同 Apex 和子域，您将看到此错误。
+快速将域锁定到注册该域的初始帐户，任何其他帐户都不能在不请求权限的情况下注册子域。此外，Fastly 只允许您将一个 Apex 域和关联子域分配给一个 Fastly 服务和帐户。如果您现有的 Fastly 帐户链接了 AEM Cloud Service 域使用的相同 Apex 和子域，您将看到此错误。
 
 #### 错误解决方案 {#resolution}
 
 错误修复如下：
 
-* 在 Cloud Manager 中安装域之前，请从现有帐户中移除 Apex 和子域。 
+* 在 Cloud Manager 中安装域之前，请从现有帐户中移除 Apex 和子域。
 
-* 使用此选项将 Apex 域和所有子域链接到 AEM as a Cloud Service Fastly 帐户。 有关更多详细信息，请参阅[使用 Fastly 文档中的域](https://docs.fastly.com/en/guides/working-with-domains)。
+* 使用此选项将 Apex 域和所有子域链接到 AEM as a Cloud Service Fastly 帐户。有关更多详细信息，请参阅[使用 Fastly 文档中的域](https://docs.fastly.com/en/guides/working-with-domains)。
 
 * 如果您的 Apex 域有多个您想链接到不同 Fastly 帐户的 AEM as a Cloud Service 和非 AEM as a Cloud Service 站点的子域，那么请尝试在 Cloud Manager 中安装该域。如果域安装失败，请通过 Fastly 创建客户支持票证，以便 Adob&#x200B;&#x200B;e 可以代表您与 Fastly 跟进。
 
@@ -84,6 +84,6 @@ Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息�
 
 如果您的自定义域名已有预先存在的 CDN 配置，则&#x200B;**自定义域名**&#x200B;和&#x200B;**环境**&#x200B;页面上会有一条提示消息，鼓励您通过 UI 添加这些配置，使其在 Cloud Manager 中可见并可配置。
 
-使用 UI 迁移所有预先存在的环境配置后，消息将消失。 消息可能需要 1 – 2 个工作日才能消失。
+使用 UI 迁移所有预先存在的环境配置后，消息将消失。消息可能需要 1 – 2 个工作日才能消失。
 
 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)，了解更多详细信息。
