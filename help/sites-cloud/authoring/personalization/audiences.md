@@ -3,9 +3,9 @@ title: 管理受众
 description: 通过“受众”控制台，您可以创建、组织和管理 Adobe Target 帐户的受众，或管理 ContextHub 的区段
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '962'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
    >[!NOTE]
    >
-   >您可以通过点按或单击对修改后的列表进行排序 **修改时间** ，以按降序排序，查看任何新创建的受众。
+   >您可以通过点按或单击&#x200B;**已修改**&#x200B;来对修改列表进行降序排序，以查看任何新创建的受众。
 
 有关使用 ContextHub 创建区段的更多详细信息，请参阅“使用 ContextHub 配置分段”文档。<!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
@@ -56,7 +56,7 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
 >[!NOTE]
 >
->如果“创建”菜 **单中未显示** “创建 **** 目标受众”，则您没有创建受众的必要权限。 您需要下面的写 `/etc/segmentation` 入权限才能创建受众。 默认情况下，组内容作者具有写权限。
+>如果“创建”菜 **单中未显示** “创建 **** 目标受众”，则您没有创建受众的必要权限。您需要下面的写 `/etc/segmentation` 入权限才能创建受众。默认情况下，组内容作者具有写权限。
 
 要创建 Adobe Target 受众，请执行以下操作：
 
@@ -70,7 +70,7 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
 1. 在 **Adobe Target 配置**&#x200B;对话框中，选择目标配置，然后单击或点按&#x200B;**确定**。
 1. 在“规则#1”区域中，单击或点按属性类型并在可用字段中输入任何属性信息。完成后，选中该属性右侧的复选标记以保存该属性。有关所有属性的信息，请参阅[属性及其选项](#attributes-and-their-options)。
-1. 单击 **添加规则** ，以添加其他规则。 根据需要输入任意数量的规则。 规则与布尔运算符AND相结合，这意味着受众必须满足每个规则的所有要求才能符合活动条件。
+1. 单击 **添加规则** ，以添加其他规则。根据需要输入任意数量的规则。规则与布尔运算符AND相结合，这意味着受众必须满足每个规则的所有要求才能符合活动条件。
 1. 点按或单击&#x200B;**下一步**。
 1. 为受众输入一个名称，然后单击或点按&#x200B;**保存**。
 1. 点按或单击&#x200B;**保存**。受众随即会列在“受众”列表中。
