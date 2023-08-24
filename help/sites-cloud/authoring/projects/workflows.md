@@ -3,9 +3,9 @@ title: 使用项目工作流
 description: 提供了多种开箱即用的项目工作流。
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '451'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 现成可用的项目工作流包括：
 
-* **项目审批工作流**  — 利用此工作流，可将内容分配给用户进行审查和批准。
+* **项目审批工作流** – 此工作流让您将内容分配给用户进行审查和批准。
 * **请求启动项** – 此工作流用于请求启动项。
 * **请求登陆页面** – 此工作流用于请求登陆页面。
 * **请求电子邮件** – 此工作流用于请求电子邮件。
