@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->页面访问者 [别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 在编辑器中无法发布。 编辑器中的发布选项仅适用于通过其实际路径访问的页面。
+>无法发布编辑器中按[别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
 
 ### 从控制台中发布 {#publishing-from-the-console}
 
@@ -124,7 +124,7 @@ Sites 控制台中有两个用于发布的选项：
 
    ![选择要发布的页面](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. 此时会启动&#x200B;**管理发布**&#x200B;向导。第一步， **选项**，允许您：
+1. 此时会启动&#x200B;**管理发布**&#x200B;向导。第一步，**选项**，让你：
 
    * **操作**
 
@@ -228,7 +228,7 @@ Sites 控制台中有两个用于发布的选项：
 
 >[!NOTE]
 >
->页面访问者 [别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) 无法取消发布编辑器中的。 编辑器中的发布选项仅适用于通过其实际路径访问的页面。
+>无法取消发布编辑器中按[别名](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
 
 ### 从控制台中取消发布 {#unpublishing-from-the-console}
 

@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
 source-wordcount: '4922'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -160,7 +160,7 @@ GraphQL 查询是在基础请求的 AEM 用户的许可下执行的。如果用�
 
 ## 架构生成 {#schema-generation}
 
-GraphQL是强类型的API，这意味着数据必须结构明确并按类型整理。
+GraphQL 是一种强类型的 API，这意味着数据必须有明确的结构并按类型整理。
 
 GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。为执行此操作，客户端需要提取[架构](#schema-generation)，其中包含查询所需的全部类型。
 
@@ -566,7 +566,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 >
 >要获得最佳性能，请考虑[更新内容片段以在 GraphQL 筛选中进行分页和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)。
 
-此功能允许您根据指定字段对查询结果进行排序。
+此功能让您根据指定字段对查询结果进行排序。
 
 排序标准：
 
@@ -633,7 +633,7 @@ query {
 >
 >要获得最佳性能，请考虑[更新内容片段以在 GraphQL 筛选中进行分页和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)。
 
-此功能允许您对返回列表的查询类型执行分页。 提供了两种方法：
+此功能让您对返回列表的查询类型执行分页。提供了两种方法：
 
 * 在 `List` 查询中的 `offset` 和 `limit`
 * 在 `Paginated` 查询中的 `first` 和 `after`
@@ -708,7 +708,7 @@ query {
 
 ## GraphQL 查询中的 Web 优化图像传递 {#web-optimized-image-delivery-in-graphql-queries}
 
-通过Web优化的图像交付，您可以使用Graphql查询执行以下操作：
+经 Web 优化的图像传递支持您使用 GraphQL 查询来：
 
 * 请求 AEM Assets 图像的 URL
 
@@ -726,7 +726,7 @@ query {
 
 这意味着将在查询执行期间应用命令，方式与这些图像的 GET 请求中的 URL 参数相同。
 
-这让您能够为JSON投放动态创建图像演绎版，从而避免在存储库中手动创建和存储这些演绎版。
+该操作将让您为 JSON 传递动态创建图像演绎版，从而无需手动创建这些演绎版并将其存储在存储库中。
 
 GraphQL 中的解决方案意味着您可以：
 

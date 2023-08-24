@@ -4,14 +4,14 @@ description: 了解如何配置批量编辑，以便您可以一次编辑多个�
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # 配置对页面属性的批量编辑 {#configuring-bulk-editing-of-page-properties}
 
-[批量编辑页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages) 允许您同时编辑多个页面的属性。
+[批量编辑页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md#from-the-sites-console-multiple-pages)功能让您一次编辑多个页面的属性。
 
 ## 注意事项 {#considerations}
 

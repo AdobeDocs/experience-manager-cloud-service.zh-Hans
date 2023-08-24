@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2279'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 98%
 
 * **虚 URL**
 
-   * 允许您输入此页面的虚URL，这样可让您具有更短的和/或更富表现性的URL。
+   * 让您输入此页面的虚 URL，以便使用更短并且/或者含意更清楚的 URL。
    * 例如，如果将网站 `http://example.com` 的虚 URL 设置为由路径 `/v1.0/startpage` 标识的 `welcome` 页面，则 `http://example.com/welcome` 将成为 `http://example.com/content/v1.0/startpage` 的虚 URL
 
   >[!CAUTION]
@@ -104,7 +104,7 @@ ht-degree: 98%
    * **别名** – 指定要用于此页面的别名
       * 例如，如果您为页面 `/content/wknd/us/en/magazine/members-only` 定义别名 `private`，则也可以通过 `/content/wknd/us/en/magazine/private` 访问此页面
       * 创建别名将设置页面节点上的 `sling:alias` 属性，这只会影响资源，而不会影响存储库路径。
-      * 无法发布编辑器中按别名处理的页面。 编辑器中的[发布选项](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)仅适用于通过其实际路径访问的页面。
+      * 无法发布编辑器中按别名处理的页面。编辑器中的[发布选项](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)仅适用于通过其实际路径访问的页面。
       * 有关详细信息，请参阅[“SEO 和 URL 管理最佳实践”下的“本地化的页面名称”](/help/overview/seo-and-url-management.md#localized-page-names)。
 
 * **配置**

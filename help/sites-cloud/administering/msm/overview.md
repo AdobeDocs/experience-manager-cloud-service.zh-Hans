@@ -7,7 +7,7 @@ exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '2714'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -114,14 +114,14 @@ ht-degree: 97%
 
 * **创建站点**（**站点**）
 
-   * MSM 可帮助您管理拥有相同内容的多个网站。例如，通常为国际受众提供网站，以便大多数内容在所有国家/地区都是相同的，仅一小部分内容特定于单个国家/地区。MSM允许您 [创建可根据您的源站点自动更新一个或多个站点的活动副本](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 这还可以帮助您实施通用的基础结构，跨多个站点使用共有内容，维护共有外观，并专注于管理各个站点之间实际不同的内容。通过此方式创建站点：
+   * MSM 可帮助您管理拥有相同内容的多个网站。例如，通常为国际受众提供网站，以便大多数内容在所有国家/地区都是相同的，仅一小部分内容特定于单个国家/地区。MSM 可让您[创建根据源站点自动更新一个或多个站点的 Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)。这还可以帮助您实施通用的基础结构，跨多个站点使用共有内容，维护共有外观，并专注于管理各个站点之间实际不同的内容。通过此方式创建站点：
       * 需要预定义的 Blueprint 配置来指定源。
       * 创建（预定义的）源的 Live Copy。
       * 为用户提供&#x200B;**转出**&#x200B;按钮。
 
 * **创建 Live Copy**（**站点**）
 
-   * MSM允许您 [创建单个页面或网站子分支的临时（一次性）Live Copy。](creating-live-copies.md#creating-a-live-copy-of-a-page)例如，复制子分支可提供有关产品的新/更新版本的信息。通过此方式创建 Live Copy：
+   * MSM 可让您[创建单个页面或网站子分支的临时（一次性）Live Copy。](creating-live-copies.md#creating-a-live-copy-of-a-page)例如，复制子分支可提供有关产品的新/更新版本的信息。通过此方式创建 Live Copy：
       * 创建临时 Live Copy（无需 Blueprint 配置）。
       * 可用于（立即）创建任何页面/分支的 Live Copy。
       * 需要&#x200B;**同步**（不提供&#x200B;**转出**&#x200B;按钮）。
@@ -136,11 +136,11 @@ ht-degree: 97%
 
 * **Live Copy 概述**（**站点**）
 
-   * 此控制台允许您 [查看和管理您的Blueprint及其活动副本。](live-copy-overview.md)
+   * 利用此控制台，您可以[查看和管理您的 Blueprint 及其 Live Copy。](live-copy-overview.md)
 
-* **Blueprint**（**工具** – **站点**）
+* **蓝图**（**工具** – **Sites**）
 
-   * 此控制台允许您 [创建和管理您的Blueprint配置。](creating-live-copies.md#creating-a-blueprint-configuration)
+   * 利用此控制台，您可以[创建和管理您的 Blueprint 配置。](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
@@ -245,7 +245,7 @@ Live Copy 在作为浅 Live Copy 的子级创建时称为堆叠式 Live Copy。�
 
 ### 源、Blueprint 和 Blueprint 配置 {#source-blueprints-and-blueprint-configurations}
 
-任何页面或页面分支都可用作 Live Copy 的源。但是，MSM还允许您定义指定源路径的Blueprint配置。 使用 Blueprint 配置的好处是：
+任何页面或页面分支都可用作 Live Copy 的源。不过，MSM 还让您定义指定源路径的 Blueprint 配置。使用 Blueprint 配置的好处是：
 
 * 允许作者对 Blueprint 使用&#x200B;**转出**&#x200B;选项。即，显式地将修改推送到从该 Blueprint 继承的 Live Copy。
 * 允许作者使用&#x200B;**创建站点**。这可让作者轻松选择语言并配置 Live Copy 的结构。

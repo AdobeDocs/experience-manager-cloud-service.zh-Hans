@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ GraphQL 是一种开源规范，它提供：
 * 一种查询语言，可让您从结构化对象中选择特定内容。
 * 一个运行库，用于使用结构化内容实施这些查询。
 
-GraphQL是强类型的API。 这意味着，*所有*&#x200B;内容必须按类型清晰地编排和组织，以便 GraphQL 能够&#x200B;*理解*&#x200B;访问内容和访问方式。数据字段将在 GraphQL 架构中定义，该架构定义了内容对象的结构。
+GraphQL 是一个强类型 API。这意味着，*所有*&#x200B;内容必须按类型清晰地编排和组织，以便 GraphQL 能够&#x200B;*理解*&#x200B;访问内容和访问方式。数据字段将在 GraphQL 架构中定义，该架构定义了内容对象的结构。
 
 之后，GraphQL 端点提供响应 GraphQL 查询的路径。
 
@@ -124,7 +124,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 这些内容片段模型：
 
 * 一旦&#x200B;**启用**，用于生成架构。
-* 提供 GraphQL 所需的数据类型和字段。 它们确保您的应用程序仅请求可能的内容，并接收预期内容。
+* 提供 GraphQL 所需的数据类型和字段。它们确保您的应用程序仅请求可能的内容，并接收预期内容。
 * 数据类型&#x200B;**片段引用**&#x200B;可在模型中使用来引用其他内容片段，因此可引入其他级别的结构。
 
 ### 片段引用 {#fragment-references}
@@ -133,7 +133,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
 
 * 是可在定义内容片段模型时可用的特定数据类型。
 * 引用另一个片段，具体取决于特定的内容片段模型。
-* 允许您创建和检索结构化数据。
+* 让您依次创建和检索结构化数据。
 
    * 定义为&#x200B;**多源**，则主片段可以引用（检索）多个子片段。
 
