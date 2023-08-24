@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 
 您已经完成了入门历程的很多内容！ 恭喜！系统管理员通过在文档[分配 AEM 产品配置](assign-profiles-aem.md)文件中设置必要的云资源并授予访问权限，已经完成了入门历程。
 
-此时，开发人员和部署管理员可以开始创建自己的应用程序，而 AEM 用户可以开始创建内容。 从这个意义上说，您的载入已经完成，现在可以使用您的新 AEM as a Cloud Service 系统了，本文将对此进行说明。
+此时，开发人员和部署管理员可以开始创建自己的应用程序，而 AEM 用户可以开始创建内容。从这个意义上说，您的载入已经完成，现在可以使用您的新 AEM as a Cloud Service 系统了，本文将对此进行说明。
 
 ## 受众 {#audience}
 
@@ -48,7 +48,7 @@ ht-degree: 95%
 
 ## 前提条件 {#prerequisites}
 
-在您以开发人员或部署管理员的身份开始本文档中描述的任务之前，请确保您的系统管理员已完成此载入流程中的所有步骤。 这意味着：
+在您以开发人员或部署管理员的身份开始本文档中描述的任务之前，请确保您的系统管理员已完成此载入流程中的所有步骤。这意味着：
 
 * 系统管理员已将开发人员和部署管理员分配给他们各自的产品配置文件。
 * 此外，开发人员还必须分配给 **AEM 用户**&#x200B;或 **AEM 管理员**&#x200B;产品配置文件，才能同时使用 AEM。
@@ -82,11 +82,11 @@ ht-degree: 95%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
-1. 从 Cloud Manager 主屏幕访问&#x200B;**管道**&#x200B;信息卡。 单击&#x200B;**+ 添加**&#x200B;并选择&#x200B;**添加非生产管道**。
+1. 从 Cloud Manager 主屏幕访问&#x200B;**管道**&#x200B;信息卡。单击&#x200B;**+ 添加**&#x200B;并选择&#x200B;**添加非生产管道**。
 
    ![添加非生产管道](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. 在&#x200B;**添加非生产管道**&#x200B;对话框的&#x200B;**配置**&#x200B;选项卡上，选择要添加的非生产管道的类型。 对于此示例，请选择&#x200B;**部署管道**。
+1. 在&#x200B;**添加非生产管道**&#x200B;对话框的&#x200B;**配置**&#x200B;选项卡上，选择要添加的非生产管道的类型。对于此示例，请选择&#x200B;**部署管道**。
 
    ![“添加非生产管道”对话框](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -134,7 +134,7 @@ ht-degree: 95%
 * 作为开发人员，了解如何访问和管理 Cloud Manager Git 存储库。
 * 作为部署管理员，可以在 Cloud manager 中设置管道并部署代码。
 
-作为开发人员或部署管理员，您不仅具备 Cloud manager 的工作知识，而且还拥有工作环境、存储库和管道！ 但是，对于 AEM as a Cloud Service 强大的 CI/CD 工具，还有更多需要了解的地方。 查看[其他资源](#additional-resources)部分，了解更多详细信息。
+作为开发人员或部署管理员，您不仅具备 Cloud manager 的工作知识，而且还拥有工作环境、存储库和管道！ 但是，对于 AEM as a Cloud Service 强大的 CI/CD 工具，还有更多需要了解的地方。查看[其他资源](#additional-resources)部分，了解更多详细信息。
 
 如果您对内容作者如何访问和使用 AEM as a Cloud service 感兴趣，请继续进行入门历程的最后一部分 [AEM 用户任务。](aem-users.md)
 
@@ -149,7 +149,7 @@ ht-degree: 95%
 * [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md) – 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Git 存储库。
 * [将 Git 和 Cloud Manager 结合使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) – 了解如何使用 Cloud Manager 的 Git 存储库，以及如何将您自己的本地客户管理的 Git 储存库与 Cloud Manager 集成。
 * [本地开发环境设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) – 本教程将指导您使用 AEM as a Cloud Service SDK 为 Adobe Experience Manager (AEM) 设置本地开发环境。
-* [AEM Sites 入门 – WKND 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans) – 此教程包含多个部分，是为新加入 Adobe Experience Manager (AEM) 的开发人员设计的。本教程介绍了虚拟生活方式品牌 WKND 的 AEM 站点的实现。 此教程涵盖了项目设置、核心组件、可编辑模板、客户端库和使用 Adobe Experience Manager Sites 进行组件开发等基本主题。
-* [在AEM中使用React快速入门SPA](/help/implementing/developing/hybrid/getting-started-react.md)  — 本文介绍了一个SPA应用程序示例，说明它是如何组合在一起的，并使您能够使用React框架快速启动和运行自己的SPA。
-* [使用Angular在AEM中开始使用SPA](/help/implementing/developing/hybrid/getting-started-angular.md)  — 本文介绍了一个SPA应用程序示例，说明它是如何组合在一起的，并使您能够使用Angular框架快速启动和运行自己的SPA。
+* [AEM Sites 入门 – WKND 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans) – 此教程包含多个部分，是为新加入 Adobe Experience Manager (AEM) 的开发人员设计的。本教程介绍了虚拟生活方式品牌 WKND 的 AEM 站点的实现。此教程涵盖了项目设置、核心组件、可编辑模板、客户端库和使用 Adobe Experience Manager Sites 进行组件开发等基本主题。
+* [在 AEM 中使用 React 快速入门 SPA](/help/implementing/developing/hybrid/getting-started-react.md) – 这篇文章介绍了一个 SPA 应用程序示例，解释 SPA 是如何进行组合，让您通过 React 框架快速启动和运行自己的 SPA。
+* [在 AEM 中使用 Angular 快速入门 SPA](/help/implementing/developing/hybrid/getting-started-angular.md) – 这篇文章介绍了一个 SPA 应用程序示例，解释 SPA 是如何进行组合，让您通过 Angular 框架快速启动和运行自己的 SPA。
 * [无头开发人员历程](/help/journey-headless/developer/overview.md) – 从此处开始，学习使用 AEM 开发无头应用程序的指导课程。
