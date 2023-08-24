@@ -3,9 +3,9 @@ title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '516'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
    ![“编辑程序”选项](assets/edit-program-overview.png)
 
-1. **编辑程序**&#x200B;页面将打开。 在&#x200B;**常规**&#x200B;选项卡上，编辑程序名称和描述。
+1. **编辑程序**&#x200B;页面将打开。在&#x200B;**常规**&#x200B;选项卡上，编辑程序名称和描述。
 
    * 必须为程序选择至少一个解决方案。
 
@@ -63,7 +63,7 @@ ht-degree: 97%
 
 ![程序的增强安全性激活](assets/edit-program-enhanced.png)
 
-一旦创建了程序，便无法修改此设置。 有关增强安全选项的更多信息，请参阅[创建生产程序](creating-production-programs.md)文档。
+一旦创建了程序，就不能修改此设置。有关增强安全选项的更多信息，请参阅[创建生产程序](creating-production-programs.md)文档。
 
 ## 删除沙盒程序 {#delete-sandbox-program}
 
@@ -89,4 +89,4 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->只能删除沙盒程序。 无法删除生产程序。
+>只能删除沙盒程序。无法删除生产程序。
