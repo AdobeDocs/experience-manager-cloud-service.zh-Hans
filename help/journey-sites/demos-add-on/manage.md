@@ -3,9 +3,9 @@ title: 管理您的演示站点
 description: 了解可用于帮助您管理演示站点的工具以及如何删除它们。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '943'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ ht-degree: 95%
 
 自助演示实用工具提供了大量工具。
 
-* **删除站点** – 在此 Adobe Experience Manager 实例中选择要删除的站点。请记住，这是一项破坏性操作，一经启动便无法撤消。
-* **删除站点模板** – 在此 Adobe Experience Manager 实例中选择要删除的站点模板。在删除站点模板之前，请确保所有引用该模板的站点也被删除。请记住，这是一项破坏性操作，一经启动便无法撤消。
+* **删除站点** – 在此 Adobe Experience Manager 实例中选择要删除的站点。请记住，这是一项破坏性操作，一经启动便无法还原。
+* **删除站点模板** – 在此 Adobe Experience Manager 实例中选择要删除的站点模板。在删除站点模板之前，请确保所有引用该模板的站点也被删除。请记住，这是一项破坏性操作，一经启动便无法还原。
 * **主创作缓存** – 这将在 Adobe Experience Manager 实例中获取多个资源，从而加快其获取速度。这可能需要几秒钟的时间。
 * **Android 应用程序** – 用于安装和启动演示 Android 应用程序的工具。创建基于 **WKND 单页面应用程序**&#x200B;的站点以填充此页面。从 Android 设备、模拟器或 Bluestacks 中使用。
 * **用户偏好设置** – 关闭教程弹出对话框。
