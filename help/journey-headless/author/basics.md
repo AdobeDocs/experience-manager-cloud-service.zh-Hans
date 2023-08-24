@@ -3,9 +3,9 @@ title: 学习创作基础知识
 description: 了解使用内容片段为 Headless CMS 创作内容的概念和机制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1714'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ AEM 安装通常包含三个环境：
 * 密码
 * 用于访问登录屏幕的链接
 
-您的帐户将配置有您需要的任何权限。如果您有任何问题，Adobe建议您联系内部项目支持团队。
+您的帐户将配置有您需要的任何权限。如果您有任何问题，Adobe 建议您联系您的内部项目支持团队。
 
 ### 导航 {#navigation}
 
@@ -97,7 +97,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 >[!NOTE]
 >
->“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。 可以通过 AEM 异步作业 UI 监控该作业的进度。
+>“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。可以通过 AEM 异步作业 UI 监控该作业的进度。
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -217,7 +217,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
   ![内容片段编辑器 – 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* 可让您编写较长文本部分的片段。 这里提供了用于管理文本并设置其格式的其他选项。您甚至可以在全屏编辑器中打开各个文本字段（使用右侧的类似小屏幕的图标）
+* 一个让您编写长段文本的片段。这里提供了用于管理文本并设置其格式的其他选项。您甚至可以在全屏编辑器中打开各个文本字段（使用右侧的类似小屏幕的图标）
 
   ![内容片段编辑器 – 阿拉斯加烈酒](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
