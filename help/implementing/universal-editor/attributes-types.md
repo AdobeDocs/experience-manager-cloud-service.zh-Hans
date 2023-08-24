@@ -3,9 +3,9 @@ title: 属性和类型
 description: 了解 Universal Editor 所需的数据属性和类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 source-git-commit: 9df57ce958bb8f7f9406b9fe342c9d2a4ccb0ae0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '681'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,8 +53,8 @@ ht-degree: 94%
 
 | `data-editor-behavior` | 描述 |
 |---|---|
-| `component` | 用于允许独立文本、富文本和媒体模拟组件，以便它们也可在页面上移动和删除 |
-| `container` | 用于允许将容器视为其自身的组件，以便在页面上移动和删除这些组件 |
+| `component` | 用于允许独立文本、富文本和媒体模仿组件，以便它们也能够在页面上移动和被删除 |
+| `container` | 用于允许容器被视为自己的组件，以便它们可以在页面上移动和删除 |
 
 ## 其他资源 {#additional-resources}
 
