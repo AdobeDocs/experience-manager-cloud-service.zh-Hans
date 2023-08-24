@@ -1,18 +1,18 @@
 ---
-title: "[!DNL AEM Forms] as a Cloud Service 发行说明"
-description: "[!DNL AEM Forms] as a Cloud Service 发行说明"
+title: “[!DNL AEM Forms] as a Cloud Service 发行说明”
+description: “[!DNL AEM Forms] as a Cloud Service 发行说明”
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2015'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # [!DNL Experience Manager Forms] as a Cloud Service 发行说明 {#overview}
 
-Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。要了解最新动态，请定期访问此页面。 此页面为您提供以下信息：
+Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。要了解最新动态，请定期访问此页面。此页面为您提供以下信息：
 
 - 新增功能
 - 改进功能
@@ -39,7 +39,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 ### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-oct-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务允许您以同步和批处理模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务让您能够以同步和批处理模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
 
    - 使用 XML 数据填充模板文件（PDF 和 XDP）来生成文档。
    - 生成各种格式的输出表单，包括非交互式 PDF 打印流。
@@ -63,7 +63,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 - **统一存储连接器：**使用统一存储连接器将客户管理的存储库中的进程内数据外部化。例如，您可以将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
    - 使用 XML 数据填充模板文件来生成文档。
    - 生成各种格式的输出表单，包括非交互式 PDF 打印流。
    - 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
@@ -104,7 +104,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 - **基于 Acroform 的记录文档**：除了基于 XFA 的表单模板，AEM Forms as a Cloud Service 还支持使用 [Adobe Acrobat Form PDF (Acroform PDF)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) 作为记录文档的模板。
 
-- **Microsoft Azure 数据存储连接器**：您现在可以[将表单数据模型连接到 Microsoft Azure Storage](configure-azure-storage.md)。它可让您检索自适应表单数据并将其作为BLOB存储到Microsoft Azure Storage。
+- **Microsoft Azure 数据存储连接器**：您现在可以[将表单数据模型连接到 Microsoft Azure Storage](configure-azure-storage.md)。它可让您检索自适应表单数据并将其作为 BLOB 存储到 Microsoft Azure 存储。
 
 ### [!DNL Forms] 的 Beta 版功能 {#aug-what-is-new-forms-prerelease}
 
@@ -113,7 +113,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
    - 启用 Forms Portal 的保存和恢复功能，将自适应表单草稿存储到客户管理的数据存储库中。
    - 将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
    - 使用 XML 数据填充模板文件来生成文档。
    - 生成各种格式的输出表单，包括非交互式 PDF 打印流。
    - 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
@@ -139,13 +139,13 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 - **基于 Acroform 的记录文档**：除了基于 XFA 的表单模板，您还可以[使用 Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作为记录文档的模板。
 
-- **Microsoft Azure 数据存储连接器**：您现在可以[将表单数据模型连接到 Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它可让您检索自适应表单数据并将其作为BLOB存储到Microsoft Azure Storage。
+- **Microsoft Azure 数据存储连接器**：您现在可以[将表单数据模型连接到 Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它可让您检索自适应表单数据并将其作为 BLOB 存储到 Microsoft Azure 存储。
 
 - **变量数据外部化程序**：您可以将 AEM Workflow 变量的数据保存在由组织管理的外部存储系统上。
 
 ### [!DNL Forms] 的 Beta 版功能 {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
    - 使用 XML 数据填充模板文件来生成文档。
    - 生成各种格式的输出表单，包括非交互式 PDF 打印流。
    - 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
@@ -161,7 +161,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 ### [!DNL Forms] 的 Beta 版功能 {#june-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API 可帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+- **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API 可帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
 
    - 使用 XML 数据填充模板文件来生成最终表单文档。
    - 生成各种格式的输出表单，包括非交互式 PDF 打印流。
@@ -187,7 +187,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 ### 即将推出的 [!DNL Forms] Beta 版功能 {#may-what-is-new-forms-prerelease}
 
-Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步和异步批处理模式生成文档。 Output 服务使您能够创建应用程序，这些应用程序允许您：
+Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务让您以同步和异步批处理模式生成文档。Output 服务使您能够创建应用程序，这些应用程序允许您：
 
 - 使用 XML 数据填充模板文件来生成最终表单文档。
 - 生成各种格式的输出表单，包括非交互式 PDF 打印流。
@@ -209,7 +209,7 @@ Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML �
 
   通过先进的机器学习算法，Adobe Sign 的 Government ID 流程让世界各地的公司均可确保高质量地验证其收件人的身份。现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
 
-  Government ID 是一种高级的身份验证方法，它指示收件人[上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然后评估该证明文件以确保真实有效。
+  Government ID 是一种高级的身份验证方法，它指示收件人[上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/cn/in/sign/using/adobesign-authentication-government-id.html)，然后评估该证明文件以确保真实有效。
 
 - **支持对异步提交自适应表单使用表单内签名体验**
 
@@ -221,7 +221,7 @@ Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML �
 
 - **支持使用字面选项设置 JSON 类型变量的值**
 
-  可在 AEM Workflow 的“设置变量”步骤中使用字面选项设置 JSON 类型变量的值。通过字面选项，可按字符串的形式指定JSON。
+  可在 AEM Workflow 的“设置变量”步骤中使用字面选项设置 JSON 类型变量的值。通过字面选项，可按字符串的形式指定 JSON。
 
 - **使用本地开发环境创建记录文档 (DoR)**
 
