@@ -3,9 +3,9 @@ title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2150'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 管理您的站点 {#managing-your-site}
 
-此 **站点** 通过console，您可以使用标题栏、工具栏、操作图标（适用于所选资源）和痕迹导航来导航和管理您的网站，选择后还可使用辅助边栏（例如时间轴和引用）。
+**Sites**&#x200B;控制台让您使用标题栏、工具栏、操作图标（适用于所选资源）和痕迹导航来导航和管理您的网站，选择后还可使用辅助边栏（例如时间线和引用）。
 
 例如，列视图：
 
@@ -265,9 +265,9 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 编辑页面时可以使用多种模式来执行不同的操作：
 
 * [编辑](/help/sites-cloud/authoring/fundamentals/editing-content.md) - 编辑页面内容时使用的模式。
-* [布局](/help/sites-cloud/authoring/features/responsive-layout.md)  — 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
+* [布局](/help/sites-cloud/authoring/features/responsive-layout.md) - 让您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
 * [定位](/help/sites-cloud/authoring/personalization/targeted-content.md) - 通过在所有渠道中进行定位和衡量来提高内容相关性。
-* [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp)  — 允许您查看特定时间点的页面状态。
+* [时间扭曲](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - 让您查看页面在特定时间点的状态。
 * [Live Copy 状态](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) – 允许快速查看 Live Copy 状态以及继承/未继承的组件。
 * [开发人员模式](/help/implementing/developing/tools/developer-mode.md)
 * [预览](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - 用于查看在发布环境中显示的页面；或使用内容中的链接进行导航。
@@ -310,7 +310,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 ![路径浏览器](/help/sites-cloud/authoring/assets/path-browser.png)
 
 * 选择资源后，对话框右上角的&#x200B;**选择**&#x200B;按钮将变为活动状态。单击或点按以确认选择，或者单击或点按&#x200B;**取消**&#x200B;以中止操作。
-* 如果上下文允许选择多个资源，则选择某个资源也会激活“选择 **** ”按钮，但也会将选定资源的计数添加到窗口的右上角。 单击该 **数字旁边的** X可取消选择全部。
+* 如果上下文允许选择多个资源，则选择某个资源也会激活“选择 **** ”按钮，但也会将选定资源的计数添加到窗口的右上角。单击该 **数字旁边的** X可取消选择全部。
 * 在树中导航时，您的位置会反映在对话框顶部的痕迹导航中。还可使用这些痕迹导航在资源层次结构中快速跳转。
 * 您随时都可以使用对话框顶部的搜索字段。单击搜索字段中的 **X** 可清除搜索。
 * 要缩小搜索范围，您可以显示过滤器选项并按特定路径筛选结果。
