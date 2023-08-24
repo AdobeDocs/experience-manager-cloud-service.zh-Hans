@@ -1,14 +1,11 @@
 ---
-title: 安装和配置疑难解答
-seo-title: Troubleshooting installation and configuration
-description: 安装和配置疑难解答
-seo-description: Troubleshooting installation and configuration
+title: 安装和配置Cloud Service疑难解答
+description: 如何解决AEM Formsas a Cloud Service中与安装和配置相关的问题？
 contentOwner: khsingh
-exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 6%
+source-wordcount: '177'
+ht-degree: 5%
 
 ---
 
@@ -25,9 +22,9 @@ ht-degree: 6%
 要启用 **[!UICONTROL Forms]** 选项：
 
 1. 登录到 [Cloud Manager](https://experience.adobe.com/)
-1. 找到您的项目并单击 ![Forms选项不可用](assets/Smock_Edit_18_N.svg) 图标。 它会打开您项目的“编辑项目”页面。
+1. 找到您的项目并单击 ![Forms选项不可用](assets/Smock_Edit_18_N.svg) 图标。 该操作将打开您项目的“编辑项目”页面。
 1. 打开 **[!UICONTROL 解决方案和加载项]** 选项卡。
-1. 选择 **[!UICONTROL Forms]** option并单击 **[!UICONTROL 保存]**.
+1. 选择 **[!UICONTROL Forms]** 选项并单击 **[!UICONTROL 保存]**.
 
    ![选择Forms选项](assets/installation-configuration-select-forms-option.png)
 1. [创建](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) 和 [运行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) 生产和非生产管道。
@@ -50,6 +47,6 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 
 ## 生成管道失败 {#build-pipeline-fails}
 
-用户无法运行生成管道。 管道运行一段时间后失败。
+用户无法运行生成管道。 管道运行了一段时间后失败。
 
 要解决此问题，请打开Cloud Manager，选择 **[!UICONTROL 更新]** 选项，并运行管道。

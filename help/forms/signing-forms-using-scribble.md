@@ -1,11 +1,10 @@
 ---
 title: 使用涂鸦签名对表单进行电子签名
-description: 使用涂写对表单签名
-seo-description: Signing forms using scribble
+description: 使用涂写签名和签名步骤，轻松地对自适应Forms进行电子签名。 简化数字签名以提高效率。
 topic-tags: author
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '725'
 ht-degree: 9%
 
 ---
