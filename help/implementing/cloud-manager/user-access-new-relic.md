@@ -3,9 +3,9 @@ title: New Relic One
 description: 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1586'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ## 简介 {#introduction}
 
-Adobe 非常重视应用程序的监控、可用性和性能。 AEM as a Cloud Service 作为标准产品的一部分，提供对自定义 New Relic One 监控套件的访问权限，以确保您的团队能够最大限度地了解 AEM as a Cloud Service 系统和环境性能量度。
+Adobe 非常重视应用程序的监控、可用性和性能。AEM as a Cloud Service 作为标准产品的一部分，提供对自定义 New Relic One 监控套件的访问权限，以确保您的团队能够最大限度地了解 AEM as a Cloud Service 系统和环境性能量度。
 
 本文档描述了如何管理对您的 AEM as a Cloud Service 环境上启用的 New Relic One 应用程序性能监控 (APM) 功能的访问，促进支持性能并让您最大限度地利用 AEM as a Cloud Service。
 
@@ -64,15 +64,15 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 >[!NOTE]
 >
->如果您正在管理 New Relic One 用户，您还必须将自己添加为用户，以便您也可以访问。作为&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;没有足够权限访问 New Relic One。 您还必须将自己创建为用户。
+>如果您正在管理 New Relic One 用户，您还必须将自己添加为用户，以便您也可以访问。作为&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;没有足够权限访问 New Relic One。您还必须将自己创建为用户。
 
 ## 激活您的 New Relic One 用户帐户 {#activate-account}
 
-按照预览部分[管理 New Relic One 用户](#manage-users)中所述创建 New Relic One 用户帐户后，New Relic 会向提供的地址发送确认电子邮件。 要使用这些帐户，用户必须首先通过重置密码来使用 New Relic 激活其帐户。
+按照预览部分[管理 New Relic One 用户](#manage-users)中所述创建 New Relic One 用户帐户后，New Relic 会向提供的地址发送确认电子邮件。要使用这些帐户，用户必须首先通过重置密码来使用 New Relic 激活其帐户。
 
 按照以下步骤以 New Relic 用户身份激活您的帐户。
 
-1. 单击 New Relic 电子邮件中提供的链接。 这将打开浏览器，进入 New Relic 登录页面。
+1. 单击 New Relic 电子邮件中提供的链接。这将打开浏览器，进入 New Relic 登录页面。
 
 1. 在 New Relic 登录页面上，选择&#x200B;**忘记密码？**。
 
@@ -112,7 +112,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 ### 正在验证您的电子邮件 {#verify-email}
 
-如果在登录 New Relic One 时要求您验证电子邮件，这意味着您的电子邮件与多个帐户关联。 这允许您选择要访问的帐户。
+如果在登录 New Relic One 时要求您验证电子邮件，这意味着您的电子邮件与多个帐户关联。这让您选择要访问的帐户。
 
 如果您不验证您的电子邮件地址，New Relic 会尝试使用与您的电子邮件关联的最近创建的用户记录登录。要避免在每次登录时验证您的电子邮件，请单击登录屏幕中的&#x200B;**记住我**&#x200B;复选框。
 
@@ -120,7 +120,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 ## New Relic One 访问故障排除 {#troubleshooting}
 
-如果您被添加为New Relic One用户，如一节中所述 [管理New Relic One用户](#manage-users) 并且无法按照以下步骤找到原始帐户确认电子邮件。
+如果您按照[管理 New Relic One 用户](#manage-users)一节中所述被添加为 New Relic One 用户，并且无法找到原始帐户确认电子邮件，请执行以下步骤。
 
 1. 导航至 New Relic 的登录页面，网址为 [`login.newrelic.com/login`](https://login.newrelic.com/login)。
 
@@ -156,7 +156,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 ### Adobe 使用 New Relic One 监控什么？ {#adobe-monitor}
 
-Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java 插件发布和预览（如果可用）服务。 Adobe 支持跨非生产和生产 AEM as a Cloud Service 环境的自定义 New Relic One APM 遥测和监控。
+Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java 插件发布和预览（如果可用）服务。Adobe 支持跨非生产和生产 AEM as a Cloud Service 环境的自定义 New Relic One APM 遥测和监控。
 
 您的 New Relic One 帐户连接到 Adobe 维护的主帐户，并有多个应用程序向其报告：每个 AEM as a Cloud Service 环境三个应用程序。
 
