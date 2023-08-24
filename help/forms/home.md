@@ -4,9 +4,9 @@ description: 探索 AEM Forms 并了解它如何帮助您生成业务就绪的�
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1155'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
 
 ## 优化表单性能
 
-该服务与Adobe Analytics集成，允许您捕获和跟踪已发布表单的性能指标。 分析这些指标的目的在于，根据有关使表单或文档更有用所需的更改的数据做出明智的决策。您可以使用 Adobe Analytics 发现用户在使用自适应表单时遇到的交互模式和问题。
+该服务与 Adobe Analytics 集成，让您能够捕获和跟踪已发布表单的性能指标。分析这些指标的目的在于，根据有关使表单或文档更有用所需的更改的数据做出明智的决策。您可以使用 Adobe Analytics 发现用户在使用自适应表单时遇到的交互模式和问题。
 
 
 ## 开始使用 {#key-features}
