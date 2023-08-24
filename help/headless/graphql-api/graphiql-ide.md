@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1141'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 95%
 >
 >GraphiQL 包含在 AEM 的所有环境中（但只有在配置端点时才可访问/显示）。
 >
->在以前的版本中，安装 GraphiQL IDE 时需要软件包。 如果您已安装此软件，现可将其移除。
+>在以前的版本中，安装 GraphiQL IDE 时需要软件包。如果您已安装此软件，现可将其移除。
 
 >[!NOTE]
 >在使用 GraphiQL IDE 之前，您必须在[配置浏览器](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)中[配置您的端点](/help/headless/graphql-api/graphql-endpoint.md)。
 
-此 **GraphiQL** 工具允许您测试和调试GraphQL查询，方法是：
+**GraphiQL** 工具让您测试和调试 GraphQL 查询，方法是：
 * 选择适用于您要用于查询的 Sites 配置的&#x200B;**端点**
 * 直接输入新查询
 * 创建并访问&#x200B;**[持久查询](/help/headless/graphql-api/persisted-queries.md)**
@@ -41,7 +41,7 @@ ht-degree: 95%
 
 ![GraphiQL 接口](assets/cfm-graphiql-interface.png "GraphiQL 接口")
 
-您可以在系统上使用 GraphiQL，以便您的客户端应用程序可以使用 GET 请求来请求查询，并发布查询。 对于生产使用，您可以[将查询移动到生产环境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)。 最初是移至生产作者环境，以供通过查询来验证新撰写的内容，最后移至生产发布环境，以供实时使用。
+您可以在系统上使用 GraphiQL，以便您的客户端应用程序可以使用 GET 请求来请求查询，并发布查询。对于生产使用，您可以[将查询移动到生产环境](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)。最初是移至生产作者环境，以供通过查询来验证新撰写的内容，最后移至生产发布环境，以供实时使用。
 
 ## 选择您的端点 {#selecting-endpoint}
 
@@ -87,7 +87,7 @@ ht-degree: 95%
 
 ## 查询变量 {#query-variables}
 
-GraphiQL IDE还允许您管理 [查询变量](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+GraphiQL IDE 还让您管理[查询变量](/help/headless/graphql-api/content-fragments.md#graphql-variables)。
 
 例如：
 
@@ -120,7 +120,7 @@ GraphiQL IDE还允许您管理 [查询变量](/help/headless/graphql-api/content
 1. 选择相应的参数，然后根据需要调整值：
 
    * **cache-control** – **max-age**
-缓存可以将此内容存储指定的秒数。 通常为浏览器 TTL（生存时间）。
+缓存可以将此内容存储指定的秒数。通常为浏览器 TTL（生存时间）。
    * **surrogate-control** – **s-maxage**
 与 max-age 相同，但特别适用于代理缓存。
    * **surrogate-control** – **stale-while-revalidate**
@@ -132,7 +132,7 @@ GraphiQL IDE还允许您管理 [查询变量](/help/headless/graphql-api/content
 
 ## 发布和预览持久查询 {#publishing-previewing-persisted-queries}
 
-一旦从列表（左面板）中选择了持久查询，您就可以使用&#x200B;**发布**&#x200B;操作。 
+一旦从列表（左面板）中选择了持久查询，您就可以使用&#x200B;**发布**&#x200B;操作。
 
 这将会激活对您选择的环境的查询。您可以选择您的&#x200B;**发布**&#x200B;环境（例如，`dev-publish`），或者您的&#x200B;**预览**&#x200B;环境，以便您的应用程序在测试时轻松访问。
 
@@ -154,7 +154,7 @@ GraphiQL IDE还允许您管理 [查询变量](/help/headless/graphql-api/content
 
 ## 复制 URL 以直接访问查询 {#copy-url}
 
-此 **复制URL** 选项允许您通过复制用于直接访问持久查询并查看结果的URL来模拟查询。 然后可以将其用于测试；例如，通过在浏览器中访问：
+**“复制 URL”**&#x200B;选项让您通过复制用于直接访问持久查询并查看结果的 URL 来模拟查询。然后可以将其用于测试；例如，通过在浏览器中访问：
 
 <!--
   >[!NOTE]
