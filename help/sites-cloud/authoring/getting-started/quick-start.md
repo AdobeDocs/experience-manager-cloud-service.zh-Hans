@@ -3,9 +3,9 @@ title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1568'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 98%
 
    ![查看选择下拉列表](/help/sites-cloud/authoring/assets/views.png)
 
-1. 使用向上导航树 [标题中的痕迹导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)，可让您返回选定的位置：
+1. 使用[标头中的痕迹导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)对树进行向上导航，这让您返回到选定的位置：
 
    ![痕迹导航下拉列表](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -267,7 +267,7 @@ ht-degree: 98%
 
 ### 锁定页面（然后解锁） {#locking-your-page-then-unlocking}
 
-[锁定页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) ，可阻止其他作者在您处理页面时对其进行处理。 可以找到“锁定”（和“解锁”）图标／按钮：
+[锁定页面](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) ，可阻止其他作者在您处理页面时对其进行处理。可以找到“锁定”（和“解锁”）图标／按钮：
 
 * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
 * 编辑页面时显示的[“页面信息”下拉菜单](#editing-the-page-properties)。
