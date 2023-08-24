@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: c6186e549a9ef2aebddb4925cf84289aa7f7e662
+source-git-commit: 6b4fa2802b860c938f5085f047cc880f29698f3e
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 83%
+source-wordcount: '708'
+ht-degree: 81%
 
 ---
 
@@ -60,6 +60,7 @@ ht-degree: 83%
 - Forms-10444：自适应Forms模板 — 无法发布模板（解决方法：使用分发控制台）。
 - CQ-4354191：工作流 — 由于nt：unstructured节点上存在复制元数据，自定义启动器可能会触发许多次（解决方法：更新启动器以排除复制元数据属性以避免重叠）。
 - SITES-15622： GraphQL — 使用数字和布尔参数的持久查询存在问题。
+- SITES-15654： GraphQL — 同名的合并和属性存在问题。
 
 ### 嵌套的技术 {#embedded-tech-13206}
 
