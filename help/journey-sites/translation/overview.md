@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '931'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 
 您将在此历程中探究多个主题。以下文章为您提供了在 AEM 中翻译站点内容的基础知识以及指向详细技术文档的链接。
 
-虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是AEM翻译新手，Adobe建议您从头开始，然后循序渐进。
+虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是 AEM 翻译新手，Adobe 建议您从头开始，然后循序渐进。
 
 | # | 文章 | 描述 |
 |---|---|---|
