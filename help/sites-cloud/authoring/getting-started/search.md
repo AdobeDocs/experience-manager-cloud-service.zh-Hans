@@ -3,9 +3,9 @@ title: 搜索
 description: 使用完备的搜索功能更快速地查找您的内容
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
