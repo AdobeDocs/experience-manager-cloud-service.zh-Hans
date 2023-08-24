@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 97%
 * **[同步](overview.md#rollout-and-synchronize)** – 同步 Live Copy，将更改从源拉入 Live Copy。
 * **[重置](creating-live-copies.md#resetting-a-live-copy-page)** – 重置 Live Copy 页面以删除所有继承取消，并使页面恢复到与源页面相同的状态。
 * **[暂停](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** – 暂时停用 Live Copy 与其 Blueprint 页面之间的实时关系。
-* **[继续](creating-live-copies.md#resuming-inheritance-for-a-page)**  — 恢复允许您恢复暂停的关系。
+* **[恢复](creating-live-copies.md#resuming-inheritance-for-a-page)** – “恢复”让您恢复暂停的关系。
 * **[分离](overview.md#detaching-a-live-copy)** – 永久删除 Live Copy 与其 Blueprint 页面之间的实时关系。
 
 ## 关系状态 {#relationship-status}
@@ -112,6 +112,6 @@ ht-degree: 97%
 
 ### Live Copy {#live-copy-tab}
 
-通过此选项卡，可查看和编辑Live Copy配置。
+此选项卡让您查看和编辑 Live Copy 配置。
 
 ![“Live Copy”选项卡](../assets/live-copy-relationship-status-live-copy.png)
