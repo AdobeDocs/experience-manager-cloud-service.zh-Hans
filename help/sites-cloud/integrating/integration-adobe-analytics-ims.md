@@ -2,10 +2,10 @@
 title: 与 Adobe Analytics 集成时使用的 IMS 配置
 description: 了解与 Adobe Analytics 集成时使用的 IMS 配置
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '914'
+ht-degree: 96%
 
 ---
 
@@ -66,6 +66,12 @@ ht-degree: 100%
 ### 创建项目 {#creating-the-project}
 
 打开 Adobe Developer Console 以使用 Adobe Analytics（将由 AEM 使用）创建项目：
+
+>[!CAUTION]
+>
+>目前，我们仅支持Adobe Developer控制台的 **服务帐户(JWT)** 凭据类型。
+>
+>请勿使用 **OAuth服务器到服务器** 凭据类型，将在未来受支持。
 
 1. 为项目打开 Adobe Developer Console：
 
