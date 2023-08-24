@@ -3,9 +3,9 @@ title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2044'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 99%
 
 * [在这些文件夹中配置允许的模板](#configure-allowed-templates-folder)。
 
-创建文件夹允许您：
+创建文件夹可以让您：
 
 * 为您的体验片段创建有意义的结构；例如，根据分类
 
@@ -232,7 +232,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
    ![创建体验片段变体](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **创建** 允许您创建：
+1. **创建**&#x200B;让您创建：
 
    * **变体**
    * **live-copy 形式的变量**.
@@ -343,7 +343,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
    >
    >文件夹上定义的个性化属性会由子树中的所有子文件夹以及该子树中的体验片段（和变体）继承。可以通过破坏继承来覆盖这些属性。
 
-1. 打开&#x200B;**个性化**&#x200B;选项卡来定义和保存您的设置。 例如，在文件夹上：
+1. 打开&#x200B;**个性化**&#x200B;选项卡来定义和保存您的设置。例如，在文件夹上：
 
    ![体验片段 – 个性化属性](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
 
@@ -371,7 +371,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 ![体验片段编辑器 – 定位模式](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
-此模式的操作方式与页面编辑相同。 请查阅[页面编辑器的定位模式](/help/sites-cloud/authoring/personalization/targeted-content.md)，了解更多详细信息。
+此模式的操作方式与页面编辑相同。请查阅[页面编辑器的定位模式](/help/sites-cloud/authoring/personalization/targeted-content.md)，了解更多详细信息。
 
 ## 您的体验片段的详细信息 {#details-of-your-experience-fragment}
 
