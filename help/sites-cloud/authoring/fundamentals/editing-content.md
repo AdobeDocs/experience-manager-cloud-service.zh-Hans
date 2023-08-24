@@ -3,9 +3,9 @@ title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2983'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 97%
 
 * **模式选择器**
 
-  显示当前 [模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) 并允许您选择其他模式，如编辑、布局、时间扭曲或定位。
+  显示当前的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)并让您选择其他模式，例如编辑、布局、时间扭曲或定位。
 
   ![“模式选择器”按钮](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -84,7 +84,7 @@ ht-degree: 97%
 
 * **批注**
 
-  允许您添加 [注释](/help/sites-cloud/authoring/fundamentals/annotations.md) 查看页面时跳转到页面。 添加第一个注释后，该图标将切换为数字，以指示页面上的注释数量。
+  让您在审核页面时向页面中添加[注释](/help/sites-cloud/authoring/fundamentals/annotations.md)。添加第一个注释后，该图标将切换为数字，以指示页面上的注释数量。
 
   ![“注释”按钮](/help/sites-cloud/authoring/assets/annotations.png)
 
@@ -240,25 +240,25 @@ ht-degree: 97%
 
 * **组**
 
-  这使您能够一次选择多个组件。 在桌面设备上&#x200B;**按住 Ctrl 并单击**&#x200B;或&#x200B;**按住 Command 并单击**&#x200B;可实现同样的操作。
+  此操作让您一次选择多个组件。在桌面设备上&#x200B;**按住 Ctrl 并单击**&#x200B;或&#x200B;**按住 Command 并单击**&#x200B;可实现同样的操作。
 
   ![“组”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **父项**
 
-  允许您选择选定组件的父组件。
+  此项让您选择选定组件的父组件。
 
   ![“父项”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **布局**
 
-  这可让您修改 [布局](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) 选定组件的。 此操作仅适用于选定组件，而不会激活整个页面的[布局模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
+  让您修改选定组件的[布局](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)。此操作仅适用于选定组件，而不会激活整个页面的[布局模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。
 
   ![“布局”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **转换为体验片段变体**
 
-  这让您能够创建新的 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 或将它添加到现有的体验片段中。
+  让您从选定的组件创建一个新的[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)，或将其添加到现有的体验片段中。
 
   ![“转换为体验片段”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -291,7 +291,7 @@ ht-degree: 97%
 
 * 图像组件 - 全屏
 
-  [进入图像组件的全屏模式](#edit-content-full-screen-mode) ，可以留出更多空间来编辑图像，并显示额外的编辑选项，如“启动映射”和“重 **置缩放”******。 此外，全屏模式还允许选择裁剪预设。
+  [进入图像组件的全屏模式](#edit-content-full-screen-mode) ，可以留出更多空间来编辑图像，并显示额外的编辑选项，如“启动映射”和“重 **置缩放”******。此外，全屏模式还允许选择裁剪预设。
 
   ![图像组件的全屏模式](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -430,7 +430,7 @@ ht-degree: 97%
 在编辑内容时，您可以使用预览[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)预览页面。此模式：
 
 * 会隐藏各种编辑机制，以便让您快速查看页面在发布时是什么样子。
-* 允许您使用链接进行导航。
+* 让您使用链接进行导航。
 * **不会**&#x200B;刷新页面内容。
 
 进行创作时，可以使用页面编辑器右上角的图标进入预览模式：
