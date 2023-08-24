@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 ## 目标 {#objective}
 
-一旦您阅读了本次入门历程中的上一篇文档[创建环境](create-environments.md)，并配置好云资源，您需要使用 AEM 产品配置文件授予您的团队访问 AEM 本身的权限。 作为系统管理员，您可以通过分配 AEM 产品配置文件来完成此操作。
+一旦您阅读了本次入门历程中的上一篇文档[创建环境](create-environments.md)，并配置好云资源，您需要使用 AEM 产品配置文件授予您的团队访问 AEM 本身的权限。作为系统管理员，您可以通过分配 AEM 产品配置文件来完成此操作。
 
 阅读本文档后，您应该了解：
 
@@ -32,7 +32,7 @@ ht-degree: 97%
 
 ## AEM 产品配置文件 {#aem-product-profiles}
 
-要使用 AEM，必须为您的团队成员分配至少一个 AEM 产品配置文件。 访问 Cloud Manager 的权限不够。 用户必须属于以下两种产品配置文件之一：
+要使用 AEM，必须为您的团队成员分配至少一个 AEM 产品配置文件。访问 Cloud Manager 的权限不够。用户必须属于以下两种产品配置文件之一：
 
 * `AEM Users` – 此组包括执行日常内容创作任务的普通用户。
 * `AEM Administrators` – 此组包括负责高级功能或 AEM 的用户。
@@ -58,7 +58,7 @@ ht-degree: 97%
 
 >[!TIP]
 >
->为了载入AEM，Adobe建议您首先添加将参与即时任务的用户，例如管理员、开发人员和内容作者。 您可以在不添加所有用户的情况下继续其余的载入。 完成载入后，您可以稍后扩展到更多的用户。
+>为了载入 AEM，Adobe 建议您首先添加将参与即时任务的用户，例如管理员、开发人员和内容作者。您可以在不添加所有用户的情况下继续其余的载入。完成载入后，您可以稍后扩展到更多的用户。
 
 ## 查看 AEM 产品配置文件 {#view-profiles}
 
@@ -88,7 +88,7 @@ ht-degree: 97%
 
    ![管理访问权限](/help/journey-onboarding/assets/add-team1.png)
 
-1. 新的选项卡会将您导航到 Admin Console，您可以从中访问环境的作者实例。 根据需要授予的权限，选择 **AEM 管理员**&#x200B;或 **AEM 用户**。
+1. 新的选项卡会将您导航到 Admin Console，您可以从中访问环境的作者实例。根据需要授予的权限，选择 **AEM 管理员**&#x200B;或 **AEM 用户**。
 
    ![分配访问权限](/help/journey-onboarding/assets/add-team2.png)
 
@@ -102,7 +102,7 @@ ht-degree: 97%
 
 ## 历程结束？ {#the-end}
 
-恭喜！您分配给 AEM as a Cloud Service 产品配置文件的用户现在可以访问 AEM 创作环境，并开始使用 AEM as a Cloud Service 创建内容。 同样，开发人员现在可以访问 Cloud Manager，使用 Git 存储自定义应用程序代码并进行部署。 从这个意义上说，您的入门历程已经完成，您的用户现在可以使用 AEMaaCS 了。
+恭喜！您分配给 AEM as a Cloud Service 产品配置文件的用户现在可以访问 AEM 创作环境，并开始使用 AEM as a Cloud Service 创建内容。同样，开发人员现在可以访问 Cloud Manager，使用 Git 存储自定义应用程序代码并进行部署。从这个意义上说，您的入门历程已经完成，您的用户现在可以使用 AEMaaCS 了。
 
 然而，如果您想更好地了解作者和开发人员如何使用该系统，您可以继续此入门历程的两个可选部分：
 
