@@ -3,10 +3,10 @@ title: 如何配置自适应表单的提交操作
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 hide: true
 hidefromtoc: true
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
 workflow-type: tm+mt
-source-wordcount: '3365'
-ht-degree: 99%
+source-wordcount: '3575'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 | 应用到 | ✅ 自适应表单核心组件，❎[自适应表单基础组件](/help/forms/configuring-submit-actions.md) |
 
 
-提交操作允许您选择通过自适应表单捕获的数据的目标。 当用户单击自适应表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，将触发此操作。Forms as a Cloud Service（针对基于核心组件的自适应表单）提供了一系列预建的提交操作。这些现成的提交操作可让您：
+提交操作让您选择通过自适应表单捕获的数据的目标。当用户单击自适应表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，将触发此操作。Forms as a Cloud Service（针对基于核心组件的自适应表单）提供了一系列预建的提交操作。这些现成的提交操作可让您：
 
 * 通过电子邮件轻松发送表单数据。
 * 在传输数据时启动 Microsoft Power Automate 流程或 AEM 工作流。
@@ -52,6 +52,7 @@ ht-degree: 99%
    * [提交到 REST 端点](#submit-to-rest-endpoint)
    * [提交到 OneDrive](#submit-to-onedrive)
    * [调用 AEM 工作流](#invoke-an-aem-workflow)
+   * [提交到Power Automate](#microsoft-power-automate)
 
 ## 发送电子邮件 {#send-email}
 
@@ -346,6 +347,20 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 用于保存数据的文件夹结构是 `/configuration_container/form_name/year/month/date/submission_id/data`。
 
 要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process)。
+
+
+## 提交到Power Automate {#microsoft-power-automate}
+
+您可以配置自适应表单以在提交时运行Microsoft® Power Automate Cloud Flow。 配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automation Cloud Flow 进行处理。 它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。以下是自适应表单与Microsoft® Power Automate集成后可执行的操作示例：
+
+* 在Power Automate业务流程中使用自适应Forms数据
+* 使用Power Automate将捕获的数据发送到500多个数据源或任何公开可用的API
+* 对捕获的数据执行复杂的计算
+* 按预定义的计划将自适应Forms数据保存到存储系统
+
+自适应Forms编辑器提供 **调用Microsoft® Power Automate流** 将自适应表单数据、附件和记录文档的提交操作发送到Power Automate Cloud Flow。 要使用Submit操作将捕获的数据发送到Microsoft®Power Automate， [将Formsas a Cloud Service实例与Microsoft® Power Automate连接](forms-microsoft-power-automate-integration.md)
+
+成功配置后，使用 [调用Microsoft® Power Automate流](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 提交操作以将数据发送到Power Automate流。
 
 ## 使用同步或异步提交 {#use-synchronous-or-asynchronous-submission}
 
