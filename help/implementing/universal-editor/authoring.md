@@ -3,9 +3,9 @@ title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2266'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!NOTE]
 >
->Universal Editor 仍在开发中。它当前无法编辑所有内容类型。
+>Universal Editor 仍在开发中。目前，它无法编辑所有内容类型。
 
 ## 准备应用程序 {#prepare-app}
 
@@ -74,7 +74,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### 解决方案 {#solutions}
 
-通过点按或单击解决方案切换器，您可以快速跳转到其他Experience Cloud解决方案。
+点按或单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
 
 ![解决方案切换器](assets/solutions.png)
 
@@ -217,8 +217,8 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 编辑器占据窗口的大部分区域，并在其中呈现在[地址栏](#location-bar)中指定的页面。
 
-* 如果编辑器处于编辑模式，例如 [文本模式](#text-mode) 或 [媒体模式，](#media-mode) 内容将可编辑，但您无法关注链接。
-* 如果编辑器位于 [预览模式，](#preview-mode) 内容将可导航，您可以关注链接，但无法编辑内容。
+* 如果编辑器处于[文本模式](#text-mode)或[媒体模式](#media-mode)等编辑模式下，则内容是可编辑的，但您无法访问链接。
+* 如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
 
 ![编辑器](assets/editor.png)
 
@@ -260,13 +260,13 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 编辑 {#edit}
 
-时间 [组件模式，](#component-mode) 如果您选择 [内容片段，](/help/assets/content-fragments/content-fragments.md) 编辑选项将显示在组件边栏上。
+在[组件模式](#component-mode)中，如果您选择一个内容片段，编辑选项将显示在组件边栏上。[](/help/assets/content-fragments/content-fragments.md)
 
 ![“编辑”图标](assets/edit.png)
 
 点按或单击编辑按钮将会在新选项卡中打开[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)，以便您访问内容片段编辑器的全部功能。
 
-您还可以根据工作流的需求，在组件边栏中编辑内容片段的详细信息。
+您还可以在组件边栏中编辑内容片段的详细信息，具体取决于工作流的需求。
 
 >[!TIP]
 >
@@ -274,23 +274,23 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 添加 {#add}
 
-如果在内容树或编辑器中选择了容器组件，则组件边栏上会显示添加选项。
+如果您在内容树或编辑器中选择容器组件，添加选项将出现在组件边栏上。
 
-![“添加”图标](assets/ue-add-component-icon.png)
+![添加图标](assets/ue-add-component-icon.png)
 
-点击或单击添加按钮会打开一个下拉菜单，其中包含可用于的组件 [添加到所选容器。](#adding-components)
+点击或单击“添加”按钮将打开一个可用组件的下拉菜单[添加到选定的容器。](#adding-components)
 
 >[!TIP]
 >
->使用热键 `A` 将组件添加到选定的容器组件。
+>使用热键`A`将组件添加到选定的容器组件。
 
 #### 删除 {#delete}
 
-如果在内容树或编辑器中选择容器组件中的组件，则删除选项会显示在组件边栏上。
+如果您在内容树或编辑器中选择容器组件内的组件，删除选项将出现在组件边栏上。
 
 ![“删除”图标](assets/ue-delete-component-icon.png)
 
-点击或单击删除按钮 [删除组件。](#deleting-components)
+点击或单击删除按钮[删除该组件。](#deleting-components)
 
 >[!TIP]
 >
@@ -356,37 +356,37 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 如果您想改为在[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)中编辑您的内容片段，请单击模式边栏中的[编辑按钮](#edit)。
 
-### 将组件添加到容器 {#adding-components}
+### 向容器添加组件 {#adding-components}
 
-1. 在内容树或编辑器中选择容器组件。
-1. 然后点按或单击组件边栏中的添加图标。
+1. 在内容树或编辑器中选择一个容器组件。
+1. 然后点击或单击组件边栏中的添加图标。
 
    ![选择要添加到容器的组件](assets/ue-add-component.png)
 
-该组件将插入到容器中，并可在编辑器中编辑。
+该组件被插入到容器中并可以在编辑器中进行编辑。
 
 ### 从容器中删除组件 {#deleting-components}
 
-1. 在内容树或编辑器中选择容器组件。
-1. 点按或单击容器的V形图标以在内容树中展开其内容。
-1. 然后，在内容树中选择容器中的组件。
-1. 点按或单击组件边栏中的删除图标。
+1. 在内容树或编辑器中选择一个容器组件。
+1. 点击或单击容器的 V 形图标以在内容树中展开其内容。
+1. 然后，在内容树中，选择容器内的一个组件。
+1. 点击或单击组件边栏中的删除图标。
 
    ![删除组件](assets/ue-delete-component.png)
 
-已删除所选的组件。
+选定的组件已删除。
 
-### 在容器中对组件重新排序 {#reordering-components}
+### 对容器中的组件重新排序 {#reordering-components}
 
-1. 在内容树或编辑器中选择容器组件。
-1. 如果尚未在 [内容树模式，](#content-tree-mode) 切换到它。
-1. 点按或单击容器的V形图标以在内容树中展开其内容。
-1. 在容器中，拖动组件旁边的控制滑块图标会显示可以重新排列它们。 拖动组件以在容器中重新排列它们。
+1. 在内容树或编辑器中选择一个容器组件。
+1. 如果尚未进入[内容树模式，](#content-tree-mode)切换到它。
+1. 点击或单击容器的 V 形图标以在内容树中展开其内容。
+1. 拖动容器内组件旁边的手柄图标表明您可以重新排列它们。拖动组件以对它们在容器内重新排序。
 
    ![重新排序组件](assets/ue-reordering-components.png)
-1. 拖动的组件在组件树中变为灰色，而您的插入点用蓝线表示。 释放组件以将其放置在其新位置。
+1. 拖动的组件在组件树中变成灰色，而插入点由蓝线表示。释放组件以将其放置在新位置。
 
-组件在内容树和编辑器中都会重新排序
+组件在内容树和编辑器中重新排序
 
 ## 预览内容 {#previewing-content}
 
