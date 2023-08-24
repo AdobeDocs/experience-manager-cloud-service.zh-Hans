@@ -3,15 +3,15 @@ title: 基本处理
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2975'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 基本处理 {#basic-handling}
 
-此文档旨在概述使用 AEM 创作环境时的基本处理。 它使用&#x200B;**Sites**&#x200B;控制台作为基础。
+此文档旨在概述使用 AEM 创作环境时的基本处理。它使用&#x200B;**Sites**&#x200B;控制台作为基础。
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 ## 触屏优化 UI {#a-touch-enabled-ui}
 
-AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，通过点按、触摸并按住及轻扫之类的手势与软件进行交互。 由于 AEM UI 支持触控，因此您可以在手机或平板电脑等触控设备上使用触控手势。但是，您也可以使用传统桌面设备上的鼠标操作，灵活地选择创作内容的方式。
+AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通过点按、触摸并按住及轻扫之类的手势与软件进行交互。由于 AEM UI 支持触控，因此您可以在手机或平板电脑等触控设备上使用触控手势。但是，您也可以使用传统桌面设备上的鼠标操作，灵活地选择创作内容的方式。
 
 ## 首要步骤 {#first-steps}
 
@@ -70,19 +70,19 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 | 项目 | 通过“项目”控制台，您可以直接访问您的项目。[项目是虚拟功能板](/help/sites-cloud/authoring/projects/overview.md)，可用于组建团队。然后，您可以为该团队提供对资源、工作流和任务的访问权限，从而让人们朝着一个共同目标努力。 |
 | Sites | Sites 控制台让您可以[创建、查看和管理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)在 AEM 实例中运行的站点。通过此，您可以创建、编辑、复制、移动和删除页面、启动工作流以及发布页面。 |
 | 体验片段 | [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)是独立的体验，可以跨渠道重复使用，也可以具有变体，从而避免反复地复制和粘贴体验或体验的部分内容。 |
-| 资源 | 通过“资源”控制台，您可以导入和管理[数字资源，如图像、视频、文档和音频文件](/help/assets/overview.md)。 随后，这些资源便可由同一 AEM 实例上运行的任何站点使用。您还可以从 Assets 控制台创建和管理[内容片段](/help/assets/content-fragments/content-fragments.md)。 |
+| 资源 | 通过“资源”控制台，您可以导入和管理[数字资源，如图像、视频、文档和音频文件](/help/assets/overview.md)。随后，这些资源便可由同一 AEM 实例上运行的任何站点使用。您还可以从 Assets 控制台创建和管理[内容片段](/help/assets/content-fragments/content-fragments.md)。 |
 | 个性化 | 此控制台为[创作目标内容和呈现个性化体验](/help/sites-cloud/authoring/personalization/overview.md)提供了一个工具框架。 |
-| 内容片段 | 您可使用[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)设计、创建、管理和发布独立于页面的内容。 它们允许您准备结构化内容，以准备在多个位置/多个渠道上使用，非常适合于页面创作和 headless 投放。 |
+| 内容片段 | 您可使用[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)设计、创建、管理和发布独立于页面的内容。它们允许您准备结构化内容，以准备在多个位置/多个渠道上使用，非常适合于页面创作和 headless 投放。 |
 
 ## “工具”面板 {#tools-panel}
 
-在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。 “工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资源及内容存储库的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。“工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资源及内容存储库的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![“工具”面板](/help/sites-cloud/authoring/assets/tools-panel.png)
 
 ## 标题 {#the-header}
 
-标题始终显示在屏幕顶部。 无论您位于系统中的何处，标题中的大部分选项都将保持不变，但也有一些选项是特定于上下文的。
+标题始终显示在屏幕顶部。无论您位于系统中的何处，标题中的大部分选项都将保持不变，但也有一些选项是特定于上下文的。
 
 ![导航标题](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
@@ -98,7 +98,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
   您还可以使用[快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`（正斜杠）从任何控制台中调用搜索。
 
-* [解决方案](https://www.adobe.com/cn/experience-cloud.html)
+* [解决方案](https://www.adobe.com/cn/cn/experience-cloud.html)
 
   ![“解决方案”按钮](/help/sites-cloud/authoring/assets/solutions.png)
 
@@ -206,7 +206,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ## “操作”工具栏 {#actions-toolbar}
 
-每当选择资源（例如，一个页面或资源）时，工具栏中都会显示一些包含说明性文本的图标以指示各种操作。 这些操作取决于以下要素：
+每当选择资源（例如，一个页面或资源）时，工具栏中都会显示一些包含说明性文本的图标以指示各种操作。这些操作取决于以下要素：
 
 * 当前控制台
 * 当前上下文
@@ -293,7 +293,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ![列视图](/help/sites-cloud/authoring/assets/column-view.png)
 
-列视图允许通过一系列的层叠列，对内容树进行可视化导航。此视图可让您可视化并遍历网站的树结构。
+列视图允许通过一系列的层叠列，对内容树进行可视化导航。通过此视图，可以查看和遍历您网站的树结构。
 
 选择最左侧列中的资源，将在右侧的列中显示子资源。接着选择右侧列中的资源，又将在右侧的另一个列中显示子资源，然后如此反复。
 
@@ -418,7 +418,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ![时间线树](/help/sites-cloud/authoring/assets/timeline.png)
 
-通过时间轴列，您可以：
+时间线列可让您：
 
 * 查看与选定项目相关的各种事件。
 
