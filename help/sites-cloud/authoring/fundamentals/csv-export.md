@@ -3,9 +3,9 @@ title: 导出到 CSV
 description: 将与页面相关的信息导出到本地系统上的 CSV 文件
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 >
 >系统将使用您浏览器的下载功能及默认目标位置。
 
-此 **创建CSV导出** 向导允许您选择：
+**创建 CSV 导出**&#x200B;向导让您选择以下内容：
 
 * 要导出的属性
    * 元数据
