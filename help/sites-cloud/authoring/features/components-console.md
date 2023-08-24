@@ -1,17 +1,17 @@
 ---
 title: 组件控制台
-description: 组件控制台允许您浏览针对实例定义的所有组件
+description: 组件控制台让您浏览针对实例定义的所有组件
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # 组件控制台 {#components-console}
 
-组件控制台允许您浏览针对实例定义的所有组件，并查看每个组件的关键信息。
+组件控制台让您浏览针对实例定义的所有组件，并查看每个组件的关键信息。
 
 该控制台可从&#x200B;**工具** -> **常规** -> **组件**&#x200B;中访问。由于组件没有树结构，因此只有列视图可用。
 
@@ -29,7 +29,7 @@ ht-degree: 68%
 
 ### 组件详细信息 {#component-details}
 
-要查看有关特定组件的详细信息，请点按/单击所需的资源。 三个选项卡提供：
+要查看有关特定组件的详细信息，请点按/单击所需的资源。三个选项卡提供以下内容：
 
 * **属性**
 
@@ -39,8 +39,8 @@ ht-degree: 68%
 
    * 查看组件的常规属性。
       * 查看组件的图标或缩写定义的方式。<!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
-      * 单击图标的来源将会转到该组件。
-   * 查看 **资源类型** 和 **资源超级类型** （如果已定义）。
+      * 单击图标的源将转到该组件。
+   * 查看组件的&#x200B;**资源类型**&#x200B;和&#x200B;**资源超级类型**（如果定义）。
       * 单击“资源超级类型”将转到该组件。
 
   >[!NOTE]
