@@ -3,9 +3,9 @@ title: 添加 SSL 证书
 description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '570'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 94%
 
 >[!TIP]
 >
->提供证书可能需要几天时间。 因此，Adobe 建议提前提供证书。
+>提供证书可能需要几天时间。因此，Adobe 建议提前提供证书。
 
 ## 证书格式 {#certificate-format}
 
-SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 PEM 格式的常见文件扩展名包括 `.pem,`。`crt`, `.cer`, 和 `.cert`.
+SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。PEM 格式的常见文件扩展名包括 `.pem,`。`crt`, `.cer`, 和 `.cert`.
 
 以下 `openssl` 命令可用于转换非 PEM 证书。
 
@@ -49,7 +49,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 从左侧导航面板中单击 **SSL 证书**。 主屏幕上显示一个包含任何现有 SSL 证书详细信息的表。
+1. 从左侧导航面板中单击 **SSL 证书**。主屏幕上显示一个包含任何现有 SSL 证书详细信息的表。
 
    ![添加 SSL 证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
@@ -57,7 +57,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 
    * 在&#x200B;**证书名称**&#x200B;中输入证书名称。
       * 这仅供参考，可以是任何有助于您轻松引用证书的名称。
-   * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;值粘贴到各自的字段中。 这三个字段都是必填字段。
+   * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;值粘贴到各自的字段中。这三个字段都是必填字段。
 
    ![添加“SSL 证书”对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -87,7 +87,7 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。 P
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-通常，证书策略由嵌入的 OID 值标识。 将证书输出到文本并搜索 OID 将显示证书的策略。
+通常，证书策略由嵌入的 OID 值标识。将证书输出到文本并搜索 OID 将显示证书的策略。
 
 您可以使用以下示例作为指导，将证书详细信息输出为文本。
 
@@ -133,7 +133,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 证书部署失败的最常见原因是中间证书或链证书的顺序不正确。
 
-中间证书文件必须以根证书或最接近根的证书结尾。 它们必须从 `main/server` 证书降序到根目录。
+中间证书文件必须以根证书或最接近根的证书结尾。它们必须从 `main/server` 证书降序到根目录。
 
 可以使用以下命令确定中间文件的顺序。
 
@@ -153,8 +153,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->这两个命令的输出必须完全相同。 如果您找不到与您的密钥匹配的私钥， `main/server` 证书，您需要通过生成新的CSR和/或向SSL供应商请求更新的证书来重新键入证书。
+>这两个命令的输出必须完全相同。如果您找不到 `main/server` 证书的匹配私钥，您需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
 
 ### 证书有效日期 {#certificate-validity-dates}
 
-Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。 您应该检查证书链的有效性。
+Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。您应该检查证书链的有效性。
