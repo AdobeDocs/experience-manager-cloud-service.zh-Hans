@@ -4,7 +4,7 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: dd923ae9d63f1ca1379d8e177ff7b00648da052a
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 91%
@@ -44,6 +44,7 @@ ht-degree: 91%
 您可以将任何 [!DNL Adobe] 或非 Adobe 应用程序与 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存储库集成，并从该应用程序中选择资源。
 
 通过导入资源选择器包并使用 Vanilla JavaScript 库连接到 Assets as a Cloud Service 来实现集成。您需要编辑 `index.html` 或您应用程序中的任何相应文件以 -
+
 * 定义身份验证详细信息
 * 访问 Assets as a Cloud Service 存储库
 * 配置资源选择器显示属性
@@ -73,6 +74,7 @@ You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken
 -->
 
 在 `index.html` 文件或应用程序实施中的类似文件中定义先决条件，以定义用于访问 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存储库的身份验证详细信息。先决条件包括：
+
 * imsOrg
 * imsToken
 * apikey
@@ -105,7 +107,7 @@ For more information on these properties, see [Example for the SUSI flow](#susi-
 在使用 **UMD 版本**&#x200B;的浏览器中（推荐）：
 
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
   const { renderAssetSelector } = PureJSSelectors;
@@ -116,14 +118,14 @@ For more information on these properties, see [Example for the SUSI flow](#susi-
 
 ```
 <script type="module">
-  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 在使用 **ESM CDN 版本**&#x200B;的 Deno/Webpack 模块联合中：
 
 ```
-import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### 选定资源类型 {#selected-asset-type}
@@ -526,7 +528,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 * `MIME type`：包括 JPG、GIF、PPTX、PNG、MP4、DOCX、TIFF、PDF、XLSX
 * `Image Size`：包括图像的最小/最大宽度、最小/最大高度
 
-![rail-view-example](assets/filters-asset-selector.png)
+  ![rail-view-example](assets/filters-asset-selector.png)
 
 ### 自定义搜索
 
