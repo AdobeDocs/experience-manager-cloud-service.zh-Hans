@@ -5,9 +5,9 @@ feature: Content Fragments, GraphQL API
 role: User
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '727'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 借助内容片段和 GraphQL API，您可以将 Adobe Experience Manager (AEM) as a Cloud Service 用作 Headless 内容管理系统(CMS)。
 
-这是通过使用内容片段和 AEM GraphQL API（一种基于标准 GraphQL 的自定义实现）来实现的，以 headless 方式投放结构化内容以供您的应用程序使用。 通过自定义单个API查询的功能，您可以检索和提供您希望/需要呈现的特定内容（作为对单个API查询的响应）。
+这是通过使用内容片段和 AEM GraphQL API（一种基于标准 GraphQL 的自定义实现）来实现的，以 headless 方式投放结构化内容以供您的应用程序使用。通过自定义单个 API 查询的功能，您可以检索和投放您想要/需要呈现的特定内容（作为对单个 API 查询的响应）。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ ht-degree: 92%
 
 * 您可以使用内容片段来创作主要不打算在格式化页面上直接发布 (1:1) 的内容。
 
-* 您的内容片段的内容会以预先确定的方式构建（根据内容片段模型）。 这简化了对应用程序的访问，这将进一步处理您的内容。
+* 您的内容片段的内容会以预先确定的方式构建（根据内容片段模型）。这简化了对应用程序的访问，这将进一步处理您的内容。
 
 ## GraphQL — 概述 {#graphql-overview}
 
@@ -50,11 +50,11 @@ GraphQL 是：
 
   请参阅 [GraphQL.org](https://graphql.org)
 
-此 [AEM GRAPHQL API](#aem-graphql-api) 允许您对执行（复杂）查询 [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)；每个查询都根据特定的模型类型。 然后，您的应用程序可以使用返回的内容。
+[AEM GraphQL API](#aem-graphql-api) 让您对[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)执行（复杂）查询，每个查询都根据特定的模型类型。然后，您的应用程序可以使用返回的内容。
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-对于作为云体验的 Adobe Experience，已经开发了标准 GraphQL API 的自定义实现。 请参阅[用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md) 以了解详细信息。
+对于作为云体验的 Adobe Experience，已经开发了标准 GraphQL API 的自定义实现。请参阅[用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md) 以了解详细信息。
 
 AEM GraphQL API 实施基于 [GraphQL Java 库](https://graphql.org/code/#java)。
 
@@ -82,7 +82,7 @@ AEM GraphQL API 实施基于 [GraphQL Java 库](https://graphql.org/code/#java)�
 
 * 一旦&#x200B;**启用**，用于生成[模式](https://graphql.org/learn/schema/)。
 
-* 提供 GraphQL 所需的数据类型和字段。 它们确保您的应用程序仅请求可能的内容，并接收预期内容。
+* 提供 GraphQL 所需的数据类型和字段。它们确保您的应用程序仅请求可能的内容，并接收预期内容。
 
 * 数据类型&#x200B;**[片段引用](#fragment-references)**&#x200B;可在模型中使用来引用其他内容片段，因此可引入其他级别的结构。
 
@@ -96,7 +96,7 @@ AEM GraphQL API 实施基于 [GraphQL Java 库](https://graphql.org/code/#java)�
 
 * 引用另一个片段，具体取决于特定的内容片段模型。
 
-* 允许您检索结构化数据。
+* 让您检索结构化数据。
 
    * 定义为&#x200B;**多源**，则主片段可以引用（检索）多个子片段。
 
