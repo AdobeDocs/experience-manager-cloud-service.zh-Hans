@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使�
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1680'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->建议使用持久查询。 请参阅 [GraphQL 查询最佳实践 (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) 以了解详细信息和相关的 Dispatcher 配置。
+>建议使用持久查询。请参阅 [GraphQL 查询最佳实践 (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) 以了解详细信息和相关的 Dispatcher 配置。
 
-[GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在 AEM 中可供您开发、测试和持久您的 GraphQL 查询，然后再[转移到您的生产环境](#transfer-persisted-query-production)。 对于需要自定义的情况（例如，当[自定义缓存](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)时）可使用该 API；请参阅在[如何使 GraphQL 查询持久](#how-to-persist-query)中提供的 cURL 示例。
+[GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) 在 AEM 中可供您开发、测试和持久您的 GraphQL 查询，然后再[转移到您的生产环境](#transfer-persisted-query-production)。对于需要自定义的情况（例如，当[自定义缓存](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)时）可使用该 API；请参阅在[如何使 GraphQL 查询持久](#how-to-persist-query)中提供的 cURL 示例。
 
 ## 持久查询及端点 {#persisted-queries-and-endpoints}
 
@@ -59,7 +59,7 @@ ht-degree: 99%
 * cURL - 请查看以下示例
 * 其他工具，包括 [Postman](https://www.postman.com/)
 
-GraphiQL IDE 是 **首选**&#x200B;保留查询的方法。 使用 **cURL** 命令行工具使给定的查询持久：
+GraphiQL IDE 是 **首选**&#x200B;保留查询的方法。使用 **cURL** 命令行工具使给定的查询持久：
 
 1. 使用 PUT 操作将查询放入新端点 URL `/graphql/persist.json/<config>/<persisted-label>` 来准备查询。
 
@@ -220,7 +220,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 ## 使用查询变量 {#query-variables}
 
-查询变量可与持久查询一起使用。 使用变量名称和值将查询变量附加到以分号 (`;`) 为前缀的请求中。多个变量以分号分隔。
+查询变量可与持久查询一起使用。使用变量名称和值将查询变量附加到以分号 (`;`) 为前缀的请求中。多个变量以分号分隔。
 
 该模式如下所示：
 
@@ -251,13 +251,13 @@ query getAdventuresByActivity($activity: String!) {
   }
 ```
 
-此查询可以保留在路径 `wknd/adventures-by-activity`下。 要调用 Persisted 查询 `activity=Camping`，请求如下所示：
+此查询可以保留在路径 `wknd/adventures-by-activity`下。要调用 Persisted 查询 `activity=Camping`，请求如下所示：
 
 ```
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-请注意，`%3B` 是 `;` 的 UTF-8 编码，`%3D` 是 `=` 的编码。 查询变量和任何特殊字符必须[正确编码](#encoding-query-url)才能执行持久查询。
+请注意，`%3B` 是 `;` 的 UTF-8 编码，`%3D` 是 `=` 的编码。查询变量和任何特殊字符必须[正确编码](#encoding-query-url)才能执行持久查询。
 
 ## 正在缓存您的持久查询 {#caching-persisted-queries}
 
@@ -426,30 +426,30 @@ URL 可以划分为以下部分：
 /graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
 ```
 
-要在客户端应用程序中使用持久查询，应使用 AEM headless 客户端 SDK [JavaScript](https://github.com/adobe/aem-headless-client-js)、[Java](https://github.com/adobe/aem-headless-client-java) 或 [NodeJS](https://github.com/adobe/aem-headless-client-nodejs)。 Headless 客户端 SDK 将自动在请求中正确编码任何查询变量。
+要在客户端应用程序中使用持久查询，应使用 AEM headless 客户端 SDK [JavaScript](https://github.com/adobe/aem-headless-client-js)、[Java](https://github.com/adobe/aem-headless-client-java) 或 [NodeJS](https://github.com/adobe/aem-headless-client-nodejs)。Headless 客户端 SDK 将自动在请求中正确编码任何查询变量。
 
 ## 正在将持久查询转移到生产环境  {#transfer-persisted-query-production}
 
-应始终在 AEM 创作服务上创建持久查询，然后将其发布（复制）到 AEM 发布服务。 通常，持久查询会在本地或开发环境等较低环境中创建和测试。 然后，有必要将持久查询提升到更高级别的环境，最终在生产 AEM 发布环境中提供，以供客户端应用程序使用。
+应始终在 AEM 创作服务上创建持久查询，然后将其发布（复制）到 AEM 发布服务。通常，持久查询会在本地或开发环境等较低环境中创建和测试。然后，有必要将持久查询提升到更高级别的环境，最终在生产 AEM 发布环境中提供，以供客户端应用程序使用。
 
 ### 持久查询包
 
-可以将持久查询构建在[ AEM 程序包](/help/implementing/developing/tools/package-manager.md)中。然后，可以在不同的环境中下载和安装 AEM 包。 AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
+可以将持久查询构建在[ AEM 程序包](/help/implementing/developing/tools/package-manager.md)中。然后，可以在不同的环境中下载和安装 AEM 包。AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
 
 要创建包：
 
 1. 导航到&#x200B;**工具** > **部署** > **包**。
-1. 点击&#x200B;**创建包**&#x200B;创建一个新包。 这将打开一个用于定义资源包的对话框。
+1. 点击&#x200B;**创建包**&#x200B;创建一个新包。这将打开一个用于定义资源包的对话框。
 1. 在包定义对话框中，在&#x200B;**常规**&#x200B;下输入&#x200B;**名称**，如“wknd-persistent-queries”。
 1. 输入版本号，如“1.0”。
-1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。 使用路径查找器选择 `persistentQueries` 文件夹。 例如，对于 `wknd` 配置，完整路径为 `/conf/wknd/settings/graphql/persistentQueries`。
+1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。使用路径查找器选择 `persistentQueries` 文件夹。例如，对于 `wknd` 配置，完整路径为 `/conf/wknd/settings/graphql/persistentQueries`。
 1. 点击&#x200B;**保存**&#x200B;以保存新的包定义并关闭对话框。
-1. 点按 **生成** 新建包定义中的按钮。
+1. 在新创建的包定义中点击&#x200B;**生成**&#x200B;按钮。
 
 生成包后，您可以：
 
 * **下载** 包，并在其他环境上重新上传。
-* 通过点击&#x200B;**更多** > **复制**&#x200B;来&#x200B;**复制**&#x200B;包。 这会将包复制到连接的 AEM 发布环境。
+* 通过点击&#x200B;**更多** > **复制**&#x200B;来&#x200B;**复制**&#x200B;包。这会将包复制到连接的 AEM 发布环境。
 
 <!--
 1. Using replication/distribution tool:
