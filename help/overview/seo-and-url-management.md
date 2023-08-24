@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳�
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3705'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -191,7 +191,7 @@ Resource myPage = req.getResource();
 
 本地化页面名称的挑战在于，AEM 平台上的许多可用本地化工具都依赖于让页面名称在各个不同区域环境中匹配，以保持内容同步。
 
-此 `sling:alias` 属性让您能够一举两得。 可将 `sling:alias` 作为属性添加到任何资源，以便使用该资源的别名。在上一个示例中，您将拥有：
+`sling:alias` 属性让您能够一举两得。可将 `sling:alias` 作为属性添加到任何资源，以便使用该资源的别名。在上一个示例中，您将拥有：
 
 * JCR 中的页面指向：
   `…/es/home`
@@ -355,9 +355,9 @@ Disallow: /
 
 AEM 使用 [Apache Sling Sitemap 模块](https://github.com/apache/sling-org-apache-sling-sitemap)生成 XML 站点地图，这将为开发人员和编辑人员提供一系列广泛的选项，以使站点的 XML 站点地图保持最新。
 
-Apache Sling Sitemap 模块将区分为 `sling:sitemapRoot` 属性设置为 `true` 的任何资源生成的顶级站点地图和嵌套站点地图。 通常，使用树的顶级站点地图路径上的选择器来呈现站点地图，而顶级站点地图是没有其他站点地图根祖先的资源。 此顶级站点地图根还公开站点地图索引，该索引通常是站点所有者将在搜索引擎的配置门户中配置或添加到站点的 `robots.txt` 的内容。
+Apache Sling Sitemap 模块将区分为 `sling:sitemapRoot` 属性设置为 `true` 的任何资源生成的顶级站点地图和嵌套站点地图。通常，使用树的顶级站点地图路径上的选择器来呈现站点地图，而顶级站点地图是没有其他站点地图根祖先的资源。此顶级站点地图根还公开站点地图索引，该索引通常是站点所有者将在搜索引擎的配置门户中配置或添加到站点的 `robots.txt` 的内容。
 
-例如，考虑一个在 `my-page` 定义顶级站点地图并在 `my-page/news` 定义嵌套站点地图的网站，以便为新闻子树中的页面生成专用站点地图。 生成的相关 URL 将为
+例如，考虑一个在 `my-page` 定义顶级站点地图并在 `my-page/news` 定义嵌套站点地图的网站，以便为新闻子树中的页面生成专用站点地图。生成的相关 URL 将为
 
 * `<https://www.mydomain.com/my-brand/my-page.sitemap-index.xml>`
 * `<https://www.mydomain.com/my-brand/my-page.sitemap.xml>`
