@@ -3,9 +3,9 @@ title: 管理 SSL 证书
 description: 了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ ht-degree: 98%
 
 ## 更新 SSL 证书 {#update-ssl-certificate}
 
-当证书过期时，与过期证书一起使用的任何域都将不再工作。 通过以下步骤更新证书可确保域继续按需工作。
+当证书过期时，与过期证书一起使用的任何域都将不再工作。通过以下步骤更新证书可确保域继续按需工作。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 1. 从&#x200B;**环境**&#x200B;页面导航到 **SSL 证书**&#x200B;屏幕。
-1. 您将看到一个表，其中包含已在程序中成功安装的每个 SSL 证书的行。 单击要更新的证书行最右侧的省略号按钮，然后选择&#x200B;**查看和更新**。
+1. 您将看到一个表，其中包含已在程序中成功安装的每个 SSL 证书的行。单击要更新的证书行最右侧的省略号按钮，然后选择&#x200B;**查看和更新**。
 1. 将显示证书详细信息并可以更新。
 1. 运行管道以部署更新后的证书。
 
@@ -47,16 +47,16 @@ ht-degree: 98%
 
 ## 删除 SSL 证书 {#deleting-an-ssl-certificate}
 
-从Cloud Manager中移除证书是一个无法撤消的永久操作。 作为最佳实践，Adobe 建议在 Cloud Manager 中删除 SSL 文件之前，先在本地保存这些文件。
+从 Cloud Manager 中移除证书是一个无法撤消的永久操作。作为最佳实践，Adobe 建议在 Cloud Manager 中删除 SSL 文件之前，先在本地保存这些文件。
 
-Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。 在删除 SSL 证书之前，必须删除所有关联的域。 请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)，了解更多信息。
+Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。在删除 SSL 证书之前，必须删除所有关联的域。请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)，了解更多信息。
 
 按照以下步骤删除 SSL 证书。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 1. 从&#x200B;**环境**&#x200B;页面导航到 **SSL 证书**&#x200B;屏幕。
-1. 您将看到一个表，其中包含已在程序中成功安装的每个 SSL 证书的行。 单击要删除的证书行最右侧的省略号按钮，然后选择&#x200B;**删除**。
+1. 您将看到一个表，其中包含已在程序中成功安装的每个 SSL 证书的行。单击要删除的证书行最右侧的省略号按钮，然后选择&#x200B;**删除**。
 1. 在&#x200B;**删除 SSL 证书**&#x200B;对话框中，确认删除操作。
 1. 运行管道以取消部署已删除的证书。
 
@@ -68,7 +68,7 @@ Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。 
 
 如果您的 SSL 证书已有 CDN 配置，则 **SSL 证书**&#x200B;页面上会显示一条信息性消息，鼓励您通过 UI 添加这些配置，以便它们在 Cloud Manager 中可见和可配置。
 
-使用 UI 迁移所有预先存在的环境配置后，消息将消失。 消息可能需要 1 – 2 个工作日才能消失。
+使用 UI 迁移所有预先存在的环境配置后，消息将消失。消息可能需要 1 – 2 个工作日才能消失。
 
 请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)，了解更多信息。
 
