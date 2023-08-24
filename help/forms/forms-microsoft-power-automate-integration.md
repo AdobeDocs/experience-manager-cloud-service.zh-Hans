@@ -3,9 +3,9 @@ title: 如何连接自适应表单数据并将其发送到Microsoft&reg； Power
 description: 将自适应表单数据连接并发送到Microsoft&reg； Power Automate的分步指南。
 keywords: 自适应Forms Microsoft Power Automate，将自适应Forms数据提交到Microsoft Power Automate
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1198'
 ht-degree: 6%
 
 ---
@@ -119,7 +119,7 @@ ht-degree: 6%
 1. 登录到创作实例，选择您的自适应表单并单击 **[!UICONTROL 属性]**.
 1. 在配置容器中，浏览并选择在部分中创建的容器 [创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration)，然后点击 **[!UICONTROL 保存并关闭]**.
 1. 打开自适应表单进行编辑并导航到 **[!UICONTROL 提交]** 自适应表单容器属性的部分。
-1. 在属性容器中，对于 **[!UICONTROL 提交操作]** 选择 **[!UICONTROL 调用Power Automate流]** 选项。 可用的Power Automate流列表将变为可用 **[!UICONTROL Power Automate流]** 选项。 选择所需的流程，并在提交时向其提交自适应Forms数据。
+1. 在属性容器中，对于 **[!UICONTROL 提交操作]** 选择 **[!UICONTROL 调用Power Automate流]** 选项并选择 **[!UICONTROL Power Automate流]**. 选择所需的流程，并在提交时向其提交自适应Forms数据。
 
    ![配置提交操作](assets/submission.png)
 

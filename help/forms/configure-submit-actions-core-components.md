@@ -3,9 +3,9 @@ title: 如何配置自适应表单的提交操作
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 hide: true
 hidefromtoc: true
-source-git-commit: be57fe6c54f2ee07378e16bae601500f71e7ce6b
+source-git-commit: 74fed5b2bcffac9d267b66aaa3d69b27cadd3417
 workflow-type: tm+mt
-source-wordcount: '3575'
+source-wordcount: '3573'
 ht-degree: 95%
 
 ---
@@ -358,7 +358,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 * 对捕获的数据执行复杂的计算
 * 按预定义的计划将自适应Forms数据保存到存储系统
 
-自适应Forms编辑器提供 **调用Microsoft® Power Automate流** 将自适应表单数据、附件和记录文档的提交操作发送到Power Automate Cloud Flow。 要使用Submit操作将捕获的数据发送到Microsoft®Power Automate， [将Formsas a Cloud Service实例与Microsoft® Power Automate连接](forms-microsoft-power-automate-integration.md)
+自适应Forms编辑器提供 **调用Microsoft® Power Automate流** 提交操作以将自适应表单数据、附件和记录文档发送到Power Automate Cloud Flow。 要使用Submit操作将捕获的数据发送到Microsoft®Power Automate， [将Formsas a Cloud Service实例与Microsoft® Power Automate连接](forms-microsoft-power-automate-integration.md)
 
 成功配置后，使用 [调用Microsoft® Power Automate流](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 提交操作以将数据发送到Power Automate流。
 
