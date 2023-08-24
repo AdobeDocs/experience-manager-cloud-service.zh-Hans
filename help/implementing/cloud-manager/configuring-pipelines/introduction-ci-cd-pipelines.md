@@ -4,9 +4,9 @@ description: 了解 Cloud Manager 的 CI/CD 管道，以及如何使用它们高
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1337'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 ## 简介 {#introduction}
 
-Cloud Manager 中的 CI/CD 管道是一种从源存储库构建代码并将其部署到环境中的机制。 管道可以由事件触发，例如源代码存储库的拉取请求（即代码更改），也可以按常规计划触发，匹配发布节奏。
+Cloud Manager 中的 CI/CD 管道是一种从源存储库构建代码并将其部署到环境中的机制。管道可以由事件触发，例如源代码存储库的拉取请求（即代码更改），也可以按常规计划触发，匹配发布节奏。
 
 要配置管道，必须：
 
@@ -40,7 +40,7 @@ Cloud Manager 提供两种类型的管道：
 
 ## 生产管道 {#prod-pipeline}
 
-生产管道是一种专门构建的管道，包括一系列协调的步骤，可部署用于生产的源代码。 这些步骤包括初次构建、打包、测试、验证和部署到所有暂存环境中。 因此，只有在创建了一组生产和暂存环境后，才能添加生产管道。
+生产管道是一种专门构建的管道，包括一系列协调的步骤，可部署用于生产的源代码。这些步骤包括初次构建、打包、测试、验证和部署到所有暂存环境中。因此，只有在创建了一组生产和暂存环境后，才能添加生产管道。
 
 >[!TIP]
 >
@@ -58,7 +58,7 @@ Cloud Manager 提供两种类型的管道：
 
 除了生产和非生产，管道还可以根据其部署的代码类型进行区分。
 
-* **[全栈管道](#full-stack-pipeline)** – 同时部署后端和前端代码构建，其中包含一个或多个 AEM 服务器应用程序以及 HTTPD/Dispatcher 配置。 
+* **[全栈管道](#full-stack-pipeline)** – 同时部署后端和前端代码构建，其中包含一个或多个 AEM 服务器应用程序以及 HTTPD/Dispatcher 配置。
 * **[前端管道](#front-end)** – 部署包含一个或多个客户端 UI 应用程序的前端代码版本。
 * **[Web 层配置管道](#web-tier-config-pipelines)** – 部署 HTTPD/Dispatcher 配置
 
@@ -109,9 +109,9 @@ Cloud Manager 提供两种类型的管道：
 
 ## 前端管道 {#front-end}
 
-前端代码是用作静态文件的任何代码。 它独立于 AEM 提供的 UI 代码，可能包括站点主题、客户定义的 SPA、SPA 和其他解决方案。
+前端代码是用作静态文件的任何代码。它独立于 AEM 提供的 UI 代码，可能包括站点主题、客户定义的 SPA、SPA 和其他解决方案。
 
-前端管道通过加速后端开发的前端代码异步部署，帮助您的团队简化设计和开发过程。 这个专用管道将 JavaScript 和 CSS 作为主题部署到 AEM 分发层，从而产生一个新的主题版本，可以从 AEM 交付的页面中引用。
+前端管道通过加速后端开发的前端代码异步部署，帮助您的团队简化设计和开发过程。这个专用管道将 JavaScript 和 CSS 作为主题部署到 AEM 分发层，从而产生一个新的主题版本，可以从 AEM 交付的页面中引用。
 
 >[!IMPORTANT]
 >
@@ -152,7 +152,7 @@ Cloud Manager 提供两种类型的管道：
 
 ## Web 层配置管道 {#web-tier-config-pipelines}
 
-Web 层配置管道通过将 HTTPD/Dispatcher 配置与其他代码更改分离，实现了对 AEM 运行时的独占部署。 该管道已经简化，为只希望部署 Dispatcher 配置更改的用户提供了加速方法，只需几分钟即可完成部署。
+Web 层配置管道通过将 HTTPD/Dispatcher 配置与其他代码更改分离，实现了对 AEM 运行时的独占部署。该管道已经简化，为只希望部署 Dispatcher 配置更改的用户提供了加速方法，只需几分钟即可完成部署。
 
 >[!TIP]
 >
@@ -164,7 +164,7 @@ Web 层配置管道通过将 HTTPD/Dispatcher 配置与其他代码更改分离�
 * 您必须[选择启用 Dispatcher 工具的灵活模式](/help/implementing/dispatcher/disp-overview.md#validation-debug)才能使用 Web 层配置管道。
 * 用户必须以&#x200B;**部署管理员**&#x200B;角色登录，才能配置或运行管道。
 * 在任何时候，每个环境只能有一个 Web 层配置管道。
-* 当相应的全栈管道正在运行时，用户无法配置Web层配置管道。
+* 当相应的全栈管道正在运行时，用户无法配置 Web 层配置管道。
 * Web 层结构必须遵循灵活的模式结构，如文档[云中 Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug)中所定义。
 
 此外，请注意[全栈管道](#full-stack-pipeline)在引入 Web 层管道时的行为。
