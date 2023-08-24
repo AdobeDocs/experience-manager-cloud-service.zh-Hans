@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 89%
 
    ![从向导创建语言副本](../assets/language-copy-wizard.png)
 
-1. 向导将打开并显示 **选择源** 用于添加/删除页面的步骤。 您还可以选择包含或排除子页面。选择要包含的页面，然后点按或单击&#x200B;**下一步**。
+1. 此向导将打开并显示&#x200B;**选择源**&#x200B;步骤，可让您添加/删除页面。您还可以选择包含或排除子页面。选择要包含的页面，然后点按或单击&#x200B;**下一步**。
 
    ![使用向导添加页面](../assets/language-copy-wizard-add-pages.png)
 
-1. 此 **配置** 利用该向导的步骤，您可以添加/删除语言并选择翻译方法。 点按或单击&#x200B;**下一步**。
+1. 利用该向导的&#x200B;**配置**&#x200B;步骤，可以添加/删除语言并选择翻译方法。点按或单击&#x200B;**下一步**。
 
    ![向导的配置步骤](../assets/language-copy-wizard-configure.png)
 
