@@ -3,9 +3,9 @@ title: 添加 IP 允许列表
 description: 了解如何使用 Cloud Manager 添加您自己的 IP 允许列表。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '196'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -38,4 +38,4 @@ ht-degree: 90%
 
 1. 单击&#x200B;**保存**，并确认您的提交。
 
-保存后，新创建的IP允许列表将在的表格中显示为一行。 **IP允许列表** 页面。
+保存后，新创建的 IP 允许列表会在 **IP 允许列表**&#x200B;页面的表格中显示为一行。
