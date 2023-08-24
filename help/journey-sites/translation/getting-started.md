@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Sites 控制台提供了内容结构的概览，可让您通过创建新页面�
 
 ### 页面编辑器 {#page-editor}
 
-站点控制台可让您导航内容并提供其结构的概述。 要查看单个页面的详细信息，您需要使用站点编辑器。
+Sites 控制台可让您浏览内容并提供其结构的概述。要查看单个页面的详细信息，您需要使用站点编辑器。
 
 要编辑页面，请执行以下操作：
 
