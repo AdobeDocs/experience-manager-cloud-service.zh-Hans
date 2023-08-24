@@ -3,9 +3,9 @@ title: 参与工作流
 description: 工作流通常包括需要人员对页面或资源执行活动的步骤。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1536'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 99%
 
 ### 对参与者步骤执行回退 {#performing-step-back-on-a-participant-step}
 
-如果您发现需要重复一个步骤或一系列步骤，您可以执行回退。这允许您选择在工作流中较早发生的步骤进行重新处理。 工作流会返回到您指定的步骤，然后从此处继续执行。
+如果您发现需要重复一个步骤或一系列步骤，您可以执行回退。此操作让您选择之前已在工作流中执行过的步骤，以进行重新处理。工作流会返回到您指定的步骤，然后从此处继续执行。
 
 在此操作中，您可以指示：
 
