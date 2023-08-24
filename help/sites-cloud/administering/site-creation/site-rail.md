@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '596'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 ## 概述 {#overview}
 
-利用站点边栏，可管理站点的主题和模板资源。 [与其他边栏类似](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)（例如，内容树边栏、引用边栏和时间线边栏），站点边栏以站点控制台中最左侧面板的形式呈现，其中显示有关所选项目的信息。与其他边栏不同，站点边栏仅适用于站点根。
+利用站点边栏，您可以管理站点的主题和模板资源。[与其他边栏类似](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)（例如，内容树边栏、引用边栏和时间线边栏），站点边栏以站点控制台中最左侧面板的形式呈现，其中显示有关所选项目的信息。与其他边栏不同，站点边栏仅适用于站点根。
 
 可以使用站点边栏管理站点的主题和模板相关信息，包括：
 
