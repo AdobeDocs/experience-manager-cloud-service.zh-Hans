@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 的目标选择器
 description: 使用 AEM 目标选择器显示和选择可用作原始资源副本的资源。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1908'
 ht-degree: 86%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 86%
 您可以将任何 [!DNL Adobe] 或非 Adobe 应用程序与 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存储库集成，并从该应用程序中选择资源。
 
 通过导入目标选择器包并使用 Vanilla JavaScript 库连接到 Assets as a Cloud Service 来实现集成。您必须编辑 `index.html` 或您应用程序中的任何相应文件以 -
+
 * 定义身份验证详细信息
 * 访问 Assets as a Cloud Service 存储库
 * 配置目标选择器显示属性
@@ -52,6 +53,7 @@ ht-degree: 86%
 ## 前提条件 {#prerequisites}
 
 在 `index.html` 文件或应用程序实施中的类似文件中定义先决条件，以定义用于访问 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存储库的身份验证详细信息。先决条件包括：
+
 * imsOrg
 * imsToken
 * apikey
@@ -62,11 +64,13 @@ ht-degree: 86%
 
 在使用 **UMD 版本**&#x200B;的浏览器中（推荐）：
 
+在使用 **UMD 版本**&#x200B;的浏览器中（推荐）：
+
 ```
-<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
+<script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
 
 <script>
-  const { renderDestinationSelector } = PureJSSelectors;
+  const { renderAssetSelector } = PureJSSelectors;
 </script>
 ```
 
@@ -74,14 +78,14 @@ ht-degree: 86%
 
 ```
 <script type="module">
-  import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+  import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 </script>
 ```
 
 在使用 **ESM CDN 版本**&#x200B;的 Deno/Webpack 模块联合中：
 
 ```
-import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
+import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
 ### 选定的目标 {#selected-destination}
