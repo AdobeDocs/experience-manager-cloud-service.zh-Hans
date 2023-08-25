@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '2266'
-ht-degree: 100%
+source-git-commit: f28b8a85de76a1658ef45c509cbf5600baa1bb3a
+workflow-type: tm+mt
+source-wordcount: '2267'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!NOTE]
 >
->Universal Editor 仍在开发中。目前，它无法编辑所有内容类型。
+>Universal Editor 仍在开发中。它当前无法编辑所有内容类型。
 
 ## 准备应用程序 {#prepare-app}
 
@@ -224,7 +224,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ### 组件边栏 {#component-rail}
 
-始终沿该编辑器的左侧显示组件边栏。根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
+组件边栏始终位于编辑器的右侧。 根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
 
 ![组件边栏](assets/component-rail.png)
 
