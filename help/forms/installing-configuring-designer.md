@@ -1,9 +1,9 @@
 ---
 title: 下载并安装Forms Designer
 description: 您可以使用Forms Designer创建XDP和PDF表单模板，这些模板用作记录文档的模板。 设计器可用于 [!DNL AEM Forms] 许可证。
-source-git-commit: 115612a11f43000894c76758b1d2bcb3506f3bcb
+source-git-commit: 3b05d413756a98c034388eb31e752b2448758496
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '304'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,12 @@ Designer是一款点击式图形表单设计工具，可简化XDP和PDF表单模
 
 要安装64位或32位的最新版本的AEM Forms Designer，需要以下软件和最低硬件来安装和配置Designer：
 
+<!--
 >[!BEGINTABS]
 
->[!TAB 64位操作系统（推荐）]
+>[!TAB 64-bit OS (Recommended)] -->
+
++++ 64位操作系统（推荐）
 
 * [!DNL Microsoft® Windows® 2016 Server] 或 [!DNL Microsoft® Windows® 2019 Server]、和 [!DNL Microsoft® Windows® 10]
 * 最小2 GB RAM
@@ -31,7 +34,9 @@ Designer是一款点击式图形表单设计工具，可简化XDP和PDF表单模
 * 安装设计器的管理权限
 * [!DNL Microsoft® Visual C++ 2019] （VC 14.28或更高版本）
 
->[!TAB 32位操作系统]
++++
+
++++ 32位操作系统
 
 * [!DNL Microsoft® Windows® 2016 Server] 或 [!DNL Microsoft® Windows® 2019 Server]、和 [!DNL Microsoft® Windows® 10]
 * 最小1 GB RAM
@@ -42,10 +47,9 @@ Designer是一款点击式图形表单设计工具，可简化XDP和PDF表单模
 * 视频硬件加速（可选）
 * Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC
 * 安装设计器的管理权限
-* Microsoft® Visual C++ 2019（VC 14.28或更高版本）
+* [!DNL Microsoft® Visual C++ 2019] （VC 14.28或更高版本）
 
->[!ENDTABS]
-
++++
 
 ## 安装设计器 {#install-designer}
 
