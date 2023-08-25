@@ -1,10 +1,10 @@
 ---
 title: 配置 CDN 和 WAF 规则来筛选流量
 description: 使用 CDN 和 Web 应用防火墙规则筛选恶意流量
-source-git-commit: a9b8b4d6029d0975428b9cff04dbbec993d56172
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+source-git-commit: 0f1ee0ec5fc2d084a6dfdc65d15a8497c23f11a2
+workflow-type: tm+mt
+source-wordcount: '2391'
+ht-degree: 98%
 
 ---
 
@@ -310,17 +310,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
 "rid": "974e67f6",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "host": "example.com",
 "url": "/block-me",
-"req_mthd": "GET",
-"res_type": "",
+"method": "GET",
+"res_ctype": "",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=path-rule;waf=;action=blocked"
 }
 ```
@@ -329,17 +330,18 @@ data:
 {
 "timestamp": "2023-05-26T09:20:01+0000",
 "ttfb": 19,
-"cip": "147.160.230.112",
-"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
 "rid": "974e67f6",
 "host": "example.com",
 "url": "/?sqli=%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fAPK",
-"req_mthd": "GET",
-"res_type": "image/png",
+"method": "GET",
+"res_ctype": "image/png",
 "cache": "PASS",
-"res_status": 406,
-"res_bsize": 3362,
-"server": "PAR",
+"status": 406,
+"res_age": 0,
+"pop": "PAR",
 "rules": "cdn=;waf=SQLI;action=blocked"
 }
 ```
@@ -352,15 +354,16 @@ data:
 |---|---|
 | *timestamp* | TLS 终止后请求开始的时间 |
 | *ttfb* | *首字节时间*&#x200B;的缩写。从请求开始到响应正文开始流式传输之前的时间间隔。 |
-| *cip* | 客户端 IP 地址。 |
+| *cli_ip* | 客户端 IP 地址。 |
+| *cli_country* | 双字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) 客户所在国家/地区的alpha-2国家/地区代码。 |
 | *rid* | 用于唯一标识请求的请求头的值。 |
-| *ua* | 负责发出给定 HTTP 请求的用户代理。 |
+| *req_ua* | 负责发出给定 HTTP 请求的用户代理。 |
 | *host* | 请求所针对的颁发机构。 |
 | *url* | 完整路径，包括查询参数。 |
-| *req_mthd* | 客户端发送的 HTTP 方法，例如“GET”或“POST”。 |
-| *res_type* | 用于指示资源的原始媒体类型的 Content-Type |
+| *方法* | 客户端发送的 HTTP 方法，例如“GET”或“POST”。 |
+| *res_ctype* | 用于指示资源的原始媒体类型的 Content-Type. |
 | *cache* | 缓存的状态。可能的值为 HIT、MISS 或 PASS |
-| *res_status* | 整数值形式的 HTTP 状态代码。 |
-| *res_bsize* | 响应中发送到客户端的正文字节。 |
-| *server* | CDN 缓存服务器的数据中心。 |
+| *状态* | 整数值形式的 HTTP 状态代码。 |
+| *res_age* | 响应已缓存的时间（以秒为单位）（在所有节点中）。 |
+| *pop* | CDN 缓存服务器的数据中心。 |
 | *rules* | 任何匹配规则的名称，适用于 CDN 规则和 WAF 规则。<br><br>匹配的 CDN 规则会显示在针对 CDN 的所有请求的日志条目中，无论它是 CDN 命中、通过还是未命中。<br><br>还指示匹配是否产生块。<br><br>例如，“`cdn=;waf=SQLI;action=blocked`”<br><br>如果没有匹配的规则，则为空。 |
