@@ -2,10 +2,10 @@
 title: 使用内容片段 （资产 — 内容片段）
 description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和 headless 投放。以及它们如何与MSM结合使用。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
+source-git-commit: 9a7087979831ac08aed5f93df024f1c835a9fc08
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 89%
+source-wordcount: '2171'
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。 现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
+>内容片段存储为&#x200B;**资源**。现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
 
 本页和以下页面介绍了创建、配置、维护和使用内容片段的任务：
 
@@ -114,7 +114,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 通过访问时 **资产** 控制台您可以使用MSM并为片段创建活动副本。
 
-有关更多详细信息，请参阅 [使用MSM对资产重用内容片段](/help/assets/reuse-assets-using-msm.md).
+有关更多详细信息，请参阅 [使用MSM对资产重用内容片段](/help/assets/reuse-assets-using-msm.md). 这样可启用 [继承](/help/assets/content-fragments/content-fragments-variations.md#inheritance) 适用于变体和片段的单个字段。
 
 >[!CAUTION]
 >

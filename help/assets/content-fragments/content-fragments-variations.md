@@ -2,10 +2,10 @@
 title: 变体 – 创作片段内容 （资产 — 内容片段）
 description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容更加灵活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 9a7087979831ac08aed5f93df024f1c835a9fc08
 workflow-type: tm+mt
-source-wordcount: '2435'
-ht-degree: 94%
+source-wordcount: '2516'
+ht-degree: 93%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 94%
 
 * 将&#x200B;**标记**&#x200B;分配给当前变体；可以添加、更新和删除标签
 
-   * [标记](/help/sites-cloud/authoring/features/tags.md)在组织片段时可发挥强大作用，因为其可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
+   * [标记](/help/sites-cloud/authoring/features/tags.md)在组织片段时可发挥强大作用，因为其可用于内容分类和分类。标记可用于查找内容（按标记）和应用批量操作。
 
 
       * 搜索标记将会返回片段，并会突出显示标记的变体。
@@ -113,7 +113,7 @@ ht-degree: 94%
 
 ### 富文本 {#rich-text}
 
-富文本编辑允许您设置格式：
+富文本编辑可让您设置格式：
 
 * 粗体
 * 斜体
@@ -138,7 +138,7 @@ ht-degree: 94%
 
 ### 纯文本 {#plain-text}
 
-纯文本允许快速输入内容，而无需设置格式或标记信息。 您还可以打开全屏编辑器以进一步[操作](#actions)。
+纯文本允许快速输入内容，而无需设置格式或标记信息。您还可以打开全屏编辑器以进一步[操作](#actions)。
 
 >[!CAUTION]
 >
@@ -150,7 +150,7 @@ ht-degree: 94%
 >
 >有关完整信息，请参阅 [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) 文档。
 
-这允许您使用Markdown设置文本格式。 您可以定义：
+这让您使用 Markdown 设置文本格式。您可以定义：
 
 * 标题
 * 段落和换行符
@@ -187,7 +187,7 @@ ht-degree: 94%
 
 #### 新内容片段 {#fragment-references-new-content-fragment}
 
-**新内容片段**&#x200B;选项将允许您创建一个全新的片段。 为此，将在编辑器中打开创建内容片段向导的变体。
+**新内容片段**&#x200B;选项将允许您创建一个全新的片段。为此，将在编辑器中打开创建内容片段向导的变体。
 
 然后，您将能够通过以下方式创建新片段：
 
@@ -277,11 +277,11 @@ ht-degree: 94%
 
 1. 打开全屏编辑器。
 
-1. 顶部工具栏中有&#x200B;**注释**&#x200B;图标。 您可以根据需要选择一些文本。
+1. 顶部工具栏中有&#x200B;**注释**&#x200B;图标。您可以根据需要选择一些文本。
 
    ![批注](assets/cfm-variations-07.png)
 
-1. 此时将打开一个对话框。 您可以在此输入注释。
+1. 此时将打开一个对话框。您可以在此输入注释。
 
    ![批注](assets/cfm-variations-07a.png)
 
@@ -293,11 +293,11 @@ ht-degree: 94%
 
    ![注释](assets/cfm-variations-07b.png)
 
-1. 关闭全屏编辑器时，注释仍会高亮显示。 对话框若选中将会打开，以便您进一步编辑注释。
+1. 关闭全屏编辑器时，注释仍会高亮显示。对话框若选中将会打开，以便您进一步编辑注释。
 
 1. 选择&#x200B;**“保存”**。
 
-1. 关闭全屏编辑器时，注释仍会高亮显示。 对话框若选中将会打开，以便您进一步编辑注释。
+1. 关闭全屏编辑器时，注释仍会高亮显示。对话框若选中将会打开，以便您进一步编辑注释。
 
    ![注释](assets/cfm-variations-07c.png)
 
@@ -329,7 +329,7 @@ ht-degree: 94%
 >
 无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
 >
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资源格式（例如，大小）。 资源在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 >
@@ -369,7 +369,7 @@ ht-degree: 94%
 >
 无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
 >
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资源格式（例如，大小）。 资源在片段编辑器中的呈现形式仅用于创作内容流。
+但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 >
@@ -392,8 +392,33 @@ ht-degree: 94%
    >[!CAUTION]
    >
    如果在添加对其他片段的引用后，您将格式更改为：
+   >
    * **纯文本**：引用会从片段中完全丢失。
    * **Markdown**：引用将保留。
+
+## 继承 {#inheritance}
+
+继承是一种机制，通过该机制，可以将内容从一个片段自动推送到另一个片段。 继承的字段和变体可以是 [多站点管理](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+
+您可以取消（随后也可以重新启用）继承。根据上下文，这可用于变体，或者单个字段（如果片段是Live Copy的一部分）。
+
+![显示继承关系的内容片段](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
+
+例如：
+
+* 取消继承
+
+  ![“取消继承”按钮](/help/assets/content-fragments/assets/editing-cancel-inheritance.png)
+
+* 重新启用继承（如果继承已取消）
+
+  ![“重新启用继承”按钮](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+
+<!--
+* Rollout action is also available in Live Copy source
+
+  ![Rollout button](/help/assets/content-fragments/assets/editing-rollout.png)
+-->
 
 ## 管理变体 {#managing-variations}
 
@@ -458,13 +483,13 @@ ht-degree: 94%
 
 ### 与母版同步 {#synchronizing-with-master}
 
-**母版**&#x200B;是内容片段的一个组成部分，从定义上讲，它包含内容的母版副本，而变体则包含该内容的单独更新和定制版本。 更新母版时，这些更改可能也与变体相关，因此需要传播到这些变体中。
+**母版**&#x200B;是内容片段的一个组成部分，从定义上讲，它包含内容的母版副本，而变体则包含该内容的单独更新和定制版本。更新母版时，这些更改可能也与变体相关，因此需要传播到这些变体中。
 
-在编辑变体时，您有权使用将变体的当前元素与主要内容同步的操作。 这样，您就可以自动将对母版所做的更改复制到所需的变体。
+在编辑变体时，您有权使用将变体的当前元素与主要内容同步的操作。这样，您就可以自动将对母版所做的更改复制到所需的变体。
 
 >[!CAUTION]
 >
-同步仅可将更改从&#x200B;***母版**复制到变体*。
+同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
 >
 仅会同步变体的当前元素。
 >
@@ -472,7 +497,7 @@ ht-degree: 94%
 >
 不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
 
-1. 在片段编辑器中打开内容片段。 确保&#x200B;**母版**&#x200B;已编辑。
+1. 在片段编辑器中打开内容片段。确保&#x200B;**母版**&#x200B;已编辑。
 
 1. 选择一个特定的变体，然后从以下任一位置选择相应的同步操作：
 
