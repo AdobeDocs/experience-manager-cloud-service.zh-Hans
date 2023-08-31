@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 22ed74b307b9eb4c6c2f72ac2a34e2ab6d30a85c
+source-git-commit: bb7d8145eb954557d185b58f884532f8f08c5a54
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 50%
 
 ---
@@ -23,12 +23,10 @@ ht-degree: 50%
 
 - GRANITE-46784：添加用于禁用BearerAuthenticationHandler的选项
 - GRANITE-36205：将内部Oak发行版本更新到最新版本
-- GRANITE-47059：删除Granite Jetty SSL包
 - ASSETS-26713：触屏UI外部链接到新的Experience UI功能板 — 已升级unified-shell集成和ui-touch-optimized
 - SKYOPS-63302：将com.adobe.granite：com.adobe.granite.auth.saml升级到v1.0.54
 - GRANITE-46634：升级到事件客户端1.4.0
-- GRANITE-46788：更新Apache Commons库
-- GRANITE-29211：将工具更新为Sling功能模型2.0
+- GRANITE-46788：将库更新为Apache Commons IO 2.13.0、Commons Lang 3.13.0、Commons Code 1.16.0和Commons Compress 1.23.0
 - GRANITE-46705：更新至Apache Felix Http Jetty 4.1.14
 - GRANITE-46631：将Jackrabbit版本更新为2.20.11
 - SKYOPS-61895：更新至Jackrabbit Filevault 3.7.0
@@ -41,6 +39,7 @@ ht-degree: 50%
 - GRANITE-43744：如果身份验证要求和虚路径配置错误，则Sling Authenticator无法正常工作
 - GRANITE-46419：AEM与Auth0 Idp的集成问题
 - GRANITE-46292：AEM Cloud更新后，Okta SAML配置不起作用
+- GRANITE-47059：删除Granite Jetty SSL包
 
 ### 已知问题 {#known-issues-13239}
 
