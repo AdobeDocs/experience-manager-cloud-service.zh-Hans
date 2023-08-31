@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 了解本地验证、调试、灵活模式文件结构以及如何从旧模式迁移到灵活模式。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
+source-git-commit: 4a79284d879af1920c839a68be14619d1e35f7e9
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '2990'
 ht-degree: 1%
 
 ---
@@ -113,13 +113,13 @@ ht-degree: 1%
 
 创建这些符号链接所需的命令示例：
 
-Apple®macOS、Linux和WSL
+Apple macOS、Linux和WSL
 
 ```
 ln -s ../available_vhosts/wknd.vhost wknd.vhost
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.vhost ..\available_vhosts\wknd.vhost
@@ -151,13 +151,13 @@ mklink wknd.vhost ..\available_vhosts\wknd.vhost
 
 创建这些符号链接所需的命令示例：
 
-Apple®macOS、Linux和WSL
+Apple macOS、Linux和WSL
 
 ```
 ln -s ../available_farms/wknd.farm wknd.farm
 ```
 
-Microsoft® Windows
+Microsoft Windows
 
 ```
 mklink wknd.farm ..\available_farms\wknd.farm
