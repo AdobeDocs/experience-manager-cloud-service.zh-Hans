@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '4249'
-ht-degree: 99%
+source-wordcount: '4258'
+ht-degree: 97%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 99%
    + AEMaaCS 功能发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
+         + [2023.7.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
          + [2023.6.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [2023.4.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)
          + [2023.2.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
@@ -315,6 +316,16 @@ ht-degree: 99%
          + [注册、登录和用户配置文件](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + 管理 {#administering}
       + 内容片段 {#content-fragments}
+         + [概述和概念](/help/sites-cloud/administering/content-fragments/overview.md)
+         + [使用GraphQL的Headless交付](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+         + [内容片段设置](/help/sites-cloud/administering/content-fragments/setup.md)
+         + [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+         + [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md)
+         + [创作片段内容](/help/sites-cloud/administering/content-fragments/authoring.md)
+         + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
+         + [删除注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
+         + [分析结构](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
          + [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
          + [使用内容片段和 GraphQL 进行 Headless 投放](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
          + [为您的实例启用内容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
@@ -519,6 +530,7 @@ ht-degree: 99%
       + [支持的文件类型和用例](/help/assets/supported-file-formats-assets-view.md)
       + [查看资源](/help/assets/navigate-assets-view.md)
       + [上传和添加资源](/help/assets/add-delete-assets-view.md)
+      + [批量导入资源](/help/assets/bulk-import-assets-view.md)
       + [搜索和发现资源](/help/assets/search-assets-view.md)
       + [资源管理任务](/help/assets/manage-organize-assets-view.md)
       + [编辑图像](/help/assets/edit-images-assets-view.md)
@@ -574,6 +586,7 @@ ht-degree: 99%
       + 创作自适应表单 - 核心组件 {#authoring-adaptive-forms-core-components}
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
+            + [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
             + [创建自适应表单 - AEM Sites 页面中的核心组件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
@@ -582,6 +595,7 @@ ht-degree: 99%
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
       + 创作自适应表单 - 基础组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -730,18 +744,14 @@ ht-degree: 99%
       + [内容片段](/help/headless/setup/create-content-fragment.md)
       + [GraphQL 端点](/help/headless/setup/create-api-request.md)
    + 内容片段 {#content-fragments}
-      + [概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
-      + [内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
-      + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
+      + [概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [管理内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + 创作{#authoring}
-         + [创作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
-         + [文本编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
-         + [关联的内容](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
-         + [变体](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
-      + [元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
-      + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
-      + [JSON 预览](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
+         + [创作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Markdown编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [JSON 预览](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + GraphQL API {#graphql-api}
       + [内容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [管理 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)
@@ -961,6 +971,7 @@ ht-degree: 99%
       + [自定义和扩展内容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [配置用于呈现的组件的内容片段](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
       + [自定义内容片段控制台](/help/implementing/developing/extending/content-fragment-console-customizing.md)
+      + [自定义内容片段控制台和编辑器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + 管理搜索表单 {#manage-search-forms}
          + [配置搜索表单](/help/implementing/developing/extending/search-forms.md)
          + [配置收件箱搜索过滤器](/help/implementing/developing/extending/configure-inbox-search-rail.md)
