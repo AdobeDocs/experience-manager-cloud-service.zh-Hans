@@ -3,24 +3,94 @@ title: 编辑图像
 description: 使用由 [!DNL Adobe Photoshop Express] 提供支持的选项编辑图像并将更新后的图像另存为版本。
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
+source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 95%
+source-wordcount: '896'
+ht-degree: 52%
 
 ---
 
 # 在 [!DNL Assets view] 中编辑图像 {#edit-images}
 
-[!DNL Assets view] 提供了简单易用的编辑选项，由 [!DNL Adobe Photoshop Express] 支持。可用的编辑操作包括污点修复、裁切和拉直、调整图像大小和调整图像。
+[!DNL Assets view] 提供了简单易用的编辑选项，由提供支持 [!DNL Adobe Express] 和 [!DNL Adobe Photoshop Express]. 可用的编辑操作，使用 [!DNL Adobe Express] 包括“调整图像大小”、“删除背景”、“裁切图像”和“将JPEG转换为PNG”。
 
-在编辑图像之后，您可以将新图像另存为新版本。版本控制可帮助您以后在需要时还原为原始资源。要编辑图像，请[打开其预览](/help/assets/navigate-assets-view.md#preview-assets)并单击右侧栏上的&#x200B;**[!UICONTROL 编辑图像]**![编辑图标](assets/do-not-localize/edit-icon.png)。
+在编辑图像之后，您可以将新图像另存为新版本。版本控制可帮助您以后在需要时还原为原始资源。要编辑图像， [打开其预览](/help/assets/navigate-assets-view.md) 并单击 **[!UICONTROL 编辑图像]**.
 
-![用于编辑图像的选项](assets/edit-image2.png)
+>[!NOTE]
+>
+>您可以使用编辑PNG和JPEG文件类型的图像 [!DNL Adobe Express].
 
-*图：用于编辑图像的选项由 [!DNL Adobe Photoshop Express] 提供支持。*
+<!--The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.-->
 
-## 对图像进行污点修复 {#spot-heal-images}
+## 使用Adobe Express编辑图像 {#edit-using-express}
+
+>[!CONTEXTUALHELP]
+>id="assets_express_integration"
+>title="Adobe Express 集成"
+>abstract="由Adobe Express提供支持的简单直观的图像编辑工具可直接在AEM Assets中使用，以提高内容重复利用率和加快内容速度。"
+
+### 调整图像大小 {#resize-image-using-express}
+
+将图像大小调整为热门用例中的特定大小。[!DNL Assets view] 提供针对特定照片大小预先计算的新分辨率，让您可以快速地调整图像大小以适合常见的照片尺寸。要使用调整图像大小，请执行以下操作 [!DNL Assets view]，请按照以下步骤操作：
+
+1. 选择图像并单击 **编辑**.
+2. 单击 **[!DNL Resize Image]** 从左侧窗格中可用的快速操作删除。
+3. 从中选择适当的社交媒体平台 **[!UICONTROL 调整大小]** 下拉列表，并从显示的选项中选择图像大小。
+4. 如果需要，使用 **[!UICONTROL 图像缩放]** 字段。
+5. 单击 **[!DNL Apply]** 以应用更改。
+   ![使用Adobe Express编辑图像](assets/adobe-express-resize-image.png)
+
+   您编辑的图像可供下载。 您可以将编辑后的资源另存为同一资源的新版本或另存为新资源。
+   ![使用Adobe Express保存图像](assets/adobe-express-resize-save.png)
+
+### 删除背景 {#remove-background-using-express}
+
+您可以通过如下所述的几个简单步骤从图像中删除背景：
+
+1. 选择图像并单击 **编辑**.
+2. 单击 **[!DNL Remove Background]** 从左侧窗格中可用的快速操作删除。 Experience Manager Assets显示没有背景的图像。
+3. 单击 **[!DNL Apply]** 以应用更改。
+   ![使用Adobe Express保存图像](assets/adobe-express-remove-background.png)
+
+   您编辑的图像可供下载。 您可以将编辑后的资源另存为同一资源的新版本或另存为新资源。
+
+### 裁切图像 {#crop-image-using-express}
+
+使用嵌入式技术，可以轻松地将图像转换为完美大小 [!DNL Adobe Express] 快速操作。
+
+1. 选择图像并单击 **编辑**.
+2. 单击 **[!DNL Crop Image]** 从左侧窗格中可用的快速操作删除。
+3. 拖动图像角上的手柄，以创建所需的裁切。
+4. 单击 **[!DNL Apply]**.
+   ![使用Adobe Express保存图像](assets/adobe-express-crop-image.png)
+裁剪的图像可供下载。 您可以将编辑后的资源另存为同一资源的新版本或另存为新资源。
+
+### 将JPEG转换为PNG {#convert-jpeg-to-png-using-express}
+
+您可以使用Adobe Express快速将JPEG图像转换为PNG格式。 执行以下步骤：
+
+1. 选择图像并单击 **编辑**.
+2. 单击 **[!DNL JPEG to PNG]** 从左侧窗格中可用的快速操作删除。
+   ![通过Adobe Express转换为PNG](assets/adobe-express-convert-image.png)
+3. 单击&#x200B;**[!UICONTROL 下载]**。
+
+### 限制 {#limitations-adobe-express}
+
+* 支持的图像分辨率：最小 — 50像素，最大 — 6000像素/维度
+
+* 支持的最大文件大小：17MB
+
+## 编辑图像，使用 [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
+
+<!--
+After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](//help/navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
+
+![Options to edit an image](assets/edit-image2.png)
+
+*Figure: The options to edit images are powered by [!DNL Adobe Photoshop Express].*
+-->
+
+### 对图像进行污点修复 {#spot-heal-images-using-photoshop-express}
 
 如果某个图像上有小污点或者小物体，您可以使用 Adobe Photoshop 提供的污点修复功能编辑和移除污点。
 
@@ -33,9 +103,9 @@ TBD: See if we should give backlinks to PS docs for these concepts.
 For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 
-## 裁切和拉直图像 {#crop-straighten-images}
+### 裁切和拉直图像 {#crop-straighten-images-using-photoshop-express}
 
-使用裁切和拉直选项，您可以执行基本的裁切、旋转图像、在水平或垂直方向上翻转图像，以及将其裁切为适合流行社交媒体网站的尺寸。
+使用裁切和拉直选项，您可以执行基本的裁切、旋转图像、水平或垂直翻转图像，以及将其裁切为适合流行社交媒体网站的尺寸。
 
 要保存您的编辑，请单击&#x200B;**[!UICONTROL 裁切图像]**。在编辑之后，您可以将新图像另存为版本。
 
@@ -43,15 +113,15 @@ For more information about how Spot Healing works in Photoshop, see [retouching 
 
 许多默认选项可以让您将图像裁切为最佳比例，以适合各种社交媒体配置文件和帖子。
 
-## 调整图像大小 {#resize-image}
+### 调整图像大小 {#resize-image-using-photoshop-express}
 
-将图像大小调整为热门用例中的特定大小。[!DNL Assets view] 提供针对特定照片大小预先计算的新分辨率，让您可以快速地调整图像大小以适合常见的照片尺寸。您可以按厘米或英寸查看常见照片大小来了解具体的尺寸。默认情况下，调整大小方法保留纵横比。要手动覆盖纵横比，请单击 ![用于调整图像大小的选项。](assets/do-not-localize/lock-closed-icon.png).
+您可以按厘米或英寸查看常见照片大小来了解具体的尺寸。默认情况下，调整大小方法保留纵横比。要手动覆盖纵横比，请单击 ![](assets/do-not-localize/lock-closed-icon.png)。
 
 输入尺寸，单击&#x200B;**[!UICONTROL 调整图像大小]**&#x200B;来调整图像大小。在将更改另存为版本之前，您可以在保存之前通过单击[!UICONTROL 还原]以撤销进行的所有更改，或者单击[!UICONTROL 恢复]来更改编辑过程中的特定步骤。
 
 ![调整图像大小时的选项](assets/resize-image.png)
 
-## 调整图像 {#adjust-image}
+### 调整图像 {#adjust-image-using-photoshop-express}
 
 使用 [!DNL Assets view] 只需几次单击即可调整颜色、色调、对比度等等。在编辑窗口中单击&#x200B;**[!UICONTROL 调整图像]**。右侧边栏中提供了以下选项：
 
@@ -67,9 +137,9 @@ For more information about how Spot Healing works in Photoshop, see [retouching 
 TBD: Insert a video of the available social media options.
 -->
 
-## 后续步骤 {#next-steps}
+### 后续步骤 {#next-steps}
 
-* 使用提供产品反馈 [!UICONTROL 反馈] Assets视图用户界面上可用的选项
+* 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
