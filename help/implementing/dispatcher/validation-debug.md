@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 了解本地验证、调试、灵活模式文件结构以及如何从旧模式迁移到灵活模式。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: fccce4fed057b9cf20825bce043b3ec95c3a5ab8
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2988'
 ht-degree: 1%
 
 ---
@@ -107,6 +107,28 @@ ht-degree: 1%
 </VirtualHost>
 ```
 
+* `conf.d/enabled_vhosts/<CUSTOMER_CHOICE>.vhost`
+
+此文件夹包含指向conf.dispatcher.d/available_vhosts下的文件的相对符号链接。
+
+创建这些符号链接所需的命令示例：
+
+Apple®macOS、Linux和WSL
+
+```
+ln -s ../available_vhosts/wknd.vhost wknd.vhost
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.vhost ..\available_vhosts\wknd.vhost
+```
+
+>[!NOTE]
+>
+> 在Windows下使用符号链接时，您应在提升权限的命令提示符下运行（在Linux的Windows子系统中）或具有 [创建符号链接](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 已分配权限。
+
 * `conf.d/rewrites/rewrite.rules`
 
 文件包含在 `.vhost` 文件。 它有一组重写规则 `mod_rewrite`.
@@ -122,6 +144,28 @@ ht-degree: 1%
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
 您可以有一个或多个这些文件，它们包含与主机名匹配的场，并允许Dispatcher模块使用不同的规则处理每个场。 文件创建于 `available_farms` 目录，并通过中的符号链接启用 `enabled_farms` 目录。 从 `.farm` 文件、过滤器、缓存规则等其他文件也包括在内。
+
+* `conf.dispatcher.d/enabled_farms/<CUSTOMER_CHOICE>.farm`
+
+此文件夹包含指向conf.dispatcher.d/available_farms下文件的相对符号链接。
+
+创建这些符号链接所需的命令示例：
+
+Apple®macOS、Linux和WSL
+
+```
+ln -s ../available_farms/wknd.farm wknd.farm
+```
+
+Microsoft® Windows
+
+```
+mklink wknd.farm ..\available_farms\wknd.farm
+```
+
+>[!NOTE]
+>
+> 在Windows下使用符号链接时，您应在提升权限的命令提示符下运行（在Linux的Windows子系统中）或具有 [创建符号链接](https://learn.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/create-symbolic-links) 已分配权限。
 
 * `conf.dispatcher.d/cache/rules.any`
 
