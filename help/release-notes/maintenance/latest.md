@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: bb7d8145eb954557d185b58f884532f8f08c5a54
+source-git-commit: a1686d7796bb1e310b776195bd19df98f6f10650
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 50%
+source-wordcount: '305'
+ht-degree: 41%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 50%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 发行版本 13239 {#release-13239}
+## 发行版本 13323 {#release-13323}
 
-下面总结了维护版本 13239 的持续改进，该版本已于 2023 年 8 月 29 日公开发布。此维护版本取代了发行说13206。
+以下总结了维护版本13323的不断改进，该版本于2023年9月1日公开发布。 此维护版本取代了发行说13239。
 
 激活 2023.9.0 功能后可为此次维护版本提供完整的功能集。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
-### 增强 {#enhancements-13239}
+### 增强 {#enhancements-13323}
 
 - GRANITE-46784：添加用于禁用BearerAuthenticationHandler的选项
 - GRANITE-36205：将内部Oak发行版本更新到最新版本
@@ -31,7 +31,7 @@ ht-degree: 50%
 - GRANITE-46631：将Jackrabbit版本更新为2.20.11
 - SKYOPS-61895：更新至Jackrabbit Filevault 3.7.0
 
-### 修复的问题 {#fixed-issues-13239}
+### 修复的问题 {#fixed-issues-13323}
 
 - SKYOPS-63290：修复了存储桶的不正确演化
 - SKYOPS-54607：速率限制符服务器负载计算对失败的请求不正确
@@ -41,11 +41,12 @@ ht-degree: 50%
 - GRANITE-46292：AEM Cloud更新后，Okta SAML配置不起作用
 - GRANITE-47059：删除Granite Jetty SSL包
 
-### 已知问题 {#known-issues-13239}
+### 已知问题 {#known-issues-13323}
 
-无。
+- SITES-15622： GraphQL — 使用数字和布尔参数的持久查询存在问题。
+- SITES-15654： GraphQL — 同名的合并和属性存在问题。
 
-### 嵌套的技术 {#embedded-tech-13239}
+### 嵌套的技术 {#embedded-tech-13323}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
