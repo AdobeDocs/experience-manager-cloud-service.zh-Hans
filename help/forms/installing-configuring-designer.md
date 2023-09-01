@@ -1,9 +1,9 @@
 ---
 title: 下载并安装Forms Designer
 description: 您可以使用Forms Designer创建XDP和PDF表单模板，这些模板用作记录文档的模板。 设计器可用于 [!DNL AEM Forms] 许可证。
-source-git-commit: 34d966f6550cb9e507c751b580b16a3043137255
+source-git-commit: a22c21ba05e72c1bf18c56df72b7e3c7c62edc0c
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '344'
 ht-degree: 1%
 
 ---
