@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 5a60c491db4a182529a2c4b6490b18b356c14fa7
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2746'
 ht-degree: 4%
 
 ---
@@ -99,6 +99,14 @@ AEMas a Cloud Service不支持从“发布”到“创作”的反向复制。 �
 内容通过pub-sub机制从Author复制到Publish。 不支持自定义复制代理。
 
 ## 监控和调试 {#monitoring-and-debugging}
+
+## 没有重载开发环境 {#overloading-dev-envs}
+
+生产环境的大小更大，可确保稳定运行，而暂存环境的大小类似于生产环境，可确保在生产条件下进行真实的测试。
+
+开发环境和快速开发环境应仅限于开发、错误分析和功能测试，并且不能用于处理高工作负载和大量内容。
+
+例如，更改开发环境中大型内容存储库的索引定义可能会导致重新索引导致处理过多。 应在暂存环境中运行需要大量内容的测试。
 
 ### 日志 {#logs}
 
