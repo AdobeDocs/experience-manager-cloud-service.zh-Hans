@@ -2,9 +2,9 @@
 title: 了解如何在内容片段中使用引用
 description: 了解如何在内容片段中对内容、其他片段和其他资源（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '728'
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
+source-wordcount: '712'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 一些引用具有专用数据类型（例如，内容引用和片段引用），而其他引用只是作为引用内容添加到文本块中（资源引用和临时引用）。
 
-![内容片段 – 引用](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![内容片段 – 引用](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 内容引用 {#content-references}
 
@@ -92,11 +92,7 @@ ht-degree: 100%
 
 利用内容片段编辑器的&#x200B;**结构树**&#x200B;选项卡，您可以浏览您的片段所引用的片段，然后浏览它们可能包含的任何引用。选择引用会打开该片段进行编辑。
 
->[!NOTE]
->
->使用主面板中的痕迹导航，您可以导航回起始点。
-
-![内容片段结构树](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
+![内容片段结构树](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 ## 临时引用 {#adhoc-references}
 
@@ -110,21 +106,21 @@ ht-degree: 100%
 
 ## 其他资源 {#additional-resources}
 
-* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 
-   * [管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+   * [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md)
 
-      * [将配置应用到 Assets 文件夹](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [将配置应用到 Assets 文件夹](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder)
 
-      * [创建内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [创建内容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
 
-   * [变体 - 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+   * [创作内容片段](/help/sites-cloud/administering/content-fragments/authoring.md)
 
-   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-      * [内容片段模型 – 数据类型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+      * [内容片段模型 – 数据类型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
-      * [内容片段模型 – 属性](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
+      * [内容片段模型 – 属性](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
 * 快速入门指南
    * [创建 Assets 文件夹 – Headless 设置](/help/headless/setup/create-assets-folder.md)

@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 版的发行说明。'
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 93%
@@ -44,7 +44,7 @@ ht-degree: 93%
 
 ### [!DNL Sites]预发行渠道中提供的新功能 {#prerelease-features-sites}
 
-* [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)为用户提供一个选项，用于显示与某个内容片段关联的语言副本总数。还提供一键访问以查看所有语言副本。用户还可按其感兴趣的区域设置筛选表格视图。
+* [内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)为用户提供一个选项，用于显示与某个内容片段关联的语言副本总数。还提供一键访问以查看所有语言副本。用户还可按其感兴趣的区域设置筛选表格视图。
 
 ![内容片段语言](/help/release-notes/assets/cfconsole-languages.png)
 

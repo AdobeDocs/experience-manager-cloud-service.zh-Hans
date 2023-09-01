@@ -4,15 +4,24 @@ description: 了解如何从内容片段控制台中管理内容片段。
 landing-page-description: 了解如何从内容片段控制台中管理内容片段，虽然该控制台侧重于大量使用内容片段的 Headless 用例情况，但其也用于页面创作。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
-workflow-type: ht
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+workflow-type: tm+mt
 source-wordcount: '1178'
 ht-degree: 100%
 
 ---
 
 # 内容片段控制台  {#content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 了解内容片段控制台如何优化对内容片段的访问，帮助您通过执行发布、取消发布、复制等管理操作来创建、搜索和管理内容片段。
 
@@ -109,7 +118,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。 可以通过 AEM 异步作业 UI 监控该作业的进度。
+>“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。可以通过 AEM 异步作业 UI 监控该作业的进度。
 
 ## 提供的有关您的内容片段的信息 {#information-content-fragments}
 

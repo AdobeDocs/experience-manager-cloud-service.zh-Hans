@@ -2,7 +2,7 @@
 title: 自定义和扩展内容片段
 description: 内容片段扩展了标准资产。 了解如何对其进行自定义。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '1812'
 ht-degree: 3%
@@ -13,13 +13,13 @@ ht-degree: 3%
 
 在Adobe Experience Manager as a Cloud Service中，内容片段扩展了标准资源；请参阅：
 
-* [创建和管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) 和 [使用内容片段进行页面创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 以了解有关内容片段的更多信息。
+* [创建和管理内容片段](/help/sites-cloud/administering/content-fragments/overview.md) 和 [使用内容片段进行页面创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 以了解有关内容片段的更多信息。
 
 * [管理资源](/help/assets/manage-digital-assets.md) 以了解有关标准资产的更多信息。
 
 ## 架构 {#architecture}
 
-基本 [组成部分](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 的内容片段包括：
+基本 [组成部分](/help/sites-cloud/administering/content-fragments/overview.md#constituent-parts-of-a-content-fragment) 的内容片段包括：
 
 * A *内容片段*，
 * 由一个或多个组成 *内容元素*，
@@ -78,7 +78,7 @@ ht-degree: 3%
 
 #### 资源权限 {#asset-permissions}
 
-有关更多详细信息，请参阅 [内容片段 — 删除注意事项](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
+有关更多详细信息，请参阅 [内容片段 — 删除注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md).
 
 #### 功能集成 {#feature-integration}
 
@@ -324,11 +324,11 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 示例：指定自动保存时间间隔 {#example-specifying-the-auto-save-interval}
 
-此 [自动保存间隔](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#save-close-and-versions) （以秒为单位）可以使用配置管理器(ConfMgr)定义：
+此 [自动保存间隔](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) （以秒为单位）可以使用配置管理器(ConfMgr)定义：
 
 * 节点： `<conf-root>/settings/dam/cfm/jcr:content`
 * 属性名称: `autoSaveInterval`
-* 类型: `Long`
+* 类型：`Long`
 
 * 默认： `600` （10分钟）；此时间定义于 `/libs/settings/dam/cfm/jcr:content`
 
@@ -337,7 +337,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 * 节点： `/conf/global/settings/dam/cfm/jcr:content`
 * 属性名称: `autoSaveInterval`
 
-* 类型: `Long`
+* 类型：`Long`
 
 * 值： `300` （5分钟等于300秒）
 

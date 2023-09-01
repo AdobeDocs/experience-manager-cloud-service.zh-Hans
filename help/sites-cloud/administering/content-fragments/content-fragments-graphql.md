@@ -3,15 +3,24 @@ title: 使用带有 GraphQL 的内容片段的 Headless 内容投放
 description: 了解使用 GraphQL 中的内容片段实现 AEM Headless CMS 以进行 headless 内容投放的基本概念。
 feature: Content Fragments, GraphQL API
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 100%
 
 ---
 
 # 使用带有 GraphQL 的内容片段的 Headless 内容投放 {#headless-content-delivery-using-content-fragments-with-graphQL}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 借助内容片段和 GraphQL API，您可以将 Adobe Experience Manager (AEM) as a Cloud Service 用作 Headless 内容管理系统(CMS)。
 

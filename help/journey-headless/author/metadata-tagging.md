@@ -2,10 +2,10 @@
 title: 了解如何为内容片段定义元数据和标记
 description: 了解如何为内容片段定义元数据和标记
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 92%
 
 ---
 
@@ -26,21 +26,9 @@ ht-degree: 100%
 
 ## 添加元数据和标记 {#adding-metadata-and-tags}
 
-可以使用三种方法来添加元数据和标记：
+您可以从内容片段编辑器的右侧面板添加元数据和标记：
 
-* 在首次创建片段（从 **Assets** 控制台）时：
-
-  ![创建内容片段 – 提供名称](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
-
-* 使用内容片段编辑器的&#x200B;**变体**&#x200B;选项卡可以添加您项目中的预定义的&#x200B;**标记**：
-
-  ![内容片段编辑器 – 阿拉斯加烈酒](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
-* 内容片段编辑器的&#x200B;**元数据**&#x200B;选项卡可让您添加元数据的各种字段以及您项目中的预定义的&#x200B;**标记**：
-
-  ![内容片段编辑器 – 元数据](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
-
-   * 也可以使用 Assets 控制台的工具栏中的&#x200B;**属性**&#x200B;选项直接访问它。
+![内容片段编辑器 – 阿拉斯加烈酒](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 后续内容 {#whats-next}
 
@@ -48,8 +36,8 @@ ht-degree: 100%
 
 ## 其他资源 {#additional-resources}
 
-* [元数据 – 片段属性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+* [元数据 – 片段属性](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
 * [使用标记](/help/sites-cloud/authoring/features/tags.md)
 
-* [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

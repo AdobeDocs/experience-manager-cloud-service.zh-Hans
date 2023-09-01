@@ -3,15 +3,25 @@ title: 关联的内容
 description: 了解“内容片段”的关联内容功能如何提供连接，以便可以选择将资源与片段一起使用，从而提升页面创作和无标题内容交付的灵活性。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
-workflow-type: ht
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 100%
 
 ---
 
+
 # 关联的内容{#associated-content}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 AEM 的关联内容功能提供了连接，以便在将片段添加到内容页面时可以选择将资源与片段一起使用，方法是[在页面上使用内容片段时提供要访问的一系列资源，](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)同时还有助于减少搜索适当资源所需的时间。 这还为 headless 内容投放提供了灵活性。
 

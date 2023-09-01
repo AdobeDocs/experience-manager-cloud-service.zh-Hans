@@ -2,16 +2,22 @@
 title: 元数据 — 片段属性（资产 — 内容片段）
 description: 了解如何查看和编辑 内容片段的元数据属性。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 85%
+source-wordcount: '274'
+ht-degree: 69%
 
 ---
 
 # 元数据 – 片段属性 {#metadata-fragment-properties}
 
 了解如何在AEM中查看和编辑内容片段的元数据属性以调整Headless内容。
+
+>[!NOTE]
+>
+>内容片段是站点功能，但存储为 **资产**.
+>
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
 
 ## 编辑属性/元数据 {#editing-properties-meta-data}
 

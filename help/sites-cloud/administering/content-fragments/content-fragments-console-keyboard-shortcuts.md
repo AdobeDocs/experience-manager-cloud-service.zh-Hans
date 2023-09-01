@@ -3,15 +3,24 @@ title: 内容片段控制台的键盘快捷键
 description: AEM 中提供了各种键盘快捷键，包括一些用于管理内容片段的快捷键
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # 内容片段控制台的键盘快捷键 {#keyboard-shortcuts-content-fragments-console}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 可以在内容片段控制台中使用一系列键盘快捷键。
 

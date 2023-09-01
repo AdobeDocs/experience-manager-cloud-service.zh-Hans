@@ -2,8 +2,8 @@
 title: 创建内容片段 – Headless 设置
 description: 了解如何使用 AEM 的内容片段设计、创建、管理和使用独立于页面的内容，用于 Headless 投放。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 100%
 
@@ -51,4 +51,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
->有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/sites-cloud/administering/content-fragments/overview.md)

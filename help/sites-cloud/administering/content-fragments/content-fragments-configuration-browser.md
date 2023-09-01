@@ -3,15 +3,24 @@ title: 内容片段 – 配置浏览器
 description: 了解如何在配置浏览器中启用内容片段和 GraphQL 功能，从而可利用 AEM Headless 交付功能。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
+workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 100%
 
 ---
 
 # 内容片段 – 配置浏览器{#content-fragments-configuration-browser}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 了解如何在配置浏览器中启用特定的内容片段功能。
 

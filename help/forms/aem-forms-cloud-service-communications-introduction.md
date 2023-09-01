@@ -2,14 +2,16 @@
 title: Formsas a Cloud Service通信简介
 description: 自动将数据与 XDP 和 PDF 模板合并，或以 PCL、ZPL 和 PostScript 格式生成输出
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 96%
+source-wordcount: '1475'
+ht-degree: 75%
 
 ---
 
 # AEM Formsas a Cloud Service通信简介 {#frequently-asked-questions}
+
+<span class="preview"> [DocAssurance服务](#doc-assurance) 是预发行功能，可通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 该功能的文档可能会发生更改。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -157,7 +159,35 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
-## 通信 API 的类型
+
+<span class="preview"> 文档保障服务是预发行功能，可通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 该功能的文档可能会发生更改。</span>
+
+## 文档保证 {#doc-assurance}
+
+DocAssurance服务包括签名和加密API：
+
+### 签名API
+
+签名API允许贵组织保护其分发和接收的Adobe PDF文档的安全性和隐私。 此服务使用数字签名和认证，确保只有目标收件人才能更改文档。 因为安全功能应用于文档本身，所以文档在整个生命周期中保持安全和受控制。 在防火墙之外，当文档离线下载以及提交回组织时，文档将保持安全。 您可以使用签名API完成以下任务：
+
+* 向PDF文档添加签名字段。
+* 在PDF文档中签署指定的签名字段。
+* 认证PDF文档
+
+### 加密API
+
+加密API允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问权限。 如果使用密码对PDF文档进行加密，则必须先指定打开密码，然后才能在Adobe Reader或Adobe Acrobat中查看文档。 同样，如果PDF文档使用证书加密，则用户必须使用与用于加密PDF文档的证书（私钥）对应的公钥对PDF文档进行解密。
+
+您可以使用加密API完成以下任务：
+
+* 使用密码加密PDF文档。
+* 从PDF文档中删除基于密码的加密。
+* 检索应用于PDF文档的安全类型。
+
+签名API和加密API都是 [同步API](#types-of-communications-apis-types).
+
+
+## 通信 API 的类型 {#types}
 
 通信功能提供用于按需和批量文档生成的 HTTP API：
 

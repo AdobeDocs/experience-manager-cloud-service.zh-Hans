@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service日志记录
 description: 了解如何使用AEMas a Cloud Service日志记录功能配置中央日志记录服务的全局参数、各个服务的特定设置以及如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 2fcc33cfb8b0be89b4b9f91d687dc21ba456000c
+source-git-commit: 7d4e1acee54ebcb1398bcc6ab83491e3fa6a8801
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2669'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ AEMas a Cloud Service日志记录和日志级别在配置文件中进行管理�
 
 * AEM日志记录，在AEM应用程序级别执行日志记录
 * Apache HTTPD Web服务器/Dispatcher日志记录，用于在发布层上执行Web服务器和Dispatcher的日志记录。
-* CDN日志记录（如其名称所示）在CDN上执行日志记录。 此功能目前可供早期采用者使用；要加入早期采用者计划，请发送电子邮件至 **aemcs-cdnlogs-adopter@adobe.com**，包括贵组织的名称以及有关您对该功能感兴趣的上下文。
+* CDN日志记录（如其名称所示）在CDN上执行日志记录。 此功能将在9月初逐步向客户推出。
 
 ## AEM日志记录 {#aem-logging}
 
@@ -504,10 +504,12 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->此功能尚未普遍可用。要加入正在进行的早期采用者计划，请发送电子邮件至 **aemcs-cdnlogs-adopter@adobe.com**，包括贵组织的名称以及有关您对该功能感兴趣的上下文。
+>此功能将在9月初逐步向客户推出。
 >
 
 AEMas a Cloud Service提供对CDN日志的访问，这些日志对于包括缓存命中率优化在内的用例非常有用。 无法自定义CDN日志格式，并且没有将其设置为不同模式（例如“信息”、“警告”或“错误”）的概念。
+
+请注意，Splunk转发功能尚不支持CDN日志。
 
 **示例**
 
@@ -600,6 +602,8 @@ Apache层日志（包括Dispatcher）位于保存Dispatcher的Docker容器中。
 拥有Splunk帐户的客户可以通过客户支持票证请求将其AEM Cloud Service日志转发到相应的索引。 日志记录数据等同于通过Cloud Manager日志下载提供的数据，但客户可能会发现使用Splunk产品中提供的查询功能更方便。
 
 与发送到Splunk的日志关联的网络带宽被视为客户网络I/O使用的一部分。
+
+请注意，Splunk转发尚不支持CDN日志。
 
 ### 启用Splunk转发 {#enabling-splunk-forwarding}
 

@@ -2,20 +2,31 @@
 title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1222'
-ht-degree: 100%
+source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
+workflow-type: tm+mt
+source-wordcount: '1286'
+ht-degree: 95%
 
 ---
 
 # 内容片段 {#content-fragments}
 
-Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为独立于页面的资源创建和管理的](/help/sites-cloud/administering/content-fragments/content-fragments.md)。
+Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为独立于页面的资源创建和管理的](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 这允许您创建渠道中性内容，以及各种（特定于渠道的）变体。您随后可以在创作内容页面时使用这些片段及其变体。
 
 结构化内容片段与更新的 JSON 导出程序结合使用时，还可用于通过 Content Services 将 AEM 内容传送到 AEM 页面以外的渠道。
+
+>[!NOTE]
+>
+>内容片段是 **站点** 功能，但存储为 **资产**.
+>
+>现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 控制台，但是仍然可以从以下位置管理它们 **[资产](/help/assets/content-fragments/content-fragments-managing.md)** 控制台。
+>
+>创作内容片段有两个编辑器：
+>
+>* 的新编辑器 [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，主要通过访问 **内容片段** 控制台。
+>* 此 [原始编辑器](/help/assets/content-fragments/content-fragments-variations.md) 主要通过 **资产** 控制台。
 
 >[!NOTE]
 >
@@ -29,7 +40,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 >[!CAUTION]
 >
->本页必须结合[使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)（及相关页面）一起阅读，因为它不仅介绍了基本术语和概念，还介绍了如何创建和管理片段。
+>本页必须结合[使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md)（及相关页面）一起阅读，因为它不仅介绍了基本术语和概念，还介绍了如何创建和管理片段。
 
 内容片段允许：
 
@@ -105,7 +116,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 ### 到片段编辑器的快速连接 {#quick-connection-to-fragment-editor}
 
-您可以打开片段源，以使用组件工具栏中的&#x200B;**编辑**&#x200B;图标编辑（资源）。这将允许您[编辑和管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)。
+您可以打开片段源，以使用组件工具栏中的&#x200B;**编辑**&#x200B;图标编辑（资源）。这将允许您[编辑和管理内容片段](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 >[!CAUTION]
 >
@@ -115,7 +126,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 当指定的内容片段被添加到页面时，在片段的每个 HTML 段落之间（和顶部/底部）会有一个&#x200B;**将组件拖动到此处**&#x200B;占位符。
 
-这使您在片段内容[中间](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的任何可用位置添加额外内容（即中间内容），而无需更改根片段。
+这使您在片段内容[中间](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的任何可用位置添加额外内容（即中间内容），而无需更改根片段。
 
 对于中间内容，您可以：
 
@@ -131,9 +142,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 >[!NOTE]
 >
->您还可以[在片段本身中插入可视资源（图像）](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
+>您还可以[在片段本身中插入可视资源（图像）](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
 >
->在片段本身中插入的可视资源会附加到片段中的前一段落后面。这意味着无法在可视资源与前一段落之间放置中间内容。如果需要达到此关联程度，可以将图像添加到片段（形成[混合媒体片段](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)）。
+>在片段本身中插入的可视资源会附加到片段中的前一段落后面。这意味着无法在可视资源与前一段落之间放置中间内容。如果需要达到此关联程度，可以将图像添加到片段（形成[混合媒体片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)）。
 
 >[!CAUTION]
 >
@@ -148,11 +159,11 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 ### 使用关联内容 {#using-associated-content}
 
-如果您有与[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)[关联的内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)，则这些资源在侧面板（在将片段放置到内容页面后）中可用。关联内容实际上是[中间内容](/help/sites-cloud/administering/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
+如果您有与[内容片段](/help/assets/content-fragments/content-fragments.md)[关联的内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)，则这些资源在侧面板（在将片段放置到内容页面后）中可用。关联内容实际上是[中间内容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊内容源。
 
 >[!NOTE]
 >
->可以通过多种方法向片段和/或页面中添加[可视资源（例如图像）](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)。
+>可以通过多种方法向片段和/或页面中添加[可视资源（例如图像）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)。
 
 >[!NOTE]
 >
@@ -166,7 +177,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 ### 插入到片段中的资源 {#assets-inserted-into-the-fragment}
 
-如果已在片段本身中插入资源（例如，图像）形成[混合媒体片段](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)，则页面编辑器中用于编辑这些资源的选项会受到限制。
+如果已在片段本身中插入资源（例如，图像）形成[混合媒体片段](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)，则页面编辑器中用于编辑这些资源的选项会受到限制。
 
 例如，您可以对图像执行以下操作
 
@@ -181,7 +192,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 片段需要发布，才能在您已发布的网页中使用。
 
-* [在内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)中创建片段后，可以发布片段。
+* [在内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)中创建片段后，可以发布片段。
 * 如果在当前发布的页面中使用了&#x200B;*未发布的片段*，那么也可以在这一时候发布该片段。
 
 ## 导出内容片段 {#exporting-content-fragments}

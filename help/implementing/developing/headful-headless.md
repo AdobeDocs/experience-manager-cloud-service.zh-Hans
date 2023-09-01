@@ -2,8 +2,8 @@
 title: AEM 中的 Headful 和 Headless
 description: AEM 项目可以在 Headful 和 Headless 模型中实施，但这不是一个二选一的选择。利用 AEM，可以在一个项目中灵活地运用这两种模型的优势。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 100%
 
@@ -53,18 +53,18 @@ SPA 集成归入 AEM 中包含四个级别的系列中。
    * SPA 和 AEM 单独存在，并且不交换任何信息。
    * 在两个独立的系统中单独创建、管理和交付内容。
 * **级别 1：内容片段集成**
-   * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)在 AEM 中用于创建和管理 SPA 的有限内容。
+   * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)在 AEM 中用于创建和管理 SPA 的有限内容。
    * SPA 通过 AEM 的 [GraphQL API](/help/headless/graphql-api/content-fragments.md) 检索此内容。
    * 在 AEM 中管理一些内容，在外部系统中管理另一些内容。
    * 只能在 SPA 中查看内容。
 * **级别 2：将 SPA 嵌入 AEM**
-   * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)在 AEM 中用于创建和管理 SPA 的内容。
+   * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)在 AEM 中用于创建和管理 SPA 的内容。
    * SPA 通过 AEM 的 [GraphQL API](/help/headless/graphql-api/content-fragments.md) 检索此内容。
    * 在 AEM 中管理一些内容，在外部系统中管理另一些内容。
    * 可在 AEM 中的上下文中查看内容。
    * 可在 AEM 中编辑有限内容。
 * **级别 3：在 AEM 中嵌入并完全启用 SPA**
-   * [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)在 AEM 中用于创建和管理 SPA 的内容。
+   * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)在 AEM 中用于创建和管理 SPA 的内容。
    * SPA 通过 AEM 的 [GraphQL API](/help/headless/graphql-api/content-fragments.md) 检索此内容。
    * 可在 AEM 中的上下文中查看内容。
    * 可在 AEM 中编辑大多数内容。

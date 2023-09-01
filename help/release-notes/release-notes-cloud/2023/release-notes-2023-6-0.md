@@ -1,8 +1,8 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.6.0 版的发行说明。'
-source-git-commit: 2d10d03e478bff5a162c620c41ceac38a6d7911a
-workflow-type: ht
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites] 中的新增功能 {#sites-features}
 
-* 内容片段及其引用现在可以使用[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)发布到 [AEM 预览服务](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)，允许用户在上线前在解耦的预览应用程序上预览最终体验。
+* 内容片段及其引用现在可以使用[内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)发布到 [AEM 预览服务](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)，允许用户在上线前在解耦的预览应用程序上预览最终体验。
 
 ![在内容片段控制台中预览](/help/assets/content-fragments-console-preview.png)
 

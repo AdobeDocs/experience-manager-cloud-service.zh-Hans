@@ -3,8 +3,11 @@ title: 使用内容片段
 description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和 headless 投放。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '2122'
 ht-degree: 100%
@@ -12,6 +15,12 @@ ht-degree: 100%
 ---
 
 # 使用内容片段 {#working-with-content-fragments}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 利用 Adobe Experience Manager (AEM) as a Cloud Service，内容片段允许您设计、创建、策划和[发布独立于页面的内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)，利用这些功能，可准备内容以准备在多个位置/多个渠道上使用，非常适合于页面创作和 headless 投放。
 

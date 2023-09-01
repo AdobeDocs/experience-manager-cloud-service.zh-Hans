@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 75%
@@ -11,7 +11,7 @@ ht-degree: 75%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明 {#release-notes}
 
-以下部分概述了2022.5.0版本的的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了2022.5.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ ht-degree: 75%
 ### [!DNL Sites] 预发行渠道中提供的新功能 {#prerelease-features-sites}
 
 * 各种 GraphQL 功能
-* [新控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)针对内容片段的 Headless 使用进行了优化
+* [新控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)针对内容片段的 Headless 使用进行了优化
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -45,11 +45,11 @@ ht-degree: 75%
 
 * [Dynamic Media 智能图像](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f)现在支持 AVIF 文件格式 – 进一步改进 Google Core Web Vital（最大内容绘制），与 WebP 相比，AVIF 提供了 20% 的额外尺寸缩减。 与 JPEG 相比，AVIF 的平均大小缩减率高达 41%（在某些图像中甚至高达 76%）。
 
-* [!UICONTROL Experience Manager Assets Brand Portal] 现在每12小时执行一次自动作业，以删除发布到AEM的所有Brand Portal资源。 因此，您无需手动删除“贡献”文件夹中的资产，即可将文件夹大小保持在阈值限制以下。 请参阅 [Experience Manager Assets·Brand Portal 的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
+* [!UICONTROL Experience Manager Assets Brand Portal] 现在，每12小时执行一次自动作业，以删除发布到AEM的所有Brand Portal资源。 因此，您无需手动删除“贡献”文件夹中的资产，即可将文件夹大小保持在阈值限制以下。 请参阅 [Experience Manager Assets·Brand Portal 的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
 ### [!DNL Assets] 预发行渠道中提供的新功能 {#prerelease-features-assets}
 
-Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用](/help/assets/color-tag-images.md)。 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记到图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。
+Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的颜色，并在摄取时自动将这些颜色作为标记应用](/help/assets/color-tag-images.md)。 这些标记可根据图像颜色组合来增强搜索体验。 您可以配置标记为图像的颜色数量（在1到40之间），以便以后可以根据这些颜色搜索图像。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -85,7 +85,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 ### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}
 
-* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 参见 [Unified Shell上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 了解更多详细信息。
+* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础安全性 {#foundation-security}
 

@@ -2,10 +2,10 @@
 title: 首次 AEM Headless 使用体验的路径
 description: 在 AEM Headless 开发人员历程的这一部分中，您将了解在 AEM 中实施您的第一个 Headless 体验（包括规划注意事项）的步骤，并了解最佳实践以让您的历程尽可能顺畅。
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '2012'
-ht-degree: 100%
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+workflow-type: tm+mt
+source-wordcount: '1991'
+ht-degree: 98%
 
 ---
 
@@ -110,8 +110,8 @@ Headless 项目之所以能够获得成功，既要归功于实施的技术，�
 
 ### 创作内容 {#authoring}
 
-* 对于内容的渠道特定版本，请考虑使用内容片段变体。变体针对内容母版进行同步，以简化内容更改管理。
-* 邀请其他内容制作者审查内容并提供带注释和评论的反馈，它们在内容片段编辑器中可用，并且可以在内容片段 Admin Console 中跨片段全局使用。
+* 对于内容的渠道特定版本，请考虑使用内容片段变体。变体会与主内容同步，以简化内容更改管理。
+* 邀请其他内容制作者审查内容并提供反馈。
 * 使用尽可能少的强制性元素来继续操作。强制性元素会阻止工作流。
 
 ### 创作全局内容 {#localization}
@@ -149,6 +149,6 @@ Headless 项目之所以能够获得成功，既要归功于实施的技术，�
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – 此 GitHub 项目包含突出显示 AEM 的 GraphQL API 的示例应用程序。
 * [Adobe Experience Manager as a Cloud Service 的架构简介](/help/overview/architecture.md) – AEM 架构的全面概述
 * [Headless 设置](/help/headless/introduction.md#getting-started) – 为已了解 AEM 的用户简要介绍 AEM 的 Headless 功能。
-* [创建内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – 有关内容片段模型的技术文档
-* [创建内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) – 有关内容片段的技术文档
+* [创建内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – 有关内容片段模型的技术文档
+* [创建内容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) – 有关内容片段的技术文档
 * [使用 GraphQL 查询内容](/help/headless/graphql-api/content-fragments.md) – 关于 GraphQL API 的技术文档

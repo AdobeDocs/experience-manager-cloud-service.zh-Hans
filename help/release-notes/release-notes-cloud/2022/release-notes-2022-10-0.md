@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 80%
@@ -39,7 +39,7 @@ ht-degree: 80%
 
 * 此 [体验片段的个性化选项卡](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 允许体验片段编辑器进行分段详述，并灵活创建嵌套体验片段，从而可以为多个片段创建页眉和页脚变化。 在此功能推出之前，AEM 提供的个性化仅适用于网站页面，不适用于体验片段。
 
-* [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在使用户能够有效地管理翻译的内容片段。 还提供一键访问以查看所有语言副本。用户还可按其感兴趣的区域设置筛选表格视图。
+* [内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)现在使用户能够有效地管理翻译的内容片段。 还提供一键访问以查看所有语言副本。用户还可按其感兴趣的区域设置筛选表格视图。
 
 ![内容片段语言](/help/release-notes/assets/cfconsole-languages.png)
 

@@ -6,10 +6,10 @@ keywords: 添加自定义错误处理程序、添加默认错误处理程序、�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: a635a727e431a73086a860249e4f42d297882298
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 5%
+source-wordcount: '2428'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ AEM Forms为表单提交提供现成的成功和错误处理程序。 它还提�
 
 自适应表单根据预设验证条件验证您在字段中提供的输入，并检查配置为调用外部服务的REST端点返回的各种错误。 您可以根据在自适应表单中使用的数据源设置验证条件。 例如，如果使用RESTful Web服务作为数据源，则可以在Swagger定义文件中定义验证条件。
 
-如果输入值满足验证条件，则这些值将提交给数据源，否则，自适应表单将使用错误处理程序显示错误消息。 与此方法类似，自适应Forms与自定义错误处理程序集成以执行数据验证。 如果输入值不符合验证条件，则错误消息将在自适应表单中的字段级别显示。 当服务器返回的验证错误消息采用标准消息格式时，会发生这种情况。
+如果输入值满足验证条件，则这些值将提交给数据源，否则，自适应表单将使用错误处理程序显示错误消息。 与这种方法类似，自适应Forms集成了自定义错误处理程序以执行数据验证。 如果输入值不符合验证条件，则错误消息将在自适应表单中的字段级别显示。 当服务器返回的验证错误消息采用标准消息格式时，会发生这种情况。
 
 
 ## 错误处理程序的使用 {#uses-of-error-handler}
@@ -175,49 +175,47 @@ AEM Forms为表单提交提供现成的成功和错误处理程序。 它还提�
 
 ## 使用规则编辑器添加错误处理程序 {#add-error-handler-using-rule-editor}
 
-使用 [规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 操作，您可以根据在自适应表单中使用的数据源定义验证条件。 如果将RESTful Web服务用作数据源，则可以在Swagger定义文件中定义验证条件。 利用自适应Forms中的错误处理程序函数和规则编辑器，您可以有效地管理和自定义错误处理。 您可以使用规则编辑器定义条件，并配置要在触发规则时执行的所需操作。 自适应表单根据预设验证条件验证您在字段中输入的输入。 如果输入值不符合验证条件，则会在自适应表单的字段级别显示错误消息。
+使用 [规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 操作，您可以根据在自适应表单中使用的数据源定义验证条件。 如果将RESTful Web服务用作数据源，则可以在Swagger定义文件中定义验证条件。 通过使用Adaptive Forms中的错误处理程序函数和规则编辑器，您可以有效地管理和自定义错误处理。 您可以使用规则编辑器定义条件，并配置要在触发规则时执行的所需操作。 自适应表单根据预设验证条件验证您在字段中输入的输入。 如果输入值不符合验证条件，则会在自适应表单的字段级别显示错误消息。
 
 >[!NOTE]
 >
 > * 要将错误处理程序与规则编辑器的调用服务操作结合使用，请使用表单数据模型配置自适应Forms 。
-> * 默认情况下，如果错误响应位于标准架构中，则会提供默认错误处理程序，以在字段上显示错误消息。 如果错误响应不符合标准架构，则默认错误处理程序也可以调用自定义错误处理程序。
+> * 如果错误响应位于标准架构中，则提供默认错误处理程序以在字段上显示错误消息。 您还可以从自定义错误处理程序函数中调用默认错误处理程序。
 
-<!-- 
-Using Rule Editor, you can:
-* [Add default error handler function](#add-default-errror-handler)
-* [Add custom error handler function](#add-custom-errror-handler)
+使用规则编辑器，您可以：
+* [添加默认错误处理程序函数](#add-default-errror-handler)
+* [添加自定义错误处理程序函数](#add-custom-errror-handler)
 
 
-### Add default error handler function {#add-default-errror-handler}
+### 添加默认错误处理程序函数 {#add-default-errror-handler}
 
-A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
-To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take an example of a simple Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a default error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
+如果错误响应位于标准架构中或服务器端验证失败，则支持使用默认错误处理程序在字段上显示错误消息。
+了解如何使用默认错误处理程序，请参见 [规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 操作，以带有两个字段的简单自适应表单为例， **宠物Id** 和 **宠物名称** 并在以下位置使用默认错误处理程序 **宠物Id** 用于检查配置为调用外部服务的REST端点返回的各种错误的字段，例如， `200 - OK`，`404 - Not Found`， `400 - Bad Request`. 要使用规则编辑器的“调用服务”操作添加默认错误处理程序，请执行以下步骤：
 
-1. Open an Adaptive Form in authoring mode, select a form component and tap **[!UICONTROL Rule Editor]** to open the rule editor.
-1. Tap **[!UICONTROL Create]**.
-1. Create a condition in the **When** section of the rule. For example, **When[Name of Pet ID field]** is changed. Select is changed from the **Select State** drop-down list.
-1. In the **Then** section, select **[!UICONTROL Invoke Service]** from the **Select Action** drop-down list.
-1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Default Error Handler]** from the **Error Handler** section. 
-1. Click **[!UICONTROL Done]**.
+1. 在创作模式下打开自适应表单，选择表单组件并点按 **[!UICONTROL 规则编辑器]** 以打开规则编辑器。
+1. 点按&#x200B;**[!UICONTROL 创建]**。
+1. 在中创建条件 **时间** 部分。 例如， **时间[宠物ID字段的名称]** 已更改。 Select已从 **选择状态** 下拉列表。
+1. 在 **则** 部分，选择 **[!UICONTROL 调用服务]** 从 **选择操作** 下拉列表。
+1. 选择 **发布服务** 及其相应的数据绑定 **输入** 部分。 例如，验证 **宠物Id**，选择一个 **发布服务** 作为 **GET/pet/{petId}** 并选择 **宠物Id** 在 **输入** 部分。
+1. 从中选择数据绑定 **输出** 部分。 选择 **宠物名称** 在 **输出** 部分。
+1. 选择 **[!UICONTROL 默认错误处理程序]** 从 **错误处理程序** 部分。
+1. 单击&#x200B;**[!UICONTROL 完成]**。
 
- ![add a default error handler for a field validation checks in a form](/help/forms/assets/default-error-handler.png)
+![在表单中为字段验证检查添加默认错误处理程序](/help/forms/assets/default-error-handler.png)
 
-As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name** using external service invoked by REST endpoint. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
+作为此规则的结果，您输入的值 **宠物Id** 检查验证 **宠物名称** 使用REST端点调用的外部服务。 如果基于数据源的验证标准失败，则错误消息将在字段级别显示。
 
- ![display the default error message when you add a default error handler in a form to handle error responses](/help/forms/assets/default-error-message.png)
-
--->
+![在表单中添加默认错误处理程序以处理错误响应时，显示默认错误消息](/help/forms/assets/default-error-message.png)
 
 ### 添加自定义错误处理程序函数 {#add-custom-errror-handler}
 
 您可以添加自定义错误处理程序函数以执行某些操作，例如：
+
 * 处理使用非标准或标准错误响应的错误响应。 请务必注意，这些非标准错误响应不符合 [错误响应的标准架构](#failure-response-format).
 * 将analytics事件发送到任何analytics平台。 例如，Adobe Analytics.
 * 显示带有错误消息的模式对话框。
 
-除了上述操作之外，还可使用自定义错误处理程序来执行符合特定用户要求的自定义函数。
+除了上述操作之外，还可以使用自定义错误处理程序来执行符合特定用户要求的自定义函数。
 
 自定义错误处理程序是一个函数（客户端库），旨在响应外部服务返回的错误，并向最终用户提供自定义响应。 任何带注释的客户端库 `@errorHandler` 被视为自定义错误处理程序函数。 此注释有助于识别 `.js` 文件。
 要了解如何使用创建和使用自定义错误处理程序，请执行以下操作 [规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 操作，我们以带有两个字段的自适应表单为例， **宠物Id** 和 **宠物名称** 并在中使用自定义错误处理程序 **宠物Id** 用于检查配置为调用外部服务的REST端点返回的各种错误的字段，例如， `200 - OK`，`404 - Not Found`， `400 - Bad Request`.
@@ -229,8 +227,10 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 #### 1.创建自定义错误处理程序 {#create-custom-error-message}
 
 要创建自定义错误函数，请执行以下步骤：
-1. [克隆您的 AEM Forms as a Cloud Service 存储库.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/`。
+
+1. [克隆您的 AEM Forms as a Cloud Service 存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+1. 在下创建文件夹 `[AEM Forms as a Cloud Service repository folder]/apps/` 文件夹。 例如，创建一个名为的文件夹 `experience-league`
+1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 并创建 `ClientLibraryFolder` 作为 `clientlibs`.
 1. 创建名为的文件夹 `js`.
 1. 导航至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 文件夹。
 1. 添加JavaScript文件，例如 `function.js`. 文件包含自定义错误处理程序的代码。
@@ -247,12 +247,22 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
+           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
            console.log("Custom Error Handler processing end...");
        }
    ```
 
-   <!--  To call the default error handler after the custom error handler, the following line of the sample code is used:
-        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `-->
+   要从自定义错误处理程序中调用默认错误处理程序，请使用下面一行示例代码：
+   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+
+   >[!NOTE]
+   >
+   > 在 `.content.xml` 文件，添加 `allowProxy` 和 `categories` 属性。
+   >
+   > * `allowProxy = [Boolean]true`
+   > * `categories= customfunctionsdemo`
+   >例如，在这种情况下， [custom-errorhandler-name] 提供为 `customfunctionsdemo`.
+
 1. 保存 `function.js` 文件。
 1. 导航至 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 文件夹。
 1. 添加文本文件为 `js.txt`. 该文件包含：
@@ -262,7 +272,10 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
        functions.js
    ```
 
-1. 保存 `js.txt` 文件。
+1. 保存 `js.txt` 文件。\
+   创建的文件夹结构如下所示：
+
+   ![已创建客户端库文件夹结构](/help/forms/assets/customclientlibrary_folderstructure.png)
 
    >[!NOTE]
    >
@@ -276,11 +289,17 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
        git push
    ```
 
-1. [运行管道.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
+1. [运行管道.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 成功执行管道后，自定义错误处理程序将在自适应表单规则编辑器中可用。 现在，让我们了解如何在AEM Forms中使用规则编辑器的调用服务配置和使用自定义错误处理程序。
 
 #### 2.使用规则编辑器配置自定义错误处理程序 {#use-custom-error-handler}
+
+在自适应表单中实施自定义错误处理程序之前，请确保客户端库名称位于 **[!UICONTROL 客户端库类别]** 与的类别选项中指定的名称对齐 `.content.xml` 文件。
+
+![在自适应表单容器配置中添加客户端库的名称](/help/forms/assets/client-library-category-name.png)
+
+在本例中，客户端库名称提供为 `customfunctionsdemo` 在 `.content.xml` 文件。
 
 使用自定义错误处理程序 **[!UICONTROL 规则编辑器的调用服务]** 操作：
 
@@ -295,9 +314,7 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 
 ![在表单中添加自定义错误处理程序以处理错误响应](/help/forms/assets/custom-error-handler.png)
 
-
 作为此规则的结果，您输入的值 **宠物Id** 检查验证 **宠物名称** 使用REST端点调用的外部服务。 如果基于数据源的验证标准失败，则错误消息将在字段级别显示。
-
 
 ![在表单中添加自定义错误处理程序以处理错误响应](/help/forms/assets/custom-error-handler-message.png)
 

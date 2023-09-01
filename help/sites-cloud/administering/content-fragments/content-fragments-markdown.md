@@ -3,8 +3,11 @@ title: Markdown
 description: 了解内容片段编辑器如何使用 Markdown 语法，轻松地为页面创作和无头投放创建内容。
 feature: Content Fragments
 role: User
+hide: true
+index: false
+hidefromtoc: true
 exl-id: 4e9b076e-7429-466b-bb53-2164da379650
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 100%
@@ -12,6 +15,12 @@ ht-degree: 100%
 ---
 
 # Markdown {#markdown}
+
+<!--
+hide: yes
+index: no
+hidefromtoc: yes
+-->
 
 当您[创作](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content)时，内容片段编辑器会使用 *Markdown* 语法，使您能够轻松编写用于页面创作和 headless 投放的内容：
 

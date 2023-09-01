@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+workflow-type: tm+mt
 source-wordcount: '3080'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 #### 内容作者 {#content-author}
 
-内容作者创建和管理 AEM 以 Headless 方式交付的内容。内容作者使用内容片段和 Assets 控制台等 AEM 功能来管理其内容。
+内容作者创建和管理 AEM 以 Headless 方式交付的内容。内容作者使用AEM功能（如内容片段编辑器和各种控制台）来管理其内容。
 
 内容作者应牢记以下最佳实践。
 
@@ -289,8 +289,8 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * [命名惯例](/help/implementing/developing/introduction/naming-conventions.md) – 有关 AEM 中的页面命名限制的技术文档
 * [多站点管理器和翻译](/help/sites-cloud/administering/msm-and-translation.md) – 有关 AEM 的强大翻译功能的技术文档
 * [AEM 工作流](/help/sites-cloud/authoring/workflows/overview.md) – 有关如何在 AEM 中自动实施工作流的技术文档
-* [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) – 有关内容片段的技术文档。
-* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – 有关内容片段模型的技术文档。
+* [内容片段](/help/sites-cloud/administering/content-fragments/overview.md) – 有关内容片段的技术文档。
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – 有关内容片段模型的技术文档。
 * [GraphQL 技术文档](https://graphql.org) – GraphQL 定义（外部链接）
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) – 说明如何创建请求来访问和交付内容片段的技术文档
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) – 说明如何创建和修改内容片段（及其他资源）的技术文档

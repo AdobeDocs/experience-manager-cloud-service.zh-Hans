@@ -2,7 +2,7 @@
 title: 内容服务的 JSON 导出器
 description: AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，而不只是关注网页。它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 31%
@@ -21,7 +21,7 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 
 对于使用结构化内容的内容片段，您可以通过使用JSON导出程序以JSON数据模型格式交付AEM页面的内容来提供内容服务。 然后，这可以由您自己的应用程序使用。
 
-## 包含内容片段核心组件的JSON导出程序 {#json-exporter-with-content-fragment-core-components}
+## 包含内容片段核心组件的JSON导出器 {#json-exporter-with-content-fragment-core-components}
 
 使用AEM JSON导出程序，您可以以JSON数据模型格式交付AEM页面的内容。 然后，这可以由您自己的应用程序使用。
 
@@ -35,7 +35,7 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks.model.json
    ```
 
-1. 将投放内容，例如：
+1. 将投放如下内容：
 
    ![WKND内容的JSON模型](assets/json-model-wknd.png)
 
@@ -45,25 +45,25 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
-您的页面可以包含单个内容片段或多个各种类型的组件。 您还可以使用列表组件等机制来自动搜索相关内容。
+您的页面可以包含单个内容片段，也可以包含多种类型的多个组件。 您还可以使用列表组件等机制来自动搜索相关内容。
 
 * 例如，URL，例如：
 
-   ```shell
-   http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
+  ```
 
-* 将投放内容，例如：
+* 将投放如下内容：
 
-   ![WKND内容片段的JSON模型](assets/json-model-wknd-content-fragment.png)
+  ![WKND内容片段的JSON模型](assets/json-model-wknd-content-fragment.png)
 
-   >[!NOTE]
-   >
-   >您可以 [调整您自己的组件](enabling-json-exporter.md) 以访问和使用此数据。
+  >[!NOTE]
+  >
+  >您可以 [调整您自己的组件](enabling-json-exporter.md) 以访问和使用此数据。
 
-   >[!NOTE]
-   >
-   >虽然不是标准实施， [支持多个选择器，](enabling-json-exporter.md#multiple-selectors) 但是 `model` 必须是第一个。
+  >[!NOTE]
+  >
+  >虽然不是标准实施， [支持多个选择器，](enabling-json-exporter.md#multiple-selectors) 但是 `model` 必须是第一个。
 
 ### 更多信息 {#further-information}
 
@@ -80,7 +80,7 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 
 有关更多详细信息，请参阅：
 
-* [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 和 [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 069103e7a82123bff28b4aa6e9d718c12e8496e3
+source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5532'
 ht-degree: 6%
 
 ---
@@ -137,6 +137,20 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *视频：了解搜索结果的排名方式以及排名会受到何种影响。*
+
+## 配置资源批次大小以显示搜索结果 {#configure-asset-batch-size}
+
+管理员现在可以配置在执行搜索时显示的资产的批量大小。 当您进一步向下滚动以加载结果时，资源搜索结果将以配置的批次大小数字的倍数显示。 您可以从可用批量大小的200、500和1000项资源中进行选择。 设置较小的批次大小数字可加快搜索响应时间。
+
+例如，如果将结果计数限制设置为200个资源的批次大小，则当您开始执行搜索时，Experience Manager Assets会在搜索结果中显示一个包含200个资源的批次大小。 当您向下滚动以浏览搜索结果时，将显示下一批200个资源。 该过程会一直持续到显示与搜索查询匹配的所有资产为止。
+
+要配置资源批次大小，请执行以下操作：
+
+1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 资源配置]** > **[!UICONTROL Assets Omnisearch配置]**.
+
+1. 选择结果计数限制并单击 **[!UICONTROL 保存]**.
+
+   ![资产批次大小配置](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## 高级搜索 {#scope}
 

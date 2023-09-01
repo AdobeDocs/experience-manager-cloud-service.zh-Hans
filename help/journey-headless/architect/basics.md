@@ -2,8 +2,8 @@
 title: 学习内容建模基础知识
 description: 学习使用内容片段为 Headless CMS 的内容建模的基础知识。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 100%
 
@@ -149,12 +149,12 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 
 ## 其他资源 {#additional-resources}
 
-* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+* [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
-   * [内容片段模型 – 数据类型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
+   * [内容片段模型 – 数据类型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
 * [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 此页面主要基于&#x200B;**站点**&#x200B;控制台，但许多/大多数功能也用于在 **Assets** 控制台下创作&#x200B;**内容片段**。
 
-* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md)

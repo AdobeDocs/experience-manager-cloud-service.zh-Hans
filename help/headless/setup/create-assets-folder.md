@@ -2,8 +2,8 @@
 title: 创建资源文件夹 – Headless 设置
 description: 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
-workflow-type: ht
+source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 100%
 
@@ -53,4 +53,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
->有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+>有关管理内容片段的完整详细信息，请参阅[内容片段文档](/help/sites-cloud/administering/content-fragments/overview.md)

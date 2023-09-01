@@ -3,7 +3,7 @@ title: Headless 内容的权限注意事项
 description: 了解使用 Adobe Experience Manager 的 Headless 实施的不同权限和 ACL 注意事项。了解创作环境和发布环境所需的不同角色和潜在权限级别。
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 526520a8d9d217d0861a7283b10f7b89dffaf9d5
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 100%
@@ -54,7 +54,7 @@ Author 服务是内部用户创建、管理和发布内容的地方。权限以�
 
 有关更细粒度的权限，请使用 AEM 中的&#x200B;**权限**&#x200B;控制台，并将路径从 `/content/dam` 更新为更具体的路径，即 `/content/dam/mycontentfragments`。
 
-可能最好向此组提供用户创建和编辑内容片段的权限，但不提供删除权限。要查看和分配编辑的权限而不分配删除权限，请参阅[内容片段 - 删除注意事项](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)。
+可能最好向此组提供用户创建和编辑内容片段的权限，但不提供删除权限。要查看和分配编辑的权限而不分配删除权限，请参阅[内容片段 - 删除注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)。
 
 ### 模型编辑器
 

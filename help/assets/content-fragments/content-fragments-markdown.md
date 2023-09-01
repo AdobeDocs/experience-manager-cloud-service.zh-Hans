@@ -4,16 +4,22 @@ description: 了解内容片段编辑器如何使用Markdown语法，轻松地�
 feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
+source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 92%
+source-wordcount: '576'
+ht-degree: 83%
 
 ---
 
 # Markdown {#markdown}
 
-当您 [创作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，内容片段编辑器使用 *Markdown* 语法让您能够轻松编写Headless内容：
+当您 [创作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，内容片段编辑器使用 *Markdown* 语法以便于编写Headless内容：
+
+>[!NOTE]
+>
+>内容片段是站点功能，但存储为 **资产**.
+>
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
 
 ![Markdown编辑器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

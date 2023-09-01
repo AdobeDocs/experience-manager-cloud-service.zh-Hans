@@ -1,8 +1,8 @@
 ---
 title: 控制台的键盘快捷键
-description: 使用这些键盘快捷键进行创作时节省时间
+description: 使用这些键盘快捷键进行创作可节省时间
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 69%
@@ -49,13 +49,13 @@ ht-degree: 69%
 
 AEM可避免常用浏览器已使用的常用快捷键，但AEM快捷键不会覆盖默认浏览器行为。
 
-此外，所有区域设置和键盘布局的键盘快捷键是相同的。
+此外，所有区域设置和键盘布局的键盘快捷键均相同。
 
 >[!NOTE]
 >
 >AEM快捷方式不会覆盖默认浏览器行为。
 >
->如果AEM和浏览器快捷方式之间发生冲突，则AEM快捷方式将无法正常运行，从而无法正常使用浏览器。
+>如果AEM和浏览器快捷方式之间发生冲突，AEM快捷方式将无法正常运行，从而导致浏览器无法正常运行。
 
 >[!CAUTION]
 >
@@ -67,7 +67,7 @@ AEM可避免常用浏览器已使用的常用快捷键，但AEM快捷键不会�
 
 AEM 为一些常用功能（编辑、属性、复制/粘贴、显示各种侧边栏菜单等）提供了键盘快捷键。
 
-对于未使用键盘快捷键或有特定辅助功能要求的用户，可以禁用所有键盘快捷键。
+对于不使用键盘快捷键或没有特定辅助功能要求的用户，可以禁用所有键盘快捷键。
 
 您可以在两个位置取消激活键盘快捷键：
 
@@ -84,4 +84,4 @@ AEM 为一些常用功能（编辑、属性、复制/粘贴、显示各种侧边
 
 ## 内容片段控制台的键盘快捷键 {#keyboard-shortcuts-for-the-content-fragments-console}
 
-一些键盘快捷键适用于[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+一些键盘快捷键适用于[内容片段控制台](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)

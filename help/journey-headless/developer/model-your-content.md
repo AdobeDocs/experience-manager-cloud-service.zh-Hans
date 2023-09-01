@@ -2,8 +2,8 @@
 title: 如何为您的内容建模
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用内容建模与内容片段模型和内容片段对 AEM Headless 交付进行内容建模。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 100%
 
@@ -270,10 +270,10 @@ tbc...
 
 ## 其他资源 {#additional-resources}
 
-* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md) – 内容片段的导入页面
-   * [配置浏览器中的内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) – 在配置浏览器中启用内容片段功能
-   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) – 创建和编辑内容片段模型
-   * [管理内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) – 创建和创作内容片段；此页面将您转至其他详细部分
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md) – 内容片段的导入页面
+   * [配置浏览器中的内容片段](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) – 在配置浏览器中启用内容片段功能
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – 创建和编辑内容片段模型
+   * [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md) – 创建和创作内容片段；此页面将您转至其他详细部分
 * [AEM GraphQL 架构](access-your-content.md) – GraphQL 如何实施模型
 * [示例内容片段结构](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [AEM Headless 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) – 一个简短的视频教程系列，概述了如何使用 AEM 的 Headless 功能，包括内容建模和 GraphQL

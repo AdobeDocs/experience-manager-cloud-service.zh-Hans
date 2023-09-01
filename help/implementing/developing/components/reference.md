@@ -2,7 +2,7 @@
 title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
 source-wordcount: '3648'
 ht-degree: 2%
@@ -473,4 +473,4 @@ AEM中有许多现有配置。 您可以使用中的查询工具轻松搜索特�
 
 ![在组件控制台中可见README.md](assets/components-documentation-console.png)
 
-受支持的Markdown与 [内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+受支持的Markdown与 [内容片段](/help/sites-cloud/administering/content-fragments/overview.md).

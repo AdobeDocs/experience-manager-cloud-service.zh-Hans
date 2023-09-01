@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 版的发行说明。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 82%
@@ -11,7 +11,7 @@ ht-degree: 82%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 202278.0 版的发行说明 {#release-notes}
 
-以下部分概述了2022.7.0版本的的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了2022.7.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -37,11 +37,11 @@ ht-degree: 82%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* [内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)现在支持[键盘快捷键](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)。
+* [内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)现在支持[键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)。
 
-* AEM作为Cloud Service的 [Web优化图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 通过提供WebP等格式，大大提高了页面速度。 这项新的服务还提供了更灵活的图像大小调整和转换选项。所有版本的 [核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 允许使用此服务，并通过单击图像组件策略中的选项将图像作为WebP交付。
+* AEM作为Cloud Service [Web优化图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 通过提供WebP等格式，大大提高了页面速度。 这项新的服务还提供了更灵活的图像大小调整和转换选项。所有版本的 [核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 允许使用此服务，并可通过单击图像组件策略中的选项将图像作为WebP交付。
 
-* AEM个性化活动现在可以使用体验片段来代替我们的旧版选件。 该功能：
+* AEM个性化活动现在可以使用体验片段来代替我们的旧功能/服务。 该功能：
    * 启用一个迁移路径，其中 AEM 内容会推广体验片段功能/服务，而不是旧的库功能/服务，以便提供与未来大规模个性化保持一致的具有适当样式的内容。
    * 防止内容作者意外在其网站上提供无样式内容。
    * 允许将任何组件的定位模式转换为使用可编辑模板的体验片段（JSON 和 HTML 类型）。
@@ -80,7 +80,7 @@ ht-degree: 82%
 
 * **[调用 DDX – AEM 工作流步骤](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**：DDX（文档描述 XML）是一种声明性标记语言，其元素代表文档的构建块。这些构建块包括 PDF 和 XDP 文档以及其他元素，例如注释、书签和样式文本。DDX 文档是文档模板，它描述了应出现在结果文档中的源文档的所需特征。单个 DDX 可用于一系列源文档。您可以使用 AEM 工作流中的调用步骤来执行各种操作，例如，汇编和反汇编文档、创建和修改 Acrobat 和 XFA 表单及其他操作，如 [DDX 参考](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)文档中所述。
 
-* **[转换为PDF/A - AEM Workflow步骤](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**：PDF/A是一种用于长期保存文档内容的存档格式，其中所有字体都将嵌入，并且文件是未压缩的。 现在，您可以使用 AEM 工作流中的“转换为 PDF/A”步骤，将任意格式的文档或文件转换为 PDF/A 格式。
+* **[转换为PDF/A - AEM Workflow步骤](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**：PDF/A是一种用于长期保存文档内容的存档格式，其中所有字体都将嵌入，并且文件未经压缩。 现在，您可以使用 AEM 工作流中的“转换为 PDF/A”步骤，将任意格式的文档或文件转换为 PDF/A 格式。
 
 
 ## CIF 加载项 {#cloud-services-cif}
@@ -102,8 +102,8 @@ ht-degree: 82%
 ### 新增功能 {#what-is-new-foundation}
 
 * [存储库浏览器](/help/implementing/developing/tools/repository-browser.md)现在提供了一个路径输入字段，可用于直接跳转到存储库层次结构中的特定文件夹
-* Sling内容分发(SCD)现在支持显式“无效”操作，以便在不发布内容的情况下使内容无效。 参见 [AEMas a Cloud Service中的缓存](/help/implementing/dispatcher/caching.md#explicit-invalidation) 页面，了解更多详细信息。
-* AEM as a Cloud Service 现在提供 mod_macro。参见 [此表](/help/implementing/dispatcher/disp-overview.md) 以获取支持的Apache模块的列表。
+* Sling内容分发(SCD)现在支持显式“无效”操作，以便在不发布内容的情况下使内容无效。 请参阅 [AEMas a Cloud Service中的缓存](/help/implementing/dispatcher/caching.md#explicit-invalidation) 页面，了解更多详细信息。
+* AEM as a Cloud Service 现在提供 mod_macro。请参阅 [此表](/help/implementing/dispatcher/disp-overview.md) 以获取支持的Apache模块的列表。
 
 ### AEM as a Cloud Service SDK Dispatcher 工具增强功能 {#dispatcher-tools-enhancements}
 
@@ -112,7 +112,7 @@ ht-degree: 82%
 
 ### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}
 
-* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 参见 [Unified Shell上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 了解更多详细信息。
+* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
 
 ## Adobe Learning Manager 连接器 {#learn-manage}
 

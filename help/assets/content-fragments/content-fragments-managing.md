@@ -2,10 +2,10 @@
 title: 管理内容片段（资产 — 内容片段）
 description: 了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 73%
+source-wordcount: '1813'
+ht-degree: 72%
 
 ---
 
@@ -34,7 +34,11 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。 现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
+>内容片段是站点功能，但存储为 **资产**.
+>
+>现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
+>
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
 
 ## 创建内容片段 {#creating-content-fragments}
 
@@ -129,7 +133,7 @@ ht-degree: 73%
 
 >[!CAUTION]
 >
->要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
+>要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。如果您遇到问题，请联系您的系统管理员。
 
 1. 使用 **资产** 控制台以导航到内容片段的位置。
 1. 打开片段进行编辑，方法是：
@@ -137,7 +141,7 @@ ht-degree: 73%
    * 单击/点按片段或片段链接（具体取决于控制台视图）。
    * 选择片段，然后 **编辑** 工具栏中。
 
-1. 将打开片段编辑器。 根据需要进行更改：
+1. 将打开片段编辑器。根据需要进行更改：
 
    ![片段编辑器](assets/cfm-managing-03.png)
 
@@ -175,7 +179,7 @@ ht-degree: 73%
 
 ![各种模式中可用的工具栏操作](assets/cfm-managing-top-toolbar.png)
 
-* 当内容页面上已引用片段时，会显示一条消息。 您可以&#x200B;**关闭**&#x200B;消息。
+* 当内容页面上已引用片段时，会显示一条消息。您可以&#x200B;**关闭**&#x200B;消息。
 
 * 可以使用&#x200B;**切换侧面板**&#x200B;图标来隐藏/显示侧面板。
 
@@ -183,7 +187,7 @@ ht-degree: 73%
 
    * 该名称还是一个将打开模型编辑器的链接。
 
-* 查看片段的状态；例如，有关创建、修改或发布时间的信息。 状态也采用颜色编码：
+* 查看片段的状态；例如，有关创建、修改或发布时间的信息。状态也采用颜色编码：
 
    * **新建**：灰色
    * **草稿**：蓝色
@@ -217,7 +221,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
+  >要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。如果您遇到问题，请联系您的系统管理员。
 
   >[!NOTE]
   >
@@ -225,7 +229,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >除了仅保存您的更改外，这些操作还会更新任何引用，并确保 Dispatcher 按需要刷新。 这些更改可能需要一些时间才能处理。 因此，对于大型/复杂/重载系统，性能可能会受到影响。
+  >除了仅保存您的更改外，这些操作还会更新任何引用，并确保 Dispatcher 按需要刷新。这些更改可能需要一些时间才能处理。因此，对于大型/复杂/重载系统，性能可能会受到影响。
   >
   >使用时，请牢记此过程 **保存并关闭** 然后快速重新进入片段编辑器以进行并保存更多更改。
 
@@ -262,7 +266,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 将内容与片段关联 {#associating-content-with-your-fragment}
 
-您还可以[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段。 这会提供一个连接，以便在将资源（即图像）添加到内容页面时，可以（可选）与片段一起使用资源（即图像）。
+您还可以[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段。这会提供一个连接，以便在将资源（即图像）添加到内容页面时，可以（可选）与片段一起使用资源（即图像）。
 
 ## 查看和编辑片段的元数据（属性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -323,7 +327,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * 插入的文本 – 绿色
    * 替换文本 – 蓝色
 
-* 全屏图标允许您自行打开任一版本；然后切换回并行视图
+* 全屏图标让您自行打开任一版本；然后切换回并行视图
 * 您可以&#x200B;**还原**&#x200B;到特定版本
 * **完成**&#x200B;将返回控制台
 

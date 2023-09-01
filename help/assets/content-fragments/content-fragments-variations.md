@@ -2,16 +2,22 @@
 title: 变体 – 创作片段内容 （资产 — 内容片段）
 description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容更加灵活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 9a7087979831ac08aed5f93df024f1c835a9fc08
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 93%
+source-wordcount: '2567'
+ht-degree: 91%
 
 ---
 
 # 变体 – 创作片段内容{#variations-authoring-fragment-content}
 
 [变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本，用于特定渠道和/或场景，从而使headless内容投放更加灵活。
+
+>[!NOTE]
+>
+>内容片段是站点功能，但存储为 **资产**.
+>
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
 
 从&#x200B;**“变体”**&#x200B;选项卡，您可：
 

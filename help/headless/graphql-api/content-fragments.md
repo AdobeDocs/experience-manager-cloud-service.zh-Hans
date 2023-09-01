@@ -3,7 +3,7 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
+source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '4922'
 ht-degree: 99%
@@ -164,7 +164,7 @@ GraphQL 是一种强类型的 API，这意味着数据必须有明确的结构�
 
 GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。为执行此操作，客户端需要提取[架构](#schema-generation)，其中包含查询所需的全部类型。
 
-对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)及其数据类型。
+对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)及其数据类型。
 
 >[!CAUTION]
 >

@@ -2,7 +2,7 @@
 title: 如何通过 AEM 交付 API 访问您的内容
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用 GraphQL 查询访问内容片段的内容。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 072f76672198a68a9b6ede51d4a93d3ab27f3c84
+source-git-commit: f58581f6f81e60edafd79dd1d305bd479b65eed5
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 99%
@@ -369,10 +369,10 @@ query {
    * [示例查询 – 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [元数据的示例查询 – 列出标题为 GB 的奖项的元数据](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
    * [示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
-* [在配置浏览器中启用内容片段功能](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
-   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
-   * [JSON 输出](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+* [在配置浏览器中启用内容片段功能](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
+* [使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
+   * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [JSON 输出](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [了解跨源资源共享 (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hans#understand-cross-origin-resource-sharing-(cors))
 * [GraphQL持久查询 — 在Dispatcher中启用缓存](/help/headless/deployment/dispatcher-caching.md)
 * [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)

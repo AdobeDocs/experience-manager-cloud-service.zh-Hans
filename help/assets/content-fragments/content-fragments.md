@@ -2,10 +2,10 @@
 title: 使用内容片段 （资产 — 内容片段）
 description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和 headless 投放。以及它们如何与MSM结合使用。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 9a7087979831ac08aed5f93df024f1c835a9fc08
+source-git-commit: fa133319077388a3598ca13b2574b8b62bf9b2b4
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 88%
+source-wordcount: '2216'
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,11 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->内容片段存储为&#x200B;**资源**。现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
+>内容片段是站点功能，但存储为 **资产**.
+>
+>现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
+>
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
 
 本页和以下页面介绍了创建、配置、维护和使用内容片段的任务：
 
