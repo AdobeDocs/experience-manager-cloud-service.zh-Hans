@@ -2,9 +2,9 @@
 title: 体验片段概述
 description: 扩展Adobe Experience Manager as a Cloud Service Experience Fragments。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,8 @@ An [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.
 >[!NOTE]
 >
 >链接始终引用发布实例。 它们旨在供第三方使用，因此链接始终从发布实例（而非创作实例）调用。
+>
+>有关详细信息，请参阅 [将URL外部化](/help/implementing/developing/tools/externalizer.md).
 
 ![普通HTML演绎版](assets/xf-14.png)
 
