@@ -2,10 +2,10 @@
 title: AEM Headless 翻译快速入门
 description: 了解如何组织您的 Headless 内容以及 AEM 的翻译工具的工作原理。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1407'
-ht-degree: 100%
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 99%
 
 ---
 
@@ -188,3 +188,5 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 * [标识要翻译的内容](/help/sites-cloud/administering/translation/rules.md) – 了解翻译规则如何标识需要翻译的内容。
 * [配置翻译集成框架](/help/sites-cloud/administering/translation/integration-framework.md) – 了解如何配置翻译集成框架以与第三方翻译服务集成。
 * [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md) – 了解如何在 AEM 中创建和管理机器翻译项目和人工翻译项目。
+* [AEM as a Headless CMS简介](/help/headless/introduction.md)
+* [AEM中的HeadlessTutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)

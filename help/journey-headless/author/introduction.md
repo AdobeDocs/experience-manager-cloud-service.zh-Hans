@@ -2,10 +2,10 @@
 title: 针对 AEM as a Headless CMS 进行创作 – 简介
 description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能为项目创作内容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '664'
-ht-degree: 100%
+source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 97%
 
 ---
 
@@ -77,10 +77,16 @@ Headless 是一个用来描述系统的术语，指的是有效地将内容与�
 
 ## 其他资源 {#additional-resources}
 
+* [AEM as a Headless CMS简介](/help/headless/introduction.md)
+
+* [AEM中的HeadlessTutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
+
 * AEM Headless 开发人员历程
    * [了解 CMS Headless 开发](/help/journey-headless/developer/learn-about.md)
    * [了解如何为您的内容建模](/help/journey-headless/developer/model-your-content.md)
 
-* AEM Headless 内容架构师历程
+* [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 
-* AEM Headless 内容翻译历程
+* [AEM Headless 内容架构师历程](/help/journey-headless/architect/overview.md)
+
+* [AEM Headless 内容翻译历程](/help/journey-headless/translation/overview.md)
