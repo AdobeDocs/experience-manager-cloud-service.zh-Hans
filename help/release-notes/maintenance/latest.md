@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 370d5742065d659f32ec1ff4d4b0fc0a153f71c2
+source-git-commit: 288f871b75e68fdbca1244099e490408ea66ff40
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 40%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 40%
 - SKYOPS-63290：修复了存储桶的不正确演化。
 - SKYOPS-54607：速率限制符serverload计算对失败的请求不正确。
 - ASSETS-27648： ContentModelIT无法从其他包中读取排除文件。
-- GRANITE-43744：如果身份验证要求和虚路径配置错误，则Sling Authenticator无法正常工作。
+- GRANITE-43744：如果存在身份验证要求和虚路径配置错误，则Sling Authenticator无法正常工作。
 - GRANITE-46419：AEM与Auth0 Idp的集成问题。
 - GRANITE-46292：AEM Cloud更新后，Okta SAML配置不起作用。
 - GRANITE-47059：删除Granite Jetty SSL包。
