@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 5b61b60a94b944a747232b238c3ce48195a5a212
+source-git-commit: c63f621f2526f05c8555acdac77a4c05a473c95d
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4481'
 ht-degree: 11%
 
 ---
@@ -121,19 +121,18 @@ ht-degree: 11%
 
 1. 要计划资产激活的特定日期/时间，请使用&#x200B;**[!UICONTROL 开始时间]**&#x200B;字段旁边的日期选取器。
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![日期选取器](assets/date-picker.png)
 
 1. 要在特定持续时间后停用资产，请从日期选择器旁的停用日期/时间 **[!UICONTROL 关闭时间]** 字段。 停用日期应晚于资源的激活日期。 在 [!UICONTROL 关闭时间]，无法通过Assets Web界面或HTTP API访问资产及其演绎版。
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
-
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)
 1. 在 **[!UICONTROL 标记]** 字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记的名称，然后选择 `Enter` 键。 新标记保存在 [!DNL Experience Manager].
 
    YouTube需要使用Tags才能发布，并且具有YouTube链接（如果能够找到合适的链接）。
 
    >[!NOTE]
    >
-   >要创建标记，您必须具有以下写入权限： `/content/cq:tags/default` CRX存储库中的路径。
+   > 要创建标记，您必须具有以下写入权限： `/content/cq:tags/default` CRX存储库中的路径。
 
 1. 点按/单击 **[!UICONTROL 保存并关闭]**.
 
@@ -181,7 +180,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 单击 **[!UICONTROL 粘贴]** 工具栏中的资源图标。 资产将会复制到此位置。
 
-   ![chlimage_1-219](assets/chlimage_1-219.png)
+   <!--![chlimage_1-219](assets/chlimage_1-219.png)-->
 
    >[!NOTE]
    >
@@ -229,7 +228,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 点按/单击资产，以打开其资产页面。
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   <!--![chlimage_1-220](assets/chlimage_1-220.png)-->
 
 1. 点按/单击全局导航图标，然后选择 **[!UICONTROL 节目]** 从名单上。
 
@@ -255,7 +254,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    导航到资源的资源详细信息页面，然后点击/单击工具栏中的&#x200B;**[!UICONTROL “添加演绎版”]**&#x200B;图标以上传资源的新演绎版。
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   <!--![chlimage_1-221](assets/chlimage_1-221.png)-->
 
    >[!NOTE]
    >
@@ -267,7 +266,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    同样，您可以通过叠加来自定义“注释”页面图像 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+   <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
    要为视频资源配置演绎版维度，请导航到 `videopicker` CRX存储库中位于位置的节点 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`，覆盖节点，然后编辑相应的属性。
 
@@ -451,11 +450,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
    * [快速操作](#quick-actions)
    * 选择资产或导航到资产页面后，从工具栏中选择
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   <!--![chlimage_1-233](assets/chlimage_1-233.png)-->
 
 1. 在时间轴底部的&#x200B;**[!UICONTROL 注释]**&#x200B;框中添加注释。或者，在图像上标出一个区域，然后在&#x200B;**[!UICONTROL 添加批注]**&#x200B;对话框中添加批注。
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+<!-- ![chlimage_1-234](assets/chlimage_1-234.png)-->
 
 <!--
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
@@ -465,11 +464,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >对于非管理员用户，仅当用户在以下位置具有读取权限时，才会显示建议： `/home` 在CRXDE中。
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+<!--![chlimage_1-235](assets/chlimage_1-235.png)-->
 
 1. 添加注释后，单击 **[!UICONTROL 添加]** 以保存它。 注释的通知将发送到Aaron。
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   <!--![chlimage_1-236](assets/chlimage_1-236.png)-->
 
    >[!NOTE]
    >
@@ -484,11 +483,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 要选择不同的颜色以便区分用户，请单击/点按配置文件图标，然后单击/点按 **[!UICONTROL 我的首选项]**.
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   <!--![chlimage_1-237](assets/chlimage_1-237.png)-->
 
    在&#x200B;**[!UICONTROL 批注颜色]**&#x200B;框中指定所需颜色，然后单击/点按&#x200B;**[!UICONTROL 接受]**。
 
-   ![chlimage_1-238](assets/chlimage_1-238.png)
+<!-- ![chlimage_1-238](assets/chlimage_1-238.png)-->
 
 >[!NOTE]
 >
@@ -508,15 +507,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 点按/单击全局导航图标，然后选择 **[!UICONTROL 时间线]** 从名单上。
 
-   ![chlimage_1-239](assets/chlimage_1-239.png)
+   <!--![chlimage_1-239](assets/chlimage_1-239.png)-->
 
 1. 从时间线的&#x200B;**[!UICONTROL 显示全部]**&#x200B;列表中，选择&#x200B;**[!UICONTROL 注释]**&#x200B;以根据注释过滤结果。
 
-   ![chlimage_1-240](assets/chlimage_1-240.png)
+   <!--![chlimage_1-240](assets/chlimage_1-240.png)-->
 
    点按/单击中的评论 **[!UICONTROL 时间线]** 面板以查看图像上的相应批注。
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+   <!--![chlimage_1-241](assets/chlimage_1-241.png)-->
 
    点按/单击 **[!UICONTROL 删除]**，以删除特定注释。
 
@@ -540,29 +539,29 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 要打印特定注释，请从时间轴中选择注释。
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+   <!--![chlimage_1-242](assets/chlimage_1-242.png)-->
 
    要仅打印审阅状态，请从时间线中选择它。
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+   <!--![chlimage_1-243](assets/chlimage_1-243.png)-->
 
 1. 点按/单击 **[!UICONTROL 打印]** 图标。
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+   <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
 1. 从“打印”对话框中，选择要在PDF上显示注释/审阅状态的位置。 例如，如果希望在包含已打印图像的页面的右上角打印批注/状态，请使用 **左上方** 设置。 默认情况下，该复选框处于选中状态。
 
-   ![chlimage_1-245](assets/chlimage_1-245.png)
+   <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
    您可以根据希望在打印的 PDF 中显示批注/状态的位置选择其他设置。如果希望批注/状态显示在与打印资产不同的页面中，请选择&#x200B;**[!UICONTROL 下一页]**。
 
 1. 单击 **[!UICONTROL 打印]**. 根据您在步骤 2 中选择的选项，生成的 PDF 会在指定位置显示批注/状态。例如，如果您选择使用&#x200B;**左上角**&#x200B;设置打印批注和审阅状态，则生成的输出将类似于此处描述的 PDF 文件。
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+   <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
 1. 使用右上方的选项下载或打印PDF。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
    要修改渲染PDF文件的外观，例如注释和状态的字体颜色、大小和样式、背景颜色，请打开 **[!UICONTROL 注释PDF配置]** 从Configuration Manager中，修改所需的选项。 例如，要更改已批准状态的显示颜色，请修改相应字段中的颜色代码。 有关更改批注字体颜色的信息，请参阅 [批注](/help/assets/manage-digital-assets.md#annotating).
 
@@ -594,15 +593,15 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 点按/单击 **[!UICONTROL 操作]** （箭头）图标以查看您可对资源执行的可用操作。
 
-   ![chlimage_1-249](assets/chlimage_1-249.png)
+   <!--![chlimage_1-249](assets/chlimage_1-249.png)-->
 
 1. 点按/单击 **[!UICONTROL 另存为版本]** 以创建资产的版本。
 
-   ![chlimage_1-250](assets/chlimage_1-250.png)
+<!--![chlimage_1-250](assets/chlimage_1-250.png)-->
 
 1. 添加标签和注释，然后单击 **[!UICONTROL 创建]** 以创建版本。 或者，点按/单击 **取消** 以退出操作。
 
-   ![chlimage_1-251](assets/chlimage_1-251.png)
+   <!--![chlimage_1-251](assets/chlimage_1-251.png)-->
 
 1. 要查看新版本，请从资产详细信 **[!UICONTROL 息页面或资产UI中打开时间轴中的显示全部]** ，然后选择版 **[!UICONTROL 本]**。 为资产创建的所有版本都列在时间轴选项卡下。 您可以通过单击下拉箭头并从列表中选择版本，来过滤列 **[!UICONTROL 表以显示]** “版本”。
 
@@ -635,23 +634,23 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 1. 点按/单击 **[!UICONTROL 操作]** （箭头）图标，打开可用于资产的操作列表。
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   <!--![chlimage_1-252](assets/chlimage_1-252.png)-->
 
 1. 点按/单击 **[!UICONTROL 启动工作流]** 从名单上。
 
-   ![chlimage_1-253](assets/chlimage_1-253.png)
+   <!--![chlimage_1-253](assets/chlimage_1-253.png)-->
 
 1. 在 **[!UICONTROL 启动工作流]** 对话框中，从列表中选择工作流模型。
 
-   ![chlimage_1-254](assets/chlimage_1-254.png)
+   <!--![chlimage_1-254](assets/chlimage_1-254.png)-->
 
 1. （可选）指定工作流的标题，该标题可用于引用工作流实例。
 
-   ![chlimage_1-255](assets/chlimage_1-255.png)
+   <!--![chlimage_1-255](assets/chlimage_1-255.png)-->
 
 1. 点按／单击 **[!UICONTROL 开始]** ，然后点按／单 **[!UICONTROL 击对话框中的继]** 续，以进行确认。 工作流的每个步骤都会作为事件显示在时间轴中。
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+   <!--![chlimage_1-256](assets/chlimage_1-256.png)-->
 
 ## 收藏集 {#collections}
 
