@@ -6,7 +6,7 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 52%
+ht-degree: 54%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 52%
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express 集成"
->abstract="由Adobe Express提供支持的简单直观的图像编辑工具可直接在AEM Assets中使用，以提高内容重复利用率和加快内容速度。"
+>abstract="可直接在 AEM Assets 中找到受 Adobe Express 支持的简单而直观的图像编辑工具以提高内容重用并加快内容速度。"
 
 ### 调整图像大小 {#resize-image-using-express}
 
