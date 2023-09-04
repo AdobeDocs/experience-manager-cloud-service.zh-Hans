@@ -1,16 +1,20 @@
 ---
 title: 使用资源视图批量导入资源
 description: 了解如何使用新的资产UI（资产视图）批量导入资产。 它使管理员能够将大量资源从数据源导入到AEM Assets。
-source-git-commit: 49d1e002f22427d8ffc6c5bdecd054c10eac47b9
+source-git-commit: 5cc522db4bd86514c1093a0d6fee481f6604fc26
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 3%
+source-wordcount: '1177'
+ht-degree: 2%
 
 ---
 
 # 使用资源视图批量导入资源  {#bulk-import-assets-view}
 
 通过AEM Assets视图中的批量导入，管理员能够将大量资源从数据源导入到AEM Assets。 管理员不再需要将单个资源或文件夹上传到AEM Assets。
+
+>[!NOTE]
+>
+>资产视图批量导入程序使用与管理员视图批量导入程序相同的后端。 但是，它提供了更多可从中导入的数据源，并提供了更简化的用户体验。
 
 您可以从以下数据源导入资源：
 
@@ -58,6 +62,14 @@ ht-degree: 3%
    ![执行批量导入](assets/bulk-import-run.png)
 
 1. 单击 **[!UICONTROL 保存]** 执行选定的选项。
+
+### 在批量导入期间处理文件名 {#filename-handling-bulkimport-assets-view}
+
+批量导入资源或文件夹时， [!DNL Experience Manager Assets] 导入导入源中存在的全部结构。 [!DNL Experience Manager] 遵循资产和文件夹名称中特殊字符的内置规则，因此需要清理这些文件名。 对于文件夹名称和资产名称，用户定义的标题保持不变，并存储在中 `jcr:title`.
+
+在批量导入期间， [!DNL Experience Manager] 查找现有文件夹以避免重新导入资产和文件夹，还可验证在导入发生的父文件夹中应用的清理规则。 如果在父文件夹中应用了清理规则，则相同的规则将应用于导入源。 对于新导入，将应用以下清理规则来管理资源和文件夹的文件名。
+
+有关在批量导入期间不允许使用的名称、处理资产名称和处理文件夹名称的详细信息，请参阅 [在管理员视图中批量导入期间处理文件名](add-assets.md##filename-handling-bulkimport).
 
 ## 查看现有批量导入配置 {#view-import-configuration}
 
