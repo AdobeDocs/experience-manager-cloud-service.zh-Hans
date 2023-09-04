@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 3203e79d1dd083d13d9357b21040dfa88194c4db
+source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
 workflow-type: tm+mt
-source-wordcount: '9445'
+source-wordcount: '9442'
 ht-degree: 2%
 
 ---
@@ -576,7 +576,6 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 | **字幕** | 多语言支持 |
 |  | 用于辅助功能的描述性文本 |
 | **音频轨道** | 多语言支持 |
-|  | 立体声与多声道（环绕声） |
 |  | 评论轨道 |
 |  | 描述性音频 |
 
@@ -669,7 +668,7 @@ WebVTT和AdobeVTT格式支持添加字幕和字幕。 此外，添加的MP3格�
 
 >[!CAUTION]
 >
->当您将字幕文件或音频文件上传到已发布的视频时，如果您 [*重新处理*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) 视频。 只有视频的原始音频保持不变。 在这种情况下，必须再次将字幕文件和音轨文件重新上传到视频。
+>当您将字幕文件或音频文件上传到已发布或未发布的视频时，如果您 [*重新处理*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) 视频。 只有视频的原始音频保持不变。 在这种情况下，必须再次将字幕文件和音轨文件重新上传到视频。
 
 #### 向具有带标题修饰符的现有URL的视频添加多个标题
 
