@@ -1,11 +1,11 @@
 ---
 title: 评估 KPI
-description: 了解如何访问KPI并定义报告流程
+description: 了解如何评估 KPI 和定义报告流程
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
