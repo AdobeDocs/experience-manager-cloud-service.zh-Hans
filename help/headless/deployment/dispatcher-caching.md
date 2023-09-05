@@ -1,38 +1,38 @@
 ---
-title: GraphQL持久查询 — 在Dispatcher中启用缓存
-description: Dispatcher 是位于 Adobe Experience Manager 发布环境前的缓存和安全层。您可以在AEM Headless中为持久查询启用缓存。
+title: GraphQL 持久化查询 - 在 Dispatcher 中启用缓存
+description: Dispatcher 是位于 Adobe Experience Manager 发布环境前的缓存和安全层。您可以在 AEM Headless 中为持久化查询启用缓存。
 feature: Dispatcher, GraphQL API
 source-git-commit: 0066bfba3a403791c6a35b1280ae04b576315566
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
 
-# GraphQL持久查询 — 在Dispatcher中启用缓存 {#graphql-persisted-queries-enabling-caching-dispatcher}
+# GraphQL 持久化查询 - 在 Dispatcher 中启用缓存 {#graphql-persisted-queries-enabling-caching-dispatcher}
 
 >[!CAUTION]
 >
->如果启用了Dispatcher中的缓存，则 [CORS过滤器](/help/headless/deployment/cross-origin-resource-sharing.md) 不需要，因此该部分可以忽略。
+>如果在 Dispatcher 中启用了缓存，则不需要 [CORS 筛选条件](/help/headless/deployment/cross-origin-resource-sharing.md)，并且可以忽略该部分。
 
-默认情况下，Dispatcher中未启用持久查询的缓存。 无法启用默认功能，因为使用具有多个源的CORS（跨源资源共享）的客户需要查看和更新其Dispatcher配置。
-
->[!NOTE]
->
->Dispatcher不缓存 `Vary` 标题。
->
->可以在Dispatcher中启用其他CORS相关标头的缓存，但是当有多个CORS源时，该功能可能不够。
+默认情况下，Dispatcher 中未启用持久化查询的缓存。无法实施默认启用，因为对多个源使用 CORS（跨源资源共享）的客户需要检查并（可能需要）更新其 Dispatcher 配置。
 
 >[!NOTE]
 >
->有关 Dispatcher 的详细文档，请参阅 [Dispatcher 指南。](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+>Dispatcher 不会缓存 `Vary` 标头。
+>
+>可以在 Dispatcher 中启用其他 CORS 相关标头的缓存，但如果存在多个 CORS 源，则可能不够。
 
-## 启用持久查询的缓存 {#enable-caching-persisted-queries}
+>[!NOTE]
+>
+>有关 Dispatcher 的详细文档，请参阅 [Dispatcher 指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
 
-要启用持久查询的缓存，请定义Dispatcher变量 `CACHE_GRAPHQL_PERSISTED_QUERIES`：
+## 启用持久化查询的缓存 {#enable-caching-persisted-queries}
 
-1. 将变量添加到Dispatcher文件 `global.vars`：
+要启用持久化查询的缓存，请定义 Dispatcher 变量 `CACHE_GRAPHQL_PERSISTED_QUERIES`：
+
+1. 将该变量添加到 Dispatcher 文件 `global.vars` 中：
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -40,18 +40,18 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->要符合 [Dispatcher对可缓存文档的要求](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)，Dispatcher添加后缀 `.json` 到所有持久查询URL，以便可以缓存结果。
+>为了符合 [Dispatcher 对可缓存文档的要求](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)，Dispatcher 将后缀 `.json` 添加到所有持久化查询 URL，以便能够缓存结果。
 >
->启用持久查询缓存后，此后缀将由重写规则添加。
+>在启用持久化查询缓存后，将通过重写规则添加此后缀。
 
-## Dispatcher中的CORS配置 {#cors-configuration-in-dispatcher}
+## Dispatcher 中的 CORS 配置 {#cors-configuration-in-dispatcher}
 
-使用CORS请求的客户可能需要在Dispatcher中查看和更新其CORS配置。
+使用 CORS 请求的客户可能需要在 Dispatcher 中查看和更新其 CORS 配置。
 
-* 此 `Origin` 不得通过Dispatcher将标头传递到AEM发布：
-   * 查看 `clientheaders.any` 文件。
-* 相反，必须在Dispatcher级别评估CORS请求是否为允许的源。 此方法还可以确保在所有情况下都在一个位置正确设置与CORS相关的标头。
-   * 此类配置应添加到 `vhost` 文件。 下面给出了一个配置示例；为简单起见，仅提供了CORS相关部分。 您可以根据特定用例调整它。
+* `Origin` 标头不得通过 Dispatcher 传递到 AEM 发布：
+   * 检查 `clientheaders.any` 文件。
+* 相反，必须在 Dispatcher 级别为允许的源评估 CORS 请求。此方法还可确保在所有情况下，在一个位置正确设置 CORS 相关标头。
+   * 应将此类配置添加到 `vhost` 文件。下面提供了一个示例配置；为简单起见，仅提供了 CORS 相关部分。您可以根据特定用例进行调整。
 
   ```xml
   <VirtualHost *:80>
