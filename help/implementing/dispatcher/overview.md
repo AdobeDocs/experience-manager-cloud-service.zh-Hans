@@ -1,11 +1,11 @@
 ---
 title: 内容交付流程概述
-description: 了解有关内容投放数据流以及如何发布内容的更多信息
+description: 详细了解内容交付数据流以及如何发布内容
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
