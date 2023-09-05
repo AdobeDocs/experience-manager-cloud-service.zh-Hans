@@ -4,9 +4,9 @@ description: Adobe Experience Manager 的跨源资源共享 (CORS) 允许 Headle
 feature: GraphQL API
 exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
 source-git-commit: 316680823fe4bc85e1f4359305047c0d1f517dc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '230'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 90%
 
 >[!CAUTION]
 >
->如果 [Dispatcher中的缓存已启用](/help/headless/deployment/dispatcher-caching.md) 则无需使用CORS过滤器，因此可以忽略此部分。
+>如果[已在 Dispatcher 中启用缓存](/help/headless/deployment/dispatcher-caching.md)，则不需要 CORS 筛选条件，因此可忽略此部分。
 
 >[!NOTE]
 >
