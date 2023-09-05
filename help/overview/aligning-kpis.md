@@ -1,11 +1,11 @@
 ---
 title: 调整 KPI
-description: 了解如何为您的AEM实施选择合适的KPI
+description: 了解如何为 AEM 实施选择正确的 KPI
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
