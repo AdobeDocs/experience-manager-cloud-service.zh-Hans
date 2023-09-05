@@ -5,18 +5,25 @@ topic-tags: Adaptive Forms, author
 hide: true
 hidefromtoc: true
 Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 1%
+source-wordcount: '947'
+ht-degree: 14%
 
 ---
 
-# 在AEM自适应表单中使用Google reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
+# 在基于核心组件的AEM自适应表单中使用Google reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
 
-CAPTCHA（完全自动化公共图灵测试，用于区分计算机和人类）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。 它会提出挑战，并评估用户响应以确定是人类还是机器人与网站交互。 它可防止用户在测试失败时继续操作，并通过防止机器人发送垃圾邮件或恶意目的而确保在线交易的安全。
+<span class="preview"> 这是预发行功能，可通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-[!DNL AEM Forms] as a [!DNL Cloud Service] 在自适应Forms中支持Google reCAPTCHA v2。 您可以用它来提交表单时提出验证码质询。 要在自适应表单中使用reCAPTCHA，请执行以下操作：
+| 应用到 | 文章链接 |
+| -------- | ---------------------------- |
+| 基于核心组件的自适应表单 | 本文 |
+| 基于Foundation组件的自适应表单 | [单击此处](/help/forms/captcha-adaptive-forms.md) |
+
+CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
+
+[!DNL AEM Forms] as a [!DNL Cloud Service] 在自适应Forms中支持Google reCAPTCHA v2。 您可以使用它在表单提交时提出验证码挑战. 要在自适应表单中使用reCAPTCHA，请执行以下操作：
 
 1. [通过Google的reCAPTCHA服务连接您的AEM Forms环境](#connect-your-forms-environment-with-recaptcha-service-by-google)
 1. [配置自适应表单以在提交表单时显示验证码质询](#using-reCAPTCHA)
@@ -106,3 +113,9 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **问：能否在自适应表单中使用多个Captcha组件？**
 **Ans：** 不支持在自适应表单中使用多个验证码组件。 此外，不建议在标记为延迟加载的片段或面板中使用验证码组件。
 
+## 另请参阅
+
+* [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
+* [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
+* [在 AEM Sites 页面或体验片段中添加自适应表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
