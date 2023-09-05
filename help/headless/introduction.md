@@ -4,7 +4,7 @@ description: 结合详细文档和 Headless 历程，了解 Adobe Experience Man
 landing-page-description: 了解如何使用和管理 Adobe Experience Manager as a Cloud Service 中的 Headless。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '701'
 ht-degree: 100%
 
