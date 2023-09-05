@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 288f871b75e68fdbca1244099e490408ea66ff40
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 40%
+ht-degree: 46%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 40%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 发行版本 13323 {#release-13323}
+## 版本 13323 {#release-13323}
 
 以下总结了维护版本13323的不断改进，该版本于2023年9月1日公开发布。 此维护版本取代了发行说13239。
 
@@ -44,8 +44,8 @@ ht-degree: 40%
 
 ### 已知问题 {#known-issues-13323}
 
-- SITES-15622： GraphQL — 使用数字和布尔参数的持久查询存在问题。
-- SITES-15654： GraphQL — 同名的合并和属性存在问题。
+- SITES-15622：GraphQL - 使用数字和布尔参数进行持久化查询时出现问题。
+- SITES-15654：GraphQL - 同名的合并和属性出现问题。
 
 ### 嵌套的技术 {#embedded-tech-13323}
 
