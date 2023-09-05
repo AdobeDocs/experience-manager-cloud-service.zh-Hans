@@ -1,11 +1,11 @@
 ---
 title: 对 AEM Cloud Service 中的 AEM Sites 的重要更改
-description: 详细了解AEM Cloud Service中对AEM Sites的重要更改
+description: 详细了解 AEM Cloud Service 中 AEM Sites 的重要更改
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '537'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
