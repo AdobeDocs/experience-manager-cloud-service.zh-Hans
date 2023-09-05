@@ -1,12 +1,12 @@
 ---
 title: 管理工作流实例
-description: 了解如何管理工作流实例 使用工作流控制台
+description: 了解如何管理工作流实例使用工作流控制台
 feature: Administering
 role: Admin
 source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1288'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
