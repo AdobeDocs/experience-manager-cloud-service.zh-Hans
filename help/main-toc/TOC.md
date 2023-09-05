@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bb15e840071279dbdf8bd2bfe89d59c067898aca
+source-git-commit: 71e9325997dcb32e27758d23177670cc70381537
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4260'
 ht-degree: 97%
 
 ---
@@ -516,6 +516,7 @@ ht-degree: 97%
       + [将 Dynamic Media 资源添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [在网页上嵌入动态视频或图像查看器](/help/assets/dynamic-media/embed-code.md)
       + [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+      + [请求失败投放URL的错误报告](/help/assets/dynamic-media/reporting-dm.md)
       + [使用规则集转换 URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [发布 Dynamic Media 资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [使用 Dynamic Media 中的“选择性发布”功能](/help/assets/dynamic-media/selective-publishing.md)
@@ -570,6 +571,7 @@ ht-degree: 97%
          + [将 AEM Forms as a Cloud Service 与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
          + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
@@ -583,20 +585,19 @@ ht-degree: 97%
    + 自适应表单 {#adaptive-forms-authoring}
       + [创建自适应表单](/help/forms/create-an-adaptive-form.md)
       + [在 AEM Sites 页面或体验片段中添加自适应表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-      + 创作自适应表单 - 核心组件 {#authoring-adaptive-forms-core-components}
+      + 核心组件 {#authoring-adaptive-forms-core-components}
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
             + [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
-            + [创建自适应表单 - AEM Sites 页面中的核心组件](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [使用机器翻译或人工翻译来翻译自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + 创作自适应表单 - 基础组件 {#authoring-adaptive-forms-foundation-components}
+      + 基础组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
             + [将现有 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans)
@@ -766,8 +767,8 @@ ht-degree: 97%
       + [身份验证](/help/headless/security/authentication.md)
    + 部署 {#deployment}
       + [架构](/help/headless/deployment/architecture.md)
-      + [Dispatcher  — 端点](/help/headless/deployment/dispatcher.md)
-      + [Dispatcher — 为持久查询启用缓存](/help/headless/deployment/dispatcher-caching.md)
+      + [Dispatcher - 端点](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - 为持久化查询启用缓存](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 配置](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [反向链接筛选条件](/help/headless/deployment/referrer-filter.md)
    + Headless 历程 {#journeys}
