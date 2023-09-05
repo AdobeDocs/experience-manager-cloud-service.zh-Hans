@@ -5,7 +5,7 @@ feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
 workflow-type: ht
-source-wordcount: '1752'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
