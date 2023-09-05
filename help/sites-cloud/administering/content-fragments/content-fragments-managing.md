@@ -8,7 +8,7 @@ index: false
 hidefromtoc: true
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 5ce5746026c5683e79cdc1c9dc96804756321cdb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2051'
 ht-degree: 100%
 
@@ -256,23 +256,23 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >只能通过[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)使用将内容片段发布到&#x200B;**预览服务**&#x200B;的功能；使用&#x200B;**发布**&#x200B;操作。
+  只能通过[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)使用将内容片段发布到&#x200B;**预览服务**&#x200B;的功能；使用&#x200B;**发布**&#x200B;操作。
 
   >[!NOTE]
   >
-  >有关“预览”环境的更多详细信息，请参阅：
+  有关“预览”环境的更多详细信息，请参阅：
   >
-  >* [管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [配置预览层的 OSGi 设置](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [使用 Developer Console 调试预览](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  * [管理环境](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+  * [配置预览层的 OSGi 设置](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  * [使用 Developer Console 调试预览](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 要使用[内容片段控制台](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)工具栏中的&#x200B;**发布**&#x200B;选项发布您的内容片段：
 
 >[!CAUTION]
 >
->如果您的片段基于模型，则应确保[模型已发布](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
+如果您的片段基于模型，则应确保[模型已发布](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
 >
->如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型会随该片段一起发布。
+如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型会随该片段一起发布。
 
 1. 从列表中选择一个或多个片段。
 
@@ -293,11 +293,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->在您[发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)后，片段会在页面引用中列出。
+在您[发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)后，片段会在页面引用中列出。
 
 >[!CAUTION]
 >
->片段发布、引用或同时发布和引用后，当作者再次打开片段进行编辑时，AEM 会显示警告。作者会收到警告，表示对片段所做的更改也会影响引用的页面。
+片段发布、引用或同时发布和引用后，当作者再次打开片段进行编辑时，AEM 会显示警告。作者会收到警告，表示对片段所做的更改也会影响引用的页面。
 
 ## 取消发布片段 {#unpublishing-a-fragment}
 
@@ -308,11 +308,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->仅在可用已发布的片段时，**取消发布**&#x200B;操作才可见。
+仅在可用已发布的片段时，**取消发布**&#x200B;操作才可见。
 
 >[!CAUTION]
 >
->如果片段已从其他片段或页面引用，您将看到一条警告消息，需要您确认是否继续。
+如果片段已从其他片段或页面引用，您将看到一条警告消息，需要您确认是否继续。
 
 ## 删除片段 {#deleting-a-fragment}
 
@@ -323,14 +323,14 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!NOTE]
    >
-   >**删除**&#x200B;操作不能作为快速操作使用。
+   **删除**&#x200B;操作不能作为快速操作使用。
 
 3. 从工具栏中选择&#x200B;**删除**。
 4. 确认&#x200B;**删除**&#x200B;操作。
 
    >[!CAUTION]
    >
-   >如果该片段已被另一个片段或页面引用，您将看到一条警告消息，并且需要确认您要继续执行&#x200B;**强制删除**。片段及其内容片段组件会从任何内容页面中删除。
+   如果该片段已被另一个片段或页面引用，您将看到一条警告消息，并且需要确认您要继续执行&#x200B;**强制删除**。片段及其内容片段组件会从任何内容页面中删除。
 
 ## 查找片段的父引用 {#parent-references-fragment}
 
@@ -344,7 +344,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->此功能仅在&#x200B;**资源**&#x200B;控制台中可用
+此功能仅在&#x200B;**资源**&#x200B;控制台中可用
 
 除了标准选项外，[时间线](/help/assets/manage-digital-assets.md#timeline)提供特定于内容片段的信息和操作：
 
@@ -365,16 +365,16 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->评论包括：
+评论包括：
 >
->* 所有资源的标准功能
->* 在时间线中制造
->* 与片段资源相关
+* 所有资源的标准功能
+* 在时间线中制造
+* 与片段资源相关
 >
->注释（适用于内容片段）包括：
+注释（适用于内容片段）包括：
 >
->* 在片段编辑器中输入
->* 特定于片段中选定的文本区段
+* 在片段编辑器中输入
+* 特定于片段中选定的文本区段
 >
 
 例如：
@@ -385,7 +385,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->此功能仅在&#x200B;**资源**&#x200B;控制台中可用
+此功能仅在&#x200B;**资源**&#x200B;控制台中可用
 
 选择特定版本后，[时间线](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中的&#x200B;**与当前比较**&#x200B;操作可用。
 
@@ -409,7 +409,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->比较片段时无法编辑片段内容。
+比较片段时无法编辑片段内容。
 
 ![比较](assets/cfm-managing-06.png)
 
@@ -417,7 +417,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
->此功能仅在&#x200B;**资源**&#x200B;控制台中可用
+此功能仅在&#x200B;**资源**&#x200B;控制台中可用
 
 您可以还原到片段的特定版本：
 
