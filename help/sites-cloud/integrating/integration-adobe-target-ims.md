@@ -3,9 +3,9 @@ title: 与 Adobe Target 集成时使用的 IMS 配置
 description: 了解与 Adobe Target 集成时使用的 IMS 配置
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
 source-git-commit: 155b24c4b46e8baebd6215c0717d9f2adde95017
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '883'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -67,9 +67,9 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->目前，我们仅支持Adobe Developer控制台的 **服务帐户(JWT)** 凭据类型。
+>目前，我们仅支持 Adobe Developer Console 的&#x200B;**服务帐户 (JWT)** 凭据类型。
 >
->请勿使用 **OAuth服务器到服务器** 凭据类型，将在未来受支持。
+>不要使用 **OAuth 服务器到服务器**&#x200B;凭据类型（以后将支持此类型）。
 
 1. 为项目打开 Adobe Developer Console：
 
