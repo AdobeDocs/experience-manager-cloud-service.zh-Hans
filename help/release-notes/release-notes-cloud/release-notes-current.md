@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+source-git-commit: 9da87302369331fb55c1c8036c5b22fa686b1be8
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1938'
 ht-degree: 26%
 
 ---
@@ -144,7 +144,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * **[使用DocAssurance API（通信API的一部分）Protect您的文档](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API允许您通过签名和加密文档来保护敏感信息。 通过加密，文档的内容转换为不可读的格式，确保只有授权用户才能获得访问权限。 此强化的保护层不仅能够保护宝贵的数据不受未经授权的用户的攻击，而且还能让您高枕无忧。 签名API允许贵组织保护其分发和接收的Adobe PDF文档的安全性和隐私。 此服务使用数字签名和认证，确保只有目标收件人才能更改文档。
 
-  您可以连接Adobe支持以加入DocAssurance API的早期采用者计划。
+
+  <br> 您可以发送电子邮件至 `aem-forms-early-adopter-program@adobe.com` 从您的官方电子邮件ID加入率先采用者计划，并请求访问您环境的功能。  <br>  <br>
+
 
 * **[Headless自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**：使用Headless自适应Forms，让开发人员能够创建、发布和管理可通过API（而不是通过传统的图形用户界面）访问和交互的交互式表单。 Headless 自适应表单可帮助您：
 
