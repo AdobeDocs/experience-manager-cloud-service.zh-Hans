@@ -4,9 +4,9 @@ description: 了解如何将自适应表单嵌入到外部网页中
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '979'
 ht-degree: 2%
 
 ---
@@ -99,14 +99,12 @@ ht-degree: 2%
 
 自适应表单将嵌入到网页中。 在嵌入的自适应表单中观察以下情况：
 
-* 原始自适应表单中的页眉和页脚未包含在嵌入表单中。
 * 草稿和已提交的表单可在Forms门户的草稿和提交选项卡中获取。
 * 在原始自适应表单上配置的提交操作将保留在嵌入表单中。
 * 自适应表单规则会保留，并在嵌入表单中充分发挥作用。
 * 在原始自适应表单中配置的体验定位和A/B测试在嵌入表单中不起作用。
 * 如果在原始表单上配置了Adobe Analytics，则Adobe Analytics服务器会捕获Analytics数据。 但是，它在Forms Analytics报表中不可用。
-
-在基于核心组件的自适应Forms中，包含客户端库(ClientLibs)并与表单的页眉和页脚组件一起加载。 因此，在嵌入基于核心组件的自适应Forms到网页时，它始终包括表单的页眉和页脚。
+* 在基于核心组件的自适应Forms中，包含客户端库(ClientLibs)并与表单的页眉和页脚组件一起加载。 因此，在嵌入基于核心组件的自适应Forms到网页时，它始终包括表单的页眉和页脚。
 
 ## 示例拓扑 {#sample-topology}
 
