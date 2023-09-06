@@ -2,9 +2,9 @@
 title: 上线后
 description: 了解如何监测问题并提高性能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
+source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '483'
 ht-degree: 28%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 28%
 
 用户可以访问选定环境的可用日志文件列表。
 
-请参阅 [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md) 了解如何通过UI或通过Cloud Manager从API访问和管理日志。
+请参阅 [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md) 了解如何通过用户界面或通过Cloud Manager从API访问和管理日志。
 
 ## 联系支持人员 {#contacting-support}
 
