@@ -1,25 +1,25 @@
 ---
-title: 将内容提取到目标
-description: 了解如何使用内容传输工具将内容从迁移集摄取到Cloud Service实例中。
+title: 将内容摄取到Cloud Service
+description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
+source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 11%
+source-wordcount: '1954'
+ht-degree: 8%
 
 ---
 
-# 将内容提取到目标 {#ingesting-content}
+# 将内容摄取到Cloud Service {#ingesting-content}
 
 ## 内容传输工具中的摄取流程 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="内容引入"
->abstract="引入是指将内容从迁移集引入到目标云服务实例中。内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
+>abstract="摄取是指将内容从迁移集摄取到目标Cloud Service实例。 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans" text="增补摄取"
 
-请按照以下步骤从内容传输工具中摄取迁移集：
+请按照以下步骤使用Cloud Acceleration Manager摄取迁移集：
 
 >[!NOTE]
 >是否记得为此引入记录支持工单？ 请参阅 [使用内容传输工具之前的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以了解这些注意事项以及其他有助于成功摄取的注意事项。
@@ -80,7 +80,7 @@ ht-degree: 11%
    Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-   
+
    Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
@@ -181,4 +181,7 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 ## 后续内容 {#whats-next}
 
-完成将内容摄取到Target中后，您可以查看每个步骤（提取和摄取）的日志并查找错误。 请参阅 [查看迁移集的日志](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hans) 了解更多信息。
+摄取成功后，AEM索引将自动开始。 请参阅 [迁移内容后编制索引](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) 以了解更多信息。
+
+完成将内容摄取到Cloud Service中后，您可以查看每个步骤（提取和摄取）的日志并查找错误。 请参阅 [查看迁移集的日志](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) 了解更多信息。
+
