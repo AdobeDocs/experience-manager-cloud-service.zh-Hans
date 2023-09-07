@@ -1,19 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.8.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.8.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.9.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.9.0 的发行说明。
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 99772a1a3faa454a9b07dd92c9e7622ddb37ce2d
-workflow-type: ht
-source-wordcount: '540'
-ht-degree: 100%
+source-git-commit: dd52aef2f88cf64e8d9a32b1c8cafe4fcfbcb812
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 81%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.8.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.9.0 的发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.8.0 版本的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.9.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,12 +20,11 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 2023.8.0 中的 Cloud Manager 的发布日期是 2023 年 8 月 10 日。下一个版本计划于 2023 年 9 月 7 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 的发布日期是 2023 年 9 月 7 日。 下一个版本计划于 2023 年 10 月 5 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 将内容配置为[复制内容，](/help/implementing/developing/tools/content-copy.md)[上下文感知配置](/help/implementing/developing/introduction/configurations.md)现在允许出现在 UI 的内容集中。
-* 作出了一些增强以使 Cloud Manager UI 中错误消息更容易理解且出现得更合理。
+此版本侧重于错误修复。
 
 ## 早期采用计划 {#early-adoption}
 
@@ -55,12 +53,6 @@ AEM as a Cloud Service 2023.8.0 中的 Cloud Manager 的发布日期是 2023 年
 
 ## 错误修复 {#bug-fixes}
 
-* 在触发&#x200B;**[复制内容](/help/implementing/developing/tools/content-copy.md)**&#x200B;模式后，**环境**&#x200B;菜单现在将关闭。
-* 如果上次执行没有设置为构建阶段状态的 `commitId`，则不再允许[管道重新执行](/help/implementing/cloud-manager/deploy-code.md#reexecute-deployment)。
-* 当用户在&#x200B;**活动**&#x200B;或&#x200B;**管道**&#x200B;屏幕中单击某个管道时，现在为罕见的错误显示更易理解的消息。
-* 日志中不再缺少 `contentSetName` 值，现在在启动时在输入中提供[内容复制](/help/implementing/developing/tools/content-copy.md)操作。
-* 在某些罕见的情况下，不再可能从同一个管道启动两次执行，从而导致“卡住”状态。
-* 当某个证书到期时，将不再从 CDN 中删除与该证书关联的域名和 IP 允许列表。
-   * 在此类情况下，该站点可继续访问。
-   * [](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)Cloud Manager UI 将显示更多醒目的事先警告，强调 SSL 证书即将到期。
-* 在将 Sites 作为解决方案添加到仅限资产的程序时，修复了 AEM 无法访问发布端点的问题。
+* 删除程序时，还将删除任何关联的正在运行的管道，确保不会将管道错误地指定为失败状态。
+* 有时，当管道执行的所有步骤都是“已完成”时，管道的状态会视为“正在运行”，使其似乎处于卡住状态。 它现在被视为“完成”。
+* 对于使用代码生成器原型生成的存储库分支，CI/CD管道失败。
