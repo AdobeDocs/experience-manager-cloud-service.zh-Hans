@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6c43921b90daa64dd4695c569e6dcd6f23e464cb
+source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
 workflow-type: tm+mt
-source-wordcount: '4265'
+source-wordcount: '4271'
 ht-degree: 96%
 
 ---
@@ -133,6 +133,8 @@ ht-degree: 96%
    + 迁移工具的发行说明{#migration-tools}
       + [最新发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2023 {#2023}
+         + [2023.8.0 的发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-08-0.md)
+         + [2023.7.0 的发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-07-0.md)
          + [2023.6.0 的发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-06-0.md)
          + [2023.3.0 的发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2023-03-0.md)
       + 2022 {#2022}
