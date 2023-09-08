@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
 workflow-type: tm+mt
-source-wordcount: '6436'
+source-wordcount: '6446'
 ht-degree: 1%
 
 ---
@@ -634,7 +634,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 要创建客户端库并将其添加到CRX存储库中，请执行以下步骤：
 
-1. 创建客户端对库执行以下步骤。 有关更多信息，请参阅 [使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. 创建客户端库。 有关更多信息，请参阅 [使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. 在CRXDE中，添加属性 `categories`字符串类型值为 `customfunction` 到 `clientlib` 文件夹。
 
    >[!NOTE]
@@ -656,6 +656,10 @@ While writing JavaScript code in the rule editor, the following visual cues help
    [![使用自定义函数创建规则](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. 点按 **[!UICONTROL 完成]**. 您的自定义函数已添加。
+
+   >[!NOTE]
+   >
+   > 要使用自定义函数从规则编辑器调用表单数据模型， [查看此处](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### 函数声明支持的类型 {#function-declaration-supported-types}
 

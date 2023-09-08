@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1244'
 ht-degree: 2%
 
 ---
@@ -146,3 +146,26 @@ Edit Properties dialog for an interactive communication-->
 ![invoke-service](assets/invoke-service.png)
 
 此外，您可以使用 `guidelib.dataIntegrationUtils.executeOperation` 用于在规则编辑器的代码编辑器中编写JavaScript的API。 <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+
+### 使用自定义函数调用表单数据模型 {#invoke-form-data-model-using-custom-functions}
+
+您可以 [使用自定义函数从规则编辑器调用表单数据模型](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). 要调用表单数据模型，请将表单数据模型添加到允许列表。 要将表单数据模型添加到允许列表，请执行以下操作：
+
+1. 转到Experience ManagerWeb控制台，网址为 `https://server:host/system/console/configMgr`.
+1. 定位 **[!UICONTROL 用于服务调用的表单数据模型的自适应表单级白名单 — 配置工厂]**.
+1. 单击 ![加号图标](/help/forms/assets/Smock_Add_18_N.svg) 图标以添加配置……
+1. 添加 **[!UICONTROL 内容路径模式]** 以指定自适应Forms的位置。  默认情况下，该值为 `/content/forms/af/(.*)` 包括所有自适应Forms。 您还可以指定特定自适应表单的路径。
+1. 添加 **[!UICONTROL 表单数据模型路径模式]** 以指定表单数据模型的位置。 默认情况下，该值为 `/content/dams/formsanddocuments-fdm/(.*)` 包括所有表单数据模型。 您还可以指定特定表单数据模型的路径。
+1. 保存设置。
+
+添加的配置将保存在下 **[!UICONTROL 用于服务调用的表单数据模型的自适应表单级白名单 — 配置工厂]** 选项。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
+
+>[!NOTE]
+>
+> 要通过AEM原型项目使用自定义函数从规则编辑器调用表单数据模型，请执行以下操作：
+>
+>1. [创建配置文件](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. 设置getContentPathPattern和getFormDataModelPathPattern的属性。
+>1. 部署项目。

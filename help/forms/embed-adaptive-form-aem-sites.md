@@ -5,9 +5,9 @@ description: 您可以使用自适应Forms — 嵌入组件在AEM Sites页面中
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+source-git-commit: d9dee0b5a070da6a19004c749f69c724fff9d967
 workflow-type: tm+mt
-source-wordcount: '3158'
+source-wordcount: '3177'
 ht-degree: 6%
 
 ---
@@ -259,6 +259,11 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 * **使用页面语言**：使用AEM Sites页面的本地，而不是自适应表单的区域设置。 此选项仅适用于自适应表单(Foundation)。
 * **设置专注于表单**：选择以将焦点设置为自适应表单的第一个字段。 此选项仅适用于自适应表单(Foundation)。
 * **主题**：选择用于定义自适应表单组件样式的主题。 样式设置包括外观属性，如字体样式、背景颜色、尺寸和对齐方式。 此选项仅适用于自适应表单(Foundation)。
+
+  >[!NOTE]
+  >
+  > 您可以使用 **使用页面语言**， **设置专注于表单** 和 **主题** 仅自适应表单(Foundation)的选项。
+
 * **表单覆盖框架的整个宽度**：内联框架(iframe)是一个HTML元素，用于将自适应表单加载到AEM Sites页面。
 
    * 如果 **[!UICONTROL 表单覆盖框架的整个宽度]** 如果选中复选框，则自适应表单会占据其所在的容器的整个宽度。 在这种情况下，不使用iframe呈现表单。 自适应表单的布局和设计可适应容器的整个宽度，使其响应速度快并可根据不同的屏幕大小进行调整。 利用此选项，可在AEM Sites页面中嵌入多个自适应Forms。
