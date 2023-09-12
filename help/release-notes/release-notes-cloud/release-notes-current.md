@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 555873b15e3a748c95893a371925d3ab6e87ae67
+source-git-commit: 407afc27911c507d3662fa4897b29e8187bbec7a
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 26%
@@ -116,9 +116,9 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * [**Google reCAPTCHA 企业支持**](/help/forms/captcha-adaptive-forms-core-components.md)：在自适应表单中使用 Google reCAPTCHA Enterprise 以增强对欺诈活动和垃圾邮件的防御，从而提供更安全的用户体验。借助高级风险分析和无缝集成，真实用户可以轻松提交表单，同时有效阻止机器人。
 
-* **Adobe Analytics与Forms的Experience Cloud设置自动化**：您现在可以使用两个按钮来启用具有Experience Cloud设置自动化的Adobe Analytics。 它允许您将AEM Formsas a Cloud Service与Experience Platform标记和Adobe Analytics连接起来，以捕获和跟踪已发布表单的性能指标。
+* [**Adobe Analytics与Forms的Experience Cloud设置自动化**](/help/forms/forms-experience-cloud-setup-automation.md)：您现在可以使用两个按钮来启用具有Experience Cloud设置自动化的Adobe Analytics。 它允许您将AEM Formsas a Cloud Service与Experience Platform标记和Adobe Analytics连接起来，以捕获和跟踪已发布表单的性能指标。
 
-* **自适应Forms的Adobe Analytics报表模板**：Formsas a Cloud Service现在提供Adobe Analytics报表OOTB。 它有助于您轻松了解表单的性能。 通过表单级量度，可深入分析表单在多个关键绩效指标(KPI)（如呈现版本、访客、提交、平均填充时间）上的执行情况。 通过跟踪用户行为和反馈，您可以识别导致混淆的表单区域，并指导改进表单的设计和功能。
+* [**自适应Forms的Adobe Analytics报表模板**](/help/forms/view-understand-aem-forms-analytics-reports.md)：Formsas a Cloud Service现在提供Adobe Analytics报表OOTB。 它有助于您轻松了解表单的性能。 通过表单级量度，可深入分析表单在多个关键绩效指标(KPI)（如呈现版本、访客、提交、平均填充时间）上的执行情况。 通过跟踪用户行为和反馈，您可以识别导致混淆的表单区域，并指导改进表单的设计和功能。
 
   ![自适应表单用户参与adobe analytics报告](/help/forms/assets/forms-analytics-report.png)
 
