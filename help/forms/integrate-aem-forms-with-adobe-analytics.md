@@ -3,9 +3,9 @@ title: 如何将AEM Forms与Adobe Analytics集成？
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
-source-git-commit: d97b17981e82323317e34185e47ee3f4224795b3
+source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1750'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 | AEM as a Cloud Service | 本文 |
 
-<span class="preview"> 要将自适应表单与Adobe Analytics无缝而快速地集成，请访问 [使用Experience Cloud设置自动为自适应表单启用Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md). </span>
+<span class="preview"> 本文档概述了在自适应表单上启用Adobe Analytics的手动过程。 但是，Adobe建议使用 [使用Experience Cloud设置自动为自适应表单启用Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md). </span>
 
 AEM Forms集成 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) 允许您捕获和跟踪已发布表单的性能指标。 分析这些量度背后的目标是使商业用户能够洞察最终用户行为并优化数据捕获体验。 您可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）用户的行为。
 
