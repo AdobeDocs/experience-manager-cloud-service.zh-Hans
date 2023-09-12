@@ -1,15 +1,17 @@
 ---
 title: 使用Experience Cloud设置自动为自适应表单启用Adobe Analytics
 description: Experience Cloud设置自动化有助于将Adobe Analytics连接到自适应表单。 它有助于跟踪和分析用户与自适应表单的交互，提供访客交互和参与情况的见解。
-source-git-commit: 3ff64646b7d7c03374bc6deadbdeb7bc27dbbacf
+source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
 
 
 # 使用Experience Cloud设置自动为自适应表单启用Adobe Analytics {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+
+<span class="preview"> 这是预发行功能，可通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Experience Cloud设置自动化有助于将Adobe Analytics连接到Adaptive Forms，后者有助于跟踪和分析用户与您的表单的交互，并提供有关访客交互和参与情况的见解。 Experience Cloud设置自动化还有助于监控表单性能，其中涉及评估完成时间和流失点等指标。 此分析有助于优化表单以获得更好的用户体验，同时根据登录状态（例如，匿名用户）区分用户行为以确定一般趋势和模式。
 
