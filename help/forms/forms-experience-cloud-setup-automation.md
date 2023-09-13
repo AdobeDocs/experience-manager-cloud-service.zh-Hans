@@ -1,9 +1,9 @@
 ---
-title: 使用Experience Cloud设置自动为自适应表单启用Adobe Analytics
-description: Experience Cloud设置自动化有助于将Adobe Analytics连接到自适应表单。 它有助于跟踪和分析用户与自适应表单的交互，提供访客交互和参与情况的见解。
-source-git-commit: b44b54a88b87dc391dfeb51fb8b83095c274bd38
+title: 为自适应表单启用Adobe Analytics
+description: Experience Cloud设置自动化有助于将Adobe Analytics连接到自适应表单，以跟踪有关访客交互和参与情况的见解。
+source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Adobe Analytics提供了一系列全面的自适应Forms性能指标，旨在提
 
 * **需要访客帮助的区域** 量度包括帮助视图、验证错误实例和字段访问频率，突出显示用户在填写表单时可能需要帮助的位置。
 
-![Analytics报表](assets/analytics-report.png)
+![Analytics报表](assets/analytics-report.png){width="100%"}
 
 
 有关每个指标的详细信息，请访问 [查看和了解AEM Forms Analytics报表](/help/forms/view-understand-aem-forms-analytics-reports.md)
@@ -58,7 +58,7 @@ Adobe Experience Manager Forms中的Experience Cloud设置自动化需要 **Adob
 
 要验证上述内容是否可用于您的Formsas a Cloud Service环境，请访问 [开发人员控制台](https://developer.adobe.com/console/projects)，导航到项目并使用项目ID搜索项目，例如，使用URL搜索环境 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`，项目ID为 `p45913-e175111`. 确保列出了Experience Cloud设置自动化、Adobe Analytics和Experience Platform LaunchAPI。 如果列出了这些扩展，则可为自适应Forms启用Adobe Analytics。
 
-![Forms Analytics集成先决条件](assets/analytics-aem.png)
+![Forms Analytics集成先决条件](assets/analytics-aem.png){width="100%"}
 
 <!-- 
 >[!NOTE]
@@ -94,7 +94,7 @@ Adobe Experience Manager Forms中的Experience Cloud设置自动化需要 **Adob
 1. 在您的AEM实例上，转到 **[!UICONTROL Forms]** >> **[Forms和文档]** 并选择您的 **[!UICONTROL 表单]**，您会看到Adobe Analytics已集成到您的表单中，如下图所示。
 1. 现在，您可以查看 [自适应表单Adobe Analytics报表](#view-adobe-analytics-report).
 
-![集成的AEM Analytics](assets/analytics-aem-integrated.png)
+![集成的AEM Analytics](assets/analytics-aem-integrated.png){width="100%"}
 
 ### 为核心组件启用具有自适应Forms的Adobe Analytics {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
@@ -115,7 +115,7 @@ Adobe Experience Manager Forms中的Experience Cloud设置自动化需要 **Adob
 1. 在您的AEM实例上，转到 **[!UICONTROL Forms]** >> **[!UICONTROL Forms和文档]**.
 1. 选择您的表单，您会看到Adobe Analytics已集成（如左图所示）到为Adobe Analytics激活的Forms。
 
-   ![查看报表](assets/activ-aa.png)
+   ![查看报表](assets/activ-aa.png){width="100%"}
 
 1. 单击 **Adobe Analytics** 查看报表和分析性能数据。
 
