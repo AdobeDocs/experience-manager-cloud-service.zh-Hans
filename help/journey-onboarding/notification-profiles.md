@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中创建用户配置文件来管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 6764fe48068325dfb7ed84cf7834c7eb5f25fb48
-workflow-type: ht
-source-wordcount: '970'
-ht-degree: 100%
+source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 98%
 
 ---
 
@@ -22,6 +22,10 @@ Adobe 有时需要就 AEM as a Cloud Service 环境联系用户。除了产品�
 
 * **事件通知** – 这些通知是在事件期间或 Adobe 发现您的 AEM as a Cloud Service 环境存在潜在可用性问题时发送的。
 * **主动通知** – 当 Adobe 支持团队成员想要提供有关可使您的 AEM as a Cloud Service 环境受益的潜在优化或建议的指导时，将发送这些通知。
+
+>[!NOTE]
+>
+>不支持将组分配给主动通知。 您需要将用户直接分配给产品配置文件。
 
 为了让正确的用户收到这些通知，您需要配置和分配用户配置文件，如本文档所述。
 
