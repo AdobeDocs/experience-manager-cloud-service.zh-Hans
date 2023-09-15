@@ -2,22 +2,22 @@
 title: 将内容摄取到Cloud Service
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 382d1ed93e9545127ebb54641657db365886503d
+source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 8%
+source-wordcount: '2142'
+ht-degree: 6%
 
 ---
 
 # 将内容摄取到Cloud Service {#ingesting-content}
 
-## 内容传输工具中的摄取流程 {#ingestion-process}
+## Cloud Acceleration Manager中的摄取流程 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="内容引入"
 >abstract="摄取是指将内容从迁移集摄取到目标Cloud Service实例。 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans" text="增补摄取"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="增补提取"
 
 请按照以下步骤使用Cloud Acceleration Manager摄取迁移集：
 
@@ -42,50 +42,31 @@ ht-degree: 8%
    >以下注释适用于摄取内容：
    > 如果源是“作者”，则建议将其摄取到目标上的“作者”层。 同样，如果源是Publish，则目标也应是Publish。
    > 如果目标层为 `Author`时，创作实例会在摄取期间关闭，并对用户（例如，作者或执行维护的任何人）不可用。 原因是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 确保您的团队了解此事实。 另请注意，环境在创作引入期间似乎处于休眠状态。
-   > 您可以运行可选的预复制步骤，以显着加快摄取阶段。 请参阅 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
+   > 您可以运行可选的预复制步骤，以显着加快引入速度。 请参阅 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
    > 如果使用预复制引入（对于S3或Azure数据存储），建议先单独运行创作引入。 这样做可加快稍后运行的发布引入。
    > 摄取不支持快速开发环境(RDE)目标，即使用户有权访问，摄取也不会显示为可能的目标选择。
 
    >[!IMPORTANT]
-   > 以下重要注意事项适用于摄取内容：
    > 仅当属于本地环境时，才能启动到目标环境的引入 **AEM管理员** Cloud Service创作服务上的组。 如果您无法开始引入，请参阅 [无法开始引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
-   > 如果设置 **擦除** 在摄取之前启用，它会删除整个现有存储库并创建一个可以将内容摄取到的存储库。 此工作流意味着它会重置所有设置，包括目标Cloud Service实例上的权限。 对于添加到中的管理员用户，此重置也为true **管理员** 组。 必须准备好管理员组才能开始引入。
+
+   * 选择 `Wipe` 值
+      * 此 **擦除** 选项设置目标的摄取起点。 如果 **擦除** 之后，包括其所有内容的目标将被重置为Cloud Manager中指定的AEM版本。 如果未启用，则目标会保持其当前内容作为起点。
+      * 请注意，此选项会 **NOT** 会影响执行内容摄取的方式。 摄取始终使用内容替换策略和 _非_ 内容合并策略，因此 **擦除** 和 **非划出** 在这种情况下，摄取迁移集将会覆盖目标上同一路径中的内容。 例如，如果迁移集包含 `/content/page1` 并且目标已包含 `/content/page1/product1`，摄取将删除整个 `page1` 路径及其子页面，包括 `product1`，并将其替换为迁移集中的内容。 这意味着在执行 **非划出** 摄取到包含应维护的任何内容的目标。
+
+   >[!IMPORTANT]
+   > 如果设置 **擦除** 为摄取启用，它会重置整个现有Cloud Service，包括目标存储库实例的用户权限。 对于添加到中的管理员用户，此重置也为true **管理员** 并且必须再次将该用户添加到管理员组才能开始引入。
 
 1. 单击 **摄取**.
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. 然后，您可以从“摄取作业”列表视图中监视摄取阶段，并在摄取过程中使用摄取的操作菜单查看日志。
+1. 然后，您可以从“摄取作业”列表视图中监视摄取，并使用摄取的操作菜单查看持续时间并记录摄取进度。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
 1. 单击 **(i)** 按钮，以了解有关摄取作业的详细信息。 您可以通过单击来查看摄取操作在运行或完成时每个步骤的持续时间 **...**，然后单击 **查看持续时间**. 该提取中的信息还显示出来，以实现所摄取的内容。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
-
-<!-- Alexandru: hiding temporarily, until it's reviewed 
-
-1. The **Migration Set ingestion** dialog box displays. Content can be ingested to either Author instance or Publish instance at a time. Select the instance to ingest content to. Click on **Ingest** to start the ingestion phase. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
-
-   >[!IMPORTANT]
-   >If ingesting with pre-copy is used (for S3 or Azure Data Store), it is recommended to run Author ingestion first alone. This will speed up the Publish ingestion when it is run later. 
-
-   >[!IMPORTANT]
-   >When the **Wipe existing content on Cloud instance before ingestion** option is enabled, it deletes the entire existing repository and creates a new repository to ingest content into. This means that it resets all settings including permissions on the target Cloud Service instance. This is also true for an admin user added to the **administrators** group.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
-
-   Additionally, click on **Customer Care** to log a ticket, as shown in the figure below. 
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
-
-   Also, see [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
-
-1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png) -->
 
 ## 增补摄取 {#top-up-ingestion-process}
 
@@ -95,14 +76,14 @@ ht-degree: 8%
 >abstract="使用增补功能移动自上次内容转移活动以来修改的内容。引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hans" text="查看日志"
 
-内容传输工具具备支持差异内容&#x200B;*增补*&#x200B;的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。
+内容传输工具具备允许通过执行 *增补* 迁移集的URL。 这样可修改迁移集，使其仅包含自上次提取以来已更改的内容，而无需再次提取所有内容。
 
 >[!NOTE]
->初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。如果您对第一次完整摄取使用了预复制步骤，则可以跳过后续增补摄取的预复制（如果增补迁移集大小小于200 GB）。 原因是它可能会增加整个过程的时间。
+>初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。如果您在第一次摄取中使用了预复制步骤，则可以跳过后续增补摄取的预复制（如果增补迁移集大小小于200 GB）。 原因是它可能会增加整个过程的时间。
 
-摄取过程完成后，要摄取增量内容，您必须运行 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)，然后使用增补摄取方法。
+要在完成某些摄取后摄取差异内容，您必须运行 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)，然后结合使用摄取方法和 **擦除** option **已禁用**. 请务必阅读 **擦除** ，以避免丢失目标上已有的内容。
 
-从创建引入作业开始，并确保 **擦除** 在摄取阶段被禁用，如下所示：
+从创建引入作业开始，并确保 **擦除** 在摄取期间被禁用，如下所示：
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
@@ -161,7 +142,7 @@ Release Orchestrator通过自动应用更新来自动使环境保持最新。 �
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakConstraint0030：违反了唯一性约束 [jcr：uuid] 值为a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5： /some/path/jcr：content， /some/other/path/jcr：content
 
-AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在摄取的节点与位于目标实例上不同路径的其他位置的节点具有相同的uuid。
+AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在摄取的节点具有与目标实例上不同路径的其他位置中存在的节点相同的uuid。
 如果在提取和后续操作之间在源上移动节点，则可能会发生这种情况 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
 如果目标上的节点在摄取和后续增补摄取之间移动，也会发生这种情况。
 
@@ -172,11 +153,11 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 导致问题的另一个常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是目标实例上特定节点的版本冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakIntegrity0001：无法删除引用的节点：8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-如果在摄取和后续增补摄取之间修改了目标上的节点，以便创建了新版本，则可能会发生这种情况。 如果引入启用了“包含版本”，则可能会发生冲突，因为目标现在具有由版本历史记录和其他内容引用的较新版本。 摄取进程将无法删除违规版本节点，因为它已被引用。
+如果在引入和后续引入之间修改了目标上的节点，则可能会发生这种情况 **非划出** 摄取，以便创建一个新版本。 如果在启用“包含版本”的情况下提取迁移集，则可能会发生冲突，因为目标现在具有版本历史记录和其他内容所引用的较新版本。 摄取进程将无法删除违规版本节点，因为它已被引用。
 
 解决方案可能要求再次执行增补提取而不考虑违规节点。 或者，创建一个包含违规节点的小型迁移集，但禁用“包含版本”。
 
-最佳实践表明，如果必须使用划出=false和“包含版本”=true来运行引入，则在迁移历程完成之前，必须尽可能少地修改目标上的内容。 否则，可能会发生这些冲突。
+最佳实践表明 **非划出** 必须使用包含版本（即，使用“包含版本”=true进行提取）的迁移集来运行引入，在迁移历程完成之前，尽可能少地修改目标上的内容至关重要。 否则，可能会发生这些冲突。
 
 
 ## 后续内容 {#whats-next}
@@ -184,4 +165,3 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 摄取成功后，AEM索引将自动开始。 请参阅 [迁移内容后编制索引](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) 以了解更多信息。
 
 完成将内容摄取到Cloud Service中后，您可以查看每个步骤（提取和摄取）的日志并查找错误。 请参阅 [查看迁移集的日志](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) 了解更多信息。
-
