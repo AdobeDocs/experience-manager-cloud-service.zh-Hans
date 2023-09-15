@@ -1,9 +1,9 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.8.0 的发行说明
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.9.0 的发行说明
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.9.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 2b23abec404689d1cc4deb55a2d5ed2a4f236644
+source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 76%
@@ -21,7 +21,7 @@ ht-degree: 76%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 版本 2023.8.0 的发布日期是 2023 年 9 月 14 日。 下一个版本计划于 2023 年 10 月 5 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 的发布日期是 2023 年 9 月 14 日。 下一个版本计划于 2023 年 10 月 5 日发布。
 
 ## 新增功能 {#what-is-new}
 

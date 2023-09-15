@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: eb0d74e4ab1feaf29de2254fed7c80e690622dce
+source-git-commit: 1a40ed62c57bfa704abe0aad669d1c628416d35a
 workflow-type: tm+mt
-source-wordcount: '4288'
-ht-degree: 96%
+source-wordcount: '4291'
+ht-degree: 99%
 
 ---
 
@@ -86,6 +86,7 @@ ht-degree: 96%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [2023.8.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [2023.7.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [2023.6.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [2023.5.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
@@ -321,7 +322,7 @@ ht-degree: 96%
    + 管理 {#administering}
       + 内容片段 {#content-fragments}
          + [概述和概念](/help/sites-cloud/administering/content-fragments/overview.md)
-         + [使用GraphQL的Headless交付](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
+         + [使用 GraphQL 进行 Headless 投放](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
          + [内容片段设置](/help/sites-cloud/administering/content-fragments/setup.md)
          + [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
          + [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md)
@@ -577,7 +578,7 @@ ht-degree: 96%
          + [查看和了解自适应Forms Analytics报表](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [将基于核心组件的自适应表单嵌入外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
          + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
@@ -603,7 +604,7 @@ ht-degree: 96%
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-      + 基础组件 {#authoring-adaptive-forms-foundation-components}
+      + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
             + [将现有 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans)
@@ -756,7 +757,7 @@ ht-degree: 96%
       + [管理内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + 创作{#authoring}
          + [创作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
-         + [Markdown编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+         + [Markdown 编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
       + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
       + [JSON 预览](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + GraphQL API {#graphql-api}
