@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 49abc947db97de5ceb248383b556e77d4fc68060
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 4%
+source-wordcount: '1344'
+ht-degree: 5%
 
 ---
 
@@ -27,34 +27,6 @@ ht-degree: 4%
 * 共享，使用 [[!DNL Adobe Asset Link]](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html).
 * 共享，使用 [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
-## 前提条件 {#prerequisites}
-
-您需要管理员权限 [配置以链接形式共享资产的设置](#config-link-share-settings).
-
-## 配置链接共享设置 {#config-link-share-settings}
-
-[!DNL Experience Manager Assets] 用于配置默认链接共享设置。
-
-1. 单击 [!DNL Experience Manager] 徽标，然后导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 资源配置]** > **[!UICONTROL 链接共享]**.
-1. 初始设置：
-
-   * **包括原版:**
-
-      * 选择 `Select Include Originals` 以选择 `Include Originals` 链接共享对话框中的默认选项。
-      * 通过选择适当的选项来指定行为，以使 `Include Originals` 选项可编辑、只读或隐藏。
-   * **包括演绎版:**
-      * 选择 `Select Include Renditions` 用于选择 `Include Renditions` 链接共享对话框中的默认选项。
-      * 通过选择适当的选项来选择行为，以 `Include Renditions` 选项可编辑、只读或隐藏。
-
-1. 在中指定链接的默认有效期 `Validity Period` 中的字段 `Expiration date` 部分。
-
-1. **[!UICONTROL 链接共享]** 操作栏中的按钮：
-   * 所有用户具有 `jcr:modifyAccessControl` 权限可以查看 [!UICONTROL 链接共享] 选项。 默认情况下，它对所有管理员都可见。 此 [!UICONTROL 链接共享] 默认情况下，此按钮对所有人可见。 可以配置为仅对定义的组显示此选项，也可以从特定组拒绝此选项。 选择 `Allow only for groups` 如果您希望允许特定组查看 `Share Link` 选项。 选择 `Deny from groups` 拒绝 `Share Link` 选项。 选择任意这些选项后，使用以下方式指定组名 `Select Groups` 用于添加需要允许或拒绝的组名的字段。
-
-有关电子邮件配置的相关设置，请访问 [电子邮件服务文档](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
-
-![配置电子邮件服务](config-email-service.png)
-
 ## 以链接方式共享资产 {#sharelink}
 
 通过链接共享资产是一种向外部各方、营销人员和其他人提供资源的便捷方式 [!DNL Experience Manager] 用户。 该功能允许匿名用户访问和下载与其共享的资产。 从共享链接下载资源时， [!DNL Experience Manager Assets] 使用异步服务，以便提供更快且无中断的下载。 要下载的资产将在后台排入可管理文件大小的ZIP存档中。 对于大型下载，下载将捆绑到每个文件大小100 GB的多个文件中。
@@ -70,12 +42,11 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 可使用链接共享功能以两种方式共享资源：
 
-1. 生成共享链接， [复制并共享资产链接](#copy-and-share-assets-link) 和其他用户。
-1. 生成共享链接并 [通过电子邮件共享资产链接](#share-assets-link-through-email). 您可以修改默认值（如过期日期和时间），并允许下载原始资源及其演绎版。 您可以通过添加多个用户的电子邮件地址来向其发送电子邮件。
+1. 生成共享链接， [复制并共享资产链接](#copy-and-share-assets-link) 和其他用户。 链接的默认过期时间为一天。 与其他用户共享复制的链接时，无法更改过期时间。
 
-![“链接共享”对话框](assets/share-link.png)
+1. 生成共享链接并 [通过电子邮件共享资产链接](#share-assets-link-through-email). 在这种情况下，您可以修改默认值（如过期日期和时间），并允许下载原始资源及其演绎版。 您可以通过添加多个用户的电子邮件地址来向其发送电子邮件。
 
-在这两种情况下，都可以修改默认值（如过期日期和时间），并允许下载原始资源及其演绎版。
+   ![“链接共享”对话框](assets/link-sharing-dialog.png)
 
 ### 复制并共享资产链接{#copy-and-share-asset-link}
 
@@ -84,9 +55,6 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. 登录 [!DNL Experience Manager Assets] 并导航到 **[!UICONTROL 文件]**.
 1. 选择资源或包含资源的文件夹。 在工具栏中，单击 **[!UICONTROL 共享链接]**.
 1. 此 **[!UICONTROL 链接共享]** 此时将显示一个对话框，其中包含中自动生成的资源链接 **[!UICONTROL 共享链接]** 字段。
-1. 根据需要设置共享链接的过期日期。
-1. 下 **[!UICONTROL 链接设置]**，选中或取消选中 `Include Originals` 或 `Include Renditions` 以包含或排除其中一个。 必须选择至少一个选项。
-1. 选定资产的名称将显示在 [!DNL Share Link] 对话框。
 1. 复制资产链接并与用户共享。
 
 ### 通过电子邮件通知共享资产链接 {#share-assets-link-through-email}
@@ -96,7 +64,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. 选择资源或包含资源的文件夹。 在工具栏中，单击 **[!UICONTROL 共享链接]**.
 1. 此 **[!UICONTROL 链接共享]** 此时将显示一个对话框，其中包含中自动生成的资源链接 **[!UICONTROL 共享链接]** 字段。
 
-   * 在电子邮件地址框中，键入要与其共享链接的用户的电子邮件地址。 您可以与多个用户共享该链接。 如果用户是您组织的成员，请从下拉列表中显示的建议中选择其电子邮件地址。 在电子邮件地址文本字段中，键入要与其共享链接的用户的电子邮件地址，然后单击 [!UICONTROL 输入]. 您可以与多个用户共享该链接。
+   * 在电子邮件地址框中，键入要与其共享链接的用户的电子邮件ID。 您可以与多个用户共享该链接。 如果用户是您组织的成员，请从下拉列表中显示的建议中选择其电子邮件ID。 如果用户是外部用户，请键入完整的电子邮件ID并按 **[!UICONTROL 输入]**；电子邮件ID将添加到用户列表。
 
    * 在 **[!UICONTROL 主题]** 框中，键入主题以指定共享资源的用途。
    * 在 **[!UICONTROL 消息]** 框中，根据需要键入消息。
@@ -105,13 +73,13 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 1. 单击 **[!UICONTROL 共享]**. 将显示一条消息，确认该链接已与用户共享。 用户将收到一封包含共享链接的电子邮件。
 
-![链接共享电子邮件](assets/link-sharing-email-notification.png)
+   ![链接共享电子邮件](assets/link-sharing-email-notification.png)
 
 ### 使用资源链接下载资源
 
 任何有权访问共享资源链接的用户都可以下载捆绑在zip文件夹中的资源。 下载过程是相同的，无论用户是访问复制的资产链接，还是使用通过电子邮件共享的资产链接。
 
-* 单击资产链接或在浏览器中粘贴该URL。 此 [!UICONTROL 链接共享] 界面打开，您可以在其中切换到 [!UICONTROL 卡片视图] 或 [!UICONTROL 列表视图].
+* 单击资产链接或将该URL粘贴到浏览器中。 此 [!UICONTROL 链接共享] 界面打开，您可以在其中切换到 [!UICONTROL 卡片视图] 或 [!UICONTROL 列表视图].
 
 * 在 [!UICONTROL 卡片视图]，您可以将鼠标悬停在共享资源或共享资源文件夹上以选择资源或将它们排入下载队列。
 
@@ -121,7 +89,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
   ![将下载排入队列](assets/queue-download.png)
 
-* 在下载文件准备就绪后，单击 **[!UICONTROL 下载收件箱]** 选项以查看下载状态。 对于大型下载，单击 **[!UICONTROL 刷新]** 按钮以更新状态。
+* 在下载文件准备就绪后，单击 **[!UICONTROL 下载收件箱]** 选项以查看下载状态。 对于大型下载，请单击 **[!UICONTROL 刷新]** 按钮以更新状态。
 
   ![下载收件箱](assets/link-sharing-download-inbox.png)
 
@@ -234,13 +202,20 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 >* `[aem_server]:[port]/linkexpired.html`
 
 <!--
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the Experience Manager logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
-1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service** with the details mentioned against their names:
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
 
     * SMTP server host name: email server host name
     * SMTP server port: email server port
     * SMTP user: email server user name
     * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
 -->
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
