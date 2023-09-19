@@ -4,7 +4,7 @@ description: 了解迁移过程将如何对目标Cloud Service实例上的摄取
 source-git-commit: 22c5cbf300bb0b3b0db04fcfa669dde44197c326
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="内容索引"
->abstract="AEM索引是指在将内容迁移到实例上之后，在Cloud Service实例上编制内容的索引。 需要编制索引以支持在该实例上搜索内容。"
+>abstract="AEM 索引是指将内容迁移到 Cloud Service 实例后为 Cloud Service 实例上的内容编制索引。需要编制索引以支持搜索该实例上的内容。"
 
 在Cloud Acceleration Manager完成将内容摄取到Cloud Service实例中后，便可以使用它。 最初，内容未编入索引，这可能会导致环境不稳定，出现不可搜索的内容和性能下降等问题。
 为获得实例上的最佳性能，迁移过程将自动开始索引内容。 除了监视索引进度外，没有其他可执行的操作。

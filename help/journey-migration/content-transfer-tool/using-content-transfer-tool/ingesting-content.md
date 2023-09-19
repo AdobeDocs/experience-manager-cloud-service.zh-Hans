@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
 workflow-type: tm+mt
 source-wordcount: '2142'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="内容引入"
->abstract="摄取是指将内容从迁移集摄取到目标Cloud Service实例。 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
+>abstract="引入是指将内容从迁移集引入到目标 Cloud Service 实例中。内容转移工具有一项支持差异内容增补的功能，其中可仅转移自上次内容转移活动以来作出的更改。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="增补提取"
 
 请按照以下步骤使用Cloud Acceleration Manager摄取迁移集：
