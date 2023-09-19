@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 4cf7d3692b53e5cb5baecd7d0ee93824d9186380
+source-git-commit: b3ba87c1fa2f0578f93c7c3bd2671fbc75178b4e
 workflow-type: tm+mt
-source-wordcount: '2267'
-ht-degree: 99%
+source-wordcount: '2412'
+ht-degree: 81%
 
 ---
 
@@ -26,7 +26,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!NOTE]
 >
->Universal Editor 仍在开发中。它当前无法编辑所有内容类型。
+>Universal Editor 仍在开发中。目前，它无法编辑所有内容类型。
 
 ## 准备应用程序 {#prepare-app}
 
@@ -176,19 +176,6 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >使用热键 `P` 可切换到预览模式。
 
-#### 文本模式 {#text-mode}
-
-在文本模式下，内容作者可以单击选择文本内容。
-
-![文本模式](assets/text-mode.png)
-
-* 您可以就地[编辑纯文本](#editing-content)。
-* 您也可以使用组件边栏上显示的其他格式选项来[编辑富文本](#editing-rich-text)。
-
->[!TIP]
->
->使用热键 `T` 可切换到文本模式。
-
 #### 媒体模式 {#media-mode}
 
 在媒体模式下，内容作者可以单击以选择媒体内容。
@@ -203,11 +190,15 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 组件模式 {#component-mode}
 
-在组件模式下，内容作者可以单击以选择[内容片段](/help/assets/content-fragments/content-fragments.md)。
+在组件模式下，内容作者可以单击选择组件以进行编辑，包括：
+
+* [编辑纯文本](#editing-content) 就位。
+* [编辑富文本](#editing-rich-text) 替换组件边栏中显示的其他格式选项。
+* [编辑内容片段](#edit-content-fragment)
 
 ![组件模式](assets/component-mode.png)
 
-在选择内容片段时，其详细信息将会显示在组件边栏中，您可以在其中[编辑内容片段](#edit-content-fragment)。
+当您选择 [内容片段](/help/assets/content-fragments/content-fragments.md)时，其详细信息将显示在组件边栏中，您可以在其中编辑内容片段。
 
 >[!TIP]
 >
@@ -217,14 +208,14 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 编辑器占据窗口的大部分区域，并在其中呈现在[地址栏](#location-bar)中指定的页面。
 
-* 如果编辑器处于[文本模式](#text-mode)或[媒体模式](#media-mode)等编辑模式下，则内容是可编辑的，但您无法访问链接。
+* 如果编辑器位于 [组件模式，](#component-mode) 内容将可编辑，但您无法关注链接。
 * 如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
 
 ![编辑器](assets/editor.png)
 
 ### 组件边栏 {#component-rail}
 
-组件边栏始终位于编辑器的右侧。 根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
+始终沿该编辑器的右侧显示组件边栏。根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
 
 ![组件边栏](assets/component-rail.png)
 
@@ -244,6 +235,20 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >使用热键 `D` 可切换到属性模式。
 
+##### 编辑 {#edit}
+
+时间 [组件模式，](#component-mode) 所选组件的编辑选项将显示在组件边栏中。 在组件边栏中，您可以编辑所选的组件。 但是，您也可以点按或单击编辑按钮。
+
+![“编辑”图标](assets/edit.png)
+
+点击或单击编辑按钮将打开 [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) 在新选项卡中。 这允许您完全访问内容片段编辑器以编辑关联的内容片段。
+
+根据工作流的需要，您可能希望在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
+
+>[!TIP]
+>
+>使用热键 `E` 可编辑所选组件。
+
 #### 内容树模式 {#content-tree-mode}
 
 在内容树模式中，边栏显示页面内容的层次结构。
@@ -258,21 +263,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >使用热键 `F` 可切换到内容树模式。
 
-#### 编辑 {#edit}
-
-在[组件模式](#component-mode)中，如果您选择一个内容片段，编辑选项将显示在组件边栏上。[](/help/assets/content-fragments/content-fragments.md)
-
-![“编辑”图标](assets/edit.png)
-
-点按或单击编辑按钮将会在新选项卡中打开[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)，以便您访问内容片段编辑器的全部功能。
-
-您还可以在组件边栏中编辑内容片段的详细信息，具体取决于工作流的需求。
-
->[!TIP]
->
->使用热键 `E` 可编辑所选组件。
-
-#### 添加 {#add}
+##### 添加 {#add}
 
 如果您在内容树或编辑器中选择容器组件，添加选项将出现在组件边栏上。
 
@@ -284,7 +275,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >使用热键`A`将组件添加到选定的容器组件。
 
-#### 删除 {#delete}
+##### 删除 {#delete}
 
 如果您在内容树或编辑器中选择容器组件内的组件，删除选项将出现在组件边栏上。
 
@@ -298,33 +289,39 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ## 编辑内容 {#editing-content}
 
-编辑内容是简单而直观的。在编辑模式（[文本模式](#text-mode)、[媒体模式](#media-mode)和[组件模式](#component-mode)）下，随着在编辑器中将光标悬停在内容上方，将用蓝色框突出显示可编辑的内容。
+编辑内容是简单而直观的。在编辑模式下([媒体模式](#media-mode) 和 [组件模式](#component-mode))，将鼠标悬停在编辑器中的内容上时，可编辑内容会以蓝色框突出显示。
 
 ![可编辑内容用蓝色框突出显示](assets/editable-content.png)
 
-请注意，在编辑模式中，点按或单击内容会尝试选择该内容以进行编辑。如果您要使用链接来导航内容，请切换到[预览模式](#preview-mode)。
+>[!TIP]
+>
+>请注意，在编辑模式下，点按或单击内容会选择内容进行编辑。 如果您要使用链接来导航内容，请切换到[预览模式](#preview-mode)。
 
 根据使用的[模式](#mode-rail)和选定内容，您可能有不同的就地编辑选项，并且您可以使用[组件边栏](#component-rail)查看内容的其他属性。
 
 ### 编辑纯文本 {#edit-plain-text}
 
-如果使用的是[文本模式](#text-mode)并选择一个纯文本组件，则可以就地编辑文本。
+如果您在 [组件模式](#component-mode) 并选择一个纯文本组件，您可以通过双击或双击该组件就地编辑文本。
 
 ![编辑内容](assets/editing-content.png)
 
-只需键入即可更新内容。按“输入/回车”键或点按或单击文本框外部可保存更改。
+按“输入/回车”键或点按或单击文本框外部可保存更改。
+
+当您点击或单击以选择文本组件时，其详细信息将显示在组件边栏中。 您还可以编辑边栏中的文本。
+
+![编辑组件边栏中的文本](assets/ue-editing-text-component-rail.png)
+
+此外，组件边栏中还提供了有关文本的详细信息。 一旦焦点离开组件边栏中已编辑的字段，更改将自动保存。
 
 ### 编辑富文本 {#edit-rich-text}
 
-如果使用的是[文本模式](#text-mode)并选择一个富文本组件，则可以就地编辑文本。
+如果您在 [组件模式](#component-mode) 并选择一个富文本组件，您可以通过双击或双击该组件就地编辑文本。
 
-只需键入即可更新内容。按“输入/回车”键或点按或单击文本框外部可保存更改。
-
-此外，组件边栏中还提供了格式设置选项和文本详细信息。
+按“输入/回车”键或点按或单击文本框外部可保存更改。
 
 ![编辑富文本组件](assets/rich-text-editing.png)
 
-格式更改将会自动保存到您的内容中。
+此外，组件边栏中还提供了格式设置选项和文本详细信息。一旦焦点离开组件边栏中已编辑的字段，更改将自动保存。
 
 ### 编辑媒体 {#edit-media}
 
@@ -352,9 +349,13 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 所选内容片段的内容模型中定义的字段可在组件边栏中显示和编辑。
 
-更改将会自动保存到您的内容中。
+如果您选择与内容片段相关的字段，则内容片段会加载到组件边栏中，并且字段会自动滚动到。
+
+一旦焦点离开组件边栏中已编辑的字段，更改将自动保存。
 
 如果您想改为在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑您的内容片段，请单击模式边栏中的[编辑按钮](#edit)。
+
+根据工作流的需要，您可能希望在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
 
 ### 向容器添加组件 {#adding-components}
 
@@ -364,6 +365,10 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
    ![选择要添加到容器的组件](assets/ue-add-component.png)
 
 该组件被插入到容器中并可以在编辑器中进行编辑。
+
+>[!TIP]
+>
+>使用热键 `A` 将组件添加到所选容器。
 
 ### 从容器中删除组件 {#deleting-components}
 
@@ -376,6 +381,10 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 选定的组件已删除。
 
+>[!TIP]
+>
+>使用热键 `Shift+Backspace` 以从容器中删除选定的组件。
+
 ### 对容器中的组件重新排序 {#reordering-components}
 
 1. 在内容树或编辑器中选择一个容器组件。
@@ -384,6 +393,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 1. 拖动容器内组件旁边的手柄图标表明您可以重新排列它们。拖动组件以对它们在容器内重新排序。
 
    ![重新排序组件](assets/ue-reordering-components.png)
+
 1. 拖动的组件在组件树中变成灰色，而插入点由蓝线表示。释放组件以将其放置在新位置。
 
 组件在内容树和编辑器中重新排序
@@ -392,7 +402,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
 
-请注意，在预览模式中，点按或单击内容的反应与对内容阅读器的反应一样。如果要选择内容以供编辑，请切换到编辑模式，如[文本模式](#text-mode)或[媒体模式](#media-mode)。
+请注意，在预览模式中，点按或单击内容的反应与对内容阅读器的反应一样。如果要选择要编辑的内容，请切换到编辑模式，例如 [组件模式](#component-mode) 或 [媒体模式。](#media-mode)
 
 ## 其他资源 {#additional-resources}
 
