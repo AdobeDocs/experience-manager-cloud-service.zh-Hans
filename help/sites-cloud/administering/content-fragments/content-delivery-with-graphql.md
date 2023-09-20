@@ -1,21 +1,21 @@
 ---
-title: 使用带有 GraphQL 的内容片段的 Headless 内容投放
+title: 通过 GraphQL 使用内容片段投放 Headless 内容
 description: 了解使用 GraphQL 中的内容片段实现 AEM Headless CMS 以进行 headless 内容投放的基本概念。
 feature: Content Fragments, GraphQL API
 role: Developer, Architect
 source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# 使用带有 GraphQL 的内容片段的 Headless 内容投放 {#headless-content-delivery-using-content-fragments-with-graphQL}
+# 通过 GraphQL 使用内容片段投放 Headless 内容 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 借助内容片段和 GraphQL API，您可以将 Adobe Experience Manager (AEM) as a Cloud Service 用作 Headless 内容管理系统(CMS)。
 
-这是通过使用内容片段和 AEM GraphQL API（一种基于标准 GraphQL 的自定义实现）来实现的，以 headless 方式投放结构化内容以供您的应用程序使用。 通过自定义单个 API 查询的功能，您可以检索和投放您想要/需要呈现的特定内容（作为对单个 API 查询的响应）。
+这是通过使用内容片段和 AEM GraphQL API（一种基于标准 GraphQL 的自定义实现）来实现的，以 headless 方式投放结构化内容以供您的应用程序使用。通过自定义单个 API 查询的功能，您可以检索和投放您想要/需要呈现的特定内容（作为对单个 API 查询的响应）。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ ht-degree: 95%
 
 * 您可以使用内容片段来创作主要不打算在格式化页面上直接发布 (1:1) 的内容。
 
-* 您的内容片段的内容将以预先确定的方式构建 – 根据内容片段模型。 这简化了对应用程序的访问，这将进一步处理您的内容。
+* 您的内容片段的内容将以预先确定的方式构建 – 根据内容片段模型。这简化了对应用程序的访问，这将进一步处理您的内容。
 
 ## GraphQL — 概述 {#graphql-overview}
 
@@ -50,7 +50,7 @@ GraphQL 是：
 
   请参阅 [GraphQL.org](https://graphql.org)
 
-[AEM GraphQL API](#aem-graphql-api) 允许您对[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)执行（复杂）查询；每个查询都根据特定的模型类型。 然后，您的应用程序可以使用返回的内容。
+[AEM GraphQL API](#aem-graphql-api) 允许您对[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)执行（复杂）查询；每个查询都根据特定的模型类型。然后，您的应用程序可以使用返回的内容。
 
 ## AEM GraphQL API {#aem-graphql-api}
 
@@ -102,9 +102,9 @@ AEM GraphQL API 实施基于 [GraphQL Java 库](https://graphql.org/code/#java)�
 
 ## 分析内容片段结构 {#analyzing-content-fragments-structure}
 
-为了帮助进行分析，AEM提供了多种方法，用于在 [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md).
+为了帮助进行分析，AEM 提供多种从[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)查看片段结构的方法。
 
-请参阅 [分析内容片段结构](/help/sites-cloud/administering/content-fragments/analysis.md) 有关更多详细信息：
+有关更多详细信息，请参阅[分析内容片段结构](/help/sites-cloud/administering/content-fragments/analysis.md)：
 
 * [结构树](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 
