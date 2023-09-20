@@ -3,9 +3,9 @@ title: AEM Headless as a Cloud Service 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3098'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -166,7 +166,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 #### 内容作者 {#content-author}
 
-内容作者创建和管理 AEM 以 Headless 方式交付的内容。内容作者使用AEM功能（如内容片段编辑器和各种控制台）来管理其内容。
+内容作者创建和管理 AEM 以 Headless 方式交付的内容。内容作者使用内容片段编辑器和各种控制台等 AEM 功能管理其内容。
 
 内容作者应牢记以下最佳实践。
 
@@ -281,9 +281,9 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) - 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [Adobe Experience Manager as a Cloud Service 的架构简介](/help/overview/architecture.md) – 了解 AEM as a Cloud Service 的结构
-* An [AEM as a Headless CMS简介](/help/headless/introduction.md)
-* 此 [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 使用这些动手实践教程，探究如何使用各种选项通过 AEM 将内容交付到 Headless 端点，并选择适合您的选项。
+* [AEM as a Headless CMS 简介](/help/headless/introduction.md)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+* [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 使用这些动手实践教程探索如何使用通过 AEM 将内容投放到 Headless 端点的各种选项并选择适合您的选项。
 * [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。需要通过 AdobeID 进行的身份验证。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – 此 GitHub 项目包含突出显示 AEM 的 GraphQL API 的示例应用程序。
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md) – 有关 AEM 的创作环境的技术文档，包括作者-发布设置的详细信息
