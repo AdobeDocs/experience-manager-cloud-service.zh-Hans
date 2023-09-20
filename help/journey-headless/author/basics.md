@@ -3,9 +3,9 @@ title: 学习创作基础知识
 description: 了解使用内容片段为 Headless CMS 创作内容的概念和机制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1729'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 
 >[!NOTE]
 >
->“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。可以通过 AEM 异步作业 UI 监控该作业的进度。
+>“发布”、“取消发布”、“删除”、“移动”、“重命名”、“复制”等操作会触发异步作业。可通过 AEM 异步作业 UI 监视该作业的进度。
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -189,38 +189,38 @@ You can view additional information about items using the Rail Selector. This al
 
 >[!NOTE]
 >
->内容片段是站点功能，但存储为 **资产**.
+>内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器。
+>有两个编辑器用于创作内容片段。
 >
->* 新编辑器，主要通过 **内容片段** 控制台。
->* 原始编辑器，主要通过 **资产** 控制台。
+>* 新编辑器，主要从&#x200B;**内容片段**&#x200B;控制台访问它。
+>* 原始编辑器，主要从&#x200B;**资源**&#x200B;控制台访问它。
 
 在编辑器首次打开时，您将看到：
 
-* 顶部工具栏：有关关键信息和操作
-   * 指向内容片段控制台（主页图标）的链接
+* 顶部工具栏：用于关键信息和操作
+   * 内容片段控制台的链接（主页图标）
    * 有关模型和文件夹的信息
-   * 指向预览的链接；如果为模型配置了默认预览URL模式
+   * 预览链接；如果为模型配置了默认预览 URL 模式
    * 发布和取消发布操作
-   * 用于显示全部的选项 **父引用** （链接图标）
-   * 片段 **状态**&#x200B;和上次保存的信息
-   * 切换到原始（基于资产）编辑器的切换开关
-* 左侧面板：显示 **变体** 用于内容片段及其 **字段**：
-   * 这些链接可用于导航内容片段结构
-* 右侧面板：显示的选项卡显示属性（元数据）和标记、有关版本历史记录的信息以及与任何语言副本相关的信息
-   * 在 **属性** 选项卡，您可以更新 **标题** 和 **描述** 用于片段，或 **变量**
+   * 用于显示所有&#x200B;**父引用**&#x200B;的选项（链接图标）
+   * 片段&#x200B;**状态**&#x200B;和上次保存的信息
+   * 用于切换到原始（基于资源的）编辑器的开关
+* 左侧面板：显示内容片段的&#x200B;**变体**&#x200B;及其&#x200B;**字段**：
+   * 可使用这些链接在内容片段结构中导航
+* 右侧面板：有多个选项卡，其中显示属性（元数据）和标记、关于版本历史记录的信息以及与任何语言副本相关的信息
+   * 在&#x200B;**属性**&#x200B;选项卡中，可更新片段或&#x200B;**变体**&#x200B;的&#x200B;**标题**&#x200B;和&#x200B;**描述**
 * 中央面板：显示所选变体的实际字段和内容
-   * 允许您编辑内容
-   * 如果 **制表符占位符** 字段是在模型内定义的，它们显示在此处，并可用于导航
+   * 使您可编辑内容
+   * 如果在模型中定义了&#x200B;**选项卡占位符**&#x200B;字段，则将在此处显示这些字段，并可使用这些字段进行导航
 
 例如，片段可以：
 
-* 需要多个信息，其中一些具有特定类型。 对于 Headless 内容，引用很重要（您将在历程的后面部分中了解相关信息）。
+* 需要多条信息，其中一些信息具有特定类型。对于 Headless 内容，引用很重要（您将在历程的后面部分中了解相关信息）。
 
-* 允许您编写一段较长的文本。 这里提供了用于管理文本并设置其格式的其他选项。您甚至可以在全屏编辑器中打开各个文本字段（使用右侧的类似小屏幕的图标）
+* 使您可编写大篇幅文本。这里提供了用于管理文本并设置其格式的其他选项。您甚至可以在全屏编辑器中打开各个文本字段（使用右侧的类似小屏幕的图标）
 
-![内容片段编辑器 – 阿拉斯加烈酒](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![内容片段编辑器 – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
@@ -240,7 +240,7 @@ You can view additional information about items using the Rail Selector. This al
 
 * **内容片段模型**
 
-  您将在编辑器的右侧面板中看到内容片段模型的名称。 这也是一个可将您转至模型编辑器的链接。
+  您将在编辑器的右侧面板中看到内容片段模型的名称。这也是一个可将您转至模型编辑器的链接。
 实际上，内容片段模型对您的内容片段至关重要，因为它们定义了您使用的结构。不过，创建和编辑这些模型（通常）是另一个角色（即内容架构师）的责任。
 
   >[!NOTE]
@@ -313,7 +313,7 @@ You can view additional information about items using the Rail Selector. This al
 
       * [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-* [内容片段 — 资产控制台中的原始编辑器](/help/assets/content-fragments/content-fragments-variations.md)
+* [内容片段 - 来自资源控制台的原始编辑器](/help/assets/content-fragments/content-fragments-variations.md)
 
 * 快速入门指南
    * [创建 Assets 文件夹 Headless 设置](/help/headless/setup/create-assets-folder.md)
