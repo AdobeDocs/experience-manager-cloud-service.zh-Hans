@@ -3,9 +3,9 @@ title: AEM Headless 内容作者历程
 description: 从此处开始，借助 AEM 强大而灵活的 Headless 功能、相应的功能以及为项目创作内容的方法，实施引导式历程。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
 * [Headless 架构师历程](/help/journey-headless/architect/overview.md) – 从这里开始了解 Adobe Experience Manager as a Cloud Service 强大而灵活的 Headless 功能，以及如何对项目内容进行建模。
-* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您已对 AEM 和 Headless 技术有一定的了解，则可能需要直接参阅深入的技术文档。
-   * [AEM as a Headless CMS简介](/help/headless/introduction.md)
-* [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+* [AEM as a Cloud Service 技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) – 如果您对 AEM 和 Headless 技术的了解颇为扎实，则您可能想要直接查阅我们详尽的技术文档。
+   * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。
