@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 56a4b03e78e835108aa57fdb241803e75b867260
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 97%
+source-wordcount: '1263'
+ht-degree: 93%
 
 ---
 
@@ -87,6 +87,16 @@ ht-degree: 97%
 
 ![bp_landingpage](assets/bp_landingpage.png)
 
+>[!NOTE]
+>
+> * DAM-Users组的现有用户具有路径“/conf/global/settings/cloudconfigs/mediaportal”的读取权限
+>* 新用户（或非管理员用户）需要以下权限才能在Brand Portal上发布。
+> 路径:
+> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; ： jcr：read
+>/libs ： jcr：read
+>/conf ： jcr：read
+>/content ： jcr：read ， crx：replicate
+>/content/dam/ ： jcr：read 、Modify 、 crx：replicate
 
 ## 将文件夹发布到 Brand Portal {#publish-folders-to-brand-portal}
 
@@ -104,7 +114,7 @@ ht-degree: 97%
 
    * 在工具栏中，选择&#x200B;**[!UICONTROL 快速发布]**。
 
-      在菜单中，选择&#x200B;**[!UICONTROL 发布到 Brand Portal]**。
+     在菜单中，选择&#x200B;**[!UICONTROL 发布到 Brand Portal]**。
 
    * 在工具栏中，选择&#x200B;**[!UICONTROL 管理发布]**。
 
