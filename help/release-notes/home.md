@@ -3,7 +3,7 @@ title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: c72c86abc44802d2266ddc0d490ed5d70e643fae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '642'
 ht-degree: 100%
 
