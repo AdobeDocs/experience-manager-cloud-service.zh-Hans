@@ -3,9 +3,9 @@ title: 如何汇总您的应用程序和 AEM Headless 中的内容
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用您的 AEM Project（包括内容片段）、GraphQL 调用、REST API 调用和您的应用程序，并为上线做好准备。
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -114,6 +114,6 @@ Node.js 是一个 JavaScript 运行时环境，用于处理 AEM 项目的 `ui.fr
 * [适用于客户端浏览器的 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 * [适用于服务器端/Node.js 的 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [适用于 Java™ 的 AEM Headless SDK](https://github.com/adobe/aem-headless-client-java)
-* [AEM as a Headless CMS简介](/help/headless/introduction.md)
-* [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM中的HeadlessTutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
+* [AEM as a Headless CMS 简介](/help/headless/introduction.md)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
