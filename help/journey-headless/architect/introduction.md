@@ -3,9 +3,9 @@ title: 对 AEM as a Headless CMS 进行内容建模 - 简介
 description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能对项目进行内容建模。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 03cf688168106f71f2df2511782be7c1f3cc0dae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '749'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,8 +82,8 @@ ht-degree: 97%
    * [了解 CMS Headless 开发](/help/journey-headless/developer/learn-about.md)
    * [了解如何为您的内容建模](/help/journey-headless/developer/model-your-content.md)
 
-* [AEM as a Headless CMS简介](/help/headless/introduction.md)
+* [AEM as a Headless CMS 简介](/help/headless/introduction.md)
 
-* [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 
-* [AEM中的HeadlessTutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
