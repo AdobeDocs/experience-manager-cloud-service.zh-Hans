@@ -3,9 +3,9 @@ title: 了解 CMS Headless 开发
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 Headless 技术以及使用它的原因。
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1638'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -127,6 +127,6 @@ Headless 展示了交付数字体验方面的灵活度。但这种灵活度本�
 我们建议您查看文档 [AEM Headless as a Cloud Service 快速入门](getting-started.md)来继续 Headless 开发历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续 Headless 历程所必需的。
 
 * [Adobe Experience Manager as a Cloud Service 的架构简介](/help/overview/architecture.md) – 了解 AEM as a Cloud Service 的结构
-* An [AEM as a Headless CMS简介](/help/headless/introduction.md)
-* 此 [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 使用这些动手实践教程，探究如何使用各种选项通过 AEM 将内容交付到 Headless 端点，并选择适合您的选项。
+* [AEM as a Headless CMS 简介](/help/headless/introduction.md)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+* [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 使用这些动手实践教程探索如何使用通过 AEM 将内容投放到 Headless 端点的各种选项并选择适合您的选项。
