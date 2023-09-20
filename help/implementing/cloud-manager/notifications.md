@@ -3,9 +3,9 @@ title: 通知
 description: 了解如何使用 Adobe Experience Cloud 通知系统接收有关管道部署的信息。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 89%
 
 ![通知订阅](assets/notifications-subscriptions.png)
 
-默认情况下，您将收到应用程序和电子邮件中所有产品的所有通知。 单击产品名称旁边的V形符号显示详细的选项，并定义您收到的该产品的通知类型。 或者选中或取消选中产品级别的选项，以选择/取消选择产品的所有选项。
+默认情况下，您将在应用程序中和通过电子邮件接收所有产品的全部通知。单击产品名称旁的 V 形以显示详细的选项并定义您为该产品接收的通知类型。或者，选中或取消选中产品级别的选项以选择/取消选择该产品的所有选项。
 
 ![通知订阅自定义](assets/notifications-subscriptions-customize.png)
 
