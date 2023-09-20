@@ -4,18 +4,18 @@ description: 了解内容片段编辑器如何使用 Markdown 语法，轻松地
 feature: Content Fragments
 role: User
 source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '557'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
 # Markdown {#markdown}
 
-当您 [创作](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) 您的内容片段 [多行文本字段](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) 使用定义 **默认类型** 之 **Markdown**. 内容片段编辑器使用 *Markdown* 语法，可让您轻松编写用于页面创作和headless投放的内容：
+在[创作](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)内容片段时，可能为[多行文本字段](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)定义了&#x200B;**默认类型**&#x200B;的 **Markdown**。内容片段编辑器使用 *markdown* 语法使您可轻松地为创作页面和投放 Headless 编写内容：
 
-![编辑器中的Markdown多行文本字段](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
+![编辑器中的 Markdown 多行文本字段](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
 您可以定义：
 
@@ -31,7 +31,7 @@ ht-degree: 91%
 
 ## 标题符号 {#heading-notation}
 
-要通过在标题前面放置井号标记 (#) 来创建标题，请执行以下操作： 一个井号标记 (#) 用于一级标题，两个井号标记 (##) 用于二级标题，以此类推。 您最多可以使用 6 个井号标记。 例如：
+要通过在标题前面放置井号标记 (#) 来创建标题，请执行以下操作： 一个井号标记 (#) 用于一级标题，两个井号标记 (##) 用于二级标题，以此类推。您最多可以使用 6 个井号标记。例如：
 
     `## This is an H2`
 
@@ -39,7 +39,7 @@ ht-degree: 91%
 
     `###### This is a H6`
 
-或者，您也可以通过等号加下划线来创建一级标题，并通过减号加下划线来创建二级标题。 例如：
+或者，您也可以通过等号加下划线来创建一级标题，并通过减号加下划线来创建二级标题。例如：
 
     `This is an H1`
 
@@ -51,7 +51,7 @@ ht-degree: 91%
 
 ## 段落和换行符 {#paragraphs-and-line-breaks}
 
-段落只是一行或多行连续的文本，用一行或多行空白行分隔。 空行是只包含空格或制表符的行。 不应使用空格或制表符缩进普通段落。
+段落只是一行或多行连续的文本，用一行或多行空白行分隔。空行是只包含空格或制表符的行。不应使用空格或制表符缩进普通段落。
 
 换行符的创建方法是：在返回后，用两个或多个空格结束一行。
 
@@ -81,7 +81,7 @@ ht-degree: 91%
 
 ## 图像 {#images}
 
-图像的语法与链接类似。 您可以创建内联和引用的图像。
+图像的语法与链接类似。您可以创建内联和引用的图像。
 
 例如，内联图像的语法如下：
 
@@ -99,13 +99,13 @@ ht-degree: 91%
 
     `![Alt text][id]`
 
-其中，“id”是定义的图像引用的名称。 图像引用是使用与链接引用相同的语法来定义的：
+其中，“id”是定义的图像引用的名称。图像引用是使用与链接引用相同的语法来定义的：
 
     `[id]: url/to/image "Optional title attribute"`
 
 ## 块引号 {#block-quotes}
 
-可以在文本前添加 > 符号来引用文本。 例如：
+可以在文本前添加 > 符号来引用文本。例如：
 
     `>This is block quotes`
 
@@ -113,7 +113,7 @@ ht-degree: 91%
 
     `>asdfahsdlfasdfj`
 
-您可以使用嵌套的块引号。 例如：
+您可以使用嵌套的块引号。例如：
 
     `> This is the first level of quoting.`
 
@@ -129,7 +129,7 @@ ht-degree: 91%
 
 您可以创建已排序和未排序的列表。
 
-要创建未排序的列表，请使用 &amp;ast; 符号。 例如：
+要创建未排序的列表，请使用 &amp;ast; 符号。例如：
 
     `* item in list`
 
@@ -137,7 +137,7 @@ ht-degree: 91%
 
     `* item in list`
 
-要创建有序列表，请在列表中每个项目之前添加数字，后跟一个句点。 例如：
+要创建有序列表，请在列表中每个项目之前添加数字，后跟一个句点。例如：
 
     `1. First item in list.`
 
@@ -165,7 +165,7 @@ ht-degree: 91%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-要指示代码跨度，请用反勾号 (&grave;) 将代码换行。 与预格式化的代码块不同，代码范围表示普通段落中的代码。
+要指示代码跨度，请用反勾号 (&grave;) 将代码换行。与预格式化的代码块不同，代码范围表示普通段落中的代码。
 
 例如：
 
@@ -173,7 +173,7 @@ ht-degree: 91%
 
 ## 代码块 {#code-blocks}
 
-代码块通常用于说明源代码。 您可以通过使用制表符缩进代码，或者最少 4 个空格来创建代码块。 例如：
+代码块通常用于说明源代码。您可以通过使用制表符缩进代码，或者最少 4 个空格来创建代码块。例如：
 
     `This is a normal paragraph.`
 
@@ -181,7 +181,7 @@ ht-degree: 91%
 
 ## 反斜线转义 {#backslash-escapes}
 
-您可以使用反斜杠转义生成在格式语法中具有特殊含义的文字字符。 例如，如果您想要在单词周围加上文字星号（而不是 HTML 标记），则可以在星号前使用反斜杠，如下所示：
+您可以使用反斜杠转义生成在格式语法中具有特殊含义的文字字符。例如，如果您想要在单词周围加上文字星号（而不是 HTML 标记），则可以在星号前使用反斜杠，如下所示：
 
     `\\*literal asterisks\\*`
 
