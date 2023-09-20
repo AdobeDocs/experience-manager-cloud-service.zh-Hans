@@ -1,11 +1,11 @@
 ---
 title: 控制台的键盘快捷键
-description: 使用这些键盘快捷键进行创作可节省时间
+description: 创作时使用这些键盘快捷键可以节省时间
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 69%
 |  | `Left Arrow` | 向上导航树结构/折叠树节点 |
 |  | `Down Arrow` | 在同一级别的页面列表中向下移动 |
 |  | `Up Arrow` | 在同一级别的页面列表中向上移动 |
-| 控制台 — 列视图 | `Shift-Up/Down Arrow` | 在同一级别的页面列表中向上/向下移动并选择 |
+| 控制台 - 列视图 | `Shift-Up/Down Arrow` | 在同一级别的页面列表中向上/向下移动并选择 |
 |  | `Esc` | 在同一级别的页面列表中向上移动 |
 | 控制台 | `?` | 键盘快捷键帮助 |
 |  | `/` | 调用[搜索](/help/sites-cloud/authoring/getting-started/search.md) |
@@ -47,19 +47,19 @@ ht-degree: 69%
 
 ## 浏览器和键盘快捷键 {#browsers-and-keyboard-shortcuts}
 
-AEM可避免常用浏览器已使用的常用快捷键，但AEM快捷键不会覆盖默认浏览器行为。
+AEM 避免出现热门浏览器已使用的常见快捷键，但 AEM 快捷键不取代默认浏览器行为。
 
-此外，所有区域设置和键盘布局的键盘快捷键均相同。
+另外，所有区域设置和键盘布局的键盘快捷键都相同。
 
 >[!NOTE]
 >
->AEM快捷方式不会覆盖默认浏览器行为。
+>AEM 快捷键不取代默认浏览器行为。
 >
->如果AEM和浏览器快捷方式之间发生冲突，AEM快捷方式将无法正常运行，从而导致浏览器无法正常运行。
+>如果 AEM 快捷键与浏览器快捷键之间发生冲突，则 AEM 快捷键将不起作用，服从浏览器功能。
 
 >[!CAUTION]
 >
->AEM键盘快捷键可能会干扰屏幕阅读器、某些浏览器功能和其他辅助工具。
+>AEM 键盘快捷键可能会干扰屏幕阅读器、某些浏览器功能和其他辅助功能工具。
 >
 >Adobe 建议在使用屏幕阅读器时[禁用 AEM 键盘快捷键](#deactivating-keyboard-shortcuts)。
 
@@ -67,9 +67,9 @@ AEM可避免常用浏览器已使用的常用快捷键，但AEM快捷键不会�
 
 AEM 为一些常用功能（编辑、属性、复制/粘贴、显示各种侧边栏菜单等）提供了键盘快捷键。
 
-对于不使用键盘快捷键或没有特定辅助功能要求的用户，可以禁用所有键盘快捷键。
+对于不使用键盘快捷键或要求使用特定辅助功能的用户，可禁用所有键盘快捷键。
 
-您可以在两个位置取消激活键盘快捷键：
+可在以下两个位置停用键盘快捷键：
 
 * [我的偏好设置](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
 * [帮助菜单](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
