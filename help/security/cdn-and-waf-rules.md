@@ -1,7 +1,7 @@
 ---
-title: 配置流量过滤器规则（使用WAF规则）
-description: 使用流量过滤规则（带WAF规则）过滤流量
-source-git-commit: b1b184b63ab6cdeb8a4e0019c31a34db59438a3d
+title: 使用WAF规则配置流量过滤器规则
+description: 将流量过滤器规则与WAF规则一起使用来过滤流量
+source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 70%
@@ -9,7 +9,7 @@ ht-degree: 70%
 ---
 
 
-# 配置流量过滤器规则（使用WAF规则）以过滤流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
+# 使用WAF规则配置流量过滤器规则以过滤流量 {#configuring-cdn-and-waf-rules-to-filter-traffic}
 
 >[!NOTE]
 >
