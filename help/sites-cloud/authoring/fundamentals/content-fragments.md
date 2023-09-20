@@ -3,9 +3,9 @@ title: 内容片段
 description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 >[!NOTE]
 >
->内容片段是 **站点** 功能，但存储为 **资产**.
+>内容片段是一项&#x200B;**站点**&#x200B;功能，但存储为&#x200B;**资源**。
 >
->现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 控制台，但是仍然可以从以下位置管理它们 **[资产](/help/assets/content-fragments/content-fragments-managing.md)** 控制台。
+>现在主要用&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;控制台管理它们，但仍可从&#x200B;**[资源](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;控制台管理它们。
 >
->创作内容片段有两个编辑器：
+>有两个编辑器用于创作内容片段：
 >
->* 的新编辑器 [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，主要通过访问 **内容片段** 控制台。
->* 此 [原始编辑器](/help/assets/content-fragments/content-fragments-variations.md) 主要通过 **资产** 控制台。
+>* 主要从&#x200B;**内容片段**&#x200B;控制台访问[内容片段 - 创作](/help/sites-cloud/administering/content-fragments/authoring.md)的新编辑器。
+>* 主要从&#x200B;**资源**&#x200B;控制台访问[原始编辑器](/help/assets/content-fragments/content-fragments-variations.md)。
 
 >[!NOTE]
 >
