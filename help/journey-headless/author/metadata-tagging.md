@@ -3,9 +3,9 @@ title: 了解如何为内容片段定义元数据和标记
 description: 了解如何为内容片段定义元数据和标记
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 92%
 
 您可以从内容片段编辑器的右侧面板添加元数据和标记：
 
-![内容片段编辑器 – 阿拉斯加烈酒](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
+![内容片段编辑器 – Alaska Spirits](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## 后续内容 {#whats-next}
 
