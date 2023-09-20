@@ -3,9 +3,9 @@ title: New Relic One
 description: 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: 8ce7c26c6552c77bc845f76a805768a931b9d532
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1627'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -170,9 +170,9 @@ Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java �
 * AEM as a Cloud Service 环境仅向一个 New Relic One 帐户报告。
 * New Relic One 的全面监控指标和事件保留七天。
 
-### Adobe是否从New Relic One发送警报通知？ {#alerting-new-relic}
+### Adobe 是否从 New Relic One 发送警报通知？ {#alerting-new-relic}
 
-Adobe仅出于可观察性目的提供New Relic One访问，不会将其用于客户警报或内部运营警报。 任何事故的通知均使用以下方式发送 [用户通知配置文件。](/help/journey-onboarding/notification-profiles.md)
+Adobe 提供 New Relic One 访问权限以仅作观察用途，并不将它用于客户警报或内部运营警报。使用[用户通知配置文件](/help/journey-onboarding/notification-profiles.md)发送任何事件的通知。
 
 ### 谁可以访问 New Relic One 云服务数据？ {#access-new-relic-cloud}
 
