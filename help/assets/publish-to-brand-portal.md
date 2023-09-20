@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 56a4b03e78e835108aa57fdb241803e75b867260
+source-git-commit: 780d04852d3760f92c6f0c5edf77630d4bb5a343
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 93%
@@ -95,8 +95,8 @@ ht-degree: 93%
 > &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; ： jcr：read
 >/libs ： jcr：read
 >/conf ： jcr：read
->/content ： jcr：read ， crx：replicate
->/content/dam/ ： jcr：read 、Modify 、 crx：replicate
+>/content ： jcr：read， crx：replicate
+>/content/dam/ ： jcr：read，modify， crx：replicate
 
 ## 将文件夹发布到 Brand Portal {#publish-folders-to-brand-portal}
 
