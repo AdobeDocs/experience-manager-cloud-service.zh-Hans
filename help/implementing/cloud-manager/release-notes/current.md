@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.9.0 �
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.9.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 8bf2ffe8b1d3780f4ad3f6972fea4f8281945abb
+source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 76%
+source-wordcount: '443'
+ht-degree: 75%
 
 ---
 
@@ -55,6 +55,6 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 的发布日期是 2
 
 ## 错误修复 {#bug-fixes}
 
-* 删除程序时，还将删除任何关联的正在运行的管道，确保不会将管道错误地指定为失败状态。
-* 上线完成按钮被禁用，并通知用户管道正在进行的原因。
-* 有时，当管道执行的所有步骤都是“已完成”时，管道的状态会视为“正在运行”，使其似乎处于卡住状态。 它现在被视为“完成”。
+* 现在，删除程序时，任何关联的正在运行的管道也会被删除。
+* 如果管道正在进行中， **发送** 的按钮 **上线完成** 对话框现在已禁用，并通知用户由于正在运行的管道而无法设置上线日期。
+* 已修复偶尔出现的错误，其中管道执行的所有步骤均标记为已完成，但管道的状态仍在运行，看起来像是卡住状态。

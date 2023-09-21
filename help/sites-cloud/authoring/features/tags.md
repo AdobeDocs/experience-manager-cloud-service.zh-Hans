@@ -2,10 +2,10 @@
 title: 使用标记
 description: 标记是用于对网站中的内容进行分类的简单快捷方法
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
+workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 标记是用于对网站中的内容进行分类的简单快捷方法。可以将标记视为可附加到页面、资源或其他内容，以便在进行搜索时能够找到该内容及相关内容的关键字或标签。
 
-* 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅“管理标记”。<!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* 请参阅 [管理标记](/help/sites-cloud/administering/tags.md) 有关创建和管理标记以及已对哪些内容应用标记的信息。
 * 有关标记框架以及在自定义应用程序中包括和扩展标记的信息，请参阅[针对开发人员的标记](/help/implementing/developing/introduction/tagging-framework.md)。
 
 ## 使用标记的十大理由 {#ten-reasons-to-use-tagging}
