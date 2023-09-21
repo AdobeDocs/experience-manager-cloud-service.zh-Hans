@@ -5,23 +5,23 @@ topic-tags: author
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: b3aac0cb7682f66c72c32ebf706f5db4067b12ed
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 1%
+source-wordcount: '1680'
+ht-degree: 4%
 
 ---
 
 
 # 自适应表单片段 {#adaptive-form-fragments}
 
-<span class="preview"> 这是预发行功能，可通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 虽然每个表单都针对特定目的而设计，但大多数表单中都存在一些通用区段，例如提供个人详细信息，如姓名和地址、家庭详细信息、收入详细信息。 每次创建新表单时，表单开发人员都需要创建这些常用区段。
 
 自适应Forms提供了一种便捷的机制，只需像创建面板或一组字段一样创建表单片段一次，即可在自适应Forms中重复使用。 这些可重用的独立区段称为自适应表单片段。
 
-表单片段无缝集成到多个表单中，从而简化了创建一致且具有专业外观的表单的过程。 表单片段通过“一次更改并随时随地反映”功能确保可重用性、标准化和品牌一致性。 体验更好的可维护性和效率，因为在一个位置进行的更新会自动传播到使用这些片段的所有表单中。
+表单片段无缝集成到多个表单中，从而简化了创建一致且具有专业外观的表单的过程。 利用“一次更改，随处反映”功能，表单片段确保实现可重用性、标准化和品牌一致性。由于在一处作出的更新自动传播到所有利用这些片段的表单，因此可体验到更高的可维护性和效率。
 
 您可以将片段多次添加到文档，并使用其组件的数据绑定属性将其绑定到不同的数据源或架构。 例如，您可以将相同的地址片段用于永久地址、通信地址和账单地址，并将其连接到数据源或架构的不同字段。
 
@@ -43,6 +43,11 @@ ht-degree: 1%
    ![在表单模型选项卡中显示模型类型](assets/create-af-1-1.png)
 
    * **无**：指定从头开始创建片段，而不使用任何表单模型。
+
+     >[!NOTE]
+     >
+     >基于基本基于组件的片段所构成的核心的一项优势是，能够在单个自适应表单中使用不与任何表单模型绑定的多个基于组件的核心片段。
+
    * **架构** ：指定使用上载到 AEM Forms 的 XML 或 JSON 模式创建片段。 您可以上传或从可用的 XML 或 JSON 架构中选择作为片段的表单模型。 选择 XML 模式时，您还可以通过从 &quot;XML 架构复杂类型 ]**&quot;**[!UICONTROL  下拉框中选择所选模式中存在的 complexType 来创建自适应表单片段。选择 JSON 模式时，还可以通过从 **[!UICONTROL JSON 架构定义]** 下拉框中选择所选模式中存在的模式定义来创建自适应表单片段。
    * **表单数据模型** ：指定使用表单数据模型创建片段。 您可以在表单数据模型中仅基于一个数据模型对象创建自适应表单片段。 展开表单数据模型定义下拉列表。 它列出了指定表单数据模型中的所有数据模型对象。 从列表中选择数据模型对象。
 
@@ -149,11 +154,11 @@ Perform the following steps to show complete fragments in forms:
   </tr>
   <tr>
    <td><p>新增字典</p> </td>
-   <td><p>生成用于本地化所选片段的字典。 有关更多信息，请参阅 <a> 本地化自适应 Forms </a> 。 <br /> <br /> </p> </td>
+   <td><p>生成用于本地化选定片段的字典。 有关更多信息，请参阅 <a> 本地化自适应 Forms </a> 。 <br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>发布/取消发布</p> </td>
-   <td><p>发布/取消选定片段。 <br /> <br /> </p> </td>
+   <td><p>发布/取消发布选定的片段。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>删除</p> </td>
@@ -162,22 +167,22 @@ Perform the following steps to show complete fragments in forms:
  </tbody>
 </table>
 
-## 使用片段时要记住的要点 {#key-points-to-remember-when-working-with-fragments}
+## 使用片段时需要记住的要点 {#key-points-to-remember-when-working-with-fragments}
 
 * 确保片段名称是唯一的。 如果存在具有相同名称的现有片段，则无法创建片段。
 * 在基于 XDP 的自适应表单中，如果您将面板保存为包含其他 XDP 片段的片段，则生成的片段将自动绑定到子 XDP 片段。 如果使用基于 XSD 的自适应表单，则生成的片段将绑定到模式根。
 * 创建自适应表单片段时，将创建一个片段节点，它类似于 CRXDe Lite 中自适应表单的 guideContainer 节点。
-* 不支持使用不同表单数据模型的自适应表单中的片段。 例如，基于 XDP 的片段在 XSD 自适应表单中不受支持，反之亦然。
+* 不支持自适应表单中使用其他表单数据模型的片段。 例如，基于XSD的自适应表单中不支持基于XDP的片段，反之亦然。
 * 自适应表单片段可通过AEM内容查找器中的自适应表单片段选项卡使用。
 * 通过引用插入或嵌入自适应表单中的独立自适应表单片段中的任何表达式、脚本或样式都会保留。
 * 您无法从自适应表单中编辑通过引用插入的自适应表单片段。 要编辑，您需要编辑独立的自适应表单片段或将片段嵌入自适应表单中。
 * 发布自适应表单时，您需要发布在自适应表单中通过引用插入的独立自适应表单片段。
 * 当您重新发布更新的自适应表单片段时，更改会反映在使用片段的自适应表单的已发布实例中。
-* 包含Verify组件的自适应表单不支持匿名用户。 此外，不 reommended 在自适应表单片段中使用验证组件。
+* 包含验证组件的自适应表单不支持匿名用户。 此外，不 reommended 在自适应表单片段中使用验证组件。
 * （ **仅** Mac）要确保表单片段功能在所有方案中都能正常工作，请将以下条目添加到/private/etc/hosts 文件中：
-  `127.0.0.1 <Host machine>`**主机计算机** ：部署 AEM Forms 的 Apple Mac 计算机。
+  `127.0.0.1 <Host machine>` **主机**：部署AEM Forms的Apple Mac计算机。
 
 ## 引用片段 {#reference-fragments}
 
-提供了可用于创建表单的参考自适应表单片段。
+可用于创建表单的参考自适应表单片段可用。
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
