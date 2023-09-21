@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ce7b6922f92208c06f85afe85818574bf2bc8f6d
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '4293'
-ht-degree: 99%
+source-wordcount: '4303'
+ht-degree: 98%
 
 ---
 
@@ -328,7 +328,7 @@ ht-degree: 99%
          + [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md)
          + [创作片段内容](/help/sites-cloud/administering/content-fragments/authoring.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
-         + [删除注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
+         + [关于删除的注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析结构](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
          + [使用内容片段](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -340,7 +340,7 @@ ht-degree: 99%
          + [变体 – 创作片段内容](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
          + [内容片段关联内容](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
          + [元数据 – 片段属性](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
-         + [内容片段 – 删除注意事项](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+         + [内容片段 – 关于删除的注意事项](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
          + [Markdown](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [结构树](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [预览 – JSON 呈现](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
@@ -471,7 +471,7 @@ ht-degree: 99%
       + [变体 – 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
       + [内容片段关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [元数据 – 片段属性](/help/assets/content-fragments/content-fragments-metadata.md)
-      + [内容片段 – 删除注意事项](/help/assets/content-fragments/content-fragments-delete.md)
+      + [内容片段 – 关于删除的注意事项](/help/assets/content-fragments/content-fragments-delete.md)
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [预览 – JSON 呈现](/help/assets/content-fragments/content-fragments-json-preview.md)
@@ -578,7 +578,7 @@ ht-degree: 99%
          + [查看和了解自适应Forms Analytics报表](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [将基于核心组件的自适应表单嵌入外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
          + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
@@ -591,7 +591,7 @@ ht-degree: 99%
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
    + 自适应表单 {#adaptive-forms-authoring}
       + [创建自适应表单](/help/forms/create-an-adaptive-form.md)
-      + [在 AEM Sites 页面或体验片段中添加自适应表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+      + [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 核心组件 {#authoring-adaptive-forms-core-components}
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
@@ -604,6 +604,7 @@ ht-degree: 99%
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+            + [为基于核心组件的自适应Forms添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -790,7 +791,7 @@ ht-degree: 99%
          + [如何融于一起](/help/journey-headless/developer/put-it-all-together.md)
          + [如何使用 Headless 应用程序上线](/help/journey-headless/developer/go-live.md)
          + [可选 – 如何使用 AEM 创建单页面应用程序](/help/journey-headless/developer/create-spa.md)
-         + [开发人员门户（其他资源）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [开发人员门户（其他资源）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
       + Headless 内容架构师历程 {#architect}
          + [AEM Headless 内容架构师历程概述](/help/journey-headless/architect/overview.md)
          + [使用 AEM 对 Headless 进行内容建模 – 简介](/help/journey-headless/architect/introduction.md)

@@ -1,11 +1,10 @@
 ---
-title: 将对新区域设置的支持添加到自适应表单
-description: AEM Forms允许您添加新的区域设置来本地化自适应表单。 英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和朝鲜语(ko-KR)语言环境。
-exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9a1bb716256b5e820723911f4e78a6a4c69d940c
+title: 如何根据核心组件向自适应表单添加新区域设置支持？
+description: AEM Forms允许您添加新的区域设置来本地化自适应表单。
+source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 4%
+source-wordcount: '1336'
+ht-degree: 3%
 
 ---
 
