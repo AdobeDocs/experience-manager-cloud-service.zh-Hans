@@ -1,9 +1,9 @@
 ---
 title: 如何基于核心组件向自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
-source-git-commit: 2a738d17b1e2f46c06828512ee07c1c20f35596c
+source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1484'
 ht-degree: 3%
 
 ---
@@ -16,12 +16,11 @@ ht-degree: 3%
 | Foundation 组件 | [单击此处](supporting-new-language-localization.md) |
 | 核心组件 | 本文 |
 
-AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。
+AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。
 
 ## 如何为自适应表单选择区域设置？
 
-
-在呈现自适应表单时，可通过两种方法识别和选择自适应表单的区域设置：
+在开始为自适应Forms添加新区域设置之前，请先了解如何为自适应表单选择区域设置。 在呈现自适应表单时，可通过两种方法识别和选择自适应表单的区域设置：
 
 * **使用 [区域设置] URL中的选择器**：在渲染自适应表单时，系统通过检查 [区域设置] 自适应表单URL中的选择器。 URL遵循以下格式： http:/[AEM Forms服务器URL]/content/forms/af/[afName].[区域设置].html？wcmmode=disabled. 对的使用 [区域设置] 选择器允许缓存自适应表单。
 
