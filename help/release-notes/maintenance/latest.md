@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 8a1ed1e44db0154854af73a96339d8e416afd3b4
+source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 45%
+source-wordcount: '295'
+ht-degree: 49%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 45%
 
 ## 版本 13420 {#release-13420}
 
-以下总结了维护版本13420的不断改进，该版本于2023年9月12日公开发布。 此维护版本取代了发行说13323。
+下方维护版本 13420（于 2023 年 9 月 12 日公开发布该版本）的持续改进。此维护版本取代版本 13323。
 
-激活 2023.9.0 功能后可为此次维护版本提供完整的功能集。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
+2023.9.0功能激活提供了此维护版本的完整功能集。 有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
 ### 增强 {#enhancements-13420}
 
@@ -38,7 +38,7 @@ ht-degree: 45%
 - CQ-4354266：无法打开收件箱项目。
 - CQ-4354347：更新了AEM翻译。
 - DISP-1009：作为非第一个标头的User-Agent会裁切X-Forwarded-Host。
-- 各种与辅助功能和安全相关的修复。
+- 各种辅助功能和安全相关的修复。
 
 ### 已知问题 {#known-issues-13420}
 
@@ -48,7 +48,7 @@ ht-degree: 45%
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
-| AEM OAK | 1.54-T20230817132355-3800a65 | [Oak API 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
+| AEM Oak | 1.54-T20230817132355-3800a65 | [Oak API 1.54.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.54.0/index.html) |
 | AEM SLING API | 2.27.2 版 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 版本 1.4.20-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
 | AEM 核心组件 | 2.23.2 版 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
