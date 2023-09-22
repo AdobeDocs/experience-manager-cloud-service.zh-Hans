@@ -1,10 +1,10 @@
 ---
 title: 如何根据核心组件向自适应表单添加新区域设置支持？
 description: AEM Forms允许您添加新的区域设置来本地化自适应表单。
-source-git-commit: b643cdc9ebf57e164088e0dc3598e4e0d3ded267
+source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 3%
+source-wordcount: '1079'
+ht-degree: 4%
 
 ---
 
@@ -16,15 +16,20 @@ ht-degree: 3%
 | Foundation 组件 | [单击此处](supporting-new-language-localization.md) |
 | 核心组件 | 本文 |
 
-AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。
+AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。
 
-## 了解区域设置词典 {#about-locale-dictionaries}
+您还可以添加对更多区域设置的支持，如印地语(hi_IN)。
 
-自适应表单的本地化依赖于两种类型的区域设置词典：
+<!-- 
+## Understanding locale dictionaries {#about-locale-dictionaries}
 
-* **表单特定词典** 包含自适应表单中使用的字符串。 例如，标签、字段名称、错误消息、帮助说明。 它作为每个区域设置的一组XLIFF文件进行管理，您可以在以下位置访问它： `[author-instance]/libs/cq/i18n/gui/translator.html`.
+The localization of adaptive forms relies on two types of locale dictionaries:
 
-* **全局词典** AEM客户端库中有两个作为JSON对象管理的全局词典。 这些词典包含默认错误消息、月份名称、货币符号、日期和时间模式等。 这些词典位于 `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. 这些位置包含每个区域设置的单独文件夹。 由于全局字典不经常更新，因此为每个区域设置保留单独的JavaScript文件使浏览器能够在同一服务器上访问不同的自适应表单时缓存这些文件并降低网络带宽使用量。
+*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+
+*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+
+-->
 
 ## 前提条件 {#prerequistes}
 
@@ -44,7 +49,7 @@ AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德�
 
 ## 添加区域设置 {#add-localization-support-for-non-supported-locales}
 
-AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)本地化自适应Forms内容。 要在自适应Forms运行时添加新区域设置支持，请执行以下步骤：
+要添加新区域设置支持，请执行以下步骤：
 
 ![向存储库添加区域设置](add-a-locale-adaptive-form-core-components.png)
 
@@ -136,13 +141,14 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 ### 提交更改并部署管道 {#commit-changes-in-repo-deploy-pipeline}
 
 在添加新的区域设置支持后，将更改提交到GIT存储库。 使用全栈管道部署代码。 学习 [如何设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 以添加新的区域设置支持。
-管道完成后，新添加的区域设置将显示在AEM环境中。
 
-## 在自适应Forms中使用添加的区域设置 {#use-added-locale-in-af}
+管道运行成功后，新添加的区域设置即可使用。
 
-执行以下步骤，使用新添加的区域设置使用和渲染自适应表单：
+## 预览具有新添加区域设置的自适应表单 {#use-added-locale-in-af}
 
-1. 登录到您的AEM创作实例。
+执行以下步骤以预览具有新添加区域设置的自适应：
+
+1. 登录到您的AEM Formsas a Cloud Service实例。
 1. 转到 **Forms** >  **Forms和文档**.
 1. 选择自适应表单并单击 **添加字典** 和 **将字典添加到翻译项目** 出现向导。
 1. 指定 **项目标题** 并选择 **目标语言** 从 **将字典添加到翻译项目** 向导。
@@ -153,7 +159,7 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 
 可以使用两种方法识别自适应表单的区域设置。 呈现自适应表单时，它通过以下方式标识请求的区域设置：
 
-* 正在检索 `[local]` 自适应表单URL中的选择器。 URL 的格式为 `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用 `[local]` 选择器允许缓存自适应表单。
+* 正在检索 `[local]` 自适应表单URL中的选择器。 URL 的格式为 `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用 `[local]` 选择器允许缓存自适应表单。
 
 * 正在按列出的顺序检索以下参数：
 
@@ -165,17 +171,18 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 
 如果所请求区域设置的客户端库不存在，它将检查客户端库是否存在区域设置中存在的语言代码。 例如，如果请求的区域设置为 `en_ZA` （南非英语）和客户图书馆 `en_ZA` 不存在，自适应表单将客户端库用于 `en` （英语）语言（如果存在）。 但是，如果这两个字典都不存在，则自适应表单会将该字典用于 `en` 区域设置。
 
-
 标识区域设置后，自适应表单会选取特定于表单的词典。 如果未找到所请求区域设置的表单特定词典，则它会使用用于创作自适应表单的语言的词典。
 
-如果没有可用的区域设置信息，则自适应表单将以其原始语言（开发期间使用的语言）显示。
+如果没有可用的区域设置信息，则自适应表单将以其原始语言（在表单开发期间使用的语言）显示。
 
-Get [示例客户端库](/help/forms/assets/locale-support-sample.zip) 以添加对新区域设置的支持。 您需要以所需的区域设置更改文件夹的内容。
+<!--
+Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## 支持新本地化的最佳实践 {#best-practices}
+## Best Practices to support for new localization {#best-practices}
 
-* Adobe建议在创建自适应表单之后创建翻译项目。
+*   Adobe recommends creating a translation project after creating an Adaptive Form.
 
-* 在现有自适应表单中添加新字段时：
-   * **对于机器翻译**：重新创建词典并运行翻译项目。 创建翻译项目后添加到自适应表单的字段保持未翻译状态。
-   * **对于人工翻译**：导出词典，通过 `[server:port]/libs/cq/i18n/gui/translator.html`. 更新新添加字段的字典并上传。
+*   When new fields are added in an existing Adaptive Form:
+    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
+    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
+-->
