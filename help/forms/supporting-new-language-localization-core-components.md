@@ -1,15 +1,15 @@
 ---
-title: 如何根据核心组件向自适应表单添加新区域设置支持？
-description: AEM Forms允许您添加新的区域设置来本地化自适应表单。
-source-git-commit: 0a1310290c25a94ffe6f95ea6403105475ef5dda
+title: 如何基于核心组件向自适应表单添加新区域设置支持？
+description: 了解如何为自适应表单添加新区域设置。
+source-git-commit: 056aecd0ea1fd9ec1e4c05299d2c50bca161615f
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 4%
+source-wordcount: '1413'
+ht-degree: 3%
 
 ---
 
-# 为基于核心组件的自适应Forms添加区域设置 {#supporting-new-locales-for-adaptive-forms-localization}
 
+# 为基于核心组件的自适应Forms添加区域设置 {#supporting-new-locales-for-adaptive-forms-localization}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -18,24 +18,30 @@ ht-degree: 4%
 
 AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。
 
-您还可以添加对更多区域设置的支持，如印地语(hi_IN)。
+## 如何为自适应表单选择区域设置？
 
-<!-- 
-## Understanding locale dictionaries {#about-locale-dictionaries}
+在呈现自适应表单时，可通过两种方法识别和选择自适应表单的区域设置：
 
-The localization of adaptive forms relies on two types of locale dictionaries:
+* **使用 [区域设置] URL中的选择器**：在渲染自适应表单时，系统通过检查 [区域设置] 自适应表单URL中的选择器。 URL遵循以下格式： http:/[AEM Forms服务器URL]/content/forms/af/[afName].[区域设置].html？wcmmode=disabled. 对的使用 [区域设置] 选择器允许缓存自适应表单。
 
-*   **Form-specific dictionary** Contains strings used in adaptive forms. For example, labels, field names, error messages, help descriptions. It is managed as a set of XLIFF files for each locale and you can access it at `[AEM Forms as a Cloud Service Author instance]/libs/cq/i18n/gui/translator.html`.
+* 按照以下列出的顺序检索参数：
 
-*   **Global dictionaries** There are two global dictionaries, managed as JSON objects, in AEM client library. These dictionaries contain default error messages, month names, currency symbols, date and time patterns, and so on.  These locations contain separate folders for each locale. Because global dictionaries are not updated frequently, keeping separate JavaScript files for each locale enables browsers to cache them and reduce network bandwidth usage when accessing different adaptive forms on same server.
+   * 请求参数 `afAcceptLang`：要覆盖用户的浏览器区域设置，您可以传递afAcceptLang请求参数。 例如，此URL强制以加拿大法文区域设置呈现表单： `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
 
--->
+   * 浏览器区域设置(Accept-Language Header)：系统还会考虑用户的浏览器区域设置，使用在请求中指定 `Accept-Language` 标题。
+
+  如果所请求区域设置的客户端库不可用，系统将检查区域设置中是否存在语言代码的客户端库。 例如，如果请求的区域设置为 `en_ZA` （南非英语），并且没有客户库 `en_ZA`，则自适应表单将使用en（英语）的客户端库（如果可用）。 如果两者都未找到，则自适应表单会使用词典查找 `en` 区域设置。
+
+  标识了区域设置后，自适应表单会选择相应的表单特定词典。 如果未找到所请求区域设置的词典，则默认使用创作自适应表单时所用语言的词典。
+
+  如果区域设置信息不可用，则自适应表单会以其原始语言（在表单开发期间使用的语言）显示
+
 
 ## 前提条件 {#prerequistes}
 
 在开始添加对新区域设置的支持之前，
 
-* 安装纯文本编辑器(IDE)以便于编辑。 本文档中的示例基于Microsoft VS代码。
+* 安装纯文本编辑器(IDE)以便于编辑。 本文档中的示例基于Microsoft® Visual Studio Code。
 * 克隆自适应Forms核心组件存储库。 要克隆存储库：
    1. 打开命令行或终端窗口，然后导航到存储库的存储位置。 例如 `/adaptive-forms-core-components`
    1. 运行以下命令以克隆存储库：
@@ -65,18 +71,18 @@ The localization of adaptive forms relies on two types of locale dictionaries:
 
    替换 `<my-org>` 和 `<my-program>` 在上面URL中，使用您的组织名称和项目名称。 有关获取组织名称、程序名称或Git存储库的完整路径以及克隆存储库所需的凭据的详细说明，请参阅 [访问Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 文章。
 
-   成功完成命令后，将创建一个文件夹 `<my-program>` 创建。 它包含从Git存储库克隆的内容。 在文章的其余部分中，该文件夹重命名为， `[AEM Forms as a Cloud Service Git repostory]`.
+   成功完成命令后，将创建一个文件夹 `<my-program>` 创建。 它包含从Git存储库克隆的内容。 在文章的其余部分中，该文件夹重命名为， `[AEM Forms as a Cloud Service Git repository]`.
 
 
 ### 将新区域设置添加到指南本地化服务 {#add-a-locale-to-the-guide-localization-service}
 
 1. 以纯文本编辑器打开上一部分中克隆的存储库文件夹。
-1. 导航到 `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 文件夹。您可以找到 `<appid>` 在 `archetype.properties` 项目的文件。
-1. 打开 `[AEM Forms as a Cloud Service Git repostory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` 文件以供编辑。如果文件不存在，请创建该文件。 具有支持的区域设置的示例文件如下所示：
+1. 导航到 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 文件夹。您可以找到 `<appid>` 在 `archetype.properties` 项目的文件。
+1. 打开 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` 文件以供编辑。如果文件不存在，请创建该文件。 具有支持的区域设置的示例文件如下所示：
 
    ![示例指南Localization Service.cfg.json](locales.png)
 
-1. 添加 [语言的区域设置代码](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 例如，您要添加印地语的“hi”。
+1. 添加 [语言的区域设置代码](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 例如，您想要添加的内容，为印地语添加“hi”。
 1. 保存并关闭该文件。
 
 ### 创建客户端库以添加区域设置
@@ -86,14 +92,14 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 1. 在纯文本编辑器中打开自适应Forms核心组件存储库。 如果没有克隆存储库，请参阅 [先决条件](#prerequistes) 有关克隆存储库的说明。
 1. 导航至 `/aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs` 目录。
 1. 复制 `clientlib-it-custom-locale` 目录。
-1. 导航到 `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` 并粘贴 `clientlib-it-custom-locale` 目录。
+1. 导航到 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/moonlightprodprogram/clientlibs` 并粘贴 `clientlib-it-custom-locale` 目录。
 
 
 ### 创建特定于区域设置的文件 {#locale-specific-file}
 
-1. 导航至 `[AEM Forms as a Cloud Service Git repostory]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
+1. 导航至 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. 找到 [GitHub上的英语区域设置.json文件](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)，其中包含产品中包含的最新默认字符串集。
-1. 为您的特定区域设置创建新的.json文件。
+1. 为您的特定区域设置创建一个.json文件。
 1. 在新创建的.json文件中，镜像了英语区域设置文件的结构。
 1. 将.json文件中的英语字符串替换为语言的相应本地化字符串。
 1. 保存并关闭文件。
@@ -103,7 +109,7 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 
 仅当满足以下条件，才执行此步骤： `<locale>` 您添加的内容不属于 `en`， `de`， `es`， `fr`， `it`， `pt-br`， `zh-cn`， `zh-tw`， `ja`， `ko-kr`.
 
-1. 导航到 `[AEM Forms as a Cloud Service Git repostory]/ui.content/src/main/content/jcr_root/etc/` 文件夹。
+1. 导航到 `[AEM Forms as a Cloud Service Git repository]/ui.content/src/main/content/jcr_root/etc/` 文件夹。
 
 1. 创建 `etc` 下的文件夹 `jcr_root` 文件夹（如果尚未存在）。
 
@@ -175,14 +181,13 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 
 如果没有可用的区域设置信息，则自适应表单将以其原始语言（在表单开发期间使用的语言）显示。
 
-<!--
-Get [sample client library](/help/forms/assets/locale-support-sample.zip) to add support for new locale. You need to change the content of the folder in the required locale.
 
-## Best Practices to support for new localization {#best-practices}
+## 支持新本地化的最佳实践 {#best-practices}
 
-*   Adobe recommends creating a translation project after creating an Adaptive Form.
+* Adobe建议在创建自适应表单之后创建翻译项目。
 
-*   When new fields are added in an existing Adaptive Form:
-    * **For machine translation**: Re-create the dictionary and run the translation project. Fields added to an Adaptive Form after creating a translation project remain untranslated. 
-    * **For human translation**: Export the dictionary through `[server:port]/libs/cq/i18n/gui/translator.html`. Update the dictionary for the newly added fields and upload it.
--->
+* 在现有自适应表单中添加新字段时：
+   * **对于机器翻译**：重新创建词典并运行翻译项目。 创建翻译项目后添加到自适应表单的字段保持未翻译状态。
+   * **对于人工翻译**：导出词典，通过 `[server:port]/libs/cq/i18n/gui/translator.html`. 更新新添加字段的字典并上传。
+
+
