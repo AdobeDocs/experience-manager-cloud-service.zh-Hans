@@ -1,9 +1,9 @@
 ---
 title: 如何基于核心组件向自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
-source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
+source-git-commit: 0d2e353208e4e59296d551ca5270be06e574f7df
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1339'
 ht-degree: 4%
 
 ---
@@ -20,17 +20,17 @@ AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德�
 
 ## 如何为自适应表单选择区域设置？
 
-在开始为自适应Forms添加新区域设置之前，请先了解如何为自适应表单选择区域设置。 在呈现自适应表单时，可通过两种方法识别和选择自适应表单的区域设置：
+在开始为自适应Forms添加区域设置之前，请先了解如何为自适应表单选择区域设置。 在呈现自适应表单时，可通过两种方法识别和选择区域设置：
 
-* **使用 [区域设置] URL中的选择器**：在渲染自适应表单时，系统通过检查 [区域设置] 自适应表单URL中的选择器。 URL遵循以下格式： http:/[AEM Forms服务器URL]/content/forms/af/[afName].[区域设置].html？wcmmode=disabled. 对的使用 [区域设置] 选择器允许缓存自适应表单。
+* **使用 `locale` URL中的选择器**：在渲染自适应表单时，系统通过检查 [区域设置] 自适应表单URL中的选择器。 URL遵循以下格式： http:/[AEM Forms服务器URL]/content/forms/af/[afName].[区域设置].html？wcmmode=disabled. 对的使用 [区域设置] 选择器允许缓存自适应表单。 例如，URL `www.example.com/content/forms/af/contact-us.hi.html?wcmmmode=disabled` 以印地语呈现表单。
 
 * 按照以下列出的顺序检索参数：
 
-   * **请求参数`afAcceptLang`**：要覆盖用户的浏览器区域设置，您可以传递afAcceptLang请求参数。 例如，此URL强制以加拿大法文区域设置呈现表单： `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`.
+   * **使用 `afAcceptLang`请求参数**：要覆盖用户的浏览器区域设置，您可以传递afAcceptLang请求参数。 例如， `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr` URL强制AEM Forms服务器以加拿大法文区域设置呈现表单。
 
-   * **浏览器区域设置（Accept-Language标题）**：系统还会考虑用户的浏览器区域设置，在使用请求的请求中指定了该区域设置 `Accept-Language` 标题。
+   * **使用浏览器区域设置（Accept-Language标头）**：系统还会考虑用户的浏览器区域设置，在使用请求的请求中指定了该区域设置 `Accept-Language` 标题。
 
-  如果所请求区域设置的客户端库不可用，系统将检查区域设置中是否存在语言代码的客户端库。 例如，如果请求的区域设置为 `en_ZA` （南非英语），并且没有客户库 `en_ZA`，则自适应表单会使用en（英语）的客户端库（如果可用）。 如果两者都未找到，则自适应表单会使用词典查找 `en` 区域设置。
+  如果所请求区域设置的客户端库（本文稍后将介绍创建和使用库的过程）不可用，则系统会检查区域设置中是否存在语言代码的客户端库。 例如，如果请求的区域设置为 `en_ZA` （南非英语），并且没有客户库 `en_ZA`，则自适应表单会使用en（英语）的客户端库（如果可用）。 如果两者都未找到，则自适应表单会使用词典查找 `en` 区域设置。
 
   标识了区域设置后，自适应表单会选择相应的表单特定词典。 如果未找到所请求区域设置的词典，则默认使用创作自适应表单时所用语言的词典。
 
@@ -39,19 +39,21 @@ AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德�
 
 ## 前提条件 {#prerequistes}
 
-在开始添加对新区域设置的支持之前，
+开始添加区域设置之前：
 
-* 安装纯文本编辑器(IDE)以便于编辑。 本文档中的示例基于Microsoft® Visual Studio Code。
+* 安装纯文本编辑器(IDE)以便于编辑。 本文档中的示例基于 [Microsoft® Visual Studio代码](https://code.visualstudio.com/download).
 * 安装版本 [Git](https://git-scm.com)，如果您的计算机上不可用。
 * 克隆 [自适应Forms核心组件](https://github.com/adobe/aem-core-forms-components) 存储库。 要克隆存储库：
-   1. 打开命令行或终端窗口，然后导航到存储库的存储位置。 例如 `/adaptive-forms-core-components`
+   1. 打开命令行或终端窗口，然后导航到存储库的存储位置。 例如，`/adaptive-forms-core-components`
    1. 运行以下命令以克隆存储库：
 
       ```SHELL
           git clone https://github.com/adobe/aem-core-forms-components.git
       ```
 
-  存储库包括添加区域设置所需的客户端库。 在文章的其余部分中，该文件夹重命名为， [自适应Forms核心组件存储库].
+  存储库包括添加区域设置所需的客户端库。
+
+  成功执行命令后，存储库将克隆到 `aem-core-forms-components` 个文件夹。 在文章的其余部分中，该文件夹重命名为， [自适应Forms核心组件存储库].
 
 
 ## 添加区域设置 {#add-localization-support-for-non-supported-locales}
@@ -169,7 +171,13 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 * Adobe建议在创建自适应表单之后创建翻译项目。
 
 * 在现有自适应表单中添加新字段时：
-   * **对于机器翻译**：重新创建词典并运行翻译项目。 创建翻译项目后添加到自适应表单的字段保持未翻译状态。
-   * **对于人工翻译**：导出词典，通过 `[server:port]/libs/cq/i18n/gui/translator.html`. 更新新添加字段的字典并上传。
+   * **对于机器翻译**：重新创建词典并 [运行翻译项目](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md). 创建翻译项目后添加到自适应表单的字段保持未翻译状态。
+   * **对于人工翻译**：使用位于的UI导出词典 `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 更新新添加字段的字典并上传。
+
+## 查看更多
+
+* [使用机器翻译或人工翻译来翻译基于核心组件的自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [为自适应Forms生成记录文档](/help/forms/generate-document-of-record-core-components.md)
+* [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 
