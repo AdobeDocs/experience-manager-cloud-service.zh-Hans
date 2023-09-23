@@ -1,10 +1,10 @@
 ---
 title: 如何基于核心组件向自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
-source-git-commit: 4e48e49fea66fa24052632138a1b305208690d06
+source-git-commit: 911b377edd4eb0c8793d500c26ca44a44c69e167
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 3%
+source-wordcount: '1254'
+ht-degree: 4%
 
 ---
 
@@ -163,25 +163,6 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 1. 选择自适应表单并单击 **HTML预览**.
 1. 添加 `&afAcceptLang=<locale-name>` 在自适应表单的URL中。
 1. 刷新页面，自适应表单在指定的区域设置中呈现。
-
-可以使用两种方法识别自适应表单的区域设置。 呈现自适应表单时，它通过以下方式标识请求的区域设置：
-
-* 正在检索 `[local]` 自适应表单URL中的选择器。 URL 的格式为 `http:/[AEM Forms Server URL]/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用 `[local]` 选择器允许缓存自适应表单。
-
-* 正在按列出的顺序检索以下参数：
-
-   * 请求参数 `afAcceptLang`
-要覆盖用户的浏览器区域设置，您可以传递 `afAcceptLang` 请求参数强制区域设置。 例如，以下URL强制以加拿大 — 法语区域设置呈现表单：
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
-
-   * 用户的浏览器区域设置设置，该设置在使用请求的请求中指定 `Accept-Language` 标题。
-
-如果所请求区域设置的客户端库不存在，它将检查客户端库是否存在区域设置中存在的语言代码。 例如，如果请求的区域设置为 `en_ZA` （南非英语）和客户图书馆 `en_ZA` 不存在，自适应表单将客户端库用于 `en` （英语）语言（如果存在）。 但是，如果这两个字典都不存在，则自适应表单会将该字典用于 `en` 区域设置。
-
-标识区域设置后，自适应表单会选取特定于表单的词典。 如果未找到所请求区域设置的表单特定词典，则它会使用用于创作自适应表单的语言的词典。
-
-如果没有可用的区域设置信息，则自适应表单将以其原始语言（在表单开发期间使用的语言）显示。
-
 
 ## 支持新本地化的最佳实践 {#best-practices}
 
