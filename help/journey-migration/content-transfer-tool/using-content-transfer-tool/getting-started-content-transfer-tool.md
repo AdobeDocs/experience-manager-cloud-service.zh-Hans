@@ -2,7 +2,7 @@
 title: 内容转移工具快速入门
 description: 了解如何开始使用内容传输工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 7de874f607c98501052ddb715c4af98f6c5d5324
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 21%
@@ -86,7 +86,7 @@ ht-degree: 21%
 
    >[!NOTE]
    >
-   >在Cloud Acceleration Manager中，每个项目最多可以创建五个迁移集，包括过期的集。
+   >在Cloud Acceleration Manager中，每个项目最多可创建20个迁移集，包括过期的迁移集。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 

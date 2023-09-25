@@ -2,10 +2,10 @@
 title: 内容传输工具概述
 description: 了解如何使用内容传输工具将内容从内部部署AEM实例传输到AEMas a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 57%
+ht-degree: 54%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 57%
 
 迁移集具有以下属性：
 
-* 利用新版本，您可以在 Cloud Acceleration Manager 中创建的项目中创建最多五个迁移集。
+* 使用新版本，您可以在Cloud Acceleration Manager中创建的项目中最多创建20个迁移集。
 * 每个迁移集应具有唯一的名称。
 
 内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。
