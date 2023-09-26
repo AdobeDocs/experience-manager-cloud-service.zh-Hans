@@ -3,10 +3,10 @@ title: 创作内容片段
 description: 了解如何为内容片段创作内容，然后根据用途创建该内容的变体。这让投放 Headless 和创造页面变得更加灵活。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '2208'
-ht-degree: 100%
+source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+workflow-type: tm+mt
+source-wordcount: '2227'
+ht-degree: 98%
 
 ---
 
@@ -484,7 +484,7 @@ ht-degree: 100%
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>选项卡占位符</b></p><p><b>选项卡占位符</b>显示在左侧面板以及中央面板中，但未用实际图标表示。</p> </td>
+   <td><p><b>选项卡占位符</b></p><p>虽然不是以实际图标表示，但 <b>制表符占位符</b> 即表示在左侧面板中。 <br>它也显示在中心面板中，水平显示或下拉列表（当有太多内容无法水平显示时）中。</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
