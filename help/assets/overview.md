@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
-workflow-type: ht
-source-wordcount: '752'
-ht-degree: 100%
+source-git-commit: a4601d95076d37ed5df79b7c9dabb8beab8353d0
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 91%
 
 ---
 
@@ -52,6 +52,12 @@ DAM 库管理员、开发人员和超级用户可以继续使用管理视图，�
 ![添加标记](assets/newui-overview.svg)
 
 有关如何访问资源视图及其通过“管理”视图提供的一些简化功能的信息，请参阅[资源视图简介。](/help/assets/assets-view-introduction.md)
+
+## 与Edge Delivery Services的基于文档的创作集成 {#integrate-doc-authoring-edge-and-assets}
+
+Edge Delivery使您能够创建快速吸引人的网站，作者可以在其中快速更新和发布内容，并且可以快速启动新站点。
+
+将AEM Assets与基于文档的创作集成以供Edge Delivery Services使用，以使网站作者能够在Microsoft Word或Google文档中创作文档时使用AEM Assets存储库中可用的图像。 有关更多信息，请参阅 [将AEM Assets与基于文档的创作集成](/help/edge/using.md#integrate-assets-edge).
 
 ## 新 Assets 功能 {#whats-new-assets}
 
