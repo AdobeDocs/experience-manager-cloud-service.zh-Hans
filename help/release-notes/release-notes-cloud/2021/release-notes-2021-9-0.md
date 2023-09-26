@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 版的发行说明。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 37%
+source-wordcount: '1573'
+ht-degree: 20%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->您可以在此部分中导航到早期版本的发行说明；例如，2020 版、2021 版等的发行说明。
+>从此处，您可以导航到以前版本的发行说明；例如，2020版和2021版的发行说明。
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ ht-degree: 37%
 
 ### 的新增功能 [!DNL Sites] 预发行渠道 {#sites-prerelease-features}
 
-* 内容片段模型现在在发布后自动设置为只读状态，以避免重新发布已编辑的模型后无意中破坏实时API查询。 在尝试编辑已发布的模型时，系统会提示用户并显示警告。 接受警告时可以进行编辑。
+* 内容片段模型现在在发布后自动设置为只读状态，以避免在重新发布已编辑的模型后无意中中断实时API查询。 在尝试编辑已发布的模型时，系统会提示用户并显示警告。 接受警告时可以进行编辑。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -45,14 +45,14 @@ ht-degree: 37%
   ![将搜索结果排序于 [!DNL Assets] 在列视图和卡片视图中](/help/assets/assets/sort-searched-assets.png)
   *图：对搜索结果排序 [!DNL Assets] 在“列”和“卡片”视图中。*
 
-* 为了以编程方式使用资产微服务调用处理，引入了一个新的API。 开发人员现在可以对文件夹中的一个或多个特定资产应用现有的文件夹级别处理配置文件。 处理配置文件将根据自定义元数据属性更新进行应用。 请参阅 `AssetProcessor` 在 [[!DNL Experience Manager] API参考](https://www.adobe.io/experience-manager/reference-materials/). 和以前一样，可以 [从用户界面使用资源微服务](/help/assets/asset-microservices-configure-and-use.md).
+* 为了以编程方式使用资产微服务调用处理，引入了一个新的API。 开发人员现在可以对文件夹中的一个或多个特定资产应用现有的文件夹级别处理配置文件。 处理配置文件将根据自定义元数据属性更新进行应用。 请参阅 `AssetProcessor` 在 [[!DNL Experience Manager] API参考](https://developer.adobe.com/experience-manager/reference-materials/). 和以前一样，可以 [从用户界面使用资源微服务](/help/assets/asset-microservices-configure-and-use.md).
 
 <!-- Leave this commented.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
 Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
+A/V transcription feature by way of CQ-4303854 has moved to Oct beta now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
@@ -64,21 +64,21 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms-sep-2021}
 
-* **在自适应表单中使用 Adobe Sign 角色**：用于商业和企业服务级别的 Adobe Sign 可让您选择扩展协议接收者的角色（不仅限于签名者），以便更好地匹配他们的工作流要求。您现在可以[允许每个协议接收者在自适应表单中配置自己的角色](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)，签名者是默认角色。
+* **在自适应表单中使用Adobe Sign角色**  — 用于商业和企业服务级别的Adobe Sign允许您选择扩展协议接受者的角色，而不只是签名者角色，以便更好地匹配他们的工作流要求。 您现在可以 [使每个协议接收者在自适应表单中配置自己的角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)，签名者是默认角色。
 
-* **Analytics for Adaptive Forms**：您现在可以通过 Adobe Analytics for Adaptive Forms 捕获和跟踪最终用户行为，从而收集最终用户洞察。这有助于根据数据做出明智的决策，从而改善最终用户体验。
+* **Analytics for Adaptive Forms**  — 您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪最终用户行为，从而收集最终用户洞察。 这有助于根据数据做出明智的决策，从而改善最终用户体验。
 
-* **轻松地将 AEM Forms 与 Microsoft Dynamics 和 Salesforce 连接**：此服务为 Microsoft Dynamics 和 Salesforce 提供现成的数据源配置和数据模型，使得[开发人员可以更快、更轻松地配置 Microsoft Dynamics 和 Salesforce 作为自适应表单的数据源](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en)。
+* **轻松地将Adobe Experience Manager (AEM) Forms与Microsoft® Dynamics和Salesforce连接**  — 该服务为Microsoft®Dynamics和Salesforce提供现成的数据源配置和数据模型。 这就使它 [开发人员可以更快、更轻松地将Microsoft®Dynamics和Salesforce配置为自适应表单的数据源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hans).
 
-* **使用 DocuSign 对自适应表单进行电子签名：**&#x200B;您可以使用 DocuSign 对自适应表单进行电子签名。此服务提供了自定义提交操作，可将 DocuSign 与自适应表单结合使用。您可以安装Software Distribution上提供的软件包以导入提交操作。
+* **使用DocuSign对自适应表单进行电子签名**  — 您可以使用DocuSign对自适应表单进行电子签名。 此服务提供了自定义提交操作，可将 DocuSign 与自适应表单结合使用。您可以安装Software Distribution上提供的软件包以导入提交操作。
 
 ### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-prerelease}
 
-* **统一存储连接器：**&#x200B;使用统一存储连接器将客户管理的存储库中的进程内数据外部化。例如，您可以
+* **统一存储连接器**  — 使用统一存储连接器将客户管理的存储库中的进程内数据外部化。 例如，您可以
    * 启用Forms Portal的保存和恢复功能，将自适应表单草稿存储到客户管理的数据存储库中。
    * 将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL AEM Forms as a Cloud Service - Communications]** - [通信API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合XDP模板和XML数据以生成各种格式的打印文档。 该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
    * 使用 XML 数据填充模板文件来生成文档。
    * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
    * 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
@@ -89,11 +89,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### 新增功能 {#what-is-new-cif}
 
-* 站点编辑器中新的“关联的商业内容”选项卡通过快速访问当前上下文的相关AEM产品内容来提高创作效率
+* AEM Sites编辑器中新的“关联的商业内容”选项卡通过快速访问当前上下文的相关AEM产品内容来提高创作效率
 
   ![关联的商务内容](/help/assets/CIF/associated-commerce-content.png)
 
-* 改进了产品选取器UI，以提供更好的用户体验、更高的效率和对复杂产品目录的支持
+* 改进了产品选取器UI，以提供更好的用户体验、更高的效率并支持复杂的产品目录
 
   ![新产品选取器](/help/assets/CIF/product-picker.png)
 
@@ -111,11 +111,11 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### 新增功能 {#what-is-new-screens}
 
-* Screensas a Cloud Service现在支持基本回放监控。 播放器现在将报告每次ping（默认为30秒）的各种回放指标。 基于量度，它提供检测各种边缘情况（停滞体验、空白屏幕、调度问题等）的能力。 此功能允许团队远程监控播放器是否正确播放内容，改善对空白屏幕或现场中断体验的反应性，并降低向最终用户显示中断体验的风险。
-请参阅 [基本回放监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 以了解更多详细信息。
+* Screensas a Cloud Service现在支持基本回放监控。 播放器现在报告每次ping（默认为30秒）的各种回放指标。 它可以基于指标检测各种边缘情况（卡住体验、空白屏幕、调度问题等）。 团队可以使用此功能远程监控播放器是否正确播放内容。 它提高了对空白屏幕或现场中断体验的反应性，并降低了向最终用户显示中断体验的风险。
+请参阅 [基本回放监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 以了解更多详细信息。
 
-* Screensas a Cloud Service中现在支持视频缩略图。 内容作者可以定义视频的缩略图，以便在相应的团队最终确定实际视频时，将图像用作占位符并正确测试内容播放和定位。 在视频回放失败时，也可以使用该图像。
-请参阅 [视频的缩略图支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) 以了解更多详细信息。
+* Screensas a Cloud Service中现在支持视频缩略图。 内容作者可以定义视频的缩略图，以便在相应团队最终确定实际视频时，将图像用作占位符并正确测试内容播放和定位。 在视频播放失败时，也可以使用该图像。
+请参阅 [视频的缩略图支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html) 以了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-screens}
 
@@ -133,7 +133,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 >[!INFO]
 >
->高级联网功能是2021.9.0版本的一部分，将于10月中旬为客户启用。
+>高级联网功能是2021.9.0版本的一部分，于2021年10月中旬为客户启用。
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 现在提供了多种高级联网功能，包括：
 
@@ -141,11 +141,11 @@ CQ-4328183 was not reported on CS so not documented here.
 * 专用出口IP地址用于输出as a Cloud Service于唯一IP的AEM流量，现在支持所有端口。
 * VPN用于保护您的基础设施与AEMas a Cloud Service之间的流量。
 
-阅读 [文档](/help/security/configuring-advanced-networking.md) 有关更多信息（包括如何自助使用Cloud Manager API配置高级网络）。
+阅读 [文档](/help/security/configuring-advanced-networking.md) 有关更多信息（包括如何使用Cloud Manager API自助配置高级网络）。
 
 **索引优化**
 
-为了提高搜索查询和索引的性能，不再在中现成使用全文索引lucene-2 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 此版本中的。 为了根据AEM客户在AEM环境中删除此全文索引，Adobe工程部单独并主动与客户合作，以温和且可持续的方式删除Lucene全文索引。 访问 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [文档](/help/operations/indexing.md#index-optimizations) 如果您有任何问题，请直接联系我们的支持人员，以获取更多信息。
+为了提高搜索查询和索引的性能，不再在中现成使用全文索引lucene-2 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 此版本中的。 为了根据AEM客户在AEM环境中删除此全文索引，Adobe工程部单独并主动与客户合作，以温和且可持续的方式删除Lucene全文索引。 访问 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [文档](/help/operations/indexing.md#index-optimizations) 有关更多信息，如有疑问，请直接联系Adobe的支持部门。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -163,15 +163,15 @@ AEM as a Cloud Service 2021.9.0 中的 Cloud Manager 的发布日期是 2020 年
 
 * 代码质量步骤日志现在包括有关 OakPal 扫描过程的详细日志信息。
 
-* 活动页面菜单选项现在包括一个选项，用于&#x200B;**下载已完成的代码生成器执行的日志**。 选择此选项，将下载构建步骤的日志。
+* 活动页面菜单选项现在包括一个选项，用于&#x200B;**下载已完成的代码生成器执行的日志。** 选择此选项可下载构建步骤的日志。
 
 * 直接点击程序卡，现在可导航至Cloud Manager概述页面。
 
 ### 错误修复 {#bug-fixes-sept}
 
-* 现在，当用户尝试在已达到可配置的最大允许 IP 允许列表数的程序中添加新的 IP 允许列表时，将看到更容易理解的消息。
+* 列入允许列表 列入允许列表现在，当用户尝试在已达到可配置的最大允许IP数量的程序中添加IP时，会看到一条更易于理解的消息。
 
-* 从存储库屏幕选择复制 URL 菜单选项时复制了错误的 URL。
+* 从存储库屏幕选择复制URL菜单选项时复制了错误的URL。
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -181,7 +181,7 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager现在使用户能够在可打印预览中查看BPA报告，从而允许简单打印或打印以PDF以便于共享。 请参阅中的步骤6和7 [使用最佳实践分析卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager现在使用户能够在可打印预览中查看BPA报告，从而允许简单打印或打印以PDF以便于共享。 请参阅中的步骤6和7 [使用“最佳实践分析”卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## 内容转移工具 {#content-transfer-tool}
 
@@ -191,7 +191,7 @@ Cloud Acceleration Manager的发布日期是2021年10月4日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 通过简化的用户体验改进了用户映射，包括以下列出的功能。 有关更多详细信息，请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+* 通过简化的用户体验改进了用户映射，包括以下列出的功能。 有关更多详细信息，请参阅 [使用用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en#using-user-mapping-tool).
    * 在运行用户映射之前测试与用户管理API的连接
    * 正常跳过错误并继续用户映射活动
    * 如果访问令牌过期（24小时后），用户映射不再失败。 可以从上次停止的位置重新运行用户映射。
@@ -214,4 +214,4 @@ Best Practices Analyzer v2.1.18的发布日期是2021年9月2日。
 
 ### 错误修复 {#bug-fixes-bpa}
 
-* BPA错误地检测到Commerce Integration Framework的存在。
+* BPA错误地检测到Commerce integration framework的存在。

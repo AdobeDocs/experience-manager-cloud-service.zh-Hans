@@ -2,16 +2,16 @@
 title: 用于代码重构工具的统一体验
 description: 了解适用于代码重构工具的统一体验。
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
 
 # 用于代码重构工具的统一体验 {#unified-experience}
 
-我们开发了工具来自动执行与AEMas a Cloud Service兼容所需的一些代码重构任务。 为了降低与安装和设置不同代码重构工具相关的复杂性，我们开发了一个插件，以统一在代码和存储库上操作的工具。
+Adobe开发了一些工具，用于自动执行与Adobe Experience Manager (AEM)as a Cloud Service兼容所需的一些代码重构任务。 为了降低与安装和设置各种代码重构工具相关的复杂性，Adobe开发了一个插件，以统一在代码和存储库上操作的工具。
 
 ## 好处 {#benefits}
 
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 * 将处理源代码的工具统一到一起 `node.js` 应用程序公开为 `aio-cli ` 插件，以便为用户提供一致的用户体验。
 
-* 提供通过单个命令执行所有工具的功能，同时还提供了根据需要执行特定工具的灵活性。
+* 通过单个命令运行所有工具，同时还提供了根据需要运行特定工具的灵活性。
 
-* 提供可扩展性以简化新工具的添加，同时保持体验的一致性。
+* 简化新工具的添加，同时保持体验的一致性。
 
 ## 了解插件 {#understanding-plugin}
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 * **用户界面**
 
-   * `aio-cli` 执行一个或多个代码重构工具的命令（通过链接要按顺序执行的工具）。
+   * `aio-cli` 命令来执行一个或多个代码重构工具（通过链接按顺序运行的工具）。
    * `config.yaml` 它会采用所需的输入参数。
 
 * **底层代码重构工具套件**
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 ## 可用性 {#availability}
 
-请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 以了解其使用以及如何向此源自GitHub的插件代码投稿。
+请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 在这里，您可以了解使用情况以及如何向此源自GitHub的插件代码投稿。
 
 >[!NOTE]
 >目前，该插件已与AEM Dispatcher Converter和Repository Modernizer集成。
