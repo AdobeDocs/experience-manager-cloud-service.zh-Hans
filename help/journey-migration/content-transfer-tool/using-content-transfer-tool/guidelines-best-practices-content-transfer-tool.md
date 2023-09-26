@@ -1,11 +1,11 @@
 ---
-title: 使用内容传输工具的准则和最佳实践
-description: 使用内容传输工具的准则和最佳实践
+title: 有关使用内容传输工具的准则和最佳实践
+description: 了解使用内容传输工具的准则和最佳实践。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 19%
+source-wordcount: '1554'
+ht-degree: 14%
 
 ---
 
@@ -27,17 +27,17 @@ ht-degree: 19%
 已提供新版本的内容传输工具，它将内容传输过程与 Cloud Acceleration Manager 集成。强烈建议切换到此新版本以使用它提供的所有好处：
 
 * 一次性提取迁移集并将它并行摄取到多个环境中的自助方式
-* 通过更好的加载状态、防护机制和错误处理改善用户体验
+* 通过更好的加载状态、护栏和错误处理来改善用户体验
 * 摄取日志将保留，并且始终可用于进行故障排除
 
-要开始使用新版本，您需要卸载旧版本的内容传输工具。 之所以需要，是因为新版本带来了重大的架构变化。 使用版本2.x时，您需要创建新迁移集，并对新迁移集重新运行提取和摄取。
-不再支持2.0.0之前的版本，建议使用最新版本。
+要开始使用新版本，请卸载旧版本的内容传输工具。 之所以需要，是因为新版本带来了重大的架构变化。 使用版本2.x，您可以创建迁移集，并对迁移集重新运行提取和摄取。
+不支持低于2.0.0的版本，建议您使用最新版本。
 
 以下准则和最佳实践适用于内容传输工具的新版本：
 
-* 建议对&#x200B;**源**&#x200B;存储库运行[修订清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)和[数据存储一致性检查](https://helpx.adobe.com/cn/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)，以确定潜在问题，并减小存储库的大小。
+* 运行 [修订版清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 和 [数据存储一致性检查](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=zh-Hans) 在 **源** 存储库，以便您识别潜在问题并减小存储库的大小。
 
-* 在摄取阶段，建议使用运行摄取 *划出* 启用模式，在此模式下，目标AEM Cloud Service环境中的现有存储库（创作或发布）会被完全删除，然后使用迁移集数据更新。 应用此模式的摄取速度比非划出模式快得多，在非划出模式下，迁移集将应用在当前内容至上。
+* 在摄取阶段，Adobe建议您使用 *划出* 模式已启用，其中删除了目标Adobe Experience Manager (AEM)Cloud Service环境中的现有存储库（创作或发布）。 然后，使用迁移集数据更新。 此模式比非划出模式更快，在非划出模式下，迁移集将应用于当前内容的顶部。
 
 * 内容传输活动完成后，需要在云服务环境中使用正确的项目结构，才能确保内容在云服务环境中成功呈现。
 
@@ -47,7 +47,7 @@ ht-degree: 19%
    * *数据存储大小*：内容传输工具使用 64 GB，即使实际数据存储更大也是如此。
    * *节点存储大小*：区段存储目录大小或 MongoDB 数据库大小。因此，对于 20 GB 的区段存储大小，所需的可用磁盘空间将为 94 GB。
 
-* 需要在内容传输活动中维护迁移集，以支持内容增补。 在内容传输活动期间，Cloud Acceleration Manager中每次项目最多可以创建和维护20个迁移集。 如果需要超过20个迁移集，您将需要在Cloud Acceleration Manager中创建第二个项目。 但是，这将需要额外的项目管理和产品外管理，以避免多个用户覆盖Target上的内容。
+* 必须在整个内容传输活动中维护迁移集，以支持内容增补。 在内容传输活动期间，Cloud Acceleration Manager中一次最多可以为每个项目创建和维护20个迁移集。 如果需要超过20个迁移集，请在Cloud Acceleration Manager中创建第二个项目。 但是，这需要额外的项目管理和产品外管理，以避免多个用户覆盖Target上的内容。
 
 * 避免更改CTT工具的安装目录。 默认情况下，安装在crx-quickstart/cloud-migration路径中进行。 此特定位置由其他库在内部使用。 修改此路径可能会导致提取问题。
 
@@ -55,29 +55,29 @@ ht-degree: 19%
 
 请阅读以下章节，以了解运行内容传输工具时的重要注意事项：
 
-* 内容传输工具的最低系统要求为 AEM 6.3 + 和 JAVA 8。如果您使用的是较低版本的AEM，则需要将内容存储库升级到AEM 6.5才能使用内容传输工具。
+* 内容传输工具的最低系统要求为AEM 6.3 +和Java™ 8。 如果您使用的是较低版本的AEM，请将内容存储库升级到AEM 6.5以使用内容传输工具。
 
-* 必须在AEM环境中配置Java，以便 `java` 命令可由启动AEM的用户执行。
+* 必须在AEM环境中配置Java™，以便 `java` 命令可由启动AEM的用户执行。
 
 * 内容传输工具可用于以下类型的数据存储：文件数据存储、S3数据存储、共享S3数据存储和Azure Blob存储数据存储。
 
 * 如果您使用 *沙盒环境*，确保您的环境为最新版本并已升级到最新版本。 如果您使用的是“生产环境”**，则会自动更新。
 
-* 要开始引入，您需要属于本地AEM **管理员** 组(位于要将内容传输到的Cloud Service实例中)。 如果未手动提供迁移令牌，则无权限用户将无法开始引入。
+* 要开始引入，您必须属于本地AEM **管理员** 组(位于要将内容传输到的Cloud Service实例中)。 如果未手动提供迁移令牌，则无权限用户无法开始引入。
 
-* 如果设置 **请擦除云实例上的现有内容后再引入** 选项，这将删除整个现有存储库并创建一个新存储库以将内容摄取到中。 这意味着它会重置所有设置，包括目标Cloud Service实例上的权限。 对于添加到中的管理员用户也是如此 **管理员** 组。 必须将用户重新添加到 **管理员** 组以检索内容传输工具的访问令牌。
+* 如果设置 **请擦除云实例上的现有内容后再引入** 选项，这将删除整个现有存储库并创建一个新存储库以将内容摄取到中。 这意味着它会重置所有设置，包括目标Cloud Service实例上的权限。 对于添加到中的管理员用户，也是如此 **管理员** 组。 用户必须已阅读 **管理员** 组以检索内容传输工具的访问令牌。
 
-* 如果将来自两个源的内容移动到目标上的相同路径，则摄取不支持将来自多个源的内容合并到目标Cloud Service实例中。 要将内容从多个源移动到单个目标Cloud Service实例，您需要确保源中的内容路径不会重叠。
+* 如果将来自两个源的内容移动到目标上的相同路径，则摄取不支持将来自多个源的内容合并到目标Cloud Service实例中。 要将内容从多个源移动到单个目标Cloud Service实例，请确保源中的内容路径不重叠。
 
-* 提取密钥的有效期为自创建/续订密钥后的14天。 可以随时续订。 如果提取密钥已过期，您将无法执行提取。
+* 提取密钥的有效期为自创建或续订密钥后的14天。 可以随时续订。 如果提取密钥已过期，则无法执行提取。
 
-* 在将内容从源实例传输到目标实例之前，内容传输工具(CTT)不执行任何类型的内容分析。 例如，将内容摄取到Publish环境时，CTT不区分已发布和未发布的内容。 迁移集中指定的任何内容都将摄取到所选的目标实例中。 用户能够将迁移集摄取到创作实例和/或发布实例中。 建议在将内容移动到生产实例时，在源作者实例上安装CTT以将内容移动到目标作者实例，同样，在源发布实例上安装CTT以将内容移动到目标发布实例。 请参阅 [在发布实例上运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) 以了解更多详细信息。
+* 在将内容从源实例传输到目标实例之前，内容传输工具(CTT)不执行任何类型的内容分析。 例如，将内容摄取到Publish环境时，CTT不区分已发布和未发布的内容。 迁移集中指定的任何内容都将摄取到所选的目标实例中。 用户可以将迁移集摄取到创作实例和/或发布实例。 Adobe建议在将内容移动到生产实例时，在源创作实例上安装CTT以将内容移动到目标创作实例。 同样，在源发布实例上安装CTT以将内容移动到目标发布实例。 请参阅 [在发布实例上运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) 以了解更多详细信息。
 
 * 内容传输工具传输的用户和组只是内容满足权限要求的用户和组。 此 _提取_ 进程复制整个 `/home` 在迁移集中，它通过添加从每个用户的电子邮件地址生成的字段来进行用户映射。 有关更多信息，请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). 此 _摄取_ 进程将复制迁移的内容ACL中引用的所有用户和组。 请参阅 [迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) 有关在封闭用户组(CUG)策略中使用的组的其他注意事项。
 
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
 
-* 完成 *提取* 内容传输流程的阶段以及开始 *摄取阶段* 将内容摄取到AEMas a Cloud Service *Stage* 或 *生产* 实例中，您需要记录支持票证以通知Adobe您打算运行 *摄取* 以便Adobe能够确保在故障期间不会出现中断 *摄取* 进程。 您需要比计划提前1周记录支持工单 *摄取* 日期。 提交支持工单后，支持团队会提供后续步骤的指导。 您可以记录支持票证，并提供以下详细信息：
+* 完成 *提取* 内容传输流程的阶段以及开始 *摄取阶段* 将内容摄取到AEMas a Cloud Service *Stage* 或 *生产* 实例中，记录支持服务单。 通知Adobe您打算运行 *摄取* 以便Adobe能够确保在故障期间不会出现中断 *摄取* 进程。 在计划的前一周记录支持工单 *摄取* 日期。 提交支持工单后，支持团队会提供有关后续步骤的指导。 您可以提交支持工单，详细信息如下：
 
    * 计划开始的确切日期和预计时间（以您的时区表示） *摄取* 阶段。
    * 您计划将数据摄取到的环境类型（暂存或生产）。
@@ -87,14 +87,14 @@ ht-degree: 19%
 
 * 使用时 `Amazon S3` 或 `Azure` 作为源AEM系统上的数据存储，数据存储应进行配置，以便无法删除（垃圾收集）存储的blob。 这将确保索引数据的完整性，如果未能按此方式进行配置，则可能会导致因此索引数据缺乏完整性而导致提取失败。
 
-* 如果使用自定义索引，则必须确保使用配置自定义索引 `tika` 节点。 请参阅 [准备新索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html#preparing-the-new-index-definition) 以了解更多详细信息。
+* 如果使用自定义索引，则必须确保使用配置自定义索引 `tika` 节点。 请参阅 [准备新索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition) 以了解更多详细信息。
 
-* 如果您打算进行增补，则必须不要更改现有内容的内容结构，即从进行初始提取时更改到运行增补提取时。 无法对自初始提取以来结构已更改的内容运行增补。 确保在迁移过程中对此进行限制。
+* 如果要执行增补，则现有内容的内容结构不得从进行初始提取时更改为运行增补提取时。 无法对自初始提取以来结构已更改的内容运行增补。 确保在迁移过程中对此进行限制。
 
 * 如果您打算将版本作为迁移集的一部分包括在内，并使用执行增补 `wipe=false`时，由于内容传输工具中的当前限制，您必须禁用版本清除。 如果您希望启用版本清除，并且要对迁移集执行增补，则必须按以下方式执行引入 `wipe=true`.
 
-* 迁移集将在长时间不活动后过期，在此之后其数据将不再可用。 审核 [迁移集到期](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 以了解更多详细信息。
+* 迁移集在长时间不活动后过期，此后其数据将不再可用。 审核 [迁移集到期](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) 以了解更多详细信息。
 
 ## 后续内容 {#whats-next}
 
-了解使用内容传输工具的指南、最佳实践和重要注意事项后，您现在就可以开始安装和使用工具了，从创建迁移集开始。 请参阅 [内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) 了解更多信息。
+了解使用内容传输工具的指南、最佳实践和重要注意事项后，您现在就可以开始安装和使用工具了，从创建迁移集开始。 请参阅 [内容传输工具快速入门](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).

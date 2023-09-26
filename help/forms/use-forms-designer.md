@@ -1,19 +1,19 @@
 ---
 title: 使用AEM Forms Designer
-description: 使用 [!DNL AEM Forms] 设计器以创建记录文档模板。
+description: 使用 [!DNL Adobe Experience Manager (AEM) Forms] 用于创建记录文档模板的设计器。
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
 
-# 使用AEM Forms Designer {#install-designer}
+# 使用Adobe Experience Manager (AEM) Forms Designer {#install-designer}
 
 Designer是一款点击式图形表单设计工具，可简化XDP表单模板的创建。 您可以设计表单模板、定义其逻辑以及满足严格的法规要求。 这些模板用作自适应表单的记录文档模板。 这些表单模板与不同 [自适应表单模板](template-editor.md).
 
-以下文档提供了使用设计器创建XDP模板和PDF forms的说明：
+以下文档提供了使用Designer创建XDP模板和PDF forms的说明：
 
 + [使用设计器](assets/using-designer-cs.pdf)
 + [设计器快速入门Tutorials](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/designer-quickstart.pdf)

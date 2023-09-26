@@ -1,28 +1,28 @@
 ---
 title: 如何为您的内容建模
-description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用内容建模与内容片段模型和内容片段对 AEM Headless 交付进行内容建模。
+description: 在Adobe Experience Manager (AEM) Headless开发人员历程的这一可选部分中，了解如何使用具有内容片段模型和内容片段的内容建模来为AEM Headless投放创建内容模型。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 71%
 
 ---
 
 # 如何为您的内容建模 {#model-your-content}
 
-在 [AEM Headless 开发人员历程](overview.md)的这一部分中，您可以了解如何为内容结构建模。之后，使用内容片段模型和内容片段实施 Adobe Experience Manager (AEM) 的结构以便跨渠道重用。
+在这部分中 [AEM Headless开发人员历程](overview.md)，您将学习如何建立内容结构的模型。 之后，使用内容片段模型和内容片段实施 Adobe Experience Manager (AEM) 的结构以便跨渠道重用。
 
 ## 迄今为止的故事 {#story-so-far}
 
-[了解 CMS Headless 开发](learn-about.md)的开头涵盖了 Headless 内容交付以及使用它的原因。之后，[AEM Headless as a Cloud Service 快速入门](getting-started.md)描述了您自己的项目上下文中的 AEM Headless。
+一开始， [了解CMS Headless开发](learn-about.md) 涵盖了headless内容投放以及使用该内容的原因。 之后，[AEM Headless as a Cloud Service 快速入门](getting-started.md)描述了您自己的项目上下文中的 AEM Headless。
 
-在 AEM Headless 历程的上一个文档[首次 AEM Headless 使用体验的路径](path-to-first-experience.md)中，您已了解实施第一个项目所需的步骤。阅读该文档后，您应：
+在 AEM Headless 历程的上一个文档[首次 AEM Headless 使用体验的路径](path-to-first-experience.md)中，您已了解实施第一个项目所需的步骤。阅读本文档后，您可以执行以下操作：
 
-* 了解有关设计内容的重要规划注意事项
-* 了解根据您的集成级别要求实施 Headless 的步骤。
+* 了解并解释设计内容时的重要规划注意事项
+* 根据您的集成级别要求，了解并解释实施Headless的步骤。
 * 设置必需的工具和 AEM 配置。
-* 了解使您的 Headless 历程顺畅、使内容生成保持高效并确保快速交付内容的最佳实践。
+* 了解最佳实践，以便您可以让Headless历程顺畅、保持内容生成效率并确保内容快速交付。
 
 本文基于这些基础知识编写，以便您了解如何准备您自己的 AEM Headless 项目。
 
@@ -37,19 +37,19 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->数据建模是一个非常大的领域，因为它将用于开发关系数据库。提供了许多书籍和在线信息来源。
+>数据建模是一个庞大的领域，因为它在开发关系数据库时使用。 有许多书籍和在线信息来源。
 >
->在为用于 AEM Headless 的数据建模时，我们只考虑感兴趣的方面。
+>此历程仅考虑在建模数据以用于AEM Headless时值得关注的方面。
 
 ## 内容建模 {#content-modeling}
 
 *这是一个大而复杂的领域*。
 
-也许是，也许不是。这肯定是一个大而&#x200B;***复杂的***&#x200B;领域，数据建模用于定义一个非常（非常）小的子部分的简化呈现，并使用实现特定目的所需的特定信息。
+也许是，也许不是。这当然是 ***复杂*** 外部世界和数据建模用于定义非常（非常）小子部分的简化表示，使用特定目的所需的特定信息。
 
 >[!NOTE]
 >
->由于 AEM 将处理内容，因此，我们将数据建模称为内容建模。
+>在AEM处理内容时，此历程将数据建模称为内容建模。
 
 例如：
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 * 许多课外活动
 * 依此类推....
 
-即使在如此小的示例中，列表也似乎是无尽的。但是，如果您只希望您的应用程序执行一项简单的任务，则需要将信息限制为要点。
+即使是在这样一个小例子中，这份清单似乎也无穷无尽。 但是，如果只希望应用程序执行简单的任务，请将信息限制在基本功能上。
 
 例如，为该地区的所有学校宣传特别活动：
 
@@ -81,9 +81,9 @@ ht-degree: 100%
 
 ### 概念 {#concepts}
 
-您想描述的内容称作&#x200B;**实体** – 基本上是我们要存储其相关信息的“事物”。
+您要描述的内容称为 **实体**  — 基本上就是您要存储其相关信息的“内容”。
 
-我们要存储的其相关信息是&#x200B;**特性**（属性），例如教师的姓名和资历。
+要存储的有关他们的信息是 **属性** 教师的姓名、资格等。
 
 随后是实体之间的各种&#x200B;**关系**。例如，一所学校通常只有一个校长，但有很多教师（校长通常也是教师）。
 
@@ -91,9 +91,9 @@ ht-degree: 100%
 
 ### 基本信息 {#basics}
 
-通常，您需要先绘制用于描述实体及其关系的&#x200B;**概念架构**。通常这是高层次的（概念性的）。
+通常，您必须首先绘制 **概念架构** 用于描述实体及其关系。 通常这是高层次的（概念性的）。
 
-在此稳定之后，您可以将模型转换用于描述实体、属性和关系的&#x200B;**逻辑架构**。在此级别，您应仔细检查定义以消除重复项并优化您的设计。
+在此稳定之后，您可以将模型转换用于描述实体、属性和关系的&#x200B;**逻辑架构**。在此级别，仔细检查定义以消除重复并优化您的设计。
 
 >[!NOTE]
 >
@@ -118,11 +118,7 @@ ht-degree: 100%
 
 通过优化结构，您可以提高内容创建和查询的性能。
 
-所做的一切都是为了达到平衡，但创建一个过于复杂或具有太多层次的结构可能会：
-
-* 让生成内容的作者感到困惑。
-
-* 如果查询必须访问多个嵌套（引用）的内容片段才能检索所需内容，则会严重影响性能。
+所有内容都是一种平衡行为，但创建过于复杂或级别过高的结构可能会让创作内容的人感到困惑。 此外，如果查询必须访问多个嵌套（引用的）内容片段才能检索所需的内容，则可能会严重影响性能。
 
 ## AEM Headless 的内容建模 {#content-modeling-for-aem-headless}
 
@@ -132,7 +128,7 @@ ht-degree: 100%
 
 为了确保您的应用程序能够一致而高效地从 AEM 请求和接收所需内容，必须设置这些内容的结构。
 
-这意味着您的应用程序会预先知道响应的形式，从而了解如何处理它。这比接收自由格式的内容要简单得多，必须对自由格式的内容进行分析以确定它包含什么以及如何使用它。
+这意味着您的应用程序会预先知道响应的形式，从而了解如何处理它。这比接收自由格式内容更容易，接收自由格式内容必须进行解析以确定其中包含的内容，因此确定如何使用该内容。
 
 ### 方法简介 {#how}
 
@@ -158,7 +154,7 @@ AEM 使用内容片段提供以 Headless 方式将内容交付到应用程序所
 内容片段模型描述了一个实体。
 
 >[!NOTE]
->您必须在配置浏览器中启用内容片段功能，才能创建新模型。
+>您必须在配置浏览器中启用内容片段功能，以便创建模型。
 
 >[!TIP]
 >
@@ -202,11 +198,11 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 这种类型的引用用于创建嵌套内容，引入对内容进行建模所需的关系。
 数据类型可配置为允许片段作者执行以下操作：
    * 直接编辑引用的片段。
-   * 根据相应的模型创建新内容片段
+   * 根据相应的模型创建内容片段
 
 ### 创建内容片段模型 {#creating-content-fragment-models}
 
-一开始，您需要为您的站点启用内容片段模型，此操作是在配置浏览器中完成的；在“工具”->“常规”->“配置浏览器”下。您可以选择配置全局条目或创建新的配置。例如：
+首先，必须为站点启用内容片段模型。 此操作可在配置浏览器中完成，位于 **工具** > **常规** > **配置浏览器**. 您可以选择配置全局条目，也可以创建配置。 例如：
 
 ![定义配置](assets/cfm-configuration.png)
 
@@ -228,16 +224,16 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 
 ### 选择适当的模型 {#select-model}
 
-在实际创建内容的过程中，第一步是创建内容片段。可使用“资源”->“文件”下的所需文件夹中的“创建”->“内容片段”来执行此操作。该向导将引导您完成这些步骤。
+在实际创建内容的过程中，第一步是创建内容片段。可使用“资源”->“文件”下的所需文件夹中的“创建”->“内容片段”来执行此操作。向导将指导您完成这些步骤。
 
 内容片段基于特定的内容片段模型，在创建过程中，您首先会选择该模型。
 
 ### 创建和编辑结构化内容 {#create-edit-structured-content}
 
-创建片段后，您可以在内容片段编辑器中打开片段。在此编辑器中，您可以：
+创建片段后，您可以在内容片段编辑器中打开片段。您可以在此执行以下操作：
 
-* 在正常或全屏架构下编辑您的内容。
-* 将您的内容格式化为全文、纯文本或 Markdown。
+* 以正常或全屏模式编辑您的内容。
+* 将内容格式设置为全文、纯文本或Markdown。
 * 创建和管理内容的变体。
 * 关联内容。
 * 编辑元数据。
@@ -266,14 +262,14 @@ tbc...
 
 ## 后续内容 {#whats-next}
 
-现在您已了解如何为结构建模，并根据它创建内容，下一步是[了解如何使用 GraphQL 查询来访问和检索您的内容片段内容](access-your-content.md)。这将介绍和讨论 GraphQL，然后查看一些示例查询以了解实践中的工作方式。
+现在您已了解如何为结构建模，并根据它创建内容，下一步是[了解如何使用 GraphQL 查询来访问和检索您的内容片段内容](access-your-content.md)。此部分介绍并讨论了GraphQL，然后查看了一些示例查询，以了解这些内容在实践中的工作方式。
 
 ## 其他资源 {#additional-resources}
 
 * [使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md) – 内容片段的导入页面
    * [配置浏览器中的内容片段](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) – 在配置浏览器中启用内容片段功能
    * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) – 创建和编辑内容片段模型
-   * [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md) – 创建和创作内容片段；此页面将您转至其他详细部分
+   * [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md)  — 创建和创作内容片段；此页将引导您进入其他详细部分
 * [AEM GraphQL 架构](access-your-content.md) – GraphQL 如何实施模型
 * [示例内容片段结构](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [AEM Headless 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) – 一个简短的视频教程系列，概述了如何使用 AEM 的 Headless 功能，包括内容建模和 GraphQL
