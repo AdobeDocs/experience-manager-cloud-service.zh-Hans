@@ -2,16 +2,19 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 100%
 
 ---
 
+
 # 创作环境和工具 {#authoring-the-environment-and-tools}
 
 AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可以从各种控制台和页面编辑器访问提供的工具。
+
+{{edge-delivery-authoring}}
 
 ## 管理您的站点 {#managing-your-site}
 

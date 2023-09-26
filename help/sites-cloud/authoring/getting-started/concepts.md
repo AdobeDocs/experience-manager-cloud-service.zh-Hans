@@ -2,12 +2,13 @@
 title: 创作概念
 description: 使用创作、预览和发布环境了解 AEM 中创作的概念。
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 100%
 
 ---
+
 
 # 创作概念 {#authoring-concepts}
 
@@ -26,6 +27,8 @@ AEM 安装通常至少包含两个环境：
 ![作者、发布者和调度程序示意图](/help/sites-cloud/authoring/assets/author-publish.png)
 
 在创作环境中，AEM 的功能通过 AEM 创作用户界面来提供。对于发布环境，可以设计提供给用户使用的界面的整体外观。
+
+{{edge-delivery-authoring}}
 
 ## 创作环境 {#author-environment}
 

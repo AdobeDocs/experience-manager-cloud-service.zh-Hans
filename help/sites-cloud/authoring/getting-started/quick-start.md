@@ -2,12 +2,13 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 100%
 
 ---
+
 
 # 页面创作快速入门指南 {#quick-guide-to-authoring-pages}
 
@@ -20,6 +21,8 @@ ht-degree: 100%
 
 * [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 * [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+
+{{edge-delivery-authoring}}
 
 ## 一些快速提示 {#a-few-quick-hints}
 

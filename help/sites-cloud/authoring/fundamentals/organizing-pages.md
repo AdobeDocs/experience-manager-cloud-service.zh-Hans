@@ -2,12 +2,13 @@
 title: 创建和组织页面
 description: 了解如何通过使用 AEM 创建和管理页面来组织您的网站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 100%
 
 ---
+
 
 # 创建和组织页面 {#creating-and-organizing-pages}
 
@@ -26,6 +27,8 @@ ht-degree: 100%
 >[!TIP]
 >
 >可以使用网站控制台中的许多[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)来更有效地组织页面。
+
+{{edge-delivery-authoring}}
 
 ## 组织您的网站 {#organizing-your-website}
 

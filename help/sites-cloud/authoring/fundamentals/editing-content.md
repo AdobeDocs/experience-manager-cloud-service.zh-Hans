@@ -2,12 +2,13 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
+workflow-type: tm+mt
 source-wordcount: '2983'
 ht-degree: 100%
 
 ---
+
 
 # 编辑页面内容{#editing-page-content}
 
@@ -31,6 +32,8 @@ ht-degree: 100%
 >[!TIP]
 >
 >在&#x200B;**编辑**&#x200B;模式下，内容中的链接是可见的，但是&#x200B;**不可访问**。如果您要使用内容中的链接进行导航，请使用[预览模式](#previewing-pages)。
+
+{{edge-delivery-authoring}}
 
 ## 页面工具栏 {#page-toolbar}
 
