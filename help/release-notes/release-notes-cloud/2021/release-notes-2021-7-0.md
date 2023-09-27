@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 48%
+source-wordcount: '1319'
+ht-degree: 31%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->从此处，您可以导航到以前版本的发行说明；例如，2020版、2021版等的发行说明。
+>从此处，您可以导航到早期版本的发行说明；例如，2020年和2021年版本的发行说明。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 48%
 ### 新增功能 {#what-is-new-foundation}
 
 * 更灵活的Dispatcher配置：可更轻松地整理项目。 例如，您现在可以包含反映站点结构的多个重写规则文件。 [了解](/help/implementing/dispatcher/disp-overview.md#validation-debug) 这种灵活的模式，包括如何构建您的Dispatcher配置，以便您能够利用它。
-* 复制代理的“分发”选项卡下的树复制UI应被视为弃用，计划在9月30日之后删除。 [了解](/help/operations/replication.md#tree-activation) 替代复制策略。
+* 复制代理的“分发”选项卡下的树复制UI应被视为弃用，并且在2021年9月30日之后被删除。 [了解](/help/operations/replication.md#tree-activation) 替代复制策略。
 * 捆绑 `org.apache.sling.datasource-1.0.4.jar` for Sling数据源支持已删除，因为其功能已过时且没有客户使用它。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -44,11 +44,11 @@ ht-degree: 48%
 
 * 内容自动化功能允许 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] API可大规模自动进行资源生产。 它通过显着减少创建同一资源的变体所需的时间和反复操作来提高内容速度。 该功能不需要进行任何编程，并且可在DAM内使用。 请参阅 [使用Creative Cloud集成生成资源变体](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] 包括 [!DNL Document Cloud] PDF查看器以本机预览PDF文档。 利用此功能，用户无需进行任何文件处理或转换即可预览多页PDF文件。 此功能改进了与 [!DNL Experience Manager] 6.5.查看器中可用的控件包括缩放、导航到页面、取消停靠控件以及全屏查看。 用户案例还可以预览和跳转到页面和书签。 支持对文件本身进行注释。 未来版本中将添加对PDF文件中的内容进行注释和批注。
+* [!DNL Experience Manager Assets] 包括 [!DNL Document Cloud] PDF查看器以本机预览PDF文档。 利用此功能，用户无需进行任何文件处理或转换即可预览多页PDF文件。 此功能改进了与 [!DNL Experience Manager] 6.5.查看器中可用的控件包括缩放、导航到页面、取消停靠控件以及全屏查看。 用户还可以预览和跳转到页面和书签。 支持对文件本身进行注释。 计划在将来的版本中对PDF文件中的内容添加注释和批注。
 
   ![在中预览PDF文件 [!DNL Experience Manager] 使用PDF查看器](/help/assets/assets/preview-pdf-file-viewer.png)
 
-* Linkshare下载功能使用可提高下载速度的异步下载。 请参阅 [下载使用链接共享功能共享的资源](/help/assets/download-assets-from-aem.md#link-share-download).
+* 链接共享下载功能使用可提高下载速度的异步下载。 有关更多信息，请参阅 [下载使用链接共享功能共享的资源](/help/assets/download-assets-from-aem.md#link-share-download).
 
   ![下载收件箱](/help/assets/assets/download-inbox.png)
 
@@ -83,21 +83,21 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* 您现在可以使用 Automated Forms Conversion Service 将[法语、德语和西班牙语版本的 PDF 表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)转换为自适应表单。
-* 已向模板编辑器添加一个单独的面板，以显示与自适应表单组件相关的错误。它有助于在一个位置整合所有自适应表单错误并减少解决时间。
+* 您现在可以使用Automated forms conversion服务执行以下操作 [转换法语、德语和西班牙语的PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) 至自适应表单。
+* 已向模板编辑器添加一个单独的面板，以显示与自适应表单组件相关的错误。 它有助于在一个位置整合所有自适应表单错误并减少解决时间。
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
    * 使用 XML 数据填充模板文件来生成文档。
    * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
    * 利用 XFA 表单 PDF 和 Adobe Acrobat 表单生成打印版 PDF 文件。
 
 * **变量数据外部化程序**：您可以将 AEM Workflow 变量的数据保存在由组织管理的外部存储系统上。
 
-* **基于 Acroform 的记录文档**：除了基于 XFA 的表单模板，您还可以[使用 Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作为记录文档的模板。
+* **基于 Acroform 的记录文档**：除了基于 XFA 的表单模板，您还可以[使用 Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作为记录文档的模板。
 
-* **Microsoft Azure 数据存储连接器**：您现在可以[将表单数据模型连接到 Microsoft Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。它可让您检索自适应表单数据并将其作为BLOB存储到Microsoft Azure Storage。
+* **Microsoft® Azure数据存储连接器**：您现在可以 [将表单数据模型连接到Microsoft® Azure Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). 它可让您检索自适应表单数据并将其作为BLOB存储到Microsoft® Azure Storage。
 
 ## CIF 加载项 {#cloud-services-cif}
 
@@ -114,7 +114,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 ### 错误修复 {#bug-fixes-screens}
 
-* 现在，在创建或更新期间将验证内容提供程序设置。
+* 内容提供程序设置现在会在创建或更新过程中进行验证。
 
 * 所有显示视图都有文件夹列。
 
@@ -128,7 +128,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 * 播放器现在会在清除“全部”缓存后重新下载资产。
 
-* 现在，如果 *结束时间* 设置为后天。
+* 现在，如果 *结束时间* 设置为第二天。
 
 * `Back&Forward` 现在适用于Screensas a Cloud ServiceUI。
 
@@ -138,7 +138,7 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
-适用于Experience Manageras a Cloud Service的XML Documentation现已正式推出。 它允许Experience Manageras a Cloud Service的客户促使XML Documentation加载项跨多个渠道(包括Experience Manager Sites)导入、创建、管理和交付技术内容。
+适用于Experience Manageras a Cloud Service的XML Documentation现已正式推出。 它允许Experience Manageras a Cloud Service的客户获取XML Documentation加载项，以跨多个渠道(包括Experience Manager Sites)导入、创建、管理和交付技术内容。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -150,27 +150,27 @@ AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 新增功能 {#what-is-new-cm-july}
 
-* 客户现在可以将 Azul 8 和 11 JDK 用于其 Cloud Manager 构建过程，并且可以选择将这些 JDK 之一用于与工具链兼容的 Maven 插件&#x200B;*或*&#x200B;整个 Maven 流程执行。
+* 客户现在可以将Azul 8和11 JDK用于其Cloud Manager构建过程，也可以选择将这些JDK之一用于与工具链兼容的Maven插件 *或* 整个Maven进程执行。
 
-* 出站出口 IP 现在将记录在构建步骤日志文件中。
+* 出站出口IP现在记录在构建步骤日志文件中。
 
-* 运行旧版本的 AEM 的暂存环境和生产环境现在将报告&#x200B;**更新可用**&#x200B;状态。
+* 运行旧版本的AEM的暂存环境和生产环境现在报告的状态为 **有可用更新**.
 
 * 每个程序支持的 SSL 证书的最大数量已增至 20。
 
 * 每个环境可配置的域的最大数量已增至 500。
 
-* **管理 Git** 按钮已更名为&#x200B;**访问 Git 信息**，并且对话框的外观已更新。
+* 此 **管理Git** 按钮已更名为 **访问Git信息** 并且对话框的外观已更新。
 
 * Cloud Manager 使用的 AEM 项目原型的版本已更新到版本 28。
 
 ### 错误修复 {#bug-fixes-cm-july}
 
-* 在某些情况下，将 IP 允许列表绑定到环境时，“预览”选项不可用。
+* 在某些情况下，将IP允许列表绑定到环境时，“预览”选项不可用。
 
 * 手动导航到不存在的执行的执行详细信息页面并没有显示错误，只显示了一个无休止的加载屏幕。
 
-* 当达到 SSL 证书的最大数量时显示的错误消息没有帮助。
+* 当达到SSL证书的最大数量时显示的错误消息没有帮助。
 
 * 在某些情况下，**概述**&#x200B;页面上的管道信息卡中显示的版本可能存在差异。
 
@@ -178,7 +178,7 @@ AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 已知问题 {#known-issues-cm-july}
 
-改用 Azul JDK 的客户应该知道，并非所有现有应用程序都能在 Azul JDK 上编译无误。 强烈建议在切换前进行本地测试。
+改用Azul JDK的客户应该知道，并非所有现有应用程序都能在Azul JDK上编译无误。 Adobe建议您在切换前进行本地测试。
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -188,8 +188,8 @@ Cloud Acceleration Manager的发布日期是2021年7月15日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用 Adobe 推荐的最佳实践、技巧、文档和工具在迁移到 AEM as Cloud Service 的历程中的每个阶段提供帮助，让您的团队成功完成迁移。了解详情 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用Adobe推荐的最佳实践、技巧、文档和工具在迁移到AEMCloud Service的过程中的每个阶段提供帮助，让您的团队成功完成迁移。 了解详情 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
 
 >[!NOTE]
 >
-> 选中此 [Cloud Acceleration Manager演示视频](https://video.tv.adobe.com/v/335547).
+> 看看这个 [Cloud Acceleration Manager演示视频](https://video.tv.adobe.com/v/335547).
