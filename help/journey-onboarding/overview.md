@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 入门历程简介
 description: 您可以在此处了解 AEM as a Cloud Service 入门历程的指导概述。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 7553d3c9f82c8b675af5f704a48bc316ba0d4885
+source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 95%
+source-wordcount: '1256'
+ht-degree: 93%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 95%
 恭喜您选择 AEM as a Cloud Service！ 本文档是指导您整个入门历程的起点。 无论您是部署新的应用项目还是迁移现有的应用项目，此入门历程都可以确保您的团队已建立，并且可访问 AEM as a Cloud Service。
 
 ## 简介 {#introduction}
+
+Adobe Experience Manager是一套功能强大的可组合内容服务，可跨任何渠道快速提供极具影响力的个性化体验，从而让所有人都能了解内容。 **Edge交付服务** 是Adobe Experience Manager中的最新创新，可实现极快的内容速度并提供卓越的体验。 了解如何开始使用Edge Delivery Services，请访问 [此页面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). 要了解如何使用Edge Delivery Services，请参阅 [开发人员教程](https://www.hlx.live/developer/tutorial) 页面。
 
 载入是指定的系统管理员未您的组织设置 AEM as a Cloud Service 的过程。 这个过程包括云资源的初始配置，以及根据用户的工作职责为其分配角色。因此，每个成员都可以登录和访问其 AEM as a Cloud Service 资源。
 
@@ -83,10 +85,6 @@ ht-degree: 95%
 | 8 | [分配 AEM 产品配置文件](assign-profiles-aem.md) | 了解系统管理员如何将您的团队成员分配给 AEM as a Cloud Service 中的产品配置文件。 | 系统管理员 |
 | 9 | [开发人员和部署管理员任务](developers.md) | 可选 – 了解作为开发人员如何访问和管理 Cloud Manager Git，以及作为部署管理员如何在 Cloud Manager 中设置管道和部署代码。 | 开发人员和部署管理员 |
 | 10 | [AEM 用户任务](aem-users.md) | 可选 – 了解作为 AEM 作者如何访问 AEM as a Cloud Service 实例，并熟悉 AEM as a Cloud Service.的创作内容。 | AEM 用户 |
-
->[!NOTE]
->
->Edge Delivery Services是一组新的可组合服务，能够实现灵活、快速的开发环境，在这里，作者可以快速更新和发布，并且快速启动新站点。 要了解有关Edge Delivery服务的更多信息，请参阅 [入门页面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
 
 ## 后续内容 {#what-is-next}
 
