@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: fb70abb2aa698303c462e38ad3bec10d028f804e
+source-git-commit: c1e115e0fcf7e168c26f810f0803950df50b2c6f
 workflow-type: tm+mt
-source-wordcount: '5532'
-ht-degree: 6%
+source-wordcount: '5561'
+ht-degree: 8%
 
 ---
 
@@ -46,12 +46,26 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 ## 了解资源搜索界面 {#searchui}
 
 熟悉资产搜索界面和可用的操作。
-
-![了解Experience Manager Assets搜索结果界面](assets/aem_search_results.png)
-
+<!--
+![Understand Experience Manager Assets search results interface](assets/aem_search_results.png)
+-->
+![了解Experience Manager Assets搜索结果界面](assets/aem-search-interface.png)
 *图：了解 [!DNL Experience Manager Assets] 搜索结果界面。*
 
-**答：** 将搜索另存为智能收藏集。 **B.** 筛选或谓词以缩小搜索结果。 **C.** 显示文件、文件夹或两者。 **D.** 单击“过滤器”以打开或关闭左边栏。**E.** 搜索位置为 DAM。**F.** 包含用户提供的搜索关键字的Omnisearch字段。 **G.** 选择加载的搜索结果。 **H.** 显示的搜索结果占总搜索结果数。 **I.** 关闭搜索。 **J.** 在卡片视图和列表视图之间切换。
+**答：** 将搜索另存为智能收藏集。
+**B.** 筛选或谓词以缩小搜索结果。
+**C.** 显示文件、文件夹或两者。
+**D.** 搜索位置为DAM。
+**E.** 访问保存的搜索。
+**F.** 单击“过滤器”以打开或关闭左边栏。
+**G.** 将资源显示为默认搜索。
+**H.** 搜索位置为DAM。
+**I.** 包含用户提供的搜索关键字的Omnisearch字段。
+**J.** 选择加载的搜索结果。
+**K.** 按“创建”、“修改”、“名称”、“无”排序。
+**L.** 按升序或降序排序。
+**月。** 显示的搜索结果占总搜索结果数。 **N** 关闭搜索。
+**O.** 在卡片视图和列表视图之间切换。
 
 ### 动态搜索Facet {#dynamicfacets}
 
@@ -69,7 +83,7 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 
 自2023年8月起，Experience Manager Assets将推出一个新版本9 `damAssetLucene` 索引。 以前的版本， `damAssetLucene-8` 在下方，使用 `statistical` 模式，检查每个搜索Facet计数项的示例访问控制。
 
-`damAssetLucene-9` 更改了Oak查询Facet计数的行为，使其不再评估基础搜索索引返回的Facet计数的访问控制，这将导致更快的搜索响应时间。 因此，可能会向用户显示方面计数值，其中包括他们无权访问的资产。 这些用户无法访问、下载或读取这些资产的任何其他详细信息，包括其路径，也无法获取有关这些资产的任何更多信息。
+`damAssetLucene-9` 将 Oak Query 分面计数的行为更改为不再评估对底层搜索索引返回的分面计数的访问控制，而这导致加快搜索响应速度。因此，可能会向用户显示方面计数值，其中包括他们无权访问的资产。 这些用户无法访问、下载或读取这些资产的任何其他详细信息，包括其路径，也无法获取有关这些资产的任何更多信息。
 
 如果需要切换到上一个行为(`statistical` 模式)，请参见 [内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) 创建自定义版本的 `damAssetLucene-9` 索引。 Adobe不建议切换到 `secure` 模式，这是因为对大型结果集的搜索响应时间产生的影响。
 
@@ -140,7 +154,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 配置资源批次大小以显示搜索结果 {#configure-asset-batch-size}
 
-管理员现在可以配置在执行搜索时显示的资产的批量大小。 当您进一步向下滚动以加载结果时，资源搜索结果将以配置的批次大小数字的倍数显示。 您可以从可用批量大小的200、500和1000项资源中进行选择。 设置较小的批次大小数字可加快搜索响应时间。
+管理员现在可配置在您执行搜索时显示的资源的批次大小。当您进一步向下滚动以加载资源搜索结果时，将以所配置的批次大小数量的倍数显示这些结果。可选择 200、500 和 1000 个资源的可用批次大小。设置较小的批次大小数字可加快搜索响应速度。
 
 例如，如果将结果计数限制设置为200个资源的批次大小，则当您开始执行搜索时，Experience Manager Assets会在搜索结果中显示一个包含200个资源的批次大小。 当您向下滚动以浏览搜索结果时，将显示下一批200个资源。 该过程会一直持续到显示与搜索查询匹配的所有资产为止。
 
@@ -150,7 +164,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 选择结果计数限制并单击 **[!UICONTROL 保存]**.
 
-   ![资产批次大小配置](/help/release-notes/assets/assets-batch-size-configuration.png)
+   ![资源批次大小配置](/help/release-notes/assets/assets-batch-size-configuration.png)
 
 ## 高级搜索 {#scope}
 
@@ -160,7 +174,10 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 **在文件夹中搜索资源**：您可以将搜索限制到特定文件夹。 在 **[!UICONTROL 过滤器]** 面板，添加文件夹的路径。 一次只能选择一个文件夹。
 
-![通过在“筛选器”面板中添加文件夹路径，将搜索结果限制为文件夹](assets/search_folder_select.gif)
+![通过在“筛选器”面板中添加文件夹路径，将搜索结果限制为文件夹](assets/limiting-search.gif)
+<!--
+![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+-->
 
 *图：通过在“筛选器”面板中添加文件夹路径，将搜索结果限制为文件夹。*
 
@@ -277,7 +294,9 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 要访问资产选择器界面，请转到 `https://[aem_server]:[port]/aem/assetpicker`. 导航到所需的文件夹，然后选择一个或多个资产。 或者，从Omnisearch框中搜索所需的资源，根据需要应用过滤器，然后选择该资源。
 
-![在资源选择器中浏览并选择资源](assets/assetpicker.png)
+![在资源选择器中浏览并选择资源](assets/select-asset.png)
+
+<!--![Browse and select asset in the asset selector](assets/assetpicker.png)-->
 
 *图：浏览并选择资源选择器中的资源。*
 
