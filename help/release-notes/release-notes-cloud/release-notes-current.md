@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 39284210e6639c4ed2a80cf86dbf0ea32d889986
+source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1419'
 ht-degree: 76%
 
 ---
@@ -50,7 +50,7 @@ Edge Delivery是一套新的可组合服务，重点是在客户互动时实现�
 
 **将元数据表单分配给文件夹**
 
-您现在可以将Assets Essentials表单分配给元数据部署中的特定文件夹。 文件夹中的所有资产（包括子文件夹中的资产）将显示在分配的元数据表单中定义的属性。
+您现在可以将元数据表单分配给部署中的特定文件夹。 文件夹中的所有资产（包括子文件夹中的资产）将显示在分配的元数据表单中定义的属性。
 
 ![将元数据表单分配给文件夹](/help/release-notes/assets/assign-to-folder.png)
 
