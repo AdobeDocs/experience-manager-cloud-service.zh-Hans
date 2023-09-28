@@ -5,17 +5,17 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 39ea959cb0a0568fd94ca455be935228479c0415
+source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
 # 查看和了解自适应Forms分析报表 {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview"> 这是预发行功能，可通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 在快速发展的数字分析环境中，要做出明智决策并优化数字体验，必须顺应全球趋势。 为了解决此问题，自适应Forms与Adobe Analytics无缝集成，以捕获和跟踪已发布表单和文档的性能指标。 分析这些量度背后的目标是做出数据驱动型决策，使用量度和分析增强表单的可用性和有效性。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 将Adobe Analytics设置为自适应Forms {#setup-adobe-analytics-to-aem-forms}
 
-对于AEM Forms Analytics报表，请首先通过Experience Cloud设置自动化将Adobe Analytics集成到AEM Forms。 自适应Forms中的Experience Cloud设置自动化需要Adobe Analytics许可证、数据收集(以前称为AdobeLaunch)来管理跟踪脚本，以及与Experience Platform LaunchAPI集成以简化数据聚合和见解生成。 访问 [使用Experience Cloud设置自动为自适应表单启用Adobe Analytics](/help/forms/forms-experience-cloud-setup-automation.md) 了解完整的设置信息。
+对于AEM Forms Analytics报表，请首先通过Experience Cloud设置自动化将Adobe Analytics集成到AEM Forms。 自适应Forms中的Experience Cloud设置自动化需要Adobe Analytics许可证、数据收集(以前称为AdobeLaunch)来管理跟踪脚本，以及与Experience Platform LaunchAPI集成以简化数据聚合和见解生成。 访问 [使用Experience Cloud设置自动为自适应表单启用Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) 了解完整的设置信息。
 
 ## 查看自适应Forms Adobe Analytics报表 {#view-adobe-analytics-report}
 
