@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b147c80581bcb554ae0b4ac971c5f98e7160d1df
+source-git-commit: c62ae58240298604e6cd7737678603eb734434b3
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 9%
@@ -94,15 +94,9 @@ ht-degree: 9%
 * Forms-10248：在基于核心组件的自适应Forms中，当数据值类型为布尔值时，设置单选按钮或复选框的值无法按预期使用。
 * Forms-8114： NVDA屏幕阅读器未正确读取日期选取器和模式。 具体来说，当使用NVDA屏幕阅读器时，可正确读取不带模式的日期选取器。 但是，当模式应用于日期选取器时，它将作为表读取，而不是被正确解释。
 
-
-
-
-
-
-
 ### 已知问题 {#known-issues-13665}
 
-无
+无。
 
 ### 嵌套的技术 {#embedded-tech-13665}
 
