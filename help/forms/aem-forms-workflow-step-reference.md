@@ -3,21 +3,21 @@ title: 使用以表单为中心的AEM工作流自动化业务流程
 description: 以Forms为中心的工作流允许您快速构建基于自适应Forms的工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将数据发送到多个数据源以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签名文档步骤，生成打印输出步骤，生成非交互式PDF输出
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7433'
 ht-degree: 1%
 
 ---
 
-# 使用以Forms为中心的AEM Workflows — 步骤参考以自动化业务流程{#forms-centric-workflow-on-osgi-step-reference}
+
+# 使用以Forms为中心的AEM Workflows — 步骤参考以自动化业务流程 {#forms-centric-workflow-on-osgi-step-reference}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 本文 |
-
-<span class="preview"> 中的歌手角色、审核记录以及基于政府ID的身份验证选项 [签名文档步骤](#sign-document-step) 都是预发行版功能，可通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 您可以使用工作流模型。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以 [在模型中包括各种AEM Workflow步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem).
 
@@ -40,7 +40,6 @@ ht-degree: 1%
 >[!NOTE]
 >
 >如果为外部存储标记了工作流模型，则对于所有Forms Workflow步骤，您只能选择“变量”选项来存储或检索数据文件和附件。
-
 
 ## 分配任务步骤 {#assign-task-step}
 
@@ -379,8 +378,6 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 ## 签名文档步骤 {#sign-document-step}
 
-<span class="preview"> Adobe Sign步骤中的歌手角色、审核记录以及基于政府ID的身份验证选项是预发行功能，可通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
-
 “签署文档”步骤允许您使用 [!DNL Adobe Sign] 签署文档。 当您使用 [!DNL Adobe Sign] 用于签名自适应表单的工作流步骤，可以根据工作流步骤的配置，将表单逐个传送给收件人，也可以将表单同时发送给所有收件人。 [!DNL Adobe Sign] 仅在所有收件人完成签名过程后，支持的自适应Forms才会提交到Experience Manager Forms Server。
 
 默认情况下， [!DNL Adobe Sign] 调度程序服务每24小时检查（轮询）收件人响应。 您可以 [更改环境的默认时间间隔](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
@@ -589,3 +586,9 @@ Send a document directly to a printer. It supports the following printing access
 * **线性PDF**：指定是否优化生成的PDF以进行Web查看。
 * **已标记PDF**：指定是否使生成的PDF可访问。
 * **XCI文档**：指定XCI文件的路径。
+
+## 另请参阅 {#see-also}
+
+* [以Forms为中心的AEM Workflow中的变量](/help/forms/variable-in-aem-workflows.md)
+* [配置外出设置](/help/forms/configure-out-of-office-settings.md)
+

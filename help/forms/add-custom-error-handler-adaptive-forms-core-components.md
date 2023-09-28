@@ -7,9 +7,9 @@ keywords: 添加自定义错误处理程序、添加默认错误处理程序、�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 963fcbe1e333dd6e0540e29ea150881826a1323c
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2406'
 ht-degree: 99%
 
 ---
@@ -17,14 +17,13 @@ ht-degree: 99%
 
 # 自适应表单中的错误处理程序（核心组件） {#error-handlers-in-adaptive-form}
 
-<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | 本文 |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/add-custom-error-handler-adaptive-forms-core-components.html) |
 
-AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提供用于自定义错误处理函数的功能。例如，您可以在后端为特定的错误代码调用自定义工作流，或者通知客户服务已停止。处理程序是根据服务器响应执行的客户端函数。在使用 API 调用外部服务时，数据会传输到服务器以进行验证，这会向客户端返回响应，其中包含有关提交的成功或错误事件的信息。该信息作为参数传递给相关处理程序以执行该函数。错误处理程序可帮助管理和显示遇到的错误或验证问题。
+AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提供用于自定义错误处理函数的功能。例如，可在后端为特定的错误代码调用自定义工作流或通知客户服务已停止。处理程序是根据服务器响应执行的客户端函数。在使用 API 调用外部服务时，数据会传输到服务器以进行验证，这会向客户端返回响应，其中包含有关提交的成功或错误事件的信息。该信息作为参数传递给相关处理程序以执行该函数。错误处理程序可帮助管理和显示遇到的错误或验证问题。
 
 ![错误处理程序工作流，用于了解如何在表单中添加自定义错误处理程序](/help/forms/assets/error-handler-workflow.png)
 

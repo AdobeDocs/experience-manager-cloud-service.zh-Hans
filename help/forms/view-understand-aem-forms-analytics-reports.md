@@ -1,13 +1,14 @@
 ---
 title: 查看和了解自适应Forms分析报表
 description: 自适应Forms与Adobe Analytics无缝集成，以捕获和跟踪已发布表单和文档的性能指标。
+keywords: 查看和了解自适应Forms Analytics报表、Adobe分析报表、Forms Analytics报表
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '988'
 ht-degree: 2%
 
 ---
@@ -15,7 +16,10 @@ ht-degree: 2%
 
 # 查看和了解自适应Forms分析报表 {#viewing-and-understanding-aem-forms-analytics-reports}
 
-<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | 本文 |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 在快速发展的数字分析环境中，要做出明智决策并优化数字体验，必须顺应全球趋势。 为了解决此问题，自适应Forms与Adobe Analytics无缝集成，以捕获和跟踪已发布表单和文档的性能指标。 分析这些量度背后的目标是做出数据驱动型决策，使用量度和分析增强表单的可用性和有效性。
 
@@ -102,3 +106,9 @@ Adobe Analytics提供了一系列全面的自适应Forms性能指标，旨在提
 这有助于您分析用户在放弃表单前花费时间的表单字段。 例如，在下面给定的图像中，在5个已放弃的表单中，有2个位于字段中 **全名**，字段上还剩2个 **电话号码**，且字段上还剩1个 **文本输入**.
 
 ![字段访客](assets/field-visitors.png){width="100%"}
+
+## 另请参阅 {#see-also}
+
+* [使用Experience Cloud设置自动为自适应表单启用Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+* [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [将AEM Forms与Adobe Analytics集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)

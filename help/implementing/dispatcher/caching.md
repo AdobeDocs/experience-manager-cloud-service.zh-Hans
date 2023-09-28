@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 了解AEMas a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2803'
 ht-degree: 2%
 
 ---
@@ -188,7 +188,7 @@ AEM层根据是否已设置缓存标头和请求类型的值来设置缓存标�
      </LocationMatch>
      ```
 
-   * 将来自DAM的可变资源（如图像和视频）缓存24小时，并在12小时后进行后台刷新以避免丢失。
+   * 将来自DAM的可变资源（如图像和视频）缓存24小时，并在12小时后进行后台刷新以避免遗漏。
 
      ```
      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
@@ -203,16 +203,18 @@ AEM层根据是否已设置缓存标头和请求类型的值来设置缓存标�
 
 ### 营销活动参数 {#marketing-parameters}
 
-网站URL通常包括用于跟踪营销活动成功的营销活动参数。 要有效地使用Dispatcher缓存，建议您配置Dispatcher配置的 `ignoreUrlParams` 属性为 [此处记录](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+网站URL通常包括用于跟踪营销活动成功的营销活动参数。
 
-此 `ignoreUrlParams` 部分必须取消注释，并应引用文件 `conf.dispatcher.d/cache/marketing_query_parameters.any`. 通过取消注释与营销渠道相关的参数对应的行，可以修改文件。 您还可以添加其他参数。
+对于在2023年10月或之后创建的环境，为了更好地缓存请求，CDN将删除与营销相关的常见查询参数，特别是与以下正则表达式模式匹配的参数：
 
 ```
-/ignoreUrlParams {
-{{ /0001 { /glob "*" /type "deny" }}}
-{{ $include "../cache/marketing_query_parameters.any"}}
-}
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
 ```
+
+如果您希望禁用此行为，请提交支持票证。
+
+对于在2023年10月之前创建的环境，建议配置Dispatcher配置的 `ignoreUrlParams` 属性为 [此处记录](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+
 
 ## Dispatcher缓存失效 {#disp}
 
@@ -304,8 +306,8 @@ Adobe建议您依赖标准缓存标头来控制内容交付生命周期。 但�
      <ol>
        <li>发布内容并使缓存失效。</li>
        <li>从创作/发布层 — 删除内容并使缓存失效。</li>
-       <li><p><strong>从创作层</strong>  — 删除内容并使缓存失效（如果从发布代理上的AEM创作层触发）。</p>
-           <p><strong>从发布层</strong>  — 仅使缓存失效（如果从Flush或Resource-only-flush代理上的AEM发布层触发）。</p>
+       <li><p><strong>从创作层</strong>  — 删除内容并使缓存失效(如果从发布代理上的AEM创作层触发)。</p>
+           <p><strong>从发布层</strong>  — 仅使缓存失效(如果从Flush或Resource-only-flush代理上的AEM发布层触发)。</p>
        </li>
      </ol>
      </td>

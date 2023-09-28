@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4fc6d29cd008b04ad97ceb17201c1f8d0e72439e
+source-git-commit: abd0632a6874e4917a9ca7fc4fd11696f4c55caa
 workflow-type: tm+mt
-source-wordcount: '4268'
+source-wordcount: '4271'
 ht-degree: 98%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 98%
    + AEMaaCS 功能发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
+         + [2023.8.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-8-0.md)
          + [2023.7.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-7-0.md)
          + [2023.6.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-6-0.md)
          + [2023.4.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-4-0.md)

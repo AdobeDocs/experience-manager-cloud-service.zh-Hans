@@ -2,19 +2,16 @@
 title: 在AEM自适应表单中使用Google reCAPTCHA
 description: 使用Google reCAPTCHA服务可轻松增强表单安全性。 内部分步指南！
 topic-tags: Adaptive Forms, author
-hide: true
-hidefromtoc: true
-Keywords: Google reCAPTCHA service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
-source-git-commit: 496705937a01d99f988ba83f6d8984fc86dc8bfa
+keywords: Google reCAPTCHA服务，自适应Forms， CAPTCHA挑战，机器人预防，核心组件，表单提交安全性，表单垃圾邮件预防
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '945'
 ht-degree: 14%
 
 ---
 
-# 在基于核心组件的AEM自适应表单中使用Google reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
 
-<span class="preview"> 这是预发行功能，可通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+# 在基于核心组件的AEM自适应表单中使用Google reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
 
 | 应用到 | 文章链接 |
 | -------- | ---------------------------- |
@@ -54,13 +51,9 @@ CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一�
    1. 选择在上一部分中创建或更新的配置容器。 点按&#x200B;**[!UICONTROL 创建]**。
    1. 指定 **[!UICONTROL 标题]**， **[!UICONTROL 名称]**， **[!UICONTROL 站点密钥]**、和 **[!UICONTROL 密钥]** reCAPTCHA服务（在步骤1中获取）。 点按&#x200B;**[!UICONTROL 创建]**。
 
-
    ![配置该Cloud Service以通过Google将您的AEM Forms环境连接到reCAPTCHA服务](/help/forms/assets/captcha-configuration.gif)
 
-
-
    配置reCAPTCHA服务后，便可在自适应表单中使用。 有关更多信息，请参阅 [在自适应表单中使用Google reCAPTCHA](#using-reCAPTCHA).
-
 
 ## 以自适应表单的形式使用 Google reCAPTCHA {#using-reCAPTCHA}
 
@@ -117,5 +110,5 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 
 * [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 * [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
-* [在 AEM Sites 页面或体验片段中添加自适应表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)

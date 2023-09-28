@@ -2,12 +2,11 @@
 title: 自适应表单片段
 description: 自适应Forms提供了一种机制，可创建在任何自适应表单中使用的表单区段，例如面板或一组字段。 您还可以将现有面板另存为片段。
 topic-tags: author
+keywords: 添加自适应表单片段、自适应表单片段、创建表单片段、将片段添加到自适应表单、管理片段
 feature: Adaptive Forms
-hide: true
-hidefromtoc: true
-source-git-commit: b3aac0cb7682f66c72c32ebf706f5db4067b12ed
+source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1734'
 ht-degree: 4%
 
 ---
@@ -15,7 +14,11 @@ ht-degree: 4%
 
 # 自适应表单片段 {#adaptive-form-fragments}
 
-<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | 本文 |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 虽然每个表单都针对特定目的而设计，但大多数表单中都存在一些通用区段，例如提供个人详细信息，如姓名和地址、家庭详细信息、收入详细信息。 每次创建新表单时，表单开发人员都需要创建这些常用区段。
 
@@ -30,8 +33,8 @@ ht-degree: 4%
 您可以从头开始创建自适应表单片段，或将现有自适应表单中的面板另存为片段。 要创建表单片段，请执行以下操作：
 
 1. 登录AEM Forms实例，网址为https://[*主机名*]：[*端口*]/aem/forms.html.
-1. 单击 **创建>自适应表单片段**.
-1. 指定片段的标题、名称、描述和标记。 请确保为片段指定唯一的名称。 如果已存在另一个同名片段，则创建片段失败。
+1. 按 **一下创建 > 自适应表单片段** 。
+1. 指定片段的标题、名称、描述和标记。 确保为片段指定唯一名称。 如果已存在具有相同名称的其他片段，则无法创建片段。
 1. 选择表单模板。 您可以为基于核心组件的自适应Forms或基于基础组件的自适应Forms创建表单片段。
    * 要为基于核心组件的表单创建表单片段，请选择一个基于核心组件的模板。
    * 要为基于基础组件的表单创建表单片段，请选择模板的基础组件。 例如，/libs/fd/af/templateForFragment/defaultFragmentTemplate。
@@ -40,16 +43,16 @@ ht-degree: 4%
 
 1. 单击以打开 **表单模型** 选项卡，然后从 &quot;选择自 **&quot;** 下拉菜单中为片段选择以下模型之一：
 
-   ![在表单模型选项卡中显示模型类型](assets/create-af-1-1.png)
+   ![在表单模型中显示模型类型选项卡](assets/create-af-1-1.png)
 
-   * **无**：指定从头开始创建片段，而不使用任何表单模型。
+   * **无** ：指定从头开始创建片段，而不使用任何表单模型。
 
      >[!NOTE]
      >
-     >基于基本基于组件的片段所构成的核心的一项优势是，能够在单个自适应表单中使用不与任何表单模型绑定的多个基于组件的核心片段。
+     >与基于基础组件的片段相比，基于核心组件的片段具有的一个优势是，可以在单个自适应表单中使用未绑定到任何表单模型的基于核心组件的片段。
 
-   * **架构** ：指定使用上载到 AEM Forms 的 XML 或 JSON 模式创建片段。 您可以上传或从可用的 XML 或 JSON 架构中选择作为片段的表单模型。 选择 XML 模式时，您还可以通过从 &quot;XML 架构复杂类型 ]**&quot;**[!UICONTROL  下拉框中选择所选模式中存在的 complexType 来创建自适应表单片段。选择 JSON 模式时，还可以通过从 **[!UICONTROL JSON 架构定义]** 下拉框中选择所选模式中存在的模式定义来创建自适应表单片段。
-   * **表单数据模型** ：指定使用表单数据模型创建片段。 您可以在表单数据模型中仅基于一个数据模型对象创建自适应表单片段。 展开表单数据模型定义下拉列表。 它列出了指定表单数据模型中的所有数据模型对象。 从列表中选择数据模型对象。
+   * **架构**：指定使用上传到AEM Forms的XML或JSON架构创建片段。 您可以上传或从可用的XML或JSON架构中选择作为片段的表单模型。 选择XML架构时，您还可以通过从中选择所选架构中存在的complexType来创建自适应表单片段。 **[!UICONTROL XML结构描述复杂类型]** 下拉框。 选择JSON架构时，您还可以通过从中选择所选架构中存在的架构定义来创建自适应表单片段。 **[!UICONTROL JSON架构定义]** 下拉框。
+   * **表单数据模型**：指定使用表单数据模型创建片段。 您可以仅基于表单数据模型中的一个数据模型对象创建自适应表单片段。 展开表单数据模型定义下拉列表。 它列出了指定表单数据模型中的所有数据模型对象。 从列表中选择数据模型对象。
 
    ![表单数据模型](assets/create-af-3.png)
 
@@ -146,7 +149,7 @@ Perform the following steps to show complete fragments in forms:
   </tr>
   <tr>
    <td><p>预览</p> </td>
-   <td><p>提供选项，用于将XML文件中的数据与片段合并，以HTML形式预览片段或自定义预览。 有关更多信息，请参阅 <a>预览表单</a>.<br /> <br /> </p> </td>
+   <td><p>提供一些选项，可通过将 XML 文件中的数据与片段合并，将片段预览为 HTML 或自定义预览。 有关详细信息，请参阅 <a> 预览表单 </a> 。 <br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>开始审核/管理审核</p> </td>
@@ -158,7 +161,7 @@ Perform the following steps to show complete fragments in forms:
   </tr>
   <tr>
    <td><p>发布/取消发布</p> </td>
-   <td><p>发布/取消发布选定的片段。<br /> <br /> </p> </td>
+   <td><p>发布/取消选定片段。 <br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>删除</p> </td>
@@ -167,22 +170,28 @@ Perform the following steps to show complete fragments in forms:
  </tbody>
 </table>
 
-## 使用片段时需要记住的要点 {#key-points-to-remember-when-working-with-fragments}
+## 使用片段时要记住的要点 {#key-points-to-remember-when-working-with-fragments}
 
-* 确保片段名称是唯一的。 如果存在具有相同名称的现有片段，则无法创建片段。
-* 在基于 XDP 的自适应表单中，如果您将面板保存为包含其他 XDP 片段的片段，则生成的片段将自动绑定到子 XDP 片段。 如果使用基于 XSD 的自适应表单，则生成的片段将绑定到模式根。
-* 创建自适应表单片段时，将创建一个片段节点，它类似于 CRXDe Lite 中自适应表单的 guideContainer 节点。
-* 不支持自适应表单中使用其他表单数据模型的片段。 例如，基于XSD的自适应表单中不支持基于XDP的片段，反之亦然。
-* 自适应表单片段可通过AEM内容查找器中的自适应表单片段选项卡使用。
-* 通过引用插入或嵌入自适应表单中的独立自适应表单片段中的任何表达式、脚本或样式都会保留。
-* 您无法从自适应表单中编辑通过引用插入的自适应表单片段。 要编辑，您需要编辑独立的自适应表单片段或将片段嵌入自适应表单中。
+* 确保片段名称是唯一的。 如果存在具有相同名称的现有片段，则创建片段失败。
+* 在基于XDP的自适应表单中，如果您将面板另存为包含其他XDP片段的片段，则生成的片段将自动绑定到子XDP片段。 在基于XSD的自适应表单中，生成的片段将绑定到架构根。
+* 创建自适应表单片段时，会创建一个片段节点，该节点与CRXDe Lite中自适应表单的guideContainer节点类似。
+* 不支持自适应表单中使用其他表单数据模型的片段。 例如，基于 XDP 的片段在 XSD 自适应表单中不受支持，反之亦然。
+* 自适应表单片段可通过 AEM 内容查找器中选项卡的自适应表单片段来使用。
+* 当通过引用插入或嵌入自适应表单时，会保留独立自适应表单片段中的任何表达式、脚本或样式。
+* 您无法从自适应表单中编辑以引用方式插入的自适应表单片段。 要进行编辑，您可以编辑独立的自适应表单片段或在自适应表单中嵌入该片段。
 * 发布自适应表单时，您需要发布在自适应表单中通过引用插入的独立自适应表单片段。
-* 当您重新发布更新的自适应表单片段时，更改会反映在使用片段的自适应表单的已发布实例中。
+* 当您重新发布更新的自适应表单片段时，这些更改会反映在使用该片段的自适应表单的已发布实例中。
 * 包含验证组件的自适应表单不支持匿名用户。 此外，不 reommended 在自适应表单片段中使用验证组件。
 * （ **仅** Mac）要确保表单片段功能在所有方案中都能正常工作，请将以下条目添加到/private/etc/hosts 文件中：
-  `127.0.0.1 <Host machine>` **主机**：部署AEM Forms的Apple Mac计算机。
+  `127.0.0.1 <Host machine>`**主机计算机** ：部署 AEM Forms 的 Apple Mac 计算机。
 
 ## 引用片段 {#reference-fragments}
 
-可用于创建表单的参考自适应表单片段可用。
+提供了可用于创建表单的参考自适应表单片段。
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
+
+## 另请参阅 {#see-also}
+
+* [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [在自适应Forms中创建或添加主题](/help/forms/using-themes-in-core-components.md)
+* [在基于核心组件的AEM自适应表单中使用Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
