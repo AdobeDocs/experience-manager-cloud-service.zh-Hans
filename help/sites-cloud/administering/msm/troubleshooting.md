@@ -1,13 +1,13 @@
 ---
 title: 解决 MSM 问题和常见问题
-description: 了解如何解决与 MSM 相关的最常见问题并获得这些问题的答案。
+description: 了解如何解决与MSM相关的最常见问题并获得这些问题的答案。
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 100%
+source-wordcount: '767'
+ht-degree: 52%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 
 如果您在 MSM 中遇到您认为不正确的行为或错误，则在开始详细的问题排查之前，请务必：
 
-* 查看 [MSM 常见问题](#faq)，因为其中可能已包含您的问题或疑问的答案。
-* 查看 [MSM 最佳实践文章](best-practices.md)，因为这些文章中提供了许多提示并澄清了大量误解。
+* 查看 [msm常见问题解答](#faq) 因为您的问题或疑问可能已经在那里解决了。
+* 查看 [MSM最佳实践文章](best-practices.md) 因为其中提供了一些技巧并澄清了一些误解。
 
 ## 查找有关您的 Blueprint 和 Live Copy 状态的高级信息 {#advanced-info}
 
@@ -42,20 +42,20 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 * `cq:LiveSync` mixin 类型
    * 它在 `jcr:content` 节点上设置，并定义根 Live Copy 页面。
-   * 这些页面将具有类型为 `cq:LiveCopy` 的 `cq:LiveSyncConfig` 子节点，它们将通过以下属性包含有关 Live Copy 的基本和强制性信息：
+   * 这些页面具有 `cq:LiveSyncConfig` 类型的子节点 `cq:LiveCopy` 通过以下属性包含有关Live Copy的基本和强制性信息：
       * `cq:master` 指向 Live Copy 的 Blueprint 页面。
       * `cq:rolloutConfigs` 表示应用于 Live Copy 的活动转出配置。
       * 如果此根 Live Copy 页面的子页面包含在 Live Copy 中，则 `cq:isDeep` 为 true。
 * `cq:LiveRelationship` mixin 类型
    * 任何 Live Copy 页面的 `jcr:content` 节点上均具有一个此 mixin 类型。
-   * 如果没有，则页面在某个时间点已被分离或通过 Live Copy 操作（创建或转出）之外的创作界面手动创建。
+   * 如果不包含，则页面在某个时间点已被分离或通过Live Copy操作（创建或转出）之外的创作界面手动创建。
 * `cq:LiveSyncCancelled` mixin 类型
    * 添加到已暂停的 Live Copy 页面的 `jcr:content` 节点。
    * 如果暂停对子页面也有效，则 `cq:isCancelledForChildren` 属性在同一节点上设置为 true。
 
 这些属性包含的信息应反映在 UI 中，但在进行问题排查时，在 MSM 操作发生时直接在存储库中观察 MSM 行为可能会很有用。
 
-了解这些属性对于查询您的存储库并找出处于特定状态的页面集也很有用。例如：
+了解这些属性也很有用，您可以查询存储库并找出处于特定状态的页面集。 例如：
 
 * `select * from cq:LiveSync` 返回所有 Live Copy 根页面。
 
@@ -71,23 +71,23 @@ MSM 同步操作是高度可配置的。在转出期间修改哪些属性或组�
 
 ### 如何删除一组作者的转出权限？ {#remove-rollout-permissions}
 
-无法为 AEM 主体（用户或组）设置或删除任何&#x200B;**转出**&#x200B;权限。
+没有 **转出** 可以为Adobe Experience Manager主体（用户或组）设置或删除的权限。
 
 作为替代方案，您可以：
 
 * 自定义产品 UI 以隐藏给定主体的转出操作。
-* 从 Live Copy 树中为无权转出的作者删除写入权限。
+* 从Live Copy树中为无权转出的作者删除写入权限。
 
 ### 为什么我会看到带有后缀“_msm_moved”的 Live Copy 页面？ {#moved-pages}
 
-如果转出 Blueprint 页面，它会更新其 Live Copy 页面或创建一个 Live Copy 页面（如果该页面不存在）（例如，首次转出或手动删除 Live Copy 页面时）。
+如果转出Blueprint页面，它将更新其Live Copy页面或创建Live Copy页面（如果尚不存在）。 例如，首次转出或Live Copy页面被手动删除时。
 
-但在后一种情况下，如果存在不带 `cq:LiveRelationship` 属性的同名页面，则在创建 Live Copy 页面之前，会相应地重命名该页面。
+但在后一种情况下，如果页面不包含 `cq:LiveRelationship` 存在具有相同名称的属性，此页面将重命名，以便在创建Live Copy页面之前。
 
-默认情况下，转出需要一个链接的 Live Copy 页面（Blueprint 的更新会部署到该页面），或者没有页面（在创建 Live Copy 页面时）。
+默认情况下，转出需要一个链接的Live Copy页面，Blueprint的更新将转出到该页面。 或者，它期望在创建Live Copy页面时完全没有页面。
 
-如果找到“独立”页面，MSM 会选择重命名该页面，并创建一个单独的、链接的 Live Copy 页面。
+如果找到“独立”页面，MSM会选择重命名此页面，并创建一个单独的、链接的Live Copy页面。
 
-Live Copy 子树中的此类独立页面通常是&#x200B;**分离**&#x200B;操作的结果，或者以前的 Live Copy 页面已由作者手动删除，然后使用相同的名称重新创建。
+Live Copy子树中的此类独立页面通常是 **分离** 操作，或者以前的Live Copy页面已由作者手动删除，然后使用相同的名称重新创建。
 
-要避免此情况，请使用 Live Copy 的&#x200B;**暂停**&#x200B;功能而不是&#x200B;**分离**。有关&#x200B;**分离**&#x200B;操作的更多详细信息，请参阅[本文。](creating-live-copies.md)
+要避免此情况，请使用Live Copy **暂停** 功能而非 **分离**. 更多有关 **分离** 可在以下位置找到操作： [本文。](creating-live-copies.md)
