@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ed67bb95a82f083ed3b6eea4fe5f5d150359c539
+source-git-commit: 8c878833118b2d8dc51e8cfa2c15ce70efbd3deb
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 76%
@@ -27,6 +27,10 @@ ht-degree: 76%
 ## 发布日期 {#release-date}
 
 的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前功能版本(2023.9.0)为2023年9月28日。 下一个功能版本(2023.10.0)计划于2023年10月26日发布。
+
+## 维护发行说明 {#maintenance}
+
+您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
 <!-- 
 
@@ -127,10 +131,6 @@ Edge Delivery是一套新的可组合服务，重点是在客户互动时实现�
 想试用该功能并分享反馈吗？使用您的官方电子邮件 ID 将电子邮件发送到 **aemcs-waf-adopter@adobe.com**，了解有关早期采用者计划的更多信息。空间是有限的。
 
 在[此处](/help/security/cdn-and-waf-rules.md)的文章中详细了解该功能。
-
-## 维护发行说明 {#maintenance}
-
-您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
 ## Cloud Manager {#cloud-manager}
 
