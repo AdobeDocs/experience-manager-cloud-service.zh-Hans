@@ -4,15 +4,15 @@ description: 自适应Forms提供了一种机制，可创建在任何自适应�
 topic-tags: author
 keywords: 添加自适应表单片段、自适应表单片段、创建表单片段、将片段添加到自适应表单、管理片段
 feature: Adaptive Forms
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1745'
 ht-degree: 4%
 
 ---
 
 
-# 自适应表单片段 {#adaptive-form-fragments}
+# 在基于核心组件的自适应表单中创建和使用自适应Forms片段 {#adaptive-form-fragments}
 
 
 | 版本 | 文章链接 |
