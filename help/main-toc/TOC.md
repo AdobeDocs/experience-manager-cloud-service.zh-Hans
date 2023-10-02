@@ -8,7 +8,7 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a741105afdb2fb4dc3bfb70dc6dcb1bf317a3aea
+source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
 workflow-type: tm+mt
 source-wordcount: '4296'
 ht-degree: 97%
@@ -542,8 +542,8 @@ ht-degree: 97%
       + [为  [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
-+ 与Adobe Express集成 {#integration-adobe-express}
-   + [适用于Adobe Express的AEM Assets加载项](/help/assets/addon-adobe-express.md)
+   + 与Adobe Express集成 {#integration-adobe-express}
+      + [适用于Adobe Express的AEM Assets加载项](/help/assets/addon-adobe-express.md)
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
