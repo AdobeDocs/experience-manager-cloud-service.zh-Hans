@@ -2,9 +2,9 @@
 title: 管理内容片段（资产 — 内容片段）
 description: 了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1877'
 ht-degree: 72%
 
 ---
@@ -196,6 +196,10 @@ ht-degree: 72%
    * **已停用**：红色
 
 * 按钮使您能够 **尝试新编辑器**，直接打开 *新建* [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md) 该页面可通过 [内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+
+  >[!WARNING]
+  >
+  >新编辑器将在同一选项卡中打开。 不建议同时打开两个编辑器。
 
 * **保存**&#x200B;提供对&#x200B;**保存并关闭**&#x200B;选项的访问。
 

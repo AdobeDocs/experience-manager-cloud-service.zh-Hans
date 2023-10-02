@@ -3,10 +3,10 @@ title: 创作内容片段
 description: 了解如何为内容片段创作内容，然后根据用途创建该内容的变体。这让投放 Headless 和创造页面变得更加灵活。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2fa22bf2feb6b8697877b345bc29821e30b1c6a1
+source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 98%
+source-wordcount: '2249'
+ht-degree: 97%
 
 ---
 
@@ -62,6 +62,11 @@ ht-degree: 98%
    * 用于显示所有&#x200B;**父引用**&#x200B;的选项（链接图标）
    * 片段&#x200B;**[状态](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**&#x200B;和上次保存的信息
    * 用于切换到原始（基于资源的）编辑器的开关
+
+     >[!WARNING]
+     >
+     >原始编辑器将在同一选项卡中打开。 不建议同时打开两个编辑器。
+
 * 左侧面板：显示内容片段的&#x200B;**[变体](#variations)**&#x200B;及其&#x200B;**字段**：
    * 可使用这些链接[在内容片段结构中导航](#navigate-structure)
 * 右侧面板：有多个选项卡，[其中显示属性（元数据）和标记](#view-properties-tags)、关于[版本历史记录](#view-version-history)的信息以及与任何[语言副本](#view-language-copies)相关的信息
