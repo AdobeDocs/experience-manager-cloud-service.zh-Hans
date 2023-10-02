@@ -2,9 +2,9 @@
 title: 使用内容片段 （资产 — 内容片段）
 description: 了解Adobe Experience Manager (AEM) as a Cloud Service中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和headless投放。 以及它们如何与MSM结合使用。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2229'
 ht-degree: 62%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 62%
 >
 >现在主要用&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;控制台管理它们，但仍可从&#x200B;**资源**&#x200B;控制台管理它们。本节介绍以下管理方面的信息： **资产** 控制台。
 >
->有两个编辑器用于创作内容片段。本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
+>有两个编辑器用于创作内容片段。本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
 
 本页和以下页面介绍了创建、配置、维护和使用内容片段的任务：
 

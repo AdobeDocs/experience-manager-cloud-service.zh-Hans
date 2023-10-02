@@ -2,9 +2,9 @@
 title: 管理内容片段（资产 — 内容片段）
 description: 了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: cc752e540fd08c2db5145316f57071c991d264b3
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1855'
 ht-degree: 72%
 
 ---
@@ -34,11 +34,11 @@ ht-degree: 72%
 
 >[!NOTE]
 >
->内容片段是站点功能，但存储为 **资产**.
+>内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
+>现在主要用&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;控制台管理它们，但仍可从&#x200B;**资源**&#x200B;控制台管理它们。本节介绍以下管理方面的信息： **资产** 控制台。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
+>有两个编辑器用于创作内容片段。本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
 
 ## 创建内容片段 {#creating-content-fragments}
 
@@ -194,6 +194,8 @@ ht-degree: 72%
    * **已发布**：绿色
    * **已修改**：橙色
    * **已停用**：红色
+
+* 按钮使您能够 **尝试新编辑器**，直接打开 *新建* [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md) 该页面可通过 [内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
 
 * **保存**&#x200B;提供对&#x200B;**保存并关闭**&#x200B;选项的访问。
 
