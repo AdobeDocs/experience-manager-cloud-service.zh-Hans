@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8304ab7999ad467ef5966a6aec143416c8158f78
+source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 60%
+source-wordcount: '83'
+ht-degree: 62%
 
 ---
 # 代码片段 {#snippets}
@@ -14,3 +14,9 @@ ht-degree: 60%
 ## Edge Delivery Services创作 {#edge-delivery-authoring}
 
 [!BADGE 要为Edge Delivery Services创作AEM内容，请单击此处。]{type=Positive url="/help/edge/overview.md" tooltip="为Edge Delivery Services创作AEM内容"}
+
+## 为配置文件分配组的IMS支持 {#ims-group-profiles}
+
+>[!NOTE]
+>
+>AEM 当前不支持将组分配给配置文件。应改为单独添加用户。
