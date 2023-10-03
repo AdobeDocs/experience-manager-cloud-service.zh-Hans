@@ -1,9 +1,10 @@
 ---
-title: 将Forms Portal添加到AEM Sites页面
+title: 如何在Experience Manager Sites页面上创建Forms门户？
 description: 了解如何在AEM Sites页面上创建Forms Portal并使用现成的核心组件。
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1839'
 ht-degree: 4%
 
 ---

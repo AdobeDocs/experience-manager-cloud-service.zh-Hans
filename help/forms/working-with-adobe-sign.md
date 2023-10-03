@@ -1,17 +1,17 @@
 ---
 title: 使用方法 [!DNL Adobe Sign] 在自适应表单中？
-description: 您可以启用电子签名([!DNL Adobe Sign])自适应表单的工作流，用于自动执行签名工作流、简化单个和多签名流程，以及通过移动设备以电子方式签名表单。
+description: 在自适应表单中使用Adobe Sign，以允许表单接收者从他们选择的设备和位置对表单进行电子签名。
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '3173'
+source-wordcount: '3169'
 ht-degree: 3%
 
 ---
-
 
 # 使用 [!DNL Adobe Sign] 在自适应表单中 {#using-adobe-sign-in-an-adaptive-form}
 
@@ -203,7 +203,7 @@ Adobe Sign协议可以有一个或多个收件人。 添加收件人时，您还
      >
      >确保第一个收件人或唯一收件人（如果只有一个收件人）的电子邮件地址与 [!DNL Adobe Sign] 用于配置AEMCloud Service的帐户。
 
-   * **[!UICONTROL 收件人身份验证方法]：** 指定在打开Adobe Sign协议之前对收件人进行身份验证的方法。 您可以在电话、知识库、基于社会身份的身份验证和 [政府ID](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html) 对象 [!DNL Adobe Acrobat Sign]. 对象 [!DNL Adobe Acrobat Sign for Government] 您可以在电话和基于知识的身份验证之间进行选择。
+   * **[!UICONTROL 收件人身份验证方法]：** 指定在打开Adobe Sign协议之前对收件人进行身份验证的方法。 您可以在电话、知识库、基于社会身份的身份验证和 [政府ID](https://helpx.adobe.com/cn/sign/using/adobesign-authentication-government-id.html) 对象 [!DNL Adobe Acrobat Sign]. 对象 [!DNL Adobe Acrobat Sign for Government] 您可以在电话和基于知识的身份验证之间进行选择。
 
    >[!NOTE]
    >

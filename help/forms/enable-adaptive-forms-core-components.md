@@ -1,17 +1,16 @@
 ---
-title: 启用自适应Forms核心组件
-description: 通过我们的分步指南，了解如何在 AEM Forms as a Cloud Service 上启用自适应表单核心组件。我们的教程将引导您完成整个过程，使您可以轻松地为您的 AEM Forms 环境启用这一强大的功能。
-seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
+title: 如何在AEM Formsas a Cloud Service和本地开发环境中启用自适应Forms核心组件
+description: 了解如何在AEM Formsas a Cloud Service上启用自适应Forms核心组件。
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 755bab29e7b6c49540dee47d6bec13e9421bfc43
+exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 89%
+source-wordcount: '1009'
+ht-degree: 86%
 
 ---
-
 
 # 启用自适应Forms核心组件 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
@@ -356,4 +355,3 @@ ht-degree: 89%
    ![找到 all/pom.xml 中的 core-forms-components-af-core 工件](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    如果存在依赖项，则为您的环境启用了自适应表单核心组件。
-

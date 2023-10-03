@@ -1,10 +1,10 @@
 ---
-title: 使用AEM Forms Designer
-description: 使用 [!DNL Adobe Experience Manager (AEM) Forms] 用于创建记录文档模板的设计器。
+title: 如何使用Forms Designer创建记录文档(DoR)模板和表单片段？
+description: 使用 [!DNL AEM Forms] 设计器以创建记录文档模板和表单片段。
 exl-id: 88a95374-620c-45a9-ae94-2043b542fd62
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---

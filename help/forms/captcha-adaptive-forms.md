@@ -1,13 +1,18 @@
 ---
-title: 在自适应Forms中使用reCAPTCHA
-description: 了解如何在自适应Forms中配置Google reCAPTCHA服务。
+title: 如何在自适应Forms中使用CAPTCHA？
+description: 了解如何为自适应表单配置AEM验证码或Google reCAPTCHA服务。
+uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
+contentOwner: vishgupt
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
-source-git-commit: 6d0e3ee08862030e9eb7d068b251d13bc3e8e08f
+exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1935'
 ht-degree: 10%
 
 ---
+
 
 # 在自适应Forms中使用reCAPTCHA {#using-reCAPTCHA-in-adaptive-forms}
 

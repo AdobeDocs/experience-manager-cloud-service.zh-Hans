@@ -1,16 +1,14 @@
 ---
-title: 自适应Forms的样式结构
-seo-title: Styling constructs for Adaptive Forms
-description: 使用LESS框架自定义自适应Forms的外观。
-seo-description: Use LESS framework to customize appearance of Adaptive Forms.
+title: 如何设置自适应Forms的构造样式？
+description: 对自适应Forms使用LESS框架可自定义自适应Forms的外观。
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2315'
 ht-degree: 3%
 
 ---
@@ -20,15 +18,15 @@ ht-degree: 3%
 
 ## 前提条件 {#prerequisites}
 
-CSS和LESS框架的相关知识。
+了解CSS和LESS框架。
 
 ## 可自定义的内容 {#what-can-be-customized}
 
-本文列出了自适应Forms的公开可用的css类。 您可以使用这些类为自适应表单的各种组件设置样式。 创作组件（如显示警告的对话框和状态栏）的样式超出了本文的范围。 仅当您无法通过以下方式为组件设置样式时，才使用这些样式构造创建样式（使用CSS或更少）： [主题编辑器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+本文列出了自适应Forms的公开可用的css类。 您可以使用这些类设置自适应表单各种组件的样式。 创作组件（如显示警告的对话框和状态栏）的样式超出了本文的范围。 仅当您无法通过以下方式设置组件的样式时，才使用这些样式构造创建样式（使用CSS或更少）： [主题编辑器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## 在自适应Forms中自定义样式 {#customizing-styles-in-adaptive-forms}
 
-LESS框架简化了在Adaptive Forms中自定义样式的用例。 通过框架，您可以使用一组变量和函数(mixin)定义样式。 LESS框架有助于减小捆绑代码的大小并提高其可重用性。
+LESS框架简化了在Adaptive Forms中自定义样式的用例。 该框架允许您使用一组变量和函数(mixin)定义样式。 LESS框架有助于减小捆绑代码的大小并提高其可重用性。
 
 您可以通过以下方式自定义自适应表单样式：
 
@@ -39,9 +37,9 @@ LESS框架简化了在Adaptive Forms中自定义样式的用例。 通过框架�
 
 您可以更改自适应表单的主题，以确保其外观与嵌入了自适应表单的网页一致。
 
-使用CSS属性更改自适应表单的整体外观通常是主题更改的一部分。 对自适应表单的lo“ok”和feel所做的重大更改（如组件布局和放置的更改）不被视为主题更改。
+使用CSS属性更改自适应表单的整体外观通常是主题更改的一部分。 对自适应表单的“确定和感觉”所做的重大更改（如组件布局和放置的更改）不被视为主题更改。
 
-根据引导，以下一组CSS属性定义了网页的主题：
+根据引导，以下几组CSS属性定义了网页的主题：
 
 * 背景颜色
 * 边框（类型、颜色、粗细）
@@ -51,17 +49,17 @@ LESS框架简化了在Adaptive Forms中自定义样式的用例。 通过框架�
 * 字体大小
 * 行高
 
-目前，仅为自适应表单中各种元素的这些属性定义LESS变量。
+目前，仅针对自适应表单中各种元素的这些属性定义了LESS变量。
 
 ## 更改组件样式 {#changing-component-style}
 
 可更改元素的外观、布局、位置和可见性。 要完成此任务，请创建或更新您的自定义.css文件，以包含本文中列出的样式构造。
 
-要将样式应用于自适应表单，请在中打开自适应表单进行编辑，打开自适应表单容器的属性，在基本选项卡中指定自定义CSS文件的路径。 自适应表单的默认样式结构，并用自定义.css文件中列出的结构覆盖。
+要将样式应用于自适应表单，请在中打开自适应表单进行编辑，打开自适应表单容器的属性，在基本选项卡中指定自定义CSS文件的路径。 自适应表单的样式构造是默认的，并且被自定义.css文件中列出的构造覆盖。
 
 ## 组件 {#components}
 
-本文中讨论的组件具有其预定义的CSS类。 您可以编辑变量以修改CSS类中的样式。 或者，也可以重写整个类。 本节介绍可以使用变量修改的组件和样式中的类。
+本文中讨论的组件具有预定义的CSS类。 您可以编辑变量以修改CSS类中的样式。 或者，您可以重写整个类。 本节介绍可以使用变量修改的组件和样式中的类。
 
 ## 容器样式 {#container-styling}
 
@@ -79,8 +77,8 @@ LESS框架简化了在Adaptive Forms中自定义样式的用例。 通过框架�
 <table>
  <tbody>
   <tr>
-   <td><p><strong>变量描述</strong></p> </td>
-   <td><p><strong>变量描述</strong></p> </td>
+   <td><p><strong>变量说明</strong></p> </td>
+   <td><p><strong>变量说明</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>container-bgColor</code></p> </td>
@@ -103,9 +101,9 @@ LESS框架简化了在Adaptive Forms中自定义样式的用例。 通过框架�
 
 ## 字段样式 {#field-styling}
 
-自适应Forms包括各种类型的字段。 每个字段都有一个唯一的类名称，即字段的名称。 该字段还有一个通用类名 `guideFieldNode`.
+自适应Forms包括各种类型的字段。 每个字段都有一个唯一的类名称，即字段的名称。 该字段还具有公共类名称 `guideFieldNode`.
 
-字段包括标签、小组件、帮助说明（详细和简要说明）和字段帮助图标（问号）。
+字段包括标签、小组件、帮助描述（长描述和短描述）和字段帮助图标（问号）。
 
 <table>
  <tbody>
@@ -139,7 +137,7 @@ LESS框架简化了在Adaptive Forms中自定义样式的用例。 通过框架�
 
 ## 标签样式 {#label-styling}
 
-HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部还是左侧。
+HTML元素 **标签** 用于字段包括类 **左侧** 或 **top** 标签在顶部还是左侧。
 
 <table>
  <tbody>
@@ -183,7 +181,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
 
 ## 构件样式 {#widgets-styling}
 
-根据其类型，构件还包含类。 通常，构件包括 `guideFieldWidget` 类。 HTML附带的小组件通常使用标准HTML元素输入和选择。 相应地进行样式设置。 不能通过更改变量来设置自定义小部件的样式。
+根据其类型，构件还包含类。 通常，小组件包括 `guideFieldWidget` 类。 随HTML一起提供的小组件通常使用标准HTML元素输入和选择。 样式设置会相应地完成。 您不能通过更改变量来设置自定义小组件的样式。
 
 <table>
  <tbody>
@@ -202,7 +200,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>小部件的背景颜色（复选框和单选按钮不起作用）</td>
+   <td>构件的背景颜色（复选框和单选按钮不起作用）</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>
@@ -226,7 +224,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>widgets-border</code></p> </td>
-   <td><p>小部件的统一边框样式</p> </td>
+   <td><p>小部件的合并边框样式</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-font-color</code></p> </td>
@@ -254,7 +252,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>widgets-mandatory-bg-color</code></p> </td>
-   <td><p>必填字段的构件背景颜色</p> </td>
+   <td><p>必填字段小组件的背景颜色</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-disabled-bg-color</code></p> </td>
@@ -262,7 +260,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>widgets-disabled-font-color</code></p> </td>
-   <td><p>字段被禁用时构件的字体颜色</p> </td>
+   <td><p>字段被禁用时的小部件的字体颜色</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-disabled-border-color</code></p> </td>
@@ -270,7 +268,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>widget-height</code></p> </td>
-   <td>小部件的高度（复选框和单选按钮不起作用）</td>
+   <td>小部件的高度（复选框和单选按钮无法正常使用）</td>
   </tr>
   <tr>
    <td><p><code>checkbutton-height</code></p> </td>
@@ -285,11 +283,11 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
 
 ### 构件样式设置的限制 {#limitations-in-widget-styling}
 
-焦点、必填和禁用的字段的样式受变量限制。 但是，您可以通过覆盖样式来更改它。 提供了使用变量的限制，主要是为了保持变量的数量在可控范围内。 如果字段处于前面讨论的任何状态，因此字段的外观发生剧烈变化，则可以放松该限制。
+焦点、必填和禁用的字段的样式受变量限制。 但是，您可以通过覆盖样式来更改它。 提供了使用变量的限制，主要是为了控制变量的数量。 如果字段由于处于前面讨论的任何状态而发生显着变化，则可以放松该限制。
 
 ## 帮助描述 {#help-description}
 
-作者可以使用短描述组件和长描述组件在字段中指定帮助内容。 两个组件都有一个公共类 `.guideHelpDescription` 和另一堂课 `.long`/ `.short`，具体取决于描述的类型。 帮助内容包含在段落元素中，用于覆盖描述的样式。 使用以widgetshelp开头的变量修改帮助描述（长描述和短描述），如下表所述：
+作者可以使用短描述组件和长描述组件在字段中指定帮助内容。 两个组件都有一个公共类 `.guideHelpDescription` 和另一堂课 `.long`/ `.short`，具体取决于描述的类型。 帮助内容包含在段落元素中，用于覆盖描述的样式。 使用以widgetshelp开头的变量修改帮助说明（长说明和短说明），如下表所述：
 
 <table>
  <tbody>
@@ -299,7 +297,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>widgets-help-long-bg-color</code></p> </td>
-   <td><p>构件长帮助的背景颜色</p> </td>
+   <td><p>小组件长时间帮助的背景颜色</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-long-border-color</code></p> </td>
@@ -315,7 +313,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>widgets-help-short-color</code></p> </td>
-   <td><p>构件简短帮助的字体颜色</p> </td>
+   <td><p>小部件的简短帮助的字体颜色</p> </td>
   </tr>
   <tr>
    <td><p><code>widgets-help-short-tooltip-bg-color</code></p> </td>
@@ -323,14 +321,14 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>widgets-help-short-tooltip-color</code></p> </td>
-   <td><p>构件简短工具提示的字体颜色帮助</p> </td>
+   <td><p>小部件的简短工具提示帮助的字体颜色</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## 条款和条件 {#terms-and-conditions}
 
-条款和条件(TnC) `` ``)构件可让您指定条款和条件。 您可以使用下表中描述的变量自定义构件。
+条款和条件(TnC) `` ``)小组件允许您指定条款和条件。 您可以使用下表所述的变量自定义构件。
 
 <table>
  <tbody>
@@ -351,7 +349,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
 
 ## 按钮 {#button}
 
-按钮也是小组件。 但是，它们的样式与小组件略有不同。 在Adaptive Forms中，以下任何一项都构成一个按钮：
+按钮也是小组件。 但是，它们的样式与小组件略有不同。 在自适应Forms中，以下任意值都构成按钮：
 
 * 输入[类型=文本]
 * 按钮
@@ -424,7 +422,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>button-large-padding</code></p> </td>
-   <td><p>大按钮（具有类.buttonlarge的按钮）的填充</p> </td>
+   <td><p>大按钮（具有类.buttonlarge的按钮）的边距</p> </td>
   </tr>
   <tr>
    <td><p><code>button-large-font-size</code></p> </td>
@@ -432,7 +430,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>button-small-padding</code></p> </td>
-   <td><p>小按钮（具有类.buttonsmall的按钮）的填充</p> </td>
+   <td><p>小按钮（具有类.buttonsmall的按钮）的边距</p> </td>
   </tr>
   <tr>
    <td><p><code>button-small-font-size</code></p> </td>
@@ -440,7 +438,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>button-info-background-color</code></p> </td>
-   <td><p>信息性按钮（具有类.buttoninformative的按钮）的背景颜色</p> </td>
+   <td><p>信息按钮（具有类.buttoninformative的按钮）的背景颜色</p> </td>
   </tr>
   <tr>
    <td><p><code>button-info-font-color</code></p> </td>
@@ -571,7 +569,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
 
 ## 导航器样式 {#navigator-styles}
 
-导航器选项卡有四种类型。 这些选项卡包括左侧、顶部、向导和折叠面板中的选项卡。 每个导航器都有一个不同的类。
+导航器选项卡有四种类型。 这些选项卡包括左侧选项卡、顶部选项卡、向导中的选项卡和折叠面板。 每个导航器具有不同的类。
 
 <table>
  <tbody>
@@ -640,9 +638,9 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
 
 `</div>`
 
-可以使用选择元素的CSS规则更改导航器的样式，这些元素使用 **后代** 选择器。 例如，要向锚点标记添加文本修饰样式，请执行以下操作：
+可以使用选择元素的CSS规则更改导航器的样式，这些元素使用 **子项** 选择器。 例如，要向锚点标记添加文本修饰样式，请执行以下操作：
 
-顶部的Tab导航器：
+顶部选项卡导航器：
 
 `.tab-navigators`
 
@@ -688,7 +686,7 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
 
 `}`
 
-此外，还有根据选项卡导航器是否有嵌套/子项/子导航器来设置选项卡导航器（左侧和顶部）样式的类。
+此外，还有一些类可根据选项卡导航器（包括左侧和顶部）是否具有嵌套/子项/子导航器来设置其样式。
 
 <table>
  <tbody>
@@ -698,11 +696,11 @@ HTML元素 **标签** 用于字段包括类 **left** 或 **top** 标签在顶部
   </tr>
   <tr>
    <td><p><code>nested_true</code></p> </td>
-   <td><p>具有嵌套/子/子导航器的选项卡导航器（左侧和顶部）</p> </td>
+   <td><p>具有嵌套/子/子导航器的选项卡导航器（左和上）</p> </td>
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>没有嵌套/子/子导航器的选项卡导航器（左和上）</p> </td>
+   <td><p>没有嵌套/子项/子项导航器的选项卡导航器（左侧和顶部）</p> </td>
   </tr>
  </tbody>
 </table>
@@ -774,7 +772,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
   </tr>
   <tr>
    <td><p><code>tabs-stepped-font-color</code></p> </td>
-   <td>当面板聚焦一次但完成表达式返回false时的字体颜色 </td>
+   <td>面板聚焦一次但完成表达式返回false时的字体颜色 </td>
   </tr>
   <tr>
    <td><p><code>tabs-border-color</code></p> </td>
@@ -830,7 +828,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
   </tr>
   <tr>
    <td><p><code>wizard-tabs-active-font-color</code></p> </td>
-   <td><p>面板聚焦时的字体颜色（聚焦）</p> </td>
+   <td><p>面板成为焦点时的字体颜色（焦点）</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td>
@@ -877,7 +875,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
    <td><p>进度条的填充颜色</p> </td>
   </tr>
   <tr>
-   <td><p><strong>折叠导航器</strong></p> </td>
+   <td><p><strong>可折叠项导航器</strong></p> </td>
    <td><p> </p> </td>
   </tr>
   <tr>
@@ -889,7 +887,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
 
 ## 面板样式 {#panel-styling}
 
-面板包含一个可选工具栏及其内容。
+面板包括可选工具栏及其内容。
 
 <table>
  <tbody>
@@ -949,7 +947,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
 
 ## 标题栏 {#header-bar}
 
-这些变量会影响在包含面板标题以及下一个和背面导航器的移动设备或小屏幕设备上可见的标题栏。
+这些变量会影响在包含面板标题以及下一个和背面导航器的移动设备或小屏幕设备上显示的标题栏。
 
 <table>
  <tbody>
@@ -976,14 +974,14 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
   </tr>
   <tr>
    <td><p><code>headerbar-padding</code></p> </td>
-   <td><p>标题栏的边距</p> </td>
+   <td><p>标题栏的内边距</p> </td>
   </tr>
  </tbody>
 </table>
 
 ## 滚动指示器 {#scroll-indicator}
 
-这些变量会影响滚动指示器，滚动指示器是出现在移动设备或小屏幕设备上的橙色箭头。 滚动指示器表示屏幕可见部分以外的内容存在。 您可以向下滚动查看它。 点击内容结尾时，箭头消失。
+这些变量会影响滚动指示器，即出现在移动设备或小屏幕设备上的橙色箭头。 滚动指示器指示屏幕可见部分以外的内容存在。 您可以向下滚动查看它。 点击内容结尾时，箭头消失。
 
 <table>
  <tbody>
@@ -1040,15 +1038,15 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
   </tr>
   <tr>
    <td><p><code>mobileToolbarBottom</code></p> </td>
-   <td><p>固定工具栏位置，在移动设备上，从底部</p> </td>
+   <td><p>固定位置的工具栏，在移动设备上，从底部开始</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarTop</code></p> </td>
-   <td><p>固定工具栏在移动设备上从顶部的位置</p> </td>
+   <td><p>在移动设备上从顶部固定工具栏位置</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarLeft</code></p> </td>
-   <td><p>固定工具栏在移动设备上的位置（从左侧）</p> </td>
+   <td><p>固定工具栏在移动设备左侧的位置</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarRight</code></p> </td>
@@ -1056,7 +1054,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
   </tr>
   <tr>
    <td><p><code>mobileButtonIconTopMargin</code></p> </td>
-   <td><p>固定工具栏按钮图标的位置（从顶部）</p> </td>
+   <td><p>从顶部固定工具栏按钮图标的位置</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileButtonIconWidth</code></p> </td>

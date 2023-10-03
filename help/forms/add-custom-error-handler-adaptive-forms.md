@@ -1,14 +1,16 @@
 ---
-title: 在AEM自适应Forms中添加自定义错误处理程序
+title: 在适用于AEM的自适应Forms的自适应Forms中添加自定义错误处理程序
+seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms
 description: AEM Forms 使用为调用外部服务而配置的 REST 端点为表单提供现成的成功和错误处理程序。您可以在AEM自适应表单中添加默认错误处理程序以及自定义错误处理程序。
 seo-description: Error handler function and Rule Editor in Adaptive Forms helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: 添加自定义错误处理程序、添加默认错误处理程序、在表单中添加错误处理程序、使用规则编辑器的调用服务添加自定义错误处理程序、配置规则编辑器以添加自定义错误处理程序、使用规则编辑器添加自定义错误处理程序
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: f6c6ef96f8de194942a95d8589591b41431037f5
+exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '2466'
+source-wordcount: '2470'
 ht-degree: 90%
 
 ---
@@ -22,7 +24,7 @@ ht-degree: 90%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
 | AEM as a Cloud Service | 本文 |
 
-AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提供用于自定义错误处理函数的功能。例如，您可以在后端为特定的错误代码调用自定义工作流，或者通知客户服务已停止。处理程序是根据服务器响应执行的客户端函数。在使用 API 调用外部服务时，数据会传输到服务器以进行验证，这会向客户端返回响应，其中包含有关提交的成功或错误事件的信息。该信息作为参数传递给相关处理程序以执行该函数。错误处理程序可帮助管理和显示遇到的错误或验证问题。
+AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提供用于自定义错误处理函数的功能。例如，可在后端为特定的错误代码调用自定义工作流或通知客户服务已停止。处理程序是根据服务器响应执行的客户端函数。在使用 API 调用外部服务时，数据会传输到服务器以进行验证，这会向客户端返回响应，其中包含有关提交的成功或错误事件的信息。该信息作为参数传递给相关处理程序以执行该函数。错误处理程序可帮助管理和显示遇到的错误或验证问题。
 
 ![错误处理程序工作流，用于了解如何在表单中添加自定义错误处理程序](/help/forms/assets/error-handler-workflow.png)
 

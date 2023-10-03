@@ -1,13 +1,13 @@
 ---
-title: 如何使用自适应Forms规则编辑器？
-description: 通过自适应Forms规则编辑器，您可以添加动态行为并将复杂逻辑构建到表单中，而无需编码或编写脚本。 开始了解规则以及用于选择规则结构的准则。 了解有关规则编辑器中可用的运算符类型和事件的更多信息。
+title: 什么是自适应Forms规则编辑器？
+description: 自适应Forms规则编辑器允许您添加动态行为并将复杂的逻辑构建到表单中，而无需编码或编写脚本。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 21db924a8d925f9964cc7af6743764c119208159
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '6446'
+source-wordcount: '6422'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 * 验证对象的值
 * 执行函数以计算对象的值
 * 调用表单数据模型服务并执行操作
-* 设置对象的属性
+* 设置对象属性
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
@@ -43,13 +43,13 @@ ht-degree: 1%
 
 规则是操作和条件的组合。 在规则编辑器中，操作包括隐藏、显示、启用、禁用或计算表单中对象值等活动。 条件是对表单对象的状态、值或属性执行检查和操作而计算的布尔表达式。 根据值( `True` 或 `False`)的计算返回。
 
-规则编辑器提供了一组预定义的规则类型（如When、Show、Hide、Enable、Disable、Set Value Of和Validate）以帮助您编写规则。 每种规则类型均允许您定义规则中的条件和操作。 本文档进一步详细说明了每种规则类型。
+规则编辑器提供了一组预定义的规则类型（如When、Show、Hide、Enable、Disable、Set Value Of和Validate）以帮助您编写规则。 每个规则类型都允许您在规则中定义条件和操作。 本文档进一步详细说明了每种规则类型。
 
 规则通常遵循以下结构之一：
 
 **条件 — 操作** 在此构造中，规则首先定义条件，然后定义要触发的操作。 这种构造与编程语言中的if-then语句类似。
 
-在规则编辑者， **当规则类型实施条件-操作构造时** 。
+在规则编辑器中， **时间** 规则类型强制使用condition-action结构。
 
 **操作-条件** 在此构造中，规则首先定义一个要触发的操作，后跟评估的条件。 此构造的另一个变量是操作条件-备用操作，它还定义了当条件返回 False 时触发的替代操作。
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->可用的规则类型（包括在规则编辑器中定义的条件和操作）还取决于创建规则的表单对象的类型。 规则编辑器仅显示有效的规则类型和选项，用于为特定表单对象类型编写条件和操作语句。 例如，您看不到面板对象的“验证”、“设置值”、“启用”和“禁用”规则类型。
+>可用的规则类型，包括您在规则编辑者中定义的条件和操作，也取决于您在其上创建规则的表单对象的类型。 规则编辑者仅显示有效的规则类型以及特定表单对象类型的写入条件和操作语句的选项。 例如，您不会看到验证、设置值、启用和禁用 panel 对象的规则类型。
 
 有关规则编辑器中可用的规则类型的更多信息，请参阅 [规则编辑器中的可用规则类型](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
@@ -104,9 +104,9 @@ ht-degree: 1%
 
 ### [!UICONTROL 时间] {#whenruletype}
 
-此 **[!UICONTROL 时间]** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，首先指定求值的条件，然后指定满足该条件时要触发的操作( `True`)。 在使用规则类型时，您可以使用多个 AND 和 OR 运算符创建 [ 嵌套表达式 ](#nestedexpressions) 。
+此 **[!UICONTROL 时间]** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，首先指定求值的条件，然后指定满足该条件时要触发的操作( `True`)。 使用When规则类型时，您可以使用多个AND和OR运算符来创建 [嵌套表达式](#nestedexpressions).
 
-使用规则类型时，您可以在表单对象上评估条件，并对一个或多个对象执行操作。
+使用When规则类型，您可以评估表单对象的条件，并对一个或多个对象执行操作。
 
 在普通词语中，规则的典型结构如下：
 
@@ -140,7 +140,7 @@ _
 
 **[!UICONTROL 禁用]** 禁用指定的对象。
 
-**[!UICONTROL 调用服务]** 调用在表单数据模型中配置的服务。 选择 &quot;调用服务&quot; 操作时，会显示一个字段。 在点击字段时，它会显示您 [!DNL Experience Manager] 实例上所有表单数据模型中配置的所有服务。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。 请参阅调用表单数据模型服务的示例规则。
+**[!UICONTROL 调用服务]** 调用在表单数据模型中配置的服务。 选择“调用服务”操作时，会出现一个字段。 点按该字段，它会显示您的网站上所有表单数据模型中配置的所有服务 [!DNL Experience Manager] 实例。 在选择表单数据模型服务时，会显示更多字段，您可以在其中将表单对象与指定服务的输入和输出参数进行映射。 请参阅调用表单数据模型服务的示例规则。
 
 除了表单数据模型服务之外，您还可以指定直接WSDL URL来调用Web服务。 但是，表单数据模型服务具有许多好处，并且推荐调用服务的方法。
 
@@ -202,13 +202,9 @@ _
 
 此 **设置值** 规则类型并非适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
 
-将对象 A 的值设置为：
+将对象A的值设置为：
 
-（string ABC）或
-（对象 C 属性 X）或
-（来自函数的值）或
-（从数学表达式中的值）或
-（数据模型服务或 web 服务的输出值）;
+（字符串ABC） OR（对象C的对象属性X） OR（函数值） OR（数学表达式值） OR（数据模型服务或Web服务的输出值）；
 
 时间（可选）：
 
@@ -218,7 +214,7 @@ _
 
 ![设置-值-web 服务](assets/set-value-web-service.png)
 
-使用表单数据模型服务的设置值规则示例
+使用表单数据模型服务设置值规则的示例
 
 >[!NOTE]
 >

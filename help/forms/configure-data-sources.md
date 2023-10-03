@@ -1,13 +1,13 @@
 ---
 title: 如何配置数据源？
-description: 通过Experience Manager Forms数据集成，您可以配置并连接到不同的数据源。 了解如何将RESTful Web服务、基于SOAP的Web服务和OData服务配置为数据源，并使用它们创建表单数据模型。
+description: 了解如何将RESTful Web服务、基于SOAP的Web服务和OData服务配置为表单数据模型的数据源。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2193'
 ht-degree: 4%
 
 ---

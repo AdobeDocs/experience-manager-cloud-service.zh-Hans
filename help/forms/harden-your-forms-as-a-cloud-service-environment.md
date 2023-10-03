@@ -1,12 +1,10 @@
 ---
-title: 强化AEM Formsas a Cloud Service环境
-seo-title: Secure your [!DNL AEM Forms] as a Cloud Service environment
-description: 保护您的 [!DNL AEM Forms] as a Cloud Service环境
-seo-description: Secure your [!DNL AEM Forms] as a Cloud Service environment
+title: 强化您的 [!DNL AEM Forms] as a Cloud Service环境
+description: 保护您的 [!DNL AEM Forms] as a Cloud Service的环境。
 contentOwner: khsingh
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---

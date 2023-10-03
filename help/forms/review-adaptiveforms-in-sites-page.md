@@ -1,12 +1,12 @@
 ---
-title: 创建和管理自适应表单审核
-description: 审核是一种机制，它允许审核者使用“分配任务”步骤为自适应表单执行不同的任务
+title: 如何创建和管理对嵌入或创建在Sites页面中的自适应Forms的审核？
+description: 审核是一种机制，它允许审核者使用“分配任务”步骤为自适应表单执行不同的任务。
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '358'
 ht-degree: 5%
 
 ---

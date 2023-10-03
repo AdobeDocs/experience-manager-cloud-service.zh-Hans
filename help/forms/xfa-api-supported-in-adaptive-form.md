@@ -1,14 +1,12 @@
 ---
-title: 基于XDP的自适应Forms中的XFA支持
-seo-title: XFA support in XDP-based Adaptive Forms
+title: 在基于XDP的自适应Forms中支持XFA
 description: 列出自适应Forms中支持的XFA事件、属性、脚本和验证。
-seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 5%
@@ -16,17 +14,17 @@ ht-degree: 5%
 ---
 
 
-# 基于XDP的自适应Forms中的XFA支持{#xfa-support-in-xdp-based-adaptive-forms}
+# 在基于XDP的自适应Forms中支持XFA{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## 简介 {#introduction}
 
-自适应Forms为XDP文件中定义的各种XFA事件、属性、脚本和验证提供支持，包括：
+自适应Forms提供对XDP文件中定义的各种XFA事件、属性、脚本和验证的支持，包括：
 
 * 执行在XDP文件中的事件上定义的脚本。
 * 捕获XDP文件中字段的缺省值和行为属性。
 * 执行XDP文件中定义的验证脚本。
 
-在基于XDP文件创建自适应表单时，属性、事件和验证会在表单创作UI中自动填充。 但是，表单作者可以覆盖其中的一些元素以创建替代体验。
+在基于XDP文件创建自适应表单时，属性、事件和验证会在表单创作UI中自动填充。 但是，表单作者可以覆盖其中的某些元素以创建替代体验。
 
 本文列出了自适应Forms中遵循的受支持XFA事件、属性和验证，并说明了如何在自适应Forms中覆盖它们。
 
@@ -59,7 +57,7 @@ ht-degree: 5%
    <td><p>日期选取器</p> </td>
   </tr>
   <tr>
-   <td><p>签名涂鸦</p> </td>
+   <td><p>潦草签名</p> </td>
    <td><p>潦草签名</p> </td>
   </tr>
   <tr>
@@ -103,7 +101,7 @@ ht-degree: 5%
 
 ### 属性 {#properties}
 
-下表捕获了XDP文件中定义的各种XFA脚本在Adaptive Forms中的行为。
+下表捕获了XDP文件中定义的各种XFA脚本在自适应Forms中的行为。
 
 <table>
  <tbody>
@@ -125,14 +123,14 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>辅助功能：角色 </p> </td>
-   <td><p>已映射到自适应表单中的角色属性。</p> </td>
+   <td><p>映射到自适应表单中的role属性。</p> </td>
   </tr>
   <tr>
    <td><p>辅助功能：speakPriority </p> </td>
-   <td><p>已映射到自适应表单中的speakPriority属性。</p> </td>
+   <td><p>在自适应表单中映射到speakPriority属性。</p> </td>
   </tr>
   <tr>
-   <td><p>辅助功能：speakText</p> </td>
+   <td><p>辅助功能： speakText</p> </td>
    <td><p>映射到自适应表单中的自定义辅助功能文本。</p> </td>
   </tr>
   <tr>
@@ -153,7 +151,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>个项目<em> （列表框、复选框）</em></p> </td>
-   <td><p>映射到自适应表单中的options属性。 您可以使用“选项”表达式来覆盖它。</p> </td>
+   <td><p>映射到自适应表单中的options属性。 可以使用“选项”表达式覆盖它。</p> </td>
   </tr>
   <tr>
    <td><p>maxChar<em> （文本字段）</em></p> </td>
@@ -165,11 +163,11 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>fracDigital<em> （数值字段，小数字段）</em></p> </td>
-   <td><p>映射到自适应表单中的Frac位数属性。</p> </td>
+   <td><p>映射到自适应表单中的帧数字属性。</p> </td>
   </tr>
   <tr>
    <td><p>leadDigital<em> （数值字段，小数字段）</em></p> </td>
-   <td><p>映射到自适应表单中的前导位数属性。</p> </td>
+   <td><p>映射到自适应表单中的潜在客户数字属性。</p> </td>
   </tr>
   <tr>
    <td><p>multiSelect<em> （列表框）</em></p> </td>
@@ -180,7 +178,7 @@ ht-degree: 5%
 
 ### 脚本 {#scripts}
 
-下表捕获了XDP文件中定义的各种XFA脚本在Adaptive Forms中的行为。
+下表捕获了XDP文件中定义的各种XFA脚本在自适应Forms中的行为。
 
 <table>
  <tbody>
@@ -194,7 +192,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>计算</p> </td>
-   <td><p>已映射到自适应表单中的计算表达式。</p> </td>
+   <td><p>映射到自适应表单中的计算表达式。</p> </td>
   </tr>
   <tr>
    <td><p>验证 </p> </td>
@@ -210,7 +208,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>单击（按钮字段）</p> </td>
-   <td><p>已映射到按钮的Click表达式。</p> </td>
+   <td><p>映射到按钮的Click表达式。</p> </td>
   </tr>
   <tr>
    <td><p>支持服务器端脚本</p> </td>
@@ -266,5 +264,5 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->您无法覆盖绑定到XFA复选框按钮的自适应表单单选按钮和复选框组的必需属性。
+>您无法覆盖绑定到XFA复选框按钮的自适应表单单选按钮和复选框组的强制属性。
 

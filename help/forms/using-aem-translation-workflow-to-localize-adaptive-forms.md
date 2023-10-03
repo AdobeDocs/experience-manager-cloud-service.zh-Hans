@@ -1,15 +1,15 @@
 ---
-title: 本地化Adaptive Forms和记录文档
-description: 了解如何使用AEM翻译工作流本地化自适应Forms和记录文档。
+title: 如何使用AEM翻译工作流本地化自适应Forms和记录文档？
+description: AEM翻译工作流可帮助您使用机器翻译或人工翻译来本地化自适应Forms及其记录文档。
 seo-description: Learn to use AEM translation workflows to localize Adaptive Forms and Document of Record.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '538'
 ht-degree: 1%
 
 ---

@@ -1,13 +1,13 @@
 ---
 title: 如何使用表单数据模型？
-description: 了解如何添加数据模型对象和服务、创建数据模型对象和子属性、配置服务、添加关联以及使用OData服务的导航属性。 深入了解如何生成和编辑示例数据、测试数据模型对象和服务，以及自动验证输入数据。
+description: 添加数据模型对象、服务、创建数据模型对象和子属性、配置服务、使用OData服务的导航属性。
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '4137'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---

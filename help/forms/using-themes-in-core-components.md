@@ -1,12 +1,10 @@
 ---
-title: 创建和使用主题
-description: 您可以使用主题来通过核心组件使自适应表单风格化并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
-seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
-keywords: 创建新主题、自定义主题、上传新主题、在表单中使用主题、使用前端管道自定义主题
+title: 如何在自适应Forms中创建和使用主题？
+description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2697'
 ht-degree: 5%
 
 ---
@@ -124,7 +122,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 在纯文本编辑器中打开主题文件夹。 例如，要打开 `aem-forms-theme-canvas` Visual Studio代码编辑器中的文件夹。
 
-1. 导航至 `aem-forms-theme-canvas` 文件夹。
+1. 导航到 `aem-forms-theme-canvas` 文件夹。
 
 1. 运行以下命令：
 

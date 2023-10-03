@@ -1,13 +1,13 @@
 ---
 title: 如何使用表单数据模型？
-description: 了解如何根据表单数据模型创建自适应Forms和自适应表单片段。 通过为表单数据模型中的数据模型对象生成和编辑样本数据来深入挖掘。 您可以使用此数据来预览和测试自适应Forms。
+description: 了解如何基于表单数据模型(FDM)创建自适应Forms和片段。 在FDM中生成并编辑数据模型对象的示例数据。
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: a6e76d2b3650d57adafe543b2b694360e4bb4169
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1226'
 ht-degree: 2%
 
 ---

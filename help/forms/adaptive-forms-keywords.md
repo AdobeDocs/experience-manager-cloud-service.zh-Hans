@@ -1,15 +1,13 @@
 ---
-title: 自适应Forms关键词
-seo-title: Adaptive Forms keywords
-description: 不能在自适应Forms中将这些保留字用作标识符。
-seo-description: You cannnot use these reserved words as identifiers in your Adaptive Forms.
+title: 自适应Forms保留关键词
+description: 在自适应Forms中不能用作标识符的保留关键词。
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '209'
 ht-degree: 4%
 
 ---
@@ -29,7 +27,7 @@ ht-degree: 4%
   <tr>
    <td><p>验证</p> </td>
    <td><p>setGuideState</p> </td>
-   <td><p>maxOccurse</p> </td>
+   <td><p>maxOccure</p> </td>
   </tr>
   <tr>
    <td><p>forceElementFocusChange</p> </td>
@@ -52,7 +50,7 @@ ht-degree: 4%
    <td><p>可重复</p> </td>
   </tr>
   <tr>
-   <td><p>calcexp</p> </td>
+   <td><p>calcExp</p> </td>
    <td><p>queueExpression</p> </td>
    <td><p>实例</p> </td>
   </tr>
@@ -63,12 +61,12 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><p>valueCommitScript</p> </td>
-   <td><p>Autosavstart</p> </td>
+   <td><p>autoSaveSt</p> </td>
    <td><p>访问</p> </td>
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
-   <td><p>enableAutosave</p> </td>
+   <td><p>enableAutoSave</p> </td>
    <td><p>getElement</p> </td>
   </tr>
   <tr>
@@ -82,7 +80,7 @@ ht-degree: 4%
    <td><p>setAttribute</p> </td>
   </tr>
   <tr>
-   <td><p>格式化的值</p> </td>
+   <td><p>formattedValue</p> </td>
    <td><p>xdpRef</p> </td>
    <td><p>getGuideProp</p> </td>
   </tr>
@@ -119,7 +117,7 @@ ht-degree: 4%
   <tr>
    <td><p>validatePictureClauseMessage</p> </td>
    <td><p>项目</p> </td>
-   <td><p>非本地化标题</p> </td>
+   <td><p>nonLocalizedTitle</p> </td>
   </tr>
   <tr>
    <td><p>validationState</p> </td>
@@ -162,19 +160,19 @@ ht-degree: 4%
    <td><p>fracDigits</p> </td>
   </tr>
   <tr>
-   <td><p>clickStatus</p> </td>
-   <td><p>removeinstance</p> </td>
+   <td><p>clickStates</p> </td>
+   <td><p>removinstance</p> </td>
    <td><p>maxChars</p> </td>
   </tr>
   <tr>
    <td><p>showAsPopUp</p> </td>
-   <td><p>shortdescription</p> </td>
+   <td><p>shortDescription</p> </td>
    <td><p>execNavigationChangeExpression</p> </td>
   </tr>
   <tr>
    <td><p>多行</p> </td>
-   <td><p>详细描述</p> </td>
-   <td><p>executexpression</p> </td>
+   <td><p>longDescription</p> </td>
+   <td><p>executeExpression</p> </td>
   </tr>
   <tr>
    <td><p>visibleExp</p> </td>
@@ -217,8 +215,8 @@ ht-degree: 4%
    <td><p>sectionName</p> </td>
   </tr>
   <tr>
-   <td><p>submithpassword</p> </td>
-   <td><p>initializationChildren</p> </td>
+   <td><p>submitpassword</p> </td>
+   <td><p>initializechildren</p> </td>
    <td><p>sectionField</p> </td>
   </tr>
   <tr>
@@ -227,7 +225,7 @@ ht-degree: 4%
    <td><p>getSelectedIndex</p> </td>
   </tr>
   <tr>
-   <td><p>repeatablePanelPath</p> </td>
+   <td><p>Repeatepanelpath</p> </td>
    <td><p>getItemIdentifier</p> </td>
    <td><p>mobileLayout</p> </td>
   </tr>

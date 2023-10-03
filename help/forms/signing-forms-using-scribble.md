@@ -1,10 +1,13 @@
 ---
-title: 使用涂鸦签名对表单进行电子签名
-description: 使用涂写签名和签名步骤，轻松地对自适应Forms进行电子签名。 简化数字签名以提高效率。
+title: 如何使用涂鸦签名将电子签名应用于表单？
+description: 了解如何使用涂鸦签名将电子签名应用于表单。
+uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
+products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '726'
 ht-degree: 9%
 
 ---

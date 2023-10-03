@@ -1,13 +1,14 @@
 ---
-title: 通过电子邮件发送表单提交确认
+title: 如何在AEM Forms中通过电子邮件发送表单提交确认？
 description: AEM Forms允许您配置电子邮件提交操作，以在提交表单时向用户发送确认。
+uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---

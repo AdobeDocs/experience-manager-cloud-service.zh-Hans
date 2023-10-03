@@ -1,18 +1,17 @@
 ---
-title: 自适应Forms的布局功能
-seo-title: Layout capabilities of Adaptive Forms
+title: 自适应Forms的布局功能是什么？
 description: 自适应Forms在各种设备上的布局和外观受布局设置控制。 了解各种布局及其应用方式。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 2%
+source-wordcount: '859'
+ht-degree: 8%
 
 ---
 
 # 自适应Forms的布局功能 {#layout-capabilities-of-adaptive-forms}
 
-<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 
 | 版本 | 文章链接 |
@@ -38,29 +37,29 @@ Before learning about the different layout capabilities of Adaptive Forms, read 
 
 所有这些面板布局都定义在 `/libs/fd/af/layouts` 位置。
 
-要更改自适应表单的布局，请在以下位置使用创作模式 [!DNL Experience Manager].
+要更改自适应表单的布局，请在以下位置使用创作模式： [!DNL Experience Manager].
 
 ## [!UICONTROL 面板布局] {#panel-layout}
 
 表单作者可以将布局与自适应表单的每个面板（包括根面板）关联。
 
-面板布局位于 `/libs/fd/af/layouts/panel` 位置。 点按面板并选择 ![cmppr1](assets/configure-icon.svg) 查看面板属性。
+面板布局位于 `/libs/fd/af/layouts/panel` 位置。 点按面板并选择 ![cmppr1](assets/configure-icon.svg) 以查看面板属性。
 
 ![自适应表单的根面板的面板布局列表](assets/layouts.png)
 
-### [!UICONTROL 响应式 — 页面上的所有内容，无需导航] {#responsive-everything-on-one-page-without-navigation-br}
+### [!UICONTROL 响应 — 页面上的所有内容，无需导航] {#responsive-everything-on-one-page-without-navigation-br}
 
-使用此面板布局可创建响应式布局，该布局可调整到设备的屏幕大小，而无需任何专门的导航。
+使用此面板布局可创建响应式布局，该布局可调整设备的屏幕大小，而无需任何专门的导航。
 
 使用此布局，您可以放置多个 **[!UICONTROL 面板自适应表单]** 组件在面板中逐个显示。
 
-![使用响应式布局的表单，如小屏幕上所示](assets/responsive-layout.png)
+![使用小屏幕上显示的响应式布局的表单](assets/responsive-layout.png)
 
 ### [!UICONTROL 向导] {#wizard}
 
-使用此面板布局可在表单中提供引导式导航。 例如，当您要在表单中捕获必填信息时分步引导用户时，可使用此布局。
+使用此面板布局可在表单中提供引导式导航。 例如，当您希望在表单中捕获强制信息时使用此布局，同时逐步引导用户。
 
-使用 **[!UICONTROL 面板自适应表单]** 组件，用于在面板中提供分步导航。 使用此布局时，用户仅在当前步骤完成后才移至下一步
+使用 **[!UICONTROL 面板自适应表单]** 组件，可在面板中提供分步导航。 使用此布局时，用户仅在当前步骤完成后才会进入下一步
 
 ```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
@@ -70,7 +69,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ### [!UICONTROL 折叠] {#layout-for-accordion-design}
 
-使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 面板中具有折叠样式导航的组件。 使用此布局，您还可以创建可重复的面板。 可重复面板允许您根据需要动态添加或移除面板。 您可以定义面板重复的最小和最大次数。 此外，可以根据面板项中提供的信息来动态地确定面板的标题。
+使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 具有折叠样式导航的面板中的组件。 使用此布局，您还可以创建可重复的面板。 可重复面板允许您根据需要动态添加或移除面板。 您可以定义面板重复的最小和最大次数。 此外，可以根据面板项中提供的信息来动态确定面板的标题。
 
 摘要表达式可用于显示最终用户在最小化面板的标题中提供的值。
 
@@ -78,7 +77,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ### [!UICONTROL 选项卡式布局 — 选项卡显示在左侧]{#tabbed-layout-tabs-appear-on-the-left}
 
-使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 带选项卡导航的面板中的组件。 选项卡位于面板内容的左侧。
+使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 具有选项卡导航的面板中的组件。 选项卡位于面板内容的左侧。
 
 ![在选项卡式布局中，选项卡显示在左侧](assets/tabs-on-left.png)
 
@@ -88,7 +87,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 具有选项卡导航的面板中的组件。 选项卡位于面板内容的顶部。
 
-![带有顶部选项卡的自适应Forms中的选项卡式布局](assets/tabs-on-top.png)
+![带顶部选项卡的自适应Forms中的选项卡式布局](assets/tabs-on-top.png)
 
 ## 移动设备布局 {#mobile-layouts}
 
@@ -100,17 +99,17 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![自适应Forms中的移动设备布局列表](assets/mobile-navigation.png)
 
-选择 **[!UICONTROL 将响应布局的可导航项目添加到移动设备菜单]** 选项以查看可用于移动设备布局中面板的导航选项。 仅当您选择时，可导航选项才可见 **[!UICONTROL 响应式]** 面板布局。
+选择 **[!UICONTROL 将响应布局的可导航项目添加到移动菜单]** 选项以查看适用于移动设备布局中面板的可导航选项。 仅当您选择时，可导航选项才可见 **[!UICONTROL 响应式]** 面板布局。
 
-使用移动设备布局时，可通过点按访问各种表单面板的表单菜单 ![aem6forms_form_menu](assets/rail-icon.svg) 图标。
+使用移动设备布局时，通过点按可访问各种表单面板的表单菜单 ![aem6forms_form_menu](assets/rail-icon.svg) 图标。
 
-### [!UICONTROL 表单标题中具有面板标题的布局] {#layout-with-panel-titles-in-the-form-header}
+### [!UICONTROL 在表单标题中使用面板标题进行布局] {#layout-with-panel-titles-in-the-form-header}
 
 顾名思义，此布局显示面板标题以及导航菜单和导航栏。 此布局还提供用于导航的“下一个”和“上一个”图标。
 
-![在表单标题中具有面板标题的移动布局](assets/mobile-layout1.png)
+![移动版面以及表单标题中的面板标题](assets/mobile-layout1.png)
 
-### [!UICONTROL 表单标题中没有面板标题的布局]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL 在表单标题中没有面板标题的布局]{#layout-without-panel-titles-in-the-form-header}
 
 顾名思义，此布局仅显示没有面板标题的导航菜单和导航栏。 此布局还提供用于导航的“下一个”和“上一个”图标。
 

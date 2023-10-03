@@ -1,11 +1,11 @@
 ---
-title: 将对新区域设置的支持添加到自适应表单
-description: AEM Forms允许您添加新的区域设置来本地化自适应表单。 英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和朝鲜语(ko-KR)语言环境。
+title: 如何为自适应表单添加新区域设置支持？
+description: 对于自适应Forms，除了现成可用的语言之外，您还可以为更多语言添加区域设置。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 23f915f0e2e33b9cf1313d15cb98a0a4f8243746
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
 source-wordcount: '1259'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德�
 
 ## 添加对新区域设置的支持 {#add-support-for-new-locales}
 
-执行以下步骤来添加对区域设置的支持：
+执行以下步骤来添加对新区域设置的支持：
 
 1. [为不受支持的区域设置添加本地化支持](#add-localization-support-for-non-supported-locales)
 1. [在自适应Forms中使用添加的区域设置](#use-added-locale-in-af)
@@ -41,7 +41,7 @@ AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德�
 
 AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)本地化自适应Forms内容。
 
-添加对区域设置的支持：
+要在自适应Forms运行时添加新区域设置支持，请执行以下操作：
 
 1. [克隆存储库](#clone-the-repository)
 1. [向GuideLocalizationService服务添加区域设置](#add-a-locale-to-the-guide-localization-service)
@@ -69,7 +69,7 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 1. 在UI.content文件夹中，创建 `etc/clientlibs` 文件夹。
 1. 进一步创建名为的文件夹 `locale-name` 下 `etc/clientlibs` 用作xfa和af clientlibs的容器。
 
-##### 3.1在locale-name文件夹中为区域设置添加XFA客户端库
+##### 3.1在区域设置名称文件夹中添加区域设置的XFA客户端库
 
 创建名为的节点 `[locale-name]_xfa` 并键入为 `cq:ClientLibraryFolder` 下 `etc/clientlibs/locale_name`，使用类别 `xfaforms.I18N.<locale>`，并添加以下文件：
 
@@ -148,7 +148,7 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 
 如果未提供区域设置信息，则自适应表单将采用表单的原始语言交付。 原始语言是开发自适应表单时使用的语言。
 
-Get [示例客户端库](/help/forms/assets/locale-support-sample.zip) 以添加对新区域设置的支持。 您需要以所需的区域设置更改文件夹的内容。
+获取 [示例客户端库](/help/forms/assets/locale-support-sample.zip) 以添加对新区域设置的支持。 您需要以所需的区域设置更改文件夹的内容。
 
 ## 支持新本地化的最佳实践 {#best-practices}
 

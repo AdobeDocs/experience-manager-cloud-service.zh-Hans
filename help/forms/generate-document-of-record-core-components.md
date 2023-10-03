@@ -1,10 +1,10 @@
 ---
-title: 为自适应Forms生成记录文档
-description: 介绍如何为自适应Forms的记录文档(DoR)生成模板。
+title: 如何为自适应Forms生成记录文档？
+description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '3105'
+source-wordcount: '3107'
 ht-degree: 2%
 
 ---

@@ -1,20 +1,20 @@
 ---
 title: 为自适应表单设计 JSON 架构
-description: 了解如何使用JSON架构作为表单模型创建自适应Forms。 您可以使用现有JSON架构创建自适应Forms。 深入了解JSON模式示例，在JSON模式定义中预配置字段，限制自适应表单组件的可接受值，并了解不受支持的结构。
+description: 了解如何为自适应表单创建JSON架构，并根据该架构创建自适应表单以生成架构投诉数据。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 5%
+source-wordcount: '1343'
+ht-degree: 9%
 
 ---
 
 # 为自适应表单设计 JSON 架构 {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> Adobe建议使用现代化的、可扩展的数据捕获 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 对象 [创建新的自适应Forms](/help/forms/creating-adaptive-form-core-components.md) 或 [将自适应Forms添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). 这些组件在创建自适应Forms方面实现了重大进步，确保了令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |

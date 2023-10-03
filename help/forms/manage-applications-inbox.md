@@ -1,13 +1,13 @@
 ---
-title: 在AEM收件箱中管理Forms应用程序和任务
+title: 如何管理AEM收件箱中的表单应用程序和任务？
 description: AEM收件箱允许您通过提交应用程序来启动以Forms为中心的工作流，并管理任务。
+uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
+source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1149'
 ht-degree: 3%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 3%
 
 # 在AEM收件箱中管理Forms应用程序和任务{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-启动或触发以Forms为中心的工作流的多种方法之一，是通过AEM收件箱中的应用程序。 您需要创建工作流应用程序，以使Forms工作流可用作收件箱中的应用程序。 有关工作流应用程序和其他启动Forms工作流方法的更多信息，请参阅 [在OSGi上启动以Forms为中心的工作流](aem-forms-workflow.md#launch).
+启动或触发以Forms为中心的工作流的多种方法之一，是通过AEM收件箱中的应用程序。 您需要创建工作流应用程序，以使Forms Workflow在收件箱中可以作为应用程序使用。 有关工作流应用程序和其他启动Forms工作流方法的更多信息，请参阅 [在OSGi上启动以Forms为中心的工作流](aem-forms-workflow.md#launch).
 
-此外，AEM收件箱可整合来自各种AEM组件(包括Forms工作流程)的通知和任务。 触发包含“分配”任务步骤的表单工作流时，关联的应用程序将作为任务列在被分配人的收件箱中。 如果被分派人是组，则该任务会出现在所有组成员的“收件箱”中，直到个人声明或委派该任务为止。
+此外，AEM收件箱可整合来自各种AEM组件(包括Forms工作流程)的通知和任务。 触发包含“分配”Forms Workflow步骤的任务时，关联的应用程序将作为任务列在被分配人的收件箱中。 如果被分派人是组，则该任务会出现在所有组成员的“收件箱”中，直到个人声明或委派该任务为止。
 
 收件箱用户界面提供列表和日历视图以查看任务。 您还可以配置视图设置。 您可以根据各种参数筛选任务。 有关视图和筛选器的详细信息，请参阅 [您的收件箱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
 
-总之，收件箱允许您创建新应用程序并管理分配的任务。
+总之，收件箱允许您创建应用程序并管理分配的任务。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 ## 管理任务 {#manage-tasks}
 
-当触发Forms工作流并且您是被分配人或被分配人组的一部分时，您的收件箱中会显示一个任务。 您可以在“收件箱”中查看任务详细信息并对任务执行可用操作。
+当Forms工作流触发器触发并且您是被分配人或被分配人组的一部分时，任务会出现在您的收件箱中。 您可以在“收件箱”中查看任务详细信息并对任务执行可用操作。
 
 ### 报销申请或委派任务 {#claim-or-delegate-tasks}
 
@@ -57,7 +57,7 @@ ht-degree: 3%
 
 ### 查看详细信息并对任务执行操作 {#view-details-and-perform-actions-on-tasks}
 
-打开任务时，可以查看任务详细信息并执行可用操作。 任务可用的操作在关联的Forms工作流的分配任务步骤中定义。
+打开任务时，可以查看任务详细信息并执行可用操作。 任务可用的操作在相关Forms Workflow的“分配”任务步骤中定义。
 
 1. 点按以选择任务的缩略图。 用于打开或委派选定任务的选项将显示在顶部。
 1. 点按 **打开** 查看任务详细信息并采取操作。 此时将打开详细的任务视图。 在此视图中，您可以查看任务详细信息并对任务执行操作。
@@ -99,7 +99,7 @@ ht-degree: 3%
 
 ### 查看已完成的任务 {#view-completed-tasks}
 
-AEM收件箱仅显示活动任务。 已完成的任务未出现在列表中。 但是，您可以使用收件箱筛选器根据多个参数（如任务类型、状态、开始和结束日期等）筛选任务。 要查看已完成的任务，请执行以下操作：
+AEM收件箱仅显示活动任务。 已完成的任务未出现在列表中。 但是，您可以使用收件箱筛选器根据多个参数（如任务类型、状态、开始和结束日期）筛选任务。 要查看已完成的任务，请执行以下操作：
 
 1. 在AEM收件箱中，点按 ![toggle-side-panel1](assets/toggle-side-panel1.png) 以打开过滤器选择器。
 1. 点按 **[!UICONTROL 任务状态]** 可折叠项和选择 **[!UICONTROL 完成]**. 此时会显示所有已完成的任务。
@@ -122,7 +122,7 @@ AEM收件箱仅显示活动任务。 已完成的任务未出现在列表中。 
 
 ### 无法在AEM收件箱中查看与AEM工作流相关的项目 {#unable-to-see-aem-worklow-items}
 
-工作流模型所有者无法在AEM收件箱中查看与AEM Workflow相关的项目。 要解决此问题，请将以下列出的索引添加到AEM存储库中，然后重新构建该索引。
+工作流模型所有者无法在AEM收件箱中查看与AEM Workflow相关的项目。 要解决此问题，请将以下列出的索引添加到AEM资料档案库中，并重新构建该索引。
 
 1. 使用下列方法之一添加索引：
 

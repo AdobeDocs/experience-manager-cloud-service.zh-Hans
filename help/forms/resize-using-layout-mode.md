@@ -1,13 +1,13 @@
 ---
-title: 使用布局模式调整自适应Forms的组件大小
-description: 使用在布局模式下可用的响应式网格定义组件的位置。 了解如何访问布局模式、调整组件大小、调整面板大小、为面板定义多列布局、为旧响应布局启用新响应式网格以及为具有旧响应式布局的表单禁用布局模式。
+title: 如何使用布局模式调整自适应Forms的组件大小？
+description: 定义AEM Forms组件的位置，了解如何访问布局模式、调整组件大小、调整面板大小以及定义面板的多列布局。
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1134'
 ht-degree: 6%
 
 ---

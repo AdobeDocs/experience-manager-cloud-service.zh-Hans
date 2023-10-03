@@ -1,12 +1,12 @@
 ---
-title: 导入或导出自适应Forms和AEM Forms资源
-description: 是否希望将自适应Forms和资源迁移到AEM实例或从中迁移它们？ 在此处了解如何从导入和导出自适应Forms、PDF forms、主题和其他支持资源 [!DNL AEM Forms] 实例。
-seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
+title: 了解如何在上导入、导出和组织自适应Forms、PDF forms和其他资源[!DNL AEM Forms] 实例
+description: 了解如何在AEM实例之间迁移自适应Forms、PDF forms、主题和其他支持资源。
 topic-tags: forms-manager
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 0%
+source-wordcount: '1199'
+ht-degree: 1%
 
 ---
 

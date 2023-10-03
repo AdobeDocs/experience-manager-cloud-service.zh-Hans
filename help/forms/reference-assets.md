@@ -1,45 +1,43 @@
 ---
-title: 引用主题
-seo-title: Reference Themes
-description: AEM Forms提供了自适应表单主题，您可以从Software Distribution获取这些主题，并使用这些主题来设置表单的样式。
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
+title: 参考主题
+description: 使用提供的参考自适应表单主题、模板和表单数据模型快速入门。
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: 575e9836d676cf6711e039a5bb6860ad04324d60
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 3%
+source-wordcount: '510'
+ht-degree: 7%
 
 ---
 
 # Formsas a Cloud Service的参考资源 {#reference-themes}
 
-通过安装 [引用资源包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助于快速启动和加速自适应Forms开发。 您可以使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 以将此包部署到您的Formsas a Cloud Service环境。
+您可以通过安装参考主题、模板和表单数据模型 [参考资源包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助于快速启动和加速自适应Forms开发。 您可以使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 以将此包部署到您的Formsas a Cloud Service环境。
 该资源包中包含的参考资源包括：
 
 ## 主题 {#themes}
 
-[主题](/help/forms/themes.md) 让您能够在不了解CSS的情况下为表单设置样式。 包括以下主题：
+[主题](/help/forms/themes.md) 让您能够在对CSS没有深入了解的情况下为表单设置样式。 包括以下主题：
 
-* Beryl
+* 贝里尔
 * 宁静
-* Ultramarine
-* 城市
+* 超海洋
+* 城镇
 * Canva
 
-每个主题都包含独特而优雅的样式，可用于为用户创建令人愉悦的自适应表单。 它包含面板、文本框、数字框、单选按钮、表格和开关等选择器的独特样式。 这些主题中的样式根据需求而定。 例如，在特定场景中，您需要使用简洁字体的极简主题。 都市化主题让您拥有这样的外观。
+每个主题都包含独特而优雅的样式，可用于为用户创建令人愉悦的自适应表单。 它包含面板、文本框、数字框、单选按钮、表格和开关等选择器的独特样式。 这些主题中的样式是根据需求而定的。 例如，在特定场景中，您需要使用简洁字体的最小主题。 都市化主题可让您获得那种面貌。
 
-![引用主题](/help/forms/assets/ref-themes.png)
+![参考主题](/help/forms/assets/ref-themes.png)
 
-此包中包含的主题是响应式的，并且这些主题中的样式是为移动和桌面显示定义的。 各种设备上的大多数现代浏览器都可以轻松渲染应用了这些主题之一的表单。
+此包中包含的主题是响应式的，这些主题中的样式是为移动和桌面显示定义的。 各种设备上的大多数现代浏览器都可以轻松渲染应用了这些主题之一的表单。
 
 有关安装软件包的更多信息，请参阅 [如何使用包](/help/implementing/developing/tools/package-manager.md).
 
-### Beryl {#beryl}
+### 贝里尔 {#beryl}
 
-We.Gov自适应表单使用Beryl主题，强调使用背景图像、透明度以及大平面图标。 在下面的屏幕快照中，您可以看到Beryl主题的外观以及它如何增强表单的样式。
+We.Gov自适应表单使用Beryl主题，并强调使用背景图像、透明度以及大平面图标。 在下面的屏幕截图中，您可以看到贝里尔主题的外观，以及它如何增强表单的样式。
 
-![Beryl主题](/help/forms/assets/beryl.png)
+![柏瑞尔主题](/help/forms/assets/beryl.png)
 
 <!--[Click to enlarge
 
@@ -74,22 +72,22 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 ### 宁静 {#tranquil}
 
-宁静主题提供宁静颜色方案的浅色和深色阴影，以突出显示表单的不同组件。 例如，单选按钮、面板和选项卡具有不同的绿色阴影。
+宁静主题提供宁静颜色方案的浅色和深色，以突出显示表单的不同组件。 例如，单选按钮、面板和选项卡具有不同的绿色阴影。
 
-![宁静主题](/help/forms/assets/tranquil.png)
+![宁静的主题](/help/forms/assets/tranquil.png)
 
 <!--[Click to enlarge](assets/tranquil-1.png)-->
 
-### Ultramarine {#ultramarine}
+### 超海洋 {#ultramarine}
 
-超海洋主题使用深蓝色阴影突出显示选项卡、面板、文本框和按钮等组件。
+Ultraminary主题使用深蓝色阴影突出显示选项卡、面板、文本框和按钮等组件。
 
 ![超海洋主题](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
-### 城市 {#urbane}
+### 城镇 {#urbane}
 
-都市化主题强调您形态的简约和功能外观。 将Urbane主题应用于表单时，您可以看到组件是平面的。 这些面板轮廓细腻，外观新颖。
+都市化主题强调您的外表应具有极简和功能性的风格。 将Urbane主题应用于表单时，您可以看到组件是平面的。 这些面板具有细的外框，可创建现代外观。
 
 ![城市主题](/help/forms/assets/urbane.png)
 <!--[Click to enlarge](assets/urbane-1.png)-->
@@ -104,7 +102,7 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ## 模板
 
-通过模板，您可以拖放组件以定义自适应表单的初始结构。 包括以下资产：
+模板允许您拖放组件以定义自适应表单的初始结构。 包括以下资产：
 
 ### 基本 {#basic}
 
@@ -126,6 +124,6 @@ Microsoft Dynamics 365数据模型可帮助您使用Microsoft Dynamics 365作为
 
 ### Salesforce
 
-Salesforce数据模型可帮助您使用Salesforce作为数据源。 它还提供示例服务，用于读取、更新、删除数据以及将数据添加到Salesforce。
+Salesforce数据模型可帮助您使用Salesforce作为数据源。 它还提供示例服务，用于读取、更新、删除和向Salesforce添加数据。
 
 ![Salesforce表单数据模型](/help/forms/assets/salesforce-fdm.png)

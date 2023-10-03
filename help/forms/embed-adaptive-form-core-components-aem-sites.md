@@ -1,12 +1,12 @@
 ---
-title: 使用AEM Sites编辑器创建或添加自适应表单
-description: 您可以在AEM Sites页面中使用自适应表单（核心组件）来填写和提交表单，而无需离开AEM Sites页面。
+title: 如何在AEM Sites页面中添加或创建自适应表单核心组件？
+description: 在AEM Sites页面中使用自适应表单核心组件填写和提交表单，而不离开AEM Sites页面。
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2131'
 ht-degree: 6%
 
 ---

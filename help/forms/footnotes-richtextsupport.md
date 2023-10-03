@@ -1,10 +1,11 @@
 ---
-title: 脚注对自适应Forms的支持
-description: 使用富文本信息脚注增强自适应Forms。 改善用户体验和参与。
-source-git-commit: 6dd34937a8aeb6c7ddfc0fb1180a112de534dd4b
+title: 自适应Forms中的脚注支持
+description: 对自适应表单中的脚注使用富文本编辑器(RTE) 。
+exl-id: f04dae84-daab-42f8-876f-02fe426f62be
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 12%
+source-wordcount: '438'
+ht-degree: 13%
 
 ---
 

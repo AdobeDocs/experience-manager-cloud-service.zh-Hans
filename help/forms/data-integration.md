@@ -1,9 +1,10 @@
 ---
-title: 将AEM Forms连接到数据库
-description: 您可以从以下位置检索数据并将其保存到RESTful Web服务、基于SOAP的Web服务和OData服务 [!DNL AEM Forms] as a Cloud Service。 该服务提供了专用工具，用于检索、测试、验证数据并将其发送到各种类型的数据源。
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+title: 如何将数据库连接到 [!DNL AEM Forms] as a Cloud Service？
+description: 从自适应表单或AEM Workflow中检索数据并将其保存到RESTful Web服务、基于SOAP的Web服务和OData服务。
+exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
+source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '555'
 ht-degree: 2%
 
 ---

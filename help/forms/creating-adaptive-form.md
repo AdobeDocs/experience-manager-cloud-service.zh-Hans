@@ -1,14 +1,14 @@
 ---
-title: 如何创建自适应Forms
-description: 了解如何使用创建自适应表单 [!DNL Experience Manager Forms]. 自适应Forms是响应式HTML5表单，可简化信息收集和处理。 深入了解如何基于表单数据模型和XML或JSON架构创建自适应表单。
+title: 如何创建自适应Forms？
+description: 了解如何创建自适应表单以简化信息收集和处理。 此外，了解如何基于表单数据模型创建自适应表单。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 89%
+source-wordcount: '1556'
+ht-degree: 93%
 
 ---
 
@@ -72,7 +72,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 
 
-## 创建自适应表单 （基础组件） {#create-an-adaptive-form-foundation-components}
+## 创建自适应表单 (Foundation 组件) {#create-an-adaptive-form-foundation-components}
 
 1. 访问 [!DNL Experience Manager Forms] 创作实例。它可以是云实例或本地开发实例。
 
@@ -100,7 +100,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
    * **表单数据模型**：[表单数据模型](data-integration.md)可让您将来自不同的数据源的实体和服务集成到自适应表单中。如果您创建的自适应表单需要从多个数据源获取数据和向多个数据源写入数据，请选择表单数据模型。
 
-   * **JSON 架构**：[JSON 架构](adaptive-form-json-schema-form-model.md)表示组织中的后端系统生成或使用的数据所在的结构。您可以将架构与自适应表单相关联，并使用其元素将动态内容添加到自适应表单。在创作自适应Forms时，可在内容浏览器的数据模型对象选项卡中使用架构的元素，并且所有字段也都已添加到新创建的自适应表单中。
+   * **JSON 架构**：[JSON 架构](adaptive-form-json-schema-form-model.md)表示组织中的后端系统生成或使用的数据所在的结构。您可以将架构与自适应表单相关联，并使用其元素将动态内容添加到自适应表单。在创作自适应表单时，可在内容浏览器的“数据模型对象”选项卡中使用架构的元素，并且所有字段也将添加到新创建的自适应表单中。
 
    默认情况下，将选定数据模型的所有字段。在创建自适应表单时，所有选定的数据模型字段将转换为相应的自适应表单组件。该向导中的复选框可让您仅选择那些应包含在自适应表单中的字段。
 
@@ -124,7 +124,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    * **[!UICONTROL 名称：]**&#x200B;指定表单的名称。在存储库中创建具有指定名称的节点。在开始键入标题时，名称字段的值将自动生成。您可以更改建议的值。名称字段只能包含字母数字字符、连字符和下划线。所有无效的输入都将替换为连字符。
    * **[!UICONTROL 路径：]**&#x200B;指定用于保存自适应表单的位置。您可以直接将自适应表单保存在 `/content/dam/formsanddocuments`，也可以创建一个文件夹（例如 `/content/dam/formsanddocuments/adaptiveforms`）来保存自适应表单。确保先创建文件夹，然后再在路径中使用它。**[!UICONTROL 路径]**&#x200B;字段不会自动创建文件夹。
 
-1. 点按&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。它还会显示侧栏，以根据需要自定义新创建的表单。
+1. 点按&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。它还显示边栏，可用于根据需要自定义新创建的表单。
 
    根据自适应表单的类型，关联的 <!--XFA form template, XML schema or --> JSON 架构或表单数据模型显示在边栏的&#x200B;**[!UICONTROL 内容浏览器]**&#x200B;的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中。您还可以拖放这些元素来生成自适应表单。
 

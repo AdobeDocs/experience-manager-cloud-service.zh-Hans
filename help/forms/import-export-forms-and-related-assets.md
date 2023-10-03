@@ -1,11 +1,9 @@
 ---
-title: 导入和导出资源
-seo-title: Import and export assets to [!DNL AEM Forms]
-description: 您可以将自适应Forms和相关资源导入和导出到AEM实例。 这有助于迁移表单或跨系统移动表单。
-seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+title: 如何将资源导入和导出到 [!DNL AEM Forms]？
+description: 了解如何将DocuSign与自适应表单一起使用来收集电子签名。
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1314'
 ht-degree: 1%
 
 ---

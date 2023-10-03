@@ -1,12 +1,12 @@
 ---
-title: AEM 6.5 Forms与AEMCloud Service之间的差异
-description: 您是否是Experience Manager Forms用户，并想要升级到Adobe Experience Manager Formsas a Cloud Service？ 比较AEM 6.5 Forms和AEMCloud Services，并了解在升级或迁移到Cloud Service之前最显着的更改。
+title: AEM 6.5 Forms与AEMCloud Service之间有何区别？
+description: 比较AEM 6.5 Forms和AEMCloud Services，并了解在升级或迁移到Cloud Service之前最显着的更改。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: fa71eb6317314dc8c3540cd0ebb8afaa75d55a59
+source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1350'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 * 该服务具有云原生架构，允许根据负载自动扩展、升级时无需停机时间、频繁推出新功能和更新后以及优化拓扑以最大程度地提高弹性和效率。
 
-* 该服务不包含将数据存储到Adobe Experience ManagerCloud Service实例的提交操作，因此非常安全。 通过表单捕获的数据将直接发送到配置的数据存储。
+* 该服务不包含将数据存储到Adobe Experience ManagerCloud Service实例的提交操作，使其超级安全。 通过表单捕获的数据将直接发送到配置的数据存储。
 
 * 此外，还包括一个免费的CDN（内容分发网络），可帮助您更快地交付和渲染表单。
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 * 使用 [AEM Formsas a Cloud Service迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md) 准备和迁移自适应Forms、主题、模板和云配置，从 <!-- AEM 6.3 Forms--> OSGi上的AEM 6.4 Forms和OSGi上的AEM 6.5 Forms [!DNL AEM] as a Cloud Service。 使用 [项目的Git存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 以导入现有的自适应表单模板。
 
-* 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [联系支持团队](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 启用用于发送电子邮件的端口并为环境启用SMTP协议。
+* 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [联系支持团队](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 启用端口以发送电子邮件，并为您的环境启用SMTP协议。
 
 ## 本地化
 
-* 本地化的自适应Forms的URL约定现在支持在URL中指定区域设置。 新的URL约定支持在Dispatcher或CDN上缓存本地化的表单。 在Cloud Service环境中，使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 请求自适应表单的本地化版本，而不是 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
+* 本地化自适应Forms的URL约定现在支持在URL中指定区域设置。 新的URL约定支持在Dispatcher或CDN上缓存本地化的表单。 在Cloud Service环境中，使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 请求自适应表单的本地化版本，而不是 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
 * Adobe建议使用Dispatcher或CDN缓存。 它有助于提高预填充表单的渲染速度。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 * **预填充服务：** 默认情况下，预填充服务在客户端将数据与自适应表单合并，而不是在AEM 6.5 Forms中合并服务器上的数据。 该功能有助于缩短预填充自适应表单所需的时间。 您可以始终将配置为在Adobe Experience Manager Forms服务器上运行合并操作。
 
-* **提交操作：** 此 **电子邮件** 提交操作提供了选项，用于发送附件和使用电子邮件附加记录文档(DoR)。 您可以用它代替 **作为PDF发送电子邮件** 操作在AEM 6.5 Forms中可用。
+* **提交操作：** 此 **电子邮件** 提交操作提供了选项，用于发送附件和使用电子邮件附加记录文档(DoR)。 您可以使用它来代替 **作为PDF发送电子邮件** 操作在AEM 6.5 Forms中可用。
 
 * **automated forms conversion服务**：服务不提供Automated forms conversion服务的元模型。 您可以 [从Automated forms conversion服务文档下载](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
 
@@ -76,25 +76,27 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 * **文档操作API（汇编程序服务）**：
 
-   * 依赖文档服务或应用程序的操作不可用。 例如，不支持Microsoft Word到PDF、Microsoft Excel到PDF、HTML到PDF、PostScript (PS)到PDF、XDP到PDF forms。 这些操作分别依赖于Microsoft Office、Adobe Acrobat、AdobeDistiller和Forms Document Service。
+   * 依赖文档服务或应用程序的操作不可用。 例如，不支持Microsoft®Word到PDF、Microsoft®Excel到PDF、HTML到PDF、PostScript (PS)到PDF、XDP到PDF forms。 这些操作分别依赖于Microsoft®Office、Adobe Acrobat、AdobeDistiller和Forms Document Service。
 
-   * 在将非PDF格式的文档与Communications Document Manipulation API结合使用之前，请将它们转换为PDF格式。 例如，如果您的文档为Microsoft Office、HTML、PostScript (PS)、XDP格式，则在将这些文档与PDF文档一起使用之前，请将这些文档转换为PDF格式。 您可以使用 [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) 转换的服务。
+   * 在将非PDF格式的文档与Communications Document Manipulation API结合使用之前，请将它们转换为PDF格式。 例如，如果您的文档为Microsoft® Office、HTML、PostScript (PS)、XDP格式，则在将这些文档与PDF文档一起使用之前，请将这些文档转换为PDF格式。 您可以使用 [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) 转换的服务。
 
-* 您可以使用AEM 6.5 Forms环境进行数字签名、加密、Reader扩展、发送到打印机、转换PDF和条形码Forms服务。
+   * 您可以使用AEM 6.5 Forms环境进行数字签名、加密、Reader扩展、发送到打印机、转换PDF和条形码Forms服务。
 
 
 ## 数据集成（表单数据模型）
 
-* 该服务还支持Microsoft Dynamics、SalesForce、基于SOAP的Web服务和支持OData的服务。
+* 该服务还支持JDBC连接器、Microsoft®Dynamics、SalesForce、基于SOAP的Web服务和支持OData的服务。
 
 * 您还可以连接AEM用户配置文件以检索和更新用户信息。
 
 * Forms数据模型仅支持HTTP和HTTPS端点提交数据。 此服务不支持REST连接器的双向SSL和SOAP数据源的基于x509证书的身份验证。
 
-* Formsas a Cloud Service允许将Microsoft Azure Blob、Microsoft Sharepoint、Microsoft OneDrive以及支持常规CRUD（创建、读取、更新和删除）操作的服务用作数据存储，同时支持Open API规范2.0和Open API 3.0规范。
+* Formsas a Cloud Service允许将Microsoft®Azure Blob、Microsoft®Sharepoint、Microsoft®OneDrive以及支持常规CRUD（创建、读取、更新和删除）操作的服务用作数据存储，同时支持Open API规范2.0和Open API 3.0规范。
 
 
 ## 电子签名
+
+* 该服务提供了与Adobe Sign的OOTB集成，并支持DocuSign进行电子签名。
 
 * 该服务还支持Adobe Sign角色。 您可以在自适应Forms编辑器中为商业用户配置角色，以便轻松配置签名工作流。
 
@@ -105,7 +107,7 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
    * 将基于XDP的表单渲染为HTML5 Forms。 该服务不支持HTML5 Forms。
 
-   * 离线捕获数据，并在下次您返回在线时对其进行同步 [AEM Forms工作区](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 应用程序。
+   * 离线捕获数据，并在您下次使用 [AEM Forms工作区](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) 应用程序。
 
 ## 交互式通信
 

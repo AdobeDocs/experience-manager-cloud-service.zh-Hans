@@ -1,17 +1,13 @@
 ---
-title: 动态填充下拉列表
-seo-title: Dynamically populating drop-down lists
-description: 根据某些逻辑动态填充下拉列表的步骤
-seo-description: Procedure to dynamically populate drop-down lists based on some logic
+title: 如何动态填充下拉列表？
+description: 了解如何创建层叠列表框或动态填充下拉列表。
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -28,14 +24,14 @@ ht-degree: 0%
 
 ## 动态填充下拉列表的过程 {#procedure-to-dynamically-populate-drop-down-lists}
 
-假设您想在场景中填充 **状态** 下拉列表中选定的值 **国家/地区** 下拉列表。 如果您在 **国家/地区** 下拉列表， **状态** 下拉列表显示澳大利亚境内的州。 以下过程介绍了如何完成此任务。
+假设您想在场景中填充 **状态** 下拉列表中选定的值 **国家/地区** 下拉列表。 如果您在 **国家/地区** 下拉列表， **状态** 下拉列表显示了澳大利亚境内的各个州。 以下过程介绍了如何完成此任务。
 
 1. 创建包含以下模块的项目：
 
-   * 包含用于填充下拉列表的逻辑的包，在本例中为servlet。
-   * 内容，其中嵌入了.jar文件并具有下拉资源。 servlet指向此资源。
+   * 包含用于填充下拉列表的逻辑的捆绑包，在本例中为servlet。
+   * 内容，嵌入了.jar文件并具有下拉资源。 servlet指向此资源。
 
-1. 编写基于请求参数Country的servlet，该参数返回一个数组，其中包含国家/地区内的州名。
+1. 编写基于请求参数Country的servlet，该参数返回一个包含国家/地区内州名的数组。
 
    ```java
    @Component(metatype = false)
@@ -146,14 +142,14 @@ ht-degree: 0%
    }
    ```
 
-1. 在应用程序中的特定文件夹层次结构下创建一个下拉节点（例如，在/apps/myfolder/demo下创建一个节点）。 确保 `sling:resourceType` 节点的参数与servlet指向的参数相同(/apps/populatedropdown)。
+1. 在应用程序中的特定文件夹层次结构下创建下拉节点（例如，在/apps/myfolder/demo下创建节点）。 确保 `sling:resourceType` 节点的参数与servlet指向的参数相同(/apps/populatedropdown)。
 
    ![创建下拉节点](assets/dropdown-node.png)
 
 1. 将内容节点打包，并将.jar文件嵌入到特定位置（例如/apps/myfolder/demo/install/）。 在服务器上部署相同的文件。
-1. 创建一个自适应表单，并在其中添加两个下拉列表：国家/地区和州/省。 国家/地区列表可包含国家/地区的名称。 “州”列表可动态填充您在第一个列表中选择的国家/地区的州名。
+1. 创建自适应表单并向其中添加两个下拉列表：国家/地区和州。 国家/地区列表可包含国家/地区名称。 “州”列表可动态填充您在第一个列表中选择的国家的州名。
 
-   添加要在“国家/地区”列表中显示的国家/地区名称。 在“州”列表中，添加一个脚本，以根据“国家/地区”列表中的国家/地区名称填充该脚本。
+   添加要在国家/地区列表中显示的国家/地区名称。 在“州”列表中，添加一个脚本，以根据“国家/地区”列表中的国家/地区名称填充该脚本。
 
    ![添加国家/地区名称](assets/country-dropdown.png) ![添加脚本以填充状态名称](assets/state-dropdown.png) ![要收集的“国家/地区”和“州/省”下拉列表](assets/2dropdowns.png)
 
