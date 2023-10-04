@@ -3,13 +3,13 @@ title: 创作内容片段
 description: 了解如何为内容片段创作内容，然后根据用途创建该内容的变体。这让投放 Headless 和创造页面变得更加灵活。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
+source-git-commit: e92e0d76ed5aa904c3e16bcfda13650fb6a8b5b6
 workflow-type: tm+mt
-source-wordcount: '2249'
-ht-degree: 97%
+source-wordcount: '2253'
+ht-degree: 96%
 
 ---
-
 
 # 创作内容片段 {#authoring-content-fragments}
 
@@ -32,23 +32,9 @@ ht-degree: 97%
 * 可[查看和打开父引用](#view-parent-references)。
 * 内容片段及其引用的分层视图，其中使用[结构树](#structure-tree)。
 
->[!CAUTION]
+>[!WARNING]
 >
 >*只有**在线* Adobe Experience Manager (AEM) as a Cloud Service 中有此部分中所述的编辑器可用。
-
->[!CAUTION]
->
->要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。如果您遇到问题，请联系您的系统管理员。
-> 
->例如，如果您没有 `edit` 权限，则编辑器将是只读的。
-
->[!NOTE]
->
->有关[原始内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md)的完整信息，请参阅资源文档 - 从&#x200B;**资源**&#x200B;控制台和&#x200B;**内容片段**&#x200B;控制台均可找到此编辑器。
-
->[!NOTE]
->
->如果需要，您的项目团队可自定义该编辑器。有关进一步详细信息，请参阅[自定义内容片段控制台和编辑器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。
 
 ## 内容片段编辑器 {#content-fragment-editor}
 
@@ -76,12 +62,6 @@ ht-degree: 97%
    * 如果在模型中定义了&#x200B;**选项卡占位符**&#x200B;字段，则可使用这些字段进行导航；要么水平地显示它们，要么作为下拉列表显示它们
 
 ![内容片段编辑器 – 概述](assets/cf-authoring-overview.png)
-
->[!CAUTION]
->
->内容片段模型通常可以定义名为&#x200B;**标题**&#x200B;和&#x200B;**描述**&#x200B;的数据字段。如果存在这些字段，则它们是用户定义的字段，并在编辑片段时可在&#x200B;*中央面板*&#x200B;中更新这些字段。
->
->内容片段及其变体也具有名为&#x200B;**标题**&#x200B;和&#x200B;**描述**&#x200B;的元数据字段（变体属性）。这些字段是任何内容片段的组成部分，并在创建该片段时中定义这些字段。在编辑片段时可在&#x200B;*右侧面板*&#x200B;中更新这些字段。
 
 ## 在内容片段结构中导航 {#navigate-structure}
 
@@ -494,3 +474,19 @@ ht-degree: 97%
   </tr>
  </tbody>
 </table>
+
+## 很高兴知道 {#good-to-know}
+
+此外：
+
+* 要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。如果您遇到问题，请联系您的系统管理员。
+
+  例如，如果您没有 `edit` 权限，则编辑器将是只读的。
+
+* 内容片段模型通常可以定义名为&#x200B;**标题**&#x200B;和&#x200B;**描述**&#x200B;的数据字段。如果存在这些字段，则它们是用户定义的字段，并在编辑片段时可在&#x200B;*中央面板*&#x200B;中更新这些字段。
+
+  内容片段及其变体也具有名为&#x200B;**标题**&#x200B;和&#x200B;**描述**&#x200B;的元数据字段（变体属性）。这些字段是任何内容片段的组成部分，并在创建该片段时中定义这些字段。在编辑片段时可在&#x200B;*右侧面板*&#x200B;中更新这些字段。
+
+* 有关[原始内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md)的完整信息，请参阅资源文档 - 从&#x200B;**资源**&#x200B;控制台和&#x200B;**内容片段**&#x200B;控制台均可找到此编辑器。
+
+* 如果需要，您的项目团队可自定义该编辑器。有关进一步详细信息，请参阅[自定义内容片段控制台和编辑器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。
