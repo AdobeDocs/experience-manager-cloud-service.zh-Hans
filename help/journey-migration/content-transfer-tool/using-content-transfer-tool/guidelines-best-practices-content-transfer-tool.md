@@ -2,10 +2,10 @@
 title: 有关使用内容传输工具的准则和最佳实践
 description: 了解使用内容传输工具的准则和最佳实践。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 14%
+source-wordcount: '1432'
+ht-degree: 16%
 
 ---
 
@@ -76,12 +76,6 @@ ht-degree: 14%
 * 内容传输工具传输的用户和组只是内容满足权限要求的用户和组。 此 _提取_ 进程复制整个 `/home` 在迁移集中，它通过添加从每个用户的电子邮件地址生成的字段来进行用户映射。 有关更多信息，请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). 此 _摄取_ 进程将复制迁移的内容ACL中引用的所有用户和组。 请参阅 [迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) 有关在封闭用户组(CUG)策略中使用的组的其他注意事项。
 
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
-
-* 完成 *提取* 内容传输流程的阶段以及开始 *摄取阶段* 将内容摄取到AEMas a Cloud Service *Stage* 或 *生产* 实例中，记录支持服务单。 通知Adobe您打算运行 *摄取* 以便Adobe能够确保在故障期间不会出现中断 *摄取* 进程。 在计划的前一周记录支持工单 *摄取* 日期。 提交支持工单后，支持团队会提供有关后续步骤的指导。 您可以提交支持工单，详细信息如下：
-
-   * 计划开始的确切日期和预计时间（以您的时区表示） *摄取* 阶段。
-   * 您计划将数据摄取到的环境类型（暂存或生产）。
-   * 项目ID。
 
 * 此 *摄取阶段* 对于作者，按比例缩小整个作者部署。 这意味着创作的AEM在整个摄取过程中不可用。 同时确保在运行期间没有执行Cloud Manager管道 *摄取* 阶段。
 

@@ -2,9 +2,9 @@
 title: 将内容摄取到Cloud Service
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5c482e5f883633c04d70252788b01f878156bac8
+source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2191'
 ht-degree: 7%
 
 ---
@@ -16,13 +16,10 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="内容引入"
->abstract="引入是指将内容从迁移集引入到目标 Cloud Service 实例中。内容转移工具有一项支持差异内容增补的功能，其中可仅转移自上次内容转移活动以来作出的更改。"
+>abstract="引入是指将内容从迁移集引入到目标 Cloud Service 实例中。内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="增补提取"
 
 请按照以下步骤使用Cloud Acceleration Manager摄取迁移集：
-
->[!NOTE]
->是否记得为此引入记录支持工单？ 请参阅 [使用内容传输工具之前的重要注意事项](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) 以了解这些注意事项以及其他有助于成功摄取的注意事项。
 
 1. 转到Cloud Acceleration Manager。 单击项目信息卡，然后单击内容传输信息卡。 导航到 **引入作业** 并单击 **新建引入**
 
@@ -120,21 +117,27 @@ ht-degree: 7%
 > 显示“迁移令牌”字段，因为在某些情况下，实际上不允许检索该令牌。 通过允许手动提供，它可让用户无需任何其他帮助即可快速开始引入。 如果提供了令牌，但仍显示消息，则检索令牌不是问题。
 
 * AEMas a Cloud Service会维护环境状态，有时由于各种正常原因必须重新启动迁移服务。 如果该服务正在重新启动，则无法访问，但最终可用。
-* 可能正在实例上运行另一个进程。 例如，如果Release Orchestrator正在应用更新，则系统可能忙碌，并且迁移服务定期不可用。 这以及破坏暂存或生产实例的可能性，因此强烈建议在摄取期间暂停更新。
+* 可能正在实例上运行另一个进程。 例如，如果 [AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 正在应用更新，系统可能忙，并且迁移服务定期不可用。 完成此过程后，可以再次尝试开始引入。
 * 如果 [已应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 它通过Cloud Manager阻止Cloud Acceleration Manager访问迁移服务。 无法为摄取添加IP地址，因为其地址是动态的。 目前，唯一的解决方案是在摄取运行时禁用IP允许列表。
 * 可能有其他原因需要调查。 如果摄取仍然失败，请联系Adobe客户关怀部门。
 
-### 通过Release Orchestrator进行的自动更新仍处于启用状态
+### AEM版本更新和引入
 
-Release Orchestrator通过自动应用更新来自动使环境保持最新。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。 有充分理由在开始引入之前记录客户支持工单（请参阅上面的“注意”），以便可以计划暂时禁用Release Orchestrator。
+[AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 自动应用于环境以使其使用最新的AEMas a Cloud Service版本保持最新。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。
 
-如果在开始引入时Release Orchestrator仍在运行，则用户界面会显示此消息。 无论如何您都可以选择继续，通过检查字段并再次按按钮来接受风险。
+如果“AEM版本更新”已载入目标程序，则摄取进程将在启动之前尝试禁用其队列。 摄取完成时，版本更新程序状态将返回到摄取开始前的状态。
 
 >[!NOTE]
 >
-> Release Orchestrator现在将部署到开发环境，因此也应该暂停对这些环境的更新。
+> 不再需要记录支持票证即可禁用“AEM版本更新”。
 
-![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+如果“AEM版本更新”处于活动状态（即更新正在运行或排队等待运行），则摄取将不会开始，并且用户界面会显示以下消息。 更新完成后，可以开始引入。 Cloud Manager可用于查看项目管道的当前状态。
+
+>[!NOTE]
+>
+> “AEM版本更新”在环境的管道中运行，并将等待管道清除。 如果更新排队的时间长于预期时间，请确保自定义工作流不会无意中锁定管道。
+
+![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
 ### 由于违反唯一性约束，增补摄取失败
 
