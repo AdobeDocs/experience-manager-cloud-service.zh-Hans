@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 1df4f371fe4a98b910634b4742d9ff1a9448674f
+source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
 workflow-type: tm+mt
-source-wordcount: '9442'
+source-wordcount: '9448'
 ht-degree: 2%
 
 ---
@@ -551,6 +551,7 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 1. 要创建支持案例，请按照说明操作，同时确保提供以下信息：
 
    * 主要联系人姓名、电子邮件、电话。
+   * 您的项目ID和环境ID。
    * 您的Dynamic Media帐户的名称。
    * 指定在Experience Manager6.5上的Dynamic Media帐户中启用DASH、多字幕和多音频轨道支持。
 
@@ -565,7 +566,7 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 
 ## 关于Dynamic Media中对视频的多字幕和多音频轨道支持{#about-msma}
 
-借助Dynamic Media中的多字幕和多声道功能，您可以轻松地将多个字幕和声道添加到主视频中。 这项功能意味着您的视频可在全球受众中访问。 您可以采用多种语言向全球受众自定义单个已发布的主视频，并遵守适用于不同地理区域的辅助功能准则。 作者还可以在用户界面中通过单个选项卡管理字幕和音轨。
+借助Dynamic Media中的多字幕和多声道功能，您可以轻松地将多个字幕和声道添加到主视频中。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
 ![Dynamic Media中的字幕和音轨选项卡，以及显示视频的上传.VTT字幕文件和上传的.MP3音轨文件的表。](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
