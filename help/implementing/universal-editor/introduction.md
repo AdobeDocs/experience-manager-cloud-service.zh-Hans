@@ -1,18 +1,18 @@
 ---
-title: Universal Visual Editor 简介
-description: 了解 Universal Visual Editor（又名 Universal Editor）如何实现所见即所得 (what-you-see-is-what-you-get, WYSIWYG) 编辑任何 Headless 和 Headful 体验。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
+title: Universal Editor 简介
+description: 了解通用编辑器如何支持对任何Headless和Headful体验进行“所见即所得”(WYSIWYG)编辑。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 100%
+source-wordcount: '919'
+ht-degree: 96%
 
 ---
 
 
-# Universal Visual Editor 简介 {#introduction}
+# Universal Editor 简介 {#introduction}
 
-了解 Universal Visual Editor（又名 Universal Editor）如何实现所见即所得 (what-you-see-is-what-you-get, WYSIWYG) 编辑任何 Headless 和 Headful 体验。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
+了解通用编辑器如何支持对任何Headless和Headful体验进行“所见即所得”(WYSIWYG)编辑。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
 
 ## 背景 {#background}
 
@@ -62,9 +62,9 @@ ht-degree: 100%
 * **提升内容速度** – 为了简化从业人员的管理工作流程，Universal Editor 允许在预览中编辑内容，通过仅显示与该上下文相关的选项来指导从业人员，并使工作流程独立于内容源。
 * **最先进的开发人员体验** – 为了支持真实的异构应用环境，Universal Editor 完全解耦且与技术无关，允许开发人员使用他们喜欢的技术堆栈来实施体验。
 
-## 内容片段编辑器中的 Universal Visual Editor {#universal-editor-content-fragment-editor}
+## 内容片段编辑器中的 Universal Editor {#universal-editor-content-fragment-editor}
 
-乍一看，Universal Visual Editor 和内容片段编辑器似乎提供了类似的编辑功能。但这些编辑器却提供了完全不同的功能，并且它们为营销从业人员完成了不同的作业。
+乍一看，Universal Editor 和内容片段编辑器似乎提供了类似的编辑功能。但这些编辑器却提供了完全不同的功能，并且它们为营销从业人员完成了不同的作业。
 
 ### 内容片段编辑器 {#content-fragment-editor}
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 * 要完成的基本作业是扩展内容策略。
 
-### Universal Visual Editor {#universal-editor}
+### Universal Editor {#universal-editor}
 
 营销从业人员想创建根据给定上下文的布局定制的内容，以提供卓越的体验。
 
@@ -89,7 +89,7 @@ ht-degree: 100%
 要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
 * [使用 Universal Editor 创作内容](authoring.md) – 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
-* [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
+* [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [AEM Universal Editor 快速入门 ](getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。

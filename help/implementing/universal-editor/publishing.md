@@ -1,26 +1,26 @@
 ---
-title: 使用 Universal Visual Editor 发布内容
-description: 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
+title: 使用 Universal Editor 发布内容
+description: 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '361'
 ht-degree: 100%
 
 ---
 
 
-# 使用 Universal Visual Editor 发布内容 {#publishing}
+# 使用 Universal Editor 发布内容 {#publishing}
 
-了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
+了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 
 ## 与 AEM 的相似之处 {#similarities}
 
-对于 AEM 用户，使用 Universal Visual Editor 发布内容的过程与以往类似：在 AEM 中发布时，内容会从作者层复制到发布层。
+对于 AEM 用户，使用 Universal Editor 发布内容的过程与以往类似：在 AEM 中发布时，内容会从作者层复制到发布层。
 
 ## 差异 {#differences}
 
-使用 Universal Visual Editor 进行发布的不同之处，与其说是与编辑器本身相关，不如说是 Universal Editor 使应用程序的外部托管成为可能。
+使用 Universal Editor 进行发布的不同之处，与其说是与编辑器本身相关，不如说是 Universal Editor 使应用程序的外部托管成为可能。
 
 在外部托管时，Web 应用程序需要注意的是，确保当作者在编辑器中打开应用程序时从作者层加载内容，并在访问者访问应用程序时从发布层加载内容。
 

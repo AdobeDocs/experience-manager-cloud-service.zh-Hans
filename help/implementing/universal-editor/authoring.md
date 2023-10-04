@@ -2,9 +2,9 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: b3ba87c1fa2f0578f93c7c3bd2671fbc75178b4e
+source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2410'
 ht-degree: 81%
 
 ---
@@ -158,7 +158,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 >[!TIP]
 >
->有关使用 Universal Editor 发布内容的更多信息，请参阅文档[使用 Universal Visual Editor 发布内容](publishing.md)。
+>有关使用 Universal Editor 发布内容的更多信息，请参阅文档[使用 Universal Editor 发布内容](publishing.md)。
 
 ### 模式边栏 {#rail}
 
@@ -409,7 +409,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
 * [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
-* [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Visual Editor 如何发布内容以及您的应用程序如何处理发布的内容。
+* [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 * [AEM Universal Editor 快速入门 ](getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 * [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 * [属性和类型](attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
