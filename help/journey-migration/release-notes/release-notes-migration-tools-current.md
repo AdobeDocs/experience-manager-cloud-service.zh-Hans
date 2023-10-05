@@ -1,17 +1,17 @@
 ---
-title: AEMas a Cloud Service2023.09.0版中迁移工具的发行说明
-description: AEMas a Cloud Service2022.09.0版中迁移工具的发行说明
+title: AEMas a Cloud Service2023.10.0版中迁移工具的发行说明
+description: AEMas a Cloud Service2022.10.0版中迁移工具的发行说明
 feature: Release Information
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+source-git-commit: 2ff6aeeb0145695aa44c79f42aefd53c7c545fea
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 4%
+source-wordcount: '124'
+ht-degree: 5%
 
 ---
 
-# AEMas a Cloud Service2023.09.0版中迁移工具的发行说明 {#release-notes}
+# AEMas a Cloud Service2023.10.0版中迁移工具的发行说明 {#release-notes}
 
-此页概述了AEMas a Cloud Service2022.09.0中迁移工具的发行说明。
+此页概述了AEMas a Cloud Service2022.10.0中迁移工具的发行说明。
 
 ## 内容转移工具 {#ctt-release}
 
@@ -21,10 +21,4 @@ ht-degree: 4%
 
 ### 新增功能 {#what-is-new-ctt}
 
-内容传输工具已得到显着改进，可提供以下优势：
-* 利用AzCopy仅复制所需的blob id而不是复制所有blob id，在迁移内容存储库的子集时缩短了传输时间
-* 使用Oak-upgrade更快地实现差异内容增补
-* 通过将索引过程与内容摄取过程分离开来，提高了稳健性。 如果索引失败，则不必再次摄取内容。 只有索引会自动重新启动，从而节省大量时间和精力
-
-
-
+已对内容摄取流程进行了更改 — 不再需要提交客户关怀/支持工单来禁用目标环境上的AEM版本更新。 此过程现在已自动化。 有关更多详细信息，请参阅 [AEM版本更新和引入](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#aem-version-updates-and-ingestions)
