@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9146bf7222ad3cb74e6558868c41b822364ef3f0
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4308'
 ht-degree: 97%
 
 ---
@@ -570,6 +570,7 @@ ht-degree: 97%
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
          + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [将基于Foundation组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
          + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
@@ -733,7 +734,7 @@ ht-degree: 97%
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
 + Edge交付服务 {#edge-delivery}
-   + [Edge Delivery入门](/help/edge/overview.md)
+   + [Edge Delivery 快速入门。](/help/edge/overview.md)
    + [使用Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)

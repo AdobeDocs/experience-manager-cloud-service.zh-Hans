@@ -4,9 +4,9 @@ description: 在AEM Sites页面中使用自适应表单核心组件填写和提�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2150'
 ht-degree: 6%
 
 ---
@@ -267,3 +267,8 @@ AEM sites页面维护对自适应表单的引用。 在翻译AEM Sites页面时�
 
 * 原始表单中的页眉和页脚未包含在嵌入表单中。
 * 支持用户草稿和提交嵌入表单，这些草稿和提交表单会显示在Forms Portal的“草稿”和“已提交的Forms”选项卡中。
+
+>[!MORELIKETHIS]
+>
+>* [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+>* [将自适应表单嵌入到外部网页中](/help/forms/embed-adaptive-form-external-web-page.md)
