@@ -3,7 +3,7 @@ title: 创作概念
 description: 使用创作、预览和发布环境了解 AEM 中创作的概念。
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
 ht-degree: 100%
 
