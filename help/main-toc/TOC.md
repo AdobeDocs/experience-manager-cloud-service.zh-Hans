@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2d4a81aa0d6755270d4d6efb8649782f4bde4537
+source-git-commit: 1d0001f967cad074ffc8d91f77241502ffaa1d94
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4313'
 ht-degree: 97%
 
 ---
@@ -87,6 +87,7 @@ ht-degree: 97%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
+         + [2023.9.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-9-0.md)
          + [2023.8.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-8-0.md)
          + [2023.7.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-7-0.md)
          + [2023.6.0 的发行说明](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
@@ -847,6 +848,7 @@ ht-degree: 97%
          + [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [体验审核仪表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)
+      + [自定义权限](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 报告](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)

@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: d3bc5dbb5a88aff7765beffc8282d99063dde99f
-workflow-type: ht
-source-wordcount: '1005'
-ht-degree: 100%
+source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
+workflow-type: tm+mt
+source-wordcount: '1039'
+ht-degree: 93%
 
 ---
 
@@ -19,9 +19,10 @@ ht-degree: 100%
 Cloud Manager 使用专门的构建环境构建和测试代码。
 
 * 构建环境基于 Linux，并派生自 Ubuntu 18.04。
-* 安装 Apache Maven 3.6.0。
-* 安装的 Java 版本是 Oracle JDK 8u202 和 Oracle JDK 11.0.2。
-* 默认情况下，`JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_202`，其中包含 Oracle JDK 8u202。有关更多详细信息，请参阅[替代 Maven 执行 JDK 版本](#alternate-maven-jdk-version)部分。
+* 使用 [Cloud Manager 2023年10月版，](/help/implementing/cloud-manager/release-notes/current.md) Java和Maven版本正在持续更新。
+   * 已安装Apache Maven 3.6.0或3.8.8。
+   * 安装的Java版本为OracleJDK 8u202和OracleJDK 11.0.2。或者OracleJDK 8u371和OracleJDK 11.0.20。
+   * 默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_202` 包含OracleJDK 8u202或 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。 请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
 * 安装了一些其他的必要系统包。
 
    * `bzip2`

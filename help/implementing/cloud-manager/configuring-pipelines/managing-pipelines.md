@@ -3,12 +3,13 @@ title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '516'
-ht-degree: 100%
+source-git-commit: b8d692e354851a31b4f66b24135c863b5ca723b4
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 81%
 
 ---
+
 
 # 管理管道 {#managing-pipelines}
 
@@ -74,7 +75,9 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 >
 >您无法删除运行中的管道。
 
-## 查看详细信息 {#view-details}
+## 查看管道详细信息 {#view-details}
+
+您可以查看管道的详细信息，以查看其上次运行的状态和日志。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
@@ -84,8 +87,32 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![管道详细信息](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-running-details.png)
 
-在此页面中，您可以查看管道各个步骤的状态并检索构建日志以进行诊断。有关更多信息，请参阅[部署您的代码](/help/implementing/cloud-manager/deploy-code.md)文档。
+在此页面中，您可以查看管道各个步骤的状态并检索构建日志以进行诊断。查看文档 [部署代码](/help/implementing/cloud-manager/deploy-code.md) 有关代码部署和测试运行的详细信息。
 
 >[!NOTE]
 >
 >您只能查看运行中的或已运行至少一次的管道的详细信息。
+
+## 取消管道 {#cancel}
+
+如果管道处于验证或构建图像阶段，您可以安全地取消管道运行。
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+
+1. 在程序概述页面上，单击要取消的管道的省略号按钮 **管道** 卡片。
+
+   ![取消管道](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
+
+1. 点击或单击 **取消**.
+
+或者，您可以从管道详细信息页面取消管道。
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+
+1. 导航至 **管道** 选项卡 **项目概述** 页面，然后点按或单击要取消的管道。
+
+1. 您将转到运行中的管道的详细信息页面。
+
+   ![取消管道详细信息](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
+
+1. 点击或单击 **取消**.

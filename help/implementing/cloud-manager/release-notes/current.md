@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.9.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.9.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.10.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.10.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a5e8c11340ab5eacdefb22da302f9e35d9429bc7
+source-git-commit: 661eac787439e6e696574a6973afa7e39eeb443e
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 75%
+source-wordcount: '529'
+ht-degree: 62%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.9.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.10.0 的发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.9.0 版本的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.10.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,16 +21,31 @@ ht-degree: 75%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 的发布日期是 2023 年 9 月 14 日。 下一个版本计划于 2023 年 10 月 5 日发布。
+AEM as a Cloud Service 2023.10.0 版本中的 Cloud Manager 的发布日期是 2023 年 10 月 5 日。 下一个版本计划于 2023 年 11 月 2 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* CDN日志（如果可用）可通过Cloud Manager UI下载。
-* 用户现在可以选择加入由Google Lighthouse提供支持的Experience Audit测试，并将其包含在非生产全栈管道中。
+* [您现在可以安全地取消管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) 在验证和构建图像步骤中。
+* 改进了 [索引](/help/operations/indexing.md) 缩短了部署新索引时的管道持续时间。
+   * 改进功能因内容配置文件而异。
+* 自动 [更新了开发环境](/help/implementing/cloud-manager/manage-environments.md#updating-environments) 默认情况下，新程序将启用，从而节省手动执行更新的时间。
+   * 此更新将分阶段推出。
+* 在2023年10月版的Cloud Manager中，将通过分阶段推出来更新Java和Maven版本。
+   * 正在将Apache Maven更新到版本3.8.8。
+   * Java版本正在更新以OracleJDK 8u371和OracleJDK 11.0.20。
+   * 默认情况下， `JAVA_HOME` 正在将环境变量更新到 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。
+   * 查看文档 [构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 以了解更多详细信息。
+   * [请参阅OpenJDK建议](https://openjdk.org/groups/vulnerability/advisories/) 有关这些JDK更新中的安全和错误修复的详细信息。
 
 ## 早期采用计划 {#early-adoption}
 
 成为我们早期采用计划的一部分，并有机会测试一些即将推出的功能。
+
+### 自定义权限 {#custom-permissions}
+
+[Cloud Manager自定义权限](/help/implementing/cloud-manager/custom-permissions.md) 允许您创建新的自定义权限配置文件，可配置权限以限制对Cloud Manager用户的项目、管道和环境的访问。
+
+如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `Grp-CloudManager-custom-permissions@adobe.com` 从与Adobe ID关联的电子邮件地址中查找。
 
 ### 自助内容恢复 {#content-restore}
 
@@ -52,9 +67,3 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.9.0 的发布日期是 2
 该仪表板利用 Google Lighthouse，这是一种开源自动化工具，用于提高 Web 应用程序的质量。您可以针对任何网页（公共网页或需要身份验证的网页）运行它。它对性能、可访问性、SEO、搜索引擎优化等进行审核。
 
 有兴趣试驾新仪表板吗？请从与您的 Adobe ID 关联的电子邮件发送电子邮件至`aem-lighthouse-pilot@adobe.com`，我们可以帮助您开始。
-
-## 错误修复 {#bug-fixes}
-
-* 现在，删除程序时，任何关联的正在运行的管道也会被删除。
-* 如果管道正在进行中， **发送** 的按钮 **上线完成** 对话框现在已禁用，并通知用户由于正在运行的管道而无法设置上线日期。
-* 已修复偶尔出现的错误，其中管道执行的所有步骤均标记为已完成，但管道的状态仍在运行，看起来像是卡住状态。
