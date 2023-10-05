@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.10.0 �
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.10.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 661eac787439e6e696574a6973afa7e39eeb443e
+source-git-commit: b760b3a65d89b0b4f924379fc460015a58e2ed3e
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 62%
+source-wordcount: '521'
+ht-degree: 63%
 
 ---
 
@@ -25,16 +25,15 @@ AEM as a Cloud Service 2023.10.0 版本中的 Cloud Manager 的发布日期是 2
 
 ## 新增功能 {#what-is-new}
 
-* [您现在可以安全地取消管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#cancel) 在验证和构建图像步骤中。
 * 改进了 [索引](/help/operations/indexing.md) 缩短了部署新索引时的管道持续时间。
    * 改进功能因内容配置文件而异。
 * 自动 [更新了开发环境](/help/implementing/cloud-manager/manage-environments.md#updating-environments) 默认情况下，新程序将启用，从而节省手动执行更新的时间。
    * 此更新将分阶段推出。
-* 在2023年10月版的Cloud Manager中，将通过分阶段推出来更新Java和Maven版本。
-   * 正在将Apache Maven更新到版本3.8.8。
-   * Java版本正在更新以OracleJDK 8u371和OracleJDK 11.0.20。
-   * 默认情况下， `JAVA_HOME` 正在将环境变量更新到 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。
-   * 查看文档 [构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 以了解更多详细信息。
+* 在2023年10月版的Cloud Manager中，将通过分阶段推出来更新Java版本。
+   * Java 8和11以及Maven的次要版本已更新，并将在未来2个月内分阶段推出。 新版本包含多个安全修复和错误修复。 新版本包括：
+   * *Maven： 3.8.8*
+   * *Java 8版本： /usr/lib/jvm/jdk1.8.0_371*
+   * *Java 11版本： /usr/lib/jvm/jdk-11.0.20*
    * [请参阅OpenJDK建议](https://openjdk.org/groups/vulnerability/advisories/) 有关这些JDK更新中的安全和错误修复的详细信息。
 
 ## 早期采用计划 {#early-adoption}
