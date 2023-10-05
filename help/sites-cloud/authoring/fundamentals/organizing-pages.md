@@ -3,7 +3,7 @@ title: 创建和组织页面
 description: 了解如何通过使用 AEM 创建和管理页面来组织您的网站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2543'
 ht-degree: 100%
 
