@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 8c878833118b2d8dc51e8cfa2c15ce70efbd3deb
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 76%
+ht-degree: 79%
 
 ---
 
@@ -54,7 +54,7 @@ Edge Delivery是一套新的可组合服务，重点是在客户互动时实现�
 
 **将元数据表单分配给文件夹**
 
-您现在可以将元数据表单分配给部署中的特定文件夹。 文件夹中的所有资产（包括子文件夹中的资产）将显示在分配的元数据表单中定义的属性。
+现在可将元数据表单分配给 部署中的特定文件夹。随后该文件夹中的所有资源（包括子文件夹中的资源）显示在所分配的元数据表单中定义的属性。
 
 ![将元数据表单分配给文件夹](/help/release-notes/assets/assign-to-folder.png)
 

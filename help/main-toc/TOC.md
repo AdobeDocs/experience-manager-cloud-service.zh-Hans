@@ -734,7 +734,7 @@ ht-degree: 97%
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
 + Edge交付服务 {#edge-delivery}
-   + [Edge Delivery 快速入门。](/help/edge/overview.md)
+   + [Edge Delivery 入门。](/help/edge/overview.md)
    + [使用Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)

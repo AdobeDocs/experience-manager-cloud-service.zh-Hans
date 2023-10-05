@@ -7,13 +7,13 @@ keywords: 添加自定义错误处理程序、添加默认错误处理程序、�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: a589005551dd7d8cdf8ac004725341905f0e99d1
+exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '2408'
 ht-degree: 98%
 
 ---
-
 
 # 基于核心组件的自适应表单的错误处理程序 {#error-handlers-in-adaptive-form}
 
