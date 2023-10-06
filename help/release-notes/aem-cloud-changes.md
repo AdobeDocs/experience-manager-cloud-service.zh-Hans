@@ -5,7 +5,7 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
 workflow-type: tm+mt
 source-wordcount: '857'
-ht-degree: 46%
+ht-degree: 49%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Experience Manager (AEM)Cloud Service为管理AEM项目提供了许多新�
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
 >title="AEM as a Cloud Service 中的重大更改"
->abstract="在此选项卡中，您可以查看有助于了解AEM内部部署或AdobeManaged Services与AEMas a Cloud Service之间差异的内容。"
+>abstract="在此选项卡中，可查看帮助您了解内部或 Adobe Managed Services 中的 AEM 与 AEM as a Cloud Service 之间区别的内容。"
 >additional-url="https://video.tv.adobe.com/v/330543" text="AEM as a Cloud Service 的演变"
 
 
