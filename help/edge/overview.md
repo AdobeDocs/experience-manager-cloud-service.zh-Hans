@@ -1,8 +1,9 @@
 ---
 title: Edge Delivery Services快速入门
 description: Edge Delivery Services 快速入门。
+feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: ba59cb131d3b17730c87377f30162feb4e7aee29
+source-git-commit: 6a4a257b3ca3d2db76d43707792d97db87974593
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 0%
