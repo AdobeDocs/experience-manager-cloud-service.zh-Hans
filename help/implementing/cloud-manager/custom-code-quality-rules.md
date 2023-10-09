@@ -2,10 +2,10 @@
 title: 自定义代码质量规则
 description: 此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 Adobe Experience Manager Engineering 的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
 workflow-type: tm+mt
-source-wordcount: '3502'
-ht-degree: 100%
+source-wordcount: '3868'
+ht-degree: 92%
 
 ---
 
@@ -570,7 +570,6 @@ public class DontDoThis implements Page {
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
 ```
@@ -583,7 +582,6 @@ public class DontDoThis implements Page {
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -606,11 +604,8 @@ public class DontDoThis implements Page {
     + damAssetLucene-1-custom
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
-      - reindex: false
       - tags: [visualSimilaritySearch]
-      - type: lucene
       + tika
         + config.xml
 ```
@@ -623,7 +618,6 @@ public class DontDoThis implements Page {
       - async: [async]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -647,7 +641,6 @@ public class DontDoThis implements Page {
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - type: lucene
       + tika
         + config.xml
@@ -661,7 +654,6 @@ public class DontDoThis implements Page {
       - async: [async, nrt]
       - evaluatePathRestrictions: true
       - includedPaths: /content/dam
-      - reindex: false
       - tags: [visualSimilaritySearch]
       - type: lucene
       + tika
@@ -948,3 +940,208 @@ Experience Manager as a Cloud Service 禁止自定义搜索索引定义（即 `o
 * **开始版本**：版本 2021.2.0
 
 Experience Manager as a Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）包含名为 `reindex` 的属性。 在迁移到 Experience Manager as a Cloud Service 之前，必须更新使用此属性的索引编制。 有关更多信息，请参阅文档[内容搜索和索引](/help/operations/indexing.md#how-to-use)。
+
+### 自定义DAM资源Lucene节点不得指定“queryPaths” {#oakpal-damAssetLucene-queryPaths}
+
+* **密钥**：IndexDamAssetLucene
+* **类型**：错误
+* **严重性**：阻断
+* **开始版本**：版本 2022.1.0
+
+#### 不合规的代码 {#non-compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-1
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - queryPaths: [/content/dam]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### 合规的代码 {#compliant-code-damAssetLucene-queryPaths}
+
+```text
++ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: [/content/dam]
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### 如果自定义搜索索引定义包含compatVersion，则必须将其设置为2 {#oakpal-compatVersion}
+
+* **密钥**：IndexCompatVersion
+* **类型**：代码异味
+* **严重性**：主要
+* **开始版本**：版本 2022.1.0
+
+
+### 指定“includedPaths”的索引节点还应使用相同的值指定“queryPaths” {#oakpal-included-paths-without-query-paths}
+
+* **键**： IndexIncludedPathsWithoutQueryPaths
+* **类型**：代码异味
+* **严重性**：轻微
+* **开始版本**：版本 2023.1.0
+
+对于自定义索引，两者都是 `includedPaths` 和 `queryPaths` 应使用相同的值配置。 如果指定了一个，则另一个必须与它匹配。 但是，索引有一种特殊情况 `damAssetLucene`，包括其自定义版本。 对于这些请求，您应仅提供 `includedPaths`.
+
+### 在泛型节点类型上指定nodeScopeIndex的索引节点还应指定includedPaths和queryPaths {#oakpal-full-text-on-generic-node-type}
+
+* **键**： IndexFulltextOnGenericType
+* **类型**：代码异味
+* **严重性**：轻微
+* **开始版本**：版本 2023.1.0
+
+设置 `nodeScopeIndex` “通用”节点类型（如）的属性 `nt:unstructured` 或 `nt:base`，您还必须指定 `includedPaths` 和 `queryPaths` 属性。
+`nt:base` 可以视为“通用”，因为所有节点类型都从其继承。 因此，设置 `nodeScopeIndex` 日期 `nt:base` 将使其索引存储库中的所有节点。 同样地， `nt:unstructured` 也视为“通用”，因为存储库中有许多节点属于此类型。
+
+#### 不合规的代码 {#non-compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+#### 合规的代码 {#compliant-code-full-text-on-generic-node-type}
+
+```text
++ oak:index/acme.someIndex-custom-1
+  - async: [async, nrt]
+  - evaluatePathRestrictions: true
+  - tags: [visualSimilaritySearch]
+  - type: lucene
+  - includedPaths: ["/content/dam/"] 
+  - queryPaths: ["/content/dam/"]
+    + indexRules
+      - jcr:primaryType: nt:unstructured
+      + nt:base
+        - jcr:primaryType: nt:unstructured
+        + properties
+          + acme.someIndex-custom-1
+            - nodeScopeIndex: true
+```
+
+### 不应覆盖查询引擎的queryLimitReads属性 {#oakpal-query-limit-reads}
+
+* **键**： OverrideOfQueryLimitReads
+* **类型**：代码异味
+* **严重性**：轻微
+* **开始版本**：版本 2023.1.0
+
+覆盖默认值可能会导致页面读取速度非常慢，尤其是在添加了更多内容时。
+
+### 同一索引的多个活动版本 {#oakpal-multiple-active-versions}
+
+* **键**： IndexDetectMultipleActiveVersionsOfSameIndex
+* **类型**：代码异味
+* **严重性**：轻微
+* **开始版本**：版本 2023.1.0
+
+#### 不合规的代码 {#non-compliant-code-multiple-active-versions}
+
+```text
++ oak:index
+  + damAssetLucene-1-custom-1
+    ...
+  + damAssetLucene-1-custom-2
+    ...
+  + damAssetLucene-1-custom-3
+    ...
+```
+
+#### 合规的代码 {#compliant-code-multiple-active-versions}
+
+```text
++ damAssetLucene-1-custom-3
+    ...
+```
+
+
+### 完全自定义的索引定义的名称应符合官方指南 {#oakpal-fully-custom-index-name}
+
+* **键**： IndexValidFullyCustomName
+* **类型**：代码异味
+* **严重性**：轻微
+* **开始版本**：版本 2023.1.0
+
+完全自定义索引名称的预期模式为： `[prefix].[indexName]-custom-[version]`. 有关详细信息，请参阅文档 [内容搜索和索引](/help/operations/indexing.md).
+
+
+### 具有相同索引定义中不同分析值的相同属性 {#oakpal-same-property-different-analyzed-values}
+
+#### 不合规的代码 {#non-compliant-code-same-property-different-analyzed-values}
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+```
+
+#### 合规的代码 {#compliant-code-same-property-different-analyzed-values}
+
+示例：
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+示例：
+
+```text
++ indexRules
+  + dam:Asset
+    + properties
+      + status
+        - name: status
+  + dam:cfVariationNode
+    + properties
+      + status
+        - name: status
+        - analyzed: true
+```
+
+如果未显式设置分析的属性，则其默认值将为false。
+
+### 标记属性
+
+* **键**： IndexHasValidTagsProperty
+* **类型**：代码异味
+* **严重性**：轻微
+* **开始版本**：版本 2023.1.0
+
+对于特定索引，请确保保留tags属性及其当前值。 虽然向tags属性添加新值是允许的，但删除任何现有值（或同时删除属性）可能会导致意外结果。
