@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 00cd62aa64c183a0560326feaacda1db70627858
+source-git-commit: 51b048f753fe2e548d0ffdd9e3a903b21032aed7
 workflow-type: tm+mt
-source-wordcount: '9448'
+source-wordcount: '9463'
 ht-degree: 2%
 
 ---
@@ -521,7 +521,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-### 在您的Dynamic Media帐户中启用DASH、多字幕和多音频轨道支持 {#enable-dash}
+## 在您的Dynamic Media帐户中启用DASH、多字幕和多音频轨道支持 {#enable-dash}
 
 **关于启用您帐户上的DASH支持**
 DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广泛地应用于不同的视频观看者中。 在您的帐户上启用DASH后，您可以选择使用DASH或HLS进行自适应视频流传输。 或者，您可以在以下情况下同时选择这两个选项：在播放器之间自动切换 **[!UICONTROL 自动]** 在查看器预设中选择作为播放类型。
@@ -539,7 +539,7 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 
 **关于启用帐户上的多字幕和多音频轨道支持**
 
-在创建Adobe支持案例以在您的帐户中启用DASH的同时，您还可以从自动启用多字幕和多声道支持中受益。 启用后，您上传的所有后续视频都使用新的后端架构进行处理，该架构支持向视频添加多字幕和多音频轨道。
+在您创建了Adobe支持案例以在帐户中启用DASH的同时，自动启用多字幕和多声道支持也会让您受益。 启用后，您上传的所有后续视频都使用新的后端架构进行处理，该架构支持向视频添加多字幕和多音频轨道。
 
 >[!IMPORTANT]
 >
@@ -551,8 +551,9 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 1. 要创建支持案例，请按照说明操作，同时确保提供以下信息：
 
    * 主要联系人姓名、电子邮件、电话。
-   * 您的项目ID和环境ID。
-   * 您的Dynamic Media帐户的名称。
+   * 您的Cloud Service环境（项目ID和环境ID）。
+   * 您的Dynamic Media公司帐户名称。
+   * 您的Dynamic Media地区：北美(NA)、亚太(APAC)或欧洲 — 中东 — 亚洲(EMEA)。
    * 指定在Experience Manager6.5上的Dynamic Media帐户中启用DASH、多字幕和多音频轨道支持。
 
 1. Adobe客户支持根据提交请求的顺序将您添加到客户等待列表中。
