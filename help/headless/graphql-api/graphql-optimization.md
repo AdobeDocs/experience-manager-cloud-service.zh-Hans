@@ -2,10 +2,10 @@
 title: 优化 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中对内容片段进行筛选、分页和排序时优化 GraphQL 查询，以实现 headless 内容交付。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '1193'
-ht-degree: 100%
+source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
+workflow-type: tm+mt
+source-wordcount: '1877'
+ht-degree: 65%
 
 ---
 
@@ -14,6 +14,84 @@ ht-degree: 100%
 >[!NOTE]
 >
 >在应用这些优化建议之前，请考虑[更新内容片段以在 GraphQL 筛选中进行分页和排序](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)，从而获得最佳性能。
+
+提供这些准则是为了帮助防止GraphQL查询出现性能问题。
+
+## GraphQL核对清单 {#graphql-checklist}
+
+以下核对清单旨在帮助您在Adobe Experience Manager (AEM)as a Cloud Service中优化GraphQL的配置和使用。
+
+### 首要原则 {#first-principles}
+
+#### 使用持久GraphQL查询 {#use-persisted-graphql-queries}
+
+**推荐**
+
+强烈建议使用持久GraphQL查询。
+
+持久的GraphQL查询利用内容交付网络(CDN)帮助降低查询执行性能。 客户端应用程序请求持久查询，GET请求快速边缘启用执行。
+
+**进一步参考**
+
+请参阅：
+
+* [持久 GraphQL 查询](/help/headless/graphql-api/persisted-queries.md).
+* [了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询](/help/headless/graphql-api/sample-queries.md)
+
+### 缓存策略 {#cache-strategy}
+
+还可以使用各种缓存方法进行优化。
+
+#### 启用AEM Dispatcher缓存 {#enable-aem-dispatcher-caching}
+
+**推荐**
+
+[AEM调度程序](/help/implementing/dispatcher/overview.md) 是AEM服务中的第一级缓存，在CDN缓存之前。
+
+**进一步参考**
+
+请参阅：
+
+* [GraphQL 持久化查询 - 在 Dispatcher 中启用缓存](/help/headless/deployment/dispatcher-caching.md)
+
+#### 使用内容交付网络(CDN) {#use-cdn}
+
+**推荐**
+
+如果定位为，则可以缓存GraphQL查询及其JSON响应。 `GET` 使用CDN时的请求。 相比之下，未缓存的请求可能非常（资源）昂贵且处理缓慢，有可能对源头资源造成进一步的有害影响。
+
+**进一步参考**
+
+请参阅：
+
+* [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
+
+#### 设置HTTP缓存控制标头 {#set-http-cache-control-headers}
+
+**推荐**
+
+在将GraphQL持久查询与CDN结合使用时，建议设置适当的HTTP缓存控制标头。
+
+每个持久查询可以有自己的一组特定的缓存控制标头。 标头可设置在 [GRAPHQL API](/help/headless/graphql-api/content-fragments.md) 或 [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
+
+**进一步参考**
+
+请参阅：
+
+* [正在缓存您的持久查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [管理保留查询的缓存](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+#### 使用AEM GraphQL预缓存 {#use-aem-graphql-pre-caching}
+
+**推荐**
+
+此功能允许AEM进一步缓存GraphQL查询范围内的内容，然后可以在JSON输出中将这些内容组合为块，而不是逐行组合。
+
+**进一步参考**
+
+请联系Adobe以为AEM Cloud Service程序和环境启用此功能。
+
+### GraphQL查询优化 {#graphql-query-optimization}
 
 在具有大量共享同一模型的内容片段的 AEM 实例上，GraphQL 列表查询的成本可能会较高（就资源而言）。
 
@@ -25,14 +103,16 @@ ht-degree: 100%
 
 AEM 提供了两种方法来优化 GraphQL 查询：
 
-* [混合筛选](#hybrid-filtering)
-* [分页](#paging)
+* [混合筛选](#use-aem-graphql-hybrid-filtering)
+* [分页](#use-graphql-pagination)
 
-   * [排序](#sorting)与优化没有直接关系，而与分页有关
+   * [排序](#use-graphql-sorting)与优化没有直接关系，而与分页有关
 
-每种方法都有自己的用例和限制。本文档提供了有关混合筛选和分页的信息，以及一些优化 GraphQL 查询的[最佳实践](#best-practices)。
+每种方法都有自己的用例和限制。本节提供有关混合过滤和分页的信息，以及一些 [最佳实践](#best-practices) 以用于优化GraphQL查询。
 
-## 混合筛选 {#hybrid-filtering}
+#### 使用AEM GraphQL混合筛选 {#use-aem-graphql-hybrid-filtering}
+
+**推荐**
 
 混合筛选结合了 JCR 筛选和 AEM 筛选。
 
@@ -44,7 +124,22 @@ AEM 提供了两种方法来优化 GraphQL 查询：
 
 此技术保留了 GraphQL 筛选提供的灵活性，同时将尽可能多的筛选工作委派给 JCR。
 
-## 分页 {#paging}
+>[!NOTE]
+>
+>AEM混合筛选需要更新现有的内容片段
+
+**进一步参考**
+
+请参阅：
+
+* [在GraphQL筛选中更新用于分页和排序的内容片段](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+* [按 _tags ID 过滤并排除变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
+#### 使用GraphQL分页 {#use-aem-graphql-pagination}
+
+**推荐**
+
+通过使用分页(一种GraphQL标准)将响应分段为块，可以改进具有大型结果集的复杂查询的响应时间。
 
 AEM 中的 GraphQL 支持两种类型的分页：
 
@@ -64,7 +159,17 @@ AEM 中的 GraphQL 支持两种类型的分页：
   >
   >后向分页（使用 `before`/`last` 参数）不受支持。
 
-## 排序 {#sorting}
+**进一步参考**
+
+请参阅：
+
+* [使用“先”和“后”的示例分页查询](/help/headless/graphql-api/sample-queries.md#sample-pagination-first-after)
+
+#### 使用GraphQL排序 {#use-graphql-sorting}
+
+**推荐**
+
+作为GraphQL标准，排序使客户端能够按排序的顺序接收JSON内容。 这可以降低在客户端上执行进一步处理的需要。
 
 仅在所有排序条件都与顶级片段相关时，排序才有效。
 
@@ -74,9 +179,15 @@ AEM 中的 GraphQL 支持两种类型的分页：
 >
 >对顶级字段进行排序也会对性能产生（虽然很小）影响。
 
+**进一步参考**
+
+请参阅：
+
+* [示例查询，按_tags ID筛选并排除变体，并按名称排序](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+
 ## 最佳实践 {#best-practices}
 
-所有优化的主要目标是减小初始结果集。此处列出的最佳实践提供了多种方法来实现此目的。可以（也应该）将它们结合使用。
+所有优化推荐的主要目标是减少初始结果集。 此处列出的最佳实践提供了多种方法来实现此目的。可以（也应该）将它们结合使用。
 
 ### 仅筛选顶级属性 {#filter-top-level-properties-only}
 
@@ -166,3 +277,27 @@ AEM 中的 GraphQL 支持两种类型的分页：
 * 使用 `CONTAINS_NOT` 运算符的筛选表达式。
 
 * 使用 `NOT_AT` 运算符的基于 `Calendar`、`Date` 或 `Time` 值的筛选表达式。
+
+### 最小化内容片段嵌套 {#minimize-content-fragment-nesting}
+
+嵌套内容片段是生成自定义内容结构模型的好方法。 您甚至可以具有一个带有嵌套片段的片段，该片段具有一个嵌套片段，该片段具有……等等。
+
+但是，如果创建的结构级别过多，可能会增加GraphQL查询的处理时间，因为GraphQL必须遍历所有嵌套内容片段的整个层次结构。
+
+深度嵌套还会对内容治理产生不利影响。 一般情况下，建议将内容片段嵌套限制在五或六个级别以下。
+
+### 不输出所有格式（多行文本元素） {#do-not-output-all-formats}
+
+AEM GraphQL可以返回文本，文本创作于 **[多行文本](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 数据类型，采用多种格式：富文本、简单文本和Markdown。
+
+输出所有三种格式会将JSON中文本输出的大小增大三倍。 再加上来自非常宽泛查询的通常较大的结果集，可能会产生非常大的JSON响应，因此需要很长时间才能计算。 最好将输出限制为仅呈现内容所需的文本格式。
+
+### 修改内容片段 {#modifying-content-fragments}
+
+使用AEM UI或API仅修改内容片段及其资源。 请勿直接在JCR中进行修改。
+
+### 测试查询 {#test-your-queries}
+
+处理GraphQL查询与处理搜索查询类似，并且比简单的包含所有内容的GETAPI请求要复杂得多。
+
+在生产中使用时，在受控的非生产环境中仔细规划、测试和优化查询是以后取得成功的关键。
