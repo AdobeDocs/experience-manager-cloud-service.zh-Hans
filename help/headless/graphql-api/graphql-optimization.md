@@ -2,7 +2,7 @@
 title: 优化 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中对内容片段进行筛选、分页和排序时优化 GraphQL 查询，以实现 headless 内容交付。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: ba864cb28d2de0559d36f113e8e154ed5c115cae
+source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 65%
@@ -104,7 +104,7 @@ ht-degree: 65%
 AEM 提供了两种方法来优化 GraphQL 查询：
 
 * [混合筛选](#use-aem-graphql-hybrid-filtering)
-* [分页](#use-graphql-pagination)
+* [分页](#use-aem-graphql-pagination)
 
    * [排序](#use-graphql-sorting)与优化没有直接关系，而与分页有关
 
