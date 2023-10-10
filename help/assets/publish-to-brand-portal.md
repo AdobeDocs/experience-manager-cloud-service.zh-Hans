@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 780d04852d3760f92c6f0c5edf77630d4bb5a343
+source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 93%
+source-wordcount: '1301'
+ht-degree: 90%
 
 ---
 
@@ -32,6 +32,8 @@ ht-degree: 93%
 >[!NOTE]
 >
 >Adobe 建议实施错峰发布，最好在非高峰时段发布，这样 AEM 作者就不会占用过多的资源。
+>资源应批量发布。 建议批次大小为15 K。
+> 对象 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]，则在实验室条件下观察到的传输速率为每小时1000个资源。 观察到此速率，平均大小为10 MB资源。
 
 ## 将资产发布到 Brand Portal {#publish-assets-to-bp}
 
