@@ -5,12 +5,13 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: ac7e1a1ada156734c3a487269e674e8eade7c9c3
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 4%
+source-wordcount: '2452'
+ht-degree: 10%
 
 ---
+
 
 # 配置数据源 {#configure-data-sources}
 
@@ -23,7 +24,7 @@ ht-degree: 4%
 
 [!DNL Experience Manager Forms] 通过数据集成，您可以配置并连接到不同的数据源。 支持开箱即用的以下类型：
 
-* 关系数据库 — MySQL、 [!DNL Microsoft SQL Server]， [!DNL IBM DB2]、和 [!DNL Oracle RDBMS]
+* 关系数据库 — MySQL、 [!DNL Microsoft® SQL Server]， [!DNL IBM® DB2®]、和 [!DNL Oracle RDBMS]
 * RESTful Web服务
 * 基于SOAP的Web服务
 * OData服务（版本4.0）
@@ -57,7 +58,7 @@ ht-degree: 4%
    * JDBC连接URI
    * 用于与JDBC驱动程序建立连接的用户名和密码
    * 在中指定SQL SELECT查询 **[!UICONTROL 验证查询]** 用于验证池中的连接的字段。 查询必须至少返回一行。 根据您的数据库，指定以下选项之一：
-      * SELECT 1 （MySQL和MS SQL）
+      * SELECT 1 (MySQL和MS® SQL)
       * 从双选件中选择1(Oracle)
    * 数据源的名称
 
@@ -179,7 +180,7 @@ RESTful服务Open API规范版本3.0不支持的一些操作包括：
 
 ### 表单数据模型HTTP客户端配置可优化性能 {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] 由于数据源包括用于性能优化的HTTP客户端配置，因此，在与RESTful Web服务集成时会生成数据模型。
+[!DNL Experience Manager Forms] 在与RESTful Web服务集成时形成数据模型，因为数据源包括用于性能优化的HTTP客户端配置。
 
 设置以下属性 **[!UICONTROL REST数据源的表单数据模型HTTP客户端配置]** 用于指定正则表达式的配置：
 
@@ -223,7 +224,7 @@ RESTful服务Open API规范版本3.0不支持的一些操作包括：
 
 ## 配置SOAP Web服务 {#configure-soap-web-services}
 
-使用对基于SOAP的Web服务进行描述 [Web服务描述语言(WSDL)规范](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] 不支持RPC样式WSDL模型。
+使用对基于SOAP的Web服务进行描述 [Web服务描述语言(WSDL)规范](https://www.w3.org/TR/wsdl). [!DNL Experience Manager Forms] 不支持RPC样式的WSDL模型。
 
 在中配置基于SOAP的Web服务 [!DNL Experience Manager] as a Cloud Service，确保您具有Web服务的WSDL URL，并执行以下操作：
 
@@ -268,7 +269,7 @@ OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience 
 >[!NOTE]
 >
 > 表单数据模型支持 [OData版本4](https://www.odata.org/documentation/).
->有关配置的分步指南 [!DNL Microsoft® Dynamics 365]，在线或内部部署，请参阅 [[!DNL Microsoft® Dynamics] OData配置](ms-dynamics-odata-configuration.md).
+>有关配置的分步指南 [!DNL Microsoft®® Dynamics 365]，在线或内部部署，请参阅 [[!DNL Microsoft® Dynamics] OData配置](ms-dynamics-odata-configuration.md).
 
 1. 转到&#x200B;**[!UICONTROL 工具 > Cloud Services > 数据源]**。点按以选择要创建云配置的文件夹。
 
@@ -284,9 +285,32 @@ OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience 
 
    >[!NOTE]
    >
-   您必须选择要连接的OAuth 2.0身份验证类型 [!DNL Microsoft® Dynamics] 使用OData端点作为服务根的服务。
+   您必须选择要连接的OAuth 2.0身份验证类型 [!DNL Microsoft®® Dynamics] 使用OData端点作为服务根的服务。
 
 1. 点按 **[!UICONTROL 创建]** 以创建OData服务的云配置。
+
+## 配置Microsoft® SharePoint列表 {#config-sharepoint-list}
+
+<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
+
+要以表格形式保存数据，请使用Microsoft®SharePoint列表。 在中配置Microsoft SharePoint列表 [!DNL Experience Manager] as a Cloud Service，请执行以下操作：
+
+1. 转到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®®SharePoint]**.
+1. 选择&#x200B;**配置容器**。配置存储在选定的配置容器中。
+1. 单击 **[!UICONTROL 创建]** > **[!UICONTROL SharePoint列表]** 下拉列表中。 这将显示 SharePoint 配置向导。
+1. 指定&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 客户端 ID]**、**[!UICONTROL 客户端密码]**&#x200B;和 **[!UICONTROL OAuth URL]**。有关如何检索 OAuth URL 的客户端 ID、客户端密码、租户 ID 的信息，请参阅 [Microsoft® 文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
+   * 您可以从 Microsoft® Azure 门户检索应用程序的`Client ID` 和`Client Secret`。
+   * 在 Microsoft® Azure 门户中，将重定向 URI 添加为 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`。将 `[author-instance]` 替换为创作实例 URL。
+   * 添加API权限 `offline_access` 和 `Sites.Manage.All` 在 **Microsoft® Graph** 选项卡以提供读/写权限。 添加 `AllSites.Manage` 中的权限 **Sharepoint** 选项卡，以与SharePoint数据远程交互。
+   * 使用 OAuth URL：`https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。将 `<tenant-id>` 替换为 Microsoft® Azure 门户中应用程序的 `tenant-id`。
+
+     >[!NOTE]
+     >
+     **客户端密码**&#x200B;字段是必填还是可选字段取决于 Azure Active Directory 应用程序配置。如果应用程序配置为使用客户端密码，则必须提供客户端密码。
+
+1. 单击&#x200B;**[!UICONTROL 连接]**。连接成功后，将显示`Connection Successful`消息。
+1. 选择 **[!UICONTROL SharePoint站点]** 和 **[!UICONTROL SharePoint列表]** 下拉列表中。
+1. 点按 **[!UICONTROL 创建]** 创建Microsoft® SharePointList的云配置。
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 

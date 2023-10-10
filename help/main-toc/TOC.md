@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2a1bb951c9da5ea0fdcafd1bb82eda3f55d0a16a
+source-git-commit: baf2a91f76af83ff9790ba3a97e7dafa415086c6
 workflow-type: tm+mt
-source-wordcount: '4316'
+source-wordcount: '4324'
 ht-degree: 97%
 
 ---
@@ -580,6 +580,7 @@ ht-degree: 97%
          + [使用 OAuth 2.0 客户端凭据流的 Salesforce 应用程序集成](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
          + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
+         + [将自适应表单连接到Microsoft SharePoint列表](/help/forms/connect-aem-adaptive-form-to-sharepointlist.md)
          + [创建表单数据模型](/help/forms/create-form-data-models.md)
          + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
@@ -736,7 +737,7 @@ ht-degree: 97%
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
 + Edge交付服务 {#edge-delivery}
-   + [Edge Delivery 入门。](/help/edge/overview.md)
+   + [Edge Delivery 快速入门。](/help/edge/overview.md)
    + [使用Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)

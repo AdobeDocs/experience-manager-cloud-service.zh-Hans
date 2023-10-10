@@ -2,10 +2,10 @@
 title: 如何配置自适应表单的提交操作
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: a635a727e431a73086a860249e4f42d297882298
+source-git-commit: ba83b35f411ffd51e0032e7c7f12c7c82cd982ad
 workflow-type: tm+mt
-source-wordcount: '3388'
-ht-degree: 83%
+source-wordcount: '3395'
+ht-degree: 88%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 83%
 * [提交到 SharePoint](#submit-to-sharedrive)
 * [提交到 OneDrive](#submit-to-onedrive)
 * [提交到 Azure Blob 存储](#azure-blob-storage)
-* [提交到Power Automate](#microsoft-power-automate)
+* [提交至 Power Automate](#microsoft-power-automate)
 
 您还可以 [扩展默认提交操作](custom-submit-action-form.md) 以创建您自己的提交操作。
 
@@ -184,8 +184,9 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 1. 转到您的 **AEM Forms Author** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®SharePoint]**.
 1. 一旦您选择 **[!UICONTROL Microsoft®SharePoint]**，您将被重定向到 **[!UICONTROL SharePoint Browser]**.
 1. 选择&#x200B;**配置容器**。配置存储在选定的配置容器中。
-1. 单击&#x200B;**[!UICONTROL 创建]**。这将显示 SharePoint 配置向导。
-   ![SharePoint 配置](/help/forms/assets/sharepoint_configuration.png)
+1. 单击 **[!UICONTROL 创建]** > **[!UICONTROL SharePoint文档库]** 下拉列表中。 这将显示 SharePoint 配置向导。
+
+![SharePoint 配置](/help/forms/assets/sharepoint_configuration.png)
 1. 指定&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 客户端 ID]**、**[!UICONTROL 客户端密码]**&#x200B;和 **[!UICONTROL OAuth URL]**。有关如何检索 OAuth URL 的客户端 ID、客户端密码、租户 ID 的信息，请参阅 [Microsoft® 文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
    * 您可以从 Microsoft® Azure 门户检索应用程序的`Client ID` 和`Client Secret`。
    * 在 Microsoft® Azure 门户中，将重定向 URI 添加为 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`。将 `[author-instance]` 替换为创作实例 URL。
@@ -210,6 +211,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 ### 在自适应表单中使用SharePoint配置 {#use-sharepoint-configuartion-in-af}
 
 您可以在自适应表单中使用创建的SharePoint配置，将数据或生成的记录文档保存在SharePoint文件夹中。 执行以下步骤以在自适应表单中使用SharePoint存储配置，如下所示：
+
 1. 创建[自适应表单](/help/forms/creating-adaptive-form.md)。
 
    >[!NOTE]
@@ -330,18 +332,18 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process)。
 
 
-## 提交到Power Automate {#microsoft-power-automate}
+## 提交至 Power Automate {#microsoft-power-automate}
 
-您可以配置自适应表单以在提交时运行Microsoft® Power Automate Cloud Flow。 配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automation Cloud Flow 进行处理。 它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。以下是自适应表单与Microsoft® Power Automate集成后可执行的操作示例：
+您可以配置自适应表单以在提交时运行 Microsoft® Power Automate Cloud Flow。配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automate Cloud Flow 进行处理。它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。以下几个示例说明了在将自适应表单与 Microsoft® Power Automate 集成后可执行的操作：
 
-* 在Power Automate业务流程中使用自适应Forms数据
-* 使用Power Automate将捕获的数据发送到500多个数据源或任何公开可用的API
-* 对捕获的数据执行复杂的计算
-* 按预定义的计划将自适应Forms数据保存到存储系统
+* 在 Power Automate 业务流程中使用自适应表单数据
+* 使用 Power Automate 将捕获的数据发送到 500 多个数据源或任何公开可用的 API
+* 对捕获的数据执行复杂计算
+* 按预定义的计划将自适应表单数据保存到存储系统
 
-自适应Forms编辑器提供 **调用Microsoft® Power Automate流** 将自适应表单数据、附件和记录文档的提交操作发送到Power Automate Cloud Flow。 要使用Submit操作将捕获的数据发送到Microsoft®Power Automate， [将Formsas a Cloud Service实例与Microsoft® Power Automate连接](forms-microsoft-power-automate-integration.md)
+自适应表单编辑器提供&#x200B;**调用 Microsoft® Power Automate 流程**&#x200B;提交操作，以将自适应表单数据、附件和记录文档发送到 Power Automate Cloud Flow。要使用提交操作将捕获的数据发送到 Microsoft® Power Automate，请[将 Forms as a Cloud Service 实例与 Microsoft® Power Automate 关联](forms-microsoft-power-automate-integration.md)
 
-成功配置后，使用 [调用Microsoft® Power Automate流](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 提交操作以将数据发送到Power Automate流。
+在成功配置后，使用[调用 Microsoft® Power Automate 流程](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action)提交操作将数据发送到 Power Automate Flow。
 
 ## 使用同步或异步提交 {#use-synchronous-or-asynchronous-submission}
 
