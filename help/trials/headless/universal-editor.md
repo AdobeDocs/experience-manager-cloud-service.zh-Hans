@@ -1,5 +1,5 @@
 ---
-title: 使用通用编辑器在上下文中编辑
+title: 使用 Universal Editor 在上下文中编辑
 description: 探索如何使用通用编辑器在任何实施中的就地和上下文中编辑内容的任何方面。
 hidefromtoc: true
 index: false
@@ -7,15 +7,15 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
-# 使用通用编辑器在上下文中编辑 {#editing-in-context}
+# 使用 Universal Editor 在上下文中编辑 {#editing-in-context}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="使用通用编辑器在上下文中编辑"
+>title="使用 Universal Editor 在上下文中编辑"
 >abstract="了解 Headless 应用程序如何利用 Universal Editor 使作者能够轻而易举地作出减少分歧、符合上下文的编辑。"
 
 >[!CONTEXTUALHELP]
