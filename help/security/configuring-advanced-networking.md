@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '3571'
-ht-degree: 100%
+source-git-commit: 46ff33808e710b511db7cfcdad931c14846d8cfe
+workflow-type: tm+mt
+source-wordcount: '3600'
+ht-degree: 99%
 
 ---
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cl
 
 如果整个程序的灵活端口出口配置已就绪，则必须对每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点，以在环境级别启用联网，并可以选择声明任何端口转发规则。可以根据各个环境来配置参数以提供灵活性。
 
-应为 80/443 以外的任何目标端口说明端口转发规则，但应仅在不使用 http 或 https 协议的情况下，通过指定目标主机集（名称或 IP 以及端口）来进行。对于每个目标主机，必须将指向的目标端口映射到 30000 到 30999 之间的端口。
+应为 80/443 以外的任何目标端口说明端口转发规则，但应仅在不使用 http 或 https 协议的情况下，通过指定目标主机集（名称或 IP 以及端口）来进行。通过http/https使用端口80/443的客户端连接仍然必须在其连接中使用代理设置，才能将高级联网的属性应用于该连接。 对于每个目标主机，必须将指向的目标端口映射到 30000 到 30999 之间的端口。
 
 API 应在几秒内响应，指示更新的状态，然后在大约 10 分钟后，端点的 `GET` 方法应指示高级联网已启用。
 
