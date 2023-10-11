@@ -1,13 +1,13 @@
 ---
-title: 如何使用表单数据模型？
+title: 在AEM Forms中使用表单数据模型的流程是什么？
 description: 添加数据模型对象、服务、创建数据模型对象和子属性、配置服务、使用OData服务的导航属性。
 feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4115'
 ht-degree: 0%
 
 ---

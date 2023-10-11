@@ -1,10 +1,10 @@
 ---
-title: 强化您的 [!DNL AEM Forms] as a Cloud Service环境
+title: 如何保护或强化您的AEM Formsas a Cloud Service环境？
 description: 保护您的 [!DNL AEM Forms] as a Cloud Service的环境。
 contentOwner: khsingh
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---

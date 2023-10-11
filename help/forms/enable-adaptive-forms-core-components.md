@@ -1,11 +1,11 @@
 ---
-title: 如何在AEM Formsas a Cloud Service和本地开发环境中启用自适应Forms核心组件
+title: 如何在AEM Formsas a Cloud Service和本地开发环境中启用自适应Forms核心组件？
 description: 了解如何在AEM Formsas a Cloud Service上启用自适应Forms核心组件。
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 86%

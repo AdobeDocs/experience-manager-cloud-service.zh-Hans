@@ -3,9 +3,9 @@ title: 如何翻译基于核心组件的自适应表单？
 description: 了解如何在AEM Forms中创建表单数据模型，使用示例数据和服务测试该模型，以及为模型配置各种选项。
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '894'
 ht-degree: 4%
 
 ---

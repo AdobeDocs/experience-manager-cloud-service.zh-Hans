@@ -2,11 +2,9 @@
 title: 在基于XDP的自适应Forms中支持XFA
 description: 列出自适应Forms中支持的XFA事件、属性、脚本和验证。
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
-docset: aem65
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 5%

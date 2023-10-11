@@ -1,14 +1,14 @@
 ---
-title: 自适应表单片段
+title: 如何创建和使用自适应表单片段？
 description: 表单片段是表单的一个模块化且可重用的组件。 了解如何构建表单片段并在表单间重复使用它们以实现高效的表单装配。
 uuid: bb4830b5-82a0-4026-9dae-542daed10e6f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 1%
 1. 在编辑模式下打开自适应表单，您要在其中插入自适应表单片段。
 1. 单击 **资产** ![assets浏览器](assets/assets-browser.png) 在侧栏中。 在资产浏览器中，选择 **自适应表单片段** 从下拉菜单中查找。
 
-   您还可以选择显示所有自适应表单片段或根据其表单模型（表单模板、XML架构或基本）进行筛选。
+   您还可以选择显示所有自适应表单片段或基于其表单模型-表单模板、XML 架构或基本的过滤。
 
 1. 将自适应表单片段拖放到自适应表单上。
 

@@ -1,12 +1,12 @@
 ---
-title: 如何向选定的用户组授予规则编辑器访问权限？
+title: 如何提供对aem自适应表单规则编辑器的访问权限以选择用户组？
 description: 有多种不同类型的用户具有不同的技能来使用自适应Forms。 了解如何根据用户的角色或职能限制用户对规则编辑器的访问权限。
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 5%
 
 ---

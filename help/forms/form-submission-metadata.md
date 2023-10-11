@@ -1,12 +1,12 @@
 ---
-title: 将用户数据中的信息添加到表单提交元数据
+title: 如何更新已提交表单的元数据？
 description: 了解如何使用用户提供的数据将信息添加到已提交表单的元数据。 深入了解如何在CRX存储库中查看更新的表单提交元数据。
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
    在元数据选项卡中输入的脚本
 
-1. 单击 **[!DNL OK]**.
+1. 单击 **[!DNL OK]**。
 
 用户在被选为元数据字段的元素中输入数据后，计算的信息被记录到元数据中。 您可以在配置为存储元数据的存储库中查看元数据。
 

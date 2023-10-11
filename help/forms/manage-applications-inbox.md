@@ -1,13 +1,13 @@
 ---
-title: 如何管理AEM收件箱中的表单应用程序和任务？
+title: 如何管理AEM收件箱中的表单、应用程序和任务？
 description: AEM收件箱允许您通过提交应用程序来启动以Forms为中心的工作流，并管理任务。
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1150'
 ht-degree: 3%
 
 ---

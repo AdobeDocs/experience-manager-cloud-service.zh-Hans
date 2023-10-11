@@ -1,15 +1,15 @@
 ---
-title: 已知问题和限制 之 [!DNL AEM Forms] as a Cloud Service环境
+title: AEM Formsas a Cloud Service环境的已知问题和限制有哪些？
 description: 已知问题和限制  [!DNL AEM Forms] as a Cloud Service的环境。
 contentOwner: khsingh
 role: User, Developer
 level: Intermediate
 topic: Administration
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 95%
+source-wordcount: '369'
+ht-degree: 93%
 
 ---
 

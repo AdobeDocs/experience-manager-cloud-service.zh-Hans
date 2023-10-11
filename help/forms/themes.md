@@ -1,10 +1,10 @@
 ---
-title: 如何创建和使用主题为自适应表单设置样式？
+title: 如何创建和使用主题来设置自适应表单的样式？
 description: 使用自适应表单主题设计自适应表单的样式并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5579'
 ht-degree: 2%
 
 ---

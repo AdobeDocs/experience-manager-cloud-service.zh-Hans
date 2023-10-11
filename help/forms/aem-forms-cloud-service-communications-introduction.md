@@ -1,14 +1,14 @@
 ---
-title: Forms as a Cloud Service 通信简介
+title: 什么是Formsas a Cloud Service通信API？
 description: 使用通信API签名、认证或保护文档，自动化PDF生成过程，以及将PDF文档转换为另一种格式。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '1433'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
-
 
 # AEM Formsas a Cloud Service通信简介 {#frequently-asked-questions}
 

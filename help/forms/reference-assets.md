@@ -1,12 +1,12 @@
 ---
-title: 参考主题
+title: 如何获取自适应表单的参考主题和模板？
 description: 使用提供的参考自适应表单主题、模板和表单数据模型快速入门。
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 7%
+source-wordcount: '518'
+ht-degree: 6%
 
 ---
 

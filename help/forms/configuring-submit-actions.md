@@ -1,8 +1,8 @@
 ---
-title: 如何配置自适应表单的提交操作
+title: 如何配置自适应表单的提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: ba83b35f411ffd51e0032e7c7f12c7c82cd982ad
+source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 88%

@@ -1,13 +1,14 @@
 ---
-title: 配置AEM自适应Forms的异步提交
+title: 如何为AEM自适应Forms配置异步提交？
 description: 了解如何为自适应Forms配置异步提交。 深入了解异步提交如何用于自适应Forms。
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 1%
+source-wordcount: '751'
+ht-degree: 6%
 
 ---
 
@@ -41,7 +42,7 @@ ht-degree: 1%
 
 ## 异步提交的工作方式 {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] 为表单提交提供现成的成功和错误处理程序。 处理器是基于服务器响应执行的客户端功能。 在提交表单时，数据被传输到服务器进行验证，服务器将响应返回到客户端，其中包含有关提交的成功或错误事件的信息。 信息将作为参数传递给相关处理程序以执行函数。
+[!DNL Experience Manager Forms] 为表单提交提供现成的成功和错误处理程序。处理程序是根据服务器响应执行的客户端函数。在提交表单时，数据被传输到服务器进行验证，服务器将响应返回到客户端，其中包含有关提交的成功或错误事件的信息。 该信息作为参数传递给相关处理程序以执行该函数。
 
 此外，表单作者和开发人员可以在表单级别编写规则以覆盖默认处理程序。 有关更多信息，请参阅 [使用规则覆盖默认处理程序](#custom).
 

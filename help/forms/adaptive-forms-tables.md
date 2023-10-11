@@ -1,12 +1,12 @@
 ---
-title: 自适应表单中的表
+title: 如何将表添加到自适应表单？
 description: 使用表组件向自适应表单添加表。 在帮助进行响应式布局的同时，表组件允许添加XDP表元素。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2496'
 ht-degree: 2%
 
 ---

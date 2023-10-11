@@ -1,12 +1,12 @@
 ---
-title: 为表单字段创作上下文帮助
+title: 如何为AEM自适应Forms字段添加帮助文本？
 description: AEM Forms允许您将上下文帮助作为文本或富媒体（包括视频）添加到自适应表单字段和面板。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: AEM Formsas a Cloud Service架构
+title: 自适应Forms的AEM Formsas a Cloud Service架构和通信API
 description: 了解的架构 [!DNL AEM Forms] as a Cloud Service了解平台的可扩展性、可复原性和性能。
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: b2c8e739c4e1c5289ca263360f4f59b8a2c05f5b
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 6%
+source-wordcount: '1071'
+ht-degree: 5%
 
 ---
 

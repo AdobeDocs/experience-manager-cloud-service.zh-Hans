@@ -1,10 +1,8 @@
 ---
-title: AEM Forms中的参考主题、模板和表单数据模型
-seo-title: Reference Themes, Templates, and Form Data models
+title: 如何获取AEM表单的参考主题和模板？
 description: AEM Forms提供了示例自适应表单主题、模板和表单数据模型，以帮助您快速创建表单。
-seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 23%

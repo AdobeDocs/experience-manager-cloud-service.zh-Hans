@@ -1,10 +1,10 @@
 ---
-title: 如何为自适应表单添加新区域设置支持？
+title: 如何为基于基础组件的自适应表单添加新区域设置支持？
 description: 对于自适应Forms，除了现成可用的语言之外，您还可以为更多语言添加区域设置。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1264'
 ht-degree: 7%
 
 ---

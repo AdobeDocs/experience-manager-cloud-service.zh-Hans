@@ -1,17 +1,17 @@
 ---
-title: AEM Formsas a Cloud Service通信批量处理
+title: 轻松批量创建PDF — 掌握批处理技术 — 生成数百万份PDF文档的自助指南！
 description: 如何创建以品牌为导向的个性化通信？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1705'
 ht-degree: 2%
 
 ---
 
 # AEM Formsas a Cloud Service通信批量处理
 
-通信允许您创建、汇编并投放面向品牌的个性化通信，如业务往来函、文档、报表、索赔处理信函、福利通知、索赔处理信函、每月账单和欢迎资料包。 您可以使用Communications API将模板(XFA或PDF)与客户数据相结合，生成PDF、PS、PCL、DPL、IPL和ZPL格式的文档。
+通信允许您创建、收集和提供面向品牌的个性化通信，如业务往来函、文档、报表、索赔处理函、福利通知、每月账单和欢迎资料包。 您可以使用Communications API将模板(XFA或PDF)与客户数据相结合，生成PDF、PS、PCL、DPL、IPL和ZPL格式的文档。
 
 通信提供API用于按需生成和计划生成文档。 您可以按需使用同步API，也可以使用批处理API （异步API）生成计划的文档：
 

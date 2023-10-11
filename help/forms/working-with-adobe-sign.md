@@ -1,14 +1,14 @@
 ---
-title: 使用方法 [!DNL Adobe Sign] 在自适应表单中？
+title: 如何在自适应表单中使用Adobe Sign？
 description: 在自适应表单中使用Adobe Sign，以允许表单接收者从他们选择的设备和位置对表单进行电子签名。
 topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '3169'
+source-wordcount: '3172'
 ht-degree: 3%
 
 ---

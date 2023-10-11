@@ -1,10 +1,10 @@
 ---
-title: AEM Formsas a Cloud Service — 通信
+title: 如何使用Formsas a Cloud Service将数据与XDP和PDF模板合并，或生成PCL、ZPL和PostScript格式的输出？
 description: 自动将数据与 XDP 和 PDF 模板合并，或以 PCL、ZPL 和 PostScript 格式生成输出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '701'
 ht-degree: 7%
 
 ---

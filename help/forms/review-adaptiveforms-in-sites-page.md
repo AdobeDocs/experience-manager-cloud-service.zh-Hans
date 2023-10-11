@@ -1,12 +1,12 @@
 ---
-title: 如何创建和管理对嵌入或创建在Sites页面中的自适应Forms的审核？
+title: 如何发送自适应表单以供审查？ 如何管理aem自适应表单的审核？
 description: 审核是一种机制，它允许审核者使用“分配任务”步骤为自适应表单执行不同的任务。
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 5%
 
 ---

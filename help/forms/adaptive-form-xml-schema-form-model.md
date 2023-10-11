@@ -1,13 +1,13 @@
 ---
-title: 为自适应表单设计XML架构
+title: 如何为自适应表单设计XML架构？
 description: 了解如何为自适应表单创建XML架构，并根据该架构创建自适应表单以生成架构投诉数据。
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '952'
 ht-degree: 6%
 
 ---

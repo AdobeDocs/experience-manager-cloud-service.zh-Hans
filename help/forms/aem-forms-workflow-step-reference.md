@@ -1,12 +1,12 @@
 ---
-title: 使用以表单为中心的AEM工作流自动化业务流程
+title: 在AEM FormsCloud Service上，哪些工作流步骤可用于创建工作流或用于业务流程自动化(BPM)？
 description: 以Forms为中心的工作流允许您快速构建基于自适应Forms的工作流。 您可以使用Adobe Sign对文档进行电子签名、创建基于表单的业务流程、检索数据并将数据发送到多个数据源以及发送电子邮件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签名文档步骤，生成打印输出步骤，生成非交互式PDF输出
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '7433'
+source-wordcount: '7446'
 ht-degree: 1%
 
 ---

@@ -1,12 +1,12 @@
 ---
-title: 用于从自适应Forms调用表单数据模型服务的API
+title: 如何使用API从自适应Forms调用表单数据模型服务？
 description: 说明可用于从自适应表单字段中调用在WSDL中编写的Web服务的invokeWebServices API。
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---

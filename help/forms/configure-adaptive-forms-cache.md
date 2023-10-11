@@ -1,14 +1,14 @@
 ---
-title: 配置自适应Forms缓存
+title: 自适应表单缓存是什么？ 以及如何缓存AEM自适应表单？
 description: 自适应Forms缓存专为自适应Forms和文档设计，旨在减少渲染自适应表单或文档所需的时间。
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '974'
 ht-degree: 1%
 
 ---

@@ -1,16 +1,16 @@
 ---
-title: 自适应表单片段
+title: 什么是自适应表单片段？
 description: 自适应Forms提供了一种机制，可创建在任何自适应表单中使用的表单区段，例如面板或一组字段。 您还可以将现有面板另存为片段。
 topic-tags: author
 keywords: 添加自适应表单片段、自适应表单片段、创建表单片段、将片段添加到自适应表单、管理片段
 feature: Adaptive Forms
-source-git-commit: 290cdecdb355b5c9a872d0f12ac701d271a258d4
+exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1747'
 ht-degree: 4%
 
 ---
-
 
 # 在基于核心组件的自适应表单中创建和使用自适应Forms片段 {#adaptive-form-fragments}
 

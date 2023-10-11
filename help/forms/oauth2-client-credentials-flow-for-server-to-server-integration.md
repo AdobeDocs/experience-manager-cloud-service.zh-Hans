@@ -1,16 +1,14 @@
 ---
-title: 通过 OAuth 2.0 客户端凭据流集成 Salesforce
-seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
-description: 使用 OAuth 2.0 客户端凭据流将 Salesforce 与 AEM Forms 集成的步骤
-seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credential flow
+title: 如何使用OAuth 2.0客户端凭据流将Salesforce与AEM Forms集成？
+description: 了解如何使用OAuth 2.0客户端凭据流将Salesforce与AEM Forms集成。
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
-source-git-commit: b8366fc19a89582f195778c92278cc1e15b15617
-workflow-type: ht
-source-wordcount: '420'
-ht-degree: 100%
+exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
+source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 94%
 
 ---
-
 
 # 通过 OAuth 2.0 客户端凭据流集成 Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 

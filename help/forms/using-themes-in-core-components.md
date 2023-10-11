@@ -2,9 +2,9 @@
 title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2698'
 ht-degree: 5%
 
 ---
