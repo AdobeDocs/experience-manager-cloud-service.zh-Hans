@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8c878833118b2d8dc51e8cfa2c15ce70efbd3deb
+source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 79%
+source-wordcount: '1440'
+ht-degree: 78%
 
 ---
 
@@ -32,15 +32,11 @@ ht-degree: 79%
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!-- 
+## 发布视频 {#release-video}
 
-## Release Video {#release-video}
+请查看2023年9月发布概述视频，了解2023.9.0版本中新增功能摘要：
 
-Have a look at the September 2023 Release Overview video for a summary of the features added in the 2023.9.0 release:
-
->[!VIDEO](put new link here)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
 ## Edge交付服务 {#edge-delivery}
 
