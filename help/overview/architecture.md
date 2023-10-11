@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 100%
+source-wordcount: '2015'
+ht-degree: 91%
 
 ---
 
@@ -198,3 +198,26 @@ AEM as a Cloud Service 现在可使用 [Sling 内容分发](https://sling.apache
 * 为了自动化发布节点的生命周期，引入了 Golden Master 的概念。Golden Master 是一个专用的发布节点，任何最终用户都不会访问，且发布服务的所有节点都通过它来创建。对附加到 Golden Master 的内容存储库会执行压缩等维护操作。发布节点每天都会回收利用，不需要进行任何类型的日常维护；过去，此类维护需要停机一段时间，对于创作实例尤其如此。
 
 * 该架构将应用程序内容与应用程序代码和配置完全分离。所有代码和配置几乎都不可更改，并且都植入到用于创建各种创作和发布服务节点的基准图像中。因此，可以绝对保证每个节点都相同，并且只能通过运行 Cloud Manager 管道在全局范围内对代码和配置进行更改。
+
+## 带有Edge Delivery Services的AEM {#aem-with-edge-delivery-services}
+
+通过添加Edge Delivery Services，AEM可提供卓越的体验，从而提升参与度和转化率。 AEM通过提供可快速创作和开发的高影响力体验来实现这一点。 Edge Delivery Services是一组可组合的服务，能够启用快速开发环境，让作者能够快速更新和发布，并快速启动新站点。 因此，借助Edge Delivery Services，您可以提高转化率、降低成本，并提供超高的内容速度。
+
+更新的架构包括：
+
+* 内容管理，现在包括一系列编辑器：
+   * Universal Visual Editor
+   * 内容片段编辑器
+   * 页面编辑器
+   * 基于文档的创作；从SharePoint或Google Drive
+* Experience Delivery ，现在包括：
+   * Edge交付服务
+* 辅助服务，用于快速、高效地交付内容和代码
+
+![AEMas a Cloud Service概述 — 带有Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEMas a Cloud Service概述 — 带有Edge Delivery Services")
+
+另请参阅：
+
+* [AEMas a Cloud Service概述 — 带有Edge Delivery Services](/help/edge/overview.md)
+* [使用Edge Delivery Services](/help/edge/using.md)
+* [探索AEM与Edge Delivery Servicesas a Cloud Service的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
