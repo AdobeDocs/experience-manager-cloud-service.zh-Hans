@@ -5,7 +5,7 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 2c8bac8627ed660d2780f93f4018c8fa980e569a
+source-git-commit: ac393e4b275693fae7413fb79496052d106b219c
 workflow-type: tm+mt
 source-wordcount: '2589'
 ht-degree: 8%
@@ -106,7 +106,6 @@ Brand Portal租户的默认URL为： `https://<tenant-id>.brand-portal.adobe.com
    Brand Portal分发代理(**[!UICONTROL bpdistributionagent0]**)创建于 **[!UICONTROL 发布到Brand Portal]**.
 
    ![创建分发代理](assets/test-bpconfig2.png)
-
 
 1. 单击 **[!UICONTROL 发布到Brand Portal]** 以打开分发代理。
 
