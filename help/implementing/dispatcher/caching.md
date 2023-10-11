@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 了解AEMas a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6714e79396f006f2948c34514e5454fef84b5d8
+source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2878'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 足够大的图像及任何内容可存储在Blob存储中 {#images}
 
-2022年5月中旬之后创建的程序(特别是高于65000的程序ID)的默认行为是默认缓存，同时考虑请求的身份验证上下文。 默认情况下，旧版程序(程序ID等于或小于65000)不会缓存Blob内容。
+2022年5月中旬之后创建的程序(特别是高于65000的程序ID)的默认行为是默认缓存，同时还要考虑请求的身份验证上下文。 默认情况下，旧版程序(程序ID等于或小于65000)不会缓存Blob内容。
 
 在这两种情况下，都可以通过使用Apache在Apache/Dispatcher层的更细粒度级别覆盖缓存标头 `mod_headers` 指令，例如：
 
@@ -99,6 +99,33 @@ Define DISABLE_DEFAULT_CACHING
 ```
 
 在Dispatcher层修改缓存标头时，请小心不要缓存太广。 请参阅HTML/文本部分中的讨论 [以上](#html-text). 此外，还应确保原本应保持私有（而非缓存）的资产不属于 `LocationMatch` 指令过滤器。
+
+AEM通常将存储在Blob存储中的JCR资源（大于16KB）用作302重定向。 截获这些重定向后，CDN将跟随，内容将直接从blob存储中交付。 只能对这些响应自定义有限的一组标头。 例如，为了自定义 `Content-Disposition` 您应按如下方式使用Dispatcher指令：
+
+```
+<LocationMatch "\.(?i:pdf)$">
+  ForceType application/pdf
+  Header set Content-Disposition inline
+  </LocationMatch>
+```
+
+可以在Blob响应中自定义的标头列表包括：
+
+```
+content-security-policy
+x-frame-options
+x-xss-protection
+x-content-type-options
+x-robots-tag
+access-control-allow-origin
+content-disposition
+permissions-policy
+referrer-policy
+x-vhost
+content-disposition
+cache-control
+vary
+```
 
 #### 新的默认缓存行为 {#new-caching-behavior}
 
