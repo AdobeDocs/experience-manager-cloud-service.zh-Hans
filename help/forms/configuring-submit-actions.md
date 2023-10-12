@@ -2,7 +2,7 @@
 title: 如何配置自适应表单的提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 88%
@@ -236,6 +236,8 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 连接到配置的 Microsoft® OneDrive。
 
 ### 创建 OneDrive 配置 {#create-onedrice-configuration}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 要将 AEM Forms 连接到 Microsoft® OneDrive 存储，请执行以下操作：
 
