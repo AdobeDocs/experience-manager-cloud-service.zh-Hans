@@ -8,10 +8,10 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 73e2e84006cb6435d5bf34eef642269eeb8f5c4e
+source-git-commit: 2218aa58c6105d5fbfc08975e9e39d6476f4b173
 workflow-type: tm+mt
-source-wordcount: '4328'
-ht-degree: 97%
+source-wordcount: '4333'
+ht-degree: 99%
 
 ---
 
@@ -170,7 +170,7 @@ ht-degree: 97%
    + [AEM as a Cloud Service 的 IMS 支持](/help/security/ims-support.md)
    + [面向 AEM as a Cloud Service 的相同网站 Cookie 支持](/help/security/same-site-cookie-support.md)
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
-   + [使用WAF规则配置流量过滤器规则以过滤流量](/help/security/cdn-and-waf-rules.md)
+   + [配置流量过滤规则与 WAF 规则来过滤流量](/help/security/cdn-and-waf-rules.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
 + 入门 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -238,8 +238,8 @@ ht-degree: 97%
          + [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [从源中提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-         + [将内容摄取到Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-         + [迁移内容后编制索引](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
+         + [将内容提取到云服务中](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+         + [迁移内容后建立索引](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [查看迁移集的日志](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [删除迁移集](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [在发布实例上运行内容转移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
@@ -465,7 +465,7 @@ ht-degree: 97%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [预览 – JSON 呈现](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [使用MSM对资产重用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
+      + [通过适用于资源的 MSM 重用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 历程：基础知识{#dm-journey}
          + [第一部分：什么是 Dynamic Media – 用例 – 资源如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -512,7 +512,7 @@ ht-degree: 97%
       + [将 Dynamic Media 资源添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
       + [在网页上嵌入动态视频或图像查看器](/help/assets/dynamic-media/embed-code.md)
       + [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-      + [请求失败投放URL的错误报告](/help/assets/dynamic-media/reporting-dm.md)
+      + [请求失败的投放 URL 的错误报告](/help/assets/dynamic-media/reporting-dm.md)
       + [使用规则集转换 URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [发布 Dynamic Media 资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
       + [使用 Dynamic Media 中的“选择性发布”功能](/help/assets/dynamic-media/selective-publishing.md)
@@ -545,8 +545,8 @@ ht-degree: 97%
       + [为  [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
-   + 与Adobe Express集成 {#integration-adobe-express}
-      + [适用于Adobe Express的AEM Assets加载项](/help/assets/addon-adobe-express.md)
+   + 与 Adobe Express 集成 {#integration-adobe-express}
+      + [适用于 Adobe Express 的 AEM Assets 加载项](/help/assets/addon-adobe-express.md)
 + Forms {#forms}
    + 概述 {#forms-overview}
       + [简介](/help/forms/home.md)
@@ -568,12 +568,12 @@ ht-degree: 97%
          + [将 AEM Forms as a Cloud Service 与 Adobe Sign 集成](/help/forms/adobe-sign-integration-adaptive-forms.md)
          + [将 AEM Forms as a Cloud Service 与 DocuSign 集成](/help/forms/integrate-docusign-adaptive-forms.md)
          + [将 AEM Forms as a Cloud Service 与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-         + [将自适应Forms集成到Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
-         + [查看和了解自适应Forms Analytics报表](/help/forms/view-understand-aem-forms-analytics-reports.md)
+         + [将自适应表单集成到 Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
+         + [查看和理解自适应表单分析报告](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
          + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [将基于Foundation组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-external-web-page.md)
+         + [将基于 Foundation 组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
          + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
@@ -600,7 +600,7 @@ ht-degree: 97%
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-            + [为基于核心组件的自适应Forms添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
+            + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -737,13 +737,14 @@ ht-degree: 97%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
-+ Edge交付服务 {#edge-delivery}
-   + [Edge Delivery 快速入门。](/help/edge/overview.md)
-   + [使用Edge Delivery](/help/edge/using.md)
++ Edge Delivery Services {#edge-delivery}
+   + [Edge Delivery 快速入门](/help/edge/overview.md)
+   + [使用 Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)
    + [开发人员门户（其他资源）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+   + [最佳实践 — 设置和使用](/help/headless/best-practices-setup-use.md)
    + 设置 {#setup}
       + [简介](/help/headless/setup/introduction.md)
       + [配置](/help/headless/setup/create-configuration.md)
@@ -1046,4 +1047,4 @@ ht-degree: 97%
    + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
    + [属性和类型](/help/implementing/universal-editor/attributes-types.md)
    + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
-   + [使用通用编辑器进行本地AEM开发](/help/implementing/universal-editor/local-dev.md)
+   + [使用 Universal Editor 进行本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
