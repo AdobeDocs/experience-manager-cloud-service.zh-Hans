@@ -4,9 +4,9 @@ description: 本文介绍了如何在Experience Manager中创建、修改和使�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 220350e6669c38ea602c2796ec1d5559992338ec
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2503'
 ht-degree: 21%
 
 ---
@@ -303,6 +303,18 @@ Adobe Experience Manager Assets的企业范围部署能够存储许多资源。 
   </tr>
  </tbody>
 </table>
+
+## 删除默认搜索Facet {#removing-default-search-facets}
+
+Adobe建议您在删除默认搜索Facet时要小心，以免出现性能问题。 删除默认搜索Facet也可能会影响默认功能行为。
+
+请勿删除以下隐藏字段，因为它会导致OmniSearch和智能收藏集的查询性能问题：
+
+* group.2_group.type=dam：Asset
+
+* group.1_group.type=nt：folder
+
+* group.p.or=true
 
 ## 恢复默认搜索Facet {#restoring-default-search-facets}
 
