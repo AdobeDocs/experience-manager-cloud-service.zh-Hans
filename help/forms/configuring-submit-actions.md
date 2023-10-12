@@ -2,7 +2,7 @@
 title: 如何配置自适应表单的提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 89e61c009890e2052c5db74b38c93fd54e697cd3
+source-git-commit: 6d949d9f31cc13b30f8ba06058911ddfe8e817af
 workflow-type: tm+mt
 source-wordcount: '3395'
 ht-degree: 88%
@@ -229,15 +229,17 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 提交到 OneDrive {#submit-to-onedrive}
 
-**[!UICONTROL 提交到 OneDrive]**&#x200B;提交操作将自适应表单与 Microsoft® OneDrive 连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的 Microsoft® OneDrive 存储。要在自适应表单中使用[!UICONTROL 提交到 OneDrive] 提交操作，请执行以下操作：
+**[!UICONTROL 提交到 OneDrive]**&#x200B;提交操作将自适应表单与 Microsoft® OneDrive 连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的 Microsoft® OneDrive 存储。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+要在自适应表单中使用[!UICONTROL 提交到 OneDrive] 提交操作，请执行以下操作：
 
 1. [创建 OneDrive 配置](#create-a-onedrive-configuration-create-onedrive-configuration)：它将 AEM Forms 连接到 Microsoft® OneDrive 存储。
 2. [在自适应表单中使用“提交到 OneDrive”提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：它将自适应表单
 连接到配置的 Microsoft® OneDrive。
 
 ### 创建 OneDrive 配置 {#create-onedrice-configuration}
-
->[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
 要将 AEM Forms 连接到 Microsoft® OneDrive 存储，请执行以下操作：
 
