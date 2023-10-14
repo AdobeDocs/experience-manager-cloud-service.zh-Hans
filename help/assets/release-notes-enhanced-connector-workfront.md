@@ -2,10 +2,10 @@
 title: 的发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 的发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 9981fb1ac5ddf5d918cf76476fa185c524749c70
+source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 2%
+source-wordcount: '1355'
+ht-degree: 1%
 
 ---
 
@@ -15,17 +15,20 @@ ht-degree: 2%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.13的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 为2023年9月11日。
+最新版本1.9.14的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 为2023年10月13日。
 
 ## 发行亮点 {#release-highlights}
 
-最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包括以下更新：
+最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含以下错误修复：
 
-* Experience Manager增强型连接器在删除项目的事件订阅时，会从Workfront获取所有事件订阅，这会对应用程序的性能产生影响。
+* 在“高级设置”下禁用事件订阅时，您仍然可以选择 **订阅文档更新事件以更新AEM资源元数据**， **项目完成后，将所有项目资源发布到Brand Portal**、和 **启用评论同步**.
 
-* 将资源从Workfront发送到Experience Manager时，资源MIME类型未设置为 `dc:format` Experience Manager中的属性。
+* 在Workfront中预览存储在Experience Manager中的某些资源时，这些资源无法正确呈现。
 
-* 存储在Experience Manager增强型连接器上的Workfront项目ID包含重复项。
+* 重新配置与Workfront的Experience Manager连接时，未成功创建事件订阅，例如评论同步更新、删除、文档更新。
+
+* 针对链接文件夹的创建、更新、启用链接文件夹、启用评论同步启用和禁用以及高级设置保存连接器的主要API性能改进。
+
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe建议您 [升级到最新的1.9.13版本](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe建议您 [升级到最新的1.9.14版本](/help/assets/workfront-connector-install.md) 的 [!DNL Workfront for Experience Manager enhanced connector].
 
 ## 已知问题 {#known-issues}
 
@@ -43,6 +46,14 @@ ht-degree: 2%
 * 当您使用经典Workfront体验时， **[!UICONTROL 发送至]** 中提供的选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 此 **[!UICONTROL 发送至]** 使用可正确使用该选项 **[!UICONTROL 文档操作]** 下拉列表。 此 **[!UICONTROL 发送至]** 选项对以下各项正常工作 **[!UICONTROL 更多]** 下拉列表和 **[!UICONTROL 文档操作]** 下拉列表已添加到新的Workfront Experience中。
 
 ## 之前版本 {#previous-releases}
+
+### 2023年9月版 {#september-2023-release}
+
+* Experience Manager增强型连接器在删除项目的事件订阅时，会从Workfront获取所有事件订阅，这会对应用程序的性能产生影响。
+
+* 将资源从Workfront发送到Experience Manager时，资源MIME类型未设置为 `dc:format` Experience Manager中的属性。
+
+* 存储在Experience Manager增强型连接器上的Workfront项目ID包含重复项。
 
 ### 2023年8月版 {#august-2023-release}
 
