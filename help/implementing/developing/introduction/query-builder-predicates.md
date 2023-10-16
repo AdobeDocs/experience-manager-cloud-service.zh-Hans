@@ -2,9 +2,9 @@
 title: 查询生成器谓词参考
 description: AEMas a Cloud Service中查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2295'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 1%
 * **`p.limit`**  — 表示页面大小的数字。
 * **`p.guessTotal`**  — 建议：避免计算完整结果总计，这可能代价高昂。 指示可计数的最大总数的数字（例如1000，一个数字，为用户提供对粗略大小和精确数字的足够反馈，以实现较小结果）。 或者， `true` 以只计算到所需的最小值 `p.offset` + `p.limit`.
 * **`p.excerpt`**  — 如果设置为 `true`，在结果中包含全文摘录。
+* **`p.indexTag`**  — 如果设置，则将在查询中包含索引标记选项(请参阅 [查询选项索引标记](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag))。
+* **`p.facetStrategy`**  — 如果设置为 `oak`，查询生成器会将Facet提取委派给Oak(请参阅 [Facet](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets))。
 * **`p.hits`**  — （仅适用于JSON servlet）选择点击作为JSON写入的方式，并使用这些标准点击（通过ResultHitWriter服务可扩展）。
    * **`simple`**  — 最小项目，如 `path`， `title`， `lastmodified`， `excerpt` （如果设置）。
    * **`full`**  — 节点的sling JSON渲染，使用 `jcr:path` 指示点击的路径。 默认情况下，仅列出节点的直接属性，包括更深的树，其中 `p.nodedepth=N`，0表示整个无限子树。 添加 `p.acls=true` 在给定结果项中包含当前会话的JCR权限(映射： `create` = `add_node`， `modify` = `set_property`， `delete` = `remove`)。

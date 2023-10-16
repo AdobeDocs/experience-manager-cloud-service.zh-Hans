@@ -3,10 +3,10 @@ title: 查询和索引最佳实践
 description: 了解如何根据 Adobe 的最佳实践指南优化索引和查询。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 94%
+source-wordcount: '3141'
+ht-degree: 46%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 94%
 
 Oak 文档提供了如何执行查询的[高级概述。](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing)这是本文件所述所有优化活动的基础。
 
-AEM as a Cloud Service 提供查询性能工具，该工具旨在支持实现高效查询。
+AEMas a Cloud Service提供 [查询性能工具](#query-performance-tool)，旨在支持实施高效查询。
 
 * 它可显示已执行的查询及其相关性能特征和查询计划。
 * 从仅显示查询计划到执行完整查询，它允许在不同级别执行特殊查询。
@@ -77,7 +77,7 @@ AEM as a Cloud Service 提供查询性能工具，该工具旨在支持实现高
 
 每个查询都应该使用索引来提供最佳性能。在大多数情况下，现有的开箱即用的索引应足以处理查询。
 
-有时需要将自定义属性添加到现有索引中，以使用该索引查询其他约束。有关详细信息，请参阅文档[内容搜索和索引](/help/operations/indexing.md#changing-an-index)。此 [JCR查询备忘单](#jcr-query-cheatsheet) 本文档的部分描述了如何对索引进行属性定义才能支持特定的查询类型。
+有时需要将自定义属性添加到现有索引中，以使用该索引查询其他约束。有关详细信息，请参阅文档[内容搜索和索引](/help/operations/indexing.md#changing-an-index)。此 [JCR查询备忘单](#jcr-query-cheatsheet) 本文档的部分描述了如何对索引进行属性定义，才能支持特定的查询类型。
 
 ### 使用正确的标准 {#use-the-right-criteria}
 
@@ -105,13 +105,177 @@ AEM as a Cloud Service 提供查询性能工具，该工具旨在支持实现高
 
 这样的限制还可以防止查询引擎达到 100000 个节点的&#x200B;**遍历限制**，这会导致强制停止查询。
 
-如果必须完全处理潜在的大型结果集，请参阅本文档的[对大型结果的查询](#queries-with-large-result-sets)部分。
+请参阅部分 [具有大型结果集的查询](#queries-with-large-result-sets) 如果必须完全处理潜在的大型结果集，则显示此文档。
 
-## JCR 查询备忘单 {#jcr-query-cheatsheet}
+## 查询性能工具 {#query-performance-tool}
+
+查询性能工具(位于 `/libs/granite/operations/content/diagnosistools/queryPerformance.html` 并可通过 [Cloud Manager中的开发人员控制台](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries))提供 — 
+* 任何“慢查询”的列表；当前定义为读取/扫描超过5000行的查询。
+* “常见查询”列表
+* “Explain Query”工具，用于了解Oak如何执行特定查询。
+
+![查询性能工具](assets/query-performance-tool.png)
+
+“慢查询”和“常用查询”表包括 — 
+* 查询语句本身。
+* 上一个执行查询的线程的详细信息，允许识别执行查询的页面或应用程序功能。
+* 查询的“读取优化”分数。
+   * 计算方式为为执行查询而扫描的行数/节点数与读取的匹配结果数之间的比率。
+   * 对于可以在索引处处理每个限制（以及任何排序）的查询，其分数通常为90%或更高。
+* 最大行数的详细信息 — 
+   * 读取 — 指示某行已作为结果集的一部分包括在内。
+   * 已扫描 — 指示在基础索引查询（在索引查询的情况下）的结果中包含行，或从节点存储（在存储库遍历的情况下）读取行。
+
+这些表有助于识别未完全编制索引的查询(请参阅 [使用索引](#use-an-index) 或读取的节点过多(另请参阅 [存储库遍历](#repository-traversal) 和 [索引遍历](#index-traversal))。 此类查询将突出显示，并将相应的关注领域标示为红色。
+
+此 `Reset Statistics` 提供了用于删除表中收集的所有现有统计信息的选项。 这允许执行特定查询（通过应用程序本身或Explain查询工具）并分析执行统计信息。
+
+### 说明查询
+
+Explain查询工具允许开发人员了解查询执行计划(请参阅 [读取查询执行计划](#reading-query-execution-plan))，包括执行查询时使用的任何索引的详细信息。 这可用于了解查询索引的有效性，以便预测或追溯分析其性能。
+
+#### 说明查询
+
+要解释查询，请执行以下操作：
+* 使用选择适当的查询语言 `Language` 下拉菜单。
+* 将查询语句输入到 `Query` 字段。
+* 如果需要，可使用提供的复选框选择查询的执行方式。
+   * 默认情况下，无需执行JCR查询即可标识查询执行计划（QueryBuilder查询并非如此）。
+   * 提供了三个用于执行查询的选项 — 
+      * `Include Execution Time`  — 执行查询，但不尝试读取任何结果。
+      * `Read first page of results`  — 执行查询并读取20个结果的第一个“页面”（复制执行查询的最佳实践）。
+      * `Include Node Count`  — 执行查询并读取整个结果集(通常不建议这样做 — 请参阅 [索引遍历](#index-traversal))。
+
+#### 查询说明弹出窗口 {#query-explanation-popup}
+
+![查询说明弹出窗口](./assets/query-explanation-popup.png)
+
+选择后 `Explain`，用户会看到一个弹出窗口，描述查询说明的结果（和执行，如果选中）。
+此弹出窗口包含的详细信息 — 
+* 执行查询时使用的索引（或者如果使用执行查询，则无索引） [存储库遍历](#repository-traversal))。
+* 执行时间(如果 `Include Execution Time` 复选框已选中)和读取的结果计数(如果 `Read first page of results` 或 `Include Node Count` 复选框)。
+* 执行计划，允许对查询的执行方式进行详细分析 — 请参阅 [读取查询执行计划](#reading-query-execution-plan) 以了解如何解读此信息。
+* 前20个查询结果的路径(如果 `Read first page of results` 复选框已选中)
+* 查询计划的完整日志，显示为执行此查询而考虑的索引的相对成本（成本最低的索引将被选择）。
+
+#### 读取查询执行计划 {#reading-query-execution-plan}
+
+查询执行计划包含预测（或解释）特定查询的性能所需的一切。 通过比较原始JCR（或查询生成器）查询中的限制和排序与在基础索引（Lucene、Elastic或Property）中执行的查询，了解查询的执行效率。
+
+请考虑以下查询 — 
+
+```
+/jcr:root/content/dam//element(*, dam:Asset) [jcr:content/metadata/dc:title = "My Title"] order by jcr:created
+```
+
+...其中包含 — 
+* 3个限制
+   * 节点类型 (`dam:Asset`)
+   * 路径(子项 `/content/dam`)
+   * 属性 (`jcr:content/metadata/dc:title = "My Title"`)
+* 排序依据 `jcr:created` 属性
+
+说明此查询会导致以下计划 — 
+
+```
+[dam:Asset] as [a] /* lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +jcr:content/metadata/dc:title:My Title ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }] where ([a].[jcr:content/metadata/dc:title] = 'My Title') and (isdescendantnode([a], [/content/dam])) */
+```
+
+在此计划中，描述在基础索引中执行的查询的部分是 — 
+
+```
+lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +jcr:content/metadata/dc:title:My Title ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
+```
+
+计划的这一部分指出：
+* 索引用于执行此查询 — 
+   * 在本例中，Lucene索引 `/oak:index/damAssetLucene-9` 由于将使用，因此剩余信息采用Lucene查询语法。
+* 所有3个限制都由索引处理 — 
+   * 节点类型限制
+      * 隐含，因为 `damAssetLucene-9` 仅索引dam：Asset类型的节点。
+   * 路径限制
+      * 因为 `+:ancestors:/content/dam` 显示在Lucene查询中。
+   * 属性限制
+      * 因为 `+jcr:content/metadata/dc:title:My Title` 显示在Lucene查询中。
+* 排序由索引处理
+   * 因为 `ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]`  显示在Lucene查询中。
+
+此类查询可能执行良好，因为从索引查询返回的结果不会在查询引擎中进一步过滤（除了访问控制过滤）。 但是，如果不遵循最佳实践，此类查询仍有可能执行缓慢 — 请参阅 [索引遍历](#index-traversal) 下。
+
+考虑不同的查询 — 
+
+```
+/jcr:root/content/dam//element(*, dam:Asset) [jcr:content/metadata/myProperty = "My Property Value"] order by jcr:created
+```
+
+...其中包含 — 
+* 3个限制
+   * 节点类型 (`dam:Asset`)
+   * 路径(子项 `/content/dam`)
+   * 属性 (`jcr:content/metadata/myProperty = "My Property Value"`)
+* 排序依据 `jcr:created` 属性**
+
+说明此查询会导致以下计划 — 
+
+```
+[dam:Asset] as [a] /* lucene:damAssetLucene-9-custom-1(/oak:index/damAssetLucene-9-custom-1) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }] where ([a].[jcr:content/metadata/myProperty] = 'My Property Value') and (isdescendantnode([a], [/content/dam])) */
+```
+
+在此计划中，描述在基础索引中执行的查询的部分是 — 
+
+```
+lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ordering:[{ propertyName : jcr:created, propertyType : UNDEFINED, order : ASCENDING }]
+```
+
+计划的这一部分指出：
+* 索引仅处理（3个）限制中的2个 — 
+   * 节点类型限制
+      * 隐含，因为 `damAssetLucene-9` 仅索引dam：Asset类型的节点。
+   * 路径限制
+      * 因为 `+:ancestors:/content/dam` 显示在Lucene查询中。
+* 属性限制 `jcr:content/metadata/myProperty = "My Property Value"` 不是在索引处执行，而是将作为查询引擎筛选对基础Lucene查询的结果应用。
+   * 这是因为 `+jcr:content/metadata/myProperty:My Property Value` 不会出现在Lucene查询中，因为此属性未在 `damAssetLucene-9` 用于此查询的索引。
+
+此查询执行计划将生成以下每个资产 `/content/dam` 从索引中读取，然后由查询引擎进一步筛选（这将仅包括那些与结果集中的非索引属性限制匹配的属性）。
+
+即使只有一小部分资源符合限制 `jcr:content/metadata/myProperty = "My Property Value"`，查询将需要读取大量节点，才能（尝试）填充请求的“页面”结果。 这可能会导致查询性能不佳，表现为查询性能较低 `Read Optimization` 分数)，并且可能导致出现警告消息，指示大量节点正在被遍历(请参阅 [索引遍历](#index-traversal))。
+
+要优化此第二个查询的性能，请创建 `damAssetLucene-9` 索引(`damAssetLucene-9-custom-1`)并添加以下属性定义 — 
+
+```
+"myProperty": {
+  "jcr:primaryType": "nt:unstructured",
+  "propertyIndex": true,
+  "name": "jcr:content/metadata/myProperty"
+}
+```
+
+## JCR查询备忘单 {#jcr-query-cheatsheet}
 
 为了支持创建高效的 JCR 查询和索引定义，[JCR 查询备忘表](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet)可供下载，并可在开发过程中用作参考。
 
 它包含 QueryBuilder、XPath 和 SQL-2 的示例查询，并涵盖了在查询性能方面表现不同的多个场景。它还提供了关于如何构建或定制 Oak 索引的建议。本备忘单的内容适用于AEMas a Cloud Service和AEM 6.5。
+
+## 索引定义最佳实践 {#index-definition-best-practices}
+
+以下是定义或扩展索引时要考虑的一些最佳实践。
+
+* 对于具有现有索引的节点类型(例如 `dam:Asset` 或 `cq:Page`)除了添加新索引之外，还希望扩展OOTB索引。
+   * 将新索引（特别是全文索引）添加到 `dam:Asset` 强烈建议不要使用节点类型(请参阅 [此注释](/help/operations/indexing.md##index-names-index-names))。
+* 添加新索引时
+   * 始终定义“lucene”类型的索引。
+   * 在索引定义（和关联的查询）中使用索引标记，并且 `selectionPolicy = tag` 以确保该索引仅用于预期查询。
+   * 确保 `queryPaths` 和 `includedPaths` 都会提供（通常使用相同的值）。
+   * 使用 `excludedPaths` 以排除不包含有用结果的路径。
+   * 使用 `analyzed` 属性仅在需要时，例如，当您需要仅对该属性使用全文查询限制时。
+   * 始终指定 `async = [ async, nrt ] `， `compatVersion = 2` 和 `evaluatePathRestrictions = true`.
+   * 仅指定 `nodeScopeIndex = true` 如果您需要节点范围全文索引。
+
+>[!NOTE]
+>
+>有关更多信息，请参阅 [Oak Lucene索引文档](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+
+Automated Cloud Manager管道检查将强制执行上述某些最佳实践。
 
 ## 具有大型结果集的查询 {#queries-with-large-result-sets}
 
@@ -134,3 +298,21 @@ AEM as a Cloud Service 提供查询性能工具，该工具旨在支持实现高
 * 执行此查询的 Java 代码：`com.adobe.granite.queries.impl.explain.query.ExplainQueryServlet::getHeuristics`，以帮助识别查询的创建者。
 
 有了这些信息，可以使用本文件[优化查询](#optimizing-queries)部分中描述的方法优化该查询。
+
+### 索引遍历 {#index-traversal}
+
+使用索引但仍读取大量节点的查询将记录一条类似于以下内容的消息（请注意术语） `Index-Traversed` 而不是 `Traversed`)。
+
+```text
+05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
+```
+
+出现这种情况的原因有很多 — 
+1. 并非查询中的所有限制都可以在索引上处理。
+   * 在这种情况下，正在从索引读取最终结果集的超集，并随后在查询引擎中过滤。
+   * 这比在基础索引查询中应用限制慢许多倍。
+1. 查询按属性排序，该属性在索引中未标记为“ordered”。
+   * 在这种情况下，索引返回的所有结果必须由查询引擎读取并在内存中排序。
+   * 这比在基础索引查询中应用排序慢许多倍。
+1. 查询的执行器正在尝试迭代大型结果集。
+   * 发生这种情况有多种原因 —  |原因 |缓解 | ------------------------ |委员会 `p.guessTotal` （或使用非常大的guessTotal）导致QueryBuilder迭代大量结果计数结果 |提供 `p.guessTotal` 具有适当的值 | |在查询生成器中使用较大或无界限制(即 `p.limit=-1`) |使用适当的值 `p.limit` （最好为1000或更低） | |在Query Builder中使用过滤谓词，从基础JCR查询中过滤大量结果 |用可在基础JCR查询中应用的限制替换筛选谓词 | |在QueryBuilder中使用基于比较器的排序 |替换为基础JCR查询中基于属性的排序（使用按顺序索引的属性） | |由于访问控制筛选了大量结果 |将其他索引属性或路径限制应用于查询以镜像访问控制 | |使用具有大偏移量的“偏移分页” |考虑使用 [键集分页](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| |迭代大量或不限数量的结果 |考虑使用 [键集分页](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| |选择的索引不正确 |在查询和索引定义中使用标记以确保使用预期的索引|
