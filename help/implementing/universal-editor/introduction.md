@@ -1,18 +1,18 @@
 ---
 title: Universal Editor 简介
-description: 了解通用编辑器如何支持对任何Headless和Headful体验进行“所见即所得”(WYSIWYG)编辑。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
+description: 了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地编辑任何 Headless 和 Headful 体验。了解它如何帮助内容作者投放卓越的体验、提高他们的内容速度以及如何提供高水平的开发人员体验。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '919'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Universal Editor 简介 {#introduction}
 
-了解通用编辑器如何支持对任何Headless和Headful体验进行“所见即所得”(WYSIWYG)编辑。 了解它如何帮助内容作者提供卓越的体验、提高他们的内容速度，以及如何提供最先进的开发人员体验。
+了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地编辑任何 Headless 和 Headful 体验。了解它如何帮助内容作者投放卓越的体验、提高他们的内容速度以及如何提供高水平的开发人员体验。
 
 ## 背景 {#background}
 
