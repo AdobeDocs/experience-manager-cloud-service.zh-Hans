@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
-source-git-commit: 2b242cb10fb5d1da725c1396633d2db779a78639
-workflow-type: tm+mt
+exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+workflow-type: ht
 source-wordcount: '1686'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明 {#release-notes}
 
@@ -66,7 +66,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 -->
 
-* **从数据源批量导入资源**：管理员现在[可将大量资源从数据源导入到 AEM Assets](/help/assets/bulk-import-assets-view.md)。管理员不再需要将单个资源或文件夹上传到 AEM Assets。支持批量导入的数据源包括 Azure、AWS、Google Cloud 和 Dropbox。
+* **从数据源批量导入资源**：管理员现在[可将大量资源从数据源导入到 AEM Assets](/help/assets/bulk-import-assets-view.md)。管理员不再需要将单独的资源或文件夹上传到 AEM Assets。支持批量导入的数据源包括 Azure、AWS、Google Cloud 和 Dropbox。
 
   ![从数据源批量导入资源](/help/release-notes/assets/bulk-import.png)
 
@@ -88,7 +88,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 * Experience Manager Assets 现在包含新版本 9 的 `damAssetLucene` 索引。`damAssetLucene-9` 将 Oak Query 分面计数的行为更改为[不再评估对底层搜索索引返回的分面计数的访问控制](/help/assets/search-assets.md)，而这导致加快搜索响应速度。
 
-### [!DNL Experience Manager Assets] 中的预发布功能 {#prerelease-features-assets}
+### 可在 [!DNL Experience Manager Assets] 中找到的预发布功能 {#prerelease-features-assets}
 
 * **Dynamic Media**：[Dynamic Media 中支持视频具有多字幕和多音轨](/help/assets/dynamic-media/video.md#about-msma) - 现在可轻松地将多个字幕和多个音轨添加到主视频。此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
@@ -106,7 +106,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * [**Google reCAPTCHA 企业支持**](/help/forms/captcha-adaptive-forms.md)：在自适应表单中使用 Google reCAPTCHA Enterprise 以增强对欺诈活动和垃圾邮件的防御，从而提供更安全的用户体验。借助高级风险分析和无缝集成，真实用户可以轻松提交表单，同时有效阻止机器人。
 
 
-### [!DNL Forms] 中的预发布功能 {#pre-release-features-available-in-forms-channel}
+### 可在 [!DNL Forms] 中找到的预发布功能 {#pre-release-features-available-in-forms-channel}
 
 * **用于表单的 Adobe Analytics with Experience Cloud Setup Automation**：现在按几下按钮即可启用 Adobe Analytics with Experience Cloud Setup Automation。通过它，可将 AEM Forms as a Cloud Service 与 Experience Platform 标签和 Adobe Analytics 建立联系以捕获和跟踪您已发布的表单的绩效量度。
 
