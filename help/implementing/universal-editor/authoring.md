@@ -3,9 +3,9 @@ title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2410'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -190,15 +190,15 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 组件模式 {#component-mode}
 
-在组件模式下，内容作者可以单击选择组件以进行编辑，包括：
+在组件模式下，内容作者可以单击以选择组件来对其进行编辑，包括：
 
-* [编辑纯文本](#editing-content) 就位。
-* [编辑富文本](#editing-rich-text) 替换组件边栏中显示的其他格式选项。
+* 就地[编辑纯文本](#editing-content)。
+* 使用组件边栏上显示的其他格式选项来就地[编辑富文本](#editing-rich-text)。
 * [编辑内容片段](#edit-content-fragment)
 
 ![组件模式](assets/component-mode.png)
 
-当您选择 [内容片段](/help/assets/content-fragments/content-fragments.md)时，其详细信息将显示在组件边栏中，您可以在其中编辑内容片段。
+在选择[内容片段](/help/assets/content-fragments/content-fragments.md)时，其详细信息将会显示在组件边栏中，您可以在其中编辑内容片段。
 
 >[!TIP]
 >
@@ -208,7 +208,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 编辑器占据窗口的大部分区域，并在其中呈现在[地址栏](#location-bar)中指定的页面。
 
-* 如果编辑器位于 [组件模式，](#component-mode) 内容将可编辑，但您无法关注链接。
+* 如果编辑器处于[组件模式](#component-mode)，则内容是可编辑的，但您无法访问链接。
 * 如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
 
 ![编辑器](assets/editor.png)
@@ -237,13 +237,13 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ##### 编辑 {#edit}
 
-时间 [组件模式，](#component-mode) 所选组件的编辑选项将显示在组件边栏中。 在组件边栏中，您可以编辑所选的组件。 但是，您也可以点按或单击编辑按钮。
+在[组件模式](#component-mode)中，所选组件的编辑选项将显示在组件边栏中。在组件边栏中，您可以编辑选定的组件。不过，您也可以点按或单击“编辑”按钮。
 
 ![“编辑”图标](assets/edit.png)
 
-点击或单击编辑按钮将打开 [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) 在新选项卡中。 这允许您完全访问内容片段编辑器以编辑关联的内容片段。
+点按或单击“编辑”按钮将在一个新的选项卡中打开[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。这将允许您访问内容片段编辑器的全部功能以编辑关联的内容片段。
 
-根据工作流的需要，您可能希望在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
+根据工作流的需要，您可能希望在 Universal Editor 中或直接在内容片段编辑器中编辑内容片段。
 
 >[!TIP]
 >
@@ -289,39 +289,39 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ## 编辑内容 {#editing-content}
 
-编辑内容是简单而直观的。在编辑模式下([媒体模式](#media-mode) 和 [组件模式](#component-mode))，将鼠标悬停在编辑器中的内容上时，可编辑内容会以蓝色框突出显示。
+编辑内容是简单而直观的。在编辑模式（[媒体模式](#media-mode)和[组件模式](#component-mode)）下，随着在编辑器中将光标悬停在内容上方，将用蓝色框突出显示可编辑的内容。
 
 ![可编辑内容用蓝色框突出显示](assets/editable-content.png)
 
 >[!TIP]
 >
->请注意，在编辑模式下，点按或单击内容会选择内容进行编辑。 如果您要使用链接来导航内容，请切换到[预览模式](#preview-mode)。
+>请注意，在编辑模式中，点按或单击内容会选择该内容以进行编辑。如果您要使用链接来导航内容，请切换到[预览模式](#preview-mode)。
 
 根据使用的[模式](#mode-rail)和选定内容，您可能有不同的就地编辑选项，并且您可以使用[组件边栏](#component-rail)查看内容的其他属性。
 
 ### 编辑纯文本 {#edit-plain-text}
 
-如果您在 [组件模式](#component-mode) 并选择一个纯文本组件，您可以通过双击或双击该组件就地编辑文本。
+如果您处于[组件模式](#component-mode)下并已选择一个纯文本组件，则可以通过双击或点按两次该组件来就地编辑文本。
 
 ![编辑内容](assets/editing-content.png)
 
 按“输入/回车”键或点按或单击文本框外部可保存更改。
 
-当您点击或单击以选择文本组件时，其详细信息将显示在组件边栏中。 您还可以编辑边栏中的文本。
+在点按或单击以选择文本组件时，其详细信息将显示在组件边栏中。您还可以编辑边栏中的文本。
 
 ![编辑组件边栏中的文本](assets/ue-editing-text-component-rail.png)
 
-此外，组件边栏中还提供了有关文本的详细信息。 一旦焦点离开组件边栏中已编辑的字段，更改将自动保存。
+此外，组件边栏中还提供了文本详细信息。一旦焦点离开组件边栏中的编辑字段，更改就会自动保存。
 
 ### 编辑富文本 {#edit-rich-text}
 
-如果您在 [组件模式](#component-mode) 并选择一个富文本组件，您可以通过双击或双击该组件就地编辑文本。
+如果您处于[组件模式](#component-mode)下并已选择一个富文本组件，则可以通过双击或点按两次该组件来就地编辑文本。
 
 按“输入/回车”键或点按或单击文本框外部可保存更改。
 
 ![编辑富文本组件](assets/rich-text-editing.png)
 
-此外，组件边栏中还提供了格式设置选项和文本详细信息。一旦焦点离开组件边栏中已编辑的字段，更改将自动保存。
+此外，组件边栏中还提供了格式设置选项和文本详细信息。一旦焦点离开组件边栏中的编辑字段，更改就会自动保存。
 
 ### 编辑媒体 {#edit-media}
 
@@ -349,13 +349,13 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 所选内容片段的内容模型中定义的字段可在组件边栏中显示和编辑。
 
-如果您选择与内容片段相关的字段，则内容片段会加载到组件边栏中，并且字段会自动滚动到。
+如果您选择与内容片段相关的字段，则内容片段会加载到组件边栏中，并且会自动滚动到该字段。
 
-一旦焦点离开组件边栏中已编辑的字段，更改将自动保存。
+一旦焦点离开组件边栏中的编辑字段，更改就会自动保存。
 
 如果您想改为在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑您的内容片段，请单击模式边栏中的[编辑按钮](#edit)。
 
-根据工作流的需要，您可能希望在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
+根据工作流的需要，您可能希望在 Universal Editor 中或直接在内容片段编辑器中编辑内容片段。
 
 ### 向容器添加组件 {#adding-components}
 
@@ -368,7 +368,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 >[!TIP]
 >
->使用热键 `A` 将组件添加到所选容器。
+>使用热键 `A` 可将组件添加到选定容器。
 
 ### 从容器中删除组件 {#deleting-components}
 
@@ -383,7 +383,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 >[!TIP]
 >
->使用热键 `Shift+Backspace` 以从容器中删除选定的组件。
+>使用热键 `Shift+Backspace` 可从容器中删除选定组件。
 
 ### 对容器中的组件重新排序 {#reordering-components}
 
@@ -402,7 +402,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
 
-请注意，在预览模式中，点按或单击内容的反应与对内容阅读器的反应一样。如果要选择要编辑的内容，请切换到编辑模式，例如 [组件模式](#component-mode) 或 [媒体模式。](#media-mode)
+请注意，在预览模式中，点按或单击内容的反应与对内容阅读器的反应一样。如果要选择内容以供编辑，请切换到编辑模式，如[组件模式](#component-mode)或[媒体模式](#media-mode)。
 
 ## 其他资源 {#additional-resources}
 
