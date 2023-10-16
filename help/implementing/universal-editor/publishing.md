@@ -3,7 +3,7 @@ title: 使用 Universal Editor 发布内容
 description: 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
 ht-degree: 100%
 
