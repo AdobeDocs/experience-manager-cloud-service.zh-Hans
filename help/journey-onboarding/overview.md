@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 入门历程简介
 description: 您可以在此处了解 AEM as a Cloud Service 入门历程的指导概述。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: bba8310b9ba560ab9b6c2f9bea3e5c3cbec9228b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1256'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 93%
 
 ## 简介 {#introduction}
 
-Adobe Experience Manager是一套功能强大的可组合内容服务，可跨任何渠道快速提供极具影响力的个性化体验，从而让所有人都能了解内容。 **Edge交付服务** 是Adobe Experience Manager中的最新创新，可实现极快的内容速度并提供卓越的体验。 了解如何开始使用Edge Delivery Services，请访问 [此页面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). 要了解如何使用Edge Delivery Services，请参阅 [开发人员教程](https://www.hlx.live/developer/tutorial) 页面。
+Adobe Experience Manager 是一组功能强大的可组合内容服务，它在任何渠道上都快速地投放极具影响力的个性化体验，从而为所有人展示各种内容。**Edge Delivery Services** 是 Adobe Experience Manager 中最新的创新，通过它，可极快地投放内容并打造卓越的体验。请通过访问[此页面](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)，了解如何开始使用 Edge Delivery Services。要了解如何使用 Edge Delivery Services，请参阅[开发人员教程](https://www.hlx.live/developer/tutorial)页面。
 
-载入是指定的系统管理员未您的组织设置 AEM as a Cloud Service 的过程。 这个过程包括云资源的初始配置，以及根据用户的工作职责为其分配角色。因此，每个成员都可以登录和访问其 AEM as a Cloud Service 资源。
+入门培训是所指派的系统管理员为您的组织设置 AEM as a Cloud Service 的过程。这个过程包括云资源的初始配置，以及根据用户的工作职责为其分配角色。因此，每个成员都可以登录和访问其 AEM as a Cloud Service 资源。
 
 ![入门历程](/help/journey-onboarding/assets/onboarding-journey.png)
 
@@ -80,7 +80,7 @@ Adobe Experience Manager是一套功能强大的可组合内容服务，可跨�
 | 3 | [Admin Console](admin-console.md) | 了解什么是 Admin Console，如何登录，以及如何以系统管理员身份验证您的配置文件。 | 系统管理员 |
 | 4 | [分配 Cloud Manager 产品配置文件](assign-profiles-cloud-manager.md) | 查看 Cloud Manager 产品配置文件，了解如何将团队成员分配给 Cloud Manager 产品配置文件。 | 系统管理员 |
 | 5 | [访问 Cloud Manager](cloud-manager.md) | 了解如何访问 Cloud Manager，以便您可以设置项目资源。 | 系统管理员 |
-| 6 | [创建项目](create-program.md) | 了解如何使用 Cloud Manager 创建程序。 | 系统管理员 |
+| 6 | [创建项目](create-program.md) | 了解如何使用 Cloud Manager 创建项目。 | 系统管理员 |
 | 7 | [创建环境](create-environments.md) | 了解如何使用 Cloud Manager 创建环境。 | 系统管理员 |
 | 8 | [分配 AEM 产品配置文件](assign-profiles-aem.md) | 了解系统管理员如何将您的团队成员分配给 AEM as a Cloud Service 中的产品配置文件。 | 系统管理员 |
 | 9 | [开发人员和部署管理员任务](developers.md) | 可选 – 了解作为开发人员如何访问和管理 Cloud Manager Git，以及作为部署管理员如何在 Cloud Manager 中设置管道和部署代码。 | 开发人员和部署管理员 |
