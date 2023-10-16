@@ -8,9 +8,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 66a6897a28bb7fa57992c6782c001629f0f1d0c5
+source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
 workflow-type: tm+mt
-source-wordcount: '4325'
+source-wordcount: '4330'
 ht-degree: 99%
 
 ---
@@ -537,6 +537,8 @@ ht-degree: 99%
       + [监视资源、文件夹和收藏集](/help/assets/manage-notifications-assets-view.md)
       + [管理报表](/help/assets/manage-reports-assets-view.md)
       + [管理标记](/help/assets/tagging-management-assets-view.md)
+   + 最佳实践{#best-practices}
+      + [搜索最佳实践](/help/assets/search-best-practices.md)
    + 与 Adobe Workfront 集成 {#integrations}
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
       + [配置资源元数据映射](/help/assets/configure-asset-metadata-mapping.md)
