@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -21,25 +21,25 @@ ht-degree: 69%
 
 为了确保转出不被阻止，可能的定义可以包括：
 
-* 转出期间哪个页面（Blueprint或Live Copy）优先
+* 转出期间哪个页面（Blueprint 或 Live Copy）优先
 * 哪些页面会进行重命名（以及重命名的方式）
-* 这如何影响任何已发布的内容
+* 这将对任何发布的内容产生哪些影响
 
-Adobe Experience Manager (AEM)现成的默认行为是发布的内容不受影响。 因此，如果在Live Copy分支中手动创建的页面已发布，则该内容在冲突处理和转出后仍会发布。
+Adobe Experience Manager (AEM) 现成的默认行为是发布的内容不会受到影响。因此，如果在 Live Copy 分支中手动创建的页面已发布，则仍将在冲突处理和转出后发布该内容。
 
 除了标准功能外，还可以添加自定义的冲突处理程序来实施其他规则。它们还允许将操作发布为单独的过程。
 
 ### 示例场景 {#example-scenario}
 
-在以下部分中，是一个新页面的示例 `b` 同时在Blueprint和Live Copy分支（手动创建）中使用来创建来说明解决冲突的各种方法：
+在以下部分中，使用在 Blueprint 和 Live Copy 分支（手动创建）中创建的新页面 `b` 的示例来说明解决冲突的各种方法：
 
 * Blueprint：`/b`
 
-  带有一个子页面的母版页， `bp-level-1`
+  带一个子页面的母版页，`bp-level-1`
 
 * Live Copy：`/b`
 
-  在Live Copy分支中手动创建的带有一个子页面的页面， `lc-level-1`
+  在 Live Copy 分支中手动创建的带一个子页面的页面，`lc-level-1`
 
    * 在发布为 `/b` 时与子页面一起激活
 
@@ -48,9 +48,9 @@ Adobe Experience Manager (AEM)现成的默认行为是发布的内容不受影�
 |  | 转出前的 Blueprint | 转出前的 Live Copy | 转出前的 Publish |
 |---|---|---|---|
 | 值 | `b` | `b` | `b` |
-| 注释 | 在 Blueprint 分支中创建，可供转出 | 在Live Copy分支中手动创建 | 包含在 Live Copy 分支中手动创建的页面 `b` 的内容 |
+| 注释 | 在 Blueprint 分支中创建，可供转出 | 在 Live Copy 分支中手动创建 | 包含在 Live Copy 分支中手动创建的页面 `b` 的内容 |
 | 值 | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
-| 注释 |  | 在Live Copy分支中手动创建 | 包含在 Live Copy 分支中手动创建的页面 `child-level-1` 的内容 |
+| 注释 |  | 在 Live Copy 分支中手动创建 | 包含在 Live Copy 分支中手动创建的页面 `child-level-1` 的内容 |
 
 ## 转出管理器和冲突处理 {#rollout-manager-and-conflict-handling}
 
@@ -62,7 +62,7 @@ Adobe Experience Manager (AEM)现成的默认行为是发布的内容不受影�
 
 ## 冲突处理程序 {#conflict-handlers}
 
-AEM 使用冲突处理程序来解决在将内容从 Blueprint 转出到 Live Copy 时存在的任何页面冲突。重命名页面是解决此类冲突的常用（而非唯一）方法。 可以运行多个冲突处理程序以允许选择不同的行为。
+AEM 使用冲突处理程序来解决在将内容从 Blueprint 转出到 Live Copy 时存在的任何页面冲突。重命名页面是解决此类冲突的常用（而非唯一）方法。可以运行多个冲突处理程序以允许选择不同的行为。
 
 AEM 提供：
 
@@ -76,10 +76,10 @@ AEM 提供：
 
 默认冲突处理程序为 `ResourceNameRolloutConflictHandler`
 
-* 使用此处理程序时，Blueprint页面将获得优先权。
-* 此处理程序的服务排名设置得很低。 即，低于的默认值 `service.ranking` 属性，因为假定自定义处理程序需要更高的排名。 然而，排名并不是在必要时确保灵活性的绝对最低标准。
+* 对于此处理程序，Blueprint 页面将获得优先权。
+* 此处理程序的服务排名设置得很低。即低于 `service.ranking` 属性的默认值，因为假设自定义处理程序需要更高的排名。然而，排名并不是在必要时确保灵活性的绝对最低标准。
 
-此处理程序为 Blueprint 页面提供优先权。例如，Live Copy页面 `/b` 在Live Copy分支中移至 `/b_msm_moved`.
+此处理程序为 Blueprint 页面提供优先权。例如，Live Copy 页面 `/b` 在 Live Copy 分支中移至 `/b_msm_moved`。
 
 * Live Copy：`/b`
 
@@ -98,7 +98,7 @@ AEM 提供：
 |  | 转出后的 Blueprint | 转出后的 Live Copy | 转出后的 Live Copy | 转出后的 Publish |
 |---|---|---|---|---|
 | 值 | `b` | `b` | `b_msm_moved` | `b` |
-| 注释 |  | 具有已转出的 Blueprint 页面 `b` 的内容 | 具有在 Live Copy 分支中手动创建的页面 `b` 的内容 | 无更改；包含原始页面的内容 `b` 之前在Live Copy分支中手动创建，现在称为 `b_msm_moved` |
+| 注释 |  | 具有已转出的 Blueprint 页面 `b` 的内容 | 具有在 Live Copy 分支中手动创建的页面 `b` 的内容 | 无更改；包含已在 Live Copy 分支中手动创建的原始页面 `b` 的内容，现称作 `b_msm_moved` |
 | 值 | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | 注释 |  |  | 无更改 | 无更改 |
 
@@ -111,7 +111,7 @@ AEM 提供：
 * 根据您的要求进行命名。
 * 根据您的要求进行开发/配置。
    * 例如，您可以开发一个处理程序，以便为 Live Copy 页面获得优先权。
-* 可使用进行配置 [OSGi配置](/help/implementing/deploying/configuring-osgi.md). 具体而言：
+* 可使用 [OSGi 配置](/help/implementing/deploying/configuring-osgi.md)来配置它。具体而言：
    * **服务排名**&#x200B;定义与其他冲突处理程序相关的顺序 (`service.ranking`)。
       * 默认值为 `0`。
 
@@ -123,22 +123,22 @@ AEM 提供：
 >
 >当冲突处理被停用时，AEM 不会指示将忽略冲突。由于在这种情况下必须显式配置此行为，因此假定它是所需的行为。
 
-在这种情况下，Live Copy将获得优先权。 不会复制 Blueprint 页面 `/b`，并且 Live Copy 页面 `/b` 保持不变。
+在此情况下，Live Copy 将获得优先权。不会复制 Blueprint 页面 `/b`，并且 Live Copy 页面 `/b` 保持不变。
 
 * Blueprint：`/b`
 
-  它根本不会被复制，而是会被忽略。
+  根本不复制它，而是忽略它。
 
 * Live Copy：`/b`
 
-  它保持不变。
+  保持不变。
 
 #### 转出后 {#after-rollout-no-conflict}
 
 |  | 转出后的 Blueprint | 转出后的 Live Copy | 转出后的 Publish |
 |---|---|---|---|
 | 值 | `b` | `b` | `b` |
-| 注释 |  | 无更改；具有页面的内容 `b` 在Live Copy分支中手动创建的 | 无更改；包含页面的内容 `b` 在Live Copy分支中手动创建的 |
+| 注释 |  | 无更改；具有在 Live Copy 分支中手动创建的页面 `b` 的内容 | 无更改；包含在 Live Copy 分支中手动创建的页面 `b` 的内容 |
 | 值 | `/bp-level-1,` | `/lc-level-1` | `/lc-level-1` |
 | 注释 |  | 无更改 | 无更改 |
 
