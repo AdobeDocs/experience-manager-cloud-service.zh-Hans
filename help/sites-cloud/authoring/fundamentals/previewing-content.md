@@ -3,9 +3,9 @@ title: 预览内容
 description: 了解如何使用 AEM 预览服务在内容上线前进行预览。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ AEM 提供站点预览服务，让开发人员和内容作者可以在网站到�
 
 >[!NOTE]
 >
->因为内容是 *已发布* 在预览环境中，它可通过URL访问(因此不需要访问AEM)。
+>将内容&#x200B;*发布*&#x200B;到预览环境时，可通过 URL 访问它（因此无需访问 AEM）。
 
 有关预览环境的更多详细信息，请参阅[管理环境。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
 
@@ -37,7 +37,7 @@ AEM 提供站点预览服务，让开发人员和内容作者可以在网站到�
 
    >[!NOTE]
    >
-   >因为内容是 *已发布* 在预览环境中，它可通过URL访问(因此不需要访问AEM)。
+   >将内容&#x200B;*发布*&#x200B;到预览环境时，可通过 URL 访问它（因此无需访问 AEM）。
 
 除了使用向导中显示的 URL 查看预览内容之外，您还可以将 `preview-` 添加到生产实例的发布 URL。
 
