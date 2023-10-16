@@ -2,7 +2,7 @@
 title: 从源中提取内容
 description: 了解如何从源Adobe Experience Manager (AEM)实例提取内容，以便稍后将其传输到Cloud ServiceAEM实例。
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 44a3f3c4ca08cffa06056ea85adc58e3cf1f2f1c
+source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 28%
@@ -36,7 +36,7 @@ ht-degree: 28%
 
 1. 此时会显示“提取”对话框。 单击 **Extract** 开始提取阶段。
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
    >您可以选择在提取阶段覆盖暂存容器。 如果 **覆盖暂存容器** 禁用，它可以加快内容路径或包含版本设置未更改的后续迁移的提取速度。 但是，如果内容路径或包含版本设置已更改，则 **覆盖暂存容器** 应该启用。
