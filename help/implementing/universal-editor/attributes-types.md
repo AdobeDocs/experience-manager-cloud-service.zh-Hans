@@ -3,7 +3,7 @@ title: 属性和类型
 description: 了解 Universal Editor 所需的数据属性和类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
 ht-degree: 100%
 
