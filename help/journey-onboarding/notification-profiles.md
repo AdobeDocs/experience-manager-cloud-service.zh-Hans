@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe 有时需要就 AEM as a Cloud Service 环境联系用户。除了产品�
 
 >[!NOTE]
 >
->不支持将组分配给主动通知。 您需要将用户直接分配给产品配置文件。
+>不支持将组分配给主动通知。相反，您需要直接将用户分配到产品配置文件。
 
 为了让正确的用户收到这些通知，您需要配置和分配用户配置文件，如本文档所述。
 
