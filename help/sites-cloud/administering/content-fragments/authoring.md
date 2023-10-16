@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2253'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 96%
 
      >[!WARNING]
      >
-     >原始编辑器将在同一选项卡中打开。 不建议同时打开两个编辑器。
+     >原始编辑器将在同一选项卡中打开。建议不要同时打开两个编辑器。
 
 * 左侧面板：显示内容片段的&#x200B;**[变体](#variations)**&#x200B;及其&#x200B;**字段**：
    * 可使用这些链接[在内容片段结构中导航](#navigate-structure)
@@ -468,13 +468,13 @@ ht-degree: 96%
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>选项卡占位符</b></p><p>虽然不是以实际图标表示，但 <b>制表符占位符</b> 即表示在左侧面板中。 <br>它也显示在中心面板中，水平显示或下拉列表（当有太多内容无法水平显示时）中。</p> </td>
+   <td><p><b>选项卡占位符</b></p><p><b>选项卡占位符</b>显示在左侧面板中，但未用实际图标表示。<br>它也显示在中央面板中，要么如下所示以水平方式显示，要么显示在下拉列表中（如果项目太多而无法以水平方式显示）。</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>
 </table>
 
-## 很高兴知道 {#good-to-know}
+## 应了解的要点 {#good-to-know}
 
 此外：
 
