@@ -3,9 +3,9 @@ title: 查询和索引最佳实践
 description: 了解如何根据 Adobe 的最佳实践指南优化索引和查询。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 1cdda5f793d853493f1f61eefebbf2af8cdeb6cb
+source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '3144'
 ht-degree: 46%
 
 ---
@@ -315,4 +315,15 @@ Automated Cloud Manager管道检查将强制执行上述某些最佳实践。
    * 在这种情况下，索引返回的所有结果必须由查询引擎读取并在内存中排序。
    * 这比在基础索引查询中应用排序慢许多倍。
 1. 查询的执行器正在尝试迭代大型结果集。
-   * 发生这种情况有多种原因 —  |原因 |缓解 | ------------------------ |委员会 `p.guessTotal` （或使用非常大的guessTotal）导致QueryBuilder迭代大量结果计数结果 |提供 `p.guessTotal` 具有适当的值 | |在查询生成器中使用较大或无界限制(即 `p.limit=-1`) |使用适当的值 `p.limit` （最好为1000或更低） | |在Query Builder中使用过滤谓词，从基础JCR查询中过滤大量结果 |用可在基础JCR查询中应用的限制替换筛选谓词 | |在QueryBuilder中使用基于比较器的排序 |替换为基础JCR查询中基于属性的排序（使用按顺序索引的属性） | |由于访问控制筛选了大量结果 |将其他索引属性或路径限制应用于查询以镜像访问控制 | |使用具有大偏移量的“偏移分页” |考虑使用 [键集分页](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| |迭代大量或不限数量的结果 |考虑使用 [键集分页](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)| |选择的索引不正确 |在查询和索引定义中使用标记以确保使用预期的索引|
+   * 发生此情况的原因有很多，如下所列：
+
+| 原因 | 缓解 |
+|----------|--------------|
+| 委员会的任务 `p.guessTotal` （或使用非常大的guessTotal）导致QueryBuilder迭代大量结果计数结果 | 提供 `p.guessTotal` 具有适当的值 |
+| 在查询生成器中使用较大或无界限制(即 `p.limit=-1`) | 使用适当的值 `p.limit` （最好为1000或更低） |
+| 在Query Builder中使用过滤谓词，从基础JCR查询中过滤大量结果 | 将筛选谓词替换为可在基础JCR查询中应用的限制 |
+| 在QueryBuilder中使用基于比较器的排序 | 替换为基础JCR查询中基于属性的排序（使用按排序索引的属性） |
+| 由于访问控制筛选了大量结果 | 将其他索引属性或路径限制应用于查询以镜像访问控制 |
+| 使用具有大偏移量的“偏移分页” | 考虑使用 [键集分页](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| 大量或无界结果的迭代 | 考虑使用 [键集分页](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination) |
+| 选择的索引不正确 | 在查询和索引定义中使用标记以确保使用预期的索引 |
