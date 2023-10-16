@@ -1,8 +1,8 @@
 ---
 source-git-commit: cada650e940aa941538a43ffb1f9a16d1f0b8a61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '83'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 # 代码片段 {#snippets}
@@ -11,11 +11,11 @@ ht-degree: 62%
 
 [![通过 30 天试用了解我们的 Headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
 
-## Edge Delivery Services创作 {#edge-delivery-authoring}
+## Edge Delivery Services 创作 {#edge-delivery-authoring}
 
-[!BADGE 要为Edge Delivery Services创作AEM内容，请单击此处。]{type=Positive url="/help/edge/overview.md" tooltip="为Edge Delivery Services创作AEM内容"}
+[!BADGE 要为 Edge Delivery Services 创作 AEM 内容，请单击此处。]{type=Positive url="/help/edge/overview.md" tooltip="为 Edge Delivery Services 创作 AEM 内容"}
 
-## 为配置文件分配组的IMS支持 {#ims-group-profiles}
+## IMS 是否支持将组分配给配置文件 {#ims-group-profiles}
 
 >[!NOTE]
 >
