@@ -2,9 +2,9 @@
 title: 搜索最佳实践 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: 在应用程序中搜索、查找和检索资源元数据的最佳实践。
 contentOwner: KK
-source-git-commit: 31526510cc32c9587e76da522d9377afd837d991
+source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2544'
 ht-degree: 3%
 
 ---
@@ -299,13 +299,11 @@ The newly added assets are not indexed.
 
 <table>
     <tr>
-        <th> S.No.</th>
         <th> 参数 </th>
         <th> 管理员视图 </th>
         <th> 资源视图 </th>
     </tr>
     <tr>
-        <td> 1. </td>
         <td> 自定义Facet </td>
         <td> 您可以添加 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">根据需要自定义搜索彩块化。</td>
         <td> 资产视图部分支持自定义Facet。 支持的Facet包括：
@@ -319,37 +317,31 @@ The newly added assets are not indexed.
         </td>
     </tr>
     <tr>
-        <td> 2. </td>
         <td> 运算符 </td>
         <td> 支持AND、OR和NOT </td>
         <td> 不受支持 </td>
     </tr>
     <tr>
-        <td> 3. </td>
         <td> 通配符 </td>
         <td> 支持问号(？) 和星号(*)。</td>
         <td> 不受支持 </td>
     </tr>
     <tr>
-        <td> 4. </td>
         <td> 提升搜索结果 </td>
         <td> 支持 </td>
         <td> 不受支持 </td>
     </tr>
      <tr>
-        <td> 5. </td>
         <td> 一次清除所有筛选器 </td>
         <td> 不受支持 </td>
         <td> 支持</td>
     </tr>
      <tr>
-        <td> 6. </td>
         <td> 文件/文件夹/文件和文件夹 </td>
         <td> 支持 </td>
         <td> “文件类型”下提供了选择文件夹的选项 </td>
     </tr>
      <tr>
-        <td> 7. </td>
         <td> 资源状态 </td>
         <td> 
             支持的选项包括：
@@ -374,7 +366,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 8. </td>
         <td> 文件类型 </td>
         <td>
         支持的选项包括：
@@ -398,7 +389,6 @@ The newly added assets are not indexed.
         </td>
     </tr>
      <tr>
-        <td> 9. </td>
         <td> 文件大小 </td>
         <td>
         支持的选项包括：
@@ -410,7 +400,6 @@ The newly added assets are not indexed.
         <td> 不受支持 </td>
     </tr>
      <tr>
-        <td> 10. </td>
         <td> 其他筛选器 </td>
         <td>
             <ul>
@@ -427,7 +416,6 @@ The newly added assets are not indexed.
         <td> 不受支持 </td>
     </tr>
      <tr>
-        <td> 11. </td>
         <td> 查找近似项 </td>
         <td> 支持 </td>
         <td> 不受支持 </td>
