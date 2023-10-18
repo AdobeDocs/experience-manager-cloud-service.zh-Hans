@@ -3,12 +3,10 @@ cloud: Experience Cloud
 product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
-feature: Release Information
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: 2bb6c6b5846264145543134f607bd6520865b4ed
 workflow-type: tm+mt
 source-wordcount: '4330'
 ht-degree: 99%
