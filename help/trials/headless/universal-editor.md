@@ -1,13 +1,13 @@
 ---
 title: 使用 Universal Editor 在上下文中编辑
-description: 探索如何使用通用编辑器在任何实施中的就地和上下文中编辑内容的任何方面。
+description: 探索如何使用 Universal Editor 在任何实施中就地编辑和在上下文中编辑内容的任何方面。
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 226df8999d1344ffe8acb2a9ce75b58634300a11
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

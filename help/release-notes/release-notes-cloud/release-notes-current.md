@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: ab0fc832eb66bcf9a0fcd4f08b481845f3664e14
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 78%
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 78%
 
 ## 发布日期 {#release-date}
 
-的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前功能版本(2023.9.0)为2023年9月28日。 下一个功能版本(2023.10.0)计划于2023年10月26日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的当前功能版本 (2023.9.0) 的发布日期为 2023 年 9 月 28 日。下一个功能版本 (2023.10.0) 计划于 2023 年 10 月 26 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -38,11 +38,11 @@ ht-degree: 78%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## Edge交付服务 {#edge-delivery}
+## Edge Delivery Services {#edge-delivery}
 
-Edge Delivery是一套新的可组合服务，重点是在客户互动时实现内容影响的最大化，以推动可衡量的业务成果。
+Edge Delivery 是一组新的可组合服务，专注于最大限度地发挥内容的作用，以便在客户交互时推动可衡量的业务成果。
 
-在文章中了解有关Edge Delivery Services的更多信息 [此处](/help/edge/overview.md).
+有关 Edge Delivery Services 的更多信息，请参阅[此处](/help/edge/overview.md)的文章。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -50,19 +50,19 @@ Edge Delivery是一套新的可组合服务，重点是在客户互动时实现�
 
 **将元数据表单分配给文件夹**
 
-现在可将元数据表单分配给 部署中的特定文件夹。随后该文件夹中的所有资源（包括子文件夹中的资源）显示在所分配的元数据表单中定义的属性。
+现在可将元数据表单分配给部署中的特定文件夹。随后该文件夹中的所有资源（包括子文件夹中的资源）显示在所分配的元数据表单中定义的属性。
 
 ![将元数据表单分配给文件夹](/help/release-notes/assets/assign-to-folder.png)
 
 ### 管理视图中的新增功能 {#admin-view-features}
 
-* **将AEM Assetsas a Cloud Service功能与基于文档的创作功能集成到Edge Delivery Services中**：将AEM Assets与基于文档的创作集成以便Edge Delivery Services能够让网站作者执行以下操作 [在AEM Assets Word或Google文档中创作文档时，使用Microsoft存储库中可用的图像](/help/edge/using.md#integrate-assets-edge).
+* **将 AEM Assets as a Cloud Service 与 Edge Delivery Services 的基于文档的创作集成**：将 AEM Assets 与 Edge Delivery Services 的基于文档的创作集成，使网站作者能够[在 Microsoft Word 或 Google Docs 中创作文档时使用 AEM Assets 存储库中提供的图像](/help/edge/using.md#integrate-assets-edge)。
 
-* **提取ZIP存档**：能够选择在Experience Manager中管理的ZIP存档并 [将文件直接解压到Experience Manager中](/help/assets/manage-digital-assets.md#extract-zip-archives) 而不下载。
+* **提取 ZIP 存档**：可选择在 Experience Manager 中管理的 ZIP 存档，并且无需下载文件，即可[将文件直接提取到 Experience Manager 中](/help/assets/manage-digital-assets.md#extract-zip-archives)。
 
   ![为组固定项目](/help/release-notes/assets/extract-archive.png)
 
-### [!DNL Experience Manager Assets] 中的预发布功能 {#prerelease-features-assets}
+### 可在 [!DNL Experience Manager Assets] 中找到的预发布功能 {#prerelease-features-assets}
 
 * **Dynamic Media**：[Dynamic Media 中支持视频具有多字幕和多音轨](/help/assets/dynamic-media/video.md#about-msma) - 现在可轻松地将多个字幕和多个音轨添加到主视频。此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
@@ -95,13 +95,13 @@ Edge Delivery是一套新的可组合服务，重点是在客户互动时实现�
 
 * **[使用规则编辑器中的自定义错误处理程序处理错误](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)**：现在可调用自定义函数以响应外部服务返回的错误，并为最终用户提供量身定制的响应。例如，可在后端为特定的错误代码调用自定义工作流或通知客户服务已停止。
 
-* **[AEM Forms Designer的64位版本](/help/forms/installing-configuring-designer.md)**：AEM Forms Designer的64位版本提供了增强的性能、可扩展性和内存管理，可增强您的表单创建体验。 借助64位架构，您可以轻松处理更大、更复杂的项目，从而确保无缝的设计工作流程和优化的效率。 通过这个尖端版本提升您的表单设计功能并拥抱AEM Forms Designer的未来。
+* **[64 位版本的 AEM Forms Designer](/help/forms/installing-configuring-designer.md)**：64 位版本的 AEM Forms Designer 提供了增强的性能、可扩展性和内存管理，以提升您的表单创建体验。利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
 
 ### 早期采用者计划 {#forms-early-adopter}
 
-* **[使用DocAssurance API（通信API的一部分）Protect您的文档](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API允许您通过签名和加密文档来保护敏感信息。 通过加密，可将文档内容转换为无法读取的格式，从而确保只有获得授权的用户可访问。这一层加强的保护不仅防止未经授权地查看宝贵的数据，还能让人安心。利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。此服务使用数字签名和认证确保只有预期的接收者可更改文档。
+* **[用 DocAssurance API（Communication API 的一部分）保护文档](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API 使您能够通过为文档签名和加密来保护敏感信息。通过加密，可将文档内容转换为无法读取的格式，从而确保只有获得授权的用户可访问。这一层加强的保护不仅防止未经授权地查看宝贵的数据，还能让人安心。利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。此服务使用数字签名和认证确保只有预期的接收者可更改文档。
 
-  你可以写信给 `aem-forms-early-adopter-program@adobe.com` 从您的官方电子邮件id加入率先采用者计划并请求获取该功能的访问权限。
+  您可以通过您的官方电子邮件 ID 向 `aem-forms-early-adopter-program@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
 
 * **[Headless 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**：使用 Headless 自适应表单使您的开发人员可创建、发布和管理可通过 API 而非传统图形用户界面访问和交互的交互式表单。Headless 自适应表单可帮助您：
 
@@ -114,11 +114,11 @@ Edge Delivery是一套新的可组合服务，重点是在客户互动时实现�
 
 ## [!DNL Experience Manager]as a[!DNL Cloud Service] Foundation {#foundation}
 
-### 与促销活动相关的URL参数的新CDN缓存行为 {#cache-url-params}
+### 与营销活动相关的 URL 参数的新 CDN 缓存行为 {#cache-url-params}
 
-对于新环境，CDN将默认删除与营销相关的查询参数，以提高营销活动性能和缓存命中率。 现有环境不受影响。 [了解详情.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+对于新环境，CDN 默认删除与营销相关的查询参数，以提高营销活动的效果和缓存命中率。现有环境不受影响。[了解详情。](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
-### 流量过滤规则（包括WAF规则）早期采用者计划 {#waf-early-adopter}
+### 流量过滤规则（包括 WAF 规则）早期采用者计划 {#waf-early-adopter}
 
 基于以下项筛选 CDN 上的流量：
 * 请求头和属性（例如，IP 地址）
