@@ -3,15 +3,15 @@ title: 如何将自适应表单添加到AEM Sites页面？
 description: 了解如何在AEM Sites页面上创建或添加自适应表单。 还可了解将表单集成到网站的好处和各种方式。
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: bb2ee07f8750c15959ecdaa65f0932b05edfcd39
+exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
+source-git-commit: a1b63508ed7040c719778bd1c422728bc0e2e4f2
 workflow-type: tm+mt
 source-wordcount: '3229'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
-
-# 在 AEM Sites 页面或体验片段中添加自适应表单 {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# 将自适应表单添加到 AEM Sites 页面或体验片段 {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -195,7 +195,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
 ## 在AEM Sites页面或体验片段中为表单配置提交操作 {#configure-submit-action-for-form}
 
-提交操作允许您选择通过自适应表单捕获的数据的目标。 当用户单击自适应表单上的提交按钮时，将触发此操作。自适应表单包括一些现成的提交操作。 您还可以扩展默认提交操作以创建自己的自定义提交操作。 要为表单配置提交操作，请执行以下操作：
+提交操作让您选择通过自适应表单捕获的数据的目标。当用户单击自适应表单上的提交按钮时，将触发此操作。自适应表单包括一些现成的提交操作。 您还可以扩展默认提交操作以创建自己的自定义提交操作。 要为表单配置提交操作，请执行以下操作：
 
 1. 打开包含自适应表单的AEM页面编辑器或体验片段。
 1. 打开内容树，然后选择 **[!UICONTROL 自适应Forms容器]** ，用于托管您的自适应表单。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。
