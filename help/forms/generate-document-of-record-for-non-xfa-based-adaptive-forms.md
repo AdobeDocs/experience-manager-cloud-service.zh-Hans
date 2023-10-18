@@ -2,9 +2,9 @@
 title: 如何为AEM Forms生成记录文档(DoR)？
 description: 了解如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4142'
 ht-degree: 4%
 
 ---
@@ -503,3 +503,8 @@ XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有�
 1. 打开Cloud ServiceSDK配置管理器。 默认URL为： <http://localhost:4502/system/console/configMgr>.
 1. 找到并打开 **[!UICONTROL 自适应Forms和交互式通信Web渠道]** 配置。
 1. 指定XCI文件的路径，然后单击 **[!UICONTROL 保存]**.
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

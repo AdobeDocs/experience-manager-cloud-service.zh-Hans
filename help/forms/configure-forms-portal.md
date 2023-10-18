@@ -2,9 +2,9 @@
 title: 如何在Experience Manager Sites页面上创建Forms门户？
 description: 了解如何在AEM Sites页面上创建Forms Portal并使用现成的核心组件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1841'
 ht-degree: 4%
 
 ---
@@ -182,3 +182,19 @@ AEM Forms提供了以下开箱即用的门户组件：
 1. 选择 **[!UICONTROL 启用]** 复选框，以启用表单的自动保存。 您可以配置以下内容：
 * 默认情况下， [!UICONTROL 自适应表单事件] 设置为“true”，这意味着表单将在每个事件后自动保存。
 * 在 [!UICONTROL 触发器]，配置以根据事件的发生或在特定的时间间隔后触发自动保存。
+
+## 另请参阅 {#see-also}
+
+{{see-also}}
+
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
+>* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
+>* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
+
+-->

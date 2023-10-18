@@ -3,7 +3,7 @@ title: 如何在自适应表单核心组件中创建可重复面板？
 description: 了解如何在自适应表单中创建一个或多个可重复的部分。
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 6%
@@ -225,9 +225,14 @@ A panel has various layouts options. The Layout for accordian design option has 
 ```
 
 
-## 相关文章
+## 另请参阅 {#see-also}
 
-* [创建自适应表单](creating-adaptive-form-core-components.md)
-* [为表单创建样式或主题](using-themes-in-core-components.md)
-* [使用规则编辑器将动态行为添加到表单](rule-editor.md)
-* [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [创建自适应表单](creating-adaptive-form-core-components.md)
+>* [为表单创建样式或主题](using-themes-in-core-components.md)
+>* [使用规则编辑器将动态行为添加到表单](rule-editor.md)
+>* [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)

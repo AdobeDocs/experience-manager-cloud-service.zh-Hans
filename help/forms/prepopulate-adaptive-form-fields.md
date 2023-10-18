@@ -3,7 +3,7 @@ title: 如何预填自适应表单字段？
 description: 使用现有数据预填自适应表单的字段，用户可通过使用其社交个人资料登录在表单中预填基本信息。
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 4%

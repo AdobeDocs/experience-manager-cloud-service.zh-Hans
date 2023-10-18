@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 6%
+source-wordcount: '959'
+ht-degree: 7%
 
 ---
 
@@ -298,3 +298,7 @@ A `bindRef` 是自适应表单组件与架构元素或属性之间的连接。 �
 **为什么我无法为可重复的子表单（minOccours或maxOccurs值大于1）拖动子表单的单个元素（从任何复杂类型生成的结构）？**
 
 在可重复的子表单中，必须使用“完成”子表单。 如果只需要选择字段，请使用整个结构并删除不需要的字段。
+
+>[!MORELIKETHIS]
+>
+>* [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)

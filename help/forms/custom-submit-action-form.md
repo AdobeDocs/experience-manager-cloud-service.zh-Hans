@@ -1,31 +1,31 @@
 ---
 title: 如何为自适应表单创建自定义提交操作？
-description: 了解如何为自适应Forms创建自定义提交操作，以便在将数据提交到Rest端点、保存到数据存储区和执行其他自定义函数之前延迟提交和处理数据。
+description: 了解如何为自适应Forms创建自定义提交操作，以便在将数据提交到Rest端点、保存到数据存储和执行其他自定义函数之前延迟提交和处理数据。
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1775'
 ht-degree: 1%
 
 ---
 
-# 为自适应Forms创建自定义提交操作 {#writing-custom-submit-action-for-adaptive-forms}
+# 创建自适应Forms的自定义提交操作 {#writing-custom-submit-action-for-adaptive-forms}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
 | AEM as a Cloud Service | 本文 |
 
-自适应表单提供多个现成的提交操作(OOTB)。 提交操作指定要对通过自适应表单收集的数据执行的操作的详细信息。 例如，通过电子邮件发送数据。
+自适应表单提供多个现成的提交操作(OOTB)。 提交操作可指定要对通过自适应表单收集的数据执行的操作的详细信息。 例如，通过电子邮件发送数据。
 
-您可以创建自定义提交操作以添加中未包含的功能 [开箱即用的提交操作](configuring-submit-actions.md) 或不支持通过单个OOTB提交操作。 例如，将数据提交到工作流，将数据保存在数据存储中，向提交表单的人发送电子邮件通知，并通过单个提交操作向负责处理已提交表单以供审批和拒绝的人发送电子邮件。
+您可以创建自定义提交操作以添加中未包含的功能 [现成提交操作](configuring-submit-actions.md) 或者不支持通过单个OOTB提交操作。 例如，将数据提交到工作流，将数据保存在数据存储中，向提交表单的人员发送电子邮件通知，并通过单个提交操作向负责处理已提交表单以供审批和拒绝的人员发送电子邮件。
 
 ## XML数据格式 {#xml-data-format}
 
-XML数据使用发送到servlet **`jcr:data`** 请求参数。 提交操作可以访问参数以处理数据。 以下代码描述了XML数据的格式。 绑定到表单模型的字段显示在 **`afBoundData`** 部分。 未绑定的字段显示在 `afUnoundData`部分。 <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
+使用将XML数据发送到servlet **`jcr:data`** 请求参数。 提交操作可以访问参数以处理数据。 以下代码描述了XML数据的格式。 绑定到表单模型的字段显示在 **`afBoundData`** 部分。 未绑定字段显示在 `afUnoundData`部分。 <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
 
 ```xml
 <?xml ?>
@@ -49,7 +49,7 @@ XML数据使用发送到servlet **`jcr:data`** 请求参数。 提交操作可�
 
 ### 操作字段 {#action-fields}
 
-提交操作可以添加隐藏的输入字段(使用HTML [输入](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) 标签)到渲染的表单HTML。 这些隐藏字段可以包含处理表单提交时所需的值。 提交表单时，这些字段值作为请求参数回发，提交操作可在提交处理期间使用。 输入字段称为操作字段。
+提交操作可以添加隐藏的输入字段(使用HTML) [输入](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) 标签)到渲染的表单HTML。 这些隐藏字段可以包含处理表单提交时所需的值。 在提交表单时，这些字段值作为请求参数回发，提交操作可在提交处理期间使用这些参数。 输入字段称为操作字段。
 
 例如，如果提交操作还捕获填写表单所用的时间，则可以添加隐藏的输入字段 `startTime` 和 `endTime`.
 
@@ -57,9 +57,9 @@ XML数据使用发送到servlet **`jcr:data`** 请求参数。 提交操作可�
 
 ### 文件附件 {#file-attachments}
 
-“提交操作”还可以使用您通过“文件附件”组件上传的文件附件。 提交操作脚本可以使用sling访问这些文件 [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). 此 [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) api的方法有助于识别请求参数是文件还是表单字段。 您可以在提交操作中循环使用Request参数，以标识文件附件参数。
+“提交操作”还可以使用您通过“文件附件”组件上传的文件附件。 提交操作脚本可以使用sling访问这些文件 [RequestParameter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). 此 [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) api的方法有助于识别请求参数是文件还是表单字段。 您可以在“提交操作”中对“请求”参数进行迭代，以确定“文件附件”参数。
 
-以下示例代码标识请求中的文件附件。 接下来，它使用 [获取API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). 最后，它使用数据创建一个Document对象并将其附加到列表中。
+以下示例代码标识请求中的文件附件。 接下来，它使用 [获取API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). 最后，它会使用数据创建一个Document对象，并将其附加到列表中。
 
 ```java
 RequestParameterMap requestParameterMap = slingRequest.getRequestParameterMap();
@@ -73,7 +73,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 将文件附加到自适应表单时，服务器会在提交自适应表单后验证文件附件，并在以下情况下返回错误消息：
 
-* 文件附件包括以(.)开头的文件名 字符，包含\ / ： * ？ “ &lt; > | ； % $ &lt;个字符，或包含为Windows操作系统保留的特殊文件名，例如 `nul`， `prn`， `con`， `lpt`，或 `com`.
+* 文件附件包括以(.)开头的文件名 字符，包含\ / ： * ？ “ &lt; > | ； % $个字符，或包含为Windows操作系统保留的特殊文件名，如 `nul`， `prn`， `con`， `lpt`，或 `com`.
 
 * 文件附件的大小为0字节。
 
@@ -83,46 +83,46 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 执行所需的操作后，提交servlet将请求转发到转发路径。 一个操作使用setForwardPath API在指南提交servlet中设置转发路径。
 
-如果操作不提供转发路径，则提交servlet使用重定向URL重定向浏览器。 作者使用“自适应表单编辑”对话框中的“感谢页面”配置来配置重定向URL。 您还可以通过提交操作或指南提交servlet中的setRedirectUrl API配置重定向URL。 您还可以使用指南提交servlet中的setRedirectParameters API配置发送到重定向URL的请求参数。
+如果操作不提供转发路径，则提交Servlet将使用重定向URL重定向浏览器。 作者使用“自适应表单编辑”对话框中的“感谢页面”配置来配置重定向URL。 您还可以通过提交操作或指南提交servlet中的setRedirectUrl API配置重定向URL。 您还可以使用指南提交servlet中的setRedirectParameters API配置发送到重定向URL的请求参数。
 
 >[!NOTE]
 >
->作者提供重定向URL（使用感谢页面配置）。 [OOTB提交操作](configuring-submit-actions.md) 使用重定向URL从转发路径引用的资源重定向浏览器。
+>作者提供了重定向URL（使用感谢页面配置）。 [OOTB提交操作](configuring-submit-actions.md) 使用重定向URL从转发路径引用的资源重定向浏览器。
 >
->您可以编写自定义提交操作，以将请求转发到资源或servlet。 Adobe建议对转发路径执行资源处理的脚本在处理完成时将请求重定向到重定向URL。
+>您可以编写自定义提交操作，将请求转发到资源或servlet。 Adobe建议在处理完成后，为转发路径执行资源处理的脚本将请求重定向到重定向URL。
 
 ## 提交操作 {#submit-action}
 
 提交操作是一个sling：Folder，它包括以下内容：
 
-* **addfields.jsp**：此脚本提供在演绎版期间添加到HTML文件中的操作字段。 使用此脚本可在post.debugger.jsp脚本中添加提交期间所需的POST输入参数。
+* **addfields.jsp**：此脚本提供在呈现版本期间添加到HTML文件中的操作字段。 此脚本用于在post.context.jsp脚本中添加提交期间所需的POST输入参数。
 * **dialog.xml**：此脚本类似于CQ组件对话框。 它提供作者自定义的配置信息。 选择提交操作后，这些字段显示在“自适应表单编辑”对话框的“提交操作”选项卡中。
-* **post.POST.jsp**：提交servlet使用您提交的数据以及前面部分中的附加数据调用此脚本。 本页中有关运行操作的任何内容都意味着运行post.POST.jsp脚本。 要在自适应Forms中注册提交操作以显示于自适应表单编辑对话框，请将这些属性添加到sling:Folder:
+* **post.POST.jsp**：提交servlet使用您提交的数据以及前面部分中的附加数据调用此脚本。 本页中有关运行操作的任何内容都表示运行post.post.jspPOST。 要在自适应Forms中注册提交操作以在“自适应表单编辑”对话框中显示，请将这些属性添加到sling:Folder:
 
    * **guideComponentType** 字符串和值的类型 **fd/af/components/guidesubmittype**
-   * **guideDataModel** 类型字符串，指定提交操作适用的自适应表单的类型。 <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** 基于XSD的自适应Forms支持。 **基本** 对于不使用XDP或XSD的自适应Forms支持。 要在多种类型的自适应Forms上显示操作，请添加相应的字符串。 用逗号分隔每个字符串。 例如，使操作可见于 <!--XFA- and -->基于XSD的自适应Forms，将值指定为 <!--**xfa** and--> **xsd**.
+   * **guideDataModel** 类型字符串，指定提交操作适用的自适应表单的类型。 <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** 基于XSD的自适应Forms支持。 **基本** 对于不使用XDP或XSD的自适应Forms支持。 要在多种类型的自适应Forms上显示操作，请添加相应的字符串。 用逗号分隔每个字符串。 例如，要在以下位置显示操作： <!--XFA- and -->基于XSD的自适应Forms，指定值为 <!--**xfa** and--> **xsd**.
 
    * **jcr：description** 类型为String。 此属性的值显示在“自适应表单编辑”对话框的“提交操作”选项卡的“提交操作”列表中。 OOTB操作存在于该位置的CRX存储库中 **/libs/fd/af/components/guidesubmittype**.
 
-   * **submitService** 类型为String。 有关更多信息，请参阅 [为自定义操作计划自适应表单提交](#schedule-adaptive-form-submission).
+   * **submittservice** 类型为String。 有关更多信息，请参阅 [为自定义操作计划自适应表单提交](#schedule-adaptive-form-submission).
 
 ## 创建自定义提交操作 {#creating-a-custom-submit-action}
 
-执行以下步骤可创建自定义提交操作，将数据保存在CRX存储库中，然后向您发送电子邮件。 自适应表单包含将数据保存在CRX存储库中的OOTB提交操作存储内容（已弃用）。 此外，AEM还提供 [邮件](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) 可用于发送电子邮件的API。 在使用Mail API之前，通过系统控制台配置Day CQ Mail服务。 您可以重用“存储内容（已弃用）”操作将数据存储在存储库中。 在CRX存储库中的/libs/fd/af/components/guidesubmittype/store位置提供了“存储内容（已弃用）”操作。
+执行以下步骤可创建自定义提交操作，将数据保存在CRX存储库中，并向您发送电子邮件。 自适应表单包含OOTB提交操作存储内容（已弃用），可将数据保存在CRX存储库中。 此外，AEM还提供 [邮件](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) 可用于发送电子邮件的API。 在使用Mail API之前，通过系统控制台配置Day CQ Mail服务。 您可以重用“存储内容（已弃用）”操作将数据存储在存储库中。 在CRX存储库中的/libs/fd/af/components/guidesubmittype/store位置提供了“存储内容（已弃用）”操作。
 
-1. 通过URL https://登录CRXDE Lite&lt;server>：&lt;port>/crx/de/index.jsp. 在/apps/custom_submit_action文件夹中创建具有属性sling：Folder的节点，并命名为store_and_mail。 创建custom_submit_action文件夹（如果尚不存在）。
+1. 通过URL https://登录CRXDE Lite&lt;server>：&lt;port>/crx/de/index.jsp. 在/apps/custom_submit_action文件夹中创建具有属性sling：Folder并命名为store_and_mail的节点。 创建custom_submit_action文件夹（如果尚不存在）。
 
-   ![描述使用属性sling：Folder创建节点的屏幕快照](assets/step1.png)
+   ![描述使用属性sling：Folder创建节点的屏幕截图](assets/step1.png)
 
 1. **提供必需的配置字段。**
 
-   添加存储区操作所需的配置。 复制 **cq：dialog** /libs/fd/af/components/guidesubmittype/store中的存储操作节点，该节点将指向/apps/custom_submit_action/store_and_email上的操作文件夹。
+   添加存储区操作所需的配置。 复制 **cq：dialog** 从/libs/fd/af/components/guidessubmittype/store到/apps/custom_submit_action/store_and_email操作文件夹的“存储”操作的节点。
 
-   ![显示将对话框节点复制到操作文件夹的屏幕快照](assets/step2.png)
+   ![显示将对话框节点复制到操作文件夹的屏幕截图](assets/step2.png)
 
 1. **提供配置字段以提示作者进行电子邮件配置。**
 
-   自适应表单还提供向用户发送电子邮件的电子邮件操作。 根据您的要求自定义此操作。 导航到/libs/fd/af/components/guidesubmittype/email/dialog。 将cq：dialog节点中的节点复制到提交操作(/apps/custom_submit_action/store_and_email/dialog)的cq：dialog节点。
+   自适应表单还提供向用户发送电子邮件的电子邮件操作。 根据您的要求自定义此操作。 导航到/libs/fd/af/components/guidessubmittype/email/dialog。 将cq：dialog节点中的节点复制到提交操作(/apps/custom_submit_action/store_and_email/dialog)的cq：dialog节点。
 
    ![自定义电子邮件操作](assets/step3.png)
 
@@ -136,31 +136,31 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    * **jcr：description** 类型 **字符串** 和值 **存储和电子邮件操作**
 
-   * **submitService** 类型 **字符串** 和值 **商店和电子邮件**. 有关更多信息，请参阅 [为自定义操作计划自适应表单提交](#schedule-adaptive-form-submission).
+   * **submittservice** 类型 **字符串** 和值 **商店和电子邮件**. 有关更多信息，请参阅 [为自定义操作计划自适应表单提交](#schedule-adaptive-form-submission).
 
-1. 打开任意自适应表单。 单击 **编辑** 按钮旁边 **开始** 以打开 **编辑** “自适应表单”容器的对话框。 新操作将显示在 **提交操作** 选项卡。 选择 **存储和电子邮件操作** 显示对话框节点中添加的配置。
+1. 打开任意自适应表单。 单击 **编辑** 按钮旁边 **开始** 以打开 **编辑** 自适应表单容器的对话框。 新操作将显示在 **提交操作** 选项卡。 选择 **存储和电子邮件操作** 显示对话框节点中添加的配置。
 
    ![提交操作配置对话框](assets/store_and_email_submit_action_dialog.jpg)
 
 1. **使用操作完成任务。**
 
-   将post.pository.jspPOST添加到您的操作中。 (/apps/custom_submit_action/store_and_mail/)。
+   将post.jsp.jspPOST添加到您的操作中。 (/apps/custom_submit_action/store_and_mail/)。
 
-   运行OOTB存储区操作(post.debugger.jspPOST)。 使用 [FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)(java.lang.String， java.lang.String， org.apache.sling.api.resource.Resource， org.apache.sling.api.SlingHttpServletRequest， org.apache.sling.api.SlingHttpServletResponse) CQ在您的代码中提供的API，用于运行存储操作。 在JSP文件中添加以下代码：
+   运行OOTB Store操作(post.store.jspPOST)。 使用 [FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)(java.lang.String， java.lang.String， org.apache.sling.api.resource.Resource， org.apache.sling.api.SlingHttpServletRequest， org.apache.sling.api.SlingHttpServletResponse) CQ在您的代码中提供的API，用于运行存储操作。 在JSP文件中添加以下代码：
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
-   要发送电子邮件，代码会从配置中读取收件人的电子邮件地址。 要获取操作脚本中的配置值，请使用以下代码读取当前资源的属性。 同样，您也可以读取其他配置文件。
+   要发送电子邮件，代码会从配置中读取收件人的电子邮件地址。 要获取操作脚本中的配置值，请使用以下代码读取当前资源的属性。 同样，您可以读取其他配置文件。
 
    `ValueMap properties = ResourceUtil.getValueMap(resource);`
 
    `String mailTo = properties.get("mailTo");`
 
-   最后，使用CQ Mail API发送电子邮件。 使用 [简单电子邮件](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) 类来创建电子邮件对象，如下所示：
+   最后，使用CQ Mail API发送电子邮件。 使用 [简单电子邮件](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) 类以创建电子邮件对象，如下所述：
 
    >[!NOTE]
    >
-   >确保JSP文件的名称为post.pository.jsp.POST。
+   >确保JSP文件的名称是post.pository.jspPOST。
 
    ```java
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -202,11 +202,11 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    在自适应表单中选择操作。 该操作会发送电子邮件并存储数据。
 
-## 为自定义提交操作使用submitService属性 {#submitservice-property}
+## 将submitService属性用于自定义提交操作 {#submitservice-property}
 
-在设置自定义提交操作时，包括 `submitService` 属性，则表单会触发 [FormSubmittactionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) 提交时。 此 `FormSubmitActionService` 使用 `getServiceName` 用于检索值 `submitService` 属性。 根据 `submitService` 属性，则服务会调用相应的提交方法。 包括 `FormSubmitActionService` 上传到的自定义捆绑包 [!DNL AEM Forms] 服务器。
+设置自定义提交操作时，包括 `submitService` 属性，则表单会触发 [FormSubmittactionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) 提交时。 此 `FormSubmitActionService` 使用 `getServiceName` 用于检索值 `submitService` 属性。 根据 `submitService` 属性，则服务会调用相应的提交方法。 包括 `FormSubmitActionService` 至您上传到的自定义捆绑包 [!DNL AEM Forms] 服务器。
 
-添加 `submitService` 字符串类型的属性 `sling:Folder` 要启用的自定义提交操作的 [!DNL Adobe Sign] 用于自适应表单。 您可以选择 **[!UICONTROL 启用Adobe Sign]** 中的选项 **[!UICONTROL 电子签名]** 部分，仅在设置了 `submitService` 自定义提交操作的属性。
+添加 `submitService` 字符串类型的属性 `sling:Folder` ，用于启用您的自定义提交操作 [!DNL Adobe Sign] 用于自适应表单。 您可以选择 **[!UICONTROL 启用Adobe Sign]** 中的选项 **[!UICONTROL 电子签名]** 设置值之后才可进行自适应表单容器属性的部分 `submitService` 自定义提交操作的属性。
 
 <!--As a result of setting an appropriate value for the `submitService` property and enabling [!DNL Adobe Sign], you can schedule the submission of an Adaptive Form to ensure that all configured signers have taken an action on the form. [!DNL Adobe Sign] Configuration Service keeps polling [!DNL Adobe Sign] server at regular intervals to verify the status of signatures. If all the signers complete signing the form, the Submit Action service is started and the form is submitted.-->
 
@@ -390,3 +390,7 @@ Perform the following steps to create a custom Submit Action that saves the data
    Select the action in the Adaptive Form. The action sends an email and stores the data. 
 
 -->
+
+>[!MORELIKETHIS]
+>
+>* [为自适应表单配置提交操作](/help/forms/configure-submit-actions-core-components.md)

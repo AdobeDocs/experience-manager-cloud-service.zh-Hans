@@ -1,14 +1,14 @@
 ---
 title: 如何在自适应Forms中使用CAPTCHA？
-description: 了解如何为自适应表单配置AEM验证码或Google reCAPTCHA服务。
+description: 了解如何为自适应表单配置或Google reCAPTCHA服务。
 uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1945'
 ht-degree: 10%
 
 ---
@@ -342,3 +342,12 @@ reCAPTCHA服务使用 `https://www.recaptcha.net/` 作为默认域。 您可以�
 ```
 
 要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process)。
+
+## 另请参阅 {#see-also}
+
+{{see-also}}
+
+
+>[!MORELIKETHIS]
+>
+>* [自适应Forms的参考主题、模板和表单数据模型](/help/forms/reference-themes-templates-data-models.md)

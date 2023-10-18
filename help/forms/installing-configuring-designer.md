@@ -3,9 +3,9 @@ title: 如何下载并安装Forms Designer以创建记录文档模板？
 description: 使用Forms Designer创建用作记录文档模板的XDP和PDF表单模板。
 keywords: 安装Designer，安装Forms Designer，安装Forms Designer的要求
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: defeee2fee42c6274c71438d6f9fde6e49a05081
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '410'
 ht-degree: 7%
 
 ---
@@ -74,3 +74,8 @@ Designer是一款点击式图形表单设计工具，可简化XDP和PDF表单模
 * [使用自定义字体](/help/forms/use-custom-fonts.md)
 * [创建基于独立核心组件的自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 * [创建自适应表单或将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+>[!MORELIKETHIS]
+>
+>* [使用Forms Designer创建记录文档(DoR)模板和表单片段](/help/forms/use-forms-designer.md)

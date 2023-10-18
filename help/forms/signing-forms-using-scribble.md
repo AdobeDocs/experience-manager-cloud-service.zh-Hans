@@ -5,9 +5,9 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '728'
 ht-degree: 9%
 
 ---
@@ -97,3 +97,7 @@ ht-degree: 9%
    ![完成签名过程](assets/scribblecomplete.jpg)
 
 签名将添加到窗体中，窗体控件将移至下一个面板。
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

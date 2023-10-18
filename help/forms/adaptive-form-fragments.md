@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2029'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >确保为片段指定唯一名称。 如果已存在另一个同名片段，则创建片段失败。
+   >确保为片段指定唯一名称。 如果已存在具有相同名称的其他片段，则无法创建片段。
 
 1. 单击以打开 **表单模型** 选项卡，然后从 &quot;选择自 **&quot;** 下拉菜单中为片段选择以下模型之一：
 
@@ -239,7 +239,7 @@ ht-degree: 1%
 * 不支持使用不同表单数据模型的自适应表单中的片段。 例如，基于 XDP 的片段在 XSD 自适应表单中不受支持，反之亦然。
 * 自适应表单片段可通过 AEM 内容查找器中选项卡的自适应表单片段来使用。
 * 当通过引用插入或嵌入自适应表单时，会保留独立自适应表单片段中的任何表达式、脚本或样式。
-* 您无法从自适应表单中编辑以引用方式插入的自适应表单片段。 要进行编辑，您可以编辑独立的自适应表单片段或在自适应表单中嵌入该片段。
+* 您无法从自适应表单中编辑通过引用插入的自适应表单片段。 要进行编辑，您可以编辑独立的自适应表单片段或在自适应表单中嵌入该片段。
 * 发布自适应表单时，您需要发布在自适应表单中通过引用插入的独立自适应表单片段。
 * 当您重新发布更新的自适应表单片段时，更改会反映在使用片段的自适应表单的已发布实例中。
 * 包含Verify组件的自适应表单不支持匿名用户。 此外，不建议在自适应表单片段中使用验证组件。
@@ -249,3 +249,7 @@ ht-degree: 1%
 ## 引用片段 {#reference-fragments}
 
 提供了可用于创建表单的参考自适应表单片段。 有关更多信息，请参阅 [引用片段](reference-adaptive-form-fragments.md).
+
+>[!MORELIKETHIS]
+>
+>* [核心组件中的自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)

@@ -2,9 +2,9 @@
 title: 如何为自适应Forms配置现成的Microsoft Dynamics 365和Salesforce表单数据模型？
 description: 了解如何将Microsoft Dynamics 365和Salesforce与自适应Forms集成。
 exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '980'
 ht-degree: 3%
 
 ---
@@ -100,3 +100,9 @@ A [!DNL Microsoft® Dynamics 365] 表单数据模型可在 [!DNL AEM Forms] 您�
 要访问表单数据模型，请导航至 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 数据集成]**. 可用文件夹的列表包括一个具有为指定的标题的文件夹 `DappTitle`  同时 [生成AEM原型项目](setup-local-development-environment.md#forms-cloud-service-local-development-environment). 点按文件夹名称，选择 **[!UICONTROL Microsoft® Dynamics 365数据模型]**，然后点按编辑 ![编辑](assets/edit.png) 图标以查看表单数据模型。
 
 配置之后 [[!DNL Microsoft® Dynamics 365] 云配置服务](#configure-dynamics-cloud-service)，您可以将自适应表单与开箱即用的集成 [!DNL Microsoft® Dynamics 365] 数据模型。
+
+>[!MORELIKETHIS]
+>
+* [为AEM Forms配置数据源](/help/forms/configure-data-sources.md)
+* [为AEM Forms配置Azure存储](/help/forms/configure-azure-storage.md)
+[将Forms Portal添加到AEM Sites页面](/help/forms/configure-forms-portal.md)

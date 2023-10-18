@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---
@@ -45,3 +45,8 @@ ht-degree: 1%
 >[!NOTE]
 >
 >重新打开表单时，您刚刚创建的自定义属性可能无法正确显示在表单属性对话框中。 但是，它可正常使用，并且表单会显示更新的零页消息。
+
+>[!MORELIKETHIS]
+>
+>* [下载并安装Forms Designer以创建记录文档模板](/help/forms/installing-configuring-designer.md)
+>* [使用Forms Designer创建记录文档(DoR)模板和表单片段？](/help/forms/use-forms-designer.md)

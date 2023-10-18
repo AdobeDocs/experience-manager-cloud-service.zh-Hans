@@ -4,10 +4,10 @@ description: 使用Google reCAPTCHA服务可轻松增强表单安全性。 内�
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA服务，自适应Forms， CAPTCHA挑战，机器人预防，核心组件，表单提交安全性，表单垃圾邮件预防
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 14%
+source-wordcount: '919'
+ht-degree: 12%
 
 ---
 
@@ -106,9 +106,6 @@ Tap the **[!UICONTROL Currency Value]** field in the form and create the followi
 **问：能否在自适应表单中使用多个Captcha组件？**
 **Ans：** 不支持在自适应表单中使用多个验证码组件。 此外，不建议在标记为延迟加载的片段或面板中使用验证码组件。
 
-## 另请参阅
+## 另请参阅 {#see-also}
 
-* [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-* [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
-* [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

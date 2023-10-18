@@ -2,9 +2,9 @@
 title: 如何获取AEM表单的参考主题和模板？
 description: AEM Forms提供了示例自适应表单主题、模板和表单数据模型，以帮助您快速创建表单。
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '841'
 ht-degree: 23%
 
 ---
@@ -120,3 +120,8 @@ FSI主题强调您的表单的极简和功能外观。 将FSI主题应用于表�
 * Salesforce
 
 有关使用这些模型的信息，请参阅 [配置Microsoft Dynamics 365和Salesforce云服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 6%
+source-wordcount: '1137'
+ht-degree: 7%
 
 ---
 
@@ -131,3 +131,7 @@ ht-degree: 6%
 
 1. 点按 **[!UICONTROL 布局设置]** 选项卡并选择 **[!UICONTROL 禁用布局模式]**.
 1. 点按 ![保存更改](assets/save_icon.svg) 以保存模板属性。
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

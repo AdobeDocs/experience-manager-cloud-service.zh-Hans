@@ -2,14 +2,14 @@
 title: 如何基于核心组件为自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 4%
+source-wordcount: '1328'
+ht-degree: 5%
 
 ---
 
-# 为基于核心组件的自适应Forms添加区域设置 {#supporting-new-locales-for-adaptive-forms-localization}
+# 为基于核心组件的自适应表单添加区域设置 {#supporting-new-locales-for-adaptive-forms-localization}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -176,6 +176,10 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 
 ## 查看更多
 
-* [使用机器翻译或人工翻译来翻译基于核心组件的自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [为自适应Forms生成记录文档](/help/forms/generate-document-of-record-core-components.md)
 * [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

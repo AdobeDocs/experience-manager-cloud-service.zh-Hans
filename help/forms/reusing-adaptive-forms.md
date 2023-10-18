@@ -3,9 +3,9 @@ title: 如何重用自适应表单的元数据属性？
 description: 发现以高效地重新利用现有的自适应表单来创建新自适应表单。
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 12%
 
 ---
@@ -71,3 +71,8 @@ ht-degree: 12%
 1. **重新发布:**
 
    粘贴的资产与复制的资产不同。 您可以将其发布为新资源，以供最终用户使用。 要了解如何发布资源， <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

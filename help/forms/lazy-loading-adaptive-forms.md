@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1077'
 ht-degree: 7%
 
 ---
@@ -90,3 +90,8 @@ Forms包含某些字段和部分，不适用于所有用户且在所有条件下
 * 无论是否跨片段全局标记字段，都不要转发延迟面板中字段的引用值。
 * 使用面板重置功能，可通过以下单击表达式重置面板上可见的所有内容。\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

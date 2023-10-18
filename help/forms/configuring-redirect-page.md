@@ -1,14 +1,14 @@
 ---
 title: 如何配置重定向页面？
-description: 了解如何在创建表单时将用户重定向到表单作者可以在其中配置的网页。
+description: 了解如何将用户重定向到表单作者在创建表单时可以配置的网页。
 feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 4%
+source-wordcount: '214'
+ht-degree: 6%
 
 ---
 
@@ -19,19 +19,23 @@ ht-degree: 4%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-redirect-page.html) |
 | AEM as a Cloud Service | 本文 |
 
-表单作者可以为每个表单配置一个页面，表单用户在提交表单后会重定向到该页面。
+表单作者可为每个表单配置一个页面，表单用户在提交表单后会重定向到该页面。
 
 1. 在编辑模式下，选择一个组件，然后单击 ![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后单击 ![cmppr](assets/configure-icon.svg).
 
 1. 在侧栏中，单击 **[!UICONTROL 提交]**.
 
 1. 在下提供重定向页面的URL **[!UICONTROL 重定向URL/路径]** 在 **[!UICONTROL 提交]** 部分。
-1. （可选）在“提交操作”下，对于“提交到REST端点”操作，您可以配置要传递到重定向页面的参数。
+1. 或者，在提交操作下，对于提交到REST端点操作，您可以配置要传递到重定向页面的参数。
 
    ![重定向页面配置](assets/redirect-url.png)
 
    重定向页面配置
 
-表单作者可以使用以下传递到“感谢”页面的参数。 对于所有可用的提交操作， `status` 和 `owner` 参数被传递。 除了这两个参数外，还会为以下提交操作传递一些其他参数：
+表单作者可以使用传递到“感谢”页面的以下参数。 对于所有可用的提交操作， `status` 和 `owner` 参数被传递。 除了这两个参数之外，还会为以下提交操作传递一些其他参数：
 
-* **[!UICONTROL 提交到REST端点]**：传递为字段内到参数映射添加的参数。 `status` 和 `owner` 此提交操作中未传递参数。 有关更多信息，请参阅 [配置提交到REST端点提交操作](configuring-submit-actions.md).
+* **[!UICONTROL 提交到REST端点]**：传递为字段内到参数映射添加的参数。 `status` 和 `owner` 在此提交操作中未传递参数。 有关更多信息，请参阅 [配置提交到REST端点提交操作](configuring-submit-actions.md).
+
+>[!MORELIKETHIS]
+>
+>* [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)

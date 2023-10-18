@@ -2,10 +2,10 @@
 title: 如何将脚注添加到自适应表单？
 description: 对自适应表单中的脚注使用富文本编辑器(RTE) 。
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 12%
+source-wordcount: '443'
+ht-degree: 13%
 
 ---
 
@@ -55,3 +55,8 @@ ht-degree: 12%
 1. 保存属性。
 
 在运行时，数字以上标形式显示在文本上，其相应的说明显示在 **[!UICONTROL 脚注]** 位于以下位置的组件： [!UICONTROL 脚注占位符] 放置在自适应表单上。 您可以直接导航到脚注描述，方法是在 [!UICONTROL 脚注].
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

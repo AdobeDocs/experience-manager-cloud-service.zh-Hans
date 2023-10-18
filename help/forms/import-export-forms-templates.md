@@ -3,10 +3,10 @@ title: 如何在AEM Forms实例上导入、导出和组织自适应Forms或PDF f
 description: 了解如何在AEM实例之间迁移自适应Forms、PDF forms、主题和其他支持资源。
 topic-tags: forms-manager
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 1%
+source-wordcount: '1206'
+ht-degree: 0%
 
 ---
 
@@ -224,3 +224,7 @@ On the side panel, you can use the following to narrow down your search results:
 The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->
+
+>[!MORELIKETHIS]
+>
+>* [在自适应表单核心组件中使用主题](/help/forms/using-themes-in-core-components.md)

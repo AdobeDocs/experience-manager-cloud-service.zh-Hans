@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
-workflow-type: ht
-source-wordcount: '2482'
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+workflow-type: tm+mt
+source-wordcount: '2484'
 ht-degree: 100%
 
 ---
@@ -362,3 +362,7 @@ J. **其他**：提供更多选项来处理所选组件。
 * **工具栏：**&#x200B;自适应表单容器有一个关联的全局工具栏，它是表单的全局工具栏。可以使用编辑栏中的&#x200B;**[!UICONTROL 添加工具栏]**&#x200B;操作来添加此工具栏，这可让作者添加操作，例如提交、保存、重置等。
 
 * **资源：**&#x200B;此节点包含用于表单创作的附加信息。例如，表单模型详细信息、本地化详细信息等。
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

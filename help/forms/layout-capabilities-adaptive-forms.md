@@ -2,9 +2,9 @@
 title: 自适应Forms的布局功能是什么？
 description: 自适应Forms在各种设备上的布局和外观受布局设置控制。 了解各种布局及其应用方式。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 8%
 
 ---
@@ -115,6 +115,11 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![表单标题中没有面板标题的移动布局](assets/mobile-layout2.png)
 
+## 另请参阅 {#see-also}
+
+{{see-also}}
+
+
 <!-- ## Toolbar layouts {#toolbar-layouts}
 
 A Toolbar Layout controls positioning and display of any action buttons that you add to your Adaptive Forms. The layout can be added at a form level or at a panel level.
@@ -146,3 +151,5 @@ For the Mobile layout, you can add action buttons using icons.
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
 Mobile fixed layout for toolbar-->
+
+

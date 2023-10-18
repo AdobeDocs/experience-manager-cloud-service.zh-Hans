@@ -5,7 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Developer
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: fb3d3732f698015151d9703bfddfe94b531d31b6
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 98%
@@ -162,3 +162,11 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 1. 在 AEM 发布实例上，转到 `https://'[server]:[port]'/system/console/configMgr` 上的 AEM Web 控制台配置管理器。
 1. 找到并打开 **Apache Sling 反向链接过滤器**&#x200B;配置。
 1. 在“允许的主机”字段中，指定该网页所在的域。这样使主机可向 AEM 服务器发出 POST 请求。还可使用正则表达式指定一系列外部应用程序域。
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Embed adaptive form based on core components to AEM sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+
+-->

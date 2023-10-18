@@ -3,9 +3,9 @@ title: 如何在AEM Workflow中选择用户？
 description: 了解如何为选择用户或组 [!DNL AEM Forms] 运行时的工作流。
 content-type: troubleshooting
 topic-tags: publish
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '902'
 ht-degree: 1%
 
 ---
@@ -345,3 +345,7 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
+
+>[!MORELIKETHIS]
+>
+>* [使用AEM Forms工作流实现业务流程自动化](/help/forms/aem-forms-workflow.md)

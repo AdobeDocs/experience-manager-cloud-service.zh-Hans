@@ -2,9 +2,9 @@
 title: 如何为基于基础组件的自适应表单添加新区域设置支持？
 description: 对于自适应Forms，除了现成可用的语言之外，您还可以为更多语言添加区域设置。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1266'
 ht-degree: 7%
 
 ---
@@ -157,3 +157,8 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 * 在现有自适应表单中添加新字段时：
    * **对于机器翻译**：重新创建词典并运行翻译项目。 创建翻译项目后添加到自适应表单的字段保持未翻译状态。
    * **对于人工翻译**：导出词典，通过 `[server:port]/libs/cq/i18n/gui/translator.html`. 更新新添加字段的字典并上传。
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

@@ -2,10 +2,10 @@
 title: 如何使用Formsas a Cloud Service将数据与XDP和PDF模板合并，或生成PCL、ZPL和PostScript格式的输出？
 description: 自动将数据与 XDP 和 PDF 模板合并，或以 PCL、ZPL 和 PostScript 格式生成输出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 7%
+source-wordcount: '731'
+ht-degree: 6%
 
 ---
 
@@ -142,3 +142,10 @@ While it is possible to do the entire JWT generation and exchange process in cus
 >[!NOTE]
 >
 >只有forms-users组的成员才能访问Communications API。
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通信简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [自适应Forms的AEM Formsas a Cloud Service架构和通信API](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信处理 — 批处理API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

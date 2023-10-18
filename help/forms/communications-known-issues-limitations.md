@@ -2,9 +2,9 @@
 title: AEM Forms中有哪些注意事项、已知问题和最佳实践？
 description: 注意事项AEM Forms通信API的已知问题和最佳实践。
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1748'
 ht-degree: 0%
 
 ---
@@ -202,4 +202,12 @@ Microsoft Azure Storage帐户独立于Experience Manager FormsCloud Service许�
 **Where is data hosted?** -->
 
 **我可以同时运行多个批处理操作吗？**
-可以，您可以同时运行多个批处理操作。 请始终对每项操作使用不同的源文件夹和目标文件夹，以避免任何冲突。
+可以，您可以同时运行多个批操作。 请始终对每项操作使用不同的源文件夹和目标文件夹，以避免任何冲突。
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通信简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [自适应Forms的AEM Formsas a Cloud Service架构和通信API](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信处理 — 批处理API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+

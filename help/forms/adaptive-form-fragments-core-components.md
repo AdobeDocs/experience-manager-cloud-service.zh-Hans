@@ -5,10 +5,10 @@ topic-tags: author
 keywords: 添加自适应表单片段、自适应表单片段、创建表单片段、将片段添加到自适应表单、管理片段
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 4%
+source-wordcount: '1716'
+ht-degree: 3%
 
 ---
 
@@ -190,8 +190,8 @@ Perform the following steps to show complete fragments in forms:
 提供了可用于创建表单的参考自适应表单片段。
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
+
+
 ## 另请参阅 {#see-also}
 
-* [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [在自适应Forms中创建或添加主题](/help/forms/using-themes-in-core-components.md)
-* [在基于核心组件的AEM自适应表单中使用Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+{{see-also}}

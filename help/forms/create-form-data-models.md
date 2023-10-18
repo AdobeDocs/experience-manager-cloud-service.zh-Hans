@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 1%
+source-wordcount: '1548'
+ht-degree: 2%
 
 ---
 
@@ -138,3 +138,8 @@ ht-degree: 1%
 现在，您拥有一个添加了数据源的表单数据模型。 接下来，可以编辑表单数据模型以添加和配置数据模型对象和服务，添加数据模型对象之间的关联，编辑属性，添加自定义数据模型对象和属性，生成示例数据，等等。
 
 有关更多信息，请参阅 [使用表单数据模型](work-with-form-data-model.md).
+
+
+>[!MORELIKETHIS]
+>
+>* [使用表单数据模型](/help/forms/using-form-data-model.md)

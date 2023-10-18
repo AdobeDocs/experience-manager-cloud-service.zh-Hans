@@ -5,9 +5,9 @@ uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,8 @@ ht-degree: 0%
 >[!NOTE]
 >
 >对于非折叠布局，使用自适应表单按钮组件添加和删除实例。
+
+
+>[!MORELIKETHIS]
+>
+>* [在自适应表单核心组件中创建包含可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)

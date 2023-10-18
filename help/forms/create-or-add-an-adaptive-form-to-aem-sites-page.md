@@ -4,9 +4,9 @@ description: 了解如何在AEM Sites页面上创建或添加自适应表单。 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a1b63508ed7040c719778bd1c422728bc0e2e4f2
+source-git-commit: 7b797524d0df764c497baa6e4ffd0b3cabd368ca
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3221'
 ht-degree: 20%
 
 ---
@@ -262,6 +262,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 * [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 
-## 相关文章 {#related-article}
+## 另请参阅 {#see-also}
 
-* [创建基于独立核心组件的自适应表单](/help/forms/creating-adaptive-form-core-components.md)
+{{see-also}}
+

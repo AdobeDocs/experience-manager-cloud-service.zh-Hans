@@ -3,9 +3,9 @@ title: 如何在表单中创建和管理审核？
 description: 使用审阅机制可添加审阅人，并允许审阅人在表单上进行评论。
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: e2f2aa18e2412bc92d1385a125281ecfb81f2ce8
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '733'
 ht-degree: 8%
 
 ---
@@ -114,3 +114,17 @@ ht-degree: 8%
    1. **全部**：该审阅显示在以前的审阅部分中。 无法添加其他注释。
 
    ![审查完成](assets/review-complete-imgg.png)
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}
+
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
+
+-->

@@ -4,9 +4,9 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 使用AEM Forms Workflow自动化并快速构建业务流程工作流。 例如，审阅和批准、PDF生成、Adobe Sign工作流程。
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2392'
 ht-degree: 2%
 
 ---
@@ -270,3 +270,9 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### 清除工作流实例 {#purge-workflow-instances}
 
 最大限度地减少工作流实例的数量可以提高工作流引擎的性能，因此，您可以定期从存储库中清除已完成或正在运行的工作流实例。有关详细信息，请参阅 [定期清除工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=zh-Hans) 清除工作流实例
+
+
+>[!MORELIKETHIS]
+>
+>* [使用AEM翻译工作流本地化自适应Forms和记录文档](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
+>* [以Forms为中心的AEM Workflow中的变量](/help/forms/variable-in-aem-workflows.md)

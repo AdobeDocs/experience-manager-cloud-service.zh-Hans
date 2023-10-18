@@ -2,9 +2,9 @@
 title: 如何管理AEM Forms的元数据？
 description: 元数据允许更轻松地分类和组织资源，并帮助正在查找特定资源的用户。
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1743'
 ht-degree: 6%
 
 ---
@@ -307,3 +307,8 @@ ht-degree: 6%
    您已成功添加自定义元数据属性。
 
 中的所有自适应Forms [!DNL AEM Forms] 现在包含此额外的元数据属性。 您可以从属性页面对其进行编辑。
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

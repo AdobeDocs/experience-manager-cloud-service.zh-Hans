@@ -8,9 +8,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2408'
+source-wordcount: '2410'
 ht-degree: 98%
 
 ---
@@ -410,3 +410,8 @@ Using this custom error handler, the adaptive form converts the fields listed in
 * [创建基于独立核心组件的自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 * [为表单创建样式或主题](/help/forms/using-themes-in-core-components.md)
 * [创建自适应表单或将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+## 另请参阅 {#see-also}
+
+{{see-also}}
+

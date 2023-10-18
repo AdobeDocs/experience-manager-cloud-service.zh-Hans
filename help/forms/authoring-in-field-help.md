@@ -4,9 +4,9 @@ description: AEM Forms允许您将上下文帮助作为文本或富媒体（包�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -65,3 +65,7 @@ ht-degree: 0%
 
 ![表单面板级别的上下文帮助示例](assets/photoshop-1.png)
 
+>[!MORELIKETHIS]
+>
+>* [向表单字段添加占位符文本](/help/forms/placeholder-text-in-aem-forms.md)
+>* [将脚注添加到富文本自适应表单](/help/forms/footnotes-richtextsupport.md)

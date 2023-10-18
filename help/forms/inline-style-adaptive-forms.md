@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
+source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '778'
 ht-degree: 11%
 
 ---
@@ -132,3 +132,12 @@ ht-degree: 11%
 您还可以模拟成功和错误状态。 点按展开图标以查看 **[!UICONTROL 模拟成功]** 和 **[!UICONTROL 模拟错误]** 选项。
 
 ![模拟状态](assets/simulate-states.png)
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}
+
+>[!MORELIKETHIS]
+>
+>* [在自适应表单核心组件中使用主题](/help/forms/using-themes-in-core-components.md)

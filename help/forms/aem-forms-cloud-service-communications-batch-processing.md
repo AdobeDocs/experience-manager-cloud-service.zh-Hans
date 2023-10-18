@@ -2,9 +2,9 @@
 title: 轻松批量创建PDF — 掌握批处理技术 — 生成数百万份PDF文档的自助指南！
 description: 如何创建以品牌为导向的个性化通信？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1735'
 ht-degree: 2%
 
 ---
@@ -171,3 +171,10 @@ ht-degree: 2%
 ## API参考文档
 
 API参考文档提供了有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API参考文档以.yaml格式提供。 您可以下载 [批处理API](assets/batch-api.yaml) 并将其上传到Postman以检查API的功能。
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通信简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [自适应Forms的AEM Formsas a Cloud Service架构和通信API](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通信处理 — 批处理API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

@@ -4,10 +4,10 @@ description: 使用表组件向自适应表单添加表。 在帮助进行响应
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2496'
-ht-degree: 2%
+source-wordcount: '2498'
+ht-degree: 3%
 
 ---
 
@@ -329,3 +329,8 @@ XFA表元素映射到表组件，并在自适应表单中现成使用。 XDP表�
 * 默认表中的每个正文单元格都有一个与其关联的预定义元素名称。 如果在自适应表单中添加另一个表，则新表中的默认正文单元格将与第一个表中的元素名称相同。 在这种情况下，提交表单时生成的数据将仅包含其中一个表的默认正文单元格中的数据。 因此，请确保重命名默认正文单元格的元素名称，以使其在表中保持唯一性，并避免数据丢失。
 
   请注意，这仅适用于默认正文单元格。 如果向表中添加更多行或列，则将自动为非默认正文单元格生成唯一的元素名称。
+
+## 另请参阅 {#see-also}
+
+{{see-also}}
+

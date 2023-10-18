@@ -3,9 +3,9 @@ title: ' [!DNL AEM Forms] as a Cloud Service 简介'
 description: 探索如何通过 AEM Forms 生成业务就绪表单、创建业务流程工作流以及使用文档服务生成和保护文档。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1151'
 ht-degree: 100%
 
 ---
@@ -67,11 +67,10 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
 | 数据源 | 轻松地将您的表单和文档与外部数据源连接起来，以检索和发送数据： <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=zh-Hans">连接到 RDBMS 或 Rest 端点</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hans">连接到 Microsoft® Dynamics 365 或 Salesforce Cloud Service</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=zh-Hans">连接到 Microsoft® Azure Blob 存储</a></li></ul> |
 
 
-## 相关文章
-
-* [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
-* [设置本地开发环境](/help/forms/setup-local-development-environment.md)
-* [从 AEM 6.5 Forms 迁移到 Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-
-
+>[!MORELIKETHIS]
+>
+>* [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
+>* [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
+>* [设置本地开发环境](/help/forms/setup-local-development-environment.md)
+>* [从 AEM 6.5 Forms 迁移到 Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 

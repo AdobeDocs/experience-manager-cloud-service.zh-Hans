@@ -2,9 +2,9 @@
 title: 如何创建自适应表单模板？
 description: 使用模板编辑器创建自适应表单模板以定义基本结构和初始内容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2098'
 ht-degree: 4%
 
 ---
@@ -223,3 +223,8 @@ Perform the following steps to show and hide templates:
 * 在模板编辑器中修改表单的属性时，请勿使用BindReference属性。
 * 如果要添加断点，请在创作自适应表单模板时创建断点。
 有关断点的详细信息，请参见 [响应式布局](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
+
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

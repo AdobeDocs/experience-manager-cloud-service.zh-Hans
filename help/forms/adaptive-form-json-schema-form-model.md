@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1347'
 ht-degree: 9%
 
 ---
@@ -770,3 +770,15 @@ Here is the sample JSON code for previously mentioned examples.
 **JSON架构文件的扩展名应该是什么？**
 
 JSON架构文件的扩展名必须是.schema.json。 例如， &lt;filename>.schema.json。
+
+## 另请参阅 {#see-also}
+
+{{see-also}}
+
+<!--
+
+>[!MORELIKETHIS]
+>
+>* [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
+
+-->

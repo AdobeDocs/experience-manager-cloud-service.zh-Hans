@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 3%
@@ -361,7 +361,12 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
 
 * 使用单独的电子邮件地址进行配置 [!DNL Adobe Sign] 第一个或单个收件人的帐户和。 第一个收件人或唯一收件人（如果只有单个收件人）的电子邮件地址不能与 [!DNL Adobe Sign] 用于配置AEMCloud Service的帐户。
 
-## 相关文章 {#related-articles}
+>[!MORELIKETHIS]
+>
+>* [ [!DNL Adobe Sign] 与 集成 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
+>* [使用的最佳实践 [!DNL Adobe Sign] 使用自适应Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 
-* [集成 [!DNL Adobe Sign] 替换为 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)
-* [使用的最佳实践 [!DNL Adobe Sign] 使用自适应Forms](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+
+## 另请参阅 {#see-also}
+
+{{see-also}}

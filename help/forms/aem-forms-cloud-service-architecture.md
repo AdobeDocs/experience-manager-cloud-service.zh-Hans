@@ -2,9 +2,9 @@
 title: 自适应Forms的AEM Formsas a Cloud Service架构和通信API
 description: 了解的架构 [!DNL AEM Forms] as a Cloud Service了解平台的可扩展性、可复原性和性能。
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1093'
 ht-degree: 5%
 
 ---
@@ -193,3 +193,10 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 ## 调试 {#debugging}
 
 AEMas a Cloud Service在自助式、可扩展的云基础架构上运行。 它要求AEM开发人员了解并调试AEMas a Cloud Service的各个方面，从构建和部署，到获取运行AEM应用程序的详细信息。 有关详细信息，请参阅 [调试AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
+
+
+>[!MORELIKETHIS]
+>
+>* [AEM Formsas a Cloud Service通信简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Formsas a Cloud Service通信批量处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
