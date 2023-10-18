@@ -2,10 +2,10 @@
 title: 配置流量过滤规则与 WAF 规则
 description: 结合使用流量过滤规则和 WAF 规则来过滤流量
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 445134438c1a43276235b069ab44f99f7255aed1
+source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
 workflow-type: tm+mt
-source-wordcount: '2740'
-ht-degree: 98%
+source-wordcount: '3810'
+ht-degree: 71%
 
 ---
 
@@ -526,3 +526,296 @@ data:
 | *res_age* | 响应已缓存（在所有节点中）的时间量（以秒为单位）。 |
 | *pop* | CDN 缓存服务器的数据中心。 |
 | *rules* | 任何匹配的规则的名称。<br><br>还指示匹配是否产生块。<br><br>例如，“`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`”<br><br>如果没有匹配的规则，则为空。 |
+
+## 仪表板工具教程  {#dashboard-tooling}
+
+Adobe提供一种机制，可以将功能板工具下载到计算机上，以摄取通过Cloud Manager下载的CDN日志。 借助此工具，您可以分析流量以帮助制定要声明的相应流量过滤器规则，包括WAF规则。 本节首先提供了熟悉开发环境中的仪表板工具的一些说明，然后提供了有关如何利用该知识在生产环境中创建规则的指南。
+
+流量过滤器规则早期采用者客户应请求压缩功能板工具，其中包括一个描述如何加载Docker容器和摄取CDN日志的自述文件。
+
+
+### 熟悉功能板工具 {#dashboard-getting-familiar}
+
+1. 创建与开发环境关联的Cloud Manager非生产配置管道。 首先选择部署管道选项。 然后选择目标部署、配置、存储库、Git分支，并将代码位置设置为/config。
+
+   ![添加非生产管道选择部署](/help/security/assets/waf-select-pipeline1.png)
+
+   ![添加非生产管道选择目标](/help/security/assets/waf-select-pipeline2.png)
+
+
+1. 在您的工作区中，在根级别创建一个文件夹配置并添加一个名为cdn.yaml的文件，您将在该文件中声明一个简单的规则，并将其设置为日志模式而不是阻止模式。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: log
+   ```
+
+1. 提交和推送更改，并使用配置管道部署配置。
+
+   ![运行配置管道](/help/security/assets/waf-run-pipeline.png)
+
+1. 部署配置后，请尝试使用Web浏览器或以下curl命令访问https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me 。 系统应显示404错误页面，因为该页面不存在。
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. 从Cloud Manager下载CDN日志，并验证规则是否按预期匹配，以及规则属性是否与规则名称匹配：
+
+   ```
+   "rules": "match=log-rule-example"
+   ```
+
+   ![选择下载日志](/help/security/assets/waf-download-logs1.png)
+
+   ![下载日志](/help/security/assets/waf-download-logs2.png)
+
+1. 使用功能板工具加载Docker图像，然后按照自述文件摄取CDN日志。 如以下屏幕截图所示，选择正确的时间段、正确的环境和正确的过滤器。
+
+   ![从仪表板选择时间](/help/security/assets/dashboard-select-time.png)
+
+   ![从功能板选择环境](/help/security/assets/dashboard-select-env.png)
+
+1. 应用正确的过滤器后，您应该能够看到加载了预期数据的功能板。 在下面的屏幕截图中，规则log-rule-example在过去2小时内由位于爱尔兰的同一IP使用Web浏览器和curl触发了3次。
+
+   ![查看开发仪表板数据](/help/security/assets/dashboard-see-data-logmode.png)
+   ![查看开发仪表板数据构件](/help/security/assets/dashboard-see-data-logmode2.png)
+
+1. 现在，更改cdn.yaml以将规则置于阻止模式，以确保页面按预期被阻止。 然后像之前那样提交、推送并触发配置管道。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+       # Log request on simple path
+       - name: log-rule-example
+         when:
+           allOf:
+             - reqProperty: tier
+               matches: "author|publish"
+             - reqProperty: path
+               equals: '/log/me'
+         action: block
+   ```
+
+1. 部署配置后，请尝试使用Web浏览器或以下curl命令访问https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me 。 系统应显示406错误页面，指示请求被阻止。
+
+   ```
+   curl -svo /dev/null https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com/log/me
+   ```
+
+1. 请再次在Cloud Manager中下载CDN日志（注意：新请求可能需要5分钟时间才能在CDN日志中公开），并将其导入功能板工具中，就像我们之前所做的那样。 完成后，刷新您的仪表板。 如以下屏幕快照所示，对/log/me的请求被我们的规则阻止。
+
+   ![查看生产仪表板数据](/help/security/assets/dashboard-see-data-blockmode.png)
+   ![查看生产仪表板数据](/help/security/assets/dashboard-see-data-blockmode2.png)
+
+1. 如果已启用WAF流量过滤器（此功能为GA后，将需要额外的许可证），请在日志模式下重复使用WAF流量过滤器规则，然后部署这些规则。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: log-waf-flags
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           action:
+             type: log
+             wafFlags:
+                 - SANS
+                 - SIGSCI-IP
+                 - TORNODE
+                 - NOUA
+                 - SCANNER
+                 - USERAGENT
+                 - PRIVATEFILE
+                 - ABNORMALPATH
+                 - TRAVERSAL
+                 - NULLBYTE
+                 - BACKDOOR
+                 - LOG4J-JNDI
+                 - SQLI
+                 - XSS
+                 - CODEINJECTION
+                 - CMDEXE
+                 - NO-CONTENT-TYPE
+                 - UTF8
+   ```
+
+1. 使用工具，如 [nikto](https://github.com/sullo/nikto/tree/master) 以生成匹配请求。 以下命令将在1分钟内发送约550个恶意请求。
+
+   ```
+   ./nikto.pl -useragent "MyAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXXX-eYYYYY.adobeaemcloud.com
+   ```
+
+1. 从Cloud Manager下载CDN日志（请记住，这些日志最多可能需要5分钟才能显示）并验证是否同时显示匹配的已声明规则和WAF标记。
+
+   如您所见， WAF将Nikto生成的多个请求标记为恶意。 我们可以看到Nikto试图利用CMDEXE、SQLI和NULLBYTE漏洞。 如果您现在将操作从日志更改为阻止，并使用Nikto重新触发扫描，则之前标记的所有请求都将遭到阻止。
+
+   ![查看WAF数据](/help/security/assets/dashboard-see-data-waf.png)
+
+
+   请注意，每当请求与任何WAF标记匹配时，这些WAF标记都会出现，即使它们不是已声明的规则的一部分也是如此；因此，您始终能够识别潜在的新恶意流量，您尚未为它们声明匹配规则。 例如：
+
+   ```
+   "rules": "match=log-waf-flags,waf=SQLI,action=blocked"
+   ```
+
+1. 在日志模式下，重复使用使用使用速率限制的规则。 与以往一样，提交、推送并触发配置管道以应用您的配置。
+
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     trafficFilters:
+       rules:
+         - name: limit-requests-client-ip
+           when:
+             reqProperty: tier
+             matches: "author|publish"
+           rateLimit:
+             limit: 10
+             window: 1
+             penalty: 60
+             groupBy:
+               - reqProperty: clientIp
+           action: log
+   ```
+
+1. 使用工具，如 [韦盖塔](https://github.com/tsenart/vegeta) 以生成流量。
+
+   ```
+   echo "GET https://publish-pXXXXX-eYYYYYY.adobeaemcloud.com" | vegeta attack -duration=5s
+   ```
+
+1. 运行该工具后，您可以下载CDN日志并将其摄取到功能板中，以验证是否已触发速率限制器规则
+
+   现在您已经熟悉了流量过滤器规则的工作方式，您可以移至生产环境。
+
+### 将规则部署到生产环境 {#dashboard-prod-env}
+
+请确保最初在日志模式下声明规则，以验证没有误报，这意味着将错误阻止的合法流量。
+
+1. 创建与生产环境关联的生产配置管道。
+
+1. 将以下推荐的规则复制到您的cdn.yaml中。 您可能希望根据网站实时流量的独特特征来修改规则。 提交、推送和触发您的配置管道。 确保规则处于日志模式。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: path
+        like: '*'
+      rateLimit:
+        limit: 100
+        window: 1
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: block
+      # Block requests coming from OFAC countries
+      - name: block-ofac-countries
+        when:
+          allOf:
+            - { reqProperty: tier, equals: publish }
+            - reqProperty: clientCountry
+              in:
+                - SY
+                - BY
+                - MM
+                - KP
+                - IQ
+                - CD
+                - SD
+                - IR
+                - LR
+                - ZW
+                - CU
+                - CI
+        action: block
+        # Enable recommended WAF protections (only works if WAF is enabled for your environment)
+        - name: block-waf-flags-globally
+          when:
+            reqProperty: tier
+            matches: "author|publish"
+          action:
+            type: block
+            wafFlags:
+              - SANS
+              - SIGSCI-IP
+              - TORNODE
+              - NOUA
+              - SCANNER
+              - USERAGENT
+              - PRIVATEFILE
+              - ABNORMALPATH
+              - TRAVERSAL
+              - NULLBYTE
+              - BACKDOOR
+              - LOG4J-JNDI
+              - SQLI
+              - XSS
+              - CODEINJECTION
+              - CMDEXE
+              - NO-CONTENT-TYPE
+              - UTF8
+        # Disable protection against CMDEXE on /bin
+        - name: allow-cdmexe-on-root-bin
+          when:
+            allOf:
+              - reqProperty: tier
+                matches: "author|publish"
+              - reqProperty: path
+                matches: "^/bin/.*"
+          action:
+            type: allow
+            wafFlags:
+              - CMDEXE
+```
+
+1. 添加任何其他规则以阻止您可能察觉到的恶意流量。 例如，某些IP一直在攻击您的站点。
+
+1. 几分钟、几小时或几天后（具体取决于您网站的流量），从Cloud Manager下载CDN日志并使用仪表板分析这些日志。
+
+1. 以下是一些注意事项：
+   1. 流量匹配声明的规则会显示在图表和请求日志中，以便您轻松检查是否触发了声明的规则。
+   1. 流量匹配的WAF标记会显示在图表和请求日志中，即使您未在规则中记录也是如此。 因此，您始终能够了解潜在的新恶意流量，并且可以根据需要创建新规则。 查看未反映在声明的规则中的WAF标记，并考虑声明它们。
+   1. 对于匹配规则，检查请求日志中的误报，并查看是否可以从规则中过滤出误报。 例如，可能只对某些路径误报。
+
+1. 将相应的规则设置为块模式，并考虑添加其他规则。 当您进一步分析并显示更多流量时，其中一些规则可能仍会保留在日志模式中。
+
+1. 重新部署配置
+
+1. 迭代，频繁地分析仪表板。
+
