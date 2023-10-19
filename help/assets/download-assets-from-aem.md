@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 3a14f3b6f75f6021a7843a5a8a3439d6ea7f886d
+source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1388'
 ht-degree: 5%
 
 ---
@@ -132,7 +132,7 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-## OnTime/OffTime呈现版本 {#on-off-time-rendition}
+## OnTime或OffTime呈现版本 {#on-off-time-rendition}
 
 要启用 `OnOffTimeAssetAccessFilter` 服务，您需要创建OSGi配置。 根据开启/结束时间设置，此服务允许除了资源本身之外，还阻止对演绎版和元数据的访问。 OSGi配置应为 `com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter`. 应遵循以下步骤：
 
