@@ -2,10 +2,10 @@
 title: 配置流量过滤规则与 WAF 规则
 description: 结合使用流量过滤规则和 WAF 规则来过滤流量
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 550ef9a969dc184fccbfd3b79716744cd80ce463
+source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
 workflow-type: tm+mt
-source-wordcount: '3826'
-ht-degree: 70%
+source-wordcount: '3810'
+ht-degree: 71%
 
 ---
 
@@ -532,7 +532,7 @@ data:
 
 Adobe提供一种机制，可以将功能板工具下载到计算机上，以摄取通过Cloud Manager下载的CDN日志。 借助此工具，您可以分析流量以帮助制定要声明的相应流量过滤器规则，包括WAF规则。 本节首先提供了熟悉开发环境中的仪表板工具的一些说明，然后提供了有关如何利用该知识在生产环境中创建规则的指南。
 
-流量过滤器规则早期采用者客户应请求压缩功能板工具，其中包括一个描述如何加载Docker容器和摄取CDN日志的自述文件。
+功能板工具可以直接从 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github存储库。
 
 
 ### 熟悉功能板工具 {#dashboard-getting-familiar}
