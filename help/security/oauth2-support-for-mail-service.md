@@ -2,7 +2,7 @@
 title: 对邮件服务的 OAuth2 支持
 description: Adobe Experience Manager as a Cloud Service 中对邮件服务的 Oauth2 支持
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 417efad485226464b396c3ac3ef5ca8968309792
+source-git-commit: ede877212de3394cbdc81e1097d3d6eaf9f390cc
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 98%
@@ -58,12 +58,16 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
 1. 在将 `clientID` 和 `tenantID` 替换为您帐户的特定值后，在浏览器中打开以下 URL：
 
-   `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
+   ```
+   https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
+   ```
 
 1. 当被询问时允许使用权限。
 1. URL将重定向到一个新位置，并采用以下格式：
 
-   `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+   ```
+   http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+   ```
 
 1. 复制上述示例中的 `<code>` 的值.
 1. 使用以下 cURL 命令获取 refreshToken。将 tenantID、clientID 和 clientSecret 替换为您帐户的值以及 `<code>` 的值：
