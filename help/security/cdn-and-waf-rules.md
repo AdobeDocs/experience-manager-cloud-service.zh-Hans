@@ -2,7 +2,7 @@
 title: 配置流量过滤规则与 WAF 规则
 description: 结合使用流量过滤规则和 WAF 规则来过滤流量
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9345ec974c9fbd525b12b53d20d98809cd72cb04
+source-git-commit: 146b85093331fe26da891252c398fc24d4f7c0d6
 workflow-type: tm+mt
 source-wordcount: '3810'
 ht-degree: 71%
@@ -165,7 +165,7 @@ cdn.yaml 文件中的流量过滤规则格式如下所述。请参阅后面部�
 | reqProperty | `string` | 请求属性。<br><br>下列项目之一：`path`、`queryString`、`method`、`tier`、`domain`、`clientIp`、`clientCountry`<br><br>域属性是请求的主机标头的小写转换。在字符串比较中，它很有用，可确保不会因区分大小写而错过匹配。<br><br>`clientCountry` 使用 [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 上显示的两字母代码 |
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
-| cookie | `string` | 返回具有指定名称的 Cookie |
+| reqCookie | `string` | 返回具有指定名称的 Cookie |
 
 **谓词**
 
