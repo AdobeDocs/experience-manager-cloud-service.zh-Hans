@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2bb6c6b5846264145543134f607bd6520865b4ed
+source-git-commit: bb7bbe5e31d75a72b3c81939ce560e3ff3979a86
 workflow-type: tm+mt
-source-wordcount: '4330'
+source-wordcount: '4331'
 ht-degree: 99%
 
 ---
@@ -575,7 +575,7 @@ ht-degree: 99%
          + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [将基于 Foundation 组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
-         + [将数据源连接到 Cloud Service](/help/forms/data-integration.md)
+         + [将AEM Forms连接到数据库或数据源](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
          + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [使用 OAuth 2.0 客户端凭据流的 Salesforce 应用程序集成](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
