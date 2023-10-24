@@ -2,10 +2,10 @@
 title: 配置流量过滤规则与 WAF 规则
 description: 结合使用流量过滤规则和 WAF 规则来过滤流量
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 218bf89a21f6b5e7f2027a88c488838b3e72b80e
+source-git-commit: 5231d152a67b72909ca5b38f0bbc40616ccd4739
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 71%
+source-wordcount: '3661'
+ht-degree: 69%
 
 ---
 
@@ -166,6 +166,7 @@ cdn.yaml 文件中的流量过滤规则格式如下所述。请参阅后面部�
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
 | reqCookie | `string` | 返回具有指定名称的 Cookie |
+| postParam | `string` | 从正文中返回具有指定名称的参数。 仅当正文为内容类型时才有效 `application/x-www-form-urlencoded` |
 
 **谓词**
 
@@ -208,12 +209,9 @@ cdn.yaml 文件中的流量过滤规则格式如下所述。请参阅后面部�
 | TRAVERSAL | 目录遍历 | 目录遍历是指尝试在整个系统中导航特权文件夹以获取敏感信息。 |
 | USERAGENT | 攻击工具 | 攻击工具是指使用自动化软件来找出安全漏洞或尝试利用已发现的漏洞。 |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻击尝试利用 2.16.0 版之前的 Log4J 版本中存在的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/Log4Shell) |
-| AWS SSRF | AWS-SSRF | 服务器端请求伪造 (SSRF) 是一种请求，它尝试将 Web 应用程序发出的请求发送到目标内部系统。AWS SSRF 攻击使用 SSRF 获取 Amazon Web Services (AWS) 密钥并获取对 S3 存储桶及其数据的访问权限。 |
 | BHH | 错误跳头 | 错误跳头是指尝试通过格式错误的 Transfer-Encoding (TE) 或 Content-Length (CL) 头或格式良好的 TE 和 CL 头进行 HTTP 走私 |
 | ABNORMALPATH | 异常路径 | 异常路径表示原始路径与规范化路径不同（例如，`/foo/./bar` 标准化为 `/foo/bar`） |
-| COMPRESSED | 检测到压缩 | POST 请求正文被压缩，无法检查。例如，如果指定了“Content-Encoding: gzip”请求头，并且 POST 正文不是纯文本。 |
 | DOUBLEENCODING | 双重编码 | 双重编码检查双重编码 html 字符的规避技术 |
-| FORCEFULBROWSING | 强制浏览 | 强制浏览是指尝试访问管理页面失败 |
 | NOTUTF8 | 无效编码 | 无效编码可能会促使服务器将请求中的恶意字符转换为响应，从而导致拒绝服务或 XSS |
 | JSON-ERROR | JSON 编码错误 | 指定为在“Content-Type”请求头中包含 JSON，但包含 JSON 解析错误的 POST、PUT 或 PATCH 请求正文。这通常与编程错误或自动或恶意请求有关。 |
 | MALFORMED-DATA | 请求正文中的格式错误的数据 | 根据“Content-Type”请求头，格式错误的 POST、PUT 或 PATCH 请求正文。例如，如果指定了“Content-Type: application/x-www-form-urlencoded”请求头并包含 POST 正文 json。这通常是编程错误、自动或恶意请求。需要代理 3.2 版或更高版本。 |
@@ -222,9 +220,7 @@ cdn.yaml 文件中的流量过滤规则格式如下所述。请参阅后面部�
 | NO-CONTENT-TYPE | 缺少“Content-Type”请求头 | 不具有“Content-Type”请求头的 POST、PUT 或 PATCH 请求。在此示例中，默认情况下，应用程序服务器应假定“Content-Type: text/plain; charset=us-ascii”。许多自动和恶意请求可能缺少“内容类型”。 |
 | NOUA | 无用户代理 | 许多自动和恶意请求使用虚假或缺失的用户代理，导致难以识别发出请求的设备类型。 |
 | TORNODE | Tor 流量 | Tor 是可以隐藏用户身份的软件。Tor 流量尖峰可能表明攻击者正在试图掩盖其位置。 |
-| DATACENTER | 数据中心流量 | 数据中心流量是源自确定的托管提供商的非自然流量。此类流量通常与实际最终用户无关。 |
 | NULLBYTE | 空字节 | 空字节通常不会出现在请求中，并表明请求的格式错误且可能是恶意请求。 |
-| IMPOSTOR | 搜索机器人伪装者 | 搜索机器人伪装者是指冒充 Google 或 Bing 搜索机器人且不合法的人员。请注意，它本身不依赖于响应，但必须先在云中解析，因此不应在预规则中使用它。 |
 | PRIVATEFILE | 私有文件 | 私有文件通常是机密性的，例如 Apache `.htaccess` 文件或可能泄露敏感信息的配置文件 |
 | SCANNER | 扫描程序 | 标识常用的扫描服务和工具 |
 | RESPONSESPLIT | HTTP 响应拆分 | 标识何时将 CRLF 字符作为输入提交给应用程序以将标头注入 HTTP 响应 |
