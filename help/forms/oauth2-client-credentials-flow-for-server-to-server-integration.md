@@ -3,14 +3,14 @@ title: 如何使用OAuth 2.0客户端凭据流将Salesforce与AEM Forms集成？
 description: 了解如何使用OAuth 2.0客户端凭据流将Salesforce与AEM Forms集成。
 Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, salesforce integration with oauth2 using client credential flow, salesforce and client credential integration
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 94%
+source-wordcount: '422'
+ht-degree: 77%
 
 ---
 
-# 通过 OAuth 2.0 客户端凭据流集成 Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
+# 使用OAuth 2.0客户端凭据流将自适应表单连接到Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -19,8 +19,9 @@ ht-degree: 94%
 
 您可以使用 OAuth 2.0 客户端凭据将 AEM Forms 与 Salesforce 应用程序集成。OAuth 2.0 客户端凭据是一种标准且安全的直接通信方法，无需用户参与。
 
-![设置 AEM Forms 和 Salesforce 应用程序之间的通信时的工作流](/help/forms/assets/salesforce-workflow.png)
-AEM Forms 交换在 Salesforce 连接的应用程序中定义的客户端凭据（消费方密钥和消费方密码）以获取访问令牌。
+![在AEM Forms和Salesforce应用程序之间设置通信时的工作流](/help/forms/assets/salesforce-workflow.png)
+
+AEM Forms交换在Salesforce连接的应用程序中定义的客户端凭据（使用者密钥和使用者密钥）以获取访问令牌。
 
 与授权代码流身份验证相比，使用 OAuth 2.0 客户端凭据进行身份验证可获得多个好处：
 
@@ -38,7 +39,7 @@ AEM Forms 交换在 Salesforce 连接的应用程序中定义的客户端凭据�
 
 ## 使用 OAuth 2.0 客户端凭据流配置 Salesforce 应用程序 {#steps-to-create-aem-datasource-configuration}
 
-要使用 OAuth 2.0 客户端凭据身份验证设置将 Salesforce 应用程序与自适应表单集成，请执行以下步骤：
+要使用OAuth 2.0客户端凭据身份验证设置将自适应表单连接到Salesforce应用程序，请执行以下步骤：
 
 1. 登录您的创作实例。
 1. 转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL 数据源]**。
@@ -66,4 +67,6 @@ AEM Forms 交换在 Salesforce 连接的应用程序中定义的客户端凭据�
 1. 单击&#x200B;**[!UICONTROL 测试连接]**。
 1. 如果连接成功，请单击&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
 
-现在，您可以[创建表单数据模型](/help/forms/create-form-data-models.md)以将配置的数据源与自适应表单集成。
+现在，您可以 [创建表单数据模型](/help/forms/create-form-data-models.md) 将自适应表单发送到Salesforce应用程序。
+
+

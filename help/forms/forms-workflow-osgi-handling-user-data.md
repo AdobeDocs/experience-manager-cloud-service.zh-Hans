@@ -5,9 +5,9 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1030'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 0%
 但是，在下列情形中标识与启动器关联的工作流时，您无法识别或结果可能模棱两可：
 
 * **通过观察文件夹触发的工作流**：如果工作流由观察文件夹触发，则无法使用工作流实例的启动器识别该工作流实例。 在此情况下，在存储的数据中对用户信息进行编码。
-* **从发布AEM实例启动的工作流**：在从AEM发布实例提交自适应Forms、交互式通信或信件时，所有工作流实例都是使用服务用户创建的。 在这些情况下，工作流实例数据中不会捕获登录用户的用户名。
+* **从发布AEM实例启动的工作流**：在从AEM发布实例提交自适应Forms或信件时，所有工作流实例都使用服务用户创建。 在这些情况下，工作流实例数据中不会捕获登录用户的用户名。
 
 ### 访问用户数据 {#access}
 

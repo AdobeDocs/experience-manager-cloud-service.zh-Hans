@@ -2,9 +2,9 @@
 title: 如何创建和使用主题来设置自适应表单的样式？
 description: 使用自适应表单主题设计自适应表单的样式并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
 workflow-type: tm+mt
-source-wordcount: '5581'
+source-wordcount: '5578'
 ht-degree: 2%
 
 ---
@@ -253,7 +253,7 @@ ht-degree: 2%
 
 * 左侧选项卡
 * 顶部选项卡
-* 折叠
+* 可折叠项
 * 响应式
 * 向导
 * 移动设备布局
@@ -650,7 +650,7 @@ You can use the theme configuration service to add more fonts to the theme edito
     
     * **主题编辑器：**
     
-    主题编辑器允许您创建主题来设置表单的样式 &lt;!> — 或交互式通信 — >。 您可以在主题中指定组件的样式，以使多个表单的外观保持一致 &lt;!> — 或交互式通信 — >由您来开发。 建议在主题中指定样式信息，然后将主题应用于表单。
+    主题编辑器允许您创建主题来设置表单的样式 &lt;!> — 或交互式通信 — >。 您可以在主题中指定组件的样式，以便在您开发的多个表单之间实现外观和感觉的一致性。 建议在主题中指定样式信息，然后将主题应用于表单。
     
     * **内联样式：**
     
