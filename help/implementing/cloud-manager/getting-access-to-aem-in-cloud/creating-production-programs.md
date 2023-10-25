@@ -2,10 +2,10 @@
 title: 创建生产程序
 description: 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '581'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 88%
 
 ---
 
@@ -32,12 +32,15 @@ ht-degree: 100%
 
 1. 或者，您也可以将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标，或单击它以从文件浏览器中选择图像，从而将图像添加到项目中。点按或单击&#x200B;**继续**。
 
-1. 如果您拥有增强安全性授权，**增强安全性**&#x200B;选项卡将为您的作品提供&#x200B;**启用增强安全性**&#x200B;选项程序。如果需要，请选中启用增强安全性的选项，然后点击或单击&#x200B;**继续**。
+1. 如果您拥有必要的权限， **安全性** 选项卡，并提供激活的选项 **HIPAA** 和/或 **WAF-DDOS保护** 用于您的生产程序。 如果您正在创建的程序有需要，请勾选适用的选项，然后点按或单击 **继续**.
 
-   * 程序创建后无法启用或禁用“增强安全性”。
-   * [详细了解](https://www.adobe.com/go/hipaa-ready_cn) Adobe 的 HIPAA 就绪解决方案实施。
+   * 程序创建后无法启用或禁用HIPAA。
+      * [详细了解](https://www.adobe.com/go/hipaa-ready_cn) Adobe 的 HIPAA 就绪解决方案实施。
+   * 激活后，可以通过设置 [非生产管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 
-   ![增强安全性选项](assets/create-production-program-enhanced.png)
+   {{waf-limited-release}}
+
+   ![安全选项](assets/create-production-program-security.png)
 
 1. 在&#x200B;**解决方案和插件** 选项卡，选择要包含在程序中的解决方案。
 
@@ -65,7 +68,7 @@ ht-degree: 100%
 
 ![Cloud Manager 概述](assets/navigate-cm.png)
 
-## 访问您的程序 {#acessing}
+## 访问您的程序 {#accessing}
 
 1. 在登陆页上看到程序信息卡后，选择省略号按钮查看可用的菜单选项。
 

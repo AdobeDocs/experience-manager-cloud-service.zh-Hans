@@ -1,8 +1,8 @@
 ---
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 41%
+source-wordcount: '262'
+ht-degree: 38%
 
 ---
 # 代码片段 {#snippets}
@@ -20,6 +20,10 @@ ht-degree: 41%
 >[!NOTE]
 >
 >AEM 当前不支持将组分配给配置文件。应改为单独添加用户。
+
+## WAF配置限量发布 {#waf-limited-release}
+
+[!BADGE WAF-DDOS保护将于2023年底提供。]{type=Caution tooltip="WAF-DDOS保护将于2023年底提供。"}
 
 ## 另请参阅 {#see-also}
 

@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道，以及如何使用它们高效地部署代码。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1337'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '1448'
+ht-degree: 92%
 
 ---
 
@@ -32,12 +32,6 @@ Cloud Manager 提供两种类型的管道：
 
 ![管道类型](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
 
-## 视频概述 {#video}
-
-要快速概述管道类型，请观看此短视频。
-
->[!VIDEO](https://video.tv.adobe.com/v/342363)
-
 ## 生产管道 {#prod-pipeline}
 
 生产管道是一种专门构建的管道，包括一系列协调的步骤，可部署用于生产的源代码。这些步骤包括初次构建、打包、测试、验证和部署到所有暂存环境中。因此，只有在创建了一组生产和暂存环境后，才能添加生产管道。
@@ -59,6 +53,7 @@ Cloud Manager 提供两种类型的管道：
 除了生产和非生产，管道还可以根据其部署的代码类型进行区分。
 
 * **[全栈管道](#full-stack-pipeline)** – 同时部署后端和前端代码构建，其中包含一个或多个 AEM 服务器应用程序以及 HTTPD/Dispatcher 配置。
+* **[配置部署管道](#config-deployment-pipeline)**  — 在AEM环境、维护任务、CDN规则等上配置设置。
 * **[前端管道](#front-end)** – 部署包含一个或多个客户端 UI 应用程序的前端代码版本。
 * **[Web 层配置管道](#web-tier-config-pipelines)** – 部署 HTTPD/Dispatcher 配置
 
@@ -73,9 +68,11 @@ Cloud Manager 提供两种类型的管道：
 | 生产或非生产 | 部署 | 全栈 | 同时部署后端和前端代码构建以及 HTTPD/Dispatcher 配置 | 前端代码必须与 AEM 服务器代码同时部署时。<br>尚未采用前端管道或 Web 层配置管道时。 |
 | 生产或非生产 | 部署 | 前端 | 部署包含一个或多个客户端 UI 应用程序的前端代码版本 | 支持多个并存前端管道<br>比全栈部署快得多 |
 | 生产或非生产 | 部署 | Web 层配置 | 部署 HTTPD/Dispatcher 配置 | 几分钟即可部署 |
+| 生产或非生产 | 部署 | 配置 | 部署流量过滤规则 | 几分钟即可部署 |
 | 非生产 | 代码质量 | 全栈 | 在不部署的情况下对全栈代码运行代码质量扫描 | 支持多条管道 |
 | 非生产 | 代码质量 | 前端 | 在不部署的情况下对前端代码运行代码质量扫描 | 支持多条管道 |
 | 非生产 | 代码质量 | Web 层配置 | 在不部署的情况下对 Dispatcher 配置运行代码质量扫描 | 支持多条管道 |
+| 非生产 | 代码质量 | 配置 | 部署流量过滤规则 |  |
 
 下图说明了 Cloud Manager 的管道配置，包括传统的、单个前端存储库或独立的前端存储库设置。
 
@@ -106,6 +103,26 @@ Cloud Manager 提供两种类型的管道：
 * 如果环境的相应 Web 层配置管道不存在，则用户可以配置全栈管道，包括或忽略 Dispatcher 配置。
 
 全栈管道可以是代码质量管道或部署。
+
+### 配置全栈管道 {#configure-full-stack}
+
+要了解如何配置全栈管道，请参阅以下文档：
+
+* [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+* [添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+
+## 配置部署管道 {#config-deployment-pipeline}
+
+通过配置部署管道，您可以在AEM环境中部署配置设置，以执行维护任务、CDN规则等。
+
+请参阅文档 [包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 了解如何管理存储库中的配置，以便正确部署它们。
+
+### 配置配置部署管道 {#configure-config-deployment}
+
+要了解如何配置配置部署管道，请参阅以下文档：
+
+* [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
 
 ## 前端管道 {#front-end}
 
@@ -142,14 +159,6 @@ Cloud Manager 提供两种类型的管道：
 
 请参阅[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
 
-### 配置全栈管道 {#configure-full-stack}
-
-要了解如何配置全栈管道，请参阅以下文档：
-
-* [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
-
-
 ## Web 层配置管道 {#web-tier-config-pipelines}
 
 Web 层配置管道通过将 HTTPD/Dispatcher 配置与其他代码更改分离，实现了对 AEM 运行时的独占部署。该管道已经简化，为只希望部署 Dispatcher 配置更改的用户提供了加速方法，只需几分钟即可完成部署。
@@ -175,9 +184,15 @@ Web 层配置管道通过将 HTTPD/Dispatcher 配置与其他代码更改分离�
 
 Web 层配置管道可以是代码质量类型或部署类型。
 
-### 配置 Web 层配置管道 {#configure-web-tier-config-pipelines}
+### 配置Web层管道 {#configure-web-tier}
 
-要了解如何配置 Web 层管道，请参阅以下文档：
+要了解如何配置Web层管道，请参阅以下文档：
 
-* [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [添加生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)
+* [添加非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)
+
+## 有关管道类型的视频概述 {#video}
+
+要快速概述管道类型，请观看此短视频。
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)

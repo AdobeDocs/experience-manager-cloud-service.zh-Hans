@@ -2,10 +2,10 @@
 title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
-workflow-type: ht
-source-wordcount: '502'
-ht-degree: 100%
+source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 89%
 
 ---
 
@@ -53,15 +53,19 @@ ht-degree: 100%
    * 该日期仅供参考。它会触发项目概述页面上的“上线”构件。反过来，它提供了 Adobe Experience Manager (AEM) as a Cloud Service 最佳实践文档的产品内链接以与您的历程保持一致，最终提供成功的上线体验。
    * 该选项卡在沙盒项目中不可用。
 
+1. 如果程序有所需的权利， **安全性** 选项卡将显示可在何处修改程序的安全选项。
+
+   ![编辑安全设置](assets/edit-program-security.png)
+
+   * HIPAA在以下时间后无法启用或禁用： [项目创建。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+      * [详细了解](https://www.adobe.com/go/hipaa-ready_cn) Adobe 的 HIPAA 就绪解决方案实施。
+   * 激活后，可以通过设置 [非生产管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+
+   {{waf-limited-release}}
+
 1. 单击&#x200B;**更新**&#x200B;以将更改保存到项目。
 
 无论何时编辑项目，包括添加或删除解决方案或加载项，这些更改都将在下次部署后生效。
-
-如果您的生产程序启用了增强安全性，则&#x200B;**编辑程序**&#x200B;窗口中会提供一个额外的&#x200B;**增强安全性**&#x200B;选项卡以确认该程序的功能已激活。
-
-![程序的增强安全性激活](assets/edit-program-enhanced.png)
-
-创建项目后无法编辑此设置。有关增强安全选项的更多信息，请参阅[创建生产项目](creating-production-programs.md)。
 
 ## 删除沙盒项目 {#delete-sandbox-program}
 
