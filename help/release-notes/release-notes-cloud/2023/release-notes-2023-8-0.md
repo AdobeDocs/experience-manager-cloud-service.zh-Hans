@@ -2,8 +2,8 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
+source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+workflow-type: tm+mt
 source-wordcount: '1686'
 ht-degree: 100%
 
@@ -156,7 +156,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 想试用该功能并分享反馈吗？使用您的官方电子邮件 ID 将电子邮件发送到 **aemcs-waf-adopter@adobe.com**，了解有关早期采用者计划的更多信息。空间是有限的。
 
-在[此处](/help/security/cdn-and-waf-rules.md)的文章中详细了解该功能。
+在[此处](/help/security/traffic-filter-rules-including-waf.md)的文章中详细了解该功能。
 
 
 ## 维护发行说明 {#maintenance}
