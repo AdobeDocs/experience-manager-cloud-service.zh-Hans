@@ -1,5 +1,5 @@
 ---
-title: 将内容摄取到Cloud Service
+title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
@@ -9,7 +9,7 @@ ht-degree: 7%
 
 ---
 
-# 将内容摄取到Cloud Service {#ingesting-content}
+# 将内容提取到云服务中 {#ingesting-content}
 
 ## Cloud Acceleration Manager中的摄取流程 {#ingestion-process}
 

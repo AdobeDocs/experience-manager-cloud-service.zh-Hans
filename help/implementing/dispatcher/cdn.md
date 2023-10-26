@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
 source-wordcount: '1033'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -131,7 +131,7 @@ AEM管理的CDN通过以下方式向每个请求添加标头：
 >
 >如果存在客户管理的CDN，则这些标头反映的是客户CDN代理服务器的位置，而不是实际客户端的位置。 因此，对于客户管理的CDN，地理位置标头应由客户CDN管理。
 
-国家/地区代码的值是所述的Alpha-2代码 [此处](https://en.wikipedia.org/wiki/ISO_3166-1).
+国家/地区代码的值是所描述的Alpha2代码 [此处](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 大陆代码的值为：
 

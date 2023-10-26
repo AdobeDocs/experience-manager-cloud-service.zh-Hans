@@ -15,7 +15,7 @@ ht-degree: 22%
 
 >[!INFO]
 >
->本文档引用了该工具的已弃用版本。 有关最新版本的更多信息，请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>本文档参考该工具的已弃用版本。 有关最新版本的更多信息，请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 <!-- Alexandru: drafting this for now
 
@@ -34,11 +34,11 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 
 在过渡到Adobe Experience Manager (AEM) as a Cloud Service的过程中，您必须将用户和组从现有AEM系统移动到AEMas a Cloud Service。 此迁移由内容传输工具完成。
 
-对 AEM as a Cloud Service 的一项重大更改是完全集成使用 Adobe ID 来访问创作层。此集成需要使用 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 用于管理用户和用户组。 用户配置文件信息集中存储在AdobeIdentity Management System (IMS)中，可在所有Adobe云应用程序之间提供单点登录。 有关更多详细信息，请参阅 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). 由于此更改，现有用户和组必须映射到其IMS ID，以避免在Cloud Service创作实例上出现重复的用户和组。
+对 AEM as a Cloud Service 的一项重大更改是完全集成使用 Adobe ID 来访问创作层。此集成需要使用 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 用于管理用户和用户组。 用户配置文件信息集中存储在AdobeIdentity Management System (IMS)中，可通过单点登录功能访问所有Adobe云应用程序。 有关更多详细信息，请参阅 [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=en#identity-management). 由于此更改，现有用户和组必须映射到其IMS ID，以避免Cloud Service创作实例上的重复用户和组。
 
 ## 用户映射工具 {#mapping-tool}
 
-内容传输工具（无用户映射）可迁移与正在迁移的内容关联的任何用户和组。 用户映射工具是内容传输工具的一部分。 它的唯一用途是编辑用户，以便能够被IMS正确识别，而IMS是AEMas a Cloud Service使用的单点登录功能。 完成这些修改后，内容传输工具会像往常一样迁移指定内容的用户和组。
+内容传输工具（不含用户映射）可迁移与正在迁移的内容关联的任何用户和组。 用户映射工具是内容传输工具的一部分。 其唯一用途是编辑用户，以便它们能够被IMS正确识别，而IMS是AEMas a Cloud Service使用的单点登录功能。 完成这些修改后，内容传输工具会像往常一样迁移指定内容的用户和组。
 
 ### 后续内容 {#whats-next}
 

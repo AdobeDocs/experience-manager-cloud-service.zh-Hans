@@ -1,14 +1,15 @@
 ---
-title: 迁移内容后编制索引
+title: 迁移内容后建立索引
 description: 了解迁移过程将如何对目标Cloud Service实例上的摄取内容进行索引。
-source-git-commit: 22c5cbf300bb0b3b0db04fcfa669dde44197c326
+exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
-# 迁移内容后编制索引 {#Indexing-content}
+# 迁移内容后建立索引 {#Indexing-content}
 
 ## 索引 {#aem-indexing-process}
 

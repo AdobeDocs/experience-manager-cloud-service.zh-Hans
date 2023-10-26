@@ -5,7 +5,7 @@ exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
 source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -40,16 +40,16 @@ Highlights upcoming features for Assets.
 
 固定文件、文件夹和集合，以便在以后需要时更快地访问这些项目。所有经过固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分。您可以使用“我的工作区”访问它们，而无需导航到存储库中保存它们的位置。
 
-固定资产、文件夹或收藏集：
+要固定资源、文件夹或收藏集：
 
-1. 选择项目并单击 **[!UICONTROL 固定到“快速访问”]**.
+1. 选择项目并单击&#x200B;**[!UICONTROL “固定到快速访问”。]**
 
-1. 选择是否需要仅为您、整个组织或选定组固定项目。 如果您选择 **[!UICONTROL 对于组]**，在中定义组名称 **[!UICONTROL 固定组]** 字段。
+1. 选择是否需要仅为您、整个组织或选定的组固定项目。如果您选择&#x200B;**[!UICONTROL “对群组”]**，请在&#x200B;**[!UICONTROL “为群组固定”]**&#x200B;字段中定义群组名称。
 
-   ![固定组的项目](assets/pin-items-for-groups.png)
-1. 单击 **[!UICONTROL 固定]**.
+   ![为群组固定项目](assets/pin-items-for-groups.png)
+1. 单击&#x200B;**[!UICONTROL “固定”。]**
 
-   选定的项目显示在 **[!UICONTROL 快速访问]** 部分。
+   选择的项目会显示在“我的工作区”的&#x200B;**[!UICONTROL “快速访问”]**部分。
    ![工作区中的“任务”](assets/quick-access.png)
 
 **见解**

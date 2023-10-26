@@ -35,7 +35,7 @@ Dispatcher是Adobe Experience Manager的缓存和/或负载平衡工具。 使�
 
 ## AEM Dispatcher 转换器 {#aem-dispatcher-converter}
 
-AEM Dispatcher Converter能够将现有的内部部署或Adobe Managed Services Dispatcher配置重构为与AEMas a Cloud Service兼容的Dispatcher配置。
+AEM Dispatcher Converter提供将现有内部部署或AdobeManaged Services Dispatcher配置重构为与AEMas a Cloud Service兼容的Dispatcher配置的功能。
 
 ## 使用 AEM Dispatcher Converter {#using-dispatcher-converter}
 

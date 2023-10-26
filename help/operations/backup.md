@@ -46,6 +46,6 @@ AEMas a Cloud Service支持：
 
 ## 异地备份 {#offsite-backup}
 
-虽然常规备份涵盖AEM Cloud Service中意外删除或技术故障的风险，但还必须涵盖因区域故障而引发的风险。 除了可用性之外，此类数据区域中断的最大风险主要是数据丢失。
+虽然常规备份涵盖AEMCloud Service中意外删除或技术故障的风险，但还必须涵盖因区域故障而引发的风险。 除了可用性之外，此类数据区域中断的最大风险主要是数据丢失。
 AEMas a Cloud Service会将此风险作为所有AEM生产环境的标准来涵盖。 它连续将整个AEM内容复制到远程区域，并让该内容在三个月内可用于恢复。 Adobe将此功能称为“异地备份”。
-如果数据区域发生中断，则AEM Service Reliability Engineering会执行用于暂存和生产环境的AEM Cloud Service的恢复。
+如果数据区域发生中断，则由AEM Service Reliability Engineering恢复暂存环境和生产环境的AEMCloud Service。

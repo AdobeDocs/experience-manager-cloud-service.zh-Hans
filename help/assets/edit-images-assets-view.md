@@ -6,81 +6,81 @@ exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
 source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # 在 [!DNL Assets view] 中编辑图像 {#edit-images}
 
-[!DNL Assets view] 提供了简单易用的编辑选项，由提供支持 [!DNL Adobe Express] 和 [!DNL Adobe Photoshop Express]. 可用的编辑操作，使用 [!DNL Adobe Express] 包括“调整图像大小”、“删除背景”、“裁切图像”和“将JPEG转换为PNG”。
+[!DNL Assets view] 提供了简单易用的编辑选项，并由 [!DNL Adobe Express] 和 [!DNL Adobe Photoshop Express] 提供支持。使用 [!DNL Adobe Express] 可进行的编辑操作包括调整图像大小、删除背景、裁切图像和将 JPEG 转换为 PNG。
 
-在编辑图像之后，您可以将新图像另存为新版本。版本控制可帮助您以后在需要时还原为原始资源。要编辑图像， [打开其预览](/help/assets/navigate-assets-view.md) 并单击 **[!UICONTROL 编辑图像]**.
+在编辑图像之后，您可以将新图像另存为新版本。版本控制可帮助您以后在需要时还原为原始资源。若要编辑图像，请[打开其预览](/help/assets/navigate-assets-view.md)，然后单击&#x200B;**[!UICONTROL “编辑图像”。]**
 
 >[!NOTE]
 >
->您可以使用编辑PNG和JPEG文件类型的图像 [!DNL Adobe Express].
+>您可以使用 [!DNL Adobe Express] 编辑 PNG 和 JPEG 文件类型的图像。
 
 <!--The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.-->
 
-## 使用Adobe Express编辑图像 {#edit-using-express}
+## 使用 Adob&#x200B;&#x200B;e Express 编辑图像 {#edit-using-express}
 
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express 集成"
->abstract="可直接在 AEM Assets 中找到受 Adobe Express 支持的简单而直观的图像编辑工具以提高内容重用并加快内容速度。"
+>abstract="由 Adobe Express 提供支持的简单直观的图像编辑工具可直接在 AEM Assets 中使用，以增加内容重用率并加快内容处理速度。"
 
 ### 调整图像大小 {#resize-image-using-express}
 
-将图像大小调整为热门用例中的特定大小。[!DNL Assets view] 提供针对特定照片大小预先计算的新分辨率，让您可以快速地调整图像大小以适合常见的照片尺寸。要使用调整图像大小，请执行以下操作 [!DNL Assets view]，请按照以下步骤操作：
+将图像大小调整为热门用例中的特定大小。[!DNL Assets view] 提供针对特定照片大小预先计算的新分辨率，让您可以快速地调整图像大小以适合常见的照片尺寸。要使用 [!DNL Assets view] 调整图像大小，请按照以下步骤操作：
 
-1. 选择图像并单击 **编辑**.
-2. 单击 **[!DNL Resize Image]** 从左侧窗格中可用的快速操作删除。
-3. 从中选择适当的社交媒体平台 **[!UICONTROL 调整大小]** 下拉列表，并从显示的选项中选择图像大小。
-4. 如果需要，使用 **[!UICONTROL 图像缩放]** 字段。
-5. 单击 **[!DNL Apply]** 以应用更改。
-   ![使用Adobe Express编辑图像](assets/adobe-express-resize-image.png)
+1. 选择图像并单击&#x200B;**“编辑”。**
+2. 单击可在左窗格中找到的快速操作内的 **[!DNL Resize Image]**。
+3. 从&#x200B;**[!UICONTROL “调整大小对象”]**&#x200B;下拉列表中选择适当的社交媒体平台，并从显示的选项中选择图像大小。
+4. 如果需要，使用&#x200B;**[!UICONTROL “图像比例”]**&#x200B;字段缩放图像。
+5. 单击 **[!DNL Apply]** 应用您的更改。
+   ![使用 Adob&#x200B;&#x200B;e Express 进行图像编辑](assets/adobe-express-resize-image.png)
 
-   您编辑的图像可供下载。 您可以将编辑后的资源另存为同一资源的新版本或另存为新资源。
-   ![使用Adobe Express保存图像](assets/adobe-express-resize-save.png)
+   您编辑的图像可供下载。您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
+   ![使用 Adob&#x200B;&#x200B;e Express 保存图像](assets/adobe-express-resize-save.png)
 
 ### 删除背景 {#remove-background-using-express}
 
-您可以通过如下所述的几个简单步骤从图像中删除背景：
+您可以通过几个简单的步骤从图像中删除背景，如下所述：
 
-1. 选择图像并单击 **编辑**.
-2. 单击 **[!DNL Remove Background]** 从左侧窗格中可用的快速操作删除。 Experience Manager Assets显示没有背景的图像。
-3. 单击 **[!DNL Apply]** 以应用更改。
-   ![使用Adobe Express保存图像](assets/adobe-express-remove-background.png)
+1. 选择图像并单击&#x200B;**“编辑”。**
+2. 单击可在左窗格中找到的快速操作内的 **[!DNL Remove Background]**。Experience Manager Assets 显示无背景的图像。
+3. 单击 **[!DNL Apply]** 应用您的更改。
+   ![使用 Adob&#x200B;&#x200B;e Express 保存图像](assets/adobe-express-remove-background.png)
 
-   您编辑的图像可供下载。 您可以将编辑后的资源另存为同一资源的新版本或另存为新资源。
+   您编辑的图像可供下载。您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
 
 ### 裁切图像 {#crop-image-using-express}
 
-使用嵌入式技术，可以轻松地将图像转换为完美大小 [!DNL Adobe Express] 快速操作。
+使用嵌入的 [!DNL Adobe Express] 快速操作可以轻松地将图像转换为完美尺寸。
 
-1. 选择图像并单击 **编辑**.
-2. 单击 **[!DNL Crop Image]** 从左侧窗格中可用的快速操作删除。
-3. 拖动图像角上的手柄，以创建所需的裁切。
-4. 单击 **[!DNL Apply]**.
-   ![使用Adobe Express保存图像](assets/adobe-express-crop-image.png)
-裁剪的图像可供下载。 您可以将编辑后的资源另存为同一资源的新版本或另存为新资源。
+1. 选择图像并单击&#x200B;**“编辑”。**
+2. 单击可在左窗格中找到的快速操作内的 **[!DNL Crop Image]**。
+3. 拖动图像角落上的手柄以创建所需的裁剪效果。
+4. 单击 **[!DNL Apply]**。
+   ![使用 Adob&#x200B;&#x200B;e Express 保存图像](assets/adobe-express-crop-image.png)
+裁剪后的图像可供下载。您可以将编辑后的资源另存为同一资源的新版本，也可以将其另存为新资源。
 
-### 将JPEG转换为PNG {#convert-jpeg-to-png-using-express}
+### 将 JPEG 转化为 PNG {#convert-jpeg-to-png-using-express}
 
-您可以使用Adobe Express快速将JPEG图像转换为PNG格式。 执行以下步骤：
+您可以使用 Adob&#x200B;&#x200B;e Express 将 JPEG 图像快速转换为 PNG 格式。执行以下步骤：
 
-1. 选择图像并单击 **编辑**.
-2. 单击 **[!DNL JPEG to PNG]** 从左侧窗格中可用的快速操作删除。
-   ![通过Adobe Express转换为PNG](assets/adobe-express-convert-image.png)
-3. 单击&#x200B;**[!UICONTROL 下载]**。
+1. 选择图像并单击&#x200B;**“编辑”。**
+2. 单击可在左窗格中找到的快速操作内的 **[!DNL JPEG to PNG]**。
+   ![使用 Adob&#x200B;&#x200B;e Express 转换为 PNG](assets/adobe-express-convert-image.png)
+3. 单击&#x200B;**[!UICONTROL “下载”。]**
 
 ### 限制 {#limitations-adobe-express}
 
-* 支持的图像分辨率：最小 — 50像素，最大 — 6000像素/维度
+* 支持的图像分辨率：最小 - 50 像素，最大 - 每维 6000 像素
 
-* 支持的最大文件大小：17MB
+* 支持的最大文件大小：17 MB
 
-## 编辑图像，使用 [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
+## 使用 [!DNL Adobe Photoshop Express] 编辑图像 {#edit-using-photoshop-express}
 
 <!--
 After editing an image, you can save the new image as a new version. Versioning helps you to revert to the original asset later, if needed. To edit an image, [open its preview](//help/navigate-assets-view.md#preview-assets) and click **[!UICONTROL Edit Image]** ![edit icon](assets/do-not-localize/edit-icon.png) from the rail on the right.
@@ -105,7 +105,7 @@ For more information about how Spot Healing works in Photoshop, see [retouching 
 
 ### 裁切和拉直图像 {#crop-straighten-images-using-photoshop-express}
 
-使用裁切和拉直选项，您可以执行基本的裁切、旋转图像、水平或垂直翻转图像，以及将其裁切为适合流行社交媒体网站的尺寸。
+使用裁切和拉直选项，您可以执行基本的裁切、旋转图像、在水平或垂直方向上翻转图像，以及将其裁切为适合流行社交媒体网站的尺寸。
 
 要保存您的编辑，请单击&#x200B;**[!UICONTROL 裁切图像]**。在编辑之后，您可以将新图像另存为版本。
 

@@ -3,7 +3,8 @@ title: 迁移封闭用户组
 description: 了解在将内容迁移到Adobe Experience Manager as a Cloud Service后启用封闭用户组所需的特殊注意事项。
 hide: true
 hidefromtoc: true
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
+source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 9%
@@ -46,4 +47,3 @@ ht-degree: 9%
    - 如果不包含，请使用包将其安装在目标实例上（或在其中手动创建），并激活它及其成员。 然后，验证它在Publish上是否存在。
 1. 重新发布与CUG策略关联的所有页面，确保通过先编辑页面等方法发布这些页面。 重新发布所有这些内容很重要。
    - 重新发布所有页面后，验证每个受CUG保护的页面的功能。
-

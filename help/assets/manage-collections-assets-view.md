@@ -5,7 +5,7 @@ exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
 source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -92,7 +92,7 @@ You can share collections with various users that are assigned different levels 
 
 ## 管理智能收藏集 {#manage-smart-collection}
 
-将搜索结果保存为智能收藏集以动态更新收藏集内容。如果有添加到Assets视图存储库的资源符合在创建智能收藏集时定义的搜索条件，则会在您打开智能收藏集时自动更新智能收藏集的内容。
+将搜索结果保存为智能收藏集以动态更新收藏集内容。如果有添加到Assets视图存储库的资源符合在创建智能收藏集时定义的搜索条件，则智能收藏集的内容将在您打开智能收藏集时自动更新。
 
 ### 创建智能收藏集 {#create-smart-collection}
 
@@ -188,7 +188,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ## 后续步骤 {#next-steps}
 
-* 使用提供产品反馈 [!UICONTROL 反馈] Assets视图用户界面上可用的选项
+* 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
