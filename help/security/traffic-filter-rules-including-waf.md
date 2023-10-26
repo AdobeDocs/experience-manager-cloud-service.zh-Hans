@@ -2,10 +2,10 @@
 title: 包含WAF规则的流量过滤器规则
 description: 配置包括Web应用程序防火墙(WAF)规则的流量过滤规则
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
 workflow-type: tm+mt
-source-wordcount: '3312'
-ht-degree: 51%
+source-wordcount: '3480'
+ht-degree: 47%
 
 ---
 
@@ -118,6 +118,10 @@ ht-degree: 51%
 
 对于 RDE，将使用命令行，但目前不支持 RDE。
 
+**注释**
+
+* 您可以使用 `yq` 在本地验证配置文件的YAML格式(例如 `yq cdn.yaml`)。
+
 ## 流量过滤规则语法 {#rules-syntax}
 
 您可以配置 `traffic filter rules` 以匹配 IPS、用户代理、请求标头、主机名、地理位置和 URL 等模式。
@@ -152,7 +156,7 @@ data:
 |---|---|---|---|---|---|
 | name | X | X | `string` | - | 规则名称（长度为 64 个字符，只能包含字母数字和 -） |
 | when | X | X | `Condition` | - | 基本结构为：<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[请参阅下面的条件结构语法，其中描述了 getter、谓词以及如何组合多个条件。](#condition-structure) |
-| 动作 | X | X | `Action` | log | log、allow、block、log 或 action 对象，默认值为 log |
+| 动作 | X | X | `Action` | log | 日志、允许、阻止或操作对象。 默认为log |
 | rateLimit | X |   | `RateLimit` | 未定义 | 速率限制配置。如果未定义，则禁用速率限制。<br><br>以下单独部分描述了 rateLimit 语法及示例。 |
 
 ### 条件结构 {#condition-structure}
@@ -188,11 +192,11 @@ data:
 
 | **属性** | **类型** | **描述** |
 |---|---|---|
-| reqProperty | `string` | 请求属性。<br><br>下列项目之一：`path`、`queryString`、`method`、`tier`、`domain`、`clientIp`、`clientCountry`<br><br>域属性是请求的主机标头的小写转换。在字符串比较中，它很有用，可确保不会因区分大小写而错过匹配。<br><br>`clientCountry` 使用 [https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 上显示的两字母代码 |
+| reqProperty | `string` | 请求属性。<br><br>其中之一：<br><ul><li>`path`：返回不含查询参数的URL的完整路径。</li><li>`queryString`：返回URL的查询部分</li><li>`method`：返回请求中使用的HTTP方法。</li><li>`tier`：返回一个 `author`， `preview` 或 `publish`.</li><li>`domain`：返回域属性(如 `Host` header)</li><li>`clientIp`：返回客户端IP。</li><li>`clientCountry`：返回两个字母的代码([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol) 用于标识客户所在的国家/地区。</li></ul> |
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
 | reqCookie | `string` | 返回具有指定名称的 Cookie |
-| postParam | `string` | 从正文中返回具有指定名称的参数。 仅当正文为内容类型时才有效 `application/x-www-form-urlencoded` |
+| postParam | `string` | 从请求正文中返回具有指定名称的Post参数。 仅当正文为内容类型时才有效 `application/x-www-form-urlencoded` |
 
 **谓词**
 
@@ -207,6 +211,19 @@ data:
 | **in** | `array[string]` | 如果提供的列表包含 getter 结果，则为 true |
 | **notIn** | `array[string]` | 如果提供的列表不包含 getter 结果，则为 true |
 | **存在** | `boolean` | 设置为true且属性存在或设置为false且属性不存在时为true |
+
+**注释**
+
+* 请求属性 `clientIp` 只能与以下谓词一起使用： `equals`， `doesNotEqual`， `in`， `notIn`. `clientIp` 还可以在使用时与IP范围进行比较 `in` 和 `notIn` 谓词。 以下示例实施一个条件来评估客户端IP是否在192.168.0.0/24的IP范围内（从192.168.0.0到192.168.0.255）：
+
+```
+when:
+  reqProperty: clientIp
+  in: [ "192.168.0.0/24" ]
+```
+
+* 我们建议使用 [regex101](https://regex101.com/) 和 [飞天小提琴](https://fiddle.fastly.dev/) 使用正则表达式时。 您还可以在此了解有关Fastly如何处理正则表达式的更多信息 [文章](https://developer.fastly.com/reference/vcl/regex/#best-practices-and-common-mistakes).
+
 
 ### 操作结构 {#action-structure}
 
@@ -259,6 +276,8 @@ data:
 * 如果规则匹配但被阻止，CDN 会提供 `406` 返回代码。
 
 * 配置文件不应包含机密信息，因为任何有权访问 Git 存储库的人员都能读取这些文件。
+
+* Cloud Manager中定义的IP允许列表优先于流量过滤器规则。
 
 ## 规则示例 {#examples}
 
@@ -396,9 +415,10 @@ data:
 | **属性** | **类型** | **默认** | **含义** |
 |---|---|---|---|
 | limit | 10 和 10000 之间的整数 | 必填 | 每秒触发规则的请求的请求率（每CDN POP）。 |
-| window | 整数枚举：1、10 或 60 | 10 | 计算请求速率的采样时段（以秒为单位）。 |
+| window | 整数枚举：1、10 或 60 | 10 | 计算请求速率的采样时段（以秒为单位）。计数器的精度将取决于窗口的大小（窗口越大，精度越高）。 例如，1秒窗口可以达到50%的精度，60秒窗口可以达到90%的精度。 |
 | penalty | 60 和 3600 之间的整数 | 300（5 分钟） | 匹配请求被阻止的时段（以秒为单位）（四舍五入到最接近的分钟）。 |
 | groupBy | array[Getter] | 无 | 速率限制器计数器将由一组请求属性（例如 clientIp）聚合。 |
+
 
 ### 示例 {#ratelimiting-examples}
 
