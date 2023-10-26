@@ -2,10 +2,10 @@
 title: 自定义代码质量规则
 description: 此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 Adobe Experience Manager Engineering 的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 57a7cd3fd2bfc34ebcee82832e020cf45887afa9
+source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
 workflow-type: tm+mt
-source-wordcount: '3868'
-ht-degree: 92%
+source-wordcount: '4097'
+ht-degree: 87%
 
 ---
 
@@ -519,6 +519,53 @@ Experience Manager API 接口正在不断修订，以识别建议不要使用的
 
 但在某些情况下，API 会在 Experience Manager 上下文中被弃用，但在其他上下文中可能不会被弃用。 此规则标识第二个类。
 
+### 请勿在Sling模型中将@Inject注释与@Optional一起使用 {#sonarqube-slingmodels-inject-optional}
+
+* **键**： InjectAnnotationWithOptionalInjectionCheck
+* **类型**：软件质量
+* **严重性**：轻微
+* **开始版本**：版本 2023.11
+
+Apache Sling项目不鼓励使用 `@Inject` Sling模型上下文中的注释，因为它在与 `DefaultInjectionStrategy.OPTIONAL` （在字段级别或类级别）。 而是采用更具体的注射方式(例如 `@ValueMapValue` 或 `@OsgiInjector` 批注)。
+
+查看 [Apache Sling文档](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) 以了解有关推荐的注释以及最初提出此推荐的原因。
+
+
+### 重用HTTPClient实例 {#sonarqube-reuse-httpclient}
+
+* **键**：AEMSRE-870
+* **类型**：软件质量
+* **严重性**：轻微
+* **开始版本**：版本 2023.11
+
+AEM应用程序通常使用HTTP协议与其他应用程序通信，Apache HttpClient是实现此目的的常用库。 但是，创建此类HttpClient对象会带来一些开销，因此应尽可能重用这些对象。
+
+此规则检查此类HttpClient对象在方法中是否不是私有的，而是在类级别上是全局的，以便可以重复使用。 在这种情况下，httpClient字段应在类的构造函数中设置，或者 `activate()` 方法（如果此类是OSGi组件/服务）。
+
+另请查看 [Optimization指南](https://hc.apache.org/httpclient-legacy/performance.html) 了解关于使用HttpClient的一些最佳实践。
+
+#### 不合规的代码 {#non-compliant-code-14}
+
+```java
+public void doHttpCall() {
+  HttpClient httpclient = HttpClients.createDefault();
+  // do something with the httpclient
+}
+```
+
+#### 合规的代码 {#compliant-code-11}
+
+```java
+public class myClass {
+
+  HttpClient httpclient;
+
+  public void doHttpCall() {
+    // do something with the httpclient
+  }
+
+}
+```
 
 ## OakPAL 内容规则 {#oakpal-rules}
 
