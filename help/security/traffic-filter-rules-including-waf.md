@@ -2,10 +2,10 @@
 title: 包含WAF规则的流量过滤器规则
 description: 配置包括Web应用程序防火墙(WAF)规则的流量过滤规则
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 00d3323be28fe12729204ef00e336c7a4c63cda7
+source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
 workflow-type: tm+mt
-source-wordcount: '3480'
-ht-degree: 47%
+source-wordcount: '3453'
+ht-degree: 45%
 
 ---
 
@@ -227,7 +227,7 @@ when:
 
 ### 操作结构 {#action-structure}
 
-由 `action` 字段指定，它可以是指定操作类型（allow、block、log）并为所有其他选项代入默认值的字符串，也可以是一个对象，在其中通过 `type` 必填字段以及适用于规则类型的其他选项来定义规则类型。
+An `action` 可以是指定操作（允许、阻止或日志）的字符串，也可以是由操作类型（允许、阻止或日志）和wafFlags和/或状态等选项组成的对象。
 
 **操作类型**
 
@@ -278,6 +278,8 @@ when:
 * 配置文件不应包含机密信息，因为任何有权访问 Git 存储库的人员都能读取这些文件。
 
 * Cloud Manager中定义的IP允许列表优先于流量过滤器规则。
+
+* WAF规则匹配项仅显示在CDN未命中和传递的CDN日志中，而不显示在点击中。
 
 ## 规则示例 {#examples}
 
@@ -491,7 +493,7 @@ AEMas a Cloud Service提供对CDN日志的访问，这些日志对于包括缓�
 * 如果WAF已许可并启用，则 `waf` attribute将列出检测到的任何WAF标志（例如SQLI），而不管这些WAF标志是否列在任何规则中。 这是为了深入了解要声明的潜在新规则。
 * 如果没有客户声明的规则匹配且没有waf规则匹配，则 `rules` 属性将为空。
 
-一般来说，匹配的规则会显示在针对 CDN 的所有请求的日志条目中，无论它是 CDN 命中、通过还是未命中。但是，WAF 规则仅显示在被视为 CDN 未命中或通过而非 CDN 命中的 CDN 请求的日志条目中。
+如前所述，WAF规则匹配项仅显示在CDN缺失和传递的CDN日志中，而不显示在点击中。
 
 以下示例显示了一个示例 `cdn.yaml` 和两个CDN日志条目：
 
