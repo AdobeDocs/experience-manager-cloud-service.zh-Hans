@@ -2,10 +2,10 @@
 title: 如何配置自适应表单的提交操作?
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: ddc7ddbcd1761b4320e1c7a30a015d844ef3e0c0
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 88%
+source-wordcount: '3429'
+ht-degree: 86%
 
 ---
 
@@ -172,14 +172,22 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 提交到 SharePoint {#submit-to-sharedrive}
 
-**[!UICONTROL 提交到 SharePoint]**&#x200B;提交操作将自适应表单与 Microsoft® SharePoint 存储连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的 Microsoft® Sharepoint 存储。要在自适应表单中使用&#x200B;**[!UICONTROL 提交到 SharePoint]** 提交操作，请执行以下操作：
+**[!UICONTROL 提交到 SharePoint]**&#x200B;提交操作将自适应表单与 Microsoft® SharePoint 存储连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的 Microsoft® Sharepoint 存储。
 
-1. [创建 SharePoint 配置](#create-a-sharepoint-configuration-create-sharepoint-configuration)：它将 AEM Forms 连接到 Microsoft® Sharepoint 存储。
+<!-- Using Submit to SharePoint, you can:
+* [Connect an Adaptive Form to SharePoint Document Library](#connect-af-sharepoint-doc-library)
+* [Connect an Adaptive Form to SharePoint List](#connect-af-sharepoint-list) -->
+
+### 将自适应表单连接到SharePoint文档库 {#connect-af-sharepoint-doc-library}
+
+要使用 **[!UICONTROL 提交到SharePoint文档库]** 以自适应表单提交操作：
+
+1. [创建SharePoint文档库配置](#create-a-sharepoint-configuration-create-sharepoint-configuration)：用于将AEM Forms连接到Microsoft® Sharepoint存储。
 2. [在自适应表单中使用“提交到 SharePoint”提交操作](#use-sharepoint-configuartion-in-af)：它将自适应表单连接到配置的 Microsoft® SharePoint。
 
-### 创建 SharePoint 配置 {#create-sharepoint-configuration}
+#### 创建SharePoint文档库配置 {#create-sharepoint-configuration}
 
-要将 AEM Forms 连接到 Microsoft® Sharepoint 存储，请执行以下操作：
+要将AEM Forms连接到Microsoft®Sharepoint文档库存储，请执行以下操作：
 
 1. 转到您的 **AEM Forms Author** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®SharePoint]**.
 1. 一旦您选择 **[!UICONTROL Microsoft®SharePoint]**，您将被重定向到 **[!UICONTROL SharePoint Browser]**.
@@ -208,15 +216,15 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 现在，您可以在自适应表单中将此SharePoint Sites配置用于提交操作。
 
-### 在自适应表单中使用SharePoint配置 {#use-sharepoint-configuartion-in-af}
+#### 在自适应表单中使用SharePoint文档库配置 {#use-sharepoint-configuartion-in-af}
 
-您可以在自适应表单中使用创建的SharePoint配置，将数据或生成的记录文档保存在SharePoint文件夹中。 执行以下步骤以在自适应表单中使用SharePoint存储配置，如下所示：
+您可以在自适应表单中使用创建的SharePoint文档库配置，将数据或生成的记录文档保存到SharePoint文件夹中。 执行以下步骤以在自适应表单中使用SharePoint文档库存储配置，如下所示：
 
 1. 创建[自适应表单](/help/forms/creating-adaptive-form.md)。
 
    >[!NOTE]
    >
-   > * 选择相同的 [!UICONTROL 配置容器] 自适应表单，您已在该表单中创建了SharePoint存储空间。
+   > * 选择相同的 [!UICONTROL 配置容器] 用于自适应表单，您已在该表单中创建了SharePoint Document Library存储。
    > * 如果未选择[!UICONTROL 配置容器]，则全局[!UICONTROL 存储配置]文件夹将显示在提交操作属性窗口中。
 
 1. 选择&#x200B;**[!UICONTROL 提交到 SharePoint]** 作为&#x200B;**提交操作**。
@@ -224,16 +232,74 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 1. 选择要用于保存数据的&#x200B;**[!UICONTROL 存储配置]**。
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存提交设置。
 
-提交表单时，数据将保存在指定的Microsoft® Sharepoint存储中。
+提交表单时，数据将保存在指定的Microsoft® Sharepoint文档库存储中。
 用于保存数据的文件夹结构是 `/folder_name/form_name/year/month/date/submission_id/data`。
+
+<!--
+### Connect an Adaptive Form to Microsoft® SharePoint List {#connect-af-sharepoint-list}
+
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
+
+To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
+
+1. [Create a SharePoint List Configuration](#create-sharepoint-list-configuration): It connects AEM Forms to your Microsoft® Sharepoint List Storage.
+1. [Use the Submit using Form Data Model in an Adaptive Form](#use-submit-using-fdm): It connects your Adaptive Form to configured Microsoft® SharePoint.
+
+#### Create a SharePoint List Configuration {#create-sharepoint-list-configuration}
+
+To connect AEM Forms to your Microsoft&reg; Sharepoint List:
+
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
+1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
+1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+    * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
+    * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
+
+      >[!NOTE]
+      >
+      > The **client secret** field is mandatory or optional depends upon your Azure Active Directory application configuration. If your application is configured to use a client secret, it is mandatory to provide the client secret.
+
+1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
+1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
+1. Tap **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+
+    >[!NOTE]
+    >
+    > In Microsoft® SharePoint List, the following column types are not supported:
+    > * image column
+    > * metadata column
+    > * person column
+    > * external data column
+
+#### Use the Submit using Form Data Model in an Adaptive Form {#use-submit-using-fdm}
+
+You can use the created SharePoint List configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint List folder. Perform the following steps to use a SharePoint List storage configuration in an Adaptive Form as:
+
+1. [Create a Form Data Model using Microsoft® SharePoint List configuration](/help/forms/create-form-data-models.md)
+1. [Configure the Form Data Model to retrieve and send data](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Create an Adaptive Form](/help/forms/creating-adaptive-form.md)
+1. [Configure Submit action using a Form Data Model](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+
+When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint List Storage. 
+
+    >[!NOTE]
+    >
+    > In Microsoft® SharePoint List, the following column types are not supported:
+    > * image column
+    > * metadata column
+    > * person column
+    > * external data column
+    
+-->
 
 ## 提交到 OneDrive {#submit-to-onedrive}
 
-**[!UICONTROL 提交到 OneDrive]**&#x200B;提交操作将自适应表单与 Microsoft® OneDrive 连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的 Microsoft® OneDrive 存储。
-
->[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
-
-要在自适应表单中使用[!UICONTROL 提交到 OneDrive] 提交操作，请执行以下操作：
+**[!UICONTROL 提交到 OneDrive]**&#x200B;提交操作将自适应表单与 Microsoft® OneDrive 连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的 Microsoft® OneDrive 存储。要在自适应表单中使用[!UICONTROL 提交到 OneDrive] 提交操作，请执行以下操作：
 
 1. [创建 OneDrive 配置](#create-a-onedrive-configuration-create-onedrive-configuration)：它将 AEM Forms 连接到 Microsoft® OneDrive 存储。
 2. [在自适应表单中使用“提交到 OneDrive”提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：它将自适应表单

@@ -3,7 +3,9 @@ title: 如何将AEM自适应表单连接到Microsoft® SharePoint列表？
 description: 将自适应表单连接到Microsoft® SharePoint列表。 了解如何配置Microsoft® SharePoint列表，并使用配置创建表单数据模型。 此外，您将了解如何将FDM与自适应表单相集成。
 role: User, Developer
 keywords: 将AEM自适应表单连接到Microsoft SharePoint列表，将自适应表单连接到Microsoft SharePoint列表，将AEM自适应表单集成到Microsoft SharePoint列表，将自适应表单集成到Microsoft SharePoint列表，将自适应表单中的数据提交到SharePoint列表，将AEM工作流提交到SharePoint列表。
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+hide: true
+hidefromToC: true
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 7%

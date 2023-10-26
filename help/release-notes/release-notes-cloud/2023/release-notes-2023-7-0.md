@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版的发行说明。'
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 8870e090d13504421c8056315918e13f4a50ee28
+source-git-commit: 75a26cf6f486ce951f1f81b5125026fac9458ab4
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -79,8 +79,6 @@ Assets Essentials 现在默认情况下根据相关性为搜索结果排序。�
 ### [!DNL Forms] 中的新增功能 {#new-features-available-in-forms-channel}
 
 * [**现成的主题**](/help/forms/using-themes-in-core-components.md)**和模板**：使用我们现成的 OOTB 主题和模板开始您的表单创建过程，这些主题和模板专为经验丰富的专业人士和新表单作者定制。这些精心策划的主题和模板是使用自适应表单核心组件无缝构建的，可让您快速开始为常见用例创建表单。
-
-  ![现成的模板](/help/forms/assets/form-templates-ootb.png)
 
 * **[Headless 表单的 React 组件](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：您现在可以使用现成的 React 组件预览和自定义 Headless 自适应表单演绎版。这些组件利用自适应表单核心组件中的 BEM 类进行样式设置，使您能够轻松地根据特定要求自定义其外观。
 

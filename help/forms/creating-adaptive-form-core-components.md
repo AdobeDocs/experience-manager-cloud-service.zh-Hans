@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
 workflow-type: tm+mt
 source-wordcount: '2326'
 ht-degree: 66%
@@ -41,7 +41,7 @@ ht-degree: 66%
 
    * `blank` 模板包含在每个新的 AEM Forms as a Cloud Service 项目中。
    * 您可以通过包管理器安装参考包，以将 `blank` 模板添加到 AEM Forms as a Cloud Service 项目。
-   * 您也可以从头开始[创建新的自适应表单模板（核心组件）](template-editor.md)。
+   * 您也可以从头开始[创建新的自适应表单模板（核心组件）](/help/forms/template-editor-core-components.md)。
    * 您还可以部署 [示例模板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) 到您的环境。 这些功能可帮助您迅速创建表单。
 
 * **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。`Canvas` 模板包含在每个新的 AEM Forms as a Cloud Service 项目中。您还可以部署 [示例主题](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) 到您的环境。 这些功能可帮助您开始设计表单的样式，并提供一个基础结构，以根据业务需求创建或自定义主题。
