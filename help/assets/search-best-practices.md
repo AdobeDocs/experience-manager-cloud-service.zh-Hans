@@ -2,13 +2,13 @@
 title: 搜索最佳实践 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: 在应用程序中搜索、查找和检索资源元数据的最佳实践。
 contentOwner: KK
-source-git-commit: 2c9316431d588241b470c8146c9444dbfc0af5fd
+exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
+source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
 workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 3%
 
 ---
-
 
 # AEM搜索最佳实践
 
