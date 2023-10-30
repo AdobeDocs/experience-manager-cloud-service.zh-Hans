@@ -8,10 +8,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 90%
+source-wordcount: '2445'
+ht-degree: 91%
 
 ---
 
@@ -409,8 +409,13 @@ Using this custom error handler, the adaptive form converts the fields listed in
 
 {{see-also}}
 
+>* [在自适应Forms（核心组件）中创建和使用自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
+
+<!--
+
 >[!MORELIKETHIS]
 >
->* [在自适应Forms（核心组件）中创建和使用自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
->* [为表单创建样式或主题](/help/forms/using-themes-in-core-components.md)
->* [创建自适应表单或将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+>* [Create style or themes for your forms](/help/forms/using-themes-in-core-components.md)
+>* [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
+-->

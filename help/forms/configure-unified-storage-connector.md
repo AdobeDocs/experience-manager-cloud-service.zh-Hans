@@ -1,23 +1,23 @@
 ---
-title: 如何为AEM Forms配置统一存储连接器？
-description: 了解如何管理AEM Forms的Unified Storage Connector。 使用统一存储连接器将AEM Forms连接到外部数据存储。
+title: 如何为AEM Forms配置统一存储连接器(USC)？
+description: 了解如何为AEM Forms管理Unified Storage Connector (USC)。 使用统一存储连接器(USC)将AEM Forms连接到外部数据存储。
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
-# 管理AEM Forms的统一存储连接器 {#manage-unified-storage-connector}
+# 管理AEM Forms的统一存储连接器(USC) {#manage-unified-storage-connector}
 
-您可以使用统一存储连接器将AEM Forms连接到外部数据存储。
+您可以使用统一存储连接器(USC)将AEM Forms连接到外部数据存储。
 
-例如，您可以在自适应表单中填写字段值并将其提交到AEM Workflow。 您可以进一步配置AEM Workflow以将数据存储在外部存储中，例如Microsoft Azure Storage Server。 使用统一存储连接器在AEM Workflow和外部存储之间创建连接。
+例如，您可以在自适应表单中填写字段值并将其提交到AEM Workflow。 您可以进一步配置AEM Workflow以将数据存储在外部存储中，例如Microsoft Azure Storage Server。 使用统一存储连接器(USC)在AEM Workflow和外部存储之间创建连接。
 
 ## 将AEM工作流连接到Microsoft Azure Storage Server {#connect-workflows-with-azure}
 
-创建Azure存储配置，并使用统一存储连接器引用该配置。 然后，您可以配置AEM Workflow模型以外部化数据存储以将其连接到Azure存储服务器。
+创建Azure存储配置并使用统一存储连接器(USC)引用该配置。 然后，您可以配置AEM Workflow模型以外部化数据存储以将其连接到Azure存储服务器。
 
 ### 创建 [!DNL Azure] 存储配置 {#create-azure-storage-configuration}
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 1. 指定 [!DNL Azure] 中的存储帐户 **[!UICONTROL Azure存储帐户]** 字段。
 1. 指定用于访问Azure存储帐户的密钥 **[!UICONTROL Azure访问密钥]** 字段并点按 **[!UICONTROL 保存]**.
 
-### 为AEM Workflow配置统一存储连接器 {#configure-unified-storage-connector-workflows}
+### 为AEM Workflow配置统一存储连接器(USC) {#configure-unified-storage-connector-workflows}
 
-执行以下步骤为AEM Workflow配置统一存储连接器：
+执行以下步骤为AEM Workflow配置统一存储连接器(USC)：
 
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**.
 

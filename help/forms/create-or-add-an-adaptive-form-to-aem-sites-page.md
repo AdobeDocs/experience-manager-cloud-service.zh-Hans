@@ -4,9 +4,9 @@ description: 了解如何在AEM Sites页面上创建或添加自适应表单。 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 7b797524d0df764c497baa6e4ffd0b3cabd368ca
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3212'
 ht-degree: 20%
 
 ---
@@ -255,14 +255,21 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
    * 要配置重定向URL，请为提交选项选择 **[!UICONTROL 重定向到URL]** 选项，然后浏览并选择AEM Sites页面，或提供外部页面的URL。
    * 要配置自定义或感谢消息，请在“提交”选项中选择 **[!UICONTROL 显示消息]** 选项，并在 **[!UICONTROL 消息内容]** 盒子。 它是一个富文本框，您可以使用全屏选项查看所有可用的富文本项。
 
-## 查看下一个
 
-* [为表单创建样式或主题](using-themes-in-core-components.md)
-* [使用规则编辑器将动态行为添加到表单](rule-editor.md)
-* [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
+<!--
+## See next
 
+* [Create style or themes for your forms](using-themes-in-core-components.md)
+* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+-->
 
 ## 另请参阅 {#see-also}
 
 {{see-also}}
+
+* [使用规则编辑器将动态行为添加到表单](rule-editor.md)
+* [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
+
 

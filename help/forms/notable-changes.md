@@ -3,9 +3,9 @@ title: AEM 6.5 Forms与AEMCloud Service之间有何区别？
 description: 比较AEM 6.5 Forms和AEMCloud Services，并了解在升级或迁移到Cloud Service之前最显着的更改。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1348'
 ht-degree: 2%
 
 ---
@@ -113,13 +113,20 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
 * 您可以使用Communications API在Formsas a Cloud Service上按需或批量生成个性化文档。 您可以在交互式通信用例和代理UI用例中使用AEM 6.5 Forms环境。
 
-## 查看下一个
+## 另请参阅
 
 * [从AEM Forms（内部部署和AMS环境）迁移到AEM Formsas a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [在AEM Sites中添加或创建自适应Forms页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [创建自适应表单（核心组件）](/help/forms/creating-adaptive-form-core-components.md)
-
-## 附加信息
-
 * [AEM Formsas a Cloud Service简介](/help/forms/home.md)
 * [设置本地开发环境和初始开发项目](/help/forms/setup-local-development-environment.md)
+
+
+<!--
+
+## Additional Information
+
+* [Introduction to AEM Forms as a Cloud Service](/help/forms/home.md)
+* [Set up a local development environment and initial development project](/help/forms/setup-local-development-environment.md)
+
+-->

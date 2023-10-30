@@ -2,9 +2,9 @@
 title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2678'
 ht-degree: 5%
 
 ---
@@ -410,19 +410,29 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 **Ans：** 在全局级别和组件级别进行自定义时，组件级别的自定义设置优先。
 
-## 查看下一个
+<!--
 
-* [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [生成自适应Forms记录文档（核心组件）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-* [创建包含可重复部分的自适应Forms](/help/forms/create-forms-repeatable-sections.md)
-* [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+## See next
+
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 >[!MORELIKETHIS]
 >
->* [在 AEM Forms as a Cloud Service 和本地开发环境上启用自适应表单核心组件](/help/forms/enable-adaptive-forms-core-components.md)
+>* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
+
+-->
 
 
 ## 另请参阅 {#see-also}
 
 {{see-also}}
+
+* [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [生成自适应Forms记录文档（核心组件）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [创建包含可重复部分的自适应Forms](/help/forms/create-forms-repeatable-sections.md)
+* [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [在 AEM Forms as a Cloud Service 和本地开发环境上启用自适应表单核心组件](/help/forms/enable-adaptive-forms-core-components.md)

@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 56%
+ht-degree: 59%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 56%
 
   ![将元数据表单分配给文件夹](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **跨组织授权库支持**：现在通过Experience Manager Assets可配置对其他IMS组织中的Creative Cloud库的访问权限。 它允许更轻松地访问Creative Cloud和Experience Manager之间最新的跨产品工作流程，并减少创意人员的时间和精力。
+* **对库的跨组织权限支持**：现在通过Experience Manager Assets可配置对其他IMS组织中的Creative Cloud库的访问权限。 它有助于更轻松地访问 Creative Cloud 和 Experience Manager 之间的最新跨产品工作流程，并减少创意人员花费的时间和精力。
 
 ### 可在 [!DNL Experience Manager Assets] 中找到的预发布功能 {#prerelease-features-assets}
 

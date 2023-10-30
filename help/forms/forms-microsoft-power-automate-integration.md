@@ -4,10 +4,10 @@ description: 将自适应表单与Microsoft® Power Automate集成。
 hide: true
 hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -190,12 +190,18 @@ ht-degree: 17%
         }
 ```
 
-## 另请参阅，
+## 另请参阅
 
 * [创建自适应表单](creating-adaptive-form-core-components.md)
 * [配置提交操作](configure-submit-actions-core-components.md)
 * [适用于Microsoft的Adobe Experience Manager Connector®Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
+* [将自适应表单连接到 Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+
+
+<!--
 
 >[!MORELIKETHIS]
 >
-* [将自适应表单连接到Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+>* [Connect Adaptive Form to Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+
+-->

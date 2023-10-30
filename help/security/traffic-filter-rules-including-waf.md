@@ -2,9 +2,9 @@
 title: 包含WAF规则的流量过滤器规则
 description: 配置包括Web应用程序防火墙(WAF)规则的流量过滤规则
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: aca385ff9a44733a6529c7e78e73fc1b138c1177
+source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3473'
 ht-degree: 45%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 45%
 # 包含WAF规则的流量过滤器规则 {#traffic-filter-rules-including-waf-rules}
 
 >[!NOTE]
->此功能不久将在开发环境中提供，并将在11月逐步推出到暂存和生产环境。 您可以通过发送电子邮件来请求提前访问暂存和生产环境 **aemcs-waf-adopter@adobe.com**.
+>此功能现在可在开发环境中使用，并会在11月晚些时候逐步推出到暂存和生产环境。 您可以通过发送电子邮件来请求提前访问暂存和生产环境 **aemcs-waf-adopter@adobe.com**.
 
 流量过滤器规则可用于在CDN层阻止或允许请求，这在以下情况下可能很有用：
 
@@ -26,6 +26,8 @@ ht-degree: 45%
 流量过滤器规则的子类别需要增强安全许可证或WAF-DDoS保护许可证，将在今年晚些时候提供。 这些功能强大的规则称为WAF （Web应用程序防火墙）流量过滤器规则（简称WAF规则），可访问 [WAF标志](#waf-flags-list) 本文后面部分将对此进行介绍。
 
 流量过滤器规则可以通过Cloud Manager配置管道部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。 未来将支持RDE。
+
+[完成教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 以快速建立关于此功能的具体专业知识。
 
 ## 本文的组织方式 {#how-organized}
 

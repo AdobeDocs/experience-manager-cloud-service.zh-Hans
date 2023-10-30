@@ -5,10 +5,10 @@ role: User, Developer
 keywords: 将AEM自适应表单连接到Microsoft SharePoint列表，将自适应表单连接到Microsoft SharePoint列表，将AEM自适应表单集成到Microsoft SharePoint列表，将自适应表单集成到Microsoft SharePoint列表，将自适应表单中的数据提交到SharePoint列表，将AEM工作流提交到SharePoint列表。
 hide: true
 hidefromToC: true
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 7%
+source-wordcount: '550'
+ht-degree: 6%
 
 ---
 
@@ -86,16 +86,12 @@ ht-degree: 7%
 * [配置数据源](/help/forms/configuring-submit-actions.md)
 * [创建表单数据模型](/help/forms/create-form-data-models.md)
 * [使用以Forms为中心的AEM Workflows — 步骤参考以自动化业务流程](/help/forms/aem-forms-workflow-step-reference.md)
-
-## 附加信息
-
+* [创建自适应Forms的自定义提交操作](/help/forms/custom-submit-action-form.md)
 * [在AEM Sites页面上创建或添加自适应表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [将自适应表单嵌入到AEM Sites页面](/help/forms/embed-adaptive-form-aem-sites.md)
 * [在自适应表单中创建、使用和自定义主题](/help/forms/using-themes-in-core-components.md)
 
->[!MORELIKETHIS]
->
->* [创建自适应Forms的自定义提交操作](/help/forms/custom-submit-action-form.md)
+
 
 
 
