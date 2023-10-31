@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: f1af229fa0fb75a6181eae545ac7e51b31f212f7
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 59%
+ht-degree: 61%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 59%
 
   ![将元数据表单分配给文件夹](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **对库的跨组织权限支持**：现在通过Experience Manager Assets可配置对其他IMS组织中的Creative Cloud库的访问权限。 它有助于更轻松地访问 Creative Cloud 和 Experience Manager 之间的最新跨产品工作流程，并减少创意人员花费的时间和精力。
+* **对库支持跨组织权利**：现在通过Experience Manager Assets可配置对其他IMS组织中的Creative Cloud库的访问权限。 这样可更轻松地访问 Creative Cloud 与 Experience Manager 之间最新的跨产品工作流程，并减少创意人员花费的时间和精力。
 
 ### 可在 [!DNL Experience Manager Assets] 中找到的预发布功能 {#prerelease-features-assets}
 
@@ -89,7 +89,7 @@ ht-degree: 59%
 
 我们建议您通过以下方式熟悉流量过滤器规则 [试用教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)！ 它将指导您设置新的Cloud Manager配置管道、在配置文件中声明规则以及分析CDN日志以发现恶意流量。
 
-流量过滤器规则现在适用于开发环境，将于11月逐步推出到暂存和生产环境。 您可以通过发送电子邮件来请求提前访问暂存和生产环境 **aemcs-waf-adopter@adobe.com**.
+流量过滤器规则现在适用于开发环境，将于11月逐步推出到暂存和生产环境。 您可以通过向 **aemcs-waf-adopter@adobe.com** 发送电子邮件请求提前在阶段和生产环境中使用。
 
 高级WAF流量过滤器规则可以在今年晚些时候通过“增强安全性”或“WAF-DDoS保护”产品获得许可。
 

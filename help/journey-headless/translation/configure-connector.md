@@ -1,15 +1,15 @@
 ---
-title: 为 Headless 内容配置翻译连接器
+title: 为Headless内容配置翻译集成
 description: 了解如何将 AEM 连接到翻译服务。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+workflow-type: tm+mt
 source-wordcount: '1231'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# 配置翻译连接器 {#configure-connector}
+# 配置翻译集成 {#configure-integration}
 
 了解如何将 AEM 连接到翻译服务。
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何设置 AEM 连接器以使用所选翻译服务。阅读本文档后，您应：
+本文档可帮助您了解如何设置AEM与所选翻译服务的集成。 阅读本文档后，您应：
 
 * 了解 AEM 中翻译集成框架的重要参数。
 * 能够自行建立与翻译服务的连接。

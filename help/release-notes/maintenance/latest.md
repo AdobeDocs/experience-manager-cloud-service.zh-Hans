@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 6e82bbcc1b83fa9216831f6f746665507a46eec7
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
@@ -15,59 +15,59 @@ ht-degree: 23%
 
 ## 版本 14029 {#release-14029}
 
-以下总结了维护版本14029的不断改进，该版本于2023年10月25日公开发布。 此维护版本是对上一个维护版本 13804 的更新。
+下面总结了维护版本 14029 的持续改进，该版本已于 2023 年 10 月 25 日公开发布。此维护版本是对上一个维护版本 13804 的更新。
 
-2023.11.0 功能激活将为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
+2023.11.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
 ### 增强 {#enhancements-14029}
 
-* ASSETS-28551：提高“我的链接共享”UI的可扩展性
-* ASSETS-28566：添加dam：metadataForm Lucene索引
-* ASSETS-29281：更新RAPI以发送v2下载事件
+* ASSETS-28551：提高 My Link Shares UI 的可扩展性
+* ASSETS-28566：添加 dam:metadataForm Lucene 索引
+* ASSETS-29281：更新 RAPI 以发送 v2 下载事件
 
 ### 修复的问题 {#fixed-issues-14029}
 
-* ASSETS-25199：图像核心组件未显示正确的智能裁剪
-* ASSETS-26142：如果发现请求失败或中断，则未设置或重新尝试unified-shell.js customEnvLabel
-* ASSETS-26416：在搜索表单中，相对日期谓词始终定义为“1天前”
-* ASSETS-27321：在团队成员身份更改时清除组缓存
-* ASSETS-27591：修复对旧org.json的依赖关系
-* 列入阻止列表 ASSETS-28439：如果未配置全局阻止列表，智能标记将NPE
-* ASSETS-28612：“repository-api”中的BlockedTagResolver修复
-* ASSETS-28634：Adobe库存中的Omnisearch字段未自动添加资产数据
+* ASSETS-25199：图像核心组件未显示正确的智能剪裁
+* ASSETS-26142：unified-shell.js customEnvLabel在发现请求失败或中断时未设置或重新尝试
+* ASSETS-26416：相对日期谓词在搜索表单中始终定义为“1天前”
+* ASSETS-27321：清除团队成员身份更改的组缓存
+* ASSETS-27591：修复与旧 org.json 的相关性
+* ASSETS-28439：未配置全局阻止列表时智能标记会将 NPE 列入阻止列表
+* ASSETS-28612：&quot;repository-api&quot; 中的 BlockedTagResolver 修复
+* ASSETS-28634：Adobe stock 中的 Omnisearch 字段不会自动添加资源数据
 * ASSETS-28727：处理配置文件配置列表不显示指定的自定义高度和宽度值
-* ASSETS-29056：添加转码演绎版AEM标准处理配置文件
-* ASSETS-29105：RDE功能模型中SecurityProviderRegistration requiredServicePids中缺少限制提供程序
-* ASSETS-29106：在启用Unified Shell的AEM上查看Adobe库存时出现引发错误
+* ASSETS-29056：添加转码格式副本 AEM 标准处理配置文件
+* ASSETS-29105：RDE 功能模型中的 SecurityProviderRegistration requiredServicePids 中缺少限制提供程序。
+* ASSETS-29106：在启用统一 shell 的 AEM 上查看 Adobe stock 会引发错误
 * ASSETS-29115：删除限制提供程序路径的配置属性
-* ASSETS-29208：在注册CompleteUploadAssetServlet服务之前，由于请求发送到创作面板而导致资源上传出错
-* ASSETS-29297：创建带已签出筛选条件的保存搜索选项时出现问题
-* ASSETS-29363：元数据配置文件未应用IPTC的默认值
-* ASSETS-29404：链接共享报表达到查询限制
-* ASSETS-29431：删除旧的功能标记
-* ASSETS-29443：当Granite Shell标头模式更改为“选择”时，Unified Shell主页保持可见和可单击状态
-* ASSETS-29476： scene7DAMService.getS7FileReference(asset) Api调用未返回预期值。
-* ASSETS-29515：具有“jcr：lastModifiedBy”的资源/节点：“workflow-process-service”在列表视图中显示为“外部用户”
+* ASSETS-29208：在注册服务 CompleteUploadAssetServlet 之前发送到作者 pod 的请求导致资源上传错误
+* ASSETS-29297：使用签出的过滤器选项创建“保存”搜索时出现问题
+* ASSETS-29363：元数据配置文件未应用 IPTC 的默认值
+* ASSETS-29404：链接共享报告达到查询限制
+* ASSETS-29431：删除旧功能标志
+* ASSETS-29443：当 Granite Shell 标题模式更改为“选择”时，Unified Shell Hero 仍然可见且可点击
+* ASSETS-29476：scene7DAMService.getS7FileReference(asset) API 调用未返回预期值。
+* ASSETS-29515：具有 &quot;jcr:lastModifiedBy&quot;: &quot;workflow-process-service&quot; 的资源/节点在列表视图中显示为“外部用户”
 * ASSETS-29579：非管理员用户无法创建图像集
-* ASSETS-29631：使用dam：roles进行安全交付/搜索
-* ASSETS-29689：dc：roles（以及新属性dam：roles）应从AEM端筛选
-* ASSETS-29738：资产上传限制失败，出现NullPointerException
-* ASSETS-29779：无法将小型资产处理到Web页，因为不在Blob存储中
-* ASSETS-29892：对包含大量资产的文件夹导出元数据失败
-* ASSETS-29996：仅在PROD实例上间歇性上传资产时，将“外部用户”作为修饰符
-* ASSETS-30167：上传资源后，adobe_dam：restrictions的HTML中断
-* ASSETS-30276：共享链接UI：无法从资源详细信息共享
-* ASSETS-30434：资产处理已完成事件未发送到管道
-* ASSETS-30519：将RAPI添加到REDMetricsServletFilter
-* CQ-4354413： QueryBuilder：含方括号的查询被错误转换为xpath
+* ASSETS-29631：使用 dam:roles 进行安全传递/搜索
+* ASSETS-29689：dc:roles（以及新属性 dam:roles）应从 AEM 端过滤
+* ASSETS-29738：资源上传限制失败并出现 NullPointerException
+* ASSETS-29779：小型资源无法处理为 webp，因为不在 blob 存储中
+* ASSETS-29892：无法导出包含大量资源的文件夹的元数据
+* ASSETS-29996：仅在 PROD 实例上间歇性上传资源时，“外部用户”作为修饰符
+* ASSETS-30167：adobe_dam:restrictions 的 HTML 在上传资源后中断
+* ASSETS-30276：共享链接 UI：无法从资源详细信息中共享
+* ASSETS-30434：资源处理完成事件未发送到管道
+* ASSETS-30519：将 RAPI 添加到 REDMetricsServletFilter
+* CQ-4354413：QueryBuilder：带方括号的查询被错误地转换为 xpath
 * CQ-4354834：无法在收件箱任务中添加评论
 * CQ-4354836：无法从项目控制台启动工作流或创建任务
-* CQ-4354867： ToggleCondition引用了InstanceActionServlet中不存在的字段
-* CQ-4354895：AEM翻译包：10月12日
-* GRANITE-45560：事件信封中的通用模式表示形式
-* GRANITE-47267：更新至Apache Felix Http Jetty 4.2.18
-* GRANITE-47599：内容导入自13323升级以来失败(JCRVLT-721)
-* GRANITE-47873：Apache Felix Webconsole 4.9.6的更新
+* CQ-4354867：ToggleCondition 引用引用了 InstanceActionServlet 中不存在的字段
+* CQ-4354895：AEM 翻译套件：10 月 12 日
+* GRANITE-45560：事件信封中的通用模式表示
+* GRANITE-47267：更新到 Apache Felix Http Jetty 4.2.18
+* GRANITE-47599：自 13323 升级以来内容导入失败 (JCRVLT-721)
+* GRANITE-47873：更新到 Apache Felix Webconsole 4.9.6
 
 ### 已知问题 {#known-issues-14029}
 

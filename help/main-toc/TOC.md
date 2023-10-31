@@ -169,7 +169,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service 的 IMS 支持](/help/security/ims-support.md)
    + [面向 AEM as a Cloud Service 的相同网站 Cookie 支持](/help/security/same-site-cookie-support.md)
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
-   + [包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md)
+   + [流量过滤规则，包括 WAF 规则](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
 + 入门 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
