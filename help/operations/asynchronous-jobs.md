@@ -1,17 +1,17 @@
 ---
 title: 异步作业
-description: Adobe Experience Manager通过异步完成一些资源密集型任务作为后台操作来优化性能。
+description: Adobe Experience Manager通过以后台操作方式异步完成某些资源密集型任务来优化性能。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '865'
 ht-degree: 70%
 
 ---
 
 # 异步操作 {#asynchronous-operations}
 
-为了减少对性能的负面影响，Adobe Experience Manger将某些长时间运行且资源密集型操作异步处理为后台操作。 异步处理包括将多个作业排入队列，并以序列方式运行它们，但受到系统资源可用性的限制。
+为了减少对性能的负面影响，AdobeExperience Manger将某些长时间运行且资源密集型操作异步作为后台操作来处理。 异步处理包括将多个作业排入队列，并以序列方式运行它们，但受到系统资源可用性的限制。
 
 这些操作包括：
 
@@ -19,10 +19,9 @@ ht-degree: 70%
 * 移动许多资产或包含许多引用的资产
 * 批量导出/导入资产元数据
 * 从远程 Experience Manager 部署获取超过阈值限制设置的资产
-* 移动页面
 * 转出 Live Copy
 
-您可以从以下位置查看异步作业的状态 **[!UICONTROL 后台操作]** 报告面板位于 **全局导航** -> **工具** -> **常规** -> **作业**.
+您可以从以下位置查看异步作业的状态 **[!UICONTROL 后台操作]** 仪表板位置 **全局导航** -> **工具** -> **常规** -> **作业**.
 
 >[!NOTE]
 >
@@ -34,7 +33,7 @@ ht-degree: 70%
 
 每当 AEM 异步处理操作时，您都会在[收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)中通过电子邮件收到通知（如果已启用）。
 
-要查看异步操作的详细状态，请导航到 **[!UICONTROL 后台操作]** 页面。
+要查看异步操作状态的详细信息，请导航至 **[!UICONTROL 后台操作]** 页面。
 
 1. 在Experience Manager界面中，选择 **全局导航** -> **工具** -> **常规** -> **作业**.
 
@@ -72,11 +71,11 @@ ht-degree: 70%
 
 ## 配置异步作业处理选项 {#configure}
 
-可以配置的异步作业有许多选项。 以下示例说明如何在本地开发系统上使用Configuration Manager执行此操作。
+对于异步作业，有许多选项可供配置。 以下示例说明如何在本地开发系统上使用Configuration Manager执行此操作。
 
 >[!NOTE]
 >
->[OSGi配置](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) 被视为可变内容，任何此类配置都必须作为生产环境的内容包部署。
+>[OSGi配置](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) 被视为可变内容，任何此类配置必须部署为生产环境的内容包。
 
 ### 清除已完成的作业 {#purging-completed-jobs}
 
@@ -124,20 +123,6 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失败。
 1. 保存更改。
 
-### 配置异步页面移动操作 {#configuring-asynchronous-page-move-operations}
-
-如果对要移动的页面的引用数量超过阈值数，将异步执行移动操作。
-
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **osgi** > **配置**
-1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步页面移动操作作业处理配置。]**
-1. 在&#x200B;**[!UICONTROL 引用的阈值数]**&#x200B;字段中，指定用于异步处理页面移动操作的引用的阈值数。
-
-   ![页面移动阈值](assets/async-page-move.png)
-
-1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失败。
-1. 保存更改。
-
 ### 配置异步 MSM 操作 {#configuring-asynchronous-msm-operations}
 
 1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
@@ -154,4 +139,3 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 >* [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
 >* [批量导入和导出资产元数据](/help/assets/metadata-import-export.md)。
 >* [使用“连接的资产”从远程部署中共享 DAM 资产](/help/assets/use-assets-across-connected-assets-instances.md)。
-
