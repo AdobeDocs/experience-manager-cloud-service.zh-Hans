@@ -4,13 +4,15 @@ description: 了解如何为Dynamic Media交付失败的URL请求错误报告。
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-source-git-commit: 7ce15cc755c9db589001d543c16312096d88bcf0
+hide: true
+hidefromtoc: true
+exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
+source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 4%
 
 ---
-
 
 # 为失败的Dynamic Media投放URL请求错误报告
 
@@ -31,7 +33,3 @@ ht-degree: 4%
    如果您不知道公司名称，请参见 [Dynamic Media配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hans#configuring-dynamic-media-cloud-services) 页面位置 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Dynamic Media配置]**. 在Dynamic Media配置浏览器页面上，单击 **[!UICONTROL 全局]**，选择 *[Dynamic_Media文件夹图标]* 复选框，然后选择 **[!UICONTROL 编辑]**. 您必须在AEM中拥有管理员权限才能访问Dynamic Media配置页面。
 
    ![访问Dynamic Media配置页面。](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)
-
-
-
-
