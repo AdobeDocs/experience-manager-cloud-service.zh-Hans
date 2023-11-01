@@ -2,10 +2,10 @@
 title: 添加 SSL 证书
 description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '570'
-ht-degree: 100%
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 94%
 
 ---
 
@@ -17,29 +17,9 @@ ht-degree: 100%
 >
 >提供证书可能需要几天时间。因此，Adobe 建议提前提供证书。
 
-## 证书格式 {#certificate-format}
+## 证书要求 {#certificate-requirements}
 
-SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。PEM 格式的常见文件扩展名包括 `.pem,`。`crt`, `.cer`, 和 `.cert`.
-
-以下 `openssl` 命令可用于转换非 PEM 证书。
-
-* 将 PFX 转化为 PEM
-
-  ```shell
-  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-  ```
-
-* 将 P7B 转化为 PEM
-
-  ```shell
-  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-  ```
-
-* 将 DER 转化为 PEM
-
-  ```shell
-  openssl x509 -inform der -in certificate.cer -out certificate.pem
-  ```
+请查看部分 **证书要求** 文档的 [管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 以确保AEMas a Cloud Service支持您要添加的证书。
 
 ## 添加证书 {#adding-a-cert}
 

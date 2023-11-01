@@ -2,10 +2,10 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
+source-git-commit: 532f3ac9450d34f3e2a168c04695bafde5a44c9f
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 100%
+source-wordcount: '2601'
+ht-degree: 96%
 
 ---
 
@@ -36,6 +36,8 @@ ht-degree: 100%
 >生产和暂存环境只能成对创建。 您不能仅创建暂存环境或生产环境。
 
 ## 添加环境 {#adding-environments}
+
+要添加或编辑环境，用户必须是 **业务负责人** 角色。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -234,7 +236,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 ![从“环境”选项卡更新选项](assets/environ-update3.png)
 
-具有&#x200B;**部署管理员**&#x200B;角色的用户可以使用此选项将与此环境关联的管道更新为最新的 AEM 版本。
+用户具有 **部署管理员** 或 **业务负责人** 角色可以使用此选项将与此环境关联的管道更新为最新的AEM版本。
 
 管道版本更新为最新的公开可用 AEM 版本后，系统会提示用户运行关联的管道，将最新版本部署到环境中。
 
@@ -248,7 +250,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 ## 删除开发环境 {#deleting-environment}
 
-具有必要权限的用户能够删除开发环境。
+用户具有 **部署管理员** 或 **业务负责人** 角色能够删除开发环境。
 
 在&#x200B;**环境**&#x200B;信息卡的程序&#x200B;**概述**&#x200B;屏幕上，单击要删除的开发环境的省略号按钮。
 
@@ -287,7 +289,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 ## 本地登录 {#login-locally}
 
-从&#x200B;**环境**&#x200B;信息卡中的省略号菜单中选择&#x200B;**本地登录**，可本地登录到 Adobe Experience Manager。
+选择 **本地登录** 从中的环境省略号菜单中 **环境** 用于本地登录到Adobe Experience Manager的卡。
 
 ![本地登录](assets/environ-login-locally.png)
 
@@ -300,6 +302,8 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 在 Cloud Manager for Sites 程序中，发布和预览网站服务程序都支持自定义域名。 每个 Cloud Manager 环境最多可以为环境托管 250 个自定义域。
 
 要配置自定义域名，请导航到&#x200B;**环境**&#x200B;选项卡，然后单击环境查看环境详细信息。
+
+用户必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色，才能在 Cloud Manager 中添加自定义域名
 
 ![环境详细信息](assets/domain-names.png)
 

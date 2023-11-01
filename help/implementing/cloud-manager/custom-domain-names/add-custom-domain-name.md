@@ -2,10 +2,10 @@
 title: 添加自定义域名
 description: 了解如何使用 Cloud Manager 添加自定义域名。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 600288a87e024fbe58ff605a8bcdc61535cc0759
-workflow-type: ht
-source-wordcount: '601'
-ht-degree: 100%
+source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,9 @@ ht-degree: 100%
 
 ## 从“域设置”页面添加自定义域名 {#adding-cdn-settings}
 
-按照以下这些步骤从&#x200B;**域设置**&#x200B;页面添加自定义域名。如果您使用的 CDN 与所提供的 Fastly 不同，则这些步骤不适合您，而您必须用已设置的 CDN 配置您的域。
+添加自定义域名时，将使用最具体且有效的证书为该域提供服务。 如果多个证书具有相同的域，则选择最近更新的证书。 Adobe建议您管理证书，这样就不会有重叠域。
+
+按照以下这些步骤从&#x200B;**域设置**&#x200B;页面添加自定义域名。这些步骤基于Fastly。 如果您使用其他CDN，则必须使用您选择使用的CDN配置域。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 

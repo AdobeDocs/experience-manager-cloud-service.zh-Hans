@@ -2,10 +2,10 @@
 title: 管理 SSL 证书简介
 description: 了解 Cloud Manager 如何为您提供自助服务工具来安装 SSL 证书。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service 仅支持安全`https`站点。
 * 具有多个自定义域的客户不希望每次添加域时都得上载证书。
 * 这样的客户可受益于获得一个具有多个域的证书。
 
-## 要求 {#requirements}
+## 证书要求 {#requirements}
 
 * AEM as a Cloud Service 将只接受符合 OV（组织验证）或 EV（扩展验证）策略的证书。
 * 任何证书都必须是来自可信证书颁发机构 (CA) 的 X.509 TLS 证书，该证书具有匹配的 2048 位 RSA 私钥。
@@ -57,6 +57,30 @@ AEM as a Cloud Service 仅支持安全`https`站点。
 * 不接受自签名证书。
 
 OV 和 EV 证书为用户提供额外的 CA 验证信息，可用于确定网站所有者、电子邮件发件人或可执行代码或 PDF 文档的数字签名人是否可信。DV 证书不允许进行此类所有权验证。
+
+### 证书格式 {#certificate-format}
+
+SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。PEM 格式的常见文件扩展名包括 `.pem,`。`crt`, `.cer`, 和 `.cert`.
+
+以下 `openssl` 命令可用于转换非 PEM 证书。
+
+* 将 PFX 转化为 PEM
+
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
+
+* 将 P7B 转化为 PEM
+
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
+
+* 将 DER 转化为 PEM
+
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## 限制 {#limitations}
 
