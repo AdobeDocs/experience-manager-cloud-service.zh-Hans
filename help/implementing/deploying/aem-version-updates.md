@@ -3,9 +3,9 @@ title: AEM 版本更新
 description: 了解Adobe Experience Manager (AEM)as a Cloud Service如何使用持续集成和交付(CI/CD)将您的项目保持在最新版本上。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 57d6b50ef5256bf6e8fce84100eed4690b77cb87
+source-git-commit: 9bfea65c07da5da044df8f698e409eab5c4320fb
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '827'
 ht-degree: 3%
 
 ---
@@ -30,15 +30,18 @@ AEMas a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的�
 
 有两种类型的 AEM 版本更新：
 
-* **AEM 维护更新**
+* [**AEM 维护更新**](/help/release-notes/maintenance/latest.md)
 
-   * 它们可以每天释放。
    * 它们主要用于维护目的，包括最新的错误修复和安全更新。
    * 由于定期应用更改，因此其影响最小。
 
-* **新增功能更新**
+* [**新增功能更新**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-   * 它们发布于 [可预测，按月计划。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
+   * 它们按照可预测的每月计划发布。
+
+>[!NOTE]
+>
+> 在上查看每月发布的关键日期 [Experience Manager版本发行路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 并标记您的日历，为关键活动做好准备以便发布。
 
 ## 更新失败 {#update-failure}
 
