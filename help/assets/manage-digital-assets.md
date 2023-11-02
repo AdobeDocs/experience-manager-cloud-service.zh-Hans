@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2f3845495b545f88a1bc5a5feef1a6312f679a26
+source-git-commit: 22cfb23784544947b6a38be0453959913c9e8ccd
 workflow-type: tm+mt
-source-wordcount: '4501'
+source-wordcount: '4519'
 ht-degree: 11%
 
 ---
@@ -266,6 +266,14 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >如果从&#x200B;**[!UICONTROL “演绎版”]**&#x200B;面板选择演绎版，则工具栏更改上下文并仅显示与该演绎版相关的那些操作。不显示“上传演绎版”图标等选项。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
 
    您可以为希望在图像或视频资源的详细信息页面中显示的演绎版配置尺寸。 根据您指定的维度，资源将显示具有精确或最接近维度的演绎版。
+
+   您无法创建具有以下前缀的节目，因为这些前缀是Adobe的内部前缀：
+
+   * cq5
+
+   * cqdam
+
+   * cq5dam
 
    要在资源详细信息级别配置图像的演绎版尺寸，请叠加 `renditionpicker` 节点 (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) 并配置宽度属性的值。配置属性&#x200B;**[!UICONTROL 大小（长）(以 KB 计）]**&#x200B;代替宽度，以根据图像大小在资源详细信息页面上自定义演绎版。对于基于大小的自定义，如果匹配的演绎版的大小大于原始演绎版，则属性 `preferOriginal` 将首选项分配给原始演绎版。
 
