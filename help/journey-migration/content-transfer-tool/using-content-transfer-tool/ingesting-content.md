@@ -2,10 +2,10 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
+source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
 workflow-type: tm+mt
-source-wordcount: '2191'
-ht-degree: 8%
+source-wordcount: '2324'
+ht-degree: 7%
 
 ---
 
@@ -31,27 +31,35 @@ ht-degree: 8%
 
 1. 提供创建引入所需的信息。
 
-   * 选择包含提取的数据作为源的迁移集。
+   * **迁移集：** 选择包含提取的数据作为源的迁移集。
       * 迁移集将在长时间不活动后过期，因此预计摄取将在执行提取后不久进行。 审核 [迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以了解详细信息。
-   * 选择目标环境。 在此环境中摄取迁移集的内容。 选择层。 （创作/发布）。 不支持快速开发环境。
+
+   >[!TIP]
+   > 如果提取当前正在运行，则对话框将指示它。 成功完成提取后，摄取将自动开始。 如果提取失败或停止，则提取作业将撤销。
+
+   * **目标：** 选择目标环境。 在此环境中摄取迁移集的内容。
+      * 摄取不支持快速开发环境(RDE)目标，并且即使用户有权访问，摄取也不会显示为可能的目标选择。
+      * 虽然可将迁移集同时引入到多个目标中，但目标一次只能是一个正在运行或正在等待引入的目标。
+
+   * **层：** 选择层。 （创作/发布）。
+      * 如果源是 `Author`，建议将其摄取到 `Author` 对目标进行分层。 同样，如果源是 `Publish`，目标应为 `Publish` 也一样。
 
    >[!NOTE]
-   >以下注释适用于摄取内容：
-   > 如果源是“作者”，则建议将其摄取到目标上的“作者”层。 同样，如果源是Publish，则目标也应是Publish。
    > 如果目标层为 `Author`时，创作实例会在摄取期间关闭，并对用户（例如，作者或执行维护的任何人）不可用。 原因是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 确保您的团队了解此事实。 另请注意，环境在创作引入期间似乎处于休眠状态。
-   > 您可以运行可选的预复制步骤，以显着加快引入速度。 请参阅 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
-   > 如果使用预复制引入（对于S3或Azure数据存储），建议先单独运行创作引入。 这样做可加快稍后运行的发布引入。
-   > 摄取不支持快速开发环境(RDE)目标，即使用户有权访问，摄取也不会显示为可能的目标选择。
 
-   >[!IMPORTANT]
-   > 仅当属于本地环境时，才能启动到目标环境的引入 **AEM管理员** Cloud Service创作服务上的组。 如果您无法开始引入，请参阅 [无法开始引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
-
-   * 选择 `Wipe` 值
+   * **擦除：** 选择 `Wipe` 值
       * 此 **擦除** 选项设置目标的摄取起点。 如果 **擦除** 之后，包括其所有内容的目标将被重置为Cloud Manager中指定的AEM版本。 如果未启用，则目标会保持其当前内容作为起点。
       * 请注意，此选项会 **NOT** 会影响执行内容摄取的方式。 摄取始终使用内容替换策略和 _非_ 内容合并策略，因此 **擦除** 和 **非划出** 在这种情况下，摄取迁移集将会覆盖目标上同一路径中的内容。 例如，如果迁移集包含 `/content/page1` 并且目标已包含 `/content/page1/product1`，摄取将删除整个 `page1` 路径及其子页面，包括 `product1`，并将其替换为迁移集中的内容。 这意味着在执行 **非划出** 摄取到包含应维护的任何内容的目标。
 
    >[!IMPORTANT]
    > 如果设置 **擦除** 为摄取启用，它会重置整个现有Cloud Service，包括目标存储库实例的用户权限。 对于添加到中的管理员用户，此重置也为true **管理员** 并且必须再次将该用户添加到管理员组才能开始引入。
+
+   * **预复制：** 选择 `Pre-copy` 值
+      * 您可以运行可选的预复制步骤，以显着加快引入速度。 请参阅 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
+      * 如果使用预复制引入（对于S3或Azure数据存储），建议运行 `Author` 仅先摄取。 这样做可以加快 `Publish` 摄取。
+
+   >[!IMPORTANT]
+   > 仅当属于本地环境时，才能启动到目标环境的引入 **AEM管理员** Cloud Service创作服务上的组。 如果您无法开始引入，请参阅 [无法开始引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
 
 1. 单击 **摄取**.
 
@@ -162,6 +170,9 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 最佳实践表明 **非划出** 必须使用包含版本（即，使用“包含版本”=true进行提取）的迁移集来运行引入，在迁移历程完成之前，尽可能少地修改目标上的内容至关重要。 否则，可能会发生这些冲突。
 
+### 引入已取消
+
+使用正在运行的提取作为其源迁移集创建的摄取将耐心等待，直到提取成功，此时摄取将正常开始。 如果提取失败或停止，则不会开始摄取及其索引作业，但将取消摄取及其索引作业。 在这种情况下，请检查提取以确定其失败的原因，修复问题并重新开始提取。 运行固定提取后，可以计划新的引入。
 
 ## 后续内容 {#whats-next}
 

@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager中的实施阶段
 description: 本页概述了Cloud Acceleration Manager中的实施阶段。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '652'
 ht-degree: 7%
 
 ---
@@ -109,7 +109,7 @@ AEMas a Cloud Service部署信息卡提供所有相关内容，帮助您将代�
 
 1. 下载并安装内容传输工具以填充迁移集并完成内容传输的提取阶段。 审核 [内容传输工具快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans) 以了解如何使用内容传输工具。
 
-1. 要将内容从迁移集摄取到AEMas a Cloud Service上的环境中，您必须开始摄取。 导航到 **引入作业** 并单击 **新建引入**. 审核 [将内容提取到目标](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html) 这样您就可以了解如何完成内容传输的摄取阶段。
+1. 要将内容从迁移集摄取到AEMas a Cloud Service上的环境中，您必须开始摄取。 导航到 **引入作业** 并单击 **新建引入**. 审核 [将内容提取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 这样您就可以了解如何完成内容传输的摄取阶段。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 

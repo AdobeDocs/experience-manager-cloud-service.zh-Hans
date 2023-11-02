@@ -2,9 +2,9 @@
 title: 验证内容转移
 description: 使用内容传输工具验证内容传输
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
+source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ Migration validation took 33 minutes
 
 这是已成功验证的示例，因为提取摘要中不存在缺失的条目。
 
-要进行比较，以下显示了验证失败时验证报表的外观：
+要进行比较，下面显示了验证失败（或执行增补迁移）时验证报表的外观：
 
 ```
 Beginning publish migration validation. Migration job id=[ac217e5a-a08d-4e81-cbd6-f39f88b174ce]

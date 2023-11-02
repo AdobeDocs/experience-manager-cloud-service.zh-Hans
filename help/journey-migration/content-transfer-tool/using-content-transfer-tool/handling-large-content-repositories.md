@@ -2,9 +2,9 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1835'
 ht-degree: 8%
 
 ---
@@ -191,6 +191,9 @@ AzCopy中的日志条目显示在提取日志中，并以c.a.g.s.m.c.azcopy.AzCo
 
 AzCopy在后续运行时会自动跳过在错误之前复制的任何Blob，并且无需再次复制。
 
+>[!TIP]
+>现在，提取成功后，可以将摄取计划为立即自动开始。 请参阅 [将内容提取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 以了解更多信息。
+
 #### 用于文件数据存储 {#file-data-store-extract}
 
 当为源文件dataStore运行AzCopy时，您应在日志中看到以下消息，指示正在处理文件夹：
@@ -198,8 +201,7 @@ AzCopy在后续运行时会自动跳过在错误之前复制的任何Blob，并�
 
 ### 5.使用AzCopy引入 {#ingesting-azcopy}
 
-请参阅 [将内容提取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-有关从Cloud Acceleration Manager (CAM)将内容摄取到目标的一般信息，包括在“新建摄取”对话框中关于如何使用AzCopy（预复制）或不使用的说明。
+请参阅 [将内容提取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 有关从Cloud Acceleration Manager (CAM)将内容摄取到目标的一般信息，包括在“新建摄取”对话框中关于如何使用AzCopy（预复制）或不使用的说明。
 
 要在摄取期间使用AzCopy，Adobe要求您使用的是至少版本2021.6.5561的AEMas a Cloud Service版本。
 
