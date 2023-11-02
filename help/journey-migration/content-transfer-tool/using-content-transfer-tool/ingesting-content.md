@@ -5,13 +5,13 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: a6d19de48f114982942b0b8a6f6cbdc38b0d4dfa
 workflow-type: tm+mt
 source-wordcount: '2191'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
 # 将内容提取到云服务中 {#ingesting-content}
 
-## Cloud Acceleration Manager中的摄取流程 {#ingestion-process}
+## Cloud Acceleration Manager 中的引入流程 {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"

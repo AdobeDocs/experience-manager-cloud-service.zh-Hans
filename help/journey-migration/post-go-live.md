@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 1b9d49ce1ef8ad4b0a11400b41d8c9b880cbf884
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 28%
 
 请参阅 [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md) 了解如何通过用户界面或通过Cloud Manager从API访问和管理日志。
 
-## 联系支持人员 {#contacting-support}
+## 联系支持 {#contacting-support}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"

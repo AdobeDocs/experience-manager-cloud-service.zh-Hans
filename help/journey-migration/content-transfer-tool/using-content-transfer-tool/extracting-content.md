@@ -5,13 +5,13 @@ exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 031ddfa2da0fc5ecc92267eae1f9dcaac394573d
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 28%
+ht-degree: 29%
 
 ---
 
 # 从源中提取内容 {#extracting-content}
 
-## 内容传输工具中的提取流程 {#extraction-process}
+## 内容转移工具中的提取流程 {#extraction-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"

@@ -1,16 +1,16 @@
 ---
-title: AEMas a Cloud Service中的备份和恢复
+title: AEM as a Cloud Service 中的备份和恢复
 description: 了解AEMas a Cloud Service中的备份和恢复
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 24%
+ht-degree: 27%
 
 ---
 
 
-# AEMas a Cloud Service中的备份和恢复 {#backup-aemaacs}
+# AEM as a Cloud Service 中的备份和恢复 {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"

@@ -5,11 +5,11 @@ exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2120'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service合作伙伴迁移指南 {#Overview}
+# 面向合作伙伴的 Adobe Experience Manager as a Cloud Service 迁移指南 {#Overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"

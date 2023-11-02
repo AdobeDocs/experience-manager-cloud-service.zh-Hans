@@ -5,7 +5,7 @@ exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
 workflow-type: tm+mt
 source-wordcount: '535'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -36,7 +36,7 @@ Cloud Acceleration Manager (CAM)为迁移提供一站式体验。 它以引导�
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
-### 在Cloud Acceleration Manager中创建和管理项目 {#create-project}
+### 在 Cloud Acceleration Manager 中创建和管理项目 {#create-project}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_gettingstarted"
