@@ -1,98 +1,98 @@
 ---
-title: AEM Formsas a Cloud Service常见问题解答
-description: Formsas a Cloud Service常见问题解答
+title: AEM Forms as a Cloud Service 常见问题
+description: Forms as a Cloud Service 常见问题
 contentOwner: khsingh
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 index: false
 source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '995'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # 常见问题 {#frequently-asked-questions}
 
-* **我可以使用代码编辑器创建规则吗？**
-您可以使用可视编辑器创建规则。 代码编辑器在 [!DNL Forms] as a Cloud Service。 如果您的自适应表单使用通过代码编辑器开发的规则脚本，请使用 [迁移实用程序](migrate-to-forms-as-a-cloud-service.md) 将代码脚本转换为自定义函数。 您可以将自定义函数与可视编辑器结合使用，以继续获取通过代码编辑器获取的结果。
+* **能否使用代码编辑器创建规则？**
+可使用 Visual Editor 创建规则。[!DNL Forms] as a Cloud Service 上无代码编辑器可用。如果自适应表单使用通过代码编辑器开发的规则脚本，请使用[迁移实用程序](migrate-to-forms-as-a-cloud-service.md)将代码脚本转换为自定义函数。您可以将自定义函数与 Visual Editor 结合使用，以继续获取通过代码编辑器获取的结果。
 
-* **我能否在Cloud Service实例上创建基于XFA的自适应表单？**
-能，您可以在Cloud Service实例上创建基于XFA的自适应表单。 但是，AEM Formsas a Cloud ServiceSDK（本地开发环境）不支持基于XFA的自适应Forms。 如果您打算将基于XFA的自适应Forms与AEM Formsas a Cloud ServiceSDK结合使用，请联系Adobe支持部门并提供您的用例的详细信息和特定要求。
+* **能否在 Cloud Service 实例上创建基于 XFA 的自适应表单？**
+是，可以在 Cloud Service 实例上创建基于 XFA 的自适应表单。不过，对于 AEM Forms as a Cloud Service SDK（本地开发环境）不支持基于 XFA 的自适应表单。如果要将基于 XFA 的自适应表单与 AEM Forms as a Cloud Service SDK 结合使用，请联系 Adobe 支持部门并提供您的用例和具体要求的详细信息。
 
 <!-- * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
 
   Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment). -->
 
-* **我是否可以从内部部署迁移内容或 [!DNL Adobe-Managed Services] 环境 [!DNL Forms] as a Cloud Service环境？**
-是，您可以从内部部署迁移自定义代码、内容和资产，或 [!DNL Adobe-Managed Services] 环境 [!DNL Forms] as a Cloud Service的环境。 有关详细说明，请参阅 [迁移到Formsas a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
+* **能否将内容从内部部署或 [!DNL Adobe-Managed Services] 环境迁移到 [!DNL Forms] as a Cloud Service 环境？**
+是，可以将自定义代码、内容和资源从内部部署或 [!DNL Adobe-Managed Services] 环境迁移到 [!DNL Forms] as a Cloud Service 环境。有关详细说明，请参阅[迁移到 Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md)。
 
 <!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
-* **从哪里可以获取AEM [!DNL Forms] as a Cloud Service [!DNL Java™] API参考文档？**
-您可以从下载Java™ API参考文档 [!DNL Maven Central Repository]. 要下载：
-   1. 转到 [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
-   1. 找到并打开包含最新版本的页面 [!DNL Experience Manager Forms] SDK。
-   1. 单击“查看全部”选项可查看所有文件。
-   1. 下载并解压缩 `aem-forms-sdk-api-<version>-javadocs`.jar.
-   1. 打开index.html文件以查看API参考文档。
+* **可从何处获取 AEM [!DNL Forms] as a Cloud Service [!DNL Java™] API 参考文档？**
+可以从 [!DNL Maven Central Repository] 下载 Java™ API 参考文档。要进行下载，请执行以下操作：
+   1. 转到 [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api)。
+   1. 找到并打开包含最新版本的 [!DNL Experience Manager Forms] SDK 的页面。
+   1. 单击“查看全部”选项以查看所有文件。
+   1. 下载 `aem-forms-sdk-api-<version>-javadocs` .jar 并解压缩。
+   1. 打开 index.html 文件以查看 API 参考文档。
 
-* **我可以从哪里获得 [!DNL JavaScript™] 自适应Forms的API参考？**
-您可以下载 [!DNL JavaScript™] 来自的API参考文档[!DNL  Maven Central Repository]. 要下载：
-   1. 打开 [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
-   1. 找到并打开包含最新版本的页面 [!DNL Experience Manager Forms] SDK。
-   1. 单击“查看全部”选项可查看所有文件。
-   1. 下载并解压缩 `aem-forms-sdk-api-<version>-jsdoc.jar`.
-   1. 打开index.html文件以查看API参考文档。
+* **可从何处获取自适应表单的 [!DNL JavaScript™] API 参考？**
+可从 [!DNL  Maven Central Repository] 下载 [!DNL JavaScript™] API 参考文档。要进行下载，请执行以下操作：
+   1. 打开 [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api)。
+   1. 找到并打开包含最新版本的 [!DNL Experience Manager Forms] SDK 的页面。
+   1. 单击“查看全部”选项以查看所有文件。
+   1. 下载 `aem-forms-sdk-api-<version>-jsdoc.jar` 并解压缩。
+   1. 打开 index.html 文件以查看 API 参考文档。
 
-* **我可以继续使用现有主题和模板吗？**
-是，在使用AEM 6.4 Forms和AEM 6.5 Forms创建的主题后，您可以 [迁移实用程序](migrate-to-forms-as-a-cloud-service.md) 以将其移至 [!DNL AEM Forms] as a Cloud Service。
+* **能否继续使用现有的主题和模板？**
+是，在使用[迁移实用程序](migrate-to-forms-as-a-cloud-service.md)将通过 AEM 6.4 Forms 和 AEM 6.5 Forms 创建的主题迁移到 [!DNL AEM Forms] as a Cloud Service 后，可以继续使用这些主题。
 
-  您也可以基于以下内容创建项目： [!DNL AEM Forms] as a Cloud Service [原型](setup-local-development-environment.md#forms-cloud-service-local-development-environment) 并使用包含的主题和模板示例。
+  还可根据 [!DNL AEM Forms] as a Cloud Service [原型](setup-local-development-environment.md#forms-cloud-service-local-development-environment)创建项目，并使用其中附带的主题和模板示例。
 
-* **能否生成与架构兼容的数据？**
-能，您可以创建自适应Forms以生成与架构兼容的数据。
+* **能否生成符合架构的数据？**
+是，可创建自适应表单以生成符合架构的数据。
 
 <!-- * **Can I pass custom parameters to the prefill service?**
 Custom parameters are planned for an upcoming release. -->
 
-* **能否缓存受保护的内容？**
-默认情况下，缓存受保护内容功能处于禁用状态。 要启用该功能，您可以按照提供的说明进行操作。 [缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans).
+* **能否缓存受保护内容？**
+默认情况下禁用缓存受保护内容功能。要启用该功能，可执行在[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans)中提供的指示。
 
-* **我有一个本地化的自适应表单；它不是渲染本地化的版本吗？ 原因可能是什么？如何解决这个问题？**
+* **本地化自适应表单不呈现本地化版本？导致这个问题的原因是什么，如何解决它？**
 
-  本地化的自适应Forms的URL约定现在支持在URL中指定区域设置。 新的URL约定支持在Dispatcher或CDN上缓存本地化的表单。 在Cloud Service环境中，使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 请求自适应表单的本地化版本，而不是 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`. Adobe建议使用Dispatcher或CDN缓存。 它有助于提高预填充表单的渲染速度。
+  本地化自适应表单的 URL 约定现在支持在 URL 中指定区域设置。通过新的 URL 约定，可在 Dispatcher 或 CDN 上缓存本地化表单。在 Cloud Service 环境上，使用 URL 格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 而非 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` 请求自适应表单的本地化版本。Adobe 建议使用 Dispatcher 或 CDN 缓存。这有助于加快预填充表单的呈现速度。
 
-* **我更新了一个自适应表单；客户无法使用更新后的版本？**
-默认情况下，CDN每5分钟刷新一次缓存，等待5分钟，然后检查是否有更新的版本。
+* **我更新了自适应表格；但客户无法使用更新后的版本？**
+默认情况下，CDN 每 5 分钟刷新一次缓存，请等待 5 分钟，然后检查更新后的版本。
 
-* **我能否在自适应表单中使用签名步骤创建浏览器中签名体验？**
-否，签名步骤不可用于 [!DNL Forms] as a Cloud Service。 删除自适应Forms中的签名步骤。 允许用户在提交后签署自适应表单，而不是签名步骤。 它可帮助您继续提供浏览器内签名体验。
+* **能否使用自适应表单中的签名步骤创建浏览器内签名体验？**
+否，签名步骤不适用于 [!DNL Forms] as a Cloud Service。删除自适应表单中的签名步骤。请允许用户在提交后签署自适应表单而代替签名步骤。这有助于您继续提供浏览器内签名体验。
 
-* **我可以在自适应表单中使用验证步骤吗？**
-否，验证步骤不可用于 [!DNL Forms] as a Cloud Service。 在将此类表单移动到Cloud Service环境之前，请从现有自适应Forms中删除验证步骤。
+* **能否在自适应表单中使用验证步骤？**
+否，验证步骤不适用于 [!DNL Forms] as a Cloud Service。从现有的自适应表单中删除验证步骤，然后再将此类表单迁移到 Cloud Service 环境。
 
-* **我是否可以将图表添加到自适应表单？**
-可以，您可以将图表添加到自适应Forms。 自适应Forms提供图表组件。 您可以使用它将图表添加到自适应表单。
+* **能否将图表添加到自适应表单？**
+是，可以将图表添加到自适应表单。自适应表单提供了一个图表组件。可使用它将图表添加到自适应表单。
 
 * **能否将表单数据模型连接到关系数据库模型？**
-您可以将表单数据模型连接到 [!DNL RESTful web services]， [!DNL SOAP-based web services]， [!DNL OData services]，并将Experience Manager用户配置文件作为数据源。 不支持将表单数据模型与关系数据库连接。
+可以表单数据模型作为数据源连接到 [!DNL RESTful web services]、[!DNL SOAP-based web services]、[!DNL OData services] 和 Experience Manager 用户配置文件。不支持将表单数据模型连接到关系数据库。
 
-* **我能否将自定义证书与表单数据模型结合使用以进行身份验证？**
-表单数据模型未提供使用自定义证书进行身份验证的方法。 因此，不支持x509和双向SSL等自定义证书。
+* **能否将自定义证书与表单数据模型结合使用进行身份验证？**
+表单数据模型不提供使用自定义证书进行身份验证的方法。因此，不支持 x509 和双向 SSL 等自定义证书。
 
-* **我能否使用Forms Portal提交操作自适应Forms？**
+* **能否将 Forms Portal 提交操作用于自适应表单？**
 
-  您可以修改现有的自适应Forms以使用 [提交到REST端点](configuring-submit-actions.md#submit-to-rest-endpoint)， [发送电子邮件](configuring-submit-actions.md#send-email)， [使用表单数据模型提交](configuring-submit-actions.md#submit-using-form-data-model)、和 [调用AEM工作流](configuring-submit-actions.md#invoke-an-aem-workflow) 提交操作。 Forms Portal和Forms Portal提交操作尚不可用。 留意功能可用性的月度发行说明。
+  可以修改现有自适应表单以使用[提交到 REST 端点](configuring-submit-actions.md#submit-to-rest-endpoint)、[发送电子邮件](configuring-submit-actions.md#send-email)、[使用表单数据模型提交](configuring-submit-actions.md#submit-using-form-data-model)和[调用 AEM 工作流](configuring-submit-actions.md#invoke-an-aem-workflow)提交操作。Forms Portal 和 Forms Portal 提交操作尚不可用。请关注每月发行说明以了解这些功能的可用性。
 
-* **我可以使用 [!DNL AEM Forms] 应用程序与 [!DNL AEM Forms] as a Cloud Service？**
+* **能否将 [!DNL AEM Forms] 应用程序与 [!DNL AEM Forms] as a Cloud Service 结合使用？**
 
-  自适应表单提供了响应式设计。这些表单会根据底层设备更改外观、设计和交互性。您可以在移动设备上继续使用自适应Forms，同时关注每月发布的发行说明，以了解各项功能的可用性。
+  自适应表单提供了响应式设计。这些表单会根据底层设备更改外观、设计和交互性。在关注每月发行说明以了解这些功能的可用性的同时，可继续在移动设备上使用自适应表单。
 
-* **初始GA版本中未包含哪些功能？**
-Forms门户， [!DNL AEM Forms] 应用程序、与Adobe Analytics的集成以及与Adobe Target的集成不在初始GA版本中。 有关新功能的信息，请查看每月发行说明。
+* **哪些功能未包含在初始 GA 版本中？**
+Forms Portal、[!DNL AEM Forms] 应用程序、与 Adobe Analytics 的集成以及与 Adobe Target 的集成未包含在初始 GA 版本中。有关新功能的信息，请查看每月发行说明。
 
-* **我设计了一个 [用于创建自适应表单的JSON架构](adaptive-form-json-schema-form-model.md). JSON架构为自适应表单的某些组件定义事件。 AEM Formsas a Cloud Service是否支持事件？**
-在Experience Manager6.5 Forms中创建基于JSON模式的自适应表单，并使用 [迁移实用程序](migrate-to-forms-as-a-cloud-service.md) 将此类自适应Forms迁移到AEM Formsas a Cloud Service。 该实用程序将此类事件转换为客户端库，您可以继续在Cloud Service环境中将自适应Forms与事件结合使用。
+* **我设计了一个 [JSON 架构来创建自适应表单](adaptive-form-json-schema-form-model.md)。此 JSON 架构为自适应表单的某些组件定义事件。AEM Forms as a Cloud Service 是否支持事件？**
+在 Experience Manager 6.5 Forms 环境中根据该 JSON 架构创建自适应表单，并使用[迁移实用程序](migrate-to-forms-as-a-cloud-service.md)将此类自适应表单迁移到 AEM Forms as a Cloud Service。该实用程序将此类事件转换为客户端库，您可以继续在 Cloud Service 环境中使用自适应表单与事件。
 
 <!-- 
 

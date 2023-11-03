@@ -4,9 +4,9 @@ description: 获取所有 Adobe AEM Cloud Services 支持资源的完整列表�
 landing-page-description: 了解 AEM Sites as a Cloud Service 的创作和管理方法。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: ce841a83d46dc1c4fa2edc858e4a0be0af3ac170
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '417'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 * [对 AEM Sites as a Cloud Service 的重要更改](sites-cloud-changes.md)
 * [创作快速入门指南](authoring/getting-started/quick-start.md)
 * [发布页面](authoring/fundamentals/publishing-pages.md)
-* [使用Edge Delivery Services创作](/help/edge/overview.md)
+* [使用 Edge Delivery Services 进行创作](/help/edge/overview.md)
 * [创作响应式布局](authoring/features/responsive-layout.md)
 * [创作模板](authoring/features/templates.md)
 * [使用体验片段](authoring/fundamentals/experience-fragments.md)
@@ -46,7 +46,7 @@ ht-degree: 98%
 
 ## 其他 Experience Manager 资源 {#other-resources}
 
-* [近期文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [近期文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)
 * [Dispatcher 文档](/help/implementing/dispatcher/overview.md)
 * [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

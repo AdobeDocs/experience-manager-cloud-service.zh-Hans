@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2015'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -199,25 +199,25 @@ AEM as a Cloud Service 现在可使用 [Sling 内容分发](https://sling.apache
 
 * 该架构将应用程序内容与应用程序代码和配置完全分离。所有代码和配置几乎都不可更改，并且都植入到用于创建各种创作和发布服务节点的基准图像中。因此，可以绝对保证每个节点都相同，并且只能通过运行 Cloud Manager 管道在全局范围内对代码和配置进行更改。
 
-## 带有Edge Delivery Services的AEM {#aem-with-edge-delivery-services}
+## 带 Edge Delivery Services 的 AEM {#aem-with-edge-delivery-services}
 
-通过添加Edge Delivery Services，AEM可提供卓越的体验，从而提升参与度和转化率。 AEM 通过投放可快速创作并开发且极具影响力的体验实现这一点。Edge Delivery Services是一组可组合的服务，能够启用快速开发环境，让作者能够快速更新和发布，并快速启动新站点。 因此，借助 Edge Delivery Services，可提高转化率、降低成本并为内容大幅提速。
+通过添加 Edge Delivery Services，AEM 可提供促进参与和转化的优秀体验。AEM 通过投放可快速创作并开发且极具影响力的体验实现这一点。Edge Delivery Services 是一组可组合的服务，可用于实现快速开发环境，作者从中可快速地更新和发布并快速地启动新站点。因此，借助 Edge Delivery Services，可提高转化率、降低成本并为内容大幅提速。
 
-更新的架构包括：
+更新后的架构包括：
 
 * 内容管理，现在包括一系列编辑器：
    * Universal Visual Editor
    * 内容片段编辑器
    * 页面编辑器
-   * 基于文档的创作；从SharePoint或Google Drive
-* Experience Delivery ，现在包括：
+   * 基于文档的创作；从 SharePoint 或 Google Drive
+* 体验投放，现在包括：
    * Edge Delivery Services
-* 辅助服务，用于快速、高效地交付内容和代码
+* 辅助服务，用于快速高效地投放内容和代码
 
-![AEMas a Cloud Service概述 — 带有Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEMas a Cloud Service概述 — 带有Edge Delivery Services")
+![AEM as a Cloud Service 概述 - 带 Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service 概述 - 带 Edge Delivery Services")
 
 另请参阅：
 
-* [AEMas a Cloud Service概述 — 带有Edge Delivery Services](/help/edge/overview.md)
+* [AEM as a Cloud Service 概述 - 带 Edge Delivery Services](/help/edge/overview.md)
 * [使用 Edge Delivery Services](/help/edge/using.md)
-* [探索AEM与Edge Delivery Servicesas a Cloud Service的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
+* [探索带 Edge Delivery Services 的 AEM as a Cloud Service 的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=zh-Hans)
