@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
 workflow-type: tm+mt
 source-wordcount: '4357'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 98%
          + [2023.9.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.9.0.md)
          + [2023.8.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.8.0.md)
          + [2023.7.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.7.0.md)
-         + [2023.6.0 的维护J发行说明](/help/release-notes/maintenance/2023/2023.6.0.md)
+         + [2023.6.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.6.0.md)
          + [2023.4.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [2023.2.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [2023.1.0 的维护发行说明](/help/release-notes/maintenance/2023/2023.1.0.md)
@@ -169,7 +169,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service 的 IMS 支持](/help/security/ims-support.md)
    + [面向 AEM as a Cloud Service 的相同网站 Cookie 支持](/help/security/same-site-cookie-support.md)
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
-   + [流量过滤规则，包括 WAF 规则](/help/security/traffic-filter-rules-including-waf.md)
+   + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
 + 入门 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -549,7 +549,7 @@ ht-degree: 98%
    + 与 Adobe Express 集成 {#integration-adobe-express}
       + [适用于 Adobe Express 的 AEM Assets 加载项](/help/assets/addon-adobe-express.md)
 
-   + 与Creative Cloud集成 {#integration-creative-cloud}
+   + 与Creative Cloud{#integration-creative-cloud}集成
       + [将AEM Assets连接到Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
 
 + Forms {#forms}
@@ -580,10 +580,10 @@ ht-degree: 98%
          + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [将基于 Foundation 组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
-         + [将AEM Forms连接到数据库或数据源](/help/forms/data-integration.md)
+         + [将 AEM Forms 连接到数据库或数据源](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
          + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [使用OAuth 2.0客户端凭据流将自适应表单连接到Salesforce应用程序](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [使用 OAuth 2.0 客户端凭据流将自适应表单连接到 Salesforce 应用程序](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
          + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
          + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
          + [创建表单数据模型](/help/forms/create-form-data-models.md)
@@ -749,7 +749,7 @@ ht-degree: 98%
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)
    + [开发人员门户（其他资源）](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-   + [最佳实践 — 设置和使用](/help/headless/best-practices-setup-use.md)
+   + [最佳实践 - 设置和使用](/help/headless/best-practices-setup-use.md)
    + 设置 {#setup}
       + [简介](/help/headless/setup/introduction.md)
       + [配置](/help/headless/setup/create-configuration.md)
@@ -879,7 +879,7 @@ ht-degree: 98%
          + [应用和取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [许可证功能板](/help/implementing/cloud-manager/license-dashboard.md)
-      + [了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)
+      + [了解 Cloud Service 内容请求](/help/implementing/cloud-manager/content-requests.md)
       + [Cloud Manager 常见问题解答](/help/implementing/cloud-manager/faqs.md)
    + 部署 AEM as a Cloud Service {#developing}
       + [AEM 项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)

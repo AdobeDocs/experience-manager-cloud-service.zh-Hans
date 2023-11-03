@@ -2,7 +2,7 @@
 source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 # 代码片段 {#snippets}
@@ -21,17 +21,17 @@ ht-degree: 90%
 >
 >AEM 当前不支持将组分配给配置文件。应改为单独添加用户。
 
-## WAF配置限量发布 {#waf-limited-release}
+## WAF 配置限量发行 {#waf-limited-release}
 
-[!BADGE WAF-DDOS保护将于2023年底提供。]{type=Caution tooltip="WAF-DDOS保护将于2023年底提供。"}
+[!BADGE WAF-DDOS 保护将于 2023 年年底推出。]{type=Caution tooltip="WAF-DDOS 保护将于 2023 年年底推出。"}
 
 ## 另请参阅 {#see-also}
 
 * [创建 AEM 自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 * [将 AEM 自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [将主题应用于 AEM 自适应表单](/help/forms/using-themes-in-core-components.md)
-* [将组件添加到 AEM 自适应表单](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
-* [在AEM自适应表单中使用CAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [将组件添加到 AEM 自适应表单 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+* [在 AEM 自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
 * [生成 AEM 自适应表单的 PDF 版本 (DoR)](/help/forms/generate-document-of-record-core-components.md)
 * [翻译 AEM 自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [为自适应表单启用 Adobe Analytics 以跟踪表单使用情况](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
@@ -45,7 +45,7 @@ ht-degree: 90%
 * [将自适应表单数据发送到数据库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
 * [将自适应表单数据发送到 REST 端点](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [将自适应表单数据发送到 AEM 工作流](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [使用 Forms 门户在 AEM 网站上列出 AEM 自适应表单](/help/forms/configure-forms-portal.md)
+* [使用 Forms Portal 在 AEM 网站上列出 AEM 自适应表单](/help/forms/configure-forms-portal.md)
 
 
 
