@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: ede877212de3394cbdc81e1097d3d6eaf9f390cc
 workflow-type: tm+mt
 source-wordcount: '679'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
    ```
 
 1. 当被询问时允许使用权限。
-1. URL将重定向到一个新位置，并采用以下格式：
+1. URL 会重定向到一个新位置，并采用以下格式：
 
    ```
    http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`

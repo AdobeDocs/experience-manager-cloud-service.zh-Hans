@@ -43,7 +43,7 @@ ht-degree: 2%
 
 * 本地化自适应Forms的URL约定现在支持在URL中指定区域设置。 新的URL约定支持在Dispatcher或CDN上缓存本地化的表单。 在Cloud Service环境中，使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 请求自适应表单的本地化版本，而不是 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`.
 
-* Adobe建议使用Dispatcher或CDN缓存。 它有助于提高预填充表单的渲染速度。
+* Adobe 建议使用 Dispatcher 或 CDN 缓存。它有助于提高预填充表单的渲染速度。
 
 
 ## 自适应表单

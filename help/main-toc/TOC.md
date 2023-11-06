@@ -549,7 +549,7 @@ ht-degree: 99%
    + 与 Adobe Express 集成 {#integration-adobe-express}
       + [适用于 Adobe Express 的 AEM Assets 加载项](/help/assets/addon-adobe-express.md)
 
-   + 与Creative Cloud{#integration-creative-cloud}集成
+   + 与Creative Cloud集成 {#integration-creative-cloud}
       + [将AEM Assets连接到Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
 
 + Forms {#forms}

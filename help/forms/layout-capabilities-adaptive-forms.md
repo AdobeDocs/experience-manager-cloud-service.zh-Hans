@@ -67,7 +67,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![使用向导布局的表单](assets/wizard-layout2.png)
 
-### [!UICONTROL 折叠] {#layout-for-accordion-design}
+### [!UICONTROL 可折叠项] {#layout-for-accordion-design}
 
 使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 具有折叠样式导航的面板中的组件。 使用此布局，您还可以创建可重复的面板。 可重复面板允许您根据需要动态添加或移除面板。 您可以定义面板重复的最小和最大次数。 此外，可以根据面板项中提供的信息来动态确定面板的标题。
 

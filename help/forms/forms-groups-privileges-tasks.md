@@ -5,7 +5,7 @@ exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 24%
+ht-degree: 28%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 24%
 * [设置本地开发环境](/help/forms/setup-local-development-environment.md)
 * [从 AEM 6.5 Forms 迁移到 Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [创建独立的自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-* [将自适应表单添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [将 自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 <!--
 

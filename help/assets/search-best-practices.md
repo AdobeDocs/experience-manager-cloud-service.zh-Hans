@@ -349,7 +349,7 @@ The newly added assets are not indexed.
             <li> 发布
             <li> 发布日期
             <li> 上次发布者
-            <li> 批准 
+            <li> 审批 
             <li> 签出
             <li> 到期
             <li> Dynamic Media
