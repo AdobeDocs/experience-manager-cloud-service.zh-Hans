@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2665'
 ht-degree: 13%
 
 ---
@@ -198,7 +198,7 @@ Cloud Manager将管理对AEMas a Cloud Service实例的所有更新。 这是强
 
 * Adobe为确保产品完整性作出的贡献
 * 客户提供的测试
-   * 功能测试：http
+   * 功能测试：通过向AEM创作层或发布层发送http请求
    * UI测试：基于Selenium或Cypress技术
 
 这些自动测试在暂存环境中运行，这就是为什么务必要使暂存环境内容尽可能接近生产实例上的内容的原因。
