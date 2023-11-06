@@ -2,9 +2,9 @@
 title: 用户映射和主体迁移
 description: AEMas a Cloud Service中的用户映射和主体迁移概述。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 2fdfb65543fa2942e809aa5d379f4000e40bd517
+source-git-commit: 2f5eeb0333cee13b12edefd0f95541a891e30960
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '1003'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 ## 主体迁移详细信息 {#principal-migration-detail}
 
-内容传输工具和Cloud Acceleration Manager会将与正在迁移的内容关联的任何主体迁移到云系统。  内容传输工具通过在提取过程中从源AEM系统复制所有主体来执行此操作。  然后，CAM摄取将仅选择和迁移与正在摄取的内容关联的主体。
+内容传输工具和Cloud Acceleration Manager会将与正在迁移的内容关联的任何主体迁移到云系统。  内容传输工具通过在提取过程中从源AEM系统复制所有主体来执行此操作。  然后，CAM摄取将仅选择和迁移与正在摄取的内容关联的主体。 如果主体位于已迁移内容的ACL或CUG策略上，则该主体及其所在的所有组及其祖先（父）组都将迁移。 此外，如果内容上的承担者是一个组，则其所有后代（子）组和用户也将被迁移。
 
 ## 用户映射详细信息 {#user-mapping-detail}
 

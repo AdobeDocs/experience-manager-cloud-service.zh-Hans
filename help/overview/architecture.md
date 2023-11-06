@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 13c67c35238c5138120f6d0d4845c759221d65ad
-workflow-type: ht
-source-wordcount: '2015'
-ht-degree: 100%
+source-git-commit: 689b672e75c4e4d2fa8f716d93c65418f332a266
+workflow-type: tm+mt
+source-wordcount: '2656'
+ht-degree: 13%
 
 ---
 
@@ -14,210 +14,219 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service 架构简介"
->abstract="在此选项卡中，您可以查看 AEM as a Cloud Service 的新架构并了解更改。AEM 带来了具有可变数量图像的动态架构，因此花时间了解云架构是很重要的"
+>abstract="在此选项卡中，您可以查看 AEM as a Cloud Service 的新架构并了解更改。AEM带来了具有可变数量图像的动态架构，因此花时间了解云架构非常重要。"
 >additional-url="https://video.tv.adobe.com/v/330542/" text="架构概述"
 
+Adobe Experience Manager (AEM) as a Cloud Service提供了一组可组合服务，用于创建和管理高影响力的体验。
 
-Adobe Experience Manager (AEM) as a Cloud Service 已对架构进行了更改。
+本页介绍了AEMas a Cloud Service的逻辑架构、服务架构、系统架构和开发架构。
 
-## 缩放 {#scaling}
+## 逻辑架构 {#logical-architecture}
 
-AEM as a Cloud Service 现在具有：
+AEMas a Cloud Service由AEM Sites、AEM Assets和AEM Forms等高级解决方案组成。 这些服务是单独许可的，但可以协作使用。 每个解决方案分别使用由AEMas a Cloud Service提供的可组合服务，具体取决于其各自的用例。
 
-* 具有可变数量的 AEM 图像的动态架构。
+### 项目 {#programs}
 
-![动态架构](assets/concepts-01.png "动态架构")
+AEM应用程序以 [项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) 根据您的许可授权，在Cloud Manager应用程序中创建的这些权限。 在特定项目上下文中，这些程序可让您完全控制如何命名、配置关联的AEM应用程序以及如何分配权限。
 
-此架构：
-
-* 可根据&#x200B;*实际*&#x200B;流量和&#x200B;*实际*&#x200B;活动进行缩放。
-
-* 各个实例仅在需要时运行。
-
-* 使用模块化应用程序。
-
-* 默认具有创作聚类；这可避免执行维护任务时出现停机。
-
-此项可为不同的使用模式启用自动缩放功能：
-
-![针对不同使用模式的自动缩放](assets/concepts-02.png "针对不同使用模式的自动缩放")
-
-要实现此操作，为 AEM as a Cloud Service 创建的所有实例都是相同的，每个实例在节点数、分配的内存和分配的计算容量方面都具有相同的默认大小调整特征。
-
-AEM as a Cloud Service 基于使用一个编排引擎，该引擎可以：
-
-* 持续监测服务状态。
-
-* 根据实际需要动态缩放每个服务实例；根据需要进行放大或缩小。
-
-此功能：
-
-* 适用于每个节点的节点数、内存量和分配的 CPU 容量。
-
-* 允许 AEM as a Cloud Service 随流量模式变化进行对其进行调整。
-
-该服务的每个租户实例的缩放适用于两个坐标轴：
-
-* 水平：给定服务的节点数会自动增加或减少，但仍然允许单独的默认配置。
-
-* 垂直：分配的内存和 CPU 容量可以通过配置固定数量的节点来扩大或缩小，以满足需要的个性化需求。
-
-## 环境 {#environments}
+作为客户，Adobe通常将您标识为 **租户**，也称为 *IMS组织* (Identity Management)。 租户可以拥有所需数量的项目并获得许可。 例如，经常会看到AEM Assets的中心程序，而AEM Sites可能会用在对应于多个在线体验的多个程序中。
 
 >[!NOTE]
->有关更多信息，请参阅[部署 - 运行模式](/help/implementing/deploying/overview.md#runmodes)
+>
+>AEMEdge Delivery Services在Cloud Manager中作为顶级解决方案显示，同时从许可的角度看是其他主要解决方案的一部分。 例如，AEM Sites与Edge Delivery Services。
 
-AEM as a Cloud Service 可用作单个实例，每个实例代表一个完整的 AEM 环境。
+可以为项目配置高级解决方案的任意组合，并且每个解决方案都支持一对多插件。 例如，Commerce或Screens for AEM Sites、Dynamic Media或Brand Portal for AEM Assets。
 
-AEM as a Cloud Service 可提供三种类型的环境：
+![AEMas a Cloud Service — 程序](assets/architecture-aem-edge-programs.png "AEMas a Cloud Service — 部署架构")
 
-* **生产环境**：为业务从业者托管应用程序。
+### 环境 {#environments}
 
-* **暂存环境**：始终以 1:1 的关系与单个生产环境成对出现。在将对应用程序所做的更改推送到生产环境之前，可先通过暂存环境进行各种性能和质量测试。
+使用AEM Sites、AEM Assets或AEM Forms解决方案创建项目后，关联的AEM实例将在此项目中以AEM环境的形式表示。
 
-* **开发环境**：允许开发人员在与暂存环境和生产环境相同的运行时条件下实施 AEM 应用程序。
+有四种类型 [环境](/help/implementing/cloud-manager/manage-environments.md) 适用于AEMas a Cloud Service：
 
-  有关详细信息，请参阅[管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=zh-hans#using-cloud-manager)。
+* 生产环境：
 
-* **快速开发环境**：允许快速开发迭代以调试新的或现有的代码。
+   * 生产环境为业务从业者托管应用程序并运行实时体验。
 
-## 程序 {#programs}
+* 暂存环境：
 
-任何新 AEM 项目始终只能绑定到一个特定的代码库，您可以在该代码库中存储项目的配置和自定义代码。此信息存储在代码存储库中，可通过常用 Git 客户端访问，并在创建新程序时提供给您使用。
+   * 暂存环境通常以1:1的关系与生产环境成对出现。
+   * 暂存环境主要用于在对应用程序所做的更改推送到生产环境之前进行自动测试。
+      * 这与Adobe在维护更新时启动的更改无关，也与代码部署启动的更改无关。
+      * 在部署代码的情况下，您还可以执行手动测试。
+   * 使用自助内容复制功能，暂存环境的内容通常与生产内容保持同步。
+* 开发环境：
+   * 开发环境允许开发人员在与暂存环境和生产环境相同的运行时条件下实施和测试AEM应用程序。
+   * 更改通过部署管道，允许与生产部署管道相同的代码质量和安全审核。
+* 快速开发环境(RDE)：
+   * 在将新代码或现有代码部署到RDE实例中时，RDE环境允许快速开发迭代，而无需通过常规开发环境中找到的正式部署管道。
 
-AEM 程序是包含以下内容的容器：
+### Edge Delivery Services {#logical-architecture-edge-delivery-services}
 
-| 程序元素 | 个数 |
-|--- |--- |
-| 代码存储库 (Git) |  1 |
-| 基准图像（站点或资源） |  1 |
-| 暂存和生产环境集 (1:1) | 0 或 1 |
-| 非生产环境（RDE，开发或演示） | 0 到 N |
-| 每个环境的管道 | 0 或 1 |
+AEM程序可以使用 [Edge Delivery Services](/help/edge/overview.md) 也一样。
 
-AEM as a Cloud Service 最初提供两种类型的程序：
+配置完毕后，AEM可以引用用于通过Edge Delivery Services构建体验的GitHub代码存储库。 因此，新的配置选项将可用于关联的体验。 这些功能包括设置Adobe管理的CDN，以及访问许可指标或SLA报告。
 
-* AEM 云站点服务
+## 服务架构 {#service-architecture}
 
-* AEM 云资源服务
+AEMas a Cloud Service中的高级可组合服务列表可以用两个区段表示 — 内容管理和Experience Delivery：
 
-这两类程序都允许访问许多特性和功能。所有程序的创作层将包含所有 Sites 和 Assets 功能，但 Assets 程序默认将没有发布层和预览层。
+![AEM as a Cloud Service 概述 - 带 Edge Delivery Services](assets/architecture-aem-edge.png "AEM as a Cloud Service 概述 - 带 Edge Delivery Services")
 
-## 运行时架构 {#runtime-architecture}
+对于内容管理，有两个用于创作内容的主要服务集，它们分别表示为 *内容源*：
 
-此新架构包含各种主要组件：
+* AEM创作层：提供基于Web的界面（以及关联的API），用于管理Web内容。 这适用于两种方法：
+   * Headful — 通过页面编辑器和通用编辑器
+   * Headless — 通过内容片段编辑器
+* 基于文档的创作层：允许您使用标准应用程序创作内容，例如：
+   * Microsoft Word和Excel — 通过SharePoint
+   * Google文档和工作表 — 通过Google Drive
 
-<!--- needs reworking -->
+对于体验交付，在使用AEM Sites或AEM Forms时，还有两组主要服务，它们不互斥，并且作为不同的源在Adobe管理的共享CDN（内容交付网络）下运行：
 
-![AEM as a Cloud Service - 运行时架构](assets/concepts-03.png "AEM as a Cloud Service - 运行时架构")
+* AEM发布层：
+   * 运行一个标准AEM发布者和Dispatcher场，允许动态呈现与已发布内容组合在一起的网页和API内容(例如，GraphQL)。
+   * 主要基于服务器端应用程序逻辑。
+* 边缘交付发布层：
+   * 允许动态呈现来自各种内容源(如AEM创作层或基于文档的创作层)的网页和API内容。
+   * 基于客户端应用程序逻辑，旨在实现最高性能。
 
-* 对于 AEM Sites as a Cloud Service：
+还有关键的相邻服务：
 
-   * 每个环境（在高级别）仍存在创作层和发布层的概念。
+* 边缘交付资产层：
+   * 允许从AEM Assets投放已批准和已发布的媒体项目。 例如，图像和视频。
+   * 媒体项目通常引用自AEM发布层或Edge Delivery发布层上运行的体验，或者引用自与AEM Assets集成的任何其他Adobe Experience Cloud应用程序。
+* AEM预览层和Edge Delivery Services预览层：
+   * 此外，还适用于分别使用AEM发布层或边缘交付发布层构建的体验。
+   * 允许内容作者在发布操作之前预览上下文中的内容。
 
-   * 创作层由单个创作聚类中的两个或多个节点组成。它会根据创作活动自动缩放。
+>[!NOTE]
+>
+>默认情况下，仅资产程序既没有发布层，也没有预览层。
 
-      * 内容作者/创建者可登录 AEM 创作层来创建、编辑和管理内容。
+还有其他相邻的服务：
 
-      * 登录到创作层由 Adobe Identity Management Services (IMS) 进行管理。
+* 复制服务：
+   * 位于内容管理层和体验交付层之间。
+   * 负责处理 *发布* 由内容作者发布的操作，然后将已发布的内容提供给发布层(AEM或Edge交付)。
 
-      * 资源集成和处理会使用专用的资源计算服务。
+  >[!NOTE]
+  >与AEM 6.x版本相比，复制服务进行了彻底的重新设计，因为不再使用AEM早期版本的复制框架发布内容。
+  >
+  >最新的体系结构基于 *发布和订阅* 基于云的内容队列的方法。 对于AEM发布层，它允许可变数量的发布者订阅发布内容，并且是实现AEMas a Cloud Service的真正快速自动缩放的重要组成部分
 
-   * 预览层由单个预览节点构成。这用于在发布到发布层之前保证内容质量。
+* 内容存储库服务：
+   * 由AEM创作层使用。
+   * 是一个符合JCR的内容存储库的基于云的实例，由Apache Oak技术实现。
+   * 内容的持久性主要基于基于blob的云存储。
+* CI/CD服务：
+   * 表示专门用于管理到AEM环境的部署管道的Cloud Manager功能的子集。
+* 测试服务：
+   * 表示用于执行的基础结构：
+      * 功能测试，
+      * UI测试：例如，基于Selenium或Cypress脚本，
+      * 体验审核测试：例如Lighthouse分数、
 
-   * 发布层由单个发布场中的两个或多个节点组成。
+     作为到AEM环境的部署管道的一部分，或作为到边缘投放代码存储库的GitHub拉取请求的一部分。
+* 数据服务：
+   * 负责公开客户数据，如许可指标（如内容请求、存储、用户）或使用报告（如上传和下载的次数）。
+   * 客户数据可以通过API在产品用户界面（例如Cloud Manager）中公开。
+* Real-User Metric (RUM)服务：
+   * 负责从客户体验中收集关键量度（例如页面查看次数、核心Web重要事件、转化事件），并响应关联的查询（例如，过去7天内给定域的热门页面查看次数）。
+* 资产计算服务：
+   * 负责处理上传的图像、视频和文档；例如PDF和Adobe Photoshop文件。 处理过程可以使用Adobe Sensei提取图像和视频元数据（例如描述性标记或主色调），然后生成演绎版（例如不同大小或格式），进而访问诸如Adobe Photoshop和Adobe Lightroom API之类的API。
+* Identity Management服务(IMS)：
+   * 是负责管理和验证给定Adobe Experience Cloud应用程序(例如，Cloud Manager或AEM创作层)的用户和用户组的中心位置。
+   * 通过Adobe Admin Console访问。
 
-      * 节点可以彼此独立运行。
+## 系统架构 {#system-architecture}
 
-      * 每个节点均由一个 AEM 发布者和一个配备 AEM Dispatcher 模块的 Web 服务器组成。
+### AEM创作、预览和发布层 {#aem-author-preview-publish-tiers}
 
-      * 它可根据站点流量需求自动缩放。
+AEM创作层和发布层作为一组Docker容器实施，由标准Container Orchestration服务操作。 生成的容器化架构意味着一个完全动态的系统，该系统具有可变数量的pod，具体取决于实际活动（用于内容管理）和实际流量（用于体验交付）。 这使得AEMas a Cloud Service能够在流量模式发生更改时对其进行调整。
 
-      * 默认情况下，主要区域中只有一个发布场，但是[附加的发布区域](/help/operations/additional-publish-regions.md)可以获得许可。
+AEM创作层作为共享单个内容存储库的AEM创作pod集群运行。 在维护任务正在运行或部署过程正在进行时，至少两个Pod允许业务连续性。
 
-      * 最终用户或站点访客可通过 AEM 发布服务访问网站。
+AEM发布层作为AEM发布实例场运行，每个实例都有自己的已发布内容内容存储库。 每个发布者都耦合到配备有AEM Dispatcher模块的单个Apache实例，用于内容的具体化视图，用作Adobe管理的CDN的原点。 至少两个Pod也允许业务连续性，但在高流量期间此数量不断增加的情况并不少见。
 
-* 对于 AEM Assets as a Cloud Service：
+AEM预览层由单个AEM节点组成。 这用于在发布到发布层之前保证内容质量。 偶尔可能会出现停机时间，尤其是在部署期间，这会发生在预览层上。
 
-   * 该架构仅包括创作环境。
+### Edge Delivery Services {#system-architecture-edge-delivery-services}
 
-* 创作层、预览层和发布层均可读取和保留往来于内容存储库服务的内容。
+这些Edge Delivery Services在CDN和无服务器基础架构的基础上运行，以最高效的方式组装页面。 当请求资源时，无服务器基础架构负责将已发布的内容转换为语义HTML，并充当CDN的原点。
 
-   * 发布层和预览层只从持久层读取内容。
+从AEM创作层或基于文档的创作环境提供的已发布HTML到语义内容的转换。
 
-   * 创作层可读写往来于持久层的内容。
+下图说明了如何在Microsoft Word（基于文档的创作）中编辑站点内容并发布到Edge Delivery。 其中还展示使用各种编辑器的传统 AEM 发布方法。
 
-   * blob 存储可在发布层、预览层和创作层之间共享；不会&#x200B;*移动*&#x200B;文件。
+![AEM Sitesas a Cloud Service — 带Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sitesas a Cloud Service — 带Edge Delivery Services")
 
-   * 内容获得创作层的批准即表示内容可以被激活，因此可以推送到发布层持久层，或（可选）推送到预览层。此操作可通过复制服务（一个中间件管道）实现。该管道通过订阅了推送到管道的内容的单独发布服务（或预览服务）节点接收新内容。
+由于Edge Delivery Services是Adobe Experience Manager的一部分，因此Edge Delivery、AEM Sites和AEM Assets可以共存于同一个域中。 这是大型网站的常见用例。例如，客户可能希望将流量较大的特定页面迁移到Edge Delivery Services，而所有其他页面可能保留在AEM发布层。
 
-     >[!NOTE]
-     >
-     >有关更多详细信息，请参阅[复制](/help/operations/replication.md)。
+## 开发架构 {#development-architecture}
 
-   * 开发人员和管理员可使用 [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager) 提供的连续集成/连续交付 (CI/CD) 服务管理 AEM as a Cloud Service 应用程序。这包括代码和使用 Cloud Manager 的 CI/CD 管道进行的配置部署。与监测、维护和疑难解答相关的任何内容（例如，日志文件）都会向 Cloud Manager 中的客户显示。
+### 代码存储库 {#code-repositories}
 
-   * 始终通过负载平衡器访问创作层和发布层。该程序始终与每个层中的活动节点保持同步。
+AEM项目的代码和配置存储在代码存储库中，进行更改时会从中发布部署管道。 有不同类型的代码存储库：
 
-   * 对于发布层和预览层，连续交付网络 (CDN) 服务也可用作第一个入口点。
+* AEM全栈：
+   * 用于存储AEM创作层和发布层的服务器端Java代码和OSGI配置。
+* AEM前端：
+   * 用于存储AEM创作层和发布层的客户端JS、CSS和HTML代码。
+有关clientlibs的更多详细信息，请参阅 [在AEMas a Cloud Service上使用客户端库。](/help/implementing/developing/introduction/clientlibs.md)
+* AEM Web层：
+   * 存储AEM发布层的Dispatcher配置文件。
+* AEM配置：
+   * 允许存储AEM发布层和Edge Delivery Services发布层的各种配置选项（如CDN设置或维护任务设置）。
+* AEM Edge投放：
+   * 用于存储使用Edge Delivery Services构建的站点的客户端JS、CSS和HTML代码
 
-* 对于 AEM as a Cloud Service 的演示实例，架构被简化为单个创作节点。因此，该架构并不具有标准开发、暂存或生产环境的所有特点。这也意味着系统可能会出现一段时间的停机，并且不支持备份/恢复操作。
+### 部署管道 {#deployment-pipelines}
 
-## 部署架构 {#deployment-architecture}
+开发人员和管理员可使用Cloud Manager提供的连续集成/连续交付(CI/CD)服务管理AEMas a Cloud Service应用程序。 Cloud Manager还会公开与监控、维护、故障诊断（例如，访问日志文件）和许可相关的任何内容。
 
-Cloud Manager 将管理对 AEM as a Cloud Service 实例的所有更新。这是强制性的，且是构建、测试和部署客户应用程序的唯一方法，同时适用于创作层、预览层和发布层。这些更新可由 Adobe（当 AEM 云服务的新版本准备就绪时）或客户（当其应用程序的新版本准备就绪时）触发。
+![AEM as a Cloud Service - 部署架构](assets/architecture-aem-edge-deployment-pipelines.png "AEM as a Cloud Service - 部署架构")
 
-从技术上讲，之所有这样实施，主要出于与程序内每个环境耦合的部署管道的概念原因。当 Cloud Manager 管道运行时，它将为创作层、预览层和发布层创建客户应用程序的新版本。这可通过将最新的客户包与最新的基准 Adobe 图像相结合来实现。成功构建和测试新图像后，Cloud Manager 会通过使用滚动更新模式更新所有服务节点，从而完全自动转换为最新版本的图像。这不会导致创作或发布服务出现停机。
+Cloud Manager将管理对AEMas a Cloud Service实例的所有更新。 这是强制性的，并且是构建、测试客户应用程序并将其部署到创作层、预览层和发布层的唯一方法。 这些更新可以由Adobe(当AEM Cloud Service的新版本准备就绪时)触发，也可以由您自己（当应用程序的新版本准备就绪时）触发。
 
-<!--- needs reworking -->
+这是通过部署管道实现的，与项目中的每个环境耦合。 当 Cloud Manager 管道运行时，它将为创作层和发布层创建客户应用程序的新版本。这可通过将最新的客户包与最新的基准 Adobe 图像相结合来实现。
 
-![AEM as a Cloud Service - 部署架构](assets/concepts-04.png "AEM as a Cloud Service - 部署架构")
+当客户更改代码或Adobe部署新的维护版本时，将触发部署管道。
 
-## 内容分发 {#content-distribution}
+在这两种情况下，将执行同一组自动测试。 它由测试组成：
 
-Adobe Experience Manager as a Cloud Service 已修改内容的发布方式。对于 AEM as a Cloud Service，不再使用 AEM 以前版本中的复制框架来发布页面（将更改从创作实例移动到发布实例）。
+* Adobe为确保产品完整性作出的贡献
+* 客户提供的测试
+   * 功能测试：http
+   * UI测试：基于Selenium或Cypress技术
 
-AEM as a Cloud Service 现在可使用 [Sling 内容分发](https://sling.apache.org/documentation/bundles/content-distribution.html)功能移动相应的内容。这会使用在 Adobe I/O 上运行的管道服务，此服务在 AEM 支行时之外支行。
+这些自动测试在暂存环境中运行，这就是为什么务必要使暂存环境内容尽可能接近生产实例上的内容的原因。
 
-设置会自动完成，包括在运行时添加、删除或循环发布节点时自动进行的自配置。
+所有测试成功通过后，新代码将部署到生产环境。
 
-单个发布或取消发布请求可以包含多个资源，但是将返回应用于所有资源的单个状态；AEM 发布服务中的所有资源都将成功，或所有资源都失败。这可确保 AEM 发布服务中的资源永远保持一致状态。
+### 滚动更新 {#rolling-updates}
 
-**内容分发架构概要图**
+Cloud Manager通过使用滚动更新模式更新所有服务节点，完全自动转换为最新版本的AEM应用程序。 这意味着 **无停机时间** 用于创作或发布服务。
 
-![内容分发架构概要图](assets/architecture-diagram.png "内容分发架构概要图")
+## 自AEM 6.x以来的主要创新 {#major-innovations-since-aem-6x}
 
-## 关键演变情况 {#key-evolutions}
+与前几代(AEM 6.x及更早版本)相比，AEMas a Cloud Service的最新架构引入了一些根本性的变化和创新：
 
-与前几代产品相比，AEM as a Cloud Service 的新架构引入了一些根本性的变化和创新：
-
-* 从云数据存储中直接上传和提供所有文件 (blob)。关联的位流永远无需经过 AEM 创作和发布服务的 JVM。因此，可以使 AEM 创作和发布服务的节点变得更小，并使其更符合快速自动缩放的需求。对于业务从业者而言，这可以加快上传和下载图像、视频等的速度，从而提供更佳的体验。
+* 所有文件都直接从云数据存储上传和提供。 关联的位流永远无需经过 AEM 创作和发布服务的 JVM。因此，AEM创作和发布服务的节点可以更小，从而更符合快速自动缩放的需求。 对于业务从业者而言，这可以加快上传和下载图像、视频和其他任务的体验。
 
 * 现在，包括发布内容的所有操作都包含一个遵循订阅模式的管道。已发布内容会推送到管道中的各个队列，发布服务的所有节点都会订阅这些队列。因此，创作层无需了解发布服务中的节点数；这样可以快速自动缩放发布层。
 
-* 为了自动化发布节点的生命周期，引入了 Golden Master 的概念。Golden Master 是一个专用的发布节点，任何最终用户都不会访问，且发布服务的所有节点都通过它来创建。对附加到 Golden Master 的内容存储库会执行压缩等维护操作。发布节点每天都会回收利用，不需要进行任何类型的日常维护；过去，此类维护需要停机一段时间，对于创作实例尤其如此。
-
 * 该架构将应用程序内容与应用程序代码和配置完全分离。所有代码和配置几乎都不可更改，并且都植入到用于创建各种创作和发布服务节点的基准图像中。因此，可以绝对保证每个节点都相同，并且只能通过运行 Cloud Manager 管道在全局范围内对代码和配置进行更改。
 
-## 带 Edge Delivery Services 的 AEM {#aem-with-edge-delivery-services}
+* 该体系结构包括基于无服务器技术构建的多个微服务，特别是使用Adobe I/O运行时
 
-通过添加 Edge Delivery Services，AEM 可提供促进参与和转化的优秀体验。AEM 通过投放可快速创作并开发且极具影响力的体验实现这一点。Edge Delivery Services 是一组可组合的服务，可用于实现快速开发环境，作者从中可快速地更新和发布并快速地启动新站点。因此，借助 Edge Delivery Services，可提高转化率、降低成本并为内容大幅提速。
-
-更新后的架构包括：
-
-* 内容管理，现在包括一系列编辑器：
-   * Universal Visual Editor
-   * 内容片段编辑器
-   * 页面编辑器
-   * 基于文档的创作；从 SharePoint 或 Google Drive
-* 体验投放，现在包括：
-   * Edge Delivery Services
-* 辅助服务，用于快速高效地投放内容和代码
-
-![AEM as a Cloud Service 概述 - 带 Edge Delivery Services](assets/AEMaaCS-Edge-Architecture.png "AEM as a Cloud Service 概述 - 带 Edge Delivery Services")
+## 更多信息 {#further-information}
 
 另请参阅：
 
-* [AEM as a Cloud Service 概述 - 带 Edge Delivery Services](/help/edge/overview.md)
-* [使用 Edge Delivery Services](/help/edge/using.md)
-* [探索带 Edge Delivery Services 的 AEM as a Cloud Service 的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=zh-Hans)
+* Edge Delivery Services:
+
+   * [AEM as a Cloud Service 概述 - 带 Edge Delivery Services](/help/edge/overview.md)
+   * [使用 Edge Delivery Services](/help/edge/using.md)
+   * [探索带 Edge Delivery Services 的 AEM as a Cloud Service 的底层架构和重要部分](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=zh-Hans)

@@ -1,13 +1,13 @@
 ---
 title: 新增发布区域
 description: 了解 AEM as a Cloud Service 如何支持附加的发布区域，以提高可用性并减少延迟。
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
+source-git-commit: 4f11d1958cbfb252f29a7815af8800426d945ebd
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 89%
 
 ---
-
 
 # 新增发布区域 {#additional-publish-regions}
 
@@ -35,6 +35,11 @@ ht-degree: 100%
 在授权附加发布区域后，这些区域将使用 Cloud Manager 进行配置。有关详细说明，请参阅 [Cloud Manager 文档](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)。
 
 附加发布区域适用于阶段和生产环境，但不适用于 RDE 或开发环境。
+
+如果某个区域不可用，则客户无需管理到可用区域的流量路由，因为它由AdobeCDN管理。
+
+如下面的高级联网注意事项部分中所述，建议使用高级联网的客户为每个其他发布区域配置该网络，以便在区域不可用时保持可用性。
+
 
 ## 高级网络注意事项 {#advanced-networking-considerations}
 
