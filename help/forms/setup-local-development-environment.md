@@ -2,9 +2,9 @@
 title: 如何为AEM Forms设置本地开发环境？
 description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
 workflow-type: tm+mt
-source-wordcount: '2811'
+source-wordcount: '2847'
 ht-degree: 3%
 
 ---
@@ -266,6 +266,10 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    * 使用 `includeFormscommunications=y` 选项以包括Forms核心组件和包含客户通信功能所需的依赖项。
 
+     >[!WARNING]
+     >
+     * 使用版本45创建原型项目时， [AEM原型项目文件夹]/pom.xml最初将forms核心组件版本设置为2.0.64。在构建或部署原型项目之前，请将Forms核心组件版本更新为2.0.62。
+
 1. 将项目部署到您的本地开发环境。 您可以使用以下命令部署到本地开发环境
 
    `mvn -PautoInstallPackage clean install`
@@ -319,7 +323,8 @@ Dispatcher上的缓存允许 [!DNL AEM Forms] 在客户端预填充自适应Form
 ### 有关缓存的注意事项 {#considerations-about-caching}
 
 * 调度程序缓存允许 [!DNL AEM Forms] 在客户端预填充自适应Forms。 它提高了预填充表单的渲染速度。
-* 默认情况下，缓存受保护内容功能处于禁用状态。 要启用该功能，您可以按照 [缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 文章
+* 
+默认情况下禁用缓存受保护内容功能。要启用该功能，您可以按照 [缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 文章
 * Dispatcher可能无法使某些自适应Forms和相关自适应Forms失效。 要解决此类问题，请参阅 [[!DNL AEM Forms] 缓存](troubleshooting-caching-performance.md) 在疑难解答部分。
 * 缓存本地化的自适应Forms：
    * 使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 请求自适应表单的本地化版本，而不是 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
