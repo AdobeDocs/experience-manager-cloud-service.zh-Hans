@@ -2,10 +2,10 @@
 title: 了解 Cloud Service 内容请求
 description: 如果您从Adobe购买了内容请求许可证，请了解Adobe Experience Cloud as a Service测量的内容请求类型以及与组织分析报告工具的差异。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 12%
+source-wordcount: '1164'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 12%
 | 第三方监控和安全工具 | 监控和安全扫描工具可能会为 AEM 生成 Analytics 报告中未跟踪的内容请求。 |
 | API访问 | 以编程方式访问页面或Adobe Experience Manager API可能会为AEM生成未在Analytics报表中跟踪的内容请求。 |
 | 预获取请求 | 使用预获取服务预加载页面来提高速度，可能会导致内容请求流量显著增加。 |
-| DDOS | 虽然 Adobe 竭尽全力自动检测和过滤 DDOS 攻击的流量，但无法保证检测到所有可能的 DDOS 攻击 |
+| DDOS | 虽然Adobe会尝试自动检测和过滤来自DDOS攻击的流量，但无法保证检测到所有可能的DDOS攻击。 |
 | 流量拦截器 | 在浏览器中使用跟踪拦截器可能会选择不跟踪某些请求。 |
 | 防火墙 | 防火墙可能会阻止分析跟踪。这种情况在公司防火墙中更为常见。 |
 
@@ -59,7 +59,7 @@ ht-degree: 12%
 | HTTP代码400-499 | 已排除 | 内容不存在(404)或存在其他内容或请求相关问题时返回给访客的错误。 |
 | HTTP代码300-399 | 已排除 | 这些是很好的请求，可检查服务器上是否有某些内容发生更改，或将请求重定向到其他资源。 它们本身不包含内容，因此它们不可计费。 |
 | 发送到/libs/*的请求 | 已排除 | AEM内部JSON请求，例如不可计费的CSRF令牌。 |
-| 来自DDOS攻击的流量 | 已排除 | DDOS保护。 AEM会自动检测一些DDOS攻击并阻止它们。 检测到的DDOS攻击无法计费。<br><br>自动检测到的DDOS类型：<br>· DDOSBlockedCiphersSHA<br>· DDOSBlockedPattern<br>· DDOSSuspiciousRequest |
+| 来自DDOS攻击的流量 | 已排除 | DDOS保护。 AEM会自动检测一些DDOS攻击并阻止它们。 检测到的DDOS攻击无法计费。 |
 | AEMas a Cloud ServiceNewRelic监控 | 已排除 | AEMas a Cloud Service全局监控。 |
 | 客户用于监控其Cloud Service计划的URL | 已排除 | 建议用于外部监控可用性的URL。<br><br>`/system/probes/health` |
 | AEMas a Cloud ServicePod预热服务 | 已排除 | 用户代理： skyline-service-warmup/1.* |
