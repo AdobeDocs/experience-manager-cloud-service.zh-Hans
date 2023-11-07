@@ -3,7 +3,7 @@ title: 搜索最佳实践 [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: 在应用程序中搜索、查找和检索资源元数据的最佳实践。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 780f0dee9a2a0fd7fa63b93bdd8be6bc23eef04f
+source-git-commit: a3f7564932e7f9318841623376f62dad91ceca18
 workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 3%
@@ -46,7 +46,9 @@ ht-degree: 3%
 
 如果您使用的是 **[!UICONTROL 资产视图]** 也一样。
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
+-->
 
 ## 文件和文件夹 {#files-folders}
 
@@ -67,7 +69,9 @@ ht-degree: 3%
 
 ![使用文件和文件夹进行搜索](assets/files-folders.png)
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
+-->
 
 ## 运算符 {#operators}
 
@@ -119,7 +123,9 @@ AND运算符是全搜索中两个关键字之间的默认运算符。 例如，�
 * `car*` 返回包含洗车、承运人、运输等内容的资产。
 * `*car` 通过现代汽车、跑车等返回资产。
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
+-->
 
 **[!UICONTROL 资产视图]** 不支持使用通配符。
 
@@ -187,7 +193,9 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 转到搜索筛选器。
 1. 转到“筛选器”。 下 [!UICONTROL MIME类型]，选择所有给定的MIME类型，但取消选择PNG 。
 
+<!--
 >[!VIDEO](https://video.tv.adobe.com/v/3425486)
+-->
 
 ## 高级搜索 {#advanced-search}
 
@@ -241,7 +249,9 @@ When you are unsure about the title or meta description of an asset, you can use
 
 如果您使用的是 **[!UICONTROL 资产视图]** 也一样。
 
->[!VIDEO](https://video.tv.adobe.com/v/3425490)
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/3425490)  
+-->
 
 **情景9：查找红色轿车的相似匹配项**
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
+source-git-commit: 54a80e7b980c28e50ee849bbb5d23adbf5de2073
 workflow-type: tm+mt
-source-wordcount: '4357'
-ht-degree: 100%
+source-wordcount: '4360'
+ht-degree: 99%
 
 ---
 
@@ -700,6 +700,7 @@ ht-degree: 100%
       + [将播放器分配给显示](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
    + 使用核心产品功能{#core-product-features}
       + [视频的缩略图支持](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
+      + [Screens通知服务](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
    + 在 Screens as a Cloud Service 中开发 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [创建组件](/help/screens-cloud/developing/creating-components.md)

@@ -2,9 +2,9 @@
 title: 导航到 Screens Services Provider
 description: 本页介绍如何导航到Screens Services Provider。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: ad5a8656b200ba35a0a6f58afd4be03202138f47
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '292'
 ht-degree: 6%
 
 ---
@@ -38,6 +38,9 @@ ht-degree: 6%
 3. 在“编辑设置”对话框中输入以下详细信息。
    * **发布Url** - AEM发布URL(例如， `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **作者URL** - AEM作者URL(例如， `https://author-p12345-e12345.adobeaemcloud.com`)
+
+   >[!NOTE]
+   >在Screens服务提供程序下配置AEM之前，请确保创建并发布至少一个AEM屏幕渠道。 要创建渠道，请在您的内容提供商中导航到/screens.html 。
 
    ![图像](/help/screens-cloud/assets/configure/configure-screens4.png)
 
