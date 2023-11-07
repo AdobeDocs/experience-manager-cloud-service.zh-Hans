@@ -5,14 +5,14 @@ exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
 workflow-type: tm+mt
 source-wordcount: '2175'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
 # 翻译 Headless 内容 {#translate-content}
 
-使用翻译集成来翻译Headless内容。
+使用翻译集成来翻译 Headless 内容。
 
 ## 迄今为止的故事 {#story-so-far}
 

@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 07f61a3f6a794e18bc2e02e966392cdce3103a81
 workflow-type: tm+mt
 source-wordcount: '1009'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 98%
 
    * **呈现为：****内容引用** – 当您创建冒险时，此字段会指向代表此旅行的图像资源。
    * **字段标签：**`Image` – 创建冒险时为该字段显示的标签。
-   * **根路径：** `/content/dam/aem-demo-assets/en`  — 在使用资产选择器浏览资产时，这会指定起始点路径。
+   * **根路径：**`/content/dam/aem-demo-assets/en` - 这指定的是使用资源选择器浏览资源时的起点路径。
 
 1. 添加内容片段模型所需的字段后，在窗口右上角，请单击&#x200B;**保存。**
 

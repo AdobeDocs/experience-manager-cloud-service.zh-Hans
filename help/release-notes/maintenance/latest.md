@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 01f148dbe885c96b27f88a88e7020a1008f4c1d3
+source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 98%
+source-wordcount: '1193'
+ht-degree: 12%
 
 ---
 
@@ -13,67 +13,103 @@ ht-degree: 98%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 14029 {#release-14029}
+## 版本 14157 {#release-14157}
 
-下面总结了维护版本 14029 的持续改进，该版本已于 2023 年 10 月 25 日公开发布。此维护版本是对上一个维护版本 13804 的更新。
+以下总结了维护版本14157的不断改进，该版本于2023年11月7日公开发布。 此维护版本是对上一个维护版本 14029 的更新。
 
 2023.11.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
-### 增强 {#enhancements-14029}
+### 增强 {#enhancements-14157}
 
-* ASSETS-28551：提高 My Link Shares UI 的可扩展性
-* ASSETS-28566：添加 dam:metadataForm Lucene 索引
-* ASSETS-29281：更新 RAPI 以发送 v2 下载事件
+* ASSETS-29631： Assets Cloud：使用dam：roles进行安全交付/搜索。
+* CQ-4354515：翻译：用于禁止翻译引用的资源的选项。
+* Forms-9993：定义将Forms核心组件移入Skyline的步骤。
+* Forms-10570：将EC API载入API — 第一台路由器。
+* GRANITE-48143：将Sling ResourceMerger升级到1.4.4。
+* SITES-14874：事件：展开模型事件的CFM树以包含元数据更改。
+* SITES-2719：内容片段：对内容片段变体的标记支持（重新启用）。
+* SITES-3619：内容片段：以JSON输出的GraphQL CF变体标记，并按变体标记筛选（重新启用）。
+* SITES-13750：内容片段：删除内容片段模型的标记。
+* SITES-13920：内容片段：支持为多个字段配置minItems（预发布）。
+* SITES-14080：内容片段：删除内容片段变量的标记。
+* SITES-14770：内容片段：片段变量应包含fieldTags属性。
+* SITES-15356：内容片段：在创建资源时作为响应标头返回etag。
+* SITES-15357：内容片段：允许发布不带其引用的片段。
+* sites-15938：内容片段：缺少内容引用元数据。
+* SITES-16078：内容片段：在获取片段时，填写变量的验证结果属性。
+* SITES-16545：内容片段：添加端点以检索内容片段变体的引用。
+* SITES-16853：内容片段：删除/adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags端点。
 
-### 修复的问题 {#fixed-issues-14029}
+### 修复的问题 {#fixed-issues-14157}
 
-* ASSETS-25199：图像核心组件未显示正确的智能剪裁
-* ASSETS-26142：unified-shell.js customEnvLabel在发现请求失败或中断时未设置或重新尝试
-* ASSETS-26416：相对日期谓词在搜索表单中始终定义为“1天前”
-* ASSETS-27321：清除团队成员身份更改的组缓存
-* ASSETS-27591：修复与旧 org.json 的相关性
-* ASSETS-28439：未配置全局阻止列表时智能标记会将 NPE 列入阻止列表
-* ASSETS-28612：&quot;repository-api&quot; 中的 BlockedTagResolver 修复
-* ASSETS-28634：Adobe stock 中的 Omnisearch 字段不会自动添加资源数据
-* ASSETS-28727：处理配置文件配置列表不显示指定的自定义高度和宽度值
-* ASSETS-29056：添加转码格式副本 AEM 标准处理配置文件
-* ASSETS-29105：RDE 功能模型中的 SecurityProviderRegistration requiredServicePids 中缺少限制提供程序。
-* ASSETS-29106：在启用统一 shell 的 AEM 上查看 Adobe stock 会引发错误
-* ASSETS-29115：删除限制提供程序路径的配置属性
-* ASSETS-29208：在注册服务 CompleteUploadAssetServlet 之前发送到作者 pod 的请求导致资源上传错误
-* ASSETS-29297：使用签出的过滤器选项创建“保存”搜索时出现问题
-* ASSETS-29363：元数据配置文件未应用 IPTC 的默认值
-* ASSETS-29404：链接共享报告达到查询限制
-* ASSETS-29431：删除旧功能标志
-* ASSETS-29443：当 Granite Shell 标题模式更改为“选择”时，Unified Shell Hero 仍然可见且可点击
-* ASSETS-29476：scene7DAMService.getS7FileReference(asset) API 调用未返回预期值。
-* ASSETS-29515：具有 &quot;jcr:lastModifiedBy&quot;: &quot;workflow-process-service&quot; 的资源/节点在列表视图中显示为“外部用户”
-* ASSETS-29579：非管理员用户无法创建图像集
-* ASSETS-29631：使用 dam:roles 进行安全传递/搜索
-* ASSETS-29689：dc:roles（以及新属性 dam:roles）应从 AEM 端过滤
-* ASSETS-29738：资源上传限制失败并出现 NullPointerException
-* ASSETS-29779：小型资源无法处理为 webp，因为不在 blob 存储中
-* ASSETS-29892：无法导出包含大量资源的文件夹的元数据
-* ASSETS-29996：仅在 PROD 实例上间歇性上传资源时，“外部用户”作为修饰符
-* ASSETS-30167：adobe_dam:restrictions 的 HTML 在上传资源后中断
-* ASSETS-30276：共享链接 UI：无法从资源详细信息中共享
-* ASSETS-30434：资源处理完成事件未发送到管道
-* ASSETS-30519：将 RAPI 添加到 REDMetricsServletFilter
-* CQ-4354413：QueryBuilder：带方括号的查询被错误地转换为 xpath
-* CQ-4354834：无法在收件箱任务中添加评论
-* CQ-4354836：无法从项目控制台启动工作流或创建任务
-* CQ-4354867：ToggleCondition 引用引用了 InstanceActionServlet 中不存在的字段
-* CQ-4354895：AEM 翻译套件：10 月 12 日
-* GRANITE-45560：事件信封中的通用模式表示
-* GRANITE-47267：更新到 Apache Felix Http Jetty 4.2.18
-* GRANITE-47599：自 13323 升级以来内容导入失败 (JCRVLT-721)
-* GRANITE-47873：更新到 Apache Felix Webconsole 4.9.6
-
-### 已知问题 {#known-issues-14029}
-
+* 修复了各种辅助功能问题
 * ASSETS-31015：无法将文件上传到文件扩展名未知的资源。
+* ASSETS-24739：在发布时禁用Frame.io自定义操作端点。
+* CMGR-49845：内容回流：确定给定检查点的正确根路径时出现问题。
+* CMGR-49709：内容回流：更新属性筛选器以忽略其他属性。
+* CQ-4354503：随机删除了Adobe IMS配置。
+* CQ-4354414： ConfigurationReplicationEventHandler创建大量单独的刷新操作。
+* CQ-4354401：翻译：在开始资产处理之前，必须保存由项目创建的资产。
+* CQ-4354430：翻译：将不属于语言文件夹结构的资产添加到翻译项目时出错。
+* CQ-4354412：翻译：删除翻译作业内容未删除所有引用的内容。
+* CQ-4354636：翻译：在语言根级别创建语言副本不会调整页面中的路径。
+* CQ-4354700：工作流：工作流有效负载屏幕未加载。
+* CQ-4354834：工作流：无法在工作流收件箱任务中添加评论。
+* Forms-11302：在RTE中编辑的组件标题在自适应表单编辑器>规则编辑器中显示不正确。
+* GRANITE-45706：如果键值具有“Äú)”Äu，则i18n导入失败。
+* SITES-14156：事件：并不总是发送发布事件。
+* SITES-14520：GraphQL：由于FT_SITES-2719，导致分页的graphql查询性能不佳。
+* SITES-16444： GraphQL：GraphQL查询中缺少相同名称字段的DataFetchingException。
+* SITES-16225： GraphQL：Java API返回的模型和片段RTE字段的内容类型不正确。
+* SITES-15373：内容片段： /adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags端点未使用正确的资源命名约定。
+* SITES-15709：内容片段：创建布尔字段时创建模型端点问题。
+* SITES-15727：内容片段：“标记”类型的字段在模型编辑器中只能添加一次。
+* SITES-15782：内容片段：枚举类型的字段模型中缺少唯一属性。
+* SITES-15786：内容片段：无法在包含&#39;的文件夹中创建内容片段。
+* SITES-15790：内容片段：更新版本创建的位置标头。
+* SITES-15923：内容片段：CF管理员不显示所有文件夹。
+* SITES-15987：内容片段：创建变量时得到500。
+* SITES-16067：内容片段：无法修改长文本片段字段的mime类型。
+* SITES-16074：内容片段：非字符串的标记字段[]无法从 JCR 进行检索。
+* SITES-16079：内容片段： /fragments/{id}/references已开始返回重复项。
+* SITES-16118：内容片段：如果修补了片段并且模型中缺少片段字段，则会引发异常。
+* SITES-16119：内容片段：如果片段元数据包含无法识别的字段，则会引发异常。
+* SITES-16121：内容片段：检索模型日期字段会引发异常。
+* SITES-16123：内容片段：如果资源不是内容片段，则获取片段端点会引发异常。
+* SITES-16208：内容片段： ContentFragmentModelIdentifier公开误导性的标题属性。
+* SITES-16707：内容片段：无法正确读取内容片段模型数据类型。
+* SITES-16818：内容片段：仅在存在标记时执行删除。
+* SITES-16207：内容片段：POST/adobe/sites/cf/models操作返回两个不同的OK状态代码。
+* SITES-15616：内容片段：发布端点有时不发布内容片段的所有引用。
+* SITES-16027：内容片段：片段响应中缺少变量引用信息。
+* SITES-16243：内容片段：查找和替换不适用于呈现为：多个的字段。
+* SITES-16250：内容片段：为CF打补丁有时会返回不正确的etag标头。
+* SITES-16686：内容片段：当父引用达到最大深度时，将序列化内容片段非片段引用。
+* SITES-16234： ContextHub：开始定位时未显示正确的选定品牌活动名称。
+* SITES-12880：快速跟踪：修复“站点”>“设置分析”的本地化。
+* SITES-16103：体验片段：由于控制台错误，Target选项不会显示在Cloud Service下方。
+* SITES-16001： MSM：可在创建Live Copy时从转出配置中排除多字段组件。
+* SITES-16559： MSM：在体验片段的转出过程中删除了转出配置。
+* SITES-16797： MSM：修复了在编辑器中重新启用CF字段的继承的问题。
+* SITES-16273：页面编辑器：在aem sites页面中从剪贴板复制粘贴出错。
+* SITES-16126：站点管理员：在SITES-10288之后，非管理员用户的创作性能缓慢。
+* Forms-10534：选择布尔操作数选项时，规则编辑器中出现错误。
+* Forms-10248：在自适应表单中，当数据值的类型为Boolean时，规则无法正确设置单选按钮或复选框组件的值。
+* Forms-11361：下拉组件自动默认为从列表中选择第一个选项。
+* Forms-11413：自适应Forms会触发与Forms Portal预填充服务相关的错误，即使该服务未在使用中也是如此。
+* Forms-11433：当自适应表单中包含非表单组件时，提交过程将无法完成。
+* Forms-11206：当用户尝试计划自适应表单的发布工作流时，该工作流无法按预期运行。
+* Forms-11546： Lighthouse检测到自适应表单中重复面板缺少ARIA标签，影响辅助功能。
+* Forms-11095：对电话号码、电子邮件地址和数字字段的ARIA属性定义不正确，导致出现辅助功能问题。
+* Forms-9894：当用户提供无效存储库路径时，输出服务API生成错误的错误代码，导致遇到此问题的用户混淆。
+* Forms-11404：将各种XML数据与读取器扩展PDF合并时，ImportData服务表现出不一致行为。 具体而言，对于一个输出PDF文档，它成功保留了Reader扩展属性，但对于其他输出PDF，它无法这样做。
 
-### 嵌套的技术 {#embedded-tech-14029}
+
+### 已知问题 {#known-issues-14157}
+
+无。
+
+### 嵌套的技术 {#embedded-tech-14157}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|

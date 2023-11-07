@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e3cf2276cdd5fb0722aee0e6cec11da951ca49d
 workflow-type: tm+mt
 source-wordcount: '4357'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -549,8 +549,8 @@ ht-degree: 99%
    + 与 Adobe Express 集成 {#integration-adobe-express}
       + [适用于 Adobe Express 的 AEM Assets 加载项](/help/assets/addon-adobe-express.md)
 
-   + 与Creative Cloud集成 {#integration-creative-cloud}
-      + [将AEM Assets连接到Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+   + 与 Creative Cloud {#integration-creative-cloud}集成
+      + [将 AEM Assets 连接到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
 
 + Forms {#forms}
    + 概述 {#forms-overview}
@@ -597,7 +597,7 @@ ht-degree: 99%
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
             + [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
-            + [基于核心组件创建自适应表单模板](/help/forms/template-editor-core-components.md)
+            + [创建基于核心组件的自适应表单模板](/help/forms/template-editor-core-components.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
             + [使用机器翻译或人工翻译来翻译自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
