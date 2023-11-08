@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明。'
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 87%
@@ -43,7 +43,7 @@ ht-degree: 87%
 
 * 您现在可以使用 [!DNL Experience Manager Assets] 用户界面执行以下操作：
 
-   * 在存储库中配置[重复资产检测](/help/assets/manage-digital-assets.md#detect-duplicate-assets)。
+   * 在存储库中配置[重复资产检测](/help/assets/detect-duplicate-assets.md)。
 
    * 配置 [添加数字水印](/help/assets/watermark-assets.md) 到图像。
 
@@ -59,7 +59,7 @@ ht-degree: 87%
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**：[文档生成 API ](/help/forms/aem-forms-cloud-service-communications.md)帮助合并、重新排列和验证 PDF 文档。该服务允许您以同步模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL Communications - Document Generation APIs]**：[文档生成 API ](/help/forms/aem-forms-cloud-service-communications.md)帮助合并、重新排列和验证 PDF 文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
 
    * 汇编 PDF 文档。
    * 拆分 PDF 文档。

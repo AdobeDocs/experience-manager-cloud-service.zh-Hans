@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 54a80e7b980c28e50ee849bbb5d23adbf5de2073
+source-git-commit: dc79bb2bfae4071d353ba83c2c9d6cc44d4e9747
 workflow-type: tm+mt
-source-wordcount: '4360'
+source-wordcount: '4363'
 ht-degree: 99%
 
 ---
@@ -431,6 +431,7 @@ ht-degree: 99%
       + [图像的颜色标记](/help/assets/color-tag-images.md)
       + [管理 PDF 文档](/help/assets/manage-pdf-documents.md)
    + 配置、管理和扩展 [!DNL Assets] {#admin}
+      + [检测重复资源](/help/assets/detect-duplicate-assets.md)
       + [开发人员文档和 API 参考](/help/assets/developer-reference-material-apis.md)
       + [文件夹元数据架构](/help/assets/folder-metadata-schema.md)
       + [使用图像和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
