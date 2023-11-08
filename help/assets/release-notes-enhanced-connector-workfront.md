@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-#  的发行说明[!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
+#  的发行说明 [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
 以下部分概述了 [!DNL Workfront for Experience Manager enhanced connector] 的常规发行说明。
 
