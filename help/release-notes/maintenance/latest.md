@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: e7e565556b382a662fb8afc5aadaa26d2357e294
+source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 12%
+source-wordcount: '1130'
+ht-degree: 13%
 
 ---
 
@@ -101,9 +101,6 @@ ht-degree: 12%
 * Forms-11206：当用户尝试计划自适应表单的发布工作流时，该工作流无法按预期运行。
 * Forms-11546： Lighthouse检测到自适应表单中重复面板缺少ARIA标签，影响辅助功能。
 * Forms-11095：对电话号码、电子邮件地址和数字字段的ARIA属性定义不正确，导致出现辅助功能问题。
-* Forms-9894：当用户提供无效存储库路径时，输出服务API生成错误的错误代码，导致遇到此问题的用户混淆。
-* Forms-11404：将各种XML数据与读取器扩展PDF合并时，ImportData服务表现出不一致行为。 具体而言，对于一个输出PDF文档，它成功保留了Reader扩展属性，但对于其他输出PDF，它无法这样做。
-
 
 ### 已知问题 {#known-issues-14157}
 
