@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2f0a7171f93bb5bc947dba5edb59a8e0e538e052
+source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 13%
+source-wordcount: '1124'
+ht-degree: 14%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 13%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 14157 {#release-14157}
+## 版本 14227 {#release-14227}
 
-以下总结了维护版本14157的不断改进，该版本于2023年11月7日公开发布。 此维护版本是对上一个维护版本 14029 的更新。
+以下总结了维护版本14227的不断改进，该版本于2023年11月9日公开发布。 此维护版本是对上一个维护版本 14029 的更新。维护版本 14227 取代了 14157，并纠正了一个问题。
 
 2023.11.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
-### 增强 {#enhancements-14157}
+### 增强 {#enhancements-14227}
 
 * ASSETS-29631： Assets Cloud：使用dam：roles进行安全交付/搜索。
 * CQ-4354515：翻译：用于禁止翻译引用的资源的选项。
@@ -40,7 +40,7 @@ ht-degree: 13%
 * SITES-16545：内容片段：添加端点以检索内容片段变体的引用。
 * SITES-16853：内容片段：删除/adobe/sites/cf/fragments/{fragmentId}/variation/{name}/tags端点。
 
-### 修复的问题 {#fixed-issues-14157}
+### 修复的问题 {#fixed-issues-14227}
 
 * 修复了各种辅助功能问题
 * ASSETS-31015：无法将文件上传到文件扩展名未知的资源。
@@ -85,7 +85,6 @@ ht-degree: 13%
 * SITES-16243：内容片段：查找和替换不适用于呈现为：多个的字段。
 * SITES-16250：内容片段：为CF打补丁有时会返回不正确的etag标头。
 * SITES-16686：内容片段：当父引用达到最大深度时，将序列化内容片段非片段引用。
-* SITES-16234： ContextHub：开始定位时未显示正确的选定品牌活动名称。
 * SITES-12880：快速跟踪：修复“站点”>“设置分析”的本地化。
 * SITES-16103：体验片段：由于控制台错误，Target选项不会显示在Cloud Service下方。
 * SITES-16001： MSM：可在创建Live Copy时从转出配置中排除多字段组件。
@@ -102,11 +101,11 @@ ht-degree: 13%
 * Forms-11546： Lighthouse检测到自适应表单中重复面板缺少ARIA标签，影响辅助功能。
 * Forms-11095：对电话号码、电子邮件地址和数字字段的ARIA属性定义不正确，导致出现辅助功能问题。
 
-### 已知问题 {#known-issues-14157}
+### 已知问题 {#known-issues-14227}
 
 无。
 
-### 嵌套的技术 {#embedded-tech-14157}
+### 嵌套的技术 {#embedded-tech-14227}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
