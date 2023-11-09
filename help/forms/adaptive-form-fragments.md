@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: cf7c9fc3f254628f2efee2e00ed295e038d17c99
+source-git-commit: 1835559f9becea5f79d179be9b01efbe67c82151
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2148'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 如果您在自适应表单中多次使用非基于无格式的表单片段，则会发生片段字段之间的数据同步。 您可以在表单中使用与任何表单数据模型不存在数据同步问题的单个 [ 表单片段（基于核心组件） ](/help/forms/adaptive-form-fragments-core-components.md) 。
+> 如果您在自适应表单中多次使用非基于无格式的表单片段，则会发生片段字段之间的数据同步问题。 您可以使用与任何表单数据模型不关联的单个 [ 表单片段（基于核心组件） ](/help/forms/adaptive-form-fragments-core-components.md) ，而不会出现数据同步问题。
 
 ## 数据绑定自动片段映射 {#auto-mapping-of-fragments-for-data-binding}
 
