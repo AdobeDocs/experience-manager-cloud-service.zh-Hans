@@ -2,12 +2,13 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
-workflow-type: ht
-source-wordcount: '803'
-ht-degree: 100%
+source-git-commit: 6c3b286182ae33cafadf51e653c2076d1911e444
+workflow-type: tm+mt
+source-wordcount: '924'
+ht-degree: 87%
 
 ---
+
 
 # AEM Universal Editor 快速入门 {#getting-started}
 
@@ -109,14 +110,17 @@ Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikiped
 应用程序中使用的连接将作为 `<meta>` 标记存储在页面的 `<head>` 中。
 
 ```html
-<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
+* `<category>`  — 这是使用两个选项进行的连接分类。
+   * `system`  — 对于连接端点
+   * `config`  — 用于 [定义可选配置设置](#configuration-settings)
 * `<referenceName>` – 这是一个短名称，可在文档中重复使用以标识连接。例如 `aemconnection`
 * `<protocol>` – 这表明要使用的 Universal Editor 持久性服务的持久性插件。例如 `aem`
 * `<url>` – 这是保存更改的系统的 URL。例如 `http://localhost:4502`
 
-标识符 `adobe:aem:editor` 表示与 Adobe Universal Editor 相连。
+标识符 `urn:adobe:aue:system` 表示与 Adobe Universal Editor 相连。
 
 `itemid` 将使用 `urn` 前缀来缩短标识符。
 
@@ -134,10 +138,12 @@ itemid="urn:<referenceName>:<resource>"
 ### 示例连接 {#example}
 
 ```html
+<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
+
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aue:system:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
@@ -147,9 +153,9 @@ itemid="urn:<referenceName>:<resource>"
               <p itemprop="title" itemtype="text">Journalist</p>
               <img itemprop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" itemtype="image" alt="avatar"/>
             </li>
- 
+
 ...
- 
+
             <li itemscope itemid="urn:fcsconnection:/documents/mytext" itemtype="component">
               <p itemprop="name" itemtype="text">John Smith</p>
               <p itemid="urn:aemconnection/content/example/another-source" itemprop="title" itemtype="text">Photographer</p>
@@ -159,6 +165,28 @@ itemid="urn:<referenceName>:<resource>"
         </aside>
 </body>
 </html>
+```
+
+### 配置设置 {#configuration-settings}
+
+您可以使用 `config` 前缀，用于根据需要设置服务和扩展端点。
+
+如果您不希望使用由Adobe托管、但却是您自己的托管版本的通用编辑器服务，则可以在Meta标记中设置此项。 要覆盖通用编辑器提供的默认服务端点，请设置您自己的服务端点：
+
+* 元名称 —  `urn:adobe:aue:config:service`
+* 元内容 —  `content="https://adobe.com"` （示例）
+
+```html
+<meta name="urn:adobe:aue:config:service" content="<url>">
+```
+
+如果只想为页面启用某些扩展，则可以在Meta标记中设置此项。 要获取扩展，请设置扩展端点：
+
+* 元名称： `urn:adobe:aue:config:extensions`
+* 元内容： `content="https://adobe.com,https://anotherone.com,https://onemore.com"` （示例）
+
+```html
+<meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
 ## 您已准备好使用 Universal Editor {#youre-ready}

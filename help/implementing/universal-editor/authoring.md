@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
-workflow-type: ht
-source-wordcount: '2410'
-ht-degree: 100%
+source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+workflow-type: tm+mt
+source-wordcount: '2442'
+ht-degree: 73%
 
 ---
 
@@ -50,7 +50,7 @@ UI 分为五个主要区域。
 * [Universal Editor 标题](#universal-editor-header)
 * [模式边栏](#mode-rail)
 * [编辑器](#editor)
-* [组件边栏](#component-rail)
+* [属性边栏](#properties-rail)
 
 ![Universal Editor UI](assets/ui.png)
 
@@ -102,11 +102,19 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ![Universal Editor 标题](assets/universal-editor-header.png)
 
-#### 汉堡菜单 {#hamburger-menu}
+#### “主页”按钮 {#home-button}
 
-汉堡菜单尚未实施。
+使用主页按钮可返回到通用编辑器的起始页
 
-![汉堡菜单](assets/hamburger-menu.png)
+![汉堡菜单](assets/home-button.png)
+
+在起始页上，您可以输入要用通用编辑器编辑的站点的URL。
+
+![起始页](assets/start-page.png)
+
+>[!NOTE]
+>
+>您想使用 Universal Editor 编辑的任何页面都必须[进行插桩以支持 Universal Editor](getting-started.md)。
 
 #### 位置栏 {#location-bar}
 
@@ -121,6 +129,12 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >[!NOTE]
 >
 >您想使用 Universal Editor 编辑的任何页面都必须[进行插桩以支持 Universal Editor](getting-started.md)。
+
+#### 身份验证标头设置 {#authentication-settings}
+
+如果需要设置身份验证密码，请点按或单击身份验证标题设置图标。
+
+![“身份验证标题设置”按钮](assets/authentication-header-settings.png)
 
 #### 模拟器设置 {#emulator}
 
@@ -162,7 +176,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ### 模式边栏 {#rail}
 
-始终沿该编辑器的左侧显示模式边栏。通过它，可在不同的编辑模式之间轻松切换该编辑器。
+模式边栏位于“主页”按钮的正下方，并且始终位于编辑器的左侧。 它允许在不同使用模式之间轻松切换编辑器。
 
 ![模式边栏](assets/mode-rail.png)
 
@@ -176,52 +190,41 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >使用热键 `P` 可切换到预览模式。
 
-#### 媒体模式 {#media-mode}
-
-在媒体模式下，内容作者可以单击以选择媒体内容。
-
-![媒体模式](assets/media-mode.png)
-
-内容详细信息显示在组件边栏中，作者也可以[编辑媒体内容](#editing-media)。
-
->[!TIP]
->
->使用热键 `M` 可切换到媒体模式。
-
 #### 组件模式 {#component-mode}
 
-在组件模式下，内容作者可以单击以选择组件来对其进行编辑，包括：
+在组件模式下，内容作者可以单击选择组件以进行编辑，包括：
 
 * 就地[编辑纯文本](#editing-content)。
-* 使用组件边栏上显示的其他格式选项来就地[编辑富文本](#editing-rich-text)。
+* [编辑富文本](#editing-rich-text) 中的其他格式选项的位置。
+* [编辑媒体内容](#editing-media)
 * [编辑内容片段](#edit-content-fragment)
 
 ![组件模式](assets/component-mode.png)
 
-在选择[内容片段](/help/assets/content-fragments/content-fragments.md)时，其详细信息将会显示在组件边栏中，您可以在其中编辑内容片段。
+选择组件后，其内容的详细信息将显示在 [属性边栏。](#properties-rail) 根据内容类型，您可以在就地或属性边栏中进行编辑。
 
 >[!TIP]
 >
->使用热键 `C` 可切换到组件模式。
+>使用热键 `C` 切换到组件模式。
 
 ### 编辑器 {#editor}
 
 编辑器占据窗口的大部分区域，并在其中呈现在[地址栏](#location-bar)中指定的页面。
 
-* 如果编辑器处于[组件模式](#component-mode)，则内容是可编辑的，但您无法访问链接。
+* 如果编辑器位于 [组件模式，](#component-mode) 内容将可编辑，但您无法关注链接。
 * 如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
 
 ![编辑器](assets/editor.png)
 
-### 组件边栏 {#component-rail}
+### 属性边栏 {#properties-rail}
 
-始终沿该编辑器的右侧显示组件边栏。根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
+属性边栏始终位于编辑器的右侧。 根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
 
-![组件边栏](assets/component-rail.png)
+![属性边栏](assets/component-rail.png)
 
 #### 属性模式 {#properties-mode}
 
-在属性模式中，边栏显示当前在编辑器中选择的组件的属性。在加载页面时，这是组件边栏的默认模式。
+在属性模式中，边栏显示当前在编辑器中选择的组件的属性。这是加载页面时属性边栏的默认模式。
 
 ![属性模式](assets/properties-mode.png)
 
@@ -234,20 +237,6 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >[!TIP]
 >
 >使用热键 `D` 可切换到属性模式。
-
-##### 编辑 {#edit}
-
-在[组件模式](#component-mode)中，所选组件的编辑选项将显示在组件边栏中。在组件边栏中，您可以编辑选定的组件。不过，您也可以点按或单击“编辑”按钮。
-
-![“编辑”图标](assets/edit.png)
-
-点按或单击“编辑”按钮将在一个新的选项卡中打开[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。这将允许您访问内容片段编辑器的全部功能以编辑关联的内容片段。
-
-根据工作流的需要，您可能希望在 Universal Editor 中或直接在内容片段编辑器中编辑内容片段。
-
->[!TIP]
->
->使用热键 `E` 可编辑所选组件。
 
 #### 内容树模式 {#content-tree-mode}
 
@@ -263,13 +252,29 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >使用热键 `F` 可切换到内容树模式。
 
+##### 编辑 {#edit}
+
+时间 [组件模式，](#component-mode) 所选组件的编辑选项将显示在属性边栏中。 在属性边栏中，您可以编辑选定的组件。 如果选定的组件是内容片段，您还可以点按或单击编辑按钮。
+
+![“编辑”图标](assets/edit.png)
+
+点按或单击“编辑”按钮将在一个新的选项卡中打开[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。这将允许您访问内容片段编辑器的全部功能以编辑关联的内容片段。
+
+根据工作流的需要，您可能希望在 Universal Editor 中或直接在内容片段编辑器中编辑内容片段。
+
+>[!TIP]
+>
+>使用热键 `E` 可编辑所选组件。
+
 ##### 添加 {#add}
 
-如果您在内容树或编辑器中选择容器组件，添加选项将出现在组件边栏上。
+如果在内容树或编辑器中选择了容器组件，则属性边栏上会显示添加选项。
 
 ![添加图标](assets/ue-add-component-icon.png)
 
 点击或单击“添加”按钮将打开一个可用组件的下拉菜单[添加到选定的容器。](#adding-components)
+
+![添加上下文菜单](assets/add-context-menu.png)
 
 >[!TIP]
 >
@@ -277,7 +282,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ##### 删除 {#delete}
 
-如果您在内容树或编辑器中选择容器组件内的组件，删除选项将出现在组件边栏上。
+如果在内容树或编辑器中选择容器组件中的组件，则属性边栏上会显示删除选项。
 
 ![“删除”图标](assets/ue-delete-component-icon.png)
 
@@ -289,51 +294,51 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ## 编辑内容 {#editing-content}
 
-编辑内容是简单而直观的。在编辑模式（[媒体模式](#media-mode)和[组件模式](#component-mode)）下，随着在编辑器中将光标悬停在内容上方，将用蓝色框突出显示可编辑的内容。
+编辑内容是简单而直观的。在 [组件模式](#component-mode)，当您将鼠标悬停在编辑器中的内容上时，可编辑的内容会以蓝色框突出显示。
 
 ![可编辑内容用蓝色框突出显示](assets/editable-content.png)
 
 >[!TIP]
 >
->请注意，在编辑模式中，点按或单击内容会选择该内容以进行编辑。如果您要使用链接来导航内容，请切换到[预览模式](#preview-mode)。
+>请注意，在组件模式下，点按或单击内容会选择内容进行编辑。 如果您要使用链接来导航内容，请切换到[预览模式](#preview-mode)。
 
-根据使用的[模式](#mode-rail)和选定内容，您可能有不同的就地编辑选项，并且您可以使用[组件边栏](#component-rail)查看内容的其他属性。
+根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在中为内容提供其他信息和选项。 [属性边栏。](#properties-rail)
 
 ### 编辑纯文本 {#edit-plain-text}
 
-如果您处于[组件模式](#component-mode)下并已选择一个纯文本组件，则可以通过双击或点按两次该组件来就地编辑文本。
+如果您在 [组件模式](#component-mode) 并选择一个纯文本组件，您可以通过双击或双击该组件就地编辑文本。
 
 ![编辑内容](assets/editing-content.png)
 
 按“输入/回车”键或点按或单击文本框外部可保存更改。
 
-在点按或单击以选择文本组件时，其详细信息将显示在组件边栏中。您还可以编辑边栏中的文本。
+当您点按或单击以选择文本组件时，其详细信息将显示在属性边栏中。 您还可以编辑边栏中的文本。
 
-![编辑组件边栏中的文本](assets/ue-editing-text-component-rail.png)
+![编辑属性边栏中的文本](assets/ue-editing-text-component-rail.png)
 
-此外，组件边栏中还提供了文本详细信息。一旦焦点离开组件边栏中的编辑字段，更改就会自动保存。
+此外，可在属性边栏中找到有关文本的详细信息。 一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
 
 ### 编辑富文本 {#edit-rich-text}
 
-如果您处于[组件模式](#component-mode)下并已选择一个富文本组件，则可以通过双击或点按两次该组件来就地编辑文本。
+如果您在 [组件模式](#component-mode) 并选择一个富文本组件，您可以通过双击或双击该组件就地编辑文本。
 
 按“输入/回车”键或点按或单击文本框外部可保存更改。
 
 ![编辑富文本组件](assets/rich-text-editing.png)
 
-此外，组件边栏中还提供了格式设置选项和文本详细信息。一旦焦点离开组件边栏中的编辑字段，更改就会自动保存。
+此外，属性边栏中还提供了文本上的格式选项和详细信息。 一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
 
 ### 编辑媒体 {#edit-media}
 
-如果您使用的是[媒体模式](#media-mode)并选择一个图像，则可以在组件边栏中查看其详细信息。
+如果您在 [组件模式](#component-mode) 并且选择一个图像，则可以在属性边栏中查看其详细信息。
 
 ![编辑媒体](assets/ue-edit-media.png)
 
-点按或单击组件边栏中选定图像预览下方的&#x200B;**替换**&#x200B;按钮，以将图像替换为资源库中的另一个图像。
+点按或单击 **替换** 按钮替换属性边栏中选定图像的预览下的图像，以将其替换为您资源库中的另一个图像。
 
 1. [资源选择器](/help/assets/asset-selector.md#using-asset-selector)窗口会打开，以供您选择资源。
 1. 点按或单击以选择新资源。
-1. 点按或单击&#x200B;**选择**&#x200B;可返回至已替换资源的组件边栏。
+1. 点击或单击 **选择** 以返回到替换资产的属性边栏。
 
 更改会自动保存到您的内容中。
 
@@ -343,15 +348,15 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ### 编辑内容片段 {#edit-content-fragment}
 
-如果您使用的是[组件模式](#component-mode)并选择一个[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)，则可以在组件边栏中编辑其详细信息。
+如果您在 [组件模式](#component-mode) 然后您选择 [内容片段，](/help/sites-cloud/administering/content-fragments/overview.md) 您可以在属性边栏中编辑其详细信息。
 
 ![编辑内容片段](assets/ue-edit-cf.png)
 
-所选内容片段的内容模型中定义的字段可在组件边栏中显示和编辑。
+在选定内容片段的内容模型中定义的字段在属性边栏中显示和可编辑。
 
 如果您选择与内容片段相关的字段，则内容片段会加载到组件边栏中，并且会自动滚动到该字段。
 
-一旦焦点离开组件边栏中的编辑字段，更改就会自动保存。
+一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
 
 如果您想改为在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑您的内容片段，请单击模式边栏中的[编辑按钮](#edit)。
 
@@ -360,7 +365,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 ### 向容器添加组件 {#adding-components}
 
 1. 在内容树或编辑器中选择一个容器组件。
-1. 然后点击或单击组件边栏中的添加图标。
+1. 然后点按或单击属性边栏中的添加图标。
 
    ![选择要添加到容器的组件](assets/ue-add-component.png)
 
@@ -375,7 +380,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 1. 在内容树或编辑器中选择一个容器组件。
 1. 点击或单击容器的 V 形图标以在内容树中展开其内容。
 1. 然后，在内容树中，选择容器内的一个组件。
-1. 点击或单击组件边栏中的删除图标。
+1. 点按或单击属性边栏中的删除图标。
 
    ![删除组件](assets/ue-delete-component.png)
 
@@ -402,7 +407,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
 
-请注意，在预览模式中，点按或单击内容的反应与对内容阅读器的反应一样。如果要选择内容以供编辑，请切换到编辑模式，如[组件模式](#component-mode)或[媒体模式](#media-mode)。
+请注意，在预览模式中，点按或单击内容的反应与对内容阅读器的反应一样。如果要选择要编辑的内容，请切换到 [组件模式。](#component-mode)
 
 ## 其他资源 {#additional-resources}
 

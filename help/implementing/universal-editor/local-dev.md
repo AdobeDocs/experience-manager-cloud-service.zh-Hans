@@ -2,12 +2,13 @@
 title: 使用 Universal Editor 进行本地 AEM 开发
 description: 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
-workflow-type: ht
+source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 100%
 
 ---
+
 
 # 使用 Universal Editor 进行本地 AEM 开发 {#local-dev-ue}
 
