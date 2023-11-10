@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: b9fb484135fb2d16758548c525b59f5ba011afb5
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2203'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 4%
 
 [!DNL Experience Manager Forms] 通过数据集成，您可以配置并连接到不同的数据源。 支持开箱即用的以下类型：
 
-* 关系数据库 — MySQL、 [!DNL Microsoft® SQL Server]， [!DNL IBM® DB2®]、和 [!DNL Oracle RDBMS]
+* 关系数据库 — MySQL、 [!DNL Microsoft® SQL Server]， [!DNL IBM® DB2®]、 postgreSQL和 [!DNL Oracle RDBMS]
 * RESTful Web服务
 * 基于SOAP的Web服务
 * OData服务（版本4.0）
