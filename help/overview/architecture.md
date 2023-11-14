@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: b610de53d1bd1b120a2642336aac1713444bfd3e
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 13%
 >[!CONTEXTUALHELP]
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service 架构简介"
->abstract="在此选项卡中，您可以查看 AEM as a Cloud Service 的新架构并了解更改。AEM带来了具有可变数量图像的动态架构，因此花时间了解云架构非常重要。"
+>abstract="在此选项卡中，您可以查看 AEM as a Cloud Service 的新架构并了解更改。AEM 带来了具有可变数量图像的动态架构，因此花时间了解云架构是很重要的。"
 >additional-url="https://video.tv.adobe.com/v/330542/" text="架构概述"
 
 Adobe Experience Manager (AEM) as a Cloud Service提供了一组可组合服务，用于创建和管理高影响力的体验。
