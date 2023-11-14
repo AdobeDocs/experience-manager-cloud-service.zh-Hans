@@ -4,9 +4,9 @@ description: 将您的数字资产添加到 [!DNL Adobe Experience Manager] as a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 408fdf3cac2943fc6c8abfa8d3e94b212a1e455f
+source-git-commit: 5dfcf1c5484b978c1a778eb99a09421533234734
 workflow-type: tm+mt
-source-wordcount: '3211'
+source-wordcount: '3179'
 ht-degree: 11%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 11%
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-要上传文件（或多个文件），您可以在桌面上选择它们，然后在用户界面（Web浏览器）上将其拖到目标文件夹中。 或者，您可以从用户界面启动上传。 [!DNL Experience Manager] 可以容纳具有1000个以上资源的文件夹。 如果要在这样的文件夹中上传更多项目，并且已有1000多个项目存在，则可能会导致上传或创建新文件夹时出现延迟。
+要上传文件（或多个文件），您可以在桌面上选择它们，然后在用户界面（Web浏览器）上将其拖到目标文件夹中。 或者，您可以从用户界面启动上传。
 
 >[!IMPORTANT]
 >
