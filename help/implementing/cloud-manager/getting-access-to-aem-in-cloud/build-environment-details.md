@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 08cb1b4fc74e03a931551042814afb2d722005a5
+source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 93%
+source-wordcount: '1006'
+ht-degree: 98%
 
 ---
 
@@ -19,25 +19,21 @@ ht-degree: 93%
 Cloud Manager 使用专门的构建环境构建和测试代码。
 
 * 构建环境基于 Linux，并派生自 Ubuntu 18.04。
-* 使用 [Cloud Manager 2023年10月版，](/help/implementing/cloud-manager/release-notes/current.md) Java和Maven版本正在持续更新。
-   * 已安装Apache Maven 3.6.0或3.8.8。
-   * 安装的Java版本为OracleJDK 8u202和OracleJDK 11.0.2。或者OracleJDK 8u371和OracleJDK 11.0.20。
-   * 默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_202` 包含OracleJDK 8u202或 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。 请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
+* 安装 Apache Maven 3.8.8。
+* 安装的 Java 版本是 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
+* 默认情况下，`JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_371`，其中包含 Oracle JDK 8u371。请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
 * 安装了一些其他的必要系统包。
-
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-
 * 可以在构建时安装其他包，如[安装其他系统包](#installing-additional-system-packages)部分所述。
 * 每次构建都是在一个原始的环境中完成的；构建容器在执行之间不保持任何状态。
 * Maven 始终通过以下三条命令运行。
-
-* `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-* `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-* `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 使用 `settings.xml` 文件在系统级别配置 Maven，并将自动包含使用名为 `adobe-public` 的配置文件的公共 Adobe 构件存储库。（有关更多详细信息，请参阅 [Adobe 公共 Maven 存储库](https://repo1.maven.org/)）。
 
 >[!NOTE]

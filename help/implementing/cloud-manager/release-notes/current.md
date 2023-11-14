@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.10.0 发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.10.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.11.0 发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 36f7ece65c1312ff3ac463cd8c6abb2882b99043
+source-git-commit: b51b3c9aed4d9dacbf12a6cad5f8923d82766bd9
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 85%
+source-wordcount: '715'
+ht-degree: 53%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.10.0 发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.11.0 发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.10.0 版本的发行说明。
+本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,24 +21,27 @@ ht-degree: 85%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 2023.10.0 版本中的 Cloud Manager 的发布日期是 2023 年 10 月 5 日。 下一个版本计划于 2023 年 11 月 2 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 2023 年 11 月 14 日。下一个版本计划于2023年12月7日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 对[索引](/help/operations/indexing.md)的改进减少了部署新索引时的管道持续时间。
-   * 改进因内容配置文件而异。
-* 默认情况下，已为新项目启用自动[更新开发环境](/help/implementing/cloud-manager/manage-environments.md#updating-environments)，从而为您节省必须手动执行更新的时间。
-   * 此更新将分阶段推出。
-* 随着 2023 年 10 月发布 Cloud Manager，将通过分阶段推出的方式更新 Java 版本。
-   * Java 8 和 11 以及 Maven 的次要版本已更新，并将在接下来的 2 个月内分阶段推出。新版本具有多项安全修复和错误修复。新版本是：
-      * **Maven：** `3.8.8`
-      * **Java 8版本：** `/usr/lib/jvm/jdk1.8.0_371`
-      * **Java 11版本：** `/usr/lib/jvm/jdk-11.0.20`
-   * 有关这些 JDK 更新中的安全性和错误修复的详细信息，[请参阅 OpenJDK 公告](https://openjdk.org/groups/vulnerability/advisories/)。
+* Web应用程序防火墙 — DDOS保护(WAF-DDOS)现在可作为您的AEMas a Cloud Service权利的一部分购买，并且 [可以自助方式配置。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+* 专业化 [配置部署管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 管道现在可用于在几分钟内配置环境设置、维护任务、CDN规则等。
+* [复制内容时](/help/implementing/developing/tools/content-copy.md) 从更高的环境到开发环境，现在会显示一条消息，建议在复制大型内容集时务必谨慎，因为开发环境存在容量限制。
+* [管道执行详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 现在将显示管道执行中的所有步骤，其中尚未开始的步骤将显示为灰色。
+* 在两者上 **[活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 和 **[管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 现在，在单击处于运行状态的管道时，会显示管道执行摘要。
+* 新 **持续时间** 部分已添加到 [管道详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 这包括基于该项目历史趋势的管道步骤的平均持续时间。
+* 在管道执行页面上，完成的步骤现在显示持续时间。
 
 ## 早期采用计划 {#early-adoption}
 
 成为我们早期采用计划的一部分，并有机会测试一些即将推出的功能。
+
+### 自带GitHub {#byo-github}
+
+如果您使用GitHub管理存储库， [您现在可以通过Cloud Manager直接在GitHub存储库中验证代码。](/help/implementing/cloud-manager/managing-code/byo-github.md) 此集成消除了对代码与Adobe存储库保持一致同步的需求，并允许您在将拉取请求合并到主分支之前对其进行验证。
+
+如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `Grp-CloudManager_BYOG@adobe.com` 从与Adobe ID关联的电子邮件地址中查找。
 
 ### 自定义权限 {#custom-permissions}
 

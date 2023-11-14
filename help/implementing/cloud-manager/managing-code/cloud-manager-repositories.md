@@ -2,10 +2,10 @@
 title: Cloud Manager 存储库
 description: 了解如何在 Cloud Manager 中创建、查看和删除 Git 存储库。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 96%
 
 ---
 
@@ -22,9 +22,11 @@ ht-degree: 100%
 
 按照以下步骤在 Cloud Manager 中查看和管理存储库。
 
-1. 从&#x200B;**项目概述**&#x200B;页面中，单击&#x200B;**存储库**&#x200B;选项卡，然后导航到&#x200B;**存储库**&#x200B;页面。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 单击&#x200B;**添加存储库**&#x200B;启动向导。
+1. 从 **项目概述** 页面，点按或单击 **存储库** 制表符以切换到 **存储库** 页面。
+
+1. 单击 **添加存储库**.
 
    ![添加“存储库”按钮](/help/implementing/cloud-manager/assets/repos/create-repo2.png)
 

@@ -1,8 +1,9 @@
 ---
 title: AEM as a Cloud Service 中的内容恢复
 description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud Service 内容。
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
+source-git-commit: bf8493909fa995ec30d67646aec5b712318dbf75
+workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 100%
 
