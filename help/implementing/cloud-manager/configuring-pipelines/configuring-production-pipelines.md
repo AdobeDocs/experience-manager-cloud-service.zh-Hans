@@ -3,9 +3,9 @@ title: 配置生产管道
 description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: edc5d88b4ffc4e13299d21f6579f5f52c40e0773
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1418'
 ht-degree: 80%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 80%
 >
 >* 如果所选环境存在 Web 层代码管道，则会禁用此选择。
 >* 如果将现有的全栈管道部署到环境中，则为同一环境创建 Web 层配置管道将忽略全栈管道中的现有 Web 层配置。
-> * 在任何时候，每个环境只能有一个配置部署管道。
+> * 在任何时候，每个环境只能有一个配置管道。
 
 选择部署类型后，完成创建生产目标部署管道的步骤相同。
 
@@ -158,7 +158,7 @@ ht-degree: 80%
    * **部署到生产之前暂停** – 此选项在部署到生产之前暂停管道。
    * **已计划** – 此选项允许用户启用计划的生产部署。仅适用于Web层目标部署。
 
-   ![配置部署管道](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
+   ![配置管道](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 
 1. 单击“**保存**”。
 

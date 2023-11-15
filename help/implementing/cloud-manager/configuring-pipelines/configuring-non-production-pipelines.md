@@ -3,9 +3,9 @@ title: 配置非生产管道
 description: 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1288'
 ht-degree: 80%
 
 ---
@@ -121,7 +121,7 @@ ht-degree: 80%
 >
 >* 如果所选环境存在 Web 层代码管道，则会禁用此选择。
 >* 如果将现有的全栈管道部署到环境中，则为同一环境创建 Web 层配置管道将忽略全栈管道中的现有 Web 层配置。
-> * 在任何时候，每个环境只能有一个配置部署管道。
+> * 在任何时候，每个环境只能有一个配置管道。
 
 选择部署类型后，完成创建非生产目标部署管道的步骤相同。
 
@@ -145,7 +145,7 @@ ht-degree: 80%
       * 输入分支名称的前几个字符，以及此字段的自动完成功能。它会找到您可以选择的匹配分支。
    * **代码位置** – 此选项定义管道应从中检索代码的所选存储库分支中的路径。
 
-   ![配置部署管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![配置管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
 
 1. 单击“**保存**”。
 
