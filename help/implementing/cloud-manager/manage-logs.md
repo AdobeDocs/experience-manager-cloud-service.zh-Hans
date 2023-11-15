@@ -2,10 +2,10 @@
 title: 访问和管理日志
 description: 了解如何访问和管理日志，可促进您在 AEM as a Cloud Service 中的开发过程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '267'
-ht-degree: 100%
+source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 87%
 
 ---
 
@@ -83,3 +83,8 @@ Environment Id Service    Name
 
 * [Cloud Manager API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+
+请参阅以下附加资源，以了解有关AEMas a Cloud Service中日志文件的更多信息：
+
+* [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [使用日志调试AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
