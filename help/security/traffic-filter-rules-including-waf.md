@@ -2,18 +2,15 @@
 title: 流量过滤规则，包括 WAF 规则
 description: 配置流量过滤规则，包括 Web 应用程序防火墙 (WAF) 规则
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 8df8322eef7c74932d6feeeb4a7a6045935edd88
+source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3441'
 ht-degree: 97%
 
 ---
 
 
 # 流量过滤规则，包括 WAF 规则 {#traffic-filter-rules-including-waf-rules}
-
->[!NOTE]
->此功能现在可在开发环境中使用，并会在11月晚些时候逐步推出到暂存和生产环境。 您可以通过向 **aemcs-waf-adopter@adobe.com** 发送电子邮件请求提前在阶段和生产环境中使用。
 
 流量过滤规则可用于在 CDN 层阻止或允许请求，这在以下场景中可能很有用：
 
@@ -56,7 +53,7 @@ ht-degree: 97%
 
 客户可以通过在内容交付流的各个层面配置规则来采取主动措施来减轻应用程序层受到的攻击（第 7 层）。
 
-例如，在 Apache 层，客户可以配置[ Dispatcher 模块](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#configuring-access-to-content-filter)或者[ ModSecurity ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=zh-Hans)限制对某些内容的访问。
+例如，在 Apache 层，客户可以配置[ Dispatcher 模块](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)或者[ ModSecurity ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=en)限制对某些内容的访问。
 
 正如本文所述，可以使用 Cloud Manager 的配置管道将流量过滤器规则部署到 Adobe Managed CDN。除了基于 IP 地址、路径和标头等属性的流量过滤规则或基于设置速率限制的规则之外，客户还可以许可称为 WAF 规则的强大流量过滤规则子类别。
 
