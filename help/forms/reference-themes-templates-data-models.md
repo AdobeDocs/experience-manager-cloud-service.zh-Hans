@@ -2,20 +2,20 @@
 title: 如何获取AEM表单的参考主题和模板？
 description: AEM Forms提供了示例自适应表单主题、模板和表单数据模型，以帮助您快速创建表单。
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: dd0c45352ea402065c7c6fced1394849ed9c316c
+source-git-commit: 046ffed13569ca3f9c104fb4525d28361873277a
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 24%
+source-wordcount: '868'
+ht-degree: 23%
 
 ---
 
 # 参考主题、模板和表单数据模型 {#reference-themes-templates-and-data-models}
 
 
-| 版本 | 文章链接 |
+| 应用到 | 文章链接 |
 | -------- | ---------------------------- |
-| 自适应表单核心组件 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
-| AEM as a Cloud Service | 本文 |
+| 基于核心组件的自适应表单 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| 基于Foundation组件的自适应表单 | 本文 |
 
 <span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
