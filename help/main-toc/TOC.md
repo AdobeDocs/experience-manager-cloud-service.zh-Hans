@@ -433,7 +433,7 @@ ht-degree: 99%
       + [图像的颜色标记](/help/assets/color-tag-images.md)
       + [管理 PDF 文档](/help/assets/manage-pdf-documents.md)
    + 配置、管理和扩展 [!DNL Assets] {#admin}
-      + [检测重复资源](/help/assets/detect-duplicate-assets.md)
+      + [检测重复的资源](/help/assets/detect-duplicate-assets.md)
       + [开发人员文档和 API 参考](/help/assets/developer-reference-material-apis.md)
       + [文件夹元数据架构](/help/assets/folder-metadata-schema.md)
       + [使用图像和视频配置文件](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -703,8 +703,8 @@ ht-degree: 99%
       + [注册播放器](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [将播放器分配给显示](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
    + 使用核心产品功能{#core-product-features}
-      + [视频的缩略图支持](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
-      + [Screens通知服务](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
+      + [视频支持缩略图](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
+      + [Screens 通知服务](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
    + 在 Screens as a Cloud Service 中开发 {#developing-screens-cloud}
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [创建组件](/help/screens-cloud/developing/creating-components.md)
@@ -824,13 +824,13 @@ ht-degree: 99%
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
-      + 程序 {#programs}
-         + [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
-         + [生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-         + [沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+      + 项目 {#programs}
+         + [项目和项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [生产项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [创建生产项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+         + [沙盒项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [创建沙盒项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [编辑项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 创建 AEM 应用程序项目 {#create-application-project}
          + [项目创建向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
