@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: a8651a44300772b5c9706a5fd85e7fefef72e47d
+source-git-commit: 1a128e35be06d018ec25fb0e6a479cfd0d242dbd
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1114'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 14%
 
 ### 增强 {#enhancements-14227}
 
-* ASSETS-29631： Assets Cloud：使用dam：roles进行安全交付/搜索。
+<!--* ASSETS-29631: Assets Cloud: Use dam:roles for secure delivery/search.-->
 * CQ-4354515：翻译：用于禁止翻译引用的资源的选项。
 * Forms-9993：定义将Forms核心组件移入Skyline的步骤。
 * Forms-10570：将EC API载入API — 第一台路由器。
