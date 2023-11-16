@@ -2,10 +2,10 @@
 title: 访问和管理日志
 description: 了解如何访问和管理日志，可促进您在 AEM as a Cloud Service 中的开发过程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: c4bd0390fc67b3d8e985c0cd2b1f436ae13420ee
+source-git-commit: 7272f6ebd1b9c4e67985cba0221d8cafbeb1560a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 87%
+source-wordcount: '345'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 87%
 
 ## 正在下载日志 {#download-logs}
 
-要下载日志，请执行以下操作。
+要下载日志，请执行以下操作：
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
@@ -32,11 +32,17 @@ ht-degree: 87%
 
    ![下载日志对话框](assets/download-preview.png)
 
+   以防万一 [其他发布区域](/help/operations/additional-publish-regions.md) 为您的环境启用，您将能够选择每个区域并单独下载其日志，如下所示：
+
+   ![下载其他发布区域的日志](assets/download-publish-region-logs.png)
+
 1. 选择服务后，单击要检索的日志旁边的下载图标。
 
 您还可以从&#x200B;**环境**&#x200B;页面访问日志。
 
 ![“环境”屏幕中的日志](assets/download-logs.png)
+
+
 
 ## 通过 API 下载的日志 {#logs-through-api}
 

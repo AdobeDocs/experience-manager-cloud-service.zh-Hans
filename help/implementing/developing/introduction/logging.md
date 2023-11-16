@@ -2,10 +2,10 @@
 title: AEMas a Cloud Service日志记录
 description: 了解如何使用AEMas a Cloud Service日志记录功能配置中央日志记录服务的全局参数、各个服务的特定设置以及如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
+source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 10%
+source-wordcount: '2757'
+ht-degree: 9%
 
 ---
 
@@ -556,6 +556,16 @@ CDN日志不同于其他日志，它遵循JSON格式。
 ### 云环境 {#cloud-environments}
 
 可以通过Cloud Manager界面下载或者使用Adobe I/O命令行界面在命令行跟踪日志，来访问AEM云服务的as a Cloud Service日志。 欲了解更多信息，请参见 [Cloud Manager日志记录文档](/help/implementing/cloud-manager/manage-logs.md).
+
+### 其他发布区域的日志 {#logs-for-additional-publish-regions}
+
+如果为特定环境启用了其他发布区域，则可以从Cloud Manager下载每个区域的日志，如上所述。
+
+其他发布区域的AEM日志和Dispatcher日志将在环境ID后的前3个字母中指定区域，例如 **nld2** 在下面的示例中，该示例引用了位于荷兰的其他AEM发布实例：
+
+```
+cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"
+```
 
 ### 本地 SDK {#local-sdk}
 
