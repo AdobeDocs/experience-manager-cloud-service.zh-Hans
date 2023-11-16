@@ -3,9 +3,9 @@ title: 搜索最佳实践 [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: 在应用程序中搜索、查找和检索资源元数据的最佳实践。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6638298056f2dae027db4df8c31c3fd59812a56b
+source-git-commit: b3b2cc516743243fbfdcf6189bfd851a1272bf78
 workflow-type: tm+mt
-source-wordcount: '2544'
+source-wordcount: '2520'
 ht-degree: 3%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 3%
 
 指定 `classic car` 作为搜索关键字，然后单击“搜索”。 键入关键字时，可以在下拉列表中查看搜索建议。 搜索建议基于Experience Manager部署中搜索索引的内容。 如果无法在下拉菜单中查看相应的资源，请按Enter键查看结果列表。 结果按相关性排序，从最接近的匹配项开始。
 
-![执行基本搜索方法1](assets/simple-search-1.png)
+<!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
 您可以通过用双引号(“ ”)添加搜索关键字来使搜索更具体。 此搜索仅包含同时包含指定术语的资源。 搜索条件如下所示 —  `"classic car"`. 因此，包含这两个词的搜索结果 `classic` 和 `car` 将显示出来。
 
-![查找精确匹配项](assets/simple-search-2.png)
+<!--![Finding exact match](assets/simple-search-2.png)-->
 
 如果您使用的是 **[!UICONTROL 资产视图]** 也一样。
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 如果要在特定文件夹内搜索，请从路径中选择该文件夹，然后导航到所需的文件夹。
 3. 从下拉列表中选择“文件”以显示带有关键字的所有文件 `classic car`.
 
-![使用文件和文件夹进行搜索](assets/files-folders.png)
+<!--![Search using files and folders](assets/files-folders.png)-->
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425487)
 
@@ -164,7 +164,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 选择 [!UICONTROL PDF].
 1. 转到 [!UICONTROL 状态] > [!UICONTROL Publish] > [!UICONTROL 已取消发布].
 
-![过滤器示例2](assets/filter-2.png)
+<!--![Filter example 2](assets/filter-2.png)-->
 
 在中执行以下步骤 **[!UICONTROL 资产视图]**：
 
@@ -180,7 +180,7 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 1. 转到“筛选器”。 下 [!UICONTROL 文件类型]，展开 [!UICONTROL 图像] 并选择 [!UICONTROL 已启用Web]
 1. 取消选择PNG。
 
-![搜索除吉普车之外的所有图像](assets/images-png.png)
+<!--![Search all images except jeep](assets/images-png.png)-->
 
 要在中使用提及的方案搜索资源，请执行以下操作 **[!UICONTROL 资产视图]**，请按照以下步骤操作：
 
@@ -203,7 +203,7 @@ Adobe Experience Manager允许您向搜索添加多个标准。 可以使用关�
 2. 导航到过滤器面板，然后选择“文件类型”下的“文档”。
 3. 使用星号通配符优化搜索。 类型 `"classic car"` 搜索包含 `classic car` 关键字。
 
-![场景6](assets/scenario-6.png)
+<!--![Scenario 6](assets/scenario-6.png)-->
 
 方案6不能在中执行 **[!UICONTROL 资产视图]** 因为它不支持使用通配符。
 
@@ -213,7 +213,7 @@ Adobe Experience Manager允许您向搜索添加多个标准。 可以使用关�
 
 键入 `car - classic` 搜索栏中的关键字。 导航到过滤器面板，然后选择“文件类型”下的“文档”。 搜索的优先级顺序基于以下内容：优先级1：元数据优先级2：智能标记
 
-![场景7](assets/scenario-7.png)
+<!--![Scenario 7](assets/scenario-7.png)-->
 
 方案7无法在中执行 **[!UICONTROL 资产视图]** 因为它不支持使用通配符。
 
@@ -237,7 +237,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 您可以使用各种搜索过滤器捕获特定标准。 标记是分配给资产的关键字，用于使其可在大量资产中识别。 例如，在此场景中，搜索具有以下特征的资源 *吉普* 标签中。 为此，请键入 `tags:jeep` 在搜索栏中。 搜索结果中只会列出符合此条件的资源。
 
-![使用标记进行搜索](assets/search-tags.png)
+<!--![Search using tags](assets/search-tags.png)-->
 
 如果您使用的是 **[!UICONTROL 资产视图]** 也一样。
 
