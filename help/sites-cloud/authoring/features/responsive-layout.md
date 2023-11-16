@@ -2,10 +2,10 @@
 title: 响应式布局
 description: AEM 让您能够为页面实现响应式布局
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1739'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1734'
+ht-degree: 94%
 
 ---
 
@@ -120,8 +120,8 @@ AEM 让您根据设备的宽度定义布局：
 
    ![折页](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * 折页可被视为内容的分页符（不要与[断点](#layout-definitions-device-emulation-and-breakpoints)相混淆）。显示此线可方便地指明用户在滚动之前可在设备上看到的内容部分。
-   * 如果所模拟的设备高度高于屏幕大小，将不会显示折页线。
+   * 折页可被视为内容的分页符（不要与[断点](#layout-definitions-device-emulation-and-breakpoints)相混淆）。为方便起见，在滚动之前，会显示该屏幕以显示在设备上的内容部分。
+   * 如果所模拟的设备的高度高于屏幕大小，则不会显示折线线。
    * 显示折页是为了方便作者查看，在已发布的页面上则不会显示折页。
 
 ## 添加布局容器及其内容（编辑模式） {#adding-a-layout-container-and-its-content-edit-mode}
@@ -136,7 +136,7 @@ AEM 让您根据设备的宽度定义布局：
 >
 >如果布局容器尚不可用，则必须为段落系统/页面显式激活&#x200B;**布局容器**。<!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。从此处，您可以将其拖动到页面上的所需位置，随后您将看到将组件拖动到 **此处占位符** 。
+1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。从此处，您可以将其拖动到页面上的所需位置，之后您可以看到 **将组件拖动到此处** 占位符。
 1. 接下来，您可以向布局容器中添加组件。这些组件将存放实际的内容：
 
    ![布局容器](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
@@ -202,7 +202,7 @@ AEM 让您根据设备的宽度定义布局：
 
   ![隐藏组件](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* 在&#x200B;**布局**&#x200B;模式下，您可以点按/单击&#x200B;**将组件拖动到此处**&#x200B;来选择整个组件。此时会显示该模式的工具栏。
+* 在 **布局** 模式您可以点按/单击 **将组件拖动到此处** 以选择整个组件。 此时会显示该模式的工具栏。
 
   根据布局组件的状态及属于该布局的组件，工具栏具有不同的选项。例如：
 

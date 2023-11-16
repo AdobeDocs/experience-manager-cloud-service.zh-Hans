@@ -2,10 +2,10 @@
 title: 预览内容
 description: 了解如何使用 AEM 预览服务在内容上线前进行预览。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 1804eacb5399dc38c97ff953031666711b9a0e4f
-workflow-type: ht
-source-wordcount: '316'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 93%
 
 ---
 
@@ -26,8 +26,8 @@ AEM 提供站点预览服务，让开发人员和内容作者可以在网站到�
 
 您可以使用&#x200B;**托管发布** UI 将内容发布到预览服务。
 
-1. 在 Sites 控制台中，选择要发送到预览的一个或多个页面，并单击&#x200B;**管理发布**&#x200B;按钮
-1. 在以下向导中，选择&#x200B;**预览**&#x200B;作为目标
+1. 在站点控制台中，选择要发送到预览的一个或多个页面，然后单击 **管理发布** 按钮。
+1. 在以下向导中，选择&#x200B;**预览**&#x200B;作为目标.
 
    ![托管发布](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 

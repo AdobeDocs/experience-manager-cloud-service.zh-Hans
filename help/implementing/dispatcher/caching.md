@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 了解AEMas a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 469c5f0e115cc57cf7624aecf5b9f45645f2e99a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2874'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ Define DISABLE_DEFAULT_CACHING
 
 在Dispatcher层修改缓存标头时，请小心不要缓存太广。 请参阅HTML/文本部分中的讨论 [以上](#html-text). 此外，还应确保原本应保持私有（而非缓存）的资产不属于 `LocationMatch` 指令过滤器。
 
-AEM通常将存储在Blob存储中的JCR资源（大于16KB）用作302重定向。 截获这些重定向后，CDN将跟随，内容将直接从blob存储中交付。 只能对这些响应自定义有限的一组标头。 例如，为了自定义 `Content-Disposition` 您应按如下方式使用Dispatcher指令：
+AEM通常将存储在Blob存储中的JCR资源（大于16KB）用作302重定向。 截获这些重定向后，CDN将跟随，内容将直接从blob存储中交付。 只能对这些响应自定义有限的一组标头。 例如，要自定义 `Content-Disposition` 您应按如下方式使用Dispatcher指令：
 
 ```
 <LocationMatch "\.(?i:pdf)$">

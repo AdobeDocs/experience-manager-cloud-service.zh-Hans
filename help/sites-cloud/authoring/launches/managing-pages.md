@@ -2,10 +2,10 @@
 title: 管理启动项中的页面
 description: 您可以在启动项中创建新页面。也可以删除不需要的页面。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 100%
+source-wordcount: '289'
+ht-degree: 94%
 
 ---
 
@@ -25,36 +25,34 @@ ht-degree: 100%
 * 页面编辑器：
 
    * 选择&#x200B;**导航**以在控制台中打开启动项的结构：
-      ![从页面编辑器中导航启动项](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+     ![从页面编辑器中导航启动项](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
-      >[!NOTE]
-      >
-      >您也可以：
-      >
-      >* **退出**&#x200B;启动项并返回以编辑源页面
-
+     >[!NOTE]
+     >
+     >您也可以：
+     >
+     >* **退出**&#x200B;启动项并返回以编辑源页面
 
 * **启动项**控制台：
 如果您选择特定启动项，随后可选择**管理内容**：
-   ![启动项控制台 – 管理内容](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+  ![启动项控制台 – 管理内容](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * **站点**控制台：
 如果您选择特定源页面并打开**引用**，随后可依次选择&#x200B;**启动项**&#x200B;和&#x200B;**管理内容**：
-   ![启动项控制台 – 管理内容](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+  ![启动项控制台 – 管理内容](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
-   >[!NOTE]
-   >
-   >也可以选择&#x200B;**启动项控制台**&#x200B;以访问&#x200B;**管理内容**（和其他操作）。
+  >[!NOTE]
+  >
+  >也可以选择&#x200B;**启动项控制台**&#x200B;以访问&#x200B;**管理内容**（和其他操作）。
 
-所有这些入口点都将在站点控制台中打开启动项，您可以在其中：
+所有这些入口点都会在站点控制台中打开启动项，您可以在其中：
 
 * 导航，
 * **创建**&#x200B;新页面，
 * 选择现有页面并执行操作；例如，**编辑**，打开&#x200B;**属性**、**锁定**、**复制**、**粘贴**&#x200B;和&#x200B;**删除**
-
-   ![从“管理内容”导航到站点控制台中的启动项](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+  ![从“管理内容”导航到站点控制台中的启动项](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * 使用&#x200B;**引用**&#x200B;边栏以返回&#x200B;**启动项源**页面：
-   ![站点控制台 – 启动项源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+  ![站点控制台 – 启动项源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## 将页面添加到启动项 {#add-pages-to-launch}
 

@@ -2,10 +2,10 @@
 title: 了解如何在内容片段中使用引用
 description: 了解如何在内容片段中对内容、其他片段和其他资源（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '712'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
@@ -39,11 +39,11 @@ ht-degree: 100%
 
 ## 内容引用 {#content-references}
 
-内容引用就是这样做的 – 它们允许您引用任何其他内容。这将打开一个浏览器以便让您能够选择内容项。
+内容引用就是这样做的 – 它们允许您引用任何其他内容。这将打开一个浏览器，允许您选择内容项目。
 
 ## 资源/媒体引用 {#assets-media-references}
 
-可以使用&#x200B;**插入资源**&#x200B;选项在文本块中引用资源（例如，图像或媒体）。这将打开一个浏览器以便您能够选择资源。
+可以使用&#x200B;**插入资源**&#x200B;选项在文本块中引用资源（例如，图像或媒体）。这将打开一个浏览器，供您选择资产。
 
 ![内容片段 – 插入资源](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 

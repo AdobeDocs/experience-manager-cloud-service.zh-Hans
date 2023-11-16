@@ -11,16 +11,16 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2074'
 ht-degree: 1%
 
 ---
 
 # AEM-CIF核心组件与Adobe Experience Platform集成 {#aem-cif-aep-integration}
 
-此 [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) 核心组件提供与 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) 通过客户端交互(例如 __添加到购物车__.
+此 [Commerce integration framework(CIF)](https://github.com/adobe/aem-core-cif-components) 核心组件提供与 [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) 通过客户端交互(例如 __添加到购物车__.
 
 此 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components) 项目提供了一个名为的JavaScript库 [适用于Adobe Commerce的Adobe Experience Platform连接器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 以从Commerce店面收集事件数据。 该事件数据会被发送到Experience Platform，并在其他Adobe Experience Cloud产品(如Adobe Analytics和Adobe Target)中使用，以构建涵盖客户历程的360度个人资料。 通过将Commerce数据连接到Adobe Experience Cloud中的其他产品，您可以执行分析网站上的用户行为、执行AB测试以及创建个性化营销活动等任务。
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 发送 `addToCart` 要Experience Platform的事件数据 {#send-addtocart-to-aep}
 
-以下步骤显示如何发送 `addToCart` 使用CIF — 事件连接器将事件数据从AEM渲染的产品Experience Platform传输到Experience Platform。 通过使用Adobe Experience Platform Debugger浏览器扩展，您可以测试和查看提交的数据。
+以下步骤显示如何发送 `addToCart` 使用CIF — 事件连接器将AEM渲染的产品Experience Platform中的事件数据发送到Experience Platform。 通过使用Adobe Experience Platform Debugger浏览器扩展，您可以测试和查看提交的数据。
 
 ![在Adobe Experience Platform Debugger中查看addToCart事件数据](../assets/aep-integration/EventData-AEM-AEP.png)
 
@@ -440,7 +440,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 1. 在顶部操作栏中，单击 __查看已发布的项目__，然后单击店面导航中的任意首选类别。
 
-1. 单击中任何首选产品卡 __产品页面__，然后选择 __颜色，大小__ 以启用 __添加到购物车__ 按钮。
+1. 单击中的任意首选产品卡 __产品页面__，然后选择 __颜色，大小__ 以启用 __添加到购物车__ 按钮。
 
 
 1. 打开 __Adobe Experience Platform Debugger__ 扩展选项，然后选择 __Experience Platform周三SDK__ 在左边栏中。

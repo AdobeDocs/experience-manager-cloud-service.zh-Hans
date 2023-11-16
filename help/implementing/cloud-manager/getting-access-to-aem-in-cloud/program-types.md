@@ -2,10 +2,10 @@
 title: 程序和程序类型
 description: 了解 Cloud Manager 的层级，以及不同类型的程序如何适应其结构以及它们之间的差异。
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: fc14675e47e7a61bf36acb9a16756a593189b702
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager 是围绕实体的层次结构构建的。这方面的细节对于
 
 Cloud Manager 程序将自动配置自己的 Git 存储库。
 
-要访问 Cloud Manager Git 存储库，用户需要使用带有命令行工具的 Git 客户端、独立的可视 Git 客户端或用户选择的 IDE，如 Eclipse、IntelliJ 或 NetBeans。
+要访问Cloud Manager Git存储库，用户需要使用带有命令行工具的Git客户端、独立的可视Git客户端或用户选择的IDE，例如Eclipse、IntelliJ或NetBeans。
 
 一旦设置了 Git 客户端，就可以从 Cloud Manager 用户界面管理 Git 存储库。要了解如何使用 Cloud Manager 用户界面管理 Git，请参阅[访问 Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 

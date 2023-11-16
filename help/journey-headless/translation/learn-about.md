@@ -2,10 +2,10 @@
 title: 了解 AEM 中的 Headless 内容及其翻译方法
 description: 了解 Headless 概念、它们如何映射到 AEM 以及 AEM 翻译理论。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '743'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 利用 AEM 的强大功能，可通过 Headless 方式、全栈方式或同时在两个模型中交付内容。对于翻译专家来说，同一组翻译工具可应用于两种类型的内容，从而为您提供统一的内容翻译方法。
 
-在此历程中，您将了解有关 AEM 如何翻译内容的详细信息，但从较高层面来说，概念很简单：
+在此历程中，您将了解有关AEM如何翻译内容的详细信息，但从较高层面来看，概念很简单：
 
 1. 通过配置翻译集成框架来定义与翻译服务的连接。
 1. 使用翻译规则定义应翻译的内容。

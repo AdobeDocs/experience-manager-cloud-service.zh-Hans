@@ -2,10 +2,10 @@
 title: 使沙盒环境休眠和解除沙盒环境休眠
 description: 了解沙盒程序的环境如何自动进入休眠模式，以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '685'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击要休眠的程序，显示其详细信息。
+1. 单击要休眠的程序以显示其详细信息。
 
 1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**Developer Console**。
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
    ![确认休眠](assets/hibernate-2.png)
 
-当休眠成功时，您将在&#x200B;**Developer Console**&#x200B;屏幕中看到针对您环境的休眠进程完成通知。
+当休眠成功时，您会在中看到针对您环境的休眠进程完成通知 **开发人员控制台** 屏幕。
 
 ![休眠确认](assets/hibernate-4.png)
 
@@ -65,13 +65,13 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击要休眠的程序，显示其详细信息。
+1. 单击要休眠的程序以显示其详细信息。
 
 1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**Developer Console**。
 
    * 有关 Developer Console 的更多详细信息，请参阅[访问 Developer Console。](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)
 
-1. 单击&#x200B;**解除休眠**。
+1. 单击 **解除休眠**.
 
    ![解除休眠按钮](assets/de-hibernation-img1.png)
 

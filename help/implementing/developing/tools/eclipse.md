@@ -2,9 +2,9 @@
 title: 适用于 Eclipse 的 AEM 开发人员工具
 description: 了解如何使用AEM Developer Tools for Eclipse（一个基于Eclipse插件的Apache Sling的Eclipse插件）。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1192'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ _适用于Eclipse的Experience Manager开发人员工具_ 是一个基于 [适�
 1. 单击 **添加……**.
 1. 在 **名称** 字段，输入 `AEM Developer Tools`.
 1. 在 **位置** 字段中，复制安装URL。
-1. 单击 **添加**.
+1. 单击&#x200B;**添加**。
 1. 选中两者 **AEM** 和 **Sling** 插件。
 1. 单击&#x200B;**下一步**。
 1. 在 **安装详细信息** 窗口，单击 **下一个** 再来一次。
@@ -187,7 +187,7 @@ _适用于Eclipse的Experience Manager开发工具_ 提供AEM透视，使您能�
         </workspaceFilter>
         ```
 
-1. 确保保存所有更改。 您现在可以将新内容同步到AEM实例。
+1. 确保保存所有更改。 您现在可以将该新内容同步到您的AEM实例。
 
 1. 在“服务器”面板中，确保连接已启动，如果未启动，则确保连接已启动。
 1. 单击 **清理并发布** 图标。

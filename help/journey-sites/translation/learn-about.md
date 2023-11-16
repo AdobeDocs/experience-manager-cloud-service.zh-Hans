@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '491'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ AEM Sites 是一个用于创建、管理和交付数字体验的综合平台。�
 1. 检查和发布已翻译的内容。
 
 
-在此历程中，您将了解有关 AEM 如何逐步翻译内容的详细信息。
+在此历程中，您将了解有关AEM如何分步翻译内容的详细信息。
 
 ## 下一步 {#what-is-next}
 

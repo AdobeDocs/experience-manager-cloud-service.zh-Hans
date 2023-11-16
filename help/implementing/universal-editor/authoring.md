@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6d4300e6e031a4958277fa3bce251ac6aa5dbc9
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 73%
+source-wordcount: '2432'
+ht-degree: 71%
 
 ---
 
@@ -38,7 +38,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ## 登录 {#sign-in}
 
-在应用程序经过检测可使用 Universal Editor 后，您将需要登录 Universal Editor。您将需要一个 Adobe ID 才能登录并[访问 Universal Editor](getting-started.md#request-access)。
+在检测应用程序是否可以使用通用编辑器后，登录到通用编辑器。 您需要Adobe ID才能登录和 [有权访问通用编辑器。](getting-started.md#request-access)
 
 登录后，将要编辑的页面的 URL 输入到[地址栏](#location-bar)中，这样您就可以开始编辑内容，例如[文本内容](#text-mode)或[媒体内容](#media-mode)。
 
@@ -146,7 +146,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ![模拟选项](assets/emulation-options.png)
 
-默认情况下，该编辑器将以桌面版面打开，其中由浏览器自动定义高度和宽度。
+默认情况下，编辑器会在桌面布局中打开，其中高度和宽度由浏览器自动定义。
 
 您还可选择模拟移动设备并在 Universal Editor 中：
 
@@ -192,7 +192,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 组件模式 {#component-mode}
 
-在组件模式下，内容作者可以单击选择组件以进行编辑，包括：
+在组件模式下，内容作者可以选择要编辑的组件，包括：
 
 * 就地[编辑纯文本](#editing-content)。
 * [编辑富文本](#editing-rich-text) 中的其他格式选项的位置。

@@ -4,10 +4,10 @@ description: 了解如何为内容片段创作内容，然后根据用途创建�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: b8206ffc0947de4fed085a03a6f90b5ac0f85aab
-workflow-type: ht
-source-wordcount: '2253'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2252'
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 
      >[!WARNING]
      >
-     >原始编辑器将在同一选项卡中打开。建议不要同时打开两个编辑器。
+     >原始编辑器将在同一选项卡中打开。 建议不要同时打开两个编辑器。
 
 * 左侧面板：显示内容片段的&#x200B;**[变体](#variations)**&#x200B;及其&#x200B;**字段**：
    * 可使用这些链接[在内容片段结构中导航](#navigate-structure)
@@ -88,7 +88,7 @@ ht-degree: 100%
 
 ### 关注链接 {#follow-links}
 
-在编辑器的各个部分中，您将看到链接图标。这可用于打开显示的项目；例如内容片段模型、父引用或所引用的片段：
+在编辑器的各个部分中，您可以看到链接图标。 这可用于打开显示的项目；例如内容片段模型、父引用或所引用的片段：
 
 ![内容片段编辑器 - 链接图标](assets/cf-authoring-link-icon.png)
 

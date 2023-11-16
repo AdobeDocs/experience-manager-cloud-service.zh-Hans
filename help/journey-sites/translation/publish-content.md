@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 100%
+source-wordcount: '1356'
+ht-degree: 97%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 100%
 1. 导航到&#x200B;**导航** -> **资源** -> **文件**。请记住，AEM 中的内容存储在 `/content` 下。
 1. 选择项目的语言根。在此示例中，我们已选择 `/content/wknd/en`。
 1. 点按或单击边栏选择器，这将显示&#x200B;**引用**&#x200B;面板。
-1. 点按或单击&#x200B;**语言副本**。
+1. 点击或单击 **语言副本**.
 1. 选中&#x200B;**语言副本**&#x200B;复选框。
 1. 展开“引用”面板底部的&#x200B;**更新语言副本**&#x200B;部分。
 1. 在&#x200B;**项目**&#x200B;下拉列表中，选择&#x200B;**添加到现有翻译项目**。
@@ -140,7 +140,7 @@ ht-degree: 100%
 
    ![选择目标语言](assets/select-target-language.png)
 
-1. 设置新翻译作业的目标语言后，点按或单击作业信息卡底部的省略号按钮查看作业的详细信息。
+1. 设置新翻译作业的目标语言后，点按或单击作业信息卡底部的省略号按钮以查看作业的详细信息。
 1. 作业在首次创建时为空。通过点按或单击&#x200B;**添加**&#x200B;按钮并使用路径浏览器将内容添加到作业，[就像您最初创建翻译项目时所做的那样。](translate-content.md##manually-creating)
 
 >[!TIP]

@@ -2,9 +2,9 @@
 title: 在内容传输工具中删除迁移集
 description: 了解如何在内容传输工具中删除迁移集。
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 8%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 8%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. 单击 **删除** 您将看到一个用于确认删除操作的对话框。
+1. 当您单击 **删除** 您将看到一个用于确认删除操作的对话框。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)
 

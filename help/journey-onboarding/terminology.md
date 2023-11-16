@@ -2,16 +2,16 @@
 title: AEM as a Cloud Service 术语
 description: 在登录 AEMaaCS 之前，了解系统的一些术语及其基本结构会很有帮助。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 87%
 
 ---
 
 # AEM as a Cloud Service 术语 {#terminology}
 
-在[入门培训历程](overview.md)这一部分，您将了解 AEM as a Cloud Service 的一些术语及其基本结构。
+在这部分中 [入门培训历程，](overview.md) 您会了解AEMas a Cloud Service的一些术语及其基本结构。
 
 ## 目标 {#objective}
 
@@ -53,4 +53,4 @@ AEM as a Cloud Service 是一种强大而灵活的工具，要使用任何工具
 * 构成 AEMaaCS 的不同层。
 * 每个层的基本功能。
 
-在这些知识的基础上，继续您的 AEM 入门培训历程，接下来阅读文档[访问 Admin Console](admin-console.md)，您将了解如何访问控制台并验证您作为系统管理员的状态。
+在此知识的基础上继续您的AEM入门培训历程，接下来阅读文档 [访问Admin Console](admin-console.md)，了解如何访问控制台并验证您作为系统管理员的状态。

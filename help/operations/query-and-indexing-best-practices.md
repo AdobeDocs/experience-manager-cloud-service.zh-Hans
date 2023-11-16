@@ -3,10 +3,10 @@ title: 查询和索引最佳实践
 description: 了解如何根据 Adobe 的最佳实践指南优化索引和查询。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: ddd67a69bea2e2109ce93a91f42e8f365424f80f
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3144'
-ht-degree: 46%
+source-wordcount: '3133'
+ht-degree: 47%
 
 ---
 
@@ -120,7 +120,7 @@ AEMas a Cloud Service提供 [查询性能工具](#query-performance-tool)，旨�
 * 查询语句本身。
 * 上一个执行查询的线程的详细信息，允许识别执行查询的页面或应用程序功能。
 * 查询的“读取优化”分数。
-   * 计算方式为为执行查询而扫描的行数/节点数与读取的匹配结果数之间的比率。
+   * 计算方法是扫描以运行查询的行数/节点数与读取的匹配结果数之间的比率。
    * 对于可以在索引处处理每个限制（以及任何排序）的查询，其分数通常为90%或更高。
 * 最大行数的详细信息 — 
    * 读取 — 指示某行已作为结果集的一部分包括在内。
@@ -132,15 +132,16 @@ AEMas a Cloud Service提供 [查询性能工具](#query-performance-tool)，旨�
 
 ### 说明查询
 
-Explain查询工具允许开发人员了解查询执行计划(请参阅 [读取查询执行计划](#reading-query-execution-plan))，包括执行查询时使用的任何索引的详细信息。 这可用于了解查询索引的有效性，以便预测或追溯分析其性能。
+Explain查询工具允许开发人员了解查询执行计划(请参阅 [读取查询执行计划](#reading-query-execution-plan))，包括执行查询时使用的任何索引的详细信息。 这可用于了解为查询编制索引以预测或追溯分析其性能的效率。
 
 #### 说明查询
 
 要解释查询，请执行以下操作：
+
 * 使用选择适当的查询语言 `Language` 下拉菜单。
 * 将查询语句输入到 `Query` 字段。
 * 如果需要，可使用提供的复选框选择查询的执行方式。
-   * 默认情况下，无需执行JCR查询即可标识查询执行计划（QueryBuilder查询并非如此）。
+   * 默认情况下，无需运行JCR查询来标识查询执行计划（QueryBuilder查询并非如此）。
    * 提供了三个用于执行查询的选项 — 
       * `Include Execution Time`  — 执行查询，但不尝试读取任何结果。
       * `Read first page of results`  — 执行查询并读取20个结果的第一个“页面”（复制执行查询的最佳实践）。
@@ -238,7 +239,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 此查询执行计划将生成以下每个资产 `/content/dam` 从索引中读取，然后由查询引擎进一步筛选（这将仅包括那些与结果集中的非索引属性限制匹配的属性）。
 
-即使只有一小部分资源符合限制 `jcr:content/metadata/myProperty = "My Property Value"`，查询将需要读取大量节点，才能（尝试）填充请求的“页面”结果。 这可能会导致查询性能不佳，表现为查询性能较低 `Read Optimization` 分数)，并且可能导致出现警告消息，指示大量节点正在被遍历(请参阅 [索引遍历](#index-traversal))。
+即使只有一小部分资源符合限制 `jcr:content/metadata/myProperty = "My Property Value"`，查询需要读取大量节点来（尝试）填充请求的结果“页面”。 这可能会导致查询性能不佳，表现为查询性能较低 `Read Optimization` 分数)，并且可能导致出现警告消息，指示大量节点正在被遍历(请参阅 [索引遍历](#index-traversal))。
 
 要优化此第二个查询的性能，请创建 `damAssetLucene-9` 索引(`damAssetLucene-9-custom-1`)并添加以下属性定义 — 
 

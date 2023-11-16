@@ -4,10 +4,10 @@ description: 了解如何使用内容片段和 GraphQL API 作为 Headless 内�
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 100%
+source-wordcount: '1076'
+ht-degree: 94%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >如果您没有使用前面模块中描述的相同字段描述，您将需要更新此查询中的字段名称。
+   >如果您未使用与前面模块中描述的字段说明，请更新此查询中的字段名称。
    >
    >如前所述使用 GraphQL 自动完成（Ctrl+Space 或 Option+Space）功能来帮助识别可用属性。
 
@@ -183,7 +183,7 @@ ht-degree: 100%
 
 1. 如屏幕底部的横幅消息所确认，查询将会被持久化。该查询现在也会出现在窗口中持久查询的左侧面板中。
 
-1. 为了使持久查询公开可用，需要对其进行发布，就像需要发布内容片段一样。单击查询编辑器右上角的&#x200B;**发布**&#x200B;按钮以发布查询。
+1. 要公开使用持久查询，需要发布该查询，就像需要发布您的内容片段一样。 单击 **Publish** 在查询编辑器的右上角发布查询。
 
 1. 发布通过横幅通知进行确认。
 

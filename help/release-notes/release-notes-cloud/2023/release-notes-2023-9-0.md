@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.9.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.9.0 版的发行说明。'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 25a4a6b9ae09cb71f50317990af1718db1e14355
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 99%
+source-wordcount: '1441'
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,7 @@ Edge Delivery 是一组新的可组合服务，专注于最大限度地发挥内
 
 ### 与营销活动相关的 URL 参数的新 CDN 缓存行为 {#cache-url-params}
 
-对于新环境，CDN 默认删除与营销相关的查询参数，以提高营销活动的效果和缓存命中率。现有环境不受影响。[了解详情。](/help/implementing/dispatcher/caching.md#marketing-parameters)
+对于新环境，CDN将默认删除与营销相关的查询参数，以提高营销活动性能和缓存命中率。 现有环境不受影响。[了解详情。](/help/implementing/dispatcher/caching.md#marketing-parameters)
 
 ### 流量过滤规则（包括 WAF 规则）早期采用者计划 {#waf-early-adopter}
 

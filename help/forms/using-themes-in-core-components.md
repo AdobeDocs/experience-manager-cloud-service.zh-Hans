@@ -2,9 +2,9 @@
 title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2678'
+source-wordcount: '2677'
 ht-degree: 5%
 
 ---
@@ -362,7 +362,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    管道设置完成后，会更新行动号召信息卡。
 
-1. 右键单击已创建的管道。
+1. 右键单击创建的管道。
 1. 单击 **[!UICONTROL 运行]** .
 
    ![流水线](/help/forms/assets/canvas-theme-run-pipeline.png)

@@ -2,10 +2,10 @@
 title: 个性化和内容定位
 description: 了解如何使用 AEM 创建个性化、有针对性的内容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 100%
+source-wordcount: '1053'
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 您向客户提供的 Web 内容的个性化服务，即根据客户的兴趣和需求定制这些体验。 您可以根据掌握的关于客户的信息达成目标；例如，购物摘要、年龄、性别、地理位置等。
 
-借助 Adobe Experience Manager as a Cloud Service (AEM)，您可以创建一系列内容，然后指定哪些受众（最终用户组）将看到每个单独的体验。这意味着您将针对特定受众提供个性化体验。
+借助Adobe Experience Manager as a Cloud Service (AEM)，您可以创建一系列内容，然后指定哪些受众（最终用户组）可看到各个体验。 这意味着您将针对特定受众提供个性化体验。
 
 当您的读者在线时，您的定位引擎将查看有关最终用户的可用信息，并将其与体验定义进行比较。然后引擎&#x200B;*“决定”*&#x200B;应显示哪些个性化体验。
 
@@ -40,7 +40,7 @@ AEM 提供了用于以下情形的工具框架：
 
 优惠是一种个性化的体验，通常在有限的时间内提供。
 
-例如，示例网站的页面可以使用选件作为在页面顶部显示的 Teaser 图像。30 岁以上的人和 30 岁以下的人将看到不同的优惠作为体验 Teaser。
+例如，示例网站的页面可以使用选件作为在页面顶部显示的Teaser图像。 30岁以上的人和30岁以下的人可以查看不同的优惠作为体验Teaser。
 
 ## 受众 {#audience}
 

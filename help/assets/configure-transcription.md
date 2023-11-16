@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 93%
+source-wordcount: '1690'
+ht-degree: 89%
 
 ---
 
@@ -56,15 +56,15 @@ ht-degree: 93%
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 
-转到&#x200B;**[!UICONTROL “工具”]**>**[!UICONTROL “Cloud Service”]**>**[!UICONTROL “Azure Media Services 配置”]**。从左栏选择一个文件夹（位置）并点击[!UICONTROL “创建”]按钮来配置与您的 [!DNL Azure] 帐户的连接。此文件夹是 Experience Manager Assets 中存储您的 [!DNL Azure] 云配置的位置。输入[!DNL Azure]凭据，然后单击&#x200B;**[!UICONTROL “保存并关闭”]**。
+转到&#x200B;**[!UICONTROL “工具”]**>**[!UICONTROL “Cloud Service”]**>**[!UICONTROL “Azure Media Services 配置”]**。从左边栏中选择一个文件夹（位置），然后单击 [!UICONTROL 创建] 按钮以配置与的连接 [!DNL Azure] 帐户。 此文件夹是 Experience Manager Assets 中存储您的 [!DNL Azure] 云配置的位置。输入[!DNL Azure]凭据，然后单击&#x200B;**[!UICONTROL “保存并关闭”]**。
 
 ### 配置转录的处理配置文件 {#configure-processing-profile}
 
 一旦在 Experience Manager Assets 中配置了[!DNL Azure Media Services]，下一步就是创建一个资产处理配置文件，用于生成音频和视频资产的基于人工智能的转录。基于人工智能的处理配置文件在 Experience Manager Assets 中生成[支持音频或视频资产](#supported-file-formats-for-transcription)的转录文件作为演绎版，并将该演绎版（.vtt 文件）存储在原始资产所在的同一文件夹中。因此，用户更容易搜索和定位资产及其转录演绎版。
 
-转到&#x200B;**[!UICONTROL “工具”]**>**[!UICONTROL “Assets”]**>**[!UICONTROL “处理配置文件”]**，点击&#x200B;**[!UICONTROL “创建”]**&#x200B;按钮以创建基于人工智能的处理配置文件，用于生成音频和视频文件的转录。默认情况下，“处理配置文件”页面仅显示三个选项卡（图像、视频和自定义）。但是，如果您已在[!DNL Experience Manager Assets]实例中配置了[!DNL Azure Media Services]选项卡，则&#x200B;**[!UICONTROL 内容人工智能]**&#x200B;选项卡可见。如果在创建处理配置文件时，您没有看到&#x200B;**[!UICONTROL 内容人工智能]**&#x200B;选项卡，请验证您的 [!DNL Azure] 凭据。
+转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]** 然后单击 **[!UICONTROL 创建]** 按钮创建基于人工智能的处理配置文件，用于生成音频和视频文件的转录。 默认情况下，“处理配置文件”页面仅显示三个选项卡（图像、视频和自定义）。但是，如果您已在[!DNL Experience Manager Assets]实例中配置了[!DNL Azure Media Services]选项卡，则&#x200B;**[!UICONTROL 内容人工智能]**&#x200B;选项卡可见。如果在创建处理配置文件时，您没有看到&#x200B;**[!UICONTROL 内容人工智能]**&#x200B;选项卡，请验证您的 [!DNL Azure] 凭据。
 
-在 **[!UICONTROL 内容人工智能]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL “新增”]**&#x200B;按钮配置转录。此处，通过从下拉列表中选择文件类型，您可以包括和排除用于生成转录的文件格式（MIME 类型）。在下列插图中，包含所有受支持音频和视频文件，排除文本文件。
+在 **[!UICONTROL 内容人工智能]** 选项卡，单击 **[!UICONTROL 新增]** 按钮以配置转录。 此处，通过从下拉列表中选择文件类型，您可以包括和排除用于生成转录的文件格式（MIME 类型）。在下列插图中，包含所有受支持音频和视频文件，排除文本文件。
 
 启用&#x200B;**[!UICONTROL “在同一目录中创建 VTT 转录文件”]**&#x200B;切换功能，在原始资产所在的同一文件夹中创建和存储转录演绎版（.vtt 文件）。其他演绎版也由默认的 DAM 资产处理工作流生成，与此设置无关。
 
@@ -78,7 +78,7 @@ ht-degree: 93%
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-现在，让我们在此视频配置文件中配置转录。导航到&#x200B;**[!UICONTROL 内容人工智能]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL “新增”]**&#x200B;按钮。包括所有音频和视频文件，排除图像和应用程序文件。启用&#x200B;**[!UICONTROL “在同一目录中创建 VTT 转录文件”]**&#x200B;切换功能，并保存配置。
+现在，让我们在此视频配置文件中配置转录。导航至 **[!UICONTROL 内容人工智能]** 选项卡，然后单击 **[!UICONTROL 新增]** 按钮。 包括所有音频和视频文件，排除图像和应用程序文件。启用&#x200B;**[!UICONTROL “在同一目录中创建 VTT 转录文件”]**&#x200B;切换功能，并保存配置。
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 

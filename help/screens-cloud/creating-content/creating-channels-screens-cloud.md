@@ -2,9 +2,9 @@
 title: 在Screensas a Cloud Service中创建和管理渠道
 description: 本页介绍如何在Screensas a Cloud Service中创建和管理渠道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1087'
 ht-degree: 2%
 
 ---

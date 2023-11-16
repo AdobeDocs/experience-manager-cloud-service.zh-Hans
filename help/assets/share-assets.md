@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 177021106fc67e67a8cd6645a6684185331dd6f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1340'
 ht-degree: 5%
 
 ---
@@ -79,7 +79,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 任何有权访问共享资源链接的用户都可以下载捆绑在zip文件夹中的资源。 下载过程是相同的，无论用户是访问复制的资产链接，还是使用通过电子邮件共享的资产链接。
 
-* 单击资产链接或将该URL粘贴到浏览器中。 此 [!UICONTROL 链接共享] 界面打开，您可以在其中切换到 [!UICONTROL 卡片视图] 或 [!UICONTROL 列表视图].
+* 单击资产链接或在浏览器中粘贴该URL。 此 [!UICONTROL 链接共享] 界面打开，您可以在其中切换到 [!UICONTROL 卡片视图] 或 [!UICONTROL 列表视图].
 
 * 在 [!UICONTROL 卡片视图]，您可以将鼠标悬停在共享资源或共享资源文件夹上以选择资源或将它们排入下载队列。
 
@@ -89,7 +89,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
   ![将下载排入队列](assets/queue-download.png)
 
-* 在下载文件准备就绪后，单击 **[!UICONTROL 下载收件箱]** 选项以查看下载状态。 对于大型下载，请单击 **[!UICONTROL 刷新]** 按钮以更新状态。
+* 在下载文件准备就绪后，单击 **[!UICONTROL 下载收件箱]** 选项以查看下载状态。 对于大型下载，单击 **[!UICONTROL 刷新]** 按钮以更新状态。
 
   ![下载收件箱](assets/link-sharing-download-inbox.png)
 

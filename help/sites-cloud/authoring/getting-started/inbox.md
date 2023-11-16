@@ -2,10 +2,10 @@
 title: 您的收件箱
 description: 了解如何使用收件箱中收到的通知来管理您的任务。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: ht
-source-wordcount: '914'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '912'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 1. 单击/点按工具栏中的指示器。
 
-1. 选择&#x200B;**查看全部**。此时将打开 **AEM 收件箱**。收件箱会显示工作流程、项目和任务中的项目。
+1. 选择&#x200B;**查看全部**。此 **AEM收件箱** 打开。 收件箱会显示工作流程、项目和任务中的项目。
 1. 默认视图为[列表视图](#inbox-list-view)，但您也可以切换到[日历视图](#inbox-calendar-view)。这是通过视图选择器（工具栏，右上方）完成的。
 
    对于这两个视图，您还可以定义[视图设置](#inbox-view-settings)。可用选项取决于当前视图。
@@ -142,7 +142,7 @@ ht-degree: 100%
    * 操作向导会启动
    * 文档页面会打开
 
-   例如，**委派**&#x200B;操作将打开一个对话框：
+   例如， **委派** 打开一个对话框：
 
    ![委派收件箱任务](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 

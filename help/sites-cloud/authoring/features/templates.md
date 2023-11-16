@@ -2,10 +2,10 @@
 title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '4570'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '4567'
+ht-degree: 99%
 
 ---
 
@@ -607,7 +607,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->虽然模板作者可以在模板上指定页面策略，但是他们需要从开发人员处获取相应客户端库的详细信息。
+>虽然模板作者可以在模板上指定页面策略，但他们需要从开发人员处获取相应客户端库的详细信息。
 
 ### 编辑模板 – 初始页面属性 – 作者 {#editing-a-template-initial-page-properties-author}
 

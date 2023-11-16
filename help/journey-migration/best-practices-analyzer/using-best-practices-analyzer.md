@@ -1,10 +1,10 @@
 ---
 title: 使用 Best Practices Analyzer
-description: 了解如何使用Best Practices Analyzer以了解升级准备情况。
+description: 了解如何使用Best Practices Analyzer了解升级准备情况。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2478'
 ht-degree: 46%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 46%
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-1. 生成BPA报告后，该报告会以表格形式显示调查结果的摘要和数量，按调查结果类型和重要性级别进行整理。 要获取有关特定发现结果的更多详细信息，您可以单击与表中发现结果类型对应的数字。
+1. 生成BPA报告后，它以表格形式显示调查结果的摘要和数量，按调查结果类型和重要性级别进行整理。 要获取有关特定发现结果的更多详细信息，您可以单击与表中发现结果类型对应的数字。
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 

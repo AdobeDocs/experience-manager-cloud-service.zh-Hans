@@ -4,9 +4,9 @@ description: 了解AE的基础知识；使用包管理器进行包管理。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3769'
 ht-degree: 4%
 
 ---

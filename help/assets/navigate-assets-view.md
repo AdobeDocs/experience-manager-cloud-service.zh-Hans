@@ -3,10 +3,10 @@ title: “[!DNL Assets view] 用户界面”
 description: 了解  [!DNL Assets view] 中的用户界面并在其中导航。
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 92%
+source-wordcount: '894'
+ht-degree: 90%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 92%
 
 要查找某个资源，您可以按照 `Name`、`Relevancy`、`Size`、`Modified` 和 `Created` 的升序或降序对资源排序。
 
-要浏览到文件夹中，请双击该文件夹的缩略图或者从左侧边栏中选择文件夹。要查看文件夹的详细信息，请选择该文件夹并单击顶部工具栏中的“详细信息”。要在层级中向上和向下浏览，请使用左侧边栏或者使用顶部痕迹导航。
+要导航到文件夹中，请双击该文件夹的缩略图或者从左侧边栏中选择该文件夹。 要查看文件夹的详细信息，请选择该文件夹并单击顶部工具栏中的“详细信息”。要在层级中向上和向下浏览，请使用左侧边栏或者使用顶部痕迹导航。
 
 ![浏览文件夹](assets/browsing-folders.png)
 

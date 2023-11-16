@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中创建用户配置文件来管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: afb20efe8ed078a508f828c5df4e079f99dfab21
-workflow-type: ht
-source-wordcount: '989'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ Adobe 有时需要就 AEM as a Cloud Service 环境联系用户。除了产品�
 
 ## 新建 Cloud Manager 产品配置文件 {#create-profiles}
 
-要正确设置接收通知，您需要创建两个用户配置文件。这些步骤只能执行一次。
+要正确设置接收通知，请创建两个用户配置文件。 这些步骤只执行一次。
 
 1. 登录到 Admin Console，网址是 [`https://adminconsole.adobe.com`。](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ Adobe 有时需要就 AEM as a Cloud Service 环境联系用户。除了产品�
 
    ![Admin Console 中的实例列表](assets/cloud_manager_instance.png)
 
-1. 您会看到所有配置的 Cloud Manager 产品配置文件的列表。
+1. 您可以查看所有已配置的Cloud Manager产品配置文件的列表。
 
    ![Admin Console 中的产品配置文件](assets/cloud_manager_profiles.png)
 

@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.11.
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4e2ea040ec14515525424b42f524601d34786cb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 51%
+source-wordcount: '745'
+ht-degree: 73%
 
 ---
 
@@ -21,16 +21,16 @@ ht-degree: 51%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 2023 年 11 月 14 日。下一个版本计划于2023年12月7日发布。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 2023 年 11 月 14 日。下一个版本计划于 2023 年 12 月 7 日发布。
 
 ## 新增功能 {#what-is-new}
 
 * Web应用程序防火墙 — DDOS保护(WAF-DDOS)现在可作为您的AEMas a Cloud Service权利的一部分购买，并且 [可以自助方式配置。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 * 专业化 [配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 现在可在几分钟内配置和部署流量过滤器规则，包括WAF规则。
 * [复制内容时](/help/implementing/developing/tools/content-copy.md) 从更高的环境到开发环境，现在会显示一条消息，建议在复制大型内容集时务必谨慎，因为开发环境存在容量限制。
-* [管道执行详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 现在将显示管道执行中的所有步骤，其中尚未开始的步骤将显示为灰色。
-* 在两者上 **[活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 和 **[管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 现在，在单击处于运行状态的管道时，会显示管道执行摘要。
-* 新 **持续时间** 部分已添加到 [管道详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 这包括基于该项目历史趋势的管道步骤的平均持续时间。
+* [管道执行详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)现在将显示管道执行中的所有步骤，尚未开始的步骤将灰显。
+* 在&#x200B;**[活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)**&#x200B;页面和&#x200B;**[管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)**&#x200B;页面上，单击具有正在运行状态的管道时，现在将显示管道执行摘要。
+* 一个新的&#x200B;**持续时间**&#x200B;部分已添加到[管道详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)，其中包括基于该项目的历史趋势的管道步骤的平均持续时间。
 * 在 [管道执行页面，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) 现在，完成的步骤会显示持续时间。
 * 以下内容的执行 [重用生成工件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 现在将显示最初构建这些工件的执行的链接。
 * 要选择的选项 **重要量度失败** 现在可以配置 [代码质量管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 也一样。
@@ -40,11 +40,11 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 
 
 成为我们早期采用计划的一部分，并有机会测试一些即将推出的功能。
 
-### 自带GitHub {#byo-github}
+### 自带 GitHub {#byo-github}
 
-如果您使用GitHub管理存储库， [您现在可以通过Cloud Manager直接在GitHub存储库中验证代码。](/help/implementing/cloud-manager/managing-code/byo-github.md) 此集成消除了对代码与Adobe存储库保持一致同步的需求，并允许您在将拉取请求合并到主分支之前对其进行验证。
+如果您使用 GitHub 管理存储库，则[现在可以通过 Cloud Manager 直接在 GitHub 存储库中验证代码。](/help/implementing/cloud-manager/managing-code/byo-github.md)此集成使您无需始终与 Adobe 存储库同步代码，并可在将拉取请求合并到主分支之前对其进行验证。
 
-如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `Grp-CloudManager_BYOG@adobe.com` 从与Adobe ID关联的电子邮件地址中查找。
+如果您有兴趣测试这项新功能并共享您的反馈，请从您的 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-CloudManager_BYOG@adobe.com`。
 
 ### 自定义权限 {#custom-permissions}
 
@@ -81,6 +81,6 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 
 
 1. 运行管道.
 1. 在暂存环境中测试代码。
-1. 当部署和批准变得可用时，单击 **拒绝**.
+1. 在部署和批准可用时，单击 **拒绝**.
 1. 编辑管道以禁用 **在部署到生产环境之前暂停** 选项。
 1. 再次运行管道。 它将在暂存环境中再次运行，然后在生产环境中再次运行。

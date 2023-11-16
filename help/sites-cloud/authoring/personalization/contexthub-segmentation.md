@@ -2,10 +2,10 @@
 title: 使用 ContextHub 配置分段
 description: 了解如何使用 ContextHub 配置分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1682'
+ht-degree: 97%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 分段是创建营销活动时的主要考虑事项。有关分段的工作方式和关键术语的信息，请参阅[了解分段](segmentation.md)。
 
-根据您收集到的有关网站访客的信息以及要实现的目标，您将需要定义目标内容所需的区段和策略。
+根据您收集到的有关网站访客的信息以及要实现的目标，定义目标内容所需的区段和策略。
 
 之后，这些区段可用于为访客提供具体的目标内容。此处定义的[活动](activities.md)可以包含在任何页面上，并定义专用内容适用于的访客区段。
 
@@ -103,7 +103,7 @@ AEM 可让您轻松个性化用户体验。它还让您验证区段定义的结�
 
 1. 在区段控制台中，编辑新创建的区段以在区段编辑器中打开它。
 1. 将比较或引用拖动到区段编辑器中，它将显示在默认的 AND 容器中。
-1. 双击或点按新引用或区段的配置选项以编辑特定参数。在此示例中，我们正在对巴塞尔的人员进行测试。
+1. 双击或点按新引用或区段的配置选项以编辑特定参数。 在此示例中，我们正在对巴塞尔的人员进行测试。
 
    ![对巴塞尔的人员进行测试](../assets/contexthub-comparing-property-value.png)
 

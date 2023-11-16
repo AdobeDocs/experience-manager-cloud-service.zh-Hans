@@ -1,13 +1,13 @@
 ---
 title: 分配 AEM 产品配置文件
-description: 配置云资源后，您需要使用 AEM 产品配置文件授予您的团队访问 AEM 本身的权限。
+description: 配置云资源后，使用AEM产品配置文件授予您的团队访问AEM本身的权限。
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 100%
+source-wordcount: '886'
+ht-degree: 82%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 >title="分配 AEM 产品配置文件"
 >abstract="您无权使用 Experience Manager Assets。请联系您的管理员。"
 
-在[入门历程的这一可选部分中，](overview.md)您将了解如何使用 AEM 产品配置文件授予您的团队访问 AEM 的权限。
+在这部分中 [入门培训历程，](overview.md) 您将了解如何使用AEM产品配置文件授予您的团队访问AEM的权限。
 
 ## 目标 {#objective}
 
-一旦您阅读了本次入门历程中的上一篇文档[创建环境](create-environments.md)，并配置好云资源，您需要使用 AEM 产品配置文件授予您的团队访问 AEM 本身的权限。作为系统管理员，您可以通过分配 AEM 产品配置文件来完成此操作。
+在阅读了本次入门培训历程中的上一篇文档后， [创建环境，](create-environments.md) 并配置云资源，使用AEM产品配置文件授予您的团队访问AEM本身的权限。 作为系统管理员，您可以通过分配 AEM 产品配置文件来完成此操作。
 
 阅读本文档后，您应该了解：
 
@@ -74,7 +74,7 @@ ht-degree: 100%
 
    ![选择实例](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. 您将看到 AEM as a Cloud Service 产品配置文件的列表，这些配置文件可以根据用户的角色分配给用户。
+1. 您可以看到可根据用户的角色分配给用户的AEMas a Cloud Service产品配置文件的列表。
 
    ![产品配置文件](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -92,7 +92,7 @@ ht-degree: 100%
 
    ![分配访问权限](/help/journey-onboarding/assets/add-team2.png)
 
-1. 选择 `AEM Administrator` 或 `AEM User`，然后单击&#x200B;**添加用户**，如下所示，并提交必要的详细信息以完成添加团队成员。
+1. 选择 `AEM Administrator` 或 `AEM User` 并单击 **添加用户** 如下所示，并提交必要的详细信息以完成添加团队成员。
 
    ![添加团队成员](/help/journey-onboarding/assets/add-team3.png)
 
@@ -106,8 +106,8 @@ ht-degree: 100%
 
 然而，如果您想更好地了解作者和开发人员如何使用该系统，您可以继续此入门历程的两个可选部分：
 
-* [开发人员和部署管理员任务](developers.md) – 在这里，您将了解开发人员如何访问 Git 以存储其自定义代码并使用 Cloud Manager 管道进行部署。
-* [AEM 用户任务](aem-users.md) – 在这里，您将了解如何进入 AEM 环境并开始创建内容。
+* [开发人员和部署管理员任务](developers.md)  — 在这里，您可以了解开发人员如何访问Git以存储其自定义代码并使用Cloud Manager管道进行部署。
+* [AEM用户任务](aem-users.md)  — 在这里，您可以了解如何访问AEM环境，以便开始创建内容。
 
 ## 其他资源 {#additional-resources}
 

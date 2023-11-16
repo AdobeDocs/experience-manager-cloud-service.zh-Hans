@@ -2,10 +2,10 @@
 title: 创建生产程序
 description: 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 88%
+source-wordcount: '601'
+ht-degree: 73%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击屏幕右上角的&#x200B;**添加程序**。
+1. 单击 **添加项目** 屏幕右上角的。
 
    ![Cloud Manager 登陆页面](assets/log-in.png)
 
@@ -49,7 +49,7 @@ ht-degree: 88%
 
    ![选择解决方案](assets/setup-prod-select.png)
 
-1. 单击解决方案名称前的 V 形符号显示可选的插件，例如在 **Sites** 下选择 **Commerce** 插件选项。
+1. 单击解决方案名称前的>形符号显示可选的插件，例如选择 **商务** 下的附加选项 **站点**.
 
    ![选择“插件”](assets/setup-prod-commerce.png)
 
@@ -70,7 +70,7 @@ ht-degree: 88%
 
 ## 访问您的程序 {#accessing}
 
-1. 在登陆页上看到程序信息卡后，选择省略号按钮查看可用的菜单选项。
+1. 在登陆页面上看到项目卡时，选择省略号按钮以查看可用的菜单选项。
 
    ![程序概述](assets/program-overview.png)
 
@@ -80,7 +80,7 @@ ht-degree: 88%
 
    ![程序概述](assets/set-up-prod5.png)
 
-如果在任何时候您需要切换到另一个程序或返回概述页面创建另一个程序，请单击屏幕左上角的程序名称，可显示&#x200B;**导航到**&#x200B;选项。
+如果在任何时候您需要切换到另一个程序或返回概述页面创建另一个程序，请单击屏幕左上角的程序名称，可显示 **导航到** 选项。
 
 ![导航至](assets/create-program-a1.png)
 

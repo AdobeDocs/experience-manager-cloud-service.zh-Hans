@@ -2,10 +2,10 @@
 title: Cloud Manager 环境变量
 description: 标准环境变量可以通过 Cloud Manager 进行配置和管理，并提供给运行时环境，以便在 OSGi 配置中使用。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 15a53778e0934a1940efa5cc88467c20b4b67fe4
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 1. Cloud Manager 列出了可用的各种项目。选择要管理的项目。
 1. 为所选程序选择&#x200B;**环境**&#x200B;选项卡，然后在左侧导航面板中选择要为其创建环境变量的环境。
 1. 在环境的详细信息中，选择&#x200B;**配置**&#x200B;选项卡，然后选择&#x200B;**添加**，打开&#x200B;**环境配置**&#x200B;对话框。
-   * 如果您是第一次添加环境变量，您会在页面中央看到&#x200B;**添加配置**&#x200B;按钮。您可以使用此按钮或&#x200B;**添加**&#x200B;功能，打开&#x200B;**环境配置**&#x200B;对话框。
+   * 如果您是首次添加环境变量，则可以看到 **添加配置** 按钮进行标记。 您可以使用此按钮或&#x200B;**添加**&#x200B;功能，打开&#x200B;**环境配置**&#x200B;对话框。
 
    ![配置选项卡](assets/configuration-tab.png)
 

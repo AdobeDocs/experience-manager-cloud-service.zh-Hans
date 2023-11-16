@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 创建站点，并使用站点模板定义�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '775'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '774'
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 
    ![从模板创建站点](../assets/create-site-from-template.png)
 
-1. 在创建站点向导中，点按或单击左面板中的现有模板，或点按或单击左栏顶部的&#x200B;**导入**&#x200B;以导入新模板。
+1. 在创建站点向导中，点按或单击左侧面板中的现有模板或开启 **导入** ，以导入新模板。
 
    ![站点创建向导](../assets/site-creation-wizard.png)
 

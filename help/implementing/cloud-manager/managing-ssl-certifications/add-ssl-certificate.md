@@ -2,10 +2,10 @@
 title: 添加 SSL 证书
 description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 94%
+source-wordcount: '552'
+ht-degree: 88%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 94%
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 从左侧导航面板中单击 **SSL 证书**。主屏幕上显示一个包含任何现有 SSL 证书详细信息的表。
+1. 单击 **SSL证书** 从左侧导航面板中。 主屏幕上显示一个包含任何现有 SSL 证书详细信息的表。
 
    ![添加 SSL 证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. 单击&#x200B;**添加 SSL 证书**，打开&#x200B;**添加 SSL 证书**&#x200B;对话框。
+1. 单击 **添加SSL证书** 以打开 **添加SSL证书** 对话框。
 
    * 在&#x200B;**证书名称**&#x200B;中输入证书名称。
       * 这仅供参考，可以是任何有助于您轻松引用证书的名称。

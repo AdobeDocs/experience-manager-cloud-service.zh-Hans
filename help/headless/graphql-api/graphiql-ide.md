@@ -3,10 +3,10 @@ title: 在 AEM 中使用 GraphiQL IDE
 description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 99%
 
 ---
 
@@ -113,7 +113,7 @@ GraphiQL IDE 还让您管理[查询变量](/help/headless/graphql-api/content-fr
 
    ![持久查询 HTTP 缓存标头](assets/cfm-graphqlapi-headers-01.png "持久查询 HTTP 缓存标头")
 
-1. 选择此选项将打开&#x200B;**缓存配置**&#x200B;对话框：
+1. 选择此项将打开 **缓存配置** 对话框：
 
    ![持久查询 HTTP 缓存标头设置](assets/cfm-graphqlapi-headers-02.png "持久查询 HTTP 缓存标头设置")
 
@@ -159,7 +159,7 @@ GraphiQL IDE 还让您管理[查询变量](/help/headless/graphql-api/content-fr
 <!--
   >[!NOTE]
   >
-  >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
+  >The URL needs [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >
   >The target environment might need adjusting, depending on your requirements.
 -->

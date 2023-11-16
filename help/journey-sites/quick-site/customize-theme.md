@@ -2,10 +2,10 @@
 title: 自定义站点主题
 description: 了解如何使用实时 AEM 内容构建、自定义和测试站点主题。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: 64509c13abacd6a6b54b58245acbf510feafdffa
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '962'
+ht-degree: 96%
 
 ---
 
@@ -135,7 +135,7 @@ ht-degree: 100%
 * 了解如何通过本地代理使用实际 AEM 内容测试您的主题自定义。
 * 了解如何将更改提交到 AEM Git 存储库。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[部署自定义主题](deploy-theme.md)，其中您将了解如何使用前端管道来部署主题。
+在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档 [部署自定义主题，](deploy-theme.md) 在这里，您将了解如何使用前端管道部署主题。
 
 ## 其他资源 {#additional-resources}
 

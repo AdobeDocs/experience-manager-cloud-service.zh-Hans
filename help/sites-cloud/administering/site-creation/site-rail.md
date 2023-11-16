@@ -4,10 +4,10 @@ description: 了解站点边栏的强大功能，帮助您轻松自定义和管�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '596'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 主题的当前版本连同其提交哈希以及上次更新时间戳一起显示。
 
-点按或单击&#x200B;**选择版本**&#x200B;以查看主题的早期版本。
+点击或单击 **选择版本** 查看主题的早期版本。
 
 ![选择主题版本](/help/sites-cloud/administering/assets/select-theme-versions.png)
 

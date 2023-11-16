@@ -4,10 +4,10 @@ description: Experience Cloud 设置自动化提供了一种简单且自动化�
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 
 1. 登录到 Adobe Admin Console (https://adminconsole.adobe.com/)。
 1. 确保在右上角选择了正确的 IMS 组织 ID。
-1. 单击“产品”导航选项。
+1. 单击产品导航选项。
 1. 检查是否已为 IMS 组织设置了“Adobe Experience Manager as a Cloud Service”。
 1. 检查是否已为 IMS 组织设置了“Adobe Analytics”。
 1. 转到云管理器 (https://experience.adobe.com/cloud-manager)。
@@ -46,7 +46,7 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 1. 导航到&#x200B;**Sites**，并选择要与 Adobe Analytics 集成的站点的根。
 1. 展开侧边栏菜单并点按&#x200B;**设置 Analytics**。
 
-   这是侧边栏中的一个新选项，它将打开一个面板，该面板将为 Experience Cloud 设置自动化提供控件和状态。
+   这是侧边栏中的一个新选项，它将打开一个面板，该面板为“Experience Cloud设置自动化”提供控件和状态。
 1. 点按&#x200B;**基础 Analytics** 按钮。
 1. 在生成的对话框中，为&#x200B;**报告包 ID** 提供名称。
 

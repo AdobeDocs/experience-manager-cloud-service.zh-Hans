@@ -3,13 +3,13 @@ title: 内容片段模型
 description: 了解内容片段模型如何作为 AEM 中内容片段的基础。通过这些片段，可创建结构化的内容以用于投放 Headless 或创作页面。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '3064'
-ht-degree: 100%
+exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '3061'
+ht-degree: 99%
 
 ---
-
 
 # 内容片段模型 {#content-fragment-models}
 
@@ -180,6 +180,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    * 允许引入选项卡，以供在编辑内容片段内容时使用。
       * 这些选项卡在模型编辑器中显示为分隔条，用于分隔内容数据类型的列表的各个部分。每个实例表示一个新选项卡的开始。
       * 在片段编辑器中，每个实例都显示为一个选项卡。
+
      >[!NOTE]
      >
      >此数据类型仅用于格式设置，因此 AEM GraphQL 架构会忽略此数据类型。
@@ -197,7 +198,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
   >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
 * **呈现为**
-用于在片段中实现/呈现字段的各种选项。通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。
+用于在片段中实现/呈现字段的各种选项。通常，这允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。
 
 * **字段标签**
 输入**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，随后可根据需要手动更新它。

@@ -3,10 +3,10 @@ title: 开始使用 [!DNL Assets View]
 description: 如何访问  [!DNL Assets View]，其登录体验，支持的用例以及已知问题
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
-workflow-type: ht
-source-wordcount: '345'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 配置 [!DNL Assets View] {#configuration}
 
-要打开偏好设置，请单击用户界面右上角的头像。在解决方案偏好设置中，您可以在浅色和深色主题之间切换。
+要打开首选项，请单击用户界面右上角的头像。 在解决方案偏好设置中，您可以在浅色和深色主题之间切换。
 
 如果您属于不同的组织，则还可以更改组织和跨不同组织访问您的帐户。
 

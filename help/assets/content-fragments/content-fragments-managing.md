@@ -2,10 +2,10 @@
 title: 管理内容片段（资产 — 内容片段）
 description: 了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2a4538ad8b52615ffdee110393bfbc01f57694f4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 72%
+source-wordcount: '1873'
+ht-degree: 71%
 
 ---
 
@@ -141,7 +141,7 @@ ht-degree: 72%
    * 单击/点按片段或片段链接（具体取决于控制台视图）。
    * 选择片段，然后 **编辑** 工具栏中。
 
-1. 将打开片段编辑器。根据需要进行更改：
+1. 片段编辑器将打开。 根据需要进行更改：
 
    ![片段编辑器](assets/cfm-managing-03.png)
 
@@ -185,7 +185,7 @@ ht-degree: 72%
 
 * 在片段名称下方，您可以看到用于创建当前片段的[内容片段模型](/help/assets/content-fragments/content-fragments-models.md)的名称：
 
-   * 该名称还是一个将打开模型编辑器的链接。
+   * 该名称还是一个打开模型编辑器的链接。
 
 * 查看片段的状态；例如，有关创建、修改或发布时间的信息。状态也采用颜色编码：
 
@@ -199,7 +199,7 @@ ht-degree: 72%
 
   >[!WARNING]
   >
-  >新编辑器将在同一选项卡中打开。 不建议同时打开两个编辑器。
+  >新编辑器将在同一选项卡中打开。 建议不要同时打开两个编辑器。
 
 * **保存**&#x200B;提供对&#x200B;**保存并关闭**&#x200B;选项的访问。
 
@@ -319,7 +319,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 选择特定版本后，[时间线](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中的&#x200B;**与当前比较**&#x200B;操作可用。
 
-此时将打开：
+这将打开：
 
 * **当前**（最新）版本（左）
 

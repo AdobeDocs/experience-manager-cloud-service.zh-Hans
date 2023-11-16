@@ -2,10 +2,10 @@
 title: 发布页面
 description: 了解如何使用 AEM 中的各种机制发布和取消发布页面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 100%
+source-wordcount: '1801'
+ht-degree: 97%
 
 ---
 
@@ -100,7 +100,7 @@ Sites 控制台中有两个用于发布的选项：
 
 要使用“快速发布”发布页面，请执行以下操作：
 
-1. 在 Sites 控制台中选择一个或多个页面，然后单击&#x200B;**快速发布**&#x200B;按钮。
+1. 在站点控制台中选择一个或多个页面，然后单击 **快速发布** 按钮。
 
    ![选择要发布的页面](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -120,7 +120,7 @@ Sites 控制台中有两个用于发布的选项：
 
 要使用“管理发布”发布或取消发布页面，请执行以下操作：
 
-1. 在 Sites 控制台中选择一个或多个页面，然后单击&#x200B;**管理发布**&#x200B;按钮。
+1. 在站点控制台中选择一个或多个页面，然后单击 **管理发布** 按钮。
 
    ![选择要发布的页面](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -234,7 +234,7 @@ Sites 控制台中有两个用于发布的选项：
 
 正如[使用“管理发布”选项发布页面](#manage-publication)一样，也可以使用它来取消发布页面。
 
-1. 在 Sites 控制台中选择一个或多个页面，然后单击&#x200B;**管理发布**&#x200B;按钮。
+1. 在站点控制台中选择一个或多个页面，然后单击 **管理发布** 按钮。
 1. 此时会启动&#x200B;**管理发布**&#x200B;向导。在第一个步骤&#x200B;**选项**&#x200B;中，选择&#x200B;**取消发布**，而不是默认选项&#x200B;**发布**。
 
    ![取消发布 – 选项](/help/sites-cloud/authoring/assets/publishing-unpublish.png)

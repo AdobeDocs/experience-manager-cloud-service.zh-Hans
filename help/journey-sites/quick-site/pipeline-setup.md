@@ -2,10 +2,10 @@
 title: 设置您的管道
 description: 创建前端管道来管理站点主题的自定义。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '966'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '965'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 ![Cloud Manager 概述](assets/cloud-manager-overview.png)
 
-记下您已访问的项目的名称或复制 URL。稍后您需要将它提供给前端开发人员。
+记下您已访问的项目的名称或复制 URL。您需要稍后将此提供给前端开发人员。
 
 ## 创建前端管道 {#create-front-end-pipeline}
 

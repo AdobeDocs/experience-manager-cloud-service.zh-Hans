@@ -1,13 +1,13 @@
 ---
 title: 管理标记
 description: 了解如何在 AEM 中管理标记以整理内容。
-source-git-commit: af60a2b8f1e2dd7fc55247ecb0251d7b85f63eb3
-workflow-type: ht
-source-wordcount: '2272'
-ht-degree: 100%
+exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2268'
+ht-degree: 98%
 
 ---
-
 
 # 管理标记 {#administering-tags}
 
@@ -153,7 +153,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ## 管理标记 {#managing-tags}
 
-您可以对现有的标记和命名空间执行大量操作，以便管理和整理它们。只需在[标记控制台](#tagging-console)中选择一个标记或命名空间，即可在工具栏中显示可用的操作。
+您可以对现有标记和命名空间执行大量操作以管理和组织它们。 只需在[标记控制台](#tagging-console)中选择一个标记或命名空间，即可在工具栏中显示可用的操作。
 
 * [查看属性](#viewing-tag-properties)
 * [编辑](#editing-tags)
@@ -207,7 +207,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 ### 取消发布标记 {#unpublishing-tags}
 
-要停用创作实例上的标记并将其从发布实例中删除，您可以取消发布标记。
+要在创作实例上停用标记并将其从发布实例中删除，您可以取消发布它。
 
 1. 要取消发布标记，请打开[标记控制台](#tagging-console)。
 

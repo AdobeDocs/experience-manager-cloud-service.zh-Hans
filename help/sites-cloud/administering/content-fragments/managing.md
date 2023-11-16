@@ -3,13 +3,13 @@ title: 管理内容片段
 description: 了解如何从控制台和编辑器管理 AEM 内容片段，这些内容片段用作 Headless 内容的基础或用于页面创作。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: d381cc80e2c15ea35f9fd23baa78806ce15ec1af
-workflow-type: ht
-source-wordcount: '2540'
-ht-degree: 100%
+exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2532'
+ht-degree: 96%
 
 ---
-
 
 # 管理内容片段 {#managing-content-fragments}
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 ### 控制台的基本结构和处理 {#basic-structure-handling-content-fragments-console}
 
-选择&#x200B;**内容片段**&#x200B;将在新选项卡中打开控制台。
+选择 **内容片段** 在新选项卡中打开控制台。
 
 ![内容片段控制台 – 概述](assets/cf-managing-console-overview.png)
 
@@ -131,7 +131,7 @@ ht-degree: 100%
 
 #### 针对（选定的）内容片段的操作 {#actions-selected-content-fragment}
 
-选择特定片段将打开一个工具栏，其中重点介绍可用于该片段的操作。您还可以选择多个片段 – 操作的选择将相应地进行调整。
+选择特定片段会打开一个工具栏，其中重点介绍可用于该片段的操作。 您还可以选择多个片段 – 操作的选择将相应地进行调整。
 
 ![内容片段控制台 – 选定片段的工具栏](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -190,17 +190,17 @@ ht-degree: 100%
    * 仅供参考。
    * 可用于[快速筛选](#fast-filtering)。
 * **引用者**：
-   * 提供一个链接，该链接打开一个对话框，其中列出该片段的所有[父引用](#parent-references-fragment)；包括引用内容片段、体验片段和页面。要打开某个特定的引用，请单击对话框中的&#x200B;**标题**。
+   * 提供一个链接，该链接打开一个对话框，其中列出该片段的所有[父引用](#parent-references-fragment)；包括引用内容片段、体验片段和页面。要打开特定的引用，请单击 **标题** 在对话框中。
 
      ![内容片段控制台 –“引用”对话框](assets/cf-managing-console-references-dialog.png)
 
-* **语言**：指示任何[语言](#language-copies-fragment)副本
+* **语言**：表示任意 [语言](#language-copies-fragment) 份数
 
    * 指示内容片段的区域设置以及与内容片段关联的区域设置/[语言](#language-copies-fragment)副本的总数。
 
      ![内容片段控制台 – 语言指示器](assets/cf-managing-console-language-indicator.png)
 
-   * 单击/点击计数可打开显示所有语言副本的对话框。要打开某个特定的语言副本，请单击对话框中的&#x200B;**标题**。
+   * 单击/点击计数可打开显示所有语言副本的对话框。要打开特定的语言副本，请单击 **标题** 在对话框中。
 
      ![内容片段控制台 –“语言”对话框](assets/cf-managing-console-languages-dialog.png)
 
@@ -223,7 +223,7 @@ ht-degree: 100%
    >
    >要预定义新片段的位置，您可以导航到要创建片段的文件夹，也可以在创建过程中指定该位置。
 
-1. **新内容片段**&#x200B;对话框随即会打开，您可以从此处指定：
+1. 此 **新内容片段** 对话框打开，您可以从此处指定：
 
    * **位置** – 这将使用当前位置自动完成，但您可以根据需要选择其他位置
    * **内容片段模型** – 从下拉列表中选择要用作片段基础的模型
@@ -261,7 +261,7 @@ ht-degree: 100%
 1. 使用&#x200B;**内容片段**&#x200B;控制台导航到内容片段所在的位置。
 1. 通过选择该片段，然后从工具栏中选择&#x200B;**在新编辑器中打开**&#x200B;而打开该片段进行编辑。
 
-1. 随后将打开片段编辑器。选择所需的&#x200B;**变体**&#x200B;并根据需要作出更改（将自动保存这些更改）：
+1. 片段编辑器将打开。 选择所需的&#x200B;**变体**&#x200B;并根据需要作出更改（将自动保存这些更改）：
 
    ![片段编辑器](assets/cf-managing-editor.png)
 
@@ -401,7 +401,7 @@ The **Replace** option is available to find, and replace, specified text in your
 * 内容片段控制台的&#x200B;**引用**&#x200B;列
 * [内容片段编辑器的顶部工具栏中的父引用链接](/help/sites-cloud/administering/content-fragments/authoring.md#view-parent-references)
 
-两者都提供一个链接，该链接打开一个对话框，其中列出该片段的所有父引用，包括引用内容片段、体验片段和页面。要打开特定引用，请单击该对话框中的&#x200B;**标题**&#x200B;或链接图标。
+两者都提供一个链接，该链接打开一个对话框，其中列出该片段的所有父引用，包括引用内容片段、体验片段和页面。要打开特定的引用，请单击 **标题**，或链接图标。
 
 例如：
 
@@ -418,7 +418,7 @@ The **Replace** option is available to find, and replace, specified text in your
 
 ![内容片段控制台 – 语言指示器](assets/cfc-console-language-indicator.png)
 
-单击/点击计数可打开显示所有语言副本的对话框。要打开某个特定的语言副本，请单击对话框中的&#x200B;**标题**。
+单击/点击计数可打开显示所有语言副本的对话框。要打开特定的语言副本，请单击 **标题** 在对话框中。
 
 ![内容片段控制台 –“语言”对话框](assets/cf-managing-console-languages-dialog.png)
 

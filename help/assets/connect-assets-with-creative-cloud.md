@@ -1,40 +1,40 @@
 ---
 title: 将 AEM Assets 连接到 Creative Cloud
-description: 了解如何配置AEM Assets并将其连接到Creative Cloud。 连接到已设置到其他IMS组织的Creative Cloud权利，以便轻松使用AEM Assets中的最新Creative Cloud集成，包括Express和Creative Cloud库。
-source-git-commit: 8c0c01be301ccaeac4e658c16d63227e55b67fcf
+description: 了解如何配置 AEM Assets 并将其连接到 Creative Cloud。连接到已设置到其他IMS组织的Creative Cloud权利，以轻松使用AEM Assets中的最新Creative Cloud集成，包括Express和Creative Cloud库。
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 4%
+source-wordcount: '282'
+ht-degree: 75%
 
 ---
 
 # 将 AEM Assets 连接到 Creative Cloud  {#cross-org-entitlements}
 
-Experience Manager Assets能够连接到设置到其他IMS组织的Creative Cloud权利，以便轻松地使用AEM Assets中的最新Creative Cloud集成，包括Express和Creative Cloud库。
+Experience Manager Assets能够连接到已设置到其他IMS组织的Creative Cloud授权，以便轻松地使用AEM Assets中的最新Creative Cloud集成，包括Express和Creative Cloud库。
 
-如果您的Creative Cloud产品和AEM Assets配置为单独的IMS组织，则可以连接到其他Creative Cloud组织，以便能够在两个解决方案之间执行集成的工作流。
+如果您的 Creative Cloud 产品和 AEM Assets 预配给单独的 IMS 组织，则您可连接到其他 Creative Cloud 组织，以便可在这两个解决方案之间执行集成的工作流程。
 
 ## 前提条件 {#prerequisites}
 
-* Experience Manager Assets管理员权限
+* 具有 Experience Manager Assets 的管理员权限
 
-* 跨Creative Cloud和Experience Manager使用的同一用户ID的Creative Cloud的有效权限。 对具有相同电子邮件地址的个人和Federated ID的权利被视为不同的用户ID。
+* 在 Creative Cloud 和 Experience Manager 中使用的同一用户 ID 具有对 Creative Cloud 的有效权利。对具有相同电子邮件地址的个人 ID 和 Federated ID 的权利被视为不同的用户 ID。
 
-## 连接到新的Creative Cloud组织 {#connect-to-creative-cloud-org}
+## 连接到新的 Creative Cloud 组织 {#connect-to-creative-cloud-org}
 
-要连接到新的Creative Cloud组织，请执行以下步骤：
+要连接到新的 Creative Cloud 组织，请执行以下步骤：
 
-1. 导航到 **[!UICONTROL 设置]** > **[!UICONTROL Creative Cloud]**.
+1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL Creative Cloud]**。
 
-1. 使用选择新的Creative Cloud组织 **[!UICONTROL 选择新Creative Cloud组织ID]** 下拉列表。 该列表显示了您有权访问的所有组织。 选择具有有效Creative Cloud授权的组织。
+1. 使用&#x200B;**[!UICONTROL 选择新的 Creative Cloud 组织 ID]** 下拉列表选择新的 Creative Cloud 组织。该列表显示所有您有权访问其的组织。选择具有有效 Creative Cloud 权利的组织。
 
-1. 单击 **[!UICONTROL 切换组织]** 以切换到新组织。
+1. 单击&#x200B;**[!UICONTROL 切换组织]**&#x200B;以切换到该新组织。
 
-   ![跨组织授权](assets/cross-org-entitlements.png)
+   ![跨组织权利](assets/cross-org-entitlements.png)
 
 ## 限制 {#limitations}
 
-* 您可以每次将AEM Assets连接到一个Creative Cloud组织。 不支持一次连接到多个Creative Cloud组织。
+* 您一次可以将 AEM Assets 连接到一个 Creative Cloud 组织。不支持一次连接到多个 Creative Cloud 组织。
 
-* 您在AEM Assets中连接到的Creative Cloud组织适用于贵组织内的所有用户。
+* 您在 AEM Assets 中连接到的 Creative Cloud 组织适用于您组织内的所有用户。
 

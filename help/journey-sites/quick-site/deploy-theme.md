@@ -2,10 +2,10 @@
 title: 部署自定义主题
 description: 了解如何使用管道部署站点主题。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1023'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1022'
+ht-degree: 96%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 100%
 
 ## 启动管道 {#start-pipeline}
 
-在将主题自定义更改提交到 AEM Git 存储库后，您可以运行[管理员创建的管道](pipeline-setup.md)来部署更改。
+在将主题自定义更改提交到AEM Git存储库后，您可以运行 [管理员创建的管道](pipeline-setup.md) 以部署更改。
 
-1. [像检索 Git 访问信息时所做的那样](retrieve-access.md)登录 Cloud Manager，并访问您的项目。在&#x200B;**概述**&#x200B;选项卡上，您将看到&#x200B;**管道**&#x200B;的信息卡。
+1. [像检索 Git 访问信息时所做的那样](retrieve-access.md)登录 Cloud Manager，并访问您的项目。在 **概述** 选项卡，您会看到 **管道**.
 
    ![Cloud Manager 概述](assets/cloud-manager-overview.png)
 
@@ -107,7 +107,7 @@ AEM 是一个功能强大的工具，并且提供了许多其他选项。查看[
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
 * [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) – Cloud Manager 预配置了一些具有适当权限的角色。有关这些角色及其管理方式的详细信息，请参阅本文档。
 * [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) – 如果您想详细了解如何为 AEMaaCS 项目设置和管理 Git 存储库，请参阅此文档。
-* [配置 CI/CD 管道 – 云服务](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) – 在此文档中了解有关设置全堆栈管道和前端管道的更多详细信息。
+* [配置 CI/CD 管道 – Cloud Service](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) – 在此文档中了解有关设置全堆栈管道和前端管道的更多详细信息。
 * [AEM 标准站点模板](https://github.com/adobe/aem-site-template-standard) – 这是 AEM 标准站点模板的 GitHub 存储库。
 * [AEM 站点主题](https://github.com/adobe/aem-site-template-standard-theme-e2e) – 这是 AEM 站点主题的 GitHub 存储库。
 * [npm](https://www.npmjs.com) – 用于快速构建站点的 AEM 主题基于 npm。

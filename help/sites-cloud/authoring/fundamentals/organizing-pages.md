@@ -2,10 +2,10 @@
 title: 创建和组织页面
 description: 了解如何通过使用 AEM 创建和管理页面来组织您的网站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 99%
+source-wordcount: '2449'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 99%
 
 ## 组织您的网站 {#organizing-your-website}
 
-作为作者，您需要在 AEM 内组织您的网站。这包括创建和命名您的内容页面，因此：
+作为作者，您需要在AEM中整理您的网站。 这包括创建和命名您的内容页面，因此：
 
 * 您可以轻松地在创作环境中找到这些页面
 * 您站点的访客可以方便地在发布环境中浏览这些页面
@@ -225,7 +225,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
    >
    >如果您在创建页面时使用的名称在该位置已经存在，则系统将通过附加一个编号来自动生成该名称的变体。例如，如果 `beach` 已经存在，则新页面会变为 `beach1`。
 
-1. 如果返回控制台，则会看到新页面：
+1. 如果返回控制台，则可以看到新页面：
 
    ![生成的新页面](/help/sites-cloud/authoring/assets/organizing-create-page-result.png)
 
@@ -309,7 +309,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
    ![“移动”按钮](/help/sites-cloud/authoring/assets/move.png)
 
-   此操作将打开移动页面向导。
+   这将打开移动页面向导。
 
 1. 在向导的&#x200B;**重命名**&#x200B;阶段，您可以执行以下任一操作：
 

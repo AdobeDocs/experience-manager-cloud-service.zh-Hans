@@ -2,10 +2,10 @@
 title: 通知
 description: 了解如何使用 Adobe Experience Cloud 通知系统接收有关管道部署的信息。
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: d95b432f74a7b52efc9fd1cf0e380c3f5237503c
-workflow-type: ht
-source-wordcount: '589'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 85%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 100%
 
 ![通知侧边栏](assets/notificaitons-announcements.png)
 
-单击通知或公告查看其详细信息。链接到管道部署等活动的通知将带您了解该活动的详细信息，例如管道执行窗口。
+单击通知或公告查看其详细信息。 链接到管道部署等活动的通知将带您了解该活动的详细信息，例如管道执行窗口。
 
-单击面板底部的&#x200B;**查看全部**&#x200B;选项，可查看收件箱中的所有公告。
+单击 **查看全部** 面板底部的选项，用于查看收件箱中的所有公告。
 
-单击面板底部的&#x200B;**标记为已读**&#x200B;选项，可将所有未读通知标记为已读并清除铃铛图标标记。
+单击 **将所有提醒标记为已读** 面板底部的选项，可将所有未读通知标记为已读取并清除铃铛图标标记。
 
 ## 通知配置 {#configuration}
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 ![通知订阅](assets/notifications-subscriptions.png)
 
-默认情况下，您将在应用程序中和通过电子邮件接收所有产品的全部通知。单击产品名称旁的 V 形以显示详细的选项并定义您为该产品接收的通知类型。或者，选中或取消选中产品级别的选项以选择/取消选择该产品的所有选项。
+默认情况下，您将在应用程序中和通过电子邮件接收所有产品的全部通知。单击产品名称旁边的V形符号显示详细的选项，并定义您收到的该产品的通知类型。 或者，选中或取消选中产品级别的选项以选择/取消选择该产品的所有选项。
 
 ![通知订阅自定义](assets/notifications-subscriptions-customize.png)
 

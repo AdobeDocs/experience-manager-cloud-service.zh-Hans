@@ -2,10 +2,10 @@
 title: 提升启动项
 description: 您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
-workflow-type: ht
-source-wordcount: '814'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '812'
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 100%
 
 ## 编辑时提升启动页面 {#promoting-launch-pages-when-editing}
 
-在编辑启动页面时，也可以从&#x200B;**页面信息**&#x200B;中执行&#x200B;**提升启动项**&#x200B;操作。这将打开相应向导来收集所需的信息。
+在编辑启动页面时，也可以从&#x200B;**页面信息**&#x200B;中执行&#x200B;**提升启动项**&#x200B;操作。这将打开向导以收集所需的信息。
 
 ![从站点信息提升启动项](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 

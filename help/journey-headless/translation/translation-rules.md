@@ -2,10 +2,10 @@
 title: 为 Headless 内容配置翻译规则
 description: 了解如何定义翻译规则，标识要翻译的内容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: f4e28d89023e8f326e6816ebd8168e1e31e772ce
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 100%
+source-wordcount: '940'
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 100%
 * 了解翻译规则的用途。
 * 能够定义您自己的翻译规则。
 
-在此知识的基础上继续您的 AEM Headless 翻译历程，接下来请查阅文档[翻译内容](translate-content.md)，您将从中了解您的集成和规则如何共同翻译 Headless 内容。
+在此知识的基础上继续您的AEM Headless翻译历程，接下来查看文档 [翻译内容](translate-content.md) 在这里，您可以了解集成和规则如何协作来翻译headless内容。
 
 ## 其他资源 {#additional-resources}
 

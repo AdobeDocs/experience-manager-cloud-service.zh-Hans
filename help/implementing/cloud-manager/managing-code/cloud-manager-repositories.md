@@ -2,10 +2,10 @@
 title: Cloud Manager 存储库
 description: 了解如何在 Cloud Manager 中创建、查看和删除 Git 存储库。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: af8ab1f741c658dcb47bdf0d37e403fcb180631a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 87%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 96%
 
 向导关闭时，您的新存储库会显示在表中。
 
-您可以在表中选择存储库，然后单击省略号按钮，然后选择&#x200B;**复制存储库 URL**、**查看和更新**&#x200B;或&#x200B;**删除**。
+您可以在表中选择存储库，然后单击省略号按钮并选择 **复制存储库URL**， **查看和更新**，或 **删除**.
 
 ![存储库选项](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
@@ -58,9 +58,9 @@ ht-degree: 96%
 
 按照这些步骤删除 Cloud Manager 中的存储库。
 
-1. 从&#x200B;**项目概述**&#x200B;页面中，单击&#x200B;**存储库**&#x200B;选项卡，然后导航到&#x200B;**存储库**&#x200B;页面。
+1. 从 **项目概述** 页面上，单击 **存储库** 选项卡，并导航到 **存储库** 页面。
 
-1. 选择存储库并单击省略号按钮，然后选择&#x200B;**删除**&#x200B;存储库。
+1. 选择存储库并单击省略号按钮，然后选择 **删除** 删除存储库。
 
    ![删除存储库](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 

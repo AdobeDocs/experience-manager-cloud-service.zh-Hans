@@ -2,10 +2,10 @@
 title: 基本处理
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: ht
-source-wordcount: '2975'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2970'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
   痕迹导航位于边栏中间，且始终显示当前选定项的描述，它允许您在特定控制台内导航。在 **Sites** 控制台中，您可以导航浏览网站的各个级别。
 
-  只需单击痕迹导航文本，即会显示一个下拉列表，其中列出了当前选定项的结构层级。单击某个条目可跳转到该位置。
+  只需单击痕迹导航文本即可显示一个下拉列表，其中列出了当前选定项目的层次结构级别。 单击某个条目以跳转到该位置。
 
   ![扩展的痕迹导航示例](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -171,7 +171,7 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
 * **“控制台”工具栏**
 
-  **帮助**&#x200B;图标将根据您所在的位置打开相应的资源：
+  根据您的位置， **帮助** 图标可打开相应的资源：
 
   ![“帮助”图标](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -304,7 +304,7 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
    * 资源名称和 V 形标记在被点按或单击时会突出显示。
    * 单击/点按的资源的子资源将在其右侧的列中显示。
-   * 如果点按或单击的资源名称没有子资源，则会在最后的列中显示其详细信息。
+   * 如果点按或单击没有子级的资源名称，则其详细信息将显示在最后一列。
 
 * 点按或单击缩略图会选择该资源。
 
@@ -475,6 +475,6 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
 ### 过滤器 {#filter}
 
-这将打开一个与[搜索](/help/sites-cloud/authoring/getting-started/search.md)类似的面板，其中已设置相应的位置过滤器，允许您进一步筛选希望查看的内容。
+这将打开一个面板，类似于 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 设置相应的位置筛选器后，允许您进一步筛选希望查看的内容。
 
 ![过滤器示例](/help/sites-cloud/authoring/assets/filter.png)

@@ -2,10 +2,10 @@
 title: 数据保护和数据隐私条例 - Adobe Experience Manager as a Cloud Service Sites 准备工作
 description: 了解 Adobe Experience Manager as a Cloud Service Sites 对各种数据保护和数据隐私条例的支持，包括欧盟通用数据保护条例 (GDPR)、加州消费者隐私法案以及如何在实施新的 AEM as a Cloud Service 项目时实现合规性。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 100%
+source-wordcount: '1024'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Experience Manager 受 Cookie 选择退出服务的约束，该服务用�
 
    * 要选择退出对有关您访问本网站的数据进行聚合和分析，必须在浏览器上安装 Cookie。此 Cookie 表明您已选择退出。
 
-     如果您删除选择退出 Cookie，或者如果您更换计算机或 Web 浏览器，则需要再次选择退出。
+     如果您删除选择退出Cookie，或者如果您更改计算机或Web浏览器，则需要再次选择退出。
 
      选择退出 - 从访客会话聚合和分析中将我排除（安装 `amcglobal.sc.omtrdc.net` 选择退出 Cookie）- 单击此处。
 

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 团队和产品配置文件
 description: 了解 AEM as a Cloud Service 团队和产品配置文件可怎样准许和限制访问您已许可的 Adobe 解决方案。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
-workflow-type: ht
-source-wordcount: '853'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '849'
+ht-degree: 96%
 
 ---
 
@@ -24,9 +24,9 @@ AEM as a Cloud Service 是一种全云本地服务，将 AEM 作为服务提供�
 
 您的 AEM as a Cloud Service 团队成员在载入期间通过 Admin Console 添加并分配到以下一个或多个产品配置文件。
 
-* **AEM 管理员**：AEM 管理员通常分配给开发人员，尤其是需要访问开发环境的开发人员。例如，开发环境。AEM 管理员的产品配置文件用于授予关联 AEM 实例中的管理员权限。
+* **AEM管理员**：AEM管理员通常分配给开发人员，尤其是需要访问开发环境的开发人员。例如，开发环境。 AEM 管理员的产品配置文件用于授予关联 AEM 实例中的管理员权限。
 
-* **AEM 用户**：AEM 用户是您组织中通常使用 AEM as a Cloud Service 来创建内容的用户。 这些用户需要访问 AEM 才能执行任务。 AEM 用户产品配置文件通常分配给创建和审查内容的 AEM 内容作者。 此内容可以是多种类型，例如页面、资源、出版物等。 下面显示的 AEM 用户产品配置文件已分配给这些成员。
+* **AEM 用户**：AEM 用户是您组织中通常使用 AEM as a Cloud Service 来创建内容的用户。 这些用户需要访问AEM才能执行任务。 AEM 用户产品配置文件通常分配给创建和审查内容的 AEM 内容作者。 此内容可以是多种类型，例如页面、资源、出版物等。 下面显示的 AEM 用户产品配置文件已分配给这些成员。
 
 ![产品配置文件](/help/onboarding/assets/admin-console-profiles.png)
 

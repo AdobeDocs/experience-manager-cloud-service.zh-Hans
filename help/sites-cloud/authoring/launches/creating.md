@@ -2,10 +2,10 @@
 title: 创建启动项
 description: 您可以创建启动项，以允许更新现有网页的新版本，以便将来激活。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 100%
+source-wordcount: '1042'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 >
 >* `/libs/launches/templates/outofscope`
 >
->无法编辑这些页面。您将看到以下消息：
+>无法编辑这些页面。您会看到以下消息：
 >
 >* **该页面不是启动项的一部分。请转到生产页面**
 

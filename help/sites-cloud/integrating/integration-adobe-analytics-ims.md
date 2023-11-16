@@ -2,10 +2,10 @@
 title: 与 Adobe Analytics 集成时使用的 IMS 配置
 description: 了解与 Adobe Analytics 集成时使用的 IMS 配置
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: d59559d38eef182723a8791c6614d03930f64a85
-workflow-type: ht
-source-wordcount: '914'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 97%
 
 ---
 
@@ -145,7 +145,7 @@ ht-degree: 100%
 * APIS
    * 例如，Adobe Analytics
 
-要在基于 IMS 的 AEM 中完成 Adobe Analytics 的集成，您需要其中的一些项。
+其中某些组件必须在基于IMS的AEM中完成Adobe Analytics的集成。
 
 ## 在 AEM 中完成 IMS 配置 {#completing-the-ims-configuration-in-aem}
 
@@ -201,7 +201,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Analytics** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog opens.
 
 1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
@@ -209,7 +209,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog opens.
 
 1. Enter the details in the **Analytics Settings** tab:
 

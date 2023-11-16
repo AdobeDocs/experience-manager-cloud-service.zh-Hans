@@ -2,10 +2,10 @@
 title: 参与工作流
 description: 工作流通常包括需要人员对页面或资源执行活动的步骤。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1536'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1527'
+ht-degree: 94%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 100%
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（点按/单击缩略图）。
 1. 从工具栏中选择&#x200B;**完成**。
-1. 此时将打开&#x200B;**完成工作项**&#x200B;对话框。从下拉选择器中选择&#x200B;**下一步**，并根据需要添加&#x200B;**评论**。
+1. 此 **完成工作项** 对话框打开。 从下拉选择器中选择&#x200B;**下一步**，并根据需要添加&#x200B;**评论**。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
 
 #### 完成参与者步骤 - 页面编辑器 {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ ht-degree: 100%
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
 1. 从顶部的状态栏中选择&#x200B;**完成**。
-1. 此时将打开&#x200B;**完成工作项**&#x200B;对话框。从下拉选择器中选择&#x200B;**下一步**，并根据需要添加&#x200B;**评论**。
+1. 此 **完成工作项** 对话框打开。 从下拉选择器中选择&#x200B;**下一步**，并根据需要添加&#x200B;**评论**。
 1. 单击&#x200B;**确定**&#x200B;以完成该步骤（或者单击&#x200B;**取消**&#x200B;以中止该操作）。
 
 #### 完成参与者步骤 - 时间线 {#completing-a-participant-step-timeline}
@@ -134,7 +134,7 @@ ht-degree: 100%
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（点按/单击缩略图）。
 1. 从工具栏中选择&#x200B;**委派**。
-1. 此时将打开一个对话框。从下拉选择器中指定 **用户**（也可以是组），并根据需要添加&#x200B;**评论**。
+1. 此时将打开对话框。 从下拉选择器中指定 **用户**（也可以是组），并根据需要添加&#x200B;**评论**。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
 
 #### 委派参与者步骤 - 页面编辑器 {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ ht-degree: 100%
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
 1. 从顶部的状态栏中选择&#x200B;**委派**。
-1. 此时将打开一个对话框。从下拉选择器中指定 **用户**（也可以是组），并根据需要添加&#x200B;**评论**。
+1. 此时将打开对话框。 从下拉选择器中指定 **用户**（也可以是组），并根据需要添加&#x200B;**评论**。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
 
 #### 委派参与者步骤 - 时间线 {#delegating-a-participant-step-timeline}

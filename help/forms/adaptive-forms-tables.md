@@ -4,9 +4,9 @@ description: 使用表组件向自适应表单添加表。 在帮助进行响应
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2494'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
-双击行以配置行的属性，如名称、绑定引用、重复设置、CSS类。
+双击行以配置行的属性，如“名称”、“绑定引用”、“重复设置”、“CSS类”。
 ![add-delete-move-row-column](assets/row-properties-image.png)
 
 
@@ -155,7 +155,7 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 1. 在重复设置选项卡中，指定最小和最大计数以限制表中的行数。
 1. 单击&#x200B;**完成**。
 
-在运行时或预览时，您将看到 **+** 和 ![删除按钮](/help/forms/assets/Smock_Delete.svg) 按钮以添加或删除行。
+在运行时或预览时，您会看到 **+** 和 ![删除按钮](/help/forms/assets/Smock_Delete.svg) 按钮以添加或删除行。
 
 ![add-delete-rows-dynamic](assets/add-delete-layout.png)
 

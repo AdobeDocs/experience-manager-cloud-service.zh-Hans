@@ -2,10 +2,10 @@
 title: Cloud Manager 简介
 description: 了解 Cloud Manager 如何通过其程序、环境和管道支持您的 AEM 项目。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 928a3f0d8ee98e211aa03ad3d0fd83b780e98bbc
-workflow-type: ht
-source-wordcount: '861'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '860'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 1. 选择 **Experience Manager**。
 
-1. 在 **Cloud Manager** 信息卡上单击 **启动**
+1. 在 **Cloud Manager** 卡片，单击 **Launch**
 
 ## Cloud Manager 中基于角色的权限 {#role-based-permissions}
 

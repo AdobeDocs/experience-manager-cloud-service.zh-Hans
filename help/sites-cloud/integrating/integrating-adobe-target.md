@@ -4,10 +4,10 @@ description: 了解如何使用 Touch UI 和 Adob​​e Launch 将 Adob​​e 
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 957758a8d3c16328e7638356e7ee6df3e561386d
-workflow-type: ht
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

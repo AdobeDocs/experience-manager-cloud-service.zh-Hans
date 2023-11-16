@@ -4,9 +4,9 @@ description: 配置 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: bb80414989aa5ceb624550d0ea41283c7d5da4c6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1771'
 ht-degree: 1%
 
 ---

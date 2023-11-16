@@ -2,10 +2,10 @@
 title: 启动项
 description: 使用启动项，您可以有效地开发内容的将来版本。它们允许您进行更改以准备将来发布，同时保留当前页面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '902'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 100%
 
    ![ Sites 控制台中的启动项引用](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. 点按/单击相应的启动项，此时会显示可执行的操作列表：
+1. 点按/单击相应的启动项，此时将显示可执行的操作列表：
 
    ![要对 Sites 控制台中的启动项执行的操作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

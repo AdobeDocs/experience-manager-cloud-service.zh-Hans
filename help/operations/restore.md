@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的内容恢复
 description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud Service 内容。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: bf8493909fa995ec30d67646aec5b712318dbf75
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 100%
+source-wordcount: '1162'
+ht-degree: 94%
 
 ---
 
@@ -46,13 +46,13 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 >[!NOTE]
 >
->必须登录具有&#x200B;**业务所有者**&#x200B;或&#x200B;**部署管理者**&#x200B;角色的用户才能启动还原操作。
+>用户具有 **业务负责人** 或 **部署管理员** 必须登录角色才能启动还原操作。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要启动还原的程序。
 
-1. 在&#x200B;**程序概述**&#x200B;页面的&#x200B;**环境**&#x200B;卡中，单击要启动恢复的环境旁边的省略号按钮，然后选择&#x200B;**还原内容**。
+1. 从 **项目概述** 页面，在 **环境** 信息卡，单击要启动还原的环境旁边的省略号按钮，然后选择 **恢复内容**.
 
    ![还原选项](assets/backup-option.png)
 

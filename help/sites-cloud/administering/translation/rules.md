@@ -4,10 +4,10 @@ description: 了解翻译规则如何标识需要翻译的内容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 99%
 
 ---
 
@@ -171,7 +171,7 @@ ht-degree: 100%
 
    ![选择上下文](../assets/select-context.png)
 
-1. 之后，您需要选择上下文，然后单击&#x200B;**编辑**。该操作将打开翻译规则编辑器。
+1. 之后，您需要选择上下文，然后单击&#x200B;**编辑**。这将打开翻译规则编辑器。
 
    ![翻译规则编辑器](../assets/translation-rules-editor.png)
 

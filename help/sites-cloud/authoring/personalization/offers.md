@@ -2,10 +2,10 @@
 title: 创建和管理优惠（优惠控制台）
 description: 使用“优惠”控制台，可创建您可以在活动体验中使用的优惠
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 100%
 
 1. 单击“**完成**”确认。
 
-   如果您现在导航到&#x200B;**体验片段优惠**&#x200B;控制台，您将看到新的体验片段及其关联的变体。
+   如果您现在导航到 **体验片段选件** 在控制台中，您可以看到新的体验片段及其关联的变体。
 
 ### 使用优惠模板定位 {#targeting-offers-template}
 

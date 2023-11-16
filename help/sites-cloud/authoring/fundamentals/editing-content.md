@@ -2,10 +2,10 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: ht
-source-wordcount: '2983'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2978'
+ht-degree: 97%
 
 ---
 
@@ -151,9 +151,9 @@ ht-degree: 100%
 
      ![插入组件](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * 如果您使用的是桌面设备，则可以双击&#x200B;**将组件拖动到此处**&#x200B;框。
+   * 如果您使用的是桌面设备，则可以双击 **将组件拖动到此处** 盒子。
 
-   * **插入新组件**&#x200B;对话框将打开以允许您选择需要的组件：
+   * 此 **插入新组件** 对话框打开，允许您选择所需的组件：
 
      ![“插入新组件”对话框](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -185,7 +185,7 @@ ht-degree: 100%
 
 ## 组件工具栏 {#component-toolbar}
 
-选择组件后将打开工具栏。通过工具栏可访问能够对组件执行的各种不同操作。
+选择组件会打开工具栏。 这提供了对可对组件执行的各种操作的访问权限。
 
 用户实际可用的操作会根据相应的情况来显示，此处并未介绍所有这些操作。
 
@@ -361,7 +361,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->“布局”操作仅限用于选定的组件。例如，如果您正在编辑一个组件的布局，然后又单击另一个组件，则将为新选择的组件显示标准编辑工具栏（而不是布局工具栏），而大小调整手柄以及模拟器工具栏将会消失。
+>“布局”操作仅限用于选定的组件。例如，如果您正在编辑一个组件的布局，然后单击另一个组件，则将为新选择的组件显示标准编辑工具栏（而不是布局工具栏），并且大小调整手柄和模拟器工具栏将会消失。
 >
 >如果您需要编辑影响到多个组件的总体页面布局，请切换到[布局模式](/help/sites-cloud/authoring/features/responsive-layout.md)。
 

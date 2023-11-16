@@ -2,10 +2,10 @@
 title: 创建演示站点
 description: 基于预配置的模板库在 AEM 中创建演示站点。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 92%
 
 ---
 
@@ -35,11 +35,11 @@ ht-degree: 100%
 
 在管道部署参考演示加载项后，您可以访问 AEM 创作环境以基于加载项内容创建演示站点。
 
-1. 在 Cloud Manager 的项目概述页面中，点按或单击指向 AEM 创作环境的链接。
+1. 在Cloud Manager的项目概述页面中，点按或单击AEM创作环境的链接。
 
    ![访问创作环境](assets/access-author.png)
 
-1. 从 AEM 主菜单中，点按或单击&#x200B;**Sites**。
+1. 从AEM主菜单中，点按或单击 **站点**.
 
    ![访问站点](assets/access-sites.png)
 
@@ -104,7 +104,7 @@ ht-degree: 100%
 您现在可以使用加载项内容测试 AEM 的功能。为您提供了两个选项以继续历程：
 
 * 如果要完全演示和测试 AEM Screens 内容，请确保已部署基于 **We.Cafe 站点模板**&#x200B;的站点（如前所述），并继续[为演示站点启用 AEM Screens](screens.md)。
-* 如果仅需演示 Sites 内容，请继续[管理您的演示站点](manage.md)，了解可用于帮助您管理演示站点的工具以及如何删除它们。
+* 如果仅需演示Sites内容，请继续 [管理您的演示站点，](manage.md) 在这里，您可以了解可用于帮助您管理演示站点的工具以及如何删除它们。
 
 ## 其他资源 {#additional-resources}
 

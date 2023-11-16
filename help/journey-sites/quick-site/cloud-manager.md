@@ -2,10 +2,10 @@
 title: 了解 Cloud Manager 和快速站点创建工作流
 description: 了解 Cloud Manager 以及它如何将新的快速站点创建流程联系起来。
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1128'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1127'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,7 @@ Cloud Manager 是 AEM as a Cloud Service 的必要组件，并且充当平台的
 * 了解 AEM Sites 和 Cloud Manager 如何协作来推动前端开发
 * 了解如何在不具有 AEM 知识的情况下将前端自定义步骤与 AEM 完全分离开来。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[从模板创建站点](create-site.md)，了解如何使用模板快速创建新的 AEM 站点。
+在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档 [从模板创建站点，](create-site.md) 在这里，您可以了解如何使用模板快速创建新的AEM站点。
 
 ## 其他资源 {#additional-resources}
 

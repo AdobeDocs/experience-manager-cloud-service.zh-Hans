@@ -2,9 +2,9 @@
 title: 验证内容转移
 description: 使用内容传输工具验证内容传输
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c8739388ac21dd40d6757815af6f2732991d216b
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -138,11 +138,11 @@ Migration validation took 0 minutes
 
 成功完成提取和引入后，即可使用主体迁移的摘要和报告。 此信息可用于验证哪些用户和组已成功迁移，也许还可用于确定为什么有些用户和组没有迁移。
 
-要查看此信息，请转到Cloud Acceleration Manager。 单击项目卡，然后单击内容传输卡。 导航到 **引入作业** 并找到要验证的引入。 单击三个圆点(**...**)进行摄取，然后单击 **查看主体摘要** 下拉菜单中。
+要查看此信息，请转到Cloud Acceleration Manager。 单击项目信息卡，然后单击内容传输信息卡。 导航到 **引入作业** 并找到要验证的引入。 单击三个圆点(**...**)进行摄取，然后单击 **查看主体摘要** 下拉菜单中。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-您将看到一个包含摘要信息的对话框。 使用帮助图标阅读更完整的说明。 单击 **下载报表** 按钮以下载完整的逗号分隔(CSV)报表。
+您会看到一个包含摘要信息的对话框。 使用帮助图标阅读更完整的说明。 单击 **下载报表** 按钮以下载完整的逗号分隔(CSV)报表。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 

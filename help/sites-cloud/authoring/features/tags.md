@@ -2,10 +2,10 @@
 title: 使用标记
 description: 标记是用于对网站中的内容进行分类的简单快捷方法
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: a7774ff75fb6bac55d5e931b13597d90bf8d721b
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 96%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 * 激活单个标记。
 
-  与页面一样，新创建的标记需要先激活，然后才能在发布环境中使用。
+  与页面一样，新创建的标记必须先激活，然后才能在发布环境中使用。
 
 >[!NOTE]
 >

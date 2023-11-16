@@ -2,10 +2,10 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: ccd4206f029ac77b90f731891ac300c5d3849ef8
-workflow-type: ht
-source-wordcount: '2166'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '2164'
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
   将在窗口左侧打开组件浏览器。
 
-  要向页面添加组件，请单击所需的组件，然后将其拖动到所需的位置。
+  要将组件添加到页面，请单击所需的组件，然后将其拖动到所需的位置。
 
   ![桌面设备上的组件浏览器](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
@@ -149,7 +149,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
   将在窗口左侧打开资源浏览器。
 
-  要向页面添加资源，请单击所需的资源，然后将其拖动到所需的组件或位置。
+  要将资源添加到页面，请单击所需的资源，然后将其拖动到所需的组件或位置。
 
   ![桌面设备上的资源浏览器](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 

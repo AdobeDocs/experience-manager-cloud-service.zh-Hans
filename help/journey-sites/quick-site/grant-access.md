@@ -2,10 +2,10 @@
 title: 向前端开发人员授予访问权限
 description: 将前端开发人员载入 Cloud Manager 以便他们能够访问 AEM 站点 Git 存储库和管道。
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 100%
+source-wordcount: '784'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
    ![产品配置文件](assets/product-profiles.png)
 
-1. 要将前端开发人员分配给正确的配置文件，请点按或单击&#x200B;**用户**&#x200B;选项卡，然后点按或单击&#x200B;**添加用户**&#x200B;按钮。
+1. 要将前端开发人员分配给正确的配置文件，请点按或单击 **用户** 选项卡，然后 **添加用户** 按钮。
 
    ![添加用户](assets/add-user.png)
 

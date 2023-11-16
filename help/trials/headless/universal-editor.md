@@ -4,10 +4,10 @@ description: 探索如何使用 Universal Editor 在任何实施中就地编辑�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 2c7ad41ec44ed2627bfcfe206c1b7ba660cef9c0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 88%
+source-wordcount: '969'
+ht-degree: 78%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->要在此试用版中使用 Universal Editor，您必须使用 Chrome 作为浏览器，并且不能处于隐身模式。这是试用版体验的限制，而不是 Universal Editor 的限制。
+>要在此试用版中使用通用编辑器，您必须将Chrome用作浏览器，而不是无痕模式。 这是试用版体验的限制，而不是 Universal Editor 的限制。
 
 利用 Universal Editor，您可以敏捷地在上下文中编辑和就地编辑文本，从而实现简单直观的内容创作。
 
@@ -79,7 +79,7 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
    ![模拟器菜单项](assets/do-not-localize/ue-emulator-1.png)
 
-1. 由于读者使用的设备可能具有不同的纵横比，因此，编辑器提供了模拟模式以便查看页面呈现给用户的方式。例如，选择纵向模式下的移动设备选项。
+1. Reader可能位于具有不同宽高比的不同设备上，因此编辑器会提供模拟模式以查看将向用户呈现页面的方式。 例如，选择纵向模式下的移动设备选项。
 
    ![模拟器菜单项](assets/do-not-localize/ue-emulator-2.png)
 
@@ -87,7 +87,7 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
 1. 使模拟器返回桌面模式。
 
-您还可以指定模拟器的精确尺寸并旋转模拟的设备，以便在任何潜在的目标设备上查看您的内容。
+您还可以为模拟器指定确切的尺寸，并旋转模拟的设备以查看任何潜在目标设备上的内容。
 
 ## 预览和发布 {#preview}
 
@@ -95,7 +95,7 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
 1. 在该编辑器左侧的模式边栏中，点按或单击&#x200B;**预览**。
 
-1. 现在，点按或单击主要文章的&#x200B;**了解更多信息**&#x200B;链接。
+1. 现在，点按或单击 **了解更多** 主文章的链接。
 
    ![预览模式](assets/do-not-localize/ue-preview-publish-1.png)
 
@@ -103,7 +103,7 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
    ![使用“返回”链接返回主页](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. 现在，点按或单击编辑器右上角的&#x200B;**发布**&#x200B;按钮以发布内容。
+1. 现在，点按或单击 **Publish** 按钮来发布您的内容。
 
    ![预览和发布菜单项](assets/do-not-localize/ue-preview-publish-4.png)
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1399'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1398'
+ht-degree: 96%
 
 ---
 
@@ -107,7 +107,7 @@ Sites 控制台可让您浏览内容并提供其结构的概述。要查看单�
 
    ![编辑页面](assets/sites-editor-title.png)
 
-您可以随时通过在浏览器中切换回该选项卡来返回 Sites 控制台。利用站点编辑器，您可以快速查看页面内容，因为内容作者和您的受众将看到该页面。
+您可以随时通过在浏览器中切换回该选项卡来返回 Sites 控制台。利用站点编辑器，您可以快速查看页面内容，因为内容作者和您的受众可以看见该页面。
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ AEM 的内容由其结构驱动。AEM 对内容结构的要求很少，但在项
 * 了解 AEM 如何存储内容。
 * 熟悉 AEM 的翻译工具。
 
-在此知识的基础上继续您的 AEM Sites 翻译历程，接下来查看文档[配置翻译连接器](configure-connector.md)，了解如何将 AEM 连接到翻译服务。|
+在此知识的基础上继续您的AEM Sites翻译历程，接下来查看文档 [配置翻译连接器](configure-connector.md) 了解如何将AEM连接到翻译服务。|
 
 ## 其他资源 {#additional-resources}
 

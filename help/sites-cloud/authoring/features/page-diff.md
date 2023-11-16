@@ -2,10 +2,10 @@
 title: 页面差异
 description: 通过页面差异功能，可以方便地将两个页面并排比较，并突出显示它们的差异。
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '610'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 95%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 ### 全屏和退出 {#fullscreen-and-exiting}
 
-若要集中查看特定内容，您可以单击并排差异比较任何一侧的全屏图标，以将其放大到整个浏览器窗口。
+要集中查看特定内容，您可以单击并排差异比较任何一侧的全屏图标，以将其放大到整个浏览器窗口。
 
 ![全屏按钮](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

@@ -2,10 +2,10 @@
 title: 对 AEM as a Headless CMS 进行内容建模 - 简介
 description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能对项目进行内容建模。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 03cf688168106f71f2df2511782be7c1f3cc0dae
-workflow-type: ht
-source-wordcount: '749'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 96%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 这更像是开发详细信息 - 但您可能会它感兴趣，仅用于完成故事。
 
-在您创建内容片段模型，并且您的作者已经使用这些模型生成内容后，Headless 应用程序将需要访问此内容。
+在创建内容片段模型，并且作者使用它们生成内容后，Headless应用程序需要访问此内容。
 
 借助 Adobe Experience Manager (AEM) as a Cloud Service，可以使用 AEM GraphQL API 选择性地访问您的内容片段以仅返回所需内容。利用 API，开发人员可以制定用于选择特定内容的查询。此选择过程基于&#x200B;*您的*&#x200B;内容片段模型。
 

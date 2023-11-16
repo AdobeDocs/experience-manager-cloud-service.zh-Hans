@@ -2,10 +2,10 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 53d4e22805774c0b994ee2bba429c19506639014
-workflow-type: ht
-source-wordcount: '1568'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1561'
+ht-degree: 91%
 
 ---
 
@@ -93,11 +93,11 @@ ht-degree: 100%
 
 1. 列视图：
 
-   * 点按/单击所需资源的缩略图 - 缩略图上会覆盖一个勾号，表示已选择该页面。
+   * 点按/单击所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该页面。
 
 1. 列表视图：
 
-   * 点按/单击所需资源的缩略图 - 缩略图上会覆盖一个勾号，表示已选择该页面。
+   * 点按/单击所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该页面。
 
 1. 卡片视图：
 
@@ -168,7 +168,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >您可以将组件&#x200B;**粘贴**&#x200B;到同一页面或其他页面。如果在剪切/复制操作之前粘贴到已打开的其他页面，则表明该页面需要刷新。
+   >您可以将组件&#x200B;**粘贴**&#x200B;到同一页面或其他页面。如果在剪切/复制操作之前粘贴到已打开的其他页面，则该页面需要刷新。
 
    * [删除](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
@@ -258,7 +258,7 @@ ht-degree: 100%
 
    * [移动](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page)：
 
-      * 将打开相应的向导来收集移动页面时所需的信息。请按照屏幕上的说明操作。
+      * 此时将打开向导，收集移动页面所需的信息。 按照屏幕上的说明操作。
 
    * [删除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)：
 
@@ -292,7 +292,7 @@ ht-degree: 100%
 
    ![引用视图](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 点按/单击所需的引用类型，以显示更多详细信息并（视需要）执行进一步操作。
+1. 点按/单击所需的引用类型以显示更多详细信息，并（在适当时）采取进一步操作。
 
 ### 创建页面版本 {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ ht-degree: 100%
 
    ![时间线视图选项](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. 点按/单击“时间线”列右下方的省略号以显示其他按钮，包括&#x200B;**另存为版本**。
+1. 点按/单击“时间轴”列右下方的省略号以显示其他按钮，包括 **另存为版本**.
 
    ![时间线视图](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ ht-degree: 100%
 
    如果页面的某个版本已经保存，则会在“时间轴”中列出该版本。
 
-1. 点按/单击要恢复的版本 - 这将显示其他操作按钮：
+1. 点按/单击要还原的版本 — 这将显示其他操作按钮：
 
    * **恢复到此版本**
 

@@ -1,14 +1,14 @@
 ---
-title: 如何将AEM自适应表单连接到Microsoft® SharePoint列表？
-description: 将自适应表单连接到Microsoft® SharePoint列表。 了解如何配置Microsoft® SharePoint列表，并使用配置创建表单数据模型。 此外，您将了解如何将FDM与自适应表单相集成。
+title: 如何将AEM自适应表单连接到Microsoft&reg； SharePoint List？
+description: 将自适应表单连接到Microsoft&reg； SharePoint列表。 了解如何配置Microsoft&reg； SharePoint列表以及使用配置创建表单数据模型。 此外，您还可了解如何将FDM与自适应表单相集成。
 role: User, Developer
 keywords: 将AEM自适应表单连接到Microsoft SharePoint列表，将自适应表单连接到Microsoft SharePoint列表，将AEM自适应表单集成到Microsoft SharePoint列表，将自适应表单集成到Microsoft SharePoint列表，将自适应表单中的数据提交到SharePoint列表，将AEM工作流提交到SharePoint列表。
 hide: true
 hidefromToC: true
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 6%
+source-wordcount: '539'
+ht-degree: 7%
 
 ---
 
@@ -30,15 +30,15 @@ ht-degree: 6%
 
 将自适应表单连接到Microsoft® SharePoint List之前，请执行以下步骤：
 
-1. [配置Microsoft® SharePoint列表](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [使用Microsoft® SharePoint列表配置创建表单数据模型](/help/forms/create-form-data-models.md)
+1. [配置Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
+1. [使用Microsoft创建表单数据模型](/help/forms/create-form-data-models.md)
 1. [配置表单数据模型以检索和发送数据](/help/forms/work-with-form-data-model.md#configure-services)
 1. [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 
 现在，您可以：
 
-* [将Microsoft® SharePoint列表连接到自适应表单](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
-* [将Microsoft® SharePoint列表连接到AEM工作流](#connect-sharepoint-list-workflow)
+* [连接Microsoft](#connect-an-adaptive-form-to-microsoft-sharepoint-list-connect-af-sharepoint-list)
+* [连接Microsoft](#connect-sharepoint-list-workflow)
 
 ## 将自适应表单连接到Microsoft® SharePoint列表 {#connect-af-sharepoint-list}
 
@@ -73,7 +73,7 @@ ht-degree: 6%
 
 ## 最佳实践 {#best-practices}
 
-<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft® SharePoint List rather than Microsoft® SharePoint Document Library. -->
+<!-- * For storing data in a tabular format or implementing data permissions, it is advisable to use Microsoft&reg; SharePoint List rather than Microsoft&reg; SharePoint Document Library. -->
 * 在Microsoft® SharePoint List中，不支持以下列类型：
    * 图像列
    * 元数据列

@@ -2,10 +2,10 @@
 title: 编辑启动项
 description: 在为您的一个页面（或一组页面）创建启动项后，您可以编辑页面启动副本中的内容。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 1. [从“引用”（ Sites 控制台）中访问启动项](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)，即可显示可用操作。
 1. 选择&#x200B;**转到页面**，即可打开要编辑的页面。
 
-在编辑页面时，您将看到顶部工具栏中的指示以及&#x200B;**离开**&#x200B;和&#x200B;**导航**&#x200B;选项：
+在编辑页面时，您可以在顶部工具栏中看到指示以及 **离开** 和 **导航** 选项：
 
 ![从页面编辑器中离开和导航启动项](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

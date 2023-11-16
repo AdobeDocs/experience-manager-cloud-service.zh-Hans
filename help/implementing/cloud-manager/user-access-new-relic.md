@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 6ba6dddd8f949e55a0575bd373c0b87dc2d7f2b5
-workflow-type: ht
-source-wordcount: '1732'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击要管理 New Relic One 用户的程序。
+1. 单击要管理New Relic One用户的程序。
 
 1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**管理用户**。
 
@@ -94,7 +94,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击要访问 New Relic One 的程序。
+1. 单击要访问New Relic One的程序。
 
 1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**打开 New Relic**。
 

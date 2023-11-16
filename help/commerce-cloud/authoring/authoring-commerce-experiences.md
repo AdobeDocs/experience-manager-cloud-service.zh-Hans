@@ -2,9 +2,9 @@
 title: 创作Commerce体验
 description: 了解如何通过在不离开上下文的情况下访问产品数据和内容来高效地创作和构建商业相关体验。
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-CIF加载项通过特定于商务的功能扩展了AEM创作。 这允许作者在不离开上下文的情况下访问产品数据和内容，从而高效地构建和管理商业相关的体验。
+CIF加载项通过特定于commerce的功能扩展了AEM创作。 这允许作者在不离开上下文的情况下访问产品数据和内容，从而高效地构建和管理商业相关的体验。
 
 ## 选取器 {#pickers}
 
@@ -47,7 +47,7 @@ CIF加载项通过特定于商务的功能扩展了AEM创作。 这允许作者�
 
 ![未选择的轮播组件](../assets/authoring/carousel_component_without_selection.png)
 
-此组件的“配置”对话框需要1 ： n类别。 CIF使用UID / ID作为类别标识符。 作者可以手动输入UID，也可以单击文件夹图标以打开类别选取器。 选择并关闭选取器后，“组件”对话框将显示所选类别的名称。
+此组件的“配置”对话框需要1 ： n类别。 CIF使用UID/ID作为类别标识符。 作者可以手动输入UID，也可以单击文件夹图标以打开类别选取器。 选择并关闭选取器后，“组件”对话框将显示所选类别的名称。
 
 ![带选择的轮播组件](../assets/authoring/carousel_component_with_selection.png)
 
@@ -65,7 +65,7 @@ CIF加载项通过特定于商务的功能扩展了AEM创作。 这允许作者�
 
 ### 使用RTE在文本字段中添加链接 {#rte}
 
-CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌入常规AEM页面那样嵌入超链接。 CIF向RTE（富文本编辑器）添加了新操作“商务链接”。 此操作的工作方式与常规的“超链接”操作完全相同，但允许作者使用选取器选择产品或类别。
+CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌入常规AEM页面那样嵌入超链接。 CIF在RTE（富文本编辑器）中添加了新操作“Commerce链接”。 此操作的工作方式与常规的“超链接”操作完全相同，但允许作者使用选取器选择产品或类别。
 
 ![RTE](../assets/authoring/RTE.png)
 

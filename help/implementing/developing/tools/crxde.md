@@ -2,9 +2,9 @@
 title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入门的一部分，您可以在浏览器中访问和修改本地开发环境中的存储库。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1684'
 ht-degree: 1%
 
 ---
@@ -201,7 +201,7 @@ CRXDE Lite的用户界面有很多部分，具有很多功能。
 1. 在浏览器中打开CRXDE Lite。
 1. 在 [**浏览器窗格**，](#explorer-pane) 选择要添加新属性的节点。
 1. 在 [**“属性”选项卡**](#properties-tab) 在底部窗格中，输入 **名称**， **类型**，和 **值**.
-1. 单击 **添加**.
+1. 单击&#x200B;**添加**。
 1. 单击 [**全部保存按钮**](#save-all-button) 以保存服务器上的更改。
 
 ## 创建文件 {#creating-a-file}

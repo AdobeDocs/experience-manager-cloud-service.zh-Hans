@@ -2,10 +2,10 @@
 title: 入门准备
 description: 在载入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 96%
 
 ---
 
@@ -88,4 +88,4 @@ Adobe 会由以下人员代表参加：
 * 该合同如何影响载入流程。
 * 如何准备入门培训通话。
 
-现在您已经熟悉了这些准备步骤，您基本上可以自己登录系统了。 但首先，您需要从系统管理员的角度简要概述 AEM as a Cloud Service 的结构，并了解一些重要术语。请继续培训该历程的下一部分：[AEM as a Cloud Service 术语。](terminology.md)
+现在您已经熟悉了这些准备步骤，您基本上可以自己登录系统了。 但首先，您需要从系统管理员的角度简要概述AEMas a Cloud Service的结构，并了解一些重要术语。 请继续培训该历程的下一部分：[AEM as a Cloud Service 术语。](terminology.md)

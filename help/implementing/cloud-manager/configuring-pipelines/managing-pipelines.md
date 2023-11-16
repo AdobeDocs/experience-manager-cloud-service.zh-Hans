@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 01a89f779689733fb82a556291e091026def63e0
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 60%
+source-wordcount: '952'
+ht-degree: 71%
 
 ---
 
@@ -37,41 +37,41 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ## 管道窗口 {#pipelines}
 
-此 **管道** 窗口显示选定项目的所有管道的完整列表。 由于它提供的信息比 [管道信息卡。](#pipeline-card)
+**管道**&#x200B;窗口显示所选项目的所有管道的完整列表。此列表很有用，因为它提供的信息比[管道信息卡](#pipeline-card)中的信息更全面。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
 1. 从 **项目概述** 页面，点按或单击 **管道** 制表符以切换到 **管道** 窗口。
 
-1. 在这里，您可以看到项目的所有管道列表，以及启动和停止管道执行，就像在 **管道信息卡**.
+1. 在这里，您可以看到项目的所有管道的列表，以及启动和停止管道执行，就像在&#x200B;**管道信息卡**&#x200B;中一样。
 
-如果管道正在执行，将鼠标悬停在其上方 **状态** 列将显示有关执行的详细信息。
+如果管道正在执行，则将鼠标悬停在其&#x200B;**状态**&#x200B;列上将显示有关执行的详细信息。
 
 ![管道执行详细信息](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
-点击或单击 **查看详细信息** 将带您前往 [管道执行的详细信息。](#view-details)
+点按或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
 
 ## 活动窗口 {#activity}
 
-此 **活动** 窗口显示所选项目的所有管道执行的完整列表。
+**活动**&#x200B;窗口显示所选项目的所有管道执行的完整列表。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
 1. 从 **项目概述** 页面，点按或单击 **活动** 制表符以切换到 **活动** 窗口。
 
-1. 在这里，您可以看到项目的所有管道执行列表，包括当前和历史执行。
+1. 在这里，您可以看到项目的所有管道执行的列表，包括当前执行和历史执行。
 
-如果管道正在执行，将鼠标悬停在其上方 **状态** 列将显示有关执行的详细信息。
+如果管道正在执行，则将鼠标悬停在其&#x200B;**状态**&#x200B;列上将显示有关执行的详细信息。
 
 ![管道执行详细信息](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-点击或单击 **查看详细信息** 将带您前往 [管道执行的详细信息。](#view-details)
+点按或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
 
 ## 运行管道 {#running-pipelines}
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击要运行的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**运行**。
+1. 导航至 **管道** 中的卡 **项目概述** 页面并单击运行的管道旁边的省略号按钮，然后选择 **运行** 菜单。
 
 1. 管道将开始运行，并在&#x200B;**状态**&#x200B;栏中显示运行状态。
 
@@ -81,9 +81,9 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ## 编辑管道 {#editing-pipelines}
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击要编辑的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**编辑**。
+1. 导航至 **管道** 中的卡 **项目概述** 页面，单击要编辑的管道旁边的省略号按钮，然后选择 **编辑** 菜单。
 
 1. 这将显示&#x200B;**编辑生产管道**&#x200B;或&#x200B;**编辑非生产管道**&#x200B;对话框，您可在其中编辑在创建管道时输入的相同详细信息。
 
@@ -91,7 +91,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
       * [配置生产管道](configuring-production-pipelines.md)
       * [配置非生产管道](configuring-non-production-pipelines.md)
 
-1. 在编辑完管道后，单击&#x200B;**更新**。
+1. 单击 **更新** 在编辑完管道后。
 
 >[!NOTE]
 >
@@ -99,9 +99,9 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ## 删除管道 {#deleting-pipelines}
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击要删除的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**删除**。
+1. 导航至 **管道** 中的卡 **项目概述** 页面并单击运行的管道旁边的省略号按钮，然后选择 **删除** 菜单。
 
 >[!NOTE]
 >
@@ -111,9 +111,9 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 您可以查看管道的详细信息，以查看其上次运行的状态和日志。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击运行的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**查看详细信息**。
+1. 导航至 **管道** 中的卡 **项目概述** 页面并单击运行的管道旁边的省略号按钮，然后选择 **查看详细信息** 菜单。
 
 1. 您将转到运行中的管道的详细信息页面。
 
@@ -121,13 +121,13 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 在此页面中，您可以查看管道各个步骤的状态并检索构建日志以进行诊断。查看文档 [部署代码](/help/implementing/cloud-manager/deploy-code.md) 有关代码部署和测试运行的详细信息。
 
-管道执行中的所有步骤都会显示，其中尚未启动的步骤呈灰显状态。 已完成的步骤显示其持续时间。
+管道执行中的所有步骤都将显示，而尚未开始的步骤将灰显。已完成的步骤将显示其持续时间。
 
-管道步骤完成后，会显示摘要。
+管道步骤完成后，将显示摘要。
 
 ![步骤摘要](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-点按或单击 **查看详细信息** 用于显示 **持续时间** 部分。 这包括基于该项目历史趋势的管道平均持续时间。
+点按或单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。这包括基于该项目的历史趋势的管道的平均持续时间。
 
 ![持续时间](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 

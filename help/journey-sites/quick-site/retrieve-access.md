@@ -2,10 +2,10 @@
 title: 检索 Git 存储库访问信息
 description: 了解前端开发人员如何使用 Cloud Manager 访问 Git 存储库信息。
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 93%
 
 ---
 
@@ -76,7 +76,7 @@ Cloud Manager 管理员会将您作为 Cloud Manager 用户载入。您应该已
 
 ## 访问 Cloud Manager {#access-cloud-manager}
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录 Adobe Experience Cloud，或单击欢迎电子邮件中提供的链接。
+1. 登录Adobe Experience Cloud，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 或单击欢迎电子邮件中提供的链接。
 
 1. Cloud Manager 列出了可用的各种项目。点按或单击 Cloud Manager 管理员提供的您需要访问的项目。如果这是您的第一个 AEMaaCS 前端项目，则您可能只有一个可用项目。
 
@@ -111,7 +111,7 @@ Cloud Manager 管理员会将您作为 Cloud Manager 用户载入。您应该已
 * 从较高层面了解什么是 Cloud Manager。
 * 已检索您的凭据来访问 AEM Git，以便您能提交自定义项。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[自定义站点主题](customize-theme.md)，其中您将了解如何使用实时 AEM 内容构建、自定义和测试站点主题。
+在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档 [自定义站点主题，](customize-theme.md) 在这里，您将了解如何使用实时AEM内容构建、自定义和测试站点主题。
 
 ## 其他资源 {#additional-resources}
 

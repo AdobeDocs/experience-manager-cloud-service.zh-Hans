@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ AEM 是一种灵活而强大的工具，它通过多个连接器和多种配置�
 * 了解 AEM 中翻译集成框架的重要参数。
 * 能够自行建立与翻译服务的连接。
 
-在此知识的基础上继续您的 AEM Sites 翻译历程，接下来查看文档[配置翻译规则](translation-rules.md)，了解如何定义要翻译的内容。
+在此知识的基础上继续您的AEM Sites翻译历程，接下来查看文档 [配置翻译规则，](translation-rules.md) 您可在其中学习如何定义要翻译的内容。
 
 ## 其他资源 {#additional-resources}
 

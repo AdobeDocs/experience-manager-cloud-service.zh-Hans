@@ -2,10 +2,10 @@
 title: 项目创建向导
 description: 了解项目创建向导，可帮助您在创建生产程序后快速设置项目。
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 100%
+source-wordcount: '311'
+ht-degree: 96%
 
 ---
 

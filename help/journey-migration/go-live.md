@@ -2,9 +2,9 @@
 title: 上线
 description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 >title="上线准备"
 >abstract="为确保 AEM as a Cloud Service 顺利上线，您应该规划代码和内容冻结期、测试迭代、内容增补、性能测试、安全测试等。"
 
-在此历程的这一可选部分中，您将了解在代码和内容准备好移至AEMas a Cloud Service后，如何规划和执行迁移。 此外，您将了解执行迁移时的最佳实践和已知限制。
+在此历程的这一可选部分中，您将了解在代码和内容准备好移至AEMas a Cloud Service后，如何规划和执行迁移。 此外，您还可以了解执行迁移时的最佳实践和已知限制。
 
 ## 迄今为止的故事 {#story-so-far}
 
@@ -138,7 +138,7 @@ ht-degree: 4%
 * 配置CDN、SSL和DNS。
    * 如果您使用自己的CDN，请输入支持票证以配置相应的路由。
       * 请参阅部分 [客户CDN指向AEM托管的CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) 详细信息，请参阅CDN文档。
-      * 您需要根据CDN供应商的文档配置SSL和DNS。
+      * 根据CDN供应商的文档配置SSL和DNS。
    * 如果您没有使用其他CDN，请按照以下文档管理SSL和DNS：
       * 管理 SSL 证书
          * [管理 SSL 证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)

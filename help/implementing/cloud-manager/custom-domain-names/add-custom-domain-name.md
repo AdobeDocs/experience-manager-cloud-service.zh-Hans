@@ -2,10 +2,10 @@
 title: 添加自定义域名
 description: 了解如何使用 Cloud Manager 添加自定义域名。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: d3021a4dd78a0ca86352a81965ce92868e94664a
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 89%
+source-wordcount: '632'
+ht-degree: 85%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 89%
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 单击左侧导航面板中的&#x200B;**域设置**。
+1. 单击 **域设置** （在左侧导航面板中）。
 
    ![域设置窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. 单击右上角的&#x200B;**添加域**&#x200B;按钮，打开&#x200B;**添加域名**&#x200B;对话框。
+1. 单击 **添加域** 按钮打开 **添加域名** 对话框。
 
    ![“添加域”对话框](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)。
 
@@ -82,7 +82,7 @@ CDN 部署需要有效的 SSL 证书和成功的 TXT 验证。 这由状态&#x20
 
    1. 输入自定义域名。
    1. 从下拉列表中选择与此名称关联的 SSL 证书。
-   1. 单击&#x200B;**+ 添加**。
+   1. 单击 **+添加**.
 
    ![添加自定义域名](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

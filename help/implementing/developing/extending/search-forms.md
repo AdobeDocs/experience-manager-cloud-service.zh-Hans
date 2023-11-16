@@ -1,19 +1,19 @@
 ---
 title: 配置搜索表单
-description: 为Adobe Experience Manager as a Cloud Service配置Search Forms。
+description: 为Adobe Experience Manager as a Cloud Service配置搜索Forms 。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2035'
 ht-degree: 16%
 
 ---
 
 # 配置搜索表单 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 机制。
+Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](/help/sites-cloud/authoring/getting-started/search.md) 机制。
 
-此外，还有一组预定义选项可帮助您筛选内容。 这些保留预定义的Facet，例如 **修改日期**， **发布状态**，或 **Livecopy状态** 帮助您快速深入了解所需的资源。
+此外，还有一组预定义选项，可帮助您筛选内容。 这些保留预定义的Facet，例如 **修改日期**， **发布状态**，或 **活动副本状态** 帮助您快速深入了解所需的资源。
 
 ![搜索和筛选使用情况](assets/csf-usage.png)
 
@@ -21,15 +21,15 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
 * [搜索和筛选](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* 此 [资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （编辑页面时）
+* 该 [资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （编辑页面时）
 
 >[!NOTE]
 >
->您可以配置基础 [内容搜索与索引](/help/operations/indexing.md) 服务。
+>您可以配置基础 [内容搜索和索引](/help/operations/indexing.md) 服务。
 
-使用 **搜索Forms**，您可以根据特定需求自定义和扩展这些面板。
+使用 **搜索Forms**&#x200B;中，您可以根据特定需求自定义和扩展这些面板。
 
-此 **搜索Forms** 提供开箱即用的选择 [谓词](#predicates-and-their-settings) 进行组合和定义。 此 [用于配置这些表单的对话框](#configuring-your-search-forms) 可通过：
+此 **搜索Forms** 提供开箱即用的选择 [谓词](#predicates-and-their-settings) 进行组合和定义。 此 [用于配置这些表单的对话框](#configuring-your-search-forms) 可以通过以下方式访问：
 
 * **工具**
    * **常规**
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
 ## 默认Forms {#default-forms}
 
-当您首次访问 **搜索Forms** 控制台您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置 — 无法删除。 自定义并保存配置后，锁定将消失。 它将在以下情况下重新显示： [删除自定义配置](#deleting-a-configuration-to-reinstate-the-default)，则恢复默认设置（和挂锁指示器）。
+当您首次访问 **搜索Forms** 控制台您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置 — 无法删除。 自定义并保存配置后，锁定将消失。 当您 [删除自定义配置](#deleting-a-configuration-to-reinstate-the-default)，则恢复默认设置（以及挂锁指示器）。
 
 ![配置搜索表单概述](assets/csf-overview.png)
 
@@ -82,7 +82,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>分析</td>
-   <td>显示Analytics提供的数据时，站点浏览器中的搜索/筛选功能。 Analytics搜索筛选器将加载以匹配映射的自定义分析列。</td>
+   <td>显示Analytics提供的数据时，站点浏览器中的搜索/过滤功能。 Analytics搜索筛选器将加载，以匹配映射的自定义分析列。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -113,7 +113,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>签出方</td>
-   <td>搜索由特定用户签出的资产。</td>
+   <td>搜索由特定用户签出的资源。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -192,7 +192,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>全文</td>
-   <td>全文搜索的搜索谓词。 它使用jcr：contains运算符进行映射。</td>
+   <td>全文搜索的搜索谓词。 用jcr：contains运算符对其进行映射。</td>
    <td>
     <ul>
      <li>占位符</li>
@@ -202,7 +202,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>组</td>
-   <td>组的搜索谓词（仅在分析谓词中使用）。</td>
+   <td>组的搜索谓词（仅用于分析谓词中）。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -211,7 +211,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>隐藏的筛选器</td>
-   <td>对用户不可见的属性和值的筛选器。</td>
+   <td>属性和值的筛选器，用户不可见。</td>
    <td>
     <ul>
      <li>属性名称*</li>
@@ -221,7 +221,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>见解</td>
-   <td>根据选定的分析参数进行搜索。</td>
+   <td>根据选择的分析参数进行搜索。</td>
    <td>这是一个由多个谓词组成的复杂谓词：
     <ul>
      <li>组</li>
@@ -232,7 +232,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>收藏集成员</td>
-   <td>搜索属于收藏集成员的资产</td>
+   <td>搜索属于收藏集成员的资源</td>
    <td>
     <ul>
      <li>描述</li>
@@ -256,7 +256,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>选项</td>
-   <td><p>选项是由用户创建的内容节点。</p> <p>参见 <a href="#addinganoptionspredicate">添加选项谓词</a> 了解更多信息。</p> </td>
+   <td><p>选项是由用户创建的内容节点。</p> <p>请参阅 <a href="#addinganoptionspredicate">添加选项谓词</a> 以了解更多信息。</p> </td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -348,7 +348,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>范围</td>
-   <td>搜索位于指定范围内的资源。 在“搜索”面板中，可以指定范围的最小值和最大值。</td>
+   <td>搜索指定范围内的资源。 在“搜索”面板中，可以指定范围的最小值和最大值。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -391,7 +391,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>状态</td>
-   <td>根据审批和结帐状态搜索。</td>
+   <td>根据审批和签出状态搜索。</td>
    <td>这是一个由多个谓词组成的复杂谓词：
     <ul>
      <li>审批状态</li>
@@ -401,10 +401,10 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>标记</td>
-   <td>根据标记进行搜索。</td>
+   <td>基于标记进行搜索。</td>
    <td>
     <ul>
-     <li>字段层级</li>
+     <li>字段lavel</li>
      <li>占位符</li>
      <li>属性名称*</li>
      <li>显示匹配所有标记选项</li>
@@ -507,13 +507,13 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
 * **属性名称**
 
-  要搜索的属性。 它使用相对路径和通配符 `*/*/*` 指定属性相对于的深度 `jcr:content` 节点（每个星号表示一个节点级别）。
+  要搜索的属性。 它使用相对路径和通配符 `*/*/*` 指定相对于的属性深度 `jcr:content` 节点（每个星号代表一个节点级别）。
 
-  如果只想搜索具有下列条件的资源的第一级子节点： `x` 上的属性 `jcr:content` 节点使用 `*/jcr:content/x`
+  如果只想在资源的第一级子节点上搜索，该资源具有 `x` 上的属性 `jcr:content` 节点使用 `*/jcr:content/x`
 
 * **属性深度**
 
-  在资源中搜索该属性的最大深度。 因此，可以对该资源子项和递归子项执行该属性搜索，直到子项的级别等于指定的深度。
+  在资源中搜索该属性的最大深度。 因此，可以对该属性进行资源搜索并递归子项，直到子项的级别等于指定的深度。
 
 * **属性值**
 
@@ -527,22 +527,22 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
 * **选项路径**
 
-  用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择 **+** 图标用于将选定内容添加到有效选项列表(然后 **-** 图标（如果需要，可删除）。
+  用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择 **+** 图标用于将所选内容添加到有效选项列表中(然后 **-** 图标以删除（如果需要）。
 
   这些选项是由用户创建的内容节点，具有以下结构：
 
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **选项节点路径**
-实际上与 **选项路径**，只有公用谓词字段中包含此字段，其他字段则特定于资产。
+实际上与 **选项路径**，只有公用谓词字段中有此变量，其他变量专用于资产。
 
 * **单选**
-如果选中，这些选项将呈现为仅允许单个选择的复选框。 如果错误地选中了复选框，则可以取消选中该复选框。
+如果选中，这些选项将呈现为仅允许单个选择的复选框。 如果错误地选中此复选框，则可取消选中此复选框。
 
 * **发布和Live Copy属性名称**
 站点特定谓词的发布和Live Copy复选框的标签。
 
-* 中的字段标签上的&amp;ast； **设置** 制表符表示字段为必填字段，如果留空，将显示错误消息。
+* 中的字段标签上的&amp;ast； **设置** 制表符表示这些字段为必填项，如果留空，将显示错误消息。
 
 ## 配置搜索Forms {#configuring-your-search-forms}
 
@@ -552,12 +552,12 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
 1. 选择要自定义的配置。
 1. 使用 **编辑** 图标以打开配置以进行更新。
-1. 如果进行了新的自定义，则您可能需要 [添加新谓词字段并定义设置](#add-edit-a-predicate-field-and-define-field-settings) 根据需要。 如果存在现有的自定义项，则可以选择现有字段和 [更新设置](#add-edit-a-predicate-field-and-define-field-settings).
+1. 如果进行了新的自定义，则您可能需要 [添加新谓词字段并定义设置](#add-edit-a-predicate-field-and-define-field-settings) 根据需要。 如果存在自定义项，您可以选择现有字段并 [更新设置](#add-edit-a-predicate-field-and-define-field-settings).
 1. 选择 **完成** 以保存配置。 下次使用该配置时即可看到您所做的更改。
 
    >[!NOTE]
    >
-   >自定义配置存储（根据需要）在以下位置：
+   >自定义配置存储（根据需要）在下：
    >
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
@@ -575,9 +575,9 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
    * 您正在添加新字段：
 
-     添加谓词后 **设置** 选项卡将打开并显示可定义的属性。
+     添加谓词后， **设置** 选项卡将打开并显示可以定义的属性。
 
-   * 要更新现有谓词：
+   * 要更新现有的谓词：
 
      选择谓词字段（位于右侧），然后打开 **设置** 选项卡。
 
@@ -593,7 +593,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
    ![预览图标](assets/csf-preview-icon.png)
 
-1. 在相应控制台的“搜索”列中显示（完全展开）搜索表单时显示搜索表单。
+1. 显示搜索表单（完全展开）在相应控制台的“搜索”列中的显示方式。
 
    ![预览表单](assets/csf-preview-form.png)
 
@@ -608,7 +608,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
 1. 此时将显示一个对话框，要求确认删除操作。
 
-1. 使用以下方式确认此更改和任何其他更改 **完成**.
+1. 通过确认此更改和任何其他更改 **完成**.
 
 ### 删除配置（恢复默认设置） {#deleting-a-configuration-to-reinstate-the-default}
 
@@ -624,11 +624,11 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
    ![恢复默认值](assets/csf-restore-default.png)
 
-1. 自定义配置将被删除，默认配置将恢复（在控制台中重新出现挂锁符号即表示这一点）。
+1. 自定义配置将被删除，默认配置将恢复（控制台中挂锁符号的重新显示即表示这一点）。
 
 ### 添加选项谓词 {#adding-options-predicates}
 
-选项谓词（选项、选项属性）允许您配置要搜索的项。 它们通常用于直接在页面下搜索某些内容；例如，页面节点上的属性。
+选项谓词（选项、选项属性）允许您配置要搜索的项目。 属性通常用于直接在页面下搜索某些内容；例如，页面节点上的属性。
 
 以下示例（根据用于创建页面的模板进行搜索）说明了所涉及的步骤：
 
@@ -645,11 +645,11 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 
    >[!NOTE]
    >
-   >您 ***必须*** 不更改 `/libs` 路径。
+   >您 ***必须*** 不会更改中的任何内容 `/libs` 路径。
    >
    >这是因为 `/libs` 下次升级实例时将被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
    >
-   >配置和其他更改的推荐方法是：
+   >建议用于配置和其他更改的方法是：
    >
    >1. 重新创建所需的项目，因为它存在于中 `/libs`，下 `/apps`. 在本例中，来自：
    >1. `/libs/cq/gui/content/common/options/predicates`
@@ -658,7 +658,7 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
 1. 打开 **搜索Forms** 控制台并选择要更新的配置。 例如， **站点管理员搜索边栏**. 然后选择 **编辑**.
 
 1. 根据配置，添加 **选项** 或 **Options属性** 到配置。
-1. 更新字段，特别是：
+1. 更新这些字段，特别是：
 
    * **属性名称**
 
@@ -698,11 +698,11 @@ Adobe Experience Manager as a Cloud Service随附强大的 [搜索](/help/sites-
   </tr>
   <tr>
    <td>删除</td>
-   <td>对的读取、写入、删除权限 <code>/apps</code> 节点</td>
+   <td>对的读、写、删除权限 <code>/apps</code> 节点</td>
   </tr>
   <tr>
    <td>预览</td>
-   <td>对的读取、写入、删除权限 <code>/var/dam/content</code> 节点。<br /> 对的读、写权限 <code>/apps</code> 节点。</td>
+   <td>对的读、写、删除权限 <code>/var/dam/content</code> 节点。<br /> 对的读、写权限 <code>/apps</code> 节点。</td>
   </tr>
  </tbody>
 </table>

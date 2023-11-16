@@ -2,10 +2,10 @@
 title: 从模板创建站点
 description: 了解如何使用站点模板快速创建新的 AEM 站点。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 100%
+source-wordcount: '1504'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 100%
 
 1. 在文件浏览器中，找到[之前下载的](#obtaining-template)模板并点按或单击&#x200B;**上传**。
 
-1. 上传模板后，该模板将显示在可用模板列表中。点按或单击模板以将其选定（它还在右栏中显示有关模板的信息），然后点按或单击&#x200B;**下一步**。
+1. 上传模板后，该模板将显示在可用模板列表中。点按或单击模板以将其选定（它还在右栏中显示有关模板的信息），然后点按或单击 **下一个**.
 
    ![选择模板](assets/select-site-template.png)
 

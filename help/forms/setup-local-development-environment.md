@@ -2,9 +2,9 @@
 title: 如何为AEM Forms设置本地开发环境？
 description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a0433718a223a6d3aa7740232caa17650bce5ff6
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2847'
+source-wordcount: '2846'
 ht-degree: 3%
 
 ---

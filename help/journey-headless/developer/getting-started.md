@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: b302aa1140fc14044e85fd61ed2d361b71e6be34
-workflow-type: ht
-source-wordcount: '3098'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '3096'
+ht-degree: 97%
 
 ---
 
@@ -85,7 +85,7 @@ AEM 的 Headless 功能基于几项关键功能。历程的后面部分将详细
 * GraphQL API 允许您创建请求来访问和投放内容片段。
 * Assets REST API 让您创建和修改内容片段（及其他资源）。
 
-您将在 AEM Headless 历程的后面部分中了解这些 API 及其使用者式。或参阅下面的[其他资源](#additional-resources)部分以获取其他文档。
+您将在AEM Headless历程的后续部分中了解这些API以及如何使用它们。 或者，请参阅 [其他资源](#additional-resources) 部分以了解更多文档。
 
 ## Headless 集成级别 {#integration-levels}
 
@@ -273,7 +273,7 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * 了解 AEM 的 Headless 集成级别。
 * 能够根据范围定义您的项目。
 
-您应该继续您的 AEM Headless 历程，接下来查看文档[首次 AEM Headless 使用体验的路径](path-to-first-experience.md)，了解如何设置必要的工具以及如何开始思考如何在 AEM 中对数据建模。
+您应该通过下一次查看文档来继续您的AEM Headless历程 [首次AEM Headless使用体验的路径](path-to-first-experience.md) 在这里，您可以了解如何设置必要的工具，以及如何开始考虑在AEM中对数据进行建模。
 
 ## 其他资源 {#additional-resources}
 

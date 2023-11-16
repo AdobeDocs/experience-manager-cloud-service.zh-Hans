@@ -2,9 +2,9 @@
 title: 内容转移工具快速入门
 description: 了解如何开始使用内容传输工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 9c45a46bc50625301529d5433c78fc9c706f8071
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1427'
 ht-degree: 21%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 21%
    >
    >名称必须遵循与AEM节点相同的约定，因此不能包含以下任何字符： . / ： [ ] | *
 
-1. 您现在应在列表视图中看到迁移列表。 单击三点符号(**...**)以打开下拉菜单并单击 **复制提取密钥**. 在提取阶段您需要此密钥。 复制此提取密钥。
+1. 您现在应在列表视图中看到迁移列表。 选择三点符号(**...**)以打开下拉菜单并选择 **复制提取密钥**. 在提取阶段需要此密钥。 复制此提取密钥。
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ ht-degree: 21%
    * A *green cloud* indicates that you can complete the extraction process.
    * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
+1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 

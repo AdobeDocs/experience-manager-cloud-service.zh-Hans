@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 7945d67fe7d258af7131076d2416cbe121354a62
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 98%
+source-wordcount: '1005'
+ht-degree: 96%
 
 ---
 
@@ -179,7 +179,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 ## 安装其他系统包 {#installing-additional-system-packages}
 
-一些版本需要安装其他系统包才能完全运行。 例如，某个版本可能会调用 Python 或 Ruby 脚本，因此需要安装适当的语言解释程序。 可以通过在 `pom.xml` 中调用 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) 来调用 APT，从而达到此目的。此执行通常应封装在特定于 Cloud Manager 的 Maven 配置文件中。此示例安装 Python。
+一些版本需要安装其他系统包才能完全运行。 例如，内部版本可能会调用Python或Ruby脚本，并且需要安装适当的语言解释程序。 可以通过在 `pom.xml` 中调用 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) 来调用 APT，从而达到此目的。此执行通常应封装在特定于 Cloud Manager 的 Maven 配置文件中。此示例安装 Python。
 
 ```xml
         <profile>

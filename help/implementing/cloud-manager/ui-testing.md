@@ -2,10 +2,10 @@
 title: UI 测试
 description: 自定义 UI 测试是一项可选功能，可用于为自定义应用程序创建和自动运行 UI 测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '2389'
-ht-degree: 100%
+source-wordcount: '2385'
+ht-degree: 99%
 
 ---
 
@@ -183,7 +183,7 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 
 >[!NOTE]
 >
->如果您的项目不包括此行，则需要编辑该文件并选择进行 UI 测试。
+>如果您的项目不包括此行，请编辑该文件以选择进行UI测试。
 >
 >文件可能包含行，建议不要编辑它。 这是因为该行在引入选择启用 UI 测试之前引入到您的项目中，而客户不打算编辑该文件。可放心忽略。
 

@@ -2,10 +2,10 @@
 title: 了解 CMS Headless 开发
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 Headless 技术以及使用它的原因。
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '1638'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '1636'
+ht-degree: 95%
 
 ---
 
@@ -106,7 +106,7 @@ Headless 展示了交付数字体验方面的灵活度。但这种灵活度本�
 
 ## AEM 和 Headless {#aem-and-headless}
 
-继续此开发人员历程，您将了解 AEM 如何支持 Headless 交付及其全栈交付功能。
+在您继续此开发人员历程时，您将了解AEM如何支持Headless交付及其全栈交付功能。
 
 作为数字体验管理领域的行业领导者，Adobe 意识到应对体验创建者所面临的实际挑战的理想解决方案很少是一个二选一的选择。正因为这一点，AEM 不仅支持这两个模型，而且唯一允许将两者无缝混合（融合 Headless 和全栈的优势）来帮助您向内容消费者提供最出色的服务，而无论他们身在何处。
 
@@ -120,7 +120,7 @@ Headless 展示了交付数字体验方面的灵活度。但这种灵活度本�
 * 了解为什么需要以及何时需要 Headless。
 * 从较高层面了解如何使用 Headless 概念以及如何将它们相互关联。
 
-以这些知识为基础，继续您的 AEM Headless 历程，接下来查看文档 [AEM Headless as a Cloud Service 快速入门](getting-started.md)，了解如何设置必要的工具以及如何开始考虑 AEM 处理 Headless 内容交付的方式及其先决条件。
+在此知识的基础上继续您的AEM Headless历程，接下来查看文档 [AEM Headlessas a Cloud Service快速入门](getting-started.md) 在这里，您可以了解如何设置必要的工具，以及如何开始思考AEM如何进行headless内容交付及其先决条件。
 
 ## 其他资源 {#additional-resources}
 

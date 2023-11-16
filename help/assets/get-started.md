@@ -3,10 +3,10 @@ title: 开始使用 [!DNL Assets view]
 description: 如何访问  [!DNL Assets view]，其登录体验，支持的用例以及已知问题
 role: User, Leader
 exl-id: 7917b2a0-8340-4d94-aa6f-30ce986fa752
-source-git-commit: 88cbaae2ad8b610b8cd14b3ba0a92e7238ae8e9f
-workflow-type: ht
-source-wordcount: '390'
-ht-degree: 100%
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe 配置解决方案并将您的组织中的指定人员添加作为管理�
 
 ## 配置 [!DNL Assets view] {#configuration}
 
-要打开偏好设置，请单击用户界面右上角的头像。在解决方案偏好设置中，您可以在浅色和深色主题之间切换。
+要打开首选项，请单击用户界面右上角的头像。 在解决方案偏好设置中，您可以在浅色和深色主题之间切换。
 
 如果您属于不同的组织，则还可以更改组织和跨不同组织访问您的帐户。
 

@@ -3,10 +3,10 @@ title: 配置生产管道
 description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 80%
+source-wordcount: '1416'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 80%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击 **+添加**，然后选择&#x200B;**添加生产管道**。
+1. 导航至 **管道** 中的卡 **项目概述** 页面并单击 **添加** 以选择 **添加生产管道**.
 
    ![在“程序管理员”概述中的“管道”信息卡](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -111,7 +111,7 @@ ht-degree: 80%
    * 最多可以添加 25 条路径。
    * 如果您未定义任何路径，则默认情况下，网站主页会包含在体验审核中。
 
-1. 单击&#x200B;**保存**，保存您管道。
+1. 单击&#x200B;**保存**&#x200B;以保存管道。
 
 为体验审核配置的路径会提交给服务，并在管道运行时根据性能、可访问性、SEO（搜索引擎优化）、最佳实践和 PWA（Progressive Web 应用程序）测试进行评估。有关更多详细信息，请参阅[了解体验审核结果。](/help/implementing/cloud-manager/experience-audit-testing.md)
 

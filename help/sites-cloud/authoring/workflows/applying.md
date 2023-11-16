@@ -2,10 +2,10 @@
 title: 将工作流应用于页面
 description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 100%
+source-wordcount: '657'
+ht-degree: 93%
 
 ---
 
@@ -52,9 +52,7 @@ ht-degree: 100%
 * [“站点”工具栏的“创建”选项](#starting-a-workflow-from-the-sites-toolbar)。
 * [ Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
 
-在这两种情况下，您都将需要：
-
-* [在“创建工作流”向导中指定工作流详细信息](#specifying-workflow-details-in-the-create-workflow-wizard)。
+在这两种情况下，您必须 [在“创建工作流向导”中指定工作流详细信息](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### 从 Sites 工具栏启动工作流 {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -122,7 +120,7 @@ ht-degree: 100%
 
    * 现有资源以查看其他操作：
 
-      * **包括子任务**，指定将该资源的子项包含在工作流中。系统将打开一个对话框，允许您根据以下各项优化选择：
+      * **包括子任务**，指定将该资源的子项包含在工作流中。将打开一个对话框，允许您根据以下条件优化选择：
 
          * 仅包括下级子项.
          * 仅包括已修改的页面.
@@ -142,6 +140,6 @@ ht-degree: 100%
 
 ## 从页面编辑器启动工作流 {#starting-a-workflow-from-the-page-editor}
 
-编辑页面时，您可以从工具栏中选择&#x200B;**页面信息**。下拉菜单中包含&#x200B;**启动工作流**&#x200B;选项。此选项将打开一个对话框，您可以在其中指定所需的工作流，如果需要，还可以指定标题：
+编辑页面时，您可以从工具栏中选择&#x200B;**页面信息**。下拉菜单中包含&#x200B;**启动工作流**&#x200B;选项。这将打开一个对话框，您可以在其中指定所需的工作流，如果需要，还可以指定标题：
 
 ![从页面编辑器启动工作流](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)
