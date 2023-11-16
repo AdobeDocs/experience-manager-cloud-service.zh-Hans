@@ -3,9 +3,9 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道，以及如何使用它们高效地部署代码。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1423'
 ht-degree: 92%
 
 ---
@@ -53,7 +53,7 @@ Cloud Manager 提供两种类型的管道：
 除了生产和非生产，管道还可以根据其部署的代码类型进行区分。
 
 * **[全栈管道](#full-stack-pipeline)** – 同时部署后端和前端代码构建，其中包含一个或多个 AEM 服务器应用程序以及 HTTPD/Dispatcher 配置。
-* **[配置管道](#config-deployment-pipeline)**  — 在AEM环境、维护任务、CDN规则等上配置设置。
+* **[配置管道](#config-deployment-pipeline)**  — 在几分钟内配置和部署流量过滤器规则，包括WAF规则
 * **[前端管道](#front-end)** – 部署包含一个或多个客户端 UI 应用程序的前端代码版本。
 * **[Web 层配置管道](#web-tier-config-pipelines)** – 部署 HTTPD/Dispatcher 配置
 
@@ -113,7 +113,7 @@ Cloud Manager 提供两种类型的管道：
 
 ## 配置管道 {#config-deployment-pipeline}
 
-通过配置管道，您可以在AEM环境中部署配置设置，以执行维护任务、CDN规则等。
+通过配置管道，您可以在几分钟内配置和部署流量过滤器规则，包括WAF规则。
 
 请参阅文档 [包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 了解如何管理存储库中的配置，以便正确部署它们。
 
@@ -129,10 +129,6 @@ Cloud Manager 提供两种类型的管道：
 前端代码是用作静态文件的任何代码。它独立于 AEM 提供的 UI 代码，可能包括站点主题、客户定义的 SPA、SPA 和其他解决方案。
 
 前端管道通过加速后端开发的前端代码异步部署，帮助您的团队简化设计和开发过程。这个专用管道将 JavaScript 和 CSS 作为主题部署到 AEM 分发层，从而产生一个新的主题版本，可以从 AEM 交付的页面中引用。
-
->[!IMPORTANT]
->
->您必须使用 AEM 版本 `2021.10.5933.20211012T154732Z ` 或更高版本，并启用 AEM Sites 以利用前端管道。
 
 >[!NOTE]
 >
