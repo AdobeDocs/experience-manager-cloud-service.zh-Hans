@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service日志记录
 description: 了解如何使用AEMas a Cloud Service日志记录功能配置中央日志记录服务的全局参数、各个服务的特定设置以及如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 8f20876be6b01e1994fb8f91d4a1b4a113588a3e
+source-git-commit: 12bdd43b870e30984e2812baea956e06ca7c879c
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2683'
 ht-degree: 10%
 
 ---
@@ -523,7 +523,8 @@ AEMas a Cloud Service提供对CDN日志的访问，这些日志对于包括缓�
 "cache": "PASS",
 "status": 200,
 "res_age": 0,
-"pop": "PAR"
+"pop": "PAR",
+"rules": "match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked"
 }
 ```
 
@@ -547,6 +548,8 @@ CDN日志不同于其他日志，它遵循JSON格式。
 | *状态* | 整数值形式的 HTTP 状态代码。 |
 | *res_age* | 响应已缓存（在所有节点中）的时间量（以秒为单位）。 |
 | *pop* | CDN 缓存服务器的数据中心。 |
+| *rules* | 任何匹配项的名称 [流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 和WAF标志，还指示匹配是否导致了块。 如果没有匹配的规则，则为空。 |
+
 
 ## 如何访问日志 {#how-to-access-logs}
 
