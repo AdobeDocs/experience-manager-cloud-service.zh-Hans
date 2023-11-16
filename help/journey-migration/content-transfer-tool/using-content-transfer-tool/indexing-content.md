@@ -2,10 +2,10 @@
 title: 迁移内容后建立索引
 description: 了解迁移过程将如何对目标Cloud Service实例上的摄取内容进行索引。
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 0109cea1be85e647fb6c04dde4714b162bdc75a5
+source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 10%
+source-wordcount: '506'
+ht-degree: 7%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_indexing"
 >title="内容索引"
->abstract="AEM 索引是指将内容迁移到 Cloud Service 实例后为 Cloud Service 实例上的内容编制索引。需要编制索引以支持搜索该实例上的内容。"
+>abstract="AEM 索引是指将内容迁移到 Cloud Service 实例后为 Cloud Service 实例上的内容编制索引。需要编制索引以支持在该实例上搜索内容。"
 
 在Cloud Acceleration Manager完成将内容摄取到Cloud Service实例中后，便可以使用它。 最初，内容未编入索引，这可能会导致环境不稳定，出现不可搜索的内容和性能下降等问题。
 为获得实例上的最佳性能，迁移过程将自动开始索引内容。 除了监视索引进度外，没有其他可执行的操作。
@@ -46,13 +46,13 @@ ht-degree: 10%
 
 ### 完成
 
-当索引作业成功时，实例已准备好以最佳性能使用。 此时，索引作业日志将可供查看或下载，以便进行检查。
+当索引作业成功时，实例已准备好以最佳性能使用。 此时，索引作业日志可供查看或下载以进行检查。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-indexing/complete.png)
 
 ### 错误数
 
-对目标Cloud Service实例编制索引很可能成功。 在某些情况下，该操作可能会失败，并且引入作业行将如下所示。 在所有情况下，都可以通过将鼠标悬停在故障状态上来查找故障的一些详细信息，这些信息可能会帮助您确定后续步骤。 此时，索引作业日志将可供查看或下载，以帮助发现故障源。 如果下一步不明确，请联系Adobe支持，并提供摄取和索引日志的详细信息。
+对目标Cloud Service实例编制索引很可能成功。 在某些情况下，该操作可能会失败，并且引入作业行将如下所示。 在所有情况下，都可以通过将鼠标悬停在故障状态上来查找故障的一些详细信息，这些信息可能会帮助您确定后续步骤。 此时，索引作业日志可供查看或下载，以帮助发现故障源。 如果下一步不明确，请联系Adobe支持，并提供摄取和索引日志的详细信息。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
