@@ -2,10 +2,10 @@
 title: 内容转移工具快速入门
 description: 了解如何开始使用内容传输工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 21%
+source-wordcount: '1424'
+ht-degree: 18%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 21%
 >abstract="了解如何创建和管理迁移集以及如何复制提取密钥。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=zh-Hans#migration" text="教程 - 使用内容转移工具"
 
-<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
+<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
 1. 登录Cloud Acceleration Manager (CAM)，然后单击之前创建的CAM项目，以评估您为迁移到AEMas a Cloud Service所做的准备情况。 如果尚未创建CAM项目，请参阅在CAM中创建和管理项目。
 
@@ -111,7 +111,7 @@ ht-degree: 21%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_populate_migrationset"
 >title="填充迁移集"
->abstract="创建迁移集后，需要为它填入需要从源实例移至 AEM as a Cloud Service 环境的内容。为此，需要在源实例上安装内容转移工具。"
+>abstract="在创建迁移集后，必须使用必须移至AEMas a Cloud Service环境的源实例中的内容填充迁移集。 为此，必须在源实例上安装内容传输工具。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=zh-Hans" text="提取内容"
 
 要填充您在Cloud Acceleration Manager中创建的迁移集，您需要在源Adobe Experience Manager (AEM)实例上安装最新版本的内容传输工具。 请阅读本节内容，了解如何填充迁移集。
