@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: a6d43e6d4138305c2f98dfb6e33946d36fb50fe1
 workflow-type: tm+mt
 source-wordcount: '4381'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -844,7 +844,7 @@ ht-degree: 99%
          + [将 git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多个存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企业开发团队设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [使用您自己的GitHub存储库](/help/implementing/cloud-manager/managing-code/byo-github.md)
+         + [使用您自己的 GitHub 存储库](/help/implementing/cloud-manager/managing-code/byo-github.md)
       + [环境变体](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
          + [简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)

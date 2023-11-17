@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2068'
 ht-degree: 1%
 
 ---
@@ -502,6 +502,6 @@ __配置文件XDM事件：__
 有关更多信息，请参阅以下资源：
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [Experience Platform连接器概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
-- [Experience Platform连接器事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
+- [[!DNL Data Connection] 概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] 事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Adobe Experience Platform概述](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
