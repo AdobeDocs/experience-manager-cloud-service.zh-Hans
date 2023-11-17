@@ -2,9 +2,9 @@
 title: 设置您的管道
 description: 创建前端管道来管理站点主题的自定义。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '964'
 ht-degree: 98%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 98%
 在 AEM 快速站点创建历程的上一个文档[从模板创建站点](create-site.md)中，您已了解如何使用站点模板快速创建可通过前端工具进行详细自定义的 AEM 站点，现在您应：
 
 * 了解如何获取 AEM 站点模板。
-* 了解如何使用模板创建新站点。
+* 了解如何使用模板创建站点。
 * 了解如何从新站点下载模板以提供给前端开发人员。
 
 本文基于这些基础之上，因此您可以设置前端管道，前端开发人员在历程中稍后将使用此管道来部署前端自定义项。

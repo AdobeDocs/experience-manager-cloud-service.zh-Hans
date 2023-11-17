@@ -2,9 +2,9 @@
 title: 管理您的演示站点
 description: 了解可用于帮助您管理演示站点的工具以及如何删除它们。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '943'
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '942'
 ht-degree: 100%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 100%
 恭喜！您已完成 AEM 参考演示加载项历程！您现在应：
 
 * 基本了解 Cloud Manager，并了解管道如何将内容和配置交付给 AEM。
-* 了解如何使用 Cloud Manager 创建新项目。
+* 了解如何使用 Cloud Manager 创建项目。
 * 了解如何为新项目激活参考演示加载项，并能够运行管道来部署加载项内容。
 * 了解如何访问 AEM 创作环境以基于模板创建站点。
 * 了解如何访问自助演示实用工具。

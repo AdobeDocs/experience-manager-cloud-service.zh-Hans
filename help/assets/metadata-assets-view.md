@@ -4,10 +4,10 @@ description: 了解如何在资产视图中管理元数据。 更好的元数据
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: d663c258a83473ec8d3c68bc5683955003d889c7
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 88%
+source-wordcount: '1556'
+ht-degree: 87%
 
 ---
 
@@ -111,7 +111,7 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 
 创建表单后，当用户上传具有匹配 MIME 类型的资源时，将会自动应用表单。
 
-要重用现有的表单创建新表单，请选择一个元数据表单，在工具栏中单击&#x200B;**[!UICONTROL 复制]**，提供名称，然后单击&#x200B;**[!UICONTROL 确认]**。您可以编辑元数据表单来进行更改。更改表单后，它会用于在更改之后上传的资源。它不会更改现有资源。
+要重用现有的表单来创建表单，请选择一个元数据表单，然后单击 **[!UICONTROL 复制]** 在工具栏中，提供名称，然后单击 **[!UICONTROL 确认]**. 您可以编辑元数据表单来进行更改。更改表单后，它会用于在更改之后上传的资源。它不会更改现有资源。
 
 ## 属性组件 {#property-components}
 
@@ -144,7 +144,7 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 * 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
-To reuse an existing form to create a new form, do one of these:
+To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
 

@@ -2,10 +2,10 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2978'
-ht-degree: 97%
+source-wordcount: '2975'
+ht-degree: 96%
 
 ---
 
@@ -161,7 +161,7 @@ ht-degree: 97%
 
 ### 使用资源浏览器插入组件 {#inserting-a-component-using-the-assets-browser}
 
-您还可以通过从[资源浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)拖动资源来向页面添加新组件。这将自动创建相应类型的新组件（并且包含资源）。
+您还可以通过从[资源浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)拖动资源来向页面添加新组件。这会自动创建相应类型的组件（并包含资产）。
 
 可针对您的安装配置此行为。有关更多详细信息，请参阅配置段落系统以便可通过拖动资源创建组件实例。<!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
@@ -261,7 +261,7 @@ ht-degree: 97%
 
 * **转换为体验片段变体**
 
-  让您从选定的组件创建一个新的[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)，或将其添加到现有的体验片段中。
+  这让您能够创建 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 或将它添加到现有的体验片段中。
 
   ![“转换为体验片段”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 

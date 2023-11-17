@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 创建站点，并使用站点模板定义�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 96%
+source-wordcount: '773'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 必须先创建站点，之后内容作者才能创建包含内容的页面。这通常由定义初始站点结构的 AEM 管理员执行。使用站点模板可以快速灵活地创建站点。
 
-借助 AEM 快速站点创建工具，非开发人员可以使用站点模板从头开始快速创建新站点。
+借助AEM快速站点创建工具，非开发人员可以使用站点模板从头开始快速创建站点。
 
 创建后，还可利用快速站点创建工具快速自定义 AEM 站点的主题和样式（JavaScript、CSS 和静态资源）。这样一来，无需了解 AEM 的前端开发人员既可独立于内容创建者工作，又可与内容创建者并行工作。AEM 管理员只需下载站点主题并将它提供给前端开发人员，后者会使用他们喜欢的工具来自定义站点主题，再将更改提交到 AEM 代码存储库，随后进行部署。
 

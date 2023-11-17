@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 了解AEMas a Cloud Service中的“内容搜索”和“索引”。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: d567115445c0a068380e991452d9b976535e3a1d
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2433'
-ht-degree: 31%
+source-wordcount: '2432'
+ht-degree: 30%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 31%
 2. **更新** 通过添加新版本而得到的现有索引定义。
 3. **移除** 不再需要的索引定义。
 
-对于上面的第 1 点和第 2 点，您需要在相应的 Cloud Manager 发布计划中创建一个新的索引定义，作为自定义代码库的一部分。欲了解更多信息，请参见 [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md) 文档。
+对于上面的第1点和第2点，您需要在相应的Cloud Manager发布计划中创建一个索引定义，作为自定义代码库的一部分。 欲了解更多信息，请参见 [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md) 文档。
 
 ## 索引名称 {#index-names}
 

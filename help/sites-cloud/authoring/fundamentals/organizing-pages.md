@@ -2,10 +2,10 @@
 title: 创建和组织页面
 description: 了解如何通过使用 AEM 创建和管理页面来组织您的网站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 98%
+source-wordcount: '2448'
+ht-degree: 97%
 
 ---
 
@@ -213,7 +213,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
    >
    >请参阅[页面命名惯例](#page-naming-conventions)。
 
-   创建新页面至少需要提供&#x200B;**标题**&#x200B;信息。
+   创建页面所需的最少信息是 **标题**.
 
    ![提供页面标题](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 

@@ -2,10 +2,10 @@
 title: 沙盒程序简介
 description: 了解沙盒程序与生产程序的区别。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '474'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 自动创建 {#auto-creation}
 
-沙盒程序具有自动创建功能。 每当您自动创建新的沙盒程序 Cloud Manager 时：
+沙盒程序具有自动创建功能。 每当您创建沙盒程序时，Cloud Manager都会自动：
 
 * 在程序中添加 AEM Sites 和 AEM Assets 作为解决方案。
 * 使用基于 [AEM 项目原型的示例项目设置项目 git 存储库。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)

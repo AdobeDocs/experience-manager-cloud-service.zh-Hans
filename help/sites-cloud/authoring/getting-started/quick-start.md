@@ -2,9 +2,9 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 91%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 91%
 
 ### 创建新页面 {#creating-a-new-page}
 
-要[创建新的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，请执行以下操作：
+至 [创建页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)：
 
 1. [导航到要创建新页面的位置](#finding-your-page)。
 1. 使用&#x200B;**创建**&#x200B;图标，然后从列表中选择&#x200B;**页面**：

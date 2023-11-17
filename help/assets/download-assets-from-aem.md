@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: d25d433203b8ec6787dec87a9ec35092a247096e
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1387'
 ht-degree: 5%
 
 ---
@@ -116,7 +116,7 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 
    `/apps/<your-app-name>/config.publish`
 
-1. 在配置文件夹中，创建一个类型为的新文件 `nt:file` 已命名 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
+1. 在config文件夹中，创建一个文件类型 `nt:file` 已命名 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. 填充 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` ，如下所示。 将下载的最大大小（以字节为单位）设置为的值 `asset.download.prezip.maxcontentsize`. 下面的示例将ZIP下载的最大大小配置为不超过100 KB。
 
    ```java

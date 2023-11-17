@@ -2,10 +2,10 @@
 title: 使用定位模式创作目标内容
 description: 通过定位模式和 Target 组件，可以创建体验的内容
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '5409'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '5408'
+ht-degree: 99%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >在创建新活动时，如果已将 Adobe Target 云配置附加到页面或其某个父页面，则 AEM 会自动将 Adobe Target 视为定位引擎。
+   >在创建活动时，如果已将Adobe Target云配置附加到页面或其某个父页面，则AEM会自动将Adobe Target视为引擎。
 
 1. 在&#x200B;**定位**&#x200B;引擎下拉菜单中，选择您的定位引擎。
 

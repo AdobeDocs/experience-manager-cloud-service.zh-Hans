@@ -2,9 +2,9 @@
 title: 页面模板
 description: 创建用作新页面基础的页面时，将使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3287'
 ht-degree: 8%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 8%
 
 1. 使用它创建内容页面。
 
-   * 使用模板创建新页面时，静态模板与可编辑模板之间没有可见的区别和指示。
+   * 使用模板创建页面时，静态模板与可编辑模板之间没有可见的区别和指示。
    * 对于页面作者，该过程是透明的。
 
    有关页面作者如何使用模板创建页面的详细信息，请参阅 [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
@@ -141,11 +141,11 @@ ht-degree: 8%
 >
 >即使您可以嵌套文件夹，当用户在 **模板** 控制台，它们以扁平结构呈现。
 
-在标准AEM实例中， `global` 模板控制台中已存在文件夹。 此文件夹会保存默认模板，如果在当前文件夹中没有找到策略和/或模板类型，则此文件夹可以充当备用。您可以将默认模板添加到此文件夹或创建新文件夹（推荐）。
+在标准AEM实例中， `global` 模板控制台中已存在文件夹。 此文件夹会保存默认模板，如果在当前文件夹中没有找到策略和/或模板类型，则此文件夹可以充当备用。您可以将默认模板添加到此文件夹或创建文件夹（推荐）。
 
 >[!NOTE]
 >
->最佳做法是创建一个新文件夹来存放您的自定义模板，而不是使用 `global` 文件夹。
+>最佳做法是创建一个文件夹来存放您的自定义模板，而不是使用 `global` 文件夹。
 
 >[!CAUTION]
 >
@@ -161,7 +161,7 @@ ht-degree: 8%
 
 将创建所有允许条目的列表。 如果任何配置重叠( `path`/ `label`)，则只有最接近当前文件夹的实例才会呈现给用户。
 
-要创建新文件夹，您可以执行以下操作之一：
+要创建文件夹，您可以执行以下操作：
 
 * 以编程方式或使用CRXDE Lite
 * 使用 [配置浏览器](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
@@ -185,8 +185,8 @@ ht-degree: 8%
 
    `<your-folder-name> [sling:Folder]`
 
-   * 名称: `jcr:title`
-   * 类型: `String`
+   * 名称：`jcr:title`
+   * 类型：`String`
    * 值：您希望在中显示的标题（针对文件夹） **模板** 控制台。
 
 1. 除了标准创作权限之外(例如， `content-authors`)现在，您需要分配组并定义作者所需的访问权限(ACL)，以便能够在新文件夹中创建模板。
@@ -423,8 +423,8 @@ GITHUB上的代码
 
 此节点保存模板的属性：
 
-* **名称**: `jcr:title`
-* **名称**: `status`
+* **名称**：`jcr:title`
+* **名称**：`status`
    * ``**类型**: `String`
    * **值**： `draft`， `enabled` 或 `disabled`
 
@@ -495,7 +495,7 @@ GITHUB上的代码
 
          * 名称：状态
          * 类型：字符串
-         * 值: `enabled`
+         * 价值: `enabled`
 
 1. **允许的模板**
 

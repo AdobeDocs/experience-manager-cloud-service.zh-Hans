@@ -4,10 +4,10 @@ description: 使用您之前创建的内容片段模型来创建可用于页面�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 内容片段代表 Headless 内容，并且基于预定义的结构，即内容片段模型。您已经在之前的模块中创建了一个模型。
 
-在本模块中，您会使用内容片段控制台基于该模型创建一个新的内容片段。可以将内容片段控制台视为您的 Headless 内容库。使用它来创建新的内容片段并管理现有的片段。
+在本模块中，您将通过使用内容片段控制台基于该模型创建一个内容片段。 可以将内容片段控制台视为您的 Headless 内容库。使用它来创建新的内容片段并管理现有的片段。
 
 内容片段控制台用于跨投放渠道、独立于上下文创建和编辑 Headless 内容，对于许多创作案例，这是最有效的方法。在后面的模块中，我们将会探索如何在上下文中和就地编辑 Headless 内容。
 

@@ -2,9 +2,9 @@
 title: 在Screensas a Cloud Service中创建和管理渠道
 description: 本页介绍如何在Screensas a Cloud Service中创建和管理渠道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 >**前提条件**
 >在开始本指南的这一部分之前，请查阅 [在Screens中创建和管理项目as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
-请按照以下步骤在Screensas a Cloud Service中创建新序列渠道：
+请按照以下步骤在Screensas a Cloud Service中创建序列渠道：
 
 1. 导航到Screens Content Provider。
 

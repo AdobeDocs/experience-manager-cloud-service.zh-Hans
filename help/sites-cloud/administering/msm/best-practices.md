@@ -4,10 +4,10 @@ description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '1420'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1419'
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ MSM 是用于自动化内容部署的可配置框架。实施通常涉及网站�
 
 以下是创建站点时要牢记的几个注意事项：
 
-* 要创建新站点，您需要 [Blueprint 配置](creating-live-copies.md#managing-blueprint-configurations)。
+* 要创建站点，您需要 [Blueprint配置](creating-live-copies.md#managing-blueprint-configurations).
 * 要允许选择在新站点中创建的语言路径，相应的语言根必须存在于 Blueprint（源）中。
 * 在[将新站点创建为 Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)（依次使用&#x200B;**创建**&#x200B;和&#x200B;**站点**）后，此 Live Copy 的前两个级别&#x200B;*较低*。页面的子级不属于实时关系，但如果找到与触发器匹配的实时关系，则转出仍会下降。
 

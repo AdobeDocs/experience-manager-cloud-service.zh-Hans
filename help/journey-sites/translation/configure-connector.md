@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1162'
 ht-degree: 97%
 
 ---
@@ -71,7 +71,7 @@ AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM �
 * 要执行人工翻译还是机器翻译
 * 是否翻译与页面关联的其他内容，如标记
 
-要创建新的翻译配置，请执行以下操作：
+要创建翻译配置，请执行以下操作：
 
 1. 在全局导航菜单中，单击或点按&#x200B;**工具** -> **云服务** -> **翻译云服务**。
 1. 在您的内容结构中导航到要创建该配置的位置。这一般为项目专属的位置，但也可为全局位置。

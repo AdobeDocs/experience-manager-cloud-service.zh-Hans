@@ -2,10 +2,10 @@
 title: 自定义权限
 description: 了解如何使用自定义权限创建具有可配置权限的新的自定义权限配置文件，以限制 Cloud Manager 用户对项目、管道和环境的访问。
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 83%
+source-wordcount: '1501'
+ht-degree: 82%
 
 ---
 
@@ -48,7 +48,7 @@ Cloud Manager 具有一组预定义的角色，从而管理对 Cloud Manager 的
 
 ### 创建新的产品配置文件 {#create}
 
-您首先必须创建一个新的产品配置文件，然后才能向该配置文件分配自定义权限。
+您首先必须创建产品配置文件，然后才能向它分配自定义权限。
 
 1. 登录 Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
@@ -123,10 +123,10 @@ Cloud Manager 具有一组预定义的角色，从而管理对 Cloud Manager 的
 
 | 权限 | 描述 |
 |---|---|
-| 项目创建 | 允许用户创建新项目 |
+| 项目创建 | 允许用户创建项目 |
 | 项目访问权限 | 允许用户访问项目 |
 | 项目编辑权限 | 允许用户编辑项目 |
-| 环境创建 | 允许用户创建新环境 |
+| 环境创建 | 允许用户创建环境 |
 | 环境编辑 | 允许用户更新和编辑环境 |
 | 环境日志读取 | 允许用户读取环境日志 |
 | 管道创建权限 | 允许用户创建新管道 |
@@ -145,7 +145,7 @@ Cloud Manager 具有一组预定义的角色，从而管理对 Cloud Manager 的
 
 以下权限是组织级权限：
 
-* **项目创建**  — 此权限允许用户在组织中创建新项目。
+* **项目创建**  — 此权限允许用户在组织中创建项目。
 * **存储库信息访问权限**&#x200B;此租户/组织级权限允许用户生成用户名、密码和存储库 URL，以便访问客户项目并为其做出贡献。
    * 对于组织中的所有存储库来说，存储库访问的用户名和密码是通用的，但存储库 URL 对于每个项目来说是唯一的。
    * 请参阅文档 [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md) 以了解更多信息。

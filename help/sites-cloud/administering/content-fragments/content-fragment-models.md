@@ -4,10 +4,10 @@ description: 了解内容片段模型如何作为 AEM 中内容片段的基础�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3061'
-ht-degree: 99%
+source-wordcount: '3060'
+ht-degree: 98%
 
 ---
 
@@ -353,7 +353,7 @@ type CompanyModel {
 
 * **允许创建片段**
 
-  此项使片段作者可根据相应的模型创建新片段。
+  这将允许片段作者根据相应的模型创建片段。
 
    * **片段引用组合** – 允许片段作者通过选择多个片段来构建复合
 

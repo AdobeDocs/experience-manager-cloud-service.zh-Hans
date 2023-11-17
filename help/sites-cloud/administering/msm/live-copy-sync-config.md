@@ -4,10 +4,10 @@ description: 了解可用的强大 Live Copy 同步选项以及如何根据项�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 1d5460c87aef10ae1adee7401cd462242e106f8c
-workflow-type: ht
-source-wordcount: '2426'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '2425'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Experience Manager 提供了大量现成的同步配置。在使用 Live C
 
 下表列出了随 AEM 一起提供的现成的转出配置。该表包含每个转出配置的触发器和同步操作。
 
-如果已安装的转出配置操作不符合您的要求，您可以[创建新的转出配置](#creating-a-rollout-configuration)。
+如果安装的转出配置操作不符合您的要求，您可以 [创建转出配置。](#creating-a-rollout-configuration)
 
 | 名称 | 描述 | 触发器 | [同步操作](#synchronization-actions) |
 |---|---|---|---|

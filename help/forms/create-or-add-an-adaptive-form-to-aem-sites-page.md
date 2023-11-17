@@ -4,9 +4,9 @@ description: 了解如何在AEM Sites页面上创建或添加自适应表单。 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: 4cebcd58a0d6fd429cde3d739095c131cc76d9e5
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3209'
 ht-degree: 20%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 20%
 
 您可以使用AEM页面编辑器快速创建多个表单并将其添加到AEM Sites页面。 通过使用AEM页面编辑器，内容作者可以使用自适应表单组件的强大功能（包括动态行为、验证、数据集成、生成记录文档和业务流程自动化），在Sites页面中创建无缝的数据捕获体验。 它还允许您使用AEM Sites页面的各种功能，例如，版本控制、定位、翻译和多站点管理器。
 
-AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组件。 您可以使用自适应表单容器在AEM Sites页面或体验片段中创建新表单，而自适应Forms — 嵌入组件允许您添加现有自适应表单或使用自适应Forms编辑器创建新表单。
+AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组件。 您可以使用自适应表单容器在AEM Sites页面或体验片段中创建表单，而自适应Forms — 嵌入组件允许您添加现有的自适应表单或使用自适应Forms编辑器创建表单。
 
 ![AEM Sites页面中的自适应表单示例](/help/forms/assets/adaptive-form-in-sites-page.png)
 
@@ -187,7 +187,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
    出现一个对话框，用于将自适应表单容器转换为新的体验片段或添加到现有的体验片段
 1. 在转换为体验片段变体对话框中，设置以下选项的值：
 
-   * **操作：** 选择以创建新体验片段或添加到现有体验片段。
+   * **操作：** 选择以创建体验片段或添加到现有体验片段。
    * **父级路径：** 指定要承载体验片段的文件夹的路径。 选项仅适用于创建新体验片段。
    * **模板：** 指定体验片段模板的路径。 如果您没有体验片段模板， [创建它](/help/implementing/developing/extending/experience-fragments.md). 选项仅可用于将自适应表单添加到现有体验片段。
    * **片段标题：** 指定体验片段的标题。 标题唯一标识体验片段

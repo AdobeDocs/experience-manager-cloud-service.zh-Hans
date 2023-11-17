@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.10.0 版的发行说明。'
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 80%
+source-wordcount: '835'
+ht-degree: 78%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 80%
    * **[模板编辑器中的表单数据模型](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model)**：您可以在模板编辑器中将表单数据模型架构关联到自适应表单模板。 这样有助于减少创建自适应表单所需的时间。该选项也已添加到自适应表单编辑器中，用户可选择或更改现有表单的表单数据模型。
    * **[模板编辑器中的记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)**：您现在可以为使用模板创建的所有表单标准化记录文档生成的过程。这有助于增强组织要求的合规性和标准化。
 
-* **[从 AEM Sites 页面启动“自适应表单”向导](/help/forms/embed-adaptive-form-aem-sites.md)**：AEM Sites 页面已增强对自适应表单的支持。 您现在可以创建新的“自适应表单”或嵌入现有的“自适应表单”，同时保留在 AEM Sites 页面上。
+* **[从 AEM Sites 页面启动“自适应表单”向导](/help/forms/embed-adaptive-form-aem-sites.md)**：AEM Sites 页面已增强对自适应表单的支持。 您现在可以创建自适应表单或嵌入现有的自适应表单，同时保留在AEM Sites页面上。
 * **[更改 DoR 中复选框和单选按钮的显示对齐方式](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record-customize-the-branding-information-in-document-of-record)**：您现在可以为记录文档上的复选框和单选按钮设置所需的对齐方式（水平、垂直、与自适应表单相同）。此选项确定记录文档中复选框和单选按钮选项的位置。
 
 ## CIF 加载项 {#cloud-services-cif}

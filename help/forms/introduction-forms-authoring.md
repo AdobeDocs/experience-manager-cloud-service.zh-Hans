@@ -1,17 +1,15 @@
 ---
 title: 自适应表单创作简介
 description: AEM Forms 提供了一个易于使用且功能强大的界面来创作自适应表单。它提供了大量可用于构建表单的组件和工具。
-uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2484'
-ht-degree: 100%
+source-wordcount: '2482'
+ht-degree: 99%
 
 ---
 
@@ -54,7 +52,7 @@ XML 和 JSON 架构代表组织中的后端系统在其中生成或使用数据�
 * 标准表单组件
 * 集成的资源存储库
 
-在创建新的自适应表单或编辑现有自适应表单时，您将使用以下 UI 元素：
+创建或编辑现有自适应表单时，会使用以下UI元素：
 
 * [侧栏](#sidebar)
 * [页面工具栏](#page-toolbar)

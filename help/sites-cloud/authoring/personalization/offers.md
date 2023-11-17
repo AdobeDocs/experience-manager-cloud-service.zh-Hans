@@ -2,10 +2,10 @@
 title: 创建和管理优惠（优惠控制台）
 description: 使用“优惠”控制台，可创建您可以在活动体验中使用的优惠
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 98%
+source-wordcount: '1390'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->您也可以自己创建一个新的体验片段，手动将内容从您的遗留优惠转移到片段，然后删除遗留优惠。
+>您也可以自己创建体验片段，手动将内容从您的遗留优惠转移到片段，然后删除遗留优惠。
 
 >[!CAUTION]
 >

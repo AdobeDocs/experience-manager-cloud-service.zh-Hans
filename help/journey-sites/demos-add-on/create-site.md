@@ -2,10 +2,10 @@
 title: 创建演示站点
 description: 基于预配置的模板库在 AEM 中创建演示站点。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 在 AEM 参考演示加载项历程的上一个文档[创建项目](create-program.md)中，您执行了第一个配置步骤来创建项目以进行测试并使用管道来部署加载项内容。您现在应：
 
-* 了解如何使用 Cloud Manager 创建新项目。
+* 了解如何使用 Cloud Manager 创建项目。
 * 了解如何为新项目激活参考演示加载项。
 * 能够运行管道以部署加载项内容。
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 ## 目标 {#objective}
 
-本文档有助于您了解如何基于参考演示加载项的模板创建新站点。阅读本文档后，您应：
+本文档可帮助您了解如何基于参考演示加载项的模板创建站点。 阅读本文档后，您应：
 
 * 了解如何访问 AEM 创作环境。
 * 了解如何基于模板创建站点。

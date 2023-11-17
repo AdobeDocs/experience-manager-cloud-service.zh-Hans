@@ -4,10 +4,10 @@ description: 了解如何创建和同步 Live Copy 以在站点中重用您的�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4308'
-ht-degree: 100%
+source-wordcount: '4307'
+ht-degree: 99%
 
 ---
 
@@ -333,7 +333,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 >[!TIP]
 >
->如果您在 Live Copy 中手动创建一个新页面，则该新页面是 Live Copy 的本地页面，这意味着它没有附加到相应的源页面。
+>如果您在Live Copy中手动创建页面，则新页面是Live Copy的本地页面，这意味着它没有附加到相应的源页面。
 >
 >要创建作为关系的一部分的本地页面，最佳实践是在源中创建本地页面并执行深度转出。这将在本地创建页面作为 Live Copy。
 

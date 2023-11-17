@@ -1,13 +1,13 @@
 ---
 title: 扩展多站点管理器
 description: 了解如何扩展多站点管理器的功能。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '2436'
-ht-degree: 100%
+exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '2435'
+ht-degree: 99%
 
 ---
-
 
 # 扩展多站点管理器 {#extending-the-multi-site-manager}
 
@@ -165,7 +165,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 ### 创建转出配置 {#create-the-rollout-configuration}
 
-要创建新的转出配置，请执行以下操作：
+要创建转出配置，请执行以下操作：
 
 1. 在 `https://<host>:<port>/crx/de` 打开 CRXDE Lite。
 

@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4344'
 ht-degree: 11%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 11%
 >* 共享该类型的资产文件夹 `sling:OrderedFolder`在共享到Experience Cloud时不支持。 如果要共享文件夹，请勿选择 [!UICONTROL 已排序] 创建文件夹时。
 >* Experience Manager不允许使用 `subassets` word作为文件夹的名称。 它是为包含复合资产的子资产的节点保留的关键字
 
-1. 导航到数字资产文件夹中要创建新文件夹的位置。 在菜单中，单击 **[!UICONTROL 创建]**. 选择 **[!UICONTROL 新建文件夹]**.
+1. 导航到数字资产文件夹中要创建文件夹的位置。 在菜单中，单击 **[!UICONTROL 创建]**. 选择 **[!UICONTROL 新建文件夹]**.
 1. 在 **[!UICONTROL 标题]** 字段中，提供文件夹名称。 默认情况下，DAM使用您提供的标题作为文件夹名称。 创建文件夹后，您可以覆盖默认文件夹名称并指定其他文件夹名称。
 1. 单击&#x200B;**[!UICONTROL 创建]**。您的文件夹会显示在数字资产文件夹中。
 
@@ -54,7 +54,7 @@ ht-degree: 11%
 1. 单击 **[!UICONTROL 提取存档]** 操作栏上可用的选项。
 1. 选择文件夹，您需要在该文件夹中保存压缩文件夹中可用的已提取资产。
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
-1. 选择相应的行为来处理提取期间出现的文件名冲突。 您可以选择创建新版本的现有资源，替换资源，将两个资源都保留在目标文件夹中，或者跳过新资源的提取。
+1. 选择相应的行为来处理提取期间出现的文件名冲突。 您可以选择创建现有资源的版本，替换该资源，将两个资源都保留在目标文件夹中，或者跳过新资源的提取。
 1. 单击 **[!UICONTROL Extract]**. Zip提取过程开始。 该过程完成后，您可以在目标文件夹中查看提取的资产。
 
    ![zip提取](assets/zip-extraction.png)

@@ -2,10 +2,10 @@
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: bad2225e7c5f2554ebd51c0e7e737296c3aa552b
-workflow-type: ht
-source-wordcount: '2044'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '2043'
+ht-degree: 99%
 
 ---
 
@@ -279,7 +279,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 ### 创建构建块 {#creating-a-building-block}
 
-要创建构建块，请执行以下操作：
+要创建构建基块，请执行以下操作：
 
 1. 在体验片段编辑器中，选择要重复使用的组件：
 

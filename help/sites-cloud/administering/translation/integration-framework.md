@@ -4,10 +4,10 @@ description: 了解如何配置翻译集成框架以与第三方翻译服务集�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+workflow-type: tm+mt
+source-wordcount: '1517'
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 100%
 >
 >有关 AEM 中内容翻译功能的概述，请参阅[翻译多语言站点的内容](overview.md)。
 
-只有一个框架配置可控制如何翻译页面内容和资源。要创建新的翻译配置，请执行以下操作：
+只有一个框架配置可控制如何翻译页面内容和资源。要创建翻译配置，请执行以下操作：
 
 1. 在[全局导航菜单](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)中，单击或点按&#x200B;**工具 -> 云服务 -> 翻译云服务**。
 1. 在您的内容结构中导航到要创建该配置的位置。这一般为站点专属的位置，但也可为全局位置。

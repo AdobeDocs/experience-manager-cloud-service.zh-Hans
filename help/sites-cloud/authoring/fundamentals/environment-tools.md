@@ -2,10 +2,10 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2164'
-ht-degree: 98%
+source-wordcount: '2163'
+ht-degree: 97%
 
 ---
 
@@ -120,7 +120,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 * 相应类型的现有组件。
    * 例如，可以将图像类型的资源拖动到图像组件上。
-* 段落系统中用于创建相应类型新组件的[占位符](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder)。
+* A [占位符](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) 在段落系统中创建相应类型的组件。
    * 例如，可以将图像类型的资源拖动到段落系统中，以创建图像组件。
 
 >[!NOTE]

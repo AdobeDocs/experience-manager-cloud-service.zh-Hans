@@ -2,9 +2,9 @@
 title: 创建和管理Screens中的显示as a Cloud Service
 description: 本页介绍如何创建和管理Screensas a Cloud Service显示。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '657'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 1. 选择 **隐藏文件夹** 再次关闭它。
 
-## 如何创建新文件夹 {#create-folder}
+## 如何创建文件夹 {#create-folder}
 
 您可以创建文件夹以更好地组织显示。
 
@@ -86,7 +86,7 @@ ht-degree: 3%
 
    ![图像](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## 如何创建新的嵌套文件夹 {#nested-folder}
+## 如何创建嵌套文件夹 {#nested-folder}
 
 1. 定位至显示的库存视图。
 

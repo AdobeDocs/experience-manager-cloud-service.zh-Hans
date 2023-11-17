@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 93%
+source-wordcount: '1546'
+ht-degree: 90%
 
 ---
 
@@ -62,17 +62,17 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 * **权限**：将用户添加到[!DNL forms-users]，为他们提供创建自适应表单的权限。有关特定于表单的用户组的详细列表，请参阅 [组和权限](forms-groups-privileges-tasks.md).
 
-* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以[创建新主题](themes.md)或[导入现有主题](import-export-forms-templates.md#uploading-a-theme)。您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
+* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以 [创建主题](themes.md) 或 [导入现有主题](import-export-forms-templates.md#uploading-a-theme). 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
 * **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（版面和样式）。它的预格式化的组件包含某些属性和内容结构。它还提供用于定义主题和提交操作的选项。主题定义外观，提交操作定义在提交自适应表单时执行的操作。例如，将收集到的数据发送到数据源。Cloud Service 支持两种类型的模板：
 
-   * **可编辑模板**：您可以[新建模板](template-editor.md)或[导入现有的可编辑模板](migrate-to-forms-as-a-cloud-service.md)。您还可以部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以获取一些可编辑模板示例。
+   * **可编辑的模板**：您可以 [创建](template-editor.md) 或 [导入现有的可编辑模板](migrate-to-forms-as-a-cloud-service.md). 您还可以部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以获取一些可编辑模板示例。
 
-   * **静态模板**：这些是旧版模板，仅建议从 Adobe Managed Services (AMS) 和内部部署 AEM Forms 安装（AEM 6.5 Forms 或更早版本）迁移的客户使用。它们可让您继续使用投资购买的现有静态模板。在创建新的自适应表单时，建议使用可编辑模板。
+   * **静态模板**：这些是旧版模板，仅建议从 Adobe Managed Services (AMS) 和内部部署 AEM Forms 安装（AEM 6.5 Forms 或更早版本）迁移的客户使用。它们可让您继续使用投资购买的现有静态模板。创建自适应表单时，请使用可编辑的模板。
 
 
 
-## 创建自适应表单 (Foundation 组件) {#create-an-adaptive-form-foundation-components}
+## 创建自适应表单（基础组件） {#create-an-adaptive-form-foundation-components}
 
 1. 访问 [!DNL Experience Manager Forms] 创作实例。它可以是云实例或本地开发实例。
 
@@ -89,7 +89,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
      >
      > 您还可以使用自适应表单编辑器创建[!UICONTROL 记录文档]模板。有关更多信息，请参阅[自适应表单编辑器中的记录文档支持](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
 
-   * 选择静态模板时，数据、样式、提交、交付和预览选项将不可用。在创建新的自适应表单时，建议使用可编辑模板。
+   * 选择静态模板时，数据、样式、提交、交付和预览选项将不可用。创建自适应表单时，请使用可编辑的模板。
 
 1. 在&#x200B;**[!UICONTROL 样式]**&#x200B;选项卡中，选择一个主题：
 

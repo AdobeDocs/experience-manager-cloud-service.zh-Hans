@@ -3,13 +3,13 @@ title: AEM as a Cloud Service 的目标选择器
 description: 使用 AEM 目标选择器显示和选择可用作原始资源副本的资源。
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: cf783a91d33bc7a42e177ace3ca49844f14a6a79
+exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1906'
 ht-degree: 86%
 
 ---
-
 
 # 微前端目标选择器 {#Overview}
 
@@ -212,7 +212,7 @@ interface SelectedDestination {
 
 ### 示例 1：在目标选择器中创建文件夹
 
-目标选择器可让您创建新文件夹以在特定位置上传、移动或复制资产。
+目标选择器允许您创建文件夹，以便在特定位置上传、移动或复制资产。
 
 ![create-folder-destination-selector](assets/create-folder-destination-selector.png)
 
@@ -261,7 +261,7 @@ interface SelectedDestination {
 
 ### 创建新文件夹 {#create-new-folder}
 
-它允许您在的目标文件夹中创建新文件夹 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+它允许您在 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
 ### 视图类型 {#types-of-view}
 

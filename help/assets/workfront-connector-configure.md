@@ -4,9 +4,9 @@ description: 配置 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Adobe Workfront文档与资源之间的元数据映射在AEM元数据架构中�
 要配置映射，请执行以下步骤：
 
 1. 导航到 **工具** > **资产** > **元数据架构**.
-1. 选择要编辑的元数据架构表单，然后单击 **编辑** 或从头开始创建新的元数据架构。
+1. 选择要编辑的元数据架构表单，然后单击 **编辑** 或从头开始创建元数据架构。
 1. 选择要编辑的元数据架构表单字段，然后选择 **设置** 选项卡。
 1. 在 [!DNL Workfront] 自定义表单字段选择 [!DNL Workfront] 要映射到选定AEM属性的字段。 可用选项包括：
 

@@ -2,9 +2,9 @@
 title: 为 Screens as a Cloud Service 开发自定义组件
 description: 以下教程将介绍为AEM Screens创建自定义组件的步骤。 AEM Screens可重复使用其他AEM产品的许多现有设计模式和技术。 本教程重点介绍了为AEM Screens开发时的差异和特殊注意事项。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2106'
 ht-degree: 3%
 
 ---
@@ -329,7 +329,7 @@ AEM Screens组件在编辑模式与预览/生产模式中的呈现方式有所�
 
 1. 复制并粘贴 `shared` 用于创建名为的客户端库的客户端库文件夹 `production`.
 
-   ![复制共享客户端库以创建新的生产客户端库](/help/screens-cloud/developing/assets/copy-clientlib.gif)
+   ![复制共享客户端库以创建生产客户端库](/help/screens-cloud/developing/assets/copy-clientlib.gif)
 
    复制共享客户端库以创建生产客户端库。
 

@@ -2,10 +2,10 @@
 title: 内容片段模型（资产 — 内容片段）
 description: 了解内容片段模型如何作为AEM中Headless内容的基础，以及如何使用结构化内容创建内容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f499edbc05b71495c072564bb065a07c34a9e236
+source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
 workflow-type: tm+mt
-source-wordcount: '2937'
-ht-degree: 95%
+source-wordcount: '2935'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 1. [为您的实例启用内容片段模型功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [创建](#creating-a-content-fragment-model)和[配置](#defining-your-content-fragment-model)，内容片段模型
 1. [启用您的内容片段模型](#enabling-disabling-a-content-fragment-model)，以便在创建内容片段时使用
-1. 通过配置&#x200B;**策略**，[允许在所需的 Assets 文件夹上创建内容片段模型](#allowing-content-fragment-models-assets-folder)。
+1. 通过配置[策略](#allowing-content-fragment-models-assets-folder)，**允许在所需的 Assets 文件夹上创建内容片段模型**。
 
 ## 创建内容片段模型 {#creating-a-content-fragment-model}
 
@@ -99,7 +99,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 
 ## 数据类型 {#data-types}
 
-可以选择数据类型以定义模型：
+有一批数据类型可用于定义您的模型：
 
 * **单行文本**
    * 添加单行文本的一个或多个字段；可以定义最大长度
@@ -125,7 +125,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
       * 根据相应的模型创建新内容片段
 * **JSON 对象**
    * 允许内容片段作者在片段的相应元素中输入 JSON 语法。
-      * 允许 AEM 存储您从其他服务复制/粘贴的直接 JSON。
+      * 使 AEM 可存储您从另一服务复制/粘贴的直接 JSON。
       * JSON 将被传递，并在 GraphQL 中作为 JSON 输出。
       * 内容片段编辑器中包括 JSON 语法高亮显示、自动完成和错误高亮显示。
 * **制表符占位符**
@@ -296,7 +296,7 @@ type CompanyModel {
 
 * **允许创建片段**
 
-  这将允许片段作者根据相应的模型创建新片段。
+  这将允许片段作者根据相应的模型创建片段。
 
    * **片段引用组合** – 允许片段作者通过选择多个片段来构建复合
 
@@ -443,8 +443,7 @@ type CompanyModel {
 1. 导航到&#x200B;**“工具”**、**“常规”**，然后打开&#x200B;**“内容片段模型”**。
 
 1. 导航到包含内容片段模型的文件夹。
-1. 选择您的模型，然后从工具栏中&#x200B;**“取消发布”**。
-控制台中会指示已发布状态。
+1. 选择您的模型，然后从工具栏中选择&#x200B;**取消发布**。控制台中会指示已发布状态。
 
 如果您尝试取消发布一个或多个片段当前使用的模型，则会出现错误警告，通知您：
 
