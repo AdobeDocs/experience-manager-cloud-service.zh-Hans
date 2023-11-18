@@ -2,10 +2,10 @@
 title: 的发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 的发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 97%
+source-wordcount: '1379'
+ht-degree: 94%
 
 ---
 
@@ -15,20 +15,14 @@ ht-degree: 97%
 
 ## 发布日期 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.14 版的发布日期是 2023 年 10 月 13 日。
+最新版本1.9.15的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 为2023年11月17日。
 
 ## 版本亮点 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
 
-* 在高级设置下禁用事件订阅后，您仍可以选择选项以&#x200B;**订阅文档更新事件以更新 AEM 资源元数据**、**在项目完成后将所有项目资源发布到 Brand Portal**&#x200B;和&#x200B;**启用评论同步。**
-
-* 在 Workfront 中预览 Experience Manager 中存储的某些资源时，这些资源无法正确呈现。
-
-* 重新配置 Experience Manager 与 Workfront 的连接时，未成功创建评论同步更新、删除、文档更新等事件订阅。
-
-* 主要 API 性能改进，针对链接的文件夹创建、更新、启用链接的文件夹、评论同步启用和禁用、连接器上的高级设置保存。
-
+* 在查看AEM文件夹列表时，加载该对话框需要花费超过一分钟的时间。
+* 已授权 [!DNL Workfront] 用户始终收到身份验证失败错误日志。
 
 >[!NOTE]
 >
@@ -37,7 +31,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.14 版。](/help/assets/workfront-connector-install.md)
+>Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.15 版。](/help/assets/workfront-connector-install.md)
 
 ## 已知问题 {#known-issues}
 
@@ -46,6 +40,16 @@ ht-degree: 97%
 * 当您使用经典Workfront体验时， **[!UICONTROL 发送至]** 中提供的选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 可在&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表中正常使用&#x200B;**[!UICONTROL 收件人]**&#x200B;选项。**[!UICONTROL 收件人]**&#x200B;选项适用于&#x200B;**[!UICONTROL 更多]**&#x200B;下拉列表和新 Workfront 体验中可用的&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表。
 
 ## 之前的版本 {#previous-releases}
+
+### 2023 年 10 月版本 {#october-2023-release}
+
+* 在高级设置下禁用事件订阅后，您仍可以选择选项以&#x200B;**订阅文档更新事件以更新 AEM 资源元数据**、**在项目完成后将所有项目资源发布到 Brand Portal**&#x200B;和&#x200B;**启用评论同步。**
+
+* 在 Workfront 中预览 Experience Manager 中存储的某些资源时，这些资源无法正确呈现。
+
+* 重新配置 Experience Manager 与 Workfront 的连接时，未成功创建评论同步更新、删除、文档更新等事件订阅。
+
+* 主要 API 性能改进，针对链接的文件夹创建、更新、启用链接的文件夹、评论同步启用和禁用、连接器上的高级设置保存。
 
 ### 2023 年 9 月版 {#september-2023-release}
 
