@@ -2,10 +2,10 @@
 title: 不同功能与新增功能 – Adobe Experience Manager as a Cloud Service
 description: 不同功能与新增功能 – Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 98%
+source-wordcount: '1889'
+ht-degree: 94%
 
 ---
 
@@ -36,13 +36,13 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->有关内部部署和托管服务版本的详细信息，请参阅 [AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans) 的文档集。
+>有关内部部署和托管服务版本的更多详细信息，请参阅 [AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans) .
 
 ## 架构 {#architecture}
 
 >[!NOTE]
 >
->有关详细信息，请参阅[架构](/help/overview/architecture.md)。
+>有关更多详细信息，请参阅 [架构](/help/overview/architecture.md).
 
 AEM as a Cloud Service 现在具有：
 
@@ -87,7 +87,7 @@ AEM as a Cloud Service 现在使用连续集成和连续交付 (CI/CD)，以确�
 
 >[!TIP]
 >
->有关更多详细信息，请参阅 [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)。
+>有关更多详细信息，请参阅 [AEM版本更新](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -156,7 +156,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->有关详细信息，您可通过[开发指南](/help/implementing/developing/introduction/development-guidelines.md)和[部署 – WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)来开始了解。
+>有关更多详细信息，您可以从 [开发准则](/help/implementing/developing/introduction/development-guidelines.md) 和 [开发 — WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 支持 AEM as a Cloud Service 的新架构涉及到对整体开发人员体验的一些关键改变。AEM as a Cloud Service 的主要目标之一是允许经验丰富的客户（曾在内部部署或者在 Adobe Managed Service 环境中使用 AEM）尽可能快地迁移到 AEM as a Cloud Service，而无需重新编写大量的自定义代码。不过，可能仍然需要进行一些调整。
 
@@ -224,7 +224,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->有关详细信息，请参阅[安全性 – IMS 支持](/help/security/ims-support.md)。
+>请参阅 [安全性 — IMS支持](/help/security/ims-support.md).
 
 对 AEM as a Cloud Service 的一项重大更改是完全集成使用 Adobe ID 来访问创作层。
 
@@ -240,7 +240,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->如需了解详细信息，[基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md)是一个很好的起点。
+>欲知更多详情，请参见 [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md) 是一个很好的起点。
 
 对于 Sites 和 Assets，以前使用过 AEM 的任何用户都会非常熟悉创作用户界面 (UI) 的基本原则。
 
@@ -274,6 +274,6 @@ Assets 产品包括云中的新一代资源处理以及高性能资源引入和�
 
 >[!TIP]
 >
->在大致了解 AEM as a Cloud Service 后，您可以查看[入门培训历程](/help/journey-onboarding/overview.md)来快速入门。
+>当您大致了解AEMas a Cloud Service时，可以通过查看 [入门历程](/help/journey-onboarding/overview.md).
 >
 >已完成入门培训或准备开始深入测试 AEM 的功能？安装 [AEM 参考演示加载项](/help/journey-sites/demos-add-on/overview.md)，使用丰富的示例探究 AEM 的强大功能。

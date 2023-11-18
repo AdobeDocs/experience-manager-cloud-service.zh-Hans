@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 7%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 15%
 
 1. 执行下列操作之一：
 
-   * 在资产UI中，选择资产，然后单击/点按 **[!UICONTROL 查看属性]** 图标。
+   * 从Assets UI中，选择资产并选择 **[!UICONTROL 查看属性]** 图标。
    * 从资源缩略图中，选择 **[!UICONTROL 查看属性]** 快速操作。
-   * 在资产页面中，单击/点按 **[!UICONTROL 查看属性]** 工具栏中。
+   * 从资产页面中，选择 **[!UICONTROL 查看属性]** 工具栏中。
 
-   资源页面显示资源的所有元数据。 此元数据在上传（引入）到Experience Manager Assets后会自动提取。
+   资源页面显示资源的元数据。 此元数据在上传（引入）到Experience Manager Assets后会自动提取。
 
-1. 根据需要，在各个选项卡下对元数据进行编辑，完成后，单击／点按工具栏中的 **[!UICONTROL 保存]** ，以保存更改。 单击／点 **[!UICONTROL 按关闭]** ，以返回到资产Web界面。
+1. 根据需要，在各个选项卡下对元数据进行编辑，完成后，选择 **[!UICONTROL 保存]** 以保存更改。 选择 **[!UICONTROL 关闭]** 以返回到Assets Web界面。
 
    >[!NOTE]
    >
@@ -49,10 +49,10 @@ ht-degree: 15%
 您可以在Experience Manager中添加自己的命名空间。 就像存在预定义的命名空间（如cq、jcr和sling）一样，您也可以具有用于存储库元数据和xml处理的命名空间。
 
 1. 转到节点类型管理页面 *https://&lt;host>：&lt;port>/crx/explorer/nodetypes/index.jsp*.
-1. 单击或点按 **[!UICONTROL 命名空间]** 页面顶部的。 命名空间管理页面将显示在窗口中。
+1. 选择 **[!UICONTROL 命名空间]** 页面顶部的。 命名空间管理页面将显示在窗口中。
 
-1. 要添加命名空间，请单击或点按 **[!UICONTROL 新建]** 在底部。
-1. 以XML命名空间惯例指定自定义命名空间（以URI形式指定ID并为ID指定关联的前缀），然后单击或点按 **[!UICONTROL 保存]**.
+1. 要添加命名空间，请选择 **[!UICONTROL 新建]** 在底部。
+1. 以XML命名空间惯例指定自定义命名空间（以URI形式指定ID并为ID指定关联的前缀），然后选择 **[!UICONTROL 保存]**.
 
 **另请参阅**
 

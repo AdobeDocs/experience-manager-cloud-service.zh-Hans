@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1683819d4f11d4503aa0d218ecff6375fc5c54d1
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2732'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 不应在AEMas a Cloud Service中使用实例的文件系统。 该盘是短暂的，并且在实例被回收时进行处置。 有限地使用文件系统进行与处理单个请求相关的临时存储是可能的，但不应滥用文件系统进行大型存储。 这是因为这可能会对资源使用配额产生负面影响，并遇到磁盘限制。
 
-例如，如果不支持使用文件系统，发布层应确保将任何需要保留的数据发送到外部服务以进行长期存储。
+例如，不支持使用文件系统，发布层应确保将必须保留的任何数据发送到外部服务以进行更长期存储。
 
 ## 观察 {#observation}
 

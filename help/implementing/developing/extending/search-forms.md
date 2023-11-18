@@ -2,7 +2,7 @@
 title: 配置搜索表单
 description: 为Adobe Experience Manager as a Cloud Service配置搜索Forms 。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2035'
 ht-degree: 16%
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](
 
 >[!NOTE]
 >
->有关资产相关搜索表单的更多详细信息，请参阅 [资产 — 搜索Facet](/help/assets/search-facets.md)
+>有关资产相关搜索表单的更多详细信息，请参阅 [资产 — 搜索Facet](/help/assets/search-facets.md).
 
 
 ## 谓词及其设置 {#predicates-and-their-settings}

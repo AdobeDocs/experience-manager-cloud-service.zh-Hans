@@ -1,9 +1,9 @@
 ---
 title: 将 AMS 转换为 Adobe Experience Manager as a Cloud Service Dispatcher 配置
 description: 将 AMS 转换为 Adobe Experience Manager as a Cloud Service Dispatcher 配置
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1282'
 ht-degree: 39%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 39%
 
 1. **提取存档并删除最后的前缀**
 
-   将存档解压缩到一个文件夹，并确保直接子文件夹以conf、conf.d、conf.dispatcher.d和conf.modules.d开头。如果没有，则将其在层次结构中上移。
+   将存档解压缩到一个文件夹，并确保直接子文件夹以conf、conf.d、conf.dispatcher.d和conf.modules.d开头。如果没有，则将其在层次结构中向上移动。
 
 1. **删除未使用的子文件夹和文件**
 
@@ -32,16 +32,16 @@ ht-degree: 39%
 
 1. **移除所有虚拟主机文件**
 
-   在conf.d/enabled_vhosts中，其名称包含author、unhealthy、health、lc或flush。 也可以移除 conf.d/available_vhosts 中未链接到的所有虚拟主机文件。
+   conf.d/enabled_vhosts中名称含有author、unhealthy、health、lc或flush的文件。 也可以移除 conf.d/available_vhosts 中未链接到的所有虚拟主机文件。
 
 1. 移除或注释未引用端口 80 的虚拟主机部分
 
-   例如，如果您的虚拟主机文件中仍有部分专门引用端口80以外的端口，
+   例如，如果您的虚拟主机文件中仍有部分内容专门引用端口80以外的端口，
 
    `<VirtualHost *:443>`
    `...`
    `</VirtualHost>`，
-则请移除或注释该部分。不会处理这些部分中的语句，但如果您保留这些语句，您最终可能仍会编辑它们，并且不会产生任何效果，这会造成混淆。
+则请移除或注释该部分。不会处理这些部分中的语句，但是如果保留它们，您可能最终仍会对其进行编辑，并且不会有任何效果，这会造成混淆。
 
 1. **检查 rewrites**
 
@@ -85,7 +85,7 @@ ht-degree: 39%
 
 1. **删除所有未发布的场**
 
-   移除conf.dispatcher.d/enabled_farms中名称包含author、unhealthy、health、lc或flush的任何场文件。 也可以移除 conf.dispatcher.d/available_farms 中未链接到的所有场文件。
+   移除conf.dispatcher.d/enabled_farms中名称含有author、unhealthy、health、lc或flush的所有场文件。 也可以移除 conf.dispatcher.d/available_farms 中未链接到的所有场文件。
 
 1. **重命名场文件**
 
@@ -97,11 +97,11 @@ ht-degree: 39%
 
    移除所有前缀为 `ams_` 的文件。
 
-   如果conf.dispatcher.d/cache现在为空，请复制文件 `conf.dispatcher.d/cache/rules.any` 从标准Dispatcher配置复制到此文件夹。 标准Dispatcher配置可在此SDK的src文件夹中找到。 别忘了修改引用 `ams_*_cache.any` 场文件中的规则文件。
+   如果conf.dispatcher.d/cache现在为空，请复制文件 `conf.dispatcher.d/cache/rules.any` 从标准Dispatcher配置复制到此文件夹。 标准Dispatcher配置可以在此SDK的src文件夹中找到。 别忘了修改引用 `ams_*_cache.any` 场文件中的规则文件。
 
    如果conf.dispatcher.d/cache现在包含单个带后缀的文件 `_cache.any`，应将其重命名为 `rules.any`. 请记得修改场文件中引用该文件的$include语句。
 
-   但是，如果该文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
+   但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
 
    移除任何带有后缀的文件 `_invalidate_allowed.any`.
 
@@ -117,13 +117,13 @@ ht-degree: 39%
 
    移除所有前缀为 `ams_` 的文件。
 
-   如果conf.dispatcher.d/clientheaders包含单个带后缀的文件 `_clientheaders.any`，将其重命名为 `clientheaders.any`. 请记得修改场文件中引用该文件的$include语句。
+   如果conf.dispatcher.d/clientheaders包含带有后缀的单个文件 `_clientheaders.any`，将其重命名为 `clientheaders.any`. 请记得修改场文件中引用该文件的$include语句。
 
-   但是，如果该文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
+   但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
 
    复制文件 `conf.dispatcher/clientheaders/default_clientheaders.any` 从默认Dispatcher配置转到该位置。
 
-   在每个场文件中，将任意 `clientheader` “include”语句，如下所示：
+   在每个场文件中，将任意 `clientheader` “include”语句，显示如下：
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -139,9 +139,9 @@ ht-degree: 39%
 
    * 移除所有前缀为 `ams_` 的文件。
 
-   * 如果“conf.dispatcher.d/filters”现在包含单个文件，请将其重命名为 `filters.any`. 请记得修改场文件中引用该文件的$include语句。
+   * 如果conf.dispatcher.d/filters现在包含单个文件，请将其重命名为 `filters.any`. 请记得修改场文件中引用该文件的$include语句。
 
-   * 但是，如果该文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
+   * 但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
 
    * 复制文件 `conf.dispatcher/filters/default_filters.any` 从默认Dispatcher配置转到该位置。
 
@@ -172,7 +172,7 @@ ht-degree: 39%
 
    * 如果conf.dispatcher.d/virtualhosts现在包含单个文件，请将其重命名为 `virtualhosts.any`. 请记得修改场文件中引用该文件的$include语句。
 
-   * 但是，如果该文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
+   * 但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
 
    * 复制文件 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 从默认Dispatcher配置转到该位置。
 
@@ -211,7 +211,7 @@ ht-degree: 39%
 
 1. 使用该部署信息在Docker映像中启动Dispatcher。
 
-   在macOS计算机上运行AEM发布服务器，并在端口4503上侦听后，您可以在该服务器前面运行启动Dispatcher，如下所示：
+   在macOS计算机上运行AEM发布服务器，并监听端口4503时，您可以在该服务器前面运行启动Dispatcher，如下所示：
 
    `$ docker_run.sh out docker.for.mac.localhost:4503 8080`
 

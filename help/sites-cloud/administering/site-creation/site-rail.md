@@ -4,10 +4,10 @@ description: 了解站点边栏的强大功能，帮助您轻松自定义和管�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 97%
+source-wordcount: '583'
+ht-degree: 83%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 97%
 
 ![下载主题源](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-点按或单击&#x200B;**下载主题源**，以 `.zip` 文件形式下载站点主题的本地副本以进行自定义。
+选择 **下载主题源** 将站点主题的本地副本下载为 `.zip` 文件以进行自定义。
 
 ## 下载模板资源 {#downloading-template-resources}
 
@@ -48,7 +48,7 @@ ht-degree: 97%
 
 ![下载主题源](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-点按或单击&#x200B;**下载其他模板资源**&#x200B;标题下的一个或多个按钮以下载可用文件的本地副本。
+选择标题下的一个或多个按钮 **下载其他模板资源** 下载可用文件的本地副本。
 
 ## 查看和更改主题版本 {#them-versions}
 
@@ -60,11 +60,11 @@ ht-degree: 97%
 
 主题的当前版本连同其提交哈希以及上次更新时间戳一起显示。
 
-点击或单击 **选择版本** 查看主题的早期版本。
+选择 **选择版本** 查看主题的早期版本。
 
 ![选择主题版本](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-点按或单击要更改为的版本，然后点按或单击&#x200B;**应用**&#x200B;以进行更改。
+选择要更改为的版本，然后选择 **应用** 进行更改。
 
 如果 AEM 检测到较新版本的主题已通过前端管道部署但未应用于您的站点，则将显示一个通知图标。
 
@@ -78,7 +78,7 @@ ht-degree: 97%
 
 但是，您可以使用站点边栏为站点启用前端管道。
 
-利用站点控制台中显示的站点边栏，选择站点的根以显示有关站点的主题信息，然后点按或单击&#x200B;**启用前端管道**。
+利用站点控制台中显示的站点边栏，选择站点的根以显示有关站点的主题信息，然后选择 **启用前端管道**.
 
 ![启用前端管道](/help/sites-cloud/administering/assets/enable-fep.png)
 

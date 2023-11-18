@@ -1,17 +1,17 @@
 ---
-title: 将工作流应用于页面
-description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。。
+title: 将工作流程应用于页面
+description: 在创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 93%
+source-wordcount: '654'
+ht-degree: 83%
 
 ---
 
-# 将工作流应用于页面 {#applying-workflows-to-pages}
+# 将工作流程应用于页面 {#applying-workflows-to-pages}
 
-进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
+在创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
 
 在应用工作流时，您需要指定以下信息：
 
@@ -116,7 +116,7 @@ ht-degree: 93%
 
 1. 在&#x200B;**范围**&#x200B;步骤中，您可以选择：
 
-   * **添加内容**&#x200B;以打开[路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)并选择其他资源；在浏览器中，单击/点按&#x200B;**选择**&#x200B;以将内容添加到工作流实例。
+   * **添加内容** 以打开 [路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 并选择其他资源；在浏览器中，选择 **选择** 将内容添加到工作流实例。
 
    * 现有资源以查看其他操作：
 

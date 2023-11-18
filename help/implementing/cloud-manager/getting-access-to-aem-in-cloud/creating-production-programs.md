@@ -2,9 +2,9 @@
 title: 创建生产程序
 description: 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 73%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 73%
 
    ![创建项目向导](assets/create-production-program.png)
 
-1. 或者，您也可以将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标，或单击它以从文件浏览器中选择图像，从而将图像添加到项目中。点按或单击&#x200B;**继续**。
+1. 或者，您也可以将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标，或单击它以从文件浏览器中选择图像，从而将图像添加到项目中。选择 **继续**.
 
-1. 如果您拥有必要的权限， **安全性** 选项卡，并提供激活的选项 **HIPAA** 和/或 **WAF-DDOS保护** 用于您的生产程序。 如果您正在创建的程序有需要，请勾选适用的选项，然后点按或单击 **继续**.
+1. 如果您拥有必要的权限， **安全性** 选项卡，并提供激活的选项 **HIPAA** 和/或 **WAF-DDOS保护** 用于您的生产程序。 如果您正在创建的程序有需要，请勾选适用的选项，然后选择 **继续**.
 
    * 程序创建后无法启用或禁用HIPAA。
       * [详细了解](https://www.adobe.com/go/hipaa-ready_cn) Adobe 的 HIPAA 就绪解决方案实施。

@@ -2,10 +2,10 @@
 title: AEM Headless 内容作者历程
 description: 从此处开始，借助 AEM 强大而灵活的 Headless 功能、相应的功能以及为项目创作内容的方法，实施引导式历程。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '881'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '876'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 
 ## AEM 文档历程 {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/documentation-journeys.md)通过提供叙述来帮助可能是 AEM 新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或 AEM 知识，从而将许多不同且可能复杂的主题和功能联系起来。
+[文档历程](/help/journey-documentation/documentation-journeys.md) 通过提供叙述来帮助可能是AEM新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或AEM知识，从而将许多不同的、复杂的主题和功能联系起来。
 
 文档历程是围绕最佳实践准则而设计的，其中包含了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及来自客户项目的反馈。
 
@@ -43,7 +43,7 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 
 该历程列出了有关为 AEM Headless 项目创作内容的要求、步骤和方法。此历程将定义作者为成功实施项目而必须与之互动的其他角色，但历程的观点是内容作者的观点。
 
-虽然此历程中的信息对其他角色很有用，但一些信息对特定角色来说是多余的。请继续关注即将推出的涵盖其他角色的历程。
+此历程中的信息对其他角色可能很有用，但一些信息对特定角色来说是多余的。 请继续关注即将推出的涵盖其他角色的历程。
 
 ## Headless 内容作者历程 {#the-journey}
 
@@ -76,7 +76,7 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 文档历程将提供叙述来指导您完成复杂、相互关联的流程和使用相关功能，从而向您说明 AEM 如何解决业务问题。历程说明了多项功能如何协作以满足单一业务需求。
 
-因为此类历程被设计成独立的历程。不过，其中的许多历程可以相互关联。查看这些附加历程，详细了解 AEM 的强大功能如何协作。
+因为此类历程被设计成独立的历程。但是，其中几个可以相互关联。 查看这些附加历程，详细了解 AEM 的强大功能如何协作。
 
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。

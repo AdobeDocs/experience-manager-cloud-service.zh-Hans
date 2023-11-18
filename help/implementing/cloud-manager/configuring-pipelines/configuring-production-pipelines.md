@@ -3,9 +3,9 @@ title: 配置生产管道
 description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1413'
 ht-degree: 79%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 79%
    * **[全栈代码](#full-stack-code)**
    * **[目标部署](#targeted-deployment)**
 
-请参阅文档 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有关管道类型的更多信息。
+请参阅 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有关管道类型的更多信息。
 
 根据您选择的源代码类型，完成生产管道创建的步骤有所不同。 按照上面的链接跳到本文档的下一节，完成管道的配置。
 

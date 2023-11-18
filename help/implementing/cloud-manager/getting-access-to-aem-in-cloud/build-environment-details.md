@@ -2,9 +2,9 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1004'
 ht-degree: 96%
 
 ---
@@ -42,7 +42,7 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
 
 ### 使用特定的 Java 版本 {#using-java-support}
 
-默认情况下，项目通过使用 Oracle 8 JDK 的 Cloud Manager 构建过程构建。 希望使用替代 JDK 的客户有两种选择。
+默认情况下，项目通过使用 Oracle 8 JDK 的 Cloud Manager 构建过程构建。 希望使用替代JDK的客户有两种选择。
 
 * [适用 Maven 工具链。](#maven-toolchains)
 * [为整个 Maven 执行过程选择替代 JDK 版本。](#alternate-maven-jdk-version)
@@ -179,7 +179,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 ## 安装其他系统包 {#installing-additional-system-packages}
 
-一些版本需要安装其他系统包才能完全运行。 例如，内部版本可能会调用Python或Ruby脚本，并且需要安装适当的语言解释程序。 可以通过在 `pom.xml` 中调用 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) 来调用 APT，从而达到此目的。此执行通常应封装在特定于 Cloud Manager 的 Maven 配置文件中。此示例安装 Python。
+一些版本需要安装其他系统包才能完全运行。 例如，内部版本可能会调用Python或Ruby脚本，并且必须安装适当的语言解释程序。 可以通过在 `pom.xml` 中调用 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) 来调用 APT，从而达到此目的。此执行通常应封装在特定于 Cloud Manager 的 Maven 配置文件中。此示例安装 Python。
 
 ```xml
         <profile>

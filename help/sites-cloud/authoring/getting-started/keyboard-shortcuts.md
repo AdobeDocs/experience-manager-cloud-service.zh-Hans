@@ -2,10 +2,10 @@
 title: 控制台的键盘快捷键
 description: 创作时使用这些键盘快捷键可以节省时间
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
-source-wordcount: '376'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 94%
 
 ---
 
@@ -65,7 +65,7 @@ AEM 避免出现热门浏览器已使用的常见快捷键，但 AEM 快捷键�
 
 ## 取消激活键盘快捷键 {#deactivating-keyboard-shortcuts}
 
-AEM 为一些常用功能（编辑、属性、复制/粘贴、显示各种侧边栏菜单等）提供了键盘快捷键。
+AEM为一些常用功能（编辑、属性、复制/粘贴、显示各种边栏菜单等）提供了键盘快捷键。
 
 对于不使用键盘快捷键或要求使用特定辅助功能的用户，可禁用所有键盘快捷键。
 

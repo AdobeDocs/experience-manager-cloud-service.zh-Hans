@@ -2,10 +2,10 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 91%
+source-wordcount: '1541'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->有许多键盘快捷键可帮助您更轻松地创作体验。
+>有几个键盘快捷键可以简化创作体验。
 >
 >* [编辑页面时的键盘快捷键](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [控制台的键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
@@ -87,17 +87,17 @@ ht-degree: 91%
 
 ### 选择页面以执行其他操作 {#selecting-your-page-for-further-action}
 
-您可以选择一个页面，以对其执行操作。选择页面后，工具栏将自动更新，以显示与该资源相关的操作。
+您可以选择某个页面以便对其进行操作。 选择页面后，工具栏将自动更新，以显示与该资源相关的操作。
 
 选择页面的方式取决于您在控制台中所使用的视图：
 
 1. 列视图：
 
-   * 点按/单击所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该页面。
+   * 选择所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该页面。
 
 1. 列表视图：
 
-   * 点按/单击所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该页面。
+   * 选择所需资源的缩略图 — 缩略图上覆盖有一个勾号，表示已选择该页面。
 
 1. 卡片视图：
 
@@ -114,7 +114,7 @@ ht-degree: 91%
 
 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)可用：
 
-1. [导航](#finding-your-page)到要执行操作的页面。
+1. [导航到页面](#finding-your-page) 你想采取行动。
 1. 将鼠标指针悬停在代表所需资源的卡片上方。快速操作会显示：
 
    ![卡片操作](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -147,7 +147,7 @@ ht-degree: 91%
 
    * [编辑页面中现有组件的内容](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)：
 
-      * 通过点按或单击打开组件工具栏。使用&#x200B;**编辑**（铅笔）图标打开对话框。
+      * 通过选择打开组件工具栏。 使用&#x200B;**编辑**（铅笔）图标打开对话框。
       * 通过点按住或慢速双击打开组件的就地编辑器。此时会显示可用的操作（对于某些组件，该选择将受到限制）。
       * 要查看所有可用的操作，请使用以下图标进入全屏模式：
 
@@ -155,16 +155,16 @@ ht-degree: 91%
 
    * [配置现有组件的属性](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
-      * 通过点按或单击打开组件工具栏。使用&#x200B;**配置**（扳手）图标打开对话框。
+      * 通过选择打开组件工具栏。 使用&#x200B;**配置**（扳手）图标打开对话框。
 
    * 通过以下任一方式[移动组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)：
 
       * 将所需组件拖动到新位置。
-      * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**剪切**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
+      * 通过选择打开组件工具栏。 使用 **剪切** 则 **粘贴** 所需的图标。
 
    * [复制（并粘贴）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
-      * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
+      * 通过选择打开组件工具栏。 使用 **复制** 则 **粘贴** 图标。
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ ht-degree: 91%
 
    * [删除](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
-      * 通过点按或单击打开组件工具栏，然后使用&#x200B;**删除**&#x200B;图标。
+      * 通过选择打开组件工具栏，然后使用 **删除** 图标。
 
    * 向页面[添加注释](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations)：
 
@@ -292,7 +292,7 @@ ht-degree: 91%
 
    ![引用视图](/help/sites-cloud/authoring/assets/references-list.png)
 
-1. 点按/单击所需的引用类型以显示更多详细信息，并（在适当时）采取进一步操作。
+1. 选择所需的引用类型以显示更多详细信息并（在适当时）采取进一步操作。
 
 ### 创建页面版本 {#creating-a-version-of-your-page}
 
@@ -302,7 +302,7 @@ ht-degree: 91%
 
    ![时间线视图选项](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. 点按/单击“时间轴”列右下方的省略号以显示其他按钮，包括 **另存为版本**.
+1. 选择“时间轴”列右下方的省略号以显示其他按钮，包括 **另存为版本**.
 
    ![时间线视图](/help/sites-cloud/authoring/assets/timeline-view.png)
 
@@ -318,7 +318,7 @@ ht-degree: 91%
 
    如果页面的某个版本已经保存，则会在“时间轴”中列出该版本。
 
-1. 点按/单击要还原的版本 — 这将显示其他操作按钮：
+1. 选择要还原的版本 — 这将显示其他操作按钮：
 
    * **恢复到此版本**
 

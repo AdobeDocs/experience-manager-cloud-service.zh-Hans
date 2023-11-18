@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: a1fc394c13d740b2250ec91340a0fe0e865ecbe3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 100%
+source-wordcount: '644'
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 | 用户指南 | 描述 |
 |---|---|
-| [概述](/help/overview/home.md) | 本指南提供了 Experience Manager as a Cloud Service 的概述，包括简介、术语等。 |
+| [概述](/help/overview/home.md) | 本指南提供了Experience Manageras a Cloud Service的概述，包括简介、术语等。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门培训历程](/help/journey-onboarding/overview.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作和管理。 |

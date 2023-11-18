@@ -4,10 +4,10 @@ description: 使用 AEM 目标选择器显示和选择可用作原始资源副�
 contentOwner: Adobe
 role: Admin,User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 86%
+source-wordcount: '1904'
+ht-degree: 85%
 
 ---
 
@@ -259,7 +259,7 @@ interface SelectedDestination {
 
 这是 `optionsFormSetup` 属性的一个例子。您可以使用它来确认选择，它会在 `onConfirm` 事件中传递。
 
-### 创建新文件夹 {#create-new-folder}
+### 创建文件夹 {#create-new-folder}
 
 它允许您在 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 
@@ -274,7 +274,7 @@ interface SelectedDestination {
 
 ### 信息 {#info}
 
-通过信息或信息图标，可查看所选资源的元数据。 它包括各种详细信息，例如维度、大小、描述、路径、修改日期和创建日期。在上传或复制或创建新资源时提供元数据信息。
+通过信息或信息图标，可查看所选资源的元数据。 它包括各种详细信息，例如维度、大小、描述、路径、修改日期和创建日期。元数据信息在上传、复制或创建资源时提供。
 
 ### 选择文件夹 {#select-folder}
 

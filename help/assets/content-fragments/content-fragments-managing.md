@@ -2,9 +2,9 @@
 title: 管理内容片段（资产 — 内容片段）
 description: 了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1876'
 ht-degree: 71%
 
 ---
@@ -149,7 +149,7 @@ ht-degree: 71%
 
    >[!NOTE]
    >
-   >**保存并关闭** 可通过&#x200B;**保存**&#x200B;下拉菜单使用。
+   >**保存并关闭** 通过以下方式提供 **保存** 下拉列表。
 
    >[!NOTE]
    >

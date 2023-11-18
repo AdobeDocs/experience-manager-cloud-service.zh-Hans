@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的内容恢复
 description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud Service 内容。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 94%
+source-wordcount: '1158'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 >* 该功能仅在开发环境中可用。
 >* 每个节目每月的内容恢复仅限两次。
 >
->有关 AEM as a Cloud Service 的现有备份和恢复系统的详细信息，请参阅文档[AEM as a Cloud Service 中的备份和还原](/help/operations/backup.md)
+>有关AEMas a Cloud Service现有备份和还原系统的详细信息，请参阅 [AEMas a Cloud Service中的备份和恢复](/help/operations/backup.md).
 
 ## 概述 {#overview}
 
@@ -42,7 +42,7 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 ## 恢复内容 {#restoring-content}
 
-首先确定要恢复的内容的时间范围。然后，要从备份中恢复环境的内容，请执行这些步骤。
+首先确定要恢复的内容的时间范围。 然后，要从备份中恢复环境的内容，请执行这些步骤。
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
    * 或者，您也可以直接导航到&#x200B;**还原内容**&#x200B;选项卡。
 
-1. 在环境详细信息页面的&#x200B;**还原内容**&#x200B;选项卡上，首先在&#x200B;**还原时间**&#x200B;下拉菜单下选择还原的时间范围。
+1. 在 **恢复内容** 环境详细信息页面的选项卡中，首先在 **恢复时间** 下拉列表。
 
    1. 如果您选择&#x200B;**过去 24 小时**，则相邻的&#x200B;**时间**&#x200B;字段让您指定过去 24 小时内的准确时间来恢复。
 
@@ -72,13 +72,13 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
    ![备份可用](assets/backup-available.png)
 
-1. 使用信息图标查找您要还原的备份，以查看有关该备份中包含的代码版本和 AEM 版本的信息，并在[选择备份时考虑还原的影响。](#choosing-the-right-backup)
+1. 使用信息图标查找要还原的备份，以查看有关该备份中包含的代码版本和AEM版本的信息，并考虑以下情况下还原的影响 [选择备份。](#choosing-the-right-backup)
 
    ![备份信息](assets/backup-info.png)
 
-   * 请注意，为还原选项显示的时间戳都基于用户计算机的时区。
+   * 为还原选项显示的时间戳全部基于用户计算机的时区。
 
-1. 单击&#x200B;**还原**&#x200B;图标，该图标表示要恢复以启动恢复过程的备份。
+1. 单击 **恢复** 图标，表示要恢复以启动恢复过程的备份。
 
 1. 查看&#x200B;**恢复内容**&#x200B;对话框，然后单击&#x200B;**还原**&#x200B;以确认您的请求。
 
@@ -103,7 +103,7 @@ Cloud Manager 的自助服务恢复过程仅将内容恢复到 AEM。因此，�
    * 在这种情况下，将不显示提交 ID。
    * 强烈建议您克隆两个存储库，然后使用差异工具来比较分支。
 
-此外，请记住，恢复可能会导致您的生产和暂存环境脱离同步。恢复内容的后果由您负责。
+此外，请记住，恢复可能会导致您的生产和暂存环境不同步。 恢复内容的后果由您负责。
 
 ## 还原活动 {#restore-activity}
 

@@ -2,10 +2,10 @@
 title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4567'
-ht-degree: 99%
+source-wordcount: '4538'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 99%
 >
 >管理员必须在&#x200B;**配置浏览器**&#x200B;中配置一个模板文件夹，并应用适当的权限，之后模板作者才能在该文件夹中创建模板。
 
-在开始之前，请务必考虑到创建新模板需要多方协作。因此，为每项任务指明了对应的[角色](#roles)。这并不会影响您使用模板来创建页面的实际操作方式，但却会影响页面与模板之间的关系。
+在开始之前，请务必考虑创建模板需要协作。 因此，为每项任务指明了对应的[角色](#roles)。这并不会影响您使用模板来创建页面的实际操作方式，但却会影响页面与模板之间的关系。
 
 ### 角色 {#roles}
 
@@ -67,7 +67,7 @@ ht-degree: 99%
 
 ## 创建和管理模板 {#creating-and-managing-templates}
 
-创建新的可编辑模板时，您需要执行以下步骤：
+创建可编辑模板时，您可以：
 
 * 使用&#x200B;**模板**&#x200B;控制台。此控制台可从&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分访问。
    * 或直接从以下网站进行访问：`https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
@@ -89,7 +89,7 @@ ht-degree: 99%
 
 >[!TIP]
 >
->切勿在模板中输入任何需要国际化的信息。<!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>切勿在模板中输入任何必须国际化的信息。 <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
 >对于必须本地化的模板元素（如页眉和页脚），请利用[核心组件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
@@ -160,12 +160,12 @@ ht-degree: 99%
 要定义模板缩略图，请执行以下操作：
 
 1. 编辑模板属性。
-1. 选择是要上传缩略图，还是要从模板内容中生成缩略图。
-   * 如果要上传缩略图，请单击或点按&#x200B;**上传图像**。
-   * 如果要生成缩略图，请单击或点按&#x200B;**生成预览**。
+1. 选择要上传缩略图，还是从模板内容生成缩略图。
+   * 如果要上传缩略图，请选择 **上传图像**
+   * 如果要生成缩略图，请选择 **生成预览**
 1. 使用上述两种方法时，系统都会显示缩略图预览。
-   * 如果对缩略图不满意，请单击或点按&#x200B;**清除**&#x200B;以上传其他图像，或重新生成缩略图。
-1. 如果对缩略图满意，请单击或点按&#x200B;**保存并关闭**。
+   * 如果不满意，请选择 **清除** 上传其他图像或重新生成缩略图。
+1. 如果对缩略图满意，请选择 **保存并关闭**.
 
 ### 启用并允许模板 - 模板作者 {#enabling-and-allowing-a-template-template-author}
 
@@ -184,7 +184,7 @@ ht-degree: 99%
 
 1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
 1. 从工具栏中选择&#x200B;**启用**&#x200B;或&#x200B;**禁用**，然后在确认对话框中再次选择“启用”或“禁用”。
-1. 现在，您便能够在[创建新页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)时使用模板，不过您可能想要根据自己的需求[编辑模板](#editing-templates-template-authors)。
+1. 现在，您可以在以下情况下使用模板： [创建页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，但您可能希望 [编辑模板](#editing-templates-template-authors) 根据您的要求。
 
 >[!NOTE]
 >
@@ -219,7 +219,7 @@ ht-degree: 99%
 
 ### 发布模板 – 模板作者 {#publishing-a-template-template-author}
 
-由于渲染页面时会引用模板，因此模板在完全配置后需要进行发布，才能用于发布环境。
+由于渲染页面时会引用模板，因此必须发布完全配置的模板，才能在发布环境中使用该模板。
 
 1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
 1. 从工具栏中选择&#x200B;**发布**&#x200B;以打开向导。
@@ -293,7 +293,7 @@ ht-degree: 99%
 
 ![模板编辑器页面结构](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-您可以在模板编辑器的&#x200B;**结构**&#x200B;模式中执行许多操作，并且有许多功能可协助您执行操作：
+您可以在中执行多个操作 **结构** 模板编辑器的模式和一些功能可以帮助您：
 
 #### 添加组件 {#add-components}
 
@@ -360,21 +360,21 @@ ht-degree: 99%
 
 内容（或设计）策略可定义组件的设计属性。例如，可用的组件或最小/最大尺寸。这些属性适用于模板（和使用模板创建的页面）。
 
-在&#x200B;**策略**&#x200B;下方，您可以通过下拉列表选择要应用于组件的现有策略。
+下 **策略** 您可以通过下拉列表选择要应用于组件的现有策略。
 
 ![选择策略](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-此外，也可以通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，来添加新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。
+可以通过选择旁边的“添加”按钮添加新策略。 **选择策略** 下拉菜单。 在中提供新标题 **策略标题** 字段。
 
 ![“添加策略”按钮](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，可复制在此下拉列表中选定的现有策略以将其作为新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。默认情况下，复制的策略的标题为 **X 的副本**，其中 X 是被复制的策略的标题。
+中选定的现有策略 **选择策略** 可以使用下拉列表旁边的复制按钮复制下拉列表作为新策略。 在中提供新标题 **策略标题** 字段。 默认情况下，复制的策略的标题为 **X 的副本**，其中 X 是被复制的策略的标题。
 
 ![“复制策略”按钮](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 **策略说明**&#x200B;字段中的策略说明是可选的。
 
-在&#x200B;**同时使用该选定策略的其他模板**&#x200B;部分中，您可以轻松地查看同时也使用了&#x200B;**选择策略**&#x200B;下拉列表中的选定策略的其他模板。
+在 **同时使用该选定策略的其他模板** 部分中，您可以轻松地查看其他哪些模板使用了在中选定的策略 **选择策略** 下拉列表。
 
 ![使用现有策略](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -395,13 +395,13 @@ ht-degree: 99%
 
 例如，对于图像组件，可定义允许的宽度，并启用延迟加载。
 
-如果某项设置允许多个配置，请单击或点按&#x200B;**添加**&#x200B;按钮，以添加其他配置。
+如果设置允许多项配置，请选择 **添加** 按钮以添加其他配置。
 
 ![“添加”按钮](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-要删除配置，请单击或点按位于配置右侧的&#x200B;**删除**&#x200B;按钮。
+要删除配置，请选择 **删除** 按钮进行配置。
 
-要删除配置，请单击或点按&#x200B;**删除**&#x200B;按钮。
+要删除配置，请选择 **删除** 按钮。
 
 ![“删除”按钮](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -461,9 +461,9 @@ ht-degree: 99%
 
 在&#x200B;**默认组件**&#x200B;选项卡上，您可以定义要自动与给定媒体类型关联的组件，以便作者从资源浏览器中拖动资源时，AEM 知道要将其与哪个组件关联。请注意，只有具有拖放区域的组件才可使用此类配置。
 
-单击或点按&#x200B;**添加映射**，可添加全新的组件和 MIME 类型映射。
+选择 **添加映射** 添加全新的组件和MIME类型映射。
 
-在列表中选择一个组件，然后单击或点按 **添加类型** ，以向已映射的组件添加其他MIME类型。单击&#x200B;**删除**&#x200B;图标可删除 MIME 类型。
+在列表中选择一个组件并选择 **添加类型** 向已映射的组件添加额外的MIME类型。 单击&#x200B;**删除**&#x200B;图标可删除 MIME 类型。
 
 ![“默认组件”选项卡](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -568,20 +568,20 @@ ht-degree: 99%
 
   ![策略选择器](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  此外，也可以通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，来添加新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。
+  可以通过选择旁边的“添加”按钮添加新策略。 **选择策略** 下拉列表。 在中提供新标题 **策略标题** 字段。
 
   ![“添加策略”按钮](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，可复制在此下拉列表中选定的现有策略以将其作为新策略。然后，应该在&#x200B;**策略标题**&#x200B;字段中输入一个新标题。默认情况下，复制的策略的标题为 **X 的副本**，其中 X 是被复制的策略的标题。
+  中选定的现有策略 **选择策略** 可以使用下拉列表旁边的复制按钮复制下拉列表作为新策略。 在中提供新标题 **策略标题** 字段。 默认情况下，复制的策略的标题为 **X 的副本**，其中 X 是被复制的策略的标题。
 
   ![“复制策略”按钮](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* 在&#x200B;**策略标题**&#x200B;字段中定义策略的标题。策略需要具有标题，以便能够轻松地在&#x200B;**选择策略**&#x200B;下拉列表中对其进行选择。
+* 在&#x200B;**策略标题**&#x200B;字段中定义策略的标题。策略需要具有标题，以便能够轻松地在 **选择策略** 下拉列表。
 
   ![策略标题](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * **策略说明**&#x200B;字段中的策略说明是可选的。
-* 在&#x200B;**同时使用该选定策略的其他模板**&#x200B;部分中，您可以轻松地查看同时也使用了&#x200B;**选择策略**&#x200B;下拉列表中的选定策略的其他模板。
+* 在 **同时使用该选定策略的其他模板** 部分中，您可以轻松地查看其他哪些模板使用了在中选定的策略 **选择策略** 下拉列表。
 
   ![策略使用情况](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 

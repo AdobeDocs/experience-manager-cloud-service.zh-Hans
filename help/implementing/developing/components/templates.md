@@ -2,10 +2,10 @@
 title: 页面模板
 description: 创建用作新页面基础的页面时，将使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3287'
-ht-degree: 8%
+source-wordcount: '3279'
+ht-degree: 7%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 8%
 
 创建页面模板主要是通过 [模板控制台和模板编辑器](/help/sites-cloud/authoring/features/templates.md) 模板作者执行的操作。 本节概述了此过程，并在后面描述了技术级别所发生的情况。
 
-创建新的可编辑模板时，您需要执行以下步骤：
+创建可编辑模板时，您可以：
 
 1. 创建 [模板文件夹](#template-folders). 这并非强制要求，但建议采用最佳实践。
 1. 选择 [模板类型](#template-type). 这将被复制以创建 [模板定义](#template-definitions).
@@ -112,7 +112,7 @@ ht-degree: 8%
 
 >[!TIP]
 >
->切勿在模板中输入任何需要国际化的信息。出于内部化的目的， [核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) 建议使用。
+>切勿在模板中输入任何必须国际化的信息。 出于内部化的目的， [核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) 建议使用。
 
 >[!NOTE]
 >
@@ -191,13 +191,13 @@ ht-degree: 8%
 
 1. 除了标准创作权限之外(例如， `content-authors`)现在，您需要分配组并定义作者所需的访问权限(ACL)，以便能够在新文件夹中创建模板。
 
-   此 `template-authors` group是需要分配的默认组。 请参阅部分 [ACL和组](#acls-and-groups) 以了解详细信息。
+   此 `template-authors` group是必须分配的默认组。 请参阅部分 [ACL和组](#acls-and-groups) 以了解详细信息。
 
    <!--See [Access Right Management](/help/sites-administering/user-group-ac-admin.md#access-right-management) for full details on managing and assigning access rights.-->
 
 ### 使用配置浏览器 {#using-the-configuration-browser}
 
-1. 转到 **全局导航** -> **工具** > [**配置浏览器**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+1. 转到 **全局导航** > **工具** > [**配置浏览器**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    左侧列出了现有文件夹，包括 `global` 文件夹。
 
@@ -211,7 +211,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->在 [配置浏览器，](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) 您可以编辑全局文件夹并激活 **可编辑的模板** 选项，但建议不要使用此文件夹创建模板。
+>在 [配置浏览器，](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) 您可以编辑全局文件夹并激活 **可编辑的模板** 选项，但这不是建议的最佳做法。
 
 ### ACL和组 {#acls-and-groups}
 
@@ -289,9 +289,9 @@ ht-degree: 8%
 
 ## 模板类型 {#template-type}
 
-创建新模板时，您需要指定模板类型：
+创建模板时，您需要指定模板类型：
 
-* 模板类型可以有效地为模板提供模板。 创建新模板时，使用所选模板类型的结构和初始内容创建新模板。
+* 模板类型可以有效地为模板提供模板。 创建模板时，使用所选模板类型的结构和初始内容创建新模板。
 
    * 将复制模板类型以创建模板。
    * 复制完成后，模板和模板类型之间的唯一连接是用作信息的静态引用。
@@ -338,7 +338,7 @@ The [device groups](/help/sites-developing/mobile.md#device-groups) used for an 
 * On the editable template type
 * On the editable template
 
-When creating a new editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
+When creating an editable template, the value is copied from the template type to the individual template. If the value is not set on the type, it can be set on the template. Once a template is created, there is no inheritance from the type to the template.
 
 >[!CAUTION]
 >
@@ -545,7 +545,7 @@ GITHUB上的代码
 
 ### 模板可用性 {#template-availability}
 
-在站点管理界面中创建新页面时，可用模板的列表取决于新页面的位置以及在每个模板中指定的版面限制。
+在站点管理界面中创建页面时，可用模板的列表取决于新页面的位置以及在每个模板中指定的版面限制。
 
 以下属性确定模板是否 `T` 允许用于作为页面的子项放置的新页面 `P`. 以下每个属性都是一个多值字符串，其中包含零个或多个用于与路径匹配的正则表达式：
 

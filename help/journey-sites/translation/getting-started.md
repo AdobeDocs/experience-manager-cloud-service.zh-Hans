@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 96%
+source-wordcount: '1390'
+ht-degree: 90%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 96%
 
 ## 要求和先决条件 {#requirements-prerequisites}
 
-在开始翻译 AEM 内容之前，需要满足许多要求。
+在开始翻译AEM内容之前，需要满足几项要求。
 
 ### 知识 {#knowledge}
 
@@ -65,7 +65,7 @@ Sites 控制台提供了内容结构的概览，可让您通过创建新页面�
 
 要访问 Sites 控制台，请执行以下操作：
 
-1. 在全局导航菜单中，单击或点按&#x200B;**导航** -> **站点**。
+1. 在全局导航菜单中，选择 **导航** > **站点**.
 1.  Sites 控制台将打开以显示内容的顶层。
 1. 确保使用窗口右上方的视图选择器来选择&#x200B;**列视图**。
 
@@ -75,7 +75,7 @@ Sites 控制台提供了内容结构的概览，可让您通过创建新页面�
 
    ![内容层次结构](assets/sites-console-hierarchy.png)
 
-1. 通过点按或单击列中某个项目的复选框，它会选择该项目并在右侧列中显示所选项目的详细信息，以及在上面的工具栏中显示许多可用于所选项目的操作。
+1. 通过点按或单击列中某个项目的复选框，它会选择该项目并在右侧的列中显示选定项目的详细信息，并在上面的工具栏中显示多个可用于选定项目的操作。
 
    ![内容选择](assets/sites-console-selection.png)
 
@@ -97,7 +97,7 @@ Sites 控制台可让您浏览内容并提供其结构的概述。要查看单�
 
 要编辑页面，请执行以下操作：
 
-1. 使用 Sites 控制台查找并选择页面。请记住，您需要点按或单击单个页面的复选框才能将其选定。
+1. 使用 Sites 控制台查找并选择页面。请记住，您需要选中单个页面的复选框以将其选中。
 
    ![选择要编辑的页面](assets/sites-editor-select-page.png)
 

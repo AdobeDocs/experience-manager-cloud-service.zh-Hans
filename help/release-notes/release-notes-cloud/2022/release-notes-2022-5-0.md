@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 75%
+source-wordcount: '789'
+ht-degree: 73%
 
 ---
 
@@ -68,9 +68,9 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 * 快速访问产品驾驶舱：在站点编辑器中，通过一键单击即可轻松访问完整的详细产品信息
 
-  ![启用愿望清单](/help/assets/CIF/enable-wishlist.png)
+<!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
-* 支持其他营销商务组件：组件可以配置为显示添加到购物车和添加到愿望清单的号召性用语
+* 支持其他营销商务组件：组件可以配置为显示添加到购物车和添加到愿望清单的行动号召
 
   ![站点编辑器到产品驾驶舱的快捷键](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 

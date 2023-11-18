@@ -2,7 +2,7 @@
 title: 在 AEM 中编辑外部 SPA
 description: 本文档介绍了将独立SPA上传到AEM实例、添加内容的可编辑部分以及启用创作的建议步骤。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 * 使用以下方式创建基本AEM SPA项目 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Forms是AEM项目的基础，对该基础进行了更新以包含外部SPA。
    * 对于本文档中的示例，Adobe使用 [WKND SPA项目](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
-* 准备好您想要集成的工作中的外部React SPA。
+* 准备好要集成的工作中外部React SPA。
 
 ## 将SPA上传至AEM项目 {#upload-spa-to-aem-project}
 

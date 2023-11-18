@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2930'
+source-wordcount: '2928'
 ht-degree: 3%
 
 ---
@@ -194,7 +194,7 @@ asset compute服务集成允许Experience Manager使用以下方式将这些参�
 将后处理工作流配置添加到 [!DNL Experience Manager]，请按照以下步骤操作：
 
 * 创建一个或多个工作流模型。 这些自定义模型称为 *后处理工作流模型* 请参阅此文档。 这些是常规的 [!DNL Experience Manager] 工作流模型。
-* 将所需的工作流步骤添加到这些模型中。 查看默认工作流的步骤，并将所有必需的默认步骤添加到自定义工作流中。 这些步骤基于工作流模型配置对资产执行。 例如，如果您希望在上传资产时自动进行智能标记，请将步骤添加到自定义后处理工作流模型中。
+* 将所需的工作流步骤添加到这些模型中。 查看默认工作流的步骤，并将所有必需的默认步骤添加到自定义工作流中。 这些步骤基于工作流模型配置在资产上运行。 例如，如果您希望在上传资产时自动进行智能标记，请将步骤添加到自定义后处理工作流模型中。
 * 添加 [!UICONTROL DAM更新资产工作流已完成流程] 在末尾步行。 添加此步骤可确保Experience Manager知道处理何时结束，并且可以将资源标记为已处理，即 *新建* 将在资源上显示。
 * 为自定义工作流运行器服务创建配置，以允许通过路径（文件夹位置）或正则表达式配置后处理工作流模型的执行。
 

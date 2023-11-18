@@ -3,10 +3,10 @@ title: CI/CD 管道
 description: 了解 Cloud Manager 的 CI/CD 管道，以及如何使用它们高效地部署代码。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 8b8f10bfaad2d8d7d409384e01a2c65a588d77e0
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 92%
+source-wordcount: '1418'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Cloud Manager 提供两种类型的管道：
 
 ### 了解 Cloud Manager 中的 CI-CD 管道 {#understand-pipelines}
 
-下表总结了 Cloud Manager 中可用的所有管道及其用法。
+下表总结了Cloud Manager中可用的管道及其用法。
 
 | 管道类型 | 部署或代码质量 | 源代码 | 用途 | 注释 |
 |--- |--- |--- |---|---|
@@ -115,7 +115,7 @@ Cloud Manager 提供两种类型的管道：
 
 通过配置管道，您可以在几分钟内配置和部署流量过滤器规则，包括WAF规则。
 
-请参阅文档 [包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 了解如何管理存储库中的配置，以便正确部署它们。
+请参阅 [包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 了解如何管理存储库中的配置，以便正确部署它们。
 
 ### 配置管道 {#configure-config-deployment}
 
@@ -157,7 +157,7 @@ Cloud Manager 提供两种类型的管道：
 
 ## Web 层配置管道 {#web-tier-config-pipelines}
 
-Web 层配置管道通过将 HTTPD/Dispatcher 配置与其他代码更改分离，实现了对 AEM 运行时的独占部署。该管道已经简化，为只希望部署 Dispatcher 配置更改的用户提供了加速方法，只需几分钟即可完成部署。
+Web 层配置管道通过将 HTTPD/Dispatcher 配置与其他代码更改分离，实现了对 AEM 运行时的独占部署。它是一个简化的管道，为只希望部署Dispatcher配置更改的用户提供了加速方法，只需几分钟即可完成部署。
 
 >[!TIP]
 >

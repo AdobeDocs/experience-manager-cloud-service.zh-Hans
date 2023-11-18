@@ -2,10 +2,10 @@
 title: 了解参考演示加载项安装
 description: 了解 Cloud Manager 以及如何使用它安装加载项。
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager 用于管理支持您的 AEM 项目的云资源，包括所需的�
 
 >[!TIP]
 >
->如果您希望深入了解 Cloud Manager，请参阅本文的[其他资源](#additional-resources)部分，获取指向更多信息的链接。
+>如果您想深入了解Cloud Manager，请参阅 [其他资源](#additional-resources) 部分，以获取指向更多信息的链接。
 
 ### 项目 {#programs}
 

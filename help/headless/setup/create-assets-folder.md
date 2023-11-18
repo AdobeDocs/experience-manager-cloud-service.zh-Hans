@@ -2,10 +2,10 @@
 title: 创建资源文件夹 – Headless 设置
 description: 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '383'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 88%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 100%
 
 管理员只需要偶尔创建文件夹，在创建内容时用于组织内容。对于本指南快速入门，我们只需要创建一个文件夹。
 
-1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**导航 -> 资源 -> 文件**。
-1. 点按或单击&#x200B;**创建 -> 文件夹**。
+1. 登录AEMas a Cloud Service，从主菜单选择 **导航>资产>文件**.
+1. 选择 **“创建”>“文件夹”**.
 1. 提供文件夹的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
    * **名称**&#x200B;会成为存储库中的节点名称。
@@ -38,12 +38,12 @@ ht-degree: 100%
 1. 在&#x200B;**属性**&#x200B;窗口中，选择 **Cloud Services** 选项卡。
 1. 对于&#x200B;**云配置**，选择[您之前创建的配置。](create-configuration.md)
    ![配置资源文件夹](../assets/assets-folder-configure.png)
-1. 点按或单击&#x200B;**保存并关闭**。
-1. 在确认窗口中，点按或单击&#x200B;**确定**。
+1. 选择 **保存并关闭**.
+1. 选择 **确定** 在确认窗口中。
 
    ![确认窗口](../assets/assets-folder-confirmation.png)
 
-您可以在刚刚创建的文件夹中创建额外的子文件夹。子文件夹将继承父文件夹的&#x200B;**云配置**。但是，如果您希望使用来自其他配置的模型，则可以覆盖此项。
+您可以在刚刚创建的文件夹中创建额外的子文件夹。子文件夹将继承父文件夹的&#x200B;**云配置**。但是，如果要使用来自其他配置的模型，则可以覆盖此项。
 
 如果您使用本地化的站点结构，则可以在新文件夹下[创建语言根](/help/assets/translate-assets.md)。
 

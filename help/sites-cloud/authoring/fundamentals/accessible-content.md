@@ -2,9 +2,9 @@
 title: 创建 Adobe Experience Manager as a Cloud Service 的无障碍内容（WCAG 2.1 合规性）
 description: 使用 AEM as a Cloud Service 帮助残障人士访问和使用 Web 内容
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '13861'
+source-wordcount: '13859'
 ht-degree: 99%
 
 ---
@@ -479,7 +479,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 
 此外，如果用户使用仅支持文本的浏览器、单色显示设备或查看黑白打印的页面，他们也无法感知到颜色。
 
-还需要考虑的一个事项是界面元素（例如，选项卡、切换按钮等）的“选定”**&#x200B;状态，这些状态需要以颜色和视觉呈现方式以外的其他某种方式传递。对于这些元素，在创建不依赖特定感官的全包容用户体验时，额外使用图案、形状和编程信息将很有帮助。
+进一步考虑因素为 *已选择* 界面元素（例如，选项卡、切换按钮等）的状态，这些状态必须以颜色和视觉呈现方式以外的其他某种方式传递。 对于这些元素，在创建不依赖特定感官的全包容用户体验时，额外使用图案、形状和编程信息将很有帮助。
 
 #### 如何达到标准 – 使用颜色 (1.4.1) {#how-to-meet-use-of-color}
 
@@ -674,7 +674,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 
 [准则 2.2 充足的时间：为用户提供充足的时间来阅读和使用内容。](https://www.w3.org/TR/WCAG/#enough-time)
 
-此准则涉及的是，确保用户有充足的时间来阅读内容并执行操作。
+此准则涉及的是，确保用户有充足的时间进行阅读和操作。
 
 ### 计时可调 (2.2.1)  {#timing-adjustable}
 

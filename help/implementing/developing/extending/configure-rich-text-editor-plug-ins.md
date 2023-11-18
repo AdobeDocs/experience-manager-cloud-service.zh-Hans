@@ -4,9 +4,9 @@ description: 了解如何配置 [!DNL Adobe Experience Manager] 富文本编辑�
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4299'
+source-wordcount: '4298'
 ht-degree: 4%
 
 ---
@@ -293,18 +293,18 @@ pass-as-Microsoft-Word (`paste-wordhtml`)模式可进行进一步配置，以便
 要创建作者可以应用于日语文本的样式，请执行以下步骤：
 
 1. 在“样式”节点下创建一个节点。 请参阅 [指定样式](#stylesindropdown).
-   * 名称: `jpn-word-wrap`
-   * 类型: `nt:unstructure`
+   * 名称：`jpn-word-wrap`
+   * 类型：`nt:unstructure`
 
 1. 添加属性 `cssName` 到节点以引用CSS类。 此类名称是日语自动换行功能的保留名称。
-   * 名称: `cssName`
-   * 类型: `String`
+   * 名称：`cssName`
+   * 类型：`String`
    * 值： `jpn-word-wrap` (无前置词 `.`)
 
 1. 将属性文本添加到同一节点。 值是作者在选择样式时看到的样式名称。
    * 名称： `text`
 *类型： `String`
-   * 值: `Japanese word-wrap`
+   * 价值: `Japanese word-wrap`
 
 1. 创建样式表并指定其路径。 请参阅 [指定样式表的位置](#locationofstylesheet). 将以下内容添加到样式表中。 根据需要更改背景颜色。
 
@@ -586,9 +586,9 @@ pass-as-Microsoft-Word (`paste-wordhtml`)模式可进行进一步配置，以便
 >
 RTE拼写检查器可按需使用。 当您开始键入文本时，它不会自动运行。
 >
-要运行拼写检查器，请点按/单击工具栏中的拼写检查器按钮。 RTE检查单词的拼写并突出显示拼写错误的单词。
+要运行拼写检查器，请从工具栏中选择拼写检查器按钮。 RTE检查单词的拼写并突出显示拼写错误的单词。
 >
-如果合并拼写检查器建议的任何更改，则文本的状态将发生更改，拼写错误的单词将不再突出显示。 要运行拼写检查器，请再次点按/单击拼写检查器按钮。
+如果合并拼写检查器建议的任何更改，则文本的状态将发生更改，拼写错误的单词将不再突出显示。 要运行拼写检查器，请再次选择“拼写检查器”按钮。
 
 ## 配置撤消和重做操作的历史记录大小 {#undohistory}
 
@@ -629,8 +629,8 @@ RTE允许作者撤消或重做前几次编辑。 默认情况下，历史中存�
 1. 在组件内，导航到节点 `<rtePlugins-node>/lists`. 创建这些节点（如果这些节点不存在）。 有关更多详细信息，请参阅 [激活插件](#activateplugin).
 1. 在 `lists` 节点创建 `identSize` 参数：
 
-   * **名称**: `identSize`
-   * **类型**: `Long`
+   * **名称**：`identSize`
+   * **类型**：`Long`
    * **值**：缩进边距所需的像素数。
 
 ## 配置可编辑空间的高度 {#editablespace}

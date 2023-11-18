@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '5564'
+source-wordcount: '5562'
 ht-degree: 8%
 
 ---
@@ -509,11 +509,11 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 
 ### 创建工作流 {#create-workflow}
 
-与创建版本功能类似，您也可以为搜索结果中显示的资产创建工作流。 选择资产并单击 **[!UICONTROL 创建]** > **[!UICONTROL 工作流]**. 选择工作流模型，指定工作流的标题，然后单击 **[!UICONTROL 开始]**.
+与创建版本功能类似，您也可以为搜索结果中显示的资产创建工作流。 选择资源并单击 **[!UICONTROL 创建]** > **[!UICONTROL 工作流]**. 选择工作流模型，指定工作流的标题，然后单击 **[!UICONTROL 开始]**.
 
 ### 关联和取消关联资源 {#relate-unrelate-assets}
 
-关联和取消关联搜索结果中显示的资源。 选择资产并单击 **[!UICONTROL 相关]** 或 **[!UICONTROL 取消关联]**.
+关联和取消关联搜索结果中显示的资源。 选择资源并单击 **[!UICONTROL 相关]** 或 **[!UICONTROL 取消关联]**.
 
 ### 导航到资产文件夹位置 {#navigate-asset-folder-location}
 

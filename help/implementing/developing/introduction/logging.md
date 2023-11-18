@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service日志记录
 description: 了解如何使用AEMas a Cloud Service日志记录功能配置中央日志记录服务的全局参数、各个服务的特定设置以及如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 9d1aab8f615f9e6aa9751fe978a56c915c9a8797
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2757'
+source-wordcount: '2753'
 ht-degree: 9%
 
 ---
@@ -279,7 +279,7 @@ AEMas a Cloud Service在发布上为Apache Web Server和Dispatcher层提供三�
 * Apache HTTPD Web Server错误日志
 * Dispatcher日志
 
-请注意，这些日志仅适用于发布层。
+这些日志仅适用于发布层。
 
 这组日志提供了在向AEMas a Cloud Service发布层发送HTTP请求以将其送达AEM应用程序之前的见解。 这一点非常重要，因为理想情况下，对发布层服务器的大多数HTTP请求都由Apache HTTPD Web Server和AEM Dispatcher缓存的内容提供，并且永远不会访问AEM应用程序本身。 因此，AEM Java、请求或访问日志中没有这些请求的日志语句。
 
@@ -504,7 +504,7 @@ Define DISP_LOG_LEVEL debug
 
 AEMas a Cloud Service提供对CDN日志的访问，这些日志对于包括缓存命中率优化在内的用例非常有用。 无法自定义CDN日志格式，并且没有将其设置为不同模式（例如“信息”、“警告”或“错误”）的概念。
 
-请注意，Splunk转发功能尚不支持CDN日志。
+Splunk转发功能尚不支持CDN日志。
 
 **示例**
 

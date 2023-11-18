@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1533'
 ht-degree: 41%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 41%
 
 * 在属性页面中选择更新元数据时，如果架构提供了许多选项，则界面响应缓慢。 (CQ-4318538)
 
-* 在单行文本字段中更新和保存元数据值时，即使下拉菜单上禁用编辑，下拉菜单中的值也会被删除。 (CQ-4317077)
+* 在单行文本字段中更新和保存元数据值时，即使下拉列表菜单上禁用编辑，下拉列表菜单中的值也会被删除。 (CQ-4317077)
 
 * 您可以将省略号用作注释来查看资产。 使用小椭圆时，椭圆与打印版本中的注释编号重叠。 (CQ-4316792)
 
@@ -97,7 +97,7 @@ ht-degree: 41%
 
   借助先进的机器学习算法，Adobe Sign的Government ID流程让世界各地的企业均可确保高质量地验证其收件人的身份。 现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
 
-  Government ID是一种高级的身份验证方法，它指示收件人 [上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)，然后评估该文档以确保真实有效。
+  Government ID是一种高级的身份验证方法，它指示收件人 [上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/cn/in/sign/using/adobesign-authentication-government-id.html)，然后评估该文档以确保真实有效。
 
 * **支持对异步提交自适应表单使用表单内签名体验**
 
@@ -109,7 +109,7 @@ ht-degree: 41%
 
 * **支持使用字面选项设置 JSON 类型变量的值**
 
-  可在 AEM Workflow 的“设置变量”步骤中使用字面选项设置 JSON 类型变量的值。通过字面选项，可按字符串的形式指定JSON。
+  可在 AEM Workflow 的“设置变量”步骤中使用字面选项设置 JSON 类型变量的值。通过字面选项，可按字符串的形式指定 JSON。
 
 * **使用本地开发环境创建记录文档 (DoR)**
 

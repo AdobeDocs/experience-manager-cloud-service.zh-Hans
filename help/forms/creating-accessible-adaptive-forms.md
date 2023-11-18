@@ -1,15 +1,13 @@
 ---
 title: 如何创建无障碍的自适应Forms？
 description: AEM Forms提供了用于创建无障碍自适应Forms的工具，并有助于遵守无障碍标准。
-uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-可访问的表单是每个人都能使用的表单，包括有特殊需求的用户。 自适应Forms包括许多特性和功能，可增强具有不同功能的用户的可用性。 将辅助功能构建到自适应Forms中不仅允许尽可能广泛的受众访问内容，而且在要求遵守辅助功能标准的地区提供文档时也需要这样做。 [!DNL AEM Forms] 帮助表单开发人员符合辅助功能标准。
+可访问的表单是每个人都能使用的表单，包括有特殊需求的用户。 自适应Forms包括多种特性和功能，可增强具有不同功能的用户的可用性。 将辅助功能构建到自适应Forms中不仅允许尽可能广泛的受众访问内容，而且在要求遵守辅助功能标准的地区提供文档时也需要这样做。 [!DNL AEM Forms] 帮助表单开发人员符合辅助功能标准。
 
 在创作自适应表单时，作者应考虑以下几点来创建无障碍的自适应表单：
 

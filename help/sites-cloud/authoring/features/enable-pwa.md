@@ -2,10 +2,10 @@
 title: 启用渐进式 Web 应用程序功能
 description: AEM Sites 允许内容作者通过简单的配置而非编码为任何站点启用渐进式 Web 应用程序功能。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
-workflow-type: ht
-source-wordcount: '2004'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1998'
+ht-degree: 98%
 
 ---
 
@@ -102,8 +102,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 满足[前提条件](#prerequisites)后，内容作者可以轻松地为站点启用 PWA 功能。以下是有关如何执行此操作的基本概览。[详细选项](#detailed-options)部分中详述了各个选项。
 
 1. 登录 AEM。
-1. 从主菜单中，点按或单击&#x200B;**导航** -> **站点**。
-1. 选择您的站点项目，然后点按或单击&#x200B;[**属性**](/help/sites-cloud/authoring/fundamentals/page-properties.md)&#x200B;或使用热键 `p`。
+1. 从主菜单中，选择 **导航** > **站点**.
+1. 选择您的站点项目并选择 [**属性**](/help/sites-cloud/authoring/fundamentals/page-properties.md) 或使用热键 `p`.
 1. 选择&#x200B;**渐进式 Web 应用程序**&#x200B;选项卡，并配置适用的属性。至少您需要：
    1. 选择&#x200B;**启用 PWA** 选项。
    1. 定义&#x200B;**启动 URL**。
@@ -123,7 +123,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
       ![定义 PWA 离线路径](../assets/pwa-offline.png)
 
-1. 点按或单击&#x200B;**保存并关闭**。
+1. 选择 **保存并关闭**.
 
 您的站点现已配置，您可以[将它作为本地应用程序安装。](#using-pwa-enabled-site)
 

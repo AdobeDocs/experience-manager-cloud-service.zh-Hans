@@ -2,10 +2,10 @@
 title: 您的收件箱
 description: 了解如何使用收件箱中收到的通知来管理您的任务。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 98%
+source-wordcount: '910'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
       * 这些项目是工作流程&#x200B;**参与者**&#x200B;步骤的产物。
    * 失败项目，允许管理员重试失败的步骤
 
-您可以在自己的收件箱中接收这些通知，以便查看并采取相应操作。
+您将在自己的收件箱中收到这些通知，您可以在其中查看和操作通知。
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 98%
 
 打开 AEM 通知收件箱：
 
-1. 单击/点按工具栏中的指示器。
+1. 选择工具栏中的指示器。
 
 1. 选择&#x200B;**查看全部**。此 **AEM收件箱** 打开。 收件箱会显示工作流程、项目和任务中的项目。
 1. 默认视图为[列表视图](#inbox-list-view)，但您也可以切换到[日历视图](#inbox-calendar-view)。这是通过视图选择器（工具栏，右上方）完成的。

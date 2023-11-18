@@ -2,10 +2,10 @@
 title: New Relic One
 description: 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 98%
+source-wordcount: '1728'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
    * 您还可以通过程序的&#x200B;**环境**&#x200B;屏幕顶部的省略号按钮访问&#x200B;**管理用户**。
 
-1. 在&#x200B;**管理 New Relic 用户**&#x200B;对话框中，输入要添加的用户的名字和姓氏，然后单击&#x200B;**添加**&#x200B;按钮。对要添加的所有用户重复此步骤。
+1. 在 **管理New Relic用户** 对话框，输入要添加的用户的名字和姓氏，然后单击 **添加** 按钮。 对要添加的所有用户重复此步骤。
 
    ![添加用户](assets/newrelic-add-users.png)
 
@@ -154,7 +154,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 >
 >如果在 90 天或更长时间内未在您的 New Relic One 帐户中检测到任何活动，APM 代理将停止。
 >
->如果您要为您的 AEMaaCS 环境重新启用 APM 代理，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)开立支持票证。
+>通过 [AEM支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 如果要为AEMaaCS环境重新启用APM代理。
 
 有关您的 AEM as a Cloud Service 程序的 New Relic One 产品的更多帮助或更多指导，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持请求工单。
 
@@ -202,4 +202,4 @@ New Relic One 为用户提供了跨所有帐户搜索的能力，用户可以在
 
 ### 我的 New Relic One 帐户的 APM 代理已停止。发生了什么情况？ {#deactivated}
 
-如果在 90 天或更长时间内未检测到任何活动，[APM 代理将停止](#limitations)。如果您要为您的 AEMaaCS 环境重新启用 APM 代理，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)开立支持票证。
+如果在 90 天或更长时间内未检测到任何活动，[APM 代理将停止](#limitations)。通过 [AEM支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 如果要为AEMaaCS环境重新启用APM代理。

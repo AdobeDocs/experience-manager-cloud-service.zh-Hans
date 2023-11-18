@@ -2,10 +2,10 @@
 title: 创建内容片段 – Headless 设置
 description: 了解如何使用 AEM 的内容片段设计、创建、管理和使用独立于页面的内容，用于 Headless 投放。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 87%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 100%
 
 内容作者将创建任意数量的内容片段，用于呈现他们创建的内容。这会是他们在 AEM 中的主要任务。对于本指南快速入门，我们只需要创建一个。
 
-1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**导航** -> **内容片段**。
+1. 登录AEMas a Cloud Service，从主菜单选择 **导航** > **内容片段**.
 
-1. 点按或单击[之前创建的文件夹。](create-assets-folder.md)
-1. 点按或单击&#x200B;**创建**。
+1. 选择 [之前创建的文件夹。](create-assets-folder.md)
+1. 选择&#x200B;**创建**。
 1. 内容片段的创建将以对话框的形式呈现。
 选择要用于创建内容片段的位置和模型。
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
    ![创建新内容片段对话框](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. 点按或单击&#x200B;**“创建”**&#x200B;或&#x200B;**“创建并打开”**。
+1. 选择 **创建** 或  **创建并打开**.
 
 内容片段可以引用其他内容片段，在需要时允许嵌套内容结构。
 

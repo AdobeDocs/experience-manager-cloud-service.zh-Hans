@@ -2,10 +2,10 @@
 title: 管理启动项中的页面
 description: 您可以在启动项中创建新页面。也可以删除不需要的页面。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 94%
+source-wordcount: '288'
+ht-degree: 89%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 94%
 
 * 导航，
 * **创建**&#x200B;新页面，
-* 选择现有页面并执行操作；例如，**编辑**，打开&#x200B;**属性**、**锁定**、**复制**、**粘贴**&#x200B;和&#x200B;**删除**
+* 选择现有页面并执行操作；例如， **编辑**，打开 **属性**， **锁定**， **复制**， **粘贴** 和 **删除**
   ![从“管理内容”导航到站点控制台中的启动项](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * 使用&#x200B;**引用**&#x200B;边栏以返回&#x200B;**启动项源**页面：
   ![站点控制台 – 启动项源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

@@ -2,10 +2,10 @@
 title: 设置您的管道
 description: 创建前端管道来管理站点主题的自定义。
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 98%
+source-wordcount: '956'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 98%
 
 1. 登录 Adobe Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
 
-1. Cloud Manager 列出了可用的各种项目。点按或单击要管理的某个项目。如果您刚开始使用 AEM as a Cloud Service，则可能只有一个可用项目。
+1. Cloud Manager 列出了可用的各种项目。选择要管理的项目。 如果您刚开始使用 AEM as a Cloud Service，则可能只有一个可用项目。
 
    ![在 Cloud Manager 中选择项目](assets/cloud-manager-select-program.png)
 
@@ -71,7 +71,7 @@ ht-degree: 98%
 
 现在您已访问 Cloud Manager，可以为前端部署创建管道。
 
-1. 在 Cloud Manager 页面的&#x200B;**管道**&#x200B;分区中，点按或单击&#x200B;**添加**&#x200B;按钮。
+1. 在 **管道** 部分，选择 **添加** 按钮。
 
    ![管道](assets/pipelines-add.png)
 
@@ -83,7 +83,7 @@ ht-degree: 98%
 
    ![添加管道配置](assets/add-pipeline-configuration.png)
 
-1. 点按或单击&#x200B;**继续**。
+1. 选择 **继续**.
 
 1. 在&#x200B;**源代码**&#x200B;选项卡上：
    * 选择&#x200B;**前端代码**&#x200B;作为要部署的代码类型。
@@ -94,7 +94,7 @@ ht-degree: 98%
 
    ![用于添加管道的源代码信息](assets/add-pipeline-source-code.png)
 
-1. 点按或单击&#x200B;**保存**。
+1. 选择&#x200B;**保存**。
 
 在 Cloud Manager 窗口的&#x200B;**管道**&#x200B;分区中创建和显示新管道。点按或单击管道名称后的省略号会显示选项，以便根据需要进一步编辑或查看详细信息。
 

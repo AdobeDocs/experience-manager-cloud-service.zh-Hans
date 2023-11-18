@@ -2,10 +2,10 @@
 title: Universal Editor 简介
 description: 了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地编辑任何 Headless 和 Headful 体验。了解它如何帮助内容作者投放卓越的体验、提高他们的内容速度以及如何提供高水平的开发人员体验。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 79fe3133a6b0553209b14c4cf47faa9db28caacc
-workflow-type: ht
-source-wordcount: '919'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '925'
+ht-degree: 93%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 100%
 
 利用 Universal Editor 的实施的要求非常直接，并且支持以下内容：
 
-* **任何架构** – 服务器端呈现、边缘端呈现、客户端呈现等。
-* **任何框架** – Vanilla AEM，或任何第三方框架，如 React、Next.js、Angular 等。
+* **任何架构**  — 服务器端渲染、边缘端渲染、客户端渲染等。
+* **任何框架** - Vanilla AEM或任何第三方框架，如React、Next.js、Angular等。
 * **任何托管** – 可以本地托管到 AEM，或托管于远程域上
 
 ### 任何内容 {#any-content}
@@ -50,7 +50,7 @@ ht-degree: 100%
 
 对于内容作者来说，内容不仅仅与包含的信息有关，还与信息的呈现和接收方式有关。内容附带了额外的元数据和插桩规则，Universal Editor 可以理解这些规则并进行编辑，包括：
 
-* **应用布局和样式** – 通过使用样式系统，营销从业者和内容作者可以将不同的样式应用于其内容并为内容创建不同的布局，例如列、轮播、选项卡、折叠等。
+* **应用布局和样式**  — 通过使用样式系统，营销从业者和内容作者可以为其内容应用不同的样式，并为内容创建不同的布局，例如列、轮盘、选项卡、折叠等。
 
 ## 价值 {#value}
 

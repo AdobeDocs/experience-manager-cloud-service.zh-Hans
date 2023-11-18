@@ -3,9 +3,9 @@ title: 如何在自适应表单核心组件中创建可重复面板？
 description: 了解如何在自适应表单中创建一个或多个可重复的部分。
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1357'
 ht-degree: 6%
 
 ---

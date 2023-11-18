@@ -2,10 +2,10 @@
 title: 部署自定义主题
 description: 了解如何使用管道部署站点主题。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 96%
+source-wordcount: '1014'
+ht-degree: 88%
 
 ---
 
@@ -42,11 +42,11 @@ ht-degree: 96%
 
    ![Cloud Manager 概述](assets/cloud-manager-overview.png)
 
-1. 点按或单击需要启动的管道旁边的省略号。从下拉菜单中选择&#x200B;**运行**。
+1. 选择需要启动的管道旁边的省略号。 从下拉菜单中选择&#x200B;**运行**。
 
    ![运行管道](assets/run-pipeline.png)
 
-1. 在&#x200B;**运行管道**&#x200B;确认对话框中，点按或单击&#x200B;**是**。
+1. 在 **运行管道** 确认对话框，选择 **是**.
 
    ![确认管道运行](assets/pipeline-confirm.png)
 
@@ -58,7 +58,7 @@ ht-degree: 96%
 
 您可以随时检查管道的状态以查看其进度的详细信息。
 
-1. 点按或单击管道旁边的省略号。
+1. 选择管道旁边的省略号。
 
    ![查看管道详细信息](assets/view-pipeline-details.png)
 
@@ -68,7 +68,7 @@ ht-degree: 96%
 
 >[!TIP]
 >
->在管道详细信息窗口中，您可以点按或单击&#x200B;**下载日志**&#x200B;以查看管道的任意步骤以进行调试（如果任意步骤失败）。调试管道超出了此历程的范围。请参阅此页面的[其他资源](#additional-resources)部分中的适用于 Cloud Manager 的技术文档。
+>在管道详细信息窗口中，可以选择 **下载日志** 用于调试管道的任何步骤（如果任何步骤失败）。 调试管道超出了此历程的范围。请参阅此页面的[其他资源](#additional-resources)部分中的适用于 Cloud Manager 的技术文档。
 
 ## 验证部署的自定义项 {#view-customizations}
 
@@ -112,7 +112,7 @@ AEM 是一个功能强大的工具，并且提供了许多其他选项。查看[
 * [AEM 站点主题](https://github.com/adobe/aem-site-template-standard-theme-e2e) – 这是 AEM 站点主题的 GitHub 存储库。
 * [npm](https://www.npmjs.com) – 用于快速构建站点的 AEM 主题基于 npm。
 * [webpack](https://webpack.js.org) – 用于快速构建站点的 AEM 主题依赖 webpack。
-* [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) – 如果您希望在从模板创建 AEM 站点后进一步对其进行自定义，可参考本指南以详细了解如何管理 AEM 站点的页面。
+* [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)  — 如果您要在从模板创建AEM站点后进一步对其进行自定义，可参考本指南以详细了解如何管理该站点的页面。
 * [如何使用包](/help/implementing/developing/tools/package-manager.md) – 可使用包导入和导出存储库内容。本文档说明了在 AEM 6.5 中使用包的方式，此方式也适用于 AEMaaCS。
 * [载入历程](/help/journey-onboarding/overview.md) – 本指南可作为您的起点，确保您的团队已建立并有权访问 AEM as a Cloud Service。
 * [Adobe Experience Manager Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans) – 浏览 Cloud Manager 文档，了解其功能的完整详细信息。

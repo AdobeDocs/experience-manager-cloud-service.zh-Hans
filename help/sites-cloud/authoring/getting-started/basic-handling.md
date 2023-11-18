@@ -2,10 +2,10 @@
 title: 基本处理
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2970'
-ht-degree: 97%
+source-wordcount: '2943'
+ht-degree: 92%
 
 ---
 
@@ -31,21 +31,21 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
 ![“导航”面板](/help/sites-cloud/authoring/assets/navigation.png)
 
-为了使您更好地了解 AEM 的基本用法，本文档基于&#x200B;**Sites**&#x200B;控制台进行了介绍。请单击或点按&#x200B;**站点**&#x200B;以开始操作。
+为了使您更好地了解 AEM 的基本用法，本文档基于&#x200B;**Sites**&#x200B;控制台进行了介绍。选择于 **站点** 以开始使用。
 
 ## 产品导航 {#product-navigation}
 
-每当用户首次访问某个控制台时，都会启动一个产品导航教程。请花上一分钟的时间，通过单击或点按通读该教程，以大致了解 AEM 的基本处理。
+每当用户首次访问某个控制台时，都会启动一个产品导航教程。请花上一分钟时间选择以全面了解AEM的基本处理。
 
 ![导航教程](/help/sites-cloud/authoring/assets/tutorial.png)
 
-单击或点按&#x200B;**下一步**&#x200B;以前进至概述的下一个页面。单击或点按&#x200B;**关闭**，或者单击或点按概述对话框外部可将其关闭。
+选择 **下一个** 以进入概述的下一页。 选择 **关闭** 或选择概述对话框外部以关闭。
 
 该概述将在您下次访问控制台时重新启动，除非您查看所有幻灯片或者选中&#x200B;**不再显示此对话框**&#x200B;选项。
 
 ## 全局导航 {#global-navigation}
 
-您可以使用全局导航面板在控制台之间导航。单击或点按屏幕左上角的 Adobe Experience Manager 链接，将显示一个全屏下拉菜单以供全局导航。
+您可以使用全局导航面板在控制台之间导航。当您选择屏幕左上方的Adobe Experience Manager链接时，这会触发为全屏下拉列表。
 
 通过单击或点按&#x200B;**关闭**&#x200B;可关闭全局导航面板，以返回到您之前所在的位置。
 
@@ -79,7 +79,7 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
 ## “工具”面板 {#tools-panel}
 
-在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。“工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资源及内容存储库的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。“工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资产及内容存储库的其他方面。 <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![“工具”面板](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -304,7 +304,7 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
    * 资源名称和 V 形标记在被点按或单击时会突出显示。
    * 单击/点按的资源的子资源将在其右侧的列中显示。
-   * 如果点按或单击没有子级的资源名称，则其详细信息将显示在最后一列。
+   * 如果选择没有子级的资源名称，则其详细信息将显示在最终列中。
 
 * 点按或单击缩略图会选择该资源。
 
@@ -331,7 +331,7 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
    * 页面标题
    * 重要日期（如上次编辑时间、上次发布时间）
    * 该页面是否被锁定、隐藏或是 Live Copy 的一部分
-   * （在适当时）您何时需要在工作流中采取相应的操作
+   * （在适当时）您何时需要充当工作流的一部分
       * 指示必需操作的标记可能与您的[收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)中的条目相关。
 
 * 此视图中还提供了[快速操作](#quick-actions)，例如选择以及编辑之类的常用操作。
@@ -352,12 +352,12 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
    * 如果选择了列表中的所有项目，此复选框即会显示为选中状态。
 
-      * 单击或点按此复选框可取消选择全部。
+      * 选中该复选框可取消选择全部。
 
    * 如果只选择了部分项目，此复选框中会显示一个减号。
 
-      * 单击或点按此复选框可选择全部。
-      * 再次单击或点按此复选框可取消选择全部。
+      * 选中该复选框可全选。
+      * 再次选中该复选框可取消全选。
 
 * 可使用位于“视图”按钮下方的&#x200B;**查看设置**&#x200B;选项选择要显示的列。可以显示以下列：
 
@@ -383,7 +383,7 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
   ![列顺序](/help/sites-cloud/authoring/assets/column-order.png)
 
-  单击或点按垂直选择栏并将项目拖到列表中的新位置。
+  选择垂直选择栏并将项目拖到列表中的新位置。
 
   ![订单列表](/help/sites-cloud/authoring/assets/order-list.png)
 
@@ -471,10 +471,10 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
 >[!TIP]
 >
->可以在[快速站点创建历程](/help/journey-sites/quick-site/overview.md)中找到从模板创建新站点并自定义其主题的过程的端到端描述。
+>可以在[快速站点创建历程](/help/journey-sites/quick-site/overview.md)中找到从模板创建站点并自定义其主题的过程的端到端描述。
 
 ### 过滤器 {#filter}
 
-这将打开一个面板，类似于 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 设置相应的位置筛选器后，允许您进一步筛选希望查看的内容。
+这将打开一个面板，类似于 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 设置相应的位置筛选器后，允许您进一步筛选要查看的内容。
 
 ![过滤器示例](/help/sites-cloud/authoring/assets/filter.png)

@@ -2,7 +2,7 @@
 title: 创建和管理Screens中的显示as a Cloud Service
 description: 本页介绍如何创建和管理Screensas a Cloud Service显示。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 3%
@@ -118,7 +118,7 @@ ht-degree: 3%
 
 ![图像](/help/screens-cloud/assets/display/movetofolder.png)
 
-**注意**：应在文件夹侧边栏中选择文件夹。 此外，痕迹导航应在旁边显示当前文件夹名称 **显示**.
+**注意**：应在文件夹侧边栏中选择文件夹。 此外，痕迹导航旁边应显示当前文件夹名称 **显示**.
 
 ## 如何从文件夹中删除内容 {#delete-folder}
 

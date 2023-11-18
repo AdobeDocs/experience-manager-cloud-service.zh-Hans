@@ -2,9 +2,9 @@
 title: 流量过滤规则，包括 WAF 规则
 description: 配置流量过滤规则，包括 Web 应用程序防火墙 (WAF) 规则
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: a129c188e9ec6871c86245acb5f0bf0333fdc340
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3435'
 ht-degree: 97%
 
 ---
@@ -112,8 +112,8 @@ ht-degree: 97%
 
 1. 对于 RDE 以外的环境类型，请在 Cloud Manager 中创建目标部署配置管道。
 
-   * [请参阅本文档了解生产管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-   * [请参阅本文档了解非生产管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+   * [请参阅配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+   * [请参阅配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
 对于 RDE，将使用命令行，但目前不支持 RDE。
 
@@ -587,7 +587,7 @@ Adobe 提供了一种将仪表板工具下载到您的计算机上的机制，�
 
 ## 推荐的入门规则 {#recommended-starter-rules}
 
-您可以将以下推荐规则复制到您的 `cdn.yaml`，以开始使用。从日志模式开始，分析您的流量，如果满意，则更改为阻止模式。建议您根据网站实时流量的独特特征修改规则。
+您可以将以下推荐规则复制到您的 `cdn.yaml`，以开始使用。从日志模式开始，分析您的流量，如果满意，则更改为阻止模式。您可能需要根据网站实时流量的独特特征修改规则。
 
 ```
 kind: "CDN"

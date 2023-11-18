@@ -2,14 +2,14 @@
 title: 的发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 description: 的发行说明 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: f5f2c460815d273fe445c6f415dee7776cc18fce
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 100%
+source-wordcount: '1352'
+ht-degree: 97%
 
 ---
 
-# 的发行说明 [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
+#  的发行说明[!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
 以下部分概述了 [!DNL Workfront for Experience Manager enhanced connector] 的常规发行说明。
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->AEM 6.4 的扩展支持已结束。有关详细信息，请参阅我们的[技术支持期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。在[这里](https://experienceleague.adobe.com/docs/?lang=en)找到支持的版本。
+>AEM 6.4 的扩展支持已结束。查看我们的 [技术支持时段](https://helpx.adobe.com/support/programs/eol-matrix.html). 在[这里](https://experienceleague.adobe.com/docs/?lang=en)找到支持的版本。
 
 
 >[!IMPORTANT]
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 * 在使用 AEM 6.4 配置项目链接文件夹时，Experience Manager 不会保存&#x200B;**[!UICONTROL 子文件夹]**&#x200B;以及&#x200B;**[!UICONTROL 在具有项目组合的项目中创建链接文件夹]**&#x200B;字段的值。**[!UICONTROL 子文件夹]**&#x200B;字段的值更新为&#x200B;**[!UICONTROL 未定义]**，在&#x200B;**[!UICONTROL 具有项目组合的项目中创建链接文件夹]**&#x200B;字段的值在保存配置后自动更新为&#x200B;**[!UICONTROL 默认项目组合。]**
 
-* 在使用经典 Workfront 体验时，**[!UICONTROL 更多]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项不允许您在 Experience Manager 中选择目标目的地。可在&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表中正常使用&#x200B;**[!UICONTROL 收件人]**&#x200B;选项。**[!UICONTROL 收件人]**&#x200B;选项适用于&#x200B;**[!UICONTROL 更多]**&#x200B;下拉列表和新 Workfront 体验中可用的&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表。
+* 当您使用经典Workfront体验时， **[!UICONTROL 发送至]** 中提供的选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 可在&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表中正常使用&#x200B;**[!UICONTROL 收件人]**&#x200B;选项。**[!UICONTROL 收件人]**&#x200B;选项适用于&#x200B;**[!UICONTROL 更多]**&#x200B;下拉列表和新 Workfront 体验中可用的&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表。
 
 ## 之前的版本 {#previous-releases}
 
@@ -222,4 +222,4 @@ ht-degree: 100%
 
 >[!MORELIKETHIS]
 >
->* [与  [!DNL Workfront for Experience Manager enhanced connector] Experience Manager 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=zh-Hans)集成
+>* [与  [!DNL Workfront for Experience Manager enhanced connector] Experience Manager 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)集成

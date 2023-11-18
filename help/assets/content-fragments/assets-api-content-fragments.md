@@ -3,9 +3,9 @@ title: Assets HTTP API中的Adobe Experience Manager as a Cloud Service内容片
 description: 了解对Assets HTTP API中内容片段的支持，这是Adobe Experience Manager的Headless投放功能的重要组成部分。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1788'
 ht-degree: 13%
 
 ---
@@ -257,7 +257,7 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 
 >[!NOTE]
 >
->欲知更多详情，请参见 [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 具体而言，[Adobe Experience Manager Assets API – 内容片段](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>请参阅 [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 具体而言，[Adobe Experience Manager Assets API – 内容片段](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
 
 ## 限制 {#limitations}
 

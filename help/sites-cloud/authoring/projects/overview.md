@@ -2,10 +2,10 @@
 title: 项目
 description: 通过“项目”，您可以将资源分组到一个实体中，该实体的通用共享环境使您能够轻松管理项目
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1255'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 * [管理项目](/help/sites-cloud/authoring/projects/managing.md)
 * [处理任务](/help/sites-cloud/authoring/projects/tasks.md)
-* [使用项目工作流](/help/sites-cloud/authoring/projects/workflows.md)
+* [使用项目工作流程](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## “项目”控制台 {#projects-console}
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 ![“项目”控制台](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * 选择&#x200B;**时间线**，然后选择一个项目可查看其时间线。
-* 单击/点按&#x200B;**选择**&#x200B;可进入选择模式。
+* 选择 **选择** 以进入选择模式。
 * 单击&#x200B;**创建**&#x200B;可添加项目。
 * **切换活动的项目**&#x200B;允许您在所有项目和仅处于活动状态的项目之间切换。
 * **显示统计信息视图**&#x200B;允许您查看与任务完成程度相关的项目统计信息。
@@ -178,4 +178,4 @@ AEM 提供了三种不同的现成模板：
 
 >[!NOTE]
 >
->在创建项目并将用户添加各种角色时，将自动创建与项目关联的组以管理关联的权限。例如，名为 Myproject 的项目将有三个组，分别为 **Myproject 所有者**、**Myproject 编辑者**、**Myproject 观察者**。但是，如果删除了项目，这些组不会自动删除。管理员需要在&#x200B;**工具** > **安全** > **组**&#x200B;中手动删除这些组。
+>在创建项目并将用户添加各种角色时，将自动创建与项目关联的组以管理关联的权限。例如，名为 Myproject 的项目将有三个组，分别为 **Myproject 所有者**、**Myproject 编辑者**、**Myproject 观察者**。但是，如果删除了项目，这些组不会自动删除。管理员必须手动删除中的组 **工具** > **安全性** > **组**.

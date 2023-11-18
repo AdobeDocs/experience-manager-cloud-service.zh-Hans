@@ -2,10 +2,10 @@
 title: 如何使用 Headless 应用程序上线
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何通过在 Git 中获取本地代码并将其移动到 CI/CD 管道的 Cloud Manager Git 来实时部署 Headless 应用程序。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 100%
 
 在将更新上传到 Cloud Manager 后，可以使用 [Cloud Manager 的 CI/CD 管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)将这些更新部署到 AEM as a Cloud Service。
 
-您可以利用 Cloud Manager CI/CD 管道开始部署您的代码，[此处](/help/implementing/deploying/overview.md)对这方面进行了广泛介绍。
+您可以使用Cloud Manager CI/CD管道开始部署代码，此管道已广泛介绍 [此处](/help/implementing/deploying/overview.md).
 
 ## 性能监控 {#performance-monitoring}
 

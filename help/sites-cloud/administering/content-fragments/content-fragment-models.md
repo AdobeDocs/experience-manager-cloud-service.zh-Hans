@@ -4,10 +4,10 @@ description: 了解内容片段模型如何作为 AEM 中内容片段的基础�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3060'
-ht-degree: 98%
+source-wordcount: '3058'
+ht-degree: 97%
 
 ---
 
@@ -128,7 +128,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 1. **移除字段**
 
-   选择必填字段，然后单击/点按垃圾桶图标。系统会要求您确认该操作。
+   选择必填字段，然后选择垃圾桶图标。 系统会要求您确认该操作。
 
    ![删除](assets/cf-cfmodels-remove-icon.png)
 
@@ -160,7 +160,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 * **日期和时间**
    * 添加日期和/或时间
 * **枚举**
-   * 添加一组复选框、单选按钮或下拉字段
+   * 添加一组复选框、单选按钮或下拉列表字段
 * **标记**
    * 允许片段作者访问和选择标记区域
 * **内容引用**
@@ -373,7 +373,7 @@ type CompanyModel {
 
 创建模型后必须启用它，以使其：
 
-* 可在创建新内容片段时进行选择。
+* 可在创建内容片段时进行选择。
 * 可以在内容片段模型中引用。
 * 可用于 GraphQL；这样就会生成架构。
 

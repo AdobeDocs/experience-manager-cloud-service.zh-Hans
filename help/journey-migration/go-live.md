@@ -2,7 +2,7 @@
 title: 上线
 description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 4%
@@ -61,7 +61,7 @@ ht-degree: 4%
 
 要回答第一个问题，您应该考虑在非生产环境中执行试运行所用的时间。 要回答第二个问题，您需要在添加新功能的团队和重构代码的团队之间进行密切合作。 目标是确保添加到现有部署的所有代码均已添加、测试和部署到云服务分支。 通常，这意味着代码冻结的量较低。
 
-此外，您需要计划在计划最终内容增补时冻结内容。
+此外，您还需要在计划最终内容增补时规划内容冻结。
 
 ## 最佳实践 {#best-practices}
 

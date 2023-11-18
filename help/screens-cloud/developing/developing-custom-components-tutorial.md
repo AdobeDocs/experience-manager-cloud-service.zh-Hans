@@ -2,9 +2,9 @@
 title: 为 Screens as a Cloud Service 开发自定义组件
 description: 以下教程将介绍为AEM Screens创建自定义组件的步骤。 AEM Screens可重复使用其他AEM产品的许多现有设计模式和技术。 本教程重点介绍了为AEM Screens开发时的差异和特殊注意事项。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2105'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 3%
    * `/content/dam/we-retail-run`
    * `/content/screens/we-retail-run`
 
-   此资源包包含项目所需的起始内容和配置结构。 **`/conf/we-retail-run`** 包含We.Retail Run项目的所有配置。 **`/content/dam/we-retail-run`** 包括为项目启动数字资产。 **`/content/screens/we-retail-run`** 包含Screens内容结构。 所有这些路径下的内容主要在AEM中更新。 为了提高环境（本地、开发、暂存、生产）之间的一致性，通常将基本内容结构保存在源代码控制中。
+   此资源包包含项目所需的起始内容和配置结构。 **`/conf/we-retail-run`** 包含We.Retail Run项目的所有配置。 **`/content/dam/we-retail-run`** 包括为项目启动数字资产。 **`/content/screens/we-retail-run`** 包含Screens内容结构。 这些路径下的内容主要在AEM中更新。 为了提高环境（本地、开发、暂存、生产）之间的一致性，通常将基本内容结构保存在源代码控制中。
 
 1. **导航到AEM Screens > We.Retail运行项目：**
 
@@ -125,7 +125,7 @@ AEM Screens具有一些有趣的限制，对于传统的WCM Sites组件未必是
    <!--/* production: preview authoring mode + unspecified mode (that is, on publish) */-->
    <sly data-sly-test.production="${wcmmode.preview || wcmmode.disabled}" data-sly-include="production.html" />
    
-   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, etc. */-->
+   <!--/* edit: any other authoring mode, that is, edit, design, scaffolding, and so on. */-->
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 

@@ -2,9 +2,9 @@
 title: AEM Headless as a Cloud Service 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3095'
+source-wordcount: '3093'
 ht-degree: 96%
 
 ---
@@ -123,7 +123,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 ## 要求和先决条件 {#requirements-prerequisites}
 
-在开始 Headless AEM 项目之前，需要满足许多要求。
+在开始Headless AEM项目之前，需要满足几项要求。
 
 ### 知识 {#knowledge}
 

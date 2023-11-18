@@ -3,13 +3,13 @@ title: 内容片段 – 关于删除的注意事项
 description: 在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '452'
-ht-degree: 100%
+exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 92%
 
 ---
-
 
 # 关于删除内容片段的注意事项 {#delete-considerations-content-fragments}
 
@@ -23,14 +23,14 @@ ht-degree: 100%
 
 1. **内容片段作为单个实体。**
 
-   * **用例**：需要编辑/更新内容片段&#x200B;**并删除整个片段**&#x200B;的用户。
+   * **用例**：必须编辑/更新内容片段的用户 —  **并删除整个片段**.
    * **权限**：可通过“用户”和/或“组管理”分配“删除”权限。
 
 2. **构成内容片段的多个子实体；例如，变体、子节点。**
 
    内容片段编辑器的基本操作要求可以删除此类临时子元素。例如，在处理变量时；在编辑元数据或管理关联的内容时，也可以。
 
-   * **用例**：需要编辑/更新内容片段但&#x200B;**不允许删除整个片段**&#x200B;的用户。
+   * **用例**：必须编辑/更新内容片段的用户 —  **不允许删除整个片段**.
    * **权限**：请参阅[仅编辑器功能需要的权限](#permissions-required-for-editor-functionality-only)。
 
 >[!NOTE]
@@ -76,4 +76,3 @@ ht-degree: 100%
 * 对于所有内容片段的 `jcr:content` 下的所有节点：
 
    * `jcr:addChildNodes`、`jcr:modifyProperties`、`jcr:removeChildNodes` 和 `jcr:removeNode`
-

@@ -2,10 +2,10 @@
 title: 创建配置 - Headless 设置
 description: 以创建配置作为第一步，开始在 AEM as a Cloud Service 中使用 Headless。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '327'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 管理员只需要创建配置一次，或者在极少数情况下，需要新工作区用于组织内容模型时进行创建。对于本指南快速入门，我们只需要创建一个配置。
 
-1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**工具 -> 常规 -> 配置浏览器**。
+1. 登录AEMas a Cloud Service，从主菜单选择 **“工具”>“常规”>“配置浏览器”**.
 1. 提供配置的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
    * **名称**&#x200B;会成为存储库中的节点名称。
@@ -37,7 +37,7 @@ ht-degree: 100%
 
    ![创建配置](../assets/create-configuration.png)
 
-1. 点击或单击&#x200B;**创建**
+1. 选择 **创建**
 
 如果需要，您可以创建多个配置。配置也可以嵌套。
 

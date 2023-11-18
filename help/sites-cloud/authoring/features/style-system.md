@@ -2,10 +2,10 @@
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 98%
+source-wordcount: '1317'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 ## 用例 {#use-case}
 
-模板作者不仅需要能够为内容作者配置组件的使用方式，还需要能够配置组件的多种替代可视化变量。
+模板作者不仅需要能够为内容作者配置组件的工作方式，还需要配置组件的多个替代可视化变量。
 
 同样，内容作者不仅需要能够构建和布置他们的内容，还需要能够选择内容的可视呈现方式。
 
@@ -60,10 +60,10 @@ ht-degree: 98%
 
 下面的[作为内容作者](#as-a-content-author)和[作为模板作者](#as-a-template-author)部分介绍了如何使用 WKND 样式系统来测试样式系统的功能。
 
-如果您希望为自己的组件使用样式系统，请执行以下操作：
+如果要为自己的组件使用样式系统，请执行以下操作：
 
 1. 按照[概述](#overview)部分中的所述，将 CSS 作为客户端库进行安装。
-1. 按照[作为模板作者](#as-a-template-author)部分中的所述，配置您要向内容作者提供的 CSS 类。
+1. 按照一节中的说明，配置您想让内容作者可以使用的CSS类 [作为模板作者](#as-a-template-author).
 1. 然后，内容作者可以按照[作为内容作者](#as-a-content-author)部分中的所述使用样式。
 
 ### 作为内容作者 {#as-a-content-author}
@@ -73,7 +73,7 @@ ht-degree: 98%
 
    ![作者的样式系统](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. 点按或单击&#x200B;**列表**&#x200B;组件工具栏上的&#x200B;**样式**&#x200B;按钮以打开样式菜单，然后更改该组件的外观。
+1. 选择 **样式** 工具栏上的按钮 **列表** 组件打开样式菜单并更改组件的外观。
 
    ![选择样式](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -83,7 +83,7 @@ ht-degree: 98%
 
 ### 作为模板作者 {#as-a-template-author}
 
-1. 编辑 WKND 的英语母版主页 `http://<host>:<port>/sites.html/content/wknd/language-masters/en` 时，通过&#x200B;**页面信息 > 编辑模板**&#x200B;来编辑该页面的模板。
+1. 编辑WKND的英语母版主页时 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`，通过编辑页面的模板 **“页面信息”>“编辑模板”**.
 
    ![编辑模板](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -157,4 +157,4 @@ ht-degree: 98%
 
 这种定义样式名称的功能对于通用的组件（如布局容器或内容片段组件）非常有用，可为它们提供更多含义。
 
-例如，使用该功能可以为布局容器提供 `<main>`、`<aside>`、`<nav>` 等语义。
+例如，它允许为布局容器提供如下语义 `<main>`， `<aside>`， `<nav>`，等等。

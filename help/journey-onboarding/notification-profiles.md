@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中创建用户配置文件来管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 96%
+source-wordcount: '982'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 ## 概述 {#overview}
 
-Adobe 有时需要就 AEM as a Cloud Service 环境联系用户。除了产品内通知外，Adobe 偶尔也会使用电子邮件进行通知。此类电子邮件通知有两种类型：
+Adobe有时会就AEMas a Cloud Service环境联系用户。 除了产品内通知外，Adobe 偶尔也会使用电子邮件进行通知。此类电子邮件通知有两种类型：
 
 * **事件通知** – 这些通知是在事件期间或 Adobe 发现您的 AEM as a Cloud Service 环境存在潜在可用性问题时发送的。
 * **主动通知** – 当 Adobe 支持团队成员想要提供有关可使您的 AEM as a Cloud Service 环境受益的潜在优化或建议的指导时，将发送这些通知。
@@ -148,4 +148,4 @@ Adobe 有时需要就 AEM as a Cloud Service 环境联系用户。除了产品�
 
 如果您想了解入门历程以外的内容，以下是额外的可选资源。
 
-* [操作中心](/help/operations/actions-center.md) - 利用操作中心可方便地针对问题和其他重要信息采取行动.
+* [操作中心](/help/operations/actions-center.md)  — 利用行动中心方便地对事件和其他重要信息采取行动。

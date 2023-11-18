@@ -5,9 +5,9 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 9%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 9%
    * **模板消息：** 指定在加载签名PDF时要显示的消息。 Adobe Sign服务需要一些时间来准备和加载签名PDF。
    * **签名服务：** 选择 **潦草签名** 选项。
 
-   * **CSS类**：指定客户端库的CSS类（如果有）。 建议使用 [主题](themes.md) 和 [内联样式](inline-style-adaptive-forms.md) 而不是CSS类。
+   * **CSS类**：指定客户端库的CSS类（如果有）。 Adobe建议使用 [主题](themes.md) 和 [内联样式](inline-style-adaptive-forms.md) 而不是CSS类。
 
    点按完成 ![aem_forms_save](assets/aem_forms_save.png) 图标以保存更改。 已成功配置签名。
 

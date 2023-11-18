@@ -2,9 +2,9 @@
 title: 优化 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中对内容片段进行筛选、分页和排序时优化 GraphQL 查询，以实现 headless 内容交付。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 2ac93fbe0075cc2c88def444daba613e8b40c018
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1876'
 ht-degree: 65%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 65%
 
 **进一步参考**
 
-请联系Adobe以为AEM Cloud Service程序和环境启用此功能。
+请联系Adobe，为您的AEM Cloud Service程序和环境启用此功能。
 
 ### GraphQL查询优化 {#graphql-query-optimization}
 

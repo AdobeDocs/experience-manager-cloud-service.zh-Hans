@@ -2,10 +2,10 @@
 title: 管理受众
 description: 通过“受众”控制台，您可以创建、组织和管理 Adobe Target 帐户的受众，或管理 ContextHub 的区段
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '962'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 89%
 
 ---
 
@@ -33,8 +33,8 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
 要在“受众”控制台中创建 ContextHub 区段，请执行以下操作：
 
-1. 在“导航”控制台中，单击或点按&#x200B;**个性化**。单击或点按&#x200B;**受众**。
-1. 点按或单击&#x200B;**创建 ContextHub 区段**。
+1. 在导航控制台中，选择 **个性化**. 选择 **受众**.
+1. 选择 **创建ContextHub区段**.
 
    ![创建区段](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -60,20 +60,20 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
 要创建 Adobe Target 受众，请执行以下操作：
 
-1. 在“导航”控制台中，单击或点按&#x200B;**个性化**。单击或点按&#x200B;**受众**。
+1. 在导航控制台中，选择 **个性化**. 选择 **受众**.
 
    ![导航到受众](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. 在“受众”控制台中，依次点按或单击&#x200B;**创建**&#x200B;和&#x200B;**创建目标受众**。
+1. 在受众控制台中，选择 **创建** 然后 **创建目标受众**.
 
    ![创建目标受众](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. 在 **Adobe Target 配置**&#x200B;对话框中，选择目标配置，然后单击或点按&#x200B;**确定**。
-1. 在“规则#1”区域中，单击或点按属性类型并在可用字段中输入任何属性信息。完成后，选中该属性右侧的复选标记以保存该属性。有关所有属性的信息，请参阅[属性及其选项](#attributes-and-their-options)。
+1. 在 **Adobe Target配置** 对话框中，选择目标配置并选择 **确定**.
+1. 在“规则#1”区域，选择属性类型，并在可用的字段中输入任何属性信息。 完成后，选中该属性右侧的复选标记以保存该属性。有关所有属性的信息，请参阅[属性及其选项](#attributes-and-their-options)。
 1. 单击 **添加规则** ，以添加其他规则。根据需要输入任意数量的规则。规则与布尔运算符AND相结合，这意味着受众必须满足每个规则的所有要求才能符合活动条件。
-1. 点按或单击&#x200B;**下一步**。
-1. 为受众输入一个名称，然后单击或点按&#x200B;**保存**。
-1. 点按或单击&#x200B;**保存**。受众随即会列在“受众”列表中。
+1. 选择&#x200B;**下一步**。
+1. 输入受众的名称并选择 **保存**.
+1. 选择&#x200B;**保存**。受众随即会列在“受众”列表中。
 
 ### 属性及其选项 {#attributes-and-their-options}
 
@@ -97,6 +97,6 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
 您可以从“受众”控制台中编辑任何 ContextHub 受众。您也可以编辑 Adobe Target 受众，但只能编辑在 AEM 中创建的受众：
 
-1. 在“导航”控制台中，单击或点按&#x200B;**个性化**。单击或点按&#x200B;**受众**。
-1. 点按或单击要编辑的 ContextHub 区段旁边的图标，然后点按或单击&#x200B;**编辑**。
+1. 在导航控制台中，选择 **个性化**. 选择 **受众**.
+1. 选择要编辑的ContextHub区段旁边的图标，然后选择 **编辑**.
 1. 在区段编辑器中进行任何编辑。有关更多信息，请参阅 ContextHub 文档。<!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

@@ -1,13 +1,13 @@
 ---
 title: 自定义页面属性的视图
 description: 了解作者如何查看和编辑页面属性。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '364'
-ht-degree: 100%
+exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 92%
 
 ---
-
 
 # 自定义页面属性的视图{#customizing-views-of-page-properties}
 
@@ -70,10 +70,10 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->配置页面属性以便与实时副本一起使用时，请参阅文档[扩展多站点管理器](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties)，以了解更多详情。
+>在配置要用于活动副本的页面属性时，请参阅 [扩展多站点管理器](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) 以了解更多详细信息。
 
 ## 页面属性的示例配置 {#sample-configuration-of-page-properties}
 
 该示例演示了[ Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)的对话框差异技术，其中包括使用 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties)。它还说明了 `cq:showOnCreate` 和 `cq:hideOnEdit` 的用法。
 
-您可以在[ GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)上找到此页面的代码。
+您可以在此页面中找到代码： [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

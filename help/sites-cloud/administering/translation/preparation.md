@@ -4,10 +4,10 @@ description: 了解在开发多语言网站时如何准备翻译内容。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: a1a92f8767186ba9e93b6b30870ecfa9f3b3bc28
-workflow-type: ht
-source-wordcount: '769'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 87%
 
 ---
 
@@ -71,20 +71,20 @@ ht-degree: 100%
 * `<language-code>` – 支持的语言代码是由 ISO-639-1 定义的两字母代码，例如 `en`。
 * `<language-code>_<country-code>` 或 `<language-code>-<country-code>` – 支持的国家/地区代码是由 ISO 3166 定义的小写或大写形式的两字母代码，例如 `en_US`、`en_us`、`en_GB`、`en-gb`。
 
-根据您为全球站点选择的结构，您可以使用任一格式。例如，WKND 站点的法语副本的根页面将 `fr` 用作&#x200B;**名称**&#x200B;属性。请注意，**名称**&#x200B;属性用作存储库中页面节点的名称，从而确定页面的路径 (`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
+根据您为全球站点选择的结构，您可以使用任一格式。例如，WKND 站点的法语副本的根页面将 `fr` 用作&#x200B;**名称**&#x200B;属性。此 **名称** 属性用作存储库中页面节点的名称，从而确定页面的路径(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
 
 1. 导航到站点。
-1. 单击或点按要为其创建语言副本的站点。
-1. 单击或点按&#x200B;**创建**，然后单击或点按&#x200B;**页面**。
+1. 选择要为其创建语言副本的站点。
+1. 选择 **创建**，然后选择 **页面**.
 
    ![创建页面](../assets/create-page.png)
 
-1. 选择页面模板，然后单击或点按&#x200B;**下一步**。
+1. 选择页面模板，然后选择 **下一个**.
 1. 在&#x200B;**名称**&#x200B;字段中，用 `<language-code>` 或 `<language-code>_<country-code>` 格式键入国家/地区代码，例如 `en`、`en_US`、`en_us`、`en_GB`、`en_gb`。为页面键入标题。
 
    ![创建语言根页面](../assets/create-language-root.png)
 
-1. 单击或点按&#x200B;**创建**。在确认对话框中，单击或点按&#x200B;**完成**&#x200B;以返回 Sites 控制台，或者单击或点按&#x200B;**打开**&#x200B;打开语言副本。
+1. 选择&#x200B;**创建**。在确认对话框中，选择 **完成** 以返回站点控制台，或者 **打开** 以打开语言副本。
 
 ## 查看语言根的状态 {#seeing-the-status-of-language-roots}
 
@@ -94,11 +94,11 @@ AEM 提供了一个&#x200B;**引用**&#x200B;边栏来显示已创建的语言�
 
 使用[边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)通过以下过程查看页面的语言副本。
 
-1. 在 Sites 控制台上，选择站点的页面，然后单击或点按&#x200B;**引用**。
+1. 在站点控制台上，选择站点的页面，然后选择 **引用**.
 
    ![打开引用边栏](../assets/opening-references-rail.png)
 
-1. 在引用边栏中，单击或点按&#x200B;**语言副本**。边栏显示网站的语言副本。
+1. 在引用边栏中，选择 **语言副本**. 边栏显示网站的语言副本。
 
 ## 多个级别的语言副本 {#multiple-levels}
 

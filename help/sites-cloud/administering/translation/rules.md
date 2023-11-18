@@ -4,10 +4,10 @@ description: 了解翻译规则如何标识需要翻译的内容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 99%
+source-wordcount: '1288'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 
 如果&#x200B;**为翻译启用内容模型字段**&#x200B;选项已激活，AEM 将使用[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)上的&#x200B;**可翻译**&#x200B;字段来确定是否要翻译该字段并相应地自动创建翻译规则。 此选项取代了您可能已创建的任何翻译规则，无需干预或附加步骤。
 
-如果要使用翻译规则来翻译内容片段，必须禁用翻译集成框架配置上的&#x200B;**为翻译启用内容模型字段**&#x200B;选项，并且您需要执行下面列出的步骤来创建规则。
+如果要使用翻译规则来翻译内容片段，请 **为翻译启用内容模型字段** 必须禁用翻译集成框架配置上的选项，并且您需要执行下面列出的步骤来创建规则。
 
 ## 概述 {#overview}
 
@@ -167,7 +167,7 @@ ht-degree: 99%
 
    ![添加翻译上下文](../assets/add-translation-context.png)
 
-1. 使用路径浏览器选择所需的上下文，然后点按或单击&#x200B;**确认**&#x200B;按钮进行保存。
+1. 使用路径浏览器选择所需的上下文，然后选择 **确认** 按钮进行保存。
 
    ![选择上下文](../assets/select-context.png)
 

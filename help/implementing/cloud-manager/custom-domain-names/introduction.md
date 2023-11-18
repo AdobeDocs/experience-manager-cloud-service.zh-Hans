@@ -2,10 +2,10 @@
 title: 自定义域名简介
 description: Cloud Manager 的 UI 让您添加自定义域，以自助方式使用唯一的品牌名称标识您的站点。
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也�
 
 ## 工作流 {#workflow}
 
-添加自定义域名需要 DNS 服务和云管理器之间的交互。因此，需要执行若干步骤以安装、配置和验证自定义域名。下表概述了所需的步骤，包括发生常见错误时的操作。
+添加自定义域名需要 DNS 服务和云管理器之间的交互。因此，安装、配置和验证自定义域名需要执行多个步骤。 下表概述了所需的步骤，包括发生常见错误时的操作。
 
 | 步骤 | 描述 | 责任 | 了解详细信息 |
 |--- |--- |--- |---|
@@ -66,7 +66,7 @@ AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也�
 
 ## 限制 {#limitations}
 
-在 AEMaaCS 中使用自定义域名有很多限制。
+在AEMaaCS中使用自定义域名有几项限制。
 
 * Cloud Manager 支持为 Sites 程序提供发布和预览服务的自定义域名。不支持作者服务的自定义域。
 * 每个 Cloud Manager 环境最多可以为每个环境托管 500 个自定义域。

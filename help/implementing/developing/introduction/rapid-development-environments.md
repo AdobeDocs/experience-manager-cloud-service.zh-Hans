@@ -2,7 +2,7 @@
 title: 快速开发环境
 description: 了解如何使用快速开发环境在云环境中进行快速开发迭代。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3304'
 ht-degree: 5%

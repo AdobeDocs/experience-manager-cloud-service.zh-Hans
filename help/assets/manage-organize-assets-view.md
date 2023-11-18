@@ -4,10 +4,10 @@ description: 在  [!DNL Assets view] 中移动、删除、复制、重命名、�
 role: User,Leader
 contentOwner: AG
 exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -104,7 +104,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 1. 选择资源并单击工具栏中的&#x200B;**[!UICONTROL 详细信息]**。
 
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 状态]**&#x200B;下拉列表中选择资源状态。可能的值包括“已批准”、“已拒绝”和“无状态”（默认值）。
+1. 在 **[!UICONTROL 基本]** 选项卡，从中选择资源状态 **[!UICONTROL 状态]** 下拉列表。 可能的值包括“已批准”、“已拒绝”和“无状态”（默认值）。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

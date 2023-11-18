@@ -2,10 +2,10 @@
 title: 添加 TXT 记录
 description: 了解如何在 Cloud Manager 中添加 TXT 记录以添加自定义域名。
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '329'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 97%
 
 ---
 
@@ -46,4 +46,4 @@ dig TXT _aemverification.example.com -t txt
 
 >[!TIP]
 >
->有许多 [DNS 查找工具](https://www.ultratools.com/tools/dnsLookup)可用。 Google DoH 可用于查找 TXT 记录条目，并确定 TXT 纪录是否丢失或错误。
+>有几个 [DNS查找工具](https://www.ultratools.com/tools/dnsLookup) 可用。 Google DoH 可用于查找 TXT 记录条目，并确定 TXT 纪录是否丢失或错误。

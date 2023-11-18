@@ -2,10 +2,10 @@
 title: AEM 快速站点创建历程
 description: 从这里开始引导式历程，通过易用的 AEM 快速站点创建工具来简化 AEM 站点的前端开发并在不具备 AEM 后端知识的情况下快速自定义您的站点。
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 96%
+source-wordcount: '1029'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者�
 
 ## AEM 文档历程 {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/documentation-journeys.md)通过提供叙述来帮助可能是 AEM 新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或 AEM 知识，从而将许多不同且可能复杂的主题和功能联系起来。
+[文档历程](/help/journey-documentation/documentation-journeys.md) 通过提供叙述来帮助可能是AEM新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或AEM知识，从而将许多不同的、复杂的主题和功能联系起来。
 
 文档历程是围绕最佳实践准则而设计的，其中包含了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及来自客户项目的反馈。
 
@@ -67,7 +67,7 @@ AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者�
 
 * 如果您是 AEM 或 Cloud Manager 管理员、同时担任前端开发人员和管理员角色或只想了解 AEM 中的端到端流程，请在开始历程时，首先参阅[了解 Cloud Manager](cloud-manager.md)，如下所述。
 * 如果您只负责前端开发，并且会与 AEM 和 Cloud Manager 管理员进行交互，则可以直接跳转至[检索 Git 存储库访问信息](retrieve-access.md)以获取对 AEM Git 存储库的访问权限并开始进行自定义。
-* 如果您已了解 AEM Sites 和 Cloud Manager 的协作方式，并且希望直接从配置开始操作，则可以[直接跳至“从模板创建新站点”](create-site.md)。
+* 如果您已了解AEM Sites和Cloud Manager的协作方式，并且希望直接从配置开始操作，则可以 [直接跳至从模板创建站点。](create-site.md)
 
 ## 其他资源 {#additional-resources}
 

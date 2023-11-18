@@ -2,10 +2,10 @@
 title: 创建 API 请求 – Headless 设置
 description: 了解如何使用 GraphQL API 实现内容片段的 Headless 投放，以及如何使用 AEM 的 Assets REST API 管理内容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 87630d9530194fd0c6d88e05a17db108b765ccb6
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 1. 选择&#x200B;**创建**。
 1. 此时，**创建新 GraphQL 端点**&#x200B;对话框会打开。在其中可以指定：
    * **名称**：端点的名称，您可以输入任意文本。
-   * **使用的 GraphQL 架构提供自**：使用下拉菜单选择所需的配置。
+   * **使用由提供的GraphQL架构**：使用下拉列表选择所需的配置。
 1. 选择&#x200B;**创建**&#x200B;来确认。
 1. 在控制台中，此时会根据之前创建的配置显示一条&#x200B;**路径**。该路径用于执行 GraphQL 查询。
 

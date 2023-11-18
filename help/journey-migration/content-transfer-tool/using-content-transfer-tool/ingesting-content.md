@@ -2,9 +2,9 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 28cbdff5756b0b25916f8d9a523ab4745873b5fa
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2326'
 ht-degree: 7%
 
 ---
@@ -139,7 +139,7 @@ ht-degree: 7%
 >
 > 不再需要记录支持票证即可禁用“AEM版本更新”。
 
-如果“AEM版本更新”处于活动状态（即更新正在运行或排队等待运行），则摄取将不会开始，并且用户界面会显示以下消息。 更新完成后，可以开始引入。 Cloud Manager可用于查看项目管道的当前状态。
+如果“AEM版本更新”处于活动状态（即，更新正在运行或排队等待运行），则摄取将不会开始，并且用户界面会显示以下消息。 更新完成后，可以开始引入。 Cloud Manager可用于查看项目管道的当前状态。
 
 >[!NOTE]
 >
@@ -162,13 +162,14 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 ### 由于无法删除引用的节点，增补摄取失败
 
 导致问题的另一个常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是目标实例上特定节点的版本冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
+
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakIntegrity0001：无法删除引用的节点：8a2289f4-b904-4bd0-8410-15e41e0976a8
 
 如果在引入和后续引入之间修改了目标上的节点，则可能会发生这种情况 **非划出** 摄取，以便创建一个新版本。 如果在启用“包含版本”的情况下提取迁移集，则可能会发生冲突，因为目标现在具有版本历史记录和其他内容所引用的较新版本。 摄取进程将无法删除违规版本节点，因为它已被引用。
 
 解决方案可能要求再次执行增补提取而不考虑违规节点。 或者，创建一个包含违规节点的小型迁移集，但禁用“包含版本”。
 
-最佳实践表明 **非划出** 必须使用包含版本（即，使用“包含版本”=true进行提取）的迁移集来运行引入，在迁移历程完成之前，尽可能少地修改目标上的内容至关重要。 否则，可能会发生这些冲突。
+最佳实践表明 **非划出** 必须使用包含版本（即，通过“包含版本”=true提取）的迁移集来运行引入，在迁移历程完成之前，尽可能少地修改目标上的内容至关重要。 否则，可能会发生这些冲突。
 
 ### 引入已取消
 

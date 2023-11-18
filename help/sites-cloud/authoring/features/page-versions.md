@@ -2,10 +2,10 @@
 title: 处理页面版本
 description: 了解如何在 AEM 中创建、比较和恢复页面的版本。
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
-workflow-type: ht
-source-wordcount: '1507'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1505'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 1. 导航以显示要为其创建版本的页面。
 1. 在[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)中选择页面。
 1. 打开&#x200B;**时间线**&#x200B;边栏。
-1. 单击/点按评论字段旁边的省略号以显现以下选项：
+1. 选择评论字段旁边的省略号以显示以下选项：
 
    ![时间线边栏中的版本](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
@@ -209,7 +209,7 @@ ht-degree: 100%
 
 时间扭曲是页面编辑器的一种[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)。要启动此模式，只需像切换任何其他模式一样切换此模式即可。
 
-1. 为希望启动时间扭曲的页面启动编辑器，然后在模式选择中选择&#x200B;**时间扭曲**。
+1. 启动要从中启动Timewarp的页面的编辑器，然后选择 **时间扭曲** 模式选择中。
 
    ![时间扭曲模式](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

@@ -2,9 +2,9 @@
 title: 利用 React 在 AEM 中开始使用 SPA
 description: 本文介绍了一个SPA应用程序示例，说明它是如何组合在一起的，并使您能够使用React框架快速启动和运行自己的SPA。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1139'
 ht-degree: 10%
 
 ---
@@ -117,7 +117,7 @@ module.exports = {
 
 ### index.js {#index-js}
 
-SPA的入口当然是 `index.js` 此处显示的文件被简化为重点介绍重要内容。
+SPA的入口点为 `index.js` 此处显示的文件被简化为重点介绍重要内容。
 
 ```
 import ReactDOM from 'react-dom';

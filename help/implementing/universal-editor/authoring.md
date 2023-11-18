@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 71%
+source-wordcount: '2398'
+ht-degree: 58%
 
 ---
 
@@ -68,7 +68,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### 组织 {#organization}
 
-这将显示您当前登录的组织。如果您的 Adobe ID 与多个组织关联，请点按或单击以切换到另一个组织。
+这将显示您当前登录的组织。如果您的Adobe ID与多个组织关联，请选择切换到其他组织。
 
 ![组织指示器](assets/organization.png)
 
@@ -92,7 +92,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### 用户属性 {#user-properties}
 
-点按或单击代表用户的图标来访问用户设置。如果您尚未配置用户图片，系统会随机分配一个图标。
+选择代表您的用户的图标以访问您的用户设置。 如果您尚未配置用户图片，系统会随机分配一个图标。
 
 ![用户属性](assets/user-properties.png)
 
@@ -114,11 +114,11 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 >[!NOTE]
 >
->您想使用 Universal Editor 编辑的任何页面都必须[进行插桩以支持 Universal Editor](getting-started.md)。
+>要使用通用编辑器编辑的任何页面必须 [用于支持通用编辑器。](getting-started.md)
 
 #### 位置栏 {#location-bar}
 
-位置栏为您显示正在编辑的页面的位置。点按或单击此项可输入要编辑的另一个页面的地址。
+位置栏为您显示正在编辑的页面的位置。选择可输入另一个要编辑的页面的地址。
 
 ![位置栏](assets/location-bar.png)
 
@@ -128,17 +128,17 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 >[!NOTE]
 >
->您想使用 Universal Editor 编辑的任何页面都必须[进行插桩以支持 Universal Editor](getting-started.md)。
+>要使用通用编辑器编辑的任何页面必须 [用于支持通用编辑器。](getting-started.md)
 
 #### 身份验证标头设置 {#authentication-settings}
 
-如果需要设置身份验证密码，请点按或单击身份验证标题设置图标。
+如果需要设置身份验证密码，请选择身份验证标头设置图标。
 
 ![“身份验证标题设置”按钮](assets/authentication-header-settings.png)
 
 #### 模拟器设置 {#emulator}
 
-点按或单击模拟图标以定义 Universal Editor 呈现页面的方式。
+选择模拟图标以定义通用编辑器呈现页面的方式。
 
 ![“模拟器”图标](assets/emulator.png)
 
@@ -156,7 +156,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 打开应用程序预览 {#open-app-preview}
 
-点按或单击“打开应用程序预览”图标可在其自己的浏览器标签页中打开您当前正在编辑的页面，无需编辑器即可预览您的内容。
+选择打开应用程序预览图标可在自身浏览器选项卡中打开您当前编辑的页面，无需编辑即可预览您的内容。
 
 ![打开应用程序预览](assets/open-app-preview.png)
 
@@ -166,7 +166,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 发布 {#publish}
 
-点按或单击“发布”按钮可实时发布对内容的更改以供阅读器使用。
+选择“发布”按钮，以便将更改发布到实时内容以供读者使用。
 
 ![“发布”按钮](assets/publish.png)
 
@@ -182,7 +182,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 预览模式 {#preview-mode}
 
-在预览模式中，编辑器中呈现的页面与在您发布的服务上看到的一样。这可让内容作者通过单击链接等来导航内容。
+在预览模式中，编辑器中呈现的页面与在您发布的服务上看到的一样。这允许内容作者通过单击链接等来导航内容。
 
 ![预览模式](assets/preview-mode.png)
 
@@ -254,13 +254,13 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ##### 编辑 {#edit}
 
-时间 [组件模式，](#component-mode) 所选组件的编辑选项将显示在属性边栏中。 在属性边栏中，您可以编辑选定的组件。 如果选定的组件是内容片段，您还可以点按或单击编辑按钮。
+时间 [组件模式，](#component-mode) 所选组件的编辑选项将显示在属性边栏中。 在属性边栏中，您可以编辑选定的组件。 如果选定的组件是内容片段，您还可以选择编辑按钮。
 
 ![“编辑”图标](assets/edit.png)
 
 点按或单击“编辑”按钮将在一个新的选项卡中打开[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。这将允许您访问内容片段编辑器的全部功能以编辑关联的内容片段。
 
-根据工作流的需要，您可能希望在 Universal Editor 中或直接在内容片段编辑器中编辑内容片段。
+根据工作流的需求，您可能需要在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 >[!TIP]
 >
->请注意，在组件模式下，点按或单击内容会选择内容进行编辑。 如果您要使用链接来导航内容，请切换到[预览模式](#preview-mode)。
+>请注意，在组件模式下，点按或单击内容会选择内容进行编辑。 如果要通过以下链接导航内容，请切换到 [预览模式。](#preview-mode)
 
 根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在中为内容提供其他信息和选项。 [属性边栏。](#properties-rail)
 
@@ -310,9 +310,9 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ![编辑内容](assets/editing-content.png)
 
-按“输入/回车”键或点按或单击文本框外部可保存更改。
+按Enter/Return键或选择文本框外部以保存更改。
 
-当您点按或单击以选择文本组件时，其详细信息将显示在属性边栏中。 您还可以编辑边栏中的文本。
+当您选择选择文本组件时，其详细信息将显示在属性边栏中。 您还可以编辑边栏中的文本。
 
 ![编辑属性边栏中的文本](assets/ue-editing-text-component-rail.png)
 
@@ -322,7 +322,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 如果您在 [组件模式](#component-mode) 并选择一个富文本组件，您可以通过双击或双击该组件就地编辑文本。
 
-按“输入/回车”键或点按或单击文本框外部可保存更改。
+按Enter/Return键或选择文本框外部以保存更改。
 
 ![编辑富文本组件](assets/rich-text-editing.png)
 
@@ -334,11 +334,11 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ![编辑媒体](assets/ue-edit-media.png)
 
-点按或单击 **替换** 按钮替换属性边栏中选定图像的预览下的图像，以将其替换为您资源库中的另一个图像。
+选择 **替换** 按钮替换属性边栏中选定图像的预览下的图像，以将其替换为您资源库中的另一个图像。
 
 1. [资源选择器](/help/assets/asset-selector.md#using-asset-selector)窗口会打开，以供您选择资源。
-1. 点按或单击以选择新资源。
-1. 点击或单击 **选择** 以返回到替换资产的属性边栏。
+1. 选择以选择新资源。
+1. 选择 **选择** 以返回到替换资产的属性边栏。
 
 更改会自动保存到您的内容中。
 
@@ -358,14 +358,14 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
 
-如果您想改为在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑您的内容片段，请单击模式边栏中的[编辑按钮](#edit)。
+如果您想在 [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md) 相反，请单击 [编辑按钮](#edit) 在模式边栏中。
 
-根据工作流的需要，您可能希望在 Universal Editor 中或直接在内容片段编辑器中编辑内容片段。
+根据工作流的需求，您可能需要在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
 
 ### 向容器添加组件 {#adding-components}
 
 1. 在内容树或编辑器中选择一个容器组件。
-1. 然后点按或单击属性边栏中的添加图标。
+1. 然后，在属性边栏中选择添加图标。
 
    ![选择要添加到容器的组件](assets/ue-add-component.png)
 
@@ -378,9 +378,9 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 ### 从容器中删除组件 {#deleting-components}
 
 1. 在内容树或编辑器中选择一个容器组件。
-1. 点击或单击容器的 V 形图标以在内容树中展开其内容。
+1. 选择容器的V形图标以在内容树中展开其内容。
 1. 然后，在内容树中，选择容器内的一个组件。
-1. 点按或单击属性边栏中的删除图标。
+1. 在属性边栏中选择删除图标。
 
    ![删除组件](assets/ue-delete-component.png)
 
@@ -394,7 +394,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 1. 在内容树或编辑器中选择一个容器组件。
 1. 如果尚未进入[内容树模式，](#content-tree-mode)切换到它。
-1. 点击或单击容器的 V 形图标以在内容树中展开其内容。
+1. 选择容器的V形图标以在内容树中展开其内容。
 1. 拖动容器内组件旁边的手柄图标表明您可以重新排列它们。拖动组件以对它们在容器内重新排序。
 
    ![重新排序组件](assets/ue-reordering-components.png)

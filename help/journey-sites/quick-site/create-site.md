@@ -2,10 +2,10 @@
 title: 从模板创建站点
 description: 了解如何使用站点模板快速创建AEM站点。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 91%
+source-wordcount: '1474'
+ht-degree: 78%
 
 ---
 
@@ -40,8 +40,8 @@ ht-degree: 91%
 
 * `files`：包含 UI 套件、XD 文件和可能的其他文件的文件夹
 * `previews`：包含站点模板的屏幕截图的文件夹
-* `site`：为从此模板创建的每个站点复制的内容的内容包，例如页面模板、页面等
-* `theme`：用于修改站点外观的模板主题的来源，包括 CSS、JavaScript 等
+* `site`：为从此模板创建的每个站点复制的内容的内容包，例如页面模板、页面等。
+* `theme`：用于修改站点外观的模板主题的来源，包括CSS、JavaScript等。
 
 模板具有强大的功能，它们可重用，这使得内容作者能够快速创建站点。由于您可以在 AEM 安装中使用多个模板，因此可以灵活地满足各种业务需求。
 
@@ -71,17 +71,17 @@ ht-degree: 91%
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 点按或单击屏幕右上方的&#x200B;**创建**，然后从下拉菜单中选择&#x200B;**从模板创建站点**。
+1. 选择 **创建** 在屏幕的右上角，从下拉菜单中选择 **从模板创建站点**.
 
    ![从模板创建新站点](assets/create-site-from-template.png)
 
-1. 在创建站点向导中，点按或单击左栏顶部的&#x200B;**导入**。
+1. 在创建站点向导中，选择 **导入** 左列的顶部。
 
    ![站点创建向导](assets/site-creation-wizard.png)
 
-1. 在文件浏览器中，找到[之前下载的](#obtaining-template)模板并点按或单击&#x200B;**上传**。
+1. 在文件浏览器中，找到模板 [您之前下载过](#obtaining-template) 并选择 **上传**.
 
-1. 上传模板后，该模板将显示在可用模板列表中。点按或单击模板以将其选定（它还在右栏中显示有关模板的信息），然后点按或单击 **下一个**.
+1. 上传模板后，该模板将显示在可用模板列表中。选择该模板以将其选中（它还在右栏中显示有关模板的信息），然后选择 **下一个**.
 
    ![选择模板](assets/select-site-template.png)
 
@@ -90,11 +90,11 @@ ht-degree: 91%
    * 站点标题显示在浏览器标题栏中。
    * 站点名称会成为 URL 的一部分。
 
-1. 点按或单击&#x200B;**创建**，将从站点模板创建新站点。
+1. 选择 **创建** 并从站点模板创建新站点。
 
    ![新站点的详细信息](assets/create-site-details.png)
 
-1. 在显示的确认对话框中，点按或单击&#x200B;**完成**。
+1. 在显示的确认对话框中，选择 **完成**.
 
    ![“成功”对话框](assets/success.png)
 
@@ -115,7 +115,7 @@ ht-degree: 91%
 
 如果您确实需要额外的前端自定义，请记住，前端开发人员可能不熟悉您的内容的详细信息。因此，最好是为开发人员提供典型内容，在自定义主题时，该内容可以用作参考基础。一个典型示例是站点主语言的主页。
 
-1. 在站点浏览器中，导航到站点主语言的主页，再点按或单击页面以将其选定，然后点按或单击菜单栏中的&#x200B;**编辑**。
+1. 在站点浏览器中，导航到站点主语言的主页，然后选择页面以将其选定，然后选择 **编辑** 在菜单栏中。
 
    ![典型主页](assets/home-page-in-console.png)
 
@@ -137,7 +137,7 @@ ht-degree: 91%
 
    ![显示站点边栏](assets/show-site-rail.png)
 
-1. 点按或单击新站点的根，然后点按或单击站点边栏中的&#x200B;**下载主题源**。
+1. 选择新站点的根，然后选择 **下载主题源** 在站点边栏中。
 
    ![下载主题源](assets/download-theme-sources.png)
 
@@ -147,8 +147,8 @@ ht-degree: 91%
 
 为了让前端开发人员使用您站点中的实际 AEM 内容预览自定义项，您必须设置代理用户。
 
-1. 在 AEM 中，从主导航转至&#x200B;**工具** -> **安全性** -> **用户**。
-1. 在 User Management 控制台中，点按或单击&#x200B;**创建**。
+1. 在AEM中，从主导航转到 **工具** > **安全性** > **用户**.
+1. 在用户管理控制台中，选择 **创建**.
 
    ![User Management 控制台](assets/user-management-console.png)
 1. 在&#x200B;**创建新用户**&#x200B;窗口中，您必须至少提供：
@@ -162,7 +162,7 @@ ht-degree: 91%
 
    ![添加到组](assets/add-to-group.png)
 
-1. 点按或单击&#x200B;**保存并关闭**。
+1. 选择 **保存并关闭**.
 
 您现在已完成配置。内容作者现在可以开始在站点上创建内容，为历程的下一步中的前端自定义做准备。
 
@@ -181,7 +181,7 @@ ht-degree: 91%
 我们建议您查看文档[设置管道](pipeline-setup.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
 * [AEM 标准站点模板](https://github.com/adobe/aem-site-template-standard) – 这是 AEM 标准站点模板的 GitHub 存储库。
-* [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) – 如果您希望在从模板创建 AEM 站点后进一步对其进行自定义，可参考本指南以详细了解如何管理 AEM 站点的页面。
+* [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)  — 如果您要在从模板创建AEM站点后进一步对其进行自定义，可参考本指南以详细了解如何管理该站点的页面。
 * [如何使用包](/help/implementing/developing/tools/package-manager.md) – 可使用包导入和导出存储库内容。本文档说明了在 AEM 6.5 中使用包的方式，此方式也适用于 AEMaaCS。
 * [站点管理文档](/help/sites-cloud/administering/site-creation/create-site.md) – 查看有关站点创建的技术文档，了解有关快速站点创建工具的功能的更多详细信息。
 * [创建表格或将表格添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - 分步学习将表单集成到您的网站中并优化您的数字体验以尽量提高影响力的技巧和最佳实践。

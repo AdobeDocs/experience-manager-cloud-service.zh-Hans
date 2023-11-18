@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2316'
 ht-degree: 3%
 
 ---
@@ -276,7 +276,7 @@ HTML元素 **标签** 用于字段包括类 **左侧** 或 **top** 标签在顶�
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
-   <td><p>多选下拉菜单的最大高度</p> </td>
+   <td><p>多选下拉列表的最大高度</p> </td>
   </tr>
  </tbody>
 </table>
@@ -686,7 +686,7 @@ HTML元素 **标签** 用于字段包括类 **左侧** 或 **top** 标签在顶�
 
 `}`
 
-此外，还有一些类可根据选项卡导航器（包括左侧和顶部）是否具有嵌套/子项/子导航器来设置其样式。
+此外，还有一些类可根据选项卡导航器（包括左导航器和上导航器）是否具有嵌套/子导航器/子导航器来设置其样式。
 
 <table>
  <tbody>

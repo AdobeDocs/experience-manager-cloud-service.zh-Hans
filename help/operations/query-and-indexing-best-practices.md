@@ -3,10 +3,10 @@ title: 查询和索引最佳实践
 description: 了解如何根据 Adobe 的最佳实践指南优化索引和查询。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 47%
+source-wordcount: '3128'
+ht-degree: 44%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 47%
 
 在设计涵盖这些方面的分类法时，考虑索引设计的“可通行性”也很重要。在这种情况下，可通行性是分类法允许基于其路径以可预测地方式访问内容的能力。这样的系统比需要执行多个查询的系统更有效、容易维护。
 
-此外，在设计分类法时，考虑排序是否重要也很关键。如果不需要显式排序，并且需要大量同级节点，则最好使用无序节点类型，如`sling:Folder`或`oak:Unstructured`。在需要排序的情况下，`nt:unstructured` 和 `sling:OrderedFolder` 更合适。
+此外，在设计分类法时，考虑排序是否重要也很重要。 如果不需要显式排序，并且需要大量同级节点，则最好使用无序节点类型，如`sling:Folder`或`oak:Unstructured`。在需要排序的情况下，`nt:unstructured` 和 `sling:OrderedFolder` 更合适。
 
 ### 组件中的查询 {#queries-in-components}
 
@@ -46,7 +46,7 @@ ht-degree: 47%
 
 可以简单地检索 `/content/myUnstructuredContent/parentCategory/childCategory` 节点，解析其子节点并用于呈现组件。
 
-此外，当您处理一个小的或同质的结果集时，遍历存储库并收集所需的节点可能比通过手工创建查询来返回相同的结果集更快。作为一般考虑，应尽可能避免查询。
+此外，当您处理一个小的或同质的结果集时，遍历存储库并收集所需的节点会比通过手工创建查询来返回相同的结果集更快。 作为一般考虑，应尽可能避免查询。
 
 ### 预取结果 {#prefetching-results}
 
@@ -85,7 +85,7 @@ AEMas a Cloud Service提供 [查询性能工具](#query-performance-tool)，旨�
 
 查询引擎只考虑单个索引。这意味着可以并且应该通过向现有索引添加更多自定义索引属性来对其进行自定义。
 
-本文档的 [JCR 查询备忘表](#jcr-query-cheatsheet)部分列出了可用的约束条件，并概述了怎样对索引进行定义，以便于检索。使用[查询性能工具](#query-performance-tool)测试查询并确保使用了正确的索引，并且查询引擎不需要评估索引之外的约束。
+此 [JCR查询备忘单](#jcr-query-cheatsheet) 本文档的部分列出了可用的约束条件，并概述了怎样对索引进行定义，以便于检索。 使用[查询性能工具](#query-performance-tool)测试查询并确保使用了正确的索引，并且查询引擎不需要评估索引之外的约束。
 
 ### 排序 {#ordering}
 
@@ -138,7 +138,7 @@ Explain查询工具允许开发人员了解查询执行计划(请参阅 [读取�
 
 要解释查询，请执行以下操作：
 
-* 使用选择适当的查询语言 `Language` 下拉菜单。
+* 使用选择适当的查询语言 `Language` 下拉列表。
 * 将查询语句输入到 `Query` 字段。
 * 如果需要，可使用提供的复选框选择查询的执行方式。
    * 默认情况下，无需运行JCR查询来标识查询执行计划（QueryBuilder查询并非如此）。
@@ -239,7 +239,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 此查询执行计划将生成以下每个资产 `/content/dam` 从索引中读取，然后由查询引擎进一步筛选（这将仅包括那些与结果集中的非索引属性限制匹配的属性）。
 
-即使只有一小部分资源符合限制 `jcr:content/metadata/myProperty = "My Property Value"`，查询需要读取大量节点来（尝试）填充请求的结果“页面”。 这可能会导致查询性能不佳，表现为查询性能较低 `Read Optimization` 分数)，并且可能导致出现警告消息，指示大量节点正在被遍历(请参阅 [索引遍历](#index-traversal))。
+即使只有一小部分资源符合限制 `jcr:content/metadata/myProperty = "My Property Value"`时，查询必须读取大量节点来（尝试）填充请求的结果“页面”。 这可能会导致查询性能不佳，表现为查询性能较低 `Read Optimization` 分数)，并且可能导致出现警告消息，指示大量节点正在被遍历(请参阅 [索引遍历](#index-traversal))。
 
 要优化此第二个查询的性能，请创建 `damAssetLucene-9` 索引(`damAssetLucene-9-custom-1`)并添加以下属性定义 — 
 
@@ -308,7 +308,8 @@ Automated Cloud Manager管道检查将强制执行上述某些最佳实践。
 05.10.2023 10:56:10.498 *WARN* [127.0.0.1 [1696502982443] POST /libs/settings/granite/operations/diagnosis/granite_queryperformance.explain.json HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.search.spi.query.FulltextIndex$FulltextPathCursor Index-Traversed 60000 nodes with filter Filter(query=select [jcr:path], [jcr:score], * from [dam:Asset] as a where isdescendantnode(a, '/content/dam') order by [jcr:content/metadata/unindexedProperty] /* xpath: /jcr:root/content/dam//element(*, dam:Asset) order by jcr:content/metadata/unindexedProperty */, path=/content/dam//*)
 ```
 
-出现这种情况的原因有很多 — 
+出现这种情况有多种原因 — 
+
 1. 并非查询中的所有限制都可以在索引上处理。
    * 在这种情况下，正在从索引读取最终结果集的超集，并随后在查询引擎中过滤。
    * 这比在基础索引查询中应用限制慢许多倍。
@@ -316,7 +317,7 @@ Automated Cloud Manager管道检查将强制执行上述某些最佳实践。
    * 在这种情况下，索引返回的所有结果必须由查询引擎读取并在内存中排序。
    * 这比在基础索引查询中应用排序慢许多倍。
 1. 查询的执行器正在尝试迭代大型结果集。
-   * 发生此情况的原因有很多，如下所列：
+   * 发生此情况可能有几个原因，如下所示：
 
 | 原因 | 缓解 |
 |----------|--------------|

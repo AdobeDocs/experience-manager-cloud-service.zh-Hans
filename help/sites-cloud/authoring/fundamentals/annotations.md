@@ -2,10 +2,10 @@
 title: 添加页面注释
 description: 使用注释模式可像使用便笺一样在页面上留下注释和草图，协助您的内容审阅过程
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 83%
 
 ---
 
@@ -43,11 +43,11 @@ ht-degree: 100%
 
    ![注释示例](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. 单击或点按注释以打开“注释”对话框并查看其详细信息。
+1. 选择注释以打开“注释”对话框并查看其详细信息。
 
    ![注释详细信息](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-1. 要退出“注释”模式并返回之前使用的模式，请点按/单击顶部工具栏右侧的 x 按钮。
+1. 要退出“注释”模式并返回以前使用的模式，请选择顶部工具栏右侧的x按钮。
 
 ## 添加和编辑注释 {#annotating-a-component}
 
@@ -55,9 +55,9 @@ ht-degree: 100%
 
 1. 在页面上[启动“注释”模式](#annotate-mode)。
 
-1. 单击/点按“添加注释”图标（工具栏左侧的加号）以开始添加注释。
+1. 选择“添加注释”图标（工具栏左侧的加号）以开始添加注释。
 
-1. 单击或点按需要添加注释的组件（可添加注释的组件会用蓝色边框突出显示），此时会打开如下对话框：
+1. 选择所需的组件（可添加注释的组件以蓝色边框突出显示）以添加注释，并打开对话框：
 
    ![添加注释](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -81,9 +81,9 @@ ht-degree: 100%
 
 1. 完成特定注释编辑之后，您可以：
 
-   * 单击或点按文本标记以打开该注释。打开后，即可查看全文、作出更改或[删除注释](#deleting-annotations)。
+   * 选择文本标记以打开注释。 打开后，即可查看全文、作出更改或[删除注释](#deleting-annotations)。
    * 调整文本标记位置。
-   * 单击或点按草图线以选择该草图，并将它拖至所需的位置。
+   * 选取草绘线以选取该草绘，并将其拖动到所需位置。
    * 移动或复制组件
       * 还将移动或复制任何相关的注释及其草图，但它们相对于段落的位置将保持不变。
 
@@ -102,9 +102,9 @@ ht-degree: 100%
 
 1. 在页面上[启动“注释”模式](#annotate-mode)。
 
-1. 单击/点按文本标记以打开注释。
+1. 选择文本标记以打开注释。
 
-1. 单击或点按“删除”图标。
+1. 选择删除图标。
 
    ![删除注释](/help/sites-cloud/authoring/assets/annotation-delete.png)
 
@@ -120,7 +120,7 @@ ht-degree: 100%
 
 1. 在页面上[启动“注释”模式](#annotate-mode)。
 
-1. 单击或点按草图。AEM 用深蓝色的框突出显示它。
+1. 选取草绘。 AEM 用深蓝色的框突出显示它。
 
    ![选择要删除的草图](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

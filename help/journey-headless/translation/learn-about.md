@@ -2,10 +2,10 @@
 title: 了解 AEM 中的 Headless 内容及其翻译方法
 description: 了解 Headless 概念、它们如何映射到 AEM 以及 AEM 翻译理论。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 97%
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 97%
 
 ![经典全栈 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-在全栈 CMS 中，用于操作内容的所有功能都在 CMS 中。该系统的各种功能构成了 CMS 堆栈的不同组件。全栈解决方案有许多优点。
+在全栈CMS中，处理内容的功能位于CMS中。 该系统的各种功能构成了 CMS 堆栈的不同组件。全栈解决方案有许多优点。
 
 * 需要维护一个系统。
 * 集中管理内容。
@@ -47,7 +47,7 @@ ht-degree: 97%
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消费服务（无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等）都将从 Headless CMS 获取内容并提供它们自己的呈现。它们负责为您的内容提供它们自己的头。
+消费服务，无论是AR体验、Web商店、移动体验、渐进式Web应用程序(PWA)等，都会从Headless CMS中获取内容并提供自己的渲染。 它们负责为您的内容提供它们自己的头。
 
 忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 

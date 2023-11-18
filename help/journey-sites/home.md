@@ -2,10 +2,10 @@
 title: AEM Sites 历程
 description: 这里概述了可用的引导式历程，让您了解 AEM 强大的站点功能。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 82%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## AEM 文档历程 {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/documentation-journeys.md)通过提供叙述来帮助可能是 AEM 新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或 AEM 知识，从而将许多不同且可能复杂的主题和功能联系起来。
+[文档历程](/help/journey-documentation/documentation-journeys.md) 通过提供叙述来帮助可能是AEM新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或AEM知识，从而将许多不同的、复杂的主题和功能联系起来。
 
 文档历程是围绕最佳实践准则而设计的，其中包含了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及来自客户项目的反馈。
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 个人历程是为特定的角色或受众定义的，而且定义了与读者交互的其他角色。
 
-虽然历程中的信息对多个角色很有用，但历程针对的是特定角色，并且一些信息可能对特定角色来说是多余的。
+历程中的信息对多个角色可能很有用，但历程针对的是特定角色，并且一些信息可能对特定角色来说是多余的。
 
 ## 站点历程 {#sites-journeys}
 

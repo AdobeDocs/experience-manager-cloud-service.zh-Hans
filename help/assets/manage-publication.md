@@ -5,7 +5,7 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -134,7 +134,6 @@ Only the selected folder content and references are published.
 >
 >但是，您可以删除现有自定义项以使用新的 [!DNL Manager Publication] 功能。
 
-
 ## 稍后发布资产 {#publish-assets-later}
 
 要计划在稍后的日期或时间发布资产的工作流，请执行以下操作：
@@ -182,6 +181,7 @@ Only the selected folder content and references are published.
 此 `Request Publication` 选项有助于在发布资产之前验证资产的工作流 [!DNL AEM] 资源环境。 [!DNL AEM] 为不同用户提供不同级别的权限。 您可以是 *参与者* 这些用户正在上传资产，但在验证上传后才能发布这些资产。 此外，作为一名 *管理员* 您可以管理资产的读取和写入工作流。
 
 请求发布选项适用于以下用户：
+
 * **投稿人：** 如果您是可以对下列内容做出贡献的用户 [!DNL AEM] Assets，则您对的访问权限有限 [!DNL AEM] 资产工作流程。 `Manage publication` 按钮对您而言是隐藏的。 作为投稿人，您只能通过添加资产进行投稿，但无法发布它们或拥有工作流的读取访问权限。
 
 * **工作流用户：** 此用户无法发布资产，但具有工作流的读取权限。 作为工作流用户，您可以：

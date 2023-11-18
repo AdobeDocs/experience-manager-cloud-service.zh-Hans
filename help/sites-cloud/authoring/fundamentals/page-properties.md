@@ -2,10 +2,10 @@
 title: 编辑页面属性
 description: 了解如何定义在 AEM 中管理页面所需的属性。
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 98%
+source-wordcount: '2270'
+ht-degree: 96%
 
 ---
 
@@ -87,9 +87,9 @@ ht-degree: 98%
   >* 不支持正则表达式模式。
   >* 不应设置为现有页面。
 
-   * **添加** – 点按或单击此项可显示一个字段来定义页面的虚 URL。
-      * 再次点按或单击此项可添加多个字段。
-      * 点按或单击&#x200B;**删除**&#x200B;图标可删除虚 URL。
+   * **添加**  — 选择以显示一个字段来定义页面的虚URL。
+      * 再次选择可添加多个。
+      * 选择 **移除** 图标以删除虚URL。
    * **重定向虚 URL** – 指示您是否希望页面使用虚 URL。
 
 ### 高级 {#advanced}
@@ -105,7 +105,7 @@ ht-degree: 98%
       * 例如，如果您为页面 `/content/wknd/us/en/magazine/members-only` 定义别名 `private`，则也可以通过 `/content/wknd/us/en/magazine/private` 访问此页面
       * 创建别名将设置页面节点上的 `sling:alias` 属性，这只会影响资源，而不会影响存储库路径。
       * 无法发布编辑器中按别名处理的页面。编辑器中的[发布选项](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)仅适用于通过其实际路径访问的页面。
-      * 有关详细信息，请参阅[“SEO 和 URL 管理最佳实践”下的“本地化的页面名称”](/help/overview/seo-and-url-management.md#localized-page-names)。
+      * 请参阅 [SEO和URL管理最佳实践下的本地化页面名称](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **配置**
 
@@ -147,7 +147,7 @@ ht-degree: 98%
 
 * **特色图像**
 
-  选择并配置要突出显示的图像。这用于引用页面的组件；例如，Teaser、页面列表等。
+  选择并配置要突出显示的图像。这用在引用页面的组件中；例如，Teaser、页面列表等。
 
    * **图像**
 
@@ -237,7 +237,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->有关详细信息，请参阅[启用渐进式 Web 应用程序功能](/help/sites-cloud/authoring/features/enable-pwa.md)。
+>请参阅 [启用渐进式Web应用程序功能](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **配置安装体验**
 

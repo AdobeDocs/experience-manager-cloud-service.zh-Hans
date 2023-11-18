@@ -2,9 +2,9 @@
 title: 配置和配置浏览器
 description: 了解Adobe Experience Manager (AEM)配置以及它们如何管理AEM中的工作区设置。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1487'
 ht-degree: 6%
 
 ---
@@ -68,8 +68,8 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
 
 使用配置浏览器，可以在AEM中轻松创建配置。
 
-1. 登录AEMas a Cloud Service，从主菜单选择 **工具** -> **常规** -> **配置浏览器**.
-1. 点按或单击&#x200B;**创建**。
+1. 登录AEMas a Cloud Service，从主菜单选择 **工具** > **常规** > **配置浏览器**.
+1. 选择&#x200B;**创建**。
 1. 提供配置的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
 
    ![创建配置](assets/configuration-create.png)
@@ -83,7 +83,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
    * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
    * [可编辑模板](/help/sites-cloud/authoring/features/templates.md)
    * 各种云配置
-1. 点按或单击&#x200B;**创建**。
+1. 选择&#x200B;**创建**。
 
 >[!TIP]
 >
@@ -93,7 +93,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
 
 如果您将配置视为工作区，则可以对这些配置设置访问权限，以强制执行谁可以访问这些工作区，谁不能访问这些工作区。
 
-1. 登录AEMas a Cloud Service，从主菜单选择 **工具** -> **常规** -> **配置浏览器**.
+1. 登录AEMas a Cloud Service，从主菜单选择 **工具** > **常规** > **配置浏览器**.
 1. 选择要编辑的配置，然后选择 **属性** 工具栏中。
 1. 选择要添加到配置的任何其他功能。
 
@@ -110,7 +110,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
 1. 选中一个或多个选定的用户或角色应具有的访问选项，然后单击 **添加**.
    ![向配置添加访问权限](assets/configuration-edit.png)
 1. 重复这些步骤，以便您可以选择用户或角色，并根据需要分配其他访问权限。
-1. 点击或单击 **保存并关闭** 完成后。
+1. 选择 **保存并关闭** 完成后。
 
 ## 作为开发人员的配置 {#configurations-developer}
 
@@ -196,9 +196,9 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 使用配置 {#using-configurations}
 
-AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置 [如上一个示例中所述。](#developer-example)
+AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置 [如上一个示例中所述](#developer-example).
 
-有关上下文感知配置、示例及其使用方式的更多详细信息， [请参阅Sling文档。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+有关上下文感知配置、示例及其使用方式的更多详细信息，请参阅 [Sling文档。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html).
 
 ### ConfMgr Web控制台 {#confmgr-web-console}
 

@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.11.
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 73%
+source-wordcount: '740'
+ht-degree: 60%
 
 ---
 
@@ -44,13 +44,13 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 
 
 如果您使用 GitHub 管理存储库，则[现在可以通过 Cloud Manager 直接在 GitHub 存储库中验证代码。](/help/implementing/cloud-manager/managing-code/byo-github.md)此集成使您无需始终与 Adobe 存储库同步代码，并可在将拉取请求合并到主分支之前对其进行验证。
 
-如果您有兴趣测试这项新功能并共享您的反馈，请从您的 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-CloudManager_BYOG@adobe.com`。
+如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `Grp-CloudManager_BYOG@adobe.com` 从与Adobe ID关联的电子邮件地址中查找。
 
 ### 自定义权限 {#custom-permissions}
 
 [Cloud Manager 自定义权限](/help/implementing/cloud-manager/custom-permissions.md)可让您创建具有可配置权限的新的自定义权限配置文件，以限制 Cloud Manager 用户对项目、管道和环境的访问。
 
-如果您有兴趣测试此新功能并共享您的反馈，请从您的 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-CloudManager-custom-permissions@adobe.com`。
+如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `Grp-CloudManager-custom-permissions@adobe.com` 从与Adobe ID关联的电子邮件地址中查找。
 
 ### 自助内容恢复 {#content-restore}
 
@@ -59,7 +59,7 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 
 * 前 24 小时的时间点备份恢复
 * 固定时间恢复最长可达 7 天
 
-如果您有兴趣测试此新功能并分享您的反馈，请从您的 Adobe ID 关联的电子邮件发送电子邮件至`aemcs-restorefrombackup-adopter@adobe.com`。请注意：
+如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `aemcs-restorefrombackup-adopter@adobe.com` 来自与Adobe ID关联的电子邮件。
 
 * 早期采用者计划仅限于开发环境。
 * 此功能的早期采用者计划的可用性是有限的。
@@ -71,7 +71,7 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 
 
 该仪表板利用 Google Lighthouse，这是一种开源自动化工具，用于提高 Web 应用程序的质量。您可以针对任何网页（公共网页或需要身份验证的网页）运行它。它对性能、可访问性、SEO、搜索引擎优化等进行审核。
 
-有兴趣试驾新仪表板吗？请从与您的 Adobe ID 关联的电子邮件发送电子邮件至`aem-lighthouse-pilot@adobe.com`，我们可以帮助您开始。
+有兴趣试驾新仪表板吗？发送电子邮件至 `aem-lighthouse-pilot@adobe.com` 从与Adobe ID关联的电子邮件中，我们可以帮助您入门。
 
 ## 已知问题 {#known-issues}
 

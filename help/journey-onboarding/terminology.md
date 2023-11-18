@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 术语
 description: 在登录 AEMaaCS 之前，了解系统的一些术语及其基本结构会很有帮助。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 87%
+source-wordcount: '463'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 87%
 
 AEM as a Cloud Service 是一种强大而灵活的工具，要使用任何工具，您都应该熟悉其组织结构以及用于描述它的术语和语言。本文档总结了开始使用系统之前需要理解的一些关键术语。
 
-阅读本文档后，您将了解：
+阅读本文档后，您应该了解
 
 * 构成 AEMaaCS 的不同层。
 * 每个层的基本功能。
@@ -44,7 +44,7 @@ AEM as a Cloud Service 是一种强大而灵活的工具，要使用任何工具
    * WKND 媒体部门的 Assets 程序
 * WKND 杂志和 WKND 媒体项目都具有开发、暂存和生产&#x200B;**环境**。
 * **存储库**&#x200B;用于维护 WKND 杂志和 WKND 媒体的自定义代码和应用程序。
-* 各种&#x200B;**工具和工作流**&#x200B;在整个存储库中使用 CI/CD 管道、访问日志、访问 AEM 等部署代码。
+* 各种 **工具和工作流** 在整个存储库中使用CI/CD管道部署代码、访问日志、访问AEM等。
 
 ## 后续内容 {#what-is-next}
 

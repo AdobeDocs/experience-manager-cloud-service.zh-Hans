@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 71%
+source-wordcount: '938'
+ht-degree: 69%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从 **项目概述** 页面，点按或单击 **管道** 制表符以切换到 **管道** 窗口。
+1. 从 **项目概述** 页面上，选择 **管道** 制表符以切换到 **管道** 窗口。
 
 1. 在这里，您可以看到项目的所有管道的列表，以及启动和停止管道执行，就像在&#x200B;**管道信息卡**&#x200B;中一样。
 
@@ -57,7 +57,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从 **项目概述** 页面，点按或单击 **活动** 制表符以切换到 **活动** 窗口。
+1. 从 **项目概述** 页面上，选择 **活动** 制表符以切换到 **活动** 窗口。
 
 1. 在这里，您可以看到项目的所有管道执行的列表，包括当前执行和历史执行。
 
@@ -87,7 +87,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 这将显示&#x200B;**编辑生产管道**&#x200B;或&#x200B;**编辑非生产管道**&#x200B;对话框，您可在其中编辑在创建管道时输入的相同详细信息。
 
-   * 有关对管道可用的所有字段和配置选项的详细信息，请参阅以下页面。
+   * 有关对管道可用的字段和配置选项的详细信息，请参阅以下页面。
       * [配置生产管道](configuring-production-pipelines.md)
       * [配置非生产管道](configuring-non-production-pipelines.md)
 
@@ -127,7 +127,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![步骤摘要](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-step.png)
 
-点按或单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。这包括基于该项目的历史趋势的管道的平均持续时间。
+选择 **查看详细信息** 用于显示 **持续时间** 部分。 这包括基于该项目的历史趋势的管道的平均持续时间。
 
 ![持续时间](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
 
@@ -145,16 +145,16 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
    ![取消管道](/help/implementing/cloud-manager/assets/cancel-pipeline.png)
 
-1. 点击或单击 **取消**.
+1. 选择 **取消**.
 
 或者，您可以从管道详细信息页面取消管道。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 导航至 **管道** 选项卡 **项目概述** 页面，然后点按或单击要取消的管道。
+1. 导航至 **管道** 选项卡 **项目概述** 页面上，并选择要取消的管道。
 
 1. 您将转到运行中的管道的详细信息页面。
 
    ![取消管道详细信息](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
-1. 点击或单击 **取消**.
+1. 选择 **取消**.

@@ -1,10 +1,10 @@
 ---
 title: API 参考材料
-description: AEM具有广泛且强大的API，可用于您的数字体验项目。
+description: AEM具有广泛而强大的API，可用于您的数字体验项目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 9%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 9%
 
 Adobe Experience Manager (AEM)提供了许多API用于开发应用程序和扩展AEM。 AEM构建在多种开源技术之上，这些技术也可以使用。
 
-## AEM Core API {#core-aem-apis}
+## AEM核心API {#core-aem-apis}
 
 以下API是AEM的核心。
 
 | API | 描述 |
 |---|---|
 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | 产品抽象，如页面、资产、工作流等。 |
-| [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe的开放Web栈栈，提供各种基本组件（请注意，6.5 Granite材料适用于AEMaaCS） |
-| [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobe的云UI可视化样式，旨在提供用户体验的一致性 |
+| [Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobe的Open Web栈栈，提供各种基本组件（6.5 Granite材料适用于AEMaaCS） |
+| [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | Adobe云UI的可视化样式，旨在提供一致的用户体验 |
 
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
@@ -29,18 +29,18 @@ Adobe Experience Manager (AEM)提供了许多API用于开发应用程序和扩�
 
 ## 其他框架 {#additional-apis}
 
-AEM依赖于许多其他开源API。
+AEM依赖于多个其他开源API。
 
 | API | 描述 |
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | 使用Java内容存储库(JCR)存储和管理内容的Web框架 |
-| [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 实施可扩展的高性能分层Java内容存储库(JCR)，用作现代世界一流网站的基础 |
-| [Java内容存储库](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR版本2.0的规范 |
+| [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 实现可扩展的高性能分层Java内容存储库(JCR)，以用作现代世界一流网站的基础 |
+| [Java内容存储库](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | JCR版本2.0规范 |
 | [Apache Felix](https://felix.apache.org) | Open Services Gateway Initiative (OSGi)框架和服务平台的实施 |
 
 ## API偏好设置准则 {#guidelines}
 
-AEM基于以下四个主要Java API集构建，按优先级降序排列。
+AEM基于以下四个主要Java API集构建，并按优先级降序排列。
 
 | 优先级 | API | 描述 |
 |---|---|---|
@@ -49,7 +49,7 @@ AEM基于以下四个主要Java API集构建，按优先级降序排列。
 | 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | 数据和内容抽象，如节点、属性和会话。 |
 | 4 | [Apache Felix](https://felix.apache.org/) | OSGi应用程序容器抽象，例如服务和(OSGi)组件。 |
 
-如果API由AEM提供，则首选它而不是Sling、JCR和OSGi。 如果AEM不提供API，则首选使用Sling而不是JCR和OSGi。
+如果API由AEM提供，则首选它而不是Sling、JCR和OSGi。 如果AEM不提供API，则首选使用Sling，而非JCR和OSGi。
 
 >[!TIP]
 >
@@ -61,12 +61,12 @@ AEM提供了可自定义的组件和内容交付选项。
 
 | 专题 | 描述 |
 |---|---|
-| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 适用于AEM的标准化Web内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
+| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 适用于AEM的标准化网站内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
 | [JSON导出程序](/help/implementing/developing/components/json-exporter.md) | 以JSON数据模型格式交付任何AEM页面的内容 |
 | [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md) | 基于建模器框架生成组件内容的JSON导出 |
-| [资产API](/help/assets/mac-api-assets.md) | 允许对资源（包括二进制、元数据、演绎版和注释）执行创建 — 读取 — 更新 — 删除(CRUD)操作。 请参阅AEM Assets HTTP API |
+| [资产API](/help/assets/mac-api-assets.md) | 允许对资源执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括二进制、元数据、演绎版和注释。 请参阅AEM Assets HTTP API |
 | [内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | 通过CRUD操作直接通过HTTP API访问内容片段内容 |
-| [内容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在Headless CMS实施中实现向JavaScript客户端的有效内容片段投放 |
+| [内容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在Headless CMS实施中实现将内容片段高效投放到JavaScript客户端 |
 | [内容片段资产HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支持的HTTP资产请求的确切格式 |
 
 ## SPA特定的API {#spa-apis}

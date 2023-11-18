@@ -2,7 +2,7 @@
 title: 轻松批量创建PDF — 掌握批处理技术 — 生成数百万份PDF文档的自助指南！
 description: 如何创建以品牌为导向的个性化通信？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 2%

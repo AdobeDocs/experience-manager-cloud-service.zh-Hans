@@ -2,10 +2,10 @@
 title: 自定义站点主题
 description: 了解如何使用实时 AEM 内容构建、自定义和测试站点主题。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 96%
+source-wordcount: '960'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 96%
 
    ![npm run live](assets/npm-run-live.png)
 
-1. 代理服务器在启动时将自动打开浏览器并转到 `http://localhost:7001/`。点按或单击&#x200B;**本地登录(仅管理任务)**，并使用 AEM 管理员提供给您的代理用户凭据进行登录。
+1. 代理服务器在启动时将自动打开浏览器并转到 `http://localhost:7001/`。选择 **本地登录（仅管理任务）** 并使用AEM管理员提供给您的代理用户凭据进行登录。
 
    ![本地登录](assets/sign-in-locally.png)
 

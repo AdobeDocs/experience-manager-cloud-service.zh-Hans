@@ -2,9 +2,9 @@
 title: 异步作业
 description: Adobe Experience Manager通过以后台操作方式异步完成某些资源密集型任务来优化性能。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: b658f303d25cca958c08a95ead12fa3b987bcb3b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '863'
 ht-degree: 70%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 70%
 * 从远程 Experience Manager 部署获取超过阈值限制设置的资产
 * 转出 Live Copy
 
-您可以从以下位置查看异步作业的状态 **[!UICONTROL 后台操作]** 仪表板位置 **全局导航** -> **工具** -> **常规** -> **作业**.
+您可以从以下位置查看异步作业的状态 **[!UICONTROL 后台操作]** 仪表板位置 **全局导航** > **工具** > **常规** > **作业**.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 70%
 
 要查看异步操作状态的详细信息，请导航至 **[!UICONTROL 后台操作]** 页面。
 
-1. 在Experience Manager界面中，选择 **全局导航** -> **工具** -> **常规** -> **作业**.
+1. 在Experience Manager界面中，选择 **全局导航** > **工具** > **常规** > **作业**.
 
 1. 在 **[!UICONTROL 后台操作]** 页中，查看操作的详细信息。
 
@@ -71,7 +71,7 @@ ht-degree: 70%
 
 ## 配置异步作业处理选项 {#configure}
 
-对于异步作业，有许多选项可供配置。 以下示例说明如何在本地开发系统上使用Configuration Manager执行此操作。
+可以配置多个有关异步作业的选项。 以下示例说明如何在本地开发系统上使用Configuration Manager执行此操作。
 
 >[!NOTE]
 >

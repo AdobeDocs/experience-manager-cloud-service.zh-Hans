@@ -2,10 +2,10 @@
 title: 内容复制工具
 description: 内容复制工具使用户能够按需将可变内容从AEMas a Cloud Service上的生产环境复制到较低环境，以进行测试。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 361881807e8704dfcb27075365cb73a7f659c82d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 38%
+source-wordcount: '1292'
+ht-degree: 35%
 
 ---
 
@@ -41,13 +41,13 @@ ht-degree: 38%
 | 创建和修改[内容集](#create-content-set) | 非必填 | 必填 |
 | 开始或取消[内容复制过程](#copy-content) | 必填 | 必填 |
 
-有关权限以及如何设置这些权限的更多详细信息，请参阅文档 [AEMas a Cloud Service团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md)
+有关权限以及如何设置这些权限的更多详细信息，请参阅 [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## 创建内容集 {#create-content-set}
 
 在可以复制任何内容之前，必须定义一个内容集。定义后，可以重用内容集来复制内容。 请按照以下步骤进行操作，以便创建内容集。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 中登录 Cloud Manager 并选择适当的组织和项目。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
@@ -57,7 +57,7 @@ ht-degree: 38%
 
    ![内容集](assets/content-sets.png)
 
-1. 在向导的&#x200B;**详细信息**&#x200B;选项卡上，为内容集提供名称和描述，然后点按或单击&#x200B;**继续**。
+1. 在 **详细信息** 选项卡中，为内容集提供名称和描述，然后选择 **继续**.
 
    ![内容集详细信息](assets/add-content-set-details.png)
 
@@ -74,8 +74,8 @@ ht-degree: 38%
 
    1. 在包含的路径列表中，单击 **添加排除子路径** 位于要限制的路径旁。
    1. 在选定路径下输入要排除的子路径。
-   1. 点按或单击&#x200B;**排除路径**。
-   1. 根据需要，再次点按或单击&#x200B;**添加排除子路径**&#x200B;以添加要排除的其他路径。
+   1. 选择 **排除路径**.
+   1. 选择 **添加排除子路径** 再次添加，以根据需要排除其他路径。
       * 排除的路径必须相对于包含的路径。
       * 排除的路径数没有限制。
 
@@ -88,7 +88,7 @@ ht-degree: 38%
 
    ![编辑路径列表](assets/add-content-set-excluded-paths.png)
 
-1. 点按或单击&#x200B;**创建**&#x200B;以创建内容集。
+1. 选择 **创建** 创建内容集。
 
 内容集现在可用于在环境之间复制内容。
 
@@ -107,7 +107,7 @@ ht-degree: 38%
 >[!NOTE]
 > 请勿在环境上使用内容复制 [内容传输](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 操作正在该环境中运行。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
@@ -136,7 +136,7 @@ ht-degree: 38%
 
 1. 如有必要，您还可以选择 **包括访问控制列表** 在复制过程中。
 
-1. 点按或单击&#x200B;**复制**。
+1. 选择 **复制**.
 
 复制过程开始。复制过程的状态将反映在所选内容集的控制台中。
 
@@ -144,7 +144,7 @@ ht-degree: 38%
 
 您可以在&#x200B;**复制内容活动**&#x200B;页面中监控复制过程的状态。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
@@ -185,7 +185,7 @@ ht-degree: 38%
 
 ![访问复制内容过程的日志](assets/copy-content-logs.png)
 
-日志将下载到您的本地计算机。 如果下载未开始，请检查弹出窗口阻止程序设置。
+日志将下载到您的本地计算机。 如果未开始下载，请检查弹出窗口阻止程序设置。
 
 ## 限制 {#limitations}
 

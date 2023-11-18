@@ -2,10 +2,10 @@
 title: 向前端开发人员授予访问权限
 description: 将前端开发人员载入 Cloud Manager 以便他们能够访问 AEM 站点 Git 存储库和管道。
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 97%
+source-wordcount: '778'
+ht-degree: 91%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 97%
 
    ![产品配置文件](assets/product-profiles.png)
 
-1. 要将前端开发人员分配给正确的配置文件，请点按或单击 **用户** 选项卡，然后 **添加用户** 按钮。
+1. 要将前端开发人员分配给正确的配置文件，请选择 **用户** 选项卡，然后 **添加用户** 按钮。
 
    ![添加用户](assets/add-user.png)
 
@@ -73,11 +73,11 @@ ht-degree: 97%
 
    ![将用户添加到团队](assets/add-to-team.png)
 
-1. 在&#x200B;**产品**&#x200B;选择中，点按或单击加号，再选择 **Adobe Experience Manager as a Cloud Service**，并将&#x200B;**部署经理**&#x200B;和&#x200B;**开发人员**&#x200B;产品配置文件分配给用户。
+1. 在 **产品** 选择，选择加号，然后选择 **Adobe Experience Manager as a Cloud Service** 并分配 **部署管理员** 和 **开发人员** 将产品配置文件发送给用户。
 
    ![分配团队配置文件](assets/assign-team.png)
 
-1. 点按或单击&#x200B;**保存**，这将向已添加为用户的前端开发人员发送欢迎电子邮件。
+1. 选择 **保存** 并且会向已添加为用户的前端开发人员发送欢迎电子邮件。
 
 受邀的前端开发人员可以通过单击欢迎电子邮件中的链接并使用其 Adobe ID 登录来访问 Cloud Manager。
 

@@ -2,9 +2,9 @@
 title: 配置 ContextHub
 description: 了解如何配置Context Hub，它是一个用于存储、操作和呈现上下文数据的框架。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1629'
 ht-degree: 1%
 
 ---
@@ -43,10 +43,10 @@ UI模式在工具栏左侧显示为一系列图标。 选中后，UI模式的模
 
 添加UI模式以分组相关的ContextHub模块。 在创建UI模式时，您需要提供显示在ContextHub工具栏中的标题和图标。
 
-1. 在Experience Manager边栏中，单击或点按工具>站点>上下文中心。
-1. 单击或点按默认配置容器。
-1. 单击或点按Context Hub配置。
-1. 单击或点按创建按钮，然后单击或点按Context Hub UI模式。
+1. 在Experience Manager边栏中，选择工具>站点>上下文中心。
+1. 选择默认配置容器。
+1. 选择上下文中心配置。
+1. 选择创建按钮，然后选择Context Hub UI模式。
 
    ![添加UI模式](assets/contexthub-ui-mode.png)
 
@@ -56,7 +56,7 @@ UI模式在工具栏左侧显示为一系列图标。 选中后，UI模式的模
    * 模式图标：的选择器 [Coral UI图标](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 要使用，例如 `coral-Icon--user`
    * 启用：选择此项可在ContextHub工具栏中显示UI模式
 
-1. 单击或点按保存。
+1. 选择保存。
 
 ### 添加UI模块 {#adding-a-ui-module}
 
@@ -76,11 +76,11 @@ UI模块属性包括一个详细配置，您可以在其中提供特定于模块
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | 显示有关页面标记的统计信息 | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | 显示当前用户的配置文件信息，包括 `authorizableID`， `displayName` 和 `familyName`. 您可以更改 `displayName` 和 `familyName`. | `profile` |
 
-1. 在Experience Manager边栏上，单击或点按工具>站点> ContextHub。
-1. 单击或点按要向其添加UI模块的配置容器。
+1. 在Experience Manager边栏中，选择“工具”>“站点”>“ContextHub”。
+1. 选择要将UI模块添加到其中的配置容器。
 1. 单击或键入要将UI模块添加到其中的ContextHub配置。
-1. 单击或点按要向其中添加UI模块的UI模式。
-1. 单击或点按创建按钮，然后单击或点按ContextHub UI模块（通用）。
+1. 选择要在其中添加UI模块的UI模式。
+1. 选择创建按钮，然后选择ContextHub UI模块（通用）。
 
    ![ContextHub UI模块](assets/contexthub-ui-module.png)
 
@@ -91,7 +91,7 @@ UI模块属性包括一个详细配置，您可以在其中提供特定于模块
    * 已启用：选择此选项可在ContextHub工具栏中显示UI模块
 
 1. （可选）要覆盖默认存储配置，请输入要配置UI模块的JSON对象。
-1. 单击或点按保存。
+1. 选择保存。
 
 ## 创建ContextHub存储 {#creating-a-contexthub-store}
 
@@ -111,18 +111,18 @@ AEM提供了以下存储候选项示例，您可以根据它们创建存储。
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | 存储已解析和未解析的ContextHub区段。 自动从ContextHub SegmentManager检索区段 |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | 存储浏览器位置的纬度和经度。 |
-| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 为许多设备定义属性和功能，并检测当前客户端设备 |
+| [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 为多个设备定义属性和功能，并检测当前的客户端设备 |
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 存储当前用户的配置文件数据 |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | 存储有关客户端的信息，如设备信息、浏览器类型和窗口方向 |
 
-1. 在Experience Manager边栏上，单击或点按工具>站点> ContextHub。
-1. 单击或点按默认配置容器。
-1. 单击或点按Contexthub配置
-1. 要添加商店，请单击或点按“创建”图标，然后单击或点按ContextHub商店配置。
+1. 在Experience Manager边栏中，选择“工具”>“站点”>“ContextHub”。
+1. 选择默认配置容器。
+1. 选择Contexthub配置
+1. 要添加存储，请选择“创建”图标，然后选择ContextHub存储配置。
 
    ![ContextHub存储配置](assets/contexthub-store-configuration.png)
 
-1. 提供基本配置属性的值，然后单击或点按下一步：
+1. 提供基本配置属性的值，然后选择下一步：
 
    * **配置标题：** 标识存储的标题
    * **存储类型：** 作为存储基础的存储候选的storeType属性的值
@@ -130,7 +130,7 @@ AEM提供了以下存储候选项示例，您可以根据它们创建存储。
    * **已启用：** 选择以启用存储
 
 1. （可选）要覆盖默认存储配置，请在详细信息配置(JSON)框中输入JSON对象。
-1. 单击或点按保存。
+1. 选择保存。
 
 ## 示例：使用JSONP服务  {#example-using-a-jsonp-service}
 
@@ -205,10 +205,10 @@ Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSON
 
 编辑ContextHub的配置并选中选项 **调试**
 
-1. 在边栏中，单击或点按 **工具>站点> ContextHub**
-1. 单击或点按默认 **配置容器**
-1. 选择 **ContextHub配置** ，然后单击或点按 **编辑选定的元素**
-1. 单击或点按 **调试** ，然后单击或点按 **保存**
+1. 在边栏中，选择 **工具>站点> ContextHub**
+1. 选择默认值 **配置容器**
+1. 选择 **ContextHub配置** 并选择 **编辑选定的元素**
+1. 选择 **调试** 并选择 **保存**
 
 ### 通过CRXDE {#via-crxde}
 
@@ -243,10 +243,10 @@ Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSON
 
 * 编辑ContextHub的配置并选中选项 **禁用ContextHub**
 
-   1. 在边栏中，单击或点按 **工具>站点> ContextHub**
-   1. 单击或点按默认 **配置容器**
-   1. 选择 **ContextHub配置** ，然后单击或点按 **编辑选定的元素**
-   1. 单击或点按 **禁用ContextHub** ，然后单击或点按 **保存**
+   1. 在边栏中，选择 **工具>站点> ContextHub**
+   1. 选择默认值 **配置容器**
+   1. 选择 **ContextHub配置** 并选择 **编辑选定的元素**
+   1. 选择 **禁用ContextHub** 并选择 **保存**
 
 或
 

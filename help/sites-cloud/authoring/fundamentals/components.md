@@ -2,16 +2,16 @@
 title: 组件
 description: 组件是 AEM 中内容页面的基本创作构建基块
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 100%
+source-wordcount: '349'
+ht-degree: 94%
 
 ---
 
 # 组件 {#components}
 
-组件是 Adobe Experience Manager (AEM) 中内容页面的基本创作构建基块。可轻松拖放图像、文本、标题等组件以构建内容。
+组件是 Adobe Experience Manager (AEM) 中内容页面的基本创作构建基块。可以轻松拖放图像、文本、标题等组件来构建内容。
 
 AEM 附带多种现成的组件，这些组件为网站作者提供了全面功能。在[编辑页面](/help/sites-cloud/authoring/fundamentals/editing-content.md)时，这些组件可供使用，并且为便于筛选，这些组件按主要功能区域（称为组件组）进行分组。
 

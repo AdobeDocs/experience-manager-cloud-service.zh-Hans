@@ -2,9 +2,9 @@
 title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3642'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 ### 内容逻辑和渲染标记  {#content-logic-and-rendering-markup}
 
-您的组件呈现为 [HTML](https://www.w3schools.com/htmL/html_intro.asp). 您的组件需要定义所需的HTML，以便在创作和发布环境中获取所需的内容，然后根据需要进行渲染。
+您的组件呈现为 [HTML](https://www.w3schools.com/htmL/html_intro.asp). 您的组件必须定义获取所需HTML所需的内容，然后根据需要在Author和Publish环境中呈现该内容。
 
 建议将负责标记和呈现的代码与控制用于选择组件内容的逻辑的代码分开。
 
@@ -181,7 +181,7 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
 | `component.html` | `nt:file` | 这是组件的HTL脚本文件。 |
 | `cq:icon` | `String` | 此值指向 [组件的图标](#component-icon) 和都会显示在组件浏览器中。 |
 
-如果查看 **文本** 组件中，我们可以看到以下许多元素：
+如果您查看 **文本** 组件中，您可以看到以下几种元素：
 
 ![文本组件结构](assets/components-text.png)
 
@@ -250,7 +250,7 @@ Content not found
 
 要创建要在组件对话框中使用的构件，需要创建Granite UI字段组件。
 
-如果将对话框视为表单元素的简单容器，则还可以将对话框内容的主要内容视为表单字段。 创建新表单字段要求您创建资源类型；这等同于创建新组件。 为了帮助您完成该任务，Granite UI提供了一个通用字段组件来继承(使用 `sling:resourceSuperType`)：
+如果将对话框视为表单元素的简单容器，则还可以将对话框内容的主要内容视为表单字段。 创建新表单字段要求您创建资源类型；这等同于创建组件。 为了帮助您完成该任务，Granite UI提供了一个通用字段组件来继承(使用 `sling:resourceSuperType`)：
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -441,7 +441,7 @@ AEM中有许多现有配置。 您可以使用中的查询工具轻松搜索特�
 
 ### 检测对话框的可用性 {#dialog-ready}
 
-如果您有一个自定义JavaScript，只有在对话框可用并准备就绪时才需要执行，则应监听 `dialog-ready` 事件。
+如果您有一个自定义JavaScript，只有在对话框可用并准备就绪时才必须运行，则应监听 `dialog-ready` 事件。
 
 只要对话框加载（或重新加载）并准备就绪，即表示只要对话框的DOM中存在更改（创建/更新），就会触发此事件。
 

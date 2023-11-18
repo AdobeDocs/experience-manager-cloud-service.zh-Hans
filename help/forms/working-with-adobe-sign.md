@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 867b87e0b22fdc4f0466b517e8a04c18fb2dc860
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 3%
@@ -168,13 +168,13 @@ ht-degree: 3%
 
    如果 **[!UICONTROL Adobe Sign Cloud Service]** 列表为空，请按照 [配置 [!DNL Adobe Sign] 替换为 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) 文章以配置服务。
 
-   下拉列表中列出的Cloud Service `global` 文件夹(位于“工具”> **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 此外，下拉列表还会列出您在中选择的文件夹中存在的Cloud Service。 **[!UICONTROL 配置容器]** 创建自适应表单时显示的字段。
+   Cloud Service下拉列表列出了 `global` 文件夹(位于“工具”> **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 此外，下拉列表还会列出您在中选择的文件夹中存在的Cloud Service。 **[!UICONTROL 配置容器]** 创建自适应表单时显示的字段。
 
 1. 从中选择签名顺序 **[!UICONTROL 收件人可以填写]** 对话框。 收件人可以签署自适应表单 **[!UICONTROL 按顺序]**  — 一个接一个的收件人，或者 **[!UICONTROL 同时]**  — 按任意顺序。
 
    按顺序排列，每个收件人一次收到Adobe Sign协议。 收件人完成分配的操作后，协议将发送给下一个收件人，依此类推。
 
-   所有收件人将同时按顺序接收Adobe Sign协议，并且可以相互并行执行操作。
+   所有收件人将同时按顺序接收Adobe Sign协议，并且可以相互并行操作。
 
 1. 使用协议ID字段将绑定与协议ID (agreementId)相关联。 它会将协议ID添加到提交数据的基于架构的表单的afBoundData部分。 协议ID还会添加到所有启用Adobe Sign的表单的已提交数据的afSubmissionInfo部分。 您可以使用协议ID通过自定义代码跟踪协议状态（需要自定义实施）。
 
@@ -286,7 +286,7 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the Adaptive Form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+>Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
 您的表单签名体验已准备就绪。 您可以预览表单以验证签名体验。 在已发布的表单上， [!DNL Adobe Sign] 当收件人收到通过电子邮件签名的表单时，会显示块字段。 当 **[!UICONTROL 什么时候收件人和填表人相同？]** 选项标记为“是”且满足条件，则在提交后用户将被重定向到Adobe Sign协议，用户可以立即签署文档，而不是等待协议出现在电子邮件中。

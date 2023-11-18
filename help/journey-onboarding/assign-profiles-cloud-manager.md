@@ -4,10 +4,10 @@ description: 关注此页面，了解如何将团队成员分配给 Cloud Manage
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 94%
+source-wordcount: '1527'
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 94%
 
 ## 前提条件 {#prerequisites}
 
-要将团队成员分配给产品配置文件，您需要了解团队成员的详细信息，他们需要访问AEMas a Cloud Service，包括：
+要将团队成员分配给产品配置文件，您需要了解必须访问AEMas a Cloud Service的团队成员的详细信息，包括：
 
 * 名称
 * 电子邮件地址
@@ -181,7 +181,7 @@ Cloud Manager 是 AEM as a Cloud Service 的一个组成部分，用于管理用
 
 ## 其他资源 {#additional-resources}
 
-建议继续进行前面描述的入门培训历程。 如果您想深入了解本次历程中的某个特定主题，以下是一些额外的资源。
+建议继续进行前面描述的入门培训历程。 如果您想深入了解此历程中的特定主题，以下是一些其他资源。
 
 * [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md) – 了解 Cloud Manager、Cloud Manager 程序和环境。
 * [Cloud Manager 产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) – 了解 AEM as a Cloud Service 团队和产品配置文件。

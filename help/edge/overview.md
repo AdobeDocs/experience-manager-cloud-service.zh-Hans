@@ -3,10 +3,10 @@ title: Edge Delivery Services 快速入门
 description: Edge Delivery Services (EDS) 快速入门。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 34965338015df868778a95582524df08a7c5f136
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 100%
+source-wordcount: '870'
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 利用 Edge Delivery Services，AEM 能够提供可提高参与和转化的卓越体验。AEM 通过投放可快速创作并开发且极具影响力的体验实现这一点。这是一组可组合的服务，这些服务构成一个快速开发环境，以使作者可快速更新和发布，并且快速推出新站点。因此，借助 Edge Delivery Services，可提高转化率、降低成本并为内容大幅提速。
 
-利用 Edge Delivery，您可以：
+通过使用Edge Delivery，您可以：
 
 * 快速创建 Lighthouse 分数优异的站点，并通过真实用户监控 (RUM) 持续监控网站性能。
 * 通过分离内容来源而提高创作效率。可直接使用 AEM 创作和基于文档的创作。这样即可在同一网站上使用多个内容源。
@@ -50,7 +50,7 @@ Edge Delivery Services 是 Adobe Experience Manager 的一部分，这样 Edge D
 
 ## 从 Adobe 获取帮助 {#adobe-gethelp}
 
-您可以通过由您提供的产品协作渠道与 Adobe 产品团队联系（有关访问详情，请参阅下文）以回答有关产品使用或最佳实践的疑问。请注意，没有服务水平条款 (SLT) 与通过该产品协作渠道进行的对话关联。如果产品问题需要额外调查和故障排除，并且需要满足响应 SLT，则可按照[支持流程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)提交支持工单。
+您可以通过由您提供的产品协作渠道与 Adobe 产品团队联系（有关访问详情，请参阅下文）以回答有关产品使用或最佳实践的疑问。没有通过产品协作渠道与对话相关联的服务级别条款(SLT)。 如果产品问题需要进行额外的调查和疑难解答，并且必须满足响应SLT，则可以按照以下说明提交支持工单 [支持过程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
 
@@ -73,14 +73,14 @@ Adobe 致力于为您提供对 Edge Delivery Services 和基于文档的创作�
 通过 Admin Console 记录支持工单的步骤：
 
 1. 在该工单的标题中添加 **Edge Delivery**。
-2. 请在描述中提供以下详细信息：
+2. 在描述中，提供以下详细信息：
 
    * 当前网站的 URL。例如：[www.mydomain.com]。
    * 原始网站的 URL (.hlx URL)。
 
 ## 后续内容 {#whats-next}
 
-首先，查看下一篇文章：[使用 Edge Delivery Services](/help/edge/using.md)。
+通过查看开始使用 [使用Edge Delivery Services](/help/edge/using.md).
 
 ## 有用的资源 {#useful-resources}
 

@@ -2,10 +2,10 @@
 title: 属性和类型
 description: 了解 Universal Editor 所需的数据属性和类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->在服务器端执行内容验证。Universal Editor 仅使用数据属性。需要在 API 级别实施它们是否适合模型/结构的验证。
+>在服务器端执行内容验证。Universal Editor 仅使用数据属性。必须在API级别验证它们是否适合模型/结构。
 
 ## 数据属性 {#data-properties}
 

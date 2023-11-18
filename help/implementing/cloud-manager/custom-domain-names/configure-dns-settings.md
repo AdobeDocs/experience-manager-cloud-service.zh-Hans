@@ -2,10 +2,10 @@
 title: 配置 DNS 设置
 description: 了解如何为自定义域名配置 DNS 设置。
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 9fd7c17fce8c11809eabcc6387cbace0ebdc64a2
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的 DNS 提供商，Apex 域配置有 `A`、`ALIAS` 或 `ANAME` 记录。Apex 域必须指向特定的IP地址。
 
-通过域提供商将以下所有 `A` 记录添加到域的 DNS 设置中。
+添加以下内容 `A` 通过域提供商记录到域的DNS设置。
 
 * `A RECORD`
 

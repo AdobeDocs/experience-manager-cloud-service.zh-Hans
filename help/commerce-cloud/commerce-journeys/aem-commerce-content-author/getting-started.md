@@ -2,9 +2,9 @@
 title: CIF 创作快速入门
 description: CIF 创作快速入门.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 CIF扩展了通用编辑器，使其能够在不离开上下文的情况下访问实时产品数据：
 
-打开侧面板，然后从下拉菜单中选择“产品”。
+打开侧面板，然后从下拉列表中选择“产品”。
 ![选择产品类型](assets/asset-finder-overview.png)
 
 您可以浏览产品目录或使用全文搜索字段查找产品。

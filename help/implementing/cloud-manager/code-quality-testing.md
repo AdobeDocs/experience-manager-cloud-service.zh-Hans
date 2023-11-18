@@ -2,10 +2,10 @@
 title: 代码质量测试
 description: 了解管道代码质量测试的工作方式以及其提高部署质量的方式。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
+source-wordcount: '1159'
+ht-degree: 96%
 
 ---
 
@@ -110,7 +110,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ## 内容包扫描优化 {#content-package-scanning-optimization}
 
-在质量分析过程中，Cloud Manager 会对 Maven 构建生成的内容包进行分析。 Cloud Manager 提供优化功能以加速此过程，当遵守某些打包限制时，这些优化功能将生效。 最重要的是对输出单个内容包（通常称为“所有”包）的项目执行的优化，其中包含构建生成的大量其他内容包（这些内容包标记为已跳过）。 当 Cloud Manager 检测到此情况时，它不会解压缩“所有”包，而是直接扫描各个内容包并根据依赖关系对它们进行排序。 例如，考虑以下构建输出。
+在质量分析过程中，Cloud Manager 会对 Maven 构建生成的内容包进行分析。 Cloud Manager 提供优化功能以加速此过程，当遵守某些打包限制时，这些优化功能将生效。 最重要的是对输出单个内容包（通常称为“完整”包）的项目执行的优化，其中包含构建生成的几个其他内容包（这些内容包标记为已跳过）。 当 Cloud Manager 检测到此情况时，它不会解压缩“所有”包，而是直接扫描各个内容包并根据依赖关系对它们进行排序。 例如，考虑以下构建输出。
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)

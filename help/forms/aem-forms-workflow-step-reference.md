@@ -4,9 +4,9 @@ description: 以Forms为中心的工作流允许您快速构建基于自适应Fo
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签名文档步骤，生成打印输出步骤，生成非交互式PDF输出
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '7446'
+source-wordcount: '7444'
 ht-degree: 1%
 
 ---
@@ -572,7 +572,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **模板文件**：指定XDP模板的位置。 它是必填字段。
 
-* **数据文档**：指定需要与模板合并的数据xml的位置。
+* **数据文档**：指定必须与模板合并的数据xml的位置。
 
 ### 输出文档 {#output-document}
 

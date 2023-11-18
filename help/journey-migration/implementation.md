@@ -2,7 +2,7 @@
 title: 实施阶段
 description: 确保您的代码和内容已准备好迁移到云
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2339'
 ht-degree: 10%

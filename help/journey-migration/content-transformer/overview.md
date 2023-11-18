@@ -1,9 +1,10 @@
 ---
 title: 内容转换器概述
 description: 了解如何使用内容转换器检测和修复BPA报告的内容相关问题。
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '388'
 ht-degree: 2%
 
 ---
@@ -33,4 +34,4 @@ Content Transformer (CT)是由Adobe开发的一个工具，可用于自动检测
 
 * 故障保护：内容转换器每次对存储库进行修改以修复问题时，都会创建一个包。 如果需要，可以通过安装包恢复到以前的状态。
 * 易于使用： Content Transformer已与Content Transfer Tool集成，并附带简单直观的用户界面。
-* 节省时间：当大量内容问题属于一种模式类别时，您只需点击几下即可使用内容转换器解决所有问题。
+* 节省时间：当大量内容问题属于一种模式类别时，您可以通过多次单击内容转换器来解决所有问题。

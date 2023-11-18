@@ -2,16 +2,16 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 版的发行说明。'
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 版的发行说明 {#release-notes}
 
-以下部分概述了2022.4.0版本的的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了2022.4.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ ht-degree: 87%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 现在可以使用内容模型编辑器中的简单复选框将内容模型数据类型定义为[可翻译](/help/assets/content-fragments/content-fragments-models.md#properties)。 此外，AEM 翻译规则和配置会自动更新。
+* 现在可以使用内容模型编辑器中的简单复选框将内容模型数据类型定义为[可翻译](/help/assets/content-fragments/content-fragments-models.md#properties)。 此外，AEM翻译规则和配置也会自动更新。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

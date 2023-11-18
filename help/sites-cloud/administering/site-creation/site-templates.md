@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 站点模板来预定义站点结构和初�
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '568'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -37,15 +37,15 @@ ht-degree: 100%
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 点按或单击屏幕右上方的&#x200B;**创建**，然后从下拉菜单中选择&#x200B;**从模板创建站点**。
+1. 选择 **创建** 在屏幕的右上角，从下拉菜单中选择 **从模板创建站点**.
 
    ![从模板创建站点](../assets/create-site-from-template.png)
 
-1. 在创建站点向导中，点按或单击左栏顶部的&#x200B;**导入**。
+1. 在创建站点向导中，选择 **导入** 左列的顶部。
 
    ![站点创建向导](../assets/site-creation-wizard.png)
 
-1. 在文件浏览器中，找到要使用的模板并点按或单击&#x200B;**上传**。
+1. 在文件浏览器中，找到要使用的模板并选择 **上传**.
 
 1. 上传模板后，该模板将显示在可用模板列表中。
 
@@ -61,8 +61,8 @@ ht-degree: 100%
 
 * `files`：包含 UI 套件、XD 文件和可能的其他文件的文件夹
 * `previews`：包含站点模板的屏幕截图的文件夹
-* `site`：为从此模板创建的每个站点复制的内容的内容包，例如页面模板、页面等
-* `theme`：用于修改站点外观的[站点主题](site-themes.md)的来源，包括 CSS、JavaScript 等
+* `site`：为从此模板创建的每个站点复制的内容的内容包，例如页面模板、页面等。
+* `theme`：源 [站点主题](site-themes.md) 修改网站的外观，包括CSS、JavaScript等。
 
 ## 标准站点模板 {#standard-site-template}
 

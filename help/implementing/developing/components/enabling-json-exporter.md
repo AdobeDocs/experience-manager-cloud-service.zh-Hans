@@ -2,9 +2,9 @@
 title: 为组件启用 JSON 导出
 description: 组件可以适应为基于建模器框架生成其内容的JSON导出。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 JSON导出基于 [Sling模型](https://sling.apache.org/documentation/bundles/models.html)，并且位于 [Sling模型导出程序](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) 框架(它本身依赖于 [Jackson注释](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations))。
 
-这意味着组件在需要导出JSON时必须具有Sling模型。 因此，请按照以下两个步骤对任何组件启用JSON导出。
+这意味着组件必须具有Sling模型（如果它必须导出JSON）。 因此，请按照以下两个步骤对任何组件启用JSON导出。
 
 * [为组件定义Sling模型](#define-a-sling-model-for-the-component)
 * [在Sling模型界面中添加批注](#annotate-the-sling-model-interface)
@@ -66,7 +66,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 相应的Sling模型界面(`MyComponent`)随后将使用进行注释 [Jackson注释](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) 以定义应如何导出（序列化）。
 
-需要正确注释模型接口以定义应序列化的方法。 默认情况下，所有遵守getter的常规命名约定的方法都将进行序列化，并且将从getter名称自然派生其JSON属性名称。 可以使用阻止或覆盖此操作 `@JsonIgnore` 或 `@JsonProperty` 重命名JSON属性。
+必须正确注释模型接口以定义应序列化的方法。 默认情况下，所有遵守getter的常规命名约定的方法都将进行序列化，并且将从getter名称自然派生其JSON属性名称。 可以使用阻止或覆盖此操作 `@JsonIgnore` 或 `@JsonProperty` 重命名JSON属性。
 
 ## 示例 {#example}
 
@@ -75,8 +75,6 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 有关示例，请参阅图像核心组件的Sling模型实施及其注释的界面。
 
 ## 相关文档 {#related-documentation}
-
-有关更多详细信息，请参阅：
 
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

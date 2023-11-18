@@ -4,9 +4,9 @@ description: 了解如何在上使用共享队列处理以Forms为中心的工�
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-source-git-commit: 7e3eb3426002408a90e08bee9c2a8b7a7bfebb61
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 1%
 
 ---

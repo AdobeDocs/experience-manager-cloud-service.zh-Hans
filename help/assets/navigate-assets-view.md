@@ -3,10 +3,10 @@ title: “[!DNL Assets view] 用户界面”
 description: 了解  [!DNL Assets view] 中的用户界面并在其中导航。
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 90%
 您可以从主用户界面或者从左侧边栏浏览文件夹。在浏览时，您可以使用界面来查看资源缩略图，从而直观地浏览存储库或者查看资源详细信息，来快速查找所需的资源。左侧边栏中提供的选项包括：
 
 * [我的工作区](/help/assets/my-workspace-assets-view.md)：Assets 现在包括一个可自定义的工作区，此工作区提供各种小部件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。由于能够更方便地访问这些选项，因此可以提高您的效率和内容速度。
-* [任务](/help/assets/my-workspace-assets-view.md)：您可以在&#x200B;**我的任务**&#x200B;选项卡中查看分配给您的任务。而您创建的任务可以在&#x200B;**分配的任务**&#x200B;选项卡中查看。此外，您完成的任务位于&#x200B;**完成的任务**&#x200B;选项卡中。
+* [任务](/help/assets/my-workspace-assets-view.md)：您可以在&#x200B;**我的任务**&#x200B;选项卡中查看分配给您的任务。而您创建的任务可以在&#x200B;**分配的任务**&#x200B;选项卡中查看。此外，您完成的任务位于 **已完成的任务** 选项卡。
 * [资源](/help/assets/manage-organize-assets-view.md)：以树视图列出您有权访问的所有文件夹。
 * **最近查看过的项目**：您最近查看过的资源列表。[!DNL Assets view] 仅显示您预览过的资源。它不显示您在浏览存储库文件或文件夹时滚动浏览的资源。
 * [收藏集](/help/assets/manage-collections-assets-view.md)：收藏集是Adobe Experience Manager Assets视图中的一组资源、文件夹或其他收藏集。 使用收藏集可在用户之间共享资源。收藏集与文件夹的不同之处是可包含来自不同位置的资源。您可以与一个用户共享多个收藏集。每个收藏集都包含对资源的引用。收藏集中会保持资源的引用完整性。

@@ -3,10 +3,10 @@ title: 在 AEM 中使用 GraphiQL IDE
 description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 99%
+source-wordcount: '1137'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 99%
 
 在两种情况下，编辑器面板中显示的查询都是在以下情况下运行的查询：
 
-* 点击/点按&#x200B;**“执行查询”**&#x200B;图标
+* 选择 **执行查询** 图标
 * 使用键盘组合`Control-Enter`
 
 ## 查询变量 {#query-variables}
@@ -99,7 +99,7 @@ GraphiQL IDE 还让您管理[查询变量](/help/headless/graphql-api/content-fr
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅[缓存您的持久查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)。
+>请参阅 [正在缓存您的持久查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

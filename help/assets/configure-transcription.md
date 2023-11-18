@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1690'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 89%
 
 转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]** 然后单击 **[!UICONTROL 创建]** 按钮创建基于人工智能的处理配置文件，用于生成音频和视频文件的转录。 默认情况下，“处理配置文件”页面仅显示三个选项卡（图像、视频和自定义）。但是，如果您已在[!DNL Experience Manager Assets]实例中配置了[!DNL Azure Media Services]选项卡，则&#x200B;**[!UICONTROL 内容人工智能]**&#x200B;选项卡可见。如果在创建处理配置文件时，您没有看到&#x200B;**[!UICONTROL 内容人工智能]**&#x200B;选项卡，请验证您的 [!DNL Azure] 凭据。
 
-在 **[!UICONTROL 内容人工智能]** 选项卡，单击 **[!UICONTROL 新增]** 按钮以配置转录。 此处，通过从下拉列表中选择文件类型，您可以包括和排除用于生成转录的文件格式（MIME 类型）。在下列插图中，包含所有受支持音频和视频文件，排除文本文件。
+在 **[!UICONTROL 内容人工智能]** 选项卡，单击 **[!UICONTROL 新增]** 按钮以配置转录。 在这里，您可以通过从下拉列表中选择文件类型，来包含和排除用于生成转录的文件格式（MIME类型）。 在下列插图中，包含所有受支持音频和视频文件，排除文本文件。
 
 启用&#x200B;**[!UICONTROL “在同一目录中创建 VTT 转录文件”]**&#x200B;切换功能，在原始资产所在的同一文件夹中创建和存储转录演绎版（.vtt 文件）。其他演绎版也由默认的 DAM 资产处理工作流生成，与此设置无关。
 

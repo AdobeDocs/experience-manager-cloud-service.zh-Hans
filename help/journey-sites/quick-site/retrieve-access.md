@@ -2,10 +2,10 @@
 title: 检索 Git 存储库访问信息
 description: 了解前端开发人员如何使用 Cloud Manager 访问 Git 存储库信息。
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 93%
+source-wordcount: '880'
+ht-degree: 83%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 93%
 
 本文接下来介绍了前端开发人员如何使用 Cloud Manager 访问权限来检索凭据以访问 AEM Git 存储库。
 
-现在已基于模板创建一个站点，设置了一个管道，前端开发人员已载入并拥有他们所需的一切信息，本文将从管理员的视角转向前端开发人员角色的视角。
+现在，已基于模板创建一个站点，设置了一个管道，前端开发人员已载入并拥有他们所需的所有信息，本文将从管理员的视角转向前端开发人员角色的视角。
 
 ## 目标 {#objective}
 
@@ -78,7 +78,7 @@ Cloud Manager 管理员会将您作为 Cloud Manager 用户载入。您应该已
 
 1. 登录Adobe Experience Cloud，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 或单击欢迎电子邮件中提供的链接。
 
-1. Cloud Manager 列出了可用的各种项目。点按或单击 Cloud Manager 管理员提供的您需要访问的项目。如果这是您的第一个 AEMaaCS 前端项目，则您可能只有一个可用项目。
+1. Cloud Manager 列出了可用的各种项目。选择Cloud Manager管理员提供的您需要访问的项目。 如果这是您的第一个 AEMaaCS 前端项目，则您可能只有一个可用项目。
 
    ![在 Cloud Manager 中选择项目](assets/cloud-manager-select-program.png)
 
@@ -88,7 +88,7 @@ Cloud Manager 管理员会将您作为 Cloud Manager 用户载入。您应该已
 
 ## 检索存储库访问信息 {#repo-access}
 
-1. 在 Cloud Manager 页面的&#x200B;**管道**&#x200B;部分中，点按或单击&#x200B;**访问存储库信息**&#x200B;按钮。
+1. 在 **管道** 部分，选择 **访问存储库信息** 按钮。
 
    ![管道](assets/pipelines-repo-info.png)
 
@@ -96,15 +96,15 @@ Cloud Manager 管理员会将您作为 Cloud Manager 用户载入。您应该已
 
    ![存储库信息](assets/repo-info.png)
 
-1. 点按或单击&#x200B;**生成密码**&#x200B;按钮以自行创建密码。
+1. 选择 **生成密码** 按钮以自行创建密码。
 
 1. 将生成的密码保存到安全密码管理器。此密码将永不再显示。
 
 1. 此外，复制&#x200B;**用户名**&#x200B;和 **Git 命令行**&#x200B;字段。稍后您将使用此信息来访问存储库。
 
-1. 点按或单击&#x200B;**关闭**。
+1. 选择 **关闭**.
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 现在您已完成 AEM 快速站点创建历程的这一部分，您应：
 

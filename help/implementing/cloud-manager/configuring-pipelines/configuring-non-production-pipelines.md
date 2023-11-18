@@ -3,9 +3,9 @@ title: 配置非生产管道
 description: 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: b47b1998fe716a8409d8d3cf0102e25c48828819
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1285'
 ht-degree: 80%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 80%
    * **[全栈代码](#full-stack-code)**
    * **[目标部署](#targeted-deployment)**
 
-请参阅文档 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有关管道类型的更多信息。
+请参阅 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有关管道类型的更多信息。
 
 根据您选择的源代码类型，完成非生产管道创建的步骤有所不同。 按照上面的链接跳到本文档的下一节，完成管道的配置。
 

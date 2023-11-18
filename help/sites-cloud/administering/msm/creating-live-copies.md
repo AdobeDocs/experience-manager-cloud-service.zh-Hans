@@ -4,10 +4,10 @@ description: 了解如何创建和同步 Live Copy 以在站点中重用您的�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 99%
+source-wordcount: '4270'
+ht-degree: 95%
 
 ---
 
@@ -84,7 +84,7 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
 ## 创建 Live Copy {#creating-a-live-copy}
 
-可通过大量方式创建 Live Copy。
+可通过多种方式创建Live Copy。
 
 ### 创建页面的 Live Copy {#creating-a-live-copy-of-a-page}
 
@@ -110,11 +110,11 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
    ![创建 Live Copy](../assets/create-live-copy.png)
 
-1. 选择源页面，然后单击或点按&#x200B;**下一步**。例如：
+1. 选择源页面，然后选择 **下一个**. 例如：
 
    ![选择 Live Copy 源](../assets/live-copy-from.png)
 
-1. 指定 Live Copy 的目标路径（打开 Live Copy 的父文件夹/页面），然后单击或点按&#x200B;**下一步**。
+1. 指定Live Copy的目标路径（打开Live Copy的父文件夹/页面），然后选择 **下一个**.
 
    ![选择 Live Copy 目标](../assets/live-copy-to.png)
 
@@ -135,7 +135,7 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
    * 未选中：创建包含所选页面的所有下级的 Live Copy（深 Live Copy）
 
 1. （可选）要指定用于 Live Copy 的一个或多个转出配置，请使用&#x200B;**转出配置**&#x200B;下拉列表来选择它们。所选配置会显示在下拉选择器的下方。
-1. 单击或点按&#x200B;**创建**。这会显示一条确认消息，可在其中选择&#x200B;**打开**&#x200B;或&#x200B;**完成**。
+1. 选择&#x200B;**创建**。这会显示一条确认消息，可在其中选择&#x200B;**打开**&#x200B;或&#x200B;**完成**。
 
    >[!NOTE]
    >
@@ -169,9 +169,9 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
    ![从 Blueprint 创建站点](../assets/create-site-from-blueprint.png)
 
-1. 使用&#x200B;**初始语言**&#x200B;选择器指定要用于 Live Copy 的 Blueprint 站点的语言。
+1. 使用 **初始语言** 选择器，以指定用于Live Copy的Blueprint站点的语言。
 
-   默认选择所有可用语言。要删除某种语言，请单击或点按该语言旁边显示的 **X**。
+   默认选择所有可用语言。要删除语言，请选择 **X** 显示在语言旁边。
 
    例如：
 
@@ -217,7 +217,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 ## 同步您的 Live Copy {#synchronizing-your-live-copy}
 
-可通过大量方式同步您的 Live Copy。
+可通过多种方法来同步您的Live Copy。
 
 ### 转出 Blueprint {#rolling-out-a-blueprint}
 
@@ -252,7 +252,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 1. 在&#x200B;**Sites**&#x200B;控制台中，从 Live Copy 中选择此页面，然后从工具栏中打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板。
 1. 从列表中选择 **Blueprint** 选项以查看与此页面关联的 Blueprint。
 1. 从列表中选择所需的 Blueprint。
-1. 单击或点按&#x200B;**转出**。
+1. 选择&#x200B;**转出**。
 
    ![从引用边栏转出 Blueprint](../assets/rollout-blueprint-from-references.png)
 
@@ -305,7 +305,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 1. 在&#x200B;**Sites**&#x200B;控制台中，选择 Live Copy 页面并打开属性。
 1. 打开 **Live Copy** 选项卡。
-1. 单击或点按&#x200B;**同步**。
+1. 选择 **同步**.
 
    ![“同步”按钮](../assets/synchronize.png)
 
@@ -368,7 +368,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 要暂停页面上的继承，请执行以下操作：
 
 1. 使用&#x200B;**Sites**&#x200B;控制台的&#x200B;**查看属性**&#x200B;命令或页面工具栏上的&#x200B;**页面信息**&#x200B;来打开 Live Copy 页面的属性。
-1. 单击或点按 **Live Copy** 选项卡。
+1. 选择 **Live Copy** 选项卡。
 1. 从工具栏中选择&#x200B;**暂停**。之后，您可以选择：
 
    * **暂停**：仅暂停当前页面。
@@ -451,7 +451,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 要指定或更改深度，请执行以下操作：
 
 1. 使用&#x200B;**Sites**&#x200B;控制台的&#x200B;**查看属性**&#x200B;命令或页面工具栏上的&#x200B;**页面信息**&#x200B;来打开 Live Copy 页面的属性。
-1. 单击或点按 **Live Copy** 选项卡。
+1. 选择 **Live Copy** 选项卡。
 1. 在&#x200B;**配置**&#x200B;部分中，根据是否包含子页面来设置或清除 **Live Copy 继承**&#x200B;选项：
 
    * 选中 – 深 Live Copy（包含子页面）
@@ -463,7 +463,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
    >
    >有关更多信息，请参阅 [Live Copy – 构图](overview.md#live-copies-composition)。
 
-1. 单击或点按&#x200B;**保存**&#x200B;以持久存储您的更新。
+1. 选择 **保存** 以保留您的更新。
 
 ### 取消组件的继承 {#cancelling-inheritance-for-a-component}
 
@@ -475,11 +475,11 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 取消继承可更改组件内容或删除组件：
 
-1. 单击或点按要为其取消继承的组件。
+1. 选择要取消继承的组件。
 
    ![组件工具栏中的继承](../assets/inheritance-toolbar.png)
 
-1. 在组件工具栏上，单击或点按&#x200B;**取消继承**&#x200B;图标。
+1. 在组件工具栏上，选择 **取消继承** 图标。
 
    ![“取消继承”图标](../assets/cancel-inheritance-icon.png)
 
@@ -489,7 +489,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 ### 重新启用组件的继承 {#re-enabling-inheritance-for-a-component}
 
-要启用组件的继承，请单击或点按组件工具栏上的&#x200B;**重新启用继承**&#x200B;图标。
+要启用组件的继承，请选择 **重新启用继承** 图标（位于组件工具栏上）。
 
 ![“重新启用继承”图标](../assets/re-enable-inheritance-icon.png)
 
@@ -530,15 +530,15 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 >当您重新启用继承时，Live Copy 页面属性不会自动与源属性同步。如果需要，您可以手动请求同步。
 
 1. 使用&#x200B;**Sites**&#x200B;控制台的&#x200B;**查看属性**&#x200B;选项或页面工具栏上的&#x200B;**页面信息**&#x200B;图标来打开 Live Copy 页面的属性。
-1. 要取消属性的继承，请单击或点按属性右侧显示的链接图标。
+1. 要取消资产的继承，请选择资产右侧显示的链接图标。
 
    ![“取消继承”按钮](../assets/cancel-inheritance-button.png)
 
-1. 在&#x200B;**取消继承**&#x200B;确认对话框中，单击或点按&#x200B;**是**。
+1. 在 **取消继承** 确认对话框，选择 **是**.
 
 ### 还原 Live Copy 页面的属性 {#revert-properties-of-a-live-copy-page}
 
-要为属性启用继承，请单击或点按属性旁边显示的&#x200B;**还原继承**&#x200B;图标。
+要为属性启用继承，请选择 **还原继承** 属性旁边显示的图标。
 
 ![“还原继承”按钮](../assets/revert-inheritance-button.png)
 
@@ -635,7 +635,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 要分离 Live Copy，请执行以下操作：
 
-1. 在&#x200B;**Sites**&#x200B;控制台中，选择 Live Copy 页面，然后单击或点按&#x200B;**查看属性**。
+1. 在&#x200B;**Sites**&#x200B;控制台中，选择 Live Copy 页面，然后选择&#x200B;**查看属性**。
 1. 打开 **Live Copy** 选项卡。
 1. 在工具栏上，选择&#x200B;**分离**。
 

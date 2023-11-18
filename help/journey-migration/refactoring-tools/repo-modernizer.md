@@ -2,9 +2,9 @@
 title: 存储库现代化器
 description: 了解如何重构现有项目包，使其与为Adobe Experience Manager as a Cloud Service定义的项目结构兼容。
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '322'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Repository Modernizer通过创建以下部署结构来创建兼容的AEM Cloud S
 
 >[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
-* 通过Adobe I/OCLI ：建议通过以下方式使用Repository Modernizer `aio-cli-plugin-aem-cloud-service-migration` (用于Adobe I/OCLI的AEMas a Cloud Service代码重构插件)。
+* 通过Adobe I/OCLI ：Adobe建议通过以下方式使用Repository Modernizer `aio-cli-plugin-aem-cloud-service-migration` (用于Adobe I/OCLI的AEMas a Cloud Service代码重构插件)。
 
   请参阅 **[Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** 这样您就可以了解如何安装和使用插件。
 

@@ -2,10 +2,10 @@
 title: 了解如何在内容片段中使用引用
 description: 了解如何在内容片段中对内容、其他片段和其他资源（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 97%
+source-wordcount: '708'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 97%
 * 人员
 * 奖励
 
-似乎很简单，一家公司肯定会有一个 CEO 和众多员工....他们每个人都被定义为一个人员。
+看似直截了当，但一家公司既有CEO又有EMPLOYEES....他们每个人都被定义为一个人员。
 
 一个人员可以获得一个（或两个）奖励。
 

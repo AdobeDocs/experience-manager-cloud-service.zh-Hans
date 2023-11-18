@@ -4,10 +4,10 @@ description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 99%
+source-wordcount: '1418'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ MSM 是用于自动化内容部署的可配置框架。实施通常涉及网站�
 
 如果未引用 Blueprint 配置，则只能从 Live Copy 本身启动部署，本质上是从源中提取内容。
 
-使用 Live Copy 创建新站点时，创建 Blueprint 配置以确保完整 MSM 功能集的可用性是有利的。
+使用Live Copy创建站点时，创建Blueprint配置以确保完整MSM功能集的可用性是有利的。
 
 >[!NOTE]
 >

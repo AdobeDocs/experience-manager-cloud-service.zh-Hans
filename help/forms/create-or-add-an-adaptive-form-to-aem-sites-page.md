@@ -4,9 +4,9 @@ description: 了解如何在AEM Sites页面上创建或添加自适应表单。 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '3209'
+source-wordcount: '3208'
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 如果您以前为站点创建了自适应Forms基础组件或基于HTML的普通表单，则Adobe建议您使用自适应Forms核心组件在AEM Sites页面或体验片段中创建自适应表单。 它允许您使用AEM Sites页面的各种功能，如版本控制、定位、翻译和多站点管理器，从而增强自适应Forms的整体表单创建和管理体验。 让我们来探索一下其中的一些功能：
 
 * **版本控制：** AEM Sites pages选件 [强大的版本控制功能](/help/sites-cloud/authoring/features/page-versions.md)，允许您跟踪和管理表单的不同版本。 这使您能够对表单进行更改和增强，同时保持根据需要回滚到以前版本的能力。 版本控制可确保采用受控且有条理的方法来形成开发和演变。
-* **定位(与Adobe Target集成)：** 利用AEM Sites页面定位功能，您还可以 [为不同受众个性化表单体验](/help/sites-cloud/integrating/integration-adobe-target-ims.md). 利用用户区段和定位标准，您可以根据特定用户组定制表单的内容、设计或行为。 这使您能够提供个性化且相关的表单体验，从而提高参与度和转化率。
+* **定位(与Adobe Target集成)：** 利用AEM Sites页面定位功能，您还可以 [为不同受众个性化表单体验](/help/sites-cloud/integrating/integration-adobe-target-ims.md). 通过使用用户区段和定位标准，您可以根据特定用户组定制表单的内容、设计或行为。 这使您能够提供个性化且相关的表单体验，从而提高参与度和转化率。
 * **翻译：** AEM Sites [与翻译服务无缝集成](/help/sites-cloud/administering/translation/overview.md)，可轻松地将表单翻译成多种语言。 此功能简化了本地化过程，确保全球受众能够访问您的表单。 您可以在AEM翻译项目中高效地管理翻译，从而减少多语言表单支持所需的时间和工作量。 有关翻译的更多信息，请参阅注意事项部分。
 * **多站点管理和Live Copy：** AEM Sites提供强大的 [多站点管理和实时复制功能](/help/sites-cloud/administering/msm/overview.md)，使您能够在一个环境中创建和管理多个网站。 此功能现在允许您跨不同站点重用表单，确保一致性并减少重复工作。 通过集中化的控制和管理，您可以跨多个网站高效地维护和更新表单。
 * **主题：** AEM Sites页面提供了一个框架，用于跨多个网页设计和维护一致的可视样式。 它们定义了颜色、字体、样式表和其他对网站整体外观和体验有所贡献的可视元素。 [您可以将为AEM Sites页面设计的主题用于自适应表单，从而节省时间和精力](/help/sites-cloud/administering/site-creation/site-themes.md#using-site-themes-using-themes).
@@ -188,7 +188,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 1. 在转换为体验片段变体对话框中，设置以下选项的值：
 
    * **操作：** 选择以创建体验片段或添加到现有体验片段。
-   * **父级路径：** 指定要承载体验片段的文件夹的路径。 选项仅适用于创建新体验片段。
+   * **父级路径：** 指定要承载体验片段的文件夹的路径。 选项仅适用于创建体验片段。
    * **模板：** 指定体验片段模板的路径。 如果您没有体验片段模板， [创建它](/help/implementing/developing/extending/experience-fragments.md). 选项仅可用于将自适应表单添加到现有体验片段。
    * **片段标题：** 指定体验片段的标题。 标题唯一标识体验片段
 

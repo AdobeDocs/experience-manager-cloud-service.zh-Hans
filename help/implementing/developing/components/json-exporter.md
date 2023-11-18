@@ -2,9 +2,9 @@
 title: 内容服务的 JSON 导出器
 description: AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，而不只是关注网页。它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '398'
 ht-degree: 31%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 31%
 
 AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交付，而不只是网页的焦点。
 
-它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。 这些渠道可以包括：
+它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。这些渠道可以包括：
 
 * 单页面应用程序
 * 本机移动设备应用程序
@@ -67,8 +67,6 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 
 ### 更多信息 {#further-information}
 
-另请参阅：
-
 * Assets HTTP API
    * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
 * Sling 模型:
@@ -77,8 +75,6 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
    * [为组件启用 JSON 导出](enabling-json-exporter.md)
 
 ## 相关文档 {#related-documentation}
-
-有关更多详细信息，请参阅：
 
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

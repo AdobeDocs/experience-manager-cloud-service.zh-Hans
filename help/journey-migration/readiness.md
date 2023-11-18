@@ -2,7 +2,7 @@
 title: 就绪阶段
 description: 了解您必须执行的步骤，以便确保AEM安装已准备好移至云。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: a9aa82c8258e6a5f43680069c65518093c0baf8d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 7%
@@ -80,7 +80,7 @@ AEMas a Cloud Service为管理AEM项目提供了许多新功能和可能性。
   <tr>
     <td>内置CDN并获取您自己的CDN</td>
     <td></td>
-    <td>AEMas a Cloud Service包括适用于所有环境的CDN，这些环境针对大多数用例进行了优化。<br>如果您希望设置自己的CDN，则必须向Adobe支持提交请求才能获得批准。<br>如果获得批准，CDN将指向Fastly，而不是任何环境中的AEM实例。</td>
+    <td>AEMas a Cloud Service包括适用于所有环境的CDN，这些环境针对大多数用例进行了优化。<br>如果您想要设置自己的CDN，则必须向Adobe支持提交请求才能获得批准。<br>如果获得批准，CDN将指向Fastly，而不是任何环境中的AEM实例。</td>
   </tr>
   <tr>
     <td>长时间运行的作业</td>

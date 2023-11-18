@@ -5,9 +5,9 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1149'
 ht-degree: 3%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 3%
 
 “操作”工具栏显示任务的所有可用选项。 虽然保存、重置和委派是默认操作，但在中配置了其他可用操作 [分配任务步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). 以上示例中，在工作流中配置了批准和拒绝。
 
-当您对任务执行操作时，它会在工作流中进一步进行。
+当您处理任务时，它会进一步进入工作流。
 
 ### 查看已完成的任务 {#view-completed-tasks}
 

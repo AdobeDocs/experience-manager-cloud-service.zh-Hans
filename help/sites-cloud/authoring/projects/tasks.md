@@ -2,10 +2,10 @@
 title: 处理任务
 description: 任务是指要对内容完成的工作项，可在项目中使用任务来确定当前任务的完成程度
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '576'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 #### 任务详细信息 {#task-details}
 
-有关特定任务的更多信息，请在任务列表中依次点按/单击该任务和&#x200B;**打开**。
+有关特定任务的详细信息，请在任务列表中选择该任务并 **打开**.
 
 ![任务详细信息](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -63,12 +63,12 @@ ht-degree: 100%
 
 要添加任务，请执行以下操作：
 
-1. 在项目的任务拼贴 **中** ，点按／单击+图标。 此时将 **打开“添加任务** ”窗口。
+1. 在项目中，在 **任务** 磁贴，选择+图标。 此时将 **打开“添加任务** ”窗口。
 1. 输入有关该任务的信息。必须填写任务的标题以及要将任务分配到的组。可选填其他信息，例如内容路径、描述、任务优先级和到期日期。另外，您还可以选择&#x200B;**高级**&#x200B;选项卡来输入任务的名称，该名称用于命名 URL。
 
    ![添加任务](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
-1. 点按/单击&#x200B;**创建**。
+1. 选择&#x200B;**创建**。
 
 ## 在收件箱中处理任务 {#working-with-tasks-in-the-inbox}
 

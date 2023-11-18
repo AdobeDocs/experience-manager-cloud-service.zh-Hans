@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 创建站点，并使用站点模板定义�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 93%
+source-wordcount: '756'
+ht-degree: 77%
 
 ---
 
@@ -55,19 +55,19 @@ ht-degree: 93%
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 点按或单击屏幕右上方的&#x200B;**创建**，然后从下拉菜单中选择&#x200B;**从模板创建站点**。
+1. 选择 **创建** 在屏幕的右上角，从下拉菜单中选择 **从模板创建站点**.
 
    ![从模板创建站点](../assets/create-site-from-template.png)
 
-1. 在创建站点向导中，点按或单击左侧面板中的现有模板或开启 **导入** ，以导入新模板。
+1. 在创建站点向导中，在左侧面板或上选择现有模板 **导入** ，以导入新模板。
 
    ![站点创建向导](../assets/site-creation-wizard.png)
 
-   1. 如果您已选择导入，请在文件浏览器中，找到要使用的模板并点按或单击&#x200B;**上传**。
+   1. 如果选择导入，请在文件浏览器中查找要使用的模板并选择 **上传**.
 
    1. 上传模板后，该模板将显示在可用模板列表中。
 
-1. 在选择模板时，它在右栏中显示有关模板的信息。在选定所需模板后，点按或单击&#x200B;**下一步**。
+1. 在选择模板时，它在右栏中显示有关模板的信息。选择所需的模板后，选择 **下一个**.
 
    ![选择模板](../assets/select-site-template.png)
 
@@ -77,11 +77,11 @@ ht-degree: 93%
    * 站点名称会成为 URL 的一部分。
    * 站点名称必须遵循 [AEM 的页面命名惯例。](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
 
-1. 点按或单击&#x200B;**创建**，将从站点模板创建站点。
+1. 选择 **创建** 并从站点模板创建站点。
 
    ![新站点的详细信息](../assets/create-site-details.png)
 
-1. 在显示的确认对话框中，点按或单击&#x200B;**完成**。
+1. 在显示的确认对话框中，选择 **完成**.
 
    ![“成功”对话框](../assets/success.png)
 
@@ -93,10 +93,10 @@ ht-degree: 93%
 
 ## 站点自定义 {#site-customization}
 
-如果您的站点需要在可用模板之外进行自定义，您将有很多选择。
+如果您的站点需要在可用模板之外进行自定义，则您有多个选项。
 
-* 如果需要调整站点结构或初始内容，[可以自定义站点模板以满足要求。](site-templates.md)
-* 如果需要调整站点样式，[可以下载站点主题并对该主题进行自定义。](/help/journey-sites/quick-site/overview.md)
-* 如果需要调整站点功能，[可以完全自定义站点。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+* 如果必须调整站点结构或初始内容， [可以自定义站点模板以满足您的要求](site-templates.md).
+* 如果必须调整站点样式， [可以下载站点主题并对其进行自定义](/help/journey-sites/quick-site/overview.md).
+* 如果站点功能必须调整， [可以完全自定义站点](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 任何自定义都应在开发团队的支持下进行。

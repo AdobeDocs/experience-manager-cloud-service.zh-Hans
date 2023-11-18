@@ -2,9 +2,9 @@
 title: 了解 Cloud Service 内容请求
 description: 如果您从Adobe购买了内容请求许可证，请了解Adobe Experience Cloud as a Service测量的内容请求类型以及与组织分析报告工具的差异。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: dc01da4c85b37f21deb169b941c0cf2a958298b8
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1162'
 ht-degree: 10%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 10%
 
 ## 了解 Cloud Service 内容请求 {#about-content-request}
 
-通过自动分析源自Adobe Experience Manager (AEM)as a Cloud ServiceCDN的日志文件，从CDN中分离返回HTML（文本/html）或JSON （应用程序/json）内容的请求，并根据下面详述的若干包含和排除规则，在AEM ()as a Cloud Service的边缘自动跟踪内容请求。 内容请求与从CDN缓存提供或返回到CDN源位置(AEM Dispatchers)的返回内容无关。
+通过自动分析源自AEM CDN的日志文件，从Adobe Experience Manager (AEM as a Cloud Service)as a Cloud Service边缘自动跟踪内容请求，并将从CDN返回HTML（文本/html）或JSON （应用程序/json）内容的请求隔离，以及基于下面详述的若干包含和排除规则。 内容请求与从CDN缓存提供或返回到CDN源位置(AEM Dispatchers)的返回内容无关。
 
 对于在AEMas a Cloud Service之上自带CDN的客户，此跟踪将导致无法使用数字与许可的内容请求进行比较，这些数字将由位于外部CDN边缘的客户测量。
 

@@ -2,10 +2,10 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2975'
-ht-degree: 96%
+source-wordcount: '2973'
+ht-degree: 95%
 
 ---
 
@@ -341,7 +341,7 @@ ht-degree: 96%
 
    ![页面组件的组件工具栏](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   单击或点按&#x200B;**布局**&#x200B;操作可调整组件的布局。
+   选择 **布局** 用于调整组件布局的操作。
 
    ![组件工具栏的“布局”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

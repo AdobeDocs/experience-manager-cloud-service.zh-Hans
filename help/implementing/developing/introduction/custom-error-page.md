@@ -2,9 +2,9 @@
 title: 自定义错误页面
 description: AEM提供了用于处理HTTP错误的标准错误处理程序，该处理程序可以进行自定义。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '571'
 ht-degree: 2%
 
 ---
@@ -77,6 +77,6 @@ HTTP [500内部服务器错误](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 >
 >在创作实例上， [CQ WCM调试过滤器](/help/implementing/deploying/configuring-osgi.md) 默认处于启用状态。 这始终导致响应代码200。 默认错误处理程序通过向响应写入完整栈栈跟踪来响应。
 >
->对于自定义错误处理程序，需要代码为500的响应，因此 [需要禁用CQ WCM调试过滤器](/help/implementing/deploying/configuring-osgi.md). 这可确保返回响应代码500，这反过来会触发正确的Sling错误处理程序。
+>对于自定义错误处理程序，需要代码为500的响应，因此 [必须禁用CQ WCM调试过滤器](/help/implementing/deploying/configuring-osgi.md). 这可确保返回响应代码500，这反过来会触发正确的Sling错误处理程序。
 >
 >在发布实例上，CQ WCM调试过滤器为 **始终** 已禁用（即使配置为已启用）。

@@ -2,10 +2,10 @@
 title: 使沙盒环境休眠和解除沙盒环境休眠
 description: 了解沙盒程序的环境如何自动进入休眠模式，以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 93%
+source-wordcount: '683'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 93%
 
 ![休眠确认](assets/hibernate-4.png)
 
-在 Developer Console 中，您还可以单击 **Pod** 下拉菜单上的痕迹导航中的&#x200B;**环境**&#x200B;链接，查看要休眠的环境列表。
+在开发人员控制台中，您还可以单击 **环境** 上面痕迹导航中的链接 **Pod** 要休眠的环境列表的下拉列表。
 
 ![要休眠的环境列表](assets/hibernate-1b.png)
 
@@ -88,7 +88,7 @@ ht-degree: 93%
    ![解除休眠完成](assets/de-hibernation-img4.png)
 
 
-在 Developer Console 中，您还可以单击 **Pod** 下拉菜单上的痕迹导航中的&#x200B;**环境**&#x200B;链接，查看要解除休眠的环境列表。
+在开发人员控制台中，您还可以单击 **环境** 上面痕迹导航中的链接 **Pod** 要解除休眠的环境列表的下拉列表。
 
 ![休眠 Pod 列表](assets/de-hibernate-1b.png)
 

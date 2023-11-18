@@ -2,10 +2,10 @@
 title: 访问 Admin Console
 description: 一旦您了解了入门所需的准备工作和 AEMaaCS 结构的基础知识，您就可以首次登录 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 90%
+source-wordcount: '1097'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe ID 有三种类型：
 
 * **Enterprise ID**：组织通常希望增加对用户帐户的控制。只有系统管理员才能创建 Enterprise ID，组织拥有这些帐户，Adobe 仅作为主机。
 
-* **Federated ID**：使用 Federated ID，组织将完全拥有和控制帐户。为此，您的组织需要将 Adobe Experience Cloud 与 SAML2 单点登录 (SSO) 系统集成。这允许用户根据组织的 SSO 系统而不是 Adobe 托管的帐户进行身份验证。
+* **Federated ID**：使用 Federated ID，组织将完全拥有和控制帐户。为此，贵组织必须将Adobe Experience Cloud与SAML2单点登录(SSO)系统集成。 这允许用户根据组织的 SSO 系统而不是 Adobe 托管的帐户进行身份验证。
 
 作为系统管理员，您可以决定在设置 Enterprise 或 Federated ID 之前，使用个人 ID 将自己和团队载入 AEM as a Cloud Service。一旦设置了 Enterprise 或 Federated ID，就可以将成员转换为使用这些 ID。
 

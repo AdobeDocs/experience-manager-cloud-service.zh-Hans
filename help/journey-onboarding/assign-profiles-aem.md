@@ -4,10 +4,10 @@ description: 配置云资源后，使用AEM产品配置文件授予您的团队�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 82%
+source-wordcount: '885'
+ht-degree: 80%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 82%
 
    ![管理访问权限](/help/journey-onboarding/assets/add-team1.png)
 
-1. 新的选项卡会将您导航到 Admin Console，您可以从中访问环境的作者实例。根据需要授予的权限，选择 **AEM 管理员**&#x200B;或 **AEM 用户**。
+1. 新的选项卡会将您导航到 Admin Console，您可以从中访问环境的作者实例。选择 **AEM管理员** 或 **AEM用户** 根据授予此人的权限。
 
    ![分配访问权限](/help/journey-onboarding/assets/add-team2.png)
 

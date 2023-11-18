@@ -2,10 +2,10 @@
 title: Cloud Manager 存储库
 description: 了解如何在 Cloud Manager 中创建、查看和删除 Git 存储库。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 87%
+source-wordcount: '582'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 87%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从 **项目概述** 页面，点按或单击 **存储库** 制表符以切换到 **存储库** 页面。
+1. 从 **项目概述** 页面上，选择 **存储库** 制表符以切换到 **存储库** 页面。
 
 1. 单击 **添加存储库**.
 
@@ -130,5 +130,5 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 * 为安全起见，请勿在 Git URL 中嵌入凭据。
 * 除非另有必要，否则强烈建议使用“浅”子模块。
    * 为此，请为每个子模块运行 `git config -f .gitmodules submodule.<submodule path>.shallow true`。
-* Git 子模块引用将存储到特定的 git 承诺中。 因此，在对子模块存储库进行更改时，需要更新引用的承诺。
+* Git 子模块引用将存储到特定的 git 承诺中。 因此，在对子模块存储库进行更改时，必须更新引用的承诺。
    * 例如，通过使用 `git submodule update --remote`

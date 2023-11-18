@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 6%
 
 **数量和大小：** 每个标记最少10个图像，最多50个图像。
 
-**一致性**：确保标记的图像在视觉上类似。 最好将关于相同视觉方面（例如图像中的同一类型对象）的标记一起添加到单个标记模型中。 例如，将所有图像标记为 `my-party` （用于培训），因为它们视觉上并不相似。
+**一致性**：确保标记的图像在视觉上类似。 最好将关于相同视觉方面（例如图像中的同一类型对象）的标记一起添加到单个标记模型中。 例如，将这些图像标记为 `my-party` （用于培训），因为它们视觉上并不相似。
 
 ![说明性图像以说明培训准则](assets/do-not-localize/coherence.png)
 

@@ -1,11 +1,11 @@
 ---
 title: 操作中心
-description: 利用操作中心可方便地针对问题和其他重要信息采取行动
+description: 利用行动中心方便地对事件和其他重要信息采取行动
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
-workflow-type: ht
-source-wordcount: '727'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '726'
+ht-degree: 98%
 
 ---
 

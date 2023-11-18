@@ -2,10 +2,10 @@
 title: 内容搜索与索引
 description: 了解AEMas a Cloud Service中的“内容搜索”和“索引”。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 30%
+source-wordcount: '2428'
+ht-degree: 29%
 
 ---
 
@@ -61,13 +61,13 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->在上引入新索引 `dam:Asset` 强烈建议不要使用节点类型（特别是全文索引），因为这些类型可能与OOTB产品功能冲突，从而导致功能和性能问题。 通常，向当前添加其他属性 `damAssetLucene-*` 索引版本是对以下内容编制查询索引的最合适方式： `dam:Asset` nodetype (这些更改将自动合并到索引的新产品版本中（如果随后发布）。 如有疑问，请联系Adobe支持部门以获取建议。
+>在上引入新索引 `dam:Asset` 强烈建议不要使用节点类型（特别是全文索引），因为这些类型可能与OOTB产品功能冲突，从而导致功能和性能问题。 通常，向当前添加其他属性 `damAssetLucene-*` 索引版本是对以下内容编制查询索引的最合适方式： `dam:Asset` nodetype (这些更改将自动合并到索引的新产品版本中（如果随后发布）。 如有疑问，请联系Adobe支持以获取建议。
 
 ## 准备新索引定义 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->如果自定义开箱即用索引，例如 `damAssetLucene-8`，请使用 CRX DE 包管理器 (`/crx/packmgr/`) 从 *Cloud Service 环境*&#x200B;复制最新的开箱即用索引定义。 将其重命名为 `damAssetLucene-8-custom-1` （或更高版本），并将您的自定义项添加到XML文件中。 这样可确保不会无意中删除所需的配置。 例如， `tika` 节点在 `/oak:index/damAssetLucene-8/tika` 在部署到AEM Cloud Service环境的自定义索引中是必需的，但在本地AEM SDK上不存在。
+>例如，如果自定义开箱即用索引 `damAssetLucene-8`，从中复制最新的开箱即用索引定义 *Cloud Service环境* 使用CRX DE包管理器(`/crx/packmgr/`) 。 将其重命名为 `damAssetLucene-8-custom-1` （或更高版本），并将您的自定义项添加到XML文件中。 这样可确保不会无意中删除所需的配置。 例如， `tika` 节点在 `/oak:index/damAssetLucene-8/tika` 在部署到AEM Cloud Service环境的自定义索引中是必需的，但在本地AEM SDK上不存在。
 
 对于OOTB索引的自定义，请准备一个新包，其中包含遵循此命名模式的实际索引定义：
 
@@ -240,7 +240,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!TIP]
 >
->有关AEMas a Cloud Service所需的包结构的更多详细信息，请参阅此文档 [AEM项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>有关AEMas a Cloud Service所需的包结构的更多详细信息，请参阅 [AEM项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## 使用滚动部署的索引管理 {#index-management-using-rolling-deployments}
 

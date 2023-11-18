@@ -1,10 +1,10 @@
 ---
 title: SPA Blueprint
-description: 本文档描述了任何SPA框架都应该履行的一般且独立于框架的合同，以便您可以在AEM中实施可编辑的SPA组件。
+description: 本文档描述了任何SPA框架都应该履行的一般的、独立于框架的合同，以便您可以在AEM中实施可编辑的SPA组件。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2055'
 ht-degree: 2%
 
 ---
@@ -17,73 +17,73 @@ ht-degree: 2%
 
 本文档描述了任何SPA框架都应该履行的一般合同(即AEM支持层的类型)，以便您可以在AEM中实施可编辑的SPA组件。
 
-要使作者能够使用AEM页面编辑器编辑单页应用程序框架公开的数据，项目必须能够解释模型的结构，该模型表示为AEM存储库中的应用程序存储的数据的语义。 为实现此目标，提供了两个与框架无关的库： `PageModelManager` 和 `ComponentMapping`.
+要使作者能够使用AEM页面编辑器编辑单页应用程序框架公开的数据，项目必须能够解释模型的结构，该结构表示为AEM存储库中的应用程序存储的数据的语义。 为实现此目标，提供了两个与框架无关的库： `PageModelManager` 和 `ComponentMapping`.
 
 >[!NOTE]
 >
 >以下要求与框架无关。 如果满足这些要求，则可以提供由模块、组件和服务组成的框架特定层。
 >
->**AEM中的React和Angular框架已满足这些要求。** 仅当您希望实施其他框架以与AEM一起使用时，此Blueprint中的要求才相关。
+>**AEM中的React框架和Angular框架已满足这些要求。** 仅当要实施其他框架以与AEM一起使用时，此Blueprint中的要求才相关。
 
 >[!CAUTION]
 >
->尽管AEM的SPA功能与框架无关，但目前仅支持React和Angular框架。
+>尽管AEM的SPA功能与框架无关，但当前仅支持React和Angular框架。
 
 ## PageModelManager {#pagemodelmanager}
 
-此 `PageModelManager` 库作为NPM包提供，将由SPA项目使用。 它与SPA配合使用，用作数据模型管理器。
+此 `PageModelManager` 库作为NPM包提供，以供SPA项目使用。 它与SPA配合使用，用作数据模型管理器。
 
 它代表SPA抽象出代表实际内容结构的JSON结构的检索和管理。 它还负责与SPA同步，以告知何时必须重新渲染其组件。
 
 请参阅NPM包 [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
-初始化时 `PageModelManager`时，库会首先加载提供的应用程序根模型（通过参数、元属性或当前URL）。 如果库标识当前页面的模型不是它获取的根模型的一部分，并包含它作为子页面的模型。
+初始化时 `PageModelManager`，则库首先会加载提供的应用程序根模型（通过参数、元属性或当前URL）。 如果库标识当前页面的模型不是其获取的根模型的一部分，并包含它作为子页面的模型。
 
 ![页面模型合并](assets/page-model-consolidation.png)
 
 ### 组件映射 {#componentmapping}
 
-此 `ComponentMapping` 模块作为NPM包提供给前端项目。 它存储前端组件，并为SPA提供一种将前端组件映射到AEM资源类型的方法。 这可以在分析应用程序的JSON模型时启用组件的动态分辨率。
+此 `ComponentMapping` 模块作为NPM包提供给前端项目。 它存储前端组件，并为SPA提供一种将前端组件映射到AEM资源类型的方法。 这可以在解析应用程序的JSON模型时启用组件的动态分辨率。
 
-模型中显示的每个项目都包含 `:type` 公开AEM资源类型的字段。 安装后，前端组件可以使用从基础库收到的模型片段来渲染自身。
+模型中显示的每个项目都包含 `:type` 公开AEM资源类型的字段。 安装后，前端组件可以使用从基础库收到的模型片段来呈现自身。
 
 #### 对组件映射进行动态建模 {#dynamic-model-to-component-mapping}
 
-有关如何在JavaScript SPA SDK for AEM中发生动态模型到组件映射的详细信息，请参阅文章 [SPA的动态模型到组件映射](model-to-component-mapping.md).
+有关在JavaScript SPA SDK for AEM中如何进行动态模型到组件映射的详细信息，请参阅文章 [SPA的动态模型到组件映射](model-to-component-mapping.md).
 
-### 特定于Framework的层 {#framework-specific-layer}
+### 特定于框架的层 {#framework-specific-layer}
 
-必须为每个前端框架实施第三层。 第三个库负责与底层库交互，并提供一系列集成良好且易于使用的入口点以便与数据模型交互。
+必须为每个前端框架实施第三层。 此第三个库负责与底层库交互，并提供一系列集成良好且易于使用的入口点以便与数据模型交互。
 
-本文档的其余部分描述了此中间框架特定层的要求，并渴望独立于框架。 通过满足以下要求，可以为项目组件提供特定于框架的层，以便与负责管理数据模型的底层库交互。
+本文档的其余部分描述了此中间框架特定层的要求以及独立于框架的愿望。 通过满足以下要求，可以为项目组件提供特定于框架的层，以便与负责管理数据模型的底层库交互。
 
 ## 一般概念 {#general-concepts}
 
 ### 页面模型 {#page-model}
 
-页面的内容结构存储在AEM中。 页面模型用于映射和实例化SPA组件。 SPA开发人员创建SPA组件，并将其映射到AEM组件。 为此，它们使用资源类型(或AEM组件的路径)作为唯一键。
+页面的内容结构存储在AEM中。 页面模型用于映射和实例化SPA组件。 SPA开发人员创建SPA组件，并将这些组件映射到AEM组件。 为此，它们使用资源类型(或AEM组件的路径)作为唯一键。
 
-SPA组件必须与页面模型同步，并根据对内容所做的任何更改进行更新。 必须使用利用动态组件的模式来按照提供的页面模型结构即时实例化组件。
+SPA组件必须与页面模型同步，并根据对内容所做的任何更改进行更新。 必须使用使用动态元件的阵列来按照提供的页面模型结构即时实例化元件。
 
 ### 元字段 {#meta-fields}
 
 页面模型使用JSON模型导出器，它本身基于 [Sling模型](https://sling.apache.org/documentation/bundles/models.html) API。 可导出的sling模型显示以下字段列表，以启用基础库解释数据模型：
 
 * `:type`：AEM资源的类型（默认为资源类型）
-* `:children`：当前资源的层级子级。 子项不是当前资源的内部内容的一部分（可以在表示页面的项上找到）
+* `:children`：当前资源的层级子级。 子项不是当前资源的内部内容的一部分（可以在表示页面的项目上找到）
 * `:hierarchyType`：资源的分层类型。 此 `PageModelManager` 当前支持页面类型
 
 * `:items`：当前资源的子内容资源（嵌套结构，仅存在于容器上）
-* `:itemsOrder`：子项的有序列表。 JSON映射对象不保证其字段的顺序。 通过同时具有映射和当前数组，API的使用者可以同时获得两种结构的好处
-* `:path`：项目的内容路径（显示在表示页面的项目上）
+* `:itemsOrder`：子项的有序列表。 JSON映射对象不保证其字段的顺序。 通过同时具有映射和当前数组，API的使用者可以同时拥有这两种结构的好处
+* `:path`：项目的内容路径（存在于表示页面的项目上）
 
 另请参阅 [AEM Content Services入门。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
 
-### 特定于框架的模块 {#framework-specific-module}
+### 特定于Framework的模块 {#framework-specific-module}
 
-区分关注点有助于促进项目实施。 因此，应提供特定于npm的软件包。 此资源包负责聚合和公开基本模块、服务和组件。 这些组件必须封装数据模型管理逻辑，并提供对项目组件所预期数据的访问。 该模块还负责可传递地公开基础库的有用入口点。
+区分关注点有助于促进项目实施。 因此，应提供特定于npm的包。 此资源包负责聚合和公开基本模块、服务和组件。 这些组件必须封装数据模型管理逻辑，并提供对项目组件所预期数据的访问。 模块还负责过渡性地公开基础库的有用入口点。
 
-为便于实现库的互操作性，Adobe建议框架特定模块捆绑以下库。 如有必要，该层可以在将底层API公开给项目之前对其进行封装和调整。
+为了促进这些库的互操作性，Adobe建议框架特定模块捆绑以下库。 如有必要，该层可以先封装并调整底层API，然后再将其公开给项目。
 
 * [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 * [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
@@ -100,34 +100,34 @@ npm模块： [@adobe/aem-angular-editable-components](https://www.npmjs.com/pack
 
 ## 主要服务和组件 {#main-services-and-components}
 
-应根据每个框架的具体准则实施以下实体。 基于框架架构，实现方式可能大不相同，但必须提供描述的功能。
+应根据每个框架的具体准则实施以下实体。 基于框架体系结构，实现方式可能相差很大，但必须提供所描述的功能。
 
 ### 模型提供程序 {#the-model-provider}
 
 项目组件必须将模型片段的访问权限委派给模型提供程序。 然后，模型提供程序负责侦听对模型的指定片段所做的更改，并将更新的模型返回到委托组件。
 
-为此，模型提供程序必须注册到 [`PageModelManager`](#pagemodelmanager). 然后，当发生更改时，它会接收更新的数据并将该数据传递到委托组件。 按照惯例，提供给将承载模型片段的委托组件的属性被命名为 `cqModel`. 实施可以免费为组件提供此属性，但应考虑与框架架构集成、可发现性和易用性等方面。
+为此，模型提供程序必须向 [`PageModelManager`](#pagemodelmanager). 然后，当发生更改时，它会接收更新后的数据并将其传递给委托组件。 按照惯例，提供给将承载模型片段的委托组件的属性被命名为 `cqModel`. 实施可以自由地为组件提供此属性，但应考虑与框架架构集成、可发现性和易用性等方面。
 
 ### 组件HTML装饰器 {#the-component-html-decorator}
 
-组件修饰器负责使用页面编辑器所需的一系列数据属性和类名来修饰每个组件实例的元素的外部HTML。
+组件修饰器负责使用页面编辑器预期的一系列数据属性和类名来修饰每个组件实例的元素的外部HTML。
 
 #### 组件声明 {#component-declaration}
 
-必须将以下元数据添加到项目组件生成的外部HTML元素中。 它们使页面编辑器能够检索相应的编辑配置。
+必须将以下元数据添加到项目组件生成的外部HTML元素中。 它们允许页面编辑器检索相应的编辑配置。
 
 * `data-cq-data-path`：相对于的资源的路径 `jcr:content`
 
 #### 编辑功能声明和占位符 {#editing-capability-declaration-and-placeholder}
 
-必须将以下元数据和类名添加到项目组件生成的外部HTML元素中。 它们使页面编辑器能够提供相关功能。
+以下元数据和类名称必须添加到项目组件生成的外部HTML元素中。 它们允许页面编辑器提供相关功能。
 
-* `cq-placeholder`：标识空组件的占位符的类名称
-* `data-emptytext`：组件实例为空时叠加显示的标签
+* `cq-placeholder`：标识空组件占位符的类名称
+* `data-emptytext`：组件实例为空时要由叠加显示的标签
 
 **空组件的占位符**
 
-每个组件都必须扩展，而且当组件被标识为空时，都必须使用特定于占位符和相关叠加的数据属性和类名来装饰外部HTML元素。
+每个组件都必须进行扩展，并提供相应的功能，以便在将组件标识为空时，使用特定于占位符的数据属性和类名以及相关叠加来修饰外部HTML元素。
 
 **关于组件的空性**
 
@@ -136,30 +136,30 @@ npm模块： [@adobe/aem-angular-editable-components](https://www.npmjs.com/pack
 
 ### 容器 {#container}
 
-容器是指用于包含和渲染子组件的组件。 为此，容器在 `:itemsOrder`， `:items` 和 `:children` 模型的属性。
+容器是指用于包含和呈现子组件的组件。 为此，容器会在 `:itemsOrder`， `:items` 和 `:children` 模型的属性。
 
 容器从的存储中动态获取子组件 [`ComponentMapping`](#componentmapping) 库。 然后，容器使用模型提供程序功能扩展子组件，最后实例化它。
 
 ### 页面 {#page}
 
-此 `Page` 组件扩展 `Container` 组件。 容器是一个组件，旨在包含和渲染子组件，包括子页面。 为此，容器在 `:itemsOrder`， `:items`、和 `:children` 模型的属性。 此 `Page` 组件从的存储中动态获取子组件 [`ComponentMapping`](#componentmapping) 库。 此 `Page` 负责实例化子组件。
+此 `Page` 组件扩展 `Container` 组件。 容器是一个组件，旨在包含和渲染子组件，包括子页面。 为此，容器会在 `:itemsOrder`， `:items`、和 `:children` 模型的属性。 此 `Page` 组件从的存储中动态获取子组件 [`ComponentMapping`](#componentmapping) 库。 此 `Page` 负责实例化子组件。
 
 ### 响应式网格 {#responsive-grid}
 
 响应式网格组件是一个容器。 它包含模型提供程序的特定变体，该变体表示其列。 响应式网格及其列负责使用模型中包含的特定类名装饰项目组件的外部HTML元素。
 
-响应式网格组件应该预先映射到其AEM对应组件，因为该组件比较复杂，很少进行自定义。
+响应式网格组件应该预先映射到其AEM对应项，因为此组件比较复杂，很少进行自定义。
 
 #### 特定模型字段 {#specific-model-fields}
 
 * `gridClassNames:` 为响应式网格提供的类名
-* `columnClassNames:` 为响应列提供了类名
+* `columnClassNames:` 为响应列提供的类名
 
 另请参阅npm资源 [@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### 响应式网格的占位符 {#placeholder-of-the-responsive-grid}
 
-SPA组件将映射到图形容器（如响应式网格），并且必须在创作内容时添加虚拟子占位符。 当页面编辑器创作SPA的内容时，该内容会使用iframe和 `data-cq-editor` 属性将添加到该内容的文档节点中。 当 `data-cq-editor` 属性存在，则容器必须包含一个HTMLElement以表示在将新组件插入页面时作者与之交互的区域。
+SPA组件将映射到图形容器，例如响应式网格，并且必须在创作内容时添加虚拟子占位符。 当页面编辑器创作SPA的内容时，该内容会使用iframe和 `data-cq-editor` 属性将添加到该内容的文档节点。 当 `data-cq-editor` 属性存在，则容器必须包含一个HTMLElement以表示在将新组件插入页面时作者与之交互的区域。
 
 例如：
 
@@ -169,10 +169,10 @@ SPA组件将映射到图形容器（如响应式网格），并且必须在创�
 
 >[!NOTE]
 >
->该示例中使用的类名当前为页面编辑器所需。
+>该示例中使用的类名当前是页面编辑器所必需的。
 >
 >* `"new section"`：指示当前元素是容器的占位符
->* `"aem-Grid-newComponent"`：标准化布局创作的组件
+>* `"aem-Grid-newComponent"`：标准化用于布局创作的组件
 >
 
 #### 组件映射 {#component-mapping}
@@ -199,7 +199,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-在上述实施中，项目组件在中实际注册之前，通过空值功能进行了扩展 [组件映射](#componentmapping) 商店。 这是通过封装和扩展 [`ComponentMapping`](#componentmapping) 库以介绍 `EditConfig` 配置对象：
+在上述实施中，项目组件在中实际注册之前，通过空功能进行了扩展 [组件映射](#componentmapping) 商店。 这可以通过封装和扩展 [`ComponentMapping`](#componentmapping) 库以介绍对 `EditConfig` 配置对象：
 
 ```javascript
 /**
@@ -226,20 +226,20 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 项目组件必须至少生成以下数据属性，才能让编辑器与它们交互。
 
-* `data-cq-data-path`：组件提供的相对路径 `PageModel` (例如， `"root/responsivegrid/image"`)。 不应将此属性添加到页面。
+* `data-cq-data-path`：由提供的组件的相对路径 `PageModel` (例如， `"root/responsivegrid/image"`)。 不应将此属性添加到页面。
 
 总之，要由页面编辑器解释为可编辑，项目组件必须遵循以下合同：
 
-* 提供将前端组件实例与AEM资源关联的预期属性。
+* 提供将前端组件实例关联到AEM资源的预期属性。
 * 提供允许创建空占位符的预期属性和类名系列。
-* 提供允许拖放资产的预期类名。
+* 提供用于启用拖放资源的预期类名。
 
 ### 典型HTML元素结构 {#typical-html-element-structure}
 
 以下片段说明了页面HTML结构的典型内容表示形式。 以下是一些要点：
 
 * 响应式网格元素带有带有前缀的类名称 `aem-Grid--`
-* 响应列元素具有前缀为的类名 `aem-GridColumn--`
+* 响应列元素具有以为前缀的类名称 `aem-GridColumn--`
 * 响应式网格（也是父网格的列）被包住，例如前两个前缀未出现在同一元素上
 * 与可编辑资源对应的元素带有 `data-cq-data-path` 属性。 请参阅 [与页面编辑器签订合同](#contract-with-the-page-editor) 章节。
 
@@ -259,17 +259,17 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 ## 导航和路由 {#navigation-and-routing}
 
-应用程序拥有路由。 前端开发人员首先需要实施导航组件(映射到AEM导航组件)。 此组件将渲染要与一系列显示或隐藏内容片段的路由一起使用的URL链接。
+应用程序拥有路由。 前端开发人员必须首先实施导航组件(映射到AEM导航组件)。 此组件将渲染要与一系列显示或隐藏内容片段的路由一起使用的URL链接。
 
 基础 [`PageModelManager`](#pagemodelmanager) 库及其 [`ModelRouter`](routing.md) 模块（默认启用）负责预获取并提供对与给定资源路径关联的模型的访问。
 
 这两个图元与路由的概念有关，但 [`ModelRouter`](routing.md) 仅负责加载 [`PageModelManager`](#pagemodelmanager) 数据模型的结构与当前应用程序状态同步。
 
-请参阅文章 [SPA模型路由](routing.md) 了解更多信息。
+请参阅文章 [SPA模型路由](routing.md) 以了解更多信息。
 
-## SPA的实际操作 {#spa-in-action}
+## SPA正在使用 {#spa-in-action}
 
-通过继续阅读以下文档，了解简单的SPA如何工作并自行试验SPA：
+请继续阅读以下文档，了解简单的SPA如何工作并自行试验SPA：
 
 * [利用 React 在 AEM 中开始使用 SPA](getting-started-react.md).
 * [使用Angular在AEM中开始使用SPA](getting-started-angular.md).

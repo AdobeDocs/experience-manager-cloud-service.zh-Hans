@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 15%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -36,14 +36,14 @@ ht-degree: 15%
 
 无论选择的资产类型如何，都会将版权信息显示为必填字段。
 
-1. 点按/单击 [!DNL Experience Manager] 徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**.
-1. 在&#x200B;**[!UICONTROL 架构表单]**&#x200B;页面中，选择一个架构表单，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 编辑]**，以编辑架构。
+1. 选择 [!DNL Experience Manager] 徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**.
+1. 在 **[!UICONTROL 架构Forms]** 页面上，选择架构表单，然后选择 **[!UICONTROL 编辑]** 以编辑架构。
 
    ![select_form](assets/select_form.png)
 
 1. （可选）在元数据架构编辑器中，创建一个要条件化的字段。 在中指定名称和属性路径 **[!UICONTROL 设置]** 选项卡。
 
-   要创建选项卡，请点按/单击 `+` 以添加选项卡，然后添加元数据字段。
+   要创建选项卡，请选择 `+` 以添加选项卡，然后添加元数据字段。
 
    ![add_tab](assets/add_tab.png)
 
@@ -53,7 +53,7 @@ ht-degree: 15%
 
 1. 键值对是提供给表单用户的选项。 您可以手动或从JSON文件提供键值对。
 
-   * 要手动指定值，请选择 **[!UICONTROL 手动添加]**，然后点按/单击 **[!UICONTROL 添加选项]** 并指定选项文本和值。 例如，指定视频、PDF、Word和图像资源类型。
+   * 要手动指定值，请选择 **[!UICONTROL 手动添加]**，并选择 **[!UICONTROL 添加选项]** 并指定选项文本和值。 例如，指定视频、PDF、Word和图像资源类型。
 
    * 要动态获取JSON文件中的值，请选择 **[!UICONTROL 通过JSON路径添加]** 和提供JSON文件的路径。 [!DNL Experience Manager] 向用户呈现表单时实时获取键值对。
 
@@ -80,7 +80,7 @@ ht-degree: 15%
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. 下 **[!UICONTROL 要求]**，选择 **[!UICONTROL 必需，基于新规则]** 选项。
-1. 点按／单 **[!UICONTROL 击添加规则]** ，然后选择“资 **[!UICONTROL 产类型]** ”字段以创建依赖关系。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 点按／单击 **[!UICONTROL 完成]** ，以保存更改。
+1. 选择 **[!UICONTROL 添加规则]** 并选择 **[!UICONTROL 资源类型]** 创建依赖项的字段。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 选择 **[!UICONTROL 完成]** 以保存更改。
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,13 +90,13 @@ ht-degree: 15%
 
 1. 在“可 **[!UICONTROL 见性]**”下，根据新 **[!UICONTROL 规则选项选择“可见]** ”。
 
-1. 点按／单 **[!UICONTROL 击添加规则]** ，然后选择“资 **[!UICONTROL 产类型]** ”字段以创建依赖关系。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 点按／单击 **[!UICONTROL 完成]** ，以保存更改。
+1. 选择 **[!UICONTROL 添加规则]** 并选择 **[!UICONTROL 资源类型]** 创建依赖项的字段。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 选择 **[!UICONTROL 完成]** 以保存更改。
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
-   >要重置值，请单击或点按空白或界面上除值之外的任何其他位置。 如果重置了值，请再次选择值。
+   >要重置值，请在界面上选择除值之外的任意位置。 如果重置了值，请再次选择值。
 
    >[!NOTE]
    >

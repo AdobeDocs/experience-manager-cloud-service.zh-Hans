@@ -1,20 +1,20 @@
 ---
 title: AEM中的“Assets”视图如何使您受益？
-description: 详细了解AEM中“资源”视图的主要优势。 Adobe 利用其在支持营销和创意专业人士方面的专业知识，推出了变革性的全新用户体验。
+description: 详细了解AEM中“资源”视图的主要优势。 Adobe利用其增强营销和创意专业人士能力方面的专业知识，引入了改变游戏规则的新用户体验。
 mini-toc-levels: 3
-source-git-commit: 20e0527ebecb6720f39c0a4b2957dc899117d96f
+exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
-
 
 # 资产视图简介 {#assets-view}
 
 ![部署 Assets Essentials](assets/banner-image.jpg)
 
-在当今快节奏、数字优先的环境下（其中实时创作和投放内容必不可少），专为快速的下游市场营销而设计的数字资源管理 (DAM) 体验最为重要。Adobe 利用其在支持营销和创意专业人士方面的专业知识，推出了变革性的全新用户体验。这种工作流程优先的方法彻底改变了企业处理动态数字资源的方式，使营销人员能够最大限度地提高查找、协作、个性化和交付资源的效率。这些简化的工作流程可加快内容处理速度，并将您的营销工作推向新的高度。
+在当今快节奏、数字优先的环境下（其中实时创作和投放内容必不可少），专为快速的下游市场营销而设计的数字资源管理 (DAM) 体验最为重要。Adobe利用其增强营销和创意专业人士能力方面的专业知识，引入了改变游戏规则的新用户体验。 这种工作流程优先的方法彻底改变了企业处理动态数字资源的方式，使营销人员能够最大限度地提高查找、协作、个性化和交付资源的效率。这些简化的工作流程可加快内容处理速度，并将您的营销工作推向新的高度。
 
 要详细了解Assetsas a Cloud Service的可用基于角色的体验，请参阅 [Assetsas a Cloud Service简介](/help/assets/overview.md#persona-based-experiences).
 
@@ -128,9 +128,3 @@ ht-degree: 79%
 
 * [我的工作区](/help/assets/my-workspace-assets-view.md)
 * [开始使用资源视图](/help/assets/get-started-assets-view.md)
-
-
-
-
-
-

@@ -1,10 +1,10 @@
 ---
 title: 存储库浏览器
 seo-title: Repository Browser
-description: 存储库浏览器为创作、发布和预览层上的所有环境提供对存储库的只读视图。
+description: 存储库浏览器为创作层、发布层和预览层上的所有环境提供到存储库的只读视图。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 简介 {#introduction}
 
-存储库浏览器是一种开发人员工具，可为创作、发布和预览层上的所有环境提供存储库的只读视图。 它旨在方便查看内容结构，以便更轻松地查看或调试内容。
+存储库浏览器是一种开发人员工具，可为创作、发布和预览层上的所有环境提供到存储库的只读视图。 它旨在方便查看内容结构，以便更轻松地查看或调试内容。
 
 可从开发人员控制台访问，它可用于浏览选定环境的作者或发布实例的存储库。
 
@@ -34,12 +34,12 @@ ht-degree: 2%
 要访问开发人员控制台，请执行以下操作：
 
 * 对于生产程序，用户必须具有 **Cloud Manager — 开发人员角色** 在Admin Console中
-* 对于沙盒程序，它可供具有产品配置文件的任何用户使用，这些配置文件授予他们访问AEMas a Cloud Service的权限。
+* 对于沙盒程序，它可供任何拥有将AEMas a Cloud Service访问权限的产品配置文件的用户使用。
 
 要访问存储库浏览器，请执行以下操作：
 
 * 用户必须具有 **Cloud Manager — 开发人员** Admin Console中用于查看创作实例和发布实例的角色。
-* 此外，对于作者，具有AEM用户产品配置文件的用户能够以最低的读取访问权限查看存储库浏览器；浏览存储库时用户的权限受到尊重。 具有AEM管理员产品配置文件的用户可以使用完全读取权限查看存储库浏览器。
+* 此外，对于作者，具有AEM用户产品配置文件的用户能够以最低的读取权限查看存储库浏览器；浏览存储库时，用户的权限会得到考虑。 具有AEM管理员产品配置文件的用户可以使用完全读取权限查看存储库浏览器。
 
 有关设置用户权限的更多信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
@@ -56,25 +56,25 @@ ht-degree: 2%
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. 通过单击 **打开存储库浏览器** 链接更靠下方。 启动与选定层的代表性实例(pod)对应的浏览器。 您无法控制已启动层的特定面板。
+1. 通过单击 **打开存储库浏览器** 链接更靠下方。 启动与所选层的代表性实例(pod)对应的浏览器。 您无法控制已启动层的特定面板。
 
 ## 功能 {#features}
 
-### 在层次结构中定位 {#navigate-the-hierarchy}
+### 在层次结构中导航 {#navigate-the-hierarchy}
 
-您可以使用左侧导航窗格在内容层次结构中导航。 单击每个文件夹或节点会显示其子项。 文件夹结构反映了Sling资源树，它是JCR节点树的超集。
+您可以使用左侧导航窗格在内容层次结构中导航。 单击每个文件夹或节点会显示其子节点。 文件夹结构反映了Sling资源树，它是JCR节点树的超集。
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-或者，您也可以通过在以下位置输入路径来直接导航到该路径： **路径** 字段，如下所示。 此路径还会扩展其在左侧内容层次结构视图中的位置。
+或者，您也可以通过在以下位置输入路径来直接导航到路径： **路径** 字段，如下所示。 此路径还会扩展其在左侧内容层次结构视图中的位置。
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
 单击左侧的文件夹时，“路径”字段会自动填充其位置。 此功能对于复制和粘贴值以供以后使用很有用。
 
-此外，单击文件夹时，URL会被动态修改以包含该文件夹的路径。 此功能允许使用可书签的URL。
+此外，单击文件夹时，URL会动态修改为包含该文件夹的路径。 此功能允许使用可书签的URL。
 
-默认情况下，对于发布，存储库浏览器仅显示公共内容，因此某些文件夹 `/conf` 或 `/home` 不可见。
+默认情况下，对于发布，存储库浏览器仅显示公共内容，因此某些文件夹(如 `/conf` 或 `/home` 不可见。
 
 要使这些位置可见，请执行以下操作。
 
@@ -86,24 +86,24 @@ ht-degree: 2%
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. 为发布管理员创建产品配置文件。 在以下示例中，将其称为 **开发 — AEM管理员发布**
+1. 为发布管理员创建产品配置文件。 在下面的示例中，它称为 **开发 — AEM管理员发布**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. 将相应的用户添加到新产品配置文件，这些用户应该能够以完全访问权限在发布存储库浏览器中导航
+1. 将相应的用户添加到新的产品配置文件，这些用户应该能够在发布存储库浏览器中拥有完全访问权限
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
 1. 等待几分钟，然后打开 **AEM创作** 控制台
-1. 通过单击，将与新产品配置文件对应的组添加为管理员组的成员 **工具 — 安全 — 作者群组**，然后单击 **管理员** 组。 然后，添加该组，如下所示
+1. 通过单击将对应于新产品配置文件的组添加为管理员组的成员 **工具 — 安全 — 作者群组**，然后单击 **管理员** 组。 然后，添加该组，如下所示
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. 激活 **管理员** 和新的 **开发 — AEM管理员发布** 组，以便它们可在Publish上使用
+1. 激活 **管理员** 和新的 **开发 — AEM管理员发布** 组，以便它们在发布时可用
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. 作为良好的安全实践，请删除新的 **开发 — AEM管理员发布** 组（位于上） **作者** 所以新组织是孤立的
+1. 作为良好的安全实践，删除新的 **开发 — AEM管理员发布** 上的管理员组中的组 **作者** 因此新组被隔离以发布
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
@@ -111,7 +111,7 @@ ht-degree: 2%
 
 ### 查看JCR属性 {#view-jcr-properties}
 
-单击某个节点会在导航浏览器的右侧窗格中显示其JCR属性。 以下示例适用于 `experience-fragments` 节点。
+单击节点会在导航浏览器的右侧窗格中显示其JCR属性。 以下是示例 `experience-fragments` 节点。
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
@@ -131,7 +131,7 @@ ht-degree: 2%
 * svg+xml
 * webp
 * bmp
-* x-icon
+* x图标
 * tiff
 
 对于以下基于文本的MIME类型，和：

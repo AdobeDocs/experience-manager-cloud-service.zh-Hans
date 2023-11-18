@@ -4,10 +4,10 @@ description: 了解如何通过 AEM 强大的 Live Copy 和多站点管理器功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2714'
-ht-degree: 100%
+source-wordcount: '2702'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->MSM 也可用于资源，包括内容片段。有关详细信息，请参阅[通过适用于资源的 MSM 重用内容片段](/help/assets/reuse-assets-using-msm.md)（只能通过资源控制台使用）。
+>MSM 也可用于资源，包括内容片段。请参阅 [使用MSM对资产重用内容片段](/help/assets/reuse-assets-using-msm.md) （只能通过“资产”控制台使用）。
 
 ## 可能的情况 {#possible-scenarios}
 
@@ -106,7 +106,7 @@ ht-degree: 100%
   >
   >相较于：
   >
-  >* 需要调整的单独副本数量。
+  >* 必须调整的单个副本数量。
 
 ## 从 UI 访问 MSM {#msm-from-the-ui}
 
@@ -172,7 +172,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->有关对象名称，请参阅文档[扩展多站点管理器](/help/implementing/developing/extending/msm.md#overview-of-the-java-api)。
+>请参阅 [扩展多站点管理器](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 对象名称的。
 
 ## Live Copy {#live-copies}
 
@@ -278,7 +278,7 @@ Live Copy 的源可以是常规页面，也可以是 Blueprint 配置包含的�
 转出配置定义 Live Copy 与源内容同步的时间和方式。转出配置由一个触发器和一个或多个同步操作组成：
 
 * **触发器** – 触发器是触发实时操作同步的事件，例如源页面的激活。MSM 定义您可以使用的触发器。
-* **同步操作** – 对 Live Copy 执行同步操作可使其与源同步。示例操作包括复制内容、对子节点排序和激活 Live Copy 页面。MSM 提供了大量同步操作。
+* **同步操作** – 对 Live Copy 执行同步操作可使其与源同步。示例操作包括复制内容、对子节点排序和激活 Live Copy 页面。MSM提供了多个同步操作。
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ Live Copy 中的每个页面和组件均通过实时关系与其源页面和组�
 
 您可以&#x200B;**暂停** Live Copy 页面的 Live Copy 继承，以便更改页面属性和组件。当您暂停继承时，页面属性和组件不再与源同步。
 
-在编辑单个页面时，作者可以为组件&#x200B;**取消继承**。取消继承后，实时关系将暂停，并且不会针对该组件进行同步。当需要自定义内容的子部分时，取消继承和同步会很有用。
+在编辑单个页面时，作者可以为组件&#x200B;**取消继承**。取消继承后，实时关系将暂停，并且不会针对该组件进行同步。当必须自定义内容的子部分时，取消继承和同步会很有用。
 
 ### 分离 Live Copy {#detaching-a-live-copy}
 
@@ -319,7 +319,7 @@ Live Copy 中的每个页面和组件均通过实时关系与其源页面和组�
 1. 开发源站点的内容。
 1. 决定要使用的转出配置。
 
-   1. MSM [安装了多个转出配置](live-copy-sync-config.md#installed-rollout-configurations)，可满足大量用例的要求。
+   1. MSM [安装多个转出配置](live-copy-sync-config.md#installed-rollout-configurations) 可满足多个用例的要求。
    1. （可选）如果需要，您可以[创建转出配置](live-copy-sync-config.md#creating-a-rollout-configuration)。
 
 1. 决定需要[指定要使用的转出配置](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)并按需配置的情况。

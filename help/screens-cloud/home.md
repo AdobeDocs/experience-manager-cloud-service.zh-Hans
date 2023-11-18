@@ -3,10 +3,10 @@ title: AEM Screens as a Cloud Service
 description: 详细了解 AEM Screens 以及此数字标牌解决方案的工作原理。
 landing-page-description: 了解 AEM Screens as a Cloud Service。
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 76%
+source-wordcount: '420'
+ht-degree: 72%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 76%
 * [简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
 * [入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
 * [配置Screens服务和内容提供程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
-* [as a Cloud Service在Screens中创建项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [在Screensas a Cloud Service中创建项目](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
 * [安装Screens播放器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Experience Manager as a Cloud Service 指南 {#aem-guides}
 
 | 用户指南 | 描述 |
 |---|---|
-| [概述](/help/overview/home.md) | 本指南提供了 Experience Manager as a Cloud Service 的概述（包括简介、术语、架构等）。 |
+| [概述](/help/overview/home.md) | 本指南提供了Experience Manageras a Cloud Service的概述，包括简介、术语、架构等。 |
 | [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
 | [入门培训历程](/help/journey-onboarding/overview.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
@@ -45,7 +45,7 @@ ht-degree: 76%
 
 * [Dispatcher 文档](/help/implementing/dispatcher/overview.md)
 * [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)
-* [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+* [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [GDPR 就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hans)

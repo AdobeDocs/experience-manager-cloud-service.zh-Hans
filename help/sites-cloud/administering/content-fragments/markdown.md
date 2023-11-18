@@ -3,13 +3,13 @@ title: Markdown
 description: 了解内容片段编辑器如何使用 Markdown 语法，轻松地为页面创作和无头投放创建内容。
 feature: Content Fragments
 role: User
-source-git-commit: af97fec754edae6216551763fd20cad5ee07179c
-workflow-type: ht
-source-wordcount: '557'
-ht-degree: 100%
+exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 96%
 
 ---
-
 
 # Markdown {#markdown}
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 标题符号 {#heading-notation}
 
-要通过在标题前面放置井号标记 (#) 来创建标题，请执行以下操作： 一个井号标记 (#) 用于一级标题，两个井号标记 (##) 用于二级标题，以此类推。您最多可以使用 6 个井号标记。例如：
+要通过在标题前面放置井号标记 (#) 来创建标题，请执行以下操作： 一个井号标记(#)用于一级标题，两个井号标记(##)用于二级标题，依此类推。 您最多可以使用 6 个井号标记。例如：
 
     `## This is an H2`
 

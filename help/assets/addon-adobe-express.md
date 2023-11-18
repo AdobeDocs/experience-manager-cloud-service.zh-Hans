@@ -2,10 +2,10 @@
 title: 适用于 Adobe Express 的 AEM Assets 加载项
 description: 通过适用于 Adobe Express 的 AEM Assets 加载项，可直接从 Adobe Express 用户界面访问存储在 AEM Assets 中的资源。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9078e5bb71d9f34dc0416725efc20c0ab74cc939
-workflow-type: ht
-source-wordcount: '485'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '484'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 1. 打开 Adobe Express Web 应用程序。
 
-1. 通过加载新模板或项目或创建新资源而打开新的空白画布。
+1. 通过加载新模板或项目或创建资源来打开新的空白画布。
 
 1. 单击可在左侧导航窗格中找到的&#x200B;**[!UICONTROL 加载项]**。
 

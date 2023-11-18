@@ -1,9 +1,9 @@
 ---
 title: 什么是自适应表单表达式？
 description: 使用自适应Forms表达式可添加自动验证、计算以及打开或关闭部分的可见性。
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2698'
 ht-degree: 0%
 
 ---

@@ -3,10 +3,10 @@ title: 创建项目
 description: 了解如何使用 Cloud Manager 创建您的第一个项目。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
-workflow-type: ht
-source-wordcount: '678'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 
    ![Cloud Manager 登陆页面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. 在“创建项目向导”中，选择&#x200B;**设置沙盒**，提供项目名称，然后点按或单击&#x200B;**继续**。
+1. 从创建程序向导中，选择 **设置沙盒**，然后提供项目名称并选择 **继续**.
 
    ![项目类型创建](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 

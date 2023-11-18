@@ -2,10 +2,10 @@
 title: UI 测试
 description: 自定义 UI 测试是一项可选功能，可用于为自定义应用程序创建和自动运行 UI 测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2385'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 AEM 提供了 [Cloud Manager 质量关卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)集成包，确保对自定义应用程序的顺利更新。 特别是，IT 测试门已支持使用 AEM API 创建和自动化定制测试。
 
-UI 测试被打包为 Docker 映像，以便可选择多种语言和框架（如 Cypress、Selenium、Java 和 Maven 以及 JavaScript）。此外，还可使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)轻松地生成 UI 测试项目。
+UI 测试被打包为 Docker 映像，以便可选择多种语言和框架（如 Cypress、Selenium、Java 和 Maven 以及 JavaScript）。此外，通过使用，可以轻松生成UI测试项目 [AEM项目原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)
 
 Adobe 建议使用 Cypress，因为它提供实时重新加载和自动等待，而这些功能有助于在测试期间节省时间并提高工作效率。Cypress 还提供一种简单而直观的语法，即使是不熟悉测试的人士也很容易学习和使用。
 

@@ -2,10 +2,10 @@
 title: 启动项
 description: 使用启动项，您可以有效地开发内容的将来版本。它们允许您进行更改以准备将来发布，同时保留当前页面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 98%
+source-wordcount: '899'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 此外，您也可以：
 
-* 为多个根目录分支创建启动项。虽然您可以为整个站点创建启动项（并从中做出更改），但由于需要复制整个站点，因此这可能不切实际。当涉及数百甚至数千个页面时，系统要求和性能会受到复制操作以及后续提升任务所需的比较操作的影响。
+* 为多个根目录分支创建启动项。虽然您可以为整个站点创建启动项（并在其中进行更改），但由于必须复制整个站点，此操作可能不切实际。 当涉及数百甚至数千个页面时，系统要求和性能会受到复制操作以及后续提升任务所需的比较操作的影响。
 * 嵌套启动项（一个启动项嵌套在另一个启动项中），以便能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
 此部分介绍了如何从 Sites 控制台或[“启动项”控制台](#the-launches-console)中创建、编辑和提升（以及在必要[删除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)）启动页面：
@@ -96,7 +96,7 @@ ht-degree: 98%
 
    ![ Sites 控制台中的启动项引用](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. 点按/单击相应的启动项，此时将显示可执行的操作列表：
+1. 选择相应的启动项，此时将显示可执行的操作列表：
 
    ![要对 Sites 控制台中的启动项执行的操作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 

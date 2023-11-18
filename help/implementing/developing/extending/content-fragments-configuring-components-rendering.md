@@ -2,31 +2,31 @@
 title: 配置用于呈现的组件的内容片段
 description: 配置用于呈现的组件的内容片段
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '521'
 ht-degree: 6%
 
 ---
 
 # 配置用于呈现的组件的内容片段{#content-fragments-configuring-components-for-rendering}
 
-有好几个 [高级服务](#definition-of-advanced-services-that-need-configuration) 与内容片段的呈现相关。 要使用这些服务，内容片段框架必须了解此类组件的资源类型。
+有几个 [高级服务](#definition-of-advanced-services-that-need-configuration) 与内容片段的呈现相关。 要使用这些服务，必须使内容片段框架知道这些组件的资源类型。
 
-这是通过配置 [OSGi服务 — 内容片段组件配置](#osgi-service-content-fragment-component-configuration).
+这可以通过配置 [OSGi服务 — 内容片段组件配置](#osgi-service-content-fragment-component-configuration).
 
 在以下情况下，需要提供此信息：
 
 * 您需要实施自己的基于内容片段的组件，
 * 而且需要利用先进的服务。
 
-建议使用核心组件。
+Adobe建议使用核心组件。
 
 >[!CAUTION]
 >
 >* **如果您不需要 [高级服务](#definition-of-advanced-services-that-need-configuration)** 如下所述，您可以忽略此配置。
 >
->* **扩展或使用现成组件时**，不建议更改OSGi配置。
+>* **扩展或使用现成组件时**&#x200B;中，不建议更改OSGi配置。
 >
 >* **您可以从头开始编写仅使用内容片段API的组件，而无需高级服务**. 但是，在这种情况下，您必须开发组件，以便它处理相应的处理。
 >
@@ -36,7 +36,7 @@ ht-degree: 6%
 
 需要注册组件的服务包括：
 
-* 在发布期间正确确定依赖关系（即，如果片段和模型在上次发布后发生了更改，请确保它们可以随页面自动发布）。
+* 在发布期间正确确定依赖关系（即，如果片段和模型自上次发布以来已更改，请确保它们可以随页面自动发布）。
 * 支持全文搜索中的内容片段。
 * 管理/处理 *中间内容。*
 * 管理/处理 *混合媒体资产。*
@@ -47,17 +47,17 @@ ht-degree: 6%
 
 ## OSGi服务 — 内容片段组件配置 {#osgi-service-content-fragment-component-configuration}
 
-该配置需要绑定到OSGi服务 **内容片段组件配置**：
+配置必须绑定到OSGi服务 **内容片段组件配置**：
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->参见 [OSGi配置](/help/implementing/deploying/overview.md#osgi-configuration) 了解更多详细信息。
+>请参阅 [OSGi配置](/help/implementing/deploying/overview.md#osgi-configuration) 以了解更多详细信息。
 
 例如：
 
-![osgi配置内容片段组件配置](assets/cf-component-configuration-osgi.png)
+![OSGi配置内容片段组件配置](assets/cf-component-configuration-osgi.png)
 
 OSGi配置为：
 
@@ -93,7 +93,7 @@ OSGi配置为：
  </tbody>
 </table>
 
-对于某些功能，您的组件必须遵循预定义的惯例。 下表详细列出了需要由组件为每个段落(即 `jcr:paragraph` （对于每个组件实例），以便服务能够正确检测并处理它们。
+对于某些功能，您的组件必须遵循预定义惯例。 下表详细列出了每个段落(即， `jcr:paragraph` （对于每个组件实例），以便服务能够正确检测和处理它们。
 
 <table>
  <thead>
@@ -108,12 +108,12 @@ OSGi配置为：
    <td><p>一个字符串属性，定义在中时如何输出段落 <em>单元素渲染模式</em>.</p> <p>值:</p>
     <ul>
      <li><code>all</code> ：渲染所有段落</li>
-     <li><code>range</code> ：渲染提供的段落范围 <code>paragraphRange</code></li>
+     <li><code>range</code> ：呈现以下项提供的段落范围： <code>paragraphRange</code></li>
     </ul> </td>
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>一个字符串属性，定义要在以下情况下输出的段落范围： <em>单元素渲染模式</em>.</p> <p>格式:</p>
+   <td><p>一个字符串属性，定义在中要输出的段落范围 <em>单元素渲染模式</em>.</p> <p>格式:</p>
     <ul>
      <li><code>1</code> 或 <code>1-3</code> 或 <code>1-3;6;7-8</code> 或 <code>*-3;5-*</code>
      <ul>
@@ -140,7 +140,7 @@ OSGi配置为：
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config
 ```
 
-这包含：
+其中包含：
 
 ```
 dam.cfm.component.resourceType="core/wcm/components/contentfragment/v1/contentfragment"

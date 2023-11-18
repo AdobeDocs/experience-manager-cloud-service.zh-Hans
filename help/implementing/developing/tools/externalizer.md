@@ -2,9 +2,9 @@
 title: 将URL外部化
 description: 外部化器是一种OSGi服务，允许您以编程方式将资源路径转换为外部和绝对URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 0%
 
    * **`scheme`** 通常为http或https，但可以是其他协议。
 
-      * 建议使用https来强制https链接。
+      * Adobe建议使用https来强制https链接。
       * 如果客户端代码在请求URL外部化时未覆盖方案，则使用此选项。
 
    * **`server`** 是主机名（域名或ip地址）。

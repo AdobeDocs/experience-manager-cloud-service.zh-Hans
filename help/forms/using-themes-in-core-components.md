@@ -2,9 +2,9 @@
 title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2676'
 ht-degree: 5%
 
 ---
@@ -367,7 +367,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    ![流水线](/help/forms/assets/canvas-theme-run-pipeline.png)
 
-构建完成后，主题即可在创作实例中供使用。 它显示在 **[!UICONTROL 样式]** 选项卡中，此时需创建新自适应表单。
+构建完成后，主题即可在创作实例中供使用。 它显示在 **[!UICONTROL 样式]** 选项卡中，用于创建自适应表单时。
 
 ![样式选项卡下可用的自定义主题](/help/forms/assets/custom-theme-style-tab.png)
 

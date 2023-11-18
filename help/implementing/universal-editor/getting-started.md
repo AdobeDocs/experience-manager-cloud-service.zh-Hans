@@ -2,10 +2,10 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 87%
+source-wordcount: '920'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 87%
 
 虽然 Universal Editor 可以编辑来自任何来源的内容，但本文档将以 AEM 应用程序为例。
 
-需要执行大量步骤来载入您的 AEM 应用程序并为其插桩以使用 Universal Editor。
+载入您的AEM应用程序并检测它是否使用通用编辑器需要多个步骤。
 
 1. [请求访问 Universal Editor。](#request-access)
 1. [包括 Universal Editor 核心库。](#core-library)
@@ -43,13 +43,13 @@ ht-degree: 87%
 
 ## 包括 Universal Editor 核心库 {#core-library}
 
-您的应用程序需要先包含以下依赖项，之后才能插桩以与 Universal Editor 结合使用。
+在将您的应用程序检测为可与通用编辑器一起使用之前，它必须包括以下依赖项。
 
 ```javascript
 @adobe/universal-editor-cors
 ```
 
-要激活插桩，需要将以下导入添加到 `index.js`。
+要激活检测，必须将以下导入添加到您的 `index.js`.
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -103,7 +103,7 @@ X-Frame-Options：SAMEORIGIN 阻止在 iframe 中呈现 AEM 页面。移除标�
 
 Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 来为正在编辑的应用程序内容识别和使用正确的后端系统。因此，需要 URN 模式将内容映射回内容资源。
 
-添加到页面的监测属性主要由 [HTML 微数据](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Microdata)构成，这是一种行业标准，也可用于使 HTML 更具语义，使 HTML 文档可建立索引等。
+添加到页面中的检测属性主要包括 [HTML微数据，](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Microdata) 一种行业标准，也可用于使HTML更具语义、使HTML文档可索引等等。
 
 ### 创建连接 {#connections}
 

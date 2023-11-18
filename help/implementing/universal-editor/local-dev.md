@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 进行本地 AEM 开发
 description: 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 3b98543098f4125a7d7e5896e5aa46e441a40f32
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 为此，您需要将 AEM 设置为在 HTTPS 上运行。出于开发目的，您可以使用自签名证书。
 
-请参阅本文档，了解如何设置在 HTTPS 上运行的 AEM，包括可使用的自签名证书。
+请参阅此文档，了解如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
 
 ## 安装 Universal Editor Service {#install-ue-service}
 
@@ -30,7 +30,7 @@ Universal Editor Service 是一项用于将 Universal Editor 与后端系统绑�
 
 需要 [NodeJS 版本 16](https://nodejs.org/en/download/releases)才能运行 Universal Editor Service 的本地副本
 
-Universal Editor Service 由 AEM Engineering 直接分发。请联系 VIP 项目中的工程部联系人以获取本地副本。
+Universal Editor Service 由 AEM Engineering 直接分发。请与VIP项目中的工程师联系以获取本地副本。
 
 工程部将为您提供 `universal-editor-service.cjs` 文件。将该文件保存到您的本地开发环境中。
 

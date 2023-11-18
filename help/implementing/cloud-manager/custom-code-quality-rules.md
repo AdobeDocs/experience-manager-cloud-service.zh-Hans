@@ -2,9 +2,9 @@
 title: 自定义代码质量规则
 description: 此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 Adobe Experience Manager Engineering 的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: a62312954db0631cf594a27db36bab8a2441360f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '4097'
+source-wordcount: '4095'
 ht-degree: 87%
 
 ---
@@ -542,7 +542,7 @@ AEM应用程序通常使用HTTP协议与其他应用程序通信，Apache HttpCl
 
 此规则检查此类HttpClient对象在方法中是否不是私有的，而是在类级别上是全局的，以便可以重复使用。 在这种情况下，httpClient字段应在类的构造函数中设置，或者 `activate()` 方法（如果此类是OSGi组件/服务）。
 
-另请查看 [Optimization指南](https://hc.apache.org/httpclient-legacy/performance.html) 了解关于使用HttpClient的一些最佳实践。
+查看 [Optimization指南](https://hc.apache.org/httpclient-legacy/performance.html) 了解关于使用HttpClient的一些最佳实践。
 
 #### 不合规的代码 {#non-compliant-code-14}
 

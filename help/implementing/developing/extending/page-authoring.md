@@ -1,13 +1,13 @@
 ---
 title: 自定义页面创作
 description: 了解 AEM as a Cloud Service 提供的用于自定义页面创作功能的机制。
-source-git-commit: f159f0ef86c2b82da4e7308a0892b4947b6e43fb
-workflow-type: ht
-source-wordcount: '981'
-ht-degree: 100%
+exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 96%
 
 ---
-
 
 # 自定义页面创作 {#customizing-page-authoring}
 
@@ -22,7 +22,7 @@ Clientlib 允许您扩展默认实现，以启用新功能，同时重新使用�
 * 取决于创作 clientlib `cq.authoring.editor.sites.page`。
 * 成为相应 `cq.authoring.editor.sites.page.hook` 类别的一部分。
 
-有关 clientlibs 的更多详细信息，请参阅文档[在 AEM as a Cloud Service 上使用客户端库](/help/implementing/developing/introduction/clientlibs.md)。
+请参阅 [在AEMas a Cloud Service上使用客户端库](/help/implementing/developing/introduction/clientlibs.md).
 
 ## 叠加 {#overlays}
 
@@ -30,9 +30,9 @@ Clientlib 允许您扩展默认实现，以启用新功能，同时重新使用�
 
 创建叠加时，不需要原件的 1:1 副本，因为[ Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)允许继承。
 
-有关详细信息，请参阅 [JS 文档集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
+欲了解更多信息，请参见 [JS文档集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-有关叠加的更多信息，请参阅文档 [Adobe Experience Manager as a Cloud Service 的叠加](/help/implementing/developing/introduction/overlays.md)。
+有关叠加的详细信息，请参阅 [Adobe Experience Manager as a Cloud Service的叠加](/help/implementing/developing/introduction/overlays.md).
 
 ## 添加新层（模式） {#add-new-layer-mode}
 

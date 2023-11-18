@@ -2,10 +2,10 @@
 title: 企业开发团队设置
 description: 了解如何建立和扩展您的企业开发团队，并了解 AEM as a Cloud Service 如何支持您的开发过程。
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1437'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud Manager 支持灵活的多团队设置，可以根据企业需求进行调
 
 每个企业都有不同的需求，包括不同的团队设置、流程和开发工作流。 Adobe 将下面描述的设置用于几个项目，这些项目基于 AEM as a Cloud Service 提供体验。
 
-例如，Adobe Creative Cloud 桌面版，如 Adobe Photoshop 或 Adobe Illustrator，包括可供最终用户使用的教程、示例和指南等内容资源。使用 AEM as a Cloud Service 的客户端应用程序以无头方式使用此内容，方法是对 AEM 云发布层进行 API 调用，检索作为 JSON 流的结构化内容，并利用 [AEM as a Cloud Service 中的 Content Delivery Network (CDN)](/help/implementing/dispatcher/cdn.md#content-delivery) 以最佳性能为结构化和非结构化内容提供服务。
+例如，Adobe Creative Cloud 桌面版，如 Adobe Photoshop 或 Adobe Illustrator，包括可供最终用户使用的教程、示例和指南等内容资源。使用AEMas a Cloud Service的客户端应用程序以无头方式使用此内容，方法是对AEM云发布层进行API调用，将结构化内容检索为JSON流，并使用 [AEMas a Cloud Service中的Content Delivery Network (CDN)](/help/implementing/dispatcher/cdn.md#content-delivery) 以最佳性能为结构化和非结构化内容提供服务。
 
 参与该项目的团队遵循以下流程。
 

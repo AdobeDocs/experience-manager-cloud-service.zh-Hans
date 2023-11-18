@@ -2,10 +2,10 @@
 title: 针对 AEM as a Headless CMS 进行创作 – 简介
 description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能为项目创作内容。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 94e5d0e84d5c55d0ff61a705e079b4dc8e32a777
-workflow-type: ht
-source-wordcount: '691'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 96%
 
 ---
 
@@ -61,7 +61,7 @@ Headless 是一个用来描述系统的术语，指的是有效地将内容与�
 
 内容建模（也称为数据建模）是另一个技术术语。作为作者，您为什么会对它感兴趣呢？
 
-要使 Headless 应用程序能够访问并处理您的内容，您的内容需要具有预定义的结构。您的内容可以采用自由格式，但这会使应用程序的生命周期变得&#x200B;*非常*&#x200B;复杂。
+对于Headless应用程序，为了能够访问您的内容并对其执行一些操作，您的内容必须具有预定义的结构。 您的内容可以采用自由格式，但这会使应用程序的生命周期变得&#x200B;*非常*&#x200B;复杂。
 
 基本上，在定义内容要遵循的结构的过程中需要设计模型，这称作数据建模。
 

@@ -4,9 +4,9 @@ description: 本文介绍了如何在Experience Manager中创建、修改和使�
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 35d70cd3843b5e0857a24a17746e05072aed7e1b
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2504'
 ht-degree: 21%
 
 ---
@@ -108,7 +108,7 @@ Adobe Experience Manager Assets的企业范围部署能够存储许多资源。 
 1. 执行下列操作之一：
 
    * 在 **[!UICONTROL 属性名称]** 字段中，提及JSON文件的路径，在该路径中为选项定义节点并指定相应的键值对。
-   * 点按 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 在“选项”字段旁边，为要在“筛选器”面板中提供的选项指定显示文本和值。 要添加其他选项，请点按/单击 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 并重复该步骤。
+   * 点按 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 在“选项”字段旁边，为要在“筛选器”面板中提供的选项指定显示文本和值。 要添加其他选项，请选择 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 并重复该步骤。
 
 1. 确保取消选中&#x200B;**[!UICONTROL 单选]**，以允许用户一次为文件类型选择多个选项（例如，“图像”、“文档”、“多媒体”和“存档”）。如果选中&#x200B;**[!UICONTROL 单选]**，则用户一次只能为文件类型选择一个选项。
 
@@ -145,7 +145,7 @@ Adobe Experience Manager Assets的企业范围部署能够存储许多资源。 
 
    ![标记谓词的典型设置](assets/tags_predicate.png)
 
-1. 在 **[!UICONTROL 描述]** 字段中，输入可选描述，然后单击/点按 **[!UICONTROL 完成]**.
+1. 在 **[!UICONTROL 描述]** 字段，输入可选说明，然后选择 **[!UICONTROL 完成]**.
 1. 导航到“搜索”面板。 此 **[!UICONTROL 标记]** 谓词将添加到“搜索”面板。
 1. 指定要基于其搜索资产的标记或从建议列表中选择。
 1. 选择 **[!UICONTROL 匹配所有]** 以搜索包含您指定的所有标记的匹配项。

@@ -2,10 +2,10 @@
 title: 管理 IP 允许列表
 description: 了解如何在 Cloud Manager 中查看、编辑、删除 IP 允许列表和检查其状态。
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: d67c5c9baafb9b7478f1d1c2ad924f5a8250a1ee
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '784'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 1. 从&#x200B;**环境**&#x200B;屏幕导航到 **IP 允许列表**&#x200B;页面。
-1. 确定要删除的 IP 允许列表的行。
+1. 确定要删除的IP允许列表的行。
 1. 选择行最右侧的省略号菜单。
 1. 单击&#x200B;**删除**。
 1. 确认您的提交。

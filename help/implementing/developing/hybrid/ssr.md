@@ -2,9 +2,9 @@
 title: SPA和服务器端渲染
 description: 在SPA中使用服务器端渲染(SSR)可以加快页面的初始加载，然后将进一步的渲染传递给客户端。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: 66c9e95f96c8ce181722488a34a175c80f6f917c
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ SSR通常在以下任一问题明确为“是”时提供一些值：
 
 >[!NOTE]
 >
->Cloud Manager不支持部署到Adobe I/O Runtime。 因此，需要设置您自己的基础设施以将SSR代码部署到Adobe I/O Runtime。
+>Cloud Manager不支持部署到Adobe I/O Runtime。 因此，必须设置您自己的基础架构，以便将SSR代码部署到Adobe I/O Runtime。
 
 ## 远程渲染器配置 {#remote-content-renderer-configuration}
 

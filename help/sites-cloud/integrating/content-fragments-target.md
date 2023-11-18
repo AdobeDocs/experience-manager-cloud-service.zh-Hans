@@ -2,10 +2,10 @@
 title: 将内容片段导出到 Adobe Target
 description: 了解如何将内容片段导出到 Adob​​e Target，以测试和个性化体验。
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '2231'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '2223'
+ht-degree: 96%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 100%
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    >1. Set the property **disable** to **false**.
-   >1. Tap or click **Save All**.
+   >1. Select **Save All**.
 
    -->
 
@@ -187,7 +187,7 @@ ht-degree: 100%
 
    * **使用准确定位：**&#x200B;默认情况下，此复选框处于选中状态。如果选中，云服务配置将等到上下文加载完后，再加载内容。请参阅以下注释。
 
-   * **从 Adobe Target 同步分段：**&#x200B;选择此选项可下载 Target 中定义的分段，以便在 AEM 中使用它们。当“API 类型”属性为 REST 时，您必须选择此选项，因为内联分段不受支持，并且您始终需要从 Target 使用分段。（请注意，AEM 术语“分段”等同于 Target“受众”。）
+   * **从 Adobe Target 同步分段：**&#x200B;选择此选项可下载 Target 中定义的分段，以便在 AEM 中使用它们。当API类型属性为REST时，选择此选项，因为内联区段不受支持，并且您始终需要从Target使用区段。 (AEM术语“区段”等同于Target“受众”。)
 
    * **客户端库：**&#x200B;默认值为 AT.js（已弃用 mbox.js）
 
@@ -288,8 +288,8 @@ When you associate a page with the framework, the child pages inherit the associ
 1. In the **Sites** console, navigate to the site that you want to configure.
 1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
-1. Tap/click **Edit**.
-1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
+1. Select **Edit**.
+1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
   ![Cloud Service Configurations](assets/chlimage_1-165.png)
 
@@ -299,7 +299,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
-1. Tap/click **Done**.
+1. Select **Done**.
 1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
 
    >[!NOTE]
@@ -313,14 +313,14 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >对于媒体资源（例如图像），仅将引用导出到 Target。资源本身仍存储在 AEM Assets 中，并且从 AEM 发布实例进行交付。
 >
->因此，在导出到 Target 之前，需要发布包含所有相关资源的内容片段。
+>因此，在导出到Target之前，必须发布包含所有相关资产的内容片段。
 
 要将内容片段从 AEM 导出到 Target（在指定云配置之后），请执行以下操作：
 
 1. 在&#x200B;**资源**&#x200B;控制台中导航到您的内容片段。
 1. 选择要导出到 Target 的内容片段。
 
-1. 点按/单击&#x200B;**导出到 Adobe Target 选件**。
+1. 选择 **导出到Adobe Target优惠**.
 
    ![导出到 Adobe Target](assets/cfm-export-target-01.png)
 
@@ -334,7 +334,7 @@ When you associate a page with the framework, the child pages inherit the associ
    
    -->
 
-1. 根据需要点按/单击&#x200B;**导出而不发布**&#x200B;或&#x200B;**发布**。
+1. 选择 **导出而不发布** 或 **Publish** 根据需要。
 
    >[!NOTE]
    >
@@ -346,7 +346,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >选择&#x200B;**发布**，内容片段将立即发布，并同时发送到 Target。
 
-1. 在“确认”对话框中，点按/单击&#x200B;**确定**。
+1. 选择 **确定** 在确认对话框中。
 
    您的内容片段现在应在 Target 中。
 

@@ -2,10 +2,10 @@
 title: SLA 报告
 description: 了解如何查看生产 AEM 环境相对于约定的服务水平协议 (SLA) 的性能。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 95%
+source-wordcount: '245'
+ht-degree: 91%
 
 ---
 
@@ -32,7 +32,7 @@ SLA 报告数据可通过&#x200B;**报告**&#x200B;选项卡用于每个生产�
 
 ## SLA 量度 {#sla-metrics}
 
-所选年份的图表包括许多数据集。
+选定年份的图表包括几个数据集。
 
 * **发布层合同** – 这是您与 Adobe 签订的合同中为发布层定义的 SLA。
 

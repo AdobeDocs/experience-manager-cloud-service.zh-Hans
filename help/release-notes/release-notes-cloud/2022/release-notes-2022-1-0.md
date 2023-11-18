@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.1.0 版的发行说明。'
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 94%
+source-wordcount: '1072'
+ht-degree: 88%
 
 ---
 
@@ -87,12 +87,12 @@ ht-degree: 94%
 * 增强的 myAccount 组件
 * 产品推荐组件支持其他页面类型（主页、购物车、订单确认）
 * **愿望清单**
-   * 登录的访客可以将产品添加到愿望清单
-   * 通过 myAccount 可以管理愿望清单及其产品
-   * 可以通过策略（例如产品预告片、产品详细信息）在组件级别启用/禁用“添加到愿望清单”按钮
+   * 登录的访客可以将产品添加到允许列表
+   * 通过myAccount可以管理愿望清单及其产品
+   * 可以通过策略（例如产品Teaser、产品详细信息）在组件级别启用/禁用“添加到愿望清单”按钮
    * 作为核心组件提供，位于 AEM Venia Storefront 中
 
-![愿望清单](/help/assets/CIF/wishlist.png)
+<!-- Image was not found during PR validation despite correct path ![Wishlist](/help/assets/CIF/wantlist.png) -->
 
 ## Cloud Manager {#cloud-manager}
 
@@ -122,7 +122,7 @@ AEM as a Cloud Service 2022.01.0 中的 Cloud Manager 的发布日期是 2022 �
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容验证 - 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。要使用此功能，请在 `System Console` 源AEM环境的。 请参阅 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hans#getting-started) 以了解更多详细信息。
+* 内容验证 — 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。 要使用此功能，请在 `System Console` 源AEM环境的。 请参阅 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hans#getting-started) 以了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-ctt}
 

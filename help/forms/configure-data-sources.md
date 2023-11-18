@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b9fb484135fb2d16758548c525b59f5ba011afb5
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2201'
 ht-degree: 4%
 
 ---
@@ -283,7 +283,7 @@ OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience 
 
    >[!NOTE]
    >
-   您必须选择要连接的OAuth 2.0身份验证类型 [!DNL Microsoft®® Dynamics] 使用OData端点作为服务根的服务。
+   选择要连接的OAuth 2.0身份验证类型 [!DNL Microsoft®® Dynamics] 使用OData端点作为服务根的服务。
 
 1. 点按 **[!UICONTROL 创建]** 以创建OData服务的云配置。
 

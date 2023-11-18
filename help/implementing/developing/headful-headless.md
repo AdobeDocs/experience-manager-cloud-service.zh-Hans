@@ -2,10 +2,10 @@
 title: AEM 中的 Headful 和 Headless
 description: AEM 项目可以在 Headful 和 Headless 模型中实施，但这不是一个二选一的选择。利用 AEM，可以在一个项目中灵活地运用这两种模型的优势。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 97%
+source-wordcount: '1014'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 还可用于简单地管理内容，并允许呈现和交付要由另一个�
 
 ![AEM 实施模型](/help/headless/assets/aem-implementation-models.png)
 
-在 Headful 或全栈模型中，内容在 AEM 存储库中进行管理，而基于 Java、HTL 等的 AEM 组件用于呈现用户体验的内容。在此模型中，内容的创建、样式设置、呈现和交付操作都在 AEM 中进行。
+在Headful或全栈模型中，内容在AEM存储库中进行管理，并且根据Java、HTL等，AEM组件会用于呈现用户体验的内容。 在此模型中，内容的创建、样式设置、呈现和交付操作都在 AEM 中进行。
 
 在 Headless 模型中，内容在 AEM 存储库中管理，但通过 REST 和 GraphQL 等 API 交付到另一个系统以呈现用户体验的内容。在此模型中，内容的创建操作是在 AEM 中进行的，但内容的样式设置、呈现和交付操作是在另一个平台中进行的。
 

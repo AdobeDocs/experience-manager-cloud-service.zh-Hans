@@ -2,10 +2,10 @@
 title: 变体 – 创作片段内容 （资产 — 内容片段）
 description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容更加灵活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 57%
+source-wordcount: '2530'
+ht-degree: 56%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 57%
 
 ### 全屏编辑器 {#full-screen-editor}
 
-编辑多行文本字段时，可以打开全屏编辑器；点按或单击实际文本，然后选择以下操作图标：
+编辑多行文本字段时，可以打开全屏编辑器；在实际文本中选择，然后选择以下操作图标：
 
 ![全屏编辑器图标](assets/cfm-variations-03.png)
 

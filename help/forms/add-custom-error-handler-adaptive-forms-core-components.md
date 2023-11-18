@@ -1,14 +1,12 @@
 ---
 title: 基于 AEM 自适应表单的核心组件，在自适应表单中添加自定义错误处理程序
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
 description: AEM Forms 使用为调用外部服务而配置的 REST 端点为表单提供现成的成功和错误处理程序。您可以在 AEM 自适应表单中添加默认错误处理程序和自定义错误处理程序。
-seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: 添加自定义错误处理程序、添加默认错误处理程序、在表单中添加错误处理程序、使用规则编辑器的调用服务添加自定义错误处理程序、配置规则编辑器以添加自定义错误处理程序、使用规则编辑器添加自定义错误处理程序
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 98%
@@ -252,7 +250,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
-           alert("CustomErrorHandler - Please enter valid PetId.")
+           alert("CustomErrorHandler - Enter valid PetId.")
            globals.invoke('defaultErrorHandler',response, headers)
            console.log("Custom Error Handler processing end...");
        }

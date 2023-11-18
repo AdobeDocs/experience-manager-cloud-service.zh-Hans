@@ -2,10 +2,10 @@
 title: 创建和组织页面
 description: 了解如何通过使用 AEM 创建和管理页面来组织您的网站。
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 97%
+source-wordcount: '2429'
+ht-degree: 87%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 97%
 >如果您遇到任何问题，我们建议您与系统管理员联系。
 
 <!--
->Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to take action on pages such as create, copy, move, edit, and delete.
+>Your account needs the [appropriate access rights](/help/sites-administering/security.md) and [permissions](/help/sites-administering/security.md#permissions) to act on pages such as create, copy, move, edit, and delete.
 -->
 
 >[!TIP]
 >
->可以使用网站控制台中的许多[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)来更有效地组织页面。
+>有几个 [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 可以从网站控制台使用，以便更高效地组织页面。
 
 {{edge-delivery-authoring}}
 
@@ -70,7 +70,7 @@ ht-degree: 97%
 
 ### 页面命名惯例 {#page-naming-conventions}
 
-在创建新页面时，需填写以下两个关键字段：
+创建页面时，需填写以下两个关键字段：
 
 * **[标题](#title)**：
 
@@ -95,7 +95,7 @@ ht-degree: 97%
 >
 >另请注意，某些浏览器（例如旧版本的 IE）只能接受一定长度的 URL，因此还有技术原因需缩短页面名称。
 
-创建新页面时，AEM [将依据 AEM 和 JCR 实行的惯例来验证页面名称](/help/implementing/developing/introduction/naming-conventions.md)。
+创建页面时，AEM [按照约定验证页面名称](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR强制实施。
 
 允许使用的字符最少包括：
 
@@ -113,7 +113,7 @@ ht-degree: 97%
 
 #### 标题 {#title}
 
-如果您在创建新页面时只提供一个页面&#x200B;**标题**，AEM 将从此字符串派生页面&#x200B;**名称**[，并依据 AEM 和 JCR 实行的惯例验证此名称](/help/implementing/developing/introduction/naming-conventions.md)。
+如果您只提供页面 **标题** 创建页面时，AEM将派生页面 **名称** 来自此字符串和 [根据惯例验证名称](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR强制实施。
 
 虽然接受包含无效字符的&#x200B;**标题**&#x200B;字段，但派生的名称会将无效的字符替换掉。例如：
 
@@ -124,7 +124,7 @@ ht-degree: 97%
 
 #### 名称 {#name}
 
-如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将[依据 AEM 和 JCR 实行的惯例验证此名称](/help/implementing/developing/introduction/naming-conventions.md)。您在&#x200B;**名称**&#x200B;字段中无法提交无效的字符。AEM 检测到无效字符时，该字段会突出显示，并提供有说明性消息。
+当您提供页面时 **名称** 创建页面时，AEM [按照约定验证名称](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR强制实施。 您在&#x200B;**名称**&#x200B;字段中无法提交无效的字符。AEM 检测到无效字符时，该字段会突出显示，并提供有说明性消息。
 
 ![输入无效页面名称的示例](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -185,7 +185,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 1. 在向导的第一步中，您可以执行以下操作之一：
 
-   * 选择要用于创建新页面的模板，然后单击/点按&#x200B;**下一步**&#x200B;以继续。
+   * 选择要用于创建新页面的模板，然后选择 **下一个** 以继续。
 
    * 单击/点按&#x200B;**取消**&#x200B;可中止该过程。
 
@@ -193,7 +193,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 1. 在向导的最后一步中，您可以执行以下操作之一：
 
-   * 使用三个选项卡输入您希望对新页面指定的[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)，然后单击/点按&#x200B;**创建**&#x200B;以实际创建页面。
+   * 使用三个选项卡输入 [页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md) 您希望指派给新页面，然后选择 **创建** 以实际创建页面。
 
    * 使用&#x200B;**返回**，可返回到模板选择步骤。
 
@@ -206,7 +206,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
    * **名称**：
 
       * 用于生成 URI。如果未指定，名称会从标题派生。
-      * 如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将[依据 AEM 和 JCR 实行的惯例验证此名称](/help/implementing/developing/introduction/naming-conventions.md)。
+      * 如果您提供页面 **名称** 创建页面时，AEM [按照约定验证名称](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR强制实施。
       * 您在&#x200B;**名称**&#x200B;字段中&#x200B;**无法提交无效的字符**。当 AEM 检测到无效字符时，此字段会突出显示，并出现一条说明性消息以指示需要删除/替换的字符。
 
    >[!TIP]
@@ -269,7 +269,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
    ![复制](/help/sites-cloud/authoring/assets/copy.png)
 
 1. 导航到页面的新副本所在的位置。
-1. 点按或单击已变为可用的&#x200B;**粘贴**&#x200B;图标。
+1. 选择 **粘贴** 图标。
 
    ![粘贴](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -279,7 +279,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
    ![“粘贴”对话框](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. 点按或单击&#x200B;**粘贴**&#x200B;按钮以确认粘贴事务并创建新页面。
+1. 选择 **粘贴** 按钮以确认粘贴事务并创建新页面。
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 1. 在向导的&#x200B;**重命名**&#x200B;阶段，您可以执行以下任一操作：
 
-   * 指定移动页面后您希望页面使用的名称，然后单击/点按&#x200B;**下一步**&#x200B;以继续。
+   * 指定移动页面后您希望页面使用的名称，然后选择 **下一个** 以继续。
    * 单击/点按&#x200B;**取消**&#x200B;可中止该过程。
 
    ![移动和重命名页面](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -383,7 +383,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
   ![Asynchronous page move](assets/asynchronous-page-move.png)
 -->
 
-可在&#x200B;[**异步作业状态**&#x200B;功能板](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)（位于&#x200B;**全局导航** -> **工具** -> **操作** -> **作业**）中查看异步作业的状态
+可以在中检查异步作业的状态 [**异步作业状态** 仪表板](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) 在 **全局导航** > **工具** > **操作** > **作业**
 
 >[!NOTE]
 >

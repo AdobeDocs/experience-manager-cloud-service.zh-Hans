@@ -2,9 +2,9 @@
 title: 与 Adobe Analytics 集成时使用的 IMS 配置
 description: 了解与 Adobe Analytics 集成时使用的 IMS 配置
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '908'
 ht-degree: 97%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 97%
 * 您组织的系统管理员应使用 Admin Console 将您组织中所需的开发人员添加到相关的产品配置文件中。
 
    * 这将向特定开发人员提供使用 Adobe Developer Console 启用集成的权限。
-   * 有关更多详细信息，请参阅[管理开发人员](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)。
+   * 请参阅 [管理开发人员](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## 配置 IMS 配置 – 生成公钥 {#configuring-ims-generating-a-public-key}

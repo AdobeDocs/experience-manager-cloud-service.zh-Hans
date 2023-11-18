@@ -3,10 +3,10 @@ title: ' [!DNL AEM Forms] as a Cloud Service 简介'
 description: 探索如何通过 AEM Forms 生成业务就绪表单、创建业务流程工作流以及使用文档服务生成和保护文档。
 landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: d0e5a63896ccbeb32b565680276b461fbbf19e9c
-workflow-type: ht
-source-wordcount: '1151'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '1149'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为�
 
 ## 数字化和简化注册与登录体验
 
-您可以使用该服务创建和推出交互式且具有吸引力的数字表单。例如，以一家希望将其客户注册过程数字化的企业为例。他们拥有多个包含现有客户数据的数据源，且希望预先填充表单、添加电子签名表单，并将填写的表单存档为 PDF 文件。此外，该企业有多种打印表单 (PDF 表单)，且还希望将所有打印表单转换为数字表单。
+您可以使用该服务创建和推出交互式且具有吸引力的数字表单。例如，以一家希望将其客户注册过程数字化的企业为例。他们拥有多个包含现有客户数据的数据源，且希望预先填充表单、添加电子签名表单，并将填写的表单存档为 PDF 文件。此外，该企业拥有多种打印表单(PDF forms)，并且还希望将其打印表单转换为数字表单。
 
 该企业可使用 [!DNL AEM Forms] as a Cloud Service 创建数字表单、将表单连接到现有数据源、将表单与 [!DNL Adobe Sign] 集成以将电子签名添加到表单、生成记录文档 (DoR)，从而将提交的表单存档为 PDF 文件。该企业还可使用该服务将现有的 PDF 表单转换为数字表单。
 

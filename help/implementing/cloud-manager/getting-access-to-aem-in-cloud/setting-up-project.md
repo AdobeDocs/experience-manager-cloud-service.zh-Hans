@@ -2,10 +2,10 @@
 title: 项目设置
 description: 了解如何使用 Maven 构建 AEM 项目，以及创建自己的项目时必须遵守的标准。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1404'
-ht-degree: 100%
+source-wordcount: '1399'
+ht-degree: 97%
 
 ---
 
@@ -110,7 +110,7 @@ AEM 项目需要遵守以下准则才能使用 Cloud Manager 成功地构建和�
 
 >[!NOTE]
 >
->由于通过此机制部署的代码目前没有在 Cloud Manager 的质量关卡中实现的所有[代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)中运行，因此只能非常谨慎地使用受密码保护的 Maven 存储库中的工件。 因此，它只应在少数情况下使用，并且适用于与 AEM 无关的代码。 此外，还建议将 Java 源以及整个项目源代码和二进制文件一起部署。
+>应谨慎使用受密码保护的Maven存储库中的工件，因为通过此机制部署的代码当前不会运行 [代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md) 在Cloud Manager的质量关卡中实施。 因此，它只应在少数情况下使用，并且适用于与 AEM 无关的代码。 此外，还建议将 Java 源以及整个项目源代码和二进制文件一起部署。
 
 若要在 Cloud Manager 中使用受密码保护的 Maven 存储库，请执行以下操作：
 

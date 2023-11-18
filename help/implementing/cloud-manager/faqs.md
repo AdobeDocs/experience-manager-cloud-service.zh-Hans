@@ -2,10 +2,10 @@
 title: Cloud Manager 常见问题解答
 description: 在 AEM as a Cloud Service 中查找有关 Cloud Manager 的最常见问题的答案。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -108,7 +108,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
    * 按照以下步骤在本地设置上模拟问题。
       1. 使用最新的 AEM SDK jar 在本地安装作者和发布实例。
       1. 登录作者实例。
-      1. 前往&#x200B;**工具** -> **部署** -> **分发**。
+      1. 转到 **工具** > **部署** > **分布**.
       1. 分发作为代码库一部分的内容包，并查看队列是否因错误而阻塞。
 
 ## 我无法使用 aio 命令设置变量。 我该怎么办？ {#set-variable}

@@ -2,10 +2,10 @@
 title: 发布页面
 description: 了解如何使用 AEM 中的各种机制发布和取消发布页面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -224,7 +224,7 @@ Sites 控制台中有两个用于发布的选项：
 
 ### 从编辑器中取消发布 {#unpublishing-from-the-editor}
 
-在编辑页面时，如果您希望取消发布该页面，请选择&#x200B;**页面信息**&#x200B;菜单中的&#x200B;**取消发布页面**，这与[发布页面](#publishing-from-the-editor)非常类似。
+在编辑页面时，如果要取消发布该页面，请选择 **取消发布页面** 在 **页面信息** 菜单，尽情使用 [发布页面](#publishing-from-the-editor).
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ Sites 控制台中有两个用于发布的选项：
 
 您可以使用 Sites 控制台上的[管理发布](#manage-publication)选项来完成此操作。
 
-1. 在 Sites 控制台中，选择您希望发布或取消发布的树的根页面，然后选择&#x200B;**管理发布**。
+1. 在站点控制台中，选择要发布或取消发布的树的根页面，然后选择 **管理发布**.
 1. 此时会启动&#x200B;**管理发布**&#x200B;向导。选择发布或取消发布以及应在何时开始，然后选择&#x200B;**下一步**&#x200B;以继续。
 1. 在&#x200B;**范围**&#x200B;步骤中，选择根页面，然后选择&#x200B;**包括子项**。
 

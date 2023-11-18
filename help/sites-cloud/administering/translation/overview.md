@@ -4,10 +4,10 @@ description: 大致了解如何翻译多语言站点的内容。
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '289'
-ht-degree: 100%
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->您的用户必须是 `project-administrators` 组的成员才能使用语言复制功能。
+>您的用户必须是 `project-administrators` 组以使用语言复制功能。
 
 ## 最佳实践 {#best-practices}
 

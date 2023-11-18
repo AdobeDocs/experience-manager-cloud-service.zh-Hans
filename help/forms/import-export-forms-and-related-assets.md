@@ -1,9 +1,9 @@
 ---
 title: 如何将资源导入和导出到 [!DNL AEM Forms]？
 description: 了解如何将DocuSign与自适应表单一起使用来收集电子签名。
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1322'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 1%
 1. 选择表单资产并点按 **[!UICONTROL 下载]** 图标。
 1. 在下载资产中，选择以下选项之一，然后点按 **[!UICONTROL 下载]**.
 
-   * **下载为CRX包：** 使用选项从下载并移动所有选定的资产和相关依赖项 [!DNL AEM Forms] 实例到另一个实例。 它将所有资源和文件夹下载为crx包。 任何表单资源(包括在AEM(Adaptive Forms和自适应表单片段)、PDF文档和资源（XSD、XFS、图像）中创作的表单)都可从以下位置作为包下载： [!DNL AEM Forms] UI。
+   * **下载为CRX包：** 使用选项从下载和移动所有选定的资源和相关依赖项 [!DNL AEM Forms] 实例到另一个实例。 它将所有资源和文件夹下载为crx包。 任何表单资源，包括在AEM(自适应Forms和自适应表单片段)中创作的表单、PDF文档和资源（XSD、XFS、图像）都可从以下位置作为包下载： [!DNL AEM Forms] UI。
 将资源下载为包的优势在于，它还可以下载选定要下载的资源已使用的资源。 例如，如果您有一个自适应表单，该表单使用表单模板、XSD和图像。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也会下载。
 
    * **将资产下载为二进制文件：** 使用选项可仅下载表单模板(XDP)、PDF forms(PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它将具有二进制文件的表单资源(如XSD、XDP、图像、PDF和XDP)下载为.zip文件。
