@@ -2,10 +2,10 @@
 title: 参与工作流
 description: 工作流通常包括需要人员对页面或资源执行活动的步骤。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 87%
+ht-degree: 79%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 87%
 在此操作中，您可以指示：
 
 * **下一步**：要执行的下一个步骤；您可以从提供的列表中进行选择
-* **评论**：如果需要
+* **注释**：如有必要
 
 您可以通过以下任一方式完成参与者步骤：
 
@@ -75,7 +75,7 @@ ht-degree: 87%
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（选择缩略图）。
 1. 从工具栏中选择&#x200B;**完成**。
-1. 此 **完成工作项** 对话框打开。 从下拉选择器中选择&#x200B;**下一步**，并根据需要添加&#x200B;**评论**。
+1. 此 **完成工作项** 对话框打开。 选择 **下一步** 从下拉选择器中添加 **注释** 如有必要。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
 
 #### 完成参与者步骤 - 页面编辑器 {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ ht-degree: 87%
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
 1. 从顶部的状态栏中选择&#x200B;**完成**。
-1. 此 **完成工作项** 对话框打开。 从下拉选择器中选择&#x200B;**下一步**，并根据需要添加&#x200B;**评论**。
+1. 此 **完成工作项** 对话框打开。 选择 **下一步** 从下拉选择器中添加 **注释** 如有必要。
 1. 单击&#x200B;**确定**&#x200B;以完成该步骤（或者单击&#x200B;**取消**&#x200B;以中止该操作）。
 
 #### 完成参与者步骤 - 时间线 {#completing-a-participant-step-timeline}
@@ -118,7 +118,7 @@ ht-degree: 87%
 在此操作中，您可以指示：
 
 * **用户**：您要向其进行委派的用户；您可以从提供的列表中进行选择
-* **评论**：如果需要
+* **注释**：如有必要
 
 您可以通过以下任一方式委派参与者步骤：
 
@@ -134,7 +134,7 @@ ht-degree: 87%
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（选择缩略图）。
 1. 从工具栏中选择&#x200B;**委派**。
-1. 此时将打开对话框。 从下拉选择器中指定 **用户**（也可以是组），并根据需要添加&#x200B;**评论**。
+1. 此时将打开对话框。 指定 **用户** 从下拉选择器（也可以是组）中添加 **注释** 如有必要。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
 
 #### 委派参与者步骤 - 页面编辑器 {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ ht-degree: 87%
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
 1. 从顶部的状态栏中选择&#x200B;**委派**。
-1. 此时将打开对话框。 从下拉选择器中指定 **用户**（也可以是组），并根据需要添加&#x200B;**评论**。
+1. 此时将打开对话框。 指定 **用户** 从下拉选择器（也可以是组）中添加 **注释** 如有必要。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
 
 #### 委派参与者步骤 - 时间线 {#delegating-a-participant-step-timeline}
@@ -168,7 +168,7 @@ ht-degree: 87%
 在此操作中，您可以指示：
 
 * **上一步**：要返回到的步骤；您可以从提供的列表中进行选择
-* **评论**：如果需要
+* **注释**：如有必要
 
 您可以通过以下任一方式对参与者步骤执行后退：
 
@@ -184,7 +184,7 @@ ht-degree: 87%
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（选择缩略图）。
 1. 选择&#x200B;**回退**，打开对话框。
-1. 指定&#x200B;**上一步**，并根据需要添加&#x200B;**评论**。
+1. 指定 **上一步** 并添加 **注释** 如有必要。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
 
 #### 对参与者步骤执行回退 - 页面编辑器 {#performing-step-back-on-a-participant-step-page-editor}
@@ -193,7 +193,7 @@ ht-degree: 87%
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
 1. 从顶部的状态栏中选择&#x200B;**回退**。
-1. 指定&#x200B;**上一步**，并根据需要添加&#x200B;**评论**。
+1. 指定 **上一步** 并添加 **注释** 如有必要。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
 
 #### 对参与者步骤执行回退 - 时间线 {#performing-step-back-on-a-participant-step-timeline}
@@ -245,7 +245,7 @@ ht-degree: 87%
 1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（选择缩略图）。
 1. 选择&#x200B;**打开**，打开信息选项卡。
-1. 如果需要，选择相应的操作，提供任何详细信息，然后单击&#x200B;**确定**&#x200B;进行确认（或单击&#x200B;**取消**）。
+1. 如有必要，请选择相应的操作，提供任何详细信息并通过进行确认 **确定** (或 **取消**)。
 1. 单击&#x200B;**保存**&#x200B;或&#x200B;**取消**&#x200B;以退出。
 
 #### 打开工作流详细信息 - 页面编辑器 {#opening-workflow-details-page-editor}
@@ -254,7 +254,7 @@ ht-degree: 87%
 
 1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
 1. 从状态栏中选择&#x200B;**查看详细信息**&#x200B;以打开信息选项卡。
-1. 如果需要，选择相应的操作，提供任何详细信息，然后单击&#x200B;**确定**&#x200B;进行确认（或单击&#x200B;**取消**）。
+1. 如有必要，请选择相应的操作，提供任何详细信息并通过进行确认 **确定** (或 **取消**)。
 1. 单击&#x200B;**保存**&#x200B;或&#x200B;**取消**&#x200B;以退出。
 
 ### 查看工作流有效负荷（多个资源） {#viewing-the-workflow-payload-multiple-resources}

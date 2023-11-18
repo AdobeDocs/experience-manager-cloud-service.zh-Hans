@@ -2,9 +2,9 @@
 title: 使用定位模式创作目标内容
 description: 通过定位模式和 Target 组件，可以创建体验的内容
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '5306'
+source-wordcount: '5304'
 ht-degree: 88%
 
 ---
@@ -585,7 +585,7 @@ ht-degree: 88%
 
    页面会相应地发生更改，以显示当前上下文的目标内容。
 
-1. 要对显示的选件进行更改，请切换到定位模式。选择模拟活动后，编辑在预览模式下配置的上下文的选件。
+1. 要更改显示的选件，请切换到定位模式。 选择模拟活动后，编辑在预览模式下配置的上下文的选件。
 
 ## 配置 Target 组件选项 {#configuring-target-component-options}
 

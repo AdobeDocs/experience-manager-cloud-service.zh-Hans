@@ -5,9 +5,9 @@ uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1148'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 3%
 打开任务时，可以查看任务详细信息并执行可用操作。 任务可用的操作在相关Forms Workflow的“分配”任务步骤中定义。
 
 1. 点按以选择任务的缩略图。 用于打开或委派选定任务的选项将显示在顶部。
-1. 点按 **打开** 查看任务详细信息并采取操作。 此时将打开详细的任务视图。 在此视图中，您可以查看任务详细信息并对任务执行操作。
+1. 选择 **打开** 查看任务详细信息和可用操作。 此时将打开详细的任务视图。 在此视图中，您可以查看任务详细信息并对任务执行操作。
 
    >[!NOTE]
    >

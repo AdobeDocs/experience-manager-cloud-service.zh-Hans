@@ -2,7 +2,7 @@
 title: 使用 ContextHub 配置分段
 description: 了解如何使用 ContextHub 配置分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 89%
@@ -92,7 +92,7 @@ AEM 可让您轻松个性化用户体验。它还让您验证区段定义的结�
 
    ![添加区段](../assets/contexthub-create-segment.png)
 
-1. 在 **新ContextHub区段**，输入区段的标题和boost值（如果需要），然后选择 **创建**.
+1. 在 **新ContextHub区段**，输入区段的标题和boost值（如有必要），然后选择 **创建**.
 
    ![新区段](../assets/contexthub-new-segment.png)
 

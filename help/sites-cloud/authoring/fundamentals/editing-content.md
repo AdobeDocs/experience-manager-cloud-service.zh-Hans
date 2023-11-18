@@ -2,7 +2,7 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2973'
 ht-degree: 95%
@@ -173,7 +173,7 @@ ht-degree: 95%
 
    此时会在所需位置创建与该资源类型对应的组件 - 组件包含选定的资源。
 
-1. 根据需要[编辑](#edit-content)组件。
+1. [编辑](#edit-content) 组件（如有必要）。
 
 >[!NOTE]
 >

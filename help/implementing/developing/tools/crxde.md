@@ -2,7 +2,7 @@
 title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入门的一部分，您可以在浏览器中访问和修改本地开发环境中的存储库。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 1%
@@ -226,7 +226,7 @@ CRXDE Lite的用户界面有很多部分，具有很多功能。
 1. 选择所需的节点。
 1. 选择 **工具** 则 **导出节点类型**.
 1. 定义以CND表示法显示在浏览器的新选项卡中。
-1. 如果需要，请保存信息。
+1. 保存信息（如有必要）。
 
 要导入节点类型定义，请执行以下操作：
 

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明。'
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 79%
+source-wordcount: '637'
+ht-degree: 80%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 79%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 新 [用户界面](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 内容管理员和内容作者现在可以有效地管理（执行发布、取消发布、复制、移动等操作）、搜索/筛选和为Headless用例创建内容片段。
+* 新 [用户界面](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 内容管理员和内容作者现在可以有效地管理（例如发布、取消发布、复制、移动等）、搜索/筛选和为Headless用例创建内容片段。
 
   ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
 

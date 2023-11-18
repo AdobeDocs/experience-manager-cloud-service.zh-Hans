@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2022'
 ht-degree: 0%
 
 ---
@@ -138,7 +138,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 视力障碍用户依靠文本和背景之间的高对比度来阅读数字内容。 如果没有足够的对比度，对于某些用户来说，表单可能会变得很难（如果不是不可能的话）阅读。
 
-建议使用默认字体和背景颜色 — 白色背景上的黑色内容。 如果更改默认颜色，请在浅色背景颜色上选择深色前景色，反之亦然。
+建议使用默认字体和背景颜色 — 白色背景上的黑色内容。 如果更改默认颜色，请在浅色背景颜色上选择深色前景色，或反之。
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 

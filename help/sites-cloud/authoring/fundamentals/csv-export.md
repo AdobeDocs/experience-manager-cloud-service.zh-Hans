@@ -2,10 +2,10 @@
 title: 导出到 CSV
 description: 将与页面相关的信息导出到本地系统上的 CSV 文件
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 
 要创建 CSV 导出，请执行以下操作：
 
-1. 必要时，打开&#x200B;**Sites**&#x200B;控制台并导航到所需的位置。
+1. 打开 **站点** 导航到所需的位置（如有必要）。
    * 在浏览&#x200B;**Sites**&#x200B;控制台（在“列表”视图中）时，可以使用创建 **CSV 报表**&#x200B;选项
    * 它是&#x200B;**“创建”**&#x200B;下拉菜单的一个选项：
 

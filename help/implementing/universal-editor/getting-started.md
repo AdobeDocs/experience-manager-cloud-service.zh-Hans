@@ -2,7 +2,7 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 78%
@@ -169,7 +169,7 @@ itemid="urn:<referenceName>:<resource>"
 
 ### 配置设置 {#configuration-settings}
 
-您可以使用 `config` 前缀，用于根据需要设置服务和扩展端点。
+您可以使用 `config` 前缀来设置服务和扩展端点（如有必要）。
 
 如果您不希望使用由Adobe托管、但却是您自己的托管版本的通用编辑器服务，则可以在Meta标记中设置此项。 要覆盖通用编辑器提供的默认服务端点，请设置您自己的服务端点：
 

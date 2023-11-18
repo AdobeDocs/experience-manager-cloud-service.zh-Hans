@@ -4,10 +4,10 @@ description: 了解如何为内容片段创作内容，然后根据用途创建�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2251'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -486,4 +486,4 @@ ht-degree: 97%
 
 * 有关[原始内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md)的完整信息，请参阅资源文档 - 从&#x200B;**资源**&#x200B;控制台和&#x200B;**内容片段**&#x200B;控制台均可找到此编辑器。
 
-* 如果需要，您的项目团队可自定义该编辑器。有关进一步详细信息，请参阅[自定义内容片段控制台和编辑器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。
+* 如有必要，您的项目团队可以自定义编辑器。 有关进一步详细信息，请参阅[自定义内容片段控制台和编辑器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。

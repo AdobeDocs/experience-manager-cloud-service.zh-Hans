@@ -2,10 +2,10 @@
 title: 内容片段模型（资产 — 内容片段）
 description: 了解内容片段模型如何作为AEM中Headless内容的基础，以及如何使用结构化内容创建内容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2931'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
    >
    >如果[未启用内容片段模型](/help/assets/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**“创建”**&#x200B;选项将不可用。
 
-1. 指定&#x200B;**模型标题**。您还可以定义各种属性；例如，添加 **标记**， a **描述**，并选择 **启用模型** 到 [启用模型](#enabling-disabling-a-content-fragment-model) 如果需要。
+1. 指定&#x200B;**模型标题**。您还可以定义各种属性；例如，添加 **标记**， a **描述**，并选择 **启用模型** 到 [启用模型](#enabling-disabling-a-content-fragment-model) 如有必要。
 
    >[!NOTE]
    >
@@ -152,7 +152,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 用于在片段中实现/呈现字段的各种选项。通常，此属性允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。
 
 * **字段标签**
-输入**字段标签**&#x200B;会自动生成&#x200B;**属性名称**，之后可根据需要手动更新。
+输入 **字段标签** 将自动生成 **属性名称**，如有必要，可以手动更新。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有附加的验证字段。请参阅[验证](#validation)，了解更多详细信息。

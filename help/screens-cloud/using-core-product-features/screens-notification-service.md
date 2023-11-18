@@ -2,15 +2,15 @@
 title: Screensas a Cloud Service中的Screens通知服务
 description: 本页介绍如何在Screensas a Cloud Service中配置“通知服务”。
 index: true
-source-git-commit: 81ce7954479366e40b47325577e1450f3d7a4c29
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 4%
+source-wordcount: '125'
+ht-degree: 6%
 
 ---
 
 
-# Screens通知服务 {#notification-service}
+# Screens 通知服务 {#notification-service}
 
 ## 简介 {#introduction}
 
@@ -24,6 +24,6 @@ ht-degree: 4%
 
 * 客户名称
 * IMS OrgID
-* 计划频率：指定此监视器应发送电子邮件的时间或频率（以小时为单位，例如1）。
+* 计划频率：以小时为单位指定此监视器应发送电子邮件的时间或频率（例如，1）。
 * Ping超时：以分钟为单位指定间隔，在此间隔后设备应被视为不可访问。
 * 电子邮件ID ：将向其发送报告的电子邮件ID

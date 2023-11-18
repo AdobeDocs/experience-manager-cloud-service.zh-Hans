@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 3%
@@ -634,7 +634,7 @@ Experience Manager返回的嵌入代码已具有现成的事件处理程序。 �
     //See your quickviewer plugin for the quickview call
     },
 "initComplete":function() {
-    //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---
+    //--- Attach quickview pop-up to viewer container so pop-up works in fullscreen mode ---
     var popup = document.getElementById('quickview_div'); // get custom quickview container
     popup.parentNode.removeChild(popup); // remove it from current DOM
     var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -756,7 +756,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
     loadQuickView(quickViewUrl);
     },
    "initComplete":function() {
-    //--- Attach quickview popup to viewer container so popup will work in fullscreen mode ---
+    //--- Attach quickview pop-up to viewer container so pop-up works in fullscreen mode ---
     var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
     var inner_container = document.getElementById(sdkContainerId);
     inner_container.appendChild(document.getElementById("quickview-modal"));

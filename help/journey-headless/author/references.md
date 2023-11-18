@@ -2,10 +2,10 @@
 title: 了解如何在内容片段中使用引用
 description: 了解如何在内容片段中对内容、其他片段和其他资源（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 95%
+source-wordcount: '705'
+ht-degree: 88%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 95%
    * 内容引用
    * 资源/媒体引用
    * 片段引用
-   * 文本块中的临时引用
+   * 文本块中的即兴引用
 
 ## 什么是引用？ {#what-are-references}
 
 引用只是一种用于连接资源的机制，无论它是其他内容、资源（如图像）还是其他片段。虽然非常相似，但仍有些许不同。
 
-一些引用具有专用数据类型（例如，内容引用和片段引用），而其他引用只是作为引用内容添加到文本块中（资源引用和临时引用）。
+某些引用具有专用数据类型（例如，内容引用和片段引用），而其他引用只是作为文本块中的引用添加的（资产引用和即兴引用）。
 
 ![内容片段 – 引用](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
@@ -96,7 +96,7 @@ ht-degree: 95%
 
 ## 临时引用 {#adhoc-references}
 
-临时引用可作为文本块中的简单链接添加：
+即兴引用可以作为简单链接添加到文本块中：
 
 ![内容片段 – 临时引用](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 

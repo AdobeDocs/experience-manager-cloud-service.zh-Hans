@@ -4,10 +4,10 @@ description: 了解如何使用 Touch UI 和 Adob​​e Launch 将 Adob​​e 
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 在这两种情况下：
 
 * 默认情况下，客户端代码（如果首先添加）也会自动复制到“租户 ID”字段中。
-* 如果需要，您可以更改默认租户 ID 集。
+* 如有必要，您可以更改默认租户ID集。
 * 对 Target 进行的后端调用会基于租户 ID，而对 Target 进行的客户端调用会基于客户端代码。
 
 如前所述，对于 AEM as a Cloud Service，第一种情况最常见。无论哪种方式，请确保&#x200B;**两个**&#x200B;字段都包含正确的信息，具体取决于您的要求。

@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 98%
+source-wordcount: '1687'
+ht-degree: 97%
 
 ---
 
@@ -151,7 +151,8 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 ### CDN 和 WAF 规则早期采用者计划 {#waf-early-adopter}
 
 基于以下项筛选 CDN 上的流量：
-* 请求头和属性（例如，IP 地址）
+
+* 请求标头和属性（例如IP地址）
 * 已知与恶意流量相关的流量模式
 
 想试用该功能并分享反馈吗？使用您的官方电子邮件 ID 将电子邮件发送到 **aemcs-waf-adopter@adobe.com**，了解有关早期采用者计划的更多信息。空间是有限的。

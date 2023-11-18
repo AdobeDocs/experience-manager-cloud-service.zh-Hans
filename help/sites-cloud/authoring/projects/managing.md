@@ -2,10 +2,10 @@
 title: 管理项目
 description: 通过“项目”，您可以将资源分组到一个实体中，以便在“项目”控制台中对其进行访问和管理，从而组织项目
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 84%
+source-wordcount: '875'
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
 
    ![创建项目](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. 定义&#x200B;**标题**&#x200B;和&#x200B;**描述**，然后根据需要添加&#x200B;**缩略图**&#x200B;图像。您还可以添加或删除用户以及他们所属的组。此外，也可单击&#x200B;**高级**&#x200B;以添加 URL 中使用的名称。
+1. 定义 **标题** 和 **描述** 并添加 **缩略图** 图像（如有必要）。 您还可以添加或删除用户以及他们所属的组。此外，也可单击&#x200B;**高级**&#x200B;以添加 URL 中使用的名称。
 
    ![添加项目详细信息](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -138,7 +138,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
    如果该拼贴不在您的项目中，您可能需要添加它。请参阅[添加拼贴](#adding-items-to-a-tile)。
 
 1. 选择&#x200B;**编辑**。
-1. 将选择器从&#x200B;**活动**&#x200B;更改为&#x200B;**不活动**（反之亦然）。
+1. 更改选择器 **活动** 到 **不活动** （或者相反）。
 
    ![激活项目](/help/sites-cloud/authoring/assets/projects-add-team.png)
 

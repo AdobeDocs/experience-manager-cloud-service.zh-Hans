@@ -2,10 +2,10 @@
 title: 搜索
 description: 使用完备的搜索功能更快速地查找您的内容
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 96%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
    ![搜索位置](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. 如果需要，您可以删除位置过滤器（选中要删除的过滤器上的 **X**），以在所有控制台/资源类型之间进行筛选。
+1. 如有必要，您可以删除位置过滤器(选择 **X** ，以在所有控制台/资源类型之间进行搜索。
 1. 结果会显示，并按控制台和相关的资源类型进行分组。
 
    您可以选择一种特定的资源（用于未来操作），或通过选择所需的资源类型向下展开；例如&#x200B;**查看全部站点**：

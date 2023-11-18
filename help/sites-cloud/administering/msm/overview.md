@@ -4,10 +4,10 @@ description: 了解如何通过 AEM 强大的 Live Copy 和多站点管理器功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 97%
+source-wordcount: '2698'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
    * 创建内容一次，然后
    * 在同一站点的其他区域内或其他站点上重用此内容（通过 [Live Copy](#live-copies)）。
 * 之后，MSM 将维护您的源内容与其 Live Copy 之间的实时关系，以便：
-   * 当您对源内容进行更改时，源和 Live Copy 将同步。
+   * 当您更改源内容时，源和活动副本将同步。
    * 可以通过断开各个子页面和/或组件的实时关系来仅对 Live Copy 的内容进行调整。
 
 此页面概述了如何通过 MSM 重用内容。以下页面详细介绍了相关问题。
@@ -189,7 +189,7 @@ MSM Live Copy 是特定站点内容的副本，它保留了与原始源的实时
 
 * `/content/wknd/language-masters/en` 下的内容为源。
 * `/content/wknd/language-masters/en` 下的内容复制到 `/content/wknd/us/en/` 和 `/content/wknd/ca/en` 节点下。这些是 Live Copy。
-* 作者对 `/content/wknd/language-masters/en` 下的页面进行了更改。
+* 作者在下方更改页面 `/content/wknd/language-masters/en`.
 * 触发后，MSM 会将这些更改同步到 Live Copy。
 
 ### Live Copy – 构图 {#live-copies-composition}
@@ -320,10 +320,10 @@ Live Copy 中的每个页面和组件均通过实时关系与其源页面和组�
 1. 决定要使用的转出配置。
 
    1. MSM [安装多个转出配置](live-copy-sync-config.md#installed-rollout-configurations) 可满足多个用例的要求。
-   1. （可选）如果需要，您可以[创建转出配置](live-copy-sync-config.md#creating-a-rollout-configuration)。
+   1. 或者，您可以 [创建转出配置](live-copy-sync-config.md#creating-a-rollout-configuration) 如有必要。
 
 1. 决定需要[指定要使用的转出配置](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)并按需配置的情况。
-1. 如果需要，可以[创建 Blueprint 配置](creating-live-copies.md#creating-a-blueprint-configuration)来标识 Live Copy 的源内容。
+1. 如有必要， [创建Blueprint配置](creating-live-copies.md#creating-a-blueprint-configuration) 标识Live Copy的源内容。
 1. [创建 Live Copy。](creating-live-copies.md#creating-a-live-copy)
 1. 根据需要更改源内容。您应采用您组织已制定的常规内容审查和审批流程。
 1. [转出](creating-live-copies.md#rolling-out-a-blueprint) Blueprint，或[将 Live Copy 与更改同步](creating-live-copies.md#synchronizing-a-live-copy)。

@@ -2,7 +2,7 @@
 title: 组件参考指南
 description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3642'
 ht-degree: 2%
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 建议将负责标记和呈现的代码与控制用于选择组件内容的逻辑的代码分开。
 
-这一理念得到以下支持 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)，这是一种模板化语言，专门为了确保使用真正的编程语言来定义底层业务逻辑。 此机制会突出显示为给定视图调用的代码，如果需要，还允许为同一组件的不同视图使用特定逻辑。
+这一理念得到以下支持 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)，这是一种模板化语言，专门为了确保使用真正的编程语言来定义底层业务逻辑。 此机制会突出显示为给定视图调用的代码，如有必要，还允许为同一组件的不同视图使用特定逻辑。
 
 此（可选）逻辑可以通过不同的方式实现，并且可通过特定命令从HTL调用：
 

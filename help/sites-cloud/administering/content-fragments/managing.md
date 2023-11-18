@@ -4,10 +4,10 @@ description: 了解如何从控制台和编辑器管理 AEM 内容片段，这�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2531'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->如果需要，您的项目团队可以自定义控制台和编辑器。有关进一步详细信息，请参阅[自定义内容片段控制台和编辑器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。
+>如有必要，您的项目团队可以自定义控制台和编辑器。 有关进一步详细信息，请参阅[自定义内容片段控制台和编辑器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)。
 
 在定义[内容片段模型](#creating-a-content-model)后，可以使用它们：
 
@@ -225,10 +225,10 @@ ht-degree: 94%
 
 1. 此 **新内容片段** 对话框打开，您可以从此处指定：
 
-   * **位置** – 这将使用当前位置自动完成，但您可以根据需要选择其他位置
+   * **位置**  — 这将使用当前位置自动完成，但您可以根据需要选择其他位置
    * **内容片段模型** – 从下拉列表中选择要用作片段基础的模型
    * **标题**
-   * **名称** – 此操作将根据&#x200B;**标题**，但您可以根据需要进行编辑
+   * **名称**  — 此操作将根据 **标题**，但您可以根据需要对其进行编辑
    * **描述**
 
    ![“新建内容片段”对话框](assets/cf-managing-new-cf-dialog.png)

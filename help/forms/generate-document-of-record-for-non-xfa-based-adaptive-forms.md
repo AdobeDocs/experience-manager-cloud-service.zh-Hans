@@ -2,9 +2,9 @@
 title: 如何为AEM Forms生成记录文档(DoR)？
 description: 了解如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4142'
+source-wordcount: '4140'
 ht-degree: 4%
 
 ---

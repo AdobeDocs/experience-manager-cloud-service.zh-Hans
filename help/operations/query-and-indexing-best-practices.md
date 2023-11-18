@@ -3,7 +3,7 @@ title: 查询和索引最佳实践
 description: 了解如何根据 Adobe 的最佳实践指南优化索引和查询。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3128'
 ht-degree: 44%
@@ -140,7 +140,7 @@ Explain查询工具允许开发人员了解查询执行计划(请参阅 [读取�
 
 * 使用选择适当的查询语言 `Language` 下拉列表。
 * 将查询语句输入到 `Query` 字段。
-* 如果需要，可使用提供的复选框选择查询的执行方式。
+* 如有必要，请使用提供的复选框选择查询的执行方式。
    * 默认情况下，无需运行JCR查询来标识查询执行计划（QueryBuilder查询并非如此）。
    * 提供了三个用于执行查询的选项 — 
       * `Include Execution Time`  — 执行查询，但不尝试读取任何结果。

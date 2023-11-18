@@ -4,10 +4,10 @@ description: 了解如何创建和同步 Live Copy 以在站点中重用您的�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -417,7 +417,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 ![“恢复”按钮](../assets/resume.png)
 
-选中后，该对话框将会出现。如果需要，您可以选择同步，然后确认操作。
+选中后，该对话框将会出现。您可以根据需要选择同步，然后确认操作。
 
 #### 从 Live Copy 概述恢复 Live Copy 页面 {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -467,7 +467,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 ### 取消组件的继承 {#cancelling-inheritance-for-a-component}
 
-取消组件的 Live Copy 继承，以便该组件不再与源组件同步。如果需要，您可以稍后启用继承。
+取消组件的 Live Copy 继承，以便该组件不再与源组件同步。如有必要，您可以稍后启用继承。
 
 >[!NOTE]
 >

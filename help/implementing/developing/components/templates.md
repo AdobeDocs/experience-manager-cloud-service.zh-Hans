@@ -2,9 +2,9 @@
 title: 页面模板
 description: 创建用作新页面基础的页面时，将使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3279'
+source-wordcount: '3278'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >现成提供模板类型选择。 您还可以 [创建您自己的特定于站点的模板类型](#creating-template-types) 如果需要。
+   >现成提供模板类型选择。 您还可以 [创建您自己的特定于站点的模板类型](#creating-template-types) 如有必要。
 
 1. 配置新模板的结构、内容策略、初始内容和布局。
 
@@ -449,7 +449,7 @@ GITHUB上的代码
 * 与结构合并( `/structure`)。
 * 如果在创建后更改了初始内容，则不会更新任何现有页面。
 * 此 `root` 节点包含组件列表，用于定义生成的页面中可用的组件。
-* 如果在结构模式下将内容添加到组件且随后解锁该组件（反之亦然），则此内容将用作初始内容。
+* 如果在结构模式下将内容添加到组件且随后解锁该组件（或反之），则此内容将用作初始内容。
 
 ### 布局 {#layout}
 

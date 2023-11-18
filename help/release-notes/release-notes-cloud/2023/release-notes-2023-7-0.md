@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版的发行说明。'
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 75a26cf6f486ce951f1f81b5125026fac9458ab4
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 99%
 
 ---
 
@@ -113,7 +113,7 @@ Assets Essentials 现在默认情况下根据相关性为搜索结果排序。�
 ### CDN 和 WAF 规则早期采用者计划 {#waf-early-adopter}
 
 基于以下项筛选 CDN 上的流量：
-* 请求头和属性（例如，IP 地址）
+* 请求标头和属性（例如IP地址）
 * 已知与恶意流量相关的流量模式
 
 想试用该功能并分享反馈吗？使用您的官方电子邮件 ID 将电子邮件发送到 **aemcs-waf-adopter@adobe.com**，了解有关早期采用者计划的更多信息。空间是有限的。

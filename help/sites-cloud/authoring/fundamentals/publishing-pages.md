@@ -2,10 +2,10 @@
 title: 发布页面
 description: 了解如何使用 AEM 中的各种机制发布和取消发布页面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 94%
+source-wordcount: '1805'
+ht-degree: 93%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 94%
 
    * 如果不包含要发布的引用，则会直接发布页面。
    * 如果页面包含需要发布的引用，则会在&#x200B;**发布**&#x200B;向导中列出该内容，从该向导中可以：
-      * 指定要与页面一起发布的资源/标记/等，然后使用&#x200B;**发布**&#x200B;完成该过程。
+      * 指定要与页面一起发布的资产或标记等，然后使用 **Publish** 以完成该过程。
       * 使用&#x200B;**取消**&#x200B;中止操作。
 
    ![使用页面发布引用](/help/sites-cloud/authoring/assets/publishing-references.png)

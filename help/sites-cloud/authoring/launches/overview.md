@@ -2,10 +2,10 @@
 title: 启动项
 description: 使用启动项，您可以有效地开发内容的将来版本。它们允许您进行更改以准备将来发布，同时保留当前页面
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 95%
+source-wordcount: '898'
+ht-degree: 94%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 95%
 
 ## “启动项”控制台 {#the-launches-console}
 
-“启动项”控制台提供了启动项的概览，并让您对列出的启动项执行操作。可以通过以下方式访问该控制台：
+启动项控制台提供了启动项的概述，并允许您对列出的启动项执行操作。 可以通过以下方式访问该控制台：
 
 * **工具**&#x200B;控制台：**工具**、**站点**、**启动项**。
 

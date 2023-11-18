@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4921'
-ht-degree: 96%
+source-wordcount: '4923'
+ht-degree: 95%
 
 ---
 
@@ -503,7 +503,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 | 选项 | 类型 | 描述 |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | 忽略字符串的大小写，例如 `time` 的值将匹配 `TIME`、`time`、`tImE`、... |
+| `_ignoreCase` | `String` | 忽略字符串的大小写，例如 `time` 匹配 `TIME`， `time`， `tImE`， ... |
 | `_sensitiveness` | `Float` | 允许有一定的余地，将 `float` 值视为相同（以解决由于 `float` 值的内部表示引起的技术限制；应该避免，因为此选项可能有负面影响对性能的影响 |
 
 表达式可以在逻辑运算符 (`_logOp`) 的帮助下组合成一个集合：
@@ -515,7 +515,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 过滤器定义（作为 `filter` 参数传递给查询）包含：
 
-* 每个字段的子定义（可以通过其名称访问该字段，例如，数据（字段）类型中的 `lastName` 字段的过滤器中有一个 `lastName` 字段）
+* 每个字段的子定义(可以通过其名称访问该字段，例如，有一个 `lastName` 的过滤器中的字段 `lastName` 字段类型)
 * 每个子定义包含 `_expressions` 数组，提供表达式集，以及 `_logOp` 字段，该字段定义表达式应与之组合的逻辑运算符
 * 每个表达式由值（`value` 字段）和运算符（`_operator` 字段）定义，字段的内容应该与之进行比较
 
@@ -913,7 +913,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 使用 GraphQL for AEM 的查询基本处理遵循标准 GraphQL 规范。对于用于 AEM 的 GraphQL 查询，有几个扩展：
 
 * 如果您需要单个结果：
-   * 使用模型名称，例如 city
+   * 使用模型名称；例如，city
 
 * 如果您需要结果列表：
    * 将 `List` 添加到模型名称；例如，`cityList`

@@ -2,10 +2,10 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2158'
-ht-degree: 94%
+source-wordcount: '2161'
+ht-degree: 90%
 
 ---
 
@@ -189,7 +189,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
   基本页面的组件将具有常用选项。
 
-  如果在树中单击的组件是可编辑的，则会在其名称右侧显示一个扳手图标。单击此图标将直接启动组件的编辑对话框。
+  如果在树中单击的组件是可编辑的，则会在其名称右侧显示一个扳手图标。单击此图标将启动组件的编辑对话框。
 
   ![“内容树”编辑按钮](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
@@ -288,7 +288,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 >* 根据页面的特性，某些模式可能不可用。
 >* 某些模式需要相应的许可/权限才能访问。
 >* 由于空间限制，“开发人员”模式在移动设备上不可用。
->* 使用[键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) 可以在&#x200B;**预览**&#x200B;模式和当前选定的模式（例如，**编辑**、**布局**&#x200B;等）之间切换。
+>* 有一个 [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`)以在 **预览** 和当前选择的模式(例如， **编辑**， **布局**，等等)。
 >
 
 ## 路径选择 {#path-selection}
@@ -315,10 +315,10 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![路径浏览器](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* 选择资源后，对话框右上角的&#x200B;**选择**&#x200B;按钮将变为活动状态。选择以确认选择或 **取消** 中止。
+* 选择资源后， **选择** 对话框右上角的按钮变为活动状态。 选择以确认选择或 **取消** 中止。
 * 如果上下文允许选择多个资源，则选择某个资源也会激活“选择 **** ”按钮，但也会将选定资源的计数添加到窗口的右上角。单击该 **数字旁边的** X可取消选择全部。
 * 在树中导航时，您的位置会反映在对话框顶部的痕迹导航中。还可使用这些痕迹导航在资源层次结构中快速跳转。
-* 您随时都可以使用对话框顶部的搜索字段。单击搜索字段中的 **X** 可清除搜索。
+* 您可以随时使用对话框顶部的搜索字段。 单击搜索字段中的 **X** 可清除搜索。
 * 要缩小搜索范围，您可以显示过滤器选项并按特定路径筛选结果。
 
   ![过滤器选项](/help/sites-cloud/authoring/assets/filters-option.png)

@@ -2,7 +2,7 @@
 title: 使用隐藏条件
 description: 隐藏条件可用于确定是否呈现组件资源。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 2%
@@ -45,7 +45,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 * 要使其有效，应表示找到属性的范围(例如， `cqDesign.myProperty`)。
 * 值为只读。
-* 功能（如果需要）应限于服务提供的一组给定功能。
+* 功能（如有必要）应限于服务提供的一组给定功能。
 
 ## 示例 {#example}
 

@@ -2,10 +2,10 @@
 title: 创建配置 - Headless 设置
 description: 以创建配置作为第一步，开始在 AEM as a Cloud Service 中使用 Headless。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 94%
 
 1. 选择 **创建**
 
-如果需要，您可以创建多个配置。配置也可以嵌套。
+您可以根据需要创建多个配置。 配置也可以嵌套。
 
 >[!NOTE]
 >

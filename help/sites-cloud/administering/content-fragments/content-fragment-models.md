@@ -4,7 +4,7 @@ description: 了解内容片段模型如何作为 AEM 中内容片段的基础�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 97%
@@ -201,7 +201,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 用于在片段中实现/呈现字段的各种选项。通常，这允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。
 
 * **字段标签**
-输入**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，随后可根据需要手动更新它。
+输入 **字段标签** 自动生成 **属性名称**，如有必要，可以手动更新。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有附加的验证字段。请参阅[验证](#validation)，了解更多详细信息。

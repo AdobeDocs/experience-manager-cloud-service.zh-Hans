@@ -4,10 +4,10 @@ description: 了解如何配置翻译集成框架以与第三方翻译服务集�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1499'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 91%
 
 安装连接器软件包后，即可为连接器创建云配置。一般需要提供凭据，以便向翻译服务进行身份验证。有关为 Microsoft Translator 连接器添加云配置的信息，请参阅[与 Microsoft Translator 集成](connect-ms-translator.md)。
 
-如果需要，可为同一个连接器创建多个云配置。例如，为您在同一供应商的每个帐户或项目都创建一个配置。
+如果需要，可为同一连接器创建多个云配置。 例如，为您在同一供应商的每个帐户或项目都创建一个配置。
 
 配置连接后，即可创建使用它的翻译集成框架配置。
 

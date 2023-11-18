@@ -2,7 +2,7 @@
 title: 将体验片段导出到 Adobe Target
 description: 了解如何将体验片段导出到 Adob​​e Target，以测试和个性化体验。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 96%
@@ -102,7 +102,7 @@ ht-degree: 96%
    * 相应的配置
    * 所需的格式选项
    * Adobe Target 工作区
-   * 如果需要 – 外部化器域
+   * 如有必要 — 外部化器域
 
    >[!CAUTION]
    >

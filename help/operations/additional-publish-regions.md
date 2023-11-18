@@ -2,10 +2,10 @@
 title: 新增发布区域
 description: 了解 AEM as a Cloud Service 如何支持附加的发布区域，以提高可用性并减少延迟。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: c0c669f847c9ef64b1fa22cfc24ac693c3c8ad90
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 84%
+source-wordcount: '640'
+ht-degree: 80%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 84%
 
 在考虑使用附加发布区域时，请考虑以下这些限制。
 
-* 附加发布区域只能添加到 AEM Sites。其他发布区域不会扩展到其他 AEM 解决方案或部署在同一程序中的相关功能（例如 AEM Forms 或 Adob&#x200B;&#x200B;e Learning Manager）。
+* 附加发布区域只能添加到 AEM Sites。其他发布区域不会扩展到在同一项目中部署的其他AEM解决方案或相关功能(例如，AEM Forms或Adobe Learning Manager)。
 * 仅当关联的权限在租户中可用但未使用时，才能添加附加区域。
 * 最多可以向任何单个环境添加三个附加的发布区域。
 * 附加区域仅适用于生产程序。该功能在沙盒程序中不可用。

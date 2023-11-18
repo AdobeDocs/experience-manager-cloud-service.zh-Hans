@@ -3,10 +3,10 @@ title: AEMas a Cloud Service2022.2.0版中迁移工具的发行说明
 description: AEMas a Cloud Service2022.2.0版中迁移工具的发行说明
 feature: Release Information
 exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 58%
+source-wordcount: '241'
+ht-degree: 59%
 
 ---
 
@@ -39,7 +39,7 @@ Best Practices Analyzer v2.1.24 的发布日期是 2022 年 2 月 1 日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容验证 — 用户能够可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。 要使用此功能，请在 `System Console` 源AEM环境的。 请参阅 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hans#getting-started) 以了解更多详细信息。
+* 内容验证 — 用户可以可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。 要使用此功能，请在 `System Console` 源AEM环境的。 请参阅 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hans#getting-started) 以了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-ctt}
 

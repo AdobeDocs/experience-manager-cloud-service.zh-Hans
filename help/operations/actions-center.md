@@ -2,10 +2,10 @@
 title: 操作中心
 description: 利用行动中心方便地对事件和其他重要信息采取行动
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 98%
+ht-degree: 83%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发送“操作中心”电子邮件通知，并主动提出优化建议。示例包括阻塞队列或一组即将过期的凭据；可在[下表](#supported-notification-types)中查看完整的“操作中心”通知类型集，此表也会随着时间不断扩充。
 
-收到“操作中心”电子邮件通知后，可以单击它以打开 AEM as a Cloud Service 的“操作中心”，这将出现一个弹出窗口，其中显示的附加上下文对客户需要执行的操作进行了说明。
+在收到操作中心电子邮件通知后，可以单击该通知以打开AEMas a Cloud Service的操作中心，此时会显示一个弹出窗口，其中显示了说明客户要执行的操作的附加上下文。
 
 除了显示有关刚刚单击的电子邮件通知的信息外，“操作中心”还充当可供查看和管理一组当前和过往通知的中心。<!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -35,7 +35,7 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发�
 
 ## 详细的用户流程 {#detailed-user-flow}
 
-单击电子邮件会将您转至“操作中心”，这将会出现一个弹出窗口，其中显示您单击的通知的上下文，在某些情况下，还会显示指向描述如何采取纠正措施的其他信息的链接。您也可以直接访问“操作中心”（网址为 [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)），并且可在其中选择相关的程序和环境。
+单击电子邮件即可进入“操作中心”，此时会出现一个弹出窗口，其中显示您单击的通知的上下文，在某些情况下，还会显示描述如何采取更正操作的其他信息的链接。 您也可以直接访问“操作中心”（网址为 [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/)），并且可在其中选择相关的程序和环境。
 
 ![问题详细信息](/help/operations/assets/incident-details.png)
 
@@ -45,7 +45,7 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发�
 
 ![通知列表](/help/operations/assets/notification-list.png)
 
-在大多数情况下，弹出窗口应会提供解决问题所需的所有必要上下文。不过，如果您要向 Adobe 支持部门提出问题，可以单击弹出窗口中的&#x200B;**联系支持人员**&#x200B;链接。这将弹出一个表单，您可以在其中描述并提交问题，以创建支持工单，它还将包含对特定通知的引用，以便 Adobe 支持工程师能够了解相关情况。
+在大多数情况下，弹出窗口应该提供解决问题所需的所有上下文。 但是，如果Adobe支持存在问题，您可以单击 **联系支持人员** 弹出窗口中的链接。 这将弹出一个表单，您可以在其中描述并提交问题，以创建支持工单，它还将包含对特定通知的引用，以便 Adobe 支持工程师能够了解相关情况。
 
 ![联系支持人员 1](/help/operations/assets/contact-support1.png)
 

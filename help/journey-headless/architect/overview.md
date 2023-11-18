@@ -2,10 +2,10 @@
 title: AEM Headless 内容架构师历程
 description: 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 91%
+source-wordcount: '793'
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 
 * 了解 Headless 内容交付的含义和好处。
 * 了解如何针对 AEM 的 Headless 功能对您的内容建模。
-* 有能力迈出针对您的第一个 AEM Headless 项目对您的内容建模的第一步。
+* 执行首要步骤，为第一个AEM Headless项目建模内容。
 
 ## AEM 文档历程 {#documentation-journeys}
 

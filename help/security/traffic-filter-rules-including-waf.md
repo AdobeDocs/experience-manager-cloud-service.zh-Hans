@@ -2,10 +2,10 @@
 title: 流量过滤规则，包括 WAF 规则
 description: 配置流量过滤规则，包括 Web 应用程序防火墙 (WAF) 规则
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '3435'
-ht-degree: 97%
+source-wordcount: '3437'
+ht-degree: 95%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 97%
 `kind` 参数应设置为 `CDN`，版本应设置为架构版本，当前为 `1`。请参阅下面的示例。
 
 
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (e.g., "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
+<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. 如果 WAF 规则已获得许可，您应在 Cloud Manager 中为新的和现有的程序场景启用该功能，如下所述。
 
@@ -119,7 +119,7 @@ ht-degree: 97%
 
 **注释**
 
-* 您可以使用 `yq` 在本地验证配置文件（例如 `yq cdn.yaml`）的 YAML 格式。
+* 您可以使用 `yq` 在本地验证配置文件的YAML格式(例如， `yq cdn.yaml`)。
 
 ## 流量过滤规则语法 {#rules-syntax}
 
@@ -489,7 +489,7 @@ AEM as a Cloud Service 提供对 CDN 日志的访问权限，这对于包括缓�
 
 * 任何匹配规则的客户声明的规则名称都将在 `match` 属性中列出。
 * `action` 属性确定规则是否起到了阻止、允许或记录作用。
-* 如果 WAF 已获得许可并启用，`waf` 属性将会列出检测到的所有 WAF 标志（例如 SQLI），无论 WAF 标志是否在任何规则中列出。这是为了深入了解需要宣布的潜在新规则。
+* 如果WAF已许可并启用，则 `waf` attribute将列出检测到的任何WAF标志（例如SQLI），而不管这些WAF标志是否列在任何规则中。 这是为了深入了解需要宣布的潜在新规则。
 * 如果没有客户声明的规则匹配并且没有 waf 规则匹配，则 `rules` 属性将为空。
 
 如前所述，WAF规则匹配项仅显示在CDN缺失和传递的CDN日志中，而不显示在点击中。

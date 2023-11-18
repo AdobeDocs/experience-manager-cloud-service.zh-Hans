@@ -2,9 +2,9 @@
 title: 配置搜索表单
 description: 为Adobe Experience Manager as a Cloud Service配置搜索Forms 。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2033'
 ht-degree: 16%
 
 ---
@@ -480,7 +480,7 @@ Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](
 >常见的搜索谓词定义于：
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->此信息仅供参考，您不得对 `/libs`.
+>此信息仅供参考，不得更改 `/libs`.
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -527,7 +527,7 @@ Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](
 
 * **选项路径**
 
-  用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择 **+** 图标用于将所选内容添加到有效选项列表中(然后 **-** 图标以删除（如果需要）。
+  用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择 **+** 图标用于将所选内容添加到有效选项列表中(然后 **-** 图标以删除（如有必要）。
 
   这些选项是由用户创建的内容节点，具有以下结构：
 

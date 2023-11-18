@@ -2,7 +2,7 @@
 title: 在AEMas a Cloud Service上使用客户端库
 description: AEM提供了客户端库文件夹，允许您在存储库中存储客户端代码(clientlibs)，将其组织为不同类别，并定义何时以及如何向客户端提供每种类别的代码
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Clientlibs是用于从AEM提供CSS和JavaScript的内置解决方案。
 
 ## 什么是客户端库 {#what-are-clientlibs}
 
-站点需要在客户端处理JavaScript和CSS以及静态资源，例如图标和Web字体。 clientlib是一种引用（如果需要，按类别）并为此类资源提供服务的AEM机制。
+站点需要在客户端处理JavaScript和CSS以及静态资源，例如图标和Web字体。 clientlib是一种用于引用（如有必要，按类别）并为此类资源提供服务的AEM机制。
 
 AEM将站点的CSS和JavaScript收集到一个位于中心位置的文件中，以确保HTML输出中只包含任何资源的一个副本。 这样可以最大限度地提高交付效率，并通过代理在存储库中集中维护此类资源，从而确保访问安全。
 

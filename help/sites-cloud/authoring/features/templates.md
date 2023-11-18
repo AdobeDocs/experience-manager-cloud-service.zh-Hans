@@ -2,10 +2,10 @@
 title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '4538'
-ht-degree: 89%
+source-wordcount: '4535'
+ht-degree: 88%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 89%
    * 或直接从以下网站进行访问：`https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * 如有必要，可以[创建模板文件夹](#creating-a-template-folder-admin)
 * [创建新模板](#creating-a-new-template-template-author)，新模板最初是空的
-* 如有必要，为该模板[定义其他属性](#defining-template-properties-template-author)
+* [定义其他属性](#defining-template-properties-template-author) 模板的（如有必要）
 * [编辑该模板](#editing-templates-template-authors)，以定义以下各项：
    * [结构](#editing-a-template-structure-template-author) - 不能在使用该模板创建的页面上更改的预定义内容。
    * [初始内容](#editing-a-template-initial-content-author) - 能够在使用该模板创建的页面上更改的预定义内容。
@@ -351,8 +351,8 @@ ht-degree: 89%
 
 配置窗口分为两个部分。
 
-* 在对话框左侧的&#x200B;**策略**&#x200B;下方，您能够创建新策略或选择现有策略。
-* 在对话框右侧的&#x200B;**属性**&#x200B;下方，您可以设置特定于组件类型的属性。
+* 在对话框左侧的下 **策略**&#x200B;中，您可以选择现有策略，也可以选择现有策略。
+* 在对话框右侧的下 **属性**&#x200B;中，您可以设置特定于组件类型的属性。
 
 可用的属性取决于选定的组件。例如，对于文本组件，属性定义的是复制和粘贴选项、格式选项以及段落样式，等等。
 

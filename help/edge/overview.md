@@ -3,10 +3,10 @@ title: Edge Delivery Services 快速入门
 description: Edge Delivery Services (EDS) 快速入门。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 92%
+source-wordcount: '862'
+ht-degree: 74%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 92%
 
 ## Edge Delivery 的工作原理 {#edge-works}
 
-下图说明如何在 Microsoft Word 中编辑内容（基于文档的编辑）并将其发布到 Edge Delivery。其中还展示使用各种编辑器的传统 AEM 发布方法。
+下图说明了如何在Microsoft® Word（基于文档的编辑）中编辑内容以及如何发布到Edge Delivery。 其中还展示使用各种编辑器的传统 AEM 发布方法。
 
 ![Edge Delivery 架构](assets/edgedelivery.png)
 
 Edge Delivery 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。如前所述，您可以同时使用 [AEM 创作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html)和[基于文档的创作](https://www.hlx.live/docs/authoring)。
 
-例如，您可以直接从 Microsoft Word 或 Google Docs 中使用内容。这意味着来自这些来源的文档可成为您网站上的页面。此外，标题、列表、图像、字体元素都可以从初始源转移到网站中。将立即添加新内容，而不经历重建过程。
+例如，您可以直接使用Microsoft®Word或Google文档中的内容。 这意味着来自这些来源的文档可成为您网站上的页面。此外，标题、列表、图像、字体元素都可以从初始源转移到网站中。新内容会立即添加，而无需重建过程。
 
-Edge Delivery 利用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，可在 Google Docs 或 Microsoft Word 中编写内容，并可在 GitHub 中使用 CSS 和 JavaScript 开发站点的功能。当您就绪时，您即可使用 Sidekick 浏览器扩展预览和发布内容更新。
+Edge Delivery使用GitHub，因此客户可以直接从其GitHub存储库管理和部署代码。 例如，您可以在Google文档或Microsoft中编写内容®Word并可以在GitHub中使用CSS和JavaScript开发站点的功能。 当您就绪时，您即可使用 Sidekick 浏览器扩展预览和发布内容更新。
 
 深入阅读：
 
@@ -40,9 +40,9 @@ Edge Delivery 利用 GitHub，因此客户可直接从其 GitHub 存储库管理
 
 ## Edge Delivery Services 和其他 Adobe Experience Cloud 产品 {#edge-other-products}
 
-Edge Delivery Services 是 Adobe Experience Manager 的一部分，这样 Edge Delivery 和 AEM Sites 即可存在于相同的域中。这是大型网站的常见用例。不仅如此，还可在 AEM Sites 页面中轻松地使用来自 Edge Delivery 的内容，并且反之亦然。
+Edge Delivery Services 是 Adobe Experience Manager 的一部分，这样 Edge Delivery 和 AEM Sites 即可存在于相同的域中。这是大型网站的常见用例。此外，Edge Delivery中的内容可以轻松地在您的AEM Sites页面中使用，反之亦然。
 
-您还可以将 Edge Delivery Services 与 Adobe Target、Analytics 和 Launch 结合使用。
+您还可以将Edge Delivery Services与Adobe Target、Analytics和Launch结合使用。
 
 ## 获取对 Edge Delivery Services 的访问权限 {#getting-access}
 
@@ -64,7 +64,7 @@ Adobe 致力于为您提供对 Edge Delivery Services 和基于文档的创作�
 
 ### 如何访问您的产品协作渠道 {#collab-channel}
 
-考虑到与客户建立的直接沟通渠道的作用，所有 AEM 客户在启动时都将为了快速沟通、关键更新和各种规模的体验质量报告而建立一个 Slack 频道。您将从 Adobe 收到一条加入您组织特有的 Slack 频道的邀请。
+鉴于与客户直接沟通渠道的价值，所有AEM客户在发布时将建立一个Slack渠道，以实现速度、关键更新和体验质量的可扩展报告。 您会收到Adobe的邀请，以加入特定于贵组织的Slack渠道。
 
 有关更多信息，请参阅[使用 Slack 机器人](https://www.hlx.live/docs/slack)文档。
 

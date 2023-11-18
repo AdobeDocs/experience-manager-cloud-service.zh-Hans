@@ -2,10 +2,10 @@
 title: AEM Headless 内容作者历程
 description: 从此处开始，借助 AEM 强大而灵活的 Headless 功能、相应的功能以及为项目创作内容的方法，实施引导式历程。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 91%
+source-wordcount: '873'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 
 * 基本了解 Headless 内容交付的含义和好处。
 * 了解 AEM 的 Headless 功能以及它们如何协作以提供 Headless 体验。
-* 能够为您的 AEM Headless 项目创作内容。
+* 可以为AEM Headless项目创作内容。
 
 ## AEM 文档历程 {#documentation-journeys}
 

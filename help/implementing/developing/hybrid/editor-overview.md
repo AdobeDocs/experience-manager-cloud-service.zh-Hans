@@ -2,9 +2,9 @@
 title: SPA 编辑器概述
 description: 本文全面概述了 SPA 编辑器及其工作原理，包括 SPA 编辑器在 AEM 中进行交互的详细工作流程。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1633'
 ht-degree: 96%
 
 ---
@@ -182,7 +182,7 @@ AEM SPA Editor SDK 已获得 Adobe 的完全支持，并且在不断得到增强
 * 目标架构
 * ContextHub
 * 内联图像编辑
-* 编辑配置（例如侦听器）
+* 编辑配置（例如，监听器）
 * 还原/重做
 * 页面差异和时间扭曲
 * 执行HTML重写服务器端的功能，如链接检查器、CDN重写器服务、URL缩短等。

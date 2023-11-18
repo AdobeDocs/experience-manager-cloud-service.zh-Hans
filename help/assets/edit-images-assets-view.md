@@ -3,10 +3,10 @@ title: 编辑图像
 description: 使用由 [!DNL Adobe Photoshop Express] 提供支持的选项编辑图像并将更新后的图像另存为版本。
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 30b8c9b8eaee6292323dde4b436c29fe8290c910
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 1. 选择图像并单击&#x200B;**“编辑”。**
 2. 单击可在左窗格中找到的快速操作内的 **[!DNL Resize Image]**。
 3. 从&#x200B;**[!UICONTROL “调整大小对象”]**&#x200B;下拉列表中选择适当的社交媒体平台，并从显示的选项中选择图像大小。
-4. 如果需要，使用&#x200B;**[!UICONTROL “图像比例”]**&#x200B;字段缩放图像。
+4. 如有必要，使用 **[!UICONTROL 图像缩放]** 字段。
 5. 单击 **[!DNL Apply]** 应用您的更改。
    ![使用 Adob&#x200B;&#x200B;e Express 进行图像编辑](assets/adobe-express-resize-image.png)
 

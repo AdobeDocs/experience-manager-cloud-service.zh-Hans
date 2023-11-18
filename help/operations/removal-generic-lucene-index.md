@@ -2,7 +2,7 @@
 title: 通用Lucene索引删除
 description: 了解计划删除的通用Lucene索引以及可能受到的影响。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -42,7 +42,7 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 
 Adobe已透过以下方式调整指数成本： `costPerEntry` 和 `costPerExecution` 属性以确保其他索引 `/oak:index/pathreference` 会尽可能优先使用。
 
-如果客户应用程序使用的查询仍依赖于此索引，则应立即更新以使用其他现有索引，如果需要，可以自定义这些索引。 或者，可以向客户应用程序添加新自定义索引。 有关AEMas a Cloud Service中索引管理的完整说明，请参阅 [索引文档](/help/operations/indexing.md).
+如果客户应用程序使用的查询仍依赖于此索引，则应立即更新以使用其他现有索引，如有必要，可以自定义这些索引。 或者，可以向客户应用程序添加新自定义索引。 有关AEMas a Cloud Service中索引管理的完整说明，请参阅 [索引文档](/help/operations/indexing.md).
 
 ## 您是否受影响？ {#are-you-affected}
 

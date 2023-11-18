@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 元数据是可搜索的资产的其他相关信息。 上传图像时，会自动提取该值。 您可以编辑现有元数据或向现有字段添加新元数据属性（例如，当元数据字段为空时）。
 
-因为公司需要可控且可靠的元数据词汇， [!DNL Experience Manager Assets] 不允许临时添加新的元数据属性。 尽管作者无法为资产添加新元数据字段，但开发人员可以。 请参阅 [为资源创建新的元数据属性](meta-edit.md#editing-metadata-schema).
+因为公司需要可控且可靠的元数据词汇， [!DNL Experience Manager Assets] 不允许按需添加新元数据属性。 尽管作者无法为资产添加新元数据字段，但开发人员可以。 请参阅 [为资源创建新的元数据属性](meta-edit.md#editing-metadata-schema).
 
 ## 编辑资源的元数据 {#editing-metadata-for-an-asset}
 

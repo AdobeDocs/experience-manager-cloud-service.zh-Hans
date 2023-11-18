@@ -2,7 +2,7 @@
 title: ContextHub UI模块类型示例
 description: ContextHub提供了几个可在解决方案中使用的示例UI模块
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%

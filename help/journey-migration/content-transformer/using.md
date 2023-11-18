@@ -2,9 +2,9 @@
 title: 使用内容转换器
 description: 了解如何转换内容结构为迁移到AEMas a Cloud Service做准备。
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 2%
 
    ![图像](/help/journey-migration/content-transformer/assets/ct-4.png)
 
-1. 您可以选择所有问题或特定问题，然后执行移动、删除和重命名等操作来解决这些问题。 也可以使用添加自定义路径 **添加路径** 按钮进行标记。
+1. 您可以选择所有问题或特定问题，然后移动、移除或重命名以解决这些问题。 也可以使用添加自定义路径 **添加路径** 按钮进行标记。
 
    >[!NOTE]
    > 使用移动操作时，建议将所有路径仅移动到一个文件夹(例如 `/etc/packages/content-transformation/paths`)，因此当安装备份包以将实例恢复到原始状态时，文件夹(`/etc/packages/content-transformation/paths`)可以通过删除操作来删除，以减小存储库大小。

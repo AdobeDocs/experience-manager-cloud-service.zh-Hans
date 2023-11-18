@@ -4,7 +4,7 @@ description: 了解如何配置 [!DNL Adobe Experience Manager] 富文本编辑�
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '4298'
 ht-degree: 4%
@@ -402,7 +402,7 @@ pass-as-Microsoft-Word (`paste-wordhtml`)模式可进行进一步配置，以便
 
 >[!CAUTION]
 >
-添加特殊字符将覆盖默认选项。 如果需要，请在所选内容中重新定义这些字符。
+添加特殊字符将覆盖默认选项。 如有必要，请在所选内容中重新定义这些字符。
 
 ### 定义单个字符 {#definesinglechar}
 
@@ -570,7 +570,7 @@ pass-as-Microsoft-Word (`paste-wordhtml`)模式可进行进一步配置，以便
 >
 标准词典位于 `/libs/cq/spellchecker/dictionaries`，以及相应的自述文件。 请勿修改文件。
 
-如果需要，请按照以下步骤添加更多词典。
+要添加更多词典，请按照以下步骤操作（如有必要）。
 
 1. 导航到页面 [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 1. 选择所需的语言并下载包含拼写定义的ZIP文件。 提取文件系统中存档文件的内容。

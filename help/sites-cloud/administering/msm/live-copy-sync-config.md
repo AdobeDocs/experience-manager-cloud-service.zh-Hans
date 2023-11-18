@@ -4,10 +4,10 @@ description: 了解可用的强大 Live Copy 同步选项以及如何根据项�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager提供了多个现成的同步配置。 在使用 Live C
 
 ## 已安装的自定义转出配置 {#installed-and-custom-rollout-configurations}
 
-本部分提供有关已安装转出配置、其所使用的同步操作以及如何在需要时创建自定义配置的信息。
+此部分提供有关已安装的转出配置及其使用的同步操作的信息，以及如何在必要时创建自定义配置的信息。
 
 >[!CAUTION]
 >
@@ -174,7 +174,7 @@ MSM 允许您指定一般使用的转出配置集，并可在需要时覆盖特�
 
    ![从父页面的 Live Copy 继承](../assets/live-copy-inherit.png)
 
-1. 如果需要，可调整 **Live Copy 继承**&#x200B;标记。如果选中，Live Copy 配置将在所有子项上都有效。
+1. 如有必要，请调整 **Live Copy继承** 标志。 如果选中，Live Copy 配置将在所有子项上都有效。
 
 1. 清除&#x200B;**继承父项的转出配置**&#x200B;属性，然后从列表中选择一个或多个转出配置。
 

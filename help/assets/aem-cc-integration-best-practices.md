@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '3489'
 ht-degree: 15%
@@ -82,7 +82,7 @@ Adobe Creative Cloud为创意团队提供了一个解决方案和服务生态系
 * [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 用于发布资产的可配置资产加载项。
 
 * 自定义解决方案是基于 [资产共享公用](https://opensource.adobe.com/asset-share-commons/) 代码库。
-* Experience Manager [链接共享](/help/assets/share-assets.md) 以使用链接临时共享资源。
+* Experience Manager [链接共享](/help/assets/share-assets.md) 以使用链接按需共享资产。
 * [Assets Web界面](/help/assets/manage-digital-assets.md) 通过Experience Manager访问控制设置保护外部参与方的区域，并进行必要的IT/网络配置调整，使这些外部用户能够访问Experience Manager。
 
 ## 主要概念和用例 {#key-concepts-and-use-cases}

@@ -2,10 +2,10 @@
 title: 您的收件箱
 description: 了解如何使用收件箱中收到的通知来管理您的任务。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 96%
+source-wordcount: '911'
+ht-degree: 95%
 
 ---
 
@@ -148,7 +148,7 @@ ht-degree: 96%
 
    根据是否已打开对话框、向导和文档页面，您可以：
 
-   * 确认相应的操作，例如重新分配。
+   * 确认相应的操作，例如，重新分配。
    * 取消操作
    * 选择“上一步”箭头可返回到收件箱，例如，如果操作向导或文档页面已打开，则可返回收件箱。
 

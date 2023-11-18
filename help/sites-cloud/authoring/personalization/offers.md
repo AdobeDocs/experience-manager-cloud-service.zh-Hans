@@ -2,10 +2,10 @@
 title: 创建和管理优惠（优惠控制台）
 description: 使用“优惠”控制台，可创建您可以在活动体验中使用的优惠
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1351'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 83%
    * **片段标题**
 请指定标题。
    * **片段标记**
-如果需要，请添加标记。
+添加标记（如有必要）。
 
 1. 单击“**完成**”确认。
 

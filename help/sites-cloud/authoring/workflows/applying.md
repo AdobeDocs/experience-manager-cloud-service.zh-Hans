@@ -2,7 +2,7 @@
 title: 将工作流程应用于页面
 description: 在创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 83%
@@ -140,6 +140,6 @@ ht-degree: 83%
 
 ## 从页面编辑器启动工作流 {#starting-a-workflow-from-the-page-editor}
 
-编辑页面时，您可以从工具栏中选择&#x200B;**页面信息**。下拉菜单中包含&#x200B;**启动工作流**&#x200B;选项。这将打开一个对话框，您可以在其中指定所需的工作流，如果需要，还可以指定标题：
+编辑页面时，您可以从工具栏中选择&#x200B;**页面信息**。下拉菜单中包含&#x200B;**启动工作流**&#x200B;选项。这将打开一个对话框，您可以在其中指定所需的工作流，并根据需要指定标题：
 
 ![从页面编辑器启动工作流](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)
