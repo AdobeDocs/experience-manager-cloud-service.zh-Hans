@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 7%
@@ -36,7 +36,7 @@ ht-degree: 7%
    >
    >如果文本字段为空，则不存在现有的元数据集。 您可以在字段中输入值并将其保存以添加该元数据属性。
 
-对资源元数据所做的任何更改都将作为其XMP数据的一部分写回原始二进制文件。 这是通过Experience Manager元数据回写工作流完成的。 对现有属性进行的更改(例如 `dc:title`)被覆盖和新创建的属性(包括自定义属性，如 `cq:tags`)与架构一起添加。
+对资源元数据所做的任何更改都将作为其XMP数据的一部分写回原始二进制文件。 这是通过Experience Manager元数据回写工作流完成的。 对现有属性进行的更改(例如 `dc:title`)将被覆盖和创建的属性(包括自定义属性，如 `cq:tags`)与架构一起添加。
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

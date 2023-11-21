@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 进行本地 AEM 开发
 description: 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 94%
+source-wordcount: '579'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 ## 将 AEM 设置为在 HTTPS 上运行 {#aem-https}
 
-在使用 HTTPS 保护的外部框架中，无法加载不安全的 HTTP 框架。Universal Editor Service 在 HTTPS 上运行，因此，AEM 或任何其他远程页面也必须在 HTTPS 上运行。
+在使用HTTPS固定的外部帧中，无法加载不安全的HTTP帧。 Universal Editor Service 在 HTTPS 上运行，因此，AEM 或任何其他远程页面也必须在 HTTPS 上运行。
 
 为此，您需要将 AEM 设置为在 HTTPS 上运行。出于开发目的，您可以使用自签名证书。
 

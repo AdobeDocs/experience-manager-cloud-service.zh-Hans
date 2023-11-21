@@ -7,17 +7,17 @@ type: Documentation
 solution: Experience Manager
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
-source-git-commit: a7a8b14c6d95f704c6ea4ee0d1424e77df045a4c
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 68%
+source-wordcount: '89'
+ht-degree: 49%
 
 ---
 
 
 # 内部使用的元数据
 
-GitHub 创作系统中的元数据为层级式的，并定义了以下相对于前一项的递增级别。
+GitHub创作系统中的元数据是分层的，并定义了以下相对于前一项的递增级别。
 
 1. metadata.md
 1. ToC

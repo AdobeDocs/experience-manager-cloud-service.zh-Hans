@@ -2,9 +2,9 @@
 title: 如何为AEM Forms生成记录文档(DoR)？
 description: 了解如何为自适应Forms的记录文档(DoR)生成模板。
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4139'
 ht-degree: 4%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 4%
 1. 在表单模型选项卡的记录文档模板配置部分中，选择 **将表单模板关联为记录文档模板**. 选择此选项时，将显示计算机上可用的所有XFA模板（XDP文件）。 选择相应的文件。 此外，请确保自适应表单和选定的XFA模板（XDP文件）使用相同的架构（数据架构）。
 1. 单击 **[!UICONTROL 完成。]**
 
-您的自适应表单现在配置为使用XDP文件作为记录文档的模板。 接下来的步骤是 [将自适应表单组件绑定到相应的模板字段](#bind-adaptive-form-components-with-template-fields).
+您的自适应表单现在配置为使用XDP文件作为记录文档的模板。 下一步是 [将自适应表单组件绑定到相应的模板字段](#bind-adaptive-form-components-with-template-fields).
 
 ## 生成基于Acroform的记录文档 {#generate-an-Acroform-based-document-of-record}
 
@@ -66,7 +66,7 @@ ht-degree: 4%
 1. 在表单模型选项卡的记录文档模板配置部分中，选择 **将表单模板关联为记录文档模板**. 选择此选项时，将显示计算机上可用的所有AcrobatPDF(Acroform)。 选择相应的文件。
 1. 单击 **[!UICONTROL 完成。]**
 
-您的自适应表单现在配置为使用Acroform作为记录文档的模板。 接下来的步骤是 [将自适应表单组件绑定到相应的模板字段](#bind-adaptive-form-components-with-template-fields).
+您的自适应表单现在配置为使用Acroform作为记录文档的模板。 下一步是 [将自适应表单组件绑定到相应的模板字段](#bind-adaptive-form-components-with-template-fields).
 
 ## 自动生成记录文档 {#auto-generate-a-document-of-record}
 
@@ -137,7 +137,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 
 处理自适应Forms的记录文档时，请牢记以下注意事项和限制。
 
-* 记录文档模板不支持富文本。 因此，静态自适应表单中或由最终用户填写的信息中的任何富文本都会在记录文档中显示为纯文本。
+* 记录文档模板不支持富文本。 因此，静态自适应表单中或用户填写的信息中的任何富文本都会在记录文档中显示为纯文本。
 * 自适应表单中的文档片段未出现在记录文档中。 但是，支持自适应表单片段。
 * 不支持为基于XML架构的自适应表单生成的记录文档中的内容绑定。
 * 当用户请求呈现记录文档时，记录文档的本地化版本是应区域设置的要求创建的。 记录文档的本地化与自适应表单的本地化同时发生。 <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->

@@ -2,9 +2,9 @@
 title: 配置Workfront和Experience Manager Assets之间的资源元数据映射
 description: 在Adobe Workfront和Experience Manageras a Cloud Service的应用程序之间映射资源元数据字段。 作为映射元数据字段的结果，在将资源从Workfront发送到Experience Manager Assets时，您可以在Experience Manager Assets中查看映射的资源元数据。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 4%
 
 1. 选择Experience Manager Assets集成，然后单击 **[!UICONTROL 编辑]**.
 
-1. 单击 **[!UICONTROL 元数据]**. 在 **[!UICONTROL 资产]** 选项卡，映射 [!UICONTROL 项目] > [!UICONTROL 名称] 的Workfront字段 `wm:projectName` Experience Manager Assets字段。 如果找不到完全匹配的项，Adobe建议查找用于映射Workfront和Experience Manager Assets字段的最佳匹配项。 您可以避免映射不同数据类型的字段。 例如，将日期Workfront字段映射到描述资源字段。
+1. 单击 **[!UICONTROL 元数据]**. 在 **[!UICONTROL 资产]** 选项卡，映射 [!UICONTROL 项目] > [!UICONTROL 名称] 的Workfront字段 `wm:projectName` Experience Manager Assets字段。 如果找不到完全匹配的项，Adobe建议您查找用于映射Workfront和Experience Manager Assets字段的最佳匹配项。 您可以避免映射不同数据类型的字段。 例如，将日期Workfront字段映射到描述资源字段。
 1. 映射 [!UICONTROL 文档] > [!UICONTROL 名称] 的Workfront字段 `wm:documentName` Experience Manager Assets字段。
 
    ![Workfront中的映射](assets/workfront-metadata-mapping.png)

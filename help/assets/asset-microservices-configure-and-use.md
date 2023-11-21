@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 3%
@@ -246,7 +246,7 @@ asset compute服务集成允许Experience Manager使用以下方式将这些参�
    * Title：禁用自动启动工作流
    * 名称：disable-auto-start-workflow
 1. 选择 __完成__ 创建工作流模型
-1. __选择__ 和 __编辑__ 新创建的工作流模型
+1. __选择__ 和 __编辑__ 已创建的工作流模型
 1. 在工作流模型编辑器中，选择 __步骤1__ 从模型定义中删除它
 1. 打开 __侧面板__，并选择 __步骤__
 1. 拖动 __DAM更新资产工作流已完成__ 逐步执行模型定义

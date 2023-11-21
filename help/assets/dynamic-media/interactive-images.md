@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '4176'
+source-wordcount: '4175'
 ht-degree: 2%
 
 ---
@@ -378,7 +378,7 @@ ht-degree: 2%
 1. 后端逻辑将相应的概览数据或内容返回给前端代码。
 1. 前端代码加载概览数据或内容。
 1. 前端代码（可选）将加载的概览数据转换为HTML表示形式。
-1. 前端代码显示一个模式对话框或面板，并在屏幕上为最终用户呈现HTML内容。
+1. 前端代码显示一个模式对话框或面板，并在屏幕上为用户呈现HTML内容。
 
 这些调用不一定表示网页逻辑从任意步骤中调用的独立公共API调用。 相反，它是一个链接调用，其中每个下一步都隐藏在上一步的最后阶段（回调）中。
 

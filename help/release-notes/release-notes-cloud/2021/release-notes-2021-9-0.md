@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 版的发行说明。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1572'
 ht-degree: 20%
 
 ---
@@ -111,7 +111,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### 新增功能 {#what-is-new-screens}
 
-* Screensas a Cloud Service现在支持基本回放监控。 播放器现在报告每次ping（默认为30秒）的各种回放指标。 它可以基于指标检测各种边缘情况（卡住体验、空白屏幕、调度问题等）。 团队可以使用此功能远程监控播放器是否正确播放内容。 它提高了对空白屏幕或现场中断体验的反应性，并降低了向最终用户显示中断体验的风险。
+* Screensas a Cloud Service现在支持基本回放监控。 播放器现在报告每次ping（默认为30秒）的各种回放指标。 它可以基于指标检测各种边缘情况（卡住体验、空白屏幕、调度问题等）。 团队可以使用此功能远程监控播放器是否正确播放内容。 它提高了对空白屏幕或现场中断体验的反应性，并降低了向用户显示中断体验的风险。
 请参阅 [基本回放监控](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) 以了解更多详细信息。
 
 * Screensas a Cloud Service中现在支持视频缩略图。 内容作者可以定义视频的缩略图，以便在相应团队最终确定实际视频时，将图像用作占位符并正确测试内容播放和定位。 在视频播放失败时，也可以使用该图像。

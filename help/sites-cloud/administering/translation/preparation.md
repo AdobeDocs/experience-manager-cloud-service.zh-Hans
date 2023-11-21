@@ -4,10 +4,10 @@ description: 了解在开发多语言网站时如何准备翻译内容。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 87%
+source-wordcount: '752'
+ht-degree: 84%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 87%
 
 您最初为其创作站点内容的语言副本是语言母版。语言母版是翻译成其他语言的源。
 
-站点的每个语言分支均称为语言副本。语言副本的根页面（称为语言根）标识了语言副本中内容的语言。例如，`/content/wknd/fr` 是法语副本的语言根。语言副本必须使用[准确配置的语言根](preparation.md#creating-a-language-root)，以便在翻译源站点内容时使用正确的语言。
+站点的每个语言分支均称为语言副本。语言副本的根页面（称为语言根）标识了语言副本中内容的语言。例如，`/content/wknd/fr` 是法语副本的语言根。语言副本必须使用 [已正确配置语言根](preparation.md#creating-a-language-root) 以便在翻译源站点内容时使用正确的语言。
 
 使用以下步骤可准备站点以进行翻译：
 

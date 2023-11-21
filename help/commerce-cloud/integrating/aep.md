@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 43220614f567bdfad17c6ac9c8b3adcc856ff044
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 1%
@@ -57,7 +57,7 @@ ht-degree: 1%
 ![AEM Commerce项目](../assets/aep-integration/aem-project-with-commerce.png)
 
 
-通过从项目的根目录运行以下命令，生成新创建的AEM Commerce项目并将其部署到本地AEM SDK。
+通过从项目的根目录运行以下命令，生成创建的AEM Commerce项目并将其部署到本地AEM SDK。
 
 ```bash
 $ mvn clean install -PautoInstallSinglePackage
@@ -403,11 +403,11 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
    ![aep创建数据流](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. 使用命名数据流 __名称__ 必填字段。 在 __事件架构__ 字段中，选择新创建的架构并单击 __保存__.
+1. 使用命名数据流 __名称__ 必填字段。 在 __事件架构__ 字段中，选择创建的架构并单击 __保存__.
 
    ![aep定义数据流](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. 打开新创建的数据流，然后单击 __添加服务__.
+1. 打开创建的数据流，然后单击 __添加服务__.
 
    ![AEP数据流添加服务](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 

@@ -2,10 +2,10 @@
 title: 个性化和内容定位
 description: 了解如何使用 AEM 创建个性化、有针对性的内容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 93%
+source-wordcount: '1054'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ AEM 提供了用于以下情形的工具框架：
 * 定义用于根据受众定义解析已知用户信息的规则。
 * 配置您的页面以呈现有针对性的个性化体验；呈现适用于当前最终用户的特定内容。
 
-以下概述介绍了 AEM as a Cloud Service 中用于个性化的一些术语，以及推荐的操作顺序。
+以下概述介绍了AEMas a Cloud Service中用于个性化的一些术语，以及推荐的操作顺序。
 
 ## 体验 {#experience}
 

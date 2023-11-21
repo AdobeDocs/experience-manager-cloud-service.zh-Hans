@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '5966'
+source-wordcount: '5964'
 ht-degree: 3%
 
 ---
@@ -586,7 +586,7 @@ There was a link here that showed the video frame of an interactive video and wh
 1. 后端逻辑将相应的概览数据或内容返回给前端代码。
 1. 前端代码加载概览数据或内容。
 1. 前端代码（可选）将加载的概览数据转换为HTML表示形式。
-1. 前端代码显示一个模式对话框或面板，并在屏幕上为最终用户呈现HTML内容。
+1. 前端代码显示一个模式对话框或面板，并在屏幕上为用户呈现HTML内容。
 
 这些调用不代表网页逻辑可以从任意步骤中调用的独立公共API调用。 相反，它是一个链接调用，其中每个下一步都隐藏在上一步的最后阶段（回调）中。
 
@@ -598,7 +598,7 @@ There was a link here that showed the video frame of an interactive video and wh
 * 根据缩略图数据构建概览URL。
 * 触发从后端加载概览并在屏幕上呈现以供显示的过程。
 
-此外，交互式视频查看器支持全屏操作模式。 最终用户通过选择缩略图而不离开全屏来触发快速视图。 要实现此功能，您需要更改前端代码，以便将“概览模式”对话框附加到查看器的容器中。 不要添加当查看器处于全屏模式时不可用的文档BODY或其他网页元素。 执行此作业的代码侦听一个或多个查看器回调，该回调在查看器加载到页面上后发送。
+此外，交互式视频查看器支持全屏操作模式。 用户通过选择缩略图而不离开全屏来触发快速视图。 要实现此功能，您需要更改前端代码，以便将“概览模式”对话框附加到查看器的容器中。 不要添加当查看器处于全屏模式时不可用的文档BODY或其他网页元素。 执行此作业的代码侦听一个或多个查看器回调，该回调在查看器加载到页面上后发送。
 
 Experience Manager返回的嵌入代码已具有现成的事件处理程序。 如以下高亮显示的代码片段中所示，该代码会被注释掉：
 

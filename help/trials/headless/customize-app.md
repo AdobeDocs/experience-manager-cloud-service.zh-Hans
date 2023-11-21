@@ -4,10 +4,10 @@ description: 使用示例 React 应用程序以了解如何使用 AEM as a Cloud
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 88%
+source-wordcount: '1019'
+ht-degree: 87%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 88%
 
 1. 选择 **预览** ，查看您所做的更改。 演示应用程序的预览内容将在新选项卡中打开。在浏览器上单击刷新，您应该会在应用程序中看到带有黄色短裤的新车手图像。
 
-使用 AEM Headless CMS 可以轻松更新应用程序中的图像和资产。
+使用AEM Headless CMS可以轻松更新应用程序中的图像和资产。
 
 ## 在应用中添加对新内容片段的引用 {#create-moment}
 

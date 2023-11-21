@@ -2,9 +2,9 @@
 title: 如何在Experience Manager Sites页面上创建Forms门户？
 description: 了解如何在AEM Sites页面上创建Forms Portal并使用现成的核心组件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: e48272f4d36c608d516c7a947fc16cff3a3b408e
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ AEM Forms提供门户组件，可减少管理开销和生产延迟。 这些组�
 * 启用基于标题和描述的表单搜索。
 * 使用自定义CSS可自定义门户的外观。
 * 创建表单链接。
-* 列出与最终用户创建的自适应Forms相关的草稿和提交。
+* 列出与用户创建的自适应Forms相关的草稿和提交。
 
 ## Forms Portal页面的组件 {#forms-portal-components}
 

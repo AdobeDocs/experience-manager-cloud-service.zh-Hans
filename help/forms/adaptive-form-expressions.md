@@ -1,7 +1,7 @@
 ---
 title: 什么是自适应表单表达式？
 description: 使用自适应Forms表达式可添加自动验证、计算以及打开或关闭部分的可见性。
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2698'
 ht-degree: 0%
@@ -187,7 +187,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 ### 必填 {#required}
 
-要将组件设为必需，请在 **编辑** 对话框，您可以选择选项 **标题和文本>必填**. 您还可以添加相应的必需消息（可选） 。.
+要将组件设为必需，请在 **编辑** 对话框，您可以选择选项 **标题和文本>必填**. 您还可以添加相应的必需消息（可选）。
 
 ### 验证模式 {#validation-patterns}
 

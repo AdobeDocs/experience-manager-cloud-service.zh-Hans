@@ -11,14 +11,14 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2535'
 ht-degree: 3%
 
 ---
 
-# 设置AEM CIF核心组件的样式 {#style-aem-cif-core-components}
+# 样式AEM CIF核心组件 {#style-aem-cif-core-components}
 
 此 [CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia) 是一个参考代码库，用于 [CIF核心组件](https://github.com/adobe/aem-core-cif-components). 在本教程中，您将检查Venia参考项目并了解AEM CIF核心组件使用的CSS和JavaScript的组织方式。 还可以使用CSS创建样式，以更新 **产品Teaser** 组件。
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 ## 您将构建的内容
 
-在本教程中，将实施产品Teaser组件的新样式，该样式类似于信息卡。 从本教程中吸取的经验教训可以应用于其他CIF核心组件。
+在本教程中，将实施产品Teaser组件的新样式，该样式类似于信息卡。 在本教程中吸取的经验教训可以应用于其他CIF核心组件。
 
 ![您将构建的内容](../assets/style-cif-component/what-you-will-build.png)
 
@@ -57,7 +57,7 @@ ht-degree: 3%
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. 添加必要的OSGi配置，以便将AEM实例连接到Adobe Commerce实例，或将配置添加到新创建的项目。
+1. 添加必要的OSGi配置，以便将AEM实例连接到Adobe Commerce实例，或将配置添加到创建的项目。
 
 1. 此时，您应该拥有连接到Adobe Commerce实例的工作中店面版本。 导航至 `US` > `Home` 页面位置： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 在AEM中，负责呈现店面主题/样式的CSS和JavaScript由管理 [客户端库](/help/implementing/developing/introduction/clientlibs.md) 或“clientlibs”的简称。 客户端库提供了一种机制，可在项目代码中整理CSS和JavaScript，然后交付到页面上。
 
-通过添加和覆盖这些客户端库管理的CSS，可以将品牌特定的样式应用于AEM CIF核心组件。 了解如何构建客户端库并将其包含在页面上至关重要。
+通过添加和覆盖这些客户端库管理的CSS，可以将特定于品牌的样式应用于AEM CIF核心组件。 了解如何构建客户端库并将其包含在页面上至关重要。
 
 此 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) 是专门的 [webpack](https://webpack.js.org/) 用于管理项目的所有前端资产的项目。 此Webpack允许前端开发人员使用任意数量的语言和技术，如 [TypeScript](https://www.typescriptlang.org/)， [萨斯](https://sass-lang.com/)，等等。
 

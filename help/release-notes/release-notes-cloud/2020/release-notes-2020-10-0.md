@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] 2020.10.0版as a Cloud Service发行说明。”'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 26%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 26%
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**：您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）的行为，从而收集最终用户洞察。 它有助于商业用户根据收集的见解就自适应表单内容、布局和样式做出明智的决策。
+* **Analytics for Adaptive Forms**：您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）的行为，从而收集用户洞察。 它有助于商业用户根据收集的见解就自适应表单内容、布局和样式做出明智的决策。
 
 ### [!DNL Forms]预发行渠道中提供的新功能 {#prerelease-features-forms-oct-2021}
 
@@ -71,7 +71,7 @@ ht-degree: 26%
 
 * 产品控制台和选取器中的GraphQL请求是通过HTTPPOST完成的。 此问题已修复，以确保Apollo GraphQL客户端遵守GraphQL客户端OSGi配置中的设置，在配置时支持GET请求。
 
-* CIF云配置UI为/lib和/apps/中的配置显示了“保存并关闭”按钮。 但由于这些界面是只读的，因此UI已修复为仅显示“关闭”按钮。
+* 对于/lib和/apps/中的配置，CIF Cloud配置UI显示“保存并关闭”按钮。 但由于这些界面是只读的，因此UI已修复为仅显示“关闭”按钮。
 
 ## Cloud Manager {#cloud-manager}
 

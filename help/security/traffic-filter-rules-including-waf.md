@@ -2,7 +2,7 @@
 title: 流量过滤规则，包括 WAF 规则
 description: 配置流量过滤规则，包括 Web 应用程序防火墙 (WAF) 规则
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 95%
@@ -191,7 +191,7 @@ data:
 
 | **属性** | **类型** | **描述** |
 |---|---|---|
-| reqProperty | `string` | 请求属性。<br><br>其中之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author` , `preview` 或者 `publish` 其中之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中定义的）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回可用于识别客户位于哪个国家的两个字母的代码 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol))。</li></ul> |
+| reqProperty | `string` | 请求属性。<br><br>其中之一：<br><ul><li>`path`：返回不含查询参数的URL的完整路径。</li><li>`queryString`：返回URL的查询部分</li><li>`method`：返回请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author` , `preview` 或者 `publish` 其中之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中定义的）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回可用于识别客户位于哪个国家的两个字母的代码 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol))。</li></ul> |
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
 | reqCookie | `string` | 返回具有指定名称的 Cookie |

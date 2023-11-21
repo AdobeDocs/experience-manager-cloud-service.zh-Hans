@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 1. 在 **添加字典至翻译项目** 屏幕上，选择 **创建新翻译项目** 或 **添加到现有翻译项目** 选项。
 1. 在 **项目标题** 字段中，指定标题。 例如，`Government Reference Site - German locale.`
 1. 在 **目标语言** 字段，指定区域设置(例如， `German(de)`)，然后单击 **完成**. 您可以指定多个区域设置。 该表单将转换为 **目标语言** 字段。
-1. 在“添加的词典”对话框中，单击 **打开项目**. 在“项目”屏幕中，打开新创建的项目。
+1. 在“添加的词典”对话框中，单击 **打开项目**. 在“项目”屏幕中，打开已创建的项目。
 1. 单击 **椭圆** 在底部 **翻译摘要** 磁贴。 这将打开翻译摘要屏幕。
 1. 单击 **编辑** 顶部图标 **翻译摘要** 屏幕。 打开 **翻译** 选项卡，并在中选择机器翻译 **翻译方法** 屏幕。 选择适当的 **翻译提供商** 和 **云配置**. 单击 **完成** 图标。
 1. 在 **翻译作业** 图块，单击 ![aem62forms_downarrow](assets/aem62forms_downarrow.png) 图标，然后单击 **开始**. 图块的状态将更改为“草稿”。 翻译完成后，状态将更改为 **准备好审查**. 几分钟后刷新页面并验证状态。

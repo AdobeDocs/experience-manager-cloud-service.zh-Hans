@@ -2,10 +2,10 @@
 title: 在 Cloud Manager 中使用您自己的 GitHub 存储库
 description: 了解如何设置 Cloud Manager 以使用您自己的 GitHub 存储库。
 feature: Release Information
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 73%
+source-wordcount: '720'
+ht-degree: 70%
 
 ---
 
@@ -75,7 +75,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 可以按任意顺序安装应用程序并创建秘密文件。但必须先完成这两个步骤，之后才能进行验证。
 
-在验证之前，存储库将列出并带红色图标，这表示它尚未经过验证，尚无法使用。
+在验证之前，存储库将以红色图标列出，表示它尚未验证且尚无法使用。
 
 ![未经验证的存储库](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 

@@ -2,7 +2,7 @@
 title: 通用Lucene索引删除
 description: 了解计划删除的通用Lucene索引以及可能受到的影响。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 0%
@@ -154,6 +154,7 @@ AEM包含一个具有Sling资源类型的自定义对话框组件 `granite/ui/co
 >[!NOTE]
 >
 >内容片段模型编辑器使用具有Sling资源类型的专用路径字段 `dam/cfm/models/editor/components/contentreference`.
+>
 > * 目前，这些程序执行查询时未指定节点类型，导致由于使用通用Lucene索引而记录WARN。
 > * 这些组件的实例将很快自动默认为使用 `cq:Page` 和 `dam:Asset` 节点类型，无需客户执行进一步的操作。
 > * 此 `nodeTypes` 可以添加属性以覆盖这些默认节点类型。
@@ -167,6 +168,6 @@ Adobe将采取两阶段方法移除通用Lucene索引。
 
 Adobe将监测上述日志消息，并尝试联系仍依赖于通用Lucene索引的客户。
 
-作为短期的缓解措施，Adobe将直接向客户系统添加自定义索引定义，以防止在必要时删除通用Lucene索引导致出现功能或性能问题。
+作为短期的缓解措施，Adobe将自定义索引定义直接添加到客户系统，以防止在必要时删除通用Lucene索引导致的功能或性能问题。
 
-在这种情况下，将向客户提供更新的索引定义，并建议在通过Cloud Manager发布其应用程序的未来版本中包含。
+在这种情况下，会向客户提供更新的索引定义，并建议他们将该定义包含在通过Cloud Manager发布的未来应用程序版本中。

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 9%
@@ -168,7 +168,7 @@ ht-degree: 9%
 
    * 要应用预设，请选择页面右上角附近的 **[!UICONTROL 预设]**，然后选择要一次性应用于所有资产的预设。
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。新创建的旋转集将出现在您创建它的文件夹中。
+1. 选择&#x200B;**[!UICONTROL 保存]**。创建的旋转集将出现在您创建该旋转集的文件夹中。
 
 ## 查看旋转集 {#viewing-spin-sets}
 

@@ -2,7 +2,7 @@
 title: 如何为基于基础组件的自适应表单添加新区域设置支持？
 description: 对于自适应Forms，除了现成可用的语言之外，您还可以为更多语言添加区域设置。
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 7%
@@ -102,7 +102,7 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 1. 添加 `<locale-name>` 默认区域设置值 `de`， `es`， `fr`， `it`， `pt-br`， `zh-cn`， `zh-tw`， `ja`， `ko-kr`，如果尚未存在。
 
 1. 添加 `<locale>` 至的值 `languages` 属性 `/etc/languages`.
-1. 将新创建的文件夹添加到 `filter.xml` 在etc/META-INF/下[文件夹层次结构] 作为：
+1. 将创建的文件夹添加到 `filter.xml` 在etc/META-INF/下[文件夹层次结构] 作为：
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>

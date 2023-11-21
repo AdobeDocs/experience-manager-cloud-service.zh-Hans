@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0 版的发行说明。'
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+exl-id: 671056e6-84cc-4c2c-bca3-fde68d5cc835
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 98%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.2.0 版的发行说明 {#release-notes}
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
 * 推出了面向 Dynamic Media 视频交付（已启用 CMAF）中的自适应流式处理的新协议（DASH – 基于 HTTP 的动态自适应流式处理）支持：
-   * 自适应流式处理 (DASH/HLS) 可确保最终用户获得更出色的视频观看体验
+   * 自适应流(DASH/HLS)确保更好的视频用户观看体验
    * DASH 是自适应视频流式处理的国际标准协议，在业界得到广泛应用
    * 已在北美推出，将通过支持票证启用，并且即将在亚太地区以及欧洲、中东和非洲推出
 

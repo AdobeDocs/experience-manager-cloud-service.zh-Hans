@@ -2,7 +2,7 @@
 title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 5%
@@ -319,7 +319,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 5.2.将更改推送到存储库 {#committing-the-changes}
 
-现在，将更改推送到AEM FormsCloud Service的主题存储库。.
+现在，将更改推送到AEM FormsCloud Service的主题存储库。
 
 1. 导航到主题文件夹的根。  在本例中，主题文件夹名称为 `aem-forms-theme-canvas`.
 1. 打开命令提示符或终端。

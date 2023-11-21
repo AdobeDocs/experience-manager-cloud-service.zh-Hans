@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '9463'
+source-wordcount: '9461'
 ht-degree: 2%
 
 ---
@@ -341,7 +341,7 @@ VBR编码时间较长，但产生的结果最理想；媒体文件的质量更�
 何时使用VBR而非CRB？
 在选择VBR与CBR时，几乎总是建议您为媒体文件使用VBR。 VBR以具有竞争力的比特率提供更高质量的文件。 使用VBR时，请确保使用两遍编码，并将最大比特率设置为目标视频比特率的1.5倍。
 
-选择视频编码预设时，请确保将目标最终用户的连接速度考虑在内。 选择数据速率为该速度80%的预设。 例如，如果目标最终用户的连接速度为1000 Kbps，则最佳预设为视频数据速率为800 Kbps的预设。
+选择视频编码预设时，请确保将目标用户的连接速度考虑在内。 选择数据速率为该速度80%的预设。 例如，如果目标用户的连接速度为1000 Kbps，则最佳预设为视频数据速率为800 Kbps的预设。
 
 此表描述了典型连接速度的数据速率。
 

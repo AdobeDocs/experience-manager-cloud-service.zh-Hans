@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '4923'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -499,7 +499,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 | `AFTER` | `Calendar`、`Date`、`Time` | ... 值表示的时间点在字段内容表示的时间点之后 |
 | `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... 值表示的时间点在字段内容表示的时间点之后或与之相同 |
 
-某些类型还允许指定其他选项来修改表达式的计算方式：
+某些类型还允许您指定其他选项来修改表达式的计算方式：
 
 | 选项 | 类型 | 描述 |
 |--- |--- |--- |

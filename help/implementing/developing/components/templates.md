@@ -2,7 +2,7 @@
 title: 页面模板
 description: 创建用作新页面基础的页面时，将使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 7%
@@ -356,7 +356,7 @@ When creating an editable template, the value is copied from the template type t
 如果您已创建可作为其他模板基础的模板，则可以将此模板作为模板类型复制。
 
 1. 创建模板，就像创建任何页面模板一样 [如此处记录的](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)，以作为模板类型的基础。
-1. 使用CRXDE Lite从复制新创建的模板 `templates` 节点到 `template-types` 下的节点 [模板文件夹](#template-folders).
+1. 使用CRXDE Lite，从以下位置复制创建的模板： `templates` 节点到 `template-types` 下的节点 [模板文件夹](#template-folders).
 1. 从删除模板 `templates` 下的节点 [模板文件夹](#template-folders).
 1. 在位于以下位置的模板副本中 `template-types` 节点，删除所有 `cq:template` 和 `cq:templateType` 属性来自所有 `jcr:content` 节点。
 
@@ -595,6 +595,6 @@ GITHUB上的代码
 
 要限制哪些模板可用于在给定页面下创建子页面，请使用 `cq:allowedTemplates` 属性 `jcr:content` 页面的节点，用于指定允许作为子页面的模板列表。 例如，列表中的每个值都必须是允许的子页面模板的绝对路径 `/apps/wknd/templates/page-content`.
 
-您可以使用 `cq:allowedTemplates` 模板的属性  `jcr:content` 节点，用于将此配置应用于使用此模板的所有新创建的页面。
+您可以使用 `cq:allowedTemplates` 模板的属性  `jcr:content` 节点，用于将此配置应用于使用此模板的所有已创建页面。
 
 如果要添加更多约束，例如关于模板层次结构的约束，您可以使用 `allowedParents/allowedChildren` 属性。 然后，您可以明确指定从模板T创建的页面必须是从模板T创建的页面的父项/子项。

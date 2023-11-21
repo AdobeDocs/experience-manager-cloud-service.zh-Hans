@@ -3,10 +3,10 @@ title: Edge Delivery Services 快速入门
 description: Edge Delivery Services (EDS) 快速入门。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 74%
+source-wordcount: '863'
+ht-degree: 72%
 
 ---
 
@@ -46,7 +46,7 @@ Edge Delivery Services 是 Adobe Experience Manager 的一部分，这样 Edge D
 
 ## 获取对 Edge Delivery Services 的访问权限 {#getting-access}
 
-可以轻松开始使用 Edge Delivery Services。遵照[开始使用 - 开发人员教程](https://www.hlx.live/developer/tutorial)开始使用。
+使用Edge Delivery Services可轻松入门。 遵照[开始使用 - 开发人员教程](https://www.hlx.live/developer/tutorial)开始使用。
 
 ## 从 Adobe 获取帮助 {#adobe-gethelp}
 

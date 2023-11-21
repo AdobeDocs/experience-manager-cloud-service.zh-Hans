@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 5%
@@ -190,7 +190,7 @@ ht-degree: 5%
    >
    >创建图像集时，可以更改图像集缩略图。 或者，您可以让Experience Manager根据图像集中的资源自动选择缩略图。 要选择缩略图，请选择 **[!UICONTROL 更改缩略图]** 位于图像集编辑器页面上“标题”字段上方。 然后，选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定希望Experience Manager从图像集生成缩略图，请选择 **[!UICONTROL 切换到]** **[!UICONTROL 自动缩略图]**.
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。新创建的图像集将显示在您创建该图像集的文件夹中。
+1. 单击&#x200B;**[!UICONTROL 保存]**。您创建的图像集会显示在您创建该图像集的文件夹中。
 
 ## 查看图像集 {#viewing-image-sets}
 

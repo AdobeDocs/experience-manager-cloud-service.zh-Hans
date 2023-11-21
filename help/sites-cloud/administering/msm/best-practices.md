@@ -4,10 +4,10 @@ description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -113,9 +113,9 @@ MSM 可通过两种方式来帮助创建多语言网站：
    * 不要向此配置添加其他操作。
 1. 定位新配置。
    * 要在 Live Copy 中的旧位置删除相应页面时完全转出页面移动，请执行以下操作：
-      * 将新创建的配置放置在标准转出配置的前面。标准转出配置将负责删除旧位置的页面。
+      * 将创建的配置放置在标准转出配置之前。 标准转出配置将负责删除旧位置的页面。
       * 要转出页面移动并将相应页面保留在 Live Copy 中的旧位置（实质上是复制内容），请执行以下操作：
-         * 将新创建的配置放置在标准转出配置的后面。这将确保未在 Live Copy 中删除内容或从发布中停用内容。
+         * 将创建的配置放置在标准转出配置的后面。 这将确保未在 Live Copy 中删除内容或从发布中停用内容。
 
 ## 自定义转出 {#customizing-rollouts}
 

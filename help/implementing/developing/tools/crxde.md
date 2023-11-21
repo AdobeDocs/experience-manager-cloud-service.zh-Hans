@@ -2,9 +2,9 @@
 title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入门的一部分，您可以在浏览器中访问和修改本地开发环境中的存储库。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ CRXDE Lite的用户界面有很多部分，具有很多功能。
 >
 大多数编辑操作，包括 **创建节点**，将所有更改保存在内存中，并且仅在保存时将它们存储在存储库中(使用 [**全部保存按钮**](#save-all-button))。 但是，某些操作（如移动）会自动保留。
 >
-在保存更改时，存储库也执行关于父节点的节点类型是否允许新创建的节点的验证。 如果在保存节点时收到错误消息，请检查内容结构是否有效(例如，您无法创建 `nt:unstructured` 作为子节点的节点 `nt:folder` 节点)。
+在保存更改时，存储库还会执行关于父节点的节点类型是否允许创建节点的验证。 如果在保存节点时收到错误消息，请检查内容结构是否有效(例如，您无法创建 `nt:unstructured` 作为子节点的节点 `nt:folder` 节点)。
 
 ## 创建资产 {#creating-a-property}
 

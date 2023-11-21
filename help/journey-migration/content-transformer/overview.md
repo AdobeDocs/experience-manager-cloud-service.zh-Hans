@@ -2,7 +2,7 @@
 title: 内容转换器概述
 description: 了解如何使用内容转换器检测和修复BPA报告的内容相关问题。
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Content Transformer (CT)是由Adobe开发的一个工具，可用于自动检测
 | DOPI | deprecated.ordered.index | 删除已弃用的索引。 |
 | OAUI | non.migrated.oauth.users | 请删除这些用户，以确保他们不会迁移到AEMas a Cloud Service。 |
 | PCX | page.complexity.medium <br> page.complexity.high | 请删除页面/子页面，或将其移动到其他位置，以确保它们不会迁移到AEMas a Cloud Service。 |
-| REP | forward.replication <br> 反向复制 <br> standard.replication.agent.modification <br> custom.replication.agent.detection | 删除新创建的复制代理。 <br> 或者 <br> 删除已修改/添加的属性。 |
+| REP | forward.replication <br> 反向复制 <br> standard.replication.agent.modification <br> custom.replication.agent.detection | 删除已创建的复制代理。 <br> 或者 <br> 删除已修改/添加的属性。 |
 | URS | clientlibs.location <br> file.location <br> 节点位置 <br> workflow.location | 移到正确的位置，以避免迁移期间出现问题。 |
 | URS | node.size | 将节点临时移动到`/etc/packages/content-transformation/paths` 以确保它们不会迁移到AEMas a Cloud Service。 |
 

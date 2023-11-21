@@ -3,9 +3,9 @@ title: 如何预填自适应表单字段？
 description: 使用现有数据预填自适应表单的字段，用户可通过使用其社交个人资料登录在表单中预填基本信息。
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: ebb77adfc97c805383de660d238e04a2173122b7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2041'
 ht-degree: 4%
 
 ---
@@ -261,7 +261,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
-> 根据经验，如果绑定字段和未绑定字段在最终用户填充的数据中相交，请勿将其混合使用。 如果可能，您应该修改架构或XFA表单模板，并为未绑定的字段添加一个条目，这样该字段也会绑定，并且其数据就像提交数据中的其他字段一样可用。
+> 根据经验，如果绑定字段和未绑定字段在用户填充的数据中相交，请勿将其混合使用。 如果可能，您应该修改架构或XFA表单模板，并为未绑定的字段添加一个条目，这样该字段也会绑定，并且其数据就像提交数据中的其他字段一样可用。
 
 ## 支持预填充用户数据的协议 {#supported-protocols-for-prefilling-user-data}
 

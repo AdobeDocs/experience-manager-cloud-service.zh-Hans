@@ -2,7 +2,7 @@
 title: 如何为AEM Forms设置本地开发环境？
 description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2846'
 ht-degree: 3%
@@ -286,7 +286,7 @@ Dispatcher是一个Apache HTTP Web服务器模块，在CDN和AEM发布层之间�
 
 ### 设置本地调度程序 {#setup-local-dispatcher}
 
-此 [!DNL Experience Manager] as a Cloud ServiceSDK包括推荐的Dispatcher工具版本，这有助于在本地配置、验证和模拟Dispatcher。 Dispatcher工具基于Docker，提供了命令行工具，用于将Apache HTTP Web Server和Dispatcher配置文件转换为兼容的格式并将其部署到Docker容器中运行的Dispatcher。
+此 [!DNL Experience Manager] as a Cloud ServiceSDK包括推荐的Dispatcher工具版本，该版本便于在本地配置、验证和模拟Dispatcher。 Dispatcher工具基于Docker，提供了命令行工具，用于将Apache HTTP Web Server和Dispatcher配置文件转换为兼容的格式并将其部署到Docker容器中运行的Dispatcher。
 
 Dispatcher上的缓存允许 [!DNL AEM Forms] 在客户端预填充自适应Forms。 它提高了预填充表单的渲染速度。
 
@@ -298,7 +298,7 @@ Dispatcher上的缓存允许 [!DNL AEM Forms] 在客户端预填充自适应Form
 
 1. 打开您的AEM项目并导航到 `\src\conf.dispatcher.d\available_farms`
 1. 创建 `default.farm` 文件。 例如：`forms.farm`。
-1. 打开新创建的 `forms.farm` 文件来编辑和替换以下代码：
+1. 打开已创建的 `forms.farm` 文件来编辑和替换以下代码：
 
    ```json
    #/ignoreUrlParams {

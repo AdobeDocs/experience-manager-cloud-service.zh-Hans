@@ -3,10 +3,10 @@ title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1676'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -444,7 +444,7 @@ URL 可以划分为以下部分：
 1. 输入版本号，如“1.0”。
 1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。使用路径查找器选择 `persistentQueries` 文件夹。例如，对于 `wknd` 配置，完整路径为 `/conf/wknd/settings/graphql/persistentQueries`。
 1. 点击&#x200B;**保存**&#x200B;以保存新的包定义并关闭对话框。
-1. 在新创建的包定义中点击&#x200B;**生成**&#x200B;按钮。
+1. 点按 **生成** 按钮创建包定义。
 
 生成包后，您可以：
 

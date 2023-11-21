@@ -2,7 +2,7 @@
 title: 在 AEM 中编辑外部 SPA
 description: 本文档介绍了将独立SPA上传到AEM实例、添加内容的可编辑部分以及启用创作的建议步骤。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 2%
@@ -111,7 +111,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
    ![文本组件属性](assets/external-spa-text-properties.png)
 
-   这些值作为属性传递到新创建的 `AEMText` React组件并可用于呈现内容。
+   这些值作为属性传递给所创建的 `AEMText` React组件并可用于呈现内容。
 
    ```javascript
    import React from 'react';
@@ -343,7 +343,7 @@ mvn clean install -PautoInstallSinglePackage
 
 1. 在SPA路由中添加帮助程序。
 
-   * 新创建的页面尚无法在AEM中呈现预期内容。 原因在于，路由器需要路径为 `/test` 而AEM活动路径为 `/wknd-spa-react/us/en/test`. 要适应URL的特定于AEM的部分，必须在SPA端添加一些帮助程序。
+   * 创建的页面尚无法在AEM中呈现预期内容。 原因在于，路由器需要路径为 `/test` 而AEM活动路径为 `/wknd-spa-react/us/en/test`. 要适应URL的特定于AEM的部分，必须在SPA端添加一些帮助程序。
 
    ![路由帮助程序](assets/external-spa-router-helper.png)
 
@@ -356,7 +356,7 @@ mvn clean install -PautoInstallSinglePackage
 
 1. 验证是否在AEM中编辑页面。
 
-   * 将项目部署到AEM并导航到新创建的 `test` 页面。 页面内容现在已呈现，并且AEM组件可供编辑。
+   * 将项目部署到AEM并导航到创建的 `test` 页面。 页面内容现在已呈现，并且AEM组件可供编辑。
 
 ## 框架限制 {#framework-limitations}
 

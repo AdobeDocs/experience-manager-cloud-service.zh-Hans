@@ -2,9 +2,9 @@
 title: 优化 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中对内容片段进行筛选、分页和排序时优化 GraphQL 查询，以实现 headless 内容交付。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1877'
 ht-degree: 65%
 
 ---
@@ -280,7 +280,7 @@ AEM 中的 GraphQL 支持两种类型的分页：
 
 ### 最小化内容片段嵌套 {#minimize-content-fragment-nesting}
 
-嵌套内容片段是生成自定义内容结构模型的好方法。 您甚至可以具有一个带有嵌套片段的片段，该片段具有一个嵌套片段，该片段具有……等等。
+嵌套内容片段是生成自定义内容结构模型的好方法。 您甚至可以具有一个包含嵌套片段的片段，该片段还具有一个嵌套片段，该片段具有……等等。
 
 但是，如果创建的结构级别过多，可能会增加GraphQL查询的处理时间，因为GraphQL必须遍历所有嵌套内容片段的整个层次结构。
 

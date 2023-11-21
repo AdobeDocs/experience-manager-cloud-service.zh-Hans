@@ -2,9 +2,9 @@
 title: 如何配置自适应表单的提交操作?
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: f79ed400ac2c1956dd7946cec2881f4e77d4bd41
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 86%
 
 ---
@@ -447,7 +447,7 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 
 启用服务器端验证
 
-如果最终用户绕过这些验证并提交表单，服务器将重新执行验证。如果服务器端验证失败，则将停止提交事务。最终用户将再次看到原始表单。捕获的数据和提交的数据将作为错误呈现给用户。
+如果最终用户绕过这些验证并提交表单，服务器将重新执行验证。如果服务器端验证失败，则将停止提交事务。用户将再次看到原始表单。 捕获的数据和提交的数据将作为错误呈现给用户。
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '6663'
+source-wordcount: '6661'
 ht-degree: 7%
 
 ---
@@ -52,7 +52,7 @@ name used to be Experience Platform Launch. Changed to Experience Platform Data 
 
 ### 关于使用Adobe Analytics进行跟踪  {#about-tracking-using-adobe-analytics}
 
-通过Adobe Analytics，您可以跟踪最终用户在您的网站上与Dynamic Media查看器交互时执行的操作。 Adobe Analytics还允许您跟踪特定于查看器的数据。 例如，您可以跟踪和记录视图加载事件以及资产名称、发生的任何缩放操作和视频播放操作。
+通过Adobe Analytics，您可以跟踪用户在网站上与Dynamic Media查看器交互时执行的操作。 Adobe Analytics还允许您跟踪特定于查看器的数据。 例如，您可以跟踪和记录视图加载事件以及资产名称、发生的任何缩放操作和视频播放操作。
 
 在Experience Platform标签中， *数据元素* 和 *规则* 共同启用Adobe Analytics跟踪。
 
@@ -221,9 +221,9 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
    * 使用核心Experience Platform标记扩展中的按键事件作为触发器。
    * 发送值 **[!UICONTROL 缩放比例]** 数据元素到Adobe Analytics。
 
-现在，假定最终用户加载网页时带有两个查看器。 在 *查看器1*，则将缩放比例放大到50%；然后，放大 *查看器2*，则将缩放比例放大到25%。 在 *查看器1*，然后平移图像，最后按键盘上的键。
+现在，假定用户加载网页时带有两个查看器。 在 *查看器1*，则将缩放比例放大到50%；然后，放大 *查看器2*，则将缩放比例放大到25%。 在 *查看器1*，然后平移图像，最后按键盘上的键。
 
-最终用户的活动会导致对Adobe Analytics进行以下两次跟踪调用：
+用户的活动会导致对Adobe Analytics进行以下两次跟踪调用：
 
 * 第一次调用是因为 **[!UICONTROL Trackpan]** 规则在用户登录时触发 *查看器1*. 该调用发送50%作为的值 **[!UICONTROL 缩放比例]** 数据元素，因为数据元素知道规则触发自 *查看器1* 并提取相应的比例值；
 * 第二次调用是因为 **[!UICONTROL TrackKey]** 用户按键盘上的键时会触发规则。 该调用发送25%作为值 **[!UICONTROL 缩放比例]** 数据元素，因为规则不是由查看器触发。 因此，数据元素会返回最新的值。
@@ -519,7 +519,7 @@ Experience Platform标记中的资产是一个命名配置，可将所有设置�
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-   选择新创建的资产，然后继续执行 *扩展的安装和设置*.
+   选择已创建的资产，然后继续执行 *扩展的安装和设置*.
 
 ### 安装和设置扩展 {#installing-and-setup-of-extensions}
 

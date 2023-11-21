@@ -2,10 +2,10 @@
 title: 检查域名状态
 description: 了解如何确定 Cloud Manager 是否已成功验证您的自定义域名。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 94%
+source-wordcount: '646'
+ht-degree: 88%
 
 ---
 
@@ -82,7 +82,7 @@ Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息�
 
 ## 自定义域名的现有 CDN 配置 {#pre-existing-cdn}
 
-如果您的自定义域名已有预先存在的 CDN 配置，则&#x200B;**自定义域名**&#x200B;和&#x200B;**环境**&#x200B;页面上会有一条提示消息，鼓励您通过 UI 添加这些配置，使其在 Cloud Manager 中可见并可配置。
+如果您的自定义域名已有CDN配置，则 **自定义域名** 和 **环境** 鼓励您通过UI添加这些配置，以便它们在Cloud Manager中可见和可配置。
 
 使用 UI 迁移所有预先存在的环境配置后，消息将消失。消息可能需要 1 – 2 个工作日才能消失。
 

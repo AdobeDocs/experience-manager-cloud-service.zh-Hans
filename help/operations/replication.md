@@ -2,7 +2,7 @@
 title: 复制
 description: 了解AEMas a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 43%
@@ -64,7 +64,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 1. 从 AEM as a Cloud Service 主页，转到&#x200B;**工具 – 工作流 – 模型**.
 1. 在“工作流模型”页面中，按屏幕右上角的&#x200B;**创建.**
 1. 为模型添加标题和名称。 有关更多信息，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
-1. 从列表中选择新创建的模型，然后按 **编辑**
+1. 从列表中选择已创建的模型，然后按 **编辑**
 1. 在以下窗口中，将“流程步骤”拖放到当前模型流中：
 
    ![流程步骤](/help/operations/assets/processstep.png)

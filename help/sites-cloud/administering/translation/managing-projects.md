@@ -4,7 +4,7 @@ description: 了解如何在 AEM 中创建和管理机器翻译项目和人工�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '3971'
 ht-degree: 86%
@@ -455,7 +455,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 1. 取消发布与要移动的源页面关联的语言副本。
 1. 删除它们。
 1. 从新移动的源页面创建新的语言副本。
-1. 发布新创建的语言副本。
+1. 发布已创建的语言副本。
 
 ## 导入和导出翻译作业 {#import-export}
 

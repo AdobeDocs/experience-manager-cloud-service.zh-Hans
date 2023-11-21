@@ -2,10 +2,10 @@
 title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: ecb168e9261b3e3ed89e4cbe430b3da9f777a795
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 89%
+source-wordcount: '506'
+ht-degree: 90%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 89%
 
    ![编辑安全设置](assets/edit-program-security.png)
 
-   * HIPAA在以下时间后无法启用或禁用： [项目创建。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+   * HIPAA无法在以下时间后启用或禁用 [项目创建。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
       * [详细了解](https://www.adobe.com/go/hipaa-ready_cn) Adobe 的 HIPAA 就绪解决方案实施。
    * 激活后，可以通过设置 [非生产管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
 

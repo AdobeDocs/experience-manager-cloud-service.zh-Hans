@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.11.
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 60%
+source-wordcount: '735'
+ht-degree: 44%
 
 ---
 
@@ -25,20 +25,20 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 
 
 ## 新增功能 {#what-is-new}
 
-* Web应用程序防火墙 — DDOS保护(WAF-DDOS)现在可作为您的AEMas a Cloud Service权利的一部分购买，并且 [可以自助方式配置。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+* Web Application Firewall-DDOS保护(WAF-DDOS)现在可作为您的AEMas a Cloud Service权利文件的一部分购买，并且 [可以自助方式配置。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 * 专业化 [配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 现在可在几分钟内配置和部署流量过滤器规则，包括WAF规则。
 * [复制内容时](/help/implementing/developing/tools/content-copy.md) 从更高的环境到开发环境，现在会显示一条消息，建议在复制大型内容集时务必谨慎，因为开发环境存在容量限制。
-* [管道执行详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)现在将显示管道执行中的所有步骤，尚未开始的步骤将灰显。
-* 在&#x200B;**[活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)**&#x200B;页面和&#x200B;**[管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)**&#x200B;页面上，单击具有正在运行状态的管道时，现在将显示管道执行摘要。
+* [管道执行详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) 现在显示管道执行中的所有步骤，其中尚未开始的步骤呈灰显状态。
+* 在两者上 **[活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)** 和 **[管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)** 现在，在选择具有运行状态的管道时，可以使用管道执行的摘要。
 * 一个新的&#x200B;**持续时间**&#x200B;部分已添加到[管道详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)，其中包括基于该项目的历史趋势的管道步骤的平均持续时间。
 * 在 [管道执行页面，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window) 现在，完成的步骤会显示持续时间。
-* 以下内容的执行 [重用生成工件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 现在将显示最初构建这些工件的执行的链接。
+* 以下内容的执行 [重用生成工件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 现在，显示指向最初构建这些工件的执行的链接。
 * 要选择的选项 **重要量度失败** 现在可以配置 [代码质量管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 也一样。
 
 
 ## 早期采用计划 {#early-adoption}
 
-成为我们早期采用计划的一部分，并有机会测试一些即将推出的功能。
+为了有机会测试一些即将推出的功能，请加入Adobe的早期采用计划。
 
 ### 自带 GitHub {#byo-github}
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 
 
 ### 自定义权限 {#custom-permissions}
 
-[Cloud Manager 自定义权限](/help/implementing/cloud-manager/custom-permissions.md)可让您创建具有可配置权限的新的自定义权限配置文件，以限制 Cloud Manager 用户对项目、管道和环境的访问。
+[Cloud Manager自定义权限](/help/implementing/cloud-manager/custom-permissions.md) 允许您使用可配置的权限创建自定义权限配置文件，以限制对Cloud Manager用户的项目、管道和环境的访问。
 
 如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `Grp-CloudManager-custom-permissions@adobe.com` 从与Adobe ID关联的电子邮件地址中查找。
 
@@ -69,18 +69,18 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 
 
 [Cloud Manager 体验审核仪表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)包括页面性能分数的趋势视图以及帮助您改进的见解和推荐。体验审核作为 Cloud Manager 生产管道中的一个步骤包含在内。
 
-该仪表板利用 Google Lighthouse，这是一种开源自动化工具，用于提高 Web 应用程序的质量。您可以针对任何网页（公共网页或需要身份验证的网页）运行它。它对性能、可访问性、SEO、搜索引擎优化等进行审核。
+仪表板使用Google Lighthouse，这是一个开源自动工具，用于提高Web应用程序的质量。 您可以针对任何网页、公共网页或需要身份验证的网页运行它。 它对性能、可访问性、SEO、搜索引擎优化等进行审核。
 
-有兴趣试驾新仪表板吗？发送电子邮件至 `aem-lighthouse-pilot@adobe.com` 从与Adobe ID关联的电子邮件中，我们可以帮助您入门。
+有兴趣试驾新仪表板吗？若要开始，请发送电子邮件至 `aem-lighthouse-pilot@adobe.com` 来自与Adobe ID关联的电子邮件。
 
 ## 已知问题 {#known-issues}
 
-存在一个已知的错误阻止 [配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) 被推送到生产环境中。
+存在一个已知错误，该错误会阻止 [配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline) 被推送到生产环境中。
 
 如果 **在部署到生产环境之前暂停** 选项是配置管道所必需的，以下是建议的解决方法，直到错误得到解决。
 
 1. 运行管道.
 1. 在暂存环境中测试代码。
 1. 在部署和批准可用时，单击 **拒绝**.
-1. 编辑管道以禁用 **在部署到生产环境之前暂停** 选项。
-1. 再次运行管道。 它将在暂存环境中再次运行，然后在生产环境中再次运行。
+1. 编辑管道，以便禁用 **在部署到生产环境之前暂停** 选项。
+1. 再次运行管道，以便能够在暂存环境中再次运行，然后在生产环境中再次运行。

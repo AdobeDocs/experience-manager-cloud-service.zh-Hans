@@ -2,7 +2,7 @@
 title: 如何基于核心组件为自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 5%
@@ -145,7 +145,7 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
    <filter root="/etc/languages"/>
    ```
 
-   ![将新创建的文件夹添加到 `filter.xml` 下 `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+   ![将创建的文件夹添加到 `filter.xml` 下 `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 ### 6.提交更改并部署管道 {#commit-changes-in-repo-deploy-pipeline}
 

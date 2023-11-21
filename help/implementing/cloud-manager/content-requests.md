@@ -2,9 +2,9 @@
 title: 了解 Cloud Service 内容请求
 description: 如果您从Adobe购买了内容请求许可证，请了解Adobe Experience Cloud as a Service测量的内容请求类型以及与组织分析报告工具的差异。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 10%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 10%
 
 ## Cloud Service内容请求的差异{#content-requests-variances}
 
-内容请求可能与组织的Analytics报告工具存在差异，如下表所示。 通常，Analytics工具通过客户端工具收集数据 <b>不应使用</b> 报告给定站点的内容请求数，原因很简单，它们通常依赖于最终用户同意触发，因此会错过流量的很大一部分。 在日志文件中收集数据服务器端的Analytics工具，或者为在AEMas a Cloud Service之上添加自己的CDN的客户提供的CDN报告，将提供更好的计数。 要报告页面查看次数及其相关性能，AdobeRUM数据服务是Adobe推荐的选项。
+内容请求可能与组织的Analytics报告工具存在差异，如下表所示。 通常，Analytics工具通过客户端工具收集数据 <b>不应使用</b> 报告给定站点的内容请求数，原因很简单，它们通常依赖于触发的用户同意，因此会错过流量的很大一部分。 在日志文件中收集数据服务器端的Analytics工具，或者为在AEMas a Cloud Service之上添加自己的CDN的客户提供的CDN报告，将提供更好的计数。 要报告页面查看次数及其相关性能，AdobeRUM数据服务是Adobe推荐的选项。
 
 | 差异原因 | 解释 |
 |---|---|
-| 最终用户同意 | 依赖客户端工具的Analytics工具通常取决于最终用户同意触发。 这可能表示大多数流量未被跟踪。 对于希望自行测量内容请求的客户，建议依赖分析工具来收集数据服务器端或CDN报告。 |
+| 最终用户同意 | 依赖客户端工具的Analytics工具通常取决于用户是否同意触发。 这可能表示大多数流量未被跟踪。 对于希望自行测量内容请求的客户，建议依赖分析工具来收集数据服务器端或CDN报告。 |
 | 标记 | 作为Adobe Experience Manager (AEM)内容请求跟踪的所有页面或API调用可能不会使用Analytics跟踪进行标记。 |
 | Tag Management 规则 | Tag Management规则设置可能会导致页面上的各种数据收集配置，从而导致与内容请求跟踪的某些差异组合。 |
 | 机器人 | AEM 尚未预先识别和移除的未知机器人程序可能会导致跟踪不一致。 |

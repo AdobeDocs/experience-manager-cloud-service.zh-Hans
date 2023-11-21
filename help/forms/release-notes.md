@@ -1,11 +1,11 @@
 ---
-title: AEM Formsas a Cloud Service发行说明
-description: 了解AEM Formsas a Cloud Service的新增功能、测试版和预发行信息等。
+title: AEM Forms as a Cloud Service 发行说明
+description: 了解 AEM Forms as a Cloud Service 的新功能、Beta 版、预发布信息等。
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 8074c0e9566b679830a56094bc9b47cb22f4bb4a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 98%
+source-wordcount: '2024'
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms-oct-2021}
 
-- **Analytics for Adaptive Forms**：您现在可以通过 Adobe Analytics for Adaptive Forms 捕获和跟踪已登录和未登录（匿名）的行为，从而收集最终用户洞察。这有助于根据数据做出明智的决策，从而改善最终用户体验。
+- **Analytics for Adaptive Forms**：您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）的行为，从而收集用户洞察。 这有助于根据数据做出明智的决策，从而改善用户体验。
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms-oct-2021}
 
@@ -52,7 +52,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 - **在自适应表单中使用 Adobe Sign 角色**：用于商业和企业服务级别的 Adobe Sign 可让您选择扩展协议接收者的角色（不仅限于签名者），以便更好地匹配他们的工作流要求。您现在可以[允许每个协议接收者在自适应表单中配置自己的角色](working-with-adobe-sign.md#addsignerstoanadaptiveform)，签名者是默认角色。
 
-- **Analytics for Adaptive Forms**：您现在可以[通过 Adobe Analytics for Adaptive Forms 捕获和跟踪最终用户行为](integrate-aem-forms-with-adobe-analytics.md)，从而收集最终用户洞察。这有助于根据数据做出明智的决策，从而改善最终用户体验。
+- **Analytics for Adaptive Forms**：您现在可以捕获和 [通过Adobe Analytics跟踪用户行为](integrate-aem-forms-with-adobe-analytics.md) (适用于Adaptive Forms)收集用户洞察。 这有助于根据数据做出明智的决策，从而改善用户体验。
 
 - **轻松地将 AEM Forms 与 Microsoft Dynamics 和 Salesforce 连接**：此服务为 Microsoft Dynamics 和 Salesforce 提供现成的数据源配置和数据模型，使得[开发人员可以更快、更轻松地配置 Microsoft Dynamics 和 Salesforce 作为自适应表单的数据源](configure-msdynamics-salesforce.md)。
 
@@ -61,7 +61,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 ### [!DNL Forms] 的 Beta 版功能 {#sep-what-is-new-forms-prerelease}
 
 - **统一存储连接器：**使用统一存储连接器将客户管理的存储库中的进程内数据外部化。例如，您可以将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
-  <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
+  <!--* Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
    - 使用 XML 数据填充模板文件来生成文档。
@@ -90,7 +90,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
   * Enable searching of forms based on a various criteria, such as form properties, metadata, and tags.
 
-  * Lists drafts and submissions related to Adaptive Form created by end user.
+  * Lists drafts and submissions related to Adaptive Form created by user.
 
   -->
 
@@ -110,7 +110,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 - **统一存储连接器：**&#x200B;使用统一存储连接器将客户管理的存储库中的进程内数据外部化。例如，您可以
 
-   - 启用 Forms Portal 的保存和恢复功能，将自适应表单草稿存储到客户管理的数据存储库中。
+   - 启用Forms Portal的保存和恢复功能，将自适应表单草稿存储到客户管理的数据存储库中。
    - 将包含敏感个人数据 (SPD) 的进程内 AEM Workflow 数据（AEM Workflow 变量数据）存储在客户管理的存储库中。
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](aem-forms-cloud-service-communications.md) 帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
@@ -124,7 +124,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service 将持续改进。�
 
 - **在自适应表单中使用 Adobe Sign 角色**：用于商业和企业服务级别的 Adobe Sign 可让您选择扩展协议接收者的角色（不仅限于签名者），以便更好地匹配他们的工作流要求。您现在可以[允许每个协议接收者在自适应表单中配置自己的角色](working-with-adobe-sign.md#addsignerstoanadaptiveform)，签名者是默认角色。
 
-- **Analytics for Adaptive Forms**：您现在可以通过 Adobe Analytics for Adaptive Forms 捕获和跟踪最终用户行为，从而收集最终用户洞察。这有助于根据数据做出明智的决策，从而改善最终用户体验。
+- **Analytics for Adaptive Forms**：您现在可以通过Adobe Analytics for Adaptive Forms捕获和跟踪用户行为，从而收集用户洞察。 这有助于根据数据做出明智的决策，从而改善用户体验。
 
 - **轻松地将 AEM Forms 与 Microsoft Dynamics 和 Salesforce 连接**：此服务为 Microsoft Dynamics 和 Salesforce 提供现成的数据源配置和数据模型，使得[开发人员可以更快、更轻松地配置 Microsoft Dynamics 和 Salesforce 作为自适应表单的数据源](configure-msdynamics-salesforce.md)。
 
@@ -207,9 +207,9 @@ Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML �
 
 - **在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法**
 
-  通过先进的机器学习算法，Adobe Sign 的 Government ID 流程让世界各地的公司均可确保高质量地验证其收件人的身份。现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
+  借助先进的机器学习算法，Adobe Sign的Government ID流程让世界各地的企业均可确保高质量地验证其收件人的身份。 现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
 
-  Government ID 是一种高级的身份验证方法，它指示收件人[上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/cn/in/sign/using/adobesign-authentication-government-id.html)，然后评估该证明文件以确保真实有效。
+  Government ID是一种高级的身份验证方法，它指示收件人 [上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/cn/in/sign/using/adobesign-authentication-government-id.html)，然后评估该文档以确保真实有效。
 
 - **支持对异步提交自适应表单使用表单内签名体验**
 

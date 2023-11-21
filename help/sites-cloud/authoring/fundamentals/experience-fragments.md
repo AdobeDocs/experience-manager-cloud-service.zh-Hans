@@ -2,9 +2,9 @@
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2042'
 ht-degree: 99%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 99%
 如果没有体验片段，作者需要复制并粘贴该片段。创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。
 体验片段无需复制/粘贴。
 * 支持 headless CMS 用例。
-作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/触点会使用该体验，然后将其提供给最终用户。
+作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/接触点将会使用该体验，然后交付给用户。
 
 >[!NOTE]
 >

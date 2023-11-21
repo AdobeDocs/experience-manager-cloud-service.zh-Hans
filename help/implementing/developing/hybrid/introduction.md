@@ -2,10 +2,10 @@
 title: SPA 简介和演练
 description: 本文介绍了 SPA 的概念，演练了如何使用基本 SPA 应用程序进行创作，并展示了它与底层 AEM SPA Editor 的关系。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 94%
+source-wordcount: '2065'
+ht-degree: 93%
 
 ---
 
@@ -130,7 +130,7 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 
 ## SPA 应用程序和 AEM SPA Editor {#spa-apps-and-the-aem-spa-editor}
 
-通过体验 SPA 对最终用户的行为方式并检查 SPA 页面，有助于更好地了解 SAP 应用程序如何与 AEM 中的 SPA 编辑器结合使用。
+体验SPA如何为用户执行行为，然后检查SPA页面，有助于更好地了解SAP应用程序如何与AEM中的SPA编辑器配合工作。
 
 ### 使用 SPA 应用程序 {#using-an-spa-application}
 

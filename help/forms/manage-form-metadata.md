@@ -2,9 +2,9 @@
 title: 如何管理AEM Forms的元数据？
 description: 元数据允许更轻松地分类和组织资源，并帮助正在查找特定资源的用户。
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1742'
 ht-degree: 6%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 6%
      <li>HTML</li> 
      <li>PDF</li> 
      <li> 双向</li> 
-    </ul> <p>此选项用于限制表单仅在Forms Portal上对最终用户可见。</p> </td> 
+    </ul> <p>此选项用于限制表单仅在Forms Portal上对用户可见的表单的呈现格式。</p> </td> 
   </tr> 
   <tr> 
    <td>标记</td> 

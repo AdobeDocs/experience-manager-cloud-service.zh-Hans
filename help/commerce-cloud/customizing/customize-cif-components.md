@@ -1,6 +1,6 @@
 ---
 title: 自定义CIF核心组件
-description: 了解如何自定义AEM CIF核心组件。 本教程介绍如何安全地扩展CIF核心组件以满足特定于业务的要求。 了解如何扩展GraphQL查询以返回自定义属性并在CIF核心组件中显示新属性。
+description: 了解如何自定义AEM CIF核心组件。 本教程介绍了如何安全地扩展CIF核心组件以满足特定于业务的要求。 了解如何扩展GraphQL查询以返回自定义属性并在CIF核心组件中显示新属性。
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 2%
@@ -59,7 +59,7 @@ Venia品牌最近开始使用可持续材料生产一些产品，该公司希望
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. 添加必要的OSGi配置，以便将AEM实例连接到Adobe Commerce实例，或将配置添加到新创建的项目。
+1. 添加必要的OSGi配置，以便将AEM实例连接到Adobe Commerce实例，或将配置添加到创建的项目。
 
 1. 此时，您应该拥有连接到Adobe Commerce实例的工作中店面版本。 导航至 `US` > `Home` 页面位置： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -332,11 +332,11 @@ Sling模型是作为Java™实现的，并且可以在 **核心** 所生成项�
 
 AEM组件的常见扩展是修改组件生成的标记。 此编辑操作可通过覆盖 [HTL脚本](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 组件用于呈现其标记的内容。 HTML模板语言(HTL)是一种轻量级模板语言，AEM组件使用它根据创作的内容动态呈现标记，从而允许组件重用。 例如，产品Teaser可以重复使用以显示不同的产品。
 
-在本例中，您希望在Teaser顶部呈现横幅，以表明产品基于自定义属性是“环保的”。 的设计模式 [自定义标记](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 组件是所有AEM组件的标准，而不仅仅是AEM CIF核心组件。
+在本例中，您希望在Teaser顶部呈现横幅，以表明产品基于自定义属性是“环保的”。 的设计模式 [自定义标记](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 组件是所有AEM组件的标准，而不仅仅是AEM CIF核心组件的标准。
 
 >[!NOTE]
 >
-> 如果您使用CIF产品和类别选取器（如本产品Teaser或CIF页面组件）自定义组件，请确保包含所需的 `cif.shell.picker` 组件对话框的clientlib。 请参阅 [CIF产品和类别选取器的用法](use-cif-pickers.md) 以了解详细信息。
+> 如果您使用CIF产品和类别选取器(如本产品Teaser或CIF页面组件)自定义组件，请确保包含所需的 `cif.shell.picker` 组件对话框的clientlib。 请参阅 [CIF产品和类别选取器的用法](use-cif-pickers.md) 以了解详细信息。
 
 1. 在IDE中，导航并展开 `ui.apps` 模块并将文件夹层次结构展开到： `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 并检查 `.content.xml` 文件。
 
@@ -352,7 +352,7 @@ AEM组件的常见扩展是修改组件生成的标记。 此编辑操作可通�
        componentGroup="Venia - Commerce"/>
    ```
 
-   上面的组件定义适用于项目中的产品Teaser组件。 注意属性 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. 此属性是创建 [代理组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). AEM您可以使用 `sling:resourceSuperType` 以继承所有功能。
+   上面的组件定义适用于项目中的产品Teaser组件。 注意属性 `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. 此属性是创建 [代理组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). AEM CIF您可以使用 `sling:resourceSuperType` 以继承所有功能。
 
 1. 打开文件 `productteaser.html`. 此文件是 `productteaser.html` 文件来自 [CIF产品Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
 

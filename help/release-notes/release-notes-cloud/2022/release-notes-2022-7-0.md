@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.7.0 版的发行说明。'
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 82%
@@ -39,7 +39,7 @@ ht-degree: 82%
 
 * [内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)现在支持[键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)。
 
-* AEM作为Cloud Service [Web优化图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 通过提供WebP等格式，大大提高了页面速度。 这项新的服务还提供了更灵活的图像大小调整和转换选项。所有版本的 [核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 允许使用此服务，并可通过单击图像组件策略中的选项将图像作为WebP交付。
+* AEM作为Cloud Service [Web优化图像交付](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) 通过提供WebP等格式，大大提高了页面速度。 这项新的服务还提供了更灵活的图像大小调整和转换选项。所有版本的 [核心图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 允许您使用此服务，并通过单击图像组件策略中的选项将图像作为WebP交付。
 
 * AEM个性化活动现在可以使用体验片段来代替我们的旧功能/服务。 该功能：
    * 启用一个迁移路径，其中 AEM 内容会推广体验片段功能/服务，而不是旧的库功能/服务，以便提供与未来大规模个性化保持一致的具有适当样式的内容。

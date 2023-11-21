@@ -2,10 +2,10 @@
 title: 管理 SSL 证书
 description: 了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 84%
+source-wordcount: '636'
+ht-degree: 78%
 
 ---
 
@@ -66,7 +66,7 @@ Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。�
 
 ## 预先存在的 CDN 配置 {#pre-existing-cdn}
 
-如果您的 SSL 证书已有 CDN 配置，则 **SSL 证书**&#x200B;页面上会显示一条信息性消息，鼓励您通过 UI 添加这些配置，以便它们在 Cloud Manager 中可见和可配置。
+如果您的SSL证书已有CDN配置，则 **SSL证书** 页面，鼓励您通过UI添加这些配置，以便它们在Cloud Manager中可见和可配置。
 
 使用 UI 迁移所有预先存在的环境配置后，消息将消失。消息可能需要 1 – 2 个工作日才能消失。
 

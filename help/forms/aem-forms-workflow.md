@@ -4,7 +4,7 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 使用AEM Forms Workflow自动化并快速构建业务流程工作流。 例如，审阅和批准、PDF生成、Adobe Sign工作流程。
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '2392'
 ht-degree: 2%
@@ -66,7 +66,7 @@ AEM提供了一个直观的用户界面，用于使用提供的工作流步骤�
 1. 打开工作流模型控制台。 默认URL为 `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. 选择 **创建**，则 **创建模型**. 此时将显示“添加工作流模型”对话框。
 1. 输入 **标题** 和 **名称** （可选）。 例如，抵押贷款申请。 点按 **完成**.
-1. 选择新创建的工作流模型并点击 **编辑**. 现在，您可以添加工作流步骤来构建业务逻辑。 首次创建工作流模型时，它包含：
+1. 选择已创建的工作流模型并点按 **编辑**. 现在，您可以添加工作流步骤来构建业务逻辑。 首次创建工作流模型时，它包含：
 
    * 步骤：流程开始和流程结束。 这些步骤表示工作流的开始和结束。 这些步骤是必需的，无法编辑或删除。
    * 名为步骤1的参与者步骤示例。 此步骤配置为将工作项分配给管理员用户。 删除此步骤。

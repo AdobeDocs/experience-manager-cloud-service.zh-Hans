@@ -2,10 +2,10 @@
 title: 实施 AEM 连接器
 description: 了解如何构建、测试和实施AEM连接器。 此外，您还可以了解常见的集成模式。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 98%
+source-wordcount: '980'
+ht-degree: 95%
 
 ---
 
@@ -63,7 +63,7 @@ Experience Manager as a Cloud Service [文档](../overview/introduction.md)提�
 
 现有连接器可能也需要重构，以将可能曾放置 `/etc` 的任何配置移动到其他顶级文件夹中，例如 `/conf`。此重构是作为 AEM 6.5 的一部分完成的，并在 [AEM 6.5 文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中进行了描述。
 
-建议将大多数连接器代码放在 `/apps/connectors/<vendor>` 下，以便为具有多个连接器的客户提供干净的存储库结构。
+建议将大多数连接器代码放在 `/apps/connectors/<vendor>` 为具有多个连接器的客户推广干净的存储库结构。
 
 云服务配置
 -----------------------------

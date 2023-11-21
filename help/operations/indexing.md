@@ -2,9 +2,9 @@
 title: 内容搜索与索引
 description: 了解AEMas a Cloud Service中的“内容搜索”和“索引”。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2427'
 ht-degree: 29%
 
 ---
@@ -96,7 +96,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 1. 在中使用更新的索引名称创建新文件夹 `ui.apps` 目录：
    * 示例: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. 添加配置文件 `.content.xml` ，并使用新创建的文件夹中的自定义配置。 以下是自定义设置的示例：文件名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. 添加配置文件 `.content.xml` 将自定义配置放置在创建的文件夹中。 以下是自定义设置的示例：文件名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -307,7 +307,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 当前限制 {#current-limitations}
 
-仅类型为的索引支持索引管理 `lucene`，替换为 `compatVersion` 设置为 `2`. 在内部，可以配置其他索引并将其用于查询，例如Elasticsearch索引。 针对编写的查询 `damAssetLucene` 在AEMas a Cloud Service上，索引实际上可能会针对此索引的Elasticsearch版本执行。 应用程序最终用户不会察觉到这种差异，但某些工具 `explain` 功能报告不同的索引。 有关Lucene和Elasticsearch索引之间的区别，请参阅 [Apache Jackrabbit Oak中的Elasticsearch文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 客户不能也不需要直接配置Elasticsearch索引。
+仅类型为的索引支持索引管理 `lucene`，替换为 `compatVersion` 设置为 `2`. 在内部，可以配置其他索引并将其用于查询，例如Elasticsearch索引。 针对编写的查询 `damAssetLucene` 在AEMas a Cloud Service上，索引实际上可能针对此索引的Elasticsearch版本运行。 应用程序用户不会察觉到这种差异，但是 `explain` 功能报告不同的索引。 有关Lucene和Elasticsearch索引之间的区别，请参阅 [Apache Jackrabbit Oak中的Elasticsearch文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 客户不能也不需要直接配置Elasticsearch索引。
 
 仅支持内置分析器（即产品附带的分析器）。 不支持自定义分析器。
 

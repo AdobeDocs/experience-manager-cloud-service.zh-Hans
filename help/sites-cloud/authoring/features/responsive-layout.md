@@ -2,9 +2,9 @@
 title: 响应式布局
 description: AEM 让您能够为页面实现响应式布局
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1732'
 ht-degree: 90%
 
 ---
@@ -149,7 +149,7 @@ AEM 让您根据设备的宽度定义布局：
 >
 >由于布局容器是段落系统，因此删除该组件即意味着同时删除布局网格以及容器中包含的所有组件（及其内容）。
 
-1. 如果将鼠标悬停在网格占位符上或点按网格占位符，将显示操作菜单。
+1. 如果将鼠标悬停在网格占位符上或点击该占位符，则会显示操作菜单。
 
    ![添加到布局容器](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

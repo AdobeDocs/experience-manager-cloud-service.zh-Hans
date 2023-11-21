@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 11%
@@ -118,7 +118,7 @@ ht-degree: 11%
 
 1. 要删除资源，请选中相应的复选框，然后选择 **[!UICONTROL 删除资源]**.
 1. 要应用预设，请选择 **[!UICONTROL 预设]** 选择要应用于资产的预设。
-1. 选择&#x200B;**[!UICONTROL 保存]**。新创建的混合媒体集会显示在您创建该混合媒体集的文件夹中。
+1. 选择&#x200B;**[!UICONTROL 保存]**。您创建的混合媒体集会显示在您创建该混合媒体集的文件夹中。
 
 ## 编辑混合媒体集 {#editing-mixed-media-sets}
 

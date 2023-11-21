@@ -2,9 +2,9 @@
 title: 自适应Forms的布局功能是什么？
 description: 自适应Forms在各种设备上的布局和外观受布局设置控制。 了解各种布局及其应用方式。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '860'
 ht-degree: 8%
 
 ---
@@ -71,7 +71,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 使用此布局，您可以放置 **[!UICONTROL 面板自适应表单]** 具有折叠样式导航的面板中的组件。 使用此布局，您还可以创建可重复的面板。 可重复面板允许您根据需要动态添加或移除面板。 您可以定义面板重复的最小和最大次数。 此外，可以根据面板项中提供的信息来动态确定面板的标题。
 
-摘要表达式可用于显示最终用户在最小化面板的标题中提供的值。
+摘要表达式可用于显示用户在最小化面板的标题中提供的值。
 
 ![在自适应Forms中使用折叠布局的可重复面板](assets/accordion-layout.png)
 

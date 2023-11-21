@@ -1,8 +1,6 @@
 ---
 title: 配置转录服务
-seo-title: Configure transcription service
 description: Adobe Experience Manager Assets 配置了 [!DNL Azure Media Services] ，它可以自动生成 WebVTT (vtt) 格式的支持音频或视频文件中的口语文本转录。
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,9 +9,9 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1689'
 ht-degree: 87%
 
 ---
@@ -157,7 +155,7 @@ ht-degree: 87%
 ## 已知限制 {#known-limitations}
 
 * 转录功能支持时长不超过 10 分钟的视频。
-* 视频标题长度必须少于 80 个字符。
+* 视频标题不能超过80个字符。
 * 支持的文件大小最多为 15 GB。
 * 支持的最大处理时间是 60 分钟。
 * 在付费 [!DNL Azure] 帐户中，您每分钟最多可以上传 50 部电影。然而，在试用账户中，您每分钟最多可以上传 5 部电影。

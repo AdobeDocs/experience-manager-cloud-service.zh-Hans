@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '2872'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ _通过从“高级”选项卡中选择选项来创建图像预设。_
 
 你还记得吗 [Dynamic Media URL剖析](#dm-journey-d) 之前，您已阅读Dynamic Media URL及其构建方式。 此 **[!UICONTROL 图像修饰符]** 在文本框中可以键入所需的任何其他图像处理参数。 使用预设交付图像时，这些参数会包含在URL的预设名称中。 在上面的屏幕快照中，参数 `bgc=451B15` 添加了。 也就是说，添加了深棕色背景颜色。
 
-您可以将图像预设视为图像的指导方针。 它将提供所有使用预设的图像，始终如一，每次；都会一样。 参数 `&op_brightness=+10` 还增加了稍微增加亮度的功能。
+您可以将图像预设视为图像的指导方针。 它将提供所有使用预设的图像，每次都一致；将是一样的。 参数 `&op_brightness=+10` 还增加了稍微增加亮度的功能。
 
 完成后，保存预设，该预设现在可用于您拥有的所有图像。 在本例中，我们要应用 _中_ 图像预设为一碗液态巧克力的图像。
 
@@ -154,7 +154,7 @@ Dynamic Media的一些更常用的用途是，使您能够创建图像集、旋�
 
 图像集通常由一系列图像资产组成，这些资产以单个实体的形式呈现。 这些类型的集为用户提供了集成的查看体验，用户可以通过单击缩略图图像查看项目的不同视图。 通过图像集，您可以呈现某种内容的替代视图，并且查看器提供了缩放工具来仔细检查图像。 [查看名为“正在运行”且使用弹出查看器的图像集](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-在Dynamic Media内部，您可以看到几张跑鞋的图片。 它是销售和营销部门希望客户作为单个演示文稿查看的产品线系列，即图像集。
+在Dynamic Media内部，您可以看到几张跑鞋的图片。 它是销售和营销部门希望客户作为单个演示文稿查看的产品线系列；图像集。
 
 ![创建图像集](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _创建图像集的开始。_

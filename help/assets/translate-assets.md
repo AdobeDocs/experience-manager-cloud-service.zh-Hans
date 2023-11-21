@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2603'
 ht-degree: 17%
 
 ---
@@ -59,7 +59,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 在Adobe Experience Manager Assets中，多语言资源包含在文件夹中，其中每个文件夹都包含采用其他语言的资源。
 
-每个语言文件夹都称为语言副本。 语言副本的根文件夹（称为语言根）标识了语言副本中内容的语言。 例如， `/content/dam/it` 是意大利语副本的意大利语根。 语言副本必须使用 [正确配置的语言根](#create-a-language-root) 以便在翻译源资产时定位正确的语言。
+每个语言文件夹都称为语言副本。 语言副本的根文件夹（称为语言根）标识了语言副本中内容的语言。 例如， `/content/dam/it` 是意大利语副本的意大利语根。 语言副本必须使用 [已正确配置语言根](#create-a-language-root) 以便在翻译源资产时定位正确的语言。
 
 您最初添加资产的语言副本是主要语言。 主要语言是翻译成其他语言的源。 示例文件夹层次结构包括几个语言根：
 
@@ -124,7 +124,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 ### 添加到现有翻译项目 {#add-to-existing-translation-project}
 
-如果使用此选项，则对于运行以前的翻译工作流后添加到源文件夹中的资产，翻译工作流会运行。 只有新添加的资产才会复制到包含先前翻译的资产的目标文件夹。 在这种情况下，不会创建新的翻译项目。
+如果使用此选项，则对于运行以前的翻译工作流后添加到源文件夹中的资产，翻译工作流会运行。 只有新添加的资产才会复制到包含以前翻译的资产的目标文件夹。 在这种情况下，不会创建新的翻译项目。
 
 1. 在Assets UI中，导航到包含未翻译资产的源文件夹。
 1. 选择要翻译的资产，然后打开&#x200B;**[!UICONTROL “引用”窗格]**。**[!UICONTROL 语言副本]**&#x200B;部分显示当前可用的翻译副本数。

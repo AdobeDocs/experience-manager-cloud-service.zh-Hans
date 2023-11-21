@@ -2,7 +2,7 @@
 title: 使用 ContextHub 配置分段
 description: 了解如何使用 ContextHub 配置分段。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 89%
@@ -101,7 +101,7 @@ AEM 可让您轻松个性化用户体验。它还让您验证区段定义的结�
    * 最小值：`0`
    * 最大值：`1000000`
 
-1. 在区段控制台中，编辑新创建的区段以在区段编辑器中打开它。
+1. 在区段控制台中，编辑您创建的区段以在区段编辑器中打开它。
 1. 将比较或引用拖动到区段编辑器中，它将显示在默认的 AND 容器中。
 1. 双击新参照或段的配置选项以编辑特定参数。 在此示例中，我们正在对巴塞尔的人员进行测试。
 
