@@ -89,7 +89,7 @@ ht-degree: 61%
 
 我们建议您通过以下方式熟悉流量过滤器规则 [试用教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)！ 它将指导您设置新的Cloud Manager配置管道、在配置文件中声明规则以及分析CDN日志以发现恶意流量。
 
-流量过滤器规则现在适用于开发环境，将于11月逐步推出到暂存和生产环境。 您可以通过向 **aemcs-waf-adopter@adobe.com** 发送电子邮件请求提前在阶段和生产环境中使用。
+流量过滤器规则现在适用于开发环境，将于11月逐步推出到暂存和生产环境。 通过向 **aemcs-waf-adopter@adobe.com** 发送电子邮件，可申请提前在暂存和生产环境上使用该功能。
 
 高级WAF流量过滤器规则可以在今年晚些时候通过“增强安全性”或“WAF-DDoS保护”产品获得许可。
 

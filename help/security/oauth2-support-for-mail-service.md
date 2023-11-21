@@ -56,14 +56,14 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
 接下来，通过以下操作生成刷新令牌，这是后续步骤中的 OSGi 配置的一部分。
 
-1. 在将 `clientID` 和 `tenantID` 替换为您帐户的特定值后，在浏览器中打开以下 URL：
+1. 将 `clientID` 和 `tenantID` 替换为您的帐户特有的值后，在浏览器中打开以下 URL：
 
    ```
    https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
    ```
 
-1. 当被询问时允许使用权限。
-1. URL 会重定向到一个新位置，并采用以下格式：
+1. 当询问您时，请允许权限。
+1. 该 URL 重定向到采用此格式的新位置：
 
    ```
    http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`

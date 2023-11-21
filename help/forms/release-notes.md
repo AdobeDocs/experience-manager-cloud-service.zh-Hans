@@ -209,7 +209,7 @@ Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML �
 
   借助先进的机器学习算法，Adobe Sign的Government ID流程让世界各地的企业均可确保高质量地验证其收件人的身份。 现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
 
-  Government ID是一种高级的身份验证方法，它指示收件人 [上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/cn/in/sign/using/adobesign-authentication-government-id.html)，然后评估该文档以确保真实有效。
+  Government ID是一种高级的身份验证方法，它指示收件人 [上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/cn/sign/using/adobesign-authentication-government-id.html)，然后评估该文档以确保真实有效。
 
 - **支持对异步提交自适应表单使用表单内签名体验**
 

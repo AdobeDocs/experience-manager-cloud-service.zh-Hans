@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.11.0 发行说明
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
@@ -11,9 +11,9 @@ ht-degree: 44%
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中的 Cloud Manager 2023.11.0 发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明 {#release-notes}
 
-本页记录了 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 版本的发行说明。
+本页记载 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 版本的发行说明。
 
 >[!NOTE]
 >

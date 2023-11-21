@@ -60,7 +60,7 @@ Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
 
 ### 访问社区资源 {#community-resource}
 
-Adobe 致力于为您提供对 Edge Delivery Services 和基于文档的创作的最佳社区参与和支持。加入 [Experience League 社区](https://adobe.ly/3Q6kTKl)，提出问题、共享反馈、发起讨论、向 Adobe 专家和 AEM 顾问/拥护者寻求帮助，以及实时联系志同道合者。加入我们的 [Discord 渠道](https://discord.gg/aem-live)，这是一个更随意的实时互动和快速交流想法的平台。
+Adobe 致力于通过为 Edge Delivery Services 和基于文档的创作营造优秀的社区参与氛围并提供大力支持而为您助力。请加入 [Experience League 社区](https://adobe.ly/3Q6kTKl)，从中您可提问、分享反馈、发起讨论、向 Adobe 专家和 AEM 顾问/支持者寻求帮助并实时与志同道合的人交流。并请加入我们的 [Discord 频道](https://discord.gg/aem-live)，通过这个更轻松平台可实时互动和快速交流想法。
 
 ### 如何访问您的产品协作渠道 {#collab-channel}
 

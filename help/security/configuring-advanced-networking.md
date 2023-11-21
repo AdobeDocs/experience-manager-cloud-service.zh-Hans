@@ -15,7 +15,7 @@ ht-degree: 96%
 
 >[!INFO]
 >
->您还可以在此[位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-hans)找到一系列旨在引导您了解各个高级联网选项的文章。
+>您还可以在此[位置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-Hans)找到一系列旨在引导您了解各个高级联网选项的文章。
 
 ## 概述 {#overview}
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service 提供了多种高级联网功能，客户可以使用 Cl
 
 如果整个程序的灵活端口出口配置已就绪，则必须对每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点，以在环境级别启用联网，并可以选择声明任何端口转发规则。可以根据各个环境来配置参数以提供灵活性。
 
-应为 80/443 以外的任何目标端口说明端口转发规则，但应仅在不使用 http 或 https 协议的情况下，通过指定目标主机集（名称或 IP 以及端口）来进行。通过http/https使用端口80/443的客户端连接仍然必须在其连接中使用代理设置，才能将高级联网的属性应用于该连接。 对于每个目标主机，必须将指向的目标端口映射到 30000 到 30999 之间的端口。
+应通过指定目标主机集（名称或 IP 以及端口）而为 80/443 以外的任何目标端口声明端口转发规则，但应仅在不使用 http 或 https 协议的情况下这样做。通过http/https使用端口80/443的客户端连接仍然必须在其连接中使用代理设置，才能将高级联网的属性应用于该连接。 对于每个目标主机，必须将指向的目标端口映射到 30000 到 30999 之间的端口。
 
 API 应在几秒内响应，指示更新的状态，然后在大约 10 分钟后，端点的 `GET` 方法应指示高级联网已启用。
 
