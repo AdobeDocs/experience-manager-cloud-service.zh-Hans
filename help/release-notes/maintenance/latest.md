@@ -17,7 +17,7 @@ ht-degree: 14%
 
 以下总结了维护版本14227的不断改进，该版本于2023年11月9日公开发布。 此维护版本是对上一个维护版本 14029 的更新。维护版本 14227 取代了 14157，并纠正了一个问题。
 
-2023.11.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
+2023.11.0 功能激活将为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
 ### 增强 {#enhancements-14227}
 
