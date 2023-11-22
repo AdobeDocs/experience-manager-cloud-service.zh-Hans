@@ -1,8 +1,9 @@
 ---
 title: AEMas a Cloud Service2023.08.0版中迁移工具的发行说明
-description: AEMas a Cloud Service2022.08.0版中迁移工具的发行说明
+description: AEMas a Cloud Service2023.08.0版中迁移工具的发行说明
 feature: Release Information
-source-git-commit: 9abce12c396ee74d36019218dd8b4fa72f762256
+exl-id: 1c822ece-620a-4866-be5a-065cb6a90204
+source-git-commit: b2322ff4ce27265b7eac37fcc0ea8235cd015ae0
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 13%
@@ -11,7 +12,7 @@ ht-degree: 13%
 
 # AEMas a Cloud Service2023.08.0版中迁移工具的发行说明 {#release-notes}
 
-此页概述了AEMas a Cloud Service2022.08.0中迁移工具的发行说明。
+此页概述了AEMas a Cloud Service2023.08.0中迁移工具的发行说明。
 
 ## Best Practices Analyzer {#bpa-release}
 
