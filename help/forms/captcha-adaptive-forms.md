@@ -6,10 +6,10 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 9d2f8794a061c44cab016ab049c8c8ac7b3b2784
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -291,11 +291,13 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 
 同样，您可以使用规则编辑器在自适应表单中包含用于验证验证码的自定义方法。
 
-### 添加自定义验证码服务 {#add-custom-captcha-service}
+<!--
 
-[!DNL Experience Manager Forms] 提供reCAPTCHA作为CAPTCHA服务。 但是，您可以添加自定义服务以在 **[!UICONTROL 验证码服务]** 下拉列表。
+### Add custom CAPTCHA services {#add-custom-captcha-service}
 
-以下是向自适应表单添加其他CAPTCHA服务的界面实现示例：
+[!DNL Experience Manager Forms] provides reCAPTCHA as the CAPTCHA service. However, you can add a custom service to display in the **[!UICONTROL CAPTCHA Service]** drop-down list.  
+
+The following is a sample implementation of the interface to add additional CAPTCHA service to your Adaptive Form:
 
 ```javascript
 package com.adobe.aemds.guide.service;
@@ -325,15 +327,15 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` 指Sling存储库中CAPTCHA组件的资源路径。 此属性用于包含特定于CAPTCHA组件的详细信息。 例如， `captchaPropertyNodePath` 包含有关在CAPTCHA组件上配置的reCAPTCHA云配置信息。 云配置信息提供 **[!UICONTROL 站点密钥]** 和 **[!UICONTROL 密钥]** 用于实施reCAPTCHA服务的设置。
+`captchaPropertyNodePath` refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` 是指 `g_recaptcha_response` 在表单中求解验证码后生成的验证码。
+`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form.
 
-### 编辑reCAPTCHA服务域 {#reCAPTCHA-service-domain}
+### Edit reCAPTCHA service domain {#reCAPTCHA-service-domain}
 
-reCAPTCHA服务使用 `https://www.recaptcha.net/` 作为默认域。 您可以修改要设置的设置 `https://www.google.com/` 或任何用于加载、渲染和验证reCAPTCHA服务的自定义域名。
+reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
 
-设置 **[!UICONTROL af.cloudservices.recaptcha.domain]** 的属性 **[!UICONTROL 自适应表单和交互式通信Web渠道配置]** 要指定的配置 `https://www.google.com/` 或任何其他自定义域名。 以下JSON文件显示了一个示例：
+Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** configuration to specify `https://www.google.com/` or any other custom domain name. The following JSON file displays a sample:
 
 ```json
 {
@@ -341,9 +343,9 @@ reCAPTCHA服务使用 `https://www.recaptcha.net/` 作为默认域。 您可以�
 }
 ```
 
-要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process)。
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
-## 另请参阅 {#see-also}
+## See Also {#see-also}
 
 {{see-also}}
 
