@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics与AEM Screens集成
+title: Adobe Analytics与AEM Screens Cloud集成
 seo-title: Adobe Analytics Integration with AEM Screens
 description: 关注本页，了解AEM Screens与Adobe Analytics的现成集成，并为您提供播放证明。
 seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
@@ -12,14 +12,15 @@ discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bf0a841a5cd5eb278fd3d59484c84d1cee172b4e
+exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
+source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
-# Adobe Analytics与AEM Screens集成 {#adobe-analytics-integration-with-aem-screens}
+# Adobe Analytics与AEM Screens Cloud集成 {#adobe-analytics-integration-with-aem-screens}
 
 本节涵盖以下主题：
 
@@ -58,14 +59,11 @@ AEM Screens客户想要了解在哪个时间显示了哪些内容，以及显示
 
 请联系您的Adobe关系经理，以在Screens Cloud中启用Adobe分析。
 
-## Screens Analytics：启用流 {#screens-analytics-enablement-flow}
-
->[!CAUTION]
->
->在配置资产之前，请联系您的Adobe关系经理以创建票证以获取 **Analytics API密钥** 和 **Analytics项目** 用于AEM Screens。
-
-## 在AEM Screens中使用Adobe Analytics服务 {#using-adobe-analytics-service-in-aem-screens}
+## 在AEM Screens Cloud中使用Adobe Analytics服务 {#using-adobe-analytics-service-in-aem-screens}
 
 此场景通过固件和Instrument Screens核心组件中的Analytics服务中的REST调用调用Analytics API，以明确创建和发送特定于特定用例的事件，同时允许扩展，在这种情况下，任何自定义消息都可从自定义开发的渠道发送到Analytics。
 
 Analytics事件离线存储在indexedDB中，稍后进行分块并发送到云。
+
+>[!NOTE]
+>要了解有关事件的顺序和标准数据模型的更多信息，请参阅 [为AEM Screens配置Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) 以了解详细信息。
