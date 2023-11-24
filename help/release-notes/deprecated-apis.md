@@ -2,7 +2,7 @@
 title: 已弃用 API
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的 API 的发行说明。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: d2c7e3d88b5545eee3e6f1c511088c0f6638cfe7
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 100%
@@ -14,9 +14,8 @@ ht-degree: 100%
 以下是已弃用的 AEM API 及其预计删除日期的详尽列表。客户应在目标删除日期之前从其代码中删除 API。如果在删除日期之后使用 API，都会在本地 SDK/开发环境和 Cloud Manager 构建过程中生成错误。
 
 
-<table>
-<thead>
 <table style="table-layout:auto">
+<thead>
   <tr>
     <th>包/类</th>
     <th>评论</th>
