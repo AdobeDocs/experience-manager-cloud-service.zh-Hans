@@ -3,9 +3,9 @@ title: 如何为自适应表单启用Adobe Analytics？
 description: Experience Cloud设置自动化有助于将Adobe Analytics连接到自适应表单，以跟踪有关访客交互和参与情况的见解。
 keywords: 使用Experience Cloud设置自动化为自适应表单启用Adobe Analytics，在Forms中启用Adobe Analytics，在自适应Forms中启用Adobe Analytics，Forms Analytics集成、Forms和Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1576'
 ht-degree: 3%
 
 ---
@@ -161,14 +161,13 @@ Experience Cloud设置自动化需要 **Adobe Analytics许可证**， **数据�
 
 1. 添加 `customfooterlibs.html` 文件。
 
-       ```
-       // customheaderlibs.html
-       &lt;sly data-sly-use.page=&quot;com.adobe.cq.wcm.core.components.models.Page&quot;>
-       &lt;sly data-sly-test=&quot;${page.data &amp;&amp; page.dataLayerClientlibIncluded}&quot; data-sly-call=&quot;${clientlib.js @ categories=&amp;#39;core.forms.components.commons.v1.datalayer&amp;#39;, async=true}&quot;>&lt;/sly>
-       &lt;/sly>
-       
-       ```
-   
+   ```
+   // customheaderlibs.html
+   <sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+   <sly data-sly-test="${page.data && page.dataLayerClientlibIncluded}" data-sly-call="${clientlib.js @ categories='core.forms.components.commons.v1.datalayer', async=true}"></sly>
+   </sly>
+   ```
+
    此 `customfooterlibs.html` 用于JavaScript。
 
 1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) 以部署更改。
