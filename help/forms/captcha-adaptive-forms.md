@@ -6,10 +6,10 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 9d2f8794a061c44cab016ab049c8c8ac7b3b2784
+source-git-commit: 9e06c115af2a262859d39bcd5ee0016df2475591
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1825'
+ht-degree: 10%
 
 ---
 
@@ -329,13 +329,13 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form.
+`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form. -->
 
-### Edit reCAPTCHA service domain {#reCAPTCHA-service-domain}
+### 编辑reCAPTCHA服务域 {#reCAPTCHA-service-domain}
 
-reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
+reCAPTCHA服务使用 `https://www.recaptcha.net/` 作为默认域。 您可以修改要设置的设置 `https://www.google.com/` 或任何用于加载、渲染和验证reCAPTCHA服务的自定义域名。
 
-Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** configuration to specify `https://www.google.com/` or any other custom domain name. The following JSON file displays a sample:
+设置 **[!UICONTROL af.cloudservices.recaptcha.domain]** 的属性 **[!UICONTROL 自适应表单和交互式通信Web渠道配置]** 要指定的配置 `https://www.google.com/` 或任何其他自定义域名。 以下JSON文件显示了一个示例：
 
 ```json
 {
@@ -343,9 +343,9 @@ Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!U
 }
 ```
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
+要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process)。
 
-## See Also {#see-also}
+## 另请参阅 {#see-also}
 
 {{see-also}}
 
