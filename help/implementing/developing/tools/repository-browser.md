@@ -4,9 +4,9 @@ seo-title: Repository Browser
 description: 存储库浏览器为创作层、发布层和预览层上的所有环境提供到存储库的只读视图。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '866'
 ht-degree: 2%
 
 ---
@@ -25,20 +25,20 @@ ht-degree: 2%
 
 存储库浏览器是一种开发人员工具，可为创作、发布和预览层上的所有环境提供到存储库的只读视图。 它旨在方便查看内容结构，以便更轻松地查看或调试内容。
 
-可从开发人员控制台访问，它可用于浏览选定环境的作者或发布实例的存储库。
+可从访问 [AEMas a Cloud Service开发人员控制台](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)，它可用于浏览选定环境的作者或发布实例的存储库。
 
 ### 访问先决条件 {#access-prerequisites}
 
-要访问开发人员控制台或存储库浏览器，必须满足以下条件
+要访问AEMas a Cloud Service开发人员控制台或存储库浏览器，必须满足以下条件
 
-要访问开发人员控制台，请执行以下操作：
+要访问AEMas a Cloud Service开发人员控制台，请执行以下操作：
 
-* 对于生产程序，用户必须具有 **Cloud Manager — 开发人员角色** 在Admin Console中
+* 对于生产程序，用户必须具有 **Cloud Manager — 开发人员角色** 在Adobe Admin Console中
 * 对于沙盒程序，它可供任何拥有将AEMas a Cloud Service访问权限的产品配置文件的用户使用。
 
 要访问存储库浏览器，请执行以下操作：
 
-* 用户必须具有 **Cloud Manager — 开发人员** Admin Console中用于查看创作实例和发布实例的角色。
+* 用户必须具有 **Cloud Manager — 开发人员** 在AEMas a Cloud Service开发人员控制台中用于查看创作实例和发布实例的角色。
 * 此外，对于作者，具有AEM用户产品配置文件的用户能够以最低的读取权限查看存储库浏览器；浏览存储库时，用户的权限会得到考虑。 具有AEM管理员产品配置文件的用户可以使用完全读取权限查看存储库浏览器。
 
 有关设置用户权限的更多信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).

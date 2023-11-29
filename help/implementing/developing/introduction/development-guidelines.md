@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2791'
 ht-degree: 4%
 
 ---
@@ -166,7 +166,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 云环境中的线程转储是不断收集的，但目前无法自助下载。 同时，如果调试问题需要线程转储，请联系AEM支持部门，以指定确切的时间范围。
 
-## CRX/DE Lite和开发人员控制台 {#crxde-lite-and-developer-console}
+## CRX/DE Lite和AEMas a Cloud Service开发人员控制台 {#crxde-lite-and-developer-console}
 
 ### 本地开发 {#local-development}
 
@@ -176,15 +176,19 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### AEM as a Cloud Service 开发工具 {#aem-as-a-cloud-service-development-tools}
 
+>[!NOTE]
+>不应将AEMas a Cloud Service开发人员控制台与名称类似的 [*Adobe Developer控制台*](https://developer.adobe.com/developer-console/).
+>
+
 客户可以在创作层的开发环境中访问CRXDE Lite，但不能在暂存或生产环境中访问。 不可变存储库(`/libs`， `/apps`)在运行时无法写入，因此尝试这样做会导致错误。
 
-而是可以从开发人员控制台中启动存储库浏览器，为创作、发布和预览层上的所有环境提供到存储库的只读视图。 阅读有关存储库浏览器的更多信息 [此处](/help/implementing/developing/tools/repository-browser.md).
+相反，可以从AEMas a Cloud Service开发人员控制台启动存储库浏览器，为创作层、发布层和预览层上的所有环境提供到存储库的只读视图。 阅读有关存储库浏览器的更多信息 [此处](/help/implementing/developing/tools/repository-browser.md).
 
-开发人员控制台中提供了用于RDE、开发、暂存和生产环境的一组用于调试AEMas a Cloud Service开发人员环境的工具。 可以通过调整创作或发布服务URL来确定URL，如下所示：
+在AEMas a Cloud Service开发人员控制台中，提供了一组用于调试RDE、开发、暂存和生产环境的AEMas a Cloud Service开发人员环境的工具。 可以通过调整创作或发布服务URL来确定URL，如下所示：
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
-作为快捷方式，以下Cloud Manager CLI命令可用于基于下述环境参数启动开发人员控制台：
+作为快捷方式，以下Cloud Manager CLI命令可用于基于如下所述的环境参数启动AEMas a Cloud Service开发人员控制台：
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
@@ -202,11 +206,11 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ![开发控制台3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-Developer控制台还有一个指向Explain查询工具的链接，对调试也很有用：
+AEMas a Cloud Service开发人员控制台在调试时还有一个指向Explain查询工具的链接：
 
 ![开发控制台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-对于生产程序，对开发人员控制台的访问权限由Admin Console中的“Cloud Manager — 开发人员角色”定义，而对于沙盒程序，开发人员控制台可供任何拥有产品配置文件的用户使用，这些用户有权访问AEMas a Cloud Service。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义存储库浏览器和用户，才能查看来自这两个服务的数据。 有关设置用户权限的详细信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+对于生产程序，对AEMas a Cloud Service开发人员控制台的访问权限由Adobe Admin Console中的“Cloud Manager — 开发人员角色”定义，而对于沙盒程序，AEMas a Cloud Service开发人员控制台可供任何拥有产品配置文件的用户访问AEMas a Cloud Service。 对于所有程序，状态转储需要“Cloud Manager — 开发人员角色”，并且还必须在创作和发布服务的AEM用户或AEM管理员产品配置文件中定义存储库浏览器和用户，才能查看来自这两个服务的数据。 有关设置用户权限的详细信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### 性能监控 {#performance-monitoring}
 
