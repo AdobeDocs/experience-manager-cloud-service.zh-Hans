@@ -2,10 +2,10 @@
 title: 内容片段模型（资产 — 内容片段）
 description: 了解内容片段模型如何作为AEM中Headless内容的基础，以及如何使用结构化内容创建内容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2931'
-ht-degree: 92%
+source-wordcount: '3005'
+ht-degree: 90%
 
 ---
 
@@ -149,7 +149,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
   >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
 * **呈现为**
-用于在片段中实现/呈现字段的各种选项。通常，此属性允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。
+用于在片段中实现/呈现字段的各种选项。通常，此属性允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。 时间 **多个字段** 用于定义项目的最小和最大数量 — 请参阅 [验证](#validation) 以了解更多详细信息。
 
 * **字段标签**
 输入 **字段标签** 将自动生成 **属性名称**，如有必要，可以手动更新。
@@ -211,6 +211,17 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
    * 只能引用预定义的宽度和/或高度范围（以像素为单位）内的图像。
 * **片段引用**
    * 测试特定内容片段模型。
+* **最小项目数** / **项目的最大数量**
+
+  已定义为 **多个字段** (设置 **呈现为**)提供了以下选项：
+
+   * **项目的最小数量**
+   * **项目的最大数量**
+
+  已验证以下各项：
+
+   * 最大值需在 [原始内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md).
+   * 两者均已在中验证 [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## 使用引用表单嵌套内容 {#using-references-to-form-nested-content}
 

@@ -4,10 +4,10 @@ description: 了解如何从控制台和编辑器管理 AEM 内容片段，这�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 92%
+source-wordcount: '2622'
+ht-degree: 89%
 
 ---
 
@@ -143,10 +143,7 @@ ht-degree: 92%
 * **[移动](/help/assets/manage-digital-assets.md)**
 * **[重命名](/help/assets/manage-digital-assets.md)**
 * **[删除](#deleting-a-fragment)**
-
-<!--
-* **[Replace](#find-and-replace)**
--->
+* **[替换](#find-and-replace)**
 
 >[!NOTE]
 >
@@ -373,13 +370,22 @@ ht-degree: 92%
 >
 >如果片段已从其他片段或页面引用，您将看到一条警告消息，需要您确认是否继续。
 
-<!--
-## Find and Replace {#find-and-replace}
+## 查找和替换 {#find-and-replace}
 
-The **Replace** option is available to find, and replace, specified text in your selected Content Fragment:
+此 **替换** 操作可用（在顶部工具栏中）来查找和替换所选内容片段中的指定文本。
 
-![Unpublish dialog](assets/cf-managing-find-replace.png)
--->
+![查找和替换](assets/cf-managing-find-replace.png)
+
+替换前，将检查验证标准并通知您任何冲突，从而允许您更改替换字符串或仅替换已验证的实例。
+
+>[!NOTE]
+>
+>一次最多只能对20个选定的内容片段执行查找和替换操作。
+>
+>如果您选择20个以上的内容片段，您将看到消息 **无法找到和替换**.
+
+![确认替换](assets/cf-managing-confirm-replace.png)
+
 
 ## 删除片段 {#deleting-a-fragment}
 

@@ -4,10 +4,10 @@ description: 了解内容片段模型如何作为 AEM 中内容片段的基础�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 97%
+source-wordcount: '3121'
+ht-degree: 96%
 
 ---
 
@@ -198,7 +198,8 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
   >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
 * **呈现为**
-用于在片段中实现/呈现字段的各种选项。通常，这允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。
+
+  用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。时间 **多个字段** 用于定义项目的最小和最大数量 — 请参阅 [验证](#validation) 以了解更多详细信息。
 
 * **字段标签**
 输入 **字段标签** 自动生成 **属性名称**，如有必要，可以手动更新。
@@ -256,6 +257,14 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    * 只能引用预定义的宽度和/或高度范围（以像素为单位）内的图像。
 * **片段引用**
    * 为特定的内容片段模型测试。
+* **最小项目数** / **项目的最大数量**
+
+  已定义为 **多个字段** (设置 **呈现为**)提供了以下选项：
+
+   * **项目的最小数量**
+   * **项目的最大数量**
+
+  这些将在中验证 [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## 使用引用表单嵌套内容 {#using-references-to-form-nested-content}
 

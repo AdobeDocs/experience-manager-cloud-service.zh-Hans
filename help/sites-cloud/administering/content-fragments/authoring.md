@@ -4,9 +4,9 @@ description: 了解如何为内容片段创作内容，然后根据用途创建�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2267'
 ht-degree: 96%
 
 ---
@@ -59,6 +59,10 @@ ht-degree: 96%
 * 中央面板：显示所选变体的实际字段和内容
    * 使您可编辑内容
    * 如果在模型中定义了&#x200B;**选项卡占位符**&#x200B;字段，则将在此处显示这些字段，并可使用这些字段进行导航；它们将水平显示或作为下拉列表显示。
+
+  >[!NOTE]
+  >
+  >根据底层模型中的定义，字段可以遵循某些类型 [验证](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ![内容片段编辑器 – 概述](assets/cf-authoring-overview.png)
 

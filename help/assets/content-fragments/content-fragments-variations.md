@@ -2,9 +2,9 @@
 title: 变体 – 创作片段内容 （资产 — 内容片段）
 description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容更加灵活。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2546'
 ht-degree: 56%
 
 ---
@@ -76,6 +76,10 @@ ht-degree: 56%
   >**标记**&#x200B;也可以作为[元数据](/help/assets/content-fragments/content-fragments-metadata.md)的一部分添加（到&#x200B;**主要**&#x200B;变体中）
 
 * [创建和管理&#x200B;**主要**&#x200B;内容的变体。](#managing-variations)
+
+>[!NOTE]
+>
+>根据底层模型中的定义，字段可以遵循某些类型 [验证](/help/assets/content-fragments/content-fragments-models.md#validation).
 
 ### 全屏编辑器 {#full-screen-editor}
 
