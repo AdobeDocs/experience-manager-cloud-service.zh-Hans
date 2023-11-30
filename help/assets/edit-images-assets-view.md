@@ -3,10 +3,10 @@ title: 编辑图像
 description: 使用由 [!DNL Adobe Photoshop Express] 提供支持的选项编辑图像并将更新后的图像另存为版本。
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 98%
+source-wordcount: '1159'
+ht-degree: 76%
 
 ---
 
@@ -79,6 +79,36 @@ ht-degree: 98%
 * 支持的图像分辨率：最小 - 50 像素，最大 - 每维 6000 像素
 
 * 支持的最大文件大小：17 MB
+
+## 使用Adobe Express嵌入式编辑器编辑图像 {#edit-using-embedded-editor}
+
+[!DNL Assets view] 可直接从资源存储库全面编辑图像。 嵌入式编辑器允许使用轻松直观地编辑图像 [!DNL Adobe Express]. 它通过使用模板或修改现有资源来加快资源的可重用性。 您可以使用预定义元素让您的资源看起来引人注目，也可以通过单击几下来执行快速操作以编辑您的图像。
+
+要使用编辑图像，请执行以下操作 [!DNL Adobe Express] 嵌入式编辑器，请执行以下步骤：
+
+1. 从中选择图像 [!DNL Experience Manager] 资产存储库。
+1. 单击 **[!UICONTROL 在Adobe Express中打开]**. [!DNL Adobe Express] 屏幕。
+
+   ![Adobe Express嵌入式编辑器](assets/embedded-editor.png)
+
+   您可以利用的功能 [!DNL Adobe Express] 执行所有与图像编辑相关的操作，例如 [调整图像大小](https://helpx.adobe.com/in/express/using/resize-image.html)， [删除或更改背景颜色](https://helpx.adobe.com/in/express/using/remove-background.html)， [裁切图像](https://helpx.adobe.com/in/express/using/crop-image.html)，等等。
+
+1. 完成图像编辑后，您可以将资源下载为新资源或将资源另存为新版本。
+
+## 使用Adobe Express创建新资源 {#create-new-embedded-editor}
+
+[!DNL Assets view] 提供了使用从头开始创建新模板的功能 [!DNL Adobe Express] 嵌入式编辑器。 要使用创建新资源，请执行以下操作 [!DNL Adobe Expresss]，执行以下步骤：
+
+1. 导航到 **[!UICONTROL 我的工作区]** 并单击 **[!UICONTROL 创建]**. [!DNL Adobe Express] 空白画布会显示在 [!DNL Assets view] 用户界面。
+1. 创建内容，使用 [模板](https://helpx.adobe.com/in/express/using/work-with-templates.html). 否则，导航到 **[!UICONTROL 你的东西]** 以修改现有内容。
+1. 完成编辑后，单击 **[!UICONTROL 另存为新资源]**.
+1. 为创建的资源指定目标路径。
+
+>[!NOTE]
+>
+>* 您只能修改 `JPEG` 和 `PNG` 格式。
+>* 资源大小应小于14 MB。
+>* 您可以将图像另存为 `PDF`， `JPEG`，或 `PNG` 格式。
 
 ## 使用 [!DNL Adobe Photoshop Express] 编辑图像 {#edit-using-photoshop-express}
 

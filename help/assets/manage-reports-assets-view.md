@@ -2,10 +2,10 @@
 title: 在“资源”视图中管理报告
 description: 访问资源视图的报表部分中的数据，即可评估产品和功能使用情况并了解关键成功量度。
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 100%
+source-wordcount: '825'
+ht-degree: 97%
 
 ---
 
@@ -26,13 +26,23 @@ ht-degree: 100%
 
 通过资源视图的“见解”仪表板，可查看资源视图环境的实时数据。可查看过去 30 天或过去 12 个月的实时事件指标。
 
-![选择资源后出现的工具栏选项](assets/assets-essentials-live-statistics.png)
+<!--![Toolbar options when you select an asset](assets/assets-essentials-live-statistics.png)-->
 
 单击可在左侧导航窗格中找到的&#x200B;**[!UICONTROL 见解]**&#x200B;以查看以下自动生成的图表：
+
+![见解](assets/insights.png)
 
 * **下载**：过去 30 天或 12 个月从资源视图环境下载的资源数量，用折线图表示。
 
 * **上载**：过去 30 天或 12 个月上载到资源视图环境中的资源数量，用折线图表示。
+
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+
+* **存储使用情况**：使用条形图表示的Assets视图环境的存储使用情况（以字节为单位）。
+
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+
+<!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **热门搜索**：以表格格式查看过去 30 天或 12 个月内在资源视图环境中搜索最多的术语以及这些术语的搜索次数。
 
@@ -52,21 +62,21 @@ ht-degree: 100%
 
 1. 指定报告的标题和可选描述。
 
-1. 使用&#x200B;**[!UICONTROL 选择文件夹路径]**&#x200B;字段选择文件夹路径，其中包括要对其执行报表的资源。
+1. 使用&#x200B;**[!UICONTROL 选择文件夹路径]**&#x200B;字段选择文件夹路径，其中包括要对其执行报告的资源。
 
-1. 选择该报表的日期间隔。
+1. 选择该报告的日期间隔。
 
    >[!NOTE]
    >
    > 资源视图将所有本地时区转换为协调世界时 (UTC)。
 
-1. 在[!UICONTROL 列]选项卡中，选择需要在该报表中显示的列名称。
+1. 在[!UICONTROL 列]选项卡中，选择需要在该报告中显示的列名称。
 
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
-   ![下载报表](assets/download-reports-config.png)
+   ![下载报告](assets/download-reports-config.png)
 
-下表阐述所有可添加到该报表的列的用途：
+下表阐述所有可添加到该报告的列的用途：
 
 <table>
     <tbody>
@@ -131,17 +141,17 @@ ht-degree: 100%
 
 1. 指定报告的标题和可选描述。
 
-1. 使用&#x200B;**[!UICONTROL 选择文件夹路径]**&#x200B;字段选择文件夹路径，其中包括要对其执行报表的资源。
+1. 使用&#x200B;**[!UICONTROL 选择文件夹路径]**&#x200B;字段选择文件夹路径，其中包括要对其执行报告的资源。
 
-1. 选择该报表的日期间隔。
+1. 选择该报告的日期间隔。
 
-1. 在[!UICONTROL 列]选项卡中，选择需要在该报表中显示的列名称。
+1. 在[!UICONTROL 列]选项卡中，选择需要在该报告中显示的列名称。
 
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
    ![上载报告](assets/upload-reports-config.png)
 
-下表阐述所有可添加到该报表的列的用途：
+下表阐述所有可添加到该报告的列的用途：
 
 <table>
     <tbody>
@@ -184,35 +194,35 @@ ht-degree: 100%
     </tbody>
    </table>
 
-## 查看现有报表 {#view-report-list}
+## 查看现有报告 {#view-report-list}
 
-在[创建报告](#create-download-report)之后，可查看现有报表的列表，然后选择以 CSV 格式下载报表或删除报表。
+在[创建报告](#create-download-report)之后，可查看现有报告的列表，然后选择以 CSV 格式下载报告或删除报告。
 
-要查看报表的列表，请导航至&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 报表]**。
+要查看报告的列表，请导航至&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 报告]**。
 
-对于每个报表，均可查看报表标题、报表类型、创建报表时指定的描述、报表状态、创建报表的作者的电子邮件 ID 和报表创建日期。
+对于每个报告，均可查看报告标题、报告类型、创建报告时指定的描述、报告状态、创建报告的作者的电子邮件 ID 和报告创建日期。
 
-报表的 `Completed ` 状态表示报表准备就绪，可供下载。
+报告的 `Completed ` 状态表示报告准备就绪，可供下载。
 
-![报表的列表](assets/list-of-reports.png)
+![报告的列表](assets/list-of-reports.png)
 
 
-## 下载 CSV 报表 {#download-csv-report}
+## 下载 CSV 报告 {#download-csv-report}
 
-要以 CSV 格式下载报表，请执行以下操作：
+要以 CSV 格式下载报告，请执行以下操作：
 
-1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 报表]**。
+1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 报告]**。
 
-1. 选择一个报表，然后单击&#x200B;**[!UICONTROL 下载 CSV]**。
+1. 选择一个报告，然后单击&#x200B;**[!UICONTROL 下载 CSV]**。
 
-随后将以 CSV 格式下载所选的报表。在 CSV 报表中显示的列取决于在[创建报表](#create-download-report)时选择的列。
+随后将以 CSV 格式下载所选的报告。在 CSV 报告中显示的列取决于在[创建报告](#create-download-report)时选择的列。
 
-## 删除报表 {#delete-report}
+## 删除报告 {#delete-report}
 
-要删除报表，请执行以下操作：
+要删除报告，请执行以下操作：
 
-1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 报表]**。
+1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 报告]**。
 
-1. 选择一个报表，然后单击&#x200B;**[!UICONTROL 删除]**。
+1. 选择一个报告，然后单击&#x200B;**[!UICONTROL 删除]**。
 
 1. 再次单击&#x200B;**[!UICONTROL 删除]**&#x200B;以确认。

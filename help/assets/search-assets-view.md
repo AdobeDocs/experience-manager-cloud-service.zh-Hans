@@ -3,10 +3,10 @@ title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
 description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现适用的资源，并帮助您提升内容速度。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 90%
+source-wordcount: '1321'
+ht-degree: 73%
 
 ---
 
@@ -141,6 +141,67 @@ What about temporarily hiding an asset (suspending search on it) from the search
 
 When userA is searching and userB add an asset that matches search results, will the asset display in search as soon as userA refreshes the page? Assuming indexing is near real-time. May not be so for bulk uploads.
 -->
+
+## 使用搜索结果 {#work-with-search-results}
+
+可选择在搜索结果中显示的资源并执行以下操作：
+
+* **详细信息**：查看和编辑资源属性。
+
+* **添加到收藏集**：将所选资源添加到收藏集。
+
+* **下载**：下载资源。
+
+* **删除**：删除资源。
+
+* **复制**：将资源复制到不同的文件夹位置。
+
+* **移动**：将资源移至不同的文件夹位置。
+
+* **重命名**：重命名资源。
+
+* **分配任务**：将任务分配给资源的用户。
+
+* **共享链接**：与其他用户[共享某个资源的链接](share-links-for-assets-view.md)，以使其可访问和下载该资源。
+
+* **监视**：[监视对资源执行的操作](manage-notifications-assets-view.md)。
+
+* **显示文件位置**：导航到资源文件夹位置。
+
+* **固定到快速访问**：[固定资源](my-workspace-assets-view.md)，以便在以后需要它时更快地访问。所有固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分中。
+
+## 配置搜索第一个主页 {#configuring-search-first-homepage}
+
+搜索第一个主页允许您即时浏览各种文件和文件夹。 它可让您轻松浏览资产类型、元数据、智能标记，甚至内容本身，而无需知道确切的关键字。 [!DNL Assets view] 允许您通过控制登录时应该显示的内容来配置主页 [!DNL Assets view].
+
+要配置搜索第一个主页，请执行以下步骤：
+
+1. 导航到 **[!UICONTROL 设置]** > **[!UICONTROL 常规设置]**.
+1. 选择 **[!UICONTROL 首先搜索]**. 它会进一步打开搜索优先相关配置。 您可以设置 [对齐方式](#setting-alignment-search-bar) 或 [设置背景和徽标图像](#setting-background-image-and-logo) 你主页的网站。
+
+### 设置搜索栏的对齐方式 {#setting-alignment-search-bar}
+
+[!DNL Assets view] 允许您更改搜索栏的对齐方式。 您可以使搜索栏显示在中心或顶部。 选择适当的对齐方式，然后单击 **[!UICONTROL 保存]**.
+
+![搜索第一个主页对齐方式](assets/search-first-alignment.png)
+
+### 设置主页的背景和徽标图像 {#setting-background-image-and-logo}
+
+您可以将品牌徽标和背景图像添加到您的搜索第一个主页。 执行以下步骤：
+
+1. 导航到 **[!UICONTROL 背景和徽标图像]** 部分在 **[!UICONTROL 主页]**.
+1. 单击 **[!UICONTROL 替换]** 浏览现有资源存储库中的图像。
+1. 单击&#x200B;**[!UICONTROL 保存]**。[预览](#preview-configured-homepage) 进行修改所需的更改。
+
+### 预览配置的主页 {#preview-configured-homepage}
+
+您可以预览以检查搜索第一个主页的布局和格式。 使用 **[!UICONTROL 预览]**&#x200B;中，您可以修复布局或根据需要进行修改。 要预览配置的主页，请执行以下步骤：
+
+1. 单击 **[!UICONTROL 常规设置]** 并选择 **[!UICONTROL 首先搜索]**.
+1. 导航到 **[!UICONTROL 自定义搜索第一个主页]** 并单击 **[!UICONTROL 预览]**. 切换到 **[!UICONTROL 深色主题]** 按钮以用深色或浅色主题预览主页。
+1. 单击 **[!UICONTROL 关闭]** 以关闭预览屏幕。
+
+   ![搜索第一个主页预览](assets/search-first-preview.gif)
 
 ## 后续步骤 {#next-steps}
 
