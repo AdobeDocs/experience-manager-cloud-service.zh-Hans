@@ -5,7 +5,7 @@ exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 51%
+ht-degree: 65%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 51%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
 >title="最佳实践分析器概述"
->abstract="最佳实践分析器可以指示未遵循 AEM 最佳实践的领域，从而评估您当前的 AEM 实施。它还提供了有关采用 AEM 最佳实践的后续步骤的指导。此外，它还有助于加快评估从现有Adobe Experience Manager (AEM)部署迁移到AEMas a Cloud Service的准备情况的流程。"
+>abstract="最佳实践分析器可以指示未遵循 AEM 最佳实践的领域，从而评估您当前的 AEM 实施。它还提供了有关采用 AEM 最佳实践的后续步骤的指导。此外，该分析器还有助于加快评估就绪性的流程，以便将现有 Adobe Experience Manager (AEM) 部署移至 AEM as a Cloud Service。"
 
-最佳实践分析器可以指示未遵循 AEM 最佳实践的领域，从而评估您当前的 AEM 实施。它还提供了有关采用 AEM 最佳实践的后续步骤的指导。此外，它还有助于加快评估从现有Adobe Experience Manager (AEM)部署迁移到AEMas a Cloud Service的准备情况的流程。
+最佳实践分析器可以指示未遵循 AEM 最佳实践的领域，从而评估您当前的 AEM 实施。它还提供了有关采用 AEM 最佳实践的后续步骤的指导。此外，该分析器还有助于加快评估就绪性的流程，以便将现有 Adobe Experience Manager (AEM) 部署移至 AEM as a Cloud Service。
 
 此工具会生成一个报告，用于标识潜在重构的区域，这是迁移到 AEM as a Cloud Service 的历程中的第一步。
 
