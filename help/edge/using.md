@@ -6,7 +6,7 @@ exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: 5df61db6e0bd24d55ce73290b37ed55f167e0da2
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Edge Delivery 利用 GitHub，因此客户可直接从其 GitHub 存储库管理
 
 ## 使用 Sidekick {#using-sidekick}
 
-AEM Sidekick 提供了一个带上下文感知选项的工具栏，可让您轻松编辑、预览和发布内容。[安装](https://www.hlx.live/docs/sidekick-extension) AEM Sidekick 扩展后，可以在项目环境中或在编辑内容时使用（例如，在 Google Docs 中）使用此扩展。根据环境，它有多种可用操作，例如：预览、重新加载、编辑和发布。在使用Sidekick时，您还可以将环境从预览切换到生产，反之亦然。
+AEM Sidekick 提供了一个带上下文感知选项的工具栏，可让您轻松编辑、预览和发布内容。[安装](https://www.hlx.live/docs/sidekick-extension) AEM Sidekick 扩展后，可以在项目环境中或在编辑内容时使用（例如，在 Google Docs 中）使用此扩展。根据环境，它有多种可用操作，例如：预览、重新加载、编辑和发布。您还可以在使用 Sidekick 时切换环境，从预览切换到生产，反之亦然。
 
 **要进行发布**，请在预览页面上打开 Sidekick 并使用“发布”操作。单击“发布”后，页面的当前预览版本将在实时环境和生产环境中可用。
 

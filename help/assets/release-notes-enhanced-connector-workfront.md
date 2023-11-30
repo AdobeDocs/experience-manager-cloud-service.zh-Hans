@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 16aa0241dd954b7f66523d746827d81b956578bd
 workflow-type: tm+mt
 source-wordcount: '1379'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,18 +15,18 @@ ht-degree: 94%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.15的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 为2023年11月17日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.15 版的发布日期是 2023 年 11 月 17 日。
 
 ## 版本亮点 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
 
-* 在查看AEM文件夹列表时，加载该对话框需要花费超过一分钟的时间。
-* 已授权 [!DNL Workfront] 用户始终收到身份验证失败错误日志。
+* 查看 AEM 文件夹列表时，该对话框需要一分多钟的时间才能加载。
+* 授权 [!DNL Workfront] 用户持续收到身份验证失败错误日志。
 
 >[!NOTE]
 >
->AEM 6.4 已结束延期支持。查看我们的 [技术支持时段](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 请在[此处](https://experienceleague.adobe.com/docs/?lang=en)查找支持的版本。
+>AEM 6.4 已结束延期支持。请参阅我们的[技术支持期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。请在[此处](https://experienceleague.adobe.com/docs/?lang=en)查找支持的版本。
 
 
 >[!IMPORTANT]
@@ -37,7 +37,7 @@ ht-degree: 94%
 
 * 在使用 AEM 6.4 配置项目链接文件夹时，Experience Manager 不保存&#x200B;**[!UICONTROL 子文件夹]**&#x200B;和&#x200B;**[!UICONTROL 在具有作品集的项目中创建链接文件夹]**&#x200B;字段的值。在保存配置后，**[!UICONTROL 子文件夹]**&#x200B;字段的值自动更新为&#x200B;**[!UICONTROL 未定义]**，**[!UICONTROL 在具有作品集的项目中创建链接文件夹]**&#x200B;字段的值自动更新为&#x200B;**[!UICONTROL 默认作品集]**。
 
-* 当您使用经典Workfront体验时， **[!UICONTROL 发送至]** 中提供的选项 **[!UICONTROL 更多]** 下拉列表不允许您在Experience Manager中选择目标目标。 当使用&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表时，**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。**[!UICONTROL 更多]**&#x200B;下拉列表和可在新 Workfront 体验中找到的&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。
+* 在使用经典 Workfront 体验时，**[!UICONTROL 更多]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项不允许您在 Experience Manager 中选择目标目的地。当使用&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表时，**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。**[!UICONTROL 更多]**&#x200B;下拉列表和可在新 Workfront 体验中找到的&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。
 
 ## 以前的版本 {#previous-releases}
 

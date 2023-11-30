@@ -4,8 +4,8 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 8407f3142de78ee792bdece327734dd02a4f234b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3388'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。未来还将支持 RDE。
 
-[完成教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 以快速建立关于此功能的具体专业知识。
+[按照教程进行操作，](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)快速建立有关此功能的具体专业知识。
 
 ## 本文的结构 {#how-organized}
 
@@ -112,14 +112,14 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
 1. 对于 RDE 以外的环境类型，请在 Cloud Manager 中创建目标部署配置管道。
 
-   * [请参阅配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [请参阅配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * [请参阅配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
+   * [请参阅配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
 
 对于 RDE，将使用命令行，但目前不支持 RDE。
 
 **注释**
 
-* 您可以使用 `yq` 在本地验证配置文件的YAML格式(例如， `yq cdn.yaml`)。
+* 您可以使用 `yq` 在本地验证配置文件（例如 `yq cdn.yaml`）的 YAML 格式。
 
 ## 流量过滤规则语法 {#rules-syntax}
 
@@ -191,7 +191,7 @@ data:
 
 | **属性** | **类型** | **描述** |
 |---|---|---|
-| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不含查询参数的URL的完整路径。</li><li>`queryString`：返回URL的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol))。</li></ul> |
+| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol))。</li></ul> |
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
 | reqCookie | `string` | 返回具有指定名称的 Cookie |
@@ -226,7 +226,7 @@ when:
 
 ### 操作结构 {#action-structure}
 
-An `action` 可以是指定操作（允许、阻止或日志）的字符串，也可以是由操作类型（允许、阻止或日志）和wafFlags和/或状态等选项组成的对象。
+`action` 可以是指定操作（允许、阻止或日志）的字符串，也可以是由操作类型（允许、阻止或日志）和 wafFlags 和/或状态等选项组成的对象。
 
 **操作类型**
 
@@ -277,7 +277,7 @@ An `action` 可以是指定操作（允许、阻止或日志）的字符串，�
 
 * 在 Cloud Manager 中定义的 IP 允许列表优先于流量过滤器规则。
 
-* WAF规则匹配项仅显示在CDN未命中和传递的CDN日志中，而不显示在点击中。
+* WAF 规则匹配只显示在 CDN 未命中和通过（而非命中）的 CDN 日志中。
 
 ## 规则示例 {#examples}
 
@@ -488,10 +488,10 @@ data:
 
 * 将在 `match` 属性中列出任何匹配的规则的由客户声明的规则名称。
 * `action` 属性决定规则发挥阻止、允许还是日志记录的作用。
-* 如果WAF已许可并启用，则 `waf` attribute将列出检测到的任何WAF标志（例如SQLI），而不管这些WAF标志是否列在任何规则中。 这样做是为了深入展示可能要声明的新规则。
+* 如果许可并启用了 WAF，则 `waf` 属性将列出任何检测到的 WAF 标志（如 SQLI），无论是否在任何规则中列出了这些 WAF 标志都是如此。这样做是为了深入展示可能要声明的新规则。
 * 如果没有客户声明的规则匹配并且没有 waf 规则匹配，则 `rules` 属性将为空。
 
-如前所述，WAF规则匹配项仅显示在CDN缺失和传递的CDN日志中，而不显示在点击中。
+如前所述，WAF 规则匹配只会显示在 CDN 未命中和通过（而非命中）的 CDN 日志中。
 
 下面的示例展示一个示例 `cdn.yaml` 和两个 CDN 日志条目：
 
@@ -571,7 +571,7 @@ data:
 | *method* | 客户端发送的 HTTP 方法，例如“GET”或“POST”。 |
 | *res_ctype* | 用于指示资源的原始媒体类型的 Content-Type。 |
 | *cache* | 缓存的状态。可能的值为 HIT、MISS 或 PASS |
-| *状态* | 整数值形式的 HTTP 状态代码。 |
+| *status* | 整数值形式的 HTTP 状态代码。 |
 | *res_age* | 响应已缓存（在所有节点中）的时间量（以秒为单位）。 |
 | *pop* | CDN 缓存服务器的数据中心。 |
 | *rules* | 任何匹配的规则的名称。<br><br>还指示匹配是否产生块。<br><br>例如，“`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`”<br><br>如果没有匹配的规则，则为空。 |
@@ -586,7 +586,7 @@ Adobe 提供一种机制，它将仪表板工具下载到您的计算机上以�
 
 ## 推荐的入门规则 {#recommended-starter-rules}
 
-可将以下推荐的规则复制到您的 `cdn.yaml` 中以快速入门。首先进入日志模式，分析您的流量，感到满意时改为阻止模式。您可能需要根据网站实时流量的独特特征修改规则。
+可将以下推荐的规则复制到您的 `cdn.yaml` 中以快速入门。首先进入日志模式，分析您的流量，感到满意时改为阻止模式。您可能要根据您网站的实时流量的独有特征修改规则。
 
 ```
 kind: "CDN"

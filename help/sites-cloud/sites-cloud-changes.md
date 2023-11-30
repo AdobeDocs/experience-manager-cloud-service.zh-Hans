@@ -5,14 +5,14 @@ exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '535'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # 对 AEM Sites as a Cloud Service 的重要更改 {#notable-changes}
 
-AEM Sites as a Cloud Service 提供了体验管理功能作为云原生 AEM as a Cloud Service 平台的一部分。除了AEMas a Cloud Service的核心优势（如云原生可扩展性、正常运行时间和始终保持最新）之外，AEM Sitesas a Cloud Service还提供了一些特定于站点的更改和补充。
+AEM Sites as a Cloud Service 提供了体验管理功能作为云原生 AEM as a Cloud Service 平台的一部分。除了 AEM as a Cloud Service 的核心优势（例如云原生可扩展性、正常运行时间和始终保持最新）之外，AEM Sites as a Cloud Service 还提供了许多特定于 Sites 的更改和补充。
 
 >[!NOTE]
 >本文档重点介绍了对 AEM Sites 的重要更改。有关对 AEM as a Cloud Service 和其他模块的一般更改，请参阅：

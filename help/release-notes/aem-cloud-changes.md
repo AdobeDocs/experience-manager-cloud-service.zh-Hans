@@ -5,7 +5,7 @@ exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe Experience Manager (AEM) Cloud Service 对于管理 AEM 项目带来许多
 
 ## 不允许使用自定义运行模式 {#custom-runmodes}
 
-AEM Cloud Service 中不能使用其他运行模式或自定义运行模式。有关为AEM Cloud Service提供的现成运行模式列表，请参阅 [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md#runmodes).
+AEM Cloud Service 中不能使用其他运行模式或自定义运行模式。有关为 AEM Cloud Service 提供的开箱即用的运行模式列表，请参阅[部署到 AEM as a Cloud Service](/help/implementing/deploying/overview.md#runmodes)。
 
 ## 删除了复制代理和相关更改 {#replication-agents}
 

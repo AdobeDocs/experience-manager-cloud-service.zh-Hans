@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,13 +36,13 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->有关内部部署和托管服务版本的更多详细信息，请参阅 [AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans) .
+>有关内部部署和托管服务版本的详细信息，请参阅 [AEM 6.5 文档。](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans)
 
 ## 架构 {#architecture}
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅 [架构](/help/overview/architecture.md).
+>有关更多详细信息，请参阅[架构](/help/overview/architecture.md)。
 
 AEM as a Cloud Service 现在具有：
 
@@ -87,7 +87,7 @@ AEM as a Cloud Service 现在使用连续集成和连续交付 (CI/CD)，以确�
 
 >[!TIP]
 >
->有关更多详细信息，请参阅 [AEM版本更新](/help/implementing/deploying/aem-version-updates.md).
+>有关更多详细信息，请参阅 [AEM 版本更新。](/help/implementing/deploying/aem-version-updates.md)
 
 ## Cloud Manager {#cloud-manager}
 
@@ -144,7 +144,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 * 有部署要求：
 
-   * 代码更新；必须审查并尽可能更新任何为以前版本的AEM开发的客户应用程序。
+   * 代码更新；任何为以前版本的 AEM 开发的客户应用程序都必须进行审核并可能需要更新。
 
    * 内容迁移
 
@@ -156,7 +156,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->有关更多详细信息，您可以从 [开发准则](/help/implementing/developing/introduction/development-guidelines.md) 和 [开发 — WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+>有关详细信息，您可通过[开发指南](/help/implementing/developing/introduction/development-guidelines.md)和[开发 – WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)来开始了解。
 
 支持 AEM as a Cloud Service 的新架构涉及到对整体开发人员体验的一些关键改变。AEM as a Cloud Service 的主要目标之一是允许经验丰富的客户（曾在内部部署或者在 Adobe Managed Service 环境中使用 AEM）尽可能快地迁移到 AEM as a Cloud Service，而无需重新编写大量的自定义代码。不过，可能仍然需要进行一些调整。
 
@@ -182,7 +182,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 由于代码和内容的明确分离，开发人员在部署过程中可以使用特定流程来更新内容。可变内容的典型用例包括：
 
-* 标准 *默认* 属于客户项目的内容（例如，文件夹、模板、工作流等）
+* 属于客户项目的标准&#x200B;*默认* 内容（例如，文件夹、模板、工作流等）
 
 * 搜索索引定义
 
@@ -206,7 +206,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->有关更多详细信息，请从开始 [内容恢复](/help/operations/backup.md)， [索引](/help/operations/indexing.md)、和 [其他维护任务](/help/operations/maintenance.md).
+>有关更多详细信息，请参阅[内容恢复](/help/operations/backup.md)、[索引](/help/operations/indexing.md)和[其他维护任务](/help/operations/maintenance.md)。
 
 使用 AEM as a Cloud Service 时，此类操作会自动完成，因此不再需要中断服务。
 
@@ -224,7 +224,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->请参阅 [安全性 — IMS支持](/help/security/ims-support.md).
+>请参阅[安全性 - IMS 支持](/help/security/ims-support.md)。
 
 对 AEM as a Cloud Service 的一项重大更改是完全集成使用 Adobe ID 来访问创作层。
 
@@ -240,7 +240,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->欲知更多详情，请参见 [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md) 是一个很好的起点。
+>如需了解详细信息，[基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md)是一个很好的起点。
 
 对于 Sites 和 Assets，以前使用过 AEM 的任何用户都会非常熟悉创作用户界面 (UI) 的基本原则。
 
@@ -274,6 +274,6 @@ Assets 产品包括云中的新一代资源处理以及高性能资源引入和�
 
 >[!TIP]
 >
->当您大致了解AEMas a Cloud Service时，可以通过查看 [入门历程](/help/journey-onboarding/overview.md).
+>在大致了解 AEM as a Cloud Service 后，您可以查看[入门培训历程](/help/journey-onboarding/overview.md)来快速入门。
 >
 >已完成入门培训或准备开始深入测试 AEM 的功能？安装 [AEM 参考演示加载项](/help/journey-sites/demos-add-on/overview.md)，使用丰富的示例探究 AEM 的强大功能。
