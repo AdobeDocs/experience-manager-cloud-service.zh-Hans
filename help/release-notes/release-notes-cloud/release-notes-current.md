@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 8eb087bdda335b0a33e616eb534615396b220369
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 24%
@@ -105,7 +105,7 @@ ht-degree: 24%
 
 * **将自适应表单提交到Adobe Workfront Fusion场景**：Formsas a Cloud Service提供开箱即用的选项，可轻松地将自适应表单与Adobe Workfront连接。 这简化了将自适应表单提交到Adobe Workfront场景的过程，允许您在提交自适应表单时触发Workfront Fusion场景。
 
-* **从右至左语言支持**：基于核心组件构建的自适应Forms现在能够以从右至左(RTL)语言呈现，如阿拉伯语、波斯语和乌尔都语。 全球有超过20亿人使用RTL语言。 通过RTL语言中的表单，您可以扩展自适应表单的覆盖范围，以迎合这些不同的受众并利用RTL市场。 在某些地区，提供当地语言表格也是法律要求。 通过容纳本地语言，您不仅可以向更广泛的受众敞开大门，还可以确保遵守相关法律和法规。
+* **[从右至左语言支持](/help/forms/supporting-new-language-localization-core-components.md)**：基于核心组件构建的自适应Forms现在能够以从右至左(RTL)语言呈现，如阿拉伯语、波斯语和乌尔都语。 全球有超过20亿人使用RTL语言。 通过RTL语言中的表单，您可以扩展自适应表单的覆盖范围，以迎合这些不同的受众并利用RTL市场。 在某些地区，提供当地语言表格也是法律要求。 通过容纳本地语言，您不仅可以向更广泛的受众敞开大门，还可以确保遵守相关法律和法规。
 
   ![从右至左语言支持](/help/forms/assets/right-to-left-language-support.png)
 
