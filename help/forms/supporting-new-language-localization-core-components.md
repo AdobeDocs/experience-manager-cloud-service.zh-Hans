@@ -2,9 +2,9 @@
 title: 如何基于核心组件为自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1348'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 | Foundation 组件 | [单击此处](supporting-new-language-localization.md) |
 | 核心组件 | 本文 |
 
-AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。
+AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。 您还可以通过添加这些区域设置，以从右至左(RTL)语言（如阿拉伯语、波斯语和乌尔都语）展示自适应Forms。
 
 ## 如何为自适应表单选择区域设置？
 

@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 0290e40094147a1c85eacf157904c7ef7388c5e7
+source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 24%
 
 ---
@@ -146,6 +146,6 @@ ht-degree: 24%
 
 ## 已知问题 {#known-issues}
 
-* 用户无法提交基于核心组件的自适应Forms。 使用核心组件版本2.0.38 - 2.0.60构建的自适应Forms出现问题。
+* 无法提交基于核心组件的自适应Forms。 使用核心组件版本2.0.38 - 2.0.60构建的自适应Forms出现问题。
 
   要解决此问题。 您可以迁移到自适应表单核心组件版本2.0.62或更高版本。 要为您的环境设置自适应Forms核心组件版本， [设置core.forms.components.version、core.forms.components.af.version和core.wcm.components.version组件的版本](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) 基于Formsas a Cloud Service存储库或AEM原型的项目中的依赖项，以及 [将更改部署到Formsas a Cloud Service环境](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). 您可以在以下位置找到最新版本的自适应Forms核心组件依赖项： [自适应Forms核心组件Git存储库](https://github.com/adobe/aem-core-forms-components#system-requirements).
