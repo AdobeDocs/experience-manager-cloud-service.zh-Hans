@@ -3,10 +3,10 @@ title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
 description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现适用的资源，并帮助您提升内容速度。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 224529293f87b772c150dd26ce5260a9172c8b68
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 73%
+source-wordcount: '1314'
+ht-degree: 74%
 
 ---
 
@@ -172,7 +172,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## 配置搜索第一个主页 {#configuring-search-first-homepage}
 
-搜索第一个主页允许您即时浏览各种文件和文件夹。 它可让您轻松浏览资产类型、元数据、智能标记，甚至内容本身，而无需知道确切的关键字。 [!DNL Assets view] 允许您通过控制登录时应该显示的内容来配置主页 [!DNL Assets view].
+Experience Manager Assets允许您为您的组织选择默认登录页面。 将“搜索优先”用作主页时，您还可以通过配置背景和徽标图像以匹配您的品牌来定制页面的品牌。
 
 要配置搜索第一个主页，请执行以下步骤：
 
@@ -191,7 +191,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 1. 导航到 **[!UICONTROL 背景和徽标图像]** 部分在 **[!UICONTROL 主页]**.
 1. 单击 **[!UICONTROL 替换]** 浏览现有资源存储库中的图像。
-1. 单击&#x200B;**[!UICONTROL 保存]**。[预览](#preview-configured-homepage) 进行修改所需的更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**。[预览](#preview-configured-homepage) 进行更改以审阅修改。
 
 ### 预览配置的主页 {#preview-configured-homepage}
 

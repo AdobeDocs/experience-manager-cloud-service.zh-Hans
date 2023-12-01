@@ -3,10 +3,10 @@ title: 编辑图像
 description: 使用由 [!DNL Adobe Photoshop Express] 提供支持的选项编辑图像并将更新后的图像另存为版本。
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 76%
+source-wordcount: '1171'
+ht-degree: 75%
 
 ---
 
@@ -82,12 +82,12 @@ ht-degree: 76%
 
 ## 使用Adobe Express嵌入式编辑器编辑图像 {#edit-using-embedded-editor}
 
-[!DNL Assets view] 可直接从资源存储库全面编辑图像。 嵌入式编辑器允许使用轻松直观地编辑图像 [!DNL Adobe Express]. 它通过使用模板或修改现有资源来加快资源的可重用性。 您可以使用预定义元素让您的资源看起来引人注目，也可以通过单击几下来执行快速操作以编辑您的图像。
+有权访问Express的用户现在可以直接在AEM Assets中使用Adobe Express和Adobe Firefly集成的图像编辑和创建工具，以改进内容重用并加快内容速度。 您还可以使用预定义元素让您的资产外观引人注目，或执行快速操作以只需单击几下即可编辑图像。
 
 要使用编辑图像，请执行以下操作 [!DNL Adobe Express] 嵌入式编辑器，请执行以下步骤：
 
 1. 从中选择图像 [!DNL Experience Manager] 资产存储库。
-1. 单击 **[!UICONTROL 在Adobe Express中打开]**. [!DNL Adobe Express] 屏幕。
+1. 单击 **[!UICONTROL 在Adobe Express中打开]**.
 
    ![Adobe Express嵌入式编辑器](assets/embedded-editor.png)
 
@@ -97,18 +97,18 @@ ht-degree: 76%
 
 ## 使用Adobe Express创建新资源 {#create-new-embedded-editor}
 
-[!DNL Assets view] 提供了使用从头开始创建新模板的功能 [!DNL Adobe Express] 嵌入式编辑器。 要使用创建新资源，请执行以下操作 [!DNL Adobe Expresss]，执行以下步骤：
+[!DNL Assets view] 提供了使用从头开始创建新模板的功能 [!DNL Adobe Express] 嵌入式编辑器。 要使用创建新资源，请执行以下操作 [!DNL Adobe Express]，执行以下步骤：
 
-1. 导航到 **[!UICONTROL 我的工作区]** 并单击 **[!UICONTROL 创建]**. [!DNL Adobe Express] 空白画布会显示在 [!DNL Assets view] 用户界面。
+1. 导航到 **[!UICONTROL 我的工作区]** 并单击 **[!UICONTROL 创建]** 在顶部显示的Adobe Express横幅中 [!UICONTROL 快速访问] 部分。 [!DNL Adobe Express] 空白画布会显示在 [!DNL Assets view] 用户界面。
 1. 创建内容，使用 [模板](https://helpx.adobe.com/in/express/using/work-with-templates.html). 否则，导航到 **[!UICONTROL 你的东西]** 以修改现有内容。
 1. 完成编辑后，单击 **[!UICONTROL 另存为新资源]**.
-1. 为创建的资源指定目标路径。
+1. 为创建的资源指定目标路径，然后单击 **[!UICONTROL 保存]**.
 
 >[!NOTE]
 >
->* 您只能修改 `JPEG` 和 `PNG` 格式。
->* 资源大小应小于14 MB。
->* 您可以将图像另存为 `PDF`， `JPEG`，或 `PNG` 格式。
+>* 您只能修改以下项的图像： `JPEG` 和 `PNG` 格式类型。
+>* 资源大小必须小于14 MB。
+>* 您可以将图像保存在 `PDF`， `JPEG`，或 `PNG` 格式。
 
 ## 使用 [!DNL Adobe Photoshop Express] 编辑图像 {#edit-using-photoshop-express}
 
