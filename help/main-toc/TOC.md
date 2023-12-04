@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
 workflow-type: tm+mt
-source-wordcount: '4393'
+source-wordcount: '4420'
 ht-degree: 99%
 
 ---
@@ -178,7 +178,7 @@ ht-degree: 99%
 + 入门 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 入门培训历程 {#journey}
-      + [入门培训历程 概述](/help/journey-onboarding/overview.md)
+      + [入门历程概述](/help/journey-onboarding/overview.md)
       + [入门准备](/help/journey-onboarding/preparation.md)
       + [AEM as a Cloud Service 术语](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
@@ -585,6 +585,7 @@ ht-degree: 99%
          + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [将基于 Foundation 组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
+         + [将自适应表单提交到Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [将 AEM Forms 连接到数据库或数据源](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
          + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -681,7 +682,7 @@ ht-degree: 99%
    + Screens as a Cloud Service 概述{#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
       + [了解角色定义](/help/screens-cloud/introduction/personas-screens-cloud.md)
-      + [Adobe Analytics与Screens云的集成](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
+      + [Adobe Analytics 与 Screens Cloud 的集成](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
    + Screens as a Cloud Service 入门培训 {#onboarding-screens-cloud}
       + [首次登录](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + 在 Cloud Manager 中添加 Screens 程序作为加载项 {#adding-screens-addon}
@@ -712,7 +713,7 @@ ht-degree: 99%
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [创建组件](/help/screens-cloud/developing/creating-components.md)
       + [为 Screens as a Cloud Service 开发自定义组件](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
-   + [Screens as a Cloud Service 常见问题解答](/help/screens-cloud/screens-cloud-faqs.md)
+   + [Screens as a Cloud Service 常见问题](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [AEM Content and Commerce](/help/commerce-cloud/home.md)
    + [对 AEM Content and Commerce as a Cloud Service 的重要更改](/help/commerce-cloud/changes.md)
@@ -788,7 +789,7 @@ ht-degree: 99%
       + [身份验证](/help/headless/security/authentication.md)
    + 部署 {#deployment}
       + [架构](/help/headless/deployment/architecture.md)
-      + [Dispatcher - 端点](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher — 终端](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - 为持久化查询启用缓存](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 配置](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [反向链接筛选条件](/help/headless/deployment/referrer-filter.md)
