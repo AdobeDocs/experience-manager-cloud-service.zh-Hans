@@ -1,12 +1,12 @@
 ---
-title: 如何配置自适应表单的提交操作?
+title: 如何为自适应表单配置提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建自己的提交操作
 keywords: 如何为自适应表单选择提交操作、将自适应表单连接到sharepoint列表、将自适应表单连接到sharepoint文档库、将自适应表单连接到表单数据模型
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 6ebc40b501472025cafffa258e253a53139a0301
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '4063'
-ht-degree: 86%
+source-wordcount: '4006'
+ht-degree: 84%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 86%
 
 ## 提交到 SharePoint {#submit-to-sharedrive}
 
-**[!UICONTROL 提交到 SharePoint]**&#x200B;提交操作将自适应表单与 Microsoft® SharePoint 存储连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的 Microsoft® Sharepoint 存储。
+**[!UICONTROL 提交到 SharePoint]**&#x200B;提交操作将自适应表单与 Microsoft® SharePoint 存储连接起来。您可以将表单数据文件、附件或记录文档提交到连接的Microsoft® Sharepoint存储。
 
 通过使用提交到SharePoint，您可以：
 * [将自适应表单连接到SharePoint文档库](#connect-af-sharepoint-doc-library)
@@ -205,7 +205,7 @@ ht-degree: 86%
 
 您可以在自适应表单中使用创建的SharePoint列表配置，以在SharePoint列表中保存数据或生成的记录文档。 执行以下步骤以在自适应表单中使用SharePoint列表：
 
-1. [使用Microsoft® SharePoint列表配置创建表单数据模型](/help/forms/create-form-data-models.md)
+1. [使用Microsoft创建表单数据模型](/help/forms/create-form-data-models.md)
 1. [配置表单数据模型以检索和发送数据](/help/forms/work-with-form-data-model.md#configure-services)
 1. [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 1. [使用表单数据模型配置提交操作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -215,10 +215,10 @@ ht-degree: 86%
 >[!NOTE]
 >
 > 在Microsoft® SharePoint List中，不支持以下列类型：
-> * 图像列
-> * 元数据列
-> * 人员列
-> * 外部数据列
+* 图像列
+* 元数据列
+* 人员列
+* 外部数据列
 
 ## 使用表单数据模型提交 {#submit-using-form-data-model}
 
@@ -263,7 +263,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->要将字段作为 REST URL 中的参数传递，所有字段都必须具有不同的元素名称，即使这些字段位于不同的面板上也是如此。
+要将字段作为 REST URL 中的参数传递，所有字段都必须具有不同的元素名称，即使这些字段位于不同的面板上也是如此。
 
 <!-- ## Send PDF via Email {#send-pdf-via-email}
 
@@ -312,7 +312,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 提交到 OneDrive {#submit-to-onedrive}
 
-**[!UICONTROL 提交到 OneDrive]**&#x200B;提交操作将自适应表单与 Microsoft® OneDrive 连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的 Microsoft® OneDrive 存储。
+**[!UICONTROL 提交到 OneDrive]**&#x200B;提交操作将自适应表单与 Microsoft® OneDrive 连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的Microsoft® OneDrive存储。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
@@ -341,7 +341,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
    >[!NOTE]
    >
-   > **客户端密码**&#x200B;字段是必填还是可选字段取决于 Azure Active Directory 应用程序配置。如果应用程序配置为使用客户端密码，则必须提供客户端密码。
+   **客户端密码**&#x200B;字段是必填还是可选字段取决于 Azure Active Directory 应用程序配置。如果应用程序配置为使用客户端密码，则必须提供客户端密码。
 
 1. 单击&#x200B;**[!UICONTROL 连接]**。连接成功后，将显示`Connection Successful`消息。
 
@@ -349,8 +349,8 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
    >[!NOTE]
    >
-   >* 默认情况下，`forms-ootb-storage-adaptive-forms-submission` 位于 OneDrive 容器中。
-   > * 通过单击&#x200B;**创建文件夹**&#x200B;来创建一个 `forms-ootb-storage-adaptive-forms-submission` 形式的文件夹（如果该文件夹不存在）。
+   * 默认情况下，`forms-ootb-storage-adaptive-forms-submission` 位于 OneDrive 容器中。
+   * 通过单击&#x200B;**创建文件夹**&#x200B;来创建一个 `forms-ootb-storage-adaptive-forms-submission` 形式的文件夹（如果该文件夹不存在）。
 
 现在，您可以在自适应表单中将此 OneDrive 存储配置用于提交操作。
 
@@ -361,8 +361,8 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
    >[!NOTE]
    >
-   > * 为自适应表单选择相同的[!UICONTROL 配置容器]，您已在其中创建 OneDrive 存储。
-   > * 如果未选择[!UICONTROL 配置容器]，则全局[!UICONTROL 存储配置]文件夹将显示在提交操作属性窗口中。
+   * 为自适应表单选择相同的[!UICONTROL 配置容器]，您已在其中创建 OneDrive 存储。
+   * 如果未选择[!UICONTROL 配置容器]，则全局[!UICONTROL 存储配置]文件夹将显示在提交操作属性窗口中。
 
 1. 选择&#x200B;**[!UICONTROL 提交到 OneDrive]** 作为&#x200B;**提交操作**。
    ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
@@ -404,8 +404,8 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
    >[!NOTE]
    >
-   > * 为自适应表单选择相同的[!UICONTROL 配置容器]，您已在其中创建 OneDrive 存储。
-   > * 如果未选择[!UICONTROL 配置容器]，则全局[!UICONTROL 存储配置]文件夹将显示在提交操作属性窗口中。
+   * 为自适应表单选择相同的[!UICONTROL 配置容器]，您已在其中创建 OneDrive 存储。
+   * 如果未选择[!UICONTROL 配置容器]，则全局[!UICONTROL 存储配置]文件夹将显示在提交操作属性窗口中。
 
 1. 选择&#x200B;**[!UICONTROL 提交到 Azure Blob 存储]**&#x200B;作为&#x200B;**提交操作**。
    ![Azure Blob 存储 GIF](/help/forms/assets/azure-submit-video.gif)
@@ -470,7 +470,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 >[!NOTE]
 >
->服务器端验证将验证表单模型。建议您创建一个单独的客户端库以用于验证，不要将它与同一客户端库中的 HTML 样式和 DOM 操作等其他项混合。
+服务器端验证将验证表单模型。建议您创建一个单独的客户端库以用于验证，不要将它与同一客户端库中的 HTML 样式和 DOM 操作等其他项混合。
 
 ### 支持验证表达式中的自定义函数 {#supporting-custom-functions-in-validation-expressions-br}
 

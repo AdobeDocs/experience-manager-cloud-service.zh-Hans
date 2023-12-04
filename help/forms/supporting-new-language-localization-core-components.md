@@ -2,10 +2,10 @@
 title: 如何基于核心组件为自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: a801e6c605fff46ca07699727f3078c9a285a943
+source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 5%
+source-wordcount: '1335'
+ht-degree: 3%
 
 ---
 
@@ -13,8 +13,10 @@ ht-degree: 5%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| Foundation 组件 | [单击此处](supporting-new-language-localization.md) |
+| 基础组件 | [单击此处](supporting-new-language-localization.md) |
 | 核心组件 | 本文 |
+
+<span class="preview"> 从右至左语言支持功能在早期采用者计划下提供。 您可以从官方电子邮件ID写信到aem-forms-early-adopter-program@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
 
 AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。 您还可以通过添加这些区域设置，以从右至左(RTL)语言（如阿拉伯语、波斯语和乌尔都语）展示自适应Forms。
 
@@ -80,7 +82,7 @@ AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德�
 ### 2.将新区域设置添加到指南本地化服务 {#add-a-locale-to-the-guide-localization-service}
 
 1. 以纯文本编辑器打开上一部分中克隆的存储库文件夹。
-1. 导航到 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 文件夹。您可以找到 `<appid>` 在 `archetype.properties` 项目的文件。
+1. 导航至 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config` 文件夹。 您可以找到 `<appid>` 在 `archetype.properties` 项目的文件。
 1. 打开 `[AEM Forms as a Cloud Service Git repository]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config/Guide Localization Service.cfg.json` 文件以供编辑。如果文件不存在，请创建该文件。 具有支持的区域设置的示例文件如下所示：
 
    ![示例指南Localization Service.cfg.json](locales.png)
@@ -100,7 +102,7 @@ AEM Forms提供了一个示例客户端库，以帮助您轻松添加新区域�
 
 ### 4.创建特定于区域设置的文件 {#locale-specific-file}
 
-1. 导航至 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
+1. 导航到 `[AEM Forms as a Cloud Service Git repository]/ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/`
 1. 找到 [GitHub上的英语区域设置.json文件](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)，其中包含产品中包含的最新默认字符串集。
 1. 为您的特定区域设置创建一个.json文件。
 1. 在新创建的.json文件中，镜像了英语区域设置文件的结构。
