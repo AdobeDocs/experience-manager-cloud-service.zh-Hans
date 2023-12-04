@@ -3,10 +3,10 @@ title: Edge Delivery Services 快速入门
 description: Edge Delivery Services 快速入门。
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: 185a192b0d40e25cdb09fd8a1f222d9d9b1bd631
+source-git-commit: c3c1a2c89031b6a7a44ac8d16ecb2e64f37490a8
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 100%
+source-wordcount: '823'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ Edge Delivery Services 是 Adobe Experience Manager 的一部分，这样 Edge D
 
 ## 从 Adobe 获取帮助 {#adobe-gethelp}
 
-您可以通过由您提供的产品协作渠道与 Adobe 产品团队联系（有关访问详情，请参阅下文）以回答有关产品使用或最佳实践的疑问。没有服务水平条款 (SLT) 与通过该产品协作渠道进行的对话关联。如果产品问题需要额外调查和故障排除，并且需要满足响应 SLT，则可按照[支持流程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)提交支持工单。
+您可以通过由您提供的产品协作渠道与 Adobe 产品团队联系（有关访问详情，请参阅下文）以回答有关产品使用或最佳实践的疑问。没有通过产品协作渠道与对话相关联的服务级别目标(SLT)。 如果产品问题需要额外调查和故障排除，并且需要满足响应 SLT，则可按照[支持流程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)提交支持工单。
 
 Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
 
