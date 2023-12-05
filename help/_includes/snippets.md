@@ -1,7 +1,7 @@
 ---
-source-git-commit: c20f59770f4eb722d49a96952126993577bfd65e
-workflow-type: ht
-source-wordcount: '262'
+source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+workflow-type: tm+mt
+source-wordcount: '205'
 ht-degree: 100%
 
 ---
@@ -14,12 +14,6 @@ ht-degree: 100%
 ## Edge Delivery Services 创作 {#edge-delivery-authoring}
 
 [!BADGE 要为 Edge Delivery Services 创作 AEM 内容，请单击此处。]{type=Positive url="/help/edge/overview.md" tooltip="为 Edge Delivery Services 创作 AEM 内容"}
-
-## IMS 是否支持将组分配给配置文件 {#ims-group-profiles}
-
->[!NOTE]
->
->AEM 当前不支持将组分配给配置文件。应改为单独添加用户。
 
 ## WAF 配置限量发行 {#waf-limited-release}
 
