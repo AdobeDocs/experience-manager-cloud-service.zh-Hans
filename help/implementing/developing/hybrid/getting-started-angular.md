@@ -1,15 +1,15 @@
 ---
-title: 利用 Angular 在 AEM 中开始使用 SPA
+title: 使用Angular在AEM中开始使用SPA
 description: 本文介绍了一个SPA应用程序示例，说明它是如何组合在一起的，并使您能够使用Angular框架快速启动和运行自己的SPA。
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 12%
+source-wordcount: '981'
+ht-degree: 6%
 
 ---
 
-# 利用 Angular 在 AEM 中开始使用 SPA {#getting-started-with-spas-in-aem-using-angular}
+# 使用Angular在AEM中开始使用SPA {#getting-started-with-spas-in-aem-using-angular}
 
 单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用SPA框架构建站点，而创作者希望能够在AEM中顺畅地为使用SPA框架构建的站点编辑内容。
 
@@ -272,7 +272,7 @@ AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在内容被�
 
 ## 后续步骤 {#next-steps}
 
-* [使用 React 在 AEM 中开始使用 SPA](getting-started-react.md) 说明了如何使用 React 构建基本 SPA 以与 AEM 中的 SPA 编辑器结合使用.
+* [在AEM中使用React快速入门SPA](getting-started-react.md) 显示了如何使用React构建基本SPA以在AEM中使用SPA编辑器。
 * [SPA 编辑器概述](editor-overview.md)更深入地介绍了 AEM 和 SPA 之间的通信模型。
 * [WKND SPA项目](wknd-tutorial.md) 是一个分步教程，用于在AEM中实施简单的SPA项目。
 * [SPA的动态模型到组件映射](model-to-component-mapping.md) 说明动态模型到组件的映射以及它在AEM中的SPA中的工作方式。

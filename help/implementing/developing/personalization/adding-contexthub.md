@@ -2,9 +2,9 @@
 title: 将ContextHub添加到页面并访问存储
 description: 将ContextHub添加到您的页面以启用ContextHub功能并链接到ContextHub JavaScript库
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ContextHub JavaScript API提供了对ContextHub管理的上下文数据的访问
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-请注意，您还需要配置ContextHub工具栏是否以预览模式显示。 请参阅 [显示和隐藏ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
+您还需要配置ContextHub工具栏是否以预览模式显示。 请参阅 [显示和隐藏ContextHub UI](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui).
 
 ## 关于ContextHub存储 {#about-contexthub-stores}
 
@@ -103,7 +103,7 @@ ContextHub提供 [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-uti
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-请注意，自定义候选存储区可以定义其他提供存储数据访问权限的函数。
+自定义商店候选者可以定义其他提供存储数据访问权限的函数。
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ ContextHub区段安装在 `/conf/<site>/settings/wcm/segments` 节点。
 
 >[!WARNING]
 >
->安装的区段作为参考配置提供，以帮助您为项目构建自己的专用配置，因此不应直接使用。
+>提供的已安装区段作为参考配置，可帮助您为项目构建自己的专用配置。 请勿直接使用它们。
 
 ## 调试Contexthub {#debugging-contexthub}
 

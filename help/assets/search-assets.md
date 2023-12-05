@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5562'
-ht-degree: 8%
+source-wordcount: '5496'
+ht-degree: 6%
 
 ---
 
@@ -83,7 +83,7 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 
 自2023年8月起，Experience Manager Assets将推出一个新版本9 `damAssetLucene` 索引。 以前的版本， `damAssetLucene-8` 在下方，使用 `statistical` 模式，检查每个搜索Facet计数项的示例访问控制。
 
-`damAssetLucene-9` 将 Oak Query 分面计数的行为更改为不再评估对底层搜索索引返回的分面计数的访问控制，而这导致加快搜索响应速度。因此，可能会向用户显示方面计数值，其中包括他们无权访问的资产。 这些用户无法访问、下载或读取这些资产的任何其他详细信息，包括其路径，也无法获取有关这些资产的任何更多信息。
+`damAssetLucene-9` 更改了Oak查询Facet计数的行为，使其不再评估基础搜索索引返回的Facet计数的访问控制，这将导致更快的搜索响应时间。 因此，可能会向用户显示方面计数值，其中包括他们无权访问的资产。 这些用户无法访问、下载或读取这些资产的任何其他详细信息，包括其路径，也无法获取有关这些资产的任何更多信息。
 
 如果需要切换到上一个行为(`statistical` 模式)，请参见 [内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html) 创建自定义版本的 `damAssetLucene-9` 索引。 Adobe不建议切换到 `secure` 模式，这是因为对大型结果集的搜索响应时间产生的影响。
 
@@ -144,7 +144,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 1. 从 [!DNL Assets] 在用户界面中，打开资产的属性页面。 单击 **[!UICONTROL 高级]** 并单击 **[!UICONTROL 添加]** 下 **[!UICONTROL 提升搜索关键词]**.
 1. 在 **[!UICONTROL 搜索提升]** 框中，指定要增加图像搜索的关键字，然后单击 **[!UICONTROL 添加]**. 您可以按相同方式指定多个关键字。
-1. 单击“**[!UICONTROL 保存并关闭]**”。您针对此关键字提升的资产将显示在排名最前的搜索结果中。
+1. 单击 **[!UICONTROL 保存并关闭]**. 您针对此关键字提升的资产将显示在排名最前的搜索结果中。
 
 利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅 [搜索位置 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
@@ -154,7 +154,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## 配置资源批次大小以显示搜索结果 {#configure-asset-batch-size}
 
-管理员现在可配置在您执行搜索时显示的资源的批次大小。当您进一步向下滚动以加载资源搜索结果时，将以所配置的批次大小数量的倍数显示这些结果。可选择 200、500 和 1000 个资源的可用批次大小。设置较小的批次大小数字可加快搜索响应速度。
+管理员现在可以配置在执行搜索时显示的资产的批量大小。 当您进一步向下滚动以加载资源搜索结果时，将以所配置的批次大小数量的倍数显示这些结果。可选择 200、500 和 1000 个资源的可用批次大小。设置较小的批次大小数字可加快搜索响应速度。
 
 例如，如果将结果计数限制设置为200个资源的批次大小，则当您开始执行搜索时，Experience Manager Assets会在搜索结果中显示一个包含200个资源的批次大小。 当您向下滚动以浏览搜索结果时，将显示下一批200个资源。 该过程会一直持续到显示与搜索查询匹配的所有资产为止。
 
@@ -183,7 +183,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 查找类似图像 {#visualsearch}
 
-要查找与用户选择的图像视觉上相似的图像，请从图像的卡片视图或工具栏中单击&#x200B;**[!UICONTROL 查找类似]**&#x200B;选项。[!DNL Experience Manager] 显示 DAM 存储库中与用户所选图像相似的智能标记图像。
+要查找与用户选择的图像视觉上相似的图像，请从图像的卡片视图或工具栏中单击&#x200B;**[!UICONTROL 查找类似]**&#x200B;选项。[!DNL Experience Manager] 显示DAM存储库中与用户选择的图像类似的智能标记图像。
 
 ![使用信息卡视图中的选项查找类似图像](assets/search_find_similar.png)
 
@@ -284,7 +284,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 | 名称 | 值 | 示例 | 用途 |
 |---|---|---|---|
-| 资源后缀(B) | 文件夹路径作为URL中的资源后缀： [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 在选中特定文件夹（例如文件夹）后启动资产选择器 `/content/dam/we-retail/en/activities` 选中，URL应采用以下格式： `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 如果在启动资产选择器时要求选择特定文件夹，请将其作为资源后缀传递。 |
+| 资源后缀(B) | 文件夹路径作为URL中的资源后缀： [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 在选中特定文件夹（例如，使用文件夹）后启动资产选择器 `/content/dam/we-retail/en/activities` 选中，URL应采用以下格式： `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 如果在启动资产选择器时要求选择特定文件夹，请将其作为资源后缀传递。 |
 | `mode` | 单个，多个 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 在多个模式下，您可以使用资产选择器同时选择多个资产。 |
 | `dialog` | true， false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 使用这些参数以Granite对话框形式打开资产选择器。 仅当通过Granite路径字段启动资产选择器，并将其配置为pickerSrc URL时，此选项才适用。 |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 使用此选项可指定资源选择器的根文件夹。 在这种情况下，资产选择器允许您仅选择根文件夹下的子资产（直接/间接）。 |
@@ -325,11 +325,11 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 * 使用见解谓词，根据从各种创意应用程序获得的使用情况统计数据，搜索支持的资产。 使用情况数据按使用情况得分、展示次数、点击次数和媒体渠道进行分组，资产在这些渠道中显示类别。
 * 使用 **[!UICONTROL 全选]** 复选框，以选择搜索出的资源。 [!DNL Experience Manager] 最初在卡片视图中显示100个资源，在列表视图中显示200个资源。 滚动搜索结果时会加载更多资源。 您可以选择比已加载的资源更多的资源。 选定资源的计数将显示在搜索结果页面的右上角。 您可以对选择进行操作，例如，下载所选资源，批量更新所选资源的元数据属性，或将所选资源添加到收藏集。 当选择的资源多于显示的资源时，会对所有选定的资源应用操作，或者显示应用操作的资源数的对话框。 要将操作应用于未加载的资源，请确保已显式选择所有资源。
 * 要搜索不包含必需元数据的资源，请参阅 [必需元数据](#mandatorymetadata).
-* 搜索使用所有元数据字段。 一般搜索（例如搜索12）通常会返回许多结果。 为了获得更好的结果，请使用双引号（而非单引号）或确保数字与不带特殊字符(例如 `shoe12`)。
+* 搜索使用所有元数据字段。 一般搜索（例如搜索12）通常会返回许多结果。 为了获得更好的结果，请使用双引号（而非单引号）或确保数字与不带特殊字符(例如， `shoe12`)。
 * 全文搜索支持以下运算符 `-` 和 `^`. 要将这些字母搜索为字符串文字，请用双引号将搜索表达式括起来。 例如，使用 `"Notebook - Beauty"` 而不是 `Notebook - Beauty`.
 * 如果搜索结果太多，请限制 [搜索范围](#scope) 零入所需的资产。 当您知道如何更好地查找所需资源（例如，特定文件类型、特定位置、特定元数据等）时，这种方法最有效。
 
-* **标记**：标记可帮助您更有效地对可浏览和搜索的资源进行分类。 标记有助于将适当的分类传播给其他用户和工作流程。[!DNL Experience Manager] 提供了一些方法，可使用Adobe Sensei的人工智能服务自动标记资源，从而更好地通过使用和培训来标记资源。 搜索资产时，智能标记会考虑在内。 它与内置搜索功能配合使用。 请参阅 [搜索行为](#searchbehavior). 要优化搜索结果的显示顺序，您可以 [提升搜索排名](#searchrank) 的一些精选资源的。
+* **标记**：标记可帮助您更有效地对可浏览和搜索的资源进行分类。 标记有助于将相应的分类传播给其他用户和工作流。 [!DNL Experience Manager] 提供了一些方法，可使用Adobe Sensei的人工智能服务自动标记资源，从而更好地通过使用和培训来标记资源。 搜索资产时，智能标记会考虑在内。 它与内置搜索功能配合使用。 请参阅 [搜索行为](#searchbehavior). 要优化搜索结果的显示顺序，您可以 [提升搜索排名](#searchrank) 的一些精选资源的。
 
 * **索引**：搜索结果中只返回已索引的元数据和资源。 为了获得更好的覆盖率和性能，请确保正确编制索引并遵循最佳实践。 请参阅 [索引](#searchindex).
 
@@ -531,7 +531,7 @@ You can configure [!DNL Experience Manager] to extract the text from the assets 
 | 搜索结果过多。 | 广泛搜索参数。 | 考虑限制 [搜索范围](#scope). 使用智能标记可能会为您提供比预期更多的搜索结果。 请参阅 [使用智能标记搜索行为](#withsmarttags). |
 | 不相关或部分相关的搜索结果。 | 使用智能标记可更改搜索行为。 | 了解 [智能标记后搜索如何更改](#withsmarttags). |
 | 没有针对资产的自动完成建议。 | 新上传的资产尚未编制索引。 当您开始在Omnisearch栏中输入搜索关键字时，元数据无法立即作为建议使用。 | [!DNL Experience Manager] 将等待超时时间（默认为一小时）到期，然后再运行后台作业，为所有新上传或更新资源的元数据编制索引，然后将元数据添加到建议列表中。 |
-| 无搜索结果. | <ul><li>不存在与您的查询匹配的资源。 </li><li> 在搜索查询之前添加了空格。 </li><li> 不支持的元数据字段包含您搜索的关键字。</li><li> 在资产空闲时间进行的搜索。 </li></ul> | <ul><li>使用其他关键词进行搜索。 或者，使用智能标记或相似性搜索来改进搜索结果。 </li><li>[已知限制](#limitations).</li><li>搜索不考虑所有元数据字段。 请参阅 [范围](#scope).</li><li>稍后搜索或修改所需资源的开始时间和结束时间。</li></ul> |
+| 无搜索结果。 | <ul><li>不存在与您的查询匹配的资源。 </li><li> 在搜索查询之前添加了空格。 </li><li> 不支持的元数据字段包含您搜索的关键字。</li><li> 在资产空闲时间进行的搜索。 </li></ul> | <ul><li>使用其他关键词进行搜索。 或者，使用智能标记或相似性搜索来改进搜索结果。 </li><li>[已知限制](#limitations).</li><li>搜索不考虑所有元数据字段。 请参阅 [范围](#scope).</li><li>稍后搜索或修改所需资源的开始时间和结束时间。</li></ul> |
 | 搜索筛选器或谓词不可用。 | <ul><li>未配置搜索筛选器。</li><li>它不适用于您的登录信息。</li><li>（不太可能）未在您使用的部署中自定义搜索选项。</li></ul> | <ul><li>联系管理员以检查搜索自定义项是否可用。</li><li>请与管理员联系以检查您的帐户是否具有使用此自定义设置的权限。</li><li>联系管理员并检查以下各项可用的自定义项： [!DNL Assets] 您正在使用的部署。</li></ul> |
 | 搜索视觉上相似的图片时，缺少预期的图片。 | <ul><li>图像在中不可用 [!DNL Experience Manager].</li><li>图像未编制索引。 通常是在最近上传时。</li><li>图像未智能标记。</li></ul> | <ul><li>将图像添加到 [!DNL Assets].</li><li>请与管理员联系以重新索引存储库。 此外，请确保使用相应的索引。</li><li>请与管理员联系以智能标记相关资产。</li></ul> |
 | 当搜索视觉上相似的图像时，显示不相关的图像。 | 视觉搜索行为。 | [!DNL Experience Manager] 显示尽可能多的潜在相关资源。 不太相关的图像（如果有）会添加到结果中，但搜索排名较低。 向下滚动搜索结果时，搜索资源的匹配质量和相关性会降低。 |

@@ -2,10 +2,10 @@
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 面向 Adobe Experience Manager as a Cloud Service 的图像管理系统支持
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 100%
+source-wordcount: '1917'
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ AEM 客户应已设置组织，作为 IMS 设置的一部分，客户实例将�
 ![IMS 载入](/help/security/assets/ims2.png)
 
 1. 指定的系统管理员将会收到登录到 Cloud Manager 的邀请。登录 Cloud Manager 后，系统管理员可以选择配置 AEM 程序和环境，或导航到 Admin Console 以执行管理任务。
-1. 系统管理员声明一个域以确认相应域（例如 acme.com）的所有权
+1. 系统管理员声明一个域以确认相应域的所有权(例如，acme.com)
 1. 系统管理员设置用户目录
 1. 系统管理员在 Admin Console 中进行 IDP 配置以设置单点登录。
 1. AEM 管理员可以像往常一样管理本地组以及权限。

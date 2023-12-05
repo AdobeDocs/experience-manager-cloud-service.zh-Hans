@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 机器翻译服务会立即翻译自适应表单和记录文档中的内容。 [!DNL AEM Forms] 已预配置为使用 [!DNL Microsoft Translator] 用于机器翻译。 执行以下步骤以启用自适应Forms和记录文档的机器翻译：
 
-1. 在 [!DNL AEM Forms] 在UI中，选择表单，然后点按 **添加字典** 选项。
+1. 在 [!DNL AEM Forms] 在UI中，选择一个表单，然后选择 **添加字典** 选项。
 1. 在 **添加字典至翻译项目** 屏幕上，选择 **创建新翻译项目** 或 **添加到现有翻译项目** 选项。
 1. 在 **项目标题** 字段中，指定标题。 例如，`Government Reference Site - German locale.`
 1. 在 **目标语言** 字段，指定区域设置(例如， `German(de)`)，然后单击 **完成**. 您可以指定多个区域设置。 该表单将转换为 **目标语言** 字段。
@@ -48,7 +48,7 @@ ht-degree: 1%
 [记录文档设置](generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [自定义记录文档的品牌信息](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) 并确保将浏览器区域设置设置为与使用机器语言将自适应表单本地化的语言相同的语言。 浏览器区域设置有助于将记录文档中的品牌信息本地化。
-1. 要查看本地化的记录文档，请点按生成预览。 生成记录文档PDF并在浏览器的新选项卡中打开。
+1. 要查看本地化的记录文档，请选择生成预览。 生成记录文档PDF并在浏览器的新选项卡中打开。
 
 <!-- ## Localizing an Adaptive Form and its Document of Record using Human Translation {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

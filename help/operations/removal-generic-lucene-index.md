@@ -2,9 +2,9 @@
 title: 通用Lucene索引删除
 description: 了解计划删除的通用Lucene索引以及可能受到的影响。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1345'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe打算删除“通用Lucene”索引(`/oak:index/lucene-*`)从Adobe Experie
 
 如果不使用索引，此类查询无法返回结果。 与仅包含路径或属性限制的查询不同，包含全文限制的查询将始终返回零结果，因为其中找不到索引（因此执行遍历）。
 
-通用Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0之后已经存在，用于提供跨大多数存储库层次结构的全文搜索，不过也有一些路径，例如 `/jcr:system` 和 `/var` 一直被排除在外。 但是，此索引在很大程度上已由更具体节点类型的索引取代(例如 `damAssetLucene-*` 对于 `dam:Asset` 节点类型)，支持全文和属性搜索。
+通用Lucene索引(`/oak:index/lucene-*`)自AEM 6.0 / Oak 1.0之后已经存在，用于提供跨大多数存储库层次结构的全文搜索，不过也有一些路径，例如 `/jcr:system` 和 `/var` 一直被排除在外。 但是，此索引在很大程度上已被更具体节点类型的索引所取代(例如， `damAssetLucene-*` 对于 `dam:Asset` 节点类型)，支持全文和属性搜索。
 
 在AEM 6.5中，通用Lucene索引被标记为已弃用，这表示它将在未来版本中删除。 从那时起，当使用索引时，会记录WARN，如以下日志片段所示：
 

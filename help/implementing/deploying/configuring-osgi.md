@@ -3,9 +3,9 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: 具有机密值和特定于环境的值的OSGi配置
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3265'
 ht-degree: 1%
 
 ---
@@ -176,7 +176,7 @@ JSON格式的OSGi配置文件可以直接在AEM项目中手动编写。 这通�
 1. 在IDE中，打开 `ui.apps` 项目，找到或创建配置文件夹(`/apps/.../config.<runmode>`)以新OSGi配置需要生效的运行模式为目标
 1. 在此配置文件夹中，创建 `<PID>.cfg.json` 文件。 PID是OSGi组件的永久标识。 它通常是OSGi组件实现的完整类名。 例如：
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-请注意，OSGi配置工厂文件名使用 `<factoryPID>-<name>.cfg.json` 命名约定
+OSGi配置工厂文件名使用 `<factoryPID>-<name>.cfg.json` 命名约定
 1. 打开新的 `.cfg.json` 文件，并定义OSGi属性和值对的键/值组合，如下所示 [JSON OSGi配置格式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. 将更改保存到新 `.cfg.json` 文件
 1. 添加新的OSGi配置文件并将其提交到Git
@@ -191,14 +191,14 @@ AEM SDK快速入门Jar的AEM Web控制台可用于配置OSGi组件，并将OSGi�
 
 1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户
 1. 导航到 **osgi** > **配置**
-1. 要配置，请找到OSGi组件并点按其标题以进行编辑
-   ![OSGi 配置](./assets/configuring-osgi/configuration.png)
+1. 要进行配置，请找到OSGi组件并选择要编辑的其标题
+   ![OSGi配置](./assets/configuring-osgi/configuration.png)
 1. 根据需要通过Web UI编辑OSGi配置属性值
 1. 将永久标识(PID)记录到安全位置。 这稍后将用于生成OSGi配置JSON
-1. 点按保存
+1. 选择保存
 1. 导航到OSGi > OSGi安装程序配置打印机
 1. 粘贴步骤5中复制的PID，确保序列化格式设置为“OSGi配置器JSON”
-1. 点按打印
+1. 选择打印
 1. JSON格式的OSGi配置将显示在序列化配置属性部分中
    ![OSGi安装程序配置打印机](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. 在IDE中，打开 `ui.apps` 项目，找到或创建配置文件夹(`/apps/.../config.<runmode>`)以新OSGi配置需要生效的运行模式为目标。

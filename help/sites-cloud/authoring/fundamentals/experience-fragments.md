@@ -2,10 +2,10 @@
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 99%
+source-wordcount: '2035'
+ht-degree: 97%
 
 ---
 
@@ -64,11 +64,11 @@ ht-degree: 99%
 * 当您需要重复使用体验时。
    * 重复使用相同或相似内容的体验。
 * 当您使用 AEM 作为第三方的内容投放平台时。
-   * 任何需要使用 AEM 作为内容投放平台的解决方案。
+   * 任何需要使用AEM作为内容交付平台的解决方案。
    * 将内容嵌入第三方触点。
 * 当您有一个具有不同变体或呈现版本的体验时。
    * 特定于渠道或上下文的变体。
-   * 一些对组有意义的体验（例如，在各渠道间具有不同体验的营销活动）。
+   * 对组有意义的体验；例如，跨渠道具有不同体验的营销活动。
 * 当您使用全渠道商业时。
    * 使触点具有事务性。
 

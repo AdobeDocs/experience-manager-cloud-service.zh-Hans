@@ -3,10 +3,10 @@ title: 如何在自适应表单核心组件中创建可重复面板？
 description: 了解如何在自适应表单中创建一个或多个可重复的部分。
 role: Architect, Developer, Admin, User
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 6%
+source-wordcount: '1256'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 6%
 ![“辅助功能”选项卡](/help/forms/assets/repeat-panel.png)
 
 要使面板可重复，请执行以下步骤：
-1. 选择面板容器并点按 ![cmppr](/help/forms/assets/cmppr.png).
+1. 选择面板容器并选择 ![cmppr](/help/forms/assets/cmppr.png).
 1. 单击 **重复面板** 并切换到 **使面板可重复**.
 1. 设置 **最小重复次数** 根据最小可重复部分的要求，您可以设置 **最小重复次数** 零表示面板不重复，或移除重复的面板。 默认情况下，最小重复次数值为0。
 1. 设置 **最大重复次数** 要重复面板所需的次数，该值默认为infinite。
@@ -63,7 +63,7 @@ ht-degree: 6%
 
 要重复的面板的父级应包含一个“添加”按钮来管理面板的重复实例。 执行以下步骤将按钮插入到父代，并在按钮上启用脚本：
 
-1. 添加 **按钮组件** 到面板的父项。 在以下示例视频中，显示了一个带有标签名称的按钮组件 **添加** 和字段名称 **添加面板**，使用。 选择组件并点按 ![edit-rules](/help/forms/assets/edit-rules.png). 按钮组件的规则将在规则编辑器中打开。
+1. 添加 **按钮组件** 到面板的父项。 在以下示例视频中，显示了一个带有标签名称的按钮组件 **添加** 和字段名称 **添加面板**，使用。 选择组件并选择 ![edit-rules](/help/forms/assets/edit-rules.png). 按钮组件的规则将在规则编辑器中打开。
 1. 在规则编辑器窗口中，单击 **创建**.
 
    选择 **可视编辑器** 表单对象和函数行中的。
@@ -84,7 +84,7 @@ ht-degree: 6%
 
 面板的父级应包含一个删除按钮，用于删除可重复面板的实例。 执行以下步骤以将按钮插入到父项，并在按钮上启用脚本以删除可重复的面板：
 
-1. 添加 **按钮组件** 至面板的父面板，在下面的视频中，显示一个具有标签名称的按钮组件 **删除** 和字段名称 **DeletePanel** 已使用。 选择组件并点按 ![edit-rules](/help/forms/assets/edit-rules.png). 按钮组件的规则将在规则编辑器中打开。
+1. 添加 **按钮组件** 至面板的父面板，在下面的视频中，显示一个具有标签名称的按钮组件 **删除** 和字段名称 **DeletePanel** 已使用。 选择组件并选择 ![edit-rules](/help/forms/assets/edit-rules.png). 按钮组件的规则将在规则编辑器中打开。
 1. 在规则编辑器窗口中，单击 **创建**.
 
    选择 **可视编辑器** 表单对象和函数行中的。
@@ -151,8 +151,8 @@ ht-degree: 6%
 
 A panel has various layouts options. The Layout for accordian design option has out of the box support for repeatable panels. Perform the following steps to repeatable panel with Layout for accordian design option:
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
+1. On the parent of panel to be repeated, select ![cmppr](assets/cmppr.png). You can see the properties in the sidebar. In the **Layout** drop-down, select **Accordion**.
+1. On a panel, which is to be repeated, select ![cmppr](assets/cmppr.png). You can see the panel properties in the sidebar. Enable the **Make Panel Repeatable** tab, and specify value for the **Maximum** and **Minimum** fields.
 
    Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
 

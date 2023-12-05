@@ -2,24 +2,24 @@
 title: 示例ContextHub存储候选项
 description: ContextHub提供了几个可在解决方案中使用的示例商店候选项
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
 
 # 示例ContextHub存储候选项 {#sample-contexthub-store-candidates}
 
-ContextHub提供了几个可在解决方案中使用的示例商店候选项。 每个示例都提供了以下信息：
+ContextHub提供了几个可在解决方案中使用的示例商店候选项。 为每个示例提供了以下信息：
 
-* 在何处查找源代码，以便可以打开它进行学习。
+* 在何处查找源代码，以便打开它进行学习。
 * 如何配置您从候选商店创建的商店。
-* 如何构建存储数据以便访问。
+* 存储数据的结构方式，以便您能够访问它。
 
 >[!WARNING]
 >
->示例存储候选项作为参考配置提供，以帮助您为项目构建自己的专用配置，因此不应直接使用。
+>示例存储候选项作为参考配置提供，可帮助您为项目构建自己的专用配置。 请勿直接使用它们。
 
 ## aem.segmentation示例存储候选项 {#aem-segmentation-sample-store-candidate}
 
@@ -92,7 +92,7 @@ aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](cont
 
 ### 数据项 {#data-items-geolocation}
 
-存储区使用的数据树类似于以下示例：
+该存储使用与以下示例类似的数据树：
 
 ```javascript
 {
@@ -105,11 +105,11 @@ aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](cont
 >
 >Chrome 50.x中引入的安全策略要求所有与地理位置相关的调用都通过安全连接进行。 因此，如果AEM也通过https运行，则AEM强制对地理位置API调用使用https。 否则，会使用http来遵守相同来源的策略。
 >
->参见 [此Google博客帖子](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) 以了解有关Chrome中更改的更多详细信息。
+>请参阅 [此Google博客帖子](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) 以了解有关Chrome中更改的更多详细信息。
 
 ## contexthub.surferinfo示例存储候选项 {#contexthub-surferinfo-sample-store-candidate}
 
-存储有关当前客户端环境的信息，例如设备、窗口、浏览器、日期和时间。
+存储有关当前客户端环境的信息，如设备、窗口、浏览器、日期和时间。
 
 ### 源位置 {#source-location-surferinfo}
 
@@ -125,7 +125,7 @@ aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](cont
 
 ### 数据项 {#data-items-surferinfo}
 
-使用此存储候选的存储区具有类似于以下示例的数据树：
+使用此候选商店的存储区具有类似于以下示例的数据树：
 
 ```javascript
 {
@@ -188,7 +188,7 @@ aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](cont
 
 ### 配置 {#configuration-emulators}
 
-默认配置包括一个名为的数组 `defaultEmulators` 包含有关不同设备的信息。 创建存储区时，请根据需要使用下例中说明的格式，在Detail Configuration属性中提供不同的设备配置文件：
+默认配置包括一个名为的数组 `defaultEmulators` 其中包含有关不同设备的信息。 在创建存储时，根据需要在详细配置属性中提供不同的设备配置文件，使用的格式如下例所示：
 
 ```javascript
 {
@@ -336,7 +336,7 @@ aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](cont
 
 ### 数据项 {#data-items-profile}
 
-使用此存储候选的存储区具有类似于以下示例的数据树：
+使用此候选商店的存储区具有类似于以下示例的数据树：
 
 ```javascript
 {

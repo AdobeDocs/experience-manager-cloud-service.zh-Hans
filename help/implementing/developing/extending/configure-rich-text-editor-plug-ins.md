@@ -4,10 +4,10 @@ description: 了解如何配置 [!DNL Adobe Experience Manager] 富文本编辑�
 contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4298'
-ht-degree: 4%
+source-wordcount: '4303'
+ht-degree: 2%
 
 ---
 
@@ -95,7 +95,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 要配置RTE以显示所需的图标，请执行以下步骤。
 
-1. 导航到您的组件，例如 `/apps/<myProject>/components/text`.
+1. 导航到您的组件，例如， `/apps/<myProject>/components/text`.
 1. 导航到节点 `rtePlugins/edit`. 请参阅 [激活插件](#activateplugin) 如果节点不存在。
 1. 创建 `features` 上的属性 `edit` 节点并添加一个或多个功能。 保存所有更改。
 
@@ -228,7 +228,7 @@ pass-as-Microsoft-Word (`paste-wordhtml`)模式可进行进一步配置，以便
 
 然后，指定要引用的样式表的位置：
 
-1. 导航到文本组件的根节点，例如 `/apps/<myProject>/components/text`.
+1. 导航到文本组件的根节点，例如， `/apps/<myProject>/components/text`.
 1. 添加属性 `externalStyleSheets` 至的父节点 `<rtePlugins-node>`：
 
    * **名称** `externalStyleSheets`
@@ -304,7 +304,7 @@ pass-as-Microsoft-Word (`paste-wordhtml`)模式可进行进一步配置，以便
 1. 将属性文本添加到同一节点。 值是作者在选择样式时看到的样式名称。
    * 名称： `text`
 *类型： `String`
-   * 价值: `Japanese word-wrap`
+   * 值： `Japanese word-wrap`
 
 1. 创建样式表并指定其路径。 请参阅 [指定样式表的位置](#locationofstylesheet). 将以下内容添加到样式表中。 根据需要更改背景颜色。
 

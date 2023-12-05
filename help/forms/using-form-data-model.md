@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1213'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 2%
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. 点击以展开 **[!UICONTROL 选择表单数据模型]**. 列出所有可用的表单数据模型。
+1. 选择以展开 **[!UICONTROL 选择表单数据模型]**. 列出所有可用的表单数据模型。
 
    从数据模型中选择。
 
@@ -93,14 +93,14 @@ For more information, see:
 <!--To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
-1. Select an interactive communication and tap **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
-1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and tap **[!UICONTROL Preview]**.
+1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
+1. In the Preview [*channel*] dialog, ensure that **[!UICONTROL Test Data of Form Data Model]** is selected and select **[!UICONTROL Preview]**.
 
 The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-要预览包含示例数据的自适应表单，请在创作模式下打开自适应表单，然后点击 **[!UICONTROL 预览]**.
+要预览包含示例数据的自适应表单，请在创作模式下打开自适应表单，然后选择 **[!UICONTROL 预览]**.
 
 ## 使用表单数据模型服务预填充 {#prefill}
 
@@ -130,10 +130,10 @@ Edit Properties dialog for an interactive communication-->
 
 1. 将包含二进制属性的数据模型对象添加到表单数据模型。
 1. 在自适应表单中，拖放 **[!UICONTROL 文件附件]** 将组件浏览器中的组件移入自适应表单。
-1. 点按以选择添加的组件，然后点按 ![settings_icon](assets/configure-icon.svg) 以打开组件的属性浏览器。
-1. 在绑定引用字段中，点按 ![foldersearch_18](assets/folder-search-icon.svg) 并导航以选择您在表单数据模型中添加的二进制属性。 根据需要配置其他属性。
+1. 选择以选择添加的组件，然后选择 ![settings_icon](assets/configure-icon.svg) 以打开组件的属性浏览器。
+1. 在绑定引用字段中，选择 ![foldersearch_18](assets/folder-search-icon.svg) 并导航以选择您在表单数据模型中添加的二进制属性。 根据需要配置其他属性。
 
-   点按 ![复选按钮](assets/save_icon.svg) 以保存属性。 附件字段现在绑定到表单数据模型的二进制属性。
+   选择 ![复选按钮](assets/save_icon.svg) 以保存属性。 附件字段现在绑定到表单数据模型的二进制属性。
 
 1. 在自适应表单容器属性的提交部分中，启用 **[!UICONTROL 提交表单附件]**. 在提交表单时，它将二进制属性字段中的附件提交到数据源。
 

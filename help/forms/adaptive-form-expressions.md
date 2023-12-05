@@ -1,9 +1,9 @@
 ---
 title: 什么是自适应表单表达式？
 description: 使用自适应Forms表达式可添加自动验证、计算以及打开或关闭部分的可见性。
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2683'
 ht-degree: 0%
 
 ---
@@ -274,7 +274,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 1. 打开已创建节点的属性选项卡。 例如，打开的“属性”选项卡 `textboxpatterns`. 添加 `guideComponentType` 属性并将其值设置为 *fd/af/components/formatter/guideTextBox*.
 
 1. 此属性的值因要定义模式的字段而异。 对于数字字段，其值 `guideComponentType` 属性为 *fd/af/components/formatter/guideNumericBox*. “日期选取器”字段的值为 *fd/af/components/formatter/guideDatepicker*.&quot;
-1. 您可以通过分配属性到来添加自定义模式 `textboxpatterns` 节点。 添加名为的属性(例如 `pattern1`)，并将其值设置为要添加的pattern。 例如，添加属性 `pattern1` 值为Fax=text{99-999-9999999}. 该模式适用于您在自适应Forms中使用的所有文本框。
+1. 您可以通过分配属性到来添加自定义模式 `textboxpatterns` 节点。 添加具有名称的属性(例如， `pattern1`)，并将其值设置为要添加的pattern。 例如，添加属性 `pattern1` 值为Fax=text{99-999-9999999}. 该模式适用于您在自适应Forms中使用的所有文本框。
 
    ![在CrxDe中为字段创建自定义模式](assets/creating-custom-patterns.png)
 

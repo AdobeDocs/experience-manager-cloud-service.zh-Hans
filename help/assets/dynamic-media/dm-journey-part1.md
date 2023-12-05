@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '3706'
-ht-degree: 1%
+source-wordcount: '3685'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ _第二部分_
 * 业务分析师
 * 内容架构师
 * 内容作者
-* Designer
+* 设计器
 * 开发人员
 * 营销
 * 产品经理/所有者
@@ -182,7 +182,7 @@ Dynamic Media为解决的另一个用例是视频。 视频很复杂。 它很�
 
 来到Dynamic Media的客户会遇到以下他们希望解决的问题：
 
-&quot;_我们有视频，我们花了很多钱来制作它。 但是我们避免把它放在网页上，或者传送它，因为从我们的测试来看，我们无法保证视频的质量，或者它是否真的要播放。 最终，这将影响我们的品牌，并影响我们实现甚至转化的潜在角色。_&quot;
+&quot;_我的公司有视频，我们部门花了很多钱制作它，但并没有把它放在网页上，也没有送出。 原因是因为从我们的测试来看，视频的质量无法得到保证，即使它真的要播放。 最终，这将影响我们的品牌，并影响我们实现甚至转化的潜在角色。_&quot;
 
 Dynamic Media的解决方案是采用一个主视频文件，让Dynamic Media通过转码过程生成所有大小。 然后，再将其与Dynamic Media的智能视频播放器配对。 此工作流程可确保您在主登录页面、类别或产品详细信息页面上使用该视频，并且始终保持一致和高质量交付。
 

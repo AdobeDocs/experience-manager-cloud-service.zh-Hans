@@ -3,10 +3,10 @@ title: 如何基于核心组件创建自适应表单模板？
 description: 使用模板编辑器基于核心组件创建自适应表单模板以定义基本结构和初始内容。
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 1%
+source-wordcount: '1961'
+ht-degree: 4%
 
 ---
 
@@ -46,13 +46,13 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 
 创建文件夹后，打开该文件夹并执行以下步骤以创建模板：
 
-1. 点按 **[!UICONTROL 创建]** 在您创建的文件夹内。
-1. 在 **[!UICONTROL 选择模板类型]** 部分，选择 **[!UICONTROL 自适应表单（核心组件）模板]** 并点击 **[!UICONTROL 下一个]**.
+1. 选择 **[!UICONTROL 创建]** 在您创建的文件夹内。
+1. 在 **[!UICONTROL 选择模板类型]** 部分，选择 **[!UICONTROL 自适应表单（核心组件）模板]** 并选择 **[!UICONTROL 下一个]**.
 
-1. 在 **[!UICONTROL 模板详细信息]** 部分，提供 **模板标题** 并点击 **[!UICONTROL 创建]**.
+1. 在 **[!UICONTROL 模板详细信息]** 部分，提供 **模板标题** 并选择 **[!UICONTROL 创建]**.
 您还可以提供描述。
 
-1. 点按 **[!UICONTROL 完成]** 以返回到控制台，或点按 **[!UICONTROL 打开]** 以在编辑器中打开模板。
+1. 选择 **[!UICONTROL 完成]** 以返回到控制台，或选择 **[!UICONTROL 打开]** 以在编辑器中打开模板。
 
 ## 模板编辑器用户界面 {#template-editor-ui}
 
@@ -119,7 +119,7 @@ Header and footer are added in the Initial Content layer.
 
 选择初始内容选项后，模板的自适应表单容器会像要编辑的自适应表单一样打开。 它允许您创建预定义内容，在创建与模板关联的自适应Forms时可以更改这些内容。 与创作自适应表单一样，您可以指定初始设置，例如选择主题和提交操作。
 
-表单作者可将其用作创建表单的基础。 内容流结构在模板的初始内容层中指定。 要切换到编辑表单模板的初始内容，请在页面工具栏中的预览之前，点按 ![画布下拉列表](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始内容]**.
+表单作者可将其用作创建表单的基础。 内容流结构在模板的初始内容层中指定。 要切换到编辑表单模板的初始内容，请在页面工具栏中的预览之前，选择 ![画布下拉列表](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始内容]**.
 
 ![在初始内容层中添加了页眉和页脚](assets/header-and-footer.png)
 
@@ -145,7 +145,7 @@ Header and footer are added in the Initial Content layer.
 
 1. 导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 模板]**，然后打开已在其中创建模板的文件夹。
 您创建的模板将标记为草稿。
-1. 选择模板并点按 **[!UICONTROL 启用]** 工具栏中。
+1. 选择模板并选择 **[!UICONTROL 启用]** 工具栏中。
 在创建自适应表单时，如果要求您选择模板，则可以看到列出的模板。
 
 ## 导入或导出模板 {#importing-or-exporting-a-template}
@@ -160,7 +160,7 @@ Header and footer are added in the Initial Content layer.
 
 作者可以关联 [!UICONTROL 表单数据模型架构] 到模板编辑器中的自适应表单模板。 它允许作者从模板编辑器中选择架构。 在将架构与模板关联并且表单作者基于模板创建表单时，系统会为表单预先选择架构。 它有助于表单作者规范架构的使用，同时为表单作者节省时间。 要在模板编辑器中选择表单数据模型架构，请执行以下操作：
 
-1. 点按 **[!UICONTROL 内容浏览器]** 位于左侧。
+1. 选择 **[!UICONTROL 内容浏览器]** 位于左侧。
 1. 转到表单容器 **[!UICONTROL 设置]**.
 1. 选择 **[!UICONTROL 数据模型]**.
 1. 通过以下方式选择您的表单数据模型 **[!UICONTROL 选择表单数据模型]** 并保存配置。
@@ -185,7 +185,7 @@ Change the layer from **Structure** to **Initial Content**, and start adding con
 * You can drag-drop the panel component from the components browser in the sidebar.
 * You can add child panel of the `guideRootPanel` from the component toolbar.
 
-To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and tap ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, tap content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Tap ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and tap **[!UICONTROL Done]**. The tabbed template structure is applied.
+To create the General Information and Professional Information tabs, add two panels in the child panel of the `guideRootPanel`. Select the panels and select ![cmppr](assets/configure-icon.svg) to open the properties in the sidebar. Change the element names as `general-info` and `professional-info`, and titles as General Information and Professional Information respectively. In the sidebar, select content to open the content browser. In the Form Objects tab, select `guideRootPanel`. In the editor, the guideRootPanel is selected. Select ![cmppr](assets/configure-icon.svg) in the component toolbar to open its properties. In the Panel Layout field, select **[!UICONTROL Tabs on Top]** and select **[!UICONTROL Done]**. The tabbed template structure is applied.
 
 ### Adding content in tabs {#adding-content-in-tabs}
 
@@ -200,7 +200,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### 使用模板策略将自定义属性添加到自适应表单组件
 
-通过自定义属性，可使用表单模板将自定义属性（键值对）与自适应表单核心组件关联。 自定义属性反映在 **[!UICONTROL 属性]** 组件的headless演绎版的部分。 它允许创建根据自定义属性值调整的动态表单行为。 例如，开发人员可以为移动、桌面或Web平台设计Headless Forms组件的各种演绎版，从而显着提升各种设备上的用户体验。
+通过自定义属性，您可使用表单模板将自定义属性（键值对）关联到自适应表单核心组件。自定义属性反映在 **[!UICONTROL 属性]** 组件的headless演绎版的部分。 它可让您创建根据自定义属性值进行调整的动态表单行为。例如，开发人员可以为移动、桌面或 Web 平台设计 Headless 表单组件的各种演绎版，从而大大提升各种设备上的用户体验。
 
 将自定义属性添加到自适应表单核心组件字段的步骤如下：
 
@@ -224,10 +224,10 @@ After you have added fields, you can add buttons such as Submit and Reset.
 #### 在核心组件的“编辑”对话框中选择自定义组名称 {#select-a-custom-group-name}
 
 1. 在编辑模式下打开自适应表单。
-1. 点按已在模板编辑器中定义自定义属性的组件，然后点按 ![settings_icon](assets/configure-icon.svg) 以打开组件的“编辑”对话框。
+1. 选择已在模板编辑器中为其定义了自定义属性的组件，然后选择 ![settings_icon](assets/configure-icon.svg) 以打开组件的“编辑”对话框。
 1. 选择 **[!UICONTROL 高级]** 选项卡。
 1. 从中选择自定义属性组名称 **[!UICONTROL 自定义属性选择]** 下拉菜单。 所有定义的自定义组名称将自动填充到下拉列表中。
-1. 点按 **[!UICONTROL 完成]** 以保存属性。
+1. 选择 **[!UICONTROL 完成]** 以保存属性。
 
 ![选择自定义属性组名称](/help/forms/assets/select-custom-properties-group-name.png)
 

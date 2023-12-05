@@ -1,15 +1,13 @@
 ---
 title: 如何在Designer中更改零页内容？
 description: 更改在非Adobe PDF查看器的XFAPDF的第0页上显示的消息。
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +42,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->重新打开表单时，您刚刚创建的自定义属性可能无法正确显示在表单属性对话框中。 但是，它可正常使用，并且表单会显示更新的零页消息。
+>重新打开表单时，您创建的自定义属性可能无法正确显示在表单属性对话框中。 但是，它可正常使用，并且表单会显示更新的零页消息。
 
 >[!MORELIKETHIS]
 >

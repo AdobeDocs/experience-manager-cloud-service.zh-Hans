@@ -2,10 +2,10 @@
 title: 部署代码
 description: 了解如何使用 AEM as a Cloud Service 中的 Cloud Manager 管道部署代码。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 96%
+source-wordcount: '1190'
+ht-degree: 94%
 
 ---
 
@@ -151,7 +151,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 ### 重新执行 API {#reexecute-API}
 
-除了在 UI 中可用之外，您还可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 触发重新执行以及标识已作为重新执行触发的执行。
+除了在UI中可用之外，您还可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 用于触发重新执行并标识作为重新执行触发的执行。
 
 #### 触发重新执行 {#reexecute-deployment-api}
 

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3705'
-ht-degree: 100%
+source-wordcount: '3539'
+ht-degree: 99%
 
 ---
 
@@ -457,7 +457,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-此外，为 XML Sitemap 实施的功能也可用于不同的用例，例如将规范链接或语言替代项添加到页头。有关更多信息，请参阅 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 接口。
+此外，为XML Sitemap实施的功能也可用于不同的用例，例如，将规范链接或语言替代项添加到页头。 有关更多信息，请参阅 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 接口。
 
 ### 为旧版 URL 创建 301 重定向 {#creating-redirects-for-legacy-urls}
 

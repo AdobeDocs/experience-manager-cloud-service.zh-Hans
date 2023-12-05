@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4115'
+source-wordcount: '4087'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. 登录 [!DNL Experience Manager] 创作实例，导航到 **[!UICONTROL Forms >数据集成]**，然后打开要在其中添加数据模型对象的表单数据模型。
 1. 在数据源窗格中，展开数据源以查看可用的数据模型对象和服务。
-1. 选择要添加到表单数据模型的数据模型对象和服务，然后点击 **[!UICONTROL 添加选定项]**.
+1. 选择要添加到表单数据模型的数据模型对象和服务，然后选择 **[!UICONTROL 添加选定项]**.
 
    ![选定对象](assets/selected-objects.png)
 
@@ -72,7 +72,7 @@ ht-degree: 0%
    >
    >除了数据模型对象和服务之外，OData服务元数据文档还包括定义两个数据模型对象之间的关联的导航属性。 有关更多信息，请参阅 [使用OData服务的导航属性](#work-with-navigation-properties-of-odata-services).
 
-1. 点按 **[!UICONTROL 保存]** 以保存表单模型对象。
+1. 选择 **[!UICONTROL 保存]** 以保存表单模型对象。
 
    >[!NOTE]
    >
@@ -87,8 +87,8 @@ ht-degree: 0%
 要创建没有数据源的数据模型对象，请执行以下操作：
 
 1. 登录 [!DNL Experience Manager] 创作实例，导航到 **[!UICONTROL Forms >数据集成]**，然后打开要在其中创建数据模型对象或实体的表单数据模型。
-1. 点按 **[!UICONTROL 创建实体]**.
-1. 在 [!UICONTROL 创建数据模型] 对话框，指定数据模型对象的名称，然后点按 **[!UICONTROL 添加]**. 数据模型对象将添加到表单数据模型。 新添加的数据模型对象未绑定到数据源，并且不具有下图中所示的任何属性。
+1. 选择 **[!UICONTROL 创建实体]**.
+1. 在 [!UICONTROL 创建数据模型] 对话框，指定数据模型对象的名称，然后选择 **[!UICONTROL 添加]**. 数据模型对象将添加到表单数据模型。 新添加的数据模型对象未绑定到数据源，并且不具有下图中所示的任何属性。
 
    ![new-entity](assets/new-entity.png)
 
@@ -100,14 +100,14 @@ ht-degree: 0%
 
 要创建子属性，请执行以下操作：
 
-1. 在表单数据模型中，选择数据模型对象并点按 **[!UICONTROL 创建子属性]**.
+1. 在表单数据模型中，选择一个数据模型对象，然后选择 **[!UICONTROL 创建子属性]**.
 1. 在 **[!UICONTROL 创建子属性]** 对话框，请在 **[!UICONTROL 名称]** 和 **[!UICONTROL 类型]** 字段。 您可以选择为属性指定标题和描述。
 1. 如果属性是计算属性，则启用计算属性。 计算属性的值是根据规则或表达式计算的。 有关更多信息，请参阅 [编辑属性](#properties).
 1. 如果数据模型对象绑定到数据源，则添加的子属性将自动绑定到具有相同名称和数据类型的父数据模型对象的属性。
 
-   要手动将子属性与数据模型对象属性绑定，请点按 **[!UICONTROL 绑定引用]** 字段。 此 **[!UICONTROL 选择对象]** 对话框列出了父数据模型对象的所有属性。 选择要绑定的属性，然后点按勾号图标。 您只能选择与子属性具有相同数据类型的属性。
+   要手动将子属性与数据模型对象属性绑定，请选择 **[!UICONTROL 绑定引用]** 字段。 此 **[!UICONTROL 选择对象]** 对话框列出了父数据模型对象的所有属性。 选择要绑定的属性，然后选择勾号图标。 您只能选择与子属性具有相同数据类型的属性。
 
-1. 点按 **[!UICONTROL 完成]** 保存子属性并点击 **[!UICONTROL 保存]** 以保存表单数据模型。 现在，子属性已添加到数据模型对象中。
+1. 选择 **[!UICONTROL 完成]** 保存子属性并选择 **[!UICONTROL 保存]** 以保存表单数据模型。 现在，子属性已添加到数据模型对象中。
 
 创建数据模型对象和属性后，您可以继续创建自适应Forms <!--and interactive communications--> 基于表单数据模型。 之后，当您具有可用数据源并配置好数据源时，可以将表单数据模型与数据源绑定。 绑定在关联的自适应Forms中自动更新 <!--and interactive communications-->. 有关创建自适应Forms的更多信息 <!--and interactive communications--> 使用表单数据模型，请参阅 [使用表单数据模型](using-form-data-model.md).
 
@@ -116,13 +116,13 @@ ht-degree: 0%
 当要与表单数据模型集成的数据源可用时，可将其添加到表单数据模型，如中所述 [更新数据源](create-form-data-models.md#update). 然后，执行以下操作以绑定未绑定的数据模型对象和属性：
 
 1. 在表单数据模型中，选择要与数据源绑定的未绑定数据源。
-1. 点按 **[!UICONTROL 编辑属性]**.
-1. 在 **[!UICONTROL 编辑属性]** 窗格，点按旁边的浏览图标 **[!UICONTROL 绑定]** 字段。 它会打开 **[!UICONTROL 选择对象]** 对话框，其中列出了在表单数据模型中添加的数据源。
+1. 选择&#x200B;**[!UICONTROL 编辑属性]**。
+1. 在 **[!UICONTROL 编辑属性]** 窗格，选择旁边的浏览图标 **[!UICONTROL 绑定]** 字段。 它会打开 **[!UICONTROL 选择对象]** 对话框，其中列出了在表单数据模型中添加的数据源。
 
    ![选择对象](assets/select-object.png)
 
-1. 展开数据源树并选择要绑定的数据模型对象，然后点按勾号图标。
-1. 点按 **[!UICONTROL 完成]** 以保存属性，然后点击 **[!UICONTROL 保存]** 以保存表单数据模型。 数据模型对象现在与数据源绑定。 请注意，数据模型对象不再标记为“未绑定”。
+1. 展开数据源树并选择要绑定的数据模型对象，然后选择勾号图标。
+1. 选择 **[!UICONTROL 完成]** 以保存属性，然后选择 **[!UICONTROL 保存]** 以保存表单数据模型。 数据模型对象现在与数据源绑定。 请注意，数据模型对象不再标记为“未绑定”。
 
    ![绑定模型对象](assets/bound-model-object.png)
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 
 要读取和写入数据模型对象的数据，请执行以下操作以配置读取和写入服务：
 
-1. 选中数据模型对象顶部的复选框以将其选中并点按 **[!UICONTROL 编辑属性]**.
+1. 选中数据模型对象顶部的复选框以将其选中并选择 **[!UICONTROL 编辑属性]**.
 
    ![edit-properties](assets/edit-properties.png)
 
@@ -159,8 +159,8 @@ ht-degree: 0%
 
    为员工数据源配置的读写服务
 
-1. 点按 ![aem_6_3_edit](assets/edit.svg) 将读取服务参数设置为 [将参数绑定到用户配置文件属性、请求属性或文本值](#bindargument) 和指定绑定值。
-1. 点按 **[!UICONTROL 完成]** 保存参数， **[!UICONTROL 完成]** 以保存属性，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
+1. 选择 ![aem_6_3_edit](assets/edit.svg) 将读取服务参数设置为 [将参数绑定到用户配置文件属性、请求属性或文本值](#bindargument) 和指定绑定值。
+1. 选择 **[!UICONTROL 完成]** 保存参数， **[!UICONTROL 完成]** 以保存属性，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
 
 ### 绑定读取服务参数 {#bindargument}
 
@@ -238,7 +238,7 @@ ht-degree: 0%
 
 要添加关联，请执行以下操作：
 
-1. 选中数据模型对象顶部的复选框以将其选中并点按 **[!UICONTROL 添加关联]**. 将打开“添加关联”对话框。
+1. 选中数据模型对象顶部的复选框以将其选中并选择 **[!UICONTROL 添加关联]**. 将打开“添加关联”对话框。
 
    ![添加关联](assets/add-association.png)
 
@@ -271,16 +271,16 @@ ht-degree: 0%
 
    已更新参数和绑定
 
-   点按 **[!UICONTROL 完成]** 以保存参数。
+   选择 **[!UICONTROL 完成]** 以保存参数。
 
-1. 点按 **[!UICONTROL 完成]** 保存关联，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
+1. 选择 **[!UICONTROL 完成]** 保存关联，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
 1. 根据需要重复这些步骤以创建更多关联。
 
 >[!NOTE]
 >
 >所添加的关联将显示在数据模型对象框中，其中包含指定的标题和连接关联的数据模型对象的线。
 >
->您可以通过选中关联旁边的复选框并点按来编辑关联 **[!UICONTROL 编辑关联]**.
+>通过选中关联旁边的复选框并选择 **[!UICONTROL 编辑关联]**.
 
 ![添加关联](assets/added-association.png)
 
@@ -291,7 +291,7 @@ ht-degree: 0%
 要编辑属性，请执行以下操作：
 
 1. 选中表单数据模型中数据模型对象、属性或服务旁边的复选框。
-1. 点按 **[!UICONTROL 编辑属性]**. 此 **[!UICONTROL 编辑属性]** 此时将打开选定模型对象、属性或服务的窗格。
+1. 选择 **[!UICONTROL 编辑属性]**. 此 **[!UICONTROL 编辑属性]** 此时将打开选定模型对象、属性或服务的窗格。
 
    * **[!UICONTROL 数据模型对象]**：指定读取和写入服务以及编辑参数。
    * **[!UICONTROL 属性]**：指定属性的类型、子类型和格式。 您还可以指定selected属性是否为数据模型对象的主键。
@@ -301,7 +301,7 @@ ht-degree: 0%
 
    获取服务的“编辑属性”对话框
 
-1. 点按 **[!UICONTROL 完成]** 以保存属性，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
+1. 选择 **[!UICONTROL 完成]** 以保存属性，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
 
 ### 创建计算属性 {#computed}
 
@@ -310,7 +310,7 @@ ht-degree: 0%
 例如，您可以创建一个计算属性 **全名** 其值是现有串连的结果 **名字** 和 **姓氏** 属性。 为此，请执行以下操作：
 
 1. 使用名称创建新属性 `FullName` 数据类型为字符串的数据。
-1. 启用 **[!UICONTROL 已计算]** 并点击 **[!UICONTROL 完成]** 以创建资产。
+1. 启用 **[!UICONTROL 已计算]** 并选择 **[!UICONTROL 完成]** 以创建资产。
 
    ![已计算](assets/computed.png)
 
@@ -318,18 +318,18 @@ ht-degree: 0%
 
    ![计算属性](assets/computed-prop.png)
 
-1. 选择FullName属性并点按 **[!UICONTROL 编辑规则]**. 此时将打开一个规则编辑器窗口。
-1. 在规则编辑器窗口中，点按 **[!UICONTROL 创建]**. A **[!UICONTROL 设置值]** 规则窗口将打开。
+1. 选择FullName属性并选择 **[!UICONTROL 编辑规则]**. 此时将打开一个规则编辑器窗口。
+1. 在规则编辑器窗口中，选择 **[!UICONTROL 创建]**. A **[!UICONTROL 设置值]** 规则窗口将打开。
 
    从选择选项下拉列表中，选择 **[!UICONTROL 数学表达式]**. 其他可用选项包括 **[!UICONTROL 表单数据模型对象]** 和 **[!UICONTROL 字符串]**.
 
 1. 在数学表达式中，选择 **[!UICONTROL 名字]** 和 **[!UICONTROL 姓氏]** 分别在第一和第二对象中。 选择 **[!UICONTROL 加]** 作为运算符。
 
-   点按 **[!UICONTROL 完成]** 然后点击 **[!UICONTROL 关闭]** 以关闭规则编辑器窗口。 该规则与以下内容类似。
+   选择 **[!UICONTROL 完成]** 然后选择 **[!UICONTROL 关闭]** 以关闭规则编辑器窗口。 该规则与以下内容类似。
 
    ![规则](assets/rule.png)
 
-1. 在表单数据模型上，点击 **[!UICONTROL 保存]**. 已配置计算属性。
+1. 在表单数据模型上，选择 **[!UICONTROL 保存]**. 已配置计算属性。
 
 ## 使用OData服务的导航属性 {#work-with-navigation-properties-of-odata-services}
 
@@ -391,11 +391,11 @@ ht-degree: 0%
 
 执行以下操作可生成和编辑示例数据：
 
-1. 打开表单数据模型并点按 **[!UICONTROL 编辑示例数据]**. 它在“编辑示例数据”窗口中生成并显示示例数据。
+1. 打开表单数据模型并选择 **[!UICONTROL 编辑示例数据]**. 它在“编辑示例数据”窗口中生成并显示示例数据。
 
    ![生成示例数据](assets/form_data_model_generate_sample_data_new.png)
 
-1. 在 **[!UICONTROL 编辑示例数据]** 窗口，根据需要编辑数据，然后点击 **[!UICONTROL 保存]**.
+1. 在 **[!UICONTROL 编辑示例数据]** 窗口，根据需要编辑数据，然后选择 **[!UICONTROL 保存]**.
 
 <!--Next, you can use the sample data to prefill and test interactive communications based on the form data model. For more information, see [Use form data model](using-form-data-model.md).-->
 
@@ -403,7 +403,7 @@ ht-degree: 0%
 
 您的表单数据模型已配置，但在投入使用之前，您可能需要测试配置的数据模型对象和服务是否按预期工作。 要测试数据模型对象和服务，请执行以下操作：
 
-1. 在表单数据模型中选择数据模型对象或服务，然后点击 **[!UICONTROL 测试模型对象]** 或 **[!UICONTROL 测试服务]**、ID名称和ID名称等。
+1. 在表单数据模型中选择数据模型对象或服务，然后选择 **[!UICONTROL 测试模型对象]** 或 **[!UICONTROL 测试服务]**、ID名称和ID名称等。
 
    将打开“测试表单数据模型”窗口。
 
@@ -411,7 +411,7 @@ ht-degree: 0%
 
 1. 在 [!UICONTROL 测试表单数据模型] 窗口，从输入窗格中选择要测试的数据模型对象或服务。
 
-1. 在测试代码中指定一个参数值，然后点击 **[!UICONTROL 测试]**. 成功的测试会在“输出”窗格中返回输出。
+1. 在测试代码中指定一个参数值，然后选择 **[!UICONTROL 测试]**. 成功的测试会在“输出”窗格中返回输出。
 
    ![测试结果](assets/test_results_form_data_model_new.png)
 

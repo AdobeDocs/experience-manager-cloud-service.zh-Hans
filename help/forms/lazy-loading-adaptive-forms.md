@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1063'
 ht-degree: 7%
 
 ---
@@ -52,8 +52,8 @@ Forms包含某些字段和部分，不适用于所有用户且在所有条件下
 执行以下步骤以在自适应表单片段上启用延迟加载：
 
 1. 在创作模式下打开自适应表单，其中包含要为延迟加载启用的片段。
-1. 选择自适应表单片段并点按 ![配置](assets/configure-icon.svg).
-1. 在侧栏中，启用 **[!UICONTROL 缓慢地加载片段]** 并点击 **完成**.
+1. 选择自适应表单片段，然后选择 ![配置](assets/configure-icon.svg).
+1. 在侧栏中，启用 **[!UICONTROL 缓慢地加载片段]** 并选择 **完成**.
 
    ![为自适应表单片段启用延迟加载](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Forms包含某些字段和部分，不适用于所有用户且在所有条件下
 您可以将延迟加载片段中对象的值标记为全局，以便在未加载包含的片段时可以在脚本中使用它们。 执行以下操作：
 
 1. 在创作模式下打开自适应表单片段。
-1. 点按要将其值标记为全局的字段，然后点按 ![配置](assets/configure-icon.svg).
+1. 选择要将其值标记为全局的字段，然后选择 ![配置](assets/configure-icon.svg).
 1. 在侧栏中，启用 **[!UICONTROL 在延迟加载期间使用值]**.
 
    ![侧栏中的延迟加载字段](assets/enable-lazy-loading.png)

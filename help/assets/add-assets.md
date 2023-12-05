@@ -4,10 +4,10 @@ description: 将您的数字资产添加到 [!DNL Adobe Experience Manager] as a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3179'
-ht-degree: 11%
+source-wordcount: '3137'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 11%
 
 [!DNL Assets] 提供以下上载方法。 Adobe建议您在使用上传选项之前了解其用例和适用性。
 
-| 上载方法 | 何时使用? | 主要角色 |
+| 上载方法 | 何时使用？ | 主要角色 |
 |---------------------|----------------|-----------------|
 | [Assets控制台用户界面](#upload-assets) | 偶尔上传、轻松按压和拖动、查找器上传。 请勿使用上传许多资源。 | 所有用户 |
 | [上传API](#upload-using-apis) | 用于上传期间的动态决策。 | 开发人员 |
@@ -37,7 +37,7 @@ ht-degree: 11%
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
-   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
+   You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -193,7 +193,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 选择 **[!UICONTROL 导入后删除源文件]** 用于在文件导入到之后从源数据存储中删除原始文件的选项 [!DNL Experience Manager].
 
-1. 选择&#x200B;**[!UICONTROL “导入模式”。]**&#x200B;选择&#x200B;**“跳过”**、**“代替”**，或者&#x200B;**创建版本。**&#x200B;跳过模式是默认模式，在该模式下，如果资源已经存在，则摄取器会跳过导入该资源。了解的含义 [替换和创建版本选项](#handling-upload-existing-file).
+1. 选择&#x200B;**[!UICONTROL “导入模式”。]**&#x200B;选择&#x200B;**“跳过”**、**“代替”**，或者&#x200B;**创建版本。**&#x200B;跳过模式是默认模式，在此模式下，引入器会跳过以导入已存在的资产。 了解的含义 [替换和创建版本选项](#handling-upload-existing-file).
 
 1. 要使用&#x200B;**[!UICONTROL 资源目标文件夹]**&#x200B;字段在 DAM 中定义要导入资源的位置，请指定路径。例如：`/content/dam/imported_assets`。
 
@@ -207,7 +207,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 编辑配置 {#edit-configuration}
 
-要编辑配置详细信息，请选择配置，然后单击 **[!UICONTROL 编辑]**. 执行编辑操作时无法编辑配置的标题和导入数据源。
+要编辑配置详细信息，请选择配置，然后单击 **[!UICONTROL 编辑]**. 执行编辑操作时，无法编辑配置和导入数据源的标题。
 
 ### 删除配置 {#delete-configuration}
 
@@ -215,13 +215,13 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 验证与数据源的连接 {#validate-connection}
 
-要验证与数据源的连接，请选择配置，然后单击 **[!UICONTROL check]**. 如果连接成功，Experience Manager 将会显示以下消息：
+要验证与数据源的连接，请选择配置，然后单击 **[!UICONTROL check]**. 如果连接成功，Experience Manager将显示以下消息：
 
 ![批量导入成功消息](assets/bulk-import-success-message.png)
 
 ### 为批量导入作业调用测试运行 {#invoke-test-run-bulk-import}
 
-选择配置并单击 **[!UICONTROL 练习]** 以调用批量导入作业的测试运行。 Experience Manager 显示有关“批量导入”作业的以下详细信息：
+选择配置并单击 **[!UICONTROL 练习]** 以调用批量导入作业的测试运行。 Experience Manager显示有关批量导入作业的以下详细信息：
 
 ![练习结果](assets/dry-assets-result.png)
 

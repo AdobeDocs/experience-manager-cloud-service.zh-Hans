@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 2%
+source-wordcount: '719'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 1. Apollo客户端将预期AEM GraphQL端点位于 `<https://pwa-studio/endpoint.js>`. 要将端点映射到此位置，请自定义PWA Studio应用程序的“向上”配置： a.将AEM_CFM_GRAPHQL变量添加到pwa-root/.env，并将其调整为指向您的AEM内容片段GraphQL端点。
 
-   示例: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
+   示例： `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b.将代理解析程序添加到UPGRADE配置。 UPPER配置示例可能如下所示：
 
@@ -95,17 +95,17 @@ ht-degree: 2%
 
   将allowedorigin属性设置为PWA应用程序的完整主机名。
 
-  示例:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  示例：  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling引用过滤器(org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
   将allow.hosts属性设置为PWA应用程序的主机名。
 
-  示例: `pwa-studio-test-vflyn.local.pwadev`
+  示例： `pwa-studio-test-vflyn.local.pwadev`
 
 您可以在此处找到这两种配置的完整示例： <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-为了展示GraphQL端点，我们通过内容包准备了一些示例内容片段模型和数据。 这些组件与随PWA Studio扩展提供的React组件配合使用效果良好。
+为了显示GraphQL端点，有一些通过内容包准备的示例内容片段模型和数据。 这些组件与随PWA Studio扩展提供的React组件配合使用效果良好。
 
 ## 使用方法 {#how-to-use}
 
@@ -123,8 +123,8 @@ ht-degree: 2%
 
 ### 博客 {#blog}
 
-根据某些内容片段模型显示博客帖子。 此外，它还包含有关如何配置Apollo客户端以使其与AEM GraphQL端点一起使用以及如何在PWA Studio中扩展导航组件的示例。 有关更多信息，请参阅[ GitHub 。](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension)
+根据某些内容片段模型显示博客帖子。 此外，它还包含有关如何配置Apollo客户端以使其与AEM GraphQL端点一起使用以及如何在PWA Studio中扩展导航组件的示例。 请参阅 [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension) 以了解更多详细信息。
 
 ### pdp扩充 {#pdp-enrichment}
 
-使营销人员能够轻松地使用作为内容片段管理的附加内容来扩充PDP。  有关更多信息，请参阅[ GitHub 。](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension)
+使营销人员能够轻松地使用作为内容片段管理的附加内容来扩充PDP。  请参阅 [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension) 以了解更多详细信息。

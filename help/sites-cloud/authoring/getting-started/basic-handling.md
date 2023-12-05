@@ -2,10 +2,10 @@
 title: 基本处理
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2945'
-ht-degree: 91%
+source-wordcount: '2943'
+ht-degree: 89%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 91%
 >[!NOTE]
 >
 >* 某些功能并不是在所有控制台中均可用，而且某些控制台可能会提供额外的功能。其他页面中会更详细地介绍有关具体控制台及其相关功能的特定信息。
->* 用户在整个 AEM 环境中都可以使用各种键盘快捷键，尤其是在[使用控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)和[编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)时。
+>* 在整个AEM环境中都可以使用键盘快捷键。 尤其是当 [使用控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 和 [编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
 ## 触屏优化 UI {#a-touch-enabled-ui}
 
-AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通过点按、触摸并按住及轻扫之类的手势与软件进行交互。由于 AEM UI 支持触控，因此您可以在手机或平板电脑等触控设备上使用触控手势。但是，您也可以使用传统桌面设备上的鼠标操作，灵活地选择创作内容的方式。
+AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，通过选择、触摸并按住及轻扫之类的手势与软件进行交互。 由于 AEM UI 支持触控，因此您可以在手机或平板电脑等触控设备上使用触控手势。但是，您也可以使用传统桌面设备上的鼠标操作，灵活地选择创作内容的方式。
 
 ## 首要步骤 {#first-steps}
 
@@ -53,7 +53,7 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
 全局导航有两个面板，它们由屏幕左侧的图标来表示：
 
-* **[导航](#navigation-panel)** – 登录到 AEM 时由一个指南针图标和默认面板来表示
+* **[导航](#navigation-panel)**  — 登录到AEM时由一个指南针和默认面板表示
 * **[工具](#tools-panel)** – 由一个锤子图标来表示
 
 这些面板中的可用选项如下所述。
@@ -255,9 +255,9 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
 
 | 查看 | 选择触控 | 选择桌面 | 取消选择触控 | 取消选择桌面 |
 |---|---|---|---|---|
-| 列 | 点按缩略图 | 单击缩略图 | 点按缩略图 | 单击缩略图 |
-| 信息卡 | 点按并按住信息卡 | 将鼠标悬停在上方，然后使用勾号快速操作 | 点按信息卡 | 单击信息卡 |
-| 列表 | 点按缩略图 | 单击缩略图 | 点按缩略图 | 单击缩略图 |
+| 列 | 选择缩略图 | 单击缩略图 | 选择缩略图 | 单击缩略图 |
+| 信息卡 | 选择并按住卡片 | 将鼠标悬停在上方，然后使用勾号快速操作 | 选择卡 | 单击信息卡 |
+| 列表 | 选择缩略图 | 单击缩略图 | 选择缩略图 | 单击缩略图 |
 
 #### 全选 {#select-all}
 
@@ -436,7 +436,7 @@ AEM 启用了针对触屏的用户界面。触屏界面让您使用触屏，通�
          * 临时工作流除外，因为不会保存它们的历史记录信息 <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * 显示全部
 
-* 添加/查看有关选定项目的评论。**评论**&#x200B;框显示在事件列表的底部。键入评论后按回车键将记录该评论。在选择&#x200B;**评论**&#x200B;或&#x200B;**显示全部**&#x200B;时，将显示该评论。
+* 添加/查看有关选定项目的评论。**评论**&#x200B;框显示在事件列表的底部。键入评论后跟回车将注册该评论。 选择“注释”或“显 **示全部** ” **时，将显示** “注释”。
 
 * 特定的控制台还具有其他一些功能。例如，在“站点”控制台中，您可以：
 

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2400'
-ht-degree: 19%
+source-wordcount: '2391'
+ht-degree: 18%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 19%
 
 ### 创建具有静态引用的收藏集 {#create-a-collection-with-static-references}
 
-您可以创建具有静态引用的收藏集，例如具有对资产、文件夹、收藏集、旋转集和图像集的引用的收藏集。
+您可以创建具有静态引用的集合，例如，具有对资产、文件夹、集合、旋转集和图像集的引用的集合。
 
 1. 导航至 **[!UICONTROL 收藏集]** 控制台。
 1. 在工具栏中，选择 **[!UICONTROL 创建]**.
@@ -231,7 +231,7 @@ ht-degree: 19%
 
 在“资产”用户界面中，您可以根据某些规则、搜索条件或自定义搜索彩块化来搜索或筛选资产。 如果将这些搜索另存为&#x200B;**[!UICONTROL 保存的搜索]**，则以后可以从“过滤器”面板的&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表中访问它们。 创建保存的搜索也会创建智能收藏集。
 
-创建智能收藏集时将创建保存的搜索。智能收藏集会自动添加到&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表。收藏集的“保存的搜索”查询将保存在 `dam:query` CRXDE 的属性中的相对位置`/content/dam/collections/`。您可以保存的搜索以及列表中显示的已保存搜索没有限制。
+创建智能收藏集时将创建保存的搜索。智能收藏集会自动添加到&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表。收藏集的“保存的搜索”查询保存在 `dam:query` CRXDE中位于相对位置的属性 `/content/dam/collections/`. 您可以保存的搜索以及列表中显示的已保存搜索没有限制。
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ ht-degree: 19%
 
 1. 从“收藏集”控制台中，选择要运行工作流的收藏集。
 1. 选择GlobalNav图标，然后选择 **[!UICONTROL 时间线]** 从名单上。
-1. 在时间轴中，选择或点按底部的尖角图标，然后选择 **[!UICONTROL 启动工作流]**.
+1. 从时间轴中，选择底部的脱字符图标，然后选择 **[!UICONTROL 启动工作流]**.
 1. 在&#x200B;**[!UICONTROL 启动工作流]**&#x200B;部分，从列表中选择工作流模型。例如，选择 **[!UICONTROL DAM 更新资产]**&#x200B;模型。
 1. 输入工作流的标题，然后选择 **[!UICONTROL 开始]**.
 1. 在对话框中，选择 **[!UICONTROL 继续]**. 工作流会在收藏集中的所有资产上运行。

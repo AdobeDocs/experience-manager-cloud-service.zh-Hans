@@ -2,10 +2,10 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 7%
+source-wordcount: '2275'
+ht-degree: 5%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 7%
 
    * **擦除：** 选择 `Wipe` 值
       * 此 **擦除** 选项设置目标的摄取起点。 如果 **擦除** 之后，包括其所有内容的目标将被重置为Cloud Manager中指定的AEM版本。 如果未启用，则目标会保持其当前内容作为起点。
-      * 请注意，此选项会 **NOT** 会影响执行内容摄取的方式。 摄取始终使用内容替换策略和 _非_ 内容合并策略，因此 **擦除** 和 **非划出** 在这种情况下，摄取迁移集将会覆盖目标上同一路径中的内容。 例如，如果迁移集包含 `/content/page1` 并且目标已包含 `/content/page1/product1`，摄取将删除整个 `page1` 路径及其子页面，包括 `product1`，并将其替换为迁移集中的内容。 这意味着在执行 **非划出** 摄取到包含应维护的任何内容的目标。
+      * 此选项会 **NOT** 会影响执行内容摄取的方式。 摄取始终使用内容替换策略和 _非_ 内容合并策略，因此 **擦除** 和 **非划出** 在这种情况下，摄取迁移集将会覆盖目标上同一路径中的内容。 例如，如果迁移集包含 `/content/page1` 并且目标已包含 `/content/page1/product1`，摄取将删除整个 `page1` 路径及其子页面，包括 `product1`，并将其替换为迁移集中的内容。 这意味着在执行 **非划出** 摄取到包含应维护的任何内容的目标。
 
    >[!IMPORTANT]
    > 如果设置 **擦除** 为摄取启用，它会重置整个现有Cloud Service，包括目标存储库实例的用户权限。 对于添加到中的管理员用户，此重置也为true **管理员** 并且必须再次将该用户添加到管理员组才能开始引入。
@@ -73,18 +73,18 @@ ht-degree: 7%
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
-## 增补摄取 {#top-up-ingestion-process}
+## 增补引入 {#top-up-ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
->title="增补摄取"
+>title="增补引入"
 >abstract="使用增补功能移动自上次内容转移活动以来修改的内容。引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hans" text="查看日志"
 
 内容传输工具具备允许通过执行 *增补* 迁移集的URL。 这样可修改迁移集，使其仅包含自上次提取以来已更改的内容，而无需再次提取所有内容。
 
 >[!NOTE]
->初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。如果您在第一次摄取中使用了预复制步骤，则可以跳过后续增补摄取的预复制（如果增补迁移集大小小于200 GB）。 原因是它可能会增加整个过程的时间。
+>初始内容传输后，建议在Cloud Service上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。 如果您在第一次摄取中使用了预复制步骤，则可以跳过后续增补摄取的预复制（如果增补迁移集大小小于200 GB）。 原因是它可能会增加整个过程的时间。
 
 要在完成某些摄取后摄取差异内容，您必须运行 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)，然后结合使用摄取方法和 **擦除** option **已禁用**. 请务必阅读 **擦除** ，以避免丢失目标上已有的内容。
 

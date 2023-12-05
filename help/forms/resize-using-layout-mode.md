@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 7%
+source-wordcount: '1138'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 
 ## 调整组件大小 {#resize-components}
 
-1. 在布局模式下，点按组件以调整大小。 蓝点显示在响应式网格的开头和结尾。
+1. 在布局模式下，选择要调整大小的组件。 蓝点显示在响应式网格的开头和结尾。
 1. 拖放蓝点以定义组件在响应式网格中的位置。
 
    ![使用布局模式调整大小](assets/layout_mode_resize_new_updated1.png)
@@ -59,7 +59,7 @@ ht-degree: 7%
 **目标：** 要插入表组件和图像组件，并在自适应表单中使它们彼此平行放置。
 
 1. 使用以下方式插入表和图像组件 [!UICONTROL 编辑] 模式。 图像组件显示在表组件之后。
-1. 切换到 [!UICONTROL 布局] 模式，然后点按 [!UICONTROL 表] 组件。 用于调整组件大小的蓝点显示在列1和12。
+1. 切换到 [!UICONTROL 布局] 模式并选择 [!UICONTROL 表] 组件。 用于调整组件大小的蓝点显示在列1和12。
 1. 将响应式网格第12列中的蓝色圆点拖到第6列。
 
    ![定义表的端点](assets/layout_mode_end_point_table_new.png)
@@ -68,13 +68,13 @@ ht-degree: 7%
 
    ![在布局模式下并行显示表和图像](assets/table_image_parallel_new.png)
 
-   您可以选择图像组件并点按 **[!UICONTROL 浮动到新行]** 工具栏中可用的选项以将图像组件移动到下一行。
+   您可以选择图像组件，然后选择 **[!UICONTROL 浮动到新行]** 工具栏中可用的选项以将图像组件移动到下一行。
 
 ## 调整面板大小 {#resize-panels-layout-mode}
 
 如果要调整整个面板而非单个组件的大小，请执行以下步骤：
 
-1. 点按面板中要调整大小的任何组件，选择 ![选择父级](assets/select_parent_icon.svg)，并在下拉列表中选择第一个选项（如果面板是组件的直接父面板）。
+1. 在面板中选择要调整大小的任何组件，然后选择 ![选择父级](assets/select_parent_icon.svg)，并在下拉列表中选择第一个选项（如果面板是组件的直接父面板）。
 
    蓝点显示在响应式网格的开头和结尾。
 
@@ -85,13 +85,13 @@ ht-degree: 7%
 
 执行以下步骤可定义面板的列数：
 
-1. 在 **[!UICONTROL 编辑]** 模式，点按面板，选择 ![配置](assets/configure-icon.svg)，并选择 **[!UICONTROL 响应 — 页面上的所有内容，无需导航]** 选项来自 **[!UICONTROL 面板布局]** 下拉列表。
+1. 在 **[!UICONTROL 编辑]** 模式，选择面板，选择 ![配置](assets/configure-icon.svg)，并选择 **[!UICONTROL 响应 — 页面上的所有内容，无需导航]** 选项来自 **[!UICONTROL 面板布局]** 下拉列表。
 
-1. 点按![保存](assets/save_icon.svg)以保存属性。
+1. 选择 ![保存](assets/save_icon.svg) 以保存属性。
 
-1. 在 **[!UICONTROL 布局]** 模式，点按面板中的任何组件，然后选择 ![选择父级](assets/select_parent_icon.svg)，然后选择面板。
+1. 在 **[!UICONTROL 布局]** 模式，在面板中选择任意组件，然后选择 ![选择父级](assets/select_parent_icon.svg)，然后选择面板。
 
-1. 点按 ![多列](assets/multi-column.svg) 并从下拉列表中选择列数。 列数可在1到12之间。 面板被分为多列布局。
+1. 选择 ![多列](assets/multi-column.svg) 并从下拉列表中选择列数。 列数可在1到12之间。 面板被分为多列布局。
 
 ![布局模式下的多列](assets/multi-column-layout.png)
 
@@ -106,7 +106,7 @@ ht-degree: 7%
 执行以下步骤以启用新响应式网格：
 
 1. 选择 **[!UICONTROL 布局]** 从顶部显示的下拉列表中，选择 **[!UICONTROL 预览]** 选项。 显示启用布局模式的确认。
-1. 点按 **[!UICONTROL 是]** 以启用 **[!UICONTROL 布局]** 表单模式。
+1. 选择 **[!UICONTROL 是]** 以启用 **[!UICONTROL 布局]** 表单模式。
 
 ### 使用新响应布局在自适应表单中嵌入旧片段 {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -116,7 +116,7 @@ ht-degree: 7%
 
 如果在具有旧响应布局的自适应表单中嵌入具有新响应布局的片段，则系统会提示您启用表单的布局模式并重新嵌入片段。
 
-要启用布局模式，请选择 **[!UICONTROL 布局]** 从顶部显示的下拉列表中，选择 **[!UICONTROL 预览]** 选项并点击 **[!UICONTROL 是]** 以确认。 选择 **[!UICONTROL 编辑]** 模式以重新嵌入片段。
+要启用布局模式，请选择 **[!UICONTROL 布局]** 从顶部显示的下拉列表中，选择 **[!UICONTROL 预览]** 选项并选择 **[!UICONTROL 是]** 以确认。 选择 **[!UICONTROL 编辑]** 模式以重新嵌入片段。
 
 ## 对具有旧响应布局的表单禁用布局模式 {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -125,12 +125,12 @@ ht-degree: 7%
 执行以下步骤可禁用布局模式：
 
 1. 选择 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 模板]** 然后打开表单中使用的模板，位置如下： **[!UICONTROL 编辑]** 模式。
-1. 在左窗格中选择表单容器并点击 **[!UICONTROL 策略。]**
+1. 在左窗格中选择表单容器，然后选择 **[!UICONTROL 策略。]**
 
    ![禁用布局模式](assets/policy_disable_layout_mode.png)
 
-1. 点按 **[!UICONTROL 布局设置]** 选项卡并选择 **[!UICONTROL 禁用布局模式]**.
-1. 点按 ![保存更改](assets/save_icon.svg) 以保存模板属性。
+1. 选择 **[!UICONTROL 布局设置]** 选项卡并选择 **[!UICONTROL 禁用布局模式]**.
+1. 选择 ![保存更改](assets/save_icon.svg) 以保存模板属性。
 
 ## 另请参阅 {#see-also}
 

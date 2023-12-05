@@ -3,10 +3,10 @@ title: 查询和索引最佳实践
 description: 了解如何根据 Adobe 的最佳实践指南优化索引和查询。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 44%
+source-wordcount: '3088'
+ht-degree: 43%
 
 ---
 
@@ -171,9 +171,9 @@ Explain查询工具允许开发人员了解查询执行计划(请参阅 [读取�
 
 ...其中包含 — 
 * 3个限制
-   * 节点类型 (`dam:Asset`)
+   * 节点类型(`dam:Asset`)
    * 路径(子项 `/content/dam`)
-   * 属性 (`jcr:content/metadata/dc:title = "My Title"`)
+   * 属性(`jcr:content/metadata/dc:title = "My Title"`)
 * 排序依据 `jcr:created` 属性
 
 说明此查询会导致以下计划 — 
@@ -211,9 +211,9 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 
 ...其中包含 — 
 * 3个限制
-   * 节点类型 (`dam:Asset`)
+   * 节点类型(`dam:Asset`)
    * 路径(子项 `/content/dam`)
-   * 属性 (`jcr:content/metadata/myProperty = "My Property Value"`)
+   * 属性(`jcr:content/metadata/myProperty = "My Property Value"`)
 * 排序依据 `jcr:created` 属性**
 
 说明此查询会导致以下计划 — 

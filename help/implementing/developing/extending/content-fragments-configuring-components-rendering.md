@@ -2,10 +2,10 @@
 title: 配置用于呈现的组件的内容片段
 description: 配置用于呈现的组件的内容片段
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 6%
+source-wordcount: '519'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 6%
 在以下情况下，需要提供此信息：
 
 * 您需要实施自己的基于内容片段的组件，
-* 而且需要利用先进的服务。
+* 还需要使用高级服务。
 
 Adobe建议使用核心组件。
 
@@ -65,7 +65,7 @@ OSGi配置为：
  <thead>
   <tr>
    <td>标签</td>
-   <td>OSGi 配置<br /> </td>
+   <td>OSGi配置<br /> </td>
    <td>描述</td>
   </tr>
  </thead>
@@ -105,7 +105,7 @@ OSGi配置为：
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>一个字符串属性，定义在中时如何输出段落 <em>单元素渲染模式</em>.</p> <p>值:</p>
+   <td><p>一个字符串属性，定义在中时如何输出段落 <em>单元素渲染模式</em>.</p> <p>值：</p>
     <ul>
      <li><code>all</code> ：渲染所有段落</li>
      <li><code>range</code> ：呈现以下项提供的段落范围： <code>paragraphRange</code></li>
@@ -113,7 +113,7 @@ OSGi配置为：
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>一个字符串属性，定义在中要输出的段落范围 <em>单元素渲染模式</em>.</p> <p>格式:</p>
+   <td><p>一个字符串属性，定义在中要输出的段落范围 <em>单元素渲染模式</em>.</p> <p>格式：</p>
     <ul>
      <li><code>1</code> 或 <code>1-3</code> 或 <code>1-3;6;7-8</code> 或 <code>*-3;5-*</code>
      <ul>

@@ -5,9 +5,9 @@ uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/FORMS
 topic-tags: author
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '709'
 ht-degree: 9%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 9%
 * **C：** 单击 **地理位置** 图标以添加地理位置以及签名。
 * **D：** 单击 **键盘** 图标，以在画布上键入您的姓名。
 
-点击“完成”后 ![aem_forms_save](assets/aem_forms_save.png) 图标时，无法编辑该签名。 如果想要编辑签名，则必须忽略当前签名并使用上面的“画笔/键盘”选项重新签名。
+选择完成之后 ![aem_forms_save](assets/aem_forms_save.png) 图标时，无法编辑该签名。 如果想要编辑签名，则必须忽略当前签名并使用上面的“画笔/键盘”选项重新签名。
 
-您可以点按 **配置** ![“配置”图标](assets/configure.png) 图标来设置涂写签名画布的长宽比。
+您可以选择 **配置** ![“配置”图标](assets/configure.png) 图标来设置涂写签名画布的长宽比。
 * 当Scribble签名画布的长宽比小于1时，地理位置信息将添加到Scribble签名画布的底部。
 
 
@@ -55,20 +55,20 @@ ht-degree: 9%
 
 1. 创建已启用记录文档选项或基于表单模板的自适应表单。 有关分步信息，请参阅 [创建自适应表单](creating-adaptive-form.md).
 1. 拖放 **潦草签名** 组件从组件浏览器转换为自适应表单。
-1. 点按 **配置** ![配置](assets/configure.png) 图标。 它打开属性浏览器并显示涂写签名组件的属性。 配置涂写签名组件的属性。
+1. 选择 **配置** ![配置](assets/configure.png) 图标。 它打开属性浏览器并显示涂写签名组件的属性。 配置涂写签名组件的属性。
 1. 将签名步骤组件从组件浏览器拖放到自适应表单。
 
    >[!NOTE]
    >
    >签名步骤组件占据表单可用的完整宽度。 建议在包含签名步骤组件的部分中没有任何其他组件。
 
-1. 在内容浏览器中，点按 **表单容器**，然后点按 **配置** ![“配置”图标](assets/configure.png) 图标。 它可打开属性浏览器并显示自适应表单容器属性。 导航到 **自适应表单容器** > **电子签名** 并取消选择 **启用Adobe Sign** 选项。 点按完成 ![aem_forms_save](assets/aem_forms_save.png) 图标以保存更改。
+1. 在内容浏览器中，选择 **表单容器**，然后选择 **配置** ![“配置”图标](assets/configure.png) 图标。 它可打开属性浏览器并显示自适应表单容器属性。 导航到 **自适应表单容器** > **电子签名** 并取消选择 **启用Adobe Sign** 选项。 选择完成 ![aem_forms_save](assets/aem_forms_save.png) 图标以保存更改。
 
    >[!NOTE]
    >
    >将签名步骤组件添加到自适应表单时，会自动选择启用Adobe Sign选项。
 
-1. 点按 **配置** ![配置](assets/configure.png) 图标。 它将打开属性浏览器并显示签名步骤属性。 配置以下属性：
+1. 选择 **配置** ![配置](assets/configure.png) 图标。 它将打开属性浏览器并显示签名步骤属性。 配置以下属性：
 
    * **元素名称**：指定组件的名称。
 
@@ -78,7 +78,7 @@ ht-degree: 9%
 
    * **CSS类**：指定客户端库的CSS类（如果有）。 Adobe建议使用 [主题](themes.md) 和 [内联样式](inline-style-adaptive-forms.md) 而不是CSS类。
 
-   点按完成 ![aem_forms_save](assets/aem_forms_save.png) 图标以保存更改。 已成功配置签名。
+   选择完成 ![aem_forms_save](assets/aem_forms_save.png) 图标以保存更改。 已成功配置签名。
 
    现在，当您填写表单时，会显示自适应表单的PDF版本，并提供用于签署PDF文档的选项。 有关详细信息，请参阅 [使用涂写签名签署自适应表单](signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 

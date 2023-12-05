@@ -1,11 +1,11 @@
 ---
 title: CIF 创作快速入门
-description: CIF 创作快速入门.
+description: CIF创作快速入门。
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ CIF扩展了通用编辑器，使其能够在不离开上下文的情况下访�
 
 ### 产品选取器
 
-单击文件夹图标会打开选取器模式UI（例如产品Teaser）
+单击文件夹图标会打开选取器模式UI（例如，产品Teaser）
 ![产品选取器](assets/product-picker-open.png)
 
 通过浏览左侧的目录结构或搜索，可以找到产品。 全文搜索遵循所选类别并将搜索结果限制在此类别内。
@@ -57,7 +57,7 @@ CIF扩展了通用编辑器，使其能够在不离开上下文的情况下访�
 
 ### 类别选取器
 
-像产品选取器一样工作。 单击文件夹图标会打开选取器模式UI（例如类别轮播）
+像产品选取器一样工作。 单击文件夹图标会打开选取器模式UI（例如，类别轮播）
 ![类别选取器](assets/category-picker-open.png)
 
 浏览左侧的目录结构并选择类别。

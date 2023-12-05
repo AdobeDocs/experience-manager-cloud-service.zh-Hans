@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 87%
+source-wordcount: '1663'
+ht-degree: 86%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 87%
 
 将处理配置文件配置为音频和视频文件的转录后，您可以使用以下方法之一将此处理配置文件应用于文件夹：
 
-* 在&#x200B;**[!UICONTROL “工具”]**>**[!UICONTROL “Assets”]**>**[!UICONTROL “处理配置文件”]**&#x200B;中选择处理配置文件演绎版，并使用&#x200B;**[!UICONTROL “将配置文件应用到文件夹”]**&#x200B;操作。内容浏览器允许您导航到特定文件夹，选择文件夹并确认配置文件的应用。
+* 选择中的处理配置文件定义 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 处理配置文件]**，并使用 **[!UICONTROL 将配置文件应用到文件夹]** 操作。 内容浏览器允许您导航到特定文件夹，选择文件夹并确认配置文件的应用。
 * 在 Assets 用户界面中选择一个文件夹，然后单击打开文件夹&#x200B;**[!UICONTROL 属性]**&#x200B;的操作。单击&#x200B;**[!UICONTROL “资产处理”]**&#x200B;选项卡，并从&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;列表中为文件夹选择适当的处理配置文件。要保存更改，请单击&#x200B;**[!UICONTROL “保存并关闭”]**。
 
   ![configure-transcription-service](assets/video-processing-profile3.png)

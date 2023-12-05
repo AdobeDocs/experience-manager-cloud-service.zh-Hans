@@ -2,9 +2,9 @@
 title: 将URL外部化
 description: 外部化器是一种OSGi服务，允许您以编程方式将资源路径转换为外部和绝对URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->不应在HTML的上下文中创建绝对链接。 因此，不应在这种情况下使用此实用程序。
+>不应在HTML的上下文中创建绝对链接。 因此，在这种情况下，请勿使用此实用程序。
 
 * **要将具有“发布”域的路径外部化：**
 

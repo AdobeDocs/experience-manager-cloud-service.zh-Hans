@@ -2,10 +2,10 @@
 title: 自定义 HTTP 标头
 description: 了解如何配置将发送到商业引擎的自定义HTTP标头，以及CIF已发送的标头。
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '279'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 您可以在项目的“Cloud Service配置”页中配置HTTP标头的值：
 
-1. 转到“工具” — >“Cloud Services” — >“CIF配置”中的“Cloud Service配置”页面
+1. 转到“工具”>“Cloud Services”>“CIF配置”中的“Cloud Service配置”页面
 1. 打开现有配置或创建配置
 1. 转到“高级”选项卡，然后找到“自定义HTTP标头”多字段。 您可以选择之前定义的题头并为它们分配值。
 
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 ## 限制 {#restrictions}
 
-虽然该服务允许定义任何标头名称，包括标准标头名称，但它们将无法用于配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 可以找到受限制的标头名称列表 [此处](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers). 除了这些标头之外，还有两个标头无法使用：
+虽然该服务允许定义任何标头名称，包括标准标头名称，但它们将无法用于配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 可以找到受限制的标头名称列表 [此处](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 除了这些标头之外，还有两个标头无法使用：
 
 * &quot;Store&quot; - CIF用于识别Adobe Commerce商店
 * &quot;Preview-Version&quot; — 由CIF用于检索暂存产品

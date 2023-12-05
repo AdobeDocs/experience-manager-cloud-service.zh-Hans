@@ -3,9 +3,9 @@ title: 如何翻译基于核心组件的自适应表单？
 description: 了解如何在AEM Forms中创建表单数据模型，使用示例数据和服务测试该模型，以及为模型配置各种选项。
 feature: Adaptive Forms
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '884'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 机器翻译服务会立即在自适应表单中翻译您的内容并 [记录文档](/help/forms/generate-document-of-record-core-components.md). AEM Formsas a Cloud Service已预配置为使用Microsoft Translator的试用版进行机器翻译。 执行以下步骤以启用自适应Forms和记录文档的机器翻译：
 
-1. 在AEM Forms UI中，选择一个表单，然后点按 **[!UICONTROL 添加字典]** 选项。
+1. 在AEM Forms UI中，选择一个表单，然后选择 **[!UICONTROL 添加字典]** 选项。
 1. 在“将字典添加到翻译项目”屏幕中，对于 **[!UICONTROL 项目]** option
 
    * 要创建翻译项目，请选择 **[!UICONTROL 创建新翻译项目]** 选项和 **项目标题** 字段中，指定标题。 例如，`Government Reference Site - German locale.`
@@ -49,7 +49,7 @@ ht-degree: 4%
    [Document of Record settings](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Customize the branding information of the document of record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) and ensure that the browser locale is set to the same language to which you have localized the Adaptive Form using machine language. The browser locale helps localize the branding information in the document of record.
-1. To view the localized document of record, tap Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
+1. To view the localized document of record, select Generate Preview. The document of record PDF is generated and opened in a new tab in your browser.
 
 -->
 
@@ -61,7 +61,7 @@ ht-degree: 4%
 
 执行以下步骤以使用人工翻译员本地化表单及其记录文档：
 
-1. 在AEM Forms UI中，选择一个表单，然后点按 **[!UICONTROL 添加字典]** 选项。
+1. 在AEM Forms UI中，选择一个表单，然后选择 **[!UICONTROL 添加字典]** 选项。
 1. 在“将字典添加到翻译项目”屏幕中，对于 **[!UICONTROL 项目]** option
 
    * 要创建翻译项目，请选择 **[!UICONTROL 创建新翻译项目]** 选项和 **项目标题** 字段中，指定标题。 例如，`Government Reference Site - German locale.`

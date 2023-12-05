@@ -4,9 +4,9 @@ description: 了解如何使用用户提供的数据将信息添加到已提交�
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ ht-degree: 0%
 执行以下步骤以在元数据中添加元素：
 
 1. 在编辑模式下打开自适应表单。\
-   要在编辑模式下打开表单，请在表单管理器中，选择您的表单并点按 **[!UICONTROL 打开]**.
-1. 在编辑模式下，选择一个组件，然后点按 ![字段级](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**，然后点击 ![cmppr](assets/configure-icon.svg).
+   要在编辑模式下打开表单，请在表单管理器中，选择您的表单并选择 **[!UICONTROL 打开]**.
+1. 在编辑模式下，选择一个组件，然后选择 ![字段级](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]**，然后选择 ![cmppr](assets/configure-icon.svg).
 1. 在侧栏中，单击 **[!DNL Metadata]**.
 1. 在元数据部分中，单击 **[!DNL Add]**.
 1. 使用元数据选项卡的值字段添加脚本。 您添加的脚本从表单上的元素中收集数据，并计算提供给元数据的值。

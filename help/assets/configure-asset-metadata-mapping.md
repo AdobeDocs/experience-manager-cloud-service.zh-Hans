@@ -2,10 +2,10 @@
 title: 配置Workfront和Experience Manager Assets之间的资源元数据映射
 description: 在Adobe Workfront和Experience Manageras a Cloud Service的应用程序之间映射资源元数据字段。 作为映射元数据字段的结果，在将资源从Workfront发送到Experience Manager Assets时，您可以在Experience Manager Assets中查看映射的资源元数据。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 4%
 
 1. 单击 **[!UICONTROL 发送至]**，然后选择Experience Manager Assets Essentials集成名称。
 
-   ![发送到 AEM](assets/send-to-aem.png)
+   ![发送至AEM](assets/send-to-aem.png)
 
 1. 选择资产的目标文件夹，然后单击 **[!UICONTROL 选择文件夹]**.
 
@@ -95,7 +95,7 @@ ht-degree: 4%
 
       `wm` 是指命名空间名称和 `projectName` 是指属性标题。 使用 `namespace:propertyTitle` 定义元数据字段映射的格式。
 
-      ![发送到 AEM](assets/metadata-schema-mapping.png)
+      ![发送至AEM](assets/metadata-schema-mapping.png)
 
 1. 单击 **[!UICONTROL 构建表单]** 制表符并拖动 **[!UICONTROL 单行文本]** 组件添加到表单。 单击窗体中的组件。 在 **[!UICONTROL 构建表单]** 选项卡：
 

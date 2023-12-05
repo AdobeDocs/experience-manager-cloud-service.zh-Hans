@@ -2,9 +2,9 @@
 title: 自适应Forms的布局功能是什么？
 description: 自适应Forms在各种设备上的布局和外观受布局设置控制。 了解各种布局及其应用方式。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '847'
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ Before learning about the different layout capabilities of Adaptive Forms, read 
 
 表单作者可以将布局与自适应表单的每个面板（包括根面板）关联。
 
-面板布局位于 `/libs/fd/af/layouts/panel` 位置。 点按面板并选择 ![cmppr1](assets/configure-icon.svg) 以查看面板属性。
+面板布局位于 `/libs/fd/af/layouts/panel` 位置。 选择面板并选择 ![cmppr1](assets/configure-icon.svg) 以查看面板属性。
 
 ![自适应表单的根面板的面板布局列表](assets/layouts.png)
 

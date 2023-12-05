@@ -4,10 +4,10 @@ description: 了解如何将 AEM 连接到现成的 Microsoft Translator 以自�
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 83%
+source-wordcount: '487'
+ht-degree: 81%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 83%
 | 属性 | 描述 |
 |---|---|
 | 翻译标签 | 翻译服务的显示名称 |
-| 翻译属性 | （可选）对于用户生成的内容，为已翻译文本旁边显示的属性，例如 `Translations by Microsoft` |
+| 翻译属性 | （可选）对于用户生成的内容，为已翻译文本旁边显示的属性，例如， `Translations by Microsoft` |
 | 工作区 ID | （可选）要使用的自定义 Microsoft Translator 引擎的 ID |
 | 订阅密钥 | 您的 Microsoft Translator 的 Microsoft 订阅密钥 |
 
@@ -50,7 +50,7 @@ ht-degree: 83%
    ![编辑翻译配置](../assets/edit-translation-config.png)
 
 1. 选择 **连接** 以验证连接。
-1. 选择 **保存并关闭**.
+1. 选择&#x200B;**保存并关闭**。
 
 ## 升级 Microsoft Translator 试用许可证配置 {#upgrading-the-microsoft-translator-trial-license-configuration}
 

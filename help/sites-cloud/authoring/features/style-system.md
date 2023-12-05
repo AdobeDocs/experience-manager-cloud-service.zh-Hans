@@ -2,10 +2,10 @@
 title: 样式系统
 description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 88%
+source-wordcount: '1305'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 88%
 
 1. 之后，AEM 页面作者可以在页面编辑器中通过组件工具栏的样式菜单选择设计的样式。
 
-请注意，实际上只有最后三个步骤在 AEM 中执行。这意味着，必需的 CSS 和 JavaScript 的所有开发工作都可以在没有 AEM 的情况下完成。
+在AEM中实际执行的只有最后三个步骤。 这意味着，必需的 CSS 和 JavaScript 的所有开发工作都可以在没有 AEM 的情况下完成。
 
 实际上，要实施这些样式，只需在 AEM 上部署并在所需模板的组件中进行选择即可。
 

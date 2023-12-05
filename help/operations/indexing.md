@@ -2,9 +2,9 @@
 title: 内容搜索与索引
 description: 了解AEMas a Cloud Service中的“内容搜索”和“索引”。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2442'
 ht-degree: 29%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->例如，如果自定义开箱即用索引 `damAssetLucene-8`，从中复制最新的开箱即用索引定义 *Cloud Service环境* 使用CRX DE包管理器(`/crx/packmgr/`) 。 将其重命名为 `damAssetLucene-8-custom-1` （或更高版本），并将您的自定义项添加到XML文件中。 这样可确保不会无意中删除所需的配置。 例如， `tika` 节点在 `/oak:index/damAssetLucene-8/tika` 在部署到AEM Cloud Service环境的自定义索引中是必需的，但在本地AEM SDK上不存在。
+>例如，如果自定义开箱即用索引， `damAssetLucene-8`，从中复制最新的开箱即用索引定义 *Cloud Service环境* 使用CRX DE包管理器(`/crx/packmgr/`) 。 将其重命名为 `damAssetLucene-8-custom-1` （或更高版本），并将您的自定义项添加到XML文件中。 这样可确保不会无意中删除所需的配置。 例如， `tika` 节点在 `/oak:index/damAssetLucene-8/tika` 在部署到AEM Cloud Service环境的自定义索引中是必需的，但在本地AEM SDK上不存在。
 
 对于OOTB索引的自定义，请准备一个新包，其中包含遵循此命名模式的实际索引定义：
 
@@ -94,7 +94,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 说明如何部署开箱即用索引的自定义版本 `damAssetLucene-8`，我们将提供分步指南。 在本例中，我们将它重命名为 `damAssetLucene-8-custom-1`. 然后按照如下步骤进行操作：
 
 1. 在中使用更新的索引名称创建新文件夹 `ui.apps` 目录：
-   * 示例: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+   * 示例： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
 2. 添加配置文件 `.content.xml` 将自定义配置放置在创建的文件夹中。 以下是自定义设置的示例：文件名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
@@ -188,7 +188,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
    以下是项目顶层的示例 `pom.xml` 文件包含上述配置：
 
-   文件名: `pom.xml`
+   文件名： `pom.xml`
 
    ```xml
    <plugin>
@@ -274,7 +274,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 具有滚动部署的索引管理 {#index-management-with-rolling-deployments}
 
-使用滚动部署，不会出现停机。 在更新过程中，应用程序的旧版本（例如，版本1）和新版本（版本2）会针对同一存储库同时运行。 如果版本1要求某个索引可用，则不得在版本2中删除此索引。应稍后删除索引，例如在版本3中，此时应确保应用程序的版本1不再运行。 此外，应用程序应编写得即使版本 2 正在运行以及有版本 2 的索引可用，版本 1 也能正常运行。
+使用滚动部署，不会出现停机。 在更新过程中，应用程序的旧版本（例如，版本1）和新版本（版本2）会针对同一存储库同时运行。 如果版本1要求某个索引可用，则不得在版本2中删除此索引。 稍后应删除索引，例如在版本3中，此时应确保应用程序的版本1不再运行。 此外，应用程序应编写得即使版本 2 正在运行以及有版本 2 的索引可用，版本 1 也能正常运行。
 
 升级到新版本后，系统可以对旧索引进行垃圾回收。旧索引可能仍会保留一段时间，以加快回滚（如果需要回滚）。
 

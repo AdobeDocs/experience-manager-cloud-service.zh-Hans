@@ -2,10 +2,10 @@
 title: 页面创作快速入门指南
 description: 这是一个概要性快速指南，可帮助您开始创作页面内容
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 85%
+ht-degree: 80%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 85%
       * [预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [以发布的形式查看](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* 无法从页面编辑器启动/创建版本。现在，可以从&#x200B;**Sites**&#x200B;控制台完成（通过对所选资源选择&#x200B;**创建**&#x200B;或[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)）。
+* 无法从页面编辑器启动/创建版本。 此操作现在可以从以下位置完成： **站点** 控制台(通过 **创建** 或 [时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) （对于所选资源）。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ ht-degree: 85%
 
 1. 打开&#x200B;**Sites**&#x200B;控制台（使用&#x200B;**全局导航**&#x200B;中的[ Sites ](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)选项 - 它会在您选择 Adobe Experience Manager（左上方）链接时以下拉菜单的形式触发）。
 
-1. 通过点按/单击相应的页面，在树中向下导航。页面资源的显示方式取决于您所使用的视图 - [卡片视图、列表视图或列视图](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)：
+1. 通过点按/单击相应的页面，在树中向下导航。 页面资源的显示方式取决于您所使用的视图 —  [卡片、列表或列](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)：
 
    ![查看选择下拉列表](/help/sites-cloud/authoring/assets/views.png)
 
@@ -103,7 +103,7 @@ ht-degree: 85%
 
    * 通过[选择所需的资源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)进入选择模式。具体操作方式取决于您的设备：
 
-      * 在移动设备上：点按并按住卡片
+      * 在移动设备上：选择并按住卡片
       * 在桌面设备上：使用勾号图标表示的[快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)：
 
    * 信息卡上会覆盖一个勾号，表示已选择该页面。
@@ -148,7 +148,7 @@ ht-degree: 85%
    * [编辑页面中现有组件的内容](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)：
 
       * 通过选择打开组件工具栏。 使用&#x200B;**编辑**（铅笔）图标打开对话框。
-      * 通过点按住或慢速双击打开组件的就地编辑器。此时会显示可用的操作（对于某些组件，该选择将受到限制）。
+      * 通过按住select键或双击来打开组件的就地编辑器。 此时会显示可用的操作（对于某些组件，该选择将受到限制）。
       * 要查看所有可用的操作，请使用以下图标进入全屏模式：
 
         ![全屏按钮](/help/sites-cloud/authoring/assets/full-screen.png)

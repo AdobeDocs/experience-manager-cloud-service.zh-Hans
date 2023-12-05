@@ -2,10 +2,10 @@
 title: 管理内容片段（资产 — 内容片段）
 description: 了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 71%
+source-wordcount: '1873'
+ht-degree: 68%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 71%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->现在主要用&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;控制台管理它们，但仍可从&#x200B;**资源**&#x200B;控制台管理它们。本节介绍以下管理方面的信息： **资产** 控制台。
+>现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
 >
->有两个编辑器用于创作内容片段。本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
 
 ## 创建内容片段 {#creating-content-fragments}
 
@@ -54,7 +54,7 @@ ht-degree: 71%
 1. 选择 **创建**，然后选择 **内容片段** ，以打开向导。
 1. 向导的第一步要求您指定新片段的基础。
 
-   * [模型](/help/assets/content-fragments/content-fragments-models.md)  — 用于创建需要结构化内容的片段；例如 **冒险** 模型
+   * [模型](/help/assets/content-fragments/content-fragments-models.md)  — 用于创建需要结构化内容的片段；例如， **冒险** 模型
 
       * 将显示所有可用模型。
 
@@ -70,7 +70,7 @@ ht-degree: 71%
 
         片段标题。
 
-        强制.
+        必填。
 
       * **描述**
 
@@ -106,7 +106,7 @@ ht-degree: 71%
 
    * 将片段另存为ZIP文件；您可以定义是否包含元素、变体、元数据。
 
-* **签出**
+* **结帐**
 * **属性**
 
    * 用于查看、编辑或同时查看或编辑片段的元数据。
@@ -361,7 +361,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 如果发布的内容片段尚未发布模型，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
-必须发布内容片段才能在发布环境中使用。 可使用标准资产功能完成此操作: 
+必须发布内容片段才能在发布环境中使用。 可使用标准资产功能完成此操作：
 
 * [快速发布](/help/assets/manage-publication.md#quick-publish)
 * [管理发布](/help/assets/manage-publication.md#manage-publication)
@@ -369,7 +369,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 此地址可以访问：
 
 * 创建后；使用 [资产控制台中可用的操作](#actions-for-a-content-fragment-assets-console).
-* 从[内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor).
+* 从 [内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor).
 
 此外，当您 [发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)；片段在页面引用中列出。
 

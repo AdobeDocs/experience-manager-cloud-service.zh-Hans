@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2453'
 ht-degree: 6%
 
 ---

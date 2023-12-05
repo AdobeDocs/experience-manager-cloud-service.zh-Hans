@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 9%
+source-wordcount: '1956'
+ht-degree: 8%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 9%
 
 要快速启动并运行旋转集，请执行以下步骤：
 
-1. 可选. [创建批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md) 并将其应用到新的资产文件夹。
+1. 可选。 [创建批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md) 并将其应用到新的资产文件夹。
 
    批次集预设可以帮助您自动创建旋转集。
 
@@ -128,7 +128,7 @@ ht-degree: 9%
 
 **要创建旋转集，请执行以下操作：**
 
-1. 在Assets中，导航到要创建旋转集的位置，然后选择 **[!UICONTROL 创建]**，然后选择 **[!UICONTROL 旋转集]**. 您还可以从包含资产的文件夹中创建旋转集。
+1. 在Assets中，导航到要创建旋转集的位置，然后选择 **[!UICONTROL 创建]**，然后选择 **[!UICONTROL 旋转集]**. 您还可以从包含资产的文件夹中创建集。
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -144,7 +144,7 @@ ht-degree: 9%
 
    * 在旋转集编辑器页面的左上角附近，选择 **[!UICONTROL 添加资源]**.
 
-   * 在“旋转集编辑器”页面中间附近，选择 **[!UICONTROL 点按以打开资产选择器]**.
+   * 在“旋转集编辑器”页面中间附近，选择 **[!UICONTROL 选择以打开资产选择器]**.
 
    选择要包含在旋转集中的资源。 选定资产上有一个复选标记图标。完成后，在页面的右上角附近，选择 **[!UICONTROL 选择]**.
 

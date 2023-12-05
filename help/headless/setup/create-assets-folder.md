@@ -2,10 +2,10 @@
 title: 创建资源文件夹 – Headless 设置
 description: 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 88%
+source-wordcount: '375'
+ht-degree: 83%
 
 ---
 
@@ -34,16 +34,16 @@ ht-degree: 88%
       * 如有必要可以调整。
 
    ![创建文件夹](../assets/assets-folder-create.png)
-1. 将光标悬停在其上并点击复选标记，选择您刚创建的文件夹。然后从工具栏中选择&#x200B;**属性**（或者使用 `p` [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)）。
+1. 将鼠标悬停在其上并点击复选标记，选择您创建的文件夹。 然后从工具栏中选择&#x200B;**属性**（或者使用 `p` [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)）。
 1. 在&#x200B;**属性**&#x200B;窗口中，选择 **Cloud Services** 选项卡。
 1. 对于&#x200B;**云配置**，选择[您之前创建的配置。](create-configuration.md)
    ![配置资源文件夹](../assets/assets-folder-configure.png)
-1. 选择 **保存并关闭**.
+1. 选择&#x200B;**保存并关闭**。
 1. 选择 **确定** 在确认窗口中。
 
    ![确认窗口](../assets/assets-folder-confirmation.png)
 
-您可以在刚刚创建的文件夹中创建额外的子文件夹。子文件夹将继承父文件夹的&#x200B;**云配置**。但是，如果要使用来自其他配置的模型，则可以覆盖此项。
+您可以在创建的文件夹中创建其他子文件夹。 子文件夹将继承父文件夹的&#x200B;**云配置**。但是，如果要使用来自其他配置的模型，则可以覆盖此项。
 
 如果您使用本地化的站点结构，则可以在新文件夹下[创建语言根](/help/assets/translate-assets.md)。
 

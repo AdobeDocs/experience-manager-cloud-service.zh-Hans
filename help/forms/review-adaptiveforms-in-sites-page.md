@@ -4,10 +4,10 @@ description: 审核是一种机制，它允许审核者使用“分配任务”�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 5%
+source-wordcount: '338'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 1. 在编辑模式下打开创作实例。
 1. 转到 **[!UICONTROL 工具]** >  **[!UICONTROL 工作流]** >  **[!UICONTROL 模型]** > **[!UICONTROL 创建]** > **[!UICONTROL 创建模型]**
 1. 指定工作流的标题并添加 **[分配任务]** 步骤
-1. 点按 ![settings_icon](assets/settings_icon.png) 在操作栏上。 此 **[!UICONTROL 分配任务]** 对话框打开。
+1. 选择 ![settings_icon](assets/settings_icon.png) 在操作栏上。 此 **[!UICONTROL 分配任务]** 对话框打开。
 1. 打开 [!UICONTROL 表单和文档] 选项卡并打开 [!UICONTROL 预填充] 下拉列表并指定：
 
    * 使用以下方式选择输入数据文件
@@ -44,7 +44,7 @@ ht-degree: 5%
 现在，在站点的页面上配置自适应表单容器组件的提交操作：
 
 1. 转至站点的页面。
-1. 点按 ![settings_icon](assets/settings_icon.png) 自适应表单容器的。 此 **[!UICONTROL 自适应表单容器]** 对话框打开。
+1. 选择 ![settings_icon](assets/settings_icon.png) 自适应表单容器的。 此 **[!UICONTROL 自适应表单容器]** 对话框打开。
 1. 打开 **[!UICONTROL 提交]** 制表符并指定 **[!UICONTROL 提交操作]** 到 [调用AEM工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. 单击 [完成] 以保存设置。

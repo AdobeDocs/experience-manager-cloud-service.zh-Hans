@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2018'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 1. 下载主题包。
 1. 导航到 **[!UICONTROL Experience Manager]** > **[!UICONTROL 导航]** ![导航](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** 在您的AEM实例上。
-1. 点按 **[!UICONTROL 创建]** > **[!UICONTROL 文件上传]**. 选择并上传x Ultramarine-Accessible-Theme.zip文件。 它会将主题上传到您的AEM实例。
+1. 选择 **[!UICONTROL 创建]** > **[!UICONTROL 文件上传]**. 选择并上传x Ultramarine-Accessible-Theme.zip文件。 它会将主题上传到您的AEM实例。
 
 ## 使自适应表单可访问
 
@@ -58,8 +58,8 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 将Ultraminary-Accessible主题应用于您现有的自适应表单。 要应用主题，请执行以下操作：
 
 1. 打开自适应表单进行编辑。
-1. 选择某个组件并点按父图标。 在上下文菜单中，点按 **[!UICONTROL 自适应表单容器]** 然后点按配置图标。
-1. 在属性浏览器中选择Ultramarine-Accessible主题，然后点按 **[!UICONTROL 保存]** 图标。
+1. 选择组件并选择父级图标。 在上下文菜单中，选择 **[!UICONTROL 自适应表单容器]** 然后选择配置图标。
+1. 在属性浏览器中选择Ultramarine-Accessible主题，然后选择 **[!UICONTROL 保存]** 图标。
 1. 刷新浏览器窗口。 该主题将应用于自适应表单。
 
 应用辅助主题后，请执行以下列出的其他修复。 这些修复是对辅助功能主题中涵盖的辅助功能修复的补充：
@@ -100,7 +100,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 要使用“辅助功能”选项，请执行以下步骤：
 
-1. 选择组件并点按 ![cmppr](assets/cmppr.png).
+1. 选择组件并选择 ![cmppr](assets/cmppr.png).
 1. 单击 **[!UICONTROL 辅助功能]** 在侧栏中选择所需的辅助功能选项。
 
 ### 表单组件中的辅助功能选项 {#accessibility-options-in-form-components}
@@ -128,7 +128,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 确保文本在表单中描述了对象及其用途。 屏幕阅读器在遇到图像时读取此替换文本。 图像必须始终指定替换文本。
 
-选择图像组件并点按 ![cmppr](assets/cmppr.png). 在侧栏中的属性下方，指定图像的替换文本。
+选择图像组件并选择 ![cmppr](assets/cmppr.png). 在侧栏中的属性下方，指定图像的替换文本。
 
 ![图像的替换文本](assets/image-properties.png)
 
@@ -150,14 +150,14 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 | 操作 | 键盘快捷键 |
 |---|---|
-| 在表单中向前移动光标 | 制表符 |
+| 在表单中向前移动光标 | 选项卡 |
 | 在表单中向后移动光标 | Shift+Tab键 |
 | 移到下一个面板 | Alt+向右键 |
 | 移到上一个面板 | Alt+向左键 |
 | 在表单中重置填写的数据 | Alt+R |
 | 提交表单 | Alt+S |
 
-此外，还有各种键盘快捷键可用于 **[!UICONTROL 日期选取器]** 自适应Forms中的组件。 要启用快捷键，请点按 **[!UICONTROL 日期选取器]** 组件和点按 ![配置](assets/configure-icon.svg) 以打开属性。 在 **[!UICONTROL 模式]** 部分，使用选择显示图案 **[!UICONTROL 类型]** 和 **[!UICONTROL 图案]** 下拉列表。 保存属性以启用快捷键 **[!UICONTROL 日期选取器]** 组件。
+此外，还有各种键盘快捷键可用于 **[!UICONTROL 日期选取器]** 自适应Forms中的组件。 要启用快捷键，请选择 **[!UICONTROL 日期选取器]** 组件和选择 ![配置](assets/configure-icon.svg) 以打开属性。 在 **[!UICONTROL 模式]** 部分，使用选择显示图案 **[!UICONTROL 类型]** 和 **[!UICONTROL 图案]** 下拉列表。 保存属性以启用快捷键 **[!UICONTROL 日期选取器]** 组件。
 
 以下键盘快捷键可用于自适应Forms中的日期选取器组件：
 
@@ -165,7 +165,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 |---|---|
 | <ul><li>当选项卡焦点突出显示日历图标时，显示日期选取器组件选项</li><li>当选项卡焦点突出显示某个选项时，执行单击事件</li> | 空格或Enter |
 | 隐藏日期选取器组件选项 | Esc |
-| <ul><li>在日期选取器组件中可用的选项中向前移动光标。</li><li>在日期输入字段处于活动状态时将选项卡焦点设置为日历图标</li> | 制表符 |
+| <ul><li>在日期选取器组件中可用的选项中向前移动光标。</li><li>在日期输入字段处于活动状态时将选项卡焦点设置为日历图标</li> | 选项卡 |
 | 在日期选取器组件中可用的选项之间向后移动光标 | Shift+Tab键 |
 | <ul><li>当选项卡焦点突出显示日期输入字段时显示日期选取器组件选项</li><li>在日期选取器组件中可用的日历中向下移动光标</li> | 向下箭头 |
 | 在日期选取器组件中可用的日历中向上移动光标 | 向上箭头键 |

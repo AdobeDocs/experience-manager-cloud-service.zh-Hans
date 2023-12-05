@@ -2,10 +2,10 @@
 title: 组件控制台
 description: 组件控制台让您浏览针对实例定义的所有组件
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 95%
 
 组件控制台让您浏览针对实例定义的所有组件，并查看每个组件的关键信息。
 
-该控制台可从&#x200B;**工具** -> **常规** -> **组件**&#x200B;中访问。由于组件没有树结构，因此只有列视图可用。
+可从以下位置访问： **工具>** **常规>** **组件**. 由于组件没有树结构，因此只有列视图可用。
 
 ![组件控制台](/help/sites-cloud/authoring/assets/components-console.png)
 

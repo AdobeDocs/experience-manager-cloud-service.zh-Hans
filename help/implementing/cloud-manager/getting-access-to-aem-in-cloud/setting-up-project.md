@@ -2,10 +2,10 @@
 title: 项目设置
 description: 了解如何使用 Maven 构建 AEM 项目，以及创建自己的项目时必须遵守的标准。
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -120,7 +120,7 @@ AEM 项目需要遵守以下准则才能使用 Cloud Manager 成功地构建和�
 当 Cloud Manager 构建过程开始时：
 
 * 此文件中的 `<servers>` 元素会合并到 Cloud Manager 提供的默认 `settings.xml` 文件中。
-   * 以 `adobe` 和 `cloud-manager` 开头的服务器 ID 被视为保留项，不应由自定义服务器使用。
+   * 服务器ID开头为 `adobe` 和 `cloud-manager` 视为保留项。 请勿在自定义服务器上使用它们。
    * Cloud Manager 绝不会对不带上述某个前缀的服务器 ID 或默认 ID `central` 进行镜像。
 * 有了此文件，将从 `pom.xml` 文件中的 `<repository>` 和/或 `<pluginRepository>` 元素中引用服务器 ID。
 * 通常，`<repository>` 和/或 `<pluginRepository>` 元素将包含在 [Cloud Manager 特定的配置文件](#activating-maven-profiles-in-cloud-manager)中，但这并不是完全必要的。

@@ -3,10 +3,10 @@ title: 什么是Formsas a Cloud Service通信API？
 description: 使用通信API签名、认证或保护文档，自动化PDF生成过程，以及将PDF文档转换为另一种格式。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 78%
+source-wordcount: '1429'
+ht-degree: 77%
 
 ---
 
@@ -165,7 +165,7 @@ DocAssurance服务包括签名和加密API：
 
 ### 签名API
 
-利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。此服务使用数字签名和认证确保只有预期的接收者可更改文档。因为安全功能应用于文档本身，所以文档在整个生命周期中保持安全和受控制。 在防火墙之外，当文档离线下载以及提交回组织时，文档将保持安全。 您可以使用签名API完成以下任务：
+利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。此服务使用数字签名和认证，确保只有目标收件人才能更改文档。 因为安全功能应用于文档本身，所以文档在整个生命周期中保持安全和受控制。 在防火墙之外，当文档离线下载以及提交回组织时，文档将保持安全。 您可以使用签名API完成以下任务：
 
 * 向PDF文档添加签名字段。
 * 在PDF文档中签署指定的签名字段。
@@ -230,7 +230,7 @@ Consider a scenario where you have one or more templates and multiple records of
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as REST endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
-The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document.  
+The first parameter of both the operations accept the path and name of the template file (for example, ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document.  
 
 The [API reference documentation](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:b1223732-ae0f-4921-bdc0-c31e48b56044) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml for [Batch APIs](assets/batch-api.yaml) or [non-Batch API.yaml](assets/non-batch-api.yaml) file and upload it to postman to check functionality of APIs.
 

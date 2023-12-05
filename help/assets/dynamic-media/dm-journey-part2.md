@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2677'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ _通过从“高级”选项卡中选择选项来创建图像预设。_
 
 您可以将图像预设视为图像的指导方针。 它将提供所有使用预设的图像，每次都一致；将是一样的。 参数 `&op_brightness=+10` 还增加了稍微增加亮度的功能。
 
-完成后，保存预设，该预设现在可用于您拥有的所有图像。 在本例中，我们要应用 _中_ 图像预设为一碗液态巧克力的图像。
+完成后，保存预设，该预设现在可用于您拥有的所有图像。 在本例中，您要应用 _中_ 图像预设为一碗液态巧克力的图像。
 
 ![应用图像预设 *中* 生成图像的演绎版](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _应用图像预设媒体以生成图像的再现。_

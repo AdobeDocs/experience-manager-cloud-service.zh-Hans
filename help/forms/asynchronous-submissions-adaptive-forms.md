@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 026f4920-f8f9-4b08-b1b0-af50229633d7
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 6%
+source-wordcount: '746'
+ht-degree: 3%
 
 ---
 
@@ -31,18 +31,18 @@ ht-degree: 6%
 
 要为自适应表单配置异步提交，请执行以下操作：
 
-1. 在自适应表单创作模式下，选择表单容器对象，然后点按 ![cmppr1](assets/configure-icon.svg) 以打开其属性。
+1. 在自适应表单创作模式下，选择表单容器对象，然后选择 ![cmppr1](assets/configure-icon.svg) 以打开其属性。
 1. 在 **[!UICONTROL 提交]** 属性部分，启用 **[!UICONTROL 使用异步提交]**.
 1. 在 **[!UICONTROL 在提交时]** 部分，选择下列选项之一以在成功提交表单时执行。
 
    * **[!UICONTROL 重定向到URL]**：在提交表单时重定向到指定的URL或页面。 您可以指定URL或浏览以选择页面的路径 **[!UICONTROL 重定向URL/路径]** 字段。
    * **[!UICONTROL 显示消息]**：在表单提交时显示消息。 您可以在下方的文本字段中编写消息 **[!UICONTROL 显示消息]** 选项。 文本字段支持富文本格式。
 
-1. 点按 ![check-button1](assets/save_icon.svg) 以保存属性。
+1. 选择 ![check-button1](assets/save_icon.svg) 以保存属性。
 
 ## 异步提交的工作方式 {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] 为表单提交提供现成的成功和错误处理程序。处理程序是根据服务器响应执行的客户端函数。在提交表单时，数据被传输到服务器进行验证，服务器将响应返回到客户端，其中包含有关提交的成功或错误事件的信息。 该信息作为参数传递给相关处理程序以执行该函数。
+[!DNL Experience Manager Forms] 为表单提交提供现成的成功和错误处理程序。 处理程序是根据服务器响应执行的客户端函数。在提交表单时，数据被传输到服务器进行验证，服务器将响应返回到客户端，其中包含有关提交的成功或错误事件的信息。 信息将作为参数传递给相关处理程序以执行函数。
 
 此外，表单作者和开发人员可以在表单级别编写规则以覆盖默认处理程序。 有关更多信息，请参阅 [使用规则覆盖默认处理程序](#custom).
 
@@ -108,11 +108,11 @@ ht-degree: 6%
 
 执行以下步骤来编写规则以处理成功和错误事件。
 
-1. 在创作模式下打开自适应表单，选择任意表单对象，然后点击 ![edit-rules1](assets/edit-rules-icon.svg) 以打开规则编辑器。
-1. 选择 **[!UICONTROL 表单]** 在表单对象树中，然后点按 **[!UICONTROL 创建]**.
+1. 在创作模式下打开自适应表单，选择任意表单对象，然后选择 ![edit-rules1](assets/edit-rules-icon.svg) 以打开规则编辑器。
+1. 选择 **[!UICONTROL 表单]** 在“表单对象”树中选择 **[!UICONTROL 创建]**.
 1. 选择 **[!UICONTROL 已成功提交]** 或 **[!UICONTROL 提交失败]** 从 **[!UICONTROL 选择状态]** 下拉列表。
 1. 定义 **[!UICONTROL 则]** 所选状态的操作。 例如，选择 **[!UICONTROL 导航到]** 然后键入或粘贴一个URL。 您也可以使用 **[!UICONTROL 函数]** 选项卡。
 
    ![提交处理程序成功](assets/form-submission-handler.png)
 
-1. 点按 **[!UICONTROL 完成]** 以保存规则。
+1. 选择 **[!UICONTROL 完成]** 以保存规则。

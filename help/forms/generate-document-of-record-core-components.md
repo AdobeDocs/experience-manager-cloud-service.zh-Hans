@@ -2,10 +2,10 @@
 title: 如何为自适应Forms生成记录文档？
 description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成模板。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 2%
+source-wordcount: '3108'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 1. 在Experience Manager创作实例中，单击 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
 1. 选择表单或创建自适应表单，然后单击 **[!UICONTROL 属性]**.
-1. 在属性窗口中，点按 **[!UICONTROL 表单模型]**.
+1. 在“属性”窗口中，选择 **[!UICONTROL 表单模型]**.
 1. 在  **[!UICONTROL 表单模型]** 选项卡，在 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 表单数据模型]**， **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 您还可以在创建表单时选择表单模型。
 1. 在表单模型选项卡的记录文档模板配置部分中，选择 **将表单模板关联为记录文档模板**. 选择此选项时，将显示计算机上可用的所有XFA模板（XDP文件）。 选择相应的文件。 此外，请确保自适应表单和选定的XFA模板（XDP文件）使用相同的架构（数据架构）。
 1. 单击 **[!UICONTROL 完成。]**
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 1. 在Experience Manager创作实例中，单击 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
 1. 选择表单或 **[!UICONTROL 创建自适应表单]**，然后单击 **[!UICONTROL 属性]**.
-1. 在属性窗口中，点按 **[!UICONTROL 表单模型]**.
+1. 在“属性”窗口中，选择 **[!UICONTROL 表单模型]**.
 1. 在  **[!UICONTROL 表单模型]** 选项卡，在 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 表单数据模型]**， **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 您还可以在创建表单时选择表单模型。
 1. 在表单模型选项卡的记录文档模板配置部分中，选择 **将表单模板关联为记录文档模板**. 选择此选项时，将显示计算机上可用的所有AcrobatPDF(Acroform)。 选择要使用的Acroform。
 1. 单击 **[!UICONTROL 完成。]**
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 1. 在Experience Manager创作实例中，单击 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档].**
 1. 选择表单或创建自适应表单，然后单击 **[!UICONTROL 属性]**.
-1. 在属性窗口中，点按 **[!UICONTROL 表单模型]**.
+1. 在“属性”窗口中，选择 **[!UICONTROL 表单模型]**.
 1. 在  **[!UICONTROL 表单模型]** 选项卡，在 **[!UICONTROL 选择自]** 下拉列表，选择 **[!UICONTROL 表单数据模型]**， **[!UICONTROL 架构]** 或 **[!UICONTROL 无]**. 您还可以在创建表单时选择表单模型。
 1. 在表单模型选项卡的记录文档模板配置部分中，选择 **生成记录文档**.
 1. 单击 **[!UICONTROL 完成。]**
@@ -130,7 +130,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 现在，当提交自适应表单时，会生成更新的记录文档。
 
-![已更新-](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用记录文档时的主要注意事项 {#key-considerations-when-working-with-document-of-record}
 
@@ -317,12 +317,12 @@ When you select a form model, configure Document of Record using options availab
 
 要本地化您在“记录文档”选项卡中输入的品牌信息，请确保正确设置了浏览器的区域设置。 要自定义记录文档的品牌信息，请执行以下步骤：
 
-1. 在记录文档中选择一个面板（根面板），然后点按 ![配置](assets/configure.png).
-1. 点按 ![多塔布](assets/dortab.png). 此时将显示记录文档选项卡。
+1. 在记录文档中选择一个面板（根面板），然后选择 ![配置](assets/configure.png).
+1. 选择 ![多塔布](assets/dortab.png). 此时将显示记录文档选项卡。
 1. 选择用于呈现记录文档的默认模板或自定义模板。 如果选择默认模板，则“模板”下拉菜单下方将显示记录文档的缩略图预览。
-1. 根据您选择默认模板还是自定义模板，以下部分或全部属性将出现在“记录文档”选项卡中。 指定以下提及的属性以定义记录文档的外观：
+1. 根据您选择默认模板还是自定义模板，以下某些属性或所有属性都会显示在“记录文档”选项卡中。 指定以下提及的属性以定义记录文档的外观：
 
-   1. **基本属性**:
+   1. **基本属性**：
       * **模板**：如果要选择自定义模板，请浏览并在中选择XDP [!DNL AEM Forms] 服务器。 如果您要使用的模板在您的 [!DNL AEM Forms] 服务器，您应该首先将XDP上传到 [!DNL AEM Forms] 服务器。
       * **重点颜色**：标题文本和分隔行在记录文档PDF中呈现的颜色。
       * **字体系列**：记录文档PDF中文本的字体系列。
@@ -335,7 +335,7 @@ When you select a form model, configure Document of Record using options availab
 
 
 
-   1. **表单字段属性**:
+   1. **表单字段属性**：
       * **对于复选框和单选按钮组件，仅显示选定值**：设置属性时，将仅显示中复选框和单选按钮的选定值 [!UICONTROL 记录文档].
       * **用于多个值的分隔符**：您可以选择任意分隔符，如逗号或换行符，以显示多个值。
       * **选项对齐方式**：您可以选择所需的对齐方式（水平、垂直、与自适应表单相同）来设置要显示的复选框或单选按钮等字段的对齐方式 [!UICONTROL 记录文档]. 默认情况下，中的字段会设置垂直对齐方式 [!UICONTROL 记录文档]. 从设置属性 [!UICONTROL 表单字段属性] 的URL会覆盖 [!UICONTROL 项目对齐方式] 用于自适应表单上的字段。 如果是，请选择 [!UICONTROL 与自适应表单相同] 选项，自适应表单创作实例中配置的对齐方式用于 [!UICONTROL 记录文档] 字段。
@@ -343,7 +343,7 @@ When you select a form model, configure Document of Record using options availab
 
 
 
-   1. **母版页  属性**:
+   1. **母版页属性**：
       * **徽标图像**：您可以选择使用自适应表单中的徽标图像，从DAM中选择徽标图像，或从计算机上传徽标图像。
       * **表单标题**：记录文件的标题。
       * **标题文本**：在记录文档的标题部分显示的文本。
@@ -351,7 +351,7 @@ When you select a form model, configure Document of Record using options availab
       * **免责声明**：指定记录文档上权利和义务范围的文本。
       * **免责声明文本**：免责声明文本。
 
-      ![母版页  属性](/help/forms/assets/dorpropertiesimg.png)
+      ![母版页属性](/help/forms/assets/dorpropertiesimg.png)
 
    >[!NOTE]
    >
@@ -369,7 +369,7 @@ When you select a form model, configure Document of Record using options availab
    </proto>
    ```
 
-1. 要保存品牌策略更改，请点击 **[!UICONTROL 完成]**.
+1. 要保存品牌策略更改，请选择 **[!UICONTROL 完成]**.
 
 
 

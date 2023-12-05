@@ -2,10 +2,10 @@
 title: 配置 ContextHub
 description: 了解如何配置Context Hub，它是一个用于存储、操作和呈现上下文数据的框架。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 1%
+source-wordcount: '1609'
+ht-degree: 0%
 
 ---
 
@@ -53,10 +53,10 @@ UI模式在工具栏左侧显示为一系列图标。 选中后，UI模式的模
 1. 提供以下属性的值：
 
    * 用户界面模式标题：标识用户界面模式的标题
-   * 模式图标：的选择器 [Coral UI图标](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 要使用，例如 `coral-Icon--user`
+   * 模式图标：的选择器 [Coral UI图标](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 例如， `coral-Icon--user`
    * 启用：选择此项可在ContextHub工具栏中显示UI模式
 
-1. 选择保存。
+1. 选择“保存”。
 
 ### 添加UI模块 {#adding-a-ui-module}
 
@@ -78,7 +78,7 @@ UI模块属性包括一个详细配置，您可以在其中提供特定于模块
 
 1. 在Experience Manager边栏中，选择“工具”>“站点”>“ContextHub”。
 1. 选择要将UI模块添加到其中的配置容器。
-1. 单击或键入要将UI模块添加到其中的ContextHub配置。
+1. 选择或键入要向其添加UI模块的ContextHub配置。
 1. 选择要在其中添加UI模块的UI模式。
 1. 选择创建按钮，然后选择ContextHub UI模块（通用）。
 
@@ -91,7 +91,7 @@ UI模块属性包括一个详细配置，您可以在其中提供特定于模块
    * 已启用：选择此选项可在ContextHub工具栏中显示UI模块
 
 1. （可选）要覆盖默认存储配置，请输入要配置UI模块的JSON对象。
-1. 选择保存。
+1. 选择“保存”。
 
 ## 创建ContextHub存储 {#creating-a-contexthub-store}
 
@@ -130,7 +130,7 @@ AEM提供了以下存储候选项示例，您可以根据它们创建存储。
    * **已启用：** 选择以启用存储
 
 1. （可选）要覆盖默认存储配置，请在详细信息配置(JSON)框中输入JSON对象。
-1. 选择保存。
+1. 选择“保存”。
 
 ## 示例：使用JSONP服务  {#example-using-a-jsonp-service}
 
@@ -157,7 +157,7 @@ Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSON
 * **存储类型：** contexthub.generic-jsonp
 * **必需：** 选择
 * **已启用：** 选择
-* **详细配置 (JSON):**
+* **详细信息配置(JSON)：**
 
   ```javascript
   {
@@ -185,7 +185,7 @@ Contexthub.generic-jsonp示例存储候选项允许您从返回JSON数据的JSON
 
 * **UI模块标题：** MD5
 * **模块类型：** contexthub.base
-* **详细配置 (JSON):**
+* **详细信息配置(JSON)：**
 
   ```javascript
   {

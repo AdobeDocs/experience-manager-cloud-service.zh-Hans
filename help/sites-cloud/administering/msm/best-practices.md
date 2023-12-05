@@ -4,10 +4,10 @@ description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 96%
+source-wordcount: '1413'
+ht-degree: 95%
 
 ---
 
@@ -119,7 +119,7 @@ MSM 可通过两种方式来帮助创建多语言网站：
 
 ## 自定义转出 {#customizing-rollouts}
 
-MSM 转出配置是高度自定义的。您应意识到，自动化转出可能会产生深远的影响。作为最佳实践，您应在进行以下活动之前进行非常仔细的规划：
+MSM 转出配置是高度自定义的。自动化转出可能会产生深远的影响。 作为最佳实践，您应在进行以下活动之前进行非常仔细的规划：
 
 * 使用 [onModify 触发器](#onmodify)自动化转出
 * 自定义[节点类型/属性](#node-types-properties)

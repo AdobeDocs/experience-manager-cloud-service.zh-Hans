@@ -2,10 +2,10 @@
 title: 注册、登录和用户配置文件
 description: 了解 AEM as a Cloud Service 的注册、登录、用户数据和组同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 93%
+source-wordcount: '1132'
+ht-degree: 90%
 
 ---
 
@@ -113,7 +113,7 @@ AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最�
 
 ## 数据同步 {#data-synchronization}
 
-网站最终用户期望在每个网页请求方面获得一致的体验，甚至当他们使用不同的浏览器登录时，（即使他们不知道）他们也将转至发布层基础架构的不同服务器节点。AEM as a Cloud Service 通过在发布层的所有节点之间快速同步 `/home` 文件夹层次结构（用户配置文件信息、组成员资格等）来实现这一点。
+网站最终用户期望在每个网页请求方面获得一致的体验，甚至当他们使用不同的浏览器登录时，（即使他们不知道）他们也将转至发布层基础架构的不同服务器节点。AEMas a Cloud Service通过快速同步 `/home` 跨发布层的所有节点的文件夹层次结构（用户配置文件信息、组成员资格等）。
 
 与其他 AEM 解决方案不同，AEM as a Cloud Service 中的用户和组成员资格同步不使用点对点消息传递方法，而是实施不需要客户配置的发布-订阅方法。
 

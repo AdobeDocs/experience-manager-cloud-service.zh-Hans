@@ -1,21 +1,17 @@
 ---
 title: Adobe Analytics与AEM Screens Cloud集成
-seo-title: Adobe Analytics Integration with AEM Screens
 description: 关注本页，了解AEM Screens与Adobe Analytics的现成集成，并为您提供播放证明。
-seo-description: Follow this page to learn about out of the box integration of AEM Screens with Adobe Analytics and provides you with a proof of play.
-uuid: 80d61af7-bf4d-46ca-a026-99a666c2e1a0
 contentOwner: trushton
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Cloud/SCREENS
 topic-tags: administering
-discoiquuid: b1a0e00e-0368-42c9-8bcd-5f00b4d0990c
 docset: aem65
 role: Admin, Developer
 level: Intermediate
 exl-id: e22242ce-e5ce-4486-bba4-e6a89ac4fb5e
-source-git-commit: 75d147886c8151f8b8ac41af907e17b5deff5a9c
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -49,7 +45,7 @@ AEM Screens提供了与Adobe Analytics的现成集成，并为您提供了使用
 
 ## 体系结构详细信息 {#architectural-details}
 
-AEM Screens客户想要了解在哪个时间显示了哪些内容，以及显示时间长短（汇总）。 这是标牌解决方案的常见功能。 AEM Screens不会构建我们自己的分析，而是将利用Adobe Analytics，借助它，我们可以实现市场上独一无二的东西 — 跨渠道分析，它有助于将位置中显示的内容与其他数据源相关联。
+AEM Screens客户想要了解在哪个时间显示了哪些内容，以及显示时间长短（汇总）。 这是标牌解决方案的常见功能。 AEM Screens使用Adobe Analytics而不是构建我们自己的分析，通过它，您可以实现市场上独一无二的东西 — 跨渠道分析，它有助于将位置中显示的内容与其他数据源相关联。
 
 以下架构图介绍了Adobe Analytics与AEM Screens的集成：
 

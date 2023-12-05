@@ -6,10 +6,10 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 9e06c115af2a262859d39bcd5ee0016df2475591
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 10%
+source-wordcount: '1747'
+ht-degree: 9%
 
 ---
 
@@ -54,21 +54,21 @@ CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一�
 
    1. 转到 **[!UICONTROL “工具”>“常规”>“配置浏览器”]**.
    1. 选择文件夹或创建文件夹，然后使用以下步骤启用云配置的文件夹：
-      1. 在配置浏览器中，选择文件夹并点按 **[!UICONTROL 属性]**.
+      1. 在配置浏览器中，选择文件夹并选择 **[!UICONTROL 属性]**.
       1. 在配置属性对话框中，启用 **[!UICONTROL 云配置]**.
-      1. 点按 **[!UICONTROL 保存并关闭]** 保存配置并退出对话框。
+      1. 选择 **[!UICONTROL 保存并关闭]** 保存配置并退出对话框。
 
 1. 配置云服务 [!DNL reCAPTCHA Enterprise].
 
    1. 在您的Experience Manager创作实例上，转到 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**.
-   1. 点按 **[!UICONTROL reCAPTCHA]**. 此时将打开“配置”页面。 选择您创建的配置容器并点击 **[!UICONTROL 创建]**.
+   1. 选择 **[!UICONTROL reCAPTCHA]**. 此时将打开“配置”页面。 选择您创建的配置容器并选择 **[!UICONTROL 创建]**.
    1. 选择版本为 [!DNL reCAPTCHA Enterprise] 并指定reCAPTCHA Enterprise服务的名称、项目ID、站点密钥和API密钥（在步骤2中获取）。
    1. 选择密钥类型，密钥类型应与您在中配置的站点密钥相同 [Google云项目](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)例如， **复选框站点键** 或 **基于得分的网站密钥**.
    1. 指定 [阈值分数在0到1之间](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores). 分数大于或等于阈值分数标识人交互，否则被视为机器人交互。
-   1. 点按 **[!UICONTROL 创建]** 以创建云服务配置。
+   1. 选择 **[!UICONTROL 创建]** 以创建云服务配置。
 
 <!--
-    1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Tap **[!UICONTROL Save Settings]** and then tap **[!UICONTROL OK]** to complete the configuration.
+    1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
 reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参阅 [在自适应表单中使用CAPTCHA](#using-reCAPTCHA).
@@ -83,16 +83,16 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 1. 为云服务创建配置容器。
    1. 转到 **[!UICONTROL “工具”>“常规”>“配置浏览器”]**.
    1. 选择文件夹或创建文件夹，然后使用以下步骤启用云配置的文件夹：
-      1. 在配置浏览器中，选择文件夹并点按 **[!UICONTROL 属性]**.
+      1. 在配置浏览器中，选择文件夹并选择 **[!UICONTROL 属性]**.
       1. 在配置属性对话框中，启用 **[!UICONTROL 云配置]**.
-      1. 点按 **[!UICONTROL 保存并关闭]** 保存配置并退出对话框。
+      1. 选择 **[!UICONTROL 保存并关闭]** 保存配置并退出对话框。
 
 1. 为reCAPTCHA v2配置云服务。
 
    1. 在您的AEM创作实例上，转到 ![tools-1](assets/tools-1.png) > **Cloud Service**.
-   1. 点按 **[!UICONTROL reCAPTCHA]**. 此时将打开“配置”页面。 选择您创建的配置容器并点击 **[!UICONTROL 创建]**.
-   1. 选择版本为 [!DNL reCAPTCHA v2] ，指定reCAPTCHA服务（在步骤1中获取）的名称、站点密钥和密钥，然后点击 **[!UICONTROL 创建]** 以创建云服务配置。
-   1. 在“编辑组件”对话框中，指定在步骤1中获取的站点密钥和密钥。 点按 **[!UICONTROL 保存设置]** 然后点击 **确定** 以完成配置。
+   1. 选择 **[!UICONTROL reCAPTCHA]**. 此时将打开“配置”页面。 选择您创建的配置容器并选择 **[!UICONTROL 创建]**.
+   1. 选择版本为 [!DNL reCAPTCHA v2] ，指定reCAPTCHA服务（在步骤1中获取）的名称、站点密钥和密钥，然后选择 **[!UICONTROL 创建]** 以创建云服务配置。
+   1. 在“编辑组件”对话框中，指定在步骤1中获取的站点密钥和密钥。 选择 **[!UICONTROL 保存设置]** 然后选择 **确定** 以完成配置。
 
    配置reCAPTCHA服务后，便可在自适应表单中使用。 有关更多信息，请参阅 [在自适应表单中使用CAPTCHA](#using-reCAPTCHA).
 
@@ -116,7 +116,7 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
    >* 不支持在自适应表单中使用多个验证码组件。 此外，不建议在标记为延迟加载的面板或片段中使用验证码。
    >* reCaptcha对时间敏感，大约会在几分钟后过期。 因此，建议在自适应表单中将Captcha组件放在提交按钮之前。
 
-1. 选择您添加并点按的Captcha组件 ![cmppr](assets/cmppr.png) 以编辑其属性。
+1. 选择您添加的Captcha组件并选择 ![cmppr](assets/cmppr.png) 以编辑其属性。
 1. 指定验证码小部件的标题。 默认值为 **验证码**. 选择 **隐藏标题** 如果您不希望显示标题。
 1. 从 **验证码服务** 下拉列表，选择 **reCAPTCHA** 以启用reCAPTCHA服务（如果已按照中的说明进行了配置） [Google提供的reCAPTCHA服务](#google-reCAPTCHA).
 1. 从设置下拉列表中选择配置 **reCAPTCHA Enterprise** 或 **reCAPTCHA v2**
@@ -219,11 +219,11 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 
 ### 根据规则显示或隐藏验证码组件 {#show-hide-captcha}
 
-您可以选择根据您在自适应表单中组件上应用的规则来显示或隐藏CAPTCHA组件。 点按组件，选择 ![编辑规则](assets/edit-rules-icon.svg)，然后点击 **[!UICONTROL 创建]** 以创建规则。 有关创建规则的更多信息，请参阅 [规则编辑器](rule-editor.md).
+您可以选择根据您在自适应表单中组件上应用的规则来显示或隐藏CAPTCHA组件。 选择组件，选择 ![编辑规则](assets/edit-rules-icon.svg)，并选择 **[!UICONTROL 创建]** 以创建规则。 有关创建规则的更多信息，请参阅 [规则编辑器](rule-editor.md).
 
 例如，仅当表单中的“货币值”字段的值超过25000时，CAPTCHA组件才必须在自适应表单中显示。
 
-点按 **[!UICONTROL 货币值]** 字段，并创建以下规则：
+选择 **[!UICONTROL 货币值]** 字段，并创建以下规则：
 
 ![显示或隐藏规则](assets/rules-show-hide-captcha.png)
 
@@ -239,17 +239,17 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 
 要在提交自适应表单时自动验证验证码，请执行以下操作：
 
-1. 点按CAPTCHA组件并选择 ![cmppr](assets/configure-icon.svg) 查看组件属性。
+1. 选择CAPTCHA组件并选择 ![cmppr](assets/configure-icon.svg) 查看组件属性。
 1. 在 **[!UICONTROL 验证验证码]** 部分，选择 **[!UICONTROL 在提交表单时验证验证码]**.
-1. 点按 ![完成](assets/save_icon.svg) 以保存组件属性。
+1. 选择 ![完成](assets/save_icon.svg) 以保存组件属性。
 
 #### 在用户操作和条件上验证验证码 {#validate-captcha-user-action}
 
 要根据条件和用户操作验证验证码，请执行以下操作：
 
-1. 点按CAPTCHA组件并选择 ![cmppr](assets/configure-icon.svg) 查看组件属性。
+1. 选择CAPTCHA组件并选择 ![cmppr](assets/configure-icon.svg) 查看组件属性。
 1. 在 **[!UICONTROL 验证验证码]** 部分，选择 **[!UICONTROL 在用户操作时验证验证码]**.
-1. 点按 ![完成](assets/save_icon.svg) 以保存组件属性。
+1. 选择 ![完成](assets/save_icon.svg) 以保存组件属性。
 
 [!DNL Experience Manager Forms] 提供 `ValidateCAPTCHA` 用于使用预定义条件验证验证码的API。 您可以使用自定义提交操作或通过定义自适应表单中组件的规则来调用API。
 
@@ -275,7 +275,7 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 
 1. 添加脚本以包含 `ValidateCAPTCHA` 用于自定义提交操作的API。 有关自定义提交操作的更多信息，请参阅 [创建自适应Forms的自定义提交操作](custom-submit-action-form.md).
 1. 从中选择自定义提交操作的名称 **[!UICONTROL 提交操作]** 中的下拉列表 **[!UICONTROL 提交]** 自适应表单的属性。
-1. 点按 **[!UICONTROL 提交]**. 系统会根据中定义的条件验证验证码 `ValidateCAPTCHA` 自定义提交操作的API。
+1. 选择 **[!UICONTROL 提交]**. 系统会根据中定义的条件验证验证码 `ValidateCAPTCHA` 自定义提交操作的API。
 
 **选项2：使用 [!DNL Experience Manager Forms] ValidateCAPTCHA API用于在提交表单之前在用户操作中验证CAPTCHA**
 

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1228'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 2%
       <li><p><strong>转动3D摄像头</strong>  — 使视图围绕3D场景和对象旋转。</p> 鼠标：左键单击+拖动。</p> 触摸屏：按+拖动。</p></li>
       <li><p><strong>平移相机</strong>  — 向左、向右、向上和向下平移视图。</p> 鼠标：右键单击+拖动。</p> 触摸屏：双指按下+拖动。</p></li>
       <li><p><strong>缩放相机</strong>  — 如果要在3D场景中移入和移出区域，请缩放相机。</p> 鼠标：滚轮。</p> 触摸屏：手指捏合。</p></li>
-      <li><p><strong>重新居中相机</strong>  — 使视图围绕3D场景和对象旋转。</p> 鼠标：双击。</p> 触摸屏：双击。</li></ul></td>
+      <li><p><strong>重新居中相机</strong>  — 使视图围绕3D场景和对象旋转。</p> 鼠标：双击。</p> 触摸屏：双选。</li></ul></td>
       </tr>
       <tr>
       <td><p>图像</p> </td>
@@ -71,7 +71,7 @@ ht-degree: 2%
         </ul> <p><strong>在特定查看器中预览资源</strong></p>
         <ul>
         <li>在页面的左上角附近，选择图标，此时将显示下拉列表。 选择 <strong>查看器</strong> 从列表中，选择要应用于资源的查看器。</li>
-        </ul><p>使用 <strong>+</strong> 和 <strong>-</strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br>如果您在触摸屏上，请双击图像以按步骤放大。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
+        </ul><p>使用 <strong>+</strong> 和 <strong>-</strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br>如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
       </tr>
       <tr>
       <td>多媒体</td>
@@ -92,7 +92,7 @@ ht-degree: 2%
       <td><p><strong>在特定查看器中预览资源</strong></p>
         <ul>
         <li>在页面的左上角附近，选择图标，此时将显示下拉列表。 选择 <strong>查看器</strong> 从列表中，选择要应用于资源的查看器。</li>
-        </ul> <p>使用 <strong>+</strong> 和 <strong>- </strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br /> 如果您在触摸屏上，请双击图像以按步骤放大。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p></td>
+        </ul> <p>使用 <strong>+</strong> 和 <strong>- </strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br /> 如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p></td>
       </tr>
       <tr>
       <td>旋转集</td>
@@ -101,7 +101,7 @@ ht-degree: 2%
       <td><p><strong>在特定查看器中预览资源</strong></p>
         <ul>
         <li>在页面的左上角附近，选择图标，此时将显示下拉列表。 选择 <strong>查看器</strong> 从列表中，选择要应用于资源的查看器。</li>
-        </ul><p>使用 <strong>+</strong> 和 <strong>- </strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br /> 如果您在触摸屏上，请双击图像以按步骤放大。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
+        </ul><p>使用 <strong>+</strong> 和 <strong>- </strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br /> 如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
       </tr>
       <tr>
       <td>混合媒体集</td>
@@ -110,7 +110,7 @@ ht-degree: 2%
       <td><p><strong>在特定查看器中预览资源</strong></p>
         <ul>
         <li>在页面的左上角附近，选择图标，此时将显示下拉列表。 选择 <strong>查看器</strong> 从列表中，选择要应用于资源的查看器。</li>
-        </ul> <p>使用 <strong>+</strong> 和 <strong>- </strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br /> 如果您在触摸屏上，请双击图像以按步骤放大。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
+        </ul> <p>使用 <strong>+</strong> 和 <strong>- </strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br /> 如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
       </tr>
       <tr>
       <td>传送集</td>
@@ -131,7 +131,7 @@ ht-degree: 2%
         </ul> <p><strong>在特定查看器中预览资源</strong></p>
         <ul>
         <li>在页面的左上角附近，选择图标，此时将显示下拉列表。 选择 <strong>查看器</strong>，然后选择要应用于资源的查看器。</li>
-        </ul> <p>使用 <strong>+</strong> 和 <strong>- </strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br /> 如果您在触摸屏上，请双击图像以按步骤放大。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
+        </ul> <p>使用 <strong>+</strong> 和 <strong>- </strong>用于分别增大或减小所选图像的缩放的图标。 要将图像恢复为原始缩放，请选择 <strong>重置</strong>.<br /> 如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
       </tr>
     </tbody>
     </table>

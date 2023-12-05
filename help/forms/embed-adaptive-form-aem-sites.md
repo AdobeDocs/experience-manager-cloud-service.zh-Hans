@@ -4,10 +4,10 @@ description: 将自适应Forms无缝嵌入到AEM Sites页面或AEM外部托管�
 feature: Adaptive Forms
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3164'
-ht-degree: 6%
+source-wordcount: '3145'
+ht-degree: 5%
 
 ---
 
@@ -51,7 +51,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 您可以使用以下选项来充分利用此功能：
 
-* **[使用批准的模板创建自适应表单并将其嵌入到AEM Sites页面](#embed-form-using-adaptive-form-wizzard-aem-sites)：** 您可以利用预批准的模板快速创建和嵌入符合您组织的品牌准则和设计标准的自适应Forms。
+* **[使用批准的模板创建自适应表单并将其嵌入到AEM Sites页面](#embed-form-using-adaptive-form-wizzard-aem-sites)：** 您可以使用预批准的模板快速创建和嵌入符合您组织的品牌准则和设计标准的自适应Forms。
 
 * **[将现有表单嵌入到AEM Sites页面](#embed-an-adaptive-form-in-sites-editor)：** 您可以将已创建的表单轻松集成到网站中，从而使访客能够直接与表单进行交互。
 
@@ -201,7 +201,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 1. 以编辑模式打开 AEM Sites 页面。
 1. 拖放 **[!UICONTROL 自适应Forms — 嵌入(v2)]** 组件从组件浏览器转到站点页面。
-1. 点按 **[!UICONTROL 自适应Forms — 嵌入]** “站点”页面中的组件，然后点击 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 在操作栏上。 此 **[!UICONTROL 编辑自适应Forms — 嵌入(v2)]** 对话框打开。
+1. 选择 **[!UICONTROL 自适应Forms — 嵌入]** 组件，然后选择 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 在操作栏上。 此 **[!UICONTROL 编辑自适应Forms — 嵌入(v2)]** 对话框打开。
 1. 浏览并选择要嵌入到中的自适应表单 **[!UICONTROL 资产路径]**.
 1. 保存设置。 现在，自适应表单已嵌入到页面中。
 
@@ -215,7 +215,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 1. 在编辑模式下打开体验片段。
 1. 拖放 **[!UICONTROL 自适应Forms — 嵌入(v2)]** 从组件浏览器到体验片段的组件。
-1. 点按 **[!UICONTROL 自适应Forms — 嵌入]** 体验片段中的组件并点按 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 在操作栏上。 此 **[!UICONTROL 编辑自适应Forms — 嵌入(v2)]** 对话框打开。
+1. 选择 **[!UICONTROL 自适应Forms — 嵌入]** 体验片段中的组件并选择 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 在操作栏上。 此 **[!UICONTROL 编辑自适应Forms — 嵌入(v2)]** 对话框打开。
 1. 浏览并选择要嵌入到中的自适应表单 **[!UICONTROL 资产路径]**.
 1. 保存设置。 自适应表单现在嵌入到体验片段中。
 
@@ -310,9 +310,9 @@ To embed an Adaptive Form using the **[!UICONTROL Adaptive Forms - Embed]** comp
    >
    >Multiple Adaptive Forms - Embed components on a page are not supported.
 
-1. To create and embed a new form, on the component toolbar, tap the **Create Form** icon. A window to create the form opens. 
+1. To create and embed a new form, on the component toolbar, select the **Create Form** icon. A window to create the form opens. 
 
-1. Tap the embedded Adaptive Forms - Embed component in the sites page, and then tap ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
+1. Select the embedded Adaptive Forms - Embed component in the sites page, and then select ![settings_icon](assets/settings_icon.png) on the action bar. The **[!UICONTROL Edit Adaptive Forms - Embed]** dialog opens.
 1. In the Edit Adaptive Forms - Embed dialog, specify the following.
 
     **Asset Type:** Select the type of asset to embed. 
@@ -356,7 +356,7 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 要修改嵌入式自适应表单的任何配置或属性，请执行以下操作之一。
 
 * 在相应的编辑器中打开自适应表单中的原始表单，并修改它们。
-* 在编辑模式下，从站点页面中点按自适应表单，然后点按 **[!UICONTROL 在新窗口中编辑]**. 原始表单在编辑模式下打开，您可以修改该模式。
+* 在编辑模式下从网站页面中选择自适应表单，然后选择 **[!UICONTROL 在新窗口中编辑]**. 原始表单在编辑模式下打开，您可以修改该模式。
 
 >[!NOTE]
 >

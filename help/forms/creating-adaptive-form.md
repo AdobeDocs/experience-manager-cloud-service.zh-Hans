@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1546'
-ht-degree: 87%
+source-wordcount: '1493'
+ht-degree: 81%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 87%
 
 在开始之前，了解可使用的表单组件类型：
 
-* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans) 是标准化数据捕获组件。 对于您的数字注册体验，这些组件可以提供定制功能，缩短开发时间和降低维护成本。开发人员可以轻松地自定义这些组件并设置其样式。Adobe建议使用这些现代化的、可扩展的组件来开发自适应Forms。
+* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans) 是标准化数据捕获组件。 这些组件提供自定义功能，缩短开发时间并降低数字注册体验的维护成本。 开发人员可以轻松地自定义这些组件并设置其样式。Adobe建议使用这些现代化的、可扩展的组件来开发自适应Forms。
 
-* [自适应Forms Foundation组件](creating-adaptive-form.md) 是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑您现有的基于基础组件的自适应表单。如果您正在创建新表单，Adobe 建议使用[](creating-adaptive-form-core-components.md)用于创建自适应表单的自适应表单核心组件。
+* [自适应Forms Foundation组件](creating-adaptive-form.md) 是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑您现有的基于基础组件的自适应表单。如果您正在创建新表单，Adobe建议使用  [自适应Forms核心组件](creating-adaptive-form-core-components.md) 创建自适应Forms。
 
 
 
@@ -78,9 +78,9 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. 在 Experience Manager 登录页面上输入您的凭据。
 
-   登录后，在左上角，点按 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
+   登录后，在左上角选择 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
 
-1. 点按&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应表单]**。向导随即打开。
+1. 选择 **[!UICONTROL 创建]**  > **[!UICONTROL 自适应Forms]**. 向导随即打开。
 1. 在“源”选项卡中，选择一个模板：
 
    * 选择一个可编辑模板时，会自动选择该模板中指定的主题和提交操作，并启用&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。您可以转到&#x200B;**[!UICONTROL 样式]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡以选择不同的主题或提交操作。如果所选可编辑模板未指定主题，则“创建”按钮将保持禁用状态。您可以转到&#x200B;**[!UICONTROL 样式]**&#x200B;选项卡以手动选择主题。
@@ -118,13 +118,13 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. （可选）在“交付”选项卡中，您可以为自适应表单指定发布或取消发布日期。
 
-1. 点按&#x200B;**[!UICONTROL 创建]**。将出现一个对话框，用于指定标题、名称和位置以保存自适应表单：
+1. 选择&#x200B;**[!UICONTROL 创建]**。将出现一个对话框，用于指定标题、名称和位置以保存自适应表单：
 
    * **[!UICONTROL 标题]**：指定表单的显示名称。标题可帮助您在 [!DNL Experience Manager Forms] 用户界面中标识表单。
    * **[!UICONTROL 名称：]**&#x200B;指定表单的名称。在存储库中创建具有指定名称的节点。在开始键入标题时，名称字段的值将自动生成。您可以更改建议的值。名称字段只能包含字母数字字符、连字符和下划线。所有无效的输入都将替换为连字符。
    * **[!UICONTROL 路径：]**&#x200B;指定用于保存自适应表单的位置。您可以直接将自适应表单保存在 `/content/dam/formsanddocuments`，也可以创建一个文件夹（例如 `/content/dam/formsanddocuments/adaptiveforms`）来保存自适应表单。确保先创建文件夹，然后再在路径中使用它。**[!UICONTROL 路径]**&#x200B;字段不会自动创建文件夹。
 
-1. 点按&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。它还会显示侧栏，以根据需要自定义创建的表单。
+1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。它还会显示侧栏，以根据需要自定义创建的表单。
 
    根据自适应表单的类型，关联的 <!--XFA form template, XML schema or --> JSON 架构或表单数据模型显示在边栏的&#x200B;**[!UICONTROL 内容浏览器]**&#x200B;的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中。您还可以拖放这些元素来生成自适应表单。
 
@@ -138,7 +138,7 @@ To use a Form Data Model for creating an Adaptive Form:
 
    ![Create an Adaptive Form](assets/create-af-1-1.png)
 
-1. Tap to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.Select a from data model.
+1. Select to expand **[!UICONTROL Select Form Data Model]**. All available form data models are listed.Select a from data model.
 
 >[!NOTE]
 >
@@ -155,12 +155,12 @@ See the following documents to understand how to design XML or JSON schema for a
 
 Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
-1. On the **[!UICONTROL Add Properties]** step of Adaptive Form creation page, tap on the **[!UICONTROL Form Model]** tab.
+1. On the **[!UICONTROL Add Properties]** step of Adaptive Form creation page, select on the **[!UICONTROL Form Model]** tab.
 1. In the Form Model tab, select **[!UICONTROL Schema]** from the **[!UICONTROL Select From]** drop-down field.
 
-1. Tap **[!UICONTROL Select Schema]** and do one of the following:
+1. Select **[!UICONTROL Select Schema]** and do one of the following:
 
-    * **[!UICONTROL Upload from disk]** - Select this option and tap Upload Schema Definition to browse and upload an XML schema or JSON schema from your file system. The uploaded schema file resides with the form and is not accessible to other Adaptive Forms.
+    * **[!UICONTROL Upload from disk]** - Select this option and select Upload Schema Definition to browse and upload an XML schema or JSON schema from your file system. The uploaded schema file resides with the form and is not accessible to other Adaptive Forms.
     * **[!UICONTROL Search in repository]** - Select this option to select from the list of schema definition files available in the repository. Select the XML or JSON schema file as form model. The selected schema is associated with the form by reference and is accessible for use in other Adaptive Forms.
 
       Ensure that the JSON schema filename ends with **.schema.json**. For example: mySchema.schema.json
@@ -181,13 +181,13 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 您可以更改自适应表单的表单模型（基于 JSON 或表单数据模型）。您无法从一种表单模型更改为另一种表单模型。
 
-1. 选择自适应表单并点按&#x200B;**属性**&#x200B;图标。
+1. 选择自适应表单，然后选择 **属性** 图标。
 1. 打开&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡并执行下列操作之一。
 
    * 如果自适应表单不带表单模型，您可以选择另一个表单模型并相应地选择 <!-- a form template, --> XML 或 JSON 架构，或表单数据模型。
    * 如果自适应表单基于表单模型，您可以选择另一个 <!-- form template, --> XML 或 JSON 架构，或同一表单模型的表单数据模型。
 
-1. 点按&#x200B;**[!UICONTROL 保存]**&#x200B;以保存属性。
+1. 选择 **[!UICONTROL 保存]** 以保存属性。
 
 您还可以在自适应表单编辑器或自适应表单模板编辑器中修改表单模型属性。
 
@@ -197,7 +197,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
    * 如果自适应表单不带表单模型，您可以选择一个表单模型并相应地选择 <!-- a form template, --> XML 或 JSON 架构，或表单数据模型。
    * 如果自适应表单基于表单模型，则无法更改表单模型。您可以选择另一个 <!-- form template, --> XML 或 JSON 架构，或同一表单模型的表单数据模型（如果适用）。
-1. 点按![保存](/help/forms/assets/check-button.png)以保存属性。
+1. 选择 ![保存](/help/forms/assets/check-button.png) 以保存属性。
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
 

@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 69%
+source-wordcount: '928'
+ht-degree: 66%
 
 ---
 
@@ -43,7 +43,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 从 **项目概述** 页面上，选择 **管道** 制表符以切换到 **管道** 窗口。
 
-1. 在这里，您可以看到项目的所有管道的列表，以及启动和停止管道执行，就像在&#x200B;**管道信息卡**&#x200B;中一样。
+1. 在这里，您可以看到项目的所有管道列表，并且可以像在中一样启动和停止管道执行 **管道信息卡**.
 
 如果管道正在执行，则将鼠标悬停在其&#x200B;**状态**&#x200B;列上将显示有关执行的详细信息。
 

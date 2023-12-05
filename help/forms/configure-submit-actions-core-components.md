@@ -3,7 +3,7 @@ title: 如何为自适应表单配置提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建自己的提交操作
 keywords: 如何为自适应表单选择提交操作、将自适应表单连接到sharepoint列表、将自适应表单连接到sharepoint文档库、将自适应表单连接到表单数据模型
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '4006'
 ht-degree: 84%
@@ -198,7 +198,7 @@ ht-degree: 84%
 
 1. 单击&#x200B;**[!UICONTROL 连接]**。连接成功后，将显示`Connection Successful`消息。
 1. 选择 **[!UICONTROL SharePoint站点]** 和 **[!UICONTROL SharePoint列表]** 下拉列表中。
-1. 点按 **[!UICONTROL 创建]** 创建Microsoft® SharePointList的云配置。
+1. 选择 **[!UICONTROL 创建]** 创建Microsoft® SharePointList的云配置。
 
 
 #### 在自适应表单中使用表单数据模型提交 {#use-submit-using-fdm}

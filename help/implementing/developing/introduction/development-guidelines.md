@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 开发准则
 description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及它与本地 AEM 和 AMS 中的 AEM 的重要区别。
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c706757857a528a0475f659c6b38110db6f6572a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2745'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 ## 代码必须支持群集 {#cluster-aware}
 
-在AEMas a Cloud Service中运行的代码必须意识到它始终在群集中运行这一事实。 这意味着始终会有多个实例在运行。代码必须是可复原的，尤其是因为实例可能会在任何时间点停止。
+在AEMas a Cloud Service中运行的代码必须意识到它始终在群集中运行这一事实。 这意味着始终会有多个实例在运行。 代码必须是可复原的，尤其是因为实例可能会在任何时间点停止。
 
 在更新AEMas a Cloud Service期间，有一些实例同时运行旧代码和新代码。 因此，旧代码不得与新代码创建的内容冲突，新代码必须能够处理旧内容。
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 ## 文件系统上的状态 {#state-on-the-filesystem}
 
-不应在AEMas a Cloud Service中使用实例的文件系统。 该盘是短暂的，并且在实例被回收时进行处置。 有限地使用文件系统进行与处理单个请求相关的临时存储是可能的，但不应滥用文件系统进行大型存储。 这是因为这可能会对资源使用配额产生负面影响，并遇到磁盘限制。
+请勿在AEMas a Cloud Service中使用实例的文件系统。 该盘是短暂的，并且在实例被回收时进行处置。 有限地使用文件系统进行与处理单个请求相关的临时存储是可能的，但不应滥用文件系统进行大型存储。 这是因为这可能会对资源使用配额产生负面影响，并遇到磁盘限制。
 
 例如，不支持使用文件系统，发布层应确保将必须保留的任何数据发送到外部服务以进行更长期存储。
 
@@ -47,7 +47,7 @@ ht-degree: 4%
 
 为了尽量减少问题，应尽可能避免长时间运行的作业，这些作业应至少可以恢复。 要执行此类作业，请使用Sling作业，该作业具有至少一次保证，因此如果中断，将尽快重新执行。 但他们或许不应该从头开始。 要计划此类作业，最好使用 [Sling作业](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) 计划器，因为这样可以再次确保至少执行一次。
 
-由于无法保证执行，因此不应使用Sling Commons Scheduler进行调度。 只是更有可能按计划进行。
+请勿使用Sling Commons Scheduler进行计划，因为无法保证执行。 只是更有可能按计划进行。
 
 同样，对于异步发生的所有情况（例如对观察事件执行操作，无论是JCR事件还是Sling资源事件），无法保证执行，因此必须谨慎使用。 对于当前的AEM部署而言，情况已经如此。
 
@@ -109,7 +109,7 @@ AEMas a Cloud Service不支持从“发布”到“创作”的反向复制。 �
 
 对于本地开发，日志条目将写入本地文件 `/crx-quickstart/logs` 文件夹。
 
-在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。 <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+在云环境中，开发人员可以通过Cloud Manager下载日志，或使用命令行工具跟踪日志。 <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **设置日志级别**
 
@@ -172,7 +172,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 对于本地开发，开发人员拥有CRXDE Lite(`/crx/de`)和AEM Web控制台(`/system/console`)。
 
-请注意，在本地开发中（使用SDK）， `/apps` 和 `/libs` 可以直接写入，这与云环境不同，在云环境中，这些顶级文件夹不可更改。
+在本地开发（使用SDK）中， `/apps` 和 `/libs` 可以直接写入，这与云环境不同，在云环境中，这些顶级文件夹不可更改。
 
 ### AEM as a Cloud Service 开发工具 {#aem-as-a-cloud-service-development-tools}
 

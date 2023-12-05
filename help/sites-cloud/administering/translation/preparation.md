@@ -4,10 +4,10 @@ description: 了解在开发多语言网站时如何准备翻译内容。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 84%
+source-wordcount: '756'
+ht-degree: 75%
 
 ---
 
@@ -68,8 +68,8 @@ ht-degree: 84%
 
 要创建语言根，您需要创建一个页面并使用 ISO 语言代码作为&#x200B;**名称**&#x200B;属性的值。语言代码必须采用下列格式之一：
 
-* `<language-code>` – 支持的语言代码是由 ISO-639-1 定义的两字母代码，例如 `en`。
-* `<language-code>_<country-code>` 或 `<language-code>-<country-code>` – 支持的国家/地区代码是由 ISO 3166 定义的小写或大写形式的两字母代码，例如 `en_US`、`en_us`、`en_GB`、`en-gb`。
+* `<language-code>`  — 支持的语言代码是由ISO-639-1定义的两字母代码，例如， `en`.
+* `<language-code>_<country-code>` 或 `<language-code>-<country-code>`  — 支持的国家/地区代码是由ISO 3166定义的小写或大写形式的两字母代码，例如， `en_US`， `en_us`， `en_GB`， `en-gb`.
 
 根据您为全球站点选择的结构，您可以使用任一格式。例如，WKND 站点的法语副本的根页面将 `fr` 用作&#x200B;**名称**&#x200B;属性。此 **名称** 属性用作存储库中页面节点的名称，从而确定页面的路径(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
 
@@ -80,7 +80,7 @@ ht-degree: 84%
    ![创建页面](../assets/create-page.png)
 
 1. 选择页面模板，然后选择 **下一个**.
-1. 在&#x200B;**名称**&#x200B;字段中，用 `<language-code>` 或 `<language-code>_<country-code>` 格式键入国家/地区代码，例如 `en`、`en_US`、`en_us`、`en_GB`、`en_gb`。为页面键入标题。
+1. 在 **名称** 字段输入国家/地区代码，格式为 `<language-code>` 或 `<language-code>_<country-code>`例如， `en`， `en_US`， `en_us`， `en_GB`， `en_gb`. 为页面键入标题。
 
    ![创建语言根页面](../assets/create-language-root.png)
 
@@ -102,7 +102,7 @@ AEM 提供了一个&#x200B;**引用**&#x200B;边栏来显示已创建的语言�
 
 ## 多个级别的语言副本 {#multiple-levels}
 
-语言根也可在节点下进行分组（例如按区域），同时仍被识别为语言副本的根。
+语言根也可在节点下进行分组（例如，按区域），同时仍被识别为语言副本的根。
 
 ```text
 /content

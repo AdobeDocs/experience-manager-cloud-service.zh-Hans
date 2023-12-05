@@ -2,10 +2,10 @@
 title: 页面模板
 description: 创建用作新页面基础的页面时，将使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 7%
+source-wordcount: '3267'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 7%
 
    * 内容策略定义组件的设计属性。
 
-      * 例如，可用的组件或最小/最大尺寸。
+      * 例如，可用的元件或最小/最大尺寸。
 
    * 这些属性适用于模板（和使用模板创建的页面）。
 
@@ -141,7 +141,7 @@ ht-degree: 7%
 >
 >即使您可以嵌套文件夹，当用户在 **模板** 控制台，它们以扁平结构呈现。
 
-在标准AEM实例中， `global` 模板控制台中已存在文件夹。 此文件夹会保存默认模板，如果在当前文件夹中没有找到策略和/或模板类型，则此文件夹可以充当备用。您可以将默认模板添加到此文件夹或创建文件夹（推荐）。
+在标准AEM实例中， `global` 模板控制台中已存在文件夹。 该文件夹会保存默认模板，如果在当前文件夹中未找到策略和/或模板类型，则该文件夹会充当备用。 您可以将默认模板添加到此文件夹或创建文件夹（推荐）。
 
 >[!NOTE]
 >
@@ -425,7 +425,7 @@ GITHUB上的代码
 
 * **名称**：`jcr:title`
 * **名称**：`status`
-   * ``**类型**: `String`
+   * &quot;**类型**： `String`
    * **值**： `draft`， `enabled` 或 `disabled`
 
 ### 结构 {#structure}
@@ -459,7 +459,7 @@ GITHUB上的代码
 
 ### 内容策略 {#content-policies}
 
-内容策略定义组件的设计属性。 例如，可用的组件或最小/最大尺寸。这些属性适用于模板（和使用模板创建的页面）。可以在模板编辑器中创建和选择内容策略。
+内容策略定义组件的设计属性。 例如，可用的组件或最小/最大尺寸。这些选项适用于模板（以及使用该模板创建的页面）。 可以在模板编辑器中创建和选择内容策略。
 
 * 属性 `cq:policy`，位于 `root` 节点
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
@@ -495,7 +495,7 @@ GITHUB上的代码
 
          * 名称：状态
          * 类型：字符串
-         * 价值: `enabled`
+         * 值： `enabled`
 
 1. **允许的模板**
 
@@ -531,11 +531,11 @@ GITHUB上的代码
 
 呈现页面时：
 
-* **模板**:
+* **模板**：
 
    * 此 `cq:template` 其属性 `jcr:content` 节点被引用以访问与该页面对应的模板。
 
-* **组件**:
+* **组件**：
 
    * 页面组件将合并 `structure/jcr:content` 模板树 `jcr:content` 页面的树。
       * 页面组件将仅允许作者编辑已标记为可编辑的模板结构的节点（以及任何子节点）。
@@ -593,8 +593,8 @@ GITHUB上的代码
 
 #### 限制子页面中使用的模板 {#limiting-templates-used-in-child-pages}
 
-要限制哪些模板可用于在给定页面下创建子页面，请使用 `cq:allowedTemplates` 属性 `jcr:content` 页面的节点，用于指定允许作为子页面的模板列表。 例如，列表中的每个值都必须是允许的子页面模板的绝对路径 `/apps/wknd/templates/page-content`.
+要限制哪些模板可用于在给定页面下创建子页面，请使用 `cq:allowedTemplates` 属性 `jcr:content` 页面的节点，用于指定允许作为子页面的模板列表。 列表中的每个值都必须是允许的子页面模板的绝对路径，例如， `/apps/wknd/templates/page-content`.
 
 您可以使用 `cq:allowedTemplates` 模板的属性  `jcr:content` 节点，用于将此配置应用于使用此模板的所有已创建页面。
 
-如果要添加更多约束，例如关于模板层次结构的约束，您可以使用 `allowedParents/allowedChildren` 属性。 然后，您可以明确指定从模板T创建的页面必须是从模板T创建的页面的父项/子项。
+例如，如果要添加更多关于模板层次结构的约束，可以使用 `allowedParents/allowedChildren` 属性。 然后，您可以明确指定从模板T创建的页面必须是从模板T创建的页面的父项/子项。

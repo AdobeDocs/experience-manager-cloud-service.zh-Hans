@@ -3,10 +3,10 @@ title: 如何为自适应表单启用Adobe Analytics？
 description: Experience Cloud设置自动化有助于将Adobe Analytics连接到自适应表单，以跟踪有关访客交互和参与情况的见解。
 keywords: 使用Experience Cloud设置自动化为自适应表单启用Adobe Analytics，在Forms中启用Adobe Analytics，在自适应Forms中启用Adobe Analytics，Forms Analytics集成、Forms和Adobe Analytics
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: fa107ee89deb217ada2cfbcccb4602a7a6aff125
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 3%
+source-wordcount: '1555'
+ht-degree: 2%
 
 ---
 
@@ -93,7 +93,7 @@ Experience Cloud设置自动化需要 **Adobe Analytics许可证**， **数据�
 1. 为云服务创建配置容器：
    1. 转到 **[!UICONTROL “工具”>“常规”>“配置浏览器”]**.
    1. 选择或创建配置容器，然后启用文件夹 **[!UICONTROL 云配置]**.
-   1. 点按 **[!UICONTROL 保存并关闭]** 保存配置并退出对话框。
+   1. 选择 **[!UICONTROL 保存并关闭]** 保存配置并退出对话框。
 1. 在您的AEM实例上，转到 **[Forms]** >> **[Forms和文档]**.
 1. 选择您的 **[!UICONTROL 表单]** >> **[!UICONTROL 属性]**，在 **[!UICONTROL 配置容器]**，选择您在中创建或选择的配置容器 **[!UICONTROL 配置浏览器]** 步骤1.
 1. 在左边栏中选择任务面板，然后单击 **设置Analytics** 和 **激活Adobe Analytics**.

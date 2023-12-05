@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1104'
-ht-degree: 3%
+source-wordcount: '1066'
+ht-degree: 1%
 
 ---
 
@@ -107,7 +107,7 @@ CIF加载项和 [CIF核心组件](https://github.com/adobe/aem-core-cif-componen
 
 可以在执行以下步骤后，通过CIFCloud Service配置来调整项目的此配置：
 
-1. 在AEM中，转到“工具” — >“Cloud Service” — >“CIF配置”。
+1. 在AEM中，转到“工具”>“Cloud Service”>“CIF配置”。
 
 2. 选择要更改的商务配置。
 
@@ -138,7 +138,7 @@ CIF加载项和 [CIF核心组件](https://github.com/adobe/aem-core-cif-componen
 
 ## 其他资源 {#additional-resources}
 
-- [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
+- [AEM项目原型](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia参考存储](https://github.com/adobe/aem-cif-guides-venia)
 - [Commerce多商店设置](configuring/multi-store-setup.md)
 - [多个Commerce系统设置](configuring/multiple-commerce-systems-setup.md)

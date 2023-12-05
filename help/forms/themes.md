@@ -2,9 +2,9 @@
 title: 如何创建和使用主题来设置自适应表单的样式？
 description: 使用自适应表单主题设计自适应表单的样式并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5558'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 2%
 
 1. 在“主题”页面中， **[!UICONTROL 选择]** 主题，然后单击 **[!UICONTROL 下载]**. 此时将显示一个对话框，其中包含主题的详细信息。
 
-1. 单击&#x200B;**[!UICONTROL “下载”。]**&#x200B;主题将下载为zip文件。
+1. 单击 **[!UICONTROL 下载]**. 主题将下载为zip文件。
 
 >[!NOTE]
 >
@@ -363,7 +363,7 @@ ht-degree: 2%
 * **[!UICONTROL 数值框小组件]**：用于选择组件以自定义其在侧栏中的外观。
 * **[!UICONTROL 字段小组件]**：用于选择用于样式的通用组件。 在此示例中，将选择所有文本输入组件（文本框/数字框/数字步进器/日期输入）来设置样式。
 
-* ![字段级](assets/select_parent_icon.svg)：用于选择用于样式设置的父组件。 如果您选择数字框并点按此图标，则字段组件处于选中状态。 如果您选择字段组件并点按此图标，则面板将被选中。 如果不断点击此图标进行选择，则最终将选择用于样式设置的布局。
+* ![字段级](assets/select_parent_icon.svg)：用于选择用于样式设置的父组件。 如果选择数字框并选择此图标，则字段组件处于选中状态。 如果选择字段组件并选择此图标，则面板将被选中。 如果不断点击此图标进行选择，则最终将选择用于样式设置的布局。
 
 >[!NOTE]
 >
@@ -445,7 +445,7 @@ ht-degree: 2%
 1. 选择数字框后，您可以看到包含三个选项的组件工具栏：
 
    * **[!UICONTROL 数值框小组件]**
-   * **[!UICONTROL 字段小工具]**
+   * **[!UICONTROL 字段小组件]**
 
 1. 选择 **[!UICONTROL 数值框小组件]**.
 1. 侧栏标题将更改为数值框小组件，并显示用于自定义其外观的选项。
@@ -587,7 +587,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 1. 在创作实例中，导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 主题]**.
 1. 打开主题库文件夹。
-1. 在“主题库”文件夹中，将指针悬停在相应的现成主题上，然后点按 **[!UICONTROL 复制]**.
+1. 在“主题库”文件夹中，将指针悬停在相应的现成主题上，然后选择 **[!UICONTROL 复制]**.
 1. 将复制的主题粘贴到主题库文件夹之外。
 1. 自定义复制的主题。
 

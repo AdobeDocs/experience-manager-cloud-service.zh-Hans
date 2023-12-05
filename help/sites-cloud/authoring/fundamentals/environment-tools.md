@@ -2,10 +2,10 @@
 title: 创作环境和工具
 description: AEM 的创作环境提供了各种可用于组织和编辑内容的机制
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -108,7 +108,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![侧面板切换](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-打开侧面板时，它将从左侧滑开。根据需要选择&#x200B;**资源**&#x200B;选项卡。
+打开侧面板时，它将从左侧滑开。 选择 **资产** 选项卡（如有必要）。
 
 ![“资源浏览器”按钮](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -226,7 +226,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 * **传入链接**，提供引用该页面的页面的列表，并可在选择特定链接时直接&#x200B;**编辑**&#x200B;这些页面之一。
 
-   * 这只能显示静态链接，而不能显示动态生成的链接；例如，从列表组件中。
+   * 这只能显示静态链接，而不能显示动态生成的链接；例如，来自列表组件的链接。
 
 * 使用&#x200B;**引用**&#x200B;组件的借入和借出内容的实例，您可以从此处导航至正在引用/引用的页面
 * [启动项](/help/sites-cloud/authoring/launches/overview.md)，提供对相关启动项的访问权

@@ -5,10 +5,10 @@ uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 2%
+source-wordcount: '337'
+ht-degree: 0%
 
 ---
 

@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '614'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 7%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
-您可以在中创建专用文件夹 [!DNL Adobe Experience Manager Assets] 专为您提供的用户界面。 您可以将此专用文件夹共享给其他用户，并为他们分配各种权限。 根据您分配的权限级别，用户可以在文件夹上执行各种任务，例如，查看文件夹中的资源或编辑资源。
+您可以在中创建专用文件夹 [!DNL Adobe Experience Manager Assets] 专为您提供的用户界面。 您可以将此专用文件夹共享给其他用户，并为他们分配各种权限。 根据您分配的权限级别，用户可以在该文件夹上执行各种任务，例如，查看文件夹中的资源或编辑资源。
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ ht-degree: 7%
    >
    >私有文件夹至少有一个成员 `Owner` 角色。 因此，管理员无法从专用文件夹中删除所有所有者成员。 但是，要从专用文件夹中删除现有所有者（以及管理员本身），管理员必须添加其他用户作为所有者。
 
-1. 单击“**[!UICONTROL 保存并关闭]**”。根据您分配的角色，当用户登录时，将会为用户分配一组针对您的专用文件夹的权限 [!DNL Assets].
+1. 单击 **[!UICONTROL 保存并关闭]**. 根据您分配的角色，当用户登录时，将会为用户分配一组针对您的专用文件夹的权限 [!DNL Assets].
 1. 单击 **[!UICONTROL 确定]** 以关闭确认消息。
 1. 与您共享文件夹的用户将在用户界面中收到共享通知。
 

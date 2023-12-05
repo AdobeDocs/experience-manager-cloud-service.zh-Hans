@@ -1,15 +1,15 @@
 ---
-title: AEM - Commerce Integration使用Commerce Integration Framework的常见问题解答
-description: AEM - Commerce Integration使用Commerce Integration Framework的常见问题解答
+title: AEM - Commerce集成使用Commerce integration framework常见问题解答
+description: AEM - Commerce集成使用Commerce integration framework常见问题解答
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
-# AEM - Commerce Integration使用Commerce Integration Framework的常见问题解答
+# AEM - Commerce集成使用Commerce integration framework常见问题解答
 
 ## 1. CIF GraphQL是否仅用于商务，还是可用于查询在AEM JCR上创作的内容？
 
@@ -23,7 +23,7 @@ Adobe已采用Adobe Commerce的GraphQL API作为适用于所有商业相关数�
 
 ## 3.在哪里部署商业解决方案是否重要？ （内部部署或云中）
 
-不，将您的商务解决方案部署在何处无关紧要。 无论采用何种部署模型，CIF和AEM库都能正常运行。 但是，如果解决方案是使用推荐的E2E参考体系结构部署的，则E2E测试可以根据代表典型企业客户配置文件的性能KPI运行。 此方法提供可以用作基准的其他信息。
+不，将您的商务解决方案部署在何处无关紧要。 CIF和AEM店面的工作方式与部署模型无关。 但是，如果解决方案是使用推荐的E2E参考体系结构部署的，则E2E测试可以根据代表典型企业客户配置文件的性能KPI运行。 此方法提供可以用作基准的其他信息。
 
 ## 4.如何在AEM中创建目录页面或产品页面？ 它们如何在AEM中保留？
 
@@ -31,7 +31,7 @@ Adobe已采用Adobe Commerce的GraphQL API作为适用于所有商业相关数�
 
 ## 5.在商务解决方案中更新产品数据时，是否实时推送到AEM？ 还是说它是一个批处理？
 
-与AEM Cloud Service一起使用的CIF加载项使得数据能够按需从商务解决方案流向AEM。 因此，当您的商业解决方案中有更新时，这不是实时推送或批处理。
+与AEM Cloud Service一起使用的CIF加载项使得数据能够按需从商务解决方案流入AEM。 因此，当您的商业解决方案中有更新时，这不是实时推送或批处理。
 
 ## 6. AEM支持CIF的目录大小是多少？
 
@@ -65,7 +65,7 @@ CIF提供搜索栏和搜索结果组件。 搜索栏组件将带有搜索词的G
 
 Adobe建议在AEM中管理与营销相关的数据和内容。 使用内容片段使用其他属性修饰商业解决方案中的产品数据，或者为非结构化内容创建体验片段并将其链接到您的产品。
 
-## 14.在整个展示层中使用AEM时，我们如何确保PCI合规性？
+## 14.在整个表示层使用AEM时，如何确保PCI合规性？
 
 Adobe建议使用抽象的支付方式。 这使得浏览器客户端与支付网关提供商直接通信，因此Adobe或商业解决方案都不会保留或传递持卡人数据。 此方法只需要第3级PCI符合性。 但是，还需要考虑其他完全符合PCI标准的因素，例如员工如何与系统和数据交互。 有关Adobe Commerce PCI合规性的更多信息，请参见 [PCI合规性要求](https://business.adobe.com/products/magento/pci-compliance.html).
 

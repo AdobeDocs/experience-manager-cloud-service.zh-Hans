@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 5%
+source-wordcount: '2145'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 5%
 
 要让您快速启动并运行，请执行以下操作：
 
-1. 可选. [创建批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md) 并将其应用到上传旋转集图像的新文件夹。
+1. 可选。 [创建批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md) 并将其应用到上传旋转集图像的新文件夹。
 
    批次集预设可以帮助您自动创建图像集。
 
@@ -128,7 +128,7 @@ ht-degree: 5%
 >[!NOTE]
 >
 >您还可以通过自动创建图像集 [批次集预设](/help/assets/dynamic-media/batch-set-presets-dm.md).
->**重要信息：**&#x200B;批量集由 IPS（图像制作系统）作为资产引入的一部分创建。
+>**重要提示：** 批量集由IPS（图像生产系统）作为资产引入的一部分创建。
 
 将资源添加到集时，会自动按字母数字顺序添加资源。 添加资源后，您可以手动对资源重新排序或排序。
 
@@ -148,9 +148,9 @@ ht-degree: 5%
 **要创建图像集，请执行以下操作：**
 
 1. 在Adobe Experience Manager中，选择Experience Manager徽标以访问全局导航控制台。
-1. 点按 **[!UICONTROL 导航]** > **[!UICONTROL 资产]**. 导航到要创建图像集的位置，然后转到 **[!UICONTROL 创建]** > **[!UICONTROL 图像集]** 以打开“图像集编辑器”页。
+1. 选择 **[!UICONTROL 导航]** > **[!UICONTROL 资产]**. 导航到要创建图像集的位置，然后转到 **[!UICONTROL 创建]** > **[!UICONTROL 图像集]** 以打开“图像集编辑器”页。
 
-   您还可以从包含资产的文件夹中创建旋转集。
+   您还可以从包含资产的文件夹中创建集。
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -164,7 +164,7 @@ ht-degree: 5%
 
    * 在“图像集编辑器”页面中间附近，选择 **[!UICONTROL 点按以打开资产选择器]**.
 
-   点按以选择要包含在图像集中的资产。 选定资源上有一个复选标记图标。 完成后，在页面的右上角附近，选择 **[!UICONTROL 选择]**.
+   选择以选择要包含在图像集中的资源。 选定资源上有一个复选标记图标。 完成后，在页面的右上角附近，选择 **[!UICONTROL 选择]**.
 
    借助资产选择器，您可以通过键入关键字并选择 **[!UICONTROL 返回]**. 您还可以应用过滤器来优化搜索结果。您可以按路径、收藏集、文件类型和标记进行过滤。选择过滤器，然后选择 **[!UICONTROL 筛选]** 图标。 通过选择视图图标并选择更改视图 **[!UICONTROL 列视图]**， **[!UICONTROL 卡片视图]**，或 **[!UICONTROL 列表视图]**.
 
@@ -190,7 +190,7 @@ ht-degree: 5%
    >
    >创建图像集时，可以更改图像集缩略图。 或者，您可以让Experience Manager根据图像集中的资源自动选择缩略图。 要选择缩略图，请选择 **[!UICONTROL 更改缩略图]** 位于图像集编辑器页面上“标题”字段上方。 然后，选择任意图像（您也可以导航到其他文件夹以查找图像）。 如果您选择了缩略图，然后决定希望Experience Manager从图像集生成缩略图，请选择 **[!UICONTROL 切换到]** **[!UICONTROL 自动缩略图]**.
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。您创建的图像集会显示在您创建该图像集的文件夹中。
+1. 单击 **[!UICONTROL 保存]**. 您创建的图像集会显示在您创建该图像集的文件夹中。
 
 ## 查看图像集 {#viewing-image-sets}
 
@@ -236,7 +236,7 @@ ht-degree: 5%
 
    * 将鼠标悬停在图像集资源上，然后选择 **[!UICONTROL 编辑]** （铅笔图标）。
    * 将鼠标悬停在图像集资源上，选择 **[!UICONTROL 选择]** （复选标记图标），然后选择 **[!UICONTROL 编辑]** 工具栏中。
-   * 点按图像集资源，然后选择 **[!UICONTROL 编辑]** （铅笔图标）。
+   * 选择图像集资源，然后选择 **[!UICONTROL 编辑]** （铅笔图标）。
 
 1. 要编辑图像集中的图像，请执行下列任一操作：
 
@@ -255,7 +255,7 @@ ht-degree: 5%
    >
    >您可以编辑图像集中的图像。 导航到集并选择 **[!UICONTROL 设置成员]** 在左边栏中。 要打开编辑窗口，请选择资产上的铅笔图标。
 
-1. 点按 **[!UICONTROL 保存]** 完成编辑时。
+1. 选择 **[!UICONTROL 保存]** 完成编辑时。
 
 ## 预览图像集 {#previewing-image-sets}
 

@@ -1,14 +1,14 @@
 ---
-title: 管理数字资源
+title: 管理数字资产
 description: 了解各种资源管理和编辑方法
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4301'
+source-wordcount: '4270'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=zh-Hans) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
 本文介绍了如何在中管理和编辑资源 [!DNL Adobe Experience Manager Assets]. 管理 [!DNL Content Fragments]，请参见 [[!DNL Content Fragments]](content-fragments/content-fragments.md) 资产。
@@ -69,13 +69,13 @@ ht-degree: 10%
 要预览资源，请执行以下步骤。
 
 1. 在Assets用户界面中，导航到要预览的资源的位置。
-1. 点按所需的资产以将其打开。
+1. 选择所需的资产以将其打开。
 
 1. 在预览模式下，缩放选项可用于 [支持的图像类型](/help/assets/file-format-support.md) （通过交互式编辑）。
 
    要放大资产，请选择 `+` （或选择资产上的放大镜）。 要缩小，请选择 `-`. 放大时，可以通过平移仔细查看图像的任意区域。 重置缩放箭头将您带回原始视图。
 
-   点按 **[!UICONTROL 重置]** 将视图重置为原始大小。
+   选择 **[!UICONTROL 重置]** 将视图重置为原始大小。
 
 ## 编辑属性 {#editing-properties}
 
@@ -106,7 +106,7 @@ ht-degree: 10%
    >
    > 要创建标记，您必须具有以下写入权限： `/content/cq:tags/default` CRX存储库中的路径。
 
-1. 选择 **[!UICONTROL 保存并关闭]**.
+1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
 1. 导航到Assets用户界面。 编辑后的元数据属性（包括标题、描述和标记）将显示在卡片视图的资产卡片上，以及列表视图的相关列下。
 
@@ -340,7 +340,7 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
 
 快速操作图标一次可用于单个资源。 根据您的设备，执行以下操作以显示快速操作图标：
 
-* 触控设备：触控并按住。 例如，在iPad上，您可以点按并按住资产，以便显示快速操作。
+* 触控设备：触控并按住。 例如，在iPad上，您可以选择并按住资产，以便显示快速操作。
 * 非触控设备：悬停指针。 例如，在桌面设备上，如果将指针悬停在资产缩略图上，则会显示快速操作栏。
 
 <!-- Hiding this topic via cqdoc-18707

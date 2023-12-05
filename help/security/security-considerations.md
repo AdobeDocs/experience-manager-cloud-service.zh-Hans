@@ -4,10 +4,10 @@ description: 了解使用 AEM as a Cloud Service 时的重要安全注意事项
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '229'
-ht-degree: 100%
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ### 信任库的特征 {#truststore-characteristics}
 
-* 信任库位于 `/etc/truststore` 下方，由 Java 密钥库文件、密钥库密码和存储库元数据组成。请注意，由于技术原因，密码和密钥库本身都已加密，但每个人默认情况下都可以通过 API 访问包含的证书
+* 信任库位于 `/etc/truststore` 下方，由 Java 密钥库文件、密钥库密码和存储库元数据组成。由于技术原因，密码和密钥库本身都会加密，即使默认情况下每个人都可以通过API访问包含的证书
 * 现成的证书仅用于 HTTPS 和 SAML 支持，并且必须先手动创建存储
 * 客户可以通过[密钥库 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-) 在自己的代码中使用它
 * 可以通过 UI（位于&#x200B;**工具** – **安全性** – **信任库**）或通过访问 *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`* 管理信任库，如下所示：

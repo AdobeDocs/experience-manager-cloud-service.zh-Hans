@@ -2,10 +2,10 @@
 title: 自定义控制台
 description: 了解 AEM 提供的用于自定义创作实例控制台的不同选项。
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 92%
+source-wordcount: '516'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ AEM 提供了自定义创作实例控制台（以及[页面创作功能](/help/i
 
 ## Clientlibs {#clientlibs}
 
-Clientlib 允许您扩展默认实现，以提供新功能，同时重新使用标准函数、对象和方法。使用 clientlibs 进行自定义时，您可以在 `/apps.` 下创建自己的 clientlib。例如，它可以保存自定义组件所需的代码。
+Clientlib 允许您扩展默认实现，以提供新功能，同时重新使用标准函数、对象和方法。使用clientlibs进行自定义时，您可以在下面创建自己的clientlib `/apps.` 例如，它可以保存自定义组件所需的代码。
 
 请参阅 [在AEMas a Cloud Service上使用客户端库](/help/implementing/developing/introduction/clientlibs.md).
 

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 2%
+source-wordcount: '1512'
+ht-degree: 1%
 
 ---
 
@@ -37,17 +37,17 @@ ht-degree: 2%
 请确保已配置要在表单数据模型中使用的数据源，如中所述 [配置数据源](configure-data-sources.md). 执行以下操作以基于配置的数据源创建表单数据模型：
 
 1. 在 [!DNL Experience Manager] 创作实例，导航到 **[!UICONTROL Forms >数据集成]**.
-1. 点按 **[!UICONTROL 创建>表单数据模型]**.
+1. 选择 **[!UICONTROL 创建>表单数据模型]**.
 1. 在创建表单数据模型对话框中：
 
    * 指定表单数据模型的名称。
    * (**可选**)指定表单数据模型的标题、描述和标记。
-   * (**可选，并且仅在配置了数据源时适用**)点按“ ”旁边的勾号图标 **[!UICONTROL 数据源配置]** 字段并选择您要使用的数据源的云服务所在的配置节点。 它将在下一页上可供选择的数据源列表限制为所选配置节点中的可用数据源列表。 但是，任何 [!DNL Experience Manager] 默认情况下，会列出用户配置文件数据源。 如果不选择配置节点，则会列出所有配置节点的数据源。
+   * (**可选，并且仅在配置了数据源时适用**)选择旁边的勾号图标 **[!UICONTROL 数据源配置]** 字段并选择您要使用的数据源的云服务所在的配置节点。 它将在下一页上可供选择的数据源列表限制为所选配置节点中的可用数据源列表。 但是，任何 [!DNL Experience Manager] 默认情况下，会列出用户配置文件数据源。 如果不选择配置节点，则会列出所有配置节点的数据源。
 
-1. 点按 **[!UICONTROL 下一个]**.
+1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 1. (**仅在配置了数据源时适用**) **[!UICONTROL 选择数据源]** 屏幕列出了可用的数据源（如果有）。 选择要在表单数据模型中使用的数据源。
-1. 点按 **[!UICONTROL 创建]** 在确认对话框中，点按 **[!UICONTROL 打开]** 以打开表单数据模型编辑器。
+1. 选择 **[!UICONTROL 创建]** 在确认对话框中，选择 **[!UICONTROL 打开]** 以打开表单数据模型编辑器。
 
    让我们查看表单数据模型编辑器UI的不同组件。
 
@@ -71,21 +71,21 @@ ht-degree: 2%
 
 执行以下操作以将数据源添加或更新到现有表单数据模型。
 
-1. 转到 **[!UICONTROL Forms >数据集成]**，选择要添加或更新数据源的表单数据模型，然后点击 **[!UICONTROL 属性]**.
+1. 转到 **[!UICONTROL Forms >数据集成]**，选择要添加或更新数据源的表单数据模型，然后选择 **[!UICONTROL 属性]**.
 1. 在表单数据模型属性中，转到 **[!UICONTROL 更新源]** 选项卡。
 
    在 **[!UICONTROL 更新源]** 选项卡：
 
-   * 点按中的浏览图标 **[!UICONTROL 上下文感知配置]** 字段并选择配置节点，您要添加的数据源的云配置驻留在该配置节点上。 如果不选择节点，则仅驻留在 `global` 点按时将列出节点 **[!UICONTROL 添加源]**.
+   * 选择中的浏览图标 **[!UICONTROL 上下文感知配置]** 字段并选择配置节点，您要添加的数据源的云配置驻留在该配置节点上。 如果不选择节点，则仅驻留在 `global` 选择时列出节点 **[!UICONTROL 添加源]**.
 
-   * 要添加新数据源，请点击 **[!UICONTROL 添加源]** 并选择要添加到表单数据模型的数据源。 在中配置的所有数据源 `global` 并显示选定的配置节点（如果有）。
+   * 要添加新数据源，请选择 **[!UICONTROL 添加源]** 并选择要添加到表单数据模型的数据源。 在中配置的所有数据源 `global` 并显示选定的配置节点（如果有）。
 
-   * 要使用相同类型的另一个数据源替换现有数据源，请点按 **[!UICONTROL 编辑]** 图标并从可用数据源列表中选择。
-   * 要删除现有数据源，请点按 **[!UICONTROL 删除]** 图标来访问。 如果将数据源中的数据模型对象添加到表单数据模型中，则“删除”图标将被禁用。
+   * 要使用相同类型的另一个数据源替换现有数据源，请选择 **[!UICONTROL 编辑]** 图标并从可用数据源列表中选择。
+   * 要删除现有数据源，请选择 **[!UICONTROL 删除]** 图标来访问。 如果将数据源中的数据模型对象添加到表单数据模型中，则“删除”图标将被禁用。
 
      ![fdm-properties](assets/fdm-properties.png)
 
-1. 点按 **[!UICONTROL 保存并关闭]** 以保存更新。
+1. 选择 **[!UICONTROL 保存并关闭]** 以保存更新。
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ ht-degree: 2%
 
 [!UICONTROL 表单数据模型] 利用 [Sling上下文感知配置](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) 支持不同的数据源参数以连接不同的数据源 [!DNL Experience Manager] 运行模式。
 
-时间 [!UICONTROL 表单数据模型] 使用云配置来存储参数，当通过源代码管理（Cloud-Manager GIT存储库）签入和部署这些参数时，将使用所有运行模式（开发、暂存和生产）的相同参数创建云配置。 但是，对于测试和生产环境需要拥有不同数据集的用例，我们使用数据源参数（例如数据源URL）作为不同的 [!DNL Experience Manager] 运行模式。
+时间 [!UICONTROL 表单数据模型] 使用云配置来存储参数，当通过源代码管理（Cloud-Manager GIT存储库）签入和部署这些参数时，将使用所有运行模式（开发、暂存和生产）的相同参数创建云配置。 但是，对于测试和生产环境需要拥有不同数据集的用例，我们使用数据源参数（例如，数据源URL）作为不同的 [!DNL Experience Manager] 运行模式。
 
 要实现此目的，您需要创建包含数据源参数 — 值对的OSGi配置。 这将覆盖来自的相同对 [!UICONTROL 表单数据模型] 运行时云配置。 由于OSGi配置默认支持这些运行模式，因此您可以根据运行模式将数据源参数覆盖为不同的值。
 
@@ -120,7 +120,8 @@ ht-degree: 2%
       1. 在本地开发实例上 `/system/console/configMgr`，选择名为的工厂OSGi配置 **[!UICONTROL Apache Sling上下文感知配置覆盖提供程序： OSGi配置]**.
       1. 提供描述。
       1. 选择 **[!UICONTROL 已启用]**.
-      1. 在覆盖下，根据sling覆盖语法中的环境，提供需要更改的字段。 有关详细信息，请参阅 [Apache Sling上下文感知配置 — 覆盖](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如：`cloudconfigs/fdm/{configName}/url="newURL"`。通过选择可添加多个覆盖 **[!UICONTROL +]**.
+      1. 在覆盖下，根据sling覆盖语法中的环境，提供需要更改的字段。 有关详细信息，请参阅 [Apache Sling上下文感知配置 — 覆盖](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). 例如， `cloudconfigs/fdm/{configName}/url="newURL"`.
+通过选择可添加多个覆盖 **[!UICONTROL +]**.
       1. 选择&#x200B;**[!UICONTROL 保存]**。
       1. 要获取OSGi配置JSON，请执行以下步骤 [使用AEM SDK快速入门生成OSGi配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. 将JSON放置在上一步中创建的OSGi工厂配置文件中。

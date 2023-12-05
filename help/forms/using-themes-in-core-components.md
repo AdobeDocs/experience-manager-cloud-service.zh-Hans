@@ -2,9 +2,9 @@
 title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2676'
+source-wordcount: '2610'
 ht-degree: 5%
 
 ---
@@ -377,7 +377,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 登录到您的AEM Forms创作实例。
 
-1. 点按 **Adobe Experience Manager** > **Forms** > **Forms和文档**.
+1. 选择 **Adobe Experience Manager** > **Forms** > **Forms和文档**.
 
 1. 单击 **创建** > **自适应Forms**. 此时将打开创建自适应表单的向导。
 

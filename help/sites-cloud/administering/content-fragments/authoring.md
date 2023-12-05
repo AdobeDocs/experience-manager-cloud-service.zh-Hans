@@ -4,10 +4,10 @@ description: 了解如何为内容片段创作内容，然后根据用途创建�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2267'
-ht-degree: 96%
+source-wordcount: '2266'
+ht-degree: 93%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 96%
    * 在&#x200B;**属性**&#x200B;选项卡中，可更新片段或&#x200B;**变体**&#x200B;的&#x200B;**标题**&#x200B;和&#x200B;**描述**
 * 中央面板：显示所选变体的实际字段和内容
    * 使您可编辑内容
-   * 如果在模型中定义了&#x200B;**选项卡占位符**&#x200B;字段，则将在此处显示这些字段，并可使用这些字段进行导航；它们将水平显示或作为下拉列表显示。
+   * 如果 **制表符占位符** 这些字段是在模型内定义的，显示在此处，并可用于导航；它们将会水平显示或作为下拉列表显示。
 
   >[!NOTE]
   >
@@ -92,7 +92,7 @@ ht-degree: 96%
 
 ### 关注链接 {#follow-links}
 
-在编辑器的各个部分中，您可以看到链接图标。 这可用于打开显示的项目；例如内容片段模型、父引用或所引用的片段：
+在编辑器的各个部分中，您可以看到链接图标。 这可用于打开显示的项目；例如，内容片段模型、父引用或被引用的片段：
 
 ![内容片段编辑器 - 链接图标](assets/cf-authoring-link-icon.png)
 
@@ -472,7 +472,7 @@ ht-degree: 96%
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>选项卡占位符</b></p><p><b>选项卡占位符</b>显示在左侧面板中，但未用实际图标表示。<br>它也显示在中央面板中，要么如下所示以水平方式显示，要么显示在下拉列表中（如果项目太多而无法以水平方式显示）。</p> </td>
+   <td><p><b>选项卡占位符</b></p><p><b>选项卡占位符</b>显示在左侧面板中，但未用实际图标表示。<br>它也显示在中心面板中，水平显示或下拉列表（当有太多内容无法水平显示时）中。</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>

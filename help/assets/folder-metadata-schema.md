@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 10%
+source-wordcount: '1059'
+ht-degree: 9%
 
 ---
 
@@ -70,11 +70,11 @@ ht-degree: 10%
   </tr>
   <tr>
    <td><p>单行文本</p> </td>
-   <td><p> 添加单行文本属性。它存储为字符串。</p> </td>
+   <td><p> 添加单行文本属性。 它存储为字符串。</p> </td>
   </tr>
   <tr>
    <td><p>多值文本</p> </td>
-   <td><p> 添加多值文本属性。它存储为字符串数组。</p> </td>
+   <td><p> 添加多值文本属性。 它存储为字符串数组。</p> </td>
   </tr>
   <tr>
    <td><p>数字</p> </td>
@@ -90,7 +90,7 @@ ht-degree: 10%
   </tr>
   <tr>
    <td><p>标准标记</p> </td>
-   <td><p> 添加标记. </p> </td>
+   <td><p> 添加标记。 </p> </td>
   </tr>
   <tr>
    <td><p>隐藏字段</p> </td>

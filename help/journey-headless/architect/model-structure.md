@@ -2,10 +2,10 @@
 title: 了解如何在 AEM 中创建内容片段模型
 description: 了解使用内容片段模型对 Headless CMS 进行内容建模的概念和机制。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 96%
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 创建内容片段模型 {#creating-content-fragment-models}
 
-之后，可以创建内容片段模型并定义结构。可以在&#x200B;**工具** -> **常规** -> **内容片段模型**&#x200B;下完成此操作。
+之后，可以创建内容片段模型并定义结构。这可以在下完成 **工具** > **常规** > **内容片段模型**.
 
 ![工具中的内容片段模型](assets/cfm-tools.png)
 
@@ -53,7 +53,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 定义内容片段模型 {#defining-content-fragment-models}
 
-首次打开新模型时，您会看到 — 左边有一个大空格，以及一个 **数据类型** 在右侧：
+当您首次打开一个新模型时，您将看到左侧有一个大的空白区域，右侧有一个较长的&#x200B;**数据类型**&#x200B;列表：
 
 ![空白模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
 

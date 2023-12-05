@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service日志记录
 description: 了解如何使用AEMas a Cloud Service日志记录功能配置中央日志记录服务的全局参数、各个服务的特定设置以及如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2720'
 ht-degree: 9%
 
 ---
@@ -190,14 +190,14 @@ AEM Java日志被定义为OSGi配置，因此使用运行模式文件夹定位�
 
 AEMas a Cloud Service的HTTP请求日志记录可按时间顺序深入分析向AEM发出的HTTP请求及其HTTP响应。 此日志有助于了解向AEM发出的HTTP请求以及处理和响应这些请求的顺序。
 
-了解此日志的关键是按其ID映射HTTP请求和响应对，这些ID由括号中的数值表示。 请注意，请求及其相应响应在日志中通常具有其他HTTP请求和响应。
+了解此日志的关键是按其ID映射HTTP请求和响应对，这些ID由括号中的数值表示。 请求及其相应响应在日志中通常具有其他HTTP请求和响应。
 
 **示例日志**
 
 ```
-29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:21 +0000 [137] > POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
-29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+29/Apr/2020:19:14:22 +0000 [139] > GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
 29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ...
@@ -285,7 +285,7 @@ AEMas a Cloud Service在发布上为Apache Web Server和Dispatcher层提供三�
 
 ### Apache HTTPD Web Server访问日志 {#apache-httpd-web-server-access-log}
 
-Apache HTTP Web Server访问日志为到达发布层的Web服务器/Dispatcher的每个HTTP请求提供语句。 请注意，从上游CDN提供的请求不会反映在这些日志中。
+Apache HTTP Web Server访问日志为到达发布层的Web服务器/Dispatcher的每个HTTP请求提供语句。 从上游CDN提供的请求不会反映在这些日志中。
 
 请参阅中有关错误日志格式的信息 [官方apache文档](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -454,7 +454,7 @@ Define REWRITE_LOG_LEVEL debug
 </tr>
 <tr>
 <td>持续时间</td>
-<td>1949 毫秒</td>
+<td>1949毫秒</td>
 </tr>
 <tr>
 <td>场</td>
@@ -545,7 +545,7 @@ CDN日志不同于其他日志，它遵循JSON格式。
 | *method* | 客户端发送的 HTTP 方法，例如“GET”或“POST”。 |
 | *res_ctype* | 用于指示资源的原始媒体类型的 Content-Type。 |
 | *cache* | 缓存的状态。可能的值为 HIT、MISS 或 PASS |
-| *状态* | 整数值形式的 HTTP 状态代码。 |
+| *status* | 整数值形式的 HTTP 状态代码。 |
 | *res_age* | 响应已缓存（在所有节点中）的时间量（以秒为单位）。 |
 | *pop* | CDN 缓存服务器的数据中心。 |
 | *rules* | 任何匹配项的名称 [流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 和WAF标志，还指示匹配是否导致了块。 如果没有匹配的规则，则为空。 |
@@ -611,7 +611,7 @@ Apache层日志（包括Dispatcher）位于保存Dispatcher的Docker容器中。
 
 与发送到Splunk的日志关联的网络带宽被视为客户网络I/O使用的一部分。
 
-请注意，Splunk转发尚不支持CDN日志。
+Splunk转发尚不支持CDN日志。
 
 ### 启用Splunk转发 {#enabling-splunk-forwarding}
 

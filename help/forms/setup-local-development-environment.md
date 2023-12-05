@@ -2,10 +2,10 @@
 title: 如何为AEM Forms设置本地开发环境？
 description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2846'
-ht-degree: 3%
+source-wordcount: '2682'
+ht-degree: 2%
 
 ---
 
@@ -89,7 +89,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 1. 导航至 **[!UICONTROL AEMas a Cloud Service]** 选项卡。
 1. 按发布日期降序排序。
 1. 单击最新的Adobe Experience Manager as a Cloud Service SDK、Experience Manager Forms功能存档(AEM Forms加载项)、表单引用资源或Forms Designer。
-1. 查看并接受EULA。 点按 **[!UICONTROL 下载]** 按钮。
+1. 查看并接受EULA。 选择&#x200B;**[!UICONTROL 下载]**&#x200B;按钮。
 
 ## 为AEM项目设置开发工具 {#setup-development-tools-for-AEM-projects}
 
@@ -323,8 +323,7 @@ Dispatcher上的缓存允许 [!DNL AEM Forms] 在客户端预填充自适应Form
 ### 有关缓存的注意事项 {#considerations-about-caching}
 
 * 调度程序缓存允许 [!DNL AEM Forms] 在客户端预填充自适应Forms。 它提高了预填充表单的渲染速度。
-* 
-默认情况下禁用缓存受保护内容功能。要启用该功能，您可以按照 [缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 文章
+* 默认情况下，缓存受保护内容功能处于禁用状态。 要启用该功能，您可以按照 [缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=en) 文章
 * Dispatcher可能无法使某些自适应Forms和相关自适应Forms失效。 要解决此类问题，请参阅 [[!DNL AEM Forms] 缓存](troubleshooting-caching-performance.md) 在疑难解答部分。
 * 缓存本地化的自适应Forms：
    * 使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 请求自适应表单的本地化版本，而不是 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
@@ -388,7 +387,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 1. 下载表单数据模型
 
-1. 导出可编辑的模板、云配置和工作流模型。 要从现有SDK中导出前面提到的所有项目，请创建 [CRX包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hans) 的过滤器：
+1. 导出可编辑的模板、云配置和工作流模型。 要从现有SDK中导出前面提到的所有项目，请创建 [CRX包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html) 的过滤器：
 
    * /conf/ReferenceEditableTemplates
    * /conf/global/settings/cloudconfigs

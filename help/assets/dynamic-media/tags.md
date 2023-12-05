@@ -1,18 +1,18 @@
 ---
-title: 将 Dynamic Media 查看器与 Analytics 和 Adobe Experience Platform 标记集成
+title: 将Dynamic Media查看器与Adobe Analytics和Experience Platform标记集成
 description: 了解适用于Experience Platform标记和Dynamic Media Viewer 5.13的Dynamic Media Viewer扩展。它允许Adobe Analytics和Platform Tags的客户在其Experience PlatformTags配置中使用特定于Dynamic Media Viewer的事件和数据。
 contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '6661'
-ht-degree: 7%
+source-wordcount: '6701'
+ht-degree: 6%
 
 ---
 
-# 将 Dynamic Media 查看器与 Analytics 和 Adobe Experience Platform 标记集成 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# 将Dynamic Media查看器与Adobe Analytics和Experience Platform标记集成 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Dynamic Media Viewer与Adobe Analytics和Experience Platform标记有何集成？ {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -506,7 +506,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 
 Experience Platform标记中的资产是一个命名配置，可将所有设置保留在一起。 将生成配置设置库并发布到不同的环境级别（开发、暂存和生产）。
 
-另请参阅 [配置tap属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
+另请参阅 [配置选择属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 **要在Experience Platform标签中创建资产，请执行以下操作：**
 
@@ -555,7 +555,7 @@ Experience Platform标签中所有可用的扩展都列在 **[!UICONTROL 扩展]
 
 请参阅 [Adobe Analytics扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
-* (可选. 仅在需要视频跟踪时才需要) *用于音频和视频的Adobe Medium Analytics* 扩展
+* (可选。 仅在需要视频跟踪时才需要) *用于音频和视频的Adobe Medium Analytics* 扩展
 
 填写跟踪服务器字段。 的跟踪服务器 *用于音频和视频的Adobe Medium Analytics* 扩展不同于用于Adobe Analytics的跟踪服务器。 它遵循模板 `<trackingNamespace>.hb.omtrdc.net`，其中 `<trackingNamespace>` 是来自配置电子邮件的信息。
 
@@ -655,7 +655,7 @@ Experience Platform标记可能具有多个开发环境、一个暂存环境和�
 
 <!-- Prerequisites list below should be verified by Sasha -->
 
-前提条件:
+先决条件：
 
 * Experience Manager同时运行创作实例和发布实例。
 * Experience Manager创作节点是在Dynamic Media中设置的。 <!-- Scene7 run mode (dynamicmedia_s7) -->
@@ -748,7 +748,8 @@ Experience Manager配置包含以下两个主要步骤：
    * **[!UICONTROL 标题]**  — 输入描述性帐户标题。
    * **[!UICONTROL 授权服务器]**  — 返回之前打开的集成详细信息页面。 选择 **[!UICONTROL JWT]** 选项卡。 复制服务器名称（不含路径），如下面突出显示的那样。
 
-   返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将名称粘贴到相应的字段中。例如， `https://ims-na1.adobelogin.com/`
+   返回到 **[!UICONTROL 帐户]** 页面，然后将名称粘贴到相应的字段中。
+例如， `https://ims-na1.adobelogin.com/`
 （示例服务器名称仅用于解释）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

@@ -2,9 +2,9 @@
 title: SPA 简介和演练
 description: 本文介绍了 SPA 的概念，演练了如何使用基本 SPA 应用程序进行创作，并展示了它与底层 AEM SPA Editor 的关系。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2045'
 ht-degree: 93%
 
 ---
@@ -38,7 +38,7 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本�
 
 >[!CAUTION]
 >
->本文档仅将 [WKND SPA Project 应用程序](https://github.com/adobe/aem-guides-wknd-spa)用于演示目的。不应将它用于任何项目工作。
+>本文档仅将 [WKND SPA Project 应用程序](https://github.com/adobe/aem-guides-wknd-spa)用于演示目的。请勿将其用于任何项目工作。
 
 >[!TIP]
 >

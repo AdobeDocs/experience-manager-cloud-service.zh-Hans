@@ -2,10 +2,10 @@
 title: 编辑页面内容
 description: 创建页面后，您可以编辑其内容，以进行所需的更新
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 95%
+source-wordcount: '2974'
+ht-degree: 94%
 
 ---
 
@@ -322,7 +322,7 @@ ht-degree: 95%
 
 要移动段落组件，请执行以下操作：
 
-1. 通过点按住或单击并按住来选择要移动的段落。
+1. 选择段落以按住select或click-and-hold键移动。
 1. 将段落拖到新位置。AEM 指示该段落可以存放的位置。将其放在您想要的位置。
 
    ![移动组件](/help/sites-cloud/authoring/assets/editing-moving-component.png)
@@ -541,5 +541,5 @@ AEM 会按照您执行操作的顺序来存储这些操作的历史记录，这�
 >
 >* 对文件和图像的更改执行撤消和重做操作需要特殊的权限。
 >* 对文件和图像进行更改的历史记录将保留至少 10 个小时。但在超过此时间后，将无法保证可以撤消这些更改。您的管理员可以更改 10 个小时的默认保留时间。
->* 系统管理员可以根据您实例的要求，配置撤消/重做功能的各个方面。
+>* 系统管理员可以根据实例的要求配置撤消/重做功能的各个方面。
 <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

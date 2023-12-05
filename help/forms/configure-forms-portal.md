@@ -2,9 +2,9 @@
 title: 如何在Experience Manager Sites页面上创建Forms门户？
 description: 了解如何在AEM Sites页面上创建Forms Portal并使用现成的核心组件。
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1785'
 ht-degree: 4%
 
 ---
@@ -89,7 +89,7 @@ AEM Forms提供了以下开箱即用的门户组件：
 在执行这些步骤之前，请确保您拥有Azure存储帐户和访问密钥，以授权对的访问 [!DNL Azure] 存储帐户。
 
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**.
-1. 选择一个文件夹以创建配置，然后点击 **[!UICONTROL 创建]**.
+1. 选择一个文件夹以创建配置，然后选择 **[!UICONTROL 创建]**.
 1. 在中指定配置的标题 **[!UICONTROL 标题]** 字段。
 1. 指定 [!DNL Azure] 中的存储帐户 **[!UICONTROL Azure存储帐户]** 字段。
 
@@ -100,7 +100,7 @@ AEM Forms提供了以下开箱即用的门户组件：
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**.
 1. 在 **[!UICONTROL Forms门户]** 部分，选择 **[!UICONTROL Azure]** 从 **[!UICONTROL 存储]** 下拉列表。
 1. 指定 [Azure存储配置的配置路径](#create-azure-storage-configuration) 在 **[!UICONTROL 存储配置路径]** 字段。
-1. 点按 **[!UICONTROL Publish]** 然后点击 **[!UICONTROL 保存]** 以保存配置。
+1. 选择 **[!UICONTROL Publish]** 然后选择 **[!UICONTROL 保存]** 以保存配置。
 
 ## 启用Forms Portal组件 {#enable-forms-portal-components}
 
@@ -112,11 +112,11 @@ AEM Forms提供了以下开箱即用的门户组件：
 
 您可以通过添加和配置门户组件，在使用AEM创作的网站上创建和自定义Forms门户。 确保 [组件已启用](#enable-forms-portal-components) 在Forms门户中使用它们之前。
 
-要添加组件，请将组件从“组件”窗格拖放到页面上的布局容器中，或点击布局容器上的添加图标并从以下位置添加组件： [!UICONTROL 插入新组件] 对话框。
+要添加组件，请将组件从“组件”窗格拖放到页面上的布局容器中，或选择布局容器上的添加图标并从以下位置添加组件： [!UICONTROL 插入新组件] 对话框。
 
 ### 配置草稿和提交组件 {#configure-drafts-submissions-component}
 
-草稿和提交组件显示另存为草稿以供稍后完成和提交的表单。 要配置，请点按组件，然后点按 ![“配置”图标](assets/configure_icon.png). 在 [!UICONTROL 草稿和提交] 对话框，请指定标题以将表单列为草稿或已提交的表单。 另选择组件应使用卡片格式还是列表格式列出草稿表单或已提交的表单。
+草稿和提交组件显示另存为草稿以供稍后完成和提交的表单。 要配置，请选择组件，然后选择 ![“配置”图标](assets/configure_icon.png). 在 [!UICONTROL 草稿和提交] 对话框，请指定标题以将表单列为草稿或已提交的表单。 另选择组件应使用卡片格式还是列表格式列出草稿表单或已提交的表单。
 
 ![“草稿”图标](assets/drafts-component.png)
 
@@ -128,7 +128,7 @@ AEM Forms提供了以下开箱即用的门户组件：
 
 ![“搜索和列表程序”图标](assets/search-and-lister-component.png)
 
-要配置，请点按组件，然后点按 ![“配置”图标](assets/configure_icon.png). 此 [!UICONTROL 搜索和列表程序] 对话框打开。
+要配置，请选择组件，然后选择 ![“配置”图标](assets/configure_icon.png). 此 [!UICONTROL 搜索和列表程序] 对话框打开。
 
 1. 在 [!UICONTROL 显示] 选项卡，配置以下内容：
    * 在 **[!UICONTROL 标题]**，指定搜索和列表程序组件的标题。 指示性标题使用户能够在表单列表中执行快速搜索。
@@ -140,7 +140,7 @@ AEM Forms提供了以下开箱即用的门户组件：
 
 ### 配置链接组件 {#configure-link-component}
 
-利用链接组件，可在页面上提供指向自适应表单的链接。 要配置，请点按组件，然后点按 ![“配置”图标](assets/configure_icon.png). 此 [!UICONTROL 编辑链接组件] 对话框打开。
+利用链接组件，可在页面上提供指向自适应表单的链接。 要配置，请选择组件，然后选择 ![“配置”图标](assets/configure_icon.png). 此 [!UICONTROL 编辑链接组件] 对话框打开。
 
 1. 在 [!UICONTROL 显示] 选项卡中提供链接标题和工具提示，以便于识别链接所表示的表单。
 1. 在 [!UICONTROL 资源信息] 选项卡，指定存储资产的存储库路径。
@@ -151,13 +151,14 @@ AEM Forms提供了以下开箱即用的门户组件：
 您可以将配置为仅在所有收件人都完成签名仪式后提交自适应表单。 执行以下步骤，使用Adobe Sign配置设置。
 
 1. 在创作实例中，以编辑模式打开自适应表单。
-1. 从左窗格中，点按属性图标，然后展开 **[!UICONTROL 电子签名]** 选项。
+1. 从左窗格中，选择属性图标，然后展开 **[!UICONTROL 电子签名]** 选项。
 1. 选择 **[!UICONTROL 启用Adobe Sign]**. 将显示各种配置选项。
 1. 在 [!UICONTROL 提交表单] 部分，选择 **[!UICONTROL 在每个收件人完成签字仪式后]** 用于配置“提交表单”操作的选项，在该操作中，表单将首先发送给所有收件人进行签名。 所有收件人签署表单后，才提交表单。
 
 ## 将自适应Forms另存为草稿 {#save-adaptive-forms-as-drafts}
 
 您可以将表单另存为草稿，以便稍后完成。 将表单另存为草稿的方式有两种：
+
 * 在表单组件上创建“保存表单”规则，例如按钮。 单击按钮时，规则将触发，并且表单将保存为草稿。
 * 启用自动保存功能，该功能按照指定的事件或在配置的时间间隔后保存表单。
 
@@ -166,19 +167,19 @@ AEM Forms提供了以下开箱即用的门户组件：
 要在表单组件上创建“保存表单”规则（例如按钮），请执行以下步骤：
 
 1. 在创作实例中，以编辑模式打开自适应表单。
-1. 从左窗格中，点按 ![“组件”图标](assets/components_icon.png) 并拖动 [!UICONTROL 按钮] 组件添加到表单。
-1. 点按 [!UICONTROL 按钮] 组件，然后点按 ![“配置”图标](assets/configure_icon.png).
-1. 点按 [!UICONTROL 编辑规则] 图标以打开规则编辑器。
-1. 点按 **[!UICONTROL 创建]** 以配置和创建规则。
+1. 从左窗格中，选择 ![“组件”图标](assets/components_icon.png) 并拖动 [!UICONTROL 按钮] 组件添加到表单。
+1. 选择 [!UICONTROL 按钮] 组件，然后选择 ![“配置”图标](assets/configure_icon.png).
+1. 选择 [!UICONTROL 编辑规则] 图标以打开规则编辑器。
+1. 选择 **[!UICONTROL 创建]** 以配置和创建规则。
 1. 在 [!UICONTROL 时间] 部分，选择“已单击”，然后在 [!UICONTROL 则] 选择“保存表单”选项。
-1. 点按 **[!UICONTROL 完成]** 以保存规则。
+1. 选择 **[!UICONTROL 完成]** 以保存规则。
 
 ### 启用自动保存 {#enable-auto-save}
 
 您可以为自适应表单配置自动保存功能，如下所示：
 
 1. 在创作实例中，以编辑模式打开自适应表单。
-1. 从左窗格中，点按 ![“属性”图标](assets/configure_icon.png) 并展开 [!UICONTROL 自动保存] 选项。
+1. 从左窗格中，选择 ![“属性”图标](assets/configure_icon.png) 并展开 [!UICONTROL 自动保存] 选项。
 1. 选择 **[!UICONTROL 启用]** 复选框，以启用表单的自动保存。 您可以配置以下内容：
 * 默认情况下， [!UICONTROL 自适应表单事件] 设置为“true”，这意味着表单将在每个事件后自动保存。
 * 在 [!UICONTROL 触发器]，配置以根据事件的发生或在特定的时间间隔后触发自动保存。

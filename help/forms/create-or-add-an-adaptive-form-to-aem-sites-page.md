@@ -4,9 +4,9 @@ description: 了解如何在AEM Sites页面上创建或添加自适应表单。 
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3208'
+source-wordcount: '3177'
 ht-degree: 20%
 
 ---
@@ -53,12 +53,12 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
 * **[将自适应表单转换为体验片段](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)：** 将添加到AEM Sites页面的自适应表单转换为体验片段，以便在多个AEM Sites页面中重用该表单。
 
-* **[根据批准的模板创建表单并将其添加到AEM Sites页面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** 您可以利用预批准的模板快速创建符合您组织的品牌准则和设计标准的自适应Forms。 选项仅适用于使用自适应Forms编辑器或自适应Forms — 嵌入组件创建的自适应Forms 。
+* **[根据批准的模板创建表单并将其添加到AEM Sites页面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-form-using-adaptive-form-wizzard-aem-sites)** 您可以使用预批准的模板快速创建符合您组织的品牌准则和设计标准的自适应Forms。 选项仅适用于使用自适应Forms编辑器或自适应Forms — 嵌入组件创建的自适应Forms 。
 
 * **[将现有表单添加到AEM Sites页面：](/help/forms/embed-adaptive-form-aem-sites.md#embed-an-adaptive-form-in-sites-editor)** 您可以将已创建的表单轻松集成到网站中，从而使访客能够直接与表单进行交互。 选项仅适用于使用自适应Forms编辑器或自适应Forms — 嵌入组件创建的自适应Forms 。
 
 
-* **将多个表单添加到AEM Sites页面或体验片段：**  您可以在AEM Sites页面上创建或添加多个自适应Forms，以根据用户的偏好和要求为其提供多个选择。 这些表单可以包括从头开始创建的全新表单和现有的表单。您可以使用 **[!UICONTROL 自适应表单容器]** 多次组件，以在AEM Sites页面中添加自适应Forms。 您可以使用 **[!UICONTROL 自适应Forms — 嵌入]** 在AEM Sites页面中多次使用组件，仅当 **[!UICONTROL 表单覆盖框架的整个宽度]** 已选中选项。 如果 **[!UICONTROL 表单覆盖框架的整个宽度]** 选项未选中，AEM Sites页面仅支持一个不带iframe的自适应表单。 要添加更多自适应Forms，请使用 **[!UICONTROL 自适应Forms — 嵌入]** 组件，选择 **[!UICONTROL 表单覆盖框架的整个宽度]** 选项。
+* **将多个表单添加到AEM Sites页面或体验片段：**  您可以在AEM Sites页面上创建或添加多个自适应Forms，以根据用户的偏好和要求为其提供多个选择。 这些表单可以是从头开始的新表单和现有表单的组合。 您可以使用 **[!UICONTROL 自适应表单容器]** 多次组件，以在AEM Sites页面中添加自适应Forms。 您可以使用 **[!UICONTROL 自适应Forms — 嵌入]** 在AEM Sites页面中多次使用组件，仅当 **[!UICONTROL 表单覆盖框架的整个宽度]** 已选中选项。 如果 **[!UICONTROL 表单覆盖框架的整个宽度]** 选项未选中，AEM Sites页面仅支持一个不带iframe的自适应表单。 要添加更多自适应Forms，请使用 **[!UICONTROL 自适应Forms — 嵌入]** 组件，选择 **[!UICONTROL 表单覆盖框架的整个宽度]** 选项。
 
 ## 在AEM Sites页面或AEM Experience Fragment中创建自适应表单的注意事项 {#consideration}
 
@@ -195,18 +195,18 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
 ## 在AEM Sites页面或体验片段中为表单配置提交操作 {#configure-submit-action-for-form}
 
-提交操作让您选择通过自适应表单捕获的数据的目标。当用户单击自适应表单上的提交按钮时，将触发此操作。自适应表单包括一些现成的提交操作。 您还可以扩展默认提交操作以创建自己的自定义提交操作。 要为表单配置提交操作，请执行以下操作：
+提交操作让您选择通过自适应表单捕获的数据的目标。当用户单击自适应表单上的提交按钮时，会触发该事件。 自适应表单包括一些现成的提交操作。 您还可以扩展默认提交操作以创建自己的自定义提交操作。 要为表单配置提交操作，请执行以下操作：
 
 1. 打开包含自适应表单的AEM页面编辑器或体验片段。
 1. 打开内容树，然后选择 **[!UICONTROL 自适应Forms容器]** ，用于托管您的自适应表单。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。
 1. 单击自适应表单容器属性 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 图标。 此时将打开用于配置提交操作的自适应表单容器对话框。
    ![单击扳手图标，打开自适应表单容器对话框，以配置自适应表单的提交操作](/help/forms/assets/adaptive-forms-container.png)
-1. 根据要求选择并配置提交操作。有关提交操作的详细信息，请参阅 [自适应表单提交操作](/help/forms/configuring-submit-actions.md)
+1. 根据您的要求，选择并配置提交操作。 有关提交操作的详细信息，请参阅 [自适应表单提交操作](/help/forms/configuring-submit-actions.md)
 
 
 ## 在AEM Sites页面或体验片段中为表单配置架构或表单数据模型 {#configure-schema-or-data-model-for-form}
 
-您可以使用表单数据模型将表单连接到数据源，以根据用户操作发送和接收数据。 您还可以将表单连接到JSON架构，以预定义格式接收提交的数据。 根据要求，将表单连接到JSON架构或表单数据模型：
+您可以使用表单数据模型将表单连接到数据源，以根据用户操作来发送和接收数据。您还可以将表单连接到 JSON 架构，以接收预定义格式的提交数据。根据要求，将表单连接到 JSON 架构或表单数据模型：
 
 * [创建JSON架构并上传到您的环境](/help/forms/adaptive-form-json-schema-form-model.md)  或，
 * [创建表单数据模型](/help/forms/create-form-data-models.md)
@@ -239,8 +239,8 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 1. 打开内容树，然后选择 **[!UICONTROL 自适应Forms容器]** ，用于托管您的自适应表单。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。
 1. 单击自适应表单容器属性 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 图标。 此时将打开用于配置数据模型的自适应表单容器对话框。
    ![单击扳手图标以打开自适应表单容器对话框，从而配置自适应表单的预填充服务](/help/forms/assets/adaptive-forms-container.png)
-1. 选择表单数据模型. 打开 **[!UICONTROL 基本]** 选项卡。 在预填充服务中，选择 **[!UICONTROL 表单数据模型预填充服务]**.
-1. 单击&#x200B;**[!UICONTROL 完成]**。您的自适应表单现在配置为使用表单数据模型预填充。 您现在可以使用 [规则编辑器](rule-editor.md) 创建规则以预填充表单的字段。
+1. 选择表单数据模型。 打开 **[!UICONTROL 基本]** 选项卡。 在预填充服务中，选择 **[!UICONTROL 表单数据模型预填充服务]**.
+1. 单击 **[!UICONTROL 完成]**. 您的自适应表单现在配置为使用表单数据模型预填充。 您现在可以使用 [规则编辑器](rule-editor.md) 创建规则以预填充表单的字段。
 
 
 ## 将用户重定向到页面或在提交表单时显示感谢消息

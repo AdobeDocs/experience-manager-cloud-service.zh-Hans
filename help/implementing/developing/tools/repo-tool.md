@@ -2,9 +2,9 @@
 title: AEM Repo 工具
 description: AEM Repo Tool是一种简单的解决方案，可通过类似于FTP的命令行在本地文件系统和AEM服务器之间传输JCR内容。
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '245'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 AEM Repo Tool是一种简单的解决方案，可通过类似于FTP的命令行在本地文件系统和AEM服务器之间传输JCR内容。 AEM Repo工具类似于 [Jackrabbit FileVault Maven插件](https://jackrabbit.apache.org/filevault-package-maven-plugin)，但速度更快，具有最小的依赖关系，并且是一个简单的bash脚本。
 
-此工具简化了开发人员的文件传输，还可以集成到Eclipse和IntelliJ中，以提高开发效率。
+此工具简化了开发人员传输文件的过程，还可集成到Eclipse和IntelliJ中，以提高开发效率。
 
 ## 概述 {#overview}
 

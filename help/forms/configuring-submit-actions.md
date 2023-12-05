@@ -1,11 +1,11 @@
 ---
-title: 如何配置自适应表单的提交操作?
+title: 如何为自适应表单配置提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 0e6c4e6745a03e0d48c535e2e113d2a7e5ff4e78
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3859'
-ht-degree: 80%
+source-wordcount: '3805'
+ht-degree: 79%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 80%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | 本文 |
 
-**应用于**：✔️用自适应表单基础组件。 ❌ [自适应表单核心组件](/help/forms/configure-submit-actions-core-components.md).  Adobe 建议使用核心组件[将自适应表单添加到 AEM Sites 页面](create-or-add-an-adaptive-form-to-aem-sites-page.md)或[创建独立的自适应表单](creating-adaptive-form-core-components.md)。
+**应用于**：✔️用自适应表单基础组件。 ❌ [自适应表单核心组件](/help/forms/configure-submit-actions-core-components.md). Adobe建议使用核心组件来 [将自适应Forms添加到AEM Sites页面](create-or-add-an-adaptive-form-to-aem-sites-page.md) 或 [创建独立的自适应Forms](creating-adaptive-form-core-components.md).
 
 当用户单击 **[!UICONTROL 提交]** 按钮。 Formsas a Cloud Service提供了以下开箱即用的提交操作。
 
@@ -170,7 +170,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## 提交到 SharePoint {#submit-to-sharedrive}
 
-**[!UICONTROL 提交到 SharePoint]**&#x200B;提交操作将自适应表单与 Microsoft® SharePoint 存储连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的 Microsoft® Sharepoint 存储。
+**[!UICONTROL 提交到 SharePoint]**&#x200B;提交操作将自适应表单与 Microsoft® SharePoint 存储连接起来。您可以将表单数据文件、附件或记录文档提交到连接的Microsoft® Sharepoint存储。
 
 通过使用提交到SharePoint，您可以：
 * [将自适应表单连接到SharePoint文档库](#connect-af-sharepoint-doc-library)
@@ -264,7 +264,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 1. 单击&#x200B;**[!UICONTROL 连接]**。连接成功后，将显示`Connection Successful`消息。
 1. 选择 **[!UICONTROL SharePoint站点]** 和 **[!UICONTROL SharePoint列表]** 下拉列表中。
-1. 点按 **[!UICONTROL 创建]** 创建Microsoft® SharePointList的云配置。
+1. 选择 **[!UICONTROL 创建]** 创建Microsoft® SharePointList的云配置。
 
 
 #### 在自适应表单中使用表单数据模型提交 {#use-submit-using-fdm}

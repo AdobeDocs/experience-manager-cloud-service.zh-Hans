@@ -3,10 +3,10 @@ title: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
 description: 将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 17%
+source-wordcount: '1459'
+ht-degree: 7%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 17%
 
 AEMas a Cloud Service中的Apache和Dispatcher配置与AMS配置非常相似。 主要区别包括：
 
-* 在AEMas a Cloud Service中，不能使用某些Apache指令(例如 `Listen` 或 `LogLevel`)
+* 在AEMas a Cloud Service中，不能使用某些Apache指令(例如， `Listen` 或 `LogLevel`)
 * 在AEMas a Cloud Service中，只能将Dispatcher配置的某些部分放入包含文件中，它们的命名很重要。 例如，要跨不同主机重用的过滤器规则必须放在一个名为的文件中 `filters/filters.any`. 有关更多信息，请参阅参考页面。
 * 在AEMas a Cloud Service中，存在额外的验证，以允许使用编写筛选规则 `/glob` 以防止出现安全问题。 因为 `deny *` 使用，而不是 `allow *` （不能使用），客户可以从本地运行Dispatcher以及执行试验和错误测试、查看日志以准确了解Dispatcher过滤器阻止了哪些路径以便添加这些路径中受益。
 
@@ -52,10 +52,9 @@ Managed Services与AEMas a Cloud Service中的Dispatcher配置结构存在差异
 </VirtualHost>
 ```
 
-，
-则请移除或注释该部分。这些部分中的语句将不会得到处理，但是如果保留它们，您可能最终仍会对其进行编辑，并且不会有任何效果，这可能会造成混淆。
+请删除或注释它们。 这些部分中的语句将不会得到处理，但如果您保留它们，您最终可能仍会对其进行编辑，并且不会有任何效果，这会造成混淆。
 
-### 检查 rewrites
+### 检查重写
 
 输入目录 `conf.d/rewrites`.
 
@@ -65,7 +64,7 @@ Managed Services与AEMas a Cloud Service中的Dispatcher配置结构存在差异
 
 但是，如果该文件夹包含多个特定于虚拟主机的文件，则应将其内容复制到 `Include` 在虚拟主机文件中引用它们的语句。
 
-### 检查 variables
+### 检查变量
 
 输入目录 `conf.d/variables`.
 
@@ -107,7 +106,7 @@ $ validator httpd .
 
 中的所有场 `conf.dispatcher.d/enabled_farms` 必须重命名以匹配模式 `*.farm`，例如，名为的场文件 `customerX_farm.any` 应重命名 `customerX.farm`.
 
-### 检查 cache
+### 检查缓存
 
 输入目录 `conf.dispatcher.d/cache`.
 
@@ -131,7 +130,7 @@ $ validator httpd .
 $include "../cache/default_invalidate.any"
 ```
 
-### 检查 client headers
+### 检查客户端标头
 
 输入目录 `conf.dispatcher.d/clientheaders`.
 
@@ -156,7 +155,7 @@ $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_common_clientheaders.an
 $include "../clientheaders/default_clientheaders.any"
 ```
 
-### 检查 filter
+### 检查筛选器
 
 输入目录 `conf.dispatcher.d/filters`.
 
@@ -181,7 +180,7 @@ $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
 $include "../filters/default_filters.any"
 ```
 
-### 检查 renders
+### 检查renders
 
 输入目录 `conf.dispatcher.d/renders`.
 
@@ -195,7 +194,7 @@ $include "../filters/default_filters.any"
 $include "../renders/default_renders.any"
 ```
 
-### 检查 virtualhosts
+### 检查虚拟主机
 
 重命名目录 `conf.dispatcher.d/vhosts` 到 `conf.dispatcher.d/virtualhosts` 然后输入。
 
@@ -244,8 +243,7 @@ $ validator dispatcher .
 validator full -d out .
 ```
 
-
-这将验证完整配置并在 中生成部署信息`out`
+这将验证完整配置并在中生成部署信息 `out`
 
 ### 步骤2：在Docker映像中使用该部署信息启动Dispatcher
 
@@ -259,6 +257,6 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ### 使用新的Dispatcher配置
 
-恭喜！如果验证器不再报告任何问题，并且 Docker 容器启动时没有出现任何故障或警告，则可以将配置移动到 Git 存储库的 `dispatcher/src` 子目录中。
+恭喜！如果验证器不再报告任何问题，并且Docker容器启动时未出现任何故障或警告，则可以将配置移动到 `dispatcher/src` Git存储库的子目录。
 
 **使用AMS Dispatcher配置版本1的客户应联系客户支持，帮助他们从版本1迁移到版本2，以便遵循上面的说明。**

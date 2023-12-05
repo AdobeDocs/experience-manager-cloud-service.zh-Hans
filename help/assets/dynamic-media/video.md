@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '9461'
+source-wordcount: '9454'
 ht-degree: 2%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 2%
    * 如果您使用的是第三方Web内容管理系统，则可以将视频链接或嵌入到网页。
 
       * 使用URL集成视频：
-        [将 URL 关联到您的 Web 应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+        [将URL链接到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * 在网页上使用嵌入代码集成视频：
         [在网页上嵌入视频查看器](/help/assets/dynamic-media/embed-code.md).
@@ -401,7 +401,7 @@ VBR编码时间较长，但产生的结果最理想；媒体文件的质量更�
 
 | 视频类型 | 宽x高 | 宽度比例 | 高宽比 |
 |--- |--- |--- |--- |
-| 源 | 1920x1080 | 1 | 1 |
+| 源 | 1920 x 1080 | 1 | 1 |
 | 已编码 | 960 x 540 | 2 | 2 |
 | 已编码 | 640 x 360 | 3 | 3 |
 | 已编码 | 480 x 270 | 4 | 4 |
@@ -1063,7 +1063,7 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
    if the directory panel is not visible, you may need to select the >> icon to the left of the Home tab.
 
-1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
+1. On the lower-right panel, in the Properties tab, double-select `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
 
     * Select the plus sign (+) icon to add one or more interval value fields. You may need to scroll to the bottom of the dialog box to see the icon.

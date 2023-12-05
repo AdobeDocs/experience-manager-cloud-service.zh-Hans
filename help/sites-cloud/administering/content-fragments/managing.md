@@ -4,10 +4,10 @@ description: 了解如何从控制台和编辑器管理 AEM 内容片段，这�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2622'
-ht-degree: 89%
+source-wordcount: '2617'
+ht-degree: 88%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 89%
    * 您可以选择树的特定分支
    * 可以调整其大小以显示嵌套文件夹
 * 主/右侧面板 – 从此处，您可以：
-   * 查看树选定分支中的所有内容片段列表: 
+   * 查看树的选定分支中的所有内容片段列表：
       * 将显示所选文件夹和所有子文件夹中的内容片段：
          * 由痕迹导航指示位置；还可使用痕迹导航更改位置：
       * [显示有关每个片段的信息](#information-content-fragments)
@@ -222,10 +222,10 @@ ht-degree: 89%
 
 1. 此 **新内容片段** 对话框打开，您可以从此处指定：
 
-   * **位置**  — 这将使用当前位置自动完成，但您可以根据需要选择其他位置
-   * **内容片段模型** – 从下拉列表中选择要用作片段基础的模型
+   * **位置**  — 使用当前位置自动完成，但您可以根据需要选择其他位置。
+   * **内容片段模型**  — 从下拉列表中选择要用作片段基础的模型。
    * **标题**
-   * **名称**  — 此操作将根据 **标题**，但您可以根据需要对其进行编辑
+   * **名称**  — 已根据 **标题**，但您可以根据需要对其进行编辑。
    * **描述**
 
    ![“新建内容片段”对话框](assets/cf-managing-new-cf-dialog.png)

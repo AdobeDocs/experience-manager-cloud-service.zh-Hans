@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service SDK
 description: AEMas a Cloud Service软件开发工具包概述
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 2%
+source-wordcount: '1213'
+ht-degree: 1%
 
 ---
 
@@ -85,7 +85,7 @@ Adobe *推荐* 在每月维护版本发布后刷新报表。
 
 如果有应随每个新AEM快速入门版本一起安装的内容，请将其包含在内容包和项目的源代码控制中。 然后，每次都安装它。
 
-建议频繁更新SDK（例如每两周）并每天处理完整的本地状态以免意外依赖于应用程序中的有状态数据。
+建议频繁更新SDK（例如，每两周）并每天处理完整的本地状态以免意外依赖于应用程序中的有状态数据。
 
 如果您依赖CryptoSupport ([通过在AEM中配置Cloud Services或SMTP邮件服务的凭据，或在应用程序中使用CryptoSupport API](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/crypto/CryptoSupport.html))，则加密的属性会使用密钥进行加密。 此密钥在AEM环境首次启动时自动生成。 虽然云设置负责自动重用特定于环境的CryptoKey，但必须将加密密钥注入本地开发环境。
 

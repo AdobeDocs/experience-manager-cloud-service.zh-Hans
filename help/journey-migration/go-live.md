@@ -2,9 +2,9 @@
 title: 上线
 description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1697'
 ht-degree: 4%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 4%
 
 **在执行内容迁移的同时优化AEM源的负载**
 
-请记住，在提取阶段，AEM源上的负载较大。 您应了解：
+请记住，在提取阶段，AEM源上的负载较大。 请注意以下事项：
 
 * 内容传输工具是一个外部Java进程，它使用4 GB的JVM栈
 * 非AzCopy版本下载二进制文件，将其存储在源AEM创作实例上的临时空间中，占用磁盘I/O，然后上载到占用网络带宽的Azure容器中

@@ -2,10 +2,10 @@
 title: 实施 AEM 连接器
 description: 了解如何构建、测试和实施AEM连接器。 此外，您还可以了解常见的集成模式。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 95%
+source-wordcount: '935'
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 以下提供了构建 [AEM 连接器](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html)的有用参考，应结合有关[提交](submit.md)和[维护](maintain.md)连接器的指导阅读这些参考。
 
-请注意，可以通过 [Adobe Exchange Program](https://partners.adobe.com/exchangeprogram/experiencecloud) 获取 AEM 的开发人员许可证。
+可以通过获取AEM的开发人员许可证 [Adobe交换计划](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 常见集成模式
 ---------------------------

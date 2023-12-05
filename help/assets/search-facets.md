@@ -1,13 +1,13 @@
 ---
-title: 搜索 Facet.
+title: 搜索Facet。
 description: 本文介绍了如何在Experience Manager中创建、修改和使用搜索Facet。
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 21%
+source-wordcount: '2498'
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager Assets的企业范围部署能够存储许多资源。 
 对于全文搜索，请添加 `Fulltext` 表单谓词。 使用属性谓词搜索与您指定的单个属性匹配的资源。 使用“选项”谓词可搜索与特定属性的一个或多个值匹配的资源。 添加日期范围谓词，以搜索在指定日期范围内创建的资源。
 
 1. 单击Experience Manager徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**.
-1. 从“搜索Forms”页面中，选择 **[!UICONTROL 资产管理搜索边栏]**，然后点按  **编辑** ![aemassets_edit](assets/aemassets_edit.png).
+1. 从“搜索Forms”页面中，选择 **[!UICONTROL 资产管理搜索边栏]**，然后选择  **编辑** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![找到并选择资产管理员搜索边栏](assets/assets_admin_searchrail.png)
 
@@ -49,7 +49,7 @@ Adobe Experience Manager Assets的企业范围部署能够存储许多资源。 
 
    *图：使用设置选项卡提供谓词的必需选项。*
 
-1. 在&#x200B;**[!UICONTROL 属性名称]**&#x200B;字段中，为要与谓词关联的元数据属性指定有效名称。该名称是执行搜索时所依据的名称。例如，输入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`。也可以从选择对话框中选择现有节点。
+1. 在&#x200B;**[!UICONTROL 属性名称]**&#x200B;字段中，为要与谓词关联的元数据属性指定有效名称。该名称是执行搜索时所依据的名称。例如，输入 `jcr:content/metadata/dc:description` 或 `./jcr:content/metadata/dc:description`. 也可以从选择对话框中选择现有节点。
 
    ![在属性名称字段中将元数据属性与谓词关联](assets/property_settings.png)
 
@@ -63,7 +63,7 @@ Adobe Experience Manager Assets的企业范围部署能够存储许多资源。 
    在提交更改之前预览搜索表单
 
 1. 要关闭预览，请单击 **[!UICONTROL 关闭]** ![关闭](assets/do-not-localize/close_icon.png) 在预览的右上角。
-1. 点按 **[!UICONTROL 完成]** 以保存设置。
+1. 选择 **[!UICONTROL 完成]** 以保存设置。
 1. 导航到Assets用户界面中的“搜索”面板。 属性谓词将添加到面板。
 1. 在文本框中输入要搜索的资源的描述。 例如，输入“Adobe”。 执行搜索时，其描述与“Adobe”匹配的资源将列在搜索结果中。
 
@@ -101,14 +101,14 @@ Adobe Experience Manager Assets的企业范围部署能够存储许多资源。 
 >
 >选项谓词是一个自定义包装器，其中包含用于演示所描述行为的属性谓词。 目前，没有可用的REST端点可本地支持该功能。
 
-1. 点按Experience Manager徽标，然后转到 **[!UICONTROL “工具”>“常规”>“搜索Forms”]**.
-1. 在“搜索 **[!UICONTROL 表单]** ”页面中，选择 **[!UICONTROL 资产管理员搜索边栏]**，然后点按编辑图标。
+1. 选择Experience Manager徽标，然后转到 **[!UICONTROL “工具”>“常规”>“搜索Forms”]**.
+1. 从 **[!UICONTROL 搜索Forms]** 页面，选择 **[!UICONTROL 资产管理搜索边栏]**，然后选择编辑图标。
 1. 在“编 **[!UICONTROL 辑搜索表单]** ”页中，将“选 **[!UICONTROL 项谓词]** ”从“选 **** 择谓词”选项卡拖至主窗格。
-1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，输入属性的标签和名称。例如，要根据资产的格式搜索资产，请为标签指定用户友好名称，例如&#x200B;**[!UICONTROL 文件类型]**。在属性字段中指定执行搜索时所依据的属性，例如 `jcr:content/metadata/dc:format.`
+1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，输入属性的标签和名称。例如，要根据资产的格式搜索资产，请为标签指定用户友好名称，例如， **[!UICONTROL 文件类型]**. 在属性字段中指定执行搜索时所依据的属性，例如， `jcr:content/metadata/dc:format.`
 1. 执行下列操作之一：
 
    * 在 **[!UICONTROL 属性名称]** 字段中，提及JSON文件的路径，在该路径中为选项定义节点并指定相应的键值对。
-   * 点按 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 在“选项”字段旁边，为要在“筛选器”面板中提供的选项指定显示文本和值。 要添加其他选项，请选择 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 并重复该步骤。
+   * 选择 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 在“选项”字段旁边，为要在“筛选器”面板中提供的选项指定显示文本和值。 要添加其他选项，请选择 ![资产添加图标](assets/do-not-localize/aem_assets_add_icon.png) 并重复该步骤。
 
 1. 确保取消选中&#x200B;**[!UICONTROL 单选]**，以允许用户一次为文件类型选择多个选项（例如，“图像”、“文档”、“多媒体”和“存档”）。如果选中&#x200B;**[!UICONTROL 单选]**，则用户一次只能为文件类型选择一个选项。
 
@@ -124,11 +124,11 @@ Adobe Experience Manager Assets的企业范围部署能够存储许多资源。 
 此 `Multi Value Property` 谓词允许您搜索资产以获取多个值。 考虑一个方案，其中您有多个产品的图像 [!DNL Assets] 并且每个图像的元数据包括与产品相关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
 
 1. 单击Experience Manager徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**.
-1. 在“搜索Forms”页面上，选择 **[!UICONTROL 资产管理搜索边栏]**，点按 **编辑** ![aemassets_edit](assets/aemassets_edit.png).
+1. 在“搜索Forms”页面上，选择 **[!UICONTROL 资产管理搜索边栏]**，然后选择 **编辑** ![aemassets_edit](assets/aemassets_edit.png).
 1. 在“编辑搜索表单”页中，将&#x200B;**[!UICONTROL 多值属性谓词]**&#x200B;从&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡拖到主窗格。
-1. 在 **[!UICONTROL 设置]** 选项卡，输入谓词的标签和占位符文本。 在属性字段中指定执行搜索时所依据的属性名称，例如 `jcr:content/metadata/dc:value`. 也可以使用“选择”对话框选择节点。
+1. 在 **[!UICONTROL 设置]** 选项卡，输入谓词的标签和占位符文本。 在属性字段中指定执行搜索时所依据的属性名称，例如， `jcr:content/metadata/dc:value`. 也可以使用“选择”对话框选择节点。
 1. 确保选中&#x200B;**[!UICONTROL 分隔符支持]**。在&#x200B;**[!UICONTROL 输入分隔符]**&#x200B;字段中，指定要用于分隔各个值的分隔符。默认情况下，指定逗号为分隔符。您可以指定其他分隔符。
-1. 在 **描述** 字段，输入可选描述，然后点击 **[!UICONTROL 完成]**.
+1. 在 **描述** 字段，输入可选说明，然后选择 **[!UICONTROL 完成]**.
 1. 导航到 Assets 用户界面中的“过滤器”面板。**[!UICONTROL 多值属性]**&#x200B;谓词已添加到面板。
 1. 在用分隔符分隔的多值字段中指定多个值并执行搜索。 谓词会获取与指定值完全匹配的文本。
 
@@ -137,9 +137,9 @@ Adobe Experience Manager Assets的企业范围部署能够存储许多资源。 
 此 `Tags` 谓词允许您对资源执行基于标记的搜索。 默认情况下， [!DNL Assets] 根据您指定的标记，在资产中搜索一个或多个标记匹配。 换句话说，搜索查询使用指定的标记执行OR操作。 但是，您可以使用匹配所有标记选项来搜索包含您指定的所有标记的资产。
 
 1. 单击Experience Manager徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 搜索Forms]**.
-1. 从“搜索Forms”页面中，选择 **[!UICONTROL 资产管理搜索边栏]** 然后点击 **编辑** ![aemassets_edit](assets/aemassets_edit.png).
+1. 从“搜索Forms”页面中，选择 **[!UICONTROL 资产管理搜索边栏]** 然后选择 **编辑** ![aemassets_edit](assets/aemassets_edit.png).
 1. 在“编辑搜索表单”页中，拖动 **[!UICONTROL 标记谓词]** 从选择谓词选项卡转到主窗格。
-1. 在设置选项卡中，输入谓词的占位符文本。 在属性字段中指定执行搜索时所依据的属性名称，例如 `jcr:content/metadata/cq:tags`. 或者，也可以从选择对话框中选择CRXDE中的节点。
+1. 在设置选项卡中，输入谓词的占位符文本。 在属性字段中指定执行搜索时所依据的属性名称，例如， `jcr:content/metadata/cq:tags`. 或者，也可以从选择对话框中选择CRXDE中的节点。
 1. 配置此谓词的根标记路径属性，以填充“标记”列表中的各种标记。
 1. 选择&#x200B;**[!UICONTROL 显示“匹配所有标记”选项]**，以搜索包含您指定的所有标记的资产。
 
@@ -325,8 +325,8 @@ Adobe建议您在删除默认搜索Facet时要小心，以免出现性能问题�
 要恢复默认搜索Facet，请执行以下步骤：
 
 1. 选择 **[!UICONTROL 资产管理搜索边栏]** 在 **[!UICONTROL 搜索Forms]** 页面。
-1. 点按 **[!UICONTROL 删除]** ![删除图标](assets/do-not-localize/deleteoutline.png) 工具栏中。
-1. 在确认对话框中，点按 **[!UICONTROL 删除]** 以删除自定义更改。
+1. 选择 **[!UICONTROL 删除]** ![删除图标](assets/do-not-localize/deleteoutline.png) 工具栏中。
+1. 在确认对话框中，选择 **[!UICONTROL 删除]** 以删除自定义更改。
 
    在删除对搜索彩块化的自定义更改后，“搜索表单”页面中的“资 **[!UICONTROL 产管理员搜索边栏]** ”前会重 **[!UICONTROL 新显示锁图标]** 。
 

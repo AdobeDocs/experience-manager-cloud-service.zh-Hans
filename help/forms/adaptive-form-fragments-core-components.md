@@ -5,14 +5,14 @@ topic-tags: author
 keywords: 添加自适应表单片段、自适应表单片段、创建表单片段、将片段添加到自适应表单、管理片段
 feature: Adaptive Forms
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 1bdd9e323e74a3f2bb06bff52235742e9e22a136
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1768'
 ht-degree: 3%
 
 ---
 
-# 创建和使用基于核心组件的自适应表单中的自适应 Forms 片段 {#adaptive-form-fragments}
+# 在基于核心组件的自适应表单中创建和使用自适应Forms片段 {#adaptive-form-fragments}
 
 
 | 版本 | 文章链接 |
@@ -32,9 +32,9 @@ ht-degree: 3%
 
 您可以从头开始创建自适应表单片段，或将现有自适应表单中的面板另存为片段。 要创建表单片段，请执行以下操作：
 
-1. 登录AEM Forms实例，网址为https://[*主机名*]：[*端口*]/aem/forms.html.
+1. 登录您的AEM Forms实例，网址为https://[*主机名*]：[*端口*]/aem/forms.html.
 1. 单击 **创建>自适应表单片段**.
-1. 指定片段的标题、名称、描述和标记。 请确保为片段指定唯一的名称。 如果已存在另一个同名片段，则创建片段失败。
+1. 指定片段的标题、名称、描述和标记。 请确保为片段指定唯一的名称。 如果存在具有相同名称的其他片段，则无法创建该片段。
 1. 选择表单模板。 您可以为基于核心组件的自适应Forms或基于基础组件的自适应Forms创建表单片段。
    * 要为基于核心组件的表单创建表单片段，请选择一个基于核心组件的模板。
    * 要为基于基础组件的表单创建表单片段，请选择一个基础组件模板。 例如，/libs/fd/af/templateForFragment/defaultFragmentTemplate。
@@ -49,7 +49,7 @@ ht-degree: 3%
 
      >[!NOTE]
      >
-     > 在自适应Forms中，您可以多次使用单个表单片段（基于核心组件）。 它支持基于无和模式的表单片段。
+     > 在自适应 Forms 中，您可以多次使用单个表单片段（基于核心组件）。 它支持基于无和模式的表单片段。
 
    * **架构** ：指定使用上载到 AEM Forms 的 XML 或 JSON 模式创建片段。 您可以上传或从可用的 XML 或 JSON 架构中选择作为片段的表单模型。 选择 XML 模式时，您还可以通过从 &quot;XML 架构复杂类型 ]**&quot;**[!UICONTROL  下拉框中选择所选模式中存在的 complexType 来创建自适应表单片段。选择 JSON 模式时，还可以通过从 **[!UICONTROL JSON 架构定义]** 下拉框中选择所选模式中存在的模式定义来创建自适应表单片段。
    * **表单数据模型** ：指定使用表单数据模型创建片段。 您可以在表单数据模型中仅基于一个数据模型对象创建自适应表单片段。 展开表单数据模型定义下拉列表。 它列出了指定表单数据模型中的所有数据模型对象。 从列表中选择数据模型对象。
@@ -109,7 +109,7 @@ Perform the following steps to show complete fragments in forms:
 
 ### 在自适应表单中多次使用表单片段 {#using-form-fragment-mutiple-times-in-af}
 
-您可以在自适应表单中多次使用基于零和基于架构的表单片段，以唯一地保存每个表单片段字段的数据。 例如，您可以使用地址表片段收集地址详细信息，以便在贷款申请表中永久性、通信和显示生活地址。
+您可以在自适应表单中多次使用基于无和基于架构的表单片段，以唯一地保存每个表单片段字段的数据。 例如，您可以使用地址表片段收集地址详细信息，以便在贷款申请表中永久性、通信和显示生活地址。
 
 ![在自适应表单中使用多个片段](/help/forms/assets/using-multiple-fragment-af.gif)
 
@@ -164,7 +164,7 @@ Perform the following steps to show complete fragments in forms:
    <td><p>生成用于本地化所选片段的字典。 有关更多信息，请参阅 <a> 本地化自适应 Forms </a> 。 <br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>发布/取消发布</p> </td>
+   <td><p>Publish/取消发布</p> </td>
    <td><p>发布/取消选定片段。 <br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -178,8 +178,8 @@ Perform the following steps to show complete fragments in forms:
 
 * 确保片段名称是唯一的。 如果存在具有相同名称的现有片段，则创建片段失败。
 * 在基于XDP的自适应表单中，如果您将面板另存为包含其他XDP片段的片段，则生成的片段将自动绑定到子XDP片段。 在基于XSD的自适应表单中，生成的片段将绑定到架构根。
-* 创建自适应表单片段时，会创建一个片段节点，该节点与CRXDe Lite中自适应表单的guideContainer节点类似。
-* 不支持自适应表单中使用其他表单数据模型的片段。 例如，基于XSD的自适应表单中不支持基于XDP的片段，反之亦然。
+* 创建自适应表单片段时，会在CRXDE Lite中创建片段节点，该节点与自适应表单的guideContainer节点类似。
+* 不支持自适应表单中使用其他表单数据模型的片段。 例如，基于XDP的片段在基于XSD的自适应表单中不受支持，反之亦然。
 * 自适应表单片段可通过AEM内容查找器中的自适应表单片段选项卡使用。
 * 通过引用插入或嵌入自适应表单中的独立自适应表单片段中的任何表达式、脚本或样式都会保留。
 * 您无法从自适应表单中编辑通过引用插入的自适应表单片段。 要编辑，您需要编辑独立的自适应表单片段或将片段嵌入自适应表单中。

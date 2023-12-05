@@ -2,10 +2,10 @@
 title: 扩展多站点管理器
 description: 了解如何扩展多站点管理器的功能。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 95%
+source-wordcount: '2337'
+ht-degree: 93%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 95%
 
    * `getName` - 返回操作的名称
 
-      * 该名称用于指代该操作，例如在推出配置中。
+      * 名称用于引用操作，例如在转出配置中。
 
    * `execute` - 执行该操作的任务
 
@@ -175,7 +175,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 在此位置下，创建一个具有以下属性的节点：
 
-   * **姓名**：转出配置的节点名称，例如 `contentCopy` 或者 `workflow`
+   * **名称**：转出配置的节点名称，例如， `contentCopy` 或 `workflow`
    * **类型**：`cq:RolloutConfig`
 
 1. 向该节点添加以下属性：
@@ -204,7 +204,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 添加类型为 `cq:LiveSyncAction` 的子节点，将同步操作添加到转出配置中。同步操作节点的顺序决定了操作发生的顺序。
 
-1. 在 CRXDE Lite 中，选择您的[转出配置](#create-the-rollout-configuration)节点，例如 `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`。
+1. 在CRXDE Lite中，选择您的 [转出配置](#create-the-rollout-configuration) 节点，例如， `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
 
 1. 创建具有以下节点属性的节点：
 

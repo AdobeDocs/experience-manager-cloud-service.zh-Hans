@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 4%
+source-wordcount: '957'
+ht-degree: 2%
 
 ---
 
@@ -122,11 +122,11 @@ OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience 
 >
 >有关配置的分步指南 [!DNL Microsoft Dynamics 365]，在线或内部部署，请参阅 [[!DNL Microsoft Dynamics] OData配置](ms-dynamics-odata-configuration.md).
 
-1. 转到&#x200B;**[!UICONTROL 工具 > Cloud Services > 数据源]**。点按以选择要创建云配置的文件夹。
+1. 转到 **[!UICONTROL “工具”>“Cloud Service”>“数据源”]**. 选择以选择要创建云配置的文件夹。
 
    请参阅 [为云服务配置配置文件夹](#cloud-folder) 有关为云服务配置创建和配置文件夹的信息。
 
-1. 点按 **[!UICONTROL 创建]** 以打开 **[!UICONTROL 创建数据源配置向导]**. 指定配置的名称和（可选）标题，选择 **[!UICONTROL OData服务]** 从 **[!UICONTROL 服务类型]** 下拉列表（可选）浏览并选择配置的缩略图图像，然后点按 **[!UICONTROL 下一个]**.
+1. 选择 **[!UICONTROL 创建]** 以打开 **[!UICONTROL 创建数据源配置向导]**. 指定配置的名称和（可选）标题，选择 **[!UICONTROL OData服务]** 从 **[!UICONTROL 服务类型]** 下拉列表（可选）浏览并选择配置的缩略图图像，然后选择 **[!UICONTROL 下一个]**.
 在 **[!UICONTROL 身份验证设置]** 选项卡：
 
    1. 输入值 **[!UICONTROL 服务根]** 字段。 转到Dynamics实例并导航到 **[!UICONTROL 开发人员资源]** 查看“服务根”字段的值。 例如， https://&lt;tenant-name>/api/data/v9.1/

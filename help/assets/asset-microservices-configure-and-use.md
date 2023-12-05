@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2928'
+source-wordcount: '2859'
 ht-degree: 3%
 
 ---
@@ -167,7 +167,7 @@ asset compute服务集成允许Experience Manager使用以下方式将这些参�
 
 >[!TIP]
 >
->一个文件夹只能应用一个处理配置文件。要生成更多演绎版，请向现有处理配置文件添加更多演绎版定义。
+>一个文件夹只能应用一个处理配置文件。 要生成更多演绎版，请向现有处理配置文件添加更多演绎版定义。
 
 在处理配置文件应用于文件夹后，该文件夹或其任何子文件夹中上传（或更新）的所有新资产都将使用配置的其他处理配置文件进行处理。 这种处理是在标准默认配置文件之外进行的。
 

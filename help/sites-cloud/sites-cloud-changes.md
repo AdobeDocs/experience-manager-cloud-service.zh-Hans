@@ -2,10 +2,10 @@
 title: 对 AEM Cloud Service 中的 AEM Sites 的重要更改
 description: 详细了解 AEM Cloud Service 中 AEM Sites 的重要更改
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 100%
+source-wordcount: '513'
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Sites as a Cloud Service 中的更改和补充如下所示：
 
 >[!NOTE]
 >
->系统用户无需进行更改即可使用此新功能。此处仅将它记录为以前的 AEM 本地版本的行为变化。
+>系统用户无需更改即可使用此新功能。 此处仅将它记录为以前的 AEM 本地版本的行为变化。
 
 ## 新引用站点和教程 {#new-reference-site-and-tutorial}
 

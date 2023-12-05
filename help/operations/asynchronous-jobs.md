@@ -2,10 +2,10 @@
 title: 异步作业
 description: Adobe Experience Manager通过以后台操作方式异步完成某些资源密集型任务来优化性能。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 70%
+source-wordcount: '856'
+ht-degree: 64%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 70%
 >
 >有关更多信息，请参阅[队列配置](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)。
 
-## 监测异步操作的状态 {#monitor-the-status-of-asynchronous-operations}
+## 监控异步操作的状态 {#monitor-the-status-of-asynchronous-operations}
 
 每当 AEM 异步处理操作时，您都会在[收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)中通过电子邮件收到通知（如果已启用）。
 
@@ -55,7 +55,7 @@ ht-degree: 70%
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. 要查看其他详细信息（例如，说明和日志），请选择操作，然后单击工具栏中的&#x200B;**[!UICONTROL 打开]**。
+1. 要查看其他详细信息（例如，说明和日志），请选择操作并单击 **[!UICONTROL 打开]** 工具栏中。
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -123,7 +123,7 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失败。
 1. 保存更改。
 
-### 配置异步 MSM 操作 {#configuring-asynchronous-msm-operations}
+### 配置异步MSM操作 {#configuring-asynchronous-msm-operations}
 
 1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
 1. 导航到 **osgi** > **配置**

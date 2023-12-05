@@ -2,9 +2,9 @@
 title: 对邮件服务的 OAuth2 支持
 description: Adobe Experience Manager as a Cloud Service 中对邮件服务的 Oauth2 支持
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: c8e8a1c862784976094391d567fac0f9122af8b4
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '672'
 ht-degree: 93%
 
 ---
@@ -32,7 +32,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
    >[!NOTE]
    >
-   >权限配置可能会随着时间的推移而不断演变。 如果这些方法无法按预期工作，请与Microsoft合作。
+   >权限配置可能会随着时间的推移而不断演变。 如果这些功能无法按预期工作，请使用Microsoft。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -139,7 +139,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
    >[!NOTE]
    >
-   >范围可能会随着时间的推移而不断变化。 如果这些方法无法按预期工作，请与Microsoft合作。
+   >范围可能会随着时间的推移而不断变化。 如果这些功能无法按预期工作，请使用Microsoft。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`

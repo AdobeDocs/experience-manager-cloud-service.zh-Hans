@@ -2,10 +2,10 @@
 title: 参与工作流
 description: 工作流通常包括需要人员对页面或资源执行活动的步骤。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1507'
-ht-degree: 79%
+ht-degree: 78%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 79%
   ![收件箱中的通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * 当您使用页面编辑器时，状态栏将显示：
-   * 应用于页面的工作流的名称；例如“请求激活”。
+   * 应用于页面的工作流的名称；例如，“请求激活”。
    * 当前用户可在工作流的当前步骤中使用的任何操作；例如“完成”、“委派”、“查看详细信息”。
    * 页面需执行的工作流数量。您可以：
       * 使用向左/向右箭头浏览各种工作流的状态信息。

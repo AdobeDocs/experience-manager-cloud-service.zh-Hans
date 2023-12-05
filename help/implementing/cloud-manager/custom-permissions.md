@@ -2,9 +2,9 @@
 title: 自定义权限
 description: 了解如何使用自定义权限创建具有可配置权限的自定义权限配置文件，以限制对Cloud Managers用户的程序、管道和环境的访问。
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1525'
 ht-degree: 38%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager具有一组预定义角色，这些角色控制对Cloud Manager各
 1. [为产品配置文件分配自定义权限。](#assign-permissions)
 1. [将用户分配给产品配置文件。](#assign-users)
 
-本节详细介绍了这些步骤。 在创建自己的自定义权限时，您可能会发现参考[术语](#terms)和[可配置权限](#configurable-permissions)会很有用。
+本节详细介绍了这些步骤。 您可能会发现查看以下内容很有用 [术语](#terms) 和 [可配置权限](#configurable-permissions) 创建自己的自定义权限时显示的区域。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Cloud Manager具有一组预定义角色，这些角色控制对Cloud Manager各
 
 首先，创建您可以为其分配自定义权限的产品配置文件。
 
-1. 登录 Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. 登录Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
 1. 在Cloud Manager登陆页面上，选择 **管理访问权限** 按钮。
 
@@ -138,8 +138,8 @@ Cloud Manager具有一组预定义角色，这些角色控制对Cloud Manager各
 | 生产部署计划权限 | 允许用户计划生产部署步骤 |
 | 存储库信息访问权限 | 允许用户访问存储库信息并生成访问密码 |
 | 存储库创建 | 允许用户创建Git存储库 |
-| 存储库删除 | 允许用户删除Git存储库 |
-| 存储库编辑 | 允许用户编辑Git存储库 |
+| 存储库删除 | 允许用户删除 git 存储库 |
+| 存储库编辑 | 允许用户编辑 git 存储库 |
 | 存储库代码生成 | 允许用户从原型生成项目 |
 | 域名管理 | 允许用户创建/编辑/删除域名 |
 | IP允许列表管理 | 允许用户创建/编辑/删除IP允许列表列入允许列表和IP绑定 |

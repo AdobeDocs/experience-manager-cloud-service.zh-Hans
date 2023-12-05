@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '1870'
 ht-degree: 1%
 
 ---
@@ -266,7 +266,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
        useDataLayerEvents();
    
        useEffect(() => {
-           // implement a proper marketing opt-in, for demo purpose we hard-set the consent cookie
+           // implement a proper marketing opt-in, for demo purpose you hard-set the consent cookie
            if (document.cookie.indexOf('mg_dnt') < 0) {
                document.cookie += '; mg_dnt=track';
            }
@@ -503,5 +503,5 @@ __配置文件XDM事件：__
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [[!DNL Data Connection] 概述](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
-- [[!DNL Data Connection] 事件](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
+- [[!DNL Data Connection] 活动](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
 - [Adobe Experience Platform概述](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

@@ -3,10 +3,10 @@ title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 98%
+source-wordcount: '1656'
+ht-degree: 97%
 
 ---
 
@@ -257,7 +257,7 @@ query getAdventuresByActivity($activity: String!) {
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-请注意，`%3B` 是 `;` 的 UTF-8 编码，`%3D` 是 `=` 的编码。查询变量和任何特殊字符必须[正确编码](#encoding-query-url)才能执行持久查询。
+UTF-8编码 `%3B` 为 `;` 和 `%3D` 是的编码 `=`. 查询变量和任何特殊字符必须[正确编码](#encoding-query-url)才能执行持久查询。
 
 ## 正在缓存您的持久查询 {#caching-persisted-queries}
 
@@ -443,8 +443,8 @@ URL 可以划分为以下部分：
 1. 在包定义对话框中，在&#x200B;**常规**&#x200B;下输入&#x200B;**名称**，如“wknd-persistent-queries”。
 1. 输入版本号，如“1.0”。
 1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。使用路径查找器选择 `persistentQueries` 文件夹。例如，对于 `wknd` 配置，完整路径为 `/conf/wknd/settings/graphql/persistentQueries`。
-1. 点击&#x200B;**保存**&#x200B;以保存新的包定义并关闭对话框。
-1. 点按 **生成** 按钮创建包定义。
+1. 选择 **保存** 以保存新的包定义并关闭对话框。
+1. 选择 **生成** 按钮创建包定义。
 
 生成包后，您可以：
 

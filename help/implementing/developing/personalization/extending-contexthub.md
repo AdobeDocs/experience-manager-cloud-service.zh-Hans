@@ -2,9 +2,9 @@
 title: 扩展 ContextHub
 description: 当提供的ContextHub存储和模块不符合您的解决方案要求时，定义这些存储和模块的新类型
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ contexthub.store.[storeType]
 * [&#39;ContextHub.Store.JSONPStore&#39;](contexthub-api.md#contexthub-store-jsonpstore)
 * [&#39;ContextHub.Store.PersistedJSONPStore&#39;](contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-请注意，每个基础存储区都会扩展 [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) 商店。
+每个基础存储区会扩展 [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) 商店。
 
 以下示例创建 `ContextHub.Store.PersistedStore` 存储候选：
 

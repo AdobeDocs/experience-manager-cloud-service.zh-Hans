@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '5964'
-ht-degree: 3%
+source-wordcount: '5863'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 <!-- 
 
-There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now must call a new interactive video
+There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This must now call a new interactive video
 
 -->
 
@@ -311,11 +311,11 @@ There was a link here that showed the video frame of an interactive video and wh
         </tr>
         <tr>
         <td>3分钟或更多</td>
-        <td>60 秒</td>
+        <td>60秒</td>
         </tr>
         <tr>
-        <td>2-3分钟</td>
-        <td>30 秒</td>
+        <td>2-3 分钟</td>
+        <td>30秒</td>
         </tr>
         <tr>
         <td>1-2 分钟</td>
@@ -323,11 +323,11 @@ There was a link here that showed the video frame of an interactive video and wh
         </tr>
         <tr>
         <td>30-60秒</td>
-        <td>10 秒</td>
+        <td>10秒</td>
         </tr>
         <tr>
         <td>30秒或更短</td>
-        <td>5 秒</td>
+        <td>5秒</td>
         </tr>
       </tbody>
     </table>

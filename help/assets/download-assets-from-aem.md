@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: f2f81e2e3e7ff0b5bad4a5490f5cbec752c92578
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 5%
+source-wordcount: '1329'
+ht-degree: 4%
 
 ---
 
@@ -79,10 +79,10 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 
    | 下载选项 | 描述 |
    |---|---|
-   | **[!UICONTROL 为每个资产创建单独的文件夹]** | 选择此选项可为每个资源创建一个文件夹，其中包含资源的所有已下载演绎版。 如果未选定该属性，则每个资产（以及所选的下载资产演绎版）都会包含在生成的存档的父文件夹中。 |
+   | **[!UICONTROL 为每个资源创建单独的文件夹]** | 选择此选项可为每个资源创建一个文件夹，其中包含资源的所有已下载演绎版。 如果未选定该属性，则每个资产（以及所选的下载资产演绎版）都会包含在生成的存档的父文件夹中。 |
    | **[!UICONTROL 电子邮件]** | 选择此选项可向其他用户发送电子邮件通知（包含下载链接）。 收件人用户必须是 `dam-users` 组。 标准电子邮件模板可在以下位置使用：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 您可以在以下位置找到部署期间自定义的模板： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在以下位置存储特定于租户的自定义模板：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL 资产]** | 选择此选项可下载原始格式的资源。<br>如果原始资产具有子资产，则子资产选项可用。 |
-   | **[!UICONTROL 演绎版]** | 演绎版是资产的二进制表示形式。 资产具有主要表示形式 — 即上传文件的表示形式。 它们可以有任意数量的呈现。 <br> 使用此选项，您可以选择想要下载的演绎版。 可用的演绎版取决于您选择的资源。 |
+   | **[!UICONTROL 节目]** | 演绎版是资产的二进制表示形式。 资产具有主要表示形式 — 即上传文件的表示形式。 它们可以有任意数量的呈现。 <br> 使用此选项，您可以选择想要下载的演绎版。 可用的演绎版取决于您选择的资源。 |
    | **[!UICONTROL 智能裁剪]** | 选择此选项可从下载所选资源的所有智能裁剪演绎版 [!DNL Experience Manager]. 将创建包含智能裁剪呈现的zip文件并下载到本地计算机。 |
    | **[!UICONTROL 动态演绎版]** | 选择此选项可实时生成一系列替代演绎版。 选择此选项时，您还可以通过从以下各项中选择要动态创建的演绎版 [图像预设](/help/assets/dynamic-media/image-presets.md) 列表。 <br>此外，您还可以选择大小和测量单位、格式、颜色空间、分辨率以及任何可选的图像修饰符（如反转图像）。 仅当满足以下条件时，选项才可用 [!DNL Dynamic Media] 已启用。 |
 
@@ -139,7 +139,7 @@ Experience Manager根据资源数量和大小优化下载体验。 从用户界�
 1. 在Git的项目代码中，创建配置文件，位于 `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. 文件应包含 `{}` 作为其内容，表示相应的OSGi组件的OSGi配置为空。 此操作将启用该服务。
 1. 通过以下方式部署您的代码，包括此新配置 [!DNL Cloud Manager].
 1. 部署后，即可根据资源的开启/结束时间设置访问演绎版和元数据。 如果当前日期或时间早于开启时间或晚于关闭时间，则会显示错误消息。
-有关添加空OSGi配置的更多详细信息，您可以参阅此 [指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
+有关添加空OSGi配置的更多详细信息，请参阅此 [指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## 提示和限制 {#tips-limitations}
 

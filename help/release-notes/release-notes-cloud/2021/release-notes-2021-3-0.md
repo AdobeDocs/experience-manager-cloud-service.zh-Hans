@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] 2021.3.0版as a Cloud Service发行说明。”'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 37%
+source-wordcount: '1271'
+ht-degree: 34%
 
 ---
 
@@ -85,7 +85,8 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 ## 发布日期 {#release-date-cm-march}
 
-AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 的发布日期是 2021 年 3 月 11 日。下一个版本计划于 2021 年 4 月 08 日发布。
+AEMas a Cloud Service2021.3.0中的Cloud Manager的发布日期是2021年3月11日。
+下一个版本计划于2021年4月8日发布。
 
 ### 新增功能 {#what-is-new-march}
 
@@ -93,8 +94,8 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 具有所需权限的用户现在可编辑计划，于是这些用户可按自助方式执行以下操作：
 
-   * 将 Sites 解决方案添加到具有 Assets 的现有程序，反之亦然。
-   * 从具有 Sites 和 Assets 的现有计划中删除 Sites 或 Assets。
+   * 将 Sites 解决方案添加到具有 Assets 的现有项目，反之亦然。
+   * 从具有 Sites 和 Assets 的现有项目中删除 Sites 或 Assets。
    * 将另一未使用的解决方案权利添加到现有计划或添加为新计划。
 
 * **AEM推送更新** 现在将为两者显示标签 *管道执行* 和 *活动* 屏幕。
@@ -146,7 +147,7 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 的发布日期是 2021 年
 ### 内容传输工具的新增功能 {#what-is-new-ctt-march}
 
 * CTT现在安装到 `/apps` 而不是 `/libs` 特定页面的浏览器书签可能不再有效。
-* 安装CTT后，用户必须导航到其他级别才能转到内容传输页面。 请参阅 [使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hans) 以了解更多详细信息。
+* 安装CTT后，用户必须导航到其他级别才能转到内容传输页面。 请参阅 [使用内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) 以了解更多详细信息。
 
 ### 错误修复 {#bug-fixes-ctt-march}
 
@@ -156,7 +157,7 @@ AEM as a Cloud Service 2021.3.0 中的 Cloud Manager 的发布日期是 2021 年
 
 ### 发布日期 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.8 的发布日期是 2021 年 3 月 22 日。
+Best Practices Analyzer v2.1.8的发布日期是2021年3月22日。
 
 ### Best Practices Analyzer的新增功能 {#what-is-new-bpa}
 

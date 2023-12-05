@@ -3,10 +3,10 @@ title: 编辑图像
 description: 使用由 [!DNL Adobe Photoshop Express] 提供支持的选项编辑图像并将更新后的图像另存为版本。
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 75%
+source-wordcount: '1136'
+ht-degree: 76%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 75%
 
    ![Adobe Express嵌入式编辑器](assets/embedded-editor.png)
 
-   您可以利用的功能 [!DNL Adobe Express] 执行所有与图像编辑相关的操作，例如 [调整图像大小](https://helpx.adobe.com/in/express/using/resize-image.html)， [删除或更改背景颜色](https://helpx.adobe.com/in/express/using/remove-background.html)， [裁切图像](https://helpx.adobe.com/in/express/using/crop-image.html)，等等。
+   您可以使用以下功能 [!DNL Adobe Express] 执行所有与图像编辑相关的操作，例如 [调整图像大小](https://helpx.adobe.com/in/express/using/resize-image.html)， [删除或更改背景颜色](https://helpx.adobe.com/in/express/using/remove-background.html)， [裁切图像](https://helpx.adobe.com/in/express/using/crop-image.html)，等等。
 
 1. 完成图像编辑后，您可以将资源下载为新资源或将资源另存为新版本。
 

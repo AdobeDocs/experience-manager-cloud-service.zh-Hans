@@ -2,9 +2,9 @@
 title: 如何基于核心组件为自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1333'
 ht-degree: 3%
 
 ---

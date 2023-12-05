@@ -4,10 +4,10 @@ description: 了解如何在 AEM 中创建和管理机器翻译项目和人工�
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3971'
-ht-degree: 86%
+source-wordcount: '3960'
+ht-degree: 85%
 
 ---
 
@@ -142,7 +142,7 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
    >
    >翻译项目中设置的目标语言应与引用边栏中显示的语言副本的路径匹配。
 
-1. 选择 **更新**.
+1. 选择&#x200B;**更新**。
 
 ### 创建语言副本的结构 {#creating-the-structure-of-a-language-copy}
 
@@ -166,7 +166,7 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 
    ![仅结构](../assets/language-copy-structure-only.png)
 
-1. 选择 **更新**.
+1. 选择&#x200B;**更新**。
 
 ### 更新翻译记忆库 {#updating-translation-memory}
 
@@ -338,7 +338,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
    ![翻译项目属性](../assets/translation-project-properties-basic.png)
 
-1. 选择 **保存并关闭**.
+1. 选择&#x200B;**保存并关闭**。
 
 ### 设定翻译作业的范围 {#scoping-a-translation-job}
 
@@ -463,7 +463,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 ### 导出翻译作业 {#exporting-a-translation-job}
 
-您可以下载翻译作业的内容，例如，通过连接器发送给未与 AEM 集成的翻译提供商，或审查内容。
+例如，您可以下载翻译作业的内容，以通过连接器发送给未与AEM集成的翻译提供商，或审查内容。
 
 1. 从翻译作业拼贴的下拉菜单中，选择 **导出**.
 1. 在对话框中，选择 **下载导出的文件**，并在必要时使用Web浏览器对话框保存文件。
@@ -471,7 +471,7 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 
 ### 导入翻译作业 {#importing-a-translation-job}
 
-您可以将已翻译内容导入 AEM 中（例如，当翻译提供商将已翻译内容发送给您时），因为它们未通过连接器与 AEM 集成。
+例如，当翻译提供商将已翻译内容发送给您时，您可以将已翻译内容导入AEM，因为它们未通过连接器与AEM集成。
 
 1. 从翻译作业拼贴的下拉菜单中，选择 **导入**.
 1. 使用 Web 浏览器的对话框选择要导入的文件。

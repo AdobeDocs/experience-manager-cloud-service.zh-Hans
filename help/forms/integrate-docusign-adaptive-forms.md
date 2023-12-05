@@ -2,10 +2,10 @@
 title: 如何将DocuSign与自适应表单集成？
 description: 了解如何将DocuSign与自适应表单一起使用来收集电子签名。
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 9%
+source-wordcount: '1534'
+ht-degree: 7%
 
 ---
 
@@ -126,8 +126,8 @@ AEM Formsas a Cloud Service提供DocuSign的自定义提交操作。 提交操�
 
 1. 导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL DocuSign]** 并选择一个文件夹来托管配置。
 
-1. 在配置页面上，点击 **[!UICONTROL 创建]** 创建 [!DNL DocuSign] AEM Forms配置。
-1. 在 **[!UICONTROL 常规]** 选项卡 **[!UICONTROL 创建DocuSign配置]** 页面，指定 **[!UICONTROL 名称]** 对于配置，然后点击 **[!UICONTROL 下一个]**. 您可以选择指定 **[!UICONTROL 标题]**.
+1. 在配置页面上，选择 **[!UICONTROL 创建]** 创建 [!DNL DocuSign] AEM Forms配置。
+1. 在 **[!UICONTROL 常规]** 选项卡 **[!UICONTROL 创建DocuSign配置]** 页面，指定 **[!UICONTROL 名称]** 对于配置，并选择 **[!UICONTROL 下一个]**. 您可以选择指定 **[!UICONTROL 标题]**.
 
 1. 将当前浏览器窗口中的 URL 复制到记事本。在下一个步骤中使用 [!DNL AEM Forms] 配置 [!DNL DocuSign] 应用程序时需要此 URL。
 
@@ -146,15 +146,15 @@ AEM Formsas a Cloud Service提供DocuSign的自定义提交操作。 提交操�
 
 1. 指定 **[!UICONTROL 客户端ID]** （DocuSign集成密钥）和 **[!UICONTROL 客户端密码]** （DocuSign密钥）
 
-1. 点按 **[!UICONTROL 连接到DocuSign]**. 在系统提示输入凭据时，提供在创建 [!DNL DocuSign] 应用程序时所用帐户的用户名和密码。当要求确认访问时 `your developer account`，单击 **[!UICONTROL 允许访问]**. 如果凭据正确，将显示一条成功消息。
+1. 选择 **[!UICONTROL 连接到DocuSign]**. 在系统提示输入凭据时，提供在创建 [!DNL DocuSign] 应用程序时所用帐户的用户名和密码。当要求确认访问时 `your developer account`，单击 **[!UICONTROL 允许访问]**. 如果凭据正确，将显示一条成功消息。
 
-1. 点按 **[!UICONTROL 创建]** 创建 [!DNL DocuSign] 配置。
+1. 选择 **[!UICONTROL 创建]** 创建 [!DNL DocuSign] 配置。
 
 1. 选择配置并单击 **[!UICONTROL Publish]**，选择配置，然后单击 **[!UICONTROL Publish]**. 这会将配置复制到相应的发布环境。
 
 1. 在开发人员实例、暂存实例和生产实例（以剩下的实例为准）上重复上述所有步骤以使用 [!DNL AEM Forms] 为环境配置 [!DNL DocuSign]。
 
-现在，您的AEM Forms环境配置为使用DocuSign。 确保将用于 Cloud Service 的配置容器添加到为 [!DNL DocuSign] 启用的所有自适应表单。您可以在自适应表单的属性中指定配置容器。
+现在，您的AEM Forms环境配置为使用DocuSign。 确保将用于 Cloud Service 的配置容器添加到为 [!DNL DocuSign] 启用的所有自适应表单。您可以从自适应表单的属性中指定配置容器。
 
 ### 使用 [!DNL DocuSign] 在自适应表单中 {#enabledocusign}
 
@@ -168,7 +168,7 @@ AEM Formsas a Cloud Service提供DocuSign的自定义提交操作。 提交操�
 要创建启用签名的自适应表单，请执行以下操作：
 
 1. 导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
-1. 点按 **[!UICONTROL 创建]** 并选择 **[!UICONTROL 自适应表单]**. 此时将显示模板列表。 选择模板并点按 **[!UICONTROL 下一个]**.
+1. 选择 **[!UICONTROL 创建]** 并选择 **[!UICONTROL 自适应表单]**. 此时将显示模板列表。 选择模板并选择 **[!UICONTROL 下一个]**.
 1. 在 **[!UICONTROL 基本]** 选项卡：
 
    1. 指定 **[!UICONTROL 名称]** 和 **[!UICONTROL 标题]** 用于自适应表单。
@@ -183,23 +183,23 @@ AEM Formsas a Cloud Service提供DocuSign的自定义提交操作。 提交操�
 
    - 如果您没有自定义表单模板，请选择 **[!UICONTROL 生成记录文档]** 选项。 使用选项时，发送以供签名的文档显示自适应表单的所有字段。
 
-1. 点按&#x200B;**[!UICONTROL 创建。]** 将创建一个支持签名的自适应表单。 您可以添加 [!DNL DocuSign] 将字段发送到表单以供签名。
-1. 在编辑模式下打开自适应表单。 在 **[!UICONTROL 内容]** 选项卡，点按 **[!UICONTROL 表单容器]** 并点击 ![配置](assets/configure-icon.svg).
+1. 选择 **[!UICONTROL 创建。]** 将创建一个支持签名的自适应表单。 您可以添加 [!DNL DocuSign] 将字段发送到表单以供签名。
+1. 在编辑模式下打开自适应表单。 在 **[!UICONTROL 内容]** 选项卡，选择 **[!UICONTROL 表单容器]** 并选择 ![配置](assets/configure-icon.svg).
 
 1. 在 **[!UICONTROL 提交]** 部分，选择 **[!UICONTROL 使用DocuSign电子签名提交]** 从 **[!UICONTROL 提交操作]** 下拉列表。
 
-1. 在 **[!UICONTROL 操作配置]** 部分，点按 **[!UICONTROL 添加]** 以添加收件人并指定收件人的电子邮件地址。 点按 **[!UICONTROL 添加]** 以添加更多收件人。
+1. 在 **[!UICONTROL 操作配置]** 部分，选择 **[!UICONTROL 添加]** 以添加收件人并指定收件人的电子邮件地址。 选择 **[!UICONTROL 添加]** 以添加更多收件人。
 
 1. 在中指定电子邮件的主题 **[!UICONTROL 电子邮件主题]** 字段。 选择 **包括附件** 以在电子邮件中包含附件。
 
-1. 点按![保存](assets/save_icon.svg)以保存属性。
+1. 选择 ![保存](assets/save_icon.svg) 以保存属性。
 
 #### 启用 [!DNL DocuSign] 自适应表单 {#editafsign}
 
 使用 [!DNL DocuSign] 在现有的自适应表单中：
 
 1. 导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
-1. 选择自适应表单并点按 **[!UICONTROL 属性]**.
+1. 选择自适应表单，然后选择 **[!UICONTROL 属性]**.
 1. 在 **[!UICONTROL 基本]** 选项卡，选择 [配置容器](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) 集成时创建 [!DNL DocuSign] 替换为 [!DNL AEM Forms].
 1. 在 **[!UICONTROL 表单模型]** 选项卡，选择以下选项之一：
 
@@ -207,14 +207,14 @@ AEM Formsas a Cloud Service提供DocuSign的自定义提交操作。 提交操�
 
    - 如果您没有自定义表单模板，请选择 **[!UICONTROL 生成记录文档]** 选项。 使用选项时，发送以供签名的文档显示自适应表单的所有字段。
 
-1. 点按 **[!UICONTROL 保存并关闭]**. 自适应表单已启用 [!DNL DocuSign]. 现在，您可以添加 [!DNL DocuSign] 将字段发送到表单以供签名。
+1. 选择 **[!UICONTROL 保存并关闭]**. 自适应表单已启用 [!DNL DocuSign]. 现在，您可以添加 [!DNL DocuSign] 将字段发送到表单以供签名。
 
-1. 在编辑模式下打开自适应表单。 在 **[!UICONTROL 内容]** 选项卡，点按 **[!UICONTROL 表单容器]** 并点击 ![配置](assets/configure-icon.svg).
+1. 在编辑模式下打开自适应表单。 在 **[!UICONTROL 内容]** 选项卡，选择 **[!UICONTROL 表单容器]** 并选择 ![配置](assets/configure-icon.svg).
 
 1. 在 **[!UICONTROL 提交]** 部分，选择 **[!UICONTROL 使用DocuSign电子签名提交]** 从 **[!UICONTROL 提交操作]** 下拉列表。
 
-1. 在 **[!UICONTROL 操作配置]** 部分，点按 **[!UICONTROL 添加]** 以添加收件人并指定收件人的电子邮件地址。 点按 **[!UICONTROL 添加]** 以添加更多收件人。
+1. 在 **[!UICONTROL 操作配置]** 部分，选择 **[!UICONTROL 添加]** 以添加收件人并指定收件人的电子邮件地址。 选择 **[!UICONTROL 添加]** 以添加更多收件人。
 
 1. 在中指定电子邮件的主题 **[!UICONTROL 电子邮件主题]** 字段。 选择 **包括附件** 以在电子邮件中包含附件。
 
-1. 点按![保存](assets/save_icon.svg)以保存属性。
+1. 选择 ![保存](assets/save_icon.svg) 以保存属性。

@@ -3,10 +3,10 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 7d09cafc4f8518fee185d3f9efc76c33ec20f9a3
+source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 100%
+source-wordcount: '1754'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 >
 >您可以通过以下任一方式访问查询编辑器：
 >
->* **工具** -> **常规** -> **GraphQL 查询编辑器**
+>* **工具** > **常规** > **GraphQL查询编辑器**
 >* 直接；例如，`http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -362,7 +362,7 @@ query {
 }
 ```
 
-### 示例查询 – 所有城市的名称 标记为 City Breaks {#sample-names-all-cities-tagged-city-breaks}
+### 示例查询 — 标记为城市分隔符的所有城市的名称 {#sample-names-all-cities-tagged-city-breaks}
 
 如果您：
 
@@ -1349,7 +1349,7 @@ query {
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询以 `fragments` 数组形式传递 `[Article]`。
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询提供 `fragments` 作为数组 `[Article]`.
 
 ```graphql
 {

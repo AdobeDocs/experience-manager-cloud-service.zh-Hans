@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2398'
-ht-degree: 58%
+source-wordcount: '2387'
+ht-degree: 57%
 
 ---
 
@@ -232,7 +232,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ![组件详细信息](assets/component-details.png)
 
-请注意，并非所有组件都有可显示和/或编辑的详细信息。
+并非所有组件都具有可以显示和/或编辑的详细信息。
 
 >[!TIP]
 >
@@ -300,7 +300,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 >[!TIP]
 >
->请注意，在组件模式下，点按或单击内容会选择内容进行编辑。 如果要通过以下链接导航内容，请切换到 [预览模式。](#preview-mode)
+>在组件模式下，点按或单击内容会选择内容进行编辑。 如果要通过以下链接导航内容，请切换到 [预览模式。](#preview-mode)
 
 根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在中为内容提供其他信息和选项。 [属性边栏。](#properties-rail)
 
@@ -407,7 +407,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
 
-请注意，在预览模式中，点按或单击内容的反应与对内容阅读器的反应一样。如果要选择要编辑的内容，请切换到 [组件模式。](#component-mode)
+在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换到 [组件模式。](#component-mode)
 
 ## 其他资源 {#additional-resources}
 

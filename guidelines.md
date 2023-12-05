@@ -1,15 +1,15 @@
 ---
-source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 56%
+source-wordcount: '739'
+ht-degree: 51%
 
 ---
 # Adobe Experience Manager 文档内容贡献准则
 
 ## 文档理念
 
-Adobe Experience Manager用户在竞争激烈的环境中工作，努力创造数字体验，让他们从竞争对手中脱颖而出。 因此，当Adobe在AEM中提供先进的新工具时，这些工具必须辅以准确和清晰的文档，以使客户能够立即使用其AEM投资并最大限度地提高ROI，这一点至关重要。
+Adobe Experience Manager用户在竞争激烈的环境中工作，努力创造数字体验，让他们从竞争对手中脱颖而出。 因此，当Adobe在AEM中提供先进的新工具时，这些工具必须辅以准确和清晰的文档，以让客户立即使用其AEM投资并最大限度地提高ROI，这一点至关重要。
 
 撰写 AEM 文档的目标是，尽快将相应的文档提供给 AEM 用户。因此，AEM文档团队会优先考虑准确、可用的文档，并努力不断更新和改进文档。
 
@@ -19,7 +19,7 @@ Adobe Experience Manager用户在竞争激烈的环境中工作，努力创造�
 
 ## 文档标准
 
-虽然Experience Manager文档团队欢迎对Adobe文档的投稿，但对AEM文档的任何投稿（无论是以拉取请求还是问题的形式）都应符合团队的投稿和文档标准。
+虽然Experience Manager文档团队欢迎向Adobe文档投稿，但对AEM文档的任何投稿（无论是以拉取请求或问题的形式）都应符合团队的投稿和文档标准。
 
 我们会拒绝不符合这些标准的投稿。
 
@@ -29,7 +29,7 @@ AEM 文档涵盖标准用例。超出产品标准安装和使用范围的用例�
 
 ### Experience Manager文档团队通常不会记录错误或其解决方法。
 
-AEM 文档涵盖标准用例。因此，没有记录错误、错误造成的影响，以及针对错误的解决方法，
+AEM 文档涵盖标准用例。因此，没有记录错误、错误造成的影响，以及错误的解决方法，
 
 例外情况是，发行说明不适用这项规则。发行说明中会列出已知问题，以及已获 AEM 产品管理部门批准的可行解决方案。
 
@@ -39,7 +39,7 @@ AEM 文档涵盖标准用例。因此，没有记录错误、错误造成的影�
 
 如果您对 AEM 的使用有任何疑问或遇到任何技术问题，可按照常规支持流程通过 [Experience Manager 支持门户](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)报告，或在 [Experience Manager 社区](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)中讨论。
 
-***AEM文档贡献内容不能替代Adobe客户支持*** 任何试图获取支持相关问题答案的此类投稿都将被拒绝。
+***AEM文档贡献内容无法替代Adobe客户支持*** 任何试图获取支持相关问题答案的此类投稿都将被拒绝。
 
 ### 贡献内容必须明确引用受影响的文档页面
 
@@ -49,9 +49,9 @@ AEM 文档涵盖标准用例。因此，没有记录错误、错误造成的影�
 
 ## 文档准则
 
-对AEM文档的任何贡献都必须遵循特定的风格准则。
+对AEM文档的任何贡献都必须遵循特定风格准则。
 
-遵循这些准则可让您更轻松地审查贡献，从而更快地集成到AEM文档中。
+遵循这些准则有助于使贡献内容审核更轻松，进而加快将其集成到AEM文档中的速度。
 
 ### 语言和风格
 
@@ -63,7 +63,7 @@ AEM 文档涵盖标准用例。因此，没有记录错误、错误造成的影�
 
 请记住，AEM文档的读者遍布世界各地，不能期望以英语为母语或流利。 应避免口语，尽量使用清晰简单的语言。
 
-#### 遵循Microsoft®写作风格指南
+#### 遵循Microsoft®风格手册
 
 [Microsoft®风格手册](https://learn.microsoft.com/en-us/style-guide/welcome/) 是免费提供的文档风格指南，重点针对的是软件文档，AEM文档应尽量遵循该指南。
 
@@ -77,9 +77,9 @@ AEM 文档涵盖标准用例。因此，没有记录错误、错误造成的影�
 
 ### 屏幕快照
 
-应谨慎使用屏幕截图，并且仅在文本描述不足时使用。
+应谨慎使用屏幕截图，并且仅当文本描述不足以阐述问题时才使用屏幕截图。
 
-不应在屏幕截图中使用标记或其他批注（例如，红色框、箭头或文本）。这样一来，在文档的本地化版本中可以更轻松地重用或复制屏幕截图。
+请勿在屏幕截图中使用标记或其他批注（如红框、箭头或文本）。 这样一来，在文档的本地化版本中便可以更轻松地重用或复制屏幕截图。
 
 ### 特定于版本的引用
 
@@ -87,6 +87,6 @@ AEM 文档涵盖标准用例。因此，没有记录错误、错误造成的影�
 
 ### Day、AEM、CQ、CRX 的使用
 
-产品应始终按其全名进行调用 **Adobe Experience Manager** 在文章中第一次使用，之后可称为 **AEM**.
+应始终按全名调用产品 **Adobe Experience Manager** 在文章中第一次，此后可以称为 **AEM**.
 
-除类名或引用 AEM 历史记录等无法避免的情况外，不应使用 Day、Day Software、CQ 和 CRX。
+请勿使用Day、Day Software、CQ和CRX，除非在不可避免的情况下，例如在类名中或提及AEM历史记录。

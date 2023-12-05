@@ -9,10 +9,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 6%
+source-wordcount: '1430'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 6%
 
   ![练习结果](assets/enable-add-on.png)
 
-* 在Cloud Service环境中，迁移实用程序与“用户映射工具”和“内容传输工具”配合使用。 迁移实用程序将创建 [!DNL AEM Forms] 与Cloud Service兼容的资源，并且内容传输工具会从您的存储库迁移内容， [!DNL AEM Forms] 环境到 [!DNL AEM] as a Cloud Service的环境。 在使用迁移实用程序之前，请先了解以下流程 [迁移至AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=zh-Hans). 该过程有两个工具：
+* 在Cloud Service环境中，迁移实用程序与“用户映射工具”和“内容传输工具”配合使用。 迁移实用程序将创建 [!DNL AEM Forms] 与Cloud Service兼容的资源，并且内容传输工具会从您的存储库迁移内容， [!DNL AEM Forms] 环境到 [!DNL AEM] as a Cloud Service的环境。 在使用迁移实用程序之前，请先了解以下流程 [迁移至AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html). 该过程有两个工具：
    * [用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)：用户映射工具可帮助您将用户映射到相应的Adobe IMS用户帐户。
    * [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)：内容传输工具可帮助您准备内容并将内容从现有环境传输到Cloud Service环境。 它有助于用户轻松从AEM Forms升级到云环境。
 * 具有管理员权限的帐户 [!DNL AEM Forms] as a Cloud Service和您的本地 [!DNL AEM Forms] 环境。
@@ -97,28 +97,28 @@ ht-degree: 6%
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 内容迁移]**.
 
 1. 打开 **[!UICONTROL 准备Forms以进行迁移]** 卡片。 浏览器显示五个选项：
-   * **[!UICONTROL AEM Forms 资产迁移]**
+   * **[!UICONTROL AEM Forms资源迁移]**
    * **[!UICONTROL 自适应Forms自定义组件迁移]**
    * **[!UICONTROL 自适应Forms模板迁移]**
-   * **[!UICONTROL AEM Forms 云配置迁移]**
+   * **[!UICONTROL AEM Forms云配置迁移]**
    * **[!UICONTROL 代码编辑器脚本迁移]**
 
 1. 逐一使用选项以使 [!DNL AEM Forms] 资产与兼容 [!DNL AEM] as a Cloud Service：
 
-   1. 点按 **[!UICONTROL AEM Forms资源迁移]**，然后在下一个屏幕中，点按 **[!UICONTROL 开始迁移]**. 它使自适应Forms和主题成为您的主题 [!DNL AEM Forms] 环境与 [!DNL AEM] as a Cloud Service。
+   1. 选择 **[!UICONTROL AEM Forms资源迁移]**，然后在下一个屏幕中，选择 **[!UICONTROL 开始迁移]**. 它使自适应Forms和主题成为您的主题 [!DNL AEM Forms] 环境与 [!DNL AEM] as a Cloud Service。
 
-   1. 点按 **[!UICONTROL 自适应Forms自定义组件迁移]** 在自定义组件迁移页面中，点按 **[!UICONTROL 开始迁移]**. 它生成任何为自适应Forms开发的自定义组件，并在您的页面上生成组件叠加 [!DNL AEM Forms] 环境与 [!DNL AEM] as a Cloud Service。
+   1. 选择 **[!UICONTROL 自适应Forms自定义组件迁移]** 在“自定义组件迁移”页面中，选择 **[!UICONTROL 开始迁移]**. 它生成任何为自适应Forms开发的自定义组件，并在您的页面上生成组件叠加 [!DNL AEM Forms] 环境与 [!DNL AEM] as a Cloud Service。
 
-   1. 点按 **[!UICONTROL 自适应Forms模板迁移]** 在自定义组件迁移页面中，点按 **[!UICONTROL 开始迁移]**. 它使自适应表单模板位于 `/apps` 或 `/conf` 并使用与兼容的AEM模板编辑器创建 [!DNL AEM] as a Cloud Service。
+   1. 选择 **[!UICONTROL 自适应Forms模板迁移]** 在“自定义组件迁移”页面中，选择 **[!UICONTROL 开始迁移]**. 它使自适应表单模板位于 `/apps` 或 `/conf` 并使用与兼容的AEM模板编辑器创建 [!DNL AEM] as a Cloud Service。
 
-   1. 点按 **[!UICONTROL AEM Forms云配置迁移]** 然后在“配置迁移”页面上，点击 **[!UICONTROL 开始迁移]**. 它会更新并将以下Cloud Service移动到新位置：
+   1. 选择 **[!UICONTROL AEM Forms云配置迁移]** 然后在“配置迁移”页面上，选择 **[!UICONTROL 开始迁移]**. 它会更新并将以下Cloud Service移动到新位置：
 
       * 表单数据模型Cloud Service
       * Google reCAPTCHACloud Service
-      * [!DNL Adobe Sign] 云服务
+      * [!DNL Adobe Sign] Cloud Service
       * Adobe FontsCloud Service
 
-   1. 点按 **[!UICONTROL 代码编辑器脚本迁移]**，指定保存可重用函数的位置，然后点击**[!UICONTROL 开始迁移].
+   1. 选择 **[!UICONTROL 代码编辑器脚本迁移]**，指定保存可重用函数的位置，然后选择**[!UICONTROL 开始迁移].
 
    Cloud Service不支持规则编辑器脚本。 此 **[!UICONTROL 代码编辑器脚本迁移]** 工具将环境中的所有规则脚本转换为可重用的函数，并将可重用的函数应用于适当位置的可视化编辑器。 这些可重用函数以客户端库形式保存，并帮助您保持现有功能不变。 该工具会自动将生成的可重用函数应用于相应的自适应Forms。
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '2638'
-ht-degree: 10%
+source-wordcount: '2627'
+ht-degree: 9%
 
 ---
 
@@ -92,14 +92,14 @@ ht-degree: 10%
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL 章节标题] | 为常用组件列表添加章节标题。 |
 | [!UICONTROL 单行文本] | 添加单行文本属性。 它存储为字符串。 |
-| [!UICONTROL 多值文本] | 添加多值文本属性。它存储为字符串数组。 |
+| [!UICONTROL 多值文本] | 添加多值文本属性。 它存储为字符串数组。 |
 | [!UICONTROL 数字] | 添加一个数值组件。 |
 | [!UICONTROL 日期] | 添加一个日期组件。 |
 | [!UICONTROL 下拉列表] | 添加一个下拉列表。 |
-| [!UICONTROL 标准标记] | 添加标记. |
+| [!UICONTROL 标准标记] | 添加标记。 |
 | [!UICONTROL 智能标记] | 通过自动添加元数据标记来增强搜索功能。 |
 | [!UICONTROL 隐藏字段] | 添加隐藏字段。 在保存资源时，它将作为POST参数发送。 |
-| [!UICONTROL 资产引用对象] | 添加此组件可查看资产引用的资产列表。 |
+| [!UICONTROL 资产引用方式] | 添加此组件可查看资产引用的资产列表。 |
 | [!UICONTROL 资产引用] | 添加以显示引用资产的资产列表。 |
 | [!UICONTROL 产品引用] | 添加以显示与资产链接的产品列表。 |
 | [!UICONTROL 上下文元数据] | 添加以控制其他元数据选项卡在资源属性页面中的显示。 |
@@ -223,11 +223,11 @@ Experience Manager仅允许您删除自定义架构表单。 不允许删除默�
 按资产划分的元数据继承基于应用于层次结构中顶级文件夹的架构。 子文件夹应用或继承相同的架构。 如果在子文件夹级别应用了其他架构，则继承将停止。
 
 1. 在 [!DNL Experience Manager] 界面，导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**. 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
-1. 选中表单前面的复选框，例如默认元数据表单，然后单击 **[!UICONTROL 复制]** 并将其另存为自定义表单。 指定表单的自定义名称，例如 `my_default`. 或者，您也可以创建自定义表单。
+1. 选中表单前面的复选框（例如默认元数据表单），然后单击 **[!UICONTROL 复制]** 并将其另存为自定义表单。 指定表单的自定义名称，例如， `my_default`. 或者，您也可以创建自定义表单。
 
 1. 在 **[!UICONTROL 元数据架构Forms]** 页面上，选择 `my_default` 表单，然后单击 **[!UICONTROL 编辑]**.
 1. 在 **[!UICONTROL 元数据架构编辑器]** 页面，向架构表单中添加文本字段。 例如，添加带有标签的字段 **[!UICONTROL 类别]**.
-1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。
+1. 单击 **[!UICONTROL 保存]**. 修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。
 1. 选择 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
 1. 选择要应用已修改架构的文件夹，然后选择 **[!UICONTROL 应用]**.
 1. 如果文件夹应用了其他元数据架构，则会显示一条消息，警告您即将覆盖现有的元数据架构。 单击 **覆盖**.
@@ -245,7 +245,7 @@ Experience Manager仅允许您删除自定义架构表单。 不允许删除默�
 1. 单击Experience Manager徽标，然后导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**. 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
 1. 将默认元数据表单另存为自定义表单。 例如，将其另存为 `my_default`.
 1. 编辑自定义表单。 添加必填字段。 例如，添加 **[!UICONTROL 类别]** 字段并将字段设为必填。
-1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。 选择表单，然后选择 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
+1. 单击 **[!UICONTROL 保存]**. 修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。 选择表单，然后选择 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
 1. 导航到文件夹，然后上传一些缺少添加到自定义表单的必填字段元数据的资源。 资产的“卡片”视图上会显示一条消息，指出缺少必填字段的元数据。
 1. （可选）访问 `https://[server]:[port]/system/console/components/`. 配置并启用 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 默认禁用的组件。 设置Experience Manager检查资源上元数据有效性的频率。
 

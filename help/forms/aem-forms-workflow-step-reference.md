@@ -4,10 +4,10 @@ description: 以Forms为中心的工作流允许您快速构建基于自适应Fo
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签名文档步骤，生成打印输出步骤，生成非交互式PDF输出
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '7448'
-ht-degree: 1%
+source-wordcount: '7367'
+ht-degree: 0%
 
 ---
 
@@ -185,7 +185,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 ## 发送电子邮件步骤 {#send-email-step}
 
-使用电子邮件步骤发送电子邮件，例如包含记录文档、自适应表单链接的电子邮件 <!-- , link of an interactive communication-->，或者具有附加的PDF文档。 发送电子邮件步骤支持 [HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email). HTML电子邮件具有响应性，可适应收件人的电子邮件客户端和屏幕大小。 您可以使用HTML电子邮件模板来定义电子邮件的外观、配色方案和行为。
+使用电子邮件步骤发送电子邮件，例如，包含记录文档、自适应表单链接的电子邮件 <!-- , link of an interactive communication-->，或者具有附加的PDF文档。 发送电子邮件步骤支持 [HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email). HTML电子邮件具有响应性，可适应收件人的电子邮件客户端和屏幕大小。 您可以使用HTML电子邮件模板来定义电子邮件的外观、配色方案和行为。
 
 电子邮件步骤使用Day CQ Mail Service发送电子邮件。 在使用电子邮件步骤之前，请确保已配置电子邮件服务。 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [联系支持团队](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) 启用端口以发送电子邮件，并为您的环境启用SMTP协议。 该限制有助于提高平台的安全性。
 
@@ -283,7 +283,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
  <tbody> 
   <tr> 
    <td>属性</td> 
-   <td>价值<br /> </td> 
+   <td>值<br /> </td> 
   </tr> 
   <tr> 
    <td>名字<br /> </td> 

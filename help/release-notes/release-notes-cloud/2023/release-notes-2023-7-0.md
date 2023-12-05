@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版的发行说明。'
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 99%
+source-wordcount: '896'
+ht-degree: 97%
 
 ---
 
@@ -80,7 +80,7 @@ Assets Essentials 现在默认情况下根据相关性为搜索结果排序。�
 
 * [**现成的主题**](/help/forms/using-themes-in-core-components.md)**和模板**：使用我们现成的 OOTB 主题和模板开始您的表单创建过程，这些主题和模板专为经验丰富的专业人士和新表单作者定制。这些精心策划的主题和模板是使用自适应表单核心组件无缝构建的，可让您快速开始为常见用例创建表单。
 
-* **[Headless 表单的 React 组件](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：您现在可以使用现成的 React 组件预览和自定义 Headless 自适应表单演绎版。这些组件利用自适应表单核心组件中的 BEM 类进行样式设置，使您能够轻松地根据特定要求自定义其外观。
+* **[Headless 表单的 React 组件](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：您现在可以使用现成的 React 组件预览和自定义 Headless 自适应表单演绎版。这些组件使用来自自适应Forms核心组件的BEM类进行样式设置，使您能够轻松根据特定要求自定义其外观。
 
 * [**创建具有可重复部分的自适应表单**](/help/forms/create-forms-repeatable-sections.md)：现在可使基于自适应表单的[可折叠项](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)和[水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)组件能够对多数据记录捕获重复。这些可重复的部分可让您轻松提供多个数据条目。当预先未知所需的数据实例时，它非常有用。表单填写者可以轻松添加或删除相关部分，使表单能够适应不同的数据输入场景，并简化对同一数据记录发生次数的收集。
 
@@ -113,7 +113,7 @@ Assets Essentials 现在默认情况下根据相关性为搜索结果排序。�
 ### CDN 和 WAF 规则早期采用者计划 {#waf-early-adopter}
 
 基于以下项筛选 CDN 上的流量：
-* 请求标头和属性（例如IP地址）
+* 请求标头和属性（例如，IP 地址）
 * 已知与恶意流量相关的流量模式
 
 想试用该功能并分享反馈吗？使用您的官方电子邮件 ID 将电子邮件发送到 **aemcs-waf-adopter@adobe.com**，了解有关早期采用者计划的更多信息。空间是有限的。

@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 11%
+source-wordcount: '761'
+ht-degree: 10%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 11%
 
 要将内联样式添加到组件，请执行以下操作：
 
-1. 在表单编辑器中打开表单，并将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中，点按 ![画布下拉列表](assets/Smock_ChevronDown.svg) > **[!UICONTROL 样式]**.
-1. 在页面中选择组件，然后点按编辑按钮 ![编辑按钮](assets/edit.svg). 样式属性在侧栏中打开。
+1. 在表单编辑器中打开表单，并将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中选择 ![画布下拉列表](assets/Smock_ChevronDown.svg) > **[!UICONTROL 样式]**.
+1. 在页面中选择组件，然后选择编辑按钮 ![编辑按钮](assets/edit.svg). 样式属性在侧栏中打开。
 
    您还可以从侧栏中的表单层次结构树中选择组件。 表单层次结构树在侧栏中可用作表单对象。
 
@@ -46,7 +46,7 @@ ht-degree: 11%
    * [!UICONTROL 高级] （允许您为组件编写自定义CSS）
 
 1. 同样，可以为组件的其他部分应用样式，例如 [!UICONTROL 构件]， [!UICONTROL 题注]、和 [!UICONTROL 帮助].
-1. 点按 **[!UICONTROL 完成]** 确认更改或 **[!UICONTROL 取消]** 以放弃更改。
+1. 选择 **[!UICONTROL 完成]** 确认更改或 **[!UICONTROL 取消]** 以放弃更改。
 
 ## 示例：字段组件的内联样式 {#example-inline-styles-for-a-field-component}
 
@@ -81,7 +81,7 @@ ht-degree: 11%
   <tr>
    <td><p>标签</p> </td>
    <td><p>Dimension和位置&gt;宽度</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100像素</p> </td>
    <td><p>将标签的宽度固定为100px</p> </td>
   </tr>
   <tr>
@@ -111,9 +111,9 @@ ht-degree: 11%
 
 ## 复制并粘贴样式 {#copy-paste-styles}
 
-您还可以在自适应表单中将样式从一个组件复制并粘贴到另一个组件。 在 **[!UICONTROL 样式]** 在模式下，点按组件并点按复制图标 ![复制](assets/property-copy-icon.svg).
+您还可以在自适应表单中将样式从一个组件复制并粘贴到另一个组件。 在 **[!UICONTROL 样式]** 模式，选择组件并选择复制图标 ![复制](assets/property-copy-icon.svg).
 
-点按同一类型的其他组件，然后点按粘贴图标 ![复制](assets/Smock_Paste_18_N.svg) 以粘贴复制的样式。 您还可以点按“清除样式”图标 ![复制](assets/clear-style-icon.svg) 以清除应用的样式。
+选择相同类型的另一个组件，然后选择粘贴图标 ![复制](assets/Smock_Paste_18_N.svg) 以粘贴复制的样式。 也可以选择“清除样式”图标 ![复制](assets/clear-style-icon.svg) 以清除应用的样式。
 
 ## 为组件的不同状态设置样式 {#set-styles-for-states}
 
@@ -121,15 +121,15 @@ ht-degree: 11%
 
 要定义组件状态的样式：
 
-1. 在 **[!UICONTROL 样式]** 在模式中，点按该组件并点按编辑图标 ![编辑](assets/Smock_Edit_18_N.svg).
+1. 在 **[!UICONTROL 样式]** 模式，选择组件并选择编辑图标 ![编辑](assets/Smock_Edit_18_N.svg).
 
 1. 使用选择组件的状态 **[!UICONTROL 状态]** 下拉列表。
 
    ![选择状态](assets/select-state.png)
 
-1. 为组件的选定状态定义样式，然后点击 ![保存](assets/save_icon.svg) 以保存属性。
+1. 为元件的选定状态定义样式，然后选择 ![保存](assets/save_icon.svg) 以保存属性。
 
-您还可以模拟成功和错误状态。 点按展开图标以查看 **[!UICONTROL 模拟成功]** 和 **[!UICONTROL 模拟错误]** 选项。
+您还可以模拟成功和错误状态。 选择展开图标以查看 **[!UICONTROL 模拟成功]** 和 **[!UICONTROL 模拟错误]** 选项。
 
 ![模拟状态](assets/simulate-states.png)
 

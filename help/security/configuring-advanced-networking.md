@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3594'
-ht-degree: 100%
+source-wordcount: '3526'
+ht-degree: 98%
 
 ---
 
@@ -364,7 +364,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分钟后，对 Cloud Manager 环境 GET 端点的调用将显示状态 `ready`，指示对环境的更新已应用。
 
-请注意，即使没有环境流量路由规则（托管或绕过），仍必须调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`，只不过在调用时使用空负载。
+即使没有环境流量路由规则（托管或绕过）， `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 仍然必须调用，只不过使用空负载。
 
 ### 更新 VPN {#updating-the-vpn}
 
@@ -554,7 +554,7 @@ Header always set Cache-Control private
 
 如果已在主要区域启用高级网络配置，请执行以下步骤：
 
-1. 如果您已锁定基础设施，使得专用 AEM IP 地址被列入允许列表，则建议暂时禁用该基础设施中的任何拒绝规则。如果不这样做，您自己的基础设施会在短时间内拒绝来自新区域的 IP 地址的请求。请注意，如果您已通过完全限定域名 (FQDN) 锁定您的基础设施（例如，`p1234.external.adobeaemcloud.com`），则没有必要这样做，因为所有 AEM 区域都会从相同的 FQDN 输出高级网络流量
+1. 如果您已锁定基础设施，使得专用 AEM IP 地址被列入允许列表，则建议暂时禁用该基础设施中的任何拒绝规则。如果不这样做，您自己的基础设施会在短时间内拒绝来自新区域的 IP 地址的请求。如果您已通过完全限定的域名(FQDN)锁定了基础架构，则无需执行此操作，(`p1234.external.adobeaemcloud.com`，例如)，因为所有AEM区域都从同一FQDN输出高级网络流量
 1. 如高级网络文档中所述，通过对 Cloud Manager Create Network Infrastructure API 的 POST 调用，为次要区域创建程序范围的网络基础设施。负载的 JSON 配置相对于主要区域的唯一区别是区域属性
 1. 如果您的基础设施必须由 IP 锁定以允许 AEM 流量，请添加与 `p1234.external.adobeaemcloud.com` 匹配的 IP。每个区域应该有一个匹配的 IP。
 
@@ -564,7 +564,7 @@ Header always set Cache-Control private
 
 1. 通过 POST 调用 [Cloud Manager 创建网路基础设施 API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 为所有区域创建网络基础设施。负载的 JSON 配置相对于主要区域的唯一区别是区域属性。
 1. 对于暂存环境，通过运行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 启用和配置环境范围内的高级网络。有关更多信息，请在[此处](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)参阅该 API 文档。
-1. 如有必要，最好通过 FQDN（例如 `p1234.external.adobeaemcloud.com`）锁定外部基础设施。您可以通过 IP 地址进行锁定
+1. 如有必要，最好通过FQDN锁定外部基础架构(例如， `p1234.external.adobeaemcloud.com`)。 您可以通过 IP 地址进行锁定
 1. 如果暂存环境按预期工作，请为生产启用并配置环境范围内的高级网络配置。
 
 #### VPN {#vpn-regions}

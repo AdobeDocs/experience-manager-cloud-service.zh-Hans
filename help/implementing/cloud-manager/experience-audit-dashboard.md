@@ -2,10 +2,10 @@
 title: 体验审核仪表板
 description: 了解体验审核如何验证您的部署过程，并通过清晰、信息丰富的仪表板界面帮助确保部署的更改符合性能、可访问性、最佳实践和SEO的基线标准。
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 73%
+source-wordcount: '824'
+ht-degree: 70%
 
 ---
 
@@ -77,7 +77,7 @@ Cloud Manager中的体验审核可确保用户在站点上的体验达到最高�
 
 ![Lighthouse 得分图](assets/lighthouse-scores.png)
 
-请注意，图表上的每个点都是相关月份所有部署的平均值。
+图表上的每个点都是感兴趣的月份中所有部署的平均值。
 
 要导航回生产管道执行页面，只需选择浏览器上的后退箭头即可。
 

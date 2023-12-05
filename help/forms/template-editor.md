@@ -2,9 +2,9 @@
 title: 如何创建自适应表单模板？
 description: 使用模板编辑器创建自适应表单模板以定义基本结构和初始内容。
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2059'
 ht-degree: 4%
 
 ---
@@ -38,13 +38,13 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 
 创建文件夹后，打开该文件夹并执行以下步骤以创建模板：
 
-1. 点按 **[!UICONTROL 创建]** 在您创建的文件夹内。
-1. 在“选取模板类型”部分，选择 **[!UICONTROL 自适应表单模板]** 并点击 **[!UICONTROL 下一个]**.
+1. 选择 **[!UICONTROL 创建]** 在您创建的文件夹内。
+1. 在“选取模板类型”部分，选择 **[!UICONTROL 自适应表单模板]** 并选择 **[!UICONTROL 下一个]**.
 
-1. 在模板详细信息部分，提供模板标题并点按 **[!UICONTROL 创建]**.
+1. 在模板详细信息部分，提供模板标题并选择 **[!UICONTROL 创建]**.
 您还可以提供描述。
 
-1. 点按 **[!UICONTROL 完成]** 以返回到控制台，或点按 **[!UICONTROL 打开]** 以在编辑器中打开模板。
+1. 选择 **[!UICONTROL 完成]** 以返回到控制台，或选择 **[!UICONTROL 打开]** 以在编辑器中打开模板。
 
 ### 模板编辑器用户界面 {#template-editor-ui}
 
@@ -105,7 +105,7 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 
 选择初始内容选项后，模板的自适应表单容器会像要编辑的自适应表单一样打开。 与创作自适应表单一样，您可以指定初始设置，例如选择主题和提交操作。
 
-表单作者可将其用作创建表单的基础。 内容流结构在模板的初始内容层中指定。 要切换到编辑表单模板的初始内容，请在页面工具栏中的预览之前，点按 ![画布下拉列表](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始内容]**.
+表单作者可将其用作创建表单的基础。 内容流结构在模板的初始内容层中指定。 要切换到编辑表单模板的初始内容，请在页面工具栏中的预览之前，选择 ![画布下拉列表](assets/canvas-drop-down.png) **>** **[!UICONTROL 初始内容]**.
 
 
 在初始内容层中，创建作者用作基础的自适应表单模板。 创作模板与创作表单类似，只是使用侧栏中提供的选项。 侧栏提供内容、属性、资源和组件浏览器。
@@ -132,7 +132,7 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 * 您可以从侧栏中的组件浏览器拖放面板组件。
 * 您可以添加的子面板 `guideRootPanel` 从组件工具栏中。
 
-要创建“常规信息”和“专业信息”选项卡，请在 `guideRootPanel`. 选择面板并点按 ![cmppr](assets/configure-icon.svg) 以打开侧栏中的属性。 将元素名称更改为 `general-info` 和 `professional-info`和职称分别作为一般信息和专业信息。 在侧栏中，点按内容以打开内容浏览器。 在表单对象选项卡中，选择 `guideRootPanel`. 在编辑器中，选择guideRootPanel。 点按 ![cmppr](assets/configure-icon.svg) 以打开其属性。 在面板布局字段中，选择 **[!UICONTROL 顶部选项卡]** 并点击 **[!UICONTROL 完成]**. 应用选项卡式模板结构。
+要创建“常规信息”和“专业信息”选项卡，请在 `guideRootPanel`. 选择面板并选择 ![cmppr](assets/configure-icon.svg) 以打开侧栏中的属性。 将元素名称更改为 `general-info` 和 `professional-info`和职称分别作为一般信息和专业信息。 在侧栏中，选择内容以打开内容浏览器。 在表单对象选项卡中，选择 `guideRootPanel`. 在编辑器中，选择guideRootPanel。 选择 ![cmppr](assets/configure-icon.svg) 以打开其属性。 在面板布局字段中，选择 **[!UICONTROL 顶部选项卡]** 并选择 **[!UICONTROL 完成]**. 应用选项卡式模板结构。
 
 #### 在选项卡中添加内容 {#adding-content-in-tabs}
 
@@ -151,7 +151,7 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 1. 导航到 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 模板]**，然后打开已在其中创建模板的文件夹。
 
 1. 您创建的模板将标记为草稿。
-1. 选择模板并点按 **[!UICONTROL 启用]** 工具栏中。
+1. 选择模板并选择 **[!UICONTROL 启用]** 工具栏中。
 在创建自适应表单时，如果要求您选择模板，则可以看到列出的模板。
 
 ## 导入或导出模板 {#importing-or-exporting-a-template}
@@ -167,7 +167,7 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
 
 作者可以关联 [!UICONTROL 表单数据模型架构] 到模板编辑器中的自适应表单模板。 它允许作者从模板编辑器中选择架构。 在将架构与模板关联并且表单作者基于模板创建表单时，系统会为表单预先选择架构。 它有助于表单作者规范架构的使用，并节省表单作者的时间。 要在模板编辑器中选择表单数据模型架构，请执行以下操作：
 
-1. 点按 **[!UICONTROL 内容浏览器]** 位于左侧。
+1. 选择 **[!UICONTROL 内容浏览器]** 位于左侧。
 1. 转到表单容器 **[!UICONTROL 设置]**.
 1. 选择 **[!UICONTROL 数据模型]**.
 1. 通过以下方式选择您的表单数据模型 **[!UICONTROL 选择表单数据模型]** 并保存配置。

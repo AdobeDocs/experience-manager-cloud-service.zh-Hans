@@ -2,10 +2,10 @@
 title: 响应式布局
 description: AEM 让您能够为页面实现响应式布局
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 90%
+source-wordcount: '1737'
+ht-degree: 86%
 
 ---
 
@@ -49,7 +49,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 >[!TIP]
 >
->Adobe 提供了响应式布局的 [GitHub 文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)，前端开发人员可以参考该文档，以便在 AEM 之外使用 AEM 网格，例如在为将来的 AEM 站点创建静态 HTML 模型时。
+>Adobe提供 [GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) 响应布局的基础之上，作为前端开发人员可以使用的参考，例如在为将来的AEM站点创建静态AEM模型时，允许他们在AEM之外使用HTML网格。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ AEM 让您根据设备的宽度定义布局：
 
    模拟器工具栏会显示其他布局选项：
 
-   * **旋转设备** - 让您将设备从垂直（纵向）方向旋转到水平（横向）方向，反之亦然。
+   * **旋转设备**  — 允许您将设备从垂直（纵向）方向旋转到水平（横向）方向，反之亦然。
 
    ![旋转设备横向按钮](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![旋转设备纵向按钮](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -149,7 +149,7 @@ AEM 让您根据设备的宽度定义布局：
 >
 >由于布局容器是段落系统，因此删除该组件即意味着同时删除布局网格以及容器中包含的所有组件（及其内容）。
 
-1. 如果将鼠标悬停在网格占位符上或点击该占位符，则会显示操作菜单。
+1. 如果将鼠标悬停在栅格占位符上或选取该占位符，则会显示动作菜单。
 
    ![添加到布局容器](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 

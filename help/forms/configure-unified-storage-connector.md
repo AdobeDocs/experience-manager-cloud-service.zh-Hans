@@ -2,9 +2,9 @@
 title: 如何为AEM Forms配置统一存储连接器(USC)？
 description: 了解如何为AEM Forms管理Unified Storage Connector (USC)。 使用统一存储连接器(USC)将AEM Forms连接到外部数据存储。
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c33f59cb56decf1e5bbbe0b5bb084e906585e702
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,10 @@ ht-degree: 0%
 执行以下步骤以创建 [!DNL Azure] 存储配置：
 
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**.
-1. 选择一个文件夹以创建配置，然后点击 **[!UICONTROL 创建]**.
+1. 选择一个文件夹以创建配置，然后选择 **[!UICONTROL 创建]**.
 1. 在中指定配置的标题 **[!UICONTROL 标题]** 字段。
 1. 指定 [!DNL Azure] 中的存储帐户 **[!UICONTROL Azure存储帐户]** 字段。
-1. 指定用于访问Azure存储帐户的密钥 **[!UICONTROL Azure访问密钥]** 字段并点按 **[!UICONTROL 保存]**.
+1. 指定用于访问Azure存储帐户的密钥 **[!UICONTROL Azure访问密钥]** 字段并选择 **[!UICONTROL 保存]**.
 
 ### 为AEM Workflow配置统一存储连接器(USC) {#configure-unified-storage-connector-workflows}
 
@@ -39,17 +39,17 @@ ht-degree: 0%
 
 1. 在 **[!UICONTROL 工作流]** 部分，选择 **[!UICONTROL Azure]** 从“存储”下拉列表中。
 1. 指定 [Azure存储配置的配置路径](#create-azure-storage-configuration) 在 **[!UICONTROL 存储配置路径]** 字段。
-1. 点按 **[!UICONTROL Publish]** 然后点击 **[!UICONTROL 保存]** 以保存配置。
+1. 选择 **[!UICONTROL Publish]** 然后选择 **[!UICONTROL 保存]** 以保存配置。
 
 ### 为外部数据存储配置AEM Workflow模型 {#configure-workflow-external-data-storage}
 
 执行以下步骤可为外部数据存储配置AEM Workflow模型：
 
 1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**.
-1. 选择模型名称并点按 **[!UICONTROL 编辑]**.
-1. 点按页面信息图标并点按 **[!UICONTROL 打开属性]**.
+1. 选择模型名称并选择 **[!UICONTROL 编辑]**.
+1. 选择页面信息图标并选择 **[!UICONTROL 打开属性]**.
 1. 选择 **[!UICONTROL 将工作流数据存储外部化]**.
-1. 点按 **[!UICONTROL 保存并关闭]** 以保存属性。
+1. 选择 **[!UICONTROL 保存并关闭]** 以保存属性。
 
 >[!NOTE]
 >

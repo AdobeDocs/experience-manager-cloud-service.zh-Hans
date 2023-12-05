@@ -2,7 +2,7 @@
 title: 管理产品目录页面和模板
 description: 了解如何管理产品目录页面和模板
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -89,7 +89,7 @@ Venia storefront提供典型的产品目录体验，包括导航、登陆、类�
 
 ![创建模板 ](assets/create-template-picker.png)
 
-现在，我们必须将此模板分配给特定类别。 在中打开属性 **页面信息** 菜单，然后切换到商务选项卡。 单击文件夹图标以选择 **购买外观** 类别选取器中的类别。 可以通过启用复选框将多个类别分配给模板，还可以包括子类别。
+现在，您必须将此模板分配给特定类别。 在中打开属性 **页面信息** 菜单，然后切换到商务选项卡。 单击文件夹图标以选择 **购买外观** 类别选取器中的类别。 可以通过启用复选框将多个类别分配给模板，还可以包括子类别。
 
 ![创建模板关联](assets/create-template-associate.png)
 

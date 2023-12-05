@@ -2,10 +2,10 @@
 title: 使用内容转换器
 description: 了解如何转换内容结构为迁移到AEMas a Cloud Service做准备。
 exl-id: 40516ff7-5686-42e6-bdd1-c9c6de432b09
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 2%
+source-wordcount: '630'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 1. 您可以选择所有问题或特定问题，然后移动、移除或重命名以解决这些问题。 也可以使用添加自定义路径 **添加路径** 按钮进行标记。
 
    >[!NOTE]
-   > 使用移动操作时，建议将所有路径仅移动到一个文件夹(例如 `/etc/packages/content-transformation/paths`)，因此当安装备份包以将实例恢复到原始状态时，文件夹(`/etc/packages/content-transformation/paths`)可以通过删除操作来删除，以减小存储库大小。
+   > 使用移动操作时，建议将所有路径仅移动到一个文件夹(例如， `/etc/packages/content-transformation/paths`)，因此当安装备份包以将实例恢复到原始状态时，文件夹(`/etc/packages/content-transformation/paths`)可以通过删除操作来删除，以减小存储库大小。
 
    ![图像](/help/journey-migration/content-transformer/assets/ct-5.png)
    ![图像](/help/journey-migration/content-transformer/assets/ct-6.png)
@@ -63,7 +63,7 @@ ht-degree: 2%
    >[!NOTE]
    > 任何可更改源内容的操作(`move`/`remove`/`rename`)默认情况下，将使用以下路径创建源路径的备份包： `/etc/packages/content-transformation` 转换之前。 尽管每个操作对话框都有一个禁用/启用备份包创建的选项，但严格建议始终选择启用包创建。
 
-1. 下面显示了为路径移动操作创建的备份包的示例，单击install以恢复源路径。 安装过程只会将源路径带回其原始位置，而不会删除在转换过程中移动它们的路径。 要删除移动位置中的路径，请单击 **添加路径** 按钮以添加位置(例如 `/etc/packages/content-transformation/paths`)，选择位置并单击 **移除**.
+1. 下面显示了为路径移动操作创建的备份包的示例，单击install以恢复源路径。 安装过程只会将源路径带回其原始位置，而不会删除在转换过程中移动它们的路径。 要删除移动位置中的路径，请单击 **添加路径** 按钮以添加位置(例如， `/etc/packages/content-transformation/paths`)，选择位置并单击 **移除**.
 
    >[!CAUTION]
    > 不删除 `/etc/packages/content-transformation` 因为这是备份包所在的位置。 只有在您确定不再需要这些包时，才能删除此位置以减小存储库大小。

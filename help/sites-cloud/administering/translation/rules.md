@@ -4,10 +4,10 @@ description: 了解翻译规则如何标识需要翻译的内容。
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -214,7 +214,7 @@ ht-degree: 95%
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** 用于没有文本但有语言代码的属性，例如 `jcr:language`。用户不会翻译文本，而是进行从源到目标的语言区域设置。不会发送此类属性进行翻译。
+**`updateDestinationLanguage`** 用于没有文本但有语言代码的属性，例如， `jcr:language`. 用户不会翻译文本，而是进行从源到目标的语言区域设置。不会发送此类属性进行翻译。
 
 在 UI 中，您可以在&#x200B;**属性**&#x200B;选项卡中选中/取消选中 **Translate** 来修改此值，但目标对象是将语言代码作为值的特定属性
 

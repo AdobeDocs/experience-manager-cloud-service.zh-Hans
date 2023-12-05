@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 94%
+source-wordcount: '4863'
+ht-degree: 93%
 
 ---
 
@@ -115,7 +115,7 @@ AEM 提供将查询（两种类型）转换为[持久查询的功能，可由 Di
 
 不建议使用 POST 请求的 GraphQL 查询，因为它们未缓存，因此在默认实例中，Dispatcher 配置为阻止此类查询。
 
-虽然 GraphQL 也支持 GET 请求，但这些请求可能会达到限制（例如 URL 的长度），而使用“持久查询”可以避免这些限制。
+虽然GraphQL也支持GET请求，但这些请求可能会达到限制（例如URL的长度），而使用“持久查询”可以避免这些限制。
 
 有关更多详细信息，请参阅[启用持久化查询缓存](/help/headless/deployment/dispatcher-caching.md)。
 
@@ -253,7 +253,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 | 枚举 | `String` | 用于显示在模型创建时定义的选项列表中的选项 |
 | 标记 | `[String]` | 用于显示表示在 AEM 中所用标记的字符串列表 |
 | 内容引用 | `String`、`[String]` | 用于显示指向 AEM 中其他资源的路径 |
-| 片段引用 | *模型类型*<br><br>单个字段：`Model`-模型类型，直接引用<br><br>多字段，具有一个引用类型：`[Model]`-数组类型`Model`，直接从数组中引用<br><br>多字段，带有多个引用类型；`[AllFragmentModels]`-所有模型类型的数组，从具有合并类型的数组中引用 | 用于引用创建模型时定义的特定模型类型的一个或多个内容片段 |
+| 片段引用 |  *模型类型* <br><br>单个字段： `Model`  — 模型类型，直接引用 <br><br>具有一个引用类型的多字段： `[Model]`  — 类型数组 `Model`，直接从数组引用 <br><br>具有多个引用类型的多字段： `[AllFragmentModels]`  — 所有模型类型的数组，从具有合并类型的数组引用 | 用于引用创建模型时定义的特定模型类型的一个或多个内容片段 |
 
 {style="table-layout:auto"}
 
@@ -519,7 +519,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 * 每个子定义包含 `_expressions` 数组，提供表达式集，以及 `_logOp` 字段，该字段定义表达式应与之组合的逻辑运算符
 * 每个表达式由值（`value` 字段）和运算符（`_operator` 字段）定义，字段的内容应该与之进行比较
 
-请注意，如果要将项目与 `AND` 组合，则可以省略 `_logOp`；如果要检查是否相等，则可以省略 `_operator`，因为这些是默认值。
+您可以省略 `_logOp` 如果要将项目与 `AND` 和 `_operator` 如果您要检查是否相等，因为这些是默认值。
 
 以下示例演示了一个完整的查询，该查询过滤所有 `lastName` 为 `Provo` 或包含 `sjö` 的人员，与大小写无关：
 

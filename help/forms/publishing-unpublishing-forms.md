@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1327'
 ht-degree: 0%
 
 ---
@@ -62,19 +62,19 @@ ht-degree: 0%
 1. 登录到 [!DNL AEM Forms] 服务器。
 1. 使用下列选项之一选择和发布资产。
 
-   1. 将指针移动到资产上并点按 **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. 执行以下操作之一，然后点按发布：
+   1. 将指针移动到资产上并选择 **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. 执行以下操作之一，然后选择“发布”：
 
-      * 如果您在卡片视图中，请点击 **[!UICONTROL 输入选择]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然后点按资产。 已选择资源。
+      * 如果您在信息卡视图中，请选择 **[!UICONTROL 输入选择]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然后选择资源。 已选择资源。
       * 如果您在列表视图中，请选中资源的复选框。 已选择资源。
-      * 点按资产以显示其详细信息。
+      * 选择资产以显示其详细信息。
       * 通过点按查看属性显示资产的属性 ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
       >请勿选择多个资源。 不支持一次发布多个资产。
 
-1. 在发布过程开始时，会显示一个确认对话框，其中列出了所有相关资源和资源。 在包含相关资产的对话框中，点按 **[!UICONTROL Publish]**. 资产已发布，且显示发布资产成功对话框。
+1. 在发布过程开始时，会显示一个确认对话框，其中列出了所有相关资源和资源。 在包含相关资源的对话框中，选择 **[!UICONTROL Publish]**. 资产已发布，且显示发布资产成功对话框。
 
    >[!NOTE]
    >
@@ -99,9 +99,9 @@ ht-degree: 0%
 完成以下步骤以在服务器上发布所有相应的管理资产：
 
 1. 登录到 [!DNL AEM Forms] 服务器。
-1. 点按 **Adobe Experience Manager** 在全局导航栏中。
-1. 点按 ![工具](assets/tools.png)，然后点击 **Forms**.
-1. 点按 **发布相应的管理资源**.
+1. 选择 **Adobe Experience Manager** 在全局导航栏中。
+1. 选择 ![工具](assets/tools.png)，然后选择 **Forms**.
+1. 选择 **发布相应的管理资源**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. 点按 **Publish** 然后，在确认消息中，点击 **确定**.
+1. 选择 **Publish** 然后，在确认消息中，选择 **确定**.
 
    批处理完成后，您可以查看上次运行的详细信息。 这包括管理员登录信息以及批处理是否成功运行的信息。
 
@@ -123,27 +123,27 @@ ht-degree: 0%
 
 请按照以下步骤计划发布和取消发布Forms &amp; Documents资产的日期和时间：
 
-1. 选择资产并点按 **[!UICONTROL 查看属性]**. 此时将打开“元数据属性”页面。
-1. 在元数据属性页面中，点按 **[!UICONTROL 高级]**，然后点击 **[!UICONTROL 编辑]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. 选择资产并选择 **[!UICONTROL 查看属性]**. 此时将打开“元数据属性”页面。
+1. 在元数据属性页面中，选择 **[!UICONTROL 高级]**，然后选择 **[!UICONTROL 编辑]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. 在 **[!UICONTROL 准时发布]** 和 **[!UICONTROL 发布关闭时间]** 字段中，选择日期和时间。\
-   点按 **[!UICONTROL 完成]** ![aem6forms_check](assets/aem6forms_check.png).
+   选择 **[!UICONTROL 完成]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## 取消发布资源 {#unpublish-an-asset}
 
-1. 选择已发布的资产并点按 **[!UICONTROL 取消发布]** ![取消发布](assets/unpublish.png).
+1. 选择已发布的资产，然后选择 **[!UICONTROL 取消发布]** ![取消发布](assets/unpublish.png).
 1. 使用下列选项之一选择并取消发布资产。
 
-   1. 将指针移动到资产上并点按 **[!UICONTROL 取消发布]** ![取消发布](assets/unpublish.png).
-   1. 执行以下操作之一，然后点按取消发布：
+   1. 将指针移动到资产上并选择 **[!UICONTROL 取消发布]** ![取消发布](assets/unpublish.png).
+   1. 执行以下操作之一，然后选择取消发布：
 
-      * 如果您在卡片视图中，请点击 **[!UICONTROL 输入选择]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然后点按资产。 已选择资源。
+      * 如果您在信息卡视图中，请选择 **[!UICONTROL 输入选择]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然后选择资源。 已选择资源。
 
-      * 如果您在列表视图中，请将鼠标悬停在资产上并点按 ![selectassetcheckmark](assets/selectassetcheckmark.png) . 已选择资源。
+      * 如果您在列表视图中，将鼠标悬停在资产上并选择 ![selectassetcheckmark](assets/selectassetcheckmark.png) . 已选择资源。
 
-      * 点按资产以显示其详细信息。
+      * 选择资产以显示其详细信息。
       * 通过点按查看属性显示资产的属性 ![viewproperties](assets/viewproperties.png).
 
-1. 当取消发布过程启动时，将显示确认对话框。 点按 **[!UICONTROL 取消发布]**.
+1. 当取消发布过程启动时，将显示确认对话框。 选择 **[!UICONTROL 取消发布]**.
 
    >[!NOTE]
    >
@@ -157,8 +157,8 @@ ht-degree: 0%
 >
 >如果已从系统中删除发布书信中使用的任何依赖资产，请勿将书信恢复为上次发布状态。
 
-1. 选择资产并点按 **[!UICONTROL 还原到先前发布的版本]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. 在还原资源之前，会显示确认对话框。 点按 **[!UICONTROL 还原]**.
+1. 选择资产并选择 **[!UICONTROL 还原到先前发布的版本]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. 在还原资源之前，会显示确认对话框。 选择&#x200B;**[!UICONTROL 恢复]**。
 
    资产或书信将回滚到其先前发布的版本。
 
@@ -168,17 +168,17 @@ ht-degree: 0%
 >
 >删除资源会将其从发布实例中移除， 删除资产时，还会删除其版本历史记录（基础版本除外）。
 
-1. 选择资产并点按 **[!UICONTROL 删除]** ![删除](assets/delete.png).
+1. 选择资产并选择 **[!UICONTROL 删除]** ![删除](assets/delete.png).
 
    >[!NOTE]
    >
    >当您通过点按资产来显示资产详细信息，或者通过点按查看属性来显示资产的属性时，删除选项也可用 ![viewproperties](assets/viewproperties.png).
 
-1. 在删除资源之前，会显示确认对话框。 点按 **[!UICONTROL 删除]**.
+1. 在删除资源之前，会显示确认对话框。 选择&#x200B;**[!UICONTROL 删除]**。
 
    >[!NOTE]
    >
-   >仅删除选定的资源，并且不会删除依赖关系资源和资源。 要检查资产的引用，请点按 ![引用](assets/references.png) 然后选择资产。
+   >仅删除选定的资源，并且不会删除依赖关系资源和资源。 要检查资产的引用，请选择 ![引用](assets/references.png) 然后选择资产。
    >
    >
    >如果您尝试删除的资源是其他资源的子资源，则不会删除它。 要删除此类资产，请从其他资产中删除对此资产的引用，然后重试。
@@ -190,7 +190,7 @@ ht-degree: 0%
 要为表单启用身份验证，请执行以下操作：
 
 1. 在浏览器中，打开发布实例中的configMgr 。\
-   URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
+   URL： `https://<hostname>:<PublishPort>/system/console/configMgr`
 
 1. 在Adobe Experience Manager Web控制台配置中，单击 **Apache Sling身份验证服务** 以配置它。
 1. 在出现的Apache Sling身份验证服务对话框中，使用 **+** 按钮以添加路径。\

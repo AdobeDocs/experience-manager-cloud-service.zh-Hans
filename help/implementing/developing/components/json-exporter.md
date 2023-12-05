@@ -1,11 +1,11 @@
 ---
 title: 内容服务的 JSON 导出器
-description: AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，而不只是关注网页。它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。
+description: AEM Content Services旨在概括AEM中/来自AEM的内容的描述和交付，而不只是关注网页。 它们使用可供任何客户使用的标准化方法，将内容投放到非传统AEM网页的渠道。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 31%
+source-wordcount: '383'
+ht-degree: 17%
 
 ---
 
@@ -69,7 +69,7 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 
 * Assets HTTP API
    * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
-* Sling 模型:
+* Sling模型：
    * [Sling模型 — 自130年起将模型类与资源类型相关联](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 * 带有JSON的AEM：
    * [为组件启用 JSON 导出](enabling-json-exporter.md)

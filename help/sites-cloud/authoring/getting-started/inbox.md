@@ -2,10 +2,10 @@
 title: 您的收件箱
 description: 了解如何使用收件箱中收到的通知来管理您的任务。
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 95%
+source-wordcount: '910'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 ## 标题中的收件箱 {#inbox-in-the-header}
 
-任何控制台的标题中都会显示收件箱中的当前项目数。还可以打开指示器以快速访问需要执行操作的页面或访问收件箱：
+任何控制台的标题中都会显示收件箱中的当前项目数。还可以打开指示器以提供对需要操作的页面的快速访问或对收件箱的访问：
 
 ![标题中的收件箱概述](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -150,7 +150,7 @@ ht-degree: 95%
 
    * 确认相应的操作，例如，重新分配。
    * 取消操作
-   * 选择“上一步”箭头可返回到收件箱，例如，如果操作向导或文档页面已打开，则可返回收件箱。
+   * 选择“上一步”箭头可返回到收件箱，例如，如果操作向导或文档页面已打开，则可返回到收件箱。
 
 ## 创建任务 {#creating-a-task}
 

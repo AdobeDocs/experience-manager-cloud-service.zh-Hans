@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '922'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 Microsoft®Office和PDF文档的所有数字资源、元数据和内容都将进行提取并使其可搜索。 搜索允许对资产进行复杂的筛选，并完全尊重适当的权限。 数字资产管理中的元数据详细介绍了元数据。
 
-[!DNL Experience Manager Assets] 支持多种内容组织方式。 您可以使用文件夹以分层方式组织它们，也可以以无序、临时方式组织它们，例如标记。 用户可以在DAM资产编辑器中编辑显示子资产、演绎版和元数据的标记。
+[!DNL Experience Manager Assets] 支持多种内容组织方式。 您可以使用文件夹以分层方式组织它们，也可以以无序、临时方式组织它们，例如，标记。 用户可以在DAM资产编辑器中编辑显示子资产、演绎版和元数据的标记。
 
 <!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}

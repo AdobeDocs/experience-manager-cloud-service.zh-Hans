@@ -4,10 +4,10 @@ description: 了解如何在Adobe Experience Manager as a Cloud Service中配置
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3794'
-ht-degree: 3%
+source-wordcount: '3811'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 3%
 >* [智能图像处理](/help/assets/dynamic-media/imaging-faq.md)
 >* [缓存失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [热链接保护](/help/assets/dynamic-media/hotlink-protection.md)
->* [HTTP/2 内容交付](/help/assets/dynamic-media/http2faq.md)
+>* [HTTP/2内容交付](/help/assets/dynamic-media/http2faq.md)
 >* CDN级别的URL重定向
 >* Akamai ChinaCDN（用于在中国实现最佳交付）
 
@@ -100,12 +100,12 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    >[!NOTE]
    >
-   >Dynamic Media 不支持版本控制。此外，仅当出现以下情况时延迟激活才适用 **[!UICONTROL 发布资产]** 在“编辑Dynamic Media配置”页面中，将设置为 **[!UICONTROL 激活时]**.然后，直到首次激活资产为止。
+   >Dynamic Media 不支持版本控制。此外，仅当出现以下情况时延迟激活才适用 **[!UICONTROL 发布资产]** 在“编辑Dynamic Media配置”页面中，将设置为 **[!UICONTROL 激活时]**. 然后，直到首次激活资产为止。
    >
    >
    >激活资产后，所有更新都会立即实时发布到S7交付。
 
-   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
+   ![dynamicmediaconfiguration2已更新](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。新的Dynamic Media密码和配置已保存。 如果您选择 **[!UICONTROL 取消]** 而是不会进行密码更新。
 1. 在 **[!UICONTROL 配置Dynamic Media]** 对话框，选择 **[!UICONTROL 确定]** 以开始配置。
@@ -313,7 +313,7 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
    * 双击 **[!UICONTROL 已启用]** 字段。 默认情况下，将启用所有资源MIME类型(设置为 **[!UICONTROL true]**)，这意味着资产将同步到Dynamic Media以供处理。 如果要从处理中排除此资源MIME类型，请将此设置更改为 **[!UICONTROL false]**.
 
-   * 双击 **[!UICONTROL jobParam]** 以打开其关联的文本字段。 请参阅 [支持的MIME类型](/help/assets/file-format-support.md) 以获取可用于给定MIME类型的允许处理参数值列表。
+   * 双选 **[!UICONTROL jobParam]** 以打开其关联的文本字段。 请参阅 [支持的MIME类型](/help/assets/file-format-support.md) 以获取可用于给定MIME类型的允许处理参数值列表。
 
 1. 执行下列操作之一：
    * 重复步骤3-4以编辑更多MIME类型。
@@ -336,7 +336,7 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. 在页面上，向下滚动到名称 *Adobe CQ Scene7 Asset MIME 类型服务*，如下面的屏幕截图所示。在名称的右侧，点按&#x200B;**[!UICONTROL 编辑配置值]**（铅笔图标）。
+1. 在页面上，向下滚动到名称 *Adobe CQ Scene7 Asset MIME 类型服务*，如下面的屏幕截图所示。在名称的右侧，选择 **[!UICONTROL 编辑配置值]** （铅笔图标）。
 
    ![编辑配置值](assets/2019-08-02_16-44-56.png)
 
@@ -369,7 +369,7 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
    ![编辑CRXDE Lite的DWG文件](assets/crxdelite_cqdoc-14627.png)
 
-1. 使用MIME类型 `image_vnd.dwg` 仍被选中，从 **[!UICONTROL 属性]** 选项卡，在 **[!UICONTROL 已启用]** 行，在 **[!UICONTROL 值]** 列标题，双击值。 此 **[!UICONTROL 值]** 此时将打开下拉列表。
+1. 使用MIME类型 `image_vnd.dwg` 仍被选中，从 **[!UICONTROL 属性]** 选项卡，在 **[!UICONTROL 已启用]** 行，在 **[!UICONTROL 值]** 列标题，双击该值。 此 **[!UICONTROL 值]** 此时将打开下拉列表。
 1. 类型 `false` 在字段中(或选择 **[!UICONTROL false]** （从下拉列表中）。
 
    ![在CRXDE Lite中编辑MIME类型](assets/2019-08-02_16-60-30.png)
@@ -474,7 +474,7 @@ Dynamic Media Classic (Scene7)上传连接设置将Experience Manager资源同�
 
 **要更新到Dynamic Media Classic (Scene7)服务器的最大上传连接数，请执行以下操作：**
 
-1. 导航至 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. 导航到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在 **[!UICONTROL 连接数]** 字段，或 **[!UICONTROL 活动作业超时]** 字段，或同时使用两者，根据需要更改数字。
 
    此 **[!UICONTROL 连接数]** 设置可控制Experience Manager到Dynamic Media上传时允许的最大HTTP连接数。 通常，预定义十个连接值就足够了。

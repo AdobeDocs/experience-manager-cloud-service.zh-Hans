@@ -2,10 +2,10 @@
 title: Cloud Manager 常见问题解答
 description: 在 AEM as a Cloud Service 中查找有关 Cloud Manager 的最常见问题的答案。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 99%
+source-wordcount: '961'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 尝试将构建从 Java™ 8 切换到 Java™ 11 时，您的 AEM Cloud Manager 构建可能会失败。 如果您遇到以下错误，则需要移除 `maven-scr-plugin` 并将所有 OSGi 注释转换为 OSGi R6 注释。
 
 ```text
-[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
+[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
 有关如何删除此插件的说明，请见[此处。](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)
@@ -108,7 +108,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
    * 按照以下步骤在本地设置上模拟问题。
       1. 使用最新的 AEM SDK jar 在本地安装作者和发布实例。
       1. 登录作者实例。
-      1. 转到 **工具** > **部署** > **分布**.
+      1. 转至&#x200B;**工具** > **部署** > **分发**。
       1. 分发作为代码库一部分的内容包，并查看队列是否因错误而阻塞。
 
 ## 我无法使用 aio 命令设置变量。 我该怎么办？ {#set-variable}

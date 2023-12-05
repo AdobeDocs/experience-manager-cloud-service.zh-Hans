@@ -3,10 +3,10 @@ title: AEMas a Cloud Service2023.11.0版中迁移工具的发行说明
 description: AEMas a Cloud Service2023.11.0版中迁移工具的发行说明
 feature: Release Information
 exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
-source-git-commit: e2ab119315e18bbef40efb712bdf6397cfa8adfc
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 8%
+source-wordcount: '143'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* Cloud Acceleration Manager (CAM)已更新，可在成功完成迁移集提取后自动开始摄取。  用户无需等到提取完成后即可手动开始引入。 有关CAM中内容摄取的更多详细信息，请参阅 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process)
+* Cloud Acceleration Manager (CAM)已更新，可在成功完成迁移集提取后自动开始摄取。 用户无需等到提取完成后即可手动开始引入。 有关CAM中内容摄取的更多详细信息，请参阅 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#ingestion-process).
 
 ### 错误修复 {#bug-fixes-ctt}
 

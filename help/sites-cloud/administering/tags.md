@@ -2,10 +2,10 @@
 title: 管理标记
 description: 了解如何在 AEM 中管理标记以整理内容。
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 77%
+source-wordcount: '2200'
+ht-degree: 73%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 77%
 要访问标记控制台，请执行以下操作：
 
 1. 使用管理权限登录创作环境。
-1. 在全局导航菜单中，选择 **`Tools`** > **`General`** ->
+1. 在全局导航菜单中，选择 **`Tools`** > **`General`** >
    **`Tagging`**。
 
 ![AEM 中的标记控制台](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -91,7 +91,7 @@ ht-degree: 77%
 
 1. 输入所需信息后，选择 **创建**.
 
-将创建命名空间。请注意，在标记控制台中，命名空间位于最低级别（控制台的最左侧栏），并由文件夹图标表示，这反映了它们作为“容器”或其他标记分组的性质。
+将创建命名空间。在标记控制台中，命名空间位于最低级别（位于控制台的最左列），由文件夹图标表示，这反映了它们作为“容器”或其他标记分组的性质。
 
 您现在可以在此命名空间中[创建新标记](#creating-tags)或[管理现有标记](#managing-tags)。
 
@@ -135,7 +135,7 @@ ht-degree: 77%
 
    ![在控制台中选择标记](assets/select-tags.png)
 
-1. **发布标记**&#x200B;对话框要求确认发布所选标记。选择 **Publish**.
+1. **发布标记**&#x200B;对话框要求确认发布所选标记。选择&#x200B;**发布**。
 
    ![发布标记确认模式](assets/publish-tag.png)
 
@@ -163,7 +163,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 * [合并](#merging-tags)
 * [删除](#deleting-tags)
 
-请注意，当工具栏上的可用空间不足时，省略号图标后面会提供其他选项。
+当工具栏上有足够的可用空间时，省略号图标后面会提供其他选项。
 
 ### 查看标记属性 {#viewing-tag-properties}
 
@@ -215,7 +215,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![在控制台中选择标记](assets/select-tags.png)
 
-1. **取消发布标记**&#x200B;对话框要求确认发布所选标记。选择 **Publish**.
+1. **取消发布标记**&#x200B;对话框要求确认发布所选标记。选择&#x200B;**发布**。
 
    ![发布标记确认模式](assets/unpublish-tag.png)
 
@@ -243,7 +243,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![查看标记引用的详细信息](assets/tag-references-detail.png)
 
-将鼠标悬停在列表中的引用内容上方或点按它可显示内容的完整路径。
+将鼠标悬停在列表中或选择引用内容以显示内容的完整路径。
 
 有关选择查看模式和边栏的更多详细信息，请参阅 [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
@@ -359,7 +359,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 1. 选择要翻译的标记，然后选择 **编辑** 工具栏中。
 
-1. 在&#x200B;**编辑标记**&#x200B;对话框中的&#x200B;**本地化**&#x200B;列中，选择目标语言，例如德语。
+1. 在 **编辑标记** 对话框，在 **本地化** 列中，选择目标语言，例如德语。
 
 1. 在显示的&#x200B;**德语**&#x200B;字段中，提供翻译后的标题。
 

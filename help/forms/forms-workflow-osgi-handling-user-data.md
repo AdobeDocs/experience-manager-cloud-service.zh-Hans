@@ -5,10 +5,10 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-source-git-commit: f70e18b1c21fd530587694f91c3969e831cfc640
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 0%
+source-wordcount: '994'
+ht-degree: 1%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 1. 转到查询返回的工作流实例路径。 状态属性显示工作流实例的当前状态。
 
-   ![状态](assets/status.png)
+   ![status](assets/status.png)
 
 1. 在工作流实例节点中，导航到 `data/payload/`. 此 `path` 属性存储工作流实例的有效负荷路径。 您可以导航到路径，以访问有效负载中存储的数据。
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 
    1. 转到 `https://'[server]:[port]'/aem/start.html` 并使用管理员凭据登录。
    1. 导航到 **[!UICONTROL “工具”>“工作流”>“实例”]**.
-   1. 为用户选择相关工作流实例，然后点击 **[!UICONTROL 终止]** 终止正在运行的实例。
+   1. 为用户选择相关工作流实例，然后选择 **[!UICONTROL 终止]** 终止正在运行的实例。
 
       有关使用工作流实例的详细信息，请参阅 [管理工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#authoring).
 

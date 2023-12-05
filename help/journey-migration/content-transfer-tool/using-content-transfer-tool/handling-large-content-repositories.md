@@ -2,9 +2,9 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1800'
 ht-degree: 8%
 
 ---
@@ -179,7 +179,7 @@ AzCopy中的日志条目显示在提取日志中，并以c.a.g.s.m.c.azcopy.AzCo
 > 在提取的前几分钟，请密切观察提取日志是否有任何问题迹象。 例如，如果找不到源Azure容器，将记录以下内容：
 
 ```
-[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
+[AzCopy pre-copy] failed to perform copy command due to error: cannot start job due to error: cannot list files due to reason > github.com/Azure/azure-storage-blob-go/azblob.newStorageError, github.com/Azure/azure-storage-blob-go@v0.10.1-0.20210407023846-16cf969ec1c3/azblob/zc_storage_error.go:42
 [AzCopy pre-copy] ===== RESPONSE ERROR (ServiceCode=ContainerNotFound) =====
 [AzCopy pre-copy] Description=The specified container does not exist.
 [AzCopy pre-copy] RequestId:5fb674b9-201e-001b-2a5b-527400000000

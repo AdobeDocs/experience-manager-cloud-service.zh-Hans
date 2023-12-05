@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1278'
 ht-degree: 23%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 23%
 
 ### [!DNL Forms] 预发行版本中的新增功能 {#prerelease-features-forms}
 
-* **[将自适应Forms连接到Microsoft® SharePoint列表](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms提供了一个OOTB集成，可用于将表单数据直接提交到SharePoint List，让您能够利用SharePoint的“列表”功能。 您可以将Microsoft SharePoint列表配置为表单数据模型的数据源，并使用 **使用表单数据模型提交** 提交操作以将自适应表单连接到SharePoint列表。
+* **[将自适应Forms连接到Microsoft® SharePoint列表](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms提供了一个OOTB集成，可让您将表单数据直接提交到SharePoint List，从而让您能够使用SharePoint的“列表”功能。 您可以将Microsoft SharePoint列表配置为表单数据模型的数据源，并使用 **使用表单数据模型提交** 提交操作以将自适应表单连接到SharePoint列表。
 
 <!-- 
 
@@ -105,7 +105,7 @@ ht-degree: 23%
 
 * **[将自适应表单提交到Adobe Workfront Fusion场景](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**：Formsas a Cloud Service提供开箱即用的选项，可轻松地将自适应表单与Adobe Workfront连接。 这简化了将自适应表单提交到Adobe Workfront场景的过程，允许您在提交自适应表单时触发Workfront Fusion场景。
 
-* **[从右至左语言支持](/help/forms/supporting-new-language-localization-core-components.md)**：基于核心组件构建的自适应Forms现在能够以从右至左(RTL)语言呈现，如阿拉伯语、波斯语和乌尔都语。 全球有超过20亿人使用RTL语言。 通过RTL语言中的表单，您可以扩展自适应表单的覆盖范围，以迎合这些不同的受众并利用RTL市场。 在某些地区，提供当地语言表格也是法律要求。 通过容纳本地语言，您不仅可以向更广泛的受众敞开大门，还可以确保遵守相关法律和法规。
+* **[从右至左语言支持](/help/forms/supporting-new-language-localization-core-components.md)**：基于核心组件构建的自适应Forms现在能够以从右至左(RTL)语言呈现，如阿拉伯语、波斯语和乌尔都语。 全球有超过20亿人使用RTL语言。 通过RTL语言中的表单，您可以扩展自适应表单的影响范围，以迎合这些不同的受众并选择进入RTL市场。 在某些地区，提供当地语言表格也是法律要求。 通过容纳本地语言，您不仅可以向更广泛的受众敞开大门，还可以确保遵守相关法律和法规。
 
   ![从右至左语言支持](/help/forms/assets/right-to-left-language-support.png)
 

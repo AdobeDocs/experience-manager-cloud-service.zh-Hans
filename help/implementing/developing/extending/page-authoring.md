@@ -2,10 +2,10 @@
 title: 自定义页面创作
 description: 了解 AEM as a Cloud Service 提供的用于自定义页面创作功能的机制。
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 96%
+source-wordcount: '937'
+ht-degree: 94%
 
 ---
 
@@ -158,7 +158,7 @@ Clientlib 允许您扩展默认实现，以启用新功能，同时重新使用�
 
 ## 添加新的页面操作。 {#add-a-new-page-action}
 
-用于向页面工具栏添加新的页面操作，例如&#x200B;**返回 Sites**（控制台）操作。
+要向页面工具栏中添加新的页面操作，例如， **返回站点** （控制台）操作。
 
 ### 代码示例 {#code-sample-3}
 

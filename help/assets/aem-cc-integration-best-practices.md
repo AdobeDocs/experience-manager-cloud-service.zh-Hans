@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '3489'
-ht-degree: 15%
+source-wordcount: '3431'
+ht-degree: 14%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Creative Cloud为创意团队提供了一个解决方案和服务生态系
 | 创意用户从中发现资源 [!DNL Experience Manager]，打开并使用它们，编辑和上传更改到 [!DNL Experience Manager]，并将新文件上传到 [!DNL Experience Manager]，无需离开他们的 [!DNL Creative Cloud] 应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign。 |
 | 企业用户可简化打开和使用资产、编辑和上传更改的操作 [!DNL Experience Manager]，并将新文件上传到 [!DNL Experience Manager] 桌面环境中的。 他们使用通用集成在本机桌面应用程序中打开任何资源类型，包括非Adobe资源类型。 | [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 在Win和Mac桌面上Experience Manager桌面应用程序 |
 | 营销人员和企业用户可在Experience Manager中发现、预览、许可并保存和管理Adobe Stock资源。 许可并保存的资源可提供选定的Adobe Stock元数据以便更好地管理。 | [Experience Manager与Adobe Stock集成](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Web界面 |
-| 改善数字产品设计师和营销人员之间的协作。 让设计人员在Adobe XD画布上的设计和线框模型中使用数字资源。 |  [!DNL Adobe XD] 的 [[!DNL Adobe Asset Link] ](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
+| 改善数字产品设计师和营销人员之间的协作。 让设计人员在Adobe XD画布上的设计和线框模型中使用数字资源。 | [[!DNL Adobe Asset Link] 对象 [!DNL Adobe XD]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | 营销人员可以根据上传的资产和使用自定义创建的预定义操作自动创建变体和衍生品。 使用此自动化功能可以提高内容速度并减少手动操作。 | [内容自动化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] Web界面 |
 
 本文主要介绍协作需求的前两个方面。作为一个用例，简要提及了资产的大规模分发和采购。对于此类需求解决方案，请考虑 Adobe Brand Portal 或 Asset Share Commons。其他解决方案，例如 [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)，可根据以下项构建的解决方案： [资产共享公用](https://opensource.adobe.com/asset-share-commons/) 组件， [链接共享](share-assets.md)，使用 [Experience Manager Assets Web UI](/help/assets/manage-digital-assets.md) 应根据特定要求进行审查。
@@ -57,7 +57,7 @@ Adobe Creative Cloud为创意团队提供了一个解决方案和服务生态系
 
 ### 用例和Adobe解决方案的映射 {#mapping-of-use-cases-and-adobe-solutions}
 
-| 用例 | Adobe Asset Link | Experience Manager 桌面应用程序 | 备注或备用方法 |
+| 用例 | Adobe资源链接 | Experience Manager桌面应用程序 | 备注或备用方法 |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | 发现 — 浏览文件夹 | 是 | Experience ManagerWeb UI +桌面操作 | 浏览网络共享时，请关闭缩略图以避免下载资产的二进制文件。 |
 | 发现 — 访问收藏集 | 是 | Experience ManagerWeb UI +桌面操作 |  |
@@ -97,9 +97,9 @@ Adobe Creative Cloud为创意团队提供了一个解决方案和服务生态系
 
 * **次要资产更新/更改：**&#x200B;对数字资产进行快速、微小的更改。它通常是响应润饰或次要编辑请求、资产审阅或批准（例如，重新定位、更改文本大小、调整饱和度/亮度、颜色等）而生成的。
 * **主要资产更新/更改：**&#x200B;需要大量工作，并且有时必须在较长的一段时间内完成的数字资产更改。它通常包括多项更改。更新资产时必须多次保存。主要资产更新通常会导致资产进入 WIP 阶段。
-* **DAM：**&#x200B;数字资产管理。在本文档中，除非另有特别说明，否则它与 Experience Manager Assets 同义。
+* **DAM：**&#x200B;数字资产管理。在本文档中，除非另有特别说明，否则它与Experience Manager Assets同义。
 * **创意用户：**&#x200B;使用 Creative Cloud 应用程序和服务创建数字资产的创意专业人士。在某些情况下，创意用户可能是使用 Creative Cloud 但不创建数字资产的创意团队成员（如创意总监或创意团队经理）。
-* **DAM 用户：** DAM 系统的典型用户。根据组织的不同，DAM 用户可以是营销或非营销用户，例如业务线 (LOB) 用户、管理员、销售人员等。
+* **DAM 用户：** DAM 系统的典型用户。根据组织的不同，DAM用户可以是营销或非营销用户，例如业务线(LOB)用户、管理员、销售人员等。
 
 ### 使用Experience Manager与Creative Cloud集成时的注意事项 {#considerations-when-using-aem-and-creative-cloud-integration}
 
@@ -220,7 +220,7 @@ Experience Manager桌面应用程序为在本机应用程序中打开的资产�
 * 上传创意机构提供的资产
 * 如果在DAM之外完成选择，则从更大的集中上传选定的资产
 
-请注意，此描述是指以可操作方式上传文件（例如，每周或每次拍照），作为桌面用户工作流的常规部分。 此处不包含大型资产迁移。
+此描述指的是以可操作方式（例如，每周或每次拍照）上传文件，作为桌面用户工作流的常规部分。 此处不包含大型资产迁移。
 
 您可以使用以下上载功能：
 

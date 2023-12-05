@@ -2,10 +2,10 @@
 title: 新增发布区域
 description: 了解 AEM as a Cloud Service 如何支持附加的发布区域，以提高可用性并减少延迟。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 80%
+source-wordcount: '638'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->此功能目前仅适用于 AEM Sites。它也不能应用于沙盒程序。此外，请注意，要使用附加发布区域功能，您的程序需要更新到 12142 或更高版本的 AEM。
+>此功能目前仅适用于 AEM Sites。它也不能应用于沙盒程序。此外，其他发布区域功能要求您的程序更新到AEM发行版本12142或更高版本。
 
 ## 用例 {#use-cases}
 

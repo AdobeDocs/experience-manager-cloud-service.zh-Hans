@@ -2,9 +2,9 @@
 title: ContextHub JavaScript API参考
 description: 将ContextHub组件添加到页面后，脚本即可使用ContextHub JavaScript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4602'
 ht-degree: 2%
 
 ---
@@ -162,7 +162,7 @@ A `ContextHub.Utils.Persistence` 对象。 有关缺省值和初始化的信息�
 * **对象：** 键是属性名称。
 * **数组：** 键是数组索引。
 
-请注意，值可以是对象。
+值可以是对象。
 
 ##### 参数 {#parameters-addallitems}
 
@@ -390,7 +390,7 @@ ContextHub.Store.JSONPStore扩展 [ContextHub.Store.Core](#contexthub-store-core
    * `secure`：（字符串或布尔值）确定用于服务URL的协议：
       * `auto`： //
       * `true`： https://
-      * `false`: http://
+      * `false`： http://
 * **覆盖：** （布尔型）。 值 `true` 导致现有服务配置被替换为 `serviceConfig`. 值 `false` 导致现有服务配置属性与的属性合并 `serviceConfig`.
 
 #### getRawResponse() {#getrawresponse}
@@ -415,9 +415,9 @@ ContextHub.Store.JSONPStore扩展 [ContextHub.Store.Core](#contexthub-store-core
 * **`path`：** （字符串）服务的路径。
 * **`port`：** (Number)服务的端口号。
 * **`secure`：** （字符串或布尔值）确定用于服务URL的协议：
-   * `auto`: //
+   * `auto`： //
    * `true`： https://
-   * `false`: http://
+   * `false`： http://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -439,19 +439,19 @@ A `string` 表示服务URL的值。
 
 * **`name`：** （字符串）存储的名称。
 * **`config`：** （对象）包含服务属性的对象。 JSONPStore对象使用 `service` 用于构建JSONP服务的URL的对象：
-   * `eventDeferring`: 32.
+   * `eventDeferring`：32。
    * `eventing`：此存储的ContextHub.Utils.Eventing对象。 默认值为 `ContextHub.eventing` 对象。
    * `persistence`：此存储的ContextHub.Utils.Persistence对象。 默认情况下，使用内存持久性（JavaScript对象）。
-   * `service`: (对象)
+   * `service`：（对象）
       * `host`：（字符串）服务器名称或IP地址。
       * `jsonp`：（布尔值）值为true指示服务是JSONP服务，否则为false。 如果为True，则 `{callback: "ContextHub.Callbacks.*Object.name*}`对象已添加到 `service.params`.
       * `params`：（对象）表示为对象属性的URL参数。 参数名称和值分别是对象属性名称和值。
       * `path`：（字符串）服务的路径。
       * `port`：（数字）服务的端口号。
       * `secure`：（字符串或布尔值）确定用于服务URL的协议：
-         * `auto`: //
+         * `auto`： //
          * `true`： https://
-         * `false`: http://
+         * `false`： http://
       * `timeout`：（数字）超时前等待JSONP服务做出响应的时间，以毫秒为单位。
          * `ttl`：在两次调用JSONP服务之间经过的最小时间（以毫秒为单位）。 (请参阅 [查询服务](#queryservice-reload) 函数)。
 

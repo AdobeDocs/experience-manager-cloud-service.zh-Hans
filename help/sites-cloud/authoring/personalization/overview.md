@@ -2,10 +2,10 @@
 title: 个性化和内容定位
 description: 了解如何使用 AEM 创建个性化、有针对性的内容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
 source-wordcount: '1054'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -88,7 +88,7 @@ AEM 提供了用于以下情形的工具框架：
 
 构成体验的一组组件。
 
-[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment)由内容和信息（样式等）组成以创造体验；它们可以在页面创作时直接使用。 它们可以视为 AEM 页面的子集。支持内容创作者可在渠道（包括 Sites 页面和第三方系统）间重用内容。
+[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) 由内容和信息（样式等）组成以创造体验；它们可以在页面创作时直接使用。 它们可以视为 AEM 页面的子集。支持内容创作者可在渠道（包括 Sites 页面和第三方系统）间重用内容。
 
 对于个性化示例，可以组合标题、图像、描述和号召性用语按钮以形成 Teaser 体验。使用体验片段是使用 Adobe Target 个性化的关键部分。
 

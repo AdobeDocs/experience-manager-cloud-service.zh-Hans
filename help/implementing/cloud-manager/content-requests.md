@@ -2,9 +2,9 @@
 title: 了解 Cloud Service 内容请求
 description: 如果您从Adobe购买了内容请求许可证，请了解Adobe Experience Cloud as a Service测量的内容请求类型以及与组织分析报告工具的差异。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 10%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 ## Cloud Service内容请求的差异{#content-requests-variances}
 
-内容请求可能与组织的Analytics报告工具存在差异，如下表所示。 通常，Analytics工具通过客户端工具收集数据 <b>不应使用</b> 报告给定站点的内容请求数，原因很简单，它们通常依赖于触发的用户同意，因此会错过流量的很大一部分。 在日志文件中收集数据服务器端的Analytics工具，或者为在AEMas a Cloud Service之上添加自己的CDN的客户提供的CDN报告，将提供更好的计数。 要报告页面查看次数及其相关性能，AdobeRUM数据服务是Adobe推荐的选项。
+内容请求可能与组织的Analytics报告工具存在差异，如下表所示。 一般来说， *不要* 使用通过客户端工具收集数据的analytics工具来报告给定站点的内容请求数，原因很简单，它们通常依赖于要触发的用户同意，因此会错过流量的很大一部分。 在日志文件中收集数据服务器端的Analytics工具，或者为在AEMas a Cloud Service之上添加自己的CDN的客户提供的CDN报告，将提供更好的计数。 要报告页面查看及其相关性能，AdobeRUM数据服务是Adobe推荐选项。
 
 | 差异原因 | 解释 |
 |---|---|
@@ -65,5 +65,5 @@ ht-degree: 10%
 | AEMas a Cloud ServicePod预热服务 | 已排除 | 用户代理： skyline-service-warmup/1.* |
 | 著名的搜索引擎、社交网络和HTTP库（由Fastly标记） | 已排除 | 著名的服务会定期访问站点以刷新其搜索索引或服务：<br><br>示例：<br>· AddSearchBot<br>·AhrefsBot<br>· Applebot<br>·向Jeeves Corporate Spider咨询<br>·宾博特<br>·必应预览<br>·边界点<br>·内置于<br>·字节蜘蛛<br>·爬网工具引擎<br>· Facebookexternalhit<br>·Google AdsBot<br>· Google AdsBot Mobile<br>·谷歌机器人<br>· Google Bot Mobile<br>·爬虫程序<br>· LucidWorks<br>· MJ12bot<br>·平多姆<br>·Pinterest<br>· SemrushBot<br>·站点改进<br>·存储机器人<br>· StatusCake<br>· YandexBot |
 | 排除Commerce integration framework调用 | 已排除 | 这些是向AEM发出的请求，将转发到Commerce integration framework，URL开头为 `/api/graphql` — 为了避免重复计数，它们不计费Cloud Service。 |
-| 不包括 `manifest.json` | 已排除 | 清单不是API调用，它旨在提供有关如何在桌面或手机上安装网站的信息。 Adobe不应将JSON请求计为 `/etc.clientlibs/*/manifest.json` |
-| 不包括 `favicon.ico` | 已排除 | 虽然返回的内容不应为HTML或JSON，但我们发现，在某些场景（如SAML身份验证流）中，favicon可能会作为HTML返回，因此会从计数中显式排除。 |
+| 排除 `manifest.json` | 已排除 | 清单不是API调用，它旨在提供有关如何在桌面或手机上安装网站的信息。 Adobe不应将JSON请求计为 `/etc.clientlibs/*/manifest.json` |
+| 排除 `favicon.ico` | 已排除 | 虽然返回的内容不应为HTML或JSON，但我们发现，在某些场景（如SAML身份验证流）中，favicon可能会作为HTML返回，因此会从计数中显式排除。 |

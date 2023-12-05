@@ -4,10 +4,10 @@ description: 了解可用的强大 Live Copy 同步选项以及如何根据项�
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -95,7 +95,7 @@ Adobe Experience Manager提供了多个现成的同步配置。 在使用 Live C
 
 您可以配置多个支持相应同步操作的 OSGi 服务，以便它们不会影响特定的节点类型和属性。例如，许多与 AEM 内部功能相关的属性和子节点不应包含在 Live Copy 中。只应复制与页面用户相关的内容。
 
-使用 AEM 时，可通过多种方法管理此类服务的配置设置。请参阅[配置 OSGi](/help/implementing/deploying/configuring-osgi.md)，以了解更多详细信息和建议的做法。
+使用AEM时，可通过多种方法管理此类服务的配置设置。 请参阅 [配置OSGi](/help/implementing/deploying/configuring-osgi.md) 以了解更多详细信息和建议的做法。
 
 下表列出了可以为其指定要排除节点的同步操作。该表提供了要使用 Web 控制台进行配置的服务名称以及要使用存储库节点进行配置的 PID。
 
@@ -134,7 +134,7 @@ Adobe Experience Manager提供了多个现成的同步配置。 在使用 Live C
 
 您可以配置多个 OSGi 服务以支持与更新引用相关的对应同步操作。
 
-使用 AEM 时，可通过多种方法管理此类服务的配置设置。请参阅[配置 OSGi](/help/implementing/deploying/configuring-osgi.md)，以了解更多详细信息和建议的做法。
+使用AEM时，可通过多种方法管理此类服务的配置设置。 请参阅 [配置OSGi](/help/implementing/deploying/configuring-osgi.md) 以了解更多详细信息和建议的做法。
 
 下表列出了可以为其指定引用更新的同步操作。该表提供了要使用 Web 控制台进行配置的服务名称以及要使用存储库节点进行配置的 PID。
 
@@ -182,7 +182,7 @@ MSM 允许您指定一般使用的转出配置集，并可在需要时覆盖特�
 
    ![覆盖 Live Copy 配置继承](../assets/live-copy-inherit-override.png)
 
-1. 选择 **保存并关闭**.
+1. 选择&#x200B;**保存并关闭**。
 
 ### 为 Blueprint 页面设置转出配置 {#setting-the-rollout-configuration-for-a-blueprint-page}
 

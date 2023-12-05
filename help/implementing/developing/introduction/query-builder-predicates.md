@@ -2,9 +2,9 @@
 title: 查询生成器谓词参考
 description: AEMas a Cloud Service中查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: e10c39c1d7fa05b738dd8f25662617a3a9568f83
+source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2270'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 * **`p.offset`**  — 指示结果页面开始的数字，即要跳过的项目数。
 * **`p.limit`**  — 表示页面大小的数字。
-* **`p.guessTotal`**  — 建议：避免计算完整结果总计，这可能代价高昂。 指示可计数的最大总数的数字（例如1000，一个数字，为用户提供对粗略大小和精确数字的足够反馈，以实现较小结果）。 或者， `true` 以只计算到所需的最小值 `p.offset` + `p.limit`.
+* **`p.guessTotal`**  — 建议：避免计算完整结果总计，这可能代价高昂。 指示可计数的最大总数的数字（例如，1000，一个数字，该数字为用户提供对粗略大小的足够反馈以及用于较小结果的精确数字）。 或者， `true` 以只计算到所需的最小值 `p.offset` + `p.limit`.
 * **`p.excerpt`**  — 如果设置为 `true`，在结果中包含全文摘录。
 * **`p.indexTag`**  — 如果设置，则将在查询中包含索引标记选项(请参阅 [查询选项索引标记](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag))。
 * **`p.facetStrategy`**  — 如果设置为 `oak`，查询生成器会将Facet提取委派给Oak(请参阅 [Facet](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#facets))。
@@ -76,7 +76,7 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-13}
 
-* **`orderby`**  — 以前导@表示的JCR属性名称，例如 `@jcr:lastModified` 或 `@jcr:content/jcr:title`或查询中的其他谓词，例如 `2_property`，进行排序
+* **`orderby`**  — 以前导@表示的JCR属性名称，例如， `@jcr:lastModified` 或 `@jcr:content/jcr:title`或查询中的其他谓词，例如， `2_property`，进行排序
 * **`sort`**  — 排序方向，可以 `desc` 表示降序或 `asc` 表示升序（默认）
 * **`case`**  — 如果设置为 `ignore`，它使排序不区分大小写，含义 `a` 早于 `B`；如果为空或被省略，则排序区分大小写，这意味着 `B` 早于 `a`
 
@@ -92,7 +92,7 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties}
 
-* **`boolproperty`**  — 属性的相对路径，例如 `myFeatureEnabled` 或 `jcr:content/myFeatureEnabled`
+* **`boolproperty`**  — 属性的相对路径，例如， `myFeatureEnabled` 或 `jcr:content/myFeatureEnabled`
 * **`value`**  — 要检查属性的值， `true` 或 `false`
 
 ### contentfragment {#contentfragment}
@@ -134,10 +134,10 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-3}
 
-* **`property`**  — 相对路径 `DATE` 属性，例如 `jcr:lastModified`
-* **`lowerBound`**  — 用于检查属性的日期下限，例如 `2014-10-01`
+* **`property`**  — 相对路径 `DATE` 属性，例如， `jcr:lastModified`
+* **`lowerBound`**  — 用于检查属性的日期下限，例如， `2014-10-01`
 * **`lowerOperation`** - `>` （较新）或 `>=` （在或更新），适用于 `lowerBound`. 默认为 `>`
-* **`upperBound`**  — 用于检查属性的上限，例如 `2014-10-01T12:15:00`
+* **`upperBound`**  — 用于检查属性的上限，例如， `2014-10-01T12:15:00`
 * **`upperOperation`** - `<` （较旧）或 `<=` （大于或等于），适用于 `upperBound`. 默认为 `<`
 * **`timeZone`**  — 未作为ISO-8601日期字符串提供时要使用的时区ID。 默认值是系统的默认时区。
 
@@ -186,7 +186,7 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-8}
 
-* **`language`** - ISO语言代码，例如 `de`
+* **`language`** - ISO语言代码，例如， `de`
 
 ### mainasset {#mainasset}
 
@@ -235,7 +235,7 @@ group.2_group.type=dam:Asset
 * **`notexpired`**  — 布尔值， `true` 对于尚未过期（日期在将来或相等）， `false` 表示已过期（过去日期）（必需）
 * **`property`**  — 相对路径 `DATE` 要检查的属性（必需）
 
-### path {#path}
+### 路径 {#path}
 
 此谓词在给定路径内搜索。
 
@@ -260,7 +260,7 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-15}
 
-* **`property`**  — 属性的相对路径，例如 `jcr:title`.
+* **`property`**  — 属性的相对路径，例如， `jcr:title`.
 * **`value`**  — 要检查属性的值；遵循JCR属性类型到字符串的转换。
 * **`N_value`**  — 使用 `1_value`， `2_value`， ...以检查多个值(与 `OR` 默认情况下，使用 `AND` 如果 `and=true`)。
 * **`and`**  — 设置为 `true` 用于组合多个值(`N_value`)，带有 `AND`
@@ -347,7 +347,7 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-21}
 
-* **`tag`**  — 要查找的标记标题路径，例如 `properties:orientation/landscape`
+* **`tag`**  — 要查找的标记标题路径，例如， `properties:orientation/landscape`
 * **`N_value`**  — 使用 `1_value`， `2_value`， ...以检查多个标记(已与 `OR` 默认情况下，使用 `AND` 如果 `and=true`)
 * **`property`**  — 要查看的属性（或属性的相对路径）（默认值） `cq:tags`)
 
@@ -359,7 +359,7 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#properties-22}
 
-* **`tagid`**  — 要查找的标记ID，例如 `properties:orientation/landscape`
+* **`tagid`**  — 要查找的标记ID，例如， `properties:orientation/landscape`
 * **`N_value`**  — 使用 `1_value`， `2_value`， ...以检查多个标记ID(与 `OR` 默认情况下，使用 `AND` 如果 `and=true`)
 * **`property`**  — 要查看的属性（或属性的相对路径）（默认值） `cq:tags`)
 
@@ -384,4 +384,4 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#Properties-2}
 
-* **`type`**  — 节点类型或 `mixin` 要搜索的名称，例如 `cq:Page`
+* **`type`**  — 节点类型或 `mixin` 要搜索的名称，例如， `cq:Page`
