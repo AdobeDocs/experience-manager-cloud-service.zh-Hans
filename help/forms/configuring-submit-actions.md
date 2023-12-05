@@ -2,7 +2,7 @@
 title: 如何为自适应表单配置提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 4e5a730f59a7594085319435bfe1ea3a7368bfc2
+source-git-commit: 738a0ceeb0a8cc9b08a1871ef3b2939cbcf2f80a
 workflow-type: tm+mt
 source-wordcount: '3913'
 ht-degree: 76%
@@ -411,7 +411,6 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 您可以配置自适应表单，以便在提交时将数据提交到Workfront Fusion。 Workfront Fusion允许流程自动化，以便用户能够专注于新任务，而不是一次又一次地重复相同的任务。 它自动化了简单和复杂的任务，节省了时间并确保了一致的流程执行。
 
 自适应Forms编辑器提供 **调用Workfront Fusion场景** 提交操作以将自适应Forms数据或附件发送到Workfront Fusion场景。 要使用提交操作将捕获的数据发送到Workfront Fusion方案，请参阅 [将自适应表单提交到Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
-
 
 ## 使用同步或异步提交 {#use-synchronous-or-asynchronous-submission}
 
