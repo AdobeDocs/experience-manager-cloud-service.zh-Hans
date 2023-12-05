@@ -4,8 +4,8 @@ description: 在内容传输工具中查看迁移集的日志
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 40%
+source-wordcount: '231'
+ht-degree: 36%
 
 ---
 
