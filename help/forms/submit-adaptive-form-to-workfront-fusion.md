@@ -3,7 +3,7 @@ title: Adobe Workfront Fusion与AEM Forms提交的集成
 description: Adobe Workfront Fusion允许您专注于新任务，而不是重复的任务。 您可以使用表单提交功能将Adobe Workfront Fusion连接到自适应表单。
 keywords: 将自适应表单提交到Adobe Workfront Fusion、Adobe Workfront Fusion与AEM Forms提交的集成、Adobe Workfront Fusion与AEM Forms的集成、Workfront Fusion与AEM Forms的集成、将Workfront Fusion连接到AEM Forms、AEM Forms和Workfront Fusion、如何将Workfront Fusion与AEM Forms连接？以及将Workfront Fusion连接到表单
 topic-tags: author, developer
-source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
+source-git-commit: 68314ca09594d3c4c5639363326117b89b733a4d
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 3%
@@ -128,6 +128,7 @@ ht-degree: 3%
 #### 1.3激活Workfront方案 {#activate-scenario}
 
 要激活方案，请执行以下操作：
+
 1. 单击 **[!UICONTROL 方案]** ![“共享”图标](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 在左侧面板中。
 1. 单击 **[!UICONTROL 非活动方案]** 选项卡。
 1. 单击 **开/关** 适用于您的AEM Forms方案的切换按钮。
