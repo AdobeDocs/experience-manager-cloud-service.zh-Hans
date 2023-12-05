@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ba7976c192e3696b1367a4f9a5bf0c320a5f258e
+source-git-commit: ce98053371c8a40db3935c47356213e712a4e39e
 workflow-type: tm+mt
-source-wordcount: '4420'
+source-wordcount: '4429'
 ht-degree: 99%
 
 ---
@@ -727,6 +727,8 @@ ht-degree: 99%
          + [构建产品体验](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 集成 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
+      + [Live Search CIF组件](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [Live Search弹出框CIF组件](/help/commerce-cloud/integrating/live-search-popover.md)
       + [第三方商业解决方案](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
