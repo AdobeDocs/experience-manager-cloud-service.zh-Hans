@@ -2,7 +2,7 @@
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
 description: 面向 Adobe Experience Manager as a Cloud Service 的图像管理系统支持
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 0074f483bffa1cd7c2cc468a74730672511f0956
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 99%
@@ -20,8 +20,6 @@ ht-degree: 99%
 >[!TIP]
 >
 >请参阅[配置对 AEM 的访问（适用于管理员）](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)，了解用户如何使用 Adob&#x200B;e IMS 向 AEM as a Cloud Service 进行身份验证。此外，还可以了解如何使用 Adob&#x200B;e IMS 用户、用户组和产品配置文件来控制对 AEM 及其特性和功能的访问。需要 Adobe ID。
-
-{{ims-group-profiles}}
 
 ## 主要亮点 {#key-highlights}
 
