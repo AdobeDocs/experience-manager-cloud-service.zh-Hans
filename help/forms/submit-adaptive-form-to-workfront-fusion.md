@@ -3,9 +3,9 @@ title: Adobe Workfront Fusion与AEM Forms提交的集成
 description: Adobe Workfront Fusion允许您专注于新任务，而不是重复的任务。 您可以使用表单提交功能将Adobe Workfront Fusion连接到自适应表单。
 keywords: 将自适应表单提交到Adobe Workfront Fusion、Adobe Workfront Fusion与AEM Forms提交的集成、Adobe Workfront Fusion与AEM Forms的集成、Workfront Fusion与AEM Forms的集成、将Workfront Fusion连接到AEM Forms、AEM Forms和Workfront Fusion、如何将Workfront Fusion与AEM Forms连接？以及将Workfront Fusion连接到表单
 topic-tags: author, developer
-source-git-commit: 5be0c5e347d2ec7ef660a701c8c6faf6a2d6d17a
+source-git-commit: cebdd5c4b1ad9531f2cc2893c2e7900658e451ed
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1240'
 ht-degree: 3%
 
 ---
@@ -144,7 +144,7 @@ ht-degree: 3%
 - [新的自适应Forms](#new-af-submit-action)
 - [现有自适应表单](#existing-af-submit-action)
 
-#### 2.1配置适用于Workfront Fusion的新自适应表单的提交操作 {#new-af-submit-action}
+#### 配置适用于Workfront Fusion的新自适应表单的提交操作 {#new-af-submit-action}
 
 要配置适用于Workfront Fusion的新自适应表单的提交操作，请执行以下操作：
 
@@ -165,7 +165,7 @@ ht-degree: 3%
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 1. 指定新自适应表单的名称，然后单击 **[!UICONTROL 创建]**.
 
-#### 2.2配置现有Workfront Fusion自适应表单的提交操作 {#existing-af-submit-action}
+#### 配置现有Workfront Fusion自适应表单的提交操作 {#existing-af-submit-action}
 
 要配置现有Workfront Fusion自适应表单的提交操作，请执行以下操作：
 
@@ -178,7 +178,7 @@ ht-degree: 3%
    ![适用于Workfront Fusion的提交操作](/help/forms/assets/workfront-scenario-existing-af.png)
 
 1. 打开 **[!UICONTROL 提交]** 选项卡。
-1. 选择 **[提交操作]** 作为 **[!UICONTROL 调用Workfront Fusion场景]**
+1. 选择 **[!UICONTROL 提交操作]** 作为 **[!UICONTROL 调用Workfront Fusion场景]**
 1. 选择 **[!UICONTROL Workfront Fusion场景]** 下拉列表中。
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 

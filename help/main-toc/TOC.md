@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ce98053371c8a40db3935c47356213e712a4e39e
+source-git-commit: 54ab961b9689075f6a34ff51ecf92bf1ae68ebf1
 workflow-type: tm+mt
 source-wordcount: '4429'
 ht-degree: 99%
@@ -581,11 +581,11 @@ ht-degree: 99%
          + [将自适应表单集成到 Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [查看和理解自适应表单分析报告](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [将自适应表单提交到Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
          + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [将基于 Foundation 组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-external-web-page.md)
       + 表单数据模型 {#use-form-data-model}
-         + [将自适应表单提交到Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [将 AEM Forms 连接到数据库或数据源](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
          + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
