@@ -3,15 +3,15 @@ title: AEM as a Cloud Service 术语
 description: 在登录 AEMaaCS 之前，了解系统的一些术语及其基本结构会很有帮助。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service 术语 {#terminology}
 
-在这部分中 [入门培训历程，](overview.md) 您会了解AEMas a Cloud Service的一些术语及其基本结构。
+在[上线历程](overview.md)的此部分中，您将了解 AEM as a Cloud Service 的一些术语及其基本结构。
 
 ## 目标 {#objective}
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service 是一种强大而灵活的工具，要使用任何工具
 
 ## AEMaaCS 结构 {#structure}
 
-就此次入门培训历程而言，不需要完全了解 AEM as a Cloud Service 的结构。 但是，熟悉以下概念将使以后的历程更容易理解。
+就此次上线历程而言，不需要完全了解 AEM as a Cloud Service 的结构。 但是，熟悉以下概念将使以后的历程更容易理解。
 
 ![Cloud Manager 结构](/help/journey-sites/quick-site/assets/cloud-manager-structure.png)
 
@@ -44,13 +44,13 @@ AEM as a Cloud Service 是一种强大而灵活的工具，要使用任何工具
    * WKND 媒体部门的 Assets 程序
 * WKND 杂志和 WKND 媒体项目都具有开发、暂存和生产&#x200B;**环境**。
 * **存储库**&#x200B;用于维护 WKND 杂志和 WKND 媒体的自定义代码和应用程序。
-* 各种 **工具和工作流** 在整个存储库中使用CI/CD管道部署代码、访问日志、访问AEM等。
+* 各种&#x200B;**工具和工作流**&#x200B;在存储库间发挥作用以使用 CI/CD 管道、访问日志、访问 AEM 等部署代码。
 
 ## 后续内容 {#what-is-next}
 
-现在您已完成 AEM 入门培训历程的这一部分，您应该了解：
+现在您已完成 AEM 上线历程的这一部分，您应该了解：
 
 * 构成 AEMaaCS 的不同层。
 * 每个层的基本功能。
 
-在此知识的基础上继续您的AEM入门培训历程，接下来阅读文档 [访问Admin Console](admin-console.md)，了解如何访问控制台并验证您作为系统管理员的状态。
+在此知识的基础上继续您的 AEM 上线历程，接下来阅读文档[访问 Admin Console](admin-console.md)，其中您将了解如何访问控制台并验证您作为系统管理员的身份。

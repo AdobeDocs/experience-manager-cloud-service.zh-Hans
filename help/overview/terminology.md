@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 简介 - 术语
 description: Adobe Experience Manager as a Cloud Service 简介 - 术语。
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 | 产品 | 描述 |
 |---|---|
-| AEM as a Cloud Service | 以云原生方式使用AEM应用程序 |
+| AEM as a Cloud Service | 使用 AEM 应用程序的云原生方式 |
 | AEM Assets as a Cloud Service | 数字资产管理 (DAM) 功能，可作为云原生的可伸缩解决方案，用于摄取、处理和管理您的数字资产，同时可与更广泛的 Adobe Experience Cloud 和 Adobe Creative Cloud 生态系统集成。 |
 | AEM Sites as a Cloud Service | AEM Sites 应用程序中使用的 AEM as a Cloud Service 实例。 |
 

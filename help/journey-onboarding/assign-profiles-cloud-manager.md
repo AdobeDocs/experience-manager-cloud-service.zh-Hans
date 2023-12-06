@@ -5,16 +5,16 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1527'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # 将团队成员分配给 Cloud Manager 产品配置文件 {#assign-team-members}
 
-在这部分中 [入门培训历程，](overview.md) 您将了解如何将团队成员分配给Cloud Manager产品配置文件。
+在[上线历程](overview.md)的此部分中，您将了解如何将团队成员分配给 Cloud Manager 产品配置文件。
 
 ## 目标 {#objective}
 
@@ -33,7 +33,7 @@ ht-degree: 92%
 
 ## 前提条件 {#prerequisites}
 
-要将团队成员分配给产品配置文件，您需要了解必须访问AEMas a Cloud Service的团队成员的详细信息，包括：
+要将团队成员分配给产品配置文件，您需要了解必须访问 AEM as a Cloud Service 的团队成员的详细信息，包括：
 
 * 名称
 * 电子邮件地址
@@ -73,7 +73,7 @@ Cloud Manager 是 AEM as a Cloud Service 的一个组成部分，用于管理用
 
    ![Cloud Manager](/help/journey-onboarding/assets/assign-team2.png)
 
-1. 您可以看到预配置的Cloud Manager产品配置文件的列表。
+1. 您可看到预先配置的 Cloud Manager 产品配置文件的列表。
 
    ![产品配置文件](/help/journey-onboarding/assets/assign-team3.png)
 
@@ -170,18 +170,18 @@ Cloud Manager 是 AEM as a Cloud Service 的一个组成部分，用于管理用
 
 恭喜！您新组建的 Cloud Manager 团队（包括分配给&#x200B;**业务负责人**&#x200B;配置文件的您自己）已经设置。 作为&#x200B;**业务负责人**&#x200B;的角色，您现在离登录 Cloud Manager 并启用云资源创建只有一步之遥。
 
-在入门培训历程的这一可选部分中，您了解了如何在 Admin Console 中将团队成员分配给配置文件。您现在应：
+在上线历程的这一可选部分中，您了解了如何在 Admin Console 中将团队成员分配给配置文件。您现在应：
 
 * 了解什么是产品配置文件。
 * 了解什么是 Cloud Manager。
 * 了解三个重要的 Cloud Manager 产品配置文件：**业务负责人**、**部署管理员**&#x200B;和&#x200B;**开发人员**。
 * 能够将团队成员分配给 Cloud Manager 产品配置文件。
 
-您现在可以通过下一次查看文档来继续您的入门培训历程 [访问Cloud Manager](cloud-manager.md) 在这里，您可以了解如何访问Cloud Manager和创建项目资源。
+您现在可继续您的上线历程，接下来查看文档[访问 Cloud Manager](cloud-manager.md)，其中您将了解如何访问 Cloud Manager 和创建您的项目资源。
 
 ## 其他资源 {#additional-resources}
 
-建议您继续如前所述的入门培训历程。 如果您想深入了解此历程中的特定主题，以下是一些其他资源。
+建议您如以前所述继续上线历程。如果您要深入了解本次历程中的某个特定主题，还有其他一些资源可供参考。
 
 * [Cloud Manager 简介](/help/onboarding/cloud-manager-introduction.md) – 了解 Cloud Manager、Cloud Manager 程序和环境。
 * [Cloud Manager 产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) – 了解 AEM as a Cloud Service 团队和产品配置文件。

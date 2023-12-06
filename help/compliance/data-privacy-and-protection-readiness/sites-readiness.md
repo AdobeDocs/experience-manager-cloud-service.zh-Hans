@@ -3,9 +3,9 @@ title: 数据保护和数据隐私条例 - Adobe Experience Manager as a Cloud S
 description: 了解 Adobe Experience Manager as a Cloud Service Sites 对各种数据保护和数据隐私条例的支持，包括欧盟通用数据保护条例 (GDPR)、加州消费者隐私法案以及如何在实施新的 AEM as a Cloud Service 项目时实现合规性。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1023'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Experience Manager 受 Cookie 选择退出服务的约束，该服务用�
 
    * 要选择退出对有关您访问本网站的数据进行聚合和分析，必须在浏览器上安装 Cookie。此 Cookie 表明您已选择退出。
 
-     如果您删除选择退出Cookie，或者如果您更改计算机或Web浏览器，则需要再次选择退出。
+     如果您删除选择退出 Cookie，或者如果您更换计算机或 Web 浏览器，则需要再次选择退出。
 
      选择退出 - 从访客会话聚合和分析中将我排除（安装 `amcglobal.sc.omtrdc.net` 选择退出 Cookie）- 单击此处。
 
@@ -96,7 +96,7 @@ AEM 为 ContextHub 提供了一个可选的数据层。这会将特定于访客�
 
 ### 实施选择加入/选择退出 {#implementing-opt-in-opt-out}
 
-站点所有者必须根据以下准则实施选择退出组件。
+网站所有者必须根据以下准则实施选择退出组件。
 
 这些指南将选择加入作为默认设置加以实施。因此，必须先获得网站访客的明确同意，之后才能将任何个人数据存储在浏览器（客户端）的持久存储中。
 

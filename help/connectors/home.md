@@ -4,9 +4,9 @@ description: 了解连接器、连接器的功能以及如何在 Experience Mana
 landing-page-description: 了解连接器、连接器的功能以及如何在 Experience Manager 中实施这些有价值的工具。
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 94%
 
 | 用户指南 | 描述 |
 |---|---|
-| [概述](/help/overview/home.md) | 本指南提供了Experience Manageras a Cloud Service的介绍性概述，包括简介、术语、架构等。 |
+| [概述](/help/overview/home.md) | 本指南提供 Experience Manager as a Cloud Service 的介绍性概述，包括简介、术语、架构等。 |
 | [发行说明](/help/release-notes/home.md) | 本指南提供了有关最新版本的 Experience Manager as a Cloud Service 的重要信息，包括已弃用的新增功能和已删除功能以及已知问题。 |
 | [安全用户指南](/help/security/home.md) | 了解有关 Experience Manager as a Cloud Service 的重要安全主题。 |
-| [入门培训历程](/help/journey-onboarding/overview.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
+| [上线历程](/help/journey-onboarding/overview.md) | 本指南概述了如何开始使用 Experience Manager as a Cloud Service，包括如何获取访问权限和重要的数据保护信息。 |
 | [Sites 用户指南](/help/sites-cloud/home.md) | 了解如何使用 Experience Manager Sites as a Cloud Service 进行创作和管理。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何使用和管理 Experience Manager Assets as a Cloud Service。 |
 | [迁移到 AEM as a Cloud Service](/help/journey-migration/getting-started.md) | 了解过渡到 Cloud Service 的历程。 |

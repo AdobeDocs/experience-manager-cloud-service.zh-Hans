@@ -3,9 +3,9 @@ title: 自定义站点主题
 description: 了解如何使用实时 AEM 内容构建、自定义和测试站点主题。
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '960'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 94%
 
    ![npm run live](assets/npm-run-live.png)
 
-1. 代理服务器在启动时将自动打开浏览器并转到 `http://localhost:7001/`。选择 **本地登录（仅管理任务）** 并使用AEM管理员提供给您的代理用户凭据进行登录。
+1. 代理服务器在启动时将自动打开浏览器并转到 `http://localhost:7001/`。选择&#x200B;**本地登录（仅管理任务）**，并使用 AEM 管理员提供给您的代理用户凭据进行登录。
 
    ![本地登录](assets/sign-in-locally.png)
 
@@ -127,7 +127,7 @@ ht-degree: 94%
 
 自定义项现在将安全地存储在 AEM Git 存储库中。
 
-## 下一步 {#what-is-next}
+## 后续内容 {#what-is-next}
 
 现在您已完成 AEM 快速站点创建历程的这一部分，您应：
 
@@ -135,7 +135,7 @@ ht-degree: 94%
 * 了解如何通过本地代理使用实际 AEM 内容测试您的主题自定义。
 * 了解如何将更改提交到 AEM Git 存储库。
 
-在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档 [部署自定义主题，](deploy-theme.md) 在这里，您将了解如何使用前端管道部署主题。
+在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[部署自定义主题](deploy-theme.md)，其中您将了解如何使用前端管道部署主题。
 
 ## 其他资源 {#additional-resources}
 

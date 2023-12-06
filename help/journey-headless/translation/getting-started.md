@@ -3,9 +3,9 @@ title: AEM Headless 翻译快速入门
 description: 了解如何组织您的 Headless 内容以及 AEM 的翻译工具的工作原理。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1413'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 93%
 
 ## 要求和先决条件 {#requirements-prerequisites}
 
-在开始翻译Headless AEM内容之前，需要满足几项要求。
+在开始翻译 Headless AEM 内容之前，需要满足多个要求。
 
 ### 知识 {#knowledge}
 
@@ -78,17 +78,17 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 
 由于内容模型定义了内容的结构，因此，您需要知道必须翻译模型的哪些字段。通常，您与内容架构师一起定义此内容。要浏览内容模型的字段，请执行以下步骤。
 
-1. 导航到 **工具** > **常规** > **内容片段模型**.
-1. 内容片段模型通常存储在文件夹结构中。为您的项目选择文件夹。
-1. 这将列出模型。选择模型以查看详细信息。
+1. 导航到&#x200B;**工具** > **常规** > **内容片段模型**。
+1. 内容片段模型通常存储在文件夹结构中。选择您的项目的文件夹。
+1. 随后将列出模型。选择模型以查看详细信息。
    ![内容片段模型](assets/content-fragment-models.png)
 1. **内容片段模型编辑器**&#x200B;将打开。
    1. 左列包含模型的字段。我们对此列感兴趣。
    1. 右列包含可添加到模型中的字段。我们可以忽略此列。
       ![内容片段模型编辑器](assets/content-fragment-model-editor.png)
-1. 选择模型的其中一个字段。 AEM 会标记该字段，其详细信息会显示在右列中。
+1. 选择模型的某个字段。AEM 会标记该字段，其详细信息会显示在右列中。
    ![内容片段模型编辑器详细信息](assets/content-fragment-model-editor-detail.png)
-1. 内容架构师将启用 **可翻译** 每个必须翻译的内容模型字段上的字段。
+1. 内容架构师在每个必须翻译的内容模型字段上启用&#x200B;**可翻译**&#x200B;字段。
 
 >[!TIP]
 >
@@ -178,7 +178,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 * 了解 AEM 如何存储 Headless 内容。
 * 熟悉 AEM 的翻译工具。
 
-在此知识的基础上继续您的AEM Headless翻译历程，接下来查看文档 [配置翻译集成](configure-connector.md) 了解如何将AEM连接到翻译服务。|
+在此知识的基础上继续您的 AEM Headless 翻译历程，接下来查看文档[配置翻译集成](configure-connector.md)，其中您将了解如何将 AEM 连接到翻译服务。
 
 ## 其他资源 {#additional-resources}
 

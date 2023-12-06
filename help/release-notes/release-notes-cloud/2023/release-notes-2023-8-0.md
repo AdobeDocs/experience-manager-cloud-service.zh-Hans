@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 * **[自适应表单中基于核心组件的表单片段](/help/forms/adaptive-form-fragments-core-components.md)**：在用表单片段提升您的表单生成体验时告别重复、优化数字库存并改善协作。这些可重用的组件无缝集成到多个表单中，从而简化创建一致且外观专业的表单的过程。利用“一次更改，随处反映”功能，表单片段确保实现可重用性、标准化和品牌一致性。由于在一处作出的更新自动传播到所有利用这些片段的表单，因此可体验到更高的可维护性和效率。
 
 * **[增强的 Adobe Sign 工作流步骤](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**：增强了 Adobe Sign 工作流步骤以包括以下各项：
-   * **Adobe Sign 的基于 Government ID 的身份验证**：Adobe Acrobat Sign 的基于 Government ID 的身份验证通过使用户可使用政府颁发的 ID（驾照、身份证、护照）验证其身份，多提供一层验证。通过使用可信的标识文档，此增强功能为签名过程增添了更高的可信度，使其非常适合需要增强的安全性、合规性和用户验证的情况。
+   * **Adobe Sign 的基于 Government ID 的身份验证**：Adobe Acrobat Sign 的基于 Government ID 的身份验证通过使用户可使用政府颁发的 ID（驾照、身份证、护照）验证其身份，多提供一层验证。通过利用可信身份证明文件，此增强将签名过程的可信度提高一级，使其成为需要更高的安全性、合规性和用户验证的场景的理想之选。
 
    * **Adobe Sign 文档的审核记录**：使用审核记录功能可详细了解 Adobe Sign 文档的生命周期。利用审核记录功能，您现在可保留与文档相关的所有操作和交互的全面记录。其中包括查看者、编辑者或签署文档者以及每个事件的时间戳等详细信息。此增强对于保持合规性、解决争议和确保数字协议的完整性至关重要。
 
@@ -152,7 +152,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 基于以下项筛选 CDN 上的流量：
 
-* 请求标头和属性（例如IP地址）
+* 请求标头和属性（例如，IP 地址）
 * 已知与恶意流量相关的流量模式
 
 想试用该功能并分享反馈吗？使用您的官方电子邮件 ID 将电子邮件发送到 **aemcs-waf-adopter@adobe.com**，了解有关早期采用者计划的更多信息。空间是有限的。

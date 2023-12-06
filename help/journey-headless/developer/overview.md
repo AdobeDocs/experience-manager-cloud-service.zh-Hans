@@ -4,9 +4,9 @@ description: 了解通过将 Adobe Experience Manager (AEM) 用作 Headless CMS 
 landing-page-description: 了解 Headless 内容交付和实施。详细了解如何在您的企业内制定策略。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1095'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 97%
 
 AEM 的 Headless 实施使用内容片段模型和内容片段来专注于创建结构化的、渠道中性的、可重用的内容片段，以及它们的跨渠道交付。为了实现这一点，它放弃了传统的全栈解决方案中的页面和组件管理。这是一种现代化的动态开发模式，用于实施数字体验。
 
-本指南将指导您了解AEM中的Headless实施主题，以便在完成后，您可以：
+本指南将引导您了解 AEM 中的 Headless 实施主题，因此当您完成后，您可以：
 
 * 完全了解 Headless 内容交付的含义和好处。
 * 了解 AEM 的 Headless 功能以及它们如何协作以提供 Headless 体验。
-* 开始实施您的第一个AEM Headless项目。
+* 迈出实施您的第一个 AEM Headless 项目的第一步。
 
 >[!TIP]
 >

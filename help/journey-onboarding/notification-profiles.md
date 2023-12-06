@@ -5,9 +5,9 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '982'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 ## 概述 {#overview}
 
-Adobe有时会就AEMas a Cloud Service环境联系用户。 除了产品内通知外，Adobe 偶尔也会使用电子邮件进行通知。此类电子邮件通知有两种类型：
+Adobe 有时会就 AEM as a Cloud Service 环境联系用户。除了产品内通知外，Adobe 偶尔也会使用电子邮件进行通知。此类电子邮件通知有两种类型：
 
 * **事件通知** – 这些通知是在事件期间或 Adobe 发现您的 AEM as a Cloud Service 环境存在潜在可用性问题时发送的。
 * **主动通知** – 当 Adobe 支持团队成员想要提供有关可使您的 AEM as a Cloud Service 环境受益的潜在优化或建议的指导时，将发送这些通知。
@@ -38,7 +38,7 @@ Adobe有时会就AEMas a Cloud Service环境联系用户。 除了产品内通�
 
 ## 新建 Cloud Manager 产品配置文件 {#create-profiles}
 
-要正确设置接收通知，请创建两个用户配置文件。 这些步骤只执行一次。
+要正确设置接收通知，请创建两个用户配置文件。这些步骤仅执行一次。
 
 1. 登录到 Admin Console，网址是 [`https://adminconsole.adobe.com`。](https://adminconsole.adobe.com)
 
@@ -52,7 +52,7 @@ Adobe有时会就AEMas a Cloud Service环境联系用户。 除了产品内通�
 
    ![Admin Console 中的实例列表](assets/cloud_manager_instance.png)
 
-1. 您可以查看所有已配置的Cloud Manager产品配置文件的列表。
+1. 您可看到所有已配置的 Cloud Manager 产品配置文件的列表。
 
    ![Admin Console 中的产品配置文件](assets/cloud_manager_profiles.png)
 
@@ -148,4 +148,4 @@ Adobe有时会就AEMas a Cloud Service环境联系用户。 除了产品内通�
 
 如果您想了解入门历程以外的内容，以下是额外的可选资源。
 
-* [操作中心](/help/operations/actions-center.md)  — 利用行动中心方便地对事件和其他重要信息采取行动。
+* [操作中心](/help/operations/actions-center.md) - 利用操作中心方便地针对事件和其他重要信息采取行动。

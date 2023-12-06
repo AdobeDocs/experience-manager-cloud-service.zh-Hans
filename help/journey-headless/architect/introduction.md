@@ -3,9 +3,9 @@ title: 对 AEM as a Headless CMS 进行内容建模 - 简介
 description: 介绍如何使用 Adobe Experience Manager as a Cloud Service as a Headless CMS 的功能对项目进行内容建模。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '745'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -29,14 +29,14 @@ ht-degree: 80%
 
 ![经典全栈 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-在全栈CMS中，处理内容的功能位于CMS中。 该系统的各种功能构成了 CMS 堆栈的不同组件。全栈解决方案有许多优点。
+在全栈 CMS 中，用于操作内容的功能在 CMS 中。该系统的各种功能构成了 CMS 堆栈的不同组件。全栈解决方案有许多优点。
 
 * 需要维护一个系统。
 * 集中管理内容。
 * 系统的所有服务都是集成的。
 * 内容创作是无缝进行的。
 
-因此，如果必须添加新渠道或需要支持新的体验类型，则可以在栈栈中插入一个（或多个）新组件，并且只有一个位置可以进行更改。
+因此，如果必须添加新渠道或需要支持新类型的体验，则可将一个（或多个）新组件插入到堆栈中，并且只有一处可作出更改。
 
 ![向堆栈添加新渠道](/help/journey-headless/developer/assets/adding-channel.png)
 
@@ -50,15 +50,15 @@ ht-degree: 80%
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消费服务，无论是AR体验、网络商店、移动体验、渐进式Web应用程序(PWA)等，都会从Headless CMS中获取内容并提供自己的渲染。 它们负责为您的内容提供它们自己的头。
+消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
 
 忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 
 ## 内容建模 {#content-modeling}
 
-内容建模（也称为数据建模）是您的专长，因此为Headless建模时必须考虑什么？
+内容建模（也称为数据建模）是您的专长，那么为 Headless 建模时必须考虑什么？
 
-对于Headless应用程序，为了能够访问您的内容并对其执行一些操作，内容必须具有预定义的结构。 您的内容可以采用自由格式，但这会使应用程序的生命周期变得&#x200B;*非常*&#x200B;复杂。
+要使 Headless 应用程序能够访问并处理您的内容，内容必须具有预定义的结构。您的内容可以采用自由格式，但这会使应用程序的生命周期变得&#x200B;*非常*&#x200B;复杂。
 
 对于 AEM，作为内容架构师，您将执行内容建模来设计一系列&#x200B;**内容片段模型**。它们定义了内容作者在创建包含内容的&#x200B;**内容片段**&#x200B;时使用的结构。
 
@@ -66,7 +66,7 @@ ht-degree: 80%
 
 这更像是开发详细信息 - 但您可能会它感兴趣，仅用于完成故事。
 
-在创建内容片段模型，并且作者使用它们生成内容后，Headless应用程序需要访问此内容。
+在您创建内容片段模型，并且您的作者已经使用这些模型生成内容后，Headless 应用程序将需要访问此内容。
 
 借助 Adobe Experience Manager (AEM) as a Cloud Service，可以使用 AEM GraphQL API 选择性地访问您的内容片段以仅返回所需内容。利用 API，开发人员可以制定用于选择特定内容的查询。此选择过程基于&#x200B;*您的*&#x200B;内容片段模型。
 

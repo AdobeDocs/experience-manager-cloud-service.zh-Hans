@@ -3,9 +3,9 @@ title: 了解 AEM 中的 Headless 内容及其翻译方法
 description: 了解 Headless 概念、它们如何映射到 AEM 以及 AEM 翻译理论。
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '742'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,14 +26,14 @@ ht-degree: 91%
 
 ![经典全栈 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-在全栈CMS中，处理内容的功能位于CMS中。 该系统的各种功能构成了 CMS 堆栈的不同组件。全栈解决方案有许多优点。
+在全栈 CMS 中，用于操作内容的功能在 CMS 中。该系统的各种功能构成了 CMS 堆栈的不同组件。全栈解决方案有许多优点。
 
 * 需要维护一个系统。
 * 集中管理内容。
 * 系统的所有服务都是集成的。
 * 内容创作是无缝进行的。
 
-因此，如果必须添加新渠道或支持新类型的体验，可以将一个（或多个）新组件插入堆栈中，并且只能在一个位置进行更改。
+因此，如果必须添加新渠道或需要支持新类型的体验，则可将一个（或多个）新组件插入到堆栈中，并且只有一处可作出更改。
 
 ![向堆栈添加新渠道](/help/journey-headless/developer/assets/adding-channel.png)
 
@@ -47,7 +47,7 @@ ht-degree: 91%
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消费服务，无论是AR体验、Web商店、移动体验、渐进式Web应用程序(PWA)等，都会从Headless CMS中获取内容并提供自己的渲染。 它们负责为您的内容提供它们自己的头。
+消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
 
 忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 
@@ -57,7 +57,7 @@ ht-degree: 91%
 
 利用 AEM 的强大功能，可通过 Headless 方式、全栈方式或同时在两个模型中交付内容。对于翻译专家来说，同一组翻译工具可应用于两种类型的内容，从而为您提供统一的内容翻译方法。
 
-在此历程中，您将了解有关AEM如何翻译内容的详细信息，但从较高层面来看，概念很简单：
+在继续此历程时，您将详细了解 AEM 如何翻译内容，但大致而言，这个概念比较简单：
 
 1. 通过配置翻译集成框架来定义与翻译服务的连接。
 1. 使用翻译规则定义应翻译的内容。

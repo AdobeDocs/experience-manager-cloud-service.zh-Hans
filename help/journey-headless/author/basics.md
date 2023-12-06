@@ -3,9 +3,9 @@ title: 学习创作基础知识
 description: 了解使用内容片段为 Headless CMS 创作内容的概念和机制。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1727'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ You can view additional information about items using the Rail Selector. This al
 
 ![“创建文件夹”选项](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-这将打开一个对话框，您可以在其中输入详细信息，然后使用 **创建**：
+随后将打开一个对话框，您可在其中输入详细信息，然后用&#x200B;**创建**&#x200B;进行确认：
 
 ![“创建文件夹”对话框](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -216,7 +216,7 @@ You can view additional information about items using the Rail Selector. This al
 
 例如，片段可以：
 
-* 需要多条信息，其中一些信息具有特定类型。对于Headless内容，引用是关键（您稍后将在历程中了解这些内容）。
+* 需要多条信息，其中一些信息具有特定类型。对于 Headless 内容，引用很重要（您将在历程的后面了解这些内容）。
 
 * 使您可编写大篇幅文本。这里提供了用于管理文本并设置其格式的其他选项。您甚至可以在全屏编辑器中打开各个文本字段（使用右侧的类似小屏幕的图标）
 
@@ -240,7 +240,7 @@ You can view additional information about items using the Rail Selector. This al
 
 * **内容片段模型**
 
-  您可以在编辑器的右侧面板中看到内容片段模型的名称。 这也是一个可将您转至模型编辑器的链接。
+  您可在编辑器的右侧面板中看到内容片段模型的名称。这也是一个可将您转至模型编辑器的链接。
 实际上，内容片段模型对您的内容片段至关重要，因为它们定义了您使用的结构。不过，创建和编辑这些模型（通常）是另一个角色（即内容架构师）的责任。
 
   >[!NOTE]

@@ -5,16 +5,16 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # AEM 用户任务 {#aem-user-tasks}
 
-在此可选部分中， [入门培训历程，](overview.md) 您了解了AEM用户如何访问AEMas a Cloud Service进行内容创作。
+在[上线历程](overview.md)的这一可选部分中，您将了解 AEM 用户如何访问 AEM as a Cloud Service 以创作内容。
 
 ## 迄今为止的故事 {#story-so-far}
 
@@ -52,7 +52,7 @@ ht-degree: 93%
 
 1. 从 Cloud Manager 的&#x200B;**程序和产品**&#x200B;页面中选择适当的程序，启动&#x200B;**概述**&#x200B;页面。如果您不确定要访问哪个程序，请咨询系统管理员。
 
-1. 从 **概述** 页面，单击Cloud Manager中的作者链接， **环境** 卡片。
+1. 从 Cloud Manager 中的&#x200B;**概述**&#x200B;页面中，单击&#x200B;**环境**&#x200B;信息卡上的作者链接。
 
    ![环境信息卡](/help/journey-onboarding/assets/author-environ.png)
 

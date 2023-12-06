@@ -1,13 +1,13 @@
 ---
 title: 分配 AEM 产品配置文件
-description: 配置云资源后，使用AEM产品配置文件授予您的团队访问AEM本身的权限。
+description: 在配置云资源后，可使用 AEM 产品配置文件授予您的团队访问 AEM 本身的权限。
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 80%
 >title="分配 AEM 产品配置文件"
 >abstract="您无权使用 Experience Manager Assets。请联系您的管理员。"
 
-在这部分中 [入门培训历程，](overview.md) 您将了解如何使用AEM产品配置文件授予您的团队访问AEM的权限。
+在[上线历程](overview.md)的此部分中，您将了解如何使用 AEM 产品配置文件授予您的团队访问 AEM 的权限。
 
 ## 目标 {#objective}
 
-在阅读了本次入门培训历程中的上一篇文档后， [创建环境，](create-environments.md) 并配置云资源，使用AEM产品配置文件授予您的团队访问AEM本身的权限。 作为系统管理员，您可以通过分配 AEM 产品配置文件来完成此操作。
+在您阅读此上线历程中的上一篇文档[创建环境](create-environments.md)并配置云资源后，可使用 AEM 产品配置文件授予您的团队访问 AEM 本身的权限。作为系统管理员，通过分配 AEM 产品配置文件即可实现这一点。
 
 阅读本文档后，您应该了解：
 
@@ -74,7 +74,7 @@ ht-degree: 80%
 
    ![选择实例](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. 您可以看到可根据用户的角色分配给用户的AEMas a Cloud Service产品配置文件的列表。
+1. 您可看到可根据用户的角色分配给用户的 AEM as a Cloud Service 产品配置文件的列表。
 
    ![产品配置文件](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -88,11 +88,11 @@ ht-degree: 80%
 
    ![管理访问权限](/help/journey-onboarding/assets/add-team1.png)
 
-1. 新的选项卡会将您导航到 Admin Console，您可以从中访问环境的作者实例。选择 **AEM管理员** 或 **AEM用户** 根据授予此人的权限。
+1. 新的选项卡会将您导航到 Admin Console，您可以从中访问环境的作者实例。根据必须授予此人的权限，选择 **AEM 管理员**&#x200B;或 **AEM 用户**。
 
    ![分配访问权限](/help/journey-onboarding/assets/add-team2.png)
 
-1. 选择 `AEM Administrator` 或 `AEM User` 并单击 **添加用户** 如下所示，并提交必要的详细信息以完成添加团队成员。
+1. 如下所示选择 `AEM Administrator` 或 `AEM User` 并单击&#x200B;**添加用户**，然后提交必要的详细信息以完成添加团队成员。
 
    ![添加团队成员](/help/journey-onboarding/assets/add-team3.png)
 
@@ -106,8 +106,8 @@ ht-degree: 80%
 
 然而，如果您想更好地了解作者和开发人员如何使用该系统，您可以继续此入门历程的两个可选部分：
 
-* [开发人员和部署管理员任务](developers.md)  — 在这里，您可以了解开发人员如何访问Git以存储其自定义代码并使用Cloud Manager管道进行部署。
-* [AEM用户任务](aem-users.md)  — 在这里，您可以了解如何访问AEM环境，以便开始创建内容。
+* [开发人员和部署管理员任务](developers.md) - 您将在这里了解开发人员如何访问 Git 以存储其自定义代码并使用 Cloud Manager 管道部署它。
+* [AEM 用户任务](aem-users.md) - 您将在这里了解如何访问您在其中可开始创建内容的 AEM 环境。
 
 ## 其他资源 {#additional-resources}
 

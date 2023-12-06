@@ -3,15 +3,15 @@ title: 访问 Admin Console
 description: 一旦您了解了入门所需的准备工作和 AEMaaCS 结构的基础知识，您就可以首次登录 Admin Console 了。
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1097'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # 访问 Admin Console {#accessing-admin-console}
 
-在这部分中 [入门培训历程，](overview.md) 了解首次登录系统之前所需的准备工作。
+在[上线历程](overview.md)的此部分中，您将了解首次登录系统之前所需的准备工作。
 
 ## 目标 {#objective}
 
@@ -30,7 +30,7 @@ Adobe Admin Console 是管理 Adobe 产品许可证和用户的中心位置。Ad
 
 ## Adobe ID {#adobe-id}
 
-要登录Admin Console，您需要一个Adobe ID。 Adobe ID 是一个绑定到特定电子邮件地址的帐户，登录和访问 AEM as a Cloud Service 或任何 Adobe 解决方案都需要该帐户。通过使用 Adobe ID，您可以将所有 Adobe 计划和产品与单个帐户关联。
+要登录到 Admin Console，您需要一个 Adobe ID。Adobe ID 是一个绑定到特定电子邮件地址的帐户，登录和访问 AEM as a Cloud Service 或任何 Adobe 解决方案都需要该帐户。通过使用 Adobe ID，您可以将所有 Adobe 计划和产品与单个帐户关联。
 
 当您作为系统管理员在 Admin Console 中设置团队时，请指定用作 Adobe ID 的电子邮件地址。
 
@@ -40,7 +40,7 @@ Adobe ID 有三种类型：
 
 * **Enterprise ID**：组织通常希望增加对用户帐户的控制。只有系统管理员才能创建 Enterprise ID，组织拥有这些帐户，Adobe 仅作为主机。
 
-* **Federated ID**：使用 Federated ID，组织将完全拥有和控制帐户。为此，贵组织必须将Adobe Experience Cloud与SAML2单点登录(SSO)系统集成。 这允许用户根据组织的 SSO 系统而不是 Adobe 托管的帐户进行身份验证。
+* **Federated ID**：使用 Federated ID，组织将完全拥有和控制帐户。为此，您的组织必须将 Adobe Experience Cloud 与您的 SAML2 单点登录 (SSO) 系统集成在一起。这允许用户根据组织的 SSO 系统而不是 Adobe 托管的帐户进行身份验证。
 
 作为系统管理员，您可以决定在设置 Enterprise 或 Federated ID 之前，使用个人 ID 将自己和团队载入 AEM as a Cloud Service。一旦设置了 Enterprise 或 Federated ID，就可以将成员转换为使用这些 ID。
 
@@ -50,11 +50,11 @@ Adobe ID 有三种类型：
 
 1. 作为系统管理员，您将在载入流程中收到来自 Adobe 的多封电子邮件。查找欢迎电子邮件，其中提供了有关您被授予访问权限的组织名称的信息。
 
-1. 单击 **入门** 欢迎电子邮件中的链接可导航至Admin Console。 如果找不到电子邮件，请直接在浏览器中输入网址 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 打开 Admin Console。
+1. 单击欢迎电子邮件中的&#x200B;**开始使用**&#x200B;链接以导航到 Admin Console。如果找不到电子邮件，请直接在浏览器中输入网址 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 打开 Admin Console。
 
    ![欢迎电子邮件](/help/journey-onboarding/assets/get-started-email.png)
 
-1. 使用您的 Adobe ID 登录。成功登录后，您会看到 **概述** Adobe Admin Console页面。
+1. 使用您的 Adobe ID 登录。成功登录后，您将看到 Adobe Admin Console 的&#x200B;**概述**&#x200B;页面。
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -66,7 +66,7 @@ Adobe ID 有三种类型：
 
    ![查看管理员](/help/journey-onboarding/assets/get-started2.png)
 
-1. 单击之后 **管理员** 从 **用户** 卡，您可以通过输入Adobe ID电子邮件、用户名、名字或姓氏进行搜索。
+1. 在从&#x200B;**用户**&#x200B;信息卡中单击&#x200B;**管理员**&#x200B;后，您可以通过输入 Adobe ID 电子邮件、用户名、名字或姓氏进行搜索。
 
    ![搜索用户](/help/journey-onboarding/assets/get-started3.png)
 
@@ -82,7 +82,7 @@ AEM as a Cloud Service 预先配置了 Adobe Identity Management System（也称
 
 通过使用 IMS，AEM as a Cloud Service 整合了 AEM 与 Adobe experience Cloud 其余部分之间的登录体验。拥有多个 Adobe 产品的组织通过在 Admin Console 中创建基于角色的组，然后通过 IMS 分配对多个产品（包括 AEM as a Cloud Service）的访问权限，受益颇多。
 
-在本次入门培训历程的下一部分，您将了解有关产品配置文件和分配用户的更多信息。
+在此上线历程的下一步中，您将详细了解产品配置文件和分配用户。
 
 ## 联系 Adobe 支持 {#support}
 

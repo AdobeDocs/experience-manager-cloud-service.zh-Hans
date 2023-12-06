@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 
 ## AEM 文档历程 {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/documentation-journeys.md) 通过提供叙述来帮助可能是AEM新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或AEM知识，从而将许多不同的、复杂的主题和功能联系起来。
+[文档历程](/help/journey-documentation/documentation-journeys.md)将许多不同且复杂的主题和功能联系在一起，其中娓娓道来地帮助读者（可能是 AEM 新手）从头到尾理解并解决业务问题，同时假定读者以前对相关主题或 AEM 知之甚少。
 
-文档历程是围绕最佳实践准则而设计的，其中包含了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及来自客户项目的反馈。
+文档历程是围绕最佳实践准则而设计的，其中参考了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及客户项目产生的反馈。
 
 如果您想了解 Adobe 就如何使用 AEM 解决站点业务案例提出的建议，则可以从 AEM Sites 历程开始。
 
@@ -45,9 +45,9 @@ AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将�
 | 翻译专家 | 定义应翻译的内容并管理这些工作流 | 此历程的受众 |
 | 内容作者 | 创建和管理作为站点交付的内容 | 内容作者创建翻译专家必须翻译的内容。 |
 | 管理员 | 管理 AEM 的基本设置和配置 | 翻译专家与管理员共同进行翻译所需的配置更改，例如安装翻译连接器。 |
-| 内容架构师 | 分析必须作为站点交付的数据的要求并定义此数据的结构 | 翻译专家与内容架构师共同定义内容的编排以便轻松翻译。 |
+| 内容架构师 | 分析必须作为站点交付的数据的要求并定义此数据的结构 | 翻译专家与内容架构师共同定义内容的组织结构，以便可轻松地翻译内容。 |
 
-此历程中的信息对所有角色都很有用，但一些信息可能对特定角色来说是多余的。 请继续关注[即将推出的涵盖其他角色的历程。](/help/journey-documentation/documentation-journeys.md#journeys)
+此历程中的信息可能对所有角色都很有用，但某些信息对某些角色而言可能是多余的。请继续关注[即将推出的涵盖其他角色的历程。](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## 站点翻译历程 {#the-journey}
 

@@ -3,9 +3,9 @@ title: 评估 KPI
 description: 了解如何评估 KPI 和定义报告流程
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '544'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 在 2018 年的研究中，IDC 分析了多家大型公司在使用 Adobe Experience Manager 时实现的业务价值。平均而言，组织使用 Experience Manager Sites 后，将其数字体验团队的工作效率提升了 23%，将进行小型编辑更改所需的时间减少了 64%，并将每个月的网站访问量提升了 10%。公司使用 Experience Manager Assets 后，将其数字资源团队的工作效率提升了 19%，将新资源的创建时间减少了 47%，并将市场营销活动的启动时间缩短了 20%。
 
-要同样实现这些显着的效益，贵企业必须有明确的Experience Manager实施目标。 您需要有 KPI 来帮助所有人将重心放在这些目标上。
+要实现同样的巨大收益，您的组织对于您的 Experience Manager 实施必须有明确的目标。您需要有 KPI 来帮助所有人将重心放在这些目标上。
 
 ## 评估 KPI
 

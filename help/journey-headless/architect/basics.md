@@ -3,9 +3,9 @@ title: 学习内容建模基础知识
 description: 学习使用内容片段为 Headless CMS 的内容建模的基础知识。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '900'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 
 >[!NOTE]
 >
->您也可以使用文本块中的链接来创建即兴引用。
+>还可通过在文本块中使用链接而创建临时引用。
 
 ## 结构层次（嵌套片段） {#levels-of-structure-nested-fragments}
 
@@ -130,7 +130,7 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 * 人员
 * 奖励
 
-看似直截了当，但一家公司既有CEO又有EMPLOYEES....他们每个人都被定义为一个人员。
+看似简单明了，但公司有 CEO 和员工....他们每个人都被定义为一个人员。
 
 一个人员可以获得一个（或两个）奖励。
 

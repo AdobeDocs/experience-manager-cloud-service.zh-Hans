@@ -5,16 +5,16 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1411'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # 开发人员和部署管理员任务 {#developer-deployment-manager}
 
-在此可选部分中， [入门培训历程，](overview.md) 您了解开发人员和部署管理员如何访问Git来开发应用程序并使用管道来部署它们。
+在[上线历程](overview.md)的此可选部分，您将了解开发人员和部署经理如何访问 Git 以开发应用程序和使用管道部署它们。
 
 ## 迄今为止的故事 {#story-so-far}
 
@@ -64,7 +64,7 @@ ht-degree: 95%
 
    ![访问“环境”信息卡上的“存储库信息”按钮](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. 单击 **查看存储库信息** 按钮打开对话框以查看：
+1. 单击&#x200B;**查看存储库信息**&#x200B;按钮以打开一个对话框以查看：
 
    * Cloud Manager Git 存储库的 URL。
    * Git 用户名。
@@ -119,7 +119,7 @@ ht-degree: 95%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
-1. 导航至 **管道** 中的卡 **项目概述** 页面并单击您在上一部分创建的管道旁边的省略号按钮，然后选择 **运行** 菜单。
+1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;信息卡，单击您在上一部分中创建的管道旁的省略号按钮，然后从菜单中选择&#x200B;**运行**。
 
 1. 管道将开始运行，并在&#x200B;**状态**&#x200B;栏中显示运行状态。
 

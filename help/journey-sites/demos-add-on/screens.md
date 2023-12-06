@@ -3,9 +3,9 @@ title: 为演示站点启用 AEM Screens
 description: 了解在您的演示站点上启用完整 AEM Screens as a Cloud Service 的步骤。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2665'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -100,9 +100,9 @@ We.Cafe 位置具有以下布局。
 
 ![We.Cafe 内容](assets/wecafe-content.png)
 
-现在您已拥有We.Cafe演示内容，可以选择如何测试AEM Screens：
+现在您已拥有 We.Cafe 演示内容，您可选择要如何测试 AEM Screens：
 
-* 如果您只想浏览AEM Sites控制台中的内容，只需开始浏览，并在以下位置发现更多内容： [其他资源](#additional-resources) 部分！ 无需执行其他操作。
+* 如果您只想在 AEM Sites 控制台中浏览该内容，那就开始浏览，并可在[其他资源](#additional-resources)部分中发现更多内容！无需执行其他操作。
 * 如果要体验 AEM Screens 的完整动态功能，请继续下一部分，即[动态更改 Screens 内容](#dynamically-change)。
 
 ## 动态更改 Screens 内容 {#dynamically-change}
@@ -145,7 +145,7 @@ We.Cafe 位置具有以下布局。
 
 要允许使用 API 密钥交换 Google Sheets 数据，您必须启用 Google Sheets API。
 
-1. 返回位于Google Cloud Console的 `https://console.cloud.google.com` ，然后使用汉堡菜单选择 **API和服务>库**.
+1. 返回项目的 Google Cloud Console（网址为 `https://console.cloud.google.com`），然后使用汉堡菜单选择 **API 和服务 > 库**。
 
    ![API 库](assets/api-library.png)
 
@@ -221,9 +221,9 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
 在演示中，可以更改表中的值。ContextHub 会识别这一点，并且内容会根据更新后的温度在渠道中进行调整。
 
-1. 在AEMaaCS创作实例上，转到 **全局导航>工具>站点> ContextHub**.
-1. 选择与您从 **We.Cafe 网站模板**&#x200B;创建的 Screens 项目同名的配置容器。
-1. 选择 **“配置”>“ContextHub配置”>“Google工作表”** 然后单击 **下一个** 在右上角。
+1. 在 AEMaaCS 创作实例上，转至&#x200B;**全局导航 > 工具 > 站点 > ContextHub**。
+1. 选择与您从 **We.Cafe 网站模板**&#x200B;创建 Screens 项目时为该项目所取名称同名的配置容器。
+1. 选择&#x200B;**配置 > ContextHub 配置 > Google 表格**，然后在右上角单击&#x200B;**下一步**。
 1. 该配置应已具有预配置的 JSON 数据。有两个值必须更改：
    1. 将 `[your Google Sheets id]` 替换为您之前保存的表 ID[。](#create-spreadsheet)
    1. 将 `[your Google API Key]` 替换为您之前保存的 API 密钥[。](#create-api-key)
@@ -236,7 +236,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 现在，AEM Screens 和 ContextHub 已连接到您的天气服务，您可以对其进行测试以了解 Screens 如何动态更新内容。
 
 1. 访问您的沙盒创作实例。
-1. 通过以下方式导航到站点控制台 **全局导航>站点** 并选择以下页面 **屏幕> &lt;project-name> >渠道>入口早上显示（纵向）**.
+1. 通过&#x200B;**全局导航 > 站点**&#x200B;导航到 Sites 控制台，然后选择以下页面 **Screens > &lt;project-name> > 渠道 > 入口早上显示（纵向）**。
 
    ![选择演示项目内容](assets/project-content.png)
 
@@ -325,7 +325,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
    ![查看 Screens 组织](assets/screens-org.png)
 
-1. 在左侧面板中，单击 **播放器管理>注册码** 然后单击 **创建代码** 在屏幕的右上角。
+1. 在左侧面板中，单击&#x200B;**播放器管理 > 注册码**，然后在屏幕的右上角单击&#x200B;**创建代码**。
 
 ![注册码](assets/registration-codes.png)
 
@@ -360,7 +360,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 
    ![查看 Screens 组织](assets/screens-org.png)
 
-1. 在左侧面板中，单击 **播放器管理>播放器** 您会看到之前安装并注册的播放器。
+1. 在左侧面板中，单击&#x200B;**播放器管理 > 播放器**，随后您将看到以前安装并注册的播放器。
 
    ![播放器](assets/players.png)
 
@@ -388,7 +388,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 * 了解 We.Cafe 演示内容。
 * 了解如何为 We.Cafe 配置 AEM Screens。
 
-您现在可以使用自己的演示站点来探索 AEM Screens 的功能。 继续历程的下一部分， [管理您的演示站点，](manage.md) 在这里，您可以了解可用于帮助您管理演示站点的工具以及如何删除它们。
+您现在可以使用自己的演示站点来探索 AEM Screens 的功能。 继续历程的下一部分[管理您的演示站点](manage.md)，其中您将了解帮助您管理演示站点可用的工具以及如何删除站点。
 
 您也可以查看[“其他资源”部分](#additional-resources)中的一些其他资源，详细了解您在此历程中看到的功能。
 
