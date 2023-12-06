@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1866'
 ht-degree: 1%
 
 ---
@@ -215,10 +215,9 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
            baseUrl: storeConfig.storeRootUrl
        },
        eventsCollector: {
-           // Enable the Experience Platform Connector and define the org and datastream to use
-           aep: {
-               orgId: // TODO: add your orgId
-               datastreamId: // TODO: add your datastreamId
+           eventForwarding: {
+               commerce: true,
+               aep: false,
            }
        }
    };
@@ -432,7 +431,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 ## 触发器 `addToCart` 事件和验证数据收集 {#event-trigger-verify}
 
-上述步骤将完成AEM Commerce和Experience Platform设置。 您现在可以触发 `addToCart` 事件并使用Experience Platform调试程序和数据集验证数据收集 __量度和图形__ 在产品UI中进行切换。
+上述步骤将完成AEM Commerce和Experience Platform设置。 您现在可以触发 `addToCart` 事件并使用验证数据收集 [雪铲检查器](https://chromewebstore.google.com/detail/snowplow-inspector/maplkdomeamdlngconidoefjpogkmljm?pli=1) 和数据集 __量度和图形__ 在产品UI中进行切换。
 
 要触发该事件，您可以从本地设置使用AEM创作或发布服务。 对于此示例，请通过登录到您的帐户来使用AEM author。
 
@@ -443,9 +442,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 1. 单击中的任意首选产品卡 __产品页面__，然后选择 __颜色，大小__ 以启用 __添加到购物车__ 按钮。
 
 
-1. 打开 __Adobe Experience Platform Debugger__ 扩展选项，然后选择 __Experience Platform周三SDK__ 在左边栏中。
-
-   ![AEP调试器](../assets/aep-integration/AEP-Debugger.png)
+1. 打开 __雪铲检查器__ 扩展选项，然后选择 __Experience Platform周三SDK__ 在左边栏中。
 
 
 1. 返回到 __产品页面__ 并单击 __添加到购物车__ 按钮。 这会向Experience Platform发送数据。 此 __Adobe Experience Platform Debugger__ 扩展会显示事件详细信息。
@@ -462,9 +459,9 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 ## 实施详细信息 {#implementation-details}
 
-此 [CIFExperience Platform连接器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 构建在 [适用于Adobe Commerce的Experience Platform连接器](https://marketplace.magento.com/magento-experience-platform-connector.html)，它是 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 项目。
+此 [CIFExperience Platform连接器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 构建在 [Adobe Commerce的数据连接](https://marketplace.magento.com/magento-experience-platform-connector.html)，它是 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 项目。
 
-PWA Studio项目允许您创建由Adobe Commerce或Magento Open Source提供支持的Progressive Web Application(PWA)店面。 该项目还包含一个名为的组件库 [佩雷格兰](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 用于向可视化组件添加逻辑。 此 [Peregrin库](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 还提供了由使用的自定义React挂钩 [Experience Platform连接器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 与Experience Platform无缝集成。
+PWA Studio项目允许您创建由Adobe Commerce或Magento Open Source提供支持的Progressive Web Application(PWA)店面。 该项目还包含一个名为的组件库 [佩雷格兰](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 用于向可视化组件添加逻辑。 此 [Peregrin库](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 还提供了由使用的自定义React挂钩 [CIFExperience Platform连接器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 与Experience Platform无缝集成。
 
 
 ## 支持的事件 {#supported-events}
