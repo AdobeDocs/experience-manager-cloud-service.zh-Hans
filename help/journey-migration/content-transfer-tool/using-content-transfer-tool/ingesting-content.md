@@ -2,9 +2,9 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2313'
 ht-degree: 5%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="增补引入"
->abstract="使用增补功能移动自上次内容转移活动以来修改的内容。引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
+>abstract="使用增补功能可移动自上次内容传输活动以来修改的内容。 引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hans" text="查看日志"
 
 内容传输工具具备允许通过执行 *增补* 迁移集的URL。 这样可修改迁移集，使其仅包含自上次提取以来已更改的内容，而无需再次提取所有内容。
@@ -93,6 +93,12 @@ ht-degree: 5%
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
 ## 疑难解答 {#troubleshooting}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion_troubleshooting"
+>title="内容摄取疑难解答"
+>abstract="请参阅摄取日志和文档，找到导致摄取失败的常见原因的解决方案，找到解决问题的方法并再次运行摄取。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="验证内容转移"
 
 ### CAM无法检索迁移令牌 {#cam-unable-to-retrieve-the-migration-token}
 
