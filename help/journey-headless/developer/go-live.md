@@ -67,7 +67,7 @@ ht-degree: 95%
 
 在将更新上传到 Cloud Manager 后，可以使用 [Cloud Manager 的 CI/CD 管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)将这些更新部署到 AEM as a Cloud Service。
 
-您可以使用 Cloud Manager CI/CD 管道开始部署您的代码，[此处](/help/implementing/deploying/overview.md)对这方面进行了广泛介绍。
+您可以使用 Cloud Manager CI/CD 管道开始部署您的代码，[此处](/help/implementing/deploying/overview.md)详细介绍了这方面。
 
 ## 性能监控 {#performance-monitoring}
 

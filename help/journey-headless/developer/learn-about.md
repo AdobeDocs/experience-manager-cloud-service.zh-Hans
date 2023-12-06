@@ -62,7 +62,7 @@ ht-degree: 97%
 
 ![Headless CMS](assets/headless-cms.png)
 
-消费服务（无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等）都将从 Headless CMS 获取内容并提供它们自己的呈现。它们负责为您的内容提供它们自己的头。
+消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
 
 忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 
@@ -106,7 +106,7 @@ Headless 展示了交付数字体验方面的灵活度。但这种灵活度本�
 
 ## AEM 和 Headless {#aem-and-headless}
 
-继续此开发人员历程，您将了解 AEM 如何支持 Headless 投放及其全栈投放功能。
+在您继续此开发人员历程时，您将了解 AEM 如何支持 Headless 投放及其全栈投放功能。
 
 作为数字体验管理领域的行业领导者，Adobe 意识到应对体验创建者所面临的实际挑战的理想解决方案很少是一个二选一的选择。正因为这一点，AEM 不仅支持这两个模型，而且唯一允许将两者无缝混合（融合 Headless 和全栈的优势）来帮助您向内容消费者提供最出色的服务，而无论他们身在何处。
 
@@ -120,7 +120,7 @@ Headless 展示了交付数字体验方面的灵活度。但这种灵活度本�
 * 了解为什么需要以及何时需要 Headless。
 * 从较高层面了解如何使用 Headless 概念以及如何将它们相互关联。
 
-以这些知识为基础，继续您的 AEM Headless 历程，接下来查看文档 [AEM Headless as a Cloud Service 快速入门](getting-started.md)，了解如何设置必要的工具以及如何开始考虑 AEM 处理 Headless 内容投放的方式及其先决条件。
+在此知识的基础上继续您的 AEM Headless 历程，接下来查看文档 [AEM Headless as a Cloud Service 快速入门](getting-started.md)，其中您将了解如何设置必要的工具以及如何开始考虑 AEM 处理 Headless 内容投放的方式及其先决条件。
 
 ## 其他资源 {#additional-resources}
 

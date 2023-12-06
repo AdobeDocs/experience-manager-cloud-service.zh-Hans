@@ -175,9 +175,9 @@ ht-degree: 99%
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
-+ 入门 {#onboarding}
++ 上线 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
-   + 入门培训历程 {#journey}
+   + 上线历程 {#journey}
       + [入门历程概述](/help/journey-onboarding/overview.md)
       + [入门准备](/help/journey-onboarding/preparation.md)
       + [AEM as a Cloud Service 术语](/help/journey-onboarding/terminology.md)
@@ -566,7 +566,7 @@ ht-degree: 99%
       + [常见问题](/help/forms/faq.md)
       + [已知问题](/help/forms/known-issues.md)
    + 设置和迁移 {#setup-configure-migrate}
-      + [Cloud Service 环境入门培训](/help/forms/setup-forms-cloud-service.md)
+      + [Cloud Service 环境上线](/help/forms/setup-forms-cloud-service.md)
       + [设置本地开发环境](/help/forms/setup-local-development-environment.md)
       + [在 AEM Forms as a Cloud Service 和本地开发环境上启用自适应表单核心组件](/help/forms/enable-adaptive-forms-core-components.md)
       + [配置统一存储连接器](/help/forms/configure-unified-storage-connector.md)
@@ -682,8 +682,8 @@ ht-degree: 99%
    + Screens as a Cloud Service 概述{#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
       + [了解角色定义](/help/screens-cloud/introduction/personas-screens-cloud.md)
-      + [Adobe Analytics 与 Screens Cloud 的集成](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
-   + Screens as a Cloud Service 入门培训 {#onboarding-screens-cloud}
+      + [Adobe Analytics 与 Screens Cloud 集成](/help/screens-cloud/introduction/adobe-analytics-integration-with-screens.md)
+   + Screens as a Cloud Service 上线 {#onboarding-screens-cloud}
       + [首次登录](/help/screens-cloud/onboarding-screens-cloud/first-time-login-screens-cloud.md)
       + 在 Cloud Manager 中添加 Screens 程序作为加载项 {#adding-screens-addon}
          + [将 Screens 程序作为加载项添加到新程序](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)
@@ -893,7 +893,7 @@ ht-degree: 99%
       + [许可证功能板](/help/implementing/cloud-manager/license-dashboard.md)
       + [了解 Cloud Service 内容请求](/help/implementing/cloud-manager/content-requests.md)
       + [Cloud Manager 常见问题解答](/help/implementing/cloud-manager/faqs.md)
-   + 部署 AEM as a Cloud Service {#developing}
+   + 针对 AEM as a Cloud Service 进行开发 {#developing}
       + [AEM 项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 项目存储库结构包](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)

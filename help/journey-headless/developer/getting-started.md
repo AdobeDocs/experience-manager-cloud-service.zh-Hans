@@ -117,7 +117,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 ### 您没有 Headless 内容的外部使用者，例如单页应用程序 (SPA)。 {#do-not-have-a-spa}
 
-如果您的目标是创建一个 SPA 来以 Headless 方式使用 AEM 中的内容，则可以使用内容片段等功能来管理您的 Headless 内容，还可以使用 AEM 的 SPA 编辑器框架来构建 SPA。
+如果您的目标是创建以 Headless 方式从 AEM 消耗内容的 SPA，则可使用内容片段等功能管理您的 Headless 内容，还可用 AEM 的 SPA 编辑器框架构建 SPA。
 
 借助 SPA 编辑器，SPA 不仅可以使用 AEM 中的内容，还可以由内容作者在 AEM 中进行完全编辑，这将使您能够在 AEM 中灵活地进行 Headless 交付和上下文编辑。
 
@@ -273,7 +273,7 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * 了解 AEM 的 Headless 集成级别。
 * 能够根据范围定义您的项目。
 
-您应该继续您的 AEM Headless 历程，接下来查看文档[首次 AEM Headless 使用体验的路径](path-to-first-experience.md)，了解如何设置必要的工具以及如何开始思考如何在 AEM 中对数据建模。
+您应该继续您的 AEM Headless 历程，接下来查看文档[首次 AEM Headless 使用体验的路径](path-to-first-experience.md)，其中您将了解如何设置必要的工具以及如何开始思考在 AEM 中为您的数据建模。
 
 ## 其他资源 {#additional-resources}
 
