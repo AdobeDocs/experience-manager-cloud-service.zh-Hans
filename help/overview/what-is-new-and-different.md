@@ -2,9 +2,9 @@
 title: 不同功能与新增功能 – Adobe Experience Manager as a Cloud Service
 description: 不同功能与新增功能 – Adobe Experience Manager (AEM) as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: d4502c7558fca7ecee89b2ce9429fd1c749d8e92
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1883'
 ht-degree: 100%
 
 ---
@@ -242,7 +242,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 >
 >如需了解详细信息，[基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md)是一个很好的起点。
 
-对于 Sites 和 Assets，以前使用过 AEM 的任何用户都会非常熟悉创作用户界面 (UI) 的基本原则。
+对于站点和 Assets，以前使用过 AEM 的任何用户都会非常熟悉创作用户界面 (UI) 的基本原则。
 
 主要差别在于 UI 完全支持触摸；经典 UI 不再可用。除此之外，基本的东西保持不变，只有一些明显的小变化。
 
