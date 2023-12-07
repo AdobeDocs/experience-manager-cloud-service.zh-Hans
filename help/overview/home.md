@@ -3,8 +3,8 @@ title: Experience Manager as a Cloud Service 入门
 description: 了解 Experience Manager as a Cloud Service 的工作方式以及软件可以对您的作用。
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 4a5e5f6a105db8f010fb7d49810e2ff2656f253a
-workflow-type: tm+mt
-source-wordcount: '360'
+workflow-type: ht
+source-wordcount: '328'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 100%
 * [近期文档更新](https://helpx.adobe.com/cn/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher 文档](/help/implementing/dispatcher/overview.md)
 * [HTL 文档](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)
-* [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+* [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
 * [GDPR 就绪](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hans)
