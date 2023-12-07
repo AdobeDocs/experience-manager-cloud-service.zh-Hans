@@ -4,7 +4,7 @@ description: 使用 Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: 5df61db6e0bd24d55ce73290b37ed55f167e0da2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '616'
 ht-degree: 100%
 
