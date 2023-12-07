@@ -2,9 +2,9 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 250682b96e2eaa2ed872e6f626c0a13dc19720f2
+source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2315'
 ht-degree: 5%
 
 ---
@@ -132,8 +132,8 @@ ht-degree: 5%
 
 * AEMas a Cloud Service会维护环境状态，有时由于各种正常原因必须重新启动迁移服务。 如果该服务正在重新启动，则无法访问，但最终可用。
 * 可能正在实例上运行另一个进程。 例如，如果 [AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 正在应用更新，系统可能忙，并且迁移服务定期不可用。 完成此过程后，可以再次尝试开始引入。
-* 如果 [已应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 它通过Cloud Manager阻止Cloud Acceleration Manager访问迁移服务。 无法为摄取添加IP地址，因为其地址是动态的。 目前，唯一的解决方案是在摄取运行时禁用IP允许列表。
-* 可能有其他原因需要调查。 如果摄取仍然失败，请联系Adobe客户关怀部门。
+* 如果 [已应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 它通过Cloud Manager阻止Cloud Acceleration Manager访问迁移服务。 无法为摄取添加IP地址，因为其地址是动态的。 目前，唯一的解决方案是在摄取和索引过程中禁用IP允许列表。
+* 可能有其他原因需要调查。 如果摄取或索引继续失败，请联系Adobe客户关怀部门。
 
 ### AEM版本更新和引入
 
