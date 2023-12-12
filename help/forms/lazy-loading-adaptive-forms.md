@@ -1,11 +1,11 @@
 ---
 title: 如何通过延迟加载提高大型表单的性能？
 description: 了解如何通过延迟加载提高大型表单的性能。 延迟加载通过将表单片段的初始化和加载推迟到它们可见之前，显着提高了大型复杂自适应Forms的性能。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 7%

@@ -1,11 +1,11 @@
 ---
 title: 如何将内联样式应用于自适应表单组件？
 description: 了解如何在自适应表单中应用自定义样式，还可以在自适应表单的各个组件中应用内联CSS属性。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 10%

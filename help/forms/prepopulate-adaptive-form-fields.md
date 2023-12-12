@@ -2,11 +2,12 @@
 title: 如何预填自适应表单字段？
 description: 使用现有数据预填自适应表单的字段，用户可通过使用其社交个人资料登录在表单中预填基本信息。
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 4%
+source-wordcount: '2007'
+ht-degree: 3%
 
 ---
 

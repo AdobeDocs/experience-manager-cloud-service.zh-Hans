@@ -1,9 +1,10 @@
 ---
 title: 如何基于核心组件创建自适应表单模板？
 description: 使用模板编辑器基于核心组件创建自适应表单模板以定义基本结构和初始内容。
+feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 4%

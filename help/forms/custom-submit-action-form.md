@@ -1,13 +1,13 @@
 ---
 title: 如何为自适应表单创建自定义提交操作？
 description: 了解如何为自适应Forms创建自定义提交操作，以便在将数据提交到Rest端点、保存到数据存储和执行其他自定义函数之前延迟提交和处理数据。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
+source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---

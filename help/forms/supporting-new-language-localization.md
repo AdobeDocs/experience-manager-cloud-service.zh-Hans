@@ -1,11 +1,12 @@
 ---
 title: 如何为基于基础组件的自适应表单添加新区域设置支持？
 description: 对于自适应Forms，除了现成可用的语言之外，您还可以为更多语言添加区域设置。
+feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 7%
+source-wordcount: '1220'
+ht-degree: 6%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 7%
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | 核心组件 | [单击此处](supporting-new-language-localization-core-components.md) |
-| Foundation 组件 | 本文 |
+| 基础组件 | 本文 |
 
 AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。
 

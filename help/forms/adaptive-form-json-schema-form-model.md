@@ -1,11 +1,11 @@
 ---
 title: 如何为自适应表单设计JSON架构？
 description: 了解如何为自适应表单创建JSON架构，并根据该架构创建自适应表单以生成架构投诉数据。
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 8%

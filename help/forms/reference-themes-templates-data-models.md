@@ -1,11 +1,12 @@
 ---
 title: 如何获取AEM表单的参考主题和模板？
 description: AEM Forms提供了示例自适应表单主题、模板和表单数据模型，以帮助您快速创建表单。
+feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 23%
+source-wordcount: '772'
+ht-degree: 13%
 
 ---
 
@@ -100,7 +101,7 @@ FSI主题强调您的表单的极简和功能外观。 将FSI主题应用于表�
 
 ![FSI主题](assets/fsi.png)
 
-## 参考模板 {#reference-templates}
+## 引用模板 {#reference-templates}
 
 
 [模板](/help/forms/themes.md) 允许您为表单定义初始表单结构、内容和操作。 通过安装 [参考内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)：
@@ -108,7 +109,7 @@ FSI主题强调您的表单的极简和功能外观。 将FSI主题应用于表�
 * 基本
 * 空白
 
-基本模板可帮助您快速创建注册表单。 您还可以使用它来预览自适应Forms基础组件的功能。 它提供了用于逐部分呈现数据的向导版面。使用空白模板在空白画布上开始创建自适应表单。
+基本模板可帮助您快速创建注册表单。 您还可以使用它来预览自适应Forms基础组件的功能。 它提供了用于逐节呈现数据的向导布局。 使用空白模板在空白画布上开始创建自适应表单。
 
 
 ## 参考表单数据模型 {#reference-models}
