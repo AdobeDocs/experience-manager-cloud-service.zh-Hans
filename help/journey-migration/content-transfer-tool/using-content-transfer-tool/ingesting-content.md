@@ -2,10 +2,10 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: a66724cf76e4562710e458aeeea0d54ea9efb9aa
+source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 5%
+source-wordcount: '2392'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 5%
       * 迁移集将在长时间不活动后过期，因此预计摄取将在执行提取后不久进行。 审核 [迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以了解详细信息。
 
    >[!TIP]
-   > 如果提取当前正在运行，则对话框将指示它。 成功完成提取后，摄取将自动开始。 如果提取失败或停止，则提取作业将撤销。
+   > 如果提取正在运行，则对话框将指示该情况。 成功完成提取后，摄取将自动开始。 如果提取失败或停止，则提取作业将撤销。
 
    * **目标：** 选择目标环境。 在此环境中摄取迁移集的内容。
       * 摄取不支持快速开发环境(RDE)目标，并且即使用户有权访问，摄取也不会显示为可能的目标选择。
@@ -55,7 +55,7 @@ ht-degree: 5%
    > 如果设置 **擦除** 为摄取启用，它会重置整个现有Cloud Service，包括目标存储库实例的用户权限。 对于添加到中的管理员用户，此重置也为true **管理员** 并且必须再次将该用户添加到管理员组才能开始引入。
 
    * **预复制：** 选择 `Pre-copy` 值
-      * 您可以运行可选的预复制步骤，以显着加快引入速度。 请参阅 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
+      * 您可以运行可选的预复制步骤以显着加快摄取。 请参阅 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
       * 如果使用预复制引入（对于S3或Azure数据存储），建议运行 `Author` 仅先摄取。 这样做可以加快 `Publish` 摄取。
 
    >[!IMPORTANT]
@@ -78,7 +78,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="增补引入"
->abstract="使用增补功能可移动自上次内容传输活动以来修改的内容。 引入完毕后，检查日志中是否有任何错误/警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
+>abstract="使用增补功能可移动自上次内容传输活动以来修改的内容。 摄取完成后，检查日志中是否有任何错误或警告。 应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hans" text="查看日志"
 
 内容传输工具具备允许通过执行 *增补* 迁移集的URL。 这样可修改迁移集，使其仅包含自上次提取以来已更改的内容，而无需再次提取所有内容。
@@ -97,7 +97,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="内容摄取疑难解答"
->abstract="请参阅摄取日志和文档，找到导致摄取失败的常见原因的解决方案，找到解决问题的方法并再次运行摄取。"
+>abstract="请参阅摄取日志和文档，找到导致摄取失败的常见原因的解决方案并找到解决问题的方式。 修复后，摄取可以再次运行。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="验证内容转移"
 
 ### CAM无法检索迁移令牌 {#cam-unable-to-retrieve-the-migration-token}
@@ -135,11 +135,11 @@ ht-degree: 5%
 * 如果 [已应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) 它通过Cloud Manager阻止Cloud Acceleration Manager访问迁移服务。 无法为摄取添加IP地址，因为其地址是动态的。 目前，唯一的解决方案是在摄取和索引过程中禁用IP允许列表。
 * 可能有其他原因需要调查。 如果摄取或索引继续失败，请联系Adobe客户关怀部门。
 
-### AEM版本更新和引入
+### AEM版本更新和引入 {#aem-version-updates-and-ingestions}
 
 [AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) 自动应用于环境以使其使用最新的AEMas a Cloud Service版本保持最新。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。
 
-如果“AEM版本更新”已载入目标程序，则摄取进程将在启动之前尝试禁用其队列。 摄取完成时，版本更新程序状态将返回到摄取开始前的状态。
+如果“AEM版本更新”已载入目标程序，则摄取进程会尝试在启动之前禁用其队列。 完成摄取后，版本更新程序状态将返回到摄取开始前的状态。
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> “AEM版本更新”在环境的管道中运行，并将等待管道清除。 如果更新排队的时间长于预期时间，请确保自定义工作流不会无意中锁定管道。
+> “AEM版本更新”在环境的管道中运行，并等待管道清除完成。 如果更新排队的时间长于预期时间，请确保自定义工作流不会无意中锁定管道。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 由于违反唯一性约束，增补摄取失败
+### 由于违反唯一性约束，增补摄取失败 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 导致此问题的常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是节点ID中的冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
@@ -165,7 +165,7 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 必须手动解决此冲突。 熟悉内容的用户必须确定必须删除这两个节点中的哪个节点，并牢记引用该节点的其他内容。 解决方案可能要求再次执行增补提取而不考虑违规节点。
 
-### 由于无法删除引用的节点，增补摄取失败
+### 由于无法删除引用的节点，增补摄取失败 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 导致问题的另一个常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是目标实例上特定节点的版本冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
@@ -175,11 +175,17 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 解决方案可能要求再次执行增补提取而不考虑违规节点。 或者，创建一个包含违规节点的小型迁移集，但禁用“包含版本”。
 
-最佳实践表明 **非划出** 必须使用包含版本（即，通过“包含版本”=true提取）的迁移集来运行引入，在迁移历程完成之前，尽可能少地修改目标上的内容至关重要。 否则，可能会发生这些冲突。
+最佳实践表明 **非划出** 摄取必须使用包括版本的迁移集运行，在迁移历程完成之前，尽可能少地修改目标上的内容至关重要。 否则，可能会发生这些冲突。
 
-### 引入已取消
+### 由于大型节点属性值而导致引入失败 {#ingestion-failure-due-to-large-node-property-values}
 
-使用正在运行的提取作为其源迁移集创建的摄取将耐心等待，直到提取成功，此时摄取将正常开始。 如果提取失败或停止，则不会开始摄取及其索引作业，但将取消摄取及其索引作业。 在这种情况下，请检查提取以确定其失败的原因，修复问题并重新开始提取。 运行固定提取后，可以计划新的引入。
+MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，摄取将失败，并且日志将包含 `BSONObjectTooLarge` 错误并指定哪个节点超过了最大值。 请注意，这是MongoDB限制。
+
+请参阅 `Node property value in MongoDB` 注释 [内容传输工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 以获取更多信息以及可帮助查找所有大型节点的Oak工具链接。 修复所有大小较大的节点后，再次运行提取和摄取。
+
+### 引入已取消 {#ingestion-rescinded}
+
+使用正在运行的提取作为其源迁移集创建的摄取将耐心等待，直到提取成功，此时将正常开始。 如果提取失败或停止，则不会开始摄取及其索引作业，而是将取消摄取及其索引作业。 在这种情况下，请检查提取以确定其失败的原因，修复问题并重新开始提取。 运行固定提取后，可以计划新的引入。
 
 ## 后续内容 {#whats-next}
 
