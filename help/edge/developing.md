@@ -2,9 +2,9 @@
 title: 针对Edge Delivery Services开发
 description: 了解如何开发块并自定义您的AEM项目以用于Edge Delivery Services。
 feature: Edge Delivery Services
-source-git-commit: eca5126ca46a9b3b837739c31a6891471a16cfe3
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '257'
 ht-degree: 14%
 
 ---
@@ -20,7 +20,7 @@ Edge Delivery Services基于块的概念。 AEM附带了一个完整的预定义
 
 AEM在项目模板中提供标准块作为产品的一部分。 此类块包括标题、文本、图像、链接、列表等。
 
-请参阅 [生成部分](https://www.aem.live/docs/#build) 的Edge Delivery Services文档，以了解有关块以及如何为Edge Delivery服务开发的更多详细信息。
+请参阅 [生成部分](/help/edge/developer/block-collection.md) 的Edge Delivery Services文档，以了解有关块以及如何为Edge Delivery服务开发的更多详细信息。
 
 ## Edge Delivery Services 和 GitHub {#github-edge}
 
@@ -30,4 +30,4 @@ Edge交付利用GitHub，因此您可以直接从GitHub存储库管理和部署�
 
 从内容预览到生产，将自动为您的每个分支创建网站。您放入 GitHub 存储库中的每个资源都在您的网站上可供使用，无需构建过程。
 
-请参阅 [生成部分](https://www.aem.live/docs/#build) 的Edge Delivery Services文档，以了解有关块以及如何为Edge Delivery服务开发的更多详细信息。
+请参阅 [生成部分](/help/edge/developer/block-collection.md) 的Edge Delivery Services文档，以了解有关块以及如何为Edge Delivery服务开发的更多详细信息。

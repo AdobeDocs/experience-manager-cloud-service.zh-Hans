@@ -2,9 +2,9 @@
 title: 将Edge Delivery Services用于现有AEM项目
 description: 了解如何在现有AEM项目中利用Edge Delivery Services的好处
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ AEM页面编辑器仅适用于 [AEM组件](/help/implementing/developing/compone
 
 在第一阶段中，您可以继续使用现有AEM站点结构、组件和创作工具。 将使用JavaScript和CSS的块重新构建网站渲染，并通过Edge Delivery Services交付。
 
-请参阅 [生成部分](https://www.aem.live/docs/#build) 的Edge Delivery Services文档，以了解有关块以及如何为Edge Delivery服务开发的更多详细信息。
+请参阅 [生成部分](/help/edge/developer/block-collection.md) 的Edge Delivery Services文档，以了解有关块以及如何为Edge Delivery服务开发的更多详细信息。
 
 App Builder上的转换器需要转换AEM渲染的HTML输出并将它发送到Edge Delivery Services。
 

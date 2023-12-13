@@ -2,9 +2,9 @@
 title: 为Edge Delivery Services创作内容
 description: 了解内容创作如何与Edge Delivery Services配合使用以及如何使用Edge Delivery Services创作AEM内容。
 feature: Edge Delivery Services
-source-git-commit: f6e1c5de57ee0297abdf6b03faf550a266dfac32
+source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 14%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 14%
 
 对于基于文档的创作，您可以使用各种源，例如 Microsoft Word 和 Google Docs。来自这些源的文档将成为您网站上的页面。标题、列表、图像、字体元素、视频都可以从初始源转移到网站中。您可以出于 SEO 目的添加元数据，也可以使用块来处理结构化内容并添加功能。
 
-有关基于文档的创作的更多详细信息，请参阅 [本文档位于Edge Delivery Services文档中。](https://www.aem.live/docs/authoring)
+有关基于文档的创作的更多详细信息，请参阅 [本文档位于Edge Delivery Services文档中。](/help/edge/docs/authoring.md)
 
 ## 通用编辑器创作 {#universal-editor}
 
@@ -40,7 +40,7 @@ ht-degree: 14%
    * 内容仍存储在AEM中。
    * AEM呈现引入所需的语义HTML。
    * 将内容发布到Edge Delivery Services。
-1. [Edge Delivery Services](https://www.aem.live/home) 确保100%灯塔分数。
+1. [Edge Delivery Services](/help/edge/developer/keeping-it-100.md) 确保100%灯塔分数。
 
 块是Edge Delivery Services交付的页面的基本组件。 作者可以从按Adobe标准提供的默认块或开发人员为您的项目自定义的块中进行选择。
 
