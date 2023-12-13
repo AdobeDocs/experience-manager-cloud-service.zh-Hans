@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
 workflow-type: tm+mt
-source-wordcount: '9454'
+source-wordcount: '9350'
 ht-degree: 2%
 
 ---
@@ -849,21 +849,21 @@ Dynamic Media可以将字幕文件转换为JSON（JavaScript对象表示法）�
 
    请参阅 [WebVTT： Web视频字幕信息格式](https://w3c.github.io/webvtt/).
 
-   在Dynamic Media之外，您可以使用免费和高级的工具和服务来创作题注/字幕文件。 例如，要创建不带样式的简单视频字幕文件，您可以使用以下免费的在线字幕创作和编辑工具：
+   有许多网站同时提供免费和高级的工具和服务，您可以使用这些工具和服务在Dynamic Media之外创作WebVTT描述/字幕文件。 <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
-   [WebVTT题注生成器](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   <!-- [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   为获得最佳结果，请在Internet Explorer 9或更高版本、Google Chrome或Safari中使用该工具。
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   在工具的 **[!UICONTROL 输入视频文件的URL]** 字段中，粘贴复制的视频文件URL，然后选择 **[!UICONTROL 加载]**. 请参阅 [获取资产的URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) 以获取视频文件本身的URL，然后您可以将该URL粘贴到 **[!UICONTROL 输入视频文件字段的URL]**. 随后，Internet Explorer、Chrome 或 Safari 可以本机播放视频。
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
 
-   现在，按照站点中的屏幕说明创作和保存WebVTT文件。 完成后，复制字幕文件内容并将其粘贴到纯文本编辑器中，并以VTT文件扩展名保存。
+按照站点中的屏幕说明创作和保存WebVTT文件。 完成后，复制字幕文件内容并将其粘贴到纯文本编辑器中，并以VTT文件扩展名保存。
 
-   >[!NOTE]
-   >
-   为了在全球范围内支持多种语言的视频字幕， WebVTT标准要求您为要支持的每种语言创建单独的.vtt文件和调用。
+>[!NOTE]
+>
+为了在全球范围内支持多种语言的视频字幕， WebVTT标准要求您为要支持的每种语言创建单独的.vtt文件和调用。
 
-   通常，您希望将字幕VTT文件的名称与视频文件相同，并将其附加到语言区域设置，如 — EN、-FR或 — DE。 这样，它可以帮助您使用现有Web内容管理系统自动生成视频URL。
+通常，您希望将字幕VTT文件的名称与视频文件相同，并将其附加到语言区域设置，如 — EN、-FR或 — DE。 这样，它可以帮助您使用现有Web内容管理系统自动生成视频URL。
 
 1. 在Experience Manager中，将您的WebVTT描述文件上传到DAM。
 1. 导航至 *已发布* 要与您上传的字幕文件关联的视频资产。

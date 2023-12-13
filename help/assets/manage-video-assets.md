@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
 workflow-type: tm+mt
-source-wordcount: '4937'
+source-wordcount: '4905'
 ht-degree: 6%
 
 ---
@@ -73,8 +73,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 **要配置Google云设置，请执行以下操作：**
 
-1. 创建一个Google帐户。
-   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+1. [创建Google帐户](https://accounts.google.com/lifecycle/flows/signup?flowEntry=SignUp&amp;flowName=GlifWebSignIn&amp;service=mail&amp;dsh=S-1878016829%3A1702493284416645&amp;theme=glif).
 
    如果您已经拥有Google帐户，则可以跳至下一步。
 
@@ -227,7 +226,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    如果需要，您可以选择添加描述。
 
-1. 选择 **[!UICONTROL 添加]**.
+1. 选择&#x200B;**[!UICONTROL 添加]**。
 1. 将显示YouTube/Google验证。 如果您尚未登录Google Cloud帐户，请跳过此步骤。
 
    * 输入与Google项目ID关联的Google用户名和密码，以及上面的JSON文本。
@@ -458,7 +457,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    ![chlimage_1-429](/help/assets/dynamic-media/assets/chlimage_1-429.png)
 
-   * 在列表视图中，视频编码进度显示在 **[!UICONTROL 处理状态]** 列。 如果出现错误，则同一列中将显示此消息。
+   * 在列表视图中，视频编码进度显示在 **[!UICONTROL 处理状态]** 列。 如果出现错误，则该列中将显示此消息。
 
    ![chlimage_1-430](/help/assets/dynamic-media/assets/chlimage_1-430.png)
 
