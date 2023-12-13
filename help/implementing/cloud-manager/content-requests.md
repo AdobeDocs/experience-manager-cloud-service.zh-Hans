@@ -2,7 +2,7 @@
 title: 了解 Cloud Service 内容请求
 description: 如果您从Adobe购买了内容请求许可证，请了解Adobe Experience Cloud as a Service测量的内容请求类型以及与组织分析报告工具的差异。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
+source-git-commit: e31b05f0cef6c5ca3a1c00b757eac013aa43bb90
 workflow-type: tm+mt
 source-wordcount: '2690'
 ht-degree: 4%
@@ -81,7 +81,7 @@ Real User Monitoring (RUM) Data Service是客户端集合，可提供对用户�
 
 ## 客户端收藏集 {#cliendside-collection}
 
-## 适用于AEMas a Cloud Service的Real User Monitoring (RUM) {#real-user-monitoring-for-aem-as-a-cloud-service}
+### 适用于AEMas a Cloud Service的Real User Monitoring (RUM) {#real-user-monitoring-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >

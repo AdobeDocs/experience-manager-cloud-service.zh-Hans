@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ac7af61751c3cf751a7370b454855c5361fabe02
+source-git-commit: acaf2371886b161ce5e8b9f9a9771267703bb32d
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 89%
+source-wordcount: '1278'
+ht-degree: 100%
 
 ---
 
@@ -41,12 +41,6 @@ ht-degree: 89%
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### 早期采用者计划 {#sites-early-adopter}
-
-**您可以利用 [Real User Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 为AEMas a Cloud Service启用客户端收集。
-
-Real User Monitoring (RUM) Data Service提供了对用户交互的更精确反映，从而确保了对网站参与情况的可靠衡量。 这是深入了解您的页面性能的绝佳机会。 但这对于使用Adobe管理的CDN或非Adobe管理的CDN的客户是有益的。 此外，对于使用非Adobe托管CDN的客户，现在可以为其启用自动流量报表，因此无需与Adobe共享任何流量报表。
-
-如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `aemcs-rum-adopter@adobe.com`，以及与Adobe ID关联的电子邮件地址中的生产、暂存和开发环境的域名。 然后，Adobe的产品团队将为您启用Real User Monitoring (RUM)数据服务。
 
 **[查找和替换内容片段中的字符串](/help/sites-cloud/administering/content-fragments/managing.md#find-and-replace-find-and-replace)**：利用内容片段控制台，用户可以简单直观地一次性替换多个内容片段中出现的字符串，以帮助加快内容速度。
 
