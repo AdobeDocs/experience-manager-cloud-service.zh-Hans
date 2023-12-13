@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 821c243ab2d8ce1468c80c36d01b5c4c8f2bec76
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 28%
+source-wordcount: '2033'
+ht-degree: 24%
 
 ---
 
@@ -231,9 +231,12 @@ Adobe Acrobat Sign政府解决方案团队要求 `re-direct URL` 以及要为您
 
 现在，您可以 [在自适应表单中使用添加Adobe Acrobat Sign字段](working-with-adobe-sign.md) 或 [AEM Workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). 确保将用于Cloud Service配置的配置容器添加到启用的所有自适应Forms [!DNL Adobe Acrobat Sign]. 您可以在自适应表单的属性中指定配置容器。
 
-## （仅适用于 AEM Workflow）配置 [!DNL Adobe Acrobat Sign] 调度程序以同步签名状态 {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## 配置 [!DNL Adobe Acrobat Sign] 用于同步签名状态的计划程序 {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-在使用 [!DNL Adobe Acrobat Sign] Workflow 步骤对自适应表单进行签名时，可以将表单逐个传送给签名者，也可以将表单同时发送给所有签名者，具体取决于工作流步骤的配置。仅在所有签名者完成签名过程后，[!DNL Adobe Acrobat Sign] 支持的自适应表单才提交到 Experience Manager Forms Server。
+AEM Formsas a Cloud Service提供计划程序服务，用于按定义的时间间隔检查签名者的状态。 配置计划程序服务的方案：
+
+* 如果您使用 [提交表单（在每个收件人完成签名仪式后）](/help/forms/working-with-adobe-sign.md#select-adobe-sign-cloud-service-and-signing-order) 若要签署文档，只有在所有签名者都签署表单后才提交表单。
+* 如果您使用 [AEM Workflow中的登录步骤](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step) 要对文档进行签名，签名步骤将等待所有签名者签名该文档，然后再继续工作流的下一步。
 
 默认情况下，[!DNL Adobe Acrobat Sign] 调度程序服务每 24 小时检查（轮询）一次签名者响应。您可以为您的环境更改此默认间隔。
 

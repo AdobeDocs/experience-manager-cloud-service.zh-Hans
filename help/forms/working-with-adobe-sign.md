@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: e81da7414335e00411942adeb41978d39f172b52
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3242'
 ht-degree: 2%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 要选择Cloud Service和签名顺序，请执行以下操作：
 
-![云服务](assets/cloud-service.png)
+![云服务](/help/forms/assets/adobe-sign-cloud-service.png)
 
 1. 在内容浏览器中，选择 **[!UICONTROL 表单容器]**，然后选择 **[!UICONTROL 配置]** ![配置](assets/Smock_Wrench_18_N.svg) 图标。 它可打开属性浏览器并显示自适应表单容器属性。
 1. 在属性浏览器中，展开 **[!UICONTROL 电子签名]** 折叠面板，然后选择 **[!UICONTROL 启用Adobe Sign]** 选项。 它支持 [!DNL Adobe Sign] 用于自适应表单。
@@ -170,6 +170,10 @@ ht-degree: 2%
 
    Cloud Service下拉列表列出了 `global` 文件夹(位于“工具”> **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. 此外，下拉列表还会列出您在中选择的文件夹中存在的Cloud Service。 **[!UICONTROL 配置容器]** 创建自适应表单时显示的字段。
 
+1. 选择选项以使用配置提交操作 **[!UICONTROL 提交表单]**. 您可以从以下选项中选择两个选项之一：
+   * **提交表单（并发送协议以供签署）**：此选项会立即提交表单，然后将要签名的表单发送给收件人。
+   * **提交表单（在每个收件人完成签名仪式后）**：此选项仅在所有签名者完成签名过程后提交自适应Forms。 您可以配置间隔以检查所有签名者的签名状态。 有关详细信息，请参阅  [配置 [!DNL Adobe Acrobat Sign] 调度程序](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status).
+
 1. 从中选择签名顺序 **[!UICONTROL 收件人可以填写]** 对话框。 收件人可以签署自适应表单 **[!UICONTROL 按顺序]**  — 一个接一个的收件人，或者 **[!UICONTROL 同时]**  — 按任意顺序。
 
    按顺序排列，每个收件人一次收到Adobe Sign协议。 收件人完成分配的操作后，协议将发送给下一个收件人，依此类推。
@@ -177,6 +181,10 @@ ht-degree: 2%
    所有收件人将同时按顺序接收Adobe Sign协议，并且可以相互并行操作。
 
 1. 使用协议ID字段将绑定与协议ID (agreementId)相关联。 它会将协议ID添加到提交数据的基于架构的表单的afBoundData部分。 协议ID还会添加到所有启用Adobe Sign的表单的已提交数据的afSubmissionInfo部分。 您可以使用协议ID通过自定义代码跟踪协议状态（需要自定义实施）。
+
+   >[!NOTE]
+   >
+   > 如果使用表单数据模型创建自适应表单，则协议ID字段在对话框中可见。
 
 1. [将收件人添加到自适应表单](working-with-adobe-sign.md#addsignerstoanadaptiveform) 并选择完成 ![保存](assets/save_icon.svg) 图标以保存更改。
 
