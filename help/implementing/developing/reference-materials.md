@@ -2,10 +2,10 @@
 title: API 参考材料
 description: AEM具有广泛而强大的API，可用于您的数字体验项目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 9%
+source-wordcount: '594'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,10 @@ Adobe Experience Manager (AEM)提供了许多API用于开发应用程序和扩�
 <!---
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
 --->
+
+>[!NOTE]
+>
+>有关Experience ManagerAPI的最新信息，请访问 [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ## 其他框架 {#additional-apis}
 
