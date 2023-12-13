@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 97f08d3474ad395d3228fb848a546927e6431050
+source-git-commit: 475505fc8b5eb63c3563e8fabb28f515ff690393
 workflow-type: tm+mt
 source-wordcount: '4456'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -581,7 +581,7 @@ ht-degree: 98%
          + [将 AEM Forms as a Cloud Service 与 Adobe Analytics 集成](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [将自适应表单集成到 Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [查看和理解自适应表单分析报告](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [将自适应表单提交到Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [向 Adobe Workfront Fusion 提交自适应表单](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [将自适应表单与 Microsoft Power Automate 集成](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
          + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
@@ -728,8 +728,8 @@ ht-degree: 98%
          + [构建产品体验](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + 集成 {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [Live Search CIF组件](/help/commerce-cloud/integrating/live-search-plp.md)
-      + [Live Search弹出框CIF组件](/help/commerce-cloud/integrating/live-search-popover.md)
+      + [实时搜索 CIF 组件](/help/commerce-cloud/integrating/live-search-plp.md)
+      + [实时搜索弹出框 CIF 组件](/help/commerce-cloud/integrating/live-search-popover.md)
       + [第三方商业解决方案](/help/commerce-cloud/integrating/third-party.md)
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
@@ -797,7 +797,7 @@ ht-degree: 98%
       + [身份验证](/help/headless/security/authentication.md)
    + 部署 {#deployment}
       + [架构](/help/headless/deployment/architecture.md)
-      + [Dispatcher — 终端](/help/headless/deployment/dispatcher.md)
+      + [Dispatcher - 端点](/help/headless/deployment/dispatcher.md)
       + [Dispatcher - 为持久化查询启用缓存](/help/headless/deployment/dispatcher-caching.md)
       + [CORS 配置](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [反向链接筛选条件](/help/headless/deployment/referrer-filter.md)
@@ -868,7 +868,7 @@ ht-degree: 98%
          + [概述](/help/implementing/cloud-manager/overview-test-results.md)
          + [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)
          + [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-         + 功能测试 {#functional-testing}
+         + 功能测试{#functional-testing}
             + [功能测试概述](/help/implementing/cloud-manager/functional-testing.md)
             + [Java 功能测试](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI 测试](/help/implementing/cloud-manager/ui-testing.md)

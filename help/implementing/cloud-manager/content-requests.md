@@ -2,16 +2,35 @@
 title: 了解 Cloud Service 内容请求
 description: 如果您从Adobe购买了内容请求许可证，请了解Adobe Experience Cloud as a Service测量的内容请求类型以及与组织分析报告工具的差异。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 949f0ec1aa89fd05813bc9ffb02a75fb0ad84a32
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 10%
+source-wordcount: '2690'
+ht-degree: 4%
 
 ---
 
 # Cloud Service内容请求
 
-## Cloud Service内容请求的差异{#content-requests-variances}
+## 简介 {#introduction}
+
+Cloud Service内容请求通过服务器端数据收集来测量。 收藏集可通过CDN日志分析启用。
+
+>[!NOTE]
+>此外，对于有限数量的 [率先采用者客户](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter)，客户端收集也将通过RUM(Real User Monitoring)测量启用。 有关更多信息，请参阅中的文档。 [本文](#real-user-monitoring-for-aem-as-a-cloud-service).
+
+## 了解 Cloud Service 内容请求 {#understaing-cloud-service-content-requests}
+
+通过自动分析源自AEMas a Cloud ServiceCDN的日志文件，在Adobe Experience Manager as a Cloud Service边缘的服务器端自动收集内容请求。 这是通过隔离请求返回HTML来完成的 `(text/html)` 或JSON `(application /Json)` 来自CDN的内容以及基于下面详述的几个包含和排除规则。 内容请求独立于CDN缓存提供的返回内容或返回到CDN源的内容(AEM Dispatchers)。
+
+Real User Monitoring (RUM) Data Service是客户端集合，可提供对用户交互的更精确的反映，确保网站参与度的可靠测量。 这可以让客户深入了解其页面流量和性能。 这对使用Adobe托管的CDN或非Adobe托管的CDN的客户都很有用。 此外，现在可以为使用非Adobe托管的CDN的客户启用自动流量报告，因此无需与Adobe共享任何流量报告。
+
+对于在AEMas a Cloud Service之上自带CDN的客户，服务器端报表将导致无法使用数字与许可的内容请求进行比较。 这些数字必须由位于外部CDN边缘的客户测量。 对于这些客户、客户端报告和相关性能， [AdobeRUM数据服务](#real-user-monitoring-for-aem-as-a-cloud-service) 是Adobe推荐选项。 请参阅 [发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) 以获取有关如何选择加入的信息。
+
+## 服务器端收藏集 {#serverside-collection}
+
+有规则可排除知名机器人，包括定期访问网站以刷新其搜索索引或服务的知名服务。
+
+### Cloud Service内容请求的差异 {#content-requests-variances}
 
 内容请求可能与组织的Analytics报告工具存在差异，如下表所示。 一般来说， *不要* 使用通过客户端工具收集数据的analytics工具来报告给定站点的内容请求数，原因很简单，它们通常依赖于要触发的用户同意，因此会错过流量的很大一部分。 在日志文件中收集数据服务器端的Analytics工具，或者为在AEMas a Cloud Service之上添加自己的CDN的客户提供的CDN报告，将提供更好的计数。 要报告页面查看及其相关性能，AdobeRUM数据服务是Adobe推荐选项。
 
@@ -31,15 +50,7 @@ ht-degree: 10%
 
 另请参阅 [许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md).
 
-## 了解 Cloud Service 内容请求 {#about-content-request}
-
-通过自动分析源自AEM CDN的日志文件，从Adobe Experience Manager (AEM as a Cloud Service)as a Cloud Service边缘自动跟踪内容请求，并将从CDN返回HTML（文本/html）或JSON （应用程序/json）内容的请求隔离，以及基于下面详述的若干包含和排除规则。 内容请求与从CDN缓存提供或返回到CDN源位置(AEM Dispatchers)的返回内容无关。
-
-对于在AEMas a Cloud Service之上自带CDN的客户，此跟踪将导致无法使用数字与许可的内容请求进行比较，这些数字将由位于外部CDN边缘的客户测量。
-
-有规则可排除知名机器人，包括定期访问网站以刷新其搜索索引或服务的知名服务。
-
-### 包含的内容请求的类型{#included-content-requests}
+### 包含的内容请求的类型 {#included-content-requests}
 
 | 请求类型 | 内容请求 | 描述 |
 | --- | --- | --- |
@@ -51,7 +62,7 @@ ht-degree: 10%
 
 另请参阅 [许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md).
 
-### 排除的内容请求的类型{#excluded-content-request}
+### 排除的内容请求的类型 {#excluded-content-request}
 
 | 请求类型 | 内容请求 | 描述 |
 | --- | --- | --- |
@@ -67,3 +78,103 @@ ht-degree: 10%
 | 排除Commerce integration framework调用 | 已排除 | 这些是向AEM发出的请求，将转发到Commerce integration framework，URL开头为 `/api/graphql` — 为了避免重复计数，它们不计费Cloud Service。 |
 | 排除 `manifest.json` | 已排除 | 清单不是API调用，它旨在提供有关如何在桌面或手机上安装网站的信息。 Adobe不应将JSON请求计为 `/etc.clientlibs/*/manifest.json` |
 | 排除 `favicon.ico` | 已排除 | 虽然返回的内容不应为HTML或JSON，但我们发现，在某些场景（如SAML身份验证流）中，favicon可能会作为HTML返回，因此会从计数中显式排除。 |
+
+## 客户端收藏集 {#cliendside-collection}
+
+## 适用于AEMas a Cloud Service的Real User Monitoring (RUM) {#real-user-monitoring-for-aem-as-a-cloud-service}
+
+>[!INFO]
+>
+>此功能仅适用于早期采用者计划。
+>您需要使用AEM Cloud Service版本 **2023.11.14227** 以启用RUM数据服务。
+
+### 概述 {#overview}
+
+Real User Monitoring (RUM)是一种性能监控技术，可实时捕获和分析网站或应用程序的数字用户体验。 它提供了Web应用程序实时性能的可视性，并提供了对最终用户体验的准确洞察。
+
+Real User Monitoring (RUM)从发起URL，一直到请求被反馈给浏览器，可提供对关键性能指标的深入洞察，所有这些都有助于开发人员增强应用程序，使其易于最终用户使用。
+
+### 谁可以从RUM数据监控服务中受益？ {#who-can-benefit-from-rum-data-monitoring-service}
+
+RUM Data Service对于使用AdobeCDN的用户非常有用，因为它提供了对用户交互的更精确的反映，通过反映客户端上可与现有服务器端CDN日志页面查看次数进行比较的页面查看次数，确保了对网站参与度的可靠测量。 此外，对于使用自己CDN的客户，Adobe现在可以简化自动流量报告，其中包含他们的页面查看次数，这意味着他们不必与Adobe共享任何流量报告。
+
+此外，您还可以借此良机为使用Adobe CDN的客户和使用自己CDN的客户获取有关页面性能的高级信息。
+
+### 了解Real User Monitoring (RUM)数据服务的工作原理 {#understand-how-the-rum-data-service-works}
+
+Adobe Experience Manager使用Real User Monitoring (RUM)帮助客户和Adobe了解、访客如何与Adobe Experience Manager支持的网站进行交互、诊断性能问题以及衡量实验的有效性。 RUM通过取样和明智地排除所有个人身份信息(PII)来保护访客的隐私（仅监控所有页面查看中的一小部分）。
+
+### Real User Monitoring (RUM)和隐私 {#rum-and-privacy}
+
+Adobe Experience Manager中的“Real User Monitoring”旨在保护访客隐私并最大限度地减少数据收集。 作为访客，这意味着您访问的网站不会收集任何个人信息或不会提供Adobe使用。
+
+作为站点操作员，这意味着通过此功能启用监视不需要其他选择加入。因此，最终用户将不需要接受额外的弹出窗口来启用RUM监视。
+
+### RUM数据采样 {#rum-data-sampling}
+
+传统的Web分析解决方案会尝试收集每位访客的数据。 Adobe Experience Manager的Real User Monitoring仅从一小部分页面查看中捕获信息。 Real User Monitoring (RUM)用于对数据进行采样和匿名处理，而不是代替分析。 默认情况下，页面的取样比例将为1:100。 截至今天，站点操作员无法将此数字配置为增加或减少采样速率。 为了准确估计总流量，我们每100次页面查看就收集一次的详细数据，从而为您提供整体流量的可靠近似值。”
+
+由于是否按页面查看次数决定是否要收集数据，因此实际上不可能跟踪多个页面上的交互。 RUM没有访问次数、访客数或会话数的概念，而只是页面查看数的概念。 这是特意设计的。
+
+### 正在收集哪些数据 {#what-data-is-being-collected}
+
+Real User Monitoring (RUM)旨在防止收集个人身份信息。 下面列出了Adobe Experience Manager的Real User Monitoring可收集的全套信息：
+
+* 被访问站点的主机名，例如： `experienceleague.adobe.com`
+* 用于显示页面的广泛用户代理类型，例如：桌面或移动设备
+* 数据收集的时间，例如： `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
+* 所访问页面的URL，例如： `https://experienceleague.adobe.com/docs`
+* 反向链接URL（链接到当前页面的页面的URL，如果用户点击链接）
+* 随机生成的页面视图ID，格式类似于： `2Ac6`
+* 采样率的加权或反比，例如： `100`. 这意味着只记录一百分之一的页面查看次数
+* 检查点，或加载页面或作为访客与页面交互序列中特定事件的名称
+* 用户与上述检查点交互的DOM元素的源或标识符。 例如，这可能是图像
+* 针对上述检查点，与用户交互的外部页面或资源的目标或链接。 例如：`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
+* 核心Web虚拟(CWV)性能指标、最大内容绘制(LCP)、首次输入延迟(FID)和累计布局偏移(CLS)，用于描述访客的体验质量。
+
+### 如何设置Real User Monitoring (RUM)数据服务 {#how-to-set-up-them-rum-data-service}
+
+* 如果您希望加入我们的率先采用者计划，请发送电子邮件至 `aemcs-rum-adopter@adobe.com`，以及与Adobe ID关联的电子邮件地址中的生产、暂存和开发环境的域名。 然后，Adobe的产品团队将为您启用Real User Monitoring (RUM)数据服务。
+* 完成此操作后，Adobe的产品团队将创建一个客户协作渠道。
+* Adobe的产品团队将与您联系，为您提供域密钥和数据仪表板URL，您可以在其中查看页面查看和 [核心Web虚拟(CWV)](https://web.dev/vitals/) 由客户端实时用户监控(RUM)收集收集的量度。
+* 然后，将指导您如何使用域密钥访问数据仪表板url并查看指标。
+
+### 如何使用实际用户监控(RUM)数据 {#how-rum-data-is-being-used}
+
+RUM数据有利于以下目的：
+
+* 确定并解决客户地点的性能瓶颈
+* 简化的自动流量报表，包括使用自身CDN的客户的页面查看次数，这意味着他们不必与Adobe共享任何流量报表。
+* 了解Adobe Experience Manager如何与同一页面上的其他脚本（例如Analytics、Targeting或外部库）进行交互以提高兼容性。
+
+### 限制和了解页面查看次数和性能量度中的差异 {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+
+由于您将分析此数据，因此Real User Monitoring (RUM)报告的页面查看次数和其他性能量度可能存在也可能不存在差异。 这些差异可归因于实时客户端监控固有的几个因素。 以下是客户在解释RUM数据时要牢记的关键注意事项：
+
+1. **跟踪器阻止程序**
+
+   * 最终用户使用跟踪器阻止程序或隐私扩展可能会阻碍Real User Monitoring (RUM)的数据收集，因为这些工具会限制跟踪脚本的执行。 此限制可能会导致页面查看次数和用户交互报告不足，从而造成实际网站活动与RUM捕获的数据之间存在差异。
+
+1. **捕获API/JSON调用时的限制**
+
+   * RUM数据服务侧重于客户端体验，目前不捕获后端API或JSON调用。 从实时用户监控(RUM)数据中排除这些调用将会导致与CDN Analytics测量的内容请求产生差异。
+
+### 常见问题 {#faq}
+
+1. **如何配置要在监视中包含或排除的路径？**
+
+   客户可以通过在Cloud Manager的配置中设置环境变量，来配置路径以包含或排除要监视的URL，具体方法是：使用这些变量： `AEM_WEBVITALS_EXCLUDE` 和 `AEM_WEBVITALS_INCLUDE_PATHS`
+
+   请注意，默认情况下，“包含”设置配置为目标“/content”。 请务必记住，您需要在此处配置的路径是系统内的内容路径，而不是您在浏览器中看到的URL路径。 这一区别是准确设置和自定义您的配置以满足特定需求的关键。
+
+1. **在交互到达客户管理的CDN之前或交互到达客户管理的CDN时，Adobe能否跟踪所有页面查看次数？**
+
+   是的。
+
+1. **客户能否将RUM数据服务脚本与Dynatrace等第三方系统集成？**
+
+   是的。
+
+1. **是否正在收集“交互到下一幅绘画”、“第一字节所用时间”和“首次内容绘画”Web虚拟量度？**
+
+   收集到下一绘画的交互(INP)和到第一字节的时间(TTFB)。  此时不收集第一个内容绘制。
