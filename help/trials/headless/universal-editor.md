@@ -7,7 +7,7 @@ exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="使用 Universal Editor 在上下文中编辑"
->abstract="了解您的Headless应用程序如何使用通用编辑器在上下文编辑中为作者带来低摩擦力。"
+>abstract="了解 Headless 应用程序如何利用 Universal Editor 使作者能够轻而易举地作出减少分歧、符合上下文的编辑。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
 >title="启动 Universal Editor"
->abstract="在本指南中，您将了解通用编辑器，以及它如何使任何人能够编辑任何实施中内容的每个方面，从而提高内容速度。<br><br>通过单击下方而在新标签页中启动此模块，然后遵循本指南进行操作。"
+>abstract="在本指南中，您将探索 Universal Editor 及其如何使任何人在任何实施中都能编辑您的内容的方方面面，从而提升内容速度。<br><br>通过单击下方以在新选项卡中启动此模块，然后遵循本指南进行操作。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
