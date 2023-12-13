@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 46575e36a7037bee7c33c94748fc0fc92880ea87
+source-git-commit: 97f08d3474ad395d3228fb848a546927e6431050
 workflow-type: tm+mt
-source-wordcount: '4437'
-ht-degree: 99%
+source-wordcount: '4456'
+ht-degree: 98%
 
 ---
 
@@ -755,8 +755,12 @@ ht-degree: 99%
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Edge Delivery 快速入门](/help/edge/overview.md)
+   + [AEM和Edge Delivery Services](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
+   + [为Edge交付创作内容](/help/edge/authoring.md)
+   + [发布用于Edge交付的内容](/help/edge/publishing.md)
+   + [为Edge交付进行开发](/help/edge/developing.md)
+   + [现有项目和边缘交付](/help/edge/existing-projects.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)
