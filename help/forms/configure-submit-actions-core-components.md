@@ -4,9 +4,9 @@ description: 自适应表单提供了多个提交操作。提交操作定义了�
 keywords: 如何为自适应表单选择提交操作、将自适应表单连接到sharepoint列表、将自适应表单连接到sharepoint文档库、将自适应表单连接到表单数据模型
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: c2bf362a9949b3d6d427a28821056a0cc9edfa85
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4102'
 ht-degree: 82%
 
 ---
@@ -171,8 +171,6 @@ ht-degree: 82%
 用于保存数据的文件夹结构是 `/folder_name/form_name/year/month/date/submission_id/data`。
 
 ### 将自适应表单连接到Microsoft® SharePoint列表 {#connect-af-sharepoint-list}
-
-<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
