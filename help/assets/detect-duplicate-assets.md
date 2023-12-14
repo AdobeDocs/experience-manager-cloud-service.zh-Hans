@@ -1,17 +1,23 @@
 ---
-title: 管理数字资源
+title: 检测重复资产 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: 了解如何检测重复的资源
 contentOwner: KK
 mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 6%
+source-wordcount: '201'
+ht-degree: 9%
 
 ---
+
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | 本文 |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
 
 # 检测重复的资源 {#detect-duplicate-assets}
 
