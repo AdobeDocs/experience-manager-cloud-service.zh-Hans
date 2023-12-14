@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.12.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2023.12.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: be38ca5bf79d401fc12c1422c270a2ee84bbbad2
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+workflow-type: tm+mt
+source-wordcount: '772'
+ht-degree: 55%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.11.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2023.12.0 的发行说明 {#release-notes}
 
-本页记载 AEM as a Cloud Service 中 Cloud Manager 2023.11.0 版本的发行说明。
+本页记载 AEM as a Cloud Service 中 Cloud Manager 2023.12.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,36 +21,42 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 2023 年 11 月 14 日。下一个版本计划于 2023 年 12 月 7 日发布。
+AEMas a Cloud Service中的Cloud Manager 2023.12.0版的发布日期为2023年12月14日。 下一个版本计划于 2024 年 1 月 18 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* Web 应用程序防火墙-DDOS 保护 (WAF-DDOS) 现在可以作为 AEM as a Cloud Service 权限的一部分进行购买，并且[可以通过自助方式进行配置。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* 专门的[配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)现在可以在几分钟内配置和部署流量过滤规则，包括 WAF 规则。
-* [当将内容从更高的环境复制到开发环境时](/help/implementing/developing/tools/content-copy.md)，现在会显示一条消息，建议在复制大型内容集时要小心，因为开发环境容量有限。
-* [管道执行详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)现在会显示管道执行中的所有步骤，尚未开始的步骤将灰显。
-* 在&#x200B;**[活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)**&#x200B;页面和&#x200B;**[管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)**&#x200B;页面上，选择具有正在运行状态的管道时，现在将显示管道执行摘要。
-* 一个新的&#x200B;**持续时间**&#x200B;部分已添加到[管道详细信息页面](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)，其中包括基于该项目的历史趋势的管道步骤的平均持续时间。
-* 在[管道执行页面上](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity-window)，已完成的步骤现在将显示持续时间.
-* [重用构建构件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)的执行操作现在会显示指向最初构建这些构件的执行操作的链接。
-* 现在还可以为[代码质量管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)配置用于选择&#x200B;**重要量度失败**&#x200B;的选项。
-
+* [Cloud Manager 自定义权限](/help/implementing/cloud-manager/custom-permissions.md)可让您创建具有可配置权限的自定义权限配置文件，以限制 Cloud Manager 用户对项目、管道和环境的访问。
+   * 此功能将分阶段推出，预计2024年2月发布的Cloud Manager将分阶段完成。
+   * 请发送电子邮件至 `Grp-CloudManager-custom-permissions@adobe.com` 从与Adobe ID关联的电子邮件地址启用（如果您希望更早启用）。
+* 现在，生成容器支持用于以下项的Node.js版本18： [前端管道。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+* 对于新创建的Cloud Manager程序， [关联的New Relic子帐户](/help/implementing/cloud-manager/user-access-new-relic.md) 默认情况下不激活。
+   * 对于超过90天未访问New Relic子帐户的现有程序，将停用该帐户。
+   * 如果您希望使用New Relic子帐户，则需要通过Cloud Manager选择加入。
+* Java 8和11的次要版本的推出以及maven的更新 [宣布并从10月发布的Cloud Manager开始](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 已完成。
+   * 为前端管道和全栈管道添加了对节点18的支持。
+   * Java 8次要版本已更新为 `jdk1.8.0_371`.
+   * Java 11次要版本已更新为 `jdk-11.0.20`.
+   * 添加了对Java 17的支持。
+   * Maven已更新至版本3.8.8
+   * 构建容器基础图像已更新为Ubuntu 22.04。
 
 ## 早期采用计划 {#early-adoption}
 
 加入 Adobe 早期采用计划，即有机会测试一些即将推出的功能。
+
+### 通过Real User Monitoring (RUM)进行客户端收集 {#rum}
+
+您可以利用 [Real User Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) 为AEMas a Cloud Service启用客户端收集。
+
+Real User Monitoring (RUM) Data Service提供了对用户交互的更精确反映，从而确保了对网站参与情况的可靠衡量。 这是深入了解您的页面性能的绝佳机会。 这对使用Adobe托管的CDN或非Adobe托管的CDN的客户是有益的。 对于使用非Adobe托管CDN的客户，现在可以为其启用自动流量报表，因此无需与Adobe共享任何流量报表。
+
+如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `aemcs-rum-adopter@adobe.com` 来自与您的Adobe ID关联的电子邮件地址。 请在您的电子邮件中包含用于生产、暂存和开发环境的域名。  此功能的早期采用者计划的可用性是有限的。
 
 ### 自带 GitHub {#byo-github}
 
 如果您使用 GitHub 管理存储库，则[现在可以通过 Cloud Manager 直接在 GitHub 存储库中验证代码。](/help/implementing/cloud-manager/managing-code/byo-github.md)此集成使您无需始终与 Adobe 存储库同步代码，并可在将拉取请求合并到主分支之前对其进行验证。
 
 如果您有兴趣测试此新功能并分享您的反馈，请从您的 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-CloudManager_BYOG@adobe.com`。
-
-### 自定义权限 {#custom-permissions}
-
-[Cloud Manager 自定义权限](/help/implementing/cloud-manager/custom-permissions.md)可让您创建具有可配置权限的自定义权限配置文件，以限制 Cloud Manager 用户对项目、管道和环境的访问。
-
-如果您有兴趣测试此新功能并分享您的反馈，请从您的 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-CloudManager-custom-permissions@adobe.com`。
 
 ### 自助内容恢复 {#content-restore}
 
@@ -72,15 +78,3 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2023.11.0 的发布日期是 
 该仪表板利用 Google Lighthouse，这是一种开源自动化工具，用于提高 Web 应用程序的质量。您可以针对任何网页（公共网页或需要身份验证的网页）运行它。它对性能、可访问性、SEO、搜索引擎优化等进行审核。
 
 有兴趣试驾新仪表板吗？若要开始使用，请从与您的 Adobe ID 关联的电子邮件发送电子邮件至 `aem-lighthouse-pilot@adobe.com`。
-
-## 已知问题 {#known-issues}
-
-有一个已知的错误阻止[配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md##config-deployment-pipeline)被推送到生产。
-
-如果配置管道需要&#x200B;**在部署到生产之前暂停**&#x200B;选项，则在解决错误之前，建议采用以下解决方法。
-
-1. 运行管道。
-1. 在暂存环境中测试代码。
-1. 当部署和批准可用时，单击&#x200B;**拒绝**。
-1. 编辑管道以便您可以禁用&#x200B;**在部署到生产之前暂停**&#x200B;选项。
-1. 再次运行管道，以便它可以在暂存时再次运行，然后在生产环境中运行。

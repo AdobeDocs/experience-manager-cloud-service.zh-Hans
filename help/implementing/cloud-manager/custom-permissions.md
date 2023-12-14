@@ -2,20 +2,17 @@
 title: 自定义权限
 description: 了解如何使用自定义权限创建具有可配置权限的自定义权限配置文件，以限制对Cloud Managers用户的程序、管道和环境的访问。
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1515'
 ht-degree: 38%
 
 ---
 
+
 # 自定义权限 {#custom-permissions}
 
 了解如何使用自定义权限创建具有可配置权限的自定义权限配置文件，以限制对Cloud Managers用户的程序、管道和环境的访问。
-
->[!NOTE]
->
->此功能仅适用于[早期采用者计划。](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
 
 ## 简介 {#introduction}
 

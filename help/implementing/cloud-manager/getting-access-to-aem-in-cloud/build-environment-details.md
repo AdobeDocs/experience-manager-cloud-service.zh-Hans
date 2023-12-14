@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 94%
+source-wordcount: '1029'
+ht-degree: 92%
 
 ---
 
@@ -18,10 +18,10 @@ ht-degree: 94%
 
 Cloud Manager 使用专门的构建环境构建和测试代码。
 
-* 构建环境基于 Linux，并派生自 Ubuntu 18.04。
+* 构建环境基于 Linux，并派生自 Ubuntu 22.04。
 * 安装 Apache Maven 3.8.8。
 * 安装的 Java 版本是 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
-* 默认情况下，`JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_371`，其中包含 Oracle JDK 8u371。请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
+* 默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。 请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
 * 安装了一些其他的必要系统包。
    * `bzip2`
    * `unzip`
@@ -35,6 +35,7 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 使用 `settings.xml` 文件在系统级别配置 Maven，并将自动包含使用名为 `adobe-public` 的配置文件的公共 Adobe 构件存储库。（有关更多详细信息，请参阅 [Adobe 公共 Maven 存储库](https://repo1.maven.org/)）。
+* Node.js 18可用于 [前端管道和全栈管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
