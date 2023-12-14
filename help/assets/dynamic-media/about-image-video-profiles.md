@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f9f82c144e6f919ed9b82caf9e1bc0408a352fd6
+source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 您可以对首次处理失败的资产运行重新处理工作流。 即使您尚未编辑图像配置文件或视频配置文件，或者您已经应用了图像配置文件或视频配置文件，您仍可以随时对资产的文件夹运行重新处理工作流。
 
-您可以选择将重新处理工作流的批大小从默认的50个资产调整到1000个资产。 当您运行 _Scene7：重新处理资源_ 工作流中，资产会进行批量分组，然后发送到Dynamic Media服务器以供处理。 处理后，整个批次集中每个资源的元数据将在更新 [!DNL Adobe Experience Manager]. 如果批次大小很大，处理可能会延迟。 或者，如果批次大小太小，可能会导致到Dynamic Media服务器的往返次数过多。
+您可以选择将重新处理工作流的批大小从默认的50个资产调整到1000个资产。 当您运行 _Dynamic Media重新处理_ 工作流中，资产会进行批量分组，然后发送到Dynamic Media服务器以供处理。 处理后，整个批次集中每个资源的元数据将在更新 [!DNL Adobe Experience Manager]. 如果批次大小很大，处理可能会延迟。 或者，如果批次大小太小，可能会导致到Dynamic Media服务器的往返次数过多。
 
 请参阅 [调整重新处理工作流的批次大小](#adjusting-load).
 
