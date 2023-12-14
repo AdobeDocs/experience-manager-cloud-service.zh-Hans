@@ -4,20 +4,19 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: f18b8cf1922f05c0d7da2c58fb0a57bc5ff3d3b7
+source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 91%
 
 ---
 
+# 微前端资源选择器 {#Overview}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | 本文 |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
-
-# 微前端资源选择器 {#Overview}
+| AEM as a Cloud Service | 本文 |
 
 微前端资源选择器提供了一个用户界面，它可以轻松地与 [!DNL Experience Manager Assets as a Cloud Service] 存储库集成，以便您能够浏览或搜索存储库中可用的数字资源，并在您的应用程序创作体验中使用它们。
 
