@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 475505fc8b5eb63c3563e8fabb28f515ff690393
+source-git-commit: a768eddbddb4b418b228839fdf5a9cdaf1488991
 workflow-type: tm+mt
-source-wordcount: '4456'
-ht-degree: 99%
+source-wordcount: '4545'
+ht-degree: 97%
 
 ---
 
@@ -761,6 +761,45 @@ ht-degree: 99%
    + [发布用于Edge交付的内容](/help/edge/publishing.md)
    + [为Edge交付进行开发](/help/edge/developing.md)
    + [现有项目和边缘交付](/help/edge/existing-projects.md)
+   + 构建Edge交付应用程序 {#build}
+      + [快速入门 — 开发人员教程](/help/edge/developer/tutorial.md)
+      + [项目剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
+      + [阻止收藏集](/help/edge/developer/block-collection.md)
+      + [电子表格](/help/edge/developer/spreadsheets.md)
+      + [Forms](/help/edge/developer/forms.md)
+      + [索引](/help/edge/developer/indexing.md)
+      + [保持为100](/help/edge/developer/keeping-it-100.md)
+      + [标记 — 区域](/help/edge/developer/markup-sections-blocks.md)
+      + [法维孔](/help/edge/developer/favicon.md)
+      + [自定义标题](/help/edge/docs/custom-headers.md)
+      + [面向开发人员的最佳实践](/help/edge/docs/dev-collab-and-good-practices.md)
+   + 发布Edge投放应用程序 {#publish}
+      + [创作](/help/edge/docs/authoring.md)
+      + [批量元数据](/help/edge/docs/bulk-metadata.md)
+      + [Slack机器人](/help/edge/docs/slack.md)
+      + [占位符](/help/edge/docs/placeholders.md)
+      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [SharePoint设置](/help/edge/docs/setup-customer-sharepoint.md)
+   + 启动Edge投放应用程序 {#launch}
+      + [上线清单](/help/edge/docs/go-live-checklist.md)
+      + [推送失效](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
+      + [Cloudflare Worker设置](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
+      + [Akamai设置](/help/edge/docs/byo-cdn-akamai-setup.md)
+      + [Fastly设置](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [重定向](/help/edge/docs/redirects.md)
+   + Edge Delivery的资源 {#resources}
+      + Sidekick {#sidekick}
+         + [使用Sidekick](/help/edge/docs/sidekick.md)
+         + [安装扩展](/help/edge/docs/sidekick-extension.md)
+         + [项目配置器](https://www.aem.live/tools/sidekick/)
+         + [Sidekick库](/help/edge/docs/sidekick-library.md)
+      + [常见问题](/help/edge/docs/faq.md)
+      + [管理员API](https://www.aem.live/docs/admin.html)
+      + [status.hlx.live](https://status.hlx.live/history)
+      + 工具 {#tools}
+         + [SidekickChrome扩展](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [Github机器人](https://github.com/apps/aem-code-sync)
+         + [审核日志](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [什么是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 简介](/help/headless/introduction.md)
