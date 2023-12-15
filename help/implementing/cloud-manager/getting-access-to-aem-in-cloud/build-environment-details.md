@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3e7d3113b25e9b4058130bf3352a612f36ef5c63
+source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 92%
+source-wordcount: '1177'
+ht-degree: 80%
 
 ---
 
@@ -20,6 +20,7 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
 
 * 构建环境基于 Linux，并派生自 Ubuntu 22.04。
 * 安装 Apache Maven 3.8.8。
+   * Adobe推荐用户 [更新其Maven存储库以使用HTTPS而不是HTTP。](#https-maven)
 * 安装的 Java 版本是 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
 * 默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。 请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
 * 安装了一些其他的必要系统包。
@@ -40,6 +41,14 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
 >[!NOTE]
 >
 >虽然 Cloud Manager 未定义 `jacoco-maven-plugin` 的具体版本，但使用的版本必须至少为 `0.7.5.201505241946`。
+
+## HTTPS Maven存储库 {#https-maven}
+
+Cloud Manager [2023.10.0版](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 开始滚动更新构建环境（包括对Maven 3.8.8的更新，完成版本为2023.12.0）。Maven 3.8.1中引入的一项重大更改是旨在减少潜在漏洞的安全增强功能。 具体来说，Maven现在禁用所有不安全的 `http://*` 默认镜像，如 [Maven发行说明。](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+由于此安全增强，某些用户可能在构建步骤期间遇到问题，尤其是从使用不安全HTTP连接的Maven存储库下载工件时。
+
+为了确保通过更新版本获得流畅的体验，Adobe建议用户更新其Maven存储库以使用HTTPS而不是HTTP。 这一调整与业界日益转向安全通信协议相一致，并有助于保持安全可靠的构建过程。
 
 ### 使用特定的 Java 版本 {#using-java-support}
 
