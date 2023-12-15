@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 0d0b91551582040c39d57b29c8f2141c2ff6d553
 workflow-type: tm+mt
 source-wordcount: '1344'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 在开始查询您的内容之前，您需要：
 
 * 启用端点
-   * 使用“工具”>“常规”>“GraphQL”
+   * 使用“工具” > “常规” > “GraphQL”
    * [启用 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)
       * 这也将启用 GraphiQL IDE。
 
@@ -269,7 +269,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 可以在 GraphiQL 接口中输入查询。您可以通过以下任一方式访问查询编辑器：
 
-* **工具** > **常规** > **GraphQL查询编辑器**
+* **工具** > **常规** > **GraphQL 查询编辑器**
 * 直接；例如，`http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL 接口](assets/graphiql-interface.png "GraphiQL 接口")
