@@ -2,9 +2,9 @@
 title: 上线
 description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1721'
 ht-degree: 4%
 
 ---
@@ -152,6 +152,8 @@ ht-degree: 4%
       * TTL是在请求服务器更新之前DNS记录保留在缓存中的时间。
       * 如果您的TTL非常高，则传播对DNS记录的更新将需要较长时间。
 * 运行符合您的业务要求和目标的性能和安全性测试。
+   * 在暂存环境中执行测试。  它的规模与生产规模相同。
+   * 开发环境的大小与暂存和生产环境不同。
 * 切换并确保不进行任何新部署或内容更新而执行实际上线。
 * 创建Admin Console用户通知配置文件。 请参阅 [通知配置文件](/help/journey-onboarding/notification-profiles.md)
 
