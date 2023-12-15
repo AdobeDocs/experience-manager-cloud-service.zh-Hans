@@ -6,7 +6,7 @@ exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 9d26a4835dc331f2ff8b741a4c14847ead611874
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 48%
+ht-degree: 50%
 
 ---
 
@@ -51,7 +51,7 @@ Edge Delivery Services是Adobe Experience Manager的一部分，因此Edge Deliv
 
 ## 从 Adobe 获取帮助 {#adobe-gethelp}
 
-您可以通过由您提供的产品协作渠道与 Adobe 产品团队联系（有关访问详情，请参阅下文）以回答有关产品使用或最佳实践的疑问。没有通过产品协作渠道与对话相关联的服务级别目标(SLT)。 如果产品问题需要进行额外的调查和疑难解答，并且必须满足响应SLT，则可以按照以下说明提交支持工单 [支持流程。](https://experienceleague.adobe.com/?support-tab=home#support)
+您可以通过由您提供的产品协作渠道与 Adobe 产品团队联系（有关访问详情，请参阅下文）以回答有关产品使用或最佳实践的疑问。没有服务水平目标 (SLT) 与通过该产品协作渠道进行的对话关联。如果产品问题需要进行额外的调查和疑难解答，并且必须满足响应SLT，则可以按照以下说明提交支持工单 [支持流程。](https://experienceleague.adobe.com/?support-tab=home#support)
 
 Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
 
