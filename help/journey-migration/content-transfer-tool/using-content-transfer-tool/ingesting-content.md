@@ -2,10 +2,10 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: b674b3d8cd89675ed30c1611edec2281f0f1cb05
+source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
 workflow-type: tm+mt
-source-wordcount: '2392'
-ht-degree: 4%
+source-wordcount: '2407'
+ht-degree: 5%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 4%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="增补引入"
->abstract="使用增补功能可移动自上次内容传输活动以来修改的内容。 摄取完成后，检查日志中是否有任何错误或警告。 应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
+>abstract="使用增补功能移动自上次内容转移活动以来修改的内容。摄取完成后，检查日志中是否有任何错误或警告。 应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hans" text="查看日志"
 
 内容传输工具具备允许通过执行 *增补* 迁移集的URL。 这样可修改迁移集，使其仅包含自上次提取以来已更改的内容，而无需再次提取所有内容。
@@ -96,7 +96,7 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
->title="内容摄取疑难解答"
+>title="内容摄取故障排除"
 >abstract="请参阅摄取日志和文档，找到导致摄取失败的常见原因的解决方案并找到解决问题的方式。 修复后，摄取可以再次运行。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="验证内容转移"
 
@@ -159,9 +159,11 @@ ht-degree: 4%
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakConstraint0030：违反了唯一性约束 [jcr：uuid] 值为a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5： /some/path/jcr：content， /some/other/path/jcr：content
 
-AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在摄取的节点具有与目标实例上不同路径的其他位置中存在的节点相同的uuid。
-如果在提取和后续操作之间在源上移动节点，则可能会发生这种情况 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-如果目标上的节点在摄取和后续增补摄取之间移动，也会发生这种情况。
+AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在摄取的节点具有与目标实例上不同路径中存在的节点相同的uuid。 发生这种情况有两个原因：
+
+* 在源上提取和后续操作之间移动节点 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)
+   * _记住_：对于增补提取，节点仍将存在于迁移集中，即使它在源上不再存在。
+* 目标上的节点会在摄取和后续增补摄取之间移动。
 
 必须手动解决此冲突。 熟悉内容的用户必须确定必须删除这两个节点中的哪个节点，并牢记引用该节点的其他内容。 解决方案可能要求再次执行增补提取而不考虑违规节点。
 
@@ -171,7 +173,7 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakIntegrity0001：无法删除引用的节点：8a2289f4-b904-4bd0-8410-15e41e0976a8
 
-如果在引入和后续引入之间修改了目标上的节点，则可能会发生这种情况 **非划出** 摄取，以便创建一个新版本。 如果在启用“包含版本”的情况下提取迁移集，则可能会发生冲突，因为目标现在具有版本历史记录和其他内容所引用的较新版本。 摄取进程将无法删除违规版本节点，因为它已被引用。
+如果在引入和后续引入之间修改了目标上的节点，则可能会发生这种情况 **非划出** 摄取，以便创建一个新版本。 如果在启用“包含版本”的情况下提取迁移集，则可能会发生冲突，因为目标现在具有版本历史记录和其他内容所引用的较新版本。 摄取进程无法删除违规版本节点，因为它已被引用。
 
 解决方案可能要求再次执行增补提取而不考虑违规节点。 或者，创建一个包含违规节点的小型迁移集，但禁用“包含版本”。
 
@@ -179,7 +181,7 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 ### 由于大型节点属性值而导致引入失败 {#ingestion-failure-due-to-large-node-property-values}
 
-MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，摄取将失败，并且日志将包含 `BSONObjectTooLarge` 错误并指定哪个节点超过了最大值。 请注意，这是MongoDB限制。
+MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，摄取将失败，并且日志将包含 `BSONObjectTooLarge` 错误并指定哪个节点超过了最大值。 这是MongoDB限制。
 
 请参阅 `Node property value in MongoDB` 注释 [内容传输工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 以获取更多信息以及可帮助查找所有大型节点的Oak工具链接。 修复所有大小较大的节点后，再次运行提取和摄取。
 
