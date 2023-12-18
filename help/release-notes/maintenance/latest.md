@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 2677e8fbdf6b21ce2d1d848000401c826bc5f289
+source-git-commit: db0f60537a65c426dae88b5440622c9034c736e2
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 37%
+source-wordcount: '355'
+ht-degree: 91%
 
 ---
 
@@ -13,38 +13,38 @@ ht-degree: 37%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 14538 {#release-14538}
+## 版本 14697 {#release-14697}
 
-以下总结了于2023年12月6日公开发布的维护版本14538的持续改进。 此维护版本是对上一个维护版本 14227 的更新。
+以下总结了于2023年12月18日公开发布的维护版本14697的持续改进。 它取代了有问题的发行14538本。 以前的维护版本是14227版。
 
-2023.12.0 功能激活将为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
+2023.12.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
-### 增强 {#enhancements-14538}
+### 增强 {#enhancements-14697}
 
-* GRANITE-46723：用户同步 — SAML从默认同步迁移到基于IDP的同步。
-* OAK-10311：复制 — 优化Blob比较，以缩短AEM中大量资产的复制时间。
-* OAK-10511：复制 — 减少网络往返次数，以缩短AEM中大型资源的复制时间。
-* GRANITE-48334：发布者 — RUM缺少收藏集脚本。
+* GRANITE-46723：用户同步 - SAML 从默认同步迁移到基于 IDP 的同步。
+* OAK-10311：复制 - 优化 blob 比较以减少 AEM 中大批量资产的复制时间。
+* OAK-10511：复制 - 减少网络往返次数以减少 AEM 中大型资产的复制时间。
+* GRANITE-48334：发布者 - RUM 缺少收藏集脚本。
 
-### 修复的问题 {#fixed-issues-14538}
+### 修复的问题 {#fixed-issues-14697}
 
-* CQ-4354867： ToggleCondition引用了InstanceActionServlet中不存在的字段。
-* CQ-4349948：对工具→安全→用户下的编辑用户设置中的“配置文件属性”字符串进行本地化。
-* GRANITE-44541：错误对话框的本地化：在“工具”→“安全→用户”下的“编辑用户”>“密钥库”屏幕中，添加私钥文件时出现。
-* GRANITE-45341：在“工具”→“安全性”→“用户”下，本地化激活/取消激活用户操作的成功/失败字符串。
-* GRANITE-46650：本地化错误消息“UserId/Password不匹配”。 “工具→安全→用户创建”对话框下的字符串。
-* GRANITE-47764：更新到Sling模型API 1.5.0：注入到Sling模型中的静态变量将导致编译错误(SLING-11507)。
-* GRANITE-48452：发送状态代码为200的空clientlibs。
-* GRANITE-48410： ResourceResolver未关闭。
-* ASSETS-31297：阻止从Dynamic Media中删除复制的资产。
-* ASSETS-30811：引用Blocktag Service绑定的更新。
-* GRANITE-46418：更新AEM中的Sling事件： GaugeSupport在registerWithSuffix中具有无限递归(SLING-11918)。
+* CQ-4354867：ToggleCondition 引用在 InstanceActionServlet 中指代不存在的字段。
+* CQ-4349948：“工具”→“安全”→“用户”下的“编辑用户设置”中“配置文件属性”字符串的本地化。
+* GRANITE-44541：“工具”→“安全”→“用户”下的“编辑用户”>“密钥库”的添加“私钥文件”屏幕上的错误对话框的本地化。
+* GRANITE-45341：在“工具”→“安全”→“用户”下激活/停用用户操作的成功/失败字符串的本地化。
+* GRANITE-46650：错误消息“用户 ID/密码不匹配”的本地化。“工具”→“安全”→“用户创建对话框”下的字符串。
+* GRANITE-47764：对 Sling 模型的更新 API 1.5.0：注入 Sling 模型中的静态变量会导致编译错误 (SLING-11507)。
+* GRANITE-48452：发送状态代码为 200 的空 clientlib。
+* GRANITE-48410：ResourceResolver 未关闭。
+* ASSETS-31297：防止从 Dynamic Media 中删除复制的资源。
+* ASSETS-30811：Blocktag 服务绑定的参考更新。
+* GRANITE-46418：更新 AEM 中的 Sling 事件：GaugeSupport 在 registerWithSuffix 中具有无限递归 (SLING-11918)。
 
-### 已知问题 {#known-issues-14538}
+### 已知问题 {#known-issues-14697}
 
 无。
 
-### 嵌套的技术 {#embedded-tech-14538}
+### 嵌套的技术 {#embedded-tech-14697}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
