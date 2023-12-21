@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 的架构简介
 description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 3e40832ee4351c92ffc4eb22540223e331323821
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2696'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,11 +56,11 @@ AEM as a Cloud Service 有四种类型的[环境](/help/implementing/cloud-manag
       * 这与 Adobe 在维护更新中发起的更改或由您的代码部署发起的更改无关。
       * 在代码部署的情况下，您还可执行手动测试。
    * 一般使用自助内容复制功能将暂存环境的内容与生产内容保持同步。
-   * 在暂存环境中执行性能测试和安全性测试。  它的规模与生产规模相同。
+   * 对暂存环境进行性能和安全测试。它的规模与生产环境相同。
 * 开发环境：
    * 利用开发环境，开发人员能够在与暂存环境和生产环境相同的运行时条件下实施和测试 AEM 应用程序。
    * 这些更改经历一个部署管道，其中的代码质量和安全审核可达到生产部署管道中的相同水平。
-   * 开发环境与暂存和生产环境的大小不同，不应使用开发环境进行性能测试和安全性测试。
+   * 开发环境的规模与暂存和生产环境不同，不应用于进行性能和安全测试。
 * 快速开发环境 (RDE)：
    * 通过 RDE 环境，可在将新代码或现有代码部署到 RDE 实例中时快速地进行开发迭代，无需经历常规开发环境中的正式部署管道。
 
