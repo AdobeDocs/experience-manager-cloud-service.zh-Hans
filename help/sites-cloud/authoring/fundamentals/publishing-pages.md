@@ -2,10 +2,10 @@
 title: 发布页面
 description: 了解如何使用 AEM 中的各种机制发布和取消发布页面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 410c585dbe9eddaab4e424eb70ce060447db1990
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 93%
+source-wordcount: '1847'
+ht-degree: 91%
 
 ---
 
@@ -49,6 +49,12 @@ ht-degree: 93%
 >* 会触发一个工作流程，向相应的人员通知您的发布请求。
 >* 您的开发团队可能已自定义此工作流程。
 >* 短暂显示一条简短的消息，通知您工作流程已经触发。
+
+>[!NOTE]
+>
+>如果要保留页面顺序，则必须在发布任何子页面时发布父页面。
+>
+>如果只选择子页面进行发布，则无法保证页面顺序（因为订单信息保留在父页面上）。
 
 >[!NOTE]
 >
