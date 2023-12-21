@@ -786,7 +786,7 @@ ht-degree: 99%
       + [推送失效](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Cloudflare Worker 设置](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Akamai 设置](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [快速设置](/help/edge/docs/byo-cdn-fastly-setup.md)
+      + [Fastly 设置](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重定向](/help/edge/docs/redirects.md)
    + Edge Delivery 资源 {#resources}
       + Sidekick {#sidekick}
