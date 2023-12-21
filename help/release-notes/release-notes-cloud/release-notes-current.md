@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: a5121436b2e48302fcf14478764aede1495e089c
+source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 71%
+source-wordcount: '828'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 71%
 
 ## 发布日期 {#release-date}
 
-的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前功能版本(2023.12.0)为2023年12月14日。 下一个功能版本(2024.1.0)计划于2023年1月25日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的当前功能版本 (2023.12.0) 的发布日期为 2023 年 12 月 14 日。下一个功能版本 (2024.1.0) 计划于 2024 年 1 月 25 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -46,20 +46,28 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 早期采用者计划 {#sites-early-adopter}
 
-**您可以利用 [Real User Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 为AEMas a Cloud Service启用客户端收集。
+**您可以利用[真实用户监控 (RUM) 数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;为 AEM as a Cloud Service 启用客户端收集。
 
-Real User Monitoring (RUM) Data Service提供了对用户交互的更精确反映，从而确保了对网站参与情况的可靠衡量。 这是深入了解您的页面性能的绝佳机会。 但这对于使用Adobe管理的CDN或非Adobe管理的CDN的客户是有益的。 此外，对于使用非Adobe托管CDN的客户，现在可以为其启用自动流量报表，因此无需与Adobe共享任何流量报表。
+真实用户监控 (RUM) 数据服务能够更准确地反映用户交互，确保可靠地衡量网站参与度。这是一个深入了解页面性能的绝佳机会。这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户非常有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可以为他们启用自动流量报告，这样便无需与 Adobe 共享任何流量报告。
 
-如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `aemcs-rum-adopter@adobe.com`，以及与Adobe ID关联的电子邮件地址中的生产、暂存和开发环境的域名。 然后，Adobe的产品团队将为您启用Real User Monitoring (RUM)数据服务。
+如果您有兴趣测试这项新功能并共享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址将包含生产、暂存和开发环境的域名的电子邮件发送到 `aemcs-rum-adopter@adobe.com`。Adobe 的产品团队随后将为您启用真实用户监控 (RUM) 数据服务。
 
-
-<!--
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New Features in Admin View {#admin-view-features}
+### 资产视图中的新增功能 {#assets-view-features}
 
+**使用Adobe Firefly创建GenAI图像**
 
+通过集成Adobe Firefly文本到图像功能(需要Adobe Firefly许可证)基于搜索查询创建新图像。
+
+![资源Firefly集成](/help/assets/assets/assets-firefly-integration.png)
+
+**查找类似图像**
+
+现在，您可以通过选择图像并查看Experience Manager Assets存储库中的类似图像来轻松查找内容。
+
+<!--
 
 * **Smart tags blocklist**: Experience Manager Assets now enables you to define a list of blocked tags. These tags are automatically removed from the auto-generated smart tags when you upload assets to the repository. This capability performs tags governance and saves a lot of time as you can add a tag to the block list and AEM Assets automatically excludes it from the list of tags for any of the assets that are added to the repository.
 
@@ -72,7 +80,7 @@ Real User Monitoring (RUM) Data Service提供了对用户交互的更精确反�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 中的新增功能 [!DNL Experience Manager Forms] {#forms-features}
+### [!DNL Experience Manager Forms] 中的新增功能 {#forms-features}
 
 * **[将自适应表单与 Microsoft® SharePoint 列表建立联系](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms 提供现成的集成以将表单数据直接提交到 SharePoint 列表，使您可利用 SharePoint 的列表功能。您可以将 Microsoft SharePoint 列表配置为表单数据模型的数据源，并使用&#x200B;**使用表单数据模型提交**&#x200B;提交操作以将自适应表单与 SharePoint 列表建立联系。
 
@@ -96,9 +104,9 @@ Real User Monitoring (RUM) Data Service提供了对用户交互的更精确反�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### CDN配置早期采用者计划 {#cdn-config-early-adopter}
+### CDN 配置早期采用者计划 {#cdn-config-early-adopter}
 
-除了最近发布的 [流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md)，其中包括可选许可的Web应用程序防火墙(WAF)规则，因此可以使用配置管道来声明和部署其他类型的CDN配置。 我们很乐意了解您的用例，包括：
+除了最近发布的 [流量过滤规则](/help/security/traffic-filter-rules-including-waf.md)（包括可许可的 Web 应用程序防火墙 (WAF) 规则），还有机会使用配置管道来声明和部署其他类型的 CDN 配置。我们很乐意了解您的用例，包括：
 * 301/302 客户端重定向
 * 将边缘请求代理到任意来源
 * URL 转换
