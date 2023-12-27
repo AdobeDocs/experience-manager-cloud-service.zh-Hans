@@ -2,9 +2,9 @@
 title: 使用 Universal Editor 进行本地 AEM 开发
 description: 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '576'
 ht-degree: 92%
 
 ---
@@ -88,8 +88,8 @@ Universal Editor 根据页面的检测方式了解使用哪个 Universal Editor 
 
 对于要使用本地 Universal Editor Service 编辑的页面，必须设置以下元标记：
 
-```
-<meta name="urn:adobe:aem:editor:endpoint" content="https://localhost:8000">
+```html
+<meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
 设置完成后，您应看到每个内容更新调用都转到 `https://localhost:8000` 而不是默认的 Universal Editor Service。
