@@ -796,7 +796,7 @@ ht-degree: 99%
          + [Sidekick 库](/help/edge/docs/sidekick-library.md)
       + [常见问题解答](/help/edge/docs/faq.md)
       + [管理员 API](https://www.aem.live/docs/admin.html)
-      + [AEM状态](https://www.aemstatus.net)
+      + [AEM 状态](https://www.aemstatus.net)
       + 工具 {#tools}
          + [Sidekick Chrome 扩展](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 机器人](https://github.com/apps/aem-code-sync)
