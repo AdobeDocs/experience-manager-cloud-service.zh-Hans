@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: c0fc4b2ced046a1e975aca99463cdfa03462f2f4
 workflow-type: tm+mt
 source-wordcount: '784'
-ht-degree: 54%
+ht-degree: 98%
 
 ---
 
@@ -21,37 +21,37 @@ ht-degree: 54%
 
 ## 发布日期 {#release-date}
 
-AEMas a Cloud Service中的Cloud Manager 2023.12.0版的发布日期为2023年12月14日。 下一个版本计划于 2024 年 1 月 18 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 版本 2023.12.0 的发布日期是 2023 年 12 月 14 日。下一个版本计划于 2024 年 1 月 18 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* [Cloud Manager 自定义权限](/help/implementing/cloud-manager/custom-permissions.md)可让您创建具有可配置权限的自定义权限配置文件，以限制 Cloud Manager 用户对项目、管道和环境的访问。
-   * 此功能将分阶段推出，预计2024年2月发布的Cloud Manager将分阶段完成。
-   * 请发送电子邮件至 `Grp-CloudManager-custom-permissions@adobe.com` 从与Adobe ID关联的电子邮件地址启用（如果您希望更早启用）。
-* 现在，生成容器支持用于以下项的Node.js版本18： [前端管道。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
-* 对于新创建的Cloud Manager程序， [关联的New Relic子帐户](/help/implementing/cloud-manager/user-access-new-relic.md) 默认情况下不激活。
-   * 对于超过90天未访问New Relic子帐户的现有程序，将停用该帐户。
-   * 如果您希望使用New Relic子帐户，则需要通过Cloud Manager选择加入。
-* 将更新转出到 [构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 曾经是 [宣布并从10月发布的Cloud Manager开始](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 已完成。
-   * 添加了对节点18的支持 [前端管道和全栈管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-   * Java 8次要版本已更新为 `jdk1.8.0_371`.
-   * Java 11次要版本已更新为 `jdk-11.0.20`.
+* 通过 [Cloud Manager 自定义权限](/help/implementing/cloud-manager/custom-permissions.md)，可创建具有可配置的权限的自定义权限配置文件，以限制 Cloud Manager 用户对项目、管道和环境的访问。
+   * 此功能将分阶段推出，完整版本预计将在 2024 年 2 月版的 Cloud Manager 中推出。
+   * 如果您要尽快启用，请从与您的 Adobe ID 关联的电子邮件地址向 `Grp-CloudManager-custom-permissions@adobe.com` 发送一封电子邮件。
+* 构建容器现在支持 Node.js 版本 18 作为[前端管道](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)。
+* 对于新创建的 Cloud Manager 程序，默认情况下不激活[关联的 New Relic 子帐户](/help/implementing/cloud-manager/user-access-new-relic.md)。
+   * 对于其中超过 90 天未访问该 New Relic 子帐户的现有项目，将停用它。
+   * 如果您要使用该 New Relic 子帐户，则需要通过 Cloud Manager 选择启用。
+* 已[宣布并于 10 月发布的 Cloud Manager](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 开始对[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)进行的更新现已完成。
+   * 为[前端和全栈管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)添加了对 Node 18 的支持。
+   * Java 8 次要版本已更新到 `jdk1.8.0_371`。
+   * Java 11 次要版本已更新到 `jdk-11.0.20`。
    * Maven已更新至版本3.8.8。
-      * Maven现在禁用所有不安全的内容 `http://*` 默认镜像。
-      * [Adobe推荐](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 用户更新其Maven存储库以使用HTTPS而不是HTTP。
-   * 构建容器基础图像已更新为Ubuntu 22.04。
+      * Maven 现在默认禁用所有不安全的 `http://*` 镜像。
+      * [Adobe 建议](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)用户更新其 Maven 存储库以使用 HTTPS 代替 HTTP。
+   * 构建容器基础映像已更新到 Ubuntu 22.04。
 
 ## 早期采用计划 {#early-adoption}
 
 加入 Adobe 早期采用计划，即有机会测试一些即将推出的功能。
 
-### 通过Real User Monitoring (RUM)进行客户端收集 {#rum}
+### 通过真实用户监控 (RUM) 进行客户端收集 {#rum}
 
-您可以利用 [Real User Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) 为AEMas a Cloud Service启用客户端收集。
+您可以利用[真实用户监控 (RUM) 数据服务](/help/implementing/cloud-manager/content-requests.md#cliendside-collection)为 AEM as a Cloud Service 启用客户端收集。
 
-Real User Monitoring (RUM) Data Service提供了对用户交互的更精确反映，从而确保了对网站参与情况的可靠衡量。 这是深入了解您的页面性能的绝佳机会。 这对使用Adobe托管的CDN或非Adobe托管的CDN的客户是有益的。 对于使用非Adobe托管CDN的客户，现在可以为其启用自动流量报表，因此无需与Adobe共享任何流量报表。
+真实用户监控 (RUM) 数据服务能够更准确地反映用户交互，确保可靠地衡量网站参与度。这是一个深入了解页面性能的绝佳机会。这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
-如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `aemcs-rum-adopter@adobe.com` 来自与您的Adobe ID关联的电子邮件地址。 请在您的电子邮件中包含用于生产、暂存和开发环境的域名。  此功能的早期采用者计划的可用性是有限的。
+如果您有兴趣测试这项新功能并共享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址向 `aemcs-rum-adopter@adobe.com` 发送一封电子邮件。请在您的电子邮件中包含生产、暂存和开发环境的域名。参与此功能的早期采用者计划的人数受限。
 
 ### 自带 GitHub {#byo-github}
 
@@ -69,7 +69,7 @@ Real User Monitoring (RUM) Data Service提供了对用户交互的更精确反�
 如果您有兴趣测试此新功能并分享您的反馈，请从您的 Adobe ID 关联的电子邮件发送电子邮件至 `aemcs-restorefrombackup-adopter@adobe.com`。
 
 * 早期采用者计划仅限于开发环境。
-* 此功能的早期采用者计划的可用性是有限的。
+* 参与此功能的早期采用者计划的人数受限。
 * 此功能用于恢复意外删除的内容，不适用于灾难恢复。
 
 ### 体验审核仪表板 {#experience-audit-dashboard}

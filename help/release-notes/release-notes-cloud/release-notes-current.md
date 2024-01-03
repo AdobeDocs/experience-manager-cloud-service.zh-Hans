@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 **您可以利用[真实用户监控 (RUM) 数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;为 AEM as a Cloud Service 启用客户端收集。
 
-真实用户监控 (RUM) 数据服务能够更准确地反映用户交互，确保可靠地衡量网站参与度。这是一个深入了解页面性能的绝佳机会。这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户非常有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可以为他们启用自动流量报告，这样便无需与 Adobe 共享任何流量报告。
+真实用户监控 (RUM) 数据服务能够更准确地反映用户交互，确保可靠地衡量网站参与度。这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
 如果您有兴趣测试这项新功能并共享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址将包含生产、暂存和开发环境的域名的电子邮件发送到 `aemcs-rum-adopter@adobe.com`。Adobe 的产品团队随后将为您启用真实用户监控 (RUM) 数据服务。
 
@@ -57,15 +57,15 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### 资产视图中的新增功能 {#assets-view-features}
 
-**使用Adobe Firefly创建GenAI图像**
+**用 Adobe Firefly 创建生成式 AI 图像**
 
-通过集成Adobe Firefly文本到图像功能(需要Adobe Firefly许可证)基于搜索查询创建新图像。
+通过集成 Adobe Firefly 文字生成图像功能（需要 Adobe Firefly 许可证），根据搜索查询创建新图像。
 
-![资源Firefly集成](/help/assets/assets/assets-firefly-integration.png)
+![Assets Firefly 集成](/help/assets/assets/assets-firefly-integration.png)
 
-**查找类似图像**
+**查找相似图像**
 
-现在，您可以通过选择图像并查看Experience Manager Assets存储库中的类似图像来轻松查找内容。
+现在只需选择一幅图像，然后在 Experience Manager Assets 存储库中查看类似的图像，即可轻松地找到内容。
 
 <!--
 
@@ -82,7 +82,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### [!DNL Experience Manager Forms] 中的新增功能 {#forms-features}
 
-* **[将自适应表单与 Microsoft® SharePoint 列表建立联系](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms 提供现成的集成以将表单数据直接提交到 SharePoint 列表，使您可利用 SharePoint 的列表功能。您可以将 Microsoft SharePoint 列表配置为表单数据模型的数据源，并使用&#x200B;**使用表单数据模型提交**&#x200B;提交操作以将自适应表单与 SharePoint 列表建立联系。
+* **[将自适应表单与 Microsoft® SharePoint 列表建立联系](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms 提供现成的集成以将表单数据直接提交到 SharePoint 列表，使您可利用 SharePoint 的列表功能。您可以将 Microsoft SharePoint 列表配置为表单数据模型的数据源，并使用&#x200B;**使用表单数据模型提交**&#x200B;提交操作将自适应表单与 SharePoint 列表建立联系。
 
 <!-- 
 
@@ -106,7 +106,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### CDN 配置早期采用者计划 {#cdn-config-early-adopter}
 
-除了最近发布的 [流量过滤规则](/help/security/traffic-filter-rules-including-waf.md)（包括可许可的 Web 应用程序防火墙 (WAF) 规则），还有机会使用配置管道来声明和部署其他类型的 CDN 配置。我们很乐意了解您的用例，包括：
+除了最近发布的[流量过滤规则](/help/security/traffic-filter-rules-including-waf.md)（包括可许可的 Web 应用程序防火墙 (WAF) 规则），还有机会使用配置管道声明和部署其他类型的 CDN 配置。我们很乐意了解您的用例，包括：
 * 301/302 客户端重定向
 * 将边缘请求代理到任意来源
 * URL 转换
