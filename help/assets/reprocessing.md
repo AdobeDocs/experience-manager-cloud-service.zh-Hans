@@ -2,10 +2,10 @@
 title: 重新处理数字资产
 description: 了解重新处理数字资产的各种方法
 contentOwner: KK
-source-git-commit: 3fb72e0768c44506b0f20f99a48cea837d722387
+source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 1%
+source-wordcount: '685'
+ht-degree: 0%
 
 ---
 
@@ -33,21 +33,21 @@ ht-degree: 1%
 
    ![重新处理资源选项](assets/reprocessing-assets-options.png)
 
-* **[!UICONTROL 完整流程]：** 当您想要执行整个流程(包括默认配置文件、自定义配置文件、动态处理（如果已配置）以及后处理工作流)时，请选择此选项。
-* **[!UICONTROL 高级]：** 选择此选项可选择高级重新处理。
+   * **[!UICONTROL 完整流程]：** 当您想要执行整个流程(包括默认配置文件、自定义配置文件、动态处理（如果已配置）以及后处理工作流)时，请选择此选项。
+   * **[!UICONTROL 高级]：** 选择此选项可选择高级重新处理。
 
-  ![高级重新处理资源选项](assets/reprocessing-assets-options-advanced.png)
+     ![高级重新处理资源选项](assets/reprocessing-assets-options-advanced.png)
 
-从以下高级选项中进行选择：
+     从以下高级选项中进行选择：
 
-* **[!UICONTROL 默认预览演绎版]：** 当您要重新处理默认预览的格式副本时，请选择此选项。
+      * **[!UICONTROL 默认预览演绎版]：** 当您要重新处理默认预览的格式副本时，请选择此选项。
 
-* **[!UICONTROL 元数据]：** 如果要提取所选资源的元数据信息和智能标记，请选择此选项。
+      * **[!UICONTROL 元数据]：** 如果要提取所选资源的元数据信息和智能标记，请选择此选项。
 
-* **[!UICONTROL 处理配置文件]：** 当您要重新处理选定的配置文件时，请选择此选项。 您可以选择 **[!UICONTROL 完整流程]** 选项，以包含在文件夹级别分配的默认处理和自定义配置文件。
-  <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
+      * **[!UICONTROL 处理配置文件]：** 当您要重新处理选定的配置文件时，请选择此选项。 您可以选择 **[!UICONTROL 完整流程]** 选项，以包含在文件夹级别分配的默认处理和自定义配置文件。
+        <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-* **[!UICONTROL 后处理工作流]：** 如果需要对无法使用处理配置文件实现的资产进行额外处理，请选择此选项。 可以向配置中添加其他后处理工作流。 后处理允许您在使用资产微服务的可配置处理之上添加完全自定义的处理。
+      * **[!UICONTROL 后处理工作流]：** 如果需要对无法使用处理配置文件实现的资产进行额外处理，请选择此选项。 可以向配置中添加其他后处理工作流。 后处理允许您在使用资产微服务的可配置处理之上添加完全自定义的处理。
 
 请参阅 [使用资产微服务和处理配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) 了解有关处理用户档案和后处理工作流的更多信息。
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 ### 智能裁剪 {#reprocessing-smart-crop}
 
-详细了解 [Dynamic Media智能裁剪](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hans) 可让您应用特定裁剪(**[!UICONTROL 智能裁剪]** 和像素裁剪)以及对上传的资源进行锐化配置。
+详细了解 [Dynamic Media智能裁剪](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) 可让您应用特定裁剪(**[!UICONTROL 智能裁剪]** 和像素裁剪)以及对上传的资源进行锐化配置。
 
 ### 元数据 {#reprocessing-metadata}
 
