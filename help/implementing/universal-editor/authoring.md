@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 57%
+source-wordcount: '2179'
+ht-degree: 59%
 
 ---
 
@@ -44,11 +44,10 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ## 了解 UI {#ui}
 
-UI 分为五个主要区域。
+UI分为以下几个主要区域。
 
 * [Experience Cloud 标题](#experience-cloud-header)
-* [Universal Editor 标题](#universal-editor-header)
-* [模式边栏](#mode-rail)
+* [通用编辑器工具栏](#universal-editor-toolbar)
 * [编辑器](#editor)
 * [属性边栏](#properties-rail)
 
@@ -96,11 +95,11 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 ![用户属性](assets/user-properties.png)
 
-### Universal Editor 标题 {#universal-editor-header}
+### 通用编辑器工具栏 {#universal-editor-toolbar}
 
-Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud 标题的正下方。](#experience-cloud-header)它为您提供了快速访问权限，以便导航到另一个页面进行编辑以及发布当前页面。
+Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Cloud标头。](#experience-cloud-header)它为您提供了快速访问权限，以便导航到另一个页面进行编辑以及发布当前页面。
 
-![Universal Editor 标题](assets/universal-editor-header.png)
+![通用编辑器工具栏](assets/universal-editor-toolbar.png)
 
 #### “主页”按钮 {#home-button}
 
@@ -132,7 +131,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 #### 身份验证标头设置 {#authentication-settings}
 
-如果需要设置身份验证密码，请选择身份验证标头设置图标。
+如果需要，请选择身份验证标头设置图标 [设置自定义身份验证标头，用于本地开发。](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
 ![“身份验证标题设置”按钮](assets/authentication-header-settings.png)
 
@@ -154,6 +153,16 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 * 定义宽度和高度
 * 更改方向
 
+#### 预览模式 {#preview-mode}
+
+在预览模式中，编辑器中呈现的页面与在您发布的服务上看到的一样。这允许内容作者通过单击链接等来导航内容。
+
+![预览模式](assets/preview-mode.png)
+
+>[!TIP]
+>
+>使用热键 `P` 在预览模式之间切换。
+
 #### 打开应用程序预览 {#open-app-preview}
 
 选择打开应用程序预览图标可在自身浏览器选项卡中打开您当前编辑的页面，无需编辑即可预览您的内容。
@@ -174,47 +183,13 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 >
 >有关使用 Universal Editor 发布内容的更多信息，请参阅文档[使用 Universal Editor 发布内容](publishing.md)。
 
-### 模式边栏 {#rail}
-
-模式边栏位于“主页”按钮的正下方，并且始终位于编辑器的左侧。 它允许在不同使用模式之间轻松切换编辑器。
-
-![模式边栏](assets/mode-rail.png)
-
-#### 预览模式 {#preview-mode}
-
-在预览模式中，编辑器中呈现的页面与在您发布的服务上看到的一样。这允许内容作者通过单击链接等来导航内容。
-
-![预览模式](assets/preview-mode.png)
-
->[!TIP]
->
->使用热键 `P` 可切换到预览模式。
-
-#### 组件模式 {#component-mode}
-
-在组件模式下，内容作者可以选择要编辑的组件，包括：
-
-* 就地[编辑纯文本](#editing-content)。
-* [编辑富文本](#editing-rich-text) 中的其他格式选项的位置。
-* [编辑媒体内容](#editing-media)
-* [编辑内容片段](#edit-content-fragment)
-
-![组件模式](assets/component-mode.png)
-
-选择组件后，其内容的详细信息将显示在 [属性边栏。](#properties-rail) 根据内容类型，您可以在就地或属性边栏中进行编辑。
-
->[!TIP]
->
->使用热键 `C` 切换到组件模式。
-
 ### 编辑器 {#editor}
 
 编辑器占据窗口的大部分区域，并在其中呈现在[地址栏](#location-bar)中指定的页面。
 
-* 如果编辑器位于 [组件模式，](#component-mode) 内容将可编辑，但您无法关注链接。
-* 如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
-
 ![编辑器](assets/editor.png)
+
+如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
 
 ### 属性边栏 {#properties-rail}
 
@@ -254,7 +229,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ##### 编辑 {#edit}
 
-时间 [组件模式，](#component-mode) 所选组件的编辑选项将显示在属性边栏中。 在属性边栏中，您可以编辑选定的组件。 如果选定的组件是内容片段，您还可以选择编辑按钮。
+编辑时，所选组件的选项会显示在属性边栏中，您可以在此处编辑所选组件。 如果选定的组件是内容片段，您还可以选择编辑按钮。
 
 ![“编辑”图标](assets/edit.png)
 
@@ -294,19 +269,19 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ## 编辑内容 {#editing-content}
 
-编辑内容是简单而直观的。在 [组件模式](#component-mode)，当您将鼠标悬停在编辑器中的内容上时，可编辑的内容会以蓝色框突出显示。
+编辑内容是简单而直观的。将鼠标悬停在编辑器中的内容上时，可编辑内容会以蓝色框突出显示。
 
 ![可编辑内容用蓝色框突出显示](assets/editable-content.png)
 
 >[!TIP]
 >
->在组件模式下，点按或单击内容会选择内容进行编辑。 如果要通过以下链接导航内容，请切换到 [预览模式。](#preview-mode)
+>默认情况下，点击或单击内容会选择进行编辑。 如果要通过以下链接导航内容，请切换到 [预览模式。](#preview-mode)
 
 根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在中为内容提供其他信息和选项。 [属性边栏。](#properties-rail)
 
 ### 编辑纯文本 {#edit-plain-text}
 
-如果您在 [组件模式](#component-mode) 并选择一个纯文本组件，您可以通过双击或双击该组件就地编辑文本。
+您可以通过双击或双击组件就地编辑文本。
 
 ![编辑内容](assets/editing-content.png)
 
@@ -320,7 +295,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ### 编辑富文本 {#edit-rich-text}
 
-如果您在 [组件模式](#component-mode) 并选择一个富文本组件，您可以通过双击或双击该组件就地编辑文本。
+您可以通过双击或双击组件就地编辑文本。
 
 按Enter/Return键或选择文本框外部以保存更改。
 
@@ -330,25 +305,20 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 ### 编辑媒体 {#edit-media}
 
-如果您在 [组件模式](#component-mode) 并且选择一个图像，则可以在属性边栏中查看其详细信息。
+您可以在属性边栏中查看其详细信息。
 
 ![编辑媒体](assets/ue-edit-media.png)
 
-选择 **替换** 按钮替换属性边栏中选定图像的预览下的图像，以将其替换为您资源库中的另一个图像。
-
+1. 点按或单击属性边栏中选定图像的预览。
 1. [资源选择器](/help/assets/asset-selector.md#using-asset-selector)窗口会打开，以供您选择资源。
 1. 选择以选择新资源。
 1. 选择 **选择** 以返回到替换资产的属性边栏。
 
-更改会自动保存到您的内容中。
-
->[!TIP]
->
->使用热键 `R` 可打开资源选择器以替换所选图像。
+更改将会自动保存到您的内容中。
 
 ### 编辑内容片段 {#edit-content-fragment}
 
-如果您在 [组件模式](#component-mode) 然后您选择 [内容片段，](/help/sites-cloud/administering/content-fragments/overview.md) 您可以在属性边栏中编辑其详细信息。
+如果您选择 [内容片段，](/help/sites-cloud/administering/content-fragments/overview.md) 您可以在属性边栏中编辑其详细信息。
 
 ![编辑内容片段](assets/ue-edit-cf.png)
 
@@ -407,7 +377,7 @@ Universal Editor 标题始终显示在屏幕顶部，位于 [Experience Cloud �
 
 编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
 
-在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换到 [组件模式。](#component-mode)
+在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换出 [预览模式。](#preview-mode)
 
 ## 其他资源 {#additional-resources}
 
