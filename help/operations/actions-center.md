@@ -2,10 +2,10 @@
 title: 操作中心
 description: 利用行动中心方便地对事件和其他重要信息采取行动
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 83%
+source-wordcount: '734'
+ht-degree: 78%
 
 ---
 
@@ -63,14 +63,14 @@ AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在
 |---|---|---|---|
 | 操作问题 | 需要立即采取行动的关键问题 | 分配给“事件通知 - Cloud Service”产品配置文件的用户 | X |
 | 主动建议 | 应该计划的优化 | 分配给“主动通知 - Cloud Service”产品配置文件的用户 | X |
-| Cloud Manager 管道状态 | 有关您的管道状态的信息 | 具有“业务负责人”、“项目经理”或“部署经理”角色的用户，在 [Experience Cloud 偏好设置](https://experience.adobe.com/preferences)中选中了“其他”，如[这里所述](/help/implementing/cloud-manager/notifications.md)。 |   |
+| Cloud Manager 管道状态 | 有关您的管道状态的信息 | 在中选中具有业务负责人、项目管理员或部署管理员角色的“其他”复选框的用户 [Experience Cloud首选项](https://experience.adobe.com/preferences)， as [此处说明](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## 支持的通知类型 {#supported-notification-types}
 
 下表列出了“操作中心”当前支持的通知类型。通知目前仅适用于生产环境。
 
 | 通知类型 | 相关产品配置文件 | 纠正措施 |
-|---|---|---|
+|---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 已锁定的复制队列 | 问题 | 按照[复制文档](/help/operations/replication.md#troubleshooting)中的说明执行操作来解锁队列 |
+| 持久GraphQL查询无效 | 问题 | GraphQL通过引用 [持久GraphQL查询疑难解答文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
 | 到期的 S2S 证书 | 主动 | 参阅[为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)文档，了解如何刷新凭据 |
-
