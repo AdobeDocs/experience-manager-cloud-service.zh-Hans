@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提�
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 9d26a4835dc331f2ff8b741a4c14847ead611874
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
 ht-degree: 100%
 
@@ -27,13 +27,13 @@ ht-degree: 100%
 
 ![Edge Delivery 架构](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。如前所述，您可以将 [AEM 内容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html)用于 [Universal Editor 创作](/help/implementing/universal-editor/introduction.md)以及[基于文档的创作。](https://www.aem.live/docs/authoring)
+Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。如前所述，您可以将 [AEM 内容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html)用于 [Universal Editor 创作](/help/implementing/universal-editor/introduction.md)以及[基于文档的创作](https://www.aem.live/docs/authoring)。
 
 例如，您可以直接从 Microsoft Word 或 Google Docs 中使用内容。这意味着来自这些来源的文档可成为您网站上的页面。此外，标题、列表、图像、字体元素都可以从初始源转移到网站中。新内容可立即添加，而不经历重建过程。
 
-Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，可在 Google Docs 或 Microsoft Word 中编写内容，并可在 GitHub 中使用 CSS 和 JavaScript 开发站点的功能。当您就绪时，您即可使用 Sidekick 浏览器扩展预览和发布内容更新。
+Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，可在 Google 文档或 Microsoft Word 中编写内容，而在 GitHub 中使用 CSS 和 JavaScript 开发您网站的功能。当您就绪时，您即可使用 Sidekick 浏览器扩展预览和发布内容更新。
 
-进一步参阅 Edge Delivery Services 文档：
+更多信息请参阅 Edge Delivery Services 文档：
 
 * 有关如何开始使用 Edge Delivery 的详细信息，请参阅[“构建”部分](https://www.aem.live/docs/#build)。
 * 要了解如何使用 Edge Delivery 创作和发布内容，请参阅[“发布”部分](https://www.aem.live/docs/authoring)。
@@ -41,7 +41,7 @@ Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储
 
 ## Edge Delivery Services 和其他 Adobe Experience Cloud 产品 {#edge-other-products}
 
-Edge Delivery Services 是 Adobe Experience Manager 的一部分，这样 Edge Delivery Services 和 AEM Sites 即可存在于相同的域中。这是大型网站的常见用例。不仅如此，还可在 AEM Sites 页面中轻松地使用来自 Edge Delivery Services 的内容，并且反之亦然。
+Edge Delivery Services 是 Adobe Experience Manager 的一部分，因此 Edge Delivery Services 可与 AEM Sites 在相同的域中共存。这是大型网站的常见用例。不仅如此，还可在 AEM Sites 页面中轻松地使用来自 Edge Delivery Services 的内容，并且反之亦然。
 
 您还可以将 Edge Delivery Services 与 Adobe Target、Analytics 和 Launch 结合使用。
 
@@ -64,11 +64,11 @@ Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
 Adobe 致力于通过为 Edge Delivery Services 和基于文档的创作营造优秀的社区参与氛围并提供大力支持而为您助力。
 
 * 请加入 [Experience League 社区](https://adobe.ly/3Q6kTKl)，从中您可提问、分享反馈、发起讨论、向 Adobe 专家和 AEM 顾问/支持者寻求帮助并实时与志同道合的人交流。
-* 加入我们的 [Discord 频道](https://discord.gg/aem-live)，通过这个更轻松平台可实时互动和快速交流想法。
+* 加入我们的 [Discord 频道](https://discord.gg/aem-live)，通过这个更休闲的平台可实时互动和快速交流想法。
 
 ### 如何访问您的产品协作渠道 {#collab-channel}
 
-考虑到与客户建立的直接沟通渠道的作用，所有 AEM 客户在启动时都将为了快速沟通、关键更新和各种规模的体验质量报告而建立一个 Slack 频道。您会从 Adobe 收到一条加入您组织特有的 Slack 频道的邀请。
+考虑到与客户建立的直接沟通渠道的作用，所有 AEM 客户都将在启动时建立一个 Slack 频道以快速获得关键更新和针对体验质量的大规模报告。您会从 Adobe 收到一条加入您组织特有的 Slack 频道的邀请。
 
 有关更多信息，请参阅[使用 Slack 机器人](https://www.aem.live/docs/slack)文档。
 
@@ -76,7 +76,7 @@ Adobe 致力于通过为 Edge Delivery Services 和基于文档的创作营造�
 
 通过 Admin Console 记录支持工单的步骤：
 
-1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)来创建工单。
+1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建一个工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
 1. 请在描述中提供以下详细信息：
 
