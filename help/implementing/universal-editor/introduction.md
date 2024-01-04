@@ -2,10 +2,10 @@
 title: Universal Editor 简介
 description: 了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地编辑任何 Headless 和 Headful 体验。了解它如何帮助内容作者投放卓越的体验、提高他们的内容速度以及如何提供高水平的开发人员体验。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '925'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 93%
 # Universal Editor 简介 {#introduction}
 
 了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地编辑任何 Headless 和 Headful 体验。了解它如何帮助内容作者投放卓越的体验、提高他们的内容速度以及如何提供高水平的开发人员体验。
+
+{{universal-editor-status}}
 
 ## 背景 {#background}
 
@@ -43,7 +45,7 @@ ht-degree: 93%
 内容作者应拥有以前由 AEM 页面编辑器提供的同样强大的编辑体验。不过，Universal Editor 允许内容作者在上下文中可视化地编辑&#x200B;**任何**&#x200B;内容，并支持：
 
 * **AEM 页面结构** – `cq:Pages` 的嵌套 `cq:Components`，包括体验片段
-* **AEM 内容片段** – 编辑内容片段中的内容，因为它们将出现在体验的上下文中。
+* **AEM内容片段**  — 编辑内容片段中显示在体验上下文中的内容。
 * **文档** – 概念验证表明 Word、Excel、Google 文档或 Markdown 文档也可以用相同的方式编辑（这是 WIP）。
 
 ### 任何方面 {#any-aspect}

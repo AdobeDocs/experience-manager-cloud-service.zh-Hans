@@ -1,0 +1,283 @@
+---
+title: 通用编辑器的字段类型
+description: 了解通用编辑器支持的不同类型的字段以及可以为您自己的应用程序检测的内容。
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+workflow-type: tm+mt
+source-wordcount: '269'
+ht-degree: 7%
+
+---
+
+
+# 通用编辑器的字段类型 {#field-types}
+
+了解通用编辑器支持的不同类型的字段以及可以为您自己的应用程序检测的内容。
+
+{{universal-editor-status}}
+
+## 概述 {#overview}
+
+在调整自己的应用程序以便与通用编辑器一起使用时，必须检测组件并定义它们可以在编辑器中处理的数据类型。
+
+本文档概述编辑器中可用的字段类型。
+
+>[!TIP]
+>
+>如果您不熟悉如何针对通用编辑器检测应用程序，请参阅文档 [面向AEM开发人员的通用编辑器概述。](help/implementing/universal-editor/developer-overview.md)
+
+## 布尔值 {#boolean}
+
+布尔字段存储呈现为复选框的简单true/false值。
+
+### 样本 {#sample-boolean}
+
+```json
+{
+  "fields": [   
+   {
+      "component": "boolean",
+      "valueType": "boolean",
+      "name": "field1",
+      "label": "Boolean Field",
+      "description": "This is a boolean field.",
+      "required": true,
+      "placeholder": null,
+      "validation": {
+        "customErrorMsg": "This is an error."
+      }
+    }
+  ]
+}
+```
+
+## 复选框组 {#checkbox-group}
+
+与布尔值类似，复选框组允许选择多个true/false项目。
+
+### 样本 {#sample-checkbox-group}
+
+```json
+{
+  "fields": [   
+   {
+      "component": "checkbox-group",
+      "valueType": "string-array",
+      "name": "field1",
+      "label": "Checkbox Group",
+      "description": "This is a checkbox group.",
+      "required": true,
+      "placeholder": null,
+      "options": [
+        { "name": "First option", "value": "one" },
+        { "name": "Second option", "value": "two" },
+        { "name": "Third option", "value": "three" }
+      ]
+    }
+  ]
+}
+```
+
+## 日期时间 {#date-time}
+
+日期时间字段允许指定日期或时间或它们的组合。
+
+### 样本 {#sample-date-time}
+
+```json
+{
+  "fields": [   
+      {
+      "component": "date-time",
+      "valueType": "date-time",
+      "name": "field1",
+      "label": "Date Time",
+      "description": "This is a date time field that stores both date and time.",
+      "required": true,
+      "placeholder": "YYYY-MM-DD HH:mm:ss",
+      "displayFormat": null,
+      "valueFormat": null,
+      "validation": {
+        "customErrorMsg": "Marty! You have to come back with me!"
+      }
+    },
+    {
+      "component": "date-time",
+      "valueType": "date",
+      "name": "field2",
+      "label": "Another Date Time",
+      "description": "This is another date time field that only stores the date.",
+      "required": true,
+      "placeholder": "YYYY-MM-DD",
+      "displayFormat": null,
+      "valueFormat": null,
+      "validation": {
+        "customErrorMsg": "Back to the future!"
+      }
+    },
+    {
+      "component": "date-time",
+      "valueType": "time",
+      "name": "field3",
+      "label": "Yet Another Date Time",
+      "description": "This is another date time field that only stores the time.",
+      "required": true,
+      "placeholder": "HH:mm:ss",
+      "displayFormat": null,
+      "valueFormat": null,
+      "validation": {
+        "customErrorMsg": "Great Scott!"
+      }
+    }
+  ]
+}
+```
+
+## 数字 {#number}
+
+数字字段允许输入数字。
+
+### 样本 {#sample-number}
+
+```json
+{
+  "fields": [   
+   {
+      "component": "number",
+      "valueType": "number",
+      "name": "field1",
+      "label": "Number Field",
+      "description": "This is a number field.",
+      "required": true,
+      "placeholder": null,
+      "validation": {
+        "numberMin": null,
+        "numberMax": null,
+        "customErrorMsg": "Please don't do that."
+      }
+    }
+  ]
+}
+```
+
+## 单选按钮组 {#radio-group}
+
+单选按钮组允许从呈现为类似于复选框组的组的组的多个选项中进行互斥选择。
+
+### 样本 {#sample-radio-group}
+
+```json
+{
+  "fields": [   
+   {
+      "component": "radio-group",
+      "valueType": "string",
+      "name": "field1",
+      "label": "Radio Group",
+      "description": "This is a radio group.",
+      "required": true,
+      "placeholder": null,
+      "options": [
+        { "name": "Option One", "value": "one" },
+        { "name": "Option Two", "value": "two" },
+        { "name": "Option Three", "value": "three" }
+      ]
+    }
+  ]
+}
+```
+
+## 引用 {#reference}
+
+引用允许将另一个数据对象指定为来自当前对象的引用。
+
+## 选择 {#select}
+
+选择允许在下拉菜单中选择一个或多个预定义选项。
+
+### 样本 {#sample-select}
+
+```json
+{
+  "fields": [   
+   {
+      "component": "select",
+      "valueType": "string",
+      "name": "field1",
+      "label": "Select",
+      "description": "This is a select.",
+      "required": true,
+      "placeholder": null,
+      "options": [
+        { "name": "Option One", "value": "one" },
+        { "name": "Option Two", "value": "two" },
+        { "name": "Option Three", "value": "three" }
+      ],
+      "emptyOption": true
+    }
+  ]
+}
+```
+
+## 文本区域 {#text-area}
+
+文本区域允许多行文本输入。
+
+### 样本 {#sample-text-area}
+
+```json
+{
+  "fields": [   
+   {
+      "component": "text-area",
+      "valueType": "string",
+      "name": "field1",
+      "label": "Text Area",
+      "description": "This is a text area.",
+      "required": true,
+      "multi": true,
+      "placeholder": null,
+      "mimeType": "text/x-markdown"
+    }
+  ]
+}
+```
+
+## 文本输入 {#text-input}
+
+文本输入允许单行文本输入。
+
+### 样本 {#sample-text-input}
+
+```json
+{
+  "fields": [   
+   {
+      "component": "text-input",
+      "valueType": "string",
+      "name": "field1",
+      "label": "Text Input",
+      "description": "This is a text input.",
+      "required": true,
+      "multi": true,
+      "placeholder": null
+    },
+    {
+      "component": "text-input",
+      "valueType": "string",
+      "name": "field2",
+      "label": "Another Text Input",
+      "description": "This is a text input with validation.",
+      "required": true,
+      "multi": true,
+      "placeholder": null,
+      "validation": {
+        "minLength": 5,
+        "maxLength": 10,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "I'm sorry, Dave. I can't do that."
+      }
+    }
+  ]
+}
+```
+

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
-workflow-type: ht
-source-wordcount: '205'
-ht-degree: 100%
+source-git-commit: 6a370269317621f09f0dcdc7f701d7c8a4891ea4
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 80%
 
 ---
 # 代码片段 {#snippets}
@@ -17,7 +17,13 @@ ht-degree: 100%
 
 ## WAF 配置限量发行 {#waf-limited-release}
 
-[!BADGE WAF-DDOS 保护将于 2023 年年底推出。]{type=Caution tooltip="WAF-DDOS 保护将于 2023 年年底推出。"}
+[!BADGE WAF-DDOS保护将于2023年底提供。]{type=Caution tooltip="WAF-DDOS保护将于2023年底提供。"}
+
+## 通用编辑器状态 {#universal-editor-status}
+
+>[!NOTE]
+>
+>通用编辑器仍在开发中，其功能可能会发生更改，并且可能与本文档中详述的内容不同。
 
 ## 另请参阅 {#see-also}
 

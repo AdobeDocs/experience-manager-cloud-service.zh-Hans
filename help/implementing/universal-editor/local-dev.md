@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 进行本地 AEM 开发
 description: 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0546f3cee8df3d7134021e32670b40030d56cd84
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '576'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,11 @@ ht-degree: 92%
 
 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
 
-本文档将说明如何在 HTTPS 中将 AEM 与 Universal Editor Service 的本地副本一起运行，以便您能使用 Universal Editor 在 AEM 上进行本地开发。
+{{universal-editor-status}}
+
+## 概述 {#overview}
+
+本文档介绍如何在HTTPS中将AEM与通用编辑器服务的本地副本一起运行，以便您可以使用通用编辑器在AEM上进行本地开发。
 
 ## 将 AEM 设置为在 HTTPS 上运行 {#aem-https}
 

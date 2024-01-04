@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4968921cadcee7eb023d5761abfa0373a24c5ed2
-workflow-type: ht
-source-wordcount: '4560'
-ht-degree: 100%
+source-git-commit: cfae48067df75dae54822dc0c6f868cca75887d4
+workflow-type: tm+mt
+source-wordcount: '4565'
+ht-degree: 99%
 
 ---
 
@@ -1106,11 +1106,14 @@ ht-degree: 100%
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
 + Universal Editor {#universal-editor}
    + [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)
-   + [使用 Universal Editor 创作内容](/help/implementing/universal-editor/authoring.md)
-   + [使用 Universal Editor 发布内容](/help/implementing/universal-editor/publishing.md)
-   + [开始使用 AEM 中的 Universal Editor](/help/implementing/universal-editor/getting-started.md)
-   + [Universal Editor 开发人员概述](/help/implementing/universal-editor/developer-overview.md)
    + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
-   + [属性和类型](/help/implementing/universal-editor/attributes-types.md)
-   + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
-   + [使用 Universal Editor 进行本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
+   + 创作 {#developing}
+      + [使用 Universal Editor 创作内容](/help/implementing/universal-editor/authoring.md)
+      + [使用 Universal Editor 发布内容](/help/implementing/universal-editor/publishing.md)
+   + 开发 {#developing}
+      + [开始使用 AEM 中的 Universal Editor](/help/implementing/universal-editor/getting-started.md)
+      + [Universal Editor 开发人员概述](/help/implementing/universal-editor/developer-overview.md)
+      + [属性和类型](/help/implementing/universal-editor/attributes-types.md)
+      + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
+      + [使用 Universal Editor 进行本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
+      + [通用编辑器调用](/help/implementing/universal-editor/calls.md)

@@ -2,9 +2,9 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '900'
 ht-degree: 78%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 78%
 >[!TIP]
 >
 >如果您想深入研究示例，可以查看 [GitHub 上的 Universal Editor 示例应用程序](https://github.com/adobe/universal-editor-sample-editable-app)。
+
+{{universal-editor-status}}
 
 ## 载入步骤 {#onboarding}
 

@@ -2,7 +2,7 @@
 title: 使用 Universal Editor 发布内容
 description: 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 82%
@@ -13,6 +13,8 @@ ht-degree: 82%
 # 使用 Universal Editor 发布内容 {#publishing}
 
 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
+
+{{universal-editor-status}}
 
 ## 与 AEM 的相似之处 {#similarities}
 

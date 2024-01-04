@@ -2,9 +2,9 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: e33cdaf9147fc0276920fad974984d5703dba530
+source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2165'
 ht-degree: 59%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 59%
 # 使用 Universal Editor 创作内容 {#authoring}
 
 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
+
+{{universal-editor-status}}
 
 ## 简介 {#introduction}
 
@@ -23,10 +25,6 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 >[!TIP]
 >
 >有关 Universal Editor 的更详细介绍，请参阅文档 [Universal Editor 简介](introduction.md)。
-
->[!NOTE]
->
->Universal Editor 仍在开发中。目前，它无法编辑所有内容类型。
 
 ## 准备应用程序 {#prepare-app}
 
