@@ -1,13 +1,13 @@
 ---
 title: 创作内容片段
-description: 了解如何为内容片段创作内容，然后根据用途创建该内容的变体。这让投放 Headless 和创造页面变得更加灵活。
+description: 了解如何为内容片段创作内容，并根据用途创建该内容的变体。 这让投放 Headless 和创造页面变得更加灵活。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
 source-wordcount: '2266'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 

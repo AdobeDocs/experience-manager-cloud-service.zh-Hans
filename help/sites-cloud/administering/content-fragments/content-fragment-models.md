@@ -1,13 +1,13 @@
 ---
 title: 内容片段模型
-description: 了解内容片段模型如何作为 AEM 中内容片段的基础。通过这些片段，可创建结构化的内容以用于投放 Headless 或创作页面。
+description: 了解内容片段模型如何作为AEM中内容片段的基础，允许您创建结构化内容用于Headless投放或页面创作。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -199,7 +199,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 * **呈现为**
 
-  用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。时间 **多个字段** 用于定义项目的最小和最大数量 — 请参阅 [验证](#validation) 以了解更多详细信息。
+  用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。 时间 **多个字段** 用于定义项目的最小和最大数量 — 请参阅 [验证](#validation) 以了解更多详细信息。
 
 * **字段标签**
 输入 **字段标签** 自动生成 **属性名称**，如有必要，可以手动更新。
@@ -261,7 +261,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
   已定义为 **多个字段** (设置 **呈现为**)提供了以下选项：
 
-   * **项目的最小数量**
+   * **最小项目数**
    * **项目的最大数量**
 
   这些将在中验证 [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md).

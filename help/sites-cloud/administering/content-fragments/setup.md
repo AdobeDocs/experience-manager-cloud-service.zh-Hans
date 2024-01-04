@@ -1,15 +1,15 @@
 ---
 title: 内容片段 - 设置
-description: 了解如何启用内容片段和 GraphQL 功能以使用 AEM Headless 投放功能。
+description: 了解如何启用内容片段和GraphQL以用于AEM Headless投放功能和页面创作。
 feature: Content Fragments
 role: Developer, Architect
-source-git-commit: 676173813b6ea4defeafe25c95be9668d32aac38
-workflow-type: ht
-source-wordcount: '388'
-ht-degree: 100%
+exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 内容片段 - 设置 {#content-fragments-setup}
 

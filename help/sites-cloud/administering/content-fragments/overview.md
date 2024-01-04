@@ -1,15 +1,15 @@
 ---
 title: 使用内容片段概述
-description: 了解 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段如何使您可设计、创建、策划和使用独立于页面的内容，这样非常适合 Headless 投放和页面创作。
+description: 了解AEMas a Cloud Service中的内容片段如何允许您创建和使用内容；非常适用于Headless投放和页面创作。
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 3d20f4bca566edcdb5f13eab581c33b7f3cf286d
-workflow-type: ht
-source-wordcount: '1823'
-ht-degree: 100%
+exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
+source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 使用内容片段概述 {#overview-working-with-content-fragments}
 
