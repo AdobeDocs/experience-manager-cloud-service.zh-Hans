@@ -2,7 +2,7 @@
 title: 就绪阶段
 description: 了解您必须执行的步骤，以便确保AEM安装已准备好移至云。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 6%
@@ -49,7 +49,7 @@ AEMas a Cloud Service为管理AEM项目提供了许多新功能和可能性。
 <tbody>
   <tr>
     <td>将可变和不可变过滤器分隔到相应的包中</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">AEMas a Cloud Service显着更改</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEMas a Cloud Service的AEM项目结构</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">AEMas a Cloud Service显着更改</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#mutable-vs-immutable">AEMas a Cloud Service的AEM项目结构</a></td>
     <td>可部署到AEMas a Cloud Service的单个包可以具有子包，主要用于包含分隔到其自己的包中的可变和不可变内容。</td>
   </tr>
   <tr>
@@ -104,7 +104,7 @@ AEMas a Cloud Service为管理AEM项目提供了许多新功能和可能性。
   </tr>
   <tr>
     <td>DAM更新资产工作流</td>
-    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=en">asset compute服务</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html">asset compute服务</a></td>
     <td>DAM更新资产工作流中的媒体处理步骤现在由Asset compute服务替换</td>
   </tr>
   <tr>
@@ -119,17 +119,17 @@ AEMas a Cloud Service为管理AEM项目提供了许多新功能和可能性。
   </tr>
   <tr>
     <td>自定义演绎版步骤</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en">处理配置文件</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html">处理配置文件</a></td>
     <td>必须通过创建相应的处理配置文件，将任何自定义演绎版生成、图像转换或视频编码卸载到资产处理服务。</td>
   </tr>
   <tr>
     <td>内容搜索与索引</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=en">内容搜索和索引更改</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html">内容搜索和索引更改</a></td>
     <td>索引的基础处理及其引入时间发生了显着变化。<br>在部署代码中管理Oak索引之前，请完全了解并重构这些索引。</td>
   </tr>
   <tr>
     <td>并非所有维护任务都可以配置</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html?lang=en">AEMas a Cloud Service维护任务</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/maintenance.html">AEMas a Cloud Service维护任务</a></td>
     <td>您只能使用AEMas a Cloud Service配置某些维护任务。</td>
   </tr>
   <tr>
@@ -139,17 +139,17 @@ AEMas a Cloud Service为管理AEM项目提供了许多新功能和可能性。
   </tr>
   <tr>
     <td>Dispatcher配置和缓存</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=en">云中的调度程序</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">缓存管理<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html">云中的调度程序</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">缓存管理<br></td>
     <td>Dispatcher配置必须遵循特定结构。<br>这些配置必须作为代码的一部分进行管理，并通过Cloud Manager管道进行部署。</td>
   </tr>
   <tr>
     <td>备份和恢复</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html?lang=en">AEMas a Cloud Service备份和恢复</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html">AEMas a Cloud Service备份和恢复</a></td>
     <td></td>
   </tr>
   <tr>
     <td>身份验证的更改</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">AEM as a Cloud Service 的 IMS 支持</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html">AEM as a Cloud Service 的 IMS 支持</td>
     <td>如果您之前在迁移到Cloud Service之前在创作和发布上都使用SAML 2.0集成，则主要更改是AEMas a Cloud Service创作仅与Adobe IMS集成。 但是，AEMas a Cloud Service发布层仍可以使用SAML或其他身份验证集成。 AEM as a Cloud Service 仅为作者、管理员和开发人员用户提供 IMS 身份验证支持。IMS身份验证不为客户站点（如站点访客）的外部最终用户提供支持。</td>
   </tr>
 </tbody>

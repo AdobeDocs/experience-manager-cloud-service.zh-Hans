@@ -2,10 +2,10 @@
 title: 合适的人员，合适的职位
 description: 了解如何为您的项目选择合适的人员，并为他们分配合适的角色。
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '832'
+ht-degree: 99%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 100%
 >id="aemcloud_chooseteam"
 >title="选择合适的团队"
 >abstract="将合适的人员放在合适的职位上，帮助推动您成功部署 Adobe Experience Manager。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-hans" text="调整 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=zh-hans" text="评估 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="调整 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html" text="评估 KPI"
 
 在您的组织中，可能会有多个部门负责数字体验的不同层面。如果没有合适的治理方式，这一阶段就会出现无休止的争论、内斗和混乱。
 

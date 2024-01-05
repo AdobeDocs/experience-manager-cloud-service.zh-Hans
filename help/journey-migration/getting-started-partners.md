@@ -2,7 +2,7 @@
 title: 面向合作伙伴的 Experience Manager as a Cloud Service 迁移指南
 description: 面向合作伙伴的 Experience Manager as a Cloud Service 迁移指南
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 22%
@@ -127,7 +127,7 @@ Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展�
 <table>
 <tr>
 <td>项目发现和评估</td>
-<td><ul><li>请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=en">对Experience Manageras a Cloud Service的重要更改</a> 了解Adobe Experience Manager as a Cloud Service与Experience Manager6.x之间的重要差异。</li><li>请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=en">已弃用的功能</a> 详细了解已标记为已弃用的特性和功能。</li><li>[仅适用于Cloud Service迁移]评估Cloud Service准备情况：运行 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en">Best Practices Analyzer(BPA)</a> 在源环境中 </li><li>针对Experience ManagerCS中的显着更改和已弃用功能完成评估</li></ul></td>
+<td><ul><li>请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">对Experience Manageras a Cloud Service的重要更改</a> 了解Adobe Experience Manager as a Cloud Service与Experience Manager6.x之间的重要差异。</li><li>请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html">已弃用的功能</a> 详细了解已标记为已弃用的特性和功能。</li><li>[仅适用于Cloud Service迁移]评估Cloud Service准备情况：运行 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=zh-Hans">Best Practices Analyzer(BPA)</a> 在源环境中 </li><li>针对Experience ManagerCS中的显着更改和已弃用功能完成评估</li></ul></td>
 </tr>
 <tr>
 <td>审核</td>

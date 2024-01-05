@@ -3,7 +3,7 @@ title: 部署到 AEM as a Cloud Service
 description: 了解部署到 AEM as a Cloud Service 的基础知识和最佳实践
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 98%
@@ -175,7 +175,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="包管理器 – 迁移可变内容包"
 >abstract="探索将包管理器用于某些用例的情况，在这些用例中应“一次性”安装内容包。安装过程包括将特定内容从生产导入到暂存以调试生产问题，并将小型内容包从内部部署环境转移到 AEM 云环境等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hans" text="内容传输工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="内容传输工具"
 
 在某些用例中，应“一次性”安装内容包。例如，将特定内容从生产环境导入到暂存环境来调试生产问题。在这些场景中，可以在 AEM as a Cloud Service 上的环境中使用[包管理器](/help/implementing/developing/tools/package-manager.md)。
 
