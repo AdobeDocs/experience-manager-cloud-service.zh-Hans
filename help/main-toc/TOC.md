@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cfae48067df75dae54822dc0c6f868cca75887d4
+source-git-commit: c04b9391059e66b343fe2ecab90e26179b2172ac
 workflow-type: tm+mt
-source-wordcount: '4565'
+source-wordcount: '4567'
 ht-degree: 99%
 
 ---
@@ -781,6 +781,7 @@ ht-degree: 99%
       + [占位符](/help/edge/docs/placeholders.md)
       + [Sitemap](/help/edge/developer/sitemap.md)
       + [SharePoint 设置](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack 机器人](/help/edge/docs/slack.md)
    + 启动 Edge Delivery 应用程序 {#launch}
       + [上线清单](/help/edge/docs/go-live-checklist.md)
       + [推送失效](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
