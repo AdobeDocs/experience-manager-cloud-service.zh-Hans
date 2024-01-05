@@ -2,10 +2,10 @@
 title: 有关使用内容传输工具的准则和最佳实践
 description: 了解使用内容传输工具的准则和最佳实践。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5f805122fb52d7f5268075bd7a6a0232e7e8d2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 16%
+source-wordcount: '1401'
+ht-degree: 15%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 16%
 
 以下准则和最佳实践适用于内容传输工具的新版本：
 
-* 运行 [修订版清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 和 [数据存储一致性检查](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=zh-Hans) 在 **源** 存储库，以便您识别潜在问题并减小存储库的大小。
+* 运行 [修订版清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html) 和 [数据存储一致性检查](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) 在 **源** 存储库，以便您识别潜在问题并减小存储库的大小。
 
 * 在摄取阶段，Adobe建议您使用 *划出* 模式已启用，其中删除了目标Adobe Experience Manager (AEM)Cloud Service环境中的现有存储库（创作或发布）。 然后，使用迁移集数据更新。 此模式比非划出模式更快，在非划出模式下，迁移集将应用于当前内容的顶部。
 

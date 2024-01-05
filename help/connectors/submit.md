@@ -2,10 +2,10 @@
 title: 提交 AEM 连接器
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中正确引用和部署连接器。
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: ht
-source-wordcount: '310'
-ht-degree: 100%
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 对于如何将包包含在项目中，有多种选择：
 
 1. 合作伙伴的公共存储库 – 合作伙伴将在可公开访问的 maven 存储库中托管内容包
-1. 合作伙伴的受密码保护的存储库 – 合作伙伴将在受密码保护的 maven 存储库中托管内容包。有关说明，请参阅[受密码保护的 maven 存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=zh-Hans#password-protected-maven-repositories)。
+1. 合作伙伴的受密码保护的存储库 – 合作伙伴将在受密码保护的 maven 存储库中托管内容包。有关说明，请参阅[受密码保护的 maven 存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories)。
 1. 捆绑式构件 – 在这种情况下，连接器包将本地包含在客户的 maven 项目中。
 
 无论包的托管位置如何，都必须在 pom.xml 中将包作为依赖项引用，如供应商提供的那样。

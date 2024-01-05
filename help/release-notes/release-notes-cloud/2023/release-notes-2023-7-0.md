@@ -2,8 +2,8 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版的发行说明。'
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites] 预发行版本中的新增功能 {#prerelease-sites}
 
-* [内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hans)现在允许用户查看标记并按作为元数据应用于内容片段的标记进行搜索。用户将不再需要切换到此功能的资源 UI，这减少了上下文切换并提高了效率。
+* [内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)现在允许用户查看标记并按作为元数据应用于内容片段的标记进行搜索。用户将不再需要切换到此功能的资源 UI，这减少了上下文切换并提高了效率。
 
 ![内容片段控制台中的标记](/help/assets/content-fragments-console-tags.png)
 

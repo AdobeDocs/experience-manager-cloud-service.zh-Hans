@@ -3,9 +3,9 @@ title: AEMas a Cloud Service2022.1.0版中迁移工具的发行说明
 description: AEMas a Cloud Service2022.1.0版中迁移工具的发行说明
 feature: Release Information
 exl-id: cbd0c316-bda3-48fb-89d6-a8f97bad1970
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '133'
 ht-degree: 6%
 
 ---
@@ -22,8 +22,8 @@ ht-degree: 6%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 已将切换添加到内容传输工具中的提取阶段，以允许用户禁用 [预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 提取期间。 为获得最佳提取速度，对于小型迁移集或如果自上次提取以来只添加了少量Blob，则应禁用提取期间的预复制。
+* 已将切换添加到内容传输工具中的提取阶段，以允许用户禁用 [预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 提取期间。 为获得最佳提取速度，对于小型迁移集或如果自上次提取以来只添加了少量Blob，则应禁用提取期间的预复制。
 
 ### 错误修复 {#bug-fixes-ctt}
 
-* 更新了默认配置，以减少提取期间的执行超时。
+* 更新了默认配置以减少提取期间的执行超时。

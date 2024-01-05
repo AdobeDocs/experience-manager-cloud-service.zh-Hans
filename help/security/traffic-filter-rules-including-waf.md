@@ -2,10 +2,10 @@
 title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
-workflow-type: ht
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+workflow-type: tm+mt
 source-wordcount: '3357'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
 客户可采取主动措施以通过在内容投放流的各层配置规则而减轻应用层（第 7 层）受到的攻击。
 
-例如，客户可在 Apache 层配置[调度程序模块](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html?lang=zh-Hans) 以限制访问某些内容。
+例如，客户可在 Apache 层配置[调度程序模块](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection.html) 以限制访问某些内容。
 
 此外如本文所述，还可使用 Cloud Manager 的配置管道将流量过滤器规则部署到 Adobe Managed CDN。除了基于 IP 地址、路径和标头等属性的流量过滤规则或基于设置速率限制的规则之外，客户还可许可过滤规则的一个强有力的子类别，称为 WAF 规则。
 

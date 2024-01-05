@@ -2,7 +2,7 @@
 title: 注册、登录和用户配置文件
 description: 了解 AEM as a Cloud Service 的注册、登录、用户数据和组同步
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%
@@ -94,7 +94,7 @@ AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最�
 可通过两种方式写入和读取用户配置文件信息：
 
 * 通过 `com.adobe.granite.security.user` 接口 UserPropertiesManager 接口进行服务器端使用，这会将数据放置在 `/home/users` 中的用户节点下。确保不缓存每个用户的唯一页面。
-* 使用 ContextHub 的客户端，如[文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=zh-Hans#personalization)所述。
+* 使用 ContextHub 的客户端，如[文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization)所述。
 
 ### 第三方数据存储 {#third-party-data-stores}
 
@@ -104,7 +104,7 @@ AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最�
 
 ## 权限（封闭用户组） {#permissions-closed-user-groups}
 
-发布层访问策略（也称为封闭用户组 (CUG)）是在 AEM 创作实例中定义的，如[此处所述](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=zh-Hans#applying-your-closed-user-group-to-content-pages)。为了限制某些用户访问网站的某些部分或页面，请使用 AEM 创作实例根据需要应用 CUG（如此处所述），并将它们复制到发布层。
+发布层访问策略（也称为封闭用户组 (CUG)）是在 AEM 创作实例中定义的，如[此处所述](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)。为了限制某些用户访问网站的某些部分或页面，请使用 AEM 创作实例根据需要应用 CUG（如此处所述），并将它们复制到发布层。
 
 * 如果用户通过使用 SAML 向标识提供者 (IdP) 进行身份验证来登录，则身份验证处理程序将识别用户的组成员资格（应与发布层上的 CUG 匹配），并通过存储库记录保留用户与组之间的关联
 * 如果在没有 IdP 集成的情况下完成登录，则自定义代码可应用相同的存储库结构关系。

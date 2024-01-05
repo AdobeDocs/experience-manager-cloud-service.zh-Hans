@@ -2,10 +2,10 @@
 title: 为 Screens as a Cloud Service 开发自定义组件
 description: 以下教程将介绍为AEM Screens创建自定义组件的步骤。 AEM Screens可重复使用其他AEM产品的许多现有设计模式和技术。 本教程重点介绍了为AEM Screens开发时的差异和特殊注意事项。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 3%
+source-wordcount: '2042'
+ht-degree: 2%
 
 ---
 
@@ -28,12 +28,12 @@ ht-degree: 3%
 
 1. 本地开发环境
 
-使用执行教程步骤和屏幕截图 **CRXDE Lite**. IDE也可用于完成本教程。 有关使用IDE开发的详细信息 [带AEM的组件可在此处找到。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en)
+使用执行教程步骤和屏幕截图 **CRXDE Lite**. IDE也可用于完成本教程。 有关使用IDE开发的详细信息 [带AEM的组件可在此处找到。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
 
 
 ## 项目设置 {#project-setup}
 
-屏幕项目的源代码通常作为多模块Maven项目进行管理。 为了加快教程，使用预生成了一个项目 [AEM项目原型13](https://github.com/adobe/aem-project-archetype). 更多详细信息 [可在此处找到使用Maven AEM项目原型创建项目的内容](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en).
+屏幕项目的源代码通常作为多模块Maven项目进行管理。 为了加快教程，使用预生成了一个项目 [AEM项目原型13](https://github.com/adobe/aem-project-archetype). 更多详细信息 [可在此处找到使用Maven AEM项目原型创建项目的内容](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 1. 使用下载并安装以下包 [CRX包管理器](http://localhost:4502/crx/packmgr/index.jsp)：
 
@@ -129,7 +129,7 @@ AEM Screens具有一些有趣的限制，对于传统的WCM Sites组件未必是
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   Screens组件需要两种不同的渲染，具体取决于 [创作模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=en#page-modes) 正在使用：
+   Screens组件需要两种不同的渲染，具体取决于 [创作模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes) 正在使用：
 
    1. **生产**：预览或发布模式(wcmmode=disabled)
    1. **编辑**：用于所有其他创作模式，即编辑、设计、基架、开发人员……
@@ -281,7 +281,7 @@ AEM Screens组件在编辑模式与预览/生产模式中的呈现方式有所�
 
    * `allowProxy` | 布尔型 | `true`
 
-   * `categories`|字符串[] | `cq.screens.components`
+   * `categories`| 字符串[] | `cq.screens.components`
 
    ![/apps/weretail-run/components/content/helloworld/clientlibs/shared的属性](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)
 
@@ -376,7 +376,7 @@ AEM Screens组件在编辑模式与预览/生产模式中的呈现方式有所�
 
 ## 创建设计页面 {#design-page}
 
-AEM Screens使用 [静态页面模板](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=zh-Hans) 和 [设计配置](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=en) 实现全球变革。 设计配置通常用于为通道上的Parsys配置允许的组件。 最佳做法是以特定于应用程序的方式存储这些配置。
+AEM Screens使用 [静态页面模板](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html) 和 [设计配置](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html) 实现全球变革。 设计配置通常用于为通道上的Parsys配置允许的组件。 最佳做法是以特定于应用程序的方式存储这些配置。
 
 将在下面创建We.Retail运行设计页面，该页面存储特定于We.Retail运行项目的所有配置。
 

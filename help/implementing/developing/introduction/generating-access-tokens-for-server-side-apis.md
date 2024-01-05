@@ -2,7 +2,7 @@
 title: 为服务器端API生成访问令牌
 description: 了解如何通过生成安全JWT令牌来促进第三方服务器和AEMas a Cloud Service之间的通信
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## 服务器到服务器流 {#the-server-to-server-flow}
 
@@ -113,7 +113,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 1. 选择 **AEMas a Cloud Service**.
 1. 按 **新建配置文件** 按钮。
 
-   ![新配置文件](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
+   ![新建配置文件](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
 
 1. 命名用户档案并按 **保存**.
 

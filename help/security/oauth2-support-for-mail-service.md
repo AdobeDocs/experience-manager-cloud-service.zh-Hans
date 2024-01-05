@@ -2,10 +2,10 @@
 title: 对邮件服务的 OAuth2 支持
 description: Adobe Experience Manager as a Cloud Service 中对邮件服务的 Oauth2 支持
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '672'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
    >[!NOTE]
    >
-   >权限配置可能会逐渐演变。如果这些功能无法按预期工作，请使用Microsoft。
+   >权限配置可能会逐渐演变。如果这些操作无法发挥预期的作用，请与 Microsoft 合作解决。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -71,7 +71,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
    http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
    ```
 
-1. 复制上述示例中的 `<code>` 的值.
+1. 复制上述示例中的 `<code>` 的值。
 1. 使用以下 cURL 命令获取 refreshToken。将 tenantID、clientID 和 clientSecret 替换为您帐户的值以及 `<code>` 的值：
 
    ```
@@ -139,14 +139,14 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
    >[!NOTE]
    >
-   >范围可能会逐渐演变。如果这些功能无法按预期工作，请使用Microsoft。
+   >范围可能会逐渐演变。如果这些操作无法发挥预期的作用，请与 Microsoft 合作解决。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. 用以下语法在 `/apps/<my-project>/osgiconfig/config` 下创建一个名为 `called com.day.cq.mailer.DefaultMailService.cfg.json` 的 OSGI 属性文件。`smtp.host` 和 `smtp.port` 值反映了高级网络配置，如[电子邮件服务教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=zh-Hans)中所述。
+1. 用以下语法在 `/apps/<my-project>/osgiconfig/config` 下创建一个名为 `called com.day.cq.mailer.DefaultMailService.cfg.json` 的 OSGI 属性文件。`smtp.host` 和 `smtp.port` 值反映了高级网络配置，如[电子邮件服务教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)中所述。
 
    ```
    {

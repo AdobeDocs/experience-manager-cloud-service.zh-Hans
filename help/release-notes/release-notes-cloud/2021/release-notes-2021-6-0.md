@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 版的发行说明。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 49%
+source-wordcount: '1432'
+ht-degree: 47%
 
 ---
 
@@ -43,7 +43,8 @@ ht-degree: 49%
 
 ### 发布日期 {#release-date-june-cm}
 
-AEM as a Cloud Service 2021.6.0 中的 Cloud Manager 的发布日期是 2021 年 6 月 10 日。下一个版本计划于2021年7月15日发布。
+AEMas a Cloud Service2021.6.0中的Cloud Manager的发布日期是2021年6月10日。
+下一个版本计划于2021年7月15日发布。
 
 ### 新增功能 {#what-is-new-junecm}
 
@@ -152,7 +153,7 @@ AEM Screensas a Cloud Service的发布日期是2021年6月24日。
 ### 新增功能 {#what-is-new-screens-june}
 
 >[!NOTE]
->请参阅 [AEM Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) 有关成功安装、配置和运行Screensas a Cloud Service所需的基础知识的指南，以及指向详细概念技术文档的链接。
+>请参阅 [AEM Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) 有关成功安装、配置和运行Screensas a Cloud Service所需的基础知识的指南，以及指向详细概念技术文档的链接。
 
 * 批量设备注册管理意味着可以更快、更高效地配置大量播放器设备。
 
@@ -181,7 +182,7 @@ AEM Screensas a Cloud Service的发布日期是2021年6月24日。
 
 ### 新增功能 {#what-is-new-ctt-latest}
 
-* 支持可选 [预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) 添加了步骤以与CTT一起使用。 当源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储时，预复制步骤可用于显着加快内容传输活动的提取和摄取阶段。
+* 支持可选 [预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 添加了步骤以与CTT一起使用。 当源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储时，预复制步骤可用于显着加快内容传输活动的提取和摄取阶段。
 
 * 向CTT添加了护栏，以防止用户停止摄取，并防止数据在摄取阶段达到临界点后可能损坏。
 

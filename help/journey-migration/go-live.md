@@ -2,7 +2,7 @@
 title: 上线
 description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 75d702cf45e38da4b7259907e7f707b6f18bd428
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '1721'
 ht-degree: 4%
@@ -126,7 +126,7 @@ ht-degree: 4%
 * 执行最终内容增补。
 * 验证Dispatcher配置。
    * 使用本地Dispatcher验证器，这有助于在本地配置、验证和模拟Dispatcher
-      * [设置本地Dispatcher工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+      * [设置本地Dispatcher工具](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
    * 仔细查看虚拟主机配置。
       * 最简单（默认）的解决方案是包括 `ServerAlias *` 在虚拟主机文件中 `/dispatcher/src/conf.d/available_vhostsfolder`.
          * 这将允许产品功能测试、Dispatcher缓存失效和克隆使用的主机别名正常运行。
@@ -152,7 +152,7 @@ ht-degree: 4%
       * TTL是在请求服务器更新之前DNS记录保留在缓存中的时间。
       * 如果您的TTL非常高，则传播对DNS记录的更新将需要较长时间。
 * 运行符合您的业务要求和目标的性能和安全性测试。
-   * 在暂存环境中执行测试。  它的规模与生产规模相同。
+   * 在暂存环境中执行测试。  它的规模与生产环境相同。
    * 开发环境的大小与暂存和生产环境不同。
 * 切换并确保不进行任何新部署或内容更新而执行实际上线。
 * 创建Admin Console用户通知配置文件。 请参阅 [通知配置文件](/help/journey-onboarding/notification-profiles.md)

@@ -2,10 +2,10 @@
 title: 复制
 description: 了解AEMas a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 43%
+source-wordcount: '1312'
+ht-degree: 39%
 
 ---
 
@@ -57,13 +57,13 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 
 请勿调用原始模型。 相反，请确保首先复制模型并调用该副本。
 
-与所有工作流一样，也可以通过 API 调用。 有关更多信息，请参阅 [以编程方式与工作流交互](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=zh-Hans#extending-aem).
+与所有工作流一样，也可以通过 API 调用。 有关更多信息，请参阅 [以编程方式与工作流交互](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 或者，您可以创建一个工作流模型，该模型使用 `Publish Content Tree` 流程步骤：
 
-1. 从 AEM as a Cloud Service 主页，转到&#x200B;**工具 – 工作流 – 模型**.
-1. 在“工作流模型”页面中，按屏幕右上角的&#x200B;**创建.**
-1. 为模型添加标题和名称。 有关更多信息，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
+1. 从AEMas a Cloud Service主页，转到 **工具 — 工作流 — 模型**.
+1. 在“工作流模型”页面中，按 **创建** 在屏幕右上角。
+1. 为模型添加标题和名称。 有关更多信息，请参阅 [创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
 1. 从列表中选择已创建的模型，然后按 **编辑**
 1. 在以下窗口中，将“流程步骤”拖放到当前模型流中：
 

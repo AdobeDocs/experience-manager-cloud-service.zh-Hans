@@ -3,9 +3,9 @@ title: 云中的 Dispatcher
 description: 了解 Dispatcher 工具、受支持的 Apache 模块以及传统模式和灵活模式。
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '716'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 Dispatcher 工具用于验证和调试项目的 Dispatcher 配置。了解如何根据您项目的 Dispatcher 配置是在灵活架构还是旧版架构下构建的，在下面引用的页面中使用这些工具的更多信息：
 
-* **灵活架构** - 推荐架构，也是 [AEM 原型 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 及更高版本的默认架构，Cloud Manager 也将此架构用于创建的新环境（在 Cloud Manager 2021.7.0 版本之后）。客户可以通过添加文件夹和文件 `opt-in/USE_SOURCES_DIRECTLY` 来激活此架构。通过使用这个更灵活的架构，rewrites 文件夹下的文件结构不受任何限制，在旧版架构下需要单个 `rewrite.rules` 文件。此外，可添加的规则数量不受任何限制。有关文件夹结构和本地验证的详细信息，请参阅[使用 Dispatcher 工具进行验证和调试](/help/implementing/dispatcher/validation-debug.md)。
+* **灵活架构** - 推荐架构，也是 [AEM 原型 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 及更高版本的默认架构，Cloud Manager 也将此架构用于创建的新环境（在 Cloud Manager 2021.7.0 版本之后）。客户可以通过添加文件夹和文件 `opt-in/USE_SOURCES_DIRECTLY` 来激活此架构。通过使用这个更灵活的架构，rewrites 文件夹下的文件结构不受任何限制，在旧版架构下需要单个 `rewrite.rules` 文件。此外，可添加的规则数量不受任何限制。有关文件夹结构和本地验证的详细信息，请参阅[使用 Dispatcher 工具进行验证和调试](/help/implementing/dispatcher/validation-debug.md)。
 
 * **传统架构** – 有关 Dispatcher 配置旧版架构的文件夹结构和本地验证的详细信息，请参阅[使用 Dispatcher 工具进行验证和调试（旧版）](/help/implementing/dispatcher/validation-debug-legacy.md)
 

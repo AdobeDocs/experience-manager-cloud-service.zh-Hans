@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
-source-wordcount: '1687'
-ht-degree: 100%
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '1691'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites] 中的新增功能 {#sites-features}
 
-* [内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hans)现在允许用户查看标记并按作为元数据应用于内容片段的标记进行搜索。用户将不再需要切换到此功能的资源 UI，这减少了上下文切换并提高了效率。
+* [内容片段控制台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)现在允许用户查看标记并按作为元数据应用于内容片段的标记进行搜索。用户将不再需要切换到此功能的资源 UI，这减少了上下文切换并提高了效率。
 
   ![内容片段控制台中的标记](/help/assets/content-fragments-console-tags.png)
 * AEM as a Cloud Service 上现在有新的内容片段编辑器可用。它通过简化内容作者的创作任务并减少在编辑内容时需要在不同的应用程序之间切换的次数，使内容作者提高工作效率。
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![从数据源批量导入资源](/help/release-notes/assets/bulk-import.png)
 
-* **由 Adob&#x200B;&#x200B;e Express 提供支持的图像编辑工具**：可直接在 AEM Assets 中找到简单而直观的[受 Adobe Express 助力的图像编辑工具](/help/assets/edit-images-assets-view.md)以提高内容重用率并加快内容速度。
+* **由Adobe Express提供支持的图像编辑工具**：简单直观 [由Adobe Express提供支持的图像编辑工具](/help/assets/edit-images-assets-view.md) 可直接在AEM Assets中使用，以提高内容重复使用率并加快内容速度。
 
   ![使用 Adob&#x200B;&#x200B;e Express 进行图像编辑](/help/release-notes/assets/edit-adobe-express.png)
 
-* **可灵活地为“我的工作区”的“快速访问”部分固定相关的项目**：可为您、您的整个组织或一个列表的组选择并固定项目，以使其根据您的选择显示在[“我的工作区”的“快速访问”部分](/help/assets/my-workspace-assets-view.md)中。
+* **为“我的工作区快速访问”固定项目时的灵活性**：可以为您、整个组织或组列表选择并固定项目，以便它们显示在 [我的工作区的“快速访问”部分](/help/assets/my-workspace-assets-view.md) 根据您的选择。
 
   ![为组固定项目](/help/release-notes/assets/pin-items-for-groups.png)
 

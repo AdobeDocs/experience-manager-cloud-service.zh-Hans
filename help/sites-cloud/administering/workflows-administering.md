@@ -1,12 +1,13 @@
 ---
 title: 管理工作流实例
-description: 了解如何管理工作流实例使用工作流控制台
+description: 了解如何使用工作流控制台管理工作流实例
 feature: Administering
 role: Admin
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: ht
-source-wordcount: '1288'
-ht-degree: 100%
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+workflow-type: tm+mt
+source-wordcount: '1286'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +47,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   > 为了保持工作流实例的健康，请遵循[定期清除工作流实例](#regular-purging-of-workflow-instances)或[工作流最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=zh-Hans)中的最佳实践。
+   > 为了保持工作流实例的健康，请遵循[定期清除工作流实例](#regular-purging-of-workflow-instances)或[工作流最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)中的最佳实践。
 
 ## 搜索工作流实例 {#search-workflow-instances}
 
@@ -109,8 +110,8 @@ ht-degree: 100%
 
 当工作流失败时，AEM 会提供&#x200B;**故障**&#x200B;控制台，使您能够进行调查，并在找到初始原因后执行适当的操作：
 
-* **故障详细信息**
-打开一个窗口以显示**故障消息**、**步骤和&#x200B;**故障堆栈。**
+* **失败详细信息**
+打开一个窗口以显示 **失败消息**、 **步骤和 **失败栈栈**.
 
 * **打开历史记录**
 显示工作流历史记录的详细信息。
@@ -264,5 +265,3 @@ public interface UserMetaDataPersistenceProvider {
  
 } 
 ```
-
-

@@ -2,10 +2,10 @@
 title: 实施阶段
 description: 确保您的代码和内容已准备好迁移到云
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 10%
+source-wordcount: '2282'
+ht-degree: 9%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 10%
 * 使用内容传输工具快速掌握
 * 描述您必须使用的代码重构工具，以便您可以根据AEMas a Cloud Service对代码进行现代化改造
 
-## 使用 Cloud Manager {#using-cloud-manager}
+## 使用Cloud Manager {#using-cloud-manager}
 
 在开始之前，您必须熟悉Cloud Manager，因为它是将代码部署到AEMas a Cloud Service的唯一机制。
 
@@ -71,8 +71,8 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 
 * 在规划期间，最好是列出必须重构才能与AEMas a Cloud Service兼容的区域。 您可以查看 [开发准则](/help/implementing/developing/introduction/development-guidelines.md) 有关如何重构和优化代码以进行Cloud Service的详细信息。
-* 详细了解如何 [管理配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=en#what-is-a-configuration) 在AEMas a Cloud Service中。
-* 了解如何通过下载 [AEMAS A CLOUD SERVICESDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en)
+* 详细了解如何 [管理配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) 在AEMas a Cloud Service中。
+* 了解如何通过下载 [AEMAS A CLOUD SERVICESDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
 * 最后，请熟悉 [AEMas a Cloud ServiceJava API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 此外，您还可以：
@@ -104,8 +104,8 @@ Adobe提供了多种工具来帮助加速某些代码重构任务。 了解这�
 
 * [资产工作流迁移](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)，用于自动迁移资产处理工作流的工具
 * [Dispatcher转换器](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)，该工具可将您现有的Dispatcher配置转换为可供AEMas a Cloud Service使用的格式。
-* [存储库现代化器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=en)，该工具将AEM多模式项目作为输入并将其转换为AEMas a Cloud Service项目
-* [索引转换器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=en)，此工具可将索引转换为与AEMas a Cloud Service兼容的表单
+* [存储库现代化器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html)，该工具将AEM多模式项目作为输入并将其转换为AEMas a Cloud Service项目
+* [索引转换器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html)，此工具可将索引转换为与AEMas a Cloud Service兼容的表单
 * [现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)，这是一套实用程序，可用于将旧版AEM功能转换为AEMas a Cloud Service的现代化且受支持的功能。
 
 AEM as a Cloud Service设置本地开发环境后，请查阅 [文档](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

@@ -3,10 +3,10 @@ title: AEM as a Cloud Service 中的缓存
 description: 了解AEMas a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 2%
+source-wordcount: '2775'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Define DISABLE_DEFAULT_CACHING
   ```
 
   >[!NOTE]
-  >Surrogate-Control标头适用于Adobe托管的CDN。 如果使用 [客户管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)，根据您的CDN提供商，可能需要不同的标头。
+  >Surrogate-Control标头适用于Adobe托管的CDN。 如果使用 [客户管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN)，根据您的CDN提供商，可能需要不同的标头。
 
   在设置与宽正则表达式匹配的全局缓存控制标头或类似缓存标头时，请务必谨慎，以免将它们应用于必须保持私密的内容。 请考虑使用多个指令，以确保以细粒度应用规则。 这样一来，如果AEMas a Cloud Service检测到缓存标头已应用于它检测到可被Dispatcher不可缓存的内容，则会删除该缓存标头，如Dispatcher文档中所述。 要强制AEM始终应用缓存标头，可以添加 **`always`** 选项如下所示：
 
@@ -240,7 +240,7 @@ AEM层根据是否已设置缓存标头和请求类型的值来设置缓存标�
 
 如果您希望禁用此行为，请提交支持票证。
 
-对于在2023年10月之前创建的环境，建议配置Dispatcher配置的 `ignoreUrlParams` 属性为 [此处记录](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#ignoring-url-parameters).
+对于在2023年10月之前创建的环境，建议配置Dispatcher配置的 `ignoreUrlParams` 属性为 [此处记录](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 
 ## Dispatcher缓存失效 {#disp}
@@ -513,5 +513,5 @@ HTML页面上默认的clientlib include类似于以下示例：
 1. 查找AdobeGraniteHTML库管理器的OSGi配置：
    * 选中复选框，以便启用严格版本控制
    * 在标记为的字段中 **长期客户端缓存密钥**，输入值/。*；哈希
-1. 保存更改。无需在源代码管理中保存此配置，因为AEMas a Cloud Service会自动在开发、暂存和生产环境中启用此配置。
+1. 保存更改。 无需在源代码管理中保存此配置，因为AEMas a Cloud Service会自动在开发、暂存和生产环境中启用此配置。
 1. 无论何时改变客户端库的内容，都生成新的散列密钥并更新HTML引用。

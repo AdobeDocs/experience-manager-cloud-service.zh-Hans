@@ -4,7 +4,7 @@ description: 使用用户映射工具（旧版）
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 1%
@@ -94,7 +94,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >* 用户映射完成后，您可以使用痕迹导航导航导航返回内容迁移页面。 用户映射信息卡显示状态和时间戳。 单击 **内容传输** 以便创建迁移集以运行提取。 请参阅 [运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) 以了解更多详细信息。
+   >* 用户映射完成后，您可以使用痕迹导航导航导航返回内容迁移页面。 用户映射信息卡显示状态和时间戳。 单击 **内容传输** 以便创建迁移集以运行提取。 请参阅 [运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) 以了解更多详细信息。
 
 ### 恢复用户映射过程 {#resume-user-mapping-process}
 

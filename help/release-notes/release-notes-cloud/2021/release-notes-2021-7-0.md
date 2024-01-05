@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.7.0 版的发行说明。'
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: f956b8379b5b93bc00e25f0eec641430c5565e34
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 31%
+source-wordcount: '1292'
+ht-degree: 38%
 
 ---
 
@@ -146,13 +146,14 @@ API `com.day.cq.dam.api.collection.SmartCollection` 在中不可用 [!DNL Experi
 
 ### 发布日期 {#release-cm-july}
 
-AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年 7 月 15 日。下一个版本计划于2021年8月12日发布。
+AEMas a Cloud Service2021.7.0中的Cloud Manager的发布日期是2021年7月15日。
+下一个版本计划于2021年8月12日发布。
 
 ### 新增功能 {#what-is-new-cm-july}
 
-* 客户现在可以将Azul 8和11 JDK用于其Cloud Manager构建过程，也可以选择将这些JDK之一用于与工具链兼容的Maven插件 *或* 整个Maven进程执行。
+* 客户现在可以将 Azul 8 和 11 JDK 用于其 Cloud Manager 构建过程，并且可以选择将这些 JDK 之一用于与工具链兼容的 Maven 插件&#x200B;*或*&#x200B;整个 Maven 流程执行。
 
-* 出站出口IP现在记录在构建步骤日志文件中。
+* 现在将出站出口 IP 记录在构建步骤日志文件中。
 
 * 运行旧版本的AEM的暂存环境和生产环境现在报告的状态为 **有可用更新**.
 
@@ -160,13 +161,13 @@ AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 每个环境可配置的域的最大数量已增至 500。
 
-* 此 **管理Git** 按钮已更名为 **访问Git信息** 并且对话框的外观已更新。
+* **管理 Git** 按钮已更名为&#x200B;**访问 Git 信息**，并且对话框的外观已更新。
 
 * Cloud Manager 使用的 AEM 项目原型的版本已更新到版本 28。
 
 ### 错误修复 {#bug-fixes-cm-july}
 
-* 在某些情况下，将IP允许列表绑定到环境时，“预览”选项不可用。
+* 在某些情况下，将 IP 允许列表绑定到环境时，“预览”选项不可用。
 
 * 手动导航到不存在的执行的执行详细信息页面并没有显示错误，只显示了一个无休止的加载屏幕。
 
@@ -174,11 +175,11 @@ AEM as a Cloud Service 2021.7.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 在某些情况下，**概述**&#x200B;页面上的管道信息卡中显示的版本可能存在差异。
 
-* 添加程序向导错误地指出，创建后无法更改名称。
+* 添加项目向导不当地表示在创建后即无法更改名称。
 
 ### 已知问题 {#known-issues-cm-july}
 
-改用Azul JDK的客户应该知道，并非所有现有应用程序都能在Azul JDK上编译无误。 Adobe建议您在切换前进行本地测试。
+改用 Azul JDK 的客户应了解，并非所有现有应用程序都能在 Azul JDK 上编译无误。Adobe建议您在切换前进行本地测试。
 
 ## Cloud Acceleration Manager {#cam}
 
@@ -188,7 +189,7 @@ Cloud Acceleration Manager的发布日期是2021年7月15日。
 
 ### 新增功能 {#what-is-new-cam}
 
-Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用Adobe推荐的最佳实践、技巧、文档和工具在迁移到AEMCloud Service的过程中的每个阶段提供帮助，让您的团队成功完成迁移。 了解详情 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
+Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。使用Adobe推荐的最佳实践、技巧、文档和工具在迁移到AEMCloud Service的过程中的每个阶段提供帮助，让您的团队成功完成迁移。 了解详情 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
 
 >[!NOTE]
 >

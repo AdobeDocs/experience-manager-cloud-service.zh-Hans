@@ -2,10 +2,10 @@
 title: 创建环境
 description: 本页介绍如何在Cloud Manager for Screensas a Cloud Service中创建环境。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 9%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 9%
 本节介绍如何在Cloud Manager中为项目创建环境。
 
 >[!NOTE]
->请参阅 [在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hans) 以了解用户如何创建环境。
+>请参阅 [在Cloud Manager中管理环境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) 以了解用户如何创建环境。
 
 ## 目标 {#objective}
 

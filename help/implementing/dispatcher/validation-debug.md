@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 了解本地验证、调试、灵活模式文件结构以及如何从旧模式迁移到灵活模式。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '2990'
+source-wordcount: '2971'
 ht-degree: 1%
 
 ---
@@ -331,7 +331,7 @@ Phase 3 finished
 }
 ```
 
-和:
+和：
 
 ```
 /allowedClients {
@@ -610,7 +610,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## 从旧模式迁移到灵活模式 {#migrating}
 
-在Cloud Manager 2021.7.0版本中，新的Cloud Manager程序使用生成maven项目结构 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) 或更高版本，其中包括文件 **opt-in/USE_SOURCES_DIRECTLY**. 它删除了以前的 [旧模式](/help/implementing/dispatcher/validation-debug-legacy.md) 文件的数量和大小，这也会导致SDK和运行时以改进的方式验证和部署配置。 如果您的Dispatcher配置没有此文件，强烈建议您迁移。 请使用以下步骤确保安全过渡：
+在Cloud Manager 2021.7.0版本中，新的Cloud Manager程序使用生成maven项目结构 [AEM原型28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 或更高版本，其中包括文件 **opt-in/USE_SOURCES_DIRECTLY**. 它删除了以前的 [旧模式](/help/implementing/dispatcher/validation-debug-legacy.md) 文件的数量和大小，这也会导致SDK和运行时以改进的方式验证和部署配置。 如果您的Dispatcher配置没有此文件，强烈建议您迁移。 请使用以下步骤确保安全过渡：
 
 1. **本地测试。** 使用最新的Dispatcher tools SDK，添加文件夹和文件 `opt-in/USE_SOURCES_DIRECTLY`. 按照本文中的“本地验证”说明进行操作，以便测试Dispatcher是否可以在本地工作。
 1. **云开发测试：**

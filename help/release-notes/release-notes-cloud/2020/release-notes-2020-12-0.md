@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 版的发行说明。'
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 12%
+source-wordcount: '652'
+ht-degree: 11%
 
 ---
 
-# [!DNL Adobe Experience Manager]as a Cloud Service 版的发行说明 {#release-notes}
+# 的发行说明 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 以下部分概述了的常规发行说明 [!DNL Experience Manager] as a Cloud Service。
 
@@ -64,7 +64,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 2020.12.0中的Cloud Manager�
 
 ### [!DNL Code Refactoring Tools] 的新增功能 {#what-is-new-crt}
 
-* 发布了AIO-CLI插件的新版本。 此增效工具的最新版本包括针对AEM Dispatcher Converter和Repository Modernizer的错误修复，并且支持新的实用程序 — 索引转换器。 请参阅 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html?lang=en#benefits) 您可以在此处了解有关此插件的更多信息。
+* 发布了AIO-CLI插件的新版本。 此增效工具的最新版本包括针对AEM Dispatcher Converter和Repository Modernizer的错误修复，并且支持新的实用程序 — 索引转换器。 请参阅 [Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits) 您可以在此处了解有关此插件的更多信息。
 
 * 索引转换器是一个实用程序，可用于将客户的自定义Oak索引定义转换为与AEMas a Cloud Service兼容的Oak索引定义。 请参阅 [索引转换器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) 以了解更多详细信息。
 

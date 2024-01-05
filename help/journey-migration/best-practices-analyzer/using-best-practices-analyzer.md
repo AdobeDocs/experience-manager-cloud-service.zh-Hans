@@ -2,7 +2,7 @@
 title: 使用 Best Practices Analyzer
 description: 了解如何使用Best Practices Analyzer了解升级准备情况。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
 source-wordcount: '2418'
 ht-degree: 42%
@@ -126,7 +126,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="解读最佳实践分析器报告"
 >abstract="在查看 BPA 报告输出时有两个选项：UI 和 CSV。在 AEM 实例中运行最佳实践分析器工具后，UI 报告将作为结果显示在工具窗口中。CSV 格式的报告包括从模式检测器输出生成的信息，这些信息按类别类型、子类型和重要性级别进行排序和组织。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hans#analysis-report" text="审核最佳实践分析报告"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="审核最佳实践分析报告"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=zh-Hans" text="了解最佳实践分析器报告类别"
 
 在AEM实例中运行最佳实践分析器工具时，报告将作为结果显示在工具窗口中。

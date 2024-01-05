@@ -2,9 +2,9 @@
 title: 创建和管理Screens中的显示as a Cloud Service
 description: 本页介绍如何创建和管理Screensas a Cloud Service显示。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '649'
 ht-degree: 3%
 
 ---
@@ -133,4 +133,4 @@ ht-degree: 3%
 
 ## 后续内容 {#whats-next}
 
-现在，您已了解如何为项目创建和管理显示，您应该继续您的Screensas a Cloud Service历程，接下来查看文档 [将渠道分配给Screensas a Cloud Service中的显示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+现在，您已了解如何为项目创建和管理显示，您应该继续您的Screensas a Cloud Service历程，接下来查看文档 [将渠道分配给Screensas a Cloud Service中的显示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

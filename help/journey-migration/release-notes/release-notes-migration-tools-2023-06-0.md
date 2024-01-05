@@ -3,9 +3,9 @@ title: AEMas a Cloud Service2023.06.0版中迁移工具的发行说明
 description: AEMas a Cloud Service2023.06.0版中迁移工具的发行说明
 feature: Release Information
 exl-id: 021b7472-d1e4-4ef6-a040-c612fed8d3c3
-source-git-commit: a09863202aebce910daf8143bacb26ef3856e3b6
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 新的迁移工具 — 内容转换器(CT)已与此版本中的内容传输工具(CTT)集成。 内容转换器可以自动检测和修复由报告的内容相关问题。 [Best Practices Analyzer (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en) 在将内容从当前AEM实施(内部部署或Managed Services)迁移到AEMas a Cloud Service之前。
+* 新的迁移工具 — 内容转换器(CT)已与此版本中的内容传输工具(CTT)集成。 内容转换器可以自动检测和修复由报告的内容相关问题。 [Best Practices Analyzer (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=zh-Hans) 在将内容从当前AEM实施(内部部署或Managed Services)迁移到AEMas a Cloud Service之前。
 内容转换器提供的好处包括：
    * 故障保护：内容转换器每次对存储库进行修改以修复问题时，都会创建一个包。 如果需要，可以通过安装包恢复到以前的状态。
    * 易于使用： Content Transformer已与Content Transfer Tool集成，并附带简单直观的用户界面。

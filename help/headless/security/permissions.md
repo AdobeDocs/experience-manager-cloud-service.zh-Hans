@@ -3,9 +3,9 @@ title: Headless 内容的权限注意事项
 description: 了解使用 Adobe Experience Manager 的 Headless 实施的不同权限和 ACL 注意事项。了解创作环境和发布环境所需的不同角色和潜在权限级别。
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '811'
 ht-degree: 96%
 
 ---
@@ -22,7 +22,7 @@ Author 服务是内部用户创建、管理和发布内容的地方。权限以�
 
 作为最佳实践，应在 AEM 中设置组级别权限。这些组也称为本地组，可以在 AEM 创作环境中管理。
 
-管理组成员资格的最简单方式是使用 Adobe Identity Management System (IMS) 组，并将 [IMS 组分配到本地 AEM 组](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hans#managing-permissions-in-aem)。
+管理组成员资格的最简单方式是使用 Adobe Identity Management System (IMS) 组，并将 [IMS 组分配到本地 AEM 组](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem)。
 
 ![Admin console 权限流](assets/admin-console-aem-group-permissions.png)
 

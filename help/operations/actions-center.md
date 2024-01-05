@@ -2,7 +2,7 @@
 title: 操作中心
 description: 利用行动中心方便地对事件和其他重要信息采取行动
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: dca00a8913fb8fd159a69675b8f4ffa67441faa4
+source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
 workflow-type: tm+mt
 source-wordcount: '734'
 ht-degree: 78%
@@ -72,5 +72,5 @@ AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在
 | 通知类型 | 相关产品配置文件 | 纠正措施 |
 |---------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 已锁定的复制队列 | 问题 | 按照[复制文档](/help/operations/replication.md#troubleshooting)中的说明执行操作来解锁队列 |
-| 持久GraphQL查询无效 | 问题 | GraphQL通过引用 [持久GraphQL查询疑难解答文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html?lang=en) |
+| 持久GraphQL查询无效 | 问题 | GraphQL通过引用 [持久GraphQL查询疑难解答文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | 到期的 S2S 证书 | 主动 | 参阅[为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)文档，了解如何刷新凭据 |
