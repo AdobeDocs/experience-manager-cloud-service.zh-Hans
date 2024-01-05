@@ -1,24 +1,24 @@
 ---
-title: 属性和类型
-description: 了解 Universal Editor 所需的数据属性和类型。
+title: 属性和物料类型
+description: 了解通用编辑器所需的数据属性和项类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 91%
+source-wordcount: '686'
+ht-degree: 85%
 
 ---
 
 
 # 属性和类型 {#attributes-types}
 
-了解 Universal Editor 所需的数据属性和类型。
+了解通用编辑器所需的数据属性和项类型。
 
 {{universal-editor-status}}
 
 ## 简介 {#introduction}
 
-为了使应用程序可由 Universal Editor 编辑，必须对其进行适当的检测。这包括包含适当的元数据，以便编辑器能够编辑应用程序的内容。本文档详述了这些元数据的属性和类型。
+为了使应用程序可由 Universal Editor 编辑，必须对其进行适当的检测。这包括包含适当的元数据，以便编辑器能够编辑应用程序的内容。本文档详细介绍了这些元数据的属性和项目类型。
 
 >[!NOTE]
 >

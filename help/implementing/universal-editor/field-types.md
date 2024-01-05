@@ -1,29 +1,29 @@
 ---
-title: 通用编辑器的字段类型
-description: 了解通用编辑器支持的不同类型的字段以及可以为您自己的应用程序检测的内容。
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+title: 字段类型
+description: 通过有关如何检测您自己的应用程序的示例，了解通用编辑器可以在组件边栏中编辑的不同类型的字段。
+source-git-commit: b1a188d01371665b4375087847625d89e47d8927
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 7%
+source-wordcount: '278'
+ht-degree: 8%
 
 ---
 
 
-# 通用编辑器的字段类型 {#field-types}
+# 字段类型 {#field-types}
 
-了解通用编辑器支持的不同类型的字段以及可以为您自己的应用程序检测的内容。
+通过有关如何检测您自己的应用程序的示例，了解通用编辑器可以在组件边栏中编辑的不同类型的字段。
 
 {{universal-editor-status}}
 
 ## 概述 {#overview}
 
-在调整自己的应用程序以便与通用编辑器一起使用时，必须检测组件并定义它们可以在编辑器中处理的数据类型。
+在调整自己的应用程序以便与通用编辑器一起使用时，必须检测组件并定义它们可以在编辑器的组件边栏中处理的数据类型。
 
-本文档概述编辑器中可用的字段类型。
+本文档概述了可用的字段类型以及示例配置。
 
 >[!TIP]
 >
->如果您不熟悉如何针对通用编辑器检测应用程序，请参阅文档 [面向AEM开发人员的通用编辑器概述。](help/implementing/universal-editor/developer-overview.md)
+>如果您不熟悉如何针对通用编辑器检测应用程序，请参阅文档 [面向AEM开发人员的通用编辑器概述。](/help/implementing/universal-editor/developer-overview.md)
 
 ## 布尔值 {#boolean}
 
