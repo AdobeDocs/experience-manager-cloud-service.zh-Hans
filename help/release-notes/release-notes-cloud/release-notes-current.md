@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发�
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 17903c6e44afd1742d21b7fc7dbe4d7c63fe8b6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 资产视图中的新增功能 {#assets-view-features}
+### 资源视图中新增了几项功能 {#assets-view-features}
 
 **用 Adobe Firefly 创建生成式 AI 图像**
 
