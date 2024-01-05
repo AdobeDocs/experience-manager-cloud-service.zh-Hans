@@ -1,17 +1,17 @@
 ---
 title: 管理内容片段（资产 — 内容片段）
-description: 了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
+description: 了解如何使用Assets控制台管理您的AEM内容片段，作为Headless内容的基础或用于页面创作。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1885'
 ht-degree: 68%
 
 ---
 
 # 管理内容片段 {#managing-content-fragments}
 
-了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
+了解如何使用Assets控制台管理您的AEM内容片段，作为Headless内容的基础或用于页面创作。
 
 定义完您的[内容片段模型](#creating-a-content-model)后，您可以使用这些模型[创建您的内容片段](#creating-a-content-fragment)。
 

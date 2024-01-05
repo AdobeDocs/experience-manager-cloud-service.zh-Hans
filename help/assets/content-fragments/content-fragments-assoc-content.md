@@ -1,17 +1,23 @@
 ---
 title: 关联内容（资产 — 内容片段）
-description: 了解AEM关联内容功能如何提供连接，以便可以选择将资源与片段一起使用。
+description: 了解AEM内容片段的关联内容功能如何提供连接，以便可以选择将资源与片段一起使用。
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 51%
+source-wordcount: '281'
+ht-degree: 45%
 
 ---
 
 # 关联的内容{#associated-content}
 
-AEM关联内容功能提供了连接，以便在将资产添加到内容页面时，可以选择将资产与片段一起使用。 这通过以下方式为Headless内容交付提供了灵活性 [提供要在页面上使用内容片段时访问的一系列资产，](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) 同时还有助于减少搜索适当资产所需的时间。
+对于Adobe Experience Manager (AEM)as a Cloud Service的内容片段，关联的内容功能（在原始编辑器中可用）提供连接，以便可以选择将资源与片段一起使用。 这通过以下方式提供了灵活性 [在使用内容片段时提供要访问的一系列资产](/help/assets/content-fragments/content-fragments.md#using-associated-content)，同时还有助于减少搜索适当资产所需的时间。 此功能可用于您的headless内容投放和页面创作。
+
+>[!NOTE]
+>
+>内容片段是一项站点功能，但存储为&#x200B;**资源**。
+>
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。
 
 ## 添加关联内容 {#adding-associated-content}
 

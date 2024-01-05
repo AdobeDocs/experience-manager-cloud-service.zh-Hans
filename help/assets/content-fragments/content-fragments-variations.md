@@ -1,23 +1,23 @@
 ---
-title: 变体 – 创作片段内容 （资产 — 内容片段）
-description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容更加灵活。
+title: 变量 — 创作片段内容（资产 — 内容片段）
+description: 了解内容片段变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而提高灵活性。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 3f934add7521586caf728c4bfa37f2d1a82b144a
+source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 56%
+source-wordcount: '2474'
+ht-degree: 53%
 
 ---
 
 # 变体 – 创作片段内容{#variations-authoring-fragment-content}
 
-[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AEM内容片段的一项重要功能。 原因在于，它们允许您创建和编辑主控内容的副本，用于特定渠道和场景，使Headless内容投放更加灵活。
+[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AdobeExperience Manager (AEM)as a Cloud Service中的内容片段的一项重要功能。 这是因为它们允许您创建和编辑 **母版** 用于特定渠道和方案的内容。 特别是，这使Headless内容投放更加灵活。
 
 >[!NOTE]
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->有两个编辑器用于创作内容片段。本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
 
 从 **变体** 选项卡，您可以执行以下操作：
 
@@ -198,7 +198,7 @@ ht-degree: 56%
 
 选项 **新内容片段** 允许您创建片段。 为此，将在编辑器中打开创建内容片段向导的变体。
 
-**创建内容片段：**
+**要创建内容片段，请执行以下操作：**
 
 1. 导航到所需的文件夹，然后选择该文件夹。
 1. 选择&#x200B;**“下一个”**。
