@@ -3,10 +3,10 @@ title: AEM 6.5 Forms与AEMCloud Service之间有何区别？
 description: 比较AEM 6.5 Forms和AEMCloud Services，并了解在升级或迁移到Cloud Service之前最显着的更改。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 397e7d4f23202b8ae7419b0ad5436a6a10e2efb8
+source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 2%
+source-wordcount: '1317'
+ht-degree: 1%
 
 ---
 
@@ -50,9 +50,11 @@ ht-degree: 2%
 
 * **规则编辑器：** AEM Formsas a Cloud Service提供强化的功能 [规则编辑器](rule-editor.md#visual-rule-editor). 在Formsas a Cloud Service上，代码编辑器不可用。
 
-  此 [迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md) 帮助您迁移具有自定义规则（在代码编辑器中创建）的表单。 该实用程序会将此类规则转换为Formsas a Cloud Service上支持的自定义函数。 您可以将可重用的函数与 规则编辑器结合使用，以继续获取通过规则脚本获取的结果。此 `onSubmitError` 或 `onSubmitSuccess` 函数现在可用作规则编辑器中的操作。
+  此 [迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md) 帮助您迁移具有自定义规则（在代码编辑器中创建）的表单。 该实用程序会将此类规则转换为Formsas a Cloud Service上支持的自定义函数。 您可以将可重用的函数与规则编辑器结合使用，以继续获取通过规则脚本获取的结果。 此 `onSubmitError` 或 `onSubmitSuccess` 函数现在可用作规则编辑器中的操作。
 
-* **预填充服务：** 默认情况下，预填充服务在客户端将数据与自适应表单合并，而不是在AEM 6.5 Forms中合并服务器上的数据。 该功能有助于缩短预填充自适应表单所需的时间。 您可以始终将配置为在Adobe Experience Manager Forms服务器上运行合并操作。
+<!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
+
+* **预填充服务：** 预填充服务从服务器获取数据，并合并以在客户端预填充您的自适应Forms。 此功能有助于缩短填写自适应表单所需的时间。 您始终可以配置 [预填充服务](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) 以在Adobe Experience Manager Forms服务器上运行合并操作。
 
 * **提交操作：** 此 **电子邮件** 提交操作提供了选项，用于发送附件和使用电子邮件附加记录文档(DoR)。 您可以使用它来代替 **作为PDF发送电子邮件** 操作在AEM 6.5 Forms中可用。
 
@@ -64,11 +66,11 @@ ht-degree: 2%
 
 * **向导界面：** 您可以使用 [向导界面](/help/forms/creating-adaptive-form-core-components.md) 以快速配置常用选项并轻松创建自适应表单。
 
-## Forms Portal
+## Forms门户
 
 * 该服务未保留草稿和已提交的自适应Forms的元数据。
 
-## 文档服务:
+## 文档服务：
 
 Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful API。 您可以根据需要使用这些API来按要求或批量生成或处理文档：
 
