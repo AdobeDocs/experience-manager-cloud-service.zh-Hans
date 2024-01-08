@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 了解AEMas a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
 workflow-type: tm+mt
-source-wordcount: '2775'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -241,6 +241,28 @@ AEM层根据是否已设置缓存标头和请求类型的值来设置缓存标�
 如果您希望禁用此行为，请提交支持票证。
 
 对于在2023年10月之前创建的环境，建议配置Dispatcher配置的 `ignoreUrlParams` 属性为 [此处记录](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+
+忽略营销参数有两种可能性。 （其中首选方法是通过查询参数忽略缓存无效）：
+
+1. 忽略所有参数并选择性地允许使用的参数。
+仅在以下示例中 `page` 和 `product` 不会忽略参数，请求将转发到发布者。
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "allow" }
+   /0002 { /glob "page" /type "deny" }
+   /0003 { /glob "product" /type "deny" }
+}
+```
+
+1. 允许除营销参数之外的所有参数。 文件 [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) 定义将忽略的常用营销参数的列表。 Adobe不会更新此文件。 用户可以对其进行扩展，具体取决于其营销提供商。
+
+```
+/ignoreUrlParams {
+   /0001 { /glob "*" /type "deny" }
+   $include "../cache/marketing_query_parameters.any"
+}
+```
 
 
 ## Dispatcher缓存失效 {#disp}
