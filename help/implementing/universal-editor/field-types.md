@@ -1,10 +1,10 @@
 ---
 title: 字段类型
 description: 通过有关如何检测您自己的应用程序的示例，了解通用编辑器可以在组件边栏中编辑的不同类型的字段。
-source-git-commit: b1a188d01371665b4375087847625d89e47d8927
+source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 8%
+source-wordcount: '358'
+ht-degree: 7%
 
 ---
 
@@ -281,3 +281,58 @@ ht-degree: 8%
 }
 ```
 
+## 选项卡 {#tab}
+
+使用选项卡，可将其他输入字段分组到多个选项卡上，以改善作者的布局组织。
+
+A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `tab` 将被放置在该选项卡上，直到有新的 `tab` 之后，会将以下项目放置到新选项卡上。
+
+如果希望项目出现在所有选项卡上方，则必须在任何选项卡之前定义它们。
+
+### 样本 {#sample-tab}
+
+```json
+{
+  "id": "title",
+  "fields": [
+    {
+      "component": "tab",
+      "label": "Tab",
+      "name": "tab1"
+    },
+    {
+      "component": "text-input",
+      "name": "tab-response",
+      "value": "",
+      "placeholder": "Tab? I can't give you a tab unless you order something.",
+      "label": "Lou",
+      "valueType": "string"
+    },
+    {
+      "component": "tab",
+      "label": "Pepsi Free",
+      "name": "tab2"
+    },
+    {
+      "component": "text-input",
+      "name": "pepsi-free-response",
+      "value": "",
+      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
+      "label": "Mr. Carruthers",
+      "valueType": "string"
+    },
+    {
+      "component": "select",
+      "name": "without-sugar",
+      "value": "coffee",
+      "label": "Something without sugar",
+      "valueType": "string",
+      "options": [
+        { "name": "Coffee", "value": "coffee" },
+        { "name": "Hot Coffee", "value": "hot-coffee" },
+        { "name": "Hotter Coffee", "value": "hotter-coffee" }
+      ]
+    }
+  ]
+}
+```
