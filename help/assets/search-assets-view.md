@@ -1,12 +1,12 @@
 ---
 title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
-description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现适用的资源，并帮助您提升内容速度。
+description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现合适的资源，并帮助您提高内容速度。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: da54e996bad3e6dc8558cecd5bfd7eb99670b142
+source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 74%
+source-wordcount: '1470'
+ht-degree: 79%
 
 ---
 
@@ -29,6 +29,20 @@ ht-degree: 74%
    * 使用关键词搜索并可选择更改文件夹。按 Return。
 
    * 通过直接搜索资源，开始处理最近查看过的资源。单击搜索框，从建议中选择最近查看过的资源。
+
+## 使用Adobe Firefly搜索资源
+
+如果您要查找在任何资产文件夹中都不可用的资产，请使用 [!UICONTROL Adobe Firefly] 中的资源搜索功能 [!UICONTROL Adobe Experience Manager Assets]. 它允许您高效地搜索可能未存储在指定文件夹中的资源。 此功能当前仅供快速授权用户访问。 <br> 例如，您可以使用关键词搜索资产 `Bugatti Type 57`. 搜索时 `Bugatti Type 57`，未找到结果。
+
+![Firefly集成](assets/firefly-integration.jpg)
+*图：在资产文件夹中未找到Bugatti Type 57的结果。*
+
+在搜索栏中，输入资产名称，然后单击 **[!UICONTROL 生成]**.
+
+![Firefly集成](assets/bugatti-type-57.jpg)
+*图：使用Adobe Firefly资源搜索功能搜索的引用资源。*
+
+示例资源会显示在屏幕上。 您可以将这些资产上传到您的首选文件夹，以便轻松访问。
 
 ## 筛选搜索结果 {#refine-search-results}
 
@@ -120,7 +134,6 @@ ht-degree: 74%
 
 1. 单击&#x200B;**[!UICONTROL 确认]**&#x200B;以从用户界面中移除筛选条件。
 
-
 ## 保存的搜索 {#saved-search}
 
 [!DNL Assets view] 中的搜索功能非常易于使用。从搜索框中，您只需键入关键字并按Return键即可查看结果，或者只需单击一下即可重新快速搜索最近搜索的关键字。
@@ -146,11 +159,21 @@ When userA is searching and userB add an asset that matches search results, will
 
 可选择在搜索结果中显示的资源并执行以下操作：
 
+* **查找类似图像**：根据元数据和智能标记，在资产UI中查找类似的图像资产。
+
 * **详细信息**：查看和编辑资源属性。
+
+* **下载**：下载资源。
 
 * **添加到收藏集**：将所选资源添加到收藏集。
 
-* **下载**：下载资源。
+* **固定到快速访问**：[固定资源](my-workspace-assets-view.md)，以便在以后需要它时更快地访问。所有固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分中。
+
+* **在Adobe Express中打开**：从Adobe Experience Manager Assets屏幕编辑集成Adobe Express中的图像。
+
+* **编辑**：使用Adobe Express编辑图像。
+
+* **共享链接**：与其他用户[共享某个资源的链接](share-links-for-assets-view.md)，以使其可访问和下载该资源。
 
 * **删除**：删除资源。
 
@@ -160,48 +183,44 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **重命名**：重命名资源。
 
-* **分配任务**：将任务分配给资源的用户。
+* **复制到库**：将资产添加到库。
 
-* **共享链接**：与其他用户[共享某个资源的链接](share-links-for-assets-view.md)，以使其可访问和下载该资源。
+* **分配任务**：将任务分配给资源的用户。
 
 * **监视**：[监视对资源执行的操作](manage-notifications-assets-view.md)。
 
-* **显示文件位置**：导航到资源文件夹位置。
+## 配置搜索优先主页 {#configuring-search-first-homepage}
 
-* **固定到快速访问**：[固定资源](my-workspace-assets-view.md)，以便在以后需要它时更快地访问。所有固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分中。
+Experience Manager Assets允许您为您的组织选择默认登录页面。 使用搜索优先作为主页时，您还可以选择通过配置背景和徽标图像来匹配您的品牌，从而定制页面的品牌化。
 
-## 配置搜索第一个主页 {#configuring-search-first-homepage}
+要配置搜索优先主页，请执行以下步骤：
 
-Experience Manager Assets允许您为您的组织选择默认登录页面。 将“搜索优先”用作主页时，您还可以通过配置背景和徽标图像以匹配您的品牌来定制页面的品牌。
-
-要配置搜索第一个主页，请执行以下步骤：
-
-1. 导航到 **[!UICONTROL 设置]** > **[!UICONTROL 常规设置]**.
-1. 选择 **[!UICONTROL 首先搜索]**. 它会进一步打开搜索优先相关配置。 您可以设置 [对齐方式](#setting-alignment-search-bar) 或 [设置背景和徽标图像](#setting-background-image-and-logo) 你主页的网站。
+1. 前往&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 常规设置]**。
+1. 选择&#x200B;**[!UICONTROL 搜索优先]**。这会进一步打开搜索优先相关配置。您可以设置主页的[对齐方式](#setting-alignment-search-bar)或[设置背景和徽标图像](#setting-background-image-and-logo)。
 
 ### 设置搜索栏的对齐方式 {#setting-alignment-search-bar}
 
-[!DNL Assets view] 允许您更改搜索栏的对齐方式。 您可以使搜索栏显示在中心或顶部。 选择适当的对齐方式，然后单击 **[!UICONTROL 保存]**.
+[!DNL Assets view] 允许您更改搜索栏的对齐方式。您可以使搜索栏显示在中心或顶部。选择适当的对齐方式并单击&#x200B;**[!UICONTROL 保存]**。
 
-![搜索第一个主页对齐方式](assets/search-first-alignment.png)
+![搜索优先首页对齐](assets/search-first-alignment.png)
 
-### 设置主页的背景和徽标图像 {#setting-background-image-and-logo}
+### 设置首页背景和标志图像 {#setting-background-image-and-logo}
 
-您可以将品牌徽标和背景图像添加到您的搜索第一个主页。 执行以下步骤：
+您可以将品牌徽标和背景图像添加到搜索优先首页。执行以下步骤：
 
-1. 导航到 **[!UICONTROL 背景和徽标图像]** 部分在 **[!UICONTROL 主页]**.
-1. 单击 **[!UICONTROL 替换]** 浏览现有资源存储库中的图像。
-1. 单击&#x200B;**[!UICONTROL 保存]**。[预览](#preview-configured-homepage) 进行更改以审阅修改。
+1. 前往&#x200B;**[!UICONTROL 主页]**&#x200B;下的&#x200B;**[!UICONTROL 背景和徽标图像]**&#x200B;部分。
+1. 单击&#x200B;**[!UICONTROL 替换]**&#x200B;可浏览现有资产存储库中的图像。
+1. 单击&#x200B;**[!UICONTROL 保存]**。[预览](#preview-configured-homepage)更改，以查看修改内容。
 
 ### 预览配置的主页 {#preview-configured-homepage}
 
-您可以预览以检查搜索第一个主页的布局和格式。 使用 **[!UICONTROL 预览]**&#x200B;中，您可以修复布局或根据需要进行修改。 要预览配置的主页，请执行以下步骤：
+您可以通过预览来检查搜索优先首页的布局和格式。使用&#x200B;**[!UICONTROL 预览]**，您可以修复布局或根据要求进行修改。要预览配置的主页，请执行以下步骤：
 
-1. 单击 **[!UICONTROL 常规设置]** 并选择 **[!UICONTROL 首先搜索]**.
-1. 导航到 **[!UICONTROL 自定义搜索第一个主页]** 并单击 **[!UICONTROL 预览]**. 切换到 **[!UICONTROL 深色主题]** 按钮以用深色或浅色主题预览主页。
-1. 单击 **[!UICONTROL 关闭]** 以关闭预览屏幕。
+1. 点击&#x200B;**[!UICONTROL 常规设置]**&#x200B;并选择&#x200B;**[!UICONTROL 搜索优先]**。
+1. 前往&#x200B;**[!UICONTROL 自定义搜索优先主页]**&#x200B;并点击&#x200B;**[!UICONTROL 预览]**。通过&#x200B;**[!UICONTROL 深色主题]**&#x200B;按钮来进行切换，以深色或浅色主题预览主页。
+1. 单击&#x200B;**[!UICONTROL 关闭]**&#x200B;来关闭预览屏幕。
 
-   ![搜索第一个主页预览](assets/search-first-preview.gif)
+   ![搜索优先首页预览](assets/search-first-preview.gif)
 
 ## 后续步骤 {#next-steps}
 
