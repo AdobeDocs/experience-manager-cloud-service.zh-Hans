@@ -3,12 +3,13 @@ title: 在 Cloud Manager 中使用您自己的 GitHub 存储库
 description: 了解如何设置 Cloud Manager 以使用您自己的 GitHub 存储库。
 feature: Release Information
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 237b4a8e01af74dbaac0ba1715b5fa95c931be7c
+source-git-commit: ce9d65179d9cc1f02f786516554e07c95a89484d
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 70%
 
 ---
+
 
 # 在 Cloud Manager 中使用您自己的 GitHub 存储库 {#byo-github}
 
@@ -54,7 +55,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
    ![专用存储库所有权验证](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
 1. Cloud Manager 使用 GitHub 应用程序与您的存储库安全地交互。
-   * 您的 GitHub 组织的所有者必须安装位于 `https://github.com/apps/cloud-manager-for-aem-stage` 的应用程序并授予对存储库的访问权限。
+   * 您的 GitHub 组织的所有者必须安装位于 `https://github.com/apps/cloud-manager-for-aem` 的应用程序并授予对存储库的访问权限。
    * 有关如何完成此操作的详细信息，请参阅GitHub的文档。
 
 1. 为了增强安全性，您必须在存储库的默认分支中创建秘密文件。选择 **生成**.
