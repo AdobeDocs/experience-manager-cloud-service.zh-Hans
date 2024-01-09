@@ -5,9 +5,9 @@ hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 88%
 
 利用 Universal Editor，您可以敏捷地在上下文中编辑和就地编辑文本，从而实现简单直观的内容创作。
 
-1. 双击以选择最新文章的标题进行编辑。
+1. 双击选择最新文章的标题以编辑该文章。
 
    ![Universal Editor](assets/do-not-localize/ue-component-mode.png)
 
@@ -47,7 +47,7 @@ ht-degree: 88%
 
    ![在 Universal Editor 中编辑文本](assets/do-not-localize/ue-edit-text-2.png)
 
-1. 在文本组件之外选择，并且您的更改会自动保存。
+1. 选择该文本组件之外的地方，随后将保存您的更改。
 
 Universal Editor 会在创作环境中自动保存您的更改。您仍然需要发布它们，以供读者查看，我们将在稍后的步骤中执行此操作。
 
@@ -55,7 +55,7 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
 您也可以使用 Universal Editor 交换图像，同时仍留在内容的上下文中。
 
-1. 选择冲浪者的图像以将其选中。
+1. 选择冲浪者的图像以选中它。
 
 1. 在组件边栏中，您可以查看资源的详细信息。选择&#x200B;**特色图像**&#x200B;缩略图。
 
@@ -73,7 +73,7 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
 通过 Universal Editor 可在内容的上下文中与内容交互，其中看到的内容如同投放到用户的设备。
 
-1. 默认情况下，该编辑器将呈现内容的桌面版本。选择Universal Editor工具栏右上角的模拟器按钮以更改目标设备。
+1. 默认情况下，该编辑器将呈现内容的桌面版本。选择 Universal Editor 工具栏右上角的模拟器按钮以更改目标设备。
 
    ![模拟器菜单项](assets/do-not-localize/ue-emulator-1.png)
 
@@ -89,9 +89,9 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
 ## 预览和发布 {#preview}
 
-由于您需要选择内容以在编辑器中修改内容，因此编辑器不允许您通过点按或单击来关注链接或与内容交互。 可使用预览模式在发布之前像用户一样访问内容中的链接和体验内容。
+由于您需要选择您的内容才能在编辑器中修改它，因此编辑器不允许您通过点按或单击而访问链接或与您的内容交互。可使用预览模式在发布之前像用户一样访问内容中的链接和体验内容。
 
-1. 在通用编辑器工具栏中，选择 **预览**.
+1. 在 Universal Editor 工具栏中，选择&#x200B;**预览**。
 
 1. 现在，选择主要文章的&#x200B;**展开**&#x200B;链接。
 
@@ -111,7 +111,7 @@ Universal Editor 会在创作环境中自动保存您的更改。您仍然需要
 
 当 Headless 内容的结构化编辑比就地编辑更有优势时，为了加快实现内容创作体验，Universal Editor 还允许您快速访问内容片段编辑器。
 
-1. 通过点按 **预览** 按钮。
+1. 通过点按 Universal Editor 工具栏上的&#x200B;**预览**&#x200B;按钮而关闭预览模式。
 
    ![关闭预览模式](assets/do-not-localize/ue-toggle-off-preview.png)
 
