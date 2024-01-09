@@ -3,10 +3,10 @@ title: AEMas a Cloud Service2023.08.0版中迁移工具的发行说明
 description: AEMas a Cloud Service2023.08.0版中迁移工具的发行说明
 feature: Release Information
 exl-id: 1c822ece-620a-4866-be5a-065cb6a90204
-source-git-commit: b2322ff4ce27265b7eac37fcc0ea8235cd015ae0
+source-git-commit: f117ad2965897b78a1e90d0c6e22568307555d4c
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 13%
+source-wordcount: '88'
+ht-degree: 12%
 
 ---
 
@@ -22,5 +22,4 @@ Best Practices Analyzer v2.1.44的发布日期是2023年8月24日。
 
 ### 错误修复 {#bug-fixes-bpa}
 
-* 
-   * 内容转换器无法检索BPA查找结果。 此问题已得到修复。
+* 内容转换器无法检索BPA查找结果。 此问题已得到修复。
