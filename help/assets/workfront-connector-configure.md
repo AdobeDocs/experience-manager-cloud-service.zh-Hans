@@ -4,9 +4,9 @@ description: 配置 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 1%
 1. 转到云服务中的项目链接文件夹选项卡。
 1. 链接的文件夹父路径：在DAM中选择一个文件夹，您要在该文件夹中创建链接的文件夹。 如果留空，则默认为/content/dam。 确保Workfront工具元数据架构和Workfront链接文件夹元数据架构已应用于所选文件夹。
 1. 链接的文件夹结构：输入逗号分隔的值。 每个值应 `DE:<some-project-custom-form-field>`、Portfolio、项目、年份、名称或某个“文本字符串值”（最后一个，带引号）。 它当前设置为Portfolio、项目、年、DE：项目类型、名称。
+1. 配置权限：添加 `jcr:all permissions` 权限 `/conf/workfront-tools/settings/cloudconfigs` 对象 `wf-workfront-users` 组。
 1. 如果Workfront中的文件夹标题应包括结构中的所有文件夹，则应选中使用文件夹结构名称在Workfront中构建链接的文件夹标题。 否则，它是最后一个文件夹的标题。
 1. 子文件夹多字段允许您指定应创建为链接文件夹的子文件夹的文件夹列表。
 1. 项目状态：选择要为其设置项目以创建链接文件夹的状态。
