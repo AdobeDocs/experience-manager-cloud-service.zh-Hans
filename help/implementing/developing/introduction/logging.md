@@ -2,10 +2,10 @@
 title: AEMas a Cloud Service日志记录
 description: 了解如何使用AEMas a Cloud Service日志记录功能配置中央日志记录服务的全局参数、各个服务的特定设置以及如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
 workflow-type: tm+mt
-source-wordcount: '2720'
-ht-degree: 9%
+source-wordcount: '2755'
+ht-degree: 8%
 
 ---
 
@@ -397,7 +397,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 mod_rewrite日志级别由文件中的变量REWRITE_LOG_LEVEL定义 `conf.d/variables/global.var`.
 
-可将其设置为error、warn、info、debug和trace1 - trace8，默认值为warn。 要调试RewriteRules，建议将日志级别提升为trace2。
+可将其设置为error、warn、info、debug和trace1 - trace8，默认值为warn。 要调试RewriteRules，建议将日志级别提升为trace2。 建议使用调试重写规则 [Dispatcher SDK](../../dispatcher/validation-debug.md). AEMas a Cloud Service的最大日志级别为 `debug`. 因此，当前不可能在云中有效调试重写规则。
 
 请参阅 [mod_rewrite模块文档](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) 以了解更多信息。
 
