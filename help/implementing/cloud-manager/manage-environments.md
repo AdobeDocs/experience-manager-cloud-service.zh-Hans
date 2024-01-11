@@ -2,10 +2,10 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: efca024511b5d79553864fbcefda3649ab7af7b6
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
 source-wordcount: '2607'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 88%
 
 具有必要权限的用户可以创建以下环境类型（在特定租户可用的范围内）。
 
-* **生产+暂存**  — 生产和暂存环境成对可用，分别用于生产和测试目的。 在暂存环境中执行性能测试和安全性测试。 它的规模与生产规模相同。
+* **生产+暂存**  — 生产和暂存环境成对可用，分别用于生产和测试目的。 在暂存环境中执行性能测试和安全性测试。 它的规模与生产环境相同。
 
-* **开发**  — 开发环境可以创建用于开发和测试目的，并且只能与非生产管道相关联。  开发环境与暂存和生产环境的大小不同，不应使用开发环境进行性能测试和安全性测试。
+* **开发**  — 开发环境可以创建用于开发和测试目的，并且只能与非生产管道相关联。  开发环境的规模与暂存和生产环境不同，不应用于进行性能和安全测试。
 
 * **快速开发环境** - 快速开发环境 (RDE) 允许开发人员快速部署和审查更改，最大程度地减少测试已证明适用于本地开发环境的功能所需的时间。请参阅[快速开发环境文档](/help/implementing/developing/introduction/rapid-development-environments.md)，了解有关如何使用 RDE 的详细信息。
 
 单个环境的功能取决于环境的[程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中启用的解决方案。
 
-* [Sites](/help/sites-cloud/home.md)
-* [Assets](/help/assets/home.md)
+* [Sites](/help/overview/introduction.md)
+* [Assets](/help/assets/overview.md)
 * [表单](/help/forms/home.md)
-* [屏幕](/help/screens-cloud/home.md)
+* [屏幕](/help/screens-cloud/introduction/introduction.md)
 
 >[!NOTE]
 >

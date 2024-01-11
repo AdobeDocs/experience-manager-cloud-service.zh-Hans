@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 65893c0c0dee37bed8ecfbb06a12e7c093c4397c
+source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
 workflow-type: tm+mt
-source-wordcount: '4573'
+source-wordcount: '4538'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 99%
 
 # Experience Manager as a Cloud Service 帮助 {#content}
 
-+ [AEMaaCS 主页](/help/overview/home.md)
 + 概述 {#overview}
    + [AEM as a Cloud Service 简介](/help/overview/introduction.md)
    + [新增功能与不同功能](/help/overview/what-is-new-and-different.md)
@@ -169,9 +168,8 @@ ht-degree: 99%
    + [已弃用 API](/help/release-notes/deprecated-apis.md)
    + [预发行渠道](/help/release-notes/prerelease.md)
 + 安全性 {#security}
-   + [AEM as a Cloud Service 的安全性](/help/security/home.md)
-   + [为 AEM as a Cloud Service 配置高级联网功能](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service 的安全性概述](/help/security/cloud-service-security-overview.md)
+   + [为 AEM as a Cloud Service 配置高级联网功能](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service 的 IMS 支持](/help/security/ims-support.md)
    + [面向 AEM as a Cloud Service 的相同网站 Cookie 支持](/help/security/same-site-cookie-support.md)
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
@@ -261,7 +259,6 @@ ht-degree: 99%
       + [AEM Dispatcher 转换器](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
       + [AEM 现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
-   + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
    + [对 AEM Cloud Service 中的 AEM Sites 的重要更改](/help/sites-cloud/sites-cloud-changes.md)
    + 创作 {#authoring}
       + 入门 {#getting-started}
@@ -396,7 +393,6 @@ ht-degree: 99%
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
 + 资源 {#assets}
-   + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概述和新增功能](/help/assets/overview.md)
    + [对  [!DNL Assets] as a [!DNL Cloud Service] 的重要更改](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] 架构](/help/assets/architecture.md)
@@ -681,7 +677,6 @@ ht-degree: 99%
       + [安装和配置](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 缓存](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
-   + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens as a Cloud Service 概述{#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
       + [了解角色定义](/help/screens-cloud/introduction/personas-screens-cloud.md)
@@ -718,9 +713,8 @@ ht-degree: 99%
       + [为 Screens as a Cloud Service 开发自定义组件](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [Screens as a Cloud Service 常见问题](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
-   + [AEM Content and Commerce](/help/commerce-cloud/home.md)
-   + [对 AEM Content and Commerce as a Cloud Service 的重要更改](/help/commerce-cloud/changes.md)
    + [简介和概述](/help/commerce-cloud/introduction.md)
+   + [对 AEM Content and Commerce as a Cloud Service 的重要更改](/help/commerce-cloud/changes.md)
    + Commerce 历程 {#journeys}
       + 内容创作历程 {#author}
          + [AEM Content and Commerce 内容创作历程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
@@ -1079,7 +1073,6 @@ ht-degree: 99%
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [AEM as a Cloud Service 中的缓存](/help/implementing/dispatcher/caching.md)
 + 连接器 {#connectors}
-   + [实施 AEM as a Cloud Service 的连接器](/help/connectors/home.md)
    + [实施 AEM 连接器](/help/connectors/implement.md)
    + [提交 AEM 连接器](/help/connectors/submit.md)
    + [维护 AEM 连接器](/help/connectors/maintain.md)

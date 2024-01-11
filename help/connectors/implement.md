@@ -1,13 +1,14 @@
 ---
 title: 实施 AEM 连接器
-description: 了解如何构建、测试和实施AEM连接器。 此外，您还可以了解常见的集成模式。
+description: 了解连接器、连接器的功能以及如何在 Experience Manager 中实施这些有价值的工具。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
+
 
 实施 AEM 连接器
 =============================

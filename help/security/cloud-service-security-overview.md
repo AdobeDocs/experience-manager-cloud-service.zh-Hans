@@ -1,13 +1,14 @@
 ---
 title: AEM as a Cloud Service 安全性概述
-description: 阅读有关 AEM as a Cloud Service 内安全性的深入概述
+description: 了解有关 Experience Manager as a Cloud Service 的重要安全主题。
 exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
-workflow-type: ht
-source-wordcount: '109'
+source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+workflow-type: tm+mt
+source-wordcount: '99'
 ht-degree: 100%
 
 ---
+
 
 # AEM as a Cloud Service 的安全性概述 {#cloud-service-security-overview}
 
