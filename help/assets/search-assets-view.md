@@ -3,10 +3,10 @@ title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
 description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现合适的资源，并帮助您提高内容速度。
 role: User
 exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 6fb2701fc2a4dc1cb9e8ea31134f0b3f2bb6bdf9
+source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 79%
+source-wordcount: '1543'
+ht-degree: 78%
 
 ---
 
@@ -29,20 +29,6 @@ ht-degree: 79%
    * 使用关键词搜索并可选择更改文件夹。按 Return。
 
    * 通过直接搜索资源，开始处理最近查看过的资源。单击搜索框，从建议中选择最近查看过的资源。
-
-## 使用Adobe Firefly搜索资源
-
-如果您要查找在任何资产文件夹中都不可用的资产，请使用 [!UICONTROL Adobe Firefly] 中的资源搜索功能 [!UICONTROL Adobe Experience Manager Assets]. 它允许您高效地搜索可能未存储在指定文件夹中的资源。 此功能当前仅供快速授权用户访问。 <br> 例如，您可以使用关键词搜索资产 `Bugatti Type 57`. 搜索时 `Bugatti Type 57`，未找到结果。
-
-![Firefly集成](assets/firefly-integration.jpg)
-*图：在资产文件夹中未找到Bugatti Type 57的结果。*
-
-在搜索栏中，输入资产名称，然后单击 **[!UICONTROL 生成]**.
-
-![Firefly集成](assets/bugatti-type-57.jpg)
-*图：使用Adobe Firefly资源搜索功能搜索的引用资源。*
-
-示例资源会显示在屏幕上。 您可以将这些资产上传到您的首选文件夹，以便轻松访问。
 
 ## 筛选搜索结果 {#refine-search-results}
 
@@ -134,6 +120,38 @@ ht-degree: 79%
 
 1. 单击&#x200B;**[!UICONTROL 确认]**&#x200B;以从用户界面中移除筛选条件。
 
+## 搜索资源，使用 [!DNL Adobe Firefly] {#search-firefly}
+
+通过使用，您可以搜索在任何资产文件夹中都不可用的资产 [!DNL Adobe Firefly] 中的资源搜索功能 [!DNL Experience Manager Assets]. 这允许您实时高效地生成未存储在资源文件夹中的资源。
+
+### 开始之前
+
+您必须拥有有效的 [!DNL Adobe Express] 订阅。
+
+### 生成资源
+
+要使用生成新资源，请执行以下操作： [!DNL Adobe Firefly]：
+
+1. 导航至 [!DNL AEM Assets] 工作区。
+1. 在页面顶部的搜索栏中输入资源名称。<br>
+例如，您可以使用关键词搜索资产 `Bugatti Type 57`. 搜索资产时，由于资产不存在于任何资产文件夹中，因此未找到任何结果。
+1. 在页面中间的搜索栏中键入资源名称，然后单击 **[!UICONTROL 生成]**.
+   ![Firefly 集成](assets/firefly-integration.jpg)
+   *图：在资产文件夹中未找到Bugatti Type 57的结果。* <br>
+新资产生成成功。
+   ![Firefly 集成](assets/bugatti-type-57.jpg)
+   *图：使用搜索的引用资源 [!DNL Adobe Firefly] 资源搜索功能。* <br>
+您可以将这些资产上传到您的首选文件夹，以便轻松访问。
+
+### 上传资源
+
+要将生成的资源上传到资源存储库，请执行以下操作：
+
+1. 单击 **[!UICONTROL 上传]**.
+1. 选择要将资源上传到的资源文件夹，然后单击 **[!UICONTROL 选择文件夹]**.
+   ![上传资源](assets/upload-asset-firefly.jpg)
+   *图：选择要上传资源的文件夹。*
+
 ## 保存的搜索 {#saved-search}
 
 [!DNL Assets view] 中的搜索功能非常易于使用。从搜索框中，您只需键入关键字并按Return键即可查看结果，或者只需单击一下即可重新快速搜索最近搜索的关键字。
@@ -159,7 +177,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 可选择在搜索结果中显示的资源并执行以下操作：
 
-* **查找类似图像**：根据元数据和智能标记，在资产UI中查找类似的图像资产。
+* **查找相似的图像**：根据元数据和智能标记查找 Assets UI 中相似的图像资源。
 
 * **详细信息**：查看和编辑资源属性。
 
@@ -169,9 +187,9 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **固定到快速访问**：[固定资源](my-workspace-assets-view.md)，以便在以后需要它时更快地访问。所有固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分中。
 
-* **在Adobe Express中打开**：从Adobe Experience Manager Assets屏幕编辑集成Adobe Express中的图像。
+* **在Adobe Express中打开**：从Experience Manager Assets屏幕编辑集成Adobe Express中的图像。
 
-* **编辑**：使用Adobe Express编辑图像。
+* **编辑**：使用 Adobe Express 编辑图像。
 
 * **共享链接**：与其他用户[共享某个资源的链接](share-links-for-assets-view.md)，以使其可访问和下载该资源。
 
@@ -183,7 +201,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **重命名**：重命名资源。
 
-* **复制到库**：将资产添加到库。
+* **复制到库**：将资源添加到库。
 
 * **分配任务**：将任务分配给资源的用户。
 

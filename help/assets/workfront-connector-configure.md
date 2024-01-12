@@ -4,9 +4,9 @@ description: 配置 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: e49d536dc918861604f3e5d19608eb69d038c49a
+source-git-commit: 4bda798113d85b800cb088d150f8c9d453c9ec3e
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1767'
 ht-degree: 1%
 
 ---
@@ -69,6 +69,7 @@ ht-degree: 1%
 1. 项目状态：选择要为其设置项目以创建链接文件夹的状态。
 1. 在具有项目组合的项目中创建链接文件夹：项目必须属于的Portfolio列表，以便您可以创建链接文件夹。 将此列表留空可为所有项目组合创建链接文件夹。
 1. 在具有自定义表单字段的项目中创建链接文件夹：自定义表单字段及其项目必须具有的相应值，以便您可以创建链接文件夹。 如果留空，将忽略此配置。 选择 `CUSTOM FORMS: Create DAM Linked Folder` 字段和输入 `Yes` 值。
+1. 配置权限：配置这些权限， `jcr:all permissions for /conf/workfront-tools/settings/cloudconfigs` 对于 `wf-workfront-users group`.
 1. 单击启用自动创建链接的文件夹。 如果您返回到“事件订阅”选项卡，现在可以看到有一个创建事件。
 
 ![链接的文件夹配置](/help/assets/assets/wf-linked-folder-config.png)
