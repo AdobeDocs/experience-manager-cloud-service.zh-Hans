@@ -2,10 +2,10 @@
 title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '3357'
-ht-degree: 100%
+source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
+workflow-type: tm+mt
+source-wordcount: '3350'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 所有 AEM as a Cloud Service Sites 和 Forms 客户均可使用大多数此类流量过滤器规则。这些规则主要作用于请求属性和请求标头，包括 IP、主机名、路径和用户代理。
 
-流量过滤规则的子类别需要“增强安全性”许可证或“WAF-DDoS 保护”许可证，今年晚些时候将提供这些许可证。这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
+流量过滤器规则的子类别需要增强安全许可证或WAF-DDoS保护许可证。 这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
 
 可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。未来还将支持 RDE。
 
