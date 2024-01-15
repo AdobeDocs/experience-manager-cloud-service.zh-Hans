@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.4.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.4.0 版的发行说明。'
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

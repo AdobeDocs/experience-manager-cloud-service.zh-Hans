@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.8.0 版的发行说明。'
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1691'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![从数据源批量导入资源](/help/release-notes/assets/bulk-import.png)
 
-* **由Adobe Express提供支持的图像编辑工具**：简单直观 [由Adobe Express提供支持的图像编辑工具](/help/assets/edit-images-assets-view.md) 可直接在AEM Assets中使用，以提高内容重复使用率并加快内容速度。
+* **由 Adobe Express 提供支持的图像编辑工具**：可直接在 AEM Assets 中找到简单而直观的[由 Adobe Express 提供支持的图像编辑工具](/help/assets/edit-images-assets-view.md)以提高内容重用率并提高内容速度。
 
-  ![使用 Adob&#x200B;&#x200B;e Express 进行图像编辑](/help/release-notes/assets/edit-adobe-express.png)
+  ![用 Adobe Express 编辑图像](/help/release-notes/assets/edit-adobe-express.png)
 
-* **为“我的工作区快速访问”固定项目时的灵活性**：可以为您、整个组织或组列表选择并固定项目，以便它们显示在 [我的工作区的“快速访问”部分](/help/assets/my-workspace-assets-view.md) 根据您的选择。
+* **可灵活地为“我的工作区”的“快速访问”部分固定各项**：可为您、您的整个组织或一系列组选择并固定各项，以使各项根据您的选择显示在[“我的工作区”的“快速访问”部分](/help/assets/my-workspace-assets-view.md)中。
 
   ![为组固定项目](/help/release-notes/assets/pin-items-for-groups.png)
 
