@@ -1,13 +1,13 @@
 ---
 title: 如何预览自适应表单？
 description: 用户可以在发布或激活表单之前预览表单，以确保表单符合预期。 预览选项可能因支持的表单类型而异。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -28,10 +28,10 @@ ht-degree: 3%
    <td><strong>资源类型</strong><br /> </td>
    <td><strong>可用的预览选项</strong><br /> </td>
   </tr>
-  <tr>
-   <td>文档</td>
-   <td>PDF预览</td>
-  </tr>
+  <!--<tr>
+   <td>Document</td>
+   <td>PDF preview</td>
+  </tr>-->
   <tr>
    <td>PDF表单</td>
    <td>使用数据预览和预览PDF<br /> </td>
@@ -40,10 +40,10 @@ ht-degree: 3%
    <td>自适应表单</td>
    <td>包含数据的HTML预览和HTML预览</td>
   </tr>
-  <tr>
-   <td>表单模板</td>
-   <td>PDF预览、包含数据的PDF预览、HTML预览、包含数据的HTML预览<br /> </td>
-  </tr>
+  <!--<tr>
+   <td>Form Template</td>
+   <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
+  </tr>-->
  </tbody>
 </table>
 
@@ -61,7 +61,7 @@ ht-degree: 3%
 
    * HTML预览
    * 使用数据预览
-   * PDF预览（适用于表单模板）
+     <!--* Preview as PDF (available for form templates)-->
 
 ## 使用数据预览 {#preview-with-data}
 

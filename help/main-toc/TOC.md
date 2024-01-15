@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 8a74f027c7fe16c3bd23a8627bc9c82e8840cb77
 workflow-type: tm+mt
-source-wordcount: '4538'
+source-wordcount: '4544'
 ht-degree: 99%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 99%
    + [SEO 和 URL 管理](/help/overview/seo-and-url-management.md)
    + [Unified Shell 上的 AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [评估 KPI](/help/overview/assessing-kpis.md)
-   + [调整 KPI](/help/overview/aligning-kpis.md)
+   + [选准 KPI](/help/overview/aligning-kpis.md)
    + [选择合适的团队](/help/overview/choose-right-team.md)
    + [文档历程](/help/journey-documentation/documentation-journeys.md)
 + 发行说明 {#release-notes}
@@ -656,6 +656,8 @@ ht-degree: 99%
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
          + [创建和管理评论](/help/forms/create-reviews-forms.md)
+      + [自适应表单关键词](/help/forms/adaptive-forms-keywords.md)
+      + [预览表单](/help/forms/previewing-forms.md)
    + 以表单为中心的工作流程 {#create-form-centric-workflows}
       + [在工作流程中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以表单为中心的工作流程中使用变体](/help/forms/variable-in-aem-workflows.md)
@@ -1107,9 +1109,9 @@ ht-degree: 99%
    + 开发 {#developing}
       + [开始使用 AEM 中的 Universal Editor](/help/implementing/universal-editor/getting-started.md)
       + [Universal Editor 开发人员概述](/help/implementing/universal-editor/developer-overview.md)
-      + [属性和物料类型](/help/implementing/universal-editor/attributes-types.md)
+      + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
       + [字段类型](/help/implementing/universal-editor/field-types.md)
       + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
       + [使用 Universal Editor 进行本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
-      + [通用编辑器调用](/help/implementing/universal-editor/calls.md)
+      + [Universal Editor 调用](/help/implementing/universal-editor/calls.md)
       + [自定义UI](/help/implementing/universal-editor/customizing.md)
