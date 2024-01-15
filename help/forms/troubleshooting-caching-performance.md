@@ -2,11 +2,13 @@
 title: 如何解决AEM Formsas a Cloud Service中与缓存相关的问题？
 description: 解决AEM Formsas a Cloud Service的缓存相关问题。
 contentOwner: khsingh
+feature: Adaptive Forms, Troubleshooting
+role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 2%
+source-wordcount: '381'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +35,7 @@ ht-degree: 2%
 执行以下步骤来解决问题：
 
 1. 打开您的Experience Manager项目。
-1. 打开 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 以供编辑。
+1. 打开 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 进行编辑。
 1. 打开 `conf.d/httpd-dispatcher.conf` 或配置为在运行时加载的任何其他配置文件。
 1. 将以下代码添加到文件中并进行保存。 它是一个示例代码，可对其进行修改以适合您的环境。
 

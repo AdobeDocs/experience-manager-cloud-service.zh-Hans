@@ -1,11 +1,13 @@
 ---
 title: 如何将数据库连接到 [!DNL AEM Forms] as a Cloud Service？
 description: 从自适应表单或AEM Workflow中检索数据并将其保存到RESTful Web服务、基于SOAP的Web服务和OData服务。
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 596cd08a98b1d9d47825438e1d64b6db3f847271
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 2%
+source-wordcount: '537'
+ht-degree: 3%
 
 ---
 

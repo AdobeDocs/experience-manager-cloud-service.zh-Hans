@@ -2,7 +2,9 @@
 title: 如何在AEM Forms中配置“外出”设置？
 description: 在休假或外出时委派任务以实现无缝的工作流执行。
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Workflow
+role: Admin, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%

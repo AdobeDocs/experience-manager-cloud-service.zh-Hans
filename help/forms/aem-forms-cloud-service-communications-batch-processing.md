@@ -1,10 +1,12 @@
 ---
 title: 轻松批量创建PDF — 掌握批处理技术 — 生成数百万份PDF文档的自助指南！
 description: 如何创建以品牌为导向的个性化通信？
+feature: Adaptive Forms, APIs
+role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1706'
 ht-degree: 2%
 
 ---
@@ -90,7 +92,7 @@ ht-degree: 2%
 1. 转到“工具”>“Cloud Service”>“Azure存储”
 1. 打开文件夹以托管配置，然后单击“创建”。 您可以使用全局文件夹或创建文件夹。
 1. 指定要连接到服务的配置和凭据的名称。 您可以 [从Microsoft Azure Storage门户检索这些凭据](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
-1. 单击创建。
+1. 单击“创建”。
 
 您的Experience Manager实例现在可以连接到Microsoft Azure Storage，并在需要时使用它来存储和读取内容。
 
@@ -106,7 +108,7 @@ ht-degree: 2%
 1. 在存储配置路径中，浏览并选择云配置，该配置包含客户拥有的Azure存储帐户的凭据。
 1. 在源文件夹中，指定Azure存储容器和包含记录的文件夹的名称。
 1. 在目标文件夹中，指定Azure存储容器的路径和用于存储生成的文档的文件夹。
-1. 单击创建。
+1. 单击“创建”。
 
 您的Experience Manager实例现在已连接到Microsoft Azure Storage，并已配置为检索数据并将其发送到Microsoft Azure Storage上的特定位置。
 

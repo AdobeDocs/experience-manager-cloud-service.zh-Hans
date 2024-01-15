@@ -1,11 +1,12 @@
 ---
 title: 如何设置 [!DNL AEM Forms] as a cloud service环境？
 description: 了解如何设置和配置 [!DNL AEM Forms] as a Cloud Service的环境。
-exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 16%
+source-wordcount: '602'
+ht-degree: 14%
 
 ---
 

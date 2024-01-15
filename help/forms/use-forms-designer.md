@@ -1,8 +1,9 @@
 ---
 title: 如何使用Forms Designer创建记录文档(DoR)模板和表单片段？
 description: 使用 [!DNL AEM Forms] 设计器以创建记录文档模板和表单片段。
-feature: Forms Designer
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%

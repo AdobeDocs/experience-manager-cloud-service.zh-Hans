@@ -4,15 +4,15 @@ description: 自适应Forms与Adobe Analytics无缝集成，以捕获和跟踪�
 keywords: 查看和了解自适应Forms Analytics报表、Adobe分析报表、Forms Analytics报表
 topic-tags: develop
 feature: Adaptive Forms
-role: User
+role: Admin, User
 level: Intermediate
-source-git-commit: 7c197be7819d6fcbf028237401d05236f90734d1
+exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
-
 
 # 查看和了解自适应Forms分析报表 {#viewing-and-understanding-aem-forms-analytics-reports}
 

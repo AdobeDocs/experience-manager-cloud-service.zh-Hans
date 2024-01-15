@@ -1,11 +1,13 @@
 ---
 title: 自适应Forms的AEM Formsas a Cloud Service架构和通信API
 description: 了解的架构 [!DNL AEM Forms] as a Cloud Service了解平台的可扩展性、可复原性和性能。
+role: Admin, Developer, User
+feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 5%
+source-wordcount: '1033'
+ht-degree: 2%
 
 ---
 
@@ -67,7 +69,7 @@ Author是在标准创作运行模式下运行的AEM Formsas a Cloud Service实�
 
 ### Adobe服务
 
-**自动化表单转换服务**
+**automated forms conversion服务**
 
 [automated forms conversion服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans) 自动将您的PDF和XFA表单转换为设备友好、响应迅速且基于HTML5的自适应表单。
 
@@ -96,7 +98,7 @@ Formsas a Cloud Service提供在外部存储系统（如Blob存储、数据库�
 
 ### Cloud Manager
 
-Cloud Manager是重要的组件， [AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=zh-Hans). 它是我们客户运营和开发人员角色的单一入口点。 这是可以管理AEM程序和环境的位置。 Cloud Manager已经演变成为自助服务门户，在其中可以创建和配置AEMas a Cloud Service的主要组件：
+Cloud Manager是重要的组件， [AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). 它是我们客户运营和开发人员角色的单一入口点。 这是可以管理AEM程序和环境的位置。 Cloud Manager已经演变成为自助服务门户，在其中可以创建和配置AEMas a Cloud Service的主要组件：
 
 * 创建和管理项目
 * 在程序中创建和管理AEM环境

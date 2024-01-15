@@ -2,11 +2,13 @@
 title: 如何解决AEM Formsas a Cloud Service环境的安装和配置问题？
 description: AEM Formsas a Cloud Service环境的安装和配置疑难解答。
 contentOwner: khsingh
+feature: Adaptive Forms, Troubleshooting
+role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 5%
+source-wordcount: '167'
+ht-degree: 1%
 
 ---
 

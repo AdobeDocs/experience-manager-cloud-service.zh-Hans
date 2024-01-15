@@ -2,8 +2,10 @@
 title: AEM 6.5 Forms与AEMCloud Service之间有何区别？
 description: 比较AEM 6.5 Forms和AEMCloud Services，并了解在升级或迁移到Cloud Service之前最显着的更改。
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
+role: Admin, Developer, User
+feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 0acaea02ad4ba647373eedecb444e9a7911d108d
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 1%

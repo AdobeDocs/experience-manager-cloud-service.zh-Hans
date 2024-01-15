@@ -2,9 +2,10 @@
 title: 如何下载并安装Forms Designer以创建记录文档模板？
 description: 使用Forms Designer创建用作记录文档模板的XDP和PDF表单模板。
 keywords: 安装Designer，安装Forms Designer，安装Forms Designer的要求
-feature: Forms Designer
+feature: Adaptive Forms, Forms Designer
+role: Admin, Developer, User
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: b2769134c2e744f41cbb7e8a3cf08c622cdc07ca
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 7%

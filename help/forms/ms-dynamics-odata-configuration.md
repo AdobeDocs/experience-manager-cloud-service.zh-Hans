@@ -1,11 +1,11 @@
 ---
 title: 如何配置 [!DNL Microsoft Dynamics] AEM Forms的OData？
 description: 了解如何基于中定义的实体、属性和服务创建表单数据模型 [!DNL Microsoft Dynamics] 服务。
-feature: Form Data Model
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 2%

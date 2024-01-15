@@ -1,11 +1,11 @@
 ---
 title: 如何为自适应表单创建表单数据模型？
 description: 了解如何基于表单数据模型(FDM)创建自适应Forms和片段。 在FDM中生成并编辑数据模型对象的示例数据。
-feature: Form Data Model
-role: User
+feature: Adaptive Forms, Form Data Model
+role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 2%

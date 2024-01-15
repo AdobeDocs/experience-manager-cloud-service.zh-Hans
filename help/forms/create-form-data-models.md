@@ -1,11 +1,11 @@
 ---
 title: 如何创建表单数据模型？
 description: 了解如何创建表单数据模型(FDM)，以及使用自适应表单或AEM Workflow向数据源发送或检索数据。
-feature: Form Data Model
+feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 1%

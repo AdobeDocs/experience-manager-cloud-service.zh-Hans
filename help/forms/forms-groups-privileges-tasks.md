@@ -1,11 +1,12 @@
 ---
 title: 在AEM Formsas a Cloud Service中，哪些用户组是现成可用的？
 description: 现成的用户组和分配给每个组的权限的列表
-exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: a942e87a33775851631a1fe123fa3e8d2686bb30
+role: Admin, Developer, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 28%
+source-wordcount: '167'
+ht-degree: 26%
 
 ---
 
@@ -112,7 +113,7 @@ ht-degree: 28%
 * [设置本地开发环境](/help/forms/setup-local-development-environment.md)
 * [从 AEM 6.5 Forms 迁移到 Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [创建独立的自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-* [将 自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [将自适应表单添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 <!--
 

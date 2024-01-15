@@ -2,9 +2,11 @@
 title: AEM Forms中有哪些注意事项、已知问题和最佳实践？
 description: 注意事项AEM Forms通信API的已知问题和最佳实践。
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1733'
 ht-degree: 0%
 
 ---
@@ -173,7 +175,7 @@ Type-1和OpenType®字体未嵌入到PCL输出中。 使用Type-1和OpenType®�
 
 * Adobe建议将数据文件blob容器存储托管在AEM Cloud Service使用的云区域中。
 
-## 常见问题 {#faq}
+## 常见问题解答 {#faq}
 
 **我是否可以使用观察文件夹或其他存储机制来存储输入和输出？**
 

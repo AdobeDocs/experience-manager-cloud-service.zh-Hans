@@ -2,8 +2,9 @@
 title: 如何在AEM Forms实例上导入、导出和组织自适应Forms或PDF forms？
 description: 了解如何在AEM实例之间迁移自适应Forms、PDF forms、主题和其他支持资源。
 topic-tags: forms-manager
-exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin, User
+feature: Adaptive Forms
+source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 0%
