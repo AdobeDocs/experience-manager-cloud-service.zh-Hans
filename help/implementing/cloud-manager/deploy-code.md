@@ -2,10 +2,10 @@
 title: 部署代码
 description: 了解如何使用 AEM as a Cloud Service 中的 Cloud Manager 管道部署代码。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 94%
+source-wordcount: '1197'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击要为其部署代码的程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，点按或单击要为其部署代码的程序。
 
 1. 在&#x200B;**概述**&#x200B;屏幕上，从行动号召中单击&#x200B;**部署**&#x200B;启动部署过程。
 

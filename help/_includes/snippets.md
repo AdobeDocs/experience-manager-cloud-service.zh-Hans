@@ -1,7 +1,7 @@
 ---
-source-git-commit: 6a370269317621f09f0dcdc7f701d7c8a4891ea4
-workflow-type: ht
-source-wordcount: '236'
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
+workflow-type: tm+mt
+source-wordcount: '212'
 ht-degree: 100%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 100%
 ## Edge Delivery Services 创作 {#edge-delivery-authoring}
 
 [!BADGE 要为 Edge Delivery Services 创作 AEM 内容，请单击此处。]{type=Positive url="/help/edge/overview.md" tooltip="为 Edge Delivery Services 创作 AEM 内容"}
-
-## WAF 配置限量发行 {#waf-limited-release}
-
-[!BADGE 将于 2023 年底前推出 WAF-DDOS 保护。]{type=Caution tooltip="将于 2023 年底前推出 WAF-DDOS 保护。"}
 
 ## Universal Editor 状态 {#universal-editor-status}
 

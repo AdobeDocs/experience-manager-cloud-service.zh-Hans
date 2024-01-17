@@ -2,10 +2,10 @@
 title: 创建生产程序
 description: 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 73%
+source-wordcount: '599'
+ht-degree: 64%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 73%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击 **添加项目** 屏幕右上角的。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕，点击或单击 **添加项目** 在屏幕的右上角。
 
    ![Cloud Manager 登陆页面](assets/log-in.png)
 
@@ -30,15 +30,13 @@ ht-degree: 73%
 
    ![创建项目向导](assets/create-production-program.png)
 
-1. 或者，您也可以将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标，或单击它以从文件浏览器中选择图像，从而将图像添加到项目中。选择 **继续**.
+1. 或者，您也可以将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标，或单击它以从文件浏览器中选择图像，从而将图像添加到项目中。选择&#x200B;**继续**。
 
 1. 如果您拥有必要的权限， **安全性** 选项卡，并提供激活的选项 **HIPAA** 和/或 **WAF-DDOS保护** 用于您的生产程序。 如果您正在创建的程序有需要，请勾选适用的选项，然后选择 **继续**.
 
    * 程序创建后无法启用或禁用HIPAA。
       * [详细了解](https://www.adobe.com/go/hipaa-ready_cn) Adobe 的 HIPAA 就绪解决方案实施。
    * 激活后，可以通过设置 [非生产管道。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-
-   {{waf-limited-release}}
 
    ![安全选项](assets/create-production-program-security.png)
 
@@ -60,7 +58,7 @@ ht-degree: 73%
    ![定义计划上线日期](assets/setup-go-live.png)
 
    * 可以随时编辑此日期。
-   * 此日期仅供参考，并触发程序概述页面上的“上线”构件，及时提供 AEM as a Cloud Service 最佳实践文档的产品内链接，配合您的入门历程，最终获得成功、顺利的上线体验。
+   * 此日期仅供参考，并触发上的上线构件 [**项目概述** 页面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) 及时提供产品内链接到AEMas a Cloud Service最佳实践文档，配合您的入门培训历程，最终获得成功、流畅的上线体验。
 
 1. 单击&#x200B;**创建**。
 

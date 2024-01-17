@@ -2,10 +2,10 @@
 title: 创建沙盒程序
 description: 了解如何使用 Cloud Manager 创建自己的沙盒程序，用于培训、演示、POC 或其他非生产目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 90%
+source-wordcount: '443'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择相应的组织。
 
-1. 从 Cloud Manager 的登陆页面，在屏幕右上角附近，点击&#x200B;**添加程序。**
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕，点击或单击 **添加项目** 靠近屏幕右上角。
 
    ![Cloud Manager 登陆页面](assets/cloud-manager-my-programs.png)
 
@@ -27,7 +27,7 @@ ht-degree: 90%
 
    ![项目类型创建](assets/create-sandbox.png)
 
-1. 或者，您也可以将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标，或单击它以从文件浏览器中选择图像，从而将图像添加到项目中。选择 **继续**.
+1. 或者，您也可以将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标，或单击它以从文件浏览器中选择图像，从而将图像添加到项目中。选择&#x200B;**继续**。
 
    * 该图像仅用作项目概览窗口中的磁贴，有助于识别项目。
 

@@ -2,10 +2,10 @@
 title: 管理自定义域名
 description: 了解如何使用 Cloud Manager 查看、更新、替换和删除自定义域名。
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 87%
+source-wordcount: '339'
+ht-degree: 84%
 
 ---
 
@@ -17,7 +17,9 @@ Cloud Manager 让您查看、更新、替换和删除自定义域名。
 
 使用&#x200B;**查看和更新**&#x200B;菜单查看任何自定义域名的详细信息。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
+
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，选择程序。
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 

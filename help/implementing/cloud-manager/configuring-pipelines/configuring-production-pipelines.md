@@ -3,17 +3,17 @@ title: 配置生产管道
 description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 77%
+source-wordcount: '1418'
+ht-degree: 72%
 
 ---
 
 
 # 配置生产管道 {#configure-production-pipeline}
 
-了解如何配置生产管道以生成代码并将其部署到生产环境。生产管道首先将代码部署到暂存环境，并在获得批准后将相同的代码部署到生产环境。
+了解如何配置生产管道以生成代码并将其部署到生产环境。 生产管道首先将代码部署到暂存环境，并在获得批准后将相同的代码部署到生产环境。
 
 用户必须具有&#x200B;**[部署管理员](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;角色才能配置生产管道。
 
@@ -35,7 +35,9 @@ ht-degree: 77%
 >
 >在配置前端管道之前，请参阅 [AEM 快速网站创建历程](/help/journey-sites/quick-site/overview.md)，获取易于使用的“AEM 快速站点创建”工具的端到端指南。这段历程将帮助您简化 AEM 站点的前端开发，使您能够在不了解 AEM 后端的情况下快速定制站点。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 登录Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择适当的组织
+
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，选择程序。
 
 1. 导航至 **管道** 中的卡 **项目概述** 页面并单击 **添加** 以选择 **添加生产管道**.
 
@@ -67,7 +69,7 @@ ht-degree: 77%
 
 ### 全栈代码 {#full-stack-code}
 
-全栈代码管道同时部署后端和前端代码构建，其中包含一个或多个 AEM 服务器应用程序以及 HTTPD/Dispatcher 配置。
+全栈代码管道同时部署后端和前端代码构建，其中包含一个或多个AEM服务器应用程序以及HTTPD/Dispatcher配置。
 
 >[!NOTE]
 >
@@ -156,7 +158,7 @@ ht-degree: 77%
       * 输入分支名称的前几个字符，以及此字段的自动完成功能。它会找到您可以选择的匹配分支。
    * **代码位置** – 此选项定义管道应从中检索代码的所选存储库分支中的路径。
    * **部署到生产之前暂停** – 此选项在部署到生产之前暂停管道。
-   * **已计划** – 此选项允许用户启用计划的生产部署。仅适用于Web层目标部署。
+   * **已计划**  — 此选项允许用户启用计划的生产部署。 仅适用于Web层目标部署。
 
    ![配置管道](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-config-deployment.png)
 

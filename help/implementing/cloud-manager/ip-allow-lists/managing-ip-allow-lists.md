@@ -2,10 +2,10 @@
 title: 管理 IP 允许列表
 description: 了解如何在 Cloud Manager 中查看、编辑、删除 IP 允许列表和检查其状态。
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 98%
+source-wordcount: '789'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 98%
 
 具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户可以按照这些步骤查看和更新 IP 允许列表。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，选择程序。
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 1. 从&#x200B;**环境**&#x200B;屏幕导航到 **IP 允许列表**&#x200B;页面。
 1. 确定要查看或更新的 IP 允许列表的行。

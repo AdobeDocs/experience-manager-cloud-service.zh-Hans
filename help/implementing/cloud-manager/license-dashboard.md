@@ -2,10 +2,10 @@
 title: 许可证功能板
 description: Cloud Manager 提供了一个仪表板，用于轻松查看您的组织或租户可用的 AEMaaCS 产品权利。
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: fbfb5d3ee8dbc8bc4cbe118fd4ce97284f712bb4
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 66%
+source-wordcount: '661'
+ht-degree: 58%
 
 ---
 
@@ -30,7 +30,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在产品概述页面上，切换到 **许可证**&#x200B;选项卡。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕，切换到 **许可证** 选项卡。
 
 ![许可证功能板](assets/license-dashboard.png)
 
@@ -55,7 +55,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 ### 什么是内容请求？ {#what-is-a-content-request}
 
-内容请求是进入 AEM Sites 或任何客户提供的缓存系统（如内容交付网络）的请求，以 HTML 格式作为页面视图或 JSON 格式作为 API 调用交付内容或数据。
+内容请求是进入AEM Sites或任何客户提供的缓存系统（如内容交付网络）的请求，以HTML格式作为页面视图或JSON格式作为API调用交付内容或数据。
 
 每个页面视图或每五个 API 调用计算一个内容请求，在第一个接收内容请求的缓存系统入口测量。 内容请求仅按生产环境计算。
 

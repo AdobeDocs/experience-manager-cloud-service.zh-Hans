@@ -2,10 +2,10 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 89%
+source-wordcount: '2614'
+ht-degree: 88%
 
 ---
 
@@ -41,9 +41,9 @@ ht-degree: 89%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击要为其添加环境的程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，点按或单击要为其添加环境的程序。
 
-1. 从&#x200B;**程序概述**&#x200B;页面，单击&#x200B;**环境**&#x200B;信息卡上的&#x200B;**添加环境**&#x200B;以添加环境。
+1. 从&#x200B;**[程序概述](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)**&#x200B;页面，单击&#x200B;**环境**&#x200B;信息卡上的&#x200B;**添加环境**&#x200B;以添加环境。
 
    ![环境信息卡](assets/no-environments.png)
 

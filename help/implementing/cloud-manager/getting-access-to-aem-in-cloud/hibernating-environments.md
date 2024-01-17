@@ -2,10 +2,10 @@
 title: 使沙盒环境休眠和解除沙盒环境休眠
 description: 了解沙盒程序的环境如何自动进入休眠模式，以及如何解除休眠。
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 85%
+source-wordcount: '695'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 85%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击要休眠的程序以显示其详细信息。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕，点按或单击要休眠的程序以显示其详细信息。
 
 1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**Developer Console**。
 
@@ -65,7 +65,7 @@ ht-degree: 85%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 单击要休眠的程序以显示其详细信息。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕，点按或单击要解除休眠的程序以显示其详细信息。
 
 1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**Developer Console**。
 

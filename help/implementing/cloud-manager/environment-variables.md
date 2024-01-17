@@ -2,10 +2,10 @@
 title: Cloud Manager 环境变量
 description: 标准环境变量可以通过 Cloud Manager 进行配置和管理，并提供给运行时环境，以便在 OSGi 配置中使用。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 86%
+source-wordcount: '992'
+ht-degree: 85%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 86%
 >您必须是&#x200B;[**部署管理员**&#x200B;角色](/help/onboarding/cloud-manager-introduction.md#role-based-premissions)成员，才能添加或修改环境变量。
 
 1. 登录 Adobe Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)。
-1. Cloud Manager 列出了可用的各种项目。选择要管理的项目。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕中，选择要管理的项目。
 1. 为所选程序选择&#x200B;**环境**&#x200B;选项卡，然后在左侧导航面板中选择要为其创建环境变量的环境。
 1. 在环境的详细信息中，选择&#x200B;**配置**&#x200B;选项卡，然后选择&#x200B;**添加**，打开&#x200B;**环境配置**&#x200B;对话框。
    * 如果您是首次添加环境变量，则可以看到 **添加配置** 按钮进行标记。 您可以使用此按钮或&#x200B;**添加**&#x200B;功能，打开&#x200B;**环境配置**&#x200B;对话框。
