@@ -3,9 +3,9 @@ title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 46e48b6bb8d2b926b55330024e145d608fcf3609
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3350'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 所有 AEM as a Cloud Service Sites 和 Forms 客户均可使用大多数此类流量过滤器规则。这些规则主要作用于请求属性和请求标头，包括 IP、主机名、路径和用户代理。
 
-流量过滤器规则的子类别需要增强安全许可证或WAF-DDoS保护许可证。 这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
+流量过滤规则的子类别需要“增强安全性”许可证或“WAF-DDoS 保护”许可证。这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
 
 可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。未来还将支持 RDE。
 
@@ -191,7 +191,7 @@ data:
 
 | **属性** | **类型** | **描述** |
 |---|---|---|
-| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码 ([https://en.wikipedia.org/wiki/Regional_indicator_symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol))。</li></ul> |
+| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码 ([https://en.wikipedia.org/wiki/cn/Regional_indicator_symbol](https://en.wikipedia.org/wiki/cn/Regional_indicator_symbol))。</li></ul> |
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
 | reqCookie | `string` | 返回具有指定名称的 Cookie |
@@ -250,7 +250,7 @@ when:
 | XSS | 跨站点脚本 | 跨站点脚本是指尝试通过恶意 JavaScript 代码来劫持用户帐户或 Web 浏览会话。 |
 | TRAVERSAL | 目录遍历 | 目录遍历是指尝试在整个系统中导航特权文件夹以获取敏感信息。 |
 | USERAGENT | 攻击工具 | 攻击工具是指使用自动化软件来找出安全漏洞或尝试利用已发现的漏洞。 |
-| LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻击尝试利用 2.16.0 版之前的 Log4J 版本中存在的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/Log4Shell) |
+| LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻击尝试利用 2.16.0 版之前的 Log4J 版本中存在的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/cn/Log4Shell) |
 | BHH | 错误跳头 | 错误跳头是指尝试通过格式错误的 Transfer-Encoding (TE) 或 Content-Length (CL) 头或格式良好的 TE 和 CL 头进行 HTTP 走私 |
 | ABNORMALPATH | 异常路径 | 异常路径表示原始路径与规范化路径不同（例如，`/foo/./bar` 标准化为 `/foo/bar`） |
 | DOUBLEENCODING | 双重编码 | 双重编码检查双重编码 html 字符的规避技术 |
@@ -563,7 +563,7 @@ data:
 | *timestamp* | TLS 终止后请求开始的时间。 |
 | *ttfb* | *首字节时间*&#x200B;的缩写。从请求开始到响应正文开始流式传输之前的时间间隔。 |
 | *cli_ip* | 客户端 IP 地址。 |
-| *cli_country* | 客户国家/地区的两字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 国家/地区代码。 |
+| *cli_country* | 客户国家/地区的两字母 [ISO 3166-1](https://en.wikipedia.org/wiki/cn/ISO_3166-1) alpha-2 国家/地区代码。 |
 | *rid* | 用于唯一标识请求的请求头的值。 |
 | *req_ua* | 负责发出给定 HTTP 请求的用户代理。 |
 | *host* | 请求所针对的颁发机构。 |

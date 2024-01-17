@@ -1,9 +1,9 @@
 ---
 title: 对 AEM Cloud Service 中的 AEM Sites 的重要更改
-description: 了解如何使用 AEM Sites as a Cloud Service 进行创作和管理，以及 AEM Cloud Service 中 AEM Sites 的显着变化。
+description: 了解如何用 AEM Sites as a Cloud Service 进行创作和管理它以及对 AEM Cloud Service 中 AEM Sites 的重要更改。
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
 ht-degree: 100%
 
