@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版的发行说明。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 720430af374636878b42ce346ca9c61ab089709b
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 47%
+source-wordcount: '1355'
+ht-degree: 46%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 47%
 
 * [预发行渠道](/help/release-notes/prerelease.md)：在即将推出的功能正式发布前的一个月进行预览！
 
-* [API弃用](/help/release-notes/deprecated-apis.md)：提供了适用于AEMas a Cloud Service的最新弃用API的列表。
+* [API弃用](/help/release-notes/deprecated-removed-features.md)：提供了适用于AEMas a Cloud Service的最新弃用API的列表。
 
 * [AEMas a Cloud ServiceSDK构建分析器Maven插件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：将您的maven项目更新到最新版本，其中包括弃用的Java API检查和其他改进。
 
@@ -80,7 +80,7 @@ ht-degree: 47%
 
 ### 即将推出的 [!DNL Forms] Beta 版功能 {#what-is-new-forms-prerelease}
 
-Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务允许您以同步和异步批处理模式生成文档。 Output 服务使您能够创建应用程序，这些应用程序允许您：
+Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML 数据以生成各种格式的打印文档。该服务让您以同步和异步批处理模式生成文档。Output 服务使您能够创建应用程序，这些应用程序允许您：
 
 * 使用 XML 数据填充模板文件来生成最终表单文档。
 * 生成各种格式的输出表单，包括非交互式 PDF 打印流。
@@ -92,7 +92,7 @@ Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML �
 
 * 在 AEM Forms Workflows 的“分配任务”步骤中，当您将操作按钮的默认图标替换为珊瑚色图标时，工作流将停止工作并记录异常。使用默认图标时，工作流按预期执行。
 * 在版面层中，当您更改列数、打开编辑层并在面板中拖动某些组件时，自适应表单编辑器的内容区域中会开始显示蓝色方形框，并且编辑器将变得无响应。
-* 与提供自适应或外部资产的 URL 相关的规则编辑器选项的错误消息太长，并且对用户不友好。
+* 与提供自适应或外部资源的 URL 相关的规则编辑器选项的错误消息太长，并且对用户不友好。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -101,7 +101,8 @@ Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML �
 
 ### 发布日期 {#release-date-cm-may}
 
-AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年 5 月 6 日。下一个版本计划于 2021 年 6 月 03 日发布。
+AEMas a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6日。
+下一个版本计划于2021年6月3日发布。
 
 ### 新增功能 {#what-is-new-may}
 
@@ -115,7 +116,7 @@ AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发布日期是 2021 年
 
 * 现在可在“编辑程序”工作流程中将商业加载项应用于沙盒程序。
 
-* 已更新编辑程序体验。
+* 编辑程序体验已更新。
 
 * “环境详细信息”页面中的“域名”表将通过分页的方式显示最多 250 个域名。
 

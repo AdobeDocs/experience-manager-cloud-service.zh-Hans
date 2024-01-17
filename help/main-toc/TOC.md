@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a74f027c7fe16c3bd23a8627bc9c82e8840cb77
+source-git-commit: e25f3e74fa7fa18b92ffe0c40a19f20442d4c7a0
 workflow-type: tm+mt
 source-wordcount: '4544'
 ht-degree: 99%
@@ -164,8 +164,7 @@ ht-degree: 99%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新增功能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 中的重要更改](/help/release-notes/aem-cloud-changes.md)
-   + [已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md)
-   + [已弃用 API](/help/release-notes/deprecated-apis.md)
+   + [已弃用和已删除的功能和API](/help/release-notes/deprecated-removed-features.md)
    + [预发行渠道](/help/release-notes/prerelease.md)
 + 安全性 {#security}
    + [AEM as a Cloud Service 的安全性概述](/help/security/cloud-service-security-overview.md)
@@ -1114,4 +1113,4 @@ ht-degree: 99%
       + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
       + [使用 Universal Editor 进行本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor 调用](/help/implementing/universal-editor/calls.md)
-      + [自定义UI](/help/implementing/universal-editor/customizing.md)
+      + [自定义 UI ](/help/implementing/universal-editor/customizing.md)
