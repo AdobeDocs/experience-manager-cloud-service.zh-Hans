@@ -4,7 +4,7 @@ description: 角色和职责
 source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 >title="角色和职责"
 >abstract="Adobe 围绕 Experience Manager as a Cloud Service 的配置、开发、暂存和生产提供了一系列服务。为了尽可能高效地进行解决方案的开发和部署，客户和定制人员必须理解并履行其职责，如此处所述。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="选择合适的人员、合适的角色"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="调整 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="选准 KPI"
 
 <br></br>
 Adobe 围绕 Experience Manager as a Cloud Service 的配置、开发、暂存和生产提供了一系列服务。为了尽可能高效地进行解决方案的开发和部署，客户和定制人员必须理解并履行其职责，如以下所述。
