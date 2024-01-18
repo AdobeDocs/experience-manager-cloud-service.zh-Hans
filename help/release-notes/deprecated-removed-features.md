@@ -2,10 +2,10 @@
 title: 已弃用和已删除的功能
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的功能的发行说明。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 9316018864c3bb0bbca3f03a6fe2f6cad809159f
+source-git-commit: 5ae425a727aa3eedbae4bf26821d2894969f8734
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 98%
+source-wordcount: '2100'
+ht-degree: 79%
 
 ---
 
@@ -64,7 +64,146 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ## OSGI 配置 {#osgi-configuration}
 
-请参阅[本文](/help/implementing/deploying/osgi-configuration-api.md)，了解有关 OSGI 属性配置的任何限制，其中一些限制可能会随着时间的推移而引入。
+以下两个列表反映了AEMas a Cloud ServiceOSGi配置表面，描述了客户可以配置的内容。
+
+1. 不得由客户代码配置的OSGi配置列表
+1. OSGi配置的列表，虽然可以配置其属性，但必须遵循指示的验证规则。 这些规则包括是否需要声明属性、属性类型以及在某些情况下允许的值范围。
+
+如果未列出OSGI配置，则可能由客户代码对其进行配置。
+
+这些规则将在Cloud Manager构建过程中进行验证。 随着时间的推移，可能会添加其他规则，预计的执行日期会记在表中。 客户应在目标执行日期之前遵守这些规则。 在删除日期之后不遵守规则将在Cloud Manager构建过程中生成错误。 Maven项目应包括 [AEMas a Cloud ServiceSDK构建分析器Maven插件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) 标记本地SDK开发期间的OSGI配置错误。
+
+有关OSGI配置的其他信息，请访问 [此位置](/help/implementing/deploying/configuring-osgi.md).
+
+无法修改的+++OSGi配置。
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+* **`org.apache.felix.http (Factory)`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** （公告日期：2021年8月25日，执行日期：2021年11月26日）
++++
+
++++OSGi配置应遵循生成验证规则。
+* **`org.apache.felix.eventadmin.impl.EventAdmin`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+* `org.apache.felix.eventadmin.ThreadPoolSize`
+   * 类型：整数
+   * 所需范围：2-100
+* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
+   * 类型：双精度
+* `org.apache.felix.eventadmin.Timeout`
+   * 类型：整数
+* `org.apache.felix.eventadmin.RequireTopic`
+   * 类型：布尔值
+* `org.apache.felix.eventadmin.IgnoreTimeout`
+   * 必填
+   * 类型：字符串数组
+   * 所需范围：必须至少包含所有 `org.apache.felix*`， `org.apache.sling*`， `come.day*`， `com.adobe*`
+* `org.apache.felix.eventadmin.IgnoreTopic`
+   * 类型：字符串数组
+* **`org.apache.felix.http`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+   * `org.apache.felix.http.timeout`
+      * 类型：整数
+   * `org.apache.felix.http.session.timeout`
+      * 类型：整数
+   * `org.apache.felix.http.jetty.threadpool.max`
+      * 类型：整数
+   * `org.apache.felix.http.jetty.headerBufferSize`
+      * 类型：整数
+   * `org.apache.felix.http.jetty.requestBufferSize`
+      * 类型：整数
+   * `org.apache.felix.http.jetty.responseBufferSize`
+      * 类型：整数
+   * `org.apache.felix.http.jetty.maxFormSize`
+      * 类型：整数
+   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
+      * 类型：布尔值
+   * `org.apache.felix.https.jetty.session.cookie.secure`
+      * 类型：布尔值
+   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
+      * 类型：字符串
+   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
+      * 类型：布尔值
+   * `org.eclipse.jetty.servlet.SessionCookie`
+      * 类型：字符串
+   * `org.eclipse.jetty.servlet.SessionDomain`
+      * 类型：字符串
+   * `org.eclipse.jetty.servlet.SessionPath`
+      * 类型：字符串
+   * `org.eclipse.jetty.servlet.MaxAge`
+      * 类型：整数
+   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
+      * 类型：整数
+   * `org.apache.felix.jetty.gziphandler.enable`
+      * 类型：布尔值
+   * `org.apache.felix.jetty.gzip.minGzipSize`
+      * 类型：整数
+   * `org.apache.felix.jetty.gzip.compressionLevel`
+      * 类型：整数
+   * `org.apache.felix.jetty.gzip.inflateBufferSize`
+      * 类型：整数
+   * `org.apache.felix.jetty.gzip.syncFlush`
+      * 类型：布尔值
+   * `org.apache.felix.jetty.gzip.excludedUserAgents`
+      * 类型：字符串
+   * `org.apache.felix.jetty.gzip.includedMethods`
+      * 类型：字符串数组
+   * `org.apache.felix.jetty.gzip.excludedMethods`
+      * 类型：字符串数组
+   * `org.apache.felix.jetty.gzip.includedPaths`
+      * 类型：字符串数组
+   * `org.apache.felix.jetty.gzip.excludedPaths`
+      * 类型：字符串数组
+   * `org.apache.felix.jetty.gzip.includedMimeTypes`
+      * 类型：字符串数组
+   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
+      * 类型：字符串数组
+   * `org.apache.felix.http.session.invalidate`
+      * 类型：布尔值
+   * `org.apache.felix.http.session.container.attribute`
+      * 类型：字符串数组
+   * `org.apache.felix.http.session.uniqueid`
+      * 类型：布尔值
+* **`org.apache.sling.scripting.cache`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+   * `org.apache.sling.scripting.cache.size`
+      * 类型：整数
+      * 所需范围： >= 2048
+   * `org.apache.sling.scripting.cache.additional_extensions`
+      * 必填
+      * 类型：字符串数组
+      * 所需范围：必须包括js
+* **`com.day.cq.mailer.DefaultMailService`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+   * `smtp.host`
+      * 类型：字符串
+   * `smtp.port`
+      * 类型：整数
+      * 所需范围：465、587或25
+   * `smtp.user`
+      * 类型：字符串
+   * `smtp.password`
+      * 类型：字符串
+   * `from.address`
+      * 类型：字符串
+   * `smtp.ssl`
+      * 类型：字符串
+   * `smtp.starttls`
+      * 类型：布尔值
+   * `smtp.requiretls`
+      * 类型：布尔值
+   * `debug.email`
+      * 类型：布尔值
+   * `oauth.flow`
+      * 类型：布尔值
+* **`org.apache.sling.commons.log.LogManager.factory.config`** （公告日期：2021年11月16日，执行日期：2021年2月16日）
+   * `org.apache.sling.commons.log.level`
+      * 类型：明细列表
+      * 所需范围： INFO、DEBUG或TRACE
+   * `org.apache.sling.commons.log.names`
+      * 类型：字符串
+   * `org.apache.sling.commons.log.file`
+      * 类型：字符串
+   * `org.apache.sling.commons.log.additiv`
+      * 类型：布尔值
++++
 
 ## AEM API {#aem-apis}
 

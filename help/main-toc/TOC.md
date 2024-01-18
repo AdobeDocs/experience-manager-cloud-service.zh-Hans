@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a00eb97859f679ade3a4a6d89a427735451ebd70
+source-git-commit: 104dfd255185816983674026a84337624a851d9a
 workflow-type: tm+mt
-source-wordcount: '4554'
+source-wordcount: '4551'
 ht-degree: 99%
 
 ---
@@ -1060,7 +1060,6 @@ ht-degree: 99%
       + [部署到 AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
       + [为 AEM as a Cloud Service 配置 OSGi](/help/implementing/deploying/configuring-osgi.md)
-      + [OSGi 配置 API](/help/implementing/deploying/osgi-configuration-api.md)
       + [资源映射](/help/implementing/deploying/resource-mapping.md)
    + 创作层 {#author-tier}
       + [访问创作层](/help/implementing/author-tier/accessing-the-author-tier.md)
