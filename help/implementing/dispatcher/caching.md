@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 中的缓存
 description: 了解AEMas a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8351e5e60c7ec823a399cbbdc0f08d2704f12ccf
+source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2894'
 ht-degree: 1%
 
 ---
@@ -223,6 +223,10 @@ AEM层根据是否已设置缓存标头和请求类型的值来设置缓存标�
         Header set Age 0
      </LocationMatch>
      ```
+
+### 分析CDN缓存命中率 {#analyze-chr}
+
+请参阅 [缓存命中率分析教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html) 有关使用仪表板下载CDN日志和分析网站缓存命中率的信息。
 
 ### HEAD请求行为 {#request-behavior}
 
