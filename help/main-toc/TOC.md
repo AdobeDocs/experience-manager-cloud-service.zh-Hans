@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 104dfd255185816983674026a84337624a851d9a
+source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 99%
+source-wordcount: '4600'
+ht-degree: 98%
 
 ---
 
@@ -609,6 +609,12 @@ ht-degree: 99%
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
+            + [将自适应表单提交到Azure Blob存储](/help/forms/configure-submit-action-azure-blob-storage.md)
+            + [将自适应表单提交到Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
+            + [为自适应表单配置SharePoint存储](/help/forms/configure-submit-action-sharepoint.md)
+            + [将AEM自适应表单与AEM Workflow集成](/help/forms/configure-submit-action-workflow.md)
+            + [为自适应Forms配置提交到REST端点提交操作](/help/forms/configure-submit-action-restpoint.md)
+            + [为自适应表单配置“发送电子邮件提交”操作](/help/forms/configure-submit-action-send-email.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)

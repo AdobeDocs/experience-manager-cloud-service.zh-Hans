@@ -5,10 +5,10 @@ Keywords: Integration of Salesforce using OAuth 2.0 client credential flow, sale
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 2c2029ab-6fb4-41a6-846c-175c3a79d921
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 75%
+source-wordcount: '482'
+ht-degree: 64%
 
 ---
 
@@ -24,6 +24,8 @@ ht-degree: 75%
 ![在AEM Forms和Salesforce应用程序之间设置通信时的工作流](/help/forms/assets/salesforce-workflow.png)
 
 AEM Forms交换在Salesforce连接的应用程序中定义的客户端凭据（使用者密钥和使用者密钥）以获取访问令牌。
+
+AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md) 文章。
 
 与授权代码流身份验证相比，使用 OAuth 2.0 客户端凭据进行身份验证可获得多个好处：
 
@@ -69,6 +71,9 @@ AEM Forms交换在Salesforce连接的应用程序中定义的客户端凭据（�
 1. 单击&#x200B;**[!UICONTROL 测试连接]**。
 1. 如果连接成功，请单击&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
 
-现在，您可以 [创建表单数据模型](/help/forms/create-form-data-models.md) 将自适应表单发送到Salesforce应用程序。
+
+配置Salesforce应用程序后，您可以在创建表单数据模型时使用该配置。 有关更多信息，请参阅 [创建表单数据模型](create-form-data-models.md). [配置表单数据模型提交操作](/help/forms/using-form-data-model.md) ，以将数据发送到Salesforce应用程序。
+
+有关在业务工作流中创建和使用表单数据模型的更多信息，请参阅 [数据集成](data-integration.md).
 
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 79d3ec7f5ede84fd989b7d5440739ec9560a547f
+source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '264'
+ht-degree: 91%
 
 ---
 # 代码片段 {#snippets}
@@ -43,5 +43,16 @@ ht-degree: 100%
 * [将自适应表单数据发送到 AEM 工作流](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [使用 Forms Portal 在 AEM 网站上列出 AEM 自适应表单](/help/forms/configure-forms-portal.md)
 
+## 自适应表单提交操作 {#af-submit-action}
 
-
+* [发送电子邮件](/help/forms/configure-submit-action-send-email.md)
+* [提交到 SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [使用表单数据模型提交](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [提交到 REST 端点](/help/forms/configure-submit-action-restpoint.md)
+* [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [调用 AEM 工作流](/help/forms/configure-submit-action-workflow.md)
+* [提交至 Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+* [提交到Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [将自适应表单连接到Salesforce应用程序](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [将自适应表单连接到Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)

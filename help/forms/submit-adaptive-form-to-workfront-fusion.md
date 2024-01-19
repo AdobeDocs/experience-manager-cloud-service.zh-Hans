@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1273'
 ht-degree: 3%
 
 ---
@@ -21,21 +21,23 @@ ht-degree: 3%
 
 例如，使用Workfront Fusion，您可以创建一个方案，以便使用自适应表单收集数据、处理数据并将数据发送到数据存储进行存档。 一旦设置了场景，Workfront Fusion就会在用户填写表单时自动执行任务，从而无缝更新数据存储。
 
+AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+
 ## 使用Adobe Workfront Fusion的优势{#advatages-of-workfront-fusion}
 
 将Adobe Workfront Fusion与AEM Forms结合使用的一些优势包括：
 
-- 将自适应Forms捕获的数据发送到Workfront Fusion场景
-- 自动执行不太容易出错的任务。
-- 自定义组织的特定要求，这些要求未直接包含在Workfront中。
-- 处理简单的逻辑和直接的决策，例如if/then语句。
+* 将自适应Forms捕获的数据发送到Workfront Fusion场景
+* 自动执行不太容易出错的任务。
+* 自定义组织的特定要求，这些要求未直接包含在Workfront中。
+* 处理简单的逻辑和直接的决策，例如if/then语句。
 
 ## 将AEM Forms与Adobe Workfront Fusion集成的先决条件 {#prerequisites}
 
 将Workfront Fusion连接到AEM Forms所需的先决条件包括：
 
-- 有效的 [Workfront Fusion许可证](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-- 有权访问的AEM用户 [开发控制台](https://my.cloudmanager.adobe.com/) 到 [检索服务凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* 有效的 [Workfront Fusion许可证](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* 有权访问的AEM用户 [开发控制台](https://my.cloudmanager.adobe.com/) 到 [检索服务凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## 将AEM Forms与Adobe Workfront Fusion集成
 
@@ -100,16 +102,16 @@ ht-degree: 3%
    > 保留 `https://` 在 **IMS端点** 文本框 `imsEndpoint` URL。
 
 1. 在中指定以下值 **[!UICONTROL 创建连接]** 对话框：
-   - 指定 **客户端ID** 具有值 **clientId** 来自开发人员控制台中的服务凭据。
-   - 指定 **客户端密码** 具有值 **客户端密钥** 来自开发人员控制台中的服务凭据。
-   - 指定 **技术帐户ID**  具有值 **id** 来自开发人员控制台中的服务凭据。
-   - 指定 **组织ID**  具有值 **org** 来自开发人员控制台中的服务凭据。
-   - **元范围**  具有值 **metascope** 来自开发人员控制台中的服务凭据。
-   - **私钥**  具有值 **私钥** 来自开发人员控制台中的服务凭据。
+   * 指定 **客户端ID** 具有值 **clientId** 来自开发人员控制台中的服务凭据。
+   * 指定 **客户端密码** 具有值 **客户端密钥** 来自开发人员控制台中的服务凭据。
+   * 指定 **技术帐户ID**  具有值 **id** 来自开发人员控制台中的服务凭据。
+   * 指定 **组织ID**  具有值 **org** 来自开发人员控制台中的服务凭据。
+   * **元范围**  具有值 **metascope** 来自开发人员控制台中的服务凭据。
+   * **私钥**  具有值 **私钥** 来自开发人员控制台中的服务凭据。
 
    >[!NOTE]
    >
-   >- 对象 **私钥**，删除 `\r\n` 从它的值开始。
+   >* 对象 **私钥**，删除 `\r\n` 从它的值开始。
    >  例如，如果私钥值为：
    >`\r\nIJAVO8GDYAOZ9jMA0GCSqGSIb3DQEBCwUAMDAxL\r\nMy1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`，则在删除 `\r\n` 与私钥相比，该密钥将类似于以下内容，并且两个值都显示在单独的行中：
    >
@@ -117,7 +119,7 @@ ht-degree: 3%
    >
    >   `My1lMTUxODMxLWNtc3RnLWludGVncmF0aW9uLTAw`
    > 
-   >- 您还可以选择从文件检索私钥或证书，方法是选择 **Extract** 按钮。
+   >* 您还可以选择从文件检索私钥或证书，方法是选择 **Extract** 按钮。
 
 1. 单击&#x200B;**“继续”**。
 
@@ -144,8 +146,8 @@ ht-degree: 3%
 ### 2.配置Workfront Fusion自适应表单的提交操作
 
 您可以为Workfont Fusion配置提交操作，用于：
-- [新的自适应Forms](#new-af-submit-action)
-- [现有自适应表单](#existing-af-submit-action)
+* [新的自适应Forms](#new-af-submit-action)
+* [现有自适应表单](#existing-af-submit-action)
 
 #### 配置适用于Workfront Fusion的新自适应表单的提交操作 {#new-af-submit-action}
 
@@ -187,7 +189,11 @@ ht-degree: 3%
 
 ## 最佳实践 {#best-practices}
 
-- 建议您仔细选择您的webhook名称，因为在AEM实例上无法获取场景名称。 如果将来更改webhook名称，该名称将不会反映在AEM Forms提交操作下拉列表中。
-- 一个方案可以有多个webhook链接，但一次只能有一个webhook链接处于活动状态。 建议删除未链接的webhook，以便它不会出现在AEM Forms提交操作下拉列表中。
+* 建议您仔细选择您的webhook名称，因为在AEM实例上无法获取场景名称。 如果将来更改webhook名称，该名称将不会反映在AEM Forms提交操作下拉列表中。
+* 一个方案可以有多个webhook链接，但一次只能有一个webhook链接处于活动状态。 建议删除未链接的webhook，以便它不会出现在AEM Forms提交操作下拉列表中。
 
 <!-- During testing or development of Workfront, add the Author URL to the instance URL. However, when deploying Workfront Fusion in a production environment, it is recommended to replicate the scenario URLs for the Publish instance. -->
+
+## 相关文章
+
+{{af-submit-action}}

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1000'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,9 @@ ht-degree: 2%
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics ODataCloud Service（OData服务）在所有运行模式下均可用。 有关为配置运行模式的详细信息 [!DNL Experience Manager] 实例，请参见 [运行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
+
+AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+
 
 ## 前提条件 {#prerequisites}
 
@@ -70,7 +73,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->仅在集成时使用此过程 [!DNL Experience Manager Forms] 具有内部部署 [!DNL Microsoft Dynamics] 服务器。
+> 仅在集成时使用此过程 [!DNL Experience Manager Forms] 具有内部部署 [!DNL Microsoft Dynamics] 服务器。
 
 1. 配置 [!DNL Microsoft Dynamics] IFD的内部部署实例，如中所述 [为配置IFD [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
 1. 使用Windows PowerShell运行以下命令以配置启用了IFD的声明设置 [!DNL Microsoft Dynamics]：
@@ -158,14 +161,16 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-配置MS Dynamics OData云服务表单数据模型(ce)云服务后，您可以在创建表单数据模型时使用该服务。 有关更多信息，请参阅 [创建表单数据模型](create-form-data-models.md).
+配置MS Dynamics OData云服务后，您可以在创建表单数据模型时使用该服务。 有关更多信息，请参阅 [创建表单数据模型](create-form-data-models.md).
 
-接下来，您可以基于表单数据模型模型创建自适应表单，并将其用于各种自适应表单用例，例如：
+接下来，您可以创建基于自适应表单的表单数据模型，并将其用于各种自适应表单用例，例如：
 
 * 通过查询自适应表单中的信息来预填充自适应表单 [!DNL Microsoft Dynamics] 实体和服务
 * 调用 [!DNL Microsoft Dynamics] 使用自适应表单规则的表单数据模型中定义的服务器操作
 * 将提交的表单数据写入 [!DNL Microsoft Dynamics] 实体
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
+
+您可以 [配置表单数据模型提交操作](/help/forms/using-form-data-model.md) 用于自适应表单以将数据发送到Microsoft Dynamics OData。
 
 有关在业务工作流中创建和使用表单数据模型的更多信息，请参阅 [数据集成](data-integration.md).

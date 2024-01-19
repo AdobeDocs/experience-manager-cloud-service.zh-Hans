@@ -1,26 +1,33 @@
 ---
 title: 如何将自适应表单与Microsoft® Power Automate集成？
 description: 将自适应表单与Microsoft® Power Automate集成。
-hide: true
-hidefromtoc: true
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+keywords: 将AEM表单连接到power automate、Power automate automation AEM Forms、将power automate集成到Adaptive Forms、将数据从Adaptive Forms发送到Power Automate
+source-git-commit: fa9254a3290a7628c4d058a6e8cc010789bd30f9
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 19%
+source-wordcount: '1171'
+ht-degree: 13%
 
 ---
 
+
 # 将自适应表单与Microsoft® Power Automate连接 {#connect-adaptive-form-with-power-automate}
 
-您可以配置自适应表单以在提交时运行 Microsoft® Power Automate Cloud Flow。配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automate Cloud Flow 进行处理。它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。以下几个示例说明了在将自适应表单与 Microsoft® Power Automate 集成后可执行的操作：
+您可以配置自适应表单以在提交时运行 Microsoft® Power Automate Cloud Flow。配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automation Cloud Flow 进行处理。 它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。
+
+自适应Forms编辑器提供 **调用Microsoft® Power Automate流** 将自适应表单数据、附件和记录文档的提交操作发送到Power Automate Cloud Flow。
+
+AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+
+
+## 优点
+
+以下几个示例说明了在将自适应表单与 Microsoft® Power Automate 集成后可执行的操作：
 
 * 在 Power Automate 业务流程中使用自适应表单数据
 * 使用 Power Automate 将捕获的数据发送到 500 多个数据源或任何公开可用的 API
 * 对捕获的数据执行复杂计算
 * 按预定义的计划将自适应表单数据保存到存储系统
-
-自适应表单编辑器提供&#x200B;**调用 Microsoft® Power Automate 流程**&#x200B;提交操作，以将自适应表单数据、附件和记录文档发送到 Power Automate Cloud Flow。要使用提交操作将捕获的数据发送到 Microsoft® Power Automate，请[将 Forms as a Cloud Service 实例与 Microsoft® Power Automate 关联](forms-microsoft-power-automate-integration.md#connect-forms-server-with-power-automate)
 
 ## 前提条件
 
@@ -30,7 +37,6 @@ ht-degree: 19%
 * Microsoft® [Power Automate流](https://docs.microsoft.com/en-us/power-automate/create-flow-solution) 使用 `When an HTTP request is received` 触发器接受自适应表单提交数据。
 * 具有的Experience Manager用户 [Forms Author](/help/forms/forms-groups-privileges-tasks.md) 和 [Forms管理员](/help/forms/forms-groups-privileges-tasks.md) 权限
 * 用于连接到Microsoft的帐户®Power Automate是配置为从自适应表单接收数据的Power Automate流的所有者
-
 
 ## 将Formsas a Cloud Service实例与Microsoft® Power Automate连接 {#connect-forms-server-with-power-automate}
 
@@ -80,15 +86,15 @@ ht-degree: 19%
 1. 在AEM Forms创作实例上，导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL 常规]** > **[!UICONTROL 配置浏览器]**.
 1. 在 **[!UICONTROL 配置浏览器]** 页面，选择 **[!UICONTROL 创建]**.
 1. 在 **[!UICONTROL 创建配置]** 对话框，请指定 **[!UICONTROL 标题]** 对于配置，启用 **[!UICONTROL 云配置]**，并选择 **[!UICONTROL 创建]**. 系统创建一个配置容器来存储 Cloud Services。确保文件夹名称不包含任何空格。
-1. 导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** ，然后打开您在上一步中创建的配置容器。
+1. 导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]** ，然后打开您在上一步中创建的配置容器。
 
 
    >[!NOTE]
    >
    在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
 
-1. 在配置页面上，选择 **[!UICONTROL 创建]** 创建 [!DNL Microsoft®® Power Automate Flow Service] AEM Forms配置。
-1. 在 **[!UICONTROL 为Microsoft®®Power Automate配置Dataverse服务]** 页面，指定 **[!UICONTROL 客户端ID]** （也称为应用程序ID）， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 动态环境URL]**. 使用的客户端ID、客户端密钥、OAuth URL和动态环境URL [Microsoft® Azure Active Directory应用程序](#ms-power-automate-application) 您在上一节中创建了。 在Microsoft®Azure Active Directory应用程序UI中使用端点选项来查找OAuth URL
+1. 在配置页面上，选择 **[!UICONTROL 创建]** 创建 [!DNL Microsoft®®® Power Automate Flow Service] AEM Forms配置。
+1. 在 **[!UICONTROL 为Microsoft®® Power Automate配置Dataverse服务]** 页面，指定 **[!UICONTROL 客户端ID]** （也称为应用程序ID）， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 动态环境URL]**. 使用的客户端ID、客户端密钥、OAuth URL和动态环境URL [Microsoft® Azure Active Directory应用程序](#ms-power-automate-application) 您在上一节中创建了。 在Microsoft®Azure Active Directory应用程序UI中使用端点选项来查找OAuth URL
 
    ![使用Microsoft Power Automate应用程序UI中的“端点”选项来查找OAuth URL](assets/endpoints.png)
 
@@ -96,20 +102,20 @@ ht-degree: 19%
 
 ### 创建Microsoft® Power Automate Flow Service云配置 {#create-microsoft-power-automate-flow-cloud-configuration}
 
-1. 导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate流服务]** ，然后打开您在上一部分中创建的配置容器。
+1. 导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate流服务]** ，然后打开您在上一部分中创建的配置容器。
 
 
    >[!NOTE]
    >
    在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
 
-1. 在配置页面上，选择 **[!UICONTROL 创建]** 创建 [!DNL Microsoft®® Power Automate Flow Service] AEM Forms配置。
-1. 在 **[!UICONTROL 为Microsoft®® Power Automate配置Dataverse]** 页面，指定 **[!UICONTROL 客户端ID]** （也称为应用程序ID）， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 动态环境URL]**. 使用客户端ID、客户端密钥、OAuth URL和Dynamics环境ID。 在Microsoft®Azure Active Directory应用程序UI中使用端点选项来查找OAuth URL。 打开 [我的流](https://us.flow.microsoft.com) 链接并选择“我的流”使用URL中列出的ID作为动态环境ID。
+1. 在配置页面上，选择 **[!UICONTROL 创建]** 创建 [!DNL Microsoft® Power Automate Flow Service] AEM Forms配置。
+1. 在 **[!UICONTROL 为Microsoft® Power Automate配置Dataverse]** 页面，指定 **[!UICONTROL 客户端ID]** （也称为应用程序ID）， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 动态环境URL]**. 使用客户端ID、客户端密钥、OAuth URL和Dynamics环境ID。 在Microsoft®Azure Active Directory应用程序UI中使用端点选项来查找OAuth URL。 打开 [我的流](https://us.flow.microsoft.com) 链接并选择“我的流”使用URL中列出的ID作为动态环境ID。
 1. 选择 **[!UICONTROL 连接]**. 如有要求，请登录到您的Microsoft® Azure帐户。 选择&#x200B;**[!UICONTROL 保存]**。
 
 ### 发布Microsoft® Power Automate Dataverse和Microsoft® Power Automate Flow Service云配置 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
-1. 导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]** 并打开您在上一个页面中创建的配置容器 [创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration) 部分。
+1. 导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** 并打开您在上一个页面中创建的配置容器 [创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration) 部分。
 1. 选择 `dataverse` 配置和选择 **[!UICONTROL Publish]**.
 1. 在发布页面上，选择 **[!UICONTROL 所有配置]** 并选择 **[!UICONTROL Publish]**. 发布Power Automate Dataverse和Power Automate流服务云配置。
 
@@ -190,13 +196,19 @@ ht-degree: 19%
         }
 ```
 
-## 另请参阅
+<!--
+## See also
 
-* [创建自适应表单](creating-adaptive-form-core-components.md)
-* [配置提交操作](configure-submit-actions-core-components.md)
-* [适用于Microsoft的Adobe Experience Manager Connector®Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-* [将自适应表单连接到 Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+* [Create an Adaptive Form](creating-adaptive-form-core-components.md)
+* [Configure a Submit Action](configure-submit-actions-core-components.md)
+* [Adobe Experience Manager Connector for Microsoft&reg; Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
+* [Connect Adaptive Form to Microsoft® Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
+-->
 
+
+## 相关文章
+
+{{af-submit-action}}
 
 <!--
 

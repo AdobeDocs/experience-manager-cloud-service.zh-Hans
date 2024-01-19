@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 6e01a5bfc4e8bf7cc9537c9c03af08cd253a1ade
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 2%
+source-wordcount: '1288'
+ht-degree: 7%
 
 ---
 
@@ -120,11 +120,25 @@ Edit Properties dialog for an interactive communication-->
 
 当用户提交基于表单数据模型的表单时，您可以配置表单以将数据模型对象的提交数据写入其数据源。 要实现此用例， [!DNL Experience Manager Forms] 提供 [表单数据模型提交操作](configuring-submit-actions.md)，现成仅适用于基于表单数据模型的自适应Forms。 它将为数据模型对象提交的数据写入其数据源。
 
-要配置表单数据模型提交操作，请打开自适应表单容器属性并选择 **[!UICONTROL 使用表单数据模型提交]** 从“提交”折叠面板下的“提交操作”下拉列表中。 然后，浏览并选择数据模型对象 **[!UICONTROL 要提交的数据模型对象的名称]** 下拉菜单。 保存属性。
+要配置表单数据模型提交操作，请执行以下操作：
 
-在表单提交时，将配置数据模型对象的数据写入各自的数据源。
+1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
+1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
+1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。
+1. 从 **[!UICONTROL 提交操作]** 下拉列表，选择 **[!UICONTROL 使用表单数据模型提交]**.
+
+   ![操作配置](/help/forms/assets/configure-submit-action-invoke-fdm.png)
+
+1. 指定 **[!UICONTROL 要提交的数据模型]**.
+1. 单击 **[!UICONTROL 完成]**
+
+在表单提交时，将配置数据模型对象的数据写入各自的数据源。 此外，您可以使用表单数据模型和记录文档 (DoR) 将表单附件提交到数据源。有关表单数据模型的信息，请参阅[[!DNL AEM Forms] 数据集成](data-integration.md)。
 
 <!--![data-submission](assets/data-submission.png)-->
+
+>[!NOTE]
+>
+> AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 您还可以使用二进制数据模型对象属性将表单附件提交到数据源。 执行以下操作以将附件提交到JDBC数据源：
 
