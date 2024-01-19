@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: cb817f2ce94a1618fd8dd73834f663e8aaed2b7f
+source-git-commit: 8d9cd4c580058299eea8a391b0b341751d3f2104
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4609'
 ht-degree: 98%
 
 ---
@@ -1012,6 +1012,7 @@ ht-degree: 98%
          + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-Hans)
          + [启动集成](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 参考文档](/help/implementing/developing/hybrid/reference-materials.md)
+         + [不允许通过Sling模型导出器序列化资源解析器](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + 开发人员工具 {#developer-tools}
       + [开发人员模式](/help/implementing/developing/tools/developer-mode.md)
       + [适用于 Eclipse 的 AEM 开发人员工具](/help/implementing/developing/tools/eclipse.md)
