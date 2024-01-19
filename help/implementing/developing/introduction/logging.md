@@ -2,9 +2,9 @@
 title: AEMas a Cloud Service日志记录
 description: 了解如何使用AEMas a Cloud Service日志记录功能配置中央日志记录服务的全局参数、各个服务的特定设置以及如何请求数据日志记录。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 3d53f81bfe9b180f19590a70d72b6bf62a7ab732
+source-git-commit: 35959a1cd47e9ea1b93aeddc3eb72cf03c44eda8
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2776'
 ht-degree: 8%
 
 ---
@@ -537,7 +537,7 @@ CDN日志不同于其他日志，它遵循JSON格式。
 | *timestamp* | TLS 终止后请求开始的时间 |
 | *ttfb* | *首字节时间*&#x200B;的缩写。从请求开始到响应正文开始流式传输之前的时间间隔。 |
 | *cli_ip* | 客户端 IP 地址。 |
-| *cli_country* | 客户国家/地区的两字母 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) alpha-2 国家/地区代码。 |
+| *cli_country* | 客户国家/地区的两字母 [ISO 3166-1](https://en.wikipedia.org/wiki/cn/ISO_3166-1) alpha-2 国家/地区代码。 |
 | *rid* | 用于唯一标识请求的请求头的值。 |
 | *req_ua* | 负责发出给定 HTTP 请求的用户代理。 |
 | *host* | 请求所针对的颁发机构。 |
@@ -611,7 +611,7 @@ Apache层日志（包括Dispatcher）位于保存Dispatcher的Docker容器中。
 
 与发送到Splunk的日志关联的网络带宽被视为客户网络I/O使用的一部分。
 
-Splunk转发尚不支持CDN日志。
+CDN日志将转发到Splunk以请求新的支持票证；已启用Splunk转发的客户将来可以添加CDN日志。
 
 ### 启用Splunk转发 {#enabling-splunk-forwarding}
 
