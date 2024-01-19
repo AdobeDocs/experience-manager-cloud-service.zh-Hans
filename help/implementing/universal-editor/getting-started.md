@@ -2,10 +2,10 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 78%
+source-wordcount: '903'
+ht-degree: 73%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 78%
 
 ## 请求访问 Universal Editor {#request-access}
 
-您首先需要请求访问 Universal Editor。请参阅 [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor)登录并验证您是否有权访问 Universal Editor。
+您首先需要请求访问 Universal Editor。打开 [&#39;https://experience.adobe.com/#/aem/editor&#39;](https://experience.adobe.com/#/aem/editor)，登录并验证您是否有权访问通用编辑器。
 
 如果您无权访问，则可通过同一页面上链接的表单请求访问。
 
@@ -59,7 +59,7 @@ import "@adobe/universal-editor-cors";
 
 ### 非 React 应用程序的替代项 {#alternative}
 
-如果您没有实施 React 应用程序和/或需要服务器端呈现，替代方法是将以下内容包含到文档正文中。
+如果您未实施React应用程序和/或需要服务器端渲染，另一种方法是在文档正文中包含以下内容。
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
@@ -124,10 +124,10 @@ Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikiped
 
 标识符 `urn:adobe:aue:system` 表示与 Adobe Universal Editor 相连。
 
-`itemid` 将使用 `urn` 前缀来缩短标识符。
+`data-aue-resource` 将使用 `urn` 前缀来缩短标识符。
 
 ```html
-itemid="urn:<referenceName>:<resource>"
+data-aue-resource="urn:<referenceName>:<resource>"
 ```
 
 * `<referenceName>` – 这是 `<meta>` 标记中提到的命名引用。例如 `aemconnection`

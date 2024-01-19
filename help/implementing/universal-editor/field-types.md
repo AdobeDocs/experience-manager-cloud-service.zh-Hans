@@ -1,7 +1,8 @@
 ---
 title: 字段类型
 description: 通过有关如何检测您自己的应用程序的示例，了解通用编辑器可以在组件边栏中编辑的不同类型的字段。
-source-git-commit: 44073e27ce7eb35bc0d71cb963c1bd0f14183f00
+exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
+source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 7%

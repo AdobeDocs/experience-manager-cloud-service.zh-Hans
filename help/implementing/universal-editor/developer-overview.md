@@ -1,9 +1,10 @@
 ---
 title: 面向AEM开发人员的通用编辑器概述
 description: 如果您是一名AEM开发人员，并且对Universal Editor的工作方式以及如何在您的项目中使用它感兴趣，本文档将为您提供端到端介绍，引导您对WKND项目进行检测以使用Universal Editor。
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
+source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3112'
 ht-degree: 1%
 
 ---
@@ -36,6 +37,7 @@ ht-degree: 1%
    * [必须安装WKND演示站点。](https://github.com/adobe/aem-guides-wknd)
 * [访问通用编辑器](/help/implementing/universal-editor/getting-started.md#onboarding)
 * [本地通用编辑器服务](/help/implementing/universal-editor/local-dev.md) 用于开发目的
+   * 确保将您的浏览器定向到 [接受本地服务自签名证书。](/help/implementing/universal-editor/local-dev.md#editing)
 
 除了Web开发一般熟悉之外，本文档假定您基本熟悉AEM开发。 如果您没有使用AEM开发的经验，请考虑查阅 [wknd教程，然后再继续。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
@@ -164,7 +166,7 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 
 现在，WKND页面在通用编辑器中成功加载，JavaScript库也加载，以将编辑器连接到应用程序。
 
-但是，您可能很快注意到，无法在通用编辑器中与页面交互。 通用编辑器无法实际编辑您的页面。 为了使通用编辑器能够编辑您的内容，您需要定义一个连接，以便它知道在哪里写入内容。 对于本地开发，您需要写回本地AEM开发实例，网址为 `https://localhost:8443`.
+但是，您可能注意到无法与通用编辑器中的页面进行交互。 通用编辑器无法实际编辑您的页面。 为了使通用编辑器能够编辑您的内容，您需要定义一个连接，以便它知道在哪里写入内容。 对于本地开发，您需要写回本地AEM开发实例，网址为 `https://localhost:8443`.
 
 1. 打开 CRXDE Lite。
 
@@ -227,10 +229,9 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 1. 在第一个 `div` 大约在第26行，添加该组件的检测详情。
 
    ```text
-   itemscope
-   itemid="urn:aem:${resource.path}"
-   itemtype="component"
-   data-editor-itemlabel="Teaser"
+   data-aue-resource="urn:aem:${resource.path}"
+   data-aue-type="component"
+   data-aue-label="Teaser"
    ```
 
 1. 单击 **全部保存** 并重新加载通用编辑器。
@@ -262,9 +263,9 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 1. 在的末尾插入以下属性 `h2` 标记（在第17行附近）。
 
    ```text
-   itemprop="jcr:title"
-   itemtype="text"
-   data-editor-itemlabel="Title"
+   data-aue-prop="jcr:title"
+   data-aue-type="text"
+   data-aue-label="Title"
    ```
 
 1. 单击 **全部保存** 并重新加载通用编辑器。
@@ -281,15 +282,14 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 
 您已通过检测Teaser组件来将其识别到通用编辑器。
 
-* `itemscope` 将其标识为通用编辑器的项目。
-* `itemid` 在AEM中标识正在编辑的资源。
-* `itemtype` 定义应将项目视为页面组件（而不是容器）。
-* `data-editor-itemlabel` 在选定Teaser的UI中显示用户友好标签。
+* `data-aue-resource` 在AEM中标识正在编辑的资源。
+* `data-aue-type` 定义应将项目视为页面组件（而不是容器）。
+* `data-aue-label` 在选定Teaser的UI中显示用户友好标签。
 
 您还检测了Teaser组件中的标题组件。
 
-* `itemprop` 是写入的JCR属性。
-* `itemtype` 是应如何编辑属性的方法。 在这种情况下，使用文本编辑器，因为它是标题（而不是富文本编辑器）。
+* `data-aue-prop` 是写入的JCR属性。
+* `data-aue-type` 是应如何编辑属性的方法。 在这种情况下，使用文本编辑器，因为它是标题（而不是富文本编辑器）。
 
 ## 定义身份验证标头 {#auth-header}
 
@@ -299,13 +299,13 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 
 但是，如果重新加载浏览器，则会重新加载上一个标题。 这是因为，尽管通用编辑器知道如何连接到您的AEM实例，但它尚无法通过您的AEM实例的身份验证将更改写回JCR。
 
-如果您显示浏览器开发人员工具的网络选项卡并搜索 `update`，您会看到在尝试编辑标题时遇到500错误。
+如果您显示浏览器开发人员工具的网络选项卡并搜索 `update`，您会看到在尝试编辑标题时遇到401错误。
 
 ![尝试编辑标题时出错](assets/dev-edit-error.png)
 
 使用通用编辑器编辑生产AEM内容时，通用编辑器使用您用来登录编辑器的IMS令牌来验证AEM，以便于写回到JCR。
 
-在本地开发时，无法使用AEM身份提供程序，因此您需要通过显式设置身份验证标头来手动提供身份验证方法。
+在本地开发时，无法使用AEM身份提供程序，因为IMS令牌仅传递到Adobe拥有的域。 您需要通过明确设置身份验证标头来手动提供身份验证方法。
 
 1. 在通用编辑器界面中，单击 **身份验证标头** 图标。
 
@@ -323,22 +323,24 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 
 ```json
 {
-  "op": "patch",
-  "connections": {
-    "aem": "aem:https://localhost:8443"
-  },
-  "path": {
-    "itemid": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
-    "itemtype": "text",
-    "itemprop": "jcr:title"
+  "connections": [
+    {
+      "name": "aem",
+      "protocol": "aem",
+      "uri": "https://localhost:8443"
+    }
+  ],
+  "target": {
+    "resource": "urn:aem:/content/wknd/language-masters/en/jcr:content/root/container/carousel/item_1571954853062",
+    "type": "text",
+    "prop": "jcr:title"
   },
   "value": "Tiny Toon Adventures"
 }
 ```
 
-* `op` 是操作，在此例中是已编辑字段现有内容的修补程序。
 * `connections` 是与本地AEM实例的连接
-* `path` 是在JCR中更新的确切节点和属性
+* `target` 是在JCR中更新的确切节点和属性
 * `value` 就是你所做的更新。
 
 您可以看到更改在JCR中持续存在。
@@ -357,7 +359,7 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 
 编辑当前仅限于Teaser标题的内联编辑。 但是，在某些情况下，就地编辑不够。 在键盘输入处，可以编辑Teaser的标题等文本。 不过，更复杂的项目需要能够显示并允许编辑结构化数据，这与它在浏览器中的呈现方式不同。 这是属性边栏的用途。
 
-现在更新您的应用程序以使用属性边栏进行编辑。 为此，您需要返回到应用程序的页面组件的头文件，其中您已经建立了与本地AEM开发实例和本地Universal Editor服务的连接。 您必须在此定义可在应用程序中编辑的组件及其数据模型。
+要更新应用程序以使用属性边栏进行编辑，请返回到应用程序的页面组件的标题文件。 在这里，您已经建立了与本地AEM开发实例和本地Universal Editor服务的连接。 您必须在此定义可在应用程序中编辑的组件及其数据模型。
 
 1. 打开 CRXDE Lite。
 
@@ -369,10 +371,10 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 
    ![编辑customheaderlibs.html文件](assets/dev-instrument-properties-rail.png)
 
-1. 添加必要的脚本以将字段映射到文件结尾。
+1. 在文件的末尾添加定义组件所需的脚本。
 
    ```html
-   <script type="application/vnd.adobe.aem.editor.component-definition+json">
+   <script type="application/vnd.adobe.aue.component+json">
    {
      "groups": [
        {
@@ -388,29 +390,69 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
                    "resourceType": "wknd/components/teaser"
                  }
                }
-             },
-             "model": {
-               "id": "teaser",
-               "fields": [
-                 {
-                   "component": "text-input",
-                   "name": "jcr:title",
-                   "label": "Title",
-                   "valueType": "string"
-                 },
-                 {
-                   "component": "text-area",
-                   "name": "jcr:description",
-                   "label": "Description",
-                   "valueType": "string"
+             }
+           },
+           {
+             "title": "Title",
+             "id": "title",
+             "plugins": {
+               "aem": {
+                 "page": {
+                   "resourceType": "wknd/components/title"
                  }
-               ]
+               }
              }
            }
          ]
        }
      ]
    }
+   </script>
+   ```
+
+1. 在其下方，在文件末尾添加定义模型所需的脚本。
+
+   ```html
+   <script type="application/vnd.adobe.aue.model+json">
+   [
+     {
+       "id": "teaser",
+       "fields": [
+         {
+           "component": "text-input",
+           "name": "jcr:title",
+           "label": "Title",
+           "valueType": "string"
+         },
+         {
+           "component": "text-area",
+           "name": "jcr:description",
+           "label": "Description",
+           "valueType": "string"
+         }
+       ]
+     },
+     {
+       "id": "title",
+       "fields": [
+         {
+           "component": "select",
+           "name": "type",
+           "value": "h1",
+           "label": "Type",
+           "valueType": "string",
+           "options": [
+             { "name": "h1", "value": "h1" },
+             { "name": "h2", "value": "h2" },
+             { "name": "h3", "value": "h3" },
+             { "name": "h4", "value": "h4" },
+             { "name": "h5", "value": "h5" },
+             { "name": "h6", "value": "h6" }
+           ]
+         }
+       ]
+     }
+   ]
    </script>
    ```
 
@@ -457,15 +499,17 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 
    ![编辑teaser.html文件](assets/dev-edit-teaser.png)
 
-1. 在第一个 `div` 大约在第32行， `itemscope` 您之前添加的属性，添加Teaser组件将使用的模型的检测详细信息。
+1. 在第一个 `div` 大约在第32行，在之前添加的属性之后，添加Teaser组件将使用的模型的检测详细信息。
 
    ```text
-   data-editor-itemmodel="teaser"
+   data-aue-model="teaser"
    ```
 
 1. 单击 **全部保存** 并重新加载通用编辑器。
 
-1. 单击Teaser的标题可再次编辑它。
+现在，您可以测试为组件检测的属性边栏。
+
+1. 在通用编辑器中，单击Teaser的标题可再次编辑它。
 
 1. 单击属性边栏以显示属性选项卡，并查看刚才检测的字段。
 
@@ -489,7 +533,7 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 
    ![编辑customheaderlibs.html文件](assets/dev-instrument-styles.png)
 
-1. 将附加项添加到 `fields` 样式字段的数组。 在插入新字段之前，请记得在最后一个字段之后添加逗号。
+1. 在模型定义脚本中，添加额外的项到 `fields` 样式字段的数组。 在插入新字段之前，请记得在最后一个字段之后添加逗号。
 
    ```json
    {

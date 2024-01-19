@@ -1,15 +1,16 @@
 ---
-title: 自定义UI
+title: 自定义 UI
 description: 了解不同的扩展点，通过这些扩展点可自定义通用编辑器的UI以支持内容作者的需求。
-source-git-commit: 65893c0c0dee37bed8ecfbb06a12e7c093c4397c
+exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
+source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 
-# 自定义UI {#customizing-ui}
+# 自定义 UI  {#customizing-ui}
 
 了解不同的扩展点，通过这些扩展点可自定义通用编辑器的UI以支持内容作者的需求。
 

@@ -1,8 +1,8 @@
 ---
-title: 属性和物料类型
+title: 属性和项类型
 description: 了解通用编辑器所需的数据属性和项类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 7550491de94f1e2cbb28b07f8abbdaded5aa04ea
+source-git-commit: febaec244b4400b8d7fc5a5d8a4f75b4f4505d6f
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 85%
@@ -28,13 +28,13 @@ ht-degree: 85%
 
 | 数据属性 | 描述 |
 |---|---|
-| `itemid` | 资源的 URN，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
-| `itemprop` | 资源的属性，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
-| `itemtype` | 可编辑项目的类型（例如文本、图像和参考） |
-| `data-editor-itemfilter` | 定义可以使用哪些参考 |
-| `data-editor-itemlabel` | 为编辑器中显示的可选项目定义自定义标签<br>如果设置了 `itemmodel`，则会通过模型检索标签 |
-| `data-editor-itemmodel` | 定义一个模型，该模型会用于属性边栏中基于表单的编辑 |
-| `data-editor-behavior` | 定义检测的行为，例如，独立的文本或图像也可以模拟组件使其可移动或可删除 |
+| `data-aue-resource` | 资源的 URN，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
+| `data-aue-prop` | 资源的属性，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
+| `data-aue-type` | 可编辑项目的类型（例如文本、图像和参考） |
+| `data-aue-filter` | 定义可以使用哪些参考 |
+| `data-aue-label` | 为编辑器中显示的可选项目定义自定义标签<br>如果设置了 `itemmodel`，则会通过模型检索标签 |
+| `data-aue-model` | 定义一个模型，该模型会用于属性边栏中基于表单的编辑 |
+| `data-aue-behavior` | 定义检测的行为，例如，独立的文本或图像也可以模拟组件使其可移动或可删除 |
 
 ## 项目类型 {#item-types}
 
@@ -47,14 +47,14 @@ ht-degree: 85%
 | `component` | 可编辑项是一个组件。它不添加额外功能。指示 DOM 的可移动/可删除部分以及打开属性边栏及其字段需要用到它 | 必填 | 不适用 | 不适用 | 可选 | 可选 | 不适用 |
 | `reference` | 可编辑是一个引用，例如内容片段、体验片段或产品 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>传递到参考选择器的内容片段、产品或体验片段筛选条件列表 | 可选 | 可选 | 不适用 |
 
-根据使用案例，可能需要也可能不需要 `itemprop` 或 `itemid`。例如：
+根据使用案例，可能需要也可能不需要 `data-aue-prop` 或 `data-aue-resource`。例如：
 
-* 如果您通过 GraphQL 查询内容片段并且希望使列表在上下文中可编辑，则需要 `itemid`。
-* 如果您有一个组件呈现已参考内容片段的内容并且您想更新组件中的参考，则需要 `itemprop`。
+* 如果您通过 GraphQL 查询内容片段并且希望使列表在上下文中可编辑，则需要 `data-aue-resource`。
+* 如果您有一个组件呈现已参考内容片段的内容并且您想更新组件中的参考，则需要 `data-aue-prop`。
 
 ## 行为 {#behaviors}
 
-| `data-editor-behavior` | 描述 |
+| `data-aue-behavior` | 描述 |
 |---|---|
 | `component` | 用于允许独立文本、富文本和媒体模仿组件，以便它们也能够在页面上移动和被删除 |
 | `container` | 用于允许容器被视为自己的组件，以便它们可以在页面上移动和删除 |
