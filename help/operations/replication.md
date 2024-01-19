@@ -2,7 +2,7 @@
 title: 复制
 description: 了解AEMas a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 39%
@@ -89,7 +89,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 
 * `includeChildren`（布尔值，默认：`false`）。 值 `false` 这意味着仅发布路径； `true` 意味着子项也被发布。
 * `replicateAsParticipant`（布尔值，默认：`false`）。 如果配置为 `true`，则复制操作将使用 `userid` 执行参与者步骤的主体。
-* `enableVersion`（布尔值，默认： `true`）。 此参数可确定复制时是否创建了新版本。
+* `enableVersion`（布尔值，默认： `false`）。 此参数可确定复制时是否创建了新版本。
 * `agentId`（字符串值，默认表示仅使用发布代理）。 建议明确说明 agentId；例如，将其设置为值：发布。 将代理设置为 `preview` 发布到preview服务。
 * `filters` （字符串值，默认表示激活所有路径）。 可用值包括：
    * `onlyActivated`  — 仅激活已（已）激活的页面。 作为重新激活的一种形式。
