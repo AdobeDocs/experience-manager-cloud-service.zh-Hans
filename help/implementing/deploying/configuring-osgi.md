@@ -3,24 +3,25 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: 具有机密值和特定于环境的值的OSGi配置
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
 workflow-type: tm+mt
-source-wordcount: '3265'
+source-wordcount: '3269'
 ht-degree: 1%
 
 ---
 
-# 为Adobe Experience Manager as a Cloud Service配置OSGi {#configuring-osgi-for-aem-as-a-cloud-service}
 
->[!NOTE]
->
->AEM引入了使用Cloud Manager用户界面在2021.12.0版本中配置标准环境变量的功能。 有关更多信息，请参阅文档。 [此处](/help/implementing/cloud-manager/environment-variables.md).
+# 为Adobe Experience Manager as a Cloud Service配置OSGi {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [osgi](https://www.osgi.org/) 是Adobe Experience Manager (AEM)技术栈栈中的基本元素。 它用于控制AEM的复合捆绑包及其配置。
 
 OSGi提供了标准化的基元，允许从小型、可重用的协作组件构建应用程序。 这些组件可以组合为一个应用程序并进行部署。 这样可以轻松地管理OSGi包，因为它们可以单独停止、安装和启动。 系统会自动处理相互依赖关系。 每个OSGi组件都包含在各种捆绑包中。 欲了解更多信息，请参见 [OSGi规范](https://help.eclipse.org/latest/index.jsp).
 
 您可以通过属于AEM代码项目一部分的配置文件来管理OSGi组件的配置设置。
+
+>[!TIP]
+>
+>您可以使用Cloud Manager配置环境变量。 有关更多信息，请参阅文档。 [此处。](/help/implementing/cloud-manager/environment-variables.md)
 
 ## OSGi配置文件 {#osgi-configuration-files}
 
@@ -478,6 +479,10 @@ config.dev
 >
 >确保使用的Cloud Manager API分配了“部署管理员 — Cloud Service”角色。 其他角色无法执行以下所有命令。
 
+>[!TIP]
+>
+>您还可以使用Cloud Manager配置环境变量。 有关更多信息，请参阅文档。 [此处。](/help/implementing/cloud-manager/environment-variables.md)
+
 ### 通过API设置值 {#setting-values-via-api}
 
 调用API会将新变量和值部署到云环境，类似于典型的客户代码部署管道。 创作和发布服务将重新启动并引用新值，通常需要几分钟的时间。
@@ -486,8 +491,8 @@ config.dev
 PATCH /program/{programId}/environment/{environmentId}/variables
 ```
 
-```
-]
+```json
+[
         {
                 "name" : "MY_VAR1",
                 "value" : "plaintext value",

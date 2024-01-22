@@ -2,12 +2,13 @@
 title: 添加自定义域名
 description: 了解如何使用 Cloud Manager 添加自定义域名。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 79%
+source-wordcount: '680'
+ht-degree: 73%
 
 ---
+
 
 # 添加自定义域名 {#adding-cdn}
 
@@ -60,17 +61,21 @@ CDN 部署需要有效的 SSL 证书和成功的 TXT 验证。 这由状态&#x20
 
 请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，了解有关各种状态的更多信息以及如何解决潜在问题。
 
+>[!TIP]
+>
+>阅读以下文章，了解其需要 [接下来添加CNAME或记录](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 避免在将DNS记录添加到自定义域时加倍努力。 TXT条目和CNAME或A记录可以同时在DNS管理服务器上设置。
+
+>[!TIP]
+>
+>请参阅[添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，了解有关 TXT 记录的更多信息。
+
 >[!NOTE]
 >
 >由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。
 >
 >Cloud Manager 将验证所有权并更新可在域设置表中看到的状态。 请参阅[检查自定义域名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，了解更多详细信息。
 
->[!TIP]
->
->请参阅[添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)，了解有关 TXT 记录的更多信息。
-
-## 从“环境”页面添加自定义域名 {#adding-cdn-environments}
+## 从环境页面添加自定义域名 {#adding-cdn-environments}
 
 按照以下步骤从&#x200B;**环境**&#x200B;页面添加自定义域名。
 
