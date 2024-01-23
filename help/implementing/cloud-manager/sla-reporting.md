@@ -2,10 +2,10 @@
 title: SLA 报告
 description: 了解如何查看生产 AEM 环境相对于约定的服务水平协议 (SLA) 的性能。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 88%
+source-wordcount: '400'
+ht-degree: 55%
 
 ---
 
@@ -51,3 +51,14 @@ SLA 报告数据可通过&#x200B;**报告**&#x200B;选项卡用于每个生产�
 每个事件均具有一个时间范围、一个原因和一组注释。
 
 ![事件分析示例](assets/sla-reporting-c.png)
+
+## 刷新间隔 {#refresh}
+
+SLA报告使您能够深入了解AEM生产环境的性能，并且是最新的，但不是即时的。 SLA报告生成每月进行一次，对于上个月标记为“生产”的新项目会生成一次。 它不是即时的。 由于此延迟，在查看SLA报告时，请牢记以下事项：
+
+* 报告的SLA将是当月开始时存在的SLA，即使当月SLA发生了更改。
+* 如果月初由于程序不存在而没有SLA，则应用创建程序之日存在的SLA。
+
+## 预览环境 {#preview}
+
+预览环境旨在作为内容作者在发布之前验证内容最终体验的工具。 因此，预览环境在设计时没有提供高可用性，也没有相关的SLA。

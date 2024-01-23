@@ -11,12 +11,13 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: d9d4ed55722920a8528056defbc0d8a411dd6807
+source-git-commit: f7967c5374dd34315b2577cc9fd7606db3ef4cc7
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 1%
 
 ---
+
 
 # AEM-CIF核心组件与Adobe Experience Platform集成 {#aem-cif-aep-integration}
 
@@ -216,7 +217,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
        },
        eventsCollector: {
            eventForwarding: {
-               commerce: true,
+               acds: true,
                aep: false,
            }
        }
@@ -225,7 +226,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
    >[!IMPORTANT]
    >
-   >您可能已经熟悉 [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) 文件来源 __AEM Guides - CIF Venia项目__，您需要对此文件进行一些更改。 首先，查看任意 __任务__ 注释。 然后，在内部 `eventsCollector` 属性，查找 `eventsCollector > aed` 对象并更新 `orgId` 和 `datastreamId` 属性到正确的值。 [了解详情](./aep.md#add-aep-values-to-aem)。
+   >您可能已经熟悉 [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) 文件来源 __AEM Guides - CIF Venia项目__，您需要对此文件进行一些更改。 首先，查看任意 __任务__ 注释。 然后，在内部 `eventsCollector` 属性，查找 `eventsCollector > aep` 对象并更新 `orgId` 和 `datastreamId` 属性到正确的值。 [了解详情](./aep.md#add-aep-values-to-aem)。
 
 1. 创建 `App.js` 文件包含以下内容。 此文件类似于典型的React应用程序起点文件，包含React和自定义挂接以及React Context用法，可促进Experience Platform集成。
 
