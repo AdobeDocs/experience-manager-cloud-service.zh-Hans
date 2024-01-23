@@ -165,7 +165,7 @@ ht-degree: 98%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新增功能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 中的重要更改](/help/release-notes/aem-cloud-changes.md)
-   + [已弃用和已删除的功能和API](/help/release-notes/deprecated-removed-features.md)
+   + [已弃用和已删除的功能和 API](/help/release-notes/deprecated-removed-features.md)
    + [预发行渠道](/help/release-notes/prerelease.md)
 + 安全性 {#security}
    + [AEM as a Cloud Service 的安全性概述](/help/security/cloud-service-security-overview.md)
@@ -662,7 +662,7 @@ ht-degree: 98%
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
          + [创建和管理评论](/help/forms/create-reviews-forms.md)
-      + [自适应表单关键词](/help/forms/adaptive-forms-keywords.md)
+      + [自适应表单关键字](/help/forms/adaptive-forms-keywords.md)
       + [预览表单](/help/forms/previewing-forms.md)
    + 以表单为中心的工作流程 {#create-form-centric-workflows}
       + [在工作流程中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
