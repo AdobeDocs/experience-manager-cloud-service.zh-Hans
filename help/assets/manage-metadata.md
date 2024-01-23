@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 9%
+source-wordcount: '1953'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 9%
 
 ## 为什么我们需要元数据 {#why-metadata}
 
-元数据是指有关数据的数据。 就这一点而言，数据是指您的数字资产，例如图像。 元数据对于高效的资源管理非常关键。
+元数据是指有关数据的数据。 就这一点而言，数据是指您的数字资产，例如图像。 元数据对于高效的资源管理至关重要。
 
 元数据是某个资源的所有可用数据的集合，但并不一定包含在该图像中。 元数据的一些示例包括：
 
@@ -60,18 +60,53 @@ ht-degree: 9%
 
 ## 元数据的类型 {#types-of-metadata}
 
-元数据的两种基本类型是技术元数据和描述性元数据。
+元数据分为技术元数据、信息元数据和管理元数据。
 
-技术元数据对于处理数字资产的软件应用程序非常有用，不应手动维护。 [!DNL Experience Manager Assets] 和其他软件会自动确定技术元数据，元数据在资产被修改时可能会发生更改。 资源的可用技术元数据在很大程度上取决于资源的文件类型。 技术元数据的一些示例包括：
+### 技术元数据
 
-* 文件的大小。
-* 图像的Dimension（高度和宽度）。
-* 音频或视频文件的比特率。
-* 图像的分辨率（细节级别）。
+技术元数据侧重于数字资产的技术方面，提供与以下内容相关的关键信息：
 
-描述性元数据是与应用程序域相关的元数据，例如资产来自的业务。 无法自动确定描述性元数据。 它是手动或半自动创建的。 例如，启用了GPS的相机可以自动跟踪纬度和经度，并在图像中添加地理标签。
+* 文件大小
+* 格式
+* 解决方法
+* 尺寸
+* 颜色模式
 
-手动创建描述性元数据信息的成本很高。 因此，我们制定了各种标准来简化软件系统和组织之间的元数据交换。 [!DNL Experience Manager Assets] 支持元数据管理的所有相关标准。
+此类元数据可帮助用户了解并高效使用数字资源。
+
+### 信息元数据
+
+信息性元数据提供描述性信息以增强对内容的理解，有助于内容发现和搜索。 它包括关键字、字幕和描述。 <br>例如，在Experience Manager Assets中管理视频时，我们可以包含以下信息元数据：
+
+* **关键字**：营销、产品发布、促销
+* **题注**：介绍我们的最新产品，以及令人兴奋的功能
+* **描述**：视频内容的详细概述。
+
+### 管理元数据
+
+管理元数据涉及数字资产的管理方面。 它确保访问控制、法规遵从性，并管理数字资产管理系统中资产的整个生命周期。 它包括与以下内容相关的信息：
+
+* 资产所有权
+* 使用权限
+* 权限
+* 其他管理详细信息
+
+此元数据类型可确保有效的资源管理、访问控制和法规遵从性。
+
+<!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
+
+<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+
+Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
+
+* Size of a file.
+* Dimensions (height and width) of an image.
+* Bit rate of an audio or video file.
+* Resolution (level of detail) of an image.
+
+Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
+
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
 
 ## 元数据和上次修改 {#last-modification}
 
@@ -164,7 +199,7 @@ Assets as a [!DNL Cloud Service] 可以使用云原生服务为资源生成自�
 
 >[!TIP]
 >
->一个文件夹只能应用一个处理配置文件。要将多个处理应用于文件夹中的资产，请向单个处理配置文件添加更多选项。 例如，单个配置文件可以生成演绎版、对资源进行转码、生成自定义元数据等。 您可以为每个任务应用MIME类型过滤器，以便根据所需的文件格式触发相应的任务。
+>一个文件夹只能应用一个处理配置文件。 要将多个处理应用于文件夹中的资产，请向单个处理配置文件添加更多选项。 例如，单个配置文件可以生成演绎版、对资源进行转码、生成自定义元数据等。 您可以为每个任务应用MIME类型过滤器，以便根据所需的文件格式触发相应的任务。
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
@@ -212,7 +247,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 ### Digital Rights Management元数据 {#digital-rights-management-metadata}
 
-* 抄送 - [!DNL Creative Commons].
+* 抄送 —  [!DNL Creative Commons].
 * [!DNL XMPRights]。
 * 加 —  [图片授权通用系统](https://www.useplus.com).
 * 棱镜 —  [发布行业标准元数据的要求](https://www.idealliance.org/prism-metadata).
