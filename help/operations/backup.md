@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的备份和恢复
 description: 了解AEMas a Cloud Service中的备份和恢复
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 83b5d9a3ff0e9a3c69e36a97a3f733b05f827d3b
+source-git-commit: b77ee0697e8f6f4aeaa6651336588f1c5321abd1
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 27%
+source-wordcount: '539'
+ht-degree: 24%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 27%
 
 >[!CAUTION]
 >
->此功能仅应在代码或内容存在严重问题时使用。该过程失去还原的备份所处的时刻与当前之间的最新数据。暂存内容也会恢复到旧版本。
+>此功能仅应在代码或内容存在严重问题时使用。该过程失去还原的备份所处的时刻与当前之间的最新数据。暂存也将还原到旧版本。 如果保留最近的数据，则需要在恢复之前通过内容包将其导出，并重新安装到已还原的存储库中。
 
 ## 使用方法 {#how-to-use}
 
