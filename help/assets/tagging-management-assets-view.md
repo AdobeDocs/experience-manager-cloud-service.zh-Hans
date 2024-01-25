@@ -2,10 +2,10 @@
 title: 如何在资源视图中管理标记？
 description: 了解如何在资源视图中管理标记。标记帮助您将资源分类，这样可更高效地浏览和搜索资源。
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: ea0978d09ce74d37487cd921496b03acbfd632d0
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1256'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 标记帮助您将资源分类，这样可更高效地浏览和搜索资源。标记有助于将适当的分类传播给其他用户和工作流程。
 
-随着时间的推移，受控词汇的扁平列表变得难以管理。管理员可以使用分层的标记结构，该结构便于应用相关的元数据、为资源分类、支持搜索、重用标记、提高可发现性等。
+随着时间的推移，受控词汇的扁平列表变得难以管理。管理员可使用分层的标记结构，该结构便于应用相关的元数据、为资源分类、支持搜索、重用标记、提高可发现性等。
 
 您可以在根级别创建命名空间，并在命名空间内创建子标记的层次结构。例如，您可以在根级别创建一个`Activities`命名空间，并在该命名空间中具有 `Cycling`、`Hiking` 和 `Running` 标记。您可以在 `Running` 中有更多的子标记 `Clothing` 和 `Shoes`。
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 * 随着组织词汇的变化，标记可能会随着时间的推移而演变。
 
-* 在管理视图中管理的标记与在资源视图中管理的标记保持同步，从而确保元数据得到治理及其完整性。
+* 在Assetsas a Cloud Service中管理的标记与Assets视图中管理的标记保持同步，这确保元数据治理和完整性。
 
 若要将标记应用于资源，您必须首先创建一个命名空间，然后创建并向其添加标记。您还可以创建标记并将其添加到现有命名空间。您在根级别创建的任何标记都会自动添加到标准标记命名空间。然后，您可以将“标记”字段添加到元数据表单，以便它显示在“资源详细信息”页面上。配置这些设置后，您可以开始将标记应用到资源。
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 ![标记管理](assets/tagging-taxonomy-management.png)
 
-除了本文提到的功能之外，管理视图中还提供了其他功能，包括合并、重命名、本地化和发布标记。
+除了在本文中提到的功能之外，在 Assets as a Cloud Service 中还有包括合并、重命名、本地化和发布标记在内的其他功能可用。
 
 ## 创建命名空间 {#creating-a-namespace}
 
@@ -59,7 +59,6 @@ ht-degree: 100%
 
    <!--
     >[!NOTE]
-    >
     >You can use `Name` as a primary key if you are using any other metadata management tool is the source of truth for taxonomy values, you can use the name as a primary key.
     >
     -->
@@ -77,13 +76,6 @@ ht-degree: 100%
    在本例中，左侧的图像表示 `Path` 字段中显示的命名空间`automobile-four-wheeler`正下方的标记。右图是标记内添加的子标记的示例，因为除了命名空间之外，`Path` 字段中还显示了更多的标记名称、`jeep` 和 `jeep-meridian`。
 1. 指定标记的标题、名称和描述，然后单击 `Save`。
 
-
-   >[!NOTE]
-   >
-   >* `Title` 和 `Name` 字段是强制性的，而 `Description` 字段是可选的。
-   >* 默认情况下，该工具会复制您在“标题”字段中键入的文本，删除空格或特殊字符 (.&amp; / \ : * ? [ ] | &quot; %)，并将其存储为名称。
-   >* 您可以稍后更新 `Title` 字段，但 `Name` 字段是只读的。
-
 ## 将标记添加到标准标记 {#adding-tags-to-standard-tags}
 
 非结构化标记或没有任何层次结构的标记会存储在 `Standard Tags` 命名空间。此外，当您想要添加其他描述性术语而不影响受到管理的分类法时，您可以将该值存储在 `Standard Tags`。随着时间的推移，您可以将这些值移动到结构化命名空间下。此外，您还可以使用`Standard Tags`名称空间作为关键字的自由形式条目。
@@ -91,10 +83,11 @@ ht-degree: 100%
 要创建标准标记，请单击根级别的 `Create Tag`。指定标题、名称和描述，然后单击 `Save`。
 
 ![将标记添加到标准标记](assets/adding-tags-to-standard-tags.png)
-
+<!--
 >[!NOTE]
 >
->如果您使用管理视图删除`Standard Tags`命名空间，在根级别创建的标记不会显示在可用标记列表中。
+>If you delete `Standard Tags` namespace using Assets as a Cloud Service, the tags created at the root-level do not display in the list of available tags. 
+-->
 
 ## 移动标记 {#moving-tags}
 
@@ -117,7 +110,7 @@ ht-degree: 100%
 >[!NOTE]
 >
 >* 标记的 `Name` 无法更新。标记的根路径也基于标记的名称。即使更新了 `Title` 字段，路径也保持不变。
->* 通过管理视图还可进行其他操作，例如合并、本地化和发布。
+>* 在 Assets as a Cloud Service 中还有合并、本地化和发布等其他操作可用。
 
 ## 正在删除标记 {#deleting-tags}
 
@@ -136,7 +129,7 @@ ht-degree: 100%
 
 ## 将标记组件添加到元数据表单 {#adding-tags-to-metadata-form}
 
-标记组件会自动添加到 `default` 元数据表单中。您可以使用模板或从头开始设计[元数据表单](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您使用的不是现有的元数据表单模板，则可以修改您的元数据表单并添加标记组件。元数据属性映射是自动填充的，因此此时无法修改。管理视图中的用户可以更新映射以使用自定义命名空间存储标记值，并使用根路径仅公开层次结构的子集。
+标记组件会自动添加到 `default` 元数据表单中。您可以使用模板或从头开始设计[元数据表单](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您使用的不是现有的元数据表单模板，则可以修改您的元数据表单并添加标记组件。元数据属性映射是自动填充的，因此此时无法修改。Assets as a Cloud Service 用户可更新映射以使用自定义命名空间存储标记值，还可使用根路径仅公开层次结构的子集。
 
 观看此简短视频，了解如何将标记组件添加到元数据表单中：
 
@@ -151,32 +144,10 @@ ht-degree: 100%
    ![标记资源](assets/adding-tags-to-assets.png)
 
 1. 选择一个或多个标记。 子标记将与父标记或名称空间一起自动选择。
-在资源视图中修改的标记也会应用在管理视图中。
+在Assets视图中修改的标记也会在Assetsas a Cloud Service应用。
 
-## 限制 {#limitations}
-
-目前，以下高级分类功能在资源视图中不可用，只能通过管理视图访问：
-
-* **本土化：**&#x200B;任何本地化都必须在管理视图中进行。
-* **根路径：**&#x200B;根路径不可配置。存储在分类管理中的所有命名空间都会在资源视图中的标记属性上公开。
-* **标准标记：**&#x200B;在管理视图中应用的标准标记在资源视图中可见。您无法在资源详细信息页面的资源视图中添加新的标准标记。标准标记中存储的现有值将会应用于“资源详细信息”页面。
-* **自定义命名空间：**&#x200B;标记无法映射到自定义命名空间。
-* **查看参考资料：**&#x200B;管理员可以在资源视图中查看标记使用情况。这是指所有正在使用标记的资源。但是，管理员无法在参考中使用该标记查看单个资源。
-
-<!--
-*   Overview
-*   Benefits
-*   Prerequisites and Permissions
-*   Configuration
-*   Managing Tags
-    *   Creating a Namespace
-    *   Adding Tags to a Namespace
-    *   Adding Tags to Standard Tags
-    *   Moving Tags
-    *   Editing Tags
-    *   Deleting Tags
-*   Applying Tags
-    *   Adding Tags to the Metadata form
-    *   Adding Tags to Assets
-*   Limitations
--->
+>[!NOTE]
+>
+>* `Title` 和 `Name` 字段是强制性的，而 `Description` 字段是可选的。
+>* 默认情况下，该工具会复制您在“标题”字段中键入的文本，删除空格或特殊字符 (.&amp; / \ : * ? [ ] | &quot; %)，并将其存储为名称。
+>* 您可以稍后更新 `Title` 字段，但 `Name` 字段是只读的。

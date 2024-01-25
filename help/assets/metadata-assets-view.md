@@ -4,9 +4,9 @@ description: 了解如何在资产视图中管理元数据。 更好的元数据
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1667'
 ht-degree: 87%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 87%
 
 要查看某个资源的元数据，请浏览到该资源或搜索该资源，然后在工具栏中单击&#x200B;**[!UICONTROL 详情]**。
 
-![查看资源的元数据](assets/metadata-view1.png)
+![查看资源的元数据](assets/metadata-view.png)
 
 *图：要查看资源及其元数据，请在工具栏中单击&#x200B;**[!UICONTROL 详情]**或者双击该资源。*
 
@@ -71,14 +71,15 @@ ht-degree: 87%
 默认情况下，资源视图提供了许多标准元数据字段。 组织有额外的元数据需求，就需要更多元数据字段以添加业务特有的元数据。通过元数据表单，可将自定义元数据字段添加到资源的[!UICONTROL 详细信息]页面。业务特有的元数据改善对其资源的治理和发现。您可以从头开始创建表单，也可以重新利用现有表单。
 
 您可以为不同的资源类型（不同的 MIME 类型）配置元数据表单。使用与文件的 MIME 类型相同的表单名称。资源视图会自动将上传的资源MIME类型与表单名称相匹配，并根据表单字段更新上传资源的元数据。
-
-例如，如果存在名为 `PDF` 或 `pdf` 的元数据表单，则上载的 PDF 文档包含表单中定义的元数据字段。
-
+<!--
+For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
+-->
 资源视图使用以下顺序搜索现有元数据表单名称，以将元数据字段应用于特定类型的已上传资源：
 
 MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 
 例如，如果存在名为 `PDF` 或 `pdf` 的元数据表单，则上传的 PDF 文档将包含该表单中定义的元数据字段。如果元数据表单具有名称 `PDF` 或 `pdf` 不存在，如果存在名称为的元数据表单，则资源视图匹配 `application`. 如果存在名为 `application` 的元数据表单，则上传的 PDF 文档将包含该表单中定义的元数据字段。如果资源视图仍然找不到匹配的元数据表单，它将搜索 `default` 元数据表单，用于将表单中定义的元数据字段应用于上载的PDF文档。 如果这些步骤都不起作用，Assets视图会将现成表单中定义的元数据字段应用于所有上载的PDF文档。
+如果要将元数据表单分配给文件夹，则是 [请参阅](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -111,9 +112,9 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 
 创建表单后，当用户上传具有匹配 MIME 类型的资源时，将会自动应用表单。
 
-要重用现有的表单来创建表单，请选择一个元数据表单，然后单击 **[!UICONTROL 复制]** 在工具栏中，提供名称，然后单击 **[!UICONTROL 确认]**. 您可以编辑元数据表单来进行更改。更改表单后，它会用于在更改之后上传的资源。它不会更改现有资源。
+要重用现有的表单创建新表单，请选择一个元数据表单，在工具栏中单击&#x200B;**[!UICONTROL 复制]**，提供名称，然后单击&#x200B;**[!UICONTROL 确认]**。您可以编辑元数据表单来进行更改。更改表单后，它会用于在更改之后上传的资源。它不会更改现有资源。
 
-## 属性组件 {#property-components}
+### 属性组件 {#property-components}
 
 您可以使用以下任何属性组件自定义元数据表单。只需将组件类型拖放到表单上的所需位置并修改组件设置即可。以下是每种属性类型及其存储方式的概述。
 
@@ -132,6 +133,24 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 | 标记 | 从分类管理中存储的值添加标记（映射到 xcm:tags）。 |
 | 关键字 | 添加自由格式关键字（映射到 dc:subject）。 |
 | 智能标记 | 通过自动添加元数据标记来增强搜索功能。 |
+
+### 将元数据表单分配给文件夹 {#assign-metadata-form-folder}
+
+您还可以将元数据表单分配给Assets视图部署中的文件夹。 在手动将元数据表单应用于文件夹时，将覆盖根据 MIME 类型分配给文件夹的元数据表单。随后该文件夹中的所有资源（包括子文件夹中的资源）显示在该元数据表单中定义的属性。
+
+要将元数据表单分配给文件夹，请执行以下操作：
+
+1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 元数据表单]**，然后选择一个元数据表单。
+
+2. 单击&#x200B;**[!UICONTROL 分配到文件夹]**。
+
+3. 选择该文件夹并单击&#x200B;**[!UICONTROL 分配]**。
+
+   ![将元数据表单分配给文件夹](assets/assign-to-folder.png)
+
+   还可导航到文件夹详细信息页面，然后从可在右侧窗格中找到的文件夹属性中选择一个元数据表单以将该元数据表单分配给该文件夹。
+
+   ![文件夹属性中的元数据表单](assets/metadata-from-folder-props.png)
 
 ## 后续步骤 {#next-steps}
 

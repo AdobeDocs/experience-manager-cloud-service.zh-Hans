@@ -2,25 +2,34 @@
 title: 在“资源”视图中管理报告
 description: 访问资源视图的报表部分中的数据，即可评估产品和功能使用情况并了解关键成功量度。
 exl-id: c7155459-05d9-4a95-a91f-a1fa6ae9d9a4
-source-git-commit: e6ff21ee705a1164fdf163ce4f49064d83f149d8
+source-git-commit: c9ec348d7e65f4bb69b93a39b9ad7192485d8db4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 97%
+source-wordcount: '814'
+ht-degree: 92%
 
 ---
 
 # 管理报表 {#manage-reports}
 
->[!CONTEXTUALHELP]
->id="assets_reports"
->title="报表"
->abstract="管理员可通过资源报表深入了解 Adobe Experience Manager Assets 视图环境的活动。这些数据提供关于用户如何与内容和产品进行交互的有用信息。所有分配给管理员产品配置文件的用户均可访问 Insights 仪表板或创建用户定义的报表。"
+管理员可通过资源报表深入了解 Adobe Experience Manager Assets 视图环境的活动。这些数据提供关于用户如何与内容和产品进行交互的有用信息。所有用户都可以访问 Insights 仪表板，分配给管理员产品配置文件的用户可以创建用户定义的报告。
 
-管理员可通过资源报表深入了解 Adobe Experience Manager Assets 视图环境的活动。这些数据提供关于用户如何与内容和产品进行交互的有用信息。
-
-## 访问报表 {#access-reports}
+## 访问报告 {#access-reports}
 
 所有分配给资源视图管理员产品配置文件的用户均可在资源视图中访问“见解”仪表板或创建用户定义的报表。
+
+要访问报告，请导航到&#x200B;**[!UICONTROL 设置]**&#x200B;下方的&#x200B;**[!UICONTROL 报告]**。
+
+![报告](assets/reports.png)
+<!--
+In the **[!UICONTROL Reports]** screen, various components are shown in the tabular format which includes the following:
+
+* **Title**: Title of the report
+* **Type**: Determines whether the report is uploaded or downloaded to the repository
+* **Description**: Provide details of the report that was given during uploading/downloading the report
+* **Status**: Determines whether the report is completed, under progress, or deleted.
+* **Author**: Provides email of the author who has uploaded/downloaded the report.
+* **Created**: Gives information of the date when the report was generated.
+-->
 
 ## 查看见解 {#view-live-statistics}
 
@@ -32,9 +41,9 @@ ht-degree: 97%
 
 ![见解](assets/insights.png)
 
-* **下载**：过去 30 天或 12 个月从资源视图环境下载的资源数量，用折线图表示。
+* **下载**：过去30天或12个月从Assets视图环境下载的资产数量，用折线图表示。
 
-* **上载**：过去 30 天或 12 个月上载到资源视图环境中的资源数量，用折线图表示。
+* **上传**：过去30天或12个月内上传到Assets视图环境的资产数量，用折线图表示。
 
 <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
@@ -46,11 +55,10 @@ ht-degree: 97%
 
 * **热门搜索**：以表格格式查看过去 30 天或 12 个月内在资源视图环境中搜索最多的术语以及这些术语的搜索次数。
 
-<!--
-
-* **Storage usage**: The storage usage, in gigabytes (GB), for the Assets view environment, for the last 30 days or 12 months represented using a bar chart.
-
--->
+  <!--
+   ![Insights](assets/insights1.png)
+   ![Insights](assets/insights2.png)
+   -->
 
 ## 创建下载报告 {#create-download-report}
 

@@ -2,10 +2,10 @@
 title: 我的资产工作区视图
 description: “我的工作区”是一个页面，其中提供各种可自定义的视觉模块，以方便访问 Assets 用户界面的关键区域以及与用户密切相关的信息。
 exl-id: 402dd3a6-44e5-4d13-97d8-1d7fa26a99e4
-source-git-commit: 701a7610780553731a6ac4c85fe3221ee3d98ae2
+source-git-commit: 2500322c5565314e84ee7989399b9130f5cd6f74
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 93%
+source-wordcount: '745'
+ht-degree: 84%
 
 ---
 
@@ -44,7 +44,7 @@ Highlights upcoming features for Assets.
 
 1. 选择项目并单击&#x200B;**[!UICONTROL “固定到快速访问”。]**
 
-1. 选择是否需要仅为您、整个组织或选定的组固定项目。如果您选择&#x200B;**[!UICONTROL “对群组”]**，请在&#x200B;**[!UICONTROL “为群组固定”]**&#x200B;字段中定义群组名称。
+1. 选择是否需要仅为您、整个组织或选定的组固定项目。如果您选择 **[!UICONTROL 对于组]**&#x200B;中，选择现有的组名称 **[!UICONTROL 固定组]** 字段。
 
    ![为群组固定项目](assets/pin-items-for-groups.png)
 1. 单击&#x200B;**[!UICONTROL “固定”。]**
@@ -62,7 +62,7 @@ Highlights upcoming features for Assets.
 
 **任务**
 
-在&#x200B;**[!UICONTROL 我的任务]**&#x200B;选项卡中显示当前分配给您的任务的列表，在&#x200B;**[!UICONTROL 分配的任务]**&#x200B;选项卡中显示由您创建的任务的列表，在&#x200B;**[!UICONTROL 已完成]**&#x200B;选项卡中显示已由您完成的任务的列表。可选择一个任务并单击&#x200B;**[!UICONTROL 完成任务]**&#x200B;以批准或拒绝该任务。还可选择一个任务并单击&#x200B;**[!UICONTROL 打开任务详细信息]**&#x200B;以查看该任务并批准、拒绝、编辑或删除它。
+在中显示当前分配给您的任务列表 **[!UICONTROL 我的任务]** 选项卡，由您在 **[!UICONTROL 已分配的任务]** 选项卡，并且您已经在 **[!UICONTROL 已完成的任务]** 选项卡。 您可以选择一项任务并单击 **[!UICONTROL 完成任务]** 批准或拒绝任务。 还可选择一个任务并单击&#x200B;**[!UICONTROL 打开任务详细信息]**&#x200B;以查看该任务并批准、拒绝、编辑或删除它。
 
 ![工作区中的“任务”](assets/tasks-workspace.png)
 
