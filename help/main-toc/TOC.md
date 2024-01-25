@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9a15711c6352f35bcf21cd080b65552f94b46f48
+source-git-commit: 6b147f69ee877f75ff74bd044a2a02ff5a14d72c
 workflow-type: tm+mt
-source-wordcount: '4611'
+source-wordcount: '4610'
 ht-degree: 98%
 
 ---
@@ -922,7 +922,7 @@ ht-degree: 98%
       + [自定义权限](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 报告](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [Dynatrace OneAgent](/help/implementing/cloud-manager/dynatrace-oneagent.md)
+      + [迪纳特瑞斯](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + SSL 证书{#manage-ssl-certificates}
          + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
