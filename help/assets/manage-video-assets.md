@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 517412d3f9d79a35bd1c25bd0eb09c0dee63c9af
+source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
 workflow-type: tm+mt
-source-wordcount: '4904'
+source-wordcount: '4975'
 ht-degree: 6%
 
 ---
@@ -25,12 +25,34 @@ ht-degree: 6%
 
 ## 上传和预览视频资产 {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] 为扩展为MP4的视频资源生成预览。 您可以在中预览演绎版 [!DNL Assets] 用户界面。
+您可以上传和预览受支持格式的视频资产，以 [!DNL Experience Manager Assets].
+<!-- It generates previews for video assets with the extension MP4. -->
 
-1. 在数字资产文件夹或子文件夹中，导航到要添加数字资产的位置。
-1. 要上传资产，请单击 **[!UICONTROL 创建]** 从工具栏中选择 **[!UICONTROL 文件]**. 或者，在用户界面上拖动文件。 请参阅 [上传资产](manage-digital-assets.md#uploading-assets) 以了解详细信息。
-1. 要在卡片视图中预览视频，请单击 **[!UICONTROL 播放]** ![播放选项](assets/do-not-localize/play.png) 选项。 您只能在卡片视图中暂停或播放视频。 此 [!UICONTROL 播放] 和 [!UICONTROL 暂停] 选项在列表视图中不可用。
-1. 要在资源详细信息页面中预览视频，请选择 **[!UICONTROL 编辑]** 在卡片上。 视频在浏览器的本机视频播放器中播放。 您可以播放、暂停、控制音量以及将视频缩放到全屏。
+### 上传视频资产
+
+要上传视频资产，请执行以下步骤：
+
+1. 在数字资源文件夹或子文件夹中，导航到需要添加资源的位置。
+1. 单击 **[!UICONTROL 创建]** 从工具栏中选择 **[!UICONTROL 文件]**. <br>或者，在用户界面上拖动文件。
+了解有关 [上传资产](manage-digital-assets.md#uploading-assets) 在 [!DNL Experience Manager Assets].
+
+<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+
+### 预览视频资产
+
+您可以在 [!DNL Assets] 用户界面。 要预览视频资源，请执行以下步骤：
+
+1. 将支持格式的视频资产上传到 [!DNL Experience Manager Assets]. 了解关于 [支持的视频格式](file-format-support.md#video-formats). <br>上传后，将处理视频资产，并生成预览演绎版。
+1. 单击资产，然后选择 ![详细信息选项](assets/do-not-localize/details_icon.svg) **[!UICONTROL 详细信息]**  从顶部工具栏中。 视频资产将在视频查看器中打开。
+1. 单击 ![播放选项](assets/do-not-localize/play.png) 图标（位于视频缩略图上）。 <br>您可以播放、暂停、控制音量以及将视频缩放到全屏。
+
+对于中的现有视频资产 [!DNL Experience Manager Assets]，您需要 **[!UICONTROL 重新处理]** 中的资产 [!DNL Experience Manager] 以启用视频预览功能。 了解如何 [重新处理数字资产](reprocessing.md) 在 [!DNL Experience Manager].
+
+### 视频预览的限制
+
+* 即使生成了演绎版，MXF文件也不会显示视频预览。
+* WebM文件不会生成预览呈现版本，因为它们可以由Web浏览器本机播放。
 
 ## 发布视频资产 {#publish-video-assets}
 

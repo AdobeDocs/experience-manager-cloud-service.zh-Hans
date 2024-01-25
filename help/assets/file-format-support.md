@@ -5,33 +5,33 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
+source-git-commit: 4c1525fd51956d3d788a91f58978a9c885e6daa5
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 10%
+source-wordcount: '1409'
+ht-degree: 32%
 
 ---
 
 # [!DNL Assets] 支持的文件格式 {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 支持任何二进制文件的基本内容管理功能 — 存储、在线管理元数据、版本控制、上传和下载等，与文件格式无关。 [!DNL Adobe Experience Manager Assets] 支持广泛的文件格式，并且每种产品功能支持的格式也各不相同。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 支持任何二进制文件的基本内容管理功能 — 存储、在线管理元数据、版本控制、上传和下载等，而不受其格式的影响。 [!DNL Adobe Experience Manager Assets] 支持广泛的文件格式，每种产品功能支持的格式也各不相同。
 
-此外， [!DNL Experience Manager Assets] 提供扩展支持以生成预览和演绎版，并提取元数据和文本以进行全文索引。 此扩展支持通过以下方式提供 [资源微服务](asset-microservices-configure-and-use.md).
+另外， [!DNL Experience Manager Assets] 提供扩展的支持，可生成预览和演绎版，并提取元数据和文本以进行全文索引。 此扩展支持通过使用 [资源微服务](asset-microservices-configure-and-use.md).
 
-使用资产微服务进行资产转换的功能亮点包括：
+使用资产微服务的资产转换功能亮点包括：
 
 * 键 [Adobe文件格式](#adobe-formats) 由Adobe应用程序和服务生成，包括 [!DNL Adobe Photoshop]， [!DNL Adobe InDesign]， [!DNL Adobe Illustrator]， [!DNL Adobe XD]， [!DNL Adobe Dimension]、和 [!DNL Adobe Acrobat] 或PDF。
 * 键 [图像文件格式](#image-formats).
-* [Camera Raw文件格式](#camera-raw-formats) 适用于各种相机，包括佳能、尼康、富士胶片、奥林巴斯和其他厂商(由Adobe Camera Raw提供支持)。
+* [Camera Raw文件格式](#camera-raw-formats) 适用于各种相机，包括佳能、尼康、富士胶片、奥林巴斯和其他制造商(由Adobe Camera Raw提供支持)。
 * 公共 [文档格式](#document-formats)，包括Microsoft®Office和Open Document格式。
-* 各种[视频](#video-formats)和[音频](#audio-formats)格式.
+* 范围很广 [视频](#video-formats) 和 [音频](#audio-formats) 格式。
 
 以下图例描述了每种格式的支持级别。
 
 | 支持级别 | 描述 |
 | ------------- | --------------------------- |
 | ✓ | 支持 |
-| * | 请参阅表格下方的说明 |
+| * | 请参阅表下方的说明 |
 | - | 不适用 |
 
 ## Adobe格式 {#adobe-formats}
@@ -51,7 +51,7 @@ ht-degree: 10%
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\*表示 [!DNL Adobe InDesign] 文件(INDD)，格式副本的大小由嵌入到INDD文件中的预览决定。 在中配置首选项 [!DNL InDesign] (**[!UICONTROL 首选项>文件处理>始终保存预览图像和文档，预览大小]**)以便嵌入更大的演绎版。
+\*表示 [!DNL Adobe InDesign] 文件(INDD)，格式副本的大小由INDD文件中嵌入的预览决定。 在中配置首选项 [!DNL InDesign] (**[!UICONTROL 首选项>文件处理>始终保存包含文档的预览图像，预览大小]**)以便嵌入更大的演绎版。
 
 ## 图像格式 {#image-formats}
 
@@ -69,7 +69,7 @@ ht-degree: 10%
 | TIFF | ✓ | ✓ | ✓ | - |
 | WebP | ✓ | ✓ | ✓ | ✓ |
 
-## 3D格式 {#support-3d-formats}
+## 三维格式 {#support-3d-formats}
 
 支持以下3D格式。
 
@@ -147,31 +147,31 @@ ht-degree: 10%
 
 ## 视频格式 {#video-formats}
 
-| 文件格式 | 缩略图生成 | 元数据提取 | 宽度/高度 |
-| ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| MXF | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| 文件格式 | 缩略图生成 | 元数据提取 | 宽度/高度 | 预览 |
+| ----------- | -------------------- | ------------------- | ------------ | ------- |
+| 3G2 | - | ✓ | - | - |
+| 3GP | - | ✓ | - | - |
+| AVI | ✓ | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ | ✓ |
+| F4V | ✓ | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ | ✓ |
+| M2TS | ✓ | - | ✓ | ✓ |
+| M2V | ✓ | - | ✓ | ✓ |
+| M4V | ✓ | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ | ✓ |
+| MOV | ✓ | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ | ✓ |
+| MXF | ✓ | - | ✓ | ✓ |
+| OGV | ✓ | - | ✓ | ✓ |
+| QT | ✓ | - | ✓ | ✓ |
+| R3D | - | ✓ | ✓ | ✓ |
+| SWF | ✓ | - | ✓ | ✓ |
+| WebM | ✓ | - | ✓ | ✓ |
+| WMV | ✓ | ✓ | ✓ | ✓ |
 
 ## 音频格式 {#audio-formats}
 
@@ -183,7 +183,7 @@ ht-degree: 10%
 * MXF (.mxf)
 * MPEG2-PS、MPEG2-TS、3GP(.ts、.ps、.3gp、.3gpp、.mpg)
 * Windows Media Video (WMV)/ASF (.wmv、.asf)
-* AVI（未压缩8位/10位） (.avi)
+* AVI（未压缩8位/10位）(.avi)
 * MP4 (.mp4、.m4a、.m4v)
 * Microsoft®数字视频录制(DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
@@ -192,25 +192,25 @@ ht-degree: 10%
 
 ## 提示和限制 {#limitations-and-tips}
 
-* 目前，元数据提取的文件大小限制约为15 GB。 上传大型资产时，有时元数据提取操作失败。
+* 目前，元数据提取的文件大小限制约为15 GB。 上传大型资源时，有时元数据提取操作失败。
 
 ## Dynamic Media — 支持的用于转码的输入视频格式 {#video-dynamic-media-transcoding}
 
 | 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
 | --- | --- | --- | --- |
-| AVI | A/V交错 | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft®视频1 (MS-CRAM) |
-| FLV、F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
+| AVI | A/V交错 | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft®视频1(MS-CRAM) |
+| FLV， F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
-| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中级， Apple动画 |
+| MOV， QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中级，Apple动画 |
 | MP4 | MPEG-4 | H264/AVC（所有配置文件） | − |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | − |
-| MXF ‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | − |
+| MXF‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | − |
 | OGV， OGG | OGG | 狄拉克副总裁Theora | − |
 | WebM | WebM | Google VP8 | − |
-| WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting (G2M2、G2M3、G2M4) | Microsoft®屏幕(MSS2)、Microsoft®照片故事(WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting (G2M2、G2M3、G2M4) | Microsoft® Screen (MSS2)、Microsoft® Photo Story (WVP2) |
 
-‡尚不支持将此视频格式用于Dynamic Media中的交互式视频，也不支持将其用于Experience Manager Assets中的注释。
+‡尚不支持将此视频格式与Dynamic Media中的交互式视频一起使用，也不支持将其与Experience Manager Assets中的批注一起使用。
 
 ## Dynamic Media — 支持的文档格式 {#document-support-dynamic-media}
 
@@ -234,20 +234,20 @@ ht-degree: 10%
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/dynamic-media/image-sets.md)， [混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)、和 [旋转](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/dynamic-media/image-sets.md)， [混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)、和 [旋转](/help/assets/dynamic-media/spin-sets.md) |
-| PSD   ‡ | ✓ | - | - | - | - | - |
+| PSD‡ | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/dynamic-media/image-sets.md)， [混合媒体](/help/assets/dynamic-media/mixed-media-sets.md)、和 [旋转](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡将从PSD文件中提取合并的图像。 它是由生成的图像 [!DNL Adobe Photoshop] 和包含在PSD文件中。 根据设置，合并的图像不一定是实际图像。
 
 ## Dynamic Media — 不支持的栅格图像格式 {#unsupported-raster-image-formats-dm}
 
-栅格图像文件格式的以下子类型 *非* 在中支持 [!DNL Dynamic Media]：
+下列栅格图像文件格式的子类型 *非* 在中支持 [!DNL Dynamic Media]：
 
 * IDAT区块大小大于100 MB的PNG文件。
 * psb文件。
-* 不支持使用CMYK、RGB、灰度或位图以外的PSD空间的颜色文件。 不支持DuoTone、Lab和索引色域。
+* 不支持使用CMYK、RGB、灰度或位图以外的PSD空间颜色文件。 不支持DuoTone、Lab和Indexed色彩空间。
 * PSD位深度大于16的文件。
-* TIFF包含浮点数据的文件。
+* TIFF具有浮点数据的文件。
 * TIFF具有Lab色彩空间的文件。
 
 ## Dynamic Media — 支持的3D文件格式 {#support-3d-formats-dynamic-media}
@@ -258,7 +258,7 @@ ht-degree: 10%
 |---|---|---|---|
 | GLB | 二进制GL传输 | model/gltf-binary | 将材料和纹理作为单个资产包含在内。 |
 | 对象 | WaveFront 3D对象文件 | application/x-tgif | |
-| STL | 立体光刻 | application/vnd.ms-pki.stl | |
+| STL | 立体成形 | application/vnd.ms-pki.stl | |
 | USDZ | 通用场景描述Zip存档 | model/vnd.usdz+zip | *支持摄取和缩略图生成；尚不支持3D预览。* USDZ是一种3D格式，可供Safari或iOS本机查看。 |
 
 **另请参阅**
@@ -277,5 +277,5 @@ ht-degree: 10%
 
 >[!MORELIKETHIS]
 >
->* [使用资源微服务处理资源](asset-microservices-overview.md)
+>* [使用资源微服务进行资源处理](asset-microservices-overview.md)
 >* [基于文本的资源智能标记支持的文件格式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
