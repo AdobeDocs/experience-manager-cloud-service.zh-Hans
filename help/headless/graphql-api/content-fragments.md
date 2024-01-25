@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 055d510f8bd3a227c2c51d7f0dea561f06f9b4fd
+source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
 workflow-type: tm+mt
-source-wordcount: '4924'
-ht-degree: 92%
+source-wordcount: '4994'
+ht-degree: 89%
 
 ---
 
@@ -714,7 +714,7 @@ query {
 
 经 Web 优化的图像传递支持您使用 GraphQL 查询来：
 
-* 请求 AEM Assets 图像的 URL
+* 请求DAM资产图像的URL(由 **内容引用**)
 
 * 通过查询传递参数，以便自动生成并返回图像的特定演绎版
 
@@ -734,9 +734,19 @@ query {
 
 GraphQL 中的解决方案意味着您可以：
 
-* 在 `ImageRef` 引用上使用 `_dynamicUrl`
+* 请求URL：使用 `_dynamicUrl` 在 `ImageRef` 引用
 
-* 将 `_assetTransform` 添加到定义筛选条件的列表标题
+* 传递参数：添加 `_assetTransform` 到在其中定义筛选器的列表标题
+
+<!-- 
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` : a Dynamic Media asset
+> 
+>If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
+-->
 
 ### 转换请求的结构 {#structure-transformation-request}
 
@@ -901,7 +911,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
      >
      >在末尾需要添加 `;` 才能完全终止参数列表。
 
-### 图像传递的限制 {#image-delivery-limitations}
+### Web优化图像投放的限制 {#web-optimized-image-delivery-limitations}
 
 存在以下限制：
 
@@ -911,6 +921,58 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
    * 创作时未缓存
    * 发布时缓存 – max-age 为 10 分钟（无法由客户端更改）
+
+<!--
+## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+
+GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+
+The solution in GraphQL means you can:
+
+* use `_dmS7Url` on the `ImageRef` reference
+
+>[!NOTE]
+>
+>For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>
+>This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+
+>[!NOTE]
+>
+>A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
+>* `_dmS7Url` : a Dynamic Media asset
+>* `_dynamicUrl` : a DAM asset
+> 
+>If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+
+### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+
+The following is a sample query:
+* for multiple Content Fragments of type `team` and `person`
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+} 
+```
+-->
 
 ## GraphQL for AEM – 执行摘要 {#graphql-extensions}
 
@@ -984,19 +1046,28 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
          * 请参阅[示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 
-   * 对于[图像传递](#image-delivery)：
+   * 对于图像投放：
 
-      * `_dynamicUrl`：在 `ImageRef` 引用上使用
+      * `_authorURL`：AEM创作实例上图像资源的完整URL
+      * `_publishURL`：AEM发布上的图像资源的完整URL
 
-      * `_assetTransform`：在定义筛选条件的列表标题上
+      * 对象 [Web优化图像交付](#web-optimized-image-delivery-in-graphql-queries) （共DAM资产）：
 
-      * 请参阅：
+         * `_dynamicUrl`：指向上的Web优化DAM资产的完整URL `ImageRef` 引用
 
-         * [具有完整参数的图像传递的示例查询](#image-delivery-full-parameters)
+           >[!NOTE]
+           >
+           >`_dynamicUrl` 是用于Web优化的DAM资产的首选URL，应该取代使用 `_path`， `_authorUrl`、和 `_publishUrl` 尽可能。
 
-         * [具有单个指定参数的图像传递的示例查询](#image-delivery-single-specified-parameter)
+         * `_assetTransform`：在定义过滤器的列表标题上传递参数
 
-   * `_tags`：显示包含标签的内容片段或变体的 ID；这是一个 `cq:tags` 标识符的数组。
+         * 请参阅：
+
+            * [使用完整参数进行Web优化图像投放的示例查询](#web-optimized-image-delivery-full-parameters)
+
+            * [使用单个指定参数进行Web优化图像投放的示例查询](#web-optimized-image-delivery-single-query-variable)
+
+   * `_tags`：用于显示包含标记的内容片段或变体的ID；这是一个数组 `cq:tags` 标识符。
 
       * 请参阅[示例查询 - 标记为“城市度假”的所有城市的名称](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
       * 请参阅[附加了特定标签的给定模型的内容片段变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -1027,6 +1098,13 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 * 在查询嵌套片段时回退：
 
    * 如果给定的变体在嵌套片段中不存在，则将返回&#x200B;**主**&#x200B;变体。
+
+<!-- between dynamicURL and tags -->
+<!--
+    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
+
+      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
+-->
 
 ## 从外部网站查询 GraphQL 端点 {#query-graphql-endpoint-from-external-website}
 

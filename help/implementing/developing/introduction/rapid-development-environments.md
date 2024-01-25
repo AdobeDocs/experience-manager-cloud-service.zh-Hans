@@ -2,10 +2,10 @@
 title: 快速开发环境
 description: 了解如何使用快速开发环境在云环境中进行快速开发迭代。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
 workflow-type: tm+mt
-source-wordcount: '3304'
-ht-degree: 5%
+source-wordcount: '3414'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
 
 1. 单击&#x200B;**保存**&#x200B;来添加指定环境。
 
-**概述**&#x200B;屏幕现在在&#x200B;**环境**&#x200B;信息卡中显示您的新环境。 
+此 **概述** 屏幕中现在显示您的新环境 **环境** 卡片。
 
 创建后，RDE将设置为最新可用的AEM版本。 也可以使用Cloud Manager执行的RDE重置会循环RDE并将其设置为最新可用的AEM版本。
 
@@ -310,11 +310,61 @@ The analyser found the following errors for publish :
 
 上述代码示例说明了捆绑包无法解析时的行为。 在这种情况下，它是“暂存”的，并且仅在通过安装其他代码来满足其要求（在本例中缺少导入）时才进行安装。
 
+<u>基于站点主题和站点模板部署前端代码</u>
+
+>[!NOTE]
+>
+>此功能尚未GA，但可由早期采用者使用。 请联系 **aemcs-rde-support@adobe.com** 以试用并提供反馈。
+
+RDE支持基于的前端代码 [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md). 对于RDE，这是使用命令行指令而不是Cloud Manager来部署前端包完成的 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 用于其他环境类型。
+
+与往常一样，使用npm构建前端软件包：
+
+`npm run build`
+
+它应生成 `dist/` 文件夹，因此前端包文件夹应包含 `package.json` 文件和 `dist` 文件夹：
+
+```
+ls ./path-to-frontend-pkg-folder/
+...
+dist
+package.json
+```
+现在，您可以通过指向前端包文件夹将前端包部署到RDE：
+
+```
+aio aem:rde:install -t frontend ./path-to-frontend-pkg-folder/
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+或者，您可以压缩 `package.json` 文件和 `dist` 文件夹并部署该zip文件：
+
+`zip -r frontend-pkg.zip ./path-to-frontend-pkg-folder/dist ./path-to-frontend-pkg-folder/package.json`
+
+```
+aio aem:rde:install -t frontend frontend-pkg.zip
+...
+#1: deploy completed for frontend frontend-pipeline.zip on author,publish - done by ... at 2024-01-18T15:33:22.898Z
+Logs:
+> Deployed artifact wknd-1.0.0-1705592008-26e7ec1a
+> with workspace hash 692021864642a20d6d298044a927d66c0d9cf2adf42d4cca0c800a378ac3f8d3
+```
+
+>[!NOTE]
+>
+>前端软件包中文件的命名必须遵循以下命名约定：
+> * “dist”文件夹，对于npm build输出包文件夹
+> * “package.json”文件，用于npm依赖关系包
+
 ### 检查RDE的状态 {#checking-rde-status}
 
 您可以使用RDE CLI检查环境是否已准备好部署到，以及通过RDE插件进行了哪些部署。
 
-正在运行:
+正在运行：
 
 `aio aem:rde:status`
 
@@ -470,8 +520,9 @@ RDE不同于其他环境，因为RDE中的内容可以安装在/apps下的instal
 另请注意以下注意事项：
 
 * RDE不包含预览层
-* RDE当前不支持查看和调试使用Cloud Manager前端管道部署的前端代码。
 * RDE当前不支持预发行版渠道。
+* 而RDE支持基于查看和调试前端代码 [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md) 部署后尚未做好正式发布准备工作，可供早期采用者使用。 请联系 **aemcs-rde-support@adobe.com** 以试用并提供反馈。
+
 
 
 ## 我需要多少个RDE？ {#how-many-rds-do-i-need}

@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.11.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.11.0 版的发行说明。'
-source-git-commit: c33874869bccae1e9837b30827a655e70636dd56
+exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
+source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] as a Cloud Service 2023.11.0 版的发行说明 {#release-notes}
 
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
+以下部分概述了 2023.11.0 版的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 97%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 资产视图中的新增功能 {#assets-view-features}
+### 资源视图中新增了几项功能 {#assets-view-features}
 
 * **嵌入在 AEM Assets 中的 Adobe Express 编辑器**：有权访问 Express 的用户现在可直接在 AEM Assets 中使用来自 Adobe Express 和 Adobe Firefly 的集成式图像编辑和创建工具以改善内容重用并加快内容速度。
 
@@ -78,7 +78,7 @@ ht-degree: 97%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### 中的新增功能 [!DNL Experience Manager Forms] {#forms-features}
+### [!DNL Experience Manager Forms] 中的新增功能 {#forms-features}
 
 * **[复选框组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**：基于核心组件的自适应表单现在包含复选框组件。通过它，用户可二选一，即选择或取消选择特定选项。它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。复选框是一个常见的表单元素，用于提供是/否或 true/false 选择。
 
@@ -92,7 +92,7 @@ ht-degree: 97%
 
 ### 中的新增功能 [!DNL Forms] 预发行版 {#prerelease-features-forms}
 
-* **[将自适应表单与 Microsoft® SharePoint 列表建立联系](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms 提供现成的集成以将表单数据直接提交到 SharePoint 列表，使您可利用 SharePoint 的列表功能。您可以将 Microsoft SharePoint 列表配置为表单数据模型的数据源，并使用&#x200B;**使用表单数据模型提交**&#x200B;提交操作以将自适应表单与 SharePoint 列表建立联系。
+* **[将自适应表单与 Microsoft® SharePoint 列表建立联系](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms 提供现成的集成以将表单数据直接提交到 SharePoint 列表，使您可利用 SharePoint 的列表功能。您可以将 Microsoft SharePoint 列表配置为表单数据模型的数据源，并使用&#x200B;**使用表单数据模型提交**&#x200B;提交操作将自适应表单与 SharePoint 列表建立联系。
 
 <!-- 
 
@@ -122,7 +122,7 @@ ht-degree: 97%
 
 请参阅[流量过滤规则](/help/security/traffic-filter-rules-including-waf.md)，包括 WAF。请与您的 AEM 帐户团队联系以了解许可 WAF-DDoS 保护或增强安全性。
 
-### CDN配置早期采用者计划 {#cdn-config-early-adopter}
+### CDN 配置早期采用者计划 {#cdn-config-early-adopter}
 
 除了最近发布的[流量过滤规则（包括 WAF）](/help/security/traffic-filter-rules-including-waf.md)，还有机会使用配置管道来声明和部署其他类型的 CDN 配置。我们很乐意了解您的用例，包括：
 * 301/302 客户端重定向
