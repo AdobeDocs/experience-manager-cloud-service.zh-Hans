@@ -3,10 +3,10 @@ title: 搜索最佳实践 [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: 在应用程序中搜索、查找和检索资源元数据的最佳实践。
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 47003c9aa0faefc01a9935c53a5a78938c37cf66
+source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 3%
+source-wordcount: '2527'
+ht-degree: 2%
 
 ---
 
@@ -251,11 +251,15 @@ When you are unsure about the title or meta description of an asset, you can use
 1. 将鼠标悬停在资产上>单击省略号>选择 [!UICONTROL 查找相似项].
 或选择资产>导航到右上方的省略号>选择 [!UICONTROL 查找相似项].
 
-   ![查找近似项](assets/find-similar.png)
+   ![查找相似项](assets/find-similar.png)
 
 1. 请注意搜索栏。 选定资源的缩略图会显示在搜索栏上，指示您的搜索要求。 因此，它会返回具有类似智能标记的资产。
 
-**[!UICONTROL 资产视图]** 不支持 [!UICONTROL 查找相似项] 选项。
+在中执行以下步骤 **[!UICONTROL 资产视图]**：
+
+1. 根据您的要求搜索资产。
+1. 选择图像>导航到 [!UICONTROL 查找类似图像] 选项。
+它会将您转到具有相似颜色和元数据的资源集合。
 
 ## 自定义搜索Facet {#custom-search-facets}
 
@@ -279,7 +283,7 @@ to be added later
 
 1. 从 Assets 用户界面中，打开资产的属性页面。单击 [!UICONTROL 高级] 并单击 [!UICONTROL 添加] 下 [!UICONTROL 提升搜索关键词].
 2. 在搜索提升框中，指定要提升图像搜索的关键字，然后单击 [!UICONTROL 添加]. 您可以按相同方式指定多个关键字。
-3. 单击“[!UICONTROL 保存并关闭]”。您针对此关键字提升的资产将显示在排名最前的搜索结果中。
+3. 单击 [!UICONTROL 保存并关闭]. 您针对此关键字提升的资产将显示在排名最前的搜索结果中。
 
 ## 在Experience Manager中执行搜索时的注意事项 {#notable-things}
 
@@ -415,11 +419,6 @@ The newly added assets are not indexed.
             <li> 内容片段模型
             </ul> 
         </td>
-        <td> 不受支持 </td>
-    </tr>
-     <tr>
-        <td> 查找近似项 </td>
-        <td> 支持 </td>
         <td> 不受支持 </td>
     </tr>
 </table>
