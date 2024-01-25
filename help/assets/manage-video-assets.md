@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: fd1c3d1e524e5882ae04ca784b618ddba123bdd6
+source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
 workflow-type: tm+mt
-source-wordcount: '4975'
+source-wordcount: '4976'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 ### 预览视频资产
 
-您可以在 [!DNL Assets] 用户界面。 要预览视频资源，请执行以下步骤：
+您可以在中预览受支持的呈现形式的视频 [!DNL Assets] 用户界面。 要预览视频资源，请执行以下步骤：
 
 1. 将支持格式的视频资产上传到 [!DNL Experience Manager Assets]. 了解关于 [支持的视频格式](file-format-support.md#video-formats). <br>上传后，将处理视频资产，并生成预览演绎版。
 1. 单击资产，然后选择 ![详细信息选项](assets/do-not-localize/details_icon.svg) **[!UICONTROL 详细信息]**  从顶部工具栏中。 视频资产将在视频查看器中打开。
