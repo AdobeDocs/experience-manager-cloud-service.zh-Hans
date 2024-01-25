@@ -5,9 +5,9 @@ topic-tags: author
 keywords: 添加自适应表单片段、自适应表单片段、创建表单片段、将片段添加到自适应表单、管理片段
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 5d9cf5d4dee5122263b15cee8874975887c57219
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1789'
 ht-degree: 3%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 3%
 
 您可以将片段多次添加到文档，并使用其组件的数据绑定属性将其绑定到不同的数据源或架构。 例如，您可以将相同的地址片段用于永久地址、通信地址和账单地址，并将其连接到数据源或架构的不同字段。
 
+>[!NOTE]
+>
+> 您可以使用轻松为用户自定义片段体验 [表单片段组件的“配置”对话框和“设计”对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
+
 ## 创建表单片段 {#create-a-fragment}
 
 您可以从头开始创建自适应表单片段，或将现有自适应表单中的面板另存为片段。 要创建表单片段，请执行以下操作：
@@ -43,22 +47,22 @@ ht-degree: 3%
 
 1. 单击以打开 **表单模型** 选项卡，然后从 **选择自** 下拉菜单，为片段选择以下模型之一：
 
-   ![在表单模型选项卡中显示模型类型](assets/create-af-1-1.png)
+   ![在“表单模型”选项卡中显示模型类型](assets/create-af-1-1.png)
 
-   * **无**：指定从头开始创建片段，而不使用任何表单模型。
+   * **无**：指定在不使用任何表单模型的情况下从头开始创建片段。
 
      >[!NOTE]
      >
-     > 在自适应 Forms 中，您可以多次使用单个表单片段（基于核心组件）。 它支持基于无和模式的表单片段。
+     > 在自适应表单中，您可以多次使用单个表单片段（基于核心组件）。 它支持基于无和基于架构的表单片段。
 
-   * **架构** ：指定使用上载到 AEM Forms 的 XML 或 JSON 模式创建片段。 您可以上传或从可用的 XML 或 JSON 架构中选择作为片段的表单模型。 选择 XML 模式时，您还可以通过从 &quot;XML 架构复杂类型 ]**&quot;**[!UICONTROL  下拉框中选择所选模式中存在的 complexType 来创建自适应表单片段。选择 JSON 模式时，还可以通过从 **[!UICONTROL JSON 架构定义]** 下拉框中选择所选模式中存在的模式定义来创建自适应表单片段。
-   * **表单数据模型** ：指定使用表单数据模型创建片段。 您可以在表单数据模型中仅基于一个数据模型对象创建自适应表单片段。 展开表单数据模型定义下拉列表。 它列出了指定表单数据模型中的所有数据模型对象。 从列表中选择数据模型对象。
+   * **架构**：指定使用上传到 AEM 表单的 XML 或 JSON 架构创建片段。 您可以上传或从可用的XML或JSON架构中选择作为片段的表单模型。 选择XML架构时，您还可以通过从中选择所选架构中存在的complexType来创建自适应表单片段。 **[!UICONTROL XML结构描述复杂类型]** 下拉框。 选择JSON架构时，您还可以通过从中选择所选架构中存在的架构定义来创建自适应表单片段。 **[!UICONTROL JSON架构定义]** 下拉框。
+   * **表单数据模型**：指定使用表单数据模型创建片段。 您可以仅基于表单数据模型中的一个数据模型对象创建自适应表单片段。 展开表单数据模型定义下拉列表。 它列出了指定表单数据模型中的所有数据模型对象。 从列表中选择数据模型对象。
 
    ![表单数据模型](assets/create-af-3.png)
 
 
 
-1. 单击 **创建** 然后单击 **打开** 以在编辑模式下使用默认模板打开片段。 在编辑模式下，您可以将任何自适应表单组件添加到片段。
+1. 单击“创建&#x200B;**”，然后单击“打开”****，以在编辑模式下使用默认模板打开**&#x200B;片段。在编辑模式下，您可以将任何自适应表单组件添加到片段。
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果您选择了XML架构或XDP表单模板作为片段的表单模型，则内容查找器中会显示一个显示表单模型层次结构的新选项卡。 它可让您将表单模型元素拖放到片段上。 添加的表单模型元素被转换为表单组件，同时保留关联XDP或XSD的原始属性。
 
@@ -70,12 +74,12 @@ ht-degree: 3%
 要将自适应表单片段添加到自适应表单：
 
 1. 在编辑模式下打开自适应表单。
-1. **将自适应表单片段** 组件添加到表单。
-1. 单击侧栏浏览器的 **Assets** 内容。 在 Assets 浏览器的路径下，选择 &quot;自适应表单片段 **&quot;** 选项。将显示表单的所有可用的自适应 Forms 片段，具体取决于表单的模型。
+1. **将自适应表单片段**&#x200B;组件添加到表单中。
+1. 单击&#x200B;****&#x200B;侧边栏中的资产内容浏览器。在资产浏览器中的路径下，选择 **自适应表单片段** 选项。 将显示所有可用于表单的自适应表单片段，具体取决于表单的模型。
 
-   ![选择 &quot;自适应表单片段&quot; 选项](assets/adaptive-forms-fragments.png)
+   ![选择自适应表单片段选项](assets/adaptive-forms-fragments.png)
 
-1. 将自适应表单片段拖放到自适应表单上的 **自适应表单片段** 组件上。
+1. 将自适应表单片段拖放到 **自适应表单片段** 自适应表单上的组件。
 
    >[!NOTE]
    >
@@ -161,20 +165,20 @@ Perform the following steps to show complete fragments in forms:
   </tr>
   <tr>
    <td><p>新增字典</p> </td>
-   <td><p>生成用于本地化所选片段的字典。 有关更多信息，请参阅 <a> 本地化自适应 Forms </a> 。 <br /> <br /> </p> </td>
+   <td><p>生成用于本地化选定片段的词典。 有关更多信息，请参阅 <a>本地化自适应表单</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Publish/取消发布</p> </td>
-   <td><p>发布/取消选定片段。 <br /> <br /> </p> </td>
+   <td><p>发布/取消发布</p> </td>
+   <td><p>发布/取消发布选定的片段。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>删除</p> </td>
-   <td><p>删除选定片段。 <br /> <br /> </p> </td>
+   <td><p>删除选定的片段。<br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
 
-## 使用片段时需要记住的要点 {#key-points-to-remember-when-working-with-fragments}
+## 使用片段时要记住的要点 {#key-points-to-remember-when-working-with-fragments}
 
 * 确保片段名称是唯一的。 如果存在具有相同名称的现有片段，则创建片段失败。
 * 在基于XDP的自适应表单中，如果您将面板另存为包含其他XDP片段的片段，则生成的片段将自动绑定到子XDP片段。 在基于XSD的自适应表单中，生成的片段将绑定到架构根。
@@ -183,15 +187,15 @@ Perform the following steps to show complete fragments in forms:
 * 自适应表单片段可通过AEM内容查找器中的自适应表单片段选项卡使用。
 * 通过引用插入或嵌入自适应表单中的独立自适应表单片段中的任何表达式、脚本或样式都会保留。
 * 您无法从自适应表单中编辑通过引用插入的自适应表单片段。 要编辑，您需要编辑独立的自适应表单片段或将片段嵌入自适应表单中。
-* 发布自适应表单时，您需要发布在自适应表单中通过引用插入的独立自适应表单片段。
+* 发布自适应表单时，您需要发布通过引用插入到自适应表单中的独立自适应表单片段。
 * 当您重新发布更新的自适应表单片段时，更改会反映在使用片段的自适应表单的已发布实例中。
-* 包含验证组件的自适应表单不支持匿名用户。 此外，不 reommended 在自适应表单片段中使用验证组件。
-* （ **仅** Mac）要确保表单片段功能在所有方案中都能正常工作，请将以下条目添加到/private/etc/hosts 文件中：
-  `127.0.0.1 <Host machine>`**主机计算机** ：部署 AEM Forms 的 Apple Mac 计算机。
+* 包含验证组件的自适应表单不支持匿名用户。 此外，不建议在自适应表单片段中使用验证组件。
+* （**仅限** Mac）为确保表单片段功能在所有场景中都能完美运行，请将以下条目添加到 /private/etc/hosts 文件中：
+  `127.0.0.1 <Host machine>` **主机**：部署AEM Forms的Apple Mac计算机。
 
 ## 引用片段 {#reference-fragments}
 
-可用于创建表单的参考自适应表单片段可用。
+提供了可用于创建表单的参考自适应表单片段。
 <!-- For more information, see [Reference Fragments](../../forms/using/reference-adaptive-form-fragments.md). -->
 
 
