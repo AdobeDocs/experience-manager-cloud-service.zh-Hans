@@ -3,9 +3,9 @@ title: 配置生产管道
 description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1422'
 ht-degree: 72%
 
 ---
@@ -123,18 +123,17 @@ ht-degree: 72%
 
 目标部署仅会为AEM应用程序的选定部分部署代码。 在此类部署中，您可以选择 **包括** 以下代码类型之一：
 
-* **[配置](#config)**  — 在AEM环境、维护任务、CDN规则等上配置设置。
+* **配置**  — 在AEM环境中配置流量过滤器规则的设置。
    * 查看文档 [包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 了解如何管理存储库中的配置，以便正确部署它们。
-* **[前端代码](#front-end-code)**  — 为AEM应用程序的前端配置JavaScript和CSS。
+   * 运行目标部署管道时， [WAF配置](/help/security/traffic-filter-rules-including-waf.md) 将部署，前提是将它们保存到您在管道中定义的环境、存储库和分支中。
+   * 在任何时候，每个环境只能有一个配置管道。
+* **前端代码**  — 为AEM应用程序的前端配置JavaScript和CSS。
    * 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
    * 请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
-* **[Web层配置](#web-tier-config)**  — 配置Dispatcher属性以存储、处理网页并将其交付给客户端。
-
->[!NOTE]
->
->* 如果所选环境存在 Web 层代码管道，则会禁用此选择。
->* 如果将现有的全栈管道部署到环境中，则为同一环境创建 Web 层配置管道将忽略全栈管道中的现有 Web 层配置。
-> * 在任何时候，每个环境只能有一个配置管道。
+* **Web层配置**  — 配置Dispatcher属性以存储、处理网页并将其交付给客户端。
+   * 查看文档 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 以了解更多详细信息。
+   * 如果所选环境存在 Web 层代码管道，则会禁用此选择。
+   * 如果将现有的全栈管道部署到环境中，则为同一环境创建 Web 层配置管道将忽略全栈管道中的现有 Web 层配置。
 
 选择部署类型后，完成创建生产目标部署管道的步骤相同。
 
@@ -165,8 +164,6 @@ ht-degree: 72%
 1. 单击“**保存**”。
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
-
-运行目标部署管道时，配置 [例如WAF配置](/help/security/traffic-filter-rules-including-waf.md) 将部署，前提是将它们保存到您在管道中定义的环境、存储库和分支中。
 
 ## 跳过 Dispatcher 程序包 {#skip-dispatcher-packages}
 
