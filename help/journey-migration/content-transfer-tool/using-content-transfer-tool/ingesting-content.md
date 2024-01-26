@@ -2,9 +2,9 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4c8565d60ddcd9d0675822f37e77e70dd42c0c36
+source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2410'
 ht-degree: 7%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 7%
    > 如果提取正在运行，则对话框将指示该情况。 成功完成提取后，摄取将自动开始。 如果提取失败或停止，则提取作业将撤销。
 
    * **目标：** 选择目标环境。 在此环境中摄取迁移集的内容。
-      * 摄取不支持快速开发环境(RDE)目标，并且即使用户有权访问，摄取也不会显示为可能的目标选择。
+      * 摄取不支持快速开发环境(RDE)或预览类型的目标，并且即使用户有权访问，摄取也不会显示为可能的目标选择。
       * 虽然可将迁移集同时引入到多个目标中，但目标一次只能是一个正在运行或正在等待引入的目标。
 
    * **层：** 选择层。 （创作/发布）。
