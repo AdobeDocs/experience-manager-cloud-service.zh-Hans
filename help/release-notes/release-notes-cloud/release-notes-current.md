@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: fa106c2e3fec70971e2c54572199e35c24db0aa7
+source-git-commit: 8c33426c38b087c83b945572374089ad9cb44daf
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 63%
+source-wordcount: '775'
+ht-degree: 64%
 
 ---
 
@@ -32,15 +32,11 @@ ht-degree: 63%
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!-- 
+## 发布视频 {#release-video}
 
-## Release Video {#release-video}
+观看 2024 年 1 月版概述视频，大致了解 2024.1.0 版的新增功能：
 
-Have a look at the December 2023 Release Overview video for a summary of the features added in the 2023.12.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
