@@ -2,10 +2,10 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: f9d584d7b117c24224079f581802f5f126890304
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 73%
+source-wordcount: '871'
+ht-degree: 76%
 
 ---
 
@@ -104,8 +104,6 @@ X-Frame-Options：SAMEORIGIN 阻止在 iframe 中呈现 AEM 页面。移除标�
 ## 在页面上插桩 {#instrument-page}
 
 Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 来为正在编辑的应用程序内容识别和使用正确的后端系统。因此，需要 URN 模式将内容映射回内容资源。
-
-添加到页面中的检测属性主要包括 [HTML微数据，](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Microdata) 一种行业标准，也可用于使HTML更具语义、使HTML文档可索引等等。
 
 ### 创建连接 {#connections}
 
