@@ -3,9 +3,9 @@ title: 已弃用和已删除的功能
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的功能的发行说明。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: cb2c883fbadc5347dbe5fc50337abc41d4f5cec3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2068'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Assets] | 不支持 `DAM Asset Update` 工作流中的[某些工作流步骤](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)，包括 [!DNL ImageMagick] 等调用命令行工具。 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资产微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 复制代理的“分发”选项卡下的树复制 UI（在 2021 年 9 月 30 日后被删除） | [管理出版物](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)方法 |
-| [!DNL Foundation] | 复制代理管理屏幕的分发选项卡和复制API都不能用于复制超过10MB的内容包。 请改用 [管理发布](/help/operations/replication.md#manage-publication) 或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | 复制代理管理屏幕的“分发”选项卡和复制 API 都不能用于复制超过 10MB 的内容包。请改用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## 已删除功能 {#removed-features}
 
@@ -61,30 +61,30 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ## OSGI 配置 {#osgi-configuration}
 
-以下两个列表反映了AEMas a Cloud ServiceOSGi配置表面，描述了客户可以配置的内容。
+下面的两个列表反映 AEM as a Cloud Service OSGi 配置表面，并描述客户可配置的内容。
 
-1. 不得由客户代码配置的OSGi配置列表
-1. OSGi配置的列表，虽然可以配置其属性，但必须遵循指示的验证规则。 这些规则包括是否需要声明属性、属性类型以及在某些情况下允许的值范围。
+1. 不得由客户代码配置的 OSGi 配置的列表
+1. 可配置其属性但必须遵守所示验证规则的 OSGi 配置的列表。这些规则包括是否需要属性声明、其类型，在某些情况下还包括其允许的值范围。
 
-如果未列出OSGI配置，则可能由客户代码对其进行配置。
+如果未列出某项 OSGI 配置，则可由客户代码配置它。
 
-这些规则将在Cloud Manager构建过程中进行验证。 随着时间的推移，可能会添加其他规则，预计的执行日期会记在表中。 客户应在目标执行日期之前遵守这些规则。 在删除日期之后不遵守规则将在Cloud Manager构建过程中生成错误。 Maven项目应包括 [AEMas a Cloud ServiceSDK构建分析器Maven插件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) 标记本地SDK开发期间的OSGI配置错误。
+在 Cloud Manager 构建过程中验证这些规则。可能逐渐添加其他规则，并在表中注明预期的实施日期。客户应在目标实施日期之前遵守这些规则。在删除日期后不遵守这些规则将在 Cloud Manager 构建过程中产生错误。Maven 项目应包括 [AEM as a Cloud Service SDK 构建分析器 Maven 插件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)以在开发本地 SDK 期间标出 OSGI 配置错误。
 
-有关OSGI配置的其他信息，请访问 [此位置](/help/implementing/deploying/configuring-osgi.md).
+可在[此位置](/help/implementing/deploying/configuring-osgi.md)找到有关 OSGI 配置的其他信息。
 
-无法修改的+++OSGi配置。
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
-* **`org.apache.felix.http (Factory)`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** （公告日期：2021年8月25日，执行日期：2021年11月26日）
++++无法修改的 OSGi 配置。
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`**（公告日期：2021 年 4 月 30 日，实施日期：2021 年 7 月 31 日）
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`**（公告日期：2021 年 4 月 30 日，实施日期：2021 年 7 月 31 日）
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`**（公告日期：2021 年 4 月 30 日，实施日期：2021 年 7 月 31 日）
+* **`org.apache.felix.http (Factory)`**（公告日期：2021 年 4 月 30 日，实施日期：2021 年 7 月 31 日）
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`**（公告日期：2021 年 8 月 25 日，实施日期：2021 年 11 月 26 日）
 +++
 
-+++OSGi配置应遵循生成验证规则。
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
++++OSGi 配置受构建验证规则的约束。
+* **`org.apache.felix.eventadmin.impl.EventAdmin`**（公告日期：2021 年 4 月 30 日，实施日期：2021 年 7 月 31 日）
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * 类型：整数
-   * 所需范围：2-100
+   * 要求的范围：2-100
 * `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
    * 类型：双精度
 * `org.apache.felix.eventadmin.Timeout`
@@ -94,10 +94,10 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 * `org.apache.felix.eventadmin.IgnoreTimeout`
    * 必填
    * 类型：字符串数组
-   * 所需范围：必须至少包含所有 `org.apache.felix*`， `org.apache.sling*`， `come.day*`， `com.adobe*`
+   * 要求的范围：必须包括至少 `org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*` 所有这些
 * `org.apache.felix.eventadmin.IgnoreTopic`
    * 类型：字符串数组
-* **`org.apache.felix.http`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+* **`org.apache.felix.http`**（公告日期：2021 年 4 月 30 日，实施日期：2021 年 7 月 31 日）
    * `org.apache.felix.http.timeout`
       * 类型：整数
    * `org.apache.felix.http.session.timeout`
@@ -160,20 +160,20 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
       * 类型：字符串数组
    * `org.apache.felix.http.session.uniqueid`
       * 类型：布尔值
-* **`org.apache.sling.scripting.cache`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+* **`org.apache.sling.scripting.cache`**（公告日期：2021 年 4 月 30 日，实施日期：2021 年 7 月 31 日）
    * `org.apache.sling.scripting.cache.size`
       * 类型：整数
-      * 所需范围： >= 2048
+      * 要求的范围：>= 2048
    * `org.apache.sling.scripting.cache.additional_extensions`
       * 必填
       * 类型：字符串数组
-      * 所需范围：必须包括js
-* **`com.day.cq.mailer.DefaultMailService`** （公告日期：2021年4月30日，执行日期：2021年7月31日）
+      * 要求的范围：必须包括 js
+* **`com.day.cq.mailer.DefaultMailService`**（公告日期：2021 年 4 月 30 日，实施日期：2021 年 7 月 31 日）
    * `smtp.host`
       * 类型：字符串
    * `smtp.port`
       * 类型：整数
-      * 所需范围：465、587或25
+      * 要求的范围：465、587 或 25
    * `smtp.user`
       * 类型：字符串
    * `smtp.password`
@@ -190,10 +190,10 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
       * 类型：布尔值
    * `oauth.flow`
       * 类型：布尔值
-* **`org.apache.sling.commons.log.LogManager.factory.config`** （公告日期：2021年11月16日，执行日期：2021年2月16日）
+* **`org.apache.sling.commons.log.LogManager.factory.config`**（公告日期：2021 年 11 月 16 日，实施日期：2021 年 2 月 16 日）
    * `org.apache.sling.commons.log.level`
       * 类型：明细列表
-      * 所需范围： INFO、DEBUG或TRACE
+      * 要求的范围：INFO、DEBUG 或 TRACE
    * `org.apache.sling.commons.log.names`
       * 类型：字符串
    * `org.apache.sling.commons.log.file`

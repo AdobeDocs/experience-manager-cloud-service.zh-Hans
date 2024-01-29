@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1573'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -15,27 +15,27 @@ ht-degree: 89%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.16的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年1月19日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.16 版的发布日期是 2024 年 1 月 19 日。
 
 ## 版本亮点 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
 
-* 此 [!DNL Workfront] 中的配置 [!DNL CRX DE] 当前不存储 `project ID`，导致在应用只读权限时出错。 详细了解如何 [配置权限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+* [!DNL CRX DE] 中的 [!DNL Workfront] 配置当前未存储 `project ID`，导致应用只读权限时出错。详细了解如何[配置权限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders)。
 
-* 没有公开文档说明如何将自定义属性添加到开箱即用索引定义。 了解有关 [添加自定义属性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+* 没有公开的文档涉及如何将自定义属性添加到现成的索引定义。详细了解[添加自定义属性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)。
 
-* 删除增强型连接器上的连接配置将会显着影响事件订阅和其他保存的配置，从而导致它们指向旧URL。
+* 删除增强型连接器上的连接配置显著影响事件订阅和其他保存的配置，导致其指向旧 URL。
 
-* 安装Forms附加组件包不会安装 **[!UICONTROL 切换路由器]**，导致失败 [!DNL WFEC AMS environment Toggle] 功能。
+* 安装表单附加组件包却不安装&#x200B;**[!UICONTROL 切换路由器]**，导致 [!DNL WFEC AMS environment Toggle] 功能故障。
 
-* 在EWC设置中启用事件订阅会导致反复出现的API调用失败 `HTTP 400` 设置时出错 [!DNL Workfront] 增强型连接器。
+* 在 EWC 设置上启用事件订阅导致在首次设置 [!DNL Workfront] 增强型连接器时调用 API 反复失败，发生 `HTTP 400` 错误。
 
-* 在Workfront中删除对链接文件夹资源的评论时，无法在AEM中找到链接文件夹路径。
+* 在 Workfront 上删除关于链接文件夹资源的评论无法在 AEM 上找到链接文件夹路径。
 
-* AEM对大文件资产的支持不足会导致出现4字节大小问题。
+* AEM 中对大文件资源的支持不足导致 4 字节大小问题。
 
-* 链接文件夹、文档更新和注释更新中的关键流没有请求时间处理。
+* 对于链接文件夹、文档更新和注释更新中的关键流程无请求时处理。
 
 >[!NOTE]
 >

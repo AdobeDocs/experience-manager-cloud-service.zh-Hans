@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.1.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中的 Cloud Manager 2024.1.0 发行说明。
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.1.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ AEM as a Cloud Service 中的 Cloud Manager 2024.1.0 版本的发布日期是 20
 
 ## 新增功能 {#what-is-new}
 
-* Cloud Manager现在不仅验证主服务器的到期日期， [证书，](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) 对于中间证书也是如此。
-* CDN [日志](/help/implementing/cloud-manager/manage-logs.md) 现在会以压缩格式返回。
+* Cloud Manager 现在不仅验证主[证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)的到期日期，还验证中间证书的到期日期。
+* 现在以压缩格式返回 CDN [日志](/help/implementing/cloud-manager/manage-logs.md)。
 
 ## 早期采用计划 {#early-adoption}
 
@@ -69,5 +69,5 @@ AEM as a Cloud Service 中的 Cloud Manager 2024.1.0 版本的发布日期是 20
 
 ## 错误修复 {#bug-fixes}
 
-* 已更正以下错误：如果未正确设置配置文件的位置，则配置管道将在构建步骤中失败，并显示不明确的错误消息。 现在，错误消息已清除，并指示用户应检查配置文件的位置是否正确。
-* 当构建步骤以状态完成时 `FAILED` 应付 `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`，由于与目标分支存在合并冲突，因此现在可将其正确描述为错误。
+* 纠正了一个错误，其中如果未正确设置配置文件的位置，则配置管道将在构建步骤发生故障，并且错误消息不明确。该错误消息现已明确，指示用户应确认配置文件的位置正确无误。
+* 在构建步骤完成，并因 `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR` 导致状态为 `FAILED` 时，现在正确地将它描述为因与目标分支发生合并冲突而导致的错误。

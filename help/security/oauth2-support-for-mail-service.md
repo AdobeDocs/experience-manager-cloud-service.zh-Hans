@@ -3,9 +3,9 @@ title: 对邮件服务的 OAuth2 支持
 description: Adobe Experience Manager as a Cloud Service 中对邮件服务的 Oauth2 支持
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -165,7 +165,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
    ```
 
 1. 对于 Outlook，`smtp.host` 配置值为 `smtp.office365.com`
-1. 在运行时，传入 `refreshToken values` 和 `clientSecret` 使用Cloud Manager变量API密钥，如所述 [此处](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) 或使用 [Cloud Manager ，用于添加变量。](/help/implementing/cloud-manager/environment-variables.md) 变量的值 `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  和 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 应进行定义。
+1. 在运行时，如[此处](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)所述的那样使用 Cloud Manager 变量 API 传入 `refreshToken values` 和 `clientSecret` 密钥，或通过使用 [Cloud Manager 添加变量](/help/implementing/cloud-manager/environment-variables.md)而传入。应定义变量 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 和 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 的值。
 
 ### 疑难解答 {#troubleshooting}
 
