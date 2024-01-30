@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '3526'
-ht-degree: 100%
+source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
+workflow-type: tm+mt
+source-wordcount: '3540'
+ht-degree: 99%
 
 ---
 
@@ -349,6 +349,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 * 仅限于支持单个 VPN 连接
 * 无法在 VPN 连接上使用 Splunk 转发功能。
+* DNS解析器必须列在网关地址空间中，才能解析专用主机名。
 
 ### 创建 {#vpn-creation}
 
