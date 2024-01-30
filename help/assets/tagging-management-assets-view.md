@@ -2,10 +2,10 @@
 title: 如何在资源视图中管理标记？
 description: 了解如何在资源视图中管理标记。标记帮助您将资源分类，这样可更高效地浏览和搜索资源。
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: ea0978d09ce74d37487cd921496b03acbfd632d0
+source-git-commit: cadf0e383608a39200d716cc698ad1979f24fd1d
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 95%
+source-wordcount: '1739'
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 标记帮助您将资源分类，这样可更高效地浏览和搜索资源。标记有助于将适当的分类传播给其他用户和工作流程。
 
-随着时间的推移，受控词汇的扁平列表变得难以管理。管理员可使用分层的标记结构，该结构便于应用相关的元数据、为资源分类、支持搜索、重用标记、提高可发现性等。
+随着时间的推移，受控词汇的扁平列表变得难以管理。管理员可以使用分层的标记结构，该结构便于应用相关的元数据、为资源分类、支持搜索、重用标记、提高可发现性等。
 
 您可以在根级别创建命名空间，并在命名空间内创建子标记的层次结构。例如，您可以在根级别创建一个`Activities`命名空间，并在该命名空间中具有 `Cycling`、`Hiking` 和 `Running` 标记。您可以在 `Running` 中有更多的子标记 `Clothing` 和 `Shoes`。
 
@@ -33,7 +33,7 @@ ht-degree: 95%
 
 * 随着组织词汇的变化，标记可能会随着时间的推移而演变。
 
-* 在Assetsas a Cloud Service中管理的标记与Assets视图中管理的标记保持同步，这确保元数据治理和完整性。
+* 在管理视图中管理的标记与在资源视图中管理的标记保持同步，从而确保元数据得到治理及其完整性。
 
 若要将标记应用于资源，您必须首先创建一个命名空间，然后创建并向其添加标记。您还可以创建标记并将其添加到现有命名空间。您在根级别创建的任何标记都会自动添加到标准标记命名空间。然后，您可以将“标记”字段添加到元数据表单，以便它显示在“资源详细信息”页面上。配置这些设置后，您可以开始将标记应用到资源。
 
@@ -43,9 +43,9 @@ ht-degree: 95%
 
 ![标记管理](assets/tagging-taxonomy-management.png)
 
-除了在本文中提到的功能之外，在 Assets as a Cloud Service 中还有包括合并、重命名、本地化和发布标记在内的其他功能可用。
+除了本文提到的功能之外，管理视图中还提供了其他功能，包括合并、重命名、本地化和发布标记。
 
-## 创建命名空间 {#creating-a-namespace}
+## 创建命名空间 {#create-a-namespace}
 
 命名空间是只能存在于根级别的标记的容器。您可以通过首先为命名空间定义逻辑名称来开始设置标记的层次结构。如果您未将标记添加到任何现有命名空间，该标记将自动移至标准标记部分。
 
@@ -57,39 +57,39 @@ ht-degree: 95%
 
    ![标记管理](assets/tags-hierarchy.png)
 
-   <!--
-    >[!NOTE]
-    >You can use `Name` as a primary key if you are using any other metadata management tool is the source of truth for taxonomy values, you can use the name as a primary key.
-    >
-    -->
-
 1. 单击 `Save`.
 
-## 将标记添加到命名空间 {#adding-tags-to-namespace}
+## 将标记添加到命名空间 {#add-tags-to-namespace}
 
 执行以下步骤可将标记加入命名空间：
 
-1. 转到 `Taxonomy Management`.
+1. 转到 **[!UICONTROL 分类管理]**.
 1. 选择命名空间并单击`Create`，在命名空间下的顶层创建标记。如果您需要在命名空间中存在的标记下创建子标记，请选择该标记，然后单击 `Create`。
    ![标记的层次结构](assets/hierarchy-of-tags.png)
 
    在本例中，左侧的图像表示 `Path` 字段中显示的命名空间`automobile-four-wheeler`正下方的标记。右图是标记内添加的子标记的示例，因为除了命名空间之外，`Path` 字段中还显示了更多的标记名称、`jeep` 和 `jeep-meridian`。
 1. 指定标记的标题、名称和描述，然后单击 `Save`。
 
-## 将标记添加到标准标记 {#adding-tags-to-standard-tags}
+
+   >[!NOTE]
+   >
+   >* `Title` 和 `Name` 字段是强制性的，而 `Description` 字段是可选的。
+   >* 默认情况下，该工具会复制您在“标题”字段中键入的文本，删除空格或特殊字符 (.&amp; / \ : * ? [ ] | &quot; %)，并将其存储为名称。
+   >* 您可以稍后更新 `Title` 字段，但 `Name` 字段是只读的。
+
+## 将标记添加到标准标记 {#add-tags-to-standard-tags}
 
 非结构化标记或没有任何层次结构的标记会存储在 `Standard Tags` 命名空间。此外，当您想要添加其他描述性术语而不影响受到管理的分类法时，您可以将该值存储在 `Standard Tags`。随着时间的推移，您可以将这些值移动到结构化命名空间下。此外，您还可以使用`Standard Tags`名称空间作为关键字的自由形式条目。
 
 要创建标准标记，请单击根级别的 `Create Tag`。指定标题、名称和描述，然后单击 `Save`。
 
 ![将标记添加到标准标记](assets/adding-tags-to-standard-tags.png)
-<!--
+
 >[!NOTE]
 >
->If you delete `Standard Tags` namespace using Assets as a Cloud Service, the tags created at the root-level do not display in the list of available tags. 
--->
+>如果您使用 Assets as a Cloud Service 删除 `Standard Tags` 命名空间，则在可用标记的列表中不显示在根级别创建的标记。
 
-## 移动标记 {#moving-tags}
+## 移动标记 {#move-tags}
 
 如果您将标记存储在错误的层次结构下或者分类法随着时间的推移而发生变化，您可以移动选定的标记以保持数据完整性。移动标记时必须考虑以下条件：
 
@@ -103,7 +103,7 @@ ht-degree: 95%
 1. 在“移动”对话框中，使用 `Select Tag` 部分选择新的目标标记或命名空间。
 1. 单击 `Save`. 标记显示在新位置。
 
-## 编辑标记 {#editing-tags}
+## 编辑标记 {#edit-tags}
 
 要编辑标记的标题，请选择该标记并单击 `Edit`。指定新标题并单击 `Save`。
 
@@ -112,7 +112,7 @@ ht-degree: 95%
 >* 标记的 `Name` 无法更新。标记的根路径也基于标记的名称。即使更新了 `Title` 字段，路径也保持不变。
 >* 在 Assets as a Cloud Service 中还有合并、本地化和发布等其他操作可用。
 
-## 正在删除标记 {#deleting-tags}
+## 删除标记 {#delete-tags}
 
 您可以同时删除多个命名空间或标记。删除操作无法撤消。
 
@@ -127,16 +127,16 @@ ht-degree: 95%
 >* 删除标记也会从资源中删除其所有引用。
 >* 您无法删除根级别内的标准标记。
 
-## 将标记组件添加到元数据表单 {#adding-tags-to-metadata-form}
+## 将标记组件添加到元数据表单 {#add-tags-to-metadata-form}
 
-标记组件会自动添加到 `default` 元数据表单中。您可以使用模板或从头开始设计[元数据表单](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您使用的不是现有的元数据表单模板，则可以修改您的元数据表单并添加标记组件。元数据属性映射是自动填充的，因此此时无法修改。Assets as a Cloud Service 用户可更新映射以使用自定义命名空间存储标记值，还可使用根路径仅公开层次结构的子集。
+标记组件会自动添加到 `default` 元数据表单中。您可以使用模板或从头开始设计[元数据表单](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您使用的不是现有的元数据表单模板，则可以修改您的元数据表单并添加标记组件。元数据属性映射是自动填充的，因此此时无法修改。[!DNL Assets as a Cloud Service] 用户可以更新映射以使用自定义命名空间存储标记值，并使用根路径仅公开层次结构的子集。
 
 观看此简短视频，了解如何将标记组件添加到元数据表单中：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420452)
 
 
-### 为资源添加标记 {#adding-tags-to-assets}
+### 将标记添加到资源 {#add-tags-to-assets}
 
 1. 转到资源详细信息页面，并导航到元数据表单的 `Tags` 部分。
 1. 选择“标记”字段旁边的标记选择器图标，或开始输入标记名称以查看建议的结果。
@@ -144,10 +144,63 @@ ht-degree: 95%
    ![标记资源](assets/adding-tags-to-assets.png)
 
 1. 选择一个或多个标记。 子标记将与父标记或名称空间一起自动选择。
-在Assets视图中修改的标记也会在Assetsas a Cloud Service应用。
+在 Assets Essentials 中修改的标记还被应用于 Assets as a Cloud Service 中。
 
->[!NOTE]
->
->* `Title` 和 `Name` 字段是强制性的，而 `Description` 字段是可选的。
->* 默认情况下，该工具会复制您在“标题”字段中键入的文本，删除空格或特殊字符 (.&amp; / \ : * ? [ ] | &quot; %)，并将其存储为名称。
->* 您可以稍后更新 `Title` 字段，但 `Name` 字段是只读的。
+## 将标签添加到阻止列表 {#blocklist-essentials}
+
+[!DNL Assets view] 允许您配置一个阻止列表，其中包含不应在资源上传到存储库时作为智能标记添加到资源的单词。 此功能帮助您确保品牌合规，从而减少审核智能标记的工作量。
+<!--
+### Block smart tags for single asset {#block-smart-tags-for-single-asset}
+![block smart tags](assets/block-smart-tags.png)
+-->
+
+### 阻止所有资产的智能标记 {#block-smart-tags-for-all-assets}
+
+[!DNL Assets view] 允许管理员阻止现有资源和新添加资源的智能标记。 要阻止标记，请执行以下步骤：
+
+1. 导航到 **[!UICONTROL 已阻止的标记]** 下 **[!UICONTROL 设置]**.
+1. 单击 **[!UICONTROL 添加阻止的标记]**.
+1. 在文本框中键入需要阻止的标记，然后单击 **[!UICONTROL 输入]**.
+1. 添加完标记后，单击 **[!UICONTROL 添加]**. 输入的标记将列在阻止的标记列表中。
+
+   >[!NOTE]
+   >
+   >一次最多可以向列表中添加25个标记。 重复这些步骤以向阻止列表添加更多标签。
+
+您还可以为单个资产阻止智能标记。 导航到资源的详细信息。 下 **[!UICONTROL 标记]** 选项卡，删除不需要的智能标记，然后单击 **[!UICONTROL 保存]**. 标记将在选定资源的阻止列表中列出。
+
+### 在阻止列表时执行的操作 {#blocklist-actions}
+
+* **删除标记：** 您也可以从阻止列表中删除标签。 为此，请选择一个或多个要删除的标记。 单击 **[!UICONTROL 移除]**. 一次最多可以从列表中删除25个标记。
+* **全选：** 选中旁边的复选框 **标记名称** 以选择阻止列表中的所有标签。
+* **排序：** 您可以按升序或降序对阻止列表进行排序。 为此，请单击旁边的箭头 **标记名称**.
+
+  ![块标记](assets/blocklist.gif)
+
+  >[!NOTE]
+  >
+  >在阻止列表中添加标记时，请勿使用特殊字符。 可以使用a-z、A-Z、0-9和 — 等字符。
+
+### 导出阻止列表{#export-blocklist}
+
+通过“资源”视图，可将列出的阻止标记导出为CSV格式。 要导出阻止列表，请执行以下步骤：
+
+1. 单击 **[!UICONTROL 导出为CSV]**.
+1. 选择适当的位置以保存CSV文件。 您也可以根据需要重命名文件。
+1. 单击&#x200B;**[!UICONTROL 保存]**。将在所选位置下载CSV格式的导出列表。
+
+### 导入阻止列表{#import-blocklist}
+
+通过“资源”视图，可以从数据源(CSV)导入阻止的标记。 要导入阻止列表，请执行以下步骤：
+
+1. 单击 **[!UICONTROL 导入为CSV]**.
+1. 从设备中选择CSV文件。 单击 **[!UICONTROL 选择文件]** 以从设备导航到文件。 或者，您也可以从设备拖放CSV文件。
+1. 单击 **[!UICONTROL 上传]**. CSV文件中的标记将列在阻止的标记列表中。
+
+   ![导入阻止的标记列表](assets/import-blocked-tags.png)
+
+如果要下载阻止的标记模板，请执行以下步骤：
+
+1. 单击 **[!UICONTROL 下载模板]**.
+1. 选择适当的位置以保存CSV文件。 您也可以根据需要重命名文件。
+1. 单击&#x200B;**[!UICONTROL 保存]**。CSV格式的块标记模板在所选位置下载。
