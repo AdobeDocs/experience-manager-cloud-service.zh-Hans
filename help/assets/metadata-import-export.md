@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 10%
+source-wordcount: '732'
+ht-degree: 9%
 
 ---
 
@@ -60,6 +60,10 @@ ht-degree: 10%
 * 与范围更广的项目团队共享资源元数据。
 * 测试或审核元数据是否符合合规性。
 * 将元数据外部化以便进行单独本地化。
+
+>[!NOTE]
+>
+>元数据导出限制为1,048,575个资源，这与Microsoft Excel中的最大工作表大小相对应。 如果导出的层次结构包含的资源数超过此数量，则CSV文件中仅包含前1,048,575个资源的元数据。
 
 1. 选择包含要导出元数据的资源的资源文件夹。 在工具栏中，选择 **[!UICONTROL 导出元数据]**.
 1. 在“元数据导出”对话框中，指定CSV文件的名称。 要导出子文件夹中资产的元数据，请选择 **[!UICONTROL 包含子文件夹中的资源]**.
