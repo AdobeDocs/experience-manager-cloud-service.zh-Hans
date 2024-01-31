@@ -1,95 +1,298 @@
 ---
-title: 字段类型
-description: 通过有关如何检测您自己的应用程序的示例，了解通用编辑器可以在组件边栏中编辑的不同类型的字段。
+title: 模型定义、字段和组件类型
+description: 通过示例了解通用编辑器可在属性边栏中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 7ef3efa6e074778b7b3e3a8159056200b2663b30
+source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 7%
+source-wordcount: '1000'
+ht-degree: 11%
 
 ---
 
 
-# 字段类型 {#field-types}
+# 模型定义、字段和组件类型 {#field-types}
 
-通过有关如何检测您自己的应用程序的示例，了解通用编辑器可以在组件边栏中编辑的不同类型的字段。
+通过示例了解通用编辑器可在属性边栏中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
 
 {{universal-editor-status}}
 
 ## 概述 {#overview}
 
-在调整自己的应用程序以便与通用编辑器一起使用时，必须检测组件并定义它们可以在编辑器的组件边栏中处理的数据类型。
+调整自己的应用程序以便与通用编辑器一起使用时，必须检测组件，并定义它们可以在编辑器的属性边栏中操作的字段和组件类型。 可通过创建模型并从组件链接到模型来完成此操作。
 
-本文档概述了可用的字段类型以及示例配置。
+本文档概述了模型定义以及可用的字段和组件类型以及示例配置。
 
 >[!TIP]
 >
 >如果您不熟悉如何针对通用编辑器检测应用程序，请参阅文档 [面向AEM开发人员的通用编辑器概述。](/help/implementing/universal-editor/developer-overview.md)
 
-## 布尔值 {#boolean}
+## 模型定义结构 {#model-structure}
 
-布尔字段存储呈现为复选框的简单true/false值。
+要通过通用编辑器中的属性边栏配置组件，必须存在模型定义并将其链接到组件。
 
-### 样本 {#sample-boolean}
+模型定义是一个JSON结构，从模型数组开始。
+
+```json
+[
+  {
+    "id": "model-id",        // must be unique
+    "fields": []             // array of fields which shall be rendered in the properties rail
+  }
+]
+```
+
+请参阅 **[字段](#fields)** 部分，以了解有关如何定义 `fields` 数组。
+
+要将模型定义与元件一起使用，请将 `data-aue-model` 属性可以使用。
+
+```html
+<div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
+```
+
+## 加载模型定义 {#loading-model}
+
+创建模型后，可将其作为外部文件引用。
+
+```html
+<script type="application/vnd.adobe.aue.model+json" src="<url-of-model-definition>"></script>
+```
+
+或者，也可以内联定义模型。
+
+```html
+<script type="application/vnd.adobe.aue.model+json">
+  { ... model definition ... }
+</script>
+```
+
+## 字段 {#fields}
+
+字段对象具有以下类型定义。
+
+| 配置 | 值类型 | 描述 | 必填 |
+|---|---|---|---|
+| `component` | `ComponentType` | 组件的呈现器 | 是 |
+| `name` | `string` | 需要保留数据的属性 | 是 |
+| `label` | `FieldLabel` | 字段的标签 | 是 |
+| `description` | `FieldDescription` | 字段描述 | 否 |
+| `placeholder` | `string` | 字段的占位符 | 否 |
+| `value` | `FieldValue` | 默认值 | 否 |
+| `valueType` | `ValueType` | 标准验证，可以是 `string`， `string[]`， `number`， `date`， `boolean` | 否 |
+| `required` | `boolean` | 字段是否为必填字段 | 否 |
+| `readOnly` | `boolean` | 字段是否为只读 | 否 |
+| `hidden` | `boolean` | 默认情况下是否隐藏字段 | 否 |
+| `condition` | `RulesLogic` | 显示或隐藏字段的规则 | 否 |
+| `multi` | `boolean` | 字段是否为多字段 | 否 |
+| `validation` | `ValidationType` | 字段的验证规则 | 否 |
+| `raw` | `unknown` | 组件可以使用的原始数据 | 否 |
+
+### 组件类型 {#component-types}
+
+以下是可用于呈现字段的组件类型。
+
+#### AEM标记 {#aem-tag}
+
+AEM标记组件类型会启用AEM标记选取器，该选取器可用于将标记附加到组件。
+
+##### 样本 {#sample-aem-tag}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "aem-tag-picker",
+  "fields": [
+    {
+      "component": "aem-tag",
+      "label": "AEM Tag Picker",
+      "name": "cq:tags",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### 屏幕快照 {#screenshot-aem-tag}
+
+![AEM标记组件类型的屏幕截图](assets/component-types/aem-tag-picker.png)
+
+#### AEM内容 {#aem-content}
+
+AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置内容引用。
+
+##### 样本 {#sample-aem-content}
+
+```json
+{
+  "id": "aem-content-picker",
+  "fields": [
+    {
+      "component": "aem-content",
+      "name": "reference",
+      "value": "",
+      "label": "AEM Content Picker",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+##### 屏幕快照 {#screenshot-aem-content}
+
+![AEM内容组件类型屏幕截图](assets/component-types/aem-content-picker.png)
+
+#### 布尔值 {#boolean}
+
+布尔组件类型存储呈现为切换的简单true/false值。 它提供了额外的验证类型。
+
+| 验证类型 | 值类型 | 描述 | 必填 |
+|---|---|---|---|
+| `customErrorMsg` | `string` | 如果输入的值不是布尔值时将显示的消息 | 否 |
+
+##### 样本 {#sample-boolean}
+
+```json
+{
+  "id": "boolean",
+  "fields": [
+    {
       "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
+      "valueType": "boolean"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-boolean",
+  "fields": [
+    {
+      "component": "boolean",
+      "label": "Boolean",
+      "name": "boolean",
       "valueType": "boolean",
-      "name": "field1",
-      "label": "Boolean Field",
-      "description": "This is a boolean field.",
-      "required": true,
-      "placeholder": null,
       "validation": {
-        "customErrorMsg": "This is an error."
+        "customErrorMsg": "Think, McFly. Think!"
       }
     }
   ]
 }
 ```
 
-## 复选框组 {#checkbox-group}
+##### 屏幕快照 {#screenshot-boolean}
 
-与布尔值类似，复选框组允许选择多个true/false项目。
+![布尔组件类型的屏幕截图](assets/component-types/boolean.png)
 
-### 样本 {#sample-checkbox-group}
+#### 复选框组 {#checkbox-group}
+
+与布尔值类似，复选框组组件类型允许选择多个true/false项目，呈现为多个复选框。
+
+##### 样本 {#sample-checkbox-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "checkbox-group",
+  "fields": [
+    {
       "component": "checkbox-group",
-      "valueType": "string-array",
-      "name": "field1",
       "label": "Checkbox Group",
-      "description": "This is a checkbox group.",
-      "required": true,
-      "placeholder": null,
+      "name": "checkbox",
+      "valueType": "string[]",
       "options": [
-        { "name": "First option", "value": "one" },
-        { "name": "Second option", "value": "two" },
-        { "name": "Third option", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## 日期时间 {#date-time}
+#### 屏幕快照 {#screenshot-checkbox-group}
 
-日期时间字段允许指定日期或时间或它们的组合。
+![复选框组组件类型的屏幕截图](assets/component-types/checkbox-group.png)
 
-### 样本 {#sample-date-time}
+#### 容器 {#container}
+
+容器组件类型允许对组件进行分组。 它提供了额外的配置。
+
+| 配置 | 值类型 | 描述 | 必填 |
+|---|---|---|---|
+| `collapsible` | `boolean` | 容器是否可折叠 | 否 |
+
+##### 样本 {#sample-container}
+
+```json
+ {
+  "id": "container",
+  "fields": [
+    {
+      "component": "container",
+      "label": "Container",
+      "name": "container",
+      "valueType": "string",
+      "collapsible": true,
+      "fields": [
+        {
+          "component": "text-input",
+          "label": "Simple Text 1",
+          "name": "text",
+          "valueType": "string"
+        },
+        {
+          "component": "text-input",
+          "label": "Simple Text 2",
+          "name": "text2",
+          "valueType": "string"
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### 屏幕快照 {#screenshot-container}
+
+![容器组件类型的屏幕截图](assets/component-types/container.png)
+
+#### 日期时间 {#date-time}
+
+日期时间分量类型允许指定日期、时间或它们的组合。 它提供了其他配置。
+
+| 配置 | 值类型 | 描述 | 必填 |
+|---|---|---|---|
+| `displayFormat` | `string` | 日期字符串的显示格式 | 是 |
+| `valueFormat` | `string` | 存储日期字符串的格式 | 是 |
+
+它还提供额外的验证类型。
+
+| 验证类型 | 值类型 | 描述 | 必填 |
+|---|---|---|---|
+| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `valueFormat` 不符合 | 否 |
+
+##### 样本 {#sample-date-time}
 
 ```json
 {
-  "fields": [   
-      {
+  "id": "date-time",
+  "fields": [
+    {
       "component": "date-time",
-      "valueType": "date-time",
+      "label": "Date & Time",
+      "name": "date",
+      "valueType": "date"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-date-time",
+  "fields": [
+    {
+      "component": "date-time",
+       "valueType": "date-time",
       "name": "field1",
       "label": "Date Time",
       "description": "This is a date time field that stores both date and time.",
@@ -133,15 +336,103 @@ ht-degree: 7%
 }
 ```
 
-## 数字 {#number}
+##### 屏幕快照 {#screenshot-date-time}
 
-数字字段允许输入数字。
+![日期时间组件类型的屏幕截图](assets/component-types/date-time.png)
 
-### 样本 {#sample-number}
+#### 多选 {#multiselect}
+
+多选组件类型在下拉列表中显示多个可供选择的项目，包括对可选元素进行分组的功能。
+
+##### 示例 {#sample-multiselect}
 
 ```json
 {
-  "fields": [   
+  "id": "multiselect",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "multiselect",
+      "label": "Multi Select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "multiselect-grouped",
+  "fields": [
+    {
+      "component": "multiselect",
+      "name": "property",
+      "label": "Multiselect field",
+      "valueType": "string",
+      "required": true,
+      "maxSize": 2,
+      "options": [
+        {
+          "name": "Theme",
+          "children": [
+            { "name": "Light", "value": "light" },
+            { "name": "Dark",  "value": "dark" }
+          ]
+        },
+        {
+          "name": "Type",
+          "children": [
+            { "name": "Alpha", "value": "alpha" },
+            { "name": "Beta", "value": "beta" },
+            { "name": "Gamma", "value": "gamma" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+##### 屏幕快照 {#screenshot-multiselect}
+
+![多选组件类型的屏幕截图](assets/component-types/multiselect.png)
+![带分组的多选组件类型的屏幕截图](assets/component-types/multiselect-group.png)
+
+#### 数字 {#number}
+
+数字组件类型允许输入数字。 它提供了其他验证类型。
+
+| 验证类型 | 值类型 | 描述 | 必填 |
+|---|---|---|---|
+| `numberMin` | `number` | 允许的最小数量 | 否 |
+| `numberMax` | `number` | 允许的最大数量 | 否 |
+| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `numberMin` 或 `numberMax` 不符合 | 否 |
+
+##### 样本 {#sample-number}
+
+```json
+{
+  "id": "number",
+  "fields": [
+    {
+      "component": "number",
+      "name": "number",
+      "label": "Number",
+      "valueType": "number",
+      "value": 0
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-number",
+  "fields": [
    {
       "component": "number",
       "valueType": "number",
@@ -151,189 +442,239 @@ ht-degree: 7%
       "required": true,
       "placeholder": null,
       "validation": {
-        "numberMin": null,
-        "numberMax": null,
-        "customErrorMsg": "Please don't do that."
+        "numberMin": 0,
+        "numberMax": 88,
+        "customErrorMsg": "You also need 1.21 gigawatts."
       }
     }
   ]
 }
 ```
 
-## 单选按钮组 {#radio-group}
+##### 屏幕快照 {#screenshot-number}
 
-单选按钮组允许从呈现为类似于复选框组的组的组的多个选项中进行互斥选择。
+![数字组件类型的屏幕截图](assets/component-types/number.png)
 
-### 样本 {#sample-radio-group}
+#### 单选按钮组 {#radio-group}
+
+单选按钮组组件类型允许从呈现为类似于复选框组的组的组的多个选项中进行互斥选择。
+
+##### 样本 {#sample-radio-group}
 
 ```json
 {
-  "fields": [   
-   {
+  "id": "radio-group",
+  "fields": [
+    {
       "component": "radio-group",
-      "valueType": "string",
-      "name": "field1",
       "label": "Radio Group",
-      "description": "This is a radio group.",
-      "required": true,
-      "placeholder": null,
+      "name": "radio",
+      "valueType": "string",
       "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
       ]
     }
   ]
 }
 ```
 
-## 引用 {#reference}
+##### 屏幕快照 {#screenshot-radio-group}
 
-引用允许将另一个数据对象指定为来自当前对象的引用。
+![无线组组件类型的屏幕截图](assets/component-types/radio.png)
 
-## 选择 {#select}
+#### 引用 {#reference}
 
-选择允许在下拉菜单中选择一个或多个预定义选项。
+引用组件类型允许从当前对象引用另一个数据对象。
 
-### 样本 {#sample-select}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "select",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Select",
-      "description": "This is a select.",
-      "required": true,
-      "placeholder": null,
-      "options": [
-        { "name": "Option One", "value": "one" },
-        { "name": "Option Two", "value": "two" },
-        { "name": "Option Three", "value": "three" }
-      ],
-      "emptyOption": true
-    }
-  ]
-}
-```
-
-## 文本区域 {#text-area}
-
-文本区域允许多行文本输入。
-
-### 样本 {#sample-text-area}
+##### 样本 {#sample-reference}
 
 ```json
 {
-  "fields": [   
-   {
-      "component": "text-area",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Area",
-      "description": "This is a text area.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "mimeType": "text/x-markdown"
-    }
-  ]
-}
-```
-
-## 文本输入 {#text-input}
-
-文本输入允许单行文本输入。
-
-### 样本 {#sample-text-input}
-
-```json
-{
-  "fields": [   
-   {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field1",
-      "label": "Text Input",
-      "description": "This is a text input.",
-      "required": true,
-      "multi": true,
-      "placeholder": null
-    },
+  "id": "reference",
+  "fields": [
     {
-      "component": "text-input",
-      "valueType": "string",
-      "name": "field2",
-      "label": "Another Text Input",
-      "description": "This is a text input with validation.",
-      "required": true,
-      "multi": true,
-      "placeholder": null,
-      "validation": {
-        "minLength": 5,
-        "maxLength": 10,
-        "regExp": "^foo:.*",
-        "customErrorMsg": "I'm sorry, Dave. I can't do that."
-      }
+      "component": "reference",
+      "label": "Reference",
+      "name": "reference",
+      "valueType": "string"
     }
   ]
 }
 ```
 
-## 选项卡 {#tab}
+##### 屏幕快照 {#screenshot-reference}
 
-使用选项卡，可将其他输入字段分组到多个选项卡上，以改善作者的布局组织。
+![引用组件类型的屏幕截图](assets/component-types/reference.png)
+
+#### 选择 {#select}
+
+选择组件类型允许从下拉菜单中的预定义选项列表中选择单个选项。
+
+##### 样本 {#sample-select}
+
+```json
+{
+  "id": "select",
+  "fields": [
+    {
+      "component": "select",
+      "label": "Select",
+      "name": "select",
+      "valueType": "string",
+      "options": [
+        { "name": "Option 1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+    }
+  ]
+}
+```
+
+##### 屏幕快照 {#screenshot-select}
+
+![选择组件类型的屏幕截图](assets/component-types/select.png)
+
+#### 选项卡 {#tab}
+
+选项卡组件类型允许您在多个选项卡上将其他输入字段分组在一起，以改善作者的布局组织。
 
 A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `tab` 将被放置在该选项卡上，直到有新的 `tab` 之后，会将以下项目放置到新选项卡上。
 
 如果希望项目出现在所有选项卡上方，则必须在任何选项卡之前定义它们。
 
-### 样本 {#sample-tab}
+##### 样本 {#sample-tab}
 
 ```json
 {
-  "id": "title",
+  "id": "tab",
   "fields": [
     {
       "component": "tab",
-      "label": "Tab",
+      "label": "Tab 1",
       "name": "tab1"
     },
     {
       "component": "text-input",
-      "name": "tab-response",
-      "value": "",
-      "placeholder": "Tab? I can't give you a tab unless you order something.",
-      "label": "Lou",
+      "label": "Text 1",
+      "name": "text1",
       "valueType": "string"
     },
     {
       "component": "tab",
-      "label": "Pepsi Free",
+      "label": "Tab 2",
       "name": "tab2"
     },
     {
       "component": "text-input",
-      "name": "pepsi-free-response",
-      "value": "",
-      "placeholder": "You want a Pepsi, pal, you're gonna pay for it.",
-      "label": "Mr. Carruthers",
+      "label": "Text 2",
+      "name": "text2",
       "valueType": "string"
-    },
-    {
-      "component": "select",
-      "name": "without-sugar",
-      "value": "coffee",
-      "label": "Something without sugar",
-      "valueType": "string",
-      "options": [
-        { "name": "Coffee", "value": "coffee" },
-        { "name": "Hot Coffee", "value": "hot-coffee" },
-        { "name": "Hotter Coffee", "value": "hotter-coffee" }
-      ]
     }
   ]
 }
 ```
+
+##### 屏幕快照 {#screenshot-tab}
+
+![选项卡组件类型的屏幕截图](assets/component-types/tab.png)
+
+#### 文本区域 {#text-area}
+
+文本区域允许多行、富文本输入。 它提供了其他验证类型。
+
+| 验证类型 | 值类型 | 描述 | 必填 |
+|---|---|---|---|
+| `maxSize` | `number` | 允许的最大字符数 | 否 |
+| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `maxSize` 已超出 | 否 |
+
+##### 样本 {#sample-text-area}
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "text-area",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+##### 屏幕快照 {#screenshot-text-area}
+
+![文本区域组件类型的屏幕截图](assets/component-types/richtext.png)
+
+#### 文本输入 {#text-input}
+
+文本输入允许单行文本输入。  它包含其他验证类型。
+
+| 验证类型 | 值类型 | 描述 | 必填 |
+|---|---|---|---|
+| `minLength` | `number` | 允许的最小字符数 | 否 |
+| `maxLength` | `number` | 允许的最大字符数 | 否 |
+| `regExp` | `string` | 输入文本必须匹配的正则表达式 | 否 |
+| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `minLength`， `maxLength`，和/或 `regExp` 违反了 | 否 |
+
+##### 样本 {#sample-text-input}
+
+```json
+{
+  "id": "simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+```json
+{
+  "id": "another simpletext",
+  "fields": [
+    {
+      "component": "text-input",
+      "name": "text",
+      "label": "Simple Text",
+      "valueType": "string",
+      "description": "This is a text input with validation.",
+      "required": true,
+      "validation": {
+        "minLength": 1955,
+        "maxLength": 1985,
+        "regExp": "^foo:.*",
+        "customErrorMsg": "Why don't you make like a tree and get outta here?"
+      }
+    }
+  ]
+}
+```
+
+##### 屏幕快照 {#screenshot-text-input}
+
+![文本输入组件类型的屏幕截图](assets/component-types/simpletext.png)
