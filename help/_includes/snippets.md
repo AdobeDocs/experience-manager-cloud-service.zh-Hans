@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2f567d45a6ba2dfb4dd3346e8510bcb04113eefb
-workflow-type: ht
-source-wordcount: '264'
-ht-degree: 100%
+source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 87%
 
 ---
 # 代码片段 {#snippets}
@@ -56,3 +56,7 @@ ht-degree: 100%
 * [提交到 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [将自适应表单连接到 Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+
+## AEM创作，Edge Delivery Services可提前访问 {#aem-authoring-edge-early-access}
+
+[!BADGE 抢先体验技术 — 从您的Slack渠道上的AEM Sites实验室向我们询问有关此功能的信息！]{type=Informative url="/help/edge/docs/slack.md" tooltip="通过Edge Delivery Services进行AEM创作是一项早期访问技术。"}

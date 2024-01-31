@@ -2,17 +2,17 @@
 title: 为Edge Delivery Services创作内容
 description: 了解内容创作如何与Edge Delivery Services配合使用以及如何使用Edge Delivery Services创作AEM内容。
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
+source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 14%
+source-wordcount: '491'
+ht-degree: 15%
 
 ---
 
-
 # 为Edge Delivery Services创作内容 {#authoring-edge}
 
-使用Edge Delivery Services，创作变得简单、快速和灵活。 可以使用两个选项为Edge Delivery Services创作内容：
+Edge Delivery Services 让创作变得简单、快速且灵活。可以使用两个选项为Edge Delivery Services创作内容：
 
 * [基于文档的创作](#document-based)  — 如Microsoft Word或Google文档
 * [通用编辑器](#universal-editor)  — 用于在AEM中创作内容的现代化UI
@@ -53,6 +53,8 @@ Universal Editor通过拖放块为创作内容提供了一个现代、直观的G
 ![配置块属性](assets/block-properties.png)
 
 有关如何使用通用编辑器进行创作的详细信息，请参阅文档 [使用通用编辑器创作内容。](/help/implementing/universal-editor/authoring.md)
+
+请参阅 [使用Edge Delivery Services进行AEM创作的开发人员快速入门指南](/help/edge/edge-dev-getting-started.md) 了解如何开始自己的项目，以便使用AEM和Edge Delivery Services进行创作。
 
 ## 如何入门 {#how-to-get-started}
 
