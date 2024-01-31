@@ -2,9 +2,9 @@
 title: 使用Edge Delivery Services进行AEM创作的开发人员快速入门指南
 description: 本指南将引导您启动并运行一个新的Adobe Experience Manager站点，该站点使用Edge Delivery Services和通用编辑器进行内容创作
 feature: Edge Delivery Services
-source-git-commit: eae751441435949296eb76a7e9b4103393860a8d
+source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -48,8 +48,6 @@ AEM提供两种不同的内容编辑器，要使用的编辑器取决于您的�
    ![复制存储库项目](assets/edge-dev-getting-started/use-template-project.png)
 
 1. 默认情况下，存储库将分配给您。 根据需要更改此设置，并提供存储库名称和描述，然后单击 **创建存储库**.
-
-   * 存储库应为 **公共**.
 
    ![创建存储库](assets/edge-dev-getting-started/create-repo.png)
 
