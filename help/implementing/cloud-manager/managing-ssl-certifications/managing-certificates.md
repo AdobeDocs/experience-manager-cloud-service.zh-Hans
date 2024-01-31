@@ -2,7 +2,7 @@
 title: 管理 SSL 证书
 description: 了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 7143ea8d36e26aa1674608ff7bd8ba22e2030b3c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 75%
@@ -18,9 +18,9 @@ ht-degree: 75%
 
 可以从 SSL 证书页面一眼就了解 SSL 证书的状态。
 
-* **绿色** – 此状态表示您的证书自当前日期起至少 60 天内有效。
+* **绿色** – 此状态表示您的证书自当前日期起至少 14 天内有效。
 
-* **橙色** – 此状态表示您的证书将在 60 天内到期。
+* **橙色** – 此状态表示您的证书将在 14 天内到期。
    * 现在需要确保您有计划续订证书并通过 Cloud Manager 用户界面替换该证书，从而避免可能的站点访问中断。
    * Cloud Manager 将在 UI 中定期发送通知，提醒您证书即将到期。
 
