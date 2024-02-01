@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: f59959bc10e502d85d3f4797dcf4ad0490d233f4
+source-git-commit: 30f2eaf4d2edba13e875cd1bfe767e83a2b7f1a5
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 80%
+source-wordcount: '1166'
+ht-degree: 93%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 80%
 Cloud Manager 使用专门的构建环境构建和测试代码。
 
 * 构建环境基于 Linux，并派生自 Ubuntu 22.04。
-* 安装 Apache Maven 3.8.8。
-   * Adobe推荐用户 [更新其Maven存储库以使用HTTPS而不是HTTP。](#https-maven)
+* 安装了 Apache Maven 3.8.8。
+   * Adobe 建议用户[更新其 Maven 存储库以使用 HTTPS 代替 HTTP。](#https-maven)
 * 安装的 Java 版本是 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
 * 默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。 请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
 * 安装了一些其他的必要系统包。
@@ -36,19 +36,18 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 使用 `settings.xml` 文件在系统级别配置 Maven，并将自动包含使用名为 `adobe-public` 的配置文件的公共 Adobe 构件存储库。（有关更多详细信息，请参阅 [Adobe 公共 Maven 存储库](https://repo1.maven.org/)）。
-* Node.js 18可用于 [前端管道和全栈管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
 
 >[!NOTE]
 >
 >虽然 Cloud Manager 未定义 `jacoco-maven-plugin` 的具体版本，但使用的版本必须至少为 `0.7.5.201505241946`。
 
-## HTTPS Maven存储库 {#https-maven}
+## HTTPS Maven 存储库 {#https-maven}
 
-Cloud Manager [2023.10.0版](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 开始滚动更新构建环境（包括对Maven 3.8.8的更新，完成版本为2023.12.0）。Maven 3.8.1中引入的一项重大更改是旨在减少潜在漏洞的安全增强功能。 具体来说，Maven现在禁用所有不安全的 `http://*` 默认镜像，如 [Maven发行说明。](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 开始了对构建环境的一项滚动更新（在推出版本 2023.12.0 时完成更新），其中包括对 Maven 3.8.8 的更新。Maven 3.8.1 中引入的一项重大更改是旨在减少潜在漏洞的一项安全增强。具体来说，Maven 现在默认禁用所有不安全的 `http://*` 镜像，如 [Maven 发行说明中所述。](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
 
-由于此安全增强，某些用户可能在构建步骤期间遇到问题，尤其是从使用不安全HTTP连接的Maven存储库下载工件时。
+此安全增强导致某些用户可能在构建步骤中遇到问题，尤其是从使用不安全 HTTP 连接的 Maven 存储库下载工件时。
 
-为了确保通过更新版本获得流畅的体验，Adobe建议用户更新其Maven存储库以使用HTTPS而不是HTTP。 这一调整与业界日益转向安全通信协议相一致，并有助于保持安全可靠的构建过程。
+为了确保更新版本的流畅体验，Adobe 建议用户更新其 Maven 存储库以使用 HTTPS 代替 HTTP。此调整与行业日益转向安全通信协议的趋势一致，并有助于构建过程保持安全可靠。
 
 ### 使用特定的 Java 版本 {#using-java-support}
 

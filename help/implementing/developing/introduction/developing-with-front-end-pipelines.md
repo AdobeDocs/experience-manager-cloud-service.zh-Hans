@@ -2,9 +2,9 @@
 title: 使用前端管道开发站点
 description: 有了前端管道，前端开发人员可以获得更多的独立性，开发过程可以获得可观的速度。 本文档描述了应该给予的前端构建过程的一些特定注意事项。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: de2d4355894d166d47f49a22af773b9e2c19e67b
+source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -20,17 +20,22 @@ ht-degree: 1%
 
 ## 前端构建合同 {#front-end-build-contract}
 
-类似于 [全栈构建环境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 前端管道有自己的环境。 开发人员在此管道中具有一些灵活性，但前提是遵守以下前端构建合同。
+类似于 [全栈构建环境，](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 前端管道有自己的环境。 开发人员可以灵活地使用此管道，但前提是遵守以下前端构建合同。
 
-前端管道要求前端Node.js项目使用 `build` 脚本指令来生成由前端管道部署的构建。 即Cloud Manager使用命令 `npm run build` 将可部署项目生成到 `dist` 文件夹。
+前端管道要求前端Node.js项目使用 `build` 脚本指令来生成它部署的版本。 这是因为Cloud Manager使用命令 `npm run build` 生成用于前端构建的可部署项目。
 
-的内容 `dist` 文件夹是as a Cloud Service于Cloud Manager管道最终部署到AEM的内容。
+生成的内容 `dist` 文件夹是Cloud Manager最终部署的内容，充当静态文件。 这些文件托管在AEM外部，但可通过 `/content/...` 已部署环境上的URL。
 
-### 节点版本 {#node-versions}
+## 节点版本 {#node-versions}
 
-默认情况下，前端管道使用节点14，但节点12、16和18也可用。
+前端构建环境支持以下Node.js版本。
 
-您可以使用 `NODE_VERSION` 环境变量来设置所需的版本。
+* 12
+* 14（默认）
+* 16
+* 18
+
+您可以使用 `NODE_VERSION` [环境变量](/help/implementing/cloud-manager/environment-variables.md) 以设置所需的版本。
 
 ## 单一事实来源 {#single-source-of-truth}
 
