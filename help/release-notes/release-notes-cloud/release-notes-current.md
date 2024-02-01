@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 64%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 64%
 
 ## 发布日期 {#release-date}
 
-的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前的功能版本(2024.1.0)为2024年1月25日。 下一个功能版本(2024.2.0)计划于2024年2月29日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前功能版本 (2024.1.0) 的发布日期为 2024 年 1 月 25 日。下一个功能版本 (2024.2.0) 计划于 2024 年 2 月 29 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -40,32 +40,32 @@ ht-degree: 64%
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### AEM Sites中的Extension Manager {#sites-extension-manager}
+### Extension Manager in AEM Sites {#sites-extension-manager}
 
-**探索新的 [AEM Sites中的Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** 通过配置UI扩展，个性化您的AEM设置。
+**探索新的 [Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** 以通过配置 UI 扩展而使您的 AEM 设置个性化。
 
-![AEM Sites中的Extension Manager](/help/assets/sites/extension-manager/homepage.png)
+![Extension Manager in AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
 AEM Sites中的Extension Manager使开发人员和从业人员能够访问、管理和自定义 [UI扩展](https://developer.adobe.com/uix/docs/) 构建方式 [Adobe应用程序生成器](https://developer.adobe.com/app-builder/) 以增强AEM Sites的功能。
-使用Extension Manager，您可以：
+使用 Extension Manager，您可以：
 
-* 基于每个实例启用或禁用扩展；
+* 按实例启用或禁用扩展；
 * 配置扩展参数；
 * 预览扩展并生成可共享的预览链接；
-* 通过交互式演示发现UI可扩展性功能；
-* 通过第一方扩展访问Adobe的实验功能。
+* 通过交互式演示探索 UI 可扩展性功能；
+* 通过第一方扩展访问 Adobe 的实验功能。
 
-我们正在积极寻求针对UI扩展的反馈，以及新的用例。 如果您想要连接，请发送电子邮件至 `uix@adobe.com`.
+我们正在积极搜寻 UI 扩展的反馈和新用例。如果您想联系我们，请将电子邮件发送至 `uix@adobe.com`。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 管理员查看预发行版功能 {#admin-view-prerelease}
+### 管理视图中的预发布功能 {#admin-view-prerelease}
 
-**预览所有受支持视频类型的演绎版**
+**所有支持的视频类型都有预览演绎版**
 
-Experience Manager Assets现在默认生成所有受支持视频类型的预览演绎版，而无需处理配置文件配置
+Experience Manager Assets 现在无需处理配置文件配置，即默认生成所有支持的视频类型的预览演绎版
 
-### 资产视图 {#assets-view-features}
+### 资源视图 {#assets-view-features}
 
 **智能标记阻止列表**
 
@@ -96,13 +96,13 @@ Experience Manager Assets现在默认生成所有受支持视频类型的预览�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 支持Dynatrace {#dynatrace}
+### 支持 Dynatrace {#dynatrace}
 
-Dynatrace客户可以监控其AEM使用情况。 [了解如何操作](/help/implementing/cloud-manager/dynatrace.md) 请求与您的Dynatrace环境建立连接，以便监控应用程序性能。 请注意，启用Dynatrace后，适用于所有客户的New Relic APM将停止收集数据。
+Dynatrace 客户可监控其 AEM 使用情况。[了解如何](/help/implementing/cloud-manager/dynatrace.md)请求连接您的 Dynatrace 环境以监控应用程序性能。请注意，如果启用 Dynatrace，则可供所有客户使用的 New Relic APM 将停止收集数据。
 
-### RDE支持使用站点主题和站点模板的前端代码：早期采用者计划 {#rde-frontend-early-adopter}
+### RDE 支持使用站点主题和站点模板的前端代码：早期采用者计划 {#rde-frontend-early-adopter}
 
-[快速开发环境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 现在支持基于以下内容的前端代码： [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md)，适用于早期采用者。 对于RDE，这是使用命令行指令完成的，而不是 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). 请联系 **aemcs-rde-support@adobe.com** 以试用并提供反馈。
+对于早期采用者，[快速开发环境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 现在支持基于[站点主题](/help/sites-cloud/administering/site-creation/site-themes.md)和[站点模板](/help/sites-cloud/administering/site-creation/site-templates.md)的前端代码。在 RDE 的情况下，使用命令行指令而非[前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)实现这一点。请联系 **aemcs-rde-support@adobe.com** 以试用并提供反馈。
 
 ## Cloud Manager {#cloud-manager}
 
