@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 11%
+source-wordcount: '3400'
+ht-degree: 10%
 
 ---
 
@@ -166,7 +166,7 @@ MSM在源资产及其活动副本之间维护实时关系，以便：
 * 暂停特定的Live Copy的关系或更改转出配置。
 * 访问Live Copy概述控制台。
 
-选择源资产或文件夹，打开左边栏，然后单击 **[!UICONTROL 引用]**. 或者，选择一个资产或文件夹，然后使用键盘快捷键 `Alt + 4`。
+选择源资产或文件夹，打开左边栏，然后单击 **[!UICONTROL 引用]**. 或者，选择一个资产或文件夹，然后使用键盘快捷键 `Alt + 4`.
 
 ![所选源的“引用”边栏中可用的操作和信息](assets/referencerail_source.png)
 
@@ -186,7 +186,7 @@ MSM在源资产及其活动副本之间维护实时关系，以便：
 * 在中打开或显示特定Live Copy [!DNL Experience Manager] 用户界面。
 * 转出更新。
 
-选择 Live Copy 资产或文件夹，打开左边栏，然后单击&#x200B;**[!UICONTROL 引用]**。或者，选择一个资产或文件夹，然后使用键盘快捷键 `Alt + 4`。
+选择 Live Copy 资产或文件夹，打开左边栏，然后单击&#x200B;**[!UICONTROL 引用]**。或者，选择一个资产或文件夹，然后使用键盘快捷键 `Alt + 4`.
 
 ![所选 Live Copy 的“引用”边栏中的可用操作](assets/referencerail_livecopy.png)
 
@@ -248,8 +248,8 @@ MSM在源资产及其活动副本之间维护实时关系，以便：
 您可以取消的Live Copy继承：
 
 * 元数据字段
-* 内容片段变量
-* 内容片段数据字段
+* [内容片段变量](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
+* [内容片段数据字段](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 
 这意味着该项不再与源组件同步。 如有必要，您可以稍后启用继承。
 
@@ -261,7 +261,7 @@ MSM在源资产及其活动副本之间维护实时关系，以便：
 
    ![同步操作提取对源所做的更改](assets/cancel-inheritance-icon.png)
 
-1. 在取消继承对话框中，单击是确认操作。
+1. 在“取消继承”对话框中，单击“是”确认操作。
 
 ### 重新启用继承 {#reenable-inheritance}
 
@@ -319,7 +319,7 @@ Live Copy是创建时原始源的复制副本。 Live Copy的元数据值继承�
 
 1. 选择源文件夹。 单击 **[!UICONTROL 属性]** 工具栏中。 或者，使用键盘快捷键 `p`.
 1. 单击 **[!UICONTROL Live Copy 源]**。要打开控制台，请单击 **[!UICONTROL Live Copy 概述]**。
-1. 在此功能板中，从 Live Copy 文件夹中选择 Live Copy 资产。单击工具栏中的所需操作。可用的操作有&#x200B;**[!UICONTROL 同步]**、**[!UICONTROL 重置]**、**[!UICONTROL 暂停]**&#x200B;和&#x200B;**[!UICONTROL 分离]**。您可以对任意数量的与所选源文件夹处于实时关系的Live Copy文件夹中的任意资产快速启动这些操作。
+1. 在此功能板中，从 Live Copy 文件夹中选择 Live Copy 资产。单击工具栏中的所需操作。可用的操作包括 **[!UICONTROL 同步]**， **[!UICONTROL 重置]**， **[!UICONTROL 暂停]**、和 **[!UICONTROL 分离]**. 您可以对任意数量的与所选源文件夹处于实时关系的Live Copy文件夹中的任意资产快速启动这些操作。
 
    ![从Live Copy概述控制台轻松地更新Live Copy文件夹中的许多资产](assets/livecopyconsole_update_many_assets.png)
 
