@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: a616b27c5212b00d3b51778402ed52a68028fdaf
 workflow-type: tm+mt
-source-wordcount: '2165'
-ht-degree: 59%
+source-wordcount: '2189'
+ht-degree: 58%
 
 ---
 
@@ -295,11 +295,14 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 您可以通过双击或双击组件就地编辑文本。
 
-按Enter/Return键或选择文本框外部以保存更改。
-
 ![编辑富文本组件](assets/rich-text-editing.png)
 
-此外，属性边栏中还提供了文本上的格式选项和详细信息。 一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
+为方便起见，文本上的格式选项和详细信息可在两个位置使用。
+
+* 此 **上下文菜单** 会在富文本块上方打开，并在上下文中提供基本的格式选项。 由于空间限制，某些选项可能隐藏在省略号按钮后面。
+* 此 **属性边栏** 显示所有可用的格式选项以及文本。
+
+一旦焦点离开已编辑的字段，更改将自动保存。
 
 ### 编辑媒体 {#edit-media}
 
