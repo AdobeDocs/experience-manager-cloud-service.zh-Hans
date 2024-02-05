@@ -404,7 +404,7 @@ ht-degree: 99%
       + [微前端资源选择器](/help/assets/asset-selector.md)
       + [微前端目标选择器](/help/assets/destination-selector.md)
       + [共享资源](/help/assets/share-assets.md)
-      + [重新处理资产](/help/assets/reprocessing.md)
+      + [重新处理资源](/help/assets/reprocessing.md)
       + [监测活动和 DAM 任务](/help/assets/assets-activity-history.md)
       + [开始使用资源微服务](/help/assets/asset-microservices-configure-and-use.md)
       + [添加和上传资源](/help/assets/add-assets.md)
@@ -635,7 +635,7 @@ ht-degree: 99%
             + [使用延迟加载改进大型表单的性能](/help/forms/lazy-loading-adaptive-forms.md)
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
             + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
-            + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+            + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
             + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
             + [将脚注支持添加到自适应表单](/help/forms/footnotes-richtextsupport.md)
@@ -771,7 +771,7 @@ ht-degree: 99%
    + 构建 Edge Delivery 应用程序 {#build}
       + [快速入门 - 开发人员教程](/help/edge/developer/tutorial.md)
       + [项目剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [块集合](/help/edge/developer/block-collection.md)
+      + [区块集合](/help/edge/developer/block-collection.md)
       + [电子表格](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [索引](/help/edge/developer/indexing.md)
@@ -924,7 +924,7 @@ ht-degree: 99%
       + [自定义权限](/help/implementing/cloud-manager/custom-permissions.md)
       + [SLA 报告](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [迪纳特瑞斯](/help/implementing/cloud-manager/dynatrace.md)
+      + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + SSL 证书{#manage-ssl-certificates}
          + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -977,7 +977,7 @@ ht-degree: 99%
          + 组件和模板 {#components-templates}
             + [组件概述](/help/implementing/developing/components/overview.md)
             + [模板](/help/implementing/developing/components/templates.md)
-            + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+            + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=zh-Hans)
             + [内容服务的 JSON 导出器](/help/implementing/developing/components/json-exporter.md)
             + [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md)
