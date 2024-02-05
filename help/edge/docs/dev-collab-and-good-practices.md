@@ -1,14 +1,15 @@
 ---
-description: 通过与多个项目和组织的大量开发团队合作，我们发现收集一些见解会很有用。 其中有些与AEM相关，但大多数与通用前端开发相关，或只是关于在开发人员团队中协作的一般准则。
-title: 发展协作和良好做法
+description: 通过与许多项目和组织中的大量开发团队合作，我们发现收集一些见解很有帮助。其中一些与 AEM 相关，但大多数与通用前端开发相关，或者只是关于如何在开发人员团队中协作的通用指南。
+title: 开发协作和良好实践
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: e7f9b0f7-d22f-44ec-b8b7-85daa34de2a0
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '66'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 发展协作和良好做法
+# 开发协作和良好实践
 
 {{$include fc730cc0-8dc1-46c8-8f3a-ab7185d5e14d}}

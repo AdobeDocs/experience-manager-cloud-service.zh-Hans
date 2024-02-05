@@ -1,14 +1,15 @@
 ---
-description: 在某些情况下，将自定义HTTP响应标头应用于资源很有用，例如可允许CORS。 如果要指定标头，请在Sharepoint或Google驱动器中，在您网站的“/.helix”文件夹内创建Excel工作簿或SharePoint中的Google工作表工作簿，或者在Google驱动器中创建“标头.xlsx”工作簿。
-title: 自定义HTTP响应标头
+description: 在某些情况下，在资源中应用自定义 HTTP 响应标头很有用，例如允许 CORS。如果要指定标题，请在 Sharepoint 或 Google Drive 中网站的“/.hhelix”文件夹中创建 Excel 工作簿或 Google Sheets 工作簿，在 SharePoint 中称为“headers.xlsx”，在 Google Drive 中称为“headers”。
+title: 自定义 HTTP 响应标头
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: ae386f02-05fd-4a6a-8285-58f207fed7bc
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '65'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 自定义HTTP响应标头
+# 自定义 HTTP 响应标头
 
 {{$include b42d32e7-04c5-4afc-8085-7213e70db68a}}

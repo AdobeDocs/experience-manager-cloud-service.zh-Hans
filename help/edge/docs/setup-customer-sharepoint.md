@@ -1,14 +1,15 @@
 ---
-description: '“**注意**：对于使用Adobe的项目\u2019s Sharepoint (<https: adobe.sharepoint.com="">)请在此继续。”'
-title: 如何使用Sharepoint
+description: “**注意**：对于使用 Adobe Sharepoint (&lt;https://adobe.sharepoint.com&gt;) 的项目，请在此处继续。”
+title: 如何使用 Sharepoint
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
-source-wordcount: '19'
-ht-degree: 0%
+exl-id: c0feb7bc-5418-4f93-bcfc-072cfe2e97bd
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
+source-wordcount: '20'
+ht-degree: 100%
 
 ---
 
-# 如何使用Sharepoint
+# 如何使用 Sharepoint
 
 {{$include be731df7-f3ae-4a8a-839a-e49c7445761a}}

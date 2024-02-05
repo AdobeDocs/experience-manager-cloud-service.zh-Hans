@@ -1,11 +1,12 @@
 ---
-description: “将收藏夹添加到您的网站可以使其在访客浏览器中展现专业的外观\u2019s浏览器：”
+description: “向您的网站添加网站图标，让网站在访客浏览器中看起来更专业：”
 title: 网站图标
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
-source-wordcount: '18'
-ht-degree: 11%
+exl-id: e5225611-8bc7-4239-96db-83f7819410d7
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
+source-wordcount: '17'
+ht-degree: 100%
 
 ---
 

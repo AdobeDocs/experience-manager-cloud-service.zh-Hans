@@ -1,11 +1,12 @@
 ---
-description: 如果您使用Microsoft Word或Google文档，则表明您已知道如何创建内容。
+description: 如果您使用 Microsoft Word 或 Google 文档，那么您已经知道如何创建内容。
 title: 创作和发布内容
 feature: Edge Delivery Services
-source-git-commit: 80d974c23cb3dd7c0844b4d2cec2b608ff813438
-workflow-type: tm+mt
+exl-id: 3fd37d7d-e8ce-48c7-8c2d-a564b24e2f4f
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+workflow-type: ht
 source-wordcount: '24'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
