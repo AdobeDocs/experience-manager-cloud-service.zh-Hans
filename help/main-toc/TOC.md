@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: d2090fd8bee3ec3d25eb3a00925a61404d2f8b8d
 workflow-type: tm+mt
-source-wordcount: '4635'
+source-wordcount: '4630'
 ht-degree: 99%
 
 ---
@@ -1056,7 +1056,6 @@ ht-degree: 99%
       + [扩展体验片段](/help/implementing/developing/extending/experience-fragments.md)
       + [自定义和扩展内容片段](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [配置用于呈现的组件的内容片段](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [自定义内容片段控制台](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + [自定义内容片段控制台和编辑器](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
       + 管理搜索表单 {#manage-search-forms}
          + [配置搜索表单](/help/implementing/developing/extending/search-forms.md)
