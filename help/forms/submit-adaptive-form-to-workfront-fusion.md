@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 7cf7883e133d58145b5b3e1bb6ba8eb21ebad5d9
+source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 3%
@@ -22,6 +22,7 @@ ht-degree: 3%
 例如，使用Workfront Fusion，您可以创建一个方案，以便使用自适应表单收集数据、处理数据并将数据发送到数据存储进行存档。 一旦设置了场景，Workfront Fusion就会在用户填写表单时自动执行任务，从而无缝更新数据存储。
 
 AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+
 
 ## 使用Adobe Workfront Fusion的优势{#advatages-of-workfront-fusion}
 
