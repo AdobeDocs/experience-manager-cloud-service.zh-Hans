@@ -2,10 +2,10 @@
 title: 属性和项类型
 description: 了解通用编辑器所需的数据属性和项类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 453cbaeabd28223cac5e732a551aa71f5a425839
+source-git-commit: ff8a832d61e42ac17ca37e5a3c41e39119879af6
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 85%
+ht-degree: 84%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 85%
 |---|---|
 | `data-aue-resource` | 资源的 URN，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
 | `data-aue-prop` | 资源的属性，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
-| `data-aue-type` | 可编辑项目的类型（例如文本、图像和参考） |
+| `data-aue-type` | [可编辑项目的类型](#item-types) （例如，文本、图像和引用） |
 | `data-aue-filter` | 定义可以使用哪些参考 |
 | `data-aue-label` | 为编辑器中显示的可选项目定义自定义标签<br>如果设置了 `itemmodel`，则会通过模型检索标签 |
 | `data-aue-model` | 定义一个模型，该模型会用于属性边栏中基于表单的编辑 |
-| `data-aue-behavior` | 定义检测的行为，例如，独立的文本或图像也可以模拟组件使其可移动或可删除 |
+| `data-aue-behavior` | 定义 [指令集的行为，](#behaviors) 例如，独立的文本或图像也可以模拟组件以使其可移动或删除 |
 
 ## 项目类型 {#item-types}
 
