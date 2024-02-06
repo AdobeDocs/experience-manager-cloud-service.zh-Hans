@@ -1,18 +1,18 @@
 ---
-title: 自定义 UI
-description: 了解不同的扩展点，通过这些扩展点可自定义通用编辑器的UI以支持内容作者的需求。
+title: 自定义通用编辑器创作体验
+description: 了解不同的扩展点和其他功能，这些功能允许您自定义通用编辑器的UI以支持内容作者的需求。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: 1bc65e65e6ce074a050e21137ce538b5c086665f
+source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 3%
+source-wordcount: '302'
+ht-degree: 0%
 
 ---
 
 
-# 自定义 UI  {#customizing-ui}
+# 自定义通用编辑器创作体验 {#customizing-ue}
 
-了解不同的扩展点，通过这些扩展点可自定义通用编辑器的UI以支持内容作者的需求。
+了解不同的扩展点和其他功能，这些功能允许您自定义通用编辑器的创作体验，以支持内容作者的需求。
 
 ## 禁用发布 {#disable-publish}
 
@@ -59,3 +59,40 @@ data-aue-filter="container-filter"
    }
 ]
 ```
+
+## 有条件地显示和隐藏属性边栏中的组件 {#conditionally-hide}
+
+尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，您可以通过添加 `condition` 归因于 [组件模型的字段。](/help/implementing/universal-editor/field-types.md#fields)
+
+可以使用定义条件 [JsonLogic架构。](https://jsonlogic.com/) 如果条件为true，则会显示字段。 如果条件为false，则字段将隐藏。
+
+### 示例模型 {#sample-model}
+
+```json
+ {
+    "id": "conditionally-revealed-component",
+    "fields": [
+      {
+        "component": "boolean",
+        "label": "Shall the text field be revealed?",
+        "name": "reveal",
+        "valueType": "boolean"
+      },
+      {
+        "component": "text-input",
+        "label": "Hidden text field",
+        "name": "hidden-text",
+        "valueType": "string",
+        "condition": { "===": [{"var" : "reveal"}, true] }
+      }
+    ]
+ }
+```
+
+#### 条件False {#false}
+
+![隐藏的文本字段](assets/hidden.png)
+
+#### 条件True {#true}
+
+![显示的文本字段](assets/shown.png)
