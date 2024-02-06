@@ -1,15 +1,15 @@
 ---
-title: 迪纳特瑞斯
+title: Dynatrace
 description: 了解如何将Dynatrace与AEMas a Cloud Service配合使用
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: a234f2a00c51bcb23b0c52feac9971259d26b8c3
+source-git-commit: fec3aa6debec49014406ab241c3ce0338ec5a1d2
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
 
-# 迪纳特瑞斯 {#dynatrace}
+# Dynatrace {#dynatrace}
 
 通过Adobe，您可以使用Dynatrace在企业部署过程中监控AEMas a Cloud Service，确定任何潜在问题的原因，并根据需要采取措施进行补救。
 
@@ -27,13 +27,13 @@ Dynatrace客户可通过客户支持票证请求连接，从而监控其AEM环�
 
 | **字段** | **描述** |
 |---|---|
-| Dynatrace环境URL | Dynatrace环境URL。<br><br>对于Dynatrace SaaS客户，格式为 `https://<your-environment-id>.live.dynatrace.com`.<br><br>对于Dynatrace Managed客户，格式为 `https://<your-managed-url>/e/<environmentId>` |
-| 动态环境ID | 您的动态环境ID。 请参阅 [获取Dynatrace环境信息](#get-dynatrace-env-info) 知道怎么拿到这个。 |
-| Dynatrace环境令牌 | 您的Dynatrace环境标记。 请参阅 [获取Dynatrace环境信息](#get-dynatrace-env-info) 知道怎么拿到这个。<br><br>这应被视为机密，因此请使用适当的安全做法。 例如，密码可以在网站上对其进行保护，例如 **zerobin.net**，客户支持工单可以引用该文件以及密码。 |
-| Dynatrace API访问令牌 | Dynatrace环境的API访问令牌。  请参阅 [创建Dynatrace API访问令牌](#create-dynatrace-access-token) 以了解如何创建此项。<br><br>这应被视为机密，因此请使用适当的安全做法。 例如，密码可以在网站上对其进行保护，例如 **zerobin.net**，客户支持工单可以引用该文件以及密码。<br><br>注意：只有Dynatrace Managed才需要此项。 |
-| Dynatrace ActiveGate端口 | AEM集成应连接到的Dynatrace ActiveGate端口。<br><br>注意：只有Dynatrace Managed才需要此项。 |
-| Dynatrace ActiveGate网络区域 | 您的 [Dynatrace ActiveGate网络区域](https://docs.dynatrace.com/docs/manage/network-zones) 在数据中心和网络区域之间高效地路由AEM监控数据。<br><br>注意：Dynatrace ActiveGate网络区域是可选的。 |
-| AEM环境Id | 供Dynatrace监控的AEM环境ID。 |
+| [!DNL Dynatrace Environment URL] | Dynatrace环境URL。<br><br>对于Dynatrace SaaS客户，格式为 `https://<your-environment-id>.live.dynatrace.com`.<br><br>对于Dynatrace Managed客户，格式为 `https://<your-managed-url>/e/<environmentId>` |
+| [!DNL Dynatrace Environment ID] | 您的动态环境ID。 请参阅 [获取Dynatrace环境信息](#get-dynatrace-env-info) 知道怎么拿到这个。 |
+| [!DNL Dynatrace Environment Token] | 您的Dynatrace环境标记。 请参阅 [获取Dynatrace环境信息](#get-dynatrace-env-info) 知道怎么拿到这个。<br><br>这应被视为机密，因此请使用适当的安全做法。 例如，密码可以在网站上对其进行保护，例如 **zerobin.net**，客户支持工单可以引用该文件以及密码。 |
+| [!DNL Dynatrace API access token] | Dynatrace环境的API访问令牌。  请参阅 [创建Dynatrace API访问令牌](#create-dynatrace-access-token) 以了解如何创建此项。<br><br>这应被视为机密，因此请使用适当的安全做法。 例如，密码可以在网站上对其进行保护，例如 **zerobin.net**，客户支持工单可以引用该文件以及密码。<br><br>注意：只有Dynatrace Managed才需要此项。 |
+| [!DNL Dynatrace ActiveGate Port] | AEM集成应连接到的Dynatrace ActiveGate端口。<br><br>注意：只有Dynatrace Managed才需要此项。 |
+| [!DNL Dynatrace ActiveGate Network Zone] | 您的 [Dynatrace ActiveGate网络区域](https://docs.dynatrace.com/docs/manage/network-zones) 在数据中心和网络区域之间高效地路由AEM监控数据。<br><br>注意：Dynatrace ActiveGate网络区域是可选的。 |
+| [!DNL AEM Environment ID(s)] | 供Dynatrace监控的AEM环境ID。 |
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Dynatrace客户可通过客户支持票证请求连接，从而监控其AEM环�
 ## 创建Dynatrace API访问令牌 {#create-dynatrace-access-token}
 
 1. 登录Dynatrace环境。
-1. 在Dynatrace菜单中，转到管理>访问令牌。
-1. 选择生成新令牌。
-1. 定义令牌名称。
+1. 在 [!DNL Dynatrace] 菜单，转到 [!DNL Manage] > [!DNL Access tokens].
+1. 选择 [!DNL Generate new token].
+1. 定义 [!DNL token name].
 
-1. 可选：设置到期日期。 请确保在令牌过期之前生成新令牌。
-1. 将令牌范围设置为PaaS集成 — 安装程序下载
-1. 选择生成令牌。
+1. 可选：设置 [!DNL expiration date]. 请确保在令牌过期之前生成新令牌。
+1. 设置 [!DNL token scope] 到 [!DNL PaaS integration - Installer download]
+1. 选择 [!DNL Generate token].
 1. 复制生成的访问令牌并将其存储在安全位置。
 
 
