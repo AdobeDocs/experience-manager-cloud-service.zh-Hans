@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: b1c5df329e45128704ae82f49673c6a755a61a73
-workflow-type: ht
-source-wordcount: '1573'
-ht-degree: 100%
+source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
+workflow-type: tm+mt
+source-wordcount: '1624'
+ht-degree: 96%
 
 ---
 
@@ -15,11 +15,34 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.16 版的发布日期是 2024 年 1 月 19 日。
+最新版本1.9.17的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年2月7日。
 
 ## 版本亮点 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
+
+* 启用切换功能以允许AEM Cloud客户配置和设置连接器。
+
+* 关闭 `resourceResolver` 如果未显式关闭基础会话，则会导致AEM实例中的会话泄漏。 显式关闭会话至关重要，因为自动关闭资源解析程序不会隐式关闭会话。
+
+>[!NOTE]
+>
+>AEM 6.4 已结束延期支持。请参阅我们的[技术支持期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。请在[此处](https://experienceleague.adobe.com/docs/?lang=en)查找支持的版本。
+
+
+>[!IMPORTANT]
+>
+>Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.17 版](/help/assets/workfront-connector-install.md)。
+
+## 已知问题 {#known-issues}
+
+* 在使用 AEM 6.4 配置项目链接文件夹时，Experience Manager 不保存&#x200B;**[!UICONTROL 子文件夹]**&#x200B;和&#x200B;**[!UICONTROL 在具有作品集的项目中创建链接文件夹]**&#x200B;字段的值。在保存配置后，**[!UICONTROL 子文件夹]**&#x200B;字段的值自动更新为&#x200B;**[!UICONTROL 未定义]**，**[!UICONTROL 在具有作品集的项目中创建链接文件夹]**&#x200B;字段的值自动更新为&#x200B;**[!UICONTROL 默认作品集]**。
+
+* 在使用经典 Workfront 体验时，**[!UICONTROL 更多]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项不允许您在 Experience Manager 中选择目标目的地。当使用&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表时，**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。**[!UICONTROL 更多]**&#x200B;下拉列表和可在新 Workfront 体验中找到的&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。
+
+## 以前的版本 {#previous-releases}
+
+### 2024 年 1 月版本 {#january-2023-release}
 
 * [!DNL CRX DE] 中的 [!DNL Workfront] 配置当前未存储 `project ID`，导致应用只读权限时出错。详细了解如何[配置权限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders)。
 
@@ -36,23 +59,6 @@ ht-degree: 100%
 * AEM 中对大文件资源的支持不足导致 4 字节大小问题。
 
 * 对于链接文件夹、文档更新和注释更新中的关键流程无请求时处理。
-
->[!NOTE]
->
->AEM 6.4 已结束延期支持。请参阅我们的[技术支持期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。请在[此处](https://experienceleague.adobe.com/docs/?lang=en)查找支持的版本。
-
-
->[!IMPORTANT]
->
->Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.16 版](/help/assets/workfront-connector-install.md)。
-
-## 已知问题 {#known-issues}
-
-* 在使用 AEM 6.4 配置项目链接文件夹时，Experience Manager 不保存&#x200B;**[!UICONTROL 子文件夹]**&#x200B;和&#x200B;**[!UICONTROL 在具有作品集的项目中创建链接文件夹]**&#x200B;字段的值。在保存配置后，**[!UICONTROL 子文件夹]**&#x200B;字段的值自动更新为&#x200B;**[!UICONTROL 未定义]**，**[!UICONTROL 在具有作品集的项目中创建链接文件夹]**&#x200B;字段的值自动更新为&#x200B;**[!UICONTROL 默认作品集]**。
-
-* 在使用经典 Workfront 体验时，**[!UICONTROL 更多]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项不允许您在 Experience Manager 中选择目标目的地。当使用&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表时，**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。**[!UICONTROL 更多]**&#x200B;下拉列表和可在新 Workfront 体验中找到的&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。
-
-## 以前的版本 {#previous-releases}
 
 ### 2023 年 11 月版本 {#november-2023-release}
 
