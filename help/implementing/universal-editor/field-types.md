@@ -2,9 +2,9 @@
 title: 模型定义、字段和组件类型
 description: 通过示例了解通用编辑器可在属性边栏中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c721e2f5f14e9d1c069e1dd0a00609980db6bd9d
+source-git-commit: 550d26cde3d6b7be419bc9df70db8894851361c6
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1004'
 ht-degree: 11%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 11%
 | `required` | `boolean` | 字段是否为必填字段 | 否 |
 | `readOnly` | `boolean` | 字段是否为只读 | 否 |
 | `hidden` | `boolean` | 默认情况下是否隐藏字段 | 否 |
-| `condition` | `RulesLogic` | 显示或隐藏字段的规则 | 否 |
+| `condition` | `RulesLogic` | 显示或隐藏字段的规则，基于 [条件](/help/implementing/universal-editor/customizing.md#conditionally-hide) | 否 |
 | `multi` | `boolean` | 字段是否为多字段 | 否 |
 | `validation` | `ValidationType` | 字段的验证规则 | 否 |
 | `raw` | `unknown` | 组件可以使用的原始数据 | 否 |
