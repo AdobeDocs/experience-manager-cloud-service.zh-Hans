@@ -4,8 +4,8 @@ description: 了解如何将AEM Dispatcher上的现有配置转换为AEMas a Clo
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
 source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 33%
+source-wordcount: '330'
+ht-degree: 28%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 33%
 
 Adobe Experience Manager Dispatcher 转换器将现有 AEM Dispatcher 配置转换为 AEM as a Cloud Service Dispatcher 配置。
 
-## Dispatcher 简介 {#introduction-dispatcher}
+## Dispatcher简介 {#introduction-dispatcher}
 
 Dispatcher是Adobe Experience Manager的缓存和/或负载平衡工具。 使用 AEM 的 Dispatcher 还有助于保护 AEM 服务器免受攻击。因此，您可以通过将Dispatcher与企业级Web服务器结合使用来提高AEM实例的安全性。
 
@@ -27,7 +27,7 @@ Dispatcher是Adobe Experience Manager的缓存和/或负载平衡工具。 使�
 
 请参阅 [Dispatcher概述](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 要了解Dispatcher如何执行缓存，返回文档和执行负载平衡。
 
-### Apache 和 Dispatcher 配置和测试 {#dispatcher-configurations-cloud}
+### Apache和Dispatcher配置和测试 {#dispatcher-configurations-cloud}
 
 了解如何构建AEMas a Cloud Service的Apache和Dispatcher配置，以及如何在部署到云环境之前在本地验证和运行该配置。
 
@@ -37,7 +37,7 @@ Dispatcher是Adobe Experience Manager的缓存和/或负载平衡工具。 使�
 
 AEM Dispatcher Converter提供将现有内部部署或AdobeManaged Services Dispatcher配置重构为与AEMas a Cloud Service兼容的Dispatcher配置的功能。
 
-## 使用 AEM Dispatcher Converter {#using-dispatcher-converter}
+## 使用AEM Dispatcher转换器 {#using-dispatcher-converter}
 
 * 通过Adobe Developer CLI ：AdobeAEM建议您通过 `aio-cli-plugin-aem-cloud-service-migration` (适用于Adobe Developer CLI的AEMas a Cloud Service代码重构插件)。
 

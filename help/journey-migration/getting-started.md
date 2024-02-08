@@ -4,8 +4,8 @@ description: 通过熟悉迁移到 AEM as a Cloud Service 的基础知识，开�
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 24%
+source-wordcount: '560'
+ht-degree: 22%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 24%
 * 了解as a Cloud Service移动AEM的好处
 * 熟悉您需要采取的主要步骤，以便能够过渡到云
 
-## 移动到 AEM as a Cloud Service 的好处 {#benefits-of-moving-to-aem-as-a-cloud-service}
+## 迁移至AEMas a Cloud Service的好处 {#benefits-of-moving-to-aem-as-a-cloud-service}
 
 AEMas a Cloud Service为Experience Manager Assets、Forms和Screens提供了可扩展、安全且敏捷的技术基础，使营销人员和IT专业人员能够专注于大规模提供有影响力的体验。
 

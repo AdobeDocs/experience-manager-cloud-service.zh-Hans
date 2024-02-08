@@ -60,7 +60,7 @@ Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展�
 >[!TIP]
 > 请参阅教程，了解如何 [在本地Experience ManagerSDK上开发和部署WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
 
-### 部署
+### 正在部署
 
 开发人员编写代码并在本地对其进行测试，然后将该代码推送到远程AEMas a Cloud Service环境。
 
@@ -130,7 +130,7 @@ Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展�
 <td><ul><li>请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html">对Experience Manageras a Cloud Service的重要更改</a> 了解Adobe Experience Manager as a Cloud Service与Experience Manager6.x之间的重要差异。</li><li>请参阅 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html">已弃用的功能</a> 详细了解已标记为已弃用的特性和功能。</li><li>[仅适用于Cloud Service迁移]评估Cloud Service准备情况：运行 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=zh-Hans">Best Practices Analyzer(BPA)</a> 在源环境中 </li><li>针对Experience ManagerCS中的显着更改和已弃用功能完成评估</li></ul></td>
 </tr>
 <tr>
-<td>审核</td>
+<td>审查</td>
 <td><ul><li>根据发现，执行工作量评估和资源配置练习</li></ul></td>
 </tr>
 <tr>

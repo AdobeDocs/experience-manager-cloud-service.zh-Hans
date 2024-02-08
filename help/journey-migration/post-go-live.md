@@ -4,8 +4,8 @@ description: 了解如何监测问题并提高性能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 29%
+source-wordcount: '459'
+ht-degree: 22%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 29%
 
 ## CRXDE Lite {#crxde-lite}
 
-作为用户，您可以在开发环境中访问 CRXDE Lite，但不能在暂存或生产环境中访问。
+作为用户，您可以在开发环境中访问CRXDE Lite，但不能在暂存或生产环境中访问。
 
 >[!IMPORTANT]
 >写入不可变的存储库，如 `/libs` 和 `/apps` 在运行时导致错误。 此外，您无法访问用于暂存和生产环境的开发人员工具。

@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
 workflow-type: tm+mt
 source-wordcount: '1017'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="启动内容片段编辑器"
->abstract="现在让我们探讨 Headless 内容创作的工作原理。您的 AEM Headless 试用版集成了示例 React 应用程序，因此您可以看到任何人无需开发时间即可轻松独立管理内容。<br><br>单击下方在新选项卡中启动该模块，然后遵循该指南。"
+>abstract="现在让我们探讨 Headless 内容创作的工作原理。您的 AEM Headless 试用版集成了示例 React 应用程序，因此您可以看到任何人无需开发时间即可轻松独立管理内容。<br><br>通过单击下方以在新选项卡中启动此模块，然后遵循本指南进行操作。"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
@@ -69,7 +69,7 @@ ht-degree: 98%
 
 1. 从预览返回到内容片段编辑器的浏览器选项卡。
 
-1. 您需要返回到内容片段编辑器中的正确位置。该编辑器左上角的痕迹导航将显示您在内容层次结构中所处的位置。选择 **峡谷中的山地车手** 在痕迹导航中返回该页面。
+1. 您需要返回到内容片段编辑器中的正确位置。该编辑器左上角的痕迹导航将显示您在内容层次结构中所处的位置。在痕迹导航中选择&#x200B;**峡谷中的山地车手**&#x200B;以返回该页面。
 
    ![痕迹导航](assets/do-not-localize/swap-image-2.png)
 
