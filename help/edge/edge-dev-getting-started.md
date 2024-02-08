@@ -2,9 +2,9 @@
 title: 使用Edge Delivery Services进行AEM创作的开发人员快速入门指南
 description: 本指南将引导您启动并运行一个新的Adobe Experience Manager站点，该站点使用Edge Delivery Services和通用编辑器进行内容创作
 feature: Edge Delivery Services
-source-git-commit: 5967bd78b9c23cf3451ac3b0ec2118da5200ddc1
+source-git-commit: 224cfe9853e8974c33b0e53e961a02d54f875a35
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -162,3 +162,9 @@ AEM提供两种不同的内容编辑器，要使用的编辑器取决于您的�
 1. 查看您的内容已发布。
 
    ![已发布内容](assets/edge-dev-getting-started/published-site.png)
+
+## 后续步骤 {#next-steps}
+
+现在，您已有一个用于Edge Delivery Services项目的AEM创作，您可以开始创建和设置自己的块。
+
+请参阅指南 [创建指令用于通用编辑器的块](/help/edge/create-block.md) 以了解更多信息。
