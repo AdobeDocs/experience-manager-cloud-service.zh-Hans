@@ -4,9 +4,9 @@ description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提�
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储
 
 Edge Delivery Services 是 Adobe Experience Manager 的一部分，因此 Edge Delivery Services 可与 AEM Sites 在相同的域中共存。这是大型网站的常见用例。不仅如此，还可在 AEM Sites 页面中轻松地使用来自 Edge Delivery Services 的内容，并且反之亦然。
 
-请参阅 [使用Edge Delivery Services进行AEM创作的开发人员快速入门指南](/help/edge/edge-dev-getting-started.md) 了解如何开始自己的项目，以便使用AEM和Edge Delivery Services进行创作。
+请参阅[关于使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/edge-dev-getting-started.md)，了解如何启动您自己的项目以使用 AEM 和 Edge Delivery Services 进行创作。
 
 您还可以将 Edge Delivery Services 与 Adobe Target、Analytics 和 Launch 结合使用。
 
