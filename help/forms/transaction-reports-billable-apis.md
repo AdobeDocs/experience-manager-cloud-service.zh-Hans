@@ -4,10 +4,10 @@ description: 作为交易入账的所有API的列表
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+source-git-commit: 7318c5e65fc03bfebbf5fb43e4edc30ffbb53909
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 4%
+source-wordcount: '1598'
+ht-degree: 3%
 
 ---
 
@@ -31,44 +31,42 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="表单提交跟踪器"
->abstract="通过整合视图轻松跟踪表单提交情况以了解总计数，或深入了解特定于实例的详细信息。 使用直观的条形图可确定趋势、比较实例并快速做出明智的决策。"
+>abstract="使用我们直观的跟踪仪表板，在AEM Forms Publish实例上轻松监控表单提交。 图表提供特定于当前实例的数据，使您能够快速分析趋势并做出明智的决策。 对于其他实例的提交数据，只需访问相应实例的仪表板即可。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="表单转化跟踪器"
->abstract="通过汇总总计数或探索每个AEM Forms实例的详情，轻松跟踪表单转化。 易于阅读的条形图可帮助发现趋势、比较实例并做出快速、明智的决策。"
+>abstract="随时了解表单转化情况，并汇总转化总数。 该图表提供了特定于当前AEM Forms Publish实例的数据，使您能够快速分析趋势并做出明智的决策。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="表单生成的平均持续时间"
->abstract="该图说明了创建表单所用的平均时间。 图表上的每个条形表示一个特定的表单，条形的高度表示在该时间范围内创建表单所用的平均持续时间。 分析此图表可帮助用户了解不同期间或不同上下文内表单创建的效率和速度，从而深入了解潜在的改进。"
+>abstract="该图说明了创建表单所用的平均时间。 图表上的每个条形表示一个特定的表单，条形的高度表示在该时间范围内创建表单所用的平均持续时间。 分析此图表可帮助用户了解不同期间或不同上下文内表单创建的效率和速度，从而深入了解潜在的改进。 该图提供了特定于当前AEM Forms创作实例的数据。 要查看其他实例的数据，请访问相应实例的控制面板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="表单创建的平均持续时间"
->abstract="该图形显示创建和发布表单所用的平均时间，从打开表单进行编辑的初始日期开始计算。 每个条形对应于表单的特定时间范围，条形高度表示从表单开发开始到最终完成和发布所用的平均时间。"
+>abstract="该图形显示创建和发布表单所用的平均时间，从打开表单进行编辑的初始日期开始计算。 每个条形对应于表单的特定时间范围，条形高度表示从表单开发开始到最终完成和发布所用的平均时间。 该图提供了特定于当前AEM Forms创作实例的数据。 要查看其他实例的数据，请访问相应实例的控制面板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="新的Forms跟踪器"
->abstract="图表提供有关特定时间段内新创建的表单的数量或频率的信息。 图表上的每个条形图都表示一个不同的度量单位，例如天、周或月。 每条条形的高度表示在该特定间隔内创建的新表单的数量或频率。"
+>abstract="图表提供有关特定时间段内新创建的表单的数量或频率的信息。 图表上的每个条形图都表示一个不同的度量单位，例如天、周或月。 每条条形的高度表示在该特定间隔内创建的新表单的数量或频率。 该图提供了特定于当前AEM Forms创作实例的数据。 要查看其他实例的数据，请访问相应实例的控制面板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="已发布Forms跟踪器"
->abstract="图表提供了有关在特定时间段内已成功发布的表单的数量或频率的信息。 这使您能够了解表单发布随时间变化的趋势、模式或变化，这有助于监控工作效率、确定发布峰值时段或评估表单发布过程中更改的成功。"
+>abstract="图表提供了有关在特定时间段内已成功发布的表单的数量或频率的信息。 这使您能够了解表单发布随时间变化的趋势、模式或变化，这有助于监控工作效率、确定发布峰值时段或评估表单发布过程中更改的成功。 该图提供了特定于当前AEM Forms发布实例的数据。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
 
-<!-- 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Form Fragments Tracker"
->abstract="This graph helps you see how many form fragments people use in their forms. It gives you a sense of how popular or common these reusable parts are in form building."
+>title="已发布Forms跟踪器"
+>abstract="此图表可帮助您了解人们在其表单中使用的表单片段数量。 它让你了解这些可重用部件在形式构建中的受欢迎程度或普遍程度。 该图提供了特定于当前AEM Forms发布实例的数据。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
->title="Average Duration for Form Fragments Creation"
->abstract= "The graph displays the average time taken to create a form fragment, measured from the initial day the form fragment was opened for editing. Each bar corresponds to a specific time frame for a form fragment, with the bar height indicating the average time taken from the start of form fragment development to its finalization and publication."
-
+>title="已发布Forms跟踪器"
+>abstract="该图形显示创建表单片段所用的平均时间，从打开表单片段进行编辑的初始日期开始计算。 每个条形对应于一个表单片段的特定时间范围，条形高度表示从表单片段开发开始到最终完成和发布所用的平均时间。 该图提供了特定于当前AEM Forms发布实例的数据。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
 
 <!-- 
 
