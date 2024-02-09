@@ -3,10 +3,10 @@ title: “[!DNL Assets view] 用户界面”
 description: 了解  [!DNL Assets view] 中的用户界面并在其中导航。
 role: User
 exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 2f701c527b5aac9d604cbfe857df90c3e8bf6054
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 89%
+source-wordcount: '922'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 89%
 * [收藏集](/help/assets/manage-collections-assets-view.md)：收藏集是Adobe Experience Manager Assets视图中的一组资源、文件夹或其他收藏集。 使用收藏集可在用户之间共享资源。收藏集与文件夹的不同之处是可包含来自不同位置的资源。您可以与一个用户共享多个收藏集。每个收藏集都包含对资源的引用。收藏集中会保持资源的引用完整性。
 
 * [见解](/help/assets/manage-reports-assets-view.md#view-live-statistics)：在 [!DNL Assets view] 中可以在仪表板上查看实时见解。通过资源视图的“见解”仪表板，可查看资源视图环境的实时数据。可查看过去 30 天或过去 12 个月的实时事件指标。
-* **垃圾箱**：列出从根 **[!UICONTROL Assets]** 文件夹中删除的资源。在垃圾桶文件夹中选择某个资源可将它还原到原有位置或永久删除它。您还可以指定关键字或应用标准或自定义过滤器来搜索“垃圾箱”文件夹中的相应资源。有关使用标准和自定义筛选器的更多信息，请参阅 [在“资源”视图中搜索资源](/help/assets/search-assets-view.md).
+* **垃圾箱**：列出从根 **[!UICONTROL Assets]** 文件夹中删除的资源。您可以选择垃圾桶文件夹中的资源以将其还原到原始位置或永久删除。 您可以指定关键字或应用过滤器，例如资源状态、文件类型、MIME类型、图像大小、资源创建、修改和到期日期，以及按当前用户丢弃的资源进行过滤。 您还可以应用自定义筛选条件来搜索垃圾桶文件夹中的相应资源。 有关使用标准和自定义筛选器的更多信息，请参阅如何 [在“资源”视图中搜索资源](/help/assets/search-assets-view.md).
 * **设置**：您可以使用配置资源视图的各种选项 **设置**，例如元数据表单、报表和分类管理。
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
