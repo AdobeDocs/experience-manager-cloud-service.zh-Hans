@@ -179,7 +179,7 @@ ht-degree: 99%
 + 上线 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上线历程 {#journey}
-      + [入门历程概述](/help/journey-onboarding/overview.md)
+      + [上线历程概述](/help/journey-onboarding/overview.md)
       + [入门准备](/help/journey-onboarding/preparation.md)
       + [AEM as a Cloud Service 术语](/help/journey-onboarding/terminology.md)
       + [Admin Console](/help/journey-onboarding/admin-console.md)
