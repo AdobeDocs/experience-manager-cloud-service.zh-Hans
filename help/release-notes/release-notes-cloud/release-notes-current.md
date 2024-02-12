@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 77d38f03f18eb6b0fdc2f2eec5b2dc4b608b8057
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: 03293f49e583d8b40bafd95bbc89c9ba5c024da8
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 93%
 
 ---
 
@@ -93,6 +93,11 @@ Experience Manager Assets 现在无需处理配置文件配置，即默认生成
 * **[用 DocAssurance API（Communication API 的一部分）保护文档](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API 使您能够通过为文档签名和加密来保护敏感信息。通过加密，可将文档内容转换为无法读取的格式，从而确保只有获得授权的用户可访问。这一层加强的保护不仅防止未经授权地查看宝贵的数据，还能让人安心。利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。此服务使用数字签名和认证确保只有预期的接收者可更改文档。
 
   您可以通过您的官方电子邮件 ID 向 `aem-forms-early-adopter-program@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
+
+* **[您可以利用Real User Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 为AEMas a Cloud Service启用客户端收集。
+真实用户监控 (RUM) 数据服务能够更准确地反映用户交互，确保可靠地衡量网站参与度。这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
+
+  如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `aemcs-rum-adopter@adobe.com`，以及要从与Adobe ID关联的电子邮件地址启用RUM的每个环境的域名。 Adobe 的产品团队随后将为您启用真实用户监控 (RUM) 数据服务。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
