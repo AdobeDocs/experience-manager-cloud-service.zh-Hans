@@ -3,10 +3,10 @@ title: 为 Edge Delivery Services 发布内容
 description: 了解内容发布如何与 Edge Delivery Services 配合使用，以及如何使用 Edge Delivery Services 发布 AEM 内容。
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: daad30dd74d389c631131a77655c9fabf4ff2967
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 87%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 100%
 使用通用编辑器创作 AEM 内容时，发布任务就像单击通用编辑器中的&#x200B;**发布**&#x200B;按钮一样简单。请参阅文档[使用通用编辑器发布内容。](/help/implementing/universal-editor/publishing.md)
 
 发布时的信息流程如下。当作者开始发布时，此流程就会自动进行，并会在此处进行说明以供参考。
+
+>[!NOTE]
+>
+>每天最多允许从创作UI或工作流发布5000个路径。 不支持创建批量发布工作加载的集成。
 
 ![从 AEM 发布到 Edge Delivery Services 时的信息流](assets/publishing-flow.png)
 
