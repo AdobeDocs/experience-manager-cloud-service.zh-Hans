@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1624'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 96%
 
 ## 发布日期 {#release-date}
 
-最新版本1.9.17的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年2月7日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.17 版的发布日期是 2024 年 2 月 7 日。
 
 ## 版本亮点 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
 
-* 启用切换功能以允许AEM Cloud客户配置和设置连接器。
+* 启用切换功能以使 AEM Cloud 客户可配置和设置连接器。
 
-* 关闭 `resourceResolver` 如果未显式关闭基础会话，则会导致AEM实例中的会话泄漏。 显式关闭会话至关重要，因为自动关闭资源解析程序不会隐式关闭会话。
+* 关闭 `resourceResolver` 但不显式关闭基础会话将导致在 AEM 实例中产生会话泄漏。显式关闭会话至关重要，因为自动关闭资源解析器并不隐式关闭会话。
 
 >[!NOTE]
 >
->AEM 6.4 已结束延期支持。请参阅我们的[技术支持期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。请在[此处](https://experienceleague.adobe.com/docs/?lang=en)查找支持的版本。
+>AEM 6.4 已结束延期支持。请参阅我们的[技术支持期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。请在[此处](https://experienceleague.adobe.com/docs/?lang=zh-Hans)查找支持的版本。
 
 
 >[!IMPORTANT]
