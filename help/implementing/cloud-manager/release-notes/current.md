@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.1.0 �
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.1.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 06f534e6541bd04e005f3acf1edbb3e372c1cd0d
-workflow-type: ht
-source-wordcount: '673'
-ht-degree: 100%
+source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ AEM as a Cloud Service 中的 Cloud Manager 2024.1.0 版本的发布日期是 20
 
 ### 自带 GitHub {#byo-github}
 
-如果您使用 GitHub 管理存储库，则[现在可以通过 Cloud Manager 直接在 GitHub 存储库中验证代码。](/help/implementing/cloud-manager/managing-code/byo-github.md)此集成使您无需始终与 Adobe 存储库同步代码，并可在将拉取请求合并到主分支之前对其进行验证。
+如果您使用 GitHub 管理存储库，则[现在可以通过 Cloud Manager 直接在 GitHub 存储库中验证代码。](/help/implementing/cloud-manager/managing-code/byo-github.md) 此集成消除了对代码与Adobe存储库保持一致同步的需求，并允许您在将拉取请求合并到主分支之前对其进行验证。 此功能专用于公共GitHub。 不支持自托管GitHub。
 
 如果您有兴趣测试此新功能并分享您的反馈，请从您的 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-CloudManager_BYOG@adobe.com`。
 
