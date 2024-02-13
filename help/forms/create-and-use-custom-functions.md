@@ -5,10 +5,10 @@ keywords: 添加自定义函数、使用自定义函数、创建自定义函数�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 28020b05e4aaaa3f066943e0504f05e307c7020b
+source-git-commit: 1fb7fece71eec28219ce36c72d628867a222b618
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 8%
+source-wordcount: '779'
+ht-degree: 10%
 
 ---
 
@@ -43,9 +43,9 @@ function ValidateEmail(inputText)
 
 ### 自定义函数的使用 {#uses-of-custom-function}
 
-在自适应Forms中使用自定义函数的一些优势包括：
+在自适应Forms中使用自定义函数的优点包括：
 
-* **数据操作**：自定义函数可处理输入到表单字段中的数据。
+* **数据操作**：自定义函数处理并处理输入到表单字段中的数据。
 * **数据验证**：通过自定义函数，可对表单输入执行自定义检查并提供指定的错误消息。
 * **动态行为**：自定义函数允许您根据特定条件控制表单的动态行为。 例如，您可以显示/隐藏字段、修改字段值或动态调整表单逻辑。
 * **集成**：您可以使用自定义函数与外部API或服务集成。 它有助于从外部源获取数据，将数据发送到外部Rest端点，或根据外部事件执行自定义操作。
@@ -90,7 +90,7 @@ Some of the examples to create Arrow functions are:
 
 * **具有必需jsdoc注释的函数表达式**
 
-创建以下格式的自定义函数以在自适应表单的规则编辑器中列出它们。 例如：
+要在自适应表单的规则编辑器中列出自定义函数，请以下列格式创建自定义函数：
 
 ```javascript
     /**
@@ -118,7 +118,7 @@ The functions that are not supported in the custom function list are:
 
 >[!NOTE]
 >
-> 您可以检查 `error.log` 文件，以防在规则编辑器中未列出自定义函数等任何错误。
+> 您可以检查 `error.log` 文件以查找任何错误，如规则编辑器中未列出自定义函数。
 
 <!--The `error.log` file also displays the methods and parameters that are not supported for custom functions. -->
 
@@ -136,13 +136,13 @@ The functions that are not supported in the custom function list are:
 您可以通过添加客户端库来添加自定义函数。 要创建客户端库，请执行以下步骤：
 
 1. [克隆AEM Formsas a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 文件夹下创建一个文件夹。例如，创建一个名为 `experience-league` 的文件夹
-1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 并创建一个`ClientLibraryFolder` 作为 `es6clientlibs`。
-1. 添加属性 `categories`字符串类型值为 `es6customfunctions` 到 `es6clientlibs` 文件夹。
+1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 文件夹下创建一个文件夹。例如，创建一个名为的文件夹 `experience-league`.
+1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 并创建 `ClientLibraryFolder`. 例如，创建客户端库文件夹为 `es6clientlibs`.
+1. 添加属性 `categories` 字符串类型值的组合。 例如，分配值 `es6customfunctions` 到 `categories` 的属性 `es6clientlibs` 文件夹。
 
    >[!NOTE]
    >
-   >`es6customfunctions`是一个示例类别。 您可以为类别选择任意名称。
+   > 您可以选择任意名称 `client library folder` 和 `categories` 属性。
 
 1. 创建一个名为 `js` 的文件夹。
 1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/es6clientlibs/js` 文件夹。
@@ -150,7 +150,7 @@ The functions that are not supported in the custom function list are:
 
    >[!NOTE]
    >
-   >* 如果包含自定义函数代码的JavaScript文件出错，则自定义函数不会列在自适应表单的规则编辑器中。 您还可以检查 `error.log` 文件查找错误。
+   > 如果包含自定义函数代码的JavaScript文件出错，则自定义函数不会列在自适应表单的规则编辑器中。 您还可以检查 `error.log` 文件查找错误。
 
    <!-- 
     >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
@@ -179,18 +179,22 @@ The functions that are not supported in the custom function list are:
 
 ### 在自适应表单中添加客户端库{#use-custom-function}
 
-添加客户端库后，在自适应表单中使用它。 这让您能够使用 [自定义函数作为表单中的规则](/help/forms/rule-editor.md#custom-functions). 要在自适应表单中添加客户端库，请执行以下步骤：
+将客户端库部署到Forms CS环境后，请在自适应表单中使用其功能。 在自适应表单中添加客户端库
 
-1. 在编辑模式下打开表单。
-要在编辑模式下打开表单，请选择一个表单，然后选择 **[!UICONTROL 打开]**.
-1. 在编辑模式下，选择一个组件，然后选择 ![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后选择 ![cmppr](assets/configure-icon.svg).
-1. 在侧栏中的“Name of Client Library”（客户端库名称）下，添加您的客户端库。 ( `es6customfunctions` 在此示例中。)
+1. 在编辑模式下打开表单。 要在编辑模式下打开表单，请选择一个表单，然后选择 **[!UICONTROL 编辑]**.
+1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
+1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
+1. 打开 **[!UICONTROL 基本]** 选项卡并选择的名称 **[!UICONTROL 客户端库类别]** (在本例中，选择 `es6customfunctions`)。
 
    ![添加自定义函数客户端库](/help/forms/assets/clientlib-custom-function.png)
 
-创建规则以在规则编辑器中使用自定义函数。
+1. 单击 **[!UICONTROL 完成]** .
+
+现在，您可以创建规则以在规则编辑器中使用自定义函数。
 
 <!--
+
+Create a rule to use custom function in the rule editor. 
 
 ### Support for the optional parameters in custom functions{#support-for-optional-parameter}
 
