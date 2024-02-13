@@ -2,9 +2,9 @@
 title: 面向AEM开发人员的通用编辑器概述
 description: 如果您是一名AEM开发人员，并且对Universal Editor的工作方式以及如何在您的项目中使用它感兴趣，本文档将为您提供端到端介绍，引导您对WKND项目进行检测以使用Universal Editor。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: d7154fcec9cf6e3cb00ce8e434e38544294df165
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '3112'
+source-wordcount: '3139'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 >
 >如果您希望尽快启动并运行，请参阅 [AEM中的通用编辑器快速入门](/help/implementing/universal-editor/getting-started.md) 文档。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 要遵循本概述，您需要以下可用项。
 
@@ -150,7 +150,7 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 1. 将JavaScript库添加到文件末尾。
 
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js"></script>
+   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
 1. 单击 **全部保存** 然后重新加载通用编辑器。
@@ -183,6 +183,8 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
+
+   * 始终建议使用最新版本的库。 如果您需要以前的版本，请参阅文档 [AEM中的通用编辑器快速入门。](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. 将连接到本地Universal Editor服务所需的元数据添加到文件末尾。
 

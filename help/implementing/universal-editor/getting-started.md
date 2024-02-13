@@ -2,10 +2,10 @@
 title: AEM Universal Editor 快速入门
 description: 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: f9d584d7b117c24224079f581802f5f126890304
+source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 76%
+source-wordcount: '921'
+ht-degree: 72%
 
 ---
 
@@ -62,8 +62,15 @@ import "@adobe/universal-editor-cors";
 如果您未实施React应用程序和/或需要服务器端渲染，另一种方法是在文档正文中包含以下内容。
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
+<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
 ```
+
+始终建议使用最新版本，但在发生重大更改时，可以引用服务的先前版本。
+
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST`  — 最新的UE CORS库
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST`  — 版本2.x下最新的UE CORS库
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST`  — 版本2.1.x下最新的UE CORS库
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` — 精确的UE CORS库版本2.1.1
 
 ## 添加必要的 OSGi 配置 {#osgi-configurations}
 
