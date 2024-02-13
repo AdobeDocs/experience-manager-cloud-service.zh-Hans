@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: dc89843609e54ddb93e09776f9eff64d13069bf7
+source-git-commit: 6966486b9bf919fecb8d625ddb92ce1bb1a98291
 workflow-type: tm+mt
-source-wordcount: '4635'
+source-wordcount: '4640'
 ht-degree: 99%
 
 ---
@@ -620,6 +620,7 @@ ht-degree: 99%
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
+            + [创建和使用自定义函数](/help/forms/create-and-use-custom-functions.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -679,7 +680,7 @@ ht-degree: 99%
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
    + 交易报告 {#using-communications}
-      + [交易报告可记帐API](/help/forms/transaction-reports-billable-apis.md)
+      + [交易报告计费 API](/help/forms/transaction-reports-billable-apis.md)
       + [记录自定义实施的交易](/help/forms/record-transaction-custom-implementation.md)
    + 开发人员 API 参考 {#aem-forms-developer-api-reference}
       + [自适应表单 API 参考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
