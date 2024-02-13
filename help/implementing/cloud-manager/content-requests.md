@@ -2,9 +2,9 @@
 title: 了解 Cloud Service 内容请求
 description: 如果您从Adobe购买了内容请求许可证，请了解Adobe Experience Cloud as a Service测量的内容请求类型以及与组织分析报告工具的差异。
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 13a2aad1fc8080fb0d5060fcc31c9b71f1a833ca
+source-git-commit: 9033820fa0dc8eee181e3f581675f45cf11e694a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2688'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 5%
 Cloud Service内容请求通过服务器端数据收集来测量。 收藏集可通过CDN日志分析启用。
 
 >[!NOTE]
->此外，对于有限数量的 [率先采用者客户](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter)，客户端收集也将通过RUM(Real User Monitoring)测量启用。 有关更多信息，请参阅中的文档。 [本文](#real-user-monitoring-for-aem-as-a-cloud-service).
+>此外，对于有限数量的 [率先采用者客户](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter)，客户端收集也将通过Real User Monitoring服务测量启用。 有关更多信息，请参阅中的文档。 [本文](#real-user-monitoring-for-aem-as-a-cloud-service).
 
 ## 了解 Cloud Service 内容请求 {#understaing-cloud-service-content-requests}
 
 通过自动分析源自AEMas a Cloud ServiceCDN的日志文件，在Adobe Experience Manager as a Cloud Service边缘的服务器端自动收集内容请求。 这是通过隔离请求返回HTML来完成的 `(text/html)` 或JSON `(application /Json)` 来自CDN的内容以及基于下面详述的几个包含和排除规则。 内容请求独立于CDN缓存提供的返回内容或返回到CDN源的内容(AEM Dispatchers)。
 
-Real User Monitoring (RUM) Data Service是客户端集合，可提供对用户交互的更精确的反映，确保网站参与度的可靠测量。 这可以让客户深入了解其页面流量和性能。 这对使用Adobe托管的CDN或非Adobe托管的CDN的客户都很有用。 此外，现在可以为使用非Adobe托管的CDN的客户启用自动流量报告，因此无需与Adobe共享任何流量报告。
+Real User Monitoring服务作为客户端集合，提供了对用户交互的更精确反映，确保了对网站参与度的可靠衡量。 这可以让客户深入了解其页面流量和性能。 这对使用Adobe托管的CDN或非Adobe托管的CDN的客户都很有用。 此外，现在可以为使用非Adobe托管的CDN的客户启用自动流量报告，因此无需与Adobe共享任何流量报告。
 
 对于在AEMas a Cloud Service之上自带CDN的客户，服务器端报表将导致无法使用数字与许可的内容请求进行比较。 这些数字必须由位于外部CDN边缘的客户测量。 对于这些客户、客户端报告和相关性能， [AdobeRUM数据服务](#real-user-monitoring-for-aem-as-a-cloud-service) 是Adobe推荐选项。 请参阅 [发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-early-adopter) 以获取有关如何选择加入的信息。
 
@@ -90,9 +90,9 @@ Real User Monitoring (RUM) Data Service是客户端集合，可提供对用户�
 
 ### 概述 {#overview}
 
-Real User Monitoring (RUM)是一种性能监控技术，可实时捕获和分析网站或应用程序的数字用户体验。 它提供了Web应用程序实时性能的可视性，并提供了对最终用户体验的准确洞察。
+Real User Monitoring服务是一种性能监控技术，可实时捕获和分析网站或应用程序的数字用户体验。 它提供了Web应用程序实时性能的可视性，并提供了对最终用户体验的准确洞察。
 
-Real User Monitoring (RUM)从发起URL，一直到请求被反馈给浏览器，可提供对关键性能指标的深入洞察，所有这些都有助于开发人员增强应用程序，使其易于最终用户使用。
+Real User Monitoring服务可让您深入分析关键性能指标，从URL的启动一直到请求被反馈给浏览器为止，所有这些都有助于开发人员增强应用程序，使其易于最终用户使用。
 
 ### 谁能从真正的用户监控服务中受益？ {#who-can-benefit-from-rum-service}
 
@@ -110,19 +110,19 @@ Adobe Experience Manager使用Real User Monitoring (RUM)帮助客户和Adobe了�
 
 ### Real User Monitoring Service和Privacy {#rum-service-and-privacy}
 
-Adobe Experience Manager中的“Real User Monitoring”旨在保护访客隐私并最大限度地减少数据收集。 作为访客，这意味着您访问的网站不会收集任何个人信息或不会提供Adobe使用。
+Adobe Experience Manager中的Real User Monitoring服务旨在保护访客隐私并最大限度地减少数据收集。 作为访客，这意味着您访问的网站不会收集任何个人信息或不会提供Adobe使用。
 
 作为站点操作员，这意味着通过此功能启用监视不需要其他选择加入。因此，最终用户将不需要接受额外的弹出窗口来启用RUM监视。
 
 ### Real User Monitoring Service数据采样 {#rum-service-data-sampling}
 
-传统的Web分析解决方案会尝试收集每位访客的数据。 Adobe Experience Manager的Real User Monitoring仅从一小部分页面查看中捕获信息。 Real User Monitoring (RUM)用于对数据进行采样和匿名处理，而不是代替分析。 默认情况下，页面的取样比例将为1:100。 截至今天，站点操作员无法将此数字配置为增加或减少采样速率。 为了准确估计总流量，我们每100次页面查看就收集一次的详细数据，从而为您提供整体流量的可靠近似值。”
+传统的Web分析解决方案会尝试收集每位访客的数据。 Adobe Experience Manager的Real User Monitoring服务仅从一小部分页面查看中捕获信息。 Real User Monitoring服务数据旨在进行采样和匿名处理，而不是取代分析。 默认情况下，页面的取样比例将为1:100。 截至今天，站点操作员无法将此数字配置为增加或减少采样速率。 为了准确估计总流量，我们每100次页面查看就收集一次的详细数据，从而为您提供整体流量的可靠近似值。”
 
 由于是否按页面查看次数决定是否要收集数据，因此实际上不可能跟踪多个页面上的交互。 RUM没有访问次数、访客数或会话数的概念，而只是页面查看数的概念。 这是特意设计的。
 
 ### 正在收集哪些数据 {#what-data-is-being-collected}
 
-Real User Monitoring (RUM)旨在防止收集个人身份信息。 下面列出了Adobe Experience Manager的Real User Monitoring可收集的全套信息：
+Real User Monitoring服务旨在防止收集个人身份信息。 下面列出了Adobe Experience Manager的Real User Monitoring服务可以收集的全套信息：
 
 * 被访问站点的主机名，例如： `experienceleague.adobe.com`
 * 用于显示页面的广泛用户代理类型，例如：桌面或移动设备
@@ -140,7 +140,7 @@ Real User Monitoring (RUM)旨在防止收集个人身份信息。 下面列出�
 
 * 如果您希望加入我们的率先采用者计划，请发送电子邮件至 `aemcs-rum-adopter@adobe.com`，以及与Adobe ID关联的电子邮件地址中的生产、暂存和开发环境的域名。 Adobe 的产品团队随后将为您启用真实用户监控 (RUM) 数据服务。
 * 完成此操作后，Adobe的产品团队将创建一个客户协作渠道。
-* Adobe的产品团队将与您联系，为您提供域密钥和数据仪表板URL，您可以在其中查看页面查看和 [核心Web虚拟(CWV)](https://web.dev/vitals/) 由客户端实时用户监控(RUM)收集收集的量度。
+* Adobe的产品团队将与您联系，为您提供域密钥和数据仪表板URL，您可以在其中查看页面查看和 [核心Web虚拟(CWV)](https://web.dev/vitals/) 由客户端Real User Monitoring服务收集收集的量度。
 * 然后，将指导您如何使用域密钥访问数据仪表板url并查看指标。
 
 ### 如何使用实际用户监控服务数据 {#how-rum-service-data-is-being-used}
@@ -157,11 +157,11 @@ RUM数据有利于以下目的：
 
 1. **跟踪器阻止程序**
 
-   * 最终用户使用跟踪器阻止程序或隐私扩展可能会阻碍Real User Monitoring (RUM)的数据收集，因为这些工具会限制跟踪脚本的执行。 此限制可能会导致页面查看次数和用户交互报告不足，从而造成实际网站活动与RUM捕获的数据之间存在差异。
+   * 最终用户使用跟踪器阻止程序或隐私扩展可能会阻碍Real User Monitoring服务的数据收集，因为这些工具会限制跟踪脚本的执行。 此限制可能会导致页面查看次数和用户交互报告不足，从而造成实际网站活动与RUM捕获的数据之间存在差异。
 
 1. **捕获API/JSON调用时的限制**
 
-   * RUM数据服务侧重于客户端体验，目前不捕获后端API或JSON调用。 从实时用户监控(RUM)数据中排除这些调用将会导致与CDN Analytics测量的内容请求产生差异。
+   * RUM数据服务侧重于客户端体验，目前不捕获后端API或JSON调用。 从Real User Monitoring服务数据中排除这些调用将会导致与CDN Analytics测量的内容请求产生差异。
 
 ### 常见问题解答 {#faq}
 
