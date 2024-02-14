@@ -3,9 +3,9 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 了解本地验证、调试、灵活模式文件结构以及如何从旧模式迁移到灵活模式。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '3028'
 ht-degree: 1%
 
 ---
@@ -300,7 +300,7 @@ Phase 3 finished
 
 >[!NOTE]
 >
-请参阅 [自动重新加载和验证](#automatic-loading) 部分，了解运行的有效替代方法 `validate.sh` 在每次配置修改之后。
+>请参阅 [自动重新加载和验证](#automatic-loading) 部分，了解运行的有效替代方法 `validate.sh` 在每次配置修改之后。
 
 ### 阶段1 {#first-phase}
 
@@ -439,8 +439,8 @@ Cloud manager validator 2.0.xx
 
 >[!NOTE]
 >
-Windows用户必须使用支持Docker的Windows 10 Professional或其他分发。 此要求是在本地计算机上运行和调试Dispatcher的先决条件。
-对于Windows和macOS，Adobe建议使用Docker桌面。
+>Windows用户必须使用支持Docker的Windows 10 Professional或其他分发。 此要求是在本地计算机上运行和调试Dispatcher的先决条件。
+>对于Windows和macOS，Adobe建议使用Docker桌面。
 
 此阶段也可以独立运行 `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
@@ -509,13 +509,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 
 >[!NOTE]
 >
-对于AEMas a Cloud Service上的环境，调试是最高详细级别。 不支持跟踪日志级别，因此当在云环境中工作时，应避免设置跟踪日志级别。
+>对于AEMas a Cloud Service上的环境，调试是最高详细级别。 不支持跟踪日志级别，因此当在云环境中工作时，应避免设置跟踪日志级别。
 
 ### 自动重新加载和验证 {#automatic-reloading}
 
 >[!NOTE]
 >
-由于Windows操作系统的限制，此功能仅适用于macOS和Linux®用户。
+>由于Windows操作系统的限制，此功能仅适用于macOS和Linux®用户。
 
 不要运行本地验证(`validate.sh`)并启动docker容器(`docker_run.sh`)每次修改配置时，您也可以运行 `docker_run_hot_reload.sh` 脚本。 该脚本会监视对配置的任何更改，并自动重新加载它并重新运行验证。 通过使用此选项，您可以在调试时节省大量时间。
 
@@ -545,6 +545,25 @@ Cloud manager validator 2.0.43
 2022/07/04 09:53:55 No issues found
 INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
 INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
+
+### 注入自定义环境变量 {#environment-variables}
+
+通过在单独的文件中设置自定义环境变量并在中引用它，可以将其与Dispatcher SDK一起使用 `ENV_FILE` 环境变量。
+
+包含自定义环境变量的文件如下所示：
+
+```
+COMMERCE_ENDPOINT=commerce-host
+AEM_HTTP_PROXY_HOST=host.docker.internal
+AEM_HTTP_PROXY_PORT=8000
+```
+
+并且它可以通过以下命令在本地Dispatcher SDK中使用：
+
+```
+export ENV_FILE=custom.env
+./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080
 ```
 
 ## 每个环境不同的Dispatcher配置 {#different-dispatcher-configurations-per-environment}
@@ -620,7 +639,7 @@ $ docker exec d75fbd23b29 httpd-test
 
    >[!NOTE]
    >
-   在灵活模式下，您应该使用相对路径而不是绝对路径。
+   >在灵活模式下，您应该使用相对路径而不是绝对路径。
 1. **部署到生产：**
    * 提交文件 `opt-in/USE_SOURCES_DIRECTLY` 到由生产管道部署到云暂存和生产环境的Git分支。
    * 使用Cloud Manager部署到暂存环境。
