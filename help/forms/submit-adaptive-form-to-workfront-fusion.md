@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 52e1f57b82aec25ad61024f357016dbb5498ca1b
+source-git-commit: 8546e6286bea5f603b1e011a76c206b178337ab7
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 3%
+source-wordcount: '1238'
+ht-degree: 4%
 
 ---
 
@@ -41,6 +41,8 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 * 有权访问的AEM用户 [开发控制台](https://my.cloudmanager.adobe.com/) 到 [检索服务凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## 将AEM Forms与Adobe Workfront Fusion集成
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
 连接 [Workfront融合](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 对于表单，请执行以下步骤：
 
@@ -129,16 +131,7 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 1. 选择已创建的连接 **[!UICONTROL 连接]** 下拉列表中。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 1. 单击 **[!UICONTROL 确定]** 并保存方案的更改。
-
-#### 1.3激活Workfront方案 {#activate-scenario}
-
-要激活方案，请执行以下操作：
-
-1. 单击 **[!UICONTROL 方案]** ![“共享”图标](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 在左侧面板中。
-1. 单击 **[!UICONTROL 非活动方案]** 选项卡。
-1. 单击 **开/关** 适用于您的AEM Forms方案的切换按钮。
-
-单击切换按钮后，Workfront场景开始出现在 **[!UICONTROL 活动方案]** 选项卡。
+1. 要激活方案，请单击方案编辑器中的打开/关闭切换按钮。
 
 >[!NOTE]
 >
