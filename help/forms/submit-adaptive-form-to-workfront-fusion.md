@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 3e1e1eba822bf3156ef563b88269cdef2298e951
+source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 4%
@@ -135,7 +135,7 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
 
 ### 2.配置Workfront Fusion自适应表单的提交操作
 
-您可以为Workfont Fusion配置提交操作，用于：
+您可以为Workfront Fusion配置提交操作，用于：
 * [新的自适应Forms](#new-af-submit-action)
 * [现有自适应表单](#existing-af-submit-action)
 
