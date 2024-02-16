@@ -3,10 +3,11 @@ title: 如何设置 [!DNL AEM Forms] as a cloud service环境？
 description: 了解如何设置和配置 [!DNL AEM Forms] as a Cloud Service的环境。
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
+source-git-commit: ad01fd57b4f47508428425316e0f59f6376524d0
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 14%
+source-wordcount: '607'
+ht-degree: 6%
 
 ---
 
@@ -46,21 +47,24 @@ ht-degree: 14%
 
 * （仅适用于沙盒）载入服务后， [创建](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en) 和 [运行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) 生产和非生产管道。 它启用并引入了以下项的最新功能 [!DNL AEM Forms] 对您的环境as a Cloud Service。
 
-您可以使用Formsas a Cloud Service创建自适应表单（数字注册）或生成客户通信。 完成之后 [入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) 到 [!DNL Adobe Experience Manager] as a Cloud Service，执行以下操作之一以启用数字注册或客户通信功能。 您还可以启用以下两项功能：
+您可以使用Formsas a Cloud Service创建自适应表单（数字注册）或生成客户通信。 完成之后 [入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html) 到 [!DNL Adobe Experience Manager] as a Cloud Service，请执行以下操作以启用Forms — 数字注册或客户通信功能。 <!--You can also enable both the features-->：
 
 1. 登录 Cloud Manager，并打开您的 AEM Forms as a Cloud Service 实例。
+1. 打开编辑程序选项，转到解决方案和加载项选项卡：
 
-1. 打开“编辑程序”选项，转到“解决方案和加载项”选项卡，然后选择&#x200B;**[!UICONTROL Forms - 通信]**&#x200B;选项。
+   * 如果您有生产环境，请选择 **[!UICONTROL Forms — 通信]** 用于启用Forms — 数字注册和Forms — 通信加载项的选项。
 
-   ![通信](assets/communications.png)
+     ![通信](assets/communications.png)
 
-   如果您已启用 **[!UICONTROL Forms - 数字登记]**&#x200B;选项，则选择 **[!UICONTROL Forms - 通信加载项]**&#x200B;选项。
+   <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   ![加载项](assets/add-on.png)
+   * 如果您有暂存环境，请选择 **[!UICONTROL Forms]** 启用Forms — 数字注册和Forms — 通信加载项。
+
+     ![表单数字注册选择](assets/forms-digital-enrollment1.png)
+
 
 1. 单击&#x200B;**[!UICONTROL 更新]**。
-
-1. 运行构建管道。成功运行构建管道后，将为您的环境启用通信 API。
+1. 运行构建管道。构建管道成功后，将为您的环境启用选定的解决方案。
 
 >[!NOTE]
 >
