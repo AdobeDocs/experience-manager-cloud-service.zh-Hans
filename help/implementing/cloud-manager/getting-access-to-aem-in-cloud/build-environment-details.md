@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 30f2eaf4d2edba13e875cd1bfe767e83a2b7f1a5
+source-git-commit: cb4c9711fc9c57546244b5b362027c255e5abc35
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 93%
+source-wordcount: '1023'
+ht-degree: 92%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 93%
 Cloud Manager 使用专门的构建环境构建和测试代码。
 
 * 构建环境基于 Linux，并派生自 Ubuntu 22.04。
-* 安装了 Apache Maven 3.8.8。
+* 安装了 Apache Maven 3.9.4。
    * Adobe 建议用户[更新其 Maven 存储库以使用 HTTPS 代替 HTTP。](#https-maven)
-* 安装的 Java 版本是 Oracle JDK 8u371 和 Oracle JDK 11.0.20。
-* 默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_371` 其中包含OracleJDK 8u371。 请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
+* 安装的Java版本为OracleJDK 8u401和OracleJDK 11.0.22。
+* 默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_401` 其中包含OracleJDK 8u401。 请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
 * 安装了一些其他的必要系统包。
    * `bzip2`
    * `unzip`
@@ -120,7 +120,7 @@ Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/
 
 也可以选择 Java 8 或 Java 11 作为整个 Maven 执行的 JDK。 与工具链选项不同，除非也设置了工具链配置（在此情况下，工具链配置仍适用于工具链感知的 Maven 插件），否则这将更改用于所有插件的 JDK。因此，通过 [Apache Maven Enforcer 插件](https://maven.apache.org/enforcer/maven-enforcer-plugin/)等插件检查和强制执行 Java 版本将起作用。
 
-为此，请在管道使用的 Git 存储库分支中创建一个名为 `.cloudmanager/java-version` 的文件。 此文件可以包含内容 11 或 8。 任何其他值将被忽略。 如果指定了 11，则使用 Oracle 11，并且 `JAVA_HOME` 环境变量将设置为 `/usr/lib/jvm/jdk-11.0.2`。 如果指定了 8，则使用 Oracle 8，并且 `JAVA_HOME` 环境变量将设置为 `/usr/lib/jvm/jdk1.8.0_202`。
+为此，请在管道使用的 Git 存储库分支中创建一个名为 `.cloudmanager/java-version` 的文件。 此文件可以包含内容 11 或 8。 任何其他值将被忽略。 如果指定了 11，则使用 Oracle 11，并且 `JAVA_HOME` 环境变量将设置为 `/usr/lib/jvm/jdk-11.0.22`。 如果指定了 8，则使用 Oracle 8，并且 `JAVA_HOME` 环境变量将设置为 `/usr/lib/jvm/jdk1.8.0_401`。
 
 ## 环境变量 {#environment-variables}
 
@@ -147,44 +147,7 @@ Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/
 
 您的构建过程可能取决于特定的配置变量，这些变量不适合放置在 Git 存储库中，或您可能需要在使用同一分支的管道执行之间切换这些变量。
 
-Cloud Manager 允许通过 Cloud Manager API 或 Cloud Manager CLI 按管道配置这些变量。可将变量以纯文本或静态加密形式存储。在任一情况下，变量都将在构建环境中用作环境变量，之后可以从 `pom.xml` 文件或其他构建脚本中引用这些变量。
-
-此 CLI 命令用于设置变量。
-
-```shell
-$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
-```
-
-此命令列出变量。
-
-```shell
-$ aio cloudmanager:list-pipeline-variables PIPELINEID
-```
-
-变量名必须遵守以下约定。
-
-* 变量只能包含字母数字字符和下划线 (`_`)。
-* 名称应全部大写。
-* 每个管道最多有 200 个变量。
-* 每个名称的长度必须等于或少于100个字符。
-* 每个`string`变量值的长度必须少于 2048 个字符。
-* 每个 `secretString` 类型变量值的长度必须等于或少于500个字符。
-
-通常，在 Maven `pom.xml` 文件中使用变量时，使用与该内容类似的语法将这些变量映射到 Maven 属性会很有用。
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                <property>
-                    <name>env.CM_BUILD</name>
-                </property>
-            </activation>
-            <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-            </properties>
-        </profile>
-```
+请参阅文档 [配置管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 了解更多信息
 
 ## 安装其他系统包 {#installing-additional-system-packages}
 
