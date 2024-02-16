@@ -4,9 +4,9 @@ description: 了解如何设置和配置 [!DNL AEM Forms] as a Cloud Service的�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: ad01fd57b4f47508428425316e0f59f6376524d0
+source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 6%
 
    <!-- If you have already enabled the **[!UICONTROL Forms - Digital Enrollment]** option, then select the **[!UICONTROL Forms - Communications Add-On]** option. ![Addon](assets/add-on.png) -->
 
-   * 如果您有暂存环境，请选择 **[!UICONTROL Forms]** 启用Forms — 数字注册和Forms — 通信加载项。
+   * 如果您有一个沙盒环境，请选择 **[!UICONTROL Forms]** 启用Forms — 数字注册和Forms — 通信加载项。
 
      ![表单数字注册选择](assets/forms-digital-enrollment1.png)
 
