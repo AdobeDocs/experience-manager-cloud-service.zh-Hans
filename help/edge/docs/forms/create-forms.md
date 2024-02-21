@@ -4,9 +4,9 @@ description: 制作完美的表单，快！ ⚡基于AEM Forms Edge Delivery文�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,8 @@ ht-degree: 1%
 
 ![Edge Delivery Forms快速入门](/help/edge/assets/getting-started-with-eds-forms.png)
 
-## 将表单块添加到您的边缘交付服务(EDS)项目 {#add-forms-block-to-an-eds-project}
+
+## 步骤1：将表单块添加到您的边缘交付服务(EDS)项目 {#add-forms-block-to-an-eds-project}
 
 AEM Forms Edge Delivery包括表单块，可帮助您轻松创建表单以捕获和存储捕获的数据。 要将表单块包含到您的边缘交付服务项目中，请执行以下操作：
 
@@ -81,7 +82,7 @@ AEM Forms Edge Delivery包括表单块，可帮助您轻松创建表单以捕获
    > * 如果遇到错误“无法解析模块“&#39;../../scripts/lib-franklin.js&#39;”的路径，请打开 `[EDS Project]/blocks/forms/form.js` 文件。 在import语句中，将 `franklin-lib.js` 文件包含 `aem.js` 文件。
    > * 如果您遇到任何绒毛错误，请随时将其忽略。 要绕过衬线检查，请打开 `[EDS Project]\package.json` 文件并更新“lint”脚本 `"lint": "npm run lint:js && npm run lint:css"` 到 `"lint": "echo 'skipping linting for now'"`. 保存文件并将其提交到GitHub项目。
 
-## 使用Microsoft Excel或Google工作表创建表单 {#create-a-form-for-an-eds-project}
+## 第2步：使用Microsoft Excel或Google工作表创建表单
 
 您可以使用电子表格轻松创建表单，而不是复杂的流程。 首先，将行和列标题添加到电子表格中，其中每一行定义一个表单字段，每一列标题定义相应表单字段的属性。
 
@@ -123,7 +124,7 @@ AEM Forms Edge Delivery包括表单块，可帮助您轻松创建表单以捕获
 
 
 
-## 使用Edge Delivery Service (EDS)页面预览表单 {#add-a-form-to-your-eds-page}
+## 步骤3：使用边缘交付服务(EDS)页面预览表单
 
 到目前为止，您已为EDS项目启用表单块并准备了表单的结构。 现在，要预览表单，请执行以下操作：
 
@@ -153,8 +154,9 @@ AEM Forms Edge Delivery包括表单块，可帮助您轻松创建表单以捕获
 
    ![提交表单时出错](/help/edge/assets/form-error.png)
 
+## 下一步
 
-   下一步是 [准备电子表格以接受数据](/help/edge/docs/forms/submit-forms.md).
+下一步是 [准备电子表格以接受数据](/help/edge/docs/forms/submit-forms.md).
 
 
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
 workflow-type: tm+mt
-source-wordcount: '4711'
+source-wordcount: '4692'
 ht-degree: 98%
 
 ---
@@ -804,19 +804,19 @@ ht-degree: 98%
       + [重定向](/help/edge/docs/redirects.md)
    + 构建边缘交付Forms {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
-      + 快速入门 {#getting-started-eds-forms}
+      + 开始使用 {#getting-started-eds-forms}
          + [创建和预览表单](/help/edge/docs/forms/create-forms.md)
          + [启用表单以发送数据](/help/edge/docs/forms/submit-forms.md)
          + [将表单发布到站点页面](/help/edge/docs/forms/publish-eds-forms.md)
          + [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
          + [更改表单的主题和样式](/help/edge/docs/forms/style-theme-forms.md)
-      + 高级功能 {#advanced-features-eds-forms}
-         + [创建表单片段并将其添加到表单](/help/edge/docs/forms/form-fragments.md)
-         + [翻译表单](/help/edge/docs/forms/translate-forms.md)
-         + [向表单添加可重复的部分](/help/edge/docs/forms/repeatable-forms.md)
-         + [将reCAPTCHA应用于表单](/help/edge/docs/forms/recaptacha-forms.md)
-         + [创建自定义组件](/help/edge/docs/forms/custom-components-forms.md)
-         + [添加感谢页面](/help/edge/docs/forms/thank-you-page-form.md)
+      + 功能 {#advanced-features-eds-forms}
+         + [表单片段](/help/edge/docs/forms/form-fragments.md)
+         + [可重复部分](/help/edge/docs/forms/repeatable-forms.md)
+         + [翻译](/help/edge/docs/forms/translate-forms.md)
+         + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
+         + [感谢页面](/help/edge/docs/forms/thank-you-page-form.md)
+         + [自定义组件](/help/edge/docs/forms/custom-components-forms.md)
    + Edge Delivery 资源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
