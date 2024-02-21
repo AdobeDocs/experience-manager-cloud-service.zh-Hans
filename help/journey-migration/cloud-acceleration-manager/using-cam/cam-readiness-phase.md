@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager中的准备阶段
 description: 本页概述了Cloud Acceleration Manager中的就绪阶段。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: f99395870d076d47ef53b01c9fc6579a9f8788a2
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 4%
+source-wordcount: '984'
+ht-degree: 6%
 
 ---
 
@@ -60,10 +60,13 @@ ht-degree: 4%
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
+   >[!NOTE]
+   >如果上载了多个报告，则详细显示的报告始终是具有最新创建日期（而非上载日期）的报告。
+
 1. 查看并探索CAM中的“最佳实践分析”仪表板。 请参阅 [审核最佳实践分析报告](#analysis-report) 以了解更多详细信息。
 
    >[!NOTE]
-   >上传新报告会重置所有评估。
+   >如果上传新报告比之前加载的报告更新，则上传新报告会重置所有评估。
 
 ### 使用打印预览 {#print-preview-cam}
 
@@ -86,12 +89,12 @@ ht-degree: 4%
 
 ### 使用查看趋势线 {#trendline-view-cam}
 
-在项目中上传多个Best Practices Analyzer (BPA)报告时，您可以选择 **查看趋势线** 用于查看和比较历史BPA报表结果的选项。
+在项目中上传多个不同的最佳实践分析器(BPA)报告时，您可以选择 **查看趋势线** 用于查看和比较历史BPA报表结果的选项。
 
 请按照以下步骤从趋势线选项查看报表：
 
 >[!NOTE]
->在项目中上传多个BPA报告时，您会看到 **...** 图标。
+>在项目中上传多个不同的BPA报告时，您会看到 **...** 图标。 如果报告的主机和创建时间相同，则将其视为相同（非不同）。
 
 1. 导航到您的项目并单击 **审核** 从 **最佳实践分析** 中的卡 **准备就绪** 阶段。
 
@@ -100,9 +103,6 @@ ht-degree: 4%
 1. 单击 **...**.
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
-
-   >[!IMPORTANT]
-   >显示的报表始终是具有最新报表日期的报告。
 
 1. 从下拉列表中，单击 **查看趋势线**，如下图所示。
 
@@ -138,13 +138,13 @@ ht-degree: 4%
 >* 将所有报表选项卡（包括筛选）加入书签以便共享或将来检索
 >* 使用详细信息图标可查看每个报告查找结果的详细信息
 
-#### 报表属性 {#report-properties}
+#### 报告属性 {#report-properties}
 
 此 **报表属性** 信息卡提供有关报表属性的信息，例如报表日期、持续时间、过滤器、上传日期和Adobe Experience Manager (AEM)详细信息。
 
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
-#### 报表概述 {#report-overview}
+#### 报告概述 {#report-overview}
 
 此 **报表概述** 信息卡提供在评估迁移到AEMas a Cloud Service的准备情况时使用的报告查找结果和严重性级别，如下图所示。
 
@@ -165,19 +165,19 @@ ht-degree: 4%
 
 最佳实践评估选项可对您当前的AEM实例进行评估，并为采用AEM最佳实践的后续步骤提供指导。 您可以从此选项卡中查看以下信息：
 
-* AEM实例概述
+* AEM 实例概述
 * 自定义组件和模板
 * 其他调查结果
-* 较慢查询
+* 查询速度较慢
 * 维护任务
 
-#### 迁移复杂性评估 {#migration-complexity-assessment}
+#### 迁移复杂度评估 {#migration-complexity-assessment}
 
 “迁移复杂性评估”选项可评估将现有AEM实施迁移到AEMas a Cloud Service的复杂性。
 
 您可以从此选项卡中查看以下信息：
 
-* AEM实例概述
+* AEM 实例概述
 * 评估
 * 内容迁移注意事项
 

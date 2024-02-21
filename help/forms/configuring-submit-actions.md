@@ -3,10 +3,10 @@ title: 如何为自适应表单配置提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '3913'
-ht-degree: 76%
+source-wordcount: '3901'
+ht-degree: 77%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 76%
 * [提交到 OneDrive](#submit-to-onedrive)
 * [提交到 Azure Blob 存储](#azure-blob-storage)
 * [提交至 Power Automate](#microsoft-power-automate)
-* [提交到Workfront Fusion](#workfront-fusion)
+* [提交到 Workfront Fusion](#workfront-fusion)
 
 您还可以 [扩展默认提交操作](custom-submit-action-form.md) 以创建您自己的提交操作。
 
@@ -238,8 +238,6 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ### 将自适应表单连接到Microsoft® SharePoint列表 {#connect-af-sharepoint-list}
 
-<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
-
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
 要使用 [!UICONTROL 提交到SharePoint列表] 以自适应表单提交操作：
@@ -407,7 +405,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 在成功配置后，使用[调用 Microsoft® Power Automate 流程](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action)提交操作将数据发送到 Power Automate Flow。
 
-## 提交到Workfront Fusion {#workfront-fusion}
+## 提交到 Workfront Fusion {#workfront-fusion}
 
 您可以配置自适应表单，以便在提交时将数据提交到Workfront Fusion。 Workfront Fusion允许流程自动化，以便用户能够专注于新任务，而不是一次又一次地重复相同的任务。 它自动化了简单和复杂的任务，节省了时间并确保了一致的流程执行。
 

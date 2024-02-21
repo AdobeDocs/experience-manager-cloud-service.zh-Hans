@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 94519d3c7d2f927f046628d9ce057209556e847d
+source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 4%
+source-wordcount: '1255'
+ht-degree: 3%
 
 ---
 
@@ -40,11 +40,17 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
 
 ## 将AEM Forms与Adobe Workfront Fusion集成
 
-连接 [Workfront融合](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 对于表单，请执行以下步骤：
-
 ### 1.创建Workfront方案 {#workflow-scenario}
 
-要创建Workfront方案，请执行以下操作：
+要创建Workfront方案，请执行以下步骤：
+
+1. [创建方案](#create-scenario)
+1. [将Web挂接添加到方案](#add-webhook)
+1. [添加与Web挂接的连接](#add-connection)
+
+#### 创建方案 {#create-scenario}
+
+要创建方案，请执行以下操作：
 1. 登录您的 [Workfront Fusion帐户](https://app-qa.workfrontfusion.com/).
 1. 单击 **[!UICONTROL 方案]** ![“共享”图标](/help/forms/assets/Smock_ShareAndroid_18_N.svg) 在左侧面板中。
 1. 单击 **[!UICONTROL 创建新方案]** 在页面的右上角。 屏幕上会显示创建新方案的页面。
@@ -61,7 +67,7 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
 
 1. 选择 **[!UICONTROL 关注表单事件]** 对话框和添加webhook的窗口出现。
 
-#### 1.1添加webhook {#add-webhook}
+#### 添加webhook {#add-webhook}
 
 ![添加webhook](/help/forms/assets/workfront-add-webhook.png)
 
@@ -76,7 +82,7 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
 
 1. 单击 **[!UICONTROL 添加]** 以添加新连接。 此 **[!UICONTROL 创建连接]** 对话框。
 
-#### 1.2添加与webhook的连接 {#add-connection}
+#### 添加与webhook的连接 {#add-connection}
 
 ![添加连接](/help/forms/assets/workfront-add-connection.png)
 

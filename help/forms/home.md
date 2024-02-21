@@ -5,8 +5,8 @@ landing-page-description: 了解如何在 AEM as a Cloud Service 中使用表单
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
-workflow-type: ht
+source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 100%
 
@@ -26,7 +26,6 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] 为企业提供了一�
 这项服务始终最新、可用，且在不断学习。企业可以使用 [!DNL AEM Forms] as a Cloud Service，在云中获得所有这些功能，而无需任何本地基础架构。这项服务还将企业从复杂的升级周期中解放出来，因为它会持续更新最新功能。
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] 是一个以客户为中心的解决方案，可帮助完成客户历程的每一步：
-
 
 ## 数字化和简化注册与登录体验
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d76273ddcbcf5013713e515e39dde8f42bbbf425
+source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
 workflow-type: tm+mt
-source-wordcount: '4648'
-ht-degree: 99%
+source-wordcount: '4711'
+ht-degree: 98%
 
 ---
 
@@ -614,8 +614,8 @@ ht-degree: 99%
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
             + [将自适应表单提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [将自适应表单提交到 Microsoft® OneDrive](/help/forms/configure-submit-action-onedrive.md)
-            + [为自适应表单配置 SharePoint 存储](/help/forms/configure-submit-action-sharepoint.md)
+            + [将自适应表单提交到Microsoft](/help/forms/configure-submit-action-onedrive.md)
+            + [将自适应表单连接到Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [将 AEM 自适应表单与 AEM 工作流集成](/help/forms/configure-submit-action-workflow.md)
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
@@ -774,7 +774,7 @@ ht-degree: 99%
    + [针对 Edge Delivery 发布内容](/help/edge/publishing.md)
    + [针对 Edge Delivery 进行开发](/help/edge/developing.md)
    + [内容建模](/help/edge/content-modeling.md)
-   + [创建块](/help/edge/create-block.md)
+   + [创建区块](/help/edge/create-block.md)
    + [现有项目和 Edge Delivery](/help/edge/existing-projects.md)
    + 构建 Edge Delivery 应用程序 {#build}
       + [快速入门 - 开发人员教程](/help/edge/developer/tutorial.md)
@@ -802,6 +802,21 @@ ht-degree: 99%
       + [Akamai 设置](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly 设置](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重定向](/help/edge/docs/redirects.md)
+   + 构建边缘交付Forms {#build-forms}
+      + [概述](/help/edge/docs/forms/overview.md)
+      + 快速入门 {#getting-started-eds-forms}
+         + [创建和预览表单](/help/edge/docs/forms/create-forms.md)
+         + [启用表单以发送数据](/help/edge/docs/forms/submit-forms.md)
+         + [将表单发布到站点页面](/help/edge/docs/forms/publish-eds-forms.md)
+         + [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
+         + [更改表单的主题和样式](/help/edge/docs/forms/style-theme-forms.md)
+      + 高级功能 {#advanced-features-eds-forms}
+         + [创建表单片段并将其添加到表单](/help/edge/docs/forms/form-fragments.md)
+         + [翻译表单](/help/edge/docs/forms/translate-forms.md)
+         + [向表单添加可重复的部分](/help/edge/docs/forms/repeatable-forms.md)
+         + [将reCAPTCHA应用于表单](/help/edge/docs/forms/recaptacha-forms.md)
+         + [创建自定义组件](/help/edge/docs/forms/custom-components-forms.md)
+         + [添加感谢页面](/help/edge/docs/forms/thank-you-page-form.md)
    + Edge Delivery 资源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
@@ -1132,4 +1147,4 @@ ht-degree: 99%
       + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
       + [使用 Universal Editor 进行本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
       + [Universal Editor 调用](/help/implementing/universal-editor/calls.md)
-      + [自定义通用编辑器](/help/implementing/universal-editor/customizing.md)
+      + [自定义 Universal Editor](/help/implementing/universal-editor/customizing.md)
