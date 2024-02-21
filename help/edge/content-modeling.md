@@ -1,56 +1,56 @@
 ---
-title: 用于通过Edge Delivery Services项目进行AEM创作的内容建模
-description: 了解内容建模如何用于AEM创作和Edge Delivery Services项目，以及如何对您自己的内容建模。
+title: 使用 Edge Delivery Services 项目进行 AEM 创作的内容建模
+description: 了解如何对使用 Edge Delivery Services 项目进行的 AEM 创作进行内容建模以及如何为您自己的内容进行建模。
 source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
 workflow-type: tm+mt
 source-wordcount: '2097'
-ht-degree: 1%
+ht-degree: 86%
 
 ---
 
 
-# 用于通过Edge Delivery Services项目进行AEM创作的内容建模 {#content-modeling}
+# 使用 Edge Delivery Services 项目进行 AEM 创作的内容建模 {#content-modeling}
 
-了解内容建模如何用于AEM创作和Edge Delivery Services项目，以及如何对您自己的内容建模。
+了解如何对使用 Edge Delivery Services 项目进行的 AEM 创作进行内容建模以及如何为您自己的内容进行建模。
 
 {{aem-authoring-edge-early-access}}
 
 ## 先决条件 {#prerequisites}
 
-将AEM创作与Edge Delivery Services结合使用的项目继承了任何其他Edge Delivery Services项目的大部分机制，这与内容源或无关。 [创作方法。](/help/edge/authoring.md)
+使用 Edge Delivery Services 进行 AEM 创作的项目继承了任何其他 Edge Delivery Services 项目的大部分机制，独立于内容源或[创作方法](/help/edge/authoring.md)。
 
-在开始为项目建模内容之前，请确保首先阅读以下文档。
+在开始为项目内容建模之前，请确保先阅读以下文档。
 
 * [快速入门 - 开发人员教程](/help/edge/developer/tutorial.md)
 * [标记、部分、区块和自动屏蔽](/help/edge/developer/markup-sections-blocks.md)
 * [区块集合](/help/edge/developer/block-collection.md)
 
-为了提出一种不受内容源限制且引人注目的内容模型，必须了解这些概念。 本文档详细介绍专门为AEM创作实施的机制。
+必须理解这些概念，才能设计出通过与内容源无关方式工作的引人注目的内容模型。此文档提供了有关专门为 AEM 创作实施的机制的详细信息。
 
 ## 默认内容 {#default-content}
 
-**默认内容** 是作者直观地放置在页面上的内容，而不添加任何其他语义。 这包括文本、标题、链接和图像。 这些内容在其功能和目的方面是自明的。
+**默认内容**&#x200B;是作者在不添加任何额外语义的情况下直观地放置在页面上的内容。其中包括文本、标题、链接和图像。此类内容的功能和用途不言自明。
 
-在AEM中，此内容作为组件实施，带有非常简单的预定义模型，其中包括可以在Markdown和HTML中序列化的所有内容。
+在 AEM 中，此内容作为具有非常简单的预定义模型的组件来实施，其中包括可在 Markdown 和 HTML 中序列化的所有内容。
 
-* **文本**：富文本（包括列表元素以及强文本或斜体文本）
-* **标题**：文本，类型(h1-h6)
-* **图像**：源，描述
-* **按钮**：文本、标题、URL、类型（默认、主要、次要）
+* **文本**：富文本（包括列表元素和粗体或斜体文本）
+* **标题**：文本、类型 (h1-h6)
+* **图像**：来源、描述
+* **按钮**：文本、标题、URL、类型（默认、主要、辅助）
 
-这些元件的模型是 [使用Edge Delivery Services进行AEM创作的样板。](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+这些组件的模型是[使用 Edge Delivery Services 进行 AEM 创作的样板](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)的一部分。
 
 ## 区块 {#blocks}
 
-块用于创建具有特定样式和功能的更丰富内容。 与默认内容相反，块确实需要额外的语义。 可以将块比作 [AEM页面编辑器中的组件。](/help/implementing/developing/components/overview.md)
+区块用于创建具有特定样式和功能的更丰富的内容。与默认内容相比，区块确实需要额外语义。可将区块比作 [AEM 页面编辑器中的组件](/help/implementing/developing/components/overview.md)。
 
-块本质上是由JavaScript修饰的内容片段，使用样式表进行样式。
+区块实际上是由 JavaScript 装饰并使用样式表设置样式的内容片段。
 
-### 块模型定义 {#model-definition}
+### 区块模型定义 {#model-definition}
 
-在将AEM创作与Edge Delivery Services结合使用时，必须显式建模块的内容，以便为作者提供创建内容的界面。 本质上，您需要创建一个模型，以便创作UI知道根据块向作者显示哪些选项。
+在使用 Edge Delivery Services 进行 AEM 创作时，必须对区块的内容进行显式建模，以便为作者提供用于创建内容的界面。从本质上讲，您需要创建一个模型，以便创作 UI 知道根据区块向作者提供哪些选项。
 
-此 [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) 文件定义块的模型。 在组件模型中定义的字段在AEM中作为属性保留，并在构成块的表中呈现为单元格。
+[`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) 文件定义了区块的模型。组件模型中定义的字段将作为属性保留在 AEM 中，并在构成区块的表中呈现为单元格。
 
 ```json
 {
@@ -81,9 +81,9 @@ ht-degree: 1%
 }
 ```
 
-请注意，并非每个块都必须具有模型。 有些区块只是 [容器](#container) 用于子项列表，其中每个子项都有自己的模型。
+请注意，并非每个区块都必须具有模型。一些区块只是子级列表的[容器](#container)，其中每个子级都具有自己的模型。
 
-还必须定义哪些块存在，并且可以使用通用编辑器将其添加到页面中。 此 [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) 文件会列出由通用编辑器提供的组件。
+还需要定义哪些区块存在并可使用 Universal Editor 将其添加到页面中。[`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) 文件列出了由 Universal Editor 提供的组件。
 
 ```json
 {
@@ -103,35 +103,35 @@ ht-degree: 1%
 }
 ```
 
-可以为多个块使用一个模型。 例如，某些块可能共享定义文本和图像的模型。
+可以对多个区块使用一个模型。例如，一些区块可以共享一个定义文本和图像的模型。
 
-对于每个块，开发人员会：
+对于每个区块，开发人员：
 
-* 必须使用 `core/franklin/components/block/v1/block` 资源类型，AEM中块逻辑的常规实现。
-* 必须定义块名称，该名称将在块的表头中呈现。
+* 必须使用 `core/franklin/components/block/v1/block` 资源类型（AEM 中区块逻辑的一般实施）。
+* 必须定义区块名称，该名称将呈现在区块的表标题中。
    * 块名称用于获取正确的样式和脚本以装饰块。
-* 可以定义 [型号ID。](/help/implementing/universal-editor/field-types.md#model-structure)
+* 可以定义[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure)。
    * 模型ID是对组件模型的引用，模型定义了在属性边栏中作者可用的字段。
-* 可以定义 [过滤器ID。](/help/implementing/universal-editor/customizing.md#filtering-components)
+* 可以定义[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components)。
    * 过滤器ID是对组件过滤器的引用，允许更改创作行为，例如，通过限制可向块或部分添加哪些子项，或者启用哪些RTE功能。
 
 将块添加到页面后，所有这些信息都会存储在AEM中。 如果缺少资源类型或块名称，则块不会在页面上呈现。
 
 >[!WARNING]
 >
->可能时，无需实施自定义AEM组件，也不建议实施这些组件。 AEM提供的Edge Delivery Services组件已足够，并且提供了某些护栏来简化开发。
+>可能时，无需实施自定义AEM组件，也不建议实施这些组件。 AEM 提供的 Edge Delivery Services 组件够用了，并提供了某些护栏以简化开发。
 >
 >AEM提供的组件呈现的标记可由以下对象使用： [helix-html2md](https://github.com/adobe/helix-html2md) 发布到Edge Delivery Services时由 [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) 在通用编辑器中加载页面时。 标记是AEM与系统其他部分之间的稳定合同，不允许进行自定义。 因此，项目不得更改组件，也不得使用自定义组件。
 
-### 块结构 {#block-structure}
+### 区块结构 {#block-structure}
 
-块的属性为 [在元件模型中定义](#model-definition) 并在AEM中持久保留。 属性在块的表状结构中呈现为单元格。
+区块的属性[在组件模型中定义](#model-definition)并保留在 AEM 中。属性呈现为区块的表状结构中的单元格。
 
-#### 简单块 {#simple}
+#### 简单区块 {#simple}
 
-在最简单的形式中，块按照属性在模型中定义的顺序，在单个行/列中呈现每个属性。
+在最简单的形式中，区块按照在模型中定义属性的顺序以单行/列形式呈现每个属性。
 
-在以下示例中，首先在模型中定义图像，其次是文本。 因此，它们使用图像第一和文本第二渲染。
+在以下示例中，在模型中依次定义图像和文本。因此，依次呈现图像和文本。
 
 >[!BEGINTABS]
 
@@ -180,15 +180,15 @@ ht-degree: 1%
 
 >[!ENDTABS]
 
-您可能会注意到某些类型的值允许在标记中推断语义，并且属性在单个单元格中组合在一起。 此行为在一节中进行描述 [类型推理。](#type-inference)
+您可能会发现，一些类型的值允许推断标记中的语义，并且属性将并入单个单元格中。[类型推断](#type-inference)部分中描述了此行为。
 
-#### 键值块 {#key-value}
+#### 键值区块 {#key-value}
 
-在许多情况下，建议修饰渲染的语义标记、添加CSS类名称、添加新节点或在DOM中移动它们以及应用样式。
+在许多情况下，建议装饰呈现的语义标记、添加 CSS 类名称、添加新节点或在 DOM 中移动它们，以及应用样式。
 
-但在其他情况下，块会作为类似键值对的配置读取。
+但在其他情况下，区块将被读取为类似键值对的配置。
 
-这方面的一个例子是 [节元数据。](/help/edge/developer/markup-sections-blocks.md#sections) 在此使用案例中，可以将块配置为呈现为键值对表。 请参阅部分 [节和节元数据](#sections-metadata) 以了解更多信息。
+一个示例是[部分元数据。](/help/edge/developer/markup-sections-blocks.md#sections)在此用例中，可以将区块配置为呈现为键值对表。请参阅[部分和部分元数据](#sections-metadata)部分以了解更多信息。
 
 >[!BEGINTABS]
 
@@ -240,11 +240,11 @@ ht-degree: 1%
 
 >[!ENDTABS]
 
-#### 容器块 {#container}
+#### 容器区块 {#container}
 
-前两个结构都有一个维度：属性列表。 容器块允许添加子项（通常为相同类型或模型），因此是二维的。 这些块仍支持其自身的属性，这些属性呈现为先显示单个列的行。 但它们也允许添加子项，其中每个项都呈现为行，而每个属性都呈现为该行中的列。
+前面的两个结构都具有一个维度：属性列表。容器区块允许添加子级（通常属于相同类型或模型），因此是二维的。这些区块仍支持首先将其属性呈现为具有单列的行。但它们还允许添加子级，其中每个项目呈现为行，每个属性呈现为该行中的列。
 
-在以下示例中，块接受链接图标列表作为子项，其中每个链接图标都有一个图像和链接。 请注意 [过滤器ID](/help/implementing/universal-editor/customizing.md#filtering-components) 在块的数据中设置，以引用过滤器配置。
+在以下示例中，区块接受链接图标列表作为子级，其中每个链接的图标均有一个图像和一个链接。请注意区块数据中设置的[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components)，以便引用过滤器配置。
 
 >[!BEGINTABS]
 
@@ -319,39 +319,39 @@ ht-degree: 1%
 
 >[!ENDTABS]
 
-### 创建块的语义内容模型 {#creating-content-models}
+### 为区块创建语义内容模型 {#creating-content-models}
 
-使用 [块体结构的力学解释，](#block-structure) 可以创建将AEM中保留的内容一对一映射到交付层的内容模型。
+利用[解释的区块结构的机制](#block-structure)，可以创建一个内容模型，将 AEM 中保留的内容一对一映射到投放层。
 
-在每个项目早期，必须为每个块仔细考虑内容模型。 它必须与内容源和创作体验无关，这样可让作者在重用块实施和样式时切换或组合它们。 欲知更多详情和一般指南，请参阅 [David&#39;s Model （举例2）。](https://www.aem.live/docs/davidsmodel) 更具体地说， [块集合](/help/edge/developer/block-collection.md) 包含一组广泛的内容模型，用于常见用户界面模式的特定用例。
+在每个项目的早期阶段，必须仔细考虑每个区块的内容模型。它必须与内容源和创作体验无关，以允许作者在重用区块实施和样式时切换或组合它们。有关更多详细信息和一般指南，请参阅 [David&#39;s Model (take 2)。](https://www.aem.live/docs/davidsmodel)更具体地说，[区块集合](/help/edge/developer/block-collection.md)包含一组广泛的内容模型，可用于常见用户界面模式的特定用例。
 
-对于使用Edge Delivery Services进行AEM创作，这就提出了一个问题：当使用由多个字段组成的表单来创作信息时，如何提供引人注目的语义内容模型，而不是像富文本那样编辑上下文中的语义标记。
+对于使用 Edge Delivery Services 进行 AEM 创作，引出了一个问题：在使用由多个字段构成的表单创作信息，而不是在上下文（如富文本）中编辑语义标记时，如何提供引人注目的语义内容模型。
 
-要解决此问题，可通过三种方法轻松创建引人注目的内容模型：
+要解决此问题，可以使用三种方法来创建引人注目的内容模型：
 
-* [类型推理](#type-inference)
+* [类型推断](#type-inference)
 * [字段折叠](#field-collapse)
 * [元素分组](#element-grouping)
 
 >[!NOTE]
 >
->块实施可以解构内容并使用客户端渲染的DOM替换块。 虽然这对于开发人员来说是可能的、直观的，但对于Edge Delivery Services来说，这不是最佳实践。
+>区块实施可以解构内容并将区块替换为客户端呈现的 DOM。虽然这对开发人员来说是可行且直观的，但这并不是 Edge Delivery Services 的最佳实践。
 
-#### 类型推理 {#type-inference}
+#### 类型推断 {#type-inference}
 
-对于某些值，我们可以从值本身推断出语义含义。 这些值包括：
+对于某些值，我们可以从值本身推断语义含义。此类值包括：
 
-* **图像**  — 如果对AEM中资源的引用是MIME类型以开头的资源 `image/`时，引用呈现为 `<picture><img src="${reference}"></picture>`.
-* **链接**  — 如果引用存在于AEM中并且不是图像，或者如果值开头为 `https?://`  或 `#`时，引用呈现为 `<a href="${reference}">${reference}</a>` .
-* **富文本**  — 如果修剪的值以段落(`p`， `ul`， `ol`， `h1`-`h6`，以富文本形式呈现值。
-* **类名** - `classes` 属性被视为块选项，并在的表标题中呈现 [简单块，](#simple) 或作为中项目的值列表 [容器块。](#container)
-* **值列表**  — 如果某个值是多值属性，且第一个值不为以前的任何值，则所有值都将连接为逗号分隔列表。
+* **图像** - 如果对 AEM 中资源的引用是 MIME 类型的以 `image/` 开头的资源，则该引用将呈现为 `<picture><img src="${reference}"></picture>`。
+* **链接** - 如果引用在 AEM 中存在且不是图像，或者值以 `https?://` 或 `#` 开头，则引用将呈现为 `<a href="${reference}">${reference}</a>`。
+* **富文本** - 如果修剪后的值以段落（`p`、`ul`、`ol`、`h1`-`h6` 等）开头，该值将呈现为富文本。
+* **类名** - `classes` 属性被视为区块选项，并呈现为表标题中的[简单区块](#simple)，或呈现为[容器区块](#container)中项目的值列表。
+* **值列表** - 如果一个值是多值属性，并且第一个值不是前一个值，则所有值都以逗号分隔的列表形式连接起来。
 
-其他所有内容都将呈现为纯文本。
+所有其他内容都将呈现为纯文本。
 
 #### 字段折叠 {#field-collapse}
 
-字段折叠是一种机制，它使用后缀根据命名惯例将多个字段值组合为一个语义元素 `Title`， `Type`， `Alt`、和 `Text` （全部区分大小写）。 任何以这些后缀结尾的属性都不会被视为值，而是另一个属性的属性。
+字段折叠是一个机制，它基于使用后缀 `Title`、`Type`、`Alt` 和 `Text`（全部区分大小写）的命名约定将多个字段值合并为单个语义元素。任何以这些后缀结尾的属性将不被视为值，而被视为另一个属性的特性。
 
 ##### 图像 {#image-collapse}
 
@@ -399,7 +399,7 @@ ht-degree: 1%
 
 >[!TAB 标记]
 
-否 `linkType`，或 `linkType=default`
+无 `linkType` 或 `linkType=default`
 
 ```html
 <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
@@ -460,9 +460,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 #### 元素分组 {#element-grouping}
 
-同时 [字段折叠](#field-collapse) 是将多个属性组合为一个语义元素，元素组合是将多个语义元素组合为一个单元格。 对于应限制作者可创建的元素的类型和数量的用例，这尤其有帮助。
+[字段折叠](#field-collapse)是指将多个属性合并为单个语义元素，元素分组是指将多个语义元素连接成单个单元格。在应限制作者可创建的元素的类型和数量的用例中，这特别有用。
 
-例如，Teaser组件可能允许作者仅创建子标题、标题和单个段落描述，以及最多两个行动号召按钮的组合。 将这些元素组合在一起会生成无需进一步操作即可设置样式的语义标记。
+例如，Teaser组件可能允许作者仅创建子标题、标题和单个段落描述，以及最多两个行动号召按钮的组合。 将这些元素分组在一起会产生一个语义标记，无需进一步操作即可设置其样式。
 
 元素分组使用命名约定，组名与组中的每个属性之间用下划线分隔。 组中属性的字段折叠按前文所述方式工作。
 
@@ -529,15 +529,15 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 >[!ENDTABS]
 
-## 节和节元数据 {#sections-metadata}
+## 部分和部分元数据 {#sections-metadata}
 
-与开发人员定义和建模多个文件的方式相同 [块，](#blocks) 它们可以定义不同的部分。
+利用开发人员用来对多个[区块](#blocks)进行定义和建模的方式，可以定义不同的部分。
 
-Edge Delivery Services的内容模型特意只允许单级别的嵌套，即部分包含的任何默认内容或块。 这意味着，为了拥有可包含其他组件的更复杂的可视化组件，必须将这些组件建模为部分，并使用自动阻止客户端组合在一起。 典型的示例是选项卡和可折叠部分，例如折叠。
+Edge Delivery Services 的内容模型有意只允许单级嵌套，即部分包含的任何默认内容或区块。这意味着，要拥有可包含其他组件的更复杂的视觉组件，必须使用自动屏蔽客户端将它们作为部分进行建模和组合。典型示例是选项卡和可折叠部分，例如可折叠项。
 
-可以使用与块相同的方式定义部分，但资源类型为 `core/franklin/components/section/v1/section`. 区域可以具有名称和 [筛选器ID、](/help/implementing/universal-editor/customizing.md#filtering-components) ，由 [通用编辑器](/help/implementing/universal-editor/introduction.md) 只是，以及 [型号ID，](/help/implementing/universal-editor/field-types.md#model-structure) 用于呈现节元数据。 这样，节元数据块的模型便会自动作为键值块附加到节（如果它不为空）。
+可按照定义区块的方式定义部分，但资源类型为 `core/franklin/components/section/v1/section`。部分可具有一个名称、一个[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components)（仅由 [Universal Editor](/help/implementing/universal-editor/introduction.md) 使用）和一个[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure)（用于呈现部分元数据）。这样一来，模型便为部分元数据区块的模型，如果它不为空，则会自动作为键值区块附加到部分中。
 
-此 [型号ID](/help/implementing/universal-editor/field-types.md#model-structure) 和 [过滤器ID](/help/implementing/universal-editor/customizing.md#filtering-components) 默认部分的 `section`. 它可用于更改默认节的行为。 以下示例将一些样式和背景图像添加到节元数据模型。
+默认部分的[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure) 和[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components) 是 `section`。它可用于更改默认部分的行为。以下示例将一些样式和背景图像添加到部分元数据模型。
 
 ```json
 {
@@ -571,7 +571,7 @@ Edge Delivery Services的内容模型特意只允许单级别的嵌套，即部�
 }
 ```
 
-以下示例定义了一个选项卡部分，在自动阻止期间，该部分可用于通过将连续部分与选项卡标题数据属性组合到选项卡块中来创建选项卡块。
+以下示例定义一个选项卡部分，可用于通过在自动遮蔽期间将连续部分与选项卡标题数据属性组合成选项卡区块来创建选项卡区块。
 
 ```json
 {
@@ -594,24 +594,24 @@ Edge Delivery Services的内容模型特意只允许单级别的嵌套，即部�
 
 ## 页面元数据 {#page-metadata}
 
-文档可以有一个页面 [元数据块，](/help/edge/authoring.md#metadata--seo) 用于定义 `<meta>` 元素在中呈现 `<head>` 页面的。 AEMas a Cloud Service中页面的页面属性映射到那些可用于Edge Delivery Services的现成页面属性，例如 `title`， `description`， `keywords`，等等。
+文档可以具有页面[元数据区块](/help/edge/authoring.md#metadata--seo)，它用于定义哪些 `<meta>` 元素呈现在页面的 `<head>` 中。AEM as a Cloud Service 中页面的页面属性映射到 Edge Delivery Services 的现成页面属性，例如 `title`、`description`、`keywords` 等。
 
-在进一步探索如何定义您自己的元数据之前，请查看以下文档以首先了解页面元数据的概念。
+在进一步探索如何定义自己的元数据之前，请先查看以下文档以了解页面元数据的概念。
 
 * [元数据](https://www.aem.live/developer/block-collection/metadata)
 * [批量元数据](/help/edge/docs/bulk-metadata.md)
 
-也可以通过两种方式定义其他页面元数据。
+还可以通过两种方式定义其他页面元数据。
 
 ### 元数据电子表格 {#metadata-spreadsheets}
 
-在AEMas a Cloud Service中，可以使用类似表的方式按路径或按路径模式定义元数据。 提供了一个用于类似于Excel或Google Sheets的类似表数据的创作UI。
+可以在 AEM as a Cloud Service 中以类似表格的方式定义每个路径或每个路径模式的元数据。有一个可用于类似 Excel 或 Google Sheets 的表格数据的创作 UI。
 
-要创建此类表，请创建一个页面，然后使用站点控制台中的元数据模板。
+要创建此类表，请创建一个页面并使用 Sites 控制台中的元数据模板。
 
-在电子表格的页面属性中，定义所需的元数据字段以及URL。 然后，为每个页面路径或页面路径模式添加元数据。
+在电子表格的页面属性中，定义所需的元数据字段以及 URL。然后，为每个页面路径或页面路径模式添加元数据。
 
-在发布之前，请确保电子表格已添加到路径映射中。
+在发布之前，请确保也已将电子表格添加到您的路径映射中。
 
 ```json
 {
@@ -624,9 +624,9 @@ Edge Delivery Services的内容模型特意只允许单级别的嵌套，即部�
 
 ### 页面属性 {#page-properties}
 
-还可以为页面元数据定义组件模型，该组件模型将作为AEM Sites页面属性对话框的选项卡提供给作者。
+还可以为页面元数据定义组件模型，作者可以将其作为 AEM Sites 页面属性对话框的选项卡使用。
 
-为此，需使用ID创建元件模型 `page-metadata`.
+为此，请使用 ID `page-metadata` 创建组件模型。
 
 ```json
 {
@@ -641,7 +641,7 @@ Edge Delivery Services的内容模型特意只允许单级别的嵌套，即部�
 }
 ```
 
-有一些字段名称具有特殊含义，在提供创作对话框UI时将跳过这些名称：
+有几个字段名称具有特殊含义，在提供创作对话框 UI 时将跳过它们：
 
-* **`cq:tags`**  — 默认情况下， `cq:tags` 不会添加到元数据。 将它们添加到 `page-metadata` model会将标记ID作为以逗号分隔的列表添加为 `tags` meta标记到头。
-* **`cq:lastModified`** - `cq:lastModified` 将其数据添加为 `last-modified` 头部。
+* **`cq:tags`** - 默认情况下，`cq:tags` 不会添加到元数据中。将它们添加到 `page-metadata` 模型中会以逗号分隔列表形式将标记 ID 作为 `tags` 元标记添加到标题。
+* **`cq:lastModified`** - `cq:lastModified` 将其数据作为 `last-modified` 添加到标题。
