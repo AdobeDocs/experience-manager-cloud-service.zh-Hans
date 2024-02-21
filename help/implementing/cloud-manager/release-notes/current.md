@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ AEM as a Cloud Service 中的 Cloud Manager 2024.2.0 版本的发布日期是 20
 
 ## 新增功能 {#what-is-new}
 
-* Cloud Manager现在支持以下项目的自助服务管理 [管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) 通过Cloud Manager UI。
-* [预览服务](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice) 现在将为转出预览服务功能之前创建的环境启用。
-* 通过 [Cloud Manager 自定义权限](/help/implementing/cloud-manager/custom-permissions.md)，可创建具有可配置的权限的自定义权限配置文件，以限制 Cloud Manager 用户对项目、管道和环境的访问。
-   * 此功能开始分阶段推出 [2023年12月版](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md) 并将于2024年2月20日完成。
-* 对于所有新环境， [环境产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) 名称格式将更加便于用户使用，它以配置文件描述、环境类型、编号和项目编号的组合为基础。
-* [构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) 已更新至Maven版本3.9.4和JDK版本jdk-11.0.22和jdk1.8.0_401。
+* Cloud Manager 现在支持通过 Cloud Manager UI 自助管理[管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)。
+* 现在将为在推出预览服务功能之前创建的环境启用[预览服务](/help/implementing/cloud-manager/manage-environments.md#access-preview-sevice)。
+* 通过 [Cloud Manager 自定义权限](/help/implementing/cloud-manager/custom-permissions.md)，可创建具有可配置的权限的自定义权限配置文件，以限制 Cloud Manager 用户访问项目、管道和环境。
+   * 此功能从 [2023 年 12 月版本](/help/implementing/cloud-manager/release-notes/2023/2023-12-0.md)开始分阶段推出，并将于 2024 年 2 月 20 日推出完毕。
+* 对于所有新环境，[环境产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)名称将采用更易于用户理解的格式，该格式基于配置文件描述、环境类型、编号和程序编号的组合。
+* 已将[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)更新为 Maven 版本 3.9.4 以及 JDK 版本 jdk-11.0.22 和 jdk1.8.0_401。
 
 ## 早期采用计划 {#early-adoption}
 
@@ -73,4 +73,4 @@ AEM as a Cloud Service 中的 Cloud Manager 2024.2.0 版本的发布日期是 20
 
 ## 错误修复 {#bug-fixes}
 
-* 内部版本容器的JDK已更新到可以解决此问题的版本 [JDK-8313765。](https://bugs.openjdk.org/browse/JDK-8313765)
+* 已将构建容器的 JDK 更新到解决了 [JDK-8313765](https://bugs.openjdk.org/browse/JDK-8313765) 问题的版本。
