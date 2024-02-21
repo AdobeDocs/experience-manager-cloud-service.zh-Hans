@@ -4,7 +4,7 @@ description: AEM Forms Edge交付服务专为实现卓越性能而打造，使�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fc55366119662ed803008f4cec8731e43120942
+source-git-commit: 9c084461f5a99f2417b5cc34e851f703fe328f7d
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -89,8 +89,7 @@ AEM Forms Edge Delivery Service可帮助您：
       </a>
       <p>轻松创建可重复的部分并将其添加到表单中。</p>
   </div>
-</div>
-<!-- Repeat the same structure for other cards -->
+
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
   <div class="card-container">
@@ -116,6 +115,9 @@ AEM Forms Edge Delivery Service可帮助您：
   </div>
 </div>
 </div>
+
+</div>
+<!-- Repeat the same structure for other cards -->
 
 </br>
 
