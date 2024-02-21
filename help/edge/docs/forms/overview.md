@@ -4,9 +4,9 @@ description: AEM Forms Edge交付服务专为实现卓越性能而打造，使�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 9c084461f5a99f2417b5cc34e851f703fe328f7d
+source-git-commit: b94bd6cd70af541444fda1d03f502b4588fd879b
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ AEM Forms Edge Delivery Service可帮助您：
 
 <style>
     .card-container {
-        width: calc(33% - 10px);
+        width: calc(33.33% - 10px);;
         margin: 5px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -65,113 +65,53 @@ AEM Forms Edge Delivery Service可帮助您：
         </a>
         <p>在多个表单中重用预配置的片段。</p>
     </div>
-    <!-- Repeat the same structure for other cards -->
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
-  <div class="card-container">
+    <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
-          <img src="/help/edge/assets/smock_abc_18_n.svg" alt="翻译EDS表单" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">翻译表单</b>
-      </a>
-      <p>在控制成本的同时，扩大表单的覆盖范围。</p>
-  </div>
-  <div class="card-container">
-      <a href="/help/edge/docs/forms/style-theme-forms.md">
-          <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="将样式或主题应用于eds表单" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">自定义主题</b>
-      </a>
-      <p>通过在表单中应用相同主题来创建一致的品牌图像。</p>
-  </div>
-  <div class="card-container">
-    <a href="/help/edge/docs/forms/repeatable-forms.md">  
-      <img src="/help/edge/assets/smock_addto_18_n.svg" alt="向EDS表单添加可重复的部分" alt="在EDS表单中使用表单片段" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">添加可重复部分</b>
-      </a>
-      <p>轻松创建可重复的部分并将其添加到表单中。</p>
-  </div>
-
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
-  <div class="card-container">
-    <a href="/help/edge/docs/forms/custom-components-forms.md"> 
-      <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="使用标准JavaScript和CSS创建自定义表单组件"  style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">创建自定义组件</b>
-      </a>
-      <p>设置标准JavaScript和CSS以创建组件和主题。</p>
-  </div>
-  <div class="card-container">
-    <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-      <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="在EDS表单中使用reCAPTCHA" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">使用reCAPTCHA</b>
-      </a>
-      <p>使用OOTB reCAPTCHA集成提供强大的垃圾邮件和机器人保护。</p>
-  </div>
-  <div class="card-container">
-    <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-      <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="提交表单" alt="在EDS表单中使用表单片段" style="border-radius: 5px;"> </b>
-          <br><b style="margin-top: 5px;">将表单提交到电子表格</b>
-      </a>
-      <p>将表单直接提交到Microsoft Excel或Google工作表。</p>
-  </div>
-</div>
+            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="翻译EDS表单" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">翻译表单</b>
+        </a>
+        <p>在控制成本的同时，扩大表单的覆盖范围。</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="将样式或主题应用于eds表单" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">自定义主题</b>
+        </a>
+        <p>通过在表单中应用相同主题来创建一致的品牌图像。</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/repeatable-forms.md">  
+            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="向EDS表单添加可重复的部分" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">添加可重复部分</b>
+        </a>
+        <p>轻松创建可重复的部分并将其添加到表单中。</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/custom-components-forms.md"> 
+            <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="使用标准JavaScript和CSS创建自定义表单组件"  style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">创建自定义组件</b>
+        </a>
+        <p>使用标准JavaScript和CSS创建组件和主题。</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/recaptacha-forms.md">  
+            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="在EDS表单中使用reCAPTCHA" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">使用reCAPTCHA</b>
+        </a>
+        <p>使用OOTB reCAPTCHA集成提供强大的垃圾邮件和机器人保护。</p>
+    </div>
+    <div class="card-container">
+        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="提交表单" alt="在EDS表单中使用表单片段" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">将表单提交到电子表格</b>
+        </a>
+        <p>将表单直接提交到Microsoft Excel或Google工作表。</p>
+    </div>
 </div>
 
-</div>
-<!-- Repeat the same structure for other cards -->
 
 </br>
 
-<!-- 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 5px;">
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-       <a href="/help/edge/docs/forms/create-forms.md"> <img src="/help/edge/assets/smock_devices_18_n.svg"alt="Create a form using eds forms" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;"> Create a form</b> </a>
-        <p> Create forms that that load and render quickly and automatically reflows on mobile devices.</p> <a href="/help/edge/docs/forms/create-forms.md"> </a>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/validate-forms.md"> <img src="/help/edge/assets/smock_condition_18_n.svg" alt="Add validations to form fields" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Apply field validations</b> </a>
-        <p>Reduce errors and frustration by checking form inputs for proper formatting.</p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/form-fragments.md">  <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="Use Form Fragments in an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Create form fragments</b> </a>
-        <p>Reuse preconfigured fragments across multiple forms.</p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/translate-forms.md">  <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Translate a form </b> </a>
-        <p>Extend the reach of your forms while keeping costs in check.</p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">  <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Customize a theme</b> </a>
-        <p>Create a consistent brand image by applying same theme across forms. </p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/repeatable-forms.md">  <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Add repeatable sections</b> </a>
-        <p>Effortlessly create and add repeatable sections to a form.</p>
-    </div>
-   <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-         <a href="/help/edge/docs/forms/custom-components-forms.md"> <img src="/help/edge/assets/smock_userdeveloper_18_n.svg" alt="Create custom forms components using standard JavaScript and CSS" style="width: 75px, Height: 50px; border-radius: 5px;">  
-        <b style="margin-top: 10px;">Create custom components</b> </a>
-        <p>Use standard JavaScript and CSS to create components and themes.</p>
-    </div>
-    <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-         <a href="/help/edge/docs/forms/recaptacha-forms.md">  <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an EDS Form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Use reCAPTCHA</b> </a>
-        <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>
-    </div>
-        <div style="width: 30%; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-sizing: border-box;">
-        <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" style="width: 75px, Height: 50px; border-radius: 5px;"> 
-        <b style="margin-top: 10px;">Submit form to spreadsheet</b> </a>
-        <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
-    </div>
-    
-</div>
-
--->
 
 
 
