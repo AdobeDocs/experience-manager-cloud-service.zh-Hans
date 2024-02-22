@@ -4,9 +4,9 @@ description: 使用电子表格和表单块字段更快地制作功能强大的�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 0604838311bb9ab195789fad755b0910e09519fd
+source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -14,65 +14,72 @@ ht-degree: 0%
 
 # 启用表单以发送数据
 
-创建和预览表单后，启用相应的工作表以接受数据。 要开始接受数据，请将电子表格设置为包含与要收集的数据匹配的标头。 添加到“shared-default”工作表的所有标头还应该出现在表下的“incoming”工作表中。
+一旦 [已创建和预览表单](/help/edge/docs/forms/create-forms.md)，现在应该启用相应的电子表格以开始接收数据。
 
-以下示例显示“contact-us”表单的字段：
+>[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
-![联系方式表单的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+要启用电子表格，请执行以下操作：
 
-
-完成此设置后，您的表单即准备好接受提交。 您可以采用以下方法之一，使电子表格能够接受数据：
-
-* [手动配置电子表格以接受数据](#manually-configure-a-spreadsheet-to-receive-data)
-
-* [使用管理员API启用电子表格以接受数据](#use-admin-apis-to-enable-a-spreadsheet-to-receive-data-use-admin-apis-to-enable-a-spreadsheet-to-recieve-data)
-
-## 手动配置电子表格以接受数据
-
-要手动配置电子表格以接受数据，请执行以下操作：
-
-
-1. 打开您创建的工作簿，并将默认工作表的名称更改为“传入”。
+1. 打开带有表单的电子表格，并在其中添加工作表，然后将工作表的名称更改为 `incoming`.
 
    >[!WARNING]
    >
-   > 如果“传入”工作表不存在，AEM将不会向此工作簿发送任何数据。
+   > 如果 `incoming` 工作表不存在，AEM不向此工作簿发送任何数据。
 
-1. 通过添加与您输入的数据匹配的标头来准备工作表。 以下示例显示“contact-us”表单的字段：
+1. 在 `incoming` 工作表，将所有列标题镜像到 `Name` 列（表单字段名称） `shared-default` 工作表。
+
+   以下示例显示“contact-us”表单的标题：
 
    ![联系方式表单的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. 在助手中预览工作表。
+1. 使用sidekick预览工作表。
 
    >[!NOTE]
    >
-   >即使您以前预览过工作表，也必须在首次创建“传入”工作表后再次预览它。
+   >即使您以前预览过工作表，也必须在创建工作表之后再次预览它 `incoming` 首次填写工作表。
 
 
-## 使用管理员API启用电子表格以接受数据
+将字段名称添加到 `incoming` 表格中，您的表单已准备好接受提交。 您可以预览表单，并使用它向表单提交数据。
 
-您可以在AEM Admin服务内向表单路由发起POST请求。 在收到POST正文数据后，管理员服务对其进行分析并自主生成数据摄取所需的基本标题、表和工作表，从而优化表单服务的功能。
+您还会在电子表格中看到以下更改：
+
+名为“Slack”的工作表将添加到Excel工作簿或Google工作表中。 在此工作表中，您可以在电子表格中摄取新数据时为指定的Slack渠道配置自动通知。 目前，AEM仅支持向AEM工程Slack组织和Adobe企业支持组织发送通知。
+
+1. 要设置Slack通知，请输入Slack工作区的“teamId”以及“渠道名称”或“ID”。 您还可以向slack-bot（使用调试命令）询问“teamId”和“渠道ID”。 最好使用“渠道ID”而不是“渠道名称”，因为它在渠道重命名之后仍然可用。
+
+   >[!NOTE]
+   >
+   > 旧表单没有“teamId”列。 “teamId”包含在渠道列中，以“#”或“/”分隔。
+
+1. 输入所需的任何标题，并在字段下输入要在Slack通知中看到的字段名称。 每个标题应用逗号分隔（例如姓名、电子邮件）。
+
+   >[!WARNING]
+   >
+   >  “shared-default”工作表绝不应包含任何您不希望公开访问的个人身份信息或敏感数据。
+
+
+## （可选）使用管理员API启用电子表格以接受数据
+
+您还可以向表单发送POST请求，以使其接受数据并配置标头 `incoming` 工作表。 在收到POST请求后，该服务将分析请求正文并自主生成数据引入所需的基本标题和页面。
 
 要使用管理员API启用电子表格来接受数据，请执行以下操作：
 
 
-1. 打开您创建的工作簿，并将默认工作表的名称更改为“传入”。
+1. 打开您创建的工作簿，并将默认工作表的名称更改为 `incoming`.
 
    >[!WARNING]
    >
-   > 如果“传入”工作表不存在，AEM将不会向此工作簿发送任何数据。
+   > 如果 `incoming` 工作表不存在，AEM不会向此工作簿发送任何数据。
 
 1. 在助手中预览工作表。
 
    >[!NOTE]
    >
-   >即使您以前预览过工作表，也必须在首次创建“传入”工作表后再次预览它。
+   >即使您以前预览过工作表，也必须在创建工作表之后再次预览它 `incoming` 首次填写工作表。
 
-1. 通过添加与您输入的数据匹配的标头来准备工作表。
+1. 发送POST请求以在中生成相应的标头 `incoming` 工作表，然后添加 `shared-default` 工作表放入您的电子表格（如果尚未存在）。
 
-   为此，您可以向AEM Admin服务中的表单路由发送POST请求。 管理服务会检查POST正文中的数据，并生成有效摄取数据并充分利用Forms服务所需的相应标题、表和工作表。
-
-   要了解如何设置POST请求的格式以设置工作表，请参阅 [管理员API文档](https://www.hlx.live/docs/admin.html#tag/form). 此外，请查看以下提供的示例：
+   要了解如何设置POST请求的格式以设置工作表，请参阅 [管理员API文档](https://www.hlx.live/docs/admin.html#tag/form). 您可以查看下面提供的示例：
 
    **请求**
 
@@ -135,27 +142,26 @@ ht-degree: 0%
    }'
    ```
 
-   前面提到的POST请求提供了示例数据，包括表单字段及其各自的示例值。 Admin服务使用此数据设置表单。
+   上述POST请求提供示例数据，包括表单字段及其各自的示例值。 Admin服务使用此数据设置表单。
 
-   将POST请求提交到Admin Service后，您会在工作簿中看到以下更改：
+   您的表单现已启用以接受数据。 您还会在电子表格中看到以下更改：
 
-* 名为“shared-default”的新工作表将添加到Excel工作簿或Google工作表中。 在对工作表发出GET请求时，将检索“shared-default”工作表中存在的数据。 此工作表用作使用电子表格公式汇总传入数据的最佳位置，使其有利于在其他上下文中使用。
+名为“Slack”的工作表将添加到Excel工作簿或Google工作表中。 在此工作表中，您可以在电子表格中摄取新数据时为指定的Slack渠道配置自动通知。 目前，AEM仅支持向AEM工程Slack组织和Adobe企业支持组织发送通知。
 
-  “shared-default”工作表绝不应包含任何您不希望公开访问的个人身份信息或敏感数据。
+1. 要设置Slack通知，请输入Slack工作区的“teamId”以及“渠道名称”或“ID”。 您还可以向slack-bot（使用调试命令）询问“teamId”和“渠道ID”。 最好使用“渠道ID”而不是“渠道名称”，因为它在渠道重命名之后仍然可用。
 
-* 名为“Slack”的工作表将添加到Excel工作簿或Google工作表中。 在此工作表中，您可以在电子表格中摄取新数据时为指定的Slack渠道配置自动通知。 目前，AEM仅支持向AEM工程Slack组织和Adobe企业支持组织发送通知。
+   >[!NOTE]
+   >
+   > 旧表单没有“teamId”列。 “teamId”包含在渠道列中，以“#”或“/”分隔。
 
-   1. 要设置Slack通知，请输入Slack工作区的“teamId”以及“渠道名称”或“ID”。 您还可以向slack-bot（使用调试命令）询问“teamId”和“渠道ID”。 最好使用“渠道ID”而不是“渠道名称”，因为它在渠道重命名之后仍然可用。
+1. 输入所需的任何标题，并在字段下输入要在Slack通知中看到的字段名称。 每个标题应用逗号分隔（例如姓名、电子邮件）。
 
-      >[!NOTE]
-      >
-      > 旧表单没有“teamId”列。 “teamId”包含在渠道列中，以“#”或“/”分隔。
-
-   1. 输入所需的任何标题，并在字段下输入要在Slack通知中看到的字段名称。 每个标题应用逗号分隔（例如姓名、电子邮件）。
 
 工作表现在设置为接收数据，您可以 [使用表单块预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用POST请求](#use-admin-apis-to-send-data-to-your-sheet) 开始将数据发送到工作表。
 
-
+>[!WARNING]
+>
+>  “shared-default”工作表绝不应包含任何您不希望公开访问的个人身份信息或敏感数据。
 
 ## 将数据发送到工作表 {#send-data-to-your-sheet}
 
