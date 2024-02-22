@@ -2,10 +2,10 @@
 title: 在Screensas a Cloud Service中创建和管理渠道
 description: 本页介绍如何在Screensas a Cloud Service中创建和管理渠道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 2%
+source-wordcount: '1103'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 * 了解如何创建指向Screens Content Provider的渠道
 * 管理和编辑渠道中的内容
-* 渠道的激活计划
+* 在中管理渠道的分配和激活计划 [Screens服务提供商](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=zh-Hans)
 
 ## 在Screens中创建新序列频道的步骤as a Cloud Service {#create-new-channel}
 
@@ -93,6 +93,8 @@ ht-degree: 2%
 
 此功能允许您为渠道定义默认激活计划，并默认将其用于显示的每个分配。 这提供了一种方法，使得繁琐的计划定义不需要重复。
 
+1. 从导航到Screens服务提供商 [此处](https://experience.adobe.com/screens).
+
 ### 为渠道创建默认分配详细信息 {#create-default}
 
 1. 导航到要配置的渠道的详细信息页面。
@@ -119,7 +121,7 @@ ht-degree: 2%
 可以将具有默认分配详细信息的渠道分配给以与常规渠道相同的方式显示，添加了使用默认分配详细信息的选项，而不是每次都手动定义自定义信息。
 
 1. 导航到要为其分配渠道的显示详细信息页面，然后单击 **分配渠道**.
-或者，在库存视图中选择所需的显示，然后单击 **分配渠道**.
+或者，选择中所需的显示 [库存](https://experience.adobe.com/screens/displays) 查看并单击 **分配渠道**.
 1. 此时将打开渠道分配对话框。
 
    ![图像](/help/screens-cloud/assets/display/Assignments4.png)

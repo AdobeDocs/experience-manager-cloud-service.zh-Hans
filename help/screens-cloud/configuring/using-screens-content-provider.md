@@ -2,9 +2,9 @@
 title: 使用Screens内容提供程序
 description: 本页介绍如何使用Screens Content Provider创建内容。
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: f7ed7c63fd141c6a9817e4718edb31425b14a761
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '383'
 ht-degree: 15%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ## 目标 {#objective}
 
-以下部分将介绍设置后如何使用Screens内容提供程序 [Screens服务提供商](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html).
+以下部分介绍完成设置后，如何在Screens内容提供程序中创建渠道 [Screens服务提供商](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=zh-Hans).
 
 ## 使用 Screens Content Provider {#screens-content-provider}
 
@@ -46,7 +46,7 @@ ht-degree: 15%
 
    ![环境信息卡中突出显示的链接允许您访问Screens内容提供商。](/help/screens-cloud/assets/configure/screens-cp-2.png)
 
-   登录Screens Content Provider后，您现在可以在内容播放中创建内容。
+   登录Screens Content Provider后，导航到Screens > Content Provider。现在，您可以创建内容播放了。
 
    使用Screens Content Provider创建和管理以下内容：
 
