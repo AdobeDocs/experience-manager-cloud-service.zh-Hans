@@ -1,18 +1,18 @@
 ---
-title: 从电子表格到Forms — 掌握表单块字段验证
-description: 使用电子表格和表单块字段更快地制作功能强大的表单！ 本指南可帮助您为EDS Forms块字段构建自定义验证。
+title: 准备电子表格以接受数据
+description: 使用电子表格和表单块字段更快地制作功能强大的表单！
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
 
-# 启用表单以发送数据
+# 准备电子表格以接受数据
 
 一旦 [已创建和预览表单](/help/edge/docs/forms/create-forms.md)，现在应该启用相应的电子表格以开始接收数据。
 
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 要启用电子表格，请执行以下操作：
 
-1. 打开带有表单的电子表格，并在其中添加工作表，然后将工作表的名称更改为 `incoming`.
+1. 打开具有表单的电子表格，然后附加一个新工作表，将其重命名为 `incoming`.
 
    >[!WARNING]
    >
-   > 如果 `incoming` 工作表不存在，AEM不向此工作簿发送任何数据。
+   > 如果 `incoming` 工作表不存在，AEM不会将任何数据发送到电子表格。
 
-1. 在 `incoming` 工作表，将所有列标题镜像到 `Name` 列（表单字段名称） `shared-default` 工作表。
+1. 镜像表单字段名称和值 `Name` 中的列`shared-default` 表，到中的标题 `incoming` 工作表。
 
-   以下示例显示“contact-us”表单的标题：
+   中的每个值 `Name` 列 `shared-default` 工作表（不包括提交按钮）用作 `incoming` 工作表。 例如，请考虑下图说明“contact-us”表单的标头：
 
    ![联系方式表单的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
@@ -77,9 +77,9 @@ ht-degree: 0%
    >
    >即使您以前预览过工作表，也必须在创建工作表之后再次预览它 `incoming` 首次填写工作表。
 
-1. 发送POST请求以在中生成相应的标头 `incoming` 工作表，然后添加 `shared-default` 工作表放入您的电子表格（如果尚未存在）。
+1. 发送POST请求以在中生成相应的标头 `incoming` 工作表，然后添加 `shared-default` 将工作表添加到电子表格（如果尚未存在）。
 
-   要了解如何设置POST请求的格式以设置工作表，请参阅 [管理员API文档](https://www.hlx.live/docs/admin.html#tag/form). 您可以查看下面提供的示例：
+   要了解如何设置POST请求的格式以设置工作表，请参阅 [管理员API文档](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). 您可以查看下面提供的示例：
 
    **请求**
 

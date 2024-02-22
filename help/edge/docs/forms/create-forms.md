@@ -4,9 +4,9 @@ description: 制作完美的表单，快！ ⚡基于AEM Forms Edge Delivery文�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: c1a01dd256d39531c6091410e38a744688e71aaa
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
@@ -18,15 +18,13 @@ ht-degree: 1%
 
 这些表单将数据直接提交到Microsoft Excel或Google Sheets文件，使您能够使用动态的生态系统以及Google Sheets、Microsoft Excel和Microsoft Sharepoint的强大API，轻松处理提交的数据或启动现有的业务工作流。
 
-![Edge Delivery Forms快速入门](/help/edge/assets/getting-started-with-eds-forms.png)
-
 
 ## 先决条件
 
 在开始之前，请确保您已完成以下步骤：
 
-* 设置和克隆您的边缘交付服务(EDS)项目。 请参阅 [开发人员教程](https://www.aem.live/developer/tutorial) 以了解详细信息。
-* 克隆 [Forms阻止存储库](https://github.com/adobe/afb). 它包含用于在EDS Sites页面上呈现表单的代码。
+* 设置和克隆您的边缘交付服务(EDS)项目。 请参阅 [开发人员教程](https://www.aem.live/developer/tutorial) 以了解详细信息。 Edge Delivery Service (EDS)项目的本地文件夹推荐为 `[EDS Project repository]` 在本文档中。
+* 克隆 [Forms阻止存储库](https://github.com/adobe/afb). 它包含在EDS网页上呈现表单的代码。 Forms Block存储库的本地文件夹引用为 `[Forms Block repository]` 在本文档中。
 * 确保您有权访问Google工作表或Microsoft SharePoint。
 
 
@@ -36,32 +34,25 @@ ht-degree: 1%
 
 AEM Forms Edge Delivery包括表单块，可帮助您轻松创建表单以捕获和存储捕获的数据。 要将表单块包含到您的边缘交付服务项目中，请执行以下操作：
 
-1. 导航到 `[cloned Forms Block repository folder]/blocks/`。
+1. 导航到 `[Forms Block repository]/blocks` 并复制 `forms` 文件夹。
 
-1. 复制 `forms` 文件夹到 `[Cloned EDS Project repository folder]/blocks` 文件夹。
+1. 导航到 `[EDS Project repository]/blocks/` 并粘贴 `forms` 文件夹。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427487?quality=12&learn=on)
 
 1. 签入 `form` 文件夹和底层文件到GitHub上的边缘交付服务项目。
 
-   ```Shell
-   cd ..
-   git add .
-   git commit -m "Added form block"
-   git push origin
-   ```
+   该表单块将添加到Github上的EDS项目存储库中。 确保Github内部版本不会失败：
 
-   表单块将添加到您的EDS项目中。 您现在可以创建表单并将其添加到您的站点。
+   * 如果遇到错误“无法解析模块“&#39;../../scripts/lib-franklin.js&#39;”的路径，请打开 `[EDS Project]/blocks/forms/form.js` 文件。 在import语句中，将 `lib-franklin.js` 文件包含 `aem.js` 文件。
 
-   >[!NOTE]
-   >
-   > * 如果遇到错误“无法解析模块“&#39;../../scripts/lib-franklin.js&#39;”的路径，请打开 `[EDS Project]/blocks/forms/form.js` 文件。 在import语句中，将 `lib-franklin.js` 文件包含 `aem.js` 文件。
-   > * 如果您遇到任何绒毛错误，请随时将其忽略。 要绕过衬线检查，请打开 `[EDS Project]\package.json` 文件并更新“lint”脚本 `"lint": "npm run lint:js && npm run lint:css"` 到 `"lint": "echo 'skipping linting for now'"`. 保存文件并将其提交到GitHub项目。
+   * 如果您遇到任何绒毛错误，请随时将其忽略。 要绕过衬线检查，请打开 `[EDS Project]\package.json` 文件并更新“lint”脚本 `"lint": "npm run lint:js && npm run lint:css"` 到 `"lint": "echo 'skipping linting for now'"`. 保存文件并将其提交到GitHub项目。
+
+您现在可以创建表单并将其添加到您的站点。
 
 +++
 
-+++ 第2步：使用Microsoft Excel或Google工作表创建表单
-
++++ 步骤2：使用Microsoft Excel或Google工作表创作表单。
 
 您可以使用电子表格轻松创建表单，而不是复杂的流程。 首先，将行和列标题添加到电子表格中，其中每一行定义一个表单字段，每一列标题定义相应表单字段的属性。
 
@@ -103,10 +94,10 @@ AEM Forms Edge Delivery包括表单块，可帮助您轻松创建表单以捕获
 
 +++
 
-+++ 步骤3：使用边缘交付服务(EDS)页面预览表单
++++ 步骤3：使用边缘交付服务(EDS)页面预览表单。
 
 
-到目前为止，您已为EDS项目启用表单块并准备了表单的结构。 现在，要预览表单，请执行以下操作：
+到目前为止，您已经将表单块添加到EDS项目并准备了表单的结构。 现在，要预览表单，请执行以下操作：
 
 1. 转到您的Microsoft SharePoint或Google Drive帐户，然后打开AEM Edge Delivery项目目录。
 
@@ -118,14 +109,17 @@ AEM Forms Edge Delivery包括表单块，可帮助您轻松创建表单以捕获
 
    ![](/help/edge/assets/form-block-in-sites-page-example.png)
 
-   在第二行中，以超链接的形式包含您在上一节中提到的URL。 您可以使用预览URL (.page URL)或发布URL (.live)。 为生产构建或测试表单和发布URL时，可以使用预览URL。
+   在第二行中，包括您在前一节中记录的URL作为超链接。 将预览URL (.page URL)用于开发或测试目的，或将发布URL (.live)用于生产。
 
    >[!IMPORTANT]
    >
    >
-   > 请确保未以纯文本形式提及URL。 它应作为超链接添加。
+   > 确保URL为超链接而不是以纯文本显示。
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以预览页面。 页面现在会显示表单。 例如，以下是基于 [联系我们电子表格](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link)：
+
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以预览页面。 页面现在会显示表单。
+
+   例如，以下是基于 [联系我们电子表格](https://docs.google.com/spreadsheets/d/12jvYjo1a3GOV30IqPY6_7YaCQtUmzWpFhoiOHDcjB28/edit?usp=drive_link)：
 
 
    ![EDS表单示例](/help/edge/assets/eds-form.png)
@@ -139,7 +133,7 @@ AEM Forms Edge Delivery包括表单块，可帮助您轻松创建表单以捕获
 
 ## 下一步
 
-下一步是 [准备电子表格以接受数据](/help/edge/docs/forms/submit-forms.md).
+[准备电子表格](/help/edge/docs/forms/submit-forms.md) ，以便在提交表单后开始接受数据。
 
 
 

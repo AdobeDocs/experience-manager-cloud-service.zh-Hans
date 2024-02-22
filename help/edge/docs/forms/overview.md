@@ -4,9 +4,9 @@ description: AEM Forms Edge交付服务专为实现卓越性能而打造，使�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,25 @@ ht-degree: 0%
 
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
-AEM Forms边缘交付服务是由Adobe提供的一项可组合服务，允许您创建和交付影响大、性能快的Web窗体。 此可组合的服务与Adobe Experience Manager (AEM)无缝集成，使您能够通过直观而高效的工作流程来设计、构建和部署高影响力、快如闪电的Web表单。
-
-AEM Forms Edge Delivery Service可帮助您：
+AEM Forms边缘交付服务是由Adobe提供的一项可组合服务，允许您创建和交付影响大、性能快的Web窗体。 您可以使用该服务执行以下操作：
 
 * **制作令人惊叹的视觉表单**：抛弃平淡无奇的饼干切割器设计，用反映您品牌身份的动态现代形式吸引用户。 利用预建组件或创建您自己的自定义组件，快速轻松地实现您的愿景。
 
 * **使用完美的Lighthouse分数构建表单**：构建可快速加载和渲染的表单，即使在Internet连接速度较慢的情况下也是如此。 更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
 
 * **简化创作和提交**：使用熟悉的工具(如Microsoft Excel或Google Sheets)创建表单，而不是使用传统的创作环境。 将表单直接提交到Microsoft Excel或Google工作表，并使用其生态系统轻松处理提交的数据。
+
+
+此可组合服务与内容源分离，通过允许用户使用其首选的创作工具，提供了内容创建的灵活性。
+
+![Edge Delivery表单创作工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
+内容创建者可以利用他们熟悉的工具(如Microsoft Excel或Google Sheets（基于文档的创作）、JSON编辑器或AEM Forms自适应Forms编辑器以进行WYSIWYG编辑(AEM Forms项目))来设计和创建表单。
+
+>[!NOTE]
+>
+>
+> 所见即所得编辑功能和Cross Walk区在早期采用者计划下提供。 您可以从官方电子邮件ID写信到aem-forms-early-adopter-program@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。
 
 ## 从基础知识开始
 
@@ -47,7 +57,7 @@ AEM Forms Edge Delivery Service可帮助您：
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="使用eds forms创建表单" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">创建表单</b>
+            <br><b style="margin-top: 5px;">使用Google Sheets或Microsoft Excel创建表单</b>
         </a>
         <p>创建可在移动设备上快速加载和渲染并自动重排的表单。</p>
     </div>
