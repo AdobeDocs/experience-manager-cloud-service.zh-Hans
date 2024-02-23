@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 22fc488cd507a3504c472eab3dea8daa7e63b81c
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 8%
@@ -107,7 +107,8 @@ ht-degree: 8%
 1. 单击 **[!UICONTROL 创建]** 工具栏中。 此时将显示一条消息，通知已启动报表生成。
 1. 在 [!UICONTROL 资产报表] 页面上，报表生成状态基于报表作业的当前状态，例如， [!UICONTROL 成功]， [!UICONTROL 失败]， [!UICONTROL 已排队]，或 [!UICONTROL 已计划]. 通知收件箱中将显示相同的状态。要查看报告页面，请单击报告链接。 或者，选择报告，然后单击 **[!UICONTROL 视图]** 工具栏中。
 
-   ![生成的报告](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   ![已生成报告状态](assets/report-status.JPG)
 
    单击 **[!UICONTROL 下载]** 从工具栏以CSV格式下载报表。
 
