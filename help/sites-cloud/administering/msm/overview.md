@@ -4,9 +4,9 @@ description: 了解如何通过 AEM 强大的 Live Copy 和多站点管理器功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '2698'
+source-wordcount: '2702'
 ht-degree: 96%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 96%
 
 * **引用**（**站点**）
 
-   * [引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)边栏提供了有关 **Live Copy** 的信息以及对相应操作的访问权限。
+   * [引用](/help/sites-cloud/authoring/basic-handling.md#references)边栏提供了有关 **Live Copy** 的信息以及对相应操作的访问权限。
 
 * **Live Copy 概述**（**站点**）
 

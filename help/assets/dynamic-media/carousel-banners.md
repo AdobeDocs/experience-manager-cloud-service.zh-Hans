@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4492'
 ht-degree: 1%
 
 ---
@@ -226,7 +226,7 @@ ht-degree: 1%
    >对于轮播横幅，您可以调整以下内容：
    >
    >* 图像显示的持续时间。 默认情况下，每个图像会显示9秒。
-   >* 动画. 默认情况下，每个幻灯片过渡都是淡入淡出。 您可以将其更改为幻灯片过渡。
+   >* 动画。 默认情况下，每个幻灯片过渡都是淡入淡出。 您可以将其更改为幻灯片过渡。
    >* 按钮的样式。 通过选择每个点或数字，用户可以旋转横幅。 您可以更改设置指示器按钮的显示位置（以及数字或点线样式）和大小。
    >* 更改图像映射的高亮样式或热点图标。
    >* 在编辑查看器预设之前，请选择预设所基于的样式。 如果未选择样式，则在开始编辑查看器预设时，如果更改为其他预设，则会丢失所有更改。
@@ -241,7 +241,7 @@ ht-degree: 1%
 
 添加热点或图像映射时，可以将它们定义为快速视图弹出显示、超链接或体验片段。
 
-请参阅 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+请参阅 [体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
@@ -259,11 +259,11 @@ ht-degree: 1%
 >
 >在向图像横幅添加热点时，热点信息将存储在相对于图像位置的同一元数据位置。 无论它是交互式图像还是轮播横幅，该观点都正确。 这项功能意味着您可以在任一查看器中轻松重用同一图像，及其定义的热点数据。
 >
-但是，请注意，轮播横幅支持在可能还包含热点的图像上进行图像映射；而交互式图像则不支持。 如果您打算创建使用相同图像的交互式图像或轮播横幅，请记住此提示。 请考虑改用同一图像的单独副本来创建交互式图像和轮播横幅。
+>但是，请注意，轮播横幅支持在可能还包含热点的图像上进行图像映射；而交互式图像则不支持。 如果您打算创建使用相同图像的交互式图像或轮播横幅，请记住此提示。 请考虑改用同一图像的单独副本来创建交互式图像和轮播横幅。
 
 >[!NOTE]
 >
-如果您正在编辑具有热点的交互式图像并裁切图像，则将删除您的热点。
+>如果您正在编辑具有热点的交互式图像并裁切图像，则将删除您的热点。
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
@@ -302,7 +302,7 @@ ht-degree: 1%
 
         >[!NOTE]
         >
-        如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+        >如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
 
       * 如果您是独立客户，请在href文本字段中指定链接网页的完整URL路径。
 
@@ -313,15 +313,15 @@ ht-degree: 1%
    * 选择 **[!UICONTROL 体验片段]**.
 
       * 如果您是Experience Manager Sites客户，请选择“搜索”图标（放大镜）以打开“体验片段”页面。 要返回热点管理页面，请选择要使用的体验片段，然后在该页面的右上角选择 **[!UICONTROL 选择]**.
-请参阅 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+请参阅 [体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
       * 指定体验片段在横幅上显示的宽度和高度。
 
         >[!NOTE]
         >
-        将查看器嵌入体验片段时，不支持轮播横幅中的社交媒体共享工具。
+        >将查看器嵌入体验片段时，不支持轮播横幅中的社交媒体共享工具。
         >
-        要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
+        >要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -338,7 +338,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-必须将非管理用户添加到 **[!UICONTROL dam-users]** 组才能创建或编辑轮播横幅。 如果您在创建或编辑时遇到问题，请咨询您的系统管理员，管理员可以将您添加到 **[!UICONTROL dam-users]** 组。
+>必须将非管理用户添加到 **[!UICONTROL dam-users]** 组才能创建或编辑轮播横幅。 如果您在创建或编辑时遇到问题，请咨询您的系统管理员，管理员可以将您添加到 **[!UICONTROL dam-users]** 组。
 
 您可以对轮播集执行各种编辑任务，如下所示：
 
@@ -371,7 +371,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   如果您正在编辑具有热点的交互式图像并裁切图像，则将删除您的热点。
+   >如果您正在编辑具有热点的交互式图像并裁切图像，则将删除您的热点。
 
 ## （可选）预览轮播横幅 {#optional-previewing-carousel-banners}
 
@@ -392,7 +392,7 @@ ht-degree: 1%
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. 选择&#x200B;**[!UICONTROL 预览]**。
+1. 选择 **[!UICONTROL 预览]**.
 1. 要测试其关联的操作，请选择图像上的热点或图像映射。
 
 **要从查看器列表中预览轮播横幅，请执行以下操作：**
@@ -408,9 +408,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-如果为轮播横幅使用带热点的现有交互式图像，则必须在发布轮播横幅后单独发布交互式图像。
+>如果为轮播横幅使用带热点的现有交互式图像，则必须在发布轮播横幅后单独发布交互式图像。
 >
-此外，如果修改在轮播横幅中使用的预先存在的已发布交互式图像，请发布该交互式图像，以便这些更改会反映在轮播横幅中。
+>此外，如果修改在轮播横幅中使用的预先存在的已发布交互式图像，请发布该交互式图像，以便这些更改会反映在轮播横幅中。
 
 请参阅 [发布Dynamic Media资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) 有关如何发布轮播横幅的信息。
 
@@ -420,7 +420,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-如果您是Experience Manager Sites客户，则可以通过将交互式媒体组件拖动到页面，将轮播横幅直接添加到页面。 请参阅 [将Dynamic Media资源添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+>如果您是Experience Manager Sites客户，则可以通过将交互式媒体组件拖动到页面，将轮播横幅直接添加到页面。 请参阅 [将Dynamic Media资源添加到页面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 但是，如果您是独立的Experience Manager Assets客户，则可以手动将轮播横幅添加到网站登陆页面。
 

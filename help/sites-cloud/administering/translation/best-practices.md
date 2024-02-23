@@ -4,8 +4,8 @@ description: 了解由 Adobe 工程和咨询团队编译的最佳实践，帮助
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 * 在设计站点结构时，首先要检查您的内容，然后确定内容的创作位置以及用于创作内容的语言。此位置应是站点的顶层。
 * 最佳实践是&#x200B;**基于语言的结构**，在顶层创作站点和国家/地区站点之间不超过 3 个层级。
-* 使用遵循 **[W3C 标准](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**&#x200B;的语言/国家/地区站点命名惯例。
+* 使用遵循 **[W3C 标准](/help/sites-cloud/authoring/page-editor/accessible-content.md)**&#x200B;的语言/国家/地区站点命名惯例。
 * 确定按国家和地区分发内容的方式。考虑哪些国家/地区共享语言。建议创建语言母版，它是一个未激活的页面层，可在其中查看和修改翻译的内容，然后将该内容推送或拉取到共享该语言的国家/地区站点。
 * 可通过两种方法创建语言母版：使用语言副本和使用 MSM/Live Copy。
    * 语言复制方法是 AEM 现成的翻译集成框架所使用的方法，通过此方法来开始操作是最轻松的。此框架提供了一个用户界面，可让您一开始就轻松地将内容更改从主要语言（例如英语）母版传播到和翻译为语言母版。但随着项目的发展，对于管理不断增加的页面和/或语言的翻译，工作流自动化变得越来越重要。

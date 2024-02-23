@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
 description: 介绍 Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,7 @@ WCAG 2.1 提供了[涵盖无障碍级别和如何符合这些级别的准则（�
 
 * [WCAG 2.1 快速入门指南](/help/compliance/accessibility/quick-guide-wcag.md)中重点介绍了 WCAG 2.1 的特定方面。
 
-* [创建无障碍内容](/help/sites-cloud/authoring/fundamentals/accessible-content.md)详细介绍了这些内容与 AEM 的关系。
+* [创建无障碍内容](/help/sites-cloud/authoring/page-editor/accessible-content.md)详细介绍了这些内容与 AEM 的关系。
 
 >[!NOTE]
 >

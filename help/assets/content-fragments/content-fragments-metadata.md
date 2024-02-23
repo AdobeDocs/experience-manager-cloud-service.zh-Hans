@@ -1,11 +1,11 @@
 ---
 title: 元数据 — 片段属性（资产 — 内容片段）
-description: 了解如何查看和编辑 内容片段的元数据属性。
+description: 了解如何查看和编辑内容片段的元数据属性。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: ceab75d3592a461478da3250a41ce00b6d4f31ef
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 69%
 
 >[!NOTE]
 >
->内容片段是站点功能，但存储为 **资产**.
+>内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
 >创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
 
@@ -38,7 +38,7 @@ ht-degree: 69%
    * **标题**
    * **描述**
    * **标记**
-      * [标记](/help/sites-cloud/authoring/features/tags.md)在组织片段时可发挥强大作用，因为其可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
+      * [标记](/help/sites-cloud/authoring/sites-console/tags.md)在组织片段时可发挥强大作用，因为其可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
 例如，您可以将相关片段标记为“圣诞节发布”，以仅允许作为子集浏览这些片段，或复制这些片段以供将来在新文件夹中再次发布。
 
         >[!NOTE]

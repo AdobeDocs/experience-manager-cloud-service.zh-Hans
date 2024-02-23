@@ -2,7 +2,7 @@
 title: AEM 标记框架
 description: 标记内容，并使用AEM标记基础架构对其进行分类和整理。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 标记允许对内容进行分类和组织。 标记可以按命名空间和分类法进行分类。 有关使用标记的详细信息：
 
-* 请参阅 [使用标记](/help/sites-cloud/authoring/features/tags.md) 有关将内容标记为内容作者的信息。
+* 请参阅 [使用标记](/help/sites-cloud/authoring/sites-console/tags.md) 有关将内容标记为内容作者的信息。
 * 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅管理标记。
 
 本文重点介绍支持AEM中标记的基础框架以及如何作为开发人员使用它。
@@ -175,7 +175,7 @@ AEM中包含的节点类型的基本定义如下：
      >
      >此 `cq:movedTo` 仅当满足以下任一条件时，属性才会添加到已移动或已合并的标记中：
      >
-     > 1. 标记在内容中使用（这意味着它有引用）。 或
+     > 1. 标记在内容中使用（这意味着它有引用）。 OR
      > 1. 标记具有已移动的子项。
      >
 * 创建标记B（如果有移动）并接收 `cq:backlinks` 属性。

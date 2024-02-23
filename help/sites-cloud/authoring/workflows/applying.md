@@ -2,7 +2,7 @@
 title: 将工作流程应用于页面
 description: 在创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 83%
@@ -70,7 +70,7 @@ ht-degree: 83%
 
 您可以从&#x200B;**时间线**&#x200B;中启动要应用于所选资源的工作流。
 
-1. [选择资源](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)，然后打开[时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)（或打开时间线，然后选择资源）。
+1. [选择资源](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)，然后打开[时间线](/help/sites-cloud/authoring/basic-handling.md#timeline)（或打开时间线，然后选择资源）。
 1. 可以使用评论字段中的箭头显示&#x200B;**启动工作流**：
 
    ![从时间线创建工作流](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
@@ -116,7 +116,7 @@ ht-degree: 83%
 
 1. 在&#x200B;**范围**&#x200B;步骤中，您可以选择：
 
-   * **添加内容** 以打开 [路径浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 并选择其他资源；在浏览器中，选择 **选择** 将内容添加到工作流实例。
+   * **添加内容** 以打开 [路径浏览器](/help/sites-cloud/authoring/path-selection.md) 并选择其他资源；在浏览器中，选择 **选择** 将内容添加到工作流实例。
 
    * 现有资源以查看其他操作：
 

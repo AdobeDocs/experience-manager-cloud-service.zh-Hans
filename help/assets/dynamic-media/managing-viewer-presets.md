@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 8%
@@ -114,7 +114,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
    <td><p>全景图像和PanoramicVR查看器可渲染球形全景图像，以便用户沉浸在房间、属性、位置或景观的360°查看体验中。</p> <p>要使上传的图像符合球面全景的条件，该图像必须具有以下一项或两项之一：</p>
     <ul>
      <li>长宽比为2:1。</li>
-     <li>已用关键字标记 <code>equirectangular</code>，或 <code>spherical</code> 和 <code>panorama</code>，或 <code>spherical </code>和 <code>panoramic</code>. 请参阅 <a href="/help/sites-cloud/authoring/features/tags.md">使用标记</a>.</li>
+     <li>已用关键字标记 <code>equirectangular</code>，或 <code>spherical</code> 和 <code>panorama</code>，或 <code>spherical </code>和 <code>panoramic</code>. 请参阅 <a href="/help/sites-cloud/authoring/sites-console/tags.md">使用标记</a>.</li>
     </ul> <p>纵横比和关键字条件都适用于资产详细信息页面和“全景媒体”WCM组件的全景资产。</p></td>
   </tr>
     <tr>

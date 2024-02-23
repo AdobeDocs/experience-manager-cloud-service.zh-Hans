@@ -2,7 +2,7 @@
 title: 处理任务
 description: 任务是指要对内容完成的工作项，可在项目中使用任务来确定当前任务的完成程度
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 95%
@@ -76,6 +76,6 @@ ht-degree: 95%
 
 ![收件箱中的任务](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-要完成任务，请选择相应的任务并单击&#x200B;**完成**。向该任务中添加信息，然后单击&#x200B;**完成**。有关更多信息，请参阅[您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)。
+要完成任务，请选择相应的任务并单击&#x200B;**完成**。向该任务中添加信息，然后单击&#x200B;**完成**。有关更多信息，请参阅[您的收件箱](/help/sites-cloud/authoring/inbox.md)。
 
 ![任务通知](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

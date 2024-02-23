@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 99%
 
 >[!TIP]
 >
->如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。基本处理文档不是历程的一部分。因此，完成后返回此页面。
+>如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/basic-handling.md)文档，然后再继续。基本处理文档不是历程的一部分。因此，完成后返回此页面。
 
 ### 工具 {#tools}
 
@@ -101,7 +101,7 @@ Sites 控制台可让您浏览内容并提供其结构的概述。要查看单�
 
    ![选择要编辑的页面](assets/sites-editor-select-page.png)
 
-1. 选择 **编辑** 选项。
+1. 选择工具栏中的&#x200B;**编辑**&#x200B;选项。
 1. 站点编辑器将打开，并加载所选页面以在新的浏览器选项卡中进行编辑。
 1. 将鼠标指针悬停在内容上方或点按内容将显示各个组件的选择器。组件是构成页面的拖放构建基块。
 
@@ -207,7 +207,7 @@ AEM 的内容由其结构驱动。AEM 对内容结构的要求很少，但在项
 
 我们建议您查看文档[配置翻译连接器](configure-connector.md)来继续翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
-* [AEM 基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 了解 AEM UI 的基础知识，以便能够舒适地导航和执行基本任务，例如查找内容。
+* [AEM 基本操作](/help/sites-cloud/authoring/basic-handling.md) – 了解 AEM UI 的基础知识，以便能够舒适地导航和执行基本任务，例如查找内容。
 * [标识要翻译的内容](/help/sites-cloud/administering/translation/rules.md) – 了解翻译规则如何标识需要翻译的内容。
 * [配置翻译集成框架](/help/sites-cloud/administering/translation/integration-framework.md) – 了解如何配置翻译集成框架以与第三方翻译服务集成。
 * [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md) – 了解如何在 AEM 中创建和管理机器翻译项目和人工翻译项目。

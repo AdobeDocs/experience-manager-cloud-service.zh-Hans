@@ -4,16 +4,16 @@ description: 了解AEMas a Cloud Service中的内容片段如何允许您创建�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1792'
+ht-degree: 98%
 
 ---
 
 # 使用内容片段概述 {#overview-working-with-content-fragments}
 
-利用 Adobe Experience Manager (AEM) as a Cloud Service，可通过内容片段设计、创建、策划和[发布独立于页面的内容](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。并使您可为内容做好准备，以供在多个位置和多个渠道上使用，这样非常适合 Headless 投放和页面创作。
+利用 Adobe Experience Manager (AEM) as a Cloud Service，可通过内容片段设计、创建、策划和[发布独立于页面的内容](/help/sites-cloud/authoring/fragments/content-fragments.md)。并使您可为内容做好准备，以供在多个位置和多个渠道上使用，这样非常适合 Headless 投放和页面创作。
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >* 使用&#x200B;**资源**&#x200B;控制台[管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
 >* 使用&#x200B;[*原始*&#x200B;内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md)
->* 使用[内容片段创作页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
+>* 使用[内容片段创作页面](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
 
 内容片段包含结构化内容：
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
+>**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
 >* **内容片段**&#x200B;是可编辑内容，具有定义和结构，但无需额外的可视设计和/或布局。它们可用于访问结构化数据，包括文本、数字和日期等。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
@@ -94,7 +94,7 @@ ht-degree: 0%
 * [使用内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md) – 编辑、发布（到预览或生产环境）和引用您的片段
 * 使用编辑器[分析](/help/sites-cloud/administering/content-fragments/analysis.md)您的内容片段的结构
 * [用 GraphQL 访问您的片段，以供按 Headless 投放到您的应用程序](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)。
-* [或使用您的片段创作页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
+* [或使用您的片段创作页面](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ ht-degree: 0%
 >* [内容片段配置用于呈现的组件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
->* [用内容片段创作页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
+>* [用内容片段创作页面](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
 ## 主控和变体 {#main-and-variations}
 
@@ -172,7 +172,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * 可使用 [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md) 访问内容片段以供投放内容。
 
-* 可通过使用（引用组件的）[内容片段组件](/help/sites-cloud/authoring/fundamentals/content-fragments.md)在页面编辑器中找到内容片段：
+* 可通过使用（引用组件的）[内容片段组件](/help/sites-cloud/authoring/fragments/content-fragments.md)在页面编辑器中找到内容片段：
 
    * 页面作者有[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可用。使其可按 HTML 或 JSON 格式引用和投放所需的内容片段。
 
@@ -257,7 +257,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 * **内容片段组件**
 
    * 有助于以 HTML 和/或 JSON 格式传送片段。
-   * 需要[在页面上引用片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
+   * 需要[在页面上引用片段](/help/sites-cloud/authoring/fragments/content-fragments.md)。
    * 负责片段的布局和投放；例如，渠道。
    * 片段需要一个或多个专用组件以定义布局和投放部分或全部元素/变体和关联的内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。

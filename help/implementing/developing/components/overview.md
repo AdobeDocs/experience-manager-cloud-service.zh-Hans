@@ -2,16 +2,16 @@
 title: 组件概述
 description: 组件是模块化单元，可实施特定功能以在您的网站上展示您的内容
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
-workflow-type: ht
-source-wordcount: '386'
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
+source-wordcount: '376'
 ht-degree: 100%
 
 ---
 
 # 组件概述 {#components-overview}
 
-此页面概述了 Adobe Experience Manager (AEM) 组件，例如那些[用于页面创作](/help/sites-cloud/authoring/fundamentals/components.md)的组件。
+此页面概述了 Adobe Experience Manager (AEM) 组件，例如那些[用于页面创作](/help/sites-cloud/authoring/page-editor/components.md)的组件。
 
 ## 什么是组件？ {#what-are-components}
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 
 ### 查看可用组件 {#viewing-available-components}
 
-有关 AEM 实例中的所有可用组件的概述，请使用[组件控制台](/help/sites-cloud/authoring/features/components-console.md)。
+有关 AEM 实例中的所有可用组件的概述，请使用[组件控制台](/help/sites-cloud/authoring/components-console.md)。
 
 或者，您也可以使用 CRXDE Lite 获取存储库中所有可用组件的列表。
 

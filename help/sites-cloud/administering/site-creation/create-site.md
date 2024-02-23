@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 创建站点，并使用站点模板定义�
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 77%
+source-wordcount: '755'
+ht-degree: 80%
 
 ---
 
@@ -51,11 +51,11 @@ ht-degree: 77%
 
 可以使用模板轻松创建站点。
 
-1. 登录您的 AEM 创作环境并导航到 Sites 控制台
+1. 登录到您的 AEM 创作环境，并导航到 Sites 控制台
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 选择 **创建** 在屏幕的右上角，从下拉菜单中选择 **从模板创建站点**.
+1. 在屏幕的右上角选择&#x200B;**创建**，然后从下拉菜单中选择&#x200B;**从模板创建站点**。
 
    ![从模板创建站点](../assets/create-site-from-template.png)
 
@@ -75,13 +75,13 @@ ht-degree: 77%
 
    * 站点标题显示在浏览器标题栏中。
    * 站点名称会成为 URL 的一部分。
-   * 站点名称必须遵循 [AEM 的页面命名惯例。](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
+   * 站点名称必须遵循 [AEM 的页面命名惯例。](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)
 
 1. 选择 **创建** 并从站点模板创建站点。
 
    ![新站点的详细信息](../assets/create-site-details.png)
 
-1. 在显示的确认对话框中，选择 **完成**.
+1. 在显示的确认对话框中，选择&#x200B;**完成**。
 
    ![“成功”对话框](../assets/success.png)
 

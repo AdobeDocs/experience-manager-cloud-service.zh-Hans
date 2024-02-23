@@ -2,16 +2,16 @@
 title: 配置搜索表单
 description: 为Adobe Experience Manager as a Cloud Service配置搜索Forms 。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 16%
+source-wordcount: '2036'
+ht-degree: 9%
 
 ---
 
 # 配置搜索表单 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](/help/sites-cloud/authoring/getting-started/search.md) 机制。
+Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](/help/sites-cloud/authoring/search.md) 机制。
 
 此外，还有一组预定义选项，可帮助您筛选内容。 这些保留预定义的Facet，例如 **修改日期**， **发布状态**，或 **活动副本状态** 帮助您快速深入了解所需的资源。
 
@@ -19,9 +19,9 @@ Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](
 
 这些目标共同帮助您从以下位置快速轻松地找到内容：
 
-* [搜索和筛选](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* 该 [资产浏览器](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （编辑页面时）
+* [搜索和筛选](/help/sites-cloud/authoring/search.md#search-and-filter)
+* [边栏选择器](/help/sites-cloud/authoring/basic-handling.md#rail-selector)
+* 该 [资产浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) （编辑页面时）
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](
 
 * **工具**
    * **常规**
-      * **搜索表单**
+      * **搜索Forms**
 
 ## 默认Forms {#default-forms}
 
@@ -43,7 +43,7 @@ Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](
 
 可用的默认配置（按字母顺序列出）包括：
 
-* **资产管理员搜索边栏**
+* **资产管理搜索边栏**
 * **页面编辑器（文档搜索）**
 * **页面编辑器（体验片段搜索）**
 * **页面编辑器（图像搜索）**
@@ -51,13 +51,13 @@ Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](
 * **页面编辑器（页面搜索）**
 * **页面编辑器（段落搜索）**
 * **页面编辑器（产品搜索）**
-* **页面编辑器（Scene7 搜索）**
+* **页面编辑器(Scene7搜索)**
 * **页面编辑器（视频搜索）**
 * **项目管理员搜索边栏**
 * **项目翻译搜索边栏**
 * **站点管理员搜索边栏**
 * **代码片段管理员搜索边栏**
-* **Stock 管理员搜索边栏**
+* **Stock管理员搜索边栏**
 * **内容片段模型搜索边栏**
 * **项目管理员搜索边栏**
 * **项目翻译搜索边栏**
@@ -268,7 +268,7 @@ Adobe Experience Manager as a Cloud Service随附功能强大的功能 [Search](
     </ul> </td>
   </tr>
   <tr>
-   <td>选项 属性</td>
+   <td>Options属性</td>
    <td>搜索选项的一个或多个属性。</td>
    <td>
     <ul>

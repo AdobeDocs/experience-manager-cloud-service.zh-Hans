@@ -4,10 +4,10 @@ description: 了解如何配置翻译集成框架以与第三方翻译服务集�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 90%
+source-wordcount: '1465'
+ht-degree: 92%
 
 ---
 
@@ -69,8 +69,8 @@ ht-degree: 90%
 
 只有一个框架配置可控制如何翻译页面内容和资源。要创建翻译配置，请执行以下操作：
 
-1. 在 [全局导航菜单，](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) 选择 **“工具”>“Cloud Service和翻译Cloud Service”**.
-1. 导航到要在内容结构中创建配置的位置。 这一般为站点专属的位置，但也可为全局位置。
+1. 在 [全局导航菜单，](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 选择 **“工具”>“Cloud Service和翻译Cloud Service”**.
+1. 在您的内容结构中导航到要创建该配置的位置。这一般为站点专属的位置，但也可为全局位置。
 1. 在字段中提供以下信息，然后选择 **创建**.：
    1. 在下拉列表中选择&#x200B;**配置类型**。
    1. 为您的配置输入一个&#x200B;**标题**。**标题**&#x200B;在&#x200B;**Cloud Service**&#x200B;控制台中以及页面属性下拉列表中标识该配置。
@@ -131,7 +131,7 @@ ht-degree: 90%
 1. 在站点控制台中，选择要配置的页面，然后选择 **查看属性**.
 1. 选择&#x200B;**云服务**&#x200B;选项卡。
 1. 在 **添加配置** 从下拉列表中选择配置。
-1. 选择 **保存并关闭**.
+1. 选择&#x200B;**保存并关闭**。
 
 ### 将页面与翻译集成框架关联 {#associating-pages-with-a-translation-integration-framework}
 
@@ -140,4 +140,4 @@ ht-degree: 90%
 1. 在站点控制台中，选择要配置的页面，然后选择 **查看属性**.
 1. 选择&#x200B;**云服务**&#x200B;选项卡。
 1. 在 **添加配置** 从下拉列表中选择配置。
-1. 选择 **保存并关闭**.
+1. 选择&#x200B;**保存并关闭**。

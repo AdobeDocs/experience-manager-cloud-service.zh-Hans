@@ -4,7 +4,7 @@ description: 了解如何在Adobe Experience Manager as a Cloud Service中配置
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 2%
@@ -115,7 +115,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >当设置完新的Dynamic Media配置时，您将在Experience Manageras a Cloud Service的收件箱中收到状态通知。
    >
    >此收件箱通知会告知您配置是否成功。
-   > 请参阅 [新Dynamic Media配置疑难解答](#troubleshoot-dm-config) 和 [您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md) 以了解更多信息。
+   > 请参阅 [新Dynamic Media配置疑难解答](#troubleshoot-dm-config) 和 [您的收件箱](/help/sites-cloud/authoring/inbox.md) 以了解更多信息。
 
 1. 为了在发布Dynamic Media内容之前安全地预览该内容，Experience Manageras a Cloud Service会使用基于令牌的验证，默认情况下，Experience Manager作者会预览Dynamic Media内容。 但是，您可以 *允许列表* 更多IP，以便让用户能够安全地预览内容。 要在Experience Manageras a Cloud Service中设置此操作，请参阅 [为图像服务器配置Dynamic Media发布设置 — “安全”选项卡](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
@@ -139,7 +139,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ![Experience Manager收件箱失败](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-另请参阅 [您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md).
+另请参阅 [您的收件箱](/help/sites-cloud/authoring/inbox.md).
 
 **要对新的Dynamic Media配置进行故障排除，请执行以下操作：**
 

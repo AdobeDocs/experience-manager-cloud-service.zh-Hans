@@ -1,25 +1,26 @@
 ---
-title: 使用站点边栏管理站点主题
-description: 了解站点边栏的强大功能，帮助您轻松自定义和管理站点主题。
+title: 使用站点面板管理站点主题
+description: 了解站点面板的强大功能，帮助您轻松自定义和管理站点主题。
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 83%
+ht-degree: 38%
 
 ---
 
-# 使用站点边栏管理站点主题 {#site-rail}
 
-了解站点边栏的强大功能，帮助您轻松自定义和管理站点主题。
+# 使用站点面板管理站点主题 {#site-panel}
+
+了解站点面板的强大功能，帮助您轻松自定义和管理站点主题。
 
 ## 概述 {#overview}
 
-利用站点边栏，您可以管理站点的主题和模板资源。[与其他边栏类似](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)（例如，内容树边栏、引用边栏和时间线边栏），站点边栏以站点控制台中最左侧面板的形式呈现，其中显示有关所选项目的信息。与其他边栏不同，站点边栏仅适用于站点根。
+站点面板允许您管理站点的主题和模板资源。 [与其他面板类似](/help/sites-cloud/authoring/sites-console/console-side-panel.md) 例如“内容树”面板、“引用”面板或“时间轴”面板，“站点”面板将显示为站点控制台中最左侧的面板，显示有关所选项目的信息。 与其他面板不同，“站点”面板仅适用于站点根。
 
-可以使用站点边栏管理站点的主题和模板相关信息，包括：
+站点面板用于管理站点的主题和模板相关信息，包括：
 
 * [下载主题源](#downloading-theme-sources)
 * [下载模板资源，例如线框](#downloading-template-resources)
@@ -32,9 +33,9 @@ ht-degree: 83%
 
 ## 下载主题源 {#downloading-theme-sources}
 
-在 AEM 中基于[站点模板](site-templates.md)创建站点时，您可以使用站点边栏下载[站点主题](site-themes.md)。
+当您在AEM中基于 [站点模板，](site-templates.md) 您可以下载 [站点主题](site-themes.md) 使用站点面板。
 
-利用站点控制台中显示的站点边栏，选择站点的根以显示有关站点的主题信息。
+利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息。
 
 ![下载主题源](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
@@ -44,7 +45,7 @@ ht-degree: 83%
 
 [站点模板](site-templates.md)可以包含信息以及站点内容结构和[站点主题。](site-themes.md)例如，站点模板可以包含线框设计或其他与站点相关的文件。
 
-如果站点基于站点模板，利用站点控制台中显示的站点边栏，选择站点的根以显示有关站点的主题信息，包括其他站点资源。
+如果站点基于站点模板，利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息，包括其他站点资源。
 
 ![下载主题源](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
@@ -52,11 +53,11 @@ ht-degree: 83%
 
 ## 查看和更改主题版本 {#them-versions}
 
-如果您的站点基于站点模板，则其主题可能已由前端开发人员进行自定义。利用站点边栏，您可以查看当前部署的站点主题的版本并切换到以前的版本。
+如果您的站点基于站点模板，则其主题可能已由前端开发人员进行自定义。使用站点面板，您可以查看当前部署的站点主题的版本并切换到以前的版本。
 
-利用站点控制台中显示的站点边栏，选择站点的根以显示有关站点的主题信息。
+利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息。
 
-![边栏中的站点版本](/help/sites-cloud/administering/assets/theme-versions.png)
+![面板中的站点版本](/help/sites-cloud/administering/assets/theme-versions.png)
 
 主题的当前版本连同其提交哈希以及上次更新时间戳一起显示。
 
@@ -76,9 +77,9 @@ ht-degree: 83%
 
 如果您的站点不是使用站点模板创建的，则无法使用前端管道来自定义和部署其主题。
 
-但是，您可以使用站点边栏为站点启用前端管道。
+但是，您可以使用站点面板为站点启用前端管道。
 
-利用站点控制台中显示的站点边栏，选择站点的根以显示有关站点的主题信息，然后选择 **启用前端管道**.
+利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息，然后选择 **启用前端管道**.
 
 ![启用前端管道](/help/sites-cloud/administering/assets/enable-fep.png)
 

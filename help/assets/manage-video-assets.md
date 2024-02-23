@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 4b05e8f8ae554e7c0881134ef24ca8ce35e3e2bf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '4976'
 ht-degree: 6%
@@ -197,7 +197,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 ### 添加标记以进行发布 {#adding-tags-for-publishing}
 
-要将视频发布到YouTube，Experience Manager会将标记与一个或多个YouTube渠道关联。 要添加标记以进行发布，请参阅 [管理标记](/help/sites-cloud/authoring/features/tags.md).
+要将视频发布到YouTube，Experience Manager会将标记与一个或多个YouTube渠道关联。 要添加标记以进行发布，请参阅 [管理标记](/help/sites-cloud/authoring/sites-console/tags.md).
 
 或者，如果您打算在Experience Manager中使用默认标记，则可以跳过此任务并转到 [在Experience Manager中设置YouTube](#setting-up-youtube-in-aem).
 
@@ -390,11 +390,11 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!NOTE]
 >
-要从YouTube发布内容，Experience Manager使用 **[!UICONTROL 发布到YouTube]** 工作流，用于监视进度和查看任何故障信息。
+>要从YouTube发布内容，Experience Manager使用 **[!UICONTROL 发布到YouTube]** 工作流，用于监视进度和查看任何故障信息。
 >
-请参阅 [监控视频编码和YouTube发布进度](#monitoring-video-encoding-and-youtube-publishing-progress).
+>请参阅 [监控视频编码和YouTube发布进度](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
-有关更详细的进度信息，您可以在复制下监视YouTube日志。 但是，请注意，此类监视需要管理员访问权限。
+>有关更详细的进度信息，您可以在复制下监视YouTube日志。 但是，请注意，此类监视需要管理员访问权限。
 
 **要将视频发布到YouTube渠道，请执行以下操作：**
 
@@ -430,7 +430,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!NOTE]
 >
-在将视频资产发布到YouTube之前，无法复制YouTube URL。
+>在将视频资产发布到YouTube之前，无法复制YouTube URL。
 
 要将YouTube URL关联到您的Web应用程序，请执行以下操作：
 
@@ -448,13 +448,13 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!CAUTION]
 >
-如果直接从YouTube中删除视频，则Experience Manager不会察觉，并继续按照将视频发布到YouTube的方式运行。 始终通过Experience Manager从YouTube中取消发布视频资源。
+>如果直接从YouTube中删除视频，则Experience Manager不会察觉，并继续按照将视频发布到YouTube的方式运行。 始终通过Experience Manager从YouTube中取消发布视频资源。
 
 >[!NOTE]
 >
-要从YouTube中删除内容，Experience Manager使用 **[!UICONTROL 从YouTube取消发布]** 工作流，用于监视进度和查看任何故障信息。
+>要从YouTube中删除内容，Experience Manager使用 **[!UICONTROL 从YouTube取消发布]** 工作流，用于监视进度和查看任何故障信息。
 >
-请参阅 [监控视频编码和YouTube发布进度](#monitoring-video-encoding-and-youtube-publishing-progress).
+>请参阅 [监控视频编码和YouTube发布进度](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **要取消发布视频以从YouTube中删除它们，请执行以下操作：**
 
@@ -495,19 +495,19 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    >[!NOTE]
    >
-   由于上的多个工作流配置，最终记录失败/错误会花费较长时间。 **[!UICONTROL 重试]**， **[!UICONTROL 重试延迟]**、和 **[!UICONTROL timeout]** 从 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)例如：
+   >由于上的多个工作流配置，最终记录失败/错误会花费较长时间。 **[!UICONTROL 重试]**， **[!UICONTROL 重试延迟]**、和 **[!UICONTROL timeout]** 从 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)例如：
    >
-   * Apache Sling作业队列配置
-   * AdobeGranite工作流外部进程作业处理程序
-   * Granite工作流超时队列
+   >* Apache Sling作业队列配置
+   >* AdobeGranite工作流外部进程作业处理程序
+   >* Granite工作流超时队列
    >
-   您可以调整 **[!UICONTROL 重试]**， **[!UICONTROL 重试延迟]**、和 **[!UICONTROL timeout]** 属性。
+   >您可以调整 **[!UICONTROL 重试]**， **[!UICONTROL 重试延迟]**、和 **[!UICONTROL timeout]** 属性。
 
 1. 有关进行中的工作流，请参阅“工具”>“工作流” **[!UICONTROL >“实例”中提供的“工作流实例]** ” **[!UICONTROL (Workflow]** ) **[!UICONTROL >“]**&#x200B;实例”。
 
    >[!NOTE]
    >
-   您需要管理权限才能访问 **[!UICONTROL 工具]** 菜单。
+   >您需要管理权限才能访问 **[!UICONTROL 工具]** 菜单。
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -521,25 +521,25 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    >[!NOTE]
    >
-   您需要管理权限才能访问 **[!UICONTROL 工具]** 菜单。
+   >您需要管理权限才能访问 **[!UICONTROL 工具]** 菜单。
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   由于上的多个工作流配置，最终记录错误消息会花费较长时间 **[!UICONTROL 重试]**， **[!UICONTROL 重试延迟]**、和 **[!UICONTROL timeout]** 从 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)例如：
+   >由于上的多个工作流配置，最终记录错误消息会花费较长时间 **[!UICONTROL 重试]**， **[!UICONTROL 重试延迟]**、和 **[!UICONTROL timeout]** 从 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)例如：
    >
-   * Apache Sling作业队列配置
-   * AdobeGranite工作流外部进程作业处理程序
-   * Granite工作流超时队列
+   >* Apache Sling作业队列配置
+   >* AdobeGranite工作流外部进程作业处理程序
+   >* Granite工作流超时队列
    >
-   您可以调整 **[!UICONTROL 重试]**， **[!UICONTROL 重试延迟]**、和 **[!UICONTROL timeout]** 属性。
+   >您可以调整 **[!UICONTROL 重试]**， **[!UICONTROL 重试延迟]**、和 **[!UICONTROL timeout]** 属性。
 
 1. 有关已完成的工作流，请参阅&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 存档]**&#x200B;中的可用工作流存档。**[!UICONTROL 工作流存档]**&#x200B;列出了所有已完成的工作流活动。
 
    >[!NOTE]
    >
-   您需要管理权限才能访问 **[!UICONTROL 工具]** 菜单。
+   >您需要管理权限才能访问 **[!UICONTROL 工具]** 菜单。
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -609,7 +609,7 @@ For YouTube publishing jobs, do the following:
 
 >[!NOTE]
 >
-视频资产注释尚不支持MXF视频格式。
+>视频资产注释尚不支持MXF视频格式。
 
 1. 从 [!DNL Assets] 控制台，选择 **[!UICONTROL 编辑]** ，以显示资产详细信息页面。
 1. 要播放视频，请单击 **[!UICONTROL 预览]**.
@@ -649,5 +649,5 @@ For YouTube publishing jobs, do the following:
 
 >[!MORELIKETHIS]
 >
-* [Dynamic Media视频文档](/help/assets/dynamic-media/video.md).
-* [了解有关处理配置文件的使用、类型和配置的更多信息](/help/assets/asset-microservices-configure-and-use.md).
+>* [Dynamic Media视频文档](/help/assets/dynamic-media/video.md).
+>* [了解有关处理配置文件的使用、类型和配置的更多信息](/help/assets/asset-microservices-configure-and-use.md).

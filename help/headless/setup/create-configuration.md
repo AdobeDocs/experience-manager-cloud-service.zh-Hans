@@ -2,7 +2,7 @@
 title: 创建配置 - Headless 设置
 description: 以创建配置作为第一步，开始在 AEM as a Cloud Service 中使用 Headless。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 92%
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 在 AEM 的 Headless 内容管理的上下文中，请将配置视为 AEM 中的工作区，您可以在其中创建内容模型，这将定义未来内容和内容片段的结构。您可以使用多个配置来分隔这些模型。
 
-如果您熟悉[全栈 AEM 实施中的页面模板](/help/sites-cloud/authoring/features/templates.md)，使用配置进行内容模型的管理的过程非常相似。
+如果您熟悉[全栈 AEM 实施中的页面模板](/help/sites-cloud/authoring/sites-console/templates.md)，使用配置进行内容模型的管理的过程非常相似。
 
 ## 如何创建配置 {#how-to-create-a-configuration}
 

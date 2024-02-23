@@ -2,7 +2,7 @@
 title: 页面模板
 description: 创建用作新页面基础的页面时，将使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '3267'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 创建页面时，您需要选择模板。 页面模板用作新页面的基础。 模板定义生成页面的结构、任何初始内容以及可以使用的组件（设计属性）。 这有几个优点：
 
-* 利用页面模板，专业作者可以 [创建和编辑模板](/help/sites-cloud/authoring/features/templates.md).
+* 利用页面模板，专业作者可以 [创建和编辑模板](/help/sites-cloud/authoring/sites-console/templates.md).
    * 这种专业作者被称为 **模板作者**
    * 模板作者必须是 `template-authors` 组。
 * 页面模板会保留与从中创建的任何页面的动态连接。 这可确保对模板所做的任何更改都会反映在页面本身中。
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->本文档假设您已熟悉创建和编辑模板。 请参阅创作文档 [创建页面模板](/help/sites-cloud/authoring/features/templates.md)，详细介绍向模板作者公开的可编辑模板的功能。
+>本文档假设您已熟悉创建和编辑模板。 请参阅创作文档 [创建页面模板](/help/sites-cloud/authoring/sites-console/templates.md)，详细介绍向模板作者公开的可编辑模板的功能。
 
 >[!TIP]
 >
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 ## 创建新模板 {#creating-a-new-template}
 
-创建页面模板主要是通过 [模板控制台和模板编辑器](/help/sites-cloud/authoring/features/templates.md) 模板作者执行的操作。 本节概述了此过程，并在后面描述了技术级别所发生的情况。
+创建页面模板主要是通过 [模板控制台和模板编辑器](/help/sites-cloud/authoring/sites-console/templates.md) 模板作者执行的操作。 本节概述了此过程，并在后面描述了技术级别所发生的情况。
 
 创建可编辑模板时，您可以：
 
@@ -58,7 +58,7 @@ ht-degree: 4%
    * 如果要使页面作者能够添加和删除组件，请在模板中添加段落系统。
    * 可以解锁组件，然后再将其锁定，以便定义初始内容。
 
-   有关模板作者如何定义结构的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   有关模板作者如何定义结构的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    有关结构的技术详细信息，请参阅 [结构](#structure) 在本文档中。
 
@@ -70,7 +70,7 @@ ht-degree: 4%
 
    * 这些属性适用于模板（和使用模板创建的页面）。
 
-   有关模板作者如何定义策略的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
+   有关模板作者如何定义策略的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
 
    有关策略的技术详细信息，请参阅 [内容策略](#content-policies) 在本文档中。
 
@@ -79,7 +79,7 @@ ht-degree: 4%
    * 初始内容定义首次根据模板创建页面时将显示的内容。
    * 随后，页面作者可以编辑初始内容。
 
-   有关模板作者如何定义结构的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
+   有关模板作者如何定义结构的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-initial-content-author).
 
    有关初始内容的技术详细信息，请参阅 [初始内容](#initial-content) 在本文档中。
 
@@ -88,7 +88,7 @@ ht-degree: 4%
    * 您可以为各种设备定义模板布局。
    * 模板的响应式布局与页面创作时的响应式布局功能相同。
 
-   有关模板作者如何定义模板布局的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
+   有关模板作者如何定义模板布局的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author).
 
    有关模板布局的技术详细信息，请参阅 [布局](#layout) 在本文档中。
 
@@ -97,7 +97,7 @@ ht-degree: 4%
    * 可以启用或禁用模板，使其对页面作者可用或不可用。
    * 可以使模板可用于或不可用于某些页面分支。
 
-   有关模板作者如何启用模板的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
+   有关模板作者如何启用模板的详细信息，请参阅 [创建页面模板](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author).
 
    有关启用模板的技术详细信息，请参阅 [为我们启用和允许模板](#enabling-and-allowing-a-template-for-use)e在此文档中
 
@@ -106,7 +106,7 @@ ht-degree: 4%
    * 使用模板创建页面时，静态模板与可编辑模板之间没有可见的区别和指示。
    * 对于页面作者，该过程是透明的。
 
-   有关页面作者如何使用模板创建页面的详细信息，请参阅 [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#templates).
+   有关页面作者如何使用模板创建页面的详细信息，请参阅 [创建和组织页面](/help/sites-cloud/authoring/sites-console/organizing-pages.md#templates).
 
    有关使用可编辑模板创建页面的技术详细信息，请参阅 [生成内容页面](#resultant-content-pages) 在本文档中。
 
@@ -355,7 +355,7 @@ When creating an editable template, the value is copied from the template type t
 
 如果您已创建可作为其他模板基础的模板，则可以将此模板作为模板类型复制。
 
-1. 创建模板，就像创建任何页面模板一样 [如此处记录的](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author)，以作为模板类型的基础。
+1. 创建模板，就像创建任何页面模板一样 [如此处记录的](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)，以作为模板类型的基础。
 1. 使用CRXDE Lite，从以下位置复制创建的模板： `templates` 节点到 `template-types` 下的节点 [模板文件夹](#template-folders).
 1. 从删除模板 `templates` 下的节点 [模板文件夹](#template-folders).
 1. 在位于以下位置的模板副本中 `template-types` 节点，删除所有 `cq:template` 和 `cq:templateType` 属性来自所有 `jcr:content` 节点。
@@ -453,7 +453,7 @@ GITHUB上的代码
 
 ### 布局 {#layout}
 
-时间 [编辑模板您可以定义布局](/help/sites-cloud/authoring/features/templates.md)，此函数使用 [标准响应布局](/help/sites-cloud/authoring/features/responsive-layout.md).
+时间 [编辑模板您可以定义布局](/help/sites-cloud/authoring/sites-console/templates.md)，此函数使用 [标准响应布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -484,7 +484,7 @@ GITHUB上的代码
 
    在使用模板之前，必须通过以下任一方式启用模板：
 
-   * [启用模板](/help/sites-cloud/authoring/features/templates.md) 从 **模板** 控制台。
+   * [启用模板](/help/sites-cloud/authoring/sites-console/templates.md) 从 **模板** 控制台。
 
    * 在上设置状态属性 `jcr:content` 节点。
 
@@ -499,7 +499,7 @@ GITHUB上的代码
 
 1. **允许的模板**
 
-   * [在上定义允许的模板路径 **页面属性**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) 子分支的相应页面或根页面的ID。
+   * [在上定义允许的模板路径 **页面属性**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) 子分支的相应页面或根页面的ID。
    * 设置属性：
      `cq:allowedTemplates`
 在 `jcr:content` 所需分支的节点。

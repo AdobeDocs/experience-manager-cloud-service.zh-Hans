@@ -2,7 +2,7 @@
 title: 管理标记
 description: 了解如何在 AEM 中管理标记以整理内容。
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 73%
@@ -16,7 +16,7 @@ ht-degree: 73%
 在 Adobe Experience Manager (AEM) 中，标记可以是以下项的属性：
 
 * 页面的内容节点
-   * 有关更多信息，请参阅[使用标记](/help/sites-cloud/authoring/features/tags.md)文档。
+   * 有关更多信息，请参阅[使用标记](/help/sites-cloud/authoring/sites-console/tags.md)文档。
 * 资源的元数据节点
    * 有关更多信息，请参阅文档[管理数字资源的元数据](/help/assets/manage-metadata.md)文档。
 
@@ -183,7 +183,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![查看标记属性](assets/tag-properties.png)
 
-有关选择查看模式和边栏的更多详细信息，请参阅 [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+有关选择查看模式和边栏的更多详细信息，请参阅 [基本处理](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### 编辑标记 {#editing-tags}
 
@@ -245,7 +245,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 将鼠标悬停在列表中或选择引用内容以显示内容的完整路径。
 
-有关选择查看模式和边栏的更多详细信息，请参阅 [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
+有关选择查看模式和边栏的更多详细信息，请参阅 [基本处理](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
 ### 移动标记 {#moving-tags}
 

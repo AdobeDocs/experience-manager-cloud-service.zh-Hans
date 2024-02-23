@@ -2,8 +2,8 @@
 title: 发布翻译的 Headless 内容
 description: 了解如何发布翻译的内容并在该内容更新时更新翻译。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 100%
 
@@ -162,6 +162,6 @@ ht-degree: 100%
 ## 其他资源 {#additional-resources}
 
 * [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md) – 了解翻译项目的详细信息以及人工翻译工作流和多语言项目等附加功能。
-* [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md) – 更详细地了解 AEM 的创作和发布模型。 虽然本文档侧重于创作页面而非内容片段，但该理论仍然适用。
-* [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) – 了解发布内容时可用的附加功能。虽然本文档侧重于创作页面而非内容片段，但该理论仍然适用。
-* [创作环境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) – AEM 提供各种机制来组织和编辑您的内容，包括强大的路径浏览器。
+* [创作概念](/help/sites-cloud/authoring/author-publish.md) – 更详细地了解 AEM 的创作和发布模型。 虽然本文档侧重于创作页面而非内容片段，但该理论仍然适用。
+* [发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md) – 了解发布内容时可用的附加功能。虽然本文档侧重于创作页面而非内容片段，但该理论仍然适用。
+* [创作环境和工具](/help/sites-cloud/authoring/path-selection.md#path-selection) – AEM 提供各种机制来组织和编辑您的内容，包括强大的路径浏览器。

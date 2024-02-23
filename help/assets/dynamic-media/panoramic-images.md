@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 2%
+source-wordcount: '149'
+ht-degree: 1%
 
 ---
 
@@ -22,17 +22,16 @@ ht-degree: 2%
 
 ## 上传用于全景图像查看器的资产 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
-要使上传的资产符合作为要与全景图像查看器一起使用的球面全景图像的条件，该资产必须具有以下一项或两项：
+要使上传的资产符合要与全景图像查看器一起使用的球面全景图像的条件，该资产必须具有以下一项或两项之一：
 
 * 长宽比为2。
-
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* 已用关键字标记 `equirectangular`，或 `spherical`和 `panorama`，或 `spherical` 和 `panoramic`. 参见 [使用标记](/help/sites-cloud/authoring/features/tags.md).
+* 已用关键字标记 `equirectangular`，或 `spherical`和 `panorama`，或 `spherical` 和 `panoramic`. 请参阅 [使用标记](/help/sites-cloud/authoring/sites-console/tags.md).
 
-纵横比和关键字条件都适用于资产详细信息页面和 `Panoramic Media` WCM组件。
+纵横比和关键字条件都适用于资产详细信息页面和 `Panoramic Media` wcm组件。
 
-要上传用于全景图像查看器的资产，请参阅 [上传资产](/help/assets/manage-digital-assets.md#uploading-assets).
+要上传用于全景图像查看器的资产，请参阅 [上传资源](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -79,8 +78,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## 预览全景图像 {#previewing-panoramic-images}
 
-参见 [预览资源](/help/assets/dynamic-media/previewing-assets.md).
+请参阅 [预览资源](/help/assets/dynamic-media/previewing-assets.md).
 
 ## 发布全景图像 {#publishing-panoramic-images}
 
-参见 [发布资产](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+请参阅 [发布资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: e2d79742c2097748d736bc4d2d2046711d978fc5
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 5%
@@ -309,7 +309,7 @@ Dynamic Media您可以通过选择 **[!UICONTROL 编辑]** 图标，然后 **[!U
 全景媒体组件适用于那些是球面全景图像的资源。 此类图像可提供房间、财产、位置或景观的360°观看体验。 要使图像符合球面全景的条件，该图像必须具有以下一项或两项之一：
 
 * 长宽比为2:1。
-* 已用关键字标记 `equirectangular` 或(`spherical` + `panorama`)或(`spherical` + `panoramic`)。 请参阅 [使用标记](/help/sites-cloud/authoring/features/tags.md).
+* 已用关键字标记 `equirectangular` 或(`spherical` + `panorama`)或(`spherical` + `panoramic`)。 请参阅 [使用标记](/help/sites-cloud/authoring/sites-console/tags.md).
 
 纵横比和关键字条件都适用于资产详细信息页面和&#x200B;**[!UICONTROL 全景媒体]** WCM 组件的全景资产。
 

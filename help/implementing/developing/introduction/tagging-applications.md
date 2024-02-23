@@ -2,9 +2,9 @@
 title: 在 AEM 应用程序中生成标记
 description: 以编程方式处理自定义AEM应用程序中的标记或扩展标记
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '717'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 有关标记的相关信息：
 
-* 请参阅 [使用标记](/help/sites-cloud/authoring/features/tags.md) 有关将内容标记为内容作者的信息。
+* 请参阅 [使用标记](/help/sites-cloud/authoring/sites-console/tags.md) 有关将内容标记为内容作者的信息。
 * 有关创建和管理标记以及已对哪些内容应用标记的信息，请参阅管理标记。
 
 ## 标记API概述 {#overview-of-the-tagging-api}

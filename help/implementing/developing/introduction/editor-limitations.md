@@ -2,16 +2,16 @@
 title: 编辑器限制
 description: 触屏UI中的编辑器利用叠加与iframe中限定的内容进行交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 10%
+source-wordcount: '315'
+ht-degree: 6%
 
 ---
 
 # 编辑器限制 {#editor-limitations}
 
-触屏UI中的编辑器利用叠加与iframe中限定的内容进行交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。本页总结了这些限制，并在可能的情况下提供了解决方案或变通办法。
+触屏UI中的编辑器利用叠加与iframe中限定的内容进行交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。 本页总结了这些限制，并在可能的情况下提供了解决方案或变通办法。
 
 ## 功能限制 {#functional-limitations}
 
@@ -19,9 +19,9 @@ ht-degree: 10%
 
 ### 链接无效 {#links-not-active}
 
-时间 [编辑页面](/help/sites-cloud/authoring/fundamentals/editing-content.md)中，链接处于非活动状态。
+时间 [编辑页面](/help/sites-cloud/authoring/page-editor/edit-content.md)中，链接处于非活动状态。
 
-* [切换到 **预览** 模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) 以使用内容中的链接进行导航。
+* [切换到 **预览** 模式](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) 以使用内容中的链接进行导航。
 
 ### 结构页面 {#structure-pages}
 

@@ -1,8 +1,8 @@
 ---
 title: 创建经过检测可与 Universal Editor 结合使用的区块
 description: 了解如何在使用 Edge Delivery Services 项目进行 AEM 创作中创建经过检测可与 Universal Editor 结合使用的区块。
-source-git-commit: 40e404c743102f1de8b3d959597836f04f0c0fef
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 现在，已定义您的基本引用区块并将其提交到示例项目，您可以将引用区块添加到现有页面。
 
-1. 在浏览器中，登录到 AEM as a Cloud Service。[使用 Sites 控制台](/help/sites-cloud/authoring/getting-started/basic-handling.md)，导航到您在[使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/edge-dev-getting-started.md)中创建的站点，然后选择一个页面。
+1. 在浏览器中，登录到 AEM as a Cloud Service。[使用 Sites 控制台](/help/sites-cloud/authoring/basic-handling.md)，导航到您在[使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/edge-dev-getting-started.md)中创建的站点，然后选择一个页面。
 
    * 在此示例中，`index` 用于说明目的。
 

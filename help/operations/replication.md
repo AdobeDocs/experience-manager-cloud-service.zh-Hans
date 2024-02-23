@@ -2,7 +2,7 @@
 title: 复制
 description: 了解AEMas a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3249f17e6ecb341880597577e1f2a48653a7a88a
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 39%
@@ -31,11 +31,11 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 
 此功能允许您立即发布选定的页面，而无需通过“管理发布”方法选择其他选项。
 
-有关更多信息，请参阅[管理发布](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)。
+有关更多信息，请参阅[管理发布](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)。
 
 ### 开启和关闭时间 – 触发器配置 {#on-and-off-times-trigger-configuration}
 
-**开始时间**&#x200B;和&#x200B;**关闭时间**&#x200B;的附加可能性可从[页面属性的“基本”选项卡](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)获得。
+**开始时间**&#x200B;和&#x200B;**关闭时间**&#x200B;的附加可能性可从[页面属性的“基本”选项卡](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)获得。
 
 要实现此功能的自动复制，请启用 **自动复制** 在 [OSGi配置](/help/implementing/deploying/configuring-osgi.md) **开启关闭触发器配置**：
 
@@ -47,7 +47,7 @@ Adobe Experience Manager as a Cloud Service使用 [Sling内容分发](https://sl
 
 为“稍后发布”选项包含文件夹的子项会调用发布内容树工作流，如本文所述。
 
-您可以[在出版基础文档](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)中找到有关管理出版的更多详细信息。
+您可以[在出版基础文档](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)中找到有关管理出版的更多详细信息。
 
 ### 发布内容树工作流程 {#publish-content-tree-workflow}
 

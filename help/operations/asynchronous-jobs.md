@@ -2,9 +2,9 @@
 title: 异步作业
 description: Adobe Experience Manager通过以后台操作方式异步完成某些资源密集型任务来优化性能。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '854'
 ht-degree: 64%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 64%
 
 ## 监控异步操作的状态 {#monitor-the-status-of-asynchronous-operations}
 
-每当 AEM 异步处理操作时，您都会在[收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)中通过电子邮件收到通知（如果已启用）。
+每当 AEM 异步处理操作时，您都会在[收件箱](/help/sites-cloud/authoring/inbox.md)中通过电子邮件收到通知（如果已启用）。
 
 要查看异步操作状态的详细信息，请导航至 **[!UICONTROL 后台操作]** 页面。
 
@@ -136,6 +136,6 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 >[!MORELIKETHIS]
 >
->* [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+>* [管理页面](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [批量导入和导出资产元数据](/help/assets/metadata-import-export.md)。
 >* [使用“连接的资产”从远程部署中共享 DAM 资产](/help/assets/use-assets-across-connected-assets-instances.md)。

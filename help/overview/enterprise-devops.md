@@ -2,8 +2,8 @@
 title: 企业 DevOps
 description: 了解轻松部署和简化协作所需的流程、方法和通信。
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 通常包含多个环境，分
 
 ### 生产 - 创作和发布 {#production-author-and-publish}
 
-生产环境包括[创作和发布](/help/sites-cloud/authoring/getting-started/concepts.md)您的实施的环境。
+生产环境包括[创作和发布](/help/sites-cloud/authoring/author-publish.md)您的实施的环境。
 
 生产环境至少包含一个作者实例和一个发布实例：
 

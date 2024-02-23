@@ -3,10 +3,10 @@ title: 为 Edge Delivery Services 创作内容
 description: 了解内容创作如何与 Edge Delivery Services 配合使用，以及如何使用 Edge Delivery Services 创作 AEM 内容。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 7d28a3a8304d79ecc3143bdc9373134d312af49d
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 ![AEM 创作如何与 Edge Delivery Services 配合使用](assets/how-aem-edge-works.png)
 
-1. [AEM 创作环境](/help/sites-cloud/authoring/getting-started/quick-start.md)用于内容管理，例如创建新页面、体验片段、内容片段等。
+1. [AEM 创作环境](/help/sites-cloud/authoring/quick-start.md)用于内容管理，例如创建新页面、体验片段、内容片段等。
    * AEM 的所有功能均可用，例如工作流程、MSM、翻译、启动等。
 1. [通用编辑器](/help/implementing/universal-editor/authoring.md)用于创作 AEM 中管理的内容。
    * 通用编辑器为内容创作提供了全新且现代的用户界面。
@@ -54,7 +54,7 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 有关如何使用通用编辑器进行创作的详细信息，请参阅文档[使用通用编辑器创作内容。](/help/implementing/universal-editor/authoring.md)
 
-请参阅 [使用Edge Delivery Services进行AEM创作的开发人员快速入门指南](/help/edge/edge-dev-getting-started.md) 了解如何开始自己的项目，以便使用AEM和Edge Delivery Services进行创作。
+请参阅[使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/edge-dev-getting-started.md)以了解如何开始您自己要使用 AEM 和 Edge Delivery Services 创作的项目。
 
 ## 如何开始使用 {#how-to-get-started}
 

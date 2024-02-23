@@ -2,16 +2,16 @@
 title: 使用隐藏条件
 description: 隐藏条件可用于确定是否呈现组件资源。
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 2%
+source-wordcount: '584'
+ht-degree: 1%
 
 ---
 
 # 使用隐藏条件 {#using-hide-conditions}
 
-隐藏条件可用于确定是否呈现组件资源。 例如，当模板作者配置核心组件时 [列表组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在 [模板编辑器](/help/sites-cloud/authoring/features/templates.md) 并决定禁用基于子页面构建列表的选项。 在“设计”对话框中禁用此选项可设置属性，以便在呈现列表组件时，计算隐藏条件并且不显示显示子页面的选项。
+隐藏条件可用于确定是否呈现组件资源。 例如，当模板作者配置核心组件时 [列表组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在 [模板编辑器](/help/sites-cloud/authoring/sites-console/templates.md) 并决定禁用基于子页面构建列表的选项。 在“设计”对话框中禁用此选项可设置属性，以便在呈现列表组件时，计算隐藏条件并且不显示显示子页面的选项。
 
 ## 概述 {#overview}
 
@@ -51,7 +51,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 隐藏条件的示例可在整个AEM和 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 尤其是这样。 例如，请考虑 [列出核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) 在中实施 [wknd教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-[使用模板编辑器](/help/sites-cloud/authoring/features/templates.md)中，模板作者可以在“设计”对话框中定义列表组件中哪些选项可供页面作者使用。 可以启用或禁用此类选项，例如是否允许列表为静态列表、子页面的列表、已标记页面的列表等。
+[使用模板编辑器](/help/sites-cloud/authoring/sites-console/templates.md)中，模板作者可以在“设计”对话框中定义列表组件中哪些选项可供页面作者使用。 可以启用或禁用此类选项，例如是否允许列表为静态列表、子页面的列表、已标记页面的列表等。
 
 如果模板作者选择禁用子页面选项，则会设置设计属性并根据该属性评估隐藏条件，这会导致不为页面作者呈现该选项。
 

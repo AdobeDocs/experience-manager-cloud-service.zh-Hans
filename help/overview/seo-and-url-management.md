@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '3539'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -209,7 +209,7 @@ Resource myPage = req.getResource();
 
 >[!NOTE]
 >
->可通过[编辑“页面属性”时使用别名属性](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)来设置 `sling:alias` 属性。
+>可通过[编辑“页面属性”时使用别名属性](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)来设置 `sling:alias` 属性。
 
 #### /etc/map {#etc-map}
 
@@ -457,7 +457,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-此外，为XML Sitemap实施的功能也可用于不同的用例，例如，将规范链接或语言替代项添加到页头。 有关更多信息，请参阅 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 接口。
+此外，为 XML Sitemap 实施的功能也可用于不同的用例，例如将规范链接或语言替代项添加到页头。有关更多信息，请参阅 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 接口。
 
 ### 为旧版 URL 创建 301 重定向 {#creating-redirects-for-legacy-urls}
 

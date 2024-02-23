@@ -2,9 +2,9 @@
 title: 提升启动项
 description: 您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 98%
 
 ---
@@ -44,12 +44,12 @@ ht-degree: 98%
 
 1. 打开：
    * **Sites**&#x200B;控制台（导航源页面时）：
-      1. 打开[引用边栏](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)，然后使用[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)选择所需的源页面（或者先进行选择，然后再打开引用边栏，顺序不重要）。此时会显示所有引用。
+      1. 打开[引用边栏](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references)，然后使用[选择模式](/help/sites-cloud/authoring/basic-handling.md)选择所需的源页面（或者先进行选择，然后再打开引用边栏，顺序不重要）。此时会显示所有引用。
       1. 选择&#x200B;**启动项**（例如“启动项 (1)”），可显示特定启动项的列表。
       1. 选择特定的启动项以显示可用的操作。
       1. 选择&#x200B;**提升启动项**&#x200B;以打开向导。
    * **Sites** 控制台（导航启动页面时）：
-      1. 使用[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md)选择所需的启动页面。
+      1. 使用[选择模式](/help/sites-cloud/authoring/basic-handling.md)选择所需的启动页面。
       1. **提升**&#x200B;操作会在工具栏中可用。
    * **启动项**&#x200B;控制台：
       1. 选择您的启动项（选择缩略图）。

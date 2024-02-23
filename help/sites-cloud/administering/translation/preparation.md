@@ -4,7 +4,7 @@ description: 了解在开发多语言网站时如何准备翻译内容。
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 75%
@@ -92,7 +92,7 @@ AEM 提供了一个&#x200B;**引用**&#x200B;边栏来显示已创建的语言�
 
 ![语言根](../assets/language-roots.png)
 
-使用[边栏选择器](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)通过以下过程查看页面的语言副本。
+使用[边栏选择器](/help/sites-cloud/authoring/basic-handling.md#rail-selector)通过以下过程查看页面的语言副本。
 
 1. 在站点控制台上，选择站点的页面，然后选择 **引用**.
 

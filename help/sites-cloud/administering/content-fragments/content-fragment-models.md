@@ -4,10 +4,10 @@ description: 了解内容片段模型如何作为AEM中内容片段的基础，�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3125'
+ht-degree: 92%
 
 ---
 
@@ -118,9 +118,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
         >[!CAUTION]
         >
-        >在手动更新数据类型的&#x200B;**属性名称**&#x200B;属性时，名称必须&#x200B;*仅*&#x200B;包含 A-Z、a-z、0-9 和作为特殊字符的下划线“_”。
+        在手动更新数据类型的&#x200B;**属性名称**&#x200B;属性时，名称必须&#x200B;*仅*&#x200B;包含 A-Z、a-z、0-9 和作为特殊字符的下划线“_”。
         >
-        >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
+        如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
      例如：
 
@@ -149,9 +149,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
   >[!NOTE]
   >
-  >在模型中由&#x200B;**默认类型**&#x200B;属性定义该文本区域是富文本、纯文本还是 Markdown。
+  在模型中由&#x200B;**默认类型**&#x200B;属性定义该文本区域是富文本、纯文本还是 Markdown。
   >
-  >无法从[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)更改此格式，而只能从模型更改。
+  无法从[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)更改此格式，而只能从模型更改。
 
 * **数字**
    * 添加一个或多个数字字段
@@ -183,7 +183,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
      >[!NOTE]
      >
-     >此数据类型仅用于格式设置，因此 AEM GraphQL 架构会忽略此数据类型。
+     此数据类型仅用于格式设置，因此 AEM GraphQL 架构会忽略此数据类型。
 
 ## 属性 {#properties}
 
@@ -195,7 +195,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
   >[!CAUTION]
   >
-  >如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
+  如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
 * **呈现为**
 
@@ -226,11 +226,11 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
   >[!NOTE]
   >
-  >确保每个语言根的唯一性。
+  确保每个语言根的唯一性。
 
   >[!NOTE]
   >
-  >变体可以具有与同一片段变体相同的&#x200B;*唯一*&#x200B;值，但与其他片段变体中使用的值不同。
+  变体可以具有与同一片段变体相同的&#x200B;*唯一*&#x200B;值，但与其他片段变体中使用的值不同。
 
 * 有关特定数据类型及其属性的更多详细信息，请参阅&#x200B;**[内容参考](#content-reference)**。
 
@@ -279,18 +279,16 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    * 允许您包含/检索结构化数据。
      >[!NOTE]
      >
-     >当您使用[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)时，此方法尤其值得关注。
+     当您使用[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)时，此方法尤其值得关注。
    * 可为（所得片段中的）一个或多个引用配置它。
 
 >[!NOTE]
 >
->AEM 对于以下各项具有重复保护：
+AEM 对于以下各项具有重复保护：
 >
->* 内容引用
->  此项阻止用户添加对当前片段的引用，可能导致片段引用选取器对话框为空。
+* 内容引用这会阻止用户添加对当前片段的引用，并可能导致出现空的片段引用选取器对话框。
 >
->* GraphQL 中的片段引用
->  如果创建一个深层查询，该查询返回多个互相引用的内容片段，则该查询在第一次出现时返回 null。
+* GraphQL中的片段引用如果您创建的深层查询返回多个相互引用的内容片段，那么它在第一次出现时返回空值。
 
 ### 内容引用 {#content-reference}
 
@@ -301,16 +299,16 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 * **根路径**，它指定要将任何引用的内容存储在何处
   >[!NOTE]
   >
-  >如果您在使用内容片段编辑器时要在此字段中直接上传并引用图像，则必须指定此属性。
+  如果您在使用内容片段编辑器时要在此字段中直接上传并引用图像，则必须指定此属性。
   >
-  >有关进一步详细信息，请参阅[引用图像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
+  有关进一步详细信息，请参阅[引用图像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 可引用的内容类型
   >[!NOTE]
   >
-  >如果您在使用内容片段编辑器时要直接在此字段中上传并引用图像，则其中必须包括&#x200B;**图像**。
+  如果您在使用内容片段编辑器时要直接在此字段中上传并引用图像，则其中必须包括&#x200B;**图像**。
   >
-  >有关进一步详细信息，请参阅[引用图像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
+  有关进一步详细信息，请参阅[引用图像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 文件大小限制
 * 如果引用了图像：
@@ -344,7 +342,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->片段引用对于[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)尤其值得关注。
+片段引用对于[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)尤其值得关注。
 
 除了标准属性之外，您还可以定义：
 
@@ -370,9 +368,9 @@ type CompanyModel {
 
 >[!NOTE]
 >
->已建立重复保护机制。它禁止用户在片段引用中选择当前内容片段，可能导致片段引用选取器对话框为空。
+已建立重复保护机制。它禁止用户在片段引用中选择当前内容片段，可能导致片段引用选取器对话框为空。
 >
->GraphQL 中也有针对片段引用的重复保护。如果在两个互相引用的内容片段之间创建深层查询，则它返回 null。
+GraphQL 中也有针对片段引用的重复保护。如果在两个互相引用的内容片段之间创建深层查询，则它返回 null。
 
 ## 启用或禁用内容片段模型 {#enabling-disabling-a-content-fragment-model}
 
@@ -421,7 +419,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->该机制类似于[允许在页面的高级属性](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)中为页面及其子页面设置页面模板。
+该机制类似于[允许在页面的高级属性](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author)中为页面及其子页面设置页面模板。
 
 要为&#x200B;**允许的内容片段模型**&#x200B;配置&#x200B;**策略**：
 
@@ -455,7 +453,7 @@ type CompanyModel {
 
 >[!CAUTION]
 >
->删除内容片段模型可能会影响从属片段。
+删除内容片段模型可能会影响从属片段。
 
 要删除内容片段模型，请执行以下操作：
 
@@ -466,7 +464,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >如果引用该模型，则显示一条警告，以使您可执行适当的操作。
+   如果引用该模型，则显示一条警告，以使您可执行适当的操作。
 
 ## 发布内容片段模型 {#publishing-a-content-fragment-model}
 
@@ -481,7 +479,7 @@ type CompanyModel {
 
    >[!NOTE]
    >
-   >如果发布尚未发布其模型的内容片段，则将有一个选择列表指出这一点，并将与该片段一起发布模型。
+   如果发布尚未发布其模型的内容片段，则将有一个选择列表指出这一点，并将与该片段一起发布模型。
 
 ## 取消发布内容片段模型 {#unpublishing-a-content-fragment-model}
 
@@ -498,7 +496,7 @@ type CompanyModel {
 
 ![取消发布正在使用的模型时的内容片段模型错误消息](assets/cf-cfmodels-unpublish-error.png)
 
-该消息建议您检查[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)面板以进一步调查：
+该消息建议您检查[引用](/help/sites-cloud/authoring/basic-handling.md#references)面板以进一步调查：
 
 ![引用中的内容片段模型](assets/cf-cfmodels-references.png)
 
@@ -568,6 +566,6 @@ type CompanyModel {
 
      >[!NOTE]
      >
-     >顶部可能仍会显示警告，但此时模型已由现有内容片段使用。
+     顶部可能仍会显示警告，但此时模型已由现有内容片段使用。
 
    * **取消**&#x200B;将带您返回控制台。

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '1943'
-ht-degree: 3%
+source-wordcount: '1916'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Possible topics to cover in this article are below.
 
 [!DNL Experience Manager] 为以下标准提供不同级别的支持：
 
-* [Web 内容无障碍准则 (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
+* [Web内容无障碍准则(WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 * [修订《康复法》第508条](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [无障碍倡议 — 由W3C提供的无障碍富互联网应用程序(WAI-ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
@@ -80,7 +80,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 ### 中的键盘快捷键 [!DNL Assets] {#keyboard-shortcuts}
 
-中的以下操作 [!DNL Assets] 使用列出的键盘快捷键。 大多数适用于的键盘快捷键 [!DNL Experience Manager] 控制台还适用于 [!DNL Assets]. 请参阅 [控制台的键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). 了解如何 [启用或禁用键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+中的以下操作 [!DNL Assets] 使用列出的键盘快捷键。 大多数适用于的键盘快捷键 [!DNL Experience Manager] 控制台还适用于 [!DNL Assets]. 请参阅 [控制台的键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md). 了解如何 [启用或禁用键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 | 用户界面或方案 | 键盘快捷键 | 操作 |
 |---|---|---|
@@ -93,7 +93,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 | [!DNL Assets] 控制台 | `Alt + 3` | 显示 [!UICONTROL 时间线] 选定资源的。 |
 | [!DNL Assets] 控制台 | `Alt + 4` | 打开选定资产的Live Copy引用。 |
 | [!DNL Assets] 控制台 | `Alt + 5` | 调用选定文件夹中的搜索和搜索。 |
-| 已选择资源或文件夹 | 退格符 | 删除选定的资源或文件夹。 |
+| 已选择资源或文件夹 | 退格键 | 删除选定的资源或文件夹。 |
 | 已选择资源或文件夹 | `p` | 打开所选资源的属性页面。 |
 | 已选择资源或文件夹 | `e` | 编辑所选资源。 |
 | 已选择资源或文件夹 | `m` | 移动所选资源。 |
@@ -161,7 +161,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 * Some enhancements to metadata properties UI?
 -->
 
-## 管理数字资源 {#manage-assets}
+## 管理数字资产 {#manage-assets}
 
 许多资源管理任务（如CRUD操作、下载资源、添加元数据）都可不同程度的访问。 [!DNL Assets] 可让您使用各种辅助技术完成任务，尤其是屏幕阅读器和键盘。
 

@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 3%
+source-wordcount: '2342'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ![您将构建的内容](../assets/style-cif-component/what-you-will-build.png)
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 需要本地开发环境才能完成本教程。 此环境包括一个正在运行的AEM实例，该实例已配置并连接到Adobe Commerce实例。 查看的要求和步骤 [使用AEMas a Cloud ServiceSDK设置本地开发](../develop.md).
 
@@ -182,7 +182,7 @@ ht-degree: 3%
 
    **clientlib-cif**  — 一个空的客户端库，其中仅嵌入来自的必需依赖项 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components). 类别为 `venia.cif`.
 
-   **clientlib-grid**  — 包括用于启用AEM响应式网格功能的CSS。 使用AEM网格可启用 [布局模式](/help/sites-cloud/authoring/features/responsive-layout.md) AEM并赋予内容作者调整组件大小的功能。 类别为 `venia.grid` 并嵌入在 `venia.base` 库。
+   **clientlib-grid**  — 包括用于启用AEM响应式网格功能的CSS。 使用AEM网格可启用 [布局模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md) AEM并赋予内容作者调整组件大小的功能。 类别为 `venia.grid` 并嵌入在 `venia.base` 库。
 
 1. Inspect文件 `customheaderlibs.html` 和 `customfooterlibs.html` 下 `ui.apps/src/main/content/jcr_root/apps/venia/components/page`：
 
@@ -225,7 +225,7 @@ ht-degree: 3%
 
 1. 选择 **页面信息** 菜单并单击 **查看已发布的项目**：
 
-   ![以发布的形式查看](../assets/style-cif-component/view-as-published.png)
+   ![查看已发布的项目](../assets/style-cif-component/view-as-published.png)
 
    此页面打开时不会加载任何AEM创作JavaScript，就像在发布的站点中一样。 请注意，url具有查询参数 `?wcmmode=disabled` 已附加。 在开发CSS和JavaScript时，最好使用此参数来简化页面，而无需使用AEM创作中的任何内容。
 
@@ -473,13 +473,13 @@ AEM还会尝试缓存客户端库以提高性能。 有时，在代码部署后�
 
 ## 奖励质询 {#bonus-challenge}
 
-使用 [AEM样式系统](/help/sites-cloud/authoring/features/style-system.md) 创建两个可由内容作者切换的样式。 [用样式系统进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) 包括有关如何完成此任务的详细步骤和信息。
+使用 [AEM样式系统](/help/sites-cloud/authoring/page-editor/style-system.md) 创建两个可由内容作者切换的样式。 [用样式系统进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) 包括有关如何完成此任务的详细步骤和信息。
 
 ![附加挑战 — 样式系统](../assets/style-cif-component/bonus-challenge.png)
 
 ## 其他资源 {#additional-resources}
 
-* [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
+* [AEM项目原型](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)
 * [设置本地AEM开发环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [客户端库](/help/implementing/developing/introduction/clientlibs.md)

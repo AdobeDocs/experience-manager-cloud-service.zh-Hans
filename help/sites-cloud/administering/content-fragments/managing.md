@@ -4,10 +4,10 @@ description: 了解如何从控制台和编辑器管理AEM内容片段，创建�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2620'
+ht-degree: 87%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 >内容片段可：
 >
 >* 用于[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)，
->* 在创作页面时使用；请参阅[用内容片段创作页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md)。
+>* 在创作页面时使用；请参阅[用内容片段创作页面](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
 >[!NOTE]
 >
@@ -344,7 +344,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此外，当您[发布使用片段的页面](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)时；将在页面引用中列出该片段。
+>此外，当您[发布使用片段的页面](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)时；将在页面引用中列出该片段。
 
 ## 取消发布片段 {#unpublishing-a-fragment}
 

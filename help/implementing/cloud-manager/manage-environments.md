@@ -2,7 +2,7 @@
 title: 管理环境
 description: 了解您可以创建的环境类型以及如何为 Cloud Manager 项目创建环境。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2614'
 ht-degree: 88%
@@ -169,7 +169,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 在解锁对预览服务的访问后，预览服务名称前面的锁定图标不会再显示。
 
-激活后，您可以使用 AEM 中的管理发布 UI 将内容发布到预览服务。 有关更多详细信息，请参阅[预览内容。](/help/sites-cloud/authoring/fundamentals/previewing-content.md)
+激活后，您可以使用 AEM 中的管理发布 UI 将内容发布到预览服务。 有关更多详细信息，请参阅[预览内容。](/help/sites-cloud/authoring/sites-console/previewing-content.md)
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: AEM Headless 翻译快速入门
 description: 了解如何组织您的 Headless 内容以及 AEM 的翻译工具的工作原理。
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '1413'
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
+source-wordcount: '1409'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)文档，然后再继续。基本处理文档不是历程的一部分。因此，完成后返回此页面。
+>如果您不能熟练使用 AEM 等大型 CMS，请考虑先查看[基本操作](/help/sites-cloud/authoring/basic-handling.md)文档，然后再继续。基本处理文档不是历程的一部分。因此，完成后返回此页面。
 
 ### 工具 {#tools}
 
@@ -184,7 +184,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 
 我们建议您查看文档[配置翻译连接器](configure-connector.md)来继续 Headless 翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续 Headless 历程所必需的。
 
-* [AEM 基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) – 了解 AEM UI 的基础知识，以便能够舒适地导航和执行基本任务，例如查找内容。
+* [AEM 基本操作](/help/sites-cloud/authoring/basic-handling.md) – 了解 AEM UI 的基础知识，以便能够舒适地导航和执行基本任务，例如查找内容。
 * [标识要翻译的内容](/help/sites-cloud/administering/translation/rules.md) – 了解翻译规则如何标识需要翻译的内容。
 * [配置翻译集成框架](/help/sites-cloud/administering/translation/integration-framework.md) – 了解如何配置翻译集成框架以与第三方翻译服务集成。
 * [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md) – 了解如何在 AEM 中创建和管理机器翻译项目和人工翻译项目。

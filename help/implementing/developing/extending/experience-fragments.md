@@ -2,10 +2,10 @@
 title: 体验片段概述
 description: 扩展Adobe Experience Manager as a Cloud Service Experience Fragments。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 29d8d08899bb60b2bf3027ed32dbcdca3a73e671
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1642'
+ht-degree: 0%
 
 ---
 
@@ -13,15 +13,15 @@ ht-degree: 1%
 
 ## 基础知识 {#the-basics}
 
-An [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 是一个或多个组件的组，这些组件包括可在页面中引用的内容和布局。
+An [体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md) 是一个或多个组件的组，这些组件包括可在页面中引用的内容和布局。
 
 体验片段母版、变体或同时使用两者：
 
-* `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
+* `sling:resourceType` ： `/libs/cq/experience-fragments/components/xfpage`
 
 因为没有 `/libs/cq/experience-fragments/components/xfpage/xfpage.html`，它还原为
 
-* `sling:resourceSuperType` : `wcm/foundation/components/page`
+* `sling:resourceSuperType` ： `wcm/foundation/components/page`
 
 ## 纯 HTML 演绎版 {#the-plain-html-rendition}
 
@@ -89,7 +89,7 @@ Adobe建议使用叠加配置重写器。 请参阅 [AEMas a Cloud Service中的
       `experience-fragments`
 此模式允许用户在/content/experience-fragments中创建体验片段，作为 `cq:allowedTemplates` 此文件夹的属性包括名称以开头的所有模板 `experience-fragment`. 客户可以更新此属性以包含他们自己的命名方案或模板位置。
 
-1. [允许的模板](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) 可以在体验片段控制台中配置。
+1. [允许的模板](/help/sites-cloud/authoring/fragments/content-fragments.md#configure-allowed-templates-folder) 可以在体验片段控制台中配置。
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.

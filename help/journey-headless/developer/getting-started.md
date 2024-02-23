@@ -2,10 +2,10 @@
 title: AEM Headless as a Cloud Service 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 清楚了解您的内容更新工作流。系统必须支持的审批流程是什么？是否能利用 AEM 工作流来自动实施此过程？
 
-您的 [内容层次结构](#content-hierarchy) 用于使翻译更轻松。
+可以利用您的[内容层级](#content-hierarchy)来简化翻译。
 
 请参阅[其他资源](#additional-resources)部分，了解有关 AEM 工作流和翻译工具的其他文档，包括指向 AEM Headless 翻译历程的链接。
 
@@ -286,8 +286,8 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 使用这些动手实践教程探索如何使用通过 AEM 将内容投放到 Headless 端点的各种选项并选择适合您的选项。
 * [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。需要通过 AdobeID 进行的身份验证。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – 此 GitHub 项目包含突出显示 AEM 的 GraphQL API 的示例应用程序。
-* [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md) – 有关 AEM 的创作环境的技术文档，包括作者-发布设置的详细信息
-* [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) – 有关在 AEM 上发布内容的技术文档
+* [创作概念](/help/sites-cloud/authoring/author-publish.md) – 有关 AEM 的创作环境的技术文档，包括作者-发布设置的详细信息
+* [发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md) – 有关在 AEM 上发布内容的技术文档
 * [命名惯例](/help/implementing/developing/introduction/naming-conventions.md) – 有关 AEM 中的页面命名限制的技术文档
 * [多站点管理器和翻译](/help/sites-cloud/administering/msm-and-translation.md) – 有关 AEM 的强大翻译功能的技术文档
 * [AEM 工作流](/help/sites-cloud/authoring/workflows/overview.md) – 有关如何在 AEM 中自动实施工作流的技术文档

@@ -4,7 +4,7 @@ description: 了解如何创建和同步 Live Copy 以在站点中重用您的�
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -53,7 +53,7 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
 要创建 Blueprint 配置，请执行以下操作：
 
-1. [导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)到&#x200B;**工具**&#x200B;菜单，然后选择&#x200B;**站点**&#x200B;菜单。
+1. [导航](/help/sites-cloud/authoring/basic-handling.md#global-navigation)到&#x200B;**工具**&#x200B;菜单，然后选择&#x200B;**站点**&#x200B;菜单。
 1. 选择 **Blueprint** 以打开 **Blueprint 配置**&#x200B;控制台：
 
    ![Blueprint 配置](../assets/blueprint-configurations.png)
@@ -72,7 +72,7 @@ Blueprint 配置被视为不可变数据，因此在运行时不可编辑。因�
 
 您可以编辑或删除现有 Blueprint 配置：
 
-1. [导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)到&#x200B;**工具**&#x200B;菜单，然后选择&#x200B;**站点**&#x200B;菜单。
+1. [导航](/help/sites-cloud/authoring/basic-handling.md#global-navigation)到&#x200B;**工具**&#x200B;菜单，然后选择&#x200B;**站点**&#x200B;菜单。
 1. 选择 **Blueprint** 以打开 **Blueprint 配置**&#x200B;控制台：
 
    ![Blueprint 配置](../assets/blueprint-configurations.png)
@@ -211,7 +211,7 @@ Live Copy 页面的属性显示有关 Live Copy 的以下信息：
 
 ### 查看 Blueprint 页面的 Live Copy {#seeing-the-live-copies-of-a-blueprint-page}
 
-Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blueprint) 页面作为源的 Live Copy 页面的列表。使用此列表可跟踪 Live Copy。此列表显示在[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)的 **Blueprint** 选项卡上。
+Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blueprint) 页面作为源的 Live Copy 页面的列表。使用此列表可跟踪 Live Copy。此列表显示在[页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md)的 **Blueprint** 选项卡上。
 
 ![页面属性的 Blueprint 选项卡](../assets/live-copy-blueprint-tab.png)
 
@@ -249,7 +249,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 #### 从引用边栏转出 Blueprint {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. 在&#x200B;**Sites**&#x200B;控制台中，从 Live Copy 中选择此页面，然后从工具栏中打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板。
+1. 在&#x200B;**Sites**&#x200B;控制台中，从 Live Copy 中选择此页面，然后从工具栏中打开&#x200B;**[引用](/help/sites-cloud/authoring/basic-handling.md#references)**&#x200B;面板。
 1. 从列表中选择 **Blueprint** 选项以查看与此页面关联的 Blueprint。
 1. 从列表中选择所需的 Blueprint。
 1. 选择&#x200B;**转出**。
@@ -575,8 +575,8 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 要跟踪您所做的更改，您可以在&#x200B;**引用**&#x200B;中查看 Blueprint 页面，并将该页面与其源页面进行比较：
 
-1. 在 **Sites**&#x200B;控制台中，[导航到 Blueprint 或 Live Copy 页面并将其选定。](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
-1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板，并根据上下文选择：
+1. 在 **Sites**&#x200B;控制台中，[导航到 Blueprint 或 Live Copy 页面并将其选定。](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
+1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/basic-handling.md#references)**&#x200B;面板，并根据上下文选择：
 
    * **Blueprint**
    * **Live Copy**
@@ -592,7 +592,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 1. Live Copy 和 Blueprint 页面将并排打开。
 
-   有关使用比较功能的完整信息，请参阅[页面差异](/help/sites-cloud/authoring/features/page-diff.md)。
+   有关使用比较功能的完整信息，请参阅[页面差异](/help/sites-cloud/authoring/sites-console/page-diff.md)。
 
 ## 分离 Live Copy {#detaching-a-live-copy}
 

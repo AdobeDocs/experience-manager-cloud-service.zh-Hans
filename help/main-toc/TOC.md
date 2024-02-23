@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 34ba430ae9b40fc3bc675af20bbee2534c44a0c3
+source-git-commit: 3896dd657acdfc9feca1d3f624512dc23da084d4
 workflow-type: tm+mt
-source-wordcount: '4692'
+source-wordcount: '4713'
 ht-degree: 98%
 
 ---
@@ -264,42 +264,50 @@ ht-degree: 98%
 + Sites {#sites}
    + [对 AEM Cloud Service 中的 AEM Sites 的重要更改](/help/sites-cloud/sites-cloud-changes.md)
    + 创作 {#authoring}
-      + 入门 {#getting-started}
-         + [创作页面快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md)
-         + [创作概念](/help/sites-cloud/authoring/getting-started/concepts.md)
-         + [基本处理](/help/sites-cloud/authoring/getting-started/basic-handling.md)
-         + [搜索](/help/sites-cloud/authoring/getting-started/search.md)
-         + [配置帐户环境](/help/sites-cloud/authoring/getting-started/account-environment.md)
-         + [您的收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)
-         + [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [Headless 内容创作历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=zh-Hans)
-      + 创作基础知识 {#fundamentals}
-         + [环境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
-         + [添加页面注释](/help/sites-cloud/authoring/fundamentals/annotations.md)
-         + [创建新站点](/help/sites-cloud/authoring/fundamentals/create-site.md)
-         + [创建和组织页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-         + [编辑页面内容](/help/sites-cloud/authoring/fundamentals/editing-content.md)
-         + [富文本编辑器](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
-         + [页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-         + [预览内容](/help/sites-cloud/authoring/fundamentals/previewing-content.md)
-         + [发布页面](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
-         + [内容片段](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-         + [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
-         + [导出到 CSV](/help/sites-cloud/authoring/fundamentals/csv-export.md)
-         + [组件](/help/sites-cloud/authoring/fundamentals/components.md)
-         + [为移动设备创作](/help/sites-cloud/authoring/fundamentals/mobile.md)
-         + [创建无障碍内容（WCAG 2.1 合规性）](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
-         + [疑难解答](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
-         + [键盘快捷键](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-      + 创作功能 {#features}
-         + [页面模板](/help/sites-cloud/authoring/features/templates.md)
-         + [样式系统](/help/sites-cloud/authoring/features/style-system.md)
-         + [页面版本](/help/sites-cloud/authoring/features/page-versions.md)
-         + [页面差异](/help/sites-cloud/authoring/features/page-diff.md)
-         + [组件控制台](/help/sites-cloud/authoring/features/components-console.md)
-         + [响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)
-         + [使用标记](/help/sites-cloud/authoring/features/tags.md)
-         + [启用渐进式 Web 应用程序功能](/help/sites-cloud/authoring/features/enable-pwa.md)
+      + [页面创作快速入门指南](/help/sites-cloud/authoring/quick-start.md)
+      + [基本处理](/help/sites-cloud/authoring/basic-handling.md)
+      + [创作和发布](/help/sites-cloud/authoring/author-publish.md)
+      + [创作方法](/help/sites-cloud/authoring/authoring-methods.md)
+      + [搜索](/help/sites-cloud/authoring/search.md)
+      + [配置帐户环境](/help/sites-cloud/authoring/account-environment.md)
+      + [您的收件箱](/help/sites-cloud/authoring/inbox.md)
+      + [组件控制台](/help/sites-cloud/authoring/components-console.md)
+      + [路径选择](/help/sites-cloud/authoring/path-selection.md)
+      + [疑难解答](/help/sites-cloud/authoring/troubleshooting.md)
+      + 站点控制台 {#sites-console}
+         + [站点控制台](/help/sites-cloud/authoring/sites-console/introduction.md)
+         + [控制台侧面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+         + [创建新站点](/help/sites-cloud/authoring/sites-console/create-site.md)
+         + [组织页面](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+         + [创建页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+         + [管理页面](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+         + [页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [预览页面](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+         + [发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+         + [页面模板](/help/sites-cloud/authoring/sites-console/templates.md)
+         + [页面版本](/help/sites-cloud/authoring/sites-console/page-versions.md)
+         + [页面差异](/help/sites-cloud/authoring/sites-console/page-diff.md)
+         + [使用标记](/help/sites-cloud/authoring/sites-console/tags.md)
+         + [启用渐进式 Web 应用程序功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
+         + [键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
+         + [导出到 CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
+      + 页面编辑器 {#page-editor}
+         + [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)
+         + [编辑器侧面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
+         + [编辑页面](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [添加页面注释](/help/sites-cloud/authoring/page-editor/annotations.md)
+         + [富文本编辑器](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
+         + [响应式布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+         + [组件](/help/sites-cloud/authoring/page-editor/components.md)
+         + [为移动设备创作](/help/sites-cloud/authoring/page-editor/mobile.md)
+         + [创建无障碍内容（WCAG 2.1 合规性）](/help/sites-cloud/authoring/page-editor/accessible-content.md)
+         + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
+         + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
+         + [撤消重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + 片段 {#fragments}
+         + [内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
+         + [体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+         + [Headless 内容创作历程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=zh-Hans)
       + 项目 {#projects}
          + [使用项目](/help/sites-cloud/authoring/projects/overview.md)
          + [管理项目](/help/sites-cloud/authoring/projects/managing.md)
@@ -345,6 +353,7 @@ ht-degree: 98%
          + [启用前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [使用站点边栏](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md)
+         + [响应式布局](/help/sites-cloud/administering/responsive-layout.md)
          + [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md)
          + AEM 快速站点创建历程 {#quick-site}
             + [了解 AEM 快速站点创建](/help/journey-sites/quick-site/overview.md)
@@ -998,6 +1007,7 @@ ht-degree: 98%
          + [页面差异](/help/implementing/developing/introduction/page-diff.md)
          + [编辑器限制](/help/implementing/developing/introduction/editor-limitations.md)
          + [命名约定](/help/implementing/developing/introduction/naming-conventions.md)
+         + [响应式设计](/help/implementing/developing/introduction/responsive-design.md)
          + 组件和模板 {#components-templates}
             + [组件概述](/help/implementing/developing/components/overview.md)
             + [模板](/help/implementing/developing/components/templates.md)

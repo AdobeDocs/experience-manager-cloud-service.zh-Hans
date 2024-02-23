@@ -2,7 +2,7 @@
 title: 创建资源文件夹 – Headless 设置
 description: 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 83%
@@ -34,7 +34,7 @@ ht-degree: 83%
       * 如有必要可以调整。
 
    ![创建文件夹](../assets/assets-folder-create.png)
-1. 将鼠标悬停在其上并点击复选标记，选择您创建的文件夹。 然后从工具栏中选择&#x200B;**属性**（或者使用 `p` [键盘快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)）。
+1. 将鼠标悬停在其上并点击复选标记，选择您创建的文件夹。 然后从工具栏中选择&#x200B;**属性**（或者使用 `p` [键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)）。
 1. 在&#x200B;**属性**&#x200B;窗口中，选择 **Cloud Services** 选项卡。
 1. 对于&#x200B;**云配置**，选择[您之前创建的配置。](create-configuration.md)
    ![配置资源文件夹](../assets/assets-folder-configure.png)

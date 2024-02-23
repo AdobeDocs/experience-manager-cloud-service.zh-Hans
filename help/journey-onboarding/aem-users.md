@@ -4,9 +4,9 @@ description: 一旦系统管理员设置了必要的云资源，就可以了解 
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
-source-wordcount: '577'
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
+source-wordcount: '576'
 ht-degree: 100%
 
 ---
@@ -83,4 +83,4 @@ ht-degree: 100%
 
 如果您想了解入门历程以外的内容，以下是额外的可选资源。
 
-[页面创作快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md) – 从这里开始，快速了解 AEM 中的创作基础知识。[Headless 创作历程](/help/journey-headless/author/overview.md) – 如果您想创作 Headless 内容，请按照本指导性介绍。
+[页面创作快速入门指南](/help/sites-cloud/authoring/quick-start.md) – 从这里开始，快速了解 AEM 中的创作基础知识。[Headless 创作历程](/help/journey-headless/author/overview.md) – 如果您想创作 Headless 内容，请按照本指导性介绍。

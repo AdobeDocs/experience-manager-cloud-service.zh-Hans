@@ -4,7 +4,7 @@ description: 了解如何使用工作流控制台管理工作流实例
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 98%
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 工作流控制台提供了几种工具来管理工作流实例以确保它们按预期执行。
 
-提供了一系列控制台来管理您的工作流。使用[全局导航](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)以打开&#x200B;**工具**&#x200B;窗格，然后选择&#x200B;**工作流**：
+提供了一系列控制台来管理您的工作流。使用[全局导航](/help/sites-cloud/authoring/basic-handling.md#global-navigation)以打开&#x200B;**工具**&#x200B;窗格，然后选择&#x200B;**工作流**：
 
 * **模型**：管理工作流定义
 * **实例**：查看和管理正在运行的工作流实例

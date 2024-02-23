@@ -2,10 +2,10 @@
 title: 创建启动项
 description: 您可以创建启动项，以允许更新现有网页的新版本，以便将来激活。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 可创建启动项，以允许更新现有网页的新版本，以便将来激活。在创建启动项时，需要指定标题和源页面：
 
-* 标题会显示在[“引用”](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)边栏中，作者可以从中访问启动项，从而对其进行处理。
+* 标题会显示在[“引用”](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references)边栏中，作者可以从中访问启动项，从而对其进行处理。
 * 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
 * 默认情况下，[Live Copy](/help/sites-cloud/administering/msm/overview.md) 会在源页面发生更改时自动更新启动页面。您可以指定创建一个静态副本，以防止自动更改。
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 >
 >无法编辑这些页面。您会看到以下消息：
 >
->* **该页面不是启动项的一部分。请转到生产页面**
+>* **此页面不是启动项的一部分。 转到生产页面**
 
 ## 创建启动项 {#creating-a-launch}
 
@@ -48,7 +48,7 @@ ht-degree: 99%
 
    >[!NOTE]
    >
-   >在&#x200B;**Sites**&#x200B;控制台中，您还可以使用[选择模式](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)，在选择&#x200B;**“创建”**&#x200B;之前选择页面。
+   >在&#x200B;**Sites**&#x200B;控制台中，您还可以使用[选择模式](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)，在选择&#x200B;**“创建”**&#x200B;之前选择页面。
    >
    >这将使用选定的页面作为初始源页面。
 
@@ -114,7 +114,7 @@ ht-degree: 99%
 >
 >当使用不同的模板时，新页面为空。由于页面结构不同，因此不会复制内容。
 >
->此机制可用于更改[现有页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)的模板，但必须考虑到内容丢失情况。
+>此机制可用于更改[现有页面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)的模板，但必须考虑到内容丢失情况。
 
 ### 创建嵌套启动项 {#creating-a-nested-launch}
 

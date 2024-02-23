@@ -4,10 +4,10 @@ description: AEM中提供了各种键盘快捷键，包括用于管理内容片�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '223'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 有一批键盘快捷键在内容片段控制台中可用。
 
-在整个 AEM 环境中都可以使用各种键盘快捷键。某些适用于[编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)时，其他适用于[对控制台的一般使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
+在整个 AEM 环境中都可以使用各种键盘快捷键。某些适用于[编辑页面](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)时，其他适用于[对控制台的一般使用](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ ht-degree: 0%
 | 选择一个或多个内容片段 | `u` | 打开“立即取消发布”对话框 |
 | 任何打开的对话框 | `esc` | 对话框已被取消 |
 
-桌面用户也可以使用各种键盘快捷键。某些适用于[编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)时，其他适用于[对控制台的一般使用](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
+桌面用户也可以使用各种键盘快捷键。某些适用于[编辑页面](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)时，其他适用于[对控制台的一般使用](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
->无论是否[已取消激活控制台快捷键](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)，编辑器键盘快捷键始终处于活动状态。
+>无论是否[已取消激活控制台快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)，编辑器键盘快捷键始终处于活动状态。
 
 ## 特定于操作系统的修饰符键 {#os-specific-modifier-keys}
 

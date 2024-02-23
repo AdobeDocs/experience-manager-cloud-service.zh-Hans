@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 站点模板来预定义站点结构和初�
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 84%
+source-wordcount: '556'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->不应混淆 AEM 站点模板与[页面模板。](/help/sites-cloud/authoring/features/templates.md)站点模板定义了站点的整体结构。页面模板定义了单个页面的结构和初始内容。
+>不应混淆 AEM 站点模板与[页面模板。](/help/sites-cloud/authoring/sites-console/templates.md)站点模板定义了站点的整体结构。页面模板定义了单个页面的结构和初始内容。
 >
 >不应混淆 AEM 站点模板与 [AEM 站点主题。](site-themes.md)AEM 站点主题仅包含 AEM 站点的样式信息。AEM 站点模板定义站点结构和初始内容，并包含 AEM 站点主题，以便[快速创建站点。](create-site.md)
 
@@ -33,15 +33,15 @@ ht-degree: 84%
 
 您可以将多个模板添加到 AEM，然后将其用于[创建站点。](create-site.md)
 
-1. 登录您的 AEM 创作环境并导航到 Sites 控制台
+1. 登录到您的 AEM 创作环境，并导航到 Sites 控制台
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. 选择 **创建** 在屏幕的右上角，从下拉菜单中选择 **从模板创建站点**.
+1. 在屏幕的右上角选择&#x200B;**创建**，然后从下拉菜单中选择&#x200B;**从模板创建站点**。
 
    ![从模板创建站点](../assets/create-site-from-template.png)
 
-1. 在创建站点向导中，选择 **导入** 左列的顶部。
+1. 在“创建站点向导”中，在左栏的顶部选择&#x200B;**导入**。
 
    ![站点创建向导](../assets/site-creation-wizard.png)
 

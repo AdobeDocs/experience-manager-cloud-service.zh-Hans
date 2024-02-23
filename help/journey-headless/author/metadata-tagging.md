@@ -2,8 +2,8 @@
 title: 了解如何为内容片段定义元数据和标记
 description: 了解如何为内容片段定义元数据和标记
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: d6b98559e7cbe5fc5bd05d9cf37225e960e668e7
-workflow-type: ht
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
 
@@ -38,6 +38,6 @@ ht-degree: 100%
 
 * [元数据 – 片段属性](/help/sites-cloud/administering/content-fragments/authoring.md#view-properties-tags)
 
-* [使用标记](/help/sites-cloud/authoring/features/tags.md)
+* [使用标记](/help/sites-cloud/authoring/sites-console/tags.md)
 
 * [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)

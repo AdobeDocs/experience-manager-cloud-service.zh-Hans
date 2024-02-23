@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2526'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 98%
 
 1. 导航到&#x200B;**导航** > **站点**，然后选择您的项目。
 1. 找到项目的语言根。例如，如果语言根是英语，则为 `/content/<your-project>/en`。
-   * 在首次翻译之前，确保其他语言文件夹是空占位符。 它们通常由内容架构师创建。
+   * 在第一次翻译之前，其他语言文件夹是空占位符。它们通常由内容架构师创建。
 1. 找到项目的语言根。
 1. 选择边栏选择器并显示&#x200B;**引用**&#x200B;面板。
 1. 选择&#x200B;**语言副本**。
@@ -123,7 +123,7 @@ ht-degree: 98%
 
 * **摘要** – 此信息卡显示项目的基本标题信息，包括所有者、语言和翻译提供商。
 * **翻译作业** – 此信息卡或这些信息卡概述了实际翻译作业，包括状态、资源数量等。一般每个语言有一个作业，并在作业名称后附加 ISO-2 语言代码。
-   * 时间 [自动创建翻译作业，](#automatically-creating) AEM将异步创建作业，并且这些作业可能不会立即出现在项目中。
+   * 在[自动创建翻译作业](#automatically-creating)时，AEM 将异步创建作业，并且这些作业可能不会立即出现在项目中。
 * **团队** – 此信息卡显示正在协作处理此翻译项目的用户。该历程未涵盖此主题。
 * **任务** – 与翻译内容相关的附加任务，例如待办事项或工作流项目。该历程未涵盖此主题。
 
@@ -285,4 +285,4 @@ AEM 的翻译框架接收来自翻译连接器的翻译，然后使用连接器�
 我们建议您查看文档[发布已翻译内容](publish-content.md)来继续翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
 * [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md) – 了解翻译项目的详细信息以及人工翻译工作流和多语言项目等附加功能。
-* [创作环境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) – AEM 提供各种机制来组织和编辑您的内容，包括强大的路径浏览器。
+* [创作环境和工具](/help/sites-cloud/authoring/path-selection.md#path-selection) – AEM 提供各种机制来组织和编辑您的内容，包括强大的路径浏览器。

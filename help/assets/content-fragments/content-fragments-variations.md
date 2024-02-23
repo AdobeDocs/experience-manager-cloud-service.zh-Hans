@@ -2,7 +2,7 @@
 title: 变量 — 创作片段内容（资产 — 内容片段）
 description: 了解内容片段变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而提高灵活性。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 53%
@@ -64,7 +64,7 @@ ht-degree: 53%
 
 * 分配 **标记** 到当前变体；可以添加、更新和删除标记。
 
-   * [标记](/help/sites-cloud/authoring/features/tags.md) 在组织片段时功能强大，因为其可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
+   * [标记](/help/sites-cloud/authoring/sites-console/tags.md) 在组织片段时功能强大，因为其可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
 
       * 搜索标记将返回片段，并突出显示标记变量。
       * 变体标记还可用于对特定内容分发网络（CDN）配置文件（用于 CDN 缓存）的变体进行分组，而不是使用变体名称。
@@ -242,14 +242,14 @@ ht-degree: 53%
 
 >[!CAUTION]
 >
-英语是现成的。
+>英语是现成的。
 >
-其他语言可作为语言模型包从软件发行版获得：
+>其他语言可作为语言模型包从软件发行版获得：
 >
-* [法语 (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [德语 (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [意大利语 (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [西班牙语 (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [法语 (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [德语 (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [意大利语 (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [西班牙语 (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. 选择&#x200B;**主要变体**&#x200B;或所需的变体。
@@ -318,7 +318,7 @@ ht-degree: 53%
 
   >[!NOTE]
   >
-  如果对一段文本应用了多个注释，则会提供一个下拉选择器。
+  >如果对一段文本应用了多个注释，则会提供一个下拉选择器。
 
 * 删除应用了注释的整个文本时，也会删除注释。
 
@@ -332,17 +332,17 @@ ht-degree: 53%
 
 要简化创作内容片段的过程，您可以添加 [资产](/help/assets/manage-digital-assets.md) （图像）直接复制到片段。
 
-它们会被添加到片段的段落序列中，且不加任何格式；在[页面上使用/引用片段时](/help/sites-cloud/authoring/fundamentals/content-fragments.md)，可以编排格式。
+它们会被添加到片段的段落序列中，且不加任何格式；在[页面上使用/引用片段时](/help/sites-cloud/authoring/fragments/content-fragments.md)，可以编排格式。
 
 >[!CAUTION]
 >
-无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
+>无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
 >
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
+>但是，必须在[页面编辑器](/help/sites-cloud/authoring/fragments/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 >
-将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
+>将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
 
 1. 将光标定位到要添加图像的位置。
 1. 使用&#x200B;**插入资源**&#x200B;图标，打开搜索对话框。
@@ -357,10 +357,10 @@ ht-degree: 53%
 
    >[!CAUTION]
    >
-   添加资源后，如果将格式更改为：
+   >添加资源后，如果将格式更改为：
    >
-   * **纯文本**：资产从片段中丢失。
-   * **Markdown**：资源会不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍会存在。
+   >* **纯文本**：资产从片段中丢失。
+   >* **Markdown**：资源会不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍会存在。
 
 ### 将内容片段插入片段 {#inserting-content-fragment-into-your-fragment}
 
@@ -370,17 +370,17 @@ ht-degree: 53%
 
 >[!NOTE]
 >
-在以下情况下，此选项可用： **多行文本** 配置有 **允许片段引用**.
+>在以下情况下，此选项可用： **多行文本** 配置有 **允许片段引用**.
 
 >[!CAUTION]
 >
-无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
+>无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
 >
-但是，必须在[页面编辑器](/help/sites-cloud/authoring/fundamentals/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
+>但是，必须在[页面编辑器](/help/sites-cloud/authoring/fragments/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 >
-将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
+>将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
 
 1. 将光标放置到要添加片段的位置。
 1. 使用&#x200B;**插入内容片段**&#x200B;图标，打开搜索对话框。
@@ -395,10 +395,10 @@ ht-degree: 53%
 
    >[!CAUTION]
    >
-   添加对其他片段的引用后，如果将格式更改为：
+   >添加对其他片段的引用后，如果将格式更改为：
    >
-   * **纯文本**：引用从片段中丢失。
-   * **Markdown**：引用将保留。
+   >* **纯文本**：引用从片段中丢失。
+   >* **Markdown**：引用将保留。
 
 ## 继承 {#inheritance}
 
@@ -440,11 +440,11 @@ ht-degree: 53%
 
    >[!NOTE]
    >
-   创建变体时，它始终 **母版** 而不是打开的变体。
+   >创建变体时，它始终 **母版** 而不是打开的变体。
 
    >[!NOTE]
    >
-   当您创建变体时，所有 **标记** 当前分配给 **母版** 变体将会复制到您的新变体中。
+   >当您创建变体时，所有 **标记** 当前分配给 **母版** 变体将会复制到您的新变体中。
 
 ### 编辑变体 {#editing-a-variation}
 
@@ -467,7 +467,7 @@ ht-degree: 53%
 
 >[!NOTE]
 >
-这仅影响变体&#x200B;**标题**。
+>这仅影响变体&#x200B;**标题**。
 
 ### 删除变体 {#deleting-a-variation}
 
@@ -479,7 +479,7 @@ ht-degree: 53%
 
 >[!NOTE]
 >
-无法删除&#x200B;**母版**。
+>无法删除&#x200B;**母版**。
 
 ### 与母版同步 {#synchronizing-with-master}
 
@@ -489,13 +489,13 @@ ht-degree: 53%
 
 >[!CAUTION]
 >
-同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
+>同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
 >
-仅会同步变体的当前元素。
+>仅会同步变体的当前元素。
 >
-同步仅适用于 **多行文本** 数据类型。
+>同步仅适用于 **多行文本** 数据类型。
 >
-不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
+>不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
 
 1. 在片段编辑器中打开内容片段。确保&#x200B;**母版**&#x200B;已编辑。
 

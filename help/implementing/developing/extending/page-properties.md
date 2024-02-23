@@ -2,16 +2,16 @@
 title: 自定义页面属性的视图
 description: 了解作者如何查看和编辑页面属性。
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '352'
 ht-degree: 92%
 
 ---
 
 # 自定义页面属性的视图{#customizing-views-of-page-properties}
 
-每个页面都有一组用户可以查看和编辑的[属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。有些是在创建页面时需要的（创建视图），其他的可以在稍后阶段查看和编辑（编辑视图）。这些页面属性由相应页面组件的对话框 (`cq:dialog`) 定义并提供。
+每个页面都有一组用户可以查看和编辑的[属性](/help/sites-cloud/authoring/sites-console/page-properties.md)。有些是在创建页面时需要的（创建视图），其他的可以在稍后阶段查看和编辑（编辑视图）。这些页面属性由相应页面组件的对话框 (`cq:dialog`) 定义并提供。
 
 每个页面属性的默认状态是：
 
@@ -39,7 +39,7 @@ ht-degree: 92%
 
 您还可以通过配置页面组件的对话框并应用相应的节点属性来配置可用字段。
 
-例如，默认情况下&#x200B;[**创建页面**&#x200B;向导](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)会显示在&#x200B;**更多标题和描述**&#x200B;中分组的字段。若要对其进行隐藏，您可以配置：
+例如，默认情况下&#x200B;[**创建页面**&#x200B;向导](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)会显示在&#x200B;**更多标题和描述**&#x200B;中分组的字段。若要对其进行隐藏，您可以配置：
 
 1. 在 `/apps` 下创建您的页面组件。
 1. 为页面组件的 `basic` 部分创建一个覆盖（使用[ Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)提供的&#x200B;*对话框差异*）；例如：

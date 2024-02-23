@@ -4,7 +4,7 @@ description: 了解如何将 AEM 连接到现成的 Microsoft Translator 以自�
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 81%
@@ -34,7 +34,7 @@ ht-degree: 81%
 
 以下过程将创建 Microsoft Translator 配置。
 
-1. 在 [导航面板、](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) 选择 **工具** > **Cloud Service** > **翻译Cloud Service**.
+1. 在 [导航面板、](/help/sites-cloud/authoring/basic-handling.md#first-steps) 选择 **工具** > **Cloud Service** > **翻译Cloud Service**.
 1. 导航到要创建配置的位置。 通常它在您的站点根中，也可以是全局默认配置。
 1. 选择&#x200B;**创建**&#x200B;按钮。
 1. 定义您的配置。
@@ -56,7 +56,7 @@ ht-degree: 81%
 
 Microsoft Translation 配置页面提供了指向 Microsoft 网站的便利链接，可用于获取足够用于生产系统的帐户订阅。
 
-1. 在 [导航面板、](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) 选择 **工具** > **Cloud Service** > **翻译Cloud Service**.
+1. 在 [导航面板、](/help/sites-cloud/authoring/basic-handling.md#first-steps) 选择 **工具** > **Cloud Service** > **翻译Cloud Service**.
 1. 选择您现有的Microsoft Translator配置。
 1. 选择&#x200B;**编辑**。
 1. 在 **编辑配置** 窗口，选择 **升级订阅**. 这将打开一个 Microsoft 网页，其中包含有关该服务的更多详细信息。
@@ -65,13 +65,13 @@ Microsoft Translation 配置页面提供了指向 Microsoft 网站的便利链�
 
 Microsoft Translation 配置页面提供了指向 Microsoft 网站的便利链接，可用于自定义 Microsoft Translator 引擎。
 
-1. 在 [导航面板、](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) 选择 **工具** > **Cloud Service** > **翻译Cloud Service**.
+1. 在 [导航面板、](/help/sites-cloud/authoring/basic-handling.md#first-steps) 选择 **工具** > **Cloud Service** > **翻译Cloud Service**.
 1. 选择您现有的Microsoft Translator配置。
 1. 选择&#x200B;**编辑**。
 1. 在 **编辑配置** 窗口，选择 **自定义Translator**. 使用打开的 Microsoft 网页来自定义您的服务。
 
 ## 激活 Translator 服务配置 {#activating-the-translator-service-configurations}
 
-您需要激活云服务配置以支持复制到发布实例的已翻译内容。使用[发布树](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree)的方法激活存储了 Microsoft Translator 配置的存储库节点。这些节点位于以下父节点的下方：
+您需要激活云服务配置以支持复制到发布实例的已翻译内容。使用[发布树](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-and-unpublishing-a-tree)的方法激活存储了 Microsoft Translator 配置的存储库节点。这些节点位于以下父节点的下方：
 
 * `/libs/settings/cloudconfigs/translation/msft-translation`

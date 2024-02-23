@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
 source-wordcount: '5863'
 ht-degree: 2%
@@ -102,7 +102,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >* 要通过触发快速视图向视频添加交互性。
 >* 您实施的Experience Manager会 *非* 使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM®WebSphere®Commerce、Elastic Path、SAP Hybris或Intershop)提取到Experience Manager中。 <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
-如果您的Experience Manager实施使用的是电子商务，则可以跳过此任务并继续执行下一个任务。
+>如果您的Experience Manager实施使用的是电子商务，则可以跳过此任务并继续执行下一个任务。
 
 首先，标识现有Quickview实施使用的动态变量，以便您可以在交互式视频创建过程中将产品缩略图映射到其相应的产品Quickview。
 
@@ -243,7 +243,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
-在Dynamic Media中，尚不支持将MXF视频格式与交互式视频一起使用。
+>在Dynamic Media中，尚不支持将MXF视频格式与交互式视频一起使用。
 
 如果您上传了错误的视频或图像，或者希望删除不再需要的已上传视频或图像，请参阅 [删除资源](/help/assets/manage-digital-assets.md#delete-assets).
 
@@ -262,15 +262,15 @@ There was a link here that showed the video frame of an interactive video and wh
 
 添加时间轴区段后，可在每个区段中添加缩略图图像。 对于您添加的每个缩略图，您都会对其应用操作。 例如，您可以将概览应用于缩略图，也可以为其分配超链接或体验片段。
 
-请参阅 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
+请参阅 [体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
 >[!NOTE]
 >
-将查看器嵌入体验片段时，不支持交互式视频中的社交媒体共享工具。 相反，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
+>将查看器嵌入体验片段时，不支持交互式视频中的社交媒体共享工具。 相反，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
 
 >[!NOTE]
 >
-如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+>如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
 
 在当前创建/编辑会话期间，支持页面右上角附近的“撤消”和“重做”选项。
 
@@ -432,7 +432,7 @@ There was a link here that showed the video frame of an interactive video and wh
       <td>将选定的缩略图图像与体验片段关联</td> 
       <td><p>在操作类型下，选择 <strong>体验片段</strong>，然后执行以下操作：<p> 
        <ul> 
-       <li>如果您是Experience Manager Sites客户，请选择“搜索”图标（放大镜）以打开“体验片段”页面。 选择要使用的体验片段，然后选择 <strong>要返回到上一页的“动作”面板，请选择 </strong>在页面的右上角。<br /> 请参阅 <a href="/help/sites-cloud/authoring/fundamentals/experience-fragments.md">体验片段</a>.</li> 
+       <li>如果您是Experience Manager Sites客户，请选择“搜索”图标（放大镜）以打开“体验片段”页面。 选择要使用的体验片段，然后选择 <strong>要返回到上一页的“动作”面板，请选择 </strong>在页面的右上角。<br /> 请参阅 <a href="/help/sites-cloud/authoring/fragments/content-fragments.md">体验片段</a>.</li> 
       </ul> 
        <ul> 
        <li>指定视频中显示的体验片段的宽度和高度。</li>
@@ -493,7 +493,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
    >[!NOTE]
    >
-   在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 此 `.vtt` 文件将保存到 `_VTT` 根目录下的文件夹 **[!UICONTROL 资产]**. 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
+   >在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 此 `.vtt` 文件将保存到 `_VTT` 根目录下的文件夹 **[!UICONTROL 资产]**. 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
 
 1. 发布交互式视频。 发布会创建您最终复制并粘贴到网站体验中的嵌入代码或URL。
 
@@ -503,7 +503,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
    >[!NOTE]
    >
-   要发布带有快速查看功能的可购物视频，请务必单独从商务区域发布视频的每个相关图像资产。
+   >要发布带有快速查看功能的可购物视频，请务必单独从商务区域发布视频的每个相关图像资产。
 
    添加时间轴区段并发布交互式视频后，即可将其添加到现有网站登陆页面。 请参阅 [将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website).
 
@@ -529,9 +529,9 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
-此时，如果您只添加与超链接网页的交互，则操作已完成。
+>此时，如果您只添加与超链接网页的交互，则操作已完成。
 >
-但是，如果添加了任何交互性来触发快速视图，则交互式视频旁边的缩略图仅用于显示目的；它们尚未与现有的快速视图集成。 在这种情况下，您必须将交互式视频与网站上现有的快速视图相集成。
+>但是，如果添加了任何交互性来触发快速视图，则交互式视频旁边的缩略图仅用于显示目的；它们尚未与现有的快速视图集成。 在这种情况下，您必须将交互式视频与网站上现有的快速视图相集成。
 
 **示例**
 
@@ -574,7 +574,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
-此任务仅适用于独立Experience Manager Assets客户。
+>此任务仅适用于独立Experience Manager Assets客户。
 
 此过程的最后一步是将交互式视频与网站上使用的现有Quickview实施集成。 集成没有适用于所有情况的解决方案。 每个概览实施都是独特的。 因此，需要一种包含前端IT人员帮助的具体方法。
 

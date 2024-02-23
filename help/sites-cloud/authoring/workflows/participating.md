@@ -2,7 +2,7 @@
 title: 参与工作流
 description: 工作流通常包括需要人员对页面或资源执行活动的步骤。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 78%
@@ -24,11 +24,11 @@ ht-degree: 78%
 
 为您分配了工作项（例如，**批准内容**）后，将显示各种警报和/或通知：
 
-* 您的[通知](/help/sites-cloud/authoring/getting-started/inbox.md)指示符（工具栏）上的数字会递增：
+* 您的[通知](/help/sites-cloud/authoring/inbox.md)指示符（工具栏）上的数字会递增：
 
   ![通知工具栏](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* 该工作项会在您的通知[收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)中列出：
+* 该工作项会在您的通知[收件箱](/help/sites-cloud/authoring/inbox.md)中列出：
 
   ![收件箱中的通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
@@ -72,7 +72,7 @@ ht-degree: 78%
 
 请按照以下过程完成工作项：
 
-1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
+1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（选择缩略图）。
 1. 从工具栏中选择&#x200B;**完成**。
 1. 此 **完成工作项** 对话框打开。 选择 **下一步** 从下拉选择器中添加 **注释** 如有必要。
@@ -82,7 +82,7 @@ ht-degree: 78%
 
 请按照以下过程完成工作项：
 
-1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
+1. 打开[要编辑的页面](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)。
 1. 从顶部的状态栏中选择&#x200B;**完成**。
 1. 此 **完成工作项** 对话框打开。 选择 **下一步** 从下拉选择器中添加 **注释** 如有必要。
 1. 单击&#x200B;**确定**&#x200B;以完成该步骤（或者单击&#x200B;**取消**&#x200B;以中止该操作）。
@@ -131,7 +131,7 @@ ht-degree: 78%
 
 请按照以下过程委派工作项：
 
-1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
+1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（选择缩略图）。
 1. 从工具栏中选择&#x200B;**委派**。
 1. 此时将打开对话框。 指定 **用户** 从下拉选择器（也可以是组）中添加 **注释** 如有必要。
@@ -141,7 +141,7 @@ ht-degree: 78%
 
 请按照以下过程委派工作项：
 
-1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
+1. 打开[要编辑的页面](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)。
 1. 从顶部的状态栏中选择&#x200B;**委派**。
 1. 此时将打开对话框。 指定 **用户** 从下拉选择器（也可以是组）中添加 **注释** 如有必要。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
@@ -181,7 +181,7 @@ ht-degree: 78%
 
 请按照以下过程执行回退：
 
-1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
+1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（选择缩略图）。
 1. 选择&#x200B;**回退**，打开对话框。
 1. 指定 **上一步** 并添加 **注释** 如有必要。
@@ -191,7 +191,7 @@ ht-degree: 78%
 
 请按照以下过程执行回退：
 
-1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
+1. 打开[要编辑的页面](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)。
 1. 从顶部的状态栏中选择&#x200B;**回退**。
 1. 指定 **上一步** 并添加 **注释** 如有必要。
 1. 单击&#x200B;**确定**&#x200B;完成该步骤（或者单击&#x200B;**取消**&#x200B;中止该操作）。
@@ -242,7 +242,7 @@ ht-degree: 78%
 
 要打开工作流项目并查看其详细信息，请执行以下操作：
 
-1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
+1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（选择缩略图）。
 1. 选择&#x200B;**打开**，打开信息选项卡。
 1. 如有必要，请选择相应的操作，提供任何详细信息并通过进行确认 **确定** (或 **取消**)。
@@ -252,7 +252,7 @@ ht-degree: 78%
 
 要打开工作流项目并查看其详细信息，请执行以下操作：
 
-1. 打开[要编辑的页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)。
+1. 打开[要编辑的页面](/help/sites-cloud/authoring/sites-console/managing-pages.md#opening-a-page-for-editing)。
 1. 从状态栏中选择&#x200B;**查看详细信息**&#x200B;以打开信息选项卡。
 1. 如有必要，请选择相应的操作，提供任何详细信息并通过进行确认 **确定** (或 **取消**)。
 1. 单击&#x200B;**保存**&#x200B;或&#x200B;**取消**&#x200B;以退出。
@@ -263,7 +263,7 @@ ht-degree: 78%
 
 要查看工作流实例的有效负荷和资源，请执行以下操作：
 
-1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/getting-started/inbox.md)**。
+1. 打开 **[AEM 收件箱](/help/sites-cloud/authoring/inbox.md)**。
 1. 选择要对其执行操作的工作流项目（选择缩略图）。
 1. 从工具栏中选择&#x200B;**查看有效负载**&#x200B;以打开对话框。
    * 由于工作流包只是存储库中路径的指针集合，因此您可以在此处添加/删除/修改条目以调整工作流包所引用的内容。使用&#x200B;**资源定义**&#x200B;组件可添加新条目。

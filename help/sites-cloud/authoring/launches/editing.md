@@ -2,7 +2,7 @@
 title: 编辑启动项
 description: 为您的页面（或页面集）创建启动项后，您可以在页面的启动项副本中编辑内容。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 87%
@@ -48,15 +48,15 @@ Live Copy 用于将&#x200B;**&#x200B;源分支&#x200B;**&#x200B;中的内容同�
 
 要跟踪您所做的更改，您可以在&#x200B;**引用**&#x200B;中查看启动项，并将启动页面与其源页面进行比较：
 
-1. 在&#x200B;**Sites**&#x200B;控制台中，[导航到启动项的源页面并选择其中一个源页面](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
-1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;面板，然后选择&#x200B;**启动项**。
+1. 在&#x200B;**Sites**&#x200B;控制台中，[导航到启动项的源页面并选择其中一个源页面](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)。
+1. 打开&#x200B;**[引用](/help/sites-cloud/authoring/basic-handling.md#references)**&#x200B;面板，然后选择&#x200B;**启动项**。
 1. 选择您的特定启动项，然后选择&#x200B;**和源比较**：
 
    ![比较启动项和源](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. 此时会并列打开两个页面（启动页面和源页面）。
 
-   有关使用此功能的完整信息，请参阅[页面差异](/help/sites-cloud/authoring/features/page-diff.md)。
+   有关使用此功能的完整信息，请参阅[页面差异](/help/sites-cloud/authoring/sites-console/page-diff.md)。
 
 ## 更改使用的源页面 {#changing-the-source-pages-used}
 

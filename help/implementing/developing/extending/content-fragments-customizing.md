@@ -2,10 +2,10 @@
 title: 自定义和扩展内容片段
 description: 内容片段扩展了标准资产。 了解如何对其进行自定义。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 4%
+source-wordcount: '1689'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 在Adobe Experience Manager as a Cloud Service中，内容片段扩展了标准资源；请参阅：
 
-* [创建和管理内容片段](/help/sites-cloud/administering/content-fragments/overview.md) 和 [使用内容片段进行页面创作](/help/sites-cloud/authoring/fundamentals/content-fragments.md) 以了解有关内容片段的更多信息。
+* [创建和管理内容片段](/help/sites-cloud/administering/content-fragments/overview.md) 和 [使用内容片段进行页面创作](/help/sites-cloud/authoring/fragments/content-fragments.md) 以了解有关内容片段的更多信息。
 
 * [管理资源](/help/assets/manage-digital-assets.md) 以了解有关标准资产的更多信息。
 
@@ -96,7 +96,7 @@ ht-degree: 4%
 >
 >此 [内容片段组件是核心组件的一部分](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html). 请参阅 [开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) 以了解更多详细信息。
 
-可以从AEM页面引用内容片段，就像任何其他资源类型一样。 AEM提供 **[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [允许您在页面上包含内容片段的组件](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). 您还可以扩展此功能 **[内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** 核心组件。
+可以从AEM页面引用内容片段，就像任何其他资源类型一样。 AEM提供 **[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - a [允许您在页面上包含内容片段的组件](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). 您还可以扩展此功能 **[内容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)** 核心组件。
 
 * 组件使用 `fragmentPath` 属性以引用实际内容片段。 此 `fragmentPath` 资产的处理方式与其他资产类型的类似资产相同；例如，当内容片段移动到其他位置时。
 
@@ -116,7 +116,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->**内容片段模型:**
+>**内容片段模型：**
 >
 >在页面上使用内容片段时，将引用它所基于的内容片段模型。
 >
@@ -196,7 +196,7 @@ ht-degree: 4%
 
       * 列出收藏集
       * 添加收藏集
-      * 删除收藏集
+      * 移除收藏集
 
    * 访问片段的模型
 
@@ -326,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 此 [自动保存间隔](/help/sites-cloud/administering/content-fragments/managing.md#save-close-and-versions) （以秒为单位）可以使用配置管理器(ConfMgr)定义：
 
 * 节点： `<conf-root>/settings/dam/cfm/jcr:content`
-* 属性名称: `autoSaveInterval`
+* 属性名称： `autoSaveInterval`
 * 类型：`Long`
 
 * 默认： `600` （10分钟）；此时间定义于 `/libs/settings/dam/cfm/jcr:content`
@@ -336,7 +336,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 例如：
 
 * 节点： `/conf/global/settings/dam/cfm/jcr:content`
-* 属性名称: `autoSaveInterval`
+* 属性名称： `autoSaveInterval`
 
 * 类型：`Long`
 

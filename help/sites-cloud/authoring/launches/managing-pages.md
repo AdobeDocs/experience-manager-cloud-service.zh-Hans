@@ -2,7 +2,7 @@
 title: 管理启动项中的页面
 description: 您可以在启动项中创建新页面。也可以删除不需要的页面。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 89%
@@ -60,7 +60,7 @@ ht-degree: 89%
 
 1. [在启动项中导航到所需的位置](#navigate-structure-of-launch)。
 
-1. 选择&#x200B;**创建**，像往常一样[创建页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)。
+1. 选择&#x200B;**创建**，像往常一样[创建页面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)。
 
 ## 从启动项中删除页面 {#remove-pages-from-launch}
 
@@ -68,4 +68,4 @@ ht-degree: 89%
 
 1. [在启动项中导航到所需的位置](#navigate-structure-of-launch)。
 
-1. 选择&#x200B;**删除**，像往常一样[删除页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)。
+1. 选择&#x200B;**删除**，像往常一样[删除页面](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)。

@@ -2,7 +2,7 @@
 title: 自定义页面创作
 description: 了解 AEM as a Cloud Service 提供的用于自定义页面创作功能的机制。
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 94%
@@ -36,7 +36,7 @@ Clientlib 允许您扩展默认实现，以启用新功能，同时重新使用�
 
 ## 添加新层（模式） {#add-new-layer-mode}
 
-当您编辑页面的时候，有各种各样的[模式](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)可用。这些模式是使用[层次](/help/implementing/developing/introduction/ui-structure.md#layer)来实施的。其允许访问同一页面内容的不同类型的功能。标准 AEM 模式包括编辑、布局、开发人员、时间扭曲、Live Copy 状态和定位。
+当您编辑页面的时候，有各种各样的[模式](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes)可用。这些模式是使用[层次](/help/implementing/developing/introduction/ui-structure.md#layer)来实施的。其允许访问同一页面内容的不同类型的功能。标准 AEM 模式包括编辑、布局、开发人员、时间扭曲、Live Copy 状态和定位。
 
 ### 层次示例：Live Copy 状态 {#layer-example-live-copy-status}
 

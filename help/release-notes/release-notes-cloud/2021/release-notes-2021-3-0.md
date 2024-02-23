@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] 2021.3.0版as a Cloud Service发行说明。”'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 34%
@@ -27,7 +27,7 @@ ht-degree: 34%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [站点的渐进式Web应用程序(PWA)版本](/help/sites-cloud/authoring/features/enable-pwa.md) 现在可以通过简单的配置在项目级别启用。
+* [站点的渐进式Web应用程序(PWA)版本](/help/sites-cloud/authoring/sites-console/enable-pwa.md) 现在可以通过简单的配置在项目级别启用。
 * 内容片段模型扩展 — 现在可以将多行文本数据类型定义为多字段列表。
 * 内容片段编辑器UX增强功能 — 嵌套的子片段现在显示在痕迹导航中，并改进了有关发布、保存以及保存并退出操作的视图
 

@@ -3,7 +3,7 @@ title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 5%
@@ -57,7 +57,7 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 
 自定义主题是指修改和个性化主题外观的过程。 自定义主题时，您可以更改其设计元素、布局、颜色、排版规则，有时还会更改底层代码。 它允许您为网站或应用程序创建独一无二的定制外观，同时保持主题提供的基本结构和功能。
 
-### 前提条件 {#prerequisites-to-customize}
+### 先决条件 {#prerequisites-to-customize}
 
 * 熟悉 [在Cloud Manager中设置管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) 并且具备有关如何设置管道的基本知识可帮助您有效地管理和部署主题自定义项。
 * 了解如何 [使用参与者角色配置用户](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). 通过了解如何使用参与者角色配置用户，您可以授予进行主题自定义所需的权限。
@@ -348,7 +348,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 5.3运行前端管道 {#run-a-frontend-pipeline}
 
-使用部署主题 [前端管道。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). 要部署主题，请执行以下步骤：
+使用部署主题 [前端管道。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。要部署主题，请执行以下步骤：
 
 1. 登录到您的AEM Cloud Manager存储库。
 1. 单击 **[!UICONTROL 添加]** 按钮来自 **[!UICONTROL 管道]** 部分。
@@ -405,7 +405,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
   如果要使用字体样式、背景和透明度等样式选项来设置页眉和页脚的样式，请使用主题编辑器。
 如果要提供徽标图像、标题中的公司名称以及页脚中的版权信息等信息，请使用表单编辑器选项。
 
-## 常见问题 {#faq}
+## 常见问题解答 {#faq}
 
 **问：** 在全局级别和组件级别的主题文件夹中进行自定义时，哪种自定义设置优先？
 
@@ -415,7 +415,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ## See next
 
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
@@ -431,7 +431,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 ## 另请参阅 {#see-also}
 
 {{see-also}}
-* [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/features/responsive-layout.md)
+* [为不同的屏幕大小和设备类型设置表单布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [生成自适应Forms记录文档（核心组件）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [创建包含可重复部分的自适应Forms](/help/forms/create-forms-repeatable-sections.md)
 * [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

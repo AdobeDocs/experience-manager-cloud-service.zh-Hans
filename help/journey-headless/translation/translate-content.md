@@ -2,9 +2,9 @@
 title: 翻译 Headless 内容
 description: 使用翻译连接器来翻译 Headless 内容。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '2119'
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
+source-wordcount: '2120'
 ht-degree: 100%
 
 ---
@@ -249,4 +249,4 @@ AEM 的翻译框架接收来自翻译连接器的翻译，然后使用连接器�
 我们建议您查看文档[发布已翻译内容](publish-content.md)来继续 Headless 翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续 Headless 历程所必需的。
 
 * [管理翻译项目](/help/sites-cloud/administering/translation/managing-projects.md) – 了解翻译项目的详细信息以及人工翻译工作流和多语言项目等附加功能。
-* [创作环境和工具](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) – AEM 提供各种机制来组织和编辑您的内容，包括强大的路径浏览器。
+* [创作环境和工具](/help/sites-cloud/authoring/path-selection.md#path-selection) – AEM 提供各种机制来组织和编辑您的内容，包括强大的路径浏览器。

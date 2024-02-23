@@ -2,7 +2,7 @@
 title: 将体验片段导出到 Adobe Target
 description: 了解如何将体验片段导出到 Adob​​e Target，以测试和个性化体验。
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 96%
@@ -16,7 +16,7 @@ ht-degree: 96%
 >* AEM 体验片段将导出到 Adobe Target 的默认工作区。
 >* 必须按照[与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)下的说明将 AEM 与 Adobe Target 集成。
 
-您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)导出到 Adobe Target (Target)。然后，可以将其用作 Target 活动中的选件以大规模测试和打造个性化体验。
+您可以将在 Adobe Experience Manager as a Cloud Service (AEM) 中创建的[体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md)导出到 Adobe Target (Target)。然后，可以将其用作 Target 活动中的选件以大规模测试和打造个性化体验。
 
 有三个选项可用于将体验片段导出到 Adobe Target：
 
@@ -288,7 +288,7 @@ After you create a Target framework in AEM, associate your web pages with the fr
 When you associate a page with the framework, the child pages inherit the association.
 
 1. In the **Sites** console, navigate to the site that you want to configure.
-1. Using either [quick actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources), select **View Properties.**
+1. Using either [quick actions](/help/sites-cloud/authoring/basic-handling.md#quick-actions) or [selection mode](/help/sites-cloud/authoring/basic-handling.md#selecting-resources), select **View Properties.**
 1. Select the **Cloud Services** tab.
 1. Select **Edit**.
 1. Select **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
@@ -302,7 +302,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >Make sure that you select the specific **framework** that you created and not the Target cloud configuration under which it was created.
 
 1. Select **Done**.
-1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).)
+1. Activate the root page of the website to replicate it to the publish server. (See [How To Publish Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -344,7 +344,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >可以在控制台的&#x200B;**列表视图**&#x200B;和&#x200B;**属性**&#x200B;中查看导出的[各种详细信息](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#details-of-your-experience-fragment)。
+   >可以在控制台的&#x200B;**列表视图**&#x200B;和&#x200B;**属性**&#x200B;中查看导出的[各种详细信息](/help/sites-cloud/authoring/fragments/content-fragments.md#details-of-your-experience-fragment)。
 
    >[!NOTE]
    >
@@ -352,7 +352,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 >[!NOTE]
 >
->或者，您可以使用[页面信息](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)菜单中的类似命令从页面编辑器执行导出。
+>或者，您可以使用[页面信息](/help/sites-cloud/authoring/page-editor/introduction.md#page-information)菜单中的类似命令从页面编辑器执行导出。
 
 ## 在 Adobe Target 中使用体验片段 {#using-your-experience-fragments-in-adobe-target}
 

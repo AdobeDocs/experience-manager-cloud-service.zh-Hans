@@ -5,8 +5,8 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
-workflow-type: ht
+source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 100%
 
@@ -62,5 +62,5 @@ AEM Sites 是一个用于创建、管理和交付数字体验的综合平台。�
 
 我们建议您查看文档 [AEM Sites 翻译快速入门](getting-started.md)来继续站点翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
-* [页面创作快速入门指南](/help/sites-cloud/authoring/getting-started/quick-start.md) – 使用 AEM Sites 创建内容的最重要概念的简要概述
+* [页面创作快速入门指南](/help/sites-cloud/authoring/quick-start.md) – 使用 AEM Sites 创建内容的最重要概念的简要概述
 * [MSM 和翻译](/help/sites-cloud/administering/msm-and-translation.md) – AEM 的多站点管理器的详细信息及其使用翻译工具的方式
