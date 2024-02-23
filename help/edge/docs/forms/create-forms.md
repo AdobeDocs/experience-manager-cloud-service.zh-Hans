@@ -4,9 +4,9 @@ description: 制作完美的表单，快！ ⚡基于AEM Forms Edge Delivery文�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 在开始之前，请确保您已完成以下步骤：
 
-* 设置和克隆您的边缘交付服务(EDS)项目。 请参阅 [开发人员教程](https://www.aem.live/developer/tutorial) 以了解详细信息。 Edge Delivery Service (EDS)项目的本地文件夹推荐为 `[EDS Project repository]` 在本文档中。
-* 克隆 [Forms阻止存储库](https://github.com/adobe/afb). 它包含在EDS网页上呈现表单的代码。 Forms Block存储库的本地文件夹引用为 `[Forms Block repository]` 在本文档中。
+* 设置和克隆您的边缘交付服务(EDS)项目。 请参阅 [开发人员教程](https://www.aem.live/developer/tutorial) 以了解详细信息。 在本文档中，将边缘交付服务(EDS)项目的本地文件夹称为 `[EDS Project repository]` .
+* 克隆 [Forms阻止存储库](https://github.com/adobe/afb). 它包含在EDS网页上呈现表单的代码。 在本文档中，将Forms Block存储库的本地文件夹称为 `[Forms Block repository]` 在本文档中。
 * 确保您有权访问Google工作表或Microsoft SharePoint。
 
 
@@ -42,7 +42,7 @@ AEM Forms Edge Delivery包括表单块，可帮助您轻松创建表单以捕获
 
 1. 签入 `form` 文件夹和底层文件到GitHub上的边缘交付服务项目。
 
-   该表单块将添加到Github上的EDS项目存储库中。 确保Github内部版本不会失败：
+   该表单块将添加到GitHub上的EDS项目存储库中。 确保GitHub构建不会失败：
 
    * 如果遇到错误“无法解析模块“&#39;../../scripts/lib-franklin.js&#39;”的路径，请打开 `[EDS Project]/blocks/forms/form.js` 文件。 在import语句中，将 `lib-franklin.js` 文件包含 `aem.js` 文件。
 

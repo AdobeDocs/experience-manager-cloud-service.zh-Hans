@@ -4,9 +4,9 @@ description: AEM Forms Edge交付服务专为实现卓越性能而打造，使�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bd8c4fbfd7f740baa6abd7a91fb8d1dcdaff6c28
+source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,12 @@ AEM Forms边缘交付服务是由Adobe提供的一项可组合服务，允许您
 
 ![Edge Delivery表单创作工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-内容创建者可以利用他们熟悉的工具(如Microsoft Excel或Google Sheets（基于文档的创作）、JSON编辑器或AEM Forms自适应Forms编辑器以进行WYSIWYG编辑(AEM Forms项目))来设计和创建表单。
+内容创建者可以利用他们熟悉的工具(如Microsoft Excel或Google Sheets（基于文档的创作）、JSON文件（Headless创作）或AEM Forms自适应Forms编辑器（所见即所得创作）)来设计和创建其表单。
 
 >[!NOTE]
 >
 >
-> 所见即所得编辑功能和Cross Walk区在早期采用者计划下提供。 您可以从官方电子邮件ID写信到aem-forms-early-adopter-program@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。
+> WYSIWYG创作功能可通过率先采用者计划获得。 您可以从官方电子邮件ID写信到aem-forms-early-adopter-program@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。
 
 ## 从基础知识开始
 
@@ -67,13 +67,12 @@ AEM Forms边缘交付服务是由Adobe提供的一项可组合服务，允许您
             <br><b style="margin-top: 5px;">应用字段验证</b>
         </a>
         <p>通过检查表单输入内容中的格式是否正确，减少错误和挫折。</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="在EDS表单中使用表单片段" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">创建表单片段</b>
+    </div>    <div class="card-container">
+        <a href="/help/edge/docs/forms/style-theme-forms.md">
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="将样式或主题应用于eds表单" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">自定义主题</b>
         </a>
-        <p>在多个表单中重用预配置的片段。</p>
+        <p>通过在表单中应用相同主题来创建一致的品牌图像。</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
@@ -83,11 +82,11 @@ AEM Forms边缘交付服务是由Adobe提供的一项可组合服务，允许您
         <p>在控制成本的同时，扩大表单的覆盖范围。</p>
     </div>
     <div class="card-container">
-        <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="将样式或主题应用于eds表单" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">自定义主题</b>
+        <a href="/help/edge/docs/forms/form-fragments.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="在EDS表单中使用表单片段" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">创建表单片段</b>
         </a>
-        <p>通过在表单中应用相同主题来创建一致的品牌图像。</p>
+        <p>在多个表单中重用预配置的片段。</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
