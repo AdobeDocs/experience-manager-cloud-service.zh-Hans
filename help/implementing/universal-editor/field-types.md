@@ -2,9 +2,9 @@
 title: 模型定义、字段和组件类型
 description: 通过示例了解通用编辑器可在属性边栏中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: bbe02f66b5bce3b919be4abd3b2de482a235b6ee
+source-git-commit: fcdba895510b0c428a4274092c8b314fd36f5c7d
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1144'
 ht-degree: 10%
 
 ---
@@ -89,6 +89,23 @@ ht-degree: 10%
 ### 组件类型 {#component-types}
 
 以下是可用于呈现字段的组件类型。
+
+| 描述 | 组件类型 |
+|---|---|
+| [AEM标记](#aem-tag) | `aem-tag` |
+| [AEM内容](#aem-content) | `aem-content` |
+| [布尔型](#boolean) | `boolean` |
+| [复选框组](#checkbox-group) | `checkbox-group` |
+| [容器](#container) | `container` |
+| [日期时间](#date-time) | `date-time` |
+| [多选](#multiselect) | `multiselect` |
+| [数字](#number) | `number` |
+| [单选按钮组](#radio-group) | `radio-group` |
+| [引用](#reference) | `reference` |
+| [富文本](#rich-text) | `rich-text` |
+| [选择](#select) | `select` |
+| [选项卡](#tab) | `tab` |
+| [文本](#text) | `text` |
 
 #### AEM标记 {#aem-tag}
 
@@ -624,6 +641,59 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!ENDTABS]
 
+#### 富文本 {#rich-text}
+
+富文本允许多行、富文本输入。 它提供了其他验证类型。
+
+| 验证类型 | 值类型 | 描述 | 必填 |
+|---|---|---|---|
+| `maxSize` | `number` | 允许的最大字符数 | 否 |
+| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `maxSize` 已超出 | 否 |
+
+>[!BEGINTABS]
+
+>[!TAB 示例1]
+
+```json
+{
+  "id": "richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB 示例2]
+
+```json
+{
+  "id": "another-richtext",
+  "fields": [
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 1000,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
+      }
+    }
+  ]
+}
+```
+
+>[!TAB 屏幕快照]
+
+![文本区域组件类型的屏幕截图](assets/component-types/richtext.png)
+
+>[!ENDTABS]
+
 #### 选择 {#select}
 
 选择组件类型允许从下拉菜单中的预定义选项列表中选择单个选项。
@@ -704,62 +774,9 @@ A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `ta
 
 >[!ENDTABS]
 
-#### 文本区域 {#text-area}
+#### 文本 {#text}
 
-文本区域允许多行、富文本输入。 它提供了其他验证类型。
-
-| 验证类型 | 值类型 | 描述 | 必填 |
-|---|---|---|---|
-| `maxSize` | `number` | 允许的最大字符数 | 否 |
-| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `maxSize` 已超出 | 否 |
-
->[!BEGINTABS]
-
->[!TAB 示例1]
-
-```json
-{
-  "id": "richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB 示例2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "text-area",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
-    }
-  ]
-}
-```
-
->[!TAB 屏幕快照]
-
-![文本区域组件类型的屏幕截图](assets/component-types/richtext.png)
-
->[!ENDTABS]
-
-#### 文本输入 {#text-input}
-
-文本输入允许单行文本输入。  它包含其他验证类型。
+文本允许单行文本输入。  它包含其他验证类型。
 
 | 验证类型 | 值类型 | 描述 | 必填 |
 |---|---|---|---|
@@ -777,7 +794,7 @@ A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `ta
   "id": "simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string"
@@ -793,7 +810,7 @@ A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `ta
   "id": "another simpletext",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "text",
       "label": "Simple Text",
       "valueType": "string",
@@ -812,6 +829,6 @@ A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `ta
 
 >[!TAB 屏幕快照]
 
-![文本输入组件类型的屏幕截图](assets/component-types/simpletext.png)
+![文本组件类型的屏幕截图](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
