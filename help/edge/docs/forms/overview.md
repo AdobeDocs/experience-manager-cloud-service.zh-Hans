@@ -4,9 +4,9 @@ description: AEM Forms Edge交付服务专为实现卓越性能而打造，使�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 87ed5f0aed5554f56e28f317d1399429245a2d06
+source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,14 @@ AEM Forms边缘交付服务是由Adobe提供的一项可组合服务，允许您
 
 * **使用完美的Lighthouse分数构建表单**：构建可快速加载和渲染的表单，即使在Internet连接速度较慢的情况下也是如此。 更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
 
-* **简化创作和提交**：使用熟悉的工具(如Microsoft Excel或Google Sheets)创建表单，而不是使用传统的创作环境。 将表单直接提交到Microsoft Excel或Google工作表，并使用其生态系统轻松处理提交的数据。
+* **简化创作和提交**：利用您熟悉的创作工具(如Microsoft Excel或Google Sheets（基于文档的创作）、JSON文件（Headless创作）或自适应Forms编辑器（所见即所得）来设计和创建其表单。 该服务与内容源分离，通过允许您使用首选的创作工具，提供内容创建的灵活性。
 
+  ![Edge Delivery表单创作工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
 
-此可组合服务与内容源分离，通过允许用户使用其首选的创作工具，提供了内容创建的灵活性。
-
-![Edge Delivery表单创作工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-
-内容创建者可以利用他们熟悉的工具(如Microsoft Excel或Google Sheets（基于文档的创作）、JSON文件（Headless创作）或AEM Forms自适应Forms编辑器（所见即所得创作）)来设计和创建其表单。
-
->[!NOTE]
->
->
-> WYSIWYG创作功能可通过率先采用者计划获得。 您可以从官方电子邮件ID写信到aem-forms-early-adopter-program@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。
+  >[!NOTE]
+  >
+  >
+  > WYSIWYG创作功能可通过率先采用者计划获得。 您可以从官方电子邮件ID写信到aem-forms-early-adopter-program@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。
 
 ## 从基础知识开始
 
