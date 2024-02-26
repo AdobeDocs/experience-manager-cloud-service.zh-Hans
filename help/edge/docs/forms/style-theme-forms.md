@@ -4,9 +4,9 @@ description: 自定义AEM Forms Edge Delivery Service表单的主题和样式
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4a3ebcf7985253ebca24e90ab57ae7eaf3e924e9
+source-git-commit: 59ed012f10a20939c846c8fff088534c5638f3db
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 * 输入： `input` 元素定义要输入的数据类型。 例如，文本、数字、电子邮件。
 * 描述（可选）： `div` 与类 `field-description` 为用户提供其他信息或说明。
 
-**示例**
+**HTML结构示例**
 
 ```HTML
 <div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
@@ -99,7 +99,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-#### 常规组件的CSS选择器
+**常规组件的CSS选择器**
 
 ```CSS
 .form-{Type}-wrapper input {
@@ -121,7 +121,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 * `.form-{Type}-wrapper`：定位外部 `div` 元素标识。 例如， `.form-text-wrapper` 定位所有文本输入字段。
 * `.form-{Name}`：进一步根据特定字段名称选择元素。 例如， `.form-first-name` 定位“名字”文本字段。
 
-**示例：**
+**常规组件的CSS选择器示例**
 
 ```CSS
 /*Target all text input fields */
@@ -159,7 +159,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-**示例**
+**示例HTML结构**
 
 ```HTML
     <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
    </div>
 ```
 
-#### 下拉组件的CSS选择器
+#### 下拉组件的CSS选择器示例
 
 ```CSS
 /* Target the outer wrapper */
@@ -265,98 +265,95 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-#### 单选框和复选框组的CSS选择器
+**单选框和复选框组的CSS选择器示例**
 
-**定位外部包装器**
-
-
-```CSS
-   /* Targets all radio group wrappers */
-.form-radio-group-wrapper {
-  margin-bottom: 20px; /* Adds space between radio groups */
-}
-
-/* Targets all checkbox group wrappers */
-.form-checkbox-group-wrapper {
-  margin-bottom: 20px; /* Adds space between checkbox groups */
-}
-```
-
-这些选择器定位单选框和复选框组的最外部容器，从而可以将常规样式应用于整个组结构。 此设置可用于设置间距、对齐方式或其他与布局相关的属性。
-
-**定位组标签**
-
-```CSS
-.form-radio-group-wrapper .field-label,
-.form-checkbox-group-wrapper .field-label {
- font-weight: bold; /* Makes the group label bold */
-}
-```
-
-此选择器面向 `.field-label` 单选框和复选框组包装器中的元素。 这允许您为这些组设置特定的标签样式，这有可能使它们更加突出。
-
-**定位单个输入和标签**
-
-```CSS
-/* Styling radio buttons */
-.form-radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
-} 
-
-/* Styling radio button labels */
-.form-radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-
-/* Styling checkboxes */
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px;  /* Adds space between the input and its label */ 
-}
-
-/* Styling checkbox labels */
-.form-checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
-}
-```
-
-这些选择器对单个单选按钮、复选框及其相关标签提供了更细粒度的控制。 您可以使用这些设置调整大小、间距或应用更多不同的视觉样式。
+* 定位外部包装器：这些选择器定位单选框和复选框组的最外部容器，从而允许您对整个组结构应用常规样式。 此设置可用于设置间距、对齐方式或其他与布局相关的属性。
 
 
-**自定义单选按钮和复选框的外观**
-
-```CSS
-/* Hide the default radio button or checkbox */
-.form-radio-group-wrapper input[type="radio"],
-.form-checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0; 
-  position: absolute; 
-}
-
-/* Create a custom radio button */
-.form-radio-group-wrapper input[type="radio"] + label::before { 
-  content: "";
-  display: inline-block;
-  width: 16px; 
-  height: 16px; 
-  border: 2px solid #ccc; 
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.form-radio-group-wrapper input[type="radio"]:checked + label::before {
-  background-color: #007bff; 
-}
-
-/* Create a custom checkbox */
-/* Similar styling as above, with adjustments for a square shape */
-```
-
-此技术会隐藏默认输入，并使用：before和：after伪元素来创建自定义可视化图表，这些可视化图表会根据“选中”状态更改外观。
+  ```CSS
+     /* Targets all radio group wrappers */
+  .form-radio-group-wrapper {
+    margin-bottom: 20px; /* Adds space between radio groups */
+  }
+  
+  /* Targets all checkbox group wrappers */
+  .form-checkbox-group-wrapper {
+    margin-bottom: 20px; /* Adds space between checkbox groups */
+  }
+  ```
 
 
-## 样式字段
+* 定位组标签：此选择器定位 `.field-label` 单选框和复选框组包装器中的元素。 这允许您为这些组设置特定的标签样式，这有可能使它们更加突出。
 
-除了前面介绍的常规样式设置技术外，您还可以根据表单字段的特定类型或单个名称来设置表单字段的样式。 这允许对表单外观进行更细粒度的控制和自定义。
+  ```CSS
+  .form-radio-group-wrapper .field-label,
+  .form-checkbox-group-wrapper .field-label {
+   font-weight: bold; /* Makes the group label bold */
+  }
+  ```
+
+
+
+* 定位单个输入和标签：这些选择器对单个单选按钮、复选框及其关联标签提供更加精细化的控制。 您可以使用这些设置调整大小、间距或应用更多不同的视觉样式。
+
+  ```CSS
+  /* Styling radio buttons */
+  .form-radio-group-wrapper input[type="radio"] {
+    margin-right: 5px; /* Adds space between the input and its   label */
+  } 
+  
+  /* Styling radio button labels */
+  .form-radio-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  
+  /* Styling checkboxes */
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    margin-right: 5px;  /* Adds space between the input and its  label */ 
+  }
+  
+  /* Styling checkbox labels */
+  .form-checkbox-group-wrapper label {
+    font-size: 15px; /* Changes the label font size */
+  }
+  ```
+
+
+
+
+* 自定义单选按钮和复选框的外观：此方法会隐藏默认输入，并使用：before和：after伪元素来创建自定义视觉对象，这些视觉对象会根据“已选中”状态更改外观。
+
+  ```CSS
+  /* Hide the default radio button or checkbox */
+  .form-radio-group-wrapper input[type="radio"],
+  .form-checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0; 
+    position: absolute; 
+  }
+  
+  /* Create a custom radio button */
+  .form-radio-group-wrapper input[type="radio"] + label::before { 
+    content: "";
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .form-radio-group-wrapper input[type="radio"]:checked +  label::before {
+    background-color: #007bff; 
+  }
+  
+  /* Create a custom checkbox */
+  /* Similar styling as above, with adjustments for a square shape  */
+  ```
+
+
+## 设置组件样式
+
+您还可以根据表单字段的特定类型或单个名称来设置表单字段的样式。 这允许对表单外观进行更细粒度的控制和自定义。
 
 ### 根据字段类型设置样式
 
@@ -388,7 +385,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 * 此 `data-required` 属性指明字段是必填字段还是可选字段。
 * 每个字段都有一个对应的标签、输入元素和潜在的其他元素，如占位符和描述。
 
-例如：
+**示例CSS选择器**
 
 ```CSS
 /* Target all text input fields */
@@ -403,7 +400,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 }
 ```
 
-### 设置特定字段类型的样式
+### 基于字段名称设置样式
 
 您还可以按名称定位各个字段以应用唯一样式。
 
@@ -416,7 +413,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-**CSS选择器**
+**示例CSS选择器**
 
 ```CSS
 .form-otp input {
@@ -424,6 +421,6 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 }
 ```
 
-* 选择器：此CSS定位位于具有类的元素中的所有输入元素 `form-otp`. 您的HTML结构遵循表单块的约定，这意味着有一个标有“form-otp”类的容器包含名为“otp”的字段。
+此CSS定位位于具有类的元素中的所有输入元素 `form-otp`. 表单的HTML结构遵循表单块的约定，这意味着有一个标有“form-otp”类的容器包含名为“otp”的字段。
 
-* 属性和值：此代码适用 `letter-spacing: 2px`. 此CSS属性控制输入字段文本内容中各个字母之间的间距。
+
