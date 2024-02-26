@@ -4,7 +4,7 @@ description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.2.0 的发�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 4a41de9da557be562bb2ff5773c7954f76a9acc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '725'
 ht-degree: 100%
 
