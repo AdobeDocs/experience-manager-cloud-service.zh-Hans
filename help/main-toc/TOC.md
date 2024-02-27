@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5786283b75f28d594aea923a6d3490a9582a73a9
+source-git-commit: 784cf3600cec4f0bde72e6a1e491095f56d5e5b3
 workflow-type: tm+mt
-source-wordcount: '4721'
-ht-degree: 98%
+source-wordcount: '4730'
+ht-degree: 99%
 
 ---
 
@@ -305,6 +305,9 @@ ht-degree: 98%
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [撤消重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+      + Universal Editor {#universal-editor}
+         + [使用 Universal Editor 创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [使用 Universal Editor 发布内容](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + 片段 {#fragments}
          + [内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -624,8 +627,8 @@ ht-degree: 98%
             + [创建具有可重复部分的表单](/help/forms/create-forms-repeatable-sections.md)
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
             + [将自适应表单提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [将自适应表单提交到Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [将自适应表单连接到Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [将自适应表单提交到 Microsoft](/help/forms/configure-submit-action-onedrive.md)
+            + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [将 AEM 自适应表单与 AEM 工作流集成](/help/forms/configure-submit-action-workflow.md)
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
@@ -720,6 +723,7 @@ ht-degree: 98%
       + [使用 Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [创建 Screens 视频演绎版](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [为 Screens as a Cloud Service 配置 Dispatcher](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
+      + [为Screensas a Cloud Service配置时间轴视图](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + 创建内容 {#create-content}
       + [在 Screens Content Provider 中创建和管理项目](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [在 Screens Content Provider 中创建和管理渠道](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -812,17 +816,17 @@ ht-degree: 98%
       + [Akamai 设置](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly 设置](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重定向](/help/edge/docs/redirects.md)
-   + 构建边缘交付Forms {#build-forms}
+   + 构建 Edge Delivery Forms {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
       + 开始使用 {#getting-started-eds-forms}
-         + [创建和预览表单](/help/edge/docs/forms/create-forms.md)
-         + [启用表单以发送数据](/help/edge/docs/forms/submit-forms.md)
-         + [将表单发布到站点页面](/help/edge/docs/forms/publish-eds-forms.md)
+         + [创建并预览表单](/help/edge/docs/forms/create-forms.md)
+         + [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
+         + [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-eds-forms.md)
          + [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
-         + [更改表单的主题和样式](/help/edge/docs/forms/style-theme-forms.md)
+         + [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)
       + 功能 {#advanced-features-eds-forms}
          + [表单片段](/help/edge/docs/forms/form-fragments.md)
-         + [可重复部分](/help/edge/docs/forms/repeatable-forms.md)
+         + [可重复的部分](/help/edge/docs/forms/repeatable-forms.md)
          + [翻译](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [感谢页面](/help/edge/docs/forms/thank-you-page-form.md)
@@ -1028,6 +1032,18 @@ ht-degree: 98%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
+      + Universal Editor {#universal-editor}
+         + [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)
+         + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
+         + [开始使用 AEM 中的 Universal Editor](/help/implementing/universal-editor/getting-started.md)
+         + [Universal Editor 开发人员概述](/help/implementing/universal-editor/developer-overview.md)
+         + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
+         + [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)
+         + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
+         + [使用 Universal Editor 进行本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
+         + [Universal Editor 调用](/help/implementing/universal-editor/calls.md)
+         + [事件](/help/implementing/universal-editor/events.md)
+         + [自定义 Universal Editor](/help/implementing/universal-editor/customizing.md)
       + [Headless 体验管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=zh-Hans)
       + 混合和 SPA 开发 {#hybrid}
          + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1144,19 +1160,3 @@ ht-degree: 98%
    + 辅助功能 {#accessibility}
       + [AEM as a Cloud Service 和 Web 无障碍准则](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
-+ Universal Editor {#universal-editor}
-   + [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)
-   + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
-   + 创作 {#developing}
-      + [使用 Universal Editor 创作内容](/help/implementing/universal-editor/authoring.md)
-      + [使用 Universal Editor 发布内容](/help/implementing/universal-editor/publishing.md)
-   + 开发 {#developing}
-      + [开始使用 AEM 中的 Universal Editor](/help/implementing/universal-editor/getting-started.md)
-      + [Universal Editor 开发人员概述](/help/implementing/universal-editor/developer-overview.md)
-      + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
-      + [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)
-      + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
-      + [使用 Universal Editor 进行本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
-      + [Universal Editor 调用](/help/implementing/universal-editor/calls.md)
-      + [自定义 Universal Editor](/help/implementing/universal-editor/customizing.md)
-      + [事件](/help/implementing/universal-editor/events.md)
