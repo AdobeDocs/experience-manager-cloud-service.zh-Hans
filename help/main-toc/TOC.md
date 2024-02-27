@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b8d729ca384c4ebd7a74f2b6e7280bf6cff2e404
+source-git-commit: 5786283b75f28d594aea923a6d3490a9582a73a9
 workflow-type: tm+mt
-source-wordcount: '4714'
+source-wordcount: '4721'
 ht-degree: 98%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 98%
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
+   + [Adobe Developer控制台中的JWT凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + 上线 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上线历程 {#journey}
