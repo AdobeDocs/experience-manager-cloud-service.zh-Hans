@@ -2,9 +2,9 @@
 title: 在AEM中创作内容的方法
 description: 了解在AEM中创作内容的不同方式以及它们之间的差异。
 feature: Authoring
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '554'
 ht-degree: 1%
 
 ---
@@ -43,9 +43,15 @@ AEM内容片段编辑器是创建Headless内容的首选编辑器。
 
 ![AEM内容片段编辑器](assets/authoring-methods-cf-editor.png)
 
-AEM内容片段编辑器提供了用于创建和管理结构化内容的清晰界面，非常适用于Headless投放。
+AEM内容片段编辑器提供了一个清晰的界面，用于创建和管理结构化内容，非常适用于Headless投放。
 
-要了解有关AEM内容片段编辑器的更多信息，请参阅文档 [管理内容片段。](/help/assets/content-fragments/content-fragments-managing.md)
+要了解有关AEM内容片段编辑器的更多信息，请参阅文档 [管理内容片段](/help/sites-cloud/administering/content-fragments/managing.md) 和 [创作内容片段](/help/sites-cloud/administering/content-fragments/managing.md).
+
+>[!NOTE]
+>
+>此 *新建* 此部分中突出显示的编辑器仅在联机Adobe Experience Manager (AEM)as a Cloud Service中可用。
+>
+>此 [*原有* 内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md) 也可用。
 
 ## Universal Editor {#universal-editor}
 
