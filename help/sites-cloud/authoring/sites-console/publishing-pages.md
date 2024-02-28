@@ -2,10 +2,10 @@
 title: 发布页面
 description: 了解如何使用 AEM 中的各种机制发布和取消发布页面。
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 87%
+source-wordcount: '1936'
+ht-degree: 83%
 
 ---
 
@@ -39,8 +39,9 @@ ht-degree: 87%
 
 根据您所在的位置，可以通过下列方式发布：
 
-* [从页面编辑器中](#publishing-from-the-editor)
-* [从 Sites 控制台中](#publishing-from-the-console)
+* [从页面编辑器中](#publishing-from-the-page-editor)
+* [从 ](#publishing-from-the-sites-console)
+* [从通用编辑器](/help/sites-cloud/authoring/universal-editor/publishing.md)
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ ht-degree: 87%
 >
 > 有关其他可能性，请参阅[页面属性的“基本”选项卡](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)中的&#x200B;**开启时间**&#x200B;和&#x200B;**关闭时间**。
 
-### 从编辑器中发布 {#publishing-from-the-editor}
+### 从页面编辑器发布 {#publishing-from-the-page-editor}
 
-如果您在编辑页面，则可以直接从编辑器中发布该页面。
+如果您在中编辑页面 [页面编辑器，](/help/sites-cloud/authoring/page-editor/introduction.md) 可以直接从编辑器中发布它。
 
 1. 选择&#x200B;**页面信息**&#x200B;图标以打开相应的菜单，然后选择&#x200B;**发布页面**&#x200B;选项。
 
@@ -89,15 +90,15 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->从编辑器中发布是一种简单的发布方式，即只会发布选定的一个或多个页面，而不会发布任何子页面。
+>从页面编辑器发布是一种简单的发布方式，即仅发布选定的一个或多个页面，而不发布任何子页面。
 
 >[!NOTE]
 >
 >无法发布编辑器中按[别名](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
 
-### 从控制台中发布 {#publishing-from-the-console}
+### 从站点控制台中发布 {#publishing-from-the-sites-console}
 
-Sites 控制台中有两个用于发布的选项：
+在 **站点** 控制台有两种发布选项：
 
 * [快速发布](#quick-publish)
 * [管理发布](#manage-publication)

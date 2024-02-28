@@ -2,8 +2,8 @@
 title: 使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南
 description: 本指南将帮助您让一个使用 Edge Delivery Services 和 Universal Editor 创作内容的新 Adobe Experience Manager 网站投入正常运转
 feature: Edge Delivery Services
-source-git-commit: 224cfe9853e8974c33b0e53e961a02d54f875a35
-workflow-type: ht
+source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 100%
 
@@ -141,7 +141,7 @@ AEM 提供两个不同的内容编辑器，您可根据自己的情况选择要�
 
    ![Universal Editor](assets/edge-dev-getting-started/universal-editor.png)
 
-您现在可以使用 Universal Editor 编辑您的站点。有关更多信息，请参阅 [Universal Editor 文档](/help/implementing/universal-editor/authoring.md)。
+您现在可以使用 Universal Editor 编辑您的站点。有关更多信息，请参阅 [Universal Editor 文档](/help/sites-cloud/authoring/universal-editor/authoring.md)。
 
 ### 发布您的新站点 {#publishing}
 

@@ -2,7 +2,7 @@
 title: 在AEM中创作内容的方法
 description: 了解在AEM中创作内容的不同方式以及它们之间的差异。
 feature: Authoring
-source-git-commit: 85b99fc0b0eb20b24f27d06159a52d4339a3c962
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AEM内容片段编辑器提供了一个清晰的界面，用于创建和管理�
 
 >[!NOTE]
 >
->此 *新建* 此部分中突出显示的编辑器仅在联机Adobe Experience Manager (AEM)as a Cloud Service中可用。
+>此 *新建* 在本地为AEMas a Cloud Service开发时，此部分突出显示的编辑器不可用。
 >
 >此 [*原有* 内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md) 也可用。
 
@@ -61,11 +61,11 @@ AEM内容片段编辑器提供了一个清晰的界面，用于创建和管理�
 
 通用编辑器通过AEM中的站点控制台访问，但它提供了强大且与内容无关的灵活性，不仅可以创作AEM内容，还可以创作正确仪表化的外部内容。
 
-要了解有关通用编辑器的更多信息，请参阅文档 [使用通用编辑器创作内容。](/help/implementing/universal-editor/authoring.md)
+要了解有关通用编辑器的更多信息，请参阅文档 [使用通用编辑器创作内容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 ## 基于文档的创作 {#document-based}
 
-如果您使用Edge Delivery服务，则可以选择在AEM控制台之外将内容创作为常规文档，如Microsoft Word或Google文档。
+Microsoft Google如果您使用Edge Delivery服务，则可以选择在 [AEM **站点** 控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![编辑基于文档的内容](assets/authoring-methods-document.jpg)
 

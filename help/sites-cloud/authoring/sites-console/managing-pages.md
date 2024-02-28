@@ -1,10 +1,10 @@
 ---
 title: 管理页面
 description: 了解如何在AEM中管理网站的页面，包括移动、复制和删除。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 67%
+source-wordcount: '1271'
+ht-degree: 64%
 
 ---
 
@@ -42,7 +42,9 @@ ht-degree: 67%
 
    ![编辑按钮](/help/sites-cloud/authoring/assets/edit.png)
 
-1. 此时会打开页面，您可以根据需要[编辑页面](/help/sites-cloud/authoring/page-editor/edit-content.md)。
+1. 此时将打开页面，您可以根据需要编辑页面。 根据所选页面的创建方式， **编辑** 操作将打开相应的编辑器。
+   * [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)  — 对于使用AEM页面编辑器创建的页面
+   * [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)  — 对于使用通用编辑器创建的页面
 
 ## 复制和粘贴页面 {#copying-and-pasting-a-page}
 

@@ -1,10 +1,10 @@
 ---
 title: 站点控制台
 description: 了解如何使用站点控制台来管理和组织AEM页面。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 46%
+source-wordcount: '1628'
+ht-degree: 45%
 
 ---
 
@@ -231,16 +231,18 @@ ht-degree: 46%
 
 仅在控制台中选择资源时，才会显示操作工具栏。 操作工具栏中可用的操作会发生更改，以反映您可对特定选定项目执行的操作。 最常见的操作包括：
 
-* [创建](#create-action)  — 创建新内容或与内容相关的操作
-* [编辑](/help/sites-cloud/authoring/page-editor/introduction.md)  — 编辑页面
-* [属性](/help/sites-cloud/authoring/sites-console/page-properties.md)  — 打开页面属性窗口
-* [锁定](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)  — 锁定页面以防止他人更改它
-* [复制](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page)  — 复制页面
-* [移动](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)  — 移动或重命名页面
-* [快速发布](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish)  — 立即发布一个或多个页面
-* [管理发布](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)  — 计划要发布的页面
-* [恢复](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version)  — 恢复页面或页面树的版本
-* [删除](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)  — 删除一个或多个页面
+* [**创建**](#create-action)  — 创建新内容或与内容相关的操作
+* **编辑**  — 根据所选页面的创建方式， **编辑** 操作将打开相应的编辑器。
+   * [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)  — 对于使用AEM页面编辑器创建的页面
+   * [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)  — 对于使用通用编辑器创建的页面
+* [**属性**](/help/sites-cloud/authoring/sites-console/page-properties.md)  — 打开页面属性窗口
+* [**锁定**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)  — 锁定页面以防止他人更改它
+* [**复制**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page)  — 复制页面
+* [**移动**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)  — 移动或重命名页面
+* [**快速发布**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish)  — 立即发布一个或多个页面
+* [**管理发布**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)  — 计划要发布的页面
+* [**恢复**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version)  — 恢复页面或页面树的版本
+* [**删除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)  — 删除一个或多个页面
 
 由于某些窗口存在空间限制，因此工具栏的长度可能很快就会超过可用空间。如果发生此情况，将会显示额外的选项。单击或点按省略号(三个点或 **...**)会打开一个下拉选择器，其中包含所有其余的操作。
 
@@ -248,13 +250,13 @@ ht-degree: 46%
 
 ### 创建操作 {#create-action}
 
-创建操作提供了与创建工具栏按钮类似的选项，用于创建新页面和类似项目。
+创建操作提供了与 [**创建** 工具栏按钮](#create-button) 用于创建新页面和类似项目。
 
 此外，它还提供了创建与页面相关的操作的能力。
 
-* [工作流](/help/sites-cloud/authoring/workflows/overview.md)  — 将工作流应用到页面
-* [版本](/help/sites-cloud/authoring/sites-console/page-versions.md)  — 创建页面的版本
+* [**工作流**](/help/sites-cloud/authoring/workflows/overview.md)  — 将工作流应用到页面
+* [**版本**](/help/sites-cloud/authoring/sites-console/page-versions.md)  — 创建页面的版本
 
 ## 模板
 
-在[列视图](/help/sites-cloud/authoring/basic-handling.md#column-view)或[列表视图](/help/sites-cloud/authoring/basic-handling.md#list-view)中选择页面时，您可以轻松查看该页面所基于的模板。
+在&#x200B;[**列视图**](/help/sites-cloud/authoring/basic-handling.md#column-view)&#x200B;或&#x200B;[**列表视图**](/help/sites-cloud/authoring/basic-handling.md#list-view)&#x200B;中选择页面时，您可以轻松查看该页面所基于的模板。

@@ -1,17 +1,21 @@
 ---
 title: AEM页面编辑器
 description: AEM页面编辑器是一个用于创作内容的强大工具。
-source-git-commit: f11635b799a9154ff3fcaac5faca429a12f7a62b
+source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 40%
+source-wordcount: '1431'
+ht-degree: 39%
 
 ---
 
 
 # AEM页面编辑器 {#editing-page-content}
 
-在中创建页面后 **站点** 控制台中，您可以使用AEM页面编辑器来编辑页面内容，该编辑器是用于创作内容的强大工具。
+在中创建页面后 [**站点** 控制台，](/help/sites-cloud/authoring/sites-console/introduction.md) 您可以使用AEM页面编辑器编辑页面的内容，该编辑器是用于创作内容的强大工具。
+
+>[!NOTE]
+>
+>在中编辑页面时 [**站点** 控制台，](/help/sites-cloud/authoring/sites-console/introduction.md) 控制台将打开与页面对应的编辑器 [模板：](/help/sites-cloud/authoring/sites-console/templates.md) 本文档中描述的页面编辑器，或者 [通用编辑器。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
