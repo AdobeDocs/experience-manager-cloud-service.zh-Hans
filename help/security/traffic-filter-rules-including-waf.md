@@ -3,9 +3,9 @@ title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3376'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -252,7 +252,7 @@ when:
 | USERAGENT | 攻击工具 | 攻击工具是指使用自动化软件来找出安全漏洞或尝试利用已发现的漏洞。 |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻击尝试利用 2.16.0 版之前的 Log4J 版本中存在的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/cn/Log4Shell) |
 | BHH | 错误跳头 | 错误跳头是指尝试通过格式错误的 Transfer-Encoding (TE) 或 Content-Length (CL) 头或格式良好的 TE 和 CL 头进行 HTTP 走私 |
-| 代码注入 | 代码注入 | 代码注入是指通过用户输入任意的应用程序代码命令，试图控制或破坏目标系统。 |
+| CODEINJECTION | 代码注入 | 代码注入是指尝试通过用户输入的任意应用程序代码命令来获得控制权限或损坏目标系统。 |
 | ABNORMALPATH | 异常路径 | 异常路径表示原始路径与规范化路径不同（例如，`/foo/./bar` 标准化为 `/foo/bar`） |
 | DOUBLEENCODING | 双重编码 | 双重编码检查双重编码 html 字符的规避技术 |
 | NOTUTF8 | 无效编码 | 无效编码可能会促使服务器将请求中的恶意字符转换为响应，从而导致拒绝服务或 XSS |
