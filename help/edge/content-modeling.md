@@ -2,9 +2,9 @@
 title: 使用 Edge Delivery Services 项目进行 AEM 创作的内容建模
 description: 了解如何对使用 Edge Delivery Services 项目进行的 AEM 创作进行内容建模以及如何为您自己的内容进行建模。
 source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2097'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -109,19 +109,19 @@ ht-degree: 86%
 
 * 必须使用 `core/franklin/components/block/v1/block` 资源类型（AEM 中区块逻辑的一般实施）。
 * 必须定义区块名称，该名称将呈现在区块的表标题中。
-   * 块名称用于获取正确的样式和脚本以装饰块。
+   * 区块名称用于获取正确的样式和脚本，以装饰区块。
 * 可以定义[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure)。
-   * 模型ID是对组件模型的引用，模型定义了在属性边栏中作者可用的字段。
+   * 模型 ID 是对组件模型的引用，它定义了作者在属性栏中可用的字段。
 * 可以定义[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components)。
-   * 过滤器ID是对组件过滤器的引用，允许更改创作行为，例如，通过限制可向块或部分添加哪些子项，或者启用哪些RTE功能。
+   * 过滤器 ID 是对组件过滤器的引用，它允许更改创作行为，例如通过限制可以将哪些子项添加到区块或部分，或者启用哪些 RTE 功能。
 
-将块添加到页面后，所有这些信息都会存储在AEM中。 如果缺少资源类型或块名称，则块不会在页面上呈现。
+在将区块添加到页面时，所有这些信息都存储在 AEM 中。如果缺少资源类型或区块名称，则该区块将不会在页面上呈现。
 
 >[!WARNING]
 >
->可能时，无需实施自定义AEM组件，也不建议实施这些组件。 AEM 提供的 Edge Delivery Services 组件够用了，并提供了某些护栏以简化开发。
+>在可能的情况下，没有必要或不建议实施自定义 AEM 组件。AEM 提供的 Edge Delivery Services 组件是足够的，并提供了某些护栏，以便于开发。
 >
->AEM提供的组件呈现的标记可由以下对象使用： [helix-html2md](https://github.com/adobe/helix-html2md) 发布到Edge Delivery Services时由 [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) 在通用编辑器中加载页面时。 标记是AEM与系统其他部分之间的稳定合同，不允许进行自定义。 因此，项目不得更改组件，也不得使用自定义组件。
+>AEM 提供的组件提供了一个标记，当发布到 Edge Delivery Services 时，[helix-html2md](https://github.com/adobe/helix-html2md) 可以使用该标记，当在通用编辑器中加载页面时，[aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) 可以使用此标记。该标记是 AEM 与系统其他部分之间的稳定契约，不允许进行自定义。因此，项目不得更改组件，也不得使用自定义组件。
 
 ### 区块结构 {#block-structure}
 
@@ -166,7 +166,7 @@ ht-degree: 86%
 </div>
 ```
 
->[!TAB 表]
+>[!TAB 表格]
 
 ```text
 +---------------------------------------------+
@@ -224,7 +224,7 @@ ht-degree: 86%
 </div>
 ```
 
->[!TAB 表]
+>[!TAB 表格]
 
 ```text
 +-----------------------------------------------------------------------+
@@ -303,7 +303,7 @@ ht-degree: 86%
 </div>
 ```
 
->[!TAB 表]
+>[!TAB 表格]
 
 ```text
 +------------------------------------------------------------ +
@@ -374,7 +374,7 @@ ht-degree: 86%
 </picture>
 ```
 
->[!TAB 表]
+>[!TAB 表格]
 
 ```text
 ![A red car on a road][image0]
@@ -421,7 +421,7 @@ ht-degree: 86%
 </em>
 ```
 
->[!TAB 表]
+>[!TAB 表格]
 
 ```text
 [adobe.com](https://www.adobe.com "Navigate to adobe.com")
@@ -450,7 +450,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 <h2>Getting started</h2>
 ```
 
->[!TAB 表]
+>[!TAB 表格]
 
 ```text
 ## Getting started
@@ -462,9 +462,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 [字段折叠](#field-collapse)是指将多个属性合并为单个语义元素，元素分组是指将多个语义元素连接成单个单元格。在应限制作者可创建的元素的类型和数量的用例中，这特别有用。
 
-例如，Teaser组件可能允许作者仅创建子标题、标题和单个段落描述，以及最多两个行动号召按钮的组合。 将这些元素分组在一起会产生一个语义标记，无需进一步操作即可设置其样式。
+例如，Teaser 组件可能只会允许作者创建一个子标题、标题和单个段落描述，并与最多两个动作按钮相结合。将这些元素分组在一起会产生一个语义标记，无需进一步操作即可设置其样式。
 
-元素分组使用命名约定，组名与组中的每个属性之间用下划线分隔。 组中属性的字段折叠按前文所述方式工作。
+元素分组会使用命名约定，其中组名称与组中的每个属性之间用下划线分隔。组中属性的字段折叠的工作原理如前所述。
 
 >[!BEGINTABS]
 
@@ -511,7 +511,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 </div>
 ```
 
->[!TAB 表]
+>[!TAB 表格]
 
 ```text
 +-------------------------------------------------+
@@ -609,7 +609,7 @@ Edge Delivery Services 的内容模型有意只允许单级嵌套，即部分包
 
 要创建此类表，请创建一个页面并使用 Sites 控制台中的元数据模板。
 
-在电子表格的页面属性中，定义所需的元数据字段以及 URL。然后，为每个页面路径或页面路径模式添加元数据。
+在电子表格的页面属性中，定义所需的元数据字段以及 URL。然后添加每个页面路径或页面路径模式的元数据。
 
 在发布之前，请确保也已将电子表格添加到您的路径映射中。
 
