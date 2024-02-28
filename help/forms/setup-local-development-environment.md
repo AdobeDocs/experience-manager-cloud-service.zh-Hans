@@ -3,9 +3,10 @@ title: 如何为AEM Forms设置本地开发环境？
 description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开发环境
 role: Admin, Developer, User
 feature: Adaptive Forms
-source-git-commit: 58325cccf218eb2176868879842a795d1c91d8a6
+exl-id: 12877a77-094f-492a-af58-cffafecf79ae
+source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2724'
 ht-degree: 2%
 
 ---
@@ -66,7 +67,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
 -->
 
-## 前提条件
+## 先决条件
 
 您需要以下软件来设置本地开发环境。 在开始设置本地开发环境之前，请下载以下内容：
 
@@ -129,7 +130,12 @@ Adobe Experience Manager Formsas a Cloud Service功能存档提供了用于在�
 
 1. 导航到crx-quickstart/install目录。 如果该文件夹不存在，请创建它。
 
-1. 停止AEM实例，放置 [!DNL AEM Forms] 附加功能存档， `aem-forms-addon-<version>.far`，然后重新启动实例。
+1. 停止AEM实例，放置 [!DNL AEM Forms] 附加功能存档， `aem-forms-addon-<version>.far`，位于install文件夹中。
+1. 转到活动命令窗口并按 `Ctrl + C` 命令以重新启动SDK。
+
+   >[!NOTE]
+   >
+   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 ### 配置用户和权限 {#configure-users-and-permissions}
 
@@ -242,7 +248,7 @@ AEM Forms as aCloud Service提供了基于Docker的SDK环境，可更轻松地�
 >[!NOTE]
 >
 > 设置基于AEM Archetype版本30或更高版本的项目以获取并使用Microsoft®Dynamics 365和Salesforce表单数据模型与AEM Formsas a Cloud Service。
-设置基于AEM Archetype版本32或更高版本的项目，以获取并使用AEM Formsas a Cloud Service的Tranquil、Urbane和Ultraminary主题。
+> 设置基于AEM Archetype版本32或更高版本的项目，以获取并使用AEM Formsas a Cloud Service的Tranquil、Urbane和Ultraminary主题。
 
 要设置项目，请执行以下操作：
 
@@ -269,7 +275,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
      >[!WARNING]
      >
-     * 使用版本45创建原型项目时， [AEM原型项目文件夹]/pom.xml最初将forms核心组件版本设置为2.0.64。在构建或部署原型项目之前，请将Forms核心组件版本更新为2.0.62。
+     >* 使用版本45创建原型项目时， [AEM原型项目文件夹]/pom.xml最初将forms核心组件版本设置为2.0.64。在构建或部署原型项目之前，请将Forms核心组件版本更新为2.0.62。
 
 1. 将项目部署到您的本地开发环境。 您可以使用以下命令部署到本地开发环境
 
