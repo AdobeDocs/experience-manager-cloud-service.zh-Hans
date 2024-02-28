@@ -1,13 +1,17 @@
 ---
-description: 本教程包含与EDS组件相关的所有信息。
-title: 表单块中支持的表单组件 — 开发人员教程
+title: AEM Forms Edge Delivery Service表单组件
+description: AEM Forms Edge交付服务专为实现卓越性能而打造，使您能够预见简化数据收集和用户参与的未来。 本文列出了可用于EDD表单的所有现成表单组件。
 feature: Edge Delivery Services
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+hide: true
+hidefromtoc: true
+source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '871'
 ht-degree: 5%
 
 ---
+
+
 
 
 # 表单块边缘交付中支持的HTML组件
