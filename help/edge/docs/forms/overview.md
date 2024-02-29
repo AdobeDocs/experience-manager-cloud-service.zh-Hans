@@ -4,39 +4,27 @@ description: AEM Forms Edge Delivery Service 专为实现最佳性能而构建�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 63%
+source-wordcount: '419'
+ht-degree: 51%
 
 ---
 
 
-# AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
+# AEM Forms Edge Delivery Service
 
+AEM Forms边缘交付服务是由Adobe提供的一项可组合服务，允许您创建和交付影响大、性能快的Web窗体。
 
-<div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
-        <main class="content">
-            <section class="content-section">
-                <p style="line-height: 1.5;">AEM Forms Edge Delivery Service 是 Adobe 提供的一项可组合服务，允许您创建和交付具有高影响力、可快速执行的 Web 表单。您可以使用该服务执行以下操作：</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">使用令人惊叹的表单Captivate用户</h2>
-                <img src="/help/edge/assets/enrollment-form.png" alt="注册表单" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">使用预建组件库轻松构建复杂且引人入胜的表单。 轻松集成reCAPTCHA，将表单直接提交到电子邮件，并允许无缝文件上传到Sharepoint、Azure Storage和Amazon S3等安全存储解决方案。 甚至可创建您自己的自定义表单组件，将您独特的愿景变为现实。</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">使用完美的Lighthouse分数构建表单</h2>
-                <img src="/help/edge/assets/lighthouse-forms.png" alt="表单的完美灯塔分数" style="float: right; margin: 20px 0 0 20px; width: 30%;">
-                <p style="line-height: 1.5;"> 构建可快速加载和渲染的表单，即使在Internet连接速度较慢的情况下也是如此。 缩短加载时间并优化用户体验有助于提高表单完成率和转化率。</p>
-            </section>
-            <section class="content-section"></br>
-                <h2 style="font-size: 20px; margin-bottom: 10px;">使用您选择的工具创建数字注册体验</h2>
-                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="注册表单" style="float: left; margin: 0 20px 20px 0; width: 30%;">
-                <p style="line-height: 1.5;">通过分离内容来源而提高创作效率。可直接使用 AEM 创作和基于文档的创作。因此，您可以在同一网站上使用多个内容源，并使用首选创作工具，例如Microsoft Excel、Google Sheets或AEM编辑器。</p>
-            </section>
-        </main>
-    </div>
+![EDS Forms主要功能](/help/edge/assets/eds-forms-key-features.png)
+
+您可以使用该服务执行以下操作：
+
+* **使用令人惊叹的表单Captivate用户**：使用预建组件库轻松构建复杂且吸引人的表单。 轻松集成reCAPTCHA，将表单直接提交到电子邮件，并允许无缝文件上传到Sharepoint、Azure Storage和Amazon S3等安全存储解决方案。 甚至可创建您自己的自定义表单组件，将您独特的愿景变为现实。
+
+* **使用您选择的工具创建数字注册体验**：通过分离内容源提高创作效率。 开箱即用地您可以使用基于文档的创作(Microsoft 365和Google Workspace)和AEM创作(AEM编辑器)。 因此，您可以在同一网站上使用多个内容源并使用首选创作工具，例如Microsoft Excel、Google Sheets或自适应Forms编辑器。
+
+* **使用完美的Lighthouse分数构建表单**：构建可快速加载和渲染的表单，即使在Internet连接速度较慢的情况下也是如此。 缩短加载时间并优化用户体验有助于提高表单完成率和转化率。
 
 
 <!-- >
@@ -66,7 +54,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
 
     -->
 
-## 从基础知识开始
+## 开始创建表单
 
 <div>
 
