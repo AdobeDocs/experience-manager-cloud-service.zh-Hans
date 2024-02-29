@@ -4,9 +4,9 @@ description: AEM Forms Edge交付服务专为实现卓越性能而打造，使�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '872'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 AEM Forms Edge交付包含一个表单块。 表单块可帮助您轻松创建表单，以捕获和存储捕获的数据。
 
-表单块支持HTML5组件，例如文本、电子邮件、数字、日期等。 它还支持文本区域、select和fieldset元素，并包括HTML-5固有的输入验证功能。 表单块为所有字段类型和容器创建统一的HTML结构，以确保一致性。 您也可以 [设置字段类型的样式](https://adobe-rnd.github.io/form-block/customization/styling_form) 使用 `form.css` 文件。
+表单块支持OOTBHTML-5组件，例如文本、电子邮件、数字、日期等。 它还支持文本区域、select和fieldset元素，并包括HTML-5固有的输入验证功能。 表单块为所有字段类型和容器创建统一的HTML结构，以确保一致性。 您也可以 [设置字段类型的样式](https://adobe-rnd.github.io/form-block/customization/styling_form) 使用 `form.css` 文件。
 
 ## 表单块中支持的HTML5输入类型
 

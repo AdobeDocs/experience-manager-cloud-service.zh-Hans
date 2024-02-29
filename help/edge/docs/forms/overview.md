@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service 专为实现最佳性能而构建�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 65%
+ht-degree: 63%
 
 ---
 
@@ -15,26 +15,28 @@ ht-degree: 65%
 # AEM Forms Edge Delivery Service {#aem-forms-edge-delivery-service-overview}
 
 
-<div>
-&lt;style="font-family: Arial, sans-serif; margin: 0; padding: 0;"&gt;
-    <main class="content">
-      <section class="content-section">
-        <p style="line-height: 1.5;">AEM Forms Edge Delivery Service 是 Adobe 提供的一项可组合服务，允许您创建和交付具有高影响力、可快速执行的 Web 表单。您可以使用该服务执行以下操作：</p>
-        </section> <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">使用令人惊叹的表单Captivate用户</h2>
-        <img src="/help/edge/assets/enrollment-form.png" alt="注册表单" style="float: left; margin: 0 20px 20px 0; width: 150px;">
-        <p style="line-height: 1.5;">使用预建组件库轻松构建复杂且引人入胜的表单。 轻松集成reCAPTCHA，将表单直接提交到电子邮件，并允许无缝文件上传到Sharepoint、Azure Storage和Amazon S3等安全存储解决方案。 甚至可创建您自己的自定义表单组件，将您独特的愿景变为现实。</p>
-        </section> <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">使用完美的Lighthouse分数构建表单</h2>
-        <img src="/help/edge/assets/lighthouse-forms.png" alt="表单的完美灯塔分数" style="float: right; margin: 20px 0 0 20px; width: 150px;">
-        <p style="line-height: 1.5;"> 构建可快速加载和渲染的表单，即使在Internet连接速度较慢的情况下也是如此。 缩短加载时间并优化用户体验有助于提高表单完成率和转化率。</p>
-        </section>
-        <section class="content-section">
-        <h2 style="font-size: 20px; margin-bottom: 10px;">使用您选择的工具创建数字注册体验</h2>
-        <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="注册表单" style="float: left; margin: 0 20px 20px 0; width: 150px;">
-        <p style="line-height: 1.5;">通过分离内容来源而提高创作效率。可直接使用 AEM 创作和基于文档的创作。因此，您可以在同一网站上使用多个内容源，并使用首选创作工具，例如Microsoft Excel、Google Sheets或AEM编辑器。</p>
-        </section>
-</div>
+<div style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+        <main class="content">
+            <section class="content-section">
+                <p style="line-height: 1.5;">AEM Forms Edge Delivery Service 是 Adobe 提供的一项可组合服务，允许您创建和交付具有高影响力、可快速执行的 Web 表单。您可以使用该服务执行以下操作：</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">使用令人惊叹的表单Captivate用户</h2>
+                <img src="/help/edge/assets/enrollment-form.png" alt="注册表单" style="float: left; margin: 0 20px 20px 0; width: 30%;">
+                <p style="line-height: 1.5;">使用预建组件库轻松构建复杂且引人入胜的表单。 轻松集成reCAPTCHA，将表单直接提交到电子邮件，并允许无缝文件上传到Sharepoint、Azure Storage和Amazon S3等安全存储解决方案。 甚至可创建您自己的自定义表单组件，将您独特的愿景变为现实。</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">使用完美的Lighthouse分数构建表单</h2>
+                <img src="/help/edge/assets/lighthouse-forms.png" alt="表单的完美灯塔分数" style="float: right; margin: 20px 0 0 20px; width: 30%;">
+                <p style="line-height: 1.5;"> 构建可快速加载和渲染的表单，即使在Internet连接速度较慢的情况下也是如此。 缩短加载时间并优化用户体验有助于提高表单完成率和转化率。</p>
+            </section>
+            <section class="content-section"></br>
+                <h2 style="font-size: 20px; margin-bottom: 10px;">使用您选择的工具创建数字注册体验</h2>
+                <img src="/help/edge/assets/edge-delivery-forms-authoring-tools.png" alt="注册表单" style="float: left; margin: 0 20px 20px 0; width: 30%;">
+                <p style="line-height: 1.5;">通过分离内容来源而提高创作效率。可直接使用 AEM 创作和基于文档的创作。因此，您可以在同一网站上使用多个内容源，并使用首选创作工具，例如Microsoft Excel、Google Sheets或AEM编辑器。</p>
+            </section>
+        </main>
+    </div>
 
 
 <!-- >
@@ -112,19 +114,19 @@ Build complex and engaging forms with ease using a library of pre-built componen
         </a>
         <p>通过检查表单输入的格式是否正确，减少错误和挫败感。</p>
     </div> 
+            <div class="card-container">
+        <a href="/help/edge/docs/forms/rules-forms.md">
+            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="使用规则向表单添加动态行为" style="border-radius: 5px;"> </b>
+            <br><b style="margin-top: 5px;">使用规则向表单添加动态行为</b>
+        </a>
+        <p>跨多种表单重复使用预配置的片段。</p>
+    </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
             <img src="/help/edge/assets/smock_abc_18_n.svg" alt="翻译 EDS Form" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">翻译表单</b>
         </a>
         <p>扩大表单的覆盖范围，同时控制成本。</p>
-    </div>
-    <div class="card-container">
-        <a href="/help/edge/docs/forms/form-fragments.md">
-            <img src="/help/edge/assets/smock_documentfragment_18_n.svg" alt="在 EDS Form 中使用表单片段" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">创建表单片段</b>
-        </a>
-        <p>跨多种表单重复使用预配置的片段。</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
@@ -147,6 +149,7 @@ Build complex and engaging forms with ease using a library of pre-built componen
         </a>
         <p>使用 OOTB reCAPTCHA 集成实现强大的垃圾邮件和机器人防护功能。</p>
     </div>
+
 
 </div>
 

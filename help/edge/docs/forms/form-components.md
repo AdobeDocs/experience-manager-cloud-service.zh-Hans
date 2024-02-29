@@ -4,9 +4,9 @@ description: AEM Forms Edge交付服务专为实现卓越性能而打造，使�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1dc4915f0b149ef67dfa22c8d4c6be7538170d38
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 5%
 
 ---
@@ -57,8 +57,8 @@ ht-degree: 5%
    </td>
   </tr>
       <tr>
-   <td>占位符</td>
-   <td>文本、搜索、URL、电话、电子邮件、密码和号码</td>
+   <td>描述</td>
+   <td>适用于所有字段</td>
    <td> 占位符属性向用户简短提示字段应包含哪种信息。
    </td>
   </tr>

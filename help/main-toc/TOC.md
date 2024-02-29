@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 41976a70f5566c79a0e14d5d4e1396dbdee12046
+source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
 workflow-type: tm+mt
-source-wordcount: '4733'
-ht-degree: 99%
+source-wordcount: '4748'
+ht-degree: 98%
 
 ---
 
@@ -825,6 +825,7 @@ ht-degree: 99%
          + [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-eds-forms.md)
          + [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
          + [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)
+         + [使用规则向表单添加动态行为](/help/edge/docs/forms/rules-forms.md)
       + 功能 {#advanced-features-eds-forms}
          + [表单片段](/help/edge/docs/forms/form-fragments.md)
          + [可重复的部分](/help/edge/docs/forms/repeatable-forms.md)
@@ -832,6 +833,8 @@ ht-degree: 99%
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [感谢页面](/help/edge/docs/forms/thank-you-page-form.md)
          + [自定义组件](/help/edge/docs/forms/custom-components-forms.md)
+      + 引用 {#forms-references}
+         + [表单块组件列表](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 资源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
