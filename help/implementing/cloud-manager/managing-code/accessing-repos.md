@@ -2,12 +2,13 @@
 title: 访问存储库
 description: 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Git 存储库。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 1b24fa084577f2ba0dc718ee35d12e42ac9d609c
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 94%
+source-wordcount: '270'
+ht-degree: 85%
 
 ---
+
 
 # 访问存储库 {#accessing-repos}
 
@@ -23,7 +24,7 @@ Cloud Manager 通过使用管道卡上突出显示的&#x200B;**访问存储库�
 
    ![访问“环境”信息卡上的“存储库信息”按钮](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. 单击 **查看存储库信息** 按钮打开对话框以查看：
+1. 单击&#x200B;**查看存储库信息**&#x200B;按钮以打开一个对话框以查看：
 
    * Cloud Manager Git 存储库的 URL。
    * Git 用户名。
@@ -40,3 +41,9 @@ Cloud Manager 通过使用管道卡上突出显示的&#x200B;**访问存储库�
 >[!NOTE]
 >
 >**访问存储库信息**&#x200B;选项对具有&#x200B;**开发人员**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户可见。
+
+## 撤销访问密码 {#revoke-password}
+
+您可以随时撤消访问口令。 要这样做，请 [为此请求创建支持工单。](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+
+该票证将优先处理，并且应在一天内撤销。
