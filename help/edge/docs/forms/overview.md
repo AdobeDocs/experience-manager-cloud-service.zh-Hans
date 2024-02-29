@@ -4,19 +4,19 @@ description: AEM Forms Edge Delivery Service 专为实现最佳性能而构建�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 6fbeb94d3547d50e93ab80aee5d6458e51edb1da
+source-git-commit: e21b681b12e90110436c7319797809c8d6b75eea
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 51%
+source-wordcount: '445'
+ht-degree: 48%
 
 ---
 
 
 # AEM Forms Edge Delivery Service
 
-AEM Forms边缘交付服务是由Adobe提供的一项可组合服务，允许您创建和交付影响大、性能快的Web窗体。
+利用Adobe的AEM Forms Edge Delivery Service，简化表单创建并提高完成率。 这项功能强大、可组合的服务使您能够构建具有卓越性能和视觉吸引力的企业级表单。 AEM会优先处理用户体验和业务目标，从而确保超快加载时间和增加表单完成次数。
 
-![EDS Forms主要功能](/help/edge/assets/eds-forms-key-features.png)
+![EDS Forms主要功能](/help/edge/assets/eds-forms-key-features.png){width="70%"}
 
 您可以使用该服务执行以下操作：
 
