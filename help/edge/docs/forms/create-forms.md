@@ -4,15 +4,15 @@ description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1120'
 ht-degree: 17%
 
 ---
 
 
-# 为边缘交付服务(EDS)站点创建表单
+# 为Edge Delivery Service (EDS)站点创建表单
 
 在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。AEM Forms Edge Delivery 允许您使用 Word 或 Google Docs 等熟悉的工具创建表单。
 
@@ -79,7 +79,7 @@ AEM Forms Edge Delivery提供了一个表单块，以帮助您轻松创建表单
 
    ![将默认工作表重命名为“共享默认”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 要添加表单字段，请将行和列标题插入“shared-default”工作表。 每行应表示一个表单字段，列标题定义对应的字段 [属性](/help/edge/docs/forms/eds-form-field-properties).
+1. 要添加表单字段，请将行和列标题插入“shared-default”工作表。 每一行应表示 [表单字段](/help/edge/docs/forms/form-components.md)，列标题定义相应的字段 [属性](/help/edge/docs/forms/eds-form-field-properties).
 
    为了SWIFT起步，请考虑复制 [查询电子表格](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) 到电子表格中。 复制内容后，保存电子表格。
 
@@ -153,6 +153,7 @@ AEM Forms Edge Delivery提供了一个表单块，以帮助您轻松创建表单
 
 ## 查看更多
 
+* [表单组件](/help/edge/docs/forms/form-components.md)
 * [表单字段属性](/help/edge/docs/forms/eds-form-field-properties)
 * [创建并预览表单](/help/edge/docs/forms/create-forms.md)
 * [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
