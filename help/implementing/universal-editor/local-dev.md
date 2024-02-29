@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 进行本地 AEM 开发
 description: 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 16f2922a3745f9eb72f7070c30134e5149eb78ce
+source-git-commit: bbb7e7d9023f8326980196923bfab77c3968ead4
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 87%
+source-wordcount: '699'
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,13 @@ ht-degree: 87%
 
 ## 概述 {#overview}
 
-本文档介绍如何在HTTPS中将AEM与通用编辑器服务的本地副本一起运行，以便您可以使用通用编辑器在AEM上进行本地开发。
+Universal Editor Service 是一项用于将 Universal Editor 与后端系统绑定的服务。要能够在本地开发通用编辑器，必须运行通用编辑器服务的本地副本。 这是因为：
+
+* Adobe的官方通用编辑器服务在全球托管，并且您的本地AEM实例需要向Internet公开。
+* 使用本地AEM SDK进行开发时，无法从Internet访问Adobe的通用编辑器服务。
+* 如果您的AEM实例具有IP限制，并且Adobe的Universal Editor服务不在定义的IP范围内，则可以自行托管。
+
+本文档介绍如何在HTTPS中将AEM与通用编辑器服务的本地副本一起运行，以便您可以在AEM上本地开发以用于通用编辑器。
 
 ## 将 AEM 设置为在 HTTPS 上运行 {#aem-https}
 
@@ -26,13 +32,13 @@ ht-degree: 87%
 
 为此，您需要将 AEM 设置为在 HTTPS 上运行。出于开发目的，您可以使用自签名证书。
 
-请参阅此文档，了解如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
+[请参阅此文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) 介绍如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
 
 ## 安装 Universal Editor Service {#install-ue-service}
 
-Universal Editor Service 是一项用于将 Universal Editor 与后端系统绑定的服务。由于官方 Universal Editor Service 在全球范围内托管，因此，您的本地 AEM 实例需要在 Internet 上公开。为了避免此情况，您可以运行 Universal Editor Service 的本地副本。
+Universal Editor服务不是Universal Editor的完整副本，而只是其功能的子集，以确保来自本地AEM环境的调用不会通过Internet进行路由，而是从您控制的已定义端点进行路由。
 
-需要 [NodeJS 版本 16](https://nodejs.org/en/download/releases)才能运行 Universal Editor Service 的本地副本
+[NodeJS版本16](https://nodejs.org/en/download/releases) 运行Universal Editor服务的本地副本时需要。
 
 Universal Editor Service 由 AEM Engineering 直接分发。请与VIP项目中的工程师联系以获取本地副本。
 
@@ -98,6 +104,12 @@ Universal Editor 根据页面的检测方式了解使用哪个 Universal Editor 
 
 设置完成后，您应看到每个内容更新调用都转到 `https://localhost:8000` 而不是默认的 Universal Editor Service。
 
+>[!NOTE]
+>
+>尝试直接访问 `https://localhost:8000` 结果位于 `404` 错误。 这是预期行为。
+>
+>要测试对本地通用编辑器服务的访问，请使用 `https://localhost:8000/corslib/LATEST`. 请参阅 [下一节](#editing) 以了解详细信息。
+
 >[!TIP]
 >
 >有关如何检查页面以使用全局 Universal Editor Service 的更多详细信息，请参阅文档 [AEM Universal Editor 快速入门](/help/implementing/universal-editor/getting-started.md#instrument-page)
@@ -106,6 +118,6 @@ Universal Editor 根据页面的检测方式了解使用哪个 Universal Editor 
 
 在[本地运行 Universal Editor Service](#running-ue) 并且您的[内容页面经过检测可使用本地服务后，](#using-loca-ue)您现在可以启动编辑器。
 
-1. 打开您的浏览器以转至 `https://localhost:8000/`。
+1. 打开您的浏览器以转至 `https://localhost:8000/corslib/LATEST`。
 1. 指示您的浏览器接受[您的自签名证书。](#ue-https)
 1. 在自签名证书获得信任后，您可以使用本地 Universal Editor Service 编辑页面。
