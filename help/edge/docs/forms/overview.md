@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service 专为实现最佳性能而构建�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: 1c6e44fd6652d93ba73bc2eb3604cd08eae7a33c
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 48%
+source-wordcount: '610'
+ht-degree: 43%
 
 ---
 
@@ -24,22 +24,36 @@ ht-degree: 48%
 
 * **使用完美的Lighthouse分数构建表单**：构建可快速加载和渲染的表单，即使在Internet连接速度较慢的情况下也是如此。 缩短加载时间并优化用户体验有助于提高表单完成率和转化率。
 
-  <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms主要功能" style = "width=`80%`; align=`center`; border: 1px solid;padding: 15px;">
+  <div>
+    <style>
+    .image-container {
+    width: 80%;
+    text-align: center; 
+    }
+    .image-container img {
+        width: 70%; /* Set image width to 70% of the container */
+        border: .5px solid; /* Maintain the border style */
+        padding: 15px; /* Maintain the padding */
+    }
+</style>
+    <div class="image-container">
+    <img src="/help/edge/assets/eds-forms-key-features.png" alt="EDS Forms主要功能">
+    </div>
 
-<!-- >
-* **Captivate users with stunning forms**: 
-Build complex and engaging forms with ease using a library of pre-built components. Easily integrate reCAPTCHA, submit forms directly to email, and allow seamless file uploads to secure storage solutions like Sharepoint, Azure Storage, and Amazon S3. Even create your own custom forms components to bring your unique vision to life. 
 
-    ![Enrollment forms](/help/edge/assets/enrollment-form.png)
+</div>
+&lt;!— &gt; * **以令人惊叹的表单Captivate用户**：使用预建组件库轻松构建复杂且引人入胜的表单。 轻松集成reCAPTCHA，将表单直接提交到电子邮件，并允许无缝文件上传到Sharepoint、Azure Storage和Amazon S3等安全存储解决方案。 甚至可创建您自己的自定义表单组件，将您独特的愿景变为现实。
 
-* **Build forms with perfect lighthouse score**: Build forms that load and render quickly, even on slow internet connections. Faster loading times and optimized user experience contribute to higher form completion rates and improved conversion rates.
+    ！[注册表单](/help/edge/assets/enrollment-form.png)
 
-    ![perfect lighthouse score for your forms](/help/edge/assets/lighthouse-forms.png)
+* **构建 lighthouse 得分为满分的表单**：构建即使在互联网连接缓慢时也能快速加载和渲染的表单。缩短加载时间并优化用户体验有助于提高表单完成率和转化率。
 
-* **Create digital enrollment experiences with tools of your choice**: Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring and document-based authoring. As such, you can work with multiple content sources on the same website and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or AEM Editors.
+  ![表单的完美灯塔分数](/help/edge/assets/lighthouse-forms.png)
 
-    ![Edge Delivery forms authoring tools](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
-    
+* **使用您选择的工具创建数字注册体验**：通过分离内容源提高创作效率。 可直接使用 AEM 创作和基于文档的创作。因此，您可以在同一网站上使用多个内容源，并使用首选创作工具，例如Microsoft Excel、Google Sheets或AEM编辑器。
+
+  ![Edge Delivery表单创作工具](/help/edge/assets/edge-delivery-forms-authoring-tools.png)
+
 <!--
 * **Measure customer impact and deliver effective forms**: Use our RUM dashboards to visualize form performance and identify areas for improvement. Experiment with different versions and continuously optimize your forms for maximum effectiveness, ensuring you capture the data you need and drive better business outcomes.
 
