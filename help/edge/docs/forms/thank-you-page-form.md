@@ -1,13 +1,13 @@
 ---
-title: 配置 EDS Forms 的感谢页面
-description: 了解如何为EDS Forms配置感谢页面和重新定向，以优化用户体验并简化用户历程。
+title: 提交后配置感谢页面或重定向表单
+description: 了解如何为Forms Block配置感谢页面和重新定向，以优化用户体验并简化用户历程。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: cadeccd916884ca2437e2b2684771c181cc8281e
+source-git-commit: d6b1048c44022da47a9d7443f564a2ff9d1802cf
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 7%
+source-wordcount: '608'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 7%
 在自适应Forms块中，默认行为是显示感谢页面。 但是，您可以灵活地定制此体验，以满足您的特定需求。 选项包括：
 
 * [配置感谢页面和消息以符合您的品牌和沟通目标](#configuring-the-thank-you-page-and-message)
-* [在提交后将用户重定向到另一个页面](#redirect-users-to-another-page-post-submission)，进一步增强其历程
+* [在提交后将用户重定向到另一个页面以供进一步操作](#redirect-users-to-another-page-post-submission)
 
 ## 配置感谢页面和消息
 
@@ -43,10 +43,10 @@ ht-degree: 7%
 
 默认情况下，自适应Forms块会将用户重定向到“感谢您”页面。 要将用户重定向到默认“感谢”页面以外的其他页面，您有两个选项：
 
-* 将现有的“感谢”页面替换为其他页面，或者
-* 将“感谢您”页面重定向到您选择的另一个页面。
+* [将“感谢”页面替换为其他页面](#replace-the-existing-thankyou-page)
+* [使用网站重定向进行“感谢您”页面重定向](#use-website-redirects-for-thankyou-page-redirection)
 
-### 替换现有的“感谢”页面
+### 替换“感谢”页面
 
 1. 打开&quot;[EDS项目]/blocks/form/form.js”文件进行编辑。
 1. 更改 `thankyou` 页面放入您选择的页面中的以下行：
@@ -70,9 +70,15 @@ ht-degree: 7%
 1. 确保EDS项目文件夹中存在该页面并将其发布。
 
 
-### 使用网站重定向
+### 使用网站重定向进行“感谢您”页面重定向
 
-配置网站重定向以将“感谢您”页面定向到其他页面。 请参阅 [重定向文档](https://www.aem.live/docs/redirects) 以获取详细说明。
+在提交表单后将用户重定向到另一个页面可以通过提供相关信息、确认操作以及引导用户获得预期结果来增强用户体验。 例如，
+
+* 用户完成购买表单后，会被重定向到支付页面以安全地完成交易。
+* 在提交事件或网络研讨会的注册表单时，用户将被重定向到显示事件详细信息（如日期、时间和位置）的确认页面。
+
+要将“感谢”页面重定向到其他页面，请使用 [网站重定向](https://www.aem.live/docs/redirects) 电子表格。
+
 
 ## 查看更多
 
