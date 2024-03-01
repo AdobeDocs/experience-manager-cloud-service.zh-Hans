@@ -4,9 +4,9 @@ description: 自定义 AEM Forms Edge Delivery Service Form 的主题和样式
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1271'
 ht-degree: 1%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # 设置表单字段样式
 
-Forms对于用户在网站上的交互至关重要，允许用户输入数据。 本指南介绍了在中设计各种表单字段样式的基础知识 [表单块](/help/edge/docs/forms/create-forms.md)，帮助您创建美观且用户友好的表单。
+Forms对于用户在网站上的交互至关重要，允许用户输入数据。 本指南介绍了在中设计各种表单字段样式的基础知识 [自适应表单块](/help/edge/docs/forms/create-forms.md)，帮助您创建美观且用户友好的表单。
 
 ## 了解表单字段类型
 
-在深入研究样式之前，让我们回顾表单块支持的常见表单字段类型：
+在深入研究样式之前，让我们回顾自适应表单块支持的常见表单字段类型：
 
 * 输入字段：包括文本输入、电子邮件输入、密码输入等。
 * 复选框组：用于选择多个选项。
@@ -35,7 +35,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 * 方框模型： CSS方框模型将HTML元素的结构描述为一个由边距、边框和边距包围的内容区域。
 * Flexbox/Grid：CSS Flexbox和Grid布局是用于创建响应式灵活设计的强大工具。
 
-## 为表单块设置表单样式
+## 为自适应表单块设置表单样式
 
 表单块提供了一个标准化的HTML结构，从而简化了表单组件的选择和样式设置过程：
 

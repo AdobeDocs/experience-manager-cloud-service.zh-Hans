@@ -4,21 +4,21 @@ description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 39bb45b285fcd938d44b9748aa8559b89a3636b2
+source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1147'
 ht-degree: 17%
 
 ---
 
 
-# 为Edge Delivery Service (EDS)站点创建表单
+# 使用自适应表单块创建表单
 
 在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。AEM Forms Edge Delivery 允许您使用 Word 或 Google Docs 等熟悉的工具创建表单。
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
 
-AEM Forms Edge Delivery提供了一个表单块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以在AEM EDS项目中包含该表单块以开始创建表单。 我们开始吧：
+AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以在AEM EDS项目中包含自适应表单块以开始创建表单。 我们开始吧：
 
 
 ## 先决条件
@@ -26,23 +26,23 @@ AEM Forms Edge Delivery提供了一个表单块，以帮助您轻松创建表单
 在开始之前，请确保您已完成以下步骤：
 
 * 使用AEM样板设置边缘交付服务(EDS) GitHub项目，并在本地计算机上克隆相应的GitHub存储库。 请参阅 [开发人员教程](https://www.aem.live/developer/tutorial) 以了解详细信息。 在本文档中，将边缘交付服务(EDS)项目的本地文件夹称为 `[EDS Project repository]` .
-* 克隆 [Forms阻止存储库](https://github.com/adobe/afb) 在本地计算机上。 它包含在EDS网页上呈现表单的代码。 在本文档中，将Forms Block存储库的本地文件夹称为 `[Forms Block repository]`.
 * 确保您有权访问Google工作表或Microsoft SharePoint。 要将Microsoft SharePoint设置为您的内容源，请参阅 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## 创建表单
 
-+++ 步骤1：将表单块添加到您的边缘交付服务(EDS)项目。
++++ 步骤1：将自适应表单块添加到您的边缘交付服务(EDS)项目。
 
-使用“表单”块，用户可以为Edge Delivery Service站点创建表单。 但是，此块未包含在默认的AEM样板中（用于创建Edge Delivery Service项目）。 要将表单块无缝集成到您的边缘交付服务项目中，请执行以下操作：
+“自适应”使用户能够为Edge Delivery Service Site创建表单。 但是，此块未包含在默认的AEM样板中（用于创建Edge Delivery Service项目）。 要将自适应表单块无缝集成到您的边缘交付服务项目中，请执行以下操作：
 
-1. **找到表单块存储库：** 访问 [Forms阻止存储库]/blocks文件夹并复制 `form` 文件夹。
-1. **将表单块粘贴到EDS项目中：**
+1. **克隆自适应表单块存储库**：克隆 [自适应表单块存储库](https://github.com/adobe/afb) 在本地计算机上。 它包含在EDS网页上呈现表单的代码。 在本文档中，将Forms Block存储库的本地文件夹称为 `[Adaptive Form block repository]`.
+1. **找到自适应表单块存储库：** 访问 [自适应表单块存储库]/blocks文件夹并复制 `form` 文件夹。
+1. **将自适应表单块粘贴到EDS项目中：**
 导航至 [EDS项目存储库]/blocks/文件夹并粘贴表单文件夹。
 1. **将更改提交到GitHub：** 将表单文件夹及其基础文件签入到GitHub上的边缘交付服务项目。
 
-完成这些步骤后，表单块已成功集成到GitHub上的边缘交付服务(EDS)项目存储库中。
+完成这些步骤后，自适应表单块已成功添加到GitHub上的边缘交付服务(EDS)项目存储库中。 您现在可以创建表单并将其添加到EDS Sites页面。
 
 
 **GitHub内部版本问题疑难解答**
@@ -90,7 +90,7 @@ AEM Forms Edge Delivery提供了一个表单块，以帮助您轻松创建表单
 
    ![使用AEM Sidekick预览工作表](/help/edge/assets/preview-form.png)
 
-   预览和发布后，新的浏览器选项卡将以JSON格式显示工作表的内容。 确保捕获预览URL，因为这是在下一部分呈现表单所必需的。 URL格式如下所示：
+   在预览时，新的浏览器选项卡以JSON格式显示工作表的内容。 确保捕获预览URL，因为这是呈现下一节中的表单所必需的。 URL格式如下所示：
 
 
    ```JSON
@@ -111,7 +111,7 @@ AEM Forms Edge Delivery提供了一个表单块，以帮助您轻松创建表单
 +++ 步骤3：使用边缘交付服务(EDS)页面预览表单。
 
 
-到目前为止，您已经将表单块添加到EDS项目并准备了表单的结构。 现在，如果要预览表单：
+到目前为止，您已将自适应表单块添加到EDS项目并准备了表单的结构。 现在，如果要预览表单：
 
 1. **访问项目目录：** 打开您的Microsoft SharePoint或Google Drive帐户，然后导航到您的AEM Edge Delivery项目目录。
 
@@ -119,7 +119,7 @@ AEM Forms Edge Delivery提供了一个表单块，以帮助您轻松创建表单
 
 1. **导航到所需的位置：** 在文档中移动到要添加表单的所需位置。
 
-1. **添加表单块：** 在文件中插入名为“Form”的块，如下所示：
+1. **添加自适应表单块：** 在文件中插入名为“Form”的块，如下所示：
 
    | 表单 |
    |---|
