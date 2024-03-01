@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fd0f0fdfc0aaf02d631b9bf909fcb1e1431f5401
+source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
 workflow-type: tm+mt
-source-wordcount: '4994'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -1124,6 +1124,31 @@ query allTeams {
 * 查询不能包含超过1M (1024 * 1024)个字符
 * 查询不能包含超过15000个令牌
 * 查询不能包含超过200000个空白令牌
+
+您还需要了解：
+
+* 当GraphQL查询在两个（或更多）模型中包含同名字段时，将返回字段冲突错误：
+
+   * 因此，在何处：
+
+      * 两个（或多个模型）作为可能的参照；当它们被定义为允许参照时 **模型类型** 在内容片段引用中。
+
+     和：
+
+      * 这两个模型具有具有相同名称的字段；这意味着两个模型中出现相同的名称。
+
+     和
+
+      * 这些字段的数据类型不同。
+
+   * 例如：
+
+      * 当两个（或多个）片段具有不同模型时(例如， `M1`， `M2`)用作其他片段中的可能引用（内容引用或片段引用）；例如， `Fragment1` `MultiField/List`
+      * 这两个片段具有不同的模型(`M1`， `M2`)的字段具有相同名称，但类型不同。
+举例说明：
+         * `M1.Title` 作为 `Text`
+         * `M2.Title` 作为 `Text/MultiField`
+      * 如果GraphQL查询包含 `Title` 字段。
 
 ## 常见问题解答 {#faqs}
 
