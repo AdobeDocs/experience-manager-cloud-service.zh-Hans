@@ -4,10 +4,10 @@ description: 了解AE的基础知识；使用包管理器进行包管理。
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '3774'
-ht-degree: 4%
+source-wordcount: '3769'
+ht-degree: 3%
 
 ---
 
@@ -282,7 +282,7 @@ Package Manager分为四个主要功能区域：
 
 1. 单击 **生成**. 将出现一个对话框，要求确认您确实要生成包，因为任何现有的包内容都将被覆盖。
 
-1. 单击&#x200B;**确定**。AEM会生成资源包，并在活动列表中列出添加到资源包的所有内容。 完成AEM后，将显示已生成包的确认信息，并且（关闭对话框时）会更新包列表信息。
+1. 单击 **确定**. AEM会生成资源包，并在活动列表中列出添加到资源包的所有内容。 完成AEM后，将显示已生成包的确认信息，并且（关闭对话框时）会更新包列表信息。
 
 >[!TIP]
 >
@@ -409,7 +409,7 @@ Package Manager分为四个主要功能区域：
 
 如果不满足依赖关系，则包中具有这些依赖关系的OSGi捆绑包将不会启动。 这会导致应用程序部署中断，因为依赖未启动的OSGi捆绑包的任何内容都将无法正常运行。
 
-**错误解决方案**
+**错误解决**
 
 要解决因未满足的OSGi捆绑包导致的错误，必须调整包含未满足的导入的捆绑包中的依赖项版本。
 
@@ -433,7 +433,7 @@ Package Manager分为四个主要功能区域：
 
 错误状态表示包尝试部署的文件已覆盖，因此包中的更改将被覆盖覆盖（因此“隐藏”），并且不会生效。
 
-**错误解决方案**
+**错误解决**
 
 要解决此问题，请在中维护叠加文件 `/apps` 必须查看对中的覆盖文件所做的更改 `/libs` 并将所需的更改合并到叠加中( `/apps`)，并重新部署覆盖的文件。
 
@@ -455,7 +455,7 @@ Package Manager分为四个主要功能区域：
 
 不能提供显式错误。 验证仅指示安装包是否添加或影响任何新ACL权限。
 
-**错误解决方案**
+**错误解决**
 
 使用验证提供的信息，可以在CRXDE中查看受影响的节点，并根据需要在包中调整ACL。
 
@@ -612,4 +612,4 @@ AEM包可用于在AEMaaCS环境中创建和共享内容。
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com) 提供了可在本地开发AEM SDK中使用的AEM包。 在Software Distribution上提供的AEM包不得安装在AEMaaCS云环境中，除非经Adobe支持明确批准。
 
-欲知更多信息，请查看 [Software Distribution文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+欲知更多信息，请参见 [Software Distribution文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)

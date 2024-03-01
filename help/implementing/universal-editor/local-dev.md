@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 进行本地 AEM 开发
 description: 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: bbb7e7d9023f8326980196923bfab77c3968ead4
+source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 64%
+source-wordcount: '698'
+ht-degree: 61%
 
 ---
 
@@ -40,9 +40,9 @@ Universal Editor服务不是Universal Editor的完整副本，而只是其功能
 
 [NodeJS版本16](https://nodejs.org/en/download/releases) 运行Universal Editor服务的本地副本时需要。
 
-Universal Editor Service 由 AEM Engineering 直接分发。请与VIP项目中的工程师联系以获取本地副本。
+Universal Editor服务可通过Software Distribution使用。 请参阅 [Software Distribution文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) 以获取有关如何访问的详细信息。
 
-工程部将为您提供 `universal-editor-service.cjs` 文件。将该文件保存到您的本地开发环境中。
+保存 `universal-editor-service.cjs` 从Software Distribution到本地开发环境的文件。
 
 ## 创建证书以通过 HTTPS 运行 Universal Editor Service {#ue-https}
 
