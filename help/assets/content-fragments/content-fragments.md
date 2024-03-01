@@ -2,16 +2,16 @@
 title: 使用内容片段（资产 — 内容片段）
 description: 了解Adobe Experience Manager (AEM) as a Cloud Service中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和headless投放。 以及它们如何与MSM结合使用。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2222'
 ht-degree: 59%
 
 ---
 
 # 使用内容片段 {#working-with-content-fragments}
 
-通过Adobe Experience Manager (AEM)as a Cloud Service，您可以设计、创建、管理和使用内容片段 [发布独立于页面的内容](/help/sites-cloud/authoring/fragments/content-fragments.md). 利用这些功能，可准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。 它们也可以与一起使用 [多站点管理使您能够重复使用内容](#reusing-content-fragments-with-msm-assets).
+通过Adobe Experience Manager (AEM)as a Cloud Service，您可以设计、创建、管理和使用内容片段 [发布独立于页面的内容](/help/sites-cloud/authoring/fragments/content-fragments.md). 利用这些功能，可准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。 它们也可以与一起使用 [多站点管理使您能够重复使用内容](#reusing-content-fragments-with-msm).
 
 内容片段包含结构化内容：
 
@@ -50,7 +50,7 @@ ht-degree: 59%
 * [使用关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md) – 添加关联内容
 * [元数据 – 片段属性](/help/assets/content-fragments/content-fragments-metadata.md) – 查看和编辑片段属性
 * 使用 [内容片段，以及GraphQL，使您能够交付内容](/help/assets/content-fragments/content-fragments-graphql.md) 以便在您的应用程序中使用。 要帮助您完成此操作，您可以预览 [JSON输出](/help/assets/content-fragments/content-fragments-json-preview.md).
-* [使用MSM对资产重用内容片段](#reusing-content-fragments-with-msm-assets)
+* [使用MSM重用内容片段](#reusing-content-fragments-with-msm)
 
 >[!NOTE]
 >
@@ -288,13 +288,13 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 片段需要一个或多个专用组件来定义布局并投放部分或全部元素/变体和关联内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。
 
-## 通过MSM重用内容片段（适用于资产） {#reusing-content-fragments-with-msm-assets}
+## 在MSM中重用内容片段 {#reusing-content-fragments-with-msm}
 
 通过访问时 **资产** 控制台中，您可以使用MSM并为片段创建活动副本。
 
 有关更多详细信息，请参阅：
 
-* [使用MSM重用内容片段（对于资产）](/help/assets/content-fragments/content-fragments-msm.md)
+* [使用MSM重用内容片段](/help/assets/content-fragments/content-fragments-msm.md)
 * [使用MSM重新使用资产](/help/assets/reuse-assets-using-msm.md).
 
 这些启用 [继承](/help/assets/content-fragments/content-fragments-variations.md#inheritance) 适用于变体和片段的单个字段。
