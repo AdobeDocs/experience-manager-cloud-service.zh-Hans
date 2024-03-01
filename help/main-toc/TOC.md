@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
 workflow-type: tm+mt
 source-wordcount: '4748'
 ht-degree: 98%
@@ -484,7 +484,7 @@ ht-degree: 98%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [预览 – JSON 呈现](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [通过适用于资源的 MSM 重用内容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=zh-Hans)
+      + [使用MSM重用内容片段（对于资产）](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 历程：基础知识{#dm-journey}
          + [第一部分：什么是 Dynamic Media – 用例 – 资源如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -845,7 +845,7 @@ ht-degree: 98%
       + [管理员 API](https://www.aem.live/docs/admin.html)
       + [AEM 状态](https://www.aemstatus.net)
       + 工具 {#tools}
-         + [Sidekick Chrome 扩展](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM SidekickChrome扩展](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 机器人](https://github.com/apps/aem-code-sync)
          + [审核日志](/help/edge/docs/auditlog.md)
 + Headless {#headless}

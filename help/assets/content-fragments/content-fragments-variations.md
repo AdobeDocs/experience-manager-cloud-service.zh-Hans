@@ -2,7 +2,7 @@
 title: 变量 — 创作片段内容（资产 — 内容片段）
 description: 了解内容片段变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而提高灵活性。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 53%
@@ -402,7 +402,7 @@ ht-degree: 53%
 
 ## 继承 {#inheritance}
 
-继承是一种机制，通过该机制，可以将内容从一个片段自动推送到另一个片段。 继承的字段和变体可以是 [多站点管理](/help/assets/content-fragments/content-fragments.md#reusing-content-fragments-with-msm-assets).
+继承是一种机制，通过该机制，可以将内容从一个片段自动推送到另一个片段。 继承的字段和变体可以是 [多站点管理](/help/assets/content-fragments/content-fragments-msm.md).
 
 您可以取消（随后也可以重新启用）继承。根据上下文，这可用于变体，或者单个字段（如果片段是Live Copy的一部分）。
 
