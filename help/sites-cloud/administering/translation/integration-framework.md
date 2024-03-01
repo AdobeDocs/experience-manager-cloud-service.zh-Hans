@@ -4,10 +4,10 @@ description: 了解如何配置翻译集成框架以与第三方翻译服务集�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 92%
+source-wordcount: '1466'
+ht-degree: 75%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 92%
 
 ## 连接到翻译服务提供商 {#connecting-to-a-translation-service-provider}
 
-创建用于将 AEM 连接到您的翻译服务提供商的云配置。默认情况下，AEM 具有[连接到 Microsoft Translator](connect-ms-translator.md) 的功能。
+创建用于将 AEM 连接到您的翻译服务提供商的云配置。AEM包括以下功能 [连接到Microsoft® Translator](connect-ms-translator.md) 默认情况下。
 
 以下翻译供应商为翻译项目提供 AEM API 的实现。
 
-* [Microsoft Translator](connect-ms-translator.md)
+* [Microsoft](connect-ms-translator.md)
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)（Adobe Exchange 首选合作伙伴）
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
@@ -39,11 +39,11 @@ ht-degree: 92%
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
+<!-- THIS URL IS 404 * [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html) -->
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
-安装连接器软件包后，即可为连接器创建云配置。一般需要提供凭据，以便向翻译服务进行身份验证。有关为 Microsoft Translator 连接器添加云配置的信息，请参阅[与 Microsoft Translator 集成](connect-ms-translator.md)。
+安装连接器软件包后，即可为连接器创建云配置。通常，您必须提供凭据，以便向翻译服务进行身份验证。 有关为Microsoft® Translator连接器添加云配置的信息，请参阅 [与Microsoft® Translator集成](connect-ms-translator.md).
 
 如果需要，可为同一连接器创建多个云配置。 例如，为您在同一供应商的每个帐户或项目都创建一个配置。
 
@@ -51,7 +51,7 @@ ht-degree: 92%
 
 ## 创建翻译集成配置 {#creating-a-translation-integration-configuration}
 
-创建翻译集成框架配置以指定如何翻译您的内容。该配置包括以下信息：
+创建翻译集成框架配置，以便您可以指定如何翻译内容。 该配置包括以下信息：
 
 * 要使用哪个翻译服务提供商
 * 要执行人工翻译还是机器翻译
@@ -91,7 +91,7 @@ ht-degree: 92%
 | 翻译标记 | 此选项允许翻译与页面关联的标记。 |
 | 翻译页面资源 | 此属性定义如何翻译从文件系统添加到组件或从资源引用的资源：<br>- 不翻译：不翻译页面资源。<br>- 使用站点翻译工作流：根据在&#x200B;**站点**&#x200B;选项卡上配置的属性处理资源。<br>- 使用资源翻译工作流：根据在&#x200B;**资源**&#x200B;选项卡上配置的属性处理资源。 |
 | 自动执行翻译 | 启用此属性可在创建翻译项目后自动执行翻译作业。选择此选项时，无法复查翻译作业和划定其范围。 |
-| 禁用仅更新翻译 | 选中此选项后，更新翻译项目将提交所有可翻译的字段以供翻译，而非仅提交自上次翻译以来更改的字段。 |
+| 禁用仅更新翻译 | 选中此选项后，更新翻译项目会提交所有可翻译字段以供翻译，而不仅仅是自上次翻译以来更改的字段。 |
 
 ### 资源配置属性 {#assets-configuration-properties}
 
@@ -105,11 +105,11 @@ ht-degree: 92%
 | 翻译提供商 | 此属性定义执行翻译的翻译提供商。安装提供商对应的连接器后，列表中即出现该提供商。 |
 | 内容类别 | （仅限机器翻译）此属性描述所翻译的内容。在翻译内容时，类别可能会影响术语和措辞的选择。 |
 | 翻译资源 | 激活此属性以在翻译项目中包括资源。 |
-| 翻译元数据 | 激活此属性以翻译资源元数据。 |
-| 翻译标记 | 激活此属性以翻译与资源关联的标记。 |
-| 自动执行翻译 | 选择此属性可在创建翻译项目后自动执行翻译作业。选择此选项时，无法复查翻译作业或划定其范围。 |
-| 禁用仅更新翻译 | 选中此选项后，更新翻译项目将提交所有可翻译的字段以供翻译，而非仅提交自上次翻译以来更改的字段。 |
-| 为翻译启用内容模型字段 | 启用此选项将使用[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)上的&#x200B;**可翻译**&#x200B;字段确定是否翻译了该字段，并相应地自动创建[翻译规则](rules.md)。此选项取代了您可能已创建的任何翻译规则。 |
+| 翻译元数据 | 激活此属性以便翻译资源元数据。 |
+| 翻译标记 | 激活此属性，以便您能够翻译与资源关联的标记。 |
+| 自动执行翻译 | 选择此属性可在创建翻译项目后自动运行翻译作业。 选择此选项时，无法复查翻译作业或划定其范围。 |
+| 禁用仅更新翻译 | 选中此选项后，更新翻译项目会提交所有可翻译字段以供翻译，而不仅仅是自上次翻译以来更改的字段。 |
+| 为翻译启用内容模型字段 | 启用此选项将使用 **可翻译** 字段于 [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) 以确定是否转换字段并自动创建 [翻译规则](rules.md) 相应地。 此选项取代了您可能已创建的任何翻译规则。 |
 
 ## 配置页面以供翻译 {#configuring-pages-for-translation}
 
@@ -120,9 +120,9 @@ ht-degree: 92%
 
 翻译集成框架云配置标识要用于连接到服务提供商的云配置。 将源页面与框架云配置关联时，该页面必须与该框架云配置使用的服务提供商云配置关联。
 
-将页面与云配置关联时，该页面的后代页面继承这种关联。例如，如果将 `/content/wknd/language-masters/en/magazine` 页面与翻译集成框架关联，则根据该框架翻译 `magazine` 页面及其下方的子页面。
+将页面与云配置关联时，该页面的后代页面继承这种关联。例如，如果您将 `/content/wknd/language-masters/en/magazine` 页面上的库， `magazine` 页面及其下方的子页面将根据框架进行翻译。
 
-必要时，可在后代页面上取代该关联。例如，站点的内容主要涉及旅行和生活方式，但某个分支的页面介绍公司情况。在这种情况下，站点的根页面可能与指定使用“生活方式”类别进行机器翻译的翻译集成框架关联，而介绍公司情况的分支将使用按“通用”类别执行机器翻译的框架。
+必要时，可在后代页面上取代该关联。例如，站点的内容主要涉及旅行和生活方式，但某个分支的页面介绍公司情况。在这种情况下，站点的根页面可能与指定使用“生活方式”类别进行机器翻译的翻译集成框架关联。 描述公司情况的分支将使用按“常规”类别执行机器翻译的框架。
 
 ### 将页面与翻译提供商关联 {#associating-a-page-with-a-translation-provider}
 
