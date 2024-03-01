@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 974650c0f268de8ecff7fdb693cdd1e32efb2e1c
+source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
 workflow-type: tm+mt
-source-wordcount: '4748'
+source-wordcount: '4751'
 ht-degree: 98%
 
 ---
@@ -781,8 +781,8 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
-+ Edge Delivery Services {#edge-delivery}
-   + [AEM 和 Edge Delivery Services](/help/edge/overview.md)
++ 带有Edge Delivery Services的AEM {#edge-delivery}
+   + [Edge Delivery Services快速入门](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
    + [开发人员快速入门指南](/help/edge/edge-dev-getting-started.md)
    + [针对 Edge Delivery 创作内容](/help/edge/authoring.md)
