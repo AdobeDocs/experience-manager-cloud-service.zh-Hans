@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service 专为实现最佳性能而构建�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 1c6e44fd6652d93ba73bc2eb3604cd08eae7a33c
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 43%
+source-wordcount: '866'
+ht-degree: 30%
 
 ---
 
@@ -66,6 +66,21 @@ ht-degree: 43%
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
 
     -->
+
+## 主要功能
+
+* **基于HTML5的表单字段组件**：通过AEM Forms Edge Delivery Service，您可以使用基于有效HTML的表单字段创建用户友好的交互式表单5 [输入类型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文本区域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">选择</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">字段集</a>  组件。 这些组件适用于不同类型的数据收集，并可轻松自定义以满足您的特定需求。
+
+* **辅助功能**：可访问表单块中的字段。 每个标签都与其相应的输入元素链接，并且自动生成ID以进行链接。 与字段关联的描述通过aria-descripted by属性链接。 支持使用标准Tab/Shift + Tab键进行键盘导航。
+
+* **表单规则**：创建逻辑以根据用户输入或预定义条件调整字段可见性、验证和行为。 规则提供了一种灵活且直观的方式为表单添加智能，确保它们根据用户输入进行无缝调整。
+
+* **文件上传**：通过无缝文件附件功能增强表单。 无论您需要从用户那里收集文档、图像或其他文件，自适应表单块都能让您轻松集成文件上传功能。 利用自定义处理选项，您可以定制文件上传过程以满足特定要求。
+
+* **表单验证**：在提交之前，表单经过验证，并且无效字段会适当地标示为向用户显示的错误消息。 可以使用各种模式来显示这些错误。
+
+* **设置Forms样式**：每个表单字段都有一个固定的HTML结构，可以使用自定义CSS或JavaScript文件进一步修饰该结构。 在CSS/JS中，根据类型和名称提供了用于定位字段的选择器。
+
 
 ## 开始创建表单
 

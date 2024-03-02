@@ -4,7 +4,7 @@ description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 68b60d33e6ccfe27452cfea76603e4d7d29f0c6e
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 17%
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
 
-![基于文档的创作生态系统](/help/edge/assets/document-based-authoring.png)
+![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow.png)
 
 AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以在AEM EDS项目中包含自适应表单块以开始创建表单。 我们开始吧：
 
@@ -38,7 +38,7 @@ AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助
 
 “自适应”使用户能够为Edge Delivery Service Site创建表单。 但是，此块未包含在默认的AEM样板中（用于创建Edge Delivery Service项目）。 要将自适应表单块无缝集成到您的边缘交付服务项目中，请执行以下操作：
 
-1. **克隆自适应表单块存储库**：克隆 [自适应表单块存储库](https://github.com/adobe/afb) 在本地计算机上。 它包含在EDS网页上呈现表单的代码。 在本文档中，将Forms Block存储库的本地文件夹称为 `[Adaptive Form block repository]`.
+1. **克隆自适应表单块存储库**：克隆 [自适应表单块存储库](https://github.com/adobe/afb) 在本地计算机上。 它包含在EDS网页上呈现表单的代码。 在本文档中，将Forms Block存储库的本地文件夹称为 `[Adaptive Form Block repository]`.
 1. **找到自适应表单块存储库：** 访问 [自适应表单块存储库]/blocks文件夹并复制 `form` 文件夹。
 1. **将自适应表单块粘贴到EDS项目中：**
 导航至 [EDS项目存储库]/blocks/文件夹并粘贴表单文件夹。

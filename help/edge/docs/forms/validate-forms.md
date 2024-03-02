@@ -1,24 +1,24 @@
 ---
-title: 从电子表格到表单 - 掌握表单区块字段验证
-description: 使用电子表格和表单区块字段更快地制作强大的表单！本指南可帮助您为 EDS Forms 区块字段构建自定义验证。
+title: 从电子表格到Forms — 掌握自适应表单块字段验证
+description: 使用电子表格和自适应表单块字段更快地制作功能强大的表单！ 本指南可帮助您为 EDS Forms 区块字段构建自定义验证。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 24%
+source-wordcount: '266'
+ht-degree: 17%
 
 ---
 
 
 # 向表单字段添加验证
 
-表单块具有内置验证功能。 这些验证会根据所选字段类型和您提供的其他属性自动应用于现代浏览器。
+自适应表单块具有内置验证功能。 这些验证会根据所选字段类型和您提供的其他属性自动应用于现代浏览器。
 
 ## 了解字段类型和验证
 
-表单块支持各种 [HTML5输入类型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)，包括文本、电子邮件、数字、日期等。 它还可适应 [文本区域](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)、 select和fieldset ，以及HTML-5固有的综合输入验证功能。
+自适应表单块支持各种 [HTML5输入类型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)，包括文本、电子邮件、数字、日期等。 它还可适应 [文本区域](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)、 select和fieldset ，以及HTML-5固有的综合输入验证功能。
 
 使用HTML字段类型定义用户可以输入的数据类型。 不同的字段类型具有不同的内置验证规则：
 

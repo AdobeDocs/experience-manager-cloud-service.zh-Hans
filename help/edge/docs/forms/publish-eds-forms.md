@@ -4,7 +4,7 @@ description: 发布 AEM Forms Edge Delivery Services 表单
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 10%

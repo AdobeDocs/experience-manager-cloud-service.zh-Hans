@@ -4,9 +4,9 @@ description: 自定义 AEM Forms Edge Delivery Service Form 的主题和样式
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
@@ -37,9 +37,9 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 
 ## 为自适应表单块设置表单样式
 
-表单块提供了一个标准化的HTML结构，从而简化了表单组件的选择和样式设置过程：
+自适应表单块提供标准化的HTML结构，从而简化表单组件的选择和样式设置过程：
 
-* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file`. 此文件为表单提供全面的样式，支持多步向导表单。 它强调使用自定义CSS变量来轻松进行自定义、维护和跨表单的统一样式。 有关将表单块添加到项目的说明，请参阅 [创建表单](/help/edge/docs/forms/create-forms.md).
+* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file`. 此文件为表单提供全面的样式，支持多步向导表单。 它强调使用自定义CSS变量来轻松进行自定义、维护和跨表单的统一样式。 有关将自适应表单块添加到项目的说明，请参阅 [创建表单](/help/edge/docs/forms/create-forms.md).
 
 * **自定义**：使用默认值 `forms.css` 将其作为基础，并进行自定义以修改表单组件的外观，使其具有视觉吸引力的用户友好性。 文件的结构鼓励组织并维护表单的样式，从而在整个网站中促进一致的设计。
 
@@ -60,7 +60,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 
 ## 组件结构
 
-表单块为各种表单元素提供了一致的HTML结构，确保更易于样式化和管理。 您可以使用CSS处理组件以进行样式设置。
+自适应表单块为各种表单元素提供了一致的HTML结构，确保更易于样式化和管理。 您可以使用CSS处理组件以进行样式设置。
 
 ### 常规组件（下拉列表、单选按钮组和复选框组除外）：
 
@@ -421,6 +421,6 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 }
 ```
 
-此CSS定位位于具有类的元素中的所有输入元素 `form-otp`. 表单的HTML结构遵循表单块的约定，这意味着有一个标有“form-otp”类的容器包含名为“otp”的字段。
+此CSS定位位于具有类的元素中的所有输入元素 `form-otp`. 您的表单HTML结构遵循自适应表单块的约定，这意味着有一个标有“form-otp”类的容器包含名为“otp”的字段。
 
 

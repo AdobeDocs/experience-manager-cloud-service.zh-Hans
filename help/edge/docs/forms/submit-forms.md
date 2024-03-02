@@ -1,12 +1,12 @@
 ---
 title: 准备电子表格以接受数据
-description: 使用电子表格和表单块字段更快地制作功能强大的表单！
+description: 使用电子表格和自适应表单块字段更快地制作功能强大的表单！
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '997'
 ht-degree: 56%
 
 ---
