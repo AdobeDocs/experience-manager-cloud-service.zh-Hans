@@ -4,9 +4,9 @@ description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e2970c7a141025222c6b119787142e7c39d453af
+source-git-commit: 68b60d33e6ccfe27452cfea76603e4d7d29f0c6e
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1150'
 ht-degree: 17%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 17%
 在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。AEM Forms Edge Delivery 允许您使用 Word 或 Google Docs 等熟悉的工具创建表单。
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
+
+![基于文档的创作生态系统](/help/edge/assets/document-based-authoring.png)
 
 AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以在AEM EDS项目中包含自适应表单块以开始创建表单。 我们开始吧：
 
