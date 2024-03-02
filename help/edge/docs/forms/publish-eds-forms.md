@@ -4,9 +4,9 @@ description: 发布 AEM Forms Edge Delivery Services 表单
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '557'
 ht-degree: 10%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 10%
 # 发布您的表单
 
 准备好与客户共享表单以进行数据收集或提交后，您就可以发布该表单，使表单随时可供客户使用。
+
+![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-publish-form.png)
 
 ## 先决条件
 

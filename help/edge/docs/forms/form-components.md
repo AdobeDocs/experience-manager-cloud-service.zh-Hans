@@ -4,20 +4,21 @@ description: 本文档概述了AEM Forms Edge Delivery Service中可用的表单
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 3%
+source-wordcount: '913'
+ht-degree: 6%
 
 ---
 
 
-# 表单组件
+# 表单组件和资产开发人员指南：AEM Forms Edge Delivery Service
 
 AEM Forms Edge Delivery Service允许您使用各种组件创建用户友好的交互式表单。 这些组件适用于不同类型的数据收集，并可轻松自定义以满足您的特定需求。
 
-自适应表单块生成 [均匀HTML结构](/help/edge/docs/forms/style-theme-forms.md) 用于所有字段类型和容器（面板），确保一致性。 这种一致的结构使得更易于 [设置表单样式](/help/edge/docs/forms/style-theme-forms.md).
+![具有某些组件和属性的示例电子表格](/help/edge/assets/sample-form-in-spreadsheet.png)
 
+自适应表单块生成 [均匀HTML结构](/help/edge/docs/forms/style-theme-forms.md) 用于所有字段类型和容器（面板），确保一致性。 这种一致的结构使得更易于 [设置表单样式](/help/edge/docs/forms/style-theme-forms.md).
 
 ## 可用组件
 
@@ -38,6 +39,8 @@ AEM Forms Edge Delivery Service允许您使用各种组件创建用户友好的�
 - 面板/容器：将相关的表单元素组合在一起，以便更好地组织。 它是 [字段集](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) 和 [图例](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
+
+
 ## 组件属性
 
 每个表单元件都附带了各种属性，可让您控制其行为和外观。 以下是自适应表单块组件支持的属性：
@@ -45,7 +48,7 @@ AEM Forms Edge Delivery Service允许您使用各种组件创建用户友好的�
 
 | 属性 | 适用的组件 | 详细信息 |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| 类型 | 所有 | 指定组件的类型。 此属性确定输入字段的行为和外观。 例如，对于文本输入，类型可以是“text”（文本）、“email”（电子邮件）和“password”（密码）。 自适应表单块支持所有有效HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">输入类型</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文本区域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">选择</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">字段集</a> 作为类型。 |
+| 类型 | 所有 | 指定组件的类型。 此属性确定输入字段的行为和外观。 例如，对于文本输入，类型可以是“text”（文本）、“email”（电子邮件）和“password”（密码）。 自适应表单块支持  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5输入类型</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文本区域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">选择</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">字段集</a> 作为类型。 |
 | 名称 | 所有 | 标识用于表单提交的组件。 将表单数据提交到服务器时，会使用name属性，将用户输入与特定字段相关联。 |
 | 标签 | 所有 | 向用户提供上下文信息。 标签是显示在组件旁边的文本，用于指导用户输入哪些信息。 |
 | 价值 | 文本、密码、电子邮件、数字、范围、日期及其变体（日期时间 — 本地、月、周、时间）、复选框、单选、隐藏、提交、按钮 | 指定组件的初始值。 对于文本输入、文本区域和选择元素，这是显示的默认文本或选项。 对于单选按钮和复选框组件，这是在选中时提交的值/数据。 value属性是可选的，但应将它视为复选框和单选按钮输入的必需属性。 |
@@ -192,4 +195,12 @@ Here is the table which outlines how core components correspond to their HTML-5 
    <td> A two-state toggle that allows user to select between two states such as enabling or disabling a feature, setting, or functionality.</td>
   </tr>
  </tbody>
-</table>
+</table> -->
+
+## 查看更多
+
+- [创建并预览表单](/help/edge/docs/forms/create-forms.md)
+- [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
+- [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-eds-forms.md)
+- [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
+- [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)

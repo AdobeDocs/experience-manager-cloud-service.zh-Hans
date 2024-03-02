@@ -4,9 +4,9 @@ description: 使用电子表格和自适应表单块字段更快地制作功能�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1000'
 ht-degree: 56%
 
 ---
@@ -14,7 +14,10 @@ ht-degree: 56%
 
 # 准备电子表格以接受数据
 
+![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+
 一旦 [已创建和预览表单](/help/edge/docs/forms/create-forms.md)，现在应该启用相应的电子表格以开始接收数据。
+
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -43,6 +46,7 @@ ht-degree: 56%
 
 
 将字段名称添加到 `incoming` 表格中，您的表单已准备好接受提交。 您可以预览表单，并使用它向表单提交数据。
+
 
 您还会在电子表格中看到以下更改：
 
