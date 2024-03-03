@@ -4,7 +4,7 @@ description: 使用电子表格和自适应表单块字段更快地制作功能�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 17%
@@ -33,6 +33,6 @@ URL：此字段类型根据有效的URL格式验证用户输入。 输入无效U
 
 * [创建并预览表单](/help/edge/docs/forms/create-forms.md)
 * [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
-* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-eds-forms.md)
+* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-forms.md)
 * [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
 * [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)

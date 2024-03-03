@@ -4,10 +4,10 @@ description: 使用电子表格和自适应表单块字段更快地制作功能�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 56%
+source-wordcount: '1003'
+ht-degree: 55%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 56%
 
 一旦 [已创建和预览表单](/help/edge/docs/forms/create-forms.md)，现在应该启用相应的电子表格以开始接收数据。
 
+![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -46,6 +47,7 @@ ht-degree: 56%
 
 
 将字段名称添加到 `incoming` 表格中，您的表单已准备好接受提交。 您可以预览表单，并使用它向表单提交数据。
+
 
 
 您还会在电子表格中看到以下更改：
@@ -290,6 +292,6 @@ POST https://my-domain.com/email-form
 
 * [创建并预览表单](/help/edge/docs/forms/create-forms.md)
 * [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
-* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-eds-forms.md)
+* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-forms.md)
 * [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
 * [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)

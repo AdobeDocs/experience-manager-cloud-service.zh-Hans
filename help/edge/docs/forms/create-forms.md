@@ -4,7 +4,7 @@ description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 17%
@@ -81,7 +81,7 @@ AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助
 
    ![将默认工作表重命名为“共享默认”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 要添加表单字段，请将行和列标题插入“shared-default”工作表。 每一行应表示 [表单字段](/help/edge/docs/forms/form-components.md)，列标题定义相应的字段 [属性](/help/edge/docs/forms/eds-form-field-properties).
+1. 要添加表单字段，请将行和列标题插入“shared-default”工作表。 每一行应表示 [表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的字段 [属性](/help/edge/docs/forms/form-components.md#components-properties).
 
    为了SWIFT起步，请考虑复制 [查询电子表格](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) 到电子表格中。 复制内容后，保存电子表格。
 
@@ -159,6 +159,6 @@ AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助
 * [表单字段属性](/help/edge/docs/forms/eds-form-field-properties)
 * [创建并预览表单](/help/edge/docs/forms/create-forms.md)
 * [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
-* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-eds-forms.md)
+* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-forms.md)
 * [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
 * [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)

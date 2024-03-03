@@ -2,9 +2,9 @@
 description: 本教程包含使表单的部分可重复使用的说明
 title: Edge Delivery Services中的可重复部分
 feature: Edge Delivery Services
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '475'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 先决条件
 
-使用AEM样板设置边缘交付服务(EDS) Github项目，并在本地计算机上克隆相应的Github存储库。 有关详细信息，请参阅[开发者教程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html)。
+使用AEM样板设置边缘交付服务(EDS) GitHub项目，并在本地计算机上克隆相应的GitHub存储库。 有关详细信息，请参阅[开发者教程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial.html)。
 
 ## Edge投放中的可重复部分
 

@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service 专为实现最佳性能而构建�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d0c4f2f880ef7c11b11144502d30430336ac682e
+source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 30%
+source-wordcount: '814'
+ht-degree: 26%
 
 ---
 
@@ -27,13 +27,10 @@ ht-degree: 30%
   <div>
     <style>
     .image-container {
-    width: 80%;
     text-align: center; 
     }
     .image-container img {
-        width: 100%; /* Set image width to 100% of the container */
-        border: .5px solid; /* Maintain the border style */
-        padding: 15px; /* Maintain the padding */
+        width: 100%; /* Set image width to 100% of the container 
     }
 </style>
     <div class="image-container">
@@ -42,6 +39,8 @@ ht-degree: 30%
 
 
 </div>
+
+<!--
 
 <!--
 
@@ -62,6 +61,7 @@ ht-degree: 30%
 
     
     >[!NOTE]
+    >[!NOTE]
     >
     >
     > WYSIWYG authoring capability, integrated services, and customer impact measuring features are available under early adopter program. You can write to aem-forms-early-adopter-program@adobe.com from your official email id to join the early adopter program and request access to the capability.
@@ -70,17 +70,24 @@ ht-degree: 30%
 
 ## 主要功能
 
-* **基于HTML5的表单字段组件**：通过AEM Forms Edge Delivery Service，您可以使用基于有效HTML的表单字段创建用户友好的交互式表单5 [输入类型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文本区域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">选择</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">字段集</a>  组件。 这些组件适用于不同类型的数据收集，并可轻松自定义以满足您的特定需求。
+* **基于HTML5的表单字段组件**：通过AEM Forms Edge Delivery Service，可使用基于HTML5的表单组件创建用户友好的交互式表单 [输入类型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文本区域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">选择</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">字段集</a>  元素。 这些组件适用于不同类型的数据收集，并可轻松自定义以满足您的特定需求。
 
 * **辅助功能**：可访问表单块中的字段。 每个标签都与其相应的输入元素链接，并且自动生成ID以进行链接。 与字段关联的描述通过aria-descripted by属性链接。 支持使用标准Tab/Shift + Tab键进行键盘导航。
 
-* **表单规则**：创建逻辑以根据用户输入或预定义条件调整字段可见性、验证和行为。 规则提供了一种灵活且直观的方式为表单添加智能，确保它们根据用户输入进行无缝调整。
+* **样式**：每个表单字段都有一个固定的HTML结构，使用自定义CSS或JavaScript文件可轻松进行修饰。 CSS和JS中用于定位字段的选择器根据类型和名称提供。 由于该标准化的结构，您可以轻松创建新的选择器。
 
-* **文件上传**：通过无缝文件附件功能增强表单。 无论您需要从用户那里收集文档、图像或其他文件，自适应表单块都能让您轻松集成文件上传功能。 利用自定义处理选项，您可以定制文件上传过程以满足特定要求。
+* **规则**：轻松创建逻辑以根据用户输入或预定义条件调整字段可见性、验证和行为。 规则提供了一种灵活且直观的方式为表单添加智能，确保它们根据用户输入进行无缝调整。
 
-* **表单验证**：在提交之前，表单经过验证，并且无效字段会适当地标示为向用户显示的错误消息。 可以使用各种模式来显示这些错误。
+* **验证**：在提交之前，表单经过验证，并且无效字段会适当地标示为向用户显示的错误消息。 可以使用各种模式来显示这些错误。
 
-* **设置Forms样式**：每个表单字段都有一个固定的HTML结构，可以使用自定义CSS或JavaScript文件进一步修饰该结构。 在CSS/JS中，根据类型和名称提供了用于定位字段的选择器。
+我们应请求提供了以下一些高级功能：
+
+* **文件上传**：您可以将文件附件功能添加到表单。 无论您需要从用户那里收集文档、图像或其他文件，文件上传功能都能为您轻松提供。 利用自定义处理选项，您可以定制文件上传过程以满足特定要求。
+
+* **reCAPTCHA**：通过我们的开箱即用(OOTB)支持将Google reCAPTCHA无缝集成到您的表单中，从而从中受益。 保护您的表单免受欺诈性活动、垃圾邮件和滥用，同时保持流畅且无中断的用户体验。
+
+* **在提交表单时发送电子邮件通知**：消除手动跟进的麻烦，并确保与我们内置的表单提交电子邮件自动化功能及时通信。 此集成解决方案让您在有人填写您网站上的表单时，可以轻松通知相关方，包括发送表单数据。 无需复杂的配置或额外的工具 — 开箱即用。
+
 
 ## 工作流
 
