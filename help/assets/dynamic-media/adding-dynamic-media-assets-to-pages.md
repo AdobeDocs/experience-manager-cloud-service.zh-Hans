@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 74254387de1761f25127180787453e681181d97a
 workflow-type: tm+mt
 source-wordcount: '3166'
 ht-degree: 5%
@@ -149,7 +149,7 @@ Dynamic Media您可以通过选择 **[!UICONTROL 编辑]** 图标，然后 **[!U
 
 * **[!UICONTROL 查看器修饰符]**  — 查看器修饰符采用名称=值对与&amp;分隔符的形式，可让您按照《查看器参考指南》中的概述更改查看器。 例如，查看器修饰符为 `posterimage=img.jpg&caption=text.vtt,1` 为视频缩略图设置不同的图像，并将隐藏式字幕/字幕文件与视频关联。
 
-* **[!UICONTROL 图像预设]**  — 从下拉列表中选择现有的图像预设。 如果您要查找的图像预设不可见，则必须使其可见。 请参阅管理图像预设。 如果您使用的是图像预设，则无法选择查看器预设，反之亦然。
+* **[!UICONTROL 图像预设]**  — 从下拉列表中选择现有的图像预设。 如果您要查找的图像预设不可见，则必须使其可见。 请参阅 [管理图像预设](/help/assets/dynamic-media/managing-image-presets.md). 如果您使用的是图像预设，则无法选择查看器预设，反之亦然。
 
   如果要查看图像集、旋转集或混合媒体集，则此选项不可用。
 
