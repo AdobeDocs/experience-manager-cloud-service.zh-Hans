@@ -1,27 +1,17 @@
 ---
-title: 如何使用规则编辑器将规则添加到表单字段以添加动态行为并将复杂逻辑构建到自适应表单？
+title: 如何使用规则编辑器将规则添加到表单字段，以添加动态行为并根据核心组件向自适应表单构建复杂逻辑？
 description: 自适应Forms规则编辑器允许您添加动态行为并将复杂的逻辑构建到表单中，而无需编码或编写脚本。
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: bbb5e4caef2cb8c44d10a92647401ee86a9326c0
+source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
 workflow-type: tm+mt
-source-wordcount: '6457'
-ht-degree: 1%
+source-wordcount: '5755'
+ht-degree: 0%
 
 ---
 
-# 将规则添加到自适应表单 {#adaptive-forms-rule-editor}
-
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
-
-| 版本 | 文章链接 |
-| -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
-| AEM as a Cloud Service | 本文 |
-
-## 概述 {#overview}
+# 将规则添加到自适应表单（核心组件） {#adaptive-forms-rule-editor}
 
 规则编辑器功能使表单业务用户和开发人员能够编写关于自适应表单对象的规则。 这些规则根据预设条件、用户输入和用户对表单的操作，定义要在表单对象上触发的操作。 它有助于进一步简化表单填写体验，确保准确性和速度。
 
@@ -41,9 +31,9 @@ ht-degree: 1%
 
 ## 了解规则 {#understanding-a-rule}
 
-规则是操作和条件的组合。 在规则编辑器中，操作包括隐藏、显示、启用、禁用或计算表单中对象的值等活动。 条件是对表单对象的状态、值或属性执行检查和操作而计算的布尔表达式。 根据通过评估条件返回的值（ `True` `False`或）执行操作。
+规则是操作和条件的组合。 在规则编辑器中，操作包括隐藏、显示、启用、禁用或计算表单中对象的值等活动。 条件是通过对表单对象的状态、值或属性执行检查和操作来计算的布尔表达式。 根据通过评估条件返回的值（ `True` `False`或）执行操作。
 
-规则编辑器提供了一组预定义的规则类型（如When、Show、Hide、Enable、Disable、Set Value Of和Validate）以帮助您编写规则。 每种规则类型均允许您定义规则中的条件和操作。 本文档进一步详细说明了每种规则类型。
+规则编辑器提供了一组预定义的规则类型，例如“时间”、“显示”、“隐藏”、“启用”、“禁用”、“设置值”和“验证”，以帮助您编写规则。 每种规则类型都允许您定义规则中的条件和操作。 本文档进一步详细说明了每种规则类型。
 
 规则通常遵循以下结构之一：
 
@@ -51,13 +41,13 @@ ht-degree: 1%
 
 在规则编辑器中， **时间** 规则类型强制使用condition-action结构。
 
-**操作条件** 在此构造中，规则首先定义要触发的操作，然后是评估条件。 此构造的另一种变体是操作-条件-备用操作，它还定义了在条件返回 False 时要触发的备用操作。
+**操作条件** 在此构造中，规则首先定义要触发的操作，然后定义求值的条件。 此结构的另一个变体是action-condition-alternate action ，它还会定义在条件返回False时要触发的替代操作。
 
 规则编辑器中的“显示”、“隐藏”、“启用”、“禁用”、“设置值”和“验证”规则类型强制实施操作条件规则结构。 默认情况下，“显示”的替代操作是“隐藏”，而“启用”的替代操作是“禁用”，反之亦然。 您不能更改默认替代操作。
 
 >[!NOTE]
 >
->可用的规则类型（包括在规则编辑器中定义的条件和操作）还取决于创建规则的表单对象的类型。 规则编辑器仅显示有效的规则类型和选项，用于为特定表单对象类型编写条件和操作语句。 例如，您看不到面板对象的“验证”、“设置值”、“启用”和“禁用”规则类型。
+>可用的规则类型（包括在规则编辑器中定义的条件和操作）还取决于创建规则的表单对象的类型。 规则编辑器仅显示有效的规则类型和选项，用于为特定表单对象类型编写条件和操作语句。 例如，您看不到面板对象的“验证并设置类型的值”。
 
 有关规则编辑器中可用的规则类型的更多信息，请参阅 [规则编辑器中的可用规则类型](rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
@@ -88,15 +78,18 @@ ht-degree: 1%
 * **开头为**
 * **结尾为**
 * **包含**
+* **不包含**
 * **为空**
 * **不为空**
 * **已选择：** 当用户为复选框、下拉菜单单选按钮选择特定选项时，返回true。
 * **已初始化（事件）：** 在浏览器中呈现表单对象时返回true。
 * **已更改（事件）：** 当用户更改表单对象的输入值或选定选项时，返回true。
-* **导航（事件）：** 当用户单击导航对象时返回true。 导航对象用于在面板之间移动。
-* **步骤完成（事件）：** 完成规则的步骤时返回true。
-* **提交成功（事件）：** 成功将数据提交到表单数据模型时返回true。
-* **提交时出错（事件）：**  向表单数据模型提交数据失败时返回true。
+
+<!--
+* **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
+* **Step Completion(event):** Returns true when a step of a rule completes.
+* **Successful Submission(event):** Returns true on successful submission of data to a form data model.
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
 ## 规则编辑器中的可用规则类型 {#available-rule-types-in-rule-editor}
 
@@ -106,9 +99,9 @@ ht-degree: 1%
 
 此 **[!UICONTROL 时间]** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，首先指定求值的条件，然后指定满足该条件时要触发的操作( `True`)。 使用When规则类型时，您可以使用多个AND和OR运算符来创建 [嵌套表达式](#nestedexpressions).
 
-使用 When 规则类型，您可以评估表单对象的条件并对一个或多个对象执行操作。
+使用When规则类型，您可以评估表单对象的条件，并对一个或多个对象执行操作。
 
-简单来说，典型的 When 规则结构如下：
+简单地说，典型的When规则的结构如下所示：
 
 `When on Object A:`
 
@@ -116,27 +109,31 @@ ht-degree: 1%
 
 `Then, do the following:`
 
-关于对象B的行动2;
-和
-关于对象C的行动3;
+对对象B执行行动2；对对象C执行行动3；
 
-_
+`Else, do the following:`
 
-当您具有多值组件（如单选按钮或列表）时，在为该组件创建规则时，将自动检索选项并使其可供规则创建者使用。 无需再次键入选项值。
+关于对象C的行动2；_
 
-例如，列表包含四个选项：红色、蓝色、绿色和黄色。 创建规则时，将自动检索选项（单选按钮）并使规则创建者可以使用此选项，如下所示：
+当具有多值组件（如单选按钮或列表）时，在为该组件创建规则时，会自动检索选项并使这些选项可用于规则创建者。 无需再次键入选项值。
 
-![多值显示选项](assets/multivaluefcdisplaysoptions1.png)
+例如，列表有四个选项：“红色”、“蓝色”、“绿色”和“黄色”。 创建规则时，将自动检索选项（单选按钮），并使其可供规则创建者使用，如下所示：
 
-编写When规则时，可以触发Clear Value Of操作。 清除值操作清除指定对象的值。 在 When 语句中将“清除值”作为一个选项，可以创建具有多个字段的复杂条件。
+![多值显示选项](assets/multivaluefcdisplaysoptions.png)
 
-![的明确值](assets/clearvalueof1.png)
+编写When规则时，可以触发Clear Value Of操作。 清除值操作清除指定对象的值。 通过在When语句中将Clear Value设置为选项，可以创建具有多个字段的复杂条件。 您可以添加Else语句以添加更多条件
+
+![清除值](assets/clearvalueof.png)
+
+>[!NOTE]
+>
+> 当规则类型仅支持单级then-else语句时。
 
 **[!UICONTROL 隐藏]** 隐藏指定的对象。
 
-**[!UICONTROL 显示]** 显示指定的对象。
+**[!UICONTROL 显示 显示]** 指定的对象。
 
-**[!UICONTROL 启用]** 启用指定的对象。
+**[!UICONTROL 启用 启用]** 指定的对象。
 
 **[!UICONTROL 禁用]** 禁用指定的对象。
 
@@ -152,49 +149,53 @@ _
 
 此 **[!UICONTROL 设置属性]** 规则类型允许您根据条件操作设置指定对象的属性值。 您可以将属性设置为以下项之一：
 * 可见（布尔值）
-* dorExclusion（布尔型）
-* chartType（字符串）
-* title（字符串）
+* label.value（字符串）
+* label.visible（布尔值）
+* description（字符串）
 * 已启用（布尔值）
-* 必填（布尔值）
-* validationsDisabled（布尔型）
-* validateExpMessage（字符串）
-* 值（数字、字符串、日期）
-* 项（列表）
+* readOnly（布尔值）
+* 必需（布尔值）
+* screenReaderText（字符串）
 * 有效（布尔值）
 * errorMessage（字符串）
+* 默认（数字、字符串、日期）
+* enumNames（字符串）[])
+* chartType（字符串）
 
-例如，您可以定义规则以动态地将复选框添加到自适应表单。 您可以使用自定义函数、表单对象或对象属性来定义规则。
+例如，您可以定义规则以在单击按钮时显示文本框。 您可以使用自定义函数、表单对象、对象属性或服务输出来定义规则。
 
-![设置属性](assets/set_property_rule_new1.png)
+![设置属性](assets/set_property_rule_new.png)
 
-要根据自定义函数定义规则，请选择 **[!UICONTROL 函数输出]** ，然后从以下位置拖放自定义函数： **[!UICONTROL 函数]** 选项卡。 如果满足条件操作，则自定义函数中定义的复选框数将添加到自适应表单中。
+要根据自定义函数定义规则，请选择 **[!UICONTROL 函数输出]** ，然后从以下位置拖放自定义函数： **[!UICONTROL 函数]** 选项卡。 如果满足条件操作，则文本输入框将可见。
 
-要根据表单对象定义规则，请选择 **[!UICONTROL 表单对象]** 从下拉列表中，拖放表单对象 **[!UICONTROL 表单对象]** 选项卡。 如果满足条件操作，则表单对象中定义的复选框数将添加到自适应表单。
+要根据表单对象定义规则，请选择 **[!UICONTROL 表单对象]** 从下拉列表中，拖放表单对象 **[!UICONTROL 表单对象]** 选项卡。 如果满足条件操作，则文本输入框在自适应表单中可见。
 
-通过基于对象属性的设置属性规则，您可以根据自适应表单中包含的其他对象属性在自适应表单中添加复选框的数量。
+通过基于对象属性的“设置属性”规则，您可以根据自适应表单中包含的其他对象属性使文本输入框在自适应表单中可见。
 
-下图展示了一个根据自适应表单中的下拉列表数量动态添加复选框的示例：
+下图展示了一个动态启用复选框的示例，该复选框基于自适应表单中文本框的隐藏或显示：
 
-![对象属性](assets/object_property_set_property_new1.png)
+![对象属性](assets/object_property_set_property_new.png)
 
 **[!UICONTROL 清除值]** 清除指定对象的值。
 
 **[!UICONTROL 设置焦点]** 设置对指定对象的焦点。
 
-**[!UICONTROL 保存表单]** 保存表单。
+**[!UICONTROL 提交表单]** 提交表单。
 
-**[!UICONTROL 提交Forms]** 提交表单。
+**[!UICONTROL 重置]** 重置表单或指定对象。
 
-**[!UICONTROL 重置表单]** 重置表单。
-
-**[!UICONTROL 验证表单]** 验证表单。
+**[!UICONTROL 验证]** 验证表单或指定的对象。
 
 **[!UICONTROL 添加实例]** 添加指定可重复面板或表行的实例。
 
 **[!UICONTROL 删除实例]** 删除指定可重复面板或表行的实例。
 
+**[!UICONTROL 函数输出]** 基于预定义函数或自定义函数定义规则。
+
 **[!UICONTROL 导航到]** 导航到其他 <!--Interactive Communications,--> 自适应Forms、图像或文档片段等其他资源或外部URL。 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+
+**[!UICONTROL 分派事件]** 根据预定义的条件或事件触发特定操作或行为。
+
 
 ### [!UICONTROL 设置值] {#set-value-of}
 
@@ -204,31 +205,23 @@ _
 
 将对象A的值设置为：
 
-（字符串 ABC）或
-（对象 C 的对象属性 X）或
-（来自函数的值）或
-（来自数学表达式的值）或
-（数据模型服务或 Web 服务的输出值）;
+（字符串ABC） OR（对象C的对象属性X） OR（函数值） OR（数学表达式值） OR（数据模型服务的输出值）；
 
 当（可选）时：
 
 （条件 1 和条件 2 和条件 3）为 TRUE;
 
-以下示例将字段中的值`dependentid`作为输入，并将字段的值`Relation`设置为表单数据模型服务的参数`getDependent`的`Relation`输出。
+以下示例选择 `Question2` 作为 `True` 并设置 `Result` 作为 `correct`.
 
-![Set-value-web-service](assets/set-value-web-service1.png)
+![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表单数据模型服务的设定值规则示例
-
->[!NOTE]
->
->此外，您可以使用规则的“设置值”从表单数据模型服务或Web服务的输出填充下拉列表组件中的所有值。 但是，请确保您选择的输出参数为数组类型。 数组中返回的所有值在指定的下拉列表中变为可用。
+使用表单数据模型服务的设置值规则的示例。
 
 ### [!UICONTROL 显示] {#show}
 
-使用 **[!UICONTROL 显示]** 规则类型，您可以编写规则以根据是否满足条件来显示或隐藏表单对象。 显示规则类型也会在条件不满足或返回时触发“隐藏”操作 `False`.
+使用 **[!UICONTROL 显示]** 规则类型，您可以编写规则以根据是否满足条件来显示或隐藏表单对象。 “显示”规则类型还会在条件不满足或返回 `False`时触发“隐藏”操作。
 
-典型的显示规则的结构如下所示：
+典型的显示规则结构如下：
 
 `Show Object A;`
 
@@ -242,7 +235,7 @@ _
 
 ### [!UICONTROL 隐藏] {#hide}
 
-与显示规则类型类似，您可以使用 **[!UICONTROL 隐藏]** 规则类型，用于根据是否满足条件来显示或隐藏表单对象。 如果条件未得到满足或返回，则隐藏规则类型也会触发显示操作 `False`.
+与“显示”规则类型类似，您可以使用“ **[!UICONTROL 隐藏”规则类型根据是否满足条件来显示或隐藏]** 表单对象。 “隐藏”规则类型还会在条件不满足或返回 `False`时触发“显示”操作。
 
 典型的“隐藏”规则的结构如下所示：
 
@@ -306,24 +299,25 @@ _
 
 ![脚本验证](assets/script-validation.png)
 
-### [!UICONTROL 设置选项] {#setoptionsof}
+<!--
+### [!UICONTROL Set Options Of] {#setoptionsof}
 
-此 **[!UICONTROL 设置选项]** 规则类型允许您定义规则以动态地将复选框添加到自适应表单。 您可以使用表单数据模型或自定义函数来定义规则。
+The **[!UICONTROL Set Options Of]** rule type enables you to define rules to add check boxes dynamically to the Adaptive Form. You can use a Form Data Model or a custom function to define the rule.
 
-要根据自定义函数定义规则，请选择 **[!UICONTROL 函数输出]** ，然后从以下位置拖放自定义函数： **[!UICONTROL 函数]** 选项卡。 自定义函数中定义的复选框数将添加到自适应表单中。
+To define a rule based on a custom function, select **[!UICONTROL Function Output]** from the drop-down list, and drag-and-drop a custom function from the **[!UICONTROL Functions]** tab. The number of checkboxes defined in the custom function are added to the Adaptive Form.
 
-![自定义函数](assets/custom_functions_set_options_new.png)
+![Custom Functions](assets/custom_functions_set_options_new.png)
 
-要创建自定义函数，请参见 [规则编辑器中的自定义函数](#custom-functions).
+To create a custom function, see [custom functions in rule editor](#custom-functions).
 
-要根据表单数据模型定义规则，请执行以下操作：
+To define a rule based on a form data model:
 
-1. 选择 **[!UICONTROL 服务输出]** 下拉列表中。
-1. 选择数据模型对象。
-1. 从中选择数据模型对象属性 **[!UICONTROL 显示值]** 下拉列表。 自适应表单中的复选框数派生自数据库中为该属性定义的实例数。
-1. 从中选择数据模型对象属性 **[!UICONTROL 保存值]** 下拉列表。
+1. Select **[!UICONTROL Service Output]** from the drop-down list.
+1. Select the data model object.
+1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
+1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM设置选项](assets/fdm_set_options_new.png)
+![FDM set options](assets/fdm_set_options_new.png) -->
 
 ## 了解规则编辑器用户界面 {#understanding-the-rule-editor-user-interface}
 
@@ -334,19 +328,19 @@ _
 1. 在创作模式下打开自适应表单。
 1. 选择要为其编写规则的表单对象，然后在组件工具栏中选择 ![edit-rules](assets/edit-rules-icon.svg). 此时将显示规则编辑器用户界面。
 
-   ![create-rules](assets/create-rules1.png)
+   ![create-rules](assets/create-rules.png)
 
    此视图中列出了选定表单对象上的任何现有规则。 有关管理现有规则的信息，请参见 [管理规则](rule-editor.md#p-manage-rules-p).
 
 1. 选择 **[!UICONTROL 创建]** 编写新规则。 默认情况下，首次启动规则编辑器时会打开规则编辑器用户界面的可视化编辑器。
 
-   ![规则编辑器用户界面](assets/rule-editor-ui1.png)
+   ![规则编辑器用户界面](assets/rule-editor-ui.png)
 
 让我们详细了解一下规则编辑器UI的每个组件。
 
 ### A.组件规则显示 {#a-component-rule-display}
 
-显示自适应表单对象的标题（通过自适应表单对象启动规则编辑器）和当前选定的规则类型。 在上述示例中，规则编辑器从名为Salary的自适应表单对象启动，并且选定的规则类型是When。
+显示自适应表单对象的标题（通过自适应表单对象启动规则编辑器）和当前选定的规则类型。 在上述示例中，规则编辑器从标题为问题1的自适应表单对象启动，并且选定的规则类型为何时。
 
 ### B.表单对象和功能 {#b-form-objects-and-functions-br}
 
@@ -356,9 +350,11 @@ _
 
 应用了一个或多个有效规则的表单对象将标有绿点。 如果应用于表单对象的任意规则无效，则表单对象将标有黄点。
 
-“函数”选项卡包含一组内置函数，例如“总和”、“最小值”、“最大值”、“平均值”、“数目”和“验证表单”。 您可以使用这些函数计算可重复面板和表格行中的值，并在编写规则时在操作和条件语句中使用它们。 但是，您可以创建 [自定义函数](#custom-functions) 也是。
+“函数”选项卡包含一组内置函数，例如“总和”、“最小值”、“最大值”、“平均值”、“数目”和“验证表单”。 您可以使用这些函数计算可重复面板和表格行中的值，并在编写规则时在操作和条件语句中使用它们。 但是，您也可以创建自定义函数。
 
-![“函数”选项卡](assets/functions1.png)
+图中显示了一些函数列表：
+
+![“函数”选项卡](assets/functions.png)
 
 >[!NOTE]
 >
@@ -391,17 +387,17 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E.完成和取消按钮 {#done-and-cancel-buttons}
 
-此 **[!UICONTROL 完成]** 按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整部分无效，因此不会运行。 当您下次从同一表单对象启动规则编辑器时，会列出表单对象中已保存的规则。 您可以在该视图中管理现有规则。 有关更多信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p).
+此 **[!UICONTROL 完成]** 按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整是无效的，不会运行。 下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
 
 此 **[!UICONTROL 取消]** 按钮会放弃您对规则所做的任何更改并关闭规则编辑器。
 
 ## 写入规则 {#write-rules}
 
-您可以使用可视规则编辑器编写规则 &lt;!> — 或代码编辑器>。 首次启动规则编辑器时，它将在可视编辑器模式下打开。 您可以切换到代码编辑器模式并编写规则。 但是，如果在代码编辑器中编写或修改规则，则除非清除代码编辑器，否则无法切换到该规则的可视编辑器。 当您下次启动规则编辑器时，它将在您最后创建规则时使用的模式下打开。
+您可以使用可视规则编辑器编写规则 <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 我们首先看一下如何使用可视编辑器编写规则。
 
-### 使用可视编辑器 {#using-visual-editor}
+### 使用可视化编辑器 {#using-visual-editor}
 
 让我们了解如何使用以下示例表单在可视编辑器中创建规则。
 
@@ -418,7 +414,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    以创作模式打开贷款申请表单。 选择 **[!UICONTROL 婚姻状况]** 组件和选择 ![edit-rules](assets/edit-rules-icon.svg). 接下来，选择 **[!UICONTROL 创建]** 以启动规则编辑器。
 
-   ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
+   ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1-cc.png)
 
    在启动规则编辑器时，默认情况下会选中When规则。 此外，从中启动规则编辑器的表单对象（在本例中为“婚姻状况”）在When语句中指定。
 
@@ -426,41 +422,56 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 选择 **[!UICONTROL 选择状态]** 下拉并选择 **[!UICONTROL 等于]**. 此 **[!UICONTROL 输入字符串]** 字段。
 
-   ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
+   ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-   在“婚姻状况”单选按钮中， **[!UICONTROL 已婚]** 和 **[!UICONTROL 单身]** 已分配选项 **0** 和 **1** 个值。 您可以在“编辑”单选按钮对话框的“标题”选项卡中验证分配的值，如下所示。
+<!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![规则编辑器中的单选按钮值](assets/radio-button-values.png)
+   ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. 在 **[!UICONTROL 输入字符串]** 字段中，指定 **0**.
+1. 在 **[!UICONTROL 输入字符串]** 字段中，选择 **已婚** 从下拉菜单中。
 
-   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
+   ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
    您已定义条件 `When Marital Status is equal to Married`. 接下来，定义此条件为True时要执行的操作。
 
 1. 在Then语句中，选择 **[!UICONTROL 显示]** 从 **[!UICONTROL 选择操作]** 下拉菜单。
 
-   ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
+   ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
 1. 拖放 **[!UICONTROL 配偶薪金]** 字段，该字段位于 **[!UICONTROL 放置对象或在此选择]** 字段。 或者，选择 **[!UICONTROL 放置对象或在此选择]** 字段并选择 **[!UICONTROL 配偶薪金]** 弹出式菜单中的字段，其中列出了表单中的所有表单对象。
 
-   ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
+   ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
+
+   接下来，定义此条件为False时要执行的操作。
+1. 单击 **[!UICONTROL 添加Else部分]** 为添加其他条件 **[!UICONTROL 配偶薪金]** 字段，以防您选择“婚姻状况”作为单身。
+
+   ![when-else](assets/when-else.png)
+
+
+1. 在Else语句中，选择 **[!UICONTROL 隐藏]** 从 **[!UICONTROL 选择操作]** 下拉菜单。
+   ![when-else](assets/when-else-1.png)
+
+1. 拖放 **[!UICONTROL 配偶薪金]** 字段，该字段位于 **[!UICONTROL 放置对象或在此选择]** 字段。 或者，选择 **[!UICONTROL 放置对象或在此选择]** 字段并选择 **[!UICONTROL 配偶薪金]** 弹出式菜单中的字段，其中列出了表单中的所有表单对象。
+   ![when-else](assets/when-else-2.png)
 
    规则在规则编辑器中如下所示。
 
-   ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
+   ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7-cc.png)
+
+
 
 1. 选择 **[!UICONTROL 完成]** 以保存规则。
 
-1. 如果婚姻状况为“单身”，请重复步骤1至5以定义另一个规则来隐藏“配偶薪金”字段。 规则在规则编辑器中如下所示。
+<!--
+1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8.png)
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
 
-   >[!NOTE]
-   >
-   >或者，您可以在“配偶薪金”字段编写一个“显示”规则，而不是在“婚姻状况”字段编写两个“何时规则”，以实施相同的行为。
+>[!NOTE]
+>
+> 或者，您可以在“配偶薪金”字段上编写显示规则，而不是“婚姻状况”字段上的显示规则，以实施相同的行为。
 
-   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9.png)
+![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
 1. 接下来，编写规则以计算贷款资格金额（占总薪金的50%），并在“贷款资格”字段中显示。 要实现此结果，请创建 **[!UICONTROL 设置值]** 贷款资格字段规则。
 
@@ -468,11 +479,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 选择 **[!UICONTROL 设置值]** 规则。
 
-   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
+   ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
 1. 选择 **[!UICONTROL 选择选项]** 并选择 **[!UICONTROL 数学表达式]**. 用于编写数学表达式的字段打开。
 
-   ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
+   ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
 1. 在表达式字段中：
 
@@ -486,11 +497,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 接下来，在表达式字段周围高亮显示的区域中选择，然后选择 **[!UICONTROL 扩展表达式]**.
 
-   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
+   ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
    在扩展表达式字段中，选择 **[!UICONTROL 除以]** 从 **[!UICONTROL 选择运算符]** 字段和 **[!UICONTROL 数字]** 从 **[!UICONTROL 选择选项]** 字段。 然后，指定 **[!UICONTROL 2]** 在数字字段中。
 
-   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
+   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
@@ -500,7 +511,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 选择 **[!UICONTROL 添加条件]** 添加When语句。
 
-   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
+   ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
    在When语句中：
 
@@ -510,21 +521,22 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    * 选择另一个中的字符串 **[!UICONTROL 放置对象或在此选择]** 字段并指定 **[!UICONTROL 已婚]** 在 **[!UICONTROL 输入字符串]** 字段。
 
-   规则编辑器中的结果如下所示。  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
+   规则编辑器中的结果如下所示。  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
 1. 选择 **[!UICONTROL 完成]**. 保存规则。
 
 1. 重复步骤7至14，定义另一条规则，以计算婚姻状况为“单身”的贷款资格。 规则在规则编辑器中如下所示。
 
-   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17.png)
+   ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17-cc.png)
 
->[!NOTE]
->
->或者，您可以使用设置值规则在您创建的When规则中计算贷款资格，以显示 — 隐藏“配偶薪金”字段。 当“婚姻状况”为“单身”时，生成的合并规则将在规则编辑器中显示如下。
->
->同样，您可以编写合并规则以控制“配偶薪金”字段的可见性，并在婚姻状况为“已婚”时计算贷款资格。
+或者，您可以使用设置值规则在您创建的When规则中计算贷款资格，以显示 — 隐藏“配偶薪金”字段。 当“婚姻状况”为“单身”时，生成的合并规则将在规则编辑器中显示如下。
 
-![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
+![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
+
+您可以使用Else条件编写组合规则，以控制“配偶薪金”字段的可见性，并在婚姻状况为“已婚”时计算贷款资格。
+
+![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
+
 
 <!-- ### Using code editor {#using-code-editor}
 
@@ -549,6 +561,8 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### 规则编辑器中的自定义函数 {#custom-functions}
 
+您还可以在规则编辑器中使用自定义函数。 有关创建自定义函数的说明，请参阅文章 [自适应Forms中的自定义函数](/help/forms/create-and-use-custom-functions.md).
+
 除了开箱即用的功能，例如 *总和* 列在函数输出下的自定义函数，您可以编写经常需要的自定义函数。 确保您编写的函数附带 `jsdoc` 高于它。
 
 随附 `jsdoc` 为必填项：
@@ -571,10 +585,6 @@ While writing JavaScript code in the rule editor, the following visual cues help
   `funcName` 是函数的名称（不允许有空格）。
   `<Function Name>` 是函数的显示名称。
 
-* **会员**
-语法： `@memberof namespace`
-将命名空间附加到函数。
-
 * **参数**
 语法： `@param {type} name <Parameter Description>`
 或者，您可以使用： `@argument` `{type} name <Parameter Description>` **或** `@arg` `{type}` `name <Parameter Description>`.
@@ -585,10 +595,28 @@ While writing JavaScript code in the rule editor, the following visual cues help
    1. 数字
    1. 布尔型
    1. 范围
+   1. 字符串[]
+   1. 数字[]
+   1. 布尔型[]
+   1. 日期
+   1. 日期[]
+   1. 数组
+   1. 对象
 
-  范围是指自适应表单的字段。 当表单使用延迟加载时，您可以使用 `scope` 以访问其字段。 在加载字段时或字段标记为全局时，您可以访问这些字段。
+  `scope` 指由forms运行时提供的特殊全局对象。 该参数必须是最后一个参数，并且在规则编辑器中对用户不可见。 您可以使用作用域访问可读的表单和字段代理对象来读取属性、触发规则的事件和一组处理表单的函数。
 
-  所有参数类型均被归入上述参数类型之一。 不支持无。 确保选择以上类型之一。 类型不区分大小写。 参数中不允许有空格 `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  `object` type用于将参数中的可读字段对象传递到自定义函数，而不是传递值。
+
+  所有参数类型均被归入上述参数类型之一。 不支持无。 确保选择以上类型之一。 类型不区分大小写。 参数名称中不允许有空格。  参数描述可以有多个单词。
+
+* **可选参数**
+语法： `@param {type=} name <Parameter Description>`
+或者，您可以使用： `@param {type} [name] <Parameter Description>`
+默认情况下，所有参数都是必需的。 可以通过添加参数将参数标记为可选 `=` 键入参数类型或将参数名称放在方括号中。
+
+  例如，让我们声明 `Input1` 作为可选参数：
+   * `@param {type=} Input1`
+   * `@param {type} [Input1]`
 
 * **返回类型**
 语法： `@return {type}`
@@ -597,73 +625,55 @@ While writing JavaScript code in the rule editor, the following visual cues help
 {type} 表示函数的返回类型。 允许的返回类型包括：
 
    1. 字符串
-   1. 数字
-   1. 布尔型
+   2. 数字
+   3. 布尔型
+   4. 字符串[]
+   5. 数字[]
+   6. 布尔型[]
+   7. 日期
+   8. 日期[]
+   9. 数组
+   10. 对象
 
   所有其他退货类型均归入上述任一类型下。 不支持无。 确保选择以上类型之一。 返回类型不区分大小写。
 
-   * **此**
-语法： `@this currentComponent`
+<!--
+**Adding a custom function**
 
-  使用@this引用编写了规则的自适应表单组件。
+For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
 
-  以下示例基于字段值。 在以下示例中，规则隐藏了表单中的字段。 此 `this` 部分 `this.value` 是指用于编写规则的底层自适应表单组件。
+To create a client library and add it in the CRX repository, perform the following steps:
 
-  ```
-     /**
-     * @function myTestFunction
-     * @this currentComponent
-     * @param {scope} scope in which code inside function is run.
-     */
-     myTestFunction = function (scope) {
-        if(this.value == "O"){
-              scope.age.visible = true;
-        } else {
-           scope.age.visible = false;
-        }
-     }
-  ```
-
-  >[!NOTE]
-  >
-  >使用自定义函数之前的注释进行摘要。 在遇到标记之前，摘要可以扩展到多行。 将大小限制为单个，以便在规则生成器中提供简要说明。
-
-**添加自定义函数**
-
-例如，要添加一个计算正方形区域的自定义函数。 侧边长度是自定义函数的用户输入，可使用表单中的数字框接受该输入。 计算的输出显示在表单的另一个数字框中。 要添加自定义函数，您必须先创建客户端库，然后将其添加到CRX存储库。
-
-要创建客户端库并将其添加到CRX存储库中，请执行以下步骤：
-
-1. 创建客户端库。 有关更多信息，请参阅 [使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. 在CRXDE中，添加属性 `categories`字符串类型值为 `customfunction` 到 `clientlib` 文件夹。
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
-   >`customfunction`是一个示例类别。 您可以为在中创建的类别选择任意名称 `clientlib`文件夹。
+   >`customfunction`is an example category. You can choose any name for the category you create in the `clientlib`folder.
 
-在CRX存储库中添加客户端库后，在自适应表单中使用它。 它可让您在表单中将自定义函数用作规则。 要在自适应表单中添加客户端库，请执行以下步骤：
+After you have added your client library in the CRX repository, use it in your Adaptive Form. It lets you use your custom function as a rule in your form. To add the client library in your Adaptive Form, perform the following steps:
 
-1. 在编辑模式下打开表单。
-要在编辑模式下打开表单，请选择一个表单，然后选择 **[!UICONTROL 打开]**.
-1. 在编辑模式下，选择一个组件，然后选择 ![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后选择 ![cmppr](assets/configure-icon.svg).
-1. 在侧栏中的“Name of Client Library”（客户端库名称）下，添加您的客户端库。 ( `customfunction` 在此示例中。)
+1. Open your form in edit mode.
+   To open a form in edit mode, select a form and select **[!UICONTROL Open]**.
+1. In the edit mode, select a component, then select ![field-level](assets/select_parent_icon.svg) &gt; **[!UICONTROL Adaptive Form Container]**, and then select ![cmppr](assets/configure-icon.svg).
+1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
-   ![添加自定义函数客户端库](assets/clientlib.png)
+   ![Adding the custom function client library](assets/clientlib.png)
 
-1. 选择输入数字框，然后选择 ![edit-rules](assets/edit-rules-icon.svg) 以打开规则编辑器。
-1. 选择 **[!UICONTROL 创建规则]**. 使用以下显示的选项，创建一个规则以在表单的“输出”字段中保存输入的平方值。
+1. Select the input numeric box, and select ![edit-rules](assets/edit-rules-icon.svg) to open the rule editor.
+1. Select **[!UICONTROL Create Rule]**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
 
-   [![使用自定义函数创建规则](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
-
-1. 选择 **[!UICONTROL 完成]**. 您的自定义函数已添加。
+   [![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+  
+1. Select **[!UICONTROL Done]**. Your custom function is added.
 
    >[!NOTE]
    >
-   > 要使用自定义函数从规则编辑器调用表单数据模型， [查看此处](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > To invoke a form data model from rule editor using custom functions, [see here](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services). 
 
-#### 函数声明支持的类型 {#function-declaration-supported-types}
+#### Function declaration supported types {#function-declaration-supported-types}
 
-**函数语句**
+**Function Statement**
 
 ```javascript
 function area(len) {
@@ -671,9 +681,9 @@ function area(len) {
 }
 ```
 
-此函数包含但不包含 `jsdoc` 注释。
+This function is included without `jsdoc` comments.
 
-**函数表达式**
+**Function Expression**
 
 ```javascript
 var area;
@@ -684,7 +694,7 @@ area = function(len) {
 };
 ```
 
-**函数表达式和语句**
+**Function Expression and Statement**
 
 ```javascript
 var b={};
@@ -694,7 +704,7 @@ b.area = function(len) {
 }
 ```
 
-**函数声明作为变量**
+**Function Declaration as Variable**
 
 ```javascript
 /** */
@@ -705,9 +715,9 @@ var x1,
     x2 =5, x3 =true;
 ```
 
-限制：自定义函数仅从变量列表中选取第一个函数声明（如果同时选取）。 您可以对每个声明的函数使用函数表达式。
+Limitation: custom function picks only the first function declaration from the variable list, if together. You can use function expression for every function declared.
 
-**函数声明作为对象**
+**Function Declaration as Object**
 
 ```javascript
 var c = {
@@ -722,13 +732,14 @@ var c = {
 
 >[!NOTE]
 >
->确保使用 `jsdoc` 每个自定义函数。 尽管 `jsdoc`鼓励发表评论，包括空的 `jsdoc`用于将函数标记为自定义函数的注释。 它支持默认处理自定义函数。
+>Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+-->
 
 ## 管理规则 {#manage-rules}
 
 选择表单对象并选择该对象时，会列出该对象上的任何现有规则 ![edit-rules1](assets/edit-rules-icon.svg). 您可以查看标题并预览规则摘要。 此外，您还可以通过UI展开和查看完整的规则摘要、更改规则的顺序、编辑规则以及删除规则。
 
-![List-rules](assets/list-rules.png)
+![List-rules](assets/list-rules-cc.png)
 
 您可以对规则执行以下操作：
 
@@ -743,7 +754,7 @@ var c = {
 
 * **启用/禁用**：当必须暂时暂停使用规则时，您可以选择一个或多个规则并选择 **[!UICONTROL 禁用]** “操作”工具栏中的以禁用它们。 如果禁用某个规则，则它不会在运行时执行。 要启用已禁用的规则，可以选择该规则并选择操作工具栏中的启用。 规则的状态列显示规则是启用还是禁用。
 
-![禁用规则](assets/disablerule.png)
+![禁用规则](assets/disablerule-cc.png)
 
 ## 复制粘贴规则 {#copy-paste-rules}
 
