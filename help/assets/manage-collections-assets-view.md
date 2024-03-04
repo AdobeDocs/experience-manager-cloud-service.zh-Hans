@@ -1,10 +1,9 @@
 ---
 title: 管理收藏集
 description: 收藏集是Experience Manager Assets视图中的一组资源。 使用收藏集可在用户之间共享资源。
-exl-id: 33c889f5-c989-4772-9591-db62f50e5c80
-source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '789'
 ht-degree: 89%
 
 ---

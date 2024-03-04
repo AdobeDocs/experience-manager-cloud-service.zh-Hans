@@ -3,8 +3,7 @@ title: 如何在“资源”视图中管理元数据？
 description: 了解如何在资产视图中管理元数据。 更好的元数据管理使资源更易于访问、更易于管理和完整。
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: cfc105d1-41fc-4418-9905-b2a28a348682
-source-git-commit: ef2a883e99823b1109eba598e89ea25a661e389b
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 87%

@@ -3,11 +3,10 @@ title: 支持的文件格式
 description: ' [!DNL Assets view] 的各种用例支持的文件格式'
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
-source-git-commit: 6cb30ffda6c0de04e5cb3d01341b59c9ee75b335
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 96%
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -122,7 +121,7 @@ ht-degree: 96%
 
 ## 后续步骤 {#next-steps}
 
-* 使用提供产品反馈 [!UICONTROL 反馈] Assets视图用户界面上可用的选项
+* 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 

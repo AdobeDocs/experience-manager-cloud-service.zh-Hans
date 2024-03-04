@@ -2,11 +2,10 @@
 title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
 description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现合适的资源，并帮助您提高内容速度。
 role: User
-exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 78%
+ht-degree: 91%
 
 ---
 
@@ -120,37 +119,37 @@ ht-degree: 78%
 
 1. 单击&#x200B;**[!UICONTROL 确认]**&#x200B;以从用户界面中移除筛选条件。
 
-## 搜索资源，使用 [!DNL Adobe Firefly] {#search-firefly}
+## 使用 [!DNL Adobe Firefly] 搜索资源 {#search-firefly}
 
-通过使用，您可以搜索在任何资产文件夹中都不可用的资产 [!DNL Adobe Firefly] 中的资源搜索功能 [!DNL Experience Manager Assets]. 这允许您实时高效地生成未存储在资源文件夹中的资源。
+可利用 [!DNL Experience Manager Assets] 中的 [!DNL Adobe Firefly] 资源搜索功能搜索并非在任何资源文件夹中都有的资源。这样即可高效地实时生成未存储在资源文件夹中的资源。
 
 ### 开始之前
 
-您必须拥有有效的 [!DNL Adobe Express] 订阅。
+您必须具有活跃的 [!DNL Adobe Express] 订阅。
 
 ### 生成资源
 
-要使用生成新资源，请执行以下操作： [!DNL Adobe Firefly]：
+要使用 [!DNL Adobe Firefly] 生成新资源，请执行以下操作：
 
-1. 导航至 [!DNL AEM Assets] 工作区。
+1. 导航到 [!DNL AEM Assets] 工作区。
 1. 在页面顶部的搜索栏中输入资源名称。<br>
-例如，您可以使用关键词搜索资产 `Bugatti Type 57`. 搜索资产时，由于资产不存在于任何资产文件夹中，因此未找到任何结果。
-1. 在页面中间的搜索栏中键入资源名称，然后单击 **[!UICONTROL 生成]**.
+例如，可使用关键字 `Bugatti Type 57` 搜索某个资源。在搜索该资源时，由于任何资源文件夹中都不存在该资源，因此未找到任何结果。
+1. 在页面中间的搜索栏中键入资源名称，然后单击&#x200B;**[!UICONTROL 生成]**。
    ![Firefly 集成](assets/firefly-integration.jpg)
-   *图：在资产文件夹中未找到Bugatti Type 57的结果。* <br>
+   *图：在资源文件夹中未找到 Bugatti Type 57 的结果。* <br>
 新资产生成成功。
    ![Firefly 集成](assets/bugatti-type-57.jpg)
-   *图：使用搜索的引用资源 [!DNL Adobe Firefly] 资源搜索功能。* <br>
-您可以将这些资产上传到您的首选文件夹，以便轻松访问。
+   *图：使用 [!DNL Adobe Firefly] 资源搜索功能找到的参考资源。* <br>
+可将这些资源上传到您喜爱的文件夹以供轻松访问。
 
 ### 上传资源
 
 要将生成的资源上传到资源存储库，请执行以下操作：
 
-1. 单击 **[!UICONTROL 上传]**.
-1. 选择要将资源上传到的资源文件夹，然后单击 **[!UICONTROL 选择文件夹]**.
+1. 单击&#x200B;**[!UICONTROL 上传]**。
+1. 选择需要将资源上传到的资源文件夹，然后单击&#x200B;**[!UICONTROL 选择文件夹]**。
    ![上传资源](assets/upload-asset-firefly.jpg)
-   *图：选择要上传资源的文件夹。*
+   *图：选择要将资源上传到的文件夹。*
 
 ## 保存的搜索 {#saved-search}
 
@@ -175,7 +174,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## 使用搜索结果 {#work-with-search-results}
 
-可选择在搜索结果中显示的资源并执行以下操作：
+选择在搜索结果中显示的资源后可执行以下操作：
 
 * **查找相似的图像**：根据元数据和智能标记查找 Assets UI 中相似的图像资源。
 
@@ -187,7 +186,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 * **固定到快速访问**：[固定资源](my-workspace-assets-view.md)，以便在以后需要它时更快地访问。所有固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分中。
 
-* **在Adobe Express中打开**：从Experience Manager Assets屏幕编辑集成Adobe Express中的图像。
+* **在 Adobe Express 中打开**：在 Experience Manager Assets 屏幕中集成的 Adobe Express 中编辑图像。
 
 * **编辑**：使用 Adobe Express 编辑图像。
 

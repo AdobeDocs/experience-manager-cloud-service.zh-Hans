@@ -2,10 +2,9 @@
 title: 上传资产到存储库
 description: 上传资产到 [!DNL Assets view]，查看上传状态，以及解决上传问题。
 role: User
-exl-id: a85a4455-4456-48af-aee9-f05300677605
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '825'
 ht-degree: 91%
 
 ---
@@ -34,7 +33,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->如果您将文件夹结构上传到“资产”视图，则无需创建具有该文件夹结构的.ZIP文件，您可以直接上传文件夹结构。 上传到“资产”视图的.ZIP文件存储为一个ZIP资产，上传后不会自动提取。
+>如果将文件夹结构上传到“资产”视图，则无需使用该文件夹结构创建.ZIP文件，您可以直接上传文件夹结构。 上传到“资产”视图的.ZIP文件存储为一个ZIP资产，上传后不会自动提取。
 
 ## 查看上传进度和状态 {#upload-progress}
 
@@ -82,7 +81,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->您可以在 [!DNL Creative Cloud] 桌面应用程序中直接将资产上传到 DAM 存储库。
+>您可以在中直接将资源上传到DAM存储库 [!DNL Creative Cloud] 桌面应用程序。
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -101,9 +100,9 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在“资产”视图中上传资产](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
+* [观看视频，了解如何在“资源”视图中上传资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
-* 使用提供产品反馈 [!UICONTROL 反馈] Assets视图用户界面上可用的选项
+* 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 

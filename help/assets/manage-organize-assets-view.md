@@ -3,10 +3,9 @@ title: 管理您的数字资源
 description: 在  [!DNL Assets view] 中移动、删除、复制、重命名、更新您的资源和进行版本控制。
 role: User,Leader
 contentOwner: AG
-exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1024'
 ht-degree: 92%
 
 ---

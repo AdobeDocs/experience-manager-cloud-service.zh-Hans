@@ -1,10 +1,9 @@
 ---
 title: 如何共享资产链接？
 description: 生成链接并与无权访问该 [!DNL Assets view] 应用程序的其他人共享资产。
-exl-id: 6e05b06c-7436-40e3-acee-c8b1ed218f9e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '397'
 ht-degree: 93%
 
 ---
