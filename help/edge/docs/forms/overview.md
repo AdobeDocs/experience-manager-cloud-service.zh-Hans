@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Service 专为实现最佳性能而构建�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 26%
+source-wordcount: '1120'
+ht-degree: 25%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 26%
 
 利用Adobe的AEM Forms Edge Delivery Service，简化表单创建并提高完成率。 这项功能强大、可组合的服务使您能够构建具有卓越性能和视觉吸引力的企业级表单。 AEM会优先处理用户体验和业务目标，从而确保超快加载时间和增加表单完成次数。
 
-您可以使用该服务执行以下操作：
+利用该服务，您可以：
 
-* **使用令人惊叹的表单Captivate用户**：使用预建组件库轻松构建复杂且吸引人的表单。 轻松集成reCAPTCHA，将表单直接提交到电子邮件，并允许无缝文件上传到Sharepoint、Azure Storage和Amazon S3等安全存储解决方案。 甚至可创建您自己的自定义表单组件，将您独特的愿景变为现实。
+* **使用令人惊叹的表单Captivate用户**：使用预建组件库轻松构建复杂且吸引人的表单。 轻松集成 reCAPTCHA、直接将表单提交到电子邮件，并允许将文件无缝上传到安全存储解决方案，例如 Sharepoint、Azure 存储和 Amazon S3。甚至创建您自己的自定义表单组件来实现您的独特愿景。
 
-* **使用您选择的工具创建数字注册体验**：通过分离内容源提高创作效率。 开箱即用地您可以使用基于文档的创作(Microsoft 365和Google Workspace)和AEM创作(AEM编辑器)。 因此，您可以在同一网站上使用多个内容源并使用首选创作工具，例如Microsoft Excel、Google Sheets或自适应Forms编辑器。
+* **使用选定工具创建数字注册体验**：通过分离内容来源而提高创作效率。开箱即用地您可以使用基于文档的创作(Microsoft 365和Google Workspace)和AEM创作(AEM编辑器)。 因此，您可以在同一网站上使用多个内容源并使用首选创作工具，例如Microsoft Excel、Google Sheets或自适应Forms编辑器。
 
 * **使用完美的Lighthouse分数构建表单**：构建可快速加载和渲染的表单，即使在Internet连接速度较慢的情况下也是如此。 缩短加载时间并优化用户体验有助于提高表单完成率和转化率。
 
@@ -89,9 +89,36 @@ ht-degree: 26%
 * **在提交表单时发送电子邮件通知**：消除手动跟进的麻烦，并确保与我们内置的表单提交电子邮件自动化功能及时通信。 此集成解决方案让您在有人填写您网站上的表单时，可以轻松通知相关方，包括发送表单数据。 无需复杂的配置或额外的工具 — 开箱即用。
 
 
-## 工作流
+## 可用的Forms块
 
-![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow.png)
+AEM Forms Edge Delivery Service提供两种类型的表单块以满足不同需求：
+
+* **基本Forms块**：这是一个通用选项，适用于创建具有基本功能的简单表单。 它允许您集成各种输入类型，如文本字段、下拉菜单和单选按钮，使您能够有效地收集用户数据。
+
+* **自适应Forms块**：此高级块可解锁基本Forms块以外的其他功能，使您能够构建更复杂且更具交互性的表单。 以下是其主要功能的划分说明：
+
+   * 规则：在表单中定义基于逻辑的操作。 您可以使用规则有条件地显示或隐藏表单节、根据用户输入预填充字段以及执行各种验证以确保数据完整性。
+
+   * 服务器端可扩展性：通过将表单与服务器端逻辑集成来扩展表单的功能。 这样，您就可以执行复杂的计算，与外部系统交互，并根据表单中的用户操作自动执行特定任务。
+
+   * Cross Walk：简化工作流和数据管理：利用AEM的强大功能可以：
+
+      * 使用AEM编辑器设计用户友好的表单。
+
+      * 生成“记录文档”，用于提交数据的安全和防篡改存档。
+
+      * 加快使用Adobe Sign进行电子签名以实现流畅安全的签名体验。
+
+      * 通过AEM工作流自动化业务流程，根据表单提交触发操作。
+
+      * 轻松与各种数据源集成，实现无缝的数据流和交换。
+
+  使用Adaptive Forms Block需要额外的许可证。
+
+### 选择正确的Forms块
+
+Basic和Adaptive Forms块之间的选择取决于您的特定要求。 如果您需要一个直接的解决方案来收集基本用户信息，那么Basic Forms Block将是您的最佳选择。 但是，如果您的表单需要复杂的逻辑、数据操作、与外部系统集成，或使用AEM功能简化工作流，以及 **您拥有必要的许可证**，自适应Forms块提供实现目标所需的功能和灵活性。
+
 
 ## 开始创建表单
 
@@ -116,7 +143,7 @@ ht-degree: 26%
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
             <img src="/help/edge/assets/smock_devices_18_n.svg" alt="使用 EDS Forms 创建表单" style="border-radius: 5px;"> </b>
-            <br><b style="margin-top: 5px;">使用Google Sheets或Microsoft Excel创建表单</b>
+            <br><b style="margin-top: 5px;">使用 Google Sheets 或 Microsoft Excel 创建表单</b>
         </a>
         <p>创建可在移动设备上快速加载和渲染并自动回流的表单。</p>
     </div>
