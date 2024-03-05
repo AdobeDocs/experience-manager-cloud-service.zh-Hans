@@ -6,9 +6,9 @@ feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -60,9 +60,9 @@ Edge Delivery 使您可快速创建吸引人的网站，作者从中可快速地
 
 通过将 AEM Assets 与 Edge Delivery Services 的基于文档的创作集成，网站作者在 Microsoft Word 或 Google Docs 中创作文档时可使用可在 AEM Assets 存储库中找到的图像。有关更多信息，请参阅[将 AEM Assets 与基于文档的创作集成](/help/edge/using.md#integrate-assets-edge)。
 
-## 与Adobe Journey Optimizer集成 {#integration-with-ajo}
+## 与 Adobe Journey Optimizer 集成 {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) 简化了客户的历程管理，利用智能决策和见解为客户提供全渠道营销活动。 使用Journey Optimizer设计消息时，您可以直接从Journey Optimizer界面中访问Assetsas a Cloud Service存储库。 用户可以通过Experience Manager Assets的嵌入式用户界面访问资源。 有关更多信息，请参阅 [使用Experience Manager Assets创建和管理资源](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) 简化了客户的历程管理，利用智能决策和见解为客户提供全渠道营销活动。在使用 Journey Optimizer 设计消息时，您可以直接从 Journey Optimizer 界面中访问 Assets as a Cloud Service 存储库。用户可以使用 Experience Manager Assets 的嵌入式用户界面访问资源。有关更多信息，请参阅[使用 Experience Manager Assets 创建和管理资源](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html)。
 
 ## 新 Assets 功能 {#whats-new-assets}
 

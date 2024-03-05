@@ -2,7 +2,7 @@
 title: 创建经过检测可与 Universal Editor 结合使用的区块
 description: 了解如何在使用 Edge Delivery Services 项目进行 AEM 创作中创建经过检测可与 Universal Editor 结合使用的区块。
 source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1205'
 ht-degree: 100%
 

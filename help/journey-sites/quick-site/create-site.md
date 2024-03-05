@@ -3,9 +3,9 @@ title: 从模板创建站点
 description: 了解如何使用站点模板快速创建 AEM 站点。
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1485'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -181,9 +181,9 @@ ht-degree: 96%
 我们建议您查看文档[设置管道](pipeline-setup.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
 * [AEM 标准站点模板](https://github.com/adobe/aem-site-template-standard) – 这是 AEM 标准站点模板的 GitHub 存储库。
-* [组织页面](/help/sites-cloud/authoring/sites-console/organizing-pages.md)  — 本指南详细介绍了如何整理AEM站点的页面。
-* [创建页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)  — 本指南详细介绍如何向网站添加新页面。
-* [管理页面](/help/sites-cloud/authoring/sites-console/managing-pages.md)  — 本指南详细介绍了如何管理网站的页面，包括移动、复制和删除。
+* [组织页面](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - 本指南详细介绍如何组织 AEM 站点的页面。
+* [创建页面](/help/sites-cloud/authoring/sites-console/creating-pages.md) - 本指南详细介绍如何将新页面添加到您的网站。
+* [管理页面](/help/sites-cloud/authoring/sites-console/managing-pages.md) - 本指南详细介绍如何管理站点页面，包括移动、复制和删除。
 * [如何使用包](/help/implementing/developing/tools/package-manager.md) – 可使用包导入和导出存储库内容。本文档说明了在 AEM 6.5 中使用包的方式，此方式也适用于 AEMaaCS。
 * [站点管理文档](/help/sites-cloud/administering/site-creation/create-site.md) – 查看有关站点创建的技术文档，了解有关快速站点创建工具的功能的更多详细信息。
 * [创建表格或将表格添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) - 分步学习将表单集成到您的网站中并优化您的数字体验以尽量提高影响力的技巧和最佳实践。

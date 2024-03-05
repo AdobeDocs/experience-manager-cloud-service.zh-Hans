@@ -3,7 +3,7 @@ title: 学习内容建模基础知识
 description: 学习使用内容片段为 Headless CMS 的内容建模的基础知识。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '900'
 ht-degree: 100%
 

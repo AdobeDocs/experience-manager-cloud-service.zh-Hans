@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳�
 description: Adobe Experience Manager as a Cloud Service 的 SEO 和 URL 管理最佳实践
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3539'
 ht-degree: 100%
 
