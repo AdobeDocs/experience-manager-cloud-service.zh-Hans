@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 55%
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 55%
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
-一旦 [已创建和预览表单](/help/edge/docs/forms/create-forms.md)，现在应该启用相应的电子表格以开始接收数据。
+在[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，可以启用相应的电子表格以开始接收数据。
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -27,30 +27,30 @@ ht-degree: 55%
 
 要启用电子表格，请执行以下操作：
 
-1. 打开具有表单的电子表格，然后附加一个新工作表，将其重命名为 `incoming`.
+1. 打开包含您的表单的电子表格并附加一个新工作表，并将其重命名为 `incoming`。
 
    >[!WARNING]
    >
-   > 如果 `incoming` 工作表不存在，AEM不会将任何数据发送到电子表格。
+   > 如果 `incoming` 工作表不存在，AEM 不会向电子表格发送任何数据。
 
-1. 镜像表单字段名称和值 `Name` 中的列`shared-default` 表，到中的标题 `incoming` 工作表。
+1. 将表单字段名称、`shared-default` 工作表中的 `Name` 列的值镜像到 `incoming` 工作表中的标题。
 
-   中的每个值 `Name` 列 `shared-default` 工作表（不包括提交按钮）用作 `incoming` 工作表。 例如，请考虑下图说明“contact-us”表单的标头：
+   `shared-default` 工作表的 `Name` 列中的每个值（不包括提交按钮）均充当 `incoming` 工作表中的标题。例如，请考虑下图，其中说明了“contact-us”表单的标题：
 
-   ![联系我们表格的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+   ![“contact-us”表单的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. 使用sidekick预览工作表。
+1. 使用 Sidekick 预览工作表。
 
    >[!NOTE]
    >
-   >即使您以前预览过工作表，也必须在创建工作表之后再次预览它 `incoming` 首次填写工作表。
+   >即使您之前已经预览过该工作表，在第一次创建 `incoming` 工作表后也必须再次预览它。
 
 
-将字段名称添加到 `incoming` 表格中，您的表单已准备好接受提交。 您可以预览表单，并使用它向表单提交数据。
+将字段名称添加到 `incoming` 工作表后，您的表单便能接受提交。您可以预览表单并使用它向工作表提交数据。
 
 
 
-您还会在电子表格中看到以下更改：
+您还可以在电子表格中观察到以下变化：
 
 一份名为“Slack”的工作表将会被添加到您的 Excel 工作簿或 Google 工作表中。在此工作表中，您可以在电子表格中引入新数据时为指定的 Slack 渠道配置自动通知。目前，AEM 仅支持向 AEM Engineering Slack 组织和 Adobe Enterprise 支持组织发送通知。
 
@@ -64,31 +64,31 @@ ht-degree: 55%
 
    >[!WARNING]
    >
-   >  在任何情况下，“shared-default”表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
+   >  在任何情况下，“shared-default”工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
 
 
-## （可选）使用管理员API启用电子表格以接受数据
+## （可选）使用管理员 API 以使电子表格能够接受数据
 
-您还可以向表单发送POST请求，以使其接受数据并配置标头 `incoming` 工作表。 在收到POST请求后，该服务将分析请求正文并自主生成数据引入所需的基本标题和页面。
+您还可以向表单发送 POST 请求，使其能够接受数据并配置 `incoming` 工作表的标头。收到 POST 请求后，该服务会分析请求正文并自动生成数据摄取所需的基本标头和工作表。
 
-若要使用管理 API 使电子表格能够接受数据：
+要使用管理员 API 以使电子表格能够接受数据，请执行以下操作：
 
 
-1. 打开您创建的工作簿，并将默认工作表的名称更改为 `incoming`.
+1. 打开您创建的工作簿并将默认工作表的名称更改为 `incoming`。
 
    >[!WARNING]
    >
-   > 如果 `incoming` 工作表不存在，AEM不会向此工作簿发送任何数据。
+   > 如果 `incoming` 工作表不存在，AEM 不会向此工作簿发送任何数据。
 
 1. 在 Sidekick 中预览工作表。
 
    >[!NOTE]
    >
-   >即使您以前预览过工作表，也必须在创建工作表之后再次预览它 `incoming` 首次填写工作表。
+   >即使您之前已经预览过该工作表，在第一次创建 `incoming` 工作表后也必须再次预览它。
 
-1. 发送POST请求以在中生成相应的标头 `incoming` 工作表，然后添加 `shared-default` 将工作表添加到电子表格（如果尚未存在）。
+1. 发送 POST 请求以在 `incoming` 工作表中生成适当的标头，并将 `shared-default` 工作表添加到电子表格（如果它尚不存在）。
 
-   要了解如何设置用于设置工作表的 POST 请求的格式，请参阅 [Admin API 文档](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)。您可以查看下面提供的示例：
+   要了解如何设置用于设置工作表的 POST 请求的格式，请参阅[管理员 API 文档](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)。您可以查看下面提供的示例：
 
    **请求**
 
@@ -151,9 +151,9 @@ ht-degree: 55%
    }'
    ```
 
-   上述POST请求提供示例数据，包括表单字段及其各自的示例值。 管理服务会使用此数据来设置表单。
+   上述 POST 请求提供了示例数据，包括表单字段及其各自的示例值。管理服务会使用此数据来设置表单。
 
-   您的表单现已启用以接受数据。 您还会在电子表格中看到以下更改：
+   您的表单现已能够接受数据。您还可以在电子表格中观察到以下变化：
 
 一份名为“Slack”的工作表将会被添加到您的 Excel 工作簿或 Google 工作表中。在此工作表中，您可以在电子表格中引入新数据时为指定的 Slack 渠道配置自动通知。目前，AEM 仅支持向 AEM Engineering Slack 组织和 Adobe Enterprise 支持组织发送通知。
 
@@ -170,7 +170,7 @@ ht-degree: 55%
 
 >[!WARNING]
 >
->  在任何情况下，“shared-default”表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
+>  在任何情况下，“shared-default”工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
 
 ## 将数据发送到您的工作表 {#send-data-to-your-sheet}
 
@@ -286,7 +286,7 @@ POST https://my-domain.com/email-form
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-接下来，您可以自定义感谢消息， [配置感谢页面](/help/edge/docs/forms/thank-you-page-form.md)，或 [设置重定向](/help/edge/docs/forms/thank-you-page-form.md).
+接下来，您可以自定义感谢消息、[配置感谢页面](/help/edge/docs/forms/thank-you-page-form.md)或[设置重定向](/help/edge/docs/forms/thank-you-page-form.md)。
 
 ## 查看更多
 

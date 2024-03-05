@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 2359f66c961d7678d07af12aa8173ad9169dff9c
 workflow-type: tm+mt
 source-wordcount: '4761'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -178,7 +178,7 @@ ht-degree: 98%
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
-   + [Adobe Developer控制台中的JWT凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Adobe Developer Console 中的 JWT 凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + 上线 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hans)
    + 上线历程 {#journey}
@@ -275,8 +275,8 @@ ht-degree: 98%
       + [组件控制台](/help/sites-cloud/authoring/components-console.md)
       + [路径选择](/help/sites-cloud/authoring/path-selection.md)
       + [疑难解答](/help/sites-cloud/authoring/troubleshooting.md)
-      + 站点控制台 {#sites-console}
-         + [站点控制台](/help/sites-cloud/authoring/sites-console/introduction.md)
+      + Sites 控制台 {#sites-console}
+         + [Sites 控制台](/help/sites-cloud/authoring/sites-console/introduction.md)
          + [控制台侧面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
          + [创建新站点](/help/sites-cloud/authoring/sites-console/create-site.md)
          + [组织页面](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
@@ -304,7 +304,7 @@ ht-degree: 98%
          + [创建无障碍内容（WCAG 2.1 合规性）](/help/sites-cloud/authoring/page-editor/accessible-content.md)
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
-         + [撤消重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
+         + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universal Editor {#universal-editor}
          + [使用 Universal Editor 创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [使用 Universal Editor 发布内容](/help/sites-cloud/authoring/universal-editor/publishing.md)
@@ -706,7 +706,7 @@ ht-degree: 98%
    + 疑难解答 {#troubleshooting-aem-forms-cloud-service}
       + [安装和配置](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 缓存](/help/forms/troubleshooting-caching-performance.md)
-      + [重新启动AEM SDK](/help/forms/restart-aem-sdk.md)
+      + [重新启动 AEM SDK](/help/forms/restart-aem-sdk.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概述{#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
@@ -725,7 +725,7 @@ ht-degree: 98%
       + [使用 Screens Content Provider](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [创建 Screens 视频演绎版](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [为 Screens as a Cloud Service 配置 Dispatcher](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [为Screensas a Cloud Service配置时间轴视图](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [配置 Screens as a Cloud Service 的时间线视图](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + 创建内容 {#create-content}
       + [在 Screens Content Provider 中创建和管理项目](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [在 Screens Content Provider 中创建和管理渠道](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)

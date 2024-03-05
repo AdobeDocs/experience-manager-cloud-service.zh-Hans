@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 17%
+ht-degree: 26%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 17%
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
-AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以在AEM EDS项目中包含自适应表单块以开始创建表单。 我们开始吧：
+AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以在AEM EDS项目中包含自适应表单块以开始创建表单。 让我们开始吧：
 
 
 ## 先决条件
 
 在开始之前，请确保您已完成以下步骤：
 
-* 使用AEM样板设置边缘交付服务(EDS) GitHub项目，并在本地计算机上克隆相应的GitHub存储库。 请参阅 [开发人员教程](https://www.aem.live/developer/tutorial) 以了解详细信息。 在本文档中，将边缘交付服务(EDS)项目的本地文件夹称为 `[EDS Project repository]` .
-* 确保您有权访问Google工作表或Microsoft SharePoint。 要将Microsoft SharePoint设置为您的内容源，请参阅 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+* 使用AEM样板设置边缘交付服务(EDS) GitHub项目，并在本地计算机上克隆相应的GitHub存储库。 有关详细信息，请参阅[开发者教程](https://www.aem.live/developer/tutorial)。在本文档中，Edge Delivery Service (EDS) 项目的本地文件夹称作 `[EDS Project repository]`。
+* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将Microsoft SharePoint设置为您的内容源，请参阅 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
@@ -38,7 +38,7 @@ AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助
 
 “自适应”使用户能够为Edge Delivery Service Site创建表单。 但是，此块未包含在默认的AEM样板中（用于创建Edge Delivery Service项目）。 要将自适应表单块无缝集成到您的边缘交付服务项目中，请执行以下操作：
 
-1. **克隆自适应表单块存储库**：克隆 [自适应表单块存储库](https://github.com/adobe/afb) 在本地计算机上。 它包含在EDS网页上呈现表单的代码。 在本文档中，将Forms Block存储库的本地文件夹称为 `[Adaptive Form Block repository]`.
+1. **克隆自适应表单块存储库**：克隆 [自适应表单块存储库](https://github.com/adobe/afb) 在本地计算机上。 它包含用于在 EDS 网页上呈现表单的代码。在本文档中，表单区块存储库的本地文件夹称作 `[Adaptive Form Block repository]`。
 1. **找到自适应表单块存储库：** 访问 [自适应表单块存储库]/blocks文件夹并复制 `form` 文件夹。
 1. **将自适应表单块粘贴到EDS项目中：**
 导航至 [EDS项目存储库]/blocks/文件夹并粘贴表单文件夹。
@@ -61,7 +61,7 @@ AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助
 
 +++
 
-+++ 步骤2：使用Microsoft Excel或Google工作表创作表单。
++++ 步骤 2：使用 Microsoft Excel 或 Google Sheets 创建表单。
 
 使用电子表格可以轻松实现制作表单，而不是在复杂的流程中导航。 首先，您可以将行和列标题添加到电子表格中，其中每一行表示一个表单字段，而每个列标题定义对应字段的属性。
 
@@ -110,10 +110,10 @@ AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助
 
 +++
 
-+++ 步骤3：使用边缘交付服务(EDS)页面预览表单。
++++ 步骤 3：使用 Edge Delivery Service (EDS) 页面预览表单。
 
 
-到目前为止，您已将自适应表单块添加到EDS项目并准备了表单的结构。 现在，如果要预览表单：
+到目前为止，您已将自适应表单块添加到EDS项目并准备了表单的结构。 现在，要预览表单，请执行以下操作：
 
 1. **访问项目目录：** 打开您的Microsoft SharePoint或Google Drive帐户，然后导航到您的AEM Edge Delivery项目目录。
 
@@ -149,7 +149,7 @@ AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助
 
 ## 下一步
 
-[准备电子表格](/help/edge/docs/forms/submit-forms.md) ，以便在提交表单后开始接受数据。
+[准备您的电子表格](/help/edge/docs/forms/submit-forms.md)以在表单提交后开始接受数据。
 
 
 

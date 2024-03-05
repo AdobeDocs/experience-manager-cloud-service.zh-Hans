@@ -7,14 +7,14 @@ hidefromtoc: true
 source-git-commit: e8fbe3efae7368c940cc2ed99cc9a352bbafbc22
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 1%
+ht-degree: 90%
 
 ---
 
 
-# 设置表单字段样式
+# 设置表单字段的样式
 
-Forms对于用户在网站上的交互至关重要，允许用户输入数据。 本指南介绍了在中设计各种表单字段样式的基础知识 [自适应表单块](/help/edge/docs/forms/create-forms.md)，帮助您创建美观且用户友好的表单。
+表单对于网站上的用户交互至关重要，允许他们输入数据。本指南介绍了在中设计各种表单字段样式的基础知识 [自适应表单块](/help/edge/docs/forms/create-forms.md)，帮助您创建美观且用户友好的表单。
 
 ## 了解表单字段类型
 
@@ -22,51 +22,51 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 
 * 输入字段：包括文本输入、电子邮件输入、密码输入等。
 * 复选框组：用于选择多个选项。
-* 单选按钮组：用于从组仅选择一个选项。
-* 下拉列表：也称为选择框，用于从列表中选择一个选项。
-* 面板/容器：用于将相关的表单元素分组在一起。
+* 单选按钮组：用于从一个组中仅选择一个选项。
+* 下拉菜单：也称为选择框，用于从列表中选择一个选项。
+* 面板/容器：用于将相关的表单元素组合在一起。
 
-## 基本样式设计原则
+## 基本样式设置准则
 
-在为特定表单字段设置样式之前，了解基本CSS概念至关重要：
+在设置特定表单字段的样式之前，了解基本 CSS 概念至关重要：
 
-* 选择器： CSS选择器允许您定位特定的HTML元素以进行样式设置。 可以使用元素选择器、类选择器或ID选择器。
-* 属性： CSS属性定义元素的可视外观。 设置表单字段样式的常见属性包括颜色、背景颜色、边框、边距、边距等。
-* 方框模型： CSS方框模型将HTML元素的结构描述为一个由边距、边框和边距包围的内容区域。
-* Flexbox/Grid：CSS Flexbox和Grid布局是用于创建响应式灵活设计的强大工具。
+* 选择器：CSS 选择器可让您针对特定的 HTML 元素进行样式设置。您可以使用元素选择器、类选择器或 ID 选择器。
+* 属性：CSS 属性定义元素的外观。用于设置表单字段的样式的常见属性包括颜色、背景颜色、边框、间距、边距等。
+* 框模型：CSS 框模型将 HTML 元素的结构描述为由间距、边框和边距包围的内容区域。
+* Flexbox/网格：CSS Flexbox 和网格布局是用于创建响应式和灵活设计的强大工具。
 
 ## 为自适应表单块设置表单样式
 
 自适应表单块提供标准化的HTML结构，从而简化表单组件的选择和样式设置过程：
 
-* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file`. 此文件为表单提供全面的样式，支持多步向导表单。 它强调使用自定义CSS变量来轻松进行自定义、维护和跨表单的统一样式。 有关将自适应表单块添加到项目的说明，请参阅 [创建表单](/help/edge/docs/forms/create-forms.md).
+* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file` 来修改表单的默认样式。此文件为表单提供全面的样式，并支持多步骤向导表单。它强调使用自定义 CSS 变量来轻松跨表单进行自定义、维护和统一样式设置。有关将自适应表单块添加到项目的说明，请参阅 [创建表单](/help/edge/docs/forms/create-forms.md).
 
-* **自定义**：使用默认值 `forms.css` 将其作为基础，并进行自定义以修改表单组件的外观，使其具有视觉吸引力的用户友好性。 文件的结构鼓励组织并维护表单的样式，从而在整个网站中促进一致的设计。
+* **自定义**：使用默认值 `forms.css` 作为基础，并对其进行自定义以修改表单组件的外观，使其具有视觉吸引力并且对用户友好。此文件的结构有利于组织和维护表单的样式，从而促进整个网站设计的一致性。
 
-## forms.css结构的细分
+## forms.css 的结构细分
 
-* **全局变量：** 定义于 `:root` 级别，这些变量(`--variable-name`)存储样式表中使用的值，以便保持一致性和便于更新。 这些变量定义颜色、字体大小、填充和其他属性。 您可以声明自己的全局变量或修改现有变量以更改表单样式。
+* **全局变量：**&#x200B;在 `:root` 级别进行定义，这些变量 (`--variable-name`) 存储整个样式表中使用的值，以确保一致并简化更新。这些变量定义颜色、字体大小、间距和其他属性。您可以声明自己的全局变量或修改现有变量以更改表单的样式。
 
-* **通用选择器样式：** 此 `*` 选择器匹配表单中的每个元素，确保样式默认应用于所有组件，包括设置 `box-sizing` 属性至 `border-box`.
+* **通用选择器样式：**`*`选择器匹配表单中的每个元素，确保样式默认应用于所有组件，包括将 `box-sizing` 属性设置为 `border-box`。
 
-* **表单样式：** 本节重点介绍如何使用选择器定位特定HTML元素来设置表单组件的样式。 它定义输入字段、文本区域、复选框、单选按钮、文件输入、表单标签和说明的样式。
+* **表单样式设置：**&#x200B;此部分重点介绍使用选择器来定位特定 HTML 元素以设置表单组件的样式。它定义输入字段、文本区域、复选框、单选按钮、文件输入、表单标签和描述的样式。
 
-* **向导样式（如果适用）：** 此部分专门用于设置向导布局的样式，这是一种多步骤表单，每一步显示一个。 它定义向导容器、字段集、图例、导航按钮和响应式布局的样式。
+* **向导样式（如果适用）：**&#x200B;此部分专注于设计向导布局的样式，这是一个多步骤表单，其中显示每个步骤（一次显示一个）。它定义向导容器、字段集、图例、导航按钮和响应式布局的样式。
 
-* **媒体查询：** 这些为不同的屏幕大小提供样式，并相应地调整布局和样式。
+* **媒体查询：**&#x200B;它们提供了针对不同屏幕大小的样式，并相应地调整布局和样式。
 
-* **其他样式：**：本节介绍成功或错误消息的样式、文件上传区域以及在表单中可能遇到的其他元素。
+* **其他样式：**：此部分介绍了成功或错误消息的样式、文件上传区域以及表单中可能显示的其他元素。
 
 
 ## 组件结构
 
-自适应表单块为各种表单元素提供了一致的HTML结构，确保更易于样式化和管理。 您可以使用CSS处理组件以进行样式设置。
+自适应表单块为各种表单元素提供了一致的HTML结构，确保更易于样式化和管理。 您可以使用 CSS 来操作组件以设置样式。
 
-### 常规组件（下拉列表、单选按钮组和复选框组除外）：
+### 常规组件（下拉菜单、单选按钮组和复选框组除外）：
 
-所有表单字段（下拉列表、单选按钮组和复选框组除外）均具有以下HTML结构：
+所有表单字段（下拉列表、单选按钮组和复选框组除外）都具有以下 HTML 结构：
 
-#### HTML结构
+#### HTML 结构
 
 ```HTML
 <div class="form-{Type}-wrapper form-{Name} field-wrapper" data-required={Required}>
@@ -78,16 +78,16 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-* 类： div元素具有几个用于定位特定元素和样式的类。 您需要 `form-{Type}-wrapper` 或 `form-{Name}` 用于开发CSS选择器以设置表单字段样式的类：
-   * {Type}：按字段类型标识组件。 例如，文本(form-text-wrapper)、数字(form-number-wrapper)、日期(form-date-wrapper)。
-   * {Name}：按名称标识组件。 字段名称只能包含字母数字字符，名称中的多个连续短划线将替换为单个短划线 `(-)`删除字段名称中的开始和结束短划线。 例如，名字(form-first-name field-wrapper)。
+* 类：div 元素包含几个用于定位特定元素和样式的类。您需要 `form-{Type}-wrapper` 或 `form-{Name}` 类来开发 CSS 选择器以设置表单字段的样式：
+   * {Type}：通过字段类型标识组件。例如，文本 (form-text-wrapper)、数字 (form-number-wrapper)、日期 (form-date-wrapper)。
+   * {Name}：通过名称标识组件。字段名称只能包含字母数字字符，名称中的多个连续破折号将替换为单个破折号 `(-)`，并且字段名称中的开头和结尾破折号将被删除。例如，名字 (form-first-name field-wrapper)。
    * {FieldId}：它是自动生成的字段的唯一标识符。
-   * {Required}：它是一个布尔值，指示字段是否为必填字段。
-* 标签： `label` 要素为字段提供说明性文本，并使用 `for` 属性。
-* 输入： `input` 元素定义要输入的数据类型。 例如，文本、数字、电子邮件。
-* 描述（可选）： `div` 与类 `field-description` 为用户提供其他信息或说明。
+   * {Required}：它是一个布尔值，指示该字段是否为必填字段。
+* 标签：`label` 元素为字段提供描述性文本，并使用 `for` 属性将它与输入元素关联。
+* 输入：`input` 元素定义要输入的数据类型。例如，文本、数字、电子邮件。
+* 描述（可选）：带类 `field-description` 的 `div` 为用户提供附加信息或说明。
 
-**HTML结构示例**
+**HTML 结构示例**
 
 ```HTML
 <div class="form-text-wrapper form-first-name field-wrapper" data-required="true">
@@ -99,7 +99,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-**常规组件的CSS选择器**
+**常规组件的 CSS 选择器**
 
 ```CSS
 .form-{Type}-wrapper input {
@@ -118,10 +118,10 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 }
 ```
 
-* `.form-{Type}-wrapper`：定位外部 `div` 元素标识。 例如， `.form-text-wrapper` 定位所有文本输入字段。
-* `.form-{Name}`：进一步根据特定字段名称选择元素。 例如， `.form-first-name` 定位“名字”文本字段。
+* `.form-{Type}-wrapper`：根据字段类型定位外部 `div` 元素。例如，`.form-text-wrapper` 定位所有文本输入字段。
+* `.form-{Name}`：根据特定字段名称进一步选择元素。例如，`.form-first-name` 定位“名字”文本字段。
 
-**常规组件的CSS选择器示例**
+**常规组件的示例 CSS 选择器**
 
 ```CSS
 /*Target all text input fields */
@@ -142,12 +142,12 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 ```
 
 
-### 下拉组件
+### 下拉菜单组件
 
-对于下拉菜单， `select` 元素而不使用 `input` 元素：
+对于下拉菜单，使用 `select` 元素而不是 `input` 元素：
 
 
-#### HTML结构
+#### HTML 结构
 
 ```HTML
 <div class="form-drop-down-wrapper form-{Name} field-wrapper" data-required={required}>
@@ -159,7 +159,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-**示例HTML结构**
+**示例 HTML 结构**
 
 ```HTML
     <div class="form-drop-down-wrapper form-country field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
    </div>
 ```
 
-#### 下拉组件的CSS选择器示例
+#### 下拉组件的示例 CSS 选择器
 
 ```CSS
 /* Target the outer wrapper */
@@ -219,36 +219,18 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 }
 ```
 
-* 定位包装器：第一个选择器(`.form-drop-down-wrapper`)定位外部包装器元素，确保样式应用于整个下拉组件。
-* Flexbox布局：Flexbox垂直排列标签、下拉菜单和说明，以实现简洁的布局。
-* 标签样式：标签突出显示，字体粗细而边距较浅。
-* 下拉列表样式：选择元素接收边框、内边距和圆角，以提供光亮的外观。
-* 背景颜色：为视觉和谐设置一致的背景颜色。
-* 箭头自定义：可选样式隐藏默认的下拉箭头，并使用Unicode字符和位置创建自定义箭头。
+* 定位包装器：第一个选择器 (`.form-drop-down-wrapper`) 定位外部包装器元素，确保样式应用于整个下拉组件。
+* Flexbox 布局：Flexbox 垂直排列标签、下拉菜单和描述以实现干净布局。
+* 标签样式：标签以更粗的字体和微小边距脱颖而出。
+* 下拉样式：选择元素接收边框、间距和圆角以获得精美外观。
+* 背景颜色：设置一致的背景颜色以实现视觉和谐。
+* 箭头自定义：可选样式隐藏默认下拉箭头，并使用 Unicode 字符和定位创建自定义箭头。
 
-### 单选框和复选框组
+### 单选按钮组和复选框组
 
-与下拉组件类似，单选框和复选框组也有自己的HTML结构和CSS注意事项：
+与下拉组件类似，单选按钮组和复选框组也拥有自己的 HTML 结构和 CSS 注意事项：
 
-#### 单选按钮组HTML结构
-
-```HTML
-<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label class="field-label">{Label Text}</label>
-  <div class="checkbox-group">
-    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
-    <label for="{FieldId}-1">{Option 1 Text}</label>
-    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
-    <label for="{FieldId}-2">{Option 2 Text}</label>
-    </div>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Select multiple options (if applicable).
-  </div>
-</div>
-```
-
-
-#### 复选框组HTML结构
+#### 单选按钮组 HTML 结构
 
 ```HTML
 <div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
@@ -265,9 +247,27 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-**单选框和复选框组的CSS选择器示例**
 
-* 定位外部包装器：这些选择器定位单选框和复选框组的最外部容器，从而允许您对整个组结构应用常规样式。 此设置可用于设置间距、对齐方式或其他与布局相关的属性。
+#### 复选框组 HTML 结构
+
+```HTML
+<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
+  <label class="field-label">{Label Text}</label>
+  <div class="checkbox-group">
+    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
+    <label for="{FieldId}-1">{Option 1 Text}</label>
+    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
+    <label for="{FieldId}-2">{Option 2 Text}</label>
+    </div>
+  <div class="field-description" aria-live="polite" id="{FieldId}-description">
+    Hint - Select multiple options (if applicable).
+  </div>
+</div>
+```
+
+**单选按钮组和复选框组的 CSS 选择器示例**
+
+* 定位外部包装器：这些选择器定位单选按钮组和复选框组的最外层容器，允许您将常规样式应用于整个组结构。这对于设置间距、对齐方式或其他与布局相关的属性非常有用。
 
 
   ```CSS
@@ -283,7 +283,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
   ```
 
 
-* 定位组标签：此选择器定位 `.field-label` 单选框和复选框组包装器中的元素。 这允许您为这些组设置特定的标签样式，这有可能使它们更加突出。
+* 定位组标签：此选择器定位单选按钮组和复选框组包装器中的 `.field-label` 元素。这使您能够专门为这些组设置标签样式，从而使它们更加突出。
 
   ```CSS
   .form-radio-group-wrapper .field-label,
@@ -294,7 +294,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 
 
 
-* 定位单个输入和标签：这些选择器对单个单选按钮、复选框及其关联标签提供更加精细化的控制。 您可以使用这些设置调整大小、间距或应用更多不同的视觉样式。
+* 定位单个输入和标签：这些选择器提供对单个单选按钮、复选框及其关联标签的更精细控制。您可以使用它们来调整大小、间距或应用更独特的视觉样式。
 
   ```CSS
   /* Styling radio buttons */
@@ -321,7 +321,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 
 
 
-* 自定义单选按钮和复选框的外观：此方法会隐藏默认输入，并使用：before和：after伪元素来创建自定义视觉对象，这些视觉对象会根据“已选中”状态更改外观。
+* 自定义单选按钮和复选框的外观：此技术隐藏默认输入并使用 :before 和 :after 伪元素来创建根据“选中”状态更改外观的自定义视觉效果。
 
   ```CSS
   /* Hide the default radio button or checkbox */
@@ -351,15 +351,15 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
   ```
 
 
-## 设置组件样式
+## 设置组件的样式
 
-您还可以根据表单字段的特定类型或单个名称来设置表单字段的样式。 这允许对表单外观进行更细粒度的控制和自定义。
+您还可以根据表单字段的特定类型或单个名称来设置其样式。这允许更精细地控制和自定义表单外观。
 
-### 根据字段类型设置样式
+### 基于字段类型的样式设置
 
-您可以使用CSS选择器来定位特定的字段类型，并以一致的方式应用样式。
+您可以使用 CSS 选择器来定位特定字段类型并一致地应用样式。
 
-**示例HTML结构**
+**示例 HTML 结构**
 
 ```HTML
 <div class="form-text-wrapper form-name field-wrapper" data-required="true">
@@ -378,14 +378,14 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-* 每个字段都封装在 `div` 元素具有以下几个类：
-   * `form-{Type}-wrapper`：标识字段类型。 例如， `form-text-wrapper`， `form-number-wrapper`， `form-email-wrapper`.
-   * `form-{Name}`：通过名称标识字段。 例如 `form-name`， `form-age`， `form-email`.
-   * `field-wrapper`：所有字段包装器的泛型类。
-* 此 `data-required` 属性指明字段是必填字段还是可选字段。
-* 每个字段都有一个对应的标签、输入元素和潜在的其他元素，如占位符和描述。
+* 每个字段都包含在具有多个类的 `div` 元素中：
+   * `form-{Type}-wrapper`：标识字段的类型。例如，`form-text-wrapper`、`form-number-wrapper`、`form-email-wrapper`。
+   * `form-{Name}`：通过名称标识字段。例如，`form-name`、`form-age`、`form-email`。
+   * `field-wrapper`：所有字段包装器的通用类。
+* `data-required` 属性指示该字段是必填字段还是可选字段。
+* 每个字段都有相应的标签、输入元素和潜在的附加元素（例如占位符和描述）。
 
-**示例CSS选择器**
+**示例 CSS 选择器**
 
 ```CSS
 /* Target all text input fields */
@@ -400,11 +400,11 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 }
 ```
 
-### 基于字段名称设置样式
+### 基于字段名称的样式设置
 
 您还可以按名称定位各个字段以应用唯一样式。
 
-**示例HTML结构**
+**示例 HTML 结构**
 
 ```HTML
 <div class="form-number-wrapper form-otp field-wrapper" data-required="true">
@@ -413,7 +413,7 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 </div>
 ```
 
-**示例CSS选择器**
+**示例 CSS 选择器**
 
 ```CSS
 .form-otp input {
@@ -421,6 +421,6 @@ Forms对于用户在网站上的交互至关重要，允许用户输入数据。
 }
 ```
 
-此CSS定位位于具有类的元素中的所有输入元素 `form-otp`. 您的表单HTML结构遵循自适应表单块的约定，这意味着有一个标有“form-otp”类的容器包含名为“otp”的字段。
+此 CSS 针对位于具有类 `form-otp` 的元素内的所有输入元素。您的表单HTML结构遵循自适应表单块的约定，这意味着有一个标有“form-otp”类的容器包含名为“otp”的字段。
 
 

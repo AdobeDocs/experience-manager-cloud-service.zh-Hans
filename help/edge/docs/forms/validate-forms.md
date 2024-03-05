@@ -7,26 +7,26 @@ hidefromtoc: true
 source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 17%
+ht-degree: 82%
 
 ---
 
 
 # 向表单字段添加验证
 
-自适应表单块具有内置验证功能。 这些验证会根据所选字段类型和您提供的其他属性自动应用于现代浏览器。
+自适应表单块具有内置验证功能。 这些验证会根据所选字段类型和您提供的附加属性自动应用于现代浏览器中。
 
 ## 了解字段类型和验证
 
-自适应表单块支持各种 [HTML5输入类型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)，包括文本、电子邮件、数字、日期等。 它还可适应 [文本区域](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)、 select和fieldset ，以及HTML-5固有的综合输入验证功能。
+自适应表单块支持各种 [HTML5输入类型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)，包括文本、电子邮件、数字、日期等。 它还容纳 [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)、select 和 fieldset，以及 HTML-5 固有的全面输入验证功能。
 
-使用HTML字段类型定义用户可以输入的数据类型。 不同的字段类型具有不同的内置验证规则：
+使用 HTML 字段类型定义用户可输入的数据类型。不同的字段类型有不同的内置验证规则：
 
-电子邮件：此字段类型根据通用电子邮件地址格式自动验证用户输入。 用户输入无效的电子邮件时，会看到一条错误消息。
-数字：此字段类型仅允许数字输入。 输入非数字字符的用户将收到错误。
-日期：此字段类型根据标准日期格式验证用户输入。 超出合理范围的日期也可能被标记为无效。
-URL：此字段类型根据有效的URL格式验证用户输入。 输入无效URL的用户将看到错误消息。
-电话：此字段类型专门针对电话号码而设计，并且可能会触发基于特定国家/地区格式（并非通用支持）的验证。
+电子邮件：此字段类型自动根据常见电子邮件地址格式验证用户输入。输入无效电子邮件的用户将看到一条错误消息。
+数字：此字段类型仅允许输入数字。输入非数字字符的用户将收到错误。
+日期：此字段类型根据标准日期格式验证用户输入。超出合理范围的日期也可能被标记为无效。
+URL：此字段类型根据有效的 URL 格式验证用户输入。输入无效 URL 的用户将看到一条错误消息。
+电话：此字段类型专为电话号码而设计，可能会触发基于特定国家/地区格式的验证（并非普遍支持）。
 
 
 ## 查看更多
