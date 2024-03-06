@@ -3,9 +3,9 @@ title: 如何为自适应Forms生成记录文档？
 description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成模板。
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3131'
 ht-degree: 1%
 
 ---
@@ -327,6 +327,10 @@ When you select a form model, configure Document of Record using options availab
       * **模板**：如果要选择自定义模板，请浏览并在中选择XDP [!DNL AEM Forms] 服务器。 如果您要使用的模板在您的 [!DNL AEM Forms] 服务器，您应该首先将XDP上传到 [!DNL AEM Forms] 服务器。
       * **重点颜色**：标题文本和分隔行在记录文档PDF中呈现的颜色。
       * **字体系列**：记录文档PDF中文本的字体系列。
+
+        >[!NOTE]
+        >
+        > AEM Forms提供了多种内置字体，可与PDF文件无缝集成。 要查看支持的字体列表， [单击此处](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **包括未绑定到数据模型的表单对象**：设置属性后，记录文档中包含来自基于架构的自适应表单的未绑定字段。
 

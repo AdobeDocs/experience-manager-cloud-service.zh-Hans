@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b2bd6fc61b0d8b79d03ebf9eca7d994a622cc6f2
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '4761'
-ht-degree: 99%
+source-wordcount: '4768'
+ht-degree: 98%
 
 ---
 
@@ -694,6 +694,7 @@ ht-degree: 99%
       + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [使用 Forms Designer 创建模板](/help/forms/use-forms-designer.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
+      + [PDF文档支持的字体列表](/help/forms/supported-out-of-the-box-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
    + 交易报告 {#using-communications}
       + [交易报告计费 API](/help/forms/transaction-reports-billable-apis.md)

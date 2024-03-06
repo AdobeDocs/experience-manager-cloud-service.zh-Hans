@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 77%
+source-wordcount: '1452'
+ht-degree: 76%
 
 ---
 
@@ -134,6 +134,10 @@ When such an interactive PDF document is flattened using the Communications APIs
 ### 转换为符合 PDF/A 标准的文档并进行验证
 
 您可以使用文档操作 API 将 PDF 文档转换为符合 PDF/A 标准的文档，并确定 PDF 文档是否符合 PDF/A 标准。PDF/A是一种用于长期保存文档内容的存档格式。 字体将嵌入到文档中，并且文件是未压缩的。因此，PDF/A 文档通常比标准 PDF 文档大。此外，PDF/A 文档不包含音频和视频内容。
+
+>[!NOTE]
+>
+> AEM Forms提供了多种内置字体，可与PDF文件无缝集成。 要查看支持的字体列表， [单击此处](/help/forms/supported-out-of-the-box-fonts.md).
 
 <!-- 
 

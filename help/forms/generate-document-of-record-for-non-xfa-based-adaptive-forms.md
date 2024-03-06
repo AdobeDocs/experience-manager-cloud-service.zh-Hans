@@ -3,9 +3,9 @@ title: 如何为AEM Forms生成记录文档(DoR)？
 description: 了解如何为自适应Forms的记录文档(DoR)生成模板。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
 workflow-type: tm+mt
-source-wordcount: '4124'
+source-wordcount: '4170'
 ht-degree: 3%
 
 ---
@@ -345,13 +345,18 @@ When you select a form model, configure Document of Record using options availab
       * **模板**：如果选择选择自定义模板，请浏览选择XDP，网址为 [!DNL AEM Forms] 服务器。 如果您要使用的模板尚未在 [!DNL AEM Forms] 服务器，您应该首先将XDP上传到 [!DNL AEM Forms] 服务器。
       * **重点颜色**：标题文本和分隔行在文档或记录PDF中呈现的颜色。
       * **字体系列**：记录文档PDF中文本的字体系列。
+
+        >[!NOTE]
+        >
+        > AEM Forms提供了多种内置字体，可与PDF文件无缝集成。 要查看支持的字体列表， [单击此处](/help/forms/supported-out-of-the-box-fonts.md).
+
       * **包括未绑定到数据模型的表单对象**：设置属性后，记录文档中包含来自基于架构的自适应表单的未绑定字段。
       * **从记录文档排除隐藏字段**：设置属性可标识要从记录文档排除的隐藏字段。
       * **隐藏面板描述**：设置属性可从记录文档中排除面板/表的描述。 适用于面板和表格。
 
       ![基本属性](/help/forms/assets/basicpropertiesdor.png)
 
-   1. **表单字段属性**：
+   2. **表单字段属性**：
       * **对于复选框和单选按钮组件，仅显示选定值**：设置属性时，将仅显示中复选框和单选按钮的选定值 [!UICONTROL 记录文档].
       * **用于多个值的分隔符**：您可以选择任意分隔符，如逗号或换行符，以显示多个值。
       * **选项对齐方式**：您可以选择所需的对齐方式（水平、垂直、与自适应表单相同）来设置要显示的复选框或单选按钮等字段的对齐方式 [!UICONTROL 记录文档]. 默认情况下，中的字段会设置垂直对齐方式 [!UICONTROL 记录文档]. 从设置属性 [!UICONTROL 表单字段属性] 的URL会覆盖 [!UICONTROL 项目对齐方式] 用于自适应表单上的字段。 如果是，请选择 [!UICONTROL 与自适应表单相同] 选项，自适应表单创作实例中配置的对齐方式用于 [!UICONTROL 记录文档] 字段。
@@ -359,7 +364,7 @@ When you select a form model, configure Document of Record using options availab
 
       ![表单字段属性](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **母版页属性**：
+   3. **母版页属性**：
       * **徽标图像**：您可以选择使用自适应表单中的徽标图像，从DAM中选择徽标图像，或从计算机上传徽标图像。
       * **表单标题**：记录文件的标题。
       * **标题文本**：在记录文档的标题部分显示的文本。
@@ -476,6 +481,11 @@ XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有�
 | config/present/pdf/pdfa/conformance | 指定PDF/A规范的符合性级别。 |
 | config/present/pdf/version | 指定要生成的PDF文档的版本 |
 | config/present/pdf/version/map | 指定文档的回退字体 |
+
+>[!NOTE]
+>
+> AEM Forms提供了多种内置字体，可与PDF文件无缝集成。 要查看支持的字体列表， [单击此处](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### 在您的Formsas a Cloud Service环境中使用自定义XCI文件
 
