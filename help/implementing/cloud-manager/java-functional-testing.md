@@ -1,11 +1,11 @@
 ---
 title: Java&trade; 功能测试
 description: 了解如何为 AEM as a Cloud Service 编写 Java&trade; 功能测试
-exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
-workflow-type: ht
-source-wordcount: '844'
-ht-degree: 100%
+exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
+source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 92%
 
 ---
 
@@ -111,6 +111,25 @@ Adobe 用来编写产品功能测试的工具也可以用来编写自定义功�
 >
 > 如果您需要更多资源，请创建客户服务案例，并描述您的用例。Adobe 团队会审核您的请求并提供适当的帮助。
 
+#### 依赖项
+
+* aem-cloud-testing-clients：
+
+即将更改用于执行功能测试的容器化基础架构，将需要库 [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) 用于自定义功能测试，将至少更新为版本 **1.2.1**
+确保您在中依赖项 `it.tests/pom.xml` 已更新。
+
+```
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.1</version>
+</dependency>
+```
+
+>[!NOTE]
+>
+>2024年4月6日之后需要此更改。
+>如果未更新依赖关系库，将导致“自定义功能测试”步骤中的管道失败。
 
 ### 本地测试执行 {#local-test-execution}
 
@@ -153,3 +172,4 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
+
