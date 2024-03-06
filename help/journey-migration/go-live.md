@@ -2,9 +2,9 @@
 title: 上线
 description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1771'
 ht-degree: 4%
 
 ---
@@ -156,6 +156,9 @@ ht-degree: 4%
    * 开发环境的大小与暂存和生产环境不同。
 * 切换并确保不进行任何新部署或内容更新而执行实际上线。
 * 创建Admin Console用户通知配置文件。 请参阅 [通知配置文件](/help/journey-onboarding/notification-profiles.md)
+* 请考虑配置流量过滤器规则以控制网站上不允许的流量。
+   * 速率限制流量过滤规则是防御DDoS攻击的有效工具。 一种称为WAF规则的特殊流量过滤器规则需要单独的许可证。
+   * 请参阅文档以了解部分 [推荐的入门规则](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 在执行迁移时，如果您需要重新校准任务，您可以随时引用列表。
 
