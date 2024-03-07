@@ -1,13 +1,13 @@
 ---
 title: 在 Adobe Developer Console 中弃用 JWT 凭据
 description: 了解在 Adobe Developer Console 中弃用 JWT 凭据对 AEM 产生的影响
-source-git-commit: b684d39d53b1895b8e20e5c6aca084033cfcf4b9
+exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 87%
 
 ---
-
 
 # 在 Adobe Developer Console 中弃用 JWT 凭据 {#jwt-credentials-deprecation-in-adobe-developer-console}
 
@@ -57,4 +57,3 @@ AEM 客户使用 AEM 创作 UI 配置与所有其他 Adobe 解决方案的集成
 当 Cloud Manager 预配 AEM as a Cloud Service 环境时，它自动生成一个具有 JWT 凭据的 Adobe Developer Console 项目。此项目被标为只读，如以下屏幕快照中所示。客户无法也不应尝试将这些项目迁移到 OAuth 服务器到服务器凭据；而是 Adobe 将在凭据不再可用之前自行迁移这些项目。
 
 ![自动生成的项目](/help/security/assets/jwt-deprecation-autogen-projects.png)
-
