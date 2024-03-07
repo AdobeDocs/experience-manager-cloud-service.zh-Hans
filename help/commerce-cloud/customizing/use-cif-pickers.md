@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ AEM Content &amp; Commerce Authoring提供了一组创作工具，以帮助AEM�
 
 ## 产品选取器 {#product-picker}
 
-要在项目组件中使用产品选取器，开发人员必须添加 `commerce/gui/components/common/cifproductfield` 到组件对话框。 例如，对cq使用以下内容:dialog:
+要在项目组件中使用产品选取器，开发人员必须添加 `commerce/gui/components/common/cifproductfield` 到组件对话框。 例如，使用下列命令执行 `cq:dialog`：
 
 ```xml
 <product jcr:primaryType="nt:unstructured"

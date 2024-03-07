@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1669'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 * **addfields.jsp**：此脚本提供在呈现版本期间添加到HTML文件中的操作字段。 此脚本用于在post.context.jsp脚本中添加提交期间所需的POST输入参数。
 * **dialog.xml**：此脚本类似于CQ组件对话框。 它提供作者自定义的配置信息。 选择提交操作后，这些字段显示在“自适应表单编辑”对话框的“提交操作”选项卡中。
-* **post.POST.jsp**：提交servlet使用您提交的数据以及前面部分中的附加数据调用此脚本。 本页中有关运行操作的任何内容都表示运行post.post.jspPOST。 要在自适应Forms中注册提交操作以在“自适应表单编辑”对话框中显示，请将这些属性添加到sling:Folder:
+* **post.POST.jsp**：提交servlet使用您提交的数据以及前面部分中的附加数据调用此脚本。 本页中有关运行操作的任何内容都表示运行post.post.jspPOST。 要在自适应Forms中注册提交操作，以便在“自适应表单编辑”对话框中显示，请将这些属性添加到 `sling:Folder`：
 
    * **guideComponentType** 字符串和值的类型 **fd/af/components/guidesubmittype**
    * **guideDataModel** 类型字符串，指定提交操作适用的自适应表单的类型。 <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** 基于XSD的自适应Forms支持。 **基本** 对于不使用XDP或XSD的自适应Forms支持。 要在多种类型的自适应Forms上显示操作，请添加相应的字符串。 用逗号分隔每个字符串。 例如，要在以下位置显示操作： <!--XFA- and -->基于XSD的自适应Forms，指定值为 <!--**xfa** and--> **xsd**.
