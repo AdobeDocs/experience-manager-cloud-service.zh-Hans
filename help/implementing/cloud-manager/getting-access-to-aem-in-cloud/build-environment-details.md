@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: cb4c9711fc9c57546244b5b362027c255e5abc35
+source-git-commit: 54135244d7b33ba3682633b455a5538474d3146e
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 92%
+source-wordcount: '788'
+ht-degree: 77%
 
 ---
 
@@ -20,9 +20,9 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
 
 * 构建环境基于 Linux，并派生自 Ubuntu 22.04。
 * 安装了 Apache Maven 3.9.4。
-   * Adobe 建议用户[更新其 Maven 存储库以使用 HTTPS 代替 HTTP。](#https-maven)
-* 安装的Java版本为OracleJDK 8u401和OracleJDK 11.0.22。
-* 默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_401` 其中包含OracleJDK 8u401。 请参阅 [替代Maven执行JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
+   * Adobe 建议用户[更新其 Maven 存储库以使用 HTTPS 代替 HTTP](#https-maven)。
+* 安装的Java版本为OracleJDK 11.0.22和OracleJDK 8u401。
+* **重要**：默认情况下， `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk1.8.0_401` 其中包含OracleJDK 8u401。 *_AEM Cloud项目应覆盖此默认值才能使用JDK 11_*. 请参阅 [设置Maven JDK版本](#alternate-maven-jdk-version) 部分以了解更多详细信息。
 * 安装了一些其他的必要系统包。
    * `bzip2`
    * `unzip`
@@ -51,76 +51,13 @@ Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/
 
 ### 使用特定的 Java 版本 {#using-java-support}
 
-默认情况下，项目通过使用 Oracle 8 JDK 的 Cloud Manager 构建过程构建。 希望使用替代JDK的客户有两种选择。
+默认情况下，项目通过使用Oracle8 JDK的Cloud Manager构建过程构建，但强烈建议AEM Cloud Service客户将用于执行Maven的JDK版本设置为 `11`.
 
-* [适用 Maven 工具链。](#maven-toolchains)
-* [为整个 Maven 执行过程选择替代 JDK 版本。](#alternate-maven-jdk-version)
+#### 设置Maven JDK版本 {#alternate-maven-jdk-version}
 
-#### Maven 工具链 {#maven-toolchains}
+建议将整个Maven执行的JDK版本设置为 `11` 在 `.cloudmanager/java-version` 文件。
 
-[Maven 工具链插件](https://maven.apache.org/plugins/maven-toolchains-plugin/)允许项目选择特定的 JDK（或工具链）以在工具链感知的 Maven 插件的上下文中使用。 通过在项目的 `pom.xml` 文件中指定供应商和版本值来做到这一点。
-
-此工具链插件可作为配置文件的一部分添加，如下所示。
-
-```xml
-<profile>
-    <id>cm-java-11</id>
-    <activation>
-        <property>
-            <name>env.CM_BUILD</name>
-        </property>
-    </activation>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-toolchains-plugin</artifactId>
-                <version>1.1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>toolchain</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <toolchains>
-                        <jdk>
-                            <version>11</version>
-                            <vendor>oracle</vendor>
-                        </jdk>
-                    </toolchains>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-</profile>
-```
-
-这将导致所有工具链感知的 Maven 插件使用 Oracle JDK 版本 11。
-
-在使用此方法时，Maven 本身仍将使用默认 JDK (Oracle 8) 运行，并且不会更改 `JAVA_HOME` 环境变量。因此，通过 Apache Maven Enforcer 插件等插件检查或强制执行 Java 版本将不起作用，并且不得使用此类插件。
-
-当前可用的供应商/版本组合是：
-
-| 供应商 | 版本 |
-|---|---|
-| `oracle` | `8` |
-| `oracle` | `11` |
-| `sun` | `8` |
-| `sun` | `11` |
-
-此表代表产品版本号。 Java 内部版本号或安装路径可能反映旧的 Java 版本惯例，如 Java 8 的 1.8 版本。
-
->[!NOTE]
->
->从 2022 年 4 月开始，Oracle JDK 会成为用于开发和运行 AEM 应用程序的默认 JDK。Cloud Manager 构建过程会自动切换为使用 Oracle JDK，即使已在 Maven 工具链中明确选定替代选项也是如此。请参阅 2022 年 4 月发行说明。
-
-#### 替代 Maven 执行 JDK 版本 {#alternate-maven-jdk-version}
-
-也可以选择 Java 8 或 Java 11 作为整个 Maven 执行的 JDK。 与工具链选项不同，除非也设置了工具链配置（在此情况下，工具链配置仍适用于工具链感知的 Maven 插件），否则这将更改用于所有插件的 JDK。因此，通过 [Apache Maven Enforcer 插件](https://maven.apache.org/enforcer/maven-enforcer-plugin/)等插件检查和强制执行 Java 版本将起作用。
-
-为此，请在管道使用的 Git 存储库分支中创建一个名为 `.cloudmanager/java-version` 的文件。 此文件可以包含内容 11 或 8。 任何其他值将被忽略。 如果指定了 11，则使用 Oracle 11，并且 `JAVA_HOME` 环境变量将设置为 `/usr/lib/jvm/jdk-11.0.22`。 如果指定了 8，则使用 Oracle 8，并且 `JAVA_HOME` 环境变量将设置为 `/usr/lib/jvm/jdk1.8.0_401`。
+为此，请在管道使用的 Git 存储库分支中创建一个名为 `.cloudmanager/java-version` 的文件。 编辑文件，使其仅包含文本， `11`. 而Cloud Manager也接受值 `8`，AEM Cloud Service项目不再支持此版本。 任何其他值将被忽略。 时间 `11` 指定，使用Oracle11，并且 `JAVA_HOME` 环境变量设置为 `/usr/lib/jvm/jdk-11.0.22`.
 
 ## 环境变量 {#environment-variables}
 
