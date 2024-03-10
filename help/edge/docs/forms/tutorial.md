@@ -4,9 +4,9 @@ description: 本教程可帮助您启动并运行新的Adobe Experience Manager 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1803'
 ht-degree: 12%
 
 ---
@@ -198,31 +198,29 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### 更新您的表单
+### 创建表单
 
-1. 转到Microsoft SharePoint或Google Drive文件夹。
+示例内容包括一个“inquiry”表，它用作“inquiry”表单的模板。 工作表的每一行代表 [表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义 [字段属性](/help/edge/docs/forms/form-components.md#available-components). 此示例表单为您提供了构建表单的良好开端。
 
-1. 打开 `enquiry.xlsx` 进行编辑。
+![查询表](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-   ![查询表](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+让我们从更新字段表开始。 打开“查询”工作表进行编辑，将提交按钮的标签更改为 `Let's Chat`，并使用sidekick发布它。
 
-1. 将提交按钮的标签更改为 `Let's Chat`.
+![查询表](/help/edge/assets/enquiry-form-preview-publish.png)
 
-   ![查询表](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. 使用AEM Sidekick预览和发布 `enquiry.xlsx` 文件。
-
-   ![查询表](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. 要预览查询表单，请转到以下URL：
+要预览更新的查询表单，请转到以下URL：
 
 
-   ```HTML
-   https://<branch>--<repository>--<owner>.hlx.page/enquiry
-   ```
+```HTML
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+```
 
-   提交按钮的标签将更新。 现在，填写表单并单击提交按钮，您会遇到错误，类似于以下内容，因为电子表格不是 [设置为接受数据](/help/edge/docs/forms/submit-forms.md).
+提交按钮的标签将更新为 `Let's Chat`.
 
+![查询表](/help/edge/assets/updated-form.png)
+
+有关创建和发布新表单的详细信息，请转到 [创建表单](/help/edge/docs/forms/create-forms.md) 指南。
 
 ### 开始开发样式和功能
 
