@@ -4,10 +4,10 @@ description: 本教程可帮助您启动并运行新的Adobe Experience Manager 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 12%
+source-wordcount: '1786'
+ht-degree: 10%
 
 ---
 
@@ -43,7 +43,7 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
 ### AEM Forms样板存储库模板快速入门
 
-1. 为您的AEM项目创建Github存储库。 要创建存储库，请执行以下操作：
+1. 为您的AEM项目创建一个GitHub存储库。 要创建存储库，请执行以下操作：
    1. 转到 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![AEM Forms样板](/help/edge/assets/aem-forms-boilerplate.png)
@@ -65,7 +65,7 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
    >[!NOTE]
    >
    >
-   > 如果您使用的是带有IP过滤功能的Github Enterprise，则可以将以下IP添加到允许列表： 3.227.118.73
+   > 如果您使用的是带有IP过滤的GitHub Enterprise，则可以将以下IP添加到允许列表： 3.227.118.73
 
    恭喜！您有一个新网站正在运行 `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -79,11 +79,11 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
 ### 链接您自己的内容源
 
-您新创建的Github存储库指向 [存储在Google Drive文件夹中的示例内容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 此只读内容为您的表单提供了一个良好的起点。 您可以随意将其复制到自己的Google驱动器中，并根据自己的需要进行自定义。
+您新创建的GitHub存储库指向 [存储在Google Drive文件夹中的示例内容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 此只读内容为您的表单提供了一个良好的起点。 您可以随意将其复制到自己的Google驱动器中，并根据自己的需要进行自定义。
 
 ![Google Drive上的示例内容](/help/edge/assets/folder-with-sample-content.png)
 
-要将示例内容复制到您自己的内容文件夹，请将Github存储库指向您自己的内容文件夹：
+要将示例内容复制到您自己的内容文件夹，请将GitHub存储库指向您自己的内容文件夹：
 
 1. 在Google Drive或Microsoft SharePoint中专门为您的AEM内容创建新文件夹。 本文档使用在Microsoft SharePoint上创建的文件夹。
 
@@ -204,7 +204,7 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
 ![查询表](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-让我们从更新字段表开始。 打开“查询”工作表进行编辑，将提交按钮的标签更改为 `Let's Chat`，并使用sidekick发布它。
+让我们从更新字段标签开始。 打开“查询”工作表进行编辑，将提交按钮的标签更改为 `Let's Chat`，并使用sidekick发布它。
 
 ![查询表](/help/edge/assets/enquiry-form-preview-publish.png)
 
@@ -233,7 +233,7 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
        npm install -g @adobe/aem-cli
    ```
 
-1. 克隆Github项目：使用以下命令从GitHub克隆项目存储库，并替换 <owner> 与存储库所有者和 <repo> 使用存储库名称：
+1. 克隆GitHub项目：使用以下命令从GitHub克隆项目存储库，并替换 <owner> 与存储库所有者和 <repo> 使用存储库名称：
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,7 +281,7 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 如果遇到错误“无法解析模块 &quot;&#39;../../scripts/lib-franklin.js&#39; 的路径”，请导航至 [EDS 项目]/blocks/forms/form.js 文件。将 lib-franklin.js 文件替换为 aem.js 文件，可更新导入语句。
 
 * **处理 Linting 错误：**
-如果您遇到任何 Linting 错误，可以绕过它们。打开 [EDS 项目]/package.json 文件并将 lint 脚本从 &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; 修改为 &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;。保存文件并将更改提交到您的 GitHub 项目。
+如果您遇到任何 Linting 错误，可以绕过它们。打开 [EDS项目]/package.json文件并从以下位置修改“lint”脚本 `"lint": "npm run lint:js && npm run lint:css"` 到 `"lint": "echo 'skipping linting for now'"`. 保存文件并将更改提交到您的 GitHub 项目。
 
 
 ## 另请参阅
@@ -289,9 +289,4 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 * [使用Google Sheets或Microsoft Excel创建表单](/help/edge/docs/forms/create-forms.md)
 * [将表单直接提交到Microsoft Excel或Google工作表](/help/edge/docs/forms/submit-forms.md)
 * [更改表单的外观](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '652'
 ht-degree: 19%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 19%
 
 ![Edge Delivery 架构](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。如前所述，您可以使用两者 [AEM内容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) 替换为 [AEM创作](/help/implementing/universal-editor/introduction.md) 以及 [基于文档的创作](https://www.aem.live/docs/authoring)
+Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。您可以将AEM内容管理与 [AEM创作](/help/forms/creating-adaptive-form-core-components.md) 以及 [基于文档的创作](/help/edge/docs/forms/create-forms.md)
 
 例如，您可以直接使用Microsoft Excel或Google工作表中的内容。 这意味着来自这些来源的内容可以成为您网站上的表单。 新内容可立即添加，而不经历重建过程。
 
