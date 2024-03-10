@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ca65bb637c70e35ff7d7749ed7e1e66e11cdb315
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '4774'
-ht-degree: 98%
+source-wordcount: '4776'
+ht-degree: 99%
 
 ---
 
@@ -485,7 +485,7 @@ ht-degree: 98%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [预览 – JSON 呈现](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [使用MSM重用内容片段（对于资产）](/help/assets/content-fragments/content-fragments-msm.md)
+      + [通过 MSM（适用于资源）重用内容片段](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Media 历程：基础知识{#dm-journey}
          + [第一部分：什么是 Dynamic Media – 用例 – 资源如何通过系统流动](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -637,7 +637,7 @@ ht-degree: 98%
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [创建和使用自定义函数](/help/forms/create-and-use-custom-functions.md)
-            + [将规则添加到基于核心组件的自适应表单](/help/forms/rule-editor-core-components.md)
+            + [向基于核心组件的自适应表单模板添加规则](/help/forms/rule-editor-core-components.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -784,8 +784,8 @@ ht-degree: 98%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
-+ 带有Edge Delivery Services的AEM {#edge-delivery}
-   + [Edge Delivery Services快速入门](/help/edge/overview.md)
++ 带 Edge Delivery Services 的 AEM{#edge-delivery}
+   + [Edge Delivery Services 快速入门](/help/edge/overview.md)
    + [使用 Edge Delivery](/help/edge/using.md)
    + [开发人员快速入门指南](/help/edge/edge-dev-getting-started.md)
    + [针对 Edge Delivery 创作内容](/help/edge/authoring.md)
@@ -823,6 +823,7 @@ ht-degree: 98%
    + 构建 Edge Delivery Forms {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
       + 开始使用 {#getting-started-eds-forms}
+         + [快速入门](/help/edge/docs/forms/tutorial.md)
          + [创建并预览表单](/help/edge/docs/forms/create-forms.md)
          + [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
          + [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-forms.md)
@@ -837,7 +838,7 @@ ht-degree: 98%
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自定义组件](/help/edge/docs/forms/custom-components-forms.md)
       + 引用 {#forms-references}
-         + [表单块组件列表](/help/edge/docs/forms/form-components.md)
+         + [表单区块组件列表](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 资源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
@@ -848,7 +849,7 @@ ht-degree: 98%
       + [管理员 API](https://www.aem.live/docs/admin.html)
       + [AEM 状态](https://www.aemstatus.net)
       + 工具 {#tools}
-         + [AEM SidekickChrome扩展](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
+         + [AEM Sidekick Chrome 扩展](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
          + [Github 机器人](https://github.com/apps/aem-code-sync)
          + [审核日志](/help/edge/docs/auditlog.md)
 + Headless {#headless}

@@ -1,18 +1,18 @@
 ---
-title: AEM Forms Edge Delivery Service快速入门。 创建表单。
+title: AEM Forms Edge Delivery Service 快速入门。创建表单。
 description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文档的创作 = 速度极快、SEO 友好的表单，让用户更加满意，搜索引擎更加优异。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 26%
+source-wordcount: '845'
+ht-degree: 83%
 
 ---
 
-
-# 使用自适应表单块创建表单
+# 使用自适应表单区块创建表单
 
 在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。AEM Forms Edge Delivery 允许您使用 Word 或 Google Docs 等熟悉的工具创建表单。
 
@@ -20,125 +20,130 @@ ht-degree: 26%
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
-AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以在AEM EDS项目中包含自适应表单块以开始创建表单。 让我们开始吧：
+AEM Forms Edge Delivery 提供自适应表单区块，可帮助您轻松创建表单，以捕获和存储捕获的数据。您可以将自适应表单区块包含在 AEM EDS 项目中以开始创建表单。让我们开始吧：
 
 
 ## 先决条件
 
 在开始之前，请确保您已完成以下步骤：
 
-* 使用AEM样板设置边缘交付服务(EDS) GitHub项目，并在本地计算机上克隆相应的GitHub存储库。 有关详细信息，请参阅[开发者教程](https://www.aem.live/developer/tutorial)。在本文档中，Edge Delivery Service (EDS) 项目的本地文件夹称作 `[EDS Project repository]`。
-* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将Microsoft SharePoint设置为您的内容源，请参阅 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+* 设置 [使用AEM Forms模板的AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 或 [将自适应表单块添加到现有AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 并在本地计算机上克隆相应的GitHub存储库。
+在本文档中，Edge Delivery Services(EDS)项目的本地文件夹称为 `[EDS Project repository]` .
+* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将 Microsoft SharePoint 设置为您的内容源，请参阅 [如何使用 Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
 ## 创建表单
 
-+++ 步骤1：将自适应表单块添加到您的边缘交付服务(EDS)项目。
+<!-- 
 
-“自适应”使用户能够为Edge Delivery Service Site创建表单。 但是，此块未包含在默认的AEM样板中（用于创建Edge Delivery Service项目）。 要将自适应表单块无缝集成到您的边缘交付服务项目中，请执行以下操作：
++++ Step 1: Add the Adaptive Form Block to your Edge Delivery Services (EDS) project.
 
-1. **克隆自适应表单块存储库**：克隆 [自适应表单块存储库](https://github.com/adobe/afb) 在本地计算机上。 它包含用于在 EDS 网页上呈现表单的代码。在本文档中，表单区块存储库的本地文件夹称作 `[Adaptive Form Block repository]`。
-1. **找到自适应表单块存储库：** 访问 [自适应表单块存储库]/blocks文件夹并复制 `form` 文件夹。
-1. **将自适应表单块粘贴到EDS项目中：**
-导航至 [EDS项目存储库]/blocks/文件夹并粘贴表单文件夹。
-1. **将更改提交到GitHub：** 将表单文件夹及其基础文件签入到GitHub上的边缘交付服务项目。
+The Adaptive  empowers users to create forms for an Edge Delivery ServicesSite. However, this block isn't included in the default AEM boilerplate (used to create an Edge Delivery Services project). To seamlessly integrate the Adaptive Form Block into your Edge Delivery Services project:
 
-完成这些步骤后，自适应表单块已成功添加到GitHub上的边缘交付服务(EDS)项目存储库中。 您现在可以创建表单并将其添加到EDS Sites页面。
+1. **Clone the Adaptive Form Block repository**: Clone the [Adaptive Form Block repository](https://github.com/adobe-rnd/form-block) on your local machine. It contains the code to render the form on an EDS webpage. In this document, the local folder of your Forms Block repository is referred as `[Adaptive Form Block repository]`.
+1. **Locate the Adaptive Form Block Repository:** Access the [Adaptive Form Block repository]/blocks/src folder and copy its content. 
 
+1. on your local machine and copy the `form` folder. 
+1. **Paste the Adaptive Form Block's code into your EDS Project:**
+Navigate to the [EDS Project repository]/blocks/ folder on your local machine and create a 'form' folder. Paste the `[Adaptive Form Block repository]/blocks/src content`, copied in perevious step to the `[EDS Project repository]/blocks/form` folder.
+1. **Commit Changes to GitHub:** Check in the `[EDS Project repository]/blocks/form` folder and its underlying files to your Edge Delivery Services project on GitHub.
 
-**GitHub内部版本问题疑难解答**
+After completing these steps, the Adaptive Form Block is successfully added to your Edge Delivery Services (EDS) project repository on GitHub. You can now create and add forms to a EDS Sites page.
+ 
 
-通过解决以下潜在问题，确保顺利构建GitHub：
+**Troubleshooting GitHub build issues**
 
-* **解决模块路径错误：**
-如果您遇到错误“无法解析模块“&#39;../../scripts/lib-franklin.js&#39;”的路径，请导航至 [EDS项目]/blocks/forms/form.js文件。 将lib-franklin.js文件替换为aem.js文件以更新import语句。
+Ensure a smooth GitHub build process by addressing potential issues:
 
-* **处理Linting错误：**
-如果您遇到任何绒毛错误，则可以绕过它们。 打开 [EDS项目]/package.json文件并将“lint”脚本从“lint”：“npm run lint：js &amp;&amp; npm run lint：css”修改为“lint”：“echo &#39;skipping linting for now&#39;”。 保存文件并将更改提交到GitHub项目。
+* **Resolve Module Path Error:**
+    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-
+* **Handle Linting Errors:**
+    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project.
 
 +++
 
-+++ 步骤 2：使用 Microsoft Excel 或 Google Sheets 创建表单。
+-->
 
-使用电子表格可以轻松实现制作表单，而不是在复杂的流程中导航。 首先，您可以将行和列标题添加到电子表格中，其中每一行表示一个表单字段，而每个列标题定义对应字段的属性。
++++ 步骤 1：使用 Microsoft Excel 或 Google Sheets 创建表单。
 
-例如，请考虑以下电子表格，其中行概述了以下项的字段： `enquiry` 表单和列标题定义其属性：
+使用电子表格可以轻松地制作表单，而无需执行复杂的流程。您可以定义将构成窗体结构的行和列。 每一行表示一个个人 [表单字段](/help/edge/docs/forms/form-components.md#available-components) 而列标题定义了相应的 [字段属性](/help/edge/docs/forms/form-components.md#components-properties).
+
+例如，请考虑以下电子表格，其中行概述了 `enquiry` 表单的字段，列标题则定义其属性：
 
 ![查询电子表格](/help/edge/assets/enquiry-form-spreadsheet.png)
 
-要继续创建表单，请执行以下操作：
+要继续创建表单：
 
-1. 访问Microsoft SharePoint或Google Drive上的AEM Edge Delivery项目文件夹。
+1. 访问 Microsoft SharePoint 或 Google Drive 上的 AEM Edge Delivery 项目文件夹。
 
-1. 在AEM Edge Delivery项目目录中的任何位置创建Microsoft Excel工作簿或Google工作表。 例如，在 Google Drive 上的 AEM Edge Delivery 项目目录中创建一个名为 `enquiry` 的电子表格。
+1. 在 AEM Edge Delivery 项目目录中的任意位置创建一份 Microsoft Excel 工作簿或 Google 工作表。例如，在 Google Drive 上的 AEM Edge Delivery 项目目录中创建一个名为 `enquiry` 的电子表格。
 
-1. 确保与相应的AEM用户共享工作表(例如 `helix@adobe.com`) [根据为项目指定的配置](https://www.aem.live/docs/setup-customer-sharepoint). 授予用户对工作表的编辑权限。
+1. 确保根据为项目指定的配置，与适当的 AEM 用户（例如 `helix@adobe.com`）[共享表](https://www.aem.live/docs/setup-customer-sharepoint)。授予用户编辑表的权限。
 
-1. 打开创建的电子表格，并将默认工作表重命名为“shared-default”。
+1. 打开创建的电子表格并将默认表重命名为“shared-default”。
 
-   ![将默认工作表重命名为“共享默认”](/help/edge/assets/rename-sheet-to-shared-default.png)
+   ![将默认工作表重命名为“shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 要添加表单字段，请将行和列标题插入“shared-default”工作表。 每一行应表示 [表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的字段 [属性](/help/edge/docs/forms/form-components.md#components-properties).
+1. 要添加表单字段，请将行和列标题插入“shared-default”表中。每行应该代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的字段[属性](/help/edge/docs/forms/form-components.md#components-properties)。
 
-   为了SWIFT起步，请考虑复制 [查询电子表格](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0) 到电子表格中。 复制内容后，保存电子表格。
+   为了快速开始，请考虑复制[查询电子表格](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)中的内容到电子表格中。复制内容后，保存电子表格。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以预览工作表。
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 预览表。
 
-   ![使用AEM Sidekick预览工作表](/help/edge/assets/preview-form.png)
+   ![使用 AEM Sidekick 预览表](/help/edge/assets/preview-form.png)
 
-   在预览时，新的浏览器选项卡以JSON格式显示工作表的内容。 确保捕获预览URL，因为这是呈现下一节中的表单所必需的。 URL格式如下所示：
+   预览时，新的浏览器选项卡会以 JSON 格式显示工作表的内容。确保捕获预览 URL，因为这是在下一节中渲染表单所必需的。URL 格式如下所示：
 
 
    ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form>.json
+       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
    ```
 
-   * `<branch>` 是指GitHub存储库的分支。
-   * `<repository>` 表示您的GitHub存储库。
-   * `<owner>` 指托管GitHub存储库的GitHub帐户的用户名。
+   * `<branch>` 指 GitHub 存储库的分支。
+   * `<repository>` 表示您的 GitHub 存储库。
+   * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
-   例如，如果项目的存储库名为“portal”，它位于帐户“wkandforms”下，而您使用的是“main”分支，则URL如下所示：
+   例如，如果您的项目存储库名为“portal”，位于帐户“wkndforms”下，并且您使用的是“main”分支，则 URL 如下所示：
 
    `https://main--portal--wkndforms.hlx.page/enquiry.json`
 
 
 +++
 
-+++ 步骤 3：使用 Edge Delivery Service (EDS) 页面预览表单。
++++ 第2步：使用“Edge Delivery Services(EDS)”页面预览表单。
 
 
-到目前为止，您已将自适应表单块添加到EDS项目并准备了表单的结构。 现在，要预览表单，请执行以下操作：
+到目前为止，您已将自适应表单区块添加到 EDS 项目并为表单的结构进行了准备。现在，要预览表单，请执行以下操作：
 
-1. **访问项目目录：** 打开您的Microsoft SharePoint或Google Drive帐户，然后导航到您的AEM Edge Delivery项目目录。
+1. **访问您的项目目录：**&#x200B;打开您的 Microsoft SharePoint 或 Google Drive 帐户并导航到您的 AEM Edge Delivery 项目目录。
 
-1. **将表单嵌入文档：** 打开文档文件（例如，索引文件）以嵌入表单。 或者，也可以创建新文档。
+1. **将表单嵌入到文档中：**&#x200B;打开文档文件（例如索引文件），嵌入表单。或者，您可以创建一个新文档。
 
-1. **导航到所需的位置：** 在文档中移动到要添加表单的所需位置。
+1. **导航至所需位置：**&#x200B;移动到文档中需要添加表格的位置。
 
-1. **添加自适应表单块：** 在文件中插入名为“Form”的块，如下所示：
+1. **添加自适应表单块：** 创建表单块以呈现表单。 选择“插入”>“表”，然后创建一个一列、两行表。 将表命名为“Form”，并将预览URL粘贴到第二行。 确保URL的格式为超链接，而不是纯文本，如下图所示：
 
    | 表单 |
    |---|
    | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
 
-   此块用作嵌入表单的占位符。 在块的第二行中，添加预览URL `<form>.json` 文件作为超链接。
+   该区块用作嵌入表单的占位符。在该区块的第二行中，添加 `<form>.json` 文件的预览 URL 作为超链接。
 
    >[!IMPORTANT]
    >
    >
-   > 确保URL的格式为超链接，而不是显示为纯文本。
+   > 确保 URL 的格式为超链接，而不是显示为纯文本。
 
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 以预览文档。 页面现在显示表单。例如，以下是基于 [查询电子表格](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)：
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 预览文档。页面现在显示表单。例如，以下是基于[查询电子表格](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)的表单：
 
 
-   [![EDS表单示例](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   [![EDS 表单样本](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
 
    现在，填写该表单并单击提交按钮，您会遇到类似于以下内容的错误，因为该电子表格尚未设置为接受数据。
 
@@ -153,12 +158,3 @@ AEM Forms Edge Delivery提供了一个称为自适应表单块的块，以帮助
 
 
 
-## 查看更多
-
-* [表单组件](/help/edge/docs/forms/form-components.md)
-* [表单字段属性](/help/edge/docs/forms/eds-form-field-properties)
-* [创建并预览表单](/help/edge/docs/forms/create-forms.md)
-* [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
-* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-forms.md)
-* [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
-* [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)
