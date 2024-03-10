@@ -4,10 +4,10 @@ description: 本教程可帮助您启动并运行新的Adobe Experience Manager 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 13%
+source-wordcount: '1770'
+ht-degree: 12%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 13%
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
 
-AEM Forms提供了一个称为自适应表单块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。
+AEM Forms提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以创建一个预配了自适应Forms块的新AEM项目，或将该自适应Forms块添加到现有AEM项目中。
 
 此AEM Forms教程将指导您使用新的Adobe Experience Manager (AEM) Forms项目创建、预览和发布自己的自定义表单。 您还将学习将自适应Forms块添加到现有AEM项目。
 
@@ -39,18 +39,19 @@ AEM Forms提供了一个称为自适应表单块的块，以帮助您轻松创�
 
 ## 创建预配了自适应Forms块的新AEM项目
 
-AEM Forms样板模板可帮助您快速开始使用预配置了自适应表单块的AEM项目。 这是遵循AEM最佳实践并快速开始构建表单的最快速、最简单的方法。
+AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Block的AEM项目。 这是遵循AEM最佳实践并快速开始构建表单的最快速、最简单的方法。
 
 ### AEM Forms样板存储库模板快速入门
 
-1. 登录您的Github帐户。
-1. 转到 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
+1. 为您的AEM项目创建Github存储库。 要创建存储库，请执行以下操作：
+   1. 转到 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
-   ![AEM Forms样板](/help/edge/assets/aem-forms-boilerplate.png)
-1. 单击 **使用此模板** 并选择 **创建新存储库** 选项，然后选择要创建此存储库的位置。
-   ![使用AEM Forms样板创建新存储库](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+      ![AEM Forms样板](/help/edge/assets/aem-forms-boilerplate.png)
+   1. 单击 **使用此模板** 选项，然后选择 **创建新存储库** 选项。 此时将打开“创建新存储库”屏幕。
 
-   Adobe建议将存储库设置为public。 在“创建新存储库”屏幕上，选择 **公共** 选项。
+      ![使用AEM Forms样板创建新存储库](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+
+   1. 在“创建新存储库”屏幕上，选择 **所有者**，并指定 **存储库名称** . Adobe建议将存储库设置为 **公共**. 因此，请选择 **公共** 选项，然后单击 **创建存储库**.
 
    ![将存储库设置为公共](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
@@ -61,35 +62,43 @@ AEM Forms样板模板可帮助您快速开始使用预配置了自适应表单�
 
    ![将存储库设置为公共](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
 
-       >[！注意]
-       >
-       >
-       >如果您使用的是带有IP过滤的Github Enterprise，则可以将以下IP添加到允许列表中： 3.227.118.73
-   
-   恭喜！您有一个新网站正在运行 `https://<branch>--<repo>--<owner>.hlx.page/`. 在上例中，是 [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   >[!NOTE]
+   >
+   >
+   > 如果您使用的是带有IP过滤功能的Github Enterprise，则可以将以下IP添加到允许列表： 3.227.118.73
+
+   恭喜！您有一个新网站正在运行 `https://<branch>--<repo>--<owner>.hlx.page/`.
 
    * `<branch>` 指 GitHub 存储库的分支。
    * `<repository>` 表示您的 GitHub 存储库。
    * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
+   例如，如果分支名称为 `main`，存储库为 `wefinance`，所有者为 `wkndforms`，则网站将在 [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
 
-### 使用Google Drive链接您自己的内容源
 
-从GitHub分支的样板存储库指向 [存储在Google Drive文件夹中的示例内容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 此只读内容为您的表单提供了一个良好的起点。 您可以随意将其复制到自己的Google驱动器中，并根据自己的需要进行自定义。
+
+### 链接您自己的内容源
+
+您新创建的Github存储库指向 [存储在Google Drive文件夹中的示例内容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 此只读内容为您的表单提供了一个良好的起点。 您可以随意将其复制到自己的Google驱动器中，并根据自己的需要进行自定义。
 
 ![Google Drive上的示例内容](/help/edge/assets/folder-with-sample-content.png)
 
-要链接您自己的内容，
+要将示例内容复制到您自己的内容文件夹，请将Github存储库指向您自己的内容文件夹：
 
 1. 在Google Drive或Microsoft SharePoint中专门为您的AEM内容创建新文件夹。 本文档使用在Microsoft SharePoint上创建的文件夹。
 
 1. 与Adobe Experience Manager用户共享文件夹(helix@adobe.com)。
 
-   ![使用“管理访问权限”选项可与AEM用户共享文件夹](/help/edge/assets/share-folder-with-aem-user.png)
+   ![使用“管理访问权限”选项可与AEM用户共享文件夹 — SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
+
+   ![使用“管理访问权限”选项可与AEM用户 — Google驱动器共享文件夹](/help/edge/assets/share-google-drive-folder.png)
+
 
    确保您已向Adobe Experience Manager用户提供对该文件夹的编辑权限。
 
-   ![与AEM用户共享文件夹，提供编辑权限](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![与AEM用户共享文件夹，提供编辑权限 — SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+
+   ![与AEM用户共享文件夹，提供编辑权限 — Google驱动器](/help/edge/assets/add-aem-user-google-folder.png)
 
 1. 复制 [存储在Google Drive文件夹中的示例内容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) 到您的文件夹。 要复制，请执行以下操作：
 
@@ -108,7 +117,6 @@ AEM Forms样板模板可帮助您快速开始使用预配置了自适应表单�
 
 1. 现在，您已设置内容文件夹，接下来该将其链接到您之前使用AEM Forms样板创建的GitHub项目。 要连接：
 
-   1. 登录您的Github帐户。
    1. 转到您使用AEM Forms样板早期创建的GitHub存储库。
    1. 打开 `fstab.yaml` 进行编辑。
    1. 将现有引用替换为您与AEM用户共享的文件夹的路径(helix@adobe.com)。
@@ -132,17 +140,15 @@ AEM Forms样板模板可帮助您快速开始使用预配置了自适应表单�
 
 
 
-   1. 提交更新的`fsatb.yaml文件，一旦更新了引用并且一切正常。 这将保存您所做的工作，并将您的内容文件夹连接到您的网站。
+   1. 提交更新的 `fsatb.yaml` 文件，一旦您更新了引用，一切看起来都不错。 如果您遇到任何生成问题，请参阅 [GitHub内部版本问题疑难解答](#troubleshooting-github-build-issues).
+
+
 
       ![提交更新的fsatab.yaml文件](/help/edge/assets/commit-updated-fstab-yaml.png)
 
+      这会将您的内容文件夹连接到您的网站。 更新引用后，您最初可能会遇到“404 Not Found”错误。 这是因为您的内容尚未预览。 下一节将介绍如何开始创作和预览内容。
 
-      >[!NOTE]
-      >
-      >
-      >更新引用后，您最初可能会遇到“404 Not Found”错误。 这是因为您的内容尚未预览。 下一节将介绍如何开始创作和预览内容。
-
-
+      ![提交更新的fsatab.yaml文件](/help/edge/assets/aem-forms-project-folder-error.png)
 
 ### 预览和发布您的内容
 
@@ -175,8 +181,8 @@ AEM Forms样板模板可帮助您快速开始使用预配置了自适应表单�
    预览文件时，新的浏览器选项卡会显示文档。 要预览示例表单，请转到以下URL：
 
 
-   ```JSON
-       https://<branch>--<repository>--<owner>.hlx.live/<form-path>/<form-file-name>.json
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.live
    ```
 
    * `<branch>` 指 GitHub 存储库的分支。
@@ -190,7 +196,32 @@ AEM Forms样板模板可帮助您快速开始使用预配置了自适应表单�
 
 
 
-   [https://main--wefinance--wkndforms.hlx.page/enquiry](https://main--wefinance--wkndforms.hlx.page/enquiry).
+   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+
+### 更新您的表单
+
+1. 转到Microsoft SharePoint或Google Drive文件夹。
+
+1. 打开 `enquiry.xlsx` 进行编辑。
+
+   ![查询表](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. 将提交按钮的标签更改为 `Let's Chat`.
+
+   ![查询表](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+
+1. 使用AEM Sidekick预览和发布 `enquiry.xlsx` 文件。
+
+   ![查询表](/help/edge/assets/enquiry-form-preview-publish.png)
+
+1. 要预览查询表单，请转到以下URL：
+
+
+   ```HTML
+   https://<branch>--<repository>--<owner>.hlx.page/enquiry
+   ```
+
+   提交按钮的标签将更新。 现在，填写表单并单击提交按钮，您会遇到错误，类似于以下内容，因为电子表格不是 [设置为接受数据](/help/edge/docs/forms/submit-forms.md).
 
 
 ### 开始开发样式和功能
@@ -232,9 +263,9 @@ AEM Forms样板模板可帮助您快速开始使用预配置了自适应表单�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-如果您现有AEM项目，则可以将自适应表单块集成到当前项目中以开始创建表单。 要集成，请执行以下操作：
+如果您现有AEM项目，则可以将Adaptive Forms块集成到当前项目中以开始创建表单。 要集成，请执行以下操作：
 
-1. 将自适应表单块存储库https://github.com/adobe-rnd/aem-boilerplate-forms克隆到您的计算机。
+1. 将自适应Forms块存储库https://github.com/adobe-rnd/aem-boilerplate-forms克隆到您的计算机。
 
 1. 在下载的文件夹内，找到 `blocks/form` 文件夹。 复制此文件夹。 现在，导航到您的AEM项目的本地 `blocks` 文件夹并将复制的表单文件夹粘贴到此处。
 
@@ -244,7 +275,7 @@ AEM Forms样板模板可帮助您快速开始使用预配置了自适应表单�
 就是这样！自适应Forms块现在包含在您的AEM项目中。 您可以开始创建表单，并将表单添加到AEM页面。
 
 
-### GitHub内部版本问题疑难解答
+## GitHub内部版本问题疑难解答
 
 通过解决潜在问题，确保 GitHub 构建过程顺利进行：
 
@@ -253,6 +284,14 @@ AEM Forms样板模板可帮助您快速开始使用预配置了自适应表单�
 
 * **处理 Linting 错误：**
 如果您遇到任何 Linting 错误，可以绕过它们。打开 [EDS 项目]/package.json 文件并将 lint 脚本从 &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; 修改为 &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;。保存文件并将更改提交到您的 GitHub 项目。
+
+
+## 另请参阅
+
+* [使用Google Sheets或Microsoft Excel创建表单](/help/edge/docs/forms/create-forms.md)
+* [将表单直接提交到Microsoft Excel或Google工作表](/help/edge/docs/forms/submit-forms.md)
+* [更改表单的外观](/help/edge/docs/forms/style-theme-forms.md)
+
 
 
 

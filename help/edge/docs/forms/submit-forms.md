@@ -1,20 +1,19 @@
 ---
 title: 准备电子表格以接受数据
-description: 使用电子表格和自适应表单块字段更快地制作功能强大的表单！
+description: 使用电子表格和自适应Forms块字段更快地制作功能强大的表单！
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 92%
+source-wordcount: '971'
+ht-degree: 71%
 
 ---
 
-
 # 准备电子表格以接受数据
 
-![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 在[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，可以启用相应的电子表格以开始接收数据。
 
@@ -33,13 +32,21 @@ ht-degree: 92%
    >
    > 如果 `incoming` 工作表不存在，AEM 不会向电子表格发送任何数据。
 
-1. 将表单字段名称、`shared-default` 工作表中的 `Name` 列的值镜像到 `incoming` 工作表中的标题。
+1. 在此工作表中，插入一个名为“intrain_form”的表。 选择匹配表单字段名称所需的列数。 然后，在工具栏中，转到“插入”>“表格”，然后单击“确定”。
 
-   `shared-default` 工作表的 `Name` 列中的每个值（不包括提交按钮）均充当 `incoming` 工作表中的标题。例如，请考虑下图，其中说明了“contact-us”表单的标题：
+1. 将表的名称更改为“intrain_form”。 在Microsoft Excel中，要更改表的名称，请选择该表并单击“表设计”。
+
+1. 接下来，添加表单字段名称作为表标题。 要确保字段完全相同，可以从“shared-default”工作表中复制并粘贴它们。  在“shared-default”工作表中，选择并复制“Name”列下列出的表单ID，但“submit”字段除外。
+
+1. 在“传入”工作表中，选择选择性粘贴>将行转置为列，将字段ID作为列标题复制到此新工作表中。 可以忽略仅保留其数据需要捕获其他数据的字段。
+
+   中的每个值 `Name` 列 `shared-default` 工作表（不包括提交按钮）可以用作中的标头 `incoming` 工作表。 例如，请考虑下图，其中说明了“contact-us”表单的标题：
 
    ![“contact-us”表单的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. 使用 Sidekick 预览工作表。
+
+
+1. 使用AEM Sidekick扩展预览表单更新。 您的工作表现在可以接受传入表单提交。
 
    >[!NOTE]
    >
@@ -48,23 +55,11 @@ ht-degree: 92%
 
 将字段名称添加到 `incoming` 工作表后，您的表单便能接受提交。您可以预览表单并使用它向工作表提交数据。
 
+设置工作表以接收数据后，您可以 [使用自适应Forms块预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用POST请求](#use-admin-apis-to-send-data-to-your-sheet) 开始将数据发送到工作表。
 
-
-您还可以在电子表格中观察到以下变化：
-
-一份名为“Slack”的工作表将会被添加到您的 Excel 工作簿或 Google 工作表中。在此工作表中，您可以在电子表格中引入新数据时为指定的 Slack 渠道配置自动通知。目前，AEM 仅支持向 AEM Engineering Slack 组织和 Adobe Enterprise 支持组织发送通知。
-
-1. 要设置 Slack 通知，请输入 Slack 工作区的“teamId”和“频道名称”或“ID”。您还可以向 slack-bot（使用调试命令）询问“teamId”和“channel ID”。最好使用“频道 ID”而不是“频道名称”，因为它在频道重命名后仍然有效。
-
-   >[!NOTE]
-   >
-   > 旧的表单没有“teamId”列。“teamId”包含在频道列中，以“#”或“/”分隔。
-
-1. 输入您想要的任何标题，然后在字段下输入您想要在 Slack 通知中看到的字段的名称。每个标题应以逗号分隔（例如姓名、电子邮件）。
-
-   >[!WARNING]
-   >
-   >  在任何情况下，“shared-default”工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
+>[!WARNING]
+>
+>  在任何情况下，“shared-default”工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
 
 
 ## （可选）使用管理员 API 以使电子表格能够接受数据
@@ -155,6 +150,11 @@ ht-degree: 92%
 
    您的表单现已能够接受数据。您还可以在电子表格中观察到以下变化：
 
+## 自动更改工作表在启用它接受数据之后。
+
+
+将工作表设置为接收数据后，您将看到电子表格中的以下更改：
+
 一份名为“Slack”的工作表将会被添加到您的 Excel 工作簿或 Google 工作表中。在此工作表中，您可以在电子表格中引入新数据时为指定的 Slack 渠道配置自动通知。目前，AEM 仅支持向 AEM Engineering Slack 组织和 Adobe Enterprise 支持组织发送通知。
 
 1. 要设置 Slack 通知，请输入 Slack 工作区的“teamId”和“频道名称”或“ID”。您还可以向 slack-bot（使用调试命令）询问“teamId”和“channel ID”。最好使用“频道 ID”而不是“频道名称”，因为它在频道重命名后仍然有效。
@@ -165,16 +165,14 @@ ht-degree: 92%
 
 1. 输入您想要的任何标题，然后在字段下输入您想要在 Slack 通知中看到的字段的名称。每个标题应以逗号分隔（例如姓名、电子邮件）。
 
+   >[!WARNING]
+   >
+   >  在任何情况下，“shared-default”工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
 
-工作表现在设置为接收数据，您可以 [使用自适应表单块预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用POST请求](#use-admin-apis-to-send-data-to-your-sheet) 开始将数据发送到工作表。
-
->[!WARNING]
->
->  在任何情况下，“shared-default”工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
 
 ## 将数据发送到您的工作表 {#send-data-to-your-sheet}
 
-将工作表设置为接收数据后，您可以 [使用自适应表单块预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用管理员API](#use-admin-apis-to-send-data-to-your-sheet) 开始将数据发送到工作表。
+将工作表设置为接收数据后，您可以 [使用自适应Forms块预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用管理员API](#use-admin-apis-to-send-data-to-your-sheet) 开始将数据发送到工作表。
 
 ### 使用管理 API 将数据发送到您的工作表
 
@@ -288,10 +286,3 @@ POST https://my-domain.com/email-form
 
 接下来，您可以自定义感谢消息、[配置感谢页面](/help/edge/docs/forms/thank-you-page-form.md)或[设置重定向](/help/edge/docs/forms/thank-you-page-form.md)。
 
-## 查看更多
-
-* [创建并预览表单](/help/edge/docs/forms/create-forms.md)
-* [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
-* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-forms.md)
-* [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
-* [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)
