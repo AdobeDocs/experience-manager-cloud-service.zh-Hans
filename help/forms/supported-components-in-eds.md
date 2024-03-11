@@ -1,12 +1,12 @@
 ---
-title: AEM Forms Edge Delivery Service表单组件
-description: AEM Forms Edge交付服务专为实现卓越性能而打造，使您能够预见简化数据收集和用户参与的未来。 本文列出了可用于EDD表单的所有现成表单组件。
+title: AEM Forms Edge Delivery Services表单组件
+description: AEM Forms Edge交付服务专为实现卓越性能而构建，使您能够预见简化数据收集和用户参与的未来。 本文列出了可用于EDD表单的所有现成表单组件。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '870'
 ht-degree: 5%
 
 ---

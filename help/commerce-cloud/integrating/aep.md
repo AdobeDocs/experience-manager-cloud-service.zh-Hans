@@ -1,5 +1,5 @@
 ---
-title: AEM-CIF核心组件和Adobe Experience Platform集成
+title: AEM-CIF核心组件与Adobe Experience Platform集成
 description: 了解如何使用CIF - Storefront Connector将AEM渲染的产品Experience Platform中的storefront事件数据发送到Experience Platform。
 sub-product: Commerce
 version: Cloud Service
@@ -11,7 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 1%
@@ -249,7 +249,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
    import { enhancer, reducers } from '@magento/peregrine/lib/store';
    
    const storage = new BrowserPersistence();
-   const store = createStore(combineReducers(reducers), enhancer);
+   const store = createStore(combineReducers (reducers), enhancer);
    
    storage.setItem('store_view_code', config.storeView);
    
@@ -263,7 +263,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
        // listen for add-to-cart events and enable forwarding to the magento storefront events sdk
        useAddToCartEvent(({ mse }));
        // enable CIF specific event forwarding to the Adobe Client Data Layer
-       useDataLayerEvents();
+       useDataLayerEvents ();
    
        useEffect(() => {
            // implement a proper marketing opt-in, for demo purpose you hard-set the consent cookie
@@ -323,13 +323,13 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
    };
    ```
 
-   该 `EventCollectorContext` 导出React Context，其中：
+   此 `EventCollectorContext` 导出React上下文，其中：
 
    - 加载commerce-events-sdk和commerce-events-collector库，
    - 使用Experience Platform和/或ACDS的给定配置初始化它们
-   - 从Peregrine订阅所有事件，并将它们转发到事件SDK
+   - 订阅来自Peregrine的所有事件并将它们转发到事件SDK
 
-   您可以查看 `EventCollectorContext` [此处](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
+   您可以查看以下项目的实施详细信息： `EventCollectorContext` [此处](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
 
 ### 生成和部署更新的AEM项目
 
@@ -345,7 +345,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 ### 使用商务字段组创建架构
 
-要定义商务事件数据的结构，您必须创建体验数据模型(XDM)架构。 架构是表示和验证数据结构和格式的一组规则。
+要定义商务事件数据的结构，您必须创建体验数据模型(XDM)架构。 架构是一组规则，用于表示和验证数据的结构和格式。
 
 1. 在浏览器中，导航到 __Adobe Experience Platform__ 产品主页。 例如：<https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>。
 
@@ -353,18 +353,18 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
    ![AEP创建架构](../assets/aep-integration/AEP-Schema-EventSchema-1.png)
 
-1. 使用以下命令为您的架构命名 __“架构属性”>“显示名称”__ 字段并使用添加字段组  __合成>字段组>添加__ 按钮。
+1. 使用为您的架构命名 __架构属性>显示名称__ 字段并使用添加字段组  __组合>字段组>添加__ 按钮。
 
    ![AEP架构定义](../assets/aep-integration/AEP-Schema-Definition.png)
 
-1. 在 __添加字段组__ 对话框，搜索 `Commerce`，选择 __Commerce详细信息__ 复选框，然后单击 __添加字段组__.
+1. 在 __添加字段组__ 对话框，搜索 `Commerce`，选择 __商业详细信息__ 复选框，然后单击 __添加字段组__.
 
    ![AEP架构定义](../assets/aep-integration/AEP-Schema-Field-Group.png)
 
 
 >[!TIP]
 >
->请参见 [架构合成基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) 了解更多信息。
+>请参阅 [模式组合基础](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) 以了解更多信息。
 
 ### 创建数据集
 
@@ -432,9 +432,9 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 ## 触发器 `addToCart` 事件和验证数据收集 {#event-trigger-verify}
 
-上述步骤已完成AEM Commerce和Experience Platform的设置。 您现在可以触发 `addToCart` 使用Google Chrome扩展事件和验证数据收集 _雪铲检查器_ 和数据集 __量度和图形__ 在产品UI中切换。
+上述步骤已完成AEM Commerce和Experience Platform的设置。 您现在可以触发 `addToCart` 事件并使用Google Chrome扩展验证数据收集 _雪铲检查器_ 和数据集 __量度和图形__ 在产品UI中进行切换。
 
-要触发该事件，您可以从本地设置使用AEM创作或发布服务。 在此示例中，使用AEM作者登录到您的帐户。
+要触发该事件，您可以从本地设置使用AEM创作或发布服务。 对于此示例，请通过登录到您的帐户来使用AEM author。
 
 1. 从“站点”页面中，选择 __我的演示StoreFront >我们> en__ 页面并单击 __编辑__ 在顶部操作栏中。
 
@@ -443,10 +443,10 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 1. 单击中的任意首选产品卡 __产品页面__，然后选择 __颜色，大小__ 以启用 __添加到购物车__ 按钮。
 
 
-1. 打开 __雪铲检查器__ 从浏览器的“扩展”面板中选择一个扩展 __Experience Platform周三SDK__ 左边栏中的。
+1. 打开 __雪铲检查器__ 扩展选项，然后选择 __Experience Platform周三SDK__ 在左边栏中。
 
 
-1. 返回 __产品页面__ 然后点击 __添加到购物车__ 按钮。 这会向Experience Platform发送数据。 此 __Adobe Experience Platform Debugger__ 扩展会显示事件详细信息。
+1. 返回到 __产品页面__ 并单击 __添加到购物车__ 按钮。 这会向Experience Platform发送数据。 此 __Adobe Experience Platform Debugger__ 扩展会显示事件详细信息。
 
    ![AEP调试器添加到购物车事件数据](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
 
@@ -460,24 +460,24 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 ## 实施详细信息 {#implementation-details}
 
-此 [CIFExperience Platform连接器](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 构建在 [Adobe Commerce的数据连接](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)，它是 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 项目。
+此 [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 构建在 [Adobe Commerce的数据连接](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)，它是 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 项目。
 
 PWA Studio项目允许您创建由Adobe Commerce或Magento Open Source提供支持的Progressive Web Application(PWA)店面。 该项目还包含一个名为的组件库 [佩雷格兰](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 用于向可视化组件添加逻辑。 此 [Peregrin库](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) 还提供了由使用的自定义React挂钩 [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) 以实现与Experience Platform的无缝集成。
 
 
 ## 支持的事件 {#supported-events}
 
-目前，支持以下事件：
+截至目前，支持以下事件：
 
 __体验XDM事件：__
 
 1. 添加到购物车(AEM)
 1. 查看页面(AEM)
 1. 查看产品(AEM)
-1. 搜索请求已发送(AEM)
-1. 收到的搜索响应(AEM)
+1. 已发送搜索请求(AEM)
+1. 已收到搜索响应(AEM)
 
-何时 [游程组分](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) 在AEM Commerce项目中重复使用：
+时间 [Peregrine组件](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) 在AEM Commerce项目中重用：
 
 __体验XDM事件：__
 

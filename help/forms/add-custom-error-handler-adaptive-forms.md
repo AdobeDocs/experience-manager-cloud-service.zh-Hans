@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 91%
@@ -379,7 +379,7 @@ if (data) {
         }
 
         if (errorData) {
-            Object.keys(errorData).forEach(function(key) {
+            Object.keys (errorData).forEach(function(key) {
                 var som_key = som_map[key];
                 if (som_key) {
                     var error = {};

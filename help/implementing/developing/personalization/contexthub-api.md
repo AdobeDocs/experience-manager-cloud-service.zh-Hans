@@ -2,7 +2,7 @@
 title: ContextHub JavaScript API参考
 description: 将ContextHub组件添加到页面后，脚本即可使用ContextHub JavaScript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -68,7 +68,7 @@ ContextHub对象提供对所有存储的访问权限。
 
 ### 函数(ContextHub) {#functions-contexthub}
 
-#### getAllStores() {#getallstores}
+#### getAllStores () {#getallstores}
 
 返回所有已注册的ContextHub存储。
 
@@ -83,7 +83,7 @@ ContextHub对象提供对所有存储的访问权限。
 以下示例检索所有存储，然后检索地理位置存储：
 
 ```javascript
-var allStores = ContextHub.getAllStores();
+var allStores = ContextHub.getAllStores ();
 var geoloc = allStores.geolocation
 ```
 
@@ -127,7 +127,7 @@ var geoloc = ContextHub.getStore("geolocation");
 
 ### 函数(ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments() {#getresolvedsegments}
+#### getResolvedSegments () {#getresolvedsegments}
 
 返回在当前上下文中解析的段。 此函数没有参数。
 
@@ -155,7 +155,7 @@ A `ContextHub.Utils.Persistence` 对象。 有关缺省值和初始化的信息�
 
 ### 函数(ContextHub.Store.Core) {#functions-contexthub-store-core}
 
-#### addAllItems(tree， options) {#addallitems-tree-options}
+#### addAllItems（树，选项） {#addallitems-tree-options}
 
 将数据对象或数组与存储数据合并。 对象或数组中的每个键/值对都将添加到存储中(通过 `setItem` 函数)：
 
@@ -193,7 +193,7 @@ A `boolean` 值：
 * 值 `true` 指示已添加引用。
 * 值 `false` 表示未添加引用。
 
-#### announceReadiness() {#announcereadiness}
+#### announceReadiness () {#announcereadiness}
 
 触发 `ready` 此存储的事件。 此函数没有参数并且不返回任何值。
 
@@ -213,7 +213,7 @@ A `boolean` 值：
 
 表示键值的对象。
 
-#### getKeys(includeInternals) {#getkeys-includeinternals}
+#### getKeys (includeInternals) {#getkeys-includeinternals}
 
 从存储中检索密钥。 （可选）您可以检索ContextHub框架内部使用的键。
 
@@ -225,7 +225,7 @@ A `boolean` 值：
 
 键名称数组( `string` 值)。
 
-#### getReferences() {#getreferences}
+#### getReferences () {#getreferences}
 
 从存储中检索引用。
 
@@ -401,7 +401,7 @@ ContextHub.Store.JSONPStore扩展 [ContextHub.Store.Core](#contexthub-store-core
 
 表示原始响应的对象。
 
-#### getServiceDetails() {#getservicedetails}
+#### getServiceDetails () {#getservicedetails}
 
 检索此ContextHub.Store.JSONPStore对象的服务对象。 服务对象包含创建服务URL所需的信息。
 
@@ -536,12 +536,12 @@ A `boolean` 值为true表示该Cookie存在。
 ##### 示例 {#example-exists}
 
 ```javascript
-if (ContextHub.Utils.Cookie.exists("name")) {
+if (ContextHub.Utils.Cookie.exists ("name")) {
    // conditionally-executed code
 }
 ```
 
-#### getAllItems(filter) {#getallitems-filter}
+#### getAllItems（过滤器） {#getallitems-filter}
 
 返回其键与过滤器匹配的所有Cookie。
 
@@ -560,7 +560,7 @@ Cookie的对象。 对象属性是Cookie键，键值是Cookie值。
 ##### 示例 {#example-getallitems}
 
 ```javascript
-ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getAllItems ([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### getItem(key) {#getitem-key-1}
@@ -581,7 +581,7 @@ Cookie值，或 `null` 如果未找到键的Cookie，则为。
 ContextHub.Utils.Cookie.getItem("name");
 ```
 
-#### getKeys(filter) {#getkeys-filter}
+#### getKeys（过滤器） {#getkeys-filter}
 
 返回与过滤器匹配的现有Cookie键的数组。
 
@@ -600,7 +600,7 @@ ContextHub.Utils.Cookie.getItem("name");
 ##### 示例 {#example-getkeys-1}
 
 ```javascript
-ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getKeys ([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### removeItem(key， options) {#removeitem-key-options-1}
@@ -829,7 +829,7 @@ ContextHub.Utils.JSON.stringify({
 
 ### 函数(ContextHub.Utils.JSON.tree) {#functions-contexthub-utils-json-tree}
 
-#### addAllItems() {#addallitems}
+#### addAllItems () {#addallitems}
 
 创建数据对象的副本，并将来自第二个对象的数据树添加到该副本。 该函数将返回副本，并且不会修改任何原始对象。 当两个对象的数据树包含相同的键时，第二对象的值覆盖第一对象的值。
 
@@ -911,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys() {#getkeys}
+#### getKeys () {#getkeys}
 
 从对象的数据树中检索所有键。 或者，您只能检索特定键的子项键。 您还可以选择指定检索到的键的排序顺序。
 
@@ -946,7 +946,7 @@ myObject {
 }
 ```
 
-此 `ContextHub.Utils.JSON.tree.getKeys(myObject);` 脚本返回以下数组：
+此 `ContextHub.Utils.JSON.tree.getKeys (myObject);` 脚本返回以下数组：
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1072,7 +1072,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ### 函数(ContextHub.Utils.storeCategors) {#functions-contexthub-utils-storecandidates}
 
-#### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
+#### getRegisteredCandidates (storeType) {#getregisteredcandidates-storetype}
 
 返回注册为商店候选商店的存储类型。 检索特定存储类型或所有存储类型的已注册候选项。
 
@@ -1084,7 +1084,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 存储类型的对象。 对象属性是存储类型名称，属性值是已注册的存储候选数组。
 
-#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates (storeType) {#getstorefromcandidates-storetype}
 
 从已注册的候选中返回存储类型。 如果注册了多个同名存储类型，此函数将返回具有最高优先级的存储类型。
 
@@ -1096,7 +1096,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 一个对象，表示已注册的存储候选。 如果未注册所请求的存储类型，则会引发错误。
 
-#### getSupportedStoreTypes() {#getsupportedstoretypes}
+#### getSupportedStoreTypes () {#getsupportedstoretypes}
 
 返回注册为存储候选的存储类型名称。 此函数不需要参数。
 

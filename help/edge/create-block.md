@@ -1,13 +1,13 @@
 ---
 title: 创建经过检测可与 Universal Editor 结合使用的区块
 description: 了解如何在使用 Edge Delivery Services 项目进行 AEM 创作中创建经过检测可与 Universal Editor 结合使用的区块。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
-source-wordcount: '1205'
-ht-degree: 100%
+exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
+source-wordcount: '1204'
+ht-degree: 99%
 
 ---
-
 
 # 创建经过检测可与 Universal Editor 结合使用的区块 {#create-block}
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 本指南需要具备使用 Edge Delivery Services 项目以及 Universal Editor 进行 AEM 创作的现有知识。在开始阅读本指南之前，您应有权访问 Edge Delivery Services 并熟悉其基础知识，其中包括：
 
-* 您已学完 [Edge Delivery Services 教程](/help/edge/developer/tutorial.md)。
+* 您已完成 [Edge Delivery Servicetorial（边缘交付服务）。](/help/edge/developer/tutorial.md)
 * 您有权访问 [AEM Cloud Service 沙盒](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
 * 您已[启用同一沙盒环境上的 Universal Editor](/help/implementing/universal-editor/getting-started.md)。
 * 您已学完[使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/edge-dev-getting-started.md)。

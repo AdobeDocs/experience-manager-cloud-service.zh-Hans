@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d5f95cc2e7378f09c8f6c4bc3858e7b42c07924
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '9350'
 ht-degree: 2%
@@ -717,7 +717,7 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 >默认音频的播放还取决于以下浏览器中的设置：
 >
 >* Chrome — 播放视频中设置的默认音频。
-* Safari — 如果在Safari中设置默认语言，则使用设置的默认语言播放音频（如果视频清单中有的话）。 否则，将播放设置为视频属性一部分的默认音频。
+>* Safari — 如果在Safari中设置默认语言，则使用设置的默认语言播放音频（如果视频清单中有的话）。 否则，将播放设置为视频属性一部分的默认音频。
 
 **要为具有多个音频轨道的视频设置默认音频，请执行以下操作：**
 
@@ -746,7 +746,7 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 
 >[!NOTE]
 >
-默认的Experience Manager预览选项卡不显示多个字幕和音轨。 原因是这些磁道与Dynamic Media相关联，并且只能使用Dynamic Media查看器预览查看。
+>默认的Experience Manager预览选项卡不显示多个字幕和音轨。 原因是这些磁道与Dynamic Media相关联，并且只能使用Dynamic Media查看器预览查看。
 
 **要预览具有多个字幕和音轨的视频，请执行以下操作：**
 
@@ -825,7 +825,7 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 
 >[!IMPORTANT]
 >
-Adobe建议您 [启用多字幕和多音频跟踪功能](#enable-dash) 在您的Dynamic Media帐户上。 这样，您就可以利用最新的Dynamic Media后端架构和简化的工作流程，为您的视频添加字幕、字幕和音轨。
+>Adobe建议您 [启用多字幕和多音频跟踪功能](#enable-dash) 在您的Dynamic Media帐户上。 这样，您就可以利用最新的Dynamic Media后端架构和简化的工作流程，为您的视频添加字幕、字幕和音轨。
 
 通过将隐藏式字幕添加到单个视频或自适应视频集，您可以将视频扩展到全球市场。 通过添加隐藏式字幕，您无需对音频进行配音，也无需使用母语人士重新录制每种语言的音频。 视频以所录制的语言播放。 出现外语字幕是为了让不同语言的人仍然能够理解音频部分。
 
@@ -833,7 +833,7 @@ Adobe建议您 [启用多字幕和多音频跟踪功能](#enable-dash) 在您的
 
 >[!NOTE]
 >
-您使用的视频播放器必须支持隐藏式字幕的显示。
+>您使用的视频播放器必须支持隐藏式字幕的显示。
 
 另请参阅 [Dynamic Media中的辅助功能](/help/assets/dynamic-media/accessibility-dm.md).
 
@@ -861,7 +861,7 @@ Dynamic Media可以将字幕文件转换为JSON（JavaScript对象表示法）�
 
 >[!NOTE]
 >
-为了在全球范围内支持多种语言的视频字幕， WebVTT标准要求您为要支持的每种语言创建单独的.vtt文件和调用。
+>为了在全球范围内支持多种语言的视频字幕， WebVTT标准要求您为要支持的每种语言创建单独的.vtt文件和调用。
 
 通常，您希望将字幕VTT文件的名称与视频文件相同，并将其附加到语言区域设置，如 — EN、-FR或 — DE。 这样，它可以帮助您使用现有Web内容管理系统自动生成视频URL。
 
@@ -892,7 +892,7 @@ Dynamic Media可以将字幕文件转换为JSON（JavaScript对象表示法）�
 
 >[!NOTE]
 >
-使用的视频播放器必须支持使用章节标记。 Dynamic Media视频播放器不支持章节标记，但是使用第三方视频播放器可能不支持。
+>使用的视频播放器必须支持使用章节标记。 Dynamic Media视频播放器不支持章节标记，但是使用第三方视频播放器可能不支持。
 
 <!-- OBSOLETE CONTENT OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1238,7 +1238,7 @@ public class ManifestServlet extends HttpServlet {
     private void error(String errorMessage, HttpServletResponse response) throws IOException { 
         ManifestUrl errorManifest = new ManifestUrl(null); 
         errorManifest.setErrorMessage(errorMessage); 
-        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        response.setStatus (HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
         objectMapper.writeValue(response.getWriter(), errorManifest); 
     } 
 } 
@@ -1283,7 +1283,7 @@ public abstract class VideoResponse {
 ```java
 public final class Constants { 
 
-     private Constants() { 
+     private Constants () { 
      } 
 
      public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
@@ -1345,7 +1345,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
   */ 
  public static String getRealContextPath(HttpServletRequest req) { 
      final String path = req.getContextPath(); 
-     if (path.equals(CONTEXT_PATH)) { 
+     if (path.equals (CONTEXT_PATH)) { 
          return ""; 
      } 
      return path.substring(CONTEXT_PATH.length()); 

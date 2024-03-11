@@ -3,7 +3,7 @@ title: AEM as a Cloud Service 中的缓存
 description: 了解AEMas a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 28537409c5974ff8ade30207f16cc62b45c47616
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%
@@ -434,7 +434,7 @@ public class InvalidatedHandler implements EventHandler {
 
         String distributionType = (String) event.getProperty(DISTRIBUTION_TYPE);
 
-        if (INVALIDATE.name().equals(distributionType)) {
+        if (INVALIDATE.name().equals (distributionType)) {
             boolean isLeader = discoveryService.getTopology().getLocalInstance().isLeader();
             // process the OSGi event on the leader author instance
             if (isLeader) {
@@ -472,11 +472,11 @@ public class InvalidatedHandler implements EventHandler {
 
 ```
 String[] paths = …
-ReplicationOptions options = new ReplicationOptions();
-options.setSynchronous(true);
+ReplicationOptions options = new ReplicationOptions ();
+options.setSynchronous (true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals("flush");
+   return agent.getId().equals ("flush");
   }
 });
 

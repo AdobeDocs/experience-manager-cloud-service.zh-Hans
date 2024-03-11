@@ -1,13 +1,13 @@
 ---
-title: 用于验证表单字段的 AEM Forms Edge Delivery Service 常用正则表达式
-description: 用于验证表单字段的 AEM Forms Edge Delivery Service 常用正则表达式
+title: AEM Forms Edge Delivery Services用于验证表单字段的常用正则表达式
+description: AEM Forms Edge Delivery Services用于验证表单字段的常用正则表达式
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 87%
 
 ---
 

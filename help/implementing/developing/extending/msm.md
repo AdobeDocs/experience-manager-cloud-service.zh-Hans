@@ -2,7 +2,7 @@
 title: 扩展多站点管理器
 description: 了解如何扩展多站点管理器的功能。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 93%
@@ -478,7 +478,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
       return null;
      }
      @Deprecated
-     public String[] getPropertiesNames() {
+     public String[] getPropertiesNames () {
       return null;
      }
      @Deprecated

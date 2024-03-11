@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '4087'
 ht-degree: 0%
@@ -432,7 +432,7 @@ ht-degree: 0%
 以下是将验证标志设置为 **完整**：
 
 ```java
-operationOptions.setValidationOptions(ValidationOptions.FULL);
+operationOptions.setValidationOptions (ValidationOptions.FULL);
 ```
 
 >[!NOTE]

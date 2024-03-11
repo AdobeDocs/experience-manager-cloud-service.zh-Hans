@@ -1,16 +1,15 @@
 ---
-title: 翻译和本地化 AEM Forms Edge Delivery Service Form
-description: 翻译和本地化 AEM Forms Edge Delivery Service Form
+title: 翻译和本地化AEM Forms Edge Delivery Services表单
+description: 翻译和本地化AEM Forms Edge Delivery Services表单
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
-workflow-type: ht
-source-wordcount: '30'
-ht-degree: 100%
+exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+workflow-type: tm+mt
+source-wordcount: '27'
+ht-degree: 0%
 
 ---
 
-
-# 翻译和本地化 AEM Forms Edge Delivery Service Form
-
+# 翻译和本地化AEM Forms Edge Delivery Services表单

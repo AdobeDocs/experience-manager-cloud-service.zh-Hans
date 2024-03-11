@@ -1,8 +1,8 @@
 ---
-source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 87%
+source-wordcount: '331'
+ht-degree: 100%
 
 ---
 # 代码片段 {#snippets}
@@ -55,8 +55,17 @@ ht-degree: 87%
 * [提交至 Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交到 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [将自适应表单连接到 Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [将自适应表单连接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
-## AEM创作，Edge Delivery Services可提前访问 {#aem-authoring-edge-early-access}
+## 使用 Edge Delivery Services 进行 AEM 创作 - 抢先体验 {#aem-authoring-edge-early-access}
 
-[!BADGE 抢先体验技术 — 从您的Slack渠道上的AEM Sites实验室向我们询问有关此功能的信息！]{type=Informative url="/help/edge/docs/slack.md" tooltip="通过Edge Delivery Services进行AEM创作是一项早期访问技术。"}
+[!BADGE 抢先体验技术 - 通过 Slack 频道上的 AEM Sites 实验室向我们询问此功能！]{type=Informative url="/help/edge/docs/slack.md" tooltip="使用 Edge Delivery Services 进行 AEM 创作是一项抢先体验技术。"}
+
+## 另请参阅 {#see-also-forms-eds}
+
+* [表单组件](/help/edge/docs/forms/form-components.md)
+* [创建并预览表单](/help/edge/docs/forms/create-forms.md)
+* [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
+* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-forms.md)
+* [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
+* [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)

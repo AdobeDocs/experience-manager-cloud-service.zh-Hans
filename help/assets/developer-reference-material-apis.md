@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1931'
 ht-degree: 7%
@@ -76,7 +76,7 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
-在外部应用程序(而不是在 [!DNL Experience Manager] JVM。
+>在外部应用程序(而不是在 [!DNL Experience Manager] JVM。
 
 该方法提供了可扩展且更高效的资产上传处理方式。 与 [!DNL Experience Manager] 6.5为：
 
@@ -85,11 +85,11 @@ ht-degree: 7%
 
 >[!NOTE]
 >
-请参阅客户端代码以在开源中实施此方法 [aem-upload库](https://github.com/adobe/aem-upload).
+>请参阅客户端代码以在开源中实施此方法 [aem-upload库](https://github.com/adobe/aem-upload).
 >
-[!IMPORTANT]
+>[!IMPORTANT]
 >
-在某些情况下，由于Cloud Service中的存储最终具有一致的性质，因此更改可能不会在请求Experience Manager之间完全传播。 这会导致404响应启动或完成上载调用，因为没有传播所需的文件夹创建。 客户端应会收到404响应，并通过使用回退策略实施重试来处理这些响应。
+>在某些情况下，由于Cloud Service中的存储最终具有一致的性质，因此更改可能不会在请求Experience Manager之间完全传播。 这会导致404响应启动或完成上载调用，因为没有传播所需的文件夹创建。 客户端应会收到404响应，并通过使用回退策略实施重试来处理这些响应。
 
 ### 启动上载 {#initiate-upload}
 
@@ -159,7 +159,7 @@ CDN边缘节点有助于加速请求的二进制文件上传。
 
 >[!NOTE]
 >
-有关上载算法的更多信息，请参见 [官方功能文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 和 [API文档](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) 在Apache Jackrabbit Oak项目中。
+>有关上载算法的更多信息，请参见 [官方功能文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) 和 [API文档](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) 在Apache Jackrabbit Oak项目中。
 
 ### 完成上传 {#complete-upload}
 
@@ -179,7 +179,7 @@ CDN边缘节点有助于加速请求的二进制文件上传。
 
 >[!NOTE]
 >
-如果资产存在但两者都不存在 `createVersion` 也不 `replace` 已指定，则 [!DNL Experience Manager] 使用新二进制文件更新资产的当前版本。
+>如果资产存在但两者都不存在 `createVersion` 也不 `replace` 已指定，则 [!DNL Experience Manager] 使用新二进制文件更新资产的当前版本。
 
 与启动过程一样，完整的请求数据可能包含多个文件的信息。
 
@@ -215,7 +215,7 @@ function debug() {
 }
 
 # Function to check if a file exists
-function file_exists() {
+function file_exists () {
     [ -e "$1" ]
 }
 
@@ -431,7 +431,7 @@ echo "File upload completed successfully."
 
 >[!NOTE]
 >
-aem-upload库和命令行工具都使用 [node-httptransfer库](https://github.com/adobe/node-httptransfer/)
+>aem-upload库和命令行工具都使用 [node-httptransfer库](https://github.com/adobe/node-httptransfer/)
 
 ### 已弃用的资产上传API {#deprecated-asset-upload-api}
 
@@ -444,9 +444,9 @@ aem-upload库和命令行工具都使用 [node-httptransfer库](https://github.c
 
 >[!MORELIKETHIS]
 >
-* [开源aem-upload库](https://github.com/adobe/aem-upload).
-* [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem).
-* [用于直接上传的Apache Jackrabbit Oak文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+>* [开源aem-upload库](https://github.com/adobe/aem-upload).
+>* [开源命令行工具](https://github.com/adobe/aio-cli-plugin-aem).
+>* [用于直接上传的Apache Jackrabbit Oak文档](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## 资产处理和后处理工作流 {#post-processing-workflows}
 
@@ -551,4 +551,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
-* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

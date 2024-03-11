@@ -2,9 +2,9 @@
 title: 为查询生成器实施自定义谓词计算器
 description: AEM中的查询生成器提供了一种简单、可自定义的方式来查询内容存储库
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ replic.action=Activate
    >
    >的名称 `PredicateEvaluator` 是构建查询时使用的谓词名称。
 
-1. 替代:
+1. 覆盖：
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
@@ -216,7 +216,7 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
     static final String PREDICATE_SINCE_OP = " >= ";
     static final String PREDICATE_ACTION = "action";
 
-    Logger log = LoggerFactory.getLogger(getClass());
+    Logger log = LoggerFactory.getLogger(getClass ());
 
     /**
      * Returns a XPath expression filtering by replication metadata.

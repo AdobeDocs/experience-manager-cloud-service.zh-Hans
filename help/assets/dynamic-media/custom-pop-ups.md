@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 1%
+source-wordcount: '944'
+ht-degree: 2%
 
 ---
 
@@ -85,12 +85,12 @@ Dynamic Media中的以下查看器支持概览：
 
    使用以下方式将处理程序加载到查看器中 `setHandlers`：
 
-   `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
+   `*viewerInstance*.setHandlers ({ *handler 1*, *handler 2*}, ...`
 
    **使用上面的示例嵌入代码示例，您具有以下代码：**
 
    ```xml {.line-numbers}
-   s7interactiveimageviewer.setHandlers({
+   s7interactiveimageviewer.setHandlers ({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
            var genericVariable1=inData.genericVariable1;
@@ -100,7 +100,7 @@ Dynamic Media中的以下查看器支持概览：
    })
    ```
 
-   了解有关 `setHandlers()` 方法：
+   了解有关 `setHandlers ()` 方法：
 
    * 交互式图像查看器 —  [种子处理器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 交互式视频查看器 —  [种子处理器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
@@ -236,7 +236,7 @@ Dynamic Media中的以下查看器支持概览：
 1. 您的整个setHandlers代码类似于以下内容（使用了交互式视频查看器）：
 
    ```xml {.line-numbers}
-   s7interactivevideoviewer.setHandlers({
+   s7interactivevideoviewer.setHandlers ({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
            loadQuickView(sku);
