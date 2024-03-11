@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,13 @@ Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储
 ![安装AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM FormsEdge Delivery Services提供了一个表单块，称为 [自适应Forms块](/help/edge/docs/forms/create-forms.md) 以将表单添加到Edge Delivery Services站点。
+
+选择 [基于文档的创作](#document-based-authoring-features) 和 [AEM创作](#aem-authoring-features) 取决于您的特定要求。
+
+对于只收集姓名和电子邮件等基本信息的简单表单（考虑联系我们的表单、潜在客户生成表单或服务请求表单），以及只需要将数据发送到电子表格的表单， [基于文档的创作](/help/edge/docs/forms/create-forms.md) 非常合适。 您可以像在Google文档中构建文档一样构建这些表单。
+
+如果您的表单变得更加复杂，例如需要多个面板、复杂的规则和业务逻辑、数据操作、与外部系统集成，或使用AEM功能简化工作流，则 [AEM创作](/help/forms/creating-adaptive-form-core-components.md) 是一个更好的选择。
+
 
 ### 基于文档的创作和AEM创作的主要功能
 
@@ -119,6 +126,13 @@ AEM创作(使用自适应Forms编辑器)提供了用于构建表单的WYSIWYG界
 * 能够配置多个提交操作以处理表单提交，包括将数据提交到Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多数据源。
 
 本质上，AEM Authoring基于文档创作，为创建和管理复杂表单提供了更高级的工具包。
+
+### 创作工作流
+
+![基于文档的创作](/help/edge/assets/document-based-authoring-workflow.png)
+
+![AEM创作](/help/edge/assets/aem-authoring-workflow.png)
+
 
 ## 开始创建表单
 
