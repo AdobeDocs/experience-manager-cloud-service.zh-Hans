@@ -4,10 +4,10 @@ description: 本教程可帮助您启动并运行新的Adobe Experience Manager 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 10%
+source-wordcount: '1854'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。AEM FormsEdge Delivery Services(EDS)允许您使用熟悉的工具(如Google文档和Microsoft Office)创建表单。
 
-这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
+这些表单将数据直接提交到Microsoft Excel或Google Sheets文件，使您能够使用动态的生态系统以及Google Sheets、Microsoft Excel和Microsoft SharePoint的强大API，轻松处理提交的数据或启动现有的业务工作流。
 
 AEM Forms提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以创建一个预配置了Adaptive Forms块的新AEM项目，或将Adaptive Forms块添加到现有AEM项目。
 
@@ -127,16 +127,16 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
       如果您使用Microsoft SharePoint，则文件夹路径会使用以下格式：
 
       ```HTML
-      https://<tenant>.sharepoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
       ```
 
       例如，
 
       ```HTML
-      https://adobe.sharepoint.com/sites/wkndforms/Shared%20Documents/wefinance
+      https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      有关在Microsoft SharePoint中使用管理文件的更多信息，请参阅 [如何使用AdobeSharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
+      有关在Microsoft SharePoint中使用管理文件的更多信息，请参阅 [如何使用AdobeSharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -299,7 +299,5 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
 ## 另请参阅
 
-* [使用Google Sheets或Microsoft Excel创建表单](/help/edge/docs/forms/create-forms.md)
-* [将表单直接提交到Microsoft Excel或Google工作表](/help/edge/docs/forms/submit-forms.md)
-* [更改表单的外观](/help/edge/docs/forms/style-theme-forms.md)
+{{see-more-forms-eds}}
 

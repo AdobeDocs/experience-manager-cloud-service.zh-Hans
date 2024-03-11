@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 67%
+source-wordcount: '805'
+ht-degree: 62%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 67%
 
 AEM Forms Edge Delivery提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以 [创建预配置了Adaptive Forms Block的新AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [将自适应Forms块添加到现有AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
-这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
+这些表单将数据直接提交到Microsoft Excel或Google Sheets文件，使您能够使用动态的生态系统以及Google Sheets、Microsoft Excel和Microsoft SharePoint的强大API，轻松处理提交的数据或启动现有的业务工作流。
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-create-form.png)
 
@@ -29,7 +29,7 @@ AEM Forms Edge Delivery提供了一个称为自适应Forms块的块，以帮助�
 
 * 设置 [使用AEM Forms模板的AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [已将自适应Forms块添加到您现有的AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 并在本地计算机上克隆相应的GitHub存储库。
 在本文档中，Edge Delivery Services(EDS)项目的本地文件夹称为 `[EDS Project repository]`.
-* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将Microsoft SharePoint设置为您的内容源，请参阅 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
+* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将Microsoft SharePoint设置为您的内容源，请参阅 [如何使用SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 
 
 
@@ -82,7 +82,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![Google Drive上的示例内容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. 确保根据为项目指定的配置，与适当的 AEM 用户（例如 `helix@adobe.com`）[共享表](https://www.aem.live/docs/setup-customer-sharepoint)。授予用户编辑表的权限。
+1. 确保根据为项目指定的配置，与适当的 AEM 用户（例如 `helix@adobe.com`）[共享表](https://www.aem.live/docs/setup-customer-SharePoint)。授予用户编辑表的权限。
 
 1. 打开创建的电子表格并将默认表重命名为“shared-default”。
 
@@ -165,4 +165,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 [准备您的电子表格](/help/edge/docs/forms/submit-forms.md)以在表单提交后开始接受数据。
 
 
+## 另请参阅
 
+{{see-more-forms-eds}}

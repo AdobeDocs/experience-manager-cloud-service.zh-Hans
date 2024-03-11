@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1821'
 ht-degree: 60%
 
 ---
@@ -823,3 +823,6 @@ first-name input {
 
 此 CSS 针对位于具有类 `field-otp` 的元素内的所有输入元素。表单的HTML结构遵循自适应Forms块的约定，这意味着有一个标有“field-otp”类的容器包含名为“otp”的字段。
 
+## 另请参阅
+
+{{see-more-forms-eds}}
