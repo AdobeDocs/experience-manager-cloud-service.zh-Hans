@@ -5,43 +5,46 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 19%
+source-wordcount: '823'
+ht-degree: 2%
 
 ---
 
 # AEM FormsEdge Delivery Services
 
-利用Adobe的AEM FormsEdge Delivery Services，简化表单创建并提高完成率。 这些功能强大、可组合的服务使您能够构建具有卓越性能和视觉吸引力的企业级表单。 AEM会优先处理用户体验和业务目标，从而确保超快的加载时间和更高的表单转化率。
+AEM FormsEdge Delivery Services是一组可组合的服务，能够启用快速开发环境，让作者能够快速更新和发布，并快速启动新表单。
 
-利用该服务，您可以：
+AEM FormsEdge Delivery Services提供卓越的表单体验，这些体验可促进参与和转化，从而实现易于创作和开发的高影响力体验。
 
-* **构建卓越的注册体验**：构建可快速加载和渲染的注册体验，即使在Internet连接速度较慢的情况下也是如此。 缩短加载时间并优化用户体验有助于提高表单完成率和转化率。
+这些服务使您能够：
 
-* **使用您选择的工具创建注册体验**：通过分离内容源提高创作效率。 开箱即用地您可以使用两者 **基于文档的创作** (Microsoft SharePoint或Google通道)及 **AEM创作** (自适应Forms编辑器)。 因此，您可以在同一表单上使用多个内容源并使用首选创作工具，例如Microsoft Excel、Google Sheets或自适应Forms编辑器。
+* **使用您选择的工具创建注册体验：** 通过分离内容源提高创作效率。 开箱即用地您可以使用基于文档的创作(Microsoft SharePoint或Google Drive)和AEM创作(自适应Forms编辑器)。 因此，您可以在同一表单上使用多个内容源并使用首选创作工具，例如Microsoft Excel、Google Sheets或自适应Forms编辑器。
 
-* **使用开发人员友好的工具集：** AEM Forms使用纯HTML、新式CSS和vanilla JavaScript创建卓越的体验，而不会产生日常开销。 任何具有HTML、CSS和JS基础知识的开发人员都应该能够构建自己的组件，并且无需学习任何特定语言或框架。 无需任何管道或等待，只需将您的代码签入到Github中，即可实时进行更改。 此外，无需任何管道或等待，您可以将代码签入Github并实时进行更改。
+* **提供卓越的数字注册体验：** 提供可快速加载和渲染的数字注册体验。 更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
 
+* **使用开发人员友好的工具集：** AEM Forms使用纯HTML、新式CSS和vanilla JavaScript创建卓越的体验，避免特定框架的陡峭学习曲线。 具有基本Web开发技能的开发人员可以自定义并轻松构建表单组件和体验。 无需等待管道运行，只需将您的代码签入Github中，即可实时进行更改。
 
 ## AEM FormsEdge Delivery Services概述 {#edge-overview}
 
-下图说明了如何在Microsoft Excel或Google Sheets中编辑内容（基于文档的编辑）并发布到Edge Delivery Services。 它还显示了使用自适应Forms编辑器的AEM发布方法。
+下图说明了如何在Microsoft Excel或Google Sheets中编辑表单（基于文档的编辑）并发布到Edge Delivery Services。 它还显示了使用自适应Forms编辑器的AEM发布方法。
 
 ![Edge Delivery 架构](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。您可以将AEM内容管理与 [AEM创作](/help/forms/creating-adaptive-form-core-components.md) 以及 [基于文档的创作](/help/edge/docs/forms/create-forms.md)
+AEM Forms Edge Delivery Services是一组可组合的服务，允许您高度灵活地在网站上创作表单。 您可以将AEM内容管理与 [AEM创作](/help/forms/creating-adaptive-form-core-components.md) 以及 [基于文档的创作](/help/edge/docs/forms/create-forms.md).
 
-例如，您可以直接使用Microsoft Excel或Google工作表中的内容。 这意味着来自这些来源的内容可以成为您网站上的表单。 新内容可立即添加，而不经历重建过程。
+例如，您直接在Microsoft Excel或Google工作表中创作表单，这些电子表格将转换为您网站的表单。 任何新表单内容（如新表单字段）均可在您的网站上立即使用，而无需重新构建过程。
 
-Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，您可以在Google工作表或Microsoft Excel中编写表单，并且表单的组件可以在GitHub中使用CSS和JavaScript进行开发。 当您就绪时，您即可使用 Sidekick 浏览器扩展预览和发布内容更新。
+Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，您可以用以下方式编写表单 [Google Sheets或Microsoft Excel](/help/edge/docs/forms/create-forms.md) 并且可以在GitHub中使用CSS和JavaScript来开发表单的组件。 准备就绪后，您可以使用 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) 用于预览和发布内容更新的浏览器扩展。
+
+![安装AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
 AEM FormsEdge Delivery Services提供了一个表单块，称为 [自适应Forms块](/help/edge/docs/forms/create-forms.md) 以将表单添加到Edge Delivery Services站点。
 
-### AEM FormsEdge Delivery Services的主要功能
+### 基于文档的创作和AEM创作的主要功能
 
-基于文档的创作包含一系列基本功能和AEM创作，可解锁基于文档的创作之外的其他功能，使您能够构建更复杂且交互式的表单。 下表重点说明了这两项功能的主要功能：
+基于文档的创作提供了一系列基本功能，AEM创作在基于文档的创作之外释放了其他功能，使您能够构建更复杂且交互式的表单。 基于文档的创作和AEM创作的主要功能包括：
 
 <!-- 
 
@@ -89,37 +92,45 @@ AEM Authoring unlocks additional capabilities beyond the document-based authorin
 
 -->
 
-|                                           | 基于文档的创作 | AEM创作(自适应Forms编辑器) |
-| ----------------------------------------- | ------------------------ | ------------------------------------ |
-| **表单功能** |                          |                                      |
-| 可访问的组件 | ✓ | ✓ |
-| 标准化HTML结构 | ✓ | ✓ |
-| 规则和验证 | ✓ | ✓ |
-| 文件附件（文件上载） | ✓ | ✓ |
-| Google reCAPTCHA | ✓ | ✓ |
-| 自定义组件 | ✓ | ✓ |
-| 提交至电子邮件 | ✓ | ✓ |
-| **高级功能** |                          |                                      |
-| 带可视规则编辑器的高级规则 |                          | ✓ |
-| 服务器端可扩展性 |                          | ✓ |
-| 多个提交操作 |                          | ✓ |
-| **表单设计与管理** |                          |                                      |
-| 用于WYSIWYG编辑的自适应Forms编辑器 |                          | ✓ |
-| **集成** |                          |                                      |
-| 记录文档 |                          | ✓ |
-| 与Adobe Sign集成 |                          | ✓ |
-| 与Adobe Analytics集成 |                          | ✓ |
-| 与Marketo集成 |                          | ✓ |
-| 与多个数据源集成 |                          | ✓ |
-| 多个提交操作 |                          | ✓ |
+#### 基于文档的创作功能
 
+基于文档的创作允许您使用熟悉的工具(如Microsoft Excel或Google Sheets)创建表单。 这些表单提供以下功能：
+
+* 无障碍组件，提供用户友好的体验。
+* 标准化HTML结构以实现一致的呈现。
+* 规则和验证以确保数据准确性。
+* 用于收集其他信息的文件附件选项。
+* Google reCAPTCHA集成用于垃圾邮件保护。
+* 能够根据特定需求创建自定义表单组件。
+* 将表单数据直接提交到Microsoft Excel、Google工作表或电子邮件地址。
+
+#### AEM创作功能
+
+AEM创作(使用自适应Forms编辑器)提供了用于构建表单的WYSIWYG界面，并提供基于文档的创作的所有功能以及大量其他功能：
+
+* 用于创建复杂逻辑的高级规则编辑器。
+* 自定义功能的服务器端可扩展性。
+* 所见即所得编辑体验，可轻松创建表单和可视化图表。
+* 记录文档功能，用于创建已提交数据的防篡改存档。
+* 与Adobe Sign集成以提供电子签名。
+* 与Adobe Workfront Fusion集成，以便在提交表单时触发Adobe Workfront Fusion场景。
+* 与各种数据源集成，用于预填充表单和提交数据。
+* 表单数据模型，用于定义数据结构和与各种数据源的交互。
+* 能够配置多个提交操作以处理表单提交，包括将数据提交到Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多数据源。
+
+本质上，AEM Authoring基于文档创作，为创建和管理复杂表单提供了更高级的工具包。
 
 ## 开始创建表单
 
-* [快速入门 — 开发人员教程](/help/edge/docs/forms/tutorial.md)
+* [AEM FormsEdge Delivery Services入门](/help/edge/docs/forms/tutorial.md)
 * [使用Google Sheets或Microsoft Excel创建表单](/help/edge/docs/forms/create-forms.md)
-* [将表单直接提交到Microsoft Excel或Google工作表](/help/edge/docs/forms/submit-forms.md)
-* [更改表单的外观](/help/edge/docs/forms/style-theme-forms.md)
+* [设置Google Sheets或Microsoft Excel文件以开始接受数据&#x200B;。](/help/edge/docs/forms/submit-forms.md)
+* [发布表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
+* [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [向表单添加可重复部分&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [在提交表单后显示自定义感谢消息&#x200B;。](/help/edge/docs/forms/thank-you-page-form.md)
+* [自适应表单块组件及其属性](/help/edge/docs/forms/form-components.md)
+
 
 
 <!-- 

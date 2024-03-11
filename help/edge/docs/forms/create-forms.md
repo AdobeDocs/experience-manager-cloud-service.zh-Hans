@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 73%
+source-wordcount: '803'
+ht-degree: 68%
 
 ---
 
@@ -28,8 +28,8 @@ AEM Forms Edge Delivery提供了一个称为自适应Forms块的块，以帮助�
 在开始之前，请确保您已完成以下步骤：
 
 * 设置 [使用AEM Forms模板的AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 或 [已将自适应Forms块添加到您现有的AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 并在本地计算机上克隆相应的GitHub存储库。
-在本文档中，Edge Delivery Services(EDS)项目的本地文件夹称为 `[EDS Project repository]` .
-* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将 Microsoft SharePoint 设置为您的内容源，请参阅 [如何使用 Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint)
+在本文档中，Edge Delivery Services(EDS)项目的本地文件夹称为 `[EDS Project repository]`.
+* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将Microsoft SharePoint设置为您的内容源，请参阅 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -80,6 +80,8 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. 在 AEM Edge Delivery 项目目录中的任意位置创建一份 Microsoft Excel 工作簿或 Google 工作表。例如，在 Google Drive 上的 AEM Edge Delivery 项目目录中创建一个名为 `enquiry` 的电子表格。
 
+   ![Google Drive上的示例内容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+
 1. 确保根据为项目指定的配置，与适当的 AEM 用户（例如 `helix@adobe.com`）[共享表](https://www.aem.live/docs/setup-customer-sharepoint)。授予用户编辑表的权限。
 
 1. 打开创建的电子表格并将默认表重命名为“shared-default”。
@@ -87,6 +89,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
    ![将默认工作表重命名为“shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
 1. 要添加表单字段，请将行和列标题插入“shared-default”表中。每行应该代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的字段[属性](/help/edge/docs/forms/form-components.md#components-properties)。
+
 
    为了快速开始，请考虑复制[查询电子表格](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)中的内容到电子表格中。复制内容后，保存电子表格。
 
@@ -118,19 +121,24 @@ Ensure a smooth GitHub build process by addressing potential issues:
 +++ 第2步：使用“Edge Delivery Services(EDS)”页面预览表单。
 
 
-到目前为止，您已将自适应Forms块添加到EDS项目并准备了表单的结构。 现在，要预览表单，请执行以下操作：
+到目前为止，您已经准备了表单的结构。 现在，要预览表单，请执行以下操作：
 
-1. **访问您的项目目录：**&#x200B;打开您的 Microsoft SharePoint 或 Google Drive 帐户并导航到您的 AEM Edge Delivery 项目目录。
+1. 打开您的 Microsoft SharePoint 或 Google Drive 帐户，并导航至 AEM Edge Delivery 项目目录。
 
-1. **将表单嵌入到文档中：**&#x200B;打开文档文件（例如索引文件），嵌入表单。或者，您可以创建一个新文档。
 
-1. **导航至所需位置：**&#x200B;移动到文档中需要添加表格的位置。
 
-1. **添加自适应Forms块：** 创建表单块以呈现表单。 选择“插入”>“表”，然后创建一个一列、两行表。 将表命名为“Form”，并将预览URL粘贴到第二行。 确保URL的格式为超链接，而不是纯文本，如下图所示：
+1. 打开文档文件（例如，索引文件）以嵌入表单。 或者，您可以创建一个新文档。
+
+1. 在文档中移动到要添加表单的所需位置。
+
+1. 创建表单块以呈现表单。 选择“插入”>“表”，然后创建一个一列、两行表。 将表命名为“Form”，并将预览URL粘贴到第二行。 确保URL的格式为超链接，而不是纯文本，如下图所示：
 
    | 表单 |
    |---|
-   | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+
+   ![将自适应Forms块添加到您的网页](/help/edge/assets/add-adaptive-forms-block.png)
 
    该区块用作嵌入表单的占位符。在该区块的第二行中，添加 `<form>.json` 文件的预览 URL 作为超链接。
 

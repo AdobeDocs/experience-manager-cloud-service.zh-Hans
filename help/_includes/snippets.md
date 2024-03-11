@@ -1,8 +1,8 @@
 ---
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '367'
+ht-degree: 82%
 
 ---
 # 代码片段 {#snippets}
@@ -61,11 +61,13 @@ ht-degree: 100%
 
 [!BADGE 抢先体验技术 - 通过 Slack 频道上的 AEM Sites 实验室向我们询问此功能！]{type=Informative url="/help/edge/docs/slack.md" tooltip="使用 Edge Delivery Services 进行 AEM 创作是一项抢先体验技术。"}
 
-## 另请参阅 {#see-also-forms-eds}
+## 查看更多 {#see-more-forms-eds}
 
-* [表单组件](/help/edge/docs/forms/form-components.md)
-* [创建并预览表单](/help/edge/docs/forms/create-forms.md)
-* [启用表单，以发送数据](/help/edge/docs/forms/submit-forms.md)
-* [将表单发布到 Sites 页面](/help/edge/docs/forms/publish-forms.md)
-* [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
-* [改变表单主题和样式](/help/edge/docs/forms/style-theme-forms.md)
+* [AEM FormsEdge Delivery Services入门](/help/edge/docs/forms/tutorial.md)
+* [使用Google Sheets或Microsoft Excel创建表单](/help/edge/docs/forms/create-forms.md)
+* [设置Google Sheets或Microsoft Excel文件以开始接受数据&#x200B;。](/help/edge/docs/forms/submit-forms.md)
+* [发布表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
+* [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [向表单添加可重复部分&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [在提交表单后显示自定义感谢消息&#x200B;。](/help/edge/docs/forms/thank-you-page-form.md)
+* [自适应表单块组件及其属性](/help/edge/docs/forms/form-components.md)
