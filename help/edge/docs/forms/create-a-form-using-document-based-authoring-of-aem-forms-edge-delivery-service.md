@@ -4,17 +4,17 @@ description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery + 基于�
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
-workflow-type: ht
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 
 # 使用基于文档的创作为 AEM Forms Edge Delivery Service 创建表单
 
-在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。AEM Forms Edge Delivery 的基于文档的创作功能让您能够使用 Word 或 Google Docs 等熟悉的工具创建表单。这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 充满活力的生态系统和强大的 API，轻松处理提交的数据，或启动现有的业务工作流程。
+在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。AEM Forms Edge Delivery的基于文档的创作允许您使用熟悉的工具(如Word或Google文档)创建表单。这些表单直接将数据提交到Microsoft Excel或Google Sheets文件，使您能够使用生动的生态系统和强大的API(包括Google Sheets、Microsoft Excel和Microsoft Sharepoint)，轻松处理提交的数据或启动现有的业务工作流。
 
 本指南将会引导您完成：
 

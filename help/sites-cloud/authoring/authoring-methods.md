@@ -2,13 +2,13 @@
 title: 在AEM中创作内容的方法
 description: 了解在AEM中创作内容的不同方式以及它们之间的差异。
 feature: Authoring
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # 在AEM中创作内容的方法 {#authoring-methods}
 
@@ -63,7 +63,7 @@ AEM内容片段编辑器提供了一个清晰的界面，用于创建和管理�
 
 要了解有关通用编辑器的更多信息，请参阅文档 [使用通用编辑器创作内容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-## 基于文档的创作 {#document-based}
+## 基于文档的创作  {#document-based}
 
 Microsoft Google如果您使用Edge Delivery服务，则可以选择在 [AEM **站点** 控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
 

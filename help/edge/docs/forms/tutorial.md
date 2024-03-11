@@ -4,7 +4,7 @@ description: 本教程可帮助您启动并运行新的Adobe Experience Manager 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 10%
@@ -18,11 +18,11 @@ ht-degree: 10%
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
 
-AEM Forms提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以创建一个预配了自适应Forms块的新AEM项目，或将该自适应Forms块添加到现有AEM项目中。
+AEM Forms提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以创建一个预配置了Adaptive Forms块的新AEM项目，或将Adaptive Forms块添加到现有AEM项目。
 
 此AEM Forms教程将指导您使用新的Adobe Experience Manager (AEM) Forms项目创建、预览和发布自己的自定义表单。 您还将学习将自适应Forms块添加到现有AEM项目。
 
-* **[创建预配了自适应Forms块的新AEM项目](#create-a-new-eds-project-pre-equipped-with-adaptive-forms-block)**
+* **[创建预配置了Adaptive Forms Block的新AEM项目](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
 * **[将自适应Forms块添加到现有AEM项目](#add-adaptive-forms-block-to-an-existing-eds-project)**
 
 
@@ -37,7 +37,7 @@ AEM Forms提供了一个称为自适应Forms块的块，以帮助您轻松创建
 **抬头！** 本教程使用macOS、Chrome和Visual Studio Code。 虽然这些步骤可以适应其他设置，但屏幕截图和特定UI元素可能会因您选择的操作系统、浏览器和代码编辑器而异。
 
 
-## 创建预配了自适应Forms块的新AEM项目
+## 创建预配置了Adaptive Forms Block的新AEM项目
 
 AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Block的AEM项目。 这是遵循AEM最佳实践并快速开始构建表单的最快速、最简单的方法。
 

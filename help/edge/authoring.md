@@ -3,10 +3,10 @@ title: 为 Edge Delivery Services 创作内容
 description: 了解内容创作如何与 Edge Delivery Services 配合使用，以及如何使用 Edge Delivery Services 创作 AEM 内容。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
-workflow-type: ht
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -14,14 +14,14 @@ ht-degree: 100%
 
 Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选择来为 Edge Delivery Services 创作内容：
 
-* [基于文档的创作](#document-based) - 例如 Microsoft Word 或 Google 文档
+* [基于文档的创作](#document-based)  — 如Microsoft Word或Google文档
 * [通用编辑器](#universal-editor) - 用于在 AEM 中创作内容的现代 UI
 
-## 基于文档的创作 {#document-based}
+## 基于文档的创作  {#document-based}
 
-对于基于文档的创作，您可以使用各种源，例如 Microsoft Word 和 Google Docs。来自这些源的文档将成为您网站上的页面。标题、列表、图像、字体元素、视频都可以从初始源转移到网站中。您可以出于 SEO 目的添加元数据，也可以使用块来处理结构化内容并添加功能。
+在基于文档的创作中，您可以使用各种源，如Microsoft Word和Google文档。 来自这些源的文档将成为您网站上的页面。标题、列表、图像、字体元素、视频都可以从初始源转移到网站中。您可以出于 SEO 目的添加元数据，也可以使用块来处理结构化内容并添加功能。
 
-有关基于文档的创作的更多详细信息，请参阅 [Edge Delivery Services 文档中的该文档。](/help/edge/docs/authoring.md)
+有关基于文档的创作的更多详细信息，请参阅 [本文档位于Edge Delivery Services文档中。](/help/edge/docs/authoring.md)
 
 ## 通用编辑器创作 {#universal-editor}
 

@@ -5,22 +5,21 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 67d9eaaf18725403f6a152b04e022cdca6902de0
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 0%
 
 ---
 
 # AEM FormsEdge Delivery Services
 
-AEM FormsEdge Delivery Services是一组可组合的服务，能够启用快速开发环境，让作者能够快速更新和发布，并快速启动新表单。
+AEM FormsEdge Delivery Services是一组可组合的服务，能够实现快速开发环境，以供作者快速更新、发布和启动新表单。 这些服务提供卓越且影响力高的表单体验，可促进参与和转化。 这些表单体验易于创作和开发。
 
-AEM FormsEdge Delivery Services提供卓越的表单体验，这些体验可促进参与和转化，从而实现易于创作和开发的高影响力体验。
 
 这些服务使您能够：
 
-* **使用您选择的工具创建注册体验：** 通过分离内容源提高创作效率。 开箱即用地您可以使用基于文档的创作(Microsoft SharePoint或Google Drive)和AEM创作(自适应Forms编辑器)。 因此，您可以在同一表单上使用多个内容源并使用首选创作工具，例如Microsoft Excel、Google Sheets或自适应Forms编辑器。
+* **使用您选择的工具创建注册体验：** 通过分离内容源提高创作效率。 开箱即用地您可以使用基于文档的创作(Microsoft SharePoint或Google Drive)和AEM创作(自适应Forms编辑器)。 您可以在同一个表单网站上使用多个内容源并使用首选创作工具，如Microsoft Excel、Google Sheets或自适应Forms编辑器。
 
 * **提供卓越的数字注册体验：** 提供可快速加载和渲染的数字注册体验。 更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
 
@@ -28,15 +27,17 @@ AEM FormsEdge Delivery Services提供卓越的表单体验，这些体验可促�
 
 ## AEM FormsEdge Delivery Services概述 {#edge-overview}
 
-下图说明了如何在Microsoft Excel或Google Sheets中编辑表单（基于文档的编辑）并发布到Edge Delivery Services。 它还显示了使用自适应Forms编辑器的AEM发布方法。
+下图说明了如何在Microsoft Excel或Google Sheets（基于文档的创作）中编辑表单并发布到Edge Delivery Services。 它还显示了使用自适应Forms编辑器(AEM创作)的AEM发布方法。
 
 ![Edge Delivery 架构](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 AEM Forms Edge Delivery Services是一组可组合的服务，允许您高度灵活地在网站上创作表单。 您可以将AEM内容管理与 [AEM创作](/help/forms/creating-adaptive-form-core-components.md) 以及 [基于文档的创作](/help/edge/docs/forms/create-forms.md).
 
-例如，您直接在Microsoft Excel或Google工作表中创作表单，这些电子表格将转换为您网站的表单。 任何新表单内容（如新表单字段）均可在您的网站上立即使用，而无需重新构建过程。
+例如，您直接在Microsoft Excel或Google工作表中创作表单，这些电子表格将转换为您网站的表单。 任何新表单或表单内容（如新表单字段）均可在您的网站上立即使用，而无需重新构建过程。
 
-Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，您可以用以下方式编写表单 [Google Sheets或Microsoft Excel](/help/edge/docs/forms/create-forms.md) 并且可以在GitHub中使用CSS和JavaScript来开发表单的组件。 准备就绪后，您可以使用 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content) 用于预览和发布内容更新的浏览器扩展。
+AEM FormsEdge Delivery Services使用GitHub，因此客户可以直接从其GitHub存储库管理和部署代码。 例如，您可以用以下方式编写表单 [Google Sheets或Microsoft Excel](/help/edge/docs/forms/create-forms.md) 并且可以在GitHub中使用CSS和JavaScript来开发表单的组件。
+
+准备就绪后，您可以使用 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content)，一种chrome浏览器扩展，用于预览和发布内容更新。
 
 ![安装AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
@@ -44,22 +45,22 @@ AEM FormsEdge Delivery Services提供了一个表单块，称为 [自适应Forms
 
 选择 [基于文档的创作](#document-based-authoring-features) 和 [AEM创作](#aem-authoring-features) 取决于您的特定要求。
 
-对于只收集姓名和电子邮件等基本信息的简单表单（考虑联系我们的表单、潜在客户生成表单或服务请求表单），以及只需要将数据发送到电子表格的表单， [基于文档的创作](/help/edge/docs/forms/create-forms.md) 非常合适。 您可以像在Google文档中构建文档一样构建这些表单。
+对于只收集姓名和电子邮件等基本信息的简单表单（考虑联系我们的表单、潜在客户生成表单或服务请求表单），以及只需要将数据发送到电子表格的表单， [基于文档的创作](/help/edge/docs/forms/create-forms.md) 非常合适。 您可以像在Google Sheets或Microsoft Excel中构建文档一样构建这些表单。
 
 如果您的表单变得更加复杂，例如需要多个面板、复杂的规则和业务逻辑、数据操作、与外部系统集成，或使用AEM功能简化工作流，则 [AEM创作](/help/forms/creating-adaptive-form-core-components.md) 是一个更好的选择。
 
 
 ### 基于文档的创作和AEM创作的主要功能
 
-基于文档的创作提供了一系列基本功能，AEM创作在基于文档的创作之外释放了其他功能，使您能够构建更复杂且交互式的表单。 基于文档的创作和AEM创作的主要功能包括：
+基于文档的创作提供了一系列基本功能，AEM创作解锁了基于文档的创作之外的其他功能，让您能够构建更复杂且交互式的表单。 基于文档的创作和AEM创作的主要功能包括：
 
 <!-- 
 
 >[!BEGINTABS]
 
->[!TAB Document-based authoring]
+>[!TAB Document-based Authoring ]
 
-Document-based authoring is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based authoring are: 
+Document-based Authoring  is a versatile option suitable for creating simple forms with essential functionalities. It allows you to integrate various input types like text fields, dropdown menus, and radio buttons, enabling you to collect user data effectively. It offers a basic version of rules to add dynamic behaviour to forms. Key features of Document-based Authoring  are: 
 
 * **[HTML5-based Form Field components](/help/edge/docs/forms/form-components.md)**: AEM Forms Edge Delivery Services allow you to create user-friendly and interactive forms using form components based on HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types), <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a>  elements. These components cater to different types of data collection and can be easily customized to fit your specific needs.  
 
@@ -79,7 +80,7 @@ Document-based authoring is a versatile option suitable for creating simple form
 
 >[!TAB AEM Authoring]
 
-AEM Authoring unlocks additional capabilities beyond the document-based authoring, empowering you to build more complex and interactive forms. In additon to the features of Document-based authoring, AEM authoring offers the following additional features:  
+AEM Authoring unlocks additional capabilities beyond the Document-based Authoring , empowering you to build more complex and interactive forms. In additon to the features of Document-based Authoring , AEM authoring offers the following additional features:  
 
 * Advanced Rules: Define logic-based actions within your forms. You can use rules to conditionally show or hide form sections, pre-populate fields based on user input, and perform various validations to ensure data integrity.
 
@@ -113,7 +114,7 @@ AEM Authoring unlocks additional capabilities beyond the document-based authorin
 
 #### AEM创作功能
 
-AEM创作(使用自适应Forms编辑器)提供了用于构建表单的WYSIWYG界面，并提供基于文档的创作的所有功能以及大量其他功能：
+AEM创作提供了用于构建表单的WYSIWYG界面(自适应Forms编辑器)，并提供了基于文档创作的所有功能以及大量其他功能：
 
 * 用于创建复杂逻辑的高级规则编辑器。
 * 自定义功能的服务器端可扩展性。
@@ -129,7 +130,7 @@ AEM创作(使用自适应Forms编辑器)提供了用于构建表单的WYSIWYG界
 
 ### 创作工作流
 
-![基于文档的创作](/help/edge/assets/document-based-authoring-workflow.png)
+![基于文档的创作 ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![AEM创作](/help/edge/assets/aem-authoring-workflow.png)
 

@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '803'
-ht-degree: 68%
+ht-degree: 67%
 
 ---
 
 # 使用自适应Forms块创建表单
 
-AEM Forms Edge Delivery提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以 [创建预配了自适应Forms块的新AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 或 [将自适应Forms块添加到现有AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
+AEM Forms Edge Delivery提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以 [创建预配置了Adaptive Forms Block的新AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [将自适应Forms块添加到现有AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft Sharepoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
 
@@ -27,7 +27,7 @@ AEM Forms Edge Delivery提供了一个称为自适应Forms块的块，以帮助�
 
 在开始之前，请确保您已完成以下步骤：
 
-* 设置 [使用AEM Forms模板的AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-equipped-with-adaptive-forms-block) 或 [已将自适应Forms块添加到您现有的AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 并在本地计算机上克隆相应的GitHub存储库。
+* 设置 [使用AEM Forms模板的AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [已将自适应Forms块添加到您现有的AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 并在本地计算机上克隆相应的GitHub存储库。
 在本文档中，Edge Delivery Services(EDS)项目的本地文件夹称为 `[EDS Project repository]`.
 * 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将Microsoft SharePoint设置为您的内容源，请参阅 [如何使用Sharepoint](https://www.aem.live/docs/setup-customer-sharepoint).
 

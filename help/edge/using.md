@@ -3,10 +3,10 @@ title: 使用 Edge Delivery Services
 description: 了解如何将 AEM as a Cloud Service 与 Edge Delivery Services 结合使用。
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
-source-git-commit: 5b24b984ea738096ef67b72a3d96e9b5931d2200
-workflow-type: ht
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -23,13 +23,13 @@ Edge Delivery Services 与内容源分离，并可从不同的内容源摄取内
 
 某些情况下预定义了内容源或其存在其他方式的不灵活（例如，项目无法使用 Sharepoint 或 Google Drive）。但在很多情况下并不预定义工具，并且工具的选择也不是非黑即白。
 
-Adobe 的指导原则是简洁。首先基于文档进行创作，当需要时再增加复杂性。如果需要更改工具，AEM 的 Edge Delivery Services 集成涵盖内容迁移。
+Adobe 的指导原则是简洁。从基于文档的创作开始，根据需要增加复杂性。 如果需要更改工具，AEM 的 Edge Delivery Services 集成涵盖内容迁移。
 
 ![内容源灵活性](assets/content-source-flexiblity.png)
 
 ## 创作 {#authoring-edge}
 
-Edge Delivery Services 让创作变得简单、快速且灵活。您可以选择使用基于文档的创作进行创作，或在 AEM 中用 Universal Editor 进行创作。
+Edge Delivery Services 让创作变得简单、快速且灵活。您可以选择使用基于文档的创作或在AEM中通过通用编辑器进行创作。
 
 有关更多信息，请参阅文档[为 Edge Delivery Services 创作内容](authoring.md)。
 
