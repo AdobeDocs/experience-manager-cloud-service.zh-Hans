@@ -4,9 +4,9 @@ description: 本教程可帮助您启动并运行新的Adobe Experience Manager 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1878'
 ht-degree: 10%
 
 ---
@@ -106,7 +106,7 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
       ![下载示例内容](/help/edge/assets/download-sample-content.png)
 
-      此 `index`， `nav`、和 `footer` 文件定义了页面的基本布局，并且在整个项目中很少会发生更改。 它们还具有与大多数其他内容文件不同的特定结构。 通过检查这些文件，您可以了解如何在AEM项目中组织内容。
+      此 `nav` 和 `footer` 文件定义了页面的基本布局，并且在整个项目中很少会发生更改。 它们还具有与大多数其他内容文件不同的特定结构。 通过检查这些文件，您可以了解如何在AEM项目中组织内容。
 
 
    1. 将这些文件上传到Microsoft SharePoint或Google Drive文件夹。
@@ -148,7 +148,7 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
       这会将您的内容文件夹连接到您的网站。 更新引用后，您最初可能会遇到“404 Not Found”错误。 这是因为您的内容尚未预览。 下一节将介绍如何开始创作和预览内容。
 
-      ![提交更新的fsatab.yaml文件](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### 预览和发布您的内容
 
@@ -204,9 +204,22 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
 ![查询表](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-让我们从更新字段标签开始。 打开“查询”工作表进行编辑，将提交按钮的标签更改为 `Let's Chat`，并使用sidekick发布它。
+让我们从更新字段标签开始。 打开“查询”工作表进行编辑，将提交按钮的标签更改为 `Let's Chat` 并使用AEM Sidekick预览和发布文件。
 
 ![查询表](/help/edge/assets/enquiry-form-preview-publish.png)
+
+预览或发布文件时，会在新选项卡中显示文件的JSON版本。 复制文件的预览(.hlx.page)或发布(.hlx.live) URL。
+
+![表单电子表格的JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+打开 `enquiry` ，并将表单块中的URL替换为上一步中复制的文件的URL。 确保URL为超链接。
+
+![具有电子表格URL的.json URL的查询文件](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+使用AEM Sidekick预览和发布查询文档。
+
+![具有电子表格URL的.json URL的查询文件](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 要预览更新的查询表单，请转到以下URL：
 
