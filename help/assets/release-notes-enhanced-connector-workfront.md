@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 439ae08bb606d6d335fa189e99c1b483f636683e
-workflow-type: ht
-source-wordcount: '1624'
-ht-degree: 100%
+source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 97%
 
 ---
 
@@ -13,17 +13,14 @@ ht-degree: 100%
 
 以下部分概述了 [!DNL Workfront for Experience Manager enhanced connector] 的常规发行说明。
 
-## 发布日期 {#release-date}
-
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.17 版的发布日期是 2024 年 2 月 7 日。
+最新版本1.9.18的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年3月8日。
 
 ## 版本亮点 {#release-highlights}
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
+最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含以下错误修复：
 
-* 启用切换功能以使 AEM Cloud 客户可配置和设置连接器。
-
-* 关闭 `resourceResolver` 但不显式关闭基础会话将导致在 AEM 实例中产生会话泄漏。显式关闭会话至关重要，因为自动关闭资源解析器并不隐式关闭会话。
+* 处理从Workfront上传的多资源时遇到问题。
+* 使用Workfront在Experience Manager中搜索文件夹时未添加右引号在以下位置产生： `SERVER_ERROR`.
 
 >[!NOTE]
 >
@@ -32,7 +29,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.17 版](/help/assets/workfront-connector-install.md)。
+>Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.18 版](/help/assets/workfront-connector-install.md)。
 
 ## 已知问题 {#known-issues}
 
@@ -41,6 +38,12 @@ ht-degree: 100%
 * 在使用经典 Workfront 体验时，**[!UICONTROL 更多]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项不允许您在 Experience Manager 中选择目标目的地。当使用&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表时，**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。**[!UICONTROL 更多]**&#x200B;下拉列表和可在新 Workfront 体验中找到的&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。
 
 ## 以前的版本 {#previous-releases}
+
+### 2024年2月版 {#february-2023-release}
+
+* 启用切换功能以使 AEM Cloud 客户可配置和设置连接器。
+
+* 关闭 `resourceResolver` 但不显式关闭基础会话将导致在 AEM 实例中产生会话泄漏。显式关闭会话至关重要，因为自动关闭资源解析器并不隐式关闭会话。
 
 ### 2024 年 1 月版本 {#january-2023-release}
 
