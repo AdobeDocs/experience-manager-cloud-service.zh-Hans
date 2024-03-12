@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 97%
+source-wordcount: '545'
+ht-degree: 92%
 
 ---
 
@@ -20,9 +20,10 @@ ht-degree: 97%
 
 ## 先决条件
 
-* 此 [已在GitHub上为您的EDS项目启用自适应Forms块](/help/edge/docs/forms/create-forms.md).
+* 您的AEM项目基于 [AEM Forms样板](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [已将自适应Forms块添加到您现有的AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
 * 您的表单已经过全面测试，随时可以使用。
 * 您的[电子表格已配置](/help/edge/docs/forms/submit-forms.md)，可接受数据。
+
 
 ## 发布表单
 
@@ -74,7 +75,9 @@ ht-degree: 97%
 
    | 表单 |
    |---|
-   | [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json) |
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
+
+   ![将名为“Form”的块添加到文件](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
    该区块用作嵌入表单的占位符。在该区块的第二行中，添加 `<form>.json` 文件的 URL 作为超链接。
 
@@ -85,21 +88,17 @@ ht-degree: 97%
 
    使用预览 URL (.page URL) 进行开发或测试，或使用发布 URL (.live) 进行生产。以下是带有预览和发布 URL 的示例：
 
-   **预览 URL**
-| 表单  |
-|---|
-| [https://main--portal--wkndforms.hlx.page/enquiry.json](https://main--portal--wkndforms.hlx.page/enquiry.json)  |
+   **预览URL**
+| 表单 | |—| | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
 
 
-   **发布 URL**
-| 表单  |
-|---|
-| [https://main--portal--wkndforms.hlx.live/enquiry.json](https://main--portal--wkndforms.hlx.live/enquiry.json)  |
+   **发布URL**
+| 表单 | |—| | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
 
 1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 预览网页。页面现在显示表单。例如，以下是基于[查询电子表格](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)的表单：
 
 
-   [![EDS 表单样本](/help/edge/assets/eds-form.png)](https://main--portal--wkndforms.hlx.live/)
+   ![EDS Form 样本](/help/edge/assets/eds-form.png)
 
 1. 使用 AEM Sidekick 发布表单。现在，您的客户可以填写表格并提交。
 

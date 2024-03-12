@@ -5,17 +5,17 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 71%
+source-wordcount: '994'
+ht-degree: 65%
 
 ---
 
 # 准备电子表格以接受数据
 
 
-在[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，可以启用相应的电子表格以开始接收数据。
+一旦 [已创建和预览表单](/help/edge/docs/forms/create-forms.md)，现在应该启用相应的电子表格以开始接收数据。 您可以手动启用电子表格以接受数据，或使用管理员API启用电子表格以接受数据。
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ ht-degree: 71%
 
 -->
 
-要启用电子表格，请执行以下操作：
+
+## 手动启用电子表格以接受数据
+
+启用电子表格以接受数据
 
 1. 打开包含您的表单的电子表格并附加一个新工作表，并将其重命名为 `incoming`。
 
@@ -61,8 +64,7 @@ ht-degree: 71%
 >
 >  在任何情况下，“shared-default”工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
 
-
-## （可选）使用管理员 API 以使电子表格能够接受数据
+### 使用管理 API 使电子表格能够接受数据
 
 您还可以向表单发送 POST 请求，使其能够接受数据并配置 `incoming` 工作表的标头。收到 POST 请求后，该服务会分析请求正文并自动生成数据摄取所需的基本标头和工作表。
 
@@ -151,7 +153,6 @@ ht-degree: 71%
    您的表单现已能够接受数据。您还可以在电子表格中观察到以下变化：
 
 ## 自动更改工作表在启用它接受数据之后。
-
 
 将工作表设置为接收数据后，您将看到电子表格中的以下更改：
 
@@ -284,7 +285,7 @@ POST https://my-domain.com/email-form
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-接下来，您可以自定义感谢消息、[配置感谢页面](/help/edge/docs/forms/thank-you-page-form.md)或[设置重定向](/help/edge/docs/forms/thank-you-page-form.md)。
+接下来，您可以 [自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## 另请参阅
 

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '937'
 ht-degree: 92%
 
 ---
@@ -64,3 +64,6 @@ AEM Forms Edge交付服务允许您使用各种组件创建用户友好的交互
 | 已选中 | 复选框、单选按钮 | 确定默认情况下是否选择该字段。“已选中”属性是与复选框和单选输入一起使用的布尔属性。当设置为 true 时，表示加载表单时默认选择该字段。 |
 | 字段集 | 所有 | 对字段进行分组以在表单中创建视觉上不同的部分。“字段集”元素将表单中的相关字段分组，在视觉上将字段分开以改善组织和用户体验。</br>要组织字段集中的一组字段，只需使用 `fieldset` 属性并指定其“名称”属性即可。在下面的示例中，我们演示了如何将单选按钮封装在单个字段集中，以便更好地组织。![字段集示例](/help/edge/assets/fieldset-example.png) |
 
+## 另请参阅
+
+{{see-more-forms-eds}}

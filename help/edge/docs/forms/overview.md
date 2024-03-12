@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -79,16 +79,20 @@ AEM创作提供了用于构建表单的WYSIWYG界面(自适应Forms编辑器)，
 
 本质上， [AEM创作](/help/forms/creating-adaptive-form-core-components.md) 构建在 [基于文档的创作](/help/edge/docs/forms/create-forms.md)，提供了更高级的工具包来创建和管理复杂的表单。
 
-### AEM FormsEdge Delivery Services：创作。 Forms的发布和提交
+>[!NOTE]
+>
+>
+> AEM创作功能通过率先采用者计划提供。 如果您有兴趣，请通过您的工作地址向aem-forms-ea@adobe.com发送一封快速电子邮件，请求访问功能。
+
+### AEM FormsEdge Delivery Services：Forms的创作、发布和提交
 
 下图说明了使用基于文档的创作和AEM创作来创建、发布和提交表单的过程。
-
-
-
 
 ![基于文档的创作 ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![AEM创作](/help/edge/assets/aem-authoring-workflow.png)
+
+
 
 
 ## 开始创建表单
@@ -101,6 +105,17 @@ AEM创作提供了用于构建表单的WYSIWYG界面(自适应Forms编辑器)，
 * [向表单添加可重复部分&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [在提交表单后显示自定义感谢消息&#x200B;。](/help/edge/docs/forms/thank-you-page-form.md)
 * [自适应表单块组件及其属性](/help/edge/docs/forms/form-components.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
