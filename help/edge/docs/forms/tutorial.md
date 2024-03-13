@@ -4,9 +4,9 @@ description: 本教程可帮助您启动并运行新的Adobe Experience Manager 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1850'
 ht-degree: 8%
 
 ---
@@ -18,12 +18,9 @@ ht-degree: 8%
 
 这些表单将数据直接提交到Microsoft Excel或Google Sheets文件，使您能够使用动态的生态系统以及Google Sheets、Microsoft Excel和Microsoft SharePoint的强大API，轻松处理提交的数据或启动现有的业务工作流。
 
-AEM Forms提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以创建一个预配置了Adaptive Forms块的新AEM项目，或将Adaptive Forms块添加到现有AEM项目。
+AEM Forms提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以 [创建预配置了Adaptive Forms Block的新AEM项目](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [将自适应Forms块添加到现有AEM项目](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-此AEM Forms教程将指导您使用新的Adobe Experience Manager (AEM) Forms项目创建、预览和发布自己的自定义表单。 您还将学习将自适应Forms块添加到现有AEM项目。
-
-* **[创建预配置了Adaptive Forms Block的新AEM项目](#create-a-new-eds-project-pre-configured-with-adaptive-forms-block)**
-* **[将自适应Forms块添加到现有AEM项目](#add-adaptive-forms-block-to-an-existing-eds-project)**
+此AEM Forms教程将指导您使用新的Adobe Experience Manager (AEM) Forms项目创建、预览和发布自己的自定义表单。
 
 
 
@@ -79,11 +76,11 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
 ### 链接您自己的内容源
 
-您新创建的GitHub存储库指向 [存储在Google Drive文件夹中的示例内容](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_). 此只读内容为您的表单提供了一个良好的起点。 您可以随意将其复制到自己的Google驱动器中，并根据自己的需要进行自定义。
+您新创建的GitHub存储库指向 [存储在Google Drive文件夹中的示例内容](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). 此只读内容为您的表单提供了一个良好的起点。 您可以随意将其复制到自己的Google驱动器中，并根据自己的需要进行自定义。
 
 ![Google Drive上的示例内容](/help/edge/assets/folder-with-sample-content.png)
 
-要将示例内容复制到您自己的内容文件夹，请将GitHub存储库指向您自己的内容文件夹：
+要将示例内容复制到您自己的内容文件夹，并将GitHub存储库指向您自己的内容文件夹，请执行以下操作：
 
 1. 在Google Drive或Microsoft SharePoint中专门为您的AEM内容创建新文件夹。 本文档使用在Microsoft SharePoint上创建的文件夹。
 
@@ -127,7 +124,7 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
       如果您使用Microsoft SharePoint，则文件夹路径会使用以下格式：
 
       ```HTML
-      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
       例如，
@@ -193,8 +190,6 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
    `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL。
 
    例如，如果项目的存储库名为“wefinance”，它位于帐户所有者“wkndforms”下，而您使用的是“main”分支，则URL为：
-
-
 
    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
@@ -274,9 +269,16 @@ AEM Forms样板模板可帮助您快速开始使用预配置了Adaptive Forms Bl
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-如果您现有AEM项目，则可以将Adaptive Forms块集成到当前项目中以开始创建表单。 要集成，请执行以下操作：
+如果您现有AEM项目，则可以将Adaptive Forms块集成到当前项目中以开始创建表单。
 
-1. 将自适应Forms块存储库https://github.com/adobe-rnd/aem-boilerplate-forms克隆到您的计算机。
+>[!NOTE]
+>
+>
+> 此步骤适用于使用构建的项目 [AEM样板](https://github.com/adobe/aem-boilerplate). 如果您使用创建AEM项目 [AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms)，您可以跳过此步骤。
+
+要集成，请执行以下操作：
+
+1. 克隆自适应Forms块存储库： [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) 到你的电脑。
 
 1. 在下载的文件夹内，找到 `blocks/form` 文件夹。 复制此文件夹。 现在，导航到您的AEM项目的本地 `blocks` 文件夹并将复制的表单文件夹粘贴到此处。
 
