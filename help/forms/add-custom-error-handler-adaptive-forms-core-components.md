@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: e0607ff37572a586f5a83f2974054ebfb4b7d98f
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 96%
@@ -246,14 +246,14 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
        * @errorHandler
        */
        function customErrorHandler(response, headers, globals)
-       {
-           console.log("Custom Error Handler processing start...");
-           console.log("response:"+JSON.stringify(response));
-           console.log("headers:"+JSON.stringify(headers));
-           alert("CustomErrorHandler - Enter valid PetId.")
-           globals.invoke('defaultErrorHandler',response, headers) 
-           console.log("Custom Error Handler processing end...");
-       }
+   {
+       console.log("Custom Error Handler processing start...");
+       console.log("response:"+JSON.stringify(response));
+       console.log("headers:"+JSON.stringify(headers));
+       alert("CustomErrorHandler - Enter valid PetId.")
+       console.log("Custom Error Handler processing end...");
+       return true; // true - call default error handler, false - don't call default error handler.
+   }
    ```
 
    >[!NOTE]
@@ -377,7 +377,7 @@ if (data) {
         }
 
         if (errorData) {
-            Object.keys (errorData).forEach(function(key) {
+            Object.keys(errorData).forEach(function(key) {
                 var som_key = som_map[key];
                 if (som_key) {
                     var error = {};
