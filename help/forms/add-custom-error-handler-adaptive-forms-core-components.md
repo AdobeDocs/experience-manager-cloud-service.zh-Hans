@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: e0607ff37572a586f5a83f2974054ebfb4b7d98f
+source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2331'
 ht-degree: 96%
 
 ---
@@ -255,6 +255,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
+   在上面的代码中， `return true` 自动调用默认错误处理程序。 要防止默认调用错误处理程序，请包括 `return false`.
 
    >[!NOTE]
    >
