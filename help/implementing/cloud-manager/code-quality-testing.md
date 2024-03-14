@@ -2,7 +2,7 @@
 title: 代码质量测试
 description: 了解管道代码质量测试的工作方式以及其提高部署质量的方式。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 96%
@@ -87,7 +87,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 之后，SonarQube 将引发阻断漏洞。 不过，在查看代码后，您会发现这并不是漏洞，并且可以使用适当的规则 ID 注释代码。
 
 ```java
-@SuppressWarnings ("squid:S2068")
+@SuppressWarnings("squid:S2068")
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```

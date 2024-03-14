@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 1%
@@ -146,7 +146,7 @@ AEM中显示的产品和产品数据存储在Adobe Commerce中。 接下来，�
 
    ```json
      {
-       products (
+       products(
        filter: { sku: { eq: "YOUR_SKU" } }
        ) {
            items {
@@ -312,7 +312,7 @@ Sling模型是作为Java™实现的，并且可以在 **核心** 所生成项�
        Integer ecoFriendlyValue;
        try {
            ecoFriendlyValue = productRetriever.fetchProduct().getAsInteger(ECO_FRIENDLY_ATTRIBUTE);
-           if(ecoFriendlyValue != null && ecoFriendlyValue.equals (Integer.valueOf(1))) {
+           if(ecoFriendlyValue != null && ecoFriendlyValue.equals(Integer.valueOf(1))) {
                LOGGER.info("*** Product is Eco Friendly**");
                return true;
            }

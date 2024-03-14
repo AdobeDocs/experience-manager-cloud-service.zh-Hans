@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 7%
@@ -89,7 +89,7 @@ Forms包含某些字段和部分，不适用于所有用户且在所有条件下
 * 使用字段的全局可用属性，使延迟加载面板中的字段值可用于表单的所有其他面板。
 * 无论是否跨片段全局标记字段，都不要转发延迟面板中字段的引用值。
 * 使用面板重置功能，可通过以下单击表达式重置面板上可见的所有内容。\
-  guideBridge.resolveNode(guideBridge.getFocus ({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;： &quot;navigablePanel&quot;}))。resetData()
 
 
 ## 另请参阅 {#see-also}

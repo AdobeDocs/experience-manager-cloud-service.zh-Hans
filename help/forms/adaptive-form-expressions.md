@@ -1,9 +1,9 @@
 ---
 title: 什么是自适应表单表达式？
 description: 使用自适应Forms表达式可添加自动验证、计算以及打开或关闭部分的可见性。
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ GuideBridge是API的集合，可用于与浏览器内存模型中的自适应For
 
 * 要重置表单字段，您可以触发 `guideBridge.reset()` 按钮的点击表达式上的API。 同样，还有一个提交API，它可以用点击表达式来调用 `guideBridge.submit()`**.**
 
-* 您可以使用 `setFocus ()` 用于跨不同字段或面板设置焦点的API（对于面板焦点，自动设置为第一个字段）。 `setFocus ()`提供了一系列导航选项，例如跨面板导航、上一个/下一个遍历、将焦点设置为特定字段等等。 例如，要移到下一个面板，您可以使用： `guideBridge.setFocus (this.panel.somExpression, 'nextItem').`
+* 您可以使用 `setFocus()` 用于跨不同字段或面板设置焦点的API（对于面板焦点，自动设置为第一个字段）。 `setFocus()`提供了一系列导航选项，例如跨面板导航、上一个/下一个遍历、将焦点设置为特定字段等等。 例如，要移到下一个面板，您可以使用：`guideBridge.setFocus(this.panel.somExpression， &#39;nextItem&#39;)。
 
 * 要验证自适应表单或其特定面板，请使用 `guideBridge.validate(errorList, somExpression).`
 

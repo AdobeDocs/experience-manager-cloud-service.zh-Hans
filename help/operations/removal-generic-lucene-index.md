@@ -2,7 +2,7 @@
 title: 通用Lucene索引删除
 description: 了解计划删除的通用Lucene索引以及可能受到的影响。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Adobe打算删除“通用Lucene”索引(`/oak:index/lucene-*`)从Adobe Experie
 
 在AEM中，全文查询是指使用以下函数的查询：
 
-* `jcr:contains ()` 在JCR XPATH中
+* `jcr:contains()` 在JCR XPATH中
 * `CONTAINS` JCR-SQL2内容
 
 如果不使用索引，此类查询无法返回结果。 与仅包含路径或属性限制的查询不同，包含全文限制的查询将始终返回零结果，因为其中找不到索引（因此执行遍历）。
@@ -27,7 +27,7 @@ Adobe打算删除“通用Lucene”索引(`/oak:index/lucene-*`)从Adobe Experie
 在AEM 6.5中，通用Lucene索引被标记为已弃用，这表示它将在未来版本中删除。 从那时起，当使用索引时，会记录WARN，如以下日志片段所示：
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains (.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Change the query or the index definitions.
 ```
 
 在近期AEM版本中，通用Lucene索引已用于支持极少数功能。 正在对这些索引进行重新处理以使用其他索引，或者进行其他修改以移除对此索引的依赖关系。
@@ -35,7 +35,7 @@ org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is
 例如，引用查找查询（如以下示例中的）现在应使用位于的索引 `/oak:index/pathreference`，仅索引 `String` 与查找JCR路径的正则表达式匹配的属性值。
 
 ```text
-//*[jcr:contains (., '"/content/dam/mysite"')]
+//*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
 为了支持更大的客户数据卷，Adobe不再在新的AEMas a Cloud Service环境中创建通用Lucene索引。 此外，Adobe会从现有存储库中删除索引。 [查看时间线](#timeline) ，以了解更多详细信息。
@@ -49,7 +49,7 @@ Adobe已透过以下方式调整指数成本： `costPerEntry` 和 `costPerExecu
 如果没有其他全文索引可以为查询提供服务，则通用Lucene索引当前用作回退。 使用此已弃用的索引时，会在WARN级别记录一条类似于以下内容的消息：
 
 ```text
-org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') /* xpath: //*[jcr:contains (.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
+org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Change the query or the index definitions.
 ```
 
 在某些情况下，Oak可能会尝试使用其他全文索引(例如 `/oak:index/pathreference`)以支持全文查询，但如果查询字符串与索引定义上的正则表达式不匹配，则会在WARN级别记录消息，并且查询可能不会返回结果。
@@ -61,7 +61,7 @@ org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak
 删除通用Lucene索引后，如果全文查询无法找到任何合适的索引定义，则会在WARN级别记录如下所示的消息：
 
 ```text
-org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') /* xpath: //*[jcr:contains (.,"test")] */ fullText="test", path=*); no results are returned
+org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results are returned
 ```
 
 >[!IMPORTANT]
@@ -85,8 +85,8 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 在最简单的情况下，这些查询可能未指定节点类型，这意味着 `nt:base` 或 `nt:base` 已显式指定，例如：
 
 ```text
-/jcr:root/content/mysite//*[jcr:contains (., 'search term')]
-/jcr:root/content/mysite//element(*, nt:base)[jcr:contains (., 'search term')]
+/jcr:root/content/mysite//*[jcr:contains(., 'search term')]
+/jcr:root/content/mysite//element(*, nt:base)[jcr:contains(., 'search term')]
 ```
 
 >[!IMPORTANT]
@@ -98,13 +98,13 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 例如，可以修改查询以返回与页面或下的任何聚合匹配的结果 `cq:Page node`. 因此，查询可以变为：
 
 ```text
-/jcr:root/content/mysite//element(*, cq:Page)[jcr:contains (., 'search term')]
+/jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
 ```
 
 在其他情况下，查询可能会指定节点类型，但包含其他全文索引无法处理的全文限制，例如：
 
 ```text
-/jcr:root/content/dam//element(*, dam:Asset)[jcr:contains (jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
+/jcr:root/content/dam//element(*, dam:Asset)[jcr:contains(jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
 ```
 
 在这种情况下，查询具有 `dam:Asset` 节点类型，但包含对相对节点的全文限制 `jcr:content/metadata/@cq:tags` 属性。
@@ -136,7 +136,7 @@ AEM包含一个具有Sling资源类型的自定义对话框组件 `granite/ui/co
 目前，如果没有 `nodeTypes` 属性存在，则基础搜索查询将使用 `nt:base` 节点类型，因此可能使用通用Lucene索引，通常记录类似于以下内容的WARN消息。
 
 ```text
-20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains (*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains (., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
+20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Change the query or the index definitions.
 ```
 
 在删除通用Lucene索引之前， `pathfield` 将更新组件，以便使用默认选取器的组件隐藏搜索框，默认选取器不提供 `nodeTypes` 属性。

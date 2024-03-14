@@ -2,7 +2,7 @@
 title: 自定义代码质量规则
 description: 此页面描述了作为代码质量测试的一部分，Cloud Manager 执行的自定义代码质量规则。 这些规则基于 Adobe Experience Manager Engineering 的最佳实践。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4167'
 ht-degree: 87%
@@ -101,7 +101,7 @@ public class DoThis implements Runnable {
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
   request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
-  response.sendStatus (HttpServletResponse.SC_OK);
+  response.sendStatus(HttpServletResponse.SC_OK);
 }
 ```
 
@@ -120,7 +120,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void dontDoThis () {
+public void dontDoThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
 
@@ -149,7 +149,7 @@ public void dontDoThisEither() {
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
  
-public void doThis () {
+public void doThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
     .setConnectTimeout(5000)
@@ -194,7 +194,7 @@ public void orDoThis () {
 #### 不合规的代码 {#non-compliant-code-4}
 
 ```java
-public void dontDoThis (Session session) throws Exception {
+public void dontDoThis(Session session) throws Exception {
   ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
   // do some stuff with the resolver
 }
@@ -203,7 +203,7 @@ public void dontDoThis (Session session) throws Exception {
 #### 合规的代码 {#compliant-code-2}
 
 ```java
-public void doThis (Session session) throws Exception {
+public void doThis(Session session) throws Exception {
   ResourceResolver resolver = null;
   try {
     resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object)session));
@@ -215,7 +215,7 @@ public void doThis (Session session) throws Exception {
   }
 }
 
-public void orDoThis (Session session) throws Exception {
+public void orDoThis(Session session) throws Exception {
   try (ResourceResolver resolver = factory.getResourceResolver(Collections.singletonMap("user.jcr.session", (Object) session))){
     // do something with the resolver
   }
@@ -254,7 +254,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 #### 不合规的代码 {#non-compliant-code-6}
 
 ```java
-public void dontDoThis () throws Exception {
+public void dontDoThis() throws Exception {
   try {
     someOperation();
   } catch (Exception e) {
@@ -267,7 +267,7 @@ public void dontDoThis () throws Exception {
 #### 合规的代码 {#compliant-code-3}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someOperation();
   } catch (Exception e) {
@@ -275,7 +275,7 @@ public void doThis () {
   }
 }
 
-public void orDoThis () throws MyCustomException {
+public void orDoThis() throws MyCustomException {
   try {
     someOperation();
   } catch (Exception e) {
@@ -296,7 +296,7 @@ public void orDoThis () throws MyCustomException {
 #### 不合规的代码 {#non-compliant-code-7}
 
 ```java
-public void dontDoThis () throws Exception {
+public void dontDoThis() throws Exception {
   logger.error("something went wrong");
   throw new RuntimeException("something went wrong");
 }
@@ -305,7 +305,7 @@ public void dontDoThis () throws Exception {
 #### 合规的代码 {#compliant-code-4}
 
 ```java
-public void doThis () throws Exception {
+public void doThis() throws Exception {
   throw new RuntimeException("something went wrong");
 }
 ```
@@ -350,7 +350,7 @@ public void doGet() throws Exception {
 #### 不合规的代码 {#non-compliant-code-9}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -362,7 +362,7 @@ public void dontDoThis () {
 #### 合规的代码 {#compliant-code-6}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -383,7 +383,7 @@ public void doThis () {
 #### 不合规的代码 {#non-compliant-code-10}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -395,7 +395,7 @@ public void dontDoThis () {
 #### 合规的代码 {#compliant-code-7}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -416,7 +416,7 @@ public void doThis () {
 #### 不合规的代码 {#non-compliant-code-11}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -428,7 +428,7 @@ public void dontDoThis () {
 #### 合规的代码 {#compliant-code-8}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -449,7 +449,7 @@ Experience Manager 中的记录应始终通过记录框架 (SLF4J) 完成。 直
 #### 不合规的代码 {#non-compliant-code-12}
 
 ```java
-public void dontDoThis () {
+public void dontDoThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -461,7 +461,7 @@ public void dontDoThis () {
 #### 合规的代码 {#compliant-code-9}
 
 ```java
-public void doThis () {
+public void doThis() {
   try {
     someMethodThrowingAnException();
   } catch (Exception e) {
@@ -482,7 +482,7 @@ public void doThis () {
 #### 不合规的代码 {#non-compliant-code-13}
 
 ```java
-public boolean dontDoThis (Resource resource) {
+public boolean dontDoThis(Resource resource) {
   return resource.isResourceType("/libs/foundation/components/text");
 }
 ```
@@ -490,7 +490,7 @@ public boolean dontDoThis (Resource resource) {
 #### 合规的代码 {#compliant-code-10}
 
 ```java
-public void doThis (Resource resource) {
+public void doThis(Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```

@@ -2,10 +2,10 @@
 title: 更新内容片段以进行优化的 GraphQL 筛选
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中更新内容片段以进行优化的 GraphQL 筛选，从而进行 Headless 内容投放。
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 98%
       <td>所有 </td>
       <td> </td>
       <td>变量 </td>
-      <td>启用(！=0)或禁用(0)触发内容片段迁移作业。 </td>
+      <td>Enables(!=0) 或 disables(0) 触发内容片段迁移作业。 </td>
      </tr>
      <tr>
       <td>2</td>
@@ -211,7 +211,7 @@ ht-degree: 98%
       <td>所有 </td>
       <td> </td>
       <td>变量 </td>
-      <td>禁用(0) (或启用(！=0)）触发内容片段迁移作业。 </td>
+      <td>Disables(0)（或 Enables(!=0)）触发内容片段迁移作业。 </td>
      </tr>
     </tbody>
    </table>

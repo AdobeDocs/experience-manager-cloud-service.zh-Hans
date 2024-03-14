@@ -2,7 +2,7 @@
 title: 查询生成器 API
 description: 资产共享查询生成器的功能通过Java&trade； API和REST API公开。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 服务器端查询生成器([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html))接受查询说明，创建并运行XPath查询，可以选择筛选结果集，并根据需要提取方面。
 
-查询描述只是一组谓词([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html))。 示例包括一个全文谓词，该谓词对应于 `jcr:contains ()` 函数。
+查询描述只是一组谓词([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html))。 示例包括一个全文谓词，该谓词对应于 `jcr:contains()` 函数。
 
 对于每个谓词类型，都有一个计算器组件([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html))已知如何处理XPath、筛选和Facet提取的特定谓词。 可以轻松创建自定义评估器，这些评估器通过OSGi组件运行时插入。
 
@@ -125,7 +125,7 @@ orderby=path
 
 例如，UI可以调整以下方法：
 
-* 获取并显示总点击量的准确计数([SearchResult.getTotalMatches ()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) 或中的总计 `querybuilder.json` 响应)小于或等于100；
+* 获取并显示总点击量的准确计数([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) 或中的总计 `querybuilder.json` 响应)小于或等于100；
 * 设置 `guessTotal` 到100调用查询生成器。
 
 * 响应可能会产生以下结果：
@@ -381,8 +381,8 @@ p.nodedepth=5
     SearchResult result = query.getResult();
 
     // paging metadata
-    int hitsPerPage = result.getHits ().size(); // 20 (set above) or lower
-    long totalMatches = result.getTotalMatches ();
+    int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
+    long totalMatches = result.getTotalMatches();
     long offset = result.getStartIndex();
     long numberOfPages = totalMatches / 20;
 
@@ -396,7 +396,7 @@ p.nodedepth=5
     doc.appendChild( root );
 
     // iterating over the results
-    for (Hit hit : result.getHits ()) {
+for (Hit hit : result.getHits()) {
        String path = hit.getPath();
 
       //Create a result element
@@ -461,7 +461,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
    * 导航到 `https://<host>:<port>/system/console/slinglog`. 创建日志记录器 `com.day.cq.search.impl.builder.QueryImpl` 在 **调试**.
 1. 为上述类启用DEBUG后，日志会显示由Query Builder生成的XPath。
 1. 从关联的Query Builder查询的日志条目中复制XPath查询，例如：
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]`
+   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
 1. 将XPath查询作为XPath粘贴到Explain查询中，以便获取查询计划。
 
 ### 通过Query Builder Debugger获取可解释的XPath {#obtain-explain-able-xpath-via-the-query-builder-debugger}
@@ -497,7 +497,7 @@ null=group: limit=20, offset=0[
     {path=path: path=/content}
     {type=type: type=cq:Page}
 ]
-com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]
+com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]
 com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```
