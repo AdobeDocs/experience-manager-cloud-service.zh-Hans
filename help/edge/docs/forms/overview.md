@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM Forms Edge Delivery服务允许您在网站上创作表单的方式具有高
 
 下图说明了如何在Microsoft Excel或Google Sheets（基于文档的创作）中编辑表单并发布到Edge Delivery Services。 它还显示了使用自适应Forms编辑器(AEM创作)的AEM发布方法。
 
-![Edge Delivery 架构](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![发布到Edge Delivery Services和AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 AEM FormsEdge Delivery Services使用GitHub，因此客户可以直接从其GitHub存储库管理和部署代码。 例如，您可以用以下方式编写表单 [Google工作表](/help/edge/docs/forms/create-forms.md) 或 [Microsoft Excel](/help/edge/docs/forms/create-forms.md) 并且可以在GitHub存储库中使用CSS和JavaScript来开发表单的组件。
 

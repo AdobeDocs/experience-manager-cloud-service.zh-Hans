@@ -5,24 +5,22 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
+source-git-commit: f4cf79e2cd71a390741987cfcf034e6eed02432d
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '805'
 ht-degree: 62%
 
 ---
 
 # 使用自适应Forms块创建表单
 
+>[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
+
 AEM Forms Edge Delivery提供了一个称为自适应Forms块的块，以帮助您轻松创建表单以捕获和存储捕获的数据。 您可以 [创建预配置了Adaptive Forms Block的新AEM项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) 或 [将自适应Forms块添加到现有AEM项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 这些表单将数据直接提交到Microsoft Excel或Google Sheets文件，使您能够使用动态的生态系统以及Google Sheets、Microsoft Excel和Microsoft SharePoint的强大API，轻松处理提交的数据或启动现有的业务工作流。
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-create-form.png)
-
-
-![视频](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
-
 
 
 ## 先决条件
