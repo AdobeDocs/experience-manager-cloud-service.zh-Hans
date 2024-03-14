@@ -27,7 +27,7 @@ ht-degree: 88%
 * ASSETS-33246：发布索引定义 `damAssetLucene-10`。
 * ASSETS-33590：在处理配置文件中添加对视频的 webm 演绎版的支持。
 * GRANITE-36205：将 oak 版本更新到 1.60-T20240131102219-0cde853。
-* SITES-19326：更新 Assets UI 中的链接，以在新的 CF 编辑器中打开 CF。
+* SITES-19326：更新 Assets UI 中的链接，即可在新的 CF 编辑器中打开 CF。
 * GUIDES-12945：人工智能驱动的智能建议，可在创作内容时添加内容引用
 * GUIDES-12706：改进了 Web 编辑器中的版本历史记录功能
 * GUIDES-14948：改进了平移面板中的用户体验
@@ -90,7 +90,7 @@ ht-degree: 88%
 * SITES-16121：检索模型日期字段会引发异常。
 * SITES-16207：POST /adobe/sites/cf/models 操作返回两个不同的 OK 状态代码。
 * SITES-17361：将 Jsoup 重新嵌入 sites-headless 捆绑包中。
-* SITES-17768：GraphQL为内容片段中引用的资源输出动态媒体 URL。
+* SITES-17768：GraphQL 为内容片段中引用的资源输出动态媒体 URL。
 * SKYOPS-66622：运行启用 buildTransform 的管道后，作者部署崩溃循环。
 * SKYOPS-69977：自适应图像 Servlet 在最新更新后不会加载图像。
 * GUIDES-15045：编辑器中的拼写检查不允许选择建议。
