@@ -4,9 +4,9 @@ description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 1ec17aebe4eb003b24f5036288a8836aabddb77a
+source-git-commit: e84d3ad2d7b549092ab7c616bead2f14f59be8c9
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2723'
 ht-degree: 2%
 
 ---
@@ -222,8 +222,19 @@ AEM Forms as aCloud Service提供了基于Docker的SDK环境，可更轻松地�
 
 1. 确保您的本地AEM创作实例已启动并正在运行。 运行以下命令以启动SDK：
 
-   * (在Microsoft® Windows上) `sdk.bat start`
-   * (在Linux®或Apple macOS上) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * 在Microsoft® Windows上
+
+     ```shell
+     sdk.bat start
+     ```
+
+
+   * Linux®或Apple macOS
+
+   ```Shell
+       export AEM_HOME=[local AEM Author installation]
+       ./sdk.sh start
+   ```
 
    >[!NOTE]
    >
