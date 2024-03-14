@@ -2,10 +2,8 @@
 title: 将可重复部分添加到表单
 description: 在 EDS Form 中添加可重复部分
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 96%
@@ -17,8 +15,6 @@ ht-degree: 96%
 自适应Forms块提供添加表单或表单组件的功能，或者使表单的部分或组件可重复。 该功能允许用户针对同一类型的数据多次输入信息，从而更方便地收集工作经验或教育背景等信息。
 
 例如，请看一个用于收集个人工作经验信息的表单。您可以设置一个可重复的分区，用于记录以前每份工作的详细信息。可重复分区通常包含公司名称、职位、就业日期和工作职责等字段。用户可以在可重复分区中添加多个实例，以输入有关他们所做过的每项工作的信息。
-
-
 
 读完本文后，您将学会：
 

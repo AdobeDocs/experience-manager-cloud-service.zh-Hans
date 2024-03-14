@@ -2,10 +2,8 @@
 title: 表单组件和属性
 description: 本文档概述了 AEM Forms Edge Delivery Service 中可用的表单组件及其属性。
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
+source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 92%
