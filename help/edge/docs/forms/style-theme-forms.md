@@ -3,14 +3,15 @@ title: 自定义AEM Forms Edge Delivery Services表单的主题和样式
 description: 自定义AEM Forms Edge Delivery Services表单的主题和样式
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 44%
+source-wordcount: '2014'
+ht-degree: 41%
 
 ---
 
-# 设置表单字段的样式
+
+# 自定义表单的外观
 
 表单对于网站上的用户交互至关重要，允许他们输入数据。您可以使用层叠样式表(CSS)来设置表单字段的样式，增强表单的可视显示并改善用户体验。
 
@@ -87,7 +88,7 @@ ht-degree: 44%
 </div>
 ```
 
-* 类：div 元素包含几个用于定位特定元素和样式的类。您需要 `{Type}-wrapper` 或 `field-{Name}` 类来开发 CSS 选择器以设置表单字段的样式：
+* 类：div 元素包含几个用于定位特定元素和样式的类。您需要 `{Type}-wrapper` 或 `field-{Name}` 用于开发CSS选择器以设置表单字段样式的类：
    * {Type}：通过字段类型标识组件。例如，文本(text-wrapper)、数字(number-wrapper)、日期(date-wrapper)。
    * {Name}：通过名称标识组件。字段名称只能包含字母数字字符，名称中的多个连续破折号将替换为单个破折号 `(-)`，并且字段名称中的开头和结尾破折号将被删除。例如，名字(field-first-name field-wrapper)。
    * {FieldId}：它是自动生成的字段的唯一标识符。
@@ -144,7 +145,7 @@ ht-degree: 44%
 
 
 
-**常规组件的示例 CSS 选择器**
+**常规组件的CSS选择器示例**
 
 ```CSS
 /*Target all text input fields */
@@ -203,7 +204,7 @@ first-name input {
 
 +++ 下拉组件的CSS选择器
 
-以下CSS列出了一些用于下拉组件的CSS选择器示例。
+以下CSS列出了下拉组件的一些示例CSS选择器。
 
 ```CSS
 /* Target the outer wrapper */
@@ -262,7 +263,7 @@ first-name input {
 
 与下拉组件类似，单选按钮组具有自己的HTML结构和CSS结构：
 
-+++ 单选按钮组 HTML 结构
++++ 无线电组的HTML结构
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,7 +301,7 @@ first-name input {
 
 +++
 
-+++ 下拉组件的CSS选择器
++++ 单选按钮组的CSS选择器
 
 * 定位字段集
 
@@ -334,7 +335,7 @@ first-name input {
 
 ### 复选框组
 
-+++ 复选框组 HTML 结构
++++ 复选框组的HTML结构
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -370,7 +371,7 @@ first-name input {
 
 +++
 
-+++ 单选框和复选框组的CSS选择器示例**
++++ 复选框组的CSS选择器
 
 * 定位外部包装器：这些选择器定位单选按钮组和复选框组的最外层容器，允许您将常规样式应用于整个组结构。这对于设置间距、对齐方式或其他与布局相关的属性非常有用。
 
@@ -796,9 +797,9 @@ first-name input {
 
 ### 基于字段类型的样式设置
 
-您可以使用 CSS 选择器来定位特定字段类型并一致地应用样式。
+您可以使用CSS选择器来定位特定的字段类型，并以一致的方式应用样式。
 
-**HTML结构**
++++ HTML结构
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ first-name input {
 * 每个字段都有相应的标签、输入元素和潜在的附加元素（例如占位符和描述）。
 
 
++++
 
-**示例 CSS 选择器**
+
++++ 示例CSS选择器
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ first-name input {
 }
 ```
 
-
++++
 
 ### 基于字段名称的样式设置
 
 您还可以按名称定位各个字段以应用唯一样式。
 
-**HTML结构**
++++ HTML结构
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ first-name input {
 </div>
 ```
 
-**示例 CSS 选择器**
++++
+
++++ 示例CSS选择器
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ first-name input {
 }
 ```
 
+
+
 此 CSS 针对位于具有类 `field-otp` 的元素内的所有输入元素。表单的HTML结构遵循自适应Forms块的约定，这意味着有一个标有“field-otp”类的容器包含名为“otp”的字段。
+
++++
 
 ## 另请参阅
 

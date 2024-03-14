@@ -1,16 +1,16 @@
 ---
-title: 表单组件和属性
+title: 自适应表单块组件及其属性
 description: 本文档概述了 AEM Forms Edge Delivery Service 中可用的表单组件及其属性。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 92%
+source-wordcount: '938'
+ht-degree: 90%
 
 ---
 
-# 表单组件和属性：AEM Forms Edge Delivery Service
+# 自适应表单块组件及其属性
 
 AEM Forms Edge交付服务允许您使用各种组件创建用户友好的交互式表单。 这些组件可满足不同类型的数据收集需求，并且可以轻松定制以满足您的特定需求。
 

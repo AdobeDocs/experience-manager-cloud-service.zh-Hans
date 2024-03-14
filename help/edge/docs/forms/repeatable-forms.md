@@ -3,7 +3,7 @@ title: 将可重复部分添加到表单
 description: 在 EDS Form 中添加可重复部分
 feature: Edge Delivery Services
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 96%

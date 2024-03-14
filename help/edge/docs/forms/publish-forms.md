@@ -3,14 +3,14 @@ title: 发布 AEM Forms Edge Delivery Services 表单
 description: 发布 AEM Forms Edge Delivery Services 表单
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 92%
+source-wordcount: '549'
+ht-degree: 90%
 
 ---
 
-# 发布表单
+# 发布表单并开始收集数据
 
 您准备好与客户共享表单以进行数据收集或提交后，您只需将其发布，表单即可供客户随时使用。
 

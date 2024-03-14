@@ -3,14 +3,14 @@ title: 准备电子表格以接受数据
 description: 使用电子表格和自适应Forms块字段更快地制作功能强大的表单！
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 65%
+source-wordcount: '1001'
+ht-degree: 64%
 
 ---
 
-# 准备电子表格以接受数据
+# 设置Google Sheets或Microsoft Excel文件以开始接受数据
 
 
 一旦 [已创建和预览表单](/help/edge/docs/forms/create-forms.md)，现在应该启用相应的电子表格以开始接收数据。 您可以手动启用电子表格以接受数据，或使用管理员API启用电子表格以接受数据。
