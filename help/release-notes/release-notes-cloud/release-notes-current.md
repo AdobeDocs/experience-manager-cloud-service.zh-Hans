@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3a86639d9203fff3c72e63baa8d1499b18a4539f
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 4fdca70b3a711f747e44ac2a6c1d117ac990d49b
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 98%
 
 ---
 
@@ -108,6 +108,15 @@ Dynatrace 客户可监控其 AEM 使用情况。[了解如何](/help/implementin
 ### RDE 支持使用站点主题和站点模板的前端代码：早期采用者计划 {#rde-frontend-early-adopter}
 
 对于早期采用者，[快速开发环境 (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 现在支持基于[站点主题](/help/sites-cloud/administering/site-creation/site-themes.md)和[站点模板](/help/sites-cloud/administering/site-creation/site-templates.md)的前端代码。在 RDE 的情况下，使用命令行指令而非[前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)实现这一点。请联系 **aemcs-rde-support@adobe.com** 以试用并提供反馈。
+
+### CDN 配置早期采用者计划 {#cdn-config-early-adopter}
+
+除了最近发布的[流量过滤规则](/help/security/traffic-filter-rules-including-waf.md)（包括可许可的 Web 应用程序防火墙 (WAF) 规则），还有机会使用配置管道声明和部署其他类型的 CDN 配置。通过电子邮件加入率先采用者计划 **aemcs-cdn-config-adopter@adobe.com** 要获得对以下内容的访问权限：
+* 301/302 客户端重定向
+* 将边缘请求代理到任意来源
+* URL 转换
+* 设置或修改请求或响应标头
+* CDN 无法访问 AEM 时显示的自定义错误页面
 
 ## Cloud Manager {#cloud-manager}
 
