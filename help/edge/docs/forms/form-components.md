@@ -3,10 +3,10 @@ title: 自适应表单块组件及其属性
 description: 本文档概述了 AEM Forms Edge Delivery Service 中可用的表单组件及其属性。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 90%
+source-wordcount: '1006'
+ht-degree: 80%
 
 ---
 
@@ -46,7 +46,6 @@ AEM Forms Edge交付服务允许您使用各种组件创建用户友好的交互
 | 属性 | 适用组件 | 详细信息 |
 |--------------|------------------------------|----------------------------------------------------------------------|
 | 类型 | 所有 | 指定组件的类型。该属性决定输入字段的行为和外观。例如，对于文本输入，类型可以是“文本”、对于电子邮件输入来说是“电子邮件”、对于密码输入来说是“密码”。自适应Forms块支持  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5输入类型</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文本区域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">选择</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">字段集</a> 作为类型。 |
-| 类型 | 所有 | 指定组件的类型。该属性决定输入字段的行为和外观。例如，对于文本输入，类型可以是“文本”、对于电子邮件输入来说是“电子邮件”、对于密码输入来说是“密码”。自适应Forms块支持  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5输入类型</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文本区域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">选择</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">字段集</a> 作为类型。 |
 | 名称 | 所有 | 标识表单提交的组件。名称属性在将表单数据提交到服务器时使用，将用户输入与特定字段相关联。 |
 | 标签 | 所有 | 向用户提供上下文信息。标签是显示在组件旁边的文本，指导用户输入哪些信息。 |
 | 价值 | 文本、密码、电子邮件、数字、范围、日期及其变体（本地日期时间、月、周、时间）、复选框、单选、隐藏、提交、按钮 | 指定组件的初始值。对于文本输入、文本区域和选择元素，这是显示的默认文本或选项。对于单选和复选框组件，这是选择它们时提交的值/数据。值属性可选，但对于复选框和单选输入应视为必要属性。 |
@@ -61,6 +60,10 @@ AEM Forms Edge交付服务允许您使用各种组件创建用户友好的交互
 | 选项 | 下拉列表 | 指定下拉菜单的选项。“选项”属性是一个以逗号分隔的下拉菜单选项列表，定义向用户显示的可选选项。 |
 | 已选中 | 复选框、单选按钮 | 确定默认情况下是否选择该字段。“已选中”属性是与复选框和单选输入一起使用的布尔属性。当设置为 true 时，表示加载表单时默认选择该字段。 |
 | 字段集 | 所有 | 对字段进行分组以在表单中创建视觉上不同的部分。“字段集”元素将表单中的相关字段分组，在视觉上将字段分开以改善组织和用户体验。</br>要组织字段集中的一组字段，只需使用 `fieldset` 属性并指定其“名称”属性即可。在下面的示例中，我们演示了如何将单选按钮封装在单个字段集中，以便更好地组织。![字段集示例](/help/edge/assets/fieldset-example.png) |
+| 可重复 | 所有 | 的布尔属性 `fieldset` 指示特定字段集可以针对指定的重复 `Min` 和 `Max` 次数。 此 `Min` 属性应设置为1或更大，请勿设置 `Min` 属性更改为0。 |
+| 可见表达式 | 所有 | 可见表达式是指用于控制字段可见性的电子表格公式，由“=”标记表示。 在此公式中，只能应用其他字段的value属性，从而允许在系统中直接管理字段可见性。 |
+| 值表达式 | 所有 | 值表达式是指用于控制字段值的电子表格公式，由“=”标记表示。 在此公式中，只能应用其他字段的value属性，从而允许在系统中直接管理字段值。 |
+
 
 ## 另请参阅
 
