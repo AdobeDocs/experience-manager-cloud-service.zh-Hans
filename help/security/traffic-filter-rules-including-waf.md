@@ -2,10 +2,10 @@
 title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 86a7815a1055b8ffaf57b802f3232f2c03ec06dc
-workflow-type: ht
-source-wordcount: '3376'
-ht-degree: 100%
+source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+workflow-type: tm+mt
+source-wordcount: '3382'
+ht-degree: 98%
 
 ---
 
@@ -286,7 +286,7 @@ when:
 
 **示例 1**
 
-此规则阻止来自 IP 192.168.1.1 的请求：
+此规则阻止来自的请求 **IP 192.168.1.1**：
 
 ```
 kind: "CDN"
@@ -425,7 +425,7 @@ data:
 
 **示例 1**
 
-当客户端在过去 60 秒内超过 100 个请求/秒（每个 CDN POP）时，此规则阻止该客户端 5 分钟：
+此规则会在客户端在过去10秒内超过每秒60个请求（每个CDN POP）的平均值时将其阻止5分钟：
 
 ```
 kind: "CDN"
@@ -450,7 +450,7 @@ data:
 
 **示例 2**
 
-在过去 60 秒内超过 100 个请求/秒（每个 CDN POP）时，阻止对路径 /critical/resource 的请求 60 秒：
+当路径/critical/resource在过去60秒内超过平均100请求/秒（每个CDN POP）时，阻止该路径上的请求：
 
 ```
 kind: "CDN"
