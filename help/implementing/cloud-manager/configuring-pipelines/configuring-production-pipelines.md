@@ -3,10 +3,10 @@ title: 配置生产管道
 description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 72%
+source-wordcount: '1338'
+ht-degree: 67%
 
 ---
 
@@ -93,25 +93,13 @@ ht-degree: 72%
 
    ![全栈代码](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. 单击&#x200B;**继续**&#x200B;前进到&#x200B;**体验审核**&#x200B;选项卡，您可以在其中定义应始终包含在体验审核中的路径。
+1. 点击或单击 **继续** 以前进到 **体验审核** 选项卡，您可以在此处定义应始终包含在体验审核中的路径。
 
    ![添加体验审核](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
 1. 提供要包含在体验审核中的路径。
 
-   * 页面路径必须以 `/` 开头。
-   * 例如，如果您想在体验蛇和中包括 `https://wknd.site/us/en/about-us.html`，请输入路径 `/us/en/about-us.html`。
-
-   ![定义体验审核路径](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. 单击&#x200B;**添加页面**，路径会自动填写您的环境地址，并添加到路径表中。
-
-   ![保存表的路径](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. 重复前两步，根据需要继续添加路径。
-
-   * 最多可以添加 25 条路径。
-   * 如果您未定义任何路径，则默认情况下，网站主页会包含在体验审核中。
+   * 查看文档 [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 以了解详细信息。
 
 1. 单击&#x200B;**保存**&#x200B;以保存管道。
 
@@ -119,7 +107,7 @@ ht-degree: 72%
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 
-### 目标部署 {#targeted-deployment}
+### 有针对性的部署 {#targeted-deployment}
 
 目标部署仅会为AEM应用程序的选定部分部署代码。 在此类部署中，您可以选择 **包括** 以下代码类型之一：
 

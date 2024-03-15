@@ -3,10 +3,10 @@ title: 配置非生产管道
 description: 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 77%
+source-wordcount: '1371'
+ht-degree: 73%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 77%
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 
-### 目标部署 {#targeted-deployment}
+### 有针对性的部署 {#targeted-deployment}
 
 目标部署仅会为AEM应用程序的选定部分部署代码。 在此类部署中，您可以选择 **包括** 以下代码类型之一：
 
@@ -145,10 +145,16 @@ ht-degree: 77%
    * **Git 分支** – 此选项定义管道应从中检索代码的所选存储库的分支。
       * 输入分支名称的前几个字符，以及此字段的自动完成功能。它会找到您可以选择的匹配分支。
    * **代码位置** – 此选项定义管道应从中检索代码的所选存储库分支中的路径。
+   * **管道**  — 对于前端非生产管道，您可以选择启用 **[体验审核。](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![配置管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![配置管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. 单击“**保存**”。
+1. 如果已启用体验审核，请点按或单击 **继续** 以前进到 **体验审核** 选项卡，您可以在此处定义应始终包含在体验审核中的路径。
+
+   * 如果您已启用 **体验审核**，请参阅文档 [体验审核](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 以了解有关如何配置的详细信息。
+   * 如果未配置，请跳过此步骤。
+
+1. 点击或单击 **保存** 以保存管道。
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 

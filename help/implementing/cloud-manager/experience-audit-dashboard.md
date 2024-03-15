@@ -2,9 +2,9 @@
 title: 体验审核仪表板
 description: 了解体验审核如何验证您的部署过程，并通过清晰、信息丰富的仪表板界面帮助确保部署的更改符合性能、可访问性、最佳实践和SEO的基线标准。
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 390faed91889e16d06c5024eaf1b4b1ad1427444
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1958'
 ht-degree: 8%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager中的体验审核可确保用户在站点上的体验达到最高�
 
 * 默认情况下，站点生产管道
 * 开发全栈管道（可选）
-* 前端管道（可选）
+* 开发前端管道（可选）
 
 请参阅 [配置部分](#configuration) 有关如何为可选环境配置审核的更多信息。
 
