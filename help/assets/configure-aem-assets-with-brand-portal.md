@@ -5,14 +5,14 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 8%
+source-wordcount: '2568'
+ht-degree: 6%
 
 ---
 
-# 使用 Brand Portal 配置 Experience Manager Assets {#configure-aem-assets-with-brand-portal}
+# 使用Brand Portal配置Experience Manager Assets {#configure-aem-assets-with-brand-portal}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -67,7 +67,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 >
 >请勿修改任何自动生成的设置。
 
-**另请参阅**:
+**另请参阅**：
 
 * [在Experience Manager Assetsas a Cloud Service中添加用户和角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
@@ -221,7 +221,7 @@ Brand Portal租户的默认URL为： `https://<tenant-id>.brand-portal.adobe.com
 1. [配置IMS帐户](#create-ims-account-configuration)
 1. [配置云服务](#configure-the-cloud-service)
 
-### 创建 IMS 配置 {#create-ims-configuration}
+### 创建IMS配置 {#create-ims-configuration}
 
 IMS配置验证您的Experience Manager Assets as a [!DNL Cloud Service] Brand Portal租户实例。
 
@@ -294,7 +294,8 @@ IMS 配置包括两个步骤：
 
    >[!NOTE]
    >
-   >您可以查看凭据并执行操作，如生成JWT令牌、复制凭据详细信息、检索客户端密码等。
+   >* 您可以查看凭据并执行操作，如生成JWT令牌、复制凭据详细信息、检索客户端密码等。
+   >* 目前，仅支持Adobe的开发人员控制台服务帐户(JWT)凭据类型。 在4月中旬受支持之前，请勿使用OAuth服务器到服务器凭据类型。 有关更多信息，请参阅 [Adobe Developer控制台中的JWT凭据弃用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. 从 **[!UICONTROL 客户端凭据]** 选项卡，复制 **[!UICONTROL 客户端ID]**.
 
@@ -397,7 +398,7 @@ IMS 配置包括两个步骤：
 
    ![“Brand Portal配置”对话框。](assets/create-cloud-service.png)
 
-1. 单击“**[!UICONTROL 保存并关闭]**”。将创建云配置。
+1. 单击 **[!UICONTROL 保存并关闭]**. 将创建云配置。
 
    您的Experience Manager Assets as a [!DNL Cloud Service] 实例现在已配置为Brand Portal租户。
 
@@ -409,8 +410,8 @@ IMS 配置包括两个步骤：
 
 | **区域** | **出口IP** |
 |--- |--- |
-| NA | 130.248.160.68, 20.94.203.130 |
-| EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
+| NA | 130.248.160.68， 20.94.203.130 |
+| EMEA | 51.132.146.75， 130.248.244.202， 130.248.244.203， 130.248.244.204， 130.248.244.210， 130.248.244.211， 130.248.244 12 |
 | 亚太地区 | 63.140.44.54 |
 
 <!--
