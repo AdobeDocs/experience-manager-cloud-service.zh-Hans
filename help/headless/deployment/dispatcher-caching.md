@@ -3,10 +3,10 @@ title: GraphQL 持久化查询 - 在 Dispatcher 中启用缓存
 description: Dispatcher 是位于 Adobe Experience Manager 发布环境前的缓存和安全层。您可以在 AEM Headless 中为持久化查询启用缓存。
 feature: Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: ea5b404e83c11f0057342bff22ba45e6b0ead124
+source-git-commit: 6bcbef1695b291c36e19e70db203a114a7e40e67
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 81%
+source-wordcount: '359'
+ht-degree: 84%
 
 ---
 
@@ -42,15 +42,7 @@ ht-degree: 81%
 >
 >使用以下对象为持久查询启用Dispatcher缓存时 `Define CACHE_GRAPHQL_PERSISTED_QUERIES` 一个 `ETag` 标头将添加到Dispatcher的响应中。
 >
->默认情况下， `ETag` 标头使用以下指令进行配置：
->
->```
->FileETag MTime Size 
->```
->
->但是，此设置可能导致在持久查询响应上使用时出现问题，因为它不考虑响应中的细微更改。
->
->实现个人 `ETag` 计算 *每个* 唯一的响应 `FileETag Digest` 必须在Dispatcher配置中使用设置：
+>实现个人 `ETag` 对缓存的持久查询的标头计算(对于 *每个* 唯一响应) `FileETag Digest` 必须在Dispatcher配置虚拟主机配置中使用设置（如果尚不存在）：
 >
 >```xml
 ><Directory />    
