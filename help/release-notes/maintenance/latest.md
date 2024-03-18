@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
-workflow-type: ht
-source-wordcount: '1240'
-ht-degree: 100%
+source-git-commit: b0198fee3fb8c2f02f50819bea5757e5b8373ac1
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 99%
 
 ---
 
@@ -131,7 +131,7 @@ ht-degree: 100%
 </dependency>
 ```
 
-2024 年 4 月 6 日之后需要进行此更改。
+此更改需要在2024年4月6日之前执行。
 
 如果未更新依赖项库，则会导致“自定义功能测试”步骤中的管道失败。
 
