@@ -2,10 +2,10 @@
 title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 043c87330bca37529c0cc614596599bea1e41def
+source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
 workflow-type: tm+mt
-source-wordcount: '3382'
-ht-degree: 98%
+source-wordcount: '3634'
+ht-degree: 90%
 
 ---
 
@@ -234,9 +234,9 @@ when:
 
 | **名称** | **允许的属性** | **含义** |
 |---|---|---|
-| **allow** | `wafFlags`（可选） | 如果 wafFlags 不存在，则停止进一步的规则处理并继续提供响应。如果 wafFlags 存在，则禁用指定的 WAF 保护并继续执行进一步的规则处理。 |
-| **block** | `status, wafFlags`（可选且互斥） | 如果 wafFlags 不存在，则绕过所有其他属性来返回 HTTP 错误，错误代码由状态属性定义或默认为 406。如果 wafFlags 存在，则启用指定的 WAF 保护并继续执行进一步的规则处理。 |
-| **log** | `wafFlags`（可选） | 记录规则已触发这一事实，否则对处理不起作用。wafFlags 不起作用 |
+| **allow** | `wafFlags` （可选）， `alert` （可选，尚未发布） | 如果 wafFlags 不存在，则停止进一步的规则处理并继续提供响应。如果wafFlags存在，它将禁用指定的WAF保护并继续执行进一步的规则处理。 <br>如果指定警报，则在5分钟时间范围内触发规则10次时，将发送操作中心通知。 此功能尚未发布；请参阅 [流量过滤器规则警报](#traffic-filter-rules-alerts) 部分，以了解如何加入率先采用者计划。 |
+| **block** | `status, wafFlags` （可选且互斥）， `alert` （可选，尚未发布） | 如果 wafFlags 不存在，则绕过所有其他属性来返回 HTTP 错误，错误代码由状态属性定义或默认为 406。如果wafFlags存在，则它启用指定的WAF保护并继续进一步的规则处理。 <br>如果指定警报，则在5分钟时间范围内触发规则10次时，将发送操作中心通知。 此功能尚未发布；请参阅 [流量过滤器规则警报](#traffic-filter-rules-alerts) 部分，以了解如何加入率先采用者计划。 |
+| **log** | `wafFlags` （可选）， `alert` （可选，尚未发布） | 记录规则已触发这一事实，否则对处理不起作用。wafFlags无效。 <br>如果指定警报，则在5分钟时间范围内触发规则10次时，将发送操作中心通知。 此功能尚未发布；请参阅 [流量过滤器规则警报](#traffic-filter-rules-alerts) 部分，以了解如何加入率先采用者计划。 |
 
 ### WAF 标志列表 {#waf-flags-list}
 
@@ -465,6 +465,34 @@ data:
         action:
           type: block
         rateLimit: { limit: 100, window: 60, penalty: 60 }
+```
+
+## 流量过滤器规则警报 {#traffic-filter-rules-alerts}
+
+>[!NOTE]
+>
+>此功能尚未发布。 要通过率先采用者计划获得访问权限，请发送电子邮件至 **aemcs-waf-adopter@adobe.com**.
+
+可以将规则配置为在5分钟内10次触发操作中心通知时发送该通知，从而在发生某些流量模式时向您发出警报，以便您采取必要措施。 了解有关 [操作中心](/help/operations/actions-center.md)，包括如何设置接收电子邮件所需的通知配置文件。
+
+![操作中心通知](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+
+
+警报属性(当前带有 *试验性* 由于该功能尚未发布，因此可以将它应用于所有操作类型（允许、阻止、日志）的操作节点。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    rules:
+      - name: "path-rule"
+        when: { reqProperty: path, equals: /block-me }
+        action:
+          type: block
+          experimental_alert: true
 ```
 
 ## CDN 日志 {#cdn-logs}
