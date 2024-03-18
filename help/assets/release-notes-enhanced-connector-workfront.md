@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -13,14 +13,14 @@ ht-degree: 97%
 
 以下部分概述了 [!DNL Workfront for Experience Manager enhanced connector] 的常规发行说明。
 
-最新版本1.9.18的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年3月8日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.18 版的发布日期是 2024 年 3 月 8 日。
 
 ## 版本亮点 {#release-highlights}
 
-最新版本的 [!DNL Workfront for Experience Manager enhanced connector] 包含以下错误修复：
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
 
-* 处理从Workfront上传的多资源时遇到问题。
-* 使用Workfront在Experience Manager中搜索文件夹时未添加右引号在以下位置产生： `SERVER_ERROR`.
+* 处理从 Workfront 上传的多个资源时遇到问题。
+* 使用 Workfront 在 Experience Manager 中搜索文件夹时不添加结束引号会导致 `SERVER_ERROR`。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ## 以前的版本 {#previous-releases}
 
-### 2024年2月版 {#february-2023-release}
+### 2024 年 2 月版本 {#february-2023-release}
 
 * 启用切换功能以使 AEM Cloud 客户可配置和设置连接器。
 

@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1240'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -102,22 +102,22 @@ ht-degree: 88%
 
 ### 已知问题 {#known-issues-15262}
 
-* ASSETS-35923： `UnsupportedClassVersionError` 升级后的CM管道构建步骤中 `aem-sdk-api` 版本至 `2024.2.15262.20240224T002940Z-231200`. **需要客户执行操作才能将CM Java版本设置为11**，请参见 [构建环境/设置Maven JDK版本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
-* ASSETS-35860：AEM Assets列视图中的时区转换不正确。
-* SCRNS-4171：升级到15262并发布渠道时，Windows屏幕变为空白并停止工作。
-* GRANITE-50774： GraniteContent应在初始时使用属性值的确定性顺序。
+* ASSETS-35923：将 `aem-sdk-api` 版本升级到 `2024.2.15262.20240224T002940Z-231200` 后 CM 管道生成步骤中出现 `UnsupportedClassVersionError`。**需要客户采取行动将 CM Java 版本设置为 11**，请参阅 [生成环境/设置 Maven JDK 版本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=zh-Hans#alternate-maven-jdk-version)
+* ASSETS-35860：AEM Assets 列视图中的时区转化不正确。
+* SCRNS-4171：升级到 15262 并发布渠道时，Windows Screens 变为空白并停止工作。
+* GRANITE-50774：GraniteContent 应在初始化时使用属性值的确定性顺序。
 
 ### 更改通知 {#change-notice-15262}
 
-**需要操作**
+**必需执行的操作**
 
-#### 将CM Java版本设置为11 {#set-java-version-11}
+#### 将 CM Java 版本设置为 11 {#set-java-version-11}
 
-新版本的aem-sdk-api包含使用Java 11目标编译的类，该目标与Cloud Manager构建环境默认JDK版本1.8不兼容。此更新要求使用JDK 11执行Maven。
+新版本的 aem-sdk-api 包含使用 Java 11 目标编译的类，该目标与 Cloud Manager 生成环境默认 JDK 版本 1.8 不兼容。此更新要求使用 JDK 11 执行 Maven。
 
-建议客户添加 `.cloudmanager/java-version` 文件到其git存储库的根目录下，其中包含： `11`. [构建环境/设置Maven JDK版本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
+建议客户将 `.cloudmanager/java-version` 文件添加到其 git 存储库的根目录中，其中的内容为：`11`。[生成环境/设置 Maven JDK 版本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=zh-Hans#alternate-maven-jdk-version)
 
-#### 将aem-cloud-testing-clients更新至1.2.1 {#update-aem-cloud-testing-clients}
+#### 将 aem-cloud-testing-clients 更新到 1.2.1 {#update-aem-cloud-testing-clients}
 
 即将发生的更改需要将您在自定义功能测试中使用的库 [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) 更新到至少 **1.2.1** 版本
 

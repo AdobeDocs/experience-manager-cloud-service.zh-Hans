@@ -4,9 +4,9 @@ description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提�
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 通过使用 Edge Delivery Services，您可以：
 
 * 快速创建 Lighthouse 分数优异的站点，并通过真实用户监控 (RUM) 持续监控网站性能。
-* 通过分离内容来源而提高创作效率。开箱即用地使用AEM创作和基于文档的创作。 这样即可在同一网站上使用多个内容源。
+* 通过分离内容来源而提高创作效率。可直接使用 AEM 创作和基于文档的创作。这样即可在同一网站上使用多个内容源。
 * 使用一个内置的试验框架，通过该框架，可快速地创建测试、不影响性能地执行测试并快速地发布到测试获胜方的生产环境。
 
 ## Edge Delivery Services 概述 {#edge-overview}
@@ -27,7 +27,7 @@ ht-degree: 94%
 
 ![Edge Delivery 架构](assets/AEM-with-EDS-publishing-simple2.png)
 
-Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。如前所述，您可以使用两者 [AEM内容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) 替换为 [通用编辑器创作](/help/implementing/universal-editor/introduction.md) 以及 [基于文档的创作。](https://www.aem.live/docs/authoring)
+Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。如前所述，您可以将 [AEM 内容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html)用于 [Universal Editor 创作](/help/implementing/universal-editor/introduction.md)以及[基于文档的创作](https://www.aem.live/docs/authoring)。
 
 例如，您可以直接从 Microsoft Word 或 Google Docs 中使用内容。这意味着来自这些来源的文档可成为您网站上的页面。此外，标题、列表、图像、字体元素都可以从初始源转移到网站中。新内容可立即添加，而不经历重建过程。
 
@@ -35,7 +35,7 @@ Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储
 
 更多信息请参阅 Edge Delivery Services 文档：
 
-* 有关如何开始使用 Edge Delivery 的详细信息，请参阅[“构建”部分](https://www.aem.live/docs/#build)。
+* 有关如何开始使用 Edge Delivery 的详细信息，请参阅[“生成”部分](https://www.aem.live/docs/#build)。
 * 要了解如何使用 Edge Delivery 创作和发布内容，请参阅[“发布”部分](https://www.aem.live/docs/authoring)。
 * 要了解如何正确地启动您的网站项目，请参阅[“启动”部分](https://www.aem.live/docs/#launch)。
 
@@ -63,7 +63,7 @@ Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
 
 ### 访问社区资源 {#community-resource}
 
-Adobe致力于为您提供最佳社区参与以及对Edge Delivery Services和基于文档的创作支持。
+Adobe 致力于通过为 Edge Delivery Services 和基于文档的创作营造优秀的社区参与氛围并提供大力支持而为您助力。
 
 * 请加入 [Experience League 社区](https://adobe.ly/3Q6kTKl)，从中您可提问、分享反馈、发起讨论、向 Adobe 专家和 AEM 顾问/支持者寻求帮助并实时与志同道合的人交流。
 * 加入我们的 [Discord 频道](https://discord.gg/aem-live)，通过这个更休闲的平台可实时互动和快速交流想法。
