@@ -1,23 +1,36 @@
 ---
-title: Adobe支持用于记录文档和PDF的现成字体
-description: Adobe支持用于记录文档和PDF的现成字体
+title: AEM Formsas a Cloud Service支持用于PDF生成的现成字体。
+description: AEM Formsas a Cloud Service支持用于记录文档和PDF的现成字体。
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
+source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
+# 开箱即用(OOTB)支持的字体，用于Formsas a Cloud Service上的PDF生成  {#ootb-supported-fonts-overview}
 
-# 交互式通信和记录文档支持的字体
+AEM Formsas a Cloud Service提供各种支持OOTB的内置字体，可在以下位置无缝使用： [通信API](/help/forms/aem-forms-cloud-service-communications-introduction.md)， [核心组件记录文档](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)、和 [基础组件的记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
-AEM Forms提供多种内置字体，可在记录文档和PDF文件中无缝使用。
+<!--
 
-您可以使用Formsas a Cloud Service通信将各种类型的文件(如XDP模板或PDF)与XML数据组合在一起，以生成PDF文档。 您可以通过组合、重新排列或合并PDF或XDP文件来处理PDF。 您还可以使用记录文档，以PDF格式将AEM表单和内容存档在一起。 此外，您可以使用支持的字体或自定义字体为PDF提供特定的外观。
+AEM Forms as a Cloud Service offers various built-in fonts that can be seamlessly used within a Document of Record and PDF files for any file formats to generate PDF documents. Additionally, you can use supported fonts or custom fonts to give the PDFs a specific look and feel. The OOTB supported fonts are:
 
-## 支持的字体
+AEM Forms offers various OOTB supported fonts that can be seamlessly used within a Document of Recordhttps://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms] and communication APIs[]. The OOTB supported fonts are available for PDF generation in Forms as a Cloud Service for any use cases such as:
+
+* To combine a template (XFA or PDF) with customer data (XML) to generate documents in various formats ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-generation)).
+
+* To manipulate the PDFs by combining, rearranging, or merging PDF or XDP files ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation)).
+
+* To generate Document of Record to archive AEM forms and content together in PDF format ([Click to know more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms)).
+-->
+
+## 开箱即用(OOTB)支持的字体 {#ootb-supported-fonts}
+
+OOTB支持的字体列表包括：
 
 * AdobeArabic
 * AdobeFanHeitiStd
@@ -38,4 +51,6 @@ AEM Forms提供多种内置字体，可在记录文档和PDF文件中无缝使�
 * KozGoProVI
 * eurosign.ttf
 
-除上述字体外，如果您需要包含其他字体， [在Cloud Service环境中将自定义字体添加到Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts.html) 许可证上签字。
+
+除了上述字体之外，您还可以使用自定义字体为PDF提供特定外观。 要启用自定义字体，您可以 [将自定义字体添加到Formsas a Cloud Service环境](/help/forms/use-custom-fonts.md) 许可证上签字。
+
