@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4822'
 ht-degree: 98%
 
 ---
@@ -1144,6 +1144,8 @@ ht-degree: 98%
       + [将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service](/help/implementing/dispatcher/ams-aem.md)
       + [使用旧版 Dispatcher 工具进行验证和调试](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
+      + [在CDN上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [配置CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service 中的缓存](/help/implementing/dispatcher/caching.md)
 + 连接器 {#connectors}
    + [实施 AEM 连接器](/help/connectors/implement.md)

@@ -1,0 +1,91 @@
+---
+title: 配置CDN错误页面
+description: 了解如何覆盖默认错误页面，其中将静态文件托管在自托管存储(如Amazon S3或Azure Blob Storage)中，并在使用Cloud Manager配置管道部署的配置文件中引用它们。
+feature: Dispatcher
+source-git-commit: 11036c3e95f0444fc5d865232a7dccab5b7f26ae
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 3%
+
+---
+
+
+# 配置CDN错误页面 {#cdn-error-pages}
+
+>[!NOTE]
+>此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至 `aemcs-cdn-config-adopter@adobe.com` 并描述您的用例。
+
+万一发生意外 [Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 无法访问AEM源服务器，默认情况下，CDN会提供一个无品牌标志的通用错误页面，该页面指示无法访问服务器。 您可以覆盖默认错误页面，方法是：将静态文件托管在自托管存储中(如Amazon S3或Azure Blob Storage)，并在使用部署的配置文件中引用它们 [Cloud Manager配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+
+## 设置 {#setup}
+
+在覆盖默认错误页之前，您需要执行以下操作：
+
+* 首先，在Git项目的顶级文件夹中创建此文件夹和文件结构：
+
+```
+config/
+     cdn.yaml
+```
+
+* 其次， `cdn.yaml` 配置文件应包含元数据和错误页面引用，如下所述。
+
+### 配置 {#configuration}
+
+错误页面作为单页应用程序(SPA)实施，并引用一些属性，如下面的示例所示。  URL引用的静态文件应由您在可访问Internet的服务(如Amazon S3或Azure Blob Storage)上托管。
+
+配置示例：
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  experimental_errorPages:
+    spa:
+      title: the error page
+      icoUrl: https://www.example.com/error.ico
+      cssUrl: https://www.example.com/error.css
+      jsUrl: https://www.example.com/error.js
+```
+
+| 名称 | 允许的属性 | 含义 |
+|-----------|--------------------------|-------------|
+| **spa** | 标题 | 错误页面的标题。 |
+|     | icoUrl | 图标文件的URL。 |
+|     | cssUrl | CSS文件的URL。 |
+|     | jsUrl | JavaScript文件的URL。 |
+
+### 示例生成的HTML {#sample-generated-html}
+
+由CDN生成并提供给客户端（如浏览器）的HTML代码将类似于以下代码片段（但不完全相同）：
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        ...
+        <title>the error page</title>
+        <link rel="icon" href="https://www.example.com/error.ico">
+        <link rel="stylesheet" href="https://www.example.com/error.css">
+    </head>
+    <body>
+        ...
+        <div id="root" status="403"></div>
+        <script src="https://www.example.com/error.js"> </script>
+    </body>
+</html>
+```
+
+### 测试 {#testing}
+
+出于测试目的，请使用支持的错误代码调用专用端点，例如：
+
+```
+curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
+```
+
+支持的代码为：403、404、406、500和503。
+
+这样，您就可以直接触发CDN的错误处理程序，以测试给定错误代码的综合响应。
