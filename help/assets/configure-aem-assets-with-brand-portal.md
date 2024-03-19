@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
+source-git-commit: 2cb630203b818ae338fe6b7c2ff341c76e3a3958
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2566'
 ht-degree: 6%
 
 ---
@@ -295,7 +295,7 @@ IMS 配置包括两个步骤：
    >[!NOTE]
    >
    >* 您可以查看凭据并执行操作，如生成JWT令牌、复制凭据详细信息、检索客户端密码等。
-   >* 目前，仅支持Adobe的开发人员控制台服务帐户(JWT)凭据类型。 在4月中旬受支持之前，请勿使用OAuth服务器到服务器凭据类型。 有关更多信息，请参阅 [Adobe Developer控制台中的JWT凭据弃用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >* 目前，仅支持Adobe的开发人员控制台服务帐户(JWT)凭据类型。 请勿使用 `OAuth Server-to-Server` 凭据类型，直到4月中旬受支持。 有关更多信息，请参阅 [Adobe Developer控制台中的JWT凭据弃用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. 从 **[!UICONTROL 客户端凭据]** 选项卡，复制 **[!UICONTROL 客户端ID]**.
 
