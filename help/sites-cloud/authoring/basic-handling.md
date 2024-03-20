@@ -2,10 +2,10 @@
 title: 基本处理
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 64%
+source-wordcount: '926'
+ht-degree: 63%
 
 ---
 
@@ -36,7 +36,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 每当用户首次访问某个控制台时，都会启动一个产品导航教程。请花上一分钟时间选择以全面了解AEM的基本处理。
 
-![导航教程](assets/tutorial.png)
+![导航教程](assets/basic-handling-tutorial.png)
 
 选择 **下一个** 以进入概述的下一页。 选择 **关闭** 或选择概述对话框外部以关闭。
 
@@ -48,7 +48,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 通过单击或点按&#x200B;**关闭**&#x200B;可关闭全局导航面板，以返回到您之前所在的位置。
 
-![导航面板顶栏](assets/basic-handling-navigation-bar.png)
+![导航面板顶栏](assets/basic-handling-navigation-options.png)
 
 全局导航有两个面板，它们由屏幕左侧的图标来表示：
 
@@ -86,31 +86,37 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 标题始终显示在屏幕顶部。无论您位于系统中的何处，标题中的大部分选项都将保持不变，但也有一些选项是特定于上下文的。
 
-![导航标题](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![导航标题](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [全局导航](#global-navigation)  — 选择 **Adobe Experience Manager** 用于在控制台之间导航的链接。
 
-  ![全局导航](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![全局导航](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [Search](/help/sites-cloud/authoring/search.md)  — 您也可以使用 [快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` （正斜杠）以从任何控制台中调用搜索。
+* 反馈
 
-  ![“搜索”图标](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![“反馈”按钮](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* 您的IMS组织 — 根据需要选择进行更改。
 
 * [解决方案](https://www.adobe.com/cn/cn/experience-cloud.html)  — 选择此项以访问您的其他Adobe解决方案。
 
-  ![“解决方案”按钮](/help/sites-cloud/authoring/assets/solutions.png)
+  ![“解决方案”按钮](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [Search](/help/sites-cloud/authoring/search.md)  — 您也可以使用 [快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` （正斜杠）以从任何控制台中调用搜索。
+
+  ![“搜索”图标](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [帮助](#accessing-help)
 
-  ![“帮助”按钮](/help/sites-cloud/authoring/assets/help.png)
+  ![“帮助”按钮](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [通知](/help/sites-cloud/authoring/inbox.md)  — 此图标带有当前分配的未完成通知的编号。
 
-  ![“通知”按钮](/help/sites-cloud/authoring/assets/notifications.png)
+  ![“通知”按钮](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [用户属性](/help/sites-cloud/authoring/account-environment.md)  — 选择此项以更改用户设置。
 
-  ![“用户属性”按钮](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![“用户属性”按钮](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## 访问帮助 {#accessing-help}
 
