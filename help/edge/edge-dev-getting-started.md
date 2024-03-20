@@ -4,9 +4,9 @@ description: 本指南将帮助您让一个使用 Edge Delivery Services 和 Uni
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ AEM 提供两个不同的内容编辑器，您可根据自己的情况选择要�
 
 本指南重点介绍使用 Universal Editor 在 Edge Delivery Services 上创作 AEM 项目。有关选择适当的编辑器以及将现有 AEM Sites 迁移到 Edge Delivery Services 的更多详细信息，请参阅文档[针对 Edge Delivery Services 进行开发](/help/edge/developing.md)。
 
-## AEM创作和Edge Delivery Services快速入门 {#getting-started}
+## AEM 创作和 Edge Delivery Services 快速入门 {#getting-started}
 
 一旦满足[先决条件](#prerequisites)并[选择使用 Universal Editor](#editor-choice)，即可开始您自己的项目。
 
@@ -88,7 +88,7 @@ AEM 提供两个不同的内容编辑器，您可根据自己的情况选择要�
 
 1. 将默认映射替换为 `/content/<site-name>/:/`，然后单击&#x200B;**提交更改...**。
 
-   * 提供您自己的 `<site-name>`。您将在稍后的步骤中用到它。
+   * 提供您自己的`<site-name>`。您将在稍后的步骤中用到它。
    * 映射告知 Edge Delivery Services 如何将您 AEM 存储库中的内容映射到站点 URL。
 
    ![更新 paths.yaml](assets/edge-dev-getting-started/paths-update.png)

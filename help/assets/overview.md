@@ -6,9 +6,9 @@ feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -54,11 +54,11 @@ DAM 库管理员、开发人员和超级用户可以继续使用管理视图，�
 
 有关如何访问资源视图及其通过“管理”视图提供的一些简化功能的信息，请参阅[资源视图简介。](/help/assets/assets-view-introduction.md)
 
-## 与Edge Delivery Services的基于文档的创作集成 {#integrate-doc-authoring-edge-and-assets}
+## 与 Edge Delivery Services 的基于文档的创作集成 {#integrate-doc-authoring-edge-and-assets}
 
 Edge Delivery 使您可快速创建吸引人的网站，作者从中可快速地更新和发布内容，并可快速地推出新网站。
 
-将AEM Assets与基于文档的创作集成，以便Edge Delivery Services在Microsoft Word或Google文档中创作文档时，能够使用在AEM Assets存储库中可用的图像。 有关更多信息，请参阅 [将AEM Assets与基于文档的创作集成](/help/edge/using.md#integrate-assets-edge).
+通过将 AEM Assets 与 Edge Delivery Services 的基于文档的创作集成，网站作者在 Microsoft Word 或 Google Docs 中创作文档时可使用 AEM Assets 存储库中的图像。有关更多信息，请参阅[将 AEM Assets 与基于文档的创作集成](/help/edge/using.md#integrate-assets-edge)。
 
 ## 与 Adobe Journey Optimizer 集成 {#integration-with-ajo}
 

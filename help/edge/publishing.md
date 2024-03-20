@@ -4,9 +4,9 @@ description: 了解内容发布如何与 Edge Delivery Services 配合使用，�
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 source-git-commit: 3ee1ba83518c3d4fba59b0c98b31e5c63a2eb6ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -31,14 +31,14 @@ ht-degree: 66%
 ![从 AEM 发布到 Edge Delivery Services 时的信息流](assets/publishing-flow.png)
 
 1. 内容作者在通用编辑器中发布 AEM 内容。
-1. 发布事件将推送到Adobe管道队列。
-1. Edge Delivery Services发布服务将相关事件转发到Edge Delivery Services管理API。
-1. Edge交付从AEM作者中提取并引入语义HTML。
+1. 发布事件被推送到 Adobe 管道队列。
+1. Edge Delivery Services 发布服务将相关事件转发到 Edge Delivery Services 管理员 API。
+1. Edge Delivery 从 AEM 作者处提取和吸收语义 HTML。
 1. AEM 已更新发布状态。
 
 >[!NOTE]
 >
->默认情况下，Edge Delivery Services管理API不受保护，并且可用于发布或取消发布文档而不进行身份验证。 为了配置管理员API的身份验证，如中所述 [为作者配置身份验证](https://www.aem.live/docs/authentication-setup-authoring)，您的项目必须配置API_KEY，以授予对发布服务的访问权限。 [请联系Adobe团队以了解Slack](/help/edge/docs/slack.md) 作为指导。
+>默认情况下，Edge Delivery Services 管理员 API 不受保护，可用于在未经身份验证的情况下发布或取消发布文档。如[配置作者身份验证](https://www.aem.live/docs/authentication-setup-authoring)中所述，为了配置管理员 API 的身份验证，您的项目必须配置 API_KEY，它授予对发布服务的访问权限。[请联系 Slack 上的 Adobe 团队](/help/edge/docs/slack.md)寻求指导。
 
 ## 如何开始使用 {#how-to-get-started}
 

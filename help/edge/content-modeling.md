@@ -3,9 +3,9 @@ title: 使用 Edge Delivery Services 项目进行 AEM 创作的内容建模
 description: 了解如何对使用 Edge Delivery Services 项目进行的 AEM 创作进行内容建模以及如何为您自己的内容进行建模。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2095'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -351,7 +351,7 @@ ht-degree: 94%
 
 #### 字段折叠 {#field-collapse}
 
-字段折叠是一种机制，它使用后缀根据命名惯例将多个字段值组合为一个语义元素 `Title`， `Type`， `MimeType`， `Alt`、和 `Text` （全部区分大小写）。 任何以这些后缀结尾的属性将不被视为值，而被视为另一个属性的特性。
+字段折叠是根据使用后缀 `Title`、`Type`、`MimeType`、`Alt` 和 `Text`（均区分大小写）的命名约定，将多个字段值合并为一个语义元素的机制。任何以这些后缀结尾的属性将不被视为值，而被视为另一个属性的特性。
 
 ##### 图像 {#image-collapse}
 
@@ -624,13 +624,13 @@ Edge Delivery Services 的内容模型有意只允许单级嵌套，即部分包
 
 ### 页面属性 {#page-properties}
 
-AEM中可用的许多默认页面属性都映射到文档中相应的页面元数据。 例如，包括 `title`， `description`， `robots`， `canonical url` 或 `keywords`. 此外，还提供一些AEM特定的属性：
+AEM 中提供的许多默认页面属性都映射到文档中相应的页面元数据。例如，包括 `title`、`description`、`robots`、`canonical url` 或者 `keywords`。还提供一些特定于 AEM 的属性：
 
-* `cq:lastModified` 作为 `modified-time` ISO8601格式
-* 上次发布文档的时间 `published-time` ISO8601格式
-* `cq:tags` 作为 `cq-tags` 作为标记ID的逗号分隔列表。
+* `cq:lastModified`（ISO8601 格式）显示的 `modified-time` 
+* 文档最后发布的时间为 `published-time`（ISO8601 格式）
+* `cq:tags` 作为逗号分隔标记 ID 列表的 `cq-tags`。
 
-还可以为自定义页面元数据定义组件模型，该组件模型将作为AEM Sites页面属性对话框的选项卡提供给作者。
+还可以为自定义页面元数据定义组件模型，作者可以将其作为 AEM Sites 页面属性对话框的选项卡使用。
 
 为此，请使用 ID `page-metadata` 创建组件模型。
 
