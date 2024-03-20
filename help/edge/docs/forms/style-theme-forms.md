@@ -1,12 +1,12 @@
 ---
-title: 自定义AEM Forms Edge Delivery Services表单的主题和样式
-description: 自定义AEM Forms Edge Delivery Services表单的主题和样式
+title: 自定义 AEM Forms Edge Delivery ServicesForm 的主题和样式
+description: 自定义 AEM Forms Edge Delivery ServicesForm 的主题和样式
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
 source-wordcount: '2014'
-ht-degree: 41%
+ht-degree: 68%
 
 ---
 
@@ -45,11 +45,11 @@ ht-degree: 41%
 * [盒子模型](https://www.w3schools.com/css/css_boxmodel.asp)：CSS框模型将HTML元素的结构描述为一个由边距、边框和边距包围的内容区域。
 * Flexbox/网格： CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和 [网格布局](https://www.w3schools.com/css/css_grid.asp) 是用于创建响应式灵活设计的强大工具。
 
-## 设置自适应Forms块的表单样式
+## 为 Adaptive Forms Block 设置表单样式
 
-自适应Forms块提供标准化的HTML结构，从而简化表单组件的选择和样式设置过程：
+Adaptive Forms Block 提供了标准化 HTML 结构，简化了选择表单组件并设计其样式的过程：
 
-* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file` 来修改表单的默认样式。此文件为表单提供全面的样式，并支持多步骤向导表单。它强调使用自定义 CSS 变量来轻松跨表单进行自定义、维护和统一样式设置。有关将自适应Forms块添加到项目的说明，请参阅 [创建表单](/help/edge/docs/forms/create-forms.md).
+* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file` 来修改表单的默认样式。此文件为表单提供全面的样式，并支持多步骤向导表单。它强调使用自定义 CSS 变量来轻松跨表单进行自定义、维护和统一样式设置。有关将 Adaptive Forms Block 添加到项目的说明，请参阅[创建表单](/help/edge/docs/forms/create-forms.md)。
 
 * **自定义**：使用默认值 `forms.css` 作为基础，并对其进行自定义以修改表单组件的外观，使其具有视觉吸引力并且对用户友好。此文件的结构有利于组织和维护表单的样式，从而促进整个网站设计的一致性。
 
@@ -70,7 +70,7 @@ ht-degree: 41%
 
 ## 组件结构
 
-自适应Forms块为各种表单元素提供了一致的HTML结构，确保更易于样式化和管理。 您可以使用 CSS 来操作组件以设置样式。
+Adaptive Forms Block 为各种表单元素提供一致的 HTML 结构，确保更轻松地设置样式和管理。您可以使用 CSS 来操作组件以设置样式。
 
 ### 常规组件（下拉菜单、单选按钮组和复选框组除外）：
 
@@ -89,12 +89,12 @@ ht-degree: 41%
 ```
 
 * 类：div 元素包含几个用于定位特定元素和样式的类。您需要 `{Type}-wrapper` 或 `field-{Name}` 用于开发CSS选择器以设置表单字段样式的类：
-   * {Type}：通过字段类型标识组件。例如，文本(text-wrapper)、数字(number-wrapper)、日期(date-wrapper)。
-   * {Name}：通过名称标识组件。字段名称只能包含字母数字字符，名称中的多个连续破折号将替换为单个破折号 `(-)`，并且字段名称中的开头和结尾破折号将被删除。例如，名字(field-first-name field-wrapper)。
+   * {Type}：通过字段类型标识组件。例如，文本 (text-wrapper)、数字 (number-wrapper)、日期 (date-wrapper)。
+   * {Name}：通过名称标识组件。字段名称只能包含字母数字字符，名称中的多个连续破折号将替换为单个破折号 `(-)`，并且字段名称中的开头和结尾破折号将被删除。例如，名字 (field-first-name field-wrapper)。
    * {FieldId}：它是自动生成的字段的唯一标识符。
    * {Required}：它是一个布尔值，指示该字段是否为必填字段。
 * 标签：`label` 元素为字段提供描述性文本，并使用 `for` 属性将它与输入元素关联。
-* 输入：`input` 元素定义要输入的数据类型。例如，文本、数字、电子邮件。
+* 输入：`input` 元素定义要输入的数据类型。例如：文本、数字、电子邮件。
 * 描述（可选）：带类 `field-description` 的 `div` 为用户提供附加信息或说明。
 
 **HTML结构示例**
@@ -261,7 +261,7 @@ first-name input {
 
 ### 单选按钮组
 
-与下拉组件类似，单选按钮组具有自己的HTML结构和CSS结构：
+与下拉组件类似，单选按钮组也拥有自己的 HTML 结构和 CSS 结构：
 
 +++ 无线电组的HTML结构
 
@@ -277,7 +277,7 @@ first-name input {
 </fieldset>
 ```
 
-#### HTML结构示例
+#### HTML 结构示例
 
 ```HTML
 <fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
@@ -312,7 +312,7 @@ first-name input {
   }
 ```
 
-此选择器以类radio-group-wrapper定位任何字段集。 这对于将常规样式应用到整个单选按钮组非常有用。
+此选择器针对具有 radio-group-wrapper 类的任何字段集。这对于将通用样式应用于整个单选按钮组非常有用。
 
 * 定位单选按钮标签
 
@@ -323,7 +323,7 @@ first-name input {
   }
 ```
 
-* 根据名称定位特定字段集内的所有单选按钮标签
+* 根据名称定位特定字段集中的所有单选按钮标签
 
 ```CSS
 .field-color .radio-wrapper label {
@@ -349,7 +349,7 @@ first-name input {
 </fieldset>
 ```
 
-#### HTML结构示例
+#### HTML 结构示例
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
@@ -498,10 +498,10 @@ first-name input {
 </fieldset>
 ```
 
-* 字段集元素充当面板容器，具有类panel-wrapper和基于面板名称(field-login)进行样式设置的其他类。
-* 图例元素(<legend>)用作面板标题，其中包含“登录信息”文本和类字段标签。 data-visible=&quot;false&quot;属性可与JavaScript一起使用来控制标题的可见性。
-* 在字段集内，选择多个。{Type}-wrapper元素（本例中为.text-wrapper和.password-wrapper）表示面板中的各个表单字段。
-* 每个包装器都包含一个标签、输入字段和描述，类似于前面的示例。
+* Fieldset 元素充当面板容器，具有 panel-wrapper 类和基于面板名称 (field-login) 进行样式设置的附加类。
+* 图例元素 (<legend>) 用作面板标题，其中包含文本“登录信息”和类字段标签。data-visible=&quot;false&quot; 属性可以与 JavaScript 一起使用来控制标题的可见性。
+* 在字段集中，多个。{Type}-wrapper 元素（在本例中为 .text-wrapper 和 .password-wrapper）代表面板中的各个表单字段。
+* 每个包装器都包含一个标签、输入字段和描述，与前面的示例类似。
 
 +++
 
@@ -520,7 +520,7 @@ first-name input {
  }
 ```
 
-* 此 `.panel-wrapper` 选择器使用类panel-wrapper为所有元素设置样式，从而为所有面板创建一致的外观。
+*  `.panel-wrapper` 选择器使用 panel-wrapper 类来设置所有元素的样式，为所有面板创建一致的外观。
 
 1. 定位面板标题：
 
@@ -536,10 +536,10 @@ first-name input {
   }
 ```
 
-* 此 `.panel-wrapper legend` 选择器可为面板中的图例元素设置样式，以便从视觉上突出标题。
+*  `.panel-wrapper legend` 选择器设置面板内图例元素的样式，使标题在视觉上脱颖而出。
 
 
-1. 定向面板中的各个字段：
+1. 定位面板中的各个字段：
 
 ```CSS
 /* Target all form field wrappers within a panel */
@@ -549,9 +549,9 @@ first-name input {
 }
 ```
 
-* 此 `.panel-wrapper .{Type}-wrapper` 选择器使用 `.{Type}-wrapper` 类，允许您为表单字段之间的间距设置样式。
+*  `.panel-wrapper .{Type}-wrapper` 选择器针对面板中具有 `.{Type}-wrapper` 类的所有包装器，允许您设置表单字段之间的间距样式。
 
-1. 定向特定字段（可选）：
+1. 定位特定领域（可选）：
 
 ```CSS
   /* Target the username field wrapper */
@@ -565,7 +565,7 @@ first-name input {
   }
 ```
 
-* 这些可选选择器允许您定位面板中的特定字段包装以使用唯一样式，例如突出显示用户名字段。
+* 这些可选选择器允许您在面板中定位特定的字段包装器以实现独特的样式，例如突出显示用户名字段。
 
 +++
 
@@ -625,11 +625,11 @@ first-name input {
 </fieldset>
 ```
 
-每个面板的结构与单个面板示例相同，都具有其他属性：
+每个面板具有与单个面板示例相同的结构，并具有附加属性：
 
-* data-repeatable=&quot;true&quot;：此属性指示可以使用JavaScript或框架动态重复面板。
+* data-repeatable=&quot;true&quot;：此属性指示可以使用 JavaScript 或框架动态重复面板。
 
-* 唯一ID和名称：面板中的每个元素均具有唯一ID（例如，name-1、email-1）和基于面板索引的名称属性（例如，name=&quot;contacts）[0].name”)。 这样可在提交多个面板时正确收集数据。
+* 唯一ID和名称：面板中的每个元素均具有唯一ID（例如，name-1、email-1）和基于面板索引的名称属性（例如，name=&quot;contacts）[0].name”)。 这样可以在提交多个面板时进行正确的数据收集。
 
 +++
 
@@ -648,10 +648,10 @@ first-name input {
   }
 ```
 
-选择器为所有可重复的面板设置样式，确保一致的外观。
+选择器对所有可重复的面板进行样式设置，确保一致的外观和感觉。
 
 
-* 定向面板中的各个字段：
+* 定位面板中的各个字段：
 
 ```CSS
 /* Target all form field wrappers within a repeatable panel */
@@ -660,9 +660,9 @@ first-name input {
   margin-bottom: 10px;
 }
 ```
-此选择器可设置可重复面板中所有字段包装的样式，并保持字段之间的间距一致。
+此选择器对可重复面板中的所有字段包装器进行样式设置，从而保持字段之间的间距一致。
 
-* 定向特定字段（在面板中）：
+* 定位特定领域（在面板内）：
 
 ```CSS
 /* Target the name field wrapper within the first panel */
@@ -716,9 +716,9 @@ first-name input {
 </div>
 ```
 
-* class属性使用为文件附件(claim_form)提供的名称。
-* 输入元素的id和name属性与文件附件名称(claim_form)匹配。
-* files-list部分最初为空。 在上传文件时，使用JavaScript动态填充该文件。
+* 类属性使用为文件附件提供的名称（claim_form）。
+* 输入元素的 id 和名称属性与文件附件名称 (claim_form) 匹配。
+* 文件列表部分最初是空的。在上传文件时，使用JavaScript动态填充该文件。
 
 +++
 
@@ -737,7 +737,7 @@ first-name input {
 }
 ```
 
-此选择器可设置整个文件附件组件的样式，包括图例、拖动区域、输入字段和列表。
+该选择器设置整个文件附件组件的样式，包括图例、拖动区域、输入字段和列表。
 
 * 定位特定元素：
 
@@ -786,7 +786,7 @@ first-name input {
 }
 ```
 
-利用这些选择器，可分别设置文件附件组件的各个部分的样式。 您可以根据自己的设计偏好调整样式。
+这些选择器允许您单独设置文件附件组件各个部分的样式。您可以调整样式以符合您的设计偏好。
 
 +++
 
@@ -898,7 +898,7 @@ first-name input {
 
 
 
-此 CSS 针对位于具有类 `field-otp` 的元素内的所有输入元素。表单的HTML结构遵循自适应Forms块的约定，这意味着有一个标有“field-otp”类的容器包含名为“otp”的字段。
+此 CSS 针对位于具有类 `field-otp` 的元素内的所有输入元素。表单的 HTML 结构遵循 Adaptive Forms Block 的惯例，这意味着有一个标有“form-otp”类的容器包含名为“otp”的字段。
 
 +++
 

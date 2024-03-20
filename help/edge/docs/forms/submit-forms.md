@@ -1,19 +1,19 @@
 ---
 title: 准备电子表格以接受数据
-description: 使用电子表格和自适应Forms块字段更快地制作功能强大的表单！
+description: 使用电子表格和 Adaptive Forms Block 字段更快地制作功能强大的表单！
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 64%
+ht-degree: 98%
 
 ---
 
 # 设置Google Sheets或Microsoft Excel文件以开始接受数据
 
 
-一旦 [已创建和预览表单](/help/edge/docs/forms/create-forms.md)，现在应该启用相应的电子表格以开始接收数据。 您可以手动启用电子表格以接受数据，或使用管理员API启用电子表格以接受数据。
+在[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，就可以启用相应的电子表格开始接收数据。您可以手动启用电子表格以接受数据，或使用 Admin API 启用电子表格以接受数据。
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -25,7 +25,7 @@ ht-degree: 64%
 
 ## 手动启用电子表格以接受数据
 
-启用电子表格以接受数据
+使电子表格能够接受数据
 
 1. 打开包含您的表单的电子表格并附加一个新工作表，并将其重命名为 `incoming`。
 
@@ -33,21 +33,21 @@ ht-degree: 64%
    >
    > 如果 `incoming` 工作表不存在，AEM 不会向电子表格发送任何数据。
 
-1. 在此工作表中，插入一个名为“intrain_form”的表。 选择匹配表单字段名称所需的列数。 然后，在工具栏中，转到“插入”>“表格”，然后单击“确定”。
+1. 在此工作表中，插入一个名为“intake_form”的表。选择与表单字段名称匹配所需的列数。然后，在工具栏中转到“插入”>“表格”并单击“确定”。
 
-1. 将表的名称更改为“intrain_form”。 在Microsoft Excel中，要更改表的名称，请选择该表并单击“表设计”。
+1. 将表的名称更改为“intake_form”。在 Microsoft Excel 中，要更改表的名称，请选择该表并单击“表设计”。
 
-1. 接下来，添加表单字段名称作为表标题。 要确保字段完全相同，可以从“shared-default”工作表中复制并粘贴它们。  在“shared-default”工作表中，选择并复制“Name”列下列出的表单ID，但“submit”字段除外。
+1. 接下来，添加表单字段名称作为表标题。为了确保字段完全相同，您可以从“shared-default”表中复制并粘贴它们。在“shared-default”工作表中，选择并复制“名称”列下列出的表单 ID（提交字段除外）。
 
-1. 在“传入”工作表中，选择选择性粘贴>将行转置为列，将字段ID作为列标题复制到此新工作表中。 可以忽略仅保留其数据需要捕获其他数据的字段。
+1. 在“传入”工作表中，选择“选择性粘贴”>“将行转置为列”，将字段 ID 复制为该新工作表中的列标题。只保留需要捕获数据的字段，其他可以忽略。
 
-   中的每个值 `Name` 列 `shared-default` 工作表（不包括提交按钮）可以用作中的标头 `incoming` 工作表。 例如，请考虑下图，其中说明了“contact-us”表单的标题：
+   `shared-default`工作表的`Name`列中的每个值（不包括提交按钮）都可以用作`incoming`工作表中的标题。例如，请考虑下图，其中说明了“contact-us”表单的标题：
 
    ![“contact-us”表单的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
 
 
-1. 使用AEM Sidekick扩展预览表单更新。 您的工作表现在可以接受传入表单提交。
+1. 使用 AEM Sidekick 扩展预览表单更新。您的工作表现已准备好接受传入的表单提交。
 
    >[!NOTE]
    >
@@ -56,7 +56,7 @@ ht-degree: 64%
 
 将字段名称添加到 `incoming` 工作表后，您的表单便能接受提交。您可以预览表单并使用它向工作表提交数据。
 
-设置工作表以接收数据后，您可以 [使用自适应Forms块预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用POST请求](#use-admin-apis-to-send-data-to-your-sheet) 开始将数据发送到工作表。
+将工作表设置为接收数据后，您可以[使用 Adaptive Forms Block 预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)或[使用 POST 请求](#use-admin-apis-to-send-data-to-your-sheet)开始将数据发送到工作表。
 
 >[!WARNING]
 >
@@ -150,9 +150,9 @@ ht-degree: 64%
 
    您的表单现已能够接受数据。您还可以在电子表格中观察到以下变化：
 
-## 自动更改工作表在启用它接受数据之后。
+## 一旦启用接受数据，就会自动更改工作表。
 
-将工作表设置为接收数据后，您将看到电子表格中的以下更改：
+将工作表设置为接收数据后，您会在电子表格中观察到以下变化：
 
 一份名为“Slack”的工作表将会被添加到您的 Excel 工作簿或 Google 工作表中。在此工作表中，您可以在电子表格中引入新数据时为指定的 Slack 渠道配置自动通知。目前，AEM 仅支持向 AEM Engineering Slack 组织和 Adobe Enterprise 支持组织发送通知。
 
@@ -171,7 +171,7 @@ ht-degree: 64%
 
 ## 将数据发送到您的工作表 {#send-data-to-your-sheet}
 
-将工作表设置为接收数据后，您可以 [使用自适应Forms块预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) 或 [使用管理员API](#use-admin-apis-to-send-data-to-your-sheet) 开始将数据发送到工作表。
+将工作表设置为可接收数据后，您可以使用 Adaptive Forms Block [预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page)或[使用 Admin API](#use-admin-apis-to-send-data-to-your-sheet) 开始向该工作表传递数据。
 
 ### 使用管理 API 将数据发送到您的工作表
 
@@ -283,7 +283,7 @@ POST https://my-domain.com/email-form
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-接下来，您可以 [自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md).
+接下来，您可以[自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)。
 
 ## 另请参阅
 

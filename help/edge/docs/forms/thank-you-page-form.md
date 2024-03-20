@@ -1,31 +1,31 @@
 ---
-title: 在提交表单后显示自定义感谢消息
-description: 了解如何配置表单区块的感谢页面和重定向，以优化用户体验并简化用户历程。
+title: 提交表单后显示自定义感谢消息
+description: 了解如何配置 Forms Block 的感谢页面和重定向，优化用户体验并简化用户历程。
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
-# 在提交表单后显示自定义感谢消息
+# 提交表单后显示自定义感谢消息
 
-在用户提交表单后，通过感谢消息提供无缝体验至关重要。 这不仅证实提交成功，还提高了用户满意度，并指导他们进一步开展工作。
+用户提交表单后，通过感谢消息提供无缝体验至关重要。这不仅确认了提交成功，而且还提高了用户满意度并引导他们在历程中走得更远。
 
 ## 配置自定义感谢消息
 
-自适应Forms块的默认行为是在提交时显示以下感谢消息。 消息会显示在表单顶部。
+Adaptive Forms Block 的默认行为是在提交时显示感谢信息。该消息显示在表单的顶部。
 
-![默认感谢消息](/help/edge/assets/thank-you-message.png)
+![默认感谢信息](/help/edge/assets/thank-you-message.png)
 
 
-请按照以下步骤为自适应Forms块配置自定义感谢消息：
+请按照以下步骤为您的 Adaptive Forms Block 配置自定义感谢消息：
 
-1. 在本地计算机上或GitHub存储库中访问AEM项目。
+1. 访问本地计算机或 GitHub 存储库上的 AEM 项目。
 
-1. 导航到 [AEM项目文件夹]\blocks\form\submit.js文件进行编辑。
+1. 导航至 [AEM Project Folder]\blocks\form\submit.js 文件进行编辑。
 
 1. 找到以下代码
 
@@ -33,7 +33,7 @@ ht-degree: 13%
        thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
    ```
 
-1. 将默认消息替换为自定义消息。 例如，
+1. 将默认消息替换为您的自定义消息。例如，
 
 
    ```JavaScript
@@ -41,7 +41,7 @@ ht-degree: 13%
    ```
 
 
-1. 保存文件。 将更新后的文件提交到GitHub存储库。 现在，当您提交表单时，会显示自定义感谢消息。 例如，
+1. 保存该文件。将更新后的文件提交到您的 GitHub 存储库。现在，当您提交表单时，就会显示自定义感谢消息。例如，
 
 ![自定义感谢消息](/help/edge/assets/custom-thank-you-message.png)
 

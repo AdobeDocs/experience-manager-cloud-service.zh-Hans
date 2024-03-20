@@ -1,23 +1,23 @@
 ---
-title: 自适应表单块组件及其属性
+title: Adaptive Form Block 组件及其属性
 description: 本文档概述了 AEM Forms Edge Delivery Service 中可用的表单组件及其属性。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 80%
+ht-degree: 87%
 
 ---
 
-# 自适应表单块组件及其属性
+# Adaptive Form Block 组件及其属性
 
-AEM Forms Edge交付服务允许您使用各种组件创建用户友好的交互式表单。 这些组件可满足不同类型的数据收集需求，并且可以轻松定制以满足您的特定需求。
+AEM Forms Edge Delivery Services 允许您使用各种组件创建用户友好型交互式表单。这些组件可满足不同类型的数据收集需求，并且可以轻松定制以满足您的特定需求。
 
 
 ![包含某些组件和属性的示例电子表格](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-自适应Forms块会生成 [均匀HTML结构](/help/edge/docs/forms/style-theme-forms.md) 用于所有字段类型和容器（面板），确保一致性。 这种一致性结构让[表单样式设计](/help/edge/docs/forms/style-theme-forms.md)变得更加容易。
+Adaptive Forms Block 为所有字段类型和容器（面板）生成[统一的 HTML 结构](/help/edge/docs/forms/style-theme-forms.md)，确保一致性。这种一致性结构让[表单样式设计](/help/edge/docs/forms/style-theme-forms.md)变得更加容易。
 
 ## 可用组件
 
@@ -40,12 +40,12 @@ AEM Forms Edge交付服务允许您使用各种组件创建用户友好的交互
 
 ## 组件属性
 
-每个表单组件都带有各种属性，允许您控制其行为和外观。以下是自适应Forms块组件支持的属性：
+每个表单组件都带有各种属性，允许您控制其行为和外观。这里是 Adaptive Forms Block 组件支持的属性：
 
 
 | 属性 | 适用组件 | 详细信息 |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| 类型 | 所有 | 指定组件的类型。该属性决定输入字段的行为和外观。例如，对于文本输入，类型可以是“文本”、对于电子邮件输入来说是“电子邮件”、对于密码输入来说是“密码”。自适应Forms块支持  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的HTML5输入类型</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文本区域</a>， <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">选择</a>、和 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">字段集</a> 作为类型。 |
+| 类型 | 所有 | 指定组件的类型。该属性决定输入字段的行为和外观。例如，对于文本输入，类型可以是“文本”、对于电子邮件输入来说是“电子邮件”、对于密码输入来说是“密码”。Adaptive Forms Block 支持<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">所有有效的 HTML5 输入类型</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">文本区</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">选择</a>和<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">字段集</a>作为类型。 |
 | 名称 | 所有 | 标识表单提交的组件。名称属性在将表单数据提交到服务器时使用，将用户输入与特定字段相关联。 |
 | 标签 | 所有 | 向用户提供上下文信息。标签是显示在组件旁边的文本，指导用户输入哪些信息。 |
 | 价值 | 文本、密码、电子邮件、数字、范围、日期及其变体（本地日期时间、月、周、时间）、复选框、单选、隐藏、提交、按钮 | 指定组件的初始值。对于文本输入、文本区域和选择元素，这是显示的默认文本或选项。对于单选和复选框组件，这是选择它们时提交的值/数据。值属性可选，但对于复选框和单选输入应视为必要属性。 |
