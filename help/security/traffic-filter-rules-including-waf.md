@@ -2,10 +2,10 @@
 title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 9a535f7fa0a1e7b6f508e887787dd421bfffe8df
+source-git-commit: 9f23b91df3139115ca442de03457bb50a1e1cb71
 workflow-type: tm+mt
-source-wordcount: '3634'
-ht-degree: 90%
+source-wordcount: '3669'
+ht-degree: 91%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 90%
 可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。未来还将支持 RDE。
 
 [按照教程进行操作，](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)快速建立有关此功能的具体专业知识。
+
+>[!NOTE]
+>您是否对在CDN上配置流量的其他选项(包括修改请求/响应、声明重定向和代理到非AEM源)感兴趣？ [了解如何并试用它](/help/implementing/dispatcher/cdn-configuring-traffic.md) 加入率先采用者计划。
+
 
 ## 本文的结构 {#how-organized}
 
@@ -286,7 +290,7 @@ when:
 
 **示例 1**
 
-此规则阻止来自的请求 **IP 192.168.1.1**：
+此规则阻止来自&#x200B;**IP 192.168.1.1**&#x200B;的请求：
 
 ```
 kind: "CDN"
@@ -425,7 +429,7 @@ data:
 
 **示例 1**
 
-此规则会在客户端在过去10秒内超过每秒60个请求（每个CDN POP）的平均值时将其阻止5分钟：
+当客户端在过去 10 秒内超过平均 60 请求/秒（每个 CDN POP）时，此规则会阻止该客户端 5 分钟：
 
 ```
 kind: "CDN"
@@ -450,7 +454,7 @@ data:
 
 **示例 2**
 
-当路径/critical/resource在过去60秒内超过平均100请求/秒（每个CDN POP）时，阻止该路径上的请求：
+当过去 60 秒内平均超过 100 个请求/秒（每个 CDN POP）时，阻止路径 /ritic/resource 上的请求 60 秒：
 
 ```
 kind: "CDN"
