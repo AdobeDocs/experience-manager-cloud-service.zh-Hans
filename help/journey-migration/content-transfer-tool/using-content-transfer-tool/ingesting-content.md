@@ -2,10 +2,10 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
+source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 7%
+source-wordcount: '2534'
+ht-degree: 6%
 
 ---
 
@@ -155,6 +155,12 @@ ht-degree: 7%
 
 ### 由于违反唯一性约束，增补摄取失败 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_uuid"
+>title="唯一性约束违规"
+>abstract="非擦除摄取失败的常见原因是节点ID中的冲突。 只有一个冲突节点可以存在。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="增补摄取"
+
 导致此问题的常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是节点ID中的冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakConstraint0030：违反了唯一性约束 [jcr：uuid] 值为a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5： /some/path/jcr：content， /some/other/path/jcr：content
@@ -169,6 +175,12 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 ### 由于无法删除引用的节点，增补摄取失败 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
+>title="无法删除引用的节点"
+>abstract="非划出摄取失败的常见原因是目标实例上特定节点的版本冲突。 必须修正节点的版本。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="增补摄取"
+
 导致问题的另一个常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是目标实例上特定节点的版本冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
 >java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakIntegrity0001：无法删除引用的节点：8a2289f4-b904-4bd0-8410-15e41e0976a8
@@ -181,11 +193,22 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 ### 由于大型节点属性值而导致引入失败 {#ingestion-failure-due-to-large-node-property-values}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_bson"
+>title="大型节点属性"
+>abstract="摄取失败的常见原因是超出节点属性值的最大大小。 请根据相关文档，包括与BPA报告相关的文档，纠正这种情况。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="迁移先决条件"
+
 MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，摄取将失败，并且日志将包含 `BSONObjectTooLarge` 错误并指定哪个节点超过了最大值。 这是MongoDB限制。
 
 请参阅 `Node property value in MongoDB` 注释 [内容传输工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 以获取更多信息以及可帮助查找所有大型节点的Oak工具链接。 修复所有大小较大的节点后，再次运行提取和摄取。
 
 ### 引入已取消 {#ingestion-rescinded}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_rescinded"
+>title="引入已取消"
+>abstract="引入正在等待的提取未成功完成。 摄取已取消，因为无法执行。"
 
 使用正在运行的提取作为其源迁移集创建的摄取将耐心等待，直到提取成功，此时将正常开始。 如果提取失败或停止，则不会开始摄取及其索引作业，而是将取消摄取及其索引作业。 在这种情况下，请检查提取以确定其失败的原因，修复问题并重新开始提取。 运行固定提取后，可以计划新的引入。
 
