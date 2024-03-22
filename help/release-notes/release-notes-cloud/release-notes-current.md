@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 8a64e2ca1dc3987558c36346422ee43d202d9ecc
+source-git-commit: d0b7ec258a7a2c1d83f4d9a8983945a81c83aa2f
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 96%
@@ -111,7 +111,7 @@ Dynatrace 客户可监控其 AEM 使用情况。[了解如何](/help/implementin
 
 ### CDN 配置早期采用者计划 {#cdn-config-early-adopter}
 
-除了最近发布的 [流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md)，包括可选许可的Web应用程序防火墙(WAF)规则，有机会使用配置管道来声明和部署 [其他类型的CDN配置](/help/implementing/dispatcher/cdn-configuring-traffic.md). 通过发送电子邮件至&#x200B;**aemcs-cdn-config-adopter@adobe.com**&#x200B;来加入早期采用者计划，即可访问：
+除了最近发布的 [流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md)，包括可选许可的Web应用程序防火墙(WAF)规则，有机会使用配置管道来声明和部署 [其他类型的CDN配置](/help/implementing/dispatcher/cdn-configuring-traffic.md). 发送电子邮件至 **aemcs-cdn-config-adopter@adobe.com**，加入早期采用者计划，即可访问：
 * 301/302 客户端重定向
 * 将边缘请求代理到任意来源
 * URL 转换
@@ -125,4 +125,3 @@ Dynatrace 客户可监控其 AEM 使用情况。[了解如何](/help/implementin
 ## 迁移工具 {#migration-tools}
 
 您可以在[此处](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到迁移工具版本的完整列表。
-
