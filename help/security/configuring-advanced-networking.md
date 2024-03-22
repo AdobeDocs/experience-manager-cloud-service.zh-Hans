@@ -40,10 +40,10 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 * 程序可以提供单个高级网络选项（灵活端口出口、专用出口 IP 地址或 VPN）。
 * 高级联网对[沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)不可用。
-* 用户必须具有 **管理员**&#x200B;角色才能在您的程序中添加和配置网络基础架构。
+* 用户必须具有&#x200B;**管理员**&#x200B;角色才能在您的程序中添加和配置网络基础架构。
 * 必须先创建生产环境，然后才能将网络基础架构添加到程序中。
 * 您的网络基础架构必须与生产环境的主要区域位于同一区域。
-   * 如果您的生产环境有[额外的发布区域，](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)您可以创建镜像每个额外区域的额外网络基础架构。
+   * 如果您的生产环境有[其他发布区域，](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)您可以创建镜像每个额外区域的额外网络基础架构。
    * 您创建的网络基础架构数量不得超过生产环境中配置的最大区域数量。
    * 您可以定义与生产环境中的可用区域一样多的网络基础架构，但新基础架构必须与之前创建的基础架构类型相同。
    * 创建多个基础架构时，只能选择尚未创建高级网络基础架构的区域。
@@ -52,14 +52,14 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 使用高级网络功能需要两个步骤：
 
-1. 配置高级网络选项，无论是 [灵活端口出口、](#flexible-port-egress) [专用出口 IP 地址、](#dedicated-egress-ip-address) 还是 [VPN，](#vpn)必须首先在程序级别完成。
+1. 配置高级网络选项，无论是[灵活端口出口、](#flexible-port-egress)[专用出口 IP 地址](#dedicated-egress-ip-address)还是 [VPN，](#vpn)必须首先在程序级别完成。
 1. 要使用该选项，高级联网选项必须 [已在环境级别启用。](#enabling)
 
 这两个步骤都可以使用 Cloud Manager UI 或 Cloud Manager API 来完成。
 
 * 使用 Cloud Manager UI 时，这意味着使用程序级别的向导创建高级网络配置，然后编辑您希望启用配置的每个环境。
 
-* 使用 Cloud Manager API 时，会在程序级别调用`/networkInfrastructures` API 端点来声明所需的高级联网类型，然后调用每个环境的`/advancedNetworking`端点来启用基础架构并配置特定于环境的参数。
+* 使用 Cloud Manager API 时，会在程序级别调用 `/networkInfrastructures`API 端点来声明所需的高级联网类型，然后调用每个环境的 `/advancedNetworking` 端点来启用基础架构并配置特定于环境的参数。
 
 ## 灵活端口出口 {#flexible-port-egress}
 
@@ -79,15 +79,15 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
 
-1. 从&#x200B;**计划概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
+1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
 
    ![添加网络基础架构](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. 在启动的&#x200B;**添加网络基础架构**&#x200B;向导中，选择&#x200B;**灵活端口出口**&#x200B;以及从&#x200B;**区域**&#x200B;下拉菜单中选择应创建它的区域，然后点按或单击&#x200B;**继续**。
+1. 在启动的&#x200B;**添加网络基础架构**&#x200B;向导中，选择&#x200B;**灵活端口出口**&#x200B;以及从&#x200B;**区域**&#x200B;下拉菜单中选择应创建它的区域，然后点击或单击&#x200B;**继续**。
 
    ![配置灵活端口出口](assets/advanced-networking-ui-flexible-port-egress.png)
 
-1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。点按或单击&#x200B;**保存**&#x200B;以创建基础架构。
+1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。点击或单击&#x200B;**保存**&#x200B;以创建基础架构。
 
    ![确认灵活端口出口配置](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 ### API 配置 {#configuring-flexible-port-egress-provision-api}
 
-每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `flexiblePortEgress` 值。端点使用`network_id`，以及包括状态在内的其他信息进行响应。
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `flexiblePortEgress` 值。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
 
 在调用后，通常需要大约 15 分钟来预配联网基础设施。对 Cloud Manager 的[网络基础架构 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的调用将显示状态&#x200B;**“就绪”**。
 
@@ -214,7 +214,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 在与 SaaS 供应商（例如 CRM 供应商）集成，或者对于在 AEM as a Cloud Service 之外提供 IP 地址允许列表的其他集成时，专用 IP 地址可以增强安全性。列入允许列表通过将专用IP地址添加到，可确保只允许来自AEM Cloud Service的流量流向外部服务。 这是在允许的其他所有 IP 之外的流量。
 
-相同的专用 IP 应用于您的 Adobe 组织中的所有程序以及每个程序中的所有环境。它适用于创作和发布服务。
+相同的专用 IP 应用于您 Adobe 组织中的所有程序以及每个程序中的所有环境。它适用于创作和发布服务。
 
 如果不启用专用 IP 地址功能，来自 AEM as a Cloud Service 的流量会流经与其他客户共享的一组 IP。
 
@@ -244,15 +244,15 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
 
-1. 从&#x200B;**计划概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
+1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
 
    ![添加网络基础架构](assets/advanced-networking-ui-network-infrastructure.png)
 
-1. 在启动的&#x200B;**添加网络基础架构**&#x200B;向导中，选择&#x200B;**专用出口 IP 地址**&#x200B;以及从&#x200B;**区域**&#x200B;下拉菜单中选择应创建它的区域，然后点按或单击&#x200B;**继续**。
+1. 在启动的&#x200B;**添加网络基础架构**&#x200B;向导中，选择&#x200B;**专用出口 IP 地址**&#x200B;以及从&#x200B;**区域**&#x200B;下拉菜单中选择应创建它的区域，然后点击或单击&#x200B;**继续**。
 
    ![配置专用出口 IP 地址](assets/advanced-networking-ui-dedicated-egress.png)
 
-1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。点按或单击&#x200B;**保存**&#x200B;以创建基础架构。
+1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。点击或单击&#x200B;**保存**&#x200B;以创建基础架构。
 
    ![确认灵活端口出口配置](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
@@ -266,7 +266,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### API 配置 {#configuring-dedicated-egress-provision-api}
 
-每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `dedicatedEgressIp` 值。端点使用`network_id`，以及包括状态在内的其他信息进行响应。
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，只需传递 `kind` 参数和区域的 `dedicatedEgressIp` 值。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
 
 在调用后，通常需要大约 15 分钟来预配联网基础设施。对 Cloud Manager 的[网络基础架构 GET 端点](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的调用将显示状态&#x200B;**“就绪”**。
 
@@ -418,43 +418,43 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
 
-1. 从&#x200B;**计划概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
+1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
 
    ![添加网络基础架构](assets/advanced-networking-ui-network-infrastructure.png)
 
 1. 在启动的&#x200B;**添加网络基础架构**&#x200B;向导中，选择&#x200B;**虚拟专用网络**&#x200B;并在点击或单击&#x200B;**继续**&#x200B;之前提供必要的信息。
 
-   * **区域** - 这是应该创建基础架构的区域。
+   * **区域** – 这是应该创建基础架构的区域。
    * **地址空间**  — 地址空间只能是您自己的空间中的一个/26 CIDR （64个IP地址）或更大的IP范围。
       * 该值以后无法更改。
-   * **DNS 信息** - 这是远程 DNS 解析器的列表。
-      * 按 `Enter` 输入 DNS 服务器地址后添加另一个。
-      * 点击或单击 `X` 在地址之后将其删除。
-   * **共享密钥** - 这是您的 VPN 预共享密钥。
-      * 选择 **显示共享密钥**&#x200B;揭示密钥以仔细检查其值。
+   * **DNS 信息** – 这是远程 DNS 解析器的列表。
+      * 按 `Enter` 输入 DNS 服务器地址后可添加另一个地址。
+      * 点击或单击地址后的 `X` 将其移除。
+   * **共享密钥** – 这是您的 VPN 预共享密钥。
+      * 选择&#x200B;**显示共享密钥**&#x200B;可显示密钥，以便仔细检查其值。
 
    ![配置 VPN](assets/advanced-networking-ui-vpn.png)
 
-1. 在&#x200B;**连接**&#x200B;向导选项卡中，提供&#x200B;**连接名称**&#x200B;识别您的 VPN 连接并点击或单击 **添加连接**。
+1. 在&#x200B;**连接**&#x200B;向导选项卡中，提供&#x200B;**连接名称**&#x200B;识别您的 VPN 连接并点击或单击&#x200B;**添加连接**。
 
    ![添加连接](assets/advanced-networking-ui-vpn-add-connection.png)
 
-1. 在 **添加连接**&#x200B;对话框中，定义您的 VPN 连接并点击或单击 **保存**。
+1. 在&#x200B;**添加连接**&#x200B;对话框中，定义您的 VPN 连接并点击或单击&#x200B;**保存**。
 
-   * **连接名称** - 这是您的 VPN 连接的描述性名称，您在上一步中提供了该名称，可以在此处更新。
+   * **连接名称** – 这是您的 VPN 连接的描述性名称，您在上一步中提供了该名称，可以在此处更新。
    * **地址** - 这是 VPN 设备 IP 地址。
-   * **地址空间** - 这些是通过 VPN 路由的 IP 地址范围。
-      * 按 `Enter` 输入一个范围后添加另一个范围。
+   * **地址空间** – 这些是通过 VPN 路由的 IP 地址范围。
+      * 按 `Enter` 输入一个范围后可添加另一个范围。
       * 点击或单击范围后的`X`将其删除。
-   * **IP 安全策略** - 根据需要调整默认值
+   * **IP 安全策略** – 根据需要调整默认值
 
    ![添加 VPN 连接](assets/advanced-networking-ui-vpn-adding-connection.png)
 
-1. 对话框关闭，您返回到&#x200B;**连接**&#x200B;向导的选项卡。点按或单击&#x200B;**继续**。
+1. 对话框关闭，您返回到&#x200B;**连接**&#x200B;向导的选项卡。点击或单击&#x200B;**继续**。
 
    ![添加了 VPN 连接](assets/advanced-networking-ui-vpn-connection-added.png)
 
-1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。点按或单击&#x200B;**保存**&#x200B;以创建基础架构。
+1. **确认**&#x200B;选项卡总结了您的选择和后续步骤。点击或单击&#x200B;**保存**&#x200B;以创建基础架构。
 
    ![确认灵活端口出口配置](assets/advanced-networking-ui-vpn-confirm.png)
 
@@ -609,17 +609,17 @@ Header always set Cache-Control private
 
 ## 在环境中启用高级网络配置 {#enabling}
 
-为程序配置高级网络选项后，是否[灵活的端口出口，](#flexible-port-egress) [专用出口 IP 地址，](#dedicated-egress-ip-address) 或者 [VPN，](#vpn) 为了使用它，您必须在环境级别启用它。
+一旦为程序配置了高级网络选项，无论是[灵活的端口出口，](#flexible-port-egress)[专用出口 IP 地址，](#dedicated-egress-ip-address)还是 [VPN，](#vpn)要使用这些选项，必须在环境级别启用。
 
 当您为环境启用高级网络配置时，您可以启用可选的端口转发和非代理主机。可以根据各个环境来配置参数以提供灵活性。
 
-* **转发端口** - 应为除 80/443 之外的任何目标端口声明端口转发规则，但前提是不使用 http 或 https 协议。
+* **转发端口** – 应为除 80/443 之外的任何目标端口声明端口转发规则，但前提是不使用 http 或 https 协议。
    * 通过指定目标主机集（名称或IP和端口）来定义端口转发规则。
    * 通过 http/https 使用端口 80/443 的客户端连接仍必须在其连接中使用代理设置，以便将高级联网属性应用于此连接。
    * 对于每个目标主机，必须将指向的目标端口映射到30000到30999之间的端口。
    * 端口转发规则适用于所有高级网络类型。
 
-* **非代理主机** - 非代理主机允许您声明一组主机，这些主机应通过共享的 IPS 地址范围而不是专用的 IP 进行路由。
+* **非代理主机** – 非代理主机允许您声明一组主机，这些主机应通过共享的 IPS 地址范围而不是专用的 IP 进行路由。
    * 这可能很有用，因为通过共享 IPS 流出的流量可以进一步优化。
    * 非代理主机仅适用于专用出口 IP 地址和 VPN 高级网络类型。
 
@@ -633,13 +633,13 @@ Header always set Cache-Control private
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
 
-1. 从&#x200B;**计划概览**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，点击或单击&#x200B;**启用网络基础架构**。
+1. 从&#x200B;**程序概览**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，点击或单击&#x200B;**启用网络基础架构**。
 
    ![选择环境以启用高级网络](assets/advanced-networking-ui-enable-environments.png)
 
 1. **配置高级网络**&#x200B;对话框打开。
 
-1. 在 **非代理主机** 选项卡上，对于专用出口 IP 地址和 VPN，您可以选择定义一组主机，这些主机应通过共享 IP 地址范围而不是专用的 IP 进行路由，方法是在&#x200B;**非代理主机**&#x200B;字段中提供主机名，然后点击或单击&#x200B;**添加**。
+1. 在&#x200B;**非代理主机**&#x200B;选项卡上，对于专用出口 IP 地址和 VPN，您可以选择定义一组主机，这些主机应通过共享 IP 地址范围而不是专用的 IP 进行路由，方法是在&#x200B;**非代理主机**&#x200B;字段中提供主机名，然后点击或单击&#x200B;**添加**。
 
    * 该主机将添加到选项卡上的主机列表中。
    * 重复此步骤以添加多个主机。
@@ -648,7 +648,7 @@ Header always set Cache-Control private
 
    ![添加非代理主机](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. 在 **端口转发** 选项卡，如果不使用HTTP或HTTPS，则可以选择为80/443以外的任何目标端口定义端口转发规则。 提供 **名称**、**原始端口**&#x200B;和&#x200B;**目标端口**&#x200B;然后点击或点击 **添加**。
+1. 在 **端口转发** 选项卡，如果不使用HTTP或HTTPS，则可以选择为80/443以外的任何目标端口定义端口转发规则。 提供&#x200B;**名称**、**原始端口**&#x200B;和&#x200B;**目标端口**，然后点击或单击&#x200B;**添加**。
 
    * 该规则将添加到选项卡上的规则列表中。
    * 重复此步骤以添加多个规则。
@@ -658,17 +658,17 @@ Header always set Cache-Control private
 
 1. 点击或单击对话框中的&#x200B;**保存**&#x200B;将配置应用到环境。
 
-高级网络配置将应用于所选环境。返回&#x200B;**环境** 选项卡，您可以查看应用于所选环境的配置的详细信息及其状态。
+高级网络配置将应用于所选环境。返回&#x200B;**环境**&#x200B;选项卡，您可以查看应用于所选环境的配置的详细信息及其状态。
 
 ![配置了高级网络的环境](assets/advanced-networking-ui-configured-environment.png)
 
 ### 启用使用 API {#enabling-api}
 
-要为环境启用高级网络配置，必须为每个环境调用`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`端点。
+要为环境启用高级网络配置，必须为每个环境调用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端点。
 
 API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分钟后，对 Cloud Manager 环境 GET 端点的调用将显示状态 `ready`，指示对环境的更新已应用。
 
-每个环境的端口转发规则可以通过调用`PUT /program/{programId}/environment/{environmentId}/advancedNetworking`端点进行更新，包括完整的配置参数集而不是其子集。
+每个环境的端口转发规则可以通过调用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端点进行更新，包括完整的配置参数集而不是其子集。
 
 专用出口 IP 地址和 VPN 高级网络类型支持`nonProxyHosts`参数。这使您可以声明一组主机，这些主机应通过共享的 IP 地址范围而不是专用的 IP 进行路由。`nonProxyHost` URL 可能会遵循 `example.com` 或 `*.example.com` 的模式，这种情况下仅支持在域的开头使用通配符。
 
@@ -692,20 +692,20 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
 
-1. 从&#x200B;**计划概览**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，点击或单击省略号按钮。
+1. 从&#x200B;**程序概览**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，点击或单击省略号按钮。
 
    ![在程序级别选择编辑或删除高级网络](assets/advanced-networking-ui-edit-delete.png)
 
 1. 在省略号菜单中，选择&#x200B;**编辑**&#x200B;或&#x200B;**删除**。
 
-   * 如果您选择&#x200B;**编辑**，请按照上一节[启用用户界面](#enabling-ui)中描述的步骤更新信息然后点击或点击&#x200B;**保存**。
-   * 如果您选择 **删除**，请在&#x200B;**删除网络配置** 对话框中使用 **“删除”确认删除**&#x200B;或使用&#x200B;**取消**&#x200B;中止。
+   * 如果您选择&#x200B;**编辑**，请按照上一节[启用用户界面](#enabling-ui)中描述的步骤更新信息，然后点击或单击&#x200B;**保存**。
+   * 如果您选择 **删除**，请在&#x200B;**删除网络配置**&#x200B;对话框中使用“**删除**”确认删除或使用“**取消**”中止。
 
 更改将反映在&#x200B;**环境**&#x200B;选项卡上。
 
 ### 使用 API 编辑或删除 {#editing-api}
 
-要删除特定环境的高级网络，请调用`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
+要删除特定环境的高级网络，请调用 `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`。
 
 >[!TIP]
 >
@@ -722,23 +722,23 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
 >* 只有在所有环境都禁用其高级网络的情况下，删除操作才会删除基础架构。
 >* 如果网络基础架构的状态为&#x200B;**正在创建**、**正在更新**&#x200B;或&#x200B;**正在删除**，则无法编辑网络基础架构。
 >* 创建后，只能编辑 VPN 高级网络基础架构类型，并且只能编辑有限的字段。
->* 出于安全原因，在编辑 VPN 高级网络基础架构时，必须始终提供 **共享密钥** ，即使您没有编辑密钥本身。
+>* 出于安全原因，在编辑 VPN 高级网络基础架构时，必须始终提供&#x200B;**共享密钥**，即使您没有编辑密钥本身。
 
 ### 使用 UI 进行编辑和删除 {#delete-ui}
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录 Cloud Manager 并选择适当的组织。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
 
-1. 从&#x200B;**计划概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**&#x200B;标题。然后点击或单击要删除的基础架构旁边的省略号按钮。
+1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**&#x200B;标题。然后点击或单击要删除的基础架构旁边的省略号按钮。
 
    ![在程序级别选择编辑或删除高级网络](assets/advanced-networking-ui-delete-infrastructure.png)
 
 1. 在省略号菜单中，选择&#x200B;**编辑**&#x200B;或&#x200B;**删除**。
 
-1. 如果您选择&#x200B;**编辑**，则会打开 **编辑网络基础架构**&#x200B;向导。按照创建基础架构时所述的步骤根据需要进行编辑。
+1. 如果您选择&#x200B;**编辑**，则会打开&#x200B;**编辑网络基础架构**&#x200B;向导。按照创建基础架构时所述的步骤根据需要进行编辑。
 
-1. 如果您选择 **删除**，请在&#x200B;**删除网络配置** 对话框中使用 **“删除”确认删除**&#x200B;或使用&#x200B;**取消**&#x200B;中止。
+1. 如果您选择&#x200B;**删除**，请在&#x200B;**删除网络配置**&#x200B;对话框中使用“**删除**”确认删除或使用“**取消**”中止。
 
 更改将反映在&#x200B;**环境**&#x200B;选项卡上。
 
@@ -754,7 +754,7 @@ API 应在几秒钟内响应，指示状态 `updating`，然后在大约 10 分�
 
 1. [删除所有环境中的高级网络。](#editing-deleting-environments)
 1. [删除高级网络基础架构。](#editing-deleting-program)
-1. 创建您现在需要的高级网络基础架构类型，[灵活端口出口、](#flexible-port-egress) [专用出口 IP 地址](#dedicated-egress-ip-address) 或 [ VPN。](#vpn)
+1. 创建您现在需要的高级网络基础架构类型，[灵活端口出口、](#flexible-port-egress)[专用出口 IP 地址](#dedicated-egress-ip-address)或 [VPN。](#vpn)
 1. [在环境级别启用高级网络。](#enabling)
 
 >[!WARNING]
