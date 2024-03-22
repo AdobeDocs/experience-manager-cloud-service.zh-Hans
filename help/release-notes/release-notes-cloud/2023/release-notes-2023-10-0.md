@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.10.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.10.0 版的发行说明。'
 exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
-source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
+source-git-commit: b323fbe3a09de220c61c9b409d8754e43fe0a8d3
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 93%
 
 ### 新增功能 {#assets-features}
 
-**适用于 Adobe Express 的 AEM Assets 插件**：Experience Manager Assets 现在提供 [Adobe Express 插件](/help/assets/addon-adobe-express.md)。通过该插件可以直接从 Adobe Express 用户界面访问存储在 Experience Manager Assets 内的资源。可将在 AEM Assets 中管理的内容放入 Express 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。该加载项主要有以下几项优势：
+**适用于Adobe Express的AEM Assets加载项**：Experience Manager Assets现在为Adobe Express提供了一个加载项。 通过该插件可以直接从 Adobe Express 用户界面访问存储在 Experience Manager Assets 内的资源。可将在 AEM Assets 中管理的内容放入 Express 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。该加载项主要有以下几项优势：
 
 * 通过在 AEM 中编辑和保存新资源，提高了内容重用程度
 
