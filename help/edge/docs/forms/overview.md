@@ -4,9 +4,9 @@ description: AEM Forms Edge Delivery Services 专为实现最佳性能而构建�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1017'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ AEM Forms Edge Delivery Services 是一组可组合的服务，可用于实现�
 
 * **使用选定工具创建注册体验**：通过分离内容来源而提高创作效率。您可以立即使用基于文档的创作（Microsoft SharePoint 或 Google Drive）和 AEM 创作 (Adaptive Forms Editor)。您可以在同一表单网站上使用多个内容来源，并使用您首选的创作工具，例如 Microsoft Excel、Google Sheets 或 Adaptive Forms Editor。
 
-* **提供卓越的数字注册体验：** 提供数字注册体验，通过真实用户监控(RUM)快速加载和呈现并持续监控表单性能。 更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
+* **提供卓越的数字注册体验：**&#x200B;提供能够快速加载和呈现的数字注册体验，并通过真实用户监控 (RUM) 功能持续监控表单性能。更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
 
 * **使用开发人员友好的工具集：** AEM Forms Edge Delivery Services 使用纯 HTML、现代 CSS 和普通 JavaScript 来创建卓越的体验，避免特定框架的陡峭学习曲线。具有基本 Web 开发技能的开发人员可以自定义并轻松构建表单组件和体验。无需等待管道运行，只需将代码签入 GitHub，所做的更改就会生效。
 
@@ -30,7 +30,7 @@ AEM Forms Edge Delivery 服务让您在网站上创作表单的方式具有高�
 
 下图说明如何在 Microsoft Excel 或 Google Sheets（基于文档的创作）中编辑表单并将其发布到 Edge Delivery Services。它还显示了使用 Adaptive Forms Editor（AEM 创作）的 AEM 发布方法。
 
-![发布到Edge Delivery Services和AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
+![发布到 Edge Delivery Services 和 AEM](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
 AEM Forms Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，可在 [Google Sheets](/help/edge/docs/forms/create-forms.md) 或 [Microsoft Excel](/help/edge/docs/forms/create-forms.md) 中编写表单，并且可以使用 GitHub 存储库中的 CSS 和 JavaScript 来开发表单的组件。
 
@@ -60,7 +60,7 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客户可直接从其 Git
 * Google reCAPTCHA 集成用于垃圾邮件防护。
 * 能够根据特定需求创建自定义表单组件。
 * 直接将表单数据提交到 Microsoft Excel 或 Google Sheets 或电子邮件地址。
-* 通过真实用户监控(RUM)监控表单性能
+* 通过真实用户监控 (RUM) 功能监控表单性能
 
 #### AEM 创作功能
 
@@ -95,7 +95,7 @@ AEM 创作提供用于构建表单的 WYSIWYG 界面 (Adaptive Forms Editor)，�
 
 * [AEM Forms Edge Delivery Services 快速入门](/help/edge/docs/forms/tutorial.md)
 * [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
-* [设置您的 Google Sheets 或 Microsoft Excel 文件，开始接受数据](/help/edge/docs/forms/submit-forms.md)
+* [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
 * [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
 * [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)

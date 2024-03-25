@@ -3,7 +3,7 @@ title: AEM Forms Edge Delivery Services 快速入门- 开发人员教程
 description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。在十到二十分钟内，您将创建自己的表格。
 feature: Edge Delivery Services
 source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1850'
 ht-degree: 100%
 

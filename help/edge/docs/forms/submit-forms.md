@@ -4,13 +4,13 @@ description: 使用电子表格和 Adaptive Forms Block 字段更快地制作功
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1001'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 设置Google Sheets或Microsoft Excel文件以开始接受数据
+# 设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据
 
 
 在[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，就可以启用相应的电子表格开始接收数据。您可以手动启用电子表格以接受数据，或使用 Admin API 启用电子表格以接受数据。

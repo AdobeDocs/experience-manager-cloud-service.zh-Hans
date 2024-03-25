@@ -3,9 +3,9 @@ title: 使用电子表格管理表格数据
 description: 了解如何使用电子表格来管理各种值的表格数据，例如利用 Edge Delivery Services 站点为您的 AEM 提供元数据和重定向。
 feature: Edge Delivery Services
 source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '958'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -81,9 +81,9 @@ ht-degree: 92%
    * 编辑器根据需要向电子表格添加新行。
    * 要删除或移动行，请分别使用每行末尾的&#x200B;**“删除”**&#x200B;图标和每行开头的拖动手柄。
 
-## 发布电子表格路径.json {#paths-json}
+## 发布电子表格 paths.json {#paths-json}
 
-为了使AEM能够在电子表格中发布数据，您还需要更新 `paths.json` 您的项目的文件。
+为了使 AEM 能够发布您的电子表格中的数据，您还需要更新项目的 `paths.json` 文件。
 
 1. 在 GitHub 中打开您的项目的根目录。
 
@@ -106,7 +106,7 @@ ht-degree: 92%
 
    * 根据您的流程提交`main`或创建拉取请求。
 
-1. 定义完重定向并更新了路径映射后，请返回到 **站点** 控制台。
+1. 定义完重定向并更新路径映射后，返回 **Sites** 控制台。
 
 1. 点击或单击以选择您在控制台中创建的重定向电子表格，然后点击或单击操作栏中的&#x200B;**“快速发布”**&#x200B;发布电子表格。
 
@@ -133,11 +133,11 @@ ht-degree: 92%
 
 只需按照各部分中的相同步骤操作即可[创建电子表格](#spreadsheet)和[更新 paths.json](#paths-json)，选择合适的模板并`paths.json`相应地更新文件。
 
-对象 [配置](https://www.aem.live/docs/configuration)， [标题](https://www.aem.live/docs/custom-headers) 和 [元数据](https://www.aem.live/docs/bulk-metadata) 确保添加映射以将它们发布到默认位置：
+对于[配置](https://www.aem.live/docs/configuration)、[标头](https://www.aem.live/docs/custom-headers)和[元数据](https://www.aem.live/docs/bulk-metadata)，请确保添加一项映射，以将其发布到默认位置：
 
-* 配置： `/.helix/config.json`
-* 标头： `/.helix/headers.json`
-* 元数据： `/metadata.json`
+* 配置：`/.helix/config.json`
+* 标头：`/.helix/headers.json`
+* 元数据：`/metadata.json`
 
 此外，您还可以用任意列[创建您自己的电子表格](#own-spreadsheet)供您自己使用。
 
