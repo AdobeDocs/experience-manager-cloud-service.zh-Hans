@@ -829,7 +829,7 @@ ht-degree: 99%
       + 开始使用 {#getting-started-eds-forms}
          + [快速入门](/help/edge/docs/forms/tutorial.md)
          + [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
-         + [设置您的 Google Sheets 或 Microsoft Excel 文件，开始接受数据](/help/edge/docs/forms/submit-forms.md)
+         + [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
          + [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
          + [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
          + [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
@@ -976,7 +976,7 @@ ht-degree: 99%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
-      + [高级联网](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
+      + [高级网络](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + SSL 证书{#manage-ssl-certificates}
          + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
@@ -1146,8 +1146,8 @@ ht-degree: 99%
       + [将 Dispatcher 配置从 AMS 迁移到 AEM as a Cloud Service](/help/implementing/dispatcher/ams-aem.md)
       + [使用旧版 Dispatcher 工具进行验证和调试](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
-      + [在CDN上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [配置CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md)
+      + [在 CDN 上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [配置 CDN 错误页面](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service 中的缓存](/help/implementing/dispatcher/caching.md)
 + 连接器 {#connectors}
    + [实施 AEM 连接器](/help/connectors/implement.md)
