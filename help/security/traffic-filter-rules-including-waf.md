@@ -3,9 +3,9 @@ title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 source-git-commit: 38a16251372ee6ba77687f524e5057e00f16f58e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3669'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 91%
 [按照教程进行操作，](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)快速建立有关此功能的具体专业知识。
 
 >[!NOTE]
->您是否对在CDN上配置流量的其他选项(包括修改请求/响应、声明重定向和代理到非AEM源)感兴趣？ [了解如何并试用它](/help/implementing/dispatcher/cdn-configuring-traffic.md) 加入率先采用者计划。
+>对在 CDN 上配置流量的其他选项感兴趣（包括修改请求/响应、声明重定向以及代理到非 AEM 来源）？[通过加入早期采用者计划了解如何操作并进行尝试](/help/implementing/dispatcher/cdn-configuring-traffic.md)。
 
 
 ## 本文的结构 {#how-organized}
@@ -238,9 +238,9 @@ when:
 
 | **名称** | **允许的属性** | **含义** |
 |---|---|---|
-| **allow** | `wafFlags` （可选）， `alert` （可选，尚未发布） | 如果 wafFlags 不存在，则停止进一步的规则处理并继续提供响应。如果wafFlags存在，它将禁用指定的WAF保护并继续执行进一步的规则处理。 <br>如果指定警报，则在5分钟时间范围内触发规则10次时，将发送操作中心通知。 此功能尚未发布；请参阅 [流量过滤器规则警报](#traffic-filter-rules-alerts) 部分，以了解如何加入率先采用者计划。 |
-| **block** | `status, wafFlags` （可选且互斥）， `alert` （可选，尚未发布） | 如果 wafFlags 不存在，则绕过所有其他属性来返回 HTTP 错误，错误代码由状态属性定义或默认为 406。如果wafFlags存在，则它启用指定的WAF保护并继续进一步的规则处理。 <br>如果指定警报，则在5分钟时间范围内触发规则10次时，将发送操作中心通知。 此功能尚未发布；请参阅 [流量过滤器规则警报](#traffic-filter-rules-alerts) 部分，以了解如何加入率先采用者计划。 |
-| **log** | `wafFlags` （可选）， `alert` （可选，尚未发布） | 记录规则已触发这一事实，否则对处理不起作用。wafFlags无效。 <br>如果指定警报，则在5分钟时间范围内触发规则10次时，将发送操作中心通知。 此功能尚未发布；请参阅 [流量过滤器规则警报](#traffic-filter-rules-alerts) 部分，以了解如何加入率先采用者计划。 |
+| **allow** | `wafFlags`（可选），`alert`（可选，尚未发布） | 如果 wafFlags 不存在，则停止进一步的规则处理并继续提供响应。如果 wafFlags 存在，则禁用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
+| **block** | `status, wafFlags`（可选且互斥），`alert`（可选，尚未发布） | 如果 wafFlags 不存在，则绕过所有其他属性来返回 HTTP 错误，错误代码由状态属性定义或默认为 406。如果 wafFlags 存在，则启用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
+| **log** | `wafFlags`（可选），`alert`（可选，尚未发布） | 记录规则已触发这一事实，否则对处理不起作用。wafFlags 不起作用。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
 
 ### WAF 标志列表 {#waf-flags-list}
 
@@ -471,18 +471,18 @@ data:
         rateLimit: { limit: 100, window: 60, penalty: 60 }
 ```
 
-## 流量过滤器规则警报 {#traffic-filter-rules-alerts}
+## 流量筛选规则警报 {#traffic-filter-rules-alerts}
 
 >[!NOTE]
 >
->此功能尚未发布。 要通过率先采用者计划获得访问权限，请发送电子邮件至 **aemcs-waf-adopter@adobe.com**.
+>此功能尚未发布。要通过早期采用者项目获得访问权限，请发送电子邮件至 **aemcs-waf-adopter@adobe.com**。
 
-可以将规则配置为在5分钟内10次触发操作中心通知时发送该通知，从而在发生某些流量模式时向您发出警报，以便您采取必要措施。 了解有关 [操作中心](/help/operations/actions-center.md)，包括如何设置接收电子邮件所需的通知配置文件。
+可以将规则配置为在 5 分钟内触发 10 次时发送“操作中心”通知，从而在出现某些流量模式时向您发出警报，以便您采取任何必要的措施。详细了解[操作中心](/help/operations/actions-center.md)，包括如何设置接收电子邮件所需的通知配置文件。
 
-![操作中心通知](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
+![行动中心通知](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-警报属性(当前带有 *试验性* 由于该功能尚未发布，因此可以将它应用于所有操作类型（允许、阻止、日志）的操作节点。
+警报属性（目前前缀为 *experimental*，因为该功能尚未发布）可以应用于所有操作类型（允许、阻止、日志）的操作节点。
 
 ```
 kind: "CDN"
@@ -501,7 +501,7 @@ data:
 
 ## CDN 日志 {#cdn-logs}
 
-通过 AEM as a Cloud Service 可访问 CDN 日志，这些日志对于包括缓存命中率优化以及配置流量过滤规则在内的诸多用例都很有用。在选择创作和发布服务时，CDN 日志显示在 Cloud Manager 的&#x200B;**下载日志**&#x200B;对话框中。
+通过 AEM as a Cloud Service 可访问 CDN 日志，这些日志对于包括缓存命中率优化以及配置流量筛选规则在内的诸多用例都很有用。在选择创作和发布服务时，CDN 日志显示在 Cloud Manager 的&#x200B;**下载日志**&#x200B;对话框中。
 
 CDN 日志可能会延迟最多五分钟。
 

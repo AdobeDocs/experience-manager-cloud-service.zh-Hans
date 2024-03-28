@@ -3,9 +3,9 @@ title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，如 VPN 或者灵活或专用出口 IP 地址
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 01b55f2ff06d3886724dbb2c25d0c109a5ab6aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5142'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service 提供以下高级网络选项：
 使用高级网络功能需要两个步骤：
 
 1. 配置高级网络选项，无论是[灵活端口出口、](#flexible-port-egress)[专用出口 IP 地址](#dedicated-egress-ip-address)还是 [VPN，](#vpn)必须首先在程序级别完成。
-1. 要使用该选项，高级联网选项必须 [已在环境级别启用。](#enabling)
+1. 要使用高级网络选项，必须[在环境级别启用。](#enabling)
 
 这两个步骤都可以使用 Cloud Manager UI 或 Cloud Manager API 来完成。
 
@@ -212,7 +212,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## 专用出口 IP 地址 {#dedicated-egress-ip-address}
 
-在与 SaaS 供应商（例如 CRM 供应商）集成，或者对于在 AEM as a Cloud Service 之外提供 IP 地址允许列表的其他集成时，专用 IP 地址可以增强安全性。列入允许列表通过将专用IP地址添加到，可确保只允许来自AEM Cloud Service的流量流向外部服务。 这是在允许的其他所有 IP 之外的流量。
+在与 SaaS 供应商（例如 CRM 供应商）集成，或者对于在 AEM as a Cloud Service 之外提供 IP 地址允许列表的其他集成时，专用 IP 地址可以增强安全性。通过将专用 IP 地址添加到允许列表，可以确保只有来自您的 AEM Cloud Service 的流量允许流向外部服务。这是在允许的其他所有 IP 之外的流量。
 
 相同的专用 IP 应用于您 Adobe 组织中的所有程序以及每个程序中的所有环境。它适用于创作和发布服务。
 
@@ -425,7 +425,7 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 1. 在启动的&#x200B;**添加网络基础架构**&#x200B;向导中，选择&#x200B;**虚拟专用网络**&#x200B;并在点击或单击&#x200B;**继续**&#x200B;之前提供必要的信息。
 
    * **区域** – 这是应该创建基础架构的区域。
-   * **地址空间**  — 地址空间只能是您自己的空间中的一个/26 CIDR （64个IP地址）或更大的IP范围。
+   * **地址空间** – 地址空间只能是您自己空间中的 1 /26 CIDR（64 个 IP 地址）或更大的 IP 范围。
       * 该值以后无法更改。
    * **DNS 信息** – 这是远程 DNS 解析器的列表。
       * 按 `Enter` 输入 DNS 服务器地址后可添加另一个地址。
@@ -462,7 +462,7 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 ### API 配置 {#configuring-vpn-api}
 
-每个程序运行一次，POST `/program/<programId>/networkInfrastructures` 调用端点，传入配置信息的负载，包括：值 **vpn** 对于 `kind` 参数、区域、地址空间（CIDR列表 — 请注意，以后无法修改此列表）、DNS解析器（用于解析网络中的名称）以及VPN连接信息，例如网关配置、共享VPN密钥以及IP安全策略。 端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
+每个程序调用一次 POST `/program/<programId>/networkInfrastructures` 端点，传入配置信息的负载，包括：`kind` 参数的 **VPN** 值、区域、地址空间（CIDR 列表，请注意此项以后不可修改）、DNS 解析器（用于解析客户网络中的名称）以及 VPN 连接信息（例如网关配置、共享 VPN 密钥以及 IP 安全性策略）。端点使用 `network_id` 以及包括状态在内的其他信息进行响应。
 
 在调用后，通常需要 45 到 60 分钟来预配联网基础设施。可以调用 API 的 GET 方法以返回当前状态，这最终会从 `creating` 翻转到 `ready`。请参考 API 文档来了解所有状态。
 
@@ -582,12 +582,12 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>不适用</td>
-    <td>AEM 侧 VPN 网关的 IP。您的网络工程团队可以使用此项来仅允许从特定IP地址到VPN网关的VPN连接。 </td>
+    <td>AEM 侧 VPN 网关的 IP。您的网络工程团队可以使用此项来仅允许源自特定 IP 地址的 VPN 连接进入您的 VPN 网关。 </td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>从VPN的AEM端到您端的流量IP。 这可以在您的配置中列入允许列表，以确保只能从AEM建立连接。</td>
-    <td>如果要允许通过VPN访问AEM，则应配置CNAME DNS条目以映射您的自定义域和/或 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 敬这个。</td>
+    <td>流量从 AEM 端的 VPN 流向您所在的一端时使用的 IP。这可以列入您的配置的允许列表中，以确保只接受来自 AEM 的连接。</td>
+    <td>如果您希望允许通过 VPN 访问 AEM，则应该配置 CNAME DNS 条目以将您的自定义域和/或 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 和/或 <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> 映射到此项。</td>
   </tr>
 </tbody>
 </table>
@@ -614,9 +614,9 @@ Header always set Cache-Control private
 当您为环境启用高级网络配置时，您可以启用可选的端口转发和非代理主机。可以根据各个环境来配置参数以提供灵活性。
 
 * **转发端口** – 应为除 80/443 之外的任何目标端口声明端口转发规则，但前提是不使用 http 或 https 协议。
-   * 通过指定目标主机集（名称或IP和端口）来定义端口转发规则。
+   * 端口转发规则是通过指定目标主机集（名称或 IP 和端口）来定义的。
    * 通过 http/https 使用端口 80/443 的客户端连接仍必须在其连接中使用代理设置，以便将高级联网属性应用于此连接。
-   * 对于每个目标主机，必须将指向的目标端口映射到30000到30999之间的端口。
+   * 对于每个目标主机，您必须将指向的目标端口映射到 30000 到 30999 之间的端口。
    * 端口转发规则适用于所有高级网络类型。
 
 * **非代理主机** – 非代理主机允许您声明一组主机，这些主机应通过共享的 IPS 地址范围而不是专用的 IP 进行路由。
@@ -648,7 +648,7 @@ Header always set Cache-Control private
 
    ![添加非代理主机](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. 在 **端口转发** 选项卡，如果不使用HTTP或HTTPS，则可以选择为80/443以外的任何目标端口定义端口转发规则。 提供&#x200B;**名称**、**原始端口**&#x200B;和&#x200B;**目标端口**，然后点击或单击&#x200B;**添加**。
+1. 在&#x200B;**端口转发**&#x200B;选项卡上，如果不使用 HTTP 或 HTTPS，您可以选择为除 80/443 之外的任何目标端口定义端口转发规则。提供&#x200B;**名称**、**原始端口**&#x200B;和&#x200B;**目标端口**，然后点击或单击&#x200B;**添加**。
 
    * 该规则将添加到选项卡上的规则列表中。
    * 重复此步骤以添加多个规则。

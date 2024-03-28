@@ -3,9 +3,9 @@ title: 已弃用和已删除的功能
 description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已弃用和已删除的功能的发行说明。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2146'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资产微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 复制代理的“分发”选项卡下的树复制 UI（在 2021 年 9 月 30 日后被删除） | [管理出版物](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)方法 |
 | [!DNL Foundation] | 复制代理管理屏幕的“分发”选项卡和复制 API 都不能用于复制超过 10MB 的内容包。请改用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | 使用从Adobe Developer控制台项目生成的凭据进行集成时，将逐渐失去对服务帐户(JWT)凭据的支持。 2024年5月1日或之后，无法在Adobe Developer控制台中创建新的服务帐户(JWT)凭据，但现有服务帐户(JWT)凭据仍可用于已配置的集成，直到2025年1月1日为止，届时现有服务帐户(JWT)凭据将不再有效，客户必须迁移到OAuth服务器到服务器凭据。 [了解详情](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) 到OAuth服务器到服务器凭据。 |
+| [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成将会逐步失去对服务帐户 (JWT) 凭据的支持。2024 年 5 月 1 日或之后，无法在 Adobe Developer Console 中创建新的服务帐户 (JWT) 凭据，但在 2025 年 1 月 1 日之前，现有服务帐户 (JWT) 凭据仍可用于已配置的集成，届时现有服务帐户 (JWT) 凭据将不再有效，客户必须迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)到 OAuth 服务器到服务器凭据。 |
 
 ## 已删除功能 {#removed-features}
 
