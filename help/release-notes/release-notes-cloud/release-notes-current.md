@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 47e85190c2aacfb4429408ce159fecb9b0646569
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -111,7 +111,7 @@ Dynatrace 客户可监控其 AEM 使用情况。[了解如何](/help/implementin
 
 ### CDN 配置早期采用者计划 {#cdn-config-early-adopter}
 
-除了最近发布的 [流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md)，包括可选许可的Web应用程序防火墙(WAF)规则，有机会使用配置管道来声明和部署 [其他类型的CDN配置](/help/implementing/dispatcher/cdn-configuring-traffic.md). 发送电子邮件至 **aemcs-cdn-config-adopter@adobe.com**，加入早期采用者计划，即可访问：
+除了最近发布的[流量过滤规则](/help/security/traffic-filter-rules-including-waf.md)（包括可许可的 Web 应用程序防火墙 (WAF) 规则），还有机会使用配置管道声明和部署[其他类型的 CDN 配置](/help/implementing/dispatcher/cdn-configuring-traffic.md)。发送电子邮件至 **aemcs-cdn-config-adopter@adobe.com**，加入早期采用者计划，即可访问：
 * 301/302 客户端重定向
 * 将边缘请求代理到任意来源
 * URL 转换
