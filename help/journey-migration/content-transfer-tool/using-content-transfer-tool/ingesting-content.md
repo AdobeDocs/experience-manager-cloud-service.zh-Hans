@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
 source-wordcount: '2752'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -153,13 +153,13 @@ ht-degree: 6%
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 由于违反唯一性约束，增补摄取失败 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
+### 因唯一性约束违规导致的追加数据引入失败 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
->title="唯一性约束违规"
->abstract="非擦除摄取失败的常见原因是节点ID中的冲突。 只有一个冲突节点可以存在。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="增补摄取"
+>title="违反唯一性约束"
+>abstract="非擦除引入失败的常见原因是节点 ID 冲突。冲突节点只能存在一个。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加数据引入"
 
 导致此问题的常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是节点ID中的冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
@@ -173,13 +173,13 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 必须手动解决此冲突。 熟悉内容的用户必须确定必须删除这两个节点中的哪个节点，并牢记引用该节点的其他内容。 解决方案可能要求再次执行增补提取而不考虑违规节点。
 
-### 由于无法删除引用的节点，增补摄取失败 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
+### 无法删除引用节点导致追加数据引入失败 {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="无法删除引用的节点"
->abstract="非划出摄取失败的常见原因是目标实例上特定节点的版本冲突。 必须修正节点的版本。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="增补摄取"
+>abstract="非擦除引入失败的常见原因是目标实例上特定节点的版本冲突。必须修复节点的版本。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加数据引入"
 
 导致问题的另一个常见原因 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 失败是目标实例上特定节点的版本冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
@@ -191,12 +191,12 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 
 最佳实践表明 **非划出** 摄取必须使用包括版本的迁移集运行，在迁移历程完成之前，尽可能少地修改目标上的内容至关重要。 否则，可能会发生这些冲突。
 
-### 由于大型节点属性值而导致引入失败 {#ingestion-failure-due-to-large-node-property-values}
+### 由于节点属性值过大导致引入失败 {#ingestion-failure-due-to-large-node-property-values}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
->title="大型节点属性"
->abstract="摄取失败的常见原因是超出节点属性值的最大大小。 请根据相关文档，包括与BPA报告相关的文档，纠正这种情况。"
+>title="大节点属性"
+>abstract="引入失败的常见原因是节点属性值超过了最大值。请遵循文档（包括与 BPA 报告相关的文档）来纠正这种情况。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="迁移先决条件"
 
 MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，摄取将失败，并且日志将包含 `BSONObjectTooLarge` 错误并指定哪个节点超过了最大值。 这是MongoDB限制。
@@ -208,7 +208,7 @@ MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_rescinded"
 >title="引入已取消"
->abstract="引入正在等待的提取未成功完成。 摄取已取消，因为无法执行。"
+>abstract="等待中的数据引入提取并未成功完成。引入操作已撤销，无法继续执行。"
 
 使用正在运行的提取作为其源迁移集创建的摄取将耐心等待，直到提取成功，此时将正常开始。 如果提取失败或停止，则不会开始摄取及其索引作业，而是将取消摄取及其索引作业。 在这种情况下，请检查提取以确定其失败的原因，修复问题并重新开始提取。 运行固定提取后，可以计划新的引入。
 
