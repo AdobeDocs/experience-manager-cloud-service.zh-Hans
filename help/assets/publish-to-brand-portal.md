@@ -5,7 +5,7 @@ contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
+source-git-commit: 9e09dc7a5226a2b8da7c796a8a8c4480b99eeb3b
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 85%
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/brand-portal-publish-folder.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/brandportal/brand-portal-publish-assets) |
 | AEM as a Cloud Service | 本文 |
 
 作为 Adobe Experience Manager (AEM) Assets 管理员，您可以将资产、文件夹和收藏集发布到 AEM Assets Brand Portal 实例。此外，您还可以安排在稍后的日期或时间执行资产或文件夹的发布工作流。发布后，Brand Portal 用户可以访问资产、文件夹和收藏集，并将其进一步分发给其他用户。
