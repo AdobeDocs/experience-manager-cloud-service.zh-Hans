@@ -1,18 +1,18 @@
 ---
 title: 将资产、文件夹和收藏集发布到 Brand Portal
 description: 将资产、文件夹和收藏集发布到 Brand Portal。
-contentOwner: Vishabh Gupta
+contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
+source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 90%
+source-wordcount: '1280'
+ht-degree: 85%
 
 ---
 
-# 将资产发布到 Brand Portal {#publish-assets-to-brand-portal}
+# 将资源发布到Brand Portal {#publish-assets-to-brand-portal}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -25,9 +25,9 @@ ht-degree: 90%
 
 如果您随后在 AEM Assets 中对原始资产、文件夹或收藏集进行了修改，则在从 AEM Assets 重新发布之前，这些更改不会反映在 Brand Portal 中。此功能可确保在 Brand Portal 中不会出现进行中的更改。只有管理员发布的已批准更改才会出现在 Brand Portal 中。
 
-* [将资产发布到 Brand Portal](#publish-assets-to-bp)
-* [将文件夹发布到 Brand Portal](#publish-folders-to-brand-portal)
-* [将收藏集发布到 Brand Portal](#publish-collections-to-brand-portal)
+* [将资源发布到Brand Portal](#publish-assets-to-bp)
+* [将文件夹发布到Brand Portal](#publish-folders-to-brand-portal)
+* [将收藏集发布到Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 90%
 >资源应批量发布。 建议批次大小为15 K。
 > 对象 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]，则在实验室条件下观察到的传输速率为每小时1000个资源。 观察到此速率，平均大小为10 MB资源。
 
-## 将资产发布到 Brand Portal {#publish-assets-to-bp}
+## 将资源发布到Brand Portal {#publish-assets-to-bp}
 
 以下是将资产从 AEM Assets 发布到 Brand Portal 的步骤：
 
@@ -75,7 +75,9 @@ ht-degree: 90%
 
    在&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL 稍后]**。
 
-   ![publishlaterbp-1](assets/publishlaterbp-1.png)
+   <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
+
+   ![稍后发布](assets/publish-later.png)
 
 1. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。单击&#x200B;**[!UICONTROL 下一步]**。
 
@@ -83,28 +85,26 @@ ht-degree: 90%
 
 1. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;中指定&#x200B;**[!UICONTROL 工作流标题]**。单击&#x200B;**[!UICONTROL 稍后发布]**。
 
-   ![publishworkflow](assets/publishworkflow.png)
+   <!--![publishworkflow](assets/publishworkflow.png)-->
 
-登录 Brand Portal 界面可查看已发布的资产（取决于您的计划日期或时间）。
-
-![bp_landingpage](assets/bp_landingpage.png)
+   ![发布工作流](assets/publish-workflow.png)
 
 >[!NOTE]
 >
 > * DAM-Users组的现有用户具有路径“/conf/global/settings/cloudconfigs/mediaportal”的读取权限
->* 新用户（或非管理员用户）需要以下权限才能在Brand Portal上发布。
-> 路径:
-> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; ： jcr：read
->/libs ： jcr：read
->/conf ： jcr：read
->/content ： jcr：read， crx：replicate
->/content/dam/ ： jcr：read，modify， crx：replicate
+> * 新用户（或非管理员用户）需要以下权限才能在Brand Portal上发布。
+> 路径：
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## 将文件夹发布到 Brand Portal {#publish-folders-to-brand-portal}
+## 将文件夹发布到Brand Portal {#publish-folders-to-brand-portal}
 
 您可以立即发布或取消发布资产文件夹，或安排在稍后的日期或时间执行操作。
 
-### 将文件夹发布到 Brand Portal {#publish-folders-to-bp}
+### 将文件夹发布到Brand Portal {#publish-folders-to-bp}
 
 1. 在 Assets 控制台中，选择要发布的文件夹，然后单击工具栏中的&#x200B;**[!UICONTROL 快速发布]**&#x200B;选项。
 
@@ -131,8 +131,7 @@ ht-degree: 90%
    此时将显示一条消息，表明文件夹已排队等候发布到 Brand Portal。登录到 Brand Portal 界面可查看已发布的文件夹。
 
 1. **稍后发布文件夹**
-
-   要计划在稍后的日期或时间发布资产文件夹，请执行以下操作：
+要计划在稍后的日期或时间发布资产文件夹，请执行以下操作：
 
    1. 选择计划发布的文件夹，然后单击顶部工具栏中的&#x200B;**[!UICONTROL 管理发布]**。
    1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;中，选择&#x200B;**[!UICONTROL 发布到 Brand Portal]**。
@@ -141,15 +140,31 @@ ht-degree: 90%
 
    1. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。单击&#x200B;**[!UICONTROL 下一步]**。
 
-      ![publishlaterbp](assets/publishlaterbp.png)
+      <!--![publishlaterbp](assets/publishlaterbp.png)-->
+
+   ![稍后发布文件夹](assets/publish-later-folder.png)
 
    1. 在&#x200B;**[!UICONTROL 范围]**&#x200B;中确认您的选择。单击&#x200B;**[!UICONTROL 下一步]**。
 
    1. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;下指定工作流标题。单击&#x200B;**[!UICONTROL 稍后发布]**。
 
-      ![manageschedulepub](assets/manageschedulepub.png)
+      <!--![manageschedulepub](assets/manageschedulepub.png)-->
 
-### 从 Brand Portal 取消发布文件夹 {#unpublish-folders-from-brand-portal}
+   ![发布工作流](assets/publish-workflow.png)
+
+### 查看发布到Brand Portal的文件或文件夹 {#view-published-file-folder}
+
+1. 登录 Brand Portal 界面可查看已发布的资产（取决于您的计划日期或时间）。
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. 切换到列表视图 ![列表视图](assets/list-view.svg) 以查看资源的当前发布状态。
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![已生成报告状态](assets/report-status.JPG)
+
+### 从Brand Portal取消发布文件夹 {#unpublish-folders-from-brand-portal}
 
 您可以通过从 AEM Assets 实例中取消发布已发布到 Brand Portal 的任何资产文件夹，来删除该文件夹。取消发布原始文件夹后，Brand Portal 用户将无法再使用其副本。
 
@@ -195,7 +210,7 @@ ht-degree: 90%
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## 将收藏集发布到 Brand Portal {#publish-collections-to-brand-portal}
+## 将收藏集发布到Brand Portal {#publish-collections-to-brand-portal}
 
 您可以从 AEM Assets 云实例中发布或取消发布收藏集。
 
