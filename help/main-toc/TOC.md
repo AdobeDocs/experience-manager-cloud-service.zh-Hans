@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 96ec736b5774fc48d006264b316e390bf022c0e9
-workflow-type: ht
-source-wordcount: '4828'
-ht-degree: 100%
+source-git-commit: f3192858ea6fcf87788fafe07aa8870211dbb637
+workflow-type: tm+mt
+source-wordcount: '4832'
+ht-degree: 99%
 
 ---
 
@@ -928,6 +928,8 @@ ht-degree: 100%
          + [使用 AEM 为 Headless 创作基本内容](/help/journey-headless/author/basics.md)
          + [了解如何在内容片段中使用参考内容](/help/journey-headless/author/references.md)
          + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
++ 创作AI {#generative-ai}
+   + [生成变体](/help/generative-ai/generate-variations.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
