@@ -2,7 +2,7 @@
 title: 属性和项类型
 description: 了解通用编辑器所需的数据属性和项类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: 5ddd4bbcce10c5cda97e3ea3f6750b209b5743f0
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 84%
@@ -13,8 +13,6 @@ ht-degree: 84%
 # 属性和类型 {#attributes-types}
 
 了解通用编辑器所需的数据属性和项类型。
-
-{{universal-editor-status}}
 
 ## 简介 {#introduction}
 

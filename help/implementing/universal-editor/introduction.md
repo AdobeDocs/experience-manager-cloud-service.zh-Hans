@@ -2,9 +2,9 @@
 title: Universal Editor 简介
 description: 了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地编辑任何 Headless 和 Headful 体验。了解它如何帮助内容作者投放卓越的体验、提高他们的内容速度以及如何提供高水平的开发人员体验。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: b6548d39ce02006d91f1953c878e08a1c0903563
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '868'
 ht-degree: 91%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 91%
 # Universal Editor 简介 {#introduction}
 
 了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地编辑任何 Headless 和 Headful 体验。了解它如何帮助内容作者投放卓越的体验、提高他们的内容速度以及如何提供高水平的开发人员体验。
-
-{{universal-editor-status}}
 
 ## 背景 {#background}
 
@@ -79,12 +77,6 @@ ht-degree: 91%
 营销从业人员想创建根据给定上下文的布局定制的内容，以提供卓越的体验。
 
 * 要完成的基本作业是与读者建立令人信服的联系。
-
-## 路线图 {#road-map}
-
-请务必注意，Universal Editor 正处于开发阶段，本文档中列出的一些功能是最终编辑器的愿景，而不一定表示是其当前功能。
-
-请与您的 Adobe 联系人联系，了解有关为 Universal Editor 规划的即将推出的功能的详细信息.
 
 ## 其他资源 {#additional-resources}
 

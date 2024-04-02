@@ -2,7 +2,7 @@
 title: Universal Editor 身份验证
 description: 了解 Universal Editor 如何使用 Adob​​e 的 Identity Management System (IMS) 进行身份验证。
 exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 100%
@@ -13,8 +13,6 @@ ht-degree: 100%
 # Universal Editor 身份验证 {#authentication}
 
 了解 Universal Editor 如何进行身份验证。
-
-{{universal-editor-status}}
 
 ## 选项 {#options}
 

@@ -2,7 +2,7 @@
 title: Universal Editor 架构
 description: 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 93%
@@ -13,8 +13,6 @@ ht-degree: 93%
 # Universal Editor 架构 {#architecture}
 
 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
-
-{{universal-editor-status}}
 
 ## 架构构建块 {#building-blocks}
 

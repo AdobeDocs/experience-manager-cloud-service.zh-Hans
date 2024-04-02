@@ -2,7 +2,7 @@
 title: Universal Editor 调用
 description: 了解通用编辑器对应用程序发出的各种类型的调用，以帮助您进行调试。
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 1fc53e726f3a15c9ac7d772b4c181a7877e417af
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -13,8 +13,6 @@ ht-degree: 2%
 # Universal Editor 调用 {#calls}
 
 了解通用编辑器对应用程序发出的各种类型的调用，以帮助您进行调试。
-
-{{universal-editor-status}}
 
 ## 概述 {#overview}
 

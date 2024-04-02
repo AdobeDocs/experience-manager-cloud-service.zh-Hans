@@ -2,7 +2,7 @@
 title: 面向AEM开发人员的通用编辑器概述
 description: 如果您是一名AEM开发人员，并且对Universal Editor的工作方式以及如何在您的项目中使用它感兴趣，本文档将为您提供端到端介绍，引导您对WKND项目进行检测以使用Universal Editor。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 3dff6fa71c29da70daba80176d2fe51ef1e05200
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 1%
@@ -13,8 +13,6 @@ ht-degree: 1%
 # 面向AEM开发人员的通用编辑器概述 {#developer-overview}
 
 如果您是一名AEM开发人员，并且对Universal Editor的工作方式以及如何在您的项目中使用它感兴趣，本文档将为您提供端到端介绍，引导您对WKND项目进行检测以使用Universal Editor。
-
-{{universal-editor-status}}
 
 ## 用途 {#purpose}
 

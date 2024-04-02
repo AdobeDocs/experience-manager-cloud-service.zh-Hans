@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
-workflow-type: ht
-source-wordcount: '367'
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+workflow-type: tm+mt
+source-wordcount: '340'
 ht-degree: 100%
 
 ---
@@ -14,12 +14,6 @@ ht-degree: 100%
 ## Edge Delivery Services 创作 {#edge-delivery-authoring}
 
 [!BADGE 要为 Edge Delivery Services 创作 AEM 内容，请单击此处。]{type=Positive url="/help/edge/overview.md" tooltip="为 Edge Delivery Services 创作 AEM 内容"}
-
-## Universal Editor 状态 {#universal-editor-status}
-
->[!NOTE]
->
->Universal Editor 仍在开发中，其功能可能会发生变化，与本文档中详述的有所不同。
 
 ## 另请参阅 {#see-also}
 
@@ -65,9 +59,9 @@ ht-degree: 100%
 
 * [AEM Forms Edge Delivery Services 快速入门](/help/edge/docs/forms/tutorial.md)
 * [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
-* [设置您的 Google Sheets 或 Microsoft Excel 文件，开始接受数据](/help/edge/docs/forms/submit-forms.md)
+* [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
 * [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
 * [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [提交表单后显示自定义感谢消息&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)

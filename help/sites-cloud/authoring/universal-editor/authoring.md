@@ -2,7 +2,7 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '2313'
 ht-degree: 54%
@@ -13,8 +13,6 @@ ht-degree: 54%
 # 使用 Universal Editor 创作内容 {#authoring}
 
 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
-
-{{universal-editor-status}}
 
 ## 简介 {#introduction}
 
