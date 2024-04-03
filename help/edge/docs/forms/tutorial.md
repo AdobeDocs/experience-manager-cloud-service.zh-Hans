@@ -2,13 +2,13 @@
 title: AEM Forms Edge Delivery Services 快速入门- 开发人员教程
 description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。在十到二十分钟内，您将创建自己的表格。
 feature: Edge Delivery Services
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+workflow-type: tm+mt
+source-wordcount: '1848'
+ht-degree: 99%
 
 ---
-
 
 # 快速入门 - 开发人员教程
 
@@ -19,8 +19,6 @@ ht-degree: 100%
 AEM Forms 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻松创建表单来捕获和存储捕获的数据。您可以[创建一个预先配置了 Adaptive Forms Block 的新 AEM 项目](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM 项目](#add-adaptive-forms-block-to-your-existing-aem-project)。
 
 本 AEM Forms 教程将指导您使用新的 Adobe Experience Manager (AEM) Forms 项目创建、预览和发布您自己的自定义表单。
-
-
 
 ## 先决条件
 
@@ -131,8 +129,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      有关使用 Microsoft SharePoint 管理文件的更多信息，请参阅[如何使用 Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint)。
-
+      有关使用Microsoft SharePoint管理文件的更多信息，请参阅 [如何使用AdobeSharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. 提交更新的`fsatb.yaml`文件，一旦您更新了参考并且一切看起来都很好。如果您遇到任何构建问题，请参阅 [解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
@@ -300,4 +297,3 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 ## 另请参阅
 
 {{see-more-forms-eds}}
-

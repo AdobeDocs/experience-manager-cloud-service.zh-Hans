@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: fa57e0438a7570551785375c4e5a57fa38fd2f6f
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1937'
 ht-degree: 8%
 
 ---
@@ -250,7 +250,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * 抄送 —  [!DNL Creative Commons].
 * [!DNL XMPRights]。
 * 加 —  [图片授权通用系统](https://www.useplus.com).
-* 棱镜 —  [发布行业标准元数据的要求](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL — 棱镜权限语言。
 * PUR - PRISM使用权限。
 * `xmpPlus` - PLUS与XMP的集成。
@@ -265,7 +265,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 ### 打印特定的元数据 {#print-specific-metadata}
 
 * PDF和PDF/X - Adobe PDF和第三方应用程序。
-* 棱镜 —  [发布行业标准元数据的要求](https://www.idealliance.org/prism-metadata).
+<!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG`  — 分页文本的XMP元数据。
 

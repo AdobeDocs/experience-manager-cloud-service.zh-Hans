@@ -1,13 +1,13 @@
 ---
 title: 生成变体
 description: 了解如何从Edge Delivery ServicesSidekick访问生成变体
-source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '3338'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 生成变体 {#generate-variations}
 
@@ -343,7 +343,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >要使用 **Adobe Target** 必须填写描述字段。 如果不可用，则受众会在下拉列表中显示为不可用。 要添加描述，请转到Target并 [添加受众说明](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+   >要使用 **Adobe Target** 必须填写描述字段。 如果不可用，则受众会在下拉列表中显示为不可用。 要添加描述，请转到Target并 [添加受众说明](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![生成变体 — 受众源 — Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 

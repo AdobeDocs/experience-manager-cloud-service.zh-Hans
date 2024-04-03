@@ -1,8 +1,8 @@
 ---
 title: 适用于 Eclipse 的 AEM 开发人员工具
-description: 了解如何使用AEM Developer Tools for Eclipse（一个基于Eclipse插件的Apache Sling的Eclipse插件）。
+description: 了解如何使用AEM Developer Tools for Eclipse，这是一个基于适用于Apache Sling的Eclipse插件的Eclipse插件。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -222,6 +222,6 @@ Eclipse下载所需的依赖项。 这可能需要花些时间。
 
 以下官方 [Eclipse](https://www.eclipse.org/) 文档有助于设置环境：
 
-* [Eclipse快速入门](https://www.eclipse.org/getting-started/)
+* [Eclipse快速入门](https://eclipseide.org/getting-started/)
 * [Eclipse Luna帮助系统](https://help.eclipse.org/latest/index.jsp)
 * [Maven集成(m2eclipse)](https://www.eclipse.org/m2e/)

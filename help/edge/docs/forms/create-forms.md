@@ -3,8 +3,8 @@ title: AEM Forms Edge Delivery Service 快速入门。创建表单。
 description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文档的创作 = 速度极快、SEO 友好的表单，让用户更加满意，搜索引擎更加优异。
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
-workflow-type: ht
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ AEM Forms Edge Delivery 提供了一个称为 Adaptive Forms Block 的区块，�
 在开始之前，请确保您已完成以下步骤：
 
 * 使用 AEM Forms 样板设置 [AEM 项目](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有 AEM 项目](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)并克隆本地计算机上相应的 GitHub 存储库。在本文档中，Edge Delivery Services (EDS) 项目的本地文件夹称为 `[EDS Project repository]`。
-* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将 Microsoft SharePoint 设置为您的内容源，请参阅[如何使用 SharePoint](https://www.aem.live/docs/setup-customer-SharePoint)
+* 确保您有权访问 Google Sheets 或 Microsoft SharePoint。要将 Microsoft SharePoint 设置为您的内容源，请参阅[如何使用 SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)
 
 
 
@@ -79,7 +79,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    ![Google Drive 上的示例内容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. 确保根据为项目指定的配置，与适当的 AEM 用户（例如 `helix@adobe.com`）[共享表](https://www.aem.live/docs/setup-customer-SharePoint)。授予用户编辑表的权限。
+1. 确保根据为项目指定的配置，与适当的 AEM 用户（例如 `helix@adobe.com`）[共享表](https://www.aem.live/docs/setup-customer-sharepoint)。授予用户编辑表的权限。
 
 1. 打开创建的电子表格并将默认表重命名为“shared-default”。
 
