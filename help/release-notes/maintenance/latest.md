@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: dbdc63db9a9ac954ce6359d3643231d6e195fd53
-workflow-type: ht
-source-wordcount: '302'
-ht-degree: 100%
+source-git-commit: d07fc976fe9c8e7872468048f80e525fe8484339
+workflow-type: tm+mt
+source-wordcount: '2584'
+ht-degree: 8%
 
 ---
 
@@ -13,26 +13,175 @@ ht-degree: 100%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 15575 {#release-15575}
+## 版本 15787 {#release-15787}
 
-下面总结了维护版本 15575 的持续改进情况，该版本于 2024 年 3 月 19 日公开发布。上一个维护版本是版本 15262。
+以下总结了维护版本15787的不断改进，该版本于2024年4月4日公开发布。 上一个维护版本是版本 15575。
 
 2024.3.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
-### 增强 {#enhancements-15575}
+### 增强 {#enhancements-15787}
 
-无。
+* SITES-19059 — 内容片段 — OpenAPI — 允许枚举字段使用默认值
+* SITES-20013 — 内容片段 — OpenAPI — 当不存在ServletResolver时，WCMScriptHelper应中止渲染
+* SITES-19926 — 内容片段 — OpenAPI — 对OnOffTriggerProcessor的改进
+* SITES-17945 — 内容片段 — OpenAPI — 获取每个版本的上次修改的元数据
+* SITES-17298 — 内容片段 — OpenAPI — 内容片段模型权限
+* SITES-14255 — 内容片段 — OpenAPI — 如果在片段模型中设置了唯一标志，则验证文本字段的唯一性
+* SITES-15557 — 内容片段 — OpenAPI — 允许枚举字段使用默认值
+* SITES-1559 — 内容片段 — OpenAPI — 更新CF列表API以允许仅提取直接子内容片段(BE)
+* SITES-16052 — 内容片段 — OpenAPI — 为可能使用资源的实例添加URL
+* SITES-17944 — 内容片段 — OpenAPI — 将适当的JCR ACL映射到CF权限端点
+* SITES-17513 — 内容片段控制平面 — 取消发布内容片段
+* SITES-8831 — 内容片段控制平面 — PUT — 使用完整信息更新片段
+* SITES-8836 — 内容片段 — OpenAPI — 控制平面 — GET引用 — 获取片段的父引用（按UUID）
+* SITES-8986 — 内容片段 — OpenAPI — 发布内容片段模型
+* SITES-18073 — 内容片段 — OpenAPI - CFM的PreviewURL模式
+* SITES-15242 — 内容片段 — OpenAPI — 扩展发布事件以提供有关层的信息
+* SITES-18702 — 内容片段 — OpenAPI - [后端] 能够在文件夹级别发布
+* SITES-20020 — 内容片段 — OpenAPI — 删除 `X-Adobe-Accept-Unsupported-API` 正式发布之前
+* SITES-16066 — 内容片段 — 片段编辑器 — 更改资产选择器JS URL
+* SITES-19326 — 内容片段 — 片段编辑器 — 更新资产UI中的链接以在新的CF编辑器中打开CF
+* SITES-10515 — 内容片段 — GraphQL API - GraphQL — 加载引用的内容片段的AbstractFetcher性能问题
+* SITES-17364 — 内容片段 — GraphQL API — 返回“修改者”和“发布者”属性的全名
+* SITES-19165 — 内容片段 — GraphQL API — 允许在所有GraphQL端点中使用、引用和查询全局模型
+* SITES-17768 — 内容片段 — GraphQL API — 通过_dmS7Url公开图像的Dynamic Media URL
+* SITES-11057 — 核心后端 — 在打开时间轴>版本时，避免加载所有版本
+* SKYOPS-63033 - HTTPD — 修剪Dispatcher环境变量的空格
+* SKYOPS-65518 - HTTPD — 如果Dispatcher文件夹中存在非法文件名，则使验证器失败
+* SITES-19626 — 启动项 — 将DAM-CFM lastUpdate字段合并到主字段中
+* SITES-19251 — 快速站点 — 创建向导 — 当主题引用不等于站点名称时，支持站点管理ui边栏
+* SITES-15430 — 通用编辑器 — AEM域下的通用编辑器
+* CQ-4344966 - WCM — 翻译 — 为站点结构更新创建基本框架并更新资产的现有框架
+* CQ-4347312 - WCM — 翻译 — 创建工作流以将“cq：translationsourcejcruuid”与现有源和语言副本关联
+* CQ-4354509 - WCM — 翻译 — 发布翻译作业事件 [OSGi EventAdmin]
+* SITES-16318 — 人行横道 — 使用Edge Delivery Services进行基于AEM的创作
+* Forms-9889：用户可以在配置提交操作以提交到REST端点时添加POSTURL和云配置
+* 在规则编辑器中，用户可以：
+   * Forms-12160：验证When条件的Then部分中的字段、面板或表单。
+   * Forms-12570：在When条件的Then部分中重置字段、面板或表单。
+   * Forms-11541：通过自定义函数在规则编辑器中使用字段对象和全局对象。
+   * Forms-11714：在自定义函数中将参数定义为可选参数。 默认情况下，在自定义函数中声明的参数是必需的。
+   * Forms-11756：对自定义函数使用缓存，以缩短在规则编辑器中检索自定义函数列表时的响应时间。
+   * Forms-12053：在“When”条件中添加“else”语句以实现嵌套条件。
+   * Forms-11269：对基于核心组件的表单在自定义函数中使用现代ES10 JavaScript功能，例如let和arrow函数。
 
-### 修复的问题 {#fixed-issues-15575}
+* Forms-9014：对涂写签名组件进行了各种与辅助功能相关的改进
 
-* ASSETS-36358：无法渲染上传报告。
-* GRANITE-50774：GraniteContent 应在初始化时使用属性值的确定性顺序。
 
-### 已知问题 {#known-issues-15575}
+### 修复的问题 {#fixed-issues-15787}
 
-无。
+* 修复了各种辅助功能和国际化问题
+* SITES-16966 - AEM：未本地化的“未设置版本！” “站点”>“还原”>“还原树”中的字符串
+* SITES-16208 - ContentFragmentModelIdentifier公开误导性的标题属性
+* SITES-18024 — 缺少If-Match标头时，响应必须为428
+* SITES-18003 — 未正确返回创建版本的用户
+* SITES-17937 — 在同步创作pod之前发出内容片段创建事件
+* SITES-18029 — 当JCR观察得到并发通知时，事件处理管道挂起
+* SITES-17882 — 从架构中删除片段文本字段最大长度限制
+* SITES-19252 — 修复与HTTP状态代码406和415相关的不一致问题
+* SITES-16964 - [后端] 按“修改者”排序的功能无法正常工作
+* SITES-17519 — 站点页面属性编辑器 — 较长的页面名称使这些按钮不可点击
+* SITES-16852 — 发布API正在发布具有新状态的引用
+* SITES-18833 - OpenAPI端点中的唯一性约束不可见
+* SITES-15553 — 如果XF的URL包含选择器，则无法加载XF的侧面板
+* SITES-14340 - VersioningTimelineEventProvider.accepts中的NPE
+* SITES-1605 - [站点] 在source-path为null的情况下，DeletePageCommand引发NPE
+* SITES-16308 - [GB18030]：创建名为GB18030字符的新站点文件夹时显示警告消息
+* SITES-16304 - [GB18030]：创建名为GB18030字符的新体验片段文件夹时显示警告消息
+* SITES-8769 — 提高StyleImpl性能
+* CQ-4343815 - Campaign — 定位 — Teaser的默认变体具有空url
+* CQ-4355889 - Campaign — 定位 — 创建受众请求因IMS配置而失败。
+* SITES-12460 - Campaign集成 — Campaign/AEM Cloud Service集成已中断
+* SITES-11571 — 内容片段 — GraphQL API - PersistedQueryServlet应在格式错误的URL上发送400
+* SITES-19946 — 内容片段 — GraphQL API — 启动时不再扫描模型
+* SITES-1605 — 核心后端 — DeletePageCommand在源路径为null的情况下引发NPE
+* SITES-5429 — 核心后端 — ChildrenListServlet itemResourceType允许直接执行代码
+* SITES-15553 — 体验片段 — 如果XF的URL包含选择器，则无法加载XF的侧面板
+* SITES-13666 - Headless — 管理员 — 错误日志误报“com.adobe.cq.dam.cfm.headless.ui.impl.models.CFHomeCardModelImpl配置ID不得为空”
+* SITES-17164 — 页面编辑器 —  [Cloud， 6.5 Forms] AF主题编辑器预览已损坏
+* SITES-14340 — 站点管理员UI - VersioningTimelineEventProvider.accepts中的NPE
+* SKYOPS-68611 - Sling - repoinit - Port sling repoinit创建路径修复到维护分支
+* CQ-4354678 - WCM — 翻译 — 翻译作业正在导出翻译的内容
+* CQ-4355167 - WCM — 翻译 — 将翻译作业标记为完成或存档时未弹出窗口
+* CQ-4355913 - WCM — 翻译 — 翻译项目语言卡出错
+* GRANITE-47694 — 工作流 — 无法在云上的工作流中为非管理员用户获取子任务
+* ASSETS-31097 - Assets云 — 包含索引的日志遍历/bin/numberofentitiesinfolders.json的警告
+* ASSETS-35860 - Assets Cloud - AEM Assets列视图中的时区转换不正确
+* SITES-15260 — 经典UI（旧版） — 如果使用工作表导入，Bulkedit会在页面上添加EMPTY属性
+* SITES-16834 — 经典UI（旧版） — 当文本包含逗号时，使用批量编辑器编辑文本后缺少文本
+* SITES-17767 — 内容片段 — 管理员 — 也为没有jcr：content节点的文件夹支持允许的cf模型
+* SITES-17683 — 内容片段 — 核心后端 — 内容片段无法通过Jackson导出程序序列化
+* SITES-18797 — 内容片段 — 核心后端 — 自定义索引后重复的GraphQL结果
+* SITES-18076 — 内容片段 — 核心后端 — 多值文本的@TypeHint不正确
+* SITES-17856 — 内容片段 — 模型和模型编辑器 — 如果配置不是文件夹，则不显示CF模型
+* SITES-17071 — 核心后端 — 特定页面在时间轴中不显示版本
+* SITES-17285 — 核心组件 — 在AEMaCS中，内联图像裁切与创作和发布不同
+* SITES-19187 — 核心组件 — 在图像组件中放置资源的两种方法在对话框上产生不同的结果
+* SITES-20077 — 核心组件 — 内联图像裁切 — 裁切错误，图像模糊
+* SITES-17211 — 体验片段 — 体验片段组件路径选取器对话框，其中显示已删除的体验片段
+* SITES-17894 — 启动项 — 提升嵌套启动项会将启动项内容恢复到其祖先的版本
+* SITES-16042 - MSM — 活动副本 — 转出后，批注在Livecopy中显示不正确
+* SITES-16691 - MSM — 活动副本 — 当客户从组件上的“转出”图标选择“转出”或“转出到”时，“继续”按钮灰显。
+* SITES-16733 - MSM — 活动副本 — 将rep：policy应用于节点时，无法转出Blueprint索引页面
+* SITES-17155 - MSM - Live Copy — 重命名LiveCopy时，页眉和页脚将翻译回英语
+* SITES-17492 - MSM - Live Copy - AEM页面Live Copy布局不一致
+* SITES-19316 - MSM — 活动副本 — 指向体验片段的引用链接不会在语言副本中更新
+* SITES-19347 - MSM - Live Copies - Prod创作速度缓慢和服务中断消息 — pod频繁重新启动 — 运行状况警报
+* SITES-19790 - MSM - Live Copy — 创建LiveCopy后预览信息不正确
+* SITES-20086 - MSM - Live Copy — 资产中CF的MSM转出将转出所有活动副本，即使选择转出一个Live Copy也是如此
+* SITES-20088 - MSM - Live Copies - XF转出属性后的空白页问题 — AEMas a Cloud Service
+* SITES-16854 — 页面编辑器 — 放置目标覆盖覆盖包含“选择面板”功能的组件中的parsys
+* CQ-4355563 — 项目 — 路径参数错误。 正在为项目收件箱搜索脚本填充“？appId=aemshell”
+* SITES-16876 — 快速站点 — 主题部署 — 预览页面2上缺少CSS和JS
+* SITES-18418 — 站点管理员UI — 在需要字段时，路径字段小组件的显示/隐藏功能无法正常工作
+* SITES-19534 — 站点管理员UI — 在AEM 6.5.19升级后无法打开有效权限对话框
+* SITES-19203 — 模板编辑器 — 可编辑的模板策略“文本未对齐”和“样式重叠”删除按钮
+* CQ-4354881 - WCM — 翻译 — 在将内容片段作为页面的一部分翻译时，内容片段路径设置为source (en-us)
+* CQ-4355289 - WCM — 翻译 — 翻译Cloud Service中仅显示前40个元素
+* CQ-4355866 - WCM — 翻译 — 翻译工作流引发现有页面错误
+* CQ-4355797 — 工作流 — 无法使用OOTB工作流步骤
+* GRANITE-48938 — 工作流 — 创作在资产的“待发布”状态下停止。 新持久有效负载映射缓存中存在问题。
+* GRANITE-49036 — 工作流 — 功能请求 | 能够计划和配置工作流包的清除
+* SITES-17393 — 工作流扩展 — 为cq：Tag使用工作流启动器时，发布内容树失败
+* SITES-17759 - Workflow Extensions - Tree-Activation-Workflow for Tags not working in AEMaaCS
+* Forms-12411：在Android设备上，使用 `Maximum Number of Characters Validation` 选项不适用于自适应表单文本框组件。
+* Forms-13377：当用户尝试添加自定义字体并运行管道对其进行配置时，它会失败并出现“ContainersNotReady”错误
+* Forms-13267：当用户添加自适应表单下拉列表组件时，下拉列表的ID无法生成
+* Forms-13544：当用户使用向导布局添加自适应表单容器组件时，该组件在表单创作期间无法正常工作
+* Forms-13091、FORMS-13414：如果用户尝试在Azure Blob存储中配置自定义域URL，则会失败
+* Forms-13595：当用户尝试将表单保存到其他位置时，如果浏览器分辨率设置为100%，则用户无法看到“选择文件夹”和“取消”按钮。 但是，当分辨率设置为75%时，该选项可见
+* Forms-10952：当用户将自适应表单下拉组件添加到自适应表单并根据各种自定义规则使用“Set Options”属性时，“Set Options”属性仅对最后一个规则起作用
+* Forms-11471：当“emitter.json”调用由于网络中断而失败时，片段的延迟加载会失败。
+* Forms-11786：当用户在日历小组件中的月份之间切换时，日期选取器组件会显示额外的行。
+* Forms-12093、FORMS-12093：当用户勾选自适应表单复选框以提交表单时，包含额外值的值不正确  `\` 存储在文本框中
+* Forms-11993：当用户在iOS设备上的“附件”组件中使用“拍摄照片”单击图像时，所有图像都会添加到该文件夹中，并为相同的名称
+* Forms-12555：当用户尝试使用AEM发布的URL将AEM Forms集成到邮件平台时，AEM Forms在呈现页面时不会添加method=post。 即使在使用URL的提交操作中设置了POST，也会发生此问题。 它会导致邮件平台不识别此表单
+* Forms-12938：在具有IE兼容模式的Microsoft Edge浏览器中，HTML5表单无法正常工作或加载
+* Forms-12032：用户提交表单时，提交操作路径的路径未正确指向
+* Forms-12445：更改单选按钮选项的顺序并发布表单后，表单数据模型中会捕获错误值。
+* Forms-12947：用户向现有词典添加新语言时，无法合并或添加
+* Forms-11363：用户通过工作区提交表单时，在呈现表单时在表中出现显示问题
+* Forms-11756：用户添加ES6 JavaScript功能时，例如 `let` 和 `const` 在自定义函数中，无法打开规则编辑器。 此维护版本提供了对ES10的支持
+* Forms-13164：如果用户生成PDF，则在提交后会向其添加意外的空白行
+* Forms-13789：当用户尝试生成多个PDF时，输出批处理API失败
+* Forms-11483：当用户将PDF转换为PDF/A-2B或PDF/A-3B时，转换失败并显示验证错误
+* Forms-10501：当用户调用HSM时，文档经过认证，但无法启用LTV
+* Forms-11546：当表单作者在自适应表单中使用重复的面板时，HTML标记中缺少ARIA属性。 这提高了自适应表单重复面板的辅助功能
+* Forms-11826：由于匹配的标签Arial® labelledby和Arial® label，屏幕阅读器无法区分这两者。 要解决此问题 — 对于表单字段，标签“aria-labelledby”会被替换为“aria-describedby”。 (F)。 这提高了自适应Forms的可访问性
+* Forms-12626、FORMS-13094：用户无法使用键盘访问工具栏以在表单编辑器页面上保存或编辑内容。 已修复此辅助功能问题
+* Forms-13102：在表单创作过程中，“Forms”和“文档”页面上可用的图标缺乏适用于不同能力个体的描述性功能。 已修复此辅助功能问题
 
-### 更改通知 {#change-notice-15575}
+### 已知问题 {#known-issues-15787}
+
+* SITES-17934 — 内容片段 — 由于DoS保护了片段的大型树，预览失败。 请参阅 [KB](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945)
+
+### 已弃用的功能和API {#deprecated-15787}
+
+* [在 Adobe Developer Console 中弃用 JWT 凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+
+看看 [已弃用和已删除的功能和API](/help/release-notes/deprecated-removed-features.md) 了解AEMas a Cloud Service中已弃用或删除的内容。
+
+### 更改通知 {#change-notice-15787}
 
 **必需执行的操作**
 
@@ -42,29 +191,12 @@ ht-degree: 100%
 
 建议客户将 `.cloudmanager/java-version` 文件添加到其 git 存储库的根目录中，其中的内容为：`11`。请参阅[生成环境/设置 Maven JDK 版本](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version)。
 
-#### 将 aem-cloud-testing-clients 更新到 1.2.1 {#update-aem-cloud-testing-clients}
 
-即将发生的更改需要将您在自定义功能测试中使用的库 [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) 更新到至少 **1.2.1** 版本
-
-确保您在 `it.tests/pom.xml` 中的依赖项已经升级。
-
-```xml
-<dependency>
-   <groupId>com.adobe.cq</groupId>
-   <artifactId>aem-cloud-testing-clients</artifactId>
-   <version>1.2.1</version>
-</dependency>
-```
-
-此更改需要在 2024 年 4 月 6 日之前执行。
-
-如果未更新依赖项库，则会导致“自定义功能测试”步骤中的管道失败。
-
-### 嵌套的技术 {#embedded-tech-15575}
+### 嵌套的技术 {#embedded-tech-15787}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
 | AEM OAK | 1.60-T20240131102219-0cde853 | [Oak API 1.60.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html) |
 | AEM SLING API | 2.27.2 版 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 版本 1.4.20-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
-| AEM 核心组件 | 2.23.4 版 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
+| AEM 核心组件 | 2.24.4 版 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
