@@ -3,9 +3,9 @@ title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2fa76dbe93bcf31901ec0422470b05dadfe4f43f
+source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1869'
 ht-degree: 86%
 
 ---
@@ -264,22 +264,28 @@ UTF-8编码 `%3B` 为 `;` 和 `%3D` 是的编码 `=`. 查询变量和任何特�
 在查询中使用变量时，应遵循一些最佳实践：
 
 * 编码作为一般方法，始终建议编码所有特殊字符；例如， `;`， `=`， `?`， `&`，等等。
+
 * 使用多个变量（用分号分隔）的分号持久查询需要具备以下任一项：
-   * 分号已编码(`%3B`)；对URL进行编码也将实现这一点
+   * 分号已编码(`%3B`)；对URL进行编码也可实现这一点
    * 或在查询末尾添加尾随的分号
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 时间 `CACHE_GRAPHQL_PERSISTED_QUERIES` 为Dispatcher启用，然后是包含 `/` 或 `\` 字符的值会在Dispatcher级别编码两次。
 要避免出现这种情况，请执行以下操作：
+
    * 启用 `DispatcherNoCanonURL` 在Dispatcher上。
 这将指示Dispatcher将原始URL转发到AEM，以防止编码重复。
 但是，此设置当前仅在 `vhost` 级别，因此，如果您已有Dispatcher配置来重写URL（例如，在使用缩短的URL时），您可能需要单独的 `vhost` 用于持久查询URL。
+
    * 发送 `/` 或 `\` 字符未编码。
 在调用持久查询URL时，请确保所有 `/` 或 `\` 在持久查询变量的值中，字符保持未编码状态。
      >[!NOTE]
      >
      >仅当满足以下条件，才建议使用此选项 `DispatcherNoCanonURL` 无法实施解决方案，因为没有任何原因。
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-时间 `CACHE_GRAPHQL_PERSISTED_QUERIES` 为Dispatcher启用，然后 `;` 不能在变量的值中使用字符。
+
+  时间 `CACHE_GRAPHQL_PERSISTED_QUERIES` 为Dispatcher启用，然后 `;` 不能在变量的值中使用字符。
 
 ## 正在缓存您的持久查询 {#caching-persisted-queries}
 
