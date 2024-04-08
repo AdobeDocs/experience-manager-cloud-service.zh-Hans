@@ -2,7 +2,7 @@
 title: 面向AEM开发人员的通用编辑器概述
 description: 如果您是一名AEM开发人员，并且对Universal Editor的工作方式以及如何在您的项目中使用它感兴趣，本文档将为您提供端到端介绍，引导您对WKND项目进行检测以使用Universal Editor。
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 1%
@@ -593,3 +593,4 @@ X帧选项 `sameorigin` 防止在框架中呈现AEM页面。 必须删除此标�
 * 查看文档 [通用编辑器架构](/help/implementing/universal-editor/architecture.md#service) 有关通用编辑器结构的更多详细信息。
 * 查看文档 [使用通用编辑器进行本地AEM开发](/help/implementing/universal-editor/local-dev.md) 有关如何连接到自托管版本的通用编辑器的更多详细信息。
 * 查看文档 [在Adobe Experience Manager as a Cloud Service中使用Sling资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md) 以了解有关覆盖节点的更多详细信息。
+

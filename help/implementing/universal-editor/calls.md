@@ -2,7 +2,7 @@
 title: Universal Editor 调用
 description: 了解通用编辑器对应用程序发出的各种类型的调用，以帮助您进行调试。
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 2%
@@ -383,3 +383,4 @@ A `publish` 当您单击 **Publish** 按钮来发布已编辑的内容。
 ## 其他资源 {#additional-resources}
 
 * [通用编辑器事件](/help/implementing/universal-editor/events.md)
+

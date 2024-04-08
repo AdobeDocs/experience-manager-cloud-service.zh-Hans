@@ -2,7 +2,7 @@
 title: 使用 Universal Editor 进行本地 AEM 开发
 description: 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 61%
@@ -119,3 +119,4 @@ Universal Editor 根据页面的检测方式了解使用哪个 Universal Editor 
 1. 打开您的浏览器以转至 `https://localhost:8000/corslib/LATEST`。
 1. 指示您的浏览器接受[您的自签名证书。](#ue-https)
 1. 在自签名证书获得信任后，您可以使用本地 Universal Editor Service 编辑页面。
+

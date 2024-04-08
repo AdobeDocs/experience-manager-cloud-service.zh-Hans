@@ -2,7 +2,7 @@
 title: 模型定义、字段和组件类型
 description: 通过示例了解通用编辑器可在属性边栏中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 10%
@@ -830,3 +830,4 @@ A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `ta
 ![文本组件类型的屏幕截图](assets/component-types/simpletext.png)
 
 >[!ENDTABS]
+

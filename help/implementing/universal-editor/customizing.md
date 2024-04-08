@@ -2,7 +2,7 @@
 title: 自定义通用编辑器创作体验
 description: 了解不同的扩展点和其他功能，这些功能允许您自定义通用编辑器的UI以支持内容作者的需求。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: f04ab32093371ff425c4e196872738867d9ed528
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -96,3 +96,4 @@ data-aue-filter="container-filter"
 #### 条件True {#true}
 
 ![显示的文本字段](assets/shown.png)
+
