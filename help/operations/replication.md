@@ -2,10 +2,10 @@
 title: 复制
 description: 了解AEMas a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 39%
+ht-degree: 38%
 
 ---
 
@@ -196,14 +196,17 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 要对复制问题进行故障诊断，请导航到 AEM 创作服务 Web UI 中的复制队列：
 
-1. 从AEM的“开始”菜单中，导航到 **“工具”>“部署”>“分发”**
-2. 选择&#x200B;**发布**卡
+1. 从AEM的“开始”菜单中，导航到 **工具** > **部署** > **分布**
+1. 选择&#x200B;**发布**&#x200B;卡
+
    ![状态](assets/publish-status.png "状态")
-3. 检查应为绿色的队列状态
-4. 您可以测试与复制服务的连接
-5. 选择&#x200B;**日志**&#x200B;选项卡，其中显示了内容发布的历史记录
+
+1. 检查应为绿色的队列状态
+1. 您可以测试与复制服务的连接
+1. 选择&#x200B;**日志**&#x200B;选项卡，其中显示了内容发布的历史记录
 
 ![日志](assets/publish-logs.png "日志")
 
-如果内容无法发布，则整个发布将从 AEM 发布服务中恢复。
+如果内容无法发布，则整个发布将从AEM发布服务中恢复。
+
 在这种情况下，可编辑的主队列将显示红色状态，应该进行审查以确定哪些项目导致取消发布。 通过单击该队列，将显示其待处理项目，如果需要，可从中清除单个项目或所有项目。
