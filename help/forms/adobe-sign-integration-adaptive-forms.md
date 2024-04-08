@@ -5,9 +5,9 @@ feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 67d8de3cda921dcaeaac47e64828abbe6abe943f
+source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2117'
 ht-degree: 24%
 
 ---
@@ -127,6 +127,17 @@ ht-degree: 24%
 >[!NOTE]
 >
 > 要配置Adobe Sign沙盒，您可以按照中所述的相同配置步骤进行操作 [Adobe Sign](#adobe-sign).
+
+#### 疑难解答 {#resolve-config-error}
+
+当您连接时 [!DNL Adobe Acrobat Sign] 替换为 [!DNL AEM Forms] 并查找错误 `Unable to authorize access because the client configuration is invalid: invalid_request` 如下图所示。 可执行以下步骤来解决此问题：
+
+![配置错误](/help/forms/assets/config_error_sign.png)
+
+1. 将当前浏览器窗口中显示的URL复制到记事本中，然后移除部分 `/ui#/aem` 从URL访问。
+1. 打开浏览器窗口，并登录到您的 [!DNL Adobe Acrobat Sign] 开发人员帐户。
+1. 选择为配置的应用程序 [!DNL AEM Forms]，并选择 **[!UICONTROL 为应用程序配置OAuth]**.
+1. 在 **[!UICONTROL 重定向URL]** 框中，添加上一步中复制的URL并单击 **[!UICONTROL 保存]**.
 
 ## 将AEM Forms与适用于政府的Adobe Acrobat Sign Solutions连接 {#adobe-acrobat-sign-for-government}
 
