@@ -2,10 +2,10 @@
 title: 使用 Edge Delivery Services 项目进行 AEM 创作的内容建模
 description: 了解如何对使用 Edge Delivery Services 项目进行的 AEM 创作进行内容建模以及如何为您自己的内容进行建模。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
-workflow-type: ht
-source-wordcount: '2095'
-ht-degree: 100%
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+workflow-type: tm+mt
+source-wordcount: '2072'
+ht-degree: 99%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 100%
 在开始为项目内容建模之前，请确保先阅读以下文档。
 
 * [快速入门 - 开发人员教程](/help/edge/developer/tutorial.md)
-* [标记、部分、区块和自动屏蔽](/help/edge/developer/markup-sections-blocks.md)
-* [区块集合](/help/edge/developer/block-collection.md)
+* [标记、分区、块和自动阻止](/help/edge/developer/markup-sections-blocks.md)
+  <!--* [Block Collection](/help/edge/developer/block-collection.md)-->
 
 必须理解这些概念，才能设计出通过与内容源无关方式工作的引人注目的内容模型。此文档提供了有关专门为 AEM 创作实施的机制的详细信息。
 
@@ -323,7 +323,7 @@ ht-degree: 100%
 
 利用[解释的区块结构的机制](#block-structure)，可以创建一个内容模型，将 AEM 中保留的内容一对一映射到投放层。
 
-在每个项目的早期阶段，必须仔细考虑每个区块的内容模型。它必须与内容源和创作体验无关，以允许作者在重用区块实施和样式时切换或组合它们。有关更多详细信息和一般指南，请参阅 [David&#39;s Model (take 2)。](https://www.aem.live/docs/davidsmodel)更具体地说，[区块集合](/help/edge/developer/block-collection.md)包含一组广泛的内容模型，可用于常见用户界面模式的特定用例。
+在每个项目的早期阶段，必须仔细考虑每个区块的内容模型。它必须与内容源和创作体验无关，以允许作者在重用区块实施和样式时切换或组合它们。欲知更多详情和一般指南，请参阅 [David&#39;s Model （举例2）。](https://www.aem.live/docs/davidsmodel) <!--More specifically, the [block collection](/help/edge/developer/block-collection.md) contains a extensive set of content models for specific use cases of common user interface patterns.-->
 
 对于使用 Edge Delivery Services 进行 AEM 创作，引出了一个问题：在使用由多个字段构成的表单创作信息，而不是在上下文（如富文本）中编辑语义标记时，如何提供引人注目的语义内容模型。
 

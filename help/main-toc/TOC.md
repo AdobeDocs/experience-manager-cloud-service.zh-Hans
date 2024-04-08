@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '4844'
-ht-degree: 99%
+source-wordcount: '4842'
+ht-degree: 100%
 
 ---
 
@@ -641,8 +641,8 @@ ht-degree: 99%
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [创建和使用自定义函数](/help/forms/create-and-use-custom-functions.md)
             + [向基于核心组件的自适应表单模板添加规则](/help/forms/rule-editor-core-components.md)
-            + [向自适应表单添加版本控制、注释和批注](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [比较自适应Forms](/help/forms/compare-forms.md)
+            + [向自适应表单添加版本控制、评论和注释](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+            + [比较自适应表单](/help/forms/compare-forms.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -803,7 +803,6 @@ ht-degree: 99%
    + 构建 Edge Delivery 应用程序 {#build}
       + [快速入门 - 开发人员教程](/help/edge/developer/tutorial.md)
       + [项目剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [区块集合](/help/edge/developer/block-collection.md)
       + [电子表格](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [索引](/help/edge/developer/indexing.md)
@@ -1179,3 +1178,9 @@ ht-degree: 99%
    + 辅助功能 {#accessibility}
       + [AEM as a Cloud Service 和 Web 无障碍准则](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
+
+
+<!--
+Temporarily remove:
+    + [Block Collection](/help/edge/developer/block-collection.md)
+-->
