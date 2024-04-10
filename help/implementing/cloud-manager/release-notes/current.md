@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.3.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.3.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.4.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.4.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4bae300f653ae6b84cf798f4fe9e8c9326963718
-workflow-type: ht
-source-wordcount: '648'
-ht-degree: 100%
+source-git-commit: f1d8778f3cfb6868740141d008fd0217839e9103
+workflow-type: tm+mt
+source-wordcount: '706'
+ht-degree: 82%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.3.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.4.0 的发行说明 {#release-notes}
 
-本页记载 AEM as a Cloud Service 中 Cloud Manager 2024.3.0 版本的发行说明。
+本页记载 AEM as a Cloud Service 中 Cloud Manager 2024.4.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,12 +21,16 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2024.3.0 版的发布日期是 2024 年 3 月 14 日。下一个版本计划于 2024 年 4 月 11 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 2024.4.0 版本的发布日期是 2024 年 4 月 10 日。下一个版本计划于 2024 年 5 月 9 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* [您现在可以在您的 Cloud Manager 程序中创建高级网络基础架构](/help/security/configuring-advanced-networking.md)，并使用 Cloud Manager UI 以自助服务方式配置您的环境。
-* [管道执行步骤详细信息](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)将包括当前的部署步骤以及预期的后续步骤。
+* 删除操作已改进 [Edge交付](/help/edge/overview.md) 通过更新与该网站相关的程序中的域映射来访问网站。
+   * 如果没有其他站点被映射，则该映射将被删除。
+* 通过在AEM实例的关键启动阶段提供实时状态更新，增强了部署跟踪。
+   * 此功能确保您能够完全了解部署进度，从而能够更好地制定决策并提高运营效率。
+* 此 [网络基础架构](/help/security/configuring-advanced-networking.md) 增强了列表功能，可显示所有连接的环境，而无需基于区域的过滤，以提供更全面的视图。
+* 增强了代码构建问题的错误消息，能够更轻松地识别根本原因以及后续可操作的步骤。
 
 ## 早期采用计划 {#early-adoption}
 
@@ -69,4 +73,4 @@ AEM as a Cloud Service 中的 Cloud Manager 2024.3.0 版的发布日期是 2024 
 
 ## 错误修复 {#bug-fixes}
 
-* 修复了一个错误，即用户在定义 `COMMERCE_ENDPOINT` 变量时带有尾随空格，然后调度程序无法加载。
+* 解决了Cloud Manager重用具有错误承诺哈希的工件的错误。
