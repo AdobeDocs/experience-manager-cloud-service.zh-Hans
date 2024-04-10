@@ -3,10 +3,10 @@ title: 如何基于核心组件为自适应表单添加新区域设置支持？
 description: 了解如何为自适应表单添加新区域设置。
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1333'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 | 基础组件 | [单击此处](supporting-new-language-localization.md) |
 | 核心组件 | 本文 |
 
-<span class="preview"> 从右至左语言支持功能在早期采用者计划下提供。 您可以从官方电子邮件ID写信到aem-forms-early-adopter-program@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+<span class="preview"> 从右至左语言支持功能在早期采用者计划下提供。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
 
 AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。 您还可以通过添加这些区域设置，以从右至左(RTL)语言（如阿拉伯语、波斯语和乌尔都语）展示自适应Forms。
 
@@ -40,7 +40,7 @@ AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德�
   如果区域设置信息不可用，则自适应表单会以其原始语言（在表单开发期间使用的语言）显示
 
 
-## 前提条件 {#prerequistes}
+## 先决条件 {#prerequistes}
 
 开始添加区域设置之前：
 
