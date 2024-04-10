@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.11.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.11.0 版的发行说明。'
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
-source-git-commit: 07a799cf374bbd1ce0fe5d85433bf12d1d5ee648
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 98%
@@ -110,7 +110,7 @@ ht-degree: 98%
 
 * **[用 DocAssurance API（Communication API 的一部分）保护文档](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**：DocAssurance API 使您能够通过为文档签名和加密来保护敏感信息。通过加密，可将文档内容转换为无法读取的格式，从而确保只有获得授权的用户可访问。这一层加强的保护不仅防止未经授权地查看宝贵的数据，还能让人安心。利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。此服务使用数字签名和认证确保只有预期的接收者可更改文档。
 
-  您可以通过您的官方电子邮件 ID 向 `aem-forms-early-adopter-program@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
+  您可以通过您的官方电子邮件 ID 向 `aem-forms-ea@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
