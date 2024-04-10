@@ -3,10 +3,10 @@ title: AEM 版本更新
 description: 了解Adobe Experience Manager (AEM)as a Cloud Service如何使用持续集成和交付(CI/CD)将您的项目保持在最新版本上。
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 9bfea65c07da5da044df8f698e409eab5c4320fb
+source-git-commit: 72fc611e006f80fdda672f08b0b795432f5899e2
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 3%
+source-wordcount: '970'
+ht-degree: 1%
 
 ---
 
@@ -19,23 +19,36 @@ ht-degree: 3%
 
 AEMas a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的项目使用的是最新的AEM版本。 此过程可无缝更新您的生产、暂存和开发实例，而不会造成任何用户中断。
 
-在自动更新实例之前，将提前3-5天发布新的AEM维护版本。 在此期间内，您可以选择 [触发开发实例的手动更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). 在这段时间过后，版本更新会首先自动应用于您的开发环境。 如果更新成功，则更新流程将继续到暂存和生产实例。 开发和暂存实例充当自动化的质量关卡，在生产环境应用更新之前，可在其中运行自定义编写的测试。
+>[!NOTE]
+> 由于开发实例已自动更新，因此可能无法使用开发实例的手动更新 _部分_ 您项目的。 此功能正在转换为自动更新。
+
+在自动更新实例之前，将提前3-5天发布新的AEM维护版本。 在此期间，您的开发实例可能会自动更新，如果可用，您可以选择更新 [触发开发实例的更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). 版本更新首先自动应用于您的开发环境。 如果更新成功，则更新流程将继续到暂存和生产实例。 开发和暂存实例充当自动化的质量关卡，在生产环境应用更新之前，可在其中运行自定义编写的测试。
+
+### NIMU（非侵入式维护更新） {#nimu}
+
+非侵入式维护更新是自动更新，应用时不会涉及客户管道。
+通过NIMU，客户随时可以使用管道，即使已计划或正在进行AEM版本更新，并且维护更新将不再出现在客户管道执行历史记录中，从而更容易遵循代码部署历史记录。
+
+#### 更新活动
+
+与以前一样，仍然可以使用Cloud Manager UI环境面板检查每个环境的当前AEM版本。 非侵入式维护更新（包括客户编写的测试）使用管道中使用的相同质量审核。
+每当非侵入式维护更新应用于项目的环境时，都会发送Cloud Manager UI通知。 您可以将其配置为也发送到您的电子邮件。
 
 >[!NOTE]
 >
-> 注意：开发环境的自动更新将于2023年逐步为所有客户启用。 如果您的开发环境未自动更新，则可以使用手动更新来使其与暂存环境和生产环境保持同步。
+> 注意：非侵入式维护更新将于2024年逐步为所有客户启用。
 
 
 ## 更新类型 {#update-types}
 
 有两种类型的 AEM 版本更新：
 
-* [**AEM 维护更新**](/help/release-notes/maintenance/latest.md)
+* [**AEM维护更新**](/help/release-notes/maintenance/latest.md)
 
    * 它们主要用于维护目的，包括最新的错误修复和安全更新。
    * 由于定期应用更改，因此其影响最小。
 
-* [**新增功能更新**](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [**AEM功能激活**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
    * 它们按照可预测的每月计划发布。
 
