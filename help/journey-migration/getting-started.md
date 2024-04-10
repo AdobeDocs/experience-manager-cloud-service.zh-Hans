@@ -2,7 +2,7 @@
 title: 迁移到AEMas a Cloud Service历程快速入门
 description: 通过熟悉迁移到 AEM as a Cloud Service 的基础知识，开始您的迁移之旅
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: a4e02b64fba591ff6bd4f24e37e01dbbaa7f91cf
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 22%
@@ -49,7 +49,7 @@ AEMas a Cloud Service为Experience Manager Assets、Forms和Screens提供了可�
 >id="aemcloud_cam_overview"
 >title="关于 Cloud Acceleration Manager"
 >abstract="Cloud Acceleration Manager 是一个基于云的应用程序，旨在指导您的 IT 团队在 Cloud Service 上完成从规划到上线的过渡过程。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=zh-Hans#aem-moving-to-aem-guide" text="迁移到 AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/getting-started#aem-moving-to-aem-guide" text="迁移到 AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=zh-Hans" text="对 AEM Sites as a Cloud Service 的重要更改"
 
 除了此历程中概述的步骤外，Adobe还提供了Cloud Acceleration Manager，这是一个基于云的应用程序，旨在指导您的IT团队在Cloud Service上完成从规划到上线的过渡过程。 使用 Adobe 推荐的最佳实践、技巧、文档和工具在迁移到 AEM as Cloud Service 的历程中的每个阶段提供帮助，让您的团队成功完成迁移。
