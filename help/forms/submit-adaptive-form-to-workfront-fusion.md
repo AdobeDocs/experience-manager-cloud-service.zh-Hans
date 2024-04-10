@@ -6,7 +6,7 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # 向 Adobe Workfront Fusion 提交自适应表单
 
-<span class="preview"> 该功能在早期采用者计划下提供。 您可以从官方电子邮件ID写信到aem-forms-early-adopter-program@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+<span class="preview"> 该功能在早期采用者计划下提供。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
 
 [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) 自动执行重复相同任务的过程，例如文档审批工作流、电子邮件筛选和排序，使您能够专注在新任务上而不是重复任务。 Adobe Workfront Fusion包含多个场景。 场景由一系列模块组成，这些模块在应用程序和Web服务之间执行数据传输。 在场景中，添加各种步骤（模块）以自动执行任务。
 
