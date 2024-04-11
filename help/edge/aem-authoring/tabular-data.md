@@ -3,7 +3,7 @@ title: 使用电子表格管理表格数据
 description: 了解如何使用电子表格来管理各种值的表格数据，例如利用 Edge Delivery Services 站点为您的 AEM 提供元数据和重定向。
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
@@ -163,3 +163,4 @@ ht-degree: 100%
 1. 创建电子表格并按照重定向电子表格的说明进行发布。
 
 1. 按照重定向电子表格的说明将映射添加到`paths.json`文件。
+

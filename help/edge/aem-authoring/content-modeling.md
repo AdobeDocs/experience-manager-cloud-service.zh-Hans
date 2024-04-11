@@ -2,7 +2,7 @@
 title: 使用 Edge Delivery Services 项目进行 AEM 创作的内容建模
 description: 了解如何对使用 Edge Delivery Services 项目进行的 AEM 创作进行内容建模以及如何为您自己的内容进行建模。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: bf6d0ff2f4aebb6620be46704072743578b096d2
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 93%
@@ -657,3 +657,4 @@ AEM 中提供的许多默认页面属性都映射到文档中相应的页面元�
 >[!TIP]
 >
 >有关创建已启用以AEMas a Cloud Service作为内容源的AEM创作的新Edge Delivery Services项目的端到端演练，请查看 [本AEM GEM网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

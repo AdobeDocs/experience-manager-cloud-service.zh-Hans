@@ -3,7 +3,7 @@ title: 为 Edge Delivery Services 发布内容
 description: 了解内容发布如何与 Edge Delivery Services 配合使用，以及如何使用 Edge Delivery Services 发布 AEM 内容。
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
@@ -39,3 +39,4 @@ ht-degree: 100%
 >[!NOTE]
 >
 >默认情况下，Edge Delivery Services 管理员 API 不受保护，可用于在未经身份验证的情况下发布或取消发布文档。如[配置作者身份验证](https://www.aem.live/docs/authentication-setup-authoring)中所述，为了配置管理员 API 的身份验证，您的项目必须配置 API_KEY，它授予对发布服务的访问权限。[请联系 Slack 上的 Adobe 团队](/help/edge/docs/slack.md)寻求指导。
+

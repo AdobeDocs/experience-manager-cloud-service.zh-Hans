@@ -3,7 +3,7 @@ title: 使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入�
 description: 本指南将帮助您让一个使用 Edge Delivery Services 和 Universal Editor 创作内容的新 Adobe Experience Manager 网站投入正常运转。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 90%
@@ -197,3 +197,4 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 >[!TIP]
 >
 >有关创建已启用以AEMas a Cloud Service作为内容源的AEM创作的新Edge Delivery Services项目的端到端演练，请查看 [本AEM GEM网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+

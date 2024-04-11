@@ -2,7 +2,7 @@
 title: 创建经过检测可与 Universal Editor 结合使用的区块
 description: 了解如何在使用 Edge Delivery Services 项目进行 AEM 创作中创建经过检测可与 Universal Editor 结合使用的区块。
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
-source-git-commit: cc41ff626f6fc6d72785401e3ba38b189945bf74
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 93%
@@ -255,3 +255,4 @@ Adobe 建议您采用三阶段方法来开发区块：
 >[!TIP]
 >
 >有关创建已启用以AEMas a Cloud Service作为内容源的AEM创作的新Edge Delivery Services项目的端到端演练，请查看 [本AEM GEM网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+
