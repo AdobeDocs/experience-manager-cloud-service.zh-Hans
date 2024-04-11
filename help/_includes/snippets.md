@@ -1,7 +1,7 @@
 ---
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '302'
 ht-degree: 100%
 
 ---
@@ -50,10 +50,6 @@ ht-degree: 100%
 * [提交到 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
 * [将自适应表单连接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-
-## 使用 Edge Delivery Services 进行 AEM 创作 - 抢先体验 {#aem-authoring-edge-early-access}
-
-[!BADGE 抢先体验技术 - 通过 Slack 频道上的 AEM Sites 实验室向我们询问此功能！]{type=Informative url="/help/edge/docs/slack.md" tooltip="使用 Edge Delivery Services 进行 AEM 创作是一项抢先体验技术。"}
 
 ## 另请参阅 {#see-more-forms-eds}
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: aaae2986d0b807b34055a48c810c32167d3715d0
+source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
 workflow-type: tm+mt
-source-wordcount: '4862'
+source-wordcount: '4850'
 ht-degree: 99%
 
 ---
@@ -790,18 +790,25 @@ ht-degree: 99%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
-+ 带 Edge Delivery Services 的 AEM{#edge-delivery}
-   + [Edge Delivery Services 快速入门](/help/edge/overview.md)
-   + [使用 Edge Delivery](/help/edge/using.md)
-   + [开发人员快速入门指南](/help/edge/edge-dev-getting-started.md)
-   + [针对 Edge Delivery 创作内容](/help/edge/authoring.md)
-   + [针对 Edge Delivery 发布内容](/help/edge/publishing.md)
-   + [针对 Edge Delivery 进行开发](/help/edge/developing.md)
-   + [内容建模](/help/edge/content-modeling.md)
-   + [创建区块](/help/edge/create-block.md)
-   + [表格数据和电子表格](/help/edge/tabular-data.md)
-   + [现有项目和 Edge Delivery](/help/edge/existing-projects.md)
-   + 构建 Edge Delivery 应用程序 {#build}
++ Edge Delivery Services {#edge-delivery}
+   + [Edge Delivery Services 概述](/help/edge/overview.md)
+   + [将Edge Delivery Services与AEM结合使用](/help/edge/using.md)
+   + 基于AEM的创作 {#aem-authoring}
+      + [针对 Edge Delivery 创作内容](/help/edge/aem-authoring/authoring.md)
+      + [针对 Edge Delivery 发布内容](/help/edge/aem-authoring/publishing.md)
+      + [开发人员快速入门指南](/help/edge/aem-authoring/edge-dev-getting-started.md)
+      + [创建区块](/help/edge/aem-authoring/create-block.md)
+      + [内容建模](/help/edge/aem-authoring/content-modeling.md)
+      + [表格数据和电子表格](/help/edge/aem-authoring/tabular-data.md)
+      + [现有项目和 Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + 基于文档的创作 {#document-authoring}
+      + [创作](/help/edge/docs/authoring.md)
+      + [批量元数据](/help/edge/docs/bulk-metadata.md)
+      + [占位符](/help/edge/docs/placeholders.md)
+      + [Sitemap](/help/edge/developer/sitemap.md)
+      + [SharePoint 设置](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack 机器人](/help/edge/docs/slack.md)
+   + 构建应用程序 {#build}
       + [快速入门 - 开发人员教程](/help/edge/developer/tutorial.md)
       + [项目剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [区块集合](/help/edge/developer/block-collection.md)
@@ -813,21 +820,14 @@ ht-degree: 99%
       + [网站图标](/help/edge/developer/favicon.md)
       + [自定义标头](/help/edge/docs/custom-headers.md)
       + [开发人员最佳实践](/help/edge/docs/dev-collab-and-good-practices.md)
-   + 发布 Edge Delivery 应用程序 {#publish}
-      + [创作](/help/edge/docs/authoring.md)
-      + [批量元数据](/help/edge/docs/bulk-metadata.md)
-      + [占位符](/help/edge/docs/placeholders.md)
-      + [Sitemap](/help/edge/developer/sitemap.md)
-      + [SharePoint 设置](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack 机器人](/help/edge/docs/slack.md)
-   + 启动 Edge Delivery 应用程序 {#launch}
+   + 启动应用程序 {#launch}
       + [上线清单](/help/edge/docs/go-live-checklist.md)
       + [推送失效](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Cloudflare Worker 设置](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Akamai 设置](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly 设置](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重定向](/help/edge/docs/redirects.md)
-   + 构建 Edge Delivery Forms {#build-forms}
+   + 构建Forms {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
       + 开始使用 {#getting-started-eds-forms}
          + [快速入门](/help/edge/docs/forms/tutorial.md)
@@ -848,7 +848,7 @@ ht-degree: 99%
          + [对表单的实时用户监控](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 引用 {#forms-references}
          + [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
-   + Edge Delivery 资源 {#resources}
+   + Edge投放资源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
          + [安装扩展](/help/edge/docs/sidekick-extension.md)

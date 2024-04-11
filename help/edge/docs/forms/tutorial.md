@@ -3,8 +3,8 @@ title: AEM Forms Edge Delivery Services 快速入门- 开发人员教程
 description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。在十到二十分钟内，您将创建自己的表格。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: ht
+source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
+workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 100%
 
@@ -192,7 +192,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 示例内容包括一个“查询”表，用作“查询”表单的模板。工作表的每一行代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，并且列标题定义[字段属性](/help/edge/docs/forms/form-components.md#available-components)。此示例表单让您在构建表单方面取得了先机。
 
-![查询表格](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+![查询表格](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
 让我们从更新字段标签开始。打开“查询”表进行编辑，将提交按钮的标签更改为 `Let's Chat`，并使用 AEM Sidekick 预览和发布该文件。
 
