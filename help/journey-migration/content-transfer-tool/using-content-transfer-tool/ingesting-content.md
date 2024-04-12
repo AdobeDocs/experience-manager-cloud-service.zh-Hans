@@ -2,9 +2,9 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: de05abac3620b254343196a283cef198f434cfca
+source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2876'
 ht-degree: 11%
 
 ---
@@ -55,11 +55,24 @@ ht-degree: 11%
    > 如果设置 **擦除** 为摄取启用，它会重置整个现有Cloud Service，包括目标存储库实例的用户权限。 对于添加到中的管理员用户，此重置也为true **管理员** 并且必须再次将该用户添加到管理员组才能开始引入。
 
    * **预复制：** 选择 `Pre-copy` 值
-      * 您可以运行可选的预复制步骤以显着加快摄取。 请参阅 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
+      * 您可以运行可选的预复制步骤，以显着加快引入速度。 请参阅 [使用AzCopy引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy) 以了解更多详细信息。
       * 如果使用预复制引入（对于S3或Azure数据存储），建议运行 `Author` 仅先摄取。 这样做可以加快 `Publish` 摄取。
 
    >[!IMPORTANT]
    > 仅当属于本地环境时，才能启动到目标环境的引入 **AEM管理员** Cloud Service创作服务上的组。 如果您无法开始引入，请参阅 [无法开始引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) 以了解更多详细信息。
+
+1. 选择摄取选项后，将会显示其估计持续时间。 这是基于类似摄取的历史数据的最佳估计。
+
+   * 此估算仅在提取的“检查大小”值已收集并且可用时才会计算并显示。
+   * 该值是一个估计值，虽然可以智能计算，但不应视为精确值。 各种因素都会改变实际持续时间。
+   * 在摄取运行期间，该值还将在持续时间对话框中可用，可通过&quot;**查看持续时间**”引入操作。
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_estimate"
+>title="摄取持续时间估计"
+>abstract="可以显示特定摄取的大致持续时间，以便提供大致了解需要多长时间。 其准确性确实存在限制。"
+
+![图像](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. 单击 **摄取**.
 
