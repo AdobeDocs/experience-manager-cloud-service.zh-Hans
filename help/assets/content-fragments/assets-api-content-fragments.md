@@ -3,9 +3,9 @@ title: Assets HTTP API中的Adobe Experience Manager as a Cloud Service内容片
 description: 了解对Assets HTTP API中内容片段的支持，这是Adobe Experience Manager的Headless投放功能的重要组成部分。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 47666e87b1cb87577291304336e0219481b7b4e2
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1804'
 ht-degree: 11%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 11%
 | AEM as a Cloud Service | 本文 |
 
 了解对Assets HTTP API中内容片段的支持，这是Adobe Experience Manager (AEM) Headless投放功能的重要组成部分。
+
+>[!NOTE]
+>
+>此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
 
 >[!NOTE]
 >
@@ -56,7 +60,7 @@ Assets REST API还允许开发人员通过创建新资产、更新或删除现�
 
 * 实施 [SIREN格式](https://github.com/kevinswiber/siren)
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 Assets REST API 在最新版本的 Adobe Experience Manager as a Cloud Service 的每个现成安装中提供。
 
@@ -91,6 +95,10 @@ HTTP 方法决定了要执行的操作：
 >请求正文和/或 URL 参数可用于配置其中一些操作；例如，定义文件夹或资产应由 **POST** 请求创建。
 
 支持的请求的确切格式在 [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference) 文档。
+
+>[!NOTE]
+>
+>此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
 
 ### 事务性行为 {#transactional-behavior}
 
@@ -167,6 +175,10 @@ HTTP 方法决定了要执行的操作：
 
 * 此 [Assets REST API](/help/assets/mac-api-assets.md)
 * [实体类型](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types)，其中说明了特定于每个受支持类型（与内容片段相关）的功能
+
+>[!NOTE]
+>
+>此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
 
 ### 分页 {#paging}
 
@@ -262,6 +274,8 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 >[!NOTE]
 >
 >请参阅 [API参考](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). 具体而言，[Adobe Experience Manager Assets API – 内容片段](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>
+>此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
 
 ## 限制 {#limitations}
 
@@ -352,6 +366,8 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
    * [可用功能](/help/assets/mac-api-assets.md#available-features)
+
+* 此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
 
 ## 其他资源 {#additional-resources}
 

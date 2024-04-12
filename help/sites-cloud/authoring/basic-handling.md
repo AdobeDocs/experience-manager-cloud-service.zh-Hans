@@ -2,10 +2,10 @@
 title: 基本处理
 description: 轻松自如地导航 AEM 及其基本用法
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
+source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 63%
+source-wordcount: '954'
+ht-degree: 61%
 
 ---
 
@@ -75,10 +75,11 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 | 资源 | 通过“资源”控制台，您可以导入和管理[数字资源，如图像、视频、文档和音频文件](/help/assets/overview.md)。随后，这些资源便可由同一 AEM 实例上运行的任何站点使用。您还可以从 Assets 控制台创建和管理[内容片段](/help/assets/content-fragments/content-fragments.md)。 |
 | 个性化 | 此控制台为[创作目标内容和呈现个性化体验](/help/sites-cloud/authoring/personalization/overview.md)提供了一个工具框架。 |
 | 内容片段 | 您可使用[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)设计、创建、管理和发布独立于页面的内容。它们允许您准备结构化内容，以准备在多个位置/多个渠道上使用，非常适合于页面创作和 headless 投放。 |
+| 生成变体 | [生成变体](/help/generative-ai/generate-variations.md) 使用创新型人工智能(AI)根据提示创建内容变体；这些提示由Adobe提供或由用户创建和管理。 |
 
 ## “工具”面板 {#tools-panel}
 
-在 **工具** 面板有一个侧面板，其中包含一系列类别，这些类别将相似的控制台组合在一起。 此 **工具** 控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资产及内容存储库的其他方面。 <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+此 **工具** 面板有一个侧面板，其中包含一系列类别，这些类别将相似的控制台组合在一起。 此 **工具** 控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资产及内容存储库的其他方面。
 
 ![“工具”面板](assets/basic-handling-tools.png)
 

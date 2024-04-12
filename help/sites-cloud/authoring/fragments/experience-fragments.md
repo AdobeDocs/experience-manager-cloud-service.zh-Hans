@@ -2,10 +2,10 @@
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 97%
+source-wordcount: '2083'
+ht-degree: 95%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 97%
 体验片段无需复制/粘贴。
 * 支持 headless CMS 用例。
 作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/接触点将会使用该体验，然后交付给用户。
+* 替换为 [多站点管理(MSM)](/help/sites-cloud/administering/msm/overview.md)；作为体验片段属于页面。 这同时适用于单个片段及其所在的文件夹。
 
 >[!NOTE]
 >
@@ -236,6 +237,10 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
    * **变体**
    * **live-copy 形式的变量**.
+
+     >[!NOTE]
+     >
+     >将初始变体创建为Live Copy将通过使用主变体Live Copy源继承标题。
 
 1. 定义所需属性：
 

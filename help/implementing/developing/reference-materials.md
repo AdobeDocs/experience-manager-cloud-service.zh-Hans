@@ -2,9 +2,9 @@
 title: API 参考材料
 description: AEM具有广泛而强大的API，可用于您的数字体验项目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 3434d51c9b0bad02b0c3f0836341f671c9405182
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '608'
 ht-degree: 4%
 
 ---
@@ -72,6 +72,7 @@ AEM提供了可自定义的组件和内容交付选项。
 | [内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | 通过CRUD操作直接通过HTTP API访问内容片段内容 |
 | [内容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在Headless CMS实施中实现将内容片段高效投放到JavaScript客户端 |
 | [内容片段资产HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支持的HTTP资产请求的确切格式 |
+| [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) | 内容片段和内容片段模型OpenAPI |
 
 ## SPA特定的API {#spa-apis}
 

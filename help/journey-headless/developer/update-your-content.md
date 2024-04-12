@@ -2,10 +2,10 @@
 title: 如何通过 AEM Assets API 更新您的内容
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用 REST API 访问和更新内容片段的内容。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 31b0eecd01ee319aaf700505293530fec129b00f
-workflow-type: ht
-source-wordcount: '1061'
-ht-degree: 100%
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+workflow-type: tm+mt
+source-wordcount: '1083'
+ht-degree: 97%
 
 ---
 
@@ -255,6 +255,8 @@ API 引用文档中将定义受支持请求的准确格式。
 >[!NOTE]
 >
 >请参阅 API 参考 [Adobe Experience Manager Assets API - 内容片段](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)。
+>
+>此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
 
 ### 读取/交付 {#read-delivery}
 
@@ -333,3 +335,4 @@ API 引用文档中将定义受支持请求的准确格式。
 * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
 * [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
+* 此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。

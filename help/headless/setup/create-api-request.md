@@ -2,10 +2,10 @@
 title: 创建 API 请求 – Headless 设置
 description: 了解如何使用 GraphQL API 实现内容片段的 Headless 投放，以及如何使用 AEM 的 Assets REST API 管理内容片段。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 97%
+source-wordcount: '674'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 97%
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) 允许您创建请求来访问和投放内容片段。此 API 提供了最可靠的一组功能用于查询和使用内容片段内容。
    * 若要使用该 API，[定义并启用 AEM](/help/headless/graphql-api/graphql-endpoint.md) 中的端点以及安装的 [GraphiQL 接口（如有必要）。](/help/headless/graphql-api/graphiql-ide.md)
 * [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) 让您创建和修改内容片段（及其他资源）。
+
+>[!NOTE]
+>
+>此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
 
 本指南的剩余部分侧重于 GraphQL 访问和内容片段投放。
 
@@ -51,7 +55,7 @@ GraphiQL 是一个 IDE，包含在您的 AEM 环境中； 在您[配置您的端
 
    您可以通过以下任一方式访问查询编辑器：
 
-   * **工具** > **常规** > **GraphQL查询编辑器**
+   * **工具** > **常规** > **GraphQL 查询编辑器**
    * 直接；例如，`http://localhost:4502/aem/graphiql.html`
 
 1. GraphiQL IDE 是用于 GraphQL 的浏览器中查询编辑器。您可以使用它来生成查询，以检索内容片段，并将通过 JSON 格式 headless 投放。
@@ -99,3 +103,7 @@ GraphQL 可以避免迭代 API 以及过度投放，而是允许作为对单个 
 * **[内容片段](/help/sites-cloud/administering/content-fragments/managing.md)** – 提供有关创建和管理内容片段的详细信息
 * **[AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)** – 提供直接通过 HTTP API 使用 CRUD 操作（创建、读取、更新、删除）访问 AEM 内容的详细信息
 * **[GraphQL API](/help/headless/graphql-api/content-fragments.md)** – 提供有关如何以 Headless 方式投放内容片段的详细信息
+
+>[!NOTE]
+>
+>此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。

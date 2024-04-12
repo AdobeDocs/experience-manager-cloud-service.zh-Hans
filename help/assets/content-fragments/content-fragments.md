@@ -2,9 +2,9 @@
 title: 使用内容片段（资产 — 内容片段）
 description: 了解Adobe Experience Manager (AEM) as a Cloud Service中的内容片段如何允许您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和headless投放。 以及它们如何与MSM结合使用。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 02b96c27f985492396cfbd262b9fec450ec8d2c8
+source-git-commit: 930eca968807eaa9b322010d582973d431b9fa01
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2230'
 ht-degree: 59%
 
 ---
@@ -61,8 +61,9 @@ ht-degree: 59%
 >* [内容片段配置用于呈现的组件](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
+>* 此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md)
 
-通信渠道的数量在逐年增加。 通常，渠道称为投放机制，如：
+通信渠道的数量在逐年增加。通常，渠道称为投放机制，如：
 
 * 物理渠道；例如，台式机、移动设备。
 * 实物渠道中的投放形式；例如，“产品详细信息页面”、“产品类别页面”（适用于桌面）或“移动设备 Web”（适用于移动设备的移动设备应用程序）。

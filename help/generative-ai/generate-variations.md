@@ -1,13 +1,14 @@
 ---
 title: 生成变体
-description: 了解如何从Edge Delivery ServicesSidekick访问生成变体
+description: 了解生成变体，可从AEMas a Cloud Service和Edge Delivery ServicesSidekick访问
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3257'
 ht-degree: 1%
 
 ---
+
 
 # 生成变体 {#generate-variations}
 
@@ -15,11 +16,12 @@ ht-degree: 1%
 
 您可以 [访问生成变体](#access-generate-variations) 从：
 
-<!-- 
-* [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
--->
-
+* [在Adobe Experience Manager (AEM)as a Cloud Service中](#access-aemaacs)
 * [AEMEdge Delivery Services的Sidekick](#access-aem-sidekick)
+
+>[!NOTE]
+>
+>在所有情况下，要使用生成变体，您必须确保 [访问先决条件](#access-prerequisites) 已完成。
 
 稍后您可以：
 
@@ -245,18 +247,19 @@ ht-degree: 1%
 
 ![生成变体 — 使用语调编辑提示](assets/generate-variations-prompt-edited.png)
 
-#### 示例：添加新下拉字段 — 页面类型 {#example-add-new-dropdown-field-page-type}
+<!--
+#### Example: Add new dropdown field - Page Type {#example-add-new-dropdown-field-page-type}
 
-要创建提供下拉选择的输入字段“页面类型”，请执行以下操作：
+To create an input field Page Type providing a dropdown selection:
 
-1. 创建名为的电子表格 `pagetype.xls` 文件夹结构的顶级目录中。
-1. 编辑电子表格：
+1. Create a spreadsheet named `pagetype.xls` in the top-level directory of your folder structure.
+1. Edit the spreadsheet:
 
-   1. 创建两列： **键** 和 **值**.
-   1. 在 **键** 列中，输入将在下拉列表中显示的标签。
-   1. 在 **值** 列，描述键值，使生成人工智能具有上下文。
+   1. Create two columns: **Key** and **Value**.
+   1. In the **Key** column, enter labels that will appear in the dropdown.
+   1. In the **Value** column, describe the key value so the generative AI has context.
 
-1. 在提示符下，参考电子表格的标题以及相应的类型。
+1. In your prompt, refer to the title of the spreadsheet along with the appropriate type. 
 
    ```prompt
    {{@page_type, 
@@ -265,6 +268,7 @@ ht-degree: 1%
      spreadsheet=pagetype
    }}
    ```
+-->
 
 ## 创建提示 {#create-prompt}
 
@@ -390,6 +394,95 @@ Adobe提供了大量要使用的受众。
 
    ![生成变体 — 添加受众CSV文件](assets/generate-variations-audiences-csv-save.png)
 
+## 生成操作用法 {#generative-action-usage}
+
+使用情况管理取决于所采取的操作：
+
+* 生成变体
+
+  复制变体的一代等于一个生成操作。 作为客户，您的AEM许可证中会附带一定数量的创新型操作。 一旦使用基本权利，您就可以购买其他操作。
+
+  >[!NOTE]
+  >
+  >请参阅 [Adobe Experience Manager：Cloud Service | 产品描述](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) 有关基本权利的更多详细信息，如果您希望购买更具创作的操作，请联系您的客户团队。
+
+* Adobe Express
+
+  图像生成使用情况通过Adobe Express授权和以下方式处理： [创新型积分](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+
+## 访问生成变体 {#access-generate-variations}
+
+满足前提条件后，您可以从AEMas a Cloud Service或Edge Delivery ServicesSidekick访问生成变体。
+
+### 访问先决条件 {#access-prerequisites}
+
+要使用“生成变体”，您必须确保满足先决条件：
+
+* [使用Edge Delivery Services访问Experience Manageras a Cloud Service](#access-to-aemaacs-with-edge-delivery-services)
+
+#### 使用Edge Delivery Services访问Experience Manageras a Cloud Service{#access-to-aemaacs-with-edge-delivery-services}
+
+需要访问生成变体的用户必须具有使用Edge Delivery Services的Experience Manageras a Cloud Service环境的权限。
+
+>[!NOTE]
+>
+>如果您的AEM Sitesas a Cloud Service合同中不包含Edge Delivery Services，则需要签署新合同才能获得访问权限。
+>
+>您应该联系您的客户团队，讨论如何与Edge Delivery Servicesas a Cloud Service迁移到AEM Sites。
+
+要向特定用户授予访问权限，请将其用户帐户分配给相应的产品配置文件。 请参阅 [分配AEM产品配置文件，了解更多详细信息](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+
+### 从AEMas a Cloud Service访问 {#access-aemaacs}
+
+生成变体可从以下位置访问： [导航面板](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) 的AEMas a Cloud Service：
+
+![“导航”面板](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+
+### 从AEM Sidekick访问 {#access-aem-sidekick}
+
+在您可以从(Edge Delivery Services)Sidekick访问生成变体之前，需要一些配置。
+
+1. 查看文档 [安装AEM Sidekick](https://www.aem.live/docs/sidekick-extension) 了解如何安装和配置Sidekick。
+
+1. 要在(Edge Delivery Services)Sidekick中使用生成变体，请在下的Edge Delivery Services项目中包含以下配置：
+
+   * `tools/sidekick/config.json`
+
+   这必须合并到现有配置中，然后部署。
+
+   例如：
+
+   ```prompt
+   {
+     // ...
+     "plugins": [
+       // ...
+       {
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
+       }
+       // ...
+     ]
+   }
+   ```
+
+1. 然后，您可能需要确保用户具有 [使用Edge Delivery Services访问Experience Manageras a Cloud Service](#access-to-aemaacs-with-edge-delivery-services).
+
+1. 然后，您可以通过选择 **生成变体** 从Sidekick的工具栏中：
+
+   ![生成变体 — 从AEM Sidekicj访问](assets/generate-variations-sidekick-toolbar.png)
+
+## 更多信息 {#further-information}
+
+有关详细信息，您还可以阅读：
+
+* [GenAI在GitHub上生成变体](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Edge Delivery Services试验](https://www.aem.live/docs/experimentation)
+
 ## 常见问题解答 {#faqs}
 
 ### 格式化输出 {#formatted-outpu}
@@ -452,106 +545,7 @@ Adobe提供了大量要使用的受众。
 
 迁移到v2.0.0版本会导致自定义提示模板中断，因此这些模板将不可用。
 
-请参阅 [v2.0.0发行说明（了解如何检索这些版本的说明）](#release-notes-2-0-0-retrieve-prompt-templates).
-
-## 生成操作用法 {#generative-action-usage}
-
-使用情况管理取决于所采取的操作：
-
-* 生成变体
-
-  复制变体的一代等于一个生成操作。 作为客户，您的AEM许可证中会附带一定数量的创新型操作。 一旦使用基本权利，您就可以购买其他操作。
-
-  >[!NOTE]
-  >
-  >请参阅 [Adobe Experience Manager：Cloud Service | 产品描述](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) 有关基本权利的更多详细信息，如果您希望购买更具创作的操作，请联系您的客户团队。
-
-* Adobe Express
-
-  图像生成使用情况通过Adobe Express授权和以下方式处理： [创新型积分](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
-
-## 访问生成变体 {#access-generate-variations}
-
-<!--
-### Access from AEM as a Cloud Service {#access-aemaacs}
-
-Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
-
-![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
--->
-
-### 从AEM Sidekick访问 {#access-aem-sidekick}
-
-在您可以从(Edge Delivery Services)Sidekick访问生成变体之前，需要一些配置。
-
-1. 查看文档 [安装AEM Sidekick](https://www.aem.live/docs/sidekick-extension) 了解如何安装和配置Sidekick。
-
-1. 要在(Edge Delivery Services)Sidekick中使用生成变体，请在下的Edge Delivery Services项目中包含以下配置：
-
-   * `tools/sidekick/config.json`
-
-   这必须合并到现有配置中，然后部署。
-
-   例如：
-
-   ```prompt
-   {
-     // ...
-     "plugins": [
-       // ...
-       {
-         "id": "generate-variations",
-         "title": "Generate Variations",
-         "url": "https://experience.adobe.com/aem/generate-variations",
-         "passConfig": true,
-         "environments": ["preview","live", "edit"],
-         "includePaths": ["**.docx**"]
-       }
-       // ...
-     ]
-   }
-   ```
-
-1. 然后，您可能需要确保用户具有 [使用Edge Delivery Services访问Experience Manageras a Cloud Service](#access-to-aemaacs-with-edge-delivery-services).
-
-1. 然后，您可以通过选择 **生成变体** 从Sidekick的工具栏中：
-
-   ![生成变体 — 从AEM Sidekicj访问](assets/generate-variations-sidekick-toolbar.png)
-
-## 使用Edge Delivery Services访问Experience Manageras a Cloud Service{#access-to-aemaacs-with-edge-delivery-services}
-
-需要访问生成变体的用户必须具有使用Edge Delivery Services的Experience Manageras a Cloud Service环境的权限。
-
->[!NOTE]
->
->如果您的AEM Sitesas a Cloud Service合同中不包含Edge Delivery Services，则需要签署新合同才能获得访问权限。
->
->您应该联系您的客户团队，讨论如何与Edge Delivery Servicesas a Cloud Service迁移到AEM Sites。
-
-要向特定用户授予访问权限，请将其用户帐户分配给相应的产品配置文件。 请参阅 [分配AEM产品配置文件，了解更多详细信息](/help/journey-onboarding/assign-profiles-cloud-manager.md).
-
-## 深入阅读 {#further-reading}
-
-另请阅读：
-
-* [GenAI在GitHub上生成变体](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Edge Delivery Services试验](https://www.aem.live/docs/experimentation)
-
-## 发行说明 {#release-notes}
-
-### 2.0.0  {#release-notes-2-0-0}
-
-* 为提示模板引入了通用永久存储。
-* 受众的新功能
-   * 可直接从Adobe Target中读取受众
-   * 更新了添加CSV文件的方法
-* 带有“保存提示”选项的对话框
-* 在生成图像时，将预填充Adobe Express中的提示
-* 提示卡（在主页上）显示额外信息，可以删除
-
-#### 2.0.0 — 如何检索自定义提示模板 {#release-notes-2-0-0-retrieve-prompt-templates}
-
-迁移到v2.0.0版本会导致自定义提示模板损坏 — 因此不可用。 要检索它们，请执行以下操作：
+要检索它们，请执行以下操作：
 
 1. 转到Sharepoint中的提示模板文件夹。
 1. 复制提示。
@@ -561,20 +555,6 @@ Generate Variations can be accessed from the [Navigation Panel](/help/sites-clou
 1. 验证提示是否有效。
 1. 保存提示。
 
-### 1.0.5 {#release-notes-1-0-5}
+## 版本历史记录 {#release-history}
 
-* 与Adobe Express集成
-* 将编辑提示移动到侧边栏
-
-### 1.0.4 {#release-notes-1-0-4}
-
-* 内部改进
-
-### 1.0.3 {#release-notes-1-0-3}
-
-* 展开或隐藏左侧导航面板
-* 小幅改进
-
-### 1.0.0 - 1.0.2 {#release-notes-1-0-0-1-0-2}
-
-* 内部改进
+有关当前版本和以前版本的详细信息，请参阅 [生成变体的发行说明](/help/generative-ai/release-notes-generate-variations.md)

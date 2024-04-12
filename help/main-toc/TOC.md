@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
-source-wordcount: '4850'
-ht-degree: 99%
+source-wordcount: '4881'
+ht-degree: 98%
 
 ---
 
@@ -31,6 +31,8 @@ ht-degree: 99%
    + [版本信息](/help/release-notes/home.md)
    + AEMaaCS 功能发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2024 {#2024}
+         + [2024.1.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
          + [2023.12.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
          + [2023.11.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
@@ -171,6 +173,8 @@ ht-degree: 99%
          + [2021.10.0 的发行说明](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Experience Manager 增强型连接器 Workfront 发行说明{#workfront}
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + 生成变体的发行说明 {#generate-variations}
+      + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
    + [新增功能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 中的重要更改](/help/release-notes/aem-cloud-changes.md)
    + [已弃用和已删除的功能和 API](/help/release-notes/deprecated-removed-features.md)
@@ -356,6 +360,7 @@ ht-degree: 99%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [关于删除的注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析结构](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [内容片段控制台中的资产](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + 站点创建 {#site-creation}
          + [创建新站点](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -891,7 +896,8 @@ ht-degree: 99%
       + [更新内容片段以进行优化的 GraphQL 筛选](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [示例 GraphQL 查询](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 查询疑难解答](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [内容片段 REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+   + [内容片段和模型OpenAPI](/help/headless/content-fragment-openapis.md)
+   + [Assets HTTP API中的内容片段支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + 安全性 {#security}
       + [权限](/help/headless/security/permissions.md)
       + [身份验证](/help/headless/security/authentication.md)

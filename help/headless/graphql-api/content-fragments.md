@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中将内容片段与 AEM GraphQL API 一起，用于 Headless 内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: a8fbf0a9a1f7e12b6a668544b1a67d8551abf1b7
+source-git-commit: 5771a6afedeb85188e89700d439a9bac18e01fdc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '5359'
+ht-degree: 83%
 
 ---
 
@@ -738,15 +738,13 @@ GraphQL 中的解决方案意味着您可以：
 
 * 传递参数：添加 `_assetTransform` 到在其中定义筛选器的列表标题
 
-<!-- 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
->* `_dynamicUrl` : a DAM asset
->* `_dmS7Url` : a Dynamic Media asset
+>A **内容引用** 可以同时用于DAM资源和Dynamic Media资源。 检索相应的URL时，会使用不同的参数：
+>* `_dynamicUrl` ：DAM资产
+>* `_dmS7Url` ：Dynamic Media资源
 > 
->If the image referenced is a DAM asset then the value for `_dmS7Url` will be `null`. See [Dynamic Media asset delivery by URL in GraphQL queries](#dynamic-media-asset-delivery-by-url).
--->
+>如果引用的图像是DAM资产，则值为 `_dmS7Url` 将为 `null`. 请参阅 [GraphQL查询中按URL的Dynamic Media资产交付](#dynamic-media-asset-delivery-by-url).
 
 ### 转换请求的结构 {#structure-transformation-request}
 
@@ -922,34 +920,37 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
    * 创作时未缓存
    * 发布时缓存 – max-age 为 10 分钟（无法由客户端更改）
 
-<!--
-## Dynamic Media asset delivery by URL in GraphQL queries{#dynamic-media-asset-delivery-by-url}
+## GraphQL查询中按URL的Dynamic Media资产交付{#dynamic-media-asset-delivery-by-url}
 
-GraphQL for AEM Content Fragments allows you to request a URL to an AEM Dynamic Media (Scene7) asset (referenced by a **Content Reference**).
+GraphQL for AEM内容片段允许您请求AEM Dynamic Media (Scene7)资产的URL（由引用） **内容引用**)。
 
-The solution in GraphQL means you can:
+>[!CAUTION]
+>
+>仅 *图像* 可以引用Dynamic Media中的资源。
 
-* use `_dmS7Url` on the `ImageRef` reference
+GraphQL 中的解决方案意味着您可以：
+
+* 在 `ImageRef` 引用上使用 `_dmS7Url`
 
 >[!NOTE]
 >
->For this you need to have a [Dynamic Media Cloud Configuration](/help/assets/dynamic-media/config-dm.md). 
+>为此，您需要拥有 [Dynamic Media云配置](/help/assets/dynamic-media/config-dm.md).
 >
->This adds the `dam:scene7File` and `dam:scene7Domain` attributes on the asset's metadata when it is created.
+>这会添加 `dam:scene7File` 和 `dam:scene7Domain` 创建资产元数据时显示的属性。
 
 >[!NOTE]
 >
->A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>A **内容引用** 可以同时用于DAM资源和Dynamic Media资源。 检索相应的URL时，会使用不同的参数：
 >
->* `_dmS7Url` : a Dynamic Media asset
->* `_dynamicUrl` : a DAM asset
+>* `_dmS7Url` ：Dynamic Media资源
+>* `_dynamicUrl` ：DAM资产
 > 
->If the image referenced is a Dynamic Media asset then the value for `_dynamicURL` will be `null`. See [web-optimized image delivery in GraphQL queries](#web-optimized-image-delivery-in-graphql-queries).
+>如果引用的图像是Dynamic Media资产，则其值 `_dynamicURL` 将为 `null`. 请参阅 [GraphQL查询中的Web优化图像投放](#web-optimized-image-delivery-in-graphql-queries).
 
-### Sample query for Dynamic Media asset delivery by URL {#sample-query-dynamic-media-asset-delivery-by-url}
+### Dynamic Media资源交付的示例查询（按URL） {#sample-query-dynamic-media-asset-delivery-by-url}
 
-The following is a sample query:
-* for multiple Content Fragments of type `team` and `person`
+以下是示例查询：
+* 类型为的多个内容片段 `team` 和 `person`
 
 ```graphql
 query allTeams {
@@ -972,7 +973,6 @@ query allTeams {
   }
 } 
 ```
--->
 
 ## GraphQL for AEM – 执行摘要 {#graphql-extensions}
 
@@ -1067,6 +1067,10 @@ query allTeams {
 
             * [使用单个指定参数进行Web优化图像投放的示例查询](#web-optimized-image-delivery-single-query-variable)
 
+      * `_dmS7Url`：在 `ImageRef` 将URL投放到的引用 [Dynamic Media资源](#dynamic-media-asset-delivery-by-url)
+
+         * 请参阅 [Dynamic Media资源交付的示例查询（按URL）](#sample-query-dynamic-media-asset-delivery-by-url)
+
    * `_tags`：用于显示包含标记的内容片段或变体的ID；这是一个数组 `cq:tags` 标识符。
 
       * 请参阅[示例查询 - 标记为“城市度假”的所有城市的名称](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
@@ -1098,13 +1102,6 @@ query allTeams {
 * 在查询嵌套片段时回退：
 
    * 如果给定的变体在嵌套片段中不存在，则将返回&#x200B;**主**&#x200B;变体。
-
-<!-- between dynamicURL and tags -->
-<!--
-    * `_dmS7Url`: on the `ImageRef` reference for the delivery of the URL to a [Dynamic Media asset](#dynamic-media-asset-delivery-by-url)
-
-      * See [Sample query for Dynamic Media asset delivery by URL](#sample-query-dynamic-media-asset-delivery-by-url)
--->
 
 ## 从外部网站查询 GraphQL 端点 {#query-graphql-endpoint-from-external-website}
 

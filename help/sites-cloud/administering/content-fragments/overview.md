@@ -4,9 +4,9 @@ description: 了解AEMas a Cloud Service中的内容片段如何允许您创建�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 46a6f5ace7aa3def8021dd16ea394b780afce2e6
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1803'
 ht-degree: 98%
 
 ---
@@ -105,6 +105,8 @@ ht-degree: 98%
 >* [AEM Assets HTTP API 中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [用于内容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 >* [用内容片段创作页面](/help/sites-cloud/authoring/fragments/content-fragments.md)。
+>* 此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
+
 
 ## 主控和变体 {#main-and-variations}
 

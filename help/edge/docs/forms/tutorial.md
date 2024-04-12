@@ -3,10 +3,10 @@ title: AEM Forms Edge Delivery Services 快速入门- 开发人员教程
 description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。在十到二十分钟内，您将创建自己的表格。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-source-git-commit: 74e3bc79a734bd2c686e28cdcbbda96a58268c77
+source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
 source-wordcount: '1848'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -253,8 +253,9 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 
 准备好展示您的创作了吗？使用 Git 提交并推送您的更改。这将更新可通过以下 URL 访问的预览和生产环境（将占位符替换为您的项目详细信息）：
 
-预览：`https://<branch>--<repo>--<owner>.hlx.page/`
-制作：`https://<branch>--<repo>--<owner>.hlx.live/`
+预览： `https://<branch>--<repo>--<owner>.hlx.page/`
+生产： `https://<branch>--<repo>--<owner>.hlx.live/`
+
 恭喜！您已成功设置本地开发环境并部署了更改。
 
 

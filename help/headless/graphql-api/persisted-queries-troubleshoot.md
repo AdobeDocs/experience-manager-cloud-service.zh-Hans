@@ -2,13 +2,13 @@
 title: 持久的GraphQL查询疑难解答
 description: 了解如何对Adobe Experience Manager as a Cloud Service中的持久GraphQL查询问题进行故障诊断。
 feature: Content Fragments,GraphQL API
-source-git-commit: c8ea9846600d1773e6f269973635f5338f31906f
+exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
+source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
-
 
 # 持久的GraphQL查询疑难解答 {#troubleshoot-persisted-graphql-queries}
 
@@ -34,13 +34,13 @@ ht-degree: 0%
 
 ## 未配置GraphQL端点 {#graphql-endpoint-not-configured}
 
-当持久查询返回 `400` 或 `500` 错误代码，以及信息 `No suitable endpoint found`，这意味着在AEM环境中未配置任何GraphQL端点。
+当持久查询返回 `404` 错误代码，以及信息 `No suitable endpoint found`，这意味着在AEM环境中未配置任何GraphQL端点。
 
 要更正此问题，请按照启用和发布端点的步骤进行操作 [在AEM中管理GraphQL端点](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## GraphQL持久查询URL中缺少路径 {#missing-path-query-url}
 
-如果持久查询返回 `400` 或 `500` 包含信息的错误代码 `Suffix: '/' does not contain a path`，则在调用GraphQL servlet时没有路径后缀。
+如果持久查询返回 `400` 包含信息的错误代码 `Suffix: '/' does not contain a path`，则在调用GraphQL servlet时没有路径后缀。
 
 模式应为 `/graphql/execute.json/thePath`.
 

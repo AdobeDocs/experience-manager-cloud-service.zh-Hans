@@ -4,10 +4,10 @@ description: 了解如何从控制台和编辑器管理AEM内容片段，创建�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 87%
+source-wordcount: '2629'
+ht-degree: 86%
 
 ---
 
@@ -72,6 +72,8 @@ ht-degree: 87%
 
 选择 **内容片段** 在新选项卡中打开控制台。
 
+<!-- CQDOC-21349: screenshot -->
+
 ![内容片段控制台 – 概述](assets/cf-managing-console-overview.png)
 
 在这里，您可以看到以下三个主要区域：
@@ -84,6 +86,7 @@ ht-degree: 87%
    * 在此，可以隐藏或显示文件夹树
    * 您可以选择树的特定分支
    * 可以调整其大小以显示嵌套文件夹
+   * 您可以在查看内容片段或 [资产](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 * 主/右侧面板 – 从此处，您可以：
    * 查看树的选定分支中的所有内容片段列表：
       * 将显示所选文件夹和所有子文件夹中的内容片段：
@@ -132,6 +135,8 @@ ht-degree: 87%
 #### 针对（选定的）内容片段的操作 {#actions-selected-content-fragment}
 
 选择特定片段会打开一个工具栏，其中重点介绍可用于该片段的操作。 您还可以选择多个片段 – 操作的选择将相应地进行调整。
+
+<!-- CQDOC-21349: screenshot -->
 
 ![内容片段控制台 – 选定片段的工具栏](assets/cf-managing-console-fragment-toolbar.png)
 
@@ -372,6 +377,8 @@ ht-degree: 87%
 
 ## 查找和替换 {#find-and-replace}
 
+<!-- CQDOC-21349: screenshot -->
+
 此 **替换** 操作可用（在顶部工具栏中）来查找和替换所选内容片段中的指定文本。
 
 ![查找和替换](assets/cf-managing-find-replace.png)
@@ -384,8 +391,9 @@ ht-degree: 87%
 >
 >如果您选择20个以上的内容片段，您将看到消息 **无法找到和替换**.
 
-![确认替换](assets/cf-managing-confirm-replace.png)
+<!-- CQDOC-21349: screenshot -->
 
+![确认替换](assets/cf-managing-confirm-replace.png)
 
 ## 删除片段 {#deleting-a-fragment}
 
@@ -450,6 +458,8 @@ ht-degree: 87%
 
 一旦选定，将显示&#x200B;**筛选依据**&#x200B;选项（在“搜索”框下方）。可以从该位置将其取消选择。例如：
 
+<!-- CQDOC-21349: screenshot -->
+
 ![内容片段控制台 – 筛选](assets/cf-managing-console-filter.png)
 
 ### 快速筛选 {#fast-filtering}
@@ -472,9 +482,13 @@ ht-degree: 87%
 
 搜索框支持全文搜索。在搜索框中输入搜索词：
 
+<!-- CQDOC-21349: screenshot -->
+
 ![内容片段控制台 – 搜索](assets/cf-managing-console-search-specification.png)
 
 将提供选定的结果：
+
+<!-- CQDOC-21349: screenshot -->
 
 ![内容片段控制台 – 搜索结果](assets/cf-managing-console-search-results.png)
 

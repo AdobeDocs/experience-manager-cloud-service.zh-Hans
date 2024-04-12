@@ -3,10 +3,10 @@ title: 持久 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中使用持久 GraphQL 查询优化性能。持久查询可以由客户端应用程序使用 HTTP GET 方法请求，响应可以缓存在 Dispatcher 和 CDN 层中，最终改进客户端应用程序的性能。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '1869'
-ht-degree: 86%
+source-wordcount: '1952'
+ht-degree: 79%
 
 ---
 
@@ -408,7 +408,7 @@ curl -u admin:admin -X POST \
 
 默认情况下，无论实际结果如何，`PersistedQueryServlet`在执行查询时都会发送`200`响应。
 
-当持久化查询中出现错误时，您可以为&#x200B;**持久化查询服务配置**[配置 OSGi 设置](/help/implementing/deploying/configuring-osgi.md)，以控制 `/execute.json/persisted-query` 端点返回的状态代码。
+您可以 [配置OSGi设置](/help/implementing/deploying/configuring-osgi.md) 对于 **持久查询服务配置** 控制是否返回更详细的状态代码 `/execute.json/persisted-query` 端点，当持久查询中存在错误时。
 
 >[!NOTE]
 >
@@ -417,14 +417,20 @@ curl -u admin:admin -X POST \
 字段 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) 可以根据需要定义：
 
 * `false`（默认值）：
-持久化查询成功与否无关紧要。`/execute.json/persisted-query` 返回状态码 `200`，返回的 `Content-Type` 标题为 `application/json`。
+持久化查询成功与否无关紧要。此 `Content-Type` 返回的标头是 `application/json`，和 `/execute.json/persisted-query` *始终* 返回状态代码 `200`.
 
-* `true`：
-当运行持久化查询时出现任何形式的错误时，端点将返回 `400` 或 `500`（视情况而定）。此外，返回的 `Content-Type` 是 `application/graphql-response+json`。
+* `true`：返回的 `Content-Type` 是 `application/graphql-response+json`，并且当运行持久查询时出现任何形式的错误时，端点将返回相应的响应代码：
+
+  | 代码 | 描述 |
+  |--- |--- |
+  | 200 | 成功响应 |
+  | 400 | 指示缺少标头，或者持久查询路径存在问题。 例如，未指定配置名称，未指定后缀等。<br>请参阅 [疑难解答 — 未配置GraphQL端点](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | 无法找到请求的资源。 例如，Graphql端点在服务器上不可用。<br>请参阅 [疑难解答 — GraphQL持久查询URL中缺少路径](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | 内部服务器错误。 例如，验证错误、持久性错误和其他错误。 |
 
   >[!NOTE]
   >
-  >请参阅https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >另请参阅https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## 为应用程序使用的查询 URL 编码 {#encoding-query-url}
 

@@ -4,10 +4,10 @@ description: 了解如何通过 AEM 强大的 Live Copy 和多站点管理器功
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 96%
+source-wordcount: '2721'
+ht-degree: 95%
 
 ---
 
@@ -141,6 +141,10 @@ ht-degree: 96%
 * **蓝图**（**工具** – **Sites**）
 
    * 利用此控制台，您可以[创建和管理您的 Blueprint 配置。](creating-live-copies.md#creating-a-blueprint-configuration)
+
+>[!NOTE]
+>
+>MSM可同时用于页面和 [体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md) 因为这些片段是体验（页面）的一部分。
 
 >[!NOTE]
 >
