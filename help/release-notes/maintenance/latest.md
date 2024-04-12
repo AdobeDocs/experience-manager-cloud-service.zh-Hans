@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 77%
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 77%
 
 以下总结了维护版本15860的不断改进，该版本于2024年4月10日公开发布。 上一个维护版本是版本 15787。
 
-2024.3.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
+2024.3.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hans)。
 
 ### 增强 {#enhancements-15860}
 
@@ -31,11 +31,11 @@ ht-degree: 77%
 
 无。
 
-### 已弃用的功能和API {#deprecated-15860}
+### 已弃用的功能和 API {#deprecated-15860}
 
 * [在 Adobe Developer Console 中弃用 JWT 凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-看看 [已弃用和已删除的功能和API](/help/release-notes/deprecated-removed-features.md) 了解AEMas a Cloud Service中已弃用或删除的内容。
+查看[已弃用和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)，了解 AEM as a Cloud Service 中已弃用或移除的功能。
 
 ### 更改通知 {#change-notice-15860}
 
