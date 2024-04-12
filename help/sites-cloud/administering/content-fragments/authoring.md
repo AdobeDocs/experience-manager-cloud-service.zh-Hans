@@ -4,10 +4,10 @@ description: 了解如何为内容片段创作内容，并根据用途创建该�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
 workflow-type: tm+mt
-source-wordcount: '2266'
-ht-degree: 92%
+source-wordcount: '2381'
+ht-degree: 88%
 
 ---
 
@@ -370,6 +370,27 @@ ht-degree: 92%
 >发布内容片段时将创建新版本。
 
 ![内容片段编辑器 - 版本历史记录概述](assets/cf-authoring-version-history-overview.png)
+
+### 比较版本 {#compare-version}
+
+对于内容片段，您可以将以前的版本与当前版本进行比较。
+
+要将以前的版本与当前版本进行比较，请执行以下操作：
+
+1. 选择版本旁边的三个圆点图标。
+
+1. 选择 **比较**.
+
+![内容片段编辑器 — 版本历史记录比较](assets/cf-authoring-version-history-compare.png)
+
+此时将打开一个视图，其中显示内容的当前版本与内容片段的所选先前版本之间的差异。 从 **有更改的变体** 从下拉列表中，您可以选择查看与主内容的差异和/或变体中的内容。
+
+差异以颜色表示：
+
+* 绿色：表示添加的内容（添加到当前版本）
+* 红色：表示内容已删除（从当前版本）
+
+![内容片段编辑器 — 版本历史记录比较版本](assets/cf-authoring-version-history-compare-versions.png)
 
 ### 恢复到某个版本 {#revert-version}
 
