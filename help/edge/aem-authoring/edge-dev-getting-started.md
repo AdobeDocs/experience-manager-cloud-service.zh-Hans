@@ -3,10 +3,10 @@ title: 使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入�
 description: 本指南将帮助您让一个使用 Edge Delivery Services 和 Universal Editor 创作内容的新 Adobe Experience Manager 网站投入正常运转。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 90%
+source-wordcount: '1297'
+ht-degree: 88%
 
 ---
 
@@ -130,7 +130,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 >
 >要使用 Universal Editor 编辑您的站点，您必须使用基于 Chromium 的浏览器。
 
-1. 通过您的[项目 Slack 频道](/help/edge/docs/slack.md)向 Adobe 工程部门索要最新的“使用 Edge Delivery Services 进行 AEM 创作”站点模板。
+1. 从GitHub下载最新的通过Edge Delivery Services进行AEM创作站点模板，网址为 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
 1. 登录到您的 AEM as a Cloud Service 创作实例，导航到“站点”控制台，然后点击或单击&#x200B;**创建** -> **从模板创建站点**。
 
@@ -141,6 +141,8 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
    ![导入模板](assets/edge-dev-getting-started/site-templates.png)
 
 1. 上传 Adobe 工程部门为您提供的“使用 Edge Delivery Services 进行 AEM 创作”站点模板。
+
+   * 模板只能上传一次。 上传后，可重复使用它来创建其他站点。
 
 1. 导入该模板后，它即出现在向导中。点击或单击以选择它，然后点击或单击&#x200B;**下一步**。
 
