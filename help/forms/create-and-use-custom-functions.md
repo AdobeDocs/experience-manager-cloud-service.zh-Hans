@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '3039'
+source-wordcount: '3108'
 ht-degree: 2%
 
 ---
@@ -42,102 +42,112 @@ AEM Forms支持自定义函数，允许用户定义用于实现复杂业务规�
 
 JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定符号(例如/**和@)开头的注释。 注释提供了有关代码中的函数、变量和其他元素的重要信息。 自适应表单支持自定义函数的以下JavaScript注释：
 
-* **名称**
+#### 名称
+
 该名称用于标识自适应表单的规则编辑器中的自定义函数。 以下语法用于命名自定义函数：
-   * `@name [functionName] <Function Name>`
-   * `@function [functionName] <Function Name>`
-   * `@func [functionName] <Function Name>`。
-     `functionName` 是函数的名称。 不允许使用空格。
-     `<Function Name>` 是自适应表单的规则编辑器中函数的显示名称。
+
+* `@name [functionName] <Function Name>`
+* `@function [functionName] <Function Name>`
+* `@func [functionName] <Function Name>`。
+  `functionName` 是函数的名称。 不允许使用空格。
+  `<Function Name>` 是自适应表单的规则编辑器中函数的显示名称。
 如果函数名称与函数本身的名称相同，则可以忽略 `[functionName]` 语法中的。 <!-- For example,  in the `calculateAge` custom function, the name is defined as:
 `* @name calculateAge` -->
 
-* **参数**
+#### 参数
+
 参数是自定义函数使用的参数列表。 函数可以支持多个参数。 以下语法用于定义自定义函数中的参数：
-   * `@param {type} name <Parameter Description>`
-   * `@argument` `{type} name <Parameter Description>`
-   * `@arg` `{type}` `name <Parameter Description>`.
-     `{type}` 表示参数类型。  允许的参数类型包括：
-      * string：表示单个字符串值。
-      * 数字：表示单个数值。
-      * 布尔值：表示单个布尔值（true或false）。
-      * 字符串[]：表示字符串值的数组。
-      * 数字[]：表示数字值的数组。
-      * 布尔型[]：表示布尔值的数组。
-      * 日期：表示单个日期值。
-      * 日期[]：表示日期值的数组。
-      * array：表示包含各种类型值的泛型数组。
-      * 对象：表示传递到自定义函数的表单对象，而不是直接传递其值。
-      * scope：表示自定义函数在运行时使用的全局对象。 此变量声明为JavaScript注释中的最后一个参数，在自适应表单的规则编辑器中不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。
 
-  参数类型不区分大小写，并且参数名称中不允许有空格。
+* `@param {type} name <Parameter Description>`
+* `@argument` `{type} name <Parameter Description>`
+* `@arg` `{type}` `name <Parameter Description>`.
+  `{type}` 表示参数类型。  允许的参数类型包括：
+   * string：表示单个字符串值。
+   * 数字：表示单个数值。
+   * 布尔值：表示单个布尔值（true或false）。
+   * 字符串[]：表示字符串值的数组。
+   * 数字[]：表示数字值的数组。
+   * 布尔型[]：表示布尔值的数组。
+   * 日期：表示单个日期值。
+   * 日期[]：表示日期值的数组。
+   * array：表示包含各种类型值的泛型数组。
+   * 对象：表示传递到自定义函数的表单对象，而不是直接传递其值。
+   * scope：表示自定义函数在运行时使用的全局对象。 此变量声明为JavaScript注释中的最后一个参数，在自适应表单的规则编辑器中不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。
 
-  `<Parameter Description>` 包含有关参数用途的详细信息。 它可以有多个单词。
+    参数类型不区分大小写，并且参数名称中不允许有空格。
+    
+    ’&lt;parameter description=&quot;&quot;>&#39;包含有关参数用途的详细信息。 它可以有多个单词。
+    
+    默认情况下，所有参数都是必需的。 您可以在参数类型后添加“=”或将参数名称括在“[]”中，从而将参数定义为可选参数。 在JavaScript注释中定义为可选的参数在规则编辑器中显示为可选。
+    要将变量定义为可选参数，可以使用以下任意语法：
+    
+    * &#39;@param {type=} Input1&#39;
+    
+    在上一行代码中，“Input1”是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
+    &#39;@param {string=&lt;value>} input1&#39;
+    
+    &#39;input1&#39;作为可选参数，默认值为&#39;value&#39;。
+    
+    * ’@param {type} [输入1]&#39;
+    
+    在上一行代码中，“Input1”是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
+    &#39;@param {array} [输入1=&lt;value>]`
+    “input1”是数组类型的可选参数，其默认值设置为“value”。
+    确保将参数类型括在大括号中 {} 并且参数名称用方括号[]括起来。
+    
+    请考虑以下代码段，其中input2被定义为可选参数：
+    
+    ```javascript
+    
+    /**
+    *可选参数函数
+    * @name OptionalParameterFunction
+    * @param {string} input1
+    * @param {string=}输入2
+    * @return {string}
+    */
+    函数OptionalParameterFunction(input1， input2) {
+    let result = &quot;Result： &quot;；
+    结果+=输入1；
+    if(输入2 ！== null) {
+    结果+=“ ”+input2；
+    }
+    返回结果；
+    }
+    ```
+    
+    下图显示在规则编辑器中使用“OptionalParameterFunction”自定义函数：
+    
+    &lt;!>— ！[可选或必需的参数](/help/forms/assets/optional-default-params.png) —>
+    
+    您可以保存规则而不为所需参数指定值，但不会执行规则并显示警告消息：
+    
+    &lt;!>— ！[不完整规则警告](/help/forms/assets/incomplete-rule.png) —>
+    
+    当用户将可选参数留空时，“未定义”值将传递到可选参数的自定义函数。
 
-  默认情况下，所有参数都是必需的。 通过添加以下任一项，可将参数定义为可选参数 `=` 在参数类型后面或将参数名称括在  `[]`. 在JavaScript注释中定义为可选的参数在规则编辑器中显示为可选。
-要将变量定义为可选参数，可以使用以下任意语法：
+#### 返回类型
 
-   * `@param {type=} Input1`
-在上一行代码中， `Input1` 是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
-     `@param {string=<value>} input1`
-
-     `input1` 作为可选参数，默认值设置为 `value`.
-
-   * `@param {type} [Input1]`
-在上一行代码中， `Input1` 是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
-     `@param {array} [input1=<value>]`
-     `input1` 是数组类型的可选参数，其默认值设置为 `value`.
-确保将参数类型括在大括号中 {} 并且参数名称用方括号括起来 [].
-
-     请考虑以下代码段，其中input2被定义为可选参数：
-
-     ```javascript
-          /**
-          * optional parameter function
-          * @name OptionalParameterFunction
-          * @param {string} input1 
-          * @param {string=} input2 
-          * @return {string}
-         */
-         function OptionalParameterFunction(input1, input2) {
-         let result = "Result: ";
-         result += input1;
-         if (input2 !== null) {
-             result += " " + input2;
-         }
-         return result;
-         }
-     ```
-
-     下图使用 `OptionalParameterFunction` 规则编辑器中的自定义函数：
-
-     ![可选或必需的参数](/help/forms/assets/optional-default-params.png)
-
-     您可以保存规则而不为所需参数指定值，但不会执行规则并显示警告消息：
-
-     ![规则警告消息不完整](/help/forms/assets/incomplete-rule.png)
-
-     当用户将可选参数留空时，“未定义”值将传递到可选参数的自定义函数。
-
-* **返回类型**
 返回类型指定自定义函数在执行后返回的值的类型。 以下语法用于在自定义函数中定义退货类型：
-   * `@return {type}`
-   * `@returns {type}`
-     `{type}` 表示函数的返回类型。 允许的返回类型包括：
-      * string：表示单个字符串值。
-      * 数字：表示单个数值。
-      * 布尔值：表示单个布尔值（true或false）。
-      * 字符串[]：表示字符串值的数组。
-      * 数字[]：表示数字值的数组。
-      * 布尔型[]：表示布尔值的数组。
-      * 日期：表示单个日期值。
-      * 日期[]：表示日期值的数组。
-      * array：表示包含各种类型值的泛型数组。
-      * 对象：表示表单对象，而不是直接表示其值。
 
-     返回类型不区分大小写。
+* `@return {type}`
+* `@returns {type}`
+  `{type}` 表示函数的返回类型。 允许的返回类型包括：
+   * string：表示单个字符串值。
+   * 数字：表示单个数值。
+   * 布尔值：表示单个布尔值（true或false）。
+   * 字符串[]：表示字符串值的数组。
+   * 数字[]：表示数字值的数组。
+   * 布尔型[]：表示布尔值的数组。
+   * 日期：表示单个日期值。
+   * 日期[]：表示日期值的数组。
+   * array：表示包含各种类型值的泛型数组。
+   * 对象：表示表单对象，而不是直接表示其值。
 
-* **私有**
+  返回类型不区分大小写。
+
+#### 专用
+
 声明为私有的自定义函数不会出现在自适应表单的规则编辑器的自定义函数列表中。 默认情况下，自定义函数是公用的。 将自定义函数声明为私有函数的语法为 `@private`.
 
 要详细了解如何在JSDocs中定义可选参数， [单击此处](https://jsdoc.app/tags-param).
@@ -390,7 +400,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 ```javascript
     
-	/**
+    /**
     * enablePanel
     * @name enablePanel
     * @param {object} field1

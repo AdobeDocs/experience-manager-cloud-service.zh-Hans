@@ -4,9 +4,9 @@ description: 使用自适应表单核心组件向自适应表单添加注释、�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
 hidefromtoc: true
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '593'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 1. 在左侧面板上的选择下拉菜单中，选择 **[!UICONTROL 版本]**.
    ![选择表单](select-a-form.png)
 1. 单击 **三点** 位于左下面板上，单击 **[!UICONTROL 另存为版本]**.
-1. 现在为表单版本提供一个标签，您可以通过注释提供有关表单的信息。
+1. 现在，为表单版本提供一个标签，您可以通过注释提供有关表单的信息。
    ![创建表单版本](create-a-form-version.png)
 
 ### 更新表单版本 {#update-a-form-version}
@@ -77,22 +77,15 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 1. 单击 **“添加”图标** ，如图所示。
    ![注释](annotation.png)
 
-1. 单击 **“添加”图标** 位于左上边栏的图像，用于添加符号。
+1. 单击 **“添加”图标** 位于左上边栏的图像，用于添加注释。
    ![添加注释](add-annotation.png)
 
-1. 现在，您可以添加注释、绘制带有多种颜色的草图来形成组件。
+1. 现在，您可以添加注释，用多种颜色绘制草图以形成组件。
 
-1. 要查看您在表单中添加的所有注释，请选择您的表单，您将在左侧面板上看到添加的注释，如图像所示。
+1. 要查看您在表单中添加的所有注释，请选择您的表单，然后您会看到在左侧面板中添加的注释，如图像所示。
 
    ![查看添加的批注](see-annotations.png)
 
+## 另请参阅 {#see-also}
 
-
-
-
-
-
-
-
-
-
+{{see-also}}

@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 78%
+source-wordcount: '1964'
+ht-degree: 56%
 
 ---
 
@@ -186,10 +186,63 @@ DocAssurance服务包括签名和加密API：
 
 * 使用密码加密PDF文档。
 * 从PDF文档中删除基于密码的加密。
+* 检索应用于PDF文档的安全类型。
 * 返回应用于PDF文档的安全类型。
 
 签名API和加密API都是 [同步API](#types-of-communications-apis-types).
 
+### Reader扩展服务
+
+<span class="preview"> Reader扩展服务功能属于早期采用者计划。 你可以写信给 `aem-forms-ea@adobe.com` 从您的官方电子邮件id加入率先采用者计划并请求获取该功能的访问权限。 </span>
+
+Reader扩展服务通过扩展具有其他使用权限的Adobe Reader的功能，使您的组织可以轻松共享交互式PDF文档。 Reader扩展服务可与Adobe Reader配合使用。 该服务向PDF文档添加使用权限。 此操作激活在使用Adobe Reader打开PDF文档时通常不可用的功能，例如向文档添加注释、填写表单和保存文档。
+
+
+当PDF文档添加了相应的使用权限后，收件人可以在Adobe Reader中执行以下操作：
+
+* 在线或离线完成PDF文档和表单，使收件人能够在本地保存副本以保存其记录，同时仍保持添加的信息完好无损。
+* 将PDF文档保存到本地硬盘，以保留原始文档以及任何其他注释、数据或附件。
+* 将文件和媒体剪辑附加到PDF文档。
+* 通过使用行业标准公钥基础设施(PKI)技术应用数字签名对PDF文档进行签名、认证和身份验证。
+* 以电子方式提交已完成或添加注释的PDF文档。
+* 使用PDF文档和表单作为内部数据库和Web服务的直观开发前端。
+* 与其他人共享PDF文档，以便审阅人可以使用直观的标记工具添加注释。 这些工具包括电子便笺、印章、高亮和文本删除线。 Acrobat中提供了相同的函数。
+* 支持条形码表单解码。
+
+在Adobe Reader中打开启用了权限的PDF文档时，会自动激活这些特殊使用权限功能。 当用户使用完启用了权限的文档时，这些功能在Adobe Reader中再次被禁用。 它们保持禁用状态，直到用户收到另一个启用了权限的PDF文档。
+
+Reader扩展服务的各种使用权限功能包括：
+
+* **条形码解码**：用于解码PDF文档中的条形码。
+
+* **评论**：在PDF文档上脱机批注。
+
+* **在线评论**：在PDF文档上进行联机评论。
+
+* **数字签名**：向PDF文档添加数字签名。
+
+* **动态表单字段**：向PDF文档添加表单字段。
+
+* **动态表单页面**：将表单页面添加到PDF文档。
+
+* **嵌入式文件**：在PDF文档中嵌入文件。
+
+* **表单数据导入**：将表单数据导入PDF文档。
+
+* **表单数据导出**：将表单数据导入PDF文档。
+
+* **表单填写**：在PDF文档中填写表单字段。
+
+* **在线Forms**：从PDF文档访问Web服务或数据库。
+
+* **独立提交**：从PDF文档离线提交表单数据。
+
+**Reader扩展服务中的其他功能**
+
+* **消息**：在打开应用了一个或多个使用权限的PDF文档时，Adobe Acrobat Reader中显示的消息。
+* **解锁密码**：打开加密的PDF文档所需的密码。 通常，这是文档打开密码，但如果PDF文档受权限密码的额外保护，则可以使用任一密码来打开文档。
+
+此 [API参考文档](https://adobe-aem-document-experimental.redoc.ly/) 提供有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API参考文档也以.yaml格式提供。 您可以下载.yaml并将其上传到Postman以检查API的功能。
 
 ## 通信 API 的类型 {#types}
 

@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 31%
@@ -134,22 +134,22 @@ Assets Essentials允许管理员管理存储库中可用专用收藏集的访问
 
   您现在可以通过以下方式简化自定义函数交互：
 
-   * 利用新批注提供更清晰的函数定义。
-   * 将缓存机制用于自定义函数，可加快表单性能。
-   * 在自定义函数中无缝使用全局对象。
-   * 在自定义函数中定义并利用可选参数。
+   * [利用新批注提供更清晰的函数定义](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [将缓存机制用于自定义函数，可加快表单性能](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [在自定义函数中无缝使用全局对象](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [在自定义函数中定义和利用可选参数](/help/forms/create-and-use-custom-functions.md#parameter).
 
   此更新还为规则编辑器功能提供了以下增强功能。 您可以：
 
-   * 为条件执行实施强大的“when-then-else”逻辑。
+   * 实施功能强大的 [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) 条件执行的逻辑。
    * 利用现代JavaScript功能，如let和arrow函数（ES10支持）。
    * 不仅验证或重置字段，而且验证或重置整个面板和表单，从而扩展对用户交互的控制。
 
   这些改进为在可视规则编辑器中构建规则和自定义函数提供了更直观、更强大的体验。
 
-* **创建自适应表单的多个版本**：您现在可以轻松管理现有表单的变体。 这简化了版本控制并有助于表单优化的比较，所有这些都在单个简化的工作流中。
+* **[创建自适应表单的多个版本](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**：您现在可以轻松管理现有表单的变体。 这简化了版本控制并有助于表单优化的比较，所有这些都在单个简化的工作流中。
 
-* **比较自适应表单**：您现在可以轻松比较两个表单以识别两个表单之间的差异。 它通过使团队成员能够比较修订并高效讨论更改而促进顺利的协作。
+* **[比较自适应表单](/help/forms/compare-forms.md)**：您现在可以轻松比较两个表单以识别两个表单之间的差异。 它通过使团队成员能够比较修订并高效讨论更改而促进顺利的协作。
 
 * **涂鸦签名组件的辅助功能增强**：此更新显着改进了涂鸦签名组件的辅助功能：
 
@@ -179,7 +179,7 @@ Assets Essentials允许管理员管理存储库中可用专用收藏集的访问
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> 使用Adobe Workfront Fusion连接器，您可以设计在提交自适应表单时自动触发的工作流。 例如，设想一个方案，其中启动一个工作流，向特定个人分配审核已提交数据的任务，允许根据通过自适应表单捕获的信息批准或拒绝应用程序。 这一简化的集成提高了效率，并将工作流流程的自动化水平提高到了一个新的水平。|
 
-* **Reader扩展服务**： AEM Forms Communication API提供了Reader扩展服务，可让您为常规PDF添加表单填写和注释等功能，从而通过免费的Adobe Reader向用户提供交互式功能。
+* **[Reader扩展服务](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**： AEM Forms Communication API提供了Reader扩展服务，可让您为常规PDF添加表单填写和注释等功能，从而通过免费的Adobe Reader向用户提供交互式功能。
 
 * [支持从右向左书写的语言](/help/forms/supporting-new-language-localization-core-components.md)：现在可用从右向左书写 (RTL) 的语言（如阿拉伯语、波斯语和乌尔都语）展示基于核心组件构建的自适应表单。全球有超过 20 亿人使用 RTL 语言。使用 RTL 语言的表单可扩大您自适应表单的覆盖范围，以满足这些不同受众的需求并选择进入 RTL 市场。在某些地区，提供当地语言的表单还是一项法律规定。通过使用当地语言，您不仅可以满足更广泛的受众的需求，还可以确保遵守相关法律法规。
 
