@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: 0ef1e1915f2fdbe44cff209851eb43cc9d69958e
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 30%
+source-wordcount: '2261'
+ht-degree: 31%
 
 ---
 
@@ -32,11 +32,13 @@ ht-degree: 30%
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-## 发布视频 {#release-video}
+<!-- ## Release Video {#release-video}
 
-请查看2024年3月发布概述视频，了解2024.3.0版本中新增功能摘要：
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -170,8 +172,6 @@ Assets Essentials允许管理员管理存储库中可用专用收藏集的访问
    * 键入签名时，屏幕阅读器用户可以听到用于创建签名的文本。
 
 此更新通过改进涂鸦签名组件的导航、清晰度和反馈，确保残障用户获得更包容的体验。
-
-
 
 ### 早期采用者计划 {#forms-early-adopter}
 
