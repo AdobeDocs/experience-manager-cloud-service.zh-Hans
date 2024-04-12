@@ -5,121 +5,146 @@ keywords: 添加自定义函数、使用自定义函数、创建自定义函数�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: 46fbed98a806f62dd1882eb0085d4338c5cd51a7
+exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 8%
+source-wordcount: '3039'
+ht-degree: 2%
 
 ---
 
+
+<span class="preview"> 本文包含一些预发行版功能的内容。 这些预发行版功能只能通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 预发行计划下的功能包括：
+* 自定义函数支持可选参数
+* 自定义函数的缓存功能
+* 自定义函数的全局范围对象和字段对象支持
+* 支持新式JavaScript功能，如let和arrow函数（ES10支持）。
+确保 [核心组件设置为版本3.0.8](https://github.com/adobe/aem-core-forms-components) 在自定义功能中使用预发行功能。 </span>
 
 # 自适应Forms中的自定义函数（核心组件）
 
 ## 简介
 
-AEM Forms支持自定义函数，允许用户定义JavaScript函数以实现复杂的业务规则。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们还支持根据预定义标准动态更改表单行为。
-在自适应Forms中，您可以使用中的自定义函数 [自适应表单的规则编辑器](/help/forms/rule-editor-core-components.md) 创建表单字段的特定验证规则。
-
-让我们了解自定义功能的使用，用户可以在其中输入电子邮件地址，您希望确保输入的电子邮件地址遵循特定格式（其中包含“@”符号和域名）。 创建自定义函数为“ValidateEmail”，该函数将电子邮件地址作为输入，如果有效，则返回true；否则返回false。
-
-```javascript
-function ValidateEmail(inputText)
-{
-    var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if(inputText.value.match(email))
-        {
-            alert("Valid email address!");
-            return true;
-        }
-    else
-    {
-        alert("Invalid email address!");
-        return false;
-    }
-}
-```
-
-在上述示例中，当用户尝试提交表单时，将调用自定义函数“ValidateEmail”以检查输入的电子邮件地址是否有效。
+AEM Forms支持自定义函数，允许用户定义用于实现复杂业务规则的JavaScript函数。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们还支持根据预定义标准动态更改表单行为。
 
 ### 自定义函数的使用 {#uses-of-custom-function}
 
 在自适应Forms中使用自定义函数的优点包括：
 
-* **数据操作**：自定义函数处理并处理输入到表单字段中的数据。
+* **数据处理**：自定义函数有助于处理输入到表单字段中的数据。
 * **数据验证**：通过自定义函数，可对表单输入执行自定义检查并提供指定的错误消息。
 * **动态行为**：自定义函数允许您根据特定条件控制表单的动态行为。 例如，您可以显示/隐藏字段、修改字段值或动态调整表单逻辑。
 * **集成**：您可以使用自定义函数与外部API或服务集成。 它有助于从外部源获取数据，将数据发送到外部Rest端点，或根据外部事件执行自定义操作。
 
-## 支持的JS注释
+自定义函数本质上是添加到JavaScript文件中的客户端库。 创建自定义函数后，该函数即可在规则编辑器中供用户在自适应表单中选择。 自定义函数由规则编辑器中的JavaScript注释标识。
 
-请确保您编写的自定义函数附带 `jsdoc` 高于它。
+### 自定义函数支持的JavaScript注释 {#js-annotations}
 
-支持 `jsdoc` 标记：
-
-* **私有**
-语法： `@private`
-专用函数未作为自定义函数包含在内。
+JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定符号(例如/**和@)开头的注释。 注释提供了有关代码中的函数、变量和其他元素的重要信息。 自适应表单支持自定义函数的以下JavaScript注释：
 
 * **名称**
-语法： `@name funcName <Function Name>`
-或者 `,` 您可以使用： `@function funcName <Function Name>` **或** `@func` `funcName <Function Name>`.
-  `funcName` 是函数的名称（不允许有空格）。
-  `<Function Name>` 是函数的显示名称。
+该名称用于标识自适应表单的规则编辑器中的自定义函数。 以下语法用于命名自定义函数：
+   * `@name [functionName] <Function Name>`
+   * `@function [functionName] <Function Name>`
+   * `@func [functionName] <Function Name>`。
+     `functionName` 是函数的名称。 不允许使用空格。
+     `<Function Name>` 是自适应表单的规则编辑器中函数的显示名称。
+如果函数名称与函数本身的名称相同，则可以忽略 `[functionName]` 语法中的。 <!-- For example,  in the `calculateAge` custom function, the name is defined as:
+`* @name calculateAge` -->
 
 * **参数**
-语法： `@param {type} name <Parameter Description>`
-或者，您可以使用： `@argument` `{type} name <Parameter Description>` **或** `@arg` `{type}` `name <Parameter Description>`.
-显示函数使用的参数。 一个函数可以有多个参数标记，每个参数按其出现顺序对应一个标记。
-  `{type}` 表示参数类型。 允许的参数类型包括：
+参数是自定义函数使用的参数列表。 函数可以支持多个参数。 以下语法用于定义自定义函数中的参数：
+   * `@param {type} name <Parameter Description>`
+   * `@argument` `{type} name <Parameter Description>`
+   * `@arg` `{type}` `name <Parameter Description>`.
+     `{type}` 表示参数类型。  允许的参数类型包括：
+      * string：表示单个字符串值。
+      * 数字：表示单个数值。
+      * 布尔值：表示单个布尔值（true或false）。
+      * 字符串[]：表示字符串值的数组。
+      * 数字[]：表示数字值的数组。
+      * 布尔型[]：表示布尔值的数组。
+      * 日期：表示单个日期值。
+      * 日期[]：表示日期值的数组。
+      * array：表示包含各种类型值的泛型数组。
+      * 对象：表示传递到自定义函数的表单对象，而不是直接传递其值。
+      * scope：表示自定义函数在运行时使用的全局对象。 此变量声明为JavaScript注释中的最后一个参数，在自适应表单的规则编辑器中不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。
 
-   1. 字符串
-   2. 数字
-   3. 布尔型
-   4. 范围
-   5. 字符串[]
-   6. 数字[]
-   7. 布尔型[]
-   8. 日期
-   9. 日期[]
-   10. 数组
-   11. 对象
+  参数类型不区分大小写，并且参数名称中不允许有空格。
 
-  `scope` 指由forms运行时提供的特殊全局对象。 该参数必须是最后一个参数，并且在规则编辑器中对用户不可见。 您可以使用作用域访问可读的表单和字段代理对象来读取属性、触发规则的事件和一组处理表单的函数。
+  `<Parameter Description>` 包含有关参数用途的详细信息。 它可以有多个单词。
 
-  `object` type用于将参数中的可读字段对象传递到自定义函数，而不是传递值。
+  默认情况下，所有参数都是必需的。 通过添加以下任一项，可将参数定义为可选参数 `=` 在参数类型后面或将参数名称括在  `[]`. 在JavaScript注释中定义为可选的参数在规则编辑器中显示为可选。
+要将变量定义为可选参数，可以使用以下任意语法：
 
-  所有参数类型均被归入上述参数类型之一。 不支持无。 确保选择以上类型之一。 类型不区分大小写。 参数名称中不允许有空格。  参数描述可以有多个单词。
-
-* **可选参数**
-语法： `@param {type=} name <Parameter Description>`
-或者，您可以使用： `@param {type} [name] <Parameter Description>`
-默认情况下，所有参数都是必需的。 可以通过添加参数将参数标记为可选 `=` 键入参数类型或将参数名称放在方括号中。
-例如，让我们声明 `Input1` 作为可选参数：
    * `@param {type=} Input1`
+在上一行代码中， `Input1` 是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
+     `@param {string=<value>} input1`
+
+     `input1` 作为可选参数，默认值设置为 `value`.
+
    * `@param {type} [Input1]`
+在上一行代码中， `Input1` 是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
+     `@param {array} [input1=<value>]`
+     `input1` 是数组类型的可选参数，其默认值设置为 `value`.
+确保将参数类型括在大括号中 {} 并且参数名称用方括号括起来 [].
+
+     请考虑以下代码段，其中input2被定义为可选参数：
+
+     ```javascript
+          /**
+          * optional parameter function
+          * @name OptionalParameterFunction
+          * @param {string} input1 
+          * @param {string=} input2 
+          * @return {string}
+         */
+         function OptionalParameterFunction(input1, input2) {
+         let result = "Result: ";
+         result += input1;
+         if (input2 !== null) {
+             result += " " + input2;
+         }
+         return result;
+         }
+     ```
+
+     下图使用 `OptionalParameterFunction` 规则编辑器中的自定义函数：
+
+     ![可选或必需的参数](/help/forms/assets/optional-default-params.png)
+
+     您可以保存规则而不为所需参数指定值，但不会执行规则并显示警告消息：
+
+     ![规则警告消息不完整](/help/forms/assets/incomplete-rule.png)
+
+     当用户将可选参数留空时，“未定义”值将传递到可选参数的自定义函数。
 
 * **返回类型**
-语法： `@return {type}`
-或者，您可以使用 `@returns {type}`.
-添加有关函数的信息，例如其目标。
-{type} 表示函数的返回类型。 允许的返回类型包括：
+返回类型指定自定义函数在执行后返回的值的类型。 以下语法用于在自定义函数中定义退货类型：
+   * `@return {type}`
+   * `@returns {type}`
+     `{type}` 表示函数的返回类型。 允许的返回类型包括：
+      * string：表示单个字符串值。
+      * 数字：表示单个数值。
+      * 布尔值：表示单个布尔值（true或false）。
+      * 字符串[]：表示字符串值的数组。
+      * 数字[]：表示数字值的数组。
+      * 布尔型[]：表示布尔值的数组。
+      * 日期：表示单个日期值。
+      * 日期[]：表示日期值的数组。
+      * array：表示包含各种类型值的泛型数组。
+      * 对象：表示表单对象，而不是直接表示其值。
 
-   1. 字符串
-   2. 数字
-   3. 布尔型
-   4. 字符串[]
-   5. 数字[]
-   6. 布尔型[]
-   7. 日期
-   8. 日期[]
-   9. 数组
-   10. 对象
+     返回类型不区分大小写。
 
-所有其他退货类型均归入上述任一类型下。 不支持无。 确保选择以上类型之一。 返回类型不区分大小写。
+* **私有**
+声明为私有的自定义函数不会出现在自适应表单的规则编辑器的自定义函数列表中。 默认情况下，自定义函数是公用的。 将自定义函数声明为私有函数的语法为 `@private`.
 
-## 创建自定义函数时的注意事项 {#considerations}
+要详细了解如何在JSDocs中定义可选参数， [单击此处](https://jsdoc.app/tags-param).
 
-要在规则编辑器中列出自定义函数，可以使用以下任意格式之一声明它们：
+## 创建自定义函数时的准则 {#considerations}
+
+要在规则编辑器中列出自定义函数，您可以使用以下任意格式：
 
 * **包含或不包含jsdoc注释的函数语句**
 
@@ -131,40 +156,40 @@ function ValidateEmail(inputText)
             // code to be executed
         }
 ```
-<!--
+如果用户没有向自定义函数添加任何JavaScript注释，则它按函数名称在规则编辑器中列出。 但是，建议包含JavaScript注释，以提高自定义函数的可读性。
 
-* **Arrow function with mandatory jsdoc comment**
+* **具有必需JavaScript注释或注释的Arrow函数**
 
-Some of the examples to create Arrow functions are:
+您可以使用箭头函数语法创建自定义函数：
+
 ```javascript
     /**
     * test function
-    * @name testFunction test function
-    * @param {string} a some parameter description
-    * @param {string} b another parameter description
+    * @name testFunction 
+    * @param {string} a parameter description
+    * @param {string=} b parameter description
     * @return {string}
     */
     testFunction = (a, b) => {
     return a + b;
     };
-```
-
-    * @param {string=} b another parameter description
-      /** */
+    /** */
     testFunction1=(a) => (return a)
     /** */
-    testFunction2 = a => a + 100;-->
+    testFunction2 = a => a + 100;
+    
+```
 
-* **具有必需jsdoc注释的函数表达式**
+* **具有必需JavaScript注释或注释的函数表达式**
 
 要在自适应表单的规则编辑器中列出自定义函数，请以下列格式创建自定义函数：
 
 ```javascript
     /**
     * test function
-    * @name testFunction test function
+    * @name testFunction 
     * @param {string} input1 parameter description
-    * @param {string} input2 another parameter description
+    * @param {string=} input2 parameter description
     * @return {string}
     */
     testFunction = function(input1,input2)
@@ -173,30 +198,13 @@ Some of the examples to create Arrow functions are:
         }
 ```
 
-<!--
-* @param {string=} input2 another parameter description
-The functions that are not supported in the custom function list are:
-* Generator functions
-* Async/Await functions 
-* Method definitions
-* Class methods
-* Default parameters
-* Rest parameters -->
-
->[!NOTE]
->
-> 您可以检查 `error.log` 文件以查找任何错误，如规则编辑器中未列出自定义函数。
-
-<!--The `error.log` file also displays the methods and parameters that are not supported for custom functions. -->
-
-
 ## 创建自定义函数 {#create-custom-function}
 
 创建客户端库以在规则编辑器中调用自定义函数。 有关更多信息，请参阅 [使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
 创建自定义函数的步骤包括：
 1. [创建客户端库](#create-client-library)
-1. [在自适应表单中添加客户端库](#use-custom-function)
+1. [将客户端库添加到自适应表单](#use-custom-function)
 
 ### 创建客户端库 {#create-client-library}
 
@@ -214,14 +222,6 @@ The functions that are not supported in the custom function list are:
 1. 创建一个名为 `js` 的文件夹。
 1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 文件夹。
 1. 添加JavaScript文件，例如， `function.js`. 该文件包含自定义函数的代码。
-
-   >[!NOTE]
-   >
-   > 如果包含自定义函数代码的JavaScript文件出错，则自定义函数不会列在自适应表单的规则编辑器中。 您还可以检查 `error.log` 文件查找错误。
-
-   <!-- 
-    >* AEM Adaptive Form supports the caching of custom functions. If the JavaScript is modified, the caching becomes invalidated, and it is parsed. You can see a message as `Fetched following custom functions list from cache` in the `error.log` file.  -->
-
 1. 保存 `function.js` 文件。
 1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 文件夹。
 1. 添加文本文件作为 `js.txt`。该文件包含：
@@ -240,11 +240,11 @@ The functions that are not supported in the custom function list are:
        git push
    ```
 
-1. [运行管道。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
+1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 以部署自定义函数。
 
 成功执行管道后，客户端库中添加的自定义函数即可在中使用 [自适应表单规则编辑器](/help/forms/rule-editor-core-components.md).
 
-### 在自适应表单中添加客户端库{#use-custom-function}
+### 将客户端库添加到自适应表单{#use-custom-function}
 
 将客户端库部署到Forms CS环境后，请在自适应表单中使用其功能。 在自适应表单中添加客户端库
 
@@ -255,54 +255,365 @@ The functions that are not supported in the custom function list are:
 
    ![添加自定义函数客户端库](/help/forms/assets/clientlib-custom-function.png)
 
-1. 单击 **[!UICONTROL 完成]** .
+   >[!NOTE]
+   >
+   > 通过在 **[!UICONTROL 客户端库类别]** 字段。
 
-现在，您可以创建规则以在规则编辑器中使用自定义函数。
+1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-<!--
+您可以使用中的自定义函数 [自适应表单的规则编辑器](/help/forms/rule-editor-core-components.md) 使用 [Javascript注释](##js-annotations).
 
-Create a rule to use custom function in the rule editor. 
+## 在自适应表单中使用自定义函数
 
-### Support for the optional parameters in custom functions{#support-for-optional-parameter}
+在自适应表单中，您可以使用 [规则编辑器中的自定义函数](/help/forms/rule-editor-core-components.md). 让我们将以下代码添加到JavaScript文件(`Function.js` 文件)，以根据出生日期计算年龄(YYYY-MM-DD)。 创建自定义函数为 `calculateAge()` ，以出生日期作为输入并返回年龄：
 
-AEM supports including optional parameters in JSDocs. These parameters are displayed as optional in the rule editor. There are two ways to add optional parameters in JSDocs:
-*  `@param {string=abc} b -- some description for b which is optional`
+```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
 
-    In the above line of code, `b` is an optional parameter with the default value set to `abc`. 
-    Alternatively, you can define `b` as an optional parameter without assigning any default value as `@param {string=} b -- some description for b which is optional`
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
 
-* `@param {array} [z=[def,xyz]] - - some description for z which is optional`
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
 
-    In the above line of code, `z` is an optional parameter of array type with the default value set to `[def , xyz]`. 
-    Alternatively, you can define `z` as an optional parameter without assigning any default value as `@param {array} [z=] - - some description for z which is optional`
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+
+    return age;
+    }
+```
+
+在上例中，当用户以(YYYY-MM-DD)格式输入出生日期时，自定义函数 `calculateAge` 将调用并返回年龄。
+
+![在规则编辑器中重新计算自定义函数](/help/forms/assets/custom-function-calculate-age.png)
+
+让我们预览表单，观察自定义函数如何通过规则编辑器实现：
+
+![在规则编辑器表单预览中再次计算自定义函数](/help/forms/assets/custom-function-age-calculate-form.png)
 
 >[!NOTE]
 >
-> Ensure that the parameter name is enclosed in square brackets [] and the parameter type is enclosed in curly brackets {}. 
+> 您可以参考以下内容 [自定义函数](/help/forms/assets//customfunctions.zip) 文件夹。 使用下载此文件夹并将其安装到您的AEM实例中 [包管理器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
-To learn more about how to define optional parameters in JSDocs, [click here](https://jsdoc.app/tags-param).
+### 在自定义函数中支持异步函数 {#support-of-async-functions}
 
-In the rule editor of an Adaptive Form, the parameters are displayed as `required`. By default the parameters are `required`, if not defined as optional in JSDocs.
+异步自定义函数未出现在规则编辑器列表中。 但是，可以在使用同步函数表达式创建的自定义函数中调用异步函数。
 
-  ![Optional or required parameters](/help/forms/assets/optional-default-params.png) 
+![同步和异步自定义函数](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
 
-  You can save the rule without specifying a value for required parameters, but the rule is not executed and displays a warning message as:
+>[!NOTE]
+>
+> 在自定义函数中调用异步函数的优势在于，异步函数允许并行执行多个任务，并且自定义函数中使用了每个函数的结果。
 
-  ![incomplete rule warning message](/help/forms/assets/incomplete-rule.png) 
-  
-  The rule is executed even if you do not specify a value for optional parameters. Undefined values are passed for optional parameters on executing the rule.
+查看以下代码，了解如何使用自定义函数调用异步函数：
 
-  ### Support for field and globals objects in custom functions {#support-field-and-global-objects}
+```javascript
+    
+    async function asyncFunction() {
+    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
+    const data = await response.json();
+    return data;
+    }
 
-  needs to be discussed
+    /**
+    * callAsyncFunction
+    * @name callAsyncFunction callAsyncFunction
+    */
+    function callAsyncFunction() {
+    asyncFunction()
+        .then(responseData => {
+        console.log('Response data:', responseData);
+        })
+        .catch(error => {
+         console.error('Error:', error);
+    });
+}
+```
 
-  -->
+在上述示例中，asyncFunction函数是 `asynchronous function`. 它执行异步操作，方法是 `GET` 请求给 `https://petstore.swagger.io/v2/store/inventory`. 它使用以下方式等待响应 `await`，使用将响应正文解析为JSON `response.json()`，然后返回数据。 此 `callAsyncFunction` 函数是一个同步自定义函数，可调用 `asyncFunction` 函数并在控制台中显示响应数据。 尽管 `callAsyncFunction` 函数是同步的，它调用异步asyncFunction函数并使用处理其结果 `then` 和 `catch` 语句。
+
+要查看其是否有效，让我们添加一个按钮，并为按钮创建一个规则，该规则会在单击按钮时调用异步函数。
+
+![创建异步函数的规则](/help/forms/assets/rule-for-async-funct.png)
+
+请参阅下面的控制台窗口插图，以演示当用户单击 `Fetch` 按钮，自定义函数 `callAsyncFunction` 将调用，从而调用异步函数 `asyncFunction`. 在控制台窗口中Inspect以查看按钮单击时的响应：
+
+![控制台窗口](/help/forms/assets/async-custom-funct-console.png)
+
+让我们深入了解一下自定义函数的功能。
+
+## 自定义函数的各种功能
+
+您可以使用自定义函数向表单添加个性化功能。 这些函数支持各种功能，例如使用特定字段、使用全局字段或缓存。 这种灵活性允许您根据组织的要求自定义表单。
+
+### 自定义函数中的字段和全局范围对象 {#support-field-and-global-objects}
+
+字段对象是指表单中的单个组件或元素，例如文本字段和复选框。 全局范围对象是指可在整个表单中访问的全局变量或设置。 让我们看一下以下代码片段：
+
+```JavaScript
+    /**
+    * updateDateTime
+    * @name updateDateTime
+    * @param {object} field
+    * @param {scope} globals 
+    */
+    function updateDateTime(field, globals) {
+    // Accessing the Date object from the global scope
+    var currentDate = new Date();
+    // Formatting the date and time
+    var formattedDateTime = currentDate.toLocaleString();
+    // Updating the field value with the formatted date and time
+    field.value = formattedDateTime;
+    }
+```
+
+>[!NOTE]
+>
+> 此 `param {scope} globals` 必须是最后一个参数，且不会显示在自适应表单的规则编辑器中。
+
+在上述代码片段中，一个名为的自定义函数 `updateDateTime` 采用字段对象和全局对象等参数。 使用全局范围访问日期和时间对象。 该字段表示文本框对象，格式化的日期和时间值将显示在表单中。
+
+让我们了解自定义函数如何在 `Contact Us` 使用不同用例的表单。
+
+![联系我们表单](/help/forms/assets/contact-us-form.png)
+
+#### **用例**：使用显示面板 `SetProperty` 规则
+
+在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，将表单字段设置为 `Required`.
+
+```javascript
+    
+	/**
+    * enablePanel
+    * @name enablePanel
+    * @param {object} field1
+    * @param {object} field2
+    * @param {scope} globals 
+    */
+
+    function enablePanel(field1,field2, globals)
+    {
+       if(globals.functions.validate(field1).length === 0)
+       {
+       globals.functions.setProperty(field2, {visible: true});
+       }
+    }
+```
+
+>[!NOTE]
+>
+> 您可以使用中的可用属性配置字段属性 `[form-path]/jcr:content/guideContainer.model.json`.
+
+在此示例中，验证 `personaldetails` 单击按钮时会出现面板。 如果在面板、其他面板、 `feedback` 面板中，单击按钮后会变为可见。
+
+让我们为 `Next` 按钮，用于验证 `personaldetails` 面板并将 `feedback`  用户单击 `Next` 按钮。
+
+![设置属性](/help/forms/assets/custom-function-set-property.png)
+
+请参阅下图以演示 `personaldetails` 单击 `Next` 按钮。 如果 `personaldetails` 经过验证， `feedback` 面板将变为可见。
+
+![设置属性表单预览](/help/forms/assets/set-property-form-preview.png)
+
+如果的字段中出现错误 `personaldetails` 面板中，单击 `Next` 按钮，以及 `feedback` 面板将保持不可见。
+
+![设置属性表单预览](/help/forms/assets/set-property-panel.png)
+
+#### **用例**：验证字段。
+
+在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，以验证字段。
+
+```javascript
+    /**
+    * validateField
+    * @name validateField
+    * @param {object} field
+    * @param {scope} globals
+    */
+    function validateField(field,globals)
+    {
+    
+        globals.functions.validate(field);
+    
+    }   
+```
+
+>[!NOTE]
+>
+> 如果未在中传递参数 `validate()` 函数中，它验证表单。
+
+在此示例中，自定义验证模式应用于 `contact` 字段。 用户需要输入以开头的电话号码 `10` 后接 `8` 数字。 如果用户输入的电话号码开头不是 `10` 或包含多于 `8` 数字，单击按钮时将显示验证错误消息：
+
+![电子邮件地址验证模式](/help/forms/assets/custom-function-validation-pattern.png)
+
+现在，下一步是为创建规则 `Next` 验证 `contact` 字段单击。
+
+![验证模式](/help/forms/assets/custom-function-validate.png)
+
+请参阅下图以演示，如果用户输入的电话号码开头不是 `10`，则字段级别会显示一条错误消息：
+
+![电子邮件地址验证模式](/help/forms/assets/custom-function-validate-error-message.png)
+
+如果用户输入有效的电话号码和 `personaldetails` 面板已经过验证， `feedback` 屏幕上会显示以下面板：
+
+![电子邮件地址验证模式](/help/forms/assets/validate-form-preview-form.png)
+
+#### **用例**：重置面板
+
+在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，以重置面板。
+
+```javascript
+    /**
+    * resetField
+    * @name  resetField
+    * @param {string} input1
+    * @param {object} field
+    * @param {scope} globals 
+    */
+    function  resetField(field,globals)
+    {
+    
+        globals.functions.reset(field);
+    
+    }
+```
+
+>[!NOTE]
+>
+> 如果未在中传递参数 `reset()` 函数中，它验证表单。
+
+在此示例中， `personaldetails` 单击 `Clear` 按钮。 下一步是为创建规则 `Clear` 按钮上用于重置面板的按钮单击。
+
+![清除按钮](/help/forms/assets/custom-function-reset-field.png)
+
+请参阅下图以显示，如果用户单击 `clear` 按钮， `personaldetails` 面板重置：
+
+![重置表单](/help/forms/assets/custom-function-reset-form.png)
+
+#### **用例**：在字段级别显示自定义消息并将字段标记为无效
+
+您可以使用 `markFieldAsInvalid()` 函数将字段定义为无效，并在字段级别设置自定义错误消息。 此 `fieldIdentifier` 值可以是 `fieldId`，或 `field qualifiedName`，或 `field dataRef`. 名为的对象的值 `option` 可以是 `{useId: true}`， `{useQualifiedName: true}`，或 `{useDataRef: true}`.
+用于将字段标记为无效并设置自定义消息的语法包括：
+
+* `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
+* `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
+* `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
+
+在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，以在字段级别启用自定义消息。
+
+```javascript
+    /**
+    * customMessage
+    * @name customMessage
+    * @param {object} field
+    * @param {scope} globals 
+    */
+    function customMessage(field, globals) {
+    const minLength = 15;
+    const comments = field.$value.trim();
+    if (comments.length < minLength) {
+        globals.functions.markFieldAsInvalid(field.$id, "Comments must be at least 15 characters long.", { useId: true });
+    }
+}
+```
+
+在此示例中，如果用户在“注释”文本框中输入的字符数少于15个，则会在字段级别显示自定义消息。
+
+下一步是为创建规则 `comments` 字段：
+
+![将字段标记为无效](/help/forms/assets/custom-function-invalid-field.png)
+
+请观看下面的演示，了解如何在 `comments` 字段触发在字段级别显示自定义消息：
+
+![将字段标记为无效预览表单](/help/forms/assets/custom-function-invalidfield-form.png)
+
+如果用户在“评论”文本框中输入的字符超过15个，则验证该字段并提交表单：
+
+![将字段标记为有效的预览表单](/help/forms/assets/custom-function-validfield-form.png)
+
+
+#### **用例**：将更改的数据提交到服务器
+
+以下代码行：
+`globals.functions.submitForm(globals.functions.exportData(), false);` 用于在操作后提交表单数据。
+* 第一个参数是要提交的数据。
+* 第二个参数表示在提交之前是否验证表单。 它是 `optional` 并设置为 `true` 默认情况下。
+* 第三个理由是 `contentType` 提交的材料，也 `optional` 默认值为 `multipart/form-data`.
+
+在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，在服务器上提交操作数据：
+
+```javascript
+    /**
+    * submitData
+    * @name submitData
+    * @param {object} field
+    * @param {scope} globals 
+    */
+
+    function submitData(globals)
+    {
+    
+    var data = globals.functions.exportData();
+    if(!data.comments) {
+    data.comments = 'NA';
+    }
+    console.log('After update:{}',data);
+    globals.functions.submitForm(data, false);
+    }
+```
+
+在此示例中，如果用户将 `comments` 文本框为空， `NA` 在提交表单时提交到服务器。
+
+现在，为创建规则 `Submit` 提交数据的按钮：
+
+![提交数据](/help/forms/assets/custom-function-submit-data.png)
+
+请参阅图示 `console window` 以下说明，如果用户离开 `comments` 文本框为空，则值为 `NA` 在服务器上提交：
+
+![在控制台窗口中提交数据](/help/forms/assets/custom-function-submit-data-form.png)
+
+您还可以检查控制台窗口以查看提交到服务器的数据：
+
+![控制台窗口中的Inspect数据](/help/forms/assets/custom-function-submit-data-console-data.png)
+
+## 对自定义函数的缓存支持
+
+自适应Forms在规则编辑器中检索自定义函数列表时，为自定义函数实施缓存以增强响应时间。 消息为 `Fetched following custom functions list from cache` 显示在 `error.log` 文件。
+
+![支持缓存的自定义函数](/help/forms/assets/custom-function-cache-error.png)
+
+如果修改了自定义函数，缓存将失效，并且会进行解析。
+
+## 疑难解答
+
+如果包含自定义函数代码的JavaScript文件出错，则自定义函数将不会在自适应表单的规则编辑器中列出。 要检查自定义函数列表，您可以导航到 `error.log` 文件查找错误。 如果出现错误，自定义函数列表显示为空：
+
+![错误日志文件](/help/forms/assets/custom-function-list-error-file.png)
+
+如果没有错误，则会获取自定义函数并显示在 `error.log` 文件。 消息为 `Fetched following custom functions list` 显示在 `error.log` 文件：
+
+![使用正确的自定义函数创建错误日志文件](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+## 注意事项
+
+* 此 `parameter type` 和 `return type` 不支持 `None`.
+
+* 自定义函数列表中不支持的函数包括：
+   * 生成器函数
+   * 异步/等待函数
+   * 方法定义
+   * 类方法
+   * 默认参数
+   * Rest参数
 
 ## 另请参阅 {#see-also}
 
 {{see-also}}
-
-
-
 
 

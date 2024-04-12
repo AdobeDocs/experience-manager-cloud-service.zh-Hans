@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 76%
+source-wordcount: '1409'
+ht-degree: 78%
 
 ---
 
@@ -171,21 +171,22 @@ DocAssurance服务包括签名和加密API：
 
 ### 签名API
 
-利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。此服务使用数字签名和认证，确保只有目标收件人才能更改文档。 因为安全功能应用于文档本身，所以文档在整个生命周期中保持安全和受控制。 在防火墙之外，当文档离线下载以及提交回组织时，文档将保持安全。 您可以使用签名API完成以下任务：
+利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。<!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> 安全功能应用于文档本身，在文档的整个生命周期内保持安全和受控。 在防火墙之外，当文档离线下载以及提交回组织时，文档将保持安全。 您可以使用签名API完成以下任务：
 
-* 向PDF文档添加签名字段。
+* 向PDF文档添加可见签名字段。
+* 向PDF文档添加不可见的签名字段。
 * 在PDF文档中签署指定的签名字段。
 * 认证PDF文档
 
 ### 加密API
 
-加密API允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问权限。 如果使用密码对PDF文档进行加密，则必须先指定打开密码，然后才能在Adobe Reader或Adobe Acrobat中查看文档。 同样，如果PDF文档使用证书加密，则用户必须使用与用于加密PDF文档的证书（私钥）对应的公钥对PDF文档进行解密。
+加密API允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问权限。 如果使用密码对PDF文档进行加密，则必须先指定打开密码，然后才能在Adobe Reader或Adobe Acrobat中查看文档。 <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 您可以使用加密API完成以下任务：
 
 * 使用密码加密PDF文档。
 * 从PDF文档中删除基于密码的加密。
-* 检索应用于PDF文档的安全类型。
+* 返回应用于PDF文档的安全类型。
 
 签名API和加密API都是 [同步API](#types-of-communications-apis-types).
 

@@ -4,12 +4,20 @@ description: 自适应Forms规则编辑器允许您添加动态行为并将复�
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 78b3b11caf143ed147079ef2b3b3ebe5c1beafd7
+exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '5755'
+source-wordcount: '5444'
 ht-degree: 0%
 
 ---
+
+
+<span class="preview"> 本文包含一些预发行版功能的内容。 这些预发行版功能只能通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 预发行计划下的功能包括：
+* 支持使用When-then-else功能实施嵌套条件
+* 验证或重置面板和表单，包括字段
+* 支持自定义函数中的现代JavaScript功能，例如let和arrow函数（ES10支持）。
+</span>
 
 # 将规则添加到自适应表单（核心组件） {#adaptive-forms-rule-editor}
 
@@ -27,13 +35,13 @@ ht-degree: 0%
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-添加到forms-power-users组的用户可以创建脚本并编辑现有脚本。 中的用户 [!DNL forms-users] 组可以使用脚本，但不能创建或编辑脚本。
+添加到 forms-power-users 组的用户可以创建脚本和编辑现有脚本。 组中 [!DNL forms-users] 的用户可以使用脚本，但不能创建或编辑脚本。
 
 ## 了解规则 {#understanding-a-rule}
 
-规则是操作和条件的组合。 在规则编辑器中，操作包括隐藏、显示、启用、禁用或计算表单中对象的值等活动。 条件是通过对表单对象的状态、值或属性执行检查和操作来计算的布尔表达式。 根据通过评估条件返回的值（ `True` `False`或）执行操作。
+规则是操作和条件的组合。 在规则编辑器中，操作包括隐藏、显示、启用、禁用或计算表单中对象值等活动。 条件是对表单对象的状态、值或属性执行检查和操作而计算的布尔表达式。 根据值( `True` 或 `False`)的计算返回。
 
-规则编辑器提供了一组预定义的规则类型，例如“时间”、“显示”、“隐藏”、“启用”、“禁用”、“设置值”和“验证”，以帮助您编写规则。 每种规则类型都允许您定义规则中的条件和操作。 本文档进一步详细说明了每种规则类型。
+规则编辑器提供了一组预定义的规则类型（如When、Show、Hide、Enable、Disable、Set Value Of和Validate）以帮助您编写规则。 每种规则类型均允许您定义规则中的条件和操作。 本文档进一步详细说明了每种规则类型。
 
 规则通常遵循以下结构之一：
 
@@ -99,7 +107,7 @@ ht-degree: 0%
 
 此 **[!UICONTROL 时间]** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，首先指定求值的条件，然后指定满足该条件时要触发的操作( `True`)。 使用When规则类型时，您可以使用多个AND和OR运算符来创建 [嵌套表达式](#nestedexpressions).
 
-使用When规则类型，您可以评估表单对象的条件，并对一个或多个对象执行操作。
+使用 When 规则类型，您可以评估表单对象的条件并对一个或多个对象执行操作。
 
 简单地说，典型的When规则的结构如下所示：
 
@@ -115,13 +123,13 @@ ht-degree: 0%
 
 关于对象C的行动2；_
 
-当具有多值组件（如单选按钮或列表）时，在为该组件创建规则时，会自动检索选项并使这些选项可用于规则创建者。 无需再次键入选项值。
+当具有多值组件（如单选按钮或列表）时，在为该组件创建规则时，会自动检索选项并使这些选项可用于规则创建者。 您无需再次键入选项值。
 
 例如，列表有四个选项：“红色”、“蓝色”、“绿色”和“黄色”。 创建规则时，将自动检索选项（单选按钮），并使其可供规则创建者使用，如下所示：
 
 ![多值显示选项](assets/multivaluefcdisplaysoptions.png)
 
-编写When规则时，可以触发Clear Value Of操作。 清除值操作清除指定对象的值。 通过在When语句中将Clear Value设置为选项，可以创建具有多个字段的复杂条件。 您可以添加Else语句以添加更多条件
+编写 When 规则时，可以触发“清除值”操作。 清除操作值 清除指定对象的值。 在 When 语句中将“清除值”作为一个选项，可以创建具有多个字段的复杂条件。 您可以添加 Else 语句以添加更多条件
 
 ![清除值](assets/clearvalueof.png)
 
@@ -131,9 +139,9 @@ ht-degree: 0%
 
 **[!UICONTROL 隐藏]** 隐藏指定的对象。
 
-**[!UICONTROL 显示 显示]** 指定的对象。
+**[!UICONTROL 显示]** 显示指定的对象。
 
-**[!UICONTROL 启用 启用]** 指定的对象。
+**[!UICONTROL 启用]** 启用指定的对象。
 
 **[!UICONTROL 禁用]** 禁用指定的对象。
 
@@ -186,7 +194,7 @@ ht-degree: 0%
 
 **[!UICONTROL 验证]** 验证表单或指定的对象。
 
-**[!UICONTROL 添加实例]** 添加指定可重复面板或表行的实例。
+**[!UICONTROL 添加实例]** 添加指定的可重复面板或表格行的实例。
 
 **[!UICONTROL 删除实例]** 删除指定可重复面板或表行的实例。
 
@@ -207,21 +215,21 @@ ht-degree: 0%
 
 （字符串ABC） OR（对象C的对象属性X） OR（函数值） OR（数学表达式值） OR（数据模型服务的输出值）；
 
-当（可选）时：
+时间（可选）：
 
 （条件 1 和条件 2 和条件 3）为 TRUE;
 
-以下示例选择 `Question2` 作为 `True` 并设置 `Result` 作为 `correct`.
+下面的示例选择 as `True` 的值`Question2`并设置 as `correct`的值`Result`。
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表单数据模型服务的设置值规则的示例。
+使用表单数据模型服务的设置值规则示例。
 
 ### [!UICONTROL 显示] {#show}
 
-使用 **[!UICONTROL 显示]** 规则类型，您可以编写规则以根据是否满足条件来显示或隐藏表单对象。 “显示”规则类型还会在条件不满足或返回 `False`时触发“隐藏”操作。
+使用 **[!UICONTROL 显示]** 规则类型，您可以编写规则以根据是否满足条件来显示或隐藏表单对象。 显示规则类型也会在条件不满足或返回时触发“隐藏”操作 `False`.
 
-典型的显示规则结构如下：
+典型的显示规则的结构如下所示：
 
 `Show Object A;`
 
@@ -235,7 +243,7 @@ ht-degree: 0%
 
 ### [!UICONTROL 隐藏] {#hide}
 
-与“显示”规则类型类似，您可以使用“ **[!UICONTROL 隐藏”规则类型根据是否满足条件来显示或隐藏]** 表单对象。 “隐藏”规则类型还会在条件不满足或返回 `False`时触发“显示”操作。
+与显示规则类型类似，您可以使用 **[!UICONTROL 隐藏]** 规则类型，用于根据是否满足条件来显示或隐藏表单对象。 如果条件未得到满足或返回，则隐藏规则类型也会触发显示操作 `False`.
 
 典型的“隐藏”规则的结构如下所示：
 
@@ -387,7 +395,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E.完成和取消按钮 {#done-and-cancel-buttons}
 
-此 **[!UICONTROL 完成]** 按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整是无效的，不会运行。 下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
+此 **[!UICONTROL 完成]** 按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整部分无效，因此不会运行。 下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
 
 此 **[!UICONTROL 取消]** 按钮会放弃您对规则所做的任何更改并关闭规则编辑器。
 
@@ -397,7 +405,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 我们首先看一下如何使用可视编辑器编写规则。
 
-### 使用可视化编辑器 {#using-visual-editor}
+### 使用可视编辑器 {#using-visual-editor}
 
 让我们了解如何使用以下示例表单在可视编辑器中创建规则。
 
@@ -561,83 +569,83 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### 规则编辑器中的自定义函数 {#custom-functions}
 
-您还可以在规则编辑器中使用自定义函数。 有关创建自定义函数的说明，请参阅文章 [自适应Forms中的自定义函数](/help/forms/create-and-use-custom-functions.md).
-
-除了开箱即用的功能，例如 *总和* 列在函数输出下的自定义函数，您可以编写经常需要的自定义函数。 确保您编写的函数附带 `jsdoc` 高于它。
-
-随附 `jsdoc` 为必填项：
-
-* 如果您需要自定义配置和描述
-* 因为有多种方法可以在中声明函数 `JavaScript,` 和注释可让您跟踪功能。
-
-规则编辑器支持脚本和自定义函数的JavaScript ES2015语法。
-有关更多信息，请参阅 [jsdoc.app](https://jsdoc.app/).
-
-支持 `jsdoc` 标记：
-
-* **私有**
-语法： `@private`
-专用函数未作为自定义函数包含在内。
-
-* **名称**
-语法： `@name funcName <Function Name>`
-或者 `,` 您可以使用： `@function funcName <Function Name>` **或** `@func` `funcName <Function Name>`.
-  `funcName` 是函数的名称（不允许有空格）。
-  `<Function Name>` 是函数的显示名称。
-
-* **参数**
-语法： `@param {type} name <Parameter Description>`
-或者，您可以使用： `@argument` `{type} name <Parameter Description>` **或** `@arg` `{type}` `name <Parameter Description>`.
-显示函数使用的参数。 一个函数可以有多个参数标记，每个参数按其出现顺序对应一个标记。
-  `{type}` 表示参数类型。 允许的参数类型包括：
-
-   1. 字符串
-   1. 数字
-   1. 布尔型
-   1. 范围
-   1. 字符串[]
-   1. 数字[]
-   1. 布尔型[]
-   1. 日期
-   1. 日期[]
-   1. 数组
-   1. 对象
-
-  `scope` 指由forms运行时提供的特殊全局对象。 该参数必须是最后一个参数，并且在规则编辑器中对用户不可见。 您可以使用作用域访问可读的表单和字段代理对象来读取属性、触发规则的事件和一组处理表单的函数。
-
-  `object` type用于将参数中的可读字段对象传递到自定义函数，而不是传递值。
-
-  所有参数类型均被归入上述参数类型之一。 不支持无。 确保选择以上类型之一。 类型不区分大小写。 参数名称中不允许有空格。  参数描述可以有多个单词。
-
-* **可选参数**
-语法： `@param {type=} name <Parameter Description>`
-或者，您可以使用： `@param {type} [name] <Parameter Description>`
-默认情况下，所有参数都是必需的。 可以通过添加参数将参数标记为可选 `=` 键入参数类型或将参数名称放在方括号中。
-
-  例如，让我们声明 `Input1` 作为可选参数：
-   * `@param {type=} Input1`
-   * `@param {type} [Input1]`
-
-* **返回类型**
-语法： `@return {type}`
-或者，您可以使用 `@returns {type}`.
-添加有关函数的信息，例如其目标。
-{type} 表示函数的返回类型。 允许的返回类型包括：
-
-   1. 字符串
-   2. 数字
-   3. 布尔型
-   4. 字符串[]
-   5. 数字[]
-   6. 布尔型[]
-   7. 日期
-   8. 日期[]
-   9. 数组
-   10. 对象
-
-  所有其他退货类型均归入上述任一类型下。 不支持无。 确保选择以上类型之一。 返回类型不区分大小写。
+除了开箱即用的功能，例如 *总和* 下列出的客户 **函数输出**，您还可以在规则编辑器中使用自定义函数。 规则编辑器支持脚本和自定义函数的JavaScript ECMAScript 2019语法。 有关创建自定义函数的说明，请参阅文章 [自适应Forms中的自定义函数](/help/forms/create-and-use-custom-functions.md).
 
 <!--
+
+Ensure that the function you write is accompanied by the `jsdoc` above it. Adaptive Form supports the various [JavaScript annotations for custom functions](/help/forms/create-and-use-custom-functions.md#js-annotations).
+
+For more information, see [jsdoc.app](https://jsdoc.app/).
+
+Accompanying `jsdoc` is required:
+
+* If you want custom configuration and description
+* Because there are multiple ways to declare a function in `JavaScript,` and comments let you keep a track of the functions.
+
+Supported `jsdoc` tags:
+
+* **Private**
+  Syntax: `@private`
+  A private function is not included as a custom function.
+
+* **Name**
+  Syntax: `@name funcName <Function Name>`
+  Alternatively `,` you can use: `@function funcName <Function Name>` **or** `@func` `funcName <Function Name>`.
+  `funcName` is the name of the function (no spaces allowed).
+  `<Function Name>` is the display name of the function.
+
+* **Parameter**
+  Syntax: `@param {type} name <Parameter Description>`
+  Alternatively, you can use: `@argument` `{type} name <Parameter Description>` **or** `@arg` `{type}` `name <Parameter Description>`.
+  Shows parameters used by the function. A function can have multiple parameter tags, one tag for each parameter in the order of occurrence.
+  `{type}` represents parameter type. Allowed parameter types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. scope
+    5. string[]
+    6. number[]
+    7. boolean[]
+    8. date
+    9. date[]
+    10. array
+    11. object
+
+   `scope` refers to a special globals object which is provided by forms runtime. It must be the last parameter and is not be visible to the user in the rule editor. You can use scope to access readable form and field proxy object to read properties, event which triggered the rule and a set of functions to manipulate the form.
+
+   `object` type is used to pass readable field object in parameter to a custom function instead of passing the value.
+
+   All parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case-sensitive. Spaces are not allowed in the parameter name.  Parameter description can have multiple words.
+
+* **Optional Parameter**
+Syntax: `@param {type=} name <Parameter Description>` 
+Alternatively, you can use: `@param {type} [name] <Parameter Description>`
+By default all parameters are mandatory. You can mark a parameter optional by adding `=` in type of the parameter or by putting param name in square brackets.
+   
+   For example, let us declare `Input1` as optional parameter:
+    * `@param {type=} Input1`
+    * `@param {type} [Input1]`
+
+* **Return Type**
+  Syntax: `@return {type}`
+  Alternatively, you can use `@returns {type}`.
+  Adds information about the function, such as its objective.
+  {type} represents the return type of the function. Allowed return types are:
+
+    1. string
+    2. number
+    3. boolean
+    4. string[]
+    5. number[]
+    6. boolean[]
+    7. date
+    8. date[]
+    9. array
+    10. object
+
+  All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case-sensitive.
+
 **Adding a custom function**
 
 For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
@@ -645,7 +653,7 @@ For example, you want to add a custom function which calculates area of a square
 To create a client library and add it in the CRX repository, perform the following steps:
 
 1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
-1. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
