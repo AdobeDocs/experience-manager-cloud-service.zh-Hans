@@ -1,10 +1,11 @@
 ---
 title: 管理收藏集
 description: 收藏集是Experience Manager Assets视图中的一组资源。 使用收藏集可在用户之间共享资源。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
+source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 89%
+source-wordcount: '919'
+ht-degree: 77%
 
 ---
 
@@ -46,6 +47,8 @@ You can share collections with various users that are assigned different levels 
 * [下载收藏集](#download-collection)
 
 * [删除收藏集](#delete-collection)
+
+* [管理私有收藏集的权限](#manage-permissions-to-a-private-collection)
 
 ## 创建收藏集 {#create-collection}
 
@@ -184,6 +187,18 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 1. 选择要删除的收藏集。
 
 1. 单击&#x200B;**[!UICONTROL 删除]**。
+
+## 管理专用收藏集的权限{#manage-permissions-private-collection}
+
+您可以允许管理员管理 [访问级别](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) 适用于存储库中可用的专用收藏集。 您可以分配权限，例如 `Can View` 和 `Can Edit` 至用户组或用户。 您还可以将权限管理权限委派给用户组。 创建专用收藏集的用户是这些收藏集的所有者。 他们可以使用 [!UICONTROL 管理权限] 向其他用户授予访问权限的操作。 此外，管理员还可以在中查看和管理专用收藏集的权限 [!DNL Experience Manager] 存储库。
+
+>[!NOTE]
+>
+>Adobe 不建议向用户分配权限。
+
+有关如何将可用权限分配给用户组的信息，请参阅 [向用户组添加权限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+
+有关端到端工作流的详细信息，请参阅 [管理权限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## 后续步骤 {#next-steps}
 
