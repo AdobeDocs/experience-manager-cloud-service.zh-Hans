@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
+source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 2%
@@ -155,7 +155,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 要在规则编辑器中列出自定义函数，您可以使用以下任意格式：
 
-* **包含或不包含jsdoc注释的函数语句**
+### **包含或不包含jsdoc注释的函数语句**
 
 您可以创建包含或不包含jsdoc注释的自定义函数。
 
@@ -167,7 +167,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 ```
 如果用户没有向自定义函数添加任何JavaScript注释，则它按函数名称在规则编辑器中列出。 但是，建议包含JavaScript注释，以提高自定义函数的可读性。
 
-* **具有必需JavaScript注释或注释的Arrow函数**
+### **具有必需JavaScript注释或注释的Arrow函数**
 
 您可以使用箭头函数语法创建自定义函数：
 
@@ -191,7 +191,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 如果用户没有将任何JavaScript注释添加到自定义函数，则该自定义函数不会列在自适应表单的规则编辑器中。
 
-* **具有必需JavaScript注释或注释的函数表达式**
+### **具有必需JavaScript注释或注释的函数表达式**
 
 要在自适应表单的规则编辑器中列出自定义函数，请以下列格式创建自定义函数：
 
