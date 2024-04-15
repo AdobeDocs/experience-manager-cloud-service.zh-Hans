@@ -3,10 +3,11 @@ title: 管理您的数字资源
 description: 在  [!DNL Assets view] 中移动、删除、复制、重命名、更新您的资源和进行版本控制。
 role: User,Leader
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
+source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 92%
+source-wordcount: '1062'
+ht-degree: 88%
 
 ---
 
@@ -28,6 +29,7 @@ ht-degree: 92%
 * ![复制图标](assets/do-not-localize/copy-icon.png) 复制选定的文件或文件夹。
 * ![移动图标](assets/do-not-localize/move-icon.png) 将选定的资源或文件夹移动到存储库层次结构中的不同位置。
 * ![重命名图标](assets/do-not-localize/rename-icon.png) 重命名选定的资源或文件夹。请使用唯一名称，否则重命名将失败并出现警告。您可以使用新名称重试。
+此外，您还可以单击资源或文件夹的标题来重命名它。 请在以下位置提及新文本 **重命名资源** 文本框并单击 **保存**. 此功能在“网格”、“图库”、“瀑布”和“列表”视图中可用。 <!--in-place rename-->
 * ![分配任务图标](assets/do-not-localize/review-delegate-icon.png) 分配任务给其他用户来协作处理某个资源。
 
 在资源缩略图上可以查看相同的选项。
