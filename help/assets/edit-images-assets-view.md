@@ -2,7 +2,8 @@
 title: 编辑图像
 description: 使用由 [!DNL Adobe Photoshop Express] 提供支持的选项编辑图像并将更新后的图像另存为版本。
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
+source-git-commit: 62be3c6e98df9002cdfbeef50dd5475c4daa1576
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 80%
