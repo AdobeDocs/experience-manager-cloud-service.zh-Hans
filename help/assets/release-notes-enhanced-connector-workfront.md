@@ -2,10 +2,10 @@
 title: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
-workflow-type: ht
-source-wordcount: '1648'
-ht-degree: 100%
+source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 98%
 
 ---
 
@@ -13,23 +13,21 @@ ht-degree: 100%
 
 以下部分概述了 [!DNL Workfront for Experience Manager enhanced connector] 的常规发行说明。
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.18 版的发布日期是 2024 年 3 月 8 日。
+最新版本1.9.19的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年4月12日。
 
 ## 版本亮点 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
 
-* 处理从 Workfront 上传的多个资源时遇到问题。
-* 使用 Workfront 在 Experience Manager 中搜索文件夹时不添加结束引号会导致 `SERVER_ERROR`。
+* 无法关闭HTTP客户端会导致内存不足问题。
 
 >[!NOTE]
 >
 >AEM 6.4 已结束延期支持。请参阅我们的[技术支持期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。请在[此处](https://experienceleague.adobe.com/docs/?lang=zh-Hans)查找支持的版本。
 
-
 >[!IMPORTANT]
 >
->Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.18 版](/help/assets/workfront-connector-install.md)。
+>Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.19 版](/help/assets/workfront-connector-install.md)。
 
 ## 已知问题 {#known-issues}
 
@@ -39,13 +37,18 @@ ht-degree: 100%
 
 ## 以前的版本 {#previous-releases}
 
-### 2024 年 2 月版本 {#february-2023-release}
+### 2024 年 3 月版本 {#march-2024-release}
+
+* 处理从 Workfront 上传的多个资源时遇到问题。
+* 使用 Workfront 在 Experience Manager 中搜索文件夹时不添加结束引号会导致 `SERVER_ERROR`。
+
+### 2024 年 2 月版本 {#february-2024-release}
 
 * 启用切换功能以使 AEM Cloud 客户可配置和设置连接器。
 
 * 关闭 `resourceResolver` 但不显式关闭基础会话将导致在 AEM 实例中产生会话泄漏。显式关闭会话至关重要，因为自动关闭资源解析器并不隐式关闭会话。
 
-### 2024 年 1 月版本 {#january-2023-release}
+### 2024 年 1 月版本 {#january-2024-release}
 
 * [!DNL CRX DE] 中的 [!DNL Workfront] 配置当前未存储 `project ID`，导致应用只读权限时出错。详细了解如何[配置权限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders)。
 
@@ -120,7 +123,6 @@ ht-degree: 100%
 * 在 Workfront 中删除评论现在可反映在 Experience Manager 中。
 
 * 可管理是否阻止 Experience Manager as a Cloud Service 上的全新客户配置连接器。
-
 
 ### 2023 年 1 月版本 {#january-2022-release}
 
