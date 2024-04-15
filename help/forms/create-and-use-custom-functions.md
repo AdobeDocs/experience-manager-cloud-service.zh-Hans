@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
+source-git-commit: 9582cd8c7777544fde5d13fcd79cfec318e3f780
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 2%
@@ -50,8 +50,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 * `@func [functionName] <Function Name>`。
   `functionName` 是函数的名称。 不允许使用空格。
   `<Function Name>` 是自适应表单的规则编辑器中函数的显示名称。
-如果函数名称与函数本身的名称相同，则可以忽略 `[functionName]` 语法中的。 <!-- For example,  in the `calculateAge` custom function, the name is defined as:
-`* @name calculateAge` -->
+如果函数名称与函数本身的名称相同，则可以忽略 `[functionName]` 语法中的。
 
 #### 参数
 
