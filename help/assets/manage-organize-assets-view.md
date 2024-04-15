@@ -4,7 +4,7 @@ description: 在  [!DNL Assets view] 中移动、删除、复制、重命名、�
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
+source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 88%
@@ -149,3 +149,4 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 
 * 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
+
