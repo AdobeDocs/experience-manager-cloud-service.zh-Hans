@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
+source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 2%
@@ -30,7 +30,6 @@ AEM Forms支持自定义函数，允许用户定义用于实现复杂业务规�
 ### 自定义函数的使用 {#uses-of-custom-function}
 
 在自适应Forms中使用自定义函数的优点包括：
-
 * **数据处理**：自定义函数有助于处理输入到表单字段中的数据。
 * **数据验证**：通过自定义函数，可对表单输入执行自定义检查并提供指定的错误消息。
 * **动态行为**：自定义函数允许您根据特定条件控制表单的动态行为。 例如，您可以显示/隐藏字段、修改字段值或动态调整表单逻辑。
