@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3104'
 ht-degree: 2%
 
 ---
@@ -72,59 +72,61 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
    * 日期[]：表示日期值的数组。
    * array：表示包含各种类型值的泛型数组。
    * 对象：表示传递到自定义函数的表单对象，而不是直接传递其值。
-   * scope：表示自定义函数在运行时使用的全局对象。 此变量声明为JavaScript注释中的最后一个参数，在自适应表单的规则编辑器中不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。
+   * 范围：表示全局对象，其中包含只读变量，如表单实例、目标字段实例以及在自定义函数中执行表单修改的方法。 此变量声明为JavaScript注释中的最后一个参数，在自适应表单的规则编辑器中不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。 有关Globals对象及其使用方式的更多信息， [单击此处](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
-    参数类型不区分大小写，并且参数名称中不允许有空格。
-    
-    ’&lt;parameter description=&quot;&quot;>&#39;包含有关参数用途的详细信息。 它可以有多个单词。
-    
-    默认情况下，所有参数都是必需的。 您可以在参数类型后添加“=”或将参数名称括在“[]”中，从而将参数定义为可选参数。 在JavaScript注释中定义为可选的参数在规则编辑器中显示为可选。
-    要将变量定义为可选参数，可以使用以下任意语法：
-    
-    * &#39;@param {type=} Input1&#39;
-    
-    在上一行代码中，“Input1”是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
-    &#39;@param {string=&lt;value>} input1&#39;
-    
-    &#39;input1&#39;作为可选参数，默认值为&#39;value&#39;。
-    
-    * ’@param {type} [输入1]&#39;
-    
-    在上一行代码中，“Input1”是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
-    &#39;@param {array} [输入1=&lt;value>]`
-    “input1”是数组类型的可选参数，其默认值设置为“value”。
-    确保将参数类型括在大括号中 {} 并且参数名称用方括号[]括起来。
-    
-    请考虑以下代码段，其中input2被定义为可选参数：
-    
-    ```javascript
-    
-    /**
-    *可选参数函数
-    * @name OptionalParameterFunction
-    * @param {string} input1
-    * @param {string=}输入2
-    * @return {string}
-    */
-    函数OptionalParameterFunction(input1， input2) {
-    let result = &quot;Result： &quot;；
-    结果+=输入1；
-    if(输入2 ！== null) {
-    结果+=“ ”+input2；
-    }
-    返回结果；
-    }
-    ```
-    
-    下图显示在规则编辑器中使用“OptionalParameterFunction”自定义函数：
-    
-    &lt;!>— ！[可选或必需的参数](/help/forms/assets/optional-default-params.png) —>
-    
-    您可以保存规则而不为所需参数指定值，但不会执行规则并显示警告消息：
-    
-    &lt;!>— ！[不完整规则警告](/help/forms/assets/incomplete-rule.png) —>
-    
-    当用户将可选参数留空时，“未定义”值将传递到可选参数的自定义函数。
+参数类型不区分大小写，并且参数名称中不允许有空格。
+
+`<Parameter Description>` 包含有关参数用途的详细信息。 它可以有多个单词。
+
+**可选参数**
+默认情况下，所有参数都是必需的。 通过添加以下任一项，可将参数定义为可选参数 `=` 在参数类型后面或将参数名称括在  `[]`. 在JavaScript注释中定义为可选的参数在规则编辑器中显示为可选。
+要将变量定义为可选参数，可以使用以下任意语法：
+
+* `@param {type=} Input1`
+
+在上一行代码中， `Input1` 是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
+`@param {string=<value>} input1`
+
+`input1` 作为可选参数，默认值设置为 `value`.
+
+* `@param {type} [Input1]`
+
+在上一行代码中， `Input1` 是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
+`@param {array} [input1=<value>]`
+`input1` 是数组类型的可选参数，其默认值设置为 `value`.
+确保将参数类型括在大括号中 {} 并且参数名称用方括号括起来 [].
+
+请考虑以下代码段，其中input2被定义为可选参数：
+
+```javascript
+        /**
+         * optional parameter function
+         * @name OptionalParameterFunction
+         * @param {string} input1 
+         * @param {string=} input2 
+         * @return {string}
+        */
+        function OptionalParameterFunction(input1, input2) {
+        let result = "Result: ";
+        result += input1;
+        if (input2 !== null) {
+            result += " " + input2;
+        }
+        return result;
+        }
+```
+
+下图使用 `OptionalParameterFunction` 规则编辑器中的自定义函数：
+
+![可选或必需的参数 ](/help/forms/assets/optional-default-params.png)
+
+您可以保存规则而不为所需参数指定值，但不会执行规则并显示警告消息：
+
+![规则不完整警告](/help/forms/assets/incomplete-rule.png)
+
+当用户将可选参数留空时，“未定义”值将传递到可选参数的自定义函数。
+
+要详细了解如何在JSDocs中定义可选参数， [单击此处](https://jsdoc.app/tags-param).
 
 #### 返回类型
 
@@ -150,7 +152,6 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 声明为私有的自定义函数不会出现在自适应表单的规则编辑器的自定义函数列表中。 默认情况下，自定义函数是公用的。 将自定义函数声明为私有函数的语法为 `@private`.
 
-要详细了解如何在JSDocs中定义可选参数， [单击此处](https://jsdoc.app/tags-param).
 
 ## 创建自定义函数时的准则 {#considerations}
 
@@ -190,6 +191,8 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
     
 ```
 
+如果用户没有将任何JavaScript注释添加到自定义函数，则该自定义函数不会列在自适应表单的规则编辑器中。
+
 * **具有必需JavaScript注释或注释的函数表达式**
 
 要在自适应表单的规则编辑器中列出自定义函数，请以下列格式创建自定义函数：
@@ -207,6 +210,8 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
             // code to be executed
         }
 ```
+
+如果用户没有将任何JavaScript注释添加到自定义函数，则该自定义函数不会列在自适应表单的规则编辑器中。
 
 ## 创建自定义函数 {#create-custom-function}
 
@@ -365,30 +370,33 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 ### 自定义函数中的字段和全局范围对象 {#support-field-and-global-objects}
 
-字段对象是指表单中的单个组件或元素，例如文本字段和复选框。 全局范围对象是指可在整个表单中访问的全局变量或设置。 让我们看一下以下代码片段：
+字段对象是指表单中的单个组件或元素，例如文本字段和复选框。 全局对象包含只读变量，例如表单实例、目标字段实例以及在自定义函数中修改表单的方法。
+
+>[!NOTE]
+>
+> 此 `param {scope} globals` 必须是最后一个参数，且不会显示在自适应表单的规则编辑器中。
+
+<!-- Let us look at the following code snippet:
 
 ```JavaScript
+   
     /**
     * updateDateTime
     * @name updateDateTime
     * @param {object} field
-    * @param {scope} globals 
+    * @param {scope} globals
     */
     function updateDateTime(field, globals) {
     // Accessing the Date object from the global scope
     var currentDate = new Date();
     // Formatting the date and time
     var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time
-    field.value = formattedDateTime;
+    // Updating the field value with the formatted date and time using setProperty.
+    globals.functions.setProperty(field, {value: formattedDateTime});
     }
 ```
 
->[!NOTE]
->
-> 此 `param {scope} globals` 必须是最后一个参数，且不会显示在自适应表单的规则编辑器中。
-
-在上述代码片段中，一个名为的自定义函数 `updateDateTime` 采用字段对象和全局对象等参数。 使用全局范围访问日期和时间对象。 该字段表示文本框对象，格式化的日期和时间值将显示在表单中。
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
 让我们了解自定义函数如何在 `Contact Us` 使用不同用例的表单。
 
@@ -419,7 +427,8 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 >[!NOTE]
 >
-> 您可以使用中的可用属性配置字段属性 `[form-path]/jcr:content/guideContainer.model.json`.
+> * 您可以使用中的可用属性配置字段属性 `[form-path]/jcr:content/guideContainer.model.json`.
+> * 使用对表单进行的修改 `setProperty` globals对象的方法本质上是异步的，在执行自定义函数期间不会反映出来。
 
 在此示例中，验证 `personaldetails` 单击按钮时会出现面板。 如果在面板、其他面板、 `feedback` 面板中，单击按钮后会变为可见。
 
@@ -554,7 +563,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 `globals.functions.submitForm(globals.functions.exportData(), false);` 用于在操作后提交表单数据。
 * 第一个参数是要提交的数据。
 * 第二个参数表示在提交之前是否验证表单。 它是 `optional` 并设置为 `true` 默认情况下。
-* 第三个理由是 `contentType` 提交的材料，也 `optional` 默认值为 `multipart/form-data`.
+* 第三个理由是 `contentType` ，此选项也是可选的，默认值为 `multipart/form-data`. 其他值可以是 `application/json` 和 `application/x-www-form-urlencoded`.
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，在服务器上提交操作数据：
 
@@ -565,7 +574,6 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
