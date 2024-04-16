@@ -4,10 +4,10 @@ description: 在  [!DNL Assets view] 中移动、删除、复制、重命名、�
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
+source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 88%
+source-wordcount: '1177'
+ht-degree: 89%
 
 ---
 
@@ -21,16 +21,40 @@ ht-degree: 88%
 
 *图：所选图像在工具栏中可用的选项。*
 
-* ![取消选择图标](assets/do-not-localize/close-icon.png) 取消选择选定内容。
+* ![“取消选择”图标](assets/do-not-localize/close-icon.png) 取消选择所选资源。
+
+* ![“查找相似资源”图标](assets/do-not-localize/find-similar.svg) 根据元数据和智能标记在 Assets UI 中查找相似的图像资源。
+
 * ![详细信息图标](assets/do-not-localize/edit-in-icon.png) 单击可预览资源并查看详细的元数据。在预览时，您可以查看版本并编辑图像。
+
 * ![下载图标](assets/do-not-localize/download-icon.png) 将所选资源下载到您的本地文件系统。
-* ![删除图标](assets/do-not-localize/delete-icon.png) 删除选定的资源或文件夹。
-* ![签出图标](assets/do-not-localize/checkout-icon.png) 签出选定的资源。
+
+* ![“添加到收藏集”图标](assets/do-not-localize/add-collection.svg) 将所选资源添加到收藏集。
+
+* ![“固定资源”图标](assets/do-not-localize/pin-quick-access.svg) 固定资源，以供您在以后需要它时更快地访问它。所有固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分中。
+
+* ![“在 Express 中编辑”图标](assets/do-not-localize/edit-e.svg) 在 Adobe Experience Manager Assets 中集成的 Adobe Express 中编辑图像。
+
+* ![“编辑资源”图标](assets/do-not-localize/edit-e.svg) 使用 Adobe Express 编辑图像。
+
+* ![“共享资源链接”图标](assets/do-not-localize/share-link.svg) 与其他用户共享某个资源的链接，以使其他用户可访问和下载该资源。
+
+* ![“删除”图标](assets/do-not-localize/delete-icon.png) 删除所选的资源或文件夹。
+
 * ![复制图标](assets/do-not-localize/copy-icon.png) 复制选定的文件或文件夹。
+
 * ![移动图标](assets/do-not-localize/move-icon.png) 将选定的资源或文件夹移动到存储库层次结构中的不同位置。
+
 * ![重命名图标](assets/do-not-localize/rename-icon.png) 重命名选定的资源或文件夹。请使用唯一名称，否则重命名将失败并出现警告。您可以使用新名称重试。
-此外，您还可以单击资源或文件夹的标题来重命名它。 请在以下位置提及新文本 **重命名资源** 文本框并单击 **保存**. 此功能在“网格”、“图库”、“瀑布”和“列表”视图中可用。 <!--in-place rename-->
-* ![分配任务图标](assets/do-not-localize/review-delegate-icon.png) 分配任务给其他用户来协作处理某个资源。
+此外，您还可以单击资源或文件夹的标题来重命名它。 请在以下位置提及新文本 **重命名资源** 文本框并单击 **保存**. 此功能在“网格”、“图库”、“瀑布”和“列表”视图中可用。
+
+* ![瀑布视图图标](assets/do-not-localize/waterfall-view.png) [!UICONTROL 瀑布视图].
+
+* ![“复制到库”图标](assets/do-not-localize/copy-icon.png) 将资源添加到库。
+
+* ![“分配任务”图标](assets/do-not-localize/review-delegate-icon.png) 将任务分配给其他用户以协作处理某个资源。
+
+* ![“分配任务”图标](assets/do-not-localize/watch-asset.svg) 监控对资源执行的操作。
 
 在资源缩略图上可以查看相同的选项。
 
