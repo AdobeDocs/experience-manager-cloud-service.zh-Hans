@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 5e216e45a1400299efcc418007ddbe93f0c571a1
+source-git-commit: 36fefbf74a288d60a9529f0c7273dd6b0557177b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '424'
 ht-degree: 35%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 35%
 * GRANITE-49638：修复RUM转换器工厂的内容类型配置错误。
 * GRANITE-50141： IMSProviderImpl正在发送垃圾邮件。
 * SITES-20949：在Youtube添加referrerpolicy=&quot;strict-origin-when-cross-origin&quot;后，ComponentsIT.testEmbed失败。
-* SITES-21233：核心组件更新 — 升级到15860后，修复适用于GS1美国的折叠面板。
+* SITES-21233：核心组件更新 — 升级到15860后修复折叠面板。
 * SKYOPS-74819：Apache Commons中重复键向后兼容性损坏。
 * SKYOPS-67087：在某些情况下，Clientlib聚合不起作用。
 * CQ-4355415：AEM通知链接在6.5 SP18中不起作用。
