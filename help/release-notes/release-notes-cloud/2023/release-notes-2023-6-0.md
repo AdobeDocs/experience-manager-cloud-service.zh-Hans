@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.6.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.6.0 版的发行说明。'
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
-workflow-type: ht
-source-wordcount: '1357'
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
+workflow-type: tm+mt
+source-wordcount: '1322'
 ht-degree: 100%
 
 ---
@@ -65,12 +65,6 @@ Experience Manager Assets 现在使您能够通过搜索结果用户界面执行
 **3D 资源的缩略图预览**
 
 [!DNL Experience Manager Assets] 现在可以生成常见 3D 文件格式的缩略图预览，包括 gLB、USDz、FBX、3DS、OBJ 和 SBSAR。[](/help/assets/file-format-support.md)当这些文件上传时，默认情况下会自动生成缩略图。
-
-**链接共享配置**
-
-为[创建链接共享](/help/assets/share-assets.md)提供了改进的全新用户体验，以及一组全新的配置，其中管理员可以为您的用户自定义此功能的默认行为。
-
-![标记管理](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media：更新了图像配置文件中与智能裁剪相关的字段**
 

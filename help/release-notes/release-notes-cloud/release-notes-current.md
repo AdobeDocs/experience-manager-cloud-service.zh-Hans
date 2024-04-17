@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f3d3bc92eb47bf5008167f660f26dfede2700540
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 30%
+source-wordcount: '2321'
+ht-degree: 31%
 
 ---
 
@@ -97,6 +97,12 @@ AEM Assets与Adobe Express进行原生集成，这使您能够从Adobe Express�
 **所有支持的视频类型都有预览演绎版**
 
 Experience Manager Assets现在默认生成所有受支持视频类型的预览演绎版，而无需处理配置文件配置。
+
+**链接共享配置**
+
+为[创建链接共享](/help/assets/share-assets.md)提供了改进的全新用户体验，以及一组全新的配置，其中管理员可以为您的用户自定义此功能的默认行为。
+
+![配置电子邮件服务](/help/assets/assets/config-email-service.png)
 
 ### 资源视图中的新增功能 {#assets-view}
 
