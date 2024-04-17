@@ -5,7 +5,7 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -248,11 +248,11 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 ## 后续步骤 {#next-steps}
 
-现在，您已了解如何创建块，了解如何以语义方式建模内容以实现精益开发人员体验至关重要。
+现在您知道了如何创建块，接下来，了解如何以语义的方式对内容进行建模以实现精益的开发人员体验至关重要。
 
-请参阅文档 [用于通过Edge Delivery Services项目进行AEM创作的内容建模](/help/edge/aem-authoring/content-modeling.md) 了解内容建模如何用于AEM创作和Edge Delivery Services项目。
+请参阅文档 [使用 Edge Delivery Services 项目进行 AEM 创作的内容建模](/help/edge/aem-authoring/content-modeling.md)，了解使用 Edge Delivery Services 项目进行 AEM 创作的内容建模的工作原理。
 
 >[!TIP]
 >
->有关创建已启用以AEMas a Cloud Service作为内容源的AEM创作的新Edge Delivery Services项目的端到端演练，请查看 [本AEM GEM网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有关创建新 Edge Delivery Services 项目（该项目已启用 AEM 创作功能并以 AEM as a Cloud Service 作为内容源）的端到端演练，请观看 [此 AEM GEMs 网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

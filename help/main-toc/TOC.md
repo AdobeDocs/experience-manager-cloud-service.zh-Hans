@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
 source-wordcount: '4881'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -797,8 +797,8 @@ ht-degree: 98%
    + [常见问题解答](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Services 概述](/help/edge/overview.md)
-   + [将Edge Delivery Services与AEM结合使用](/help/edge/using.md)
-   + 基于AEM的创作 {#aem-authoring}
+   + [将 Edge Delivery Services 与 AEM 结合使用](/help/edge/using.md)
+   + 基于 AEM 的创作 {#aem-authoring}
       + [针对 Edge Delivery 创作内容](/help/edge/aem-authoring/authoring.md)
       + [针对 Edge Delivery 发布内容](/help/edge/aem-authoring/publishing.md)
       + [开发人员快速入门指南](/help/edge/aem-authoring/edge-dev-getting-started.md)
@@ -832,7 +832,7 @@ ht-degree: 98%
       + [Akamai 设置](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Fastly 设置](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [重定向](/help/edge/docs/redirects.md)
-   + 构建Forms {#build-forms}
+   + 构建表单 {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
       + 开始使用 {#getting-started-eds-forms}
          + [快速入门](/help/edge/docs/forms/tutorial.md)
@@ -840,7 +840,7 @@ ht-degree: 98%
          + [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
          + [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
          + [向表单字段添加验证](/help/edge/docs/forms/validate-forms.md)
-         + [将选项从URL加载到表单](/help/edge/docs/forms/load-options-from-url.md)
+         + [将选项从 URL 加载到表单](/help/edge/docs/forms/load-options-from-url.md)
          + [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [使用规则向表单添加动态行为](/help/edge/docs/forms/rules-forms.md)
          + [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
@@ -850,10 +850,10 @@ ht-degree: 98%
          + [翻译](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自定义组件](/help/edge/docs/forms/custom-components-forms.md)
-         + [对表单的实时用户监控](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [表单的实时用户监控](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + 引用 {#forms-references}
          + [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
-   + Edge投放资源 {#resources}
+   + Edge Delivery 资源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
          + [安装扩展](/help/edge/docs/sidekick-extension.md)

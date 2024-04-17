@@ -6,7 +6,7 @@ exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
@@ -30,9 +30,9 @@ AEM 提供两个不同的内容编辑器，您可根据自己的情况选择要�
 * **Universal Editor** - 此编辑器应是新网站的默认选择。
 * **AEM 页面编辑器** - 对于将现有 AEM Sites 迁移到 Edge Delivery Services 应选择此编辑器。
 
-本指南重点介绍使用 Universal Editor 在 Edge Delivery Services 上创作 AEM 项目。查看文档 [将Edge Delivery Services与AEM结合使用](/help/edge/using.md) 有关选择正确的编辑器和将现有AEM站点迁移到Edge Delivery Services的更多详细信息。
+本指南重点介绍使用 Universal Editor 在 Edge Delivery Services 上创作 AEM 项目。有关选择适当的编辑器以及将现有 AEM Sites 迁移到 Edge Delivery Services 的更多详细信息，请参阅文档 [ Edge Delivery Services 与 AEM](/help/edge/using.md)结合使用。
 
-## 为Edge Delivery Services开发时的核心概念 {#core-concepts}
+## Edge Delivery Services 开发的核心概念 {#core-concepts}
 
 Edge Delivery Services 基于块的概念。AEM 附带一个全面的预定义的块库，可扩展它以满足您的项目需求。在 GitHub 中管理 Edge Delivery Services 项目的代码。
 
@@ -111,12 +111,12 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
    ![paths.json](assets/edge-dev-getting-started/paths.png)
 
-1. 默认映射将使用存储库的名称。 使用以下内容根据需要更新项目的默认映射 `/content/<site-name>/:/` 并单击 **提交更改……**.
+1. 默认映射将使用存储库的名称。根据项目的需要使用 `/content/<site-name>/:/` 更新默认映射，然后单击 **提交更改……**。
 
    * 提供您自己的`<site-name>`。您将在稍后的步骤中用到它。
    * 映射告知 Edge Delivery Services 如何将您 AEM 存储库中的内容映射到站点 URL。
 
-   ![正在更新paths.json](assets/edge-dev-getting-started/paths-update.png)
+   ![更新 paths.json](assets/edge-dev-getting-started/paths-update.png)
 
 1. 按需添加一条提交消息，然后单击&#x200B;**提交更改**，将其直接提交到 `main` 分支。
 
@@ -192,11 +192,11 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 ## 后续步骤 {#next-steps}
 
-现在，您已有一个使用Edge Delivery Services项目创作的AEM，您可以开始创建和样式化自己的块。
+现在，您已有一个使用 Edge Delivery Services 项目进行工作的 AEM 创作，您可以开始创建自己的区块并设计其样式。
 
-请参阅[创建经过检测可与 Universal Editor 结合使用的区块](/help/edge/aem-authoring/create-block.md)指南以了解更多信息。
+请参阅 [创建经过检测可与 Universal Editor 结合使用的区块](/help/edge/aem-authoring/create-block.md)指南以了解更多信息。
 
 >[!TIP]
 >
->有关创建已启用以AEMas a Cloud Service作为内容源的AEM创作的新Edge Delivery Services项目的端到端演练，请查看 [本AEM GEM网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有关创建新 Edge Delivery Services 项目（该项目已启用 AEM 创作功能并以 AEM as a Cloud Service 作为内容源）的端到端演练，请观看 [此 AEM GEMs 网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

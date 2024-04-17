@@ -5,7 +5,7 @@ exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '2233'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -627,7 +627,7 @@ AEM 中提供的许多默认页面属性都映射到文档中相应的页面元�
 
 * `cq:lastModified`（ISO8601 格式）显示的 `modified-time` 
 * 文档最后发布的时间为 `published-time`（ISO8601 格式）
-* `cq:tags` 作为 `cq-tags` 作为标记ID的逗号分隔列表。
+* `cq:tags` as `cq-tags`作为逗号分隔标记 ID 列表。
 
 还可以为自定义页面元数据定义组件模型，作者可以将其作为 AEM Sites 页面属性对话框的选项卡使用。
 
@@ -648,13 +648,13 @@ AEM 中提供的许多默认页面属性都映射到文档中相应的页面元�
 
 ## 后续步骤 {#next-steps}
 
-现在您已经知道如何对内容进行建模，接下来可以使用AEM创作项目为自己的Edge Delivery Services创建块。
+现在您已了解如何建模内容，您可以使用 AEM 创作项目为您自己的 Edge Delivery Services 创建块。
 
-查看文档 [创建指令用于通用编辑器的块](/help/edge/aem-authoring/create-block.md) 了解如何在AEM创作和Edge Delivery Services项目中创建指令用于通用编辑器的块。
+请参阅文档 [创建与通用编辑器一起使用的块](/help/edge/aem-authoring/create-block.md) 了解如何在 Edge Delivery Services 项目的 AEM 创作中创建可与通用编辑器配合使用的块。
 
-如果您已经熟悉如何创建块，请参阅文档 [使用Edge Delivery Services进行AEM创作的开发人员快速入门指南](/help/edge/aem-authoring/edge-dev-getting-started.md) 以启动并运行一个新的Adobe Experience Manager站点，该站点使用Edge Delivery Services和通用编辑器进行内容创作。
+如果你已经熟悉如何创建区块，请参阅文档 [使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/aem-authoring/edge-dev-getting-started.md)，帮助您使用 Edge Delivery Services 和 Universal Editor 来创建并运行新的 Adobe Experience Manager 网站进行内容创作。
 
 >[!TIP]
 >
->有关创建已启用以AEMas a Cloud Service作为内容源的AEM创作的新Edge Delivery Services项目的端到端演练，请查看 [本AEM GEM网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有关创建新 Edge Delivery Services 项目（该项目已启用 AEM 创作功能并以 AEM as a Cloud Service 作为内容源）的端到端演练，请观看 [此 AEM GEMs 网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
