@@ -2,10 +2,10 @@
 title: 添加 SSL 证书
 description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 84%
+source-wordcount: '612'
+ht-degree: 80%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 84%
 
 按照以下步骤使用 Cloud Manager 添加证书。
 
-1. 登录Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择适当的组织
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，选择程序。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
@@ -40,6 +40,7 @@ ht-degree: 84%
    * 在&#x200B;**证书名称**&#x200B;中输入证书名称。
       * 这仅供参考，可以是任何有助于您轻松引用证书的名称。
    * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;值粘贴到各自的字段中。这三个字段都是必填字段。
+   * 在某些情况下，最终用户证书可能会包含在链中，并且必须在将链粘贴到字段之前将其清除。
 
    ![添加“SSL 证书”对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -56,6 +57,10 @@ ht-degree: 84%
 >[!NOTE]
 >
 >用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色成员，才能在 Cloud Manager 中安装 SSL 证书。
+
+>[!NOTE]
+>
+>如果您收到类似于的错误 `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`中，您可能已将客户端证书包含在证书链中。 请确保该链不包含客户端证书，然后重试。
 
 ## 证书错误 {#certificate-errors}
 
