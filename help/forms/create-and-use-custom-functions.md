@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
+source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
 workflow-type: tm+mt
-source-wordcount: '3104'
-ht-degree: 2%
+source-wordcount: '3119'
+ht-degree: 3%
 
 ---
 
@@ -22,6 +22,11 @@ ht-degree: 2%
 确保 [核心组件设置为版本3.0.8](https://github.com/adobe/aem-core-forms-components) 在自定义功能中使用预发行功能。 </span>
 
 # 自适应Forms中的自定义函数（核心组件）
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM as a Cloud Service | 本文 |
 
 ## 简介
 
