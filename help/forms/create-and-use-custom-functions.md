@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: ff4f8416284c8491a252b725dfa5224e0c0d9fd5
+source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
 workflow-type: tm+mt
 source-wordcount: '3119'
 ht-degree: 3%
@@ -65,6 +65,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 * `@argument` `{type} name <Parameter Description>`
 * `@arg` `{type}` `name <Parameter Description>`.
   `{type}` 表示参数类型。  允许的参数类型包括：
+
    * string：表示单个字符串值。
    * 数字：表示单个数值。
    * 布尔值：表示单个布尔值（true或false）。
