@@ -1,79 +1,85 @@
 ---
-title: 从URL加载下拉列表选项
-description: 下拉列表选项包含在一个不同的电子表格中，然后通过提供的URL导入到主电子表格中。
+title: 从 URL 加载下拉列表选项
+description: 下拉列表选项包含在不同的电子表格中，然后通过提供的 URL 导入到主电子表格中。
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 2%
+source-wordcount: '442'
+ht-degree: 59%
 
 ---
 
 
-# 从URL加载下拉列表选项
+# 从 URL 加载下拉列表选项
 
-在Edge Delivery Services表单中，用户可选择从预定义选项集中选择一个值。 表单作者使用 `select` 元素，提供选项列表。
-例如， `enquiry` 表单中有一个下拉菜单用于选择国家/地区，为用户提供了多种预定义的国家/地区以供选择。 您可以看到此列表包含以逗号分隔的一长串国家/地区。
+Forms通常包括下拉菜单，供用户从预定义选项中进行选择。 这些选项通常在表单本身中定义，但管理长列表可能会很麻烦。 本指南概述了如何通过通过URL从单独的电子表格加载下拉选项来改进表单创作。
 
-![下拉选项](/help/forms/assets/drop-down-options.png)
 
-直接将下拉菜单中的选项添加到包含表单定义的工作表时，管理这些选项的长列表可能会很麻烦。 创建单独的工作表来存储这些下拉选项可以简化和简化该过程。 此工作表充当所有下拉选项的集中式存储库，以结构化格式排列。 每个选项都列在其各自的行中，从而便于管理和更新。
+从单独的电子表格加载下拉选项的好处包括：
 
-让我们探讨如何通过通过URL从其他电子表格加载选项列表来改进表单创作过程。
+* 简化的管理：在一个集中的位置维护下拉列表选项，以便更轻松地更新和添加。
+* 提高了效率：无需在表单定义中手动添加长选项列表。
+
+
+
+
+![下拉菜单选项](/help/forms/assets/drop-down-options.png)
+
 
 读完本文后，您将学会：
 
 * [在单独的电子表格中定义选项](#define-options)
-* [添加URL以加载下拉列表选项](#add-url)
+* [添加 URL 以加载下拉列表选项](#add-url)
 
 ## 在单独的工作表中定义选项 {#define-options}
 
-创建具有两列的工作表：`Option` 和 `Value`，以定义选项：
+在单独的电子表格中定义选项
 
-1. 转到Microsoft®SharePoint或Google Drive文件夹上的“AEM项目”文件夹。
-2. 添加名为的工作表 `shared-country` 在Microsoft®SharePoint Site或Google Drive文件夹中，添加以下内容：
-
-   * **选项**：表示下拉菜单中选项的显示值。
-   * **值**：表示用户选择选项时提交的值。
+1. 创建电子表格：
+   1. 在Microsoft®SharePoint或Google驱动器中找到AEM项目文件夹。
+   1. 添加新工作表。 例如，“共享国家/地区”。
+1. 定义选项列：添加两列：“选项”和“值”。
+   * “选项”定义下拉菜单中显示的文本。
+   * “值”定义用户选择该选项时提交的值。
 
    >[!NOTE]
    >
-   > 如果下拉选项的值和选项相同，则电子表格只能包含 **选项** 列。
+   >如果选项和值相同，则仅需要“选项”列。
 
-   让我们添加新的工作表， [共享国家/地区](/help/forms/assets/enquiry-options.xlsx) 中显示的选项 `Destination` 中的下拉列表 `enquiry` 表单。
+1. 填充电子表格：在“选项”列中输入国家/地区选项（如有必要，请输入“值”列）。
 
-   请参阅下图中的 `shared-country` 电子表格：
+   有关结构，请参阅以下示例。
 
    ![国家/地区下拉列表](/help/forms/assets/drop-down-country-options.png)
-3. 预览和发布 `shared-country` 工作表使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   请参阅显示的URL `shared-country` 表： https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
+1. 使用 [AEM Sidekick ](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)预览和发布`shared-country`工作表。
+
+   请参阅展示 `shared-country` 表格的 URL：
+https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
 
 >[!NOTE]
 >
-> `?sheet=country` 是附加到URL的查询参数。 此参数指示根据 `shared-country` 工作表。 它会重定向到包含与不同国家/地区相关信息的JSON文件。
+> `?sheet=country` 是附加到 URL 的查询参数。该参数表示根据 `shared-country` 表过滤后的 JSON。它重定向到包含与不同国家相关的信息的 JSON 文件。
 
-## 添加URL以加载下拉列表选项{#add-url}
+## 添加 URL 以加载下拉列表选项{#add-url}
 
-此 `Options` 属性 `select` 字段接受URL。 URL会返回一个用作以下对象选项的JSON数组： `Destination` 下拉列表。 添加URL以加载下拉列表选项：
+字段的`Options` 属性 `select` 接受 URL。URL 返回一个 JSON 数组，用作 `Destination` 下拉列表的选项。要添加 URL 以加载下拉列表选项：
 
-1. 转到Microsoft®SharePoint或Google驱动器上的AEM项目文件夹，然后打开您的电子表格。 您也可以为表单创建新的电子表格。
-1. 复制的URL `shared-country` 将其粘贴到 `Options` 的列 `Destination` 字段。
+1. 转到 Microsoft® SharePoint 或 Google Drive 上的 AEM Project 文件夹并打开电子表格。您还可以为表单创建新的电子表格。
+1. 复制 `shared-country` 工作表的 URL，并将其粘贴到 `Options` 字段的 `Destination` 列中。
 
    ![查询电子表格](/help/forms/assets/drop-down-enquiry.png)
 
-1. 预览和发布工作表，使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)预览和发布工作表。
 
 
    ![国家/地区下拉列表](/help/forms/assets/load-dropdown-options-form.png)
 
-您可参阅 [查询电子表格](/help/forms/assets/enquiry-options.xlsx) 以添加URL来加载下拉列表选项。
+您可以参考 [询价电子表格](/help/forms/assets/enquiry-options.xlsx) 将 URL 添加到加载下拉列表选项中。
 
-将URL集成到表单定义中以加载下拉列表选项后， `Destination` 下拉列表从URL开始显示。
+将 URL 集成到表单定义中以加载下拉列表选项后，`Destination` 下拉列表的选项开始从 URL 中出现。
 
-请参阅下面的URL，其中显示了 `enquiry` 显示保存在单独工作表中的选项的表单：
+请参阅下面的 URL，其中显示了保存在单独工作表中的选项的 `enquiry` 表单：
 
 https://main--wefinance--wkndforms.hlx.live/enquiry-form
 
