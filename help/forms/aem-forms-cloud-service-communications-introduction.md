@@ -1,13 +1,14 @@
 ---
 title: 什么是Formsas a Cloud Service通信API？
 description: 使用通信API签名、认证或保护文档，自动化PDF生成过程，以及将PDF文档转换为另一种格式。
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 56%
+source-wordcount: '1988'
+ht-degree: 55%
 
 ---
 
@@ -190,14 +191,11 @@ DocAssurance服务包括签名和加密API：
 
 签名API和加密API都是 [同步API](#types-of-communications-apis-types).
 
-### Reader扩展服务
+### 使用权限API
 
-<span class="preview"> Reader扩展服务功能属于早期采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+<span class="preview"> 使用权限功能属于率先采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
 
-Reader扩展服务通过扩展具有其他使用权限的Adobe Reader的功能，使您的组织可以轻松共享交互式PDF文档。 Reader扩展服务可与Adobe Reader 7.0或更高版本一起使用。 该服务向PDF文档添加使用权限。 此操作激活在使用Adobe Reader打开PDF文档时通常不可用的功能，例如向文档添加注释、填写表单和保存文档。
-
->[!NOTE]
->第三方用户无需其他软件或插件即可使用启用了权限的文档。
+使用权限功能通过扩展具有其他使用权限的Adobe Reader的功能，使您的组织可以轻松共享交互式PDF文档。 该服务可与Adobe Reader 7.0或更高版本配合使用，并向PDF文档添加了使用权限。 此操作激活在使用Adobe Reader打开PDF文档时通常不可用的功能，例如向文档添加注释、填写表单和保存文档。
 
 当PDF文档添加了相应的使用权限后，收件人可以在Adobe Reader中执行以下操作：
 
@@ -208,11 +206,13 @@ Reader扩展服务通过扩展具有其他使用权限的Adobe Reader的功能�
 * 以电子方式提交已完成或添加注释的PDF文档。
 * 使用PDF文档和表单作为内部数据库和Web服务的直观开发前端。
 * 与其他人共享PDF文档，以便审阅人可以使用直观的标记工具添加注释。 这些工具包括电子便笺、印章、高亮和文本删除线。 Acrobat中提供了相同的函数。
-* 支持条形码表单解码。
+* 支持条码Forms解码。
 
 在Adobe Reader中打开启用了权限的PDF文档时，会自动激活这些特殊使用权限功能。 当用户使用完启用了权限的文档时，这些功能在Adobe Reader中再次被禁用。 它们保持禁用状态，直到用户收到另一个启用了权限的PDF文档。
 
-Reader扩展服务的各种使用权限功能包括：
+#### 启用或禁用使用权限
+
+用于扩展PDFReader服务的各种使用权限功能包括：
 
 * **条形码解码**：用于解码PDF文档中的条形码。
 
@@ -238,7 +238,11 @@ Reader扩展服务的各种使用权限功能包括：
 
 * **独立提交**：从PDF文档离线提交表单数据。
 
-**Reader扩展服务中的其他功能**
+#### 提取使用权限
+
+这有助于检索为Adobe Acrobat Reader可扩展性启用或禁用的PDF文档的使用权限。
+
+#### 其他功能
 
 * **消息**：在打开应用了一个或多个使用权限的PDF文档时，Adobe Acrobat Reader中显示的消息。
 * **解锁密码**：打开加密的PDF文档所需的密码。 通常，这是文档打开密码，但如果PDF文档受权限密码的额外保护，则可以使用任一密码来打开文档。
