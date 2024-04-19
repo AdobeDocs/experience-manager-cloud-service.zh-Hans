@@ -2,9 +2,9 @@
 title: 编辑视频
 description: 使用编辑视频 [!DNL Adobe Express] 功能选项，并将更新的视频另存为版本。
 role: User
-source-git-commit: dd67ce6fd8d0626db5518a39dd5ed472ddfeff93
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '753'
 ht-degree: 19%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 19%
 使用嵌入式技术，可以轻松地将视频转换为完美大小 [!DNL Adobe Express] 快速操作。 中的快速操作 [!DNL Assets Essentials] 提供者 [!DNL Adobe Express] 提供用户友好的视频编辑选项，包括裁切视频、调整视频大小、修剪视频以及将视频转换为GIF。
 
 编辑视频后，您可以将新视频另存为新版本。 版本控制可帮助您以后在需要时还原为原始资源。要编辑视频，请转到视频详细信息，然后单击 **[!UICONTROL 编辑视频]**. 或者，选择资产并单击详细信息，然后单击 ![剪刀](assets/do-not-localize/cut.svg) 图标在右侧窗格中可用。
-
-进一步了解 [预览界面](navigate-assets-view.md).
 
 ## 先决条件 {#prerequisites}
 

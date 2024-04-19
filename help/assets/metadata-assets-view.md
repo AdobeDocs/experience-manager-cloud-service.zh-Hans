@@ -4,10 +4,10 @@ description: 了解如何在资产视图中管理元数据。 更好的元数据
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 82%
 
 元数据可帮助您进一步分类资源，在数字化信息大量增长时非常有用。它可以基于文件名、缩略图和内存管理数百个文件。但是，这种方法不具备扩展性。随着涉及的人数以及托管资源数的增长，这种方法很快就会出现不足。
 
-随着元数据的增加，数字资源的价值会随之增长，因为资源会变得：
+随着元数据的增加，数字资源的价值也会随之增长，因为该资源会变得：
 
 * 更易于访问 - 系统和用户可以轻松地找到它。
 * 更易于管理 - 您可以轻松地找到具有一组相同属性的资源并对其应用更改。
