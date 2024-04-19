@@ -3,9 +3,9 @@ title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2754'
 ht-degree: 5%
 
 ---
@@ -128,7 +128,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 运行以下命令：
 
    ```
-         code .
+      code .
    ```
 
    ![在纯文本编辑器中打开主题文件夹](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
@@ -137,14 +137,31 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 打开 `package.json` 文件以供编辑。
 
-1. 设置值 `name` 和 `description` 属性。
+1. 设置值 `name` 和 `version` 属性。
 
-   name属性用于唯一标识主题，如“aem-forms-wknd-theme”，并显示在 **样式** 选项卡/ **表单创建向导**. description属性提供有关主题的其他详细信息，包括主题的用途和设计主题。 您还可以指定主题的版本、描述和许可证。
+   ![画布主题名称更改图像](/help/forms/assets/changename_canvastheme.png)
 
-1. 保存并关闭该文件。
+   >[!NOTE]
+   >
+   > * name属性用于唯一标识主题，指定的名称显示在中 **样式** 选项卡 **表单创建向导**.
+   > * 您可以选择根据自己的选择为主题选择一个名称，例如， `mytheme` 或 `customtheme`. 但是，对于这种情况，我们已将名称指定为 `aem-forms-wknd-theme`.
 
-![画布主题名称更改图像](/help/forms/assets/changename_canvastheme.png)
+1. 打开 `package-lock.json` 文件以供编辑。
+1. 设置值 `name` 和 `version` 属性。 确保 `name` 和 `version` 中的属性 `Package-lock`.json文件与 `Package.json` 文件。
 
+   ![画布主题名称更改图像](/help/forms/assets/changename_canvastheme-package-lock.png)
+
+1. （可选）打开 `ReadMe` 用于编辑和更新主题名称的文件。
+
+   ![画布主题名称更改图像](/help/forms/assets/changename_canvastheme-readme-file.png)
+
+1. 保存并关闭文件。
+
+**设置主题名称时的注意事项**
+
+* 必须删除 `@aemforms` 从主题名称 `Package.json` 文件和 `Package-lock.json` 文件。 如果无法删除 `@aemforms` 自定义主题名称会导致前端管道在主题部署期间失败。
+* 建议更新主题 `version` 在 `Package.json` 文件和 `Package-lock.json` 文件以准确反映随着时间的推移对主题所做的更改和增强。
+* 有关使用、安装说明和其他相关详细资料的重要信息，建议更新 `ReadMe` 文件。
 
 #### 3.自定义主题 {#customize-the-theme}
 
