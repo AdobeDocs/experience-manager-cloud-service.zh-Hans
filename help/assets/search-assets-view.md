@@ -2,10 +2,11 @@
 title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
 description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现合适的资源，并帮助您提高内容速度。
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
+source-git-commit: bd3835980fcada20fbfe2551a5c15cc7c69a5c37
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 91%
+source-wordcount: '1908'
+ht-degree: 74%
 
 ---
 
@@ -238,6 +239,91 @@ Experience Manager Assets允许您为您的组织选择默认登录页面。 使
 1. 单击&#x200B;**[!UICONTROL 关闭]**&#x200B;来关闭预览屏幕。
 
    ![搜索优先首页预览](assets/search-first-preview.gif)
+
+## 上下文搜索 {#contextual-search}
+
+您还可以通过定义文本提示来搜索存储库中可用的资源。 Experience Manager Assets会自动将这些文本提示转换为搜索筛选器并显示搜索结果。 您可以使用“筛选器”窗格查看和修改自动筛选器，以进一步缩小搜索结果。
+
+### 访问上下文搜索 {#access-contextual-search}
+
+要在Experience Manager Assets中访问上下文搜索，请执行以下操作：
+
+1. 单击 **[!UICONTROL Search]** 在左窗格中。
+
+   ![上下文搜索](assets/access-contextual-search.png)
+
+1. 在“搜索”文本框中定义文本提示，然后单击 **[!UICONTROL 上下文搜索]**.
+
+   ![上下文搜索文本提示](assets/contextual-search-text-prompt.png)
+
+   [!DNL Experience Manager Assets] 显示搜索结果。
+
+
+### 支持的过滤器 {#supported-filters}
+
+上下文搜索支持以下现成的过滤器。 使文本提示基于这些筛选器以查看相应的搜索结果。
+
+* 图像高度
+
+* 图像宽度
+
+* 文件类型：图像、文档、视频或文件夹。
+
+* MIME类型：JPG、PNG、TIFF、GIF、MP4、PDF、PPTX、DOCX或XLSX
+
+* 创建日期
+
+* 修改日期
+
+* 过期日期
+
+* 资源状态：已批准、已拒绝或全部
+
+* 已过期的资产
+
+### 文本提示示例 {#text-prompts-examples}
+
+**示例 1**
+
+**文本提示**：本月创建的图像。
+
+[!DNL Experience Manager Assets] 自动应用以下过滤器并显示搜索结果：
+
+![上下文搜索示例1](assets/contextual-search-example1.png)
+
+**示例 2**
+
+**文本提示**：图像至少200px高，100px宽，带海滩和晴天。
+
+[!DNL Experience Manager Assets] 自动应用以下过滤器并显示搜索结果：
+
+![上下文搜索示例2](assets/contextual-search-example2.png)
+
+**示例 3**
+
+**文本提示**：我需要蓝天高度为1500和2500像素并在上个月创建的图像，这些图像未过期也未获得批准。
+
+[!DNL Experience Manager Assets] 自动应用以下过滤器并显示搜索结果：
+
+![上下文搜索示例3](assets/contextual-search-example3.png)
+
+以下视频演示了从访问上下文搜索用户界面到定义文本提示和查看搜索结果的端到端过程。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428407)
+
+### 禁用上下文搜索 {#disable-contextual-search}
+
+管理员还可以选择对贵组织中的用户禁用上下文搜索。 为此，请执行以下步骤：
+
+1. 前往&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 常规设置]**。
+
+1. 在 [!UICONTROL 上下文搜索] 部分，关闭 **[!UICONTROL 为您的组织启用上下文搜索]** 切换为对组织中的所有用户禁用上下文搜索功能。
+
+### 上下文搜索反馈 {#contextual-search-feedback}
+
+如果您需要提供关于上下文搜索功能的反馈，请单击 ![“上下文搜索”图标](assets/do-not-localize/contextual-search-icon.png)  ，然后单击反馈图标。 选择反馈类型，指定主题和描述，然后单击 **[!UICONTROL 提交]**.
+
+![上下文搜索反馈](assets/contextual-search-feedback.png)
 
 ## 后续步骤 {#next-steps}
 
