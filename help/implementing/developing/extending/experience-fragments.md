@@ -2,9 +2,9 @@
 title: 体验片段概述
 description: 扩展Adobe Experience Manager as a Cloud Service Experience Fragments。
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1656'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ Adobe建议使用叠加配置重写器。 请参阅 [AEMas a Cloud Service中的
 >[!CAUTION]
 >
 >***仅*** 体验片段支持可编辑的模板。
+>
+>体验片段只能在基于可编辑模板的页面上使用。
 
 <!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->

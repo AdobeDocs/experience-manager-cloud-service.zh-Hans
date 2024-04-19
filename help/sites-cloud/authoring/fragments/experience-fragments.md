@@ -2,10 +2,10 @@
 title: 体验片段
 description: 使用 Adobe Experience Manager as a Cloud Service 体验片段，让您的体验可重复使用且更加灵活。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '2083'
-ht-degree: 95%
+source-wordcount: '2098'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 体验片段：
 
 * 体验的一部分（页面）。
-* 可以跨多个页面使用。
+* 可以跨多个页面（基于可编辑模板）使用。
 * 基于模板（仅可编辑）来定义结构和组件。
 * 此模板用于创建体验片段的&#x200B;*根页面*。
 * 由段落系统中的一个或多个的组件及布局构成。
@@ -262,6 +262,10 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 您现在可以在创作页面时使用您的体验片段：
 
 1. 打开要编辑的任何页面。
+
+   >[!NOTE]
+   >
+   >该页面必须基于可编辑的模板。
 
 1. 在页面段落系统中创建体验片段组件的实例：
 
