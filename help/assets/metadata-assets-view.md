@@ -3,10 +3,11 @@ title: 如何在“资源”视图中管理元数据？
 description: 了解如何在资产视图中管理元数据。 更好的元数据管理使资源更易于访问、更易于管理和完整。
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
+source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 87%
+source-wordcount: '1783'
+ht-degree: 82%
 
 ---
 
@@ -143,13 +144,27 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 
 2. 单击&#x200B;**[!UICONTROL 分配到文件夹]**。
 
-3. 选择该文件夹并单击&#x200B;**[!UICONTROL 分配]**。
+3. 选择文件夹并单击 **[!UICONTROL 分配]**. 您可以通过单击文件夹名称来选择文件夹。
 
    ![将元数据表单分配给文件夹](assets/assign-to-folder.png)
 
    还可导航到文件夹详细信息页面，然后从可在右侧窗格中找到的文件夹属性中选择一个元数据表单以将该元数据表单分配给该文件夹。
 
    ![文件夹属性中的元数据表单](assets/metadata-from-folder-props.png)
+
+### 从文件夹中删除元数据表单 {#remove-metadata-form-folder}
+
+将元数据表单分配给一个或多个文件夹后，还可以使用Experience Manager Assets从所选文件夹中删除元数据表单。
+
+要从文件夹中删除元数据表单，请执行以下操作：
+
+1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 元数据表单]**，然后选择一个元数据表单。
+
+1. 单击 **[!UICONTROL 从文件夹删除]**. 元数据表单显示的已分配文件夹列表。
+
+1. 选择文件夹并单击 **[!UICONTROL 移除]**. 您还可以从列表中选择多个文件夹。
+
+您还可以导航到文件夹详细信息页面并选择 **[!UICONTROL 系统映射的元数据表单]** 从 **[!UICONTROL 元数据Forms]** 用于从文件夹中删除分配的元数据表单的字段。
 
 ## 后续步骤 {#next-steps}
 
