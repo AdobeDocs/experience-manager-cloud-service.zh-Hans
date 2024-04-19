@@ -2,10 +2,10 @@
 title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
-workflow-type: ht
-source-wordcount: '3669'
-ht-degree: 100%
+source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+workflow-type: tm+mt
+source-wordcount: '3788'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。未来还将支持 RDE。
 
-[按照教程进行操作，](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)快速建立有关此功能的具体专业知识。
+[按照教程进行操作，](#tutorial)快速建立有关此功能的具体专业知识。
 
 >[!NOTE]
 >对在 CDN 上配置流量的其他选项感兴趣（包括修改请求/响应、声明重定向以及代理到非 AEM 来源）？[通过加入早期采用者计划了解如何操作并进行尝试](/help/implementing/dispatcher/cdn-configuring-traffic.md)。
@@ -415,6 +415,8 @@ data:
 
 根据每个 CDN POP 计算得出速率限制。例如，假设蒙特利尔、迈阿密和都柏林的 POP 的流量速率分别为每秒 80、90 和 120 个请求，并将速率限制规则设置为以 100 为限。在该情况下，仅对通往都柏林的流量进行速率限制。
 
+根据到达边缘的流量、到达边缘的流量或错误数评估速率限制。
+
 ### rateLimit 结构 {#ratelimit-structure}
 
 | **属性** | **类型** | **默认** | **含义** |
@@ -422,6 +424,7 @@ data:
 | limit | 10 和 10000 之间的整数 | 必填 | 为其触发规则的请求速率（每个 CDN POP），以每秒请求数为单位。 |
 | window | 整数枚举：1、10 或 60 | 10 | 计算请求速率的采样时段（以秒为单位）。计数器的准确性取决于时段的大小（时段越大越准确）。例如，1 秒时段的准确性预计为 50%，而 60 秒时段的准确性预计为 90%。 |
 | penalty | 60 和 3600 之间的整数 | 300（5 分钟） | 匹配请求被阻止的时段（以秒为单位）（四舍五入到最接近的分钟） |
+| 计数 | 全部，获取，错误 | 全部 | 根据边缘流量（全部）、源流量（获取）或错误数进行评估。 |
 | groupBy | array[Getter] | 无 | 速率限制器计数器将由一组请求属性（例如 clientIp）聚合。 |
 
 
@@ -447,6 +450,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -468,7 +472,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## 流量筛选规则警报 {#traffic-filter-rules-alerts}
@@ -615,7 +619,7 @@ Adobe 提供一种机制，它将仪表板工具下载到您的计算机上以�
 
 可直接从 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Github 存储库克隆仪表板工具。
 
-[请查看教程](#tutorial)以切实地了解如何使用仪表板工具。
+[Tutorials](#tutorial) 中提供了有关如何使用仪表板工具的具体说明。
 
 ## 推荐的入门规则 {#recommended-starter-rules}
 
@@ -702,7 +706,11 @@ data:
 
 ## 教程 {#tutorial}
 
-[查阅一个教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)以获得有关流量过滤规则的实用知识和经验。
+提供了两个教程。
+
+### 使用流量过滤器规则（包括WAF规则）保护网站
+
+[完成教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) 获得有关流量过滤器规则（包括WAF规则）的一般实用知识和经验。
 
 本教程带领您完成以下操作：
 
@@ -711,3 +719,16 @@ data:
 * 声明流量过滤规则，包括 WAF 规则
 * 用仪表板工具分析结果
 * 最佳实践
+
+### 使用流量过滤规则阻止DoS和DDoS攻击
+
+[深入了解如何阻止](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) 拒绝服务(DoS)和分布式拒绝服务(DDoS)攻击使用速率限制流量过滤规则和其他策略。
+
+本教程带领您完成以下操作：
+
+* 了解保护
+* 在超过速率限制时接收警报
+* 使用功能板工具分析流量模式以配置速率限制流量过滤器规则的阈值
+
+
+
