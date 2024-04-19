@@ -1,7 +1,8 @@
 ---
 title: 在Experience Manager Assets中查看和管理节目
 description: 了解AEM Assets和Dynamic Media如何通过静态和动态图像演绎版简化有效的图像管理。
-source-git-commit: 5c1e2d5388b94243f668f07b1f338f035f00de85
+exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
+source-git-commit: 4627eb00ba910d1ad2920db15a87761bd7e4a0c0
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -13,7 +14,8 @@ ht-degree: 0%
 Adobe Experience Manager (AEM)中的演绎版是数字资源（如图像）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 AEM有助于轻松地创建和管理这些演绎版，从而增强用户体验。 您可以创建缩略图、针对Web或移动设备优化图像、添加水印、查看和下载动态呈现版本或智能裁剪呈现版本，以及执行更多其他操作。
 
 Dynamic Media图像预设和智能裁切演绎版可促进符合品牌标准的系统化图像管理，从而最大限度地提升品牌凝聚力。 这简化了在无需任何管理员访问权限的情况下根据需要快速定位和使用动态图像演绎版的过程。
-<br>演绎版分为静态和动态两种类型，每种类型都具有独特的特性和功能，我们将进一步详细讨论这些特性和功能。
+
+演绎版分为静态和动态两种类型，每种类型都具有独特的特性和功能，我们将进一步详细讨论这些特性和功能。
 
 ## 静态演绎版 {#static-renditions}
 
