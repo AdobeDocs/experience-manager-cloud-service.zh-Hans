@@ -3,9 +3,9 @@ title: 在 Adobe Developer Console 中弃用 JWT 凭据
 description: 了解在 Adobe Developer Console 中弃用 JWT 凭据对 AEM 产生的影响
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 source-git-commit: b8749f7b907e098d23c1cda57930b835f03e3580
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '576'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

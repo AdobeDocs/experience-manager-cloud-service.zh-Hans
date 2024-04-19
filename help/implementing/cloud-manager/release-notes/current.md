@@ -4,9 +4,9 @@ description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.4.0 的发�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: f1d8778f3cfb6868740141d008fd0217839e9103
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '706'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ AEM as a Cloud Service 中的 Cloud Manager 2024.4.0 版本的发布日期是 20
 
 ## 新增功能 {#what-is-new}
 
-* 删除操作已改进 [Edge交付](/help/edge/overview.md) 通过更新与该网站相关的程序中的域映射来访问网站。
-   * 如果没有其他站点被映射，则该映射将被删除。
-* 通过在AEM实例的关键启动阶段提供实时状态更新，增强了部署跟踪。
-   * 此功能确保您能够完全了解部署进度，从而能够更好地制定决策并提高运营效率。
-* 此 [网络基础架构](/help/security/configuring-advanced-networking.md) 增强了列表功能，可显示所有连接的环境，而无需基于区域的过滤，以提供更全面的视图。
-* 增强了代码构建问题的错误消息，能够更轻松地识别根本原因以及后续可操作的步骤。
+* 通过更新与 [Edge Delivery](/help/edge/overview.md) 网站相关的程序中的域映射，改进了对该网站的删除操作。
+   * 如果不再映射站点，则会删除映射。
+* 通过在 AEM 实例的关键启动阶段提供实时状态更新，增强了部署跟踪功能。
+   * 此功能可以确保您完全了解部署进度，从而做出更好的决策并提高运营效率。
+* [网络基础设施](/help/security/configuring-advanced-networking.md)列表经过增强，可以显示所有连接的环境，而无需基于区域而进行筛选，从而提供更全面的视图。
+* 增强的代码构建问题错误消息可以更轻松地识别根本原因和下一步可操作的步骤。
 
 ## 早期采用计划 {#early-adoption}
 
@@ -73,4 +73,4 @@ AEM as a Cloud Service 中的 Cloud Manager 2024.4.0 版本的发布日期是 20
 
 ## 错误修复 {#bug-fixes}
 
-* 解决了Cloud Manager重用具有错误承诺哈希的工件的错误。
+* 解决了 Cloud Manager 重复使用具有错误提交哈希的工件的错误。

@@ -1,21 +1,21 @@
 ---
-title: 将Edge Delivery Services与AEM结合使用
+title: 结合使用 Edge Delivery Services 与 AEM
 description: 了解如何将 AEM as a Cloud Service 与 Edge Delivery Services 结合使用。
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 source-git-commit: e98ddd8169ffbd407fdd4ff713bda57f693abaf9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
-# 将Edge Delivery Services与AEM结合使用 {#using-edge}
+# 结合使用 Edge Delivery Services 与 AEM {#using-edge}
 
-Edge Delivery Services与内容源分离，可以从不同的内容源摄取内容。 这意味着，无论您选择什么源，都可以通过无缝和简化的发布方式在同一个网站上使用多个内容源。
+Edge Delivery Services 与内容源分离，并可从不同的内容源摄取内容。这意味着，您可以在同一网站上使用多个内容源，无论您选择的源如何，都可以轻松进行无缝发布。
 
-借助Edge Delivery Services，您可以创建快速开发环境，在其中作者可以快速更新和发布内容，并且可以快速启动新站点。 从编辑到在Internet上实时查看内容，只需要几秒钟即可完成。
+利用 Edge Delivery Services，您可以创建快速开发环境，作者可在其中快速地更新和发布内容，并快速地推出新网站。从在 Internet 上实时编辑内容到查看内容只需几秒钟。
 
 ![Edge Delivery 的内容源](assets/content-sources.png)
 
@@ -23,13 +23,13 @@ Edge Delivery Services与内容源分离，可以从不同的内容源摄取内�
 
 某些情况下预定义了内容源或其存在其他方式的不灵活（例如，项目无法使用 Sharepoint 或 Google Drive）。但在很多情况下并不预定义工具，并且工具的选择也不是非黑即白。
 
-Adobe 的指导原则是简洁。从基于文档的创作开始，根据需要增加复杂性。 如果需要更改工具，AEM 的 Edge Delivery Services 集成涵盖内容迁移。
+Adobe 的指导原则是简洁。首先基于文档进行创作，当需要时再增加复杂性。如果需要更改工具，AEM 的 Edge Delivery Services 集成涵盖内容迁移。
 
 ![内容源灵活性](assets/content-source-flexiblity.png)
 
 ## 创作 {#authoring-edge}
 
-Edge Delivery Services 让创作变得简单、快速且灵活。您可以选择使用基于文档的创作进行创作，或使用通用编辑器进行基于AEM的创作。
+Edge Delivery Services 让创作变得简单、快速且灵活。您可以选择使用基于文档的创作进行创作，也可以选择使用 Universal Editor 进行基于 AEM 的创作。
 
 有关更多信息，请参阅文档[为 Edge Delivery Services 创作内容](/help/edge/aem-authoring/authoring.md)。
 
