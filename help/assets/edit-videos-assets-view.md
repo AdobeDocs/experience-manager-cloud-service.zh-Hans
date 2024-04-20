@@ -2,18 +2,19 @@
 title: 编辑视频
 description: 使用编辑视频 [!DNL Adobe Express] 功能选项，并将更新的视频另存为版本。
 role: User
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 19%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
 # 在中编辑视频 [!DNL Assets Essentials] {#edit-videos}
 
-使用嵌入式技术，可以轻松地将视频转换为完美大小 [!DNL Adobe Express] 快速操作。 中的快速操作 [!DNL Assets Essentials] 提供者 [!DNL Adobe Express] 提供用户友好的视频编辑选项，包括裁切视频、调整视频大小、修剪视频以及将视频转换为GIF。
+对于嵌入了视频内容的Assets用户，可轻松创建这些变体 [!DNL Adobe Express] 视频的快速操作。 中的快速操作 [!DNL Assets Essentials] 提供者 [!DNL Adobe Express] 提供用户友好的视频编辑选项，包括裁切视频、调整视频大小、修剪视频以及将视频转换为GIF。
 
-编辑视频后，您可以将新视频另存为新版本。 版本控制可帮助您以后在需要时还原为原始资源。要编辑视频，请转到视频详细信息，然后单击 **[!UICONTROL 编辑视频]**. 或者，选择资产并单击详细信息，然后单击 ![剪刀](assets/do-not-localize/cut.svg) 图标在右侧窗格中可用。
+要编辑视频，请转到视频详细信息，然后单击 [!UICONTROL 编辑视频]. 或者，选择资产并单击详细信息，然后单击 ![剪刀](assets/do-not-localize/cut.svg) 图标在右侧窗格中可用。 编辑视频后，您可以将新视频另存为新版本或新资源。
 
 ## 先决条件 {#prerequisites}
 
@@ -38,7 +39,7 @@ ht-degree: 19%
 
 ### 调整视频大小 {#resize-video-using-express}
 
-将视频大小调整为特定大小是一种常用的用例。 [!DNL Assets Essentials] 通过提供针对特定大小预先计算的新分辨率，可让您快速调整视频大小以适合常用维度。 要使用调整视频大小，请执行以下操作 [!DNL Assets Essentials]，请按照以下步骤操作：
+DAM中的最终视频内容通常需要调整大小才能分发到特定渠道。 [!DNL Assets Essentials] 可让您轻松调整视频大小以适合常用社交渠道所需的维度，也可以根据自定义分辨率调整大小。 要使用调整视频大小，请执行以下操作 [!DNL Assets Essentials]，执行以下步骤：
 
 1. 选择视频并单击 **[!UICONTROL 编辑]**.
 2. 单击 **[!UICONTROL 调整视频大小]** 从左侧窗格中可用的快速操作删除。
@@ -52,7 +53,7 @@ ht-degree: 19%
 
 ### 修剪视频 {#trim-video-using-express}
 
-中的快速视频修剪器 [!DNL Assets Essentials] 提供者 [!DNL Adobe Express] 让您能够轻松修剪视频。 执行以下步骤：
+如果需要使用较大视频的剪辑，可以使用 **[!UICONTROL 修剪视频]** 用于选择和修剪视频的某个部分的函数。 执行以下步骤：
 
 1. 选择视频并单击 **[!UICONTROL 编辑]**.
 2. 单击 **[!UICONTROL 修剪视频]** 从左侧窗格中可用的快速操作删除。
@@ -80,13 +81,13 @@ ht-degree: 19%
 
 ## 限制 {#limitations-video-adobe-express}
 
-* 仅支持MP4视频类型。
+* 仅支持MP4格式的视频进行编辑。
 
-* 支持的最大文件大小：200 MB
+* 支持的最大源文件大小为200 MB。
 
-* 视频的最小尺寸和最大尺寸分别为46像素和3840像素。
+* 支持的视频在任何一侧都大于46像素且小于3840像素。
 
-* 支持的Web浏览器为Google Chrome、Firefox、Safari和Edge。
+* 支持的Web浏览器包括Google Chrome、Firefox、Safari和Edge。
 
 * 无法在Web浏览器的无痕模式下打开该功能。
 
