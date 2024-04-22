@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
 source-wordcount: '2876'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -69,8 +69,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
->title="摄取持续时间估计"
->abstract="可以显示特定摄取的大致持续时间，以便提供大致了解需要多长时间。 其准确性确实存在限制。"
+>title="摄入持续时间估计"
+>abstract="可以显示特定摄入的大致持续时间，以提供关于需要多长时间的一般概念。其准确性确实存在局限性。"
 
 ![图像](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
