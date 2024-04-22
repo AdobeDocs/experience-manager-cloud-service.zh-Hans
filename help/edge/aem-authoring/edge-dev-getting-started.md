@@ -3,10 +3,10 @@ title: 使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入�
 description: 本指南将帮助您让一个使用 Edge Delivery Services 和 Universal Editor 创作内容的新 Adobe Experience Manager 网站投入正常运转。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 8bdca5357666841c4471170ab3b97476b6be63b6
+source-git-commit: fc5ffe334873b7b98565f38d5664313b26d5f635
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -130,7 +130,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 >
 >要使用 Universal Editor 编辑您的站点，您必须使用基于 Chromium 的浏览器。
 
-1. 从GitHub下载最新的通过Edge Delivery Services进行AEM创作站点模板，网址为 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. 在 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) 从 GitHub 下载最新的“使用 Edge Delivery Services 进行 AEM 创作”站点模板。
 
 1. 登录到您的 AEM as a Cloud Service 创作实例，导航到“站点”控制台，然后点击或单击&#x200B;**创建** -> **从模板创建站点**。
 
@@ -140,9 +140,9 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
    ![导入模板](assets/edge-dev-getting-started/site-templates.png)
 
-1. 上传您从GitHub下载的“使用Edge Delivery Services进行AEM创作”站点模板。
+1. 上传您从 GitHub 下载的“使用 Edge Delivery Services 进行 AEM 创作”站点模板。
 
-   * 模板只能上传一次。 上传后，可重复使用它来创建其他站点。
+   * 该模板只能上传一次。上传后，即可重复使用，以创建其他站点。
 
 1. 导入该模板后，它即出现在向导中。点击或单击以选择它，然后点击或单击&#x200B;**下一步**。
 
@@ -184,7 +184,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 1. 在同一浏览器中打开新标签页，然后导航到您新站点的 URL。
 
-   * `https://main--<site-name>--<owner>.hlx.page`
+   * `https://main--<repository-name>--<owner>.hlx.page`
 
 1. 查看您发布的内容。
 
@@ -198,5 +198,5 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 >[!TIP]
 >
->有关创建新 Edge Delivery Services 项目（该项目已启用 AEM 创作功能并以 AEM as a Cloud Service 作为内容源）的端到端演练，请观看 [此 AEM GEMs 网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有关创建新 Edge Delivery Services 项目（该项目已启用 AEM 创作功能并以 AEM as a Cloud Service 作为内容源）的端到端演练，请观看 [此 AEM GEMs 网络研讨会。](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
