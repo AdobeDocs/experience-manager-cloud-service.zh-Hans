@@ -1,8 +1,8 @@
 ---
 source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 # 代码片段 {#snippets}
@@ -37,7 +37,7 @@ ht-degree: 99%
 * [将自适应表单数据发送到 AEM 工作流](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [使用 Forms Portal 在 AEM 网站上列出 AEM 自适应表单](/help/forms/configure-forms-portal.md)
 * [向自适应表单添加版本控制、评论和注释](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-* [比较自适应Forms](/help/forms/compare-forms.md)
+* [比较自适应表单](/help/forms/compare-forms.md)
 
 
 ## 自适应表单提交操作 {#af-submit-action}
