@@ -361,7 +361,7 @@ ht-degree: 99%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [关于删除的注意事项](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析结构](/help/sites-cloud/administering/content-fragments/analysis.md)
-         + [内容片段控制台中的资产](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+         + [内容片段控制台内的资源](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [键盘快捷键](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + 站点创建 {#site-creation}
          + [创建新站点](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -899,8 +899,8 @@ ht-degree: 99%
       + [更新内容片段以进行优化的 GraphQL 筛选](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [示例 GraphQL 查询](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 查询疑难解答](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [内容片段和模型OpenAPI](/help/headless/content-fragment-openapis.md)
-   + [Assets HTTP API中的内容片段支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+   + [内容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
+   + [Assets HTTP API 中的内容片段支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
    + 安全性 {#security}
       + [权限](/help/headless/security/permissions.md)
       + [身份验证](/help/headless/security/authentication.md)
