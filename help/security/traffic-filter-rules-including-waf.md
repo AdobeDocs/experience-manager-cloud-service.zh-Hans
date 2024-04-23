@@ -2,10 +2,10 @@
 title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
 workflow-type: tm+mt
-source-wordcount: '3788'
-ht-degree: 96%
+source-wordcount: '3817'
+ht-degree: 94%
 
 ---
 
@@ -142,7 +142,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -251,6 +254,7 @@ when:
 | SQLI | SQL 注入 | SQL 注入是指尝试通过执行任意数据库查询来获取应用程序的访问权限或特权信息。 |
 | BACKDOOR | 后门 | 后门信号是指尝试确定系统上是否存在公共后门文件的请求。 |
 | CMDEXE | 命令执行 | 命令执行是指尝试通过用户输入的任意系统命令来获得控制权限或损坏目标系统。 |
+| CMDEXE-NO-BIN | 命令执行，但不在 `/bin/` | 提供与相同级别的保护 `CMDEXE` 禁用误报时 `/bin` 由于AEM架构。 |
 | XSS | 跨站点脚本 | 跨站点脚本是指尝试通过恶意 JavaScript 代码来劫持用户帐户或 Web 浏览会话。 |
 | TRAVERSAL | 目录遍历 | 目录遍历是指尝试在整个系统中导航特权文件夹以获取敏感信息。 |
 | USERAGENT | 攻击工具 | 攻击工具是指使用自动化软件来找出安全漏洞或尝试利用已发现的漏洞。 |
@@ -330,7 +334,7 @@ data:
 
 **示例 3**
 
-此规则阻止包含查询参数 `foo` 的请求，但允许来自 IP 192.168.1.1 的每个请求：
+此规则阻止发布时包含查询参数的请求 `foo`，但允许来自IP 192.168.1.1的每个请求：
 
 ```
 kind: "CDN"
@@ -341,7 +345,10 @@ data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
-        when: { queryParam: url-param, equals: foo }
+        when:
+          allOf:
+            - { queryParam: url-param, equals: foo }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "allow-all-requests-from-ip"
@@ -352,7 +359,7 @@ data:
 
 **示例 4**
 
-此规则阻止对路径 `/block-me` 的请求，并阻止每个匹配 `SQLI` 或 `XSS` 模式的请求：此示例包括 WAF 流量过滤规则，它引用 `SQLI` 和 `XSS`[WAF 标志](#waf-flags-list)，因此需要一个单独的许可证。
+此规则阻止对路径的请求 `/block-me` 发布时，并阻止与 `SQLI` 或 `XSS` 模式。 此示例包括 WAF 流量过滤规则，它引用 `SQLI` 和 `XSS`[WAF 标志](#waf-flags-list)，因此需要一个单独的许可证。
 
 ```
 kind: "CDN"
@@ -363,7 +370,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -415,7 +425,7 @@ data:
 
 根据每个 CDN POP 计算得出速率限制。例如，假设蒙特利尔、迈阿密和都柏林的 POP 的流量速率分别为每秒 80、90 和 120 个请求，并将速率限制规则设置为以 100 为限。在该情况下，仅对通往都柏林的流量进行速率限制。
 
-根据到达边缘的流量、到达边缘的流量或错误数评估速率限制。
+根据到达边缘的流量、到达原点的流量或错误数评估速率限制。
 
 ### rateLimit 结构 {#ratelimit-structure}
 
@@ -424,7 +434,7 @@ data:
 | limit | 10 和 10000 之间的整数 | 必填 | 为其触发规则的请求速率（每个 CDN POP），以每秒请求数为单位。 |
 | window | 整数枚举：1、10 或 60 | 10 | 计算请求速率的采样时段（以秒为单位）。计数器的准确性取决于时段的大小（时段越大越准确）。例如，1 秒时段的准确性预计为 50%，而 60 秒时段的准确性预计为 90%。 |
 | penalty | 60 和 3600 之间的整数 | 300（5 分钟） | 匹配请求被阻止的时段（以秒为单位）（四舍五入到最接近的分钟） |
-| 计数 | 全部，获取，错误 | 全部 | 根据边缘流量（全部）、源流量（获取）或错误数进行评估。 |
+| 计数 | 全部，提取，错误 | 全部 | 根据边缘流量（全部）、源流量（获取）或错误数（错误）进行评估。 |
 | groupBy | array[Getter] | 无 | 速率限制器计数器将由一组请求属性（例如 clientIp）聚合。 |
 
 
@@ -458,7 +468,7 @@ data:
 
 **示例 2**
 
-当过去 60 秒内平均超过 100 个请求/秒（每个 CDN POP）时，阻止路径 /ritic/resource 上的请求 60 秒：
+当路径/critical/resource上的请求超过10秒时间窗口内每秒（每个CDN POP）对源位置的平均100个请求时，阻止该请求60秒：
 
 ```
 kind: "CDN"
@@ -469,10 +479,13 @@ data:
   trafficFilters:
     rules:
       - name: rate-limit-example
-        when: { reqProperty: path, equals: /critical/resource }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /critical/resource }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
+        rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
 ## 流量筛选规则警报 {#traffic-filter-rules-alerts}
@@ -497,7 +510,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
           experimental_alert: true
@@ -633,14 +649,28 @@ metadata:
 data:
   trafficFilters:
     rules:
-    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
-    - name: limit-requests-client-ip
+    #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+    - name: limit-origin-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        reqProperty: tier
+        equals: 'publish'
       rateLimit:
         limit: 100
-        window: 1
+        window: 10
+        count: fetches
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: log
+    #  Block client for 5m when it exceeds an average of 500 req/sec on a time window of 10sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: tier
+        equals: 'publish'
+      rateLimit:
+        limit: 500
+        window: 10
+        count: all
         penalty: 300
         groupBy:
           - reqProperty: clientIp
@@ -649,7 +679,7 @@ data:
     - name: block-ofac-countries
       when:
         allOf:
-          - { reqProperty: tier, equals: publish }
+          - { reqProperty: tier, in: ["author", "publish"] }
           - reqProperty: clientCountry
             in:
               - SY
@@ -669,39 +699,23 @@ data:
     - name: block-waf-flags-globally
       when:
         reqProperty: tier
-        matches: "author|publish"
+        in: ["author", "publish"]
       action:
         type: log
         wafFlags:
+          - TRAVERSAL
+          - CMDEXE-NO-BIN
+          - XSS
+          - LOG4J-JNDI
+          - BACKDOOR
+          - USERAGENT
+          - SQLI
           - SANS
           - TORNODE
           - NOUA
           - SCANNER
-          - USERAGENT
           - PRIVATEFILE
-          - ABNORMALPATH
-          - TRAVERSAL
           - NULLBYTE
-          - BACKDOOR
-          - LOG4J-JNDI
-          - SQLI
-          - XSS
-          - CODEINJECTION
-          - CMDEXE
-          - NO-CONTENT-TYPE
-          - UTF8
-    # Disable protection against CMDEXE on /bin (only works if WAF is licensed enabled for your environment)
-    - name: allow-cdmexe-on-root-bin
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            matches: "^/bin/.*"
-      action:
-        type: allow
-        wafFlags:
-          - CMDEXE
 ```
 
 ## 教程 {#tutorial}
