@@ -2,9 +2,9 @@
 title: CIF 创作快速入门
 description: CIF创作快速入门。
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6f27c968c347e6b2be8c9bfcf9bb69e531d10ff9
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
@@ -15,21 +15,21 @@ ht-degree: 2%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在此AEM Content and Commerce历程的上一个文档中， [了解AEM Content and Commerce](/help/commerce-cloud/introduction.md)您已了解Headless CMS和AEM Content and Commerce的基本理论和概念。
+在此AEM Content和Commerce历程的上一个文档中， [了解AEM Content和Commerce](/help/commerce-cloud/introduction.md)您已了解Headless CMS和AEM Content以及Commerce的基本理论和概念。
 
 本文基于这些基础之上。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何使用CIF for Content and Commerce特定创作。 阅读本文档后，您应：
+本文档可帮助您了解如何使用CIF进行内容创作以及特定于Commerce的创作。 阅读本文档后，您应：
 
-* 了解使用通用编辑器创作CIF的概念
+* 了解使用AEM中的页面编辑器进行CIF创作的概念
 * 如何使用产品和类别选取器访问AEM中的产品目录数据
 * 如何使用产品驾驶舱和AEM Omnisearch访问内容和商业数据
 
-## 在通用编辑器中创作CIF {#cif-authoring}
+## AEM页面编辑器中的CIF创作 {#cif-authoring}
 
-CIF扩展了通用编辑器，使其能够在不离开上下文的情况下访问实时产品数据：
+CIF扩展了AEM中的页面编辑器，使其能够在不离开上下文的情况下访问实时产品数据：
 
 打开侧面板，然后从下拉列表中选择“产品”。
 ![选择产品类型](assets/asset-finder-overview.png)
@@ -95,7 +95,7 @@ Omnisearch在商务后端运行全文搜索以查找所有相关产品。 结果
 
 现在您已完成此历程的这一部分，您应：
 
-* 了解使用通用编辑器创作CIF的概念
+* 了解使用页面编辑器进行CIF创作的概念
 * 如何使用产品和类别选取器访问AEM中的产品目录
 * 如何使用产品驾驶舱和AEM Omnisearch访问内容和商业数据
 

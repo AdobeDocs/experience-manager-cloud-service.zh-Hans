@@ -2,10 +2,10 @@
 title: 创作Commerce体验
 description: 了解如何通过在不离开上下文的情况下访问产品数据和内容来高效地创作和构建商业相关体验。
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
@@ -51,9 +51,9 @@ CIF加载项通过特定于commerce的功能扩展了AEM创作。 这允许作�
 
 ![带选择的轮播组件](../assets/authoring/carousel_component_with_selection.png)
 
-## Universal Editor {#universal-editor}
+## 页面编辑器 {#page-editor}
 
-扩展了通用编辑器，使之能够访问实时产品数据及相关产品内容。
+AEM中的页面编辑器进行了扩展，现在可以访问实时产品数据和相关的产品内容。
 
 ### 访问产品数据 {#access-product-data}
 
@@ -65,7 +65,7 @@ CIF加载项通过特定于commerce的功能扩展了AEM创作。 这允许作�
 
 ### 使用RTE在文本字段中添加链接 {#rte}
 
-CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌入常规AEM页面那样嵌入超链接。 CIF在RTE（富文本编辑器）中添加了新操作“Commerce链接”。 此操作的工作方式与常规的“超链接”操作完全相同，但允许作者使用选取器选择产品或类别。
+CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌入常规AEM页面那样嵌入超链接。 CIF向RTE（富文本编辑器）添加了新操作“Commerce链接”。 此操作的工作方式与常规的“超链接”操作完全相同，但允许作者使用选取器选择产品或类别。
 
 ![RTE](../assets/authoring/RTE.png)
 
@@ -77,7 +77,7 @@ CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌�
 
 ### 访问关联的产品内容 {#associated-content}
 
-如果通用编辑器识别页面上的1：n产品，则侧面板将自动显示“关联的商务内容”选项卡。 利用此选项卡，作者可以快速访问使用产品标记的AEM内容(请参阅 [用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md) 了解更多信息)。 此选项卡提供下拉列表，用于在页面上筛选内容类型和特定产品（如果页面上有多个产品）。 使用内容的工作方式与使用“资源”选项卡中的内容的工作方式完全相同。
+如果编辑器识别页面上的1：n产品，则侧面板将自动显示“关联的Commerce内容”选项卡。 利用此选项卡，作者可以快速访问使用产品标记的AEM内容(请参阅 [用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md) 了解更多信息)。 此选项卡提供下拉列表，用于在页面上筛选内容类型和特定产品（如果页面上有多个产品）。 使用内容的工作方式与使用“资源”选项卡中的内容的工作方式完全相同。
 
 ![产品数据侧面板](../assets/authoring/associated-commerce-content-tab.png)
 
@@ -95,7 +95,7 @@ CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌�
 
 使用Omnisearch是一种让从业人员通过全文搜索查找AEM内容和产品目录数据的简单方法。 Omnisearch将在AEM和commerce后端中运行全文搜索，以在commerce后端和AEM内容中查找产品目录对象。 AEM结果还包括使用产品/类别数据标记的内容。
 
-![全能搜索](../assets/authoring/omnisearch.png)
+![Omnisearch](../assets/authoring/omnisearch.png)
 
 结果按类型分组。
 
