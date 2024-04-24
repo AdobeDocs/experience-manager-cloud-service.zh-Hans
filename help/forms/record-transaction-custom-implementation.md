@@ -2,16 +2,20 @@
 title: 记录自定义实施的交易
 description: 使用TransactionRecorder API自动记录未作为事务入帐的操作
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-source-git-commit: a1a87a27d73d7472ec02de37621123bbdd3876b4
+exl-id: cb584f78-30af-4a58-be99-843352e8249c
+source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 1%
+source-wordcount: '193'
+ht-degree: 16%
 
 ---
 
 # 记录自定义实施的交易 {#record-a-transaction-for-custom-implementations}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/transaction-reports/transaction-reports-osgi/record-transaction-custom-implementation) |
+| AEM as a Cloud Service | 本文 |
 
 使用TransactionRecorder API自动记录未作为事务入帐的操作。
 
@@ -87,5 +91,4 @@ $.ajax({
 
 ## 相关文章 {#related-articles}
 
-* [交易报告可记帐API](/help/forms/transaction-reports-billable-apis.md)
-
+* [交易报告计费 API](/help/forms/transaction-reports-billable-apis.md)
