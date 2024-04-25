@@ -3,9 +3,9 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说
 description: ' [!DNL Workfront for Experience Manager enhanced connector] 的发行说明'
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1660'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 98%
 
 以下部分概述了 [!DNL Workfront for Experience Manager enhanced connector] 的常规发行说明。
 
-最新版本1.9.19的发布日期 [!DNL Workfront for Experience Manager enhanced connector] 是2024年4月12日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.19 的发布日期是 2024 年 4 月 12 日。
 
 ## 版本亮点 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
 
-* 无法关闭HTTP客户端会导致内存不足问题。
+* 无法关闭 HTTP 客户端导致内存不足问题。
 
 >[!NOTE]
 >
