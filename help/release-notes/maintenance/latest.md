@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
+source-git-commit: 61a3d334e7187dcbf047d1b464d918ddf2cf9444
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 71%
+source-wordcount: '268'
+ht-degree: 79%
 
 ---
 
@@ -15,22 +15,22 @@ ht-degree: 71%
 
 ## 版本 15977 {#release-15977}
 
-以下总结了维护版本15977的不断改进，该版本于2024年4月19日公开发布。 上一个维护版本是版本 15939。
+下面总结了维护版本 15977 的持续改进，该版本已于 2024 年 4 月 19 日公开发布。上一个维护版本是版本 15939。
 
 2024.4.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
 
 ### 增强 {#enhancements-15977}
 
-* GRANITE-51335：优化AEM运行状况检查以提高实例稳定性。
+* GRANITE-51335：优化 AEM 运行状况检查以提高实例稳定性。
 
 ### 修复的问题 {#fixed-issues-15977}
 
-* CQ-4357226：修复了支持OAuth凭据的IMS配置中的回归。
-* GRANITE-51335： Ratelimit升级到5.0.4已修复Felix运行状况检查注册。
+* CQ-4357226：修复 IMS 配置对 OAuth 凭证的支持回归问题。
+* GRANITE-51335：速率限制升级至 5.0.4 修复了 Felix 运行状况检查注册。
 
 ### 已知问题 {#known-issues-15977}
 
-无。
+* **(仅适用于AEM Forms)** 安装AEM Cloud Foundation维护版本15977后，在表单创作期间和对于已发布的表单，自适应表单字段的呈现顺序不正确。 如果您使用AEM Forms，为避免任何不便，建议在即将发布的维护版本中解决该问题之前不要升级到此版本。
 
 ### 已弃用的功能和 API {#deprecated-15977}
 
