@@ -1,27 +1,27 @@
 ---
 title: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持
-description: 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持
+description: Adobe Experience Manager as a Cloud Service支持相同的网站Cookie。
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '283'
-ht-degree: 100%
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 74%
 
 ---
 
 # 面向 Adobe Experience Manager as a Cloud Service 的相同网站 Cookie 支持 {#same-site-cookie-support-for-adobe-experience-manager-as-a-cloud-service}
 
-从 80 版开始，Chrome 和后来的 Safari 都引入了一种新的 Cookie 安全模型。此模式旨在通过名为 `SameSite` 的设置向第三方站点引入有关 Cookie 可用性的安全控制措施。有关更多详细信息，请参阅[本文](https://web.dev/samesite-cookies-explained/)。
+从 80 版开始，Chrome 和后来的 Safari 都引入了一种新的 Cookie 安全模型。此模式旨在通过名为 `SameSite` 的设置向第三方站点引入有关 Cookie 可用性的安全控制措施。有关更多详细信息，请参阅[本文](https://web.dev/articles/samesite-cookies-explained)。
 
 此设置的默认值 (`SameSite=Lax`) 可能会导致 AEM 实例或服务之间的身份验证不起作用。这是因为这些服务的域或 URL 结构可能不受此 Cookie 策略的约束。
 
-若要解决此问题，您需要将登录令牌的 SameSite Cookie 属性设置为 `None`。
+要解决此问题，请将SameSite Cookie属性设置为 `None` 用于登录令牌。
 
 >[!CAUTION]
 >
 >`SameSite=None` 设置仅在协议安全 (HTTPS) 时应用。
 >
->如果协议不安全 (HTTP)，则将忽略该设置，服务器将显示以下警告消息：
+>如果协议不安全(HTTP)，则会忽略该设置，服务器会显示以下警告消息：
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
@@ -36,4 +36,4 @@ ht-degree: 100%
 1. 执行[使用 AEM SDK 快速入门生成 OSGi 配置](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中概述的步骤，为此特定设置生成 JSON 格式配置
 1. 按照[用于设置属性的 Cloud Manager API 格式](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGi 文档中的步骤来应用设置。
 
-在更新此设置且用户注销并再次登录后，`login-token` Cookie 会具有 `None` 属性集，并且会包含在跨站点请求中。
+更新此设置且用户注销并再次登录后， `login-token` Cookie具有 `None` 属性集，并包含在跨站点请求中。

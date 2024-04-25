@@ -1,11 +1,11 @@
 ---
 title: 对 Adobe Experience Manager as a Cloud Service 的 IMS 支持
-description: 面向 Adobe Experience Manager as a Cloud Service 的图像管理系统支持
+description: 支持Adobe Experience Manager as a Cloud Service的映像管理系统。
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
-workflow-type: ht
-source-wordcount: '1917'
-ht-degree: 100%
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 92%
 
 ---
 
@@ -44,23 +44,23 @@ IMS 身份验证在 AEM 和 Adobe IMS 端点之间使用 OAuth 协议进行工�
 
 使用 Adobe IMS 进行 AEM 身份验证的前提条件是将客户载入 Adobe Admin Console。
 
-第一步，客户必须在 Adobe IMS 中设置组织。Adobe Enterprise 客户在 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 中表示为 IMS 组织。该区域是 Adob&#x200B;e 客户用来管理其用户和组的产品权限的门户。
+第一步，客户必须拥有在Adobe IMS中配置的组织。 Adobe Enterprise 客户在 [Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 中表示为 IMS 组织。该区域是 Adob&#x200B;e 客户用来管理其用户和组的产品权限的门户。
 
-AEM 客户应已设置组织，作为 IMS 设置的一部分，客户实例将在 Admin Console 中可用，以用于管理用户权利和访问权限。
+AEM客户应已设置组织，作为IMS设置的一部分，客户实例在Admin Console中可用，以用于管理用户权利和访问权限。
 
 客户作为 IMS 组织存在后，需要按照以下方式配置其系统：
 
 ![IMS 载入](/help/security/assets/ims2.png)
 
-1. 指定的系统管理员将会收到登录到 Cloud Manager 的邀请。登录 Cloud Manager 后，系统管理员可以选择配置 AEM 程序和环境，或导航到 Admin Console 以执行管理任务。
+1. 指定的系统管理员会收到登录到Cloud Manager的邀请。 登录Cloud Manager后，系统管理员可以选择配置AEM程序和环境，或导航到Admin Console以执行管理任务。
 1. 系统管理员声明一个域以确认相应域（例如 acme.com）的所有权
 1. 系统管理员设置用户目录
-1. 系统管理员在 Admin Console 中进行 IDP 配置以设置单点登录。
+1. 系统管理员在Admin Console中执行IDP配置以设置单点登录。
 1. AEM 管理员可以像往常一样管理本地组以及权限。
 
 [此处](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)介绍了 Adobe Identity Management 基础知识，包括 IDP 配置。
 
-[此处](https://helpx.adobe.com/cn/enterprise/admin-guide.html)介绍了企业管理和 Admin Console 用法。
+涵盖企业管理和Admin Console使用情况 [此处](https://helpx.adobe.com/cn/enterprise/admin-guide.html).
 
 ### 在 Admin Console 中载入用户 {#onboarding-users-in-admin-console}
 
@@ -158,7 +158,7 @@ AEM 可继续支持管理员用户在本地登录。可以通过登录屏幕本�
 
 <!-- the above image must be updated for skyline -->
 
-**基于 IMS 的登录**
+**基于IMS的登录**
 
 对于其他用户，在实例上配置 IMS 后即可使用基于 IMS 的登录。用户单击“使用 Adobe 登录”按钮，如下所示：
 
@@ -210,10 +210,10 @@ ACL 和权限仍会继续在 AEM 中管理。可以将从 IMS 同步的用户组
 
 要访问 Cloud Manager 或 AEM as a Cloud Service 上的环境，必须将您分配到 Cloud Manager 产品的配置文件。
 
-请参阅“角色定义”，了解有关用于控制 Cloud Manager 中特定功能可用性的用户角色的更多信息。
+如果要了解有关用于控制Cloud Manager中特定功能可用性的用户角色的更多信息，请参阅角色定义。
 
 >[!NOTE]
->Cloud Manager 预配置了一些具有适当权限的角色。要了解有关每个角色及与其关联的特定权限、预配置任务或权限的信息，请参阅[基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html)。
+>Cloud Manager 预配置了一些具有适当权限的角色。要了解有关每个角色及与其关联的特定权限、预配置任务或权限的信息，请参阅[基于角色的权限](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)。
 
 **添加用户的步骤**
 

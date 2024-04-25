@@ -1,11 +1,11 @@
 ---
 title: 对邮件服务的 OAuth2 支持
-description: Adobe Experience Manager as a Cloud Service 中对邮件服务的 Oauth2 支持
+description: Adobe Experience Manager as a Cloud.Service中对邮件服务的OAuth2支持。
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
-workflow-type: ht
-source-wordcount: '680'
-ht-degree: 100%
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
    >[!NOTE]
    >
-   >权限配置可能会逐渐演变。如果这些操作无法发挥预期的作用，请与 Microsoft 合作解决。
+   >权限配置可能会逐渐演变。使用Microsoft®如果这些功能无法按预期工作。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -111,7 +111,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
 >[!NOTE]
 >
-> 您可以从[此位置](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)获取 Postman API 收藏集。
+> 您可以从[此位置](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)获取 Postman API 收藏集。
 >
 > 请在[此处](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)查看 MSFT OAuth 文档，以获取更多详细信息。
 
@@ -140,14 +140,14 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 
    >[!NOTE]
    >
-   >范围可能会逐渐演变。如果这些操作无法发挥预期的作用，请与 Microsoft 合作解决。
+   >范围可能会逐渐演变。使用Microsoft®如果这些功能无法按预期工作。
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
    * `offline_access`
    * `email`
    * `profile`
-1. 用以下语法在 `/apps/<my-project>/osgiconfig/config` 下创建一个名为 `called com.day.cq.mailer.DefaultMailService.cfg.json` 的 OSGI 属性文件。`smtp.host` 和 `smtp.port` 值反映了高级网络配置，如[电子邮件服务教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)中所述。
+1. 用以下语法在 `/apps/<my-project>/osgiconfig/config` 下创建一个名为 `called com.day.cq.mailer.DefaultMailService.cfg.json` 的 OSGI 属性文件。`smtp.host` 和 `smtp.port` 值反映了高级网络配置，如[电子邮件服务教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service)中所述。
 
    ```
    {
