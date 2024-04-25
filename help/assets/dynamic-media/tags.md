@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3312aa270c05e506d12ed8a5c1360154bb02b350
 workflow-type: tm+mt
-source-wordcount: '6701'
+source-wordcount: '6700'
 ht-degree: 6%
 
 ---
@@ -694,7 +694,7 @@ Experience Manager配置包含以下两个主要步骤：
 
 1. 在新的浏览器选项卡中，导航至 [Adobe Developer控制台](https://developer.adobe.com/console/integrations).
 
-1. 从 **[!UICONTROL Adobe I/O控制台集成]** 页面，在右上角附近，选择 **[!UICONTROL 新集成]**.
+1. 从 **[!UICONTROL Adobe Developer控制台集成]** 页面，在右上角附近，选择 **[!UICONTROL 新集成]**.
 1. 在 **[!UICONTROL 创建新集成]** 对话框，请确保 **[!UICONTROL 访问API]** 单选按钮处于选中状态，然后选择 **[!UICONTROL 继续]**.
 
 ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
