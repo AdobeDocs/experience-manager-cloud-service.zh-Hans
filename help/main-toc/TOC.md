@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 575e0c661abc2f8b182b3ed35d5d914639dd7f3a
+source-git-commit: 81b4455bf922ec0f4eb46046b82193ff822b4695
 workflow-type: tm+mt
-source-wordcount: '4899'
+source-wordcount: '4902'
 ht-degree: 99%
 
 ---
@@ -1065,6 +1065,7 @@ ht-degree: 99%
       + Universal Editor {#universal-editor}
          + [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)
          + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
+         + [SecurBank示例应用程序](/help/implementing/universal-editor/securbank.md)
          + [开始使用 AEM 中的 Universal Editor](/help/implementing/universal-editor/getting-started.md)
          + [Universal Editor 开发人员概述](/help/implementing/universal-editor/developer-overview.md)
          + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
