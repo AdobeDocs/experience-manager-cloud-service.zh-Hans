@@ -2,18 +2,15 @@
 title: 配置CDN错误页面
 description: 了解如何覆盖默认错误页面，其中将静态文件托管在自托管存储(如Amazon S3或Azure Blob Storage)中，并在使用Cloud Manager配置管道部署的配置文件中引用它们。
 feature: Dispatcher
-source-git-commit: 11036c3e95f0444fc5d865232a7dccab5b7f26ae
+exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
+source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 1%
 
 ---
 
-
 # 配置CDN错误页面 {#cdn-error-pages}
-
->[!NOTE]
->此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至 `aemcs-cdn-config-adopter@adobe.com` 并描述您的用例。
 
 万一发生意外 [Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 无法访问AEM源服务器，默认情况下，CDN会提供一个无品牌标志的通用错误页面，该页面指示无法访问服务器。 您可以覆盖默认错误页面，方法是：将静态文件托管在自托管存储中(如Amazon S3或Azure Blob Storage)，并在使用部署的配置文件中引用它们 [Cloud Manager配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 

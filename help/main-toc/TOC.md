@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 128ca1a00124fa4cb5d008a41a9d0b5a9a5e075e
+source-git-commit: 575e0c661abc2f8b182b3ed35d5d914639dd7f3a
 workflow-type: tm+mt
-source-wordcount: '4894'
+source-wordcount: '4899'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 99%
    + AEMaaCS 功能发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [2024.3.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
          + [2024.1.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
          + [2023.12.0 的发行说明](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
@@ -562,7 +563,7 @@ ht-degree: 99%
       + [资源管理任务](/help/assets/manage-organize-assets-view.md)
       + [编辑图像](/help/assets/edit-images-assets-view.md)
       + [编辑视频](/help/assets/edit-videos-assets-view.md)
-      + [查看和管理节目](/help/assets/renditions.md)
+      + [查看和管理演绎版](/help/assets/renditions.md)
       + [管理资源元数据](/help/assets/metadata-assets-view.md)
       + [共享资源](/help/assets/share-links-for-assets-view.md)
       + [管理收藏集](/help/assets/manage-collections-assets-view.md)

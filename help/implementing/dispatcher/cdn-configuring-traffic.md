@@ -3,30 +3,27 @@ title: 在 CDN 上配置流量
 description: 了解如何通过在配置文件中声明规则和过滤器并使用Cloud Manager配置管道将它们部署到CDN来配置CDN流量。
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
-source-git-commit: 1e2d147aec53fc0f5be53571078ccebdda63c819
+source-git-commit: f9eeafbf128b4581c983e19bcd5ad2294a5e3a9a
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 2%
+source-wordcount: '1199'
+ht-degree: 4%
 
 ---
 
 # 在 CDN 上配置流量 {#cdn-configuring-cloud}
 
->[!NOTE]
->此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至 `aemcs-cdn-config-adopter@adobe.com` 并描述您的用例。
-
 AEMas a Cloud Service提供了一系列功能，可在 [Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 修改传入请求或传出响应的性质的层。 可以声明以下规则（在本页中有详细描述）以实现以下行为：
 
 * [请求转换](#request-transformations)  — 修改传入请求的各个方面，包括标头、路径和参数。
 * [响应转换](#response-transformations)  — 修改返回客户端的标头（例如，Web浏览器）。
-* [客户端重定向器](#client-side-redirectors)  — 触发浏览器重定向。
+* [客户端重定向](#client-side-redirectors)  — 触发浏览器重定向。 此功能尚未正式发布，但可供早期采用者使用。
 * [源选择器](#origin-selectors)  — 代理到其他源后端。
 
 在CDN上还可以配置流量过滤器规则（包括WAF），它控制CDN允许或拒绝的流量。 此功能已发布，您可以在 [包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 页面。
 
 此外，如果CDN无法联系其源，则可以编写引用自托管自定义错误页面（随后将渲染）的规则。 要了解有关此内容的更多信息，请参阅 [配置CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md) 文章。
 
-所有这些在源代码管理的配置文件中声明的规则，都通过使用进行部署 [Cloud Manager的配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). 请注意，配置文件的累积大小不能超过100KB。
+所有这些在源代码管理的配置文件中声明的规则，都通过使用进行部署 [Cloud Manager的配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). 请注意，配置文件（包括流量过滤器规则）的累积大小不能超过100 KB。
 
 ## 评估顺序 {#order-of-evaluation}
 
@@ -38,14 +35,21 @@ AEMas a Cloud Service提供了一系列功能，可在 [Adobe管理的CDN](/help
 
 在CDN上配置流量之前，您需要执行以下操作：
 
-* 首先，在Git项目的顶级文件夹中创建此文件夹和文件结构：
+* 在Git项目的顶级文件夹中创建此文件夹和文件结构：
 
 ```
 config/
      cdn.yaml
 ```
 
-* 其次， `cdn.yaml` 配置文件应包含元数据和以下示例中描述的规则。
+* 此 `cdn.yaml` 配置文件应包含元数据和以下示例中描述的规则。 此 `kind` 参数应设置为 `CDN` 并且版本应设置为架构版本，当前为 `1`.
+
+* 在Cloud Manager中创建目标部署配置管道。 请参阅 [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 和 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**注释**
+
+* RDE当前不支持配置管道。
+* 您可以使用 `yq` 在本地验证配置文件（例如 `yq cdn.yaml`）的 YAML 格式。
 
 ## 语法 {#configuration-syntax}
 
@@ -73,7 +77,7 @@ version: "1"
 metadata:
   envTypes: ["dev", "stage", "prod"]
 data:  
-  experimental_requestTransformations:
+  requestTransformations:
     removeMarketingParams: true
     rules:
       - name: set-header-rule
@@ -173,7 +177,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:   
-  experimental_requestTransformations:
+  requestTransformations:
     rules:
       - name: set-variable-rule
         when:
@@ -184,7 +188,7 @@ data:
             var: some_var_name
             value: some_value
  
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-while-variable
         when:
@@ -208,7 +212,7 @@ version: "1"
 metadata:
   envTypes: ["prod", "dev"]
 data:
-  experimental_responseTransformations:
+  responseTransformations:
     rules:
       - name: set-response-header-rule
         when:
@@ -262,7 +266,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_originSelectors:
+  originSelectors:
     rules:
       - name: example-com
         when: { reqProperty: path, like: /proxy-me* }
@@ -303,11 +307,16 @@ data:
 | **forwardAuthorization** （可选，默认值为false） | 如果设置为true ，则客户端请求中的“Authorization”标头将传递到后端，否则删除Authorization标头。 |
 | **timeout** （可选，以秒为单位，默认值为60） | CDN应等待后端服务器传递HTTP响应主体的第一个字节的秒数。 此值还用作后端服务器的字节超时之间的值。 |
 
-## 客户端重定向器 {#client-side-redirectors}
+## 客户端重定向 {#client-side-redirectors}
+
+>[!NOTE]
+>此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至 `aemcs-cdn-config-adopter@adobe.com` 并描述您的用例。
 
 对于301、302和类似的客户端重定向，您可以使用客户端重定向规则。 如果规则匹配，CDN会使用包含状态代码和消息（例如，HTTP/1.1 301 Moved Permanently）以及位置标头集的状态行进行响应。
 
 允许使用具有固定值的绝对位置和相对位置。
+
+请注意，配置文件（包括流量过滤器规则）的累积大小不能超过100 KB。
 
 配置示例：
 
