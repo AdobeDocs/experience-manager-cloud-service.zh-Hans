@@ -2,10 +2,10 @@
 title: 创建生产程序
 description: 了解如何使用 Cloud Manager 创建自己的生产程序来托管实时流量。
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 33%
+source-wordcount: '1031'
+ht-degree: 34%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 33%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕，点击或单击 **添加项目** 在屏幕的右上角。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，点按或单击 **添加项目** 在屏幕的右上角。
 
    ![Cloud Manager 登陆页面](assets/log-in.png)
 
@@ -48,7 +48,7 @@ ht-degree: 33%
 
 1. 在&#x200B;**上线日期**&#x200B;选项卡，输入您计划生产程序上线的日期。
 
-   ![定义计划上线日期](assets/setup-go-live.png)
+   ![定义计划上线日期](assets/set-up-go-live.png)
 
    * 可以随时编辑此日期。
    * 此日期仅供参考，并触发上的上线构件 [**项目概述** 页面](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) 及时提供产品内链接到AEMas a Cloud Service最佳实践文档，配合您的入门培训历程，最终获得成功、流畅的上线体验。
@@ -117,9 +117,9 @@ AEM Sites提供标准的99.9%服务级别协议(SLA)。 此 **99.99%服务级别
 
    ![程序概述](assets/set-up-prod5.png)
 
-如果在任何时候您需要切换到另一个程序或返回概述页面创建另一个程序，请单击屏幕左上角的程序名称，可显示 **导航到** 选项。
-
-![导航至](assets/create-program-a1.png)
+>[!TIP]
+>
+>请参阅文档 [浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) 有关如何导航Cloud Manager并了解 **我的项目群** 控制台。
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: 为 AEM as a Cloud Service 配置高级联网功能
 description: 了解如何为AEMas a Cloud Service配置高级联网功能，如VPN或灵活或专用出口IP地址。
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
 workflow-type: tm+mt
 source-wordcount: '5093'
-ht-degree: 60%
+ht-degree: 59%
 
 ---
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
 
@@ -242,7 +242,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
 
@@ -416,7 +416,7 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**。
 
@@ -631,7 +631,7 @@ Header always set Cache-Control private
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 从 **项目概述** 页面，导航到 **环境** 选项卡并选择要在其中启用高级联网配置的环境，在 **环境** 标题中。 然后选择 **高级网络配置** 选项卡，然后单击 **启用网络基础架构**.
 
@@ -690,7 +690,7 @@ API应在几秒钟内响应，指示状态 `updating`. 大约10分钟后，对Cl
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 从 **项目概述** 页面，导航到 **环境** 选项卡并选择要在其中启用高级联网配置的环境，在 **环境** 标题中。 然后选择 **高级网络配置** 选项卡，然后单击省略号按钮。
 
@@ -728,7 +728,7 @@ API应在几秒钟内响应，指示状态 `updating`. 大约10分钟后，对Cl
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)**&#x200B;屏幕上，选择该程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**网络基础架构**&#x200B;标题。然后单击要删除的基础架构旁边的省略号按钮。
 

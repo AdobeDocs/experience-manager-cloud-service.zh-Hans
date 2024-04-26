@@ -2,10 +2,10 @@
 title: 创建沙盒程序
 description: 了解如何使用 Cloud Manager 创建自己的沙盒程序，用于培训、演示、POC 或其他非生产目的。
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 86%
+source-wordcount: '434'
+ht-degree: 74%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 86%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择相应的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕，点击或单击 **添加项目** 靠近屏幕右上角。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，点按或单击 **添加项目** 靠近屏幕右上角。
 
-   ![Cloud Manager 登陆页面](assets/cloud-manager-my-programs.png)
+   ![Cloud Manager 登陆页面](assets/log-in.png)
 
 1. 在“创建项目向导”中，选择&#x200B;**设置沙盒**，并提供项目名称。
 
@@ -63,12 +63,12 @@ ht-degree: 86%
 
 1. 创建开发环境后，您可以使用 **Access AEM** 链接登录 AEM。
 
-   ![访问 AEM 链接](assets/create-program-5.png)
+   ![访问 AEM 链接](assets/create-program5.png)
 
-1. 完成非生产管道部署到开发后，向导将指导您访问 AEM 开发环境或将代码部署到开发环境。
+1. 完成非生产管道部署到开发后，行动号召中的向导将指导您访问AEM开发环境或将代码部署到开发环境。
 
    ![部署沙盒](assets/create-program-setup-deploy.png)
 
-如果您必须切换到另一个程序或需要返回概述页面以创建另一个程序时，请单击屏幕左上角的程序名称，以显示&#x200B;**导航至**&#x200B;选项。
-
-![导航至](assets/create-program-a1.png)
+>[!TIP]
+>
+>请参阅文档 [浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) 有关如何导航Cloud Manager并了解 **我的项目群** 控制台。

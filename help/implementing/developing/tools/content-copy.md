@@ -2,10 +2,10 @@
 title: 内容复制工具
 description: 内容复制工具使用户能够按需将可变内容从AEMas a Cloud Service上的生产环境复制到较低环境，以进行测试。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 33%
 
 ---
 
@@ -49,9 +49,7 @@ ht-degree: 34%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
-
-1. 从&#x200B;**环境**&#x200B;屏幕导航到&#x200B;**内容集**&#x200B;页面。
+1. 使用侧面导航面板，导航到 **内容集** 选项卡 **概述** 页面。
 
 1. 在屏幕的右上方，单击 **添加内容集**.
 

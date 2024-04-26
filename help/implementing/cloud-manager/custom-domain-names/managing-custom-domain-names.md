@@ -2,10 +2,10 @@
 title: 管理自定义域名
 description: 了解如何使用 Cloud Manager 查看、更新、替换和删除自定义域名。
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 84%
+source-wordcount: '326'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager 让您查看、更新、替换和删除自定义域名。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，选择程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
@@ -45,17 +45,13 @@ Cloud Manager 让您查看、更新、替换和删除自定义域名。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
-1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
-
-1. 从&#x200B;**环境**&#x200B;屏幕导航到&#x200B;**域设置**&#x200B;页面。
+1. 导航至 **域设置** 第页，从 **概述** 屏幕。
 
 1. 确定要删除的自定义域名的行。
 
 1. 单击行最右端的省略号按钮。
 
 1. 选择&#x200B;**删除**。
-
-   ![删除自定义域名](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. 确认您的提交。
 

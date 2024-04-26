@@ -3,10 +3,10 @@ title: 配置生产管道
 description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -35,9 +35,9 @@ ht-degree: 67%
 >
 >在配置前端管道之前，请参阅 [AEM 快速网站创建历程](/help/journey-sites/quick-site/overview.md)，获取易于使用的“AEM 快速站点创建”工具的端到端指南。这段历程将帮助您简化 AEM 站点的前端开发，使您能够在不了解 AEM 后端的情况下快速定制站点。
 
-1. 登录Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 并选择适当的组织
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，选择程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 导航至 **管道** 中的卡 **项目概述** 页面并单击 **添加** 以选择 **添加生产管道**.
 

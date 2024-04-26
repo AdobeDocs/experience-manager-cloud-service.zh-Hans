@@ -3,7 +3,7 @@ title: 配置非生产管道
 description: 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 73%
@@ -36,7 +36,7 @@ ht-degree: 73%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，选择程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 从 Cloud Manager 主屏幕访问&#x200B;**管道**&#x200B;信息卡。单击&#x200B;**+添加**&#x200B;并选择&#x200B;**添加非生产管道。**
 

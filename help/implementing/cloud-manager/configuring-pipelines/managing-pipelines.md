@@ -3,10 +3,10 @@ title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 71ece3b084c3a262cacc62019396138a88a340b9
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 65%
+source-wordcount: '1018'
+ht-degree: 54%
 
 ---
 
@@ -41,21 +41,25 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 屏幕上，选择程序。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
 
 1. 从 **项目概述** 页面上，选择 **管道** 制表符以切换到 **管道** 窗口。
 
 1. 在这里，您可以看到项目的所有管道列表，并且可以像在中一样启动和停止管道执行 **管道信息卡**.
 
-如果管道正在执行，则将鼠标悬停在其&#x200B;**状态**&#x200B;列上将显示有关执行的详细信息。
+如果管道正在执行，请点按 **状态** 列将显示有关执行的详细信息。
 
 ![管道执行详细信息](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-status.png)
 
 点按或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
 
+您还可以点按或单击管道的省略号按钮，以采取适用于管道状态的其他操作，例如 [编辑](#editing-pipelines) 它或 [正在取消执行。](#cancel)
+
+![管道操作](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
 ## 活动窗口 {#activity}
 
-**活动**&#x200B;窗口显示所选项目的所有管道执行的完整列表。
+此 **活动** 窗口显示选定项目以及其他重要项目的所有管道执行的完整列表。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
@@ -63,11 +67,15 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在这里，您可以看到项目的所有管道执行的列表，包括当前执行和历史执行。
 
-如果管道正在执行，则将鼠标悬停在其&#x200B;**状态**&#x200B;列上将显示有关执行的详细信息。
+如果管道正在执行，请点按 **状态** 列将显示有关执行的详细信息。
 
 ![管道执行详细信息](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-activity.png)
 
-点按或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
+点击或单击表示管道执行的行将转到 [管道执行的详细信息。](#view-details)
+
+您还可以点按或单击省略号按钮以对管道执行执行执行进一步操作，例如查看其详细信息或下载日志，这会将您转到 [管道详细信息页面。](#view-details)
+
+![管道执行操作](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-execution-actions.png)
 
 ## 运行管道 {#running-pipelines}
 

@@ -1,10 +1,10 @@
 ---
 title: 配置过程 – 概述
 description: 配置过程 – 概述
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 93%
 
 ---
 
@@ -26,13 +26,10 @@ ht-degree: 98%
 
 自动配置完成后：
 
-* 授予访问权限 – Adobe 将在 Adobe Identity Management 系统 (IMS) 内创建一个组织
+* 已授予访问权限 — Adobe将在AdobeIdentity Management System (IMS)中创建组织
 * 默认情况下，指定管理员将拥有管理员权限
 * 管理员可以通过 Admin Console 为其他团队成员添加用户和角色
 * 查看用户基于角色的权限，确定 Cloud Manager 中的权限分配
-
-![processoverview.jpg](assets/processOverview.jpg)
-
 
 有关更多信息，请参阅[在 Experience League 上加入 Experience Manager as a Cloud Service。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
 
@@ -49,8 +46,6 @@ ht-degree: 98%
 
 ### 2. 将组织载入 Adobe Admin Console：
 
-![processoverview2.jpg](assets/processOverview2.jpg)
-
 * 系统管理员:
    * 配置 AEM 程序和环境。
    * 导航到 Admin Console 执行管理任务。
@@ -61,8 +56,6 @@ ht-degree: 98%
    * 管理本地组、权限和特权。
 
 ### 3. 将用户载入 Admin Console 并管理访问权限：
-
-![processoverview3.jpg](assets/processOverview3.jpg)
 
 根据大小和偏好，可以使用三种方法载入用户：
 * 在 Admin Console 中手动创建用户

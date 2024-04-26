@@ -1,15 +1,15 @@
 ---
-title: CDN性能功能板
+title: CDN 性能仪表板
 description: 了解Cloud Manager如何评估内容交付网络(CDN)性能，以及您可以从功能板中学到什么。
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# CDN性能功能板 {#cdn-performance}
+# CDN 性能仪表板 {#cdn-performance}
 
 了解Cloud Manager如何评估内容交付网络(CDN)性能，以及您可以从功能板中学到什么。
 
@@ -25,7 +25,7 @@ CDN功能板可在每个项目的概述页面上找到。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** 页面，点按或单击要查看其CDN功能板的项目。
+1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 在控制台中，点按或单击要查看其CDN功能板的项目。
 
    ![我的项目群页面](assets/my-programs.png)
 
