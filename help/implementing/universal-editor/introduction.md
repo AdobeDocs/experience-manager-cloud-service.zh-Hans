@@ -2,10 +2,10 @@
 title: Universal Editor 简介
 description: 了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地编辑任何 Headless 和 Headful 体验。了解它如何帮助内容作者投放卓越的体验、提高他们的内容速度以及如何提供高水平的开发人员体验。
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: bbcf44c585e98f75c558d06edc3c1c030adad2cf
+source-git-commit: 2ad5920d0b3d8a3ad780a2cb0f28b7e6f9e596ab
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 67%
+source-wordcount: '1066'
+ht-degree: 62%
 
 ---
 
@@ -79,6 +79,16 @@ ht-degree: 67%
 营销从业人员想创建根据给定上下文的布局定制的内容，以提供卓越的体验。
 
 * 要完成的基本作业是与读者建立令人信服的联系。
+
+## 限制 {#limitations}
+
+当您探索通用编辑器并在自己的项目中进一步实施时，请牢记以下限制。
+
+* 不超过25个AEM资源（内容片段、页面、体验片段、资产等） 应作为单个页面上的检测引用。
+* AEMas a Cloud Service是唯一受支持的AEM后端。
+* AEMas a Cloud Service版本 `2023.8.13099` 或更高版本为必填项。
+* 内容作者必须拥有自己的个人Experience Cloud帐户。
+* 支持的浏览器包括Chrome和Edge
 
 ## 其他资源 {#additional-resources}
 
