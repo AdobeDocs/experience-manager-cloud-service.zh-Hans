@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service 中的维护任务
 description: 了解AEMas a Cloud Service中的维护任务以及如何配置它们。
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 4ac5ec2a2b8da90820734e4fc06c084c810c0724
+source-git-commit: 07676903a0270bfee5bfcffa2617e08e0a4ebbaf
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1144'
 ht-degree: 59%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 59%
   <tr>
     <td>版本清除</td>
     <td>Adobe</td>
-    <td>对于现有环境（2024年4月15日之前创建的环境），清除功能处于禁用状态，并且未来将启用状态，默认为7年；客户将可以使用较低的自定义值（例如30天）对其进行配置。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->新环境（从2024年4月15日开始创建的环境）默认情况下将启用清除，但值如下，客户可以使用自定义值配置。
+    <td>对于现有环境（在2024年某个尚未确定的日期之前创建的环境），将禁用清除，并且将来将启用清除，默认为7年；客户将可以使用较低的自定义值（例如30天）对其进行配置。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->默认情况下，新环境（那些从尚未确定的2024年日期开始创建的环境）将启用清除，但具有下面的值，客户可以使用自定义值配置。
      <ol>
        <li>超过 30 天的版本将会被删除</li>
        <li>保留过去 30 天内的最新 5 个版本</li>
@@ -56,7 +56,7 @@ ht-degree: 59%
   <tr>
     <td>审核日志清除</td>
     <td>Adobe</td>
-    <td>对于现有环境（2024年4月15日之前创建的环境），清除功能处于禁用状态，并且未来将启用状态，默认为7年；客户将可以使用较低的自定义值（例如30天）对其进行配置。<br><br> <!-- See above for the two line breaks -->新环境（从2024年4月开始创建的环境）将默认启用 <code>/content</code> 节点，具体行为如下：
+    <td>对于现有环境（在2024年某个尚未确定的日期之前创建的环境），将禁用清除，并且将来将启用清除，默认为7年；客户将可以使用较低的自定义值（例如30天）对其进行配置。<br><br> <!-- See above for the two line breaks -->对于新环境（那些在2024年某个尚未确定的日期之前创建的环境），默认情况下将启用 <code>/content</code> 节点，具体行为如下：
      <ol>
        <li>对于复制审核，将删除超过 3 天的审核日志</li>
        <li>对于 DAM (Assets)，将删除超过 30 天的审核日志</li>
