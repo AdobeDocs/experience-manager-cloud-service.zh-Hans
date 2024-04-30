@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
 workflow-type: tm+mt
-source-wordcount: '4901'
+source-wordcount: '4892'
 ht-degree: 99%
 
 ---
@@ -1156,8 +1156,6 @@ ht-degree: 99%
    + 创作层 {#author-tier}
       + [访问创作层](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [保护创作层](/help/implementing/author-tier/securing-the-author-tier.md)
-   + 预览层 {#preview-tier}
-      + [配置预览层的 OSGi 设置](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + 内容投放概述 {#content-delivery}
       + [内容投放流程](/help/implementing/dispatcher/overview.md)
       + [云中的 Dispatcher](/help/implementing/dispatcher/disp-overview.md)
