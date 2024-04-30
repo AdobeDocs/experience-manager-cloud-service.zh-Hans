@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b7e7bc7546b836667fff9db0ea5419e751f492cb
+source-git-commit: 60952db4172b882b71a0b230fc8f4c27154e9cc0
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 78%
+source-wordcount: '301'
+ht-degree: 71%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 78%
 
 下面总结了维护版本 15977 的持续改进，该版本已于 2024 年 4 月 19 日公开发布。上一个维护版本是版本 15939。
 
-2024.4.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)。
+2024.4.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强 {#enhancements-15977}
 
@@ -30,20 +30,41 @@ ht-degree: 78%
 
 ### 已知问题 {#known-issues-15977}
 
-* **(仅适用于AEM Forms)** 安装AEM Cloud Foundation维护版本15977后，在表单创作期间和对于已发布的表单，自适应表单字段的呈现顺序不正确。 如果您使用AEM Forms，为避免任何不便，建议在即将发布的维护版本中解决该问题之前不要升级到15977版本。
-
+* **（仅适用于 AEM Forms）**&#x200B;安装 AEM Cloud Foundation 维护版本 15977 后，自适应表单字段在表单创作期间和发布表单时以错误的顺序呈现。如果您使用AEM Forms，Adobe建议在即将发布的维护版本中解决该问题之前不要升级到15977版本。 这样做可以帮助您避免任何不便。
 
 ### 已弃用的功能和 API {#deprecated-15977}
 
 * [在 Adobe Developer Console 中弃用 JWT 凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-查看[已弃用和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)，了解 AEM as a Cloud Service 中已弃用或移除的功能。
+* 自2024年5月1日起，AdobeDynamic Media将停止支持以下内容：
+
+   * SSL（安全套接字层）2.0
+   * SSL 3.0
+   * TLS（传输层安全性） 1.0和1.1
+   * TLS 1.2中的以下弱加密：
+      * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+      * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+      * `TLS_RSA_WITH_AES_256_GCM_SHA384`
+      * `TLS_RSA_WITH_AES_256_CBC_SHA256`
+      * `TLS_RSA_WITH_AES_256_CBC_SHA`
+      * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+      * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+      * `TLS_RSA_WITH_AES_128_GCM_SHA256`
+      * `TLS_RSA_WITH_AES_128_CBC_SHA256`
+      * `TLS_RSA_WITH_AES_128_CBC_SHA`
+      * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+      * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+      * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+      * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+
+
+要了解AEMas a Cloud Service中已弃用或删除的内容，请参阅 [已弃用和已删除的功能和API](/help/release-notes/deprecated-removed-features.md).
 
 ### 嵌套的技术 {#embedded-tech-15977}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
-| AEM OAK | 1.62.0 | [Oak API 1.62.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
+| AEM Oak | 1.62.0 | [Oak API 1.62.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
 | AEM SLING API | 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.20-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
 | AEM 核心组件 | 2.24.6 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
