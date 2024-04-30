@@ -3,22 +3,18 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选�
 description: 使用资源选择器在您的应用程序中搜索、查找和检索资源的元数据和演绎版。
 contentOwner: KK
 role: Admin,User
-exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
+exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
+source-git-commit: b9fe6f4c2f74d5725575f225f8d9eb2e5fbfceb7
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 91%
+source-wordcount: '3908'
+ht-degree: 45%
 
 ---
 
+
 # 微前端资源选择器 {#Overview}
 
-| 版本 | 文章链接 |
-| -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-selector.html?lang=en) |
-| AEM as a Cloud Service | 本文 |
-
-微前端资源选择器提供了一个用户界面，它可以轻松地与 [!DNL Experience Manager Assets as a Cloud Service] 存储库集成，以便您能够浏览或搜索存储库中可用的数字资源，并在您的应用程序创作体验中使用它们。
+微前端资源选择器提供了一个用户界面，它可以轻松地与 [!DNL Experience Manager Assets] 存储库集成，以便您能够浏览或搜索存储库中可用的数字资源，并在您的应用程序创作体验中使用它们。
 
 微前端用户界面可用于采用了资源选择器包的应用程序体验。对该包的任何更新都会自动导入，并且最新部署的资源选择器会自动加载到您的应用程序中。
 
@@ -26,88 +22,46 @@ ht-degree: 91%
 
 资源选择器提供了许多好处，例如：
 
-* 使用 Vanilla JavaScript 库轻松与任何 Adobe 或非 Adobe 应用程序集成。
+* 可与任何 [Adobe](#asset-selector-ims) 或 [非Adobe](#asset-selector-non-ims) 应用程序使用Vanilla JavaScript库。
 * 易于维护，因为对资源选择器包的更新将自动部署到可用于应用程序的资源选择器。您的应用程序中无需更新即可加载最新的修改。
 * 易于定制，因为提供了用于控制应用程序中的资源选择器显示的属性。
-
 * 全文搜索、开箱即用和自定义过滤器，可快速导航到资源以便在创作体验中使用。
-
 * 能够在 IMS 组织内切换存储库以选择资源。
-
 * 能够按名称、维度和大小对资源进行排序，并在列表、网格、库或瀑布视图中查看它们。
 
-本文内容旨在说明如何将资源选择器与 Unified Shell 下的 [!DNL Adobe] 应用程序结合使用，或如何在已生成用于身份验证的 imsToken 时使用资源选择器。在本文中，我们将这些工作流称作非 SUSI 流。
+<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
-执行以下任务以将资源选择器与您的 [!DNL Experience Manager Assets as a Cloud Service] 存储库集成和结合使用：
-
-* [使用 Vanilla JS 集成资源选择器](#integration-with-vanilla-js)
-* [定义资源选择器显示属性](#asset-selector-properties)
-* [使用资源选择器](#using-asset-selector)
-
-## 使用 Vanilla JS 集成资源选择器 {#integration-with-vanilla-js}
-
-您可以将任何 [!DNL Adobe] 或非 Adobe 应用程序与 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存储库集成，并从该应用程序中选择资源。
-
-通过导入资源选择器包并使用 Vanilla JavaScript 库连接到 Assets as a Cloud Service 来实现集成。您需要编辑 `index.html` 或您应用程序中的任何相应文件以 -
-
-* 定义身份验证详细信息
-* 访问 Assets as a Cloud Service 存储库
-* 配置资源选择器显示属性
-
-<!--
-Asset Selector supports authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`. Authentication using these IMS properties is referred to as SUSI (Sign Up Sign In) flow in this article.
-
-You can perform authentication without defining some of the IMS properties, such as `imsScope` or `imsClientID`, if:
-
-*   You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-*   You already have an IMS token generated for authentication.
-
-Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining `imsScope` or `imsClientID` IMS properties is referred to as a non-SUSI flow in this article.
+1. [Install Asset Selector](#installation)
+2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
+3. [Use Asset Selector](#using-asset-selector)
 -->
 
-在以下情况下，您无需定义某些 IMS 属性即可执行身份验证：
-
-* 您正在 [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=zh-Hans) 上集成 [!DNL Adobe] 应用程序。
-* 您已生成用于身份验证的 IMS 令牌。
-
-## 前提条件 {#prerequisites}
-
 <!--
-If your application requires user based authentication, out-of-the-box Asset Selector also supports a flow for authentication to the [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository using Identity Management System (IMS.)
+## Setting up Asset Selector {#asset-selector-setup}
 
-You can use properties such as `imsScope` or `imsClientID` to retrieve `imsToken` automatically. You can use SUSI (Sign Up Sign In) flow and IMS properties. Also, you can obtain your own imsToken and pass it to Asset Selector by integrating within [!DNL Adobe] application on Unified Shell or if you already have an imsToken obtained via other methods (for example, using technical account). Accessing [!DNL Experience Manager Assets] as a [!DNL Cloud Service] repository without defining IMS properties (For example, `imsScope` and `imsClientID`) is referred to as a non-SUSI flow.
+![Asset Selector set up](assets/asset-selector-prereqs.png)
 -->
 
-在 `index.html` 文件或应用程序实施中的类似文件中定义先决条件，以定义用于访问 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 存储库的身份验证详细信息。先决条件包括：
+## 先决条件{#prereqs}
 
-* imsOrg
-* imsToken
-* apikey
-<!--
-The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI flow.
+必须确保以下通信方法：
 
-**Non-SUSI flow**
+* 应用程序正在HTTPS上运行。
+* 应用程序的URL位于IMS客户端的重定向URL允许列表中。
+* IMS登录流通过Web浏览器上的弹出窗口进行配置和渲染。 因此，应在目标浏览器上启用或允许弹出窗口。
 
-*   imsOrg
-*   imsToken
-*   apikey
+如果您需要资产选择器的IMS身份验证工作流，请使用上述先决条件。 或者，如果您已通过IMS工作流身份验证，则可以改为添加IMS信息。
 
-For more information on these properties, see [Asset Selector Properties](#asset-selector-properties).
-
-**SUSI flow**
-
-*   imsClientId
-*   imsScope
-*   redirectUrl
-*   imsOrg
-*   apikey
-
-For more information on these properties, see [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
--->
+>[!IMPORTANT]
+>
+> 此存储库旨在作为补充文档，描述用于集成Asset Selector的可用API和使用示例。 在尝试安装或使用资产选择器之前，请确保贵组织已获得资产选择器的访问权限，且已成为Experience Manager Assetsas a Cloud Service配置文件的一部分。 如果您尚未配置，则无法集成或使用这些组件。 要请求配置，您的项目管理员应从Admin Console中提出标记为P2的支持票证并包含以下信息：
+>
+>* 托管集成应用程序的域名。
+>* 配置之后，将为您的组织提供 `imsClientId`， `imsScope`，和 `redirectUrl` 对应于请求的环境，这些环境对于资产选择器的配置至关重要。 如果没有这些有效属性，您将无法运行安装步骤。
 
 ## 安装 {#installation}
 
-可通过 ESM CDN（例如 [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)）和 [UMD](https://github.com/umdjs/umd) 版本获得资源选择器。
+资产选择器可通过两个ESM CDN使用(例如， [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/))和 [UMD](https://github.com/umdjs/umd) 版本。
 
 在使用 **UMD 版本**&#x200B;的浏览器中（推荐）：
 
@@ -133,106 +87,50 @@ For more information on these properties, see [Example for the SUSI flow](#susi-
 import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/@assets/selectors/index.js'
 ```
 
-### 选定资源类型 {#selected-asset-type}
+## 使用 Vanilla JS 集成资源选择器 {#integration-using-vanilla-js}
 
-选定资源类型是一个对象数组，其中包含使用 `handleSelection`、`handleAssetSelection` 和 `onDrop` 函数时的资源信息。
+您可以集成任何 [!DNL Adobe] 或非Adobe应用程序 [!DNL Experience Manager Assets] 并从应用程序中选择资源。 请参阅 [Asset Selector与各种应用程序的集成](#asset-selector-integration-with-apps).
 
-**架构语法**
+通过导入资源选择器包并使用 Vanilla JavaScript 库连接到 Assets as a Cloud Service 来实现集成。编辑 `index.html` 或应用程序中的任何相应文件，以：
 
-```
-interface SelectedAsset {
-    'repo:id': string;
-    'repo:name': string;
-    'repo:path': string;
-    'repo:size': number;
-    'repo:createdBy': string;
-    'repo:createDate': string;
-    'repo:modifiedBy': string; 
-    'repo:modifyDate': string; 
-    'dc:format': string; 
-    'tiff:imageWidth': number;
-    'tiff:imageLength': number;
-    'repo:state': string;
-    computedMetadata: Record<string, any>;
-    _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
-            href: string;
-            type: string;
-            'repo:size': number;
-            width: number;
-            height: number;
-            [others: string]: any;
-        }>;
-    };
-}
-```
+* 定义身份验证详细信息
+* 访问 Assets as a Cloud Service 存储库
+* 配置资源选择器显示属性
 
-下表描述了选定资源对象的一些重要属性。
+在以下情况下，您无需定义某些 IMS 属性即可执行身份验证：
 
-| 属性 | 类型 | 解释 |
-|---|---|---|
-| *repo:repositoryId* | 字符串 | 存储资源的存储库的唯一标识符。 |
-| *repo:id* | 字符串 | 资源的唯一标识符。 |
-| *repo:assetClass* | 字符串 | 资源的分类（例如，图像、视频或文档）。 |
-| *repo:name* | 字符串 | 资源的名称，包括文件扩展名。 |
-| *repo:size* | 数字 | 资源的大小，以字节为单位。 |
-| *repo:path* | 字符串 | 资源在存储库中的位置。 |
-| *repo:ancestors* | `Array<string>` | 存储库中资源的祖先项数组。 |
-| *repo:state* | 字符串 | 存储库中资产的当前状态（例如，活动、删除等）。 |
-| *repo:createdBy* | 字符串 | 创建资源的用户或系统。 |
-| *repo:createDate* | 字符串 | 资源的创建日期和时间。 |
-| *repo:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
-| *repo:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
-| *dc:format* | 字符串 | 资源的格式，如文件类型(例如，JPEG、PNG等)。 |
-| *tiff:imageWidth* | 数字 | 资源的宽度。 |
-| *tiff:imageLength* | 数字 | 资源的高度。 |
-| *computedMetadata* | `Record<string, any>` | 一个对象，表示所有类型的所有资源元数据（存储库、应用程序或嵌入式元数据）的存储桶。 |
-| *_links* | `Record<string, any>` | 关联资源的超媒体链接。包括元数据和演绎版等资源的链接。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition* | `Array<Object>` | 对象数组，包含有关资源演绎版的信息。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].href* | 字符串 | 演绎版的 URI。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].type* | 字符串 | 演绎版的 MIME 类型。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].&#39;repo:size&#39;* | 数字 | 演绎版的大小，以字节为单位。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].width* | 数字 | 演绎版的宽度。 |
-| *_links.http://ns.adobe.com/adobecloud/rel/rendition[].height* | 数字 | 演绎版的高度。 |
+* 您正在 [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=zh-Hans) 上集成 [!DNL Adobe] 应用程序。
+* 您已生成用于身份验证的 IMS 令牌。
 
-有关属性和详细示例的完整列表，请访问[资源选择器代码示例](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
+## 将资产选择器与各种应用程序集成 {#asset-selector-integration-with-apps}
 
-<!--
-### ImsAuthProps {#ims-auth-props}
+您可以将Asset Selector与各种应用程序集成，例如：
 
-The `ImsAuthProps` properties define the authentication information and flow that the Asset Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
+* [将资产选择器与集成 [!DNL Adobe] 应用程序](#adobe-app-integration-vanilla)
+* [将资源选择器与非Adobe应用程序集成](#adobe-non-app-integration)
 
-| Property Name | Description|
-|---|---|
-| `imsClientId`| A string value representing the IMS client ID used for authentication purposes. This value is provided by Adobe and is specific to your Adobe AEM CS organization.|
-| `imsScope`| Describes the scopes used in authentication. The scopes determine the level of access that the application has to your organization resources. Multiple scopes can be separated by commas.|
-| `redirectUrl` | Represents the URL where the user is redirected after authentication. This value is typically set to the current URL of the application. If a `redirectUrl` is not supplied, `ImsAuthService` will use the redirectUrl used to register the `imsClientId`|
-| `modalMode`| A boolean indicating whether the authentication flow should be displayed in a modal (pop-up) or not. If set to `true`, the authentication flow is displayed in a pop-up. If set to `false`, the authentication flow is displayed in a full page reload. _Note:_ for better UX, you can dynamically control this value if the user has browser pop-up disabled. |
-| `onImsServiceInitialized`| A callback function that is called when the Adobe IMS authentication service is initialized. This function takes one parameter, `service`, which is an object representing the Adobe IMS service. See [`ImsAuthService`](#imsauthservice-ims-auth-service) for more details.|
-| `onAccessTokenReceived`| A callback function that is called when an `imsToken` is received from the Adobe IMS authentication service. This function takes one parameter, `imsToken`, which is a string representing the access token. |
-| `onAccessTokenExpired`| A callback function that is called when an access token has expired. This function is typically used to trigger a new authentication flow to obtain a new access token. |
-| `onErrorReceived`| A callback function that is called when an error occurs during authentication. This function takes two parameters: the error type and error message. The error type is a string representing the type of error and the error message is a string representing the error message. |
+>[!BEGINTABS]
 
-### ImsAuthService {#ims-auth-service}
+<!--Integration with an Adobe application content starts here-->
 
-`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager (AEM) CS Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+>[!TAB 与Adobe应用程序集成]
 
-| Function Name | Description |
-|---|---|
-| `isSignedInUser` | Determines whether the user is currently signed in to the service and returns a boolean value accordingly.|
-| `getImsToken`    | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services such as generating asset _rendition.|
-| `signIn`| Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload |
-| `signOut`| Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page.|
-| `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
--->
+### 先决条件{#prereqs-adobe-app}
 
-### 非 SUSI 流的示例 {#non-susi-vanilla}
+如果要将资产选择器与 [!DNL Adobe] 应用程序：
 
-此示例说明如何在 Unified Shell 下运行 [!DNL Adobe] 应用程序时或在您已生成用于身份验证的 `imsToken` 时，将资源选择器与非 SUSI 流结合使用。
+* [通信方法](#prereqs)
+* imsOrg
+* imsToken
+* apikey
 
-使用在您的代码中包含资产选择器包 `script` 标记，如中所示 _第6-15行_ 例如下面的示例。 加载该脚本后，`PureJSSelectors` 全局变量将可供使用。定义资产选择器 [属性](#asset-selector-properties) 如中所示 _第16-23行_. `imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现资源选择器，请调用 `renderAssetSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。资源选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
+### 将资产选择器与集成 [!DNL Adobe] 应用程序 {#adobe-app-integration-vanilla}
 
-通过执行这些步骤，您可以在 [!DNL Adobe] 应用程序中将资源选择器用于非 SUSI 流。
+以下示例演示了运行资产选择器时的用法 [!DNL Adobe] Unified Shell下的应用程序，或者当您已经拥有 `imsToken` 为身份验证而生成。
+
+使用在您的代码中包含资产选择器包 `script` 标记，如中所示 _第6-15行_ 例如下面的示例。 加载该脚本后，`PureJSSelectors` 全局变量将可供使用。定义资产选择器 [属性](#asset-selector-properties) 如中所示 _第16-23行_. 此 `imsOrg` 和 `imsToken` 在Adobe应用程序中进行身份验证时，属性都是必需的。 `handleSelection` 属性用于处理选定资源。要呈现资源选择器，请调用 `renderAssetSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。资源选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
+
+按照以下步骤操作，您可以将资源选择器与 [!DNL Adobe] 应用程序。
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -243,7 +141,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
     <script>
         // get the container element in which we want to render the AssetSelector component
         const container = document.getElementById('asset-selector-container');
-        // imsOrg and imsToken are required for authentication in non-SUSI flow
+        // imsOrg and imsToken are required for authentication in Adobe application
         const assetSelectorProps = {
             imsOrg: 'example-ims@AdobeOrg',
             imsToken: "example-imsToken",
@@ -263,24 +161,146 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 </html>
 ```
 
-有关详细示例，请访问[资源选择器代码示例](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
+<!--For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
-<!--
-### Example for the SUSI flow {#susi-vanilla}
++++**ImsAuthProps**
+此 `ImsAuthProps` 属性定义资产选择器用于获取 `imsToken`. 通过设置这些属性，您可以控制身份验证流程的行为方式，并为各种身份验证事件注册侦听器。
 
-Use this example `index.html` file for authentication if you are integrating your application using SUSI flow.
+| 属性名称 | 描述 |
+|---|---|
+| `imsClientId` | 表示用于身份验证的IMS客户端ID的字符串值。 此值由Adobe提供，特定于您的AdobeAEM CS组织。 |
+| `imsScope` | 描述身份验证中使用的范围。 范围决定了应用程序对组织资源的访问级别。 多个范围可以用逗号分隔。 |
+| `redirectUrl` | 表示验证后用户被重定向到的URL。 此值通常设置为应用程序的当前URL。 如果 `redirectUrl` 未提供， `ImsAuthService` 使用用于注册 `imsClientId` |
+| `modalMode` | 布尔值，指示是否应在模态（弹出窗口）中显示身份验证流程。 如果设置为 `true`时，会在弹出窗口中显示身份验证流程。 如果设置为 `false`，则身份验证流程会以完整页面重新加载方式显示。 _注意：_ 为了获得更好的UX，如果用户禁用了浏览器弹出窗口，则可以动态控制此值。 |
+| `onImsServiceInitialized` | Adobe IMS身份验证服务初始化时调用的回调函数。 此函数采用一个参数， `service`，这是一个表示Adobe IMS服务的对象。 请参阅 [`ImsAuthService`](#imsauthservice-ims-auth-service) 以了解更多详细信息。 |
+| `onAccessTokenReceived` | 回调函数，在 `imsToken` 从Adobe IMS身份验证服务收到。 此函数采用一个参数， `imsToken`，这是一个表示访问令牌的字符串。 |
+| `onAccessTokenExpired` | 访问令牌过期时调用的回调函数。 此函数通常用于触发新的身份验证流程以获取新的访问令牌。 |
+| `onErrorReceived` | 身份验证期间发生错误时调用的回调函数。 此函数采用两个参数：错误类型和错误消息。 错误类型是表示错误类型的字符串，错误消息是表示错误消息的字符串。 |
 
-Access the Asset Selector package using the `Script` Tag, as shown in *line 9* to *line 11* of the example `index.html` file.
++++
 
-*Line 14* to *line 38* of the example describes the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. The function requires that you define at least one of the `imsClientId` and `imsScope` properties. If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
++++**ImsAuthService**
+`ImsAuthService` 类用于处理资产选择器的身份验证流程。 其须负责取得 `imsToken` 来自Adobe IMS身份验证服务。 此 `imsToken` 用于验证用户并授权访问 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 资产存储库。 ImsAuthService使用 `ImsAuthProps` 属性以控制身份验证流并为各种身份验证事件注册侦听器。 您可以使用方便的 [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) 函数注册 _ImsAuthService_ 使用资产选择器的实例。 以下函数可在 `ImsAuthService` 类。 但是，如果您使用 _registerAssetsSelectorsAuthService_ 函数中，无需直接调用这些函数。
 
-As you do not have an `imsToken` generated, use the `registerAssetsSelectorsAuthService` and `renderAssetSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetsSelectorsAuthService` function before `renderAssetSelectorWithAuthFlow` to register the `imsToken` with the Asset Selector. [!DNL Adobe] recommends to call `registerAssetsSelectorsAuthService` when you instantiate the component.
+| 函数名称 | 描述 |
+|---|---|
+| `isSignedInUser` | 确定用户当前是否已登录到服务并相应地返回布尔值。 |
+| `getImsToken` | 检索身份验证 `imsToken` 当前登录的用户，可用于验证其他服务（如生成资产演绎版）的请求。 |
+| `signIn` | 启动用户的登录流程。 此函数使用 `ImsAuthProps` 在弹出窗口或全页重新加载中显示身份验证 |
+| `signOut` | 将用户签出服务，使其身份验证令牌失效，并要求他们再次登录以访问受保护的资源。 调用此函数将重新加载当前页面。 |
+| `refreshToken` | 刷新当前登录用户的身份验证令牌，防止该令牌过期，并确保对受保护资源的访问不会中断。 返回可用于后续请求的新身份验证令牌。 |
 
-Define the authentication and other Assets as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
++++
 
-The `PureJSSelectors` global variable, mentioned in *line 65*, is used to render the Asset Selector in the web browser.
++++**使用提供的IMS令牌进行验证**
 
-Asset Selector is rendered on the `<div>` container element, as mentioned in *line 74* to *line 81*. The example uses a dialog to display the Asset Selector.
+```
+<script>
+    const apiToken="<valid IMS token>";
+    function handleSelection(selection) {
+    console.log("Selected asset: ", selection);
+    };
+    function renderAssetSelectorInline() {
+    console.log("initializing Asset Selector");
+    const props = {
+    "repositoryId": "delivery-p64502-e544757.adobeaemcloud.com",
+    "apiKey": "ngdm_test_client",
+    "imsOrg": "<IMS org>",
+    "imsToken": apiToken,
+    handleSelection,
+    hideTreeNav: true
+    }
+    const container = document.getElementById('asset-selector-container');
+    PureJSSelectors.renderAssetSelector(container, props);
+    }
+    $(document).ready(function() {
+    renderAssetSelectorInline();
+    });
+</script>
+```
+
++++
+
++++**将回调注册到IMS服务**
+
+```
+// object `imsProps` to be defined as below 
+let imsProps = {
+    imsClientId: <IMS Client Id>,
+        imsScope: "openid",
+        redirectUrl: window.location.href,
+        modalMode: true,
+        adobeImsOptions: {
+            modalSettings: {
+            allowOrigin: window.location.origin,
+},
+        useLocalStorage: true,
+},
+onImsServiceInitialized: (service) => {
+            console.log("onImsServiceInitialized", service);
+},
+onAccessTokenReceived: (token) => {
+            console.log("onAccessTokenReceived", token);
+},
+onAccessTokenExpired: () => {
+            console.log("onAccessTokenError");
+// re-trigger sign-in flow
+},
+onErrorReceived: (type, msg) => {
+            console.log("onErrorReceived", type, msg);
+},
+}
+```
+
++++
+
+<!--Integration with non-Adobe application content starts here-->
+
+>[!TAB 与非Adobe应用程序集成]
+
+<!--### Integrate Asset Selector with a [!DNL non-Adobe] application {#adobe-non-app-integration}-->
+
+### 先决条件 {#prereqs-non-adobe-app}
+
+如果要将Asset Selector与非Adobe应用程序集成，请使用以下先决条件：
+
+* [通信方法](#prereqs)
+* imsClientId
+* imsScope
+* redirectUrl
+* imsOrg
+* apikey
+
+资产选择器支持对进行身份验证 [!DNL Experience Manager Assets] 使用Identity Management System (IMS)属性的存储库，例如 `imsScope` 或 `imsClientID` 将其与非Adobe应用程序集成时。
+
++++**为非Adobe应用程序配置资源选择器**
+要为非Adobe应用程序配置资产选择器，必须首先记录用于预配的支持票证，然后执行集成步骤。
+
+**记录支持票证**
+通过Admin Console记录支持票证的步骤：
+
+1. 添加 **带有AEM Assets的资源选择器** 在票证的标题中。
+
+1. 请在描述中提供以下详细信息：
+
+   * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] URL（项目ID和环境ID）。
+   * 托管非AdobeWeb应用程序的域名。
++++
+
++++**集成步骤**
+使用此示例 `index.html` 文件以进行身份验证，同时将资源选择器与非Adobe应用程序集成。
+
+使用访问资源选择器包 `Script` 标记，如中所示 *9号线* 到 *第11行* 示例 `index.html` 文件。
+
+*14号线* 到 *38号线* 示例描述IMS流属性，如 `imsClientId`， `imsScope`、和 `redirectURL`. 函数要求您至少定义 `imsClientId` 和 `imsScope` 属性。 如果您没有为 `redirectURL`，则使用客户端ID的注册重定向URL。
+
+因为您没有 `imsToken` 生成，使用 `registerAssetsSelectorsAuthService` 和 `renderAssetSelectorWithAuthFlow` 函数，如示例的第40行至第50行所示 `index.html` 文件。 使用 `registerAssetsSelectorsAuthService` 之前的函数 `renderAssetSelectorWithAuthFlow` 注册 `imsToken` 资产选择器。 [!DNL Adobe] 建议调用 `registerAssetsSelectorsAuthService` 实例化组件时。
+
+在中定义身份验证和其他Assetsas a Cloud Service访问相关的属性 `const props` 部分，如所示 *54号线* 到 *60号线* 示例 `index.html` 文件。
+
+此 `PureJSSelectors` 全局变量，如中所述 *65号线*，用于在Web浏览器中呈现资产选择器。
+
+资源选择器呈现在 `<div>` 容器元素，如中所述 *74号线* 到 *81号线*. 此示例使用对话框来显示资源选择器。
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -357,11 +377,19 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 </body>
 
 </html>
-
 ```
--->
 
-## 使用资源选择器属性 {#asset-selector-properties}
++++
+
++++**无法访问投放存储库**
+
+>[!TIP]
+>
+>如果您已使用注册登录工作流集成资产选择器，但仍无法访问投放存储库，请确保清理了浏览器Cookie。 否则，你最终会 `invalid_credentials All session cookies are empty` 控制台中出错。
+
+>[!ENDTABS]
+
+## 资源选择器属性 {#asset-selector-properties}
 
 您可以使用资源选择器属性来自定义资源选择器的呈现方式。下表列出了可用于自定义和使用资源选择器的属性。
 
@@ -369,16 +397,16 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 |---|---|---|---|---|
 | *边栏* | 布尔型 | 否 | false | 如果已标记 `true`，资产选择器将在左边栏视图中渲染。 如果已标记 `false`，资产选择器将以模式视图呈现。 |
 | *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。此 `imsOrg` 需要密钥来验证您访问的组织是否处于Adobe IMS下。 |
-| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用的是非 SUSI 流，则需要 `imsToken`。 |
-| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用的是非 SUSI 流，则需要 `apiKey`。 |
+| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。`imsToken` 如果您使用的是 [!DNL Adobe] 应用程序的集成。 |
+| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。`apiKey` 如果您使用的是 [!DNL Adobe] 应用程序集成。 |
 | *rootPath* | 字符串 | 否 | /content/dam/ | 资源选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径， `/content/dam/marketing/subfolder/`，资产选择器不允许您遍历任何父文件夹，但仅显示子文件夹。 |
 | *path* | 字符串 | 否 | | 在呈现资源选择器时用于导航到特定资源目录的路径。 |
 | *filterSchema* | 数组 | 否 | | 用于配置过滤器属性的模型。这在需要限制资源选择器中的某些过滤器选项时很有用。 |
 | *filterFormProps* | 对象 | 否 | | 指定您需要用于细化搜索的过滤器属性。例如，MIME 类型 JPG、PNG、GIF。 |
 | *selectedAssets* | 数组 `<Object>` | 否 |                 | 呈现资源选择器时指定选定资源。包含资源的 id 属性的必需对象数组。例如，`[{id: 'urn:234}, {id: 'urn:555'}]` 资源必须在当前目录中可用。如果您需要使用其他目录，请也为 `path` 属性提供一个值。 |
-| *acvConfig* | 对象 | 否 | | 包含对象的资源收藏集视图属性，该对象包含用于覆盖默认值的自定义配置。 |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |                 | 如果 OOTB 翻译不足以满足您的应用程序需求，您可以公开一个接口，利用该接口可通过 `i18nSymbols` 属性传递自定义本地化值。通过此接口传递值将覆盖提供的默认翻译，而改用您自己的翻译。要执行覆盖，您必须将一个有效的[消息描述符](https://formatjs.io/docs/react-intl/api/#message-descriptor)对象传递到要覆盖的 `i18nSymbols` 键。 |
-| *intl* | 对象 | 否 | | 资源选择器提供默认的 OOTB 翻译。您可以通过用 `intl.locale` 属性提供有效的区域设置字符串来选择翻译语言。例如：`intl={{ locale: "es-es" }}` </br></br> 支持的区域设置字符串遵循语言标准名称表示的 [ISO 639 - 代码](https://www.iso.org/iso-639-language-codes.html)。</br></br> 支持的区域设置列表：英语 -“en-us”（默认）西班牙语 -“es-es”德语 -“de-de”法语 -“fr-fr”意大利语 -“it-it”日语 -“ja-jp”朝鲜语 -“ko-kr”葡萄牙语 -“pt-br”中文（繁体）-“zh-cn”中文（台湾地区）-“zh-tw” |
+| *acvConfig* | 对象 | 否 | | 资产收藏集视图属性，该属性包含用于覆盖默认值的自定义配置的对象。 此外，此属性还用于 `rail` 属性启用资产查看器的边栏视图。 |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | 否 |                 | 如果OOTB翻译无法满足应用程序的需求，则可以公开一个界面，通过该界面可通过 `i18nSymbols` 属性。 通过此界面传递值将覆盖提供的默认转换，并转而使用您自己的转换。 要执行覆盖，您必须将一个有效的[消息描述符](https://formatjs.io/docs/react-intl/api/#message-descriptor)对象传递到要覆盖的 `i18nSymbols` 键。 |
+| *intl* | 对象 | 否 | | 资产选择器提供默认的OOTB翻译。 您可以通过用 `intl.locale` 属性提供有效的区域设置字符串来选择翻译语言。例如：`intl={{ locale: "es-es" }}` </br></br> 支持的区域设置字符串遵循语言标准名称表示的 [ISO 639 - 代码](https://www.iso.org/iso-639-language-codes.html)。</br></br> 支持的区域设置列表：英语 -“en-us”（默认）西班牙语 -“es-es”德语 -“de-de”法语 -“fr-fr”意大利语 -“it-it”日语 -“ja-jp”朝鲜语 -“ko-kr”葡萄牙语 -“pt-br”中文（繁体）-“zh-cn”中文（台湾地区）-“zh-tw” |
 | *repositoryId* | 字符串 | 否 | &#39;&#39; | 资源选择器从中加载内容的存储库。 |
 | *additionalAemSolutions* | `Array<string>` | 否 | [ ] | 它允许您添加其他AEM存储库的列表。 如果此属性中未提供任何信息，则仅考虑媒体库或 AEM Assets 存储库。 |
 | *hideTreeNav* | 布尔型 | 否 |  | 指定是显示还是隐藏资源树导航侧边栏。它仅在模态视图中使用，因此，该属性在边栏视图中不起作用。 |
@@ -390,6 +418,13 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 | *onClose* | 函数 | 否 | | 在按下模态视图中的 `Close` 按钮时调用。这仅在 `modal` 视图中被调用，在 `rail` 视图中将被忽略。 |
 | *onFilterSubmit* | 函数 | 否 | | 当用户更改其他过滤器条件时调用过滤器项。 |
 | *selectionType* | 字符串 | 否 | 单个 | 一次性为 `single` 或 `multiple` 资源选择配置。 |
+| *dragOptions.允许列表* | 布尔型 | 否 | | 属性用于允许或拒绝拖动不可选资产。 |
+| *aemTierType* | 字符串 | 否 | | 它允许您选择是显示交付层、创作层中的资产，还是同时显示两者。 <br><br> 语法： `aemTierType:[0: "author" 1: "delivery"` <br><br> 例如，如果两者 `["author","delivery"]` 之后，存储库切换器会同时显示创作和投放选项。 |
+| *handleNavigateToAsset* | 函数 | 否 | | 它是一个回调函数，用于处理资源的选择。 |
+| *noWrap* | 布尔型 | 否 | | 此 *noWrap* 属性有助于在侧边栏面板中呈现资产选择器。 如果未提及此属性，它将呈现 *对话框视图* 默认情况下。 |
+| *dialogsize* | 小型、中型、大型、全屏或全屏接管 | 字符串 | 可选 | 通过使用给定选项指定布局大小可控制布局。 |
+| *colorScheme* | 浅色或深色 | 否 | | 此属性用于设置Asset Selector应用程序的主题。 您可以选择浅色或深色主题。 |
+| *filterRepoList* | 函数 | 否 |  | 您可以使用 `filterRepoList` 回调函数，可调用Experience Manager存储库并返回已过滤的存储库列表。 |
 
 ## 有关使用资源选择器属性的示例 {#usage-examples}
 
@@ -399,7 +434,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-如果 AssetSelector `rail` 的值设为 `false` 或未在属性中提及，则资源选择器默认显示在模态视图中。
+如果资产选择器的值 `rail` 设置为 `false` 或者属性中未提及，默认情况下资产选择器会显示在模式视图中。 此 `acvConfig` 属性允许进行一些深入配置，如拖放。 访问 [启用或禁用拖放](#enable-disable-drag-and-drop) 了解的用法 `acvConfig` 属性。
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -415,10 +450,9 @@ Use the `path` property to define the folder name that displays automatically wh
 
 ![metadata-popover-example](assets/metadata-popover.png)
 
-
 ### 示例 3：边栏视图中的自定义过滤器属性
 
-除了面向搜索之外，您还可以通过资产选择器自定义各种属性以完善您的搜索，这些属性来自 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 应用程序。 您需要添加以下代码来在应用程序中添加自定义搜索过滤器。在下面的示例中，`Type Filter` 搜索过滤图像、文档或视频中的资源类型或已为搜索添加的过滤器类型。
+除了面向搜索之外，您还可以通过资产选择器自定义各种属性以完善您的搜索，这些属性来自 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 应用程序。 添加以下代码以在应用程序中添加自定义搜索过滤器。 在下面的示例中，`Type Filter` 搜索过滤图像、文档或视频中的资源类型或已为搜索添加的过滤器类型。
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -431,15 +465,125 @@ Use the `path` property to define the folder name that displays automatically wh
 Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
 -->
 
-<!-- Property details to be added here. Referred the ticket https://jira.corp.adobe.com/browse/ASSETS-19023-->
+## 功能设置代码段{#code-snippets}
 
-<!--
-## Asset Selector Object Schema {#object-schema}
+在中定义先决条件 `index.html` 文件或应用程序实施中的类似文件来定义用于访问 [!DNL Experience Manager Assets] 存储库。 完成后，您可以根据需要添加代码片段。
 
-Schema describes the object properties associated with an asset selected using Asset Selector. It uses the combination of data types and their values to validate the object describing the selected Asset using an Asset Selector.
+### 自定义筛选器面板 {#customize-filter-panel}
 
-**Schema Syntax**
-````
+您可以在中添加以下代码片段 `assetSelectorProps` 要自定义滤镜面板的对象：
+
+```
+filterSchema: [
+    {
+    header: 'File Type',
+    groupKey: 'TopGroup',
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    {
+    label: 'Images',
+    value: '<comma separated mimetypes, without space, that denote all images, for e.g., image/>',
+    },
+    {
+    label: 'Videos',
+    value: '<comma separated mimetypes, without space, that denote all videos for e.g., video/,model/vnd.mts,application/mxf>'
+    }
+    ]
+    }
+    ]
+    },
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'type',
+    options: [
+    { label: 'JPG', value: 'image/jpeg' },
+    { label: 'PNG', value: 'image/png' },
+    { label: 'TIFF', value: 'image/tiff' },
+    { label: 'GIF', value: 'image/gif' },
+    { label: 'MP4', value: 'video/mp4' }
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Mime Types',
+    groupKey: 'MimeTypeGroup',
+    }},
+    {
+    fields: [
+    {
+    element: 'checkbox',
+    name: 'property=metadata.application.xcm:keywords.value',
+    options: [
+    { label: 'Fruits', value: 'fruits' },
+    { label: 'Vegetables', value: 'vegetables'}
+    ],
+    columns: 3,
+    },
+    ],
+    header: 'Food Category',
+    groupKey: 'FoodCategoryGroup',
+    }
+],
+```
+
+### 自定义模式视图中的信息 {#customize-info-in-modal-view}
+
+您可以自定义单击以下链接时资源的详细信息视图： ![信息图标](assets/info-icon.svg) 图标。 执行以下代码：
+
+```
+// Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
+const infoPopoverMap = (map) => {
+// for example, to skip `path` from the info popover view
+let defaultPopoverData = PureJSSelectors.getDefaultInfoPopoverData(map);
+return defaultPopoverData.filter((i) => i.label !== 'Path'
+};
+assetSelectorProps.infoPopoverMap = infoPopoverMap;
+```
+
+### 启用或禁用拖放模式 {#enable-disable-drag-and-drop}
+
+将以下属性添加到 `assetSelectorProp` 以启用拖放模式。 要禁用拖放，请替换 `true` 参数与 `false`.
+
+```
+rail: true,
+acvConfig: {
+dragOptions: {
+allowList: {
+'*': true,
+},
+},
+selectionType: 'multiple'
+}
+
+// the drop handler to be implemented
+function drop(e) {
+e.preventDefault();
+// following helps you get the selected assets – an array of objects.
+const data = JSON.parse(e.dataTransfer.getData('collectionviewdata'));
+}
+```
+
+### 资源选择 {#selection-of-assets}
+
+选定资源类型是一个对象数组，其中包含使用 `handleSelection`、`handleAssetSelection` 和 `onDrop` 函数时的资源信息。
+
+执行以下步骤以配置单个或多个资源的选择：
+
+```
+acvConfig: {
+selectionType: 'multiple' // 'single' for single selection
+}
+// the `handleSelection` callback, always gets you the array of selected assets
+```
+
+**架构语法**
+
+```
 interface SelectedAsset {
     'repo:id': string;
     'repo:name': string;
@@ -465,35 +609,72 @@ interface SelectedAsset {
         }>;
     };
 }
-````
+```
 
-**Query Parameters**
+下表描述了选定资源对象的一些重要属性。
 
-| Parameter | Type | Description |
+| 属性 | 类型 | 描述 |
 |---|---|---|
-| repo:id | string | ID of an Asset |
-| repo:name | string | The name of an Asset |
-| repo:path | string | The path of an Asset |
-| repo:size | number | Size of an Asset (in bytes) |
-| repo:createdBy | string | ID of a user who created an Asset |
-| repo: createdDate | string | The timestamp when an asset was created |
-| repo:modifiedBy | string | ID of a user who modified the asset recently |
-| repo:modifyDate | string | The timestamp when the asset was last modified |
-| dc:format | string | MIME type of an Asset |
-| tiff:imageWidth | number | The width of an image type of Asset |
-| tiff:imageLength | number | The height of an image type of Asset |
-| repo:state | string | The `Approved`, `Rejected`, or `Expired`state of an Asset |
-| computedMetadata | string | It is an object that represents a bucket for all the Asset's metadata of all kinds (repository, application or embedded metadata) |
-| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, and so on  |
+| *repo:repositoryId* | 字符串 | 存储资源的存储库的唯一标识符。 |
+| *repo:id* | 字符串 | 资源的唯一标识符。 |
+| *repo:assetClass* | 字符串 | 资源的分类（例如，图像、视频或文档）。 |
+| *repo:name* | 字符串 | 资源的名称，包括文件扩展名。 |
+| *repo:size* | 数字 | 资源的大小，以字节为单位。 |
+| *repo:path* | 字符串 | 资源在存储库中的位置。 |
+| *repo:ancestors* | `Array<string>` | 存储库中资源的祖先项数组。 |
+| *repo:state* | 字符串 | 存储库中资产的当前状态（例如，活动、删除等）。 |
+| *repo:createdBy* | 字符串 | 创建资源的用户或系统。 |
+| *repo:createDate* | 字符串 | 资源的创建日期和时间。 |
+| *repo:modifiedBy* | 字符串 | 上次修改资源的用户或系统。 |
+| *repo:modifyDate* | 字符串 | 资源的上次修改日期和时间。 |
+| *dc:format* | 字符串 | 资源的格式，如文件类型(例如，JPEG、PNG等)。 |
+| *tiff:imageWidth* | 数字 | 资源的宽度。 |
+| *tiff:imageLength* | 数字 | 资源的高度。 |
+| *computedMetadata* | `Record<string, any>` | 一个对象，表示所有类型的所有资源元数据（存储库、应用程序或嵌入式元数据）的存储桶。 |
+| *_links* | `Record<string, any>` | 关联资源的超媒体链接。包括元数据和演绎版等资源的链接。 |
+| *链接(_L)。<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 对象数组，包含有关资源演绎版的信息。 |
+| *链接(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | 字符串 | 演绎版的 URI。 |
+| *链接(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | 字符串 | 演绎版的 MIME 类型。 |
+| *链接(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>’* | 数字 | 演绎版的大小，以字节为单位。 |
+| *链接(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | 数字 | 演绎版的宽度。 |
+| *链接(_L)。<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | 数字 | 演绎版的高度。 |
 
-For the detailed example of Object Schema, click 
--->
+有关属性和详细示例的完整列表，请访问[资源选择器代码示例](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
 
 ## 使用对象架构处理资源选择 {#handling-selection}
 
 `handleSelection` 属性用于处理资源选择器中的单个或多个资源选择。以下示例说明了 `handleSelection` 的使用语法。
 
 ![handle-selection](assets/handling-selection.png)
+
+## 禁用资产的选择 {#disable-selection}
+
+禁用选择用于隐藏或禁用资源或文件夹不可选择。 它会隐藏信息卡或资源中的选择复选框，以防被选择。 要使用此功能，您可以声明要在数组中禁用的资源或文件夹的位置。 例如，如果要禁止选择显示在第一个位置的文件夹，可以添加以下代码：
+`disableSelection: [0]:folder`
+
+可以为数组提供要禁用的mime类型（如图像、文件夹、文件或其他mime类型，如image/jpeg）的列表。 您声明的mime类型将映射到 `data-card-type` 和 `data-card-mimetype` 资产的属性。
+
+此外，具有禁用选择的资产可拖动。 要禁用特定资源类型的拖放，您可以使用 `dragOptions.allowList` 属性。
+
+禁用选择的语法如下：
+
+```
+(args)=> {
+    return(
+        <ASDialogWrapper
+            {...args}
+            disableSelection={args.disableSelection}
+            handleAssetSelection={action('handleAssetSelection')}
+            handleSelection={action('handleSelection')}
+            selectionType={args.selectionType}
+        />
+    );
+}
+```
+
+>[!NOTE]
+>
+> 对于资产，选择复选框处于隐藏状态；而对于文件夹，文件夹处于不可选状态，但仍会显示提及文件夹的导航。
 
 ## 使用资源选择器 {#using-asset-selector}
 
@@ -516,7 +697,7 @@ For the detailed example of Object Schema, click
 
 ### 存储库切换器 {#repository-switcher}
 
-通过资产选择器，您还可以切换存储库以进行资产选择。 您可以从左侧面板中可用的下拉列表中选择所选存储库。下拉列表中可用的存储库选项基于 `index.html` 文件中定义的 `repositoryId` 属性。它基于由已登录用户访问的所选 IMS 组织中的环境。消费者可以传递首选 `repositoryID`，在这种情况下，资源选择器将停止呈现存储库切换器，并且仅呈现给定存储库中的资源。
+通过资产选择器，您还可以切换存储库以进行资产选择。 您可以从左侧面板中可用的下拉列表中选择所选存储库。下拉列表中可用的存储库选项基于 `index.html` 文件中定义的 `repositoryId` 属性。它基于登录用户访问的选定IMS组织的环境。 消费者可以传递首选 `repositoryID`，在这种情况下，资源选择器将停止呈现存储库切换器，并且仅呈现给定存储库中的资源。
 <!--
 It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
 -->
@@ -539,7 +720,7 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 除了全文搜索之外，资产选择器还允许您使用自定义搜索在文件中搜索资产。 您可以在“模态”视图和“边栏”视图模式下使用自定义搜索过滤器。
 
-![custom-search](assets/custom-search.png)
+![custom-search](assets/custom-search1.png)
 
 您也可以创建默认搜索过滤器以保存经常搜索的字段并在以后使用。要为资源创建自定义搜索，可以使用 `filterSchema` 属性。
 
@@ -618,4 +799,26 @@ Asset Selector lets you know the status of your uploaded assets. The status can 
 ### Localization
 
 The integration of Asset Selector with [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] allows localized content appear in your application.
+-->
+
+
+
+<!--Best Practice-->
+<!--
++++**Control default selection of the filter**
+You can make the selection of filter default by implementing the following code snippet:
+
+```
+"defaultValue": [
+    "image/*",
+    "application/*"
+],
+
+{
+    "label": "Documents",
+    "value": "application/*"
+}
+```
+
++++
 -->
