@@ -3,10 +3,10 @@ title: 配置CDN错误页面
 description: 了解如何覆盖默认错误页面，其中将静态文件托管在自托管存储(如Amazon S3或Azure Blob Storage)中，并在使用Cloud Manager配置管道部署的配置文件中引用它们。
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
+source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '376'
+ht-degree: 5%
 
 ---
 
@@ -18,14 +18,21 @@ ht-degree: 1%
 
 在覆盖默认错误页之前，您需要执行以下操作：
 
-* 首先，在Git项目的顶级文件夹中创建此文件夹和文件结构：
+* 在Git项目的顶级文件夹中创建此文件夹和文件结构：
 
 ```
 config/
      cdn.yaml
 ```
 
-* 其次， `cdn.yaml` 配置文件应包含元数据和错误页面引用，如下所述。
+* 此 `cdn.yaml` 配置文件应包含元数据和以下示例中描述的规则。 此 `kind` 参数应设置为 `CDN` 并且版本应设置为架构版本，当前为 `1`.
+
+* 在Cloud Manager中创建目标部署配置管道。 请参阅 [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 和 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**注释**
+
+* RDE当前不支持配置管道。
+* 您可以使用 `yq` 在本地验证配置文件（例如 `yq cdn.yaml`）的 YAML 格式。
 
 ### 配置 {#configuration}
 
