@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
 workflow-type: tm+mt
 source-wordcount: '4908'
 ht-degree: 99%
@@ -856,7 +856,7 @@ ht-degree: 99%
          + [翻译](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自定义组件](/help/edge/docs/forms/custom-components-forms.md)
-         + [表单的实时用户监控](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
+         + [表单的实时用户监控](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + 引用 {#forms-references}
          + [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 资源 {#resources}
