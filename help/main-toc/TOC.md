@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 695389430e3be4cef107aefad44fd7453cc9d36d
+source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
 workflow-type: tm+mt
 source-wordcount: '4908'
 ht-degree: 99%
@@ -840,7 +840,7 @@ ht-degree: 99%
       + [重定向](/help/edge/docs/redirects.md)
    + 构建表单 {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
-      + 开始使用 {#getting-started-eds-forms}
+      + 开始使用 {#getting-started-edge-delivery-services-forms}
          + [快速入门](/help/edge/docs/forms/tutorial.md)
          + [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
          + [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
@@ -850,13 +850,13 @@ ht-degree: 99%
          + [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [使用规则向表单添加动态行为](/help/edge/docs/forms/rules-forms.md)
          + [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
-      + 功能 {#advanced-features-eds-forms}
+      + 功能 {#advanced-features-edge-delivery-services-forms}
          + [表单片段](/help/edge/docs/forms/form-fragments.md)
          + [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [翻译](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [自定义组件](/help/edge/docs/forms/custom-components-forms.md)
-         + [表单的实时用户监控](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
+         + [表单的实时用户监控](/help/edge/docs/forms/real-user-monitoring-for-forms.md)
       + 引用 {#forms-references}
          + [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 资源 {#resources}
