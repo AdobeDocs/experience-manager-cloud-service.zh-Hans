@@ -3,10 +3,10 @@ title: 如何为自适应表单配置提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3901'
-ht-degree: 77%
+source-wordcount: '3914'
+ht-degree: 73%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 77%
 
 * [提交到 REST 端点](#submit-to-rest-endpoint)
 * [发送电子邮件](#send-email)
-* [使用表单数据模型提交](#submit-using-form-data-model)
+* [使用表单数据模式(FDM)l提交](#submit-using-form-data-model)
 * [调用 AEM 工作流](#invoke-an-aem-workflow)
 * [提交到 SharePoint](#submit-to-sharedrive)
 * [提交到 OneDrive](#submit-to-onedrive)
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## 使用表单数据模型提交 {#submit-using-form-data-model}
+## 使用表单数据模型(FDM)提交 {#submit-using-form-data-model}
 
-**[!UICONTROL 使用表单数据模型提交]**&#x200B;提交操作将表单数据模型中指定的数据模型对象的已提交自适应表单数据写入其数据源。在配置该提交操作时，可以选择要将其提交数据写回其数据源的数据模型对象。
+此 **[!UICONTROL 使用表单数据模型提交]** 提交操作将表单数据模型(FDM)中指定数据模型对象的已提交自适应表单数据写入其数据源。 在配置该提交操作时，可以选择要将其提交数据写回其数据源的数据模型对象。
 
-此外，您可以使用表单数据模型和记录文档 (DoR) 将表单附件提交到数据源。有关表单数据模型的信息，请参阅[[!DNL AEM Forms] 数据集成](data-integration.md)。
+此外，您可以使用表单数据模型(FDM)和记录文档(DoR)将表单附件提交到数据源。 有关表单数据模型(FDM)的信息，请参阅 [[!DNL AEM Forms] 数据集成](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -243,7 +243,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 要使用 [!UICONTROL 提交到SharePoint列表] 以自适应表单提交操作：
 
 1. [创建SharePoint列表配置](#create-sharepoint-list-configuration)：用于将AEM Forms连接到Microsoft® Sharepoint List Storage。
-1. [在自适应表单中使用表单数据模型提交](#use-submit-using-fdm)：它将您的自适应表单连接到配置的Microsoft® SharePoint。
+1. [在自适应表单中使用表单数据模型(FDM)提交](#use-submit-using-fdm)：它将您的自适应表单连接到配置的Microsoft® SharePoint。
 
 #### 创建SharePoint列表配置 {#create-sharepoint-list-configuration}
 
@@ -267,14 +267,14 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 1. 选择 **[!UICONTROL 创建]** 创建Microsoft® SharePointList的云配置。
 
 
-#### 在自适应表单中使用表单数据模型提交 {#use-submit-using-fdm}
+#### 在自适应表单中使用表单数据模型(FDM)提交 {#use-submit-using-fdm}
 
 您可以在自适应表单中使用创建的SharePoint列表配置，以在SharePoint列表中保存数据或生成的记录文档。 执行以下步骤以在自适应表单中使用SharePoint List存储配置，如下所示：
 
-1. [使用Microsoft® SharePoint列表配置创建表单数据模型](/help/forms/create-form-data-models.md)
-1. [配置表单数据模型以检索和发送数据](/help/forms/work-with-form-data-model.md#configure-services)
+1. [使用Microsoft® SharePoint列表配置创建表单数据模型(FDM)](/help/forms/create-form-data-models.md)
+1. [配置表单数据模型(FDM)以检索和发送数据](/help/forms/work-with-form-data-model.md#configure-services)
 1. [创建自适应表单](/help/forms/creating-adaptive-form.md)
-1. [使用表单数据模型配置提交操作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [使用表单数据模型(FDM)配置提交操作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 提交表单时，数据将保存在指定的Microsoft® Sharepoint列表存储中。
 
@@ -463,7 +463,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 作为 AEM 安全和强化指南的一部分，配置自定义错误页面，例如 400.jsp、404.jsp 和 500.jsp。如果提交表单时出现 400、404 或 500 错误，则将调用这些处理程序。在发布节点上触发这些错误代码时，也将调用处理程序。您还可以为其他 HTTP 错误代码创建 JSP 页面。
 
-在使用符合架构（其中数据不包含 `<afData>`、`<afBoundData>` 和 `</afUnboundData>` 标签）的 XML 或 JSON 数据预填充表单数据模型或基于架构的自适应表单时，自适应表单的未绑定字段的数据将丢失。该架构可以是 XML 架构、JSON 架构或表单数据模型。未绑定的字段是自适应表单字段，不带 `bindref` 属性。
+当您将包含XML或JSON数据投诉的表单数据模型(FDM)或基于架构的自适应表单预填充到数据不包含的架构时 `<afData>`， `<afBoundData>`、和 `</afUnboundData>` 标签时，自适应表单中无界字段的数据将丢失。 架构可以是XML架构、JSON架构或表单数据模型(FDM)。 未绑定的字段是自适应表单字段，不带 `bindref` 属性。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

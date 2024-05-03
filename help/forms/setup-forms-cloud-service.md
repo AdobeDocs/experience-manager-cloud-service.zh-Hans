@@ -4,10 +4,10 @@ description: 了解如何设置和配置 [!DNL AEM Forms] as a Cloud Service的�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 6%
+source-wordcount: '610'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 * **用户体验(UX)设计器**：用户体验(UX)设计器定义样式、布局和品牌化 [!DNL AEM Forms] 资产。
 
-* **Forms从业者**：Forms从业人员根据UX设计器提供的样式、布局和品牌创建自适应Forms、主题和模板。 该从业人员还创建自适应表单并将其与表单数据模型和AEM Workflow集成。 Forms从业人员通常执行前端相关任务。
+* **Forms从业者**：Forms从业人员根据UX设计器提供的样式、布局和品牌创建自适应Forms、主题和模板。 该从业人员还创建自适应表单并将其与表单数据模型(FDM)和AEM Workflow集成。 Forms从业人员通常执行前端相关任务。
 
 * **Forms开发人员**：Forms开发人员开发自定义表单解决方案。 Forms开发人员通常执行后端开发，例如开发自定义组件、AEM工作流、预填充服务等。
 
@@ -90,7 +90,7 @@ ht-degree: 6%
 
 ## 下一步 {#next-steps}
 
-[设置本地开发环境](setup-local-development-environment.md). 您可以使用本地开发环境创建自适应表单和相关资产（主题、模板、自定义提交操作、预填充服务等）。 并且， [将PDF forms转换为自适应Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans) 无需登录到云开发环境。
+[设置本地开发环境](setup-local-development-environment.md). 您可以使用本地开发环境创建自适应表单和相关资产（主题、模板、自定义提交操作、预填充服务等）。 并且， [将PDF forms转换为自适应Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 无需登录到云开发环境。
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

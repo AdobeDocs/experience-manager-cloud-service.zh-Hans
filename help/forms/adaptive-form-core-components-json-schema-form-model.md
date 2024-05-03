@@ -1,47 +1,39 @@
 ---
-title: 如何为自适应表单设计JSON架构？
-description: 了解如何为自适应表单创建JSON架构，并根据该架构创建自适应表单以生成架构投诉数据。
-feature: Adaptive Forms, Foundation Components
+title: 如何为自适应表单核心组件设计JSON架构？
+description: 了解如何为自适应表单核心组件创建JSON架构，并根据该架构创建自适应表单（核心组件）以生成架构投诉数据。
+feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 9%
+source-wordcount: '1301'
+ht-degree: 4%
 
 ---
 
-# 为自适应表单设计 JSON 架构 {#creating-adaptive-forms-using-json-schema}
+# 为自适应表单设计JSON架构（核心组件）{#creating-adaptive-forms-using-json-schema}
 
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| 核心组件 | [单击此处](/help/forms/adaptive-form-core-components-json-schema-form-model.md) |
-| Foundation | 本文 |
-
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
-
-| 版本 | 文章链接 |
-| -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
-| AEM as a Cloud Service | 本文 |
+| Foundation | [单击此处](/help/forms/adaptive-form-json-schema-form-model.md) |
+| 核心组件 | 本文 |
 
 
 ## 先决条件 {#prerequisites}
 
-使用JSON架构作为自适应表单的表单模型创作时，需要基本了解JSON架构。 建议在阅读本文之前通读以下内容。
+使用JSON架构作为表单模型基于核心组件创作自适应表单时，需要基本了解JSON架构。 建议在阅读本文之前通读以下内容。
 
-* [创建自适应表单](creating-adaptive-form.md)
+* [基于核心组件创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 * [JSON架构](https://json-schema.org/)
 
 ## 使用JSON架构作为表单模型  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager表单支持使用现有JSON架构作为表单模型来创建自适应表单。 此JSON架构表示组织中的后端系统生成或使用数据的结构。 您使用的JSON架构应符合 [v4规范](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms支持使用现有JSON架构作为表单模型，基于核心组件创建自适应表单。 此JSON架构表示组织中的后端系统生成或使用数据的结构。 您使用的JSON架构应符合 [v4规范](https://json-schema.org/draft-04/schema).
 
 使用JSON架构的主要功能包括：
 
-* 在自适应表单的创作模式下，JSON的结构在内容查找器选项卡中显示为树。 您可以将元素从JSON层次结构拖放到自适应表单中。
+* 在自适应表单的创作模式下，JSON的结构在内容查找器选项卡中显示为树。 您可以根据核心组件将元素从JSON层级拖放到自适应表单中。
 * 您可以使用与关联架构兼容的JSON预填充表单。
 * 在提交时，用户输入的数据将作为JSON提交，该JSON与关联的架构保持一致。
 
@@ -59,12 +51,6 @@ JSON元素与自适应表单组件的映射如下所示：
                 "Date of Birth"
               ],
               "description": "Date of birth in DD MMMM, YYYY",
-              "aem:afProperties": {
-                "displayPictureClause": "date{DD MMMM, YYYY}",
-                "displayPatternType": "date{DD MMMM, YYYY}",
-                "validationPatternType": "date{DD MMMM, YYYY}",
-                "validatePictureClause": "date{DD MMMM, YYYY}",
-                "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
 ```
 
@@ -246,11 +232,7 @@ JSON元素与自适应表单组件的映射如下所示：
      "type": "boolean"
     },
     "phone": {
-     "type": "number",
-     "aem:afProperties": {
-      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-      "guideNodeClass": "guideTelephone"
-     }
+     "type": "number"
     },
     "address": {
      "type": "string"
@@ -346,9 +328,10 @@ JSON元素与自适应表单组件的映射如下所示：
 
 上例定义了一个客户记录，其中每个客户都有一个送货地址和账单地址。 两个地址的结构相同（地址具有街道地址、城市和州/省），因此最好不要重复这些地址。 它还使得添加和删除字段对于任何未来的更改都非常容易。
 
-## 在JSON架构定义中预配置字段 {#pre-configuring-fields-in-json-schema-definition}
+<!--
+## Pre-Configuring fields in JSON Schema Definition {#pre-configuring-fields-in-json-schema-definition}
 
-您可以使用 **aem：afProperties** 属性，用于预配置要映射到自定义自适应表单组件的JSON架构字段。 下面列出了一个示例：
+You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom Adaptive Form component. An example is listed below:
 
 ```json
 {
@@ -356,16 +339,13 @@ JSON元素与自适应表单组件的映射如下所示：
         "sizeInMB": {
             "type": "integer",
             "minimum": 16,
-            "maximum": 512,
-            "aem:afProperties" : {
-                 "sling:resourceType" : "/apps/fd/af/components/guideTextBox",
-                 "guideNodeClass" : "guideTextBox"
-             }
+            "maximum": 512
         }
     },
     "required": [ "sizeInMB" ],
     "additionalProperties": false
 }
+
 ```
 
 <!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
@@ -641,7 +621,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## 限制自适应表单组件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
-您可以向JSON架构元素添加以下限制，以限制自适应表单组件可以接受的值：
+您可以向JSON架构元素添加以下限制，以限制自适应表单核心组件可以接受的值：
 
 <table>
  <tbody>
@@ -776,6 +756,10 @@ Here is the sample JSON code for previously mentioned examples.
 **JSON架构文件的扩展名应该是什么？**
 
 JSON架构文件的扩展名必须是.schema.json。 例如， &lt;filename>.schema.json。
+
+**是 `aem:afProperties` 在基于核心组件的自适应Forms中，是否作为JSON架构的一部分受支持？**
+
+不， `aem:afProperties` 不支持核心组件。 仅基础组件支持此属性。
 
 ## 另请参阅 {#see-also}
 

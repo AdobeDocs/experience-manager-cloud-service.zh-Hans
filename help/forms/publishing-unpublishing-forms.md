@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 您的自适应Forms可能会利用一些未自动发布的配置、设置和自定义设置。 建议您在发布自适应表单之前发布或激活这些资源。
 
 * 可编辑的自适应表单模板
-* Adobe Sign、Typekit、reCAPTCHA和表单数据模型的Cloud Service配置
+* Adobe Sign、Typekit、reCAPTCHA和表单数据模型(FDM)的Cloud Service配置
 * 仅当用户具有管理员权限时，才会激活其他Cloud Service配置。
 * 自定义。 这些包括但不限于：
 

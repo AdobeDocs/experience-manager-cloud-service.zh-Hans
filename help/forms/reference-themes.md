@@ -3,16 +3,16 @@ title: 如何获取基于基础组件的自适应表单的参考主题？
 description: 使用提供的参考自适应表单主题、模板和表单数据模型快速入门。
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 6%
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
 # Formsas a Cloud Service的参考资源 {#reference-themes}
 
-您可以通过安装参考主题、模板和表单数据模型 [参考资源包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助于快速启动和加速自适应Forms开发。 您可以使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 以将此包部署到您的AEM Formsas a Cloud Service环境。
+您可以通过安装参考主题、模板和表单数据模型(FDM) [参考资源包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). 它有助于快速启动和加速自适应Forms开发。 您可以使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 以将此包部署到您的AEM Formsas a Cloud Service环境。
 
 该资源包中包含的参考资源包括：
 
@@ -115,7 +115,7 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 基本模板提供了一个空画布，供您为组织的自适应表单创建初始结构。
 
-## 表单数据模型
+## 表单数据模型(FDM)
 
 ### Microsoft® Dynamics 365
 

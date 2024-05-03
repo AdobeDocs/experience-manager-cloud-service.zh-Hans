@@ -6,10 +6,11 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2465'
-ht-degree: 97%
+source-wordcount: '2468'
+ht-degree: 95%
 
 ---
 
@@ -26,8 +27,8 @@ ht-degree: 97%
 
 自适应表单可让您创建引人入胜、响应式、动态和自适应的表单。[!DNL AEM Forms] 提供了一个直观的用户界面和许多现成组件，可用于创建和使用自适应表单。您可以选择基于表单模型或架构创建自适应表单，也可以选择不基于表单模型创建自适应表单。请务必仔细选择不仅符合您的要求，而且可扩展现有基础设施投资和资源的表单模型。您可以从以下选项中进行选择来创建自适应表单：
 
-* **使用表单数据模型**
-  [数据集成](data-integration.md)可让您将来自不同数据源的实体和服务集成到可用于创建自适应表单的表单数据模型中。如果您创建的自适应表单需要从多个数据源获取数据和向多个数据源写入数据，请选择表单数据模型。
+* **使用表单数据模型(FDM)**
+  [数据集成](data-integration.md) 允许您将来自不同数据源的实体和服务集成到可用于创建自适应Forms的表单数据模型(FDM)中。 如果要创建的自适应表单涉及从多个数据源获取数据以及将数据写入多个数据源，请选择表单数据模型(FDM)。
 
 * **使用 XDP 表单模板**
 如果您投资于基于 XFA 的表单或 XDP 表单，那么这将是理想的表单模型。它提供了一种将基于 XFA 的表单转换为自适应表单的直接方法。任何现有 XFA 规则都保留在关联的自适应表单中。生成的自适应表单支持 XFA 结构，例如验证、事件、属性和模式。

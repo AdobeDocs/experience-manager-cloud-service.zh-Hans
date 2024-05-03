@@ -1,6 +1,6 @@
 ---
 title: 如何从AEM 6.5 Forms迁移到AEM Formsas a Cloud Service？
-description: 迁移到AEMas a Cloud Service历程快速入门 |Adobe Experience Manager。 从迁移 [!DNL AEM Forms] （内部部署和AMS环境）到 [!DNL AEM Forms] as a Cloud Service的环境。
+description: 迁移到AEMas a Cloud Service历程快速入门 | Adobe Experience Manager。 从迁移 [!DNL AEM Forms] （内部部署和AMS环境）到 [!DNL AEM Forms] as a Cloud Service的环境。
 Keywords: 6.5 forms to cloud service, 6.5 forms to cs, migrate 6.5 forms to CS, migrate 6.5 forms to cloud service, upgrade 6.5 forms to CS, move 6.5 forms to CS, upgrade AEM 6.5 to CS, AEM Forms 6.5 to Cloud Service, AEM form migration to cloud service, Migration Journey to AEM as a Cloud Service | Adobe Experience Manager.
 contentOwner: khsingh
 feature: Adaptive Forms
@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1433'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 | AEM as a Cloud Service | 本文 |
 
 您可以从以下位置迁移或升级自适应Forms、主题、模板和云配置： <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> OSGi上的AEM 6.5 Forms至 [!DNL AEM] as a Cloud Service。 在迁移这些资产之前，请使用迁移实用程序将早期版本中使用的格式转换为中使用的格式。 [!DNL AEM] as a Cloud Service。
-让我们开始迁移到AEMas a Cloud Service |Adobe Experience Manager。 运行Migration Utility时，将更新以下资产：
+让我们开始迁移到AEMas a Cloud Service | Adobe Experience Manager。 运行Migration Utility时，将更新以下资产：
 
 * 自适应Forms的自定义组件
 * 自适应Forms模板和主题
@@ -56,7 +56,7 @@ ht-degree: 1%
 |Configurations|<li>Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. </li> <li>If you use custom bundles, recompile your code with latest version of adobe-aemfd-docmanager before using these bundles with Forms as a Cloud Service.</li> |
 | Document Manipulation APIs (Assembler Service)| The service does not support operations dependent on other services or applications: <li>Conversion of documents in a non-PDF format to a PDF format is not supported. For example, Microsoft Word to PDF, Microsoft Excel to PDF, and HTML to PDF are not supported</li><li>Adobe Distiller-based conversions are not supported. For example, PostScript(PS) to PDF</li><li>Forms Service-based conversions are not supported. For example, XDP to PDF Forms.</li><li>The service does not support converting a Signed PDF or Transparent PDF to another PDF format.</li>| -->
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 要确保从AEM Forms 6.5顺利过渡到AEMas a Cloud Service环境，请务必考虑以下先决条件：
 
@@ -128,14 +128,14 @@ ht-degree: 1%
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. 运行 [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). 在上指定参数时 **[!UICONTROL 创建迁移集]** 屏幕，指定自适应Forms、主题、模板、表单数据模型、Cloud Service、自定义组件和其他特定于AEM Forms的资源到 **[!UICONTROL 要包含的路径]** 选项。 它添加指定的内容 [!DNL AEM Forms] 资源到迁移集。
+1. 运行 [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). 在上指定参数时 **[!UICONTROL 创建迁移集]** 屏幕，指定自适应Forms、主题、模板、表单数据模型(FDM)、Cloud Service、自定义组件和其他特定于AEM Forms的资源到 **[!UICONTROL 要包含的路径]** 选项。 它添加指定的内容 [!DNL AEM Forms] 资源到迁移集。
 
 ## 各种特定于AEM Forms的资源的路径
 
 从AEM Forms 6.5迁移到云服务时，您可以在以下位置找到特定于AEM Forms的资源：
 
 * **自适应Forms**：您可以在以下位置找到自适应表单： `/content/dam/formsanddocuments/`和 `/content/forms/af`. 例如，对于标题为WKND注册的自适应表单，请添加路径 `/content/dam/formsanddocuments/wknd-registration` 和 `/content/forms/af/wknd-registration`.
-* **表单数据模型**：您可以在以下位置找到所有表单数据模型： `/content/dam/formsanddocuments-fdm`. 例如：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`。
+* **表单数据模型**：您可以在找到所有表单数据模型(FDM) `/content/dam/formsanddocuments-fdm`. 例如：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`。
 
 * **客户端库**：客户端库的默认路径为 `/etc/clientlibs/fd/theme`.
 
@@ -143,7 +143,7 @@ ht-degree: 1%
 
 * **自适应表单主题和客户端库**：主题的默认路径为 ` /content/dam/formsanddocuments-themes/` 客户端库的默认路径为 `/etc/clientlibs/fd/theme`. 例如，对于名为WKND主题的模板，请添加路径 ` /content/dam/formsanddocuments-themes/wkndtheme` 和客户端库的主题位于 `/etc/clientlibs/reference-themes/wkndtheme-3-0`. 您还可以在其他自定义路径拥有主题和客户端库。
 
-* **云配置**：您可以在以下位置找到云配置： `/conf/`. 例如，表单数据模型云配置位于 `/conf/global/settings/cloudconfigs/fdm`.
+* **云配置**：您可以在以下位置找到云配置： `/conf/`. 例如，表单数据模型(FDM)云配置位于 `/conf/global/settings/cloudconfigs/fdm`.
 
 * **工作流模型**：您可以在以下位置找到AEM工作流模型： `/conf/global/settings/workflow/models/`. 例如，对于名为“WKND注册”的工作流模型，请添加路径 `/conf/global/settings/workflow/models/wknd-registration`
 

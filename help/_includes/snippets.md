@@ -1,6 +1,6 @@
 ---
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
-workflow-type: ht
+source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * [将自适应表单连接到 Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [将自适应表单连接到 Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [将自适应表单连接到 Microsoft Azure Blob 存储](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [将自适应表单连接到 Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [将自适应表单连接到 Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [在 AEM 自适应表单中使用 Adobe Sign](/help/forms/working-with-adobe-sign.md)
 * [为自适应表单添加新区域设置](/help/forms/supporting-new-language-localization-core-components.md)
 * [将自适应表单数据发送到数据库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
@@ -51,7 +51,7 @@ ht-degree: 100%
 * [调用 AEM 工作流](/help/forms/configure-submit-action-workflow.md)
 * [提交至 Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交到 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [将自适应表单连接到 Salesforce 应用程序](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
 * [将自适应表单连接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## 另请参阅 {#see-more-forms-eds}

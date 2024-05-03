@@ -4,9 +4,9 @@ description: 使用模板编辑器基于核心组件创建自适应表单模板�
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1962'
 ht-degree: 4%
 
 ---
@@ -164,7 +164,7 @@ Header and footer are added in the Initial Content layer.
 1. 选择 **[!UICONTROL 内容浏览器]** 位于左侧。
 1. 转到表单容器 **[!UICONTROL 设置]**.
 1. 选择 **[!UICONTROL 数据模型]**.
-1. 通过以下方式选择您的表单数据模型 **[!UICONTROL 选择表单数据模型]** 并保存配置。
+1. 通过以下方式选择表单数据模型(FDM) **[!UICONTROL 选择表单数据模型]** 并保存配置。
 
 ![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 

@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签名文档步骤，生成打印输出步骤，生成非交互式PDF输出
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '7367'
+source-wordcount: '7379'
 ht-degree: 0%
 
 ---
@@ -85,12 +85,12 @@ ht-degree: 0%
 * **[!UICONTROL 对于已完成的任务，将自适应表单渲染为]**：将任务标记为完成时，可以将自适应表单渲染为只读自适应表单或PDF文档。 您需要启用记录文档选项或基于表单模板的自适应Forms才能将自适应表单渲染为记录文档。
 * **[!UICONTROL 预填充]**：下面列出的以下字段用作任务的输入：
 
-   * **[!UICONTROL 使用以下方式选择输入数据文件]**：输入数据文件（.json、.xml、.doc或表单数据模型）的路径。 您可以使用相对于有效负荷的路径检索输入数据文件，或检索存储在Document、XML或JSON数据类型的变量中的文件。 例如，文件包含通过AEM收件箱应用程序为表单提交的数据。 示例路径为 [Payload_Directory]/workflow/data.
+   * **[!UICONTROL 使用以下方式选择输入数据文件]**：输入数据文件(.json、.xml、.doc或表单数据模型(FDM))的路径。 您可以使用相对于有效负荷的路径检索输入数据文件，或检索存储在Document、XML或JSON数据类型的变量中的文件。 例如，文件包含通过AEM收件箱应用程序为表单提交的数据。 示例路径为 [Payload_Directory]/workflow/data.
    * **[!UICONTROL 使用以下方式选择输入附件]**：该位置可用的附件会附加到与任务关联的表单。 路径可以相对于有效负荷或检索存储在文档变量中的附件。 示例路径为 [Payload_Directory]/attachments/。 您可以指定相对于有效负荷放置的附件，也可以使用文档类型（数组列表>文档）变量来指定自适应表单的输入附件。
 
   <!-- 
     
-    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
@@ -108,13 +108,13 @@ ht-degree: 0%
 
 * **[!UICONTROL 提交的信息]**：下面列出的以下字段用作任务的输出位置：
 
-   * **[!UICONTROL 保存输出数据文件，使用]**：保存数据文件（.json、.xml、.doc或表单数据模型）。 数据文件包含通过关联表单提交的信息。 您可以使用相对于有效负荷的路径保存输出数据文件，或将其存储在Document、XML或JSON数据类型的变量中。 例如， [Payload_Directory]/Workflow/data ，其中数据是文件。
+   * **[!UICONTROL 保存输出数据文件，使用]**：保存数据文件(.json、.xml、.doc或表单数据模型(FDM))。 数据文件包含通过关联表单提交的信息。 您可以使用相对于有效负荷的路径保存输出数据文件，或将其存储在Document、XML或JSON数据类型的变量中。 例如， [Payload_Directory]/Workflow/data ，其中数据是文件。
    * **[!UICONTROL 保存附件，使用]**：保存任务中提供的表单附件。 您可以使用相对于有效负荷的路径保存附件，或将其存储在Document数据类型的数组列表的变量中。
    * **[!UICONTROL 保存记录文档，使用]**：保存记录文档的路径。 例如， [Payload_Directory]/DocumentofRecord/credit-card.pdf. 您可以使用相对于有效负荷的路径保存记录文档，或将其存储在文档数据类型的变量中。 如果您选择 **[!UICONTROL 相对于有效负荷]** 选项，如果路径字段留空，则不生成记录文档。 仅当从“类型”下拉列表中选择“自适应表单”时，此选项才可用。
 
   <!-- 
     
-    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model (FDM) data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
     
@@ -273,9 +273,9 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 * **[!UICONTROL 将输出保存在有效负荷中]**：将输出文档保存在有效负荷文件夹中，如果有效负荷是文件，则它会覆盖有效负荷。
 * **[!UICONTROL 输出文档的映射]**：通过为每个文档添加一个条目，指定显式保存每个文档文件的位置。 每个条目表示文档以及保存文档的位置。 如果有多个输出文档，则使用此选项。
 
-## 调用表单数据模型服务步骤 {#invoke-form-data-model-service-step}
+## 调用表单数据模型(FDM)服务步骤 {#invoke-form-data-model-service-step}
 
-您可以使用 [[!DNL AEM Forms] 数据集成](data-integration.md) 配置并连接到不同的数据源。 这些数据源可以是Web服务、REST服务、OData服务和CRM解决方案。 [!DNL AEM Forms] 通过数据集成，您可以创建包含各种服务的表单数据模型，以对配置的数据库执行数据检索、添加和更新操作。 您可以使用 **[!UICONTROL 调用数据模型服务步骤]** 选择表单数据模型(FDM)并使用FDM的服务来检索、更新或向不同的数据源添加数据。
+您可以使用 [[!DNL AEM Forms] 数据集成](data-integration.md) 配置并连接到不同的数据源。 这些数据源可以是Web服务、REST服务、OData服务和CRM解决方案。 [!DNL AEM Forms] 通过数据集成，您可以创建包含各种服务的表单数据模型(FDM)，以在配置的数据库上执行数据检索、添加和更新操作。 您可以使用 **[!UICONTROL 调用数据模型服务步骤]** 选择表单数据模型(FDM)并使用FDM的服务来检索、更新或向不同的数据源添加数据。
 
 为说明该步骤的字段输入，使用了以下数据库表和JSON文件作为示例：
 
@@ -330,14 +330,14 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
   }
 ```
 
-调用表单数据模型服务步骤包含以下列出的字段，以方便表单数据模型操作：
+调用表单数据模型(FDM)服务步骤具有以下列出的字段，以方便表单数据模型(FDM)操作：
 
 * **[!UICONTROL 标题]**：步骤的标题。 它有助于标识工作流编辑器中的步骤。
 * **[!UICONTROL 描述]**：当您在共享开发环境中工作时，此说明对其他流程开发人员很有用。
 
-* **[!UICONTROL 表单数据模型路径]**：浏览并选择服务器上存在的表单数据模型。
+* **[!UICONTROL 表单数据模型路径]**：浏览并选择服务器上存在的表单数据模型(FDM)。
 
-* **[!UICONTROL 错误和验证]**：利用选项，可捕获错误消息，并为检索到的数据和发送到数据源的数据指定验证选项。 通过这些更改，您可以确保传递到“调用表单数据模型服务”步骤的数据遵循数据源定义的数据约束。 有关更多详细信息，请参阅 [自动验证输入数据](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL 错误和验证]**：利用选项，可捕获错误消息，并为检索到的数据和发送到数据源的数据指定验证选项。 通过这些更改，您可以确保传递到调用表单数据模型(FDM)服务步骤的数据遵循数据源定义的数据约束。 有关更多详细信息，请参阅 [自动验证输入数据](work-with-form-data-model.md#automated-validation-of-input-data)
 
 * **[!UICONTROL 验证级别]**：验证分为三类：基本、完全和关：
 
@@ -353,7 +353,7 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 * **[!UICONTROL 在变量中保存错误详细信息]**：您可以将错误详细信息存储在 [JSON类型变量](variable-in-aem-workflows.md).
 
-* **[!UICONTROL 服务]**：所选表单数据模型提供的服务的列表。
+* **[!UICONTROL 服务]**：所选表单数据模型(FDM)提供的服务列表。
 * **[!UICONTROL 服务输入]** > **[!UICONTROL 使用文本值、变量或工作流元数据以及JSON文件提供输入数据]**：一个服务可以有多个参数。 选择选项以从工作流元数据属性、JSON对象、变量获取服务参数的值，或直接在提供的文本框中输入值：
 
    * **[!UICONTROL 文本]**：在知道要指定的确切值时使用选项。 例如，srose@we.info。
@@ -365,16 +365,16 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
      例如，如果CRX存储库中的相对于有效负荷文件夹在 `attachment\attachment-folder` 位置，指定 `attachment\attachment-folder` 在文本框中，选择 **[!UICONTROL 相对于有效负荷]** 选项。
 
    * **[!UICONTROL JSON点表示法]**：当要使用的值位于JSON文件中时，使用选项。 例如，insurance.customerDetails.emailAddress。 “JSON点表示法”选项仅在从输入JSON选项中选择了映射输入字段时可用。
-   * **[!UICONTROL 映射来自输入JSON的输入字段]**：指定JSON文件的路径，以从JSON文件中获取某些服务参数的输入值。 JSON文件的路径可以是相对于有效负载的相对路径，也可以是绝对路径，您也可以使用JSON或表单数据模型类型的变量选择输入JSON文档。
+   * **[!UICONTROL 映射来自输入JSON的输入字段]**：指定JSON文件的路径，以从JSON文件中获取某些服务参数的输入值。 JSON文件的路径可以是相对于有效负载的相对路径，也可以是绝对路径，您也可以使用JSON或表单数据模型(FDM)类型的变量选择输入JSON文档。
 
 * **[!UICONTROL 服务输入]** > **[!UICONTROL 使用变量或JSON文件提供输入数据]**：选择相应选项，以从在绝对路径、有效负荷的相对路径或变量中保存的JSON文件中获取所有参数的值。
-* **[!UICONTROL 使用以下方式选择输入JSON文档]**：包含所有服务参数的值的JSON文件。 JSON文件的路径可以是 **[!UICONTROL 相对于有效负荷]** 或 **[!UICONTROL 绝对路径]**. 您还可以使用JSON或表单数据模型数据类型的变量检索输入JSON文档。
+* **[!UICONTROL 使用以下方式选择输入JSON文档]**：包含所有服务参数的值的JSON文件。 JSON文件的路径可以是 **[!UICONTROL 相对于有效负荷]** 或 **[!UICONTROL 绝对路径]**. 您还可以使用JSON或表单数据模型(FDM)数据类型的变量检索输入JSON文档。
 
 * **[!UICONTROL JSON点表示法]**：将字段留空可使用指定JSON文件的所有对象作为服务参数的输入。 要从指定的JSON文件中读取特定JSON对象作为服务参数的输入，请为JSON对象指定点表示法，例如，如果您的JSON与部分开头列出的类似，请指定insurance.customerDetails以提供客户的所有详细信息作为服务的输入。
 * **[!UICONTROL 服务输出]** > **[!UICONTROL 将输出值映射并写入变量或元数据]**：选择选项以将输出值另存为crx-repository中工作流实例元数据节点的属性。 指定元数据属性的名称，然后选择要与元数据属性映射的相应服务输出属性，例如，将输出服务返回的phone_number映射到工作流元数据的phone_number属性。 同样，可以将输出存储在Long数据类型的变量中。 在为选择属性时 **[!UICONTROL 要映射的服务输出属性]** 选项，则只会为填充能够存储选定属性的数据的变量 **[!UICONTROL 将输出保存到]** 选项。
 
 * **[!UICONTROL 服务输出]** > **[!UICONTROL 将输出保存到变量或JSON文件]**：选择选项以将输出值保存在JSON文件中的绝对路径、有效负荷的相对路径或变量中。
-* **[!UICONTROL 使用以下选项保存输出JSON文档]**：保存输出JSON文件。 输出JSON文件的路径可以是相对于有效负载的相对路径，也可以是绝对路径。 您还可以使用JSON或表单数据模型数据类型的变量保存输出JSON文件。
+* **[!UICONTROL 使用以下选项保存输出JSON文档]**：保存输出JSON文件。 输出JSON文件的路径可以是相对于有效负载的相对路径，也可以是绝对路径。 还可使用JSON或表单数据模型(FDM)数据类型的变量保存输出JSON文件。
 
 
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
+source-git-commit: 1b5dec707eb63a43a3e6240c785ed9ef00a3a3c4
 workflow-type: tm+mt
-source-wordcount: '4892'
+source-wordcount: '4901'
 ht-degree: 99%
 
 ---
@@ -619,7 +619,7 @@ ht-degree: 99%
          + [将 AEM Forms 连接到数据库或数据源](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
          + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [使用 OAuth 2.0 客户端凭据流将自适应表单连接到 Salesforce 应用程序](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [使用 OAuth 2.0 客户端凭据流将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
          + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
          + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
          + [创建表单数据模型](/help/forms/create-form-data-models.md)
@@ -651,6 +651,7 @@ ht-degree: 99%
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [创建和使用自定义函数](/help/forms/create-and-use-custom-functions.md)
             + [向基于核心组件的自适应表单模板添加规则](/help/forms/rule-editor-core-components.md)
+            + [为自适应表单设计JSON架构（核心组件）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [向自适应表单添加版本控制、评论和注释](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比较自适应表单](/help/forms/compare-forms.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}

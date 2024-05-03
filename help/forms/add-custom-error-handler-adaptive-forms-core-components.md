@@ -6,10 +6,10 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: d75d448d631da7af3a37192f0890a38c760ab09b
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2331'
-ht-degree: 96%
+source-wordcount: '2332'
+ht-degree: 95%
 
 ---
 
@@ -180,7 +180,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 >[!NOTE]
 >
-> * 要将错误处理程序与规则编辑器的调用服务操作结合使用，请使用表单数据模型配置自适应表单。
+> * 要将错误处理程序与规则编辑器的调用服务操作结合使用，请使用表单数据模型(FDM)配置自适应Forms。
 > * 如果错误响应位于标准架构中，则提供默认错误处理程序以在字段上显示错误消息。还可以从自定义错误处理程序函数调用默认错误处理程序。
 
 利用规则编辑器，您可以：

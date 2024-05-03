@@ -3,9 +3,9 @@ title: 如何在Experience Manager Sites页面上创建Forms门户？
 description: 了解如何在AEM Sites页面上创建Forms Portal并使用现成的核心组件。
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1786'
 ht-degree: 4%
 
 ---
@@ -83,7 +83,7 @@ AEM Forms提供了以下开箱即用的门户组件：
 
 ## 为自适应Forms配置Azure存储 {#configure-azure-storage-adaptive-forms}
 
-[[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供 [!DNL Azure] 用于集成表单的存储配置 [!DNL Azure] 存储服务。 表单数据模型可用于创建与之交互的自适应Forms [!DNL Azure] 服务器启用业务工作流。
+[[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供 [!DNL Azure] 用于集成表单的存储配置 [!DNL Azure] 存储服务。 表单数据模型(FDM)可用于创建与之交互的自适应Forms [!DNL Azure] 服务器启用业务工作流。
 
 ### 创建 Azure 存储配置 {#create-azure-storage-configuration}
 

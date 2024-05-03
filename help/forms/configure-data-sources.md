@@ -1,13 +1,13 @@
 ---
 title: 如何配置数据源？
-description: 了解如何将RESTful Web服务、基于SOAP的Web服务和OData服务配置为表单数据模型的数据源。
+description: 了解如何将RESTful Web服务、基于SOAP的Web服务和OData服务配置为表单数据模型(FDM)的数据源。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2129'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 ## 配置关系数据库 {#configure-relational-database}
 
-### 前提条件
+### 先决条件
 
 在使用配置关系数据库之前 [!DNL Experience Manager] Web控制台配置，必须：
 * [通过Cloud Manager API启用高级联网](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因为默认情况下端口处于禁用状态。
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 1. 选择 **[!UICONTROL 保存]** 以保存配置。
 
-现在，您可以将配置的关系数据库与表单数据模型结合使用。
+现在，您可以将配置的关系数据库与表单数据模型(FDM)一起使用。
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -84,7 +84,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and select to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model (FDM). Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -95,7 +95,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
    >[!NOTE]
    >
-   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
+   >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
 1. Select **[!UICONTROL Save]** to save the configuration. -->
 
@@ -178,13 +178,13 @@ RESTful服务Open API规范版本3.0不支持的一些操作包括：
 
 请参阅 [OpenAPI 3.0规范](https://swagger.io/specification/v3/) 以了解详细信息。
 
-### 表单数据模型HTTP客户端配置可优化性能 {#fdm-http-client-configuration}
+### 表单数据模型(FDM) HTTP客户端配置可优化性能 {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] 在与RESTful Web服务集成时形成数据模型，因为数据源包括用于性能优化的HTTP客户端配置。
 
 设置以下属性 **[!UICONTROL REST数据源的表单数据模型HTTP客户端配置]** 用于指定正则表达式的配置：
 
-* 使用 `http.connection.max.per.route` 属性，用于设置表单数据模型和RESTful Web服务之间允许的最大连接数。 默认值为20个连接。
+* 使用 `http.connection.max.per.route` 属性，用于设置表单数据模型(FDM)和RESTful Web服务之间允许的最大连接数。 默认值为20个连接。
 
 * 使用 `http.connection.max` 属性，指定每个路由允许的最大连接数。 默认值为40个连接。
 
@@ -212,7 +212,7 @@ RESTful服务Open API规范版本3.0不支持的一些操作包括：
 
 1. 在 [!UICONTROL REST数据源的表单数据模型HTTP客户端配置] 对话框：
 
-   * 在中指定表单数据模型和RESTful Web服务之间允许的最大连接数 **[!UICONTROL 连接限制总数]** 字段。 默认值为20个连接。
+   * 在中指定表单数据模型(FDM)和RESTful Web服务之间允许的最大连接数 **[!UICONTROL 连接限制总数]** 字段。 默认值为20个连接。
 
    * 指定中每个路由允许的最大连接数 **[!UICONTROL 每个路由的连接限制]** 字段。 缺省值为两个连接。
 
@@ -266,7 +266,7 @@ OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience 
 
 >[!NOTE]
 >
-> 表单数据模型支持 [OData版本4](https://www.odata.org/documentation/).
+> 表单数据模型(FDM)支持 [OData版本4](https://www.odata.org/documentation/).
 >有关配置的分步指南 [!DNL Microsoft®® Dynamics 365]，在线或内部部署，请参阅 [[!DNL Microsoft® Dynamics] OData配置](ms-dynamics-odata-configuration.md).
 
 1. 转到 **[!UICONTROL “工具”>“Cloud Service”>“数据源”]**. 选择以选择要创建云配置的文件夹。
@@ -283,7 +283,7 @@ OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience 
 
    >[!NOTE]
    >
-   选择要连接的OAuth 2.0身份验证类型 [!DNL Microsoft®® Dynamics] 使用OData端点作为服务根的服务。
+   >选择要连接的OAuth 2.0身份验证类型 [!DNL Microsoft®® Dynamics] 使用OData端点作为服务根的服务。
 
 1. 选择 **[!UICONTROL 创建]** 以创建OData服务的云配置。
 
@@ -315,7 +315,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
@@ -328,7 +328,7 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## 后续步骤 {#next-steps}
 
-您已配置数据源。 接下来，您可以创建一个表单数据模型，或者，如果您已创建没有数据源的表单数据模型，则可以将其与您配置的数据源关联。 请参阅 [创建表单数据模型](create-form-data-models.md) 以了解详细信息。
+您已配置数据源。 接下来，您可以创建表单数据模型(FDM)，或者，如果您已经在不使用数据源的情况下创建了表单数据模型(FDM)，则可以将其与配置的数据源关联。 请参阅 [创建表单数据模型](create-form-data-models.md) 以了解详细信息。
 
 
 <!--

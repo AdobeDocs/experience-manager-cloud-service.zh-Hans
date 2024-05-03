@@ -1,13 +1,13 @@
 ---
 title: 如何配置 [!DNL Microsoft Dynamics] AEM Forms的OData？
-description: 了解如何基于中定义的实体、属性和服务创建表单数据模型 [!DNL Microsoft Dynamics] 服务。
+description: 了解如何基于中定义的实体、属性和服务创建表单数据模型(FDM) [!DNL Microsoft Dynamics] 服务。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 39d788854c086b7f4c45d77bfea42fa687e08769
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1012'
 ht-degree: 2%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 2%
 
 ![数据集成](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] 是一款客户关系管理(CRM)和企业资源规划(ERP)软件，可提供用于创建和管理客户帐户、联系人、潜在客户、机会和案例的企业解决方案。 [[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供OData云服务配置以将Forms与在线和本地集成 [!DNL Microsoft Dynamics] 服务器。 它使您能够根据中定义的实体、属性和服务来创建表单数据模型 [!DNL Microsoft Dynamics] 服务。 表单数据模型可用于创建与之交互的自适应Forms [!DNL Microsoft Dynamics] 服务器启用业务工作流。 例如：
+[!DNL Microsoft Dynamics] 是一款客户关系管理(CRM)和企业资源规划(ERP)软件，可提供用于创建和管理客户帐户、联系人、潜在客户、机会和案例的企业解决方案。 [[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供OData云服务配置以将Forms与在线和本地集成 [!DNL Microsoft Dynamics] 服务器。 它使您能够根据中定义的实体、属性和服务创建表单数据模型(FDM) [!DNL Microsoft Dynamics] 服务。 表单数据模型(FDM)可用于创建与之交互的自适应Forms [!DNL Microsoft Dynamics] 服务器启用业务工作流。 例如：
 
 * 查询 [!DNL Microsoft Dynamics] 数据服务器并预填充Adaptive Forms
 * 将数据写入 [!DNL Microsoft Dynamics] 关于自适应表单提交
-* 将数据写入 [!DNL Microsoft Dynamics] 通过表单数据模型中定义的自定义实体，反之亦然
+* 将数据写入 [!DNL Microsoft Dynamics] 通过表单数据模型(FDM)中定义的自定义实体，反之亦然
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 在开始设置和配置之前 [!DNL Microsoft Dynamics]，确保您具有：
 
@@ -136,20 +136,20 @@ OData服务由其服务根URL标识。 在中配置OData服务 [!DNL Experience 
 
    1. 选择 **[!UICONTROL OAuth 2.0]** 作为身份验证类型。
 
-   1. 将缺省值替换为 **[!UICONTROL 客户端ID]** (也称为 **应用程序Id**)， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]**， **[!UICONTROL 刷新令牌URL]**， **[!UICONTROL 访问令牌URL]**、和 **[!UICONTROL 资源]** 字段及其值 [!DNL Microsoft Dynamics] 服务配置。 必须在以下位置指定动态实例URL： **[!UICONTROL 资源]** 要配置的字段 [!DNL Microsoft Dynamics] 使用表单数据模型。 使用服务根URL派生动态实例URL。 例如， [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. 将缺省值替换为 **[!UICONTROL 客户端ID]** (也称为 **应用程序Id**)， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]**， **[!UICONTROL 刷新令牌URL]**， **[!UICONTROL 访问令牌URL]**、和 **[!UICONTROL 资源]** 字段及其值 [!DNL Microsoft Dynamics] 服务配置。 必须在以下位置指定动态实例URL： **[!UICONTROL 资源]** 要配置的字段 [!DNL Microsoft Dynamics] 表单数据模型(FDM)。 使用服务根URL派生动态实例URL。 例如， [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. 指定 **[!UICONTROL openid]** 在 **[!UICONTROL 授权范围]** 授权流程的字段 [!DNL Microsoft Dynamics].
 
       ![身份验证设置](assets/dynamics_authentication_settings_new.png)
-表单数据模型
+表单数据模型(FDM)
 1. 单击 **[!UICONTROL 连接到OAuth]**. 您将被重定向到 [!DNL Microsoft Dynamics] 登录页面。
-1. 使用您的登录 [!DNL Microsoft Dynamics] 凭据并接受以允许云服务配置连接到 [!DNL Microsoft Dynamics] 服务。 在云服务与云服务之间建立表单数据模型是一项一次性任务。
+1. 使用您的登录 [!DNL Microsoft Dynamics] 凭据并接受以允许云服务配置连接到 [!DNL Microsoft Dynamics] 服务。 建立表单数据模型(FDM)是云服务和服务的一次性任务。
 
    您是云服务配置页面的表单数据模型，该页面显示一条消息，表明OData配置已成功保存。
 
-MS Dynamics ODataCloud Service（OData服务）云服务已配置并与您的Dynamics服务连接。 表单数据模型表单数据模型
+MS Dynamics ODataCloud Service（OData服务）云服务已配置并与您的Dynamics服务连接。 表单数据模型(FDM)
 
-## 创建表单数据模型 {#create-form-data-model}
+## 创建表单数据模型(FDM) {#create-form-data-model}
 
 <!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
@@ -161,19 +161,19 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
  Form Data Model 
 ![default-fdm-1](assets/default-fdm-1.png)-->
 
-配置MS Dynamics OData云服务后，您可以在创建表单数据模型时使用该服务。 有关更多信息，请参阅 [创建表单数据模型](create-form-data-models.md).
+配置MS Dynamics OData云服务后，您可以在创建表单数据模型(FDM)时使用该服务。 有关更多信息，请参阅 [创建表单数据模型(FDM)](create-form-data-models.md).
 
-接下来，您可以创建基于自适应表单的表单数据模型，并将其用于各种自适应表单用例，例如：
+接下来，您可以创建基于自适应表单的表单数据模型(FDM)，并将其用于各种自适应表单用例，例如：
 
 * 通过查询自适应表单中的信息来预填充自适应表单 [!DNL Microsoft Dynamics] 实体和服务
-* 调用 [!DNL Microsoft Dynamics] 使用自适应表单规则的表单数据模型中定义的服务器操作
+* 调用 [!DNL Microsoft Dynamics] 使用自适应表单规则的表单数据模型(FDM)中定义的服务器操作
 * 将提交的表单数据写入 [!DNL Microsoft Dynamics] 实体
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
 您可以 [配置表单数据模型提交操作](/help/forms/using-form-data-model.md) 用于自适应表单以将数据发送到Microsoft Dynamics OData。
 
-有关在业务工作流中创建和使用表单数据模型的更多信息，请参阅 [数据集成](data-integration.md).
+有关在业务工作流中创建和使用表单数据模型(FDM)的更多信息，请参阅 [数据集成](data-integration.md).
 
 ## 相关文章
 

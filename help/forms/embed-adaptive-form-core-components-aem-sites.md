@@ -4,9 +4,9 @@ description: 在AEM Sites页面中使用自适应表单核心组件填写和提�
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2071'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 此 [!UICONTROL 自适应表单容器] 组件允许在AEM Sites编辑器中使用自适应Forms组件构建数字注册体验。 您可以通过拖放表单组件来创建自适应表单。
 
-### 前提条件 {#prerequisites-af-container}
+### 先决条件 {#prerequisites-af-container}
 
 +++ 启用 **[!UICONTROL 自适应Forms容器]** 组件。
 
@@ -110,12 +110,12 @@ ht-degree: 4%
    * **预填充服务**：您可以使用预填充服务使用现有数据自动填充自适应表单的字段。 当用户打开表单时，这些字段的值会预先填充。 有关预填充服务的信息，请参阅 [预填自适应表单字段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **客户端库类别**：指定 [JavaScript函数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) 在表达式中使用并且受自适应Forms支持的这些函数。
 * **数据模型**：通过数据模型，您可以将来自不同数据源的实体和服务集成到自适应表单中。 选择 **[!UICONTROL 表单数据模型]** 如果您创建的自适应表单涉及从多个数据源获取数据并将数据写入多个数据源。
-   * **表单数据模型**：表单数据模型允许自适应表单与不同的数据源进行通信。 有关配置数据源的信息，请参阅 [配置数据源](/help/forms/configure-data-sources.md).
+   * **表单数据模型**：表单数据模型(FDM)允许自适应表单与不同的数据源进行通信。 有关配置数据源的信息，请参阅 [配置数据源](/help/forms/configure-data-sources.md).
    * **架构**：架构表示组织中的后端系统生成或使用数据的结构。 您可以 [将架构关联到自适应表单](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) 并使用其元素将动态内容添加到自适应表单。
 
      >[!NOTE]
      >
-     > 配置表单数据模型后，无法更改关联的表单模型。 但是，可以修改与表单数据模型关联的架构。
+     > 配置表单数据模型(FDM)后，无法更改关联的表单模型。 但是，可以修改与表单数据模型(FDM)关联的架构。
 
 * **提交选项卡**
 
@@ -125,7 +125,7 @@ ht-degree: 4%
       * **提交操作**：当用户单击自适应表单上的提交按钮时，会触发提交操作。 您可以 [在自适应表单上配置提交操作](/help/forms/configuring-submit-actions.md). 自适应表单提供以下开箱即用的提交操作：
          * 提交到 REST 端点
          * 发送电子邮件
-         * 使用表单数据模型提交
+         * 使用表单数据模型(FDM)提交
          * 调用 AEM 工作流
          * 提交到 SharePoint
          * 提交到 OneDrive
@@ -144,7 +144,7 @@ ht-degree: 4%
 
 * [创建和添加新的自适应表单](#embed-existing-af)
 
-### 前提条件 {#prerequisites}
+### 先决条件 {#prerequisites}
 
 +++ 启用 **自适应Forms — 嵌入** 组件。
 

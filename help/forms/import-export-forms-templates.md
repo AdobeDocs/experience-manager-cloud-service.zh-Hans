@@ -4,16 +4,17 @@ description: 了解如何在AEM实例之间迁移自适应Forms、PDF forms、�
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
 
 # 导入或导出自适应Forms和AEM Forms资源 {#importing-and-exporting-assets-to-aem-forms}
 
-您可以在以下位置移动自适应Forms和相关资源，例如自适应表单主题、表单数据模型、自适应表单模板、文档片段和PDF forms [!DNL AEM Forms] 实例。 您可以导入和导出CRX包或二进制文件格式的资产。
+您可以在以下位置移动自适应Forms和相关资源，例如自适应表单主题、表单数据模型(FDM)、自适应表单模板、文档片段和PDF forms [!DNL AEM Forms] 实例。 您可以导入和导出CRX包或二进制文件格式的资产。
 
 导出自适应表单时，不会导出内容策略和模板。 使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) 以导出此类资产。
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 1. 选择资源并选择 **[!UICONTROL 下载]** 图标。
 1. 在下载资产中，选择以下选项之一，然后选择 **[!UICONTROL 下载]**.
 
-   * **下载为CRX包：** 使用选项从下载和移动所有选定的资源和相关依赖项 [!DNL AEM Forms] 实例到另一个实例。 它以CRX包形式下载所有资源和文件夹，包括在AEM中创作的表单(自适应Forms和自适应表单片段)、表单集、表单数据模型、表单模板、PDF文档以及引用的资源（XSD和图像）。
+   * **下载为CRX包：** 使用选项从下载和移动所有选定的资源和相关依赖项 [!DNL AEM Forms] 实例到另一个实例。 它将所有资源和文件夹下载为CRX包，包括在AEM中创作的表单(自适应Forms和自适应表单片段)、表单集、表单数据模型(FDM)、表单模板、PDF文档以及引用的资源（XSD和图像）。
 将资源下载为资源包的优势在于它还可以下载选定资源引用的资源。 例如，如果您有一个使用表单模板、XSD和图像的自适应表单。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也会下载。
 
    * **将资产下载为二进制文件：** 使用选项可仅下载表单模板(XDP)、PDF forms(PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它会将具有二进制文件的资源(例如图像、PDF和其他支持的格式)下载为.zip文件。

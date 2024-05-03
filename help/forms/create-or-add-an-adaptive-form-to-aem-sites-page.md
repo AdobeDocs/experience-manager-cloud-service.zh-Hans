@@ -4,10 +4,10 @@ description: 了解如何在AEM Sites页面上创建或添加自适应表单。 
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3177'
-ht-degree: 20%
+source-wordcount: '3184'
+ht-degree: 19%
 
 ---
 
@@ -204,22 +204,22 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 1. 根据您的要求，选择并配置提交操作。 有关提交操作的详细信息，请参阅 [自适应表单提交操作](/help/forms/configuring-submit-actions.md)
 
 
-## 在AEM Sites页面或体验片段中为表单配置架构或表单数据模型 {#configure-schema-or-data-model-for-form}
+## 在AEM Sites页面或体验片段中为表单配置架构或表单数据模型(FDM) {#configure-schema-or-data-model-for-form}
 
-您可以使用表单数据模型将表单连接到数据源，以根据用户操作来发送和接收数据。您还可以将表单连接到 JSON 架构，以接收预定义格式的提交数据。根据要求，将表单连接到 JSON 架构或表单数据模型：
+您可以使用表单数据模型(FDM)将表单连接到数据源，以根据用户操作发送和接收数据。 您还可以将表单连接到 JSON 架构，以接收预定义格式的提交数据。根据要求，将表单连接到JSON架构或表单数据模型(FDM)：
 
 * [创建JSON架构并上传到您的环境](/help/forms/adaptive-form-json-schema-form-model.md)  或，
-* [创建表单数据模型](/help/forms/create-form-data-models.md)
+* [创建表单数据模型(FDM)](/help/forms/create-form-data-models.md)
 
-要为表单配置JSON架构或表单数据模型，请执行以下操作：
+要为表单配置JSON架构或表单数据模型(FDM)，请执行以下操作：
 
 1. 打开包含自适应表单的AEM页面编辑器或体验片段。
 1. 打开内容树，然后选择 **[!UICONTROL 自适应Forms容器]** ，用于托管您的自适应表单。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。
 1. 单击自适应表单容器属性 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 图标。 此时将打开用于配置数据模型的自适应表单容器对话框。
    ![单击扳手图标以配置自适应表单的数据模型](/help/forms/assets/form-data-model-adaptive-forms-container.png)
-1. 根据您的要求，选择并配置JSON架构或表单数据模型。 有关提交操作的详细信息，请参阅 [自适应表单提交操作](/help/forms/configuring-submit-actions.md).
+1. 根据您的要求，选择并配置JSON架构或表单数据模型(FDM)。 有关提交操作的详细信息，请参阅 [自适应表单提交操作](/help/forms/configuring-submit-actions.md).
 
-   * 当您选择 **[!UICONTROL 表单模型]** 选项，使用 **[!UICONTROL 选择表单数据模型]** 用于选择预配置的表单数据模型的选项。
+   * 当您选择 **[!UICONTROL 表单模型]** 选项，使用 **[!UICONTROL 选择表单数据模型]** 用于选择预配置的表单数据模型(FDM)的选项。
    * 当您选择 **[!UICONTROL 架构]** 选项，使用 **[!UICONTROL 架构]** 选项来为您的表单选择JSON架构。
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。

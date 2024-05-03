@@ -3,10 +3,10 @@ title: 如何获取AEM表单的参考主题和模板？
 description: AEM Forms提供了示例自适应表单主题、模板和表单数据模型，以帮助您快速创建表单。
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 13%
+source-wordcount: '778'
+ht-degree: 10%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 13%
 
 <span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/creating-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
-AEM Formsas a Cloud Service提供了多个参考主题、模板和表单数据模型，可帮助您快速开始创建自适应Forms。 您可以下载 [来自软件分发门户的引用内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 并使用 [包管理器](/help/implementing/developing/tools/package-manager.md) 安装 [参考内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 在生产、开发或本地开发环境中，将这些参考资产引入您的环境。
+AEM Formsas a Cloud Service提供了多个参考主题、模板和表单数据模型(FDM)，以帮助您快速开始创建自适应Forms。 您可以下载 [来自软件分发门户的引用内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 并使用 [包管理器](/help/implementing/developing/tools/package-manager.md) 安装 [参考内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) 在生产、开发或本地开发环境中，将这些参考资产引入您的环境。
 
-参考内容包中包含的主题、模板和表单数据模型包括：
+参考内容包中包含的主题、模板和表单数据模型(FDM)包括：
 
 
-| 主题 | 模板 | 表单数据模型 |
+| 主题 | 模板 | 表单数据模型(FDM) |
 ---------|----------|---------
 | Canvas 3.0 | 基本 | Microsoft Dynamics 365 |
 | 宁静 | 空白 | Salesforce |
@@ -112,16 +112,16 @@ FSI主题强调您的表单的极简和功能外观。 将FSI主题应用于表�
 基本模板可帮助您快速创建注册表单。 您还可以使用它来预览自适应Forms基础组件的功能。 它提供了用于逐节呈现数据的向导布局。 使用空白模板在空白画布上开始创建自适应表单。
 
 
-## 参考表单数据模型 {#reference-models}
+## 参考表单数据模型(FDM) {#reference-models}
 
 然后，自适应Forms可以与Microsoft Dynamics 365和Salesforce服务器交互以启用业务工作流。 例如：
 
 * 将数据写入Microsoft Dynamics 365和Salesforce on Adaptive Form提交。
-* 通过表单数据模型中定义的自定义实体在Microsoft Dynamics 365和Salesforce中写入数据，反之亦然。
+* 通过表单数据模型(FDM)中定义的自定义实体在Microsoft Dynamics 365和Salesforce中写入数据，反之亦然。
 * 查询Microsoft Dynamics 365和Salesforce服务器以获取数据并预填充自适应Forms。
 * 从Microsoft Dynamics 365和Salesforce服务器读取数据。
 
-您可以通过安装[参考内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)来获取以下表单数据模型：
+通过安装以下表单数据模型(FDM) [参考内容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)：
 
 * Microsoft® Dynamics 365
 * Salesforce

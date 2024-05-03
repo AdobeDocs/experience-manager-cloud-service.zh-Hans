@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '5444'
+source-wordcount: '5453'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 * 设置对象的值
 * 验证对象的值
 * 执行函数以计算对象的值
-* 调用表单数据模型服务并执行操作
+* 调用表单数据模型 （FDM） 服务并执行操作
 * 设置对象的属性
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
@@ -145,15 +145,15 @@ ht-degree: 0%
 
 **[!UICONTROL 禁用]** 禁用指定的对象。
 
-**[!UICONTROL 调用服务]** 调用在表单数据模型中配置的服务。 选择“调用服务”操作时，会出现一个字段。 点按该字段，它会显示您的网站上所有表单数据模型中配置的所有服务 [!DNL Experience Manager] 实例。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。 请参阅调用表单数据模型服务的示例规则。
+**[!UICONTROL 调用服务]** 调用在表单数据模型(FDM)中配置的服务。 选择“调用服务”操作时，会出现一个字段。 点按该字段时，它会显示您的页面上所有表单数据模型(FDM)中配置的所有服务。 [!DNL Experience Manager] 实例。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。 请参阅调用表单数据模型(FDM)服务的规则示例。
 
 除了表单数据模型服务之外，您还可以指定直接WSDL URL来调用Web服务。 但是，表单数据模型服务具有许多好处，并且推荐调用服务的方法。
 
-有关在表单数据模型中配置服务的更多信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md).
+有关在表单数据模型(FDM)中配置服务的更多信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md).
 
-**[!UICONTROL 设置值]** 计算并设置指定对象的值。 您可以将对象值设置为字符串、另一个对象的值、使用数学表达式或函数的计算值、对象的属性值或来自已配置表单数据模型服务的输出值。 当您选择Web服务选项时，它会显示您的页面上所有表单数据模型中配置的所有服务。 [!DNL Experience Manager] 实例。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。
+**[!UICONTROL 设置值]** 计算并设置指定对象的值。 您可以将对象值设置为字符串、另一个对象的值、使用数学表达式或函数的计算值、对象的属性值或来自已配置表单数据模型服务的输出值。 选择Web服务选项时，它会显示您的页面上所有表单数据模型(FDM)中配置的所有服务。 [!DNL Experience Manager] 实例。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。
 
-有关在表单数据模型中配置服务的更多信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md).
+有关在表单数据模型(FDM)中配置服务的更多信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md).
 
 此 **[!UICONTROL 设置属性]** 规则类型允许您根据条件操作设置指定对象的属性值。 您可以将属性设置为以下项之一：
 * 可见（布尔值）
@@ -836,7 +836,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### 调用表单数据模型服务 {#invoke}
 
-考虑使用Web服务 `GetInterestRates` 它将贷款金额、使用期和申请人的信用评分作为输入，并返回包含EMI金额和利率的贷款计划。 您可以使用Web服务作为数据源来创建表单数据模型。 添加数据模型对象和 `get` 表单模型的服务。 该服务将显示在表单数据模型的“服务”选项卡中。 然后，创建一个自适应表单，其中包含数据模型对象中的字段，以捕获贷款金额、使用期和信用评分的用户输入。 添加触发Web服务获取计划详细信息的按钮。 输出将填充到相应的字段中。
+考虑使用Web服务 `GetInterestRates` 它将贷款金额、使用期和申请人的信用评分作为输入，并返回包含EMI金额和利率的贷款计划。 可使用Web服务作为数据源创建表单数据模型(FDM)。 添加数据模型对象和 `get` 表单模型的服务。 该服务将显示在表单数据模型(FDM)的“服务”选项卡中。 然后，创建一个自适应表单，其中包含数据模型对象中的字段，以捕获贷款金额、使用期和信用评分的用户输入。 添加触发Web服务获取计划详细信息的按钮。 输出将填充到相应的字段中。
 
 以下规则显示了如何配置Invoke service操作以完成示例方案。
 

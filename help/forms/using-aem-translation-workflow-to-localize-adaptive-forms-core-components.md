@@ -1,11 +1,11 @@
 ---
 title: 如何翻译基于核心组件的自适应表单？
-description: 了解如何在AEM Forms中创建表单数据模型，使用示例数据和服务测试该模型，以及为模型配置各种选项。
+description: 了解如何在AEM Forms中创建表单数据模型(FDM)、使用示例数据和服务测试模型以及为模型配置各种选项。
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '885'
 ht-degree: 4%
 
 ---

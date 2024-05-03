@@ -3,13 +3,13 @@ Title: How to send data to a SharePoint storage on submission of an Adaptive For
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
 keywords: 如何为自适应表单连接SharePoint列表？ 、如何为自适应表单连接SharePoint文档库、提交到SharePoint、创建SharePoint文档库配置、在自适应表单中使用提交到SharePoint提交操作、将自适应表单连接到Microsoft&reg；SharePoint列表。
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: e925a750-5fb5-4950-afd3-78551eec985d
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1042'
 ht-degree: 34%
 
 ---
-
 
 # 将自适应表单连接到Microsoft® SharePoint
 
@@ -93,7 +93,7 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 要使用 [!UICONTROL 提交到SharePoint列表] 以自适应表单提交操作：
 
 1. [创建SharePoint列表配置](#create-sharepoint-list-configuration)：用于将AEM Forms连接到Microsoft® Sharepoint List Storage。
-1. [在自适应表单中使用表单数据模型提交](#use-submit-using-fdm)：它将您的自适应表单连接到配置的Microsoft® SharePoint。
+1. [在自适应表单中使用表单数据模型(FDM)提交](#use-submit-using-fdm)：它将您的自适应表单连接到配置的Microsoft® SharePoint。
 
 ### 创建SharePoint列表配置 {#create-sharepoint-list-configuration}
 
@@ -117,24 +117,24 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 1. 选择 **[!UICONTROL 创建]** 创建Microsoft® SharePointList的云配置。
 
 
-### 在自适应表单中使用表单数据模型提交 {#use-submit-using-fdm}
+### 在自适应表单中使用表单数据模型(FDM)提交 {#use-submit-using-fdm}
 
 您可以在自适应表单中使用创建的SharePoint列表配置，以在SharePoint列表中保存数据或生成的记录文档。 执行以下步骤以在自适应表单中使用SharePoint列表：
 
-1. [使用Microsoft创建表单数据模型](/help/forms/create-form-data-models.md)
-1. [配置表单数据模型以检索和发送数据](/help/forms/work-with-form-data-model.md#configure-services)
+1. [使用Microsoft创建表单数据模型(FDM)](/help/forms/create-form-data-models.md)
+1. [配置表单数据模型(FDM)以检索和发送数据](/help/forms/work-with-form-data-model.md#configure-services)
 1. [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-1. [使用表单数据模型配置提交操作](/help/forms/using-form-data-model.md)
+1. [使用表单数据模型(FDM)配置提交操作](/help/forms/using-form-data-model.md)
 
 提交表单时，数据将保存在指定的Microsoft® Sharepoint列表存储中。
 
 >[!NOTE]
 >
 > 在Microsoft® SharePoint List中，不支持以下列类型：
-* 图像列
-* 元数据列
-* 人员列
-* 外部数据列
+> * 图像列
+> * 元数据列
+> * 人员列
+> * 外部数据列
 
 ## 相关文章
 

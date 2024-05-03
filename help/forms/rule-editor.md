@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: bbb5e4caef2cb8c44d10a92647401ee86a9326c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '6457'
+source-wordcount: '6468'
 ht-degree: 1%
 
 ---
@@ -140,15 +140,15 @@ _
 
 **[!UICONTROL 禁用]** 禁用指定的对象。
 
-**[!UICONTROL 调用服务]** 调用在表单数据模型中配置的服务。 选择“调用服务”操作时，会出现一个字段。 点按该字段，它会显示您的网站上所有表单数据模型中配置的所有服务 [!DNL Experience Manager] 实例。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。 请参阅调用表单数据模型服务的示例规则。
+**[!UICONTROL 调用服务]** 调用在表单数据模型(FDM)中配置的服务。 选择“调用服务”操作时，会出现一个字段。 点按该字段时，它会显示您的页面上所有表单数据模型(FDM)中配置的所有服务。 [!DNL Experience Manager] 实例。 在选择表单数据模型(FDM)服务时，会出现更多字段，您可在其中映射具有指定服务的输入和输出参数的表单对象。 请参阅调用表单数据模型服务的示例规则。
 
 除了表单数据模型服务之外，您还可以指定直接WSDL URL来调用Web服务。 但是，表单数据模型服务具有许多好处，并且推荐调用服务的方法。
 
-有关在表单数据模型中配置服务的更多信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md).
+有关在表单数据模型(FDM)中配置服务的更多信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md).
 
-**[!UICONTROL 设置值]** 计算并设置指定对象的值。 您可以将对象值设置为字符串、另一个对象的值、使用数学表达式或函数的计算值、对象的属性值或来自已配置表单数据模型服务的输出值。 当您选择Web服务选项时，它会显示您的页面上所有表单数据模型中配置的所有服务。 [!DNL Experience Manager] 实例。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。
+**[!UICONTROL 设置值]** 计算并设置指定对象的值。 您可以将对象值设置为字符串、另一个对象的值、使用数学表达式或函数的计算值、对象的属性值或来自已配置表单数据模型服务的输出值。 选择Web服务选项时，它会显示您的页面上所有表单数据模型(FDM)中配置的所有服务。 [!DNL Experience Manager] 实例。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。
 
-有关在表单数据模型中配置服务的更多信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md).
+有关在表单数据模型(FDM)中配置服务的更多信息，请参阅 [[!DNL Experience Manager Forms] 数据集成](data-integration.md).
 
 此 **[!UICONTROL 设置属性]** 规则类型允许您根据条件操作设置指定对象的属性值。 您可以将属性设置为以下项之一：
 * 可见（布尔值）
@@ -308,7 +308,7 @@ _
 
 ### [!UICONTROL 设置选项] {#setoptionsof}
 
-此 **[!UICONTROL 设置选项]** 规则类型允许您定义规则以动态地将复选框添加到自适应表单。 您可以使用表单数据模型或自定义函数来定义规则。
+此 **[!UICONTROL 设置选项]** 规则类型允许您定义规则以动态地将复选框添加到自适应表单。 您可以使用表单数据模型(FDM)或自定义函数来定义规则。
 
 要根据自定义函数定义规则，请选择 **[!UICONTROL 函数输出]** ，然后从以下位置拖放自定义函数： **[!UICONTROL 函数]** 选项卡。 自定义函数中定义的复选框数将添加到自适应表单中。
 
@@ -316,7 +316,7 @@ _
 
 要创建自定义函数，请参见 [规则编辑器中的自定义函数](#custom-functions).
 
-要根据表单数据模型定义规则，请执行以下操作：
+要根据表单数据模型(FDM)定义规则，请执行以下操作：
 
 1. 选择 **[!UICONTROL 服务输出]** 下拉列表中。
 1. 选择数据模型对象。
@@ -659,7 +659,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
    >[!NOTE]
    >
-   > 要使用自定义函数从规则编辑器调用表单数据模型， [查看此处](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > 要使用自定义函数从规则编辑器调用表单数据模型(FDM)，请执行以下操作： [查看此处](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### 函数声明支持的类型 {#function-declaration-supported-types}
 
@@ -817,7 +817,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### 调用表单数据模型服务 {#invoke}
 
-考虑使用Web服务 `GetInterestRates` 它将贷款金额、使用期和申请人的信用评分作为输入，并返回包含EMI金额和利率的贷款计划。 您可以使用Web服务作为数据源来创建表单数据模型。 添加数据模型对象和 `get` 表单模型的服务。 该服务将显示在表单数据模型的“服务”选项卡中。 然后，创建一个自适应表单，其中包含数据模型对象中的字段，以捕获贷款金额、使用期和信用评分的用户输入。 添加触发Web服务获取计划详细信息的按钮。 输出将填充到相应的字段中。
+考虑使用Web服务 `GetInterestRates` 它将贷款金额、使用期和申请人的信用评分作为输入，并返回包含EMI金额和利率的贷款计划。 可使用Web服务作为数据源创建表单数据模型(FDM)。 添加数据模型对象和 `get` 表单模型的服务。 该服务将显示在表单数据模型(FDM)的“服务”选项卡中。 然后，创建一个自适应表单，其中包含数据模型对象中的字段，以捕获贷款金额、使用期和信用评分的用户输入。 添加触发Web服务获取计划详细信息的按钮。 输出将填充到相应的字段中。
 
 以下规则显示了如何配置Invoke service操作以完成示例方案。
 

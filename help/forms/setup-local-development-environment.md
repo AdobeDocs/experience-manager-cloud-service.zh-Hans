@@ -4,9 +4,9 @@ description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2726'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 您可以使用本地开发环境执行以下操作，而无需登录到云开发环境：
 
 * [创建表单](creating-adaptive-form.md) 和相关资产（主题、模板、自定义提交操作等）
-* [将 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=zh-Hans)
+* [将 PDF 表单转换为自适应表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
 * 构建要生成的应用程序 [客户通信](aem-forms-cloud-service-communications-introduction.md) 按需或批处理模式。
 
 在本地开发实例或应用程序上准备好自适应表单或相关资产以生成后 [客户通信] 准备就绪，可将自适应表单或客户通信应用程序从本地开发环境导出到Cloud Service环境，以便进一步测试或迁移到生产环境。
@@ -249,7 +249,7 @@ AEM Forms as aCloud Service提供了基于Docker的SDK环境，可更轻松地�
 
 使用此项目可在本地创建自适应Forms、部署配置更新、叠加、创建自定义自适应表单组件、测试和自定义代码 [!DNL Experience Manager Forms] SDK。 在本地测试后，您可以将项目部署到  [!DNL Experience Manager Forms] as a Cloud Service的生产和非生产环境。 在部署项目时，还会部署以下AEM Forms资源：
 
-| 主题 | 模板 | 表单数据模型 |
+| 主题 | 模板 | 表单数据模型(FDM) |
 ---------|----------|---------
 | Canvas 3.0 | 基本 | Microsoft® Dynamics 365 |
 | 宁静 | 空白 | Salesforce |
@@ -259,7 +259,7 @@ AEM Forms as aCloud Service提供了基于Docker的SDK环境，可更轻松地�
 
 >[!NOTE]
 >
-> 设置基于AEM Archetype版本30或更高版本的项目以获取并使用Microsoft®Dynamics 365和Salesforce表单数据模型与AEM Formsas a Cloud Service。
+> 设置基于AEM Archetype版本30或更高版本的项目，以获取并使用Microsoft®Dynamics 365和Salesforce表单数据模型(FDM)以及AEM Formsas a Cloud Service。
 > 设置基于AEM Archetype版本32或更高版本的项目，以获取并使用AEM Formsas a Cloud Service的Tranquil、Urbane和Ultraminary主题。
 
 要设置项目，请执行以下操作：
@@ -399,7 +399,7 @@ For information about troubleshooting, stopping local AEM environment, run modes
 
 ### 创建现有内容的备份 {#create-backup-of-your-existing-content}
 
-备份自适应Forms、模板、表单数据模型、主题、配置和自定义代码。 您可以执行以下操作来创建备份：
+备份自适应Forms、模板、表单数据模型(FDM)、主题、配置和自定义代码。 您可以执行以下操作来创建备份：
 
 1. [下载](import-export-forms-templates.md#manage-forms-and-related-assets) 自适应Forms、主题和PDF forms。
 1. 导出自适应表单模板。

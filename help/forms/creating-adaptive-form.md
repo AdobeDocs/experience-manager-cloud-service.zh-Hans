@@ -1,14 +1,14 @@
 ---
 title: 如何创建自适应Forms？
-description: 了解如何创建自适应表单以简化信息收集和处理。 此外，了解如何基于表单数据模型创建自适应表单。
+description: 了解如何创建自适应表单以简化信息收集和处理。 此外，了解如何基于表单数据模型(FDM)创建自适应表单。
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 81%
+source-wordcount: '1500'
+ht-degree: 70%
 
 ---
 
@@ -98,7 +98,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. （可选）在&#x200B;**[!UICONTROL 数据]**&#x200B;选项卡中，选择一个数据模型：
 
-   * **表单数据模型**：[表单数据模型](data-integration.md)可让您将来自不同的数据源的实体和服务集成到自适应表单中。如果您创建的自适应表单需要从多个数据源获取数据和向多个数据源写入数据，请选择表单数据模型。
+   * **表单数据模型**：[表单数据模型](data-integration.md)可让您将来自不同的数据源的实体和服务集成到自适应表单中。如果要创建的自适应表单涉及从多个数据源获取数据以及将数据写入多个数据源，请选择表单数据模型(FDM)。
 
    * **JSON 架构**：[JSON 架构](adaptive-form-json-schema-form-model.md)表示组织中的后端系统生成或使用的数据所在的结构。您可以将架构与自适应表单相关联，并使用其元素将动态内容添加到自适应表单。在创作自适应Forms时，可在内容浏览器的数据模型对象选项卡中使用架构的元素，并且所有字段也已添加到创建的自适应表单。
 
@@ -126,7 +126,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。它还会显示侧栏，以根据需要自定义创建的表单。
 
-   根据自适应表单的类型，关联的 <!--XFA form template, XML schema or --> JSON 架构或表单数据模型显示在边栏的&#x200B;**[!UICONTROL 内容浏览器]**&#x200B;的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中。您还可以拖放这些元素来生成自适应表单。
+   根据自适应表单的类型，关联表单中存在的表单元素 <!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)显示在 **[!UICONTROL 数据模型对象]** 选项卡 **[!UICONTROL 内容浏览器]** 在侧栏中。 您还可以拖放这些元素来生成自适应表单。
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -184,8 +184,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 选择自适应表单，然后选择 **属性** 图标。
 1. 打开&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡并执行下列操作之一。
 
-   * 如果自适应表单不带表单模型，您可以选择另一个表单模型并相应地选择 <!-- a form template, --> XML 或 JSON 架构，或表单数据模型。
-   * 如果自适应表单基于表单模型，您可以选择另一个 <!-- form template, --> XML 或 JSON 架构，或同一表单模型的表单数据模型。
+   * 如果自适应表单没有表单模型，则可以选择其他表单模型并相应地选择 <!-- a form template, --> XML或JSON架构，或表单数据模型(FDM)。
+   * 如果自适应表单基于表单模型，则可以选择其他 <!-- form template, --> XML或JSON架构，或相同表单模型的表单数据模型(FDM)。
 
 1. 选择 **[!UICONTROL 保存]** 以保存属性。
 
@@ -195,8 +195,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 单击![配置](/help/forms/assets/configure-icon.svg)图标来打开自适应表单容器的&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 数据模型]**&#x200B;选项卡并执行下列操作之一：
 
-   * 如果自适应表单不带表单模型，您可以选择一个表单模型并相应地选择 <!-- a form template, --> XML 或 JSON 架构，或表单数据模型。
-   * 如果自适应表单基于表单模型，则无法更改表单模型。您可以选择另一个 <!-- form template, --> XML 或 JSON 架构，或同一表单模型的表单数据模型（如果适用）。
+   * 如果自适应表单没有表单模型，则可以选择表单模型并相应地选择 <!-- a form template, --> XML或JSON架构，或表单数据模型(FDM)。
+   * 如果自适应表单基于表单模型，则无法更改表单模型。您可以选择其他 <!-- form template, --> 适用时，适用于相同表单模型的XML或JSON架构或表单数据模型(FDM)。
 1. 选择 ![保存](/help/forms/assets/check-button.png) 以保存属性。
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

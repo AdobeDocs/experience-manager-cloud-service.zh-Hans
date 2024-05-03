@@ -3,10 +3,10 @@ title: 如何管理AEM Forms的元数据？
 description: 元数据允许更轻松地分类和组织资源，并帮助正在查找特定资源的用户。
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 6%
+source-wordcount: '1735'
+ht-degree: 5%
 
 ---
 
@@ -71,12 +71,12 @@ ht-degree: 6%
      <li>PDF表单、PDF表单(Acroform)或PDF表单（签名）</li> 
      <li>文档，文档（已签署）</li> 
      <li>自适应表单</li> 
-     <li>表单数据模型</li>
+     <li>表单数据模型(FDM)</li>
      <li>资源</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>创建时间</td> 
+   <td>已创建</td> 
    <td>所有</td> 
    <td>指定资源创建时间的只读值。</td> 
   </tr> 
@@ -162,7 +162,7 @@ ht-degree: 6%
    <td>自适应表单</td> 
    <td><p>指定创作自适应表单时使用的表单模型。 此属性可以具有以下值：</p> 
     <ul> 
-      <li>表单数据模型 </li>
+      <li>表单数据模型(FDM)</li>
       <li>架构： JSON架构的XML</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->

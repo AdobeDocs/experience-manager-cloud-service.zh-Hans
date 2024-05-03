@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e81da7414335e00411942adeb41978d39f172b52
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3243'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 <!-- * In-form and out-of-form signing experiences -->
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 使用前 [!DNL Adobe Sign] 在自适应表单中：
 
@@ -184,7 +184,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   > 如果使用表单数据模型创建自适应表单，则协议ID字段在对话框中可见。
+   > 如果使用表单数据模型(FDM)创建自适应表单，则“协议ID”字段在对话框中可见。
 
 1. [将收件人添加到自适应表单](working-with-adobe-sign.md#addsignerstoanadaptiveform) 并选择完成 ![保存](assets/save_icon.svg) 图标以保存更改。
 
@@ -343,7 +343,7 @@ Adobe Sign协议ID (agreementId)包含在自适应表单的提交数据中。 �
 
 此 **[!UICONTROL 摘要步骤]** 组件自动提交表单，填充自定义摘要页面中的信息，并显示已提交表单的摘要。 摘要步骤组件占据表单可用的完整宽度。 建议在包含摘要步骤组件的部分中没有任何其他组件。
 
-## 常见问题 {#frequently-asked-questions}
+## 常见问题解答 {#frequently-asked-questions}
 
 **问：** 您可以将自适应表单嵌入到其他自适应表单中。 嵌入式自适应表单是否可以 [!DNL Adobe Sign] 已启用？
 **Ans：** 否，Experience Manager Forms不支持使用嵌入 [!DNL Adobe Sign] 已启用自适应表单以供签名

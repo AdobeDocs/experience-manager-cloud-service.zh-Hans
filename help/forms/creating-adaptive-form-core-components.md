@@ -1,14 +1,14 @@
 ---
 title: 如何基于核心组件创建自适应表单？
-description: 了解如何使用创建自适应表单 [!DNL Experience Manager Forms]. 自适应Forms是响应式HTML5表单，可简化信息收集和处理。 深入了解如何基于表单数据模型和XML或JSON架构创建自适应表单。
+description: 了解如何使用创建自适应表单 [!DNL Experience Manager Forms]. 自适应Forms是响应式HTML5表单，可简化信息收集和处理。 深入了解如何基于表单数据模型(FDM)和XML或JSON架构创建自适应表单。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2264'
-ht-degree: 63%
+source-wordcount: '2281'
+ht-degree: 55%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 63%
 
 1. （可选）在“数据”选项卡中，选择一个数据模型：
 
-   * **表单数据模型**：[表单数据模型](data-integration.md)可让您将来自不同的数据源的实体和服务集成到自适应表单中。如果您创建的自适应表单需要从多个数据源获取数据和向多个数据源写入数据，请选择表单数据模型。
+   * **表单数据模型(FDM)**：A [表单数据模型](data-integration.md) 允许您将实体和服务从不同的数据源集成到自适应表单中。 如果要创建的自适应表单涉及从多个数据源获取数据以及将数据写入多个数据源，请选择表单数据模型(FDM)。
 
    * **JSON 架构**：[JSON 架构](adaptive-form-json-schema-form-model.md)我们的基于核心组件的自适应表单允许与组织的后端系统无缝集成，并能够与表示正在生成或使用的数据结构的 JSON 架构关联。利用此关联，作者可以使用架构的元素将内容动态添加到自适应表单。在创作过程中，架构的元素可在内容浏览器的数据模型对象选项卡中轻松访问，并且所有字段都会自动添加到任何创建的自适应表单中。
 
@@ -103,7 +103,7 @@ ht-degree: 63%
    * **[!UICONTROL 名称：]**&#x200B;指定表单的名称。在存储库中创建具有指定名称的节点。在开始键入标题时，名称字段的值将自动生成。您可以更改建议的值。名称字段只能包含字母数字字符、连字符和下划线。所有无效的输入都将替换为连字符。
    * **[!UICONTROL 路径：]**&#x200B;指定用于保存自适应表单的位置。您可以直接将自适应表单保存在 `/content/dam/formsanddocuments`，也可以创建一个文件夹（例如 `/content/dam/formsanddocuments/adaptiveforms`）来保存自适应表单。确保先创建文件夹，然后再在路径中使用它。**[!UICONTROL 路径]**&#x200B;字段不会自动创建文件夹。
 
-1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。根据自适应表单的类型，关联的 <!--XFA form template, XML schema or --> JSON 架构或表单数据模型显示在边栏的&#x200B;**[!UICONTROL 内容浏览器]**&#x200B;的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中。您还可以拖放这些元素来生成自适应表单。
+1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。根据自适应表单的类型，关联表单中存在的表单元素 <!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)显示在 **[!UICONTROL 数据模型对象]** 选项卡 **[!UICONTROL 内容浏览器]** 在侧栏中。 您还可以拖放这些元素来生成自适应表单。
 
 现在，您可以拖放 [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) 自适应的Forms容器来设计和创建表单。 您也可以访问 [https://aemcomponents.dev/](https://aemcomponents.dev/) 查看可用的核心组件运行情况。
 
@@ -140,26 +140,26 @@ ht-degree: 63%
 
    * 要配置自定义或感谢消息，请在“提交”选项中选择 **[!UICONTROL 显示消息]** 选项，并在 **[!UICONTROL 消息内容]** 盒子。 它是一个富文本框，您可以使用全屏选项查看所有可用的富文本项。
 
-## 为自适应表单配置架构或表单数据模型{#configure-schema-or-data-model-for-form}
+## 为自适应表单配置架构或表单数据模型(FDM){#configure-schema-or-data-model-for-form}
 
-您可以使用表单数据模型将表单连接到数据源，以根据用户操作来发送和接收数据。您还可以将表单连接到 JSON 架构，以接收预定义格式的提交数据。根据要求，将表单连接到 JSON 架构或表单数据模型：
+您可以使用表单数据模型(FDM)将表单连接到数据源，以根据用户操作发送和接收数据。 您还可以将表单连接到 JSON 架构，以接收预定义格式的提交数据。根据要求，将表单连接到JSON架构或表单数据模型(FDM)：
 
 * [创建JSON架构并上传到您的环境](/help/forms/adaptive-form-json-schema-form-model.md)
-* [创建表单数据模型](/help/forms/create-form-data-models.md)
+* [创建表单数据模型(FDM)](/help/forms/create-form-data-models.md)
 
-### 为表单配置JSON架构或表单数据模型
+### 为表单配置JSON架构或表单数据模型(FDM)
 
-要为表单配置JSON架构或表单数据模型，请执行以下操作：
+要为表单配置JSON架构或表单数据模型(FDM)，请执行以下操作：
 
 1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
 1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
 1. 打开 **[!UICONTROL 数据模型]** 选项卡。
 
-   ![单击扳手图标以打开自适应表单容器对话框以配置JSON架构或表单数据模型](/help/forms/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
+   ![单击扳手图标，打开自适应表单容器对话框，以配置JSON架构或表单数据模型(FDM)](/help/forms/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
 
-1. 根据您的要求，选择并配置JSON架构或表单数据模型：
+1. 根据您的要求，选择并配置JSON架构或表单数据模型(FDM)：
 
-   * 当您选择 **[!UICONTROL 表单模型]** 选项，使用 **[!UICONTROL 选择表单数据模型]** 用于选择预配置的表单数据模型的选项。
+   * 当您选择 **[!UICONTROL 表单模型]** 选项，使用 **[!UICONTROL 选择表单数据模型]** 用于选择预配置的表单数据模型(FDM)的选项。
    * 当您选择 **[!UICONTROL 架构]** 选项，使用 **[!UICONTROL 架构]** 选项来为您的表单选择JSON架构。
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
@@ -179,14 +179,14 @@ ht-degree: 63%
 1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
 1. 单击自适应表单容器属性 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 图标。 此时将打开用于配置数据模型的自适应表单容器对话框。
    ![单击扳手图标以打开自适应表单容器对话框以配置重定向页面或感谢消息](/help/forms/assets/adaptive-forms-container-prefill-service.png)
-1. 选择表单数据模型。 打开 **[!UICONTROL 基本]** 选项卡。 在预填充服务中，选择 **[!UICONTROL 表单数据模型预填充服务]**.
+1. 选择表单数据模型(FDM)。 打开 **[!UICONTROL 基本]** 选项卡。 在预填充服务中，选择 **[!UICONTROL 表单数据模型预填充服务]**.
 1. 单击 **[!UICONTROL 完成]**. 您的自适应表单现在配置为使用表单数据模型预填充。 您现在可以使用 [规则编辑器](rule-editor.md) 创建规则以预填充表单的字段。
 
 ## 编辑自适应表单的表单模型属性 {#edit-form-model}
 
 1. 选择自适应表单，然后选择 ![页面信息](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 打开属性]**. 这将打开“表单属性”页面。
 
-1. 转到&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡并选择表单模型。如果自适应表单不带表单模型，您可以随意选择 JSON 架构或表单数据模型。另一方面，如果自适应表单已基于一个表单模型，则可以选择切换到另一个相同类型的表单模型。例如，如果表单使用的是 JSON 架构，则可以轻松切换到另一个 JSON 架构；同样，如果表单使用的是表单数据模型，则可以切换到另一个表单数据模型。
+1. 转到&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡并选择表单模型。如果自适应表单没有表单模型，您可以自由选择JSON架构或表单数据模型(FDM)。 另一方面，如果自适应表单已基于一个表单模型，则可以选择切换到另一个相同类型的表单模型。例如，如果表单使用JSON架构，您可以轻松切换到另一个JSON架构，同样，如果表单使用表单数据模型(FDM)，您可以切换到另一个表单数据模型(FDM)。
 
 1. 选择 **[!UICONTROL 保存]** 以保存属性。
 

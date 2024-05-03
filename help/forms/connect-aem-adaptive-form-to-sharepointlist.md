@@ -1,14 +1,14 @@
 ---
 title: 如何将AEM自适应表单连接到Microsoft&reg； SharePoint List？
-description: 将自适应表单连接到Microsoft&reg； SharePoint列表。 了解如何配置Microsoft&reg； SharePoint列表以及使用配置创建表单数据模型。 此外，您还可了解如何将FDM与自适应表单相集成。
+description: 将自适应表单连接到Microsoft&reg； SharePoint列表。 了解如何配置Microsoft&reg； SharePoint列表以及使用配置创建表单数据模型(FDM)。 此外，您还可了解如何将FDM与自适应表单相集成。
 role: User, Developer
 keywords: 将AEM自适应表单连接到Microsoft SharePoint列表，将自适应表单连接到Microsoft SharePoint列表，将AEM自适应表单集成到Microsoft SharePoint列表，将自适应表单集成到Microsoft SharePoint列表，将自适应表单中的数据提交到SharePoint列表，将AEM工作流提交到SharePoint列表。
 hide: true
 hidefromToC: true
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 7%
+source-wordcount: '525'
+ht-degree: 4%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 7%
 将自适应表单连接到Microsoft® SharePoint List之前，请执行以下步骤：
 
 1. [配置Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [使用Microsoft创建表单数据模型](/help/forms/create-form-data-models.md)
-1. [配置表单数据模型以检索和发送数据](/help/forms/work-with-form-data-model.md#configure-services)
+1. [使用Microsoft创建表单数据模型(FDM)](/help/forms/create-form-data-models.md)
+1. [配置表单数据模型(FDM)以检索和发送数据](/help/forms/work-with-form-data-model.md#configure-services)
 1. [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 
 现在，您可以：
@@ -42,18 +42,18 @@ ht-degree: 7%
 
 ## 将自适应表单连接到Microsoft® SharePoint列表 {#connect-af-sharepoint-list}
 
-要将Microsoft® SharePoint列表集成到您的自适应表单 [配置自适应表单以使用表单数据模型](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+要将Microsoft® SharePoint列表集成到您的自适应表单 [配置自适应表单以使用表单数据模型(FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
-将自适应表单配置为使用表单数据模型后，您可以：
+将自适应表单配置为使用表单数据模型(FDM)后，您可以：
 
-* [使用表单数据模型配置提交操作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
-* [配置规则编辑器以调用表单数据模型](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
+* [使用表单数据模型(FDM)配置提交操作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+* [配置规则编辑器以调用表单数据模型(FDM)](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
 ## 将Microsoft® SharePoint列表连接到AEM工作流 {#connect-sharepoint-list-workflow}
 
 要将Microsoft®SharePoint列表集成到AEM工作流，请执行以下操作：
 
-1. [创建工作流以调用表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
+1. [创建工作流以调用表单数据模型(FDM)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 
    <!--
     To create a workflow with the editor:
@@ -84,7 +84,7 @@ ht-degree: 7%
 
 * [创建基于核心组件的自适应表单](/help/forms/creating-adaptive-form-core-components.md)
 * [配置数据源](/help/forms/configuring-submit-actions.md)
-* [创建表单数据模型](/help/forms/create-form-data-models.md)
+* [创建表单数据模型(FDM)](/help/forms/create-form-data-models.md)
 * [使用以Forms为中心的AEM Workflows — 步骤参考以自动化业务流程](/help/forms/aem-forms-workflow-step-reference.md)
 * [创建自适应Forms的自定义提交操作](/help/forms/custom-submit-action-form.md)
 * [在AEM Sites页面上创建或添加自适应表单](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
