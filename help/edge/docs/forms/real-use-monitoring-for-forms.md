@@ -1,19 +1,19 @@
 ---
-title: AEM Formsas a Cloud Service的Edge Delivery Services的实时使用监控
-description: AEM Formsas a Cloud Service的Edge Delivery Services实时监控涉及持续跟踪和分析用户与表单的交互。
+title: AEM Formsas a Cloud Service的实时监控(RUM)Edge Delivery Services
+description: AEM Formsas a Cloud Service的Edge Delivery Services实时监控(RUM)涉及持续跟踪和分析用户与表单的交互。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
+source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '792'
 ht-degree: 45%
 
 ---
 
 
-# Real Use Monitoring for Edge Delivery Services for AEM Formsas a Cloud Service
+# AEM Formsas a Cloud Service的实时监控(RUM)Edge Delivery Services
 
 实时监控(RUM)功能允许您深入了解访客与您的Adobe Experience Manager (AEM)网站的交互情况。 此内置工具提供了宝贵的数据来了解用户行为、诊断性能问题以及衡量网站实验的有效性。 RUM不局限于合成测试，它捕获了真实使用的交互，从而更准确地了解您网站的性能。
 
@@ -75,3 +75,7 @@ https://data.aem.live/?ext=forms
 * 解决会降低表单加载速度的技术问题。
 
 通过专注于这些方面，您可以创建更易于使用的表单并鼓励访客完成这些表单，最终导致更高的转化率。
+
+## 另请参阅
+
+{{see-more-forms-eds}}
