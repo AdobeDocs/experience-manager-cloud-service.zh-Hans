@@ -1,9 +1,9 @@
 ---
 title: 快速发布到AEM和Dynamic Media
 description: 快速发布是新UI或资产视图中的一项功能。 此功能使用户能够灵活地同时或单独快速发布到AEM和Dynamic Media 。 这意味着在选择资源和文件夹后，用户可以选择发布到Dynamic Media或发布到AEM。 快速发布功能使新UI能够将资源和文件夹发布到Dynamic Media和AEM。
-source-git-commit: a1069ec278143665c1e17ea1a482589763dd153f
+source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 将资源发布到AEM和Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-通过Experience Manager Assets，您可以使用资源视图快速将资源发布到Experience Manager和Dynamic Media。 这可以确保您管理资源，然后使用发布它们 [未切换到“管理员”视图的“资产”视图](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview#persona-based-experiences).
+通过Experience Manager Assets，您可以使用资源视图快速将资源发布到Experience Manager和Dynamic Media。 这可以确保您管理资源，然后使用发布它们 [未切换到“管理员”视图的“资产”视图](/help/assets/overview.md##persona-based-experiences).
 
 Experience Manager Assets视图提供了灵活性，允许您将资源同时发布到AEM和/或Dynamic Media。 您可以在上传、浏览和搜索资产时发布资产。 本文详细介绍了用于发布资产的所有选项。
 
@@ -21,8 +21,8 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 
 * 要查看Dynamic Media的发布选项，请使用“管理员”视图配置以下设置：
 
-   * [创建Dynamic Media云配置](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm#configuring-dynamic-media-cloud-services).
-   * 在文件夹级别设置Dynamic Media发布模式。 您也可以在创建Dynamic Media云配置时配置这些设置。 要在文件夹级别覆盖这些设置，请参阅 [在Dynamic Media中的文件夹级别配置选择发布](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing).
+   * [创建Dynamic Media云配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * 在文件夹级别设置Dynamic Media发布模式。 您也可以在创建Dynamic Media云配置时配置这些设置。 要在文件夹级别覆盖这些设置，请参阅 [在Dynamic Media中的文件夹级别配置选择发布](/help/assets/dynamic-media/selective-publishing.md).
 
 * 要查看AEM的发布选项，必须为环境配置AEM发布端点。
 
@@ -99,7 +99,7 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 
 要检查资产或文件夹的发布状态，请执行以下操作：
 
-1. 单击 **资产** 在 **资产管理** 部分在左窗格中可用。
+1. 单击 **[!UICONTROL 资产]** 在 **[!UICONTROL 资产管理]** 部分在左窗格中可用。
 2. 使用视图切换器切换到列表视图。 您可以查看资源属性，如AEM Publish、Dynamic Media Publish、标题、大小、维度等。\
    如果资产或文件夹未发布，则其状态 **AEM发布** 和 **Dynamic Media发布** 列显示为 **不适用**
    ![检查发布状态1](/help/assets/assets/check-publish-status1.png)
