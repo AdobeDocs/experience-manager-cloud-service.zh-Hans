@@ -1,9 +1,9 @@
 ---
 title: 快速发布到AEM和Dynamic Media
-description: 快速发布是新UI或资产视图中的一项功能。 此功能使用户能够灵活地同时或单独快速发布到AEM和Dynamic Media 。 这意味着在选择资源和文件夹后，用户可以选择发布到Dynamic Media或发布到AEM。 快速发布功能使新UI能够将资源和文件夹发布到Dynamic Media和AEM。
-source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
+description: 通过Assets视图中的快速发布，可同时或单独将资源发布到AEM和Dynamic Media。 您可以选择资源和文件夹，然后选择发布到Dynamic Media或AEM。
+source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
