@@ -1,13 +1,13 @@
 ---
 title: 快速发布到AEM和Dynamic Media
 description: 通过Assets视图中的快速发布，可同时或单独将资源发布到AEM和Dynamic Media。 您可以选择资源和文件夹，然后选择发布到Dynamic Media或AEM。
-source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
+exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
+source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
-
 
 # 将资源发布到AEM和Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
@@ -124,4 +124,5 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 * 能够在资源级别复制或粘贴Dynamic Media URL(如果已将资源发布到Dynamic Media)。
 * 在发布到AEM时发布引用（资产、标记等）的功能。
 * 能够在文件夹级别覆盖Dynamic Media同步状态。
-* 能够在文件夹级别覆盖Dynamic Media发布模式。
+* 能够在文件夹级别覆盖Dynamic Media发布模式
+* 尚不支持管理发布。
