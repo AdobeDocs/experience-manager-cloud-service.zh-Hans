@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
+source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
 workflow-type: tm+mt
-source-wordcount: '1965'
-ht-degree: 80%
+source-wordcount: '1963'
+ht-degree: 83%
 
 ---
 
@@ -63,15 +63,15 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 **上下文搜索**
 
-您现在还可以 [通过定义文本提示搜索存储库中可用的资源](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets会自动将这些文本提示转换为搜索筛选器并显示搜索结果。 您可以使用“筛选器”窗格查看和修改自动筛选器，以进一步缩小搜索结果。
+您现在还可以 [通过定义文本提示搜索存储库中可用的资源](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets 会自动将这些文本提示转换为搜索过滤器，并显示搜索结果。您可以使用“过滤器窗格”查看和修改自动过滤器，进一步缩小搜索结果。
 
 ![上下文搜索](/help/assets/assets/contextual-search-text-prompt1.png)
 
-**快速视频快速操作**
+**Express 视频快速操作**
 
-Experience Manager Assets现在包括 [由Adobe Express提供支持的简单直观的视频编辑工具](/help/assets/edit-videos-assets-view.md) 以提高内容重复使用和内容速度。 编辑选项包括裁剪、裁切、调整视频大小以及将MP4转换为GIF文件。
+Experience Manager Assets现在包括 [由Adobe Express提供支持的简单直观的视频编辑工具](/help/assets/edit-videos-assets-view.md) 以提高内容重复使用和内容速度。 编辑选项包括修剪、裁剪、调整视频大小以及将 MP4 转换为 GIF 文件。
 
-![使用Adobe Express裁切视频](/help/assets/assets/adobe-express-crop-video.png)
+![使用 Adobe Express 裁剪视频](/help/assets/assets/adobe-express-crop-video.png)
 
 **动态演绎版**
 
@@ -79,11 +79,11 @@ Experience Manager Assets现在包括 [由Adobe Express提供支持的简单直�
 
 ![动态演绎版](/help/assets/assets/preset_smart_crop.png)
 
-**就地重命名资源和文件夹**
+**就地重命名资产和文件夹**
 
 Experience Manager Assets现在通过提供以下功能简化了用户体验 [能够通过单击重命名资源或文件夹](/help/assets/manage-organize-assets-view.md).
 
-**将元数据表单分配给多个文件夹或从中移除元数据表单**
+**将元数据表单分配或移除到多个文件夹**
 
 您现在可以 [将元数据表单分配给多个文件夹或从中移除元数据表单](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
@@ -97,7 +97,7 @@ Experience Manager Assets现在通过提供以下功能简化了用户体验 [�
 
 -->
 
-### AEM Forms 预发行版中的新功能 {#forms-pre-release}
+### AEM Forms中的新增功能 {#forms-new-features}
 
 * **基于核心组件的自适应表单的增强型可视化规则编辑器**：此版本对基于核心组件的自适应表单的可视化规则编辑器进行了重大升级。此版本对基于核心组件的自适应表单的可视化规则编辑器进行了重大升级。此次更新的重点在于简化与自定义函数的交互，使您能够构建更为稳健、高效的表单。
 
