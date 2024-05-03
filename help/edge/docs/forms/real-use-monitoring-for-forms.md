@@ -2,11 +2,13 @@
 title: AEM Formsas a Cloud Service的Edge Delivery Services的实时使用监控
 description: AEM Formsas a Cloud Service的Edge Delivery Services实时监控涉及持续跟踪和分析用户与表单的交互。
 feature: Edge Delivery Services
+hide: true
+hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 71e3a268c5033f0a7f0d054a9f4c1fe599cd6b83
+source-git-commit: 6f78b43e857ca496465c315e8812bb67aff8c627
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 44%
+source-wordcount: '787'
+ht-degree: 45%
 
 ---
 
@@ -30,15 +32,13 @@ https://data.aem.live/?ext=forms
 
 * **URL**：该 URL 特定于用户站点或域。用户可以选择过滤站点或域以根据自己的需求查看仪表板。
 
-* **域密钥**：用户手动生成域密钥。
-
-有关域密钥的帮助，请参阅 [身份验证](https://www.aem.live/developer/rum#authentication) 文档。
+* **Domain Key**：用户手动生成域密钥。要获取表单的域密钥，请联系您的Adobe代表。
 
 ### 适用于AEM Formsas a Cloud Service的Edge Delivery Services监控功能板
 
 在登录屏幕中输入URL和域键后，您将获得对AEM Formsas a Cloud ServiceEdge Delivery Services监控仪表板的访问权限。
 
-下图演示了AEM Formsas a Cloud Service的Edge Delivery Services的RUM功能板：
+下图演示了AEM Formsas a Cloud Service的Edge Delivery Services功能板：
 
 ![RUM Forms Dashboard](/help/edge/assets/rum-forms-dashboard.png)
 
