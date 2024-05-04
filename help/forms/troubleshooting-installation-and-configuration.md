@@ -5,10 +5,10 @@ contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '213'
+ht-degree: 0%
 
 ---
 
@@ -53,3 +53,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 用户无法运行生成管道。 管道运行了一段时间后失败。
 
 要解决此问题，请打开Cloud Manager，选择 **[!UICONTROL 更新]** 选项，并运行管道。
+
+
+## 包未处于活动状态 {#bundles-inactive-state}
+
+要解决此问题，请执行以下步骤：
+
+1. 启动AEM，然后等待它完全启动，直到所有捆绑包都已启动。
+1. 停止AEM (Ctrl + C)。
+1. 放置Forms `.far` 文件。
+1. 重新启动AEM服务器。

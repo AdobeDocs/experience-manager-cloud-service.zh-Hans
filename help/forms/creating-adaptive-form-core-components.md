@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 55%
+source-wordcount: '2341'
+ht-degree: 53%
 
 ---
 
@@ -190,6 +190,17 @@ ht-degree: 55%
 
 1. 选择 **[!UICONTROL 保存]** 以保存属性。
 
+
+## 如何重命名AEM自适应表单？ {#rename-an-AEM-Adaptive-Form}
+
+要重命名自适应表单，请执行以下步骤：
+
+1. 在AEM Forms用户界面中选择自适应表单。
+1. 单击 **属性** 位于上边栏上。
+1. 在中更改表单名称 **标题** 选项卡，如下图所示。
+1. 单击 **保存并关闭**.
+
+![重命名AEM自适应表单](/help/forms/assets/change-af-name.png)
 
 <!--
 

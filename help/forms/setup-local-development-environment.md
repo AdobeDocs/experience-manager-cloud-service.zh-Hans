@@ -4,9 +4,9 @@ description: 为Adobe Experience Manager Formsas a Cloud Service设置本地开�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: a070e945f23641cfdfd71511366e5b2c16ec22e8
 workflow-type: tm+mt
-source-wordcount: '2726'
+source-wordcount: '2762'
 ht-degree: 2%
 
 ---
@@ -91,6 +91,11 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 1. 导航至 **[!UICONTROL AEMas a Cloud Service]** 选项卡。
 1. 按发布日期降序排序。
 1. 单击最新的Adobe Experience Manager as a Cloud Service SDK、Experience Manager Forms功能存档(AEM Forms加载项)、表单引用资源或Forms Designer。
+
+   >[!NOTE]
+   >
+   > 建议下载最新版本的Experience Manager Forms功能存档(AEM Forms加载项)、表单引用资源或Forms Designer，以便与Adobe Experience Manager as a Cloud Service SDK无缝兼容。
+
 1. 查看并接受EULA。 选择&#x200B;**[!UICONTROL 下载]**&#x200B;按钮。
 
 ## 为AEM项目设置开发工具 {#setup-development-tools-for-AEM-projects}
@@ -136,6 +141,13 @@ Adobe Experience Manager Formsas a Cloud Service功能存档提供了用于在�
    >[!NOTE]
    >
    > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+
+<!--**Q**: I've set up a Aem as a Cloud Service environment and added the Forms Add-On for a project. After the .far file addition, the bundles are not in the active state and are in installed state only due to the missing dependencies. How to make the bundles in the active state?
+**A**: To resolve the issue:
+1. Start the AEM and wait for it to start completely (all bundles up)
+1. Stop aem (ctrl + c). Place the forms far in the install folder.
+1. Restart AEM.-->
+
 
 ### 配置用户和权限 {#configure-users-and-permissions}
 

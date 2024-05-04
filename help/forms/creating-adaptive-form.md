@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 70%
+source-wordcount: '1560'
+ht-degree: 68%
 
 ---
 
@@ -205,6 +205,16 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 >
 > 您还可以将自适应表单另存为模板。 有关更多信息，请参阅[使用自适应表单创建模板](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template)。
 
+## 如何重命名AEM自适应表单？ {#rename-an-AEM-Adaptive-Form}
+
+要重命名自适应表单，请执行以下步骤：
+
+1. 在AEM Forms用户界面中选择自适应表单。
+1. 单击 **属性** 位于上边栏上。
+1. 在中更改表单名称 **标题** 选项卡，如下图所示。
+1. 单击 **保存并关闭**.
+
+![重命名AEM自适应表单](/help/forms/assets/change-af-name.png)
 
 ## 另请参阅 {#see-also}
 
