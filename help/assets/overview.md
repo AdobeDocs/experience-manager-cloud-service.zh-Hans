@@ -1,19 +1,19 @@
 ---
-title: 使用AEM的Adobe数字资源管理(DAM)
-description: 了解如何使用Experience Manager Assetsas a Cloud Service来使用和管理Adobe的数字资源管理(DAM)。
+title: 使用 AEM 的 Adobe 数字资产管理 (DAM)
+description: 了解如何通过 Experience Manager Assets as a Cloud Service 来使用和管理 Adobe 的数字资产管理 (DAM)。
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 4844d736d3791b376b7ad9cafa005c856c114837
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Assets as a简介 [!DNL Cloud Service] 用于AEM中的数字资产管理 {#assets-cloud-service-introduction}
+# 在 AEM 中引入 Assets as a [!DNL Cloud Service] 数字资产管理 {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -23,13 +23,13 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云�
 
 企业需要为面向多设备、跨地域和多语言用例的一系列广泛的文件格式和内容解决方案提供支持。根据资源处理和存储要求，所需的资源和功能可能会导致传统解决方案的负担过重。有时，资源处理方面的技术限制会导致无法产生预期结果；在其他时候，存储成本会缩小利润空间。
 
-首先，了解 [云原生服务的优势](#solution-benefits) 用于数字资产管理。 查看[对 Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) 所做的显著更改，这些更改将在[对 Assets 进行显著更改](/help/assets/assets-cloud-changes.md)后影响 Experience Manager Assets。
+首先，了解[云原生产品](#solution-benefits)对数字资产管理的好处。查看[对 Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) 所做的显著更改，这些更改将在[对 Assets 进行显著更改](/help/assets/assets-cloud-changes.md)后影响 Experience Manager Assets。
 
 继续阅读以了解[新 Assets 功能的详细信息](#whats-new-assets)和[已知问题](/help/release-notes/maintenance/latest.md)。查看[弃用或删除的功能](/help/release-notes/deprecated-removed-features.md)的列表以了解此版本中删除的功能。最后，通过此[词汇表](/help/overview/terminology.md)了解 Experience Manager 术语。
 
 ## 解决方案好处 {#solution-benefits}
 
-以下是Assets as a [!DNL Cloud Service] 用于数字资产管理。 要了解详细信息，请参阅 [Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md) 概述。
+以下是 Assets as a [!DNL Cloud Service] 数字资产管理的主要优势。要了解详细信息，请参阅 [Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md) 概述。
 
 * **用于资源处理的现代云服务**：新的资源微服务是一项基于云、可扩展、可靠、无忧的资源处理服务。
 * **高度可扩展**：跨所有类型的部署的有弹性的可扩展性。在需要时按需提供的几乎无限的资源。与传统系统相比，节省了过度设计的成本。
@@ -38,13 +38,13 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 为企业提供了云�
 * **持续监控**：系统监控是自动实施的，内置检查和触发器可帮助保持性能、可用性和整体可靠性。
 * **无忧部署**：云中的 Experience Manager 操作是完全自动执行的，无需手动干预。对于自动化部署，Cloud Manager (CM) 组件将使构建包含自定义代码的可部署 Docker 图像的过程的自动化。
 
-## 数字资产管理的可用基于角色的体验 {#persona-based-experiences}
+## 基于角色的数字资产管理可用体验 {#persona-based-experiences}
 
 Adobe 为您提供强大的数字资源管理（DAM）解决方案，让您能够充分利用数字资源。 Adobe Experience Manager Assets 具有两种使用相同 Cloud Service 存储库的独立体验：
 
-* **管理视图**：现有资源作为 Cloud Service 用户界面。使用“管理员视图”执行所有高级数字资产管理功能，包括集成、工作流、内容自动化、发布等。
+* **管理视图**：现有资源作为 Cloud Service 用户界面。使用管理视图实现所有高级数字资产管理功能，包括集成、工作流程、内容自动化、发布等。
 
-* **资源视图**：Adobe 的轻量级资源管理体验，用于存储、管理、发现和使用数字资源。简化的用户界面，包含基本的数字资产管理功能。 专为轻量级 DAM 用户设计，专注于上传、元数据管理、搜索、下载和共享。
+* **资产视图**：Adobe 的轻量级资源管理体验，用于存储、管理、发现和使用数字资产。简化的用户界面包含基本的数字资产管理功能。专为轻量级 DAM 用户设计，专注于上传、元数据管理、搜索、下载和共享。
 
 有权访问管理视图的用户也可以访问资源视图。资源视图提供简化的用户界面，使您可以轻松管理、探索和分发数字资源。 来自不同职能部门（包括创意团队、营销团队和业务线团队）的广泛用户可以就资源进行协作，并在需要时随时随地访问正确的、经批准的资源。许多临时 DAM 用户更喜欢资源视图，因为它只包含一部分功能。该体验面向创意人员、只读资源消费者和轻量级 DAM 用户。
 
