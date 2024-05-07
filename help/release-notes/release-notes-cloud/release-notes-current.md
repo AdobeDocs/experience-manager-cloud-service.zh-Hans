@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
+source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
 workflow-type: tm+mt
-source-wordcount: '1963'
-ht-degree: 83%
+source-wordcount: '2655'
+ht-degree: 61%
 
 ---
 
@@ -210,6 +210,80 @@ Adobe Managed CDN 现在支持 Edge Side Includes (ESI)，这是一种用于边�
 * 并行传输多个日志
 
 请联系 **<aemcs-rde-support@adobe.com>** 试用并提供反馈。
+
+
+## [!DNL Experience Manager] 指南 {#guides}
+
+
+### 能够使用预配置的语言组将内容翻译成多种语言
+
+Experience Manager指南现在允许您创建语言组并轻松地将内容翻译成多种语言。 此功能可帮助您根据组织的需求组织和管理翻译。
+
+例如，如果您需要为某些欧洲国家/地区翻译您的内容，则可以创建一个欧洲语言的语言组，如英语(EN)、法语(FR)、德语(DE)、西班牙语(ES)和意大利语(IT)。
+
+![翻译面板](../assets/guides/translation-languages-2404.png)
+
+*选择要翻译文档的语言组或语言。*
+
+>[!NOTE]
+>
+>如果缺少语言的目标文件夹，或者目标语言与源语言相同，则文件夹将呈灰色显示，并显示一个警告符号。
+
+作为管理员，您可以创建语言组并将它们配置为多个文件夹配置文件。 作为作者，您可以查看在文件夹配置文件中配置的语言组。
+
+
+总体而言，创建语言组可提高翻译项目的效率和生产率，最终改进跨多种语言的本地化流程。
+
+
+了解如何 [从Web编辑器翻译文档](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+
+### 改版后的在存储库视图中搜索和筛选文件的体验
+
+现在，您在筛选文件时有了增强的体验。 经过改进的文件过滤功能提供了一种改进的方法，让您能够轻松地搜索和浏览文件。
+
+![在存储库视图中搜索文件](../assets/guides/repository-filter-search-2404.png)
+
+*搜索包含文本的文件`general purpose.`*
+
+享受以下好处：更快地访问相关文件以及更直观的用户界面，让您的搜索体验更顺畅、更有效。
+
+![快速搜索筛选器 ](../assets/guides/repository-filter-search-quick.png)
+
+*使用快速筛选器搜索DITA和非DITA文件。*
+
+了解关于 **筛选搜索** 中的功能 [左侧面板](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) 部分。
+
+### 数据源连接器的增强功能
+
+对2024.4.0版本的数据源连接器进行了以下增强：
+
+#### 连接到Salsify、Akeneo和Microsoft Azure DevOps Boards (ADO)数据源
+
+除了现有的开箱即用连接器外，Experience Manager指南还为Salsify、Akeneo和Microsoft Azure DevOps Boards (ADO)数据源提供连接器。 作为管理员，您可以下载并安装这些连接器。 然后，配置已安装的连接器。
+
+#### 复制并粘贴示例查询以创建内容片段或主题
+
+您可以在生成器中轻松复制并粘贴示例数据查询，以创建内容片段或主题。 使用此功能，您无需记住语法或手动创建查询。 您可以复制并粘贴示例查询，编辑该查询，然后按照您的要求使用它获取数据，而不是手动键入查询。
+
+![“插入内容片段”对话框](../assets/guides/insert-content-snippet.png)
+
+*复制并编辑示例查询以创建内容片段。*
+
+#### 使用文件连接器连接到JSON数据文件
+
+
+现在，作为管理员，您可以配置JSON文件连接器，以使用JSON数据文件作为数据源。 使用连接器从您的计算机或Adobe Experience Manager Assets导入JSON文件。 然后，作为作者，您可以使用生成器创建内容片段或主题。
+
+此功能可帮助您使用JSON文件中存储的数据并在各种代码片段中重复使用。 每次更新JSON文件时，内容也会动态更新。
+
+#### 为连接器配置多个资源URL以创建内容片段或主题
+
+作为管理员，您可以为某些连接器(如Generic REST Client、Salsify、Akeneo和Microsoft Azure DevOps Boards (ADO))配置多个资源URL。
+然后，作为作者，与数据源连接以使用生成器创建内容片段或主题。 此功能非常方便，因为您不必为每个URL创建数据源。 它可帮助您从单个内容片段或主题中特定数据源的任何资源快速获取数据。 查看有关数据源连接器和操作方法的更多详细信息 [从用户界面配置数据源连接器](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). 了解如何 [使用来自数据源的数据](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+
+有关新增功能和增强功能的详细信息，请查看 [2024.04.0版本中的新增功能](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+
+有关此版本中修复的问题列表，请查看 [修复了2024.4.0版本中的问题](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
 
 ## Cloud Manager {#cloud-manager}
 
