@@ -3,9 +3,9 @@ title: 访问 Cloud Manager
 description: 了解如何访问 Cloud Manager，以便您可以设置项目资源。
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 5c9dbaa25f0142afdae8b09dc18d1e1aaaf4c1fb
+source-git-commit: 0e0337f6e14aa2f5b616ebc0a4b3c95089637369
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1040'
 ht-degree: 100%
 
 ---
@@ -109,8 +109,6 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 成功登录 Cloud Manager 后，您可以验证您是否已被分配&#x200B;**业务负责人**&#x200B;产品配置文件。
 
 1. 从窗口的右上角选择您的个人资料。
-
-   ![用户配置文件](/help/journey-onboarding/assets/setup-resources5.png)
 
 1. 选择&#x200B;**用户角色**，以显示分配给用户的角色。
 
