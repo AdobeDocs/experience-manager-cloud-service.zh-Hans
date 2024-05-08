@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
+source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
-source-wordcount: '4915'
+source-wordcount: '4917'
 ht-degree: 99%
 
 ---
@@ -204,6 +204,7 @@ ht-degree: 99%
       + [分配 AEM 产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)
       + [开发人员和部署管理器任务](/help/journey-onboarding/developers.md)
       + [AEM 用户任务](/help/journey-onboarding/aem-users.md)
+      + [上线清单](/help/journey-onboarding/go-live-checklist.md)
    + AEM 参考演示加载项历程 {#demo-add-on}
       + [概述](/help/journey-sites/demos-add-on/overview.md)
       + [安装](/help/journey-sites/demos-add-on/installation.md)
