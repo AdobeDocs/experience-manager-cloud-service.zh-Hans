@@ -5,7 +5,7 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 source-git-commit: 79dcf8a4e9834beeb466ed9270a3f5c6aa67aa9a
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 22%
+ht-degree: 29%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 22%
 
 以下总结了维护版本16145的持续改进，该版本于2024年5月1日公开发布。 上一个维护版本是版本 15977。
 
-2024.4.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.4.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强 {#enhancements-16145}
 
@@ -79,12 +79,12 @@ ht-degree: 22%
 
 * [在 Adobe Developer Console 中弃用 JWT 凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
-* 自2024年5月1日起，AdobeDynamic Media将停止支持以下内容：
+* 自 2024 年 5 月 1 日起，Adobe Dynamic Media 将终止对以下内容的支持：
 
    * SSL（安全套接字层）2.0
    * SSL 3.0
-   * TLS（传输层安全性） 1.0和1.1
-   * TLS 1.2中的以下弱加密：
+   * TLS（传输层安全性）1.0 和 1.1
+   * TLS 1.2 中的以下弱密码：
       * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
       * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
       * `TLS_RSA_WITH_AES_256_GCM_SHA384`
@@ -101,7 +101,7 @@ ht-degree: 22%
       * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 
 
-要了解AEMas a Cloud Service中已弃用或删除的内容，请参阅 [已弃用和已删除的功能和API](/help/release-notes/deprecated-removed-features.md).
+若要了解 AEM as a Cloud Service 中已弃用或移除的功能，请参阅[已弃用和已移除的功能和 API。](/help/release-notes/deprecated-removed-features.md)
 
 ### 嵌套的技术 {#embedded-tech-16145}
 

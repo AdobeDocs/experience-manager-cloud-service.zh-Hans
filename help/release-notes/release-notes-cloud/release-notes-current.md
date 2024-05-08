@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
 workflow-type: tm+mt
 source-wordcount: '2655'
-ht-degree: 61%
+ht-degree: 73%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 61%
 >
 >您可以在此部分中导航到早期版本的发行说明；例如，2021 版或 2022 版等的发行说明。
 >
->查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
+>查看 [Experience Manager 版本发行路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)，了解即将推出的 [!DNL Experience Manager] as a Cloud Service 的功能激活。
 
 >[!NOTE]
 >
->有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)。
+>有关未与版本直接相关的文档更新的详细信息，请参阅[最新文档更新](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates)。
 
 ## 发布日期 {#release-date}
 
-的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前功能版本(2024.4.0)为2024年4月25日。 下一个功能版本(2024.5.0)计划于2024年5月30日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2024.4.0) 的发布日期为 2024 年 4 月 25 日。下一个功能版本 (2024.5.0) 计划于 2024 年 5 月 30 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -63,29 +63,29 @@ Have a look at the April 2024 Release Overview video for a summary of the featur
 
 **上下文搜索**
 
-您现在还可以 [通过定义文本提示搜索存储库中可用的资源](/help/assets/search-assets-view.md#contextual-search). Experience Manager Assets 会自动将这些文本提示转换为搜索过滤器，并显示搜索结果。您可以使用“过滤器窗格”查看和修改自动过滤器，进一步缩小搜索结果。
+您现在还可以[通过定义文本提示来搜索存储库中可用的资产](/help/assets/search-assets-view.md#contextual-search)。Experience Manager Assets 会自动将这些文本提示转换为搜索过滤器，并显示搜索结果。您可以使用“过滤器窗格”查看和修改自动过滤器，进一步缩小搜索结果。
 
 ![上下文搜索](/help/assets/assets/contextual-search-text-prompt1.png)
 
 **Express 视频快速操作**
 
-Experience Manager Assets现在包括 [由Adobe Express提供支持的简单直观的视频编辑工具](/help/assets/edit-videos-assets-view.md) 以提高内容重复使用和内容速度。 编辑选项包括修剪、裁剪、调整视频大小以及将 MP4 转换为 GIF 文件。
+Experience Manager Assets 现在包括[由 Adobe Express 提供支持的简单而直观的视频编辑工具](/help/assets/edit-videos-assets-view.md)，可提高内容重用率，并加快内容创建速度。编辑选项包括修剪、裁切、调整视频大小以及将 MP4 转换为 GIF 文件。
 
-![使用 Adobe Express 裁剪视频](/help/assets/assets/adobe-express-crop-video.png)
+![使用 Adobe Express 裁切视频](/help/assets/assets/adobe-express-crop-video.png)
 
 **动态演绎版**
 
-您现在可以 [查看和下载动态演绎版（包括智能裁剪）](/help/assets/renditions.md) 在Experience Manager Assets中。 动态演绎版是实时创建的图像资源的自定义版本，可满足特定需求，例如根据设备分辨率调整图像大小或裁剪以适合不同的宽高比。 这些演绎版使组织能够为不同的受众需求提供个性化和优化的体验。
+您现在可以在 Experience Manager Assets 中 [查看和下载动态演绎版（包括智能裁切）](/help/assets/renditions.md)。动态演绎版是实时创建的图像资产的定制版本，以满足特定需求，例如根据设备分辨率调整图像大小，或通过裁切来适应不同的纵横比。这些演绎版使组织能够根据不同受众的需求提供个性化的优化体验。
 
 ![动态演绎版](/help/assets/assets/preset_smart_crop.png)
 
 **就地重命名资产和文件夹**
 
-Experience Manager Assets现在通过提供以下功能简化了用户体验 [能够通过单击重命名资源或文件夹](/help/assets/manage-organize-assets-view.md).
+Experience Manager Assets 现在提供[通过单击来重命名资产或文件夹](/help/assets/manage-organize-assets-view.md)的功能，从而简化用户体验。
 
 **将元数据表单分配或移除到多个文件夹**
 
-您现在可以 [将元数据表单分配给多个文件夹或从中移除元数据表单](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
+您现在可以[将元数据表单分配或移除到多个文件夹](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder)。
 
 
 
@@ -165,23 +165,23 @@ Experience Manager Assets现在通过提供以下功能简化了用户体验 [�
 
 ### CDN 配置 {#cdn-config}
 
-通过以下方式在AdobeCDN上配置流量：
+通过以下方式在 Adobe CDN 上配置流量：
 
-* [请求转换](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)  — 修改传入请求的各个方面，包括路径、查询参数和HTTP标头，然后再将传入请求路由到AEM。
-* [响应转换](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  — 更改传出响应的HTTP标头，然后将其提供给浏览器。
-* [源选择器](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors)  — 通过CDN将流量路由到非AEM站点和应用程序。
+* [请求变换](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)：在传入请求路由到 AEM 之前，修改它们的各个方面，包括路径、查询参数和 HTTP 标头。
+* [响应变换](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)：在传出响应传送至浏览器之前更改其 HTTP 标头。
+* [来源选择器](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors)：通过 CDN 将流量路由到 AEM 以外的站点和应用程序。
 
-在源代码管理(git)中声明这些规则后，您可以使用Cloud Manager配置管道将它们部署到CDN。 另请参阅下面早期采用者部分中的客户端重定向功能。
+在源代码控制 (git) 中声明这些规则后，您就可以使用 Cloud Manager 配置管道将它们部署到 CDN。另请参阅下面早期采用者部分中的客户端重定向功能。
 
-### 自定义CDN错误页面 {#cdn-error-pages}
+### 自定义 CDN 错误页面 {#cdn-error-pages}
 
-在CDN无法将流量路由到AEM源的罕见情况下，可以声明自定义错误页面，替换通用版本。 [了解详情](/help/implementing/dispatcher/cdn-error-pages.md) 关于如何提供标记错误页面。
+如果 CDN 无法将流量路由到 AEM 来源，则可以通过声明自定义错误页面来替换通用版本。[了解详情](/help/implementing/dispatcher/cdn-error-pages.md)如何提供品牌错误页面。
 
 ### 早期采用者计划 {#foundation-early-adopter}
 
-#### 客户端重定向（早期采用者计划） {#client-side-redirects-early-adopter}
+#### 客户端重定向（早期采用者项目） {#client-side-redirects-early-adopter}
 
-在源代码管理中配置301/302客户端重定向，并将其部署到CDN。 [了解详情](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) 并通过发送电子邮件加入率先采用者计划 **<aemcs-cdn-config-adopter@adobe.com>**.
+在源代码控制中配置 301/302 客户端重定向，并部署到 CDN。[了解详情](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)并通过向 **<aemcs-cdn-config-adopter@adobe.com>** 发送电子邮件加入早期采用者计划。
 
 #### 流量过滤规则警报（早期采用者计划） {#traffic-filter-rules-alerts-early-adopter}
 
