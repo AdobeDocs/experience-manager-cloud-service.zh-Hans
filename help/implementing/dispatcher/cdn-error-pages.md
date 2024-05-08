@@ -3,7 +3,7 @@ title: 配置CDN错误页面
 description: 了解如何覆盖默认错误页面，其中将静态文件托管在自托管存储(如Amazon S3或Azure Blob Storage)中，并在使用Cloud Manager配置管道部署的配置文件中引用它们。
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
+source-git-commit: 395e2faa6cd2a3430ce00208a4d904fe8e0c2333
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 5%
@@ -46,7 +46,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_errorPages:
+  errorPages:
     spa:
       title: the error page
       icoUrl: https://www.example.com/error.ico
