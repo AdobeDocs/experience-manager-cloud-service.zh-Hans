@@ -1,26 +1,33 @@
 ---
-title: AEMas a Cloud Service2024.01.0版中迁移工具的发行说明
-description: AEMas a Cloud Service2024.01.0版中迁移工具的发行说明
+title: AEMas a Cloud Service2024.05.0版中迁移工具的发行说明
+description: AEMas a Cloud Service2024.05.0版中迁移工具的发行说明
 feature: Release Information
-source-git-commit: 0c2dca09a1d0070765e89de833fdd1c7607010c6
+exl-id: 52709511-eab2-47a7-8bea-1b707cd568a1
+source-git-commit: 5275c759d38563f655d4861b191aaf583d001268
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '166'
 ht-degree: 7%
 
 ---
 
-# AEMas a Cloud Service2024.01.0版中迁移工具的发行说明 {#release-notes}
+# AEMas a Cloud Service2024.05.0版中迁移工具的发行说明 {#release-notes}
 
-此页概述了AEMas a Cloud Service2024.01.0中迁移工具的发行说明。
+此页概述了AEMas a Cloud Service2024.05.0中迁移工具的发行说明。
 
-## 内容转移工具 {#ctt-release}
+## Best Practices Analyzer {#bpa-release}
 
-### 发布日期 {#release-date-ctt}
+### 发布日期 {#release-date-bpa}
 
-内容传输工具版本3.0.10的发布日期为2024年1月15日。
+Best Practices Analyzer v2.1.48的发布日期是2024年5月9日。
 
-### 新增功能 {#what-is-new-ctt}
+### 新增功能 {#what-is-new-bpa}
 
-* 内容传输工具现在支持迁移收藏集。 用户可以使用路径选择器选择收藏集文件夹并执行提取。
+* 最佳实践分析器(BPA)现在支持将BPA生成的报告直接自动上传到Cloud Acceleration Manager (CAM)。 用户不再需要手动下载报告并将其上传到CAM。 了解详情 [此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer)
 
+## Cloud Acceleration Manager {#cam-release}
 
+### 新增功能 {#what-is-new-cam}
+
+* Cloud Acceleration Manager (CAM)现在支持将BPA生成的报表自动直接上传到CAM。 了解详情 [此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase#best-practices-analysis)
+
+* Cloud Acceleration Manager现在可以估计引入可能需要的时长，具体取决于节点数、数据存储大小等因素。 了解详情 [此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content)
