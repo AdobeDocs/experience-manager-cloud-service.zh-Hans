@@ -1,15 +1,16 @@
 ---
 title: 内容片段和内容片段模型OpenAPI
 description: 了解内容片段和内容片段模型OpenAPI。
-source-git-commit: a9e6df69c3753677053a3ecde6b5f04794f748dd
+exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
+source-git-commit: 2921667598201b6087fab3ca5c1ef5b57c1fa18f
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 0%
+source-wordcount: '98'
+ht-degree: 1%
 
 ---
 
 # 内容片段和内容片段模型OpenAPI {#content-fragments-and-content-fragment-models-openapis}
 
-内容片段和内容片段模型OpenAPI允许开发人员以编程方式与存储在AEM中的内容片段和内容片段模型交互，并对它们执行CRUD（创建、读取、更新、删除）操作。
+内容片段管理API的现代化OpenAPI实施允许开发人员以编程方式对AEM创作执行创建、读取、更新和删除操作，以管理存储在AEM中的内容片段模型和内容片段。 这些API支持许多用例。
 
-这些API支持许多用例。 有关完整信息，请参阅 [内容片段和竞赛片段模型OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+的现有用法 [资源HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) for内容片段应迁移到新的内容片段管理OpenAPI。 有关完整文档，请参阅 [内容片段管理API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
