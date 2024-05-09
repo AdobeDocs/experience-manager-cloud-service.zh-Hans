@@ -4,10 +4,10 @@ description: 对的重要更改 [!DNL Adobe Experience Manager Assets] 在 [!DNL
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 11%
+source-wordcount: '998'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 11%
 
 * [资产摄取、上传和处理](#asset-ingestion).
 * [用于云原生处理的资产微服务](#asset-microservices).
-* [删除了经典 UI](#classic-ui).
+* [删除了经典UI](#classic-ui).
 
 ## 资产提取、处理和分发 {#asset-ingestion-distribution}
 
@@ -29,7 +29,7 @@ ht-degree: 11%
    * 资产上传 [直接二进制访问](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
    * 有关技术详细信息，请参阅 [直接二进制上传协议和API](/help/assets/developer-reference-material-apis.md#upload-binary).
    * 有关基本CRUD操作的可用API方法的比较，请参阅 [API和资产操作](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
-*  早期版本中的默认工作流程 **[!UICONTROL DAM 资产更新]**&#x200B;不再可用。[!DNL Experience Manager]相反，资产微服务提供了可扩展的、随时可用的服务，涵盖了大多数默认资产处理（演绎版、元数据提取和索引的文本提取）。
+* 默认工作流 **[!UICONTROL DAM资产更新]** 在早期版本的 [!DNL Experience Manager] 不再可用。 相反，资产微服务提供了可扩展的、随时可用的服务，涵盖了大多数默认资产处理（演绎版、元数据提取和索引的文本提取）。
    * 请参阅 [配置和使用资源微服务](/help/assets/asset-microservices-configure-and-use.md)
    * 要在处理过程中自定义工作流步骤，请执行以下操作： [后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 可以使用。
 
@@ -53,10 +53,10 @@ ht-degree: 11%
 |-----|-----|-----|
 | [重复资产检测](/help/assets/detect-duplicate-assets.md) | 工作方式不同 | 请参阅 [它如何在 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [仅用于置入(FPO)演绎版](/help/assets/configure-fpo-renditions.md) | 工作方式不同 | 处理配置文件使用资产微服务生成FPO演绎版。 在Experience Manager6.5中，第三方解决方案，如 [!DNL ImageMagick] 可用于生成节目。 |
-| 元数据写回 | 工作方式不同 | 默认为已禁用. 如果需要，请启用相应的工作流启动器。 写回由资源微服务处理。 |
+| 元数据写回 | 工作方式不同 | 默认禁用。 如果需要，请启用相应的工作流启动器。 写回由资源微服务处理。 |
 | 处理使用包管理器上传的资产 | 需要手动干预 | 使用手动重新处理 **[!UICONTROL 重新处理资产]** 操作。 |
-| MIME类型检测 | 不受支持. | 如果您上传不带扩展或扩展不正确的数字资产，可能无法按需要处理该资产。 用户仍然可以在DAM中存储不带扩展名的二进制文件。 请参阅 [中的MIME类型检测 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| 复合资产的子资产生成 | 不受支持. | 可能无法实现注释等依赖用例。 请参阅 [在中创建子资产 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). 某些文件类型的PDF预览从 [2021.7.0发行版](/help/release-notes/release-notes-cloud/release-notes-current.md). |
+| MIME类型检测 | 不支持。 | 如果您上传不带扩展或扩展不正确的数字资产，可能无法按需要处理该资产。 用户仍然可以在DAM中存储不带扩展名的二进制文件。 请参阅 [中的MIME类型检测 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
+| 复合资产的子资产生成 | 不支持。 | 可能无法实现注释等依赖用例。 请参阅 [在中创建子资产 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). 某些文件类型的PDF预览从 [2021.7.0发行版](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | 编辑图像 | 不受支持 | Experience Manageras a Cloud Service不支持编辑资源。 请参阅 [在Experience Manager6.5中的工作原理](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
 | 主页 | 不受支持 | 请参阅 [[!DNL Assets] 中的主页体验 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | 从ZIP存档中提取资产 | 不受支持 | 请参阅 [中的ZIP提取 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
@@ -81,6 +81,7 @@ ht-degree: 11%
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
@@ -90,6 +91,6 @@ ht-degree: 11%
 >* [介绍](/help/overview/introduction.md)
 >* [新增功能和不同功能](/help/overview/what-is-new-and-different.md)
 >* [架构](/help/overview/architecture.md)
->* [重要更改](/help/release-notes/aem-cloud-changes.md)
->* [重要更改 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [显着更改](/help/release-notes/aem-cloud-changes.md)
+>* [显着更改 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hans)

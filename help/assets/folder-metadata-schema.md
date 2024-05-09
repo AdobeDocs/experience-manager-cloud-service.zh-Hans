@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1059'
-ht-degree: 9%
+source-wordcount: '1066'
+ht-degree: 10%
 
 ---
 
@@ -187,3 +187,4 @@ ht-degree: 9%
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

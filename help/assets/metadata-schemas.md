@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2627'
-ht-degree: 9%
+source-wordcount: '2634'
+ht-degree: 10%
 
 ---
 
@@ -227,7 +227,7 @@ Experience Manager仅允许您删除自定义架构表单。 不允许删除默�
 
 1. 在 **[!UICONTROL 元数据架构Forms]** 页面上，选择 `my_default` 表单，然后单击 **[!UICONTROL 编辑]**.
 1. 在 **[!UICONTROL 元数据架构编辑器]** 页面，向架构表单中添加文本字段。 例如，添加带有标签的字段 **[!UICONTROL 类别]**.
-1. 单击 **[!UICONTROL 保存]**. 修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。
+1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。
 1. 选择 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
 1. 选择要应用已修改架构的文件夹，然后选择 **[!UICONTROL 应用]**.
 1. 如果文件夹应用了其他元数据架构，则会显示一条消息，警告您即将覆盖现有的元数据架构。 单击 **覆盖**.
@@ -245,7 +245,7 @@ Experience Manager仅允许您删除自定义架构表单。 不允许删除默�
 1. 单击Experience Manager徽标，然后导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**. 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
 1. 将默认元数据表单另存为自定义表单。 例如，将其另存为 `my_default`.
 1. 编辑自定义表单。 添加必填字段。 例如，添加 **[!UICONTROL 类别]** 字段并将字段设为必填。
-1. 单击 **[!UICONTROL 保存]**. 修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。 选择表单，然后选择 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
+1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。 选择表单，然后选择 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
 1. 导航到文件夹，然后上传一些缺少添加到自定义表单的必填字段元数据的资源。 资产的“卡片”视图上会显示一条消息，指出缺少必填字段的元数据。
 1. （可选）访问 `https://[server]:[port]/system/console/components/`. 配置并启用 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 默认禁用的组件。 设置Experience Manager检查资源上元数据有效性的频率。
 
@@ -272,3 +272,4 @@ Experience Manager仅允许您删除自定义架构表单。 不允许删除默�
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

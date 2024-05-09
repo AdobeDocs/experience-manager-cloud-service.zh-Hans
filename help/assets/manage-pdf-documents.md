@@ -4,10 +4,10 @@ description: 在中管理PDF文档 [!DNL Adobe Experience Manager] as a [!DNL Cl
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 4%
+source-wordcount: '838'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ Document CloudPDF查看器可通过以下方式为AEM Assets带来好处：
 
 ## 支持PDF资源的多页面预览和批注 {#multi-page}
 
-通过Adobe Experience Manager资源可预览包含多个页面的PDF文档。 要预览PDF文档的多页，请考虑以下步骤：
+Adobe Experience Manager Assets允许您预览包含多页的PDF文档。 要预览PDF文档的多页，请考虑以下步骤：
 
 1. 按照以下步骤操作 [在AEM中上传资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. 浏览要上载和预览的PDF文档。
@@ -147,3 +147,4 @@ Experience Manager Assets允许向PDF文档添加注释。 一个PDF文档可以
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

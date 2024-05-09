@@ -4,9 +4,9 @@ description: Experience Manager使用以下方式自动将上下文和描述性�
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1225'
 ht-degree: 3%
 
 ---
@@ -148,6 +148,7 @@ DAM中已存在的视频资产不会自动进行智能标记。 您需要 [!UICO
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

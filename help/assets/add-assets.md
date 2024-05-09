@@ -4,10 +4,10 @@ description: 将您的数字资产添加到 [!DNL Adobe Experience Manager] as a
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 8%
+source-wordcount: '3144'
+ht-degree: 9%
 
 ---
 
@@ -197,7 +197,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 要使用&#x200B;**[!UICONTROL 资源目标文件夹]**&#x200B;字段在 DAM 中定义要导入资源的位置，请指定路径。例如：`/content/dam/imported_assets`。
 
-1. （可选）指定要导入的元数据文件（以CSV格式提供），请 **[!UICONTROL 元数据文件]** 字段。 在源Blob位置中指定CSV文件，并在配置批量导入工具时引用路径。 当您执行以下操作时，此字段中所引用的CSV文件格式与CSV文件格式相同 [批量导入和导出资源元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). 如果您选择 **导入后删除源文件** 选项，使用以下任一方式筛选CSV文件 **排除** 或 **包括MIME类型** 或 **按路径/文件筛选** 字段。 您可以使用正则表达式在这些字段中筛选CSV文件。
+1. （可选）在&#x200B;**[!UICONTROL 元数据文件]**&#x200B;字段中指定要导入的元数据文件（以 CSV 格式提供）。在源Blob位置中指定CSV文件，并在配置批量导入工具时引用路径。 当您执行以下操作时，此字段中所引用的CSV文件格式与CSV文件格式相同 [批量导入和导出资源元数据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). 如果您选择 **导入后删除源文件** 选项，使用以下任一方式筛选CSV文件 **排除** 或 **包括MIME类型** 或 **按路径/文件筛选** 字段。 您可以使用正则表达式在这些字段中筛选CSV文件。
 
 1. 单击 **[!UICONTROL 保存]** 以保存配置。
 
@@ -412,6 +412,7 @@ Experience Manager显示作业历史记录。 在“批量导入作业历史记�
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

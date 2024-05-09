@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2615'
 ht-degree: 17%
 
 ---
@@ -100,7 +100,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 选择GlobalNav图标，然后选择 **[!UICONTROL 引用]** 以打开“引用”窗格。
 1. 在“引用”窗格中，选择 **[!UICONTROL 语言副本]**. 语言副本面板可显示资产的语言副本。
 
-### 创建新翻译项目 {#create-a-new-translation-project}
+### 创建新的转换项目 {#create-a-new-translation-project}
 
 如果使用此选项，则要翻译的资产将会复制到要翻译的语言的语言根中。 根据您选择的选项，将为项目控制台中的资产创建翻译项目。 根据设置，翻译项目可以手动启动，也可以在创建翻译项目后立即自动运行。
 
@@ -155,10 +155,10 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 运行此工作流可翻译任何其他资产集，并将其包含在特定区域设置的语言副本中。 在这种情况下，已翻译资产会添加到已包含先前已翻译资产的目标文件夹。 根据选项选择，将为新资产创建翻译项目或更新现有翻译项目。 更新语言副本工作流包含以下选项：
 
-* 创建新翻译项目
-* 添加到现有翻译项目
+* 创建新的转换项目
+* 添加至现有翻译项目
 
-### 添加到现有翻译项目 {#add-to-existing-translation-project-1}
+### 添加至现有翻译项目 {#add-to-existing-translation-project-1}
 
 如果使用此选项，则资源集将添加到现有翻译项目中，以更新所选区域设置的语言副本。
 
@@ -168,7 +168,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 选择 **[!UICONTROL 更新语言副本]** 在底部。
 1. 从 **[!UICONTROL 项目]** 列表，选择 **[!UICONTROL 添加到现有翻译项目]**.
 1. 从 **[!UICONTROL 现有翻译项目]** 列表中，选择一个项目以添加要翻译的资产。
-1. 选择 **[!UICONTROL 开始]**.
+1. 选择&#x200B;**[!UICONTROL 开始]**。
 1. 请参阅中的步骤9 - 14 [添加到现有翻译项目](#add-to-existing-translation-project) 以完成其余过程。
 
 ### 创建临时语言副本 {#creating-temporary-language-copies}
@@ -221,8 +221,8 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 您可以使用创建和翻译工作流首次生成特定语言的语言副本。 工作流提供了以下选项：
 
 * 只创建结构
-* 创建新翻译项目
-* 添加到现有翻译项目
+* 创建新的转换项目
+* 添加至现有翻译项目
 
 ### 只创建结构 {#create-structure-only}
 
@@ -294,3 +294,4 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

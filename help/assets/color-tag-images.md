@@ -2,9 +2,9 @@
 title: 图像的颜色标记
 description: Adobe Experience Manager Assets使您能够区分图像中的颜色，并自动将这些颜色作为标记应用。 然后，您可以使用这些标记来搜索和过滤图像。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1244'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能区分图像中�
 
 ## 支持的文件格式 {#supported-file-formats-color-tags}
 
-| 文件格式 | 扩展名 | MIME类型 | 输入颜色空间 | 支持的最大源文件大小 | 支持的最大文件大小分辨率 |
+| 文件格式 | 扩展 | MIME类型 | 输入颜色空间 | 支持的最大源文件大小 | 支持的最大文件大小分辨率 |
 |---|---|---|---|---|---|
 | JPEG | .jpg和.jpeg | image/jpeg | sRGB | 15 GB | 20000 × 20000像素 |
 | PNG | .png | image/png | sRGB | 15 GB | 20000 × 20000像素 |
@@ -196,3 +196,4 @@ DAM中的现有图像不会自动进行颜色标记。 [!UICONTROL 重新处理�
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

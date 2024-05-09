@@ -1,20 +1,20 @@
 ---
 title: 架构 [!DNL Assets]
-description: Adobe Experience Manager Assets as a [!DNL Cloud Service]
+description: Adobe Experience Manager Assets as a的架构 [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 32%
+source-wordcount: '125'
+ht-degree: 36%
 
 ---
 
-# Assets as a [!DNL Cloud Service] 解决方案 {#assets-architecture}
+# Assets as a的架构 [!DNL Cloud Service] 解决方案 {#assets-architecture}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 基于 [!DNL Adobe Experience Manager] 和最新推出的产品相提并论 [!DNL Experience Manager] 6.5. [!DNL Cloud Service] 产品具有经调整的架构和功能，可成为云原生服务。 底层架构中的更改不允许所有Experience Manager6.5功能成为 [!DNL Cloud Service].
+[!DNL Experience Manager Assets] as a [!DNL Cloud Service] 基于 [!DNL Adobe Experience Manager] 和最新产品相提并论 [!DNL Experience Manager] 6.5. [!DNL Cloud Service] 产品具有经过调整的架构和功能，可成为云原生服务。 底层架构中的更改不允许所有Experience Manager6.5功能成为 [!DNL Cloud Service].
 
 要查看资源微服务的架构概述，请参阅此 [资源微服务概述](asset-microservices-overview.md#asset-microservices-architecture).
 
@@ -32,10 +32,10 @@ ht-degree: 32%
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [概述和新增功能](/help/assets/overview.md)
 >* [支持的文件格式和MIME类型](file-format-support.md)
 >* [资产微服务概述](asset-microservices-overview.md)
-

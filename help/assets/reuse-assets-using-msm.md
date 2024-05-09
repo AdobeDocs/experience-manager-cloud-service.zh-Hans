@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 9e0aefa096a493df22860d0194a0a76f3eaf2390
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3400'
+source-wordcount: '3407'
 ht-degree: 10%
 
 ---
@@ -386,3 +386,4 @@ Live Copy是创建时原始源的复制副本。 Live Copy的元数据值继承�
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

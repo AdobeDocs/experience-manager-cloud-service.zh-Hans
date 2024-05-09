@@ -1,20 +1,20 @@
 ---
-title: 在 中，使用连接的资产共享 DAM 资产 [!DNL Sites]
+title: 使用“连接的资产”在中共享DAM资产 [!DNL Sites]
 description: 使用远程上可用的资源 [!DNL Adobe Experience Manager Assets] 在另一个网站上创建网页时的部署 [!DNL Adobe Experience Manager Sites] 部署。
 contentOwner: AK
 mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 16%
+source-wordcount: '3842'
+ht-degree: 13%
 
 ---
 
 
-# 在 中，使用连接的资产共享 DAM 资产 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# 使用“连接的资产”在中共享DAM资产 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -35,7 +35,7 @@ ht-degree: 16%
 
 对于 [!DNL Sites] 此外，远程资产将以只读本地资产形式提供。 该功能支持在站点编辑器中无缝搜索和访问远程资产。 对于可能要求在站点上提供完整资产语料的任何其他用例，请考虑批量迁移资产，而不是使用“连接的资产”。
 
-### 先决条件与支持的部署 {#prerequisites}
+### 先决条件和支持的部署 {#prerequisites}
 
 在使用或配置此功能之前，请确保：
 
@@ -65,7 +65,7 @@ ht-degree: 16%
 | DAM 用户 | 本地 | `Authors` | 用于查看和复制在 `/content/DAM/connectedassets/` 上获取的资产。 |
 | [!DNL Sites] 作者 | 本地 | <ul><li>`Authors` （对远程DAM具有读取访问权限，对本地具有创作访问权限） [!DNL Sites]) </li> <li>`dam-users` 本地 [!DNL Sites]</li></ul> | 最终用户是 [!DNL Sites] 使用此集成提高内容速度的作者。 作者可以使用在远程DAM中搜索和浏览资产 [!UICONTROL 内容查找器] 并在本地网页中使用所需的图像。 |
 | [!DNL Assets] 管理员 | 远程 | [!DNL Experience Manager] `administrators` | 配置跨源资源共享 (CORS)。 |
-| DAM 用户 | 远程 | `Authors` | 作者 远程角色 [!DNL Experience Manager] 部署。 在“连接的资产”中，使用搜索并浏览资产 [!UICONTROL 内容查找器]. |
+| DAM 用户 | 远程 | `Authors` | 远程设备上的作者角色 [!DNL Experience Manager] 部署。 在“连接的资产”中，使用搜索并浏览资产 [!UICONTROL 内容查找器]. |
 | DAM 分发人员（技术用户） | 远程 | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | 远程部署上存在的此用户由使用 [!DNL Experience Manager] 本地服务器(不是 [!DNL Sites] 创作角色)以代表获取远程资产 [!DNL Sites] 作者。 |
 | [!DNL Sites] 技术用户 | 本地 | `connectedassets-sites-techaccts` | 允许 [!DNL Assets] 部署，以搜索中资产的引用 [!DNL Sites] 网页。 |
 
@@ -100,7 +100,7 @@ An [!DNL Experience Manager] 管理员可以创建此集成。 创建后，使�
    1. A **[!UICONTROL 标题]** 配置中。
    1. **[!UICONTROL 远程DAM URL]** 是的URL [!DNL Assets] 格式中的位置 `https://[assets_servername]:[port]`.
    1. DAM 分发人员（技术用户）的凭据。
-   1. 在 **[!UICONTROL 装入点]** 字段，输入本地 [!DNL Experience Manager] 路径： [!DNL Experience Manager] 获取资源。 例如，`connectedassets` 文件夹。从DAM获取的资产存储在 [!DNL Sites] 部署。
+   1. 在 **[!UICONTROL 装入点]** 字段，输入本地 [!DNL Experience Manager] 路径： [!DNL Experience Manager] 获取资源。 例如， `connectedassets` 文件夹。 从DAM获取的资产存储在 [!DNL Sites] 部署。
    1. **[!UICONTROL 本地站点URL]** 是的位置 [!DNL Sites] 部署。 [!DNL Assets] 部署使用此值维护对此获取的数字资产的引用 [!DNL Sites] 部署。
    1. 凭据 [!DNL Sites] 技术用户。
    1. 的值 **[!UICONTROL 原始二进制传输优化阈值]** 字段指定是否同步传输原始资源（包括演绎版）。 文件大小较小的资产可以轻松获取，而文件大小相对较大的资产最好进行异步同步。 该值取决于您的网络功能。
@@ -128,7 +128,7 @@ An [!DNL Experience Manager] 管理员可以创建此集成。 创建后，使�
 
    >[!NOTE]
    >
-   >在作者获取资产时，将会获取该资产在远程 部署中可用的所有演绎版。如果要为获取的资产创建更多演绎版，请跳过此配置步骤。此 [!UICONTROL DAM更新资产] 触发工作流并创建更多演绎版。 这些演绎版仅在本地可用 [!DNL Sites] 而不是在远程DAM部署中。
+   >在作者获取资产时，将会获取远程部署中可用的所有演绎版。 如果要为获取的资产创建更多演绎版，请跳过此配置步骤。此 [!UICONTROL DAM更新资产] 触发工作流并创建更多演绎版。 这些演绎版仅在本地可用 [!DNL Sites] 而不是在远程DAM部署中。
 
 1. 添加 [!DNL Sites] 在上的CORS配置中作为允许的源部署 [!DNL Assets] 部署。 有关更多信息，请参阅 [了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
@@ -201,7 +201,7 @@ An [!DNL Experience Manager] 管理员可以创建此集成。 创建后，使�
 
    ![在远程 DAM 上搜索资产时，筛选文档类型和图像的选项](assets/filetypes_filter_connected_assets.png)
 
-   *图：在远程 DAM 上搜索资产时，筛选文档类型和图像的选项.*
+   *图：在远程DAM上搜索资产时，筛选文档类型和图像的选项。*
 
 1. 如果异步获取资产的原始资产且获取任务失败，会通知站点作者。 在创作过程中甚至创作后，作者都可以在中查看有关获取任务和错误的详细信息 [异步作业](/help/operations/asynchronous-jobs.md) 用户界面。
 
@@ -240,7 +240,7 @@ An [!DNL Experience Manager] 管理员可以创建此集成。 创建后，使�
 
 ### 管理远程DAM中资产的更新 {#handling-updates-to-remote-assets}
 
-之后 [配置连接](#configure-a-connection-between-sites-and-assets-deployments) 在远程DAM和Sites部署之间，远程DAM上的资产在Sites部署中可用。 然后，您可以对远程DAM资源或文件夹执行更新、删除、重命名和移动操作。 相关更新会在 Sites 部署中自动提供，但会有一些延迟。此外，如果在本地Experience Manager Sites页面上使用远程DAM上的资产，则对远程DAM上的资产的更新将显示在“站点”页面上。
+之后 [配置连接](#configure-a-connection-between-sites-and-assets-deployments) 在远程DAM和Sites部署之间，远程DAM上的资产在Sites部署中可用。 然后，您可以对远程DAM资源或文件夹执行更新、删除、重命名和移动操作。 更新会在Sites部署中自动提供，但会有一些延迟。 此外，如果在本地Experience Manager Sites页面上使用远程DAM上的资产，则对远程DAM上的资产的更新将显示在“站点”页面上。
 
 在将资产从一个位置移动到另一个位置时，请确保 [调整引用](manage-digital-assets.md) 以便该资产显示在站点页面上。 如果将资产移动到无法从本地Sites部署访问的位置，则该资产无法在Sites部署中显示。
 
@@ -302,7 +302,7 @@ Experience Manager显示 `expired` 远程资产内容查找器中的资产状态
 
 +++**配置“连接的资产”后，能否对远程DAM资产或文件夹执行更新、删除、重命名和移动操作？**
 
-是，在配置“连接的资产”后，您可以对远程DAM资产或文件夹执行更新、删除、重命名和移动操作。 相关更新会在 Sites 部署中自动提供，但会有一些延迟。有关更多信息，请参阅 [管理远程DAM中资产的更新](#handling-updates-to-remote-assets).
+是，在配置“连接的资产”后，您可以对远程DAM资产或文件夹执行更新、删除、重命名和移动操作。 更新会在Sites部署中自动提供，但会有一些延迟。 有关更多信息，请参阅 [管理远程DAM中资产的更新](#handling-updates-to-remote-assets).
 
 +++
 
@@ -322,7 +322,7 @@ Experience Manager显示 `expired` 远程资产内容查找器中的资产状态
 
 ### 权限和资产管理 {#permissions-and-managing-assets}
 
-* 本地资产是只读副本。[!DNL Experience Manager] 组件对资产进行无损编辑。不允许进行其他编辑。
+* 本地资产是只读副本。[!DNL Experience Manager] 组件对资产进行无损编辑。 不允许进行其他编辑。
 * 本地获取的资产只能用于创作。不能应用资产更新工作流，也不能编辑元数据。
 * 使用时 [!DNL Dynamic Media] 在 [!DNL Sites] 页面不会获取原始资产，并将其存储在本地部署中。 此 `dam:Asset` 节点、元数据和生成的演绎版 [!DNL Assets] 部署全部获取于 [!DNL Sites] 部署。
 * 仅支持图像和列出的文档格式。[!DNL Content Fragments] 和 [!DNL Experience Fragments] 不受支持。
@@ -343,12 +343,12 @@ Experience Manager显示 `expired` 远程资产内容查找器中的资产状态
 
 * 用户可以在创作时搜索远程资产并将这些资产拖动到本地页面上。 不支持其他功能。
 * 获取操作会在 5 秒后超时。作者在获取资产时可能会遇到问题，比如，网络问题。作者可以通过从拖动远程资产来重新尝试 [!UICONTROL 内容查找器] 到 [!UICONTROL 页面编辑器].
-* 可以对获取的资产执行无损的简单编辑以及 `Image` 组件支持的编辑。资产是只读的。
+* 无损的简单编辑以及通过支持的编辑 `Image` 组件，可以对获取的资产执行。 资产是只读的。
 * 重新获取资产的唯一方法是将其拖动到页面上。 没有API支持或其他方法可重新获取资产以对其进行更新。
 * 如果从DAM中停用资产，则在上继续使用这些资产 [!DNL Sites] 页数。
 * 资产的远程引用条目是异步获取的。 引用和总计数不是实时的，并且如果 [!DNL Sites] 作者在DAM用户查看引用时使用资产。 DAM用户可以刷新页面，并在几分钟后重试以获取总计数。
 
-## 故障诊断问题 {#troubleshoot}
+## 问题疑难解答 {#troubleshoot}
 
 要排除常见错误，请执行以下步骤：
 
@@ -377,3 +377,4 @@ Experience Manager显示 `expired` 远程资产内容查找器中的资产状态
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

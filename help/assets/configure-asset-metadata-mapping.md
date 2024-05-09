@@ -2,10 +2,10 @@
 title: 配置Workfront和Experience Manager Assets之间的资源元数据映射
 description: 在Adobe Workfront和Experience Manageras a Cloud Service的应用程序之间映射资源元数据字段。 作为映射元数据字段的结果，在将资源从Workfront发送到Experience Manager Assets时，您可以在Experience Manager Assets中查看映射的资源元数据。
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 3%
+source-wordcount: '1012'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 * 文档描述
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 * 拥有Workfront和Experience Manager Assetsas a Cloud Service应用程序的管理员访问权限。
 
@@ -143,3 +143,4 @@ ht-degree: 3%
 * [搜索 Facet](search-facets.md)
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
+* [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
