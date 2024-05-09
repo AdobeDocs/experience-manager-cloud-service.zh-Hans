@@ -2,14 +2,14 @@
 title: 快速发布到AEM和Dynamic Media
 description: 通过Assets视图中的快速发布，可同时或单独将资源发布到AEM和Dynamic Media。 您可以选择资源和文件夹，然后选择发布到Dynamic Media或AEM。
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
+source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# 将资源发布到AEM和Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
+# 发布资源到 AEM 和 Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
 通过Experience Manager Assets，您可以使用资源视图快速将资源发布到Experience Manager和Dynamic Media。 这可以确保您管理资源，然后使用发布它们 [未切换到“管理员”视图的“资产”视图](/help/assets/overview.md##persona-based-experiences).
 
@@ -40,7 +40,7 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 要在上传到文件夹期间发布资产，并将Dynamic Media发布模式设置为 **激活时**：
 
 1. 单击 **添加资产** > **浏览** > **浏览文件** 导航到相应的文件夹以上传资产。 此 **发布选项** 部分显示 **DM发布模式** 作为 **激活时**.
-   ![激活时上传图像](/help/assets/assets/upload-upon-activation.png)
+   ![激活时上传图像](/help/assets/assets/upload-upon-activation1.png)
 2. 选择 **发布到AEM和Dynamic Media** 并单击 **上传**. 资源将同时发布到AEM和Dynamic Media。 要查看这些资源的已更新发布状态，请参阅 [检查发布状态](#check-publish-status).
 
 ### Dynamic Media发布模式设置为立即 {#dynamic-media-publish-mode-set-to-immediate}
