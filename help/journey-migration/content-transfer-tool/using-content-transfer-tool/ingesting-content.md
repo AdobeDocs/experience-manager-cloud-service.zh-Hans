@@ -2,9 +2,9 @@
 title: 将内容提取到云服务中
 description: 了解如何使用Cloud Acceleration Manager将内容从迁移集引入目标Cloud Service实例。
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
+source-git-commit: 6372277adfac0700d80a3e6c013f419892822e55
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2905'
 ht-degree: 12%
 
 ---
@@ -215,6 +215,8 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，摄取将失败，并且日志将包含 `BSONObjectTooLarge` 错误并指定哪个节点超过了最大值。 这是MongoDB限制。
 
 请参阅 `Node property value in MongoDB` 注释 [内容传输工具的先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) 以获取更多信息以及可帮助查找所有大型节点的Oak工具链接。 修复所有大小较大的节点后，再次运行提取和摄取。
+
+要避免此限制，请运行 [最佳实践分析器](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 源AEM实例上的代码并审查它提供的结果，特别是 [“不支持的存储库结构”(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) 模式。
 
 ### 引入已取消 {#ingestion-rescinded}
 
