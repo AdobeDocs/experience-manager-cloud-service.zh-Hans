@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+source-git-commit: 835aab546896195c3a2a3355b35b81f2cd385676
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 3%
+source-wordcount: '1670'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
+> 提供了内容片段管理API的现代化OpenAPI实施。 有关完整文档，请参阅 [内容片段管理API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). 建议使用新的OpenAPI实施。 应将现有使用的内容片段资产HTTP API迁移到新的内容片段管理OpenAPI。
 
 要访问API，请执行以下操作：
 
@@ -46,7 +46,7 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 
 >[!NOTE]
 >
->此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
+>[内容片段和内容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md) 也可用。
 
 ## 数据模型 {#data-model}
 
@@ -54,7 +54,7 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 
 >[!NOTE]
 >
->此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
+>[内容片段和内容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md) 也可用。
 
 ### 文件夹 {#folders}
 
@@ -90,7 +90,7 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 
 >[!NOTE]
 >
->此 [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) 也提供。
+>[内容片段和内容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md) 也可用。
 
 在 [!DNL Experience Manager] 文件夹具有以下组件：
 
