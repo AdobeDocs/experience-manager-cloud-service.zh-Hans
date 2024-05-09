@@ -2,10 +2,10 @@
 title: 使用 Best Practices Analyzer
 description: 了解如何使用Best Practices Analyzer了解升级准备情况。
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+source-git-commit: 077be031da7a610810d398b163676a98fc036f30
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 42%
+source-wordcount: '2661'
+ht-degree: 38%
 
 ---
 
@@ -51,6 +51,13 @@ ht-degree: 42%
 >[!NOTE]
 >从下载最佳实践分析器 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 门户。
 
+## 源环境连接 {#source-environment-connectivity}
+
+源AEM实例可能正在防火墙后面运行，在该防火墙中，它只能访问已添加到允许列表的特定主机。 要将BPA生成的报告自动成功上传到Cloud Acceleration Manager，需要从运行AEM的实例访问以下端点：
+
+* Azure Blob存储服务： `casstorageprod.blob.core.windows.net`
+
+
 ## 查看Best Practices Analyzer报告 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0及更高版本 {#aem-later-versions}
@@ -65,31 +72,40 @@ ht-degree: 42%
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. 在BPA生成报告时，您可以在屏幕上看到该工具取得的进展。 它显示分析的项目数以及找到的结果数。
+1. 提供BPA上传密钥，以自动将生成的BPA报告上传到 [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). 要获取上传密钥，请导航到 [CAM中的最佳实践分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+
+>[!NOTE]
+>通过选择跳过自动上载到CAM **跳过报告自动上传到CAM**. 如果您选择跳过，则需要手动下载BPA报告作为逗号分隔值文件，然后在CAM中上传该文件。 建议使用上传密钥选项，因为它可简化操作。
+
+1. 此 **生成** 提供有效键后，按钮将变为活动状态。 单击 **生成** 以开始生成报表。
+
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+
+
+1. 在BPA生成报告时，您可以在屏幕上看到该工具取得的进展。 它按完成百分比显示进度。 它还会显示分析的项目数以及找到的结果数。
+
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
+>[!NOTE]
+>BPA上传密钥到期时间戳显示在右上角。 您应在BPA上传密钥即将到期时续订该密钥。 要续订密钥，您可以单击 **续订** 导航到CAM以更新密钥。
 
 1. 生成BPA报告后，它以表格形式显示调查结果的摘要和数量，按调查结果类型和重要性级别进行整理。 要获取有关特定发现结果的更多详细信息，您可以单击与表中发现结果类型对应的数字。
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   上述操作将自动滚动到该发现结果在报告中的位置。
+1. 您可以通过单击 **导出到CSV**. 通过单击，也可以在CAM中查看报告 **转到CAM**. 这会将您转到 [最佳实践分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) 在CAM中创建。
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+您可以通过单击强制BPA清除其缓存并重新生成报告 **刷新报告**.
 
-1. 您可以通过单击 **导出到CSV**，如下图所示。
+![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >您可以通过单击强制BPA清除其缓存并重新生成报告 **刷新报告**.
+1. 如果高速缓存过期，您可以选择在CAM中通过单击 **在CAM中查看上次生成的报表** 或者通过单击启动新的报告生成 **生成新报告**.
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
-   >[!NOTE]
-   >在重新生成报告时，它以完成百分比的形式显示进度，如下图所示。
-
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 #### 在最佳实践分析器报告中使用过滤器 {#bpa-filters}
 
