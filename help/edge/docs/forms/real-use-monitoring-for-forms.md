@@ -1,53 +1,53 @@
 ---
-title: AEM Formsas a Cloud Service的实时监控(RUM)Edge Delivery Services
-description: AEM Formsas a Cloud Service的Edge Delivery Services实时监控(RUM)涉及持续跟踪和分析用户与表单的交互。
+title: 适用 AEM Forms as a Cloud Service 的 Edge Delivery Services 的实际使用监控 (RUM)
+description: 适用 AEM Forms as a Cloud Service 的 Edge Delivery Services 的实际使用监控 (RUM) 涉及对用户与表单交互进行持续跟踪和分析。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 6c56f753d2a32de6fe11fd47843cee5bcb8cac4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 
-# AEM Formsas a Cloud Service的实时监控(RUM)Edge Delivery Services
+# 适用 AEM Forms as a Cloud Service 的 Edge Delivery Services 的实际使用监控 (RUM)
 
-实时监控(RUM)功能允许您深入了解访客与您的Adobe Experience Manager (AEM)网站的交互情况。 此内置工具提供了宝贵的数据来了解用户行为、诊断性能问题以及衡量网站实验的有效性。 RUM不局限于合成测试，它捕获了真实使用的交互，从而更准确地了解您网站的性能。
+实际使用监控 (RUM) 让您能够深入了解访客如何与您的 Adobe Experience Manager (AEM) 网站互动。此内置工具提供有价值的数据，用以了解用户行为、诊断性能问题并衡量网站试验的有效性。RUM 不局限于合成测试，而是通过捕捉实际使用中的交互行为，呈现更为精准的网站性能图像。
 
-但是，RUM会优先考虑访客隐私。 它利用取样技术从具有代表性的用户子集中收集数据，确保从未捕获任何个人身份信息(PII)。 此外，RUM在设计时考虑到了数据最小化，只收集性能分析所需的基本指标。 此方法允许您优化AEM站点，同时维护用户信任。
+不过，RUM 将访客隐私放在首位。它利用采样技术从具有代表性的用户子集收集数据，确保不会获取任何个人身份信息 (PII)。此外，RUM 在设计时考虑了数据最小化，仅收集性能分析所需的基本量度。这种方法允许您优化 AEM Sites 同时保持用户信任。
 
 
 ## 先决条件
 
-您可以通过访问以下URL来查看AEM Formsas a Cloud ServiceEdge Delivery Services的监视功能板：
+您可以通过访问以下 URL 查看适用 AEM Forms as a Cloud Service 的 Edge Delivery Services Forms 监控仪表板：
 
 https://data.aem.live/?ext=forms
 
-![FormsEdge Delivery Services的RUM登录屏幕](/help/edge/assets/rum-login-screen.png)
+![适用 Forms 的 Edge Delivery Services 的 RUM 登录屏幕](/help/edge/assets/rum-login-screen.png)
 
-要登录到AEM Formsas a Cloud ServiceEdge Delivery Services的监视功能板，请输入以下内容：
+要登录适用 AEM Forms as a Cloud Service 的 Edge Delivery Services 的监控仪表板，请输入以下内容：
 
 * **URL**：该 URL 特定于用户站点或域。用户可以选择过滤站点或域以根据自己的需求查看仪表板。
 
-* **Domain Key**：用户手动生成域密钥。要获取表单的域密钥，请联系您的Adobe代表。
+* **Domain Key**：用户手动生成域密钥。要获取表单的域密钥，请联系您的 Adobe 代表。
 
-### 适用于AEM Formsas a Cloud Service的Edge Delivery Services监控功能板
+### 适用 AEM Forms as a Cloud Service 的 Edge Delivery Services 的监控仪表板
 
-在登录屏幕中输入URL和域键后，您将获得对AEM Formsas a Cloud ServiceEdge Delivery Services监控仪表板的访问权限。
+在登录屏幕输入 URL 和域密钥后，您就可以访问适用 AEM Forms as a Cloud Service 的 Edge Delivery Services 的监控仪表板。
 
-下图演示了AEM Formsas a Cloud Service的Edge Delivery Services功能板：
+下图演示了适用 AEM Forms as a Cloud Service 的 Edge Delivery Services 的仪表板：
 
-![RUM Forms Dashboard](/help/edge/assets/rum-forms-dashboard.png)
+![RUM Forms 仪表板](/help/edge/assets/rum-forms-dashboard.png)
 
-### Forms功能板的其他关键指标 {#different-metrics-rum-dashboard-forms}
+### Forms 仪表板的不同关键量度 {#different-metrics-rum-dashboard-forms}
 
-该功能板提供了有关访客如何与Adobe Experience Manager (AEM)网站上表单交互的关键见解。 通过监控这些指标，您可以确定需要改进的方面并优化表单，以获得更好的用户体验和转化率：
+此仪表板提供了有关访客如何与 Adobe Experience Manager (AEM) 网站上的表单交互的重要见解。通过监控这些量度，您可以确定需要改进的领域并优化表单，从而获得更佳用户体验和转化率：
 
-* **表单视图**：跟踪表单显示的总次数
-* **表单提交**：跟踪已完成的提交总数
+* **表单浏览量**：跟踪表单显示的总次数
+* **表单提交**：跟踪已完成提交的总数
 
 * **Largest Contentful Paint**：显示 URL 的加载速度，表示从用户请求 URL 到呈现视口中可见的最大内容元素所需的时间。这个最大的内容元素可以是图像、视频或大量的块级文本元素。URL 加载速度的性能评级分类如下：
    * **Good**：如果加载时间为 2.5 秒或更短。
@@ -65,16 +65,16 @@ https://data.aem.live/?ext=forms
    * **Okay**：如果持续时间大于 200 毫秒但小于或等于 500 毫秒。
    * **Bad**：如果持续时间超过 500 毫秒。
 
-## 可操作分析
+## 可操作见解
 
-通过分析这些指标，您可以发现以下机会：
+通过分析这些量度，您可以发现以下机会：
 
-* 简化表单并减少字段数。
-* 通过明确的说明和标签提高表单清晰度。
-* 优化表单布局以提高移动响应能力。
-* 解决会降低表单加载速度的技术问题。
+* 简化表单，减少字段数量。
+* 通过清晰的说明和标签提高表单清晰度。
+* 优化表单布局，提高移动端响应速度。
+* 解决导致表单加载速度变慢的技术问题。
 
-通过专注于这些方面，您可以创建更易于使用的表单并鼓励访客完成这些表单，最终导致更高的转化率。
+通过关注这些领域，您可以创建更易于使用的表单并鼓励访客填写表格，最终提高转化率。
 
 ## 另请参阅
 
