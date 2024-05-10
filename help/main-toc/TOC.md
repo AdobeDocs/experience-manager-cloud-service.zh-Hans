@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: bf7afba2376b12b8d4f513db07c178209447e343
 workflow-type: tm+mt
 source-wordcount: '4917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -571,7 +571,7 @@ ht-degree: 99%
       + [监视资源、文件夹和收藏集](/help/assets/manage-notifications-assets-view.md)
       + [管理报表](/help/assets/manage-reports-assets-view.md)
       + [管理标记](/help/assets/tagging-management-assets-view.md)
-      + [将资源发布到AEM和Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
    + 最佳实践{#best-practices}
       + [搜索最佳实践](/help/assets/search-best-practices.md)
       + [元数据管理和最佳实践](/help/assets/metadata-best-practices.md)
@@ -653,7 +653,7 @@ ht-degree: 99%
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [创建和使用自定义函数](/help/forms/create-and-use-custom-functions.md)
             + [向基于核心组件的自适应表单模板添加规则](/help/forms/rule-editor-core-components.md)
-            + [为自适应表单设计JSON架构（核心组件）](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+            + [为自适应表单（核心组件）设计 JSON 架构](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [向自适应表单添加版本控制、评论和注释](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比较自适应表单](/help/forms/compare-forms.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
@@ -854,10 +854,10 @@ ht-degree: 99%
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表单片段](/help/edge/docs/forms/form-fragments.md)
          + [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-         + [翻译您的表单](/help/edge/docs/forms/translate-forms.md)
-         + [使用reCAPTCHA保护您的表单](/help/edge/docs/forms/recaptacha-forms.md)
+         + [翻译表单](/help/edge/docs/forms/translate-forms.md)
+         + [使用 reCAPTCHA 保护您的表单](/help/edge/docs/forms/recaptacha-forms.md)
          + [自定义组件](/help/edge/docs/forms/custom-components-forms.md)
-         + [对表单的实时监控](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [表单的实际使用监控](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + 引用 {#forms-references}
          + [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 资源 {#resources}
@@ -1069,7 +1069,7 @@ ht-degree: 99%
       + Universal Editor {#universal-editor}
          + [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)
          + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
-         + [SecurBank示例应用程序](/help/implementing/universal-editor/securbank.md)
+         + [SecurBank 示例应用程序](/help/implementing/universal-editor/securbank.md)
          + [开始使用 AEM 中的 Universal Editor](/help/implementing/universal-editor/getting-started.md)
          + [Universal Editor 开发人员概述](/help/implementing/universal-editor/developer-overview.md)
          + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
