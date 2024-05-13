@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
+source-git-commit: c8b78ec6f1c7ff43950778fdd429a0aefff9856e
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 73%
+source-wordcount: '2696'
+ht-degree: 74%
 
 ---
 
@@ -87,6 +87,13 @@ Experience Manager Assets 现在提供[通过单击来重命名资产或文件�
 
 您现在可以[将元数据表单分配或移除到多个文件夹](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder)。
 
+### 管理视图中的新增功能 {#admin-view-new-features}
+
+**链接共享配置**
+
+为[创建链接共享](/help/assets/share-assets.md)提供了改进的全新用户体验，以及一组全新的配置，其中管理员可以为您的用户自定义此功能的默认行为。
+
+![链接共享配置](/help/assets/assets/config-email-service.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
