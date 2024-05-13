@@ -4,9 +4,9 @@ description: 了解如何配置翻译集成框架以与第三方翻译服务集�
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 05e4adb0d7ada0f7cea98858229484bf8cca0d16
+source-git-commit: ea1e8e3f1ea943397b3fcb5863daa66addf88a50
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1462'
 ht-degree: 75%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 75%
 以下翻译供应商为翻译项目提供 AEM API 的实现。
 
 * [Microsoft](connect-ms-translator.md)
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)（Adobe Exchange 首选合作伙伴）
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
