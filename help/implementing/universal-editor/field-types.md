@@ -2,9 +2,9 @@
 title: 模型定义、字段和组件类型
 description: 通过示例了解通用编辑器可在属性边栏中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
+source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1146'
 ht-degree: 10%
 
 ---
@@ -95,6 +95,7 @@ ht-degree: 10%
 | [布尔型](#boolean) | `boolean` |
 | [复选框组](#checkbox-group) | `checkbox-group` |
 | [容器](#container) | `container` |
+| [内容片段](#content-fragment) | `aem-content-fragment` |
 | [日期时间](#date-time) | `date-time` |
 | [多选](#multiselect) | `multiselect` |
 | [数字](#number) | `number` |
