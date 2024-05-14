@@ -3,10 +3,10 @@ title: 发布 AEM Forms Edge Delivery Services 表单
 description: 发布 AEM Forms Edge Delivery Services 表单
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+source-git-commit: 708b63aca6b1613dbedf193edd07aadc510ff859
+workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -86,16 +86,18 @@ ht-degree: 100%
 
    使用预览 URL (.page URL) 进行开发或测试，或使用发布 URL (.live) 进行生产。以下是带有预览和发布 URL 的示例：
 
-   **预览 URL**
-| 表单  |
-|---|
-| [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json)  |
+   **预览URL**
+
+   | 表单 |
+   |---|
+   | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
 
 
-   **发布 URL**
-| 表单  |
-|---|
-| [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json)  |
+   **发布URL**
+
+   | 表单 |
+   |---|
+   | [https://main--wefinance--wkndforms.hlx.live/enquiry.json](https://main--wefinance--wkndforms.hlx.live/enquiry.json) |
 
 1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 预览网页。页面现在显示表单。例如，以下是基于[查询电子表格](https://docs.google.com/spreadsheets/d/196lukD028RDK_evBelkOonPxC7w0l_IiJ-Yx3DvMfNk/edit#gid=0)的表单：
 
