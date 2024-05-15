@@ -240,7 +240,7 @@ Experience Manager Guides 现在允许您创建语言组，并轻松地将您的
 总体而言，创建语言组可以提高翻译项目的效率和生产力，最终可以改善多种语言的本地化流程。
 
 
-了解如何[从 Web 编辑器中翻译文档](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+了解如何[从 Web 编辑器中翻译文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
 
 ### 改进了在存储库视图中搜索和过滤文件的体验
 
@@ -256,7 +256,7 @@ Experience Manager Guides 现在允许您创建语言组，并轻松地将您的
 
 *使用快速过滤器搜索 DITA 和非 DITA 文件。*
 
-详细了解[左侧面板](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS)部分中的&#x200B;**过滤搜索**&#x200B;功能。
+详细了解[左侧面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS)部分中的&#x200B;**过滤搜索**&#x200B;功能。
 
 ### 数据源连接器的增强功能
 
@@ -284,11 +284,11 @@ Experience Manager Guides 现在允许您创建语言组，并轻松地将您的
 #### 为连接器配置多个资源 URL，以创建内容片段或主题
 
 作为管理员，您可以为某些连接器（如通用 REST 客户端、Salsify、Akeneo 和 Microsoft Azure DevOps Boards (ADO)）配置多个资源 URL。
-然后，作为作者，通过连接数据源来使用生成器创建内容片段或主题。此功能非常方便，因为您不必为每个 URL 创建数据源。它可以帮助您从单个内容片段或主题中的特定数据源的任何资源中快速获取数据。查看有关数据源连接器的更多详细信息，以及如何[从用户界面中配置数据源连接器](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)。了解如何[使用数据源中的数据](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)。
+然后，作为作者，通过连接数据源来使用生成器创建内容片段或主题。此功能非常方便，因为您不必为每个 URL 创建数据源。它可以帮助您从单个内容片段或主题中的特定数据源的任何资源中快速获取数据。查看有关数据源连接器的更多详细信息，以及如何[从用户界面中配置数据源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)。了解如何[使用数据源中的数据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)。
 
-有关新功能和增强功能的更多信息，请查看 [2024.04.0 版本中的新增功能](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)。
+有关新功能和增强功能的更多信息，请查看 [2024.04.0 版本中的新增功能](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)。
 
-有关此版本中修复的问题列表，请查看 [2024.4.0 版本中已修复的问题](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)。
+有关此版本中修复的问题列表，请查看 [2024.4.0 版本中已修复的问题](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)。
 
 ## Cloud Manager {#cloud-manager}
 
