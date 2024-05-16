@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
 source-wordcount: '2686'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -60,12 +60,12 @@ ht-degree: 38%
 
 ## 查看Best Practices Analyzer报告 {#viewing-report}
 
-### Adobe Experience Manager 6.3.0及更高版本 {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 和更高版本 {#aem-later-versions}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
->title="自动将Best Practices Analyzer报告上传至CAM"
->abstract="提供BPA上传密钥，以自动将生成的BPA报告上传到Cloud Acceleration Manager (CAM)。"
+>title="自动将最佳实践分析器报告上传至 CAM"
+>abstract="提供 BPA 上传密钥，以将生成的 BPA 报告自动上传到 Cloud Acceleration Manager（CAM）。"
 
 请参阅此部分，了解如何查看Best Practices Analyzer报告：
 

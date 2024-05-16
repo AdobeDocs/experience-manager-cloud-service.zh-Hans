@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 0c56cfdd2c18d3bc77edafdbda3f99fbc43f12cf
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa"
 >title="最佳实践分析报告"
->abstract="BPA报告可以上传到CAM，以便提供有关迁移到AEMas a Cloud Service的分析。"
+>abstract="可以将 BPA 报告上传到 CAM，以针对迁移到 AEM as a Cloud Service。"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="使用 Best Practices Analyzer"
 
 1. 单击 **审核** 从 **最佳实践分析** 卡片。
