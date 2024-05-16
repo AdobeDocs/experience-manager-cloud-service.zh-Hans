@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
+source-git-commit: 96ca7fce2cfa6ee337a4faa50a2434fd26bd9f0e
 workflow-type: tm+mt
-source-wordcount: '4930'
+source-wordcount: '4941'
 ht-degree: 99%
 
 ---
@@ -190,6 +190,7 @@ ht-degree: 99%
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Sling服务用户映射和服务用户定义的最佳实践](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + 上线 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上线历程 {#journey}
