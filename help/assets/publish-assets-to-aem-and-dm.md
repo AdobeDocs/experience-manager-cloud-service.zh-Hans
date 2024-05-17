@@ -2,7 +2,7 @@
 title: 快速发布到AEM和Dynamic Media
 description: 通过Assets视图中的快速发布，可同时或单独将资源发布到AEM和Dynamic Media。 您可以选择资源和文件夹，然后选择发布到Dynamic Media或AEM。
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 9ad74a9c7ecd193446506cb883fff723c806f0a7
+source-git-commit: 8d360b9d3382350c8f78247919c3e3810fe9e58b
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
