@@ -4,10 +4,10 @@ description: 了解如何使用 Touch UI 和 Adob​​e Launch 将 Adob​​e 
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
-workflow-type: ht
-source-wordcount: '573'
-ht-degree: 100%
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 87%
 
 ---
 
@@ -47,7 +47,15 @@ ht-degree: 100%
 
 ### 具有 IMS 身份验证的 Adobe Analytics {#configuration-parameters-ims}
 
-需要 IMS 配置，才能将 Adobe Analytics 与 AEM as a Cloud Service 正确集成。必须创建此配置，因此请参阅此[页面](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)，了解如何创建 Analytics IMS 配置。
+通过Analytics Standard API将Adobe Experience Manager as a Cloud Service (AEMaaCS)与Adobe Analytics集成需要配置Adobe IMS (Identity Management System)。
+
+请参阅 [为AEMas a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 了解如何创建IMS配置。
+
+>[!NOTE]
+>
+>[IMS集成现在已使用S2S OAuth进行配置](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>以前的配置使用的是 [现在可在Adobe Developer控制台中弃用的JWT凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 ### 将配置添加到站点 {#add-configuration}
 

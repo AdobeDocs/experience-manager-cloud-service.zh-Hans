@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
+source-git-commit: 30b9d71890f5d3a1a13e0b570c370a148eb19db6
 workflow-type: tm+mt
-source-wordcount: '4964'
-ht-degree: 99%
+source-wordcount: '4956'
+ht-degree: 98%
 
 ---
 
@@ -191,6 +191,7 @@ ht-degree: 99%
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [为AEMas a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling服务用户映射和服务用户定义的最佳实践](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + 上线 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -416,10 +417,8 @@ ht-degree: 99%
    + 与 AEM as a Cloud Service 集成 {#integrations}
       + [与 Adobe Analytics 集成](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [与 Adobe Analytics 自动化设置集成](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [与 Adobe Analytics 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [与 Adobe Learning Manager 集成](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [与 Adobe Target 集成](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)

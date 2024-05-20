@@ -2,16 +2,27 @@
 title: 与 Adobe Analytics 集成时使用的 IMS 配置
 description: 了解与 Adobe Analytics 集成时使用的 IMS 配置
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 43c820996af947fab2bacdec7646211f4104ae4d
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 97%
+source-wordcount: '931'
+ht-degree: 92%
 
 ---
 
 # 与 Adobe Analytics 集成时使用的 IMS 配置 {#ims-configuration-for-integration-with-adobe-analytics}
 
 通过 Analytics Standard API 将 Adobe Experience Manager as a Cloud Service (AEMaaCS) 与 Adobe Analytics 集成需要配置 Adobe IMS (Identity Management System)。配置是通过 Adobe Developer Console 实现的。
+
+>[!CAUTION]
+>
+>此页面上描述的配置无法再用于新集成或更新后的集成。
+>
+>[IMS集成现在已使用S2S OAuth进行配置](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>如本页所述，以前的配置是使用 [现在可在Adobe Developer控制台中弃用的JWT凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >

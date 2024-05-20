@@ -4,10 +4,10 @@ description: 了解如何使用 Touch UI 和 Adob​​e Launch 将 Adob​​e 
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 98%
+source-wordcount: '1065'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的客户端属性所必需的。也就是说，需要与 Launch 集成才能实施“体验定位”。
 
-若要将体验片段和/或内容片段导出到 Target，您只需要 [Adobe Target 配置和 IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md)。
+要将体验片段和/或内容片段导出到Target，您需要 [Adobe Target配置](#create-configuration)，包括 [IMS集成](#ims-configuration).
 
 >[!NOTE]
 >
@@ -38,7 +38,20 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 
 ### IMS 配置 {#ims-configuration}
 
-需要适用于 Launch 和 Target 的 IMS 配置才能将 Target 与 AEM 和 Launch 正确集成。虽然已在 AEM as a Cloud Service 中预配置适用于 Launch 的 IMS 配置，但必须创建 Target IMS 配置（在设置 Target 后）。请参考[与 Adobe Target 集成时使用的 IMS 配置](/help/sites-cloud/integrating/integration-adobe-target-ims.md)并观看视频[集成 Experience Platform Launch 和 AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)，了解如何创建 Target IMS 配置。
+通过 Target Standard API 将 AEM 与 Adobe Target 集成需要配置 Adobe IMS (Identity Management System)。必须创建Target IMS配置（在配置Target之后）。 请参阅 [为AEMas a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 和视频 [集成Experience Platform Launch和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) 了解如何创建Target IMS配置。
+
+>[!NOTE]
+>
+>[IMS集成现在已使用S2S OAuth进行配置](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>以前的配置使用的是 [现在可在Adobe Developer控制台中弃用的JWT凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+>[!NOTE]
+>
+>配置项目时，显示的产品配置文件取决于您是否拥有：
+>
+>* Adobe Target Standard – 仅&#x200B;**默认工作区**&#x200B;可用
+>* Adobe Target Premium – 列出了所有可用的工作区，如下所示
 
 ### Adobe Target 租户 ID 和 Adobe Target 客户端代码 {#tenant-client}
 
