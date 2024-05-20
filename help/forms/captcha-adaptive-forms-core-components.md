@@ -5,10 +5,10 @@ topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA服务，自适应Forms， CAPTCHA挑战，机器人预防，核心组件，表单提交安全性，表单垃圾邮件预防
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 11%
+source-wordcount: '939'
+ht-degree: 10%
 
 ---
 
@@ -21,14 +21,16 @@ ht-degree: 11%
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
-[!DNL AEM Forms] as a [!DNL Cloud Service] 在自适应Forms中支持Google reCAPTCHA v2。 您可以用它来提交表单时提出验证码质询。 要在自适应表单中使用reCAPTCHA，请执行以下操作：
+AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
 
-1. [通过Google的reCAPTCHA服务连接您的AEM Forms环境](#connect-your-forms-environment-with-recaptcha-service-by-google)
-1. [配置自适应表单以在提交表单时显示验证码质询](#using-reCAPTCHA)
+* [Google reCAPTCHA](#connect-your-aem-forms-environment-with-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [验证码](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
 
 ## 通过Google的reCAPTCHA服务连接您的AEM Forms环境 {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
-通过Google的reCAPTCHA服务连接您的AEM Forms环境
+表单作者可以使用Google的reCAPTCHA服务在自适应Forms中实施reCAPTCHA。 它提供高级验证码功能以保护您的站点。 有关reCAPTCHA工作方式的更多信息，请参阅 [Google reCAPTCHA](https://developers.google.com/recaptcha/). [!DNL AEM Forms] as a [!DNL Cloud Service] 在自适应Forms中支持Google reCAPTCHA v2。 您可以用它来提交表单时提出验证码质询。 通过Google的reCAPTCHA服务连接您的AEM Forms环境
 
 1. 获取 [reCAPTCHA API密钥对](https://www.google.com/recaptcha/admin) 来自Google的。 它包括 **站点密钥** 和 **密钥**.
 

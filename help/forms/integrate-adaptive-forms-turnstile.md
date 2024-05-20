@@ -5,27 +5,34 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: 54914728ee892f14ab8d669051504a52942a6c01
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 1%
+source-wordcount: '950'
+ht-degree: 9%
 
 ---
 
-# 将AEM Forms环境与Turnstile连接 {#connect-your-forms-environment-with-turnstile-service}
-
 <span class="preview"> 此功能属于早期采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
 
+CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
-Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站点免受自动机器人、恶意攻击、垃圾邮件和不需要的自动流量的侵害。 在允许提交表单之前，它会在表单提交时显示一个复选框，以验证他们是人类。 AEM Formsas a Cloud Service支持自适应Forms中的Turnstile Captcha。
+AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
+
+* [Cloudflare Turnstile](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
+* [验证码](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+
+## 将AEM Forms环境与Turnstile验证码集成
+
+Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站点免受自动机器人、恶意攻击、垃圾邮件和不需要的自动流量的侵害。 在允许提交表单之前，它会在表单提交时显示一个复选框，以验证他们是人类。 AEM Formsas a Cloud Service支持自适应Forms核心组件中的Turnstile Captcha。
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## 将AEM Forms环境与Turnstile集成的先决条件 {#prerequisite}
+### 将AEM Forms环境与Turnstile验证码集成的先决条件 {#prerequisite}
 
 要为AEM Forms核心组件配置Turnstile，您需要获取 [转门锁站点密钥和密钥](https://developers.cloudflare.com/turnstile/get-started/) 从Turnstile的网站。
 
-## 为AEM Forms配置Turnstile的步骤{#steps-to-configure-turnstile}
+### 为AEM Forms配置Turnstile的步骤{#steps-to-configure-turnstile}
 
 1. 在您的AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以将您的AEM Forms环境与Turnstile连接，请执行以下操作：
    1. 打开您的AEM Formsas a Cloud Service实例。

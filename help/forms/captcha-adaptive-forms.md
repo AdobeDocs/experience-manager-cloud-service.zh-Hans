@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1742'
 ht-degree: 9%
 
 ---
@@ -29,17 +29,15 @@ ht-degree: 9%
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
-[!DNL AEM Forms] 在自适应Forms中支持reCAPTCHA 。 您可以使用Google的reCAPTCHA服务来实施CAPTCHA。
+AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
 
->[!NOTE]
->
->* [!DNL AEM Forms] 支持reCaptcha v2和reCaptcha Enterprise。 不支持任何其他版本。
->* 上的离线模式不支持自适应Forms中的reCAPTCHA [!DNL AEM Forms] 应用程序。
->
+* [Google reCAPTCHA](#configure-recaptcha-service-by-google)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [验证码](/help/forms/integrate-adaptive-forms-hcaptcha.md)
 
 ## 通过Google配置reCAPTCHA服务 {#google-reCAPTCHA}
 
-表单作者可以使用Google的reCAPTCHA服务在自适应Forms中实施reCAPTCHA。 它提供高级验证码功能以保护您的站点。 有关reCAPTCHA工作方式的更多信息，请参阅 [Google reCAPTCHA](https://developers.google.com/recaptcha/). reCAPTCHA服务包括 [!DNL reCAPTCHA v2] 和 [!DNL reCAPTCHA Enterprise] 您可以将集成到 [!DNL AEM Forms]. 根据要求，您可以配置reCAPTCHA服务以启用：
+表单作者可以使用Google的reCAPTCHA服务在自适应Forms中实施reCAPTCHA。 它提供高级验证码功能以保护您的站点。 有关reCAPTCHA工作方式的更多信息，请参阅 [Google reCAPTCHA](https://developers.google.com/recaptcha/). AEM Forms支持 [!DNL reCAPTCHA v2] 和 [!DNL reCAPTCHA Enterprise]. 不支持任何其他版本。 另请注意，上的离线模式不支持自适应Forms中的reCAPTCHA [!DNL AEM Forms] 应用程序。 根据要求，您可以配置reCAPTCHA服务以启用：
 
 ![reCAPTCHA](/help/forms/assets/recaptcha_new.png)
 
@@ -100,9 +98,9 @@ reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参�
 <!--![reCAPTCHA v2](/help/forms/assets/recaptcha-v2.png)-->
 
 
-## 在自适应表单中使用reCAPTCHA {#using-reCAPTCHA}
+## 在自适应表单中使用Google reCAPTCHA {#using-reCAPTCHA}
 
-要在自适应表单中使用reCAPTCHA，请执行以下操作：
+要在自适应表单中使用Google reCAPTCHA，请执行以下操作：
 
 1. 在编辑模式下打开自适应表单。
 

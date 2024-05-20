@@ -1,15 +1,15 @@
 ---
-title: 如何在AEM自适应表单核心组件中使用hCaptcha®？
-description: 通过hCaptcha®服务轻松增强表单安全性。 内部分步指南！
+title: 如何在AEM自适应表单核心组件中使用Captcha&reg；？
+description: 使用hCaptcha&reg；服务轻松增强表单安全性。 内部分步指南！
 topic-tags: Adaptive Forms, author
-keywords: Captcha®服务，自适应Forms， CAPTCHA挑战，机器人预防，核心组件，表单提交安全性，表单垃圾邮件预防
+keywords: 验证码&reg；服务，自适应Forms， CAPTCHA挑战，机器人预防，核心组件，表单提交安全性，表单垃圾邮件预防
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 3%
+source-wordcount: '962'
+ht-degree: 11%
 
 ---
 
@@ -17,18 +17,28 @@ ht-degree: 3%
 
 <span class="preview"> 此功能属于早期采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
 
+CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
+
+AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
+
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [验证码](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+## 将AEM Forms环境与hCaptcha验证码集成
+
 hCaptcha®服务可保护您的表单免遭机器人、垃圾邮件和自动滥用。 它会发起复选框构件质询并评估用户响应，以确定是人类还是机器人与表单交互。 它可防止用户在测试失败时继续操作，并通过阻止机器人发送垃圾邮件或恶意活动来帮助确保在线交易的安全。
 
 AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 您可以用它来在提交表单时显示复选框构件质询。
 
-<!-- ![hCaptcha®](assets/hCaptcha®-challenge.png)-->
+<!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
 
-## 将AEM Forms环境与hCaptcha集成的先决条件® {#prerequisite}
+### 将AEM Forms环境与hCaptcha集成的先决条件® {#prerequisite}
 
 要使用AEM Forms配置hCaptcha®，您需要获取 [验证码®站点密钥和密钥](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) 来自hCaptcha®网站。
 
-## 配置hCaptcha的步骤® {#steps-to-configure-hcaptcha}
+### 配置验证码® {#steps-to-configure-hcaptcha}
 
 要将AEM Forms与hCaptcha®服务集成，请执行以下步骤：
 
@@ -79,7 +89,7 @@ AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 �
    * **[!UICONTROL 名称]：** 指定验证码组件的名称，您可以在表单和规则编辑器中通过表单组件的唯一名称轻松识别表单组件。
    * **[!UICONTROL 标题]：** 指定Captcha组件的标题。
    * **[!UICONTROL 配置设置]：** 选择为Captcha®配置的云配置。
-   * **验证码大小：** 您可以选择hCaptcha®质询对话框的显示大小。 使用 **[!UICONTROL 紧凑]** 用于显示小尺寸和 **[!UICONTROL 普通]** 用于显示相对较大的hCaptcha®挑战对话框的选项。<!-- or **[!UICONTROL Invisible]** to validate hCaptcha® without explicitly rendering the checkbox widget on the user interface. -->
+   * **验证码大小：** 您可以选择hCaptcha®质询对话框的显示大小。 使用 **[!UICONTROL 紧凑]** 用于显示小尺寸和 **[!UICONTROL 普通]** 用于显示相对较大的hCaptcha®挑战对话框的选项。<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL 验证消息]：** 在提交表单时提供验证码验证消息。
    * **[!UICONTROL 脚本验证消息]** - 通过此选项，可输入如果脚本验证失败，所显示的消息。
      >[!NOTE]

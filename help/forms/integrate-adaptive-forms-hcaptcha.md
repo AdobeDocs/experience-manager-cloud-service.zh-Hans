@@ -1,15 +1,15 @@
 ---
-title: 如何在AEM自适应表单中使用hCaptcha®？
-description: 通过hCaptcha®服务轻松增强表单安全性。 内部分步指南！
+title: 如何在AEM自适应表单中使用Captcha&reg；？
+description: 使用hCaptcha&reg；服务轻松增强表单安全性。 内部分步指南！
 topic-tags: Adaptive Forms, author
-keywords: Captcha®服务，自适应Forms， CAPTCHA挑战，机器人防护，表单提交安全，表单垃圾邮件防护
+keywords: 验证码&reg；服务，自适应Forms， CAPTCHA挑战，机器人预防，表单提交安全，表单垃圾邮件预防
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 1%
+source-wordcount: '983'
+ht-degree: 8%
 
 ---
 
@@ -18,11 +18,21 @@ ht-degree: 1%
 
 <span class="preview"> 此功能属于早期采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
 
+CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
+
+AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
+
+* [验证码](#integrate-aem-forms-environment-with-hcaptcha-captcha)
+* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms.md)
+
+## 将AEM Forms环境与hCaptcha验证码集成
+
 hCaptcha®服务可保护您的表单免遭机器人、垃圾邮件和自动滥用。 它会发起复选框构件质询并评估用户响应，以确定是人类还是机器人与表单交互。 它可防止用户在测试失败时继续操作，并通过阻止机器人发送垃圾邮件或恶意活动来帮助确保在线交易的安全。
 
-<!-- ![hCaptcha®](assets/hCaptcha®-challenge.png)-->
+AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 您可以用它来在提交表单时显示复选框构件质询。
 
-AEM Formsas a Cloud Service支持自适应Forms中的hCaptcha®。 您可以用它来在提交表单时向用户显示复选框构件质询。
+<!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
 ## 将AEM Forms环境与hCaptcha集成的先决条件® {#prerequisite}
 
