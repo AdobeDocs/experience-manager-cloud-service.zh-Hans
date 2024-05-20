@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
+source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
 workflow-type: tm+mt
-source-wordcount: '4946'
+source-wordcount: '4964'
 ht-degree: 99%
 
 ---
@@ -654,6 +654,8 @@ ht-degree: 99%
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [在自适应表单中使用hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [在自适应表单中使用Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [创建和使用自定义函数](/help/forms/create-and-use-custom-functions.md)
@@ -676,6 +678,7 @@ ht-degree: 99%
             + [使用延迟加载改进大型表单的性能](/help/forms/lazy-loading-adaptive-forms.md)
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
             + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
+            + [在自适应表单中使用Captcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
             + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
