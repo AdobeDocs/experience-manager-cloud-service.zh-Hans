@@ -1,15 +1,19 @@
 ---
 title: 为AEMas a Cloud Service设置IMS集成
 description: 了解如何为AEMas a Cloud Service设置IMS集成
-source-git-commit: e6749b9a5e97634a4706db5656b1e11dba4442c9
+source-git-commit: 6945980cac24d4413a84343b035a8380b04e7444
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
 
 
 # 为AEMas a Cloud Service设置IMS集成 {#setting-up-ims-integrations-for-aemaacs}
+
+>[!NOTE]
+>
+>不应手动迁移自动设置的JWT配置，因为它们将由Adobe自动处理。
 
 Adobe Experience Manager (AEM) as a Cloud Service可与许多其他Adobe解决方案集成。 例如，Adobe Target、Adobe Analytics等。
 
