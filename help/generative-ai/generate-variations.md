@@ -2,7 +2,7 @@
 title: 生成变体
 description: 了解生成变体，可从AEMas a Cloud Service和Edge Delivery ServicesSidekick访问
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
+source-git-commit: d682ee77e79d013de305816449781a8b1f9af8d2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 * [在Adobe Experience Manager (AEM)as a Cloud Service中](#access-aemaacs)
 * [AEMEdge Delivery Services的Sidekick](#access-aem-sidekick)
-* [在内容片段编辑器中](#authoring-content-fragments)
+* [在内容片段编辑器中](#https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html#generate-variations-ai)
 
 >[!NOTE]
 >
