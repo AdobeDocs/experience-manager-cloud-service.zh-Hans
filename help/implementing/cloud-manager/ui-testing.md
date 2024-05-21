@@ -2,10 +2,10 @@
 title: UI 测试
 description: 自定义 UI 测试是一项可选功能，可用于为自定义应用程序创建和自动运行 UI 测试
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 98%
+source-wordcount: '2610'
+ht-degree: 79%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe 建议使用 Cypress，因为它提供实时重新加载和自动等待，
 
    * 对于 Cypress，请使用来自 [AEM 测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)的示例代码。
 
-   * 对于 JavaScript 和 WDIO，请使用自动在 Cloud Manager 存储库的 `ui.tests` 文件夹中生成的示例代码。
+   * 对于JavaScript和WDIO，请使用中自动生成的示例代码 `ui.tests` Cloud Manager存储库中的文件夹。
 
      >[!NOTE]
      >
@@ -146,7 +146,7 @@ Maven 项目生成 Docker 构建上下文。 此 Docker 构建上下文描述了
 </assembly>
 ```
 
-Assembly 描述符指示插件创建 `.tar.gz` 类型的档案，并将 `ui-test-docker-context` 分类器分配给它。 此外，它还列出了必须包含在档案中的文件，包括以下内容。
+Assembly 描述符指示插件创建 `.tar.gz` 类型的档案，并将 `ui-test-docker-context` 分类器分配给它。 此外，它还列出了必须包含在档案中的文件，包括以下内容：
 
 * 构建 Docker 映像时必须使用 `Dockerfile`
 * `wait-for-grid.sh` 脚本，其用途如下所述
@@ -199,7 +199,7 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
   fi
   ```
 
-* Adobe 提供的 Cypress 和 Java Selenium 测试示例确实已设置选择启用标志。
+* Adobe提供的Cypress和Java Selenium测试示例已设置选择加入标志。
 
 ## 编写 UI 测试 {#writing-ui-tests}
 
@@ -210,7 +210,7 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 根据您的框架，以下环境变量会在运行时传递给 Docker 映像。
 
 | 变量 | 示例 | 描述 | 测试框架 |
-|---|---|---|---|
+|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 服务器的 URL | 仅 Selenium |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 服务器使用的浏览器实施 | 仅 Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 创作实例的 URL | 所有 |
@@ -218,15 +218,22 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 | `AEM_AUTHOR_PASSWORD` | `admin` | 用于登录 AEM 创作实例的密码 | 所有 |
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 发布实例的 URL | 所有 |
 | `AEM_PUBLISH_USERNAME` | `admin` | 用于登录 AEM 发布实例的用户名 | 所有 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | 用于登录 AEM 发布实例的密码 | 所有 |
+| `AEM_PUBLISH_PASSWORD` | `admin` | 用于登录到AEM发布实例的密码 | 所有 |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 必须将测试结果的 XML 报告保存到的路径 | 所有 |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | 文件必须上传到的 URL，以便测试框架可以访问这些文件 | 所有 |
+| `PROXY_HOST` | `proxy-host` | 测试框架使用的内部HTTP代理的主机名 | 除Selenium之外的所有其他产品 |
+| `PROXY_HTTPS_PORT` | `8071` | 用于HTTPS连接的代理服务器侦听端口（可以为空） | 除Selenium之外的所有其他产品 |
+| `PROXY_HTTP_PORT` | `8070` | HTTP连接的代理服务器侦听端口（可以为空） | 除Selenium之外的所有其他产品 |
+| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | 测试框架使用的CA证书的路径 | 除Selenium之外的所有其他产品 |
+| `PROXY_OBSERVABILITY_PORT` | `8081` | 代理服务器的HTTP运行状况检查端口 | 除Selenium之外的所有其他产品 |
+| `PROXY_RETRY_ATTEMPTS` | `12` | 等待代理服务器就绪时重试尝试的建议次数 | 除Selenium之外的所有其他产品 |
+| `PROXY_RETRY_DELAY` | `5` | 等待代理服务器就绪时重试尝试之间的建议延迟 | 除Selenium之外的所有其他产品 |
 
 Adobe 测试示例提供了帮助程序函数来访问配置参数：
 
 * Cypress：使用标准函数 `Cypress.env('VARIABLE_NAME')`
-* JavaScript：请参阅 [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) 模块
-* Java：请参阅 [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 类
+* JavaScript：请参阅 [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) 模块
+* Java：请参阅 [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 类
 
 ### 生成测试报告 {#generate-test-reports}
 
@@ -239,6 +246,8 @@ Docker 映像必须以 JUnit XML 格式生成测试报告，并将其保存在�
 >仅根据测试报告评估 UI 测试步骤的结果。请确保为您的测试执行生成相应报告。
 >
 >使用断言而不是仅仅将错误记录到 STDERR 或返回非零退出代码，否则，您的部署管道可能会正常进行。
+>
+>如果在测试执行期间使用了HTTP代理，则结果将包括 `request.log` 文件。
 
 ### 前提条件 {#prerequisites}
 
@@ -306,6 +315,113 @@ Docker 映像可能会产生额外的测试输出（例如，屏幕快照或视�
 1. 如果上载成功，请求将返回 `200 OK` 响应，响应类型为 `text/plain`。
    * 响应的内容是一个不透明的文件句柄。
    * 您可以使用此句柄代替 `<input>` 元素中的文件路径来测试应用程序中的文件上载。
+
+## Cypress特定的详细信息
+
+>[!NOTE]
+>
+>此部分仅在Cypress是选定的测试基础结构时适用。
+
+### 设置HTTP代理
+
+Docker容器的入口点需要检查 `PROXY_HOST` 环境变量。
+
+如果此值为空，则无需执行其他步骤，并且无需使用HTTP代理即可执行测试。
+
+如果不为空，则入口点脚本需要：
+
+1. 配置HTTP代理连接以运行UI测试。 这可以通过导出 `HTTP_PROXY` 使用以下值构建的环境变量：
+   * 代理主机，由提供 `PROXY_HOST` 变量
+   * 代理端口，由提供 `PROXY_HTTPS_PORT` 或 `PROXY_HTTP_PORT` 变量（将使用具有非空值的变量）
+2. 设置连接到HTTP代理时将使用的CA证书。 其位置由提供 `PROXY_CA_PATH` 变量。
+   * 这可以通过导出来实现 `NODE_EXTRA_CA_CERTS` 环境变量。
+3. 等待HTTP代理准备就绪。
+   * 要检查准备情况，请使用环境变量 `PROXY_HOST`， `PROXY_OBSERVABILITY_PORT`， `PROXY_RETRY_ATTEMPTS` 和 `PROXY_RETRY_DELAY` 可以使用。
+   * 您可以使用cURL请求进行检查，并确保在的 `Dockerfile`.
+
+Cypress示例测试模块的Entrypoint on上提供了实施示例 [GitHub。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+
+## 特定于播放器的详细信息
+
+>[!NOTE]
+>
+> 本部分仅适用于Playwright是所选测试基础设施的情况。
+
+### 设置HTTP代理
+
+>[!NOTE]
+>
+> 在提供的示例中，我们假定将Chrome用作项目浏览器。
+
+与Cypress类似，如果为非空，则测试需要使用HTTP代理 `PROXY_HOST` 提供了环境变量。
+
+为此，需要作出以下修改。
+
+#### Dockerfile
+
+安装cURL和 `libnss3-tools`，它提供 `certutil.`
+
+```dockerfile
+RUN apt -y update \
+    && apt -y --no-install-recommends install curl libnss3-tools \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+#### 入口点脚本
+
+包括一个bash脚本，万一 `PROXY_HOST` 提供的环境变量会执行以下操作：
+
+1. 导出与代理相关的变量，例如 `HTTP_PROXY` 和 `NODE_EXTRA_CA_CERTS`
+2. 使用 `certutil` 安装chromium的代理CA证书
+3. 等待HTTP代理准备就绪（或失败时退出）。
+
+实施示例：
+
+```bash
+# setup proxy environment variables and CA certificate
+if [ -n "${PROXY_HOST:-}" ]; then
+  if [ -n "${PROXY_HTTPS_PORT:-}" ]; then
+    export HTTP_PROXY="https://${PROXY_HOST}:${PROXY_HTTPS_PORT}"
+  elif [ -n "${PROXY_HTTP_PORT:-}" ]; then
+    export HTTP_PROXY="http://${PROXY_HOST}:${PROXY_HTTP_PORT}"
+  fi
+  if [ -n "${PROXY_CA_PATH:-}" ]; then
+    echo "installing certificate"
+    mkdir -p $HOME/.pki/nssdb
+    certutil -d sql:$HOME/.pki/nssdb -A -t "CT,c,c" -n "EaaS Client Proxy Root" -i $PROXY_CA_PATH
+    export NODE_EXTRA_CA_CERTS=${PROXY_CA_PATH}
+  fi
+  if [ -n "${PROXY_OBSERVABILITY_PORT:-}" ] && [ -n "${HTTP_PROXY:-}" ]; then
+    echo "waiting for proxy"
+    curl --silent  --retry ${PROXY_RETRY_ATTEMPTS:-3} --retry-connrefused --retry-delay ${PROXY_RETRY_DELAY:-10} \
+      --proxy ${HTTP_PROXY} --proxy-cacert ${PROXY_CA_PATH:-""} \
+      ${PROXY_HOST}:${PROXY_OBSERVABILITY_PORT}
+    if [ $? -ne 0 ]; then
+      echo "proxy is not ready"
+      exit 1
+    fi
+  fi
+fi
+```
+
+#### 播放器配置
+
+修改播放器配置(例如 `playwright.config.js`)以使用代理，以防出现 `HTTP_PROXY` 已设置环境变量。
+
+实施示例：
+
+```javascript
+const proxyServer = process.env.HTTP_PROXY || ''
+```
+
+```javascript
+// enable proxy if set
+if (proxyServer !== '') {
+ cfg.use.proxy = {
+  server: proxyServer,
+ }
+}
+```
 
 ## 本地运行 UI 测试 {#run-ui-tests-locally}
 

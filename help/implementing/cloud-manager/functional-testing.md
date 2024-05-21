@@ -2,9 +2,9 @@
 title: 功能测试
 description: 了解 AEM as a Cloud Service 部署过程内置的三种不同类型的功能测试，确保代码的质量和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1373'
 ht-degree: 9%
 
 ---
@@ -92,6 +92,8 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 >[!NOTE]
 >
 >自定义UI测试在生产管道和非生产（选择加入）管道中执行，AEM应用程序使用这些管道更改部署和AEM产品推送更新，因此它是帮助确保应用程序正常运行并提高发布安全性的一个关键贡献。 客户UI测试还在每个客户的内部预发行验证管道中执行，这有助于提供早期反馈。
+>
+>非Selenium容器应该使用HTTP代理，根据中的环境变量执行测试。 [UI测试部分。](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 为了保持管道执行高效，我们建议重点关注关键功能和主要用户交互流程。 建议在客户开发流程期间，作为常规客户验证管道的一部分执行不符合此质量关卡的完整UI测试包。
 
