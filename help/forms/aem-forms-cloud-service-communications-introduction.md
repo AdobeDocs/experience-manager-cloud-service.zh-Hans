@@ -4,15 +4,16 @@ description: 使用通信API签名、认证或保护文档，自动化PDF生成�
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
+source-git-commit: 92811662e1ef9b6cbd5cb66c67f774109745bc68
 workflow-type: tm+mt
-source-wordcount: '1988'
-ht-degree: 55%
+source-wordcount: '2290'
+ht-degree: 40%
 
 ---
 
-# AEM Formsas a Cloud Service通信简介 {#frequently-asked-questions}
+# AEM Formsas a Cloud Service通信API {#frequently-asked-questions}
+
+![主页图像](assets/cloud-communication-apis-hero-image.jpeg)
 
 
 | 版本 | 文章链接 |
@@ -32,8 +33,11 @@ ht-degree: 55%
 
 * 对数据的安全访问。通信 API 仅连接到客户指定的数据存储库并从中访问数据，从而使通信变得高度安全。
 
-![示例信用卡对帐单](assets/statement.png)
-可以使用通信 API 创建信用卡对帐单。此示例对帐单使用相同的模板，但根据每个客户的信用卡使用情况分离其数据。
+<!-- 
+![A sample credit card statement](assets/statement.png)
+A credit card statement can be created using Communications APIs. This sample statement uses same template but separate data for each customer depending on their usage of credit card.
+
+-->
 
 ## 文档生成
 
@@ -56,7 +60,7 @@ ht-degree: 55%
 
 ### 创建 PostScript (PS)、打印机指令语言 (PCL)、Zebra 打印语言 (ZPL) 文档 {#create-PS-PCL-ZPL-documents}
 
-您可以使用文档生成 API 创建基于 XDP 表单设计的 PostScript (PS)、打印机指令语言 (PCL)、Zebra 打印语言 (ZPL) 文档或 PDF 文档。这些 API 有助于将表单设计与表单数据合并以生成文档。您可以将文档保存到文件，并开发一个自定义流程来将它发送到打印机。
+您可以使用文档生成API创建基于XDP表单设计或PDF文档的PostScript (PS)、Printer Command Language (PCL)和Zebra Printing Language (ZPL)文档。 这些 API 有助于将表单设计与表单数据合并以生成文档。您可以将文档保存到文件，并开发一个自定义流程来将它发送到打印机。
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -106,11 +110,11 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## 文档操作
 
-通信文档操作 API 可帮助合并、重新排列和验证 PDF 文档。通常，您创建一个 DDX 并将它提交给文档操作 API 来汇编或重新排列文档。[DDX 文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)提供了有关如何使用源文档生成一组所需文档的说明。DDX 引用文档提供了有关所有受支持操作的详细信息。文档操作的一些示例包括：
+通信文档操作（文档转换）API有助于组合、重新排列PDF文档。 通常，您创建一个 DDX 并将它提交给文档操作 API 来汇编或重新排列文档。[DDX 文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)提供了有关如何使用源文档生成一组所需文档的说明。DDX 引用文档提供了有关所有受支持操作的详细信息。文档操作的一些示例包括：
 
 ### 汇编 PDF 文档
 
-您可以使用文档操作 API 将两个或更多 PDF 或 XDP 文档汇编成一个 PDF 文档或 PDF 文档组合。以下是可用于汇编 PDF 文档的一些方法：
+您可以使用文档操作 API 将两个或更多 PDF 或 XDP 文档汇编成一个 PDF 文档或 PDF 文档组合。以下是组合PDF文档的一些方法：
 
 * 汇编一个简单的 PDF 文档
 * 创建 PDF 文档组合
@@ -131,10 +135,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 ![根据书签将一个源文档拆分成多个文档](assets/as_intro_pdfsfrombookmarks.png)
 图：根据书签将一个源文档拆分成多个文档
 
-### 转换为符合 PDF/A 标准的文档并进行验证
-
-您可以使用文档操作 API 将 PDF 文档转换为符合 PDF/A 标准的文档，并确定 PDF 文档是否符合 PDF/A 标准。PDF/A是一种用于长期保存文档内容的存档格式。 字体将嵌入到文档中，并且文件是未压缩的。因此，PDF/A 文档通常比标准 PDF 文档大。此外，PDF/A 文档不包含音频和视频内容。
-
 >[!NOTE]
 >
 > AEM Forms提供了多种内置字体，可与PDF文件无缝集成。 要查看支持的字体列表， [单击此处](/help/forms/supported-out-of-the-box-fonts.md).
@@ -143,7 +143,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Document utilities
 
-Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments. 
+Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments.
 
 ### Retrieve PDF document properties
 
@@ -164,6 +164,42 @@ You can [query a PDF document](https://developer.adobe.com/experience-manager-fo
 ### Convert PDF Documents into XDP Documents
 
 The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
+
+## 文档提取
+
+<span class="preview"> 文档提取功能属于率先采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+
+文档提取服务允许您获取PDF文档的属性，如使用权限、PDF属性和元数据。 文档提取功能包括：
+
+* 获取PDF文档的属性，例如，如果PDF具有附件、注释、其Acrobat版本等。
+* 提取在PDF文档中启用的使用权限，用户将启用或禁用的使用权限检索到PDF文档，以实现Adobe Acrobat Reader的可扩展性。
+* 获取PDF文档中存在的元数据信息，元数据是有关文档的信息（与文档内容不同，例如文本和图形）。 Adobe可扩展元数据平台(XMP)是处理文档元数据的标准。 XMP Utilities服务可以从PDF文档中检索XMP元数据，并将XMP元数据导出到PDF文档中。
+
+此 [API参考文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 提供有关所有参数、身份验证方法以及API提供的服务的详细信息。 API参考文档也以.yaml格式提供。 您可以下载.yaml并将其上传到Postman以检查API的功能。
+
+<!--
+
+<span class="preview"> The XMP Utilities Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+### XMP Utilities {#XMP-utilities}
+
+<span class="preview"> The XMP Utilities Service capability is under Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+PDF documents contain metadata, which is information about the document (as distinguished from the contents of the document, such as text and graphics). The Adobe Extensible Metadata Platform (XMP) is a standard for handling document metadata. The XMP Utilities service can retrieve and save XMP metadata from PDF documents and import XMP metadata into PDF documents.
+
+-->
+
+## 文档转换
+
+### 转换为符合 PDF/A 标准的文档并进行验证
+
+通信文档转换API有助于将PDF文档转换为PDF/A。您可以使用这些API将PDF文档转换为符合PDF/A标准的文档，还可以确定PDF文档是否符合PDF/A标准。 PDF/A是一种用于长期保存文档内容的存档格式。 字体将嵌入到文档中，并且文件是未压缩的。因此，PDF/A 文档通常比标准 PDF 文档大。此外，PDF/A 文档不包含音频和视频内容。
+
+### 将PDF转换为XDP {#convert-pdf-to-xdp}
+
+<span class="preview"> 将PDF转换为XDP的功能属于率先采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+
+将PDF文档转换为XDP文件。 若要将PDF文档成功转换为XDP文件，PDF文档必须在词典中包含XFA流。
 
 ## 文档保证 {#doc-assurance}
 
@@ -191,9 +227,15 @@ DocAssurance服务包括签名和加密API：
 
 签名API和加密API都是 [同步API](#types-of-communications-apis-types).
 
-### 使用权限API
 
-<span class="preview"> 使用权限功能属于率先采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+### 文档实用工具 {#doc-utility}
+
+带同步API的文档实用程序可帮助您在PDF和XDP文件格式之间转换文档。 将使用权限应用到文档，并从文档中提取启用的使用权限。 查询有关PDF单据的信息。 <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> 使用权限API的详细信息如下：
+
+
+#### 使用权限API(Reader扩展)
+
+<span class="preview"> 使用权限(Reader扩展)功能受早期采用者计划限制。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
 
 使用权限功能通过扩展具有其他使用权限的Adobe Reader的功能，使您的组织可以轻松共享交互式PDF文档。 该服务可与Adobe Reader 7.0或更高版本配合使用，并向PDF文档添加了使用权限。 此操作激活在使用Adobe Reader打开PDF文档时通常不可用的功能，例如向文档添加注释、填写表单和保存文档。
 
@@ -238,9 +280,6 @@ DocAssurance服务包括签名和加密API：
 
 * **独立提交**：从PDF文档离线提交表单数据。
 
-#### 提取使用权限
-
-这有助于检索为Adobe Acrobat Reader可扩展性启用或禁用的PDF文档的使用权限。
 
 #### 其他功能
 
@@ -255,13 +294,13 @@ DocAssurance服务包括签名和加密API：
 
 * **[同步 API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;适用于按需、低延迟、单一记录文档生成场景。这些 API 更适用于基于用户操作的用例。例如，在用户填写完表单后生成文档。
 
-* **[批处理 API（异步 API）](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;适用于计划的、高吞吐量和多文档生成场景。这些 API 会批量生成文档。例如，每月生成的电话帐单、信用卡对帐单和收益对帐单。
+* **[批处理 API（异步 API）](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;适用于计划的、高吞吐量和多文档生成场景。这些 API 会批量生成文档。例如，每月生成电话帐单、信用卡对帐单和福利对帐单。
 
 ## 入门培训
 
-通信功能作为面向 Forms as a Cloud Service 用户的独立和附加模块提供。您可以联系 Adobe 销售团队或 Adobe 代表来请求访问权限。Adobe 可为您的组织开启访问渠道，并为您指定为组织中管理员的人员提供所需的权限。管理员可以向您组织的 Forms as a Cloud Service 开发人员（用户）授予访问权限以使用 API。
+通信功能作为面向 Forms as a Cloud Service 用户的独立和附加模块提供。您可以联系Adobe销售团队或您的Adobe代表以请求获取访问权限。 Adobe 可为您的组织开启访问渠道，并为您指定为组织中管理员的人员提供所需的权限。管理员可以向贵组织的Formsas a Cloud Service开发人员（用户）授予权限以使用这些API。
 
-入门培训后，要为您的 Forms as a Cloud Service 环境启用通信功能，请执行以下操作：
+新用户引导后，要为您的Formsas a Cloud Service环境启用通信功能，请执行以下操作：
 
 1. 登录 Cloud Manager，并打开您的 AEM Forms as a Cloud Service 实例。
 
@@ -279,7 +318,7 @@ DocAssurance服务包括签名和加密API：
 
 >[!NOTE]
 >
-> 要启用和配置文档操作 API，请将以下规则添加到 [Dispatcher 配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
+> 要启用和配置文档操作API，请将以下规则添加到 [Dispatcher配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
