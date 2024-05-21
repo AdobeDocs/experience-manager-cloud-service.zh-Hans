@@ -2,9 +2,9 @@
 title: 生成变体
 description: 了解生成变体，可从AEMas a Cloud Service和Edge Delivery ServicesSidekick访问
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
+source-git-commit: 1d4c6512a3414db901d289557f9704699c8b6222
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3262'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 1%
 
 * [在Adobe Experience Manager (AEM)as a Cloud Service中](#access-aemaacs)
 * [AEMEdge Delivery Services的Sidekick](#access-aem-sidekick)
+* [在内容片段编辑器中](#authoring-content-fragments)
 
 >[!NOTE]
 >
@@ -196,7 +197,7 @@ ht-degree: 1%
 * 收藏夹和变体可以复制/粘贴到剪贴板以便在您的网站内容中使用。
 * 收藏夹可以是 **已删除**.
 
-## 最近访问 {#recents}
+## 最近项目 {#recents}
 
 此部分提供指向最近活动的链接。 A **最近** 条目会在您选择后添加 **生成**. 它具有提示的名称和时间戳。 如果选择某个链接，则该链接会加载提示、填充相应的输入字段并显示生成的变体。
 

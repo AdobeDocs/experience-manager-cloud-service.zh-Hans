@@ -4,10 +4,10 @@ description: 了解如何为内容片段创作内容，并根据用途创建该�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
+source-git-commit: 36fa580b017ab10097512165a35a9198a6d331d3
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 88%
+source-wordcount: '2670'
+ht-degree: 78%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 88%
 
 * [自动保存](#saving-autosaving)，以防止意外丢失编辑内容。
 * [直接上传资源作为内容引用](#reference-images)，而不必将它先上传到资源 DAM。
+* [生成变体](#generate-variations-ai) 使用创作AI根据提示加快内容创建。
 * [预览](#preview-content-fragment)内容片段投放的所呈现的体验。
 * 可从编辑器[发布](#publish-content-fragment)和[取消发布](#unpublish-content-fragment)。
 * 可在编辑器中[查看和打开关联的语言副本](#view-language-copies)。
@@ -83,7 +84,7 @@ ht-degree: 88%
 
 * 已为此片段创建的&#x200B;**[变体](#variations)**&#x200B;的列表：
    * **主控**&#x200B;是首次创建内容片段时出现的变体，稍后可以添加其他变体
-   * 您可以选择并打开变体以进行编辑
+   * 您可以使用生成变体(#generate-variations)来使用Adobe为特定用例创建的基于提示的模板。
    * 您也可以[创建变体](#create-variation)
 * 片段及其变体中的&#x200B;**字段**：
    * 图标指示[数据类型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -119,6 +120,8 @@ ht-degree: 88%
 在编辑器中，您可以：
 
 * 为&#x200B;**主控**&#x200B;内容[创建变体](#create-variation)
+
+* [使用生成变体AI](#generate-variations-ai) 使用Generative AI来使用Adobe为特定用例创建的基于提示的模板。
 
 * 选择所需的变体以编辑内容
 
@@ -156,14 +159,52 @@ ht-degree: 88%
 
 1. 按 **Return** 或移至另一个字段以自动保存更改。标题将在左侧的&#x200B;**变体**&#x200B;面板中更新。
 
+### 使用带有“生成变体”的GenAI创建变体 {#generate-variations-ai}
+
+使用创新型变体来利用创新型人工智能加快内容创建。
+
+在内容片段编辑器中使用生成变量：
+
+1. 打开内容片段编辑器。 在标题中，您将找到生成变体的入口点：
+
+![在内容片段编辑器中生成变体](assets/cfm-generate-variations1.png)
+
+1. 生成变体将在新选项卡中打开。 在左边栏中，您可以看到要为其创建内容的AEM Cloud实例和内容片段。 选择要使用的提示或创建新提示。
+
+   >[!NOTE]
+   >
+   >可用的Adobe提示模板现在有限，但在未来版本中将添加更多模板。
+
+![导出以生成内容片段中的变体](assets/cfm-generate-variations2.png)
+
+1. 通过填写提示来生成内容。 片段中的内容模型将通过GenAI自动用于生成内容。
+
+   >[!NOTE]
+   >
+   >我们当前仅支持文本字段。
+
+![导出以生成内容片段中的变体](assets/cfm-generate-variations3.png)
+
+1. 选择所需的生成变体并选择“导出变体”。 确认内容片段变体的名称并选择以下任一项：
+
+   * **导出**：将变体导出到内容片段并保留在生成变体应用程序中。
+   * **导出并打开**：将变量导出到内容片段并打开一个新选项卡，该选项卡显示带有GenAI新变量的内容片段。
+
+   ![导出以生成内容片段中的变体](assets/cfm-generate-variations4.png)
+
+1. 生成的变体显示在主内容片段编辑器中。
+
+   ![查看内容片段中的生成变体](assets/cfm-generate-variations5.png)
+
+您可以了解有关生成变体的更多信息 [此处]{generative-ai/generate-variations.md}。
 
 ### 删除变体 {#delete-variation}
 
 要删除内容片段的变体，请执行以下操作：
 
->[!NOTE]
->
->无法删除&#x200B;**主控**。
+    >[！注意]
+    >
+    >您无法删除**Main**。
 
 1. 选择变体。
 
