@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 74254387de1761f25127180787453e681181d97a
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '3166'
+source-wordcount: '3165'
 ht-degree: 5%
 
 ---
@@ -147,7 +147,7 @@ Dynamic Media您可以通过选择 **[!UICONTROL 编辑]** 图标，然后 **[!U
 
   如果要查看图像集、旋转集或混合媒体集，此选项是唯一可用选项。 显示的查看器预设也显示为仅与智能相关的查看器预设。
 
-* **[!UICONTROL 查看器修饰符]**  — 查看器修饰符采用名称=值对与&amp;分隔符的形式，可让您按照《查看器参考指南》中的概述更改查看器。 例如，查看器修饰符为 `posterimage=img.jpg&caption=text.vtt,1` 为视频缩略图设置不同的图像，并将隐藏式字幕/字幕文件与视频关联。
+* **[!UICONTROL 查看器修饰符]**  — 查看器修饰符采用名称=值对与&amp;分隔符的形式，可让您按照《查看器参考指南》中的概述更改查看器。 例如，查看器修饰符为 `posterimage=img.jpg&caption=text.vtt,1` 为视频缩略图设置不同的图像，并将隐藏式字幕文件与视频关联。
 
 * **[!UICONTROL 图像预设]**  — 从下拉列表中选择现有的图像预设。 如果您要查找的图像预设不可见，则必须使其可见。 请参阅 [管理图像预设](/help/assets/dynamic-media/managing-image-presets.md). 如果您使用的是图像预设，则无法选择查看器预设，反之亦然。
 
@@ -298,9 +298,9 @@ Dynamic Media您可以通过选择 **[!UICONTROL 编辑]** 图标，然后 **[!U
 
   您可以编辑以下内容 **[!UICONTROL 添加到购物车]** 通过选择 **[!UICONTROL 编辑]** 在组件中。
 
-* **[!UICONTROL 显示产品资产]**  — 默认情况下，此值处于选中状态。 产品资产会按照商务模块中的定义显示产品的图像。 清除复选标记将不显示产品资产。
+* **[!UICONTROL 显示产品资产]**  — 默认情况下，此值处于选中状态。 产品资产会显示在Commerce模块中定义的产品图像。 清除复选标记将不显示产品资产。
 
-* **[!UICONTROL 显示产品价格]**  — 默认情况下，此值处于选中状态。 产品价格显示商业模块中定义的项目价格。 清除复选标记将不显示产品价格。
+* **[!UICONTROL 显示产品价格]**  — 默认情况下，此值处于选中状态。 产品价格显示Commerce模块中定义的项目价格。 清除复选标记将不显示产品价格。
 
 * **[!UICONTROL 显示产品表单]**  — 默认情况下，不选中此值。 产品表单包括任何产品变体，如大小和颜色。 清除复选标记将不显示产品变型。
 

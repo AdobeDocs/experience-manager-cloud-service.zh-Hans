@@ -9,10 +9,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 86%
+source-wordcount: '1668'
+ht-degree: 84%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 86%
 
 转录是使用语音识别技术将音频或视频文件中的音频转换为文本（语音到文本）的过程。[!DNL Adobe Experience Manager Assets] 配置了 [!DNL Azure Media Services]，它可以自动生成 WebVTT (vtt) 格式的支持音频或视频文件中的口语文本转录。在[!DNL Experience Manager Assets] 中处理音频或视频资产时，转录服务会自动生成音频或视频资产的文本转录演绎版，并将其存储在原始资产所在的 Assets 存储库中的同一位置。此 [!DNL Experience Manager Assets] 转录服务允许营销人员通过增加文本内容的可发现性来有效管理其音频和视频内容，并通过支持可访问性和本地化来提高这些资产的ROI。
 
-转录是口语内容的文本版本；例如，您在任何 OTT 平台上观看的电影通常都包括解说词或字幕，帮助您访问或使用其他语言的内容。或任何用于营销、学习或娱乐目的的音频或视频文件。这些体验从转录开始，然后根据需要进行格式化或翻译。当手动执行时，转录音频或视频是一个很耗时间且容易出错的过程。鉴于对音频视频内容的需求不断增加，扩展手动过程也是一个挑战。[!DNL Experience Manager Assets] 使用Azure基于人工智能的转录，允许对音频和视频资产进行大规模处理，并生成文本转录（.vtt文件）以及时间戳细节。 除了 Assets，Dynamic Media 也支持转录功能。
+转录是口语内容的文本版本；例如，您在任何OTT平台上观看的电影通常都包含字幕，以帮助访问或使用其他语言的内容。 或任何用于营销、学习或娱乐目的的音频或视频文件。这些体验从转录开始，然后根据需要进行格式化或翻译。当手动执行时，转录音频或视频是一个很耗时间且容易出错的过程。鉴于对音频视频内容的需求不断增加，扩展手动过程也是一个挑战。[!DNL Experience Manager Assets] 使用Azure基于人工智能的转录，允许对音频和视频资产进行大规模处理，并生成文本转录（.vtt文件）以及时间戳细节。 除了 Assets，Dynamic Media 也支持转录功能。
 
 转录功能在 [!DNL Experience Manager Assets] 中可以免费使用。但是，管理员需要用户的Azure凭据才能在中配置转录服务 [!DNL Experience Manager Assets]. 您还可以直接从 Microsoft® 获得 [试用凭证](https://azure.microsoft.com/en-us/pricing/details/media-services/)，体验 Assets 中的音频或视频转录功能。
 

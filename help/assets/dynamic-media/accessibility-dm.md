@@ -7,9 +7,9 @@ content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 483a72f67f361023ebeefa3d74ec9f35a5f4f765
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Dynamic Media用户界面元素可与屏幕阅读器等辅助技术配合使用�
 
 Dynamic Media支持传送带隐藏式字幕的视频和自适应视频集。 字幕必须显示在视频内容的顶部。
 
-请参阅 [Dynamic Media中的视频 — 向视频添加隐藏式字幕或字幕](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+请参阅 [Dynamic Media中的视频 — 向视频添加隐藏式字幕](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]
