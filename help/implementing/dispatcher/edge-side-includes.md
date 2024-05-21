@@ -2,7 +2,7 @@
 title: 边缘侧包括
 description: Adobe托管的CDN现在支持Edge Side Include (ESI)，这是一种用于边缘级动态Web内容汇编的标记语言。
 feature: Dispatcher
-source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
+source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 2%
@@ -44,8 +44,8 @@ Edge Side Include的一些用例可能很有用：
 
 * 支持以下ESI标记： include、comment、remove。
 * ESI标记在CDN中按顺序处理而不是同时处理，因此，具有低TTL的页面上的许多ESI标记可能会增加最终用户体验的延迟。
-* ESI：include处理的最大深度为5。
-* ESI：包含处理片段的最大总数为256。
+* ESI：包含处理的最大深度为5。
+* 最大ESI：包括处理片段数为256。
 
 
 ## Apache配置 {#esi-apache}
