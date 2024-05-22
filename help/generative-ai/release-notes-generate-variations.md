@@ -2,10 +2,10 @@
 title: 生成变体的发行说明
 description: 生成变体的发行说明，可从AEMas a Cloud Service和Edge Delivery ServicesSidekick访问
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
+source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
+source-wordcount: '218'
+ht-degree: 9%
 
 ---
 
@@ -27,8 +27,6 @@ ht-degree: 8%
 * 引入了从收藏夹以CSV文件形式下载结果的功能
 * 使用时间分组增强了最近访问列表
 * 为多种语言添加了本地化支持
-
-当前的发行版本是2.0.0版。
 
 ### 2.0.0 {#release-notes-2-0-0}
 
