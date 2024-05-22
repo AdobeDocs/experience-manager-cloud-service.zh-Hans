@@ -2,9 +2,9 @@
 title: 边缘侧包括
 description: Adobe托管的CDN现在支持Edge Side Include (ESI)，这是一种用于边缘级动态Web内容汇编的标记语言。
 feature: Dispatcher
-source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
+source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 2%
 
 ---
@@ -81,9 +81,8 @@ Edge Side Include的一些用例可能很有用：
 |-----------|--------------------------|
 | **no-gzip** | 如果设置为1，则会将HTML页面从Apache未压缩地传输到CDN。 这对于ESI是必需的，因为内容必须未压缩地发送到CDN，以便CDN可以查看和评估ESI标记。<br/><br/>父页面和包含的片段都应将no-gzip设置为1。<br/><br/>根据请求的 `Accept-Encoding` 值。 |
 | **x-aem-esi** | 如果设置为“开”，CDN将评估父HTML页面的ESI标记。  默认情况下，未设置标头。 |
-| **x-aem-compress** | 如果设置为“开”，则CDN会将内容从CDN压缩到浏览器。 由于从Apache到CDN的父页面传输必须解压缩才能使ESI正常工作（no-gzip设置为1），因此这可以降低延迟。<br/><br/>如果未设置此标头，则当CDN从未压缩的原始服务器中检索内容时，它也会向未压缩的客户端提供内容。 因此，如果no-gzip设置为1（ESI必需），则必须设置此标头，并且需要向浏览器提供从CDN压缩的内容。 |
+| **x-aem-compress** | 如果设置为“开”，则CDN会将内容从CDN压缩到浏览器。 由于从Apache到CDN的父页面传输必须解压缩，ESI才能正常工作(`no-gzip` 设置为1)，这将减少延迟。<br/><br/>如果未设置此标头，则当CDN从未压缩的原始服务器中检索内容时，它也会向未压缩的客户端提供内容。 因此，如果符合以下条件，则必须设置此标头 `no-gzip` 设置为1（ESI必需），并且需要向浏览器提供从CDN压缩的内容。 |
 
 ## Sling Dynamic 包括 {#esi-sdi}
 
 虽然不需要， [Sling Dynamic包括](https://sling.apache.org/documentation/bundles/dynamic-includes.html) (SDI)可用于生成在CDN上解释的ESI片段。
-
