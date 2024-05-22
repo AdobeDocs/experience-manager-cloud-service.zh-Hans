@@ -2,10 +2,10 @@
 title: 操作中心
 description: 利用行动中心方便地对事件和其他重要信息采取行动
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: ddf94262c047ea0210b0759176f51d1220ac9c67
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 78%
+source-wordcount: '783'
+ht-degree: 74%
 
 ---
 
@@ -74,3 +74,4 @@ AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在
 | 已锁定的复制队列 | 问题 | 按照[复制文档](/help/operations/replication.md#troubleshooting)中的说明执行操作来解锁队列 |
 | 持久GraphQL查询无效 | 问题 | GraphQL通过引用 [持久GraphQL查询疑难解答文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | 到期的 S2S 证书 | 主动 | 参阅[为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)文档，了解如何刷新凭据 |
+| 源头流量尖峰 | 问题 | 通过配置速率限制流量过滤器规则来Protect您的来源，这些规则在低于默认来源流量尖峰警报的阈值时触发。  请参阅 [使用流量规则阻止DoS和DDoS攻击](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 流量过滤器规则文档的章节，其中引用了一个教程。 |

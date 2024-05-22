@@ -1,11 +1,11 @@
 ---
 title: 流量过滤规则（包括 WAF 规则）
-description: 配置通信过滤规则，包括Web应用程序防火墙(WAF)规则。
+description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）。
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
+source-git-commit: c914ae4a0ad3486feb54cbcf91f6659afa1372b8
 workflow-type: tm+mt
-source-wordcount: '3790'
-ht-degree: 80%
+source-wordcount: '3947'
+ht-degree: 94%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 80%
 流量过滤规则可用于在 CDN 层阻止或允许请求，这在以下场景中可能很有用：
 
 * 在新网站上线之前，仅限公司内部流量访问特定的域
-* 建立速率限制以降低受体积DoS攻击的影响
+* 制定速率限制以降低受到大规模 DoS 攻击影响的程度
 * 防止已知有恶意的 IP 地址将您的页面作为目标
 
 所有 AEM as a Cloud Service Sites 和 Forms 客户均可使用大多数此类流量过滤器规则。这些规则主要作用于请求属性和请求标头，包括 IP、主机名、路径和用户代理。
 
-流量过滤器规则的子类别需要增强安全许可证或WAF-DDoS保护许可证。 这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
+流量过滤规则的子类别需要“增强安全性”许可证或“WAF-DDoS 保护”许可证。这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
 
 可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。未来还将支持 RDE。
 
 [按照教程进行操作，](#tutorial)快速建立有关此功能的具体专业知识。
 
 >[!NOTE]
->您是否对在CDN上配置流量的其他选项(包括编辑请求/响应、声明重定向和代理到非AEM源)感兴趣？ [通过加入早期采用者计划了解如何操作并进行尝试](/help/implementing/dispatcher/cdn-configuring-traffic.md)。
+>有关与CDN上配置流量相关的其他选项，包括编辑请求/响应、声明重定向和代理到非AEM源，请参阅 [在CDN上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md) 文章。
 
 
 ## 本文的结构 {#how-organized}
@@ -35,31 +35,33 @@ ht-degree: 80%
 本文分为以下几个部分：
 
 * **流量保护概述：**&#x200B;了解如何保护您抵御恶意流量。
-* **配置规则的建议过程：** 阅读有关保护您网站的高级方法论。
+* **配置规则的建议流程：**&#x200B;大致了解保护您的网站的方法。
 * **设置：**&#x200B;了解如何设置、配置和部署流量过滤规则（包括高级 WAF 规则）。
 * **规则语法：**&#x200B;了解如何在 `cdn.yaml` 配置文件中声明流量过滤规则。其中包括所有 Sites 和 Forms 客户均可使用的流量过滤规则以及 WAF 规则子类别（对于许可该功能的人）。
 * **规则示例：**&#x200B;查看已声明的规则的示例以增进了解。
 * **速率限制规则：**&#x200B;了解如何使用速率限制规则保护您的网站抵御大规模攻击。
+* **流量过滤器规则警报** 配置警报，以便在触发规则时收到通知。
+* **源位置的默认流量尖峰警报** 当来源出现提示DDoS攻击的流量激增时，收到通知。
 * **CDN 日志：**&#x200B;查看哪些声明的规则和 WAF 标志与您的流量相匹配。
 * **仪表板工具：**&#x200B;分析您的 CDN 日志以提出新的流量过滤规则。
 * **推荐的入门规则：**&#x200B;一组入门规则。
-* **教程：** 关于功能的实用知识，包括如何使用仪表板工具声明正确的规则。
+* **教程：**&#x200B;有关该功能的实用知识，包括如何使用仪表板工具声明正确的规则。
 
-Adobe邀请您通过电子邮件发送反馈或询问有关流量过滤器规则的问题 **aemcs-waf-adopter@adobe.com**.
+Adobe 邀请您通过发送电子邮件至 **aemcs-waf-adopter@adobe.com** 提供反馈或询问有关流量过滤规则的问题。
 
 ## 流量保护概述 {#traffic-protection-overview}
 
-在当前的数字环境中，恶意流量是一种始终存在的威胁。Adobe认识到了风险的严重性，并提供了多种方法来保护客户应用程序并在发生攻击时减少攻击。
+在当前的数字环境中，恶意流量是一种始终存在的威胁。Adobe 意识到此类风险的危害性，因此提供若干方法以保护客户应用程序并在发生攻击时减轻其影响。
 
 Adobe Managed CDN 在边缘的网络层（第 3 层和第 4 层）承受 DoS 攻击，其中包括洪泛和反射/放大攻击。
 
-Adobe 默认采取措施，以防因规模超预期的突发流量超出特定阈值而导致性能下降。如果存在影响站点可用性的DoS攻击，Adobe的操作团队将收到警报并采取步骤进行缓解。
+Adobe 默认采取措施，以防因规模超预期的突发流量超出特定阈值而导致性能下降。如果 DoS 攻击影响站点可用性，则提醒 Adobe 的运营团队采取措施以减轻影响。
 
 客户可采取主动措施以通过在内容投放流的各层配置规则而减轻应用层（第 7 层）受到的攻击。
 
-例如，在Apache层，客户可以配置 [Dispatcher模块](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) 或 [修改安全性](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制对特定内容的访问。
+例如，客户可在 Apache 层配置[ Dispatcher 模块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制访问某些内容。
 
-正如本文所述，可以使用Cloud Manager的配置管道将流量过滤器规则部署到Adobe托管的CDN。 除了基于 IP 地址、路径和标头等属性的流量过滤规则或基于设置速率限制的规则之外，客户还可许可过滤规则的一个强有力的子类别，称为 WAF 规则。
+如本文所述，还可使用 Cloud Manager 的配置管道将流量过滤器规则部署到 Adobe Managed CDN。除了基于 IP 地址、路径和标头等属性的流量过滤规则或基于设置速率限制的规则之外，客户还可许可过滤规则的一个强有力的子类别，称为 WAF 规则。
 
 ## 建议流程 {#suggested-process}
 
@@ -71,7 +73,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 1. 将推荐的入门规则复制到 `cdn.yaml`，并在日志模式下将配置部署到生产环境。
 1. 收集一些流量后，使用[仪表板工具](#dashboard-tooling)分析结果以查看是否有任何匹配。留意误报并作出任何必要的调整，最终在阻止模式下启用这些入门规则。
 1. 根据对 CDN 日志的分析结果添加自定义规则，首先在开发环境上用模拟流量测试这些规则，然后先后在日志模式和阻止模式下将其部署到暂存和生产环境。
-1. 持续监控流量，随着威胁的发展更改规则。
+1. 持续监控流量，根据威胁形势的发展而更改规则。
 
 ## 设置 {#setup}
 
@@ -103,7 +105,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
          action: block
    ```
 
-此 `kind` 参数应设置为 `CDN` 并且版本应设置为架构版本，即 `1`. 请参阅以下示例。
+应将 `kind` 参数应设置为 `CDN`，并应将 version 设置为架构版本，即 `1`。请查看以下示例。
 
 
 <!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
@@ -119,7 +121,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
    * [请参阅配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
    * [请参阅配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
 
-对于RDE，使用命令行，但当前不支持RDE。
+对于 RDE，使用命令行，但目前不支持 RDE。
 
 **注释**
 
@@ -198,7 +200,7 @@ data:
 
 | **属性** | **类型** | **描述** |
 |---|---|---|
-| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回一个 `author`， `preview`，或 `publish`.</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回两个字母的代码([区域指示器符号](https://en.wikipedia.org/wiki/cn/Regional_indicator_symbol))来标识客户所在的国家/地区。</li></ul> |
+| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码（[区域指标符号](https://en.wikipedia.org/wiki/cn/Regional_indicator_symbol)）。</li></ul> |
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
 | reqCookie | `string` | 返回具有指定名称的 Cookie |
@@ -228,7 +230,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe建议使用 [regex101](https://regex101.com/) 和 [飞天小提琴](https://fiddle.fastly.dev/) 使用正则表达式时。 还可在这篇[文章](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)中详细了解 Fastly 如何处理正则表达式。
+* Adobe 建议在使用正则表达式时采用 [regex101](https://regex101.com/) 和 [Fastly Fiddle](https://fiddle.fastly.dev/)。还可在这篇[文章](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)中详细了解 Fastly 如何处理正则表达式。
 
 
 ### 操作结构 {#action-structure}
@@ -241,9 +243,9 @@ when:
 
 | **名称** | **允许的属性** | **含义** |
 |---|---|---|
-| **allow** | `wafFlags`（可选），`alert`（可选，尚未发布） | 如果 wafFlags 不存在，则停止进一步的规则处理并继续提供响应。如果 wafFlags 存在，则禁用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定警报，则在5分钟时间范围内触发规则10次时，将发送操作中心通知。 该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
-| **block** | `status, wafFlags`（可选且互斥），`alert`（可选，尚未发布） | 如果 wafFlags 不存在，则绕过所有其他属性来返回 HTTP 错误，错误代码由状态属性定义或默认为 406。如果 wafFlags 存在，则启用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定警报，则在5分钟时间范围内触发规则10次时，将发送操作中心通知。 该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
-| **log** | `wafFlags`（可选），`alert`（可选，尚未发布） | 记录规则已触发这一事实，否则对处理不起作用。wafFlags 不起作用。<br>如果指定警报，则在5分钟时间范围内触发规则10次时，将发送操作中心通知。 该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
+| **allow** | `wafFlags`（可选），`alert`（可选，尚未发布） | 如果 wafFlags 不存在，则停止进一步的规则处理并继续提供响应。如果 wafFlags 存在，则禁用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
+| **block** | `status, wafFlags`（可选且互斥），`alert`（可选，尚未发布） | 如果 wafFlags 不存在，则绕过所有其他属性来返回 HTTP 错误，错误代码由状态属性定义或默认为 406。如果 wafFlags 存在，则启用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
+| **log** | `wafFlags`（可选），`alert`（可选，尚未发布） | 记录规则已触发这一事实，否则对处理不起作用。wafFlags 不起作用。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
 
 ### WAF 标志列表 {#waf-flags-list}
 
@@ -260,37 +262,37 @@ when:
 | USERAGENT | 攻击工具 | 攻击工具是指使用自动化软件来找出安全漏洞或尝试利用已发现的漏洞。 |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻击尝试利用 2.16.0 版之前的 Log4J 版本中存在的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/cn/Log4Shell) |
 | BHH | 错误跳头 | 错误跳头是指尝试通过格式错误的 Transfer-Encoding (TE) 或 Content-Length (CL) 头或格式良好的 TE 和 CL 头进行 HTTP 走私 |
-| CODEINJECTION | 代码注入 | 代码注入是指通过用户输入的任意应用程序代码命令来试图控制或破坏目标系统。 |
+| CODEINJECTION | 代码注入 | 代码注入是指尝试通过用户输入的任意应用程序代码命令来获得控制权限或损坏目标系统。 |
 | ABNORMALPATH | 异常路径 | 异常路径表示原始路径与规范化路径不同（例如，`/foo/./bar` 标准化为 `/foo/bar`） |
 | DOUBLEENCODING | 双重编码 | 双重编码检查双重编码 html 字符的规避技术 |
 | NOTUTF8 | 无效编码 | 无效编码可能会促使服务器将请求中的恶意字符转换为响应，从而导致拒绝服务或 XSS |
 | JSON-ERROR | JSON 编码错误 | 指定为在“Content-Type”请求头中包含 JSON，但包含 JSON 解析错误的 POST、PUT 或 PATCH 请求正文。这通常与编程错误或自动或恶意请求有关。 |
 | MALFORMED-DATA | 请求正文中的格式错误的数据 | 根据“Content-Type”请求头，格式错误的 POST、PUT 或 PATCH 请求正文。例如，如果指定了“Content-Type: application/x-www-form-urlencoded”请求头并包含 POST 正文 json。这通常是编程错误、自动或恶意请求。需要代理 3.2 版或更高版本。 |
-| SANS | 恶意 IP 流量 | [SANS Internet风暴中心](https://isc.sans.edu/) 已报告且参与恶意活动的IP地址列表。 |
+| SANS | 恶意 IP 流量 | 已报告从事恶意活动的 IP 地址的 [SANS Internet Storm Center](https://isc.sans.edu/) 列表。 |
 | NO-CONTENT-TYPE | 缺少“Content-Type”请求头 | 不具有“Content-Type”请求头的 POST、PUT 或 PATCH 请求。在此示例中，默认情况下，应用程序服务器应假定“Content-Type: text/plain; charset=us-ascii”。许多自动和恶意请求可能缺少“内容类型”。 |
 | NOUA | 无用户代理 | 许多自动和恶意请求使用虚假或缺失的用户代理，导致难以识别发出请求的设备类型。 |
 | TORNODE | Tor 流量 | Tor 是可以隐藏用户身份的软件。Tor 流量尖峰可能表明攻击者正在试图掩盖其位置。 |
 | NULLBYTE | 空字节 | 空字节通常不会出现在请求中，并表明请求的格式错误且可能是恶意请求。 |
-| PRIVATEFILE | 私有文件 | 私有文件本质上属于机密文件，例如Apache `.htaccess` 文件或可能泄露敏感信息的配置文件 |
+| PRIVATEFILE | 私有文件 | 私有文件是具有机密性的，例如 Apache `.htaccess` 文件或可能泄露敏感信息的配置文件 |
 | SCANNER | 扫描程序 | 标识常用的扫描服务和工具 |
 | RESPONSESPLIT | HTTP 响应拆分 | 标识何时将 CRLF 字符作为输入提交给应用程序以将标头注入 HTTP 响应 |
 | XML-ERROR | XML 编码错误 | 指定为在“Content-Type”请求头中包含 XML，但包含 XML 解析错误的 POST、PUT 或 PATCH 请求正文。这通常与编程错误或自动或恶意请求有关。 |
 
 ## 注意事项 {#considerations}
 
-* 创建两个冲突的规则时，允许的规则始终优先于块规则。 例如，如果创建规则以阻止特定路径，创建规则以允许某个特定IP地址，则允许来自被阻止路径上的该IP地址的请求。
+* 在创建两个发生冲突的规则时，允许的规则将始终优先于阻止规则。例如，如果您创建一个规则来阻止特定路径，并创建一个规则来允许一个特定的 IP 地址，则来自被阻止路径的 IP 地址的请求将被允许。
 
 * 如果规则匹配但被阻止，CDN 会提供 `406` 返回代码。
 
 * 配置文件不应包含机密信息，因为任何有权访问 Git 存储库的人员都能读取这些文件。
 
-* Cloud Manager中定义的IP允许列表优先于流量过滤器规则。
+* 在 Cloud Manager 中定义的 IP 允许列表优先于流量过滤器规则。
 
 * WAF 规则匹配只显示在 CDN 未命中和通过（而非命中）的 CDN 日志中。
 
 ## 规则示例 {#examples}
 
-下面是一些规则示例。请参阅[速率限制](#rules-with-rate-limits)部分以找到速率限制规则的更多示例。
+下面是一些规则示例。请参阅[速率限制](#rate-limit-rules)部分以找到速率限制规则的更多示例。
 
 **示例 1**
 
@@ -312,7 +314,7 @@ data:
 
 **示例 2**
 
-此规则阻止路径上的请求 `/helloworld` 在使用包含Chrome的User-Agent发布时：
+此规则阻止发布时带包含 Chrome 的 User-Agent 的路径`/helloworld` 的请求：
 
 ```
 kind: "CDN"
@@ -419,11 +421,11 @@ data:
 
 ## 速率限制规则
 
-有时，如果根据特定条件，流量超过传入请求的某个速率，则需要阻止流量。 为 `rateLimit` 属性设置一个值可限制符合规则条件的那些请求的速率。
+如果流量超过传入请求的特定速率，有时最好根据某个具体的条件阻止流量。为 `rateLimit` 属性设置一个值可限制符合规则条件的那些请求的速率。
 
 速率限制规则不能引用 WAF 标志。所有 Sites 和 Forms 客户均可使用它们。
 
-根据每个 CDN POP 计算得出速率限制。例如，假设蒙特利尔、迈阿密和都柏林的POP每秒的流量率分别为80、90和120个请求。 并且，速率限制规则被设置为限制为100。 在该情况下，仅对通往都柏林的流量进行速率限制。
+根据每个 CDN POP 计算得出速率限制。举例来说，假设蒙特利尔、迈阿密和都柏林的 POP 的流量速率分别为每秒 80、90 和 120 个请求。并且，速率限制规则设置为 100 的限制。在该情况下，仅对通往都柏林的流量进行速率限制。
 
 速率限制根据到达边缘的流量、到达来源的流量或错误的数量进行评估。
 
@@ -432,7 +434,7 @@ data:
 | **属性** | **类型** | **默认** | **含义** |
 |---|---|---|---|
 | limit | 10 和 10000 之间的整数 | 必填 | 为其触发规则的请求速率（每个 CDN POP），以每秒请求数为单位。 |
-| window | 整数枚举：1、10 或 60 | 10 | 计算请求速率的采样时段（以秒为单位）。计数器的精度取决于窗口的大小（窗口越大，精度越高）。 例如，1秒窗口可以达到50%的精度，60秒窗口可以达到90%的精度。 |
+| window | 整数枚举：1、10 或 60 | 10 | 计算请求速率的采样时段（以秒为单位）。计数器的准确性取决于时段的大小（时段越大越准确）。例如，1 秒时段的准确性预计为 50%，而 60 秒时段的准确性预计为 90%。 |
 | penalty | 60 和 3600 之间的整数 | 300（5 分钟） | 匹配请求被阻止的时段（以秒为单位）（四舍五入到最接近的分钟） |
 | 计数 | 全部，获取，错误 | 全部 | 根据边缘流量（全部）、来源流量（获取）或错误数量（错误）进行评估。 |
 | groupBy | array[Getter] | 无 | 速率限制器计数器将由一组请求属性（例如 clientIp）聚合。 |
@@ -441,7 +443,7 @@ data:
 
 **示例 1**
 
-当客户端在过去10秒内超过平均请求数（每CDN POP）60毫秒时，此规则会阻塞客户端5毫秒：
+当客户端在过去 10 秒内超过平均 60 请求/秒（每个 CDN POP）时，此规则会阻止该客户端 5 毫秒：
 
 ```
 kind: "CDN"
@@ -467,7 +469,7 @@ data:
 
 **示例 2**
 
-当路径/critical/resource上的请求在10秒的时间窗口内超过每秒100个到原始服务器（每个CDN POP）的请求平均数时，阻止该请求60秒：
+当 10 秒时间窗口内每秒对来源的平均请求数量（每个 CDN POP）超过 100 个时，将会阻止路径 /重要/资源上的请求 60 秒：
 
 ```
 kind: "CDN"
@@ -493,7 +495,7 @@ data:
 >
 >此功能尚未发布。要通过早期采用者项目获得访问权限，请发送电子邮件至 **aemcs-waf-adopter@adobe.com**。
 
-可以将规则配置为在5分钟范围内触发十次时发送操作中心通知。 当出现某些流量模式时，此类规则会向您发出警报，以便您采取必要的措施。 了解有关 [操作中心](/help/operations/actions-center.md)，包括如何设置接收电子邮件所需的通知配置文件。
+可以配置一条规则，如果在 5 分钟内触发十次，则发送“操作中心”通知。当某些流量模式出现时，此类规则会向您发出警报，以便您采取必要的措施。详细了解[操作中心](/help/operations/actions-center.md)，包括如何设置接收电子邮件所需的通知配置文件。
 
 ![行动中心通知](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
@@ -518,6 +520,28 @@ data:
           experimental_alert: true
 ```
 
+## 源位置的默认流量尖峰警报 {#traffic-spike-at-origin-alert}
+
+>[!NOTE]
+>
+>此功能正在逐步推出。
+
+An [操作中心](/help/operations/actions-center.md) 当有大量的流量发送到源时，将会发送电子邮件通知，其中高阈值的请求来自同一IP地址，从而提示DDoS攻击。
+
+如果满足此阈值，Adobe将阻止来自该IP地址的流量，但建议采取其他措施保护您的来源，包括配置速率限制流量过滤器规则以阻止较低阈值的流量尖峰。 请参阅 [使用流量规则阻止DoS和DDoS攻击教程](#tutorial-blocking-DDoS-with-rules) 进行引导式演练。
+
+默认情况下，此警报处于启用状态，但可以使用 *enable_ddos_alerts* 属性，设置为false。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    enable_ddos_alerts: false
+```
+
 ## CDN 日志 {#cdn-logs}
 
 通过 AEM as a Cloud Service 可访问 CDN 日志，这些日志对于包括缓存命中率优化以及配置流量筛选规则在内的诸多用例都很有用。在选择创作和发布服务时，CDN 日志显示在 Cloud Manager 的&#x200B;**下载日志**&#x200B;对话框中。
@@ -538,10 +562,10 @@ CDN 日志可能会延迟最多五分钟。
 
 这些规则的行为方式如下：
 
-* 任何匹配规则的客户声明的规则名称都列在 `match` 属性。
-* 此 `action` 属性确定规则是阻止、允许还是记录。
-* 如果WAF已许可并启用，则 `waf` attribute列出了检测到的所有WAF标志（例如SQLI）。 不论WAF标记是否列在任何规则中，这都是真的。 这样做是为了深入展示可能要声明的新规则。
-* 如果没有客户声明的规则匹配且没有waf规则匹配，则 `rules` 属性为空。
+* 任何匹配规则的客户声明规则名称都列在 `match` 属性中。
+* `action` 属性决定规则是否阻止、允许或记录。
+* 如果 WAF 已获得许可并启用，则 `waf` 属性会列出检测到的任何 WAF 标志（例如，SQLI）。无论任何规则中是否列出了 WAF 标志，情况都是如此。这样做是为了深入展示可能要声明的新规则。
+* 如果没有客户声明的规则匹配并且没有 waf 规则匹配，则 `rules` 属性为空。
 
 如前所述，WAF 规则匹配只会显示在 CDN 未命中和通过（而非命中）的 CDN 日志中。
 
@@ -632,7 +656,7 @@ data:
 
 Adobe 提供一种机制，它将仪表板工具下载到您的计算机上以摄取通过 Cloud Manager 下载的 CDN 日志。使用此工具，您可分析您的流量以帮助提出要声明的相应流量过滤器规则，包括 WAF 规则。
 
-功能板工具可以直接从 [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) github存储库。
+功能板工具可以直接从 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) github存储库。
 
 [教程](#tutorial)提供了有关如何使用仪表板工具的具体说明。
 
@@ -721,9 +745,9 @@ data:
 
 提供以下两个教程。
 
-### 使用流量过滤规则（包括 WAF 规则）保护网站
+### 使用流量过滤规则（包括 WAF 规则）保护网站 {#tutorial-protecting-websites}
 
-[观看教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)，获得有关流量过滤规则（包括 WAF 规则）的总体实用知识和经验。
+[观看教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)，获得有关流量过滤规则（包括 WAF 规则）的总体实用知识和经验。
 
 本教程带领您完成以下操作：
 
@@ -733,7 +757,7 @@ data:
 * 用仪表板工具分析结果
 * 最佳实践
 
-### 使用流量过滤规则阻止 DoS 和 DDoS 攻击
+### 使用流量过滤规则阻止 DoS 和 DDoS 攻击 {#tutorial-blocking-DDoS-with-rules}
 
 [深入研究如何使用速率限制流量过滤规则和其他策略来阻止](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules)拒绝服务 (DoS) 和分布式拒绝服务 (DDoS) 攻击。
 
