@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 3be366e5fa0a7625203a052426be6a2fd2412cf6
+source-git-commit: b6fe2a58bb16c70cef48426ec49dda474195c023
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 100%
+source-wordcount: '1612'
+ht-degree: 9%
 
 ---
 
@@ -13,101 +13,134 @@ ht-degree: 100%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 16145 {#release-16145}
+## 版本 16357 {#release-16357}
 
-下面总结的是维护版本 16145 的持续改进内容，该版本于 2024 年 5 月 1 日公开发布。上一个维护版本是版本 15977。
+以下总结了维护版本16357的持续改进，该版本于2024年5月22日公开发布。 上一个维护版本是版本 16145。
 
-2024.5.0 功能激活提供此维护版本的全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.5.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强 {#enhancements-16145}
+### 增强 {#enhancements-16357}
 
-* ASSETS-23489：存储库洞察方面的增强功能。
-* ASSETS-26926：对 Dynamic Media 上传轮询进行了改进。
-* ASSETS-30351：下载对话框应异步加载 Dynamic Media 演绎版大小。
-* ASSETS-30379：提高下载功能中 DRM 许可证的分辨率。
-* ASSETS-31058：在“演绎版”选项卡中的 AEM 资产 UI 中显示智能裁切演绎版，并在用户单击这些演绎版时生成智能裁切图像。
-* ASSETS-31218：在资产投放 API 中添加对命名智能裁切内容的支持。
-* ASSETS-31979：在进行异步资产操作期间添加视觉指示器并禁用 UI 功能。
-* ASSETS-32735：改进资产元数据更新事件。
-* ASSETS-34661：用于 DM 预览和/或 AEMaaCS Publish 提供的投放 URL 的 API。
-* ASSETS-37259：对 XMP 解析进行了改进。
-* ASSETS-37263：允许取消失败的 Assets 异步作业。
-* CNTBF-114：对内容回流进行了改进。
-* CNTBF-148：对内容回流进行了改进。
-* CQ-4356992：最新的 AEM 和 Granite 翻译。
-* SITES-19326：更新 Assets UI 中的链接，即可在新的 CF 编辑器中打开 CF。
-* SITES-20686：GraphQL - 通过 _dmS7Url 公开 Dynamic Media URL（适用于非图像资产）。
-* SKYOPS-68091：更新至 Java 11.0.20。
+* SITES-19579：用于将内容片段从一个模型迁移到另一个模型的Java API。
+* SITES-19698： [打开API] 创建读取操作以管理OpenAPI定义中每个模型的UI架构。
+* SITES-19834：Adobe I/O事件缺少用于发布/取消发布的ID。
+* SITES-20146：为移动的页面启用预览版本/比较。
+* SITES-19973：CFM搜索API实施。
+* SITES-20333：改进创建内容片段时的验证。
+* SITES-20334：改进编辑内容片段模型时的验证。
+* SITES-20585：增强内容片段搜索API，以按区域设置进行过滤。
+* SITES-20594：返回创建/修改/复制资源的用户的全名。
+* SITES-20601： [OpenAPI] 更新CF Search API以允许仅提取直接子内容片段。
+* SITES-20656： [BE] 提供替换字符串时匹配大小写的选项。
+* SITES-20405： [Xwalk] 支持字段折叠的mimeType。
+* SITES-17854：支持UUID以用于CF和资产引用(Pfizer MVP)。
+* SITES-19555：适用于UI架构的简单模型API。
+* SITES-19611： [打开API] 在OpenAPI定义中为每个模型创建用于管理UI架构的写入/更新操作。
+* SITES-19614： [Xwalk] 电子表格分页/无限滚动。
+* SITES-20005：创作管道应具有可配置的事件延迟。
+* SITES-20121：允许枚举字段使用defaultValue。
+* SITES-20342： [后端] 在文件夹级别发布 — 将过滤器添加到仅发布CF。
+* SITES-20355：删除内容片段模型和权限API Servlet。
+* SITES-20387：导航tagadmin将始终计算标记使用情况。
+* SITES-20495： [BE] 能够获得在文件夹级别发布的权限。
+* SITES-20653： [Xwalk] 添加experiment-start-date和 — end-date。
+* SITES-20666： [Xwalk] 默认情况下，创作时应关闭试验。
+* SITES-20752： [cq-wcm-core] 适用于CF的Apple启动项。
+* SITES-20946：将etag添加为LIST模型端点中的属性。
+* SITES-20947： [persistence] 按内容片段id获取子任务。
+* SITES-21012：将模型元数据架构合并到产品。
+* SITES-21769：对按ID检索的资源使用/jcr：id/路径前缀。
+* ASSETS-30379：DRM许可证检查会展示正在下载的整个资源树。
+* ASSETS-35535： [DaaS适配器错误] v1事件需要忽略空资源下载。
+* SITES-21550： [Xwalk] 自定义元数据：数字、日期、日期时间、时间字段。
+* SITES-20149： RTC： [cq-wcm-launches-core] 为CF的启动项导出新的API。
+* SITES-20150： RTC： [cq-command] 向现有API添加新方法。
+* SITES-20451：将sidecar插件添加到wcm-commons。
+* SITES-20499： [MSM][Async] 将代码从AsyncOperationServlet提取到实用程序类。
+* SITES-20763：更新站点集成中的投放API端点。
+* SITES-20583：将etag作为属性添加到中 `LIST`/search fragments.
+* CQ-4356445：事件生成器和架构实施。
+* CQ-4356625：改进languagecopyrendercondition.jsp中的授权检查。
+* CQ-4356629：改进isWorkflowUser rendercondition中的授权检查。
+* CQ-4356934：在使用ResponseEntities时简化RequestProcessor API。
+* CQ-4357214：请求处理器不得依赖于servlet逻辑。
+* SITES-16392：失败的启动项创建不应留下垃圾内容。
+* SITES-20238： [RTC] Pfizer MVP — 添加CF API以将CF路径解析为ID，反之亦然。
+* SITES-21043： [CF][launches] Cloud Service的侧端口性能改进。
+* SITES-21044： [CF][launches] 将侧端口异步编辑有效负载实现用于Cloud Service。
+* Forms-9606：以前，在自适应Forms编辑器中，只有字段值可以映射到调用服务的响应。 现在，作者能够将字段的任何属性映射到调用服务响应。
+* Forms-7483： AEM Forms JSON架构解析器现在支持JSON架构(2020-12)。
+* Forms-13209：包含一个处理程序，用于覆盖自适应Forms默认提交成功和提交失败处理程序。 您可以通过自适应Forms规则编辑器配置这些处理程序。
+* Forms-13612：屏幕阅读器现在可阅读基于核心组件的自适应Forms中的错误消息、简短描述和长篇描述。 此外，还增加了支持功能，可在表单包含错误且无法提交时使自适应表单输入失效。
+* Forms-12052：表单作者现在可以应用自定义函数在提交之前预处理数据。
+* Forms-11295：增加了对SHA256和AEM Forms数字签名的ECDSA算法的支持。
+* Forms-9432：向数据源云配置中添加了其他内容类型（REST端点）。 它允许以键值对的形式将数据提交到经过身份验证的端点。
 
-### 修复的问题 {#fixed-issues-16145}
+### 修复的问题 {#fixed-issues-16357}
 
-* ASSETS-32321：如果祖先文件夹缺少“jcr：content”子节点，则后处理工作流程会解析失败。
-* ASSETS-33856：JPEG 图像预设以 TXT 格式下载文件。
-* ASSETS-34096：修复异步下载报告的 Touch UI 视图。
-* ASSETS-34493：启用多公司功能切换后加载下载对话框时失败。
-* ASSETS-34824：对于 DM 禁用文件夹，复制 URL 显示为空。
-* ASSETS-35226：如果在 DAM 根上进行指定，则后处理工作流程无法得到解决。
-* ASSETS-35559：将 DM 批量上传失败日志减少为 WARN。
-* ASSETS-35860：AEM Assets 列视图中的时区转化不正确。
-* ASSETS-35935：关闭负载审查后文件夹导航出错。
-* ASSETS-35961：在图像配置文件下添加裁切按钮不起作用。
-* ASSETS-36227：发布时禁用 FolderPreviewUpdaterImpl 服务。
-* ASSETS-36943：当列表视图中的文件夹中存在 CF 和其他非 CF 项目时，列无法对齐。
-* ASSETS-36990：导出元数据作业因属性过多而失败/放缓。
-* ASSETS-37113：如果查询仅返回 CF 结果，则重新处理资产作业将会立即终止。
-* ASSETS-37260：在 AEM 中导出元数据时可能会产生无效的 CSV。
-* ASSETS-37261：AEM Assets 上的 PPTx 和 PDF 注释问题。
-* ASSETS-37282：打开大型文件夹的请求可能会很慢。
-* ASSETS-37330：从 OneDrive 批量导入时会创建错误的 AEM 文件夹结构。
-* ASSETS-37609：删除旧版 scene7 conf 查找功能。
-* ASSETS-38016：某些元数据更新未在事件中正确跟踪。
+* SITES-20608：在模板中包含时启用了个性化的体验片段会导致无限循环。
+* SITES-19554： [Xwalk] 电子表格编辑器：不能清空单元格。
+* SITES-19971：修补包含选项卡的CFM会更改字段的顺序。
+* SITES-20168：内容片段模型 `locked` 字段未正确更新。
+* SITES-20522：损坏的内容片段中断/adobe/sites/cf/fragments端点。
+* SITES-20816： CF OpenAPI — 输出与引用片段的缺少模型不一致。
+* SITES-21239：删除ContentFragmentSearchService循环依赖关系。
+* SITES-20582：搜索和列出内容片段应允许深度0。
+* SITES-20559： [MSM][XF][Lufthansa] 将体验片段从母版/语言转出到国家/语言时，不会更新引用。
+* SITES-17772：AEM：具有管理员组的用户无法解锁其他用户锁定的页面。
+* SITES-20401： [Xwalk] 节元数据不支持多值属性。
+* SITES-21391： [OpenAPI事件] 修改内容片段模型的标题或标记（属性）时不会触发任何事件。
+* SKYOPS-73234：AEM Assets全局DAM程序升级到AEM版本15553和PR ID 35362时，错误日志失败增加。
+* SKYOPS-75341：分布交叉通路捆绑包中的NoSuchMethodError。
+* SCRNS-3945： Skyline：屏幕中的未本地化“已计划”字符串。
+* SITES-20586：模板“已发布”时间戳未更新。
+* SITES-16674：继承转出配置复选框不适用于Live Copy属性。
+* SITES-18680：无法提取graphql查询(Apple)中的引用变量。
+* SITES-21233： [CoreCmp] 升级到15860后，GS1美国的可折叠项已损坏。
+* SITES-20367：在AEM中删除启动项时出现问题。
 * CQ-4357161：AEM 收件箱负载屏幕返回 404。
-* GRANITE-50041：当下拉选项中只有“添加渲染”选项，并且分辨率宽度超过 1440px 时，“添加渲染”不起作用。
-* GRANITE-50279：Coral Datepicker 组件中的星期名称混乱。
-* SCRNS-3949：Screens 频道获取请求时间过长。
-* SCRNS-3981：[序列频道]当元素加载/卸载事件的序列失真时会导致黑屏。
-* SCRNS-4180：[序列频道]从后备缩略图恢复后，对于视频时长为 -1 的频道，序列停止并显示空白屏幕。
-* SCRNS-4245：[序列频道]加载视频并从后备缩略图切换时，空白屏幕的持续时间有限。
-* SITES-16055：修复相应属性页面中的 Live Copy 和 Live Copy Source 链接。
-* SCRNS-4243：非管理员用户的内容提供程序中缺少按钮。
+* SITES-20214：保存时出现AEM转出配置序列问题。
+* SITES-20364： 302重定向不适用于URL中的选择器。
+* SITES-20547：AEMas a Cloud Service上Live Copy排除的路径列表中的路径被截断。
+* SITES-20691：体验片段模板限制不遵循cq：allowedTemplates。
+* SITES-21122：带有内容片段的AEM CS Live Copy缺陷。
+* ASSETS-38723：在初始化this.readRules之前调用getReadRulesForMetadataChildNodes()时，MetadataRulesProviderImpl引发的NPE。
+* SITES-11727： [GQL] 内容片段引用的完全水合缺少数据。
+* SITES-19462：资产搜索在AEM Cloud中无法正常工作。
+* SITES-19994：用户尝试关闭内容片段时，关闭按钮会计时。
+* SITES-20029：内容片段版本在关闭后立即创建，而不更改内容。
+* SITES-21316：片段预览：由于代码从SITES-11727更改，预览失败。
+* SITES-20023：文件上传不适用于多字段中的远程（新一代资产）资产。
+* ASSETS-37611：为未发布的资产触发“请求完成移动操作”工作流。
+* CQ-4357278：如果getRequestBodyType返回空值，则DispatcherServlet会引发NPE。
+* CQ-4357279：当请求没有pathInfo时，请求处理失败。
+* SITES-20496： [Xwalk] 在网站管理员中选择电子表格时没有属性选项。
+* Forms-13827：在自适应Forms规则编辑器中，WHEN操作当前不支持带日期选取器的不同类型字段。
+* Forms-13786：在自适应Forms规则编辑器中，拖放功能不适用于自定义函数。
+* Forms-13587：在自适应Forms编辑器中，基于核心组件的自适应Forms的设备模拟器功能无法正常运行。
+* Forms-14376当用户按下“重置”按钮时，如果静态文本标记为未绑定，则会导致控制台错误。
+* Forms-13801：即使禁用了条款和条件组件，对应的复选框也会保持启用状态。
+* Forms-11952：提交表单时，表单生成的提交URL以/content/开头，而不是/portale/，这会错误路由请求。 这样可防止请求到达预期服务器。
+* Forms-13616：日期选取器将当前日期显示为晚一天，这可能是由于时区问题，并且由于这种不一致性和额外的显示模式问题，难以设置正确的日期格式。
+* Forms-13829：清除并重新选择某个选择后，由模拟单选按钮功能规则控制的下拉菜单无法正确填充。 所需的行为是让单个复选框充当单选按钮，一次只允许一个选项，并允许取消选择所有选项。
+* Forms-14244：在基于XDP的自适应表单中，复选框上嵌入了脚本，此类复选框之后的元素不会执行脚本。
+* Forms-14267：用户在开发、暂存和生产环境中发送API请求时，遇到一致的超时错误。 这些请求与生成PDF相关，有时使用数据绑定预填充数据。 该问题会导致挂起的进程，该进程最终会超时，但在出错后重试时会成功。
+* Forms-11589：对于仅具有AEM Forms解决方案（没有任何其他解决方案）的用户，前端管道无法正常工作。
+* Forms-13896：在DoR（记录文档）输出中，日期和数字以阿拉伯语显示，无论输入数据是否使用公历数字合并。
 
-### 已知问题 {#known-issues-16145}
+### 已知问题 {#known-issues-16357}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-16145}
-
-* [在 Adobe Developer Console 中弃用 JWT 凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-
-* 自 2024 年 5 月 1 日起，Adobe Dynamic Media 将终止对以下内容的支持：
-
-   * SSL（安全套接字层）2.0
-   * SSL 3.0
-   * TLS（传输层安全性）1.0 和 1.1
-   * TLS 1.2 中的以下弱密码：
-      * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-      * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-      * `TLS_RSA_WITH_AES_256_GCM_SHA384`
-      * `TLS_RSA_WITH_AES_256_CBC_SHA256`
-      * `TLS_RSA_WITH_AES_256_CBC_SHA`
-      * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-      * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-      * `TLS_RSA_WITH_AES_128_GCM_SHA256`
-      * `TLS_RSA_WITH_AES_128_CBC_SHA256`
-      * `TLS_RSA_WITH_AES_128_CBC_SHA`
-      * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-      * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-      * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-      * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
-
+### 已弃用的功能和 API {#deprecated-16357}
 
 若要了解 AEM as a Cloud Service 中已弃用或移除的功能，请参阅[已弃用和已移除的功能和 API。](/help/release-notes/deprecated-removed-features.md)
 
-### 嵌套的技术 {#embedded-tech-16145}
+### 嵌套的技术 {#embedded-tech-16357}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
 | AEM Oak | 1.62.0 | [Oak API 1.62.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
 | AEM SLING API | 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | 1.4.20-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
-| AEM 核心组件 | 2.24.6 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
+| AEM HTL | 1.4.22-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
+| AEM 核心组件 | 2.25.4 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
