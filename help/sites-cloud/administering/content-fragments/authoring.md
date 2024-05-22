@@ -4,9 +4,9 @@ description: 了解如何为内容片段创作内容，并根据用途创建该�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: fc97a51bb20bbf0d438d0f27a2246467a480eb71
+source-git-commit: ec0129b0087e86f50c6c1e65d5445693e63278e0
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2668'
 ht-degree: 78%
 
 ---
@@ -196,7 +196,7 @@ ht-degree: 78%
 
    ![查看内容片段中的生成变体](assets/cfm-generate-variations5.png)
 
-您可以了解有关生成变体的更多信息 [此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
+您可以了解有关生成变体的更多信息 [此处](/help/generative-ai/generate-variations.md).
 
 ### 删除变体 {#delete-variation}
 
