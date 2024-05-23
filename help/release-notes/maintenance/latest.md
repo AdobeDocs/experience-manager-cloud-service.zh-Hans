@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b6fe2a58bb16c70cef48426ec49dda474195c023
+source-git-commit: d107f40c4bc43837db9d8fab3d06627d9e930620
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1574'
 ht-degree: 9%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 9%
 * SITES-20238： [RTC] Pfizer MVP — 添加CF API以将CF路径解析为ID，反之亦然。
 * SITES-21043： [CF][launches] Cloud Service的侧端口性能改进。
 * SITES-21044： [CF][launches] 将侧端口异步编辑有效负载实现用于Cloud Service。
-* Forms-9606：以前，在自适应Forms编辑器中，只有字段值可以映射到调用服务的响应。 现在，作者能够将字段的任何属性映射到调用服务响应。
 * Forms-7483： AEM Forms JSON架构解析器现在支持JSON架构(2020-12)。
 * Forms-13209：包含一个处理程序，用于覆盖自适应Forms默认提交成功和提交失败处理程序。 您可以通过自适应Forms规则编辑器配置这些处理程序。
 * Forms-13612：屏幕阅读器现在可阅读基于核心组件的自适应Forms中的错误消息、简短描述和长篇描述。 此外，还增加了支持功能，可在表单包含错误且无法提交时使自适应表单输入失效。
