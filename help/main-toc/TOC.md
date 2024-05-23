@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37afa8f8233154999bf3e332fb91d8e19f5c0f56
+source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
 workflow-type: tm+mt
-source-wordcount: '4971'
+source-wordcount: '4976'
 ht-degree: 99%
 
 ---
@@ -192,7 +192,7 @@ ht-degree: 99%
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全注意事项](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [为AEMas a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [为 AEM as a Cloud Service 设置 IMS 集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling Service 用户映射和服务用户定义的最佳实践](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + 上线 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
@@ -654,8 +654,8 @@ ht-degree: 99%
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [在自适应表单中使用hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [在自适应表单中使用Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [在自适应表单中使用 hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [在自适应表单中使用 Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [创建和使用自定义函数](/help/forms/create-and-use-custom-functions.md)
@@ -678,8 +678,8 @@ ht-degree: 99%
             + [使用延迟加载改进大型表单的性能](/help/forms/lazy-loading-adaptive-forms.md)
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
             + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
-            + [在自适应表单中使用Captcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [在自适应表单中使用Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [在自适应表单中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [在自适应表单中使用 Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
             + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
             + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
@@ -727,6 +727,7 @@ ht-degree: 99%
    + 交易报告 {#using-communications}
       + [交易报告计费 API](/help/forms/transaction-reports-billable-apis.md)
       + [记录自定义实施的交易](/help/forms/record-transaction-custom-implementation.md)
+      + [了解您的价值实现功能板](/help/forms/aem-forms-value-realization-dashboard.md)
    + 开发人员 API 参考 {#aem-forms-developer-api-reference}
       + [自适应表单 API 参考](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [AEM Forms Cloud Service 通信 API 参考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
