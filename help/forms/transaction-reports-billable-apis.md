@@ -3,10 +3,10 @@ title: 交易报告计费 API
 description: 作为交易入账的所有API的列表
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
+source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 8%
+source-wordcount: '1438'
+ht-degree: 19%
 
 ---
 
@@ -34,6 +34,46 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
 
 * **呈现的文档：** 通过组合模板和数据、对文档进行数字签名或认证、使用用于文档服务的可计费文档服务API或将文档从一种格式转换为另一种格式来生成文档，均被视为已渲染的文档。
 
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_submission_graph_en"
+>title="表单提交跟踪器"
+>abstract="此图形表示特定时间段内自适应表单提交的计数。 提交数量增加可能表明表单越来越受欢迎，或者需要从用户那里收集更多数据。 **注意：** 图表提供特定于当前实例的数据，使您能够快速分析趋势并做出明智的决策。 对于其他实例的提交数据，只需访问相应实例的仪表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_conversions_graph_en"
+>title="文档演绎版跟踪器"
+>abstract="此图表表示特定时间段内的文档呈现形式的计数。 **注意：** 图表提供特定于当前实例的数据，使您能够快速分析趋势并做出明智的决策。 对于其他实例的提交数据，只需访问相应实例的仪表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_newForms_graph_en"
+>title="新表单追踪器"
+>abstract="该图提供有关特定时间段内新创建的表单数量的信息。 **注意：** 该图提供了特定于当前AEM Forms创作实例的数据。 要查看其他实例的数据，请访问相应实例的仪表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
+>title="已发布的表单跟踪器"
+>abstract="该图提供了有关在特定时间段内已成功发布的表单数量的信息。 **注意：** 该图提供了特定于当前AEM Forms发布实例的数据。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
+>title="生成表单的平均持续时间"
+>abstract="该图显示了创建表单所需的平均时间。图表上的每个条形代表一个特定的表单，条形的高度表示在该时间范围内创建表单所需的平均持续时间。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
+>title="创建表单的平均持续时间"
+>abstract="该图形显示创建和发布表单所需的平均时间，该时间从打开表单进行编辑的第一天开始计算。**注意：** 该图提供了特定于当前AEM Forms创作实例的数据。 要查看其他实例的数据，请访问相应实例的仪表板。"
+
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_formFragments_graph_en"
+>title="Forms片段跟踪器"
+>abstract="此图表可帮助您查看在表单中使用的表单片段数量。 **注意：** 该图提供了特定于当前AEM Forms发布实例的数据。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
+>title="表单片段平均时间跟踪器"
+>abstract="该图形显示创建表单片段所需的平均时间，该时间从打开表单片段进行编辑的第一天开始计算。**注意：** 该图提供了特定于当前AEM Forms发布实例的数据。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
 
 
 <!-- 
