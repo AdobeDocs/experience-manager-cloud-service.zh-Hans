@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: 543e9b78b4bdc11c49f79c6baec79615c5f7f91b
+source-git-commit: 613adeee805069155881b1a26b247c3dec3eb593
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 38%
+source-wordcount: '867'
+ht-degree: 22%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 38%
 
 该仪表板是您了解表单使用情况的窗口。 以下是关键部分的细目：
 
-### 随时间变化的表单活动（折线图）：
+### 随时间变化的表单活动：
 
 * **表单提交**：查看您填写表单的频率趋势。
 * **文档演绎版**：跟踪随时间呈现的文档数。
 * **Forms已创建和发布**：监控构建和部署新表单的速率。
 * **表单创建和发布时间**：分析创建和发布表单的平均时间以确定需要改进的方面。
 
-### 片段用法（条形图）：
+### 片段用途：
 
 * **正在使用的表单片段的数量**：查看当前有多少可重用表单部分合并到活动表单中。
 * **重复使用的表单片段的数量**：衡量这些片段在不同表单中的使用频率。
@@ -42,6 +42,26 @@ ht-degree: 38%
 * **优化表单创建**：通过识别瓶颈缩短创建时间。 探索预建模板或简化工作流。
 * **提升片段重复使用**：鼓励协作和可重用片段的可发现性。 组织良好的片段库可以显着提高效率。
 
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_submission_graph_en"
+>title="表单提交跟踪器"
+>abstract="此图形表示特定时间段内自适应表单提交的计数。 提交数量增加可能表明表单越来越受欢迎，或者需要从用户那里收集更多数据。 **注意：** 图表提供特定于当前实例的数据，使您能够快速分析趋势并做出明智的决策。 对于其他实例的提交数据，只需访问相应实例的仪表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_conversions_graph_en"
+>title="文档演绎版跟踪器"
+>abstract="此图表表示特定时间段内的文档呈现计数。 **注意：** 图表提供特定于当前实例的数据，使您能够快速分析趋势并做出明智的决策。 对于其他实例的提交数据，只需访问相应实例的仪表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_newForms_graph_en"
+>title="新表单追踪器"
+>abstract="该图提供有关特定时间段内新创建的表单数量的信息。 **注意：** 该图提供了特定于当前AEM Forms创作实例的数据。 要查看其他实例的数据，请访问相应实例的仪表板。"
+
+>[!CONTEXTUALHELP]
+>id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
+>title="已发布的表单跟踪器"
+>abstract="该图提供了有关在特定时间段内已成功发布的表单数量的信息。 **注意：** 该图提供了特定于当前AEM Forms发布实例的数据。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
+
 
 ## 将见解转化为行动 {#turning-insights-into-actions}
 
@@ -53,26 +73,6 @@ ht-degree: 38%
 
 通过分析这些趋势，您可以构建更好的表单、节省创建时间并利用可重用组件。 这将转化为更流畅的工作流程、更快的用户体验，并最终带来更高的投资回报。
 
-
-## 其他提示 {#additional-tips}
-
-* **设置目标：** 确定要用表单实现的目标。 是增加数据收集，加快商机开发，还是提高客户满意度？ 了解您的目标将指导您分析仪表板。
-* **定期审查：** 安排定期通过仪表板进行签入，以跟踪进度并确定需要改进的新领域。
-* **试验并优化：** 可尝试不同的表单设计和片段使用。 仪表板将帮助您衡量更改的有效性。
-
-记住，这个仪表板是你的盟友！ 通过有效地利用它，您可以将表单从简单的数据收集工具转换为战略性资产，从而推动您和您的业务取得成功。
-
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_submission_graph_en"
->title="表单提交跟踪器"
->abstract="此图表表示一段时间内自适应表单提交的计数。 提交数量增加可能表明表单越来越受欢迎，或者需要从用户那里收集更多数据。 该图形提供特定于当前实例的数据，使您能够快速分析趋势并做出明智的决策。对于其他实例的提交数据，只需访问相应实例的仪表板。"
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_conversions_graph_en"
->title="文档演绎版跟踪器"
->abstract="此图表表示一段时间内文档呈现的计数。 提交数量增加可能表明表单越来越受欢迎，或者需要从用户那里收集更多数据。 该图形提供特定于当前实例的数据，使您能够快速分析趋势并做出明智的决策。对于其他实例的提交数据，只需访问相应实例的仪表板。"
-
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="生成表单的平均持续时间"
@@ -81,24 +81,24 @@ ht-degree: 38%
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="创建表单的平均持续时间"
->abstract="该图表显示创建和发布表单所需的平均时间，从打开表单进行编辑的第一天开始测量。该图表提供特定于当前 AEM Forms Author 实例的数据。要查看其他实例的数据，请访问相应实例的仪表板。"
+>abstract="该图形显示创建和发布表单所需的平均时间，该时间从打开表单进行编辑的第一天开始计算。**注意：** 该图提供了特定于当前AEM Forms创作实例的数据。 要查看其他实例的数据，请访问相应实例的仪表板。"
 
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_newForms_graph_en"
->title="新表单追踪器"
->abstract="该图形提供有关特定时间段内新创建表单的数量或频率的信息。该图形提供特定于当前 AEM Forms 创作实例的数据。要查看其他实例的数据，请访问相应实例的仪表板。"
-
->[!CONTEXTUALHELP]
->id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
->title="已发布的表单跟踪器"
->abstract="该图形提供有关特定时间段内已成功发布的表单的数量或频率的信息。该图形提供特定于当前 AEM Forms 发布实例的数据。要查看其他实例的转化数据，请访问相应实例的仪表板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
 >title="Forms片段跟踪器"
->abstract="此图形可以帮助您了解人们在表单中使用了多少表单片段。该图形提供特定于当前 AEM Forms 发布实例的数据。要查看其他实例的转化数据，请访问相应实例的仪表板。"
+>abstract="此图表可帮助您查看在表单中使用的表单片段数量。 **注意：** 该图提供了特定于当前AEM Forms发布实例的数据。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="表单片段平均时间跟踪器"
->abstract="该图形显示创建表单片段所需的平均时间，该时间从打开表单片段进行编辑的第一天开始计算。该图形提供特定于当前 AEM Forms 发布实例的数据。要查看其他实例的转化数据，请访问相应实例的仪表板。"
+>abstract="该图形显示创建表单片段所需的平均时间，该时间从打开表单片段进行编辑的第一天开始计算。**注意：** 该图提供了特定于当前AEM Forms发布实例的数据。 要查看其他实例的转化数据，请访问相应实例的仪表板。"
+
+
+## 其他提示 {#additional-tips}
+
+* **设置目标：** 确定要用表单实现的目标。 是增加数据收集，加快商机开发，还是提高客户满意度？ 了解您的目标将指导您分析仪表板。
+* **定期审查：** 安排定期通过仪表板进行签入，以跟踪进度并确定需要改进的新领域。
+* **试验并优化：** 可尝试不同的表单设计和片段使用。 仪表板将帮助您衡量更改的有效性。
+
+记住，这个仪表板是你的盟友！ 通过有效地利用它，您可以将表单从简单的数据收集工具转换为战略性资产，从而推动您和您的业务取得成功。
