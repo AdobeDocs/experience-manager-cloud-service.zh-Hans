@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
+source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 2%
@@ -567,7 +567,7 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 
 ## 关于Dynamic Media中对视频的多个字幕和音轨支持{#about-msma}
 
-借助Dynamic Media中的多个字幕和音轨功能，您可以轻松地将多个字幕和音轨添加到主视频中。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者还可以在用户界面中的一个选项卡管理字幕和音轨。
+借助Dynamic Media中的多个字幕和音轨功能，您可以轻松地将多个字幕和音轨添加到主视频中。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
 ![Dynamic Media中的“字幕和音轨”选项卡，以及显示视频的上传.VTT字幕文件和上传的.MP3音轨文件的表。](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
@@ -642,7 +642,7 @@ WebVTT和AdobeVTT格式支持添加的字幕和字幕。 此外，添加的MP3�
      | 文件名 | 默认文件名是从原始文件名派生的。 只能在上传时更改文件名，以后不能更改。 文件名字符要求与AEM Assets相同。<br>其他音轨文件或字幕文件不能使用相同的文件名。 |
      | 语言 | 选择音轨的语言。 |
      | 类型 | 选择您正在使用的音轨类型。<br>**原有**  — 最初附加到视频的音轨，表示为 `[Original]` 在标签中带有 `English` 默认选定的语言。 同时 **[!UICONTROL 标签]** 和 **[!UICONTROL 语言]** 可以在以下位置更改： **[!UICONTROL 编辑音轨]** 对话框，如果重新处理主视频，则默认使用原始值。<br>**标准**  — 用于原始语言以外的语言的附加音频轨道。<br>**音频描述**  — 一个音频轨道，其中还包括视频中非语言操作和手势的描述性叙述，使视障人士更容易访问内容。 |
-     | 标签 | 在中显示为音轨名称的文本 **[!UICONTROL 选择音频或标题]** 媒体播放器中的弹出列表。 该标签是客户看到的与音轨对应的内容。 例如，`English [Original]`。附加到视频的音频标签设置为 `[Original|` 默认情况下。 |
+     | 标签 | 在中显示为音轨名称的文本 **[!UICONTROL 选择音频或标题]** 媒体播放器中的弹出列表。 该标签是客户看到的与音轨对应的内容。 例如，`English [Original]`。附加到视频的音频标签设置为 `[Original]` 默认情况下。 |
 
      您可以稍后更改或编辑此音频轨道元数据（如有必要）。 发布视频时，这些详细信息会反映在已发布视频的公共URL上。
 
@@ -815,8 +815,6 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
    | 资源 | 指定正在下载的文件数以及所有选定文件的组合总大小。 取消选择此选项会调暗（关闭） **[!UICONTROL 下载]** 按钮，阻止您下载任何文件。 |
 1. 选择 **[!UICONTROL 下载]**.
 1. 发布视频。 请参阅 [发布资源](publishing-dynamicmedia-assets.md).
-
-
 
 
 
