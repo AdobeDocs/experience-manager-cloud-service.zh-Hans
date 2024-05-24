@@ -4,9 +4,9 @@ description: 了解如何为自适应表单添加新区域设置。
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2028'
 ht-degree: 2%
 
 ---
@@ -270,7 +270,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 
 
-### 5.向词典添加区域设置支持
+### 向字典添加区域设置支持
 
 此步骤仅适用于除以下常用支持的区域设置之外的其他区域设置：英语(en)、德语(de)、西班牙语(es)、法语(fr)、意大利语(it)、巴西葡萄牙语(pt-br)、中文（简体 — zh_cn）、中文（繁体 — zh_tw）、日语(ja)和韩语(ko_kr)。
 
@@ -350,7 +350,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       通过以下方式触发代码部署 [现有全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). 这会使用新的区域设置支持自动构建和部署更新的代码。
 
-      如果尚未设置管道，请参阅上的指南 [如何设置AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)..
+      如果尚未设置管道，请参阅上的指南 [如何设置AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## 预览具有新添加区域设置的自适应表单
@@ -358,8 +358,6 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 以下步骤将指导您预览具有新添加区域设置的自适应表单：
 
 1. 登录到您的AEM Formsas a Cloud Service实例。
-
-1. 找到“Forms”部分，然后导航到“Forms和文档”。
 1. 转到 **Forms** >  **Forms和文档**.
 1. 选择自适应表单并单击 **添加字典** 和 **将字典添加到翻译项目** 出现向导。
 1. 指定 **项目标题** 并选择 **目标语言** 从 **将字典添加到翻译项目** 向导。
@@ -367,20 +365,6 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 1. 转到 **Forms** >  **Forms和文档**.
 1. 选择自适应表单，然后选择 **HTML预览** 选项。
 1. 附加 `&afAcceptLang=<locale-name>` 到预览URL并按return键。 替换 `<locale-name>` 实际区域设置代码。 自适应表单会以指定的区域设置显示。
-
-
-## 预览具有新添加区域设置的自适应表单 {#use-added-locale-in-af}
-
-执行以下步骤以预览具有新添加区域设置的自适应：
-
-1. 登录到您的AEM Formsas a Cloud Service实例。
-1. 转到 **Forms** >  **Forms和文档**.
-1. 选择自适应表单并单击 **添加字典** 和 **将字典添加到翻译项目** 出现向导。
-1. 指定 **项目标题** 并选择 **目标语言** 从 **将字典添加到翻译项目** 向导。
-1. 单击 **完成** 并执行创建的翻译项目。
-1. 选择自适应表单并单击 **HTML预览**.
-1. 添加 `&afAcceptLang=<locale-name>` 在自适应表单的URL中。
-1. 刷新页面，自适应表单在指定的区域设置中呈现。
 
 ## 支持新本地化的最佳实践 {#best-practices}
 
@@ -393,12 +377,11 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
    * **人工翻译**：对于人工翻译工作流，请使用位于的UI导出字典 `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. 更新新字段的词典并上传修订版本。
 
-## 查看更多
-
-* [为自适应Forms生成记录文档](/help/forms/generate-document-of-record-core-components.md)
-* [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## 另请参阅 {#see-also}
 
 {{see-also}}
+
+* [为自适应Forms生成记录文档](/help/forms/generate-document-of-record-core-components.md)
+* [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
