@@ -1,16 +1,17 @@
 ---
 title: 在“资源”视图中管理报告
 description: 访问资源视图的报表部分中的数据，即可评估产品和功能使用情况并了解关键成功量度。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
+source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 92%
+source-wordcount: '884'
+ht-degree: 80%
 
 ---
 
 # 管理报表 {#manage-reports}
 
-管理员可通过资源报表深入了解 Adobe Experience Manager Assets 视图环境的活动。这些数据提供关于用户如何与内容和产品进行交互的有用信息。所有用户都可以访问 Insights 仪表板，分配给管理员产品配置文件的用户可以创建用户定义的报告。
+通过资源报表，管理员可了解Adobe Experience Manager Assets视图环境的活动。 这些数据提供关于用户如何与内容和产品进行交互的有用信息。所有用户都可以访问 Insights 仪表板，分配给管理员产品配置文件的用户可以创建用户定义的报告。
 
 ## 访问报告 {#access-reports}
 
@@ -38,26 +39,30 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 单击可在左侧导航窗格中找到的&#x200B;**[!UICONTROL 见解]**&#x200B;以查看以下自动生成的图表：
 
-![见解](assets/insights.png)
-
 * **下载**：过去30天或12个月从Assets视图环境下载的资产数量，用折线图表示。
+  ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
 
 * **上传**：过去30天或12个月内上传到Assets视图环境的资产数量，用折线图表示。
-
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **存储使用情况**：使用条形图表示的Assets视图环境的存储使用情况（以字节为单位）。
-
-<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **热门搜索**：以表格格式查看过去 30 天或 12 个月内在资源视图环境中搜索最多的术语以及这些术语的搜索次数。
-
+  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+
+* **按大小划分的资源计数：** 将您的资产视图环境中的资产总数划分为不同的大小范围，并突出显示每个大小范围内的资产计数和百分比，使用圆环图表示。
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **按资源类型列出的资源计数：** 对“资产视图”环境中的资产总数进行分段，根据资产的文件类型突出显示资产的计数和百分比，用圆环图表示。
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## 创建下载报告 {#create-download-report}
 
@@ -77,7 +82,7 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
    >
    > 资源视图将所有本地时区转换为协调世界时 (UTC)。
 
-1. 在[!UICONTROL 列]选项卡中，选择需要在该报告中显示的列名称。
+1. 在 [!UICONTROL 列] 选项卡中，选择要显示在报告中的列名。
 
 1. 单击&#x200B;**[!UICONTROL 创建]**。
 
