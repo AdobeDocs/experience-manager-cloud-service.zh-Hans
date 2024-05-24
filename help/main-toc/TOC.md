@@ -1178,7 +1178,7 @@ ht-degree: 99%
       + [使用旧版 Dispatcher 工具进行验证和调试](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [在 CDN 上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [边缘侧包括](/help/implementing/dispatcher/edge-side-includes.md)
+      + [Edge 端包括](/help/implementing/dispatcher/edge-side-includes.md)
       + [配置 CDN 错误页面](/help/implementing/dispatcher/cdn-error-pages.md)
       + [AEM as a Cloud Service 中的缓存](/help/implementing/dispatcher/caching.md)
 + 连接器 {#connectors}
