@@ -1,13 +1,13 @@
 ---
-title: 如何为自适应表单启用Adobe Analytics？
-description: Experience Cloud设置自动化有助于将Adobe Analytics连接到自适应表单，以跟踪有关访客交互和参与情况的见解。
+title: 如何启用Adobe Analytics以进行自适应表单的快速跟踪分析？
+description: Experience Cloud设置自动化帮助Adobe Analytics连接到自适应表单，以便快速跟踪关于访客交互和参与的分析见解。
 keywords: 使用Experience Cloud设置自动化为自适应表单启用Adobe Analytics，在Forms中启用Adobe Analytics，在自适应Forms中启用Adobe Analytics，Forms Analytics集成、Forms和Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1588'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 | AEM as a Cloud Service | 本文 |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
-Experience Cloud设置自动化有助于将Adobe Analytics连接到Adaptive Forms，后者有助于跟踪和分析用户与您的表单的交互，并提供有关访客交互和参与情况的见解。 Experience Cloud设置自动化还有助于监控表单性能，其中涉及评估完成时间和流失点等指标。 此分析有助于优化表单以获得更好的用户体验，同时根据登录状态（例如，匿名用户）区分用户行为以确定一般趋势和模式。
+“Experience Cloud设置自动化”有助于将Adobe Analytics连接到Adaptive Forms，后者有助于快速跟踪分析用户与您的表单的交互，并提供有关访客交互和参与情况的洞察。 Experience Cloud设置自动化还有助于监控表单性能，其中涉及评估完成时间和流失点等指标。 此分析有助于优化表单以获得更好的用户体验，同时根据登录状态（例如，匿名用户）区分用户行为以确定一般趋势和模式。
 
 ## 将Adobe Analytics与自适应Forms集成的优势 {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -29,7 +29,7 @@ Experience Cloud设置自动化有助于将Adobe Analytics连接到Adaptive Form
 
 ## 自适应Forms使用量度的范围 {#scope-of-adaptive-forms-usage-metrics}
 
-Adobe Analytics提供了一系列全面的自适应Forms性能指标，旨在提供有关表单使用的宝贵见解。 这些指标包括：
+Adobe Analytics提供了一系列全面的自适应Forms性能指标，旨在提供有关表单使用情况的宝贵见解，并提供快速跟踪分析。 这些指标包括：
 
 * **表单呈现、表单提交、验证错误和独特访客**，以便您评估表单的使用情况和有效性。
 
@@ -52,7 +52,7 @@ Adobe Analytics提供了一系列全面的自适应Forms性能指标，旨在提
 
 有关每个指标的详细信息，请访问 [查看和了解AEM Forms Analytics报表](/help/forms/view-understand-aem-forms-analytics-reports.md)
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 <!--
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
@@ -62,7 +62,7 @@ Experience Cloud设置自动化需要 **Adobe Analytics许可证**， **数据�
 
 如果您拥有的有效许可证 **Adobe Analytics** 和 **Experience Manager Forms**，并且您已经与集成 **数据收集(以前称为Adobe Launch)**，您应该在开发人员控制台中验证其可用性。
 
-要验证上述内容是否可用于您的Formsas a Cloud Service环境，请访问 [开发人员控制台](https://developer.adobe.com/console/projects)，导航到项目并使用项目id — 环境id搜索项目，例如，使用URL搜索环境 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`，项目id — 环境id为 `p45913-e175111`. 确保列出了Experience Cloud设置自动化、Adobe Analytics和Experience Platform LaunchAPI。 如果列出了这些扩展，则可为自适应Forms启用Adobe Analytics。
+要验证上述内容是否可用于您的Formsas a Cloud Service环境，请访问 [开发人员控制台](https://developer.adobe.com/console/projects)，导航到项目并使用项目id — 环境id搜索项目，例如，使用URL搜索环境 `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`，项目id — 环境id为 `p45913-e175111`. 确保列出了Experience Cloud设置自动化、Adobe Analytics和Experience Platform LaunchAPI。 如果列出了这些参数，则可启用Adobe Analytics以进行自适应Forms的快速跟踪分析。
 
 ![Forms Analytics集成先决条件](assets/analytics-aem.png){width="100%"}
 
@@ -76,7 +76,7 @@ Experience Cloud设置自动化需要 **Adobe Analytics许可证**， **数据�
 
 ## 配置Adobe Analytics {#configure-adobe-analytics}
 
-执行以下列出的步骤可为自适应Forms启用和配置Adobe Analytics：
+执行以下列出的步骤来启用和配置Adobe Analytics，以便快速跟踪您的自适应Forms分析：
 
 * [为基于基础组件的自适应Forms启用Adobe Analytics](#integrate-adobe-analytics-with-aem-forms-for-foundation-component)
 * [基于核心组件为自适应Forms启用Adobe Analytics](#integrate-adobe-analytics-with-aem-forms-for-core-components)
@@ -139,15 +139,15 @@ Experience Cloud设置自动化需要 **Adobe Analytics许可证**， **数据�
 
 ## 在站点中启用Analytics到自适应Forms {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
 
-在AEM Sites中为自适应表单配置Analytics有助于跟踪用户在站点页面中的表单交互和表单提交。 通过在您的站点Forms中无缝集成Analytics，您可以获得关于用户行为、转化率和表单中需要改进的领域的宝贵见解。
+在AEM Sites中为自适应表单配置Fast Track Analytics有助于跟踪用户交互和表单在Sites页面中的表单提交。 通过在您的站点Forms中无缝集成Analytics，您可以获得关于用户行为、转化率和表单中需要改进的领域的宝贵见解。
 
-### 前提条件 {#Prerequisites-to-connect-forms-analytics-to-sites}
+### 先决条件 {#Prerequisites-to-connect-forms-analytics-to-sites}
 
 要在Adaptive Forms for AEM Sites中连接并启用Analytics，您必须确保AEM Sites具有活动的Adobe Analytics。
 
 ### 在站点中连接自适应Forms以启用Analytics {#Connect-analytics-to-adaptive-forms}
 
-要在AEM Sites页面中连接自适应表单以启用Analytics，请包含 `customfooterlibs` 使用AEM原型/Git存储库和部署管道将客户端库移至AEM Sites页面。
+要在AEM Sites页面中连接自适应表单以启用Analytics以进行快速跟踪分析，请包括 `customfooterlibs` 使用AEM原型/Git存储库和部署管道将客户端库移至AEM Sites页面。
 
 1. 打开您的 [AEM Forms原型或克隆的Git存储库](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 在文本编辑器中编辑项目。 例如，Visual Studio Code。
 
