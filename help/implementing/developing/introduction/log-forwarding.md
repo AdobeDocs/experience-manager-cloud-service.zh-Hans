@@ -1,12 +1,10 @@
 ---
 title: AEM的日志转发as a Cloud Service
 description: 了解如何在AEMas a Cloud Service中将日志转发给Splunk和其他日志记录供应商
-hide: true
-hidefromtoc: true
-source-git-commit: d41390696383f8e430bb31bd8d56a5e8843f1257
+source-git-commit: 13696ffde99114e5265e5c2818cb3257dd09ee8c
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 3%
+source-wordcount: '718'
+ht-degree: 2%
 
 ---
 
@@ -64,11 +62,47 @@ ht-degree: 3%
          index: "AEMaaCS"
    ```
 
-   出于未来兼容性原因，必须包含默认节点。
+   此 **种类** 参数应设置为LogForwarding版本应设置为架构版本，即1。
 
-   kind参数应设置为LogForwarding版本应设置为架构版本，即1。
+   配置中的令牌(如 `${{SPLUNK_TOKEN}}`)表示不应存储在Git中的密钥。 相反，将它们声明为Cloud Manager  [环境变量](/help/implementing/cloud-manager/environment-variables.md) 类型 **密码**. 确保选择 **全部** 作为“已应用服务”字段的下拉值，因此可以将日志转发到创作层、发布层和预览层。
 
-   配置中的令牌(如 `${{SPLUNK_TOKEN}}`)表示不应存储在Git中的密钥。 相反，将它们声明为Cloud Manager  [环境变量](/help/implementing/cloud-manager/environment-variables.md) 类型为“机密”。 确保选择 **全部** 作为“已应用服务”字段的下拉值，因此可以将日志转发到创作层、发布层和预览层。
+   通过添加其他( AEM和apache日志)，可以在cdn日志和其他所有日志（和apache日志）之间设置不同的值 **cdn** 和/或 **aem** 之后阻止 **默认** 块，其中属性可以覆盖中定义的属性。 **默认** 块；仅需要已启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          cdn:
+            enabled: true
+            token: "${{SPLUNK_TOKEN_CDN}}"
+            index: "AEMaaCS_CDN"   
+   ```
+
+   另一种方案是禁用CDN日志的转发或其他所有内容(AEM和apache日志)。 例如，要仅转发CDN日志，可以配置以下内容：
+
+   ```
+      kind: "LogForwarding"
+      version: "1"
+      metadata:
+        envTypes: ["dev"]
+      data:
+        splunk:
+          default:
+            enabled: true
+            host: "splunk-host.example.com"
+            token: "${{SPLUNK_TOKEN}}"
+            index: "AEMaaCS"
+          aem:
+            enabled: false
+   ```
 
 1. 对于RDE以外的环境类型（当前不支持），请在Cloud Manager中创建目标部署配置管道。
 
@@ -96,10 +130,17 @@ data:
       
 ```
 
-注意事项：
+SAS令牌应该用于身份验证。 它应该从共享访问签名页面而不是共享访问令牌页面创建，并且应该使用以下设置进行配置：
 
-* 使用SAS令牌进行身份验证，该令牌应具有最小验证期。
-* SAS令牌应在帐户页面上创建，而不是在容器页面上创建。
+* 允许的服务：必须选择Blob
+* 允许的资源：必须选择对象
+* 允许的权限：必须选择“写入”、“添加”、“创建”
+* 有效的开始和到期日期/时间。
+
+以下是SAS令牌配置示例屏幕截图：
+
+![Azure Blob SAS令牌配置](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
 
 ### Datadog {#datadog}
 
