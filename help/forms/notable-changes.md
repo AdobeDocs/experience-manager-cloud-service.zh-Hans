@@ -5,14 +5,14 @@ exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1325'
 ht-degree: 1%
 
 ---
 
-# 对现有Adobe Experience Manager 6.5 Forms用户的显着更改  {#notable-changes-for-existing-AEM-Forms-users}
+# AEM 6.5 Forms （AMS和内部部署）与AEM Forms as a Cloud Service (AEM CS Forms)之间的区别 {#notable-changes-for-existing-AEM-Forms-users}
 
 与Adobe Experience Manager Forms On-Premise和相比，Adobe Experience Manager Formsas a Cloud Service对现有功能进行了一些显着更改 [!DNL Adobe-Managed Service] 环境。 主要差异列示如下：
 
@@ -122,7 +122,7 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 * [从AEM Forms（内部部署和AMS环境）迁移到AEM Formsas a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
 * [在AEM Sites中添加或创建自适应Forms页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [创建自适应表单（核心组件）](/help/forms/creating-adaptive-form-core-components.md)
-* [AEM Formsas a Cloud Service简介](/help/forms/home.md)
+* [AEM Forms as a Cloud Service 简介](/help/forms/home.md)
 * [设置本地开发环境和初始开发项目](/help/forms/setup-local-development-environment.md)
 
 
