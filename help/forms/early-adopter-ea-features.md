@@ -3,15 +3,14 @@ title: 当前早期采用者功能 [!DNL Adobe Experience Manager Forms] as a Cl
 description: 当前早期采用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
 Role: developer, user
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1599'
 ht-degree: 6%
 
 ---
 
 # AEM Forms率先采用者计划
-
 
 AEM Forms早期采用者计划为您提供了一个独一无二的机会，让您能够抢在其他人之前独享尖端功能并帮助塑造其开发形态。 通过此计划，您可以：
 
@@ -21,7 +20,7 @@ AEM Forms早期采用者计划为您提供了一个独一无二的机会，让�
 
 ## 如何加入率先采用者计划？
 
-如果您有兴趣加入我们的早期采用者计划以进行任何早期采用者创新，只需将官方地址的电子邮件发送到aem-forms-ea@adobe.com以请求获取访问权限。 您可以请求访问所有或任何特定的创新。
+如果您有兴趣加入我们的早期采用者计划以进行任何早期采用者创新，只需将官方地址中的电子邮件发送至 `aem-forms-ea@adobe.com` 以请求访问权限。 您可以请求访问所有或任何特定的创新。
 
 
 ## 率先采用者创新
