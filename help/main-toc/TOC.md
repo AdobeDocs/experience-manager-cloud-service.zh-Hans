@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 4c2f0a230c259f5d5af08158707ebea016c431e6
 workflow-type: tm+mt
-source-wordcount: '4982'
+source-wordcount: '4961'
 ht-degree: 99%
 
 ---
@@ -1079,18 +1079,19 @@ ht-degree: 99%
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
       + Universal Editor {#universal-editor}
-         + [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)
-         + [Universal Editor 架构](/help/implementing/universal-editor/architecture.md)
-         + [SecurBank 示例应用程序](/help/implementing/universal-editor/securbank.md)
-         + [开始使用 AEM 中的 Universal Editor](/help/implementing/universal-editor/getting-started.md)
-         + [Universal Editor 开发人员概述](/help/implementing/universal-editor/developer-overview.md)
+         + [简介](/help/implementing/universal-editor/introduction.md)
+         + [用例](/help/implementing/universal-editor/use-cases.md)
          + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
          + [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)
-         + [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md)
-         + [使用 Universal Editor 进行本地 AEM 开发](/help/implementing/universal-editor/local-dev.md)
-         + [Universal Editor 调用](/help/implementing/universal-editor/calls.md)
+         + [SecurBank 示例应用程序](/help/implementing/universal-editor/securbank.md)
          + [事件](/help/implementing/universal-editor/events.md)
-         + [自定义 Universal Editor](/help/implementing/universal-editor/customizing.md)
+         + [自定义](/help/implementing/universal-editor/customizing.md)
+         + [架构](/help/implementing/universal-editor/architecture.md)
+         + [身份验证](/help/implementing/universal-editor/authentication.md)
+         + [快速入门](/help/implementing/universal-editor/getting-started.md)
+         + [开发人员概述](/help/implementing/universal-editor/developer-overview.md)
+         + [本地AEM开发](/help/implementing/universal-editor/local-dev.md)
+         + [调用](/help/implementing/universal-editor/calls.md)
       + [Headless 体验管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       + 混合和 SPA 开发 {#hybrid}
          + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)

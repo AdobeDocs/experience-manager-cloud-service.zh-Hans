@@ -2,10 +2,10 @@
 title: 使用 Universal Editor 创作内容
 description: 了解内容作者使用 Universal Editor 创建内容是多么轻松和直观。
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 58%
+source-wordcount: '2083'
+ht-degree: 56%
 
 ---
 
@@ -89,7 +89,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### 用户属性 {#user-properties}
 
-选择代表您的用户的图标以访问您的用户设置。 如果您尚未配置用户图片，系统会随机分配一个图标。
+选择代表用户的图标来访问用户设置。如果您尚未配置用户图片，系统会随机分配一个图标。
 
 ![用户属性](assets/user-properties.png)
 
@@ -384,9 +384,4 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 要了解有关 Universal Editor 的更多信息，请参阅这些文档。
 
-* [Universal Editor 简介](introduction.md) – 了解 Universal Editor 如何支持在任意实施中编辑任何内容的任何方面，以提供卓越的体验，提升内容速度并提供最先进的开发人员体验。
 * [使用 Universal Editor 发布内容](publishing.md) – 了解 Universal Editor 如何发布内容以及您的应用程序如何处理发布的内容。
-* [AEM Universal Editor 快速入门 ](getting-started.md) – 了解如何获取 Universal Editor 访问权限以及如何对第一个 AEM 应用程序插桩以使用 Universal Editor。
-* [Universal Editor 架构](architecture.md) – 了解 Universal Editor 的架构以及数据如何在其服务和层之间流动。
-* [属性和类型](attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
-* [Universal Editor 身份验证](authentication.md) – 了解 Universal Editor 如何进行身份验证。
