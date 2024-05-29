@@ -37,7 +37,7 @@ ht-degree: 9%
 >id="aemcloud_cam_bpa"
 >title="最佳实践分析报告"
 >abstract="可以将 BPA 报告上传到 CAM，以针对迁移到 AEM as a Cloud Service。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="使用 Best Practices Analyzer"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="使用 Best Practices Analyzer"
 
 1. 单击 **审核** 从 **最佳实践分析** 卡片。
 
