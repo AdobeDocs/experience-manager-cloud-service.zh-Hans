@@ -1,8 +1,8 @@
 ---
 title: 清除CDN缓存
 description: 了解如何通过配置随后可在API调用中使用的清除API令牌，从AdobeCDN缓存中删除缓存的对象。
-feature: Dispatcher
-source-git-commit: 114098a75d84a3da4cc582288ffa162cd960a0e6
+feature: CDN Cache
+source-git-commit: a10faaecf8f6dcaf53e7c72504b927125b32c0d4
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 1%
