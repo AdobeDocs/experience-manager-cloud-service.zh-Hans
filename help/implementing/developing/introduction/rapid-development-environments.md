@@ -2,9 +2,9 @@
 title: 快速开发环境
 description: 了解如何使用快速开发环境在云环境中进行快速开发迭代。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 43f76a3f1e0bb52ca9d44982b2bb2b37064edf9f
+source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
 workflow-type: tm+mt
-source-wordcount: '3414'
+source-wordcount: '4345'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 4%
 RDE允许开发人员快速部署和审查更改，从而最大限度地减少测试经验证可在本地开发环境中工作的功能所需的时间。
 
 在RDE中测试更改后，可以通过Cloud Manager管道将它们部署到常规云开发环境。
+
+>[!NOTE]
+> 联系RDE开发人员以了解我们的 [不和谐通道](https://discord.com/channels/1131492224371277874/1245304281184079872). 欢迎您就RDE主题提出任何问题或给予反馈。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
@@ -141,6 +144,75 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
 
 有关更多信息和演示，请观看视频教程 [如何设置RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 
+## 安装RDE命令行工具（使用交互模式） {#installing-the-rde-command-line-tools-interactive}
+
+>[!NOTE]
+>
+> 此设置过程尚不可用。 它将在6月的某个时候取代以前的流程。
+> 
+
+在使用Cloud Manager为程序添加RDE后，您可以通过设置命令行工具与其交互，如以下步骤所述：
+
+>[!IMPORTANT]
+>
+>确保您拥有最新版本的 [节点和NPM已安装](https://nodejs.org/en/download/) 以使Adobe I/OCLI和相关插件正常工作。
+
+
+1. 按照以下说明安装Adobe I/OCLI工具 [过程](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. 安装Adobe I/OCLI工具AEM RDE插件：
+
+   ```
+   aio plugins:install @adobe/aio-cli-plugin-aem-rde
+   aio plugins:update
+   ```
+
+1. 配置RDE插件以使用您的组织、项目和环境。 下面的设置命令将以交互方式向用户提供其组织中的程序列表，并显示该程序中可供选择的RDE环境。
+
+   ```
+   aio login
+   aio aem:rde:setup
+   ```
+
+   如果目的是使用脚本环境，则可以跳过设置步骤，在这种情况下，组织、程序和环境值可以包含在每个命令中。 [有关详细信息，请参阅下面的rde命令](#rde-cli-commands).
+
+### 交互式设置
+
+setup命令将询问所提供的配置是应本地存储还是全局存储。
+
+```
+Setup the CLI configuration necessary to use the RDE commands.
+? Do you want to store the information you enter in this setup procedure locally? (y/N)
+```
+
+选择 `no` 到
+* 在aio配置中全局存储组织、项目和环境。
+* 仅适用于单个RDE。
+
+选择 `yes` 到
+* 将组织、项目和环境本地存储在当前目录中的 `.aio` 文件。 如果您希望将文件提交到版本控制，以便其他克隆Git存储库的人可以使用它，这非常方便。
+* 与许多RDE配合使用，以便切换到另一个目录时使用该配置。
+* 在脚本之类的程序化上下文中使用配置，脚本可以引用该配置。
+
+
+选择本地或全局配置后，setup命令将尝试从当前登录中读取组织id，然后读取组织的程序。 如果找不到组织，您可以手动输入该组织并提供一些指导。
+
+```
+ Selected only organization: XYXYXYXYXYXYXYXXYY
+ retrieving programs of your organization ...
+```
+
+检索程序后，用户可以从列表中选择程序，也可以键入以进行筛选。
+选择项目后，将列出可供选择的RDE环境列表。
+如果只有一个项目和/或RDE环境可用，则会自动选择该环境。
+
+要查看当前环境上下文，请执行：
+
+```aio aem rde setup --show```
+
+此命令将做出响应，结果类似于：
+
+```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
+
 ## 在开发新功能时使用RDE {#using-rde-while-developing-a-new-feature}
 
 Adobe建议通过以下工作流程来开发新功能：
@@ -154,7 +226,7 @@ Adobe建议通过以下工作流程来开发新功能：
   > 如果您的暂存环境和生产环境未收到自动AEM版本更新，并且位于最新的AEM版本之后，则在RDE上运行的代码可能与暂存环境和生产环境中运行的代码不匹配。 在这种情况下，在将代码部署到生产环境之前，在暂存环境中对代码执行彻底测试尤为重要。
 
 
-* 使用RDE命令行界面，将本地代码同步到RDE。 选项包括安装内容包、特定捆绑包、OSGI配置文件、内容文件和Apache/Dispatcher配置的zip文件。 也可以引用远程内容包。 请参阅 [RDE命令行工具](#rde-cli-commands) 以了解更多信息。 可以使用status命令验证部署是否成功。 或者，使用包管理器安装内容包。
+* 使用RDE命令行界面，将本地代码同步到RDE。 选项包括安装内容包、特定捆绑包、OSGI配置文件、内容文件和Apache/Dispatcher配置的zip文件。 也可以引用远程内容包。 请参阅 [RDE命令行工具](/help/implementing/developing/introduction/rapid-development-environments.md#rde-cli-commands) 以了解更多信息。 可以使用status命令验证部署是否成功。 或者，使用包管理器安装内容包。
 
 * 在RDE中测试代码。 在Cloud Manager中，提供了作者和发布URL。
 
@@ -189,6 +261,32 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 * 有关命令的详细帮助，请键入：
 
   `aio aem rde <command> --help`
+
+
+### 全局标志 {#global-flags}
+
+>[!NOTE]
+>
+> 这些全局标记尚不可用。 它们将在六月的某个时候推出。
+> 
+
+* 对于不太详细的输出，请使用quiet标志：
+
+  `aio aem rde <command> --quiet`
+
+  这会删除某些元素，例如旋转器和进度条，并限制对用户输入的需求。
+
+* 对于JSON，请使用json标记，而不是控制台日志输出：
+
+  `aio aem rde <command> --json`
+
+  在抑制任何控制台输出时，这将返回有效的JSON。 请参阅下面的JSON示例。
+
+* 要避免使用setup命令或任何aio配置创建来配置RDE连接信息，请使用组织、程序和环境的三个标志：
+
+  `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
+
+  这仍需要 ```aio login``` 将执行。
 
 ### 部署到RDE {#deploying-to-rde}
 
@@ -413,6 +511,33 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 有关更多信息和演示，请参阅视频教程 [如何使用RDE命令(10:01)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html).
 
+## 日志 {#rde-logging}
+
+>[!NOTE]
+>
+> 此功能尚不可用。 它将在六月的某个时候推出。
+> 
+
+与其他环境类型类似，可以通过修改OSGi配置来设置日志级别，但如上所述，RDE的部署模型涉及命令行而不是Cloud Manager部署。 查看 [日志记录文档](/help/implementing/developing/introduction/logging.md) 有关如何查看、下载和解读日志的更多信息。
+
+RDE CLI还有其自己的日志命令，可用于快速配置应该记录哪些类和包以及在什么日志级别。 这些配置可以视为临时配置，因为它们不会修改版本控制中的OSGI属性。 此功能侧重于实时跟踪日志，而不是查找很久以前的日志。
+
+以下示例说明如何跟踪创作层，其中有一个包设置为调试日志级别，两个包（以空格分隔）设置为信息调试级别。 包含 **身份验证** 包将突出显示。
+
+`aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+请参阅 `aio aem:rde:logs --help` 用于完整的命令行选项集。
+
+功能包括：
+
+* 在每个包或类级别上声明日志级别
+* 自定义日志输出格式
+* 最多跟踪四个当前日志配置，每个配置位于自己的终端中
+* 突出显示特定日志
+
+请注意，日志存储在RDE的内存中，如果日志没有尾随或网络速度太慢，这些日志将被回收并丢弃。
+
+
 ## 重置 {#reset-rde}
 
 重置RDE会同时从创作实例和发布实例中删除所有自定义代码、配置和内容。 例如，如果已经使用RDE测试特定功能，并且希望将其重置为默认状态，以便测试其他功能，则这种重置非常有用。
@@ -477,6 +602,374 @@ RDE重置过程启动后，通常需要几分钟才能完成，并使环境恢�
 
 有关如何使用Cloud Manager管理环境的更多信息，请参阅 [cloud Manager文档](/help/implementing/cloud-manager/manage-environments.md).
 
+## 支持JSON输出的命令 {#json-commands}
+
+>[!NOTE]
+>
+> 这些命令尚不可用。 它们将在六月的某个时候推出。
+> 
+
+大多数命令都支持全局 ```--json``` 该标志禁止控制台输出并返回要在脚本中处理的有效json。 以下是一些受支持的命令以及json输出示例。
+
+### 状态
+
+<details>
+  <summary>展开以查看状态示例</summary>
+
+#### 干净的RDE
+
+```$ aio aem rde status --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Modification in progress | Deployment in progress | Upload in progress | Ready (instances are currently deploying) | Ready",
+  "author": {
+    "osgiBundles": [],
+    "osgiConfigs": []
+  },
+  "publish": {
+    "osgiBundles": [],
+    "osgiConfigs": []
+  }
+}
+```
+
+#### 带有一些已安装捆绑包的RDE
+
+```$ aio aem rde status --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Ready",
+  "author": {
+    "osgiBundles": [
+      {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "updateId": "80",
+        "service": "author",
+        "type": "osgi-bundle",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        }
+      }
+    ],
+    "osgiConfigs": [
+      {
+        "id": "publish_osgi-config_com.adobe.granite.demo.MyServlet",
+        "updateId": "80",
+        "service": "publish",
+        "type": "osgi-config",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "configPid": "com.adobe.granite.demo.MyServlet"
+        }
+      }
+    ]
+  },
+  "publish": {
+    "osgiBundles": [
+      {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "updateId": "80",
+        "service": "author",
+        "type": "osgi-bundle",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        }
+      }
+    ],
+    "osgiConfigs": [
+      {
+        "id": "publish_osgi-config_com.adobe.granite.demo.MyServlet",
+        "updateId": "80",
+        "service": "publish",
+        "type": "osgi-config",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "configPid": "com.adobe.granite.demo.MyServlet"
+        }
+      }
+    ]
+  }
+}
+```
+</details>
+
+### 安装
+
+<details>
+  <summary>展开以查看安装示例</summary>
+
+```$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "items": [
+    {
+      "updateId": "4",
+      "info": "deploy",
+      "action": "deploy",
+      "metadata": {
+        "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip"
+      },
+      "services": [
+        "author",
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:30:44.578Z",
+        "processed": "2024-05-21T12:31:07.886468Z"
+      },
+      "user": "userId",
+      "type": "content-package",
+      "hash": "2ad73507",
+      "logs": [
+        "No logs available for this update."
+      ]
+    }
+  ]
+}
+```
+</details>
+
+### 删除
+
+<details>
+  <summary>展开以查看删除示例</summary>
+
+```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "items": [
+    {
+      "updateId": "84",
+      "info": "delete author_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "author"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T11:49:16.889Z",
+        "processed": "2024-05-21T11:49:18.188420Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "author",
+        "type": "osgi-bundle",
+        "updateId": "83"
+      },
+      "hash": "636f6d2e",
+      "logs": [
+        "No logs available for this update."
+      ]
+    },
+    {
+      "updateId": "85",
+      "info": "delete publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T11:49:23.857Z",
+        "processed": "2024-05-21T11:49:25.237930Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "publish",
+        "type": "osgi-bundle",
+        "updateId": "83"
+      },
+      "hash": "636f6d2e",
+      "logs": [
+        "No logs available for this update."
+      ]
+    }
+  ]
+}
+```
+
+</details>
+
+### 历史记录
+
+<details>
+  <summary>展开以查看历史记录示例</summary>
+
+```$ aio aem rde history --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "Ready",
+  "items": [
+    {
+      "updateId": "112",
+      "info": "delete publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:53:07.934Z",
+        "processed": "2024-05-21T12:53:09.118766Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "publish_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "publish",
+        "type": "osgi-bundle",
+        "updateId": "110"
+      },
+      "hash": "636f6d2e"
+    },
+    {
+      "updateId": "111",
+      "info": "delete author_osgi-bundle_com.adobe.granite.hotdev.demo",
+      "action": "delete",
+      "metadata": {},
+      "services": [
+        "author"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:53:00.824Z",
+        "processed": "2024-05-21T12:53:02.101560Z"
+      },
+      "user": "userId",
+      "type": "osgi-bundle",
+      "deletedArtifact": {
+        "id": "author_osgi-bundle_com.adobe.granite.hotdev.demo",
+        "metadata": {
+          "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip",
+          "bundleSymbolicName": "com.adobe.granite.hotdev.demo",
+          "bundleName": "HotDev Bundle",
+          "bundleVersion": "1.0.0.SNAPSHOT"
+        },
+        "service": "author",
+        "type": "osgi-bundle",
+        "updateId": "110"
+      },
+      "hash": "636f6d2e"
+    },
+    {
+      "updateId": "110",
+      "info": "deploy",
+      "action": "deploy",
+      "metadata": {
+        "name": "hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip"
+      },
+      "services": [
+        "author",
+        "publish"
+      ],
+      "status": "completed",
+      "timestamps": {
+        "received": "2024-05-21T12:52:12.123Z",
+        "processed": "2024-05-21T12:52:31.026147Z"
+      },
+      "user": "userId",
+      "type": "content-package",
+      "hash": "2ad73507"
+    }
+  ]
+}
+```
+</details>
+
+### 重置
+
+<details>
+  <summary>展开以查看重置示例</summary>
+
+#### 放火忘却，等等
+
+```$ aio aem rde reset --no-wait --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "resetting"
+}
+```
+
+#### 等待完成
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset"
+}
+```
+</details>
+
+### 重新启动
+
+<details>
+  <summary>展开以查看重新启动示例</summary>
+
+```$ aio aem rde restart --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "restarted"
+}
+```
+
+</details>
+
 ## 运行模式 {#runmodes}
 
 可以通过在文件夹名称上使用后缀来应用特定于RDE的OSGI配置，如下例所示：
@@ -507,9 +1000,6 @@ RDE不同于其他环境，因为RDE中的内容可以安装在/apps下的instal
 
 同步内容包时，您的限制为1 GB。
 
-## 日志记录 {#logging}
-
-可以通过修改OSGi配置来设置日志级别。 查看 [文档](/help/implementing/developing/introduction/logging.md) 以了解更多信息。
 
 ## RDE与云开发环境有何不同？ {#how-are-rds-different-from-cloud-development-environments}
 
@@ -552,3 +1042,29 @@ Forms开发人员可以使用AEM FormsCloud Service快速开发环境快速开�
 ## rde教程
 
 要了解AEMas a Cloud Service中的RDE，请参阅演示视频教程 [如何设置、如何使用以及开发生命周期(01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
+
+# 疑难解答
+
+## aio RDE插件 {#aio-rde-plugin}
+
+### 权限不足错误
+
+要使用RDE插件，它要求您是Cloud Manager的成员 **开发人员 — Cloud Service** 产品配置文件。 请参阅 [此页面](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) 以了解更多详细信息。
+
+或者，如果可以通过运行此命令登录到开发人员控制台，则可以确认您具有此开发人员角色：
+
+`aio cloudmanager:environment:open-developer-console`
+
+>[!TIP]
+>
+>如果您看到 `Warning: cloudmanager:* is not a aio command.` 错误，您必须安装 [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) 通过运行以下命令：
+>
+>```
+>aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>```
+
+通过运行验证登录是否成功完成
+
+`aio cloudmanager:list-programs`
+
+这应列出您配置的组织下的所有程序，并确认您分配了正确的角色。
