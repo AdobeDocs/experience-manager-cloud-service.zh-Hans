@@ -2,10 +2,10 @@
 title: 在 Adobe Developer Console 中弃用 JWT 凭据
 description: 了解在 Adobe Developer Console 中弃用 JWT 凭据对 AEM 产生的影响。
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: b6e26ecaa73aaee37b6b824426dc0cd65d459502
+source-git-commit: f183e1999e29ee7f25f2d427d0b2273d244e4632
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 62%
+source-wordcount: '479'
+ht-degree: 93%
 
 ---
 
@@ -19,9 +19,9 @@ Adobe 客户使用 [Adobe Developer Console](https://developer.adobe.com/console
 
 本文提供关于 AEM as a Cloud Service 应如何处理该弃用的某些其他背景信息。
 
-主要结论是，AEM现在支持AEMas a Cloud Service的新OAuth服务器到服务器凭据。 您可能已收到一封电子邮件，其中包含迁移JWT凭据的说明，现在可以完成此迁移。
+重点在于，AEM 现支持 AEM as a Cloud Service 的新 OAuth 服务器到服务器凭据。您可能已收到一封电子邮件，其中包含迁移JWT凭据的说明，现在可以完成此迁移。
 
-以下部分列出了一些情况，在这些情况中，客户必须（或者在某些情况下，不能）使用OAuth服务器到服务器凭据替换其服务帐户(JWT)凭据，现在AEM支持这些凭据。 [了解如何操作](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) 以迁移凭据。
+在以下部分中列出的场景中，既然 AEM 支持 OAuth 服务器到服务器凭据，客户就必须（或在某些情况下不得）将其服务帐户 (JWT) 凭据替换为这些凭据。[了解如何](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)迁移凭据。
 
 >[!NOTE]
 >
@@ -29,20 +29,20 @@ Adobe 客户使用 [Adobe Developer Console](https://developer.adobe.com/console
 
 ## 将 AEM 与其他 Adobe 解决方案集成 {#integrating-aem-with-other-adobe-solutions}
 
-**操作**：迁移您的配置，因为AEM现在支持OAuth凭据。
+**操作**：由于 AEM 现支持 OAuth 凭据，请迁移您的配置。
 
 **相关 AEM 版本**：AEM as a Cloud Service
 
-AEM客户使用AEM来配置与许多其他Adobe解决方案的集成。 例如，Adobe Target、Adobe Analytics等。
+AEM 客户使用 AEM 配置与许多其他 Adobe 解决方案的集成。例如，Adobe Target、Adobe Analytics 等。
 
-请参阅 [为AEMas a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) ，以了解如何：
+请参阅[为 AEM as a Cloud Service 设置 IMS 集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)，详细了解如何执行以下操作：
 
-* 使用OAuth凭据创建配置
-* 迁移使用JWT凭据创建的配置以使用OAuth凭据
+* 使用 OAuth 凭据创建配置
+* 将使用 JWT 凭据创建的配置迁移到使用 OAuth 凭据
 
 ## Cloud Manager API {#cloud-manager-apis}
 
-**操作**：确认何时可以将这些凭据从JWT迁移到OAuth凭据。
+**操作**：将您的JWT凭据迁移到Cloud Manager现在支持的OAuth凭据。
 
 **相关 AEM 版本**：AEM as a Cloud Service
 
@@ -54,6 +54,6 @@ AEM客户使用AEM来配置与许多其他Adobe解决方案的集成。 例如�
 
 **相关 AEM 版本**：AEM as a Cloud Service。
 
-当 Cloud Manager 预配 AEM as a Cloud Service 环境时，它自动生成一个具有 JWT 凭据的 Adobe Developer Console 项目。此项目被标为只读，如以下屏幕快照中所示。客户不能也不应尝试将这些项目迁移到OAuth服务器到服务器凭据。 相反，Adobe将在凭据不再可用之前自行迁移这些项目。
+当 Cloud Manager 预配 AEM as a Cloud Service 环境时，它自动生成一个具有 JWT 凭据的 Adobe Developer Console 项目。此项目被标为只读，如以下屏幕快照中所示。客户不能也不应该尝试将这些项目迁移到 OAuth 服务器到服务器凭据。相反，Adobe 将在凭据不再可用之前自行迁移这些项目。
 
 ![自动生成的项目](/help/security/assets/jwt-deprecation-autogen-projects.png)
