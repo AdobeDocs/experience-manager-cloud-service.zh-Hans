@@ -2,10 +2,10 @@
 title: 在“资源”视图中管理报告
 description: 访问资源视图的报表部分中的数据，即可评估产品和功能使用情况并了解关键成功量度。
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
+source-git-commit: 0eea9b83d437c7e91daae08c33d94a83ba1db3f9
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 89%
+source-wordcount: '884'
+ht-degree: 82%
 
 ---
 
@@ -58,6 +58,11 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+* **按大小划分的资源计数：** 将“资产视图”环境中的资产总数划分为不同的大小范围，并突出显示每个大小范围内的资产计数和百分比，由一个圆环图表示。
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **按资源类型列出的资源计数：** 对“资产视图”环境中的资产总数进行分段，根据资产的文件类型突出显示资产的计数和百分比，用圆环图表示。
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
+
 
 ## 创建下载报告 {#create-download-report}
 
