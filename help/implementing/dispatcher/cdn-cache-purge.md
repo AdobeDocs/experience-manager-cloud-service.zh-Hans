@@ -2,9 +2,9 @@
 title: 清除CDN缓存
 description: 了解如何通过配置随后可在API调用中使用的清除API令牌，从AdobeCDN缓存中删除缓存的对象。
 feature: Dispatcher
-source-git-commit: 7224db99c29c90fb5e93ac07d7d501e2e9aaf74e
+source-git-commit: 114098a75d84a3da4cc582288ffa162cd960a0e6
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 >此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至 `aemcs-cdn-config-adopter@adobe.com`.
 
 清除会从AdobeCDN缓存中移除对象，从而导致将来的请求作为缓存缺失继续前往原点，而不是从缓存提供服务。
-AEMas a Cloud Service允许您配置清除API令牌，然后可以在API调用中使用它。 阅读 <!--[Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)--> 了解如何使用Cloud Manager配置管道身份验证指令配置此令牌。
+AEMas a Cloud Service允许您配置清除API令牌，然后可以在API调用中使用它。 阅读 [配置CDN凭据和身份验证文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) 了解如何使用Cloud Manager配置管道身份验证指令配置此令牌。
 
 有三个受支持的清除变体：
 
