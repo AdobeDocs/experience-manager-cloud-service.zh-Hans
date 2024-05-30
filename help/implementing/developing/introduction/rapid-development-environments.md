@@ -2,10 +2,10 @@
 title: 快速开发环境
 description: 了解如何使用快速开发环境在云环境中进行快速开发迭代。
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
-ht-degree: 4%
+source-wordcount: '4294'
+ht-degree: 3%
 
 ---
 
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 上述代码示例说明了捆绑包无法解析时的行为。 在这种情况下，它是“暂存”的，并且仅在通过安装其他代码来满足其要求（在本例中缺少导入）时才进行安装。
 
-<u>基于站点主题和站点模板部署前端代码</u>
+### 根据站点主题和站点模板部署前端代码 {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->此功能尚未GA，但可由早期采用者使用。 请联系 **aemcs-rde-support@adobe.com** 以试用并提供反馈。
+> 此功能尚不可用。 它将在六月的某个时候推出。
+>
 
 RDE支持基于的前端代码 [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md). 对于RDE，这是使用命令行指令而不是Cloud Manager来部署前端包完成的 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 用于其他环境类型。
 
@@ -1011,8 +1012,6 @@ RDE不同于其他环境，因为RDE中的内容可以安装在/apps下的instal
 
 * RDE不包含预览层
 * RDE当前不支持预发行版渠道。
-* 而RDE支持基于查看和调试前端代码 [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md) 部署后尚未做好正式发布准备工作，可供早期采用者使用。 请联系 **aemcs-rde-support@adobe.com** 以试用并提供反馈。
-
 
 
 ## 我需要多少个RDE？ {#how-many-rds-do-i-need}
