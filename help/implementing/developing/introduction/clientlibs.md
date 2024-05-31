@@ -2,9 +2,9 @@
 title: 在AEMas a Cloud Service上使用客户端库
 description: AEM提供了客户端库文件夹，允许您在存储库中存储客户端代码(clientlibs)，将其组织为不同类别，并定义何时以及如何向客户端提供每种类别的代码
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2497'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ AEM将站点的CSS和JavaScript收集到一个位于中心位置的文件中，�
 1. 为了通过下的代理访问客户端库 `/etc.clientlibs`，选择 `cq:ClientLibraryFolder` 节点，添加以下属性，然后单击 **全部保存**：
    * 名称：`allowProxy`
    * 类型：布尔值
-   * 价值: `true`
+   * 值： `true`
 1. 如果需要管理静态资源，请创建一个名为的子文件夹 `resources` 客户端库文件夹下。
    * 如果您将静态资源存储在文件夹下以外的任何位置 `resources`，无法在发布实例上引用它们。
 1. 将源文件添加到库文件夹中。
@@ -345,7 +345,7 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 在AEM中，YUI被设置为默认小型化器。 要将其更改为GCC，请执行以下步骤。
 
-1. 转到Apache Felix配置管理器，网址为(`http://<host>:<portY/system/console/configMgr`)
+1. 转到Apache Felix配置管理器，网址为(`http://<host>:<port/system/console/configMgr`)
 1. 查找并编辑 **AdobeGraniteHTML库管理器**.
 1. 启用 **Minify** 选项（如果尚未启用）。
 1. 设置值 **JS处理器默认配置** 到 `min:gcc`.

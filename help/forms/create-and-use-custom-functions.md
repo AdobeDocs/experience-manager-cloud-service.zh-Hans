@@ -6,20 +6,15 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: c1c170e1cae148c53662cd49850e2a33754fbafc
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '3119'
+source-wordcount: '3521'
 ht-degree: 3%
 
 ---
 
 
-<span class="preview"> 本文包含一些预发行版功能的内容。 这些预发行版功能只能通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 预发行计划下的功能包括：
-* 自定义函数支持可选参数
-* 自定义函数的缓存功能
-* 自定义函数的全局范围对象和字段对象支持
-* 支持新式JavaScript功能，如let和arrow函数（ES10支持）。
-确保 [核心组件设置为版本3.0.8](https://github.com/adobe/aem-core-forms-components) 在自定义功能中使用预发行功能。 </span>
+<span class="preview"> 本文包含 `Override form submission success and error handlers` 作为预发行版功能。 预发行功能只能通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # 自适应Forms中的自定义函数（核心组件）
 
@@ -31,6 +26,10 @@ ht-degree: 3%
 ## 简介
 
 AEM Forms支持自定义函数，允许用户定义用于实现复杂业务规则的JavaScript函数。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们还支持根据预定义标准动态更改表单行为。
+
+>[!NOTE]
+>
+> 确保 [核心组件](https://github.com/adobe/aem-core-forms-components) 设置为最新版本以使用最新功能。
 
 ### 自定义函数的使用 {#uses-of-custom-function}
 
@@ -124,7 +123,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 ![可选或必需的参数 ](/help/forms/assets/optional-default-params.png)
 
-您可以保存规则而不为所需参数指定值，但不会执行规则并显示警告消息：
+您可以保存规则而不为所需的参数指定值，但不会执行规则并显示警告消息：
 
 ![规则不完整警告](/help/forms/assets/incomplete-rule.png)
 
@@ -157,7 +156,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 声明为私有的自定义函数不会出现在自适应表单的规则编辑器的自定义函数列表中。 默认情况下，自定义函数是公用的。 将自定义函数声明为私有函数的语法为 `@private`.
 
 
-## 创建自定义函数时的准则 {#considerations}
+## 创建自定义函数时的准则
 
 要在规则编辑器中列出自定义函数，您可以使用以下任意格式：
 
@@ -217,7 +216,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 如果用户没有将任何JavaScript注释添加到自定义函数，则该自定义函数不会列在自适应表单的规则编辑器中。
 
-## 创建自定义函数 {#create-custom-function}
+## 创建自定义功能 {#create-custom-function}
 
 创建客户端库以在规则编辑器中调用自定义函数。 有关更多信息，请参阅 [使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
@@ -280,7 +279,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-您可以使用中的自定义函数 [自适应表单的规则编辑器](/help/forms/rule-editor-core-components.md) 使用 [Javascript注释](##js-annotations).
+您可以使用中的自定义函数 [自适应表单的规则编辑器](/help/forms/rule-editor-core-components.md) 使用 [JavaScript注释](##js-annotations).
 
 ## 在自适应表单中使用自定义函数
 
@@ -320,6 +319,43 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 >[!NOTE]
 >
 > 您可以参考以下内容 [自定义函数](/help/forms/assets//customfunctions.zip) 文件夹。 使用下载此文件夹并将其安装到您的AEM实例中 [包管理器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+
+
+### 使用自定义函数设置下拉列表选项
+
+核心组件中的规则编辑器不支持 **设置选项** 属性，用于在运行时设置下拉列表选项。 但是，您可以使用自定义函数设置下拉列表选项。
+
+查看以下代码，了解如何使用自定义函数设置下拉列表选项：
+
+```javascript
+    /**
+    * @name setEnums
+    * @returns {string[]}
+    **/
+    function setEnums() {
+    return ["0","1","2","3","4","5","6"];   
+    }
+
+    /**
+    * @name setEnumNames
+    * @returns {string[]}
+    **/
+    function setEnumNames() {
+    return ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    }
+```
+
+在上述代码中， `setEnums` 用于设置 `enum` 属性和 `setEnumNames` 用于设置 `enumNames` 下拉列表的属性。
+
+让我们为 `Next` 按钮，设置用户单击 `Next` 按钮：
+
+![下拉列表选项](/help/forms/assets/drop-down-list-options.png)
+
+请参阅下图以演示单击“显示”按钮时下拉列表的选项设置位置：
+
+![规则编辑器中的下拉选项](/help/forms/assets/drop-down-option-rule-editor.png)
+
+
 
 ### 在自定义函数中支持异步函数 {#support-of-async-functions}
 
@@ -362,7 +398,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 ![创建异步函数的规则](/help/forms/assets/rule-for-async-funct.png)
 
-请参阅下面的控制台窗口插图，以演示当用户单击 `Fetch` 按钮，自定义函数 `callAsyncFunction` 将调用，从而调用异步函数 `asyncFunction`. 在控制台窗口中Inspect以查看按钮单击时的响应：
+请参阅下面的控制台窗口插图，以演示当用户单击 `Fetch` 按钮，自定义函数 `callAsyncFunction` 将调用，从而调用异步函数 `asyncFunction`. 在控制台窗口中Inspect以查看对单击按钮的响应：
 
 ![控制台窗口](/help/forms/assets/async-custom-funct-console.png)
 
@@ -406,7 +442,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![联系我们表单](/help/forms/assets/contact-us-form.png)
 
-#### **用例**：使用显示面板 `SetProperty` 规则
++++ **用例**：使用显示面板 `SetProperty` 规则
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，将表单字段设置为 `Required`.
 
@@ -448,7 +484,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![设置属性表单预览](/help/forms/assets/set-property-panel.png)
 
-#### **用例**：验证字段。
++++
+
++++ **用例**：验证字段。
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，以验证字段。
 
@@ -487,7 +525,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![电子邮件地址验证模式](/help/forms/assets/validate-form-preview-form.png)
 
-#### **用例**：重置面板
++++
+
++++ **用例**：重置面板
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，以重置面板。
 
@@ -519,7 +559,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![重置表单](/help/forms/assets/custom-function-reset-form.png)
 
-#### **用例**：在字段级别显示自定义消息并将字段标记为无效
++++
+
++++ **用例**：在字段级别显示自定义消息并将字段标记为无效
 
 您可以使用 `markFieldAsInvalid()` 函数将字段定义为无效，并在字段级别设置自定义错误消息。 此 `fieldIdentifier` 值可以是 `fieldId`，或 `field qualifiedName`，或 `field dataRef`. 名为的对象的值 `option` 可以是 `{useId: true}`， `{useQualifiedName: true}`，或 `{useDataRef: true}`.
 用于将字段标记为无效并设置自定义消息的语法包括：
@@ -556,12 +598,13 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![将字段标记为无效预览表单](/help/forms/assets/custom-function-invalidfield-form.png)
 
-如果用户在“评论”文本框中输入的字符超过15个，则验证该字段并提交表单：
+如果用户在“注释”文本框中输入的字符数超过15个，则会验证该字段并提交表单：
 
 ![将字段标记为有效的预览表单](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-#### **用例**：将更改的数据提交到服务器
++++ **用例**：将更改的数据提交到服务器
 
 以下代码行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` 用于在操作后提交表单数据。
@@ -604,6 +647,262 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![控制台窗口中的Inspect数据](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
+
++++ **用例**：覆盖表单提交成功和错误处理程序
+
+添加以下代码行，如 [create-custom-function](#create-custom-function) 部分，自定义表单提交的提交或失败消息，并在模式框中显示表单提交消息：
+
+```javascript
+/**
+ * Handles the success response after a form submission.
+ *
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitSuccessHandler(globals) {
+    var event = globals.event;
+    var submitSuccessResponse = event.payload.body;
+    var form = globals.form;
+
+    if (submitSuccessResponse) {
+        if (submitSuccessResponse.redirectUrl) {
+            window.location.href = encodeURI(submitSuccessResponse.redirectUrl);
+        } else if (submitSuccessResponse.thankYouMessage) {
+            showModal("success", submitSuccessResponse.thankYouMessage);
+        }
+    }
+}
+
+/**
+ * Handles the error response after a form submission.
+ *
+ * @param {string} customSubmitErrorMessage - The custom error message.
+ * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
+ * @returns {void}
+ */
+function customSubmitErrorHandler(customSubmitErrorMessage, globals) {
+    showModal("error", customSubmitErrorMessage);
+}
+function showModal(type, message) {
+    // Remove any existing modals
+    var existingModal = document.getElementById("modal");
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create the modal dialog
+    var modal = document.createElement("div");
+    modal.setAttribute("id", "modal");
+    modal.setAttribute("class", "modal");
+
+    // Create the modal content
+    var modalContent = document.createElement("div");
+    modalContent.setAttribute("class", "modal-content");
+
+    // Create the modal header
+    var modalHeader = document.createElement("div");
+    modalHeader.setAttribute("class", "modal-header");
+    modalHeader.innerHTML = "<h2>" + (type === "success" ? "Thank You" : "Error") + "</h2>";
+
+    // Create the modal body
+    var modalBody = document.createElement("div");
+    modalBody.setAttribute("class", "modal-body");
+    modalBody.innerHTML = "<p class='" + type + "-message'>" + message + "</p>";
+
+    // Create the modal footer
+    var modalFooter = document.createElement("div");
+    modalFooter.setAttribute("class", "modal-footer");
+
+    // Create the close button
+    var closeButton = document.createElement("button");
+    closeButton.setAttribute("class", "close-button");
+    closeButton.innerHTML = "Close";
+    closeButton.onclick = function() {
+        modal.remove();
+    };
+
+    // Append the elements to the modal content
+    modalFooter.appendChild(closeButton);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalBody);
+    modalContent.appendChild(modalFooter);
+
+    // Append the modal content to the modal
+    modal.appendChild(modalContent);
+
+    // Append the modal to the document body
+    document.body.appendChild(modal);
+}
+```
+
+在此示例中，当用户使用 `customSubmitSuccessHandler` 和 `customSubmitErrorHandler` 自定义函数中，成功和失败消息会以模式显示。 JavaScript函数 `showModal(type, message)` 用于在屏幕上动态创建和显示模式对话框。
+
+现在，为成功的表单提交创建规则：
+
+![表单提交成功](/help/forms/assets/form-submission-success.png)
+
+请参阅下图以演示成功提交表单后，成功消息将以模式显示：
+
+![表单提交成功消息](/help/forms/assets/form-submission-success-message.png)
+
+同样，让我们为失败的表单提交创建规则：
+
+![表单提交失败](/help/forms/assets/form-submission-fail.png)
+
+请参阅下图以演示，当表单提交失败时，将以模式模式显示错误消息：
+
+![表单提交失败消息](/help/forms/assets/form-submission-fail-message.png)
+
+要以默认方式显示表单提交成功和失败，请 `Default submit Form Success Handler` 和 `Default submit Form Error Handler` 函数开箱即用。
+
+如果自定义提交处理程序无法按预期在现有AEM项目或表单中执行，请参阅 [故障排除](#troubleshooting) 部分。
+
+<!--
+
++++
+
++++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+
+Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+
+Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+
+Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+
+```javascript
+
+/**
+* @name hidePanelInRepeatablePanel
+* @param {scope} globals
+*/
+function hidePanelInRepeatablePanel(globals)
+{    
+    var repeatablePanel = globals.form.travelerinfo;
+    // hides a panel inside second instance of repeatable panel
+    globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
+}  
+
+```
+ 
+In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
+Let us add a button labeled `Hide` to add a rule to hide a specific panel.
+
+![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
+
+Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
+
+
++++
+
++++ **Usecase**: Pre-fill the field with a value when the form loads
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
+
+```javascript
+/**
+ * @name importData
+ * @param {scope} globals
+ */
+function importData(globals)
+{
+    globals.functions.importData(Object.fromEntries([['amount',200000]]));
+} 
+```
+
+In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+
+Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+
+![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+
+Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+
+![Import Data Rule](/help/forms/assets/cg)
+
++++
+
++++ **Usecase**: Set focus on the specific field
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
+
+```javascript
+/**
+ * @name setFocus
+ * @param {object} field
+ * @param {scope} globals
+ */
+function setFocus(field, globals)
+{
+    globals.functions.setFocus(field);
+}
+```
+
+Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
+
+Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
+
+![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+
++++
+
++++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
+
+Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+/**
+ 
+ * @name addInstance
+ * @param {scope} globals
+ */
+function addInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+} 
+
+```
+
+Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+
+![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+
+![Add Panel](/help/forms/assets/customg)
+
+Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+
+```javascript
+
+/**
+ 
+ * @name removeInstance
+ * @param {scope} globals
+ */
+function removeInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
+} 
+
+```
+Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
+
+![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+
+Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+
+![Delete Panel](/help/forms/assets/customg)
+-->
+
 ## 对自定义函数的缓存支持
 
 自适应Forms在规则编辑器中检索自定义函数列表时，为自定义函数实施缓存以增强响应时间。 消息为 `Fetched following custom functions list from cache` 显示在 `error.log` 文件。
@@ -612,15 +911,23 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 如果修改了自定义函数，缓存将失效，并且会进行解析。
 
-## 疑难解答
+## 疑难解答 {#troubleshooting}
 
-如果包含自定义函数代码的JavaScript文件出错，则自定义函数将不会在自适应表单的规则编辑器中列出。 要检查自定义函数列表，您可以导航到 `error.log` 文件查找错误。 如果出现错误，自定义函数列表显示为空：
+* 如果自定义提交处理程序无法按预期在现有AEM项目或表单中执行，请执行以下步骤：
+   * 确保 [核心组件版本已更新至3.0.18及更高版本](https://github.com/adobe/aem-core-forms-components). 但是，对于现有AEM项目和表单，还需要执行其他步骤：
 
-![错误日志文件](/help/forms/assets/custom-function-list-error-file.png)
+   * 对于AEM项目，用户应替换 `submitForm('custom:submitSuccess', 'custom:submitError')` 替换为 `submitForm()` 和通过Cloud Manager管道部署项目。
 
-如果没有错误，则会获取自定义函数并显示在 `error.log` 文件。 消息为 `Fetched following custom functions list` 显示在 `error.log` 文件：
+   * 对于现有表单，如果自定义提交处理程序无法正常运行，用户需要打开并保存 `submitForm` 规则 **提交** 按钮。 此操作替换中的现有规则 `submitForm('custom:submitSuccess', 'custom:submitError')` 替换为 `submitForm()` 在表格中。
 
-![使用正确的自定义函数创建错误日志文件](/help/forms/assets/custom-function-list-fetched-in-error.png)
+
+* 如果包含自定义函数代码的JavaScript文件出错，则自定义函数将不会在自适应表单的规则编辑器中列出。 要检查自定义函数列表，您可以导航到 `error.log` 文件查找错误。 如果出现错误，自定义函数列表显示为空：
+
+  ![错误日志文件](/help/forms/assets/custom-function-list-error-file.png)
+
+  如果没有错误，则会获取自定义函数并显示在 `error.log` 文件。 消息为 `Fetched following custom functions list` 显示在 `error.log` 文件：
+
+  ![使用正确的自定义函数创建错误日志文件](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## 注意事项
 

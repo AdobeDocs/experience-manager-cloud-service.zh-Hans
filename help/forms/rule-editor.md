@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '6468'
+source-wordcount: '6492'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,12 @@ ht-degree: 1%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 | AEM as a Cloud Service | 本文 |
 
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| 核心组件 | [单击此处](/help/forms/rule-editor-core-components.md) |
+| 基础组件 | 本文 |
+
 ## 概述 {#overview}
 
 规则编辑器功能使表单业务用户和开发人员能够编写关于自适应表单对象的规则。 这些规则根据预设条件、用户输入和用户对表单的操作，定义要在表单对象上触发的操作。 它有助于进一步简化表单填写体验，确保准确性和速度。
@@ -29,9 +35,9 @@ ht-degree: 1%
 
 * 显示或隐藏对象
 * 启用或禁用对象
-* 设置对象的值
-* 验证对象的值
-* 执行函数以计算对象的值
+* 为对象设置值
+* 验证某个对象的值
+* 通过执行函数来计算对象的值
 * 调用表单数据模型服务并执行操作
 * 设置对象的属性
 
@@ -39,9 +45,13 @@ ht-degree: 1%
 
 添加到forms-power-users组的用户可以创建脚本并编辑现有脚本。 中的用户 [!DNL forms-users] 组可以使用脚本，但不能创建或编辑脚本。
 
+## 核心组件中的规则编辑器与基础组件中的规则编辑器的区别
+
+{{rule-editor-diff}}
+
 ## 了解规则 {#understanding-a-rule}
 
-规则是操作和条件的组合。 在规则编辑器中，操作包括隐藏、显示、启用、禁用或计算表单中对象的值等活动。 条件是对表单对象的状态、值或属性执行检查和操作而计算的布尔表达式。 根据通过评估条件返回的值（ `True` `False`或）执行操作。
+规则是操作和条件的组合。 在规则编辑器中，操作包括隐藏、显示、启用、禁用或计算表单中对象值等活动。 条件是对表单对象的状态、值或属性执行检查和操作而计算的布尔表达式。 根据值( `True` 或 `False`)的计算返回。
 
 规则编辑器提供了一组预定义的规则类型（如When、Show、Hide、Enable、Disable、Set Value Of和Validate）以帮助您编写规则。 每种规则类型均允许您定义规则中的条件和操作。 本文档进一步详细说明了每种规则类型。
 
@@ -51,7 +61,7 @@ ht-degree: 1%
 
 在规则编辑器中， **时间** 规则类型强制使用condition-action结构。
 
-**操作条件** 在此构造中，规则首先定义要触发的操作，然后是评估条件。 此构造的另一种变体是操作-条件-备用操作，它还定义了在条件返回 False 时要触发的备用操作。
+**操作条件** 在此构造中，规则首先定义要触发的操作，然后定义求值的条件。 此结构的另一个变体是action-condition-alternate action ，它还会定义在条件返回False时要触发的替代操作。
 
 规则编辑器中的“显示”、“隐藏”、“启用”、“禁用”、“设置值”和“验证”规则类型强制实施操作条件规则结构。 默认情况下，“显示”的替代操作是“隐藏”，而“启用”的替代操作是“禁用”，反之亦然。 您不能更改默认替代操作。
 
@@ -104,7 +114,7 @@ ht-degree: 1%
 
 ### [!UICONTROL 时间] {#whenruletype}
 
-此 **[!UICONTROL 时间]** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，首先指定求值的条件，然后指定满足该条件时要触发的操作( `True`)。 使用When规则类型时，您可以使用多个AND和OR运算符来创建 [嵌套表达式](#nestedexpressions).
+此 **[!UICONTROL 时间]** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，您首先指定评估条件，然后在满足条件时触发操作 （ `True`）。 使用 When 规则类型时，您可以使用多个 AND 和 OR 运算符来创建 [嵌套表达式](#nestedexpressions)。
 
 使用 When 规则类型，您可以评估表单对象的条件并对一个或多个对象执行操作。
 
@@ -122,15 +132,15 @@ ht-degree: 1%
 
 _
 
-当您具有多值组件（如单选按钮或列表）时，在为该组件创建规则时，将自动检索选项并使其可供规则创建者使用。 无需再次键入选项值。
+当具有多值组件（如单选按钮或列表）时，在为该组件创建规则时，会自动检索选项并使这些选项可用于规则创建者。 您无需再次键入选项值。
 
 例如，列表包含四个选项：红色、蓝色、绿色和黄色。 创建规则时，将自动检索选项（单选按钮）并使规则创建者可以使用此选项，如下所示：
 
 ![多值显示选项](assets/multivaluefcdisplaysoptions1.png)
 
-编写When规则时，可以触发Clear Value Of操作。 清除值操作清除指定对象的值。 在 When 语句中将“清除值”作为一个选项，可以创建具有多个字段的复杂条件。
+编写When规则时，可以触发Clear Value Of操作。 清除值操作清除指定对象的值。 通过在When语句中将Clear Value设置为选项，可以创建具有多个字段的复杂条件。
 
-![的明确值](assets/clearvalueof1.png)
+![清除值](assets/clearvalueof1.png)
 
 **[!UICONTROL 隐藏]** 隐藏指定的对象。
 
@@ -194,7 +204,7 @@ _
 
 **[!UICONTROL 删除实例]** 删除指定可重复面板或表行的实例。
 
-**[!UICONTROL 导航到]** 导航到其他 <!--Interactive Communications,--> 自适应Forms、图像或文档片段等其他资源或外部URL。 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 导航到]** “导航到其他 <!--Interactive Communications,--> 自适应表单、其他资源（如图像或文档片段）或外部 URL。 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 ### [!UICONTROL 设置值] {#set-value-of}
 
@@ -202,15 +212,11 @@ _
 
 此 **设置值** 规则类型并非适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
 
-将对象A的值设置为：
+将对象 A 的值设置为：
 
-（字符串 ABC）或
-（对象 C 的对象属性 X）或
-（来自函数的值）或
-（来自数学表达式的值）或
-（数据模型服务或 Web 服务的输出值）;
+（字符串ABC） OR（对象C的对象属性X） OR（函数值） OR（数学表达式值） OR（数据模型服务或Web服务的输出值）；
 
-当（可选）时：
+时间（可选）：
 
 （条件 1 和条件 2 和条件 3）为 TRUE;
 
@@ -218,7 +224,7 @@ _
 
 ![Set-value-web-service](assets/set-value-web-service1.png)
 
-使用表单数据模型服务的设定值规则示例
+使用表单数据模型服务的设置值规则示例
 
 >[!NOTE]
 >
@@ -356,13 +362,13 @@ _
 
 应用了一个或多个有效规则的表单对象将标有绿点。 如果应用于表单对象的任意规则无效，则表单对象将标有黄点。
 
-“函数”选项卡包含一组内置函数，例如“总和”、“最小值”、“最大值”、“平均值”、“数目”和“验证表单”。 您可以使用这些函数计算可重复面板和表格行中的值，并在编写规则时在操作和条件语句中使用它们。 但是，您可以创建 [自定义函数](#custom-functions) 也是。
+“函数”选项卡包含一组内置函数，例如“总和”、“最小值”、“最大值”、“平均值”、“数目”和“验证表单”。 您可以使用这些函数计算可重复面板和表格行中的值，并在编写规则时在操作和条件语句中使用它们。 不过，您也可以创建自定义 [函数](#custom-functions) 。
 
-![“函数”选项卡](assets/functions1.png)
+![“功能”选项卡](assets/functions1.png)
 
 >[!NOTE]
 >
->您可以在Forms的“对象”和“函数”选项卡中对对象和函数名称和标题执行文本搜索。
+>您可以在“表单对象”和“函数”选项卡中对对象和函数名称和标题执行文本搜索。
 
 在表单对象的左树中，您可以选择表单对象以显示应用于每个对象的规则。 您不仅可以浏览各种表单对象的规则，还可以复制粘贴表单对象之间的规则。 有关更多信息，请参阅 [复制粘贴规则](rule-editor.md#p-copy-paste-rules-p).
 
@@ -464,13 +470,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 接下来，编写规则以计算贷款资格金额（占总薪金的50%），并在“贷款资格”字段中显示。 要实现此结果，请创建 **[!UICONTROL 设置值]** 贷款资格字段规则。
 
-   在创作模式下，选择 **[!UICONTROL 贷款资格]** 字段并选择 ![edit-rules](assets/edit-rules-icon.svg). 接下来，选择 **[!UICONTROL 创建]** 以启动规则编辑器。
+   在创作模式下，选择 **[!UICONTROL 贷款资格]** 字段并选择 ![edit-rules](assets/edit-rules-icon.svg). 接下来，选择“创建&#x200B;]**”**[!UICONTROL &#x200B;以启动规则编辑器。
 
-1. 选择 **[!UICONTROL 设置值]** 规则。
+1. 从规则下拉列表中选择设置 **[!UICONTROL 规则值]** 。
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. 选择 **[!UICONTROL 选择选项]** 并选择 **[!UICONTROL 数学表达式]**. 用于编写数学表达式的字段打开。
+1. 选择&#x200B;**[!UICONTROL “选择选项]**”，然后选择“数学表达式&#x200B;]**”。**[!UICONTROL &#x200B;用于编写数学表达式的字段打开。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -600,7 +606,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
    1. 数字
    1. 布尔型
 
-  所有其他退货类型均归入上述任一类型下。 不支持无。 确保选择以上类型之一。 返回类型不区分大小写。
+  所有其他返回类型都归入上述类型之一。 不支持“无”。 确保选择以上类型之一。 返回类型不区分大小写。
 
    * **此**
 语法： `@this currentComponent`
@@ -747,11 +753,11 @@ var c = {
 
 ## 复制粘贴规则 {#copy-paste-rules}
 
-您可以将规则从一个字段复制粘贴到其他类似字段，以节省时间。
+您可以将规则从一个字段复制粘贴到其他类似字段以节省时间。
 
 要复制粘贴规则，请执行以下操作：
 
-1. 选择要从中复制规则的表单对象，然后在组件工具栏中选择 ![编辑规则](assets/edit-rules-icon.svg). 此时将显示规则编辑器用户界面，其中选定了表单对象，并显示现有规则。
+1. 选择要从中复制规则的表单对象，然后在组件工具栏 ![中选择“编辑规则](assets/edit-rules-icon.svg)”。 此时将显示规则编辑器用户界面，其中选择了表单对象，并显示了现有规则。
 
    ![复制规则](assets/copyrule.png)
 

@@ -5,19 +5,18 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '5453'
-ht-degree: 0%
+source-wordcount: '5612'
+ht-degree: 1%
 
 ---
 
 
-<span class="preview"> 本文包含一些预发行版功能的内容。 这些预发行版功能只能通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). 预发行计划下的功能包括：
-* 支持使用When-then-else功能实施嵌套条件
-* 验证或重置面板和表单，包括字段
-* 支持自定义函数中的现代JavaScript功能，例如let和arrow函数（ES10支持）。
-</span>
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| Foundation 组件  | [单击此处](/help/forms/rule-editor.md) |
+| 核心组件 | 本文 |
 
 # 将规则添加到自适应表单（核心组件） {#adaptive-forms-rule-editor}
 
@@ -27,15 +26,23 @@ ht-degree: 0%
 
 * 显示或隐藏对象
 * 启用或禁用对象
-* 设置对象的值
-* 验证对象的值
-* 执行函数以计算对象的值
-* 调用表单数据模型 （FDM） 服务并执行操作
+* 为对象设置值
+* 验证某个对象的值
+* 通过执行函数来计算对象的值
+* 调用表单数据模型 (FDM) 服务并执行操作
 * 设置对象的属性
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-添加到 forms-power-users 组的用户可以创建脚本和编辑现有脚本。 组中 [!DNL forms-users] 的用户可以使用脚本，但不能创建或编辑脚本。
+添加到forms-power-users组的用户可以创建脚本并编辑现有脚本。 中的用户 [!DNL forms-users] 组可以使用脚本，但不能创建或编辑脚本。
+
+## 核心组件中的规则编辑器与基础组件中的规则编辑器的区别
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> 要详细了解如何创建和使用自定义函数，请参阅 [自适应Forms中的自定义函数（核心组件）](/help/forms/create-and-use-custom-functions.md) 文章。
 
 ## 了解规则 {#understanding-a-rule}
 
@@ -107,7 +114,7 @@ ht-degree: 0%
 
 此 **[!UICONTROL 时间]** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，首先指定求值的条件，然后指定满足该条件时要触发的操作( `True`)。 使用When规则类型时，您可以使用多个AND和OR运算符来创建 [嵌套表达式](#nestedexpressions).
 
-使用 When 规则类型，您可以评估表单对象的条件并对一个或多个对象执行操作。
+使用When规则类型，您可以评估表单对象的条件，并对一个或多个对象执行操作。
 
 简单地说，典型的When规则的结构如下所示：
 
@@ -117,25 +124,80 @@ ht-degree: 0%
 
 `Then, do the following:`
 
-对对象B执行行动2；对对象C执行行动3；
+`Action 2 on Object B;`
+`AND`
+&#39;对对象C执行操作3；
 
 `Else, do the following:`
 
-关于对象C的行动2；_
+`Action 2 on Object C;`
+_
 
 当具有多值组件（如单选按钮或列表）时，在为该组件创建规则时，会自动检索选项并使这些选项可用于规则创建者。 您无需再次键入选项值。
 
-例如，列表有四个选项：“红色”、“蓝色”、“绿色”和“黄色”。 创建规则时，将自动检索选项（单选按钮），并使其可供规则创建者使用，如下所示：
+例如，列表包含四个选项：红色、蓝色、绿色和黄色。 创建规则时，将自动检索选项（单选按钮）并使规则创建者可以使用此选项，如下所示：
 
 ![多值显示选项](assets/multivaluefcdisplaysoptions.png)
 
-编写 When 规则时，可以触发“清除值”操作。 清除操作值 清除指定对象的值。 在 When 语句中将“清除值”作为一个选项，可以创建具有多个字段的复杂条件。 您可以添加 Else 语句以添加更多条件
+编写When规则时，可以触发Clear Value Of操作。 清除值操作清除指定对象的值。 通过在When语句中将Clear Value设置为选项，可以创建具有多个字段的复杂条件。 您可以添加Else语句以添加更多条件
 
 ![清除值](assets/clearvalueof.png)
 
 >[!NOTE]
 >
 > 当规则类型仅支持单级then-else语句时。
+
+#### 中允许使用多个字段 [!UICONTROL 时间] {#allowed-multiple-fields}
+
+在 **时间** 条件，您可以选择添加应用规则的字段以外的其他字段。
+
+例如，使用When规则类型，您可以评估不同表单对象上的条件并执行操作：
+
+时间：
+
+（对象A条件1）
+
+和/或
+
+（对象B条件2）
+
+然后，执行以下操作：
+
+对对象A执行操作1
+
+_
+
+![何时允许使用多个字段](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### 在When条件功能中使用允许多个字段时的注意事项
+
+* 确保 [核心组件设置为版本3.0.14或更高版本](https://github.com/adobe/aem-core-forms-components) 以在规则编辑器中使用此功能。
+* 如果规则应用于 When 条件内的不同字段，则即使仅更改其中一个字段，规则也会触发。
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+如果“当条件”功能中允许的多个字段遇到任何问题，请按照以下步骤执行故障排除步骤：
+
+1. 在编辑模式下打开表单。
+1. 打开内容浏览器并选择 **[!UICONTROL 自适应表单的指南容器]** 组件。
+1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
+1. 单击完成，然后再次保存对话框。
 
 **[!UICONTROL 隐藏]** 隐藏指定的对象。
 
@@ -194,7 +256,7 @@ ht-degree: 0%
 
 **[!UICONTROL 验证]** 验证表单或指定的对象。
 
-**[!UICONTROL 添加实例]** 添加指定的可重复面板或表格行的实例。
+**[!UICONTROL 添加实例]** 添加指定可重复面板或表行的实例。
 
 **[!UICONTROL 删除实例]** 删除指定可重复面板或表行的实例。
 
@@ -395,13 +457,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E.完成和取消按钮 {#done-and-cancel-buttons}
 
-此 **[!UICONTROL 完成]** 按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整部分无效，因此不会运行。 下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
+此 **[!UICONTROL 完成]** 按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整是无效的，不会运行。 下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
 
-此 **[!UICONTROL 取消]** 按钮会放弃您对规则所做的任何更改并关闭规则编辑器。
+“ **[!UICONTROL 取消]** ”按钮将放弃对规则所做的任何更改并关闭规则编辑器。
 
-## 写入规则 {#write-rules}
+## 编写规则 {#write-rules}
 
-您可以使用可视规则编辑器编写规则 <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+您可以使用可视化规则编辑器编写规则 <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 我们首先看一下如何使用可视编辑器编写规则。
 
@@ -411,7 +473,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ![Create-rule-example](assets/create-rule-example.png)
 
-示例贷款申请表中的“贷款要求”部分要求申请人指定其婚姻状况、工资，如果已婚，还须指定其配偶的工资。 根据用户输入，规则将计算贷款资格金额，并显示在贷款资格字段中。 应用以下规则来实施方案：
+示例贷款申请表中的“贷款要求”部分要求申请人指定其婚姻状况、工资，如果已婚，还须指定其配偶的工资。 根据用户输入，规则计算贷款资格金额并显示在“贷款资格”字段中。 应用以下规则来实施方案：
 
 * 配偶的“薪金”字段仅在婚姻状况为已婚时显示。
 * 贷款资格金额为工资总额的50%。
@@ -513,11 +575,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    >[!NOTE]
    >
-   >您可以从“选择选项”字段中使用组件、函数、数学表达式和属性值来创建复杂表达式。
+   >您可以使用“选择选项”字段中的组件、函数、数学表达式和属性值来创建复杂的表达式。
 
-   接下来，创建一个条件，当该条件返回True时，表达式将执行。
+   接下来，创建一个条件，当返回 True 时，表达式将执行。
 
-1. 选择 **[!UICONTROL 添加条件]** 添加When语句。
+1. 选择“添加条件&#x200B;]**”**[!UICONTROL &#x200B;以添加 When 语句。
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -804,9 +866,9 @@ var c = {
 
 规则编辑器允许您使用日期比较来创建条件。
 
-以下是一个示例条件，当房屋抵押贷款已被抵押时，该条件会显示一个静态文本对象，用户通过填写日期字段来表示该条件。
+下面是一个示例条件，如果房屋的抵押已经获得，则显示静态文本对象，用户通过填写日期字段来表示。
 
-当用户填写的财产抵押日期为过去时，自适应表单会显示有关收入计算的说明。 以下规则将用户填写的日期与当前日期进行比较，如果用户填写的日期早于当前日期，则表单将显示文本消息（名为Income）。
+当用户填写的财产抵押日期是过去时，自适应表单将显示有关收入计算的注释。 以下规则将用户填写的日期与当前日期进行比较，如果用户填写的日期早于当前日期，则表单将显示文本消息（名为“收入”）。
 
 ![日期表达式条件](assets/dateexpressioncondition.png)
 
@@ -897,8 +959,6 @@ Rule in the code editor -->
 在上一个示例中说明的采购订单表单中，您需要限制用户订购任何数量超过此10000价的产品。 要执行此验证，您可以编写验证规则，如下所示。
 
 ![Example-validate](assets/example-validate.png)
-
-可视编辑器中的规则
 
 <!-- The rule appears as follows in the code editor.
 

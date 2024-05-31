@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 61%
 
 ---
 # 代码片段 {#snippets}
@@ -64,4 +64,56 @@ ht-degree: 100%
 * [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
+
+
+## 核心组件中的规则编辑器与基础组件中的规则编辑器的区别  {#rule-editor-diff}
+
+下表演示了规则编辑器的核心组件与规则编辑器的基础组件中可用的功能之间的差异：
+
+<table>
+  <tbody>
+  <tr>
+    <td><strong>功能</strong></td>
+    <td><strong>自适应表单基础组件</strong></td>
+    <td><strong>自适应表单核心组件</strong></td>   
+    </tr>
+  </tr>
+  <tr>
+    <td>设置下拉列表选项 </td>
+    <td>下拉列表选项是使用规则编辑器的 <b>设置选项</b> 属性。</td>
+    <td>下拉选项是使用自定义函数设置的。 
+   </td>
+   </tr>
+     </tr>
+   <tr>
+    <td>对可重复面板字段执行数学运算 </td>
+    <td>OOTB Math函数可应用于可重复的面板字段，以执行sum、average等函数。 </td>
+    <td>可使用自定义函数对可重复面板字段执行数学运算。
+   </td>
+   </tr>
+      <tr>
+    <td>在“Then”中验证/重置字段/面板/表单规则 </td>
+    <td>验证和重置函数仅支持规则编辑器中的表单对象。 
+   </td>
+    <td>验证和重置函数支持规则编辑器中的表单/面板/字段对象。 
+   </td>
+   </tr>
+   <tr>
+    <td>ES10支持 </td>
+    <td>尚不支持ES10。 </td>
+    <td>支持自定义函数中的现代JavaScript功能，例如let和arrow函数（ES10支持）。 
+   </td>
+   </tr>
+   </tr>
+   <tr>
+   <td>服务输出属性</td>
+   <td> 中支持服务输出属性 <b>设置值</b> 选项。 </td>
+   <td>此 <b>设置值</b> 选项不支持 <b>服务输出</b> 属性，用于在规则编辑器中调用API。
+   </td>
+   </tr>
+   </tr>
+   </tr>
+  </tbody>
+  <table>
+  </tbody>
 

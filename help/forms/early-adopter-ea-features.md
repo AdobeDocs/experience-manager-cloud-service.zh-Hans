@@ -3,10 +3,10 @@ title: 当前早期采用者功能 [!DNL Adobe Experience Manager Forms] as a Cl
 description: 当前早期采用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 6%
+source-wordcount: '1731'
+ht-degree: 5%
 
 ---
 
@@ -20,8 +20,7 @@ AEM Forms早期采用者计划为您提供了一个独一无二的机会，让�
 
 ## 如何加入率先采用者计划？
 
-如果您有兴趣加入我们的早期采用者计划以进行任何早期采用者创新，只需将官方地址中的电子邮件发送至 `aem-forms-ea@adobe.com` 以请求访问权限。 您可以请求访问所有或任何特定的创新。
-
+如果您有兴趣加入我们的早期采用者计划以进行任何早期采用者创新，只需将官方地址中的电子邮件发送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  以请求访问权限。 您可以请求访问所有或任何特定的创新。
 
 ## 率先采用者创新
 
@@ -154,6 +153,15 @@ AEM Forms文档保证API是AEM FormsCloud Service通信API中的一组工具，�
 总体而言， [文档保证API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) 通过添加额外的一层控制来帮助您提高文档安全性和合规性。
 
 
+### Forms服务API
+
+Forms服务为数据捕获生成交互式PDF forms。 它还可用于将数据导入/导出到现有的交互式PDF表单中，以及验证提交的数据。 以下是它的功能划分：
+
+* **呈现Forms**：使用使用AEM Forms Designer创建的模板和（可选）XML数据生成交互式PDF表单。 这实际上会生成一个可填写的PDF表单，可以选择预填数据。
+
+* **数据提取和导入**：将数据导入现有PDF表单，并从已填写的PDF表单中提取数据。 XDP和XML数据格式均受支持，导入到非XFAPDF forms（也称为AcroForms）时还支持FDF和XFDF数据。
+
+* **数据验证**： ：根据使用AEM Forms Designer创建的模板，验证以XDP或XML格式提交的数据。
 
 ## 另请参阅
 

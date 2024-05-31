@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 description: Adobe Experience Manager (AEM) as a Cloud Service 的发行说明。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 994a152f2e0acd4b92724994f9a187fe0f6f6d95
+source-git-commit: 0d1fb5d03d7633340c07543cb686ea2f9021abbb
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 99%
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 | 产品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 版本 | 2024.4.0 |
+| 版本 | 2024.5.0 |
 | 类型 | 连续更新 |
 | 发行日期 | 持续更新 |
 
@@ -33,7 +33,7 @@ ht-degree: 99%
 
 要准备发布，请执行以下操作：
 
-1. 在日程表上做标记：在 [Experience Manager 版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)中检查每月发布的关键日期，在日程表上做标记，自行为关键活动做好准备以便进行发布。
+1. 在日程表上做标记：在 [Experience Manager 版本路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)中检查每月发布的关键日期，在日程表上做标记，自行为关键活动做好准备以便进行发布。
 1. 查看发行说明：阅读[最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)以熟悉发行版和预发行版的功能。
 1. 访问和试用新功能：在非生产环境中启用[预发行渠道](/help/release-notes/prerelease.md)，并在您的自定义环境中试用功能以进行评估。
 1. 对您的用户进行培训：使用文档和 Experience League 资源，让用户快速了解并熟悉新功能。
