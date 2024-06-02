@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 32d8477f85edf7fc33a0558e886c5fbb4854f8e5
+source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 31%
+source-wordcount: '1767'
+ht-degree: 24%
 
 ---
 
@@ -89,11 +89,11 @@ Experience Manager Assets现在使您能够快速 [将资源发布到Experience 
 
 此版本对基于核心组件的自适应表单的可视化规则编辑器进行了重大升级。您现在可以：
 
-* 在可视规则编辑器中创建规则以 [覆盖默认表单提交成功/失败处理程序](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+* 在可视规则编辑器中创建规则以 [覆盖默认表单提交成功/失败消息](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
 
 * 在自适应Forms规则编辑器中，添加了 [为WHEN操作选择不同类型的字段](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
 
-* 表单作者现在可以将自定义函数应用于 [提交之前对数据进行预处理](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+* 表单作者现在可以将自定义函数应用于 [提交之前对数据进行预处理](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server).
 
 * 使用 [**另存为草稿**](/help/forms/save-core-component-based-form-as-draft.md) 用于保存部分完成的表单以供以后提交的功能。 当用户需要中断填写表单并稍后返回表单时，这将很有用。
 
@@ -211,12 +211,10 @@ RDE命令行界面具有一些新功能，改善了开发人员体验：
 
 Adobe托管的CDN现在支持 [Edge Side Include (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，用于边缘级动态Web内容汇编的标记语言。 通过包含ESI片段，您可以在CDN上缓存具有较高TTL的整个HTML页面，同时更频繁地从源位置提取需要更高节奏更新（较低TTL）的较小部分。 <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### Real User Monitoring (RUM) Data Service（早期采用程序）
+#### Real Use Monitoring (RUM) Data Service（早期采用程序）
 
-* **[您可以利用真实用户监控 (RUM) 数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**为 AEM as a Cloud Service 启用客户端收集。
-真实用户监控 (RUM) 数据服务能够更准确地反映用户交互，确保可靠地衡量网站参与度。这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
-
-  如果您有兴趣测试这项新功能并分享您的反馈，请从您与您的 Adobe ID 关联的电子邮件地址将一封电子邮件发送到 `aemcs-rum-adopter@adobe.com`，其中包含您要为其启用 RUM 的每个环境的域名。Adobe 的产品团队随后将为您启用真实用户监控 (RUM) 数据服务。
+* **实时监控(RUM)数据服务现在为GA(/help/implementing/cloud-manager/content-requests.md#real-use-monitoring-for-aem-as-a-cloud-service)** 为AEMas a Cloud Service启用客户端数据收集。
+Real Use Monitoring服务（客户端集合）提供了交互的更精确反映，确保了对网站参与度的可靠衡量。 它使客户能够对其页面流量和性能进行高级分析。 这是详细了解页面性能并深入了解以改进该性能的绝佳机会。
 
 ## [!DNL Experience Manager] 指南 {#guides}
 
