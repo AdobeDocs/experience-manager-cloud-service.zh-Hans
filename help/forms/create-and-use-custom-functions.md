@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
+source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
 workflow-type: tm+mt
-source-wordcount: '3510'
+source-wordcount: '3513'
 ht-degree: 3%
 
 ---
@@ -649,7 +649,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 覆盖表单提交成功和错误消息
+#### 覆盖自适应表单提交成功和错误消息
 
 添加以下代码行，如 [create-custom-function](#create-custom-function) 部分，自定义表单提交的提交或失败消息，并在模式框中显示表单提交消息：
 
