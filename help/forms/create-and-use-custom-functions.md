@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
+source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3510'
 ht-degree: 3%
 
 ---
@@ -443,7 +443,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![联系我们表单](/help/forms/assets/contact-us-form.png)
 
-#### 用例：使用SetProperty规则显示面板
+#### 使用SetProperty规则显示面板
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，将表单字段设置为 `Required`.
 
@@ -486,7 +486,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 ![设置属性表单预览](/help/forms/assets/set-property-panel.png)
 
 
-#### 用例：验证字段。
+#### 验证字段。
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，以验证字段。
 
@@ -527,7 +527,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 用例：重置面板
+#### 重置面板
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，以重置面板。
 
@@ -561,7 +561,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 用例：在字段级别显示自定义消息并将字段标记为无效
+#### 在字段级别显示自定义消息并将字段标记为无效
 
 您可以使用 `markFieldAsInvalid()` 函数将字段定义为无效，并在字段级别设置自定义错误消息。 此 `fieldIdentifier` 值可以是 `fieldId`，或 `field qualifiedName`，或 `field dataRef`. 名为的对象的值 `option` 可以是 `{useId: true}`， `{useQualifiedName: true}`，或 `{useDataRef: true}`.
 用于将字段标记为无效并设置自定义消息的语法包括：
@@ -604,7 +604,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 用例：将更改的数据提交到服务器
+#### 在提交之前更改捕获的数据
 
 以下代码行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` 用于在操作后提交表单数据。
@@ -649,7 +649,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 
 
-#### 用例：覆盖表单提交成功和错误处理程序
+#### 覆盖表单提交成功和错误消息
 
 添加以下代码行，如 [create-custom-function](#create-custom-function) 部分，自定义表单提交的提交或失败消息，并在模式框中显示表单提交消息：
 
