@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: 05b149c60cb8d05489668b13f63ed5b0e1d0bbfb
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3522'
 ht-degree: 3%
 
 ---
@@ -442,7 +442,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![联系我们表单](/help/forms/assets/contact-us-form.png)
 
-+++ 用例：使用显示面板 `SetProperty` 规则
+#### 用例：使用SetProperty规则显示面板
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，将表单字段设置为 `Required`.
 
