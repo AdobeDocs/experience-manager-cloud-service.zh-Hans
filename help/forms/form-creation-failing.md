@@ -3,14 +3,14 @@ title: 如何对表单创建失败进行故障排除？
 description: 对AEM Formsas a Cloud Service环境中表单创建失败进行故障诊断。
 feature: Adaptive Forms, Troubleshooting
 role: User
-source-git-commit: 5e7cd7015d68cc634fcf6a99dd552289abbaedcf
+source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
-# 问题 {#form-creation-fails}
+# 发布表单时出现问题{#form-creation-fails}
 
 用户更新到AEM Formsas a Cloud Service版本后 `2024.5.16461`：
 
