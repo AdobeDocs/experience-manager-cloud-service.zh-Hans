@@ -5,9 +5,9 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '1766'
 ht-degree: 7%
 
 ---
@@ -81,6 +81,7 @@ Cloud Manager用户为Experience Manager Assets as a激活Brand Portal [!DNL Clo
 Brand Portal租户的默认URL为： `https://<tenant-id>.brand-portal.adobe.com/`.
 
 其中，租户ID是IMS组织。
+
 
 如果您不确定Brand Portal URL，请执行以下步骤：
 
@@ -188,15 +189,20 @@ Brand Portal租户的默认URL为： `https://<tenant-id>.brand-portal.adobe.com
 
 ## 使用Adobe Developer控制台手动配置 {#manual-configuration}
 
+>[!NOTE]
+>
+> 从2024年6月起，您无法创建新的JWT凭据。 今后，仅创建OAuth凭据。
+> 查看更多 [创建OAuth配置](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+
 以下部分将介绍如何手动配置Experience Manager Assets as a [!DNL Cloud Service] 使用Adobe Developer Console的Brand Portal。
 
 更早版本，Experience Manager Assets as a [!DNL Cloud Service] 是通过Brand Portal控制台使用Adobe Developer手动配置的，该控制台可获取Adobe的Identity Management Services (IMS)帐户令牌以授权Brand Portal租户。 它需要在Experience Manager Assets和Adobe Developer Console中进行配置。
 
-1. 在Experience Manager Assets中，创建IMS帐户并生成公钥（证书）。
+<!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
+<!--1. Under the project, configure an API using the public key to create a service account connection.
+1. Get the service account credentials and JSON Web Token (JWT) payload information.
+1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
 1. 在Adobe Developer Console中，为您的Brand Portal租户（组织）创建一个项目。
-1. 在项目下，使用公钥配置API以创建服务帐户连接。
-1. 获取服务帐户凭据和JSON Web令牌(JWT)有效负载信息。
-1. 在Experience Manager Assets中，使用服务帐户凭据和JWT有效负载配置IMS帐户。
 1. 在Experience Manager Assets中，使用IMS帐户和Brand Portal端点（组织URL）配置Brand Portal云服务。
 1. 通过将资源从Experience Manager Assets发布到Brand Portal来测试配置。
 
@@ -216,97 +222,104 @@ Brand Portal租户的默认URL为： `https://<tenant-id>.brand-portal.adobe.com
 
 按照指定的顺序执行以下步骤，使用Brand Portal配置Experience Manager Assets。
 
-1. [获取公共证书](#public-certificate)
-1. [创建服务帐户(JWT)连接](#createnewintegration)
-1. [配置IMS帐户](#create-ims-account-configuration)
-1. [配置云服务](#configure-the-cloud-service)
+1. [在Adobe Developer控制台中配置OAuth凭据](#config-oauth)
+1. [使用OAuth创建新的Adobe IMS集成](#create-ims-account-configuration)
+1. [配置云服务](#configure-cloud-service)
+   <!--1. [Obtain public certificate](#public-certificate)-->
+<!--1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)-->
 
-### 创建IMS配置 {#create-ims-configuration}
+<!--
+### Create IMS configuration {#create-ims-configuration}
 
-IMS配置验证您的Experience Manager Assets as a [!DNL Cloud Service] Brand Portal租户实例。
+The IMS configuration authenticates your Experience Manager Assets as a [!DNL Cloud Service] instance with the Brand Portal tenant. 
 
-IMS 配置包括两个步骤：
+IMS configuration includes two steps:
 
-* [获取公共证书](#public-certificate)
-* [配置IMS帐户](#create-ims-account-configuration)
+* [Obtain public certificate](#public-certificate) 
+* [Configure IMS account](#create-ims-account-configuration)
+-->
+<!--
 
-### 获取公共证书 {#public-certificate}
+### Obtain public certificate {#public-certificate}
 
-公钥（证书）在Adobe Developer控制台上验证您的配置文件。
+The public key (certificate) authenticates your profile on Adobe Developer Console.
 
-1. 登录Experience Manager Assets。
-1. 从 **工具** 面板，导航到 **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**.
-1. 在“Adobe IMS配置”页面中，单击 **[!UICONTROL 创建]**. 它将重定向到 **[!UICONTROL Adobe IMS技术帐户配置]** 页面。 默认情况下， **证书** 选项卡打开。
-1. 选择 **[!UICONTROL AdobeBrand Portal]** 在 **[!UICONTROL 云解决方案]** 下拉列表。
-1. 选择 **[!UICONTROL 创建新证书]** 复选框，并指定 **别名** 用于公共密钥。 别名将用作公钥的名称。
-1. 单击&#x200B;**[!UICONTROL 创建证书]**。然后，单击 **[!UICONTROL 确定]** 以生成公钥。
+1. Login to Experience Manager Assets.
+1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. By default, the **Certificate** tab opens.
+1. Select **[!UICONTROL Adobe Brand Portal]** in the **[!UICONTROL Cloud Solution]** drop-down list.  
+1. Select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
+1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
-   ![创建证书](assets/ims-config2.png)
+   ![Create Certificate](assets/ims-config2.png)
 
-1. 单击 **[!UICONTROL 下载公钥]** 图标并将公钥(CRT)文件保存在计算机上。
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (CRT) file on your machine.
 
-   公钥稍后用于为Brand Portal租户配置API并在Adobe Developer控制台中生成服务帐户凭据。
+   The public key is used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.  
 
-   ![下载证书](assets/ims-config3.png)
+   ![Download Certificate](assets/ims-config3.png)
 
-1. 单击&#x200B;**[!UICONTROL 下一步]**。
+1. Click **[!UICONTROL Next]**.
 
-   在 **帐户** 选项卡中创建的Adobe IMS帐户需要在Adobe Developer控制台中生成的服务帐户凭据。 暂时保持此页面打开。
+    In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
-   打开新选项卡并 [在Adobe Developer控制台中创建服务帐户(JWT)连接](#createnewintegration) 获取用于配置IMS帐户的凭据和JWT有效负荷。
+    Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration) to get the credentials and JWT payload for configuring the IMS account. 
+-->
+<!--
 
-### 创建服务帐户(JWT)连接 {#createnewintegration}
+### Create service account (JWT) connection {#createnewintegration}
 
-在Adobe Developer控制台中，项目和API在Brand Portal租户（组织）级别配置。 配置API将创建服务帐户(JWT)连接。 配置API的方法有两种：生成密钥对（私钥和公钥）或上传公钥。 要使用Brand Portal配置Experience Manager Assets，您必须在Experience Manager Assets中生成公钥（证书），并通过上传公钥在Adobe Developer Console中创建凭据。 在Experience Manager Assets中配置IMS帐户需要这些凭据。 配置IMS帐户后，您可以在Experience Manager Assets中配置Brand Portal云服务。
+In Adobe Developer Console, projects and APIs are configured at Brand Portal tenant (organization) level. Configuring an API creates a service account (JWT) connection. There are two methods to configure API, by generating a key pair (private and public keys) or by uploading a public key. To configure Experience Manager Assets with Brand Portal, you must generate a public key (certificate) in Experience Manager Assets and create credentials in Adobe Developer Console by uploading the public key. These credentials are required to configure the IMS account in Experience Manager Assets. Once the IMS account is configured, you can configure the Brand Portal cloud service in Experience Manager Assets.
 
-执行以下步骤以生成服务帐户凭据和JWT有效负载：
+Perform the following steps to generate the service account credentials and JWT payload:
 
-1. 使用IMS组织(Adobe Developer租户)的系统管理员权限登录到Brand Portal控制台。 默认URL为 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Login to Adobe Developer Console with system administrator privileges on the IMS organization (Brand Portal tenant). The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
-
-   >[!NOTE]
-   >
-   >确保您从右上角的下拉（组织）列表中选择了正确的IMS组织(Brand Portal租户)。
-
-1. 单击 **[!UICONTROL 创建新项目]**. 系统会为您的组织创建一个名称由系统生成的空白项目。
-
-   单击 **[!UICONTROL 编辑项目]** 更新 **[!UICONTROL 项目标题]** 和 **[!UICONTROL 描述]**，然后单击 **[!UICONTROL 保存]**.
-
-1. 在 **[!UICONTROL 项目概述]** 选项卡，单击 **[!UICONTROL 添加API]**.
-
-1. 在 **[!UICONTROL 添加API窗口]**，选择 **[!UICONTROL AEM Brand Portal]** 并单击 **[!UICONTROL 下一个]**.
-
-   确保您有权访问Experience ManagerBrand Portal服务。
-
-1. 在 **[!UICONTROL 配置API]** 窗口，单击 **[!UICONTROL 上传公钥]**. 然后，单击 **[!UICONTROL 选择文件]** 并上传您在中下载的公共密钥（.crt文件） [获取公共证书](#public-certificate) 部分。
-
-   单击&#x200B;**[!UICONTROL 下一步]**。
-
-   ![上传公钥](assets/service-account3.png)
-
-1. 验证公钥并单击 **[!UICONTROL 下一个]**.
-
-1. 选择 **[!UICONTROL Assets Brand Portal]** 作为默认产品配置文件，然后单击 **[!UICONTROL 保存配置的API]**.
-
-   ![选择产品配置文件](assets/service-account4.png)
-
-1. 配置API后，您将被重定向到API概述页面。 从左侧导航栏中的 **[!UICONTROL 凭据]**，单击 **[!UICONTROL 服务帐户(JWT)]** 选项。
 
    >[!NOTE]
    >
-   >* 您可以查看凭据并执行操作，如生成JWT令牌、复制凭据详细信息、检索客户端密码等。
-   >* 目前，仅支持Adobe的开发人员控制台服务帐户(JWT)凭据类型。 请勿使用 `OAuth Server-to-Server` 凭据类型，直到4月中旬受支持。 有关更多信息，请参阅 [Adobe Developer控制台中的JWT凭据弃用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+   >Ensure that you have selected the correct IMS organization (Brand Portal tenant) from the drop-down (organization) list located at the upper-right corner.
 
-1. 从 **[!UICONTROL 客户端凭据]** 选项卡，复制 **[!UICONTROL 客户端ID]**.
+1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
-   单击 **[!UICONTROL 检索客户端密码]** 并复制 **[!UICONTROL 客户端密码]**.
+   Click **[!UICONTROL Edit project]** to update the **[!UICONTROL Project Title]** and **[!UICONTROL Description]**, and click **[!UICONTROL Save]**.
+   
+1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
 
-   ![服务帐户凭据](assets/service-account5.png)
+1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL AEM Brand Portal]** and click **[!UICONTROL Next]**. 
 
-1. 导航至 **[!UICONTROL 生成JWT]** 制表并复制 **[!UICONTROL JWT有效负荷]** 信息。
+   Ensure that you have access to the Experience Manager Brand Portal service.
 
-您现在可以将客户端ID（API密钥）、客户端密钥和JWT有效负载用于 [配置IMS帐户](#create-ims-account-configuration) 在Experience Manager Assets中。
+1. In the **[!UICONTROL Configure API]** window, click **[!UICONTROL Upload your public key]**. Then, click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. 
 
+   Click **[!UICONTROL Next]**.
+
+   ![Upload Public Key](assets/service-account3.png)
+
+1. Verify the public key and click **[!UICONTROL Next]**.
+
+1. Select **[!UICONTROL Assets Brand Portal]** as the default product profile and click **[!UICONTROL Save configured API]**. 
+
+   ![Select Product Profile](assets/service-account4.png)
+
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option.
+
+   >[!NOTE] 
+   >
+   >* You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
+   >* Currently, only the Adobe's Developer Console Service Account (JWT) credential type is supported. Do not use the `OAuth Server-to-Server` credential type until it is supported in mid-April. Read more at [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
+
+1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
+
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
+
+   ![Service Account Credentials](assets/service-account5.png)
+
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
+
+You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in Experience Manager Assets.
+-->
 <!--
 1. Click **[!UICONTROL Create Integration]**.
 
@@ -344,43 +357,52 @@ IMS 配置包括两个步骤：
 
 -->
 
-### 配置IMS帐户 {#create-ims-account-configuration}
+### 在Adobe Developer控制台中配置OAuth凭据 {#config-oauth}
 
-确保您已执行以下步骤：
+[在Adobe Developer控制台中配置OAuth凭据](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) 并选择Brand Portal API。
 
-* [获取公共证书](#public-certificate)
-* [创建服务帐户(JWT)连接](#createnewintegration)
+### 使用OAuth创建新的Adobe IMS集成 {#create-ims-account-configuration}
 
-执行以下步骤以配置IMS帐户。
+[使用OAuth创建新的Adobe IMS集成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) 并从云解决方案下的下拉列表中选择Brand Portal 。
 
-1. 打开IMS配置并导航到 **[!UICONTROL 帐户]** 选项卡。 你保持页面打开 [获取公共证书](#public-certificate).
+<!--
+Ensure that you have performed the following steps:
 
-1. 为 IMS 帐户指定&#x200B;**[!UICONTROL 标题]**。
+* [Obtain public certificate](#public-certificate)
+* [Create service account (JWT) connection](#createnewintegration)
+-->
 
-   在 **[!UICONTROL 授权服务器]** 字段中，指定URL： [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
+<!--1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
-   在中指定客户端ID **[!UICONTROL API密钥]** 字段， **[!UICONTROL 客户端密码]**、和 **[!UICONTROL 有效负荷]** （JWT有效负荷）您已复制的时间 [创建服务帐户(JWT)连接](#createnewintegration).
+1. Specify a **[!UICONTROL Title]** for the IMS account.
 
-   单击&#x200B;**[!UICONTROL 创建]**。
+   In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)  
+-->
+<!--
+1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
+-->
+<!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
-   已配置IMS帐户。
+   The IMS account is configured. 
 
-   ![IMS 帐户配置](assets/create-new-integration6.png)
+   ![IMS Account configuration](assets/create-new-integration6.png)
 
+ <!--  
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
-1. 选择IMS帐户配置并单击 **[!UICONTROL 检查运行状况]**.
+   Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   单击 **[!UICONTROL Check]** 对话框中。 成功配置时，将显示一条消息： *已成功检索令牌*.
-
-   ![Adobe IMS配置检查运行状况。](assets/create-new-integration5.png)
-
+   ![Adobe IMS Configurations Check Health.](assets/create-new-integration5.png)
+-->
+<!--
 >[!CAUTION]
 >
->您必须只有一个IMS配置。
+>You must have only one IMS configuration.
 >
->确保IMS配置通过运行状况检查。 如果配置未通过运行状况检查，则该配置无效。 您必须删除它并创建另一个有效配置。
+>Ensure that the IMS configuration passes the health check. If the configuration does not pass the health check, it is invalid. You must delete it and create another valid configuration.
+-->
 
-### 配置云服务 {#configure-the-cloud-service}
+### 配置云服务 {#configure-cloud-service}
 
 执行以下步骤以配置Brand Portal云服务：
 
@@ -405,7 +427,7 @@ IMS 配置包括两个步骤：
 您现在可以通过检查分发代理并将资产发布到Brand Portal来测试配置。
 
 **如果启用了安全预览，则在SPS中允许列表出口IP**
-如果将Dynamic Media-Scene7与 [已启用安全预览](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) （对于公司），则建议Scene7公司管理员 [允许列表公共出口IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) 适用于使用SPS (Scene7 Publishing System) Flash UI的各个地区。
+如果将Dynamic Media-Scene7与 [已启用安全预览](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) 对于公司，请建议Scene7公司管理员 [允许列表公共出口IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) 适用于使用SPS (Scene7 Publishing System) Flash UI的各个地区。
 出口IP如下所示：
 
 | **区域** | **出口IP** |
