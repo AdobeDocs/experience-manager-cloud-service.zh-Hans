@@ -2,10 +2,10 @@
 title: AEM Assets与Adobe Express的本机集成
 description: AEM Assets与Adobe Express本机集成允许您从Adobe Express用户界面中直接访问AEM Assets中存储的资源。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
+source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 22%
+source-wordcount: '598'
+ht-degree: 21%
 
 ---
 
@@ -65,7 +65,7 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
 
 6. 同样，定义 **[!UICONTROL 关键字]** 和 **[!UICONTROL 渠道]** 字段。
 
-7. 单击&#x200B;**[!UICONTROL 上传]**&#x200B;以将资源上传到 AEM Assets。
+7. 单击 **[!UICONTROL 上传]** 以将资源上传到AEM Assets。
 
 
 
