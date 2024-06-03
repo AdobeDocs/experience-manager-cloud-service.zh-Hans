@@ -2,10 +2,10 @@
 title: AEM Assets与Adobe Express的本机集成
 description: AEM Assets与Adobe Express本机集成允许您从Adobe Express用户界面中直接访问AEM Assets中存储的资源。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
+source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 21%
+source-wordcount: '612'
+ht-degree: 17%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
 
 3. 单击 **[!UICONTROL 资产]** 在左侧导航窗格中可用。 Adobe Express显示您有权访问的存储库列表，以及在根级别可用的资源和文件夹列表。
 
-4. 浏览或搜索存储库中的资产以拖放到画布上。 您可以使用各种可用的过滤器来筛选资源，例如文件类型、MIME类型和维度。
+4. 浏览或搜索存储库中的资产以拖放到画布上。 您可以使用各种可用的筛选器来筛选资源，例如文件类型、MIME类型和维度。
 
    >[!NOTE]
    >
@@ -43,32 +43,25 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
 
 ## 将 Adobe Express 项目保存在 AEM Assets 中 {#save-express-projects-in-assets}
 
-在 Express 画布中纳入适当的修改后，即可将该画布保存在 AEM Assets 存储库中。
+在Express画布中加入适当的修改后，可将其保存到AEM Assets存储库中。
 
 1. 单击 **[!UICONTROL 共享]** 以打开 **[!UICONTROL 共享]** 对话框。
 
    ![将资源保存在 AEM 中](assets/adobe-express-share.png)
 
-2. 从右窗格的“Storage（存储）”部分中选择， **AEM Assets**. Adobe Express显示“上载”对话框。
-3. 指定资源的名称和格式。您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式保存画布内容。 格式会根据资源自动进行调整。
-
-   >[!NOTE]
-   >
-   >选择“当前页面”会将文件保存到目标文件夹中。 选择“所有页面”会在目标中为所有非PDF文件创建一个新文件夹，并将它们保存在该位置，而PDF文件会作为单个文件保存到目标文件夹中。
-
-4. 单击下的文本区域 **目标文件夹** 以选择位置并保存资产。
+2. 从右窗格的“Storage（存储）”部分中，选择 **AEM Assets**. Adobe Express显示“上载”对话框。
+3. 选择 **当前页** 或 **所有页面** 保存选项。 选择 **当前页** 将文件保存在目标文件夹中，但是，选择 **所有页面** 在目标中为所有非PDF文件创建一个新文件夹，并将它们另存为单独的文件，而PDF文件则另存为目标文件夹中的单个文件。
+4. 指定资源的名称和格式。您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式保存画布内容。 格式会根据资源自动进行调整。
+5. 单击下的文件夹图标 **目标文件夹** 以选择位置并保存资产。
 
    ![将资源保存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. 可选：您可以使用为上传添加营销活动元数据 **项目或营销活动名称** 字段。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
-作为最佳实践，Adobe建议在其他字段中指定值，并且为上传的资源创建增强的搜索体验。
+6. 可选：您可以使用为上传添加营销活动元数据 **项目或营销活动名称** 字段。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
+作为最佳实践，Adobe建议在其余字段中指定值，并为您上传的资源创建增强的搜索体验。
 
-6. 同样，定义 **[!UICONTROL 关键字]** 和 **[!UICONTROL 渠道]** 字段。
+7. 同样，定义 **[!UICONTROL 关键字]** 和 **[!UICONTROL 渠道]** 字段。
 
-7. 单击 **[!UICONTROL 上传]** 以将资源上传到AEM Assets。
-
-
-
+8. 单击 **[!UICONTROL 上传]** 以将资源上传到AEM Assets。
 
 ## 限制 {#limitations}
 
@@ -76,11 +69,13 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
 
 2. 对于MP4视频导入：
 
-   a)支持的最大文件大小为200 MB。 如果超过此限制，将显示一条警告消息。
-b)支持的最大分辨率是3840 X 3840像素。
-c)不支持具有透明背景（Alpha通道）的视频。
+   1. 支持的最大文件大小为200 MB。 如果超过此限制，将显示一条警告消息。
+   2. 支持的最大分辨率是3840 X 3840像素。
+   3. 不支持具有透明背景（Alpha通道）的视频。
 
 3. 对于MP4视频导出：
 
-   a)支持的最大文件大小为200 MB。 如果超过此限制，将显示一条警报消息，其中包含解决方法建议，如下图所示。
-   ![带有解决方法的警报](/help/assets/assets/alert-with-workaround.png)
+   1. 支持的最大文件大小为200 MB。 如果超过此限制，警报会建议将视频缩减到200 MB或更小，或者在下载视频后手动将其上传到AEM Assets目标文件夹。
+
+
+
