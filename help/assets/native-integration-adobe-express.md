@@ -2,7 +2,7 @@
 title: AEM Assets与Adobe Express的本机集成
 description: AEM Assets与Adobe Express本机集成允许您从Adobe Express用户界面中直接访问AEM Assets中存储的资源。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 21%
@@ -58,7 +58,7 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
 
 4. 单击下的文本区域 **目标文件夹** 以选择位置并保存资产。
 
-   ![将资源保存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![将资源保存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. 可选：您可以使用为上传添加营销活动元数据 **项目或营销活动名称** 字段。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
 作为最佳实践，Adobe建议在其他字段中指定值，并且为上传的资源创建增强的搜索体验。
@@ -82,5 +82,5 @@ c)不支持具有透明背景（Alpha通道）的视频。
 
 3. 对于MP4视频导出：
 
-   a)支持的最大文件大小为200 MB。 如果超过此限制，将显示一条警告消息，其中包含下图中显示的解决方法建议
-   ![带有解决方法的警报](/help/assets/assets/alert-with-workaround.png).
+   a)支持的最大文件大小为200 MB。 如果超过此限制，将显示一条警报消息，其中包含解决方法建议，如下图所示。
+   ![带有解决方法的警报](/help/assets/assets/alert-with-workaround.png)
