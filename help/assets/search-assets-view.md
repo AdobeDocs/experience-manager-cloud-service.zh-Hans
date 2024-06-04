@@ -3,10 +3,10 @@ title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
 description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现合适的资源，并帮助您提高内容速度。
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: e706ee7228aeb08c99567f607a3435d9f687ef34
+source-git-commit: 4313f2bdfe78457204e26069f3af4bda3f5902e7
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 91%
+source-wordcount: '1908'
+ht-degree: 92%
 
 ---
 
@@ -242,7 +242,7 @@ Experience Manager Assets允许您为您的组织选择默认登录页面。 使
 
 ## 上下文搜索 {#contextual-search}
 
-您还可以通过定义文本提示来搜索存储库中可用的资产。Experience Manager Assets 会自动将这些文本提示转换为搜索过滤器，并显示搜索结果。您可以使用“过滤器窗格”查看和修改自动过滤器，以进一步缩小搜索结果。
+您还可以通过定义文本提示来搜索存储库中可用的资产。Experience Manager Assets 会自动将这些文本提示转换为搜索过滤器，并显示搜索结果。您可以使用“过滤器窗格”查看和修改自动过滤器，进一步缩小搜索结果。
 
 ### 访问上下文搜索 {#access-contextual-search}
 
@@ -261,7 +261,7 @@ Experience Manager Assets允许您为您的组织选择默认登录页面。 使
 
 ### 支持的过滤器 {#supported-filters}
 
-上下文搜索支持以下现成的过滤器。根据这些过滤器设置文本提示，以查看适当的搜索结果。
+上下文搜索支持以下现成的过滤器。根据这些过滤器设置文本提示，查看适当的搜索结果。
 
 * 图像高度
 
@@ -311,15 +311,13 @@ Experience Manager Assets允许您为您的组织选择默认登录页面。 使
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-<!--
-### Disable Contextual Search {#disable-contextual-search}
+### 禁用上下文搜索 {#disable-contextual-search}
 
-Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
+管理员还可以选择为组织中的用户禁用“上下文搜索”功能。若要禁用，请执行以下步骤：
 
-1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
+1. 前往“**[!UICONTROL 设置]**”>“**[!UICONTROL 常规设置]**”。
 
-1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
--->
+1. 在[!UICONTROL 上下文搜索]部分中，关闭&#x200B;**[!UICONTROL 为您的组织启用上下文搜索]**&#x200B;切换按钮，可为您组织中的所有用户停用“上下文搜索”功能。
 
 ### “上下文搜索”反馈 {#contextual-search-feedback}
 
