@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### 调试注意事项 {#debugging-considerations}
 
-为了验证该流量是否确实在预期的专用 IP 地址上传出，请查看目标服务中的日志（如果可用）。否则，调用Debugging服务(例如 [https://ifconfig.me/ip](https://ifconfig.me/ip)，返回调用IP地址。
+为了验证该流量是否确实在预期的专用 IP 地址上传出，请查看目标服务中的日志（如果可用）。否则，调用 [https://ifconfig.me/ip](https://ifconfig.me/ip) 等调试服务可能会有帮助，调试服务会返回调用 IP 地址。
 
 ## 虚拟专用网络 (VPN) {#vpn}
 
@@ -633,7 +633,7 @@ Header always set Cache-Control private
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**程序概览**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，单击&#x200B;**启用网络基础架构**。
+1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，单击&#x200B;**启用网络基础架构**。
 
    ![选择环境以启用高级网络](assets/advanced-networking-ui-enable-environments.png)
 
@@ -692,7 +692,7 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**程序概览**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，单击省略号按钮。
+1. 从&#x200B;**程序概述**&#x200B;页面，导航至&#x200B;**环境**&#x200B;选项卡，然后在左侧面板的&#x200B;**环境**&#x200B;标题下选择您希望启用高级网络配置的环境。然后选择所选环境的&#x200B;**高级网络配置**&#x200B;选项卡，单击省略号按钮。
 
    ![在程序级别选择编辑或删除高级网络](assets/advanced-networking-ui-edit-delete.png)
 
