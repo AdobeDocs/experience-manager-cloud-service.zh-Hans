@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维护发行说明。'
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 558babc0124a8ee8c1337b91c5ef016ed238c935
+source-git-commit: 624ba716cb2ec2a45b0ed70516d0b2ad1db94912
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 46%
+source-wordcount: '353'
+ht-degree: 44%
 
 ---
 
@@ -31,11 +31,13 @@ ht-degree: 46%
 
 ### 修复的问题 {#fixed-issues-16544}
 
-* DXML-17171： AEM Guides：对超过15KB的主题执行复制和粘贴操作失败，并出现意外错误。
-* DXML-17088： AEM Guides：用于更改文档状态的功能 **文件属性** 面板无法正常工作，并且已更改为 *草稿* 省/州。
-* DXML-16931： AEM Guides：主题中的链接图像在创建版本后无法在基线中显示。
-* DXML-16896： AEM Guides：可重用内容面板在以下情况下不列出元素： **用户首选项** 设置为通过以下方式查看文件 **文件名**.
 * GRANITE-51375：如果未指定中间路径，则idp-sync会引发NPE。
+* GUIDES-17171：对超过15KB的主题执行复制和粘贴操作失败，并出现意外错误。
+* GUIDES-17088：用于更改文档状态的功能 **文件属性** 面板无法正常工作，并且已更改为 *草稿* 省/州。
+* GUIDES-16931：创建版本后，主题中的链接图像无法在基线中显示。
+* GUIDES-16896：可重用内容面板在 **用户首选项** 设置为通过以下方式查看文件 **文件名**.
+
+有关Experience Manager指南中新增功能和增强功能以及所修复问题的更多信息，请查看 [Experience Manager指南发行路线图](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### 已知问题 {#known-issues-16544}
 
