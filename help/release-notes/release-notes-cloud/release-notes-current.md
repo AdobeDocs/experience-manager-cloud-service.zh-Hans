@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
+source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 24%
+source-wordcount: '1865'
+ht-degree: 23%
 
 ---
 
@@ -218,7 +218,12 @@ Real Use Monitoring服务（客户端集合）提供了交互的更精确反映�
 
 ## [!DNL Experience Manager] 指南 {#guides}
 
-您可以找到最新版本的Adobe Experience Manager Guides新增功能和增强功能的完整列表 [此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **将主题或其元素发布到体验片段**
+现在，Experience Manager指南允许您将主题或其元素发布到体验片段。 体验片段是一个模块化的内容单元，它集成了内容和布局。  体验片段非常有用，可以帮助您创建一致且引人入胜的体验。
+* **能够将主题资源元数据传递到本机PDF输出**
+您可以在生成本机PDF输出时添加主题资源元数据。 此功能可帮助您将不同主题（如主题标题和作者）的特定元数据添加到主题页眉和页脚。
+
+有关版本中新增功能和增强功能及问题的更多信息，请查看 [Experience Manager指南发行路线图](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
