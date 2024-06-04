@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 64704592c663c0287505d3a8a8e92781d1702497
+source-git-commit: e40ca26e39bea146f69a82fb583467707537d4ab
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1423'
 ht-degree: 34%
 
 ---
@@ -82,8 +82,8 @@ ht-degree: 34%
 | gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
 | 对象 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
 | 美元z | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
 | SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
