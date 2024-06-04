@@ -3,7 +3,7 @@ title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
 description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现合适的资源，并帮助您提高内容速度。
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: 4313f2bdfe78457204e26069f3af4bda3f5902e7
+source-git-commit: f476088e13466e1c41368112fb161bcbeee2c5cd
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 92%
@@ -331,6 +331,6 @@ Experience Manager Assets允许您为您的组织选择默认登录页面。 使
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
-* 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
+* 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
 * 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
