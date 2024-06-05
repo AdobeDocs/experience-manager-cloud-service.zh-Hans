@@ -2,7 +2,10 @@
 title: 管理活动
 description: 通过“活动”控制台，您可以创建、组织和管理品牌的营销活动
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 85%
@@ -105,7 +108,8 @@ ht-degree: 85%
 1. 如果您使用的是 AEM 定位或 Adobe Target 体验定位：
    1. 选择 **选择受众** 并选择您的体验定位的区段。
    1. 选择 **添加体验**，键入名称，然后选择 **确定**.
-   1. 选择&#x200B;**下一步**。如果您使用的是 Adobe Target A/B 测试，请执行以下操作：
+   1. 选择 **下一个**.
+如果您使用的是 Adobe Target A/B 测试，请执行以下操作：
    1. 选择受众框中的铅笔以选择受众。
    1. 选择 **添加体验**，键入名称，然后选择 **确定**.
    1. 输入显示每个体验的流量百分比。

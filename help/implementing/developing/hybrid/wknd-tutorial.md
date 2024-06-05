@@ -2,7 +2,9 @@
 title: WKND SPA项目
 description: 使用此多部分教程让自己沉浸在SPA开发中，引导您完成项目设置、组件映射、前端开发工具和应用程序路由，以使用React和Angular实施您自己的SPA。
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%

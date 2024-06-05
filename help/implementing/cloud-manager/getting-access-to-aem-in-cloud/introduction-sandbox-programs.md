@@ -2,9 +2,12 @@
 title: 沙盒程序简介
 description: 了解沙盒程序与生产程序的区别。
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '464'
 ht-degree: 98%
 
 ---

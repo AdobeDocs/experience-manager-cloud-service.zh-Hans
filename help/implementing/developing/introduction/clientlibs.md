@@ -2,7 +2,9 @@
 title: 在AEMas a Cloud Service上使用客户端库
 description: AEM提供了客户端库文件夹，允许您在存储库中存储客户端代码(clientlibs)，将其组织为不同类别，并定义何时以及如何向客户端提供每种类别的代码
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2497'
 ht-degree: 1%

@@ -2,7 +2,9 @@
 title: 配置 ContextHub
 description: 了解如何配置Context Hub，它是一个用于存储、操作和呈现上下文数据的框架。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%

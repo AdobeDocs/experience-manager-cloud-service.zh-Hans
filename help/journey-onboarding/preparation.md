@@ -2,8 +2,10 @@
 title: 入门准备
 description: 在载入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 100%
 

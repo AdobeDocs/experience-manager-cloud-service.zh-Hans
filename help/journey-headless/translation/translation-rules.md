@@ -2,10 +2,13 @@
 title: 为 Headless 内容配置翻译规则
 description: 了解如何定义翻译规则，标识要翻译的内容。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +76,7 @@ ht-degree: 99%
    ![添加上下文](assets/add-translation-context.png)
 1. 使用路径浏览器选择所需的路径，然后选择&#x200B;**确认**&#x200B;以保存。请记住，包含 Headless 内容的内容片段通常位于 `/content/dam/<your-project>` 下。
    ![选择路径](assets/select-context.png)
-1. 选择您创建的上下文，然后选择 **编辑**. 这将打开&#x200B;**翻译规则编辑器**以配置属性。
+1. 选择您创建的上下文，然后选择&#x200B;**编辑**。这将打开&#x200B;**翻译规则编辑器**以配置属性。
    ![翻译规则编辑器](assets/translation-rules-editor.png)
 1. 默认情况下，所有配置都继承自父路径，在此示例中为 `/content/dam`。取消选中选项&#x200B;**继承自`/content/dam`**&#x200B;以便向配置添加其他字段。
 1. 取消选中后，在列表的&#x200B;**常规**&#x200B;部分下，添加您[以前标为要翻译的字段](getting-started.md#content-models)的内容片段模型的属性名称。

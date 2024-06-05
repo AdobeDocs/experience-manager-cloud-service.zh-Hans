@@ -2,7 +2,10 @@
 title: 响应式布局
 description: AEM 让您能够为页面实现响应式布局
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 85%

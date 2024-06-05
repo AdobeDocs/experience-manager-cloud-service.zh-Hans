@@ -2,7 +2,10 @@
 title: 个性化和内容定位
 description: 了解如何使用 AEM 创建个性化、有针对性的内容
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 89%

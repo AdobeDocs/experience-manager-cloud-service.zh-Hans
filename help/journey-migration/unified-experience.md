@@ -2,9 +2,11 @@
 title: 用于代码重构工具的统一体验
 description: 了解适用于代码重构工具的统一体验。
 exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---

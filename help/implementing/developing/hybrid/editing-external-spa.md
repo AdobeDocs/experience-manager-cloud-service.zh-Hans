@@ -2,10 +2,12 @@
 title: 在 AEM 中编辑外部 SPA
 description: 本文档介绍了将独立SPA上传到AEM实例、添加内容的可编辑部分以及启用创作的建议步骤。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 2%
+source-wordcount: '2374'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +19,7 @@ ht-degree: 2%
 
 本文档介绍了将独立SPA上传到AEM实例、添加内容的可编辑部分以及启用创作的建议步骤。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 先决条件很简单。
 
@@ -153,7 +155,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 创建可创作的React组件后，即可在整个应用程序中使用它们。
 
-让我们举一个示例页面，在该页面中，您必须从WKND SPA项目添加文本。 对于此示例，您要显示文本“Hello World！” 开启 `/content/wknd-spa-react/us/en/home.html`.
+让我们举一个示例页面，在该页面中，您必须从WKND SPA项目添加文本。 对于此示例，您要显示文本“Hello World！” 日期 `/content/wknd-spa-react/us/en/home.html`.
 
 1. 确定要显示的节点的路径。
 
@@ -369,7 +371,7 @@ RemotePage组件希望实施提供类似于资产清单的资产清单 [在此�
 * [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
 * [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [WKND SPA项目](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hans)
-* [利用 React 在 AEM 中开始使用 SPA](/help/implementing/developing/hybrid/getting-started-react.md)
+* [在AEM中使用React快速入门SPA](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA参考资料（API参考）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint和PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA模型路由](/help/implementing/developing/hybrid/routing.md)

@@ -2,7 +2,9 @@
 title: 扩展 ContextHub
 description: 当提供的ContextHub存储和模块不符合您的解决方案要求时，定义这些存储和模块的新类型
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%

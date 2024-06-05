@@ -2,17 +2,19 @@
 title: 内容转移工具疑难解答
 description: 了解如何对内容传输工具进行故障排除
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 91%
+source-wordcount: '179'
+ht-degree: 88%
 
 ---
 
 # 内容转移工具疑难解答 {#troubleshoot-content-transfer-tool}
 
 
-## 缺少 Blob ID {#missing-blobs}
+## 缺少Blob ID {#missing-blobs}
 
 如果报告缺少的 Blob ID（如下所述），则表明需要在现有存储库中执行一致性检查并还原缺少的 Blob。
 `ERROR o.a.j.o.p.b.AbstractSharedCachingDataStore - Error retrieving record [ba45c53f8b687e7056c85dceebf8156a0e6abc7e]`
@@ -40,7 +42,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 可以检查在上述指定 *OUT_DIR* 中为保持一致性而创建的文件是否存在缺少二进制文件的路径，以及是否执行了相应操作，例如从备份中还原、删除路径、重建索引等。
 
 
-## UI 行为 {#ui-behavior}
+## UI行为 {#ui-behavior}
 
 作为用户，您可能会在内容传输工具的用户界面 (UI) 中看到以下行为更改：
 

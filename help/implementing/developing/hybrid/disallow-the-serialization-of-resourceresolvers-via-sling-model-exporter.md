@@ -1,15 +1,17 @@
 ---
-title: 不允许通过Sling模型导出器序列化资源解析器
-description: 不允许通过Sling模型导出器序列化资源解析器
-source-git-commit: 4543a4646719f8433df7589b21344433c43ab432
+title: 禁止通过 Sling 模型导出器序列化 ResourceResolver
+description: 禁止通过 Sling 模型导出器序列化 ResourceResolver
+exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# 不允许通过Sling模型导出器序列化资源解析器 {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
+# 禁止通过 Sling 模型导出器序列化 ResourceResolver {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
 Sling模型导出器功能允许将Sling模型对象序列化为JSON格式。 此功能之所以得到广泛应用，是因为它使SPA（单页应用程序）能够轻松从AEM访问数据。 在实施端，使用Jacson Databind库来序列化这些对象。
 
@@ -50,6 +52,3 @@ Adobe要求所有客户检查其应用程序日志和代码库，以查看他们
 假设在大多数情况下，这些必需的更改是直接的，因为 `ResourceResolver` 对象完全不需要JSON输出，因为前端应用程序通常不需要其中包含的信息。 这意味着，在大多数情况下，应足以排除 `ResourceResolver` Jackson考虑的对象(请参见 [规则](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not))。
 
 如果Sling模型受此问题影响但未发生更改，则会显式禁用的 `ResourceResolver` 对象(在第2步中由Adobe执行)将强制JSON输出中的更改。
-
-
-

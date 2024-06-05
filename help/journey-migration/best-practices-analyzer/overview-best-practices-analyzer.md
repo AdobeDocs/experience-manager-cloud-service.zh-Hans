@@ -2,10 +2,12 @@
 title: Best Practices Analyzer概述
 description: 了解如何使用最佳实践分析器来评估AEM实施对推荐最佳实践的遵守情况
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 65%
+ht-degree: 61%
 
 ---
 
@@ -22,7 +24,7 @@ ht-degree: 65%
 
 ## Best Practices Analyzer报告 {#bpa-report}
 
-最佳实践分析器报告可用于概要了解一般升级就绪性。该报告包含在成功部署到 AEM as a Cloud Service 之前必须解决的各类问题的发现结果。
+Best Practices Analyzer报告用于深入了解一般升级准备情况。 该报告包含在成功部署到 AEM as a Cloud Service 之前必须解决的各类问题的发现结果。
 
 最佳实践分析器报告包含以下类别：
 

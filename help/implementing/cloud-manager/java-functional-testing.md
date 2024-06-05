@@ -2,10 +2,13 @@
 title: Java&trade; 功能测试
 description: 了解如何为 AEM as a Cloud Service 编写 Java&trade; 功能测试
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -128,7 +131,7 @@ Adobe 用来编写产品功能测试的工具也可以用来编写自定义功�
 
 >[!NOTE]
 >
->此更改需要在2024年4月6日之前执行。
+>此更改需要在 2024 年 4 月 6 日之前执行。
 >如果未更新依赖项库，则会导致“自定义功能测试”步骤中的管道失败。
 
 ### 本地测试执行 {#local-test-execution}

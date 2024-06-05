@@ -2,7 +2,10 @@
 title: 管理标记
 description: 了解如何在 AEM 中管理标记以整理内容。
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Workflow
+role: Admin
+source-git-commit: d46678e999889934631bd0c678de5b060bc38f44
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 73%

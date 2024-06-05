@@ -2,10 +2,12 @@
 title: 存储库现代化器
 description: 了解如何重构现有项目包，使其与为Adobe Experience Manager as a Cloud Service定义的项目结构兼容。
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 5%
+source-wordcount: '304'
+ht-degree: 2%
 
 ---
 

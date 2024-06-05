@@ -3,8 +3,9 @@ description: “在某些情况下，将元数据集中应用到网站会很有�
 title: 批量元数据
 feature: Edge Delivery Services
 exl-id: 2d56c4e9-1a0f-470b-8c42-bc48f61ea3eb
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '22'
 ht-degree: 100%
 

@@ -1,15 +1,18 @@
 ---
-title: 站点控制台
+title: Sites 控制台
 description: 了解如何使用站点控制台来管理和组织AEM页面。
-source-git-commit: 91ce6a0c880436327f4dd333a2eb3d36a4e89a4d
+exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 45%
 
 ---
 
-
-# 站点控制台 {#sites-console}
+# Sites 控制台 {#sites-console}
 
 了解如何使用 **站点** 控制台以管理和组织AEM页面。
 

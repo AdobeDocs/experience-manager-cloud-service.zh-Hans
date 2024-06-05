@@ -2,10 +2,12 @@
 title: 内容转换器概述
 description: 了解如何使用内容转换器检测和修复BPA报告的内容相关问题。
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 2%
+source-wordcount: '383'
+ht-degree: 3%
 
 ---
 

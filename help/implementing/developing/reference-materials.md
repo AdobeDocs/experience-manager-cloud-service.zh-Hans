@@ -2,7 +2,9 @@
 title: API 参考材料
 description: AEM具有广泛而强大的API，可用于您的数字体验项目。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 4%

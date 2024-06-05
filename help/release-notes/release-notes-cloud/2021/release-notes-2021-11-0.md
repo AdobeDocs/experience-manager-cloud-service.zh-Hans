@@ -2,9 +2,11 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.11.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.11.0 版的发行说明。'
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1058'
 ht-degree: 95%
 
 ---
@@ -24,7 +26,7 @@ ht-degree: 95%
 ## 发布日期 {#release-date}
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新版本 (2021.11.0) 的发布日期为 2021 年 12 月 16 日。
-下一个版本 (2022.1.0) 的发布日期为 2022 年 2 月 3 日。
+以下版本(2022.1.0)的发布日期为2022年2月3日。
 
 ## 发布视频 {#release-video}
 
@@ -52,7 +54,7 @@ ht-degree: 95%
 
 ### [!DNL Forms] 预发行渠道中提供的新功能 {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[Communication API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hans) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务允许您以同步和批处理模式生成文档。 API 使您能够创建应用程序，这些应用程序允许您：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[Communication API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hans) 可帮助您组合模板和 XML 数据，以生成各种格式的打印文档。该服务让您能够以同步和批处理模式生成文档。API 使您能够创建应用程序，这些应用程序允许您：
 
    * 使用 XML 数据填充模板文件（PDF 和 XDP）来生成文档。
    * 生成各种格式的输出表单，包括非交互式 PDF 打印流。

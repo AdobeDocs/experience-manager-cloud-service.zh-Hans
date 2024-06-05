@@ -1,17 +1,19 @@
 ---
 title: AEM 节点类型
-description: AEM基于Sling，并使用JCR存储库以及两者提供的节点类型，但AEM也提供了一系列自己的节点类型。
+description: AEM基于Sling，使用JCR存储库以及两者都提供的节点类型，但AEM也提供了一系列自己的节点类型。
 exl-id: 82cc28ca-37e2-4ca3-b3e4-cc03bbc5bdf5
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 5%
+source-wordcount: '98'
+ht-degree: 6%
 
 ---
 
 # AEM 节点类型 {#aem-node-types}
 
-由于AEM基于Sling并使用JCR存储库，因此这两个标准提供的节点类型都可以在AEM中使用：
+由于AEM基于Sling并使用JCR存储库，因此这两种标准提供的节点类型都可以在AEM中使用：
 
 * [JCR节点类型](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling节点类型](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)

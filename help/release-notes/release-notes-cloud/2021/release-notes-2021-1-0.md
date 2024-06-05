@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] 2021.1.0版as a Cloud Service发行说明。”'
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 21%
@@ -50,7 +52,7 @@ ht-degree: 21%
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 产品体验管理：为资源和体验片段新增了“商务”属性。 利用此选项卡，可将产品/类别链接到资产和体验片段。 该选项卡还显示所链接的产品/类别的实时数据以及一个链接，该链接用于在产品控制台中显示详细信息。
+* 产品体验管理：为资源和体验片段新增了“Commerce”属性。 利用此选项卡，可将产品/类别链接到资产和体验片段。 该选项卡还显示所链接的产品/类别的实时数据以及一个链接，该链接用于在产品控制台中显示详细信息。
 
 * 发布了CIF Venia参考网站 — 2021.02.02，其中包括最新的CIF核心组件版本v1.7.0。请参阅 [CIF Venia引用站点](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) 以了解更多详细信息。
 

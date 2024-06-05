@@ -2,10 +2,12 @@
 title: 内容传输工具概述
 description: 了解如何使用内容传输工具将内容从内部部署AEM实例传输到AEMas a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 54%
+source-wordcount: '655'
+ht-degree: 52%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 54%
 
 内容传输工具是由Adobe开发的工具，可用于启动将现有内容从源AEM实例（内部部署或AMS）迁移到目标AEM Cloud Service实例。
 
-此工具还会自动传输主体（用户或组）。请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以了解更多信息。
+此工具还会自动传输主体（用户或组）。  请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以了解更多信息。
 
 内容传输工具将内容传输过程与Cloud Acceleration Manager集成。 这使用户能够获得它提供的所有好处：
 

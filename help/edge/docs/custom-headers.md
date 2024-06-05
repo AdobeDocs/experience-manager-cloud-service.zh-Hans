@@ -3,8 +3,9 @@ description: 在某些情况下，在资源中应用自定义 HTTP 响应标头�
 title: 自定义 HTTP 响应标头
 feature: Edge Delivery Services
 exl-id: ae386f02-05fd-4a6a-8285-58f207fed7bc
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 100%
 

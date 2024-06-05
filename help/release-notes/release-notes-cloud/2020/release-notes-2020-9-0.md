@@ -1,15 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版的发行说明。'
-description: ”[!DNL Adobe Experience Manager] 2020.9.0版as a Cloud Service发行说明。”
+description: '"[!DNL Adobe Experience Manager] 2020.9.0版as a Cloud Service发行说明。”'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 18%
+source-wordcount: '711'
+ht-degree: 14%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 版的发行说明  {#release-notes}
+# 的发行说明 [!DNL Adobe Experience Manager] as a Cloud Service2020.9.0 {#release-notes}
 
 以下部分概述了的常规发行说明 [!DNL Experience Manager] as a Cloud Service2020.9.0。
 
@@ -27,16 +29,16 @@ ht-degree: 18%
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* 通过资源微服务生成的演绎版支持对图像文件添加水印。 它可以配置为处理配置文件，并使用PNG文件作为水印。 参见 [为您的资产添加水印](/help/assets/watermark-assets.md).
+* 通过资源微服务生成的演绎版支持对图像文件添加水印。 它可以配置为处理配置文件，并使用PNG文件作为水印。 请参阅 [为资源添加水印](/help/assets/watermark-assets.md).
 
 * 中的增强功能 [!DNL Dynamic Media]
 
-   * 选择性发布 — 营销团队现在可以访问 [!DNL Dynamic Media] 同步到的智能裁剪图像和动态演绎版 [!DNL Dynamic Media] 这样他们就可以制作宣传材料，而完全无需将这些资产发布到 [!DNL Dynamic Media] 用于全球交付。 [!DNL Experience Manager] 和 [!DNL Dynamic Media] 发布是相互分离的，可单独进行以实现这一点。 参见 [选择性发布](/help/assets/dynamic-media/selective-publishing.md).
-   * 管理员现在可以重置 [!DNL Dynamic Media] 预配时收到的Cloud Service密码。 可以在以下位置完成重置 [!DNL Experience Manager] 用户界面，无需使用 [!DNL Dynamic Media Classic] 桌面应用程序。
+   * 选择性发布 — 营销团队现在可以访问 [!DNL Dynamic Media] 同步到的智能裁剪图像和动态演绎版 [!DNL Dynamic Media] 这样他们就可以制作促销材料，而完全无需将这些资产发布到 [!DNL Dynamic Media] 用于全球交付。 [!DNL Experience Manager] 和 [!DNL Dynamic Media] 发布是分离的，可单独进行以实现这一点。 请参阅 [选择性发布](/help/assets/dynamic-media/selective-publishing.md).
+   * 管理员现在可以重置 [!DNL Dynamic Media] 预配时收到的Cloud Service密码。 可以在中完成重置 [!DNL Experience Manager] 界面，无需使用 [!DNL Dynamic Media Classic] 桌面应用程序。
 
 * 要了解以下增强功能，请参阅 [Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
-   * 通过Adobe Document Cloud View SDK集成增强PDF预览。
+   * Adobe Document CloudPDFSDK集成的增强型视图预览。
    * 单击下载功能。
    * 下载体验的新管理配置。
 
@@ -50,7 +52,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### 新增功能 {#what-is-new-commerce}
 
-* 发布了CIF核心组件v1.3.0。参见 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 了解更多详细信息。
+* 已发布CIF核心组件v1.3.0。请参阅 [CIF核心组件](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 以了解更多详细信息。
 
 * 产品和类别模板的产品/类别预览功能现已可用。 这允许AEM中的业务用户/营销人员查看包含真实数据的产品/类别模板。
 
@@ -80,25 +82,25 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * “内容审核”选项卡使用作者域而非发布域错误地显示了基本 URL。
 
-## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+## 云就绪分析器 {#cloud-readiness-analyzer}
 
-请阅读本章内容，了解 Cloud Readiness Analyzer v1.1.0 版的新增功能和更新。
+阅读本节内容，了解Cloud Readiness Analyzer v1.1.0版的新增功能和更新。
 
 ### 新增功能 {#what-is-new-cra}
 
-* Cloud Readiness Analyzer (CRA)具有显示明确的 **生成报告** 用户单击按钮以执行CRA。
+* 云就绪分析器(CRA)具有一个显示明确的start状态控制台 **生成报告** 按钮供用户单击以执行CRA。
 
 * CRA UI在运行时会显示进度。 它显示正在分析的项目以及在执行过程中找到的结果。
 
-* CRA报告以表格形式显示调查结果的摘要和数量，按调查结果类型和重要性级别进行整理。 单击该发现结果的编号将自动滚动到该发现结果在报告中的位置。
+* CRA报告以表格形式显示了调查结果的摘要和数量，按调查结果类型和重要性级别进行整理。 单击该调查结果的编号将自动滚动到该调查结果在报告中的位置。
 
 ### 错误修复 {#cra-bug-fixes}
 
-* 在某些情况下，在强制刷新后，CRA报表不会更新。 此问题已在此版本中修复。
+* 在某些情况下，在强制刷新后，CRA报表不会更新。 此版本中已修复此问题。
 
 ## 内容传输工具 {#content-transfer-tool}
 
-阅读本节内容，了解内容传输工具版本1.1.10的新增功能和更新。
+阅读本节内容，了解内容传输工具版本v1.1.10的新增功能和更新。
 
 ### 新增功能 {#what-is-new-ctt}
 
@@ -106,7 +108,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * CTT用户界面具有自动重新加载功能，每30秒重新加载一次概述页面。
 
-* 添加到CTT用户界面以检索的按钮 *访问令牌* 很容易。
+* 添加到CTT用户界面以检索的按钮 *访问令牌* 轻而易举。
 
 * 为添加了描述性验证消息 *URL* 和 *迁移集名称*.
 
@@ -118,8 +120,8 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * AIO-CLI插件支持Repository Modernizer，并允许用户使用插件执行该工具。
 
-  参见 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 了解更多详细信息。
+  请参阅 [Git资源：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) 以了解更多详细信息。
 
 * Repository Modernizer实用程序可用于将现有项目包重构为与为AEMas a Cloud Service定义的项目结构兼容的包。
 
-  参见 [Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 了解更多详细信息。
+  请参阅 [Git资源：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 以了解更多详细信息。

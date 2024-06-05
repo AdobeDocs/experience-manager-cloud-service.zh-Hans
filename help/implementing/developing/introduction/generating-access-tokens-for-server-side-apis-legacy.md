@@ -3,7 +3,9 @@ title: 为服务器端API生成访问令牌（旧版）
 description: 了解如何通过生成安全JWT令牌来促进第三方服务器和AEMas a Cloud Service之间的通信
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -123,7 +125,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 >[!NOTE]
 >
-本地开发访问令牌的有效期最长为24小时，之后必须使用相同方法重新生成该令牌。
+>本地开发访问令牌的有效期最长为24小时，之后必须使用相同方法重新生成该令牌。
 
 开发人员可以使用此令牌从其非AEM测试应用程序向AEMas a Cloud Service环境进行调用。 通常，开发人员会将此令牌与非AEM应用程序一起用在他们自己的笔记本电脑上。 此外，AEM as a Cloud通常是非生产环境。
 
@@ -152,7 +154,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 >[!NOTE]
 >
-单击 **刷新服务凭据** 按钮时，旧凭据将保持注册状态直到其过期，但在任何时候，开发人员控制台中只能查看最新的凭据集。
+> 单击 **刷新服务凭据** 按钮时，旧凭据将保持注册状态直到其过期，但在任何时候，开发人员控制台中只能查看最新的凭据集。
 
 ## 服务凭据吊销 {#service-credentials-revocation}
 

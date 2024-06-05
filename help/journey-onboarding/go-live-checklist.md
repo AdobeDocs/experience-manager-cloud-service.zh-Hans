@@ -2,8 +2,10 @@
 title: 上线清单
 description: 了解成功上线 AEM as a Cloud Service 所需具备的所有要素
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
-source-git-commit: 581f075483280e4b33574bfd4cc1cb01b5601440
-workflow-type: ht
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 100%
 

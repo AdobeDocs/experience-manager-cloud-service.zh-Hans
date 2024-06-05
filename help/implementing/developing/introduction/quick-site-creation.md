@@ -2,10 +2,12 @@
 title: 快速站点创建和前端自定义
 description: 了解快速站点创建工具如何使用站点模板、主题和前端管道来快速部署新站点并使前端开发脱钩。
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 

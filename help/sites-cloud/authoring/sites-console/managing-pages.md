@@ -1,13 +1,16 @@
 ---
 title: 管理页面
 description: 了解如何在AEM中管理网站的页面，包括移动、复制和删除。
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 64%
 
 ---
-
 
 # 管理页面 {#managing-pages}
 

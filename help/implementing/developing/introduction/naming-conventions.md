@@ -2,23 +2,25 @@
 title: 命名约定
 description: 存储库中的节点遵循Java内容存储库的命名约定
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '201'
 ht-degree: 1%
 
 ---
 
 # 命名约定{#naming-conventions}
 
-存储库中的节点遵循Java内容存储库的命名约定。 但是，AEM对页面节点名称施加了进一步的约定。
+存储库中的节点遵循Java内容存储库的命名约定。 但是，AEM对页面节点名称施加进一步的约定。
 
 ## 页面的命名约定 {#naming-conventions-for-pages}
 
 这些命名惯例在各级实施：
 
 * JcrUtil：的AEM实现 [JCR实用程序](#jcr-utilities).
-* PageManager： [页面管理器](#page-manager) 提供页面级别操作的方法。
+* PageManager： [页面管理器](#page-manager) 提供页面级操作的方法。
 * 在AEM UI中 {#ui-behavior}
 
 ### JCR实用程序 {#jcr-utilities}
@@ -34,7 +36,7 @@ ht-degree: 1%
 
 ### 页面管理器 {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 提供页面级别操作的方法，基于 [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 提供页面级操作的方法，基于 [JCRUtil](#jcr-utilities).
 
 ### AEM UI行为 {#ui-behavior}
 

@@ -2,10 +2,12 @@
 title: 在发布实例上运行内容转移工具
 description: 在发布实例上运行内容转移工具
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 12%
+ht-degree: 11%
 
 ---
 

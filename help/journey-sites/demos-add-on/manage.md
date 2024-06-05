@@ -2,8 +2,10 @@
 title: 管理您的演示站点
 description: 了解可用于帮助您管理演示站点的工具以及如何删除它们。
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
-workflow-type: ht
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 100%
 

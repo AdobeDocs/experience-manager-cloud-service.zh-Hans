@@ -2,14 +2,14 @@
 title: 适用于App Builder的Adobe Developer控制台
 description: 了解Adobe Developer控制台和App Builder项目。
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
 kt: 9453, 9467, 9468, 9469
 thumbnail: 339162.jpg
 exl-id: bf358ead-cd39-4284-86d5-5b4ab0cf1ae3
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 适用于App Builder的Adobe Developer控制台
 
-了解Adobe Developer控制台是什么，以及如何访问和导航它。
+了解什么是Adobe Developer Console以及如何访问和导航它。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339162/?quality=12&learn=on)
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/339164/?quality=12&learn=on)
 
-## 洞察和配额使用情况
+## 分析和配额使用情况
 
 了解App Builder应用程序洞察和配额使用情况。
 

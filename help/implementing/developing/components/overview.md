@@ -2,7 +2,9 @@
 title: 组件概述
 description: 组件是模块化单元，可实施特定功能以在您的网站上展示您的内容
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 100%

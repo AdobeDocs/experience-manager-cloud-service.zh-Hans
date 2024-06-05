@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 版的发行说明。'
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 41%
+source-wordcount: '1545'
+ht-degree: 44%
 
 ---
 
@@ -95,9 +97,9 @@ ht-degree: 41%
 
 * **在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法**
 
-  借助先进的机器学习算法，Adobe Sign的Government ID流程让世界各地的企业均可确保高质量地验证其收件人的身份。 现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
+  通过先进的机器学习算法，Adobe Sign 的 Government ID 流程让世界各地的公司均可确保高质量地验证其收件人的身份。现在，您可以在支持 Adobe Sign 的自适应表单中使用 Government ID 身份验证方法。
 
-  Government ID是一种高级的身份验证方法，它指示收件人 [上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/cn/sign/using/adobesign-authentication-government-id.html)，然后评估该文档以确保真实有效。
+  Government ID 是一种高级的身份验证方法，它会指示收件人[上传政府颁发的身份证明文件（驾照、身份证、护照）的图像](https://helpx.adobe.com/cn/sign/using/adobesign-authentication-government-id.html)，然后评估该证明文件以确保真实有效。
 
 * **支持对异步提交自适应表单使用表单内签名体验**
 
@@ -136,7 +138,7 @@ ht-degree: 41%
 
 * AEM店面中暂存的目录数据的视觉标志
 
-* 现在可通过Cloud Manager UI配置商业端点
+* Commerce端点现在可通过Cloud Manager UI进行配置
 
 ### 错误修复 {#bug-fixes-commerce}
 

@@ -2,7 +2,9 @@
 title: 使用前端管道开发站点
 description: 有了前端管道，前端开发人员可以获得更多的独立性，开发过程可以获得可观的速度。 本文档描述了应该给予的前端构建过程的一些特定注意事项。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%

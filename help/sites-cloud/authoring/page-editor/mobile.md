@@ -2,7 +2,10 @@
 title: 创作适用于移动设备的页面
 description: 在为移动设备进行创作时，您可以在多个模拟器之间切换，以查看最终用户看到的内容
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 100%

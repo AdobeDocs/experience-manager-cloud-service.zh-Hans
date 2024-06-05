@@ -1,10 +1,11 @@
 ---
 title: 将 Adobe Analytics 与 Experience Cloud 设置自动化集成
 description: Experience Cloud 设置自动化提供了一种简单且自动化的方式，通过简单的 UI 向导界面将 Experience Manager Sites 与 Experience Platform Tags 和 Adobe Analytics 集成和装备到一起。了解如何在您自己的站点上使用自动化设置。
-feature: Administering
+feature: Integration
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 87%

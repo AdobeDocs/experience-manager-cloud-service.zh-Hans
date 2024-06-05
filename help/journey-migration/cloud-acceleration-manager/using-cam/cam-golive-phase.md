@@ -2,7 +2,9 @@
 title: Cloud Acceleration Manager中的上线阶段
 description: 本页概述了Cloud Acceleration Manager的上线阶段。
 exl-id: 2ec31445-899d-40b8-b3eb-073cb07aff12
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 2%

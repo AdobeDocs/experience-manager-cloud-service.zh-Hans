@@ -2,9 +2,11 @@
 title: AEM 参考演示加载项历程
 description: 从此处开始，了解如何通过最少的 AEM 配置将 AEM 参考演示加载项添加到沙盒环境中。并通过基于最佳实践的丰富示例来测试 AEM 的强大功能。
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '826'
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '816'
 ht-degree: 100%
 
 ---
@@ -28,7 +30,7 @@ AEM 是用于创建和管理数字体验的强大工具集。内容作者可以�
 
 [文档历程](/help/journey-documentation/documentation-journeys.md)通过提供叙述来帮助读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或 AEM 知识，从而将许多不同的主题和功能联系起来。
 
-文档历程是围绕最佳实践准则而设计的，其中包含了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及来自客户项目的反馈。
+文档历程是围绕最佳实践准则而设计的，其中参考了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及客户项目产生的反馈。
 
 如果您想了解 Adobe 就如何使用 AEM 解决站点业务案例提出的建议，则可以从 AEM Sites 历程开始。
 

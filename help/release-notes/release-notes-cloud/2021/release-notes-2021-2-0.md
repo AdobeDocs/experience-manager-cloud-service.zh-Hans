@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] 2021.2.0版as a Cloud Service发行说明。”'
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 32%
@@ -57,7 +59,7 @@ ht-degree: 32%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] 有权预先配置 [!DNL Brand Portal] 实例。 此 [!DNL Cloud Manager] 用户可以激活 [!DNL Brand Portal] 日期 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. 请参阅 [激活Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
-* 企业现在可以使用以下工具获取资产 [!DNL Brand Portal]. 资源源功能用途 [!DNL Brand Portal] 帮助客户与机构用户互动，为新营销活动、照片拍摄和项目获取资源。 请参阅 [中的资产源 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans).
+* 企业现在可以使用以下工具获取资产 [!DNL Brand Portal]. 资源源功能用途 [!DNL Brand Portal] 帮助客户与机构用户互动，为新营销活动、照片拍摄和项目获取资源。 请参阅 [中的资产源 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html).
 
 * 此 [!DNL Brand Portal] 使用情况报表现在仅显示活动的用户。 现在不显示非活动用户。 活动用户是其帐户在中分配给产品配置文件的用户。 [!DNL Admin Console]. 请参阅 [[!DNL Brand Portal] 报表](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 

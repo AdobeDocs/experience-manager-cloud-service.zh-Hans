@@ -2,8 +2,11 @@
 title: 部署自定义主题
 description: 了解如何使用管道部署站点主题。
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: d2352e66b380f5a3654e2fc99ce4204b32066683
-workflow-type: ht
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 100%
 

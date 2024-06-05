@@ -2,7 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] 2020.11.0版as a Cloud Service发行说明。”'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 15%
@@ -115,7 +117,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 的发布日期是 2020 �
 
 AEM as a Cloud Service SDK 生成分析器 Maven 插件可检测 Maven 项目中的问题，包括缺少依赖项的问题。 它使开发人员有机会在使用Cloud Manager部署到云环境之前，在本地开发期间发现问题。 有关更多信息，请参阅文档。 [此处](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hans#developing) 和 [此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk).
 
-### 其他 {#others-foundation}
+### 其他  {#others-foundation}
 
 新建 [“httpd -t”语法](/help/implementing/dispatcher/disp-overview.md#local-validation) 检查在Cloud Manager构建期间执行的Apache和Dispatcher配置，该配置也可以使用AEMas a Cloud ServiceSDK的Dispatcher工具运行。
 

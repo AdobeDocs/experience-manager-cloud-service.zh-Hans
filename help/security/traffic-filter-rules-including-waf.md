@@ -2,10 +2,12 @@
 title: 流量过滤规则（包括 WAF 规则）
 description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) 规则）。
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: c914ae4a0ad3486feb54cbcf91f6659afa1372b8
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '3947'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +29,7 @@ ht-degree: 94%
 [按照教程进行操作，](#tutorial)快速建立有关此功能的具体专业知识。
 
 >[!NOTE]
->有关与CDN上配置流量相关的其他选项，包括编辑请求/响应、声明重定向和代理到非AEM源，请参阅 [在CDN上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md) 文章。
+>有关在 CDN 上配置流量的其他选项，包括编辑请求/响应、声明重定向以及代理到非 AEM 来源，请参阅[在 CDN 上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)文章。
 
 
 ## 本文的结构 {#how-organized}
@@ -40,8 +42,8 @@ ht-degree: 94%
 * **规则语法：**&#x200B;了解如何在 `cdn.yaml` 配置文件中声明流量过滤规则。其中包括所有 Sites 和 Forms 客户均可使用的流量过滤规则以及 WAF 规则子类别（对于许可该功能的人）。
 * **规则示例：**&#x200B;查看已声明的规则的示例以增进了解。
 * **速率限制规则：**&#x200B;了解如何使用速率限制规则保护您的网站抵御大规模攻击。
-* **流量过滤器规则警报** 配置警报，以便在触发规则时收到通知。
-* **源位置的默认流量尖峰警报** 当来源出现提示DDoS攻击的流量激增时，收到通知。
+* **流量过滤规则警报：**&#x200B;配置警报，以便在触发规则时收到通知。
+* **默认源流量尖峰警报：**&#x200B;当源流量激增，表明可能发生了 DDoS 攻击时，您将收到通知。
 * **CDN 日志：**&#x200B;查看哪些声明的规则和 WAF 标志与您的流量相匹配。
 * **仪表板工具：**&#x200B;分析您的 CDN 日志以提出新的流量过滤规则。
 * **推荐的入门规则：**&#x200B;一组入门规则。
@@ -520,17 +522,17 @@ data:
           experimental_alert: true
 ```
 
-## 源位置的默认流量尖峰警报 {#traffic-spike-at-origin-alert}
+## 默认源流量尖峰警报 {#traffic-spike-at-origin-alert}
 
 >[!NOTE]
 >
->此功能正在逐步推出。
+>该功能正在逐步推出。
 
-An [操作中心](/help/operations/actions-center.md) 当有大量的流量发送到源时，将会发送电子邮件通知，其中高阈值的请求来自同一IP地址，从而提示DDoS攻击。
+当有大量流量发送到源时，如果来自同一 IP 地址的请求达到高阈值，则会发送[操作中心](/help/operations/actions-center.md)电子邮件通知，这表明可能存在 DDoS 攻击。
 
-如果满足此阈值，Adobe将阻止来自该IP地址的流量，但建议采取其他措施保护您的来源，包括配置速率限制流量过滤器规则以阻止较低阈值的流量尖峰。 请参阅 [使用流量规则阻止DoS和DDoS攻击教程](#tutorial-blocking-DDoS-with-rules) 进行引导式演练。
+如果达到此阈值，Adobe 将阻止来自该 IP 地址的流量，但建议采取额外措施保护您的源，包括配置速率限制流量过滤规则以在较低阈值下阻止流量激增。请参阅[使用流量规则阻止 DoS 和 DDoS 攻击教程](#tutorial-blocking-DDoS-with-rules)，获取逐步指导。
 
-默认情况下，此警报处于启用状态，但可以使用 *enable_ddos_alerts* 属性，设置为false。
+此警报默认启用，但可以通过将 *enable_ddos_alerts* 属性设置为 false 来禁用。
 
 ```
 kind: "CDN"
@@ -656,7 +658,7 @@ data:
 
 Adobe 提供一种机制，它将仪表板工具下载到您的计算机上以摄取通过 Cloud Manager 下载的 CDN 日志。使用此工具，您可分析您的流量以帮助提出要声明的相应流量过滤器规则，包括 WAF 规则。
 
-功能板工具可以直接从 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) github存储库。
+可直接从 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub 存储库克隆仪表板工具。
 
 [教程](#tutorial)提供了有关如何使用仪表板工具的具体说明。
 

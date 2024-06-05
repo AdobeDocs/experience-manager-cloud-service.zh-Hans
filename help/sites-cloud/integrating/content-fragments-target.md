@@ -2,7 +2,10 @@
 title: 将内容片段导出到 Adobe Target
 description: 了解如何将内容片段导出到 Adob​​e Target，以测试和个性化体验。
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Integration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2159'
 ht-degree: 96%

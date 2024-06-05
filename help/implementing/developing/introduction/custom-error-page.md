@@ -2,10 +2,12 @@
 title: 自定义错误页面
 description: AEM提供了用于处理HTTP错误的标准错误处理程序，该处理程序可以进行自定义。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 2%
+source-wordcount: '569'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +40,7 @@ AEM附带了用于处理HTTP错误的标准错误处理程序；例如，通过�
 
    默认情况下，目标路径不存在，因此，在首次执行该操作时，您需要创建该路径。
 
-1. 导航到 `/apps/sling/servlet/errorhandler`。在此，您可以：
+1. 导航到 `/apps/sling/servlet/errorhandler`. 在此，您可以：
 
    * 编辑相应的现有脚本以提供所需的信息。 或者
    * 为所需代码创建和编辑新脚本。

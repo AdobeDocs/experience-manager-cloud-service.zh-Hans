@@ -2,10 +2,13 @@
 title: 应用和取消应用 IP 允许列表
 description: 了解如何对环境应用和取消应用 IP 允许列表。
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -20,7 +23,7 @@ ht-degree: 81%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 1. 在&#x200B;**环境**&#x200B;屏幕上导航到特定的环境详细信息页面，然后导航到 **IP 允许列表**。
 1. 使用表顶部的输入字段，以便选择IP允许列表以及要应用它的创作或发布服务。

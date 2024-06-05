@@ -3,10 +3,11 @@ title: AEM Forms Edge Delivery Services 概述
 description: AEM Forms Edge Delivery Services 专为实现最佳性能而构建，让您能够畅想简化数据收集和用户参与的未来。
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +74,7 @@ AEM 创作提供用于构建表单的 WYSIWYG 界面 (Adaptive Forms Editor)，�
 * 与 Adobe Sign 集成以进行电子签名。
 * 与 Adobe Workfront Fusion 集成，在提交表单时触发 Adobe Workfront Fusion 场景。
 * 与各种数据源集成以预填充表单和提交数据。
-* 表单数据模型(FDM)，用于定义数据结构和与各种数据源的交互。
+* 表单数据模型 (FDM)，用于定义数据结构和与各种数据源的交互。
 * 能够从多个提交操作中进行选择来处理表单提交，包括将数据提交到 Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics 以及更多数据源。
 
 本质上，[AEM 创作](/help/forms/creating-adaptive-form-core-components.md)建立在[基于文档的创作](/help/edge/docs/forms/create-forms.md)的基础上，提供了更高级的工具包来创建以及管理复杂的表格。

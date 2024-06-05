@@ -1,13 +1,15 @@
 ---
 title: 通用编辑器用例和学习路径
 description: 了解通用编辑器的主要用例，以及如何最好地了解其使用以及如何在您自己的项目中实施它。
-source-git-commit: 45418e5fd431980b48eda83811d5544154027d84
+exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
 
 ---
-
 
 # 通用编辑器用例和学习路径 {#use-cases-learning-paths}
 

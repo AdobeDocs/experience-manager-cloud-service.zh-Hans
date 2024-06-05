@@ -2,10 +2,13 @@
 title: 如何为您的内容建模
 description: 在 Adobe Experience Manager (AEM) Headless 开发人员历程的这一部分中，了解如何使用内容建模与内容片段模型和内容片段对 AEM Headless 投放进行内容建模。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1814'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -210,7 +213,7 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 >
 >请参阅“其他资源 – 配置浏览器中的内容片段”
 
-之后，可以创建内容片段模型并定义结构。这可以在下完成 **工具** > **常规** > **内容片段模型**. 例如：
+之后，可以创建内容片段模型并定义结构。可以在&#x200B;**工具** > **常规** > **内容片段模型**&#x200B;下完成此操作。例如：
 
 ![内容片段模型](assets/cfm-model.png)
 
@@ -224,7 +227,7 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 
 ### 选择适当的模型 {#select-model}
 
-在实际创建内容的过程中，第一步是创建内容片段。可使用“资产”>“文件”下所需文件夹中的“创建”>“内容片段”完成此操作。 该向导将会引导您完成这些步骤。
+在实际创建内容的过程中，第一步是创建内容片段。可使用“资源” > “文件”下的所需文件夹中的“创建” > “内容片段”来执行此操作。该向导将会引导您完成这些步骤。
 
 内容片段基于特定的内容片段模型，在创建过程中，您首先会选择该模型。
 

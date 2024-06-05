@@ -2,10 +2,12 @@
 title: SPA Blueprint
 description: 本文档描述了任何SPA框架都应该履行的一般的、独立于框架的合同，以便您可以在AEM中实施可编辑的SPA组件。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 2%
+source-wordcount: '2022'
+ht-degree: 1%
 
 ---
 
@@ -271,7 +273,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 请继续阅读以下文档，了解简单的SPA如何工作并自行试验SPA：
 
-* [利用 React 在 AEM 中开始使用 SPA](getting-started-react.md).
+* [在AEM中使用React快速入门SPA](getting-started-react.md).
 * [使用Angular在AEM中开始使用SPA](getting-started-angular.md).
 
 ## 深入阅读 {#further-reading}

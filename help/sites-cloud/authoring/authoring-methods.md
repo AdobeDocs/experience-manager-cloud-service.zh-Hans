@@ -3,7 +3,9 @@ title: 在AEM中创作内容的方法
 description: 了解在AEM中创作内容的不同方式以及它们之间的差异。
 feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
-source-git-commit: 9aba0fb61d7496cd1ae1860e22c3e7374be69148
+solution: Experience Manager Sites
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%

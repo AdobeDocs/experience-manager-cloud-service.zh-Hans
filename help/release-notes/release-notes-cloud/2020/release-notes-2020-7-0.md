@@ -2,14 +2,16 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版的发行说明。'
 description: '"[!DNL Adobe Experience Manager] 2020.7.0版as a Cloud Service发行说明。”'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 71%
+source-wordcount: '1012'
+ht-degree: 73%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 版的发行说明  {#release-notes}
+# 的发行说明 [!DNL Adobe Experience Manager] as a Cloud Service2020.7.0 {#release-notes}
 
 以下部分概述了 Experience Manager as a Cloud Service 2020.7.0 的常规发行说明。
 
@@ -129,7 +131,7 @@ AEM Commerce现已在Cloud Service上可用。
 
 * 将 AEM Target 云服务 UI 从经典 UI 移植到新的 AEM UI。此外，还将 AEM 存储库中 Target 云服务的位置从 `/etc` 移动到 `/conf`，以便与其他 AEM 云服务保持一致。
 
-## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+## 云就绪分析器 {#cloud-readiness-analyzer}
 
 请阅读本章内容，了解 Cloud Readiness Analyzer v1.0.2 版的新增功能和更新。
 

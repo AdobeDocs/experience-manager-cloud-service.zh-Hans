@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.9.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.9.0 版的发行说明。'
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -64,9 +66,9 @@ Edge Delivery 是一组新的可组合服务，专注于最大限度地发挥内
 
 ### 可在 [!DNL Experience Manager Assets] 中找到的预发布功能 {#prerelease-features-assets}
 
-* **Dynamic Media**： [Dynamic Media中支持视频的多字幕和多音频轨道](/help/assets/dynamic-media/video.md#about-msma) — 您现在可以轻松地将多个字幕和多个音轨添加到主视频。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。作者还可以通过用户界面中的单个选项卡管理字幕和音轨。
+* **Dynamic Media**：[Dynamic Media 中的视频支持多字幕和多音轨](/help/assets/dynamic-media/video.md#about-msma)，现在可轻松地将多个字幕和多个音轨添加到主视频。此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
-  ![选定视频资产的“属性”页面上的“字幕和音频轨道”选项卡。](/help/release-notes/assets/msma-aem-cs.png)*选定视频资产的“属性”页面上的“字幕和音频轨道”选项卡。*
+  ![所选视频资源的“属性”页面上的“字幕和音轨”选项卡。](/help/release-notes/assets/msma-aem-cs.png)*所选视频资源的“属性”页面上的“字幕和音轨”选项卡。*
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

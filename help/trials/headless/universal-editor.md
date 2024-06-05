@@ -4,7 +4,9 @@ description: 探索如何使用 Universal Editor 在任何实施中就地编辑�
 hidefromtoc: true
 index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
-source-git-commit: 46456903ee947c61d63508dc86cc5f72dc50ed82
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 100%

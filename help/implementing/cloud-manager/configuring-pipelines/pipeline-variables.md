@@ -1,13 +1,16 @@
 ---
 title: 配置管道变量
 description: 了解如何在Cloud Manager中使用管道变量来管理内部版本的特定配置变量。
-source-git-commit: 7b98883d16893534387fa10665f5fa432d74470f
+exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
 
 ---
-
 
 # 配置管道变量 {#configuring-pipeline-variables}
 

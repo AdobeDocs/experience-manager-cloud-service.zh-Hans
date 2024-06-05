@@ -1,10 +1,11 @@
 ---
 title: 将 AEM as a Cloud Service 与 Adobe Campaign 集成
 description: 了解 AEM as a Cloud Service 对与 Adob​e Campaign 集成的支持。
-feature: Administering
+feature: Integration
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: a9296bba5d1ad3f6eb2190de9c15a1083f2ac6d5
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 66%

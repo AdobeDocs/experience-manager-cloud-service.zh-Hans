@@ -2,10 +2,13 @@
 title: SLA 报告
 description: 了解如何查看生产 AEM 环境相对于约定的服务水平协议 (SLA) 的性能。
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 52%
+ht-degree: 54%
 
 ---
 
@@ -20,7 +23,7 @@ SLA 报告数据可通过&#x200B;**报告**&#x200B;选项卡用于每个生产�
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，选择程序。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
 1. 使用侧面导航面板，导航到 **报表** 选项卡 **概述** 页面。
 

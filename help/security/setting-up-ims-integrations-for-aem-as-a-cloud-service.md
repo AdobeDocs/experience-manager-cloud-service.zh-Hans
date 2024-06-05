@@ -1,13 +1,15 @@
 ---
 title: 为 AEM as a Cloud Service 设置 IMS 集成
 description: 了解如何为 AEM as a Cloud Service 设置 IMS 集成
-source-git-commit: 6945980cac24d4413a84343b035a8380b04e7444
-workflow-type: ht
+exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 100%
 
 ---
-
 
 # 为 AEM as a Cloud Service 设置 IMS 集成 {#setting-up-ims-integrations-for-aemaacs}
 

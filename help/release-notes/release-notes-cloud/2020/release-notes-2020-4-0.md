@@ -2,14 +2,16 @@
 title: Adobe Experience Manager as a Cloud Service 2020.4.0 发行说明
 description: '"[!DNL Adobe Experience Manager] 2020.4.0版as a Cloud Service发行说明。”'
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '612'
 ht-degree: 93%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2020.4.0 发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.4.0发行说明 {#release-notes}
 
 本页面概述了 [!DNL Experience Manager] as a Cloud Service 2020.4.0 版的常规发行说明。
 
@@ -17,7 +19,7 @@ ht-degree: 93%
 
 [!DNL Experience Manager] as a Cloud Service 2020.4.0 的发布日期是 2020 年 4 月 9 日。
 
-## Assets 的新增功能 {#assets}
+## Assets的新增功能 {#assets}
 
 了解当前版本中 [!DNL Experience Manager Assets] 和 [!DNL Dynamic Media] 的新增功能、增强功能和错误修复。
 
@@ -52,7 +54,7 @@ ht-degree: 93%
 >* [配置 Experience Manager 以搭配使用 Asset Link](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [使用资源微服务在Experience Manager中创建工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
-## Cloud Manager 的新增功能 {#whats-new-cloud-manager}
+## Cloud Manager的新增功能 {#whats-new-cloud-manager}
 
 * 现在，可以从 Cloud Manager UI 的环境页面访问发布者 URL。
 * 导航更改让用户能够从 Cloud Manager 概述页面编辑、切换或添加项目。

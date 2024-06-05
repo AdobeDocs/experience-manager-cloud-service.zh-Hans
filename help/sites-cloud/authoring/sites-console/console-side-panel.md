@@ -1,13 +1,16 @@
 ---
 title: 站点控制台侧面板
 description: 了解如何使用AEM站点控制台中的侧面板，以更好地了解和导航您的内容。
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 26%
 
 ---
-
 
 # 站点控制台侧面板 {#side-panel}
 

@@ -1,19 +1,21 @@
 ---
-title: AEM as a Cloud Service 入门历程简介
-description: 您可以在此处了解 AEM as a Cloud Service 入门历程的指导概述。
+title: AEM as a Cloud Service 上线历程简介
+description: 您可以在此处了解 AEM as a Cloud Service 上线历程的指导概述。
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
-source-git-commit: 98618765b405316b18110182c221ddd968c70e96
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# 入门历程 {#onboarding-journey}
+# 上线历程 {#onboarding-journey}
 
-恭喜您选择 AEM as a Cloud Service！ 本文档是指导您整个入门历程的起点。 无论您是部署新的应用项目还是迁移现有的应用项目，此入门历程都可以确保您的团队已建立，并且可访问 AEM as a Cloud Service。
+恭喜您选择 AEM as a Cloud Service！ 本文档是指导您整个上线历程的起点。 无论您是部署新的应用项目还是迁移现有的应用项目，此上线历程都可以确保您的团队已建立，并且可访问 AEM as a Cloud Service。
 
 ## 简介 {#introduction}
 
@@ -21,7 +23,7 @@ Adobe Experience Manager 是一组功能强大的可组合内容服务，它在�
 
 入门培训是所指派的系统管理员为您的组织设置 AEM as a Cloud Service 的过程。这个过程包括云资源的初始配置，以及根据用户的工作职责为其分配角色。因此，每个成员都可以登录和访问其 AEM as a Cloud Service 资源。
 
-![入门历程](/help/journey-onboarding/assets/onboarding-journey.png)
+![上线历程](/help/journey-onboarding/assets/onboarding-journey.png)
 
 本指南将引导您了解最重要的载入主题，以便在完成后，您将具有：
 
@@ -42,7 +44,7 @@ Adobe Experience Manager 是一组功能强大的可组合内容服务，它在�
 * **Admin Console** – 这是管理用户和分配角色的地方。
 * **Cloud Manager** - 用于设置项目和环境等资源的工具。它也是您访问 Git 并创建管道，以便管理和部署自定义代码的地方。
 
-这些概念会在此次入门历程中详细阐述。目标是在历程结束时，您：
+这些概念会在此次上线历程中详细阐述。目标是在历程结束时，您：
 
 * 已授予必要的用户访问 AEM as a Cloud Service 的权限。
 * 已为您的项目设置了第一个云资源.
@@ -52,7 +54,7 @@ Adobe Experience Manager 是一组功能强大的可组合内容服务，它在�
 
 ## 受众 {#audience}
 
-该入门历程是专门为新加入 AEM as a Cloud Service 和 AEM 的客户的&#x200B;**系统管理员**&#x200B;编写的。 系统管理员是在您签署 AEM as a Cloud Service 后 Adobe 最先联系的人。他们通常是第一个在 AEM as a Cloud Service 上访问和设置您的资源的人。如果您正在阅读本主题，您很可能是系统管理员。
+该上线历程是专门为新加入 AEM as a Cloud Service 和 AEM 的客户的&#x200B;**系统管理员**&#x200B;编写的。 系统管理员是在您签署 AEM as a Cloud Service 后 Adobe 最先联系的人。他们通常是第一个在 AEM as a Cloud Service 上访问和设置您的资源的人。如果您正在阅读本主题，您很可能是系统管理员。
 
 系统管理员管理其组织的 AEMaaCS 用户的各个方面，从访问到权限。 然而，系统管理员必须在过程中与其他角色进行交互。
 
@@ -69,13 +71,13 @@ Adobe Experience Manager 是一组功能强大的可组合内容服务，它在�
 >
 >如果您是 AEM as a Cloud Service 的新手，并且熟悉 AEM，并且正在从内部部署或 Adobe Managed Services 迁移，请务必查看 [AEM as a Cloud Service](/help/journey-migration/getting-started.md) 迁移之旅。
 
-## 入门历程概述 {#overview}
+## 上线历程概述 {#overview}
 
 以下文章详细描述了核心载入概念，并为您提供了 AEM as a Cloud Service 的基本知识。 虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是新手，Adobe 建议您从头开始，然后循序渐进。
 
 | # | 文章 | 描述 | 受众 |
 |---|---|---|---|
-| 0 | 入门历程 | 本文档 | 系统管理员 |
+| 0 | 上线历程 | 本文档 | 系统管理员 |
 | 1 | [载入准备](preparation.md) | 在载入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。 | 系统管理员 |
 | 2 | [AEM as a Cloud Service 术语](terminology.md) | 在首次登录 AEMaaCS 之前，了解系统的一些术语及其基本结构会很有帮助。 | 系统管理员 |
 | 3 | [Admin Console](admin-console.md) | 了解什么是 Admin Console，如何登录，以及如何以系统管理员身份验证您的配置文件。 | 系统管理员 |
@@ -89,7 +91,7 @@ Adobe Experience Manager 是一组功能强大的可组合内容服务，它在�
 
 ## 后续内容 {#what-is-next}
 
-您现在已经准备好开始您的 AEM as a Cloud Service 入门历程。 我们鼓励您继续此历程的下一部分，并阅读[入门准备](preparation.md)一文
+您现在已经准备好开始您的 AEM as a Cloud Service 上线历程。 我们鼓励您继续此历程的下一部分，并阅读[入门准备](preparation.md)一文
 
 ## AEM 文档历程 {#documentation-journeys}
 
@@ -101,6 +103,6 @@ Adobe Experience Manager 是一组功能强大的可组合内容服务，它在�
 
 ## 其他资源 {#additional-resources}
 
-如果您想了解入门历程以外的内容，以下是额外的可选资源。
+如果您想了解上线历程以外的内容，以下是额外的可选资源。
 
-* [AEMas a Cloud Service入门](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html)  — 此简短视频概述了AEM的Cloud Service载入流程。
+* [加入 AEM as a Cloud Service 入门培训](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - 这段简短的视频概述 AEM 的云服务入门过程。

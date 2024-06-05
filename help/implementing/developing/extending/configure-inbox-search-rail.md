@@ -2,7 +2,9 @@
 title: 如何配置收件箱的搜索过滤器？
 description: 了解如何为收件箱项目配置搜索过滤器。
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 1%

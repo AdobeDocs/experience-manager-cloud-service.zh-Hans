@@ -2,7 +2,9 @@
 title: 处理大型内容存储库
 description: 本节介绍如何处理大型内容存储库
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 8%
@@ -81,7 +83,7 @@ ht-degree: 8%
 #### 文件数据存储 {#file-data-store-determine-size}
 
 * 对于Mac、UNIX®系统，在datastore目录上运行du命令以获取其大小：
-  `du -sh [path to datastore on the instance]`. 例如，如果您的数据存储在 `/mnt/author/crx-quickstart/repository/datastore`，则以下命令会获取其大小： `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+  `du -sh [path to datastore on the instance]`。例如，如果您的数据存储在 `/mnt/author/crx-quickstart/repository/datastore`，则以下命令会获取其大小： `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * 对于Windows，使用数据存储目录上的dir命令获取其大小：
   `dir /a/s [location of datastore]`。

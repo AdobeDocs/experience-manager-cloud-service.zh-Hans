@@ -2,7 +2,9 @@
 title: 选准 KPI
 description: 了解如何为 AEM 实施选择正确的 KPI
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 100%

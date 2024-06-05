@@ -2,9 +2,11 @@
 title: AEM Sites 开发快速入门 – WKND 教程
 description: 初次开发 AEM？需要复习最佳实践？从这里开始！此多部分教程旨在教授初次使用 AEM 的开发人员如何使用最新的标准和技术在 AEM 中实施网站。
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
-workflow-type: ht
-source-wordcount: '241'
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '202'
 ht-degree: 100%
 
 ---

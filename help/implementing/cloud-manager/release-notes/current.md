@@ -3,10 +3,11 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.5.0 �
 description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.5.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 3bab3e77dcc8ffbc3e8891557cbe09de707d64c5
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +26,8 @@ AEM as a Cloud Service 2024.5.0 中的 Cloud Manager 的发布日期是 2024 年
 
 ## 新增功能 {#what-is-new}
 
-* 此 [许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md) 现在可通过左侧的不同入口点访问 [导航。](/help/implementing/cloud-manager/navigation.md)
-* 当开发环境的配置失败时，Cloud Manager UI现在可提供反馈。
+* 现在可以通过左侧[导航栏](/help/implementing/cloud-manager/navigation.md)中不同的入口点访问[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)。
+* 当开发环境设置失败时，Cloud Manager UI 现在会提供反馈。
 
 ## 早期采用计划 {#early-adoption}
 

@@ -2,9 +2,12 @@
 title: 管理 SSL 证书简介
 description: 了解 Cloud Manager 如何为您提供自助服务工具来安装 SSL 证书。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 6db3565fefe4c826bb40695d0fa84368fd3f283b
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '664'
 ht-degree: 99%
 
 ---

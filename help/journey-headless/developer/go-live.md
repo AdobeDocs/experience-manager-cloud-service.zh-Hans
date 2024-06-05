@@ -2,10 +2,13 @@
 title: 如何使用 Headless 应用程序上线
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何通过在 Git 中获取本地代码并将其移动到 CI/CD 管道的 Cloud Manager Git 来实时部署 Headless 应用程序。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +86,7 @@ ht-degree: 95%
       * 检查用户数、请求数和负载
 * 访问应用程序和空间特定的性能报告
    * 在服务器启动后，检查一般指标是否为绿色/橙色/红色，然后识别具体的应用程序问题
-   * 打开上面按应用程序或空间过滤的相同报表(例如，Photoshop desktop、paywall)
+   * 打开上面过滤到应用程序或空间的相同报告（例如，Photoshop 桌面、付费专区）
    * 使用 Splunk 日志 API 访问服务和应用程序性能
    * 如果还有其他问题，请联系客户支持。
 
@@ -124,7 +127,7 @@ ht-degree: 95%
 
 ### 探究单页应用程序 {#explore-spa}
 
-但 AEM 中的 Headless 存储不需要止步于此。您可能还记得 [历程的快速入门部分](getting-started.md#integration-levels) 我们简要地讨论了AEM如何支持headless交付和传统的全栈模型，以及如何支持将两者的优势相结合的混合模型。
+但 AEM 中的 Headless 存储不需要止步于此。您可能还记得，在[历程的快速入门部分](getting-started.md#integration-levels)中，我们简要讨论了 AEM 如何支持 Headless 交付和传统全栈模型，并支持结合了两者优点的混合模型。
 
 如果您的项目需要这种灵活性，请继续进行历程的可选附加部分[如何使用 AEM 创建单页应用程序 (SPA)。](create-spa.md)
 

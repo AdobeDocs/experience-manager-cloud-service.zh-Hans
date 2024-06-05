@@ -2,14 +2,14 @@
 title: 创建App Builder应用程序
 description: 了解如何创建和引导新的App Builder应用程序。
 version: Cloud Service
-feature: App Builder
+feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
 kt: 9455, 9471, 9472, 9473
 thumbnail: 339168.jpg
 exl-id: 6e080945-8789-4dfa-b093-9df10c278e11
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
 
-## 设置您的本地开发环境
+## 设置本地开发环境
 
 了解如何为App Builder开发设置本地环境。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 初始化您的第一个项目
 
-了解如何初始化应用程序生成器项目。
+了解如何初始化App Builder项目。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 

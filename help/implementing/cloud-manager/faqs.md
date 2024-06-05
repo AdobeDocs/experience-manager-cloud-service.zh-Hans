@@ -2,7 +2,10 @@
 title: Cloud Manager 常见问题解答
 description: 在 AEM as a Cloud Service 中查找有关 Cloud Manager 的最常见问题的答案。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 100%

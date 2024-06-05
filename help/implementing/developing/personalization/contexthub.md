@@ -2,7 +2,9 @@
 title: ContextHub
 description: ContextHub是一个用于存储、操作和呈现上下文数据的框架
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%

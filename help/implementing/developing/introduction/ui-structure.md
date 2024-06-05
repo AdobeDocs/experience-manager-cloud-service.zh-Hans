@@ -2,10 +2,12 @@
 title: AEM UI 的结构
 description: AEM UI具有多种基础原则，并且由多个关键元素组成
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 5%
+source-wordcount: '887'
+ht-degree: 3%
 
 ---
 
@@ -58,11 +60,11 @@ UI同时适用于移动设备和桌面设备，不过，AEM不会创建两种样
 
 可以根据需要打开/隐藏左边栏以显示：
 
-* **仅限内容**
+* **仅内容**
 * **内容树**
 * **时间线**
 * **引用**
-* **过滤器**
+* **筛选**
 
 默认为 **仅内容** （隐藏边栏）。
 

@@ -3,8 +3,10 @@ title: AEM 文档历程
 description: 文档历程通过将复杂和不同的功能捆绑在一起，以最佳做法方式解决业务目标，从而在 AEM 文档中提供了一种叙述性结构。 在设计时考虑了 AEM 初学者，历程将介绍概念和功能，以实现从 A 到 Z 的目标。
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 100%
 

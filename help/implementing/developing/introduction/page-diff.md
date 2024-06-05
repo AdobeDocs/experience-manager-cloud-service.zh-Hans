@@ -2,7 +2,9 @@
 title: 开发和页面差异
 description: 了解页面差异功能的工作方式以及它如何影响开发人员
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 12%

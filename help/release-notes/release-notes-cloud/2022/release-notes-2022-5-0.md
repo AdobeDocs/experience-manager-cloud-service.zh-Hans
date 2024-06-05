@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明。'
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: fe19e99baa921247f86542c6643c1faf837e7d91
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 73%
+source-wordcount: '800'
+ht-degree: 67%
 
 ---
 
@@ -81,7 +83,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 * 复制代理管理屏幕下的“添加树”选项 **“分发”选项卡**&#x200B;之前宣布已弃用的SSF将于2022年6月20日或之后不久删除。 而应使用以树层次结构表示的内容包进行复制[管理发布](/help/operations/replication.md#manage-publication)或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)。
 
-* 使用复制代理管理屏幕或复制API分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）已被弃用，并且将在2022年9月12日或之后不久实施。 相反，必须使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)来复制这些大型内容包。7 月，如果尝试复制这些大型内容包，复制代理管理屏幕的&#x200B;**分发选项卡**&#x200B;中将显示一条警告消息，并且每当使用复制 API 复制这些大型内容包时，AEM 错误日志中也会显示一条警告消息。9月，警告被错误取代。 相应地调整您的流程。
+* 使用复制代理管理屏幕或复制API分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）已被弃用，并且将在2022年9月12日或之后不久实施。 相反，必须使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)来复制这些大型内容包。7月，复制代理管理屏幕中将显示一条警告消息 **“分发”选项卡** 如果尝试复制这些大型内容包，并且每当使用复制API复制这些大型内容包时，AEM错误日志中也会出现这种情况。 9月，警告被错误取代。 相应地调整您的流程。
 
 ### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}
 

@@ -2,9 +2,11 @@
 title: 索引转换器
 description: 了解如何迁移索引定义，为迁移到AEMas a Cloud Service做准备。
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '272'
 ht-degree: 1%
 
 ---

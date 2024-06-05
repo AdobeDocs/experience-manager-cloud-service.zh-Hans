@@ -3,8 +3,9 @@ description: 为了设计网站和创建功能，开发人员使用从内容中�
 title: 标记、部分、区块和自动屏蔽
 feature: Edge Delivery Services
 exl-id: 3f4ae9e9-e5c8-4873-a3d0-591c4d8683dd
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 100%
 

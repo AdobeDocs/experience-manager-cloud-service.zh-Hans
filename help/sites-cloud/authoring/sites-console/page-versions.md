@@ -2,7 +2,10 @@
 title: 处理页面版本
 description: 了解如何在 AEM 中创建、比较和恢复页面的版本。
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1516'
 ht-degree: 97%

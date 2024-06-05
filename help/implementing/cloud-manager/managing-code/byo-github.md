@@ -1,12 +1,14 @@
 ---
 title: 在 Cloud Manager 中使用您自己的 GitHub 存储库
 description: 了解如何设置 Cloud Manager 以使用您自己的 GitHub 存储库。
-feature: Release Information
+feature: Cloud Manager, Developing
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: b81c2bd5c339bce97fe5774572bf1532fc8e04df
+solution: Experience Manager
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 68%
+ht-degree: 70%
 
 ---
 
@@ -21,7 +23,7 @@ ht-degree: 68%
 
 >[!NOTE]
 >
->此功能专用于公共GitHub。 不支持自托管GitHub。
+>此功能是公共 GitHub 独有的。不支持自托管 GitHub。
 
 ## 配置 {#configuration}
 

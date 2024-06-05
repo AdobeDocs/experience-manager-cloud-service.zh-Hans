@@ -2,7 +2,9 @@
 title: 就绪阶段
 description: 了解您必须执行的步骤，以便确保AEM安装已准备好移至云。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 6%

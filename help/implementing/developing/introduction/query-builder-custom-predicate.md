@@ -2,7 +2,9 @@
 title: 为查询生成器实施自定义谓词计算器
 description: AEM中的查询生成器提供了一种简单、可自定义的方式来查询内容存储库
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%

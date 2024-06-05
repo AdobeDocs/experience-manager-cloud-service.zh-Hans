@@ -4,7 +4,9 @@ description: 了解在将内容迁移到Adobe Experience Manager as a Cloud Serv
 hide: true
 hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
-source-git-commit: 29ffb48d23b4a2fe4973b005c98c5720b4196367
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 10%

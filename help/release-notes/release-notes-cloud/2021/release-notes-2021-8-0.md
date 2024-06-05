@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 版的发行说明。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 版的发行说明。'
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 30%
+source-wordcount: '1011'
+ht-degree: 25%
 
 ---
 
@@ -23,7 +25,8 @@ ht-degree: 30%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager][!DNL Cloud Service] 当前版本 (2021.8.0) 的发布日期为 2021 年 26 月 8 日。以下版本(2021.9.0)的发布日期为2021年10月6日。
+的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前版本(2021.8.0)为2021年8月26日。
+以下版本(2021.9.0)的发布日期为2021年10月6日。
 
 ## 发布视频 {#release-video}
 
@@ -89,7 +92,8 @@ ht-degree: 30%
 
 ## 发布日期 {#release-date-cm-aug}
 
-AEM as a Cloud Service 2021.8.0 中的 Cloud Manager 的发布日期是 2021 年 8 月 12 日。下一个版本计划于2021年9月9日发布。
+AEMas a Cloud Service2021.8.0中的Cloud Manager的发布日期是2021年8月12日。
+下一个版本计划于2021年9月9日发布。
 
 ### 新增功能 {#what-is-new-aug}
 

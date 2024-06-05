@@ -2,10 +2,13 @@
 title: 自定义权限
 description: 了解如何使用自定义权限创建具有可配置权限的自定义权限配置文件，以限制对Cloud Managers用户的程序、管道和环境的访问。
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -16,7 +19,7 @@ ht-degree: 38%
 
 ## 简介 {#introduction}
 
-Cloud Manager具有一组预定义角色，这些角色控制对Cloud Manager各种功能的访问：
+Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种功能的访问权限：
 
 * 业务负责人
 * 项目管理员
@@ -83,7 +86,7 @@ Cloud Manager具有一组预定义角色，这些角色控制对Cloud Manager各
 1. 此 **编辑权限** 窗口打开。
    * 您在上一步中选择的权限在左列中处于选定状态。
    * 可用于权限分配的权限项位于标记为&#x200B;**可用权限**&#x200B;项的中间列中。
-   * 分配的权限项位于右列，标记为 **包含的权限项**.
+   * 分配的权限项位于标记为&#x200B;**“包含的权限项”**&#x200B;的右列中。
 
    ![编辑权限项](assets/edit-permission-items.png)
 
@@ -201,7 +204,7 @@ Cloud Manager具有一组预定义角色，这些角色控制对Cloud Manager各
 
 ### 是否能编辑预定义的权限配置文件？
 
-否，默认配置文件是不可编辑的。您无法将权限添加到默认权限配置文件或从中移除权限。 您只能在预定义的配置文件中添加或删除用户。
+否，默认配置文件是不可编辑的。您不能在默认权限配置文件中添加或移除权限。您只能在预定义的配置文件中添加或删除用户。
 
 ### 在自定义配置文件可用后，是否应删除预定义的权限配置文件？
 

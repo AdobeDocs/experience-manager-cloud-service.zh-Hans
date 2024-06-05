@@ -2,10 +2,12 @@
 title: SPA 编辑器概述
 description: 本文全面概述了 SPA 编辑器及其工作原理，包括 SPA 编辑器在 AEM 中进行交互的详细工作流程。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1633'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -25,9 +27,9 @@ AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中�
 
 有关AEM中SPA的更多详细信息，请参阅以下内容：
 
-* [SPA Blueprint](blueprint.md)，了解 SPA 的技术要求.
-* [使用 React 在 AEM 中开始使用 SPA](getting-started-react.md)，快速了解使用 React 的简单 SPA.
-* [使用 Angular 在 AEM 中开始使用 SPA](getting-started-angular.md)，快速了解使用 Angular 的简单 SPA.
+* [SPA Blueprint](blueprint.md) 以了解SPA的技术要求。
+* [在AEM中使用React快速入门SPA](getting-started-react.md) 快速浏览使用React的简单SPA。
+* [使用Angular在AEM中开始使用SPA](getting-started-angular.md) 以快速了解使用Angular的简单SPA。
 
 ## 设计 {#design}
 

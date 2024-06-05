@@ -2,7 +2,10 @@
 title: Dynatrace
 description: 了解如何将Dynatrace与AEMas a Cloud Service结合使用
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
-source-git-commit: 4fe8ed9c3f7b6589878da3317d15fede819bad54
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: AEMas a Cloud Service2021.12.0版中迁移工具的发行说明
 description: AEMas a Cloud Service2021.12.0版中迁移工具的发行说明
 feature: Release Information
 exl-id: 4155e1c0-cd40-4cbc-9d6c-b106d68a2db5
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 45%

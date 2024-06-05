@@ -2,7 +2,9 @@
 title: 迁移内容后建立索引
 description: 了解迁移过程将如何对目标Cloud Service实例上的摄取内容进行索引。
 exl-id: a13d5df4-b351-410a-9336-1b34a8af21b6
-source-git-commit: 58195fcb10312c89042f555665d4c8b3642f82ba
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 9%
@@ -30,7 +32,7 @@ ht-degree: 9%
 >您可以通过引入作业的操作，使用……下拉列表查看或下载索引日志。 日志将位于
 > 索引作业完成后，“索引日志”操作部分
 
-### 等待
+### 待处理
 
 这是摄取运行时在索引作业开始之前摄取作业行的显示方式。 无需用户执行任何操作。 如果摄取由于任何原因失败，则索引作业的队列将被取消而不是开始。
 

@@ -3,8 +3,9 @@ description: Adobe Experience Manager 可保留网站特定部分中所有已发
 title: 索引
 feature: Edge Delivery Services
 exl-id: 8ca968fd-73af-4082-bfc5-0737fdd8a5be
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 100%
 

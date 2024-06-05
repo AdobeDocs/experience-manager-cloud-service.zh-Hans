@@ -2,8 +2,10 @@
 title: 使用 Edge Delivery Services 项目进行 AEM 创作的内容建模
 description: 了解如何对使用 Edge Delivery Services 项目进行的 AEM 创作进行内容建模以及如何为您自己的内容进行建模。
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
-workflow-type: ht
+feature: Edge Delivery Services
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 100%
 

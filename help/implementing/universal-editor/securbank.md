@@ -1,13 +1,15 @@
 ---
 title: 用于通用编辑器的SecurBank示例应用程序
 description: 使用SecurBank应用程序了解具有实践经验的通用编辑器，该应用程序旨在展示通用编辑器的强大功能、灵活性和可用性，以加快内容创建。
-source-git-commit: 4b7612f423e4e728911920793e9e0a03757c7c9d
+exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
 
 ---
-
 
 # 用于通用编辑器的SecurBank示例应用程序 {#securbank}
 

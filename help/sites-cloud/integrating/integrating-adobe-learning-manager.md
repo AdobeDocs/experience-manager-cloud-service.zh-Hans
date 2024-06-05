@@ -1,12 +1,13 @@
 ---
 title: 与 Adobe Learning Manager 集成
 description: 学习如何将 Adobe Learning Manager 与 Adobe Experience Manager 站点集成。
-feature: Administering
+feature: Integration
 role: Admin
 exl-id: 677c6d5a-0f8d-4012-96f3-e5491d66ef17
-source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
-workflow-type: ht
-source-wordcount: '85'
+solution: Experience Manager Sites
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '82'
 ht-degree: 100%
 
 ---

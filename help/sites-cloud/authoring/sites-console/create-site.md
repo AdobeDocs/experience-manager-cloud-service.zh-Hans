@@ -1,10 +1,11 @@
 ---
 title: 创建新站点
 description: 了解管理员如何使用AEM创建站点，并使用站点模板定义站点的样式和结构。
-feature: Administering
-role: Admin
+feature: Administering, Authoring
+role: Admin, User
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 67%

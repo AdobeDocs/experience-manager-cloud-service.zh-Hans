@@ -2,7 +2,9 @@
 title: Sling 备忘单
 description: 一个简单的Sling引用，可帮助您使用SlingPostServlet(POST请求的默认处理程序)时。
 exl-id: 6ca374f4-5dc4-4322-bc36-5010bc2c7768
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 9%

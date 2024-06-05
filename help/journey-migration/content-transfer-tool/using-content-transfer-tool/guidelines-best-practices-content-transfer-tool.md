@@ -2,7 +2,9 @@
 title: 有关使用内容传输工具的准则和最佳实践
 description: 了解使用内容传输工具的准则和最佳实践。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 15%

@@ -2,7 +2,10 @@
 title: 使用启动项预览将来的情况
 description: 利用时间扭曲功能，您可以查看基于启动项的内容。
 exl-id: 3e19f11c-53cc-491b-8d9b-1e82745caebc
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 100%

@@ -2,7 +2,9 @@
 title: 配置和配置浏览器
 description: 了解Adobe Experience Manager (AEM)配置以及它们如何管理AEM中的工作区设置。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%

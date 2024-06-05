@@ -2,8 +2,10 @@
 title: AEM as a Cloud Service 术语
 description: 在登录 AEMaaCS 之前，了解系统的一些术语及其基本结构会很有帮助。
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
 
