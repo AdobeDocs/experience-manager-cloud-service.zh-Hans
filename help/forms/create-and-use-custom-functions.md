@@ -5,12 +5,11 @@ keywords: 添加自定义函数、使用自定义函数、创建自定义函数�
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
-mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
+source-git-commit: d42728bb3eb81c032723db8467957d2e01c5cbed
 workflow-type: tm+mt
-source-wordcount: '3513'
-ht-degree: 3%
+source-wordcount: '4351'
+ht-degree: 1%
 
 ---
 
@@ -98,7 +97,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 在上一行代码中， `Input1` 是一个可选参数，没有任何默认值。 使用默认值声明可选参数：
 `@param {array} [input1=<value>]`
 `input1` 是数组类型的可选参数，其默认值设置为 `value`.
-确保将参数类型括在大括号中 {} 并且参数名称用方括号括起来 [].
+确保将参数类型括在大括号中 {} 并且参数名称用方括号括起来。
 
 请考虑以下代码段，其中input2被定义为可选参数：
 
@@ -225,33 +224,124 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 1. [创建客户端库](#create-client-library)
 1. [将客户端库添加到自适应表单](#use-custom-function)
 
+
+### 创建自定义函数的先决条件
+
+在开始将自定义函数添加到自适应Forms之前，请确保您满足以下条件：
+
+**软件：**
+
+* **纯文本编辑器(IDE)**：虽然任何纯文本编辑器都可以工作，但诸如Microsoft Visual Studio Code之类的集成开发环境(IDE)可提供高级功能以便更轻松地编辑。
+
+* **Git：** 此版本控制系统是管理代码更改所必需的。 如果未安装，请从https://git-scm.com下载。
+
 ### 创建客户端库 {#create-client-library}
 
 您可以通过添加客户端库来添加自定义函数。 要创建客户端库，请执行以下步骤：
 
-1. [克隆AEM Formsas a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 文件夹下创建一个文件夹。例如，创建一个名为的文件夹 `experience-league`.
-1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 并创建 `ClientLibraryFolder`. 例如，创建客户端库文件夹为 `customclientlibs`.
-1. 添加属性 `categories` 字符串类型值的组合。 例如，分配值 `customfunctionscategory` 到 `categories` 的属性 `customclientlibs` 文件夹。
+**克隆存储库**
+
+克隆您的 [AEM Formsas a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)：
+
+1. 打开命令行或终端窗口。
+
+1. 导航到要在计算机上存储存储库的所需位置。
+
+1. 运行以下命令以克隆存储库：
+
+   `git clone [Git Repository URL]`
+
+此命令下载存储库并在计算机上创建克隆存储库的本地文件夹。 在本指南中，我们将此文件夹称为 [AEMaaCS项目目录].
+
+**添加客户端库文件夹**
+
+要将新的客户端库文件夹添加到 [AEMaaCS项目目录]，请按照以下步骤操作：
+
+1. 打开 [AEMaaCS项目目录] 在编辑器中。
+
+   ![自定义函数文件夹结构](/help/forms/assets/custom-library-folder-structure.png)
+
+1. 定位 `ui.apps`.
+1. 添加新文件夹。 例如，添加一个名为的文件夹 `experience-league`.
+1. 导航到 `/experience-league/` 文件夹并添加 `ClientLibraryFolder`. 例如，创建一个名为的客户端库文件夹 `customclientlibs`.
+
+   `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
+
+**将文件和文件夹添加到“客户端库”文件夹**
+
+将以下内容添加到添加的客户端库文件夹：
+
+* .content.xml文件
+* js.txt文件
+* js文件夹
+
+`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
+
+1. 在 `.content.xml` 添加以下代码行：
+
+   ```javascript
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+   jcr:primaryType="cq:ClientLibraryFolder"
+   categories="[customfunctionscategory]"/>
+   ```
 
    >[!NOTE]
    >
    > 您可以选择任意名称 `client library folder` 和 `categories` 属性。
 
-1. 创建一个名为 `js` 的文件夹。
-1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 文件夹。
-1. 添加JavaScript文件，例如， `function.js`. 该文件包含自定义函数的代码。
-1. 保存 `function.js` 文件。
-1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/customclientlibs/js` 文件夹。
-1. 添加文本文件作为 `js.txt`。该文件包含：
+1. 在 `js.txt` 添加以下代码行：
 
    ```javascript
-       #base=js
-       functions.js
+         #base=js
+       function.js
    ```
+1. 在 `js` 文件夹，将javascript文件添加为 `function.js` 具体包括以下自定义函数：
 
-1. 保存 `js.txt` 文件。
-1. 使用以下命令在存储库中添加、提交和推送更改：
+   ```javascript
+    /**
+        * Calculates Age
+        * @name calculateAge
+        * @param {object} field
+        * @return {string} 
+    */
+   
+    function calculateAge(field) {
+    var dob = new Date(field);
+    var now = new Date();
+   
+    var age = now.getFullYear() - dob.getFullYear();
+    var monthDiff = now.getMonth() - dob.getMonth();
+   
+    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+    }
+   
+    return age;
+    }
+   ```
+1. 保存文件。
+
+![自定义函数文件夹结构](/help/forms/assets/custom-function-added-files.png)
+
+**在filter.xml中包含新文件夹**：
+
+1. 导航至 `/ui.apps/src/main/content/META-INF/vault/filter.xml` 文件中的文件 [AEMaaCS项目目录].
+
+1. 打开文件，并在末尾添加以下行：
+
+   `<filter root="/apps/experience-league" />`
+1. 保存文件。
+
+![自定义函数筛选器xml](/help/forms/assets/custom-function-filterxml.png)
+
+**将新创建的客户端库文件夹部署到AEM环境**
+
+部署AEMas a Cloud Service， [AEMaaCS项目目录]，添加到您的Cloud Service环境。 要部署到Cloud Service环境，请执行以下操作：
+
+1. 提交更改
+
+   1. 使用以下命令在存储库中添加、提交和推送更改：
 
    ```javascript
        git add .
@@ -259,7 +349,11 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
        git push
    ```
 
-1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) 以部署自定义函数。
+1. 部署更新的代码：
+
+   1. 通过现有的全栈管道触发代码部署。 这会自动构建和部署更新的代码。
+
+如果尚未设置管道，请参阅上的指南 [如何设置AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 成功执行管道后，客户端库中添加的自定义函数即可在中使用 [自适应表单规则编辑器](/help/forms/rule-editor-core-components.md).
 
@@ -443,7 +537,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![联系我们表单](/help/forms/assets/contact-us-form.png)
 
-#### 使用SetProperty规则显示面板
++++ **用例**：使用显示面板 `SetProperty` 规则
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，将表单字段设置为 `Required`.
 
@@ -485,8 +579,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![设置属性表单预览](/help/forms/assets/set-property-panel.png)
 
++++
 
-#### 验证字段。
++++ **用例**：验证字段。
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，以验证字段。
 
@@ -525,9 +620,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![电子邮件地址验证模式](/help/forms/assets/validate-form-preview-form.png)
 
++++
 
-
-#### 重置面板
++++ **用例**：重置面板
 
 在自定义函数中添加以下代码，如 [create-custom-function](#create-custom-function) 部分，以重置面板。
 
@@ -559,9 +654,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![重置表单](/help/forms/assets/custom-function-reset-form.png)
 
++++
 
-
-#### 在字段级别显示自定义消息并将字段标记为无效
++++ **用例**：在字段级别显示自定义消息并将字段标记为无效
 
 您可以使用 `markFieldAsInvalid()` 函数将字段定义为无效，并在字段级别设置自定义错误消息。 此 `fieldIdentifier` 值可以是 `fieldId`，或 `field qualifiedName`，或 `field dataRef`. 名为的对象的值 `option` 可以是 `{useId: true}`， `{useQualifiedName: true}`，或 `{useDataRef: true}`.
 用于将字段标记为无效并设置自定义消息的语法包括：
@@ -602,9 +697,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![将字段标记为有效的预览表单](/help/forms/assets/custom-function-validfield-form.png)
 
++++
 
-
-#### 在提交之前更改捕获的数据
++++ **用例**：将更改的数据提交到服务器
 
 以下代码行：
 `globals.functions.submitForm(globals.functions.exportData(), false);` 用于在操作后提交表单数据。
@@ -647,9 +742,9 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![控制台窗口中的Inspect数据](/help/forms/assets/custom-function-submit-data-console-data.png)
 
++++
 
-
-#### 覆盖自适应表单提交成功和错误消息
++++ **用例**：覆盖表单提交成功和错误处理程序
 
 添加以下代码行，如 [create-custom-function](#create-custom-function) 部分，自定义表单提交的提交或失败消息，并在模式框中显示表单提交消息：
 
@@ -758,19 +853,19 @@ function showModal(type, message) {
 
 如果自定义提交处理程序无法按预期在现有AEM项目或表单中执行，请参阅 [故障排除](#troubleshooting) 部分。
 
-<!--
++++
 
++++ **用例**：在可重复面板的特定实例中执行操作
 
-#### Use Case:  Perform actions in a specific instance of the repeatable panel 
+使用可重复面板上的可视规则编辑器创建的规则将应用于可重复面板的最后一个实例。 要为可重复面板的特定实例编写规则，我们可以使用自定义函数。
 
-Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
+让我们创建另一个表单，以收集有关前往目的地的旅行者的信息。 添加了一个旅客面板作为可重复面板，用户可以在其中使用 `Add Traveler` 按钮。
 
-Let's create a form to collect information about travelers heading to a destination. A traveler panel is added as a repeatable panel, where the user can add details for 5 travelers using the Add button.
+![旅行者信息](/help/forms/assets/traveler-info-form.png)
 
-Add the following line of code as explained in the [create-custom-function](#create-custom-function) section, to perform actions in a specific instance of the repeatable panel, other than the last one:
+添加以下代码行，如 [create-custom-function](#create-custom-function) 部分，要在可重复面板的特定实例中执行操作（最后一个实例除外），请执行以下操作：
 
 ```javascript
-
 /**
 * @name hidePanelInRepeatablePanel
 * @param {scope} globals
@@ -781,126 +876,126 @@ function hidePanelInRepeatablePanel(globals)
     // hides a panel inside second instance of repeatable panel
     globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
 }  
-
-```
- 
-In this example, the `hidePanelInRepeatablePanel` custom function performs action in a specific instance of the repeatable panel. In the above code, `travelerinfo` represents the repeatable panel. The `repeatablePanel[1].traveler, {visible: false}` code hides the panel in the second instance of the repeatable panel. 
-Let us add a button labeled `Hide` to add a rule to hide a specific panel.
-
-![Hide Panel rule](/help/forms/assets/custom-function-hidepanel-rule.png)
-
-Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
-
-
-
-
-#### **Usecase**: Pre-fill the field with a value when the form loads
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
-
-```javascript
-/**
- * @name importData
- * @param {scope} globals
- */
-function importData(globals)
-{
-    globals.functions.importData(Object.fromEntries([['amount',200000]]));
-} 
 ```
 
-In the aforementioned code, the `importData` function updates the value in the `amount` textbox field when the form loads.
+在此示例中， `hidePanelInRepeatablePanel` 自定义函数在可重复面板的特定实例中执行操作。 在上述代码中， `travelerinfo` 表示可重复面板。 此 `repeatablePanel[1].traveler, {visible: false}` 代码隐藏可重复面板的第二个实例中的面板。
 
-Let us create a rule for the `Submit` button, where the value in the `amount` textbox field changes to specified value when the form loads:
+让我们添加一个标记为的按钮 `Hide` 并添加规则以隐藏可重复面板的第二个实例。
 
-![Import Data Rule](/help/forms/assets/custom-function-import-data.png)
+![隐藏面板规则](/help/forms/assets/custom-function-hidepanel-rule.png)
 
-Refer to the screenshot below, which demonstrates that when the form loads, the value in the amount textbox is pre-filled with a specified value:
+请参阅以下视频，以演示 `Hide` 单击，第二个可重复实例中的面板将隐藏：
 
-![Import Data Rule](/help/forms/assets/cg)
-
-
-
-#### **Usecase**: Set focus on the specific field
-
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
-
-```javascript
-/**
- * @name setFocus
- * @param {object} field
- * @param {scope} globals
- */
-function setFocus(field, globals)
-{
-    globals.functions.setFocus(field);
-}
-```
-
-Let us add a rule to the `Submit` button to set focus on the `email` field when it is clicked:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus.png)
-
-Refer to the screenshot below, which demonstrates that when the `Submit` button is clicked, the focus is set on the `email` field:
-
-![Set Focus Rule](/help/forms/assets/custom-function-set-focus-form.png)
-
->[!NOTE]
->
-> You can use the optional `$focusOption` parameter, if you want to focus on the next or previous field relative to the `email` field.
+>[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
 +++
 
-+++ **Usecase**: Add or delete repeatable panel using the `dispatchEvent` property
++++ **用例**：加载表单时使用值预填字段
 
-Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to add a panel when the `Add Traveler` button is clicked using the `dispatchEvent` property:
+添加以下代码行，如 [create-custom-function](#create-custom-function) 部分，以在初始化表单时在字段中加载预填充值：
 
 ```javascript
 /**
- 
- * @name addInstance
+ * Tests import data
+ * @name testImportData
  * @param {scope} globals
  */
-function addInstance(globals)
+function testImportData(globals)
 {
-    var repeatablePanel = globals.form.traveler;
-    globals.functions.dispatchEvent(repeatablePanel, 'addInstance');
+    globals.functions.importData(Object.fromEntries([['amount','10000']]));
 } 
-
 ```
 
-Let us add a rule to the `Add Traveler` button to add the repeatable panel when it is clicked:
+在上述法典中， `testImportData` 函数预填充 `Booking Amount` 加载表单时显示的文本框字段。 假设预订表单要求最低预订金额为 `10,000`.
 
-![Add Panel Rule](/help/forms/assets/custom-function-add-panel.png)
+让我们在表单初始化时创建一个规则，其中 `Booking Amount` 加载表单时，文本框字段预填充指定的值：
 
-Refer to the screenshot below, which demonstrates that when the `Add Traveler` button is clicked, the traveler panel is added using the `dispatchEvent` property:
+![导入数据规则](/help/forms/assets/custom-function-import-data.png)
 
-![Add Panel](/help/forms/assets/customg)
+请参阅下面的屏幕截图，其中演示了加载表单时， `Booking Amount` 文本框已预填充指定的值：
 
-Similarly, add a button labeled `Delete Traveler` to delete a panel. Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to delete a panel when the `Delete Traveler` button is clicked using the `dispatchEvent` property:
+![导入数据规则表单](/help/forms/assets/custom-function-prefill-form.png)
+
++++
+
++++ **用例**：将焦点设置为特定字段
+
+添加以下代码行，如 [create-custom-function](#create-custom-function) 部分，以在 `Submit` 已单击按钮。：
 
 ```javascript
-
 /**
- 
- * @name removeInstance
+ * @name testSetFocus
+ * @param {object} emailField
  * @param {scope} globals
  */
-function removeInstance(globals)
+    function testSetFocus(field, globals)
+    {
+        globals.functions.setFocus(field);
+    }
+```
+
+让我们将规则添加到 `Submit` 按钮来设置焦点 `Email ID` 文本框字段：
+
+![设置焦点规则](/help/forms/assets/custom-function-set-focus.png)
+
+请参阅下面的屏幕截图，其中演示了 `Submit` 单击按钮时，焦点将位于 `Email ID` 字段：
+
+![设置焦点规则](/help/forms/assets/custom-function-set-focus-form.png)
+
+>[!NOTE]
+>
+> 您可以使用可选的 `$focusOption` 参数（如果要集中显示相对于的下一个或上一个字段） `email` 字段。
+
++++
+
++++ **用例**：使用添加或删除可重复面板 `dispatchEvent` 属性
+
+添加以下代码行，如 [create-custom-function](#create-custom-function) 部分，以在 `Add Traveler` 使用单击按钮 `dispatchEvent` 属性：
+
+```javascript
+/**
+ * Tests add instance with dispatchEvent
+ * @name testAddInstance
+ * @param {scope} globals
+ */
+function testAddInstance(globals)
+{
+    var repeatablePanel = globals.form.traveler;
+    globals.functions.dispatchEvent(repeatablePanel,'addInstance');
+}
+```
+
+让我们将规则添加到 `Add Traveler` 按钮，在单击可重复面板时添加该面板：
+
+![添加面板规则](/help/forms/assets/custom-function-add-panel.png)
+
+请参阅下面的gif，其中演示了当 `Add Traveler` 单击按钮后，会使用添加面板 `dispatchEvent` 属性：
+
+![添加面板](/help/forms/assets/custom-function-add-panel.gif)
+
+同样，添加以下代码行，如 [create-custom-function](#create-custom-function) 部分，以在 `Delete Traveler` 使用单击按钮 `dispatchEvent` 属性：
+
+```javascript
+/**
+ 
+ * @name testRemoveInstance
+ * @param {scope} globals
+ */
+function testRemoveInstance(globals)
 {
     var repeatablePanel = globals.form.traveler;
     globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
 } 
-
 ```
-Let us add a rule to the `Delete Traveler` button to delete the repeatable panel when it is clicked:
 
-![Delete Panel Rule](/help/forms/assets/custom-function-delete-panel.png)
+让我们将规则添加到 `Delete Traveler` 按钮在单击可重复面板时将其删除：
 
-Refer to the screenshot below, which demonstrates that when the `Delete Traveler` button is clicked, the traveler panel is deleted using the `dispatchEvent` property:
+![删除面板规则](/help/forms/assets/custom-function-delete-panel.png)
 
-![Delete Panel](/help/forms/assets/customg)
--->
+请参阅下面的gif，其中演示了当 `Delete Traveler` 单击“ ”按钮，将使用删除“旅客”面板 `dispatchEvent` 属性：
+
+![删除面板](/help/forms/assets/custom-function-delete-panel.gif)
+
 
 ## 对自定义函数的缓存支持
 
