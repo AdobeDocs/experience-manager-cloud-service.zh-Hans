@@ -4,10 +4,10 @@ description: 了解如何为自适应表单添加新区域设置。
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+source-git-commit: 6238d059ff44586ab1b0d24895a8b73d74b1f913
 workflow-type: tm+mt
 source-wordcount: '2068'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 | Foundation 组件  | [单击此处](supporting-new-language-localization.md) |
 | 核心组件 | 本文 |
 
-<span class="preview"> 从右至左语言支持功能在早期采用者计划下提供。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+<span class="preview"> 从右至左语言支持功能在早期采用者计划下提供。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。 您还可以通过添加这些区域设置，以从右至左(RTL)语言（如阿拉伯语、波斯语和乌尔都语）展示自适应Forms。
 
@@ -369,7 +369,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 ## 支持新本地化的最佳实践 {#best-practices}
 
 * Adobe建议在创建自适应表单之后创建翻译项目。 这简化了本地化过程。
-* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 要缓解此问题，请 **语言** 选项已纳入的“配置”对话框中 [日期选取器组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) 和 [数字框组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 要缓解此问题，请 **语言** 选项已纳入的“配置”对话框中 [日期选取器组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) 和 [数字框组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * 处理新字段：

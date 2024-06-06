@@ -1,16 +1,18 @@
 ---
 title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
+keywords: 自适应表单设置核心组件样式。 在核心组件中使用主题、设置自适应表单的样式、自定义主题
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
+source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2879'
 ht-degree: 5%
 
 ---
 
-# 自适应Forms中的主题 {#themes-for-af-using-core-components}
+
+# 使用主题为基于核心组件的自适应Forms设置样式{#themes-for-af-using-core-components}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -19,7 +21,9 @@ ht-degree: 5%
 
 您可以创建主题并应用它们来设置自适应表单的样式。 主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。主题是独立管理的，无需引用自适应表单，并且可在多个自适应Forms中重复使用。
 
-## 可用主题
+在本文中，我们了解如何使用主题为基于核心组件的自适应Forms设计自定义外观。
+
+## 用于设置核心组件样式的可用主题
 
 Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Forms的主题：
 
@@ -27,9 +31,9 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 * [WKND 主题](https://github.com/adobe/aem-forms-theme-wknd)
 * [画架主题](https://github.com/adobe/aem-forms-theme-easel)
 
-## 了解主题的结构
+## 了解主题结构
 
-主题是一个包，其中包含定义自适应Forms样式的CSS文件、JavaScript文件和资源（如图标）。 自适应表单主题遵循特定的组织，由以下组件组成：
+主题是一个包，其中包含可定义自适应Forms样式的样式组件（如CSS文件、JavaScript文件和资源，如图标）。 自适应表单主题遵循特定的组织，由以下组件组成：
 
 * `src/theme.scss`：此文件夹包括对整个主题产生广泛影响的CSS文件。 它用作定义和管理主题样式和行为的集中位置。 通过编辑此文件，您可以做出在整个主题中普遍应用的更改，从而影响自适应Forms和AEM Sites页面的外观和功能。
 
@@ -43,7 +47,7 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 
 ## 创建主题
 
-Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Forms的主题。
+Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Forms的自适应表单样式主题。
 
 * [画布主题](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND 主题](https://github.com/adobe/aem-forms-theme-wknd)
@@ -55,7 +59,7 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 
 ## 自定义主题 {#customize-a-theme-core-components}
 
-自定义主题是指修改和个性化主题外观的过程。 自定义主题时，您可以更改其设计元素、布局、颜色、排版规则，有时还会更改底层代码。 它允许您为网站或应用程序创建独一无二的定制外观，同时保持主题提供的基本结构和功能。
+自定义主题是指修改、样式化和个性化主题外观的过程。 自定义主题时，您可以更改其设计元素、布局、颜色、排版规则，有时还会更改底层代码。 它允许您为网站或应用程序创建独一无二的定制外观，同时保持主题提供的基本结构和功能。
 
 ### 先决条件 {#prerequisites-to-customize}
 
@@ -76,7 +80,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 -->
 
-在了解先决条件并配置开发环境后，您已准备好开始根据特定要求自定义主题。
+在了解先决条件并配置开发环境后，您已准备好开始根据特定要求自定义主题或设置主题样式。
 
 ### 自定义主题 {#steps-to-customize-a-theme-core-components}
 
@@ -89,6 +93,8 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. [部署主题](#deploy-the-theme)
 
 文档中提供的示例基于 **画布** 主题，但请务必注意，您可以使用相同的说明克隆并自定义任何主题。 这些说明适用于任何主题，允许您根据特定需求修改主题。
+
+让我们从使用主题为基于核心组件的自适应Forms创建品牌体验的流程开始？
 
 #### 1.克隆主题 {#download-a-theme-core-components}
 
@@ -121,7 +127,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 #### 2.设置主题名称 {#set-name-of-theme}
 
-1. 在纯文本编辑器中打开主题文件夹。 例如，要打开 `aem-forms-theme-canvas` Visual Studio代码编辑器中的文件夹。
+1. 在IDE中打开主题文件夹。 例如，要打开 `aem-forms-theme-canvas` Visual Studio代码编辑器中的文件夹。
 
 1. 导航到 `aem-forms-theme-canvas` 文件夹。
 
@@ -143,7 +149,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
    >[!NOTE]
    >
-   > * name属性用于唯一标识主题，指定的名称显示在中 **样式** 选项卡 **表单创建向导**.
+   > * name属性用于唯一标识主题，指定的名称显示在 **样式** 选项卡 **表单创建向导**.
    > * 您可以选择根据自己的选择为主题选择一个名称，例如， `mytheme` 或 `customtheme`. 但是，对于这种情况，我们已将名称指定为 `aem-forms-wknd-theme`.
 
 1. 打开 `package-lock.json` 文件以供编辑。
@@ -214,7 +220,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 4.1.配置本地环境以进行测试 {#rename-env-file-theme-folder}
 
-1. 在纯文本编辑器中打开主题文件夹。 例如，打开 `aem-forms-theme-canvas` Visual Studio代码编辑器中的文件夹。
+1. 在IDE中打开主题文件夹。 例如，打开 `aem-forms-theme-canvas` Visual Studio代码编辑器中的文件夹。
 1. 重命名 `env_template` 文件到 `.env` 文件，并添加以下参数：
 
    ```
@@ -255,7 +261,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ![代理浏览器同步](/help/forms/assets/browser_sync.png)
 
-在遵循主题级别和组件级别提供的用于主题自定义的示例后，自适应表单的错误消息将更改为 `blue` 颜色，而按钮组件的标签颜色将更改为 `green` 在悬停时。
+在遵循主题级别和组件级别为主题自定义设置自适应表单（核心组件）样式的示例后，自适应表单的错误消息将更改为 `blue` 颜色，而按钮组件的标签颜色将更改为 `green` 在悬停时。
 
 **预览主题级别样式**
 
@@ -265,11 +271,13 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ![示例：将悬停颜色设置为绿色](/help/forms/assets/button-customization.png)
 
+自定义主题有助于根据组织要求，设计基于核心组件的自适应Forms的自定义查找。
+
 ###### 测试在Cloud Service环境中托管的表单的主题
 
 您还可以测试AEM Formsas a Cloud Service实例上托管的自适应表单的主题。 要在云实例上托管的自适应Forms中为测试主题配置和设置本地环境，请执行以下步骤：
 
-1. 在纯文本编辑器中打开主题文件夹。 例如，打开 `aem-forms-theme-canvas` Visual Studio代码编辑器中的文件夹。
+1. 在IDE中打开主题文件夹。 例如，打开 `aem-forms-theme-canvas` Visual Studio代码编辑器中的文件夹。
 1. 重命名 `env_template` 文件到 `.env` 文件并添加以下参数：
 
    ```
@@ -371,7 +379,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 单击 **[!UICONTROL 添加]** 按钮来自 **[!UICONTROL 管道]** 部分。
 1. 选择 **[!UICONTROL 添加非生产管道]** 或 **[!UICONTROL 添加生产管道]** 基于Cloud Service环境。 例如，下面的 **[!UICONTROL 添加生产管道]** 已选中选项。
 1. 在 **[!UICONTROL 添加生产管道]** 对话框作为 **[!UICONTROL 配置]** 步骤，指定管道的名称。 例如，管道的名称为 `customcanvastheme`.
-1. 单击&#x200B;**[!UICONTROL “继续”]**。
+1. 单击&#x200B;**[!UICONTROL 继续]**。
 1. 选择 **[!UICONTROL 目标部署]** > **[!UICONTROL 前端代码]** 选项，在 **[!UICONTROL 源代码]** 步骤。
 1. 选择 **[!UICONTROL 存储库]** 和 **[!UICONTROL Git分支]** 具有最新更改的值。 例如，此处选定的存储库名称为 `custom-canvas-theme-repo` 而Git分支是 `main`.
 1. 选择 **[!UICONTROL 代码位置]** 作为 `/`，如果根文件夹中存在更改。
@@ -388,6 +396,8 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 构建完成后，主题即可在创作实例中供使用。 它显示在 **[!UICONTROL 样式]** 选项卡中，用于创建自适应表单时。
 
 ![样式选项卡下可用的自定义主题](/help/forms/assets/custom-theme-style-tab.png)
+
+自定义主题有助于为基于核心组件的自适应Forms创建品牌体验。
 
 ## 将主题应用于自适应表单 {#using-theme-in-adaptive-form}
 

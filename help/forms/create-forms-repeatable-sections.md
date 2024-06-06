@@ -4,10 +4,10 @@ description: 了解如何在自适应表单中创建一个或多个可重复的�
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: d3c5adf0b5b2155308e0bf9f4459682f11b67780
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 2%
+source-wordcount: '1258'
+ht-degree: 8%
 
 ---
 
@@ -21,20 +21,20 @@ ht-degree: 2%
 
 可重复部分是指可为同一数据的多个实例收集信息而重复或多次重复的表单的一部分。
 
-例如，考虑用于收集有关人员工作体验信息的表单。 您可以有一个可重复的部分，用于捕获每个先前作业的详细信息。 可重复部分通常包含公司名称、职称、雇佣日期和工作责任等字段。 用户可以添加可重复部分的多个实例，以输入有关他们已执行的每个作业的信息。
+例如，请看一个用于收集个人工作经验信息的表单。您可以设置一个可重复的分区，用于记录以前每份工作的详细信息。可重复分区通常包含公司名称、职位、就业日期和工作职责等字段。用户可以在可重复分区中添加多个实例，以输入有关他们所做过的每项工作的信息。
 
 ![重复性](/help/forms/assets/repeatable-adaptive-form-example.gif)
 
-在本文结束时，您将学习：
+读完本文后，您将学会：
 
 * 在自适应表单中创建可重复部分
 * 设置自适应表单组件的最小或最大重复次数
 * 使用规则编辑器为可重复部分配置添加或删除操作
 
-您可以使用 [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)， [折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)，或 [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 组件使自适应表单的部分可重复。 您可以将子组件添加到面板、折叠面板、水平选项卡或向导组件中，以在表单中创建可重复部分。
+您可以使用 [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)， [折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)， [垂直选项卡](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)  或 [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 组件使自适应表单的部分可重复。 可将子组件添加到这些组件中，以在表单中创建可重复部分。
 
 
-本文档中的示例基于 [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 组件。 您可以执行相同的步骤，以使 [折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)、和 [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 组件可重复。
+本文档中的示例基于 [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) 组件。 您可以执行相同的步骤，以使 [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)， [折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)， [垂直选项卡](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 或 [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 组件可重复。
 
 ## 添加或删除表单中的可重复部分 {#add-or-delete-repeatable-section-in-panel-container}
 
