@@ -1,7 +1,7 @@
 ---
 title: Real Use Monitoring for AEMas a Cloud Service
 description: 了解如何使用实时监控(RUM)实时捕获和分析网站或应用程序的数字用户体验。
-source-git-commit: a15f973c21044e16751401bd0ffb256a4d0fb17d
+source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -10,6 +10,7 @@ ht-degree: 0%
 
 
 >[!NOTE]
+>
 >我们很高兴地宣布 [GA推出](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) 对于Real Use Monitoring服务，为客户端收集数据。 这是一项自动化服务，无需客户设置。
 
 # 适用于AEM的Real Use Monitoring Serviceas a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
@@ -113,6 +114,6 @@ RUM数据有利于以下目的：
 
 1. **如何选择退出？**
 
-我们强烈建议使用实时监控(RUM)，因为它具有显着优势，并且可让您优化数字体验。 它可以提供有价值的见解，从而帮助提高网站性能。该服务旨在实现无缝连接，对您网站的性能没有影响。
+   我们强烈建议使用实时监控(RUM)，因为它具有显着优势，并且可让您优化数字体验。 它可以提供有价值的见解，从而帮助提高网站性能。该服务旨在实现无缝连接，对您网站的性能没有影响。
 
-选择退出意味着错过这些洞察。 但是，如果您遇到任何问题，请联系Adobe支持。
+   选择退出意味着错过这些洞察。 但是，如果您遇到任何问题，请联系Adobe支持。
