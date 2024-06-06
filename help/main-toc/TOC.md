@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8123d5c9e3343361baab651d2c1eb72779b952ab
+source-git-commit: d4ada5f15a587d54f46a475ca574134988b463d8
 workflow-type: tm+mt
-source-wordcount: '5001'
+source-wordcount: '5010'
 ht-degree: 99%
 
 ---
@@ -424,6 +424,7 @@ ht-degree: 99%
       + [将内容片段导出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [将体验片段导出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [与 Adobe Campaign 集成](/help/sites-cloud/integrating/campaign.md)
+   + [Real Use Monitoring for AEMas a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + 资源 {#assets}
    + [概述和新增功能](/help/assets/overview.md)
    + [对  [!DNL Assets] as a [!DNL Cloud Service] 的重要更改](/help/assets/assets-cloud-changes.md)
