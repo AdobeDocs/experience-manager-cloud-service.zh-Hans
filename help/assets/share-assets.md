@@ -4,9 +4,9 @@ description: 使用共享作为链接、下载和方式等方法分发数字资�
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
+source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1835'
 ht-degree: 3%
 
 ---
@@ -116,12 +116,12 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 | 占位符 | 描述 |
 |---|-----|
-| ${emailSubject} | 电子邮件的主题 |
-| ${emailInitiator} | 创建电子邮件的用户的电子邮件ID |
-| ${emailMessage} | 电子邮件正文 |
-| ${pagePath} | 共享链接的URL |
-| ${linkExpiry} | 共享链接到期日期 |
-| ${host.prefix} | 来源 [!DNL Experience Manager] 例如 `http://www.adobe.com"` |
+| `${emailSubject}` | 电子邮件的主题 |
+| `${emailInitiator}` | 创建电子邮件的用户的电子邮件ID |
+| `${emailMessage}` | 电子邮件正文 |
+| `${pagePath}` | 共享链接的URL |
+| `${linkExpiry}` | 共享链接到期日期 |
+| `${host.prefix}` | 来源 [!DNL Experience Manager] 例如 `http://www.adobe.com"` |
 
 #### 自定义电子邮件模板示例 {#custom-email-template-example}
 
