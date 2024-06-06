@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
+source-git-commit: f52b5f763277c9288d5dd30b01cfb7a4afeddda7
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 44%
+source-wordcount: '384'
+ht-degree: 41%
 
 ---
 
@@ -44,6 +44,10 @@ ht-degree: 44%
 ### 已知问题 {#known-issues-16544}
 
 无。
+
+### 更改通知 {#change-notice-16544}
+
+从2024年9月开始，AEMas a Cloud Service将通过Sling模型导出器框架禁用资源解析器的序列化。 请参阅 [文档](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter) 以了解更多详细信息。
 
 ### 已弃用的功能和 API {#deprecated-16544}
 
