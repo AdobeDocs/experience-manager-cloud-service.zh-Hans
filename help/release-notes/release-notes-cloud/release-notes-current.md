@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
+source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1942'
 ht-degree: 22%
 
 ---
@@ -44,12 +44,28 @@ ht-degree: 22%
 
 ### Sites中的新增功能 {#sites-new-features}
 
+#### AEM翻译集成 {#translation-integration}
+
+内容翻译操作和工作流程现在会触发事件，以允许从外部应用程序跟踪相关流程步骤和状态。 正在生成以下事件。 用户将可以使用Adobe Developer Console订阅事件。
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
 #### Real Use Monitoring (RUM)数据服务 {#real-use-monitoring}
 
 * **[Real Use Monitoring (RUM) Data Service现已正式提供](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 为AEMas a Cloud Service启用客户端数据收集。
-Real Use Monitoring服务（客户端集合）提供了交互的更精确反映，确保了对网站参与度的可靠衡量。 它使客户能够对其页面流量和性能进行高级分析。 这是详细了解页面性能并深入了解以改进该性能的绝佳机会。
+Real Use Monitoring服务是客户端的集合，可更准确地反映交互情况，从而确保可靠地衡量网站参与度。 它使客户能够对其页面流量和性能进行高级分析。 这是详细了解页面性能并深入了解以改进该性能的绝佳机会。
 
-### Edge Delivery Services的AEM创作
+#### Edge Delivery Services的AEM创作 {#edge-enhancements}
 
 增强的稳定性和各种改进，以实现更好的创作体验。
 
@@ -128,11 +144,11 @@ AEM Forms通过添加对两个流行的CAPTCHA解决方案（Cloudflare Turnstil
 
 ### 表单服务
 
-Forms服务为数据捕获生成交互式PDF forms。 它也可用于导入导出数据到现有交互式PDF表单或从其中导出数据，以及验证提交的数据。 以下是它的功能划分：
+Forms服务为数据捕获生成交互式PDF forms。 它还可用于将数据导入现有交互式PDF表单或从其中导出数据，以及验证提交的数据。 以下是它的功能划分：
 
 * **呈现Forms**：使用使用AEM Forms Designer创建的模板和（可选）XML数据生成交互式PDF表单。 这实际上会生成一个可填写的PDF表单，可以选择预填数据。
 * **数据提取和导入**：将数据导入现有PDF表单，并从已填写的PDF表单中提取数据。 XDP和XML数据格式均受支持，导入到非XFAPDF forms（也称为AcroForms）时还支持FDF和XFDF数据。
-* **数据验证**： ：根据使用AEM Forms Designer创建的模板，验证以XDP或XML格式提交的数据。
+* **数据验证**：根据使用AEM Forms Designer创建的模板，验证以XDP或XML格式提交的数据。
 
 >[!IMPORTANT]
 >
@@ -239,4 +255,3 @@ Adobe托管的CDN现在支持 [Edge Side Include (ESI)](/help/implementing/dispa
 
 您可以找到有关其他Experience Cloud应用程序版本的信息 [此处](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
 若要每月收到关于Experience Cloud发行说明更新的电子邮件通知，请订阅 [Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html).
-
