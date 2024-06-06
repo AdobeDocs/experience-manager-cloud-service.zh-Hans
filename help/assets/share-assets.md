@@ -1,13 +1,12 @@
 ---
 title: 分发和共享资源、文件夹和收藏集
 description: 使用共享作为链接、下载和方式等方法分发数字资源 [!DNL Brand Portal]， [!DNL desktop app]、和 [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1847'
 ht-degree: 3%
 
 ---
@@ -86,7 +85,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 1. 此 **[!UICONTROL 链接共享]** 此时将显示一个对话框，其中包含中自动生成的资源链接 **[!UICONTROL 共享链接]** 字段。
 1. 根据需要设置共享链接的过期日期。
 1. 下 **[!UICONTROL 链接设置]**，选中或取消选中 `Include Originals` 或 `Include Renditions` 以包含或排除其中一个。 必须选择至少一个选项。
-1. 选定资产的名称将显示在 [!DNL Share Link] 对话框。
+1. 选定资产的名称显示在 [!DNL Share Link] 对话框。
 1. 复制资产链接并与用户共享。
 
 ### 通过电子邮件通知共享资产链接 {#share-assets-link-through-email}
@@ -107,9 +106,45 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
    ![链接共享电子邮件](assets/link-sharing-email-notification.png)
 
-### 使用资源链接下载资源
+### 自定义电子邮件模板 {#customize-email-template}
 
-任何有权访问共享资源链接的用户都可以下载捆绑在zip文件夹中的资源。 下载过程是相同的，无论用户是访问复制的资产链接，还是使用通过电子邮件共享的资产链接。
+设计良好的模板可传达专业精神和能力，提高您的信息和组织的信誉。 此 [!DNL Adobe Experience Manager] 允许您自定义电子邮件模板，该模板将发送给接收包含共享链接的电子邮件的收件人。 此外，自定义电子邮件模板允许通过为收件人指定名称并引用与他们相关的特定详细信息来对电子邮件内容进行个性化设置。 这种个人接触可能会让收件人感受到价值，并增加参与度。 不仅如此，自定义模板还可确保您的电子邮件与品牌标识一致，包括徽标、颜色和字体。 一致性加强了品牌认知和收件人之间的信任。
+
+#### 自定义电子邮件模板的格式 {#format-of-custom-email-template}
+
+可使用纯文本或HTML自定义电子邮件模板。 默认可编辑模板链接位于 `/libs/settings/dam/adhocassetshare/en.txt`. 您可以通过创建文件来覆盖模板 `/apps/settings/dam/adhocassetshare/en.txt`. 您可以根据需要多次修改电子邮件模板。
+
+| 占位符 | 描述 |
+|---|-----|
+| ${emailSubject} | 电子邮件的主题 |
+| ${emailInitiator} | 创建电子邮件的用户的电子邮件ID |
+| ${emailMessage} | 电子邮件正文 |
+| ${pagePath} | 共享链接的URL |
+| ${linkExpiry} | 共享链接到期日期 |
+| ${host.prefix} | 来源 [!DNL Experience Manager] 例如 `http://www.adobe.com"` |
+
+#### 自定义电子邮件模板示例 {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### 使用资源链接下载资源 {#download-assets-using-asset-link}
+
+任何有权访问共享资源链接的用户都可以下载捆绑在zip文件夹中的资源。 无论用户是访问复制的资产链接，还是使用通过电子邮件共享的资产链接，下载过程都是相同的。
 
 * 单击资产链接或在浏览器中粘贴该URL。 此 [!UICONTROL 链接共享] 界面打开，您可以在其中切换到 [!UICONTROL 卡片视图] 或 [!UICONTROL 列表视图].
 
@@ -223,7 +258,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-要为要与用户共享的资源生成URL，请使用链接共享对话框。 具有管理员权限或读取权限的用户 `/var/dam/share` 位置可查看与其共享的链接。 通过链接共享资产是一种方便的方法，无需外部方先登录，即可将资源提供给外部方 [!DNL Assets].
+要为要与用户共享的资源生成URL，请使用链接共享对话框。 具有管理员权限或读取权限的用户 `/var/dam/share` 位置可查看与其共享的链接。 通过链接共享资产是一种方便的方法，使外部方无需先登录即可使用资源 [!DNL Assets].
 
 >[!NOTE]
 >
@@ -266,7 +301,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### 要使用的配置 [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe资源链接可简化内容创建过程中创意专业人士与营销人员之间的协作。 它连接 [!DNL Adobe Experience Manager Assets] 替换为 [!DNL Creative Cloud] 桌面应用程序 [!DNL Adobe InDesign]， [!DNL Adobe Photoshop]、和 [!DNL Adobe Illustrator]. 此 [!DNL Adobe Asset Link] 面板允许创意人员访问和修改中存储的内容 [!DNL Assets] 而不离开他们最熟悉的创意应用。
+Adobe资源链接可简化内容创建过程中创意专业人士与营销人员之间的协作。 它连接 [!DNL Adobe Experience Manager Assets] 替换为 [!DNL Creative Cloud] 桌面应用程序， [!DNL Adobe InDesign]， [!DNL Adobe Photoshop]、和 [!DNL Adobe Illustrator]. 此 [!DNL Adobe Asset Link] 面板允许创意人员访问和修改中存储的内容 [!DNL Assets] 而不离开他们最熟悉的创意应用。
 
 请参阅 [如何配置 [!DNL Assets] 将其与一起使用 [!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -300,3 +335,4 @@ Adobe资源链接可简化内容创建过程中创意专业人士与营销人员
 * [管理收藏集](manage-collections.md)
 * [批量元数据导入](metadata-import-export.md)
 * [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
