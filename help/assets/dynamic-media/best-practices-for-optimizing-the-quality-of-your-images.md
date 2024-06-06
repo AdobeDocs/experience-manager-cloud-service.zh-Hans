@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
+source-git-commit: 7820492f462d2b5824e408429332b5adf2e67aab
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 1%
@@ -25,9 +25,9 @@ Adobe Experience Manager包括100多条Dynamic Media图像投放命令，用于�
 **智能成像：**
 
 * 在Dynamic Media中启用“智能成像”可基于客户端浏览器功能自动优化图像格式、大小和质量。
-想要了解更多信息？ 转到 [智能成像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+想要了解更多信息？ 转到 [智能成像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * 它通过动态调整这些参数来增强图像投放性能。
-* 可以使用自我评估工具评估智能成像 [快照](https://snapshot.scene7.com/)
+* 可以使用自我评估工具评估智能成像 [快照](https://snapshot.scene7.com/).
 
 **图像格式：**
 
