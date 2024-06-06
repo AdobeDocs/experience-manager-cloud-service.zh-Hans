@@ -1,26 +1,26 @@
 ---
-title: 在AEM FormsEdge Delivery Services中使用reCAPTCHA
-description: 在EDS表单中使用Google reCAPTCHA
+title: 将reCAPTCHA与AEM Formsas a Cloud Service的Edge Delivery Services结合使用
+description: 在 EDS Form 中使用 Google reCAPTCHA
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 1%
+source-wordcount: '200'
+ht-degree: 87%
 
 ---
 
 
-# 在AEM FormsEdge Delivery Services中使用reCAPTCHA
+# 将reCAPTCHA与AEM Formsas a Cloud Service的Edge Delivery Services结合使用
 
-reCAPTCHA是一种常用的工具，用于保护网站免受欺诈活动、垃圾邮件和滥用的影响。 在Edge Delivery Services中，自适应Forms块提供添加Google reCAPTCHA的功能，以区分人类和机器人。 此功能允许用户保护其网站免受垃圾邮件和滥用。
-例如，考虑一个查询表单，该表单收集诸如开始和结束行程日期、房间预算、预计行程成本和旅客信息等数据。 在这种情况下，恶意用户可能会利用表单进行攻击，例如发送网络钓鱼电子邮件，或使用垃圾邮件程序向其发送不相关或有害的内容。 集成reCAPTCHA后，可验证所提交的内容是否来自正版用户，从而增强安全性，并有效地将垃圾邮件条目减至最少。
+reCAPTCHA 是一种流行的工具，用于保护网站免受欺诈活动、垃圾邮件和滥用。在 Edge Delivery Services 中，自适应表单块提供了添加 Google reCAPTCHA 的功能，以区分人类和机器人。此功能允许用户保护他们的网站免受垃圾邮件和滥用。
+例如，考虑一个收集旅行开始和结束日期、房间预算、预计旅行费用和旅行者信息等数据的查询表。在这种情况下，存在恶意用户利用该表单发送网络钓鱼电子邮件或使用垃圾邮件机器人向其中发送不相关或有害内容的风险。集成 reCAPTCHA 可验证提交内容是否来自真实用户，从而提供额外的安全性，有效减少垃圾邮件条目。
 
-Edge Delivery Services仅支持 **基于得分(v3)-reCAPTCHA** 用于自适应表单块。
+Edge Delivery Services 仅支持 **基于分数(v3)-reCAPTCHA** 用于自适应表单块。
 
 ![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
 
-此 **reCAPTCHA** 功能在预发行计划下。 要请求访问 **reCAPTCHA** AEM FormsEdge Delivery Services的功能，请用您的工作地址向mailto:aem-forms-ea@adobe.com发送电子邮件。
+**reCAPTCHA** 功能目前处于预发布计划之中。要请求访问 AEM Forms Edge Delivery Services 的&#x200B;**reCAPTCHA** 功能，请从您的工作地址发送电子邮件至 mailto:aem-forms-ea@adobe.com。
 
 <!--
 By the end of this article, you learn to:

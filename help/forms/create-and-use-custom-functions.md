@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: d42728bb3eb81c032723db8467957d2e01c5cbed
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
 source-wordcount: '4351'
 ht-degree: 1%
@@ -996,6 +996,7 @@ function testRemoveInstance(globals)
 
 ![删除面板](/help/forms/assets/custom-function-delete-panel.gif)
 
++++
 
 ## 对自定义函数的缓存支持
 
