@@ -1,19 +1,19 @@
 ---
 title: Real Use Monitoring for AEMas a Cloud Service
 description: 了解如何使用实时监控(RUM)实时捕获和分析网站或应用程序的数字用户体验。
-source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
+exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
+source-git-commit: 948eb304c17ad86dcbab2b0685428ae51f38f488
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
 
 ---
 
+# 适用于AEM的Real Use Monitoring Serviceas a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
 >我们很高兴地宣布 [GA推出](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) 对于Real Use Monitoring服务，为客户端收集数据。 这是一项自动化服务，无需客户设置。
-
-# 适用于AEM的Real Use Monitoring Serviceas a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
