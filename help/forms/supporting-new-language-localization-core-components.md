@@ -4,7 +4,7 @@ description: 了解如何为自适应表单添加新区域设置。
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 6238d059ff44586ab1b0d24895a8b73d74b1f913
+source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 3%
@@ -369,7 +369,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 ## 支持新本地化的最佳实践 {#best-practices}
 
 * Adobe建议在创建自适应表单之后创建翻译项目。 这简化了本地化过程。
-* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 要缓解此问题，请 **语言** 选项已纳入的“配置”对话框中 [日期选取器组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) 和 [数字框组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* 将数值框和日期选取器组件转换为特定区域设置时，可能会出现格式问题。 要缓解此问题，请 **语言** 选项已纳入的“配置”对话框中 [日期选取器组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) 和 [数值框组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * 处理新字段：

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 1%
@@ -18,14 +18,9 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
+| AEMas a Cloud Service（基础组件） | 本文 |
+| AEMas a Cloud Service（核心组件） | [单击此处](/help/forms/rule-editor-core-components.md) |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
-| AEM as a Cloud Service | 本文 |
-
-
-| 版本 | 文章链接 |
-| -------- | ---------------------------- |
-| 核心组件 | [单击此处](/help/forms/rule-editor-core-components.md) |
-| 基础组件 | 本文 |
 
 ## 概述 {#overview}
 
@@ -57,13 +52,13 @@ ht-degree: 1%
 
 规则通常遵循以下结构之一：
 
-**条件 — 操作** 在此构造中，规则首先定义条件，然后定义要触发的操作。 这种构造与编程语言中的if-then语句类似。
+**条件-操作** 在此构造中，规则首先定义条件，然后是要触发的操作。 该结构可与编程语言中的 if-then 语句相媲美。
 
-在规则编辑器中， **时间** 规则类型强制使用condition-action结构。
+在规则编辑器中，When **** 规则类型强制执行条件操作构造。
 
-**操作条件** 在此构造中，规则首先定义要触发的操作，然后定义求值的条件。 此结构的另一个变体是action-condition-alternate action ，它还会定义在条件返回False时要触发的替代操作。
+**操作条件** 在此构造中，规则首先定义要触发的操作，然后是评估条件。 此构造的另一种变体是操作-条件-备用操作，它还定义了在条件返回 False 时要触发的备用操作。
 
-规则编辑器中的“显示”、“隐藏”、“启用”、“禁用”、“设置值”和“验证”规则类型强制实施操作条件规则结构。 默认情况下，“显示”的替代操作是“隐藏”，而“启用”的替代操作是“禁用”，反之亦然。 您不能更改默认替代操作。
+规则编辑器中的“显示”、“隐藏”、“启用”、“禁用”、“设置值”和“验证”规则类型强制执行操作条件规则构造。 默认情况下，“显示”的替代操作是“隐藏”，“启用”的替代操作是“禁用”，反之亦然。 您不能更改默认替代操作。
 
 >[!NOTE]
 >
@@ -112,9 +107,9 @@ ht-degree: 1%
 
 规则编辑器提供了一组可用于编写规则的预定义规则类型。 让我们详细了解一下每种规则类型。 有关在规则编辑器中编写规则的更多信息，请参阅 [写入规则](rule-editor.md#p-write-rules-p).
 
-### [!UICONTROL 时间] {#whenruletype}
+### [!UICONTROL 当] {#whenruletype}
 
-此 **[!UICONTROL 时间]** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，您首先指定评估条件，然后在满足条件时触发操作 （ `True`）。 使用 When 规则类型时，您可以使用多个 AND 和 OR 运算符来创建 [嵌套表达式](#nestedexpressions)。
+When **** 规则类型遵循条件-操作-备用操作&#x200B;**规则构造，或者有时仅**&#x200B;遵循&#x200B;**条件-操作**&#x200B;构造。在此规则类型中，您首先指定评估条件，然后在满足条件时触发操作 （ `True`）。 使用 When 规则类型时，您可以使用多个 AND 和 OR 运算符来创建 [嵌套表达式](#nestedexpressions)。
 
 使用 When 规则类型，您可以评估表单对象的条件并对一个或多个对象执行操作。
 
@@ -204,23 +199,27 @@ _
 
 **[!UICONTROL 删除实例]** 删除指定可重复面板或表行的实例。
 
-**[!UICONTROL 导航到]** “导航到其他 <!--Interactive Communications,--> 自适应表单、其他资源（如图像或文档片段）或外部 URL。 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 导航到]** 导航到其他 <!--Interactive Communications,--> 自适应Forms、图像或文档片段等其他资源或外部URL。 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 ### [!UICONTROL 设置值] {#set-value-of}
 
 此 **[!UICONTROL 设置值]** 规则类型允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
 
-此 **设置值** 规则类型并非适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
+“ **设置值”** 规则类型并非对所有表单对象（如面板和工具栏按钮）都可用。 标准“设置值”规则具有以下结构：
 
 将对象 A 的值设置为：
 
-（字符串ABC） OR（对象C的对象属性X） OR（函数值） OR（数学表达式值） OR（数据模型服务或Web服务的输出值）；
+（字符串 ABC）或
+（对象 C 的对象属性 X）或
+（来自函数的值）或
+（来自数学表达式的值）或
+（数据模型服务或 Web 服务的输出值）;
 
-时间（可选）：
+当（可选）时：
 
 （条件 1 和条件 2 和条件 3）为 TRUE;
 
-以下示例将字段中的值`dependentid`作为输入，并将字段的值`Relation`设置为表单数据模型服务的参数`getDependent`的`Relation`输出。
+以下示例将值引入到 `dependentid` 字段作为输入，并设置 `Relation` 字段到输出 `Relation` 的参数 `getDependent` 表单数据模型服务。
 
 ![Set-value-web-service](assets/set-value-web-service1.png)
 
@@ -362,13 +361,13 @@ _
 
 应用了一个或多个有效规则的表单对象将标有绿点。 如果应用于表单对象的任意规则无效，则表单对象将标有黄点。
 
-“函数”选项卡包含一组内置函数，例如“总和”、“最小值”、“最大值”、“平均值”、“数目”和“验证表单”。 您可以使用这些函数计算可重复面板和表格行中的值，并在编写规则时在操作和条件语句中使用它们。 不过，您也可以创建自定义 [函数](#custom-functions) 。
+“函数”选项卡包含一组内置函数，例如“总和”、“最小值”、“最大值”、“平均值”、“数目”和“验证表单”。 您可以使用这些函数计算可重复面板和表格行中的值，并在编写规则时在操作和条件语句中使用它们。 但是，您可以创建 [自定义函数](#custom-functions) 也是。
 
-![“功能”选项卡](assets/functions1.png)
+![“函数”选项卡](assets/functions1.png)
 
 >[!NOTE]
 >
->您可以在“表单对象”和“函数”选项卡中对对象和函数名称和标题执行文本搜索。
+>您可以在Forms的“对象”和“函数”选项卡中对对象和函数名称和标题执行文本搜索。
 
 在表单对象的左树中，您可以选择表单对象以显示应用于每个对象的规则。 您不仅可以浏览各种表单对象的规则，还可以复制粘贴表单对象之间的规则。 有关更多信息，请参阅 [复制粘贴规则](rule-editor.md#p-copy-paste-rules-p).
 
@@ -470,13 +469,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 接下来，编写规则以计算贷款资格金额（占总薪金的50%），并在“贷款资格”字段中显示。 要实现此结果，请创建 **[!UICONTROL 设置值]** 贷款资格字段规则。
 
-   在创作模式下，选择 **[!UICONTROL 贷款资格]** 字段并选择 ![edit-rules](assets/edit-rules-icon.svg). 接下来，选择“创建&#x200B;]**”**[!UICONTROL &#x200B;以启动规则编辑器。
+   在创作模式下，选择 **[!UICONTROL 贷款资格]** 字段并选择 ![edit-rules](assets/edit-rules-icon.svg). 接下来，选择 **[!UICONTROL 创建]** 以启动规则编辑器。
 
-1. 从规则下拉列表中选择设置 **[!UICONTROL 规则值]** 。
+1. 选择 **[!UICONTROL 设置值]** 规则。
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. 选择&#x200B;**[!UICONTROL “选择选项]**”，然后选择“数学表达式&#x200B;]**”。**[!UICONTROL &#x200B;用于编写数学表达式的字段打开。
+1. 选择 **[!UICONTROL 选择选项]** 并选择 **[!UICONTROL 数学表达式]**. 用于编写数学表达式的字段打开。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -606,7 +605,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
    1. 数字
    1. 布尔型
 
-  所有其他返回类型都归入上述类型之一。 不支持“无”。 确保选择以上类型之一。 返回类型不区分大小写。
+  所有其他退货类型均归入上述任一类型下。 不支持无。 确保选择以上类型之一。 返回类型不区分大小写。
 
    * **此**
 语法： `@this currentComponent`
@@ -753,11 +752,11 @@ var c = {
 
 ## 复制粘贴规则 {#copy-paste-rules}
 
-您可以将规则从一个字段复制粘贴到其他类似字段以节省时间。
+您可以将规则从一个字段复制粘贴到其他类似字段，以节省时间。
 
 要复制粘贴规则，请执行以下操作：
 
-1. 选择要从中复制规则的表单对象，然后在组件工具栏 ![中选择“编辑规则](assets/edit-rules-icon.svg)”。 此时将显示规则编辑器用户界面，其中选择了表单对象，并显示了现有规则。
+1. 选择要从中复制规则的表单对象，然后在组件工具栏中选择 ![编辑规则](assets/edit-rules-icon.svg). 此时将显示规则编辑器用户界面，其中选定了表单对象，并显示现有规则。
 
    ![复制规则](assets/copyrule.png)
 
