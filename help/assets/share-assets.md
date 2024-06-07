@@ -4,9 +4,9 @@ description: 使用共享作为链接、下载和方式等方法分发数字资�
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90da6851240add93de73dd6da46e54ffbf80a1d3
+source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 3%
 
 ---
@@ -121,7 +121,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 | `${emailMessage}` | 电子邮件正文 |
 | `${pagePath}` | 共享链接的URL |
 | `${linkExpiry}` | 共享链接到期日期 |
-| `${host.prefix}` | 来源 [!DNL Experience Manager] 例如 `http://www.adobe.com"` |
+<!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### 自定义电子邮件模板示例 {#custom-email-template-example}
 
@@ -137,10 +137,10 @@ subject: ${emailSubject}
     <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
 </p>
 
-Sent from instance: ${host.prefix}
-
 </body></html>
 ```
+
+<!--Sent from instance: ${host.prefix}-->
 
 ### 使用资源链接下载资源 {#download-assets-using-asset-link}
 
