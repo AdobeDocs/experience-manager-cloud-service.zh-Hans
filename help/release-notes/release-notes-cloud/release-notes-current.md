@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
+source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 22%
@@ -62,7 +62,7 @@ ht-degree: 22%
 
 #### Real Use Monitoring (RUM)数据服务 {#real-use-monitoring}
 
-* **[Real Use Monitoring (RUM) Data Service现已正式提供](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 为AEMas a Cloud Service启用客户端数据收集。
+* **[Real Use Monitoring (RUM) Data Service现已正式提供](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)** 为AEMas a Cloud Service启用客户端数据收集。
 Real Use Monitoring服务是客户端的集合，可更准确地反映交互情况，从而确保可靠地衡量网站参与度。 它使客户能够对其页面流量和性能进行高级分析。 这是详细了解页面性能并深入了解以改进该性能的绝佳机会。
 
 #### Edge Delivery Services的AEM创作 {#edge-enhancements}
@@ -139,7 +139,7 @@ AEM Forms通过添加对两个流行的CAPTCHA解决方案（Cloudflare Turnstil
 
 通过提供多个验证码选项，AEM Forms使您能够选择最符合您特定需求的解决方案。
 
-是否准备好将任何CAPTCHA解决方案与您的自适应Forms集成？ 我们的文档提供了针对每种情况的详细说明： [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)， [验证码](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、和 [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+是否准备好将任何CAPTCHA解决方案与您的自适应Forms集成？ 我们的文档提供了针对每种情况的详细说明： [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)， [验证码](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、和 [Google reCAPTCHA](https://experienceleague.adobe.com/cn/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### 表单服务
