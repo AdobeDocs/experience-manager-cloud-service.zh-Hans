@@ -3,9 +3,9 @@ title: 访问和管理日志
 description: 了解如何访问和管理日志，可促进您在 AEM as a Cloud Service 中的开发过程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 69%

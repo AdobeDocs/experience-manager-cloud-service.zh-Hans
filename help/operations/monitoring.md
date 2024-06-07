@@ -2,7 +2,9 @@
 title: AEM as a Cloud Service 中的基础设施和服务监控
 description: AEM as a Cloud Service 中的基础设施和服务监控
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: 484a9a133b2f3d873d725542fc66652134c5e4d5
+feature: Operations
+role: Admin
+source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%
