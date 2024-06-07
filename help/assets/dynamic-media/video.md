@@ -2,10 +2,10 @@
 title: Dynamic Media 中的视频
 description: 了解如何在Dynamic Media中使用视频。 查看视频编码、将视频发布到YouTube、查看视频报表以及向视频添加隐藏式字幕或章节标记的最佳实践。
 contentOwner: Rick Brough
-feature: Video Profiles
+feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 2%

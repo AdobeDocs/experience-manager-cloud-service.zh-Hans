@@ -2,10 +2,10 @@
 title: 使用规则集转换URL
 description: 了解如何在Dynamic Media中部署规则集以转换URL。 规则集是以脚本语言（如JavaScript）编写的指令集，用于评估XML数据并在该数据满足特定条件时执行特定操作。
 contentOwner: Rick Brough
-feature: Rulesets,Troubleshooting,Upload
+feature: Rulesets,Troubleshooting,Upload,Best Practices
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: ad2b36ffa178d787f50d33ce3393a76811467323
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
