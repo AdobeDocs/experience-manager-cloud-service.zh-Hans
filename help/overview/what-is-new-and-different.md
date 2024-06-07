@@ -4,7 +4,7 @@ description: 不同功能与新增功能 – Adobe Experience Manager (AEM) as a
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 100%
@@ -208,7 +208,7 @@ Cloud Manager 在跨多个地域的数据中心内创建环境，实现全球覆
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅[内容恢复](/help/operations/backup.md)、[索引](/help/operations/indexing.md)和[其他维护任务](/help/operations/maintenance.md)。
+>有关更多详细信息，请参阅[内容恢复](/help/operations/restore.md)、[索引](/help/operations/indexing.md)和[其他维护任务](/help/operations/maintenance.md)。
 
 使用 AEM as a Cloud Service 时，此类操作会自动完成，因此不再需要中断服务。
 

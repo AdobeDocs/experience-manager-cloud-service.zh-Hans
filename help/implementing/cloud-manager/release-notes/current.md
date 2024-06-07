@@ -1,20 +1,20 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.5.0 的发行说明
-description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.5.0 的发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.6.0 的发行说明
+description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.6.0 的发行说明。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5644e6f433b18408780e13057ba469e7c4926f78
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 100%
+source-wordcount: '702'
+ht-degree: 56%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.5.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.6.0 的发行说明 {#release-notes}
 
-本页记载 AEM as a Cloud Service 中 Cloud Manager 2024.5.0 版本的发行说明。
+本页记载 AEM as a Cloud Service 中 Cloud Manager 2024.6.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -22,16 +22,37 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 2024.5.0 中的 Cloud Manager 的发布日期是 2024 年 5 月 9 日。下一个版本计划于 2024 年 6 月 6 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 2024.6.0 版本的发布日期是 2024 年 6 月 6 日。下一个版本计划于 2024 年 7 月 11 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 现在可以通过左侧[导航栏](/help/implementing/cloud-manager/navigation.md)中不同的入口点访问[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)。
-* 当开发环境设置失败时，Cloud Manager UI 现在会提供反馈。
+* 您现在可以 [使用您自己的GitHub存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md) 用作全栈管道和前端管道的源。
+   * 此外，您还可以通过以下方式利用GitHub存储库 [Git子模块，](/help/implementing/cloud-manager/managing-code/git-submodules.md) 增强了对用于拉取请求验证的自动生成管道的控制，并允许您在代码扫描阶段定义关键量度的行为。
+   * [您也可选择](/help/implementing/cloud-manager/managing-code/github-check-config.md) 要在GitHub上保留报表历史记录，请命名管道并设置管道变量以满足您的需求。
+* [自助内容恢复](/help/operations/restore.md) 提供长达7天的备份恢复以及以下功能：
+   * 前 24 小时的时间点备份恢复
+   * 固定时间恢复最长可达 7 天
+* [新的OakPal规则](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) 已添加到Cloud Manager代码质量扫描。
+   * 截至2024年6月添加的每个新规则都是一个不中断的更改。
+   * 我们建议您尽快解决这些问题，因为从2024年8月发行的Cloud Manager版本开始，这些新规则会导致管道失败。
 
 ## 早期采用计划 {#early-adoption}
 
 加入 Adobe 早期采用计划，即有机会测试一些即将推出的功能。
+
+### Cloud Manager中的Edge Delivery Services支持 {#edge-delivery-services}
+
+如果您已将Edge Delivery Services作为Adobe Experience Manager Sites的一部分授予许可， [您现在可以直接在Cloud Manager中使用Edge Delivery Services载入您的站点](/help/implementing/cloud-manager/edge-delivery-services.md) 使用引导式自助服务体验上线。
+
+这可以为所有AEM资产实现统一的体验，确保与所有关键工作流程（包括域名管理、SSL证书管理和CDN映射）的一致性。
+
+如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `aemcs-cmedgedelsvs-program-adopter@adobe.com` 来自与您的Adobe ID关联的电子邮件地址。
+
+### 域验证(DV)证书
+
+Cloud Manager现在允许您 [自助服务生成和管理域验证(DV) SSL证书。](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) 这为您提供了最快、最简单、最经济高效的解决方案，可为您的在线业务创建安全的网站。
+
+如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `Grp-aemcs-dv-dert-adopter@adobe.com` 来自与您的Adobe ID关联的电子邮件地址。
 
 ### 通过真实用户监控 (RUM) 进行客户端收集 {#rum}
 
@@ -41,25 +62,6 @@ AEM as a Cloud Service 2024.5.0 中的 Cloud Manager 的发布日期是 2024 年
 
 如果您有兴趣测试这项新功能并共享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址向 `aemcs-rum-adopter@adobe.com` 发送一封电子邮件。请在您的电子邮件中包含生产、暂存和开发环境的域名。参与此功能的早期采用者计划的人数受限。
 
-### 自带 GitHub {#byo-github}
-
-如果您使用 GitHub 管理存储库，则[现在可以通过 Cloud Manager 直接在 GitHub 存储库中验证代码。](/help/implementing/cloud-manager/managing-code/byo-github.md)此集成使得无需始终与 Adobe 存储库同步代码，并使您可验证拉取请求后再将其合并到主分支中。此功能为公共 GitHub 所独有。不支持自托管的 GitHub。
-
-如果您有兴趣测试此新功能并分享您的反馈，请从您的 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-CloudManager_BYOG@adobe.com`。
-
-### 自助内容恢复 {#content-restore}
-
-[新的自助内容恢复功能](/help/operations/restore.md)现在提供长达 7 天的备份恢复，并可供早期采用者用于评估目的，其中包括：
-
-* 前 24 小时的时间点备份恢复
-* 固定时间恢复最长可达 7 天
-
-如果您有兴趣测试此新功能并分享您的反馈，请从您的 Adobe ID 关联的电子邮件发送电子邮件至 `aemcs-restorefrombackup-adopter@adobe.com`。
-
-* 早期采用者计划仅限于开发环境。
-* 参与此功能的早期采用者计划的人数受限。
-* 此功能用于恢复意外删除的内容，不适用于灾难恢复。
-
 ### 体验审核仪表板 {#experience-audit-dashboard}
 
 [Cloud Manager 体验审核仪表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)包括页面性能分数的趋势视图以及帮助您改进的见解和推荐。体验审核作为 Cloud Manager 生产管道中的一个步骤包含在内。
@@ -67,7 +69,3 @@ AEM as a Cloud Service 2024.5.0 中的 Cloud Manager 的发布日期是 2024 年
 该仪表板利用 Google Lighthouse，这是一种开源自动化工具，用于提高 Web 应用程序的质量。您可以针对任何网页（公共网页或需要身份验证的网页）运行它。它对性能、可访问性、SEO、搜索引擎优化等进行审核。
 
 有兴趣试驾新仪表板吗？若要开始使用，请从与您的 Adobe ID 关联的电子邮件发送电子邮件至 `aem-lighthouse-pilot@adobe.com`。
-
-## 错误修复 {#bug-fixes}
-
-* 解决了 Cloud Manager 重复使用具有错误提交哈希的工件的错误。

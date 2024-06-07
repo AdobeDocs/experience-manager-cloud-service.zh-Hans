@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 68%
+source-wordcount: '1367'
+ht-degree: 67%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 68%
 
    >[!TIP]
    > 
-   >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)文档，了解如何在 Cloud Manager 中添加和管理存储库。
+   >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)文档，了解如何在 Cloud Manager 中添加和管理存储库。
 
    * **Git 分支** – 此选项定义管道应从中检索代码的所选存储库的分支。
       * 输入分支名称的前几个字符，此字段的自动完成功能将查找匹配的分支帮助您做选择。
@@ -126,6 +126,10 @@ ht-degree: 68%
    * 如果所选环境存在 Web 层代码管道，则会禁用此选择。
    * 如果将现有的全栈管道部署到环境中，则为同一环境创建 Web 层配置管道将忽略全栈管道中的现有 Web 层配置。
 
+>[!NOTE]
+>
+>专用存储库不支持Web层和配置管道。 请参阅文档 [在Cloud Manager中添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md) 详细信息和完整的限制列表。
+
 选择部署类型后，完成创建生产目标部署管道的步骤相同。
 
 1. 选择所需的部署类型。
@@ -142,7 +146,7 @@ ht-degree: 68%
 
    >[!TIP]
    > 
-   >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)，了解如何在 Cloud Manager 中添加和管理存储库。
+   >请参阅[添加和管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，了解如何在 Cloud Manager 中添加和管理存储库。
 
    * **Git 分支** – 此选项定义管道应从中检索代码的所选存储库的分支。
       * 输入分支名称的前几个字符，以及此字段的自动完成功能。它会找到您可以选择的匹配分支。

@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service 中的内容恢复
 description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud Service 内容。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 77%
+source-wordcount: '1339'
+ht-degree: 64%
 
 ---
 
@@ -13,15 +13,6 @@ ht-degree: 77%
 # AEM as a Cloud Service 中的内容恢复 {#content-restore}
 
 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud Service 内容。
-
->[!NOTE]
->
->此功能仅适用于[早期采用者计划](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)并且具有超出本文中记录的某些限制。在早期采用阶段：
->
->* 该功能仅在开发环境中可用。
->* 每个节目每月的内容恢复仅限两次。
->
->有关AEMas a Cloud Service现有备份和还原系统的详细信息，请参阅 [AEMas a Cloud Service中的备份和恢复](/help/operations/backup.md).
 
 ## 概述 {#overview}
 
@@ -40,13 +31,41 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 >
 >还可以[使用公共 API 恢复备份。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
 
+>[!WARNING]
+>
+>* 仅当代码或内容存在严重问题时，才应使用此功能。
+>* 恢复备份将导致从备份到当前之间的最近数据丢失。 暂存内容也会恢复到旧版本。
+>* 在启动内容恢复之前，请考虑其他选择性内容恢复选项。
+
+## 选择性内容恢复选项 {#selective-options}
+
+在还原到完全内容还原之前，请考虑以下选项以更轻松地还原您的内容。
+
+* 如果已删除路径的软件包可用，请使用再次安装该软件包 [包管理器。](/help/implementing/developing/tools/package-manager.md)
+* 如果删除的路径是Sites中的页面，请使用 [恢复树功能。](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* 如果删除的路径是一个资源文件夹，并且原始文件可用，请通过以下方式重新上传它们 [资产控制台。](/help/assets/add-assets.md)
+* 如果删除内容是资源，请考虑以下事项 [恢复资产的早期版本。](/help/assets/manage-digital-assets.md)
+
+如果以上选项都不起作用，并且已删除路径的内容很重要，请按照以下部分中的详细说明执行内容恢复。
+
+## 创建用户角色 {#user-role}
+
+默认情况下，任何用户都没有权限在开发、生产或暂存环境中执行内容恢复。 为了将此权限委派给特定用户或组，请执行以下步骤。
+
+1. 创建一个产品配置文件，其表达式名称引用了内容恢复。
+1. 提供 **项目访问** 所需程序的权限。
+1. 提供 **内容恢复** 访问所需的环境或项目的所有环境，具体取决于您的用例。
+1. 将用户分配给该配置文件配置文件。
+
+有关管理权限的详细信息，请参阅 [自定义权限](/help/implementing/cloud-manager/custom-permissions.md) 文档。
+
 ## 恢复内容 {#restoring-content}
 
 首先确定要恢复的内容的时间范围。 然后，要从备份中恢复环境的内容，请执行这些步骤。
 
 >[!NOTE]
 >
->用户具有 **业务负责人** 或 **部署管理员** 必须登录角色才能启动还原操作。
+>用户必须具有 [适当权限](#user-role) 以启动还原操作。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 

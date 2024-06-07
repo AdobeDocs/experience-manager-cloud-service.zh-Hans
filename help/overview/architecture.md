@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service 的架构简介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 100%
@@ -233,7 +233,7 @@ Cloud Manager 通过使用滚动更新模式更新所有服务节点，完全自
    * [上线历程](/help/journey-onboarding/overview.md)
    * [项目和项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 * 开发架构
-   * [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+   * [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
    * [CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
    * [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services：

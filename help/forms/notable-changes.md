@@ -5,7 +5,7 @@ exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 1%
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * 在将客户捆绑包与Formsas a Cloud Service结合使用之前，请使用最新版本的adobe-aemfd-docmanager重新编译自定义代码。
 
-* 使用 [AEM Formsas a Cloud Service迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md) 准备和迁移自适应Forms、主题、模板和云配置，从 <!-- AEM 6.3 Forms--> OSGi上的AEM 6.4 Forms和OSGi上的AEM 6.5 Forms [!DNL AEM] as a Cloud Service。 使用 [项目的Git存储库](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) 以导入现有的自适应表单模板。
+* 使用 [AEM Formsas a Cloud Service迁移实用程序](/help/forms/migrate-to-forms-as-a-cloud-service.md) 准备和迁移自适应Forms、主题、模板和云配置，从 <!-- AEM 6.3 Forms--> OSGi上的AEM 6.4 Forms和OSGi上的AEM 6.5 Forms [!DNL AEM] as a Cloud Service。 使用 [项目的Git存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md) 以导入现有的自适应表单模板。
 
 * 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [联系支持团队](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) 启用端口以发送电子邮件，并为您的环境启用SMTP协议。
 

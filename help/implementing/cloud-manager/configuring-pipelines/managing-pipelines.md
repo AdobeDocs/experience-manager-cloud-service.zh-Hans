@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 54%
+source-wordcount: '1119'
+ht-degree: 49%
 
 ---
 
@@ -110,6 +110,10 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 >
 >您无法编辑运行中的管道。
 
+>[!NOTE]
+>
+>专用存储库不支持Web层和配置管道。 请参阅文档 [在Cloud Manager中添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md) 详细信息和完整的限制列表。
+
 ## 删除管道 {#deleting-pipelines}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
@@ -143,6 +147,14 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 选择 **查看详细信息** 用于显示 **持续时间** 部分。 这包括基于该项目的历史趋势的管道的平均持续时间。
 
 ![持续时间](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+如果您的管道包含 **代码扫描** 步骤（这会导致问题）中，您可以点按或单击 **下载详细信息** 按钮查看列表 [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md) 没有通过。
+
+![代码质量问题](assets/managing-pipelines-code-quality-issues.png)
+
+A **项目文件位置** 列在CSV文件中可用，以指示违规代码的位置。 此列是项目相对路径，而 **文件位置** 列由Maven生成。
+
+![项目代码扫描问题详细信息](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >
