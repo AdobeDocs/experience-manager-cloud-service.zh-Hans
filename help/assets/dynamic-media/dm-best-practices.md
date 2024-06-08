@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
 content-type: reference
-feature: Video,Renditions,Configuration,Asset Management,Best Practices
+feature: Video,Renditions, Configuration, Asset Management, Best Practices
 role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: a92d55a4b9368d92d41d0156d8aa2b24f619fc54
+source-git-commit: 62af768370ee0affa4003a7ae0c520ad1a065e8c
 workflow-type: tm+mt
-source-wordcount: '3614'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,9 @@ Dynamic Media的一些关键原则包括：
 * **选择性发布：**
 同步资产后，您可以通过选择性发布来控制哪些资产对客户可见。 此功能意味着您可以管理哪些经批准的资产是通过您的渠道实际交付的，确保您的客户只能看到最佳和最相关的内容。
 
-这两个最佳实践可帮助您更好地控制、管理和提高富媒体内容的工作效率。 想要了解更多信息？ 转到 [在Dynamic Media中配置文件夹级别的选择性发布](/help/assets/dynamic-media/selective-publishing.md).
+这两个最佳实践可帮助您更好地控制、管理和提高富媒体内容的工作效率。
+
+想要了解更多信息？ 转到 [在Dynamic Media中配置文件夹级别的选择性发布](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## 准备资产以进行交付
@@ -135,7 +137,7 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
    * 使用 `myCompany-Silver-Wrist-Watch`
    * *避免* `myCompany_Silver_Wrist_Watch` 或 `myCompanySilverWristWatch`
 
-  这样做有助于搜索引擎了解图像上下文并改进SEO。 此外，请注意，对于单词分离，Google更喜欢使用连字符而不是下划线或连接单词。
+  这样做有助于搜索引擎了解图像上下文并改进SEO。 Google在文件名中首选使用连字符，而不是下划线或空格。 此外，请避免在文件名中连接单词。
 * **自定义域：**
 实施包含您的公司或品牌名称的自定义域，以增强品牌认知度和信任。 例如，
 
@@ -167,7 +169,7 @@ Dynamic Media提供了一套用于增强图像和动态创建视觉效果的命�
 | --- | --- |
 | **上传并发布原始图像** | ·首先，将原始图像上传到Dynamic Media。<br>·确保其已发布并通过URL访问。<br>·在此示例中，具有白色背景的手表的库存图像（我们将其称为“图像X”）上传到Dynamic Media。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage) |
 | **创建蒙版** | ·开发定义主题（要应用效果的区域）和背景（要更改的区域）的蒙版。<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage_maskps)<br>·蒙版通常是灰度图像，其中白色代表主题，黑色代表背景。 您可以使用Adobe Photoshop等工具创建蒙版。<br>想要了解更多信息？ 转到 [在Photoshop中创建和编辑快速蒙版](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>·对于“图像X”，请创建一个精确概述了要增强的主题的蒙版。 例如，人员、对象等。 |
-| **应用Dynamic Media URL命令以获得效果** | 在蒙版完成后，使用URL命令应用阴影等效果，或将背景颜色更改为“图像X”。 以下是两个示例：<br><br> · **投影效果：**<br>&#x200B;要沿主题边界添加投影效果，请编辑URL，如下所示：<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>在此URL中， `$shadow$` 参数创建阴影效果，并且 `color=0,0,0` 将阴影颜色设置为黑色。<br>· **背景颜色更改：**<br>&#x200B;要更改背景颜色，请使用具有不同背景颜色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> 在此示例中， `color=255,255,255` 将背景颜色设置为白色。 将背景编辑为特定颜色以实现视觉效果。 |
+| **应用Dynamic Media URL命令获得效果** | 在蒙版完成后，使用URL命令应用阴影等效果，或将背景颜色更改为“图像X”。 以下是两个示例：<br><br> · **投影效果：**<br>&#x200B;要沿主题边界添加投影效果，请编辑URL，如下所示：<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>在此URL中， `$shadow$` 参数创建阴影效果，并且 `color=0,0,0` 将阴影颜色设置为黑色。<br>· **背景颜色更改：**<br>&#x200B;要更改背景颜色，请使用具有不同背景颜色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/original_stockimage?mask=original_stockimage_maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> 在此示例中， `color=255,255,0` 将背景颜色设置为黄色。 将背景编辑为特定颜色以实现视觉效果。 |
 
 #### 添加图像边框
 
@@ -191,7 +193,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 | **上传并发布徽标或图标图像** | 接下来，上传并发布要叠加在基本图像上的图像。 此图像应是透明的PNG，其中应包含要叠加的徽标或图标。<br>下面是即将叠加的具有透明效果的星形对象的透明PNG图像：<br>https://s7g10.scene7.com/is/image/genaibeta/starxp |
 | **应用Dynamic Media URL** | 现在，创建一个Dynamic Media URL，以组合基本图像和徽标或图标图像。 可以使用URL命令达到此效果。<br>URL结构如下所示：<br>[https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g10.scene7.com/is/image/genaibeta/hotspotRetailBaseImage?layer=1&amp;src=starxp&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>位置<br>· `hotspotRetailBaseImage` 是基本图像。<br>· `starxp` 是徽标/图标图像。<br>· `layer=1` 指定徽标或图标应叠加在基本图像上。<br>· `scale=1.25` 调整徽标/图标的大小。<br>· `posN=0.33,-.25` 确定徽标/图标相对于基本图像的位置。<br>· `fmt=png` 确保输出为PNG格式。 |
 
-了解更多信息？ 转到 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) 欲知关于 `src` 命令和其他Dynamic Media命令。
+了解更多信息？ 转到 [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) 欲知关于 `src` 命令和其他Dynamic Media URL命令。
 
 
 #### 覆盖促销文本
@@ -205,7 +207,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 
 #### 调整大小并裁切各种用例
 
-##### 图像调整大小基础知识
+##### 图像大小调整基础知识
 
 图像大小调整涉及改变图像的尺寸、分辨率和文件大小。 以下是需要考虑的一些要点：
 
@@ -218,7 +220,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 
 ##### 裁切与调整大小
 
-调整大小和裁切是Dynamic Media中的技术，它们允许您变换图像以适合各种用例，无论是在创建缩略图、横幅还是产品显示图像。
+裁切和调整大小是Dynamic Media中的技术，这些技术允许您变换图像以适合各种用例，无论是在创建缩略图、产品显示图像还是横幅。
 
 * **裁切：**
 涉及移除部分图像以改变其构成和框架。 它不会更改总体维度，但侧重于特定区域。
@@ -346,5 +348,5 @@ Adobe建议您使用智能成像的功能，而不是手动将图像格式设置
 
 通过依赖智能成像，您可以确保以尽可能高效的方式提供图像，并根据每个用户的浏览环境量身定制。 此方法简化了流程，并且可以在图像加载时间和整体用户体验方面提高性能。
 
-想要了解更多信息？ 转到 [智能成像](/help/assets/dynamic-media/imaging-faq.md)
+想要了解更多信息？ 转到 [智能成像](/help/assets/dynamic-media/imaging-faq.md).
 
