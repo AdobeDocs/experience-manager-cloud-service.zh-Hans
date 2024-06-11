@@ -3,10 +3,10 @@ title: 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询
 description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 667cac9153947d1c236ff1117fc7200883416d8d
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 98%
+source-wordcount: '1826'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 98%
 >
 >您可以通过以下任一方式访问查询编辑器：
 >
->* **工具** > **常规** > **GraphQL查询编辑器**
+>* **工具** > **常规** > **GraphQL 查询编辑器**
 >* 直接；例如，`http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -1794,6 +1794,20 @@ query {
   }
 } 
 ```
+
+## 交付DAM和Dynamic Media Assets的示例查询 {#sample-queries-delivery-DAM-DM}
+
+对于（DAM资产的）Web优化图像投放：
+
+* [使用完整参数进行Web优化图像投放的示例查询](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+
+* [使用单个指定参数进行Web优化图像投放的示例查询](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+
+用于将URL交付到Dynamic Media资源
+
+* 请参阅 [Dynamic Media资源交付的示例查询（按URL） — 图像引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+* 请参阅 [按URL交付Dynamic Media资源的示例查询 — 多个引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## 示例内容片段结构（用于 GraphQL） {#content-fragment-structure-graphql}
 
