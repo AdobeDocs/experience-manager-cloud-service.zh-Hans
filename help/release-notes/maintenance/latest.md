@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
 workflow-type: tm+mt
 source-wordcount: '400'
-ht-degree: 39%
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 39%
 
 ## 版本 16544 {#release-16544}
 
-以下总结了维护版本16544的不断改进，该版本于2024年6月4日公开发布。 上一个维护版本是版本 16461。
+下面总结了维护版本 16544 的持续改进，该版本已于 2024 年 6 月 4 日公开发布。上一个维护版本是版本 16461。
 
 2024.6.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
@@ -28,23 +28,23 @@ ht-degree: 39%
 
 ### 增强 {#enhancements-16544}
 
-* GRANITE-41133：支持Jakarta Servlet API 5和OSGi Servlet Whiteboard API。
-* GRANITE-51355：弃用org.slf4j.event。
-* GRANITE-51565：从AEM发布本地组时，AEM会丢失与外部组的本地组关系。
-* GRANITE-51707：在http重定向期间设置Cookie saml_request_path以进行身份验证。
+* GRANITE-41133：支持 Jakarta Servlet API 5 和 OSGi Servlet Whiteboard API。
+* GRANITE-51355：弃用 org.slf4j.event。
+* GRANITE-51565：当本地组从 AEM 发布时，AEM 会失去与外部组的本地组关系。
+* GRANITE-51707：在 http 重定向期间设置 cookie saml_request_path 进行身份验证。
 * GRANITE-52010：将 Jackrabbit 版本更新到 2.20.16。
-* GRANITE-52057：将Filevault更新为3.7.3-T20240514105118-694f6aea，以修复JCRVLT-745。
-* SKYOPS-35998：更新“Sling RepoInit”依赖项：Repoinit解析器1.9.0、Repoinit JCR 1.1.46。
+* GRANITE-52057：将 Filevault 更新至 3.7.3-T20240514105118-694f6aea，修复 JCRVLT-745。
+* SKYOPS-35998：更新“Sling RepoInit”的依赖项：Repoinit Parser 1.9.0、Repoinit JCR 1.1.46。
 
 ### 修复的问题 {#fixed-issues-16544}
 
-* GRANITE-51375：如果未指定中间路径，则idp-sync会引发NPE。
-* GUIDES-17171：对超过15KB的主题执行复制和粘贴操作失败，并出现意外错误。
-* GUIDES-17088：用于更改文档状态的功能 **文件属性** 面板无法正常工作，并且已更改为 *草稿* 省/州。
-* GUIDES-16931：创建版本后，主题中的链接图像无法在基线中显示。
-* GUIDES-16896：可重用内容面板在 **用户首选项** 设置为通过以下方式查看文件 **文件名**.
+* GRANITE-51375：如果未指定中间路径，idp-sync 将引发 NPE。
+* GUIDES-17171：超过 15KB 的主题复制和粘贴操作失败，并出现意外错误。
+* GUIDES-17088：从&#x200B;**文件属性**&#x200B;面板更改文档状态的功能无法正常工作，只能更改为&#x200B;*草稿*&#x200B;状态。
+* GUIDES-16931：创建版本后，主题中的链接图像无法显示在基线中。
+* GUIDES-16896：当&#x200B;**用户偏好设置**&#x200B;设置为按&#x200B;**文件名**&#x200B;查看文件时，可重复使用的内容面板不会列出元素。
 
-有关Experience Manager指南中新增功能和增强功能以及所修复问题的更多信息，请查看 [Experience Manager指南发行路线图](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+有关 Experience Manager Guides 中的新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/cn/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 ### 已知问题 {#known-issues-16544}
 

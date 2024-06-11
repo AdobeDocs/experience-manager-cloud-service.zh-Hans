@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,11 +40,11 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Sites] | 基于模板的简单内容片段。 | 现已提供[基于模型的结构化内容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | `DAM Asset Update` 工作流处理摄取的图像。 | 资源提取现在使用[资源微服务](/help/assets/asset-microservices-overview.md)。 |
 | [!DNL Assets] | 将资源直接上传至 [!DNL Experience Manager]。请参阅[已弃用的资源上传 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二进制上传](/help/assets/add-assets.md)。有关技术详细信息，请参阅[直接上传 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
-| [!DNL Assets] | 不支持 `DAM Asset Update` 工作流中的[某些工作流步骤](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)，包括 [!DNL ImageMagick] 等调用命令行工具。 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
-| [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资产微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
+| [!DNL Assets] | 不支持 `DAM Asset Update` 工作流中的[某些工作流步骤](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)，包括 [!DNL ImageMagick] 等调用命令行工具。 | [资源微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
+| [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资源微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 复制代理的“分发”选项卡下的树复制 UI（在 2021 年 9 月 30 日后被删除） | [管理出版物](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)方法 |
 | [!DNL Foundation] | 复制代理管理屏幕的“分发”选项卡和复制 API 都不能用于复制超过 10MB 的内容包。请改用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成将会逐步失去对服务帐户 (JWT) 凭据的支持。2024 年 5 月 1 日或之后，无法在 Adobe Developer Console 中创建新的服务帐户 (JWT) 凭据，但在 2025 年 1 月 1 日之前，现有服务帐户 (JWT) 凭据仍可用于已配置的集成，届时现有服务帐户 (JWT) 凭据将不再有效，客户必须迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)到 OAuth 服务器到服务器凭据。 |
+| [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成将会逐步失去对服务帐户 (JWT) 凭据的支持。2024 年 5 月 1 日或之后，无法在 Adobe Developer Console 中创建新的服务帐户 (JWT) 凭据，但在 2025 年 1 月 1 日之前，现有服务帐户 (JWT) 凭据仍可用于已配置的集成，届时现有服务帐户 (JWT) 凭据将不再有效，客户必须迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/cn/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)到 OAuth 服务器到服务器凭据。 |
 
 ## 已删除功能 {#removed-features}
 
@@ -61,7 +61,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | [!DNL Foundation] | 对 JST 脚本模板（OSGi 包 org.apache.sling.scripting.jst）的支持 | 不适用 | 已删除 |
 | [!DNL Foundation] | 对 Apache Felix Http Whiteboard 的支持 | OSGi Http Whiteboard | 2022 年 3 月 |
 | [!DNL Foundation] | 支持 com.adobe.granite.oauth.server | Adobe IMS 集成 | 2023 年 3 月 |
-| [!DNL Foundation] | 支持org.apache.sling.serviceusermapping功能到 [获取服务用户id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不适用 | 8/30/24 |
+| [!DNL Foundation] | 支持 org.apache.sling.serviceusermapping 功能，以[获取服务用户 ID](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不适用 | 8/30/24 |
 
 
 ## AEM API {#aem-apis}
@@ -274,7 +274,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
   </tr>
   <tr>
     <td>org.slf4j.event	</td>
-    <td>AEMas a Cloud Service不支持此内部slf4j API</td>
+    <td>此内部 slf4j API 不再受 AEM as a Cloud Service 支持</td>
     <td>4/11/2022</td>
     <td>8/30/2024</td>
   </tr>
