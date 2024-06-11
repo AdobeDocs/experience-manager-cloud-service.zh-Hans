@@ -2,10 +2,10 @@
 title: AEM Assets与Adobe Express的本机集成
 description: AEM Assets与Adobe Express本机集成允许您从Adobe Express用户界面中直接访问AEM Assets中存储的资源。
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
+source-git-commit: d7e144d7f7722d4de96b3f85d44432863b350f92
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 17%
+source-wordcount: '635'
+ht-degree: 16%
 
 ---
 
@@ -50,18 +50,19 @@ AEM Assets 与 Adobe Express 在本地集成，允许您直接从 Adobe Express 
    ![将资源保存在 AEM 中](assets/adobe-express-share.png)
 
 2. 从右窗格的“Storage（存储）”部分中，选择 **AEM Assets**. Adobe Express显示“上载”对话框。
-3. 选择 **当前页** 或 **所有页面** 保存选项。 选择 **当前页** 将文件保存在目标文件夹中，但是，选择 **所有页面** 在目标中为所有非PDF文件创建一个新文件夹，并将它们另存为单独的文件，而PDF文件则另存为目标文件夹中的单个文件。
-4. 指定资源的名称和格式。您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式保存画布内容。 格式会根据资源自动进行调整。
-5. 单击下的文件夹图标 **目标文件夹** 以选择位置并保存资产。
+3. 选择 **当前页** 或 **所有页面**. 指定要导出的资产的名称和格式。 您可以以PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式导出画布内容。 格式会根据画布页面上的资产自动进行调整。
+选择 **当前页** 将当前页面上的资产保存到目标文件夹。 如果您选择 **所有页面** 并且导出格式不PDF，则所有画布页面都将作为单独的文件保存在目标文件夹内的新文件夹中。 如果导出格式PDF，则所有画布页面都将作为单个PDF文件保存到目标文件夹中。
+
+4. 单击下的文件夹图标 **目标文件夹** 以选择位置并保存资产。
 
    ![将资源保存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-6. 可选：您可以使用为上传添加营销活动元数据 **项目或营销活动名称** 字段。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
+5. 可选：您可以使用为上传添加营销活动元数据 **项目或营销活动名称** 字段。 您可以使用现有名称或创建新名称。 您可以为上传定义多个项目或营销策划名称。 要注册名称，只需键入名称并按Enter键即可。
 作为最佳实践，Adobe建议在其余字段中指定值，并为您上传的资源创建增强的搜索体验。
 
-7. 同样，定义 **[!UICONTROL 关键字]** 和 **[!UICONTROL 渠道]** 字段。
+6. 同样，定义 **[!UICONTROL 关键字]** 和 **[!UICONTROL 渠道]** 字段。
 
-8. 单击 **[!UICONTROL 上传]** 以将资源上传到AEM Assets。
+7. 单击 **[!UICONTROL 上传]** 以将资源上传到AEM Assets。
 
 ## 限制 {#limitations}
 
