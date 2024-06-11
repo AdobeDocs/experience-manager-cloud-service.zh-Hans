@@ -4,10 +4,10 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
 workflow-type: tm+mt
-source-wordcount: '4294'
-ht-degree: 3%
+source-wordcount: '4312'
+ht-degree: 4%
 
 ---
 
@@ -412,11 +412,6 @@ The analyser found the following errors for publish :
 
 ### 根据站点主题和站点模板部署前端代码 {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> 此功能尚不可用。 它将在六月的某个时候推出。
->
-
 RDE支持基于的前端代码 [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md). 对于RDE，这是使用命令行指令而不是Cloud Manager来部署前端包完成的 [前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) 用于其他环境类型。
 
 与往常一样，使用npm构建前端软件包：
@@ -460,6 +455,10 @@ Logs:
 >前端软件包中文件的命名必须遵循以下命名约定：
 > * “dist”文件夹，对于npm build输出包文件夹
 > * “package.json”文件，用于npm依赖关系包
+
+>[!TIP]
+>
+> 如果您在2023年4月之前创建了RDE，并在首次尝试前端功能时遇到错误“UNEXPECTED_API_ERROR”，请尝试删除环境并再次创建它。
 
 ### 检查RDE的状态 {#checking-rde-status}
 
