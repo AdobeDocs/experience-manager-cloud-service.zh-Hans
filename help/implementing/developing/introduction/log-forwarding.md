@@ -4,10 +4,10 @@ description: 了解如何在AEMas a Cloud Service中将日志转发给Splunk和�
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 3%
+source-wordcount: '1163'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 3%
 
 以自助方式配置日志转发，方法是在Git中声明一个配置，并通过Cloud Manager配置管道将其部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。
 
+AEM和Apache/Dispatcher日志可以选择通过AEM高级网络基础架构（如专用出口IP）进行路由。
+
 请注意，与发送到日志记录目的地的日志相关联的网络带宽被视为您组织的网络I/O使用的一部分。
 
 
@@ -36,6 +38,7 @@ ht-degree: 3%
 
 * 设置 — 适用于所有日志记录目标
 * 记录目标配置 — 每个目标的格式略有不同
+* 日志条目格式 — 有关日志条目格式的信息
 * 高级联网 — 通过专用出口或VPN发送AEM和Apache/Dispatcher日志
 
 
@@ -48,7 +51,7 @@ ht-degree: 3%
         logForwarding.yaml
    ```
 
-1. logForwarding.yaml应包含元数据和类似于以下格式的配置（我们使用Splunk作为示例）。
+1. `logForwarding.yaml` 应包含类似于以下格式的元数据和配置（我们使用Splunk作为示例）。
 
    ```
    kind: "LogForwarding"
@@ -64,7 +67,7 @@ ht-degree: 3%
          index: "AEMaaCS"
    ```
 
-   此 **种类** 参数应设置为LogForwarding版本应设置为架构版本，即1。
+   此 **种类** 参数应设置为 `LogForwarding` 版本应设置为架构版本，即1。
 
    配置中的令牌(如 `${{SPLUNK_TOKEN}}`)表示不应存储在Git中的密钥。 相反，将它们声明为Cloud Manager  [环境变量](/help/implementing/cloud-manager/environment-variables.md) 类型 **密码**. 确保选择 **全部** 作为“已应用服务”字段的下拉值，因此可以将日志转发到创作层、发布层和预览层。
 
@@ -134,14 +137,53 @@ data:
 
 SAS令牌应该用于身份验证。 它应该从共享访问签名页面而不是共享访问令牌页面创建，并且应该使用以下设置进行配置：
 
-* 允许的服务：必须选择Blob
-* 允许的资源：必须选择对象
-* 允许的权限：必须选择“写入”、“添加”、“创建”
+* 允许的服务：必须选择Blob。
+* 允许的资源：必须选择对象。
+* 允许的权限：必须选择“写入”、“添加”、“创建”。
 * 有效的开始和到期日期/时间。
 
 以下是SAS令牌配置示例屏幕截图：
 
 ![Azure Blob SAS令牌配置](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
+#### Azure Blob存储CDN日志 {#azureblob-cdn}
+
+每个全局分布式日志服务器每隔几秒钟将生成一个新文件，该文件位于 `aemcdn` 文件夹。 创建后，该文件将不再附加到。 文件名格式为YYYY-MM-DDThh:mm:ss.sss-uniqueid.log. 例如，2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+
+例如，在某个时间点：
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+```
+
+30秒后：
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+   2024-03-04T10:00:30.000-ghi.log
+   2024-03-04T10:00:30.000-jkl.log
+   2024-03-04T10:00:30.000-mno.log
+```
+
+每个文件都包含多个json日志条目，每个条目位于一行中。 日志条目格式在 [日志文章](/help/implementing/developing/introduction/logging.md)，并且每个日志条目还包含 [日志条目格式](#log-format) 部分。
+
+#### 其他Azure Blob存储日志 {#azureblob-other}
+
+CDN日志以外的日志显示在具有以下命名约定的文件夹下方：
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
+在每个文件夹下，将创建一个文件并将其附加到。 客户负责处理和管理此文件，以免它变得太大。
+
+请参阅中的日志条目格式 [日志文章](/help/implementing/developing/introduction/logging.md). 日志条目还将包括 [日志条目格式](#log-formats) 部分。
 
 
 ### Datadog {#datadog}
@@ -202,6 +244,24 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
+#### HTTPS CDN日志 {#https-cdn}
+
+Web请求(POST)将使用json有效负载连续发送，该有效负载是一个日志条目数组，日志条目格式请参见 [日志文章](/help/implementing/developing/introduction/logging.md#cdn-log). 有关其他属性，请参见 [日志条目格式](#log-formats) 部分。
+
+还有一个名为的属性 `sourcetype`，该值将设置为 `aemcdn`.
+
+#### 其他HTTPS日志 {#https-other}
+
+将为每个日志条目发送单独的Web请求(POST)，日志条目格式请参见 [日志文章](/help/implementing/developing/introduction/logging.md). 有关其他属性，请参见 [日志条目格式](#log-format) 部分。
+
+还有一个名为的属性 `sourcetype`，则设置为以下值之一：
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
 ### Splunk {#splunk}
 
 ```
@@ -237,9 +297,38 @@ data:
    ```   
 -->
 
+## 日志条目格式 {#log-formats}
+
+查看常规 [日志文章](/help/implementing/developing/introduction/logging.md) （Dispatcher日志、CDN日志等）的日志类型。
+
+由于来自多个程序和环境的日志可能会转发到同一日志记录目标，因此除了日志记录文章中所述的输出之外，每个日志条目中还将包含以下属性：
+
+* aem_env_id
+* aem_env_type
+* aem_program_id
+* aem_tier
+
+例如，属性可能具有以下值：
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+```
+
 ## 高级网络 {#advanced-networking}
 
-如果您有组织要求将流量锁定到日志记录目标，则可以配置日志转发以通过 [高级联网](/help/security/configuring-advanced-networking.md). 请参阅以下三种高级联网类型的模式，它们使用可选 `port` 参数，以及 `host` 参数。
+>[!NOTE]
+>
+>此功能尚未准备好供早期采用者使用。
+
+
+某些组织选择限制日志记录目标可以接收的流量。
+
+对于CDN日志，您可以将IP地址添加到允许列表，如中所述 [本文](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). 如果共享IP地址列表过大，请考虑将流量发送到(非Adobe)Azure Blob存储区，在其中可以写入逻辑以将专用IP的日志发送到其最终目标。
+
+对于其他日志，您可以配置日志转发以通过 [高级联网](/help/security/configuring-advanced-networking.md). 请参阅以下三种高级联网类型的模式，它们使用可选 `port` 参数，以及 `host` 参数。
 
 ### 灵活端口出口 {#flex-port}
 
@@ -249,7 +338,7 @@ data:
 {
     "portForwards": [
         {
-            "name": "mylogging.service.logger.com",
+            "name": "splunk-host.example.com",
             "portDest": 8443, # something other than 443
             "portOrig": 30443
         }    
@@ -265,7 +354,7 @@ version: "1"
 data:
   splunk:
     default:
-      host: "proxy.tunnel"
+      host: "${{AEM_PROXY_HOST}}"
       token: "${{SomeToken}}"
       port: 30443
       index: "index_name"
@@ -273,14 +362,15 @@ data:
 
 ### 专用出口IP {#dedicated-egress}
 
+
 如果日志流量需要从专用出口IP发出，请配置高级网络，如下所示：
 
 ```
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443, 
             "portOrig": 30443
         }    
     ]
@@ -290,15 +380,25 @@ data:
 并配置yaml文件，如下所示：
 
 ```
+      
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "proxy.tunnel"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443    
 ```
 
 ### VPN {#vpn}
@@ -309,24 +409,29 @@ data:
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443,
             "portOrig": 30443
         }    
     ]
 }
-```
 
-并配置yaml文件，如下所示：
-
-```
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "mylogging.service.com"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443     
 ```
