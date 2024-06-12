@@ -4,10 +4,10 @@ description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.6.0 的发�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 958d8fb3526bafeb5a3be9828bddfa3330c05fec
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 50%
+source-wordcount: '548'
+ht-degree: 44%
 
 ---
 
@@ -54,13 +54,13 @@ Cloud Manager现在允许您 [自助服务生成和管理域验证(DV) SSL证书
 
 如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `Grp-aemcs-dv-dert-adopter@adobe.com` 来自与您的Adobe ID关联的电子邮件地址。
 
-### 通过实时监控(RUM)进行客户端收集 {#rum}
+<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
 
-您可以利用 [Real Use Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) 为AEMas a Cloud Service启用客户端收集。
+You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
 
-Real Use Monitoring (RUM) Data Service提供了对用户交互的更精确的反映，从而确保了对网站参与度的可靠衡量。 这是一个深入了解页面性能的绝佳机会。这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
+Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-如果您有兴趣测试这项新功能并共享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址向 `aemcs-rum-adopter@adobe.com` 发送一封电子邮件。请在您的电子邮件中包含生产、暂存和开发环境的域名。参与此功能的早期采用者计划的人数受限。
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited. -->
 
 ### 体验审核仪表板 {#experience-audit-dashboard}
 
