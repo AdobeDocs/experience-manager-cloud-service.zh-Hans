@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.3.0 版�
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '2292'
-ht-degree: 98%
+ht-degree: 94%
 
 ---
 
@@ -77,11 +77,11 @@ Universal Editor 的独特之处在于它能够适应不同的 Web 架构，可�
 
 通过 AEM 的新功能[生成变体](/help/generative-ai/generate-variations.md)利用 GenAI，现在可在云服务中使用。生成变体功能可以帮助您通过使用生成式 AI 来生成和扩展内容创作。请与您的 Adobe 帐户团队联系，申请加入该项目。
 
-**内容片段控制台中的资产浏览功能**
+**内容片段控制台中的资源浏览功能**
 
-内容作者现在可以浏览、查看图像和其他资产并对其执行操作，而无需离开内容片段控制台。
+内容作者现在可以浏览、查看图像和其他资源并对其执行操作，而无需离开内容片段控制台。
 
-![资产浏览](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
+![资源浏览](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
 是否有兴趣试用该功能并分享反馈？从您的官方电子邮件 ID 向 aemcs-headless-adopter@adobe.com 发送电子邮件即可详细了解早期采用者计划。
 
@@ -123,7 +123,7 @@ Assets Essentials 允许管理员管理存储库中可用的专用收藏集的�
 这些服务使您能够：
 
 * 在同一表单网站上使用多个内容来源，并使用您首选的创作工具，例如 Microsoft Excel、Google Sheets 或 Adaptive Forms Editor。
-* 提供能够快速加载和呈现的数字注册体验，并通过真实用户监控 (RUM) 功能持续监控表单性能。
+* 提供数字注册体验，这些体验可通过实时监控(RUM)快速加载和呈现，并持续监控表单性能。
 * 使用纯 HTML、现代 CSS 和原始 JavaScript 来创造非凡的体验，避免特定框架所需的冗长的学习曲线。
 
 
@@ -186,10 +186,10 @@ Assets Essentials 允许管理员管理存储库中可用的专用收藏集的�
 
   您可以通过您的官方电子邮件 ID 向 `aem-forms-ea@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
 
-* **[您可以利用真实用户监控 (RUM) 数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**为 AEM as a Cloud Service 启用客户端收集。
-真实用户监控 (RUM) 数据服务能够更准确地反映用户交互，确保可靠地衡量网站参与度。这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
+* **[您可以利用实时监控(RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 为AEMas a Cloud Service启用客户端收集。
+Real Use Monitoring (RUM) Data Service提供了对用户交互的更精确的反映，从而确保了对网站参与度的可靠衡量。 这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
-  如果您有兴趣测试这项新功能并分享您的反馈，请从您与您的 Adobe ID 关联的电子邮件地址将一封电子邮件发送到 `aemcs-rum-adopter@adobe.com`，其中包含您要为其启用 RUM 的每个环境的域名。Adobe 的产品团队随后将为您启用真实用户监控 (RUM) 数据服务。
+  如果您有兴趣测试这项新功能并分享您的反馈，请从您与您的 Adobe ID 关联的电子邮件地址将一封电子邮件发送到 `aemcs-rum-adopter@adobe.com`，其中包含您要为其启用 RUM 的每个环境的域名。然后，Adobe的产品团队将为您启用实时监控(RUM)数据服务。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

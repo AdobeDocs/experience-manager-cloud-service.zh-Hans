@@ -4,10 +4,10 @@ description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.6.0 的发�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 5644e6f433b18408780e13057ba469e7c4926f78
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 56%
+ht-degree: 50%
 
 ---
 
@@ -54,11 +54,11 @@ Cloud Manager现在允许您 [自助服务生成和管理域验证(DV) SSL证书
 
 如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至 `Grp-aemcs-dv-dert-adopter@adobe.com` 来自与您的Adobe ID关联的电子邮件地址。
 
-### 通过真实用户监控 (RUM) 进行客户端收集 {#rum}
+### 通过实时监控(RUM)进行客户端收集 {#rum}
 
-您可以利用[真实用户监控 (RUM) 数据服务](/help/implementing/cloud-manager/content-requests.md#cliendside-collection)为 AEM as a Cloud Service 启用客户端收集。
+您可以利用 [Real Use Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) 为AEMas a Cloud Service启用客户端收集。
 
-真实用户监控 (RUM) 数据服务能够更准确地反映用户交互，确保可靠地衡量网站参与度。这是一个深入了解页面性能的绝佳机会。这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
+Real Use Monitoring (RUM) Data Service提供了对用户交互的更精确的反映，从而确保了对网站参与度的可靠衡量。 这是一个深入了解页面性能的绝佳机会。这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
 如果您有兴趣测试这项新功能并共享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址向 `aemcs-rum-adopter@adobe.com` 发送一封电子邮件。请在您的电子邮件中包含生产、暂存和开发环境的域名。参与此功能的早期采用者计划的人数受限。
 
