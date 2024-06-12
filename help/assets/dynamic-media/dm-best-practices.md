@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 * **使用用户档案组织资源：**
 处理配置文件可自动执行指定文件夹中的资产处理，从而简化组织。 随着数字资产收藏集的扩展，通过标准化元数据、文件名和文件夹结构，可以一致而准确地应用这些配置文件。
 想要了解更多信息？ 转到 [使用用户档案组织资源](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### 优化图像质量
 
