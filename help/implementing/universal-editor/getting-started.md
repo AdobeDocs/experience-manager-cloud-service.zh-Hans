@@ -4,7 +4,7 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 395cb7b2e37c7358baa7ae07329f42bd5a560cb1
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 71%
@@ -144,7 +144,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 <body>
         <aside>
           <ul data-aue-resource="urn:aemconnection:/content/example/list" data-aue-type="container">
-            <li data-aue-resource="urn:aemconnection/content/example/listitem" data-aue-type="component">
+            <li data-aue-resource="urn:aemconnection:/content/example/listitem" data-aue-type="component">
               <p data-aue-prop="name" data-aue-type="text">Jane Doe</p>
               <p data-aue-prop="title" data-aue-type="text">Journalist</p>
               <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
@@ -154,7 +154,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
             <li data-aue-resource="urn:fcsconnection:/documents/mytext" data-aue-type="component">
               <p data-aue-prop="name" data-aue-type="text">John Smith</p>
-              <p data-aue-resource="urn:aemconnection/content/example/another-source" data-aue-prop="title" data-aue-type="text">Photographer</p>
+              <p data-aue-resource="urn:aemconnection:/content/example/another-source" data-aue-prop="title" data-aue-type="text">Photographer</p>
               <img data-aue-prop="avatar" src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg" data-aue-type="image" alt="avatar"/>
             </li>
           </ul>
