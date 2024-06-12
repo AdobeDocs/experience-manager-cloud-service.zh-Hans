@@ -2,9 +2,9 @@
 title: 与 Adobe Target 集成
 description: 与 Adobe Target 集成
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 876de632163c4a0952e238ac89577fa9f064b900
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -31,10 +31,13 @@ ht-degree: 100%
 
 * Adobe Launch 是用于通过 Target 功能（JS 库）检测 AEM 站点的实际工具。因此，将 AEM as a Cloud Service 与 Launch 和 Adobe Target 集成是密切相关的（请参阅下面的链接）。
 
-   * [使用 Adobe I/O 与 Adobe Target 集成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
-   * [集成 Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-   * [通过 Adobe I/O 将 AEM 与 Adobe Launch 集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
-   * [了解 AEM 与 Adobe Launch、Analytics 和 Target 的集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+<!--   
+  * [Integration with Adobe Target using Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
+-->
+
+* [集成 Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+* [通过 Adobe I/O 将 AEM 与 Adobe Launch 集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+* [了解 AEM 与 Adobe Launch、Analytics 和 Target 的集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
 
 >[!NOTE]
 >
