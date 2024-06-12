@@ -1,15 +1,16 @@
 ---
-title: 配置CDN凭据和身份验证
+title: 配置 CDN 凭证和身份验证
 description: 了解如何通过在随后使用Cloud Manager配置管道部署的配置文件中声明规则来配置CDN凭据和身份验证。
 feature: Dispatcher
-source-git-commit: ee993798739232da794dbf7ff0a643ca93effa7d
+exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
+source-git-commit: 7a53f936aacfb3e5aa431f26e5346c1809f9c76f
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# 配置CDN凭据和身份验证 {#cdn-credentials-authentication}
+# 配置 CDN 凭证和身份验证 {#cdn-credentials-authentication}
 
 >[!NOTE]
 >此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至 `aemcs-cdn-config-adopter@adobe.com`.
@@ -71,7 +72,7 @@ data:
 
 ## 清除API令牌 {#purge-API-token}
 
-客户可以使用声明的清除API令牌清除CDN缓存。 使用以下语法声明令牌。  请参阅 [通用设置](#common-setup) 部分以了解如何部署它。
+客户可以 [清除CDN缓存](/help/implementing/dispatcher/cdn-cache-purge.md) 使用声明的清除API令牌。 使用以下语法声明令牌。  请参阅 [通用设置](#common-setup) 部分以了解如何部署它。
 
 ```
 kind: "CDN"
