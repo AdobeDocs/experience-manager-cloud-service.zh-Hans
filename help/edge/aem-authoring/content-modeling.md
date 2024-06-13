@@ -4,10 +4,10 @@ description: 了解如何对使用 Edge Delivery Services 项目进行的 AEM �
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
+workflow-type: tm+mt
 source-wordcount: '2233'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -345,7 +345,7 @@ ht-degree: 100%
 * **图像** - 如果对 AEM 中资源的引用是 MIME 类型的以 `image/` 开头的资源，则该引用将呈现为 `<picture><img src="${reference}"></picture>`。
 * **链接** - 如果引用在 AEM 中存在且不是图像，或者值以 `https?://` 或 `#` 开头，则引用将呈现为 `<a href="${reference}">${reference}</a>`。
 * **富文本** - 如果修剪后的值以段落（`p`、`ul`、`ol`、`h1`-`h6` 等）开头，该值将呈现为富文本。
-* **类名** - `classes` 属性被视为区块选项，并呈现为表标题中的[简单区块](#simple)，或呈现为[容器区块](#container)中项目的值列表。
+* **类名** - `classes` 属性被视为 [块选项](/help/edge/developer/markup-sections-blocks.md#block-options) 并在表标题中呈现 [简单块，](#simple) 或作为中项目的值列表 [容器块。](#container)
 * **值列表** - 如果一个值是多值属性，并且第一个值不是前一个值，则所有值都以逗号分隔的列表形式连接起来。
 
 所有其他内容都将呈现为纯文本。

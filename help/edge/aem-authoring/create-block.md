@@ -4,10 +4,10 @@ description: 了解如何在使用 Edge Delivery Services 项目进行 AEM 创�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 94%
 
 ---
 
@@ -53,75 +53,99 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 1. 编辑项目的根目录下的 `component-definition.json` 文件，为新的引用区块添加以下定义并保存该文件。
 
-   ```json
-   {
-     "title": "Quote",
-     "id": "quote",
-     "plugins": {
-       "xwalk": {
-         "page": {
-           "resourceType": "core/franklin/components/block/v1/block",
-           "template": {
-             "name": "Quote",
-             "model": "quote",
-             "quote": "<p>Think, McFly! Think!</p>",
-             "author": "Biff Tannen"
-           }
-         }
-       }
-     }
-   }
-   ```
+>[!BEGINTABS]
 
-   ![编辑 component-definitions.json 文件以定义引用区块](assets/create-block/component-definitions.png)
+>[!TAB JSON示例]
+
+```json
+{
+  "title": "Quote",
+  "id": "quote",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "Quote",
+          "model": "quote",
+          "quote": "<p>Think, McFly! Think!</p>",
+          "author": "Biff Tannen"
+        }
+      }
+    }
+  }
+}
+```
+
+>[!TAB 屏幕快照]
+
+![编辑 component-definitions.json 文件以定义引用区块](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. 编辑项目的根目录下的 `component-models.json` 文件，为新的引用区块添加以下[模型定义](/help/implementing/universal-editor/field-types.md#model-structure)并保存该文件。
 
    * 请参阅文档[使用 Edge Delivery Services 项目进行 AEM 创作的内容建模](/help/edge/aem-authoring/content-modeling.md)，了解有关创建内容模型时需考虑的重要事项的详细信息。
 
-   ```json
-   {
-     "id": "quote",
-     "fields": [
-        {
-          "component": "text-area",
-          "name": "quote",
-          "value": "",
-          "label": "Quote",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "author",
-          "label": "Author",
-          "value": ""
-        }
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![编辑 component-models.json 文件以定义引用区块的模型](assets/create-block/component-models.png)
+>[!TAB JSON示例]
+
+```json
+{
+  "id": "quote",
+  "fields": [
+     {
+       "component": "text-area",
+       "name": "quote",
+       "value": "",
+       "label": "Quote",
+       "valueType": "string"
+     },
+     {
+       "component": "text-input",
+       "valueType": "string",
+       "name": "author",
+       "label": "Author",
+       "value": ""
+     }
+   ]
+}
+```
+
+>[!TAB 屏幕快照]
+
+![编辑 component-models.json 文件以定义引用区块的模型](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. 编辑项目的根目录下的 `component-filters.json` 文件，将引用区块添加到[过滤器定义](/help/implementing/universal-editor/customizing.md#filtering-components)以允许将此区块添加到任意部分并保存该文件。
 
-   ```json
-   {
-     "id": "section",
-     "components": [
-       "text",
-       "image",
-       "button",
-       "title",
-       "hero",
-       "cards",
-       "columns",
-       "quote"
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![编辑 component-filters.json 文件以定义引用区块的过滤器](assets/create-block/component-filters.png)
+>[!TAB JSON示例]
+
+```json
+{
+  "id": "section",
+  "components": [
+    "text",
+    "image",
+    "button",
+    "title",
+    "hero",
+    "cards",
+    "columns",
+    "quote"
+   ]
+}
+```
+
+>[!TAB 屏幕快照]
+
+![编辑 component-filters.json 文件以定义引用区块的过滤器](assets/create-block/component-filters.png)
+
+>[!ENDTABS]
 
 1. 使用 git 将这些更改提交到 `main` 分支。
 
@@ -174,55 +198,70 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 1. 在新的 `quote` 文件夹中，添加一个 `quote.js` 文件以通过添加以下 JavaScript 来实施区块装饰，然后保存该文件。
 
-   ```javascript
-   export default function decorate(block) {
-     const [quoteWrapper] = block.children;
-   
-     const blockquote = document.createElement('blockquote');
-     blockquote.textContent = quoteWrapper.textContent.trim();
-     quoteWrapper.replaceChildren(blockquote);
-   }
-   ```
+>[!BEGINTABS]
 
-   ![添加 JavaScript 以装饰区块](assets/create-block/quote-js.png)
+>[!TAB JavaScript示例]
 
+```javascript
+export default function decorate(block) {
+  const [quoteWrapper] = block.children;
+
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
+}
+```
+
+>[!TAB 屏幕快照]
+
+![添加 JavaScript 以装饰区块](assets/create-block/quote-js.png)
+
+>[!ENDTABS]
 
 1. 在 `quote` 文件夹中，添加一个 `quote.css` 文件以通过添加以下 CSS 代码来定义区块的样式，然后保存该文件。
 
-   ```css
-   .block.quote {
-       background-color: #ccc;
-       padding: 0 0 24px;
-       display: flex;
-       flex-direction: column;
-       margin: 1rem 0;
-   }
-   
-   .block.quote blockquote {
-       margin: 16px;
-       text-indent: 0;
-   }
-   
-   .block.quote > div:last-child > div {
-       margin: 0 16px;
-       font-size: small;
-       font-style: italic;
-       position: relative;
-   }
-   
-   .block.quote > div:last-child > div::after {
-       content: "";
-       display: block;
-       position: absolute;
-       left: 0;
-       bottom: -8px;
-       height: 5px;
-       width: 30px;
-       background-color: darkgray;
-   }
-   ```
+>[!BEGINTABS]
 
-   ![添加 CSS 以定义区块样式](assets/create-block/quote-css.png)
+>[!TAB CSS示例]
+
+```css
+.block.quote {
+    background-color: #ccc;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.block.quote blockquote {
+    margin: 16px;
+    text-indent: 0;
+}
+
+.block.quote > div:last-child > div {
+    margin: 0 16px;
+    font-size: small;
+    font-style: italic;
+    position: relative;
+}
+
+.block.quote > div:last-child > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 5px;
+    width: 30px;
+    background-color: darkgray;
+}
+```
+
+>[!TAB 屏幕快照]
+
+![添加 CSS 以定义区块样式](assets/create-block/quote-css.png)
+
+>[!ENDTABS]
 
 1. 使用 git 将这些更改提交到 `main` 分支。
 
@@ -239,6 +278,50 @@ Adobe 建议您采用三阶段方法来开发区块：
    ![已发布的样式化引用区块](assets/create-block/quote-styled-published.png)
 
 恭喜！您现在拥有一个完全工作的样式化引用区块。您可以使用此示例作为设计您自己的项目特定区块的基础。
+
+### 块选项 {#block-options}
+
+如果您需要一个区块，以使其外观或行为根据特定情况略有不同，但差异不足以使其本身成为新区块，则可以让作者从以下方面进行选择 [块选项。](content-modeling.md#type-inference)
+
+通过添加 `classes` 块的属性，该属性在简单块的表标题中呈现，或作为容器块中项目的值列表。
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## 使用其他工作分支 {#other-branches}
 
