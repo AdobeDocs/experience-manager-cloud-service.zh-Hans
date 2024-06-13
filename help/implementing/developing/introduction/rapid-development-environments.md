@@ -4,9 +4,9 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4244'
 ht-degree: 4%
 
 ---
@@ -472,11 +472,6 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 
 ## 日志 {#rde-logging}
 
->[!NOTE]
->
-> 此功能尚不可用。 它将在六月的某个时候推出。
-> 
-
 与其他环境类型类似，可以通过修改OSGi配置来设置日志级别，但如上所述，RDE的部署模型涉及命令行而不是Cloud Manager部署。 查看 [日志记录文档](/help/implementing/developing/introduction/logging.md) 有关如何查看、下载和解读日志的更多信息。
 
 RDE CLI还有其自己的日志命令，可用于快速配置应该记录哪些类和包以及在什么日志级别。 这些配置可以视为临时配置，因为它们不会修改版本控制中的OSGI属性。 此功能侧重于实时跟踪日志，而不是查找很久以前的日志。
@@ -484,6 +479,14 @@ RDE CLI还有其自己的日志命令，可用于快速配置应该记录哪些�
 以下示例说明如何跟踪创作层，其中有一个包设置为调试日志级别，两个包（以空格分隔）设置为信息调试级别。 包含 **身份验证** 包将突出显示。
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>如果您看到此错误 `RDECLI:UNEXPECTED_API_ERROR` 在播放创作服务的日志命令时，请重置您的环境并重试。 如果最新的重置操作发生在2024年5月底之前，则会引发此错误。
+>
+```
+>aio aem:rde:reset
+>```
 
 请参阅 `aio aem:rde:logs --help` 用于完整的命令行选项集。
 
