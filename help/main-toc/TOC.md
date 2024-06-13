@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
 workflow-type: tm+mt
 source-wordcount: '5034'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -668,7 +668,7 @@ ht-degree: 98%
             + [为自适应表单（核心组件）设计 JSON 架构](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [向自适应表单添加版本控制、评论和注释](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比较自适应表单](/help/forms/compare-forms.md)
-            + [使用迁移实用程序工具将基于基础组件的自适应Forms转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [将自适应表单另存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
@@ -744,7 +744,7 @@ ht-degree: 98%
       + [安装和配置](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher 和 CDN 缓存](/help/forms/troubleshooting-caching-performance.md)
       + [重新启动 AEM SDK](/help/forms/restart-aem-sdk.md)
-      + [解决Forms创建失败问题](/help/forms/form-creation-failing.md)
+      + [解决表单创建失败](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概述{#overview}
       + [简介](/help/screens-cloud/introduction/introduction.md)
@@ -1033,7 +1033,7 @@ ht-degree: 98%
          + [配置 DNS 设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [域验证(DV)证书](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+         + [域验证 (DV) 证书](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
       + IP 允许列表{#ip-allow-lists}
          + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
