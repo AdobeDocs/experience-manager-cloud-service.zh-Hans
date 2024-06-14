@@ -3,10 +3,10 @@ title: 编辑视频
 description: 使用编辑视频 [!DNL Adobe Express] 功能选项，并将更新的视频另存为版本。
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: ff201051a70862e7597cf36f70a0e7225178f1fa
+source-git-commit: afdab9a7b449673ecf15bc9ab31307388da7b64e
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 18%
+ht-degree: 17%
 
 ---
 
@@ -83,7 +83,7 @@ DAM中的最终视频内容通常需要调整大小才能分发到特定渠道�
 
 * 仅支持MP4格式的视频进行编辑。
 
-* 支持的最大源文件大小为200 MB。
+* 支持的最大源文件大小为1GB。
 
 * 支持的视频在任何一侧都大于46像素且小于3840像素。
 
@@ -93,11 +93,11 @@ DAM中的最终视频内容通常需要调整大小才能分发到特定渠道�
 
 ### 后续步骤 {#next-steps}
 
-* 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
+* 使用提供产品反馈 [!UICONTROL 反馈] 选项，该选项位于Assets视图用户界面上。
 
-* 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
+* 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
+* 联系[客户关怀](https://experienceleague.adobe.com/?support-solution=General#support)。
 
 >[!MORELIKETHIS]
 >
