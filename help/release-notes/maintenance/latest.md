@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 83%
 
 下面总结了维护版本 16544 的持续改进，该版本已于 2024 年 6 月 4 日公开发布。上一个维护版本是版本 16461。
 
-2024.6.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.6.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 >[!CAUTION]
 >
->请使用下面引用的SDK，因为之前的该SDK已经确认了回归：
+>请使用下面引用的 SDK，因为已确认之前的 SDK 出现了问题：
 >`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
-### 增强 {#enhancements-16544}
+### 增强功能 {#enhancements-16544}
 
 * GRANITE-41133：支持 Jakarta Servlet API 5 和 OSGi Servlet Whiteboard API。
 * GRANITE-51355：弃用 org.slf4j.event。
@@ -52,7 +52,7 @@ ht-degree: 83%
 
 ### 更改通知 {#change-notice-16544}
 
-从2024年9月开始，AEMas a Cloud Service将通过Sling模型导出器框架禁用资源解析器的序列化。 请参阅 [文档](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) 以了解更多详细信息。
+从 2024 年 9 月开始，AEM as a Cloud Service 将会通过 Sling Model Exporter 框架禁用资源解析器的序列化。请参阅[该文档](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)了解更多详情。
 
 ### 已弃用的功能和 API {#deprecated-16544}
 
