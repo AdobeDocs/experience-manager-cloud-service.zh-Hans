@@ -4,7 +4,7 @@ description: 了解如何在使用 Edge Delivery Services 项目进行 AEM 创�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
+source-git-commit: e0b4eafaa9fdc496362f90e6da14b4b198b4ea3e
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 94%
@@ -22,7 +22,7 @@ ht-degree: 94%
 
 本指南需要具备使用 Edge Delivery Services 项目以及 Universal Editor 进行 AEM 创作的现有知识。在开始阅读本指南之前，您应有权访问 Edge Delivery Services 并熟悉其基础知识，其中包括：
 
-您已学完 [Edge Delivery Services 教程](/help/edge/developer/tutorial.md)。
+* 您已学完 [Edge Delivery Services 教程](/help/edge/developer/tutorial.md)。
 * 您有权访问 [AEM Cloud Service 沙盒](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
 * 您已[启用同一沙盒环境上的 Universal Editor](/help/implementing/universal-editor/getting-started.md)。
 * 您已学完[使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/aem-authoring/edge-dev-getting-started.md)。
@@ -205,7 +205,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 ```javascript
 export default function decorate(block) {
   const [quoteWrapper] = block.children;
-
+ 
   const blockquote = document.createElement('blockquote');
   blockquote.textContent = quoteWrapper.textContent.trim();
   quoteWrapper.replaceChildren(blockquote);
@@ -232,19 +232,19 @@ export default function decorate(block) {
     flex-direction: column;
     margin: 1rem 0;
 }
-
+ 
 .block.quote blockquote {
     margin: 16px;
     text-indent: 0;
 }
-
+ 
 .block.quote > div:last-child > div {
     margin: 0 16px;
     font-size: small;
     font-style: italic;
     position: relative;
 }
-
+ 
 .block.quote > div:last-child > div::after {
     content: "";
     display: block;
@@ -340,4 +340,3 @@ export default function decorate(block) {
 >[!TIP]
 >
 >有关创建新 Edge Delivery Services 项目（该项目已启用 AEM 创作功能并以 AEM as a Cloud Service 作为内容源）的端到端演练，请观看 [此 AEM GEMs 网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-
