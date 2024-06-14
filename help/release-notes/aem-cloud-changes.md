@@ -1,13 +1,13 @@
 ---
 title: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改
-description: 对Adobe Experience Manager (AEM)as a Cloud Service的重要更改。
+description: 对 Adobe Experience Manager (AEM) as a Cloud Service 的显著更改。
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 feature: Release Information
 role: Admin
 source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '862'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
