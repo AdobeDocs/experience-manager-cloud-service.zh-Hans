@@ -3,7 +3,7 @@ title: 持久的GraphQL查询疑难解答
 description: 了解如何对Adobe Experience Manager as a Cloud Service中的持久GraphQL查询问题进行故障诊断。
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
+source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 如果GraphQL持久查询基于已过时的GraphQL类型，则查询可能会失败，通常是因为基础内容片段模型发生了更改。
 
-发生此类错误的原因有很多。 例如，当内容片段模型的作者时（此列表并非详尽无遗）：
+发生此类错误的原因有很多。 示例包括（此列表并非详尽无遗），当创作内容片段模型时：
 
 * 删除或重新命名字段
 * 更新 **模型类型** 用于定义允许片段引用的模型
