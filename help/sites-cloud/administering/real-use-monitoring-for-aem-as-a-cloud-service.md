@@ -2,7 +2,9 @@
 title: Real Use Monitoring for AEMas a Cloud Service
 description: 了解如何使用实时监控(RUM)实时捕获和分析网站或应用程序的数字用户体验。
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
-source-git-commit: 0514d56fb65245b1919969a60f6d4c2b719deaa6
+feature: Administering
+role: Admin
+source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 0%
