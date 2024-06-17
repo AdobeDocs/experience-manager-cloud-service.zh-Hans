@@ -2,7 +2,9 @@
 title: 变量 — 创作片段内容（资产 — 内容片段）
 description: 了解内容片段变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而提高灵活性。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: a213d94b6c5bd4eaaf78b8384b96e1d99104874d
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 53%

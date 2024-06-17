@@ -3,10 +3,10 @@ title: 检测重复资产 [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 description: 了解如何检测重复的资源
 contentOwner: KK
 mini-toc-levels: 3
-feature: Asset Management,Publishing,Collaboration,Asset Processing
-role: User,Architect,Admin
+feature: Asset Management, Publishing,Collaboration, Asset Processing
+role: User, Architect, Admin
 exl-id: 40f63933-4f4e-4318-8d42-4b5c9b01f7cd
-source-git-commit: e882e89afa213f3423efe497585994eb91186fd7
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 9%

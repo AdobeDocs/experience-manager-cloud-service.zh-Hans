@@ -1,11 +1,13 @@
 ---
-title: “[!DNL Assets view] 用户界面”
+title: ’[!DNL Assets view] 用户界面
 description: 了解  [!DNL Assets view] 中的用户界面并在其中导航。
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 

@@ -3,10 +3,10 @@ title: 要与集成的最佳实践 [!DNL Adobe Creative Cloud]
 description: 最佳实践将Experience Manager部署与Adobe Creative Cloud集成，以简化资产传输工作流并实现最高效率。
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaboration,Adobe Asset Link,Desktop App
-role: Architect,User,Admin
+feature: Collaboration, Adobe Asset Link, Desktop App
+role: User, Architect, Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '3438'
 ht-degree: 14%

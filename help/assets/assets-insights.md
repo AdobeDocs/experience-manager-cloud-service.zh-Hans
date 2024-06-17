@@ -2,10 +2,10 @@
 title: 资产分析
 description: 跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用统计数据。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
-role: User,Leader
+feature: Asset Insights, Asset Reports
+role: User, Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 12%

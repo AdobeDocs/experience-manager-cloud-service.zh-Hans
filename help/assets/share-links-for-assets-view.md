@@ -1,20 +1,23 @@
 ---
-title: 如何共享资产链接？
-description: 生成链接并与无权访问该 [!DNL Assets view] 应用程序的其他人共享资产。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+title: 如何共享资源链接？
+description: 生成链接并与无权访问该 [!DNL Assets view] 应用程序的其他人共享资源。
+exl-id: 7d7d488b-410b-4e90-bd10-4ffbb5fcec49
+feature: Adobe Asset Link, Link Sharing
+role: Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 93%
 
 ---
 
-# 分享资产链接 {#share-links-assets}
+# 分享资源链接 {#share-links-assets}
 
-[!DNL Assets view]使您能够生成链接并与无权访问[!DNL Assets view]应用程序的外部利益相关者共享资产。您可以定义链接的到期日期，然后使用您喜欢的通信方式（如电子邮件或消息服务）与他人共享。链接的接收者可以预览并下载资产。
+[!DNL Assets view]使您能够生成链接并与无权访问[!DNL Assets view]应用程序的外部利益相关者共享资源。您可以定义链接的到期日期，然后使用您喜欢的通信方式（如电子邮件或消息服务）与他人共享。链接的接收者可以预览并下载资源。
 
-## 为资产生成链接 {#generate-link-for-assets}
+## 为资源生成链接 {#generate-link-for-assets}
 
-要为资产或包含资产的文件夹生成链接：
+要为资源或包含资源的文件夹生成链接：
 
 1. 选择包含资源的资源或/和文件夹，然后单击 **[!UICONTROL 共享链接]**.
 
@@ -30,15 +33,15 @@ ht-degree: 93%
 
 分享资产的公共链接后，接收者无需登录到 [!DNL Assets view] 即可在网页浏览器中点击链接预览或下载分享的资产。
 
-单击链接，单击文件夹以导航到资产，然后单击资产进行预览。您可以选择在“列表视图”或“卡片视图”中查看共享资产。
+单击链接，单击文件夹以导航到资产，然后单击资产进行预览。您可以选择在“列表视图”或“卡片视图”中查看共享资源。
 
-您可以将鼠标悬停在共享资产或共享资产文件夹上以选择或下载资产。
+您可以将鼠标悬停在共享资源或共享资源文件夹上以选择或下载资源。
 
-您也可以选择多个资产并单击&#x200B;**[!UICONTROL 下载]**。[!DNL Assets view]将选定的资产下载为 zip 文件。[!DNL Assets view]为您选择下载的每个资产在父 zip 文件中创建一个与资产同名的子文件夹。
+您也可以选择多个资源并单击&#x200B;**[!UICONTROL 下载]**。[!DNL Assets view]将选定的资源下载为 zip 文件。[!DNL Assets view]为您选择下载的每个资源在父 zip 文件中创建一个与资源同名的子文件夹。
 
-要一次下载所有资产，请切换&#x200B;**[!UICONTROL 到列表视图]**，单击&#x200B;**[!UICONTROL 全选]**，然后单击&#x200B;**[!UICONTROL 下载]**。
+要一次下载所有资源，请切换&#x200B;**[!UICONTROL 到列表视图]**，单击&#x200B;**[!UICONTROL 全选]**，然后单击&#x200B;**[!UICONTROL 下载]**。
 
-![预览共享资产](assets/preview-shared-assets.png)
+![预览共享资源](assets/preview-shared-assets.png)
 
 ## 后续步骤 {#next-steps}
 

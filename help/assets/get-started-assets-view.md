@@ -2,7 +2,9 @@
 title: 开始使用 [!DNL Assets View]
 description: 如何访问  [!DNL Assets View]，其登录体验，支持的用例以及已知问题
 role: User, Leader
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 95%

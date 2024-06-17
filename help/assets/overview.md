@@ -3,9 +3,9 @@ title: 使用 AEM 的 Adobe 数字资产管理 (DAM)
 description: 了解如何通过 Experience Manager Assets as a Cloud Service 来使用和管理 Adobe 的数字资产管理 (DAM)。
 contentOwner: AK
 feature: Asset Management
-role: User,Leader,Architect
+role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 100%

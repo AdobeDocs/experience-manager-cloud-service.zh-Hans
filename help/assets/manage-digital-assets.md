@@ -3,10 +3,10 @@ title: 管理数字资产
 description: 了解各种资源管理和编辑方法
 contentOwner: AG
 mini-toc-levels: 3
-feature: Asset Management,Publishing,Collaboration,Asset Processing
-role: User,Architect,Admin
+feature: Asset Management, Publishing,Collaboration, Asset Processing
+role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 10%

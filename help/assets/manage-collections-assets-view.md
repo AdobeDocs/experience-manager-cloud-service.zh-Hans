@@ -2,10 +2,12 @@
 title: 管理收藏集
 description: 收藏集是Experience Manager Assets视图中的一组资源。 使用收藏集可在用户之间共享资源。
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
-source-git-commit: b2144820ad549332e8a921744717a77824f9e099
+feature: Collections, Asset Management
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 77%
+ht-degree: 90%
 
 ---
 
@@ -48,7 +50,7 @@ You can share collections with various users that are assigned different levels 
 
 * [删除收藏集](#delete-collection)
 
-* [管理私有收藏集的权限](#manage-permissions-to-a-private-collection)
+* [管理专用收藏集的权限](#manage-permissions-to-a-private-collection)
 
 ## 创建收藏集 {#create-collection}
 
@@ -188,17 +190,17 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 1. 单击&#x200B;**[!UICONTROL 删除]**。
 
-## 管理专用收藏集的权限{#manage-permissions-private-collection}
+## 管理私人收藏集的权限{#manage-permissions-private-collection}
 
-您可以允许管理员管理 [访问级别](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) 适用于存储库中可用的专用收藏集。 您可以分配权限，例如 `Can View` 和 `Can Edit` 至用户组或用户。 您还可以将权限管理权限委派给用户组。 创建专用收藏集的用户是这些收藏集的所有者。 他们可以使用 [!UICONTROL 管理权限] 向其他用户授予访问权限的操作。 此外，管理员还可以在中查看和管理专用收藏集的权限 [!DNL Experience Manager] 存储库。
+您可以允许管理员管理存储库中专用收藏集的[访问级别](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。您可以向用户组或用户分配诸如 `Can View` 和 `Can Edit` 等权限。您还可以将权限管理权限委派给用户组。创建专用收藏集的用户是这些收藏的所有者。他们可以使用“[!UICONTROL 管理权限]”操作向其他用户授予访问权限。此外，管理员可以查看和管理 [!DNL Experience Manager] 存储库中专用收藏集的权限。
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-有关如何将可用权限分配给用户组的信息，请参阅 [向用户组添加权限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+有关如何向用户组分配可用权限的信息，请参阅[向用户组添加权限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
-有关端到端工作流的详细信息，请参阅 [管理权限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+有关端到端工作流程的更多信息，请参阅[管理权限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
 ## 后续步骤 {#next-steps}
 

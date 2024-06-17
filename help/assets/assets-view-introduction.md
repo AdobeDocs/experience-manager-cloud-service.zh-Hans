@@ -3,10 +3,12 @@ title: AEM中的“Assets”视图如何使您受益？
 description: 详细了解AEM中“资源”视图的主要优势。 Adobe利用其增强营销和创意专业人士能力方面的专业知识，引入了改变游戏规则的新用户体验。
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 74%
+source-wordcount: '972'
+ht-degree: 69%
 
 ---
 
@@ -121,7 +123,7 @@ ht-degree: 74%
 
 * 重命名存储库中可用的资源和文件夹。
 
-“资产”视图专为简化工作流、促进协作和加快资产交付而量身定制。 通过提升内容处理速度，营销人员可以解锁数字资源的全部潜力，并以前所未有的方式释放创造力。
+“资产”视图专为简化工作流、促进协作和加快资产交付而量身定制。 通过实现内容周转率，营销人员可以前所未有地释放其数字资产的全部潜力并释放创造力。
 
 
 使用这些链接可快速开始使用资产视图：

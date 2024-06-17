@@ -2,10 +2,10 @@
 title: 配置AEM Assets as a [!DNL Cloud Service] 使用Brand Portal
 description: 了解如何使用Brand Portal配置AEM Assets。 利用配置，可将已批准的品牌资产从AEM实例发布到Brand Portal，并将其分发给Brand Portal用户。
 contentOwner: AK
-feature: Brand Portal,Asset Distribution,Configuration
+feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5fd488a6d5272ac71208e5645facc04b3d9ac51a
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 7%
@@ -141,7 +141,7 @@ Brand Portal租户的默认URL为： `https://<tenant-id>.brand-portal.adobe.com
 * [将资源从Experience Manager Assets发布到Brand Portal](publish-to-brand-portal.md)
 * [将文件夹从Experience Manager Assets发布到Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [将收藏集从Experience Manager Assets发布到Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [将资源从Brand Portal发布到Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Brand Portal中的资源源
+* [将资源从Brand Portal发布到Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans) - Brand Portal中的资源源
 * [将预设、架构和 Facet 发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [将标记发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 

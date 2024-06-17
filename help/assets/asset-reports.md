@@ -2,10 +2,10 @@
 title: 有关使用和共享的报告
 description: 有关您在中资源的报表 [!DNL Adobe Experience Manager Assets] 以帮助您了解数字资产的使用、活动和共享。
 contentOwner: AG
-feature: Asset Reports,Asset Management
-role: Admin,User
+feature: Asset Reports, Asset Management
+role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 9%

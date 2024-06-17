@@ -2,10 +2,12 @@
 title: 如何在资源视图中管理标记？
 description: 了解如何在资源视图中管理标记。标记帮助您将资源分类，这样可更高效地浏览和搜索资源。
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
-source-git-commit: cadf0e383608a39200d716cc698ad1979f24fd1d
+feature: Smart Tags
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 70%
+ht-degree: 98%
 
 ---
 
@@ -61,9 +63,9 @@ ht-degree: 70%
 
 ## 将标记添加到命名空间 {#add-tags-to-namespace}
 
-执行以下步骤可将标记加入命名空间：
+执行以下步骤以将标记添加到命名空间：
 
-1. 转到 **[!UICONTROL 分类管理]**.
+1. 转到&#x200B;**[!UICONTROL 分类管理]**。
 1. 选择命名空间并单击`Create`，在命名空间下的顶层创建标记。如果您需要在命名空间中存在的标记下创建子标记，请选择该标记，然后单击 `Create`。
    ![标记的层次结构](assets/hierarchy-of-tags.png)
 
@@ -131,7 +133,7 @@ ht-degree: 70%
 
 标记组件会自动添加到 `default` 元数据表单中。您可以使用模板或从头开始设计[元数据表单](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您使用的不是现有的元数据表单模板，则可以修改您的元数据表单并添加标记组件。元数据属性映射是自动填充的，因此此时无法修改。[!DNL Assets as a Cloud Service] 用户可以更新映射以使用自定义命名空间存储标记值，并使用根路径仅公开层次结构的子集。
 
-观看此简短视频，了解如何将标记组件添加到元数据表单中：
+观看这段简短的视频以了解如何将标记组件添加到元数据表单：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420452)
 
@@ -146,61 +148,61 @@ ht-degree: 70%
 1. 选择一个或多个标记。 子标记将与父标记或名称空间一起自动选择。
 在 Assets Essentials 中修改的标记还被应用于 Assets as a Cloud Service 中。
 
-## 将标签添加到阻止列表 {#blocklist-essentials}
+## 将标记添加到阻止列表 {#blocklist-essentials}
 
-[!DNL Assets view] 允许您配置一个阻止列表，其中包含不应在资源上传到存储库时作为智能标记添加到资源的单词。 此功能帮助您确保品牌合规，从而减少审核智能标记的工作量。
+通过 [!DNL Assets view] 可配置一个阻止列表，其中包括在将资源上传到存储库时不应作为智能标记添加到资源的字词。此功能帮助您确保品牌合规，并减少审核智能标记的工作量。
 <!--
 ### Block smart tags for single asset {#block-smart-tags-for-single-asset}
 ![block smart tags](assets/block-smart-tags.png)
 -->
 
-### 阻止所有资产的智能标记 {#block-smart-tags-for-all-assets}
+### 为所有资源阻止智能标记 {#block-smart-tags-for-all-assets}
 
-[!DNL Assets view] 允许管理员阻止现有资源和新添加资源的智能标记。 要阻止标记，请执行以下步骤：
+通过 [!DNL Assets view]，管理员可为现有资源和新添加的资源阻止智能标记。要阻止标记，请执行以下步骤：
 
-1. 导航到 **[!UICONTROL 已阻止的标记]** 下 **[!UICONTROL 设置]**.
-1. 单击 **[!UICONTROL 添加阻止的标记]**.
-1. 在文本框中键入需要阻止的标记，然后单击 **[!UICONTROL 输入]**.
-1. 添加完标记后，单击 **[!UICONTROL 添加]**. 输入的标记将列在阻止的标记列表中。
+1. 导航到&#x200B;**[!UICONTROL 设置]**&#x200B;下的&#x200B;**[!UICONTROL 阻止的标记]**。
+1. 单击&#x200B;**[!UICONTROL 添加阻止的标记]**。
+1. 在文本框中键入要阻止的标记，然后单击&#x200B;**[!UICONTROL 输入]**。
+1. 添加完标记后，单击&#x200B;**[!UICONTROL 添加]**。随后将在阻止的标记列表中列出所输入的标记。
 
    >[!NOTE]
    >
-   >一次最多可以向列表中添加25个标记。 重复这些步骤以向阻止列表添加更多标签。
+   >一次最多可将 25 个标记添加到列表。重复这些步骤以将更多标记添加到阻止列表。
 
-您还可以为单个资产阻止智能标记。 导航到资源的详细信息。 下 **[!UICONTROL 标记]** 选项卡，删除不需要的智能标记，然后单击 **[!UICONTROL 保存]**. 标记将在选定资源的阻止列表中列出。
+还可为单个资源阻止智能标记。导航到资源的详细信息。在&#x200B;**[!UICONTROL 标记]**&#x200B;选项卡下，删除不需要的智能标记，然后单击&#x200B;**[!UICONTROL 保存]**。随后将在阻止列表中列出所选资源的标记。
 
-### 在阻止列表时执行的操作 {#blocklist-actions}
+### 对阻止列表执行的操作 {#blocklist-actions}
 
-* **删除标记：** 您也可以从阻止列表中删除标签。 为此，请选择一个或多个要删除的标记。 单击 **[!UICONTROL 移除]**. 一次最多可以从列表中删除25个标记。
-* **全选：** 选中旁边的复选框 **标记名称** 以选择阻止列表中的所有标签。
-* **排序：** 您可以按升序或降序对阻止列表进行排序。 为此，请单击旁边的箭头 **标记名称**.
+* **删除标记：**&#x200B;还可从阻止列表中删除标记。为此，请选择一个或多个要删除的标记。单击&#x200B;**[!UICONTROL 删除]**。一次最多可从列表中删除 25 个标记。
+* **全选**：选中&#x200B;**标记名称**&#x200B;旁的复选框以选择阻止列表中的所有标记。
+* **排序：**&#x200B;可按升序或降序将阻止列表排序。为此，请单击&#x200B;**标记名称**&#x200B;旁的箭头。
 
-  ![块标记](assets/blocklist.gif)
+  ![阻止标记](assets/blocklist.gif)
 
   >[!NOTE]
   >
-  >在阻止列表中添加标记时，请勿使用特殊字符。 可以使用a-z、A-Z、0-9和 — 等字符。
+  >在阻止列表中添加标记时，请勿使用特殊字符。可使用 a-z、A-Z、0-9 和 - 等字符。
 
 ### 导出阻止列表{#export-blocklist}
 
 通过“资源”视图，可将列出的阻止标记导出为CSV格式。 要导出阻止列表，请执行以下步骤：
 
-1. 单击 **[!UICONTROL 导出为CSV]**.
-1. 选择适当的位置以保存CSV文件。 您也可以根据需要重命名文件。
-1. 单击&#x200B;**[!UICONTROL 保存]**。将在所选位置下载CSV格式的导出列表。
+1. 单击&#x200B;**[!UICONTROL 导出为 CSV]**。
+1. 选择适当的位置以保存该 CSV 文件。还可根据要求重命名该文件。
+1. 单击&#x200B;**[!UICONTROL 保存]**。随后将导出的 CSV 格式列表下载到所选位置。
 
 ### 导入阻止列表{#import-blocklist}
 
 通过“资源”视图，可以从数据源(CSV)导入阻止的标记。 要导入阻止列表，请执行以下步骤：
 
-1. 单击 **[!UICONTROL 导入为CSV]**.
-1. 从设备中选择CSV文件。 单击 **[!UICONTROL 选择文件]** 以从设备导航到文件。 或者，您也可以从设备拖放CSV文件。
-1. 单击 **[!UICONTROL 上传]**. CSV文件中的标记将列在阻止的标记列表中。
+1. 单击&#x200B;**[!UICONTROL 导入为 CSV]**。
+1. 从设备中选择该 CSV 文件。单击&#x200B;**[!UICONTROL 选择文件]**&#x200B;以从设备中导航到该文件。或者，还可从设备拖放该 CSV 文件。
+1. 单击&#x200B;**[!UICONTROL 上传]**。随后将在阻止的标记列表中列出该 CSV 文件中的标记。
 
    ![导入阻止的标记列表](assets/import-blocked-tags.png)
 
 如果要下载阻止的标记模板，请执行以下步骤：
 
-1. 单击 **[!UICONTROL 下载模板]**.
-1. 选择适当的位置以保存CSV文件。 您也可以根据需要重命名文件。
-1. 单击&#x200B;**[!UICONTROL 保存]**。CSV格式的块标记模板在所选位置下载。
+1. 单击&#x200B;**[!UICONTROL 下载模板]**。
+1. 选择适当的位置以保存该 CSV 文件。还可根据要求重命名该文件。
+1. 单击&#x200B;**[!UICONTROL 保存]**。随后将 CSV 格式的阻止标记模板下载到所选位置。

@@ -1,13 +1,13 @@
 ---
 title: ’[!DNL Experience Manager Assets] 与集成 [!DNL Adobe Workfront]’
 description: 集成简介 [!DNL Assets] 和 [!DNL Workfront]
-role: Admin,Leader,Architect
-feature: Integrations
+role: Admin, Leader, Architect
+feature: Workfront Integrations and Apps
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: f295eead13bcdeed910ae6b8c82373e2b70f1224
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 7%
+source-wordcount: '390'
+ht-degree: 3%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 7%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html) |
 | AEM as a Cloud Service | 本文 |
 
-[!DNL Adobe Workfront] 是一个工作管理应用程序，它帮助您集中在一处管理工作的整个生命周期。之间的集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 允许组织通过将工作和数字资产管理内在地联系起来，提高内容速度和上市时间。 在Workfront中管理其工作的情况下，用户有权访问所需的文档和图像。
+[!DNL Adobe Workfront] 是一个工作管理应用程序，帮助您在一个地方管理整个工作生命周期。 之间的集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 允许组织通过将工作和数字资产管理内在地联系起来，提高内容速度和上市时间。 在Workfront中管理其工作的情况下，用户有权访问所需的文档和图像。
 
-Adobe优惠至 [集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 本机(as a Cloud Service支持Assets Essentials和Assets)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
+Adobe优惠至 [集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 本机(as a Cloud Service支持Assets Essentials和资源)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 通过本机Experience Manager集成，您可以：
 

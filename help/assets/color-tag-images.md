@@ -2,7 +2,9 @@
 title: 图像的颜色标记
 description: Adobe Experience Manager Assets使您能够区分图像中的颜色，并自动将这些颜色作为标记应用。 然后，您可以使用这些标记来搜索和过滤图像。
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+feature: Smart Imaging, Interactive Images, Asset Management
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 6%

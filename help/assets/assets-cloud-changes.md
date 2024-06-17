@@ -2,9 +2,9 @@
 title: 中的显着更改 [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: 对的重要更改 [!DNL Adobe Experience Manager Assets] 在 [!DNL Experience Manager] as a [!DNL Cloud Service] 与 [!DNL Adobe Experience Manager] 6.5.
 feature: Release Information
-role: User,Leader,Architect,Admin
+role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 9%

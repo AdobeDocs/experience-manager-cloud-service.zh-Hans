@@ -2,10 +2,10 @@
 title: 使用资源微服务处理资源
 description: 使用云原生和可扩展的资源处理微服务来处理数字资源。
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
-role: Architect,Admin
+feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
+role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%

@@ -2,10 +2,10 @@
 title: 如何向AEM中的资源添加智能标记？
 description: 使用可应用上下文和描述性业务标记的人工智能服务，将智能标记添加到AEM中的资源。
 contentOwner: AG
-feature: Smart Tags,Tagging
-role: Admin,User
+feature: Smart Tags
+role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 7%

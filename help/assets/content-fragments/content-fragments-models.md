@@ -2,7 +2,9 @@
 title: 内容片段模型（资产 — 内容片段）
 description: 了解内容片段模型如何作为AEM中Headless内容的基础，让您能够创建具有结构化内容的内容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Content Fragments, GraphQL API
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '3011'
 ht-degree: 87%

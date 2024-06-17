@@ -3,7 +3,8 @@ title: 编辑视频
 description: 使用编辑视频 [!DNL Adobe Express] 功能选项，并将更新的视频另存为版本。
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: afdab9a7b449673ecf15bc9ab31307388da7b64e
+feature: Best Practices, Video, Interactive Videos
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 17%

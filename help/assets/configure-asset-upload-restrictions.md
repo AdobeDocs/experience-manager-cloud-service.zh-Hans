@@ -2,7 +2,9 @@
 title: 配置资源上传限制
 description: 配置Adobe Experience Manager Assets以根据MIME类型限制用户可以上传的资源类型。 它有助于防止意外上传不需要的格式和恶意文件。
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+feature: Upload, Asset Ingestion
+role: User, Admin, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 13%

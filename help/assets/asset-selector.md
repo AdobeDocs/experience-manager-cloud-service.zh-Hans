@@ -2,9 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 使用资源选择器在您的应用程序中搜索、查找和检索资源的元数据和演绎版。
 contentOwner: KK
-role: Admin,User
+role: Admin, User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
+feature: Collaboration
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '3908'
 ht-degree: 45%

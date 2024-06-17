@@ -1,10 +1,10 @@
 ---
 title: 搜索Facet。
 description: 本文介绍了如何在Experience Manager中创建、修改和使用搜索Facet。
-feature: Search,Metadata
-role: User,Admin
+feature: Metadata
+role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '2505'
 ht-degree: 19%

@@ -2,9 +2,9 @@
 title: 分发和共享资源、文件夹和收藏集
 description: 使用共享作为链接、下载和方式等方法分发数字资源 [!DNL Brand Portal]， [!DNL desktop app]、和 [!DNL Asset Link].
 feature: Asset Management, Collaboration, Asset Distribution
-role: User, Admin
+role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 3%

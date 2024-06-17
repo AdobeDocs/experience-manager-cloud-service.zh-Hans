@@ -3,10 +3,11 @@ title: 编辑图像
 description: 使用由 [!DNL Adobe Express] 提供支持的选项编辑图像并将更新后的图像另存为版本。
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 42d3751a4a29149f3b31dbc28555b81aa7ed43cc
+feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 70%
+ht-degree: 72%
 
 ---
 
@@ -84,7 +85,7 @@ ht-degree: 70%
 
 ### 限制 {#limitations-adobe-express}
 
-* 支持的图像分辨率：最小 — 50像素，最大 — 6000像素/维度。
+* 支持的图像分辨率：最小 - 50 像素，最大 - 每维 6000 像素。
 
 * 支持的最大文件大小：17 MB。
 

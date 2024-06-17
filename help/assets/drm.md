@@ -3,9 +3,9 @@ title: Digital Rights Management位置 [!DNL Assets]
 description: 了解如何在中管理资源到期状态和已许可资源的信息 [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management,DRM
-role: User,Admin
+role: User, Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 6%

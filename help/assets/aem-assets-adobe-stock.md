@@ -2,10 +2,10 @@
 title: 管理 [!DNL Adobe Stock] 中的资产 [!DNL Assets].
 description: 搜索、获取、许可和管理 [!DNL Adobe Stock] 中的资产 [!DNL Adobe Experience Manager]. 将许可资产用作任何其他数字资产。
 contentOwner: Vishabh Gupta
-feature: Search,Adobe Stock
-role: Admin,User
+feature: Adobe Stock
+role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 5%

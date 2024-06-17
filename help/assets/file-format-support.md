@@ -2,10 +2,10 @@
 title: 支持的文件格式和MIME类型
 description: 支持的文件格式和MIME类型 [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,Renditions
-role: User,Admin
+feature: Asset Management, Renditions
+role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: e40ca26e39bea146f69a82fb583467707537d4ab
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 34%

@@ -2,7 +2,10 @@
 title: 重新处理数字资产
 description: 了解重新处理数字资产的各种方法
 contentOwner: KK
-source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
+exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
+feature: Asset Processing
+role: User, Leader, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -91,4 +94,3 @@ ht-degree: 0%
 ### 工作流
 
 详细了解 [处理用户档案和后处理工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).
-

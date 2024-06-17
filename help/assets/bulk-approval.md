@@ -2,10 +2,10 @@
 title: 查看文件夹和收藏集中的资源
 description: 为文件夹或收藏集中的资产设置审阅工作流，并与审阅人或创意合作伙伴共享该工作流以征求反馈。
 contentOwner: AG
-feature: Collections,Collaboration
+feature: Collections, Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 9%

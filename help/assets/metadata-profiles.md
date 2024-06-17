@@ -3,9 +3,9 @@ title: 元数据配置文件
 description: 了解资源的元数据配置文件。 了解如何创建元数据配置文件并将其应用于文件夹资产。
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: User, Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 21%

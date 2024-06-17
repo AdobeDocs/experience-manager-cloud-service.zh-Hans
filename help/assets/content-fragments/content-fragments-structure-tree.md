@@ -2,7 +2,9 @@
 title: 内容片段结构树（资产 — 内容片段）
 description: 使用 AEM 中内容片段编辑器的结构树功能，更好地了解您的 headless 内容。
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 62ede258711d0cb8d0b72479559c37221509e23f
+feature: Content Fragments
+role: User
+source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 45%

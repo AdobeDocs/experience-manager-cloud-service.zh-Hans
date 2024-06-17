@@ -1,7 +1,10 @@
 ---
 title: 我的资产工作区视图
 description: “我的工作区”是一个页面，其中提供各种可自定义的视觉模块，以方便访问 Assets 用户界面的关键区域以及与用户密切相关的信息。
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 84%

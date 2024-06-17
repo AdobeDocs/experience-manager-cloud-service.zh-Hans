@@ -2,11 +2,12 @@
 title: AEM as a Cloud Service 的目标选择器
 description: 使用 AEM 目标选择器显示和选择可用作原始资源副本的资源。
 contentOwner: Adobe
-role: Admin,User
+role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
+feature: Selectors
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1887'
 ht-degree: 85%
 
 ---

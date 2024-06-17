@@ -2,7 +2,9 @@
 title: 元数据 — 片段属性（资产 — 内容片段）
 description: 了解如何查看和编辑内容片段的元数据属性。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Content Fragments
+role: User
+source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 68%

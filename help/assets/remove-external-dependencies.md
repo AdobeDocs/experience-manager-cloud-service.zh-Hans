@@ -1,22 +1,23 @@
 ---
 title: 移除现有安装的外部依赖
 description: 移除现有安装的外部依赖
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
-source-git-commit: b71a78696d4b347c97b077d84b455f53a1747a07
+role: Admin
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 17%
 
 ---
 
 # 移除现有安装的外部依赖 {#remove-external-depedencies}
 
-Adobe建议您为Workfront的现有增强型连接器安装执行配置步骤，以删除对Hoodoo分发点的依赖关系。
+Adobe建议您为Workfront的现有增强型连接器安装执行配置步骤，以删除对Hoodoo分发点的依赖项。
 
 >[!NOTE]
 >
->仅当您在2022年3月之前安装了Workfront的增强型连接器时，才执行配置步骤。 从2022年3月开始，Workfront的新增强型连接器安装不依赖于Hoodoo分发点。
+>仅当您在2022年3月之前安装了Workfront的增强型连接器时，才执行配置步骤。 从2022年3月开始，Workfront的新增强连接器安装不依赖于Hoodoo分发点。
 
 要删除外部依赖项，请执行以下操作：
 

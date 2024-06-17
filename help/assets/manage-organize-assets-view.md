@@ -1,13 +1,14 @@
 ---
 title: 管理您的数字资源
 description: 在  [!DNL Assets view] 中移动、删除、复制、重命名、更新您的资源和进行版本控制。
-role: User,Leader
+role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1177'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -46,9 +47,9 @@ ht-degree: 89%
 * ![移动图标](assets/do-not-localize/move-icon.png) 将选定的资源或文件夹移动到存储库层次结构中的不同位置。
 
 * ![重命名图标](assets/do-not-localize/rename-icon.png) 重命名选定的资源或文件夹。请使用唯一名称，否则重命名将失败并出现警告。您可以使用新名称重试。
-此外，您还可以单击资源或文件夹的标题来重命名它。 请在以下位置提及新文本 **重命名资源** 文本框并单击 **保存**. 此功能在“网格”、“图库”、“瀑布”和“列表”视图中可用。
+此外，您可以单击资产或文件夹的标题来重命名它。在 **重命名资产** 文本框中提及新文本，然后单击 **保存**。此功能可在网格、库、瀑布和列表视图中使用。
 
-* ![瀑布视图图标](assets/do-not-localize/waterfall-view.png) [!UICONTROL 瀑布视图].
+* ![瀑布视图图标](assets/do-not-localize/waterfall-view.png) [!UICONTROL 瀑布视图]。
 
 * ![“复制到库”图标](assets/do-not-localize/copy-icon.png) 将资源添加到库。
 
