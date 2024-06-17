@@ -4,7 +4,7 @@ description: 了解通用编辑器的主要用例，以及如何最好地了解�
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
@@ -29,10 +29,10 @@ ht-degree: 0%
 
 通用编辑器为您的内容作者提供了一个方便、直观的可视编辑器，而不管他们创建的是什么类型的内容。 两个主要用例包括：
 
-* [基于AEM的创作](#aem-authoring)  — 使用AEM Sites控制台通过通用编辑器在AEM中管理您的内容和创作页面
+* [所见即所得创作](#wysiwyg-authoring)  — 使用AEM Sites控制台通过通用编辑器在AEM中管理您的内容和创作页面
 * [Headless创作](#headless-authoring)  — 使用通用编辑器在您自己的自定义Headless应用程序中创作内容。
 
-### 基于AEM的创作 {#aem-authoring}
+### 所见即所得创作 {#wysiwyg-authoring}
 
 如果您已经熟悉AEM，则可以使用站点控制台创建和管理您的页面，然后使用通用编辑器编辑它们。
 
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 如果您有这样的用例，作为紧接着的下一步，请参阅以下文档，全面了解如何在AEM中启动并运行通用编辑器。
 
-1. [使用Edge Delivery Services进行AEM创作的开发人员快速入门指南](/help/edge/aem-authoring/edge-dev-getting-started.md)  — 开始使用AEM中的第一个通用编辑器项目
-1. [创建指令用于通用编辑器的块](/help/edge/aem-authoring/create-block.md)  — 了解如何检测块以使您的内容可在通用编辑器中编辑
-1. [用于通过Edge Delivery Services项目进行AEM创作的内容建模](/help/edge/aem-authoring/content-modeling.md)  — 了解如何构建块以有效建模内容以供通用编辑器使用的详细信息。
+1. [用于Edge Delivery Services的WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)  — 开始使用AEM中的第一个通用编辑器项目
+1. [创建指令用于通用编辑器的块](/help/edge/wysiwyg-authoring/create-block.md)  — 了解如何检测块以使您的内容可在通用编辑器中编辑
+1. [用于WYSIWYG创作的Edge Delivery Services建模与内容项目](/help/edge/wysiwyg-authoring/content-modeling.md)  — 了解如何构建块以有效建模内容以供通用编辑器使用的详细信息。
 
 阅读这些文档后，您可以返回本页以了解Headless创作用例以及通用编辑器的常规工作方式。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 * [用于通用编辑器的SecurBank示例应用程序](/help/implementing/universal-editor/securbank.md)
 
-阅读本文档后，您可以返回本页以了解AEM创作用例以及通用编辑器的常规工作方式。
+阅读本文档后，您可以返回此页面以了解WYSIWYG创作用例以及通用编辑器的常规工作方式。
 
 ## 通用编辑器的工作方式 {#how-ue-works}
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 通用编辑器的工作方式如下。
 
 1. 开发人员对应用程序或页面进行工具设置，以使用通用编辑器。 此检测告知编辑器哪些内容可编辑以及如何保留内容。
-   * 对于基于AEM的创作，使用样板模板创建的页面会自动进行检测。
+   * 对于WYSIWYG创作，将自动检测使用样板模板创建的页面。
    * 对于Headless创作，可以轻松检测您的应用程序。
 1. 内容作者将加载通用编辑器，该编辑器反过来将加载您的页面以进行编辑。 由于它是仪器化的，因此它知道哪些内容可以编辑，以及它如何表示和保留。
 1. 内容作者在直观的WYSIWYG界面中编辑页面内容，就地编辑。

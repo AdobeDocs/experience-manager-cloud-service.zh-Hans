@@ -5,7 +5,7 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 AEMas a Cloud Service提供了多个不同的编辑器，用于编辑不同类型的内容并支持不同的创作用例。
 
-* [使用页面编辑器进行基于AEM的创作](#page-editor)  — 页面编辑器是在AEM中创作内容的经典编辑器，已尝试并受数千个网站的信任。
-* [使用通用编辑器进行基于AEM的创作](#universal-editor)  — 通用编辑器是一个现代UI，允许您以与内容无关的方式创作AEM内容，可用于利用Edge Delivery Services的AEM项目。
+* [使用页面编辑器进行WYSIWYG创作](#page-editor)  — 页面编辑器是在AEM中创作内容的经典编辑器，已尝试并受数千个网站的信任。
+* [使用通用编辑器进行WYSIWYG创作](#universal-editor)  — 通用编辑器是一个现代UI，允许您以与内容无关的方式创作AEM内容，可用于利用Edge Delivery Services的AEM项目。
 * [基于文档的创作](#document-based)  — 如果您使用Edge Delivery服务，则可以选择在AEM控制台之外将内容创作为常规文档，如Microsoft Word或Google Docs。
 * [AEM内容片段编辑器](#cf-editor)  — 这是创建Headless内容的首选编辑器。
 
@@ -29,7 +29,7 @@ AEMas a Cloud Service提供了多个不同的编辑器，用于编辑不同类�
 
 如果您不确定可以使用哪些创作选项，或者您想探索用于创作内容的新选项，请与您的系统管理员或项目经理联系。
 
-## 使用页面编辑器进行基于AEM的创作 {#page-editor}
+## 使用页面编辑器进行WYSIWYG创作 {#page-editor}
 
 这是用于在AEM中创作内容的经典编辑器，已尝试并受数千个网站的信任。
 
@@ -39,7 +39,7 @@ AEM页面编辑器提供了一个集成环境，用于使用“所见即所得�
 
 要了解有关AEM页面编辑器的更多信息，请参阅文档 [AEM页面编辑器。](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-## 使用通用编辑器进行基于AEM的创作 {#universal-editor}
+## 使用通用编辑器进行WYSIWYG创作 {#universal-editor}
 
 通用编辑器是一个现代化的用户界面，可让您以与内容无关的方式创作AEM内容，并且是利用Edge Delivery Services的AEM项目的首选。
 

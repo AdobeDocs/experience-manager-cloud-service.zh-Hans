@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '5034'
 ht-degree: 99%
@@ -823,14 +823,14 @@ ht-degree: 99%
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Services 概述](/help/edge/overview.md)
    + [将 Edge Delivery Services 与 AEM 结合使用](/help/edge/using.md)
-   + 基于 AEM 的创作 {#aem-authoring}
-      + [针对 Edge Delivery 创作内容](/help/edge/aem-authoring/authoring.md)
-      + [针对 Edge Delivery 发布内容](/help/edge/aem-authoring/publishing.md)
-      + [开发人员快速入门指南](/help/edge/aem-authoring/edge-dev-getting-started.md)
-      + [创建区块](/help/edge/aem-authoring/create-block.md)
-      + [内容建模](/help/edge/aem-authoring/content-modeling.md)
-      + [表格数据和电子表格](/help/edge/aem-authoring/tabular-data.md)
-      + [现有项目和 Edge Delivery](/help/edge/aem-authoring/existing-projects.md)
+   + 所见即所得创作 {#wysiwyg-authoring}
+      + [针对 Edge Delivery 创作内容](/help/edge/wysiwyg-authoring/authoring.md)
+      + [针对 Edge Delivery 发布内容](/help/edge/wysiwyg-authoring/publishing.md)
+      + [开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+      + [创建区块](/help/edge/wysiwyg-authoring/create-block.md)
+      + [内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)
+      + [表格数据和电子表格](/help/edge/wysiwyg-authoring/tabular-data.md)
+      + [现有项目和 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
    + 基于文档的创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
       + [批量元数据](/help/edge/docs/bulk-metadata.md)

@@ -4,10 +4,10 @@ description: 了解如何将 AEM as a Cloud Service 与 Edge Delivery Services �
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -30,24 +30,24 @@ Adobe 的指导原则是简洁。首先基于文档进行创作，当需要时�
 
 ## 创作 {#authoring-edge}
 
-Edge Delivery Services 让创作变得简单、快速且灵活。您可以选择使用基于文档的创作进行创作，也可以选择使用 Universal Editor 进行基于 AEM 的创作。
+Edge Delivery Services 让创作变得简单、快速且灵活。您可以选择使用基于文档的创作或WYSIWYG创作并使用通用编辑器进行创作。
 
-有关更多信息，请参阅文档[为 Edge Delivery Services 创作内容](/help/edge/aem-authoring/authoring.md)。
+有关更多信息，请参阅文档[为 Edge Delivery Services 创作内容](/help/edge/wysiwyg-authoring/authoring.md)。
 
 ## 发布 {#publishing-edge}
 
 利用 Edge Delivery Services，无论内容源如何，都可以无缝发布内容。
 
-有关更多信息，请参阅文档[为 Edge Delivery Services 发布内容](/help/edge/aem-authoring/publishing.md)。
+有关更多信息，请参阅文档[为 Edge Delivery Services 发布内容](/help/edge/wysiwyg-authoring/publishing.md)。
 
 ## 开发 {#developing-edge}
 
 Edge Delivery Services 基于块的概念。AEM 附带一个全面的预定义的块库，可扩展它以满足您的项目需求。在 GitHub 中管理 Edge Delivery Services 项目的代码。
 
-请参阅文档[使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/aem-authoring/edge-dev-getting-started.md)，了解更多信息。
+请参阅文档 [用于Edge Delivery Services的WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 以了解更多信息。
 
 ## 现有 AEM 项目 {#existing-projects}
 
 您无需等待创建新 AEM 项目即可从 Edge Delivery Services 受益。可将 Edge Delivery Services 集成到您现有的 AEM 项目中，以使您可立即利用其性能提升。
 
-有关更多信息，请参阅文档[在现有 AEM 项目中使用 Edge Delivery Services](/help/edge/aem-authoring/existing-projects.md)。
+有关更多信息，请参阅文档[在现有 AEM 项目中使用 Edge Delivery Services](/help/edge/wysiwyg-authoring/existing-projects.md)。
