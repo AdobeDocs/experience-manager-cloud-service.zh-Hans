@@ -3,9 +3,9 @@ title: 为Adobe Experience Manager as a Cloud Service配置OSGi
 description: 具有机密值和特定于环境的值的OSGi配置
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
+source-git-commit: b4c87b79c714c408daea08e81fbe719bc9f5adf0
 workflow-type: tm+mt
-source-wordcount: '3269'
+source-wordcount: '3302'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ OSGi提供了标准化的基元，允许从小型、可重用的协作组件构�
 
 ## OSGi配置文件 {#osgi-configuration-files}
 
-配置更改在AEM项目的代码包中定义(`ui.apps`)作为配置文件(`.cfg.json`)，位于runmode特定配置文件夹下：
+配置更改在AEM项目的代码包中定义(`ui.config`)作为配置文件(`.cfg.json`)，位于runmode特定配置文件夹下：
 
 `/apps/example/config.<runmode>`
 
@@ -44,6 +44,10 @@ OSGi配置通过组件的永久标识(PID)来定位OSGi组件，该PID默认为O
 >[!NOTE]
 >
 >AEM早期版本支持的OSGi配置文件使用不同的文件格式，例如 `.cfg`， `.config` 和XML `sling:OsgiConfig` 资源定义。 这些格式将被 `.cfg.json` osgi配置格式。
+
+>[!NOTE]
+>
+>OSGi配置并不像云中的典型AEM实例那样存储在/apps下，而是存储在外部位置。 签入Cloud Manager [开发人员控制台](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) 以查看OSGi配置。
 
 ## 运行模式分辨率 {#runmode-resolution}
 
