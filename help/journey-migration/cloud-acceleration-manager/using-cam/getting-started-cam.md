@@ -4,10 +4,10 @@ description: 本页概述了Cloud Acceleration Manager的使用和入门方法�
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d840e0beb8036ed8e543ac85850290e778371bbe
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,6 +96,10 @@ Cloud Acceleration Manager (CAM)的登陆页面允许您创建和编辑多个项
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. 单击 **删除** 以确认步骤。
+
+   >[!NOTE]
+   >项目将在1年迁移非活动状态后自动过期并删除。 通过编辑项目名称或描述、上传BPA报告、创建或编辑迁移集、运行提取或运行引入，项目将保持活动状态。
+
 
 ## 后续内容 {#whats-next}
 
