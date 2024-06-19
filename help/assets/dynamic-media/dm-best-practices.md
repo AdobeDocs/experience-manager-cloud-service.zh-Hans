@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
+source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -142,7 +143,6 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
   这样做有助于搜索引擎了解图像上下文并改进SEO。 Google在文件名中首选使用连字符，而不是下划线或空格。 此外，请避免在文件名中连接单词。
 * **自定义域：**
 实施包含您的公司或品牌名称的自定义域，以增强品牌认知度和信任。 例如，
-
    * 使用 `http://images.mycompany.com/is/image/companyname/`
    * *避免* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **SEO友好的文件夹结构：**
@@ -351,4 +351,3 @@ Adobe建议您使用智能成像的功能，而不是手动将图像格式设置
 通过依赖智能成像，您可以确保以尽可能高效的方式提供图像，并根据每个用户的浏览环境量身定制。 此方法简化了流程，并且可以在图像加载时间和整体用户体验方面提高性能。
 
 想要了解更多信息？ 转到 [智能成像](/help/assets/dynamic-media/imaging-faq.md).
-
