@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service上的Maven项目需要�
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -164,7 +164,7 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 + 代码包A部署到 `/apps/a`
 + 代码包B部署到中 `/apps/a/b`
 
-如果尚未从代码包B在代码包A上建立包级别依赖关系，则代码包B可以首先部署到 `/apps/a`. 随后将发布代码包B，代码包将部署到 `/apps/a`. 结果是删除之前安装的 `/apps/a/b`.
+如果尚未从代码包B在代码包A上建立包级别依赖关系，则代码包B可以首先部署到 `/apps/a`. 如果随后是代码包A ，它将部署到 `/apps/a`，因此删除了之前安装的 `/apps/a/b`.
 
 在本例中：
 

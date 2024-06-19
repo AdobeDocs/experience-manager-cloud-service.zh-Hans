@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '871'
 ht-degree: 1%
 
 ---
@@ -33,15 +33,13 @@ ht-degree: 1%
 
 要访问AEMas a Cloud Service开发人员控制台或存储库浏览器，必须满足以下条件
 
-要访问AEMas a Cloud Service开发人员控制台，请执行以下操作：
+要访问AEMas a Cloud Service开发人员控制台，请参阅 [开发人员控制台访问](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* 对于生产程序，用户必须具有 **Cloud Manager — 开发人员角色** 在Adobe Admin Console中
-* 对于沙盒程序，它可供任何拥有将AEMas a Cloud Service访问权限的产品配置文件的用户使用。
+要访问存储库浏览器，必须满足与AEMas a Cloud Service开发人员控制台（以上指定）相同的条件。 要查看特定实例的存储库浏览器内容，请执行以下操作：
 
-要访问存储库浏览器，请执行以下操作：
+* 创作实例：具有AEM用户产品配置文件的用户 **创作实例** 能够以最低的读取权限查看存储库浏览器；在浏览存储库时，用户的权限会受到考虑。 具有AEM管理员产品配置文件的用户可以使用完全读取权限查看存储库浏览器。
 
-* 用户必须具有 **Cloud Manager — 开发人员** 在AEMas a Cloud Service开发人员控制台中用于查看创作实例和发布实例的角色。
-* 此外，对于作者，具有AEM用户产品配置文件的用户能够以最低的读取权限查看存储库浏览器；浏览存储库时，用户的权限会得到考虑。 具有AEM管理员产品配置文件的用户可以使用完全读取权限查看存储库浏览器。
+* 发布实例：具有AEM用户产品配置文件的用户 **发布实例** 能够以最低的读取权限查看存储库浏览器。 如果没有该产品配置文件集，用户将以匿名用户身份导航，并且由于权限限制，某些路径将不会显示。
 
 有关设置用户权限的更多信息，请参阅 [Cloud Manager文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
