@@ -8,16 +8,17 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# AEM Content &amp; Commerce创作选取器 {#cif-pickers}
+# AEM Content和Commerce创作选取器 {#cif-pickers}
 
-AEM Content &amp; Commerce Authoring提供了一组创作工具，以帮助AEM作者和营销人员有效地使用商业产品数据和目录。 产品选取器和类别选取器是CIF加载项的一部分，由CIF核心组件使用。 项目可以在任何组件对话框中使用这些选取器来选择产品或类别。
+AEM Content &amp; Commerce Authoring提供了一组创作工具，可帮助AEM作者和营销人员高效地使用商业产品数据和目录。 产品选取器和类别选取器是CIF加载项的一部分，由CIF核心组件使用。 项目可以在任何组件对话框中使用这些选取器来选择产品或类别。
 
 ## 产品选取器 {#product-picker}
 

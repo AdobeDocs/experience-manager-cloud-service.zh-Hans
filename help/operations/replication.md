@@ -2,7 +2,9 @@
 title: 复制
 description: 了解AEMas a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 38%

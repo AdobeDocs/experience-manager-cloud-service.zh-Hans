@@ -2,9 +2,11 @@
 title: 构建产品体验
 description: 了解如何构建随后可在各种渠道中使用的产品内容，以创建沉浸式购物体验。
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 2%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在Adobe Experience Manager (AEM) Content and Commerce历程的上一个文档中， [管理分阶段的产品目录体验](staged-catalog.md)您已了解如何管理分阶段的产品目录体验。
+在Adobe Experience Manager (AEM)内容和Commerce历程的上一个文档中， [管理分阶段的产品目录体验](staged-catalog.md)您已了解如何管理分阶段的产品目录体验。
 
 ## 目标 {#objective}
 
@@ -65,7 +67,7 @@ ht-degree: 2%
 
 在前面的模块中，您已了解如何使用多个产品目录模板。 多个模板是创建不同模板的好方法，但通常不是必需的。 通常，可以将同一模板用于各个内容的占位符。 CIF支持内容片段和体验片段的占位符。
 
-让我们从体验片段占位符开始。 在AEM编辑器中打开产品模板。 拖放 **Commerce体验片段** 组件，然后打开配置对话框。
+让我们从体验片段占位符开始。 在AEM编辑器中打开产品模板。 拖放 **Commerce Experience Fragment** 组件，然后打开配置对话框。
 
 ![pem占位符](assets/pem-placeholder.png)
 
@@ -97,19 +99,19 @@ ht-degree: 2%
 
 ![pem产品页面](assets/pem-page-product.png)
 
-如果您已经为该产品创建了关联内容，请在资产侧边栏中切换到 **关联的商务内容**. 此选项卡显示与此产品关联的所有AEM内容。 现在，您可以使用任何关联内容快速修饰页面。
+如果您已经为该产品创建了关联内容，请在资产侧边栏中切换到 **关联的Commerce内容**. 此选项卡显示与此产品关联的所有AEM内容。 现在，您可以使用任何关联内容快速修饰页面。
 
 ![pem扩充页面](assets/pem-page-enriched.png)
 
 ## 历程结束？ {#end-of-journey}
 
-恭喜！您已完成AEM Content and Commerce开发人员历程！ 您现在应：
+恭喜！您已完成AEM Content和Commerce开发人员历程！ 您现在应：
 
 * 了解如何将任何AEM内容关联到产品目录对象
 * 使用占位符单独扩充产品和类别页面
 * 了解如何使内容可供购买并使用关联的内容选项卡
 
-您现在可以使用AEM Content and Commerce管理产品体验。 但是，AEM Content and Commerce提供了许多其他选项。 查看中的一些其他资源 [其他资源部分](#additional-resources) 在这里，您可以了解有关在此历程中看到的功能的更多信息。
+您现在可以使用AEM Content和Commerce管理产品体验。 但是，AEM Content和Commerce提供了许多其他选项。 查看中的一些其他资源 [其他资源部分](#additional-resources) 在这里，您可以了解有关在此历程中看到的功能的更多信息。
 
 ## 其他资源 {#additional-resources}
 

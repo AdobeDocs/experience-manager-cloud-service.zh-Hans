@@ -3,7 +3,9 @@ title: Adobe Experience Manager as a Cloud Service 的操作和维护
 description: 了解 Experience Manager as a Cloud Service 的后端操作（例如索引和维护任务），并获取您的查询的答案。
 landing-page-description: 了解 Experience Manager as a Cloud Service 的后端操作（例如索引和维护任务），并获取您的查询的答案。
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%

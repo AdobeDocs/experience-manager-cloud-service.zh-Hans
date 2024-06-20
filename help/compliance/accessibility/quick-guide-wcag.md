@@ -2,10 +2,12 @@
 title: WCAG 2.1 快速指南
 description: Web 内容可访问性指南 (WCAG) 2.1 版快速指南。
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 99%
+source-wordcount: '1739'
+ht-degree: 98%
 
 ---
 

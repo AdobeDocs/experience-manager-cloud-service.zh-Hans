@@ -8,7 +8,8 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 1%
@@ -21,7 +22,7 @@ ht-degree: 1%
 
 ## 入门培训 {#onboarding}
 
-AEM Commerceas a Cloud Service的入门培训分为两步：
+AEM Commerceas a Cloud Service新用户引导分为两步：
 
 1. 启用AEM Commerceas a Cloud Service并配置CIF加载项
 2. 将AEM Commerceas a Cloud Service与您的Commerce解决方案连接
@@ -51,13 +52,13 @@ AEM Commerceas a Cloud Service的入门培训分为两步：
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-可以使用“环境详细信息”页面上的对话框完成此配置。 查看启用了Commerce的程序的此页面时，如果当前未配置端点，则会显示一个按钮：
+可以使用“环境详细信息”页面上的对话框完成此配置。 在查看启用了Commerce的程序的此页时，如果当前未配置端点，则会显示一个按钮：
 
 ![CM环境信息](/help/commerce-cloud/assets/commerce-cmui.png)
 
 单击此按钮将打开一个对话框：
 
-![CM商务端点](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+![CM Commerce端点](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
 设置暂存目录支持的端点和（可选）授权标头后，该端点会显示在详细信息页面上。 单击“编辑”图标可打开同一个对话框，如有必要，可在其中编辑端点。
 

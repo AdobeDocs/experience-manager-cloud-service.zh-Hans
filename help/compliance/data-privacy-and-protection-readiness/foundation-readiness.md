@@ -2,9 +2,11 @@
 title: 数据保护和数据隐私条例 - Adobe Experience Manager as a Cloud Service Foundation 准备工作
 description: 了解 Adobe Experience Manager as a Cloud Service 对各种数据保护和数据隐私条例的基础支持。本文包括欧盟通用数据保护条例 (EU General Data Protection Regulation, GDPR)、加州消费者隐私法案 (California Consumer Privacy Act)，以及实施新的 AEM as a Cloud Service 项目时如何保持合规。
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: ht
-source-wordcount: '503'
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
+source-wordcount: '501'
 ht-degree: 100%
 
 ---

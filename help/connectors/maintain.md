@@ -2,8 +2,10 @@
 title: 维护 AEM 连接器
 description: 了解如何在初次提交后维护和更新 AEM 连接器。
 exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
-source-git-commit: 5482e94bc1a2e7524eb699f2ae766ba40c138e91
-workflow-type: ht
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
 

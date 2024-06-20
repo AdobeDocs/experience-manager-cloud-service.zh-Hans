@@ -2,7 +2,9 @@
 title: 为 Screens as a Cloud Service 开发自定义组件
 description: 以下教程将介绍为AEM Screens创建自定义组件的步骤。 AEM Screens可重复使用其他AEM产品的许多现有设计模式和技术。 本教程重点介绍了为AEM Screens开发时的差异和特殊注意事项。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%

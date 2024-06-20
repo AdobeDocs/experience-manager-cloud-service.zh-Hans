@@ -2,10 +2,12 @@
 title: 将播放器分配给Screensas a Cloud Service中的显示
 description: 了解如何在Screensas a Cloud Service中将播放器分配给显示。
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 

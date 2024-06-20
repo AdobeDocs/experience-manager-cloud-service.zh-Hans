@@ -2,9 +2,11 @@
 title: Screens as a Cloud Service 常见问题
 description: 此页面介绍了 Screens as a Cloud Service 常见问题。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '454'
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
+source-wordcount: '450'
 ht-degree: 100%
 
 ---

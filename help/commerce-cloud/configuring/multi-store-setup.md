@@ -10,7 +10,8 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -25,7 +26,7 @@ Adobe Experience Manager (AEM) CIF核心组件可用于多个AEM站点结构，�
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Live Copy和Language Copy的AEM多站点管理功能与Commerce Integration Framework一起使用，以全局方式跨区域和区域管理站点。
+Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration framework配合使用，以全局方式跨地区和区域管理站点。
 
 建议的设置是在AEM网站与Adobe Commerce商店视图之间使用1:1关系。
 
@@ -47,7 +48,7 @@ Live Copy和Language Copy的AEM多站点管理功能与Commerce Integration Fram
 
    >[!TIP]
    >
-   > 商业目录可以使用ID或UID来寻址。 Adobe Commerce 2.4.2中引入了UID。仅当您的Commerce后端支持版本2.4.2或更高版本的GraphQL架构时，才启用此功能。
+   > Commerce目录可以通过使用ID或UID来寻址。 Adobe Commerce 2.4.2中引入了UID。仅当您的Commerce后端支持版本2.4.2或更高版本的GraphQL架构时，才启用此功能。
 
 4. 将子配置分配给AEM站点
 

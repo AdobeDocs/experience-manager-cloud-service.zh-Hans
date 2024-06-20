@@ -1,17 +1,18 @@
 ---
-title: 将reCAPTCHA与AEM Formsas a Cloud Service的Edge Delivery Services结合使用
+title: 将 reCAPTCHA 与 AEM Forms as a Cloud Service 的 Edge Delivery Services 结合使用
 description: 在 EDS Form 中使用 Google reCAPTCHA
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# 将reCAPTCHA与AEM Formsas a Cloud Service的Edge Delivery Services结合使用
+# 将 reCAPTCHA 与 AEM Forms as a Cloud Service 的 Edge Delivery Services 结合使用
 
 reCAPTCHA 是一种流行的工具，用于保护网站免受欺诈活动、垃圾邮件和滥用。在 Edge Delivery Services 中，自适应表单块提供了添加 Google reCAPTCHA 的功能，以区分人类和机器人。此功能允许用户保护他们的网站免受垃圾邮件和滥用。
 例如，考虑一个收集旅行开始和结束日期、房间预算、预计旅行费用和旅行者信息等数据的查询表。在这种情况下，存在恶意用户利用该表单发送网络钓鱼电子邮件或使用垃圾邮件机器人向其中发送不相关或有害内容的风险。集成 reCAPTCHA 可验证提交内容是否来自真实用户，从而提供额外的安全性，有效减少垃圾邮件条目。

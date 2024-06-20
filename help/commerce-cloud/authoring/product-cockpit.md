@@ -2,9 +2,11 @@
 title: 产品 Cockpit
 description: 了解如何使用产品驾驶舱，它提供了链接产品目录和相关内容的统一概述。
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -33,7 +35,7 @@ ht-degree: 1%
 
 ## 打开产品驾驶舱 {#opening-product-cockpit}
 
-访问产品驾驶舱的最简单方法是通过AEM主菜单中的“商务”菜单。 也可以使用Omnisearch（搜索商业）或opening `https://<yourAEMInstance>/commerce.html`.
+访问产品驾驶舱的最简单方法是通过AEM主菜单中的“Commerce”菜单。 也可以使用Omnisearch(搜索Commerce)或 `https://<yourAEMInstance>/commerce.html`.
 
 ![AEM菜单](../assets/aem-menu.png)
 
@@ -71,7 +73,7 @@ ht-degree: 1%
 
 单击产品或类别的属性图标可打开选定对象的属性视图。 产品变体的打开属性等于打开主产品属性。
 
-### 商业选项卡 {#tabs}
+### Commerce选项卡 {#tabs}
 
 常规和变量选项卡显示来自商业后端的预定义商业属性。 此数据(包括 变体)是AEM中的只读数据，因为记录系统是商务后端。 变体选项卡仅显示具有变体的产品，并显示所有变体的列表。
 

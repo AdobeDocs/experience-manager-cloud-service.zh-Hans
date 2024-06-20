@@ -2,7 +2,9 @@
 title: 自定义 HTTP 标头
 description: 了解如何配置将发送到商业引擎的自定义HTTP标头，以及CIF已发送的标头。
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 3%

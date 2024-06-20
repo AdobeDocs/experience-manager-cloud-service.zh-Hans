@@ -10,10 +10,11 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2172'
-ht-degree: 3%
+source-wordcount: '2059'
+ht-degree: 2%
 
 ---
 
@@ -21,19 +22,19 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，必须在Adobe Experience Manager (AEM)as a Cloud Service的许多项目中解决SEO问题。 参见 [seo和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html) 以获取其他信息。
+> 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，必须在Adobe Experience Manager (AEM)as a Cloud Service的许多项目中解决SEO问题。 请参阅 [SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html) 以了解其他信息。
 
-[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components) 提供高级配置以自定义产品和类别页面的URL。 许多实施都自定义这些URL以实现搜索引擎优化(SEO)。 以下视频详细介绍如何配置 `UrlProvider` 的服务和功能 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 自定义产品和类别页面的URL。
+[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components) 提供高级配置以自定义产品和类别页面的URL。 许多实施都会自定义这些URL，以实现搜索引擎优化(SEO)。 以下视频详细介绍如何配置 `UrlProvider` 的服务和功能 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 自定义产品和类别页面的URL。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## 配置 {#configuration}
 
-要配置 `UrlProvider` 服务根据SEO要求和需求，项目必须提供 _CIF URL提供程序配置_.
+配置 `UrlProvider` 服务根据SEO要求和需求，项目必须提供 _CIF URL提供程序配置_.
 
 >[!NOTE]
 >
-> 自AEM CIF核心组件2.0.0版以来，“URL提供程序”配置仅提供预定义的URL格式，而不提供1.x版中已知的自由文本可配置格式。 此外，使用选择器在URL中传递数据的方法已替换为后缀。
+> 自AEM CIF核心组件版本2.0.0开始，URL提供程序配置仅提供预定义的URL格式，而不提供1.x版本中已知的自由文本可配置格式。 此外，使用选择器在URL中传递数据的方法已替换为后缀。
 
 ### 产品页面URL格式 {#product}
 
@@ -50,12 +51,12 @@ ht-degree: 3%
 如果有 [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)：
 
 * `{{page}}` 替换为 `/content/venia/us/en/products/product-page`
-* `{{sku}}` 替换为产品的SKU，例如， `VP09`
+* `{{sku}}` 由产品的SKU替换，例如， `VP09`
 * `{{url_key}}` 由产品的 `url_key` 属性，例如， `lenora-crochet-shorts`
 * `{{url_path}}` 由产品的 `url_path`例如， `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` 被当前选定的变体替换，例如， `VP09-KH-S`
 
-由于 `url_path` 已弃用，预定义的产品URL格式使用产品的 `url_rewrites` 并选取路径段数最多的路径作为替代路径，如果 `url_path` 不可用。
+由于 `url_path` 已弃用，预定义的产品URL格式使用产品的 `url_rewrites` 并选取具有最多路径区段的路径作为替代路径，如果 `url_path` 不可用。
 
 对于上述示例数据，使用默认URL格式的产品变体URL如下所示 `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
@@ -69,52 +70,52 @@ ht-degree: 3%
 如果有 [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)：
 
 * `{{page}}` 替换为 `/content/venia/us/en/products/category-page`
-* `{{url_key}}` 替换为类别的 `url_key` 属性
-* `{{url_path}}` 替换为类别的 `url_path`
+* `{{url_key}}` 由类别的 `url_key` 属性
+* `{{url_path}}` 由类别的 `url_path`
 
 对于上述示例数据，使用默认URL格式设置的类别页面URL如下所示 `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
 >[!NOTE]
 > 
-> 此 `url_path` 是以下项的连接： `url_keys` 产品或类别的祖先以及产品或类别的 `url_key` 分隔方式 `/` slash。 每个 `url_key` 在给定存储中被视为唯一。
+> 此 `url_path` 是以下各项的串联： `url_keys` 产品或类别的祖先以及产品或类别的 `url_key` 分隔方式 `/` slash。 每个 `url_key` 在给定存储中被视为唯一。
 
 ### 特定于存储的配置 {#store-specific-urlformats}
 
 由设置的系统范围类别和产品页面URL格式 _CIF URL提供程序配置_ 可以针对每个商店进行更改。
 
-在CIF配置中，编辑者可以选择替代产品或类别页面URL格式。 如果未在该处选择任何内容，则实施将回退到系统范围配置。
+在CIF配置中，编辑器可以选择替代产品或类别页面URL格式。 如果未在该处选择任何内容，则实施将回退到系统范围配置。
 
-更改实时网站的URL格式可能会对网站的自然流量产生负面影响。 参见 [最佳实践](#best-practices) ，并提前仔细规划URL格式的更改。
+更改实时网站的URL格式可能会对网站的自然流量产生负面影响。 请参阅 [最佳实践](#best-practices) ，并提前仔细规划对URL格式的更改。
 
-![CIF配置中的URL格式](assets/store-specific-url-formats.png)
+![CIF配置中的Url格式](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
-> 特定于存储的URL格式配置需要 [CIF核心组件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 以及最新版本的Adobe Experience Manager Content and Commerce加载项。
+> 特定于存储的URL格式配置需要 [CIF核心组件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 以及最新版本的Adobe Experience Manager Content和Commerce加载项。
 
 ## 类别感知产品页面URL {#context-aware-pdps}
 
-由于可以对产品URL中的类别信息进行编码，因此也可以使用多个产品URL来寻址多个类别中的产品。
+由于可以在产品URL中编码类别信息，因此也可以使用多个产品URL寻址多个类别中的产品。
 
-默认URL格式使用以下方案选择一种可能的替代方案：
+默认URL格式使用以下方案选择可能的替代方案之一：
 
 * 如果 `url_path` 由电子商务后端使用它来定义（已弃用）
 * 从 `url_rewrites` 使用以产品的 `url_key` 作为替代项
 * ，则这些替代项会使用具有最多路径区段的替代项
-* 如果存在多个，则按照电子商务后端给定的顺序获取第一个
+* 如果存在多个，则按照电子商务后端提供的顺序进行排列
 
-此方案选择 `url_path` 具有最多祖先，基于子类别比其父类别更具体的假设。 选定的 `url_path` 已考虑 _规范_ 和始终用作产品页面或产品站点地图中的规范链接。
+此方案选择 `url_path` 具有最多祖先，基于子类别比父类别更具体的假设。 选定的 `url_path` 已考虑 _规范_ 和始终用作产品页面或产品站点地图中的规范链接。
 
-但是，当购物者从类别页面导航到产品页面，或从某个产品页面导航到同一类别中的另一个相关产品页面时，有必要保留当前类别上下文。 在本例中， `url_path` 选择应优先选择当前类别上下文中的替代项，而不是 _规范_ 选项（如上所述）。
+但是，当购物者从类别页面导航到产品页面，或从某个产品页面导航到同一类别中的另一个相关产品页面时，有必要保留当前的类别上下文。 在本例中， `url_path` 选择应优先选择当前类别上下文中的替代项，而不是 _规范_ 选项，如上所述。
 
-必须在以下位置启用此功能： _CIF URL提供程序配置_. 如果启用，则选择得分比其它得分高，但前提是
+必须在 _CIF URL提供程序配置_. 如果启用，则选择得分比选项高，当
 
 * 它们匹配给定类别的 `url_path` 从开头（模糊前缀匹配）
-* 或者它们与给定类别的 `url_key` 任意位置（精确部分匹配）
+* 或者它们与给定类别的 `url_key` anywhere（精确部分匹配）
 
-例如，考虑对的响应 [产品查询](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 下面的。 假定：
+例如，考虑对的响应 [产品查询](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 下。 基于以下条件：
 
-* 用户在“2022年夏季新增产品”类别页面上
+* 用户位于“2022年夏季新产品/新增”类别页面
 * 商店使用默认类别页面URL格式
 
 替代“new-products/new-in-summer-2022/gold-cirque-earrings.html”从头开始匹配上下文的两个路径区段。 即“new-products”和“new-in-summer-2022”。 如果商店使用的类别页面URL格式仅包含类别，则 `url_key`，仍会选择相同的替代项，因为它与上下文的 `url_key` 任何地方。 在这两种情况下，都会为“new-products/new-in-summer-2022/gold-cirque-earrings.html”创建产品页面URL `url_path`.
@@ -157,13 +158,13 @@ ht-degree: 3%
 
 ## 特定类别和产品页面 {#specific-pages}
 
-可以创建 [多类别和产品页面](../authoring/multi-template-usage.md) 仅用于特定类别子集或目录产品。
+可以创建 [多类别和产品页面](../authoring/multi-template-usage.md) 仅用于目录的特定类别或产品子集。
 
 ### 选择标准 {#specific-pages-selection}
 
-根据类别的 `url_path` 或 `url_key`. 仅包含完整类别的URL格式支持匹配子类别 `url_path`. 否则，只有完全匹配的 `url_key` 是可能的。
+特定类别页面的选择基于类别的 `url_path` 或 `url_key`. 仅包含完整类别的URL格式支持匹配子类别 `url_path`. 否则，仅将 `url_key` 是可能的。
 
-特定产品页面按产品的SKU或类别进行选择。 后者要求在产品URL中对某些类别信息进行编码。 此功能仅适用于某些默认URL格式。 请参阅下表，比较哪种URL格式支持按SKU或类别选择特定的页面。
+特定产品页面由产品的SKU或类别选择。 后者要求在产品URL中对某些类别信息进行编码。 此功能仅适用于某些默认URL格式。 有关支持按SKU或类别进行特定页面选择的URL格式的比较，请参阅下表。
 
 
 | URL格式 | 按SKU | 按类别 |
@@ -180,21 +181,21 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 需要按类别选择特定产品页面 [CIF核心组件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 或更新版本。
+> 要按类别选择特定产品页面，需要 [CIF核心组件2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 或更新版本。
 
 ### 深度链接 {#specific-pages-deep-linking}
 
-此 `UrlProvider` 已预配置为在创作层实例上生成指向特定类别和产品页面的深层链接。 此功能对编辑者非常有用，编辑者可以使用“预览”模式浏览网站，导航到特定产品或类别页面，然后切换回“编辑”模式以编辑页面。
+此 `UrlProvider` 已预配置为在创作层实例上生成指向特定类别和产品页面的深层链接。 对于编辑者而言，这项功能非常有用。编辑者使用预览模式浏览站点，导航到特定产品或类别页面，然后切换回编辑模式以编辑页面。
 
-另一方面，在发布层实例上，目录页面URL应保持稳定，以免失去搜索引擎排名等优势。 由于该发布层，默认情况下，实例不会呈现指向特定目录页面的深层链接。 要更改此行为，请 _特定于CIF URL提供程序的页面策略_ 可以配置为始终生成特定的页面URL。
+另一方面，在发布层实例中，目录页面URL应保持稳定，以免在搜索引擎排名方面失去优势。 由于该发布层，默认情况下，实例不会呈现指向特定目录页面的深层链接。 要更改此行为，请 _CIF URL提供程序特定的页面策略_ 可以配置为始终生成特定的页面URL。
 
 ### 多个目录页面 {#multiple-product-pages}
 
-当编辑器希望完全控制站点的顶级导航时，可能不需要使用单个目录页面呈现目录的顶级类别。 相反，编辑者可以创建多个目录页面，每个目录页面对应一个要包含在顶级导航中的目录类别。
+当编辑器希望完全控制网站的顶级导航时，可能不需要使用单个目录页面呈现目录的顶级类别。 相反，编辑者可以创建多个目录页面，每个目录页面对应一个要包含在顶级导航中的目录类别。
 
-对于该用例，每个目录页面都可以具有对特定于为目录页面配置的类别的产品和类别页面的引用。 此 `UrlProvider` 使用这些连接为配置的类别中的页面和类别创建链接。 但是，出于性能原因，只考虑站点导航根/登陆页面的直接目录页面子项。
+对于该使用案例，每个目录页面都可以具有对特定于该目录页面所配置类别的产品和类别页面的引用。 此 `UrlProvider` 使用这些连接为配置的类别中的页面和类别创建链接。 但是，出于性能原因，只考虑站点导航根/登陆页面的直接目录页面子项。
 
-建议目录页面的产品和类别页面成为该目录页面的子项，否则导航或痕迹导航等组件可能无法正常工作。
+建议目录页面的产品和类别页面是该目录页面的子项，否则导航或痕迹导航等组件可能无法正常工作。
 
 >[!NOTE]
 >
@@ -206,51 +207,51 @@ ht-degree: 3%
 
 要提供自定义URL格式，项目可以实施 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) 或 [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) 服务接口，并将实现注册为OSGI服务。 这些实施（如果可用）会替换已配置的预定义格式。 如果注册了多个实施，则服务排名较高的实施将替换服务排名较低的实施。
 
-自定义URL格式实施必须实施一对方法，以便从给定参数构建URL，并解析URL以分别返回相同的参数。
+自定义URL格式实施必须实施一对方法，以便根据给定参数构建URL，并解析URL以分别返回相同的参数。
 
 ### 与Sling映射组合 {#sling-mapping}
 
-除了 `UrlProvider`，也可以配置 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 重写和处理URL。 AEM原型项目还提供 [示例配置](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 为端口4503（发布）和80（调度程序）配置一些Sling映射。
+除了 `UrlProvider`，也可以配置 [Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) 以重写并处理URL。 AEM Archetype项目还提供 [示例配置](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) 为端口4503（发布）和80（调度程序）配置一些Sling映射。
 
-### 与AEM调度程序相结合 {#dispatcher}
+### 与AEM调度程序结合 {#dispatcher}
 
-通过将AEM Dispatcher HTTP服务器与结合使用，还可以实现URL重写 `mod_rewrite` 模块。 此 [AEM项目原型](https://github.com/adobe/aem-project-archetype) 提供了参考AEM Dispatcher配置，其中已包含基本 [重写规则](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) 生成的大小。
+通过将AEM Dispatcher HTTP服务器与 `mod_rewrite` 模块。 此 [AEM项目原型](https://github.com/adobe/aem-project-archetype) 提供了参考AEM Dispatcher配置，该配置已包含基本 [重写规则](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) 用于生成的大小。
 
 ## 最佳实践 {#best-practices}
 
 ### 选择最佳的URL格式 {#choose-url-format}
 
-如在选择一种可用的默认格式，甚至实施自定义格式之前所述，这在很大程度上取决于存储的需求和要求。 以下建议可能有助于做出有根据的决定。
+如在选择一种可用的默认格式，甚至实施自定义格式之前所述，这在很大程度上取决于存储的需求和要求。 以下建议可能有助于做出有教育意义的决定。
 
 _**使用包含SKU的产品页面URL格式。**_
 
-CIF核心组件使用SKU作为所有组件的主要标识符。 如果产品页面URL格式不包含SKU，则需要使用GraphQL查询来解析它。 此解决方案可能会影响第一字节的时间。 此外，可能希望购物者可以使用搜索引擎按SKU查找产品。
+CIF核心组件使用SKU作为所有组件中的主要标识符。 如果产品页面URL格式不包含SKU，则需要使用GraphQL查询来对其进行解析。 此解决方案可能会影响第一字节的时间。 此外，可能希望购物者能够使用搜索引擎通过SKU找到产品。
 
 _**使用包含类别上下文的产品页面URL格式。**_
 
-CIF URL提供程序的某些功能仅在使用产品URL格式时可用，这些格式对类别上下文（如类别）进行编码 `url_key` 或类别 `url_path`. 即使新存储可能不需要这些功能，在开始时使用这些URL格式之一有助于减少未来的迁移工作。
+只有在使用产品URL格式（对类别上下文进行编码，如类别）时，CIF URL提供程序的某些功能才可用 `url_key` 或类别 `url_path`. 即使新存储可能不需要这些功能，一开始使用这些URL格式之一有助于减少未来的迁移工作。
 
 _**URL长度和编码信息之间的平衡。**_
 
-根据目录大小，特别是类别树的大小和深度，对完整目录进行编码可能不太合理 `url_path` 类别到URL中。 在这种情况下，可以通过仅包含类别的 `url_key` 而是。 此方法支持使用类别时可用的大多数功能 `url_path`.
+根据目录大小，特别是类别树的大小和深度，对全部目录进行编码可能不太合理 `url_path` 类别到URL中。 在这种情况下，可以通过仅包含类别的 `url_key` 而是。 此方法支持使用类别时可用的大多数功能 `url_path`.
 
-此外，使用 [Sling映射](#sling-mapping) 将SKU与产品相结合 `url_key`. 在大多数电子商务系统中，SKU遵循特定的格式，并将SKU与 `url_key` 对于传入请求，应该可以轻松实现。 考虑到这一点，应该可以将产品页面URL重写为 `/p/{{category}}/{{sku}}-{{url_key}}.html`，类别URL为 `/c/{{url_key}}.html` 的量度。 此 `/p` 和 `/c` 要将产品和类别页面与其他内容页面区分开来，仍然需要前缀。
+此外，使用 [Sling映射](#sling-mapping) 将SKU与产品相结合 `url_key`. 在大多数电子商务系统中，SKU遵循特定的格式，并将SKU与 `url_key` 对于传入的请求，应该很容易实现。 有鉴于此，应该可以将产品页面URL重写到 `/p/{{category}}/{{sku}}-{{url_key}}.html`，类别URL `/c/{{url_key}}.html` 的量度。 此 `/p` 和 `/c` 要将产品和类别页面与其他内容页面区分开来，仍然需要使用前缀。
 
 ### 迁移到新URL格式 {#migrate-url-formats}
 
-许多默认URL格式以某种方式相互兼容，这意味着由一种格式设置的URL可能会被另一种格式解析。 这有助于在URL格式之间迁移。
+许多默认URL格式以某种方式相互兼容，这意味着由一种格式的URL可以由另一种格式解析。 这有助于在URL格式之间迁移。
 
-另一方面，搜索引擎需要时间来重新爬网具有新URL格式的所有目录页面。 为了支持此过程并改善最终用户体验，建议提供可将用户从旧URL转发到新URL的重定向。
+另一方面，搜索引擎需要时间来使用新的URL格式重新爬网所有目录页面。 为了支持此过程并改善最终用户体验，建议提供可将用户从旧URL转发到新URL的重定向。
 
-其中一种方法是将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 然后，获取 [CIF产品Sitemap生成器生成的产品Sitemap](../../overview/seo-and-url-management.md) 用于暂存和生产环境，并使用它们创建 [Apache httpd重写映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). 然后，可以将此重写映射与新URL格式的推出一起部署到Dispatcher。
+其中一种方法是将暂存环境连接到生产电子商务后端，并将其配置为使用新的URL格式。 然后，获取 [CIF产品Sitemap生成器生成的产品Sitemap](../../overview/seo-and-url-management.md) 用于暂存环境和生产环境，并使用它们创建 [Apache httpd重写映射](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). 然后，可以将此重写映射与新URL格式的推出一起部署到Dispatcher。
 
 ## 示例 {#example}
 
-此 [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia) project包含示例配置，用于演示自定义URL在产品和类别页面中的用法。 此配置允许每个项目根据其SEO需求，为产品和类别页面设置单独的URL模式。 CIF组合 `UrlProvider` 和如上所述的Sling映射一起使用。
+此 [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia) project包含一些示例配置，用于演示如何将自定义URL用于产品和类别页面。 此配置允许每个项目根据其SEO需求为产品和类别页面设置单独的URL模式。 CIF的组合 `UrlProvider` 和如上所述的Sling映射也被使用。
 
 >[!NOTE]
 >
->必须使用该项目使用的外部域调整此配置。 Sling映射基于主机名和域工作。 因此，此配置在默认情况下处于禁用状态，必须在部署之前启用。 为此，请重命名Sling映射 `hostname.adobeaemcloud.com` 文件夹位置 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 根据使用的域名，并通过添加以下内容启用此配置 `resource.resolver.map.location="/etc/map.publish"` 到 `JcrResourceResolver` 项目的配置。
+>此配置必须使用项目使用的外部域进行调整。 Sling映射基于主机名和域工作。 因此，此配置默认处于禁用状态，必须在部署之前启用。 为此，请重命名Sling映射 `hostname.adobeaemcloud.com` 文件夹位置 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 根据使用的域名，并通过添加以下内容启用此配置 `resource.resolver.map.location="/etc/map.publish"` 到 `JcrResourceResolver` 项目的配置。
 
 ## 其他资源 {#additional}
 

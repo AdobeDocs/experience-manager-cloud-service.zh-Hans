@@ -1,13 +1,15 @@
 ---
 title: ’[!DNL Live Search] 产品列表页CIF组件
 description: 使用CIF组件启用 [!DNL Live Search] AEM网站上的产品列表页面组件
-source-git-commit: eaec541c191fc8f68d78662f2b6ab9140460aa9f
+exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Live Search] CIF组件 {#live-search-cif-component}
 
@@ -15,7 +17,7 @@ Adobe Commerce Live Search可提供快速、相关和直观的搜索体验，而
 
 本主题介绍如何使用AEM CIF组件实施 [!DNL Live Search] 将产品列表页面(PLP)构件插入您的AEM网站。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 本主题假设您有一个 [AEM环境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-Hans) 设置完毕。
 

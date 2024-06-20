@@ -2,7 +2,9 @@
 title: 实施 AEM 连接器
 description: 了解连接器、连接器的功能以及如何在 Experience Manager 中实施这些有价值的工具。
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 96%
@@ -15,7 +17,7 @@ ht-degree: 96%
 
 以下提供了构建 [AEM 连接器](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html)的有用参考，应结合有关[提交](submit.md)和[维护](maintain.md)连接器的指导阅读这些参考。
 
-可以通过获取AEM的开发人员许可证 [Adobe交换计划](https://partners.adobe.com/exchangeprogram/experiencecloud).
+可以通过获取AEM的开发人员许可证 [Adobe Exchange计划](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 常见集成模式
 ---------------------------

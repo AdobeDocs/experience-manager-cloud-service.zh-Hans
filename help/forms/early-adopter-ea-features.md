@@ -2,11 +2,14 @@
 title: 当前早期采用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 description: 当前早期采用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
-Role: developer, user
-source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
+Role: developer, user, author
+exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
+feature: Adaptive Forms
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '1731'
-ht-degree: 5%
+ht-degree: 22%
 
 ---
 
@@ -20,7 +23,7 @@ AEM Forms早期采用者计划为您提供了一个独一无二的机会，让�
 
 ## 如何加入率先采用者计划？
 
-如果您有兴趣加入我们的早期采用者计划以进行任何早期采用者创新，只需将官方地址中的电子邮件发送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  以请求访问权限。 您可以请求访问所有或任何特定的创新。
+如果您有兴趣加入我们的早期采用者计划以进行任何早期采用者创新，只需将官方地址中的电子邮件发送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  以请求访问权限。 您可以申请访问全部或任何特定的创新。
 
 ## 率先采用者创新
 
@@ -121,17 +124,17 @@ AEM Forms到Marketo连接器为使用Adobe Experience Manager (AEM)构建的Web�
 
 准备好开始了吗？ [自适应Forms RTL文档](/help/forms/supporting-new-language-localization-core-components.md) 提供了使用RTL创新的分步指南。
 
-### 增强的机器人保护方法
+### 增强的机器人防护方法
 
-AEM Forms通过添加对两个流行的CAPTCHA解决方案（Cloudflare Turnstile和hCaptcha）的支持，增强了其安全功能。 这进一步扩展了Google reCAPTCHA的可用功能，为用户在保护表单免受机器人和垃圾邮件提交影响方面提供了更多选择和灵活性。
+AEM Forms 通过增加对两种流行的验证码解决方案的支持，增强了其安全功能：Cloudflare Turnstile 和 hCaptcha。这为现有的 Google reCAPTCHA 增加了新的选择，为用户提供了更多的选择和灵活性，以保护他们的表单免受机器人和垃圾邮件的侵害。
 
-* **Cloudflare Turnstile**：该无摩擦CAPTCHA通过不需要显式交互的简单挑战验证用户。 它可以无缝地集成到表单中，从而改善用户体验。
-* **验证码**：这个注重隐私的验证码提供了用户友好的替代方案，重点关注数据隐私。 它旨在实现安全性和用户体验之间的平衡。
-* **Google reCAPTCHA**： AEM Forms将继续支持reCAPTCHA v2和reCAPTCHA Enterprise，从而提供可靠且成熟的解决方案。
+* **Cloudflare Turnstile**：这种无摩擦的验证码通过简单的挑战来验证用户，无需明确的互动。它能够无缝集成到您的表单中，从而提升用户体验。
+* **hCaptcha**：这款注重隐私的验证码提供了一种注重数据隐私的用户友好型替代方案。其旨在在安全性和用户体验之间取得平衡。
+* **Google reCAPTCHA**：AEM Forms 继续支持 reCAPTCHA v2 和 reCAPTCHA Enterprise，提供可靠且完善的解决方案。
 
-通过提供多个验证码选项，AEM Forms使您能够选择最符合您特定需求的解决方案。
+AEM Forms 提供多种验证码选项，您可以选择最适合您特定需求的解决方案。
 
-是否准备好将任何CAPTCHA解决方案与您的自适应Forms集成？ 我们的文档提供了针对每种情况的详细说明： [Cloudflare Turnstile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)， [验证码](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)、和 [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+您是否准备将这些验证码解决方案中的任意一个与您的自适应表单集成？我们的文档为每种验证码解决方案提供了详细的说明：[Cloudflare Turnstile](https://experienceleague.adobe.com/cn/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/cn/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 和 [Google reCAPTCHA](https://experienceleague.adobe.com/cn/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)。
 
 ### 文档保证API
 
@@ -155,13 +158,13 @@ AEM Forms文档保证API是AEM FormsCloud Service通信API中的一组工具，�
 
 ### Forms服务API
 
-Forms服务为数据捕获生成交互式PDF forms。 它还可用于将数据导入/导出到现有的交互式PDF表单中，以及验证提交的数据。 以下是它的功能划分：
+表单服务生成交互式 PDF 表单，用于数据捕获。它还可用于将数据导入/导出到现有的交互式PDF表单中，以及验证提交的数据。 以下是其功能的详细介绍：
 
-* **呈现Forms**：使用使用AEM Forms Designer创建的模板和（可选）XML数据生成交互式PDF表单。 这实际上会生成一个可填写的PDF表单，可以选择预填数据。
+* **渲染表单**：使用 AEM Forms Designer 创建的模板和可选的 XML 数据生成交互式 PDF 表单。这实际上会生成可填写的 PDF 表单，其中可选择预先填充数据。
 
-* **数据提取和导入**：将数据导入现有PDF表单，并从已填写的PDF表单中提取数据。 XDP和XML数据格式均受支持，导入到非XFAPDF forms（也称为AcroForms）时还支持FDF和XFDF数据。
+* **数据提取和导入**：将数据导入现有 PDF 表单，也可从已填写的 PDF 表单中提取数据。支持 XDP 和 XML 数据格式，并且导入非 XFA PDF 表单（也称为 AcroForms）时还支持 FDF 和 XFDF 数据。
 
-* **数据验证**： ：根据使用AEM Forms Designer创建的模板，验证以XDP或XML格式提交的数据。
+* **数据验证**：根据使用 AEM Forms Designer 创建的模板，验证 XDP 或 XML 格式的提交数据。
 
 ## 另请参阅
 

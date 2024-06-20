@@ -1,31 +1,33 @@
 ---
-title: 对Commerce Integration Framework (CIF)加载项的显着更改
-description: 与旧版CIF相比，Commerce Integration Framework (CIF)发生了显着更改。
+title: 对Commerce integration framework(CIF)加载项的重要更改
+description: 与旧版CIF相比，Commerce integration framework(CIF)发生了显着更改。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '427'
+ht-degree: 0%
 
 ---
 
-# 对Commerce Integration Framework (CIF)加载项的显着更改{#notable-changes}
+# 对Commerce integration framework(CIF)加载项的显着更改{#notable-changes}
 
 Adobe Experience Manager as a Cloud Service为管理AEM项目提供了许多新功能和可能性。 要了解有关这些功能的更多信息，请访问链接 [对Experience Manageras a Cloud Service的更改](/help/release-notes/aem-cloud-changes.md).
 
-本文档重点介绍Commerce Integration Framework (CIF)加载项与旧CIF版本(称为CIF Classic (Quickstart)和CIF Open-source)之间的重要差异。
+本文档重点介绍Commerce integration framework(CIF)加载项与旧版CIF(称为CIF Classic (Quickstart)和CIF Open-source)之间的重要差异。
 
 ## 安装和更新
 
-AEM CIF加载项通过Cloud Manager进行安装。 安装需要CIF点数，但沙盒除外，因为沙盒可以安装CIF而不需要点数。 通过预配AEM合同中的CIF加载项，可自动接收积分。
+AEM CIF加载项是通过Cloud Manager安装的。 安装需要CIF点数，但沙盒除外，在这里无需点数即可安装CIF。 通过在AEM合同中预配CIF加载项来自动接收积分。
 
-加载项在常规AEMas a Cloud Service更新期间自动更新。
+此加载项在常规AEMas a Cloud Service更新期间自动更新。
 
 **早期CIF版本**
 
-* CIF Classic：无需安装，CIF是快速入门的一部分。 CIF更新是定期AEM或Service Pack更新的一部分
-* 内部部署的AEM的CIF开放源代码：通过GitHub安装。 更新是手动更新/维护工作的一部分。
-* CIF Open-source for AEM Adobe Managed Services：通过Adobe帐户团队进行安装。 更新是手动更新/维护工作的一部分。
+* CIF Classic：无需安装，CIF是快速入门的一部分。 CIF更新是常规AEM或Service Pack更新的一部分
+* 适用于AEM内部部署的CIF开放源代码：通过GitHub进行安装。 更新是手动更新/维护工作的一部分。
+* CIF Open-source for AEMAdobeManaged Services：通过Adobe客户团队进行安装。 更新是手动更新/维护工作的一部分。
 
 ## 端点配置
 
@@ -34,7 +36,7 @@ AEM CIF加载项通过Cloud Manager进行安装。 安装需要CIF点数，但�
 **早期CIF版本**
 
 * CIF Classic：通过AEM中的OSGi配置
-* CIF开源：通过CIF配置浏览器
+* CIF开放源代码：通过CIF配置浏览器
 
 ## 部署CIF Venia项目
 
@@ -51,7 +53,7 @@ AEM CIF加载项通过Cloud Manager进行安装。 安装需要CIF点数，但�
 
 **早期CIF版本**
 
-* CIF Classic：通过完整或增量产品导入，在AEM Author上导入实时和暂存产品数据并将其保留在JCR中。 将实时产品数据复制到AEM Publish。
+* CIF Classic：通过完全或增量产品导入，在AEM Author上导入实时和暂存产品数据并将这些数据保留在JCR中。 将实时产品数据复制到AEM Publish。
 
 ## 具有AEM渲染的产品目录体验
 
@@ -59,8 +61,8 @@ AEM使用已分配给产品和类别的AEM目录模板动态呈现产品目录�
 
 **早期CIF版本**
 
-* CIF Classic：AEM作者使用目录Blueprint工具为每个类别/产品创建一个AEM页面。 这些页面将复制到AEM Publish。
+* CIF Classic：AEM Author使用目录Blueprint工具为每个类别/产品创建一个AEM页面。 这些页面将复制到AEM Publish。
 
 >[!NOTE]
 >
->有关如何将CIF与AEM Managed Service或AEM On-premise结合使用的其他文档，请参阅 [Commerce集成框架](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>有关如何将CIF与AEM托管服务或AEM内部部署一起使用的其他文档，请参阅 [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

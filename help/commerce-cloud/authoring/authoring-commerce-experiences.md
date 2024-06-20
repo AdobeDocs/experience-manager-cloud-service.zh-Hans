@@ -2,7 +2,9 @@
 title: 创作Commerce体验
 description: 了解如何通过在不离开上下文的情况下访问产品数据和内容来高效地创作和构建商业相关体验。
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 0%

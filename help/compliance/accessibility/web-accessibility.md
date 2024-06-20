@@ -2,7 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
 description: 介绍 Adobe Experience Manager as a Cloud Service 和 Web 无障碍准则
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%

@@ -1,15 +1,17 @@
 ---
-title: 清除CDN缓存
+title: 清除 CDN 缓存
 description: 了解如何通过配置随后可在API调用中使用的清除API令牌，从AdobeCDN缓存中删除缓存的对象。
 feature: CDN Cache
-source-git-commit: bd8f534642848a656e5e54c425049c95cdb413f7
+exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# 清除CDN缓存 {#cdn-purge-cache}
+# 清除 CDN 缓存 {#cdn-purge-cache}
 
 >[!NOTE]
 >此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至 `aemcs-cdn-config-adopter@adobe.com`.

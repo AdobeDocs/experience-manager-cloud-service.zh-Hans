@@ -2,7 +2,9 @@
 title: 新增发布区域
 description: 了解 AEM as a Cloud Service 如何支持附加的发布区域，以提高可用性并减少延迟。
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 78%

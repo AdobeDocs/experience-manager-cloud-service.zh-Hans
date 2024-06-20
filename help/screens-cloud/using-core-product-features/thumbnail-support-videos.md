@@ -3,7 +3,9 @@ title: Screensas a Cloud Service中的视频缩略图支持
 description: 本页介绍如何在Screensas a Cloud Service中为视频添加缩略图支持。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 1%

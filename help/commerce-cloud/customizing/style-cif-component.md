@@ -11,7 +11,8 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -87,7 +88,7 @@ ht-degree: 0%
 
    ![ui.frontend商业文件夹](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
-   请注意，存在多个Sass (`.scss`)文件。 这些文件是每个Commerce组件的Commerce特定样式。
+   请注意，存在多个Sass (`.scss`)文件。 这些文件是每个Commerce组件特定于Commerce的样式。
 
 1. 打开文件 `_productteaser.scss`.
 
@@ -178,7 +179,7 @@ ht-degree: 0%
 
    这些客户端库不受 `ui.frontend` 模块。 这些客户端库包含由Adobe提供的CSS和JavaScript依赖项。 这些客户端库的定义位于 `.content.xml` 每个文件夹下的文件。
 
-   **clientlib-base**  — 一个空的客户端库，其中仅嵌入来自的必需依赖项 [AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 类别为 `venia.base`.
+   **clientlib-base**  — 一个空的客户端库，其中仅嵌入来自的必需依赖项 [AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans). 类别为 `venia.base`.
 
    **clientlib-cif**  — 一个空的客户端库，其中仅嵌入来自的必需依赖项 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components). 类别为 `venia.cif`.
 

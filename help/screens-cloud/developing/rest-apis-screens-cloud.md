@@ -1,17 +1,19 @@
 ---
 title: REST API
-description: Screensas a Cloud Service提供一个遵循Siren规范的简单RESTful API。 按照此页面了解如何导航内容结构并将命令发送到环境中的设备。
+description: Screensas a Cloud Service提供了一个遵循Siren规范的简单RESTful API。 按照此页面了解如何导航内容结构并向环境中的设备发送命令。
 exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+feature: Developing Screens
+role: Admin, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '200'
 ht-degree: 2%
 
 ---
 
 # REST API {#rest-apis}
 
-AEM Screens提供了一个简单的RESTful API，它遵循 [警报器](https://github.com/kevinswiber/siren) 规范。 它允许导航内容结构并向环境中的设备发送命令。
+AEM Screens提供了一个简单的RESTful API，它遵循 [警笛](https://github.com/kevinswiber/siren) 规范。 它允许导航内容结构并向环境中的设备发送命令。
 
 API可在以下位置访问： [*http://localhost:4502/api/screens.json*](http://localhost:4502/api/screens.json).
 
@@ -26,7 +28,7 @@ GET /api/screens/content/screens/we-retail/locations/demo/flagship.json HTTP/1.1
 Host: http://localhost:4502
 ```
 
-或使用curl：
+或者使用curl：
 
 ```xml
 curl -u admin:admin http://localhost:4502/api/screens/content/screens/we-retail/locations/demo/flagship.json
@@ -95,22 +97,22 @@ Host: http://localhost:4502
 
 ## 对资源执行操作 {#executing-actions-on-the-resource}
 
-API调用返回的JSON可以包含资源上可用的操作列表。
+API调用返回的JSON可包含资源上可用的操作列表。
 
-例如，该显示区列出了 *broadcast命令* 允许向分配给该显示的所有设备发送命令的操作。
+例如，该显示区列出了 *广播命令* 允许向分配给该显示的所有设备发送命令的操作。
 
 ```xml
 GET /api/screens/content/screens/we-retail/locations/demo/flagship/single.json HTTP/1.1
 Host: http://localhost:4502
 ```
 
-或使用curl：
+或者使用curl：
 
 ```xml
 curl -u admin:admin http://localhost:4502/api/screens/content/screens/we-retail/locations/demo/flagship/single.json
 ```
 
-***结果:***
+***结果：***
 
 ```xml
 {
@@ -151,7 +153,7 @@ Host: http://localhost:4502
 :operation=broadcast-command&msg=reboot
 ```
 
-或使用curl：
+或者使用curl：
 
 ```xml
 curl -u admin:admin -X POST -d ':operation=broadcast-command&msg=reboot' http://localhost:4502/api/screens/content/screens/we-retail/locations/demo/flagship/single.json

@@ -3,7 +3,8 @@ title: 使用 Dispatcher 工具进行验证和调试
 description: 了解本地验证、调试、灵活模式文件结构以及如何从旧模式迁移到灵活模式。
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2cb57347856568da979b34832ce12cce295841dd
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '3028'
 ht-degree: 1%

@@ -3,8 +3,9 @@ title: 准备电子表格以接受数据
 description: 使用电子表格和 Adaptive Forms Block 字段更快地制作功能强大的表单！
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 

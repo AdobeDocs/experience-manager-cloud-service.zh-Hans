@@ -2,7 +2,9 @@
 title: Screens中的Dispatcher配置as a Cloud Service
 description: 本页介绍了Screensas a Cloud Service中的Dispatcher配置。
 exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 ## 在Dispatcher for Screensas a Cloud Service部署中添加筛选器和缓存规则 {#deployment}
 
-在Dispatcher中允许在Screensas a Cloud Service中为发布实例使用以下筛选器和缓存规则。
+在Dispatcher中为Screensas a Cloud Service中的发布实例允许使用以下过滤器和缓存规则。
 
 ### AEM Screens筛选器 {#filters}
 
@@ -35,7 +37,7 @@ ht-degree: 0%
 * 添加 `/statfileslevel "10"` 到 `/cache` 中的部分 `publish_farm.any`/.
 
   >[!NOTE]
-  >此缓存规则支持从缓存docroot中缓存最多10个级别，并且在发布内容时使内容无效，而不是使所有内容无效。 您可以根据内容结构的设置深度更改此级别。
+  >此缓存规则支持从缓存docroot中缓存最多10个级别，并在发布内容时使无效，而不是使所有内容无效。 您可以根据内容结构的设置深度更改此级别。
 
 * 将以下内容添加到 `/invalidate` 中的部分 `publish_farm.any`.
 
@@ -46,7 +48,7 @@ ht-degree: 0%
   }
   ```
 
-* 将以下规则添加到 `/rules` 中的部分 `/cache` 在publish_farm.any中或从包含的文件中 `publish_farm.any`.
+* 将以下规则添加到 `/rules` 中的部分 `/cache` publish_farm.any中或从包含的文件中 `publish_farm.any`.
 
   ```
   ## Allow Dispatcher Cache for Screens channels

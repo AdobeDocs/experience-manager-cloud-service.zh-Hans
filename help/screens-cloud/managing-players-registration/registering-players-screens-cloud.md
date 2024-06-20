@@ -2,10 +2,12 @@
 title: 在Screensas a Cloud Service注册播放器
 description: 本页介绍如何在Screensas a Cloud Service中注册播放器。
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '500'
+ht-degree: 13%
 
 ---
 
@@ -65,7 +67,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >**使用注册码时的安全最佳实践建议**
-   >作为最佳实践，您可以限制注册码的使用。 如果注册码被泄漏，但限制为100个注册，则攻击者最多只能注册该号码，但不能注册更多号码。 在创建注册代码并且客户的某些播放器已注册后，您始终可以更新使用限制。 如果客户发现特定注册代码的异常注册活动，他们可以在调查时实时降低限制，如果出现误报，还可以增加数量，而不会影响已注册的播放器。
+   >作为最佳实践，您可以限制注册码的使用。如果注册码已泄露，但注册次数上限为 100，则攻击者最多只能注册这个次数，而不能注册更多。在创建注册码且已注册部分客户播放器后，始终能够更新使用限制。如果客户发现特定注册代码的异常注册活动，他们可以在调查时实时降低限制，如果出现误报，还可以增加数量，而不会影响已注册的播放器。
 
 
 ## 后续内容 {#whats-next}

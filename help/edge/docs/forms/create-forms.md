@@ -3,10 +3,11 @@ title: AEM Forms Edge Delivery Service 快速入门。创建表单。
 description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文档的创作 = 速度极快、SEO 友好的表单，让用户更加满意，搜索引擎更加优异。
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
-workflow-type: ht
+role: Admin, Architect, Developer
+source-git-commit: f6a320b0f3960ae789559b837995986bf0a4bbad
+workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

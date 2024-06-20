@@ -2,7 +2,9 @@
 title: 通用Lucene索引删除
 description: 了解计划删除的通用Lucene索引以及可能受到的影响。
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 0%

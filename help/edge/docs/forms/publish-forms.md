@@ -3,10 +3,11 @@ title: 发布 AEM Forms Edge Delivery Services 表单
 description: 发布 AEM Forms Edge Delivery Services 表单
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-source-git-commit: 708b63aca6b1613dbedf193edd07aadc510ff859
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -86,14 +87,14 @@ ht-degree: 99%
 
    使用预览 URL (.page URL) 进行开发或测试，或使用发布 URL (.live) 进行生产。以下是带有预览和发布 URL 的示例：
 
-   **预览URL**
+   **预览 URL**
 
    | 表单 |
    |---|
    | [https://main--wefinance--wkndforms.hlx.page/enquiry.json](https://main--wefinance--wkndforms.hlx.page/enquiry.json) |
 
 
-   **发布URL**
+   **发布 URL**
 
    | 表单 |
    |---|

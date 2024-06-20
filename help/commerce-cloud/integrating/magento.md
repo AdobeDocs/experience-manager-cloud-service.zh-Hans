@@ -3,7 +3,9 @@ title: 使用Commerce integration framework集成AEM和Adobe Commerce
 description: 使用Commerce integration framework(CIF)可无缝集成AEM和Adobe Commerce。 CIF使AEM能够访问Adobe Commerce实例，并通过GraphQL与Adobe Commerce通信。 它还允许AEM作者使用产品和类别选取器以及产品控制台来浏览从Adobe Commerce按需获取的产品和类别数据。 此外，CIF提供了一个开箱即用的店面，可以加快商业项目的执行。
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
-source-git-commit: 6d63328ca17a00e0369c57714409f3f448cb311f
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 10%
@@ -52,5 +54,5 @@ ht-degree: 10%
 
 ## 搜索 {#search}
 
-CIF提供开箱即用的 [搜索核心组件](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) 即服务器端渲染的搜索体验，基于 [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce客户可以选择使用 [实时搜索](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) 而是。 关注此 [链接](/help/commerce-cloud/integrating/live-search-plp.md) 详细了解CIF - Live Search集成。
+CIF提供开箱即用的 [搜索核心组件](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) 即服务器端渲染的搜索体验，基于 [COMMERCE GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/). Commerce客户可以选择使用 [实时搜索](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en) 而是。 关注此 [链接](/help/commerce-cloud/integrating/live-search-plp.md) 详细了解CIF - Live Search集成。
 

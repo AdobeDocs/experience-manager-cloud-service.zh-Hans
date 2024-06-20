@@ -2,10 +2,12 @@
 title: AEM Commerce 内容作者历程
 description: 从这里开始，通过 AEM Commerce 创作实施引导式历程
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -25,9 +27,9 @@ ht-degree: 81%
 
 ## AEM 文档历程 {#documentation-journeys}
 
-[文档历程](/help/journey-documentation/documentation-journeys.md) 通过提供叙述来帮助可能是AEM新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或AEM知识，从而将许多不同的、复杂的主题和功能联系起来。
+[文档历程](/help/journey-documentation/documentation-journeys.md)将许多不同且复杂的主题和功能联系在一起，其中娓娓道来地帮助读者（可能是 AEM 新手）从头到尾理解并解决业务问题，同时假定读者以前对相关主题或 AEM 知之甚少。
 
-文档历程是围绕最佳实践准则而设计的，其中包含了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及来自客户项目的反馈。
+文档历程是围绕最佳实践准则而设计的，其中参考了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及客户项目产生的反馈。
 
 如果您想了解 Adobe 就如何使用 AEM 解决站点业务案例提出的建议，则可以从 AEM Sites 历程开始。
 
@@ -35,13 +37,13 @@ ht-degree: 81%
 
 此历程专为 AEM Commerce 内容作者设计。此历程列出了开始使用和管理目录页面、模板和完整产品体验的要求、步骤和方法。
 
-此历程中的信息对其他角色可能很有用，但一些信息对特定角色来说是多余的。 请继续关注即将推出的涵盖其他角色的历程。
+此历程中的信息可能对其他角色很有用，但某些信息对某些角色而言是多余的。请继续关注即将推出的涵盖其他角色的历程。
 
 ## 历程 {#the-journey}
 
 您将在此历程中探究多个主题。以下文章为您提供了基础知识以及指向详细技术文档的链接。
 
-虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是AEM Content and Commerce的新用户，Adobe建议您从头开始，然后循序渐进。
+虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是初次使用AEM Content和Commerce，Adobe建议您从头开始，然后循序渐进。
 
 | # | 文章 | 描述 |
 |---|---|---|

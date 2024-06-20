@@ -1,6 +1,6 @@
 ---
 title: 创建多个类别和产品页面
-description: 了解如何使用目标营销内容丰富“类别登录”和“产品详细信息”页面。
+description: 了解如何使用有针对性的营销内容扩充类别登录和产品详细信息页面。
 sub-product: Commerce
 version: Cloud Service
 doc-type: feature-video
@@ -9,11 +9,12 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '178'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +28,7 @@ ht-degree: 3%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-可以按SKU或产品类别选择特定的产品页面。 仅某些可用的默认产品页面URL格式支持后者，因为它要求在产品URL中编码类别信息。
+可以按SKU或产品类别选择特定的产品页面。 仅某些可用的默认产品页面URL格式支持后者，因为它需要在产品URL中编码类别信息。
 
 您可以从以下资源中找到有关此主题的更多信息：
 
@@ -36,4 +37,4 @@ ht-degree: 3%
 
 ## 相关资源 {#related}
 
-还可以动态定位页面的特定区域并重复使用相同的模板。 了解如何 [使用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md).
+还可以动态定位页面的特定区域并重复使用相同的模板。 了解如何 [用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md).

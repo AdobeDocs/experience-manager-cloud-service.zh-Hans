@@ -1,7 +1,10 @@
 ---
 title: 为AEM Screens配置时间轴视图
 description: 本页介绍如何在Screensas a Cloud Service中配置时间线视图。
-source-git-commit: eb71ea3a1a739b08fb3154a5f41a0706bd81488c
+exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
+feature: Administering Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 11%

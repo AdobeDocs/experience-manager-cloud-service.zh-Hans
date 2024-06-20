@@ -1,11 +1,12 @@
 ---
 title: AEMPWA Studio扩展快速入门
-description: 了解如何使用PWA Studio部署AEM Headless Content and Commerce项目。
+description: 了解如何使用PWA Studio部署AEM Headless Content和Commerce项目。
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -62,7 +63,7 @@ ht-degree: 0%
 
    您可以在中找到有关自定义导航组件的更多详细信息 [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) 和 [可扩展性框架](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) PWA Studio的文档。
 
-1. Apollo客户端将预期AEM GraphQL端点位于 `<https://pwa-studio/endpoint.js>`. 要将端点映射到此位置，请自定义PWA Studio应用程序的“向上”配置： a.将AEM_CFM_GRAPHQL变量添加到pwa-root/.env，并将其调整为指向您的AEM内容片段GraphQL端点。
+1. Apollo客户端将预期AEM GraphQL端点位于 `<https://pwa-studio/endpoint.js>`. 要将端点映射到此位置，请自定义PWA Studio应用程序的UPPER配置： a.将AEM_CFM_GRAPHQL变量添加到pwa-root/.env，并将其调整为指向您的AEM Content Fragments GraphQL端点。
 
    示例： `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 

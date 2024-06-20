@@ -2,7 +2,9 @@
 title: 在Screensas a Cloud Service发布渠道
 description: 本页介绍如何在Screensas a Cloud Service中发布渠道。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Authoring Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 1%
@@ -31,7 +33,7 @@ ht-degree: 1%
 
 1. 从项目中导航并选择渠道，例如 **FirstdigitalExperience** —> **渠道** —> **LoopingChannelOne**.
 
-   ![选择频道](/help/screens-cloud/assets/create-content/managepub-1.png)
+   ![选择渠道](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. 单击 **管理发布** 从操作栏中。
 

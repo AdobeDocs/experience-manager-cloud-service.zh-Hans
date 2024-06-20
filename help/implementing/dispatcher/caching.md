@@ -3,7 +3,8 @@ title: AEM as a Cloud Service 中的缓存
 description: 了解AEMas a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 8215686031de1bc37ce37bfdce252b3997646042
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 1%

@@ -2,10 +2,12 @@
 title: 创建环境
 description: 本页介绍如何在Cloud Manager for Screensas a Cloud Service中创建环境。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 

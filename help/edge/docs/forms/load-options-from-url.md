@@ -1,17 +1,18 @@
 ---
-title: 从URL或其他工作表中加载AEM Formsas a Cloud ServiceEdge Delivery Services的下拉列表选项
+title: 从 URL 或其他工作表中加载 AEM Forms as a Cloud Service 的 Edge Delivery Services 的下拉列表选项
 description: 下拉列表选项包含在不同的电子表格中，然后通过提供的 URL 导入到主电子表格中。
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '469'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# URL或其他工作表中用于AEM Formsas a Cloud ServiceEdge Delivery Services的选项
+# URL 或其他工作表中的选项，用于 AEM Forms as a Cloud Service 的 Edge Delivery Services
 
 表单通常包含下拉菜单，供用户从预定义的选项中进行选择。这些选项通常在表单本身中进行定义，但管理长列表会很麻烦。本指南概述了如何通过 URL 从单独的电子表格加载下拉选项来改进表单创作。
 
