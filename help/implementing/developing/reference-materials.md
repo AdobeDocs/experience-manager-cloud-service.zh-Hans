@@ -4,7 +4,7 @@ description: AEM具有广泛而强大的API，可用于您的数字体验项目�
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: b3405279393be51b805c1129c171bb2249fd5726
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 4%
@@ -67,7 +67,7 @@ AEM提供了可自定义的组件和内容交付选项。
 
 | 专题 | 描述 |
 |---|---|
-| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 适用于AEM的标准化网站内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
+| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) | 适用于AEM的标准化网站内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
 | [JSON导出程序](/help/implementing/developing/components/json-exporter.md) | 以JSON数据模型格式交付任何AEM页面的内容 |
 | [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md) | 基于建模器框架生成组件内容的JSON导出 |
 | [资产API](/help/assets/mac-api-assets.md) | 允许对资源执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括二进制、元数据、演绎版和注释。 请参阅AEM Assets HTTP API |

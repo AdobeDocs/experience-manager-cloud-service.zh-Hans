@@ -4,7 +4,7 @@ description: 通过示例了解通用编辑器可在属性边栏中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 10%
@@ -103,7 +103,7 @@ ht-degree: 10%
 | [数字](#number) | `number` |
 | [单选按钮组](#radio-group) | `radio-group` |
 | [引用](#reference) | `reference` |
-| [富文本](#rich-text) | `rich-text` |
+| [富文本](#rich-text) | `richtext` |
 | [选择](#select) | `select` |
 | [选项卡](#tab) | `tab` |
 | [文本](#text) | `text` |
