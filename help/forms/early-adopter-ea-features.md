@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1733'
 ht-degree: 22%
 
 ---
@@ -75,9 +75,9 @@ AEM Forms Workfront Fusion连接器支持Adobe Experience Manager (AEM) Forms与
 对话式Forms不仅仅是一种新外观，它还是改变用户体验的一种方式。  提升参与度，减少表单放弃，并使与您的网站互动成为每个人都更愉快的体验。
 
 
-### Edge Delivery Services的基于AEM的创作
+### 用于Edge Delivery Services的WYSIWYG创作
 
-基于AEM的创作提供了一个WYSIWYG界面(自适应Forms编辑器)，用于构建这些表单并将其发布到Edge Delivery Services。 基于AEM的创作提供了以下所有功能 [基于文档的创作](/help/edge/docs/forms/overview.md#document-based-authoring-features)，以及一系列其他功能：
+所见即所得创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，用于构建自适应表单并将其发布到Edge Delivery Services。 所见即所得创作提供以下所有功能 [基于文档的创作](/help/edge/docs/forms/overview.md#document-based-authoring-features)，以及一系列其他功能：
 
 * 用于创建复杂逻辑的高级规则编辑器。
 * 自定义功能的服务器端可扩展性。
