@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 80%
 1. 输入变量详细信息。
    * **名称**
    * **值**
-   * **应用的服务** – 定义变量适用于哪个服务（作者/发布/预览），或者是否适用于所有服务
+   * **已应用服务**  — 定义变量适用于哪个服务(创作/Publish/预览)，或者是否适用于所有服务
    * **类型** – 定义变量是普通变量还是密钥
 
    ![添加变量](assets/add-variable.png)
