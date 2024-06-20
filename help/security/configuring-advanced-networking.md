@@ -4,10 +4,10 @@ description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 6ae2738bcde05ef546c98cddd23d11f033b2a170
+source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
 workflow-type: tm+mt
-source-wordcount: '5729'
-ht-degree: 93%
+source-wordcount: '5744'
+ht-degree: 92%
 
 ---
 
@@ -238,7 +238,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!INFO]
 >
->无法对专用出口 IP 地址使用 Splunk 转发功能。
+>如果配置了专用出口IP，则Splunk转发将继续使用动态出口范围。 无法将Splunk转发配置为使用专用出口IP。
 
 ### UI 配置 {#configuring-dedicated-egress-provision-ui}
 
