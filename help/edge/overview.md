@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 84%
 
 通过使用 Edge Delivery Services，您可以：
 
-* 使用完美的Lighthouse得分创建快速站点，并通过实际使用监控(RUM)持续监控站点性能。
-* 通过分离内容来源而提高创作效率。开箱即用地使用WYSIWYG和基于文档的创作。 这样即可在同一网站上使用多个内容源。
+* 快速创建 Lighthouse 分数优异的网站，并通过实际使用监控 (RUM) 持续监控网站性能。
+* 通过分离内容来源而提高创作效率。可直接使用 WYSIWYG 和基于文档的创作。这样即可在同一网站上使用多个内容源。
 * 使用一个内置的试验框架，通过该框架，可快速地创建测试、不影响性能地执行测试并快速地发布到测试获胜方的生产环境。
 
 ## 概述 {#overview}
 
-Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。您可以同时使用两者 [AEM内容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) 和WYSIWYG创作 [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md) 以及 [基于文档的创作。](https://www.aem.live/docs/authoring)
+Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。您既可以使用 [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) 进行 [AEM 内容管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html)和 WYSIWYG 创作，也可以使用[基于文档的创作。](https://www.aem.live/docs/authoring)
 
-下图说明如何在 Microsoft Word 中编辑内容（基于文档的创作）并将其发布到 Edge Delivery Services。它还显示了使用通用编辑器的WYSIWYG编辑。
+下图说明如何在 Microsoft Word 中编辑内容（基于文档的创作）并将其发布到 Edge Delivery Services。它还显示了使用 Universal Editor 进行 WYSIWYG 的编辑。
 
 ![Edge Delivery 架构](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -44,9 +44,9 @@ Edge Delivery Services 使用 GitHub，因此您可直接从您的 GitHub 存储
 
 Edge Delivery Services 是 Adobe Experience Manager 的一部分，因此 Edge Delivery Services 可与 AEM Sites 在相同的域中共存，这是大型网站的常见用例。此外，还可在 AEM Sites 页面中轻松地使用来自 Edge Delivery Services 的内容，并且反之亦然。
 
-请参阅 [用于Edge Delivery Services的WYSIWYG的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 了解如何开始自己的项目，以便使用AEM和Edge Delivery Services进行创作。
+请参阅[使用 Edge Delivery Services 进行 WYSIWYG 的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解如何开始您自己要使用 AEM 和 Edge Delivery Services 创作的项目。
 
-您还可以将Edge Delivery Services与 [Adobe Target，](https://www.aem.live/developer/target-integration) [实时监控(RUM)](https://www.aem.live/developer/rum) 诊断站点的使用情况和性能，以及 [启动。](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+您还可以将 Edge Delivery Services 与 [Adobe Target、](https://www.aem.live/developer/target-integration)[实际使用监控 (RUM)](https://www.aem.live/developer/rum) 结合使用，以诊断网站的使用情况和性能，并且进行[发布。](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Edge Delivery Services 快速入门 {#getting-started}
 
@@ -62,7 +62,7 @@ Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
 
 ### 访问社区资源 {#community-resources}
 
-Adobe致力于为您提供最佳社区参与度以及对Edge Delivery Services、所见即所得和基于文档的创作支持。
+Adobe 致力于通过为 Edge Delivery Services、WYSIWYG 以及基于文档的创作营造优秀的社区参与氛围并提供大力支持而为您助力。
 
 * 请加入 [Experience League 社区](https://adobe.ly/3Q6kTKl)，从中您可提问、分享反馈、发起讨论、向 Adobe 专家和 AEM 顾问/支持者寻求帮助并实时与志同道合的人交流。
 * 加入我们的 [Discord 频道](https://discord.gg/aem-live)，通过这个更休闲的平台可实时互动和快速交流想法。
