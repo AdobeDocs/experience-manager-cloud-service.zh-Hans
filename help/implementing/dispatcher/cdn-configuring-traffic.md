@@ -4,10 +4,10 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 4%
+source-wordcount: '1310'
+ht-degree: 3%
 
 ---
 
@@ -307,6 +307,42 @@ data:
 | **forwardCookie** （可选，默认值为false） | 如果设置为true，则会将客户端请求中的“Cookie”标头传递到后端，否则将删除Cookie标头。 |
 | **forwardAuthorization** （可选，默认值为false） | 如果设置为true ，则客户端请求中的“Authorization”标头将传递到后端，否则删除Authorization标头。 |
 | **timeout** （可选，以秒为单位，默认值为60） | CDN应等待后端服务器传递HTTP响应主体的第一个字节的秒数。 此值还用作后端服务器的字节超时之间的值。 |
+
+### 代理到Edge Delivery Services {#proxying-to-edge-delivery}
+
+在某些情况下，可以使用源选择器将流量通过AEM Publish路由到AEMEdge Delivery Services：
+
+* 某些内容由AEM Publish管理的域交付，而来自同一域的其他内容由Edge Delivery Services交付
+* 通过Configuration Pipeline部署的规则（包括流量过滤器规则或请求/响应转换）将使Edge Delivery Services交付的内容受益
+
+以下是可以实现此目标的原点选择器规则的示例：
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: select-edge-delivery-services-origin
+        when:
+          allOf:
+            - reqProperty: tier
+              equals: publish
+            - reqProperty: domain
+              equals: <Production Host>
+            - reqProperty: path
+              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+        action:
+          type: selectOrigin
+          originName: aem-live
+    origins:
+      - name: aem-live
+        domain: main--repo--owner.aem.live
+```
+
+>[!NOTE]
+> 由于使用了Adobe托管的CDN，请确保在中配置推送失效 **受管** 模式，遵循以下Edge Delivery Services [设置推送失效文档](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
 
 ## 客户端重定向 {#client-side-redirectors}
 
