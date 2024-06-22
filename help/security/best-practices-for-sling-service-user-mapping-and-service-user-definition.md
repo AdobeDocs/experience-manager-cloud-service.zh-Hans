@@ -4,10 +4,10 @@ description: 了解 Sling 服务用户映射和服务用户定义的最佳实践
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -189,7 +189,7 @@ AEM 安全团队为服务用户定义了以下命名惯例，以便为新服务�
 * 缩小范围
 
    * 将访问控制策略置于特定功能的子树上
-   * 对于分布式项目：使用限制内容来限制范围（请参阅[文档](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)阅内置限制列表）。
+   * 对于分布式项目：使用限制内容来限制范围（请参阅[文档](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)阅内置限制列表）。
 
 * 确保一致性
 

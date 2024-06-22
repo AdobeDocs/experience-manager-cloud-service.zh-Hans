@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.7.0 版�
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Assets Essentials 现在默认情况下根据相关性为搜索结果排序。�
 
 * **[Headless 表单的 React 组件](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**：您现在可以使用现成的 React 组件预览和自定义 Headless 自适应表单演绎版。这些组件使用自适应表单核心组件中的 BEM 类进行样式设置，使您能够轻松地根据特定要求自定义其外观。
 
-* [**创建具有可重复部分的自适应表单**](/help/forms/create-forms-repeatable-sections.md)：现在可使基于自适应表单的[可折叠项](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)和[水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)组件能够对多数据记录捕获重复。这些可重复的部分可让您轻松提供多个数据条目。当预先未知所需的数据实例时，它非常有用。表单填写者可以轻松添加或删除相关部分，使表单能够适应不同的数据输入场景，并简化对同一数据记录发生次数的收集。
+* [**创建具有可重复部分的自适应表单**](/help/forms/create-forms-repeatable-sections.md)：现在可使基于自适应表单的[可折叠项](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)、[面板](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)和[水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)组件能够对多数据记录捕获重复。这些可重复的部分可让您轻松提供多个数据条目。当预先未知所需的数据实例时，它非常有用。表单填写者可以轻松添加或删除相关部分，使表单能够适应不同的数据输入场景，并简化对同一数据记录发生次数的收集。
 
 
 ### [!DNL Forms] 中的预发布功能 {#pre-release-features-available-in-forms-channel}
