@@ -2,7 +2,9 @@
 title: 保护创作层
 description: 了解如何配置网络策略以保护对创作层的访问。
 exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Configuring
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 31%

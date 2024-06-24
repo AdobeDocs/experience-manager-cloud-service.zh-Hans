@@ -4,10 +4,10 @@ description: 了解如何使用 AEM 的内容片段模型创建用作 Headless �
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-feature: Onboarding
+feature: Headless
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
-workflow-type: ht
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 100%
 

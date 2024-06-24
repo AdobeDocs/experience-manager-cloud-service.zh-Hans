@@ -1,9 +1,10 @@
 ---
 title: AEM Headless 的架构
 description: 了解与 Headless 部署相关的 Adobe Experience Manager 高级架构。了解 AEM Author、Preview 和 Publish 服务的角色，以及对于 Headless 应用程序的推荐部署模式。
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%

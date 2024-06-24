@@ -2,9 +2,9 @@
 title: 自定义和扩展内容片段控制台和编辑器
 description: 了解如何自定义内容片段控制台和编辑器
 exl-id: a837f09f-9d07-4430-839a-7cf0f200d2df
-feature: Developing
+feature: Developing, Content Fragments
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 9%

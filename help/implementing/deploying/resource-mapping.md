@@ -6,10 +6,11 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 7%
+source-wordcount: '526'
+ht-degree: 2%
 
 ---
 
@@ -72,7 +73,7 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
 
 `https://localhost:4503/welcome` &quot;
 
-收件人:
+收件人：
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -104,7 +105,7 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
    * **名称** `localhost_any`
 
 1. 单击&#x200B;**全部保存**。
-1. **向该节点添加以下属性：**
+1. **添加** 此节点的以下属性：
 
    * **名称** `sling:match`
 

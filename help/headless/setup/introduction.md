@@ -2,8 +2,10 @@
 title: Headless 设置
 description: 利用本快速入门指南，学习 AEM as a Cloud Service 强大的 Headless 功能的基础知识，例如内容模型、内容片段和 GraphQL API。
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: ht
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 100%
 

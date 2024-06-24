@@ -4,7 +4,8 @@ description: 了解内容片段变体如何允许您为片段创作内容，然�
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
-source-git-commit: 763ef950ffa7642a345977485f56c1187f6ecc0a
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 53%

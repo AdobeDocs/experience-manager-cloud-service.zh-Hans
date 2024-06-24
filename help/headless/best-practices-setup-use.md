@@ -2,10 +2,12 @@
 title: 设置和将AEM GraphQL与内容片段一起使用的最佳实践
 description: 了解设置和将AEM GraphQL与内容片段一起使用的推荐最佳实践。
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 40%
+source-wordcount: '702'
+ht-degree: 29%
 
 ---
 
@@ -17,7 +19,7 @@ ht-degree: 40%
 
 为了帮助您快速掌握：
 
-* [什么是 Headless？](/help/headless/what-is-headless.md)
+* [什么是Headless？](/help/headless/what-is-headless.md)
 * AEM中各种环境的概述 [架构](/help/headless/deployment/architecture.md)
 
 ## 设置 {#setup}
@@ -61,14 +63,14 @@ ht-degree: 40%
 
 Dispatcher通常配置为执行以下操作：
 
-* 发布：生产
+* Publish：生产
 
 ### CORS设置 {#cors-setup}
 
 >[!NOTE]
 >如果缓存 [AEM调度程序](#dispatcher-caching) 启用，则无需进行CORS设置，因此可以忽略此部分。
 
-要访问 GraphQL 端点，必须配置 CORS 策略并添加到通过 Cloud Manager 部署到 AEM 的 AEM 项目。此操作可通过为所需端点添加相应的 OSGi CORS 配置文件来完成。
+要访问GraphQL端点，必须配置CORS策略并添加到通过AEM Manager部署到AEM的Cloud项目。 此操作可通过为所需端点添加相应的OSGi CORS配置文件来完成。
 
 #### 详细信息 {#details-cors-setup}
 
@@ -78,11 +80,11 @@ Dispatcher通常配置为执行以下操作：
 
 CORS通常配置为用于：
 
-* 发布：生产
+* Publish：生产
 
 ### 身份验证 {#authentication}
 
-用于内容片段投放的 Adobe Experience Manager as a Cloud Service (AEM) GraphQL API 的主要用例是接受来自第三方应用程序或服务的远程查询。这些远程查询可能需要经过身份验证的 API 访问，以保护 Headless 内容投放。
+用于内容片段投放的Adobe Experience Manager as a Cloud Service (AEM) GraphQL API的主要用例是接受来自第三方应用程序或服务的远程查询。 这些远程查询可能需要经过身份验证的 API 访问，以保护 Headless 内容投放。
 
 #### 详细信息 {#details-authentication}
 
@@ -135,7 +137,7 @@ CORS通常配置为用于：
 
 CDN通常配置为执行以下操作：
 
-* 发布：生产
+* Publish：生产
 
 ### 配置和创建内容片段 {#cconfigure-create-content-fragments}
 

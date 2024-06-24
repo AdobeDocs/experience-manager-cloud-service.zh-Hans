@@ -2,9 +2,9 @@
 title: 将ContextHub添加到页面并访问存储
 description: 将ContextHub添加到您的页面以启用ContextHub功能并链接到ContextHub JavaScript库
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%

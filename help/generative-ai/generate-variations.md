@@ -2,7 +2,9 @@
 title: 生成变体
 description: 了解生成变体，可从AEMas a Cloud Service和Edge Delivery ServicesSidekick访问
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
+feature: Generate Variations
+role: Admin, Architect, Developer
+source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -380,7 +382,7 @@ Adobe提供了大量要使用的受众。
 1. 在Google Drive中，创建一个包含两列的电子表格文件：
    1. 第一列将显示在下拉列表中。
    1. 第二列是受众描述。
-1. 发布文件：
+1. Publish文件：
    1. 文件 — >共享 — >发布到Web -> CSV
 1. 将URL复制到已发布的文件。
 1. 转到生成变体。

@@ -2,9 +2,11 @@
 title: 内容交付流程概述
 description: 详细了解内容交付数据流以及如何发布内容
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: d1da8559da856e028a5dcad1d0c0b2c00176af0c
-workflow-type: ht
-source-wordcount: '217'
+feature: Dispatcher
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+workflow-type: tm+mt
+source-wordcount: '219'
 ht-degree: 100%
 
 ---

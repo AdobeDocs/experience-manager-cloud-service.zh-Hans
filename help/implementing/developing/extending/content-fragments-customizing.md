@@ -2,9 +2,9 @@
 title: 自定义和扩展内容片段
 description: 内容片段扩展了标准资产。 了解如何对其进行自定义。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-feature: Developing
+feature: Developing, Content Fragments
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 1%

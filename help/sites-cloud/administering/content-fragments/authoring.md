@@ -4,7 +4,8 @@ description: 了解如何为内容片段创作内容，并根据用途创建该�
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: ec0129b0087e86f50c6c1e65d5445693e63278e0
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2668'
 ht-degree: 78%

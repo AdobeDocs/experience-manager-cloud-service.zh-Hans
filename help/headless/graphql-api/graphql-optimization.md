@@ -2,10 +2,12 @@
 title: 优化 GraphQL 查询
 description: 了解如何在 Adobe Experience Manager as a Cloud Service 中对内容片段进行筛选、分页和排序时优化 GraphQL 查询，以实现 headless 内容交付。
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 65%
+source-wordcount: '1874'
+ht-degree: 64%
 
 ---
 
@@ -35,7 +37,7 @@ ht-degree: 65%
 
 请参阅：
 
-* [持久 GraphQL 查询](/help/headless/graphql-api/persisted-queries.md).
+* [持久GraphQL查询](/help/headless/graphql-api/persisted-queries.md).
 * [了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询](/help/headless/graphql-api/sample-queries.md)
 
 ### 缓存策略 {#cache-strategy}
@@ -144,7 +146,7 @@ AEM 提供了两种方法来优化 GraphQL 查询：
 AEM 中的 GraphQL 支持两种类型的分页：
 
 * [基于限制/偏移的分页](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-此分页用于列表查询；它们以`List` 结尾；例如 `articleList`。
+这用于列表查询；它们以 `List`；例如， `articleList`.
 要使用它，您必须提供要返回的第一个项目的位置 (`offset`) 和要返回的项目数（`limit` 或页面大小）。
 
 * [基于光标的分页](/help/headless/graphql-api/content-fragments.md#paginated-first-after)（由 `first` 和 `after` 表示）

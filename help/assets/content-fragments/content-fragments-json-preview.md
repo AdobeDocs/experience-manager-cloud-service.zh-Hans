@@ -4,7 +4,8 @@ description: 了解如何在实施 AEM 无头解决方案时轻松预览内容�
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
 role: User
-source-git-commit: 1e206a33ef03edfa1af3c0d95f3665b5604f22f3
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 72%
