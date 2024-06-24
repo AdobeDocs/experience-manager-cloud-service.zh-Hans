@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
-workflow-type: ht
+source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -121,12 +121,12 @@ Experience Manager Assets 现在可让您使用“Assets”视图快速[将资�
 
 
 
-### AEM Forms 中的早期采用者功能 {#forms-new-early-adopter-features}
+### AEM Forms中的抢先体验功能 {#forms-new-access-adopter-features}
 
-AEM Forms 早期采用者计划项目为您提供了一个独特的机会，让您能够抢先体验前沿创新，并帮助塑造其发展。
+AEM Forms抢先体验计划为您提供了一个独一无二的机会，让您能够抢在其他人之前独享尖端创新技术，并帮助塑造其发展形态。
 该计划支持多项创新。
 
-本发行说明列出了当前版本中提供的创新功能。有关早期采用者计划下可用创新功能的完整列表，请参阅 [AEM Forms 早期采用者计划文档](/help/forms/early-adopter-ea-features.md)。
+本发行说明列出了当前版本中提供的创新功能。有关早期访问计划下可用的创新的完整列表，请参阅 [AEM Forms抢先访问计划文档](/help/forms/early-access-ea-features.md).
 
 #### 增强的机器人防护方法
 
@@ -151,7 +151,7 @@ AEM Forms 提供多种验证码选项，您可以选择最适合您特定需求�
 
 >[!IMPORTANT]
 >
-> 如果您有兴趣加入我们的早期采用者计划，了解任何早期采用者创新功能，只需从您的官方邮箱发送电子邮件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，申请访问权限即可。您可以申请访问全部或任何特定的创新。
+> 如果您有兴趣加入我们的抢先体验计划以获得任何抢先体验创新，只需将您的官方地址中的电子邮件发送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 以请求访问权限。 您可以申请访问全部或任何特定的创新。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -173,7 +173,7 @@ Adobe Developer Console 用于生成访问各种 API 的凭据。其中一种凭
 
 #### RDE 支持使用网站主题和网站模板的前端代码 {#rde-frontend}
 
-RDE 现在支持基于[网站主题](/help/sites-cloud/administering/site-creation/site-themes.md)和[网站模板](/help/sites-cloud/administering/site-creation/site-templates.md)的[前端代码](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde)，供早期采用者使用。在 RDE 的情况下，使用命令行指令而非[前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)实现这一点。
+[RDE现在支持前端代码](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) 基于 [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) 和 [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md)，适用于率先采用者。 在 RDE 的情况下，使用命令行指令而非[前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)实现这一点。
 
 #### 增强的 RDE 日志记录功能 {#rde-logging}
 
