@@ -1,31 +1,31 @@
 ---
-title: 当前早期采用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
-description: 当前早期采用者功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
+title: 当前早期访问功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
+description: 当前早期访问功能 [!DNL Adobe Experience Manager Forms] as a Cloud Service。
 Feature: Introduction
 Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 0c49e0ba5deb3659418cb0d057151863beac5340
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 22%
 
 ---
 
-# AEM Forms率先采用者计划
+# AEM Forms抢先体验计划
 
-AEM Forms早期采用者计划为您提供了一个独一无二的机会，让您能够抢在其他人之前独享尖端功能并帮助塑造其开发形态。 通过此计划，您可以：
+AEM Forms抢先体验计划为您提供了一个独特的机会，让您抢在别人之前独占访问前沿功能并帮助规划其开发。 通过此计划，您可以：
 
 * 成为率先在进入主流之前获得尖端技术的企业之一。
 * 与产品团队共同创新，共同塑造产品的未来。 使用您的用例来指导开发，确保创新成熟并解决您的现实挑战。
 * 提供反馈并帮助我们在发布之前解决问题，从而在完全发布后提供更流畅的用户体验。
 
-## 如何加入率先采用者计划？
+## 如何加入抢先体验计划？
 
-如果您有兴趣加入我们的早期采用者计划以进行任何早期采用者创新，只需将官方地址中的电子邮件发送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  以请求访问权限。 您可以申请访问全部或任何特定的创新。
+如果您有兴趣加入我们的抢先体验计划以获得任何抢先体验创新，只需将您的官方地址中的电子邮件发送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  以请求访问权限。 您可以申请访问全部或任何特定的创新。
 
-## 率先采用者创新
+## 抢先体验创新
 
 ### AEM Forms创成人工智能(Gen AI)
 
@@ -102,7 +102,7 @@ AEM Forms到Marketo连接器为使用Adobe Experience Manager (AEM)构建的Web�
 本质上，AEM Forms到Marketo Connector可帮助您利用两个平台的优势，创建更高效和更高效的营销漏斗。
 
 
-## 其他早期采用者创新
+## 其他早期访问创新
 
 ### 从右至左(RTL)语言支持
 
