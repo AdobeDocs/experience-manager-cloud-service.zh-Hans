@@ -4,9 +4,9 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
+source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
 workflow-type: tm+mt
-source-wordcount: '4244'
+source-wordcount: '4215'
 ht-degree: 4%
 
 ---
@@ -223,11 +223,6 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 
 
 ### 全局标志 {#global-flags}
-
->[!NOTE]
->
-> 这些全局标记尚不可用。 它们将在六月的某个时候推出。
-> 
 
 * 对于不太详细的输出，请使用quiet标志：
 
@@ -565,11 +560,6 @@ RDE重置过程启动后，通常需要几分钟才能完成，并使环境恢�
 有关如何使用Cloud Manager管理环境的更多信息，请参阅 [cloud Manager文档](/help/implementing/cloud-manager/manage-environments.md).
 
 ## 支持JSON输出的命令 {#json-commands}
-
->[!NOTE]
->
-> 这些命令尚不可用。 它们将在六月的某个时候推出。
-> 
 
 大多数命令都支持全局 ```--json``` 该标志禁止控制台输出并返回要在脚本中处理的有效json。 以下是一些受支持的命令以及json输出示例。
 
