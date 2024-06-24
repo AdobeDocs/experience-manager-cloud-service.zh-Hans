@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 93%
@@ -90,7 +90,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 ![暂存测试](assets/stage-testing.png)
 
-## 生产部署阶段 {#deployment-production}
+## 生产部署阶段 {#production-deployment}
 
 部署到生产拓扑的过程略有不同，旨在尽量减小对 AEM 网站访客产生的影响。
 
