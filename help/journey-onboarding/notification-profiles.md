@@ -4,10 +4,10 @@ description: 了解如何在 Admin Console 中创建用户配置文件来管理�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
-workflow-type: ht
-source-wordcount: '982'
-ht-degree: 100%
+source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
+workflow-type: tm+mt
+source-wordcount: '1130'
+ht-degree: 80%
 
 ---
 
@@ -23,9 +23,12 @@ Adobe 有时会就 AEM as a Cloud Service 环境联系用户。除了产品内�
 * **事件通知** – 这些通知是在事件期间或 Adobe 发现您的 AEM as a Cloud Service 环境存在潜在可用性问题时发送的。
 * **主动通知** – 当 Adobe 支持团队成员想要提供有关可使您的 AEM as a Cloud Service 环境受益的潜在优化或建议的指导时，将发送这些通知。
 
->[!NOTE]
->
->不支持将组分配给主动通知。相反，您需要直接将用户分配到产品配置文件。
+用户还可以根据他们收到的特定程序通知 [自定义群组权限。](/help/implementing/cloud-manager/custom-permissions.md)
+
+此外，支持将组分配给主动通知，并且可以将用户和组直接分配给产品配置文件。
+
+* 默认情况下，事件和主动通知组中的用户将收到所有程序的通知。
+* 但是，如果用户不想接收所有通知，则可以使用自定义“读取”权限来指定他们希望接收哪些程序通知。
 
 为了让正确的用户收到这些通知，您需要配置和分配用户配置文件，如本文档所述。
 
@@ -60,7 +63,8 @@ Adobe 有时会就 AEM as a Cloud Service 环境联系用户。除了产品内�
 
    * **产品配置文件名称**：`Incident Notification - Cloud Service`
    * **显示名称**：`Incident Notification - Cloud Service`
-   * **描述**：Cloud Manager 配置文件适用的用户，将在事件期间或 Adobe 发现您的 AEM as a Cloud Service 环境存在潜在可用性问题时收到通知
+   * **描述**：Cloud Manager配置文件适用的用户，将在事件期间或Adobe发现您的AEMas a Cloud Service环境存在潜在可用性问题时收到通知。
+      * 具有特定程序自定义读取权限的用户只有在选择使用自定义权限时，才会收到这些程序的通知。
 
 1. 单击“**保存**”。
 
@@ -69,8 +73,9 @@ Adobe 有时会就 AEM as a Cloud Service 环境联系用户。除了产品内�
    * **产品配置文件名称**：`Proactive Notification - Cloud Service`
    * **显示名称**：`Proactive Notification - Cloud Service`
    * **描述**：Cloud Manager 配置文件适用的用户，在 Adobe 支持团队成员想要提供有关您的 AEM as a Cloud Service 环境配置的潜在优化或推荐时会收到通知
+      * 具有特定程序自定义读取权限的用户只有在选择使用自定义权限时，才会收到这些程序的通知。
 
-1. 单击“**保存**”。
+1. 单击&#x200B;**保存**。
 
 您的两个新通知配置文件已创建。
 
@@ -88,7 +93,7 @@ Adobe 有时会就 AEM as a Cloud Service 环境联系用户。除了产品内�
 
 按照以下步骤添加尚未为其设置 Federated ID 的用户。
 
-1. 确定应接收事件或主动通知的用户。
+1. 确定应接收事件或主动通知的用户或组。
 
 1. 如果您还没有登录，请登录 Admin Console [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
@@ -113,13 +118,15 @@ Adobe 有时会就 AEM as a Cloud Service 环境联系用户。除了产品内�
 
 1. 单击&#x200B;**保存**，将向您添加的用户发送欢迎电子邮件。
 
-受邀用户现在将收到通知。对您团队中您希望接收通知的用户重复这些步骤。
+受邀用户现在将收到通知。具有特定程序自定义读取权限的用户只有在选择使用自定义权限时，才会收到这些程序的通知。
+
+对您团队中您希望接收通知的用户重复这些步骤。
 
 ### 将现有用户添加到配置文件 {#existing-user}
 
 按照以下步骤添加已拥有 Federated ID 的用户。
 
-1. 确定应接收事件或主动通知的用户。
+1. 确定应接收事件或主动通知的用户或组。
 
 1. 如果您还没有登录，请登录 Admin Console [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)。
 
@@ -142,10 +149,12 @@ Adobe 有时会就 AEM as a Cloud Service 环境联系用户。除了产品内�
 
 1. 单击&#x200B;**保存**，将向您添加的用户发送欢迎电子邮件。
 
-受邀用户现在将收到通知。对您团队中您希望接收通知的用户重复这些步骤。
+受邀用户现在将收到通知。具有特定程序自定义读取权限的用户只有在选择使用自定义权限时，才会收到这些程序的通知。
+
+对您团队中您希望接收通知的用户重复这些步骤。
 
 ## 其他资源 {#additional-resources}
 
-如果您想了解入门历程以外的内容，以下是额外的可选资源。
+如果您想了解上线历程以外的内容，以下是额外的可选资源。
 
 * [操作中心](/help/operations/actions-center.md) - 利用操作中心方便地针对事件和其他重要信息采取行动。
