@@ -2,9 +2,9 @@
 title: 批准Experience Manager中的资源
 description: 了解如何批准中的资源 [!DNL Experience Manager].
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,18 @@ ht-degree: 1%
 
 ## 开始之前 {#pre-requisites}
 
-您必须有权访问AEM Assetsas a Cloud Service并有权编辑 **[!UICONTROL 审核状态]** 资产的属性。
+您必须有权访问AEM Assetsas a Cloud Service，并且有权编辑 **[!UICONTROL 审核状态]** 资产的属性。
 
 ## 配置
 
-您需要一次性更新中的适用元数据架构 [!DNL Experience Manager] 然后才能批准资产。 您可以跳过此配置，只需 [!DNL Experience Manager Assets]. 按照以下步骤配置元数据架构：
+在批准资产之前，您需要一次性更新管理员视图中适用的元数据架构。 您可以为Assets视图跳过此配置。 按照以下步骤配置元数据架构：
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**.
+1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据架构]**.
 1. 选择适用的元数据架构并单击 **[!UICONTROL 编辑]**. <br>此 **[!UICONTROL 元数据架构表单编辑器]** 打开时显示 **[!UICONTROL 基本]** 制表符突出显示。
 1. 向下滚动并单击 **[!UICONTROL 审核状态]**.
 1. 单击 **[!UICONTROL 规则]** 选项卡。
 1. 取消选中 **[!UICONTROL 禁用编辑]** 并单击 **[!UICONTROL 保存]**.
+如果您需要查看 **[!UICONTROL 审核状态]** 字段已映射到，导航到 **[!UICONTROL 设置]** 选项卡并查看 `./jcr:content/metadata/dam:status` 中的值 **[!UICONTROL 映射到属性]** 字段。
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ ht-degree: 1%
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   同样，您可以使用批准资源 [新建资产视图](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en#manage-asset-status).
+   同样，您可以使用批准资源 [新的Assets视图](/help/assets/manage-organize-assets-view.md).
 
 ## 批量审批资产 {#bulk-approve-assets}
 
@@ -53,13 +54,13 @@ ht-degree: 1%
 <br>执行以下步骤以审批中的批量资产 [!DNL Experience Manager]：
 
 1. 在创作环境(https://author-pXXX-eYYY.adobeaemcloud.com)中创建文件夹。 替换 _XXX_ 包含您的项目ID和 _YYYY_ Experience Manager中的环境ID。
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据配置文件]**.
+1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据配置文件]**.
 1. 单击 **[!UICONTROL 创建]** 页面右上角的。
 1. 添加配置文件标题并单击 **[!UICONTROL 创建]**. 已成功创建元数据配置文件。
 1. 选择新创建的元数据配置文件，然后单击 **[!UICONTROL 编辑 _(e)_]**. <br>此&#x200B;**[!UICONTROL 编辑元数据配置文件]**表单打开，其中&#x200B;**[!UICONTROL 基本]**制表符突出显示。
 1. 拖放 **[!UICONTROL 单行文本字段]** 从 **[!UICONTROL 构建表单]** 区域到表单中的元数据区域的位置。
 1. 单击新添加的字段，然后在 **[!UICONTROL 设置]** 面板：
-   1. 更改 **[!UICONTROL 字段标签]** 到 _批准的资产_.
+   1. 更改 **[!UICONTROL 字段标签]** 到 _已批准的Assets_.
    1. 更新 **[!UICONTROL 映射到属性]** 到 _./jcr：content/metadata/dam：status_.
    1. 将默认值更改为 _已批准_.
 
@@ -74,3 +75,31 @@ ht-degree: 1%
 >[!NOTE]
 > 
 >此方法可批准文件夹中新创建的资产。 对于文件夹中的现有资源，您需要手动选择并批准它们。 <br> 或者，您可以使用 **[!UICONTROL 重新处理]** 选项，用于将元数据配置文件中的更改应用于旧资源。
+
+同样，要在Assets视图中批量批准文件夹内的资源，请执行以下操作：
+
+1. 选择资产并单击 **[!UICONTROL 批量元数据编辑]**.
+
+1. 选择 **[!UICONTROL 已批准]** 在 **[!UICONTROL 状态]** 中的可用字段 [!UICONTROL 属性] 区段。
+
+1. 单击&#x200B;**[!UICONTROL 保存]**。
+
+## 复制已批准资产的投放URL {#copy-delivery-url-approved-assets}
+
+存储库中所有已批准资产的投放URL在以下情况下可用： [!UICONTROL 具有OpenAPI功能的Dynamic Media] 已在AEM as a Cloud Service实例中启用。
+
+要在存储库中复制已批准资产的投放URL，请执行以下操作：
+
+1. 选择资源并单击 **[!UICONTROL 详细信息]**.
+
+1. 单击右窗格中可用的“格式副本”图标。
+
+1. 选择 **[!UICONTROL 带有OpenAPI的Dynamic Media]** 中提供 **[!UICONTROL 动态]** 部分。
+
+1. 单击 **[!UICONTROL 复制URL]** 以复制资产的投放URL。
+   ![复制投放URL](/help/assets/assets/copy-delivery-url.png)
+
+   >[!NOTE]
+   >
+   >仅在Assets视图中提供了复制已批准资源的投放URL的选项。
+

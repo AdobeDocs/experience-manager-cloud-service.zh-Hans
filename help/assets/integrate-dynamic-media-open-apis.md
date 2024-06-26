@@ -2,16 +2,16 @@
 title: 将AEM Assets与下游应用程序集成
 description: 将AEM Assets与下游应用程序集成
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
-# 将AEM Assets与下游应用程序集成 {#integrate-new-dynamic-media-apis}
+# 将AEM Assets与下游应用程序集成 {#integrate-dynamic-media-open-apis}
 
-全部 [批准的资产](approved-assets.md) 在Experience Manager资源存储库中可用，可交付给下游应用程序。
+全部 [批准的资产](approve-assets.md) 在Experience Manager资源存储库中可用，可交付给下游应用程序。
 
 您可以使用搜索和交付API将您自己的自定义用户界面与Experience Manager Assets存储库集成，也可以使用Adobe的微前端资源选择器。
 

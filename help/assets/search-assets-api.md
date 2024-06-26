@@ -1,23 +1,23 @@
 ---
-title: 搜索资产API
+title: 搜索Assets API
 description: 了解如何使用Search Assets API。
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# 搜索资产API {#search-assets-api}
+# 搜索Assets API {#search-assets-api}
 
-全部 [批准的资产](approved-assets.md) 可以搜索Experience Manager资源存储库中的可用资源，然后使用投放URL将其交付给集成的下游应用程序。
+全部 [批准的资产](approve-assets.md) 可以搜索Experience Manager资源存储库中的可用资源，然后使用投放URL将其交付给集成的下游应用程序。
 
 从Experience Manager存储库中搜索正确的已批准资源是使用投放URL交付资源的第一步。 对搜索请求的响应包括对应于满足搜索条件的资产的JSON文档数组。 每个JSON文档均使用 `id` 字段，用于撰写资产投放请求。
 
 ![直接二进制上传协议概述](assets/search-assets-api-overview.png)
 
-您可以在搜索资产API请求中定义属性以启用以下功能：
+您可以在Search Assets API请求中定义属性以启用以下功能：
 
 * **全文搜索**：使用 `match` 查询以定义要搜索的文本。  您还可以在中使用运算符 `match` 查询以筛选结果。
 
@@ -42,7 +42,7 @@ Search Assets API请求中的端点必须采用以下格式：
 
 POST
 
-## 搜索资产API标头 {#search-assets-api-header}
+## 搜索Assets API标头 {#search-assets-api-header}
 
 在“搜索资产API”中定义标头时，您需要提供以下详细信息：
 
@@ -55,7 +55,7 @@ headers: {
     },
 ```
 
-要调用搜索API，需要在中定义IMS令牌 `Authorization` 详细信息。 IMS令牌从技术帐户中获取。 请参阅 [获取AEMas a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 以创建新的技术帐户。 请参阅 [生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) 以生成IMS令牌并在搜索资产API请求标头中正确使用它。
+要调用搜索API，需要在中定义IMS令牌 `Authorization` 详细信息。 IMS令牌从技术帐户中获取。 请参阅 [获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 以创建新的技术帐户。 请参阅 [生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) 以生成IMS令牌并在搜索资产API请求标头中正确使用它。
 
-要查看请求示例、响应示例和响应代码，请参阅 [搜索资产API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
+要查看请求示例、响应示例和响应代码，请参阅 [搜索Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search).
 

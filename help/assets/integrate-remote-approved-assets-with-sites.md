@@ -1,10 +1,9 @@
 ---
 title: 将远程AEM Assets与AEM Sites集成
 description: 了解如何在Creative Cloud中配置AEM站点并将其与批准的AEM Assets连接。
-role: null
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -12,21 +11,21 @@ ht-degree: 0%
 
 # 将远程AEM Assets与AEM Sites集成  {#integrate-approved-assets}
 
-有效管理数字资产对于在各种在线平台上提供引人入胜且一致的品牌体验至关重要。 具有OpenAPI功能的Dynamic Media通过实现AEM Sites与远程AEM Assets之间的无缝集成，增强了数字资源管理。 这项创新功能允许您轻松地在多个AEM环境中共享和管理不同类型的已批准数字资产，从而简化站点作者和内容编辑器的工作流程。
+有效管理数字资产对于在各种在线平台上提供引人入胜且一致的品牌体验至关重要。 具有OpenAPI功能的Dynamic Media通过实现AEM Sites与AEM Assetsas a Cloud Service之间的无缝集成，增强了数字资源管理。 这项创新功能允许您轻松地在多个AEM环境中共享和管理不同类型的已批准数字资产，从而简化站点作者和内容编辑器的工作流程。
 
 通过具有OpenAPI功能的Dynamic Media，Sites作者可以直接在AEM页面编辑器中使用远程DAM中的资源，并且 [内容片段](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html)，简化了内容创建和管理过程。
 
-用户可以不受最大数量限制地将多个AEM Sites实例连接到远程DAM部署，这是优于 [连接的资产](use-assets-across-connected-assets-instances.md) 功能。
+用户可以不受最大数量限制地将多个AEM Sites实例连接到远程DAM部署，这是优于 [连接的Assets](use-assets-across-connected-assets-instances.md) 功能。
 
 ![图像](/help/assets/assets/connected-assets-rdam.png)
 
 初始设置后，用户可以在AEM Sites实例上创建页面并根据需要添加资源。 添加资源时，用户可以选择存储在其本地DAM中的资源，也可以浏览并使用远程DAM中可用的资源。
 
-具有OpenAPI功能的Dynamic Media提供了其他一些好处，例如访问和使用内容片段中的远程资源，获取远程资源的元数据等等。 了解更多关于另一条的信息 [Dynamic Media与Connected Assets相比具有OpenAPI功能的优势](/help/assets/new-dynamic-media-apis-faqs.md).
+具有OpenAPI功能的Dynamic Media提供了其他一些好处，例如访问和使用内容片段中的远程资源，获取远程资源的元数据等等。 了解更多关于另一条的信息 [Dynamic Media与Connected Assets相比具有OpenAPI功能的优势](/help/assets/dynamic-media-open-apis-faqs.md).
 
-## 开始之前
+## 开始之前 {#pre-requisits-sites-integration}
 
-* 设置以下内容 [环境变量](/help/implementing/cloud-manager/environment-variables.md#add-variables) 对于AEMas a Cloud Service：
+* 设置以下内容 [环境变量](/help/implementing/cloud-manager/environment-variables.md#add-variables) 对于AEM as a Cloud Service：
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
      `pXXXX` 是指项目ID <br>
@@ -41,7 +40,7 @@ ht-degree: 0%
    1. 添加 **[!UICONTROL repositoryID]**= &quot;delivery-pxxxxx-eyyyyyy.adobeaemcloud.com&quot;和 **[!UICONTROL imsClient]**= [IMSClientId]
 了解有关 [IMS身份验证](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
 
-* 通过IMS访问登录到远程DAM AEMas a Cloud Service实例。
+* 通过IMS访问登录到远程DAM AEM as a Cloud Service实例。
 
 * 在远程DAM中打开具有OpenAPI功能的Dynamic Media切换开关。
 
@@ -53,9 +52,9 @@ ht-degree: 0%
 
 ![图像](/help/assets/assets/open-APIs.png)
 
-### 在AEM页面编辑器中访问远程资产
+### 在AEM页面编辑器中访问远程资产 {#access-assets-page-editor}
 
-请按照以下步骤在AEM Sites实例上的AEM页面编辑器中使用远程资产。 您可以在AEMas a Cloud Service和AEM 6.5中执行此集成。
+请按照以下步骤在AEM Sites实例上的AEM页面编辑器中使用远程资产。 您可以在AEM as a Cloud Service和AEM 6.5中进行此集成。
 
 1. 转到 **[!UICONTROL 站点]** > _您的网站_ 其中AEM **[!UICONTROL 页面]** 存在，您需要在该处添加远程资产。
 1. 导航到特定的AEM **[!UICONTROL 页面]** 在您网站中的 **[!UICONTROL 站点]** 您打算在其中添加远程资产的部分。
@@ -71,15 +70,17 @@ ht-degree: 0%
 1. 添加替换文本并单击 **[!UICONTROL 完成]**.
    <br> 远程资产会显示在图像组件中。 您还可以在资产加载到页面上时验证该资产的投放URL，或者使用“预览”选项卡进行验证。 投放URL指示正在远程访问资产。
 
+您只能在AEM页面编辑器中现成访问图像核心组件v3和Teaser核心组件v2中的远程资产。 对于包括自定义组件在内的其他组件，需要进行自定义才能将资产选择器与这些组件集成。
+
 #### 视频：访问AEM页面编辑器中的远程资产
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427666)
 
-### 访问AEM内容片段中的远程资源
+### 访问AEM内容片段中的远程资源 {#access-assets-content-fragment}
 
-请按照以下步骤在AEM Sites实例上的AEM内容片段中使用远程资产。 您可以在AEM 6.5中而不是在AEMas a Cloud Service上执行此操作。
+请按照以下步骤在AEM Sites实例上的AEM内容片段中使用远程资产。 您可以在AEM 6.5中而不是在AEM as a Cloud Service上执行此集成。
 
-1. 转到 **[!UICONTROL 资产]** > **[!UICONTROL 文件]**.
+1. 转到 **[!UICONTROL Assets]** > **[!UICONTROL 文件]**.
 1. 选择呈现内容片段的资源文件夹。
 1. 选择内容片段并单击 **[!UICONTROL 编辑(_e_)]**.
 
@@ -99,3 +100,7 @@ ht-degree: 0%
 #### 视频：访问AEM内容片段中的远程资产
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427667)
+
+### 访问Edge Delivery Services中的远程资源 {#access-assets-eds}
+
+您还可以访问Edge Delivery Services中的远程资源。 有关更多信息，请参阅 [利用通过Dynamic Media交付的、具有OpenAPI功能的Assets as a Cloud Service中的资源](https://www.aem.live/docs/aem-assets-sidekick-plugin#utilizing-assets-from-assets-cloud-services-delivered-via-dynamic-media-with-openapi).
