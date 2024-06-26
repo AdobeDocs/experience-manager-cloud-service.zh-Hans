@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ AEM Forms Edge Delivery Services 是一组可组合的服务，可用于实现�
 
 这些服务使您能够：
 
-* **使用选定工具创建注册体验**：通过分离内容来源而提高创作效率。现成您可以使用基于文档的创作(Microsoft SharePoint或Google Drive)、WYSIWYG创作(通用编辑器或自适应Forms编辑器)。 您可以在同一个表单网站上使用多个内容源并使用首选创作工具，如Microsoft Excel、Google Sheets、通用编辑器或自适应Forms编辑器。
+* **使用选定工具创建注册体验**：通过分离内容来源而提高创作效率。您可以使用开箱即用、基于文档的创作功能（Microsoft SharePoint 或 Google Drive）和所见即所得的创作功能（通用编辑器或自适应表单编辑器）。您可以在同一个表单网站上使用多个内容源，并使用首选的创作工具，如 Microsoft Excel、Google Sheets、通用编辑器或自适应表单编辑器。
 
 * **提供卓越的数字注册体验：**&#x200B;提供快速加载和渲染的数字注册体验，并通过实际使用监控 (RUM) 持续监控表单性能。更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
 
@@ -25,11 +25,11 @@ AEM Forms Edge Delivery Services 是一组可组合的服务，可用于实现�
 
 ## AEM Forms Edge Delivery Services 概述 {#edge-overview}
 
-AEM Forms Edge Delivery 服务让您在网站上创作表单的方式具有高度的灵活性。您可以通过以下方式创作内容和表单 [所见即所得创作](/help/forms/creating-adaptive-form-core-components.md) 以及 [基于文档的创作](/help/edge/docs/forms/create-forms.md). AEM Forms Edge Delivery Services 提供一个称为 [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) 的表单区块，将表单添加到您的 Edge Delivery Services 站点。
+AEM Forms Edge Delivery 服务让您在网站上创作表单的方式具有高度的灵活性。您可以使用[所见即所得的创作](/help/forms/creating-adaptive-form-core-components.md)功能以及[基于文档的创作](/help/edge/docs/forms/create-forms.md)功能来创作内容和表单。AEM Forms Edge Delivery Services 提供一个称为 [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) 的表单区块，将表单添加到您的 Edge Delivery Services 站点。
 
 例如，您直接在 Microsoft Excel 或 Google Sheets 中创作表单，这些电子表格将转换为您网站的表单。任何新表单或表单内容（例如新表单字段）都可以立即在您的网站上使用，无需重建过程。
 
-下图说明如何在 Microsoft Excel 或 Google Sheets（基于文档的创作）中编辑表单并将其发布到 Edge Delivery Services。它还显示了使用WYSIWYG创作(通用编辑器或自适应Forms编辑器)的AEM发布方法。
+下图说明如何在 Microsoft Excel 或 Google Sheets（基于文档的创作）中编辑表单并将其发布到 Edge Delivery Services。它还展示了使用所见即所得的创作（通用编辑器或自适应表单编辑器）功能的 AEM 发布方法。
 
 ![发布到 Edge Delivery Services 和 AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
@@ -39,16 +39,16 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客户可直接从其 Git
 
 ![安装 AEM SideKick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-选择 [基于文档的创作](#document-based-authoring-features) 和 [所见即所得创作](#wysiwyg-authoring-features) 具体取决于您的特定要求：
+要选择[基于文档的创作](#document-based-authoring-features)还是 [所见即所得的创作](#wysiwyg-authoring-features)，取决于您的具体要求：
 
 * 对于仅通过几个字段收集基本信息的简单表单（例如联系我们表单、商机开发表单或服务请求表单），以及需要使用电子表格进行快速数据连接的情况，[基于文档的创作](#document-based-authoring-features)非常适合。您可以像在 Google Sheets 或 Microsoft Excel 中构建文档一样构建这些表单。
 
-* 对于复杂表单，例如需要多个面板、复杂规则和业务逻辑、数据操作、与外部系统集成，或使用AEM功能简化工作流的表单， [所见即所得创作](#wysiwyg-authoring-features) 是一个更好的选择。
+* 对于复杂的表单，例如需要多个面板的表单、复杂的规则和业务逻辑、数据操作、与外部系统的集成或使用 AEM 功能简化的工作流程，那么[所见即所得的创作](#wysiwyg-authoring-features)则是一个更好的选择。
 
 
-### 基于文档的创作和WYSIWYG创作的主要功能
+### 基于文档的创作和所见即所得的创作的主要功能
 
-基于文档的创作提供了一组基本功能，而WYSIWYG创作解锁了基于文档的创作之外的其他功能，使您能够构建更复杂且交互式的表单。 基于文档的创作和WYSIWYG创作的主要功能包括：
+基于文档的创作提供了一组基本功能，所见即所得的创作解锁了基于文档的创作之外的其他功能，使您能够构建更复杂的交互式表单。基于文档的创作和所见即所得的创作的主要功能包括：
 
 #### 基于文档的创作功能
 
@@ -63,9 +63,9 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客户可直接从其 Git
 * 直接将表单数据提交到 Microsoft Excel 或 Google Sheets 或电子邮件地址。
 * 通过实际使用监控 (RUM) 监控表单性能
 
-#### 所见即所得创作功能
+#### 所见即所得的创作功能
 
-所见即所得创作提供用于构建表单的WYSIWYG界面(通用编辑器和自适应Forms编辑器)，并提供基于文档创作的所有功能以及大量其他功能：
+所见即所得的创作提供用于构建表单的所见即所得界面（通用编辑器以及自适应表单编辑器），并提供基于文档的创作的所有功能，以及一系列其他功能：
 
 * 用于创建复杂逻辑的高级规则编辑器。
 * 自定义功能的服务器端可扩展性。
@@ -77,22 +77,22 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客户可直接从其 Git
 * 表单数据模型 (FDM)，用于定义数据结构和与各种数据源的交互。
 * 能够从多个提交操作中进行选择来处理表单提交，包括将数据提交到 Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics 以及更多数据源。
 
-上述所有功能也可通过自适应Forms编辑器获得。
+所有上述功能也可通过自适应表单编辑器使用。
 
-本质上，WYSIWYG Authoring（通用编辑器和编辑器） [自适应Forms编辑器](/help/forms/creating-adaptive-form-core-components.md))构建在 [基于文档的创作](/help/edge/docs/forms/create-forms.md)，提供了更高级的工具包来创建和管理复杂的表单。
+本质上，所见即所得的创作（通用编辑器和[自适应表单编辑器](/help/forms/creating-adaptive-form-core-components.md)）建立在[基于文档的创作](/help/edge/docs/forms/create-forms.md)的基础之上，为创建和管理复杂表单提供了更高级的工具包。
 
 >[!NOTE]
 >
 >
-> WYSIWYG创作功能可通过率先采用者计划获得。 如果您有兴趣，请从您的工作地址向 aem-forms-ea@adobe.com 发送一封快速电子邮件，以请求访问该功能。
+> 所见即所得的创作功能可在早期采用者计划中使用。如果您有兴趣，请从您的工作地址向 aem-forms-ea@adobe.com 发送一封快速电子邮件，以请求访问该功能。
 
 ### AEM Forms Edge Delivery Services：表单的创作、发布和提交
 
-下图说明了使用基于文档的创作和WYSIWYG创作来创建、发布和提交表单的过程。
+下图说明了使用基于文档的创作和所见即所得的创作创建、发布和提交表单的过程。
 
 ![基于文档的创作](/help/edge/assets/document-based-authoring-workflow.png)
 
-![所见即所得创作](/help/edge/assets/wysiwyg-authoring-workflow.png)
+![所见即所得的创作](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## 开始创建表单
 
