@@ -3,14 +3,16 @@ title: 比较两个不同的自适应表单。
 description: 根据字段、内容和表单组件比较两个不同的表单。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
-# 比较自适应Forms {#compare-two-forms}
+# 比较自适应表单 {#compare-two-forms}
 
 <span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
@@ -27,4 +29,3 @@ ht-degree: 9%
 ## 另请参阅 {#see-also}
 
 {{see-also}}
-

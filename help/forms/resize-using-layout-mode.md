@@ -1,11 +1,11 @@
 ---
 title: 如何使用布局模式调整自适应表单组件的大小？
 description: 定义AEM Forms组件的位置，了解如何访问布局模式、调整组件大小、调整面板大小以及定义面板的多列布局。
-role: User
+role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 5%

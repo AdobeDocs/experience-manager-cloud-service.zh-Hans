@@ -3,7 +3,8 @@ title: 如何为自适应表单配置提交操作？
 description: 自适应表单提供了多个提交操作。提交操作定义了提交后处理自适应表单的方式。您可以使用内置的提交操作或创建您自己的提交操作。
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 73%
@@ -117,7 +118,7 @@ ht-degree: 73%
 >[!NOTE]
 >
 > * 所有表单字段必须具有不同的元素名称，即使这些字段位于自适应表单的不同面板上也是如此。
-> * AEMas a Cloud Service要求对出站邮件进行加密。 默认情况下，出站电子邮件处于禁用状态。 要激活它，请将支持票证提交到 [请求访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hans#sending-email).
+> * AEM as a Cloud Service要求对出站邮件进行加密。 默认情况下，出站电子邮件处于禁用状态。 要激活它，请将支持票证提交到 [请求访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hans#sending-email).
 
 您还可以在电子邮件中包含附件和记录文档(DoR)。 要启用 **[!UICONTROL 附加记录文档]** 选项，配置自适应表单以生成记录文档(DoR)。 您可以启用相应选项，以从自适应表单属性生成记录文档。
 

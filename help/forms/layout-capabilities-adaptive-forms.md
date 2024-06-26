@@ -3,7 +3,8 @@ title: 自适应Forms的布局功能是什么？
 description: 自适应Forms在各种设备上的布局和外观受布局设置控制。 了解各种布局及其应用方式。
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 8%

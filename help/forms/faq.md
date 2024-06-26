@@ -3,13 +3,13 @@ title: AEM Forms as a Cloud Service 常见问题
 description: Forms as a Cloud Service 常见问题
 contentOwner: khsingh
 role: User
-feature: Adaptive Forms, FAQ
+feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -76,15 +76,15 @@ Custom parameters are planned for an upcoming release. -->
 * **能否将图表添加到自适应表单？**
 是，可以将图表添加到自适应表单。自适应表单提供了一个图表组件。可使用它将图表添加到自适应表单。
 
-* **能否将表单数据模型(FDM)连接到关系数据库模型？**
-您可以将表单数据模型(FDM)连接到 [!DNL RESTful web services]， [!DNL SOAP-based web services]， [!DNL OData services]，并将Experience Manager用户配置文件作为数据源。 不支持将表单数据模型(FDM)与关系数据库连接。
+* **能否将表单数据模型 (FDM) 连接到关系数据库模型？**
+您可以将表单数据模型 (FDM) 作为数据源连接到 [!DNL RESTful web services]、[!DNL SOAP-based web services]、[!DNL OData services] 和 Experience Manager 用户配置文件。不支持将表单数据模型 (FDM) 连接到关系数据库。
 
-* **我能否将自定义证书与表单数据模型(FDM)结合使用以进行身份验证？**
-表单数据模型(FDM)不提供使用自定义证书进行身份验证的方法。 因此，不支持 x509 和双向 SSL 等自定义证书。
+* **能否将自定义证书与表单数据模型 (FDM) 结合使用进行身份验证？**
+表单数据模型 (FDM) 不提供使用自定义证书进行身份验证的方法。因此，不支持 x509 和双向 SSL 等自定义证书。
 
 * **能否将 Forms Portal 提交操作用于自适应表单？**
 
-  您可以修改现有的自适应Forms以使用 [提交到REST端点](configuring-submit-actions.md#submit-to-rest-endpoint)， [发送电子邮件](configuring-submit-actions.md#send-email)， [使用表单数据模型(FDM)提交](configuring-submit-actions.md#submit-using-form-data-model)、和 [调用AEM工作流](configuring-submit-actions.md#invoke-an-aem-workflow) 提交操作。 Forms Portal 和 Forms Portal 提交操作尚不可用。请关注每月发行说明以了解这些功能的可用性。
+  您可以修改现有自适应表单，以进行[提交到 REST 端点](configuring-submit-actions.md#submit-to-rest-endpoint)、[发送电子邮件](configuring-submit-actions.md#send-email)、[使用表单数据模型 (FDM) 提交](configuring-submit-actions.md#submit-using-form-data-model)和[调用 AEM 工作流](configuring-submit-actions.md#invoke-an-aem-workflow)提交操作。Forms Portal 和 Forms Portal 提交操作尚不可用。请关注每月发行说明以了解这些功能的可用性。
 
 * **能否将 [!DNL AEM Forms] 应用程序与 [!DNL AEM Forms] as a Cloud Service 结合使用？**
 

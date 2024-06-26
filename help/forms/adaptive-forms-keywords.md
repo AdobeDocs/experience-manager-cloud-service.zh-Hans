@@ -2,15 +2,15 @@
 title: 什么是自适应Forms保留关键词？
 description: 在自适应Forms中不能用作标识符的保留关键词。
 topic-tags: author
-role: Admin, Developer, User
+role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
+exl-id: 2cd3c322-9c38-42be-9877-a03c9ffc02ae
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 4%
 
 ---
-
 
 # 自适应Forms关键词 {#adaptive-forms-keywords}
 

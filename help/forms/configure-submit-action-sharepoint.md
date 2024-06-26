@@ -4,9 +4,11 @@ Description: Learn how to send data from your Adaptive Form to a SharePoint stor
 keywords: 如何为自适应表单连接SharePoint列表？ 、如何为自适应表单连接SharePoint文档库、提交到SharePoint、创建SharePoint文档库配置、在自适应表单中使用提交到SharePoint提交操作、将自适应表单连接到Microsoft&reg；SharePoint列表。
 feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+title: “如何为自适应表单配置提交操作？”
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1052'
 ht-degree: 34%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 34%
 
 此 **[!UICONTROL 提交到SharePoint]** 通过提交操作，可将自适应表单与Microsoft® SharePoint存储无缝连接。 在您提交表单后，它会将表单数据发送到您选择的SharePoint存储中。
 
-AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 ## 优点
 

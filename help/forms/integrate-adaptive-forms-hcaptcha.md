@@ -1,22 +1,23 @@
 ---
 title: 如何在AEM自适应表单中使用Captcha&reg；？
-description: 使用hCaptcha&reg；服务轻松增强表单安全性。 内部分步指南！
+description: 使用 hCaptcha 服务轻松增强表单安全性。里面有分步指南！
 topic-tags: Adaptive Forms, author
 keywords: 验证码&reg；服务，自适应Forms， CAPTCHA挑战，机器人预防，表单提交安全，表单垃圾邮件预防
 feature: Adaptive Forms, Foundation Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 8%
+ht-degree: 19%
 
 ---
 
-
 # 使用hCaptcha连接AEM Forms环境® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview"> 此功能属于早期采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+<span class="preview"> 此功能属于早期采用者计划。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
@@ -28,7 +29,7 @@ AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
 
 ## 将AEM Forms环境与hCaptcha验证码集成
 
-hCaptcha®服务可保护您的表单免遭机器人、垃圾邮件和自动滥用。 它会发起复选框构件质询并评估用户响应，以确定是人类还是机器人与表单交互。 它可防止用户在测试失败时继续操作，并通过阻止机器人发送垃圾邮件或恶意活动来帮助确保在线交易的安全。
+hCaptcha® 服务项目可保护您的表单免受机器人、垃圾邮件和自动滥用的侵害。它提出一个复选框小部件挑战，并评估用户响应以确定与表单交互的是人还是机器人。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意活动来帮助确保在线交易的安全。
 
 AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 您可以用它来在提交表单时显示复选框构件质询。
 
@@ -40,7 +41,7 @@ AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 �
 
 ## 配置hCaptcha的步骤® {#steps-to-configure-hcaptcha}
 
-1. 在您的AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以使用hCaptcha连接AEM Forms环境，请执行以下操作®：
+1. 在AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以使用hCaptcha连接AEM Forms环境，请执行以下操作®：
    1. 打开您的AEM Formsas a Cloud Service实例。
    1. 转到 **[!UICONTROL “工具”>“常规”>“配置浏览器”]**.
    1. 在配置浏览器中，您可以选择现有文件夹或创建文件夹。 您可以创建文件夹并为其启用云配置选项，也可以为现有文件夹启用云配置选项：
@@ -103,7 +104,7 @@ AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 �
 
 现在，只有合法表单(表单填充程序成功清除hCaptcha®服务带来的挑战)才允许表单提交。
 
-**hCaptcha®是Intuition Machines， Inc.的注册商标。**
+**hCaptcha® 是 Intuition Machines, Inc. 的注册商标。**
 
 ## 常见问题解答
 

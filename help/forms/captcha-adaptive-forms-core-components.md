@@ -1,14 +1,15 @@
 ---
 title: 如何在AEM自适应表单中使用Google reCAPTCHA？
-description: 使用Google reCAPTCHA服务可轻松增强表单安全性。 内部分步指南！
+description: 使用Google reCAPTCHA服务可轻松增强表单安全性。 里面有分步指南！
 topic-tags: Adaptive Forms, author
 keywords: Google reCAPTCHA服务，自适应Forms， CAPTCHA挑战，机器人预防，核心组件，表单提交安全性，表单垃圾邮件预防
 feature: Adaptive Forms, Core Components
 exl-id: d116f979-efb6-4fac-8202-89afd1037b2c
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -35,7 +36,7 @@ AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
 1. 获取 [reCAPTCHA API密钥对](https://www.google.com/recaptcha/admin) 来自Google的。 它包括 **站点密钥** 和 **密钥**.
 
    ![创建Google网站的Google reCAPTCHA配置以获取reCAPTCHA密钥](/help/forms/assets/google-captcha.gif)
-1. 在您的AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以将您的AEM Forms环境与Google的reCAPTCHA服务连接，请执行以下操作：
+1. 在AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以将您的AEM Forms环境与Google的reCAPTCHA服务连接，请执行以下操作：
    1. 打开您的AEM Formsas a Cloud Service实例。
    1. 转到 **[!UICONTROL “工具”>“常规”>“配置浏览器”]**. 在配置浏览器中，您可以：
    1. 选择现有文件夹或创建文件夹。 您可以创建文件夹并为其启用云配置选项，也可以为现有文件夹启用云配置选项：
@@ -43,7 +44,7 @@ AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
       * 要创建文件夹并为其启用云配置选项，请执行以下操作：
          1. 在配置浏览器中，单击 **[!UICONTROL 创建]**.
          1. 在创建配置对话框中，指定名称、标题，然后选择 **[!UICONTROL 云配置]** 选项。
-         1. 单击 **[!UICONTROL 创建]**
+         1. 单击&#x200B;**[!UICONTROL 创建]**
       * 要为现有文件夹启用云配置选项，请执行以下操作：
          1. 在配置浏览器中，选择文件夹并选择 **[!UICONTROL 属性]**.
          1. 在配置属性对话框中，启用 **[!UICONTROL 云配置]**.

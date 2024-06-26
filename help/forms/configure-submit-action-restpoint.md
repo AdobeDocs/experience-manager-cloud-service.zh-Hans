@@ -1,21 +1,23 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: AEM Forms REST端点，提交到REST端点，将数据发布到REST URL，配置REST端点操作
+keywords: AEM Forms REST端点，提交到REST端点，将Post数据提交到REST URL，配置REST端点操作
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
+title: “如何为自适应表单配置提交操作？”
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 62%
+source-wordcount: '560'
+ht-degree: 60%
 
 ---
-
 
 # 为REST端点提交操作配置自适应表单
 
 使用 **[!UICONTROL 提交到REST端点]** 将提交的数据发布到REST URL的操作。 该 URL 可以属于内部服务器（呈现表单的服务器）或外部服务器。
 
-AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 ## 优点
 
@@ -75,4 +77,3 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 ## 相关文章
 
 {{af-submit-action}}
-

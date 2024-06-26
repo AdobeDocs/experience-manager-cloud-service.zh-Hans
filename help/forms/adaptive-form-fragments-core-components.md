@@ -5,7 +5,8 @@ topic-tags: author
 keywords: 添加自适应表单片段、自适应表单片段、创建表单片段、将片段添加到自适应表单、管理片段
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 6%
@@ -17,8 +18,8 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEMas a Cloud Service（核心组件） | 本文 |
-| AEMas a Cloud Service（基础组件） | [单击此处](/help/forms/adaptive-form-fragments.md) |
+| AEM as a Cloud Service（核心组件） | 本文 |
+| AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/adaptive-form-fragments.md) |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 虽然每个表单都针对特定目的而设计，但大多数表单中都存在一些通用区段，例如提供个人详细信息，如姓名和地址、家庭详细信息、收入详细信息。 每次创建新表单时，表单开发人员都需要创建这些常用区段。
@@ -163,7 +164,7 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
    <td><p>生成用于本地化所选片段的字典。 有关更多信息，请参阅 <a>本地化自适应Forms</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>发布/取消发布</p> </td>
+   <td><p>Publish/取消发布</p> </td>
    <td><p>发布/取消发布选定的片段。<br /> <br /> </p> </td>
   </tr>
   <tr>

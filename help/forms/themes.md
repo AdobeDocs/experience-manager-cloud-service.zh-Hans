@@ -3,7 +3,8 @@ title: 如何创建和使用主题来设置自适应表单的样式？
 description: 使用自适应表单主题设计自适应表单的样式并提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 2%
@@ -122,7 +123,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>4.</td>
-   <td>创建时间</td>
+   <td>已创建</td>
    <td>否</td>
    <td>主题创建日期</td>
   </tr>
@@ -146,13 +147,13 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>8.</td>
-   <td>准时发布</td>
+   <td>Publish On Time</td>
    <td>是</td>
    <td>自动发布主题的时间。</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>发布关闭时间</td>
+   <td>Publish关闭时间</td>
    <td>是</td>
    <td>自动取消发布主题的时间。</td>
   </tr>
@@ -234,7 +235,7 @@ ht-degree: 2%
 
 [![主题编辑器](assets/themes.png)](assets/themes-1.png) **答：** 侧栏 **B.** 画布
 
-### 设置组件样式 {#styling-components}
+### 设置组件的样式 {#styling-components}
 
 您可以在多个自适应Forms中使用主题<!-- and interactive communications -->，用于导入在主题中指定的组件格式。 您可以设置各种组件的样式，如标题、描述、面板、字段、图标和文本框。 使用小组件配置主题中的组件属性。 虽然CSS覆盖部分允许您编写CSS代码或提供自定义选择器，但并不要求您事先了解CSS或LESS。 在侧栏中选择组件时，将显示“CSS覆盖”部分。
 
@@ -255,7 +256,7 @@ ht-degree: 2%
 * 左侧选项卡
 * 顶部选项卡
 * 可折叠项
-* 响应式
+* 响应
 * 向导
 * 移动设备布局
 
@@ -600,7 +601,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 ## 对其他自适应表单用例的影响 {#impact-on-other-adaptive-form-use-cases}
 
-* **发布/取消发布表单：** 发布表单时，也会发布应用于的主题（如果尚未发布）
+* **Publish/取消发布表单：** 发布表单时，也会发布应用于的主题（如果尚未发布）
 * **导入/导出表单：** 在导入或导出表单时，也会自动导入或导出与其关联的主题。
 * **表单的引用：** 表单引用中的“引用”部分包含额外的主题条目。
 * **表单的上次修改时间：** 在更改相关主题时更新。

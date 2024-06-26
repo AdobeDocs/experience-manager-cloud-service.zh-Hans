@@ -3,7 +3,8 @@ title: 如何为自适应Forms生成记录文档？
 description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成模板。
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3131'
 ht-degree: 1%
@@ -360,7 +361,7 @@ When you select a form model, configure Document of Record using options availab
 
    >[!NOTE]
    >
-   >如果您使用的是使用6.3之前的Designer版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
+   >如果您使用的是使用Designer 6.3之前的版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
 
    ```xml
    <proto>

@@ -4,7 +4,8 @@ description: 使用模板编辑器基于核心组件创建自适应表单模板�
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 4%
@@ -27,7 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## 先决条件
 
-**为您的环境启用自适应Forms核心组件**：在创建项目时，已为您的环境启用自适应Forms核心组件。 如果您有一个表单as a Cloud Service环境，基于 [AEM Archetype 39或更早版本](https://github.com/adobe/aem-project-archetype)， [为您的环境启用自适应Forms核心组件](enable-adaptive-forms-core-components.md).
+**为您的环境启用自适应Forms核心组件**：在创建项目时，已为您的环境启用自适应Forms核心组件。 如果您有一个基于的Formas a Cloud Service环境 [AEM Archetype 39或更早版本](https://github.com/adobe/aem-project-archetype)， [为您的环境启用自适应Forms核心组件](enable-adaptive-forms-core-components.md).
 
 >[!NOTE]
 >
@@ -67,7 +68,7 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **模式选择器：** 允许您更改模式。 您可以选择 **[!UICONTROL 结构]** 模式， **[!UICONTROL 初始内容]**， **[!UICONTROL 布局控件]** 模式。 结构模式允许您添加和自定义页眉和页脚。 初始内容模式允许您自定义表单内容。
    * **预览：** 允许您预览发布模板时的外观。 您可以使用“图层选择器”和“预览”来切换编辑和预览模式。
-* **侧栏：** 提供内容、属性、资源和组件浏览器。
+* **侧栏：** 提供“内容”、“属性”、“Assets”和“组件”浏览器。
 * **组件工具栏：** 选择某个组件后，您将看到一个工具栏，其中允许您自定义该组件。
 * **页面**：添加内容以创建模板的区域。
 

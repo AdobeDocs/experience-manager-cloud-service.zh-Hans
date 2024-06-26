@@ -3,13 +3,15 @@ Title: How to integrate AEM workflow with an Adaptive Form?
 Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
 keywords: AEM Workflow，将自适应表单与AEM Workflow集成，调用AEM Workflow提交操作
 feature: Adaptive Forms, Core Components
-source-git-commit: 95af49839d206f67ac02116730229f5b0531c5bb
+exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
+title: “如何为自适应表单配置提交操作？”
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '657'
 ht-degree: 56%
 
 ---
-
 
 # 将AEM自适应表单与AEM Workflow集成：简化业务流程
 
@@ -19,7 +21,7 @@ ht-degree: 56%
 >
 >  了解如何 [创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem) 定义用户启动工作流时执行的一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。
 
-AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 ## 优点
 

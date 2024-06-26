@@ -1,17 +1,17 @@
 ---
 title: 轻松批量创建PDF — 掌握批处理技术 — 生成数百万份PDF文档的自助指南！
 description: 如何创建以品牌为导向的个性化通信？
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 2%
 
 ---
 
-# AEM Formsas a Cloud Service通信批量处理
+# AEM Formsas a Cloud Service通信批处理
 
 通信允许您创建、收集和提供面向品牌的个性化通信，如业务往来函、文档、报表、索赔处理函、福利通知、每月账单和欢迎资料包。 您可以使用Communications API将模板(XFA或PDF)与客户数据相结合，生成PDF、PS、PCL、DPL、IPL和ZPL格式的文档。
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 ### 创建批量数据存储配置 {#create-batch-data-store-configuration}
 
-批量数据配置可帮助您配置用于输入和输出的容器和文件夹。 将客户记录保存在源文件夹中，生成的文档则保存在目标文件夹中。
+批量数据配置可帮助您配置用于输入和输出的容器和文件夹。 您在Source文件夹中保留客户记录，生成的文档则放置在目标文件夹中。
 
 要创建配置，请执行以下操作：
 
@@ -106,7 +106,7 @@ ht-degree: 2%
 1. 打开文件夹以托管配置，然后单击“创建”。 您可以使用全局文件夹或创建文件夹。
 1. 指定配置的标题和名称。 在存储中，选择Microsoft Azure Storage。
 1. 在存储配置路径中，浏览并选择云配置，该配置包含客户拥有的Azure存储帐户的凭据。
-1. 在源文件夹中，指定Azure存储容器和包含记录的文件夹的名称。
+1. 在Source文件夹中，指定Azure存储容器和包含记录的文件夹的名称。
 1. 在目标文件夹中，指定Azure存储容器的路径和用于存储生成的文档的文件夹。
 1. 单击“创建”。
 

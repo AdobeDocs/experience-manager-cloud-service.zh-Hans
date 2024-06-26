@@ -2,7 +2,9 @@
 title: 如何将DocuSign与自适应表单集成？
 description: 了解如何将DocuSign与自适应表单一起使用来收集电子签名。
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Adaptive Forms, Acrobat Sign
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 7%
@@ -22,7 +24,7 @@ AEM Formsas a Cloud Service提供 [适用于DocuSign的自定义提交操作](#d
 | 您还可以使用Adobe的电子签名解决方案Adobe Sign对自适应表单进行电子签名。 AEM Forms与Adobe Sign的集成更深入了，它提供了更精细的控制，如顺序和并行签名、多种身份验证方法、表单内签名体验等。 有关更多信息，请参阅 [在自适应表单中使用Adobe Sign](working-with-adobe-sign.md). |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 要将DocuSign与AEM Forms集成，需要以下项：
 
@@ -34,7 +36,7 @@ AEM Formsas a Cloud Service提供 [适用于DocuSign的自定义提交操作](#d
 
 ## 配置自定义提交操作和DocuSign云服务 {#deploy-custom-submit-action}
 
-AEM Formsas a Cloud Service提供DocuSign的自定义提交操作。 提交操作可帮助您使用DocuSign API发送电子签名自适应表单。 自定义提交操作的代码在以下位置提供： [AEM Forms示例公共git存储库](https://github.com/adobe/aem-forms-docusign-sample). 您可以在您的AEM Forms环境中按原样部署代码，也可以根据贵组织的要求自定义代码。
+AEM Formsas a Cloud Service为DocuSign提供了一个自定义提交操作。 提交操作可帮助您使用DocuSign API发送电子签名自适应表单。 自定义提交操作的代码在以下位置提供： [AEM Forms示例公共git存储库](https://github.com/adobe/aem-forms-docusign-sample). 您可以在您的AEM Forms环境中按原样部署代码，也可以根据贵组织的要求自定义代码。
 
 执行以下步骤以配置现成的自定义提交操作和DocuSignCloud Service：
 

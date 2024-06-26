@@ -4,7 +4,8 @@ description: 使用审阅机制可添加审阅人，并允许审阅人在表单�
 topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 7%
@@ -21,7 +22,7 @@ ht-degree: 7%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
 | AEM as a Cloud Service | 本文 |
 
-## 审核 {#review}
+## 审查 {#review}
 
 审阅是一种允许一个或多个审阅人对表单进行评论的机制。
 

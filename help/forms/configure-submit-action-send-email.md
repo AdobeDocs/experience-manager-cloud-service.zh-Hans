@@ -3,15 +3,17 @@ Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: 如何发送自适应表单的电子邮件、电子邮件提交操作、自适应表单电子邮件、表单提交电子邮件、发送电子邮件指南
 feature: Adaptive Forms, Core Components
-source-git-commit: f1db04e6cd1f78c1530aefd29f5f036ca5e70873
+exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
+title: “如何为自适应表单配置提交操作？”
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 24%
+source-wordcount: '447'
+ht-degree: 25%
 
 ---
 
-
-# 为自适应表单配置“发送电子邮件提交”操作
+# 为自适应表单配置“发送电子邮件”提交操作
 
 此 **[!UICONTROL 发送电子邮件]** 提交操作允许您在成功提交表单后向一个或多个收件人发送电子邮件。 通过此提交操作，可创建包含预定义格式的表单数据的电子邮件。 例如，考虑使用以下模板，其中从提交的表单数据中检索客户名称、配送地址、州名称和邮政编码：
 
@@ -69,5 +71,3 @@ ht-degree: 24%
 ## 相关文章
 
 {{af-submit-action}}
-
-

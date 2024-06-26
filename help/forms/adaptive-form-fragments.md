@@ -8,7 +8,8 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -20,8 +21,8 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEMas a Cloud Service（基础组件） | 本文 |
-| AEMas a Cloud Service（核心组件） | [单击此处](/help/forms/adaptive-form-fragments-core-components.md) |
+| AEM as a Cloud Service（基础组件） | 本文 |
+| AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/adaptive-form-fragments-core-components.md) |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
 
 虽然每个表单都是为特定目的而设计的，但大多数表单中都有一些常见的部分，例如提供个人详细信息，如姓名和地址、家庭详细信息、收入详细信息等。 每次创建新表单时，表单开发人员都需要创建这些常用区段。 自适应表单提供了一种便捷的机制，只需创建一次表单段（如面板或一组字段），并在自适应表单中重复使用它们。 这些可重用的独立区段称为自适应表单片段。
@@ -130,14 +131,14 @@ ht-degree: 1%
 1. 转到AEM Web控制台配置页面，网址为https：[*主机*]：[*端口*]/system/console/configMgr。
 
 1. 搜索并单击 **[!UICONTROL 自适应表单配置服务]** 以在编辑模式下将其打开。
-1. 禁用 **[!UICONTROL “启用占位符代替片段]** ”复选框以显示完整的片段，而不是占位符图像。
+1. 禁用 **[!UICONTROL 启用占位符代替片段]** 用于显示完整片段而不是占位符图像的复选框。
 
 ### 在自适应表单中插入片段 {#insert-a-fragment-in-an-adaptive-form}
 
 您创建的自适应表单片段将显示在AEM内容查找器的自适应表单片段选项卡中。 要在自适应表单中插入自适应表单片段，请执行以下操作：
 
 1. 在编辑模式下打开要在其中插入自适应表单片段的自适应表单。
-1. 单击 **资产** ![assets浏览器](assets/assets-browser.png) 在侧栏中。 在资产浏览器中，选择 **自适应表单片段** 从下拉菜单中查找。
+1. 单击 **Assets** ![assets浏览器](assets/assets-browser.png) 在侧栏中。 在资产浏览器中，选择 **自适应表单片段** 从下拉菜单中查找。
 
    您还可以选择显示所有自适应表单片段或根据其表单模型（表单模板、XML架构或基本）进行筛选。
 
@@ -230,7 +231,7 @@ ht-degree: 1%
    <td><p>生成用于本地化所选片段的字典。 <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
   </tr>
   <tr>
-   <td><p>发布/取消发布</p> </td>
+   <td><p>Publish/取消发布</p> </td>
    <td><p>发布/取消发布选定的片段。<br /> <br /> </p> </td>
   </tr>
   <tr>

@@ -1,14 +1,14 @@
 ---
 title: 如何解决AEM Formsas a Cloud Service中与缓存相关的问题？
-description: 解决AEM Formsas a Cloud Service的缓存相关问题。
+description: 解决AEM Forms的缓存相关问题as a Cloud Service。
 contentOwner: khsingh
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 某些包含图像或视频的自适应Forms不会从Dispatcher缓存中自动失效 {#images-videos-not-invalidated}
 
-您可以从资产浏览器中选择图像或视频并将其添加到自适应表单。 在资产编辑器中编辑这些图像时，包含这些图像的自适应表单的缓存版本不会失效。 自适应表单继续显示较旧的图像。
+您可以从资产浏览器中选择图像或视频并将其添加到自适应表单。 在Assets编辑器中编辑这些图像时，包含这些图像的自适应表单的缓存版本不会失效。 自适应表单继续显示较旧的图像。
 
 要解决此问题，请在发布图像和视频之后，明确取消发布并发布引用这些资源的自适应Forms。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 执行以下步骤来解决问题：
 
 1. 打开您的Experience Manager项目。
-1. 打开 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 进行编辑。
+1. 打开 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 以供编辑。
 1. 打开 `conf.d/httpd-dispatcher.conf` 或配置为在运行时加载的任何其他配置文件。
 1. 将以下代码添加到文件中并进行保存。 它是一个示例代码，可对其进行修改以适合您的环境。
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ## CDN缓存会在300秒后停止工作 {#cdn-caching-stops-working-after-300-seconds}
 
-CDN缓存在300秒后停止工作，所有在CDN上缓存的请求都被重定向到Dispatcher。
+CDN缓存在300秒后停止工作，所有在CDN上缓存的请求都将被重定向到Dispatcher。
 
 要解决此问题，请将页面标题设置为0：
 

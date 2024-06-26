@@ -2,10 +2,10 @@
 title: 如何为自适应表单创建自定义提交操作？
 description: 了解如何为自适应Forms创建自定义提交操作，以便在将数据提交到Rest端点、保存到数据存储和执行其他自定义函数之前延迟提交和处理数据。
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 1%
@@ -102,7 +102,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
    * **guideComponentType** 字符串和值的类型 **fd/af/components/guidesubmittype**
    * **guideDataModel** 类型字符串，指定提交操作适用的自适应表单的类型。 <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** 基于XSD的自适应Forms支持。 **基本** 对于不使用XDP或XSD的自适应Forms支持。 要在多种类型的自适应Forms上显示操作，请添加相应的字符串。 用逗号分隔每个字符串。 例如，要在以下位置显示操作： <!--XFA- and -->基于XSD的自适应Forms，指定值为 <!--**xfa** and--> **xsd**.
 
-   * **jcr：description** 类型为String。 此属性的值显示在“自适应表单编辑”对话框的“提交操作”选项卡的“提交操作”列表中。 OOTB操作存在于该位置的CRX存储库中 **/libs/fd/af/components/guidesubmittype**.
+   * **jcr：description** 类型为String。 此属性的值显示在“自适应表单编辑”对话框的“提交操作”选项卡的“提交操作”列表中。 OOTB操作位于的CRX存储库中 **/libs/fd/af/components/guidesubmittype**.
 
    * **submittservice** 类型为String。 有关更多信息，请参阅 [为自定义操作计划自适应表单提交](#schedule-adaptive-form-submission).
 

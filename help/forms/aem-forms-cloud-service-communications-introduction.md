@@ -2,12 +2,13 @@
 title: 什么是Formsas a Cloud Service通信API？
 description: 使用通信API签名、认证或保护文档，自动化PDF生成过程，以及将PDF文档转换为另一种格式。
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 92811662e1ef9b6cbd5cb66c67f774109745bc68
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2290'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -60,7 +61,7 @@ A credit card statement can be created using Communications APIs. This sample st
 
 ### 创建 PostScript (PS)、打印机指令语言 (PCL)、Zebra 打印语言 (ZPL) 文档 {#create-PS-PCL-ZPL-documents}
 
-您可以使用文档生成API创建基于XDP表单设计或PDF文档的PostScript (PS)、Printer Command Language (PCL)和Zebra Printing Language (ZPL)文档。 这些 API 有助于将表单设计与表单数据合并以生成文档。您可以将文档保存到文件，并开发一个自定义流程来将它发送到打印机。
+您可以使用文档生成API创建基于XDP表单设计或PDF文档的PostScript (PS)、打印机命令语言(PCL)和斑马打印语言(ZPL)文档。 这些 API 有助于将表单设计与表单数据合并以生成文档。您可以将文档保存到文件，并开发一个自定义流程来将它发送到打印机。
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -167,7 +168,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## 文档提取
 
-<span class="preview"> 文档提取功能属于率先采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+<span class="preview"> 文档提取功能属于率先采用者计划。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 文档提取服务允许您获取PDF文档的属性，如使用权限、PDF属性和元数据。 文档提取功能包括：
 
@@ -197,7 +198,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### 将PDF转换为XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> 将PDF转换为XDP的功能属于率先采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+<span class="preview"> 将PDF转换为XDP的功能属于率先采用者计划。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 将PDF文档转换为XDP文件。 若要将PDF文档成功转换为XDP文件，PDF文档必须在词典中包含XFA流。
 
@@ -235,7 +236,7 @@ DocAssurance服务包括签名和加密API：
 
 #### 使用权限API(Reader扩展)
 
-<span class="preview"> 使用权限(Reader扩展)功能受早期采用者计划限制。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+<span class="preview"> 使用权限(Reader扩展)功能受早期采用者计划限制。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 使用权限功能通过扩展具有其他使用权限的Adobe Reader的功能，使您的组织可以轻松共享交互式PDF文档。 该服务可与Adobe Reader 7.0或更高版本配合使用，并向PDF文档添加了使用权限。 此操作激活在使用Adobe Reader打开PDF文档时通常不可用的功能，例如向文档添加注释、填写表单和保存文档。
 
@@ -300,7 +301,7 @@ DocAssurance服务包括签名和加密API：
 
 通信功能作为面向 Forms as a Cloud Service 用户的独立和附加模块提供。您可以联系Adobe销售团队或您的Adobe代表以请求获取访问权限。 Adobe 可为您的组织开启访问渠道，并为您指定为组织中管理员的人员提供所需的权限。管理员可以向贵组织的Formsas a Cloud Service开发人员（用户）授予权限以使用这些API。
 
-新用户引导后，要为您的Formsas a Cloud Service环境启用通信功能，请执行以下操作：
+新用户引导后，要为Formsas a Cloud Service环境启用通信功能，请执行以下操作：
 
 1. 登录 Cloud Manager，并打开您的 AEM Forms as a Cloud Service 实例。
 

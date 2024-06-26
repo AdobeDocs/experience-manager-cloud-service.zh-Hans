@@ -3,7 +3,8 @@ title: 如何为AEM Forms生成记录文档(DoR)？
 description: 了解如何为自适应Forms的记录文档(DoR)生成模板。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 3%
@@ -376,7 +377,7 @@ When you select a form model, configure Document of Record using options availab
 
    >[!NOTE]
    >
-   >如果您使用的是使用6.3之前的Designer版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
+   >如果您使用的是使用Designer 6.3之前的版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
 
    ```xml
    <proto>
@@ -470,9 +471,9 @@ XCI文件可帮助您设置文档的各种属性。 Formsas a Cloud Service有�
 | config/present/common/log/to | 控制日志数据或输出数据写入的位置。 |
 | config/present/output/to | 控制日志数据或输出数据写入的位置。 |
 | config/present/script/currentPage | 指定文档打开时的初始页面。 |
-| config/present/script/exclude | 通知Formsas a Cloud Service忽略哪些事件。 |
+| config/present/script/exclude | 通知Formsas a Cloud Service要忽略哪些事件。 |
 | config/present/pdf/linearized | 控制输出PDF文档是否线性化。 |
-| config/present/script/runScripts | 控制Formsas a Cloud Service执行的脚本集。 |
+| config/present/script/runScripts | 控制Forms as a Cloud Service执行的脚本集。 |
 | config/present/pdf/tagged | 控制标签在输出PDF文档中的包含。 在PDF上下文中，标记是文档中包含的其他信息，用于公开文档的逻辑结构。 标记有助于辅助功能和重新设置格式。 例如，页码可能会被标记为工件，这样屏幕阅读器就不会在文本中间朗读它。 虽然标记可以使文档更有用，但它们也会增加文档的大小以及创建文档所需的处理时间。 |
 | config/present/pdf/fontInfo/alwaysEmbed | 指定嵌入到输出文档中的字体。 |
 | config/present/pdf/fontInfo/neverEmbed | 指定不得嵌入到输出文档中的字体。 |

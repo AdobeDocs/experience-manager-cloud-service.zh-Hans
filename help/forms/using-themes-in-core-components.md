@@ -4,7 +4,8 @@ description: 您可以使用主题来设置样式，并使用核心组件为自�
 keywords: 自适应表单设置核心组件样式。 在核心组件中使用主题、设置自适应表单的样式、自定义主题
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 5%
@@ -33,7 +34,7 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 
 ## 了解主题结构
 
-主题是一个包，其中包含可定义自适应Forms样式的样式组件（如CSS文件、JavaScript文件和资源，如图标）。 自适应表单主题遵循特定的组织，由以下组件组成：
+主题是一个包，其中包含可定义自适应Forms样式的样式组件(如CSS文件、JavaScript文件和资源，如图标)。 自适应表单主题遵循特定的组织，由以下组件组成：
 
 * `src/theme.scss`：此文件夹包括对整个主题产生广泛影响的CSS文件。 它用作定义和管理主题样式和行为的集中位置。 通过编辑此文件，您可以做出在整个主题中普遍应用的更改，从而影响自适应Forms和AEM Sites页面的外观和功能。
 
@@ -375,12 +376,12 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 使用部署主题 [前端管道。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。要部署主题，请执行以下步骤：
 
-1. 登录到您的AEM Cloud Manager存储库。
+1. 登录到AEM Cloud Manager存储库。
 1. 单击 **[!UICONTROL 添加]** 按钮来自 **[!UICONTROL 管道]** 部分。
 1. 选择 **[!UICONTROL 添加非生产管道]** 或 **[!UICONTROL 添加生产管道]** 基于Cloud Service环境。 例如，下面的 **[!UICONTROL 添加生产管道]** 已选中选项。
 1. 在 **[!UICONTROL 添加生产管道]** 对话框作为 **[!UICONTROL 配置]** 步骤，指定管道的名称。 例如，管道的名称为 `customcanvastheme`.
 1. 单击&#x200B;**[!UICONTROL 继续]**。
-1. 选择 **[!UICONTROL 目标部署]** > **[!UICONTROL 前端代码]** 选项，在 **[!UICONTROL 源代码]** 步骤。
+1. 选择 **[!UICONTROL 目标部署]** > **[!UICONTROL 前端代码]** 选项，在 **[!UICONTROL Source代码]** 步骤。
 1. 选择 **[!UICONTROL 存储库]** 和 **[!UICONTROL Git分支]** 具有最新更改的值。 例如，此处选定的存储库名称为 `custom-canvas-theme-repo` 而Git分支是 `main`.
 1. 选择 **[!UICONTROL 代码位置]** 作为 `/`，如果根文件夹中存在更改。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
@@ -409,7 +410,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 1. 单击 **创建** > **自适应Forms**. 此时将打开创建自适应表单的向导。
 
-1. 选择中的核心组件模板 **来源** 选项卡。
+1. 选择中的核心组件模板 **Source** 选项卡。
 1. 选择中的主题 **样式** 选项卡。
 1. 单击&#x200B;**创建**。
 

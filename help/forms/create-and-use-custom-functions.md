@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4351'
 ht-degree: 1%
@@ -25,7 +26,7 @@ ht-degree: 1%
 
 ## 简介
 
-AEM Forms支持自定义函数，允许用户定义用于实现复杂业务规则的JavaScript函数。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们还支持根据预定义标准动态更改表单行为。
+AEM Forms支持自定义函数，允许用户定义JavaScript函数以实施复杂的业务规则。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们还支持根据预定义标准动态更改表单行为。
 
 >[!NOTE]
 >
@@ -41,7 +42,7 @@ AEM Forms支持自定义函数，允许用户定义用于实现复杂业务规�
 
 自定义函数本质上是添加到JavaScript文件中的客户端库。 创建自定义函数后，该函数即可在规则编辑器中供用户在自适应表单中选择。 自定义函数由规则编辑器中的JavaScript注释标识。
 
-### 自定义函数支持的JavaScript注释 {#js-annotations}
+### 自定义函数支持的JavaScript批注 {#js-annotations}
 
 JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定符号(例如/**和@)开头的注释。 注释提供了有关代码中的函数、变量和其他元素的重要信息。 自适应表单支持自定义函数的以下JavaScript注释：
 
@@ -170,9 +171,9 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
             // code to be executed
         }
 ```
-如果用户没有向自定义函数添加任何JavaScript注释，则它按函数名称在规则编辑器中列出。 但是，建议包含JavaScript注释，以提高自定义函数的可读性。
+如果用户没有将任何JavaScript注释添加到自定义函数，则它按函数名称在规则编辑器中列出。 但是，建议包含JavaScript注释，以提高自定义函数的可读性。
 
-### 具有必需JavaScript注释或注释的Arrow函数
+### 带有强制JavaScript注释或注释的Arrow函数
 
 您可以使用箭头函数语法创建自定义函数：
 
@@ -196,7 +197,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 如果用户没有将任何JavaScript注释添加到自定义函数，则该自定义函数不会列在自适应表单的规则编辑器中。
 
-### 具有必需JavaScript注释或注释的函数表达式
+### 带有必需JavaScript注释或注释的函数表达式
 
 要在自适应表单的规则编辑器中列出自定义函数，请以下列格式创建自定义函数：
 
@@ -337,7 +338,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 **将新创建的客户端库文件夹部署到AEM环境**
 
-部署AEMas a Cloud Service， [AEMaaCS项目目录]，添加到您的Cloud Service环境。 要部署到Cloud Service环境，请执行以下操作：
+部署AEM as a Cloud Service， [AEMaaCS项目目录]，添加到您的Cloud Service环境。 要部署到Cloud Service环境，请执行以下操作：
 
 1. 提交更改
 
@@ -353,7 +354,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
    1. 通过现有的全栈管道触发代码部署。 这会自动构建和部署更新的代码。
 
-如果尚未设置管道，请参阅上的指南 [如何设置AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+如果尚未设置管道，请参阅上的指南 [如何为AEM Forms设置管道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 成功执行管道后，客户端库中添加的自定义函数即可在中使用 [自适应表单规则编辑器](/help/forms/rule-editor-core-components.md).
 
@@ -1011,12 +1012,12 @@ function testRemoveInstance(globals)
 * 如果自定义提交处理程序无法按预期在现有AEM项目或表单中执行，请执行以下步骤：
    * 确保 [核心组件版本已更新至3.0.18及更高版本](https://github.com/adobe/aem-core-forms-components). 但是，对于现有AEM项目和表单，还需要执行其他步骤：
 
-   * 对于AEM项目，用户应替换 `submitForm('custom:submitSuccess', 'custom:submitError')` 替换为 `submitForm()` 和通过Cloud Manager管道部署项目。
+   * 对于AEM项目，用户应替换 `submitForm('custom:submitSuccess', 'custom:submitError')` 替换为 `submitForm()` 并通过Cloud Manager管道部署项目。
 
    * 对于现有表单，如果自定义提交处理程序无法正常运行，用户需要打开并保存 `submitForm` 规则 **提交** 按钮。 此操作替换中的现有规则 `submitForm('custom:submitSuccess', 'custom:submitError')` 替换为 `submitForm()` 在表格中。
 
 
-* 如果包含自定义函数代码的JavaScript文件出错，则自定义函数将不会在自适应表单的规则编辑器中列出。 要检查自定义函数列表，您可以导航到 `error.log` 文件查找错误。 如果出现错误，自定义函数列表显示为空：
+* 如果包含自定义函数代码的JavaScript文件出错，则自定义函数不会列在自适应表单的规则编辑器中。 要检查自定义函数列表，您可以导航到 `error.log` 文件查找错误。 如果出现错误，自定义函数列表显示为空：
 
   ![错误日志文件](/help/forms/assets/custom-function-list-error-file.png)
 

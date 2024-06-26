@@ -6,13 +6,14 @@ role: User, Developer, Admin
 features: core components
 hide: true
 hidefromtoc: true
-source-git-commit: cc1f3e2f0ddaed67de541c730c0b97f68c1e0d02
+exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
+feature: Adaptive Forms, Core Components
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 1%
 
 ---
-
 
 # 简介
 
@@ -117,9 +118,9 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
    * **无** ：如果不想在开始表单转换之前创建基于Foundation组件的表单的副本，请选择选项。
    * **恢复** ：选择选项以将表单恢复到开始表单转换之前的状态。
    * **复制到目标**：选择相应选项，以便在开始表单转换之前创建基于Foundation组件的表单的副本。
-在我们的例子中， **复制到目标** 已选中选项。 如果 **复制到目标** 选项，则 **[!UICONTROL 源路径]** 和 **[!UICONTROL 目标路径]** 选项将变为可见。
+在我们的例子中， **复制到目标** 已选中选项。 如果 **复制到目标** 选项，则 **[!UICONTROL Source路径]** 和 **[!UICONTROL 目标路径]** 选项将变为可见。
 
-1. 指定 `source folder` 中的名称 **[!UICONTROL 源路径]**.
+1. 指定 `source folder` 中的名称 **[!UICONTROL Source路径]**.
 1. 指定 `target folder` 中的名称 **[!UICONTROL 目标路径]**.
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
 1. 单击 **[!UICONTROL 添加Forms]**. 此页面中的 `source folder` 屏幕上会显示。
@@ -149,6 +150,3 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 * 确保您的基于基础组件的表单，仅使用具有等效项的组件 [核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) 可用。 如果您使用的基础组件没有等效的核心组件，则不会转换基础组件。 因此，它在创作表单时无法正常运行
 * 确保将基础组件转换为核心组件的规则采用XML格式。
-
-
-

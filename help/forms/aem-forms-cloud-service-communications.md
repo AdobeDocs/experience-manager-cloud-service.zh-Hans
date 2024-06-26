@@ -2,9 +2,9 @@
 title: 如何使用Formsas a Cloud Service将数据与XDP和PDF模板合并，或生成PCL、ZPL和PostScript格式的输出？
 description: 自动将数据与 XDP 和 PDF 模板合并，或以 PCL、ZPL 和 PostScript 格式生成输出
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 6%
@@ -45,9 +45,9 @@ Formsas a Cloud Service — 通信提供了用于计划文档生成的按需和�
 
 * **基本身份验证**：基本身份验证是HTTP协议中内置的简单身份验证方案。 客户端使用Authorization标头发送HTTP请求，该标头包含单词Basic，后跟空格和base64编码的字符串username：password。 例如，要授权为管理员/管理员，客户端发送Basic [base64编码字符串用户名]： [base64编码的字符串密码].
 
-* **基于令牌的身份验证：** 基于令牌的身份验证使用访问令牌（持有者身份验证令牌）向Experience Manager发出as a Cloud Service请求。 AEM Formsas a Cloud Service提供API以安全检索访问令牌。 要检索并使用令牌对请求进行身份验证，请执行以下操作：
+* **基于令牌的身份验证：** 基于令牌的身份验证使用访问令牌（持有者身份验证令牌）向Experience Manageras a Cloud Service发出请求。 AEM Formsas a Cloud Service提供API以安全检索访问令牌。 要检索并使用令牌对请求进行身份验证，请执行以下操作：
 
-   1. [从开发人员控制台检索Experience Manageras a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [从Developer Console检索Experience Manageras a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. [在环境中安装Experience Manageras a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (应用程序服务器、Web服务器或其他非AEM服务器)配置为向（调用）云服务发送请求。
    1. [生成JWT令牌并与Adobe IMS API交换访问令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. 将访问令牌作为持有者身份验证令牌运行Experience ManagerAPI。

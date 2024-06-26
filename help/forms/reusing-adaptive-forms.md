@@ -4,7 +4,8 @@ description: 发现以高效地重新利用现有的自适应表单来创建新�
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 12%
@@ -53,7 +54,7 @@ ht-degree: 12%
 
 单击复制操作将自动退出选择模式并进行粘贴 ![粘贴](assets/Smock_Paste_18_N.svg) 图标可见。 现在，转到所需的文件夹路径并单击粘贴 ![粘贴](assets/Smock_Paste_18_N.svg) 图标以粘贴复制的自适应表单。
 
-如果在同一文件夹中粘贴或此目标文件夹中存在具有相同节点名称（存储在CRX存储库中）的其他文件，则会在后缀中附加1(例如，myaf变为myaf1，如果myaf1存在于同一位置，则myaf变为myaf2。 所有其他属性仍保持与原始自适应表单相同。
+如果粘贴到同一文件夹或此目标文件夹中存在另一个具有相同节点名称(存储于CRX存储库中)的文件，则会在后缀中附加1(例如，myaf将变为myaf1，如果同一位置存在myaf1，myaf将变为myaf2。 所有其他属性仍保持与原始自适应表单相同。
 
 单击粘贴后 ![粘贴](assets/Smock_Paste_18_N.svg) 图标，则它会再次隐藏。 同时，您只能粘贴一次。 要再次创建同一资产的副本，请再次复制该副本。
 

@@ -3,7 +3,8 @@ title: 记录自定义实施的交易
 description: 使用TransactionRecorder API自动记录未作为事务入帐的操作
 feature: Adaptive Forms, Foundation Components
 exl-id: cb584f78-30af-4a58-be99-843352e8249c
-source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
+role: Admin, Developer, User
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 16%

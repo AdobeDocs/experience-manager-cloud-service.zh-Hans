@@ -3,7 +3,8 @@ title: 如何翻译基于核心组件的自适应表单？
 description: 了解如何在AEM Forms中创建表单数据模型(FDM)、使用示例数据和服务测试模型以及为模型配置各种选项。
 feature: Adaptive Forms, Core Components
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 4%
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 ## 使用机器翻译翻译翻译自适应表单和记录文档 {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-机器翻译服务会立即在自适应表单中翻译您的内容并 [记录文档](/help/forms/generate-document-of-record-core-components.md). AEM Formsas a Cloud Service已预配置为使用Microsoft Translator的试用版进行机器翻译。 执行以下步骤以启用自适应Forms和记录文档的机器翻译：
+机器翻译服务会立即在自适应表单中翻译您的内容并 [记录文档](/help/forms/generate-document-of-record-core-components.md). AEM Forms as a Cloud Service已预配置为使用Microsoft Translator的试用版进行机器翻译。 执行以下步骤以启用自适应Forms和记录文档的机器翻译：
 
 1. 在AEM Forms UI中，选择一个表单，然后选择 **[!UICONTROL 添加字典]** 选项。
 1. 在“将字典添加到翻译项目”屏幕中，对于 **[!UICONTROL 项目]** option

@@ -3,7 +3,9 @@ title: 如何将自适应表单与Microsoft® Power Automate集成？
 description: 将自适应表单与Microsoft® Power Automate集成。
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: 将AEM表单连接到power automate、Power automate automation AEM Forms、将power automate集成到Adaptive Forms、将数据从Adaptive Forms发送到Power Automate
-source-git-commit: fa9254a3290a7628c4d058a6e8cc010789bd30f9
+feature: Adaptive Forms
+role: Admin, User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 13%
@@ -17,7 +19,7 @@ ht-degree: 13%
 
 自适应Forms编辑器提供 **调用Microsoft® Power Automate流** 将自适应表单数据、附件和记录文档的提交操作发送到Power Automate Cloud Flow。
 
-AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
 
 
 ## 优点
@@ -29,7 +31,7 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 * 对捕获的数据执行复杂计算
 * 按预定义的计划将自适应表单数据保存到存储系统
 
-## 前提条件
+## 先决条件
 
 将自适应表单与Microsoft® Power Automate连接需要以下项：
 
@@ -45,7 +47,7 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 1. [创建Microsoft](#ms-power-automate-application)
 1. [创建Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
 1. [创建Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [发布Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Publish Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### 创建Microsoft® Azure Active Directory应用程序 {#ms-power-automate-application}
 
@@ -91,7 +93,7 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
    >[!NOTE]
    >
-   在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
+   >在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
 
 1. 在配置页面上，选择 **[!UICONTROL 创建]** 创建 [!DNL Microsoft®®® Power Automate Flow Service] AEM Forms配置。
 1. 在 **[!UICONTROL 为Microsoft®® Power Automate配置Dataverse服务]** 页面，指定 **[!UICONTROL 客户端ID]** （也称为应用程序ID）， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 动态环境URL]**. 使用的客户端ID、客户端密钥、OAuth URL和动态环境URL [Microsoft® Azure Active Directory应用程序](#ms-power-automate-application) 您在上一节中创建了。 在Microsoft®Azure Active Directory应用程序UI中使用端点选项来查找OAuth URL
@@ -107,17 +109,17 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
    >[!NOTE]
    >
-   在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
+   >在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
 
 1. 在配置页面上，选择 **[!UICONTROL 创建]** 创建 [!DNL Microsoft® Power Automate Flow Service] AEM Forms配置。
 1. 在 **[!UICONTROL 为Microsoft® Power Automate配置Dataverse]** 页面，指定 **[!UICONTROL 客户端ID]** （也称为应用程序ID）， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 动态环境URL]**. 使用客户端ID、客户端密钥、OAuth URL和Dynamics环境ID。 在Microsoft®Azure Active Directory应用程序UI中使用端点选项来查找OAuth URL。 打开 [我的流](https://us.flow.microsoft.com) 链接并选择“我的流”使用URL中列出的ID作为动态环境ID。
 1. 选择 **[!UICONTROL 连接]**. 如有要求，请登录到您的Microsoft® Azure帐户。 选择&#x200B;**[!UICONTROL 保存]**。
 
-### 发布Microsoft® Power Automate Dataverse和Microsoft® Power Automate Flow Service云配置 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
+### Publish Microsoft®Power Automate Dataverse和Microsoft®Power Automate Flow Service云配置 {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 
 1. 导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** 并打开您在上一个页面中创建的配置容器 [创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration) 部分。
 1. 选择 `dataverse` 配置和选择 **[!UICONTROL Publish]**.
-1. 在发布页面上，选择 **[!UICONTROL 所有配置]** 并选择 **[!UICONTROL Publish]**. 发布Power Automate Dataverse和Power Automate流服务云配置。
+1. 在Publish页面上，选择 **[!UICONTROL 所有配置]** 并选择 **[!UICONTROL Publish]**. Publish Power Automate Dataverse和Power Automate Flow Service云配置。
 
 您的Formsas a Cloud Service实例现在已与Microsoft® Power Automate连接。 您现在可以将自适应Forms数据发送到Power Automate流。
 
@@ -134,7 +136,7 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 >[!NOTE]
 >
-在提交自适应表单之前，请确保 `When an HTTP Request is received` 使用以下JSON架构的触发器已添加到您的Power Automate流。
+> 在提交自适应表单之前，请确保 `When an HTTP Request is received` 使用以下JSON架构的触发器已添加到您的Power Automate流。
 
 ```
         {

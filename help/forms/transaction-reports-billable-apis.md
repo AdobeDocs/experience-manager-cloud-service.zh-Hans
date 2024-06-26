@@ -3,7 +3,8 @@ title: 交易报告计费 API
 description: 作为交易入账的所有API的列表
 feature: Adaptive Forms, Foundation Components
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
-source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
+role: Admin, Developer, User
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 34%
@@ -284,13 +285,13 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutput" target="_blank">generatePrintedOutput</a></td>
-   <td>将XDP和PDF文档转换为PostScript (PS)、Printer Command Language (PCL)和ZPL文件格式。 </td>
+   <td>将XDP和PDF文档转换为PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
    <td>已处理的文档</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions" target="_blank">generatePrintedOutput (PrintedOutputOptions)</a></td>
-   <td>将XDP和PDF文档转换为PostScript (PS)、Printer Command Language (PCL)和ZPL文件格式。 </td>
+   <td>将XDP和PDF文档转换为PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
    <td>已处理的文档</td>
    <td> </td>
   </tr>

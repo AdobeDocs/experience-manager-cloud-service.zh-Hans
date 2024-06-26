@@ -1,20 +1,22 @@
 ---
 title: 如何在AEM自适应表单核心组件中使用Turnstile？
-description: 使用Turnstile服务轻松增强表单安全性。 内部分步指南！
+description: 使用Turnstile服务轻松增强表单安全性。 里面有分步指南！
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 9%
+ht-degree: 13%
 
 ---
 
 # 将AEM Forms环境与Turnstile连接 {#connect-your-forms-environment-with-turnstile-service}
 
-<span class="preview"> 此功能属于早期采用者计划。 您可以从官方电子邮件ID写信到aem-forms-ea@adobe.com ，加入率先采用者计划并请求获取该功能的访问权限。 </span>
+<span class="preview"> 此功能属于早期采用者计划。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
@@ -41,7 +43,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
 
 要将AEM Forms与Turnstile服务集成，请执行以下步骤：
 
-1. 在您的AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以将您的AEM Forms环境与Turnstile连接，请执行以下操作：
+1. 在AEM Formsas a Cloud Service环境中创建配置容器。 配置容器包含用于将AEM连接到外部服务的云配置。 要创建并配置配置容器以将您的AEM Forms环境与Turnstile连接，请执行以下操作：
    1. 打开您的AEM Formsas a Cloud Service实例。
    1. 转到 **[!UICONTROL “工具”>“常规”>“配置浏览器”]**.
    1. 在配置浏览器中，您可以选择现有文件夹或创建文件夹。 您可以创建文件夹并为其启用云配置选项，也可以为现有文件夹启用云配置选项：
@@ -70,7 +72,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
 
    配置Turnstile Captcha服务后，便可在以下位置使用 [基于核心组件的自适应表单](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## 在自适应表单中使用Turnstile {#using-turnstile-core-components}
+## 在自适应表单中使用 Turnstile {#using-turnstile-core-components}
 
 1. 打开您的AEM Formsas a Cloud Service实例。
 1. 转到 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.

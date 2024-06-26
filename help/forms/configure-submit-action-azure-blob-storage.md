@@ -3,19 +3,21 @@ Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
 Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
 keywords: Azure Blob Storage与AEM Forms集成，将数据提交到Azure Storage，在AEM Forms中创建Azure Storage配置，在自适应Forms中使用Azure Blob Storage提交操作
 feature: Adaptive Forms, Core Components
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
+title: “如何为自适应表单配置提交操作？”
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 68%
+source-wordcount: '461'
+ht-degree: 66%
 
 ---
-
 
 # 将自适应表单提交到 Azure Blob 存储
 
 **[!UICONTROL 提交到 Azure Blob 存储]**&#x200B;提交操作将自适应表单与 Microsoft® Azure 门户连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的Azure存储容器。
 
-AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md) 文章。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md) 文章。
 
 ## 优点
 

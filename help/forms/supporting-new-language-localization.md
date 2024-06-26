@@ -3,7 +3,8 @@ title: 如何为基于基础组件的自适应表单添加新区域设置支持�
 description: 对于自适应Forms，除了现成可用的语言之外，您还可以为更多语言添加区域设置。
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 6%
@@ -19,7 +20,7 @@ ht-degree: 6%
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | 核心组件 | [单击此处](supporting-new-language-localization-core-components.md) |
-| 基础组件 | 本文 |
+| Foundation 组件  | 本文 |
 
 AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德语(de)、日语(ja)、葡萄牙语 — 巴西语(pt-BR)、中文(zh-CN)、中文 — 台湾(zh-TW)和韩语(ko-KR)语言环境提供开箱即用支持。 您还可以添加对更多区域设置的支持，如印地语(hi_IN)。
 
@@ -29,7 +30,7 @@ AEM Forms为英语(en)、西班牙语(es)、法语(fr)、意大利语(it)、德�
 
 * **表单特定词典** 包含自适应表单中使用的字符串。 例如，标签、字段名称、错误消息、帮助说明。 它作为每个区域设置的一组XLIFF文件进行管理，您可以在以下位置访问它： `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
-* **全局词典** AEM客户端库中有两个作为JSON对象管理的全局词典。 这些词典包含默认错误消息、月份名称、货币符号、日期和时间模式等。 这些词典位于 `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. 这些位置包含每个区域设置的单独文件夹。 由于全局字典不经常更新，因此为每个区域设置保留单独的JavaScript文件使浏览器能够在同一服务器上访问不同的自适应表单时缓存这些文件并降低网络带宽使用量。
+* **全局词典** AEM客户端库中有两个作为JSON对象管理的全局词典。 这些词典包含默认错误消息、月份名称、货币符号、日期和时间模式等。 这些词典位于 `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. 这些位置包含每个区域设置的单独文件夹。 由于全局字典不经常更新，因此对于每种区域设置保留单独的JavaScript文件使浏览器能够在同一服务器上访问不同的自适应表单时缓存这些文件并降低网络带宽使用率。
 
 ## 添加对新区域设置的支持 {#add-support-for-new-locales}
 
@@ -53,7 +54,7 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 #### 1.克隆存储库 {#clone-the-repository}
 
 1. 在命令行中，导航到要克隆FormsCloud Service存储库的位置。
-1. 执行您指定的命令 [从Cloud Manager中检索。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 它类似于 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. 执行您指定的命令 [从Cloud Manager检索。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) 它类似于 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. 使用Git用户名和密码克隆存储库。
 1. 在首选编辑器中打开克隆的FormsCloud Service存储库文件夹。
 

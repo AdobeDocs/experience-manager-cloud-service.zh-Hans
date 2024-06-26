@@ -3,10 +3,11 @@ title: 如何管理AEM Forms的元数据？
 description: 元数据允许更轻松地分类和组织资源，并帮助正在查找特定资源的用户。
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -110,12 +111,12 @@ ht-degree: 5%
    <td>一个只读值，指定上次发布表单的时间。</td> 
   </tr> 
   <tr> 
-   <td>发布开启/结束时间</td> 
+   <td>Publish开启/结束时间</td> 
    <td>除资源以外的所有其他资源</td> 
    <td><p>计划自动发布/取消发布表单的时间。 用户在编辑元数据时设置此值。</p> 
     <ul> 
-     <li>发布开始时间和发布结束时间均应在当前日期之后。 </li> 
-     <li>发布关闭时间应在发布开启时间之后。 </li> 
+     <li>Publish的打开和关闭时间都应晚于当前日期。 </li> 
+     <li>Publish关闭时间应在发布开启时间之后。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -123,7 +124,7 @@ ht-degree: 5%
    <td><p>表单模板</p> <p>PDF表单</p> </td> 
    <td><p>配置用户指定的URL以将表单数据提交到servlet。</p> <p>可以使用以下任一方法配置提交URL，并按优先级顺序列出：</p> 
     <ul> 
-     <li>在AEM Forms Designer中创建XFA表单时，通过使用HTTP提交按钮，直接在表单模板中指定提交URL。</li> 
+     <li>在AEM Forms Designer中创建XFA表单时，使用HTTP提交按钮直接在表单模板中指定提交URL。</li> 
      <li>在AEM Forms UI中，选择表单并在编辑元数据属性时指定提交URL。</li> 
      <!-- <li>In Forms Portal, edit the Search &amp; Lister component and specify a submit URL under the Form Link tab.</li> -->
     </ul> </td> 
@@ -153,8 +154,8 @@ ht-degree: 5%
    <td><p>自适应表单</p> <p>表单模板</p> <p>资源</p> </td> 
    <td><p>与此表单相关的资产（其他表单或资源）列表。 这些资产可以分为以下两类：</p> 
     <ul> 
-     <li>引用：当前表单引用的资源。</li> 
-     <li>引用者：引用当前资产的资产。</li> 
+     <li>引用：当前表单引用的Assets。</li> 
+     <li>引用者：引用当前资源的Assets。</li> 
     </ul> <p>这些资源显示为链接，通过单击这些资源可以直接访问其元数据。<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -177,7 +178,7 @@ ht-degree: 5%
 
 ## 查看表单元数据 {#view-form-metadata}
 
-资产具有现有的属性值，可以在只读模式下查看这些值。 此元数据源自表单上传或表单创建时。
+Assets具有现有的属性值，可以在只读模式下查看这些值。 此元数据源自表单上传或表单创建时。
 
 1. 导航到要查看元数据的资源的位置。
 
@@ -251,7 +252,7 @@ ht-degree: 5%
 
 ### 导航到元数据架构编辑器 {#navigate-the-metadata-schema-editor}
 
-1. 导航到 **[!UICONTROL 工具>资产>元数据架构]**.
+1. 导航到 **[!UICONTROL “工具”>“Assets”>“元数据架构”]**.
 
 1. 单击 **[!UICONTROL 表单]** 从列出的架构表单中。
 

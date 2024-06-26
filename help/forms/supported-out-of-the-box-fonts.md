@@ -1,10 +1,10 @@
 ---
 title: AEM Formsas a Cloud Service支持用于PDF生成的现成字体。
 description: AEM Formsas a Cloud Service支持用于记录文档和PDF的现成字体。
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
-source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%

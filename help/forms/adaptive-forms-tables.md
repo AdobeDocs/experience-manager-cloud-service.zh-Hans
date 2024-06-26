@@ -4,7 +4,8 @@ description: 使用表组件向自适应表单添加表。 在帮助进行响应
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 2%
@@ -165,7 +166,7 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 ## 表中的表达式 {#expressions-in-a-table}
 
-自适应表单中的表允许您在JavaScript中编写表达式以诱导行为，如显示或隐藏表或行，合计所有数字并在单元格中显示总计，启用或禁用单元格，验证用户输入等。 这些表达式使用自适应表单脚本模型API。
+自适应表单中的表允许您在JavaScript中编写表达式以诱导行为，如显示或隐藏表或行，合计所有数字并显示单元格中的总计，启用或禁用单元格，验证用户输入等。 这些表达式使用自适应表单脚本模型API。
 
 虽然表和行仅支持可见性表达式，以根据表达式返回的值来控制它们的可见性，但单元格支持以下表达式：
 
@@ -183,7 +184,7 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 表或行的可见性表达式可以在它们对应的“编辑组件”对话框的“面板属性”选项卡中定义。 单元格的表达式可在其“编辑组件”对话框的“脚本”选项卡中定义。
 
-有关自适应表单类、事件、对象和公共API的完整列表，请参阅 [自适应表单的JavaScript库API参考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+有关自适应表单类、事件、对象和公共API的完整列表，请参阅 [自适应表单的JavaScript Library API参考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## 移动设备布局 {#mobile-layouts}
 
@@ -223,7 +224,7 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 ## 合并表中的数据 {#merge-data-in-a-table}
 
-自适应表单中的表允许您在运行时使用XML文件中的数据填充该表。 数据XML文件可以驻留在运行AEM Forms服务器的计算机的本地文件系统或CRX存储库中。
+自适应表单中的表允许您在运行时使用XML文件中的数据填充该表。 数据XML文件可以驻留在运行AEM Forms Server的计算机的本地文件系统中，也可以驻留在CRX存储库中。
 
 让我们以以下银行交易摘要表为例，该表要填入来自XML文件的数据。
 

@@ -1,9 +1,10 @@
 ---
 title: 如何对表单创建失败进行故障排除？
 description: 对AEM Formsas a Cloud Service环境中表单创建失败进行故障诊断。
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
-source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
+exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -27,9 +28,9 @@ ht-degree: 0%
 要解决此问题，请执行以下步骤：
 
 1. 确保您在表单中使用的模板不包含 `jcr:uuid` 和其他系统在路径上生成的受保护属性 `<template-path>/initial/jcr:content node`.
-1. 使用模板控制台显式发布模板。
+1. 使用“模板”控制台明确Publish模板。
 1. 现在，在发布模板时，尝试使用该模板创建新表单。
-1. 如果在未来版本中使用了模板，请再次发布模板（如步骤2中所述）以防止表单创建失败问题。
+1. 如果在未来版本中使用了模板，请再次Publish该模板（如步骤2中所述）以防止表单创建失败问题。
 
 
 <!--
@@ -55,13 +56,3 @@ To resolve the issue, perform the following workaround steps:
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
 -->
-
-
-
-
-
-
-
-
-
-

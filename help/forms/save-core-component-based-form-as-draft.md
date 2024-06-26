@@ -2,13 +2,14 @@
 title: 如何将基于核心组件的自适应表单另存为草稿？
 description: 了解如何将基于核心组件的自适应表单另存为草稿、创建Forms Portal并在AEM Sites页面上使用现成的核心组件。
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 <span class="preview"> 本文包含预发行版功能的内容。 预发行功能只能通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 

@@ -4,7 +4,8 @@ description: 了解如何为自适应表单添加新区域设置。
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 3%
@@ -94,9 +95,9 @@ AEM Forms优先考虑以下方法来确定自适应表单的区域设置：
 
 要根据核心组件向自适应表单中添加对新区域设置的支持，请执行以下步骤：
 
-### 克隆AEMas a Cloud Service的Git存储库
+### 克隆AEM as a Cloud Service Git存储库
 
-1. 打开命令行并选择一个目录来存储AEMas a Cloud Service的存储库，例如 `/cloud-service-repository/`.
+1. 打开命令行并选择一个目录以存储AEM as a Cloud Service存储库，例如 `/cloud-service-repository/`.
 
 1. 运行以下命令以克隆存储库：
 
@@ -106,7 +107,7 @@ AEM Forms优先考虑以下方法来确定自适应表单的区域设置：
 
    要克隆Git存储库，您需要以下信息：
 
-   * **组织名称**：用于在Adobe Experience Manager as a Cloud Service (AEMas a Cloud Service)中标识您的团队或项目。
+   * **组织名称**：用于在Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service)中标识您的团队或项目。
 
    * **项目ID**：指定与存储库关联的项目。
 
@@ -118,7 +119,7 @@ AEM Forms优先考虑以下方法来确定自适应表单的区域设置：
 
    **您的项目已准备就绪！**
 
-   当命令成功完成时，您会看到在本地目录中创建了一个新文件夹。 此文件夹以您的程序（例如，program-id）命名。 此文件夹包含从AEMas a Cloud ServiceGit存储库下载的所有文件和代码。
+   当命令成功完成时，您会看到在本地目录中创建了一个新文件夹。 此文件夹以您的程序（例如，program-id）命名。 此文件夹包含从AEM as a Cloud Service Git存储库下载的所有文件和代码。
 
    在本指南中，我们将此文件夹称为 `[AEMaaCS project directory]`.
 
@@ -197,7 +198,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 ### 集成示例客户端库
 
-现在，让我们整合 `clientlib-it-custom-locale` 将库保存到您的AEMas a Cloud Service中， [AEMaaCS项目目录]：
+现在，让我们整合 `clientlib-it-custom-locale` 库到您的AEM as a Cloud Service中， [AEMaaCS项目目录]：
 
 1. 找到示例客户端库：
 
@@ -326,7 +327,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 现在，您均设置为在自适应Forms中使用新的区域设置。 您可以
 
-* 部署AEMas a Cloud Service， [AEMaaCS项目目录]，以在本地计算机上尝试新的区域设置配置。 要部署到本地开发环境，请执行以下操作：
+* 部署AEM as a Cloud Service， [AEMaaCS项目目录]，以在本地计算机上尝试新的区域设置配置。 要部署到本地开发环境，请执行以下操作：
 
    1. 确保您的本地开发环境已启动并正在运行。 如果您尚未设置本地开发环境，请参阅上的指南 [为AEM Forms设置本地开发环境](/help/forms/setup-local-development-environment.md).
 
@@ -340,7 +341,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
       mvn -PautoInstallPackage clean install
       ```
 
-* 部署AEMas a Cloud Service， [AEMaaCS项目目录]，添加到您的Cloud Service环境。 要部署到Cloud Service环境，请执行以下操作：
+* 部署AEM as a Cloud Service， [AEMaaCS项目目录]，添加到您的Cloud Service环境。 要部署到Cloud Service环境，请执行以下操作：
 
    1. 提交更改：
 
@@ -350,7 +351,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       通过以下方式触发代码部署 [现有全栈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). 这会使用新的区域设置支持自动构建和部署更新的代码。
 
-      如果尚未设置管道，请参阅上的指南 [如何设置AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+      如果尚未设置管道，请参阅上的指南 [如何为AEM Forms设置管道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## 预览具有新添加区域设置的自适应表单

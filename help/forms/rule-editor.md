@@ -2,10 +2,10 @@
 title: 如何使用规则编辑器将规则添加到表单字段以添加动态行为并将复杂逻辑构建到自适应表单？
 description: 自适应Forms规则编辑器允许您添加动态行为并将复杂的逻辑构建到表单中，而无需编码或编写脚本。
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 1%
@@ -18,8 +18,8 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEMas a Cloud Service（基础组件） | 本文 |
-| AEMas a Cloud Service（核心组件） | [单击此处](/help/forms/rule-editor-core-components.md) |
+| AEM as a Cloud Service（基础组件） | 本文 |
+| AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/rule-editor-core-components.md) |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## 概述 {#overview}
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 添加到forms-power-users组的用户可以创建脚本并编辑现有脚本。 中的用户 [!DNL forms-users] 组可以使用脚本，但不能创建或编辑脚本。
 
-## 核心组件中的规则编辑器与基础组件中的规则编辑器的区别
+## 核心组件中的规则编辑器与基础组件中的规则编辑器之间的区别
 
 {{rule-editor-diff}}
 
@@ -107,7 +107,7 @@ ht-degree: 1%
 
 规则编辑器提供了一组可用于编写规则的预定义规则类型。 让我们详细了解一下每种规则类型。 有关在规则编辑器中编写规则的更多信息，请参阅 [写入规则](rule-editor.md#p-write-rules-p).
 
-### [!UICONTROL 当] {#whenruletype}
+### [!UICONTROL 什么时候] {#whenruletype}
 
 When **** 规则类型遵循条件-操作-备用操作&#x200B;**规则构造，或者有时仅**&#x200B;遵循&#x200B;**条件-操作**&#x200B;构造。在此规则类型中，您首先指定评估条件，然后在满足条件时触发操作 （ `True`）。 使用 When 规则类型时，您可以使用多个 AND 和 OR 运算符来创建 [嵌套表达式](#nestedexpressions)。
 

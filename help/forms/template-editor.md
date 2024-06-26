@@ -3,7 +3,8 @@ title: 如何创建自适应表单模板？
 description: 使用模板编辑器创建自适应表单模板以定义基本结构和初始内容。
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 4%
@@ -59,7 +60,7 @@ Experience Manager提供了一个全局文件夹来组织模板。 但是，默�
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **模式选择器：** 允许您更改模式。您可以选择 **[!UICONTROL 结构]** 模式， **[!UICONTROL 初始内容]**， **[!UICONTROL 布局控件]** 模式。 结构模式允许您添加和自定义页眉和页脚。 初始内容模式允许您自定义表单内容。
    * **预览：** 允许您预览发布模板时的外观。 您可以使用“图层选择器”和“预览”来切换编辑和预览模式。
-* **侧栏：** 提供内容、属性、资源和组件浏览器。
+* **侧栏：** 提供“内容”、“属性”、“Assets”和“组件”浏览器。
 * **组件工具栏：** 选择某个组件后，您将看到一个工具栏，其中允许您自定义该组件。
 * **页面**：添加内容以创建模板的区域。
 
