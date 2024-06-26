@@ -4,9 +4,9 @@ description: 了解AE的基础知识；使用包管理器进行包管理。
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
 workflow-type: tm+mt
-source-wordcount: '3769'
+source-wordcount: '3772'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 ## AEMas a Cloud Service中的包 {#aemaacs-packages}
 
-为AEMas a Cloud Service应用程序创建的内容包在不可变和可变内容之间必须具有干净的分离。 因此，包管理器只能用于管理包含内容的包。 任何代码都必须通过Cloud Manager部署。
+为AEM as a Cloud Service应用程序创建的内容包在不可变和可变内容之间必须有一个干净的分离。 因此，包管理器只能用于管理包含内容的包。 任何代码都必须通过Cloud Manager部署。
 
 >[!NOTE]
 >
@@ -190,18 +190,22 @@ Package Manager分为四个主要功能区域：
 
 ![“筛选器”选项卡](assets/edit-filter.png)
 
-创建过滤器时，您可以定义路径或使用正则表达式来指定要包含或排除的所有节点。
+创建规则时，您可以定义正则表达式（也称为正则表达式、正则表达式或正则表达式），以指定要包含或排除的所有节点。
 
 | 规则类型 | 描述 |
 |---|---|
-| include | 包括一个目录将包括该目录以及该目录中的所有文件和文件夹（即整个子树），但是 **不会** 包括指定根路径下的其他文件或文件夹。 |
-| 排除 | 排除目录将排除该目录以及该目录中的所有文件和文件夹（即整个子树）。 |
+| include | Include将包括指定目录中与正则表达式匹配的所有文件和文件夹。 包括 **不会** 包括指定根路径下的其他文件或文件夹。 |
+| 排除 | 排除将排除与正则表达式匹配的所有文件和文件夹。 |
 
 通常，当您首次定义包过滤器时 [创建包。](#creating-a-new-package) 但是，它们也可以稍后进行编辑，之后应重建包以根据新的筛选器定义更新其内容。
 
 >[!TIP]
 >
 >一个包可以包含多个过滤器定义，以便来自不同位置的节点可以轻松组合到一个包中。
+
+>[!TIP]
+>
+>有关背景信息，请参阅 [Apache Jackrabbit — 工作区过滤器](https://jackrabbit.apache.org/filevault/filter.html) 文档。
 
 ### 依赖项 {#dependencies}
 
