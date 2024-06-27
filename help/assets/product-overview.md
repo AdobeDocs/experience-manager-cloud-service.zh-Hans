@@ -1,9 +1,9 @@
 ---
 title: Content Hub概述
 description: 详细了解Content Hub、其主要优势、如何访问它以及如何围绕Content Hub中提供的选项提供反馈。
-source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
+source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Content Hub允许您使用Adobe Express(如果您具有Adobe Express权限)创�
 
 ## 先决条件 {#prerequisites-content-hub}
 
-Experience Manageras a Cloud Service6月版
+Content Hub需要2024.6版本或更高版本的as a Cloud ServiceExperience Manager的生产创作环境(最低版本为2024.6.16799)。
 
 ## 如何访问Content Hub？ {#access-content-hub}
 
-将用户添加到 [Content Hub产品配置文件](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，可通过以下方式访问Content Hub：
+[设置Content Hub后](#deploy-content-hub) 并将用户添加到 [Content Hub产品配置文件](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，可通过以下方式访问Content Hub：
 
 * 使用以下链接访问Content Hub：
 
