@@ -4,7 +4,7 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
+source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 36%
@@ -404,8 +404,8 @@ console.log("onErrorReceived", type, msg);
 
 * [通信方法](#prereqs)
 * 要访问具有OpenAPI功能的Dynamic Media，您必须具有以下功能的许可证：
-   * Assets存储库(例如，Experience Manager Assetsas a Cloud Service)
-   * AEM Dynamic Media
+   * Assets存储库(例如，Experience Manager Assetsas a Cloud Service)。
+   * AEM Dynamic Media。
 * 仅 [批准的资产](#approved-assets.md) 可用于确保品牌一致性。
 
 ### Dynamic Media与OpenAPI功能集成{#adobe-app-integration-polaris}
