@@ -1,9 +1,9 @@
 ---
 title: Content Hub概述
 description: 详细了解Content Hub、其主要优势、如何访问它以及如何围绕Content Hub中提供的选项提供反馈。
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 1aea6c6095aebd38f4c7c078701b29eebd3329b4
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Content Hub中最常见的属性（如搜索筛选器）是在添加或导入资
 
 **使非创意人员能够编辑和重新混合内容，同时继续使用品牌**
 
-Content Hub与Adobe Express(如果您拥有Adobe Express权限)集成，以便使用嵌入式快速编辑器编辑图像，从而在保持品牌形象的同时创建令人惊叹的图像变体。
+Content Hub允许您使用Adobe Express(如果您具有Adobe Express权限)创建新内容。 您可以通过易于使用的工具编辑现有内容，使用模板和品牌元素生成品牌内变体，以及通过Adobe Firefly中的最新GenAI功能创建新内容。
 
 **深入了解如何在团队之间使用内容**
 
@@ -61,6 +61,8 @@ Experience Manageras a Cloud Service6月版
 
 根据需要指定主题、建议描述和附加文件。 单击 **[!UICONTROL 提交]** 将反馈提交给Adobe。
 
+![Content Hub反馈](assets/content-hub-feedback.png)
+
 ## 为您的团队设置Content Hub {#setup-content-hub}
 
 请按照以下步骤为团队设置Content Hub：
@@ -69,13 +71,13 @@ Experience Manageras a Cloud Service6月版
 
 1. [载入Content Hub管理员](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [添加关键Content Hub用户](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [添加关键Content Hub用户](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [DAM作者或管理员可使用Experience Manager资源批准资源](approve-assets.md).
 
 1. [管理员可以为其他用户配置Content Hub用户界面](configure-content-hub-ui-options.md).
 
-1. [向团队中的更多用户授予Content Hub访问权限](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [向团队中的更多用户授予Content Hub访问权限](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [访问Content Hub门户](#access-content-hub).
 
