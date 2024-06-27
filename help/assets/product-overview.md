@@ -1,7 +1,7 @@
 ---
 title: Content Hub概述
-description: 详细了解Content Hub、其主要优势、如何访问它以及如何围绕Content Hub中提供的选项提供反馈。
-source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
+description: 详细了解Content Hub、其主要优势、如何访问它以及如何就Content Hub中提供的选项提供反馈。
+source-git-commit: b29641286919b5becc3982400ea160836531fdc5
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
