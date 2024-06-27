@@ -2,7 +2,7 @@
 title: 投放API
 description: 了解如何使用投放API。
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -62,4 +62,3 @@ headers: {
 要调用交付API，需要在中使用一个IMS令牌 `Authorization` 投放受限制资产的详细信息。 IMS令牌从技术帐户中获取。 请参阅 [获取AEM as a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials) 以创建新的技术帐户。 请参阅 [生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token) 以生成IMS令牌并在投放API请求标头中正确使用它。
 
 要查看请求示例、响应示例和响应代码，请参阅 [投放API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat).
-
