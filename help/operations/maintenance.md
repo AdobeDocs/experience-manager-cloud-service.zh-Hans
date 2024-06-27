@@ -1,13 +1,13 @@
 ---
 title: AEM as a Cloud Service 中的维护任务
-description: 了解AEMas a Cloud Service中的维护任务以及如何配置它们。
+description: 了解AEM as a Cloud Service中的维护任务以及如何配置它们。
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 59%
+source-wordcount: '2106'
+ht-degree: 30%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 59%
 >
 >Adobe保留覆盖客户维护任务配置设置的权利，以缓解性能下降等问题。
 
-下表说明了 AEM as a Cloud Service 发布时存在的维护任务。
+下表说明了可用的维护任务。
 
 <table style="table-layout:auto">
  <tbody>
@@ -45,26 +45,16 @@ ht-degree: 59%
   </tr>
   <tr>
     <td>版本清除</td>
-    <td>Adobe</td>
-    <td>对于现有环境（在2024年某个尚未确定的日期之前创建的环境），将禁用清除，并且将来将启用清除，默认为7年；客户将可以使用较低的自定义值（例如30天）对其进行配置。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->默认情况下，新环境（那些从尚未确定的2024年日期开始创建的环境）将启用清除，但具有下面的值，客户可以使用自定义值配置。
-     <ol>
-       <li>超过 30 天的版本将会被删除</li>
-       <li>保留过去 30 天内的最新 5 个版本</li>
-       <li>无论上述规则如何，都会保留最新版本。</li>
-       <br>建议有法规要求的客户将站点页面呈现为与特定日期显示的完全一样，并与专门的外部服务集成。
-     </ol></td>
+    <td>客户</td>
+    <td>默认情况下，当前禁用版本清除，但可以配置策略，如 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a> 部分。<br/><br/>默认情况下将很快启用清除，并且这些值可覆盖。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
   </td>
   </tr>
   <tr>
     <td>审核日志清除</td>
-    <td>Adobe</td>
-    <td>对于现有环境（在2024年某个尚未确定的日期之前创建的环境），将禁用清除，并且将来将启用清除，默认为7年；客户将可以使用较低的自定义值（例如30天）对其进行配置。<br><br> <!-- See above for the two line breaks -->对于新环境（那些在2024年某个尚未确定的日期之前创建的环境），默认情况下将启用 <code>/content</code> 节点，具体行为如下：
-     <ol>
-       <li>对于复制审核，将删除超过 3 天的审核日志</li>
-       <li>对于 DAM (Assets)，将删除超过 30 天的审核日志</li>
-       <li>对于页面审核，将删除超过 3 天的日志。</li>
-       <br>建议有管理法规要求的客户制作不可编辑的审核日志，并与专门的外部服务集成。
-     </ol></td>
+    <td>客户</td>
+    <td>默认情况下，审核日志清除当前处于禁用状态，但可以配置策略，如中所述 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a> 部分。<br/><br/>默认情况下将很快启用清除，并且这些值可覆盖。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
    </td>
   </tr>
   <tr>
@@ -200,3 +190,197 @@ ht-degree: 59%
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+## 版本清除和审核日志清除维护任务 {#purge-tasks}
+
+清除版本和审核日志会减小存储库的大小，在某些情况下，可以提高性能。
+
+>[!NOTE]
+>
+>Adobe建议客户不要配置版本清除。
+
+### 默认 {#defaults}
+
+当前，默认情况下不启用清除，但未来将更改此设置。 在启用默认清除之前创建的环境具有更保守的阈值，因此清除不会意外发生。 有关默认清除策略的更多详细信息，请参阅下面的版本清除和审核日志清除部分。
+<!-- Version purging and audit log purging are on by default, with different default values for environments with ids higher than **TBD** versus those with ids lower than that value. -->
+
+<!-- ### Overriding the default values with a new configuration {#override} -->
+
+可以通过声明配置文件并部署它来覆盖默认的清除值，如下所述。
+
+<!-- The reason for this behavior is to clarify the ambiguity over whether the default purge values would take effect once you remove the declaration. -->
+
+### 应用配置 {#configure-purge}
+
+声明配置文件并按照以下步骤中所述进行部署。
+
+>[!NOTE]
+>在配置文件中部署版本清除节点后，必须将其保留为已声明状态，不得将其删除。 如果尝试这样做，配置管道将失败。
+> 
+>同样，在配置文件中部署审核日志清除节点后，必须将其保留为已声明状态而不是将其删除。
+
+**1**  — 在Git中的项目顶级文件夹中创建以下文件夹和文件结构：
+
+```
+config/
+     mt.yaml
+```
+
+**2**  — 在配置文件中声明属性，包括：
+
+* 值为“MaintenanceTasks”的“kind”属性。
+* “版本”资产（当前为版本1）。
+* 具有属性的可选“元数据”对象 `envTypes` 以逗号分隔的环境类型(dev、stage、prod)列表，此配置对此环境类型有效。 如果未声明任何元数据对象，则该配置对所有环境类型都有效。
+* 数据对象，同时具有两者 `versionPurge` 和 `auditLogPurge` 对象。
+
+请参阅的定义和语法 `versionPurge` 和 `auditLogPurge` 下方的对象。
+
+您应构建类似于以下示例的配置：
+
+```
+kind: "MaintenanceTasks"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  versionPurge:
+    maximumVersions: 15
+    maximumAgeDays: 20
+    paths: ["/content"]
+    minimumVersions: 1
+    retainLabelledVersions: false
+  auditLogPurge:
+    rules:
+      - replication:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+      - pages:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+      - dam:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+```
+
+请记住，为了使配置有效：
+
+* 必须定义所有属性。 没有继承的默认值。
+* 必须遵循以下属性表中的类型（整数、字符串、布尔值等）。
+
+>[!NOTE]
+>您可以使用 `yq` 在本地验证配置文件的YAML格式(例如， `yq mt.yaml`)。
+
+**3**  — 配置非生产和生产配置管道。
+
+快速开发环境(RDE)不支持清除。 对于生产（非沙盒）程序中的其他环境类型，请在Cloud Manager中创建目标部署配置管道。
+
+请参阅 [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 和 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以了解更多详细信息。
+
+### 版本清除 {#version-purge}
+
+>[!NOTE]
+>
+>Adobe建议客户不要配置版本清除。
+
+#### 版本清除默认值 {#version-purge-defaults}
+
+<!-- For version purging, environments with an id higher than **TBD** have the following default values: -->
+
+当前，默认情况下不启用清除，但未来将更改此设置。
+
+启用默认清除后创建的环境将具有以下默认值：
+
+* 超过30天的版本将被删除。
+* 保留过去30天内的最新5个版本。
+* 无论上述规则如何，都会保留最新版本（以及当前文件）。
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+在启用默认清除之前创建的环境将具有下面列出的默认值，但建议降低这些值以优化性能。
+
+* 超过7年的版本将被删除。
+* 保留过去7年的所有版本。
+* 7年后，除最新版本（以及当前文件）以外的版本将被删除。
+
+#### 版本清除属性 {#version-purge-properties}
+
+下面列出了允许的属性。
+
+列指示 *默认* 指示将来（应用默认值时）的默认值； *待定* 反映了一个仍未确定的环境ID。
+
+| 属性 | 环境未来的默认值>待定 | 环境&lt;=TBD的未来默认值 | 必填 | 类型 | 值 |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| 路径 | [“/content”] | [“/content”] | 是 | 字符串数组 | 指定创建新版本时要在哪些路径下清除版本。  客户必须声明此属性，但唯一允许的值是“/content”。 |
+| maximumAgeDay | 30 | 2557（7年+ 2个闰日） | 是 | 整数 | 将删除比配置值更早的任何版本。 如果该值为0，则不会根据版本的存在时间执行清除。 |
+| maximumVersions | 5 | 0（无限制） | 是 | 整数 | 第n个最新版本之前的版本将被删除。 如果该值为0，则不会根据版本数执行清除。 |
+| minimumVersion | 1 | 1 | 是 | 整数 | 无论使用年限如何，保留的最小版本数。 请注意，始终至少保留1个版本；其值必须为1或更高。 |
+| retainLabelledVersioned | false | false | 是 | 布尔型 | 确定是否将从清除中排除明确标记的版本。 为了更好地优化存储库，建议将此值设置为false。 |
+
+
+**属性交互**
+
+以下示例说明了资产在组合时如何进行交互。
+
+示例：
+
+```
+maximumAgeDays = 30
+maximumVersions = 10
+minimumVersions = 2
+```
+
+如果第23天有11个版本，则下次清除维护任务运行时将清除最早的版本，因为 `maximumVersions` 属性设置为10。
+
+如果第31天有5个版本，则只清除3个版本，因为 `minimumVersions` 属性设置为2。
+
+示例：
+
+```
+maximumAgeDays = 30
+maximumVersions = 0
+minimumVersions = 1
+```
+
+由于30天以上的 `maximumVersions` 属性设置为0。
+
+将保留30天之前的版本。
+
+### 审核日志清除 {#audit-purge}
+
+#### 审核日志清除默认值 {#audit-purge-defaults}
+
+<!-- For audit log purging, environments with an id higher than **TBD** have the following default values: -->
+
+当前，默认情况下不启用清除，但未来将更改此设置。
+
+启用默认清除后创建的环境将具有以下默认值：
+
+* 超过7天的复制、DAM和页面审核日志将被删除。
+* 记录所有可能的事件。
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+在启用默认清除之前创建的环境将具有下面列出的默认值，但建议降低这些值以优化性能。
+
+* 超过7年的复制、DAM和页面审核日志将被删除。
+* 记录所有可能的事件。
+
+>[!NOTE]
+>建议那些有法规要求生成不可编辑的审核日志的客户与专门的外部服务集成。
+
+#### 审核日志清除属性 {#audit-purge-properties}
+
+下面列出了允许的属性。
+
+列指示 *默认* 指示将来（应用默认值时）的默认值； *待定* 反映了一个仍未确定的环境ID。
+
+
+| 属性 | 环境未来的默认值>待定 | 环境&lt;=TBD的未来默认值 | 必填 | 类型 | 值 |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| 规则 | - | - | 是 | 对象 | 以下一个或多个节点：复制、页面、dam。 其中每个节点都定义了规则，并具有以下属性。 必须声明所有属性。 |
+| maximumAgeDay | 7 天 | 对于所有人，2557年（7年以上2个闰日） | 是 | 整数 | 对于复制、页面或dam：审核日志的保留天数。 将清除早于配置值的审核日志。 |
+| 内容路径 | “/content” | “/content” | 是 | 字符串 | 将清除审核日志的路径（针对相关类型）。 必须设置为“/content”。 |
+| 类型 | 所有值 | 所有值 | 是 | 枚举数组 | 对象 **复制**，枚举值为：Activate、Deactivate、Delete、Test、Reverse、Internal Poll。 对象 **页面**，枚举值为： PageCreated、PageModified、PageMoved、PageDeleted、VersionCreated、PageRestored、PageRolled、PageValid、PageInvalid。 对象 **dam**，枚举值包括：ASSET_EXPIRING、METADATA_UPDATED、ASSET_EXPIRED、ASSET_REMOVED、RESTORED、ASSET_MOVED、ASSET_VIEWED、PROJECT_VIEWED、PUBLISHED_EXTERNAL、COLLECTION_VIEWED、VERSIONED、ADDED_COMMENT、RENDITION_UPDATED、ACCEPTED、DOWNLOADED、SUBORED、ASSED、ASSED、ASSED、ASSET、CREATED、CREATED_CREATED、CREATED_CREATED_CREATED、CREATED_ASSED、ASSED_ASSED_ASSED_ASSELATED、ASSET REMOVED、ASSET_PUBLISHED、ORIGINAL_UPDATED、RENDITION_DOWNLOADED、已拒绝。 |
