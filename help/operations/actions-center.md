@@ -4,10 +4,10 @@ description: 利用行动中心方便地对事件和其他重要信息采取行�
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 7630481aab89b31057509f23aab334e17c537257
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 69%
+source-wordcount: '988'
+ht-degree: 59%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 69%
 
 AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发送“操作中心”电子邮件通知，并主动提出优化建议。示例包括阻塞队列或一组即将过期的凭据；可在[下表](#supported-notification-types)中查看完整的“操作中心”通知类型集，此表也会随着时间不断扩充。
 
-在收到操作中心电子邮件通知后，可以单击该通知以打开AEMas a Cloud Service的操作中心，此时会显示一个弹出窗口，其中显示了说明客户要执行的操作的附加上下文。
+在收到操作中心电子邮件通知后，可以单击该通知以打开AEM as a Cloud Service的操作中心，此时会显示一个弹出窗口，其中显示了说明客户应采取的操作的附加上下文。
 
 除了显示有关刚刚单击的电子邮件通知的信息外，“操作中心”还充当可供查看和管理一组当前和过往通知的中心。<!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -76,6 +76,12 @@ AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在
 | 已锁定的复制队列 | 问题 | 按照[复制文档](/help/operations/replication.md#troubleshooting)中的说明执行操作来解锁队列 |
 | 持久GraphQL查询无效 | 问题 | GraphQL通过引用 [持久GraphQL查询疑难解答文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | 源头流量尖峰 | 问题 | 通过配置速率限制流量过滤器规则来Protect您的来源，这些规则在低于默认来源流量尖峰警报的阈值时触发。  请参阅 [使用流量规则阻止DoS和DDoS攻击](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) 流量过滤器规则文档的章节，其中引用了一个教程。 |
+| 页面包含大量节点 | 主动 | 减少页面中的节点总数。 请参阅 [页面复杂性文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
+| 大量正在运行的工作流实例 | 主动 | 终止不再需要的正在运行的工作流。 了解如何 [配置清除作业](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | 到期的 S2S 证书 | 主动 | 参阅[为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)文档，了解如何刷新凭据 | 高连接数 | 主动 | 了解连接池 [连接池和高级联网文档](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | 已弃用的服务用户映射 | 主动 | 了解如何使用较新的Sling服务用户映射格式，如中所述 [Sling服务用户映射和服务用户定义的最佳实践](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| 高连接数 | 主动 | 了解中的连接池 [高级联网文档](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| 高连接数 | 主动 | 了解中的连接池 [高级联网文档](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
+| 直接添加到自定义组的用户 | 主动 | 需要将用户添加到相关的IMS组，并且这些IMS组需要添加为AEM组的成员。 对齐 [IMS最佳做法](/help/security/ims-support.md) | |
+| 缺少JCR内容 | 主动 | 添加缺失的JCR内容节点。 请参阅 [Assets内容验证器文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| 未清除已完成的工作流 | 主动 | 通过清除已超过90天的工作流实例，最大程度地减少工作流实例数并提高性能。 了解如何 [配置维护任务](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance) | |
+| 页面中缺少Sling资源类型 | 主动 | 添加缺少的Sling资源类型节点。 请参阅 [Assets内容验证器文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |

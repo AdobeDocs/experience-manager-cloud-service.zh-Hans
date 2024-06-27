@@ -7,15 +7,13 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
 workflow-type: tm+mt
-source-wordcount: '4351'
+source-wordcount: '4333'
 ht-degree: 1%
 
 ---
 
-
-<span class="preview"> 本文包含 `Override form submission success and error handlers` 作为预发行版功能。 预发行功能只能通过我们的 [预发行渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).
 
 # 自适应Forms中的自定义函数（核心组件）
 
