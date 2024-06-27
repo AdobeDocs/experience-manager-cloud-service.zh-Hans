@@ -4,7 +4,7 @@ description: 了解AEM as a Cloud Service中的维护任务以及如何配置它
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 30%
@@ -46,14 +46,14 @@ ht-degree: 30%
   <tr>
     <td>版本清除</td>
     <td>客户</td>
-    <td>默认情况下，当前禁用版本清除，但可以配置策略，如 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a> 部分。<br/><br/>默认情况下将很快启用清除，并且这些值可覆盖。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>默认情况下，当前禁用版本清除，但可以配置策略，如 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a> 部分。<br/><br/>默认情况下将很快启用清除，并且这些值可覆盖。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>审核日志清除</td>
     <td>客户</td>
-    <td>默认情况下，审核日志清除当前处于禁用状态，但可以配置策略，如中所述 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a> 部分。<br/><br/>默认情况下将很快启用清除，并且这些值可覆盖。<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>默认情况下，审核日志清除当前处于禁用状态，但可以配置策略，如中所述 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a> 部分。<br/><br/>默认情况下将很快启用清除，并且这些值可覆盖。<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->Adobe建议客户不要配置版本清除。
+>AEM Guides客户不应配置版本清除。
 
 ### 默认 {#defaults}
 
@@ -283,7 +283,7 @@ data:
 
 >[!NOTE]
 >
->Adobe建议客户不要配置版本清除。
+>AEM Guides客户不应配置版本清除。
 
 #### 版本清除默认值 {#version-purge-defaults}
 
