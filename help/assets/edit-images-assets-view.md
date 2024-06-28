@@ -4,7 +4,7 @@ description: 使用由 [!DNL Adobe Express] 提供支持的选项编辑图像并
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 9a21c9218e45bb6ce91263c9798e3b1c99f369b4
+source-git-commit: 23b43f22b62451c9d0a5460999fcd43479438d7e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 33%
@@ -13,7 +13,7 @@ ht-degree: 33%
 
 # 在 [!DNL Assets view] 中编辑图像 {#edit-images-in-assets-view}
 
-“资源视图”支持基本的图像编辑，包括调整大小、删除背景、裁剪以及在JPEG格式和PNG格式之间进行转换。 此外，它还允许通过与Adobe Express集成进行高级编辑。 在编辑图像之后，您可以将新图像另存为新版本。版本控制可帮助您以后在需要时还原为原始资源。 若要编辑图像，请[打开其预览](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets)，然后单击&#x200B;**“编辑图像”。**
+Assets视图可支持基本的图像编辑，包括调整大小、删除背景、裁剪以及在JPEG格式和PNG格式之间进行转换。 此外，它还允许通过与Adobe Express集成进行高级编辑。 在编辑图像之后，您可以将新图像另存为新版本。版本控制可帮助您以后在需要时还原为原始资源。 若要编辑图像，请[打开其预览](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets)，然后单击&#x200B;**“编辑图像”。**
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 33%
 
 ## 编辑图像 {#edit-image}
 
-登陆资产视图，使用链接 —  [资产视图](https://experience.adobe.com/#/assets) 并选择正确的存储库。 要获得访问权限，请联系贵组织的管理员。
+登陆Assets视图，使用以下链接 —  [Assets视图](https://experience.adobe.com/#/assets) 并选择正确的存储库。 要获得访问权限，请联系贵组织的管理员。
 有关任何其他参考信息，请参阅 —  [开始使用Adobe Experience Manager Assets视图](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)， [了解Assets视图用户界面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)、和 [Assets查看用例](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
@@ -88,11 +88,11 @@ ht-degree: 33%
 ![在Essentials UI中表达](/help/assets/assets/express-in-essentials-ui.jpg)
 要使用编辑图像，请执行以下操作 [!DNL Adobe Express] 嵌入式编辑器，请执行以下步骤：
 
-1. 使用以下链接登录到AEM Assets视图 —  [AEM资源视图](https://experience.adobe.com/#/assets) 并选择正确的存储库。
+1. 使用以下链接登录到AEM Assets视图 —  [AEM Assets视图](https://experience.adobe.com/#/assets) 并选择正确的存储库。
 1. 单击 **Assets**，输入文件夹，然后选择图像。
 1. 单击 **在Adobe Express中打开**. 图像在快速画布上打开。
 1. 对图像进行所需的编辑。
-1. 如果您的项目要求您添加更多页面，请单击 **添加**，选择Assets，输入文件夹，选择要放到画布页面上的图像，然后对图像执行所需的编辑。
+1. 如果您的项目要求您添加更多页面，请单击 **添加**，选择资源，输入文件夹，选择要放到画布页面上的图像，然后对图像执行所需的编辑。
 1. 要保存图像，请单击 **保存**. 此时将显示保存对话框。
 
    >[!NOTE]
@@ -197,7 +197,7 @@ TBD: Insert a video of the available social media options.
 
 * 使用提供产品反馈 [!UICONTROL 反馈] 选项，该选项位于Assets视图用户界面上。
 
-* 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
+* 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 
 * 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General#support)
 
