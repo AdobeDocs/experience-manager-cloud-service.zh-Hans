@@ -1,17 +1,17 @@
 ---
-title: Real Use Monitoring for AEMas a Cloud Service
+title: AEM as a Cloud Service 的实际使用监控
 description: 了解如何使用实时监控(RUM)实时捕获和分析网站或应用程序的数字用户体验。
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 12e37d6d0a8674dd4329200322e2f959cc6dd787
+source-git-commit: 19b52f733a592c7e84ba2e9d83d37e5e181f21ab
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
 
-# 适用于AEM的Real Use Monitoring Serviceas a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
+# 适用于AEM as a Cloud Service的Real Use Monitoring Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
@@ -32,8 +32,6 @@ ht-degree: 0%
 Real Use Monitoring服务对所有客户都有好处。 它提供了用户交互的有代表性的反映方式，通过捕获客户端页面查看次数来确保可靠衡量网站参与度。
 
 对于所有Adobe客户，此服务提供了有关用户交互的有价值见解。 使用自己CDN的客户可以从简化的流量报表中受益，因为Adobe现在直接集成了数据收集，从而无需在续订周期期间单独显示报表。
-
-您是否希望使用Adobe的率先采用者RUM Explorer可视化工具来获取有关您网站参与情况的有用见解，从而释放您网站的全部潜力？ 此工具可提供有关页面性能的见解，包括点击次数、核心Web虚拟(CWV)、转化和客户历程图的量度。 通过使用这些强大的见解，您可以优化数字体验以更有效地满足用户的需求。 如果您想了解更多信息并获取访问权限，请发送电子邮件至 `rum-explorer@adobe.com`.
 
 ## 了解实际使用情况监控服务的工作方式 {#understand-how-the-rum-service-works}
 
@@ -108,11 +106,11 @@ RUM数据有利于以下目的：
 
 1. **此 `/.rum` 我的网站上的路径被阻止，我应该如何修复？**
 
-   此 `/.rum` 需要Path才能使RUM集合正常工作。 如果您的CDN位于AEMas a Cloud Service中由Adobe提供的内容之前，请确保 `/.rum` 路径将转发到与AEM内容的其余部分相同的AEM源。 并且，确保不会以任何方式对其进行调整。
+   此 `/.rum` 需要Path才能使RUM集合正常工作。 如果您的CDN位于AEM as a Cloud Service中的Adobe所提供的CDN之前，请确保 `/.rum` 路径将转发到与AEM内容的其余部分相同的AEM源。 并且，确保不会以任何方式对其进行调整。
 
 1. **RUM收藏集是否计入合同目的的内容请求？**
 
-   RUM库和RUM收藏集不会计为内容请求，也不会增加报告的页面查看次数或API调用数。 此外，对于将现成CDN与AEMas a Cloud Service结合使用的客户， [服务器端收藏集](#serverside-collection) 是内容请求的基础。
+   RUM库和RUM收藏集不会计为内容请求，也不会增加报告的页面查看次数或API调用数。 此外，对于将现成CDN与AEM as a Cloud Service一起使用的客户， [服务器端收藏集](#serverside-collection) 是内容请求的基础。
 
 1. **如何选择退出？**
 
