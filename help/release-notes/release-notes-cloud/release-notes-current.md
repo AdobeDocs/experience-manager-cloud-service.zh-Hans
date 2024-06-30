@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 44%
+source-wordcount: '1932'
+ht-degree: 43%
 
 ---
 
@@ -86,6 +86,14 @@ Content Hub作为Experience Manager Assets as a Cloud Service的一部分提供�
 **Assets Insights仪表板中提供了更多选项**
 
 Assets Insights仪表板中现在提供了按资源类型和大小划分的资源计数。 这些选项可在您的Assets视图环境中提供实时数据。 它们按大小范围和资源类型详细列出资源的计数和百分比。
+
+**更新了嵌入式Adobe Express编辑器**
+
+* 与另存为新版本相比，改进了另存为新资产的用户体验。
+
+* 以多页PDF和图像格式导出多页Express文档（以前仅支持单页）。 选择图像格式会将每个页面另存为DAM中的独特资产，以供下游分发。
+
+* 支持在保存资产时在“保存”对话框中添加元数据。
 
 <!--
 
