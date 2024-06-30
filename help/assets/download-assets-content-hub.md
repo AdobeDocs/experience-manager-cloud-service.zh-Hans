@@ -2,10 +2,10 @@
 title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载资源
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 3%
+source-wordcount: '125'
+ht-degree: 4%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 3%
 Content Hub允许您下载和共享资源。 这些资产可能包括图像、视频或任何其他数字内容。 Content Hub增强了可访问性和适应性，以实现有效的资源分发。
 
 您可以使用Content Hub下载单个或多个资源。 将下载资源的原始版本。
+
+## 先决条件 {#prerequisites}
+
+[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users) 可以执行本文中提到的操作。
 
 ## 下载资源 {#download-single-asset}
 

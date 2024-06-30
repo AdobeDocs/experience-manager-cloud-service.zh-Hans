@@ -2,9 +2,9 @@
 title: 在中共享Assets [!DNL the Content Hub]
 description: 在中共享Assets [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ![共享资产横幅图像](assets/share-assets-banner.png)
 
 通过链接共享资产是一种使资源可供使用的便捷方法 [!DNL the Content Hub] 用户。 该功能允许授权用户访问和下载与其共享的资产。 从共享链接下载资源时， [!DNL the Content Hub] 使用异步服务，以便提供更快且无中断的下载。
+
+## 先决条件 {#prerequisites}
+
+[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users) 可以执行本文中提到的操作。
 
 ## 共享单个资产 {#share-a-single-asset}
 

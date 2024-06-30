@@ -1,9 +1,9 @@
 ---
 title: 在Content Hub中使用Adobe Express编辑图像
 description: 在Content Hub中使用Adobe Express编辑图像
-source-git-commit: 52166c1983218d619c416b4c095e8954e3010dc5
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Content Hub允许您使用Adobe Express创建新内容。 您可以通过易于�
 
 ## 先决条件 {#prereqs-edit-image-content-hub}
 
-访问Adobe Express和的权限 [具有提交权限的Content Hub资源消费者用户](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) 可以使用Content Hub编辑图像。
+访问Adobe Express和的权限 [有权将资源重新混合到新变体的Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) 可以使用Content Hub编辑图像。
 
 >[!NOTE]
 >

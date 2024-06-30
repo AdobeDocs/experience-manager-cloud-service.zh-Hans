@@ -2,9 +2,9 @@
 title: 在Content Hub中搜索资源
 description: 了解如何在中搜索资源 [!DNL Content Hub]
 role: User
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 ![共享资产横幅图像](assets/search.png)
 
 当存储库中有大量资源时，搜索合适的资源会非常耗时。 [!DNL The Content Hub] 通过搜索，您可以查找已批准的资产，以便您可以对其执行其他操作，例如下载、共享或创建收藏集。 您可以利用各种功能来缩小搜索结果的范围，例如，执行基于文本的搜索、使用过滤器、执行标记或智能标记特定的搜索、搜索特定的文件格式等。
+
+## 先决条件 {#prerequisites}
+
+[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users) 可以执行本文中提到的操作。
 
 ## 您可以搜索的内容  {#what-you-can-search}
 

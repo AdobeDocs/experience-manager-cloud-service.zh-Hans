@@ -2,9 +2,9 @@
 title: 中的资产属性 [!DNL the Content Hub]
 description: 了解如何在中查看和管理资源属性 [!DNL Content Hub]
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '599'
 ht-degree: 8%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 8%
 * 更易于访问 - 系统和用户可以轻松地找到它。
 * 更易于管理 — 您可以轻松地找到具有一组相同属性的资源并对其应用更改。
 * 完整 — 资产包含更多信息和上下文。
+
+## 先决条件 {#prerequisites}
+
+[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users) 可以执行本文中提到的操作。
 
 ## 查看资源的属性 {#properties-ui}
 

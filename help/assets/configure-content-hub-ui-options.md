@@ -1,9 +1,9 @@
 ---
 title: 配置Content Hub用户界面
 description: 配置Content Hub用户界面
-source-git-commit: 85ccd23df4ac320d6da37c54b72f0f93916e65a1
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1096'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Experience Manager Assets允许管理员配置Content Hub用户界面上可用�
 
 ## 先决条件 {#prerequisites-configuration-ui}
 
-[Content Hub管理员](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) 可将资源添加到Content Hub，还可为您组织内的其他用户设置配置选项。
+[Content Hub管理员](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) 可以为组织内的其他用户设置配置选项。
 
 ## 访问Content Hub上的配置选项 {#access-configuration-options-content-hub}
 

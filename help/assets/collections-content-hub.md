@@ -2,9 +2,9 @@
 title: 在Content Hub中管理收藏集
 description: 了解如何在Content Hub中管理收藏集
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '617'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 3%
 * **删除**：删除整个收藏集。
 
 它帮助用户轻松访问和管理中提供的各种资源 [!DNL Content Hub].
+
+## 先决条件 {#prerequisites}
+
+[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users) 可以执行本文中提到的操作。
 
 ## 创建收藏集{#create-collections}
 
