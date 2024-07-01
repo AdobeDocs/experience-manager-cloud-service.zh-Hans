@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1989b546c495307440690f7e3510619112bdcc29
+source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
-source-wordcount: '5132'
-ht-degree: 98%
+source-wordcount: '5143'
+ht-degree: 97%
 
 ---
 
@@ -183,6 +183,8 @@ ht-degree: 98%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
+   + 通用编辑器的发行说明 {#univeral-editor}
+      + [通用编辑器的当前发行说明](/help/release-notes/universal-editor/current.md)
    + [新增功能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 中的重要更改](/help/release-notes/aem-cloud-changes.md)
    + [已弃用和已删除的功能和 API](/help/release-notes/deprecated-removed-features.md)

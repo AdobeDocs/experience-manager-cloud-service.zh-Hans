@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
+source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 43%
+source-wordcount: '1958'
+ht-degree: 42%
 
 ---
 
@@ -241,6 +241,14 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 ## 迁移工具 {#migration-tools}
 
 您可以在[此处](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到迁移工具版本的完整列表。
+
+## Universal Editor {#universal-editor}
+
+您可以找到通用编辑器版本的完整列表 [此处](/help/release-notes/universal-editor/current.md).
+
+## 生成变体 {#generate-variations}
+
+您可以查找生成变体版本的完整列表 [此处](/help/generative-ai/release-notes-generate-variations.md).
 
 ## Experience Cloud 发行说明 {#experience-cloud}
 
