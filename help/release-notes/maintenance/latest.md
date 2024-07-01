@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 96%
 
 #### Forms
 
-1. 如果用户下载的AEM Forms SDK版本高于 `AEM Forms add-on v2024.05.04.00-240400`，批处理文件无法启动Docker服务。 要解决该问题：
+1. 如果用户下载的 AEM Forms SDK 版本高于 `AEM Forms add-on v2024.05.04.00-240400`，批处理文件将无法启动 Docker 服务。要解决该问题：
    1. 下载[文件夹](/help/forms/assets/sdk_hotfix.zip)。
    1. 从下载的文件夹中提取内容并复制 `sdk.sh` 和 `sdk.bat` 文件。
    1. 用新文件替换 AEM Forms SDK 中现有的 `sdk.sh` 和 `sdk.bat` 文件。
