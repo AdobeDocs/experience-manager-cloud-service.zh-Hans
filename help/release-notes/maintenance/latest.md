@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
-workflow-type: ht
-source-wordcount: '649'
-ht-degree: 100%
+source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
@@ -52,6 +52,15 @@ ht-degree: 100%
 * SCRNS-4194：移除对 Google Guava API 的依赖。
 * SCRNS-4360：频道内容提供商中非管理员用户缺少“管理发布”和“快速发布”按钮。
 * SCRNS-4323：隐藏/禁用从 screens.html 启动。
+
+#### Forms
+
+* Forms-14844：尽管失败reCAPTCHA验证，自适应Forms仍允许提交表单。
+* Forms-14984：如果提交的数据中不存在“submitMetaData”，则带CAPTCHA的Forms将跳过验证。
+* Forms-14477：规则编辑器中的“Is After”和“Is Before”选项在日期选取器验证中无法正常工作。
+* Forms-14019：规则编辑器的“调用服务”功能在通用编辑器中不起作用。
+* Forms-14336：未选择表单字段时，编辑器应会打开并重点关注整个表单元素。
+* Forms-15061：在规则编辑器中使用调用服务选项时，加载器循环将无限期保留。
 
 ### 已知问题 {#known-issues-16799}
 
