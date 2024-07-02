@@ -2,9 +2,9 @@
 title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源、Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,11 @@ Content Hub上各种权限的变体包括：
 1. 单击&#x200B;**[!UICONTROL 更新]**。
 
 Content Hub现已为Experience Manager Assetsas a Cloud Service启用。
+
+>[!NOTE]
+>
+>您最多可以对250个Content Hub用户访问和使用Content Hub。 如果您还有其他问题，请联系您的Adobe代表。
+
 
 如果您是Experience Manager Assets的新用户，请单击 **[!UICONTROL 添加项目]** 然后提供项目详细信息（项目名称，为生产设置）并单击 **[!UICONTROL 继续]**. 然后，您可以选择 **[!UICONTROL Assets]** 和 **[!UICONTROL Content Hub]** 在 **[!UICONTROL 解决方案和加载项]** 选项卡。
 
