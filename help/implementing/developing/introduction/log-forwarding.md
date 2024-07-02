@@ -1,12 +1,12 @@
 ---
-title: AEM的日志转发as a Cloud Service
-description: 了解如何在AEMas a Cloud Service中将日志转发给Splunk和其他日志记录供应商
+title: AEM as a Cloud Service的日志转发
+description: 了解如何在AEM as a Cloud Service中将日志转发给Splunk和其他日志记录供应商
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e007f2e3713d334787446305872020367169e6a2
+source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1278'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >
 >此功能尚未发布，并且在发布时，某些日志记录目标可能不可用。 同时，您可以打开支持工单以将日志转发到 **Splunk**，如中所述 [日志文章](/help/implementing/developing/introduction/logging.md).
 
-拥有日志记录供应商许可证或托管日志记录产品的客户可以将AEM日志（包括Apache/Dispatcher）和CDN日志转发到关联的日志记录目标。 AEMas a Cloud Service支持以下日志记录目标：
+拥有日志记录供应商许可证或托管日志记录产品的客户可以将AEM日志(包括Apache/Dispatcher)和CDN日志转发到关联的日志记录目标。 AEM as a Cloud Service支持以下日志记录目标：
 
 * Azure Blob存储
 * Datacog
@@ -25,9 +25,9 @@ ht-degree: 1%
 * HTTPS
 * Splunk
 
-以自助方式配置日志转发，方法是在Git中声明一个配置，并通过Cloud Manager配置管道将其部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。
+以自助方式配置日志转发，方法是在Git中声明一个配置，并通过Cloud Manager Configuration Pipeline将其部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。
 
-AEM和Apache/Dispatcher日志可以选择通过AEM高级网络基础架构（如专用出口IP）进行路由。
+AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（如专用出口IP）进行路由。
 
 请注意，与发送到日志记录目的地的日志相关联的网络带宽被视为您组织的网络I/O使用的一部分。
 
@@ -69,9 +69,9 @@ AEM和Apache/Dispatcher日志可以选择通过AEM高级网络基础架构（如
 
    此 **种类** 参数应设置为 `LogForwarding` 版本应设置为架构版本，即1。
 
-   配置中的令牌(如 `${{SPLUNK_TOKEN}}`)表示不应存储在Git中的密钥。 相反，将它们声明为Cloud Manager  [环境变量](/help/implementing/cloud-manager/environment-variables.md) 类型 **密码**. 确保选择 **全部** 作为“已应用服务”字段的下拉值，因此可以将日志转发到创作层、发布层和预览层。
+   配置中的令牌(如 `${{SPLUNK_TOKEN}}`)表示不应存储在Git中的密钥。 请声明它们为Cloud Manager  [环境变量](/help/implementing/cloud-manager/environment-variables.md) 类型 **密码**. 确保选择 **全部** 作为“已应用服务”字段的下拉值，因此可以将日志转发到创作层、发布层和预览层。
 
-   通过添加其他参数，可以在CDN日志和AEM日志（包括Apache/Dispatcher）之间设置不同的值 **cdn** 和/或 **aem** 之后阻止 **默认** 块，其中属性可以覆盖中定义的属性。 **默认** 块；仅需要已启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
+   通过添加其他值，可以在CDN日志和AEM日志(包括Apache/Dispatcher)之间设置不同的值 **cdn** 和/或 **aem** 之后阻止 **默认** 块，其中属性可以覆盖中定义的属性。 **默认** 块；仅需要已启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
 
    ```
       kind: "LogForwarding"
@@ -91,7 +91,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM高级网络基础架构（如
             index: "AEMaaCS_CDN"   
    ```
 
-   另一种方案是禁用CDN日志或AEM日志（包括Apache/Dispatcher）的转发。 例如，要仅转发CDN日志，可以配置以下内容：
+   另一种方法是禁用CDN日志或AEM日志(包括Apache/Dispatcher)的转发。 例如，要仅转发CDN日志，可以配置以下内容：
 
    ```
       kind: "LogForwarding"
@@ -173,7 +173,7 @@ aemcdn/
 
 #### Azure Blob Storage AEM日志 {#azureblob-aem}
 
-AEM日志（包括Apache/Dispatcher）显示在具有以下命名约定的文件夹下方：
+AEM日志(包括Apache/Dispatcher)显示在具有以下命名约定的文件夹下方：
 
 * aemaccess
 * aemerror
@@ -199,12 +199,16 @@ data:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
       token: "${{DATADOG_API_KEY}}"
+      tags:
+         tag1: value1
+         tag2: value2
       
 ```
 
 注意事项：
 
 * 创建API密钥，而不与特定的云提供商进行任何集成。
+* tags属性是可选的
 
 
 ### Elasticsearch和OpenSearch {#elastic}
@@ -221,6 +225,7 @@ data:
       host: "example.com"
       user: "${{ELASTICSEARCH_USER}}"
       password: "${{ELASTICSEARCH_PASSWORD}}"
+      pipeline: "ingest pipeline name"
 ```
 
 注意事项：
@@ -228,6 +233,15 @@ data:
 * 对于凭据，请确保使用部署凭据，而不是帐户凭据。 这些是在屏幕中生成的凭据，可能与以下图像类似：
 
 ![弹性部署凭据](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* optional pipeline属性应设置为Elasticsearch或OpenSearch引入管道的名称，可以将其配置为将日志条目路由到相应的索引。 管道的处理器类型必须设置为 *脚本* 并且脚本语言应设置为 *无痛*. 以下是将日志条目路由到索引（如aemaccess_dev_26_06_2024）的脚本片段示例：
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+```
 
 ### HTTPS {#https}
 
@@ -333,7 +347,7 @@ aem_tier: author
 
 对于CDN日志，您可以将IP地址添加到允许列表，如中所述 [本文](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). 如果共享IP地址列表过大，请考虑将流量发送到(非Adobe)Azure Blob存储区，在其中可以写入逻辑以将专用IP的日志发送到其最终目标。
 
-对于AEM日志（包括Apache/Dispatcher），您可以配置日志转发以通过 [高级联网](/help/security/configuring-advanced-networking.md). 请参阅以下三种高级联网类型的模式，它们使用可选 `port` 参数，以及 `host` 参数。
+对于AEM日志(包括Apache/Dispatcher)，您可以配置日志转发以通过 [高级联网](/help/security/configuring-advanced-networking.md). 请参阅以下三种高级联网类型的模式，它们使用可选 `port` 参数，以及 `host` 参数。
 
 ### 灵活端口出口 {#flex-port}
 
