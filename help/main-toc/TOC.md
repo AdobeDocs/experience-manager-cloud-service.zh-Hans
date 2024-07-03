@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
+source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
 workflow-type: tm+mt
-source-wordcount: '5143'
-ht-degree: 98%
+source-wordcount: '5149'
+ht-degree: 97%
 
 ---
 
@@ -844,6 +844,7 @@ ht-degree: 98%
          + [设置 CIF 组件的样式](/help/commerce-cloud/customizing/style-cif-component.md)
          + [自定义 CIF 组件](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [使用 CIF 目录选取器](/help/commerce-cloud/customizing/use-cif-pickers.md)
+         + [CIF产品轮播的自定义属性](/help/commerce-cloud/customizing/product-carousel.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [迁移](/help/commerce-cloud/migration.md)
    + [常见问题解答](/help/commerce-cloud/faq.md)
