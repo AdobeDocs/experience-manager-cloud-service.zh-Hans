@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
+source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '752'
 ht-degree: 79%
 
 ---
@@ -52,9 +52,6 @@ ht-degree: 79%
 * SCRNS-4194：移除对 Google Guava API 的依赖。
 * SCRNS-4360：频道内容提供商中非管理员用户缺少“管理发布”和“快速发布”按钮。
 * SCRNS-4323：隐藏/禁用从 screens.html 启动。
-
-#### Forms
-
 * Forms-14844：尽管失败reCAPTCHA验证，自适应Forms仍允许提交表单。
 * Forms-14984：如果提交的数据中不存在“submitMetaData”，则带CAPTCHA的Forms将跳过验证。
 * Forms-14477：规则编辑器中的“Is After”和“Is Before”选项在日期选取器验证中无法正常工作。
