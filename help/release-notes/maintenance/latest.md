@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
+source-git-commit: 9303ecadea38d83bd71ed0d440067bae5c419940
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 79%
+source-wordcount: '944'
+ht-degree: 19%
 
 ---
 
@@ -15,79 +15,94 @@ ht-degree: 79%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 16799 {#release-16799}
+## 版本 16971 {#release-16971}
 
-下面总结了维护版本 16799 的持续改进，该版本已于 2024 年 6 月 18 日公开发行。上一个维护版本是版本 16544。
+以下总结了维护版本16971的不断改进，该版本于2024年7月3日公开发布。 上一个维护版本是版本 16799。
 
-2024.6.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅 [Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.7.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强 {#enhancements-16799}
+### 增强 {#enhancements-16971}
 
-* ASSETS-31977：增强资产移动、复制和删除操作。
-* ASSETS-33618：Dynamic Media 中视频的自动转录和翻译功能。
-* ASSETS-35185：审批 ContentHub 和 DM 的操作并向 damAssetLucene 属性添加属性。
-* ASSETS-35533：将 DRM 和 CAI 属性添加到 damAssetLucene 索引。
-* ASSETS-37280：当源字幕 (vtt) 仍在处理时，对翻译进行顺序作业处理。
-* ASSETS-37559：改进资产删除事件。
-* ASSETS-37723：实现资产发布事件。
-* ASSETS-37724：实现资产未发布事件。
-* ASSETS-38614：共享链接 UI 增强功能。
-* ASSETS-39601：将验证正则表达式自动应用于 Asset Livecopy 名称。
-* ASSETS-39454：在 Quickstart 中升级到查看器 2024.5.0。
-* CNTBF-184：支持内容回流中 `/conf` 下方的路径。
+* SITES-22948：删除AEM CS的基础内容中的商业引用。
+* SITES-22141： [内容片段] OnRC之后CFM ModelChangeRepositoryImpl中的SegmentNotFoundException。
+* SITES-21893：创作实例上的图像裁切问题。
+* SITES-21788： [内容片段] 为模型启用uiSchema时，在CF和CF模型编辑器中显示NOTE。
+* SITES-21688： MSM转出不会更新Live Copy页面上的体验片段(XF)路径。
+* SITES-21659：返回创建/修改/复制模型资源的用户的全名。
+* SITES-21609：用于将内容片段从一个模型迁移到另一个模型的OpenAPI端点。
+* SITES-21598： [打开API] 创建CFM — 如果给定的配置路径不存在，则返回错误。
+* SITES-21491： [打开API] CFPATCH端点应遵循字段级别的实时关系。
+* SITES-21434： [打开API] CFGET端点应遵循字段级别的实时关系。
+* SITES-21415：CF编辑器 — 支持UUID引用。
+* SITES-21326： [打开API] 提供有关存在对内容片段的引用的信息。
+* SITES-21310： [打开API] 在翻译API响应中添加内容片段的ID。
+* SITES-20859： CF打开API — 按路径检索片段时返回引用。
+* SITES-20687： [打开API] 用于批处理状态检索的端点。
+* SITES-20657： [打开API] 使用以下方式替换字符串时，为match提供全字选项 `FindAndReplace` 端点。
+* SITES-20587： [打开API] 创建 `COPY` 内容片段的端点。
+* SITES-20584： [打开API] 优化引用检索。
+* SITES-20308： [打开API] 在API上启用批量处理。
+* SITES-19976： [打开API] 条件字段的通用UI架构。
+* SITES-19556： [内容片段] 如果编辑模型时存在uiSchema，则更新它。
+* SITES-18056： [打开API] 将内容片段发布到预览时，包括引用。
+* SITES-16898： [架构] 用于将内容片段从一个模型迁移到另一个模型的OpenAPI端点。
+* SITES-16609：列出启动项端点。
+* SITES-16606：创建启动项端点。
+* SITES-21617： [Xwalk] 使页面属性/元数据在UE中可编辑。
+* SITES-19614： [Xwalk] 电子表格编辑器分页和无限滚动。
+* SITES-22163： [Xwalk] 改进了对从Edge Delivery Sites的发布层提供的内容的支持。
+* SITES-22109： [Xwalk] 改进了富文本标记后处理的处理。
+* SITES-22035： [Xwalk] 改进了MSM和启动项的处理。
+* SITES-21839： [Xwalk] 改进了Edge Delivery不提供服务的内容的路径映射和清理。
 
-### 修复的问题 {#fixed-issues-16799}
+### 修复的问题 {#fixed-issues-16971}
 
-* ASSETS-37335：在过滤器中编辑搜索面板会取消选中所有框。
-* ASSETS-38069：AEM DAM PDF 预览时间线过滤器选择问题。
-* ASSETS-38215：Adobe Stock 许可证按钮在企业订阅的 AEM as a Cloud Service 中显示为灰色。
-* ASSETS-38578：资产链接共享报告中的超链接不正确。
-* ASSETS-38678：查看“集合详细信息”中损坏的设置。
-* ASSETS-39071：如果原始呈现 mimetype 为空，则 Web 优化传递可能会引发异常。
-* ASSETS-39316：在收藏夹中按名称排序不起作用。
-* ASSETS-39377：当收到来自远程 API 的背压时，从 OneDrive 批量导入可能会失败。
-* ASSETS-39428：版权管理 UI 中的渲染问题。
-* CQ-4357150：cq-content-sync 捆绑包中的 Guava。
-* GRANITE-52573：包含双斜杠 `//` 的请求将被拒绝，状态代码为 400。
-* SCRNS-4194：移除对 Google Guava API 的依赖。
-* SCRNS-4360：频道内容提供商中非管理员用户缺少“管理发布”和“快速发布”按钮。
-* SCRNS-4323：隐藏/禁用从 screens.html 启动。
+* CQ-4356898： [翻译] 包含异常多的链接的CF出现outOfMemory错误。
+* CQ-4357055： [翻译] 使用Rest API时，自动翻译不起作用。
+* CQ-4353931： [翻译] 在翻译源页面/xf/asset（如果缺少）中添加jcr：uuid。
+* CQ-4357591： [翻译] 修改“关联JCR：UUID”工作流以适用于页面/XF。
 * Forms-14844：尽管失败reCAPTCHA验证，自适应Forms仍允许提交表单。
 * Forms-14984：如果提交的数据中不存在“submitMetaData”，则带CAPTCHA的Forms将跳过验证。
 * Forms-14477：规则编辑器中的“Is After”和“Is Before”选项在日期选取器验证中无法正常工作。
 * Forms-14019：规则编辑器的“调用服务”功能在通用编辑器中不起作用。
-* Forms-14336：未选择表单字段时，编辑器应会打开并重点关注整个表单元素。
-* Forms-15061：在规则编辑器中使用调用服务选项时，加载器循环将无限期保留。
+* Forms-14336：未选择表单字段时，编辑器应会打开，并重点关注整个表单元素。
+* Forms-15061：在规则编辑器中使用调用服务选项时，加载器循环将无限期地持续存在。
+* SITES-22457：提升非深层启动项不会更新源内容。
+* SITES-22748： [内容片段] 增强内容片段更新作业的错误处理
+* SITES-22349： [内容片段] 无法更改空的多行cf元素的ContentType。
+* SITES-22343： [内容片段] 语义类型“明细列表”已损坏。
+* SITES-22194：设置重定向后，model.json不再可用。
+* SITES-21953： [打开API] Etag将根据validationStatus的顺序进行更改。
+* SITES-21894： [打开API] 创建CF时增强父级路径验证。
+* SITES-21887： [打开API] POST变体端点返回的ETag无效。
+* SITES-21657： [打开API] 改进对CF搜索路径属性的验证。
+* SITES-21949：搜索API的无效光标返回500。
+* SITES-20927：当查询缺失时，搜索API返回500。
+* SITES-20544： [打开API] 更改发布包名称的生成，以避免Oak冲突。
+* SITES-19710： CVE-2022-47937 — 从页面编辑器中删除org.apache.sling.commons.json的所有用法。
+* SITES-11992： [辅助功能] 注释样本选择器按钮缺少可访问的名称。
+* SITES-10979： [辅助功能] 标签不是永久性的。
+* SITES-10962： [辅助功能] 按钮：按钮没有角色。
+* SITES-10905： [辅助功能] 活动组件的状态缺少3到1的对比度。
+* SITES-2974：  [辅助功能]  — 宽度为320像素的水平滚动。
+* sites-22026：无法在AEM中的文件夹之间移动体验片段
+* SITES-22106：新内容片段编辑器中的语言切换功能问题
+* SITES-21980：对基于UUID的引用类型的处理不一致。
+* SITES-7257：ThumbnailServlet中出现NPE。
 
-### 已知问题 {#known-issues-16799}
+### 已知问题 {#known-issues-16971}
 
->[!NOTE]
-> AEM Engineering 已发现启动功能存在回归问题，这会影响从 16461 开始的当前 AEM 版本。由于这种回归，包含非深层页面的新启动项（应用新版本后创建）将由于缺少配置而无法正确推广。
-> 如果您的环境受到影响，可以通过客户支持获取用于识别和更新缺失配置的 shell 脚本（内部参考 SITES-22457）。
-> 我们将提供长期修复，以确保新的启动项能够以所有正确的配置进行创建。在此之前，还可以根据需求提供内部补丁版本。
+无。
 
-#### Forms
-
-* 当您安装AEM SDK并添加 `AEM Forms add-on v2024.05.04.00-240400`，Docker服务无法启动。 在本地开发环境中生成记录文档需要Docker服务。 要解决此问题：
-   1. 下载 [修补程序](/help/forms/assets/sdk_hotfix.zip). 下载修补程序时， `.zip` 文件夹已下载。
-   1. 将下载的修补程序解压到文件夹。
-   1. 替换旧的 `sdk.sh` 和 `sdk.bat` 在步骤2提取的文件夹中包含较新文件的文件。
-
-### 更改通知 {#change-notice-16799}
-
-* 此版本包含以下新的产品索引版本：
-   * **damAssetLucene-11**
-   * **片段 11**
-
-  先前索引版本的自定义版本将自动与新产品索引版本合并。请对合并版本应用进一步的自定义更新。
+### 更改通知 {#change-notice-16971}
 
 * 从 2024 年 9 月开始，AEM as a Cloud Service 将会通过 Sling Model Exporter 框架禁用资源解析器的序列化。请参阅[该文档](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)了解更多详情。
 
-### 已弃用的功能和 API {#deprecated-16799}
+### 已弃用的功能和 API {#deprecated-16971}
 
 若要了解 AEM as a Cloud Service 中已弃用或移除的功能，请参阅[已弃用和已移除的功能和 API。](/help/release-notes/deprecated-removed-features.md)
 
-### 嵌套的技术 {#embedded-tech-16799}
+### 嵌套的技术 {#embedded-tech-16971}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
