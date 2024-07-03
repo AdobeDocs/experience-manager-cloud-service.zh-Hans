@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2377'
 ht-degree: 78%
 
 ---
@@ -61,6 +61,7 @@ ht-degree: 78%
    * 选择&#x200B;[**环境类型**。](#environment-types)
       * 可用/使用的环境数显示在环境类型名称后面的括号中。
    * 提供环境&#x200B;**名称**。
+      * 创建环境后，无法更改环境名称。
    * 提供环境&#x200B;**描述**。
    * 如果您要添加&#x200B;**生产和暂存**&#x200B;环境，则需要为生产环境和暂存环境提供环境名称和描述。
    * 从下拉列表中选择&#x200B;**主要区域。**
@@ -203,7 +204,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 如果报告与其他发布区域相关的任何问题：
 
-1. 耐心点。 Cloud Manager会不断尝试恢复该区域，并且它随时可能可用。
+1. 耐心点。 Cloud Manager会不断尝试恢复该地区，并可能随时提供该地区。
 1. 如果问题在几小时后仍然存在，您可以删除其他发布区域并重新添加它（同一区域或其他区域），以触发完整的部署。
 
 在执行其他操作之前等待系统自行恢复的时长取决于该区域的故障对系统的影响。
