@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的最新发行说�
 description: 的最新发行说明 [!DNL Adobe Experience Manager] as a Cloud Service。
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 29da5119403d47502fe4dc1d2a5c728aa0828b0e
+source-git-commit: 8581ff75a68c045ccfbb6a525c1e08a6ee253d52
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1957'
 ht-degree: 42%
 
 ---
@@ -46,7 +46,7 @@ Have a look at the June 2024 Release Overview video for a summary of the feature
 
 **Real Use Monitoring (RUM)数据服务** {#real-use-monitoring}
 
-此 [Real Use Monitoring (RUM)数据服务](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/shwetad-patch-1/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service) 现已正式提供，可支持AEM as a Cloud Service的客户端数据收集。 此服务可更准确地反映用户交互，从而确保可靠地衡量网站参与度。 它为客户提供了有关其页面流量和性能的高级洞察，并提供了了解和提高页面性能的宝贵机会。
+实时监控(RUM)数据服务现已正式可用，可支持AEM as a Cloud Service的客户端数据收集。 此服务可更准确地反映用户交互，从而确保可靠地衡量网站参与度。 它为客户提供了有关其页面流量和性能的高级洞察，并提供了了解和提高页面性能的宝贵机会。
 
 ### 早期采用者计划 {#sites-early-adopter}
 
