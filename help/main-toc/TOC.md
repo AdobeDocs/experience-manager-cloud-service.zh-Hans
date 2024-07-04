@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
 workflow-type: tm+mt
 source-wordcount: '5149'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -183,8 +183,8 @@ ht-degree: 97%
       + [Workfront for Experience Manager 增强连接器的当前发行说明](/help/assets/release-notes-enhanced-connector-workfront.md)
    + 生成变体的发行说明 {#generate-variations}
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
-   + 通用编辑器的发行说明 {#univeral-editor}
-      + [通用编辑器的当前发行说明](/help/release-notes/universal-editor/current.md)
+   + 通用编辑器发行说明 {#univeral-editor}
+      + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
    + [新增功能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 中的重要更改](/help/release-notes/aem-cloud-changes.md)
    + [已弃用和已删除的功能和 API](/help/release-notes/deprecated-removed-features.md)
@@ -562,14 +562,14 @@ ht-degree: 97%
       + [HTTP2 内容投放常见问题解答](/help/assets/dynamic-media/http2faq.md)
       + [Flash 查看器生命周期终止](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML 查看器生命周期终止](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-      + 具有OpenAPI功能的Dynamic Media {#dynamic-media-open-apis}
+      + 具有 OpenAPI 功能的 Dynamic Media {#dynamic-media-open-apis}
          + [概述](/help/assets/dynamic-media-open-apis-overview.md)
-         + [批准资源](/help/assets/approve-assets.md)
+         + [审批资源](/help/assets/approve-assets.md)
          + [与下游应用程序集成](/help/assets/integrate-dynamic-media-open-apis.md)
-         + [搜索资产API](/help/assets/search-assets-api.md)
-         + [投放API](/help/assets/deliver-assets-apis.md)
-         + [限制资源投放](/help/assets/restrict-assets-delivery.md)
-         + [将远程AEM Assets与AEM Sites集成](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [搜索资源 API](/help/assets/search-assets-api.md)
+         + [交付 API](/help/assets/deliver-assets-apis.md)
+         + [限制资源交付](/help/assets/restrict-assets-delivery.md)
+         + [将远程 AEM Assets 与 AEM Sites 集成](/help/assets/integrate-remote-approved-assets-with-sites.md)
          + [常见问题解答](/help/assets/dynamic-media-open-apis-faqs.md)
          + [配置自定义域](/help/assets/configure-custom-domain.md)
    + 使用资源视图{#assets-view}
@@ -595,16 +595,16 @@ ht-degree: 97%
 
    + Content Hub {#content-hub}
       + [概述](/help/assets/product-overview.md)
-      + [部署Content Hub](/help/assets/deploy-content-hub.md)
-      + [配置Content Hub用户界面](/help/assets/configure-content-hub-ui-options.md)
-      + [将品牌批准的资源上传或导入到Content Hub](/help/assets/upload-brand-approved-assets.md)
-      + [在Content Hub中搜索资源](/help/assets/search-assets-content-hub.md)
-      + [资产属性](/help/assets/asset-properties-content-hub.md)
-      + [在Content Hub中共享资源](/help/assets/share-assets-content-hub.md)
-      + [使用Content Hub下载资源](/help/assets/download-assets-content-hub.md)
-      + [在Content Hub中管理收藏集](/help/assets/collections-content-hub.md)
-      + [在Content Hub中使用Adobe Express编辑图像](/help/assets/edit-images-content-hub.md)
-      + [Content Hub中的资源分析](/help/assets/insights-content-hub.md)
+      + [部署 Content Hub](/help/assets/deploy-content-hub.md)
+      + [配置 Content Hub 用户界面](/help/assets/configure-content-hub-ui-options.md)
+      + [将品牌认可的资产上传或导入至 Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [在 Content Hub 搜索资产](/help/assets/search-assets-content-hub.md)
+      + [资源属性](/help/assets/asset-properties-content-hub.md)
+      + [在 Content Hub 共享资源](/help/assets/share-assets-content-hub.md)
+      + [使用 Content Hub 下载资源](/help/assets/download-assets-content-hub.md)
+      + [管理 Content Hub 里的收藏集](/help/assets/collections-content-hub.md)
+      + [使用 Content Hub 中的 Adobe Express 编辑图像](/help/assets/edit-images-content-hub.md)
+      + [Content Hub 的资源洞察](/help/assets/insights-content-hub.md)
    + 最佳实践{#best-practices}
       + [搜索最佳实践](/help/assets/search-best-practices.md)
       + [元数据管理和最佳实践](/help/assets/metadata-best-practices.md)
