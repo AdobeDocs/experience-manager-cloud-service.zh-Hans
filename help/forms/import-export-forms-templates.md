@@ -5,48 +5,59 @@ topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 0%
+source-wordcount: '1073'
+ht-degree: 3%
 
 ---
 
+
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM as a Cloud Service | 本文 |
+
 # 导入或导出自适应Forms和AEM Forms资源 {#importing-and-exporting-assets-to-aem-forms}
 
-您可以在以下位置移动自适应Forms和相关资源，例如自适应表单主题、表单数据模型(FDM)、自适应表单模板、文档片段和PDF forms [!DNL AEM Forms] 实例。 您可以导入和导出CRX包或二进制文件格式的资产。
-
-导出自适应表单时，不会导出内容策略和模板。 使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) 以导出此类资产。
+您可以在以下位置移动自适应Forms和相关资源，例如自适应表单主题、表单数据模型(FDM)、自适应表单模板、片段和PDF forms [!DNL AEM Forms] 实例。
 
 ## 下载自适应Forms、PDF forms或相关资源 {#download-forms-amp-documents-assets}
 
 要下载表单或相关资源，请执行以下操作：
 
-1. 登录 [!DNL AEM Forms] 实例。
-1. 选择 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标> **[!UICONTROL 导航]** ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
-1. 选择资源并选择 **[!UICONTROL 下载]** 图标。
-1. 在下载资产中，选择以下选项之一，然后选择 **[!UICONTROL 下载]**.
+1. 登录 [!DNL Experience Manager Forms] 实例。
+1. 选择 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
 
-   * **下载为CRX包：** 使用选项从下载和移动所有选定的资源和相关依赖项 [!DNL AEM Forms] 实例到另一个实例。 它将所有资源和文件夹下载为CRX包，包括在AEM中创作的表单(自适应Forms和自适应表单片段)、表单集、表单数据模型(FDM)、表单模板、PDF文档以及引用的资源（XSD和图像）。
-将资源下载为资源包的优势在于它还可以下载选定资源引用的资源。 例如，如果您有一个使用表单模板、XSD和图像的自适应表单。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也会下载。
+   ![选择Forms](/help/forms/assets/select-forms.png)
 
-   * **将资产下载为二进制文件：** 使用选项可仅下载表单模板(XDP)、PDF forms(PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它会将具有二进制文件的资源(例如图像、PDF和其他支持的格式)下载为.zip文件。
-您无法使用以下内容下载自适应Forms、自适应表单片段、主题和表单集 **[!UICONTROL 将资产下载为二进制文件]** 选项。 要下载这些资源，您应使用 **[!UICONTROL 下载为CRX包]** 选项。
+1. 选择资源，然后单击 **[!UICONTROL 下载]** 图标。
 
-   选定的资产将下载为存档（.zip文件）。
+   ![下载Forms](/help/forms/assets/download-form.png)
 
-   >[!NOTE]
-   >
-   >AEM包和二进制文件都将作为存档（.zip文件）下载。 资产的模板不会与资产一起下载。 您需要单独导出资产模板。
+   下载表单时， **[!UICONTROL 下载资源]** 对话框。
+
+   ![下载表单资产](/help/forms/assets/download-form-assets.png)
+
+1. 单击&#x200B;**[!UICONTROL “下载”。]**
+
+选定的资产将下载为存档（.zip文件）。
 
 ## 上传自适应Forms、PDF forms或相关资源 {#upload-forms-amp-documents-assets}
 
 您可以单独上传支持的资源类型，也可以以ZIP存档的形式上传。 对于ZIP文件，将显示所有受支持资源的相对路径。 ZIP文件中不受支持的资源将被忽略并且不会列出。 但是，如果ZIP存档仅包含不支持的资源，则会显示错误消息，而不是弹出对话框。
 要上传表单或相关资源，请执行以下操作：
 
-1. 登录 [!DNL AEM Forms] 实例。
-1. 选择 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标> **[!UICONTROL 导航]** ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
+1. 登录 [!DNL Experience Manager Forms] 实例。
+1. 选择 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
+
+   ![选择Forms](/help/forms/assets/select-forms.png)
+
 1. 选择 **[!UICONTROL 创建]** > **[!UICONTROL 文件上传]**. 将显示一个对话框。
+
+   ![上传Forms](/help/forms/assets/form-upload.png)
+
 1. 在对话框中，浏览并选择要导入的软件包或存档。 您还可以选择其他支持的文件类型。 选择 **[!UICONTROL 打开]**. 您选择的文件夹或文件名不得包含任何特殊字符。
 
    在对话框中，验证要上传的资源的详细信息，然后选择 **[!UICONTROL 上传]**.
@@ -55,29 +66,185 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   > * 当名称与不同的资源类型冲突时，上传包不会替换现有的文件夹层次结构。 例如，如果一台服务器上位于/content/dam/formsanddocuments的位置有一个名为“Training”的自适应表单。 您下载自适应表单并将表单上传到其他服务器。 第二台服务器还在同一位置/content/dam/formsanddocuments具有一个名为“Training”的文件夹。 上传失败。
-   > * 仅属于 `form-power-user` 组可以上传XDP文件。
+   > 当名称与不同的资源类型冲突时，上传包不会替换现有的文件夹层次结构。 例如，如果在位置有名为“Training”的自适应表单 `/content/dam/formsanddocuments` 在一台服务器上。 您可以下载自适应表单并将表单上传到其他服务器。 第二台服务器在同一位置也有一个名为“Training”的文件夹 `/content/dam/formsanddocuments`. 上传失败。
 
-
-## 下载主题 {#downloading-a-theme}
+## 下载主题
 
 您可以在中导出主题 [!DNL AEM Forms] 您可在其他项目或实例中使用的任何其他插件。 AEM允许您将主题下载为zip文件，并可在实例上上传这些主题。
-
 要下载主题，请执行以下操作：
 
-1. 登录 [!DNL AEM Forms] 实例。
-1. 选择 **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标> **[!UICONTROL 导航]** ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL 主题]**.
-1. 选择主题并选择 **[!UICONTROL 下载]**. 主题将下载为存档（.zip文件）。
+1. 登录 [!DNL Experience Manager Forms] 创作实例。
+1. 选择 **[!UICONTROL Forms]** > **[!UICONTROL 主题]**.
+
+   ![选择主题](/help/forms/assets/select-theme.png)
+
+1. 在主题页面上，选择主题并单击 **[!UICONTROL 下载]** 图标。
+
+   ![下载主题](/help/forms/assets/download-theme.png)
+
+   下载主题时， **[!UICONTROL 下载资源]** 对话框。
+
+   ![下载主题资产](/help/forms/assets/download-theme-asset.png)
+
+1. 单击&#x200B;**[!UICONTROL “下载”。]**
+
+选定的资产将下载为存档（.zip文件）。
 
 ## 上传主题 {#uploading-a-theme}
 
-您可以上传和使用其他人在您的表单中创建的主题。 要上传主题，请执行以下操作：
+您可以上传和使用其他人在您的表单中创建的主题。
+要上传主题，请执行以下操作：
 
+1. 登录 [!DNL Experience Manager Forms] 实例。
 1. 在Experience Manager中，导航到 **[!UICONTROL Forms]** > **[!UICONTROL 主题]**.
-1. 在“主题”页面上，单击 **[!UICONTROL 创建]** > **[!UICONTROL 文件上传]**.
-1. 在“文件上传”提示符下，浏览并选择计算机上的主题包，然后单击 **[!UICONTROL 上传]**. 上传的主题可在主题页面上找到。
 
-<!-- ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
+   ![选择主题](/help/forms/assets/select-theme.png)
+
+1. 在“主题”页面上，单击 **[!UICONTROL 创建]** > **[!UICONTROL 文件上传]**.
+
+   ![上传主题](/help/forms/assets/theme-upload.png)
+
+1. 浏览并选择计算机上的主题包，然后单击 **[!UICONTROL 上传]**. 上传的主题将显示在“主题”页面上。
+
+## 使用文件夹整理自适应Forms、PDF forms和相关资源  {#folders-and-organizing-assets}
+
+您可以使用文件夹来排列和组织资源。 在文件夹中组织文档和资产可让您将文件分组以便于管理。 您可以选择文件夹，然后选择下载或删除该文件夹。
+
+### 创建文件夹 {#create-a-folder}
+
+要创建文件夹，请执行以下操作：
+
+1. 登录 [!DNL Experience Manager Forms] 实例。
+1. 选择 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
+
+   ![选择表单](/help/forms/assets/select-forms.png)
+
+1. 选择 **[!UICONTROL 创建]** > **[!UICONTROL 文件夹]**.
+
+   ![创建文件夹](/help/forms/assets/create-folder.png)
+
+   此 **[!UICONTROL 添加文件夹]** 对话框。
+1. 输入 **[!UICONTROL 标题]**. 此 **[!UICONTROL 名称]** 会在您键入时自动填充 **[!UICONTROL 标题]**.
+
+   ![添加文件夹](/help/forms/assets/add-folder.png)
+
+1. 单击&#x200B;**[!UICONTROL 创建]**。
+
+   >[!NOTE]
+   >
+   >默认情况下，名称字段的值会自动从标题中填充。 名称只能包含字母数字字符，或连字符(-)和下划线(_)特殊字符。 在标题中输入的任何其他特殊字符都会自动替换为连字符，并提示您确认新名称。 您可以选择继续使用建议的名称或对其进行编辑。
+
+具有您定义的标题的新文件夹将显示在资产列表中的当前位置。
+
+如果存在具有指定名称的文件夹，则提交会失败并出现错误。 您可以通过将鼠标悬停在错误上来查看错误消息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 显示在“名称”字段旁边的图标。
+
+您可以选择创建的文件夹，以进入该文件夹，并在该文件夹中创建资源或文件夹。 此外，您还可以选择一个文件夹，并选择将该文件夹排入下载队列、删除或编辑其名称。
+
+### 创建一个或多个资产的副本 {#create-copies-of-one-or-more-assets-or-letters}
+
+您可以使用现有资源快速创建具有相似属性、内容和继承资源的资源。
+
+要创建资产的副本，请执行以下操作：
+
+1. 登录 [!DNL Experience Manager Forms] 实例。
+1. 在相关资产页面上，选择一个或多个资产。 用户界面显示 **[!UICONTROL 复制]** 图标。
+1. 选择 **[!UICONTROL 复制]**. 用户界面显示 ![“粘贴”图标](/help/forms/assets/Smock_Paste_18_N.svg) 图标。
+
+   ![复制资产](/help/forms/assets/copy-asset.png)
+
+   在粘贴之前，您还可以选择在文件夹内进行导航/导航。 不同的文件夹可以包含具有相同名称的资源。 有关文件夹的详细信息，请参阅 [文件夹和组织资源](#folders-and-organizing-assets).
+1. 选择 **[!UICONTROL 粘贴]**.
+
+   ![粘贴资产](/help/forms/assets/paste-asset.png)
+
+1. 此 **[!UICONTROL 粘贴]** 出现对话框。 系统会自动为资产的新副本生成名称和标题，但您可以编辑资产的标题和名称。
+
+   如果您将资产复制并粘贴到同一位置，则会将后缀“ — CopyXX”添加到 `asset`. 如果复制的资产不存在标题，则自动生成的标题字段将保留为空。
+
+   ![将资产粘贴到新位置](/help/forms/assets/paste-click-asset.png)
+
+   如有必要，请编辑 **[!UICONTROL 标题]** ，以保存资产的副本。 此 **[!UICONTROL 名称]** 会在您键入时自动填充 **[!UICONTROL 标题]**.
+1. 选择 **[!UICONTROL 粘贴]**. 将创建复制资产的新副本。
+
+## 搜索 {#search-forms}
+
+当您拥有大量资源时，搜索合适的资源非常耗时。 您可以在资源页面上执行基于文本的搜索。
+
+要搜索资源，请执行以下操作：
+
+1. 登录 [!DNL Experience Manager Forms] 实例。
+1. 单击 ![搜索图标](assets/folder-search-icon.svg) 搜索图标。
+
+   ![搜索表单](/help/forms/assets/search-form.png)
+
+1. 在搜索栏中输入要搜索的资源的名称。
+
+1. 此时将显示相关资源的列表。 从显示的资源列表中选择所需的资源。
+
+   ![搜索资产](/help/forms/assets/search-bar.png)
+
+有关使用搜索功能的更多信息和说明，请参阅 [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html).
+
+<!--
+## Export or create a package {#export-a-workflow-application}
+
+You can use packages to install new content, install new functionality, transfer content between instances, and back up content.
+To export or create a package:
+
+1. Log in to your [!DNL Experience Manager Forms] instance.
+1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Packages]**.
+
+   ![Package Manager](/help/forms/assets/package-manager.png)
+
+1. Click **[!UICONTROL Create Package]**.
+
+   ![Create package](/help/forms/assets/create-package.png)   
+   
+   When **[!UICONTROL Create Package]** is clicked, the **[!UICONTROL New Package]** dialog box appears.
+1. Specify the package name, version, and group for the package. 
+   
+   ![New package](/help/forms/assets/new-package.png)  
+
+   * **Package Name** - Select a descriptive name to help you identify the contents of the package.
+
+   * **Version** - It is a textual field to indicate a version. This is appended to the package name to form the name of the zip file.
+
+   * **Group** - This is the target group (or folder) name. Groups help you organize your packages. A folder is created for the group if it does not already exist. If you leave the group name blank, it creates the package in the main package list.
+
+1. Click **[!UICONTROL OK]**.
+
+   Once the package is created, it appears at the top of the list of packages.
+
+1. Click **[!UICONTROL Edit]**.
+   
+   ![Edit Package](/help/forms/assets/edit-package.png)
+    
+1. Open the **[!UICONTROL Filters]** tab.
+   
+   ![Open filter tab](/help/forms/assets/add-filter-package.png)
+   
+1.  Click **[!UICONTROL Add Filter]**. 
+   
+      ![Add filter](/help/forms/assets/add-filter.png)
+
+      You can specify the path of the package. You can also add rules and other validations for the package.
+
+      ![Add path](/help/forms/assets/add-path.png)
+
+1. Click **[!UICONTROL Save]** after you are finished editing the settings.
+1. Click **[!UICONTROL Build]** to create the package.
+    
+     ![Build path](/help/forms/assets/build-package.png)
+
+   After the package is built, you can download the package and import it to the other server. The workflow application appears on the server where the package is uploaded.
+
+   >[!NOTE]
+   >
+   >For the workflow application to work properly, also export the corresponding Adaptive Form and workflow model with the work application.
+
+   Once a package is uploaded to AEM, you can modify its settings. You can also download or delete the package.
+
+## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
 To share assets, such as data dictionaries, letters, and document fragments, between two different implementations of Correspondence Management, you can create and share .cmp files. A .cmp file can include one or more data dictionaries, letters, document fragments, and forms.
 
@@ -147,86 +314,6 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
    >
    >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
 
-## 导出工作流应用程序 {#export-a-workflow-application}
+## 另请参阅 {#see-also}
 
-您可以使用包管理器导出工作流应用程序。 此过程如下所示：
-
-1. 打开 [!DNL AEM Forms] 包管理器。 包管理器的URL为 `https://[server]:[port]/crx/packmgr`.
-1. 单击 **[!UICONTROL 创建包]**. 此 **[!UICONTROL 新建包]** 对话框。
-1. 指定包的名称、版本和组。 单击&#x200B;**[!UICONTROL 确定]**。
-1. 单击 **[!UICONTROL 编辑]** 然后打开 **[!UICONTROL 过滤器]** 选项卡。 单击 **[!UICONTROL 添加筛选器]**. 指定工作流应用程序的路径。 例如，/etc/fd/dashboard/startpoints/homemortgage。 单击 **[!UICONTROL 添加规则]**.
-
-1. 打开 **[!UICONTROL 高级]** 选项卡。 选择 **[!UICONTROL 合并]** 或 **[!UICONTROL 覆盖]** 在ACL处理字段中。 单击&#x200B;**[!UICONTROL 保存]**。
-1. 单击 **[!UICONTROL 生成]** 以创建包。
-
-   生成包后，您可以下载包并将其导入其他服务器。 工作流应用程序会出现在上传包的服务器上。
-
-   >[!NOTE]
-   >
-   >为使工作流应用程序正常工作，还应将相应的自适应表单和工作流模型导出到工作应用程序。
-
-## 使用文件夹整理自适应Forms、PDF forms和相关资源  {#folders-and-organizing-assets}
-
-您可以使用文件夹来排列和组织资源。 在文件夹中组织文档和资产可让您将文件分组以便于管理。 您可以选择文件夹，然后选择下载或删除该文件夹。 要创建文件夹，请完成以下步骤：
-
-### 创建文件夹 {#create-a-folder}
-
-1. 登录 [!DNL AEM Forms] 实例。
-1. 选择Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标>导航 ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
-1. 选择 **[!UICONTROL 创建]** > **[!UICONTROL 文件夹]**.
-1. 输入以下详细信息：
-
-   * **[!UICONTROL 标题]**：文件夹的显示名称
-   * **[!UICONTROL 名称]**： *（必需）* 要在存储库中存储文件夹的节点名称
-
-   >[!NOTE]
-   >
-   >默认情况下，名称字段的值会自动从标题中填充。 名称只能包含字母数字字符，或连字符(-)和下划线(_)特殊字符。 在标题中输入的任何其他特殊字符都会自动替换为连字符，并提示您确认新名称。 您可以选择继续使用建议的名称或对其进行编辑。
-
-1. 具有您定义的标题的新文件夹将显示在资产列表中的当前位置。
-
-   如果存在具有指定名称的文件夹，则提交会失败并出现错误。 您可以通过将鼠标悬停在错误上来查看错误消息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 显示在“名称”字段旁边的图标。
-
-   您可以选择创建的文件夹，以进入该文件夹，并在该文件夹中创建资源或文件夹。 此外，您还可以选择一个文件夹，并选择将该文件夹排入下载队列、删除或编辑其名称。
-
-
-<!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
-
-You can use an existing assets to quickly create an asset with similar properties, content, and inherited assets.
-
-Complete the following steps to create copies of assets and letters:
-
-1. On the relevant assets page, select one or more assets. The UI displays the Copy icon.
-1. Select **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
-1. Select **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
-
-   If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
-
-1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
-1. Select **[!UICONTROL Paste]**. New copies of the copied assets are created.
-
-## Search {#search-forms}
-
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also select ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
-
-![search_topbar](assets/search_topbar.png)
-
-**A.** Search **B.** Filter
-
-![Side panel - Filters](assets/search_sidepanel.png)
-
-Side panel - Filters
-
-On the side panel, you can use the following to narrow down your search results:
-
-* Search Directory
-* Tags
-* Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
-
-The side panel also lets you save your search settings with names of your choice.
-
-For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->
-
->[!MORELIKETHIS]
->
->* [在自适应表单核心组件中使用主题](/help/forms/using-themes-in-core-components.md)
+{{see-also}}
