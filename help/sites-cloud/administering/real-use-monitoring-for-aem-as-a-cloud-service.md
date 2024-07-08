@@ -4,9 +4,9 @@ description: 了解如何使用实际使用监控 （RUM） 实时捕获和分�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 9a8adf777008b7a601abc8760cee67ec3c1816c6
+source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
