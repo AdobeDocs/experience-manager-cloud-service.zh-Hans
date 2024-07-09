@@ -1,14 +1,14 @@
 ---
-title: 配置Content Hub用户界面
-description: 配置Content Hub用户界面
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+title: 配置 Content Hub 用户界面
+description: 配置 Content Hub 用户界面
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 4%
+source-wordcount: '1119'
+ht-degree: 5%
 
 ---
 
-# 配置Content Hub用户界面 {#configure-content-hub-user-interface}
+# 配置 Content Hub 用户界面 {#configure-content-hub-user-interface}
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上配置资源](assets/configure-assets.png)
@@ -97,6 +97,10 @@ Content Hub允许管理员配置在搜索资源时显示的过滤器。 执行�
 1. 单击 **[!UICONTROL 确认]**. 新筛选器显示在现有筛选器的列表中。
 
 1. 单击 **[!UICONTROL 保存]** 以应用更改，以便在筛选资产时新筛选器显示在“搜索”页面上。
+
+   >[!NOTE]
+   >
+   >仅当存储库中还有另一个资源与筛选条件匹配时，新筛选器才会显示在“搜索”页面上。
 
 同样，您可以单击 ![“编辑”图标](assets/do-not-localize/edit_icon.svg)，在每个可用过滤器旁边，可编辑标签或单击“删除”图标可删除任何现有过滤器。 单击 **[!UICONTROL 保存]** 进行所有修改以应用更改后。
 

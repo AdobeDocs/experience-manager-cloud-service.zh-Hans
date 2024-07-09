@@ -1,10 +1,10 @@
 ---
 title: Content Hub概述
 description: 详细了解Content Hub、其主要优势、如何访问它以及如何就Content Hub中提供的选项提供反馈。
-source-git-commit: b29641286919b5becc3982400ea160836531fdc5
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '660'
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ![Content Hub概述](assets/content-hub-overview.png)
 
-Content Hub作为Experience Manager Assets as a Cloud Service的一部分提供，用于实现组织及其业务合作伙伴对品牌上内容的访问大众化。 它侧重于分发资产以供大规模激活，并创建品牌内内容变体以提高营销敏捷性。
+Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨在让组织及其业务合作伙伴能够民主化地访问品牌内容。它侧重于分发资产以供大规模激活，并创建品牌内内容变体以提高营销敏捷性。
 
 ## 为什么选择Content Hub？
 
@@ -41,7 +41,7 @@ Content Hub需要2024.6版本或更高版本的as a Cloud ServiceExperience Mana
 
 ## 如何访问Content Hub？ {#access-content-hub}
 
-[设置Content Hub后](#deploy-content-hub) 并将用户添加到 [Content Hub产品配置文件](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，可通过以下方式访问Content Hub：
+[设置Content Hub后](/help/assets/deploy-content-hub.md) 并将用户添加到 [Content Hub产品配置文件](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile)，可通过以下方式访问Content Hub：
 
 * 使用以下链接访问Content Hub：
 
@@ -89,7 +89,7 @@ Content Hub需要2024.6版本或更高版本的as a Cloud ServiceExperience Mana
 <table>
 <td>
    <a href="/help/assets/configure-content-hub-ui-options.md">
-   <img alt="部署Content Hub" src="./assets/configure-assets.png" />
+   <img alt="部署 Content Hub" src="./assets/configure-assets.png" />
    </a>
    <div>
       <a href="/help/assets/configure-content-hub-ui-options.md">
@@ -145,7 +145,7 @@ Content Hub需要2024.6版本或更高版本的as a Cloud ServiceExperience Mana
 </td>
 <td>
    <a href="/help/assets/collections-content-hub.md">
-   <img alt="在Content Hub中管理收藏集" src="./assets/manage-collection.png" />
+   <img alt="管理 Content Hub 里的收藏集" src="./assets/manage-collection.png" />
    </a>
    <div>
       <a href="/help/assets/collections-content-hub.md">

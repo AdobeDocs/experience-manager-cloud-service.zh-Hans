@@ -2,15 +2,15 @@
 title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源、Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
-source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 
-# 部署Content Hub {#deploy-content-hub}
+# 部署 Content Hub {#deploy-content-hub}
 
 ![部署Content Hub](assets/deploy-content-hub.png)
 
@@ -46,6 +46,10 @@ Content Hub上各种权限的变体包括：
 
 1. 展开 **[!UICONTROL Assets]** 并选择 **[!UICONTROL Content Hub]**.
    ![在Cloud Manager中选择Content Hub](assets/edit-program-cloud-manager-content-hub.png)
+
+   >[!NOTE]
+   >
+   >如果 **[!UICONTROL 更新]** 选择Content Hub后未为您启用，请确保您已为项目指定上线设置。
 
 1. 单击&#x200B;**[!UICONTROL 更新]**。
 
@@ -111,9 +115,19 @@ Content Hub用户可以访问门户上可用的资源，但无法添加任何新
 >
 >可以使用所有高级企业功能，如与外部身份提供程序同步。
 
-使用Admin Console添加适当的用户后，这些用户可以使用以下链接访问Content Hub：
+### 如何访问Content Hub？ {#access-content-hub}
 
-`https://experience.adobe.com/#/assets/contenthub`
+可通过以下方式访问Content Hub：
+
+* 使用以下链接访问Content Hub：
+
+  `https://experience.adobe.com/#/assets/contenthub`
+
+* 登录 `experience.adobe com` 并单击 **[!UICONTROL Experience Manager Assets Content Hub]** 中提供 **[!UICONTROL 快速访问]** 部分：
+  ![Content Hub访问权限](assets/access-content-hub.png)
+
+* 登录 `experience.adobe com` 并单击 **[!UICONTROL Experience Manager Assets Content Hub]** 在产品切换器中提供：
+  ![Content Hub访问方法3](assets/access-content-hub-alternate.png)
 
 ### 禁用发送给用户的电子邮件通知 {#disable-email-notifications}
 
