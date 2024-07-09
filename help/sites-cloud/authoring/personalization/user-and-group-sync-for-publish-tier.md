@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 54159c25b60277268ade16b437891f268873fecf
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 90%
+source-wordcount: '1340'
+ht-degree: 66%
 
 ---
 
@@ -23,10 +23,6 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 * 存储用户配置文件数据
 * 组成员资格
 * 数据同步
-
->[!IMPORTANT]
->
->为了使本文中描述的功能正常工作，必须启用用户数据同步功能，此时需要向客户支持发送请求，并指明适当的项目和环境。如果未启用，用户信息会仅保留一小段时间（1 到 24 小时），之后将消失。
 
 ## 注册 {#registration}
 
@@ -44,6 +40,10 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
    1. 通过 UserManager API 的某种 `createUser()` 方法创建用户记录
    1. 保留通过可授权界面的 `setProperty()` 方法捕获的任何配置文件数据
 1. 可选流程，例如要求用户验证其电子邮件。
+
+**先决条件：**
+
+要使上述逻辑正常工作，请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。
 
 ### 外部 {#external-managed-registration}
 
@@ -63,6 +63,10 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 
 * [Sling 身份验证框架](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
 * 并考虑[请求关于登录的 AEM Community Experts 讲座](https://bit.ly/ATACEFeb15)。
+
+**先决条件：**
+
+要使上述逻辑正常工作，请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。
 
 ### 与标识提供者集成 {#integration-with-an-idp}
 
@@ -84,9 +88,15 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 
 可以使用您选择的 OAuth 提供程序来实施 `com.adobe.granite.auth.oauth.provider` 接口。
 
+**先决条件：**
+
+作为最佳实践，在存储用户特定的数据时，始终依靠idP（身份提供程序）作为单一信任点。 如果附加用户信息存储在本地存储库中（它不是idP的一部分），请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。 此外 [数据同步](#data-synchronization-data-synchronization)对于SAML身份验证提供程序，请确保 [动态组成员资格](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 已启用。
+
 ### 粘性会话和封装令牌 {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最终用户在每次请求时都被路由到相同的发布节点。为了提高性能，默认情况下将启用封装令牌功能，因此，无需在每次请求时都引用存储库中的用户记录。如果最终用户与之关联的发布节点被替换，则其用户 ID 记录会在新的发布节点上可用，如下面的数据同步部分中所述。
+AEM as a Cloud Service启用基于Cookie的粘性会话，确保最终用户在每次请求时都被路由到相同的发布节点。 在特定情况下（例如用户流量尖峰），封装令牌功能可能会提高性能，因此无需在每次请求时都引用存储库中的用户记录。 如果最终用户与之关联的发布节点被替换，则其用户ID记录将在新发布节点上可用，如中所述 [数据同步](#data-synchronization-data-synchronization) 部分。
+
+要利用封装的令牌功能，请向客户支持提交请求，并指明适当的项目和环境。 更重要的是，如果没有封装令牌，则无法启用 [数据同步](#data-synchronization-data-synchronization) 并且必须一起启用。 因此，在启用之前仔细审查用例，并确保该功能至关重要。
 
 ## 用户配置文件 {#user-profile}
 
@@ -99,11 +109,19 @@ AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最�
 * 通过 `com.adobe.granite.security.user` 接口 UserPropertiesManager 接口进行服务器端使用，这会将数据放置在 `/home/users` 中的用户节点下。确保不缓存每个用户的唯一页面。
 * 使用 ContextHub 的客户端，如[文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization)所述。
 
+**先决条件：**
+
+要使服务器端用户配置文件持久逻辑正确运行，请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。
+
 ### 第三方数据存储 {#third-party-data-stores}
 
 最终用户数据可发送到第三方供应商（例如 CRM），该数据可在用户登录 AEM 时通过 API 进行检索，在 AEM 用户的配置文件节点上保留（或更新），并根据需要供 AEM 使用。
 
 可以实时访问第三方服务以检索配置文件属性，但请务必确保这不会对 AEM 中的请求处理产生实质性影响。
+
+**先决条件：**
+
+要使上述逻辑正常工作，请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。
 
 ## 权限（封闭用户组） {#permissions-closed-user-groups}
 
@@ -116,13 +134,17 @@ AEM as a Cloud Service 启用了基于 Cookie 的粘性会话，这可确保最�
 
 ## 数据同步 {#data-synchronization}
 
-网站最终用户期望在每个网页请求方面获得一致的体验，甚至当他们使用不同的浏览器登录时，（即使他们不知道）他们也将转至发布层基础架构的不同服务器节点。AEMas a Cloud Service通过快速同步 `/home` 跨发布层的所有节点的文件夹层次结构（用户配置文件信息、组成员资格等）。
+网站最终用户期望在每个网页请求方面获得一致的体验，甚至当他们使用不同的浏览器登录时，（即使他们不知道）他们也将转至发布层基础架构的不同服务器节点。AEM as a Cloud Service通过快速同步 `/home` 跨发布层的所有节点的文件夹层次结构（用户配置文件信息、组成员资格等）。
 
 与其他 AEM 解决方案不同，AEM as a Cloud Service 中的用户和组成员资格同步不使用点对点消息传递方法，而是实施不需要客户配置的发布-订阅方法。
 
 >[!NOTE]
 >
 >默认情况下，用户配置文件和组成员资格同步未启用，因此数据不会同步到发布层，甚至不会永久保存到发布层。要启用该功能，请向客户支持发送请求，并指明适当的项目和环境。
+
+>[!IMPORTANT]
+>
+>在生产环境中启用数据同步之前，请大规模测试实施。 根据用例以及保留的数据，可能会出现一些一致性和延迟问题。
 
 ## 缓存注意事项 {#cache-considerations}
 
