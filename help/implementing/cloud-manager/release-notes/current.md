@@ -4,8 +4,8 @@ description: 这些是 AEM as a Cloud Service 中 Cloud Manager 2024.6.0 的发�
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8eaf2b70734cec1fedace64d74059ee161785b39
-workflow-type: ht
+source-git-commit: 6ca376bda8055d62e35e13053ff21f861c12b292
+workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 100%
 
@@ -22,12 +22,12 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2024.6.0 版本的发布日期是 2024 年 6 月 6 日。下一个版本计划于 2024 年 7 月 11 日发布。
+AEM as a Cloud Service 中的 Cloud Manager 2024.6.0 版本的发布日期是 2024 年 6 月 6 日。下一个版本计划于 2024 年 7 月 18 日发布。
 
 ## 新增功能 {#what-is-new}
 
 * 您现在可以[使用您自己的 GitHub 存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)作为全堆叠和前端管道的源。
-   * 此外，您还可以利用带有 [git 子模块](/help/implementing/cloud-manager/managing-code/git-submodules.md)的 GitHub 存储库，为您提供对用于拉取请求验证的自动生成管道的增强控制，并允许您在代码扫描阶段定义关键指标的行为。
+   * 此外，您还可以利用带有 [Git 子模块](/help/implementing/cloud-manager/managing-code/git-submodules.md)的 GitHub 存储库，为您提供对用于拉取请求验证的自动生成管道的增强控制，并允许您在代码扫描阶段定义关键指标的行为。
    * [您还可以选择](/help/implementing/cloud-manager/managing-code/github-check-config.md) 在 GitHub 上保存报告历史记录、命名管道和设置管道变量以满足您的需求。
 * [自助内容恢复](/help/operations/restore.md)提供长达七天的备份恢复功能，并具有以下特点：
    * 前 24 小时的时间点备份恢复
