@@ -4,10 +4,10 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
-workflow-type: ht
-source-wordcount: '3947'
-ht-degree: 100%
+source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
+workflow-type: tm+mt
+source-wordcount: '3938'
+ht-degree: 96%
 
 ---
 
@@ -245,9 +245,9 @@ when:
 
 | **名称** | **允许的属性** | **含义** |
 |---|---|---|
-| **allow** | `wafFlags`（可选），`alert`（可选，尚未发布） | 如果 wafFlags 不存在，则停止进一步的规则处理并继续提供响应。如果 wafFlags 存在，则禁用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
-| **block** | `status, wafFlags`（可选且互斥），`alert`（可选，尚未发布） | 如果 wafFlags 不存在，则绕过所有其他属性来返回 HTTP 错误，错误代码由状态属性定义或默认为 406。如果 wafFlags 存在，则启用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
-| **log** | `wafFlags`（可选），`alert`（可选，尚未发布） | 记录规则已触发这一事实，否则对处理不起作用。wafFlags 不起作用。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。该功能尚未发布；有关如何加入早期采用者项目的信息，请参阅 [流量筛选规则警报](#traffic-filter-rules-alerts) 部分。 |
+| **allow** | `wafFlags` （可选），`alert` （可选） | 如果 wafFlags 不存在，则停止进一步的规则处理并继续提供响应。如果 wafFlags 存在，则禁用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。触发特定规则的警报后，该警报直到第二天(UTC)才会再次触发。 |
+| **block** | `status, wafFlags` （可选且互斥），`alert` （可选） | 如果 wafFlags 不存在，则绕过所有其他属性来返回 HTTP 错误，错误代码由状态属性定义或默认为 406。如果 wafFlags 存在，则启用指定的 WAF 保护并继续执行进一步的规则处理。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。触发特定规则的警报后，该警报直到第二天(UTC)才会再次触发。 |
+| **log** | `wafFlags` （可选），`alert` （可选） | 记录规则已触发这一事实，否则对处理不起作用。wafFlags 不起作用。<br>如果指定了警报，则当规则在 5 分钟内触发 10 次时，将会发送“操作中心”通知。触发特定规则的警报后，该警报直到第二天(UTC)才会再次触发。 |
 
 ### WAF 标志列表 {#waf-flags-list}
 
@@ -493,16 +493,14 @@ data:
 
 ## 流量筛选规则警报 {#traffic-filter-rules-alerts}
 
->[!NOTE]
->
->此功能尚未发布。要通过早期采用者项目获得访问权限，请发送电子邮件至 **aemcs-waf-adopter@adobe.com**。
+可以配置一条规则，如果在 5 分钟内触发十次，则发送“操作中心”通知。当某些流量模式出现时，此类规则会向您发出警报，以便您采取必要的措施。触发特定规则的警报后，该警报直到第二天(UTC)才会再次触发。
 
-可以配置一条规则，如果在 5 分钟内触发十次，则发送“操作中心”通知。当某些流量模式出现时，此类规则会向您发出警报，以便您采取必要的措施。详细了解[操作中心](/help/operations/actions-center.md)，包括如何设置接收电子邮件所需的通知配置文件。
+详细了解[操作中心](/help/operations/actions-center.md)，包括如何设置接收电子邮件所需的通知配置文件。
 
 ![行动中心通知](/help/security/assets/traffic-filter-rules-actions-center-alert.png)
 
 
-警报属性（目前前缀为 *experimental*，因为该功能尚未发布）可以应用于所有操作类型（允许、阻止、日志）的操作节点。
+警报属性可应用于所有操作类型（允许、阻止、日志）的操作节点。
 
 ```
 kind: "CDN"
@@ -519,7 +517,7 @@ data:
             - { reqProperty: tier, equals: publish }
         action:
           type: block
-          experimental_alert: true
+          alert: true
 ```
 
 ## 默认源流量尖峰警报 {#traffic-spike-at-origin-alert}
@@ -532,7 +530,7 @@ data:
 
 如果达到此阈值，Adobe 将阻止来自该 IP 地址的流量，但建议采取额外措施保护您的源，包括配置速率限制流量过滤规则以在较低阈值下阻止流量激增。请参阅[使用流量规则阻止 DoS 和 DDoS 攻击教程](#tutorial-blocking-DDoS-with-rules)，获取逐步指导。
 
-此警报默认启用，但可以通过将 *enable_ddos_alerts* 属性设置为 false 来禁用。
+此警报默认处于启用状态，但可以使用&#x200B;*enable_ddos_alerts*&#x200B;属性（设置为false）将其禁用。 触发警报后，它直到第二天(UTC)才会再次触发。
 
 ```
 kind: "CDN"
