@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 78%
+source-wordcount: '2687'
+ht-degree: 77%
 
 ---
 
@@ -354,13 +354,20 @@ ht-degree: 78%
 
 #### 引用页面 {#reference-pages}
 
-要添加对 AEM 页面、体验片段或其他内容类型的引用，请执行以下操作：
+要将引用添加到AEM页面、体验片段或其他此类内容类型，请执行以下操作：
 
 1. 选择&#x200B;**添加内容路径**。
 
 1. 在输入字段中添加所需的路径。
 
 1. 确认&#x200B;**添加**。
+
+>[!NOTE]
+>
+>这不应用于引用以下内容：
+>
+>* 内容片段 — 使用 [片段引用](#fragment-references)
+>* 图像 — 使用 [参考图像](#reference-images)
 
 ### 查看父引用 {#view-parent-references}
 
