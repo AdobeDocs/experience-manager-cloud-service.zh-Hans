@@ -6,8 +6,8 @@ contentOwner: AG
 exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
 source-git-commit: b4b397a09960f507df1daa0cf6f5dc49d6b286c6
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 96%
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 96%
 
 ## 后续步骤 {#next-steps}
 
-* 使用提供产品反馈 [!UICONTROL 反馈] “资产视图”用户界面上可用的选项
+* 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈
 

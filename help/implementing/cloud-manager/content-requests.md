@@ -20,16 +20,16 @@ ht-degree: 10%
 
 ## 了解 Cloud Service 内容请求 {#understanding-cloud-service-content-requests}
 
-对于使用现成CDN的客户，Cloud Service内容请求通过服务器端数据收集来测量。 此收藏集将通过CDN日志分析启用。 通过自动分析源自AEMas a Cloud ServiceCDN的日志文件，在Adobe Experience Manager as a Cloud Service边缘的服务器端自动收集内容请求。 这是通过隔离请求返回HTML来完成的 `(text/html)` 或JSON `(application/json)` 来自CDN的内容，并且基于下面详述的几个包含和排除规则。 内容请求独立于CDN缓存提供的返回内容或返回到CDN源的内容(AEM Dispatchers)。
+对于使用现成CDN的客户，Cloud Service内容请求通过服务器端数据收集来测量。 此收藏集将通过CDN日志分析启用。 通过自动分析源自Adobe Experience Manager as a Cloud Service CDN的日志文件，在AEM as a Cloud Service边缘的服务器端自动收集内容请求。 这是通过从CDN隔离返回HTML`(text/html)`或JSON `(application/json)`内容的请求来完成的，并且基于下面详述的几个包含和排除规则。 内容请求与从CDN缓存提供的返回内容或返回到CDN源的内容(AEM调度程序)无关。
 
-对于使用自己CDN的客户，客户端集合可提供交互的更精确反映，从而确保通过 [实时监控](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) 服务。 这可以让客户深入了解其页面流量和性能。 虽然它对所有客户都有利，但它提供了用户交互的代表性反映，从而通过捕获客户端的页面查看次数来确保网站参与度的可靠测量。
+对于使用自己CDN的客户，客户端集合可提供更精确的交互反映，从而确保通过[实时监控](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)服务对网站参与度进行可靠的衡量。 这可以让客户深入了解其页面流量和性能。 虽然它对所有客户都有利，但它提供了用户交互的代表性反映，从而通过捕获客户端的页面查看次数来确保网站参与度的可靠测量。
 
-对于在AEMas a Cloud Service之上自带CDN的客户，服务器端报表生成的数目无法与许可的内容请求进行比较。 使用 [实时监控](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)，Adobe可以反映网站参与情况的可靠衡量标准。
+对于在AEM as a Cloud Service的基础上使用自有CDN的客户，服务器端报表生成的数目无法与许可的内容请求进行比较。 使用[实时监控](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)，Adobe可以反映可靠的网站参与度衡量标准。
 
 
 ### Cloud Service内容请求的差异 {#content-requests-variances}
 
-内容请求在组织的Analytics报告工具中可能有差异，如下表所示。 一般来说， *不要* 使用通过客户端工具收集数据的analytics工具来报告给定站点的内容请求数，原因很简单，它们通常依赖于要触发的用户同意，因此会缺少相当一部分流量。 在日志文件中收集数据服务器端的Analytics工具，或者为在AEMas a Cloud Service之上添加自己的CDN的客户提供的CDN报告，将提供更好的计数。 要报告页面查看次数及其相关性能， [AdobeRUM数据服务](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) 是Adobe推荐选项。
+内容请求在组织的Analytics报告工具中可能有差异，如下表所示。 通常，*不*&#x200B;使用通过客户端检测收集数据的分析工具来报告给定站点的内容请求数，只是因为它们通常依赖于用户同意触发，因此缺少相当一部分流量。 收集日志文件中的服务器端数据的Analytics工具，或为在AEM as a Cloud Service上添加其自己CDN的客户提供的CDN报告，将提供更好的计数。 为了报告页面查看次数及其相关性能，[AdobeRUM数据服务](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)是Adobe推荐的选项。
 
 | 差异原因 | 解释 |
 |---|---|
@@ -45,7 +45,7 @@ ht-degree: 10%
 | 流量拦截器 | 在浏览器中使用跟踪拦截器可能会选择不跟踪某些请求。 |
 | 防火墙 | 防火墙可能会阻止分析跟踪。这种情况在公司防火墙中更为常见。 |
 
-另请参阅 [许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md).
+另请参阅[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)。
 
 ## 服务器端收集规则 {#serverside-collection}
 
@@ -56,27 +56,27 @@ ht-degree: 10%
 | 请求类型 | 内容请求 | 描述 |
 | --- | --- | --- |
 | HTTP代码100-299 | 已包含 | 这些是提交全部或部分内容的常规请求。 |
-| 用于自动化的HTTP库 | 已包含 | 示例：<br>· Amazon CloudFront<br>· Apache Http客户端<br>·异步Http客户端<br>· Axios<br>·蔚蓝色<br>·卷曲<br>· GitHub节点获取<br>·居策尔<br>· Go-http-client<br>· Headless铬黄<br>· Java™客户端<br>·泽西岛<br>·节点Oembed<br>· okhttp<br>· Python请求<br>· Reactor Netty<br>·威吉特<br>· WinHTTP |
-| 监控和运行状况检查工具 | 已包含 | 这些功能由客户设置，用于监控站点的某些方面。 例如，可用性或真实用户性能。 使用 `/system/probes/health` 端点，而不是网站中的实际HTML页面。<br>示例：<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>·调查站点24x7<br>· Mozilla/5.0+(兼容；UptimeRobot/2.0； [https://uptimerobot.com/](https://uptimerobot.com/))<br>·千眼 — 蜻蜓 — x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
-| `<link rel="prefetch">` 请求 | 已包含 | 为了提高下一页的加载速度，客户可以在用户单击链接之前让浏览器加载一组页面，以使这些页面已位于缓存中。 *注意：这会显着增加流量* — 取决于预取的页面数量。 |
-| 阻止Adobe Analytics或Google Analytics报表的流量 | 已包含 | 通常，网站访客会安装隐私软件（广告拦截器等），这会影响Google Analytics或Adobe Analytics的准确性。 AEMas a Cloud Service在进入Adobe运行的基础结构的第一个入口点而不是客户端计算请求。 |
+| 用于自动化的HTTP库 | 已包含 | 示例：<br>· Amazon CloudFront<br>· Apache Http Client<br>· Asynchronous Http Client<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub Node Fetch<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· 15}· Reactor Netty<br>· Wget<br>· WinHTTP<br> |
+| 监控和运行状况检查工具 | 已包含 | 这些功能由客户设置，用于监控站点的某些方面。 例如，可用性或真实用户性能。 使用`/system/probes/health`终结点，而不是网站中的实际HTML页面。<br>示例：<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(兼容； UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
+| `<link rel="prefetch">`个请求 | 已包含 | 为了提高下一页的加载速度，客户可以在用户单击链接之前让浏览器加载一组页面，以使这些页面已位于缓存中。 *请注意：这会显着增加流量*，具体取决于预取的页面数量。 |
+| 阻止Adobe Analytics或Google Analytics报表的流量 | 已包含 | 通常，网站访客会安装隐私软件（广告拦截器等），这会影响Google Analytics或Adobe Analytics的准确性。 AEM as a Cloud Service在进入Adobe运行的基础结构的第一个入口点而不是客户端计算请求。 |
 
-另请参阅 [许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md).
+另请参阅[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)。
 
 ### 排除的内容请求的类型 {#excluded-content-request}
 
 | 请求类型 | 内容请求 | 描述 |
 | --- | --- | --- |
-| HTTP代码500+ | 已排除 | 当AEMas a Cloud Service或客户自定义代码出现问题时，会返回错误给访客。 |
+| HTTP代码500+ | 已排除 | 当AEM as a Cloud Service或客户自定义代码上出现问题时，会返回错误给访客。 |
 | HTTP代码400-499 | 已排除 | 内容不存在(404)或存在其他内容或请求相关问题时返回给访客的错误。 |
 | HTTP代码300-399 | 已排除 | 这些是很好的请求，可检查服务器上是否有某些内容发生更改，或将请求重定向到其他资源。 它们本身不包含内容，因此它们不可计费。 |
 | 发送到/libs/*的请求 | 已排除 | AEM内部JSON请求，例如不可计费的CSRF令牌。 |
 | 来自DDOS攻击的流量 | 已排除 | DDOS保护。 AEM会自动检测一些DDOS攻击并阻止它们。 检测到的DDOS攻击无法计费。 |
-| AEMas a Cloud ServiceNew Relic监控 | 已排除 | AEMas a Cloud Service全局监控。 |
-| 客户用于监控其Cloud Service计划的URL | 已排除 | 建议用于外部监控可用性的URL。<br><br>`/system/probes/health` |
-| AEMas a Cloud ServicePod预热服务 | 已排除 |
+| AEM as a Cloud Service New Relic监控 | 已排除 | AEM as a Cloud Service全球监控。 |
+| 客户用于监控其Cloud Service计划的URL | 已排除 | 建议的URL用于外部监视可用性。<br><br>`/system/probes/health` |
+| AEM as a Cloud Service Pod预热服务 | 已排除 |
 | 座席： skyline-service-warmup/1.* |
-| 著名的搜索引擎、社交网络和HTTP库（由Fastly标记） | 已排除 | 著名的服务会定期访问站点以刷新其搜索索引或服务：<br><br>示例：<br>· AddSearchBot<br>·AhrefsBot<br>· Applebot<br>·向Jeeves Corporate Spider咨询<br>·宾博特<br>·必应预览<br>·边界点<br>·内置于<br>·字节蜘蛛<br>·爬网工具引擎<br>· Facebookexternalhit<br>·Google AdsBot<br>· Google AdsBot Mobile<br>·谷歌机器人<br>· Google Bot Mobile<br>·爬虫程序<br>· LucidWorks<br>· MJ12bot<br>·平多姆<br>·Pinterest<br>· SemrushBot<br>·站点改进<br>·存储机器人<br>· StatusCake<br>· YandexBot |
-| 排除Commerce integration framework调用 | 已排除 | 这些是向AEM发出的请求，将转发到Commerce integration framework，URL开头为 `/api/graphql` — 为了避免重复计数，它们不计费Cloud Service。 |
-| 排除 `manifest.json` | 已排除 | 清单不是API调用，它旨在提供有关如何在桌面或手机上安装网站的信息。 Adobe不应将JSON请求计为 `/etc.clientlibs/*/manifest.json` |
-| 排除 `favicon.ico` | 已排除 | 虽然返回的内容不应为HTML或JSON，但我们发现，在某些场景（如SAML身份验证流）中，favicon可能会作为HTML返回，因此会从计数中显式排除。 |
+| 著名的搜索引擎、社交网络和HTTP库（由Fastly标记） | 已排除 | 已知的服务定期访问网站以刷新其搜索索引或服务： <br><br>示例： <br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuildWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBotBot <br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· MJ12bot<br>· Pingdom<br>· Pinterest<br>· SemrushBot<br>· SiteEnprovement<br>· StashBot<br>· StatusCake<br>· Yek{YandexBot |
+| 排除Commerce integration framework调用 | 已排除 | 这些是向AEM发出的请求，需要转发到Commerce integration framework（URL以`/api/graphql`开头），以避免重复计数，因此不会对Cloud Service计费。 |
+| 排除`manifest.json` | 已排除 | 清单不是API调用，它旨在提供有关如何在桌面或手机上安装网站的信息。 Adobe不应计为`/etc.clientlibs/*/manifest.json`的JSON请求 |
+| 排除`favicon.ico` | 已排除 | 虽然返回的内容不应为HTML或JSON，但我们发现，在某些场景（如SAML身份验证流）中，favicon可能会作为HTML返回，因此会从计数中显式排除。 |

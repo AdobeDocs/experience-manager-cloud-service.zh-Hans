@@ -19,13 +19,13 @@ ht-degree: 1%
 
 这些命名惯例在各级实施：
 
-* JcrUtil：的AEM实现 [JCR实用程序](#jcr-utilities).
-* PageManager： [页面管理器](#page-manager) 提供页面级操作的方法。
-* 在AEM UI中 {#ui-behavior}
+* JcrUtil： [JCR实用程序](#jcr-utilities)的AEM实现。
+* PageManager： [页面管理器](#page-manager)提供页面级操作的方法。
+* 在AEM UI {#ui-behavior}中
 
 ### JCR实用程序 {#jcr-utilities}
 
-[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) 是JCR实用程序的AEM实施。 验证名称特别感兴趣的是它控制的字符映射以及以下验证：
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html)是JCR实用程序的AEM实现。 验证名称特别感兴趣的是它控制的字符映射以及以下验证：
 
 * `isValidName`
    * 检查名称是否不为空且仅包含有效字符。
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ### 页面管理器 {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) 提供页面级操作的方法，基于 [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html)提供了基于[JCRUtil](#jcr-utilities)的页面级操作方法。
 
 ### AEM UI行为 {#ui-behavior}
 

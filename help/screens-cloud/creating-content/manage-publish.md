@@ -1,6 +1,6 @@
 ---
-title: 在Screensas a Cloud Service发布渠道
-description: 本页介绍如何在Screensas a Cloud Service中发布渠道。
+title: 在Screens中发布渠道as a Cloud Service
+description: 本页介绍如何在Screens中发布渠道as a Cloud Service。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
 feature: Authoring Screens
 role: Admin, Developer, User
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 ---
 
-# as a Cloud Service发布Screens中的渠道 {#publish-channel-screens-cloud}
+# 在Screens中发布渠道as a Cloud Service {#publish-channel-screens-cloud}
 
 ## 简介 {#introduction}
 
@@ -27,28 +27,28 @@ ht-degree: 1%
 * 了解如何发布渠道
 * 管理发布（根据范围）
 
-## 发布渠道的步骤 {#publish-channel}
+## Publish a渠道的步骤 {#publish-channel}
 
 请按照以下步骤发布渠道：
 
-1. 从项目中导航并选择渠道，例如 **FirstdigitalExperience** —> **渠道** —> **LoopingChannelOne**.
+1. 导航并从项目中选择频道，如&#x200B;**FirstDigitalExperience** —> **频道** —> **LoopingChannelOne**。
 
-   ![选择渠道](/help/screens-cloud/assets/create-content/managepub-1.png)
+   ![选择频道](/help/screens-cloud/assets/create-content/managepub-1.png)
 
-1. 单击 **管理发布** 从操作栏中。
+1. 单击操作栏中的&#x200B;**管理发布**。
 
-1. 选择 **操作** 作为 **Publish** 和 **正在计划** 作为 **现在** 从 **管理发布向导** 并单击 **下一个**.
+1. 从&#x200B;**管理发布向导**&#x200B;中选择&#x200B;**操作**&#x200B;作为&#x200B;**Publish**，**计划**&#x200B;作为&#x200B;**现在**，然后单击&#x200B;**下一步**。
 
-   ![选择发布操作](/help/screens-cloud/assets/create-content/managepub-2.png)
+   ![选择Publish操作](/help/screens-cloud/assets/create-content/managepub-2.png)
 
    >[!NOTE]
-   >单击 **包括子项** 从操作栏中，取消选中所有选项以发布项目中的所有模块，然后单击添加以发布。 默认情况下，所有复选框都处于选中状态，您必须手动取消选中这些复选框才能发布项目中的所有模块。
+   >单击操作栏中的&#x200B;**包括子项**，取消选中所有选项以发布项目中的所有模块，然后单击“添加”以发布。 默认情况下，所有复选框都处于选中状态，您必须手动取消选中这些复选框才能发布项目中的所有模块。
 
-1. 从中选择渠道后 **管理发布** 向导，单击 **Publish** 以发布渠道。
+1. 从&#x200B;**管理发布**&#x200B;向导中选择渠道后，单击&#x200B;**Publish**&#x200B;发布渠道。
 
-   ![发布渠道](/help/screens-cloud/assets/create-content/managepub-3.png)
+   ![Publish频道](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## 后续内容 {#whats-next}
 
-现在，您已在项目中发布渠道，您现在应该通过进一步查看文档来继续您的Screensas a Cloud Service之旅， [在Screensas a Cloud Service安装和配置播放器](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+现在，您已在项目中发布频道，您现在应该继续您的Screensas a Cloud Service之旅，接下来查看文档[在Screens中安装和配置播放器as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)。

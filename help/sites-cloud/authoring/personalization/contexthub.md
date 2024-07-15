@@ -21,7 +21,7 @@ ContextHub工具栏显示ContextHub存储区中的数据，并允许您更改存
 * UI模式是显示在工具栏左侧的图标。 选择图标后，工具栏会显示它包含的UI模块。
 * UI模块显示来自一个或多个ContextHub存储的数据。 某些UI模块还允许您处理存储数据。
 
-ContextHub安装多个UI模式和UI模块。 您的管理员可能已 [已配置ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) 以显示不同的标记。
+ContextHub安装多个UI模式和UI模块。 您的管理员可能已[将ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)配置为显示其他内容。
 
 ## 显示ContextHub工具栏 {#revealing-the-contexthub-toolbar}
 

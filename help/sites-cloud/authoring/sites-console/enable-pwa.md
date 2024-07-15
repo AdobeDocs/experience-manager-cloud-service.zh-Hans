@@ -105,8 +105,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 满足[前提条件](#prerequisites)后，内容作者可以轻松地为站点启用 PWA 功能。以下是有关如何执行此操作的基本概览。[详细选项](#detailed-options)部分中详述了各个选项。
 
 1. 登录 AEM。
-1. 从主菜单中，选择 **导航** > **站点**.
-1. 选择您的站点项目并选择 [**属性**](/help/sites-cloud/authoring/sites-console/page-properties.md) 或使用热键 `p`.
+1. 从主菜单中选择&#x200B;**导航** > **站点**。
+1. 选择您的站点项目，然后选择&#x200B;[**属性**](/help/sites-cloud/authoring/sites-console/page-properties.md)&#x200B;或使用热键`p`。
 1. 选择&#x200B;**渐进式 Web 应用程序**&#x200B;选项卡，并配置适用的属性。至少您需要：
    1. 选择&#x200B;**启用 PWA** 选项。
    1. 定义&#x200B;**启动 URL**。

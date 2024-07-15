@@ -52,7 +52,7 @@ ht-degree: 73%
    * 不是容器标记的标记称作叶标记。
    * 标记命名空间可以是叶标记或容器标记。
 
-有关标记如何工作的更多技术详细信息，请参阅 [AEM标记框架](/help/implementing/developing/introduction/tagging-framework.md).
+有关标记如何工作的更多技术详细信息，请参阅[AEM标记框架](/help/implementing/developing/introduction/tagging-framework.md)。
 
 ## 标记控制台 {#tagging-console}
 
@@ -65,7 +65,7 @@ ht-degree: 73%
 要访问标记控制台，请执行以下操作：
 
 1. 使用管理权限登录创作环境。
-1. 在全局导航菜单中，选择 **`Tools`** > **`General`** >
+1. 在全局导航菜单中，选择&#x200B;**`Tools`** > **`General`** >
    **`Tagging`**。
 
 ![AEM 中的标记控制台](/help/sites-cloud/administering/assets/tagging-console.png)
@@ -82,7 +82,7 @@ ht-degree: 73%
 
 命名空间用于整理其他标记。它可以被视为最低级别的标记，通常用于对其他标记进行分组。
 
-1. 要创建命名空间，请打开 [标记控制台](#tagging-console) 并选择 **创建** 工具栏中的按钮，然后 **创建命名空间**.
+1. 要创建命名空间，请打开[标记控制台](#tagging-console)并选择工具栏中的&#x200B;**创建**&#x200B;按钮，然后选择&#x200B;**创建命名空间**。
 
    ![“添加命名空间”对话框](/help/sites-cloud/administering/assets/add-namespace.png)
 
@@ -92,7 +92,7 @@ ht-degree: 73%
    * **名称** - 如果未指定名称，则从&#x200B;**标题**&#x200B;创建有效的节点名称。有关更多信息，请参阅 [AEM 标记框架](/help/implementing/developing/introduction/tagging-framework.md#tagid)文档。
    * **描述** - 命名空间的描述（可选）
 
-1. 输入所需信息后，选择 **创建**.
+1. 输入所需信息后，选择&#x200B;**创建**。
 
 将创建命名空间。在标记控制台中，命名空间位于最低级别（位于控制台的最左列），由文件夹图标表示，这反映了它们作为“容器”或其他标记分组的性质。
 
@@ -104,11 +104,11 @@ ht-degree: 73%
 
 标记通常将添加到命名空间中。
 
-1. 要创建标记，请打开 [标记控制台。](#tagging-console)
+1. 要创建标记，请打开[标记控制台。](#tagging-console)
 
 1. 选择要创建标记的命名空间。 或者选择另一个标记以在其下方创建子标记。
 
-1. 选择 **创建** 工具栏上的按钮，然后 **创建标记**.
+1. 选择工具栏上的&#x200B;**创建**&#x200B;按钮，然后选择&#x200B;**创建标记**。
 
 1. **创建标记**&#x200B;对话框随即打开。提供新标记所需的信息。
 
@@ -134,7 +134,7 @@ ht-degree: 73%
 
 1. 要发布标记，请打开[标记控制台](#tagging-console)。
 
-1. 选择要发布的一个或多个标记，然后在工具栏中选择 **Publish**.
+1. 选择要发布的一个或多个标记，然后在工具栏中选择&#x200B;**Publish**。
 
    ![在控制台中选择标记](assets/select-tags.png)
 
@@ -178,7 +178,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 要查看标记的属性，请打开[标记控制台](#tagging-console)。
 
-1. 选择要查看其属性的标记，然后在左边栏中选择 **属性**.
+1. 选择要查看其属性的标记，然后在左边栏中选择&#x200B;**属性**。
 
    ![选择属性视图](assets/view-tag-properties.png)
 
@@ -186,7 +186,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
    ![查看标记属性](assets/tag-properties.png)
 
-有关选择查看模式和边栏的更多详细信息，请参阅 [基本处理](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+有关选择查看模式和边栏的详细信息，请参阅[基本处理](/help/sites-cloud/authoring/basic-handling.md#rail-selector)。
 
 ### 编辑标记 {#editing-tags}
 
@@ -194,7 +194,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 要编辑标记，请打开[标记控制台](#tagging-console)。
 
-1. 选择要编辑的标记，然后在工具栏中选择 **编辑**.
+1. 选择要编辑的标记，然后在工具栏中选择&#x200B;**编辑**。
 
 1. 进行所需的更改。可以更改：
 
@@ -202,7 +202,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
    * **描述**
    * [**本地化**](#managing-tags-in-different-languages)
 
-1. 进行编辑后，选择 **提交**.
+1. 进行编辑后，选择&#x200B;**提交**。
 
 有关添加语言翻译的详细信息，请参阅[管理不同语言的标记](#managing-tags-in-different-languages)部分。
 
@@ -214,7 +214,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 要取消发布标记，请打开[标记控制台](#tagging-console)。
 
-1. 选择要取消发布的一个或多个标记，然后在工具栏中选择 **取消发布**.
+1. 选择要取消发布的标记，然后在工具栏中选择&#x200B;**取消发布**。
 
    ![在控制台中选择标记](assets/select-tags.png)
 
@@ -234,7 +234,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 要查看标记的引用，请打开[标记控制台](#tagging-console)。
 
-1. 选择要查看其引用的标记，然后在左边栏中选择 **引用**.
+1. 选择要查看其引用的标记，然后在左边栏中选择&#x200B;**引用**。
 
    ![选择属性视图](assets/view-tag-references.png)
 
@@ -248,7 +248,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 将鼠标悬停在列表中或选择引用内容以显示内容的完整路径。
 
-有关选择查看模式和边栏的更多详细信息，请参阅 [基本处理](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
+有关选择查看模式和边栏的详细信息，请参阅[基本处理](/help/sites-cloud/authoring/basic-handling.md#rail-selector)。
 
 ### 移动标记 {#moving-tags}
 
@@ -260,14 +260,14 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 要移动或重命名标记，请打开[标记控制台](#tagging-console)。
 
-1. 选择要移动或重命名的标记，然后选择 **移动** 工具栏中。
+1. 选择要移动或重命名的标记，然后在工具栏中选择&#x200B;**移动**。
 
-1. 在 **移动标记** 对话框，指定要更改的属性。
+1. 在&#x200B;**移动标记**&#x200B;对话框中，指定要更改的属性。
 
-   * **重命名为**  — 您希望为标记提供的新名称
+   * **重命名为** — 您要为标记提供的新名称
       * 此字段预先填充了标记的当前名称。
       * 如果只想移动标记而不想重命名它，请保持未修改状态。
-   * **移动到**  — 要将标记移动到的位置
+   * **移动到** — 要移动标记的位置
       * 此字段预先填充了标记的当前位置。
       * 如果只想重命名标记而不想移动它，请保持未修改状态。
 
@@ -283,15 +283,15 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 要合并两个标记，请打开[标记控制台](#tagging-console)。
 
-1. 选择要合并到其他标记的标记，然后选择 **合并** 工具栏中。
+1. 选择要合并到其他标记的标记，然后在工具栏中选择&#x200B;**合并**。
 
-1. 在 **合并标记** 对话框，选择 **浏览** 图标 **合并到** 字段，用于指定要将所选标记合并到哪个标记中。
+1. 在&#x200B;**合并标记**&#x200B;对话框中，选择&#x200B;**合并到**&#x200B;字段的&#x200B;**浏览**&#x200B;图标，以指定要将所选标记合并到哪个标记中。
 
    ![“合并标记”对话框](assets/merge-tag.png)
 
 1. 选择&#x200B;**提交**。
 
-控制台中选择的标记将合并到对话框中指定的标记中。在移动或合并引用的标记时，该标记不会被物理删除，以便能够维护引用。请参阅 [AEM标记框架](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) 以了解更多信息。
+控制台中选择的标记将合并到对话框中指定的标记中。在移动或合并引用的标记时，该标记不会被物理删除，以便能够维护引用。有关详细信息，请参阅[AEM标记框架](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags)。
 
 ### 删除标记 {#deleting-tags}
 
@@ -299,7 +299,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. 要删除标记，请打开[标记控制台](#tagging-console)。
 
-1. 选择要删除的标记，然后选择 **删除** 工具栏中。
+1. 选择要删除的标记，然后在工具栏中选择&#x200B;**删除**。
 
 1. **删除标记**&#x200B;对话框要求确认删除所选标记。选择&#x200B;**删除**。
 
@@ -307,7 +307,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 1. AEM 检查以确保标记未被引用。
 
-   1. 如果未找到引用，AEM 会要求最终确认删除。选择 **删除**
+   1. 如果未找到引用，AEM 会要求最终确认删除。选择&#x200B;**删除**
 
       ![未找到引用](assets/no-references-found.png)
 
@@ -356,13 +356,13 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 标记的 `title` 属性可翻译为多种语言。翻译后，可以根据用户或内容语言显示适当的标记标题。
 
-假设我们有一个名为 `Animals` 我们要把那些翻译成德文和法文
+假设我们有一个名为`Animals`的标记，我们要将其翻译为德语和法语。
 
 1. 打开[标记控制台](#tagging-console)。
 
-1. 选择要翻译的标记，然后选择 **编辑** 工具栏中。
+1. 选择要翻译的标记，然后在工具栏中选择&#x200B;**编辑**。
 
-1. 在 **编辑标记** 对话框，在 **本地化** 列中，选择目标语言，例如德语。
+1. 在&#x200B;**编辑标记**&#x200B;对话框的&#x200B;**本地化**&#x200B;列中，选择目标语言，例如德语。
 
 1. 在显示的&#x200B;**德语**&#x200B;字段中，提供翻译后的标题。
 
@@ -380,4 +380,4 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
 
 >[!TIP]
 >
->如果您想了解有关AEM本地化功能的更多信息，请参阅 [为多语言站点翻译内容](/help/sites-cloud/administering/translation/overview.md).
+>如果要了解有关AEM本地化功能的更多信息，请参阅[翻译多语言站点的内容](/help/sites-cloud/administering/translation/overview.md)。

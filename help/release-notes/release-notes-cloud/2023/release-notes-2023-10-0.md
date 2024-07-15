@@ -43,7 +43,7 @@ ht-degree: 91%
 
 ### 新增功能 {#assets-features}
 
-**适用于Adobe Express的AEM Assets加载项**：Experience Manager Assets现在为Adobe Express提供了一个加载项。 通过该插件可以直接从 Adobe Express 用户界面访问存储在 Experience Manager Assets 内的资源。可将在 AEM Assets 中管理的内容放入 Express 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。该加载项主要有以下几项优势：
+适用于Adobe Express **的** AEM Assets加载项：Experience Manager Assets现在提供了用于Adobe Express的加载项。 通过该插件可以直接从 Adobe Express 用户界面访问存储在 Experience Manager Assets 内的资源。可将在 AEM Assets 中管理的内容放入 Express 画布，然后将新内容或经过编辑的内容保存在 AEM Assets 存储库中。该加载项主要有以下几项优势：
 
 * 通过在 AEM 中编辑和保存新资源，提高了内容重用程度
 
@@ -53,11 +53,11 @@ ht-degree: 91%
 
 ### 资源视图中的新增功能 {#assets-view-features}
 
-* **从OneDrive数据源批量导入资产**：管理员现在能够 [将大量资源从OneDrive导入到AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). 支持批量导入的数据源的更新列表包括 Azure、AWS、Google Cloud、Dropbox 和 OneDrive。
+* **从OneDrive数据源批量导入资源**：管理员现在可以[将大量资源从OneDrive导入AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application)。 支持批量导入的数据源的更新列表包括 Azure、AWS、Google Cloud、Dropbox 和 OneDrive。
 
   ![将元数据表单分配给文件夹](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **跨组织授权库支持**：现在通过Experience Manager Assets可配置对其他IMS组织中的Creative Cloud库的访问权限。 这样可更轻松地访问 Creative Cloud 与 Experience Manager 之间最新的跨产品工作流，并减少创意人员花费的时间和精力。
+* **库的跨组织权利支持**：Experience Manager Assets现在允许您配置对其他IMS组织中的Creative Cloud库的访问权限。 这样可更轻松地访问 Creative Cloud 与 Experience Manager 之间最新的跨产品工作流，并减少创意人员花费的时间和精力。
 
 ### 可在 [!DNL Experience Manager Assets] 中找到的预发布功能 {#prerelease-features-assets}
 
@@ -88,7 +88,7 @@ ht-degree: 91%
 
 [通过声明按属性（包括 URL、IP 地址和用户代理）匹配网站流量的规则，过滤 Adobe Managed CDN ](/help/security/traffic-filter-rules-including-waf.md)上的流量，或设置自定义流量速率限制以防范 DoS 攻击。客户还可以许可一组高级 Web 应用程序防火墙 (WAF) 规则，以针对复杂的网站威胁提供额外的保护。
 
-我们建议您通过以下方式熟悉流量过滤器规则 [试用教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)！ 它会引导您完成设置新的 Cloud Manager 配置管道、在配置文件中声明规则，以及分析 CDN 日志中的恶意流量。
+我们建议您通过[尝试教程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)来熟悉流量过滤器规则！ 它会引导您完成设置新的 Cloud Manager 配置管道、在配置文件中声明规则，以及分析 CDN 日志中的恶意流量。
 
 目前开发环境上具有可用的流量过滤规则，并将会在 11 月份逐步推广到暂存和生产环境。通过向 **aemcs-waf-adopter@adobe.com** 发送电子邮件，可申请提前在暂存和生产环境上使用该功能。
 

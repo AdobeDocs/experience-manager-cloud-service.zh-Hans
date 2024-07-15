@@ -21,7 +21,7 @@ ht-degree: 10%
 
 ### imageMap属性 {#imagemap-property}
 
-图像映射坐标作为 `imageMap` 属性。 它具有以下格式。
+图像编辑器会将图像映射坐标作为`imageMap`属性保留到JCR。 它具有以下格式。
 
 该属性按如下方式存储映射区域：
 
@@ -46,13 +46,13 @@ ht-degree: 10%
 
 在某些情况下，由于服务器端处理缺乏支持，必须限制某些MIME类型的创作操作。 例如，可能不允许编辑SVG图像。
 
-MIME类型可以通过设置 `supportedMimeTypes` 属性。
+MIME类型可以通过在单个插件的配置节点上设置`supportedMimeTypes`属性来选择性地启用图像编辑器中的插件。
 
 ### 示例 {#example}
 
 例如，假设仅允许对GIF、JPEG、PNG、WEBP和TIFF图像使用裁切功能。
 
-此 `supportedMimeTypes` 然后，必须在上的插件的配置节点上将属性设置为允许的MIME类型的字符串。 `cq:editConfig` 图像组件的节点。
+然后，必须在图像组件的`cq:editConfig`节点上的插件的配置节点上将`supportedMimeTypes`属性设置为允许的MIME类型的字符串。
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

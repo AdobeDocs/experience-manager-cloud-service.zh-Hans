@@ -24,30 +24,30 @@ ht-degree: 46%
 
 ## 发布日期 {#release-date}
 
-的发布日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.5.0是2021年5月27日。
+[!DNL Adobe Experience Manager]as a Cloud Service2021.5.0的发布日期是2021年5月27日。
 下一个版本(2021.6.0)将于2021年6月28日发布。
 
-## AEMas a Cloud Service基础 {#foundation}
+## AEM as a Cloud Service Foundation {#foundation}
 
-### AEMas a Cloud Service基础的新增功能 {#what-is-new-foundation}
+### AEM as a Cloud Service Foundation的新增功能 {#what-is-new-foundation}
 
-* [预发行渠道](/help/release-notes/prerelease.md)：在即将推出的功能正式发布前的一个月进行预览！
+* [预发行渠道](/help/release-notes/prerelease.md)：在即将发布的功能正式发布前的一整个月进行预览！
 
-* [API弃用](/help/release-notes/deprecated-removed-features.md)：提供了适用于AEMas a Cloud Service的最新弃用API的列表。
+* [API弃用](/help/release-notes/deprecated-removed-features.md)：提供了AEM as a Cloud Service的最新弃用API列表。
 
-* [AEMas a Cloud ServiceSDK构建分析器Maven插件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：将您的maven项目更新到最新版本，其中包括弃用的Java API检查和其他改进。
+* [AEM as a Cloud Service SDK构建分析器Maven插件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html)：将您的Maven项目更新到最新版本，其中包括弃用的Java API检查和其他改进。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
-* 您很快便能够验证新版本上的内容 [预览层](/help/sites-cloud/authoring/sites-console/previewing-content.md) 以模拟最终的体验外观，就像在发布层上一样。 这项功能通过“AEM Sites托管发布”向导启用，现在允许您在“发布”或“预览”之间选择发布目标。 随后，可以通过专用URL访问预览体验。 在“预览”上进行验证后，内容可以像往常一样从“作者”发布到“发布”。 在接下来的几周内将逐步在AEMas a Cloud Service环境中启用预览服务。
+* 您很快便能够验证新[预览层](/help/sites-cloud/authoring/sites-console/previewing-content.md)上的内容以模拟最终的体验外观，就像您在Publish层上一样。 这项功能通过“AEM Sites托管发布”向导启用，现在允许您在Publish和预览之间选择发布目标。 随后，可以通过专用URL访问预览体验。 在“预览”上进行验证后，内容可以像往常一样从“创作”发布到Publish。 在接下来的几周内，将逐步启用AEM as a Cloud Service环境中的预览服务。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* 您可以使用链接共享功能下载共享的资源。 现在，此下载使用异步服务，即使对于非常大的下载，该服务也能提供更快且无中断的下载。 请参阅 [下载资产](/help/assets/download-assets-from-aem.md#link-share-download).
+* 您可以使用链接共享功能下载共享的资源。 现在，此下载使用异步服务，即使对于非常大的下载，该服务也能提供更快且无中断的下载。 请参阅[下载资源](/help/assets/download-assets-from-aem.md#link-share-download)。
 
   ![下载收件箱](/help/assets/assets/download-inbox.png)
 
@@ -59,18 +59,18 @@ ht-degree: 46%
 
 * 在批量提取期间，可使用资源批量提取器工具添加元数据。
 
-* 用户体验增强功能可显示文件夹中存在的资源数量。 对于文件夹中的1000多种资源， [!DNL Assets] 显示1000+。
+* 用户体验增强功能可显示文件夹中存在的资源数量。 如果文件夹中有1000多种资源，[!DNL Assets]将显示1000+。
 
-  ![文件夹中的资源数显示在界面上](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![文件夹中的资产数量显示在界面上](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### [!DNL Assets] 中修复的错误 {#assets-bugs-fixed}
 
-* 上传超大文件会崩溃 [!DNL Experience Manager desktop app]. (CQ-4320942)
+* 上载超大文件会使[!DNL Experience Manager desktop app]崩溃。 (CQ-4320942)
 * 从文件夹中选择同一收藏集或从搜索结果中选择该收藏集时，工具栏选项会有所不同。 (CQ-4321406)
 
 #### Dynamic Media的新增功能 {#what-is-new-dm}
 
-* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和受限网络带宽的设备上高效地提供最佳质量的图像。 有关更多信息，请参阅 [智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md) 和 [使用新一代图像格式WebP和AVIF优化图像。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和受限网络带宽的设备上高效地提供最佳质量的图像。 有关详细信息，请参阅[智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md)和[使用下一代图像格式WebP和AVIF的图像优化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * 在Dynamic Media交付中引入了对下一代图像格式AVIF的支持（fmt URL修饰符）。
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -103,7 +103,7 @@ Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML �
 
 ### 发布日期 {#release-date-cm-may}
 
-AEMas a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6日。
+AEM as a Cloud Service 2021.5.0中的Cloud Manager的发布日期是2021年5月6日。
 下一个版本计划于2021年6月3日发布。
 
 ### 新增功能 {#what-is-new-may}
@@ -150,7 +150,7 @@ AEMas a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6�
 
 * 如果用户没有Java可执行文件的运行权限，则会在快速入门的错误日志中添加新的日志记录语句。
 
-* 当用户从执行提取的CTT用户界面删除迁移集时， `tmp` 已删除与该迁移集关联的文件夹以节省空间。
+* 当用户从执行提取的CTT用户界面中删除迁移集时，将删除与该迁移集关联的`tmp`文件夹以节省空间。
 
 ### 错误修复 {#bug-fixes-ctt-latest}
 
@@ -170,7 +170,7 @@ AEMas a Cloud Service2021.5.0中的Cloud Manager的发布日期是2021年5月6�
 ### 错误修复 {#bug-fixes-ctt-may}
 
 * 与内容传输工具UI中的自动刷新功能相关的多个错误修复。
-* 内容传输工具，带有 `wipe=true` 导致目标上的计数器索引不正确。 此问题已得到修复。
+* 具有`wipe=true`的内容传输工具导致目标上的计数器索引不正确。 此问题已得到修复。
 
 ## Commerce加载项 {#cloud-services-commerce}
 

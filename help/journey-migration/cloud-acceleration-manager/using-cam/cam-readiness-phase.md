@@ -18,7 +18,7 @@ ht-degree: 9%
 准备阶段包括：
 
 * [最佳实践分析](#best-practices-analysis)
-* [规划和设置](#planning-setup)
+* [计划和设置](#planning-setup)
 
 执行以下步骤以导航到准备阶段：
 
@@ -26,7 +26,7 @@ ht-degree: 9%
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. 在项目登陆页面上，导航到 **准备就绪** 部分，如下图所示。
+1. 在项目登录页面上，导航到&#x200B;**准备就绪**&#x200B;部分，如下图所示。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
@@ -41,7 +41,7 @@ ht-degree: 9%
 >abstract="可以将 BPA 报告上传到 CAM，以针对迁移到 AEM as a Cloud Service。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer" text="使用 Best Practices Analyzer"
 
-1. 单击 **审核** 从 **最佳实践分析** 卡片。
+1. 从&#x200B;**最佳实践分析**&#x200B;卡中单击&#x200B;**审阅**。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
@@ -50,12 +50,12 @@ ht-degree: 9%
    >[!NOTE]
    >为避免对业务关键实例产生影响，Adobe建议您在创作环境中运行BPA。 在自定义、配置、内容和用户应用程序方面，环境应尽可能接近生产环境。 或者，也可以在克隆的生产“创作”环境中运行。
 
-   1. 导航至 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) 门户，并以zip文件形式下载最佳实践分析器。
+   1. 导航到[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*)门户，并将最佳实践分析器下载为zip文件。
 
       >[!NOTE]
-      >审核 [使用最佳实践分析器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) 学习如何运行BPA。
+      >查看[使用最佳实践分析器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations)以了解如何运行BPA。
 
-1. 在CAM中，单击 **获取上传密钥**，因此您可以获得用于配置系统的密钥，以将BPA报表自动直接上传到CAM。
+1. 在CAM中，单击&#x200B;**获取上传密钥**，以便获取用于配置系统以将BPA报告自动直接上传到CAM的密钥。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
@@ -69,48 +69,48 @@ ht-degree: 9%
    >[!NOTE]
    >如果上载了多个不同的报告，则详细显示的报告始终是具有最新创建日期（而非上载日期）的报告。
 
-1. 查看并探索CAM中的“最佳实践分析”仪表板。 请参阅 [审核最佳实践分析报告](#analysis-report) 以了解更多详细信息。
+1. 查看并探索CAM中的“最佳实践分析”仪表板。 有关更多详细信息，请参阅[查看最佳实践分析报告](#analysis-report)。
 
    >[!NOTE]
    >如果上传新报告比之前加载的报告更新，则上传新报告会重置所有评估。
 
 ### 使用打印预览 {#print-preview-cam}
 
-您可以在Cloud Acceleration Manager中选择打印预览选项，以便打印报告预览或按PDF格式打印报告以便轻松共享。
+您可以在Cloud Acceleration Manager中选择打印预览选项，以便预览报表的可打印内容，或者将报表打印为PDF格式以便轻松共享。
 
 应遵循以下步骤：
 
-1. 单击 **打印预览** 操作。
+1. 单击&#x200B;**打印预览**&#x200B;操作。
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1b.png)
 
-1. 在可打印预览中显示报告的新选项卡上，单击 **打印** 将报表打印为PDF格式。
+1. 在可打印预览中显示报告的新选项卡上，单击&#x200B;**打印**&#x200B;以将报告打印为PDF格式。
 
    >[!IMPORTANT]
    >
-   >* 选项 **另存为PDF** 建议并支持上述功能。
+   >* 上述功能推荐并支持选项&#x200B;**另存为PDF**。
    >* 如果使用浏览器的打印按钮，则仅打印一页。
 
    ![图像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### 使用查看趋势线 {#trendline-view-cam}
 
-在项目中上传多个不同的最佳实践分析器(BPA)报告时，您可以选择 **查看趋势线** 用于查看和比较历史BPA报表结果的选项。
+在项目中上传多个不同的最佳实践分析器(BPA)报告时，您可以选择&#x200B;**查看趋势线**&#x200B;选项以查看和比较历史BPA报告的结果。
 
 请按照以下步骤从趋势线选项查看报表：
 
 >[!NOTE]
->在项目中上传多个不同的BPA报告时，您会看到 **...** 图标。 如果报告的主机和创建时间相同，则将其视为相同（非不同）。
+>在项目中上传多个不同的BPA报告时，您会看到&#x200B;**...**&#x200B;图标。 如果报告的主机和创建时间相同，则将其视为相同（非不同）。
 
-1. 导航到您的项目并单击 **审核** 从 **最佳实践分析** 中的卡 **准备就绪** 阶段。
+1. 导航到您的项目，然后在&#x200B;**准备工作**&#x200B;阶段的&#x200B;**最佳实践分析**&#x200B;卡中单击&#x200B;**审核**。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. 从 **视图** 下拉列表，单击 **趋势线报告**，如下图所示。
+1. 从&#x200B;**视图**&#x200B;下拉列表中，单击&#x200B;**趋势线报告**，如下图所示。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
-1. 点击 **趋势线报告** 打开报告的趋势线视图。
+1. 单击&#x200B;**趋势线报告**&#x200B;将打开该报告的趋势线视图。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
@@ -142,17 +142,17 @@ ht-degree: 9%
 
 #### 报告属性 {#report-properties}
 
-此 **报表属性** 信息卡提供有关报表属性的信息，例如报表日期、持续时间、过滤器、上传日期和Adobe Experience Manager (AEM)详细信息。
+**报告属性**&#x200B;卡提供有关报告属性的信息，如报告日期、持续时间、筛选器、上传日期和Adobe Experience Manager (AEM)详细信息。
 
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
 #### 报告概述 {#report-overview}
 
-此 **报表概述** 信息卡提供在评估迁移到AEMas a Cloud Service的准备情况时使用的报告查找结果和严重性级别，如下图所示。
+此&#x200B;**报告概述**&#x200B;信息卡提供在评估迁移到AEM as a Cloud Service的准备情况时适用的报告发现和严重性级别，如下图所示。
 
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview.png)
 
-单击此报告将打开 **报表** 选项卡。
+单击此报表可打开&#x200B;**报表**&#x200B;选项卡。
 
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -161,7 +161,7 @@ ht-degree: 9%
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->请参阅 [解释Best Practices Analyzer报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) 了解调查结果的类别和重要性级别。
+>请参阅[解释Best Practices Analyzer报告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html)以了解调查结果类别和重要性级别。
 
 #### 最佳实践评估 {#best-practices-assessment}
 
@@ -175,7 +175,7 @@ ht-degree: 9%
 
 #### 迁移复杂度评估 {#migration-complexity-assessment}
 
-“迁移复杂性评估”选项可评估将现有AEM实施迁移到AEMas a Cloud Service的复杂性。
+“迁移复杂性评估”选项可评估将现有AEM实施迁移到AEM as a Cloud Service的复杂性。
 
 您可以从此选项卡中查看以下信息：
 
@@ -187,7 +187,7 @@ ht-degree: 9%
 
 ## 使用规划和设置卡 {#planning-setup}
 
-1. 单击 **视图** 从 **规划和设置** 卡片。 此信息卡提供所有相关内容，帮助您规划和设置AEM迁移。
+1. 从&#x200B;**计划和设置**&#x200B;卡中单击&#x200B;**查看**。 此信息卡提供所有相关内容，帮助您规划和设置AEM迁移。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-view.png)
 
@@ -200,26 +200,26 @@ ht-degree: 9%
 >[!IMPORTANT]
 >仅当在一个项目中上传了多个报告时，才能删除报告。
 
-1. 导航到您的项目并单击 **审核** 从 **最佳实践分析** 中的卡 **准备就绪** 阶段。
+1. 导航到您的项目，然后在&#x200B;**准备工作**&#x200B;阶段的&#x200B;**最佳实践分析**&#x200B;卡中单击&#x200B;**审核**。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. 单击 **...**.
+1. 单击&#x200B;**...**。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
-1. 在下拉列表中，单击 **查看趋势线**，如下图所示。
+1. 在下拉列表中，单击&#x200B;**查看趋势线**，如下图所示。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1b.png)
 
-1. 单击中的“删除”图标 **趋势线报告** 屏幕。
+1. 单击&#x200B;**趋势线报告**&#x200B;屏幕中的删除图标。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
-1. 单击 **删除** 以确认删除。
+1. 单击&#x200B;**删除**&#x200B;以确认删除。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## 后续内容 {#whats-next}
 
-在了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在可以继续查看中的下一步 [实施阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).
+在了解如何登录Cloud Acceleration Manager以及如何创建项目后，您现在已准备好继续查看[实施阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html)的下一步。

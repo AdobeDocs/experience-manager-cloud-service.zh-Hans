@@ -1,6 +1,6 @@
 ---
 title: 管理数字资源的元数据
-description: 了解元数据的类型以及方法 [!DNL Adobe Experience Manager Assets] 帮助管理资源的元数据，从而更轻松地分类和组织资源。 [!DNL Experience Manager] 使根据资源的元数据自动组织和处理资源成为可能。
+description: 了解元数据的类型以及 [!DNL Adobe Experience Manager Assets] 如何帮助管理资源的元数据，以便更轻松地分类和组织资源。 [!DNL Experience Manager] 可以根据资产的元数据自动组织和处理资产。
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management, Metadata
@@ -20,7 +20,7 @@ ht-degree: 9%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
-[!DNL Adobe Experience Manager Assets] 保留每个资源的元数据。 它允许更轻松地分类和组织资产，并帮助查找特定资产的人员。 能够从上载到的文件中提取元数据 [!DNL Experience Manager Assets]，元数据管理与创作工作流集成。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。
+[!DNL Adobe Experience Manager Assets]保留每个资源的元数据。 它允许更轻松地分类和组织资产，并帮助查找特定资产的人员。 由于能够从上载到[!DNL Experience Manager Assets]的文件中提取元数据，因此元数据管理与创意工作流集成。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -38,7 +38,7 @@ ht-degree: 9%
 * 包含它的文件夹的名称。
 * 相关资源或应用的标记。
 
-以上是基本的元数据属性， [!DNL Experience Manager] 可以管理资产，这允许用户查看所有资产。 例如，在尝试发现最近添加或修改的资产时，按上次修改日期对资产排序很有用。
+以上是[!DNL Experience Manager]可以管理的资源的基本元数据属性，允许用户查看所有资源。 例如，在尝试发现最近添加或修改的资产时，按上次修改日期对资产排序很有用。
 
 例如，您可以向数字资产添加更多高级数据：
 
@@ -56,7 +56,7 @@ ht-degree: 9%
 * 更易于管理 - 您可以轻松地找到具有一组相同属性的资源并对其应用更改。
 * 完整 - 元数据越多，资源就能携带更多信息和具体情境。
 
-出于这些原因， [!DNL Assets] 为您提供合适的方法来创建、管理和交换数字资源的元数据。
+出于这些原因，[!DNL Assets]为您提供了创建、管理和交换数字资源元数据的正确方法。
 
 ## 元数据的类型 {#types-of-metadata}
 
@@ -76,10 +76,10 @@ ht-degree: 9%
 
 ### 信息元数据
 
-信息性元数据提供描述性信息以增强对内容的理解，有助于内容发现和搜索。 它包括关键字、字幕和描述。 <br>例如，在Experience Manager Assets中管理视频时，我们可以包含以下信息元数据：
+信息性元数据提供描述性信息以增强对内容的理解，有助于内容发现和搜索。 它包括关键字、字幕和描述。 <br>例如，在Experience Manager Assets中管理视频时，我们可以包括以下信息性元数据：
 
 * **关键字**：营销、产品发布、促销
-* **题注**：介绍我们的最新产品，以及令人兴奋的功能
+* **Caption**：介绍我们的最新产品以及令人兴奋的功能
 * **描述**：视频内容的详细概述。
 
 ### 管理元数据
@@ -127,14 +127,14 @@ The cost of manually creating descriptive metadata information is high. So, stan
 
 可通过多种方式在文件中嵌入元数据。 支持选择编码标准：
 
-* XMP：使用者 [!DNL Assets] 将提取的元数据存储在存储库中。
+* XMP： [!DNL Assets]用来将提取的元数据存储在存储库中。
 * ID3：用于音频和视频文件。
 * Exif：用于图像文件。
-* 其他/旧版：来自 [!DNL Microsoft Word]， [!DNL PowerPoint]， [!DNL Excel]，等等。
+* 其他/旧版：来自[!DNL Microsoft Word]、[!DNL PowerPoint]、[!DNL Excel]等。
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)是一个开放标准，用于 [!DNL Experience Manager Assets] 用于所有元数据管理。 标准提供了可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司都支持XMP标准，因为它提供了丰富的内容模型。 XMP Standard的用户和 [!DNL Experience Manager Assets] 拥有强大的平台进行构建。 有关更多信息，请参阅 [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP)是[!DNL Experience Manager Assets]用于所有元数据管理的开放标准。 标准提供了可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司都支持XMP标准，因为它提供了丰富的内容模型。 XMP Standard和[!DNL Experience Manager Assets]的用户有一个强大的平台可以构建。 有关详细信息，请参阅[XMP](https://www.adobe.com/products/xmp.html)。
 
 ### ID3 {#id}
 
@@ -150,41 +150,41 @@ ID3标记是针对MP3文件格式而设计的。 有关格式的其他信息：
 
 ### Exif {#exif}
 
-可交换图像文件格式(Exif)是数字摄影中最常用的元数据格式。 它提供了一种以多种文件格式(如JPEG、TIFF、RIFF和WAV)嵌入元数据属性的固定词汇的方法。 Exif将元数据存储为元数据名称和元数据值对。 这些元数据名称 — 值对也称为标记，切勿与中的标记混淆。 [!DNL Experience Manager]. 现代数码相机创建Exif元数据并提供现代图形软件支持。 Exif格式是元数据管理（尤其是图像）的最低通用分母。
+可交换图像文件格式(Exif)是数字摄影中最常用的元数据格式。 它提供了一种以多种文件格式(如JPEG、TIFF、RIFF和WAV)嵌入元数据属性的固定词汇的方法。 Exif将元数据存储为元数据名称和元数据值对。 这些元数据名称 — 值对也称为标记，不要与[!DNL Experience Manager]中的标记混淆。 现代数码相机创建Exif元数据并提供现代图形软件支持。 Exif格式是元数据管理（尤其是图像）的最低通用分母。
 
 Exif的一个主要限制是一些流行的图像文件格式(如BMP、GIF或PNG)不支持它。
 
-由Exif定义的元数据字段通常具有技术性质，在描述性元数据管理中的用处有限。 因此， [!DNL Experience Manager Assets] 提供将Exif属性映射到 [通用元数据架构](metadata-schemas.md) 并进入XMP。
+由Exif定义的元数据字段通常具有技术性质，在描述性元数据管理中的用处有限。 因此，[!DNL Experience Manager Assets]提供Exif属性到[通用元数据架构](metadata-schemas.md)和XMP的映射。
 
 #### 其他元数据 {#other-metadata}
 
-可以从文件中嵌入的其他元数据包括 [!DNL Microsoft Word]， [!DNL PowerPoint]， [!DNL Excel]，等等。
+可从文件中嵌入的其他元数据包括[!DNL Microsoft Word]、[!DNL PowerPoint]、[!DNL Excel]等。
 
 ## 管理数字资源的元数据 {#manage-assets-metadata}
 
-通过Enterprise Manager Assets，可以同时编辑多个资源的元数据，以便快速将常见的元数据更改批量传播到资源。 使用 [!UICONTROL 属性] 页面以将元数据属性更改为公共值或者添加或修改标记。 要自定义元数据属性页面，包括添加、修改和删除元数据属性，请使用架构编辑器。
+通过Enterprise Manager Assets，可以同时编辑多个资源的元数据，以便快速将常见的元数据更改批量传播到资源。 使用[!UICONTROL 属性]页面将元数据属性更改为通用值或者添加或修改标记。 要自定义元数据属性页面，包括添加、修改和删除元数据属性，请使用架构编辑器。
 
 >[!NOTE]
 >
->批量编辑方法适用于文件夹或收藏集中可用的资产。 对于跨文件夹可用的资源或符合通用条件的资源，可以 [搜索后批量更新元数据](/help/assets/search-assets.md#metadata-updates).
+>批量编辑方法适用于文件夹或收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索](/help/assets/search-assets.md#metadata-updates)后[批量更新元数据。
 
 1. 导航到要编辑的资源的位置。
 1. 选择要编辑其公共属性的资源。
-1. 在工具栏中，选择 **[!UICONTROL 属性]** 以打开 [!UICONTROL 属性] 页面。
+1. 从工具栏中，选择&#x200B;**[!UICONTROL 属性]**&#x200B;以打开所选资源的[!UICONTROL 属性]页面。
 
    >[!NOTE]
    >
-   >选择多个资源时，将为资源选择最低的常用父表单。 换句话说， [!UICONTROL 属性] 页面仅显示跨以下各项公用的元数据字段： [!UICONTROL 属性] 所有单个资产的页面。
+   >选择多个资源时，将为资源选择最低的常用父表单。 换句话说，[!UICONTROL 属性]页面仅显示所有单独资源的[!UICONTROL 属性]页面中通用的元数据字段。
 
 1. 在各种选项卡下修改所选资源的元数据属性。
 1. 要查看特定资源的元数据编辑器，请取消选择列表中剩余的资源。 使用特定资源的元数据填充元数据编辑器字段。
 
    >[!NOTE]
    >
-   >* 在 [!UICONTROL 属性] 页面上，您可以通过取消选择来从资产列表中删除资产。 默认情况下，资源列表已选择所有资源。 您从列表中删除的资产元数据不会更新。
-   >* 在资源列表的顶部，选中附近的复选框 **[!UICONTROL 标题]** ，可在选择资源和清除列表之间切换。
+   >* 在[!UICONTROL 属性]页面中，您可以通过取消选择从资产列表中删除资产。 默认情况下，资源列表已选择所有资源。 您从列表中删除的资产元数据不会更新。
+   >* 在资源列表顶部，选中&#x200B;**[!UICONTROL 标题]**&#x200B;附近的复选框，以在选择资源和清除列表之间切换。
 
-1. 要为资源选择其他元数据架构，请选择 **[!UICONTROL 设置]** 从工具栏中，然后选择所需的架构。 保存更改。
+1. 要为资源选择其他元数据架构，请从工具栏中选择&#x200B;**[!UICONTROL 设置]**，然后选择所需的架构。 保存更改。
 1. 要将新元数据与现有元数据追加到包含多个值的字段中，请选择&#x200B;**[!UICONTROL 追加模式]**。如果不选中此选项，则新元数据将替换字段中的现有元数据。选择&#x200B;**[!UICONTROL 提交]**。
 
    >[!CAUTION]
@@ -193,9 +193,9 @@ Exif的一个主要限制是一些流行的图像文件格式(如BMP、GIF或PNG
 
 ## 使用处理配置文件的自定义元数据 {#metadata-compute-service}
 
-Assets as a [!DNL Cloud Service] 可以使用云原生服务为资源生成自定义元数据。 配置处理配置文件以生成自定义元数据。 请参阅 [如何使用处理配置文件](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Assets as a [!DNL Cloud Service]可以使用云原生服务为资源生成自定义元数据。 配置处理配置文件以生成自定义元数据。 请参阅[如何使用处理配置文件](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
 
-![处理配置文件中的元数据演绎版](assets/processing-profile-metadata.png)
+处理配置文件中的![元数据演绎版](assets/processing-profile-metadata.png)
 
 >[!TIP]
 >
@@ -216,40 +216,40 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 元数据架构是可在各种应用程序中使用的元数据属性定义的预定义集。 属性始终与资产关联，这意味着属性与资源“关于”。
 
-如果不存在符合您需求的元数据架构，您还可以设计自己的元数据架构。 不要复制现有信息。 在组织内，将架构分隔开可以更轻松地共享元数据。 [!DNL Experience Manager] 为您提供最常用元数据架构的默认列表。 列表可帮助您快速启动元数据策略并快速选择所需的元数据属性。
+如果不存在符合您需求的元数据架构，您还可以设计自己的元数据架构。 不要复制现有信息。 在组织内，将架构分隔开可以更轻松地共享元数据。 [!DNL Experience Manager]为您提供了一个最常用元数据架构的默认列表。 列表可帮助您快速启动元数据策略并快速选择所需的元数据属性。
 
 下面列出了支持的元数据架构。
 
 ### 标准元数据 {#standard-metadata}
 
-* DC - [!DNL Dublin Core] 是一组重要且广泛使用的元数据。
+* DC - [!DNL Dublin Core]是一组重要且广泛使用的元数据。
 * DICOM — 医学数字成像和通信。
-* `Iptc4xmpCore` 和 `iptc4xmpExt`  — 国际新闻通讯标准包含许多特定主题的元数据。
+* `Iptc4xmpCore`和`iptc4xmpExt` — 国际新闻通讯标准包含许多特定于主题的元数据。
 * RDF — 资源描述框架 — 用于通用语义Web元数据。
-* XMP - [!DNL Extensible Metadata Platform].
-* `xmpBJ`  — 基本作业票证。
+* XMP - [!DNL Extensible Metadata Platform]。
+* `xmpBJ` — 基本作业票证。
 
 ### 特定于应用程序的元数据 {#application-specific-metadata}
 
-特定于应用程序的元数据包括技术和描述性元数据。 如果使用此类元数据，则其他应用程序可能无法使用该元数据。 例如，其他图像渲染应用程序可能无法访问 [!DNL Adobe Photoshop] 元数据。 您可以创建工作流步骤，将特定于应用程序的资产更改为标准资产。
+特定于应用程序的元数据包括技术和描述性元数据。 如果使用此类元数据，则其他应用程序可能无法使用该元数据。 例如，其他图像渲染应用程序可能无法访问[!DNL Adobe Photoshop]元数据。 您可以创建工作流步骤，将特定于应用程序的资产更改为标准资产。
 
-* ACDSee — 由管理的元数据 [!DNL ACDSee] 程序。 请参阅 [www.acdsee.com/](https://www.acdsee.com/).
-* 专辑 —  [!DNL Adobe Photoshop Album].
-* CQ — 使用者 [!DNL Experience Manager Assets].
-* DAM — 使用者 [!DNL Experience Manager Assets].
-* DEX - [Optima SC说明资源管理器](https://www.optimasc.com/products/dex/index.html) 是用于Windows操作系统的元数据和文件管理的工具集合。
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
-* LR - [!DNL Adobe Lightroom].
-* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
+* ACDSee - [!DNL ACDSee]程序管理的元数据。 请参阅[www.acdsee.com/](https://www.acdsee.com/)。
+* 相册 — [!DNL Adobe Photoshop Album]。
+* CQ — 由[!DNL Experience Manager Assets]使用。
+* DAM - [!DNL Experience Manager Assets]使用。
+* DEX - [Optima SC Description资源管理器](https://www.optimasc.com/products/dex/index.html)是用于Windows操作系统的元数据和文件管理的工具集合。
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html)。
+* LR - [!DNL Adobe Lightroom]。
+* MediaPro - [iView媒体专业](https://en.wikipedia.org/wiki/Phase_One_Media_Pro)。
 * MicrosoftPhoto和MP - Microsoft Photo。
 * PDF和PDF/X。
-* Photoshop和psAux - [!DNL Adobe Photoshop].
+* Photoshop和psAux - [!DNL Adobe Photoshop]。
 
 ### Digital Rights Management元数据 {#digital-rights-management-metadata}
 
-* 抄送 —  [!DNL Creative Commons].
+* 抄送 — [!DNL Creative Commons]。
 * [!DNL XMPRights]。
-* 加 —  [图片授权通用系统](https://www.useplus.com).
+* 加号 — [图片授权通用系统](https://www.useplus.com)。
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
 * PRL — 棱镜权限语言。
 * PUR - PRISM使用权限。
@@ -258,21 +258,21 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 ### 特定于照片的元数据 {#photography-specific-metadata}
 
 * Exif — 摄像头提供的技术信息，包括GPS位置。
-* CRS - [!DNL Camera Raw] 架构。
-* `iptc4xmpCore` 和 `iptc4xmpExt`.
+* CRS - [!DNL Camera Raw]架构。
+* `iptc4xmpCore`和`iptc4xmpExt`。
 * TIFF — 图像元数据(不仅适用于TIFF图像)。
 
 ### 打印特定的元数据 {#print-specific-metadata}
 
 * PDF和PDF/X - Adobe PDF和第三方应用程序。
 <!--THIS LINK IS 404 WITH NO SUITABLE REPLACEMENT * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata). -->
-* XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG`  — 分页文本的XMP元数据。
+* XMP - [!DNL Extensible Metadata Platform]。
+* `xmpPG` — 分页文本的XMP元数据。
 
 ### 特定于多媒体的元数据 {#multimedia-specific-metadata}
 
-* `xmpDM` - [!DNL Dynamic Media].
-* `xmpMM`  — 介质管理。
+* `xmpDM` - [!DNL Dynamic Media]。
+* `xmpMM` — 媒体管理。
 
 ## 元数据驱动的工作流 {#metadata-driven-workflows}
 
@@ -280,7 +280,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 
 * 工作流可以检查图像是否具有标题。 如果不包含，系统会通知您添加标题。
 * 工作流可以检查资产上的版权声明是否允许分发。 因此，系统会将资产发送到一台服务器或另一台服务器。
-* 工作流可以检查没有预定义、强制性元数据的资产，或者检查具有 *无效* 元数据。
+* 工作流可以检查没有预定义的强制性元数据的资源或具有&#x200B;*无效*&#x200B;元数据的资源。
 
 **另请参阅**
 

@@ -49,7 +49,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 >[!TIP]
 >
->Adobe提供 [GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) 响应布局的基础之上，作为前端开发人员可以使用的参考，例如在为将来的AEM站点创建静态AEM模型时，允许他们在AEM之外使用HTML网格。
+>Adobe提供了响应式布局的[GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)，前端开发人员可以参考该文档，以便在AEM之外使用AEM网格，例如，在为将来的AEM站点创建静态HTML模型时。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ AEM 让您根据设备的宽度定义布局：
 
    模拟器工具栏会显示其他布局选项：
 
-   * **旋转设备**  — 允许您将设备从垂直（纵向）方向旋转到水平（横向）方向，反之亦然。
+   * **旋转设备** — 允许您将设备从垂直（纵向）方向旋转到水平（横向）方向，反之亦然。
 
    ![旋转设备横向按钮](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
    ![旋转设备纵向按钮](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
@@ -136,14 +136,14 @@ AEM 让您根据设备的宽度定义布局：
 >
 >如果布局容器尚不可用，则必须为段落系统/页面显式激活&#x200B;**布局容器**。<!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。从此处，您可以将其拖动到页面上的所需位置，之后您可以看到 **将组件拖动到此处** 占位符。
+1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)。从此处，您可以将其拖动到页面上的所需位置，之后您可以看到&#x200B;**将组件拖动到此处**&#x200B;占位符。
 1. 接下来，您可以向布局容器中添加组件。这些组件将存放实际的内容：
 
    ![布局容器](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
 ## 选择布局容器并对其执行操作（编辑模式） {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-与其他组件一样，您可以先选择布局容器，然后再对其执行剪切、复制、删除等操作 **编辑** 模式)：
+与其他组件一样，您可以先选择布局容器，然后再对其执行剪切、复制、删除等操作（在&#x200B;**编辑**&#x200B;模式下）：
 
 >[!CAUTION]
 >
@@ -202,7 +202,7 @@ AEM 让您根据设备的宽度定义布局：
 
   ![隐藏组件](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* 在 **布局** 模式您可以选择 **将组件拖动到此处** 以选择整个组件。 此时会显示该模式的工具栏。
+* 在&#x200B;**布局**&#x200B;模式下，您可以选择&#x200B;**将组件拖动到此处**&#x200B;以选择整个组件。 此时会显示该模式的工具栏。
 
   根据布局组件的状态及属于该布局的组件，工具栏具有不同的选项。例如：
 

@@ -24,35 +24,35 @@ ht-degree: 1%
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-当您选择热点或图像映射的目标位置时（而不是手动输入），您使用的是选择器。 站点选择器仅在您是 [!DNL Adobe Experience Manager Sites] 客户。 产品选择器还需要 [!DNL Experience Manager Commerce].
+当您选择热点或图像映射的目标位置时（而不是手动输入），您使用的是选择器。 仅当您是[!DNL Adobe Experience Manager Sites]客户时，站点选择器才有效。 产品选择器还需要[!DNL Experience Manager Commerce]。
 
 ## 在Dynamic Media中选择产品 {#selecting-products}
 
 当您希望热点或图像映射为您的产品目录中的特定产品提供概览时，请使用产品选择器来选择产品。
 
-1. 导航到传送集、交互式图像或交互式视频，然后选择 **[!UICONTROL 操作]** 选项卡（仅当您定义了热点或图像映射时可用）。
+1. 导航到传送集、交互式图像或交互式视频，然后选择&#x200B;**[!UICONTROL 操作]**&#x200B;选项卡（仅当您定义了热点或图像映射时可用）。
 
-   产品选择器位于 **[!UICONTROL 操作类型]** 区域。
+   产品选择器位于&#x200B;**[!UICONTROL 操作类型]**&#x200B;区域。
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. 选择 **[!UICONTROL 产品选择器]** 图标（放大镜）并导航到目录中的产品。
+1. 选择&#x200B;**[!UICONTROL 产品选择器]**&#x200B;图标（放大镜）并导航到目录中的产品。
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   您可以通过点按按按关键字或标记进行过滤 **[!UICONTROL 筛选]** 和输入关键字，或选择标记，或同时选择两者。
+   您可以通过点按&#x200B;**[!UICONTROL 过滤器]**&#x200B;并输入关键字，或选择标记，或同时选择这两种方式，按关键字或标记进行过滤。
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以更改位置 [!DNL Experience Manager] 通过点按浏览产品数据 **[!UICONTROL 浏览]** 并导航到其他文件夹。
+   您可以通过点按&#x200B;**[!UICONTROL 浏览]**&#x200B;并导航到其他文件夹来更改[!DNL Experience Manager]浏览产品数据的位置。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   选择 **[!UICONTROL 排序方式]** 更改是否 [!DNL Experience Manager] 按“最新到最旧”或“最旧到最新”排序。
+   选择&#x200B;**[!UICONTROL 排序方式]**&#x200B;以更改[!DNL Experience Manager]是按最新到最旧还是最旧到最新排序。
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   选择 **[!UICONTROL 查看方式]** 更改查看产品的方式 —  **[!UICONTROL 列表视图]** 或 **[!UICONTROL 卡片视图]**.
+   选择&#x200B;**[!UICONTROL 查看方式]**&#x200B;以更改您查看产品的方式 — **[!UICONTROL 列表视图]**&#x200B;或&#x200B;**[!UICONTROL 卡片视图]**。
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -60,21 +60,21 @@ ht-degree: 1%
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. 时间 **[!UICONTROL 预览]** 模式，您可以选择热点或图像映射，并查看概览的显示方式。
+1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下时，您可以选择热点或图像映射，并查看概览的显示方式。
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
 ## 在Dynamic Media中选择站点 {#selecting-sites}
 
-当您希望热点或图像映射链接到在中管理的网页时，可使用站点选择器来选择网页 [!DNL Experience Manager] 站点。
+当您希望热点或图像映射链接到[!DNL Experience Manager]站点内管理的网页时，可使用站点选择器来选择网页。
 
-1. 导航到传送集、交互式图像或交互式视频，然后选择 **[!UICONTROL 操作]** 选项卡（仅当您定义了热点或图像映射时可用）。
+1. 导航到传送集、交互式图像或交互式视频，然后选择&#x200B;**[!UICONTROL 操作]**&#x200B;选项卡（仅当您定义了热点或图像映射时可用）。
 
    站点选择器位于&#x200B;**[!UICONTROL 操作类型]**&#x200B;区域。
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. 选择 **[!UICONTROL 站点选择器]** 图标（带放大镜的文件夹）并导航到 [!DNL Experience Manager] 要将热点或图像映射链接到的网站。
+1. 选择&#x200B;**[!UICONTROL 站点选择器]**&#x200B;图标（带放大镜的文件夹），然后导航到[!DNL Experience Manager]站点中要将热点或图像映射链接到的页面。
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -82,30 +82,30 @@ ht-degree: 1%
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 时间 **[!UICONTROL 预览]** 模式如果选择热点或图像映射，请导航到 [!DNL Experience Manager] 指定的网站页面。
+1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，如果您选择热点或图像映射，请导航到您指定的[!DNL Experience Manager]网站页面。
 
 ## 在Dynamic Media中选择资源 {#selecting-assets}
 
-使用此选择器可选择要在轮播横幅、交互式视频、图像集、混合媒体集和旋转集中使用的图像。 在交互式视频中，当您选择资产选择器时，该资产选择器可用 **[!UICONTROL 选择资源]** 在 **[!UICONTROL 内容]** 选项卡。 在轮播集中，创建幻灯片时可以使用资源选择器。 在图像集、混合媒体集和旋转集中，当您分别创建图像集、混合媒体集或旋转集时，资产选择器可用。
+使用此选择器可选择要在轮播横幅、交互式视频、图像集、混合媒体集和旋转集中使用的图像。 在交互式视频中，当您在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL 选择Assets]**&#x200B;时，资产选择器可用。 在轮播集中，创建幻灯片时可以使用资源选择器。 在图像集、混合媒体集和旋转集中，当您分别创建图像集、混合媒体集或旋转集时，资产选择器可用。
 
-另请参阅 [资产选取器](/help/assets/search-assets.md#asset-selector) 以了解更多信息。
+有关详细信息，另请参阅[资产选取器](/help/assets/search-assets.md#asset-selector)。
 
-1. 导航到传送集并创建幻灯片。 或者，导航到交互式视频，转到 **[!UICONTROL 内容]** 选项卡，然后选择资源。 或者，创建混合媒体集、图像集或旋转集。
-1. 选择 **[!UICONTROL 资源选择器]** 图标（带放大镜的文件夹）并导航到资产。
+1. 导航到传送集并创建幻灯片。 或者，导航到交互式视频，转到&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡，然后选择资源。 或者，创建混合媒体集、图像集或旋转集。
+1. 选择&#x200B;**[!UICONTROL 资产选择器]**&#x200B;图标（带放大镜的文件夹）并导航到资产。
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   通过点按按按关键字或标记过滤 **[!UICONTROL 筛选]** 和输入关键字，或添加条件，或同时输入两者。
+   通过点按&#x200B;**[!UICONTROL 筛选器]**&#x200B;并输入关键字或添加条件，或同时按关键字或标记进行筛选。
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   您可以更改位置 [!DNL Experience Manager] 通过导航到 **[!UICONTROL 路径]** 字段。
+   您可以通过导航到&#x200B;**[!UICONTROL 路径]**&#x200B;字段中的其他文件夹来更改[!DNL Experience Manager]浏览资产的位置。
 
-   选择 **[!UICONTROL 收藏集]** 以仅搜索收藏集中的资产。
+   选择&#x200B;**[!UICONTROL 收藏集]**&#x200B;以仅搜索收藏集中的资源。
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   选择 **[!UICONTROL 查看方式]** 更改查看产品的方式 —  **[!UICONTROL 列表视图]**， **[!UICONTROL 列视图]**，或 **[!UICONTROL 卡片视图]**.
+   选择&#x200B;**[!UICONTROL 查看方式]**&#x200B;以更改您查看产品的方式 — **[!UICONTROL 列表视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 卡片视图]**。
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 

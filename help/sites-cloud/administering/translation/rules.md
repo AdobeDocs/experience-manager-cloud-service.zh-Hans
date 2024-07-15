@@ -26,7 +26,7 @@ ht-degree: 93%
 
 如果&#x200B;**为翻译启用内容模型字段**&#x200B;选项已激活，AEM 将使用[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)上的&#x200B;**可翻译**&#x200B;字段来确定是否要翻译该字段并相应地自动创建翻译规则。 此选项取代了您可能已创建的任何翻译规则，无需干预或附加步骤。
 
-如果要使用翻译规则来翻译内容片段，请 **为翻译启用内容模型字段** 必须禁用翻译集成框架配置上的选项，并且您需要执行下面列出的步骤来创建规则。
+如果要使用翻译规则来翻译内容片段，必须禁用翻译集成框架配置上的&#x200B;**为翻译启用内容模型字段**&#x200B;选项，并且您需要执行下面列出的步骤来创建规则。
 
 ## 概述 {#overview}
 
@@ -168,7 +168,7 @@ ht-degree: 93%
 
    ![添加翻译上下文](../assets/add-translation-context.png)
 
-1. 使用路径浏览器选择所需的上下文，然后选择 **确认** 按钮进行保存。
+1. 使用路径浏览器选择所需的上下文，然后选择要保存的&#x200B;**确认**&#x200B;按钮。
 
    ![选择上下文](../assets/select-context.png)
 
@@ -215,7 +215,7 @@ ht-degree: 93%
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** 用于没有文本但有语言代码的属性，例如， `jcr:language`. 用户不会翻译文本，而是进行从源到目标的语言区域设置。不会发送此类属性进行翻译。
+**`updateDestinationLanguage`**&#x200B;用于没有文本但有语言代码的属性，例如`jcr:language`。 用户不会翻译文本，而是进行从源到目标的语言区域设置。不会发送此类属性进行翻译。
 
 在 UI 中，您可以在&#x200B;**属性**&#x200B;选项卡中选中/取消选中 **Translate** 来修改此值，但目标对象是将语言代码作为值的特定属性
 

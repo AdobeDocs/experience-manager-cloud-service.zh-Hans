@@ -16,4 +16,4 @@ ht-degree: 7%
 
 自2017年1月31日起，对Flash查看器平台的支持将正式终止服务。
 
-请参阅 [Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) 适用于最新支持的查看器。
+有关最新支持的查看器，请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。

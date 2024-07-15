@@ -8,8 +8,8 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 2%
+source-wordcount: '396'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 自适应表单片段是一组字段，或包含一组可在创建表单时使用的字段的面板。 它可让您轻松快速地创建表单。 您可以使用侧边栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单编辑器中编辑该表单片段。
 
-对于自适应Forms作者，参考片段在以下位置提供： [!DNL AEM Forms] 包 [[!DNL AEM FORMS] 引用片段](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). 它包括以下片段：
+对于自适应Forms作者，[!DNL AEM Forms]包[[!DNL AEM FORMS] 参考片段](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS)中提供了参考片段。 它包括以下片段：
 
 * 地址
 * 联系信息
@@ -31,9 +31,9 @@ ht-degree: 2%
 * 条款和条件
 * 带涂鸦的条款和条件
 
-安装包时，将在Forms和文档下创建一个包含引用片段的引用片段文件夹。 有关安装软件包，请参见 [通过Cloud Manager和包管理器部署内容包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) 和 [如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+安装包时，将在Forms和文档下创建一个包含引用片段的引用片段文件夹。 若要安装包，请参阅[通过Cloud Manager和包管理器部署内容包](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager)和[如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
-![列出所有片段](assets/ootb-frags.png)
+![列出了所有片段](assets/ootb-frags.png)
 
 ## 地址 {#address}
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 包含用于捕获电话号码和电子邮件地址的字段。
 
-![联系信息片段](assets/contact-info.png)
+![联系人信息片段](assets/contact-info.png)
 
 <!--[Click to enlarge
 
@@ -124,7 +124,7 @@ ht-degree: 2%
 
 指定用户在提交表单前接受和签名的条款和条件。
 
-![带涂鸦的条款和条件](assets/tnc-scribble.png)
+![涂鸦条款和条件](assets/tnc-scribble.png)
 
 <!--[Click to enlarge
 

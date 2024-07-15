@@ -47,7 +47,7 @@ ht-degree: 80%
       * [预览模式](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [以发布的形式查看](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* 无法从页面编辑器启动/创建版本。 此操作现在可以从以下位置完成： **站点** 控制台(通过 **创建** 或 [时间线](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) （对于所选资源）。
+* 无法从页面编辑器启动/创建版本。 此操作现在可以从&#x200B;**站点**&#x200B;控制台完成（通过对所选资源执行&#x200B;**创建**&#x200B;或[时间轴](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)）。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ ht-degree: 80%
 
 1. 打开&#x200B;**Sites**&#x200B;控制台（使用&#x200B;**全局导航**&#x200B;中的[ Sites ](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)选项 - 它会在您选择 Adobe Experience Manager（左上方）链接时以下拉菜单的形式触发）。
 
-1. 通过点按/单击相应的页面，在树中向下导航。 页面资源的显示方式取决于您所使用的视图 —  [卡片、列表或列](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)：
+1. 通过点按/单击相应的页面，在树中向下导航。 页面资源的显示方式取决于您使用的视图 — [卡片、列表或列](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)：
 
    ![查看选择下拉列表](/help/sites-cloud/authoring/assets/views.png)
 
@@ -76,7 +76,7 @@ ht-degree: 80%
 
 ### 创建新页面 {#creating-a-new-page}
 
-至 [创建页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)：
+要[创建页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)：
 
 1. [导航到要创建新页面的位置](#finding-your-page)。
 1. 使用&#x200B;**创建**&#x200B;图标，然后从列表中选择&#x200B;**页面**：
@@ -114,7 +114,7 @@ ht-degree: 80%
 
 [快速操作](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)可用：
 
-1. [导航到页面](#finding-your-page) 你想采取行动。
+1. [导航到要执行操作的页面](#finding-your-page)。
 1. 将鼠标指针悬停在代表所需资源的卡片上方。快速操作会显示：
 
    ![卡片操作](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -160,11 +160,11 @@ ht-degree: 80%
    * 通过以下任一方式[移动组件](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component)：
 
       * 将所需组件拖动到新位置。
-      * 通过选择打开组件工具栏。 使用 **剪切** 则 **粘贴** 所需的图标。
+      * 通过选择打开组件工具栏。 必要时使用&#x200B;**剪切**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
 
    * [复制（并粘贴）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
-      * 通过选择打开组件工具栏。 使用 **复制** 则 **粘贴** 图标。
+      * 通过选择打开组件工具栏。 根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ ht-degree: 80%
 
    * [删除](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)组件：
 
-      * 通过选择打开组件工具栏，然后使用 **删除** 图标。
+      * 通过选择打开组件工具栏，然后使用&#x200B;**删除**&#x200B;图标。
 
    * 向页面[添加注释](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations)：
 
@@ -302,7 +302,7 @@ ht-degree: 80%
 
    ![时间线视图选项](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. 选择“时间轴”列右下方的省略号以显示其他按钮，包括 **另存为版本**.
+1. 选择“时间轴”列右下方的省略号以显示其他按钮，包括&#x200B;**另存为版本**。
 
    ![时间线视图](/help/sites-cloud/authoring/assets/timeline-view.png)
 

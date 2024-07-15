@@ -22,7 +22,7 @@ ht-degree: 80%
 
 ## 证书要求 {#certificate-requirements}
 
-查看部分 **证书要求** 文档的 [管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) 以确保AEMas a Cloud Service支持您要添加的证书。
+查看文档[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)的&#x200B;**证书要求**&#x200B;部分，以确保AEM as a Cloud Service支持您要添加的证书。
 
 ## 添加证书 {#adding-a-cert}
 
@@ -34,11 +34,11 @@ ht-degree: 80%
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 单击 **SSL证书** 从左侧导航面板中。 主屏幕上显示一个包含任何现有 SSL 证书详细信息的表。
+1. 从左侧导航面板中单击&#x200B;**SSL证书**。 主屏幕上显示一个包含任何现有 SSL 证书详细信息的表。
 
    ![添加 SSL 证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. 单击 **添加SSL证书** 以打开 **添加SSL证书** 对话框。
+1. 单击&#x200B;**添加SSL证书**&#x200B;以打开&#x200B;**添加SSL证书**&#x200B;对话框。
 
    * 在&#x200B;**证书名称**&#x200B;中输入证书名称。
       * 这仅供参考，可以是任何有助于您轻松引用证书的名称。
@@ -63,7 +63,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->如果您收到类似于的错误 `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`中，您可能已将客户端证书包含在证书链中。 请确保该链不包含客户端证书，然后重试。
+>如果收到类似于`The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`的错误，则可能已将客户端证书包含在证书链中。 请确保该链不包含客户端证书，然后重试。
 
 ## 证书错误 {#certificate-errors}
 

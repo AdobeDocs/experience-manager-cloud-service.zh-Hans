@@ -72,10 +72,10 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->在配置要用于活动副本的页面属性时，请参阅 [扩展多站点管理器](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) 以了解更多详细信息。
+>在配置页面属性以与活动副本一起使用时，有关更多详细信息，请参阅[扩展多站点管理器](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties)。
 
 ## 页面属性的示例配置 {#sample-configuration-of-page-properties}
 
 该示例演示了[ Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)的对话框差异技术，其中包括使用 [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties)。它还说明了 `cq:showOnCreate` 和 `cq:hideOnEdit` 的用法。
 
-您可以在此页面中找到代码： [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).
+您可以在[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)上找到此页面的代码。

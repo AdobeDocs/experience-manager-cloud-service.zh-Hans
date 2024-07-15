@@ -35,7 +35,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->如果将文件夹结构上传到“资产”视图，则无需使用该文件夹结构创建.ZIP文件，您可以直接上传文件夹结构。 上传到“资产”视图的.ZIP文件存储为一个ZIP资产，上传后不会自动提取。
+>如果将文件夹结构上传到Assets视图，则无需使用该文件夹结构创建.ZIP文件，您可以直接上传文件夹结构。 上传到Assets视图的.ZIP文件存储为一个ZIP资源，上传后不会自动提取。
 
 ## 查看上传进度和状态 {#upload-progress}
 
@@ -83,7 +83,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->您可以在中直接将资源上传到DAM存储库 [!DNL Creative Cloud] 桌面应用程序。
+>您可以在[!DNL Creative Cloud]桌面应用程序中直接将资源上传到DAM存储库。
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -102,7 +102,7 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在“资源”视图中上传资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
+* [观看视频，了解如何在Assets视图中上传资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 

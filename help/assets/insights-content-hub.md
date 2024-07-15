@@ -1,6 +1,6 @@
 ---
 title: 在Content Hub中查看资产分析
-description: 了解如何在中查看资产分析 [!DNL Content Hub]
+description: 了解如何在 [!DNL Content Hub]中查看资产分析
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
@@ -9,21 +9,21 @@ ht-degree: 0%
 
 ---
 
-# Assets见解 [!DNL Content Hub] {#assets-insights}
+# [!DNL Content Hub]中的Assets分析 {#assets-insights}
 
-![Assets insights](assets/asset-insights-banner.jpg)
+![Assets分析](assets/asset-insights-banner.jpg)
 
-[!DNL Content Hub] 提供对资产的宝贵见解，解决营销利益相关者经常遇到的常见挑战 — 营销活动、渠道和不同区域中使用的资产使用情况统计数据。 通过清楚地了解资产的性能和受欢迎程度，它可提供对增强用户体验必不可少的可操作洞察。
+[!DNL Content Hub]提供了有关资产的宝贵见解，解决了营销利益相关者经常遇到的共同挑战 — 营销活动、渠道和不同区域中使用的资产使用情况统计数据。 通过清楚地了解资产的性能和受欢迎程度，它可提供对增强用户体验必不可少的可操作洞察。
 
 ## 先决条件 {#prerequisites}
 
-[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users) 可以执行本文中提到的操作。
+[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users)可以执行本文中提到的操作。
 
 ## 查看已上传资源的统计信息{#view-statistics-for-uploaded-assets}
 
-您可以通过导航到 **[!UICONTROL Insights]** 选项卡。 使用每年、每月和每日资源上传视图跟踪资源的上传历史记录。
+您可以通过导航到&#x200B;**[!UICONTROL 分析]**&#x200B;选项卡来查看已上传资产和收藏集的统计信息。 使用每年、每月和每日资源上传视图跟踪资源的上传历史记录。
 
-![上传资源统计数据](assets/assets-insights.jpg)
+![上传资源统计信息](assets/assets-insights.jpg)
 
 <!-- You can track the upload history of your assets over the past 30 days or gain a more comprehensive view with data spanning the last 12 months. This feature enables you to evaluate the upload count of assets.  -->
 
@@ -45,8 +45,8 @@ Data for the selected time frame is displayed, including the upload count for th
 
 您还可以查看：
 
-* **按日期和月份列出的活动用户**：按日或月列出的使用折线图表示的活动用户数。
-* **[!UICONTROL Assets（按营销活动）]**：资源计数以及基于营销活动的相应百分比。
-* **[!UICONTROL Assets（按渠道）]**：资产数量和基于所用渠道的各个百分比。
-* **[!UICONTROL Assets（按地区）]**：根据资源使用区域，资源计数和各自的百分比。
+* **按日期和月份列出的活动用户**：按日期或月份列出的使用折线图表示的活动用户数。
+* **[!UICONTROL 按营销活动列出的Assets]**：资源计数以及基于营销活动的相应百分比。
+* **[!UICONTROL 按渠道显示的Assets]**：资源计数以及基于所用渠道的各个百分比。
+* **[!UICONTROL 按地区划分的Assets]**：资源计数以及基于资源使用地区的相应百分比。
 

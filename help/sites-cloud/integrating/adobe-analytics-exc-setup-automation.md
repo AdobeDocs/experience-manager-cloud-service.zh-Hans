@@ -45,15 +45,15 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 ## 如何设置
 
 1. 导航到&#x200B;**Sites**，并选择要与 Adobe Analytics 集成的站点的根。
-1. 展开侧边栏菜单并选择 **设置Analytics**.
+1. 展开侧边栏菜单并选择&#x200B;**设置Analytics**。
 
    这是侧边栏中的一个新选项，它将打开一个面板，该面板为“Experience Cloud设置自动化”提供控件和状态。
-1. 选择 **集成Analytics** 按钮。
+1. 选择&#x200B;**集成Analytics**&#x200B;按钮。
 1. 在生成的对话框中，为&#x200B;**报告包 ID** 提供名称。
 
-   此字符串用于创建 [报表包ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html) 在Adobe Analytics中作为所选AEM站点的Analytics数据的数据存储。 为提供的字符串附加环境和层标识符以确保唯一性。
+   此字符串用于在Adobe Analytics中创建[报表包ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html)作为所选AEM站点的分析数据的数据存储。 为提供的字符串附加环境和层标识符以确保唯一性。
 
-1. 刷新页面和面板，然后选择 **检查集成状态** 以检查自动化的状态。
+1. 刷新页面和面板，然后选择&#x200B;**检查集成状态**&#x200B;以检查自动化的状态。
 
    自动化设置是异步进行的。**查看集成状态**&#x200B;将显示集成的当前状态。
 
@@ -76,7 +76,7 @@ Experience Cloud 设置自动化提供了一种简单且自动化的方式，通
 
 1. 导航到与您的 AEM 站点相同的 IMS 组织中的 Adobe Analytics。
 1. 创建 AEM Sites 的新概述报告，方式是导航到&#x200B;**“报告”**>**“参与”**>**“Adobe Experience Manager”**>**“站点性能概述”**。
-1. 选择 **打开报告**.
+1. 选择&#x200B;**打开报告**。
 1. 选择与上一个实践中使用的报告包名称匹配的&#x200B;**报告包 ID**。
 1. 查看随时间推移流入新模板中的分析数据。
 

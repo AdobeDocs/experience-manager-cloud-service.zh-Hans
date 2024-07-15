@@ -24,18 +24,18 @@ ht-degree: 6%
 
 要为发布层配置自定义域，请执行以下步骤：
 
-1. 转到 **[!UICONTROL AdobeCloud Manager]** > **[!UICONTROL 项目概述]** > **[!UICONTROL SSL证书]**，并添加您的SSL证书。
+1. 转到&#x200B;**[!UICONTROL AdobeCloud Manager]** > **[!UICONTROL 计划概述]** > **[!UICONTROL SSL证书]**，然后添加您的SSL证书。
    ![图像](/help/assets/assets/ssl-certificate.png)
-了解如何添加 [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) 在AdobeCloud Manager中。
+了解如何在AdobeCloud Manager中添加[SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
-1. 添加SSL证书后，添加自定义域。 单击 **[!UICONTROL 域设置]** 并指定针对的自定义域 **[!UICONTROL Publish服务]** 选项。
-了解有关 [自定义域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+1. 添加SSL证书后，添加自定义域。 单击&#x200B;**[!UICONTROL 域设置]**&#x200B;并针对&#x200B;**[!UICONTROL Publish服务]**选项指定自定义域。
+了解有关[自定义域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)的更多信息。
 
-1. 添加2 [CNAME记录](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 在与发布域相对应的DNS记录中。
+1. 在对应于发布域的DNS记录中添加2个[CNAME记录](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)。
 由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。
 
 1. 记录支持案例以促进自定义域的配置，确保它定向到交付层。
 
 >[!NOTE]
 >
-> 确保将自定义域添加到资产选择器的IMS客户端中允许的重定向URL列表中。<br>与相应的Adobe团队协调，通过提供自定义域字符串来执行此任务。
+> 确保将自定义域添加到资产选择器的IMS客户端中允许的重定向URL列表中。<br>通过提供自定义域字符串与相应的Adobe团队协调以执行此任务。

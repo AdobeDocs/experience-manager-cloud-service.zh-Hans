@@ -39,7 +39,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 ## 核心组件 {#core-components}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
 
 它们是使用 AEM 最佳实践构建的，是 AEM 创作体验的基础。开发人员可以轻松扩展核心组件，以满足特定项目需求。
 

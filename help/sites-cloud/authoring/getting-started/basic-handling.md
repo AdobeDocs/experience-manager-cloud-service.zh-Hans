@@ -17,7 +17,7 @@ ht-degree: 89%
 >[!NOTE]
 >
 >* 某些功能并不是在所有控制台中均可用，而且某些控制台可能会提供额外的功能。其他页面中会更详细地介绍有关具体控制台及其相关功能的特定信息。
->* 在整个AEM环境中都可以使用键盘快捷键。 尤其是当 [使用控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) 和 [编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* 在整个AEM环境中都可以使用键盘快捷键。 特别是当[使用控制台](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)和[编辑页面](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)时。
 
 {{edge-delivery-authoring}}
 
@@ -31,7 +31,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ![“导航”面板](/help/sites-cloud/authoring/assets/navigation.png)
 
-为了使您更好地了解 AEM 的基本用法，本文档基于&#x200B;**Sites**&#x200B;控制台进行了介绍。选择于 **站点** 以开始使用。
+为了使您更好地了解 AEM 的基本用法，本文档基于&#x200B;**Sites**&#x200B;控制台进行了介绍。在&#x200B;**站点**&#x200B;上选择以开始。
 
 ## 产品导航 {#product-navigation}
 
@@ -39,7 +39,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ![导航教程](/help/sites-cloud/authoring/assets/tutorial.png)
 
-选择 **下一个** 以进入概述的下一页。 选择 **关闭** 或选择概述对话框外部以关闭。
+选择&#x200B;**下一步**&#x200B;以前进到概述的下一页。 选择&#x200B;**关闭**&#x200B;或在概述对话框之外选择关闭。
 
 该概述将在您下次访问控制台时重新启动，除非您查看所有幻灯片或者选中&#x200B;**不再显示此对话框**&#x200B;选项。
 
@@ -53,7 +53,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 全局导航有两个面板，它们由屏幕左侧的图标来表示：
 
-* **[导航](#navigation-panel)**  — 登录到AEM时由一个指南针和默认面板表示
+* **[导航](#navigation-panel)** — 登录到AEM时由指南针和默认面板表示
 * **[工具](#tools-panel)** – 由一个锤子图标来表示
 
 这些面板中的可用选项如下所述。
@@ -79,7 +79,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ## “工具”面板 {#tools-panel}
 
-在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。“工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资产及内容存储库的其他方面。 <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+在“工具”面板中，有一个侧面板，其中包含一系列类别，这些类别将类似的“工具”控制台组合在一起。“工具”控制台让您可以访问一些专用工具和控制台，帮助您管理网站、数字资产及内容存储库的其他方面。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![“工具”面板](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -171,7 +171,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 * **“控制台”工具栏**
 
-  根据您的位置， **帮助** 图标可打开相应的资源：
+  根据您的位置，**帮助**&#x200B;图标将打开相应的资源：
 
   ![“帮助”图标](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -475,6 +475,6 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ### 过滤器 {#filter}
 
-这将打开一个面板，类似于 [搜索](/help/sites-cloud/authoring/getting-started/search.md) 设置相应的位置筛选器后，允许您进一步筛选要查看的内容。
+这将打开一个与[search](/help/sites-cloud/authoring/getting-started/search.md)类似的面板，其中已设置相应的位置筛选器，允许您进一步筛选要查看的内容。
 
 ![过滤器示例](/help/sites-cloud/authoring/assets/filter.png)

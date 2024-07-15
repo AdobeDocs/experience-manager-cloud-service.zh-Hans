@@ -13,7 +13,7 @@ ht-degree: 79%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版的发行说明 {#release-notes}
 
-以下部分概述了2022.6.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了[!DNL Experience Manager]as a Cloud Service2022.6.0版本的功能发行说明。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 79%
 
 ### [!DNL Sites] 中的新增功能 {#sites-features}
 
-* 新 [用户界面](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) 内容管理员和内容作者现在可以有效地管理（例如发布、取消发布、复制、移动等）、搜索/筛选和为Headless用例创建内容片段。
+* 新的[用户界面](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)现在可供内容管理员和内容作者有效管理（例如发布、取消发布、复制、移动等）、搜索/筛选和为Headless用例创建内容片段。
 
   ![内容片段控制台](/help/release-notes/assets/cf-ui.png)
 
@@ -96,7 +96,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能 [区分图像中�
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 如5月(2022.5.0)发行说明中所述，复制代理管理屏幕中的 **分发** 选项卡已被删除。 应该使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)工作流来复制具有内容树层次结构的包。
+* 如5月(2022.5.0)发行说明中所述，复制代理管理屏幕的&#x200B;**分发**&#x200B;选项卡下的“添加树”选项已删除。 应该使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)工作流来复制具有内容树层次结构的包。
 
 ## Cloud Manager {#cloud-manager}
 

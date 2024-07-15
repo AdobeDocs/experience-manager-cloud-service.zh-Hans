@@ -40,7 +40,7 @@ ht-degree: 71%
 @adobe/universal-editor-cors
 ```
 
-要激活检测，必须将以下导入添加到您的 `index.js`.
+要激活检测，必须将以下导入添加到您的`index.js`。
 
 ```javascript
 import "@adobe/universal-editor-cors";
@@ -56,9 +56,9 @@ import "@adobe/universal-editor-cors";
 
 始终建议使用最新版本，但在发生重大更改时，可以引用服务的先前版本。
 
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST`  — 最新的UE CORS库
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST`  — 版本2.x下最新的UE CORS库
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST`  — 版本2.1.x下最新的UE CORS库
+* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` — 最新的UE CORS库
+* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` — 版本2.x下最新的UE CORS库
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - 2.1.x版下最新的UE CORS库
 * `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` — 精确的UE CORS库版本2.1.1
 
 ## 添加必要的 OSGi 配置 {#osgi-configurations}
@@ -109,9 +109,9 @@ Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikiped
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>`  — 这是使用两个选项进行的连接分类。
-   * `system`  — 对于连接端点
-   * `config`  — 用于 [定义可选配置设置](#configuration-settings)
+* `<category>` — 这是连接的分类，带有两个选项。
+   * `system` — 用于连接端点
+   * `config` — 对于[定义可选配置设置](#configuration-settings)
 * `<referenceName>` – 这是一个短名称，可在文档中重复使用以标识连接。例如 `aemconnection`
 * `<protocol>` – 这表明要使用的 Universal Editor 持久性服务的持久性插件。例如 `aem`
 * `<url>` – 这是保存更改的系统的 URL。例如 `http://localhost:4502`
@@ -165,12 +165,12 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### 配置设置 {#configuration-settings}
 
-您可以使用 `config` 前缀来设置服务和扩展端点（如有必要）。
+如有必要，您可以在连接URN中使用`config`前缀来设置服务和扩展端点。
 
 如果您不希望使用由Adobe托管、但却是您自己的托管版本的通用编辑器服务，则可以在Meta标记中设置此项。 要覆盖通用编辑器提供的默认服务端点，请设置您自己的服务端点：
 
-* 元名称 —  `urn:adobe:aue:config:service`
-* 元内容 —  `content="https://adobe.com"` （示例）
+* 元名称 — `urn:adobe:aue:config:service`
+* 元内容 — `content="https://adobe.com"`（示例）
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
@@ -179,7 +179,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 如果只想为页面启用某些扩展，则可以在Meta标记中设置此项。 要获取扩展，请设置扩展端点：
 
 * 元名称： `urn:adobe:aue:config:extensions`
-* 元内容： `content="https://adobe.com,https://anotherone.com,https://onemore.com"` （示例）
+* 元内容： `content="https://adobe.com,https://anotherone.com,https://onemore.com"`（示例）
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">

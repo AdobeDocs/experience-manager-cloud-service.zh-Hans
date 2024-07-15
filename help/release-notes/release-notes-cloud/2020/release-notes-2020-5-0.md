@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.5.0 发行说明
-description: '"[!DNL Adobe Experience Manager] 2020.5.0版as a Cloud Service发行说明。”'
+description: "[!DNL Adobe Experience Manager]个2020.5.0版as a Cloud Service发行说明。"
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 92%
 
 ---
 
-# AEMas a Cloud Service2020.5.0版发行说明 {#release-notes}
+# AEM as a Cloud Service 2020.5.0发行说明 {#release-notes}
 
 本页面概述了 Experience Manager as a Cloud Service 2020.5.0 版的常规发行说明。
 

@@ -89,7 +89,7 @@ AEM as a Cloud Service 2021.11.0 中的 Cloud Manager 的发布日期是 2021 �
 * 用户现在可以使用新的前端管道专门加速部署前端代码。有关更多信息，请参阅 [Cloud Manager 前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)。
 
   >[!IMPORTANT]
-  >您必须使用AEM版本 `2021.10.5933.20211012T154732Z` 或更高版本以使用新的前端管道。
+  >您必须使用AEM版本`2021.10.5933.20211012T154732Z`或更高版本才能使用新的前端管道。
 
 * 通过以更有效的方式执行代码分析而无需构建整个 AEM 映像，大大缩短了代码质量管道持续时间。此更改将在版本发布后的几周内逐步推出。
 

@@ -26,7 +26,7 @@ ht-degree: 79%
 
 AEM 提供了 [Cloud Manager 质量关卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)集成包，确保对自定义应用程序的顺利更新。 特别是，IT 测试门已支持使用 AEM API 创建和自动化定制测试。
 
-UI 测试被打包为 Docker 映像，以便可选择多种语言和框架（如 Cypress、Selenium、Java 和 Maven 以及 JavaScript）。此外，通过使用，可以轻松生成UI测试项目 [AEM项目原型。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)
+UI 测试被打包为 Docker 映像，以便可选择多种语言和框架（如 Cypress、Selenium、Java 和 Maven 以及 JavaScript）。此外，通过使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，可以轻松生成UI测试项目。
 
 Adobe 建议使用 Cypress，因为它提供实时重新加载和自动等待，而这些功能有助于在测试期间节省时间并提高工作效率。Cypress 还提供一种简单而直观的语法，即使是不熟悉测试的人士也很容易学习和使用。
 
@@ -48,7 +48,7 @@ Adobe 建议使用 Cypress，因为它提供实时重新加载和自动等待，
 
    * 对于 Cypress，请使用来自 [AEM 测试示例存储库](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress)的示例代码。
 
-   * 对于JavaScript和WDIO，请使用中自动生成的示例代码 `ui.tests` Cloud Manager存储库中的文件夹。
+   * 对于JavaScript和WDIO，请使用在Cloud Manager存储库的`ui.tests`文件夹中自动生成的示例代码。
 
      >[!NOTE]
      >
@@ -235,8 +235,8 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 Adobe 测试示例提供了帮助程序函数来访问配置参数：
 
 * Cypress：使用标准函数 `Cypress.env('VARIABLE_NAME')`
-* JavaScript：请参阅 [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) 模块
-* Java：请参阅 [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) 类
+* JavaScript：查看[`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js)模块
+* Java：查看[`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java)类
 
 ### 生成测试报告 {#generate-test-reports}
 
@@ -250,7 +250,7 @@ Docker 映像必须以 JUnit XML 格式生成测试报告，并将其保存在�
 >
 >使用断言而不是仅仅将错误记录到 STDERR 或返回非零退出代码，否则，您的部署管道可能会正常进行。
 >
->如果在测试执行期间使用了HTTP代理，则结果将包括 `request.log` 文件。
+>如果在测试执行期间使用了HTTP代理，则结果将包括`request.log`文件。
 
 ### 前提条件 {#prerequisites}
 
@@ -327,22 +327,22 @@ Docker 映像可能会产生额外的测试输出（例如，屏幕快照或视�
 
 ### 设置HTTP代理
 
-Docker容器的入口点需要检查 `PROXY_HOST` 环境变量。
+Docker容器的入口点需要检查`PROXY_HOST`环境变量的值。
 
 如果此值为空，则无需执行其他步骤，并且无需使用HTTP代理即可执行测试。
 
 如果不为空，则入口点脚本需要：
 
-1. 配置HTTP代理连接以运行UI测试。 这可以通过导出 `HTTP_PROXY` 使用以下值构建的环境变量：
-   * 代理主机，由提供 `PROXY_HOST` 变量
-   * 代理端口，由提供 `PROXY_HTTPS_PORT` 或 `PROXY_HTTP_PORT` 变量（将使用具有非空值的变量）
-2. 设置连接到HTTP代理时将使用的CA证书。 其位置由提供 `PROXY_CA_PATH` 变量。
-   * 这可以通过导出来实现 `NODE_EXTRA_CA_CERTS` 环境变量。
+1. 配置HTTP代理连接以运行UI测试。 这可以通过导出使用以下值生成的`HTTP_PROXY`环境变量来实现：
+   * 代理主机，由`PROXY_HOST`变量提供
+   * 代理端口，由`PROXY_HTTPS_PORT`或`PROXY_HTTP_PORT`变量提供（将使用具有非空值的变量）
+2. 设置连接到HTTP代理时将使用的CA证书。 其位置由`PROXY_CA_PATH`变量提供。
+   * 可通过导出`NODE_EXTRA_CA_CERTS`环境变量来实现这一点。
 3. 等待HTTP代理准备就绪。
-   * 要检查准备情况，请使用环境变量 `PROXY_HOST`， `PROXY_OBSERVABILITY_PORT`， `PROXY_RETRY_ATTEMPTS` 和 `PROXY_RETRY_DELAY` 可以使用。
-   * 您可以使用cURL请求进行检查，并确保在的 `Dockerfile`.
+   * 要检查准备情况，可以使用环境变量`PROXY_HOST`、`PROXY_OBSERVABILITY_PORT`、`PROXY_RETRY_ATTEMPTS`和`PROXY_RETRY_DELAY`。
+   * 您可以使用cURL请求进行检查，并确保在`Dockerfile`中安装cURL。
 
-Cypress示例测试模块的Entrypoint on上提供了实施示例 [GitHub。](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+在[GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)上的Cypress示例测试模块的入口点中可以找到示例实施
 
 ## 特定于播放器的详细信息
 
@@ -354,15 +354,15 @@ Cypress示例测试模块的Entrypoint on上提供了实施示例 [GitHub。](ht
 
 >[!NOTE]
 >
-> 在提供的示例中，我们假定将Chrome用作项目浏览器。
+> 在提供的示例中，我们假定Chrome被用作项目浏览器。
 
-与Cypress类似，如果为非空，则测试需要使用HTTP代理 `PROXY_HOST` 提供了环境变量。
+与Cypress类似，如果提供了非空的`PROXY_HOST`环境变量，则测试需要使用HTTP代理。
 
 为此，需要作出以下修改。
 
 #### Dockerfile
 
-安装cURL和 `libnss3-tools`，它提供 `certutil.`
+安装cURL和`libnss3-tools`，后者提供`certutil.`
 
 ```dockerfile
 RUN apt -y update \
@@ -372,10 +372,10 @@ RUN apt -y update \
 
 #### 入口点脚本
 
-包括一个bash脚本，万一 `PROXY_HOST` 提供的环境变量会执行以下操作：
+包括一个bash脚本，在提供`PROXY_HOST`环境变量时，该脚本将执行以下操作：
 
-1. 导出与代理相关的变量，例如 `HTTP_PROXY` 和 `NODE_EXTRA_CA_CERTS`
-2. 使用 `certutil` 安装chromium的代理CA证书
+1. 导出与代理相关的变量，如`HTTP_PROXY`和`NODE_EXTRA_CA_CERTS`
+2. 使用`certutil`安装chromium的代理CA证书
 3. 等待HTTP代理准备就绪（或失败时退出）。
 
 实施示例：
@@ -409,7 +409,7 @@ fi
 
 #### 播放器配置
 
-修改播放器配置(例如 `playwright.config.js`)以使用代理，以防出现 `HTTP_PROXY` 已设置环境变量。
+修改播放器配置（例如在`playwright.config.js`中）以在设置`HTTP_PROXY`环境变量时使用代理。
 
 实施示例：
 

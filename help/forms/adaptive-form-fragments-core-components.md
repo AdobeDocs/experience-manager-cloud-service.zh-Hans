@@ -32,14 +32,14 @@ ht-degree: 6%
 
 >[!NOTE]
 >
-> 您可以使用轻松为用户自定义片段体验 [表单片段组件的“配置”对话框和“设计”对话框](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> 您可以使用表单片段组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)的[配置对话框和设计对话框轻松自定义用户的片段体验。
 
 ## 创建自适应表单片段 {#create-a-fragment}
 
 您可以从头开始创建自适应表单片段，或将现有自适应表单中的面板另存为片段。 要创建表单片段，请执行以下操作：
 
-1. 登录您的AEM Forms实例，网址为https://[*主机名*]：[*端口*]/aem/forms.html.
-1. 单击 **创建>自适应表单片段**.
+1. 登录您的AEM Forms实例，网址为https://[*主机名*]：[*端口*]/aem/forms.html。
+1. 单击&#x200B;**创建>自适应表单片段**。
 
    ![创建自适应表单片段](/help/forms/assets/adaptive-form-fragment.png)
 
@@ -48,7 +48,7 @@ ht-degree: 6%
 
    为基于核心组件的表单创建表单片段时，使用选择表单主题选项选择基于核心组件的主题。
 
-1. 单击以打开 **表单模型** 选项卡，然后从 **选择自** 下拉菜单，为片段选择以下模型之一：
+1. 单击以打开&#x200B;**表单模型**&#x200B;选项卡，从&#x200B;**选择自**&#x200B;下拉菜单中，为片段选择以下模型之一：
 
    ![在表单模型选项卡中显示模型类型](assets/create-af-1-1.png)
 
@@ -58,14 +58,14 @@ ht-degree: 6%
      >
      > 在自适应Forms中，您可以多次使用单个表单片段（基于核心组件）。 它支持基于无和基于架构的表单片段。
 
-   * **架构**：指定使用上传到AEM Forms的XML或JSON架构创建片段。 您可以上传或从可用的XML或JSON架构中选择作为片段的表单模型。 选择XML架构时，您还可以通过从中选择所选架构中存在的complexType来创建自适应表单片段。 **[!UICONTROL XML结构描述复杂类型]** 下拉框。 选择JSON架构时，您还可以通过从中选择所选架构中存在的架构定义来创建自适应表单片段。 **[!UICONTROL JSON架构定义]** 下拉框。
+   * **架构**：指定使用上载到AEM Forms的XML或JSON架构创建片段。 您可以上传或从可用的XML或JSON架构中选择作为片段的表单模型。 选择XML架构时，您还可以通过从&#x200B;**[!UICONTROL XML架构复杂类型]**&#x200B;下拉框中选择所选架构中存在的complexType来创建自适应表单片段。 选择JSON架构时，您还可以通过从&#x200B;**[!UICONTROL JSON架构定义]**&#x200B;下拉框中选择所选架构中存在的架构定义来创建自适应表单片段。
    * **表单数据模型**：指定使用表单数据模型(FDM)创建片段。 您可以仅基于表单数据模型(FDM)中的一个数据模型对象创建自适应表单片段。 展开表单数据模型(FDM)定义下拉列表。 它列出了指定表单数据模型(FDM)中的所有数据模型对象。 从列表中选择数据模型对象。
 
    ![表单数据模型(FDM)](assets/create-af-3.png)
 
-1. 单击 **创建** 然后单击 **打开** 以在编辑模式下使用默认模板打开片段。 在编辑模式下，您可以将任何自适应表单组件添加到片段。
+1. 单击“**创建**”，然后单击“**打开**”以使用默认模板在编辑模式下打开片段。 在编辑模式下，您可以将任何自适应表单组件添加到片段。
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果选择XML架构作为片段的表单模型，则内容查找器中会显示一个显示表单模型层次结构的新选项卡。 它可让您将表单模型元素拖放到片段上。 <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果选择XML架构作为片段的表单模型，则内容查找器中会显示一个显示表单模型层次结构的新选项卡。 它可让您将表单模型元素拖放到片段上。<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 创建基于架构或表单数据模型(FDM)的自适应表单片段后，表单数据模型(FDM)或架构元素会显示在自适应表单编辑器的内容浏览器的数据源选项卡中。 您可以将表单模型元素拖放到片段上。 添加的表单模型元素转换为表单组件，同时保留关联架构中的原始属性。
 
@@ -75,11 +75,11 @@ ht-degree: 6%
 要将自适应表单片段添加到自适应表单：
 
 1. 在编辑模式下打开自适应表单。
-1. 添加 **自适应表单片段** 组件添加到表单。
-1. 打开的“配置”对话框， **自适应表单片段** 组件。
-1. 选择 **片段引用** 在 **基本** 选项卡。 您的表单可用的所有自适应Forms片段都会显示，具体取决于表单的模型。
+1. 将&#x200B;**自适应表单片段**&#x200B;组件添加到表单中。
+1. 打开&#x200B;**自适应表单片段**&#x200B;组件的“配置”对话框。
+1. 在&#x200B;**基本**&#x200B;选项卡中选择&#x200B;**片段引用**。 您的表单可用的所有自适应Forms片段都会显示，具体取决于表单的模型。
 
-1. 选择自适应表单片段到 **自适应表单片段** 自适应表单上的组件。
+1. 选择自适应表单片段到您的自适应表单上的&#x200B;**自适应表单片段**&#x200B;组件上。
 
    ![选择自适应表单片段选项](/help/forms/assets/adaptive-form-fragment-basic.png)
 
@@ -135,7 +135,7 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
 
 1. 转到 `https://[hostname]/aem/forms.html`.
 
-1. 单击 **选择** 在AEM Forms UI工具栏中，选择一个自适应表单片段。 工具栏显示您可以对选定的自适应表单片段执行的以下操作。
+1. 单击AEM Forms UI工具栏中的&#x200B;**选择**，然后选择自适应表单片段。 工具栏显示您可以对选定的自适应表单片段执行的以下操作。
 
 <table>
  <tbody>
@@ -149,19 +149,19 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
   </tr>
    <tr>
    <td><p>预览</p> </td>
-   <td><p>提供选项，用于将XML文件中的数据与片段合并，以HTML形式预览片段或自定义预览。 有关更多信息，请参阅 <a>预览表单</a>.<br /> <br /> </p> </td>
+   <td><p>提供选项，用于将XML文件中的数据与片段合并，以HTML形式预览片段或自定义预览。 有关详细信息，请参阅<a>预览表单</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>下载</p> </td>
-   <td><p>下载选定的片段。<br /> <br /> </p> </td>
+   <td><p>下载所选片段。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>开始审核/管理审核</p> </td>
-   <td><p>允许启动和管理对所选片段的审核。 有关更多信息，请参阅 <a>创建和管理审阅</a>.<br /> <br /> </p> </td>
+   <td><p>允许启动和管理对所选片段的审核。 有关详细信息，请参阅<a>创建和管理审核</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>新增字典</p> </td>
-   <td><p>生成用于本地化所选片段的字典。 有关更多信息，请参阅 <a>本地化自适应Forms</a>.<br /> <br /> </p> </td>
+   <td><p>生成用于本地化所选片段的字典。 有关详细信息，请参阅<a>本地化自适应Forms</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Publish/取消发布</p> </td>
@@ -169,7 +169,7 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
   </tr>
   <tr>
    <td><p>删除</p> </td>
-   <td><p>删除选定的片段。<br /> <br /> </p> </td>
+   <td><p>删除所选片段。<br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>

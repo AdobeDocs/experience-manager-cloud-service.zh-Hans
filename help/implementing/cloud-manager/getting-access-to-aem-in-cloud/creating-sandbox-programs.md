@@ -22,7 +22,7 @@ ht-degree: 74%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择相应的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，点按或单击 **添加项目** 靠近屏幕右上角。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，点按或单击屏幕右上角附近的&#x200B;**添加程序**。
 
    ![Cloud Manager 登陆页面](assets/log-in.png)
 
@@ -34,7 +34,7 @@ ht-degree: 74%
 
    * 该图像仅用作项目概览窗口中的磁贴，有助于识别项目。
 
-1. 在 **设置沙盒** 对话框中，通过选中 **解决方案和加载项** 表格。
+1. 在&#x200B;**设置沙盒**&#x200B;对话框中，通过选中&#x200B;**解决方案和加载项**&#x200B;表中的选项，选择要在沙盒程序中启用的解决方案。
 
    * 使用该解决方案名称旁边的 V 形符号来显示解决方案的其他可选附加组件。
 
@@ -52,7 +52,7 @@ ht-degree: 74%
 
 您可以查看沙盒设置的详细信息，也可以通过查看程序概述页面访问该环境（在可用后）。
 
-1. 从Cloud Manager登陆页面，单击所创建程序上的省略号按钮。
+1. 从Cloud Manager登录页面，单击所创建程序上的省略号按钮。
 
    ![访问程序概述](assets/program-overview-sandbox.png)
 
@@ -74,4 +74,4 @@ ht-degree: 74%
 
 >[!TIP]
 >
->请参阅文档 [浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md) 有关如何导航Cloud Manager并了解 **我的项目群** 控制台。
+>有关如何导航Cloud Manager以及了解&#x200B;**我的程序**&#x200B;控制台的详细信息，请参阅文档[导航Cloud Manager UI](/help/implementing/cloud-manager/navigation.md)。

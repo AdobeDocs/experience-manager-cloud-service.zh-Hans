@@ -54,7 +54,7 @@ UI同时适用于移动设备和桌面设备，不过，AEM不会创建两种样
 
 还取决于是否选择了资源：
 
-![已选择AEM Sites工具栏](assets/ui-sites-toolbar-selected.png)
+已选择![AEM Sites工具栏](assets/ui-sites-toolbar-selected.png)
 
 ### 左边栏 {#left-rail}
 
@@ -64,9 +64,9 @@ UI同时适用于移动设备和桌面设备，不过，AEM不会创建两种样
 * **内容树**
 * **时间线**
 * **引用**
-* **筛选**
+* **筛选器**
 
-默认为 **仅内容** （隐藏边栏）。
+默认值为&#x200B;**仅内容**（隐藏边栏）。
 
 ![左边栏](assets/ui-left-rail.png)
 
@@ -97,29 +97,29 @@ UI同时适用于移动设备和桌面设备，不过，AEM不会创建两种样
 
 ### 侧面板 {#side-panel}
 
-包含三个默认选项卡。 此 **资产** 和 **组件** 通过选项卡，您可以选择此类元素，将其从面板中拖动并放到页面上。 此 **内容树** 选项卡允许您检查页面上内容的层次结构。
+包含三个默认选项卡。 **Assets**&#x200B;和&#x200B;**组件**&#x200B;选项卡允许您选择此类元素，并将它们从面板中拖动并放到页面上。 **内容树**&#x200B;选项卡允许您检查页面上内容的层次结构。
 
 默认情况下，侧面板处于隐藏状态。 选中后，它将显示在左侧，或者当窗口宽度小于1024像素时，它将滑过以覆盖整个窗口，例如在移动设备上一样。
 
 ![侧面板](assets/ui-side-panel.png)
 
-### 侧面板 — 资源 {#side-panel-assets}
+### 侧面板 — Assets {#side-panel-assets}
 
-在“资源”选项卡中，您可以从资源范围中进行选择。 此外，您还可以按特定术语进行筛选，或选择组。
+在Assets选项卡中，您可以从资源范围中进行选择。 此外，您还可以按特定术语进行筛选，或选择组。
 
-![“资源”选项卡](assets/ui-side-panel-assets.png)
+![Assets选项卡](assets/ui-side-panel-assets.png)
 
 ### 侧面板 — 资产组 {#side-panel-asset-groups}
 
-在资源选项卡中，有一个下拉菜单可用于选择特定的资源组。
+在Assets选项卡中，有一个可用于选择特定资源组的下拉列表。
 
-![资产组](assets/ui-side-panel-asset-groups.png)
+![资源组](assets/ui-side-panel-asset-groups.png)
 
 ### 侧面板 — 组件 {#side-panel-components}
 
 在“组件”选项卡中，可以从组件范围中进行选择。 此外，您还可以按特定术语进行筛选，或选择组。
 
-![“组件”选项卡](assets/ui-side-panel-components.png)
+![组件选项卡](assets/ui-side-panel-components.png)
 
 ### 侧面板 — 内容树 {#side-panel-content-tree}
 
@@ -129,7 +129,7 @@ UI同时适用于移动设备和桌面设备，不过，AEM不会创建两种样
 
 ### 叠加 {#overlays}
 
-叠加内容框架并由 [图层](#layer) 实现如何透明地与组件及其内容交互的机制。
+叠加内容框架并由[层](#layer)使用，以实现如何透明地与组件及其内容交互的机制。
 
 叠加在编辑器框架中处于活动状态（包含所有其他页面创作元素），但它们实际上叠加了内容框架中的相应组件。
 
@@ -156,7 +156,7 @@ AEM附带了多个已实施用于页面创作的图层；例如，包括编辑�
 
 图层切换器可以从工具栏的下拉菜单（位于窗口顶部的编辑器框架中）中使用。
 
-![图层切换器](assets/ui-layer-switcher.png)
+![层切换器](assets/ui-layer-switcher.png)
 
 ### 组件工具栏 {#component-toolbar}
 
@@ -170,4 +170,4 @@ AEM附带了多个已实施用于页面创作的图层；例如，包括编辑�
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-欲了解更多技术信息，请参见 [JS文档集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) 用于页面编辑器。
+有关详细信息，请参阅页面编辑器的[JS文档集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。

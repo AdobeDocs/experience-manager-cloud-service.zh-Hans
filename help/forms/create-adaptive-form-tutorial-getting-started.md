@@ -7,13 +7,13 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
+exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
+source-git-commit: af58a784f24f212962ad73f11015fb788493d8b5
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 2%
 
 ---
-
 
 # 创建自适应表单（核心组件） — 教程
 
@@ -32,14 +32,14 @@ ht-degree: 2%
 * 将您的自适应表单本地化为不同的语言
 * 配置表单以生成结构化数据
 * 设置表单以将数据提交到REST端点
-* 发布您的自适应表单
+* Publish您的自适应表单
 
 
 ## 为何要创建基于核心组件的表单？
 
-AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件是创建任何新表单体验的现代且推荐的方法。 为何使用核心组件？ 这些组件轻量级、开源（在github上提供）、提供出色的Google Lighthouse和Web重要分数、符合辅助功能要求，并提供AEM Sites的所有熟悉功能（如版本控制和本地化）。 此外，这些组件样式更易于设计，您可以根据组织的品牌指南轻松自定义其外观。 这些组件没有第三方依赖项，因此任何了解JavaScript和CSS的开发人员都可以轻松自定义这些组件。
+AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件是创建任何新表单体验的现代且推荐的方法。 为何使用核心组件？ 这些组件轻量级、开源（在github上提供）、提供出色的Google Lighthouse和Web重要分数、符合辅助功能要求，并提供AEM Sites的所有熟悉功能（如版本控制和本地化）。 此外，这些组件样式更易于设计，您可以根据组织的品牌指南轻松自定义其外观。 它们没有第三方依赖项，任何了解JavaScript和CSS的开发人员都可以轻松自定义这些组件。
 
-![为何要创建基于核心组件的自适应Forms？ 这些组件轻便、易于打造、得分较高、支持辅助功能标准、易于自定义、开放源、可在github上使用、不依赖于第三方库，并且对于AEM开发人员和AEM作者几乎没有任何学习曲线。最重要的是，AEM Forms核心组件具有AEM WCM核心组件的所有功能。](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
+![为什么要创建基于核心组件的自适应Forms？ 这些组件轻便、易于样式化、得分较高、支持辅助功能标准、易于自定义、开放源、可在github上使用、不依赖于第三方库，并且对于AEM开发人员和AEM作者几乎没有任何学习曲线最重要的是，AEM Forms核心组件具有AEM WCM核心组件的所有功能。](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## 用例：通过自适应Forms简化家庭贷款资格预审
 
@@ -53,7 +53,7 @@ AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件�
 
 完成本教程后，您的表单将类似于以下表单：
 
-![在此处添加工作表单](/help/forms/assets/cc-tutorial-final-form.png)
+![在此添加工作表单](/help/forms/assets/cc-tutorial-final-form.png)
 
 ## 设置开发环境
 
@@ -66,9 +66,9 @@ AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件�
 使用AEM SDK进行本地开发可节省您的时间并简化开发过程
 
 
-**准备好开始了吗？**
+**准备开始？**
 
-1. [为AEM项目设置开发工具](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects)：下载并安装最新版本的 [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)， [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git)， [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js)、和 [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven). 另外，请安装纯文本编辑器，本教程中的示例基于Visual Studio Code。
+1. [为AEM项目设置开发工具](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects)：下载并安装最新版本的[Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)、[Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git)、[Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js)和[Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven)。 另外，请安装纯文本编辑器，本教程中的示例基于Visual Studio Code。
 
 1. [安装AEM SDK](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development)：下载并安装最新版本的AEM SDK。 这为AEM开发提供了重要的工具。 记下AEM SDK的版本。
 
@@ -76,7 +76,7 @@ AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件�
 
    ![安装AEM SDK](/help/forms/assets/start-aem-sdk.png)
 
-1. [添加AEM Forms加载项](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users)：从下载并安装与AEM SDK版本匹配的AEM Forms加载项 [Software Distribution](https://experience.adobe.com/#/downloads) 门户。
+1. [添加AEM Forms加载项](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users)：从[软件分发](https://experience.adobe.com/#/downloads)门户下载并安装与AEM SDK版本匹配的AEM Forms加载项。
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
    +++安装AEM Forms附加组件：
@@ -84,7 +84,7 @@ AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件�
    要安装AEM Forms加载项，请执行以下操作：
 
    1. 停止AEM SDK。
-   1. 将AEM Forms附加组件(.far)文件添加到 `AEM SDK/crx-quickstart/install` 文件夹，
+   1. 将AEM Forms附加组件(.far)文件添加到`AEM SDK/crx-quickstart/install`文件夹，
    1. 重新启动AEM SDK。
 
 +++
@@ -92,7 +92,7 @@ AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件�
 1. [配置用户权限](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：创建具有开发、创作和其他权限的用户，并将这些用户添加到预定义的表单组。
 
 
-1. [添加自适应Forms模板](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype)：使用AEM Archetypes 48或更高版本创建一个新的AEM项目并将其部署到您的AEM SDK。 该项目会将自适应Forms模板添加到AEM SDK。
+1. [添加自适应Forms模板](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype)：使用AEM Archetypes 48或更高版本创建新的AEM项目并将其部署到您的AEM SDK。 该项目会将自适应Forms模板添加到AEM SDK。
 
    ![自适应表单模板](/help/forms/assets/adaptive-forms-templates.png)
 
@@ -119,7 +119,7 @@ AEM Forms提供基础组件和核心组件以创建表单体验。 核心组件�
 +++
 
 
-有关设置本地AEM Forms开发环境的详细说明和分步指南，请参阅 [为AEM Forms设置本地开发环境](/help/forms/setup-local-development-environment.md) 文章。
+有关设置本地AEM Forms开发环境的详细说明和分步指南，请参阅[为AEM Forms设置本地开发环境](/help/forms/setup-local-development-environment.md)文章。
 
 
 

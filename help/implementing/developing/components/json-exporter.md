@@ -27,7 +27,7 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 
 使用AEM JSON导出程序，您可以以JSON数据模型格式交付AEM页面的内容。 然后，这可以由您自己的应用程序使用。
 
-在AEM中，使用选择器实现投放 `model` 和 `.json` 扩展。
+在AEM中，使用选择器`model`和`.json`扩展实现投放。
 
 `.model.json`
 
@@ -39,11 +39,11 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 
 1. 将投放如下内容：
 
-   ![WKND内容的JSON模型](assets/json-model-wknd.png)
+   WKND内容的![JSON模型](assets/json-model-wknd.png)
 
 或者，您可以通过专门定向结构化内容片段来投放其内容。
 
-这是使用片段的整个路径完成的(通过 `jcr:content`)；例如，后缀为。
+这是使用片段的整个路径（通过`jcr:content`）完成的；例如，使用后缀，如。
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -57,22 +57,22 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 
 * 将投放如下内容：
 
-  ![WKND内容片段的JSON模型](assets/json-model-wknd-content-fragment.png)
+  WKND内容片段的![JSON模型](assets/json-model-wknd-content-fragment.png)
 
   >[!NOTE]
   >
-  >您可以 [调整您自己的组件](enabling-json-exporter.md) 以访问和使用此数据。
+  >您可以[调整您自己的组件](enabling-json-exporter.md)以访问和使用此数据。
 
   >[!NOTE]
   >
-  >虽然不是标准实施， [支持多个选择器，](enabling-json-exporter.md#multiple-selectors) 但是 `model` 必须是第一个。
+  >虽然不是标准实施，但支持[多个选择器，](enabling-json-exporter.md#multiple-selectors)但`model`必须是第一个选择器。
 
 ### 更多信息 {#further-information}
 
 * Assets HTTP API
    * [Assets HTTP API](/help/assets/developer-reference-material-apis.md)
 * Sling模型：
-   * [Sling模型 — 自130年起将模型类与资源类型相关联](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Sling模型 — 将模型类与自130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)以来的资源类型相关联
 * 带有JSON的AEM：
    * [为组件启用 JSON 导出](enabling-json-exporter.md)
 
@@ -81,4 +81,4 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

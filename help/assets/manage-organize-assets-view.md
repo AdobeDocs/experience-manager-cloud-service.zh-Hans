@@ -114,7 +114,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 **所需的权限：资源的**`Can Edit`、`Owner` 或管理员权限。
 
-通过“资源”视图，您可以为存储库中可用的资源设置状态。 设置资源状态以更好地治理和管理下游对数字资源的使用。
+Assets视图允许您为存储库中可用的资源设置状态。 设置资源状态以更好地治理和管理下游对数字资源的使用。
 
 您可以为资源设置以下状态：
 
@@ -130,14 +130,14 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 1. 选择资源并单击工具栏中的&#x200B;**[!UICONTROL 详细信息]**。
 
-1. 在 **[!UICONTROL 基本]** 选项卡，从中选择资源状态 **[!UICONTROL 状态]** 下拉列表。 可能的值包括“已批准”、“已拒绝”和“无状态”（默认值）。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 状态]**&#x200B;下拉列表中选择资源状态。 可能的值包括“已批准”、“已拒绝”和“无状态”（默认值）。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
 ### 设置资源过期日期 {#set-asset-expiration-date}
 
-通过“资源”视图，您还可以设置存储库中可用资源的到期日期。 然后，可根据 `Expired` 资源状态[筛选搜索结果](search-assets-view.md#refine-search-results)。此外，还可指定资源的到期日期范围以进一步筛选搜索结果。
+Assets视图还允许您为存储库中可用的资源设置到期日期。 然后，可根据 `Expired` 资源状态[筛选搜索结果](search-assets-view.md#refine-search-results)。此外，还可指定资源的到期日期范围以进一步筛选搜索结果。
 
 要设置资源过期日期，请执行以下操作：
 
@@ -147,13 +147,13 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 `Expired`资源卡指示器会替代为资源设置的`Approved`或`Rejected`指示器。
 
-您还可以根据资源状态筛选资源，有关更多信息，请参阅 [在“资源”视图中搜索资源](search-assets-view.md).
+您还可以根据资源状态筛选资源，有关详细信息，请参阅[在Assets视图中搜索资源](search-assets-view.md)。
 
 ## 自定义元数据表单以包含资源状态字段 {#customize-asset-status-metadata-form}
 
 **所需的权限：**&#x200B;管理员
 
-默认情况下，资源视图提供了许多标准元数据字段。 组织有额外的元数据需求，就需要更多元数据字段以添加业务特有的元数据。企业可以利用元数据表单，将自定义元数据字段添加到资源的[!UICONTROL 详情]页面。特定于业务的元数据可以改进其资源的管理和发现。
+默认情况下，Assets视图提供了许多标准元数据字段。 组织有额外的元数据需求，就需要更多元数据字段以添加业务特有的元数据。企业可以利用元数据表单，将自定义元数据字段添加到资源的[!UICONTROL 详情]页面。特定于业务的元数据可以改进其资源的管理和发现。
 
 有关如何将其他元数据字段添加到元数据表单的更多信息，请参阅[元数据表单](metadata-assets-view.md#metadata-forms)。
 
@@ -167,7 +167,7 @@ TBD: query for engineering: How many versions are maintained. What happens when 
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在“资产”视图中进行资产管理](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
+* [观看视频，了解如何在Assets视图中管理资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 

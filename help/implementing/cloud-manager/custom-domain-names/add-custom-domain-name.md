@@ -22,7 +22,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->用户必须具有 **业务负责人** 或 **部署管理员** 角色在Cloud Manager中添加自定义域名，并且您必须使用Fastly CDN。
+>用户必须具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色才能在Cloud Manager中添加自定义域名，并且您必须使用Fastly CDN。
 
 ## 从“域设置”页面添加自定义域名 {#adding-cdn-settings}
 
@@ -34,11 +34,11 @@ ht-degree: 73%
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 导航至，选择 **域设置** 选项卡。
+1. 导航到左侧导航面板中的选择&#x200B;**域设置**&#x200B;选项卡。
 
    ![域设置窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. 单击 **添加域** 按钮打开 **添加域名** 对话框。
+1. 单击右上角的&#x200B;**添加域**&#x200B;按钮以打开&#x200B;**添加域名**&#x200B;对话框。
 
    ![“添加域”对话框](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)。
 
@@ -64,7 +64,7 @@ CDN 部署需要有效的 SSL 证书和成功的 TXT 验证。 这由状态&#x20
 
 >[!TIP]
 >
->阅读以下文章，了解其需要 [接下来添加CNAME或记录](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) 避免在将DNS记录添加到自定义域时加倍努力。 TXT条目和CNAME或A记录可以同时在DNS管理服务器上设置。
+>查看以下文章，了解是否需要[在下一页](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)添加CNAME或记录，以避免将DNS记录添加到自定义域时加倍努力。 TXT条目和CNAME或A记录可以同时在DNS管理服务器上设置。
 
 >[!TIP]
 >
@@ -90,7 +90,7 @@ CDN 部署需要有效的 SSL 证书和成功的 TXT 验证。 这由状态&#x20
 
    1. 输入自定义域名。
    1. 从下拉列表中选择与此名称关联的 SSL 证书。
-   1. 单击 **+添加**.
+   1. 单击&#x200B;**+添加**。
 
    ![添加自定义域名](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 

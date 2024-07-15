@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service2022.2.0版中迁移工具的发行说明
-description: AEMas a Cloud Service2022.2.0版中迁移工具的发行说明
+title: AEM as a Cloud Service 2022.2.0版中的迁移工具发行说明
+description: AEM as a Cloud Service 2022.2.0版中的迁移工具发行说明
 feature: Release Information
 exl-id: b1cd871d-c71e-4902-a97e-2c859f6a4da4
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 55%
 
 ---
 
-# AEMas a Cloud Service2022.2.0版中迁移工具的发行说明 {#release-notes}
+# AEM as a Cloud Service 2022.2.0版中的迁移工具发行说明 {#release-notes}
 
-此页概述了AEMas a Cloud Service2022.2.0中迁移工具的发行说明。
+此页概述了AEM as a Cloud Service 2022.2.0中迁移工具的发行说明。
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -40,7 +40,7 @@ Best Practices Analyzer v2.1.24 的发布日期是 2022 年 2 月 1 日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 内容验证 — 用户可以可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。 要使用此功能，请在 `System Console` 源AEM环境的。 请参阅 [验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started) 以了解更多详细信息。
+* 内容验证 — 用户可以可靠地确定内容传输工具提取的所有内容是否已成功引入到目标实例中。 要使用此功能，请在源AEM环境的`System Console`中启用它。 有关更多详细信息，请参阅[验证内容传输 — 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started)。
 
 ### 错误修复 {#bug-fixes-ctt}
 

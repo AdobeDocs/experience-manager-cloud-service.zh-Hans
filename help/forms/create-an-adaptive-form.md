@@ -44,7 +44,7 @@ ht-degree: 77%
 
    * `blank` 模板包含在每个新的 AEM Forms as a Cloud Service 项目中。
    * 您可以通过包管理器安装参考包，以将 `blank` 模板添加到 AEM Forms as a Cloud Service 项目。
-   * 您还可以 [创建自适应Forms模板（核心组件）](template-editor.md) 从头开始。
+   * 您也可以[从头开始创建自适应Forms模板（核心组件）](template-editor.md)。
 
 * **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。`Canvas` 模板包含在每个新的 AEM Forms as a Cloud Service 项目中。
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
@@ -57,9 +57,9 @@ ht-degree: 77%
 
 1. 登录到 [!DNL Experience Manager Forms] 创作实例。它可以是云实例或本地开发实例。
 
-1. 在 Experience Manager 登录页面上输入您的凭据。登录后，在左上角选择 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
+1. 在 Experience Manager 登录页面上输入您的凭据。登录后，在左上角选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
 
-1. 选择 **[!UICONTROL 创建]**  > **[!UICONTROL 自适应Forms]**. 向导随即打开。在“源”选项卡中，选择一个模板：
+1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应Forms]**。 向导随即打开。在“源”选项卡中，选择一个模板：
 
    ![核心组件模板](/help/forms/assets/core-components-template.png){width="100%" align="center"}
 
@@ -78,7 +78,7 @@ ht-degree: 77%
 
 1. （可选）在“数据”选项卡中，选择一个数据模型：
 
-   * **表单数据模型**：A [表单数据模型(FDM)](data-integration.md) 允许您将实体和服务从不同的数据源集成到自适应表单中。 如果要创建的自适应表单涉及从多个数据源获取数据以及将数据写入多个数据源，请选择表单数据模型(FDM)。
+   * **表单数据模型**： [表单数据模型(FDM)](data-integration.md)允许您将不同数据源中的实体和服务集成到自适应表单中。 如果要创建的自适应表单涉及从多个数据源获取数据以及将数据写入多个数据源，请选择表单数据模型(FDM)。
 
    * **JSON 架构**：[JSON 架构](adaptive-form-json-schema-form-model.md)我们的基于核心组件的自适应表单允许与组织的后端系统无缝集成，并能够与表示正在生成或使用的数据结构的 JSON 架构关联。利用此关联，作者可以使用架构的元素将内容动态添加到自适应表单。在创作过程中，架构的元素可在内容浏览器的数据模型对象选项卡中轻松访问，并且所有字段都会自动添加到任何创建的自适应表单中。
 
@@ -98,18 +98,18 @@ ht-degree: 77%
    * **[!UICONTROL 名称：]**&#x200B;指定表单的名称。在存储库中创建具有指定名称的节点。在开始键入标题时，名称字段的值将自动生成。您可以更改建议的值。名称字段只能包含字母数字字符、连字符和下划线。所有无效的输入都将替换为连字符。
    * **[!UICONTROL 路径：]**&#x200B;指定用于保存自适应表单的位置。您可以直接将自适应表单保存在 `/content/dam/formsanddocuments`，也可以创建一个文件夹（例如 `/content/dam/formsanddocuments/adaptiveforms`）来保存自适应表单。确保先创建文件夹，然后再在路径中使用它。**[!UICONTROL 路径]**&#x200B;字段不会自动创建文件夹。
 
-1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。根据自适应表单的类型，关联表单中存在的表单元素 <!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)显示在 **[!UICONTROL 数据模型对象]** 选项卡 **[!UICONTROL 内容浏览器]** 在侧栏中。
+1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。根据自适应表单的类型，关联<!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)中存在的表单元素将显示在侧边栏中&#x200B;**[!UICONTROL 内容浏览器]**&#x200B;的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中。
 
 现在，您可以拖放[自适应表单核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans#components)或架构元素来生成自适应表单。
 
 
 ## 编辑自适应表单的表单模型属性 {#edit-form-model-core-components-based-adaptive-forms}
 
-1. 选择自适应表单，然后选择 ![页面信息](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 打开属性]**. 这将打开“表单属性”页面。
+1. 选择自适应表单，然后选择![页面信息](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL 打开属性]**。 这将打开“表单属性”页面。
 
 1. 转到&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡并选择表单模型。如果自适应表单没有表单模型，您可以自由选择JSON架构或表单数据模型(FDM)。 另一方面，如果自适应表单已基于一个表单模型，则可以选择切换到另一个相同类型的表单模型。例如，如果表单使用JSON架构，您可以轻松切换到另一个JSON架构，同样，如果表单使用表单数据模型(FDM)，您可以切换到另一个表单数据模型(FDM)。
 
-1. 选择 **[!UICONTROL 保存]** 以保存属性。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存属性。
 
 >[!TAB 使用基础组件创建自适应表单]
 
@@ -117,11 +117,11 @@ ht-degree: 77%
 
 * **权限**：将用户添加到[!DNL forms-users]，为他们提供创建自适应表单的权限。有关特定于表单的用户组的详细列表，请参阅[组和权限](forms-groups-privileges-tasks.md)。
 
-* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以 [创建主题](themes.md) 或 [导入现有主题](import-export-forms-templates.md#uploading-a-theme). 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
+* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以[创建主题](themes.md)或[导入现有主题](import-export-forms-templates.md#uploading-a-theme)。 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
 * **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（版面和样式）。它的预格式化的组件包含某些属性和内容结构。它还提供用于定义主题和提交操作的选项。主题定义外观，提交操作定义在提交自适应表单时执行的操作。例如，将收集到的数据发送到数据源。Cloud Service 支持两种类型的模板：
 
-   * **可编辑的模板**：您可以 [创建](template-editor.md) 或 [导入现有的可编辑模板](migrate-to-forms-as-a-cloud-service.md). 您还可以部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以获取一些可编辑模板示例。
+   * **可编辑模板**：您可以[创建](template-editor.md)或[导入现有的可编辑模板](migrate-to-forms-as-a-cloud-service.md)。 您还可以部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以获取一些可编辑模板示例。
 
    * **静态模板**：这些是旧版模板，仅建议从 Adobe Managed Services (AMS) 和内部部署 AEM Forms 安装（AEM 6.5 Forms 或更早版本）迁移的客户使用。它们可让您继续使用投资购买的现有静态模板。创建自适应表单时，请使用可编辑的模板。
 
@@ -132,9 +132,9 @@ ht-degree: 77%
 
 1. 在 Experience Manager 登录页面上输入您的凭据。
 
-   登录后，在左上角选择 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
+   登录后，在左上角选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
 
-1. 选择 **[!UICONTROL 创建]**  > **[!UICONTROL 自适应Forms]**. 向导随即打开。
+1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应Forms]**。 向导随即打开。
 1. 在“源”选项卡中，选择一个模板：
 
    * 选择一个可编辑模板时，会自动选择该模板中指定的主题和提交操作，并启用&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。您可以转到&#x200B;**[!UICONTROL 样式]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡以选择不同的主题或提交操作。如果所选可编辑模板未指定主题，则“创建”按钮将保持禁用状态。您可以转到&#x200B;**[!UICONTROL 样式]**&#x200B;选项卡以手动选择主题。
@@ -152,7 +152,7 @@ ht-degree: 77%
 
 1. （可选）在&#x200B;**[!UICONTROL 数据]**&#x200B;选项卡中，选择一个数据模型：
 
-   * **表单数据模型**：A [表单数据模型(FDM)](data-integration.md) 允许您将实体和服务从不同的数据源集成到自适应表单中。 如果要创建的自适应表单涉及从多个数据源获取数据以及将数据写入多个数据源，请选择表单数据模型(FDM)。
+   * **表单数据模型**： [表单数据模型(FDM)](data-integration.md)允许您将不同数据源中的实体和服务集成到自适应表单中。 如果要创建的自适应表单涉及从多个数据源获取数据以及将数据写入多个数据源，请选择表单数据模型(FDM)。
 
    * **JSON 架构**：[JSON 架构](adaptive-form-json-schema-form-model.md)表示组织中的后端系统生成或使用的数据所在的结构。您可以将架构与自适应表单相关联，并使用其元素将动态内容添加到自适应表单。在创作自适应Forms时，可在内容浏览器的数据模型对象选项卡中使用架构的元素，并且所有字段也已添加到创建的自适应表单。
 
@@ -180,7 +180,7 @@ ht-degree: 77%
 
 1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。它还会显示侧栏，以根据需要自定义创建的表单。
 
-   根据自适应表单的类型，关联表单中存在的表单元素 <!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)显示在 **[!UICONTROL 数据模型对象]** 选项卡 **[!UICONTROL 内容浏览器]** 在侧栏中。 您还可以拖放这些元素来生成自适应表单。
+   根据自适应表单的类型，关联<!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)中存在的表单元素将显示在侧边栏中&#x200B;**[!UICONTROL 内容浏览器]**&#x200B;的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中。 您还可以拖放这些元素来生成自适应表单。
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -235,13 +235,13 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 您可以更改自适应表单的表单模型(基于JSON或表单数据模型(FDM))。 您无法从一种表单模型更改为另一种表单模型。
 
-1. 选择自适应表单，然后选择 **属性** 图标。
+1. 选择自适应表单并选择&#x200B;**属性**&#x200B;图标。
 1. 打开&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡并执行下列操作之一。
 
-   * 如果自适应表单没有表单模型，则可以选择其他表单模型并相应地选择 <!-- a form template, --> XML或JSON架构，或表单数据模型(FDM)。
-   * 如果自适应表单基于表单模型，则可以选择其他 <!-- form template, --> XML或JSON架构，或相同表单模型的表单数据模型(FDM)。
+   * 如果自适应表单没有表单模型，则可以选择其他表单模型，并相应地选择<!-- a form template, --> XML或JSON架构或表单数据模型(FDM)。
+   * 如果自适应表单基于表单模型，则可以为同一表单模型选择其他<!-- form template, --> XML或JSON架构，或者表单数据模型(FDM)。
 
-1. 选择 **[!UICONTROL 保存]** 以保存属性。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存属性。
 
 您还可以在自适应表单编辑器或自适应表单模板编辑器中修改表单模型属性。
 
@@ -249,9 +249,9 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 单击![配置](/help/forms/assets/configure-icon.svg)图标来打开自适应表单容器的&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 数据模型]**&#x200B;选项卡并执行下列操作之一：
 
-   * 如果自适应表单没有表单模型，则可以选择表单模型并相应地选择 <!-- a form template, --> XML或JSON架构，或表单数据模型(FDM)。
-   * 如果自适应表单基于表单模型，则无法更改表单模型。您可以选择其他 <!-- form template, --> 适用时，适用于相同表单模型的XML或JSON架构或表单数据模型(FDM)。
-1. 选择 ![保存](/help/forms/assets/check-button.png) 以保存属性。
+   * 如果自适应表单没有表单模型，则可以选择表单模型，并相应地选择<!-- a form template, --> XML或JSON架构或表单数据模型(FDM)。
+   * 如果自适应表单基于表单模型，则无法更改表单模型。您可以为适用的相同表单模型选择其他<!-- form template, --> XML或JSON架构，或者选择表单数据模型(FDM)。
+1. 选择![保存](/help/forms/assets/check-button.png)以保存属性。
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png){width="100%" align="center"}
 

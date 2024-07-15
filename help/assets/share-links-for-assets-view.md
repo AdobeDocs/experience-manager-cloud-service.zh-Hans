@@ -19,7 +19,7 @@ ht-degree: 93%
 
 要为资源或包含资源的文件夹生成链接：
 
-1. 选择包含资源的资源或/和文件夹，然后单击 **[!UICONTROL 共享链接]**.
+1. 选择包含资源的资源或/和文件夹，然后单击&#x200B;**[!UICONTROL 共享链接]**。
 
 1. 如果要对其进行调整，请单击“日程表”图标以使用&#x200B;**[!UICONTROL 到期日期]**&#x200B;字段定义链接的到期日期。您也可以直接在`yyyy-mm-dd`格式中指定日期。默认情况下，链接的到期日期设置为自共享之日起 2 周。
 
@@ -45,7 +45,7 @@ ht-degree: 93%
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在“资产”视图中共享资产链接](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
+* [观看视频，了解如何在Assets视图中共享资源链接](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 

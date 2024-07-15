@@ -1,6 +1,6 @@
 ---
 title: CDN 性能仪表板
-description: 了解Cloud Manager如何评估内容交付网络(CDN)性能，以及您可以从功能板中学到什么。
+description: 了解Cloud Manager如何评估Content Delivery Network (CDN)性能以及您可以从功能板中学到什么。
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -14,11 +14,11 @@ ht-degree: 4%
 
 # CDN 性能仪表板 {#cdn-performance}
 
-了解Cloud Manager如何评估内容交付网络(CDN)性能，以及您可以从功能板中学到什么。
+了解Cloud Manager如何评估Content Delivery Network (CDN)性能以及您可以从功能板中学到什么。
 
 ## 概述 {#overview}
 
-每个Cloud Manager项目都有一个CDN性能仪表板。 此仪表板显示CDN性能的总体分数，以及趋势、警报和必要的改进建议。
+每个Cloud Manager项目都有一个CDN性能功能板。 此仪表板显示CDN性能的总体分数，以及趋势、警报和必要的改进建议。
 
 ![CDN性能仪表板](assets/cdn-performance-dashboard.png)
 
@@ -28,11 +28,11 @@ CDN功能板可在每个项目的概述页面上找到。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 在控制台中，点按或单击要查看其CDN功能板的项目。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，点按或单击要查看其CDN仪表板的程序。
 
-   ![我的项目群页面](assets/my-programs.png)
+   ![我的项目页面](assets/my-programs.png)
 
-1. 在 **项目概述** 页面，向下滚动到 **环境** 和 **管道** 卡片以查看 **性能** 卡片。
+1. 在项目的&#x200B;**项目概述**&#x200B;页面上，向下滚动到&#x200B;**环境**&#x200B;和&#x200B;**管道**&#x200B;信息卡的下方以查看&#x200B;**性能**&#x200B;信息卡。
 
    ![性能](assets/cdn-performance-overview.png)
 
@@ -42,13 +42,13 @@ CDN功能板可在每个项目的概述页面上找到。
 
 ![CDN性能仪表板](assets/cdn-performance-dashboard.png)
 
-有关您的CDN性能以及如何改进它的建议的详细信息，请点按或单击 **查看趋势**.
+有关您的CDN性能的详细信息以及如何改进它的建议，请点按或单击&#x200B;**查看趋势**。
 
 ![性能趋势](assets/cdn-performance-trend.png)
 
-点击或单击 **视图** 更改图表的时间范围。
+点按或单击图表下方的&#x200B;**查看**&#x200B;以更改图表的时间范围。
 
-有关如何提高CDN性能的建议，请选择 **Recommendations** 选项卡。
+有关如何提高CDN性能的建议，请选择&#x200B;**Recommendations**&#x200B;选项卡。
 
 ![CDN推荐](assets/cdn-performance-recommendations.png)
 
@@ -66,13 +66,13 @@ CDN功能板可在每个项目的概述页面上找到。
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **点击**  — 数据是从缓存中请求的，并且已找到。
-* **小姐**  — 数据是从缓存中请求的，但是找不到。
-* **通过**  — 数据是从缓存中请求的，无论如何，它都设置为不缓存此数据。
-* **其他**  — 缓存中不符合任何其他大小写的所有数据请求。
+* **点击** — 从缓存中请求数据，已找到该数据。
+* **未命中** — 正在从缓存中请求数据，但未找到该数据。
+* **传递** — 从缓存中请求数据，无论如何，它都设置为不缓存此数据。
+* **Other** — 来自缓存的与任何其他大小写不匹配的所有数据请求。
 
 缓存量度每24小时更新一次。
 
 >[!TIP]
 >
->有关Cloud Manager和CDN如何与Dispatcher交互的更多详细信息，请参阅文档 [AEMas a Cloud Service中的缓存。](/help/implementing/dispatcher/caching.md)
+>有关Cloud Manager和CDN如何与Dispatcher交互的更多详细信息，请参阅文档[在AEM as a Cloud Service中缓存。](/help/implementing/dispatcher/caching.md)

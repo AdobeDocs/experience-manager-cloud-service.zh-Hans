@@ -72,7 +72,7 @@ ht-degree: 98%
 
 对于拥有现有代码库的客户，请务必完成 AEM 文档中描述的存储库重构实践，以确保将以前位于 /etc 下的内容移动到正确的位置。
 
-一些其他限制也适用于这些代码包，例如， [安装挂钩](https://jackrabbit.apache.org/filevault/installhooks.html) 不受支持。
+这些代码包还受到一些其他限制，例如，[安装挂接](https://jackrabbit.apache.org/filevault/installhooks.html)不受支持。
 
 ## OSGI 配置 {#osgi-configuration}
 
@@ -296,7 +296,7 @@ above appears to be internal, to confirm with Brian -->
 
 另一方面，AEM as a Cloud Service 会更武断地认定哪些运行架构可用以及如何将 OSGI 捆绑包和 OSGI 配置映射到这些架构：
 
-* OSGI 配置运行架构必须引用 RDE、开发、暂存或生产作为环境，或引用创作和发布作为服务。组合 `<service>.<environment_type>` 受支持，但必须按此特定顺序使用这些环境(例如， `author.dev` 或 `publish.prod`)。 应直接从代码中引用 OSGI 令牌，而不是使用 `getRunModes` 方法（该方法在运行时不再包含 `environment_type`）引用它。有关更多信息，请参阅[为 AEM as a Cloud Service 配置 OSGi](/help/implementing/deploying/configuring-osgi.md)。
+* OSGI 配置运行架构必须引用 RDE、开发、暂存或生产作为环境，或引用创作和发布作为服务。支持`<service>.<environment_type>`的组合，但必须按此特定顺序使用这些环境（例如，`author.dev`或`publish.prod`）。 应直接从代码中引用 OSGI 令牌，而不是使用 `getRunModes` 方法（该方法在运行时不再包含 `environment_type`）引用它。有关更多信息，请参阅[为 AEM as a Cloud Service 配置 OSGi](/help/implementing/deploying/configuring-osgi.md)。
 * OSGI 捆绑包运行架构仅适用于服务（创作、发布）。每运行架构 OSGI 捆绑包应安装在 `install.author` 或 `install.publish` 下的内容包中。
 
 AEM as a Cloud Service 不允许使用运行模式为特定环境或服务安装内容。如果开发环境必须使用暂存或生产环境中不存在的数据或 HTML 进行播种，则可以使用包管理器。

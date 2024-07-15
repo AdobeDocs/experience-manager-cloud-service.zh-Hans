@@ -23,8 +23,8 @@ Assets视图可支持基本的图像编辑，包括调整大小、删除背景�
 
 ## 编辑图像 {#edit-image}
 
-登陆Assets视图，使用以下链接 —  [Assets视图](https://experience.adobe.com/#/assets) 并选择正确的存储库。 要获得访问权限，请联系您组织的管理员。
-有关任何其他参考信息，请参阅 —  [开始使用Adobe Experience Manager Assets视图](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)， [了解Assets视图用户界面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)、和 [Assets查看用例](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+登录到Assets视图，使用链接 — [Assets视图](https://experience.adobe.com/#/assets)并选择正确的存储库。 要获得访问权限，请联系您组织的管理员。
+有关任何其他参考信息，请参阅 — [开始使用Adobe Experience Manager Assets视图](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)、[了解Assets视图用户界面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)和[Assets视图用例](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)。
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -33,7 +33,7 @@ Assets视图可支持基本的图像编辑，包括调整大小、删除背景�
 
 ### 在Assets视图上使用Adobe Express编辑图像 {#edit-image-on-assets-view-using-adobe-express}
 
-登录Assets视图后，单击 **Assets**，选择图像，然后单击 **编辑** 从顶部边栏上。 新屏幕显示可用的编辑选项，包括调整大小、背景去除、裁剪以及 JPEG 与 PNG 格式之间的转换。
+登录Assets视图后，单击&#x200B;**Assets**，选择一个图像，然后单击顶部边栏中的&#x200B;**编辑**。 新屏幕显示可用的编辑选项，包括调整大小、背景去除、裁剪以及 JPEG 与 PNG 格式之间的转换。
 
 #### 调整图像大小 {#resize-image-using-express}
 
@@ -86,9 +86,9 @@ Assets视图可支持基本的图像编辑，包括调整大小、删除背景�
 
 拥有Express权利的用户可以从Assets视图中使用嵌入的Express编辑器，轻松地在Adobe Firefly中使用GenAI编辑内容和创建新内容。 这提高了内容重用性并加快了内容速度。您还可以使用预定义的元素使您的资源看起来令人惊叹，或者只需单击几下即可执行快速操作来编辑图像。
 ![在Essentials UI中表达](/help/assets/assets/express-in-essentials-ui.jpg)
-要使用编辑图像，请执行以下操作 [!DNL Adobe Express] 嵌入式编辑器，请执行以下步骤：
+要使用[!DNL Adobe Express]嵌入式编辑器编辑图像，请执行以下步骤：
 
-1. 使用以下链接登录到AEM Assets视图 —  [AEM Assets视图](https://experience.adobe.com/#/assets) 并选择正确的存储库。
+1. 使用链接 — [AEM Assets视图](https://experience.adobe.com/#/assets)登录到AEM Assets视图，然后选择正确的存储库。
 1. 点击 **资产**，进入文件夹，然后选择一张图像。
 1. 单击&#x200B;**在 Adobe Express 中打开**。图像在快捷画布上打开。
 1. 对图像进行必要的编辑。
@@ -124,10 +124,10 @@ Assets视图可支持基本的图像编辑，包括调整大小、删除背景�
 
 [!DNL Assets view] 使您能够使用 [!DNL Adobe Express] 嵌入式编辑器从头开始创建新模板。若要使用 [!DNL Adobe Express] 创建新资源，请执行以下步骤：
 
-1. 导航到 **[!UICONTROL 我的Workspace]** 并单击 **[!UICONTROL 创建]** 顶部显示的Adobe Express横幅中。 [!DNL Adobe Express] 空白画布显示在 [!DNL Assets view] 用户界面中。
+1. 导航到&#x200B;**[!UICONTROL 我的Workspace]**，然后在顶部显示的Adobe Express横幅中单击&#x200B;**[!UICONTROL 创建]**。 [!DNL Adobe Express] 空白画布显示在 [!DNL Assets view] 用户界面中。
 1. 使用[模板](https://helpx.adobe.com/cn/express/using/work-with-templates.html)创建您的内容。否则，导航至&#x200B;**[!UICONTROL 您的内容]**&#x200B;来修改现有内容。
 1. 完成编辑后，点击 **[!UICONTROL 保存]**。
-1. 为创建的资源指定目标路径，然后单击 **[!UICONTROL 另存为新资源]**.
+1. 为创建的资源指定目标路径，然后单击&#x200B;**[!UICONTROL 另存为新资源]**。
 
 #### 限制 {#limitations}
 
@@ -195,7 +195,7 @@ TBD: Insert a video of the available social media options.
 
 ### 后续步骤 {#next-steps}
 
-* 使用提供产品反馈 [!UICONTROL 反馈] 选项，该选项位于Assets视图用户界面上。
+* 使用Assets视图用户界面上提供的[!UICONTROL 反馈]选项提供产品反馈。
 
 * 通过右侧边栏中的[!UICONTROL 编辑此页面]![编辑页面](assets/do-not-localize/edit-page.png)或[!UICONTROL 记录问题]![创建 GitHub 问题](assets/do-not-localize/github-issue.png)来提供文档反馈。
 

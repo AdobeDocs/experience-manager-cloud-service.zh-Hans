@@ -111,7 +111,7 @@ ht-degree: 100%
 
 ## 其他资源 {#additional-resources}
 
-如果您想了解入门历程以外的内容，以下是额外的可选资源。
+如果您想了解上线历程以外的内容，以下是额外的可选资源。
 
 * [AEM as a Cloud Service 团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md) – 了解 AEM as a Cloud Service 团队和产品配置文件如何授予和限制访问您经许可的 Adobe 解决方案。
 * [在 Admin Console 管理产品和用户访问权限](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) – 了解如何使用 Admin Console 管理用户访问权限。

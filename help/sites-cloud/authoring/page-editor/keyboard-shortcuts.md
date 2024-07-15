@@ -24,7 +24,7 @@ ht-degree: 84%
 
 | 位置 | 快捷键 | 描述 |
 |---|---|---|
-| 任何编辑窗口模式 | `Ctrl-Shift-m` | 在之间切换 **预览** 和当前选定的 [模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) (例如， **编辑**， **布局**，等等)* |
+| 任何编辑窗口模式 | `Ctrl-Shift-m` | 在&#x200B;**预览**&#x200B;和当前选定的[模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)之间切换（例如，**编辑**、**布局**&#x200B;等）* |
 | **编辑**&#x200B;模式 | `Ctrl-z` | [撤消最后一次更改](/help/sites-cloud/authoring/page-editor/edit-content.md) |
 |  | `Ctrl-y` | [重做最后一次更改](/help/sites-cloud/authoring/page-editor/edit-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 选择多个段落 |

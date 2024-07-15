@@ -28,7 +28,7 @@ ht-degree: 77%
 
 ### 添加存储库 {#add-repo}
 
-1. 在Cloud Manager中，从 **项目概述** 页面上，选择 **存储库** 制表符以切换到 **存储库** 页面并单击 **添加存储库**.
+1. 在Cloud Manager中，从&#x200B;**项目概述**&#x200B;页面，选择&#x200B;**存储库**&#x200B;选项卡以切换到&#x200B;**存储库**&#x200B;页面，然后单击&#x200B;**添加存储库**。
 
 1. 在&#x200B;**添加存储库**&#x200B;对话框中，选择&#x200B;**专用存储库**&#x200B;作为存储库类型。
 
@@ -44,13 +44,13 @@ ht-degree: 77%
 
 >[!TIP]
 >
->有关在Cloud Manager中管理存储库的详细信息，请参阅 [Cloud Manager存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>有关在Cloud Manager中管理存储库的详细信息，请参阅[Cloud Manager存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
 
 ### 专用存储库所有权验证 {#validate-ownership}
 
 Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权限。要授予访问权限，您需要安装 Adobe GitHub 应用程序并验证您是否拥有指定的存储库。
 
-1. 添加您自己的存储库后， **私有存储库所有权验证** 对话框打开。
+1. 添加您自己的存储库后，**私有存储库所有权验证**&#x200B;对话框打开。
 
    ![专用存储库所有权验证](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
@@ -58,7 +58,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
    * 您的 GitHub 组织的所有者必须安装位于 `https://github.com/apps/cloud-manager-for-aem` 的应用程序并授予对存储库的访问权限。
    * 有关如何完成此操作的详细信息，请参阅GitHub的文档。
 
-1. 为了增强安全性，您必须在存储库的默认分支中创建秘密文件。选择 **生成**.
+1. 为了增强安全性，您必须在存储库的默认分支中创建秘密文件。选择&#x200B;**生成**。
 
 1. 通过点按或单击&#x200B;**确认**&#x200B;以确认秘密文件的生成。
 
@@ -72,7 +72,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 1. 在 GitHub 存储库的默认分支中创建一个名为 `.well-known/adobe/cloud-manager-challenge` 的新文件，将秘密文件内容粘贴到该文件中并进行保存。
 
-1. 安装应用程序且存储库中存在机密文件后，您可以选择 **验证** 在 **私有存储库所有权验证** 对话框。
+1. 安装应用且存储库中存在机密文件后，您可以在&#x200B;**私有存储库所有权验证**&#x200B;对话框中选择&#x200B;**验证**。
 
 可以按任意顺序安装应用程序并创建秘密文件。但必须先完成这两个步骤，之后才能进行验证。
 
@@ -80,9 +80,9 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 ![未经验证的存储库](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-此 **类型** 列可以轻松识别Adobe提供的存储库(**Adobe**)和您自己的GitHub存储库(**GitHub**)。
+**Type**&#x200B;列可轻松识别Adobe提供的存储库(**Adobe**)和您自己的GitHub存储库(**GitHub**)。
 
-如果您稍后需要返回到存储库以完成验证，请在 **存储库** 页面上，选择代表您刚刚添加的GitHub存储库的行中的省略号按钮，然后选择 **所有权验证** 从下拉菜单中。
+如果您以后需要返回到存储库以完成验证，请在&#x200B;**存储库**&#x200B;页面上，选择代表您刚刚添加的GitHub存储库的行中的省略号按钮，然后从下拉菜单中选择&#x200B;**所有权验证**。
 
 ## 将专用存储库与 Cloud Manager 结合使用 {#using}
 
@@ -120,7 +120,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 在 Cloud Manager 中使用专用存储库时会受到某些限制。
 
-* 无法使用Cloud Manager中的GitHub检查暂停拉取请求验证。
+* 使用Cloud Manager中的GitHub检查，无法暂停拉取请求验证。
    * 如果在 Cloud Manager 中验证 GitHub 存储库，则 Cloud Manager 将始终尝试验证为该存储库创建的提取请求。
 * 如果从您的 GitHb 组织中删除 Adobe GitHub 应用程序，这将删除所有存储库的提取请求验证功能。
 * 专用存储库不支持 Web 层和配置管道。

@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 发行说明
-description: '"[!DNL Adobe Experience Manager] 2020.6.0版as a Cloud Service发行说明。”'
+description: "[!DNL Adobe Experience Manager]个2020.6.0版as a Cloud Service发行说明。"
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 92%
 
 ---
 
-# AEMas a Cloud Service2020.6.0版发行说明 {#release-notes}
+# AEM as a Cloud Service 2020.6.0发行说明 {#release-notes}
 
 本页面概述了 Experience Manager as a Cloud Service 2020.6.0 版的常规发行说明。
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 ### 新增功能 {#whats-new-2020.6.0}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)版本 2.9.0 现已作为 AEM Sites 的一部分提供，包括：
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)版本 2.9.0 现已作为 AEM Sites 的一部分提供，包括：
 
 * [Adobe 客户端数据层](https://github.com/adobe/adobe-client-data-layer)与核心组件的集成
 * 适用于所有组件的可配置 HTML ID 属性
@@ -48,11 +48,11 @@ ht-degree: 92%
 
 * 屏幕阅读器改进。
 
-## AEMas a Cloud Service的新增基础功能 {#foundations}
+## AEM as a Cloud Service的新增基础功能 {#foundations}
 
-通过删除AEM项目的pom.xml中对远程存储库的所有引用，AEM项目构建时间将会缩短 `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+通过删除AEM项目的pom.xml中对远程存储库`https://downloads.experiencecloud.adobe.com/content/maven/public`的所有引用，AEM项目构建时间将会缩短。
 
-AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven Central（即Maven的默认项目存储库）中。
+AEM as a Cloud Service SDK API Jar（以前在该位置托管）现在位于Maven Central（即Maven的默认项目存储库）中。
 
 ## Cloud Manager的新增功能 {#cloud-manager}
 
@@ -104,13 +104,13 @@ AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven 
 
 * 直接从 Cloud Manager 链接到开发人员控制台不会显示用于将沙盒程序的环境解除休眠/休眠的选项。要解决此问题，请在开发人员控制台中，将模式 `#release-cm-p1234-e5678` 添加到 URL 的末尾，其中 *1234* 是项目 ID，*5678* 是环境 ID。即将发布的版本中将解决此问题。
 
-## 的新增功能 [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## [!DNL Adobe Experience Manager Assets]的新增功能 {#aem-assets}
 
 **增强型智能标记的引导式用户体验，由 Adobe Sensei 提供支持**
 
 除通用智能标记以外，增强型智能标记还允许组织培训智能标记模型，以根据客户特定的业务标记识别图像。
 
-在此版本中，提供了新的引导式用户体验，可帮助为客户特定标记集设置智能标记培训，并使用资产进行培训，这些资产应会在将来进行识别和标记。现在提供了更直观的体验。使用增强型智能标记，可更直观地培训智能标记。请参阅 [如何将智能标记添加到资产](/help/assets/smart-tags.md).
+在此版本中，提供了新的引导式用户体验，可帮助为客户特定标记集设置智能标记培训，并使用资产进行培训，这些资产应会在将来进行识别和标记。现在提供了更直观的体验。使用增强型智能标记，可更直观地培训智能标记。请参阅[如何将智能标记添加到资源](/help/assets/smart-tags.md)。
 
 **支持 3D 内容的摄取、预览和交付**
 
@@ -177,7 +177,7 @@ AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven 
 * 能够使用资产处理配置文件重新处理资产，让用户完全控制该流程（运行完全资产处理，仅应用特定处理配置文件，并确定是否应运行处理后工作流）。
 * 现在，当基础群集实例在后台重新启动时，搜索查询返回结果的速度更快（之前在此类情况下，初始搜索运行可能会持续较长时间）。
 * 在 Assets 界面的列表视图和搜索结果中查看资产时，可按“名称”排序。请参阅[搜索资产](/help/assets/search-assets.md#sort)。
-* 在Assets界面的列表视图和搜索结果中查看资产时，可按“创建时间”（日期）排序。 请参阅[搜索资产](/help/assets/search-assets.md#sort)。
+* 在Assets界面的列表视图和搜索结果中查看资源时，可按“创建时间”（日期）排序。 请参阅[搜索资产](/help/assets/search-assets.md#sort)。
 * 支持使用资产微服务将 EPS 文件转换为图像。
 
 ### 错误修复 {#assets-bug-fixes}
@@ -190,4 +190,4 @@ AEMas a Cloud ServiceSDK API Jar（以前在该位置托管）现在位于Maven 
 * 下载资产时，如果选择了电子邮件选项，即使提供了有效的电子邮件 ID，下载选项也不可用。(CQ-4296535)
 * 另存为智能收藏集的自定义筛选器无法正确应用于资产。(CQ-4294942)
 * 多项搜索和索引增强功能与错误修复使性能得以提高。(CQ-4286373)
-* 无法在Assets中访问文件夹属性选项卡，并返回500错误。 (CQ-4295701)
+* 在Assets中无法访问文件夹属性选项卡，并返回500错误。 (CQ-4295701)

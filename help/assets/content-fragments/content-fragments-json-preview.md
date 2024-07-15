@@ -1,5 +1,5 @@
 ---
-title: 预览 — JSON呈现（资产 — 内容片段）
+title: 预览 — JSON表示形式(Assets — 内容片段)
 description: 了解如何在实施 AEM 无头解决方案时轻松预览内容片段的 JSON 表示形式。
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
@@ -20,7 +20,7 @@ ht-degree: 72%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
 使用&#x200B;**预览**&#x200B;图标：
 

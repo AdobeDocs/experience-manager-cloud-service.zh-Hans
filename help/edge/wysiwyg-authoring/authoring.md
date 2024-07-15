@@ -16,16 +16,16 @@ ht-degree: 85%
 
 Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选择来为 Edge Delivery Services 创作内容：
 
-* [通用编辑器](#universal-editor)  — 用于在AEM中创作内容的现代“所见即所得”(WYSIWYG) UI
+* [通用编辑器](#universal-editor) — 用于在AEM中创作内容的现代“所见即所得”(WYSIWYG) UI
 * [基于文档的创作](#document-based) - 例如 Microsoft Word 或 Google Docs
 
 ## 通用编辑器创作 {#universal-editor}
 
 将 Edge Delivery Services 与 AEM as a Cloud Service 结合使用时，需要了解的最基本情况是您创作的内容将保留在 AEM as a Cloud Service 中。
 
-![所见即所得创作如何与Edge Delivery Services配合使用](assets/how-aem-edge-works.png)
+![WYSIWYG创作如何与Edge Delivery Services配合使用](assets/how-aem-edge-works.png)
 
-1. [所见即所得创作环境](/help/sites-cloud/authoring/quick-start.md) 用于内容管理，如创建新页面、体验片段、内容片段等。
+1. [WYSIWYG创作环境](/help/sites-cloud/authoring/quick-start.md)用于内容管理，例如创建新页面、体验片段、内容片段等。
    * AEM 的所有功能均可用，例如工作流程、MSM、翻译、启动等。
 1. [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)用于创作 AEM 中管理的内容。
    * 通用编辑器为内容创作提供了全新且现代的用户界面。
@@ -50,7 +50,7 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 有关如何使用通用编辑器进行创作的详细信息，请参阅文档[使用通用编辑器创作内容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-请参阅 [用于Edge Delivery Services的WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 了解如何开始自己的项目，以便使用AEM和Edge Delivery Services进行创作。
+请参阅[用于Edge Delivery ServicesWYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解如何使用AEM和Edge Delivery Services开始您自己的项目以进行创作。
 
 ## 基于文档的创作  {#document-based}
 

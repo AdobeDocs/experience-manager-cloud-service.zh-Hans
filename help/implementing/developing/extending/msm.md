@@ -108,11 +108,11 @@ ht-degree: 93%
 
 使用存储库中的 `LiveAction` 配置节点，以存储影响 `LiveAction` 实例的运行时行为的信息。存储库中存储 `LiveAction` 配置的节点在运行时可用于 `LiveActionFactory` 对象。因此，您可以将属性添加到配置节点，并根据需要在 `LiveActionFactory` 实施中使用它们。
 
-例如， `LiveAction` 必须存储Blueprint作者的名称。 配置节点的属性包括存储该信息的 Blueprint 页面的属性名称。在运行时，`LiveAction` 会从配置中检索属性名称，然后获取属性值。
+例如，`LiveAction`必须存储Blueprint作者姓名。 配置节点的属性包括存储该信息的 Blueprint 页面的属性名称。在运行时，`LiveAction` 会从配置中检索属性名称，然后获取属性值。
 
 [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 方法的参数是一个 `Resource` 对象。该 `Resource` 对象表示转出配置中此实时操作的 `cq:LiveSyncAction` 节点。
 
-请参阅 [创建转出配置](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration) 以了解更多信息。
+有关详细信息，请参阅[创建转出配置](/help/sites-cloud/administering/msm/live-copy-sync-config.md#creating-a-rollout-configuration)。
 
 像往常一样，当使用配置节点时，您应该将其调整为 `ValueMap` 对象：
 
@@ -138,7 +138,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
    * `autoSave` 值表明您的 `LiveAction` 是否应该保存对存储库所做的更改
    * `reset` 值表示转出重置模式。
 
-从这些对象中，您可以获取有关 `LiveCopy`. 您还可以使用 `Resource` 对象，获取`ResourceResolver`、`Session`和`Node`对象。这些对象对于操作存储库内容非常有用：
+从这些对象中，您可以获取有关`LiveCopy`的信息。 您还可以使用 `Resource` 对象，获取`ResourceResolver`、`Session`和`Node`对象。这些对象对于操作存储库内容非常有用：
 
 在以下代码的第一行中，源是源页面的 `Resource` 对象：
 
@@ -177,7 +177,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 在此位置下，创建一个具有以下属性的节点：
 
-   * **名称**：转出配置的节点名称，例如， `contentCopy` 或 `workflow`
+   * **名称**：转出配置的节点名称，例如`contentCopy`或`workflow`
    * **类型**：`cq:RolloutConfig`
 
 1. 向该节点添加以下属性：
@@ -206,7 +206,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 添加类型为 `cq:LiveSyncAction` 的子节点，将同步操作添加到转出配置中。同步操作节点的顺序决定了操作发生的顺序。
 
-1. 在CRXDE Lite中，选择您的 [转出配置](#create-the-rollout-configuration) 节点，例如， `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`.
+1. 在CRXDE Lite中，选择您的[转出配置](#create-the-rollout-configuration)节点，例如`/apps/msm/myproject/rolloutconfigs/myrolloutconfig`。
 
 1. 创建具有以下节点属性的节点：
 
@@ -351,7 +351,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 以下 `LiveActionFactory` 类实施了一个 `LiveAction`，其中记录有关源页面和目标页面的消息，并将 `cq:lastModifiedBy` 属性从源节点复制到目标节点。该实时操作的名称是 `exampleLiveAction`。
 
-1. 在Eclipse项目资源管理器中，右键单击 `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` 包并单击 **新建** > **类**.
+1. 在Eclipse项目资源管理器中，右键单击`MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm`包并单击&#x200B;**新建** > **类**。
 
 1. 对于&#x200B;**名称**&#x200B;输入 `ExampleLiveActionFactory`，然后单击&#x200B;**完成**。
 
@@ -619,7 +619,7 @@ MSM 使用存储的语言和国家/地区代码列表来确定与页面语言版
 * 联系电子邮件:
 
    * 被排除在转出属性之外。
-   * 请参阅 [配置Live Copy同步](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) 以了解更多信息。
+   * 有关详细信息，请参阅[配置Live Copy同步](/help/sites-cloud/administering/msm/live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization)。
 
 * 主要视觉风格：
 

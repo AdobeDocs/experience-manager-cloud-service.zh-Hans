@@ -26,7 +26,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 ## 一般用法 {#general-usage}
 
-这些组件位于 **组件** 选项卡的页面编辑器 [编辑页面。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+在[编辑页面时，组件在页面编辑器侧面板的&#x200B;**组件**&#x200B;选项卡上可用。](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 您可以选择一个组件，并将其拖动到页面上的所需位置。然后，可以使用下列方法编辑该组件：
 
@@ -34,7 +34,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 * [编辑内容](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [编辑内容 – 全屏模式](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-有关将组件添加到页面的详细信息，请参阅 [编辑页面内容。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+有关将组件添加到页面的详细信息，请参阅[编辑页面内容。](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 ## 全部组件概述 {#overview-of-all-components}
 

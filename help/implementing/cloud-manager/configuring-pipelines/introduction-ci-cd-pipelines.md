@@ -56,7 +56,7 @@ Cloud Manager 提供两种类型的管道：
 除了生产和非生产，管道还可以根据其部署的代码类型进行区分。
 
 * **[全栈管道](#full-stack-pipeline)** – 同时部署后端和前端代码构建，其中包含一个或多个 AEM 服务器应用程序以及 HTTPD/Dispatcher 配置。
-* **[配置管道](#config-deployment-pipeline)**  — 在几分钟内配置和部署流量过滤器规则，包括WAF规则
+* **[配置管道](#config-deployment-pipeline)** — 在几分钟内配置和部署流量过滤器规则，包括WAF规则
 * **[前端管道](#front-end)** – 部署包含一个或多个客户端 UI 应用程序的前端代码版本。
 * **[Web 层配置管道](#web-tier-config-pipelines)** – 部署 HTTPD/Dispatcher 配置
 
@@ -118,7 +118,7 @@ Cloud Manager 提供两种类型的管道：
 
 通过配置管道，您可以在几分钟内配置和部署流量过滤器规则，包括WAF规则。
 
-请参阅 [包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 了解如何管理存储库中的配置，以便正确部署它们。
+请参阅[流量过滤器规则（包括WAF规则）](/help/security/traffic-filter-rules-including-waf.md)以了解如何管理存储库中的配置，以便正确部署这些配置。
 
 ### 配置管道 {#configure-config-deployment}
 

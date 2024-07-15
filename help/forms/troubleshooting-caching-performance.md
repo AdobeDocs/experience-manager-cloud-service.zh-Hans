@@ -36,7 +36,7 @@ ht-degree: 2%
 
 1. 打开您的Experience Manager项目。
 1. 打开 `dispatcher/scr/conf.d/rewrites/rewrite.rules` 以供编辑。
-1. 打开 `conf.d/httpd-dispatcher.conf` 或配置为在运行时加载的任何其他配置文件。
+1. 打开`conf.d/httpd-dispatcher.conf`或配置为在运行时加载的任何其他配置文件。
 1. 将以下代码添加到文件中并进行保存。 它是一个示例代码，可对其进行修改以适合您的环境。
 
 ```shellscript
@@ -61,7 +61,7 @@ CDN缓存在300秒后停止工作，所有在CDN上缓存的请求都将被重�
 
 要解决此问题，请将页面标题设置为0：
 
-1. 创建文件于 `src\conf.d\available_vhosts`
+1. 在`src\conf.d\available_vhosts`处创建文件
 
 1. 将以下内容添加到文件以设置age标头
 
@@ -73,4 +73,4 @@ CDN缓存在300秒后停止工作，所有在CDN上缓存的请求都将被重�
    ```
 
 1. 保存并关闭该文件。
-1. 修改以下项的软链接： `src\conf.d\enabled_vhosts\default.vhost` 指向新文件。
+1. 修改`src\conf.d\enabled_vhosts\default.vhost`的软链接以指向新文件。

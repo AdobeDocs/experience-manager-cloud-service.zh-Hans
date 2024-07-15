@@ -52,7 +52,7 @@ ht-degree: 89%
 
 * 导航，
 * **创建**&#x200B;新页面，
-* 选择现有页面并执行操作；例如， **编辑**，打开 **属性**， **锁定**， **复制**， **粘贴** 和 **删除**
+* 选择现有页面并采取行动；例如，**编辑**，打开&#x200B;**属性**，**锁定**，**复制**，**粘贴**&#x200B;和&#x200B;**删除**
   ![从“管理内容”导航到站点控制台中的启动项](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * 使用&#x200B;**引用**&#x200B;边栏以返回&#x200B;**启动项源**页面：
   ![站点控制台 – 启动项源](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

@@ -20,8 +20,8 @@ ht-degree: 1%
 
 通用编辑器允许您根据项目需求进行两种类型的适应。
 
-* [自定义通用编辑器](#customizing)  — 可以通过多个自定义配置调整通用编辑器的标准功能。
-* [扩展通用编辑器UI](#extending)  — 还可以使用App Builder扩展通用编辑器的UI，以满足您的项目需求。
+* [自定义通用编辑器](#customizing) — 可以通过多个自定义配置调整通用编辑器的标准功能。
+* [扩展通用编辑器UI](#extending) — 也可以使用App Builder扩展通用编辑器的UI，以满足您的项目需求。
 
 以下各节将详细介绍这两种类型。
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 某些创作工作流在发布之前需要审查内容。 在这种情况下，任何作者都不应可以使用发布选项。
 
-此 **Publish** 因此，可以通过添加以下元数据在应用程序中完全禁止显示按钮。
+因此，可以通过添加以下元数据在应用程序中完全隐藏&#x200B;**Publish**&#x200B;按钮。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
@@ -58,13 +58,13 @@ ht-degree: 1%
 ]
 ```
 
-然后，您可以通过添加属性来引用容器组件中的过滤器定义 `data-aue-filter`，传递您之前定义的过滤器的ID。
+然后，您可以通过添加属性`data-aue-filter`，传递您之前定义的筛选器的ID，从容器组件中引用筛选器定义。
 
 ```html
 data-aue-filter="container-filter"
 ```
 
-设置 `components` 过滤器定义中的属性 `null` 允许所有组件，就像没有过滤器一样。
+将筛选器定义中的`components`属性设置为`null`将允许所有组件，就像没有筛选器一样。
 
 ```json
 [
@@ -77,9 +77,9 @@ data-aue-filter="container-filter"
 
 ### 有条件地显示和隐藏属性边栏中的组件 {#conditionally-hide}
 
-尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，您可以通过添加 `condition` 归因于 [组件模型的字段。](/help/implementing/universal-editor/field-types.md#fields)
+尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型的[字段添加`condition`属性来隐藏属性边栏中的组件。](/help/implementing/universal-editor/field-types.md#fields)
 
-可以使用定义条件 [JsonLogic架构。](https://jsonlogic.com/) 如果条件为true，则会显示字段。 如果条件为false，则字段将隐藏。
+可以使用[JsonLogic架构定义条件。](https://jsonlogic.com/)如果条件为true，则将显示该字段。 如果条件为false，则字段将隐藏。
 
 >[!BEGINTABS]
 
@@ -118,18 +118,18 @@ data-aue-filter="container-filter"
 
 ## 扩展通用编辑器UI {#extending}
 
-作为Adobe Experience Cloud服务，可以使用应用程序生成器和Experience Manager扩展通用编辑器的UI。
+作为Adobe Experience Cloud服务，可以使用App Builder和Experience Manager扩展通用编辑器的UI。
 
-UI扩展是使用AdobeApp Builder构建的JavaScript应用程序，可以嵌入到在Adobe Experience Cloud统一外壳下运行的UI应用程序（例如通用编辑器）中。 您可以将自己的按钮和操作添加到标题菜单和属性边栏，并为通用编辑器创建自己的事件。
+UI扩展是使用AdobeApp Builder构建的JavaScript应用程序，可以嵌入在Adobe Experience Cloud unified shell下运行的UI应用程序，例如通用编辑器。 您可以将自己的按钮和操作添加到标题菜单和属性边栏，并为通用编辑器创建自己的事件。
 
 如果您想探索这些可能性，请参阅以下资源：
 
-1. [UI可扩展性](https://developer.adobe.com/uix/docs/)  — 这是UI扩展的开发人员文档。
-1. [UI可扩展性指南](https://developer.adobe.com/uix/docs/guides/)  — 关于如何开发您自己的扩展的分步说明
-1. [通用编辑器扩展点](https://developer.adobe.com/uix/docs/services/aem-universal-editor/)  — 特定于通用编辑器的扩展点文档
+1. [UI可扩展性](https://developer.adobe.com/uix/docs/) — 这是UI扩展的开发人员文档。
+1. [UI扩展性指南](https://developer.adobe.com/uix/docs/guides/) — 有关如何开发您自己的扩展的分步说明
+1. [通用编辑器扩展点](https://developer.adobe.com/uix/docs/services/aem-universal-editor/) — 特定于通用编辑器的扩展点文档
 
 >[!TIP]
 >
->如果您希望通过示例学习，请参见 [AEM用户界面可扩展性教程。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
+>如果您希望通过示例学习，请参阅[AEM UI可扩展性教程。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
 
-[使用AEM Sites中的Extension Manager，](https://developer.adobe.com/uix/docs/extension-manager/) 您可以基于每个实例启用或禁用扩展，访问Adobe的第一方扩展（包括通用编辑器的第一方扩展）等等。
+[在AEM Sites中使用Extension Manager，](https://developer.adobe.com/uix/docs/extension-manager/)您可以基于每个实例启用或禁用扩展，访问Adobe的第一方扩展，包括通用编辑器的第一方扩展等等。

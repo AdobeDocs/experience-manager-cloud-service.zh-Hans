@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.4.0 发行说明
-description: '"[!DNL Adobe Experience Manager] 2020.4.0版as a Cloud Service发行说明。”'
+description: "[!DNL Adobe Experience Manager]个2020.4.0版as a Cloud Service发行说明。"
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
 feature: Release Information
 role: Admin

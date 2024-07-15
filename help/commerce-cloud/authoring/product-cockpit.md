@@ -25,9 +25,9 @@ ht-degree: 1%
 
 ## 配置 {#configuration}
 
-必须在AEM中配置产品目录。 请参阅 [配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) 以了解更多信息。
+必须在AEM中配置产品目录。 有关详细信息，请参阅[配置存储和目录](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog)。
 
-启用暂存目录功能需要身份验证。 请参阅 [快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) 以了解更多信息。
+启用暂存目录功能需要身份验证。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 打开产品驾驶舱 {#opening-product-cockpit}
 
-访问产品驾驶舱的最简单方法是通过AEM主菜单中的“Commerce”菜单。 也可以使用Omnisearch(搜索Commerce)或 `https://<yourAEMInstance>/commerce.html`.
+访问产品驾驶舱的最简单方法是通过AEM主菜单中的“Commerce”菜单。 也可以使用Omnisearch(搜索Commerce)或打开`https://<yourAEMInstance>/commerce.html`。
 
 ![AEM菜单](../assets/aem-menu.png)
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 产品驾驶舱按照产品目录结构以分层方式组织。 第一级显示所有已配置产品目录的目录根级别，包括商务后端的元信息。
 
-![已配置的目录](../assets/catalog-overview.png)
+![配置的目录](../assets/catalog-overview.png)
 
 单击某个类别可加载该已单击类别的子项。
 
@@ -81,6 +81,6 @@ ht-degree: 1%
 
 ### AEM内容选项卡 {#content-tabs}
 
-这些按AEM内容类型（体验片段、内容片段、关联的资产）分组的选项卡显示与商务对象关联的AEM内容。 “查看详细信息”操作将打开一个包含选定内容的新浏览器选项卡。
+这些按AEM内容类型(体验片段、内容片段、关联的Assets)分组的选项卡显示与商务对象关联的AEM内容。 “查看详细信息”操作将打开一个包含选定内容的新浏览器选项卡。
 
 ![内容属性](../assets/content-properties.png)

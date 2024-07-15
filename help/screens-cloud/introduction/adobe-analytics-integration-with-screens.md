@@ -22,11 +22,11 @@ ht-degree: 0%
 本节涵盖以下主题：
 
 * **概述**
-* **体系结构详细信息**
+* **架构详细信息**
 
 ## 概述 {#overview}
 
-***AEM Screens*** 利用Adobe Analytics，借助该功能，您可以实现市场上独一无二的功能 — 跨渠道分析，即帮助将位置中显示的内容与其他数据源相关联。
+***AEM Screens***&#x200B;利用Adobe Analytics，借助它，您可以实现市场上独一无二的功能 — 跨渠道分析，帮助将位置中显示的内容与其他数据源相关联。
 
 AEM Screens提供了与Adobe Analytics的现成集成，并为您提供了使用证明。
 
@@ -39,7 +39,7 @@ AEM Screens提供了与Adobe Analytics的现成集成，并为您提供了使用
 * 允许创建反馈循环，以跟踪一段时间内的播放事件
 * 允许系统根据内容作者定义的成功标准修改内容和布局
 
-因此，Adobe Analytics与AEM Screens的集成强制执行以下操作 *目标*：
+因此，Adobe Analytics与AEM Screens的集成强制实施以下&#x200B;*目标*：
 
 * 实现数字标牌实施的ROI
 * 集成Analytics作为未来支持收集和分析使用信息的基础
@@ -63,4 +63,4 @@ AEM Screens客户想要了解在哪个时间显示了哪些内容，以及显示
 Analytics事件离线存储在indexedDB中，稍后进行分块并发送到云。
 
 >[!NOTE]
->要了解有关事件的顺序和标准数据模型的更多信息，请参阅 [为AEM Screens配置Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) 以了解详细信息。
+>要了解有关事件的顺序和标准数据模型的详细信息，请参阅[为AEM Screens配置Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html)。

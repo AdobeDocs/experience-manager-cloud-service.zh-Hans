@@ -28,19 +28,19 @@ Edge Delivery Services 是一组可组合的服务，通过这些服务，可非
 
 您可以通过通用编辑器来使用AEM内容管理和WYSIWYG创作功能，也可以使用基于文档的创作功能。
 
-AEMas a Cloud Service中的Cloud Manager允许您为项目启用边缘交付服务。
+AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery服务。
 
 >[!TIP]
 >
->有关Edge Delivery Services以及如何将其与AEM一起使用的详细信息，请参阅文档 [Edge Delivery Services概述。](/help/edge/overview.md)
+>有关Edge Delivery Services以及如何将其与AEM一起使用的详细信息，请参阅文档[Edge Delivery Services概述。](/help/edge/overview.md)
 
 ## Cloud Manager中的Edge Delivery Services {#edge-in-cloud-manager}
 
-如果您已将许可Edge Delivery Services作为Adobe Experience Manager Sites的一部分，则可以直接在Cloud Manager中使用Edge Delivery Services载入您的站点并上线 [使用引导式自助式体验。](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+如果您已将Edge Delivery Services作为Adobe Experience Manager Sites的一部分授予许可，则可以直接在Cloud Manager中使用Edge Delivery Services载入您的网站，并使用引导式自助服务体验上线[。](/help/implementing/cloud-manager/managing-code/private-repositories.md)
 
 这可为您的所有 AEM 属性提供统一的体验，确保与所有重要工作流（包括域名管理、SSL 证书管理和 CDN 映射）协调一致。
 
-Edge Delivery Services对两者都可用 [生产和沙盒程序。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+Edge Delivery Services对[生产和沙盒程序都可用。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 ## 启用Edge Delivery Services {#enabling}
 

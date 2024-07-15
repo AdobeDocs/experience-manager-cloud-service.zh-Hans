@@ -30,7 +30,7 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 >[!TIP]
 >
->有关预定义角色的详细信息，请参阅 [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md).
+>有关预定义角色的详细信息，请参阅[AEM as a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)。
 
 ## 使用自定义权限 {#using}
 
@@ -40,7 +40,7 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 1. [为产品配置文件分配自定义权限。](#assign-permissions)
 1. [将用户分配给产品配置文件。](#assign-users)
 
-本节详细介绍了这些步骤。 您可能会发现查看以下内容很有用 [术语](#terms) 和 [可配置权限](#configurable-permissions) 创建自己的自定义权限时显示的区域。
+本节详细介绍了这些步骤。 在创建自己的自定义权限时，您可能会发现查看[条款](#terms)和[可配置权限](#configurable-permissions)部分很有用。
 
 >[!NOTE]
 >
@@ -50,13 +50,13 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 首先，创建您可以为其分配自定义权限的产品配置文件。
 
-1. 登录Cloud Manager，网址为 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager。
 
-1. 在Cloud Manager登陆页面上，选择 **管理访问权限** 按钮。
+1. 在Cloud Manager登录页面上，选择&#x200B;**管理访问权限**&#x200B;按钮。
 
 ![“管理访问权限”按钮](assets/manage-access.png)
 
-1. 您将重定向到 Admin Console 的&#x200B;**产品**&#x200B;选项卡，可在其中管理 Cloud Manager 的用户和权限。在Admin Console中，选择 **新建配置文件** 按钮。
+1. 您将重定向到 Admin Console 的&#x200B;**产品**&#x200B;选项卡，可在其中管理 Cloud Manager 的用户和权限。在Admin Console中，选择&#x200B;**新建配置文件**&#x200B;按钮。
 
 ![“新配置文件”按钮](assets/admin-console-new-profile.png)
 
@@ -65,9 +65,9 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
    * **产品配置文件名称** - 配置文件的描述性名称
    * **显示名称** - UI（选项）中显示的缩写名称
    * **描述** - 配置文件的信息性描述，用于说明其用途（可选）
-   * **通过电子邮件通知用户**  — 选中后，用户添加到此配置文件或从中移除时会收到电子邮件通知。
+   * **通过电子邮件通知用户** — 在选中时，用户将在此配置文件中添加或删除时收到电子邮件通知。
 
-1. 选择 **保存** 完成后。
+1. 完成后，选择&#x200B;**保存**。
 
 新产品配置文件将保存并在 Admin Console 中的产品配置文件列表中可见。
 
@@ -75,28 +75,28 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 现在，您已拥有新的产品配置文件，可以向其分配自定义权限。
 
-1. 在Admin Console中，选择 [您创建的新产品配置文件](#create).
+1. 在Admin Console中，选择您创建的[新产品配置文件](#create)的名称。
 
 1. 在打开的窗口中，选择&#x200B;**权限**&#x200B;选项卡以查看可编辑权限的列表。
 
    ![可编辑权限](assets/permissions-tab.png)
 
-1. 选择 **编辑** 权限链接，以便您进行编辑。
+1. 选择权限的&#x200B;**编辑**&#x200B;链接，以便您可以对其进行编辑。
 
-1. 此 **编辑权限** 窗口打开。
+1. 将打开&#x200B;**编辑权限**&#x200B;窗口。
    * 您在上一步中选择的权限在左列中处于选定状态。
    * 可用于权限分配的权限项位于标记为&#x200B;**可用权限**&#x200B;项的中间列中。
    * 分配的权限项位于标记为&#x200B;**“包含的权限项”**&#x200B;的右列中。
 
    ![编辑权限项](assets/edit-permission-items.png)
 
-1. 选择加号(`+`)图标，以将其添加到列 **包含的权限项**.
+1. 选择权限项旁边的加号(`+`)图标，以便将其添加到列&#x200B;**包含的权限项**。
 
-   * 选择 `i` 图标（如果您想了解有关权限项目的更多信息）。
+   * 如果您想了解有关权限项的更多信息，请选择权限项旁边的`i`图标。
 
-1. 选择 **全部添加** 顶部按钮 **可用权限** 列，以便您可以添加所有权限。
+1. 选择&#x200B;**可用权限**&#x200B;列顶部的&#x200B;**添加全部**&#x200B;按钮，以便您可以添加所有权限。
 
-1. 选择 **保存** 当您完成新产品配置文件的权限项定义时。
+1. 完成新产品配置文件的权限项定义后，选择&#x200B;**保存**。
 
 新产品配置文件现已与其自定义权限一起保存。
 
@@ -104,13 +104,13 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 您现在可以将用户分配给使用自定义权限创建的新产品配置文件。
 
-1. 在Admin Console中，选择 [您为其分配了自定义权限的新产品配置文件。](#assign-permissions)
+1. 在Admin Console中，选择您为其分配自定义权限的[新产品配置文件的名称。](#assign-permissions)
 
 1. 在打开的窗口中，选择&#x200B;**用户**&#x200B;选项卡。
 
-1. 选择 **添加用户** 按钮并将用户分配给您具有自定义权限的新产品配置文件。
+1. 选择&#x200B;**添加用户**&#x200B;按钮并将用户分配给具有自定义权限的新产品配置文件。
 
-请参阅部分 **将用户和用户组添加到产品配置文件** 文档的 [管理企业用户的产品配置文件](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html) 以了解有关如何使用Admin Console的更多详细信息。
+有关如何使用此Admin Console的更多详细信息，请参阅文档[管理企业用户的产品配置文件](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)的&#x200B;**将用户和用户组添加到产品配置文件**&#x200B;部分。
 
 ## 可配置的权限 {#configurable-permissions}
 
@@ -153,10 +153,10 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 以下权限是组织级权限：
 
-* **项目创建**  — 此权限允许用户在组织中创建项目。
-* **存储库信息访问** 此租户/组织级别权限允许用户生成用户名、密码和存储库URL，用于访问和参与客户项目。
+* **项目创建** — 此权限允许用户在组织中创建项目。
+* **存储库信息访问**&#x200B;此租户/组织级别的权限允许用户生成用户名、密码和存储库URL，以便访问和参与客户项目。
    * 访问存储库的用户名和密码在组织中的所有存储库中都是通用的，但每个项目的存储库URL都是唯一的。
-   * 请参阅 [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md) 以了解更多信息。
+   * 有关详细信息，请参阅[访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
 ## 术语 {#terms}
 
@@ -164,7 +164,7 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 | 术语 | 描述 |
 |---|---|
-| 预定义的权限 | 预定义的角色，如 **业务负责人** 和 **部署管理员** 以管理Cloud Manager的各种功能。 有关预定义角色的详细信息，请参阅 [AEMas a Cloud Service团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md) |
+| 预定义的权限 | 预定义角色（如&#x200B;**业务负责人**&#x200B;和&#x200B;**部署管理员**）可管理Cloud Manager的各种功能。 有关预定义角色的详细信息，请参阅[AEM as a Cloud Service团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md) |
 | 自定义权限 | Cloud Manager功能允许用户创建权限配置文件以定义用来管理Cloud Manager所支持功能的角色 |
 | 产品配置文件 | 在Admin Console中创建，用于管理适用于权限配置文件中用户的可配置权限 |
 | 可配置的权限 | Cloud Manager 权限，可在权限配置文件中配置 |
@@ -196,7 +196,7 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 * 部署管理员
 * 开发人员
 
-有关预定义角色的详细信息，请参阅 [AEMas a Cloud Service团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md)
+有关预定义角色的详细信息，请参阅[AEM as a Cloud Service团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ### 引入自定义配置文件后，预定义的权限配置文件会发生什么情况？
 
@@ -216,4 +216,4 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 ### 如果用户有权编辑环境/管道，但无权访问包含该环境/管道的项目，会发生什么情况？
 
-在此情况下，如果用户没有以下项，则无法访问环境或管道： **项目访问** 包含环境或管道的权限。
+在这种情况下，如果用户没有包含环境或管道的&#x200B;**项目访问权限**&#x200B;权限，则无法访问环境或管道。

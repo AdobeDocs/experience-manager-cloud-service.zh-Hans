@@ -83,7 +83,7 @@ AEM为一些常用功能（编辑、属性、复制/粘贴、显示各种边栏�
 
 ## 页面编辑器的键盘快捷键 {#keyboard-shortcuts-for-the-page-editor}
 
-在整个 AEM 环境中都可以使用各种键盘快捷键。有些可应用于控制台的使用，其他则可应用于 [页面编辑](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
+在整个 AEM 环境中都可以使用各种键盘快捷键。有些可应用于控制台的使用，其他应用于[页面编辑](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)。
 
 ## 内容片段控制台的键盘快捷键 {#keyboard-shortcuts-for-the-content-fragments-console}
 

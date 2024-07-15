@@ -41,21 +41,21 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 单击可在左侧导航窗格中找到的&#x200B;**[!UICONTROL 见解]**&#x200B;以查看以下自动生成的图表：
 
-* **下载**：过去30天或12个月从Assets视图环境下载的资产数量，用折线图表示。
-  ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
+* **下载**：过去30天或12个月从Assets视图环境下载的资源数量，用折线图表示。
+  ![分析 — 下载](/help/assets/assets/insights-downloads2341.svg)
 
-* **上传**：过去30天或12个月内上传到Assets视图环境的资产数量，用折线图表示。
-  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+* **上传**：过去30天或12个月内上传到Assets视图环境的资源数，用折线图表示。
+  ![分析 — 上载](/help/assets/assets/insights-uplods2.svg)
   <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **存储使用情况**：使用条形图表示的Assets视图环境的存储使用情况（以字节为单位）。
-  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+  ![分析 — 上载](/help/assets/assets/insights-storage-usage1.svg)
   <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **热门搜索**：以表格格式查看过去 30 天或 12 个月内在资源视图环境中搜索最多的术语以及这些术语的搜索次数。
-  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
+  ![分析 — 上载](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)

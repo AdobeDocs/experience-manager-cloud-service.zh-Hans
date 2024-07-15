@@ -25,42 +25,42 @@ ht-degree: 0%
 
 要重新处理文件夹中的资产，请执行以下操作：
 
-1. 在 [!DNL Experience Manager]，从资产页面中，选择新添加的资产或要重新处理的资产。
+1. 在[!DNL Experience Manager]中，从Assets页面中，选择新添加的资源或要重新处理的资源。
 如果您选择文件夹：
 
    * 工作流会递归考虑选定文件夹中的所有文件。
    * 如果主选定文件夹中存在一个或多个具有资产的子文件夹，则工作流会重新处理文件夹层次结构中的每个资产。
    * 作为最佳实践，请避免在具有超过1000个资产的文件夹层次结构上运行此工作流。
 
-1. 选择 **[!UICONTROL 重新处理资产]**. 从以下两个选项中进行选择：
+1. 选择&#x200B;**[!UICONTROL 重新处理Assets]**。 从以下两个选项中进行选择：
 
-   ![重新处理资源选项](assets/reprocessing-assets-options.png)
+   ![重新处理Assets选项](assets/reprocessing-assets-options.png)
 
-   * **[!UICONTROL 完整流程]：** 当您想要执行整个流程(包括默认配置文件、自定义配置文件、动态处理（如果已配置）以及后处理工作流)时，请选择此选项。
-   * **[!UICONTROL 高级]：** 选择此选项可选择高级重新处理。
+   * **[!UICONTROL 完整流程]：**&#x200B;当您要执行包括默认配置文件、自定义配置文件、动态处理（如果已配置）和后处理工作流的整个流程时，请选择此选项。
+   * **[!UICONTROL 高级]：**&#x200B;选择此选项可选择高级重新处理。
 
-     ![高级重新处理资源选项](assets/reprocessing-assets-options-advanced.png)
+     ![高级重新处理Assets选项](assets/reprocessing-assets-options-advanced.png)
 
      从以下高级选项中进行选择：
 
-      * **[!UICONTROL 默认预览演绎版]：** 当您要重新处理默认预览的格式副本时，请选择此选项。
+      * **[!UICONTROL 默认预览演绎版]：**&#x200B;如果要重新处理默认预览的演绎版，请选择此选项。
 
-      * **[!UICONTROL 元数据]：** 如果要提取所选资源的元数据信息和智能标记，请选择此选项。
+      * **[!UICONTROL 元数据]：**&#x200B;如果要提取所选资源的元数据信息和智能标记，请选择此选项。
 
-      * **[!UICONTROL 处理配置文件]：** 当您要重新处理选定的配置文件时，请选择此选项。 您可以选择 **[!UICONTROL 完整流程]** 选项，以包含在文件夹级别分配的默认处理和自定义配置文件。
+      * **[!UICONTROL 处理配置文件]：**&#x200B;要重新处理选定的配置文件时，请选择此选项。 您可以选择&#x200B;**[!UICONTROL 完整流程]**选项以包括在文件夹级别分配的默认处理和自定义配置文件。
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL 后处理工作流]：** 如果需要对无法使用处理配置文件实现的资产进行额外处理，请选择此选项。 可以向配置中添加其他后处理工作流。 后处理允许您在使用资产微服务的可配置处理之上添加完全自定义的处理。
+      * **[!UICONTROL Post处理工作流]：**&#x200B;选择此选项时，需要额外处理无法使用处理配置文件实现的资源。 可以向配置中添加其他后处理工作流。 Post-processing允许您在使用资源微服务的可配置处理之上添加完全自定义的处理。
 
-请参阅 [使用资产微服务和处理配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) 了解有关处理用户档案和后处理工作流的更多信息。
+请参阅[使用资产微服务和处理配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)，了解有关处理配置文件和后处理工作流的详细信息。
 
-![高级重新处理资源选项2](assets/reprocessing-assets-options-advanced-2.png)
+![高级重新处理Assets选项2](assets/reprocessing-assets-options-advanced-2.png)
 
-选择适当的选项后，单击 **[!UICONTROL 重新处理]**. 此时将显示成功消息。
+选择适当的选项后，单击&#x200B;**[!UICONTROL 重新处理]**。 此时将显示成功消息。
 
 ## 重新处理数字资产的情况 {#scenarios-reprocessing}
 
-[!DNL Experience Manager] 允许重新处理以下组件的数字资产。
+[!DNL Experience Manager]允许重新处理以下组件的数字资产。
 
 ### 智能标记 {#reprocessing-smart-tags}
 
@@ -68,29 +68,29 @@ ht-degree: 0%
 
 与自然语言词汇相比，根据业务分类标记数字资产有助于使其与公司的业务保持一致，并确保最相关的资产出现在搜索中。
 
-详细了解 [视频资产的智能标记](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=en).
+阅读有关[视频资源智能标记](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=en)的更多信息。
 
-详细了解 [重新处理DAM中现有图像的颜色标记](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images).
+阅读有关[重新处理DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images)中现有图像的颜色标记的详细信息。
 
 ### 智能裁剪 {#reprocessing-smart-crop}
 
-详细了解 [Dynamic Media智能裁剪](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en) 可让您应用特定裁剪(**[!UICONTROL 智能裁剪]** 和像素裁剪)以及对上传的资源进行锐化配置。
+了解有关[Dynamic Media智能裁切](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en)的更多信息，该功能允许您对上传的资源应用特定裁切（**[!UICONTROL 智能裁切]**&#x200B;和像素裁切）和锐化配置。
 
 ### 元数据 {#reprocessing-metadata}
 
-[!DNL Adobe Experience Manager Assets] 保留每个资源的元数据。 它允许更轻松地分类和组织资产，并帮助查找特定资产的人员。 利用从上载到Experience Manager Assets的文件中提取元数据的功能，元数据管理与创作工作流集成。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。
+[!DNL Adobe Experience Manager Assets]保留每个资源的元数据。 它允许更轻松地分类和组织资产，并帮助查找特定资产的人员。 利用从上载到Experience Manager Assets的文件中提取元数据的功能，元数据管理与创作工作流集成。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。
 
-详细了解 [重新处理元数据配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en).
+阅读有关[重新处理元数据配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en)的详细信息。
 
 ### 重新处理文件夹中的Dynamic Media资源 {#reprocessing-dynamic-media}
 
-如果文件夹已具有现有的Dynamic Media图像配置文件或您后来更改的Dynamic Media视频配置文件，您可以重新处理该文件夹中的资产。 有关详细信息，请访问 [重新处理文件夹中的Dynamic Media资源。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+如果文件夹已具有现有的Dynamic Media图像配置文件或您后来更改的Dynamic Media视频配置文件，您可以重新处理该文件夹中的资产。 有关详细信息，请访问[重新处理文件夹中的Dynamic Media资源。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
 
 >[!NOTE]
 >
->您需要配置 [!DNL Dynamic Media] 在环境中启用Dynamic Media对话框。
+>您需要在环境中配置[!DNL Dynamic Media]以启用Dynamic Media对话框。
 >
 
 ### 工作流
 
-详细了解 [处理用户档案和后处理工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).
+阅读有关[处理配置文件和后处理工作流](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)的更多信息。

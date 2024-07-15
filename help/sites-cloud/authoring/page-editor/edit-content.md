@@ -20,9 +20,9 @@ AEM页面编辑器是一个用于创作页面内容的强大工具。 了解如�
 
 您可以在页面编辑器中执行三个基本操作来编辑内容：
 
-1. [添加新组件](#adding-components) 将它们拖放到页面上。
-1. [添加新资源](#adding-asset) 将它们拖放到页面上。
-1. [就地编辑组件](#edit-in-place) 页面上已存在的重复项。
+1. [通过拖放到页面上来添加新组件](#adding-components)。
+1. [通过拖放到页面上来添加新资源](#adding-asset)。
+1. [就地编辑页面中已存在的组件](#edit-in-place)。
 
 AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提供了对更高级功能的访问权限。
 
@@ -34,7 +34,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 ## 添加组件 {#adding-components}
 
-您可以通过从组件库中选择新组件来将这些组件拖放到页面上 [侧面板中的组件浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) 并将其放置在组件占位符中。
+您可以从侧面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)中的[组件浏览器中选择新组件并将它们拖放到组件占位符中，从而将新组件拖放到页面上。
 
 ### 组件占位符 {#component-placeholder}
 
@@ -44,7 +44,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
   ![向页面添加新组件时的占位符](assets/edit-content-component-placeholder.png)
 
-* 时间 [移动现有组件，](#movging-components) 它将显示为蓝色方块。
+* 当[移动现有组件](#movging-components)时，它将显示为蓝色正方形。
 
   ![在页面上移动现有组件时的占位符](assets/edit-content-move-placeholder.png)
 
@@ -52,12 +52,12 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 ### 从组件浏览器添加组件 {#adding-a-component-from-the-components-browser}
 
-您可以使用[组件浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)添加新组件。此 [组件占位符](#component-placeholder) 显示了组件所在的位置。
+您可以使用[组件浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)添加新组件。[组件占位符](#component-placeholder)显示组件所在的位置。
 
-1. 确保页面编辑器位于 [**编辑** 模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. 打开 [组件浏览器。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-1. 将所需的组件拖动到 [所需职位](#component-placeholder) 然后释放。
-1. [编辑](#edit-content) 新放置的元件。
+1. 确保页面编辑器处于&#x200B;[**编辑**&#x200B;模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. 打开[组件浏览器。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+1. 将所需的组件拖动到[所需的位置](#component-placeholder)并释放。
+1. [编辑](#edit-content)新放置的组件。
 
 >[!NOTE]
 >
@@ -65,18 +65,18 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 ### 从段落系统添加组件 {#adding-a-component-from-the-paragraph-system}
 
-您可以使用来添加新组件 **将组件拖动到此处** 段落系统的占位符：
+您可以使用段落系统的&#x200B;**将组件拖动到此处**&#x200B;占位符添加新组件：
 
-1. 确保页面编辑器位于 [**编辑** 模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. 确保页面编辑器处于&#x200B;[**编辑**&#x200B;模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
 1. 可通过以下两种方式在段落系统中选择和添加新组件：
 
    * 从现有组件的工具栏或&#x200B;**将组件拖动到此处**&#x200B;框中选择&#x200B;**插入组件**&#x200B;选项 (+)。
 
      ![插入组件](assets/edit-content-drag-components-here.png)
 
-   * 如果您使用的是桌面设备，则可以双击 **将组件拖动到此处** 盒子。
+   * 如果您使用的是桌面设备，则可以双击&#x200B;**将组件拖动到此处**&#x200B;框。
 
-1. 此 **插入新组件** 对话框打开，允许您选择所需的组件。 点按或单击要添加的组件。
+1. 打开&#x200B;**插入新组件**&#x200B;对话框，允许您选择所需的组件。 点按或单击要添加的组件。
 
    * 使用搜索筛选器查找组件。
    * 使用组件名称旁边的信息图标了解有关该组件的更多信息。
@@ -87,17 +87,17 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 ## 添加资产 {#adding-asset}
 
-您还可以通过从以下位置拖动资产，向页面中添加新组件： [资产浏览器。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) 这会自动创建相应类型的组件（并包含资产）。
+您还可以通过从[资源浏览器拖动资源来向页面添加新组件。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)这将自动创建相应类型的组件（并包含资产）。
 
-可针对您的安装配置此行为。请参阅文档 [组件参考指南](/help/implementing/developing/components/reference.md#component-placeholders) 以了解更多详细信息。
+可针对您的安装配置此行为。有关更多详细信息，请参阅文档[组件参考指南](/help/implementing/developing/components/reference.md#component-placeholders)。
 
 要通过拖动以上某一资源类型创建组件，请执行以下操作：
 
-1. 确保您的页面位于 [**编辑** 模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. 确保您的页面处于&#x200B;[**编辑**&#x200B;模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
 1. 打开[资源浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)。
-1. 将所需的资源拖动到所需位置。此 [组件占位符](#component-placeholder) 显示组件的放置位置，以及插入组件时显示的目标。
+1. 将所需的资源拖动到所需位置。[组件占位符](#component-placeholder)显示组件所在的位置，如果插入该组件，将显示目标。
 1. 将资产发布到目标上。 在包含选定资产的所需位置创建一个适合该资产类型的组件。
-1. [编辑](#edit-content) 组件（如有必要）。
+1. 如有必要，请[编辑](#edit-content)该组件。
 
 >[!NOTE]
 >
@@ -113,31 +113,31 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 组件工具栏中可用的操作适用于所选的组件。 您可能会看到更多或更少的内容，具体取决于您选择的组件，此处可能会介绍这些组件，也可能不介绍这些组件。
 
-* **编辑** 用于修改组件的内容，通常是就地修改。 其行为取决于组件。
+* **编辑**&#x200B;允许您修改组件的内容，通常是就地修改。 其行为取决于组件。
 
   ![编辑按钮](assets/edit-content-edit.png)
 
-* **配置** 用于更改某些不直接与其内容相关的组件参数，通常在对话框中。 其行为取决于组件。
+* **Configure**&#x200B;允许您更改组件的一些与其内容不直接相关的参数，通常是在对话框中。 其行为取决于组件。
 
   ![“配置”按钮](assets/edit-content-configure.png)
 
-* **复制** 将组件复制到剪贴板以粘贴到其他位置。 原始元件保持不变。
+* **复制**&#x200B;将组件复制到剪贴板以粘贴到其他位置。 原始元件保持不变。
 
   ![“复制”按钮](assets/edit-content-copy.png)
 
-* **剪切** 将组件复制到剪贴板。 原始组件将被删除。
+* **剪切**&#x200B;将组件复制到剪贴板。 原始组件将被删除。
 
   ![“剪切”按钮](assets/edit-content-cut.png)
 
-* **删除** 使用您的确认从页面中删除组件。
+* **Delete**&#x200B;会从包含您确认的页面中删除该组件。
 
   ![“删除”按钮](assets/edit-content-delete.png)
 
-* **插入组件** 打开对话框，转到 [添加新组件。](#adding-a-component-from-the-paragraph-system)
+* **插入组件**&#x200B;打开对话框以[添加新组件。](#adding-a-component-from-the-paragraph-system)
 
   ![“插入”按钮](assets/edit-content-insert-component.png)
 
-* **粘贴** 将组件从剪贴板粘贴到页面。 原件是否保留，取决于您是否使用了 **复制** 或 **剪切**.
+* **粘贴**&#x200B;将组件从剪贴板粘贴到页面。 原始文件是否保留，取决于您使用的是&#x200B;**副本**&#x200B;还是&#x200B;**剪切**。
 
    * 您可以粘贴到同一页面或其他页面。
    * 如果粘贴到剪切/复制操作之前已打开的其他页面，则必须刷新该页面才能看到粘贴的内容。
@@ -146,29 +146,29 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
   ![“粘贴”按钮](assets/edit-content-paste.png)
 
-* **组** 允许您同时选择多个组件。 在桌面设备上&#x200B;**按住 Ctrl 并单击**&#x200B;或&#x200B;**按住 Command 并单击**&#x200B;可实现同样的操作。
+* **组**&#x200B;允许您同时选择多个组件。 在桌面设备上&#x200B;**按住 Ctrl 并单击**&#x200B;或&#x200B;**按住 Command 并单击**&#x200B;可实现同样的操作。
 
   ![“组”按钮](assets/edit-content-group.png)
 
-* **父级** 选择选定组件的父组件。
+* **Parent**&#x200B;选择选定组件的父组件。
 
   ![“父项”按钮](assets/edit-content-parent.png)
 
-* **布局** 可让您修改 [布局](#editing-component-layout) 选定组件的。
+* **布局**&#x200B;允许您修改所选组件的[布局](#editing-component-layout)。
 
    * 此操作仅适用于选定组件，而不会激活整个页面的[布局模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)。
 
   ![“布局”按钮](assets/edit-content-layout.png)
 
-* **转换为体验片段变量** 允许您创建 [体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md) 或将它添加到现有的体验片段中。
+* **转化为体验片段变体**&#x200B;允许您从选定的组件创建[体验片段](/help/sites-cloud/authoring/fragments/content-fragments.md)，或将其添加到现有的体验片段中。
 
   ![“转换为体验片段”按钮](assets/edit-content-convert.png)
 
 ### 组件编辑对话框 {#component-edit-dialog}
 
-某些组件提供了就地可用内容以外的其他编辑选项。 您可以打开组件的“编辑”对话框，它会 [组件工具栏的“编辑”（铅笔）图标](#component-toolbar) 以访问其他配置选项。
+某些组件提供了就地可用内容以外的其他编辑选项。 您可以打开组件的“编辑”对话框，即组件工具栏](#component-toolbar)的[编辑（铅笔）图标以访问其他配置选项。
 
-确切的编辑选项取决于组件。对于某些组件 [某些操作将仅在全屏模式下可用](#edit-content-full-screen-mode). 例如：
+确切的编辑选项取决于组件。对于某些组件[，某些操作将仅在全屏模式](#edit-content-full-screen-mode)下可用。 例如：
 
 * 文本组件
 
@@ -188,9 +188,9 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 ![全屏模式下的图像组件](assets/edit-content-image-component-full-screen.png)
 
-使用 **最小化** 按钮以存在全屏模式。
+使用&#x200B;**最小化**&#x200B;按钮以存在全屏模式。
 
-![“最小化”按钮](assets/edit-content-minimize.png)
+![最小化按钮](assets/edit-content-minimize.png)
 
 ## 移动组件 {#moving-components}
 
@@ -199,7 +199,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 1. 通过长按或长按选择要移动的组件。
 1. 将组件拖动到新位置。
 
-   * 页面编辑器通过指示组件的位置 [占位符](#component-placeholder) 以及可以与目标一起删除段落的位置。
+   * 页面编辑器指示具有[占位符](#component-placeholder)的组件的位置，以及可以使用目标放置段落的位置。
 
    ![移动组件](assets/edit-content-move-placeholder.png)
 
@@ -213,13 +213,13 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 您无需为了调整组件而反复不停地从编辑模式切换到[布局模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md)，而是可以为组件选择&#x200B;**布局**&#x200B;操作来更改该组件的布局，在此过程中，由于不必离开编辑模式，从而节省了大量时间。
 
-1. 时间 **编辑** 在站点控制台的模式下，选择一个组件以显示该组件的工具栏。
+1. 在站点控制台的&#x200B;**编辑**&#x200B;模式下，选择一个组件以显示该组件的工具栏。
 
-1. 选择 **布局** 用于调整组件布局的操作。
+1. 选择&#x200B;**布局**&#x200B;操作以调整组件的布局。
 
    ![组件工具栏的“布局”按钮](assets/edit-content-layout.png)
 
-1. 在选择Layout操作后，您可以像在中一样修改组件的布局 [布局模式。](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
+1. 在选择Layout操作后，您可以像在[布局模式下一样修改组件的布局。](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
 
    * 将显示用于调整组件大小的手柄。
    * 在屏幕的顶部将显示模拟器工具栏。
@@ -227,7 +227,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
    ![布局模式下的组件](assets/edit-content-layout-mode.png)
 
-1. 在进行必要的布局更改后，点按或单击 **关闭** 组件操作菜单中的按钮以停止修改组件的布局，组件工具栏将返回到其正常的编辑状态。
+1. 在进行必要的布局更改后，点按或单击组件操作菜单中的&#x200B;**关闭**&#x200B;按钮以停止修改组件的布局，组件工具栏将返回到其正常的编辑状态。
 
    ![页面组件的组件工具栏](assets/edit-content-layout-close.png)
 
@@ -250,10 +250,10 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
   ![“取消继承”按钮](assets/edit-content-cancel-inheritance.png)
 
-* **重新启用继承** 如果继承已取消
+* 如果继承已取消，则&#x200B;**重新启用继承**
 
   ![“重新启用继承”按钮](assets/edit-content-re-enable-inheritance.png)
 
-* **转出** 也在Blueprint或Live Copy源中可用
+* **转出**&#x200B;也在Blueprint或Live Copy源中可用
 
   ![“转出”按钮](assets/edit-content-rollout.png)

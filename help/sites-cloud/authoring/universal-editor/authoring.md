@@ -37,22 +37,22 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ## 访问通用编辑器 {#accessing}
 
-一旦检测到应用程序可以使用通用编辑器，就可以在AEMas a Cloud Service内直接访问通用编辑器，而无需访问AEM。
+一旦检测到应用程序可以使用通用编辑器，则可在AEM as a Cloud Service内部直接访问通用编辑器，而无需访问AEM。
 
-### 在AEMas a Cloud Service中访问 {#accessing-aem}
+### 在AEM as a Cloud Service中访问 {#accessing-aem}
 
-1. 登录您的AEMas a Cloud Service创作实例。
-1. 使用 [**站点** 控制台](/help/sites-cloud/authoring/sites-console/introduction.md) 导航到为与要编辑的通用编辑器一起使用而创建的页面。
+1. 登录您的AEM as a Cloud Service创作实例。
+1. 使用&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)导航到为与要编辑的通用编辑器一起使用而创建的页面。
 1. 编辑页面。
 1. 将打开通用编辑器以编辑选定的页面。
 
 >[!NOTE]
 >
->在中编辑页面时 [**站点** 控制台，](/help/sites-cloud/authoring/sites-console/introduction.md) 控制台将打开与页面对应的编辑器 [模板：](/help/sites-cloud/authoring/sites-console/templates.md) 本文档中描述的通用编辑器，或者 [页面编辑器。](/help/sites-cloud/authoring/page-editor/introduction.md)
+>在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中编辑页面时，控制台将打开适用于该页面的[模板](/help/sites-cloud/authoring/sites-console/templates.md)的编辑器，可以是本文档中描述的通用编辑器，也可以是[页面编辑器。](/help/sites-cloud/authoring/page-editor/introduction.md)
 
 ### 直接访问 {#accessing-directly}
 
-1. 登录通用编辑器。 您需要Adobe ID才能登录和 [有权访问通用编辑器。](/help/implementing/universal-editor/getting-started.md#request-access)
+1. 登录通用编辑器。 您需要Adobe ID才能登录，[才能访问通用编辑器。](/help/implementing/universal-editor/getting-started.md#request-access)
 
 1. 登录后，将要编辑的页面的 URL 输入到[地址栏](#location-bar)中，这样您就可以开始编辑内容，例如[文本内容](#text-mode)或[媒体内容](#media-mode)。
 
@@ -111,7 +111,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 ### 通用编辑器工具栏 {#universal-editor-toolbar}
 
-Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Cloud标头。](#experience-cloud-header)它为您提供了快速访问权限，以便导航到另一个页面进行编辑以及发布当前页面。
+Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的正下方。](#experience-cloud-header)它为您提供了快速访问权限，以便导航到另一个页面进行编辑以及发布当前页面。
 
 ![通用编辑器工具栏](assets/universal-editor-toolbar.png)
 
@@ -127,7 +127,7 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 >[!NOTE]
 >
->要使用通用编辑器编辑的任何页面必须 [用于支持通用编辑器。](/help/implementing/universal-editor/getting-started.md)
+>要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器。](/help/implementing/universal-editor/getting-started.md)
 
 #### 位置栏 {#location-bar}
 
@@ -141,13 +141,13 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 >[!NOTE]
 >
->要使用通用编辑器编辑的任何页面必须 [用于支持通用编辑器。](/help/implementing/universal-editor/getting-started.md)
+>要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器。](/help/implementing/universal-editor/getting-started.md)
 
 #### 身份验证标头设置 {#authentication-settings}
 
-如果需要，请选择身份验证标头设置图标 [设置自定义身份验证标头，用于本地开发。](/help/implementing/universal-editor/developer-overview.md#auth-header)
+如果需要[设置自定义身份验证标头以进行本地开发，请选择身份验证标头设置图标。](/help/implementing/universal-editor/developer-overview.md#auth-header)
 
-![“身份验证标题设置”按钮](assets/authentication-header-settings.png)
+![身份验证标题设置按钮](assets/authentication-header-settings.png)
 
 #### 模拟器设置 {#emulator}
 
@@ -175,7 +175,7 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 >[!TIP]
 >
->使用热键 `P` 在预览模式之间切换。
+>使用热键`P`切换到预览模式或从预览模式切换。
 
 #### 打开应用程序预览 {#open-app-preview}
 
@@ -289,9 +289,9 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 >[!TIP]
 >
->默认情况下，点击或单击内容会选择进行编辑。 如果要通过以下链接导航内容，请切换到 [预览模式。](#preview-mode)
+>默认情况下，点击或单击内容会选择进行编辑。 如果要通过以下链接导航内容，请切换到[预览模式。](#preview-mode)
 
-根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在中为内容提供其他信息和选项。 [属性边栏。](#properties-rail)
+根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在[属性边栏中为该内容提供其他信息和选项。](#properties-rail)
 
 ### 编辑纯文本 {#edit-plain-text}
 
@@ -303,7 +303,7 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 当您选择选择文本组件时，其详细信息将显示在属性边栏中。 您还可以编辑边栏中的文本。
 
-![编辑属性边栏中的文本](assets/ue-editing-text-component-rail.png)
+![在属性边栏中编辑文本](assets/ue-editing-text-component-rail.png)
 
 此外，可在属性边栏中找到有关文本的详细信息。 一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
 
@@ -315,8 +315,8 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 为方便起见，文本上的格式选项和详细信息可在两个位置使用。
 
-* 此 **上下文菜单** 会在富文本块上方打开，并在上下文中提供基本的格式选项。 由于空间限制，某些选项可能隐藏在省略号按钮后面。
-* 此 **属性边栏** 显示所有可用的格式选项以及文本。
+* **上下文菜单**&#x200B;在RTF块上方打开，并在上下文中提供基本的格式设置选项。 由于空间限制，某些选项可能隐藏在省略号按钮后面。
+* **属性边栏**&#x200B;显示所有可用的格式设置选项以及文本。
 
 一旦焦点离开已编辑的字段，更改将自动保存。
 
@@ -329,13 +329,13 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 1. 点按或单击属性边栏中选定图像的预览。
 1. [资源选择器](/help/assets/asset-selector.md#using-asset-selector)窗口会打开，以供您选择资源。
 1. 选择以选择新资源。
-1. 选择 **选择** 以返回到替换资产的属性边栏。
+1. 选择&#x200B;**选择**&#x200B;以返回到替换资产的属性边栏。
 
 更改将会自动保存到您的内容中。
 
 ### 编辑内容片段 {#edit-content-fragment}
 
-如果您选择 [内容片段，](/help/sites-cloud/administering/content-fragments/overview.md) 您可以在属性边栏中编辑其详细信息。
+如果选择[内容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，您可以在属性边栏中编辑其详细信息。
 
 ![编辑内容片段](assets/ue-edit-cf.png)
 
@@ -345,7 +345,7 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
 
-如果您想在 [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md) 相反，请单击 [编辑按钮](#edit) 在模式边栏中。
+如果要改在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑内容片段，请在模式边栏中单击[编辑按钮](#edit)。
 
 根据工作流的需求，您可能需要在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
 
@@ -394,7 +394,7 @@ Universal Editor工具栏始终显示在屏幕顶部的正下方 [Experience Clo
 
 编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
 
-在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换出 [预览模式。](#preview-mode)
+在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换出[预览模式。](#preview-mode)
 
 ## 其他资源 {#additional-resources}
 

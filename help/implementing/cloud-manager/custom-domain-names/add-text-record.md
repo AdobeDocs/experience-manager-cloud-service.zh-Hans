@@ -49,4 +49,4 @@ dig TXT _aemverification.example.com -t txt
 
 >[!TIP]
 >
->有几个 [DNS查找工具](https://www.ultratools.com/tools/dnsLookup) 可用。 Google DoH 可用于查找 TXT 记录条目，并确定 TXT 纪录是否丢失或错误。
+>有几个[DNS查找工具](https://www.ultratools.com/tools/dnsLookup)可用。 Google DoH 可用于查找 TXT 记录条目，并确定 TXT 纪录是否丢失或错误。

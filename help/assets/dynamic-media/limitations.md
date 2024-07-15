@@ -11,7 +11,7 @@ exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
 source-git-commit: 973cec704b5e8f34e3b2c448fc10e09226ffa933
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
@@ -30,11 +30,11 @@ ht-degree: 2%
 
 | 资源 — 限制类型 | 最佳实践 | 施加的限制 |
 | --- | --- | --- |
-| **图像**  — 每个图像的智能裁剪数 | 5 | 100 |
-| **所有集**  — 每组重复的资源数 | 无重复项 | 20 |
-| **所有集**  — 每组最大资源数 | 每组5至10个图像 | 1000 |
-| **旋转集**  — 每个2D集的最大行/列数 | 每组12-18个图像 | 1000 |
-| **PDF**  — 考虑进行提取的PDF的最大页数 |  | 100(适用于所有PDF) |
+| **图像** — 每个图像的智能裁剪数 | 5 | 100 |
+| **所有集** — 每个集的重复资源数 | 无重复项 | 20 |
+| **所有集** — 每个集的最大资源数 | 每组5至10个图像 | 1000 |
+| **旋转集** — 每个2D集的最大行数/列数 | 每组12-18个图像 | 1000 |
+| **PDF** — 要考虑进行提取的PDF的最大页数 |  | 100(适用于所有PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
@@ -61,8 +61,8 @@ and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
 * SSL（安全套接字层）2.0
 * SSL 3.0
-* TLS（传输层安全性） 1.0和1.1
-* TLS 1.2中的以下弱加密：
+* TLS（传输层安全性）1.0 和 1.1
+* TLS 1.2 中的以下弱密码：
    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
    * `TLS_RSA_WITH_AES_256_GCM_SHA384`

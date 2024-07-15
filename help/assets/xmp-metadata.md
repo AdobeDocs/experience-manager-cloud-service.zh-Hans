@@ -21,13 +21,13 @@ ht-degree: 17%
 
 XMP（可扩展元数据平台）是Experience Manager Assets用于所有元数据管理的元数据标准。 XMP为各种应用程序的元数据的创建、处理和交换提供了一个标准格式。
 
-除了提供可以嵌入到所有文件格式的通用元数据编码之外，XMP还提供了 [内容模型](#xmp-core-concepts) 和 [受Adobe支持](#advantages-of-xmp) 和其他公司，以便将XMP的用户与 [!DNL Assets] 拥有强大的平台进行构建。
+除了提供可以嵌入到所有文件格式的通用元数据编码之外，XMP还提供丰富的[内容模型](#xmp-core-concepts)以及[受Adobe](#advantages-of-xmp)和其他公司支持，因此XMP与[!DNL Assets]结合的用户可以构建一个强大的平台。
 
 ## XMP概述和生态系统 {#xmp-ecosystem}
 
-[!DNL Assets] 原生支持XMP元数据标准。 XMP是在数字资产中处理和存储标准化的专有元数据的标准。 XMP旨在作为允许多个应用程序有效地使用元数据的通用标准。
+[!DNL Assets]本机支持XMP元数据标准。 XMP是在数字资产中处理和存储标准化的专有元数据的标准。 XMP旨在作为允许多个应用程序有效地使用元数据的通用标准。
 
-例如，生产专业人员使用Adobe应用程序中内置的XMP支持跨多种文件格式传递信息。 此 [!DNL Assets] 存储库提取XMP元数据并使用它来管理内容生命周期，并提供创建自动化工作流程的功能。
+例如，生产专业人员使用Adobe应用程序中内置的XMP支持跨多种文件格式传递信息。 [!DNL Assets]存储库提取XMP元数据并使用它来管理内容生命周期，并提供创建自动化工作流的功能。
 
 XMP通过提供数据模型、存储模型和架构，标准化元数据的定义、创建和处理方式。 本节将介绍所有这些概念。
 
@@ -52,64 +52,65 @@ XMP标准设计为可扩展，允许您向XMP数据添加自定义类型的元�
 
 >[!NOTE]
 >
->XMP通常不允许嵌入二进制数据类型。 要在XMP中携带二进制数据（例如缩略图图像），必须以XML友好格式对其进行编码，例如 `Base64`.
+>XMP通常不允许嵌入二进制数据类型。 要在XMP中承载二进制数据（例如缩略图图像），必须以XML友好格式（如`Base64`）对其进行编码。
 
 ### XMP核心概念 {#xmp-core-concepts}
 
 **命名空间和架构**
 
-XMP架构是公共XML命名空间中的一组属性名称，其中包括数据类型和描述性信息。 XMP架构由其XML命名空间URI标识。 使用命名空间可以防止不同架构中具有相同名称但不同含义的属性之间发生冲突。
+XMP架构是公共XML命名空间中的一组属性名称，其中包括
+数据类型和描述性信息。 XMP架构由其XML命名空间URI标识。 使用命名空间可以防止不同架构中具有相同名称但不同含义的属性之间发生冲突。
 
-例如， **创建者** 两个独立设计的架构中的资产可能是指创建资产的人，也可能是指创建资产的应用程序(例如，Adobe Photoshop)。
+例如，两个独立设计的架构中的&#x200B;**Creator**&#x200B;属性可能是指创建资产的人，也可能是指创建资产的应用程序(例如，Adobe Photoshop)。
 
 **XMP属性和值**
 
 XMP可能包括来自一个或多个架构的属性。 例如，许多Adobe应用程序使用的典型子集可能包括：
 
-* 都柏林核心架构： `dc:title`， `dc:creator`， `dc:subject`， `dc:format`， `dc:rights`
-* XMP基本架构： `xmp:CreateDate`， `xmp:CreatorTool`， `xmp:ModifyDate`， `xmp:metadataDate`
-* XMP权限管理架构： `xmpRights:WebStatement`， `xmpRights:Marked`
-* XMP媒体管理模式： `xmpMM:DocumentID`
+* 都柏林核心架构： `dc:title`，`dc:creator`，`dc:subject`，`dc:format`，`dc:rights`
+* XMP基本架构： `xmp:CreateDate`，`xmp:CreatorTool`，`xmp:ModifyDate`，`xmp:metadataDate`
+* XMP权限管理架构： `xmpRights:WebStatement`，`xmpRights:Marked`
+* XMP媒体管理架构： `xmpMM:DocumentID`
 
-**替代语言**
+**语言替代项**
 
-XMP使您能够添加 `xml:lang` 属性到文本属性以指定文本的语言。
+XMP允许您将`xml:lang`属性添加到文本属性以指定文本的语言。
 
 ## XMP写回到演绎版 {#xmp-writeback-to-renditions}
 
-中的此XMP写回功能 [!DNL Adobe Experience Manager Assets] 将元数据更改复制到原始资源的演绎版。
-从中更改资源的元数据时 [!DNL Assets] 上传资源时，最初将更改存储在资源层次结构的元数据节点中。 利用写回功能，可将元数据更改传播到资源的所有或特定演绎版。 该功能只写回那些使用的元数据属性 `jcr` namespace，即名为的属性 `dc:title` 写回，但有一个名为 `mytitle` 不是。
+[!DNL Adobe Experience Manager Assets]中的此XMP写回功能将元数据更改复制到原始资源的演绎版。
+当您从[!DNL Assets]内更改资源的元数据或上传资源时，更改最初存储在资源层次结构的元数据节点中。 利用写回功能，可将元数据更改传播到资源的所有或特定演绎版。 该功能仅写回那些使用`jcr`命名空间的元数据属性，即名为`dc:title`的属性被写回，但名为`mytitle`的属性没有被写回。
 
-例如，考虑一个方案，其中您修改了 [!UICONTROL 标题] 标题为的资产属性 `Classic Leather` 到 `Nylon`.
+例如，考虑一个方案，其中您将标题为`Classic Leather`的资源的[!UICONTROL Title]属性修改为`Nylon`。
 
 ![元数据](assets/metadata.png)
 
-在本例中， [!DNL Assets] 将更改保存到 **[!UICONTROL 标题]** 中的属性 `dc:title` 资源层次结构中存储的资源元数据的参数。
+在本例中，[!DNL Assets]将更改保存到资源层次结构中存储的资源元数据的`dc:title`参数中的&#x200B;**[!UICONTROL Title]**&#x200B;属性。
 
 ![元数据存储在存储库的资源节点中](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->默认情况下，中的回写功能未启用 [!DNL Assets]. 了解如何 [启用元数据写回](#enable-xmp-writeback). MSM for digital assets不适用于启用了元数据写回的情况。 在写回时，继承会中断。
+>默认情况下，[!DNL Assets]中未启用写回功能。 了解如何[启用元数据写回](#enable-xmp-writeback)。 MSM for digital assets不适用于启用了元数据写回的情况。 在写回时，继承会中断。
 
 ### 启用XMP写回 {#enable-xmp-writeback}
 
-[!UICONTROL DAM元数据写回] 工作流用于写回资源的元数据。 要启用写回，请按照以下三种方法之一操作：
+[!UICONTROL DAM元数据写回]工作流用于写回资源的元数据。 要启用写回，请按照以下三种方法之一操作：
 
 * 使用启动器。
-* 手动启动 `DAM MetaData Writeback` 工作流。
+* 手动启动`DAM MetaData Writeback`工作流。
 * 将工作流配置为后处理的一部分。
 
 要使用启动器，请执行以下步骤：
 
-1. 作为管理员，访问 **[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 启动器]**.
-1. 选择 [!UICONTROL 启动器] 对于 **[!UICONTROL 工作流]** 列显示 **[!UICONTROL DAM元数据写回]**. 单击 **[!UICONTROL 属性]** 工具栏中。
+1. 作为管理员，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 启动器]**。
+1. 选择&#x200B;**[!UICONTROL 工作流]**&#x200B;列显示&#x200B;**[!UICONTROL DAM元数据写回]**&#x200B;的[!UICONTROL 启动器]。 单击工具栏中的&#x200B;**[!UICONTROL 属性]**。
 
    ![选择DAM元数据写回启动器以修改其属性并激活它](assets/launcher-properties-metadata-writeback1.png)
 
-1. 选择 **[!UICONTROL 激活]** 在 **[!UICONTROL 启动器属性]** 页面。 单击“**[!UICONTROL 保存并关闭]**”。
+1. 在&#x200B;**[!UICONTROL 启动器属性]**&#x200B;页面上选择&#x200B;**[!UICONTROL 激活]**。 单击“**[!UICONTROL 保存并关闭]**”。
 
-要将工作流手动应用于资产一次，请应用 [!UICONTROL DAM元数据写回] 工作流。
+要仅手动将工作流应用于资产一次，请从左边栏应用[!UICONTROL DAM元数据写回]工作流。
 
 要将工作流应用于所有上传的资产，请将该工作流添加到后处理配置文件。
 

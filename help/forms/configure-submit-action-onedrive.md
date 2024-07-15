@@ -17,7 +17,7 @@ ht-degree: 67%
 
 **[!UICONTROL 提交到 OneDrive]**&#x200B;提交操作将自适应表单与 Microsoft® OneDrive 连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的Microsoft® OneDrive存储。
 
-AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
 
 ## 优点
 
@@ -33,7 +33,7 @@ AEM Forms与Microsoft® OneDrive无缝集成的一些优势包括：
 为AEM Forms提交配置OneDrive，请执行以下步骤：
 
 1. [创建 OneDrive 配置](#create-a-onedrive-configuration-create-onedrive-configuration)：它将 AEM Forms 连接到 Microsoft® OneDrive 存储。
-2. [在自适应表单中使用提交到OneDrive提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：它将您的自适应表单连接到配置的Microsoft® OneDrive。
+2. [在自适应表单中使用提交到OneDrive提交操作](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af)：此操作将您的自适应表单连接到配置的Microsoft® OneDrive。
 
 ### 创建 OneDrive 配置 {#create-onedrice-configuration}
 

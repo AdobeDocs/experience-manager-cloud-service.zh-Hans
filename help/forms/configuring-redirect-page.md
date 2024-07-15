@@ -21,20 +21,20 @@ ht-degree: 6%
 
 表单作者可为每个表单配置一个页面，表单用户在提交表单后会重定向到该页面。
 
-1. 在编辑模式下，选择一个组件，然后单击 ![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后单击 ![cmppr](assets/configure-icon.svg).
+1. 在编辑模式下，选择一个组件，然后单击![字段级](assets/select_parent_icon.svg) > **[!UICONTROL 自适应表单容器]**，然后单击![cmppr](assets/configure-icon.svg)。
 
-1. 在侧栏中，单击 **[!UICONTROL 提交]**.
+1. 在侧栏中，单击&#x200B;**[!UICONTROL 提交]**。
 
-1. 在下提供重定向页面的URL **[!UICONTROL 重定向URL/路径]** 在 **[!UICONTROL 提交]** 部分。
+1. 在&#x200B;**[!UICONTROL 提交]**&#x200B;部分的&#x200B;**[!UICONTROL 重定向URL/路径]**&#x200B;下提供重定向页面的URL。
 1. 或者，在提交操作下，对于提交到REST端点操作，您可以配置要传递到重定向页面的参数。
 
    ![重定向页面配置](assets/redirect-url.png)
 
    重定向页面配置
 
-表单作者可以使用传递到“感谢”页面的以下参数。 对于所有可用的提交操作， `status` 和 `owner` 参数被传递。 除了这两个参数之外，还会为以下提交操作传递一些其他参数：
+表单作者可以使用传递到“感谢”页面的以下参数。 对于所有可用的提交操作，传递`status`和`owner`参数。 除了这两个参数之外，还会为以下提交操作传递一些其他参数：
 
-* **[!UICONTROL 提交到REST端点]**：传递为字段内到参数映射添加的参数。 `status` 和 `owner` 在此提交操作中未传递参数。 有关更多信息，请参阅 [配置提交到REST端点提交操作](configuring-submit-actions.md).
+* **[!UICONTROL 提交到REST终结点]**：传递为字段内到参数映射添加的参数。 未在此提交操作中传递`status`和`owner`参数。 有关详细信息，请参阅[配置提交到REST终结点提交操作](configuring-submit-actions.md)。
 
 >[!MORELIKETHIS]
 >

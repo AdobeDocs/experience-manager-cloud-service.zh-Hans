@@ -163,7 +163,7 @@ Experience Manager Assets 现在提供[通过单击来重命名资产或文件�
 
   您可以通过您的官方电子邮件 ID 向 `aem-forms-ea@adobe.com` 发送电子邮件，以加入早期采用者计划并请求对该功能的访问权限。
 
-* **[您可以利用实时监控(RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** 为AEMas a Cloud Service启用客户端收集。
+* **[您可以利用Real Use Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**启用AEM as a Cloud Service的客户端收集。
 Real Use Monitoring (RUM) Data Service提供了对用户交互的更精确的反映，从而确保了对网站参与度的可靠衡量。 这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
   如果您有兴趣测试这项新功能并分享您的反馈，请从您与您的 Adobe ID 关联的电子邮件地址将一封电子邮件发送到 `aemcs-rum-adopter@adobe.com`，其中包含您要为其启用 RUM 的每个环境的域名。然后，Adobe的产品团队将为您启用实时监控(RUM)数据服务。

@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service2022.5.0版中迁移工具的发行说明
-description: AEMas a Cloud Service2022.5.0版中迁移工具的发行说明
+title: AEM as a Cloud Service 2022.5.0版中的迁移工具发行说明
+description: AEM as a Cloud Service 2022.5.0版中的迁移工具发行说明
 feature: Release Information
 exl-id: 1aa49e85-1914-44d9-bcf7-0a1b03926df0
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 5%
 
 ---
 
-# AEMas a Cloud Service2022.5.0版中迁移工具的发行说明 {#release-notes}
+# AEM as a Cloud Service 2022.5.0版中的迁移工具发行说明 {#release-notes}
 
-此页概述了AEMas a Cloud Service2022.5.0中迁移工具的发行说明。
+此页概述了AEM as a Cloud Service 2022.5.0中迁移工具的发行说明。
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -24,7 +24,7 @@ Best Practices Analyzer v2.1.30的发布日期是2022年6月1日。
 ### 新增功能 {#what-is-new-bpa}
 
 * 能够使用CoralUI和Classic对话框构件检测和报告自定义对话框构件的使用情况。 建议将自定义经典对话框构件从ExtJS转换为CoralUI。 自定义Coral对话框构件应更新为CoralUI3。
-* 能够检测和报告Assets Share Commons的使用情况和版本。 AEMas a Cloud Service上不支持Asset Share Commons 1.x，必须将其升级到2.x。
+* 能够检测和报告Assets Share Commons的使用情况和版本。 AEM as a Cloud Service上不支持Asset Share Commons 1.x，必须将其升级到2.x。
 * 能够检测和报告版本中的节点数。
 * 能够检测和报告自定义复制代理或已修改的现成复制代理。
 
@@ -54,4 +54,4 @@ Cloud Acceleration Manager的发布日期是2022年6月2日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager现在为用户提供了启动和管理内容传输的功能，以便作为迁移项目的一部分，将内容从客户的AEM实例(内部部署或AdobeManaged Services)移动到AEMas a Cloud Service。 请参阅 [使用内容传输卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) 以了解更多详细信息。
+* Cloud Acceleration Manager现在为用户提供了启动和管理内容传输的功能，以便将内容从客户的AEM实例(内部部署或AdobeManaged Services)移动到AEM as a Cloud Service，作为迁移项目的一部分。 有关更多详细信息，请参阅[使用内容传输卡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer)。

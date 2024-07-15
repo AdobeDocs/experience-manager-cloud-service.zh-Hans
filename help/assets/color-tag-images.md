@@ -38,15 +38,15 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能区分图像中�
 
 要管理图像的颜色标记属性，请执行以下操作：
 
-1. 导航到 **[!UICONTROL 工具>资产>颜色标记]**.
+1. 导航到&#x200B;**[!UICONTROL 工具> Assets >颜色标记]**。
 
    ![颜色标记属性](assets/color-tag-settings.png)
 
-1. 指定中颜色标签的显示格式 **[!UICONTROL 显示格式]** 字段。 可能的选项包括颜色名称、RGB或十六进制格式。
+1. 在&#x200B;**[!UICONTROL 显示格式]**&#x200B;字段中指定颜色标记的显示格式。 可能的选项包括颜色名称、RGB或十六进制格式。
 
-1. 指定要为中的图像标记的颜色数量 **[!UICONTROL 限制]** 字段。 当您查看图像的属性时，将显示这些颜色。 您可以在此字段中定义介于1和40之间的数字。 此字段的默认值为10色。
+1. 在&#x200B;**[!UICONTROL 限制]**&#x200B;字段中指定要为图像标记的颜色数量。 当您查看图像的属性时，将显示这些颜色。 您可以在此字段中定义介于1和40之间的数字。 此字段的默认值为10色。
 
-1. 指定最小颜色覆盖率百分比，以在搜索结果中包含颜色标记 **[!UICONTROL 覆盖率/优势阈值%]** 字段。 例如，如果图像中红色颜色的覆盖率为10%，而您在此字段中定义了9%，则在搜索具有红色颜色的图像时，将会包含该图像。 但是，如果图像中红色颜色的覆盖率为10%，并且您在此字段中定义了11%，则在搜索具有红色颜色的图像时，不会包含该图像。
+1. 在&#x200B;**[!UICONTROL 覆盖率/优势阈值%]**&#x200B;字段中指定最小颜色覆盖率百分比，以便在搜索结果中包含颜色标记。 例如，如果图像中红色颜色的覆盖率为10%，而您在此字段中定义了9%，则在搜索具有红色颜色的图像时，将会包含该图像。 但是，如果图像中红色颜色的覆盖率为10%，并且您在此字段中定义了11%，则在搜索具有红色颜色的图像时，不会包含该图像。
 
    您可以在此字段中指定介于5和100之间的任意数字。 默认值为 11。
 
@@ -66,11 +66,11 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能区分图像中�
 
 要在文件夹级别禁用颜色标记，请执行以下操作：
 
-1. 导航到 **[!UICONTROL Adobe Experience Manager >资源>文件]**.
+1. 导航到&#x200B;**[!UICONTROL Adobe Experience Manager > Assets >文件]**。
 
-1. 选择文件夹并单击 **[!UICONTROL 属性]**.
+1. 选择文件夹并单击&#x200B;**[!UICONTROL 属性]**。
 
-1. 在 **[!UICONTROL 资产处理]** 选项卡，导航到 **[!UICONTROL 图像的颜色标记]** 文件夹。 从下拉列表中选择以下值之一：
+1. 在&#x200B;**[!UICONTROL 资产处理]**&#x200B;选项卡中，导航到&#x200B;**[!UICONTROL 图像的颜色标记]**&#x200B;文件夹。 从下拉列表中选择以下值之一：
 
    * 已继承 — 文件夹从父文件夹继承启用或禁用选项。
 
@@ -82,7 +82,7 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能区分图像中�
 
 ## 配置元数据架构以添加智能颜色标记组件 {#configure-metadata-schema}
 
-元数据架构包含要填写的特定信息的特定字段。 它还包含布局信息，以便以用户友好的方式显示元数据字段。 元数据属性包括标题、描述、MIME类型、标记等。 您可以使用 [!UICONTROL 元数据架构Forms] 编辑器以修改现有架构或添加自定义元数据架构。
+元数据架构包含要填写的特定信息的特定字段。 它还包含布局信息，以便以用户友好的方式显示元数据字段。 元数据属性包括标题、描述、MIME类型、标记等。 您可以使用[!UICONTROL 元数据架构Forms]编辑器来修改现有架构或添加自定义元数据架构。
 
 >[!NOTE]
 >
@@ -90,15 +90,15 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能区分图像中�
 
 要将智能颜色标记组件添加到元数据架构表单编辑器，请执行以下操作：
 
-1. 导航到 **[!UICONTROL 工具>资产>元数据架构]**.
+1. 导航到&#x200B;**[!UICONTROL 工具> Assets >元数据架构]**。
 
-1. 选择架构名称并单击 **[!UICONTROL 编辑]**.
+1. 选择架构名称并单击&#x200B;**[!UICONTROL 编辑]**。
 
-1. 拖动 **[!UICONTROL 智能颜色标记]** 从 **[!UICONTROL 构建表单]** 按tab键转到 **[!UICONTROL 元数据架构表单编辑器]**.
+1. 将&#x200B;**[!UICONTROL 智能颜色标记]**&#x200B;从&#x200B;**[!UICONTROL 生成表单]**&#x200B;选项卡拖到&#x200B;**[!UICONTROL 元数据架构表单编辑器]**&#x200B;中。
 
-1. 单击 **[!UICONTROL 智能颜色标记字段]** 在 **[!UICONTROL 元数据架构表单编辑器]**.
+1. 单击&#x200B;**[!UICONTROL 元数据架构表单编辑器]**&#x200B;中的&#x200B;**[!UICONTROL 智能颜色标记字段]**。
 
-1. 在中指定适当的值 **[!UICONTROL 字段标签]** 中的字段 **[!UICONTROL 设置]**  选项卡。
+1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡的&#x200B;**[!UICONTROL 字段标签]**&#x200B;字段中指定适当的值。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -106,36 +106,36 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能区分图像中�
 
 ## DAM中现有图像的颜色标记 {#color-tags-existing-images}
 
-DAM中的现有图像不会自动进行颜色标记。 [!UICONTROL 重新处理资产] 手动为其生成颜色标记。
+DAM中的现有图像不会自动进行颜色标记。 [!UICONTROL 手动重新处理Assets]以为其生成颜色标记。
 
 要对资源存储库中存在的图像或资源文件夹（包括子文件夹）进行颜色标记，请执行以下步骤：
 
-1. 选择 [!DNL Adobe Experience Manager] 徽标，然后从中选择资源 [!UICONTROL 导航] 页面。
+1. 选择[!DNL Adobe Experience Manager]徽标，然后从[!UICONTROL 导航]页面中选择资源。
 
-1. 选择 [!UICONTROL 文件].
+1. 选择[!UICONTROL 文件]。
 
 1. 在Assets界面中，导航到要应用颜色标记的文件夹。
 
 1. 选择整个文件夹或特定图像。
 
-1. 选择 ![“重新处理资产”图标](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 重新处理资产] 图标，然后选择 [!UICONTROL 完整流程] 选项。
+1. 选择![重新处理资源图标](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL 重新处理Assets]图标并选择[!UICONTROL 完整处理]选项。
 
-流程完成后，导航至 [!UICONTROL 属性] 文件夹中任意图像的页面。 自动添加的标记将显示在 [!UICONTROL 智能颜色标记] 中的部分 [!UICONTROL 基本] 选项卡。
+进程完成后，导航到文件夹中任何图像的[!UICONTROL 属性]页面。 自动添加的标记显示在[!UICONTROL 基本]选项卡的[!UICONTROL 智能颜色标记]部分中。
 
 
 ## 查看图像的智能颜色标记 {#view-color-tags}
 
 要查看图像的智能颜色标记，请执行以下操作：
 
-1. 导航到 **[!UICONTROL Adobe Experience Manager >资源>文件]**.
+1. 导航到&#x200B;**[!UICONTROL Adobe Experience Manager > Assets >文件]**。
 
 1. 单击相应的文件夹，然后选择图像。
 
-1. 选择 **[!UICONTROL 属性]** 并查看 **[!UICONTROL 智能颜色标记]** 字段。
+1. 选择&#x200B;**[!UICONTROL 属性]**&#x200B;并查看&#x200B;**[!UICONTROL 智能颜色标记]**&#x200B;字段中的标记。
 
    ![查看颜色标记](assets/view-color-tags.png)
 
-   将鼠标悬停在颜色标记上，以便查看 **[!UICONTROL 覆盖率/优势阈值%]** 图像颜色的URL。
+   将鼠标悬停在颜色标记上，以便可以查看图像中颜色的&#x200B;**[!UICONTROL 覆盖率/优势阈值%]**。
 
 ## 配置AEM Assets颜色谓词 {#configure-search-predicate}
 
@@ -145,19 +145,19 @@ DAM中的现有图像不会自动进行颜色标记。 [!UICONTROL 重新处理�
 >
 >仅当您未使用默认搜索表单时，才配置AEM Assets颜色谓词。
 
-要配置搜索过滤器，请使用资产管理员搜索边栏创建资产颜色谓词。
+要配置搜索过滤器，请使用Assets管理员搜索边栏创建资源颜色谓词。
 
 要配置搜索过滤器，请执行以下操作：
 
-1. 导航到 **[!UICONTROL “工具”>“常规”>“搜索Forms”]**.
+1. 导航到&#x200B;**[!UICONTROL 工具>常规>搜索Forms]**。
 
-1. 选择 **[!UICONTROL 资产管理搜索边栏]** 并单击 **[!UICONTROL 编辑]**.
+1. 选择&#x200B;**[!UICONTROL Assets管理员搜索边栏]**，然后单击&#x200B;**[!UICONTROL 编辑]**。
 
-1. 拖动 **[!UICONTROL 资源颜色谓词]** 从 **[!UICONTROL 选择谓词]** 按tab键转到 **[!UICONTROL 搜索表单编辑器]**.
+1. 将&#x200B;**[!UICONTROL 资源颜色谓词]**&#x200B;从&#x200B;**[!UICONTROL 选择谓词]**&#x200B;选项卡拖到&#x200B;**[!UICONTROL 搜索表单编辑器]**。
 
-1. 在中指定适当的值 **[!UICONTROL 字段标签]** 中的字段 **[!UICONTROL 设置]**  选项卡。
+1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡的&#x200B;**[!UICONTROL 字段标签]**&#x200B;字段中指定适当的值。
 
-1. 单击 **[!UICONTROL 完成]** 以保存设置。
+1. 单击&#x200B;**[!UICONTROL 完成]**&#x200B;以保存设置。
 
    >[!VIDEO](https://video.tv.adobe.com/v/340110)
 
@@ -165,22 +165,22 @@ DAM中的现有图像不会自动进行颜色标记。 [!UICONTROL 重新处理�
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-配置所有颜色标记属性和 [配置资产颜色谓词](#search-images-based-on-colors)，您可以基于颜色作为过滤器来搜索图像。
+在配置所有颜色标记属性和[配置Assets颜色谓词](#search-images-based-on-colors)后，您可以基于颜色作为过滤器来搜索图像。
 
 要根据颜色搜索图像，请执行以下操作：
 
-1. 导航到 **[!UICONTROL 资源>文件]**.
+1. 导航到&#x200B;**[!UICONTROL Assets >文件]**。
 
-1. 选择 **[!UICONTROL 筛选]** 下拉列表中。
-   ![筛选资产](assets/filter-assets.png)
+1. 从下拉列表中选择&#x200B;**[!UICONTROL 筛选器]**。
+   ![筛选Assets](assets/filter-assets.png)
 
-1. 选择 [AEM Assets颜色谓词](#configure-search-predicate).
+1. 选择[AEM Assets颜色谓词](#configure-search-predicate)。
 
 1. 拖动拾色器以选择相应的颜色。 所选的颜色将显示在拾色器下方的只读字段中。 可以选择RGB或十六进制作为颜色的显示格式。
 
    ![拾色器](assets/color-picker-color-tags.png)
 
-   您可以根据选择的一种颜色来过滤图像。 将所选颜色作为智能颜色标记之一的图像，其上方为 [覆盖率/优势阈值%](#manage-color-tagging-settings) 显示在右侧窗格中。
+   您可以根据选择的一种颜色来过滤图像。 将选定颜色作为智能颜色标记之一并超过[覆盖率/优势阈值%](#manage-color-tagging-settings)的图像将显示在右侧窗格中。
 
 1. 单击搜索栏中的X可清除过滤器。
 

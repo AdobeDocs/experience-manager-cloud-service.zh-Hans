@@ -15,9 +15,9 @@ ht-degree: 0%
 
 此部分介绍Screensas a Cloud Service的Dispatcher配置。
 
-## 在Dispatcher for Screensas a Cloud Service部署中添加筛选器和缓存规则 {#deployment}
+## 在Dispatcher中添加筛选器和缓存规则以用于Screensas a Cloud Service部署 {#deployment}
 
-在Dispatcher中为Screensas a Cloud Service中的发布实例允许使用以下过滤器和缓存规则。
+在Dispatcher中允许对Screensas a Cloud Service中的发布实例使用以下过滤器和缓存规则。
 
 ### AEM Screens筛选器 {#filters}
 
@@ -34,12 +34,12 @@ ht-degree: 0%
 
 ### 缓存规则 {#cache-rules}
 
-* 添加 `/statfileslevel "10"` 到 `/cache` 中的部分 `publish_farm.any`/.
+* 将`/statfileslevel "10"`添加到`publish_farm.any`/中的`/cache`分区。
 
   >[!NOTE]
   >此缓存规则支持从缓存docroot中缓存最多10个级别，并在发布内容时使无效，而不是使所有内容无效。 您可以根据内容结构的设置深度更改此级别。
 
-* 将以下内容添加到 `/invalidate` 中的部分 `publish_farm.any`.
+* 将以下内容添加到`publish_farm.any`中的`/invalidate`分区。
 
   ```
   /0003 {
@@ -48,7 +48,7 @@ ht-degree: 0%
   }
   ```
 
-* 将以下规则添加到 `/rules` 中的部分 `/cache` publish_farm.any中或从包含的文件中 `publish_farm.any`.
+* 将以下规则添加到publish_farm.any中`/cache`的`/rules`部分或从`publish_farm.any`包含的文件中。
 
   ```
   ## Allow Dispatcher Cache for Screens channels

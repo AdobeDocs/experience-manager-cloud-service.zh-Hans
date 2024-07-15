@@ -24,7 +24,7 @@ Clientlib 允许您扩展默认实现，以启用新功能，同时重新使用�
 * 取决于创作 clientlib `cq.authoring.editor.sites.page`。
 * 成为相应 `cq.authoring.editor.sites.page.hook` 类别的一部分。
 
-请参阅 [在AEMas a Cloud Service上使用客户端库](/help/implementing/developing/introduction/clientlibs.md).
+请参阅[在AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)上使用客户端库。
 
 ## 叠加 {#overlays}
 
@@ -32,9 +32,9 @@ Clientlib 允许您扩展默认实现，以启用新功能，同时重新使用�
 
 创建叠加时，不需要原件的 1:1 副本，因为[ Sling 资源合并器](/help/implementing/developing/introduction/sling-resource-merger.md)允许继承。
 
-欲了解更多信息，请参见 [JS文档集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+有关详细信息，请参阅[JS文档集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
 
-有关叠加的详细信息，请参阅 [Adobe Experience Manager as a Cloud Service的叠加](/help/implementing/developing/introduction/overlays.md).
+有关叠加的详细信息，请参阅Adobe Experience Manager as a Cloud Service的[叠加](/help/implementing/developing/introduction/overlays.md)。
 
 ## 添加新层（模式） {#add-new-layer-mode}
 
@@ -160,7 +160,7 @@ Clientlib 允许您扩展默认实现，以启用新功能，同时重新使用�
 
 ## 添加新的页面操作。 {#add-a-new-page-action}
 
-要向页面工具栏中添加新的页面操作，例如， **返回站点** （控制台）操作。
+向页面工具栏中添加新的页面操作，例如&#x200B;**返回站点** （控制台）操作。
 
 ### 代码示例 {#code-sample-3}
 

@@ -149,7 +149,7 @@ interface SelectedDestination {
 
 此示例说明如何在 Unified Shell 下运行 [!DNL Adobe] 应用程序时或在您已生成用于身份验证的 `imsToken` 时，将目标选择器与非 SUSI 流结合使用。
 
-使用以下方式在您的代码中包含目标选择器包 `script` 标记，如中所示 _第6-15行_ 例如下面的示例。 加载脚本后， `PureJSSelectors` 全局变量可供使用。 定义目标选择器 [属性](#destination-selector-properties) 如中所示 _第16-23行_. `imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现目标选择器，请调用 `renderDestinationSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。目标选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
+使用`script`标记在您的代码中包含目标选择器包，如下面的示例中的&#x200B;_行6-15_&#x200B;所示。 加载脚本后，`PureJSSelectors`全局变量即可使用。 定义目标选择器[属性](#destination-selector-properties)，如&#x200B;_行16-23_&#x200B;中所示。 `imsOrg` 和 `imsToken` 属性是非 SUSI 流中的身份验证所必需的。`handleSelection` 属性用于处理选定资源。要呈现目标选择器，请调用 `renderDestinationSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。目标选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
 
 通过执行这些步骤，您可以在 [!DNL Adobe] 应用程序中将目标选择器用于非 SUSI 流。
 
@@ -190,14 +190,14 @@ interface SelectedDestination {
 
 | 属性 | 类型 | 必需 | 默认 | 描述 |
 |---|---|---|---|---|
-| *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。此 `imsOrg` 需要密钥来验证您访问的组织是否处于Adobe IMS下。 |
-| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。`imsToken` 如果您使用的是SUSI流，则不是必需的。 但是，如果您使用的是非SUSI流，则需要使用。 |
-| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。`apiKey` 如果您使用的是SUSI流，则不是必需的。 但是，它在非 SUSI 流程中是必需的。 |
-| *rootPath* | 字符串 | 否 | /content/dam/ | 目标选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径， `/content/dam/marketing/subfolder/`，目标选择器不允许您遍历任何父文件夹，但仅显示子文件夹。 |
+| *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。需要使用`imsOrg`密钥来验证您访问的组织是否位于Adobe IMS下。 |
+| *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用SUSI流，则不需要`imsToken`。 但是，如果您使用的是非SUSI流，则需要使用。 |
+| *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用SUSI流，则不需要`apiKey`。 但是，它在非 SUSI 流程中是必需的。 |
+| *rootPath* | 字符串 | 否 | /content/dam/ | 目标选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径`/content/dam/marketing/subfolder/`，目标选择器不允许您遍历任何父文件夹，但只显示子文件夹。 |
 | *hasMore* | 布尔型 | 否 | | 当应用程序有更多内容要显示时，您可以使用此属性添加加载器，并加载内容以使其在应用程序中可见。它是一个表示内容加载正在进行的指示器。 |
 | *orgName* | 布尔型 | 否 | | 它是与 AEM 关联的组织名称（可能是 orgID） |
 | *initRepoID* | 字符串 | 否 | | 这是您要在默认初始视图中使用的资源存储库的路径 |
-| *onCreateFolder* | 字符串 | 否 | | 此 `onCreateFolder` 属性允许您添加图标，以在应用程序中添加新文件夹。 |
+| *onCreateFolder* | 字符串 | 否 | | `onCreateFolder`属性允许您添加在应用程序中添加新文件夹的图标。 |
 | *onConfirm* | 字符串 | 否 | | 当您点击确认按钮时，这是一个回调。 |
 | *confirmDisabled* | 字符串 | 否 | | 此属性可控制确认按钮的切换。 |
 | *viewType* | 字符串 | 否 | | `viewType` 属性用于指定用于显示资源的视图。 |
@@ -262,7 +262,7 @@ interface SelectedDestination {
 
 ### 创建文件夹 {#create-new-folder}
 
-它允许您在 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+它允许您在[!DNL Adobe Experience Manager]的目标文件夹中创建一个文件夹作为[!DNL Cloud Service]。
 
 ### 视图类型 {#types-of-view}
 
@@ -279,4 +279,4 @@ interface SelectedDestination {
 
 ### 选择文件夹 {#select-folder}
 
-通过选择文件夹按钮，您可以选择资源以执行与关联的各种操作 [属性](#destination-selector-properties) 在目标选择器上。
+“选择文件夹”按钮允许您选择资源，以便执行与目标选择器上的[属性](#destination-selector-properties)相关联的各种操作。

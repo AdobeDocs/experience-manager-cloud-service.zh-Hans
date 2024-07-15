@@ -131,7 +131,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 >
 >要使用 Universal Editor 编辑您的站点，您必须使用基于 Chromium 的浏览器。
 
-1. 从GitHub下载最新的通过Edge Delivery Services站点模板进行WYSIWYG创作，网址为 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. 从GitHub的[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)处下载最新的使用Edge Delivery Services站点模板进行WYSIWYG创作。
 
 1. 登录到您的 AEM as a Cloud Service 创作实例，导航到“站点”控制台，然后点击或单击&#x200B;**创建** -> **从模板创建站点**。
 
@@ -199,4 +199,4 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 >[!TIP]
 >
->有关创建已启用WYSIWYG创作且将AEMas a Cloud Service作为内容源的新Edge Delivery Services项目的端到端演练，请查看 [本AEM GEM网络研讨会。](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有关创建启用WYSIWYG创作且将AEM as a Cloud Service作为内容源的新Edge Delivery Services项目的端到端演练，请查看[此AEM GEM网络研讨会。](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

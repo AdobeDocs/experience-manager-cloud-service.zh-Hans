@@ -12,7 +12,7 @@ ht-degree: 85%
 
 ---
 
-# 将资源发布到Brand Portal {#publish-assets-to-brand-portal}
+# Publish资源到Brand Portal {#publish-assets-to-brand-portal}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -25,17 +25,17 @@ ht-degree: 85%
 
 如果您随后在 AEM Assets 中对原始资产、文件夹或收藏集进行了修改，则在从 AEM Assets 重新发布之前，这些更改不会反映在 Brand Portal 中。此功能可确保在 Brand Portal 中不会出现进行中的更改。只有管理员发布的已批准更改才会出现在 Brand Portal 中。
 
-* [将资源发布到Brand Portal](#publish-assets-to-bp)
-* [将文件夹发布到Brand Portal](#publish-folders-to-brand-portal)
-* [将收藏集发布到Brand Portal](#publish-collections-to-brand-portal)
+* [Publish资源到Brand Portal](#publish-assets-to-bp)
+* [Publish文件夹到Brand Portal](#publish-folders-to-brand-portal)
+* [Publish收藏集到Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
 >Adobe 建议实施错峰发布，最好在非高峰时段发布，这样 AEM 作者就不会占用过多的资源。
->资源应批量发布。 建议批次大小为15 K。
-> 对象 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]，则在实验室条件下观察到的传输速率为每小时1000个资源。 观察到此速率，平均大小为10 MB资源。
+>Assets应批量发布。 建议批次大小为15 K。
+> 对于作为[!DNL Cloud Service]的[!DNL Experience Manager Assets]，在实验室条件下观察到的传输速率为每小时1000个资源。 观察到此速率，平均大小为10 MB资源。
 
-## 将资源发布到Brand Portal {#publish-assets-to-bp}
+## Publish资源到Brand Portal {#publish-assets-to-bp}
 
 以下是将资产从 AEM Assets 发布到 Brand Portal 的步骤：
 
@@ -47,7 +47,7 @@ ht-degree: 85%
    * [立即发布](#publish-to-bp-now)（立即发布资产）
    * [稍后发布](#publish-to-bp-later)（计划发布资产）
 
-### 立即发布资产 {#publish-to-bp-now}
+### Publish资源立即 {#publish-to-bp-now}
 
 要将选定资产发布到 Brand Portal，请执行以下任一操作：
 
@@ -65,7 +65,7 @@ ht-degree: 85%
 
 此时将显示一条消息，表明资产已排队等候发布到 Brand Portal。登录到 Brand Portal 界面可查看已发布的资产。
 
-### 稍后发布资产 {#publish-to-bp-later}
+### 稍后Publish资源 {#publish-to-bp-later}
 
 要计划在稍后的日期或时间将资产发布到 Brand Portal，请执行以下操作：
 
@@ -100,11 +100,11 @@ ht-degree: 85%
 >`/content : jcr:read, crx:replicate`
 >`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## 将文件夹发布到Brand Portal {#publish-folders-to-brand-portal}
+## Publish文件夹到Brand Portal {#publish-folders-to-brand-portal}
 
 您可以立即发布或取消发布资产文件夹，或安排在稍后的日期或时间执行操作。
 
-### 将文件夹发布到Brand Portal {#publish-folders-to-bp}
+### Publish文件夹到Brand Portal {#publish-folders-to-bp}
 
 1. 在 Assets 控制台中，选择要发布的文件夹，然后单击工具栏中的&#x200B;**[!UICONTROL 快速发布]**&#x200B;选项。
 
@@ -130,7 +130,7 @@ ht-degree: 85%
 
    此时将显示一条消息，表明文件夹已排队等候发布到 Brand Portal。登录到 Brand Portal 界面可查看已发布的文件夹。
 
-1. **稍后发布文件夹**
+1. **稍后的Publish文件夹**
 要计划在稍后的日期或时间发布资产文件夹，请执行以下操作：
 
    1. 选择计划发布的文件夹，然后单击顶部工具栏中的&#x200B;**[!UICONTROL 管理发布]**。
@@ -158,7 +158,7 @@ ht-degree: 85%
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. 切换到列表视图 ![列表视图](assets/list-view.svg) 以查看资源的当前发布状态。
+1. 切换到列表视图![列表视图](assets/list-view.svg)以查看资源的当前发布状态。
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
@@ -210,7 +210,7 @@ ht-degree: 85%
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## 将收藏集发布到Brand Portal {#publish-collections-to-brand-portal}
+## Publish收藏集到Brand Portal {#publish-collections-to-brand-portal}
 
 您可以从 AEM Assets 云实例中发布或取消发布收藏集。
 
@@ -220,7 +220,7 @@ ht-degree: 85%
 >
 >如果将包含内容片段的收藏集从 AEM Assets 发布到 Brand Portal，则文件夹中除内容片段外的所有内容将复制到 Brand Portal 界面。
 
-### 发布收藏集 {#publish-collections}
+### Publish收藏集 {#publish-collections}
 
 以下是将收藏集从 AEM Assets 发布到 Brand Portal 的步骤：
 

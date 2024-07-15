@@ -41,7 +41,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->实现个人 `ETag` 对缓存的持久查询的标头计算(对于 *每个* 唯一响应) `FileETag Digest` 必须在Dispatcher配置虚拟主机配置中使用设置（如果尚不存在）：
+>要在缓存的持久化查询上实现单个`ETag`标头计算（对于&#x200B;*每个*&#x200B;唯一响应），必须在Dispatcher配置虚拟主机配置中使用`FileETag Digest`设置（如果尚不存在）：
 >
 >```xml
 ><Directory />    

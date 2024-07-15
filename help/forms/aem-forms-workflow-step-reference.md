@@ -21,7 +21,7 @@ ht-degree: 0%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | 本文 |
 
-您可以使用工作流模型。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以 [在模型中包括各种AEM Workflow步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem).
+您可以使用工作流模型。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以[在模型中包括各种AEM Workflow步骤以实现业务逻辑](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hans#extending-aem)。
 
 ## 以Forms为中心的步骤 {#forms-workflow-steps}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 * 创建任务并将其分配给用户或组。
 
-* 使用 [!DNL Adobe Sign] 在AEM Workflow中发送要签名的文档。
+* 在AEM Workflow中使用[!DNL Adobe Sign]发送要签名的文档。
 
 * 按需或提交表单时生成记录文档。
 
@@ -50,19 +50,19 @@ ht-degree: 0%
 您还可以使用组件控制任务的行为。 例如，创建自动记录文档，将任务分配给特定用户或组，指定提交数据的路径，指定要预填充的数据路径，以及指定默认操作。 “分配任务”步骤具有以下属性：
 
 * **[!UICONTROL 标题]**：任务的标题。 标题会显示在AEM收件箱中。
-* **[!UICONTROL 描述]**：在任务中执行的操作说明。 当您在共享开发环境中工作时，此信息对于其他流程开发人员非常有用。
+* **[!UICONTROL 描述]**：任务中正在执行的操作的说明。 当您在共享开发环境中工作时，此信息对于其他流程开发人员非常有用。
 
 * **[!UICONTROL 缩略图路径]**：任务缩略图的路径。 如果未指定路径，则对于自适应表单，将显示默认缩略图；对于记录文档，将显示默认图标。
-* **[!UICONTROL 工作流暂存]**：一个工作流可以有多个阶段。 这些阶段显示在AEM收件箱中。 您可以在模型的属性(“Sidekick”>“页面”>“页面属性”>“阶段”)中定义这些阶段。
-* **[!UICONTROL 优先级]**：所选优先级会显示在AEM收件箱中。 可用的选项包括“高”、“中”和“低”。 默认值为“中”。
-* **[!UICONTROL 到期日期]**：指定任务被标记为超期的天数或小时数。 如果您选择 **[!UICONTROL 关闭]**，则不会将任务标记为过期。 您还可以指定超时处理程序，以便在任务过期后执行特定任务。
+* **[!UICONTROL 工作流暂存]**：一个工作流可以有多个暂存。 这些阶段显示在AEM收件箱中。 您可以在模型的属性(“Sidekick”>“页面”>“页面属性”>“阶段”)中定义这些阶段。
+* **[!UICONTROL 优先级]**：选定的优先级显示在AEM收件箱中。 可用的选项包括高、Medium和低。 默认值为Medium。
+* **[!UICONTROL 到期日期]**：指定任务被标记为超期的天数或小时数。 如果您选择&#x200B;**[!UICONTROL 关闭]**，则不会将任务标记为过期。 您还可以指定超时处理程序，以便在任务过期后执行特定任务。
 
 * **[!UICONTROL 天]**：任务完成的间隔天数。 将任务分配给用户后计算的天数。 如果任务未完成并超过在天数字段中指定的天数，则如果选择该任务，将在到期日期之后触发超时处理程序。
-* **[!UICONTROL 小时]**：完成任务之前的小时数。 将任务分配给用户后计数小时数。 如果任务未完成并超过小时数字段中指定的小时数，则如果选择该任务，将在到期小时数后触发超时处理程序。
-* **[!UICONTROL 到期日期后超时]**：选择此选项以启用超时处理程序选择字段。
-* **[!UICONTROL 超时处理程序]**：选择分配任务步骤超过到期日期时要执行的脚本。 放置在CRX存储库中的脚本 [应用程序]/fd/dashboard/scripts/timeoutHandler可供选择。 crx-repository中不存在指定的路径。 管理员在使用该路径之前先创建该路径。
-* **[!UICONTROL 突出显示任务详细信息中上一任务的操作和注释]**：选择此选项可显示任务的“任务详细信息”部分中执行的上一个操作以及收到的评论。
-* **[!UICONTROL 类型]**：选择启动工作流时要填充的文档类型。 您可以选择只读自适应表单和非交互式PDF文档。
+* **[!UICONTROL 小时]**：任务完成之前的小时数。 将任务分配给用户后计数小时数。 如果任务未完成并超过小时数字段中指定的小时数，则如果选择该任务，将在到期小时数后触发超时处理程序。
+* **[!UICONTROL 到期日期之后超时]**：选择此选项可启用“超时处理程序”选择字段。
+* **[!UICONTROL 超时处理程序]**：选择分配任务步骤超过到期日期时要执行的脚本。 放置在[apps]/fd/dashboard/scripts/timeoutHandler的CRX存储库中的脚本可供选择。 crx-repository中不存在指定的路径。 管理员在使用该路径之前先创建该路径。
+* **[!UICONTROL 在任务详细信息中突出显示上一个任务的操作和注释]**：选择此选项可显示任务任务详细信息部分中执行的最后一个操作和收到的注释。
+* **[!UICONTROL 类型]**：选择工作流启动时要填充的文档类型。 您可以选择只读自适应表单和非交互式PDF文档。
 
 <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
 
@@ -81,12 +81,12 @@ ht-degree: 0%
 -->
 
 * **[!UICONTROL 自适应表单路径]**：指定自适应表单的路径。 您可以使用提交给工作流的自适应表单（在绝对路径上可用），或从字符串数据类型变量中存储的路径检索自适应表单。
-* **[!UICONTROL 使用以下方式选择输入PDF]**：指定非交互式PDF文档的路径。 在“类型”字段中选择非交互式PDF文档时，该字段可用。 您可以使用相对于有效负荷的路径、以绝对路径保存的路径或使用Document数据类型的变量来选择输入PDF。 例如， [Payload_Directory]/Workflow/PDF/credit-card.pdf. crx-repository中不存在路径。 管理员在使用该路径之前先创建该路径。 要使用“PDF路径”选项，您需要启用记录文档选项或基于表单模板的自适应Forms 。
-* **[!UICONTROL 对于已完成的任务，将自适应表单渲染为]**：将任务标记为完成时，可以将自适应表单渲染为只读自适应表单或PDF文档。 您需要启用记录文档选项或基于表单模板的自适应Forms才能将自适应表单渲染为记录文档。
-* **[!UICONTROL 预填充]**：下面列出的以下字段用作任务的输入：
+* **[!UICONTROL 使用]**&#x200B;选择输入PDF：指定非交互式PDF的路径。 在“类型”字段中选择非交互式PDF文档时，该字段可用。 您可以使用相对于有效负荷的路径、以绝对路径保存的路径或使用Document数据类型的变量来选择输入PDF。 例如，[Payload_Directory]/Workflow/PDF/credit-card.pdf。 crx-repository中不存在路径。 管理员在使用该路径之前先创建该路径。 要使用“PDF路径”选项，您需要启用记录文档选项或基于表单模板的自适应Forms 。
+* **[!UICONTROL 对于已完成的任务，将自适应表单渲染为]**：当任务标记为完成时，可以将自适应表单渲染为只读自适应表单或PDF文档。 您需要启用记录文档选项或基于表单模板的自适应Forms才能将自适应表单渲染为记录文档。
+* **[!UICONTROL 已预填充]**：下面列出的以下字段用作任务的输入：
 
-   * **[!UICONTROL 使用以下方式选择输入数据文件]**：输入数据文件(.json、.xml、.doc或表单数据模型(FDM))的路径。 您可以使用相对于有效负荷的路径检索输入数据文件，或检索存储在Document、XML或JSON数据类型的变量中的文件。 例如，文件包含通过AEM收件箱应用程序为表单提交的数据。 示例路径为 [Payload_Directory]/workflow/data.
-   * **[!UICONTROL 使用以下方式选择输入附件]**：该位置可用的附件会附加到与任务关联的表单。 路径可以相对于有效负荷或检索存储在文档变量中的附件。 示例路径为 [Payload_Directory]/attachments/。 您可以指定相对于有效负荷放置的附件，也可以使用文档类型（数组列表>文档）变量来指定自适应表单的输入附件。
+   * **[!UICONTROL 使用]**&#x200B;选择输入数据文件：输入数据文件的路径(.json、.xml、.doc或表单数据模型(FDM))。 您可以使用相对于有效负荷的路径检索输入数据文件，或检索存储在Document、XML或JSON数据类型的变量中的文件。 例如，文件包含通过AEM收件箱应用程序为表单提交的数据。 示例路径为[Payload_Directory]/workflow/data。
+   * **[!UICONTROL 使用]**&#x200B;选择输入附件：该位置可用的附件已附加到与任务关联的表单。 路径可以相对于有效负荷或检索存储在文档变量中的附件。 示例路径为[Payload_Directory]/attachments/。 您可以指定相对于有效负荷放置的附件，也可以使用文档类型（数组列表>文档）变量来指定自适应表单的输入附件。
 
   <!-- 
     
@@ -98,7 +98,7 @@ ht-degree: 0%
     
     -->
 
-   * **[!UICONTROL 请求属性映射]**：使用请求属性映射部分定义 [请求属性的名称和值](work-with-form-data-model.md#bindargument). 根据请求中指定的属性名称和值从数据源检索详细信息。 您可以使用文本值或String数据类型的变量来定义请求属性值。
+   * **[!UICONTROL 请求属性映射]**：使用“请求属性映射”部分定义请求属性](work-with-form-data-model.md#bindargument)的[名称和值。 根据请求中指定的属性名称和值从数据源检索详细信息。 您可以使用文本值或String数据类型的变量来定义请求属性值。
 
   <!--  
      
@@ -108,9 +108,9 @@ ht-degree: 0%
 
 * **[!UICONTROL 提交的信息]**：下面列出的以下字段用作任务的输出位置：
 
-   * **[!UICONTROL 保存输出数据文件，使用]**：保存数据文件(.json、.xml、.doc或表单数据模型(FDM))。 数据文件包含通过关联表单提交的信息。 您可以使用相对于有效负荷的路径保存输出数据文件，或将其存储在Document、XML或JSON数据类型的变量中。 例如， [Payload_Directory]/Workflow/data ，其中数据是文件。
-   * **[!UICONTROL 保存附件，使用]**：保存任务中提供的表单附件。 您可以使用相对于有效负荷的路径保存附件，或将其存储在Document数据类型的数组列表的变量中。
-   * **[!UICONTROL 保存记录文档，使用]**：保存记录文档的路径。 例如， [Payload_Directory]/DocumentofRecord/credit-card.pdf. 您可以使用相对于有效负荷的路径保存记录文档，或将其存储在文档数据类型的变量中。 如果您选择 **[!UICONTROL 相对于有效负荷]** 选项，如果路径字段留空，则不生成记录文档。 仅当从“类型”下拉列表中选择“自适应表单”时，此选项才可用。
+   * **[!UICONTROL 使用]**&#x200B;保存输出数据文件：保存数据文件(.json、.xml、.doc或表单数据模型(FDM))。 数据文件包含通过关联表单提交的信息。 您可以使用相对于有效负荷的路径保存输出数据文件，或将其存储在Document、XML或JSON数据类型的变量中。 例如，[Payload_Directory]/Workflow/data，其中数据是文件。
+   * **[!UICONTROL 使用]**&#x200B;保存附件：保存任务中提供的表单附件。 您可以使用相对于有效负荷的路径保存附件，或将其存储在Document数据类型的数组列表的变量中。
+   * **[!UICONTROL 使用]**&#x200B;保存记录文档：保存记录文档文件的路径。 例如，[Payload_Directory]/DocumentofRecord/credit-card.pdf。 您可以使用相对于有效负荷的路径保存记录文档，或将其存储在文档数据类型的变量中。 如果选择&#x200B;**[!UICONTROL 相对于有效负载]**&#x200B;选项，如果路径字段留空，则不会生成记录文档。 仅当从“类型”下拉列表中选择“自适应表单”时，此选项才可用。
 
   <!-- 
     
@@ -120,49 +120,49 @@ ht-degree: 0%
     
     -->
 
-* **[!UICONTROL 被分派人]** > **[!UICONTROL 分配选项]**：指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或者将任务分配给特定的AEM用户或组。
-* **[!UICONTROL 参与者选择器]**：当满足以下条件时，该选项可用 **[!UICONTROL 动态分配给用户或组]** 选项时，该选项即会显示在分配选项字段中。 您可以使用ECMAScript或服务来动态选择用户或组。 有关更多信息，请参阅 [向用户动态分配工作流](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) 和 [创建自定义Adobe Experience Manager动态参与者步骤。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL 代理人]** > **[!UICONTROL 分配选项]**：指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或者将任务分配给特定的AEM用户或组。
+* **[!UICONTROL 参与者选择器]**：在“分配选项”字段中选择了&#x200B;**[!UICONTROL 动态到用户或组]**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[将工作流动态分配给用户](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[创建自定义Adobe Experience Manager动态参与者步骤。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
 
-* **[!UICONTROL 参与者]**：当满足以下条件时，该字段可用 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** 选项已选中以下项中的 **[!UICONTROL 参与者选择器]** 字段。 利用字段，可为RandomParticipantChooser选项选择用户或组。
+* **[!UICONTROL 参与者]**：在&#x200B;**[!UICONTROL 参与者选择器]**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;选项时，该字段可用。 利用字段，可为RandomParticipantChooser选项选择用户或组。
 
-* **[!UICONTROL 被分派人]**：当满足以下条件时，该字段可用 **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** 在 **[!UICONTROL 参与者选择器]** 字段。 利用字段，可选择String数据类型的变量来定义被分派人。
+* **[!UICONTROL 代理人]**：在&#x200B;**[!UICONTROL 参与者选择器]**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]**&#x200B;时，该字段可用。 利用字段，可选择String数据类型的变量来定义被分派人。
 
 * **[!UICONTROL 参数]**：在“参与者选择器”字段中选择RandomParticipantChoose脚本以外的脚本时，该字段可用。 利用字段，可为“参与者选择器”字段中选择的脚本提供以逗号分隔的参数列表。
 
-* **[!UICONTROL 用户或组]**：任务已分配给选定的用户或组。 当满足以下条件时，该选项可用 **[!UICONTROL 至特定用户或组选项]** 在 **[!UICONTROL 分配选项]** 字段。 该字段列出了以下对象的所有用户和组： [!DNL workflow-users] 组。\
-  此 **[!UICONTROL 用户或组]** 下拉菜单列出了登录用户有权访问的用户和组。 用户名的显示取决于您是否对 **[!UICONTROL 用户]** crx-repository中针对该特定用户的节点。
+* **[!UICONTROL 用户或组]**：任务已分配给选定的用户或组。 在&#x200B;**[!UICONTROL 分配选项]**&#x200B;字段中选择&#x200B;**[!UICONTROL 到特定用户或组选项]**&#x200B;时，该选项可用。 该字段列出了[!DNL workflow-users]组的所有用户和组。\
+  **[!UICONTROL 用户或组]**&#x200B;下拉菜单列出了登录用户有权访问的用户和组。 用户名显示取决于您是否对该特定用户的crx存储库中的&#x200B;**[!UICONTROL 用户]**&#x200B;节点具有访问权限。
 
-* **[!UICONTROL 发送通知电子邮件]**：选择此选项可向被分派人发送电子邮件通知。 将任务分配给用户或组时会发送这些通知。 您可以使用 **[!UICONTROL 收件人电子邮件地址]** 用于指定检索电子邮件地址的机制的选项。
+* **[!UICONTROL 发送通知电子邮件]**：选择此选项可向被分派人发送电子邮件通知。 将任务分配给用户或组时会发送这些通知。 您可以使用&#x200B;**[!UICONTROL 收件人电子邮件地址]**&#x200B;选项指定检索电子邮件地址的机制。
 
-* **[!UICONTROL 收件人电子邮件地址]**：您可以将电子邮件地址存储在变量中，使用文本指定永久电子邮件地址，或使用在受让人的配置文件中指定的受让人的默认电子邮件地址。 您可以使用文本或变量指定组的电子邮件地址。 变量选项有助于动态检索和使用电子邮件地址。 此 **[!UICONTROL 使用被分派人的默认电子邮件地址]** 选项仅适用于单个被分配人。 在这种情况下，将使用存储在被分配人用户配置文件中的电子邮件地址。
+* **[!UICONTROL 收件人电子邮件地址]**：您可以将电子邮件地址存储在变量中，使用文本指定永久电子邮件地址，或使用在受让人的配置文件中指定的受让人的默认电子邮件地址。 您可以使用文本或变量指定组的电子邮件地址。 变量选项有助于动态检索和使用电子邮件地址。 **[!UICONTROL 使用被分派人的默认电子邮件地址]**&#x200B;选项仅适用于单个被分派人。 在这种情况下，将使用存储在被分配人用户配置文件中的电子邮件地址。
 
-* **[!UICONTROL HTML电子邮件模板]**：选择通知电子邮件的电子邮件模板。 要编辑模板，请在crx-repository中修改位于/libs/fd/dashboard/templates/email/htmlEmailTemplate.txt的文件。
-* **[!UICONTROL 允许委派至]**：AEM收件箱为登录用户提供了一个选项，用于将分配的工作流委派给其他用户。 允许您在同一组内委派给另一个组的工作流用户。 如果任务分配给单个用户，并且 **[!UICONTROL 允许委派给被分派人组成员]** 选项，则无法将任务委派给其他用户或组。
-* **[!UICONTROL 共享设置]**：AEM收件箱提供了选项，用于与其他用户共享收件箱中的单个或所有任务：
-   * 当 **[!UICONTROL 允许被分派人在收件箱中明确共享]** 选项，则用户可以在AEM收件箱中选择任务并将其与其他AEM用户共享。
-   * 当 **[!UICONTROL 允许被分派人通过收件箱共享进行共享]** 选项，并且用户共享其收件箱项目或允许其他用户访问其收件箱项目，只有之前提到的启用选项的任务才会与其他用户共享。
-   * 当 **[!UICONTROL 允许被分派人使用“外出”设置进行委派]** 已选中。 被分派人可以启用将任务委派给其他用户的选项以及其他外出选项。 任何分配给外出用户的新任务都会自动委派（分配）给外出设置中提到的用户。
+* **[!UICONTROL HTML电子邮件模板]**：为通知电子邮件选择电子邮件模板。 要编辑模板，请在crx-repository中修改位于/libs/fd/dashboard/templates/email/htmlEmailTemplate.txt的文件。
+* **[!UICONTROL 允许委派给]**： AEM收件箱为登录用户提供了一个将分配的工作流委派给其他用户的选项。 允许您在同一组内委派给另一个组的工作流用户。 如果任务被分配给单个用户，并且选择了&#x200B;**[!UICONTROL 允许委派给被分派人组]**&#x200B;的成员，则无法将任务委派给其他用户或组。
+* **[!UICONTROL 共享设置]**： AEM收件箱提供了选项，用于与其他用户共享收件箱中的单个或所有任务：
+   * 选择&#x200B;**[!UICONTROL 允许被分派人在收件箱]**&#x200B;中明确共享选项后，用户可以在AEM收件箱中选择任务并与其他AEM用户共享。
+   * 如果选择了&#x200B;**[!UICONTROL 允许被分派人通过收件箱共享进行共享]**&#x200B;选项，并且用户共享其收件箱项目或允许其他用户访问其收件箱项目时，只有之前提到的启用选项的任务才会与其他用户共享。
+   * 选择&#x200B;**[!UICONTROL 允许被分派人使用“外出”设置]**&#x200B;进行委派时。 被分派人可以启用将任务委派给其他用户的选项以及其他外出选项。 任何分配给外出用户的新任务都会自动委派（分配）给外出设置中提到的用户。
 
   它允许其他用户在“不在办公室”且无法处理已分配任务时选择被分配人任务。
 
 * **[!UICONTROL 操作]** > **[!UICONTROL 默认操作]**：现成可用的提交、保存和重置操作。 默认启用所有默认操作。
 * **[!UICONTROL 路由变量]**：路由变量的名称。 路由变量会捕获用户在AEM收件箱中选择的自定义操作。
-* **[!UICONTROL 路由]**：任务可以分支到不同的路由。 在AEM收件箱中选择后，该路由将返回一个值，并根据所选路由选择工作流分支。 您可以将路由存储在String数据类型的数组变量中，也可以选择 **[!UICONTROL 文本]** 以手动添加路由。
+* **[!UICONTROL 路由]**：任务可以分支到不同的路由。 在AEM收件箱中选择后，该路由将返回一个值，并根据所选路由选择工作流分支。 您可以将路由存储在String数据类型的数组中，也可以选择&#x200B;**[!UICONTROL 文本]**&#x200B;来手动添加路由。
 
 * **[!UICONTROL 路由标题]**：指定路由的标题。 它会显示在AEM收件箱中。
 * **[!UICONTROL Coral图标]**：指定coral图标的HTML属性。 AdobeCorelUI库提供了一组大量的“触摸优先”图标。 您可以选择并使用路由的图标。 它会与标题一起显示在AEM收件箱中。 如果将路由存储在变量中，则路由会使用默认的“标记”珊瑚色图标。
-* **[!UICONTROL 允许被分派人添加评论]**：选择此选项可启用任务的注释。 被分派人可以在任务提交时从AEM收件箱中添加注释。
-* **[!UICONTROL 在变量中保存注释]**：将注释保存在String数据类型的变量中。 仅当您选择 **[!UICONTROL 允许被分派人添加评论]** 复选框。
+* **[!UICONTROL 允许被分派人添加评论]**：选择此选项可启用该任务的评论。 被分派人可以在任务提交时从AEM收件箱中添加注释。
+* **[!UICONTROL 在变量中保存注释]**：将注释保存在String数据类型的变量中。 仅当您选中&#x200B;**[!UICONTROL 允许被分派人添加评论]**&#x200B;复选框时，才会显示此选项。
 
-* **[!UICONTROL 允许被分派人向任务添加附件]**：选择此选项可启用任务的附件。 任务接受者可以在提交任务时从AEM收件箱中添加附件。 您还可以限制最大大小 **[!UICONTROL （最大文件大小）]** 附件的URL。 默认大小为2 MB。
+* **[!UICONTROL 允许被分派人向任务添加附件]**：选择此选项可启用任务的附件。 任务接受者可以在提交任务时从AEM收件箱中添加附件。 您还可以限制附件的最大大小&#x200B;**[!UICONTROL （最大文件大小）]**。 默认大小为2 MB。
 
-* **[!UICONTROL 保存输出任务附件，使用]**：指定附件文件夹的位置。 您可以使用相对于有效负荷的路径或在文档数据类型数组的变量中保存输出任务附件。 仅当您选择 **[!UICONTROL 允许被分派人向任务添加附件]** 复选框，然后选择 **[!UICONTROL 自适应表单]**， **[!UICONTROL 只读自适应表单]**，或 **[!UICONTROL 非交互式PDF文档]** 从 **[!UICONTROL 类型]** 中的下拉列表 **[!UICONTROL 表单/文档]** 选项卡。
+* **[!UICONTROL 使用]**&#x200B;保存输出任务附件：指定附件文件夹的位置。 您可以使用相对于有效负荷的路径或在文档数据类型数组的变量中保存输出任务附件。 仅当您选中&#x200B;**[!UICONTROL 允许被分派人向任务添加附件]**&#x200B;复选框，并从&#x200B;**[!UICONTROL 表单/文档]**&#x200B;选项卡的&#x200B;**[!UICONTROL 类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 自适应表单]**、**[!UICONTROL 只读自适应表单]**&#x200B;或&#x200B;**[!UICONTROL 非交互式PDF文档]**&#x200B;时，才会显示此选项。
 
 * **[!UICONTROL 使用自定义元数据]**：选择此选项可启用自定义元数据字段。 电子邮件模板中使用自定义元数据。
-* **[!UICONTROL 自定义元数据]**：为电子邮件模板选择自定义元数据。 自定义元数据位于crx-repository中的apps/fd/dashboard/scripts/metadataScripts。 crx-repository中不存在指定的路径。 管理员在使用该路径之前先创建该路径。 您还可以将服务用于自定义元数据。 您还可以扩展 `WorkitemUserMetadataService` 界面以提供自定义元数据。
-* **[!UICONTROL 显示之前步骤的数据]**：选择此选项可让被分派人查看以前的被分派人、已对任务执行的操作、添加到任务的注释以及已完成任务的记录文档（如果可用）。
+* **[!UICONTROL 自定义元数据]**：为电子邮件模板选择自定义元数据。 自定义元数据位于crx-repository中的apps/fd/dashboard/scripts/metadataScripts。 crx-repository中不存在指定的路径。 管理员在使用该路径之前先创建该路径。 您还可以将服务用于自定义元数据。 您还可以扩展`WorkitemUserMetadataService`界面以提供自定义元数据。
+* **[!UICONTROL 显示先前步骤的数据]**：选择此选项可让被分派人查看之前的被分派人、已对任务执行的操作、添加到任务的注释以及已完成任务的记录文档（如果可用）。
 * **[!UICONTROL 显示后续步骤的数据]**：选择此选项可允许当前被分派人查看后续被分派人执行的操作和添加到任务的注释。 它还允许当前被分派人查看已完成任务的记录文档（如果可用）。
-* **[!UICONTROL 数据类型可见性]**：默认情况下，被分配人可以查看记录文档、被分配人、采取的操作以及之前和后续被分配人添加的备注。 使用“数据类型的可见性”选项限制被分派人可见的数据类型。
+* **[!UICONTROL 数据类型的可见性]**：默认情况下，被分派人可以查看记录文档、被分派人、采取的操作以及之前和后续被分派人添加的注释。 使用“数据类型的可见性”选项限制被分派人可见的数据类型。
 
 >[!NOTE]
 >
@@ -170,46 +170,46 @@ ht-degree: 0%
 
 ## 转换为PDF/A步骤 {#convert-pdfa}
 
-PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体并解压缩文件来实现。 因此，PDF/A 文档通常比标准 PDF 文档大。您可以使用 ***转换为PDF/A*** AEM步骤，将PDF文档转换为PDF/A格式。
+PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体并解压缩文件来实现。 因此，PDF/A 文档通常比标准 PDF 文档大。您可以使用AEM Workflow中的&#x200B;***转换为PDF/A***&#x200B;步骤将PDF文档转换为PDF/A格式。
 
 转换为PDF/A步骤具有以下属性：
 
 **[!UICONTROL 输入文档]**：输入文档可以相对于有效负荷，具有绝对路径，可以作为有效负荷提供，或存储在Document数据类型的变量中。
 
-**[!UICONTROL 转换选项]**：使用此属性可指定将PDF文档转换为PDF/A文档的设置。 此选项卡下可用的各种选项包括：
-* **[!UICONTROL 合规性]**：指定输出PDF/A文档必须符合的标准。 它支持不同的PDF标准，如PDF/A-1b、PDF/A-2b或PDF/A-3b。
+**[!UICONTROL 转换选项]**：使用此属性，指定了将PDF文档转换为PDF/A文档的设置。 此选项卡下可用的各种选项包括：
+* **[!UICONTROL 符合性]**：指定输出PDF/A文档必须符合的标准。 它支持不同的PDF标准，如PDF/A-1b、PDF/A-2b或PDF/A-3b。
 * **[!UICONTROL 结果级别]**：将转换输出的结果级别指定为PassFail、Summary或Detailed。
-* **[!UICONTROL 色彩空间]**：将预定义的色彩空间指定为S_COATED、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP，它们可用于输出PDF/ARGB。
-* **[!UICONTROL 可选内容]**：仅当满足指定的标准集时，才允许在输出PDF/文档中显示特定图形对象和/或注释。
+* **[!UICONTROL 色彩空间]**：指定预定义的色彩空间为S_RGB、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP，它们可用于输出PDF/A文件。
+* **[!UICONTROL 可选内容]**：仅当满足指定的标准集时，才允许在输出PDF/A文档中显示特定图形对象和/或注释。
 
 **[!UICONTROL 输出文档]**：指定保存输出文件的位置。 输出文件可以保存在有效负荷的相对位置，如果有效负荷是文件或是Document数据类型的变量，则覆盖有效负荷。
 
 
 ## 发送电子邮件步骤 {#send-email-step}
 
-使用电子邮件步骤发送电子邮件，例如，包含记录文档、自适应表单链接的电子邮件 <!-- , link of an interactive communication-->，或者具有附加的PDF文档。 发送电子邮件步骤支持 [HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email). HTML电子邮件具有响应性，可适应收件人的电子邮件客户端和屏幕大小。 您可以使用HTML电子邮件模板来定义电子邮件的外观、配色方案和行为。
+使用电子邮件步骤发送电子邮件，例如，包含记录文档、自适应表单<!-- , link of an interactive communication-->链接或附加PDF文档的电子邮件。 发送电子邮件步骤支持[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 HTML电子邮件具有响应性，可适应收件人的电子邮件客户端和屏幕大小。 您可以使用HTML电子邮件模板来定义电子邮件的外观、配色方案和行为。
 
-电子邮件步骤使用Day CQ Mail Service发送电子邮件。 在使用电子邮件步骤之前，请确保已配置电子邮件服务。 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [联系支持团队](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) 启用端口以发送电子邮件，并为您的环境启用SMTP协议。 该限制有助于提高平台的安全性。
+电子邮件步骤使用Day CQ Mail Service发送电子邮件。 在使用电子邮件步骤之前，请确保已配置电子邮件服务。 默认情况下，电子邮件仅支持HTTP和HTTP协议。 [请与支持团队联系](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)以启用端口来发送电子邮件，并为您的环境启用SMTP协议。 该限制有助于提高平台的安全性。
 
 电子邮件步骤具有以下属性：
 
-**[!UICONTROL 标题]**：步骤的标题有助于在工作流编辑器中标识该步骤。
+**[!UICONTROL 标题]**：步骤的标题有助于在工作流编辑器中识别该步骤。
 
-**[!UICONTROL 描述]**：当您在共享开发环境中工作时，说明对其他流程开发人员很有用。
+**[!UICONTROL 描述]**：当您在共享开发环境中工作时，说明对其他进程开发人员很有用。
 
-**[!UICONTROL 电子邮件主题]**：可以从工作流元数据中检索主题，手动指定，也可以从变量中存储的值中检索主题。 从以下选项中选择：
+**[!UICONTROL 电子邮件主题]**：可以从工作流元数据中检索主题、手动指定主题，也可以从变量中存储的值中检索主题。 从以下选项中选择：
 
-* **[!UICONTROL 文本]** 手动指定主题。
-* **[!UICONTROL 检索工作流元数据]**  — 从元数据属性中检索主题。
-* **[!UICONTROL 变量]**  — 从字符串数据类型的变量中存储的值检索主题。
+* **[!UICONTROL 文本]**&#x200B;手动指定主题。
+* **[!UICONTROL 从工作流元数据中检索]** — 从元数据属性中检索主题。
+* **[!UICONTROL 变量]** — 从字符串数据类型的变量中存储的值检索主题。
 
-**[!UICONTROL HTML电子邮件模板]**：电子邮件的HTML模板。 您可以在电子邮件模板中指定变量。 电子邮件步骤可提取并显示模板中包含的所有变量以供输入。
+**[!UICONTROL HTML的电子邮件模板]**：电子邮件的HTML模板。 您可以在电子邮件模板中指定变量。 电子邮件步骤可提取并显示模板中包含的所有变量以供输入。
 
-**[!UICONTROL 电子邮件模板元数据]**：电子邮件模板变量的值可以是用户指定的值、创作或发布服务器上资产的路径、图像或工作流元数据属性。
+**[!UICONTROL 电子邮件模板元数据]**：电子邮件模板变量的值可以是用户指定的值、创作或发布服务器上资源的路径、图像或工作流元数据属性。
 
-* **[!UICONTROL 文本]**：在知道要指定的确切值时使用选项。 例如， [example@example.com](mailto:example@example.com).
+* **[!UICONTROL 文本]**：知道要指定的确切值时使用选项。 例如，[example@example.com](mailto:example@example.com)。
 
-* **[!UICONTROL 工作流元数据]**：当要使用的值保存在工作流元数据属性中时，使用选项。 选择该选项后，在工作流元数据选项下方的空文本框中输入元数据属性名称。 例如，emailAddress。
+* **[!UICONTROL 工作流元数据]**：在工作流元数据属性中保存要使用的值时使用选项。 选择该选项后，在工作流元数据选项下方的空文本框中输入元数据属性名称。 例如，emailAddress。
 
 <!-- 
 
@@ -217,15 +217,15 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 -->
 
-* **[!UICONTROL 图像]**：使用选项将图像嵌入电子邮件。 选择该选项后，浏览并选择图像。 图像选项仅适用于电子邮件模板中可用的图像标记(&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />“/>”)。&#42;
+* **[!UICONTROL 图像]**：使用选项将图像嵌入电子邮件。 选择该选项后，浏览并选择图像。 图像选项仅适用于电子邮件模板中可用的图像标记(&lt;img src=&quot;&#42;&quot;/>)。
 
-**[!UICONTROL 发件人/收件人的电子邮件地址]**：选择 **[!UICONTROL 文本]** 用于手动指定电子邮件地址或选择 **[!UICONTROL 检索工作流元数据]** 选项，用于从元数据属性检索电子邮件地址。 您还可以为以下对象指定元数据属性数组的列表： **[!UICONTROL 检索工作流元数据]** 选项。 选择 **[!UICONTROL 变量]** 选项，用于从字符串数据类型变量中存储的值检索电子邮件地址。
+**[!UICONTROL 发件人/收件人的电子邮件地址]**：选择&#x200B;**[!UICONTROL 文本]**&#x200B;选项以手动指定电子邮件地址，或选择&#x200B;**[!UICONTROL 从工作流元数据中检索]**&#x200B;选项以从元数据属性中检索电子邮件地址。 您还可以为&#x200B;**[!UICONTROL 从工作流元数据中检索]**&#x200B;选项指定元数据属性数组的列表。 选择&#x200B;**[!UICONTROL 变量]**&#x200B;选项，以从字符串数据类型的变量中存储的值检索电子邮件地址。
 
-* **[!UICONTROL 文件附件]**：在指定位置可用的资产会附加到电子邮件。 资源的路径可以是相对于有效负荷的路径，也可以是绝对路径。 示例路径为 [Payload_Directory]/attachments/。
+* **[!UICONTROL 文件附件]**：在指定位置可用的资产已附加到电子邮件。 资源的路径可以是相对于有效负荷的路径，也可以是绝对路径。 示例路径为[Payload_Directory]/attachments/。
 
-选择 **[!UICONTROL 变量]** 用于检索存储在文档、XML或JSON数据类型的变量中的文件附件的选项。
+选择&#x200B;**[!UICONTROL 变量]**&#x200B;选项以检索存储在文档、XML或JSON数据类型的变量中的文件附件。
 
-**[!UICONTROL 文件名]**：电子邮件附件文件的名称。 电子邮件步骤将附件的原始文件名更改为指定的文件名。 可以手动指定名称，也可以从工作流元数据属性或变量中检索名称。 使用 **[!UICONTROL 文本]** 选项。 使用 **[!UICONTROL 变量]** 选项，用于从字符串数据类型变量中存储的值检索文件名。 使用 **[!UICONTROL 检索工作流元数据]** 选项。
+**[!UICONTROL 文件名]**：电子邮件附件文件的名称。 电子邮件步骤将附件的原始文件名更改为指定的文件名。 可以手动指定名称，也可以从工作流元数据属性或变量中检索名称。 当您知道要指定的确切值时，请使用&#x200B;**[!UICONTROL 文本]**&#x200B;选项。 使用&#x200B;**[!UICONTROL 变量]**&#x200B;选项从字符串数据类型的变量中存储的值检索文件名。 在工作流元数据属性中保存要使用的值时，使用&#x200B;**[!UICONTROL 从工作流元数据中检索]**&#x200B;选项。
 
 ## 生成记录文档步骤 {#generate-document-of-record-step}
 
@@ -233,36 +233,36 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 记录文档步骤具有以下属性：
 
-**[!UICONTROL 使用自适应表单]**：指定用于查找输入自适应表单的方法。 您可以使用提交到工作流的自适应表单、在绝对路径上提供的自适应表单或变量中路径上提供的自适应表单。 您可以使用String数据类型的变量在 **[!UICONTROL 选择要解析的变量]** 字段。\
+**[!UICONTROL 使用自适应表单]**：指定用于查找输入自适应表单的方法。 您可以使用提交到工作流的自适应表单、在绝对路径上提供的自适应表单或变量中路径上提供的自适应表单。 可以使用String数据类型的变量在&#x200B;**[!UICONTROL 选择要解析的]**&#x200B;字段中选择路径。\
 您可以将多个自适应Forms与一个工作流关联。 因此，您可以使用可用的输入方法在运行时指定自适应表单。
 
-**[!UICONTROL 自适应表单路径]**：指定自适应表单的路径。 当您选择 **[!UICONTROL 在绝对路径上可用]** 选项来自 **[!UICONTROL 使用自适应表单]** 字段。
+**[!UICONTROL 自适应表单路径]**：指定自适应表单的路径。 当您从&#x200B;**[!UICONTROL 使用自适应表单]**&#x200B;字段中选择&#x200B;**[!UICONTROL 在绝对路径上可用]**&#x200B;选项时，该字段可用。
 
-**[!UICONTROL 使用以下方式选择输入数据]**：自适应表单的输入数据路径。 您可以将数据保留在相对于有效负载的位置，指定数据的绝对路径，或检索存储在Document、JSON或XML数据类型的变量中的数据。 输入数据将与自适应表单合并以创建记录文档。
+**[!UICONTROL 使用]**&#x200B;选择输入数据：自适应表单的输入数据路径。 您可以将数据保留在相对于有效负载的位置，指定数据的绝对路径，或检索存储在Document、JSON或XML数据类型的变量中的数据。 输入数据将与自适应表单合并以创建记录文档。
 
-**[!UICONTROL 使用以下方式选择输入附件路径]**：附件的路径。 这些附件包含在记录文档中。 您可以将附件保留在相对于有效负荷的位置，指定附件的绝对路径，或检索存储在Document数据类型数组中的附件。
+**[!UICONTROL 使用]**&#x200B;选择输入附件路径：附件的路径。 这些附件包含在记录文档中。 您可以将附件保留在相对于有效负荷的位置，指定附件的绝对路径，或检索存储在Document数据类型数组中的附件。
 
 如果指定文件夹的路径（例如，附件），则文件夹中直接可用的所有文件都将附加到记录文档。 如果任何文件在指定附件路径中直接可用的文件夹中可用，则这些文件将作为附件包含在记录文档中。 如果在直接可用的文件夹中有任何文件夹，则会跳过这些文件夹。
 
-**[!UICONTROL 使用以下选项保存生成的记录文档]**：指定保留记录文档文件的位置。 您可以选择覆盖有效负载文件夹，将记录文档放在有效负载目录中的某个位置，或将记录文档存储在Document数据类型的变量中。
+**[!UICONTROL 使用以下选项保存生成的记录文档]**：指定保存记录文档文件的位置。 您可以选择覆盖有效负载文件夹，将记录文档放在有效负载目录中的某个位置，或将记录文档存储在Document数据类型的变量中。
 
-**[!UICONTROL 区域设置]**：指定记录文档的语言。 选择 **[!UICONTROL 文本]** 从下拉列表中选择区域设置，或选择 **[!UICONTROL 变量]** 从字符串数据类型变量中存储的值检索区域设置。 在变量中存储区域设置的值时定义区域设置代码。 例如，指定 **en_US** 英语和 **fr_FR** 法文版的。
+**[!UICONTROL 区域设置]**：指定记录文档的语言。 选择&#x200B;**[!UICONTROL 文本]**&#x200B;从下拉列表中选择区域设置，或者选择&#x200B;**[!UICONTROL 变量]**&#x200B;从字符串数据类型的变量中存储的值检索区域设置。 在变量中存储区域设置的值时定义区域设置代码。 例如，为英语指定&#x200B;**en_US**，为法语指定&#x200B;**fr_FR**。
 
 ## 调用DDX步骤 {#invokeddx}
 
-文档描述XML (DDX)是一种声明性标记语言，其元素代表文档的构建块。 这些构建块包括 PDF 和 XDP 文档以及其他元素，例如注释、书签和样式文本。DDX定义了一组操作，这些操作可以应用于一个或多个输入文档，以生成一个或多个输出文档。 单个 DDX 可用于一系列源文档。您可以使用 ***调用DDX步骤*** 在AEM工作流中执行各种操作，如汇编和反汇编文档、创建和修改Acrobat和XFA Forms，以及 [DDX参考文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+文档描述XML (DDX)是一种声明性标记语言，其元素代表文档的构建块。 这些构建块包括 PDF 和 XDP 文档以及其他元素，例如注释、书签和样式文本。DDX定义了一组操作，这些操作可以应用于一个或多个输入文档，以生成一个或多个输出文档。 单个 DDX 可用于一系列源文档。您可以在AEM Workflow中使用&#x200B;***调用DDX步骤***&#x200B;执行各种操作，如汇编和反汇编文档、创建和修改Acrobat和XFA Forms，以及[DDX参考文档](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)中描述的其他操作。
 
 调用DDX步骤具有以下属性：
 
 **[!UICONTROL 输入文档]**：用于设置输入文档的属性。 此选项卡下可用的各种选项包括：
-* **[!UICONTROL 指定DDX，使用]**：指定相对于有效负荷的输入文档、具有绝对路径、可以作为有效负荷提供，或存储在Document数据类型的变量中。
-* **[!UICONTROL 从有效负荷创建映射]**：将有效负荷文件夹下的所有文档添加到输入文档的映射中，以用于汇编程序中的调用API。 每个文档的节点名称在映射中用作键。
-* **[!UICONTROL 输入文档的映射]**：选项用于使用以下方式添加多个条目 **[!UICONTROL 添加]** 按钮。 每个条目表示映射中的文档键和文档的源。
+* **[!UICONTROL 使用]**&#x200B;指定DDX：指定相对于有效负荷的输入文档、具有绝对路径、可以作为有效负荷提供，或存储在Document数据类型的变量中。
+* **[!UICONTROL 从有效负荷创建映射]**：将有效负荷文件夹下的所有文档添加到输入文档的映射中，以便在Assembler中调用API。 每个文档的节点名称在映射中用作键。
+* **[!UICONTROL 输入文档的映射]**：选项用于使用&#x200B;**[!UICONTROL ADD]**&#x200B;按钮添加多个条目。 每个条目表示映射中的文档键和文档的源。
 
 **[!UICONTROL 环境选项]**：此选项用于设置调用API的处理设置。 此选项卡下可用的各种选项包括：
 * **[!UICONTROL 仅验证]**：检查输入DDX文档的有效性。
-* **[!UICONTROL 出错时失败]**：布尔值，指示调用API服务是否失败（如果存在错误）。 默认情况下，其值设置为False。
-* **[!UICONTROL 第一个Bates编号]**：指定自动递增的数字。 此自动递增数字将自动显示在每个连续页面上。
+* **[!UICONTROL 因错误]**&#x200B;而失败：布尔值，指示调用API服务是否失败（如果存在错误）。 默认情况下，其值设置为False。
+* **[!UICONTROL First Bates编号]**：指定自动递增的编号。 此自动递增数字将自动显示在每个连续页面上。
 * **[!UICONTROL 默认样式]**：设置输出文件的默认样式。
 
 >[!NOTE]
@@ -270,12 +270,12 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 >环境选项与HTTP API保持同步。
 
 **[!UICONTROL 输出文档]**：指定保存输出文件的位置。 此选项卡下可用的各种选项包括：
-* **[!UICONTROL 将输出保存在有效负荷中]**：将输出文档保存在有效负荷文件夹中，如果有效负荷是文件，则它会覆盖有效负荷。
+* **[!UICONTROL 将输出保存在有效负荷中]**：将输出文档保存在有效负荷文件夹中，如果有效负荷是文件，则覆盖有效负荷。
 * **[!UICONTROL 输出文档的映射]**：通过为每个文档添加一个条目，指定显式保存每个文档文件的位置。 每个条目表示文档以及保存文档的位置。 如果有多个输出文档，则使用此选项。
 
 ## 调用表单数据模型(FDM)服务步骤 {#invoke-form-data-model-service-step}
 
-您可以使用 [[!DNL AEM Forms] 数据集成](data-integration.md) 配置并连接到不同的数据源。 这些数据源可以是Web服务、REST服务、OData服务和CRM解决方案。 [!DNL AEM Forms] 通过数据集成，您可以创建包含各种服务的表单数据模型(FDM)，以在配置的数据库上执行数据检索、添加和更新操作。 您可以使用 **[!UICONTROL 调用数据模型服务步骤]** 选择表单数据模型(FDM)并使用FDM的服务来检索、更新或向不同的数据源添加数据。
+您可以使用[[!DNL AEM Forms] 数据集成](data-integration.md)来配置并连接到不同的数据源。 这些数据源可以是Web服务、REST服务、OData服务和CRM解决方案。 [!DNL AEM Forms]数据集成允许您创建包含各种服务的表单数据模型(FDM)，以对配置的数据库执行数据检索、添加、更新操作。 您可以使用&#x200B;**[!UICONTROL 调用数据模型服务步骤]**&#x200B;选择表单数据模型(FDM)，并使用FDM的服务检索、更新或向不同的数据源添加数据。
 
 为说明该步骤的字段输入，使用了以下数据库表和JSON文件作为示例：
 
@@ -333,13 +333,13 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 调用表单数据模型(FDM)服务步骤具有以下列出的字段，以方便表单数据模型(FDM)操作：
 
 * **[!UICONTROL 标题]**：步骤的标题。 它有助于标识工作流编辑器中的步骤。
-* **[!UICONTROL 描述]**：当您在共享开发环境中工作时，此说明对其他流程开发人员很有用。
+* **[!UICONTROL 描述]**：当您在共享开发环境中工作时，对其他进程开发人员有用的说明。
 
 * **[!UICONTROL 表单数据模型路径]**：浏览并选择服务器上存在的表单数据模型(FDM)。
 
-* **[!UICONTROL 错误和验证]**：利用选项，可捕获错误消息，并为检索到的数据和发送到数据源的数据指定验证选项。 通过这些更改，您可以确保传递到调用表单数据模型(FDM)服务步骤的数据遵循数据源定义的数据约束。 有关更多详细信息，请参阅 [自动验证输入数据](work-with-form-data-model.md#automated-validation-of-input-data)
+* **[!UICONTROL 错误和验证]**：选项允许您捕获错误消息，并为检索和发送到数据源的数据指定验证选项。 通过这些更改，您可以确保传递到调用表单数据模型(FDM)服务步骤的数据遵循数据源定义的数据约束。 有关详细信息，请参阅[自动验证输入数据](work-with-form-data-model.md#automated-validation-of-input-data)
 
-* **[!UICONTROL 验证级别]**：验证分为三类：基本、完全和关：
+* **[!UICONTROL 验证级别]**：验证分为三类： Basic、Full和OFF：
 
    * 完整：验证所有约束。
    * 基本：仅必需和可空的约束
@@ -347,67 +347,67 @@ PDF/A是一种用于长期保存文档内容的存档格式，通过嵌入字体
 
 * **[!UICONTROL 失败时终止工作流]**：当约束验证失败时，工作流将停止。
 
-* **[!UICONTROL 在变量中保存错误代码]**：您可以将错误代码存储在 [字符串类型变量](variable-in-aem-workflows.md).
+* **[!UICONTROL 在变量]**&#x200B;中存储错误代码：您可以在[String类型变量](variable-in-aem-workflows.md)中存储错误代码。
 
-* **[!UICONTROL 在变量中保存错误消息]**：您可以将错误消息存储在 [字符串类型变量](variable-in-aem-workflows.md).
+* **[!UICONTROL 在变量]**&#x200B;中存储错误消息：您可以在[String类型变量](variable-in-aem-workflows.md)中存储错误消息。
 
-* **[!UICONTROL 在变量中保存错误详细信息]**：您可以将错误详细信息存储在 [JSON类型变量](variable-in-aem-workflows.md).
+* **[!UICONTROL 在变量]**&#x200B;中存储错误详细信息：您可以在[JSON类型变量](variable-in-aem-workflows.md)中存储错误详细信息。
 
 * **[!UICONTROL 服务]**：所选表单数据模型(FDM)提供的服务列表。
-* **[!UICONTROL 服务输入]** > **[!UICONTROL 使用文本值、变量或工作流元数据以及JSON文件提供输入数据]**：一个服务可以有多个参数。 选择选项以从工作流元数据属性、JSON对象、变量获取服务参数的值，或直接在提供的文本框中输入值：
+* **[!UICONTROL 服务输入]** > **[!UICONTROL 使用文本值、变量或工作流元数据以及JSON文件提供输入数据]**：服务可以有多个参数。 选择选项以从工作流元数据属性、JSON对象、变量获取服务参数的值，或直接在提供的文本框中输入值：
 
-   * **[!UICONTROL 文本]**：在知道要指定的确切值时使用选项。 例如，srose@we.info。
+   * **[!UICONTROL 文本]**：知道要指定的确切值时使用选项。 例如，srose@we.info。
    * **[!UICONTROL 变量]**：使用选项检索存储在变量中的值。
-   * **[!UICONTROL 检索工作流元数据]**：当要使用的值保存在工作流元数据属性中时，使用选项。 例如，emailAddress。
+   * **[!UICONTROL 从工作流元数据中检索]**：在工作流元数据属性中保存要使用的值时使用选项。 例如，emailAddress。
 
-   * **[!UICONTROL 相对于有效负荷]**：使用选项检索在有效负荷的相对路径中保存的文件附件。 选择选项并指定包含文件附件的文件夹名称，或在文本框中指定文件附件名称。
+   * **[!UICONTROL 相对于有效负载]**：使用选项检索在有效负载的相对路径中保存的文件附件。 选择选项并指定包含文件附件的文件夹名称，或在文本框中指定文件附件名称。
 
-     例如，如果CRX存储库中的相对于有效负荷文件夹在 `attachment\attachment-folder` 位置，指定 `attachment\attachment-folder` 在文本框中，选择 **[!UICONTROL 相对于有效负荷]** 选项。
+     例如，如果CRX存储库中的“相对于有效负荷”文件夹在`attachment\attachment-folder`位置包含文件附件，则在选择&#x200B;**[!UICONTROL 相对于有效负荷]**&#x200B;选项后，在文本框中指定`attachment\attachment-folder`。
 
-   * **[!UICONTROL JSON点表示法]**：当要使用的值位于JSON文件中时，使用选项。 例如，insurance.customerDetails.emailAddress。 “JSON点表示法”选项仅在从输入JSON选项中选择了映射输入字段时可用。
+   * **[!UICONTROL JSON点表示法]**：当要使用的值位于JSON文件中时，请使用选项。 例如，insurance.customerDetails.emailAddress。 “JSON点表示法”选项仅在从输入JSON选项中选择了映射输入字段时可用。
    * **[!UICONTROL 映射来自输入JSON的输入字段]**：指定JSON文件的路径，以从JSON文件中获取某些服务参数的输入值。 JSON文件的路径可以是相对于有效负载的相对路径，也可以是绝对路径，您也可以使用JSON或表单数据模型(FDM)类型的变量选择输入JSON文档。
 
 * **[!UICONTROL 服务输入]** > **[!UICONTROL 使用变量或JSON文件提供输入数据]**：选择相应选项，以从在绝对路径、有效负荷的相对路径或变量中保存的JSON文件中获取所有参数的值。
-* **[!UICONTROL 使用以下方式选择输入JSON文档]**：包含所有服务参数的值的JSON文件。 JSON文件的路径可以是 **[!UICONTROL 相对于有效负荷]** 或 **[!UICONTROL 绝对路径]**. 您还可以使用JSON或表单数据模型(FDM)数据类型的变量检索输入JSON文档。
+* **[!UICONTROL 使用以下方式选择输入JSON文档]**：包含所有服务参数值的JSON文件。 JSON文件的路径可以是有效负载&#x200B;]**的相对路径**[!UICONTROL &#x200B;或&#x200B;**[!UICONTROL 绝对路径]**。 您还可以使用JSON或表单数据模型(FDM)数据类型的变量检索输入JSON文档。
 
-* **[!UICONTROL JSON点表示法]**：将字段留空可使用指定JSON文件的所有对象作为服务参数的输入。 要从指定的JSON文件中读取特定JSON对象作为服务参数的输入，请为JSON对象指定点表示法，例如，如果您的JSON与部分开头列出的类似，请指定insurance.customerDetails以提供客户的所有详细信息作为服务的输入。
-* **[!UICONTROL 服务输出]** > **[!UICONTROL 将输出值映射并写入变量或元数据]**：选择选项以将输出值另存为crx-repository中工作流实例元数据节点的属性。 指定元数据属性的名称，然后选择要与元数据属性映射的相应服务输出属性，例如，将输出服务返回的phone_number映射到工作流元数据的phone_number属性。 同样，可以将输出存储在Long数据类型的变量中。 在为选择属性时 **[!UICONTROL 要映射的服务输出属性]** 选项，则只会为填充能够存储选定属性的数据的变量 **[!UICONTROL 将输出保存到]** 选项。
+* **[!UICONTROL JSON点表示法]**：将该字段留空可使用指定JSON文件的所有对象作为服务参数的输入。 要从指定的JSON文件中读取特定JSON对象作为服务参数的输入，请为JSON对象指定点表示法，例如，如果您的JSON与部分开头列出的类似，请指定insurance.customerDetails以提供客户的所有详细信息作为服务的输入。
+* **[!UICONTROL 服务输出]** > **[!UICONTROL 将输出值映射并写入变量或元数据]**：选择选项以将输出值保存为crx-repository中工作流实例元数据节点的属性。 指定元数据属性的名称，然后选择要与元数据属性映射的相应服务输出属性，例如，将输出服务返回的phone_number映射到工作流元数据的phone_number属性。 同样，可以将输出存储在Long数据类型的变量中。 为&#x200B;**[!UICONTROL 要映射的服务输出属性]**&#x200B;选项选择属性时，**[!UICONTROL 将输出保存到]**&#x200B;选项仅填充能够存储所选属性数据的变量。
 
-* **[!UICONTROL 服务输出]** > **[!UICONTROL 将输出保存到变量或JSON文件]**：选择选项以将输出值保存在JSON文件中的绝对路径、有效负荷的相对路径或变量中。
+* **[!UICONTROL 服务的输出]** > **[!UICONTROL 将输出保存到变量或JSON文件]**：选择相应选项以将输出值保存在JSON文件中的绝对路径、有效负荷的相对路径或变量中。
 * **[!UICONTROL 使用以下选项保存输出JSON文档]**：保存输出JSON文件。 输出JSON文件的路径可以是相对于有效负载的相对路径，也可以是绝对路径。 还可使用JSON或表单数据模型(FDM)数据类型的变量保存输出JSON文件。
 
 
 
 ## 签名文档步骤 {#sign-document-step}
 
-“签署文档”步骤允许您使用 [!DNL Adobe Sign] 签署文档。 当您使用 [!DNL Adobe Sign] 用于签名自适应表单的工作流步骤，可以根据工作流步骤的配置，将表单逐个传送给收件人，也可以将表单同时发送给所有收件人。 [!DNL Adobe Sign] 仅在所有收件人完成签名过程后，支持的自适应Forms才会提交到Experience Manager Forms Server。
+“签署文档”步骤允许您使用[!DNL Adobe Sign]签署文档。 在使用[!DNL Adobe Sign]工作流步骤对自适应表单进行签名时，可以将表单逐个传送给收件人，也可以将表单同时发送给所有收件人，具体取决于工作流步骤的配置。 仅在所有收件人完成签名过程后，才会将启用[!DNL Adobe Sign]的Adaptive Forms提交到Experience Manager Forms Server。
 
-默认情况下， [!DNL Adobe Sign] 调度程序服务每24小时检查（轮询）收件人响应。 您可以 [更改环境的默认时间间隔](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status).
+默认情况下，[!DNL Adobe Sign]计划程序服务每24小时检查（轮询）一次收件人响应。 您可以[更改环境的默认间隔](adobe-sign-integration-adaptive-forms.md#for-aem-workflows-only-configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status-configure-adobe-sign-scheduler-to-sync-the-signing-status)。
 
 “签署文档”步骤具有以下属性：
 
-* **[!UICONTROL 协议名称]**：指定协议的标题。 协议名称将成为发送给签名者的电子邮件的主题和正文的一部分。 您可以将名称存储在String数据类型的变量中，也可以选择 **[!UICONTROL 文本]** 以手动添加名称。
+* **[!UICONTROL 协议名称]**：指定协议的标题。 协议名称将成为发送给签名者的电子邮件的主题和正文的一部分。 您可以将该名称存储在String数据类型的变量中，也可以选择&#x200B;**[!UICONTROL 文本]**&#x200B;手动添加该名称。
 
-* **[!UICONTROL 区域设置]**：指定电子邮件和验证选项的语言。 您可以将区域设置存储在String数据类型的变量中，也可以选择 **[!UICONTROL 文本]** 从可用选项列表中选择区域设置。 在变量中存储区域设置的值时，必须定义区域设置代码。 例如，指定 **[!UICONTROL en_US]** 英语和 **[!UICONTROL fr_FR]** 法文版的。
+* **[!UICONTROL 区域设置]**：指定电子邮件和验证选项的语言。 您可以将区域设置存储在String数据类型的变量中，也可以选择&#x200B;**[!UICONTROL 文本]**&#x200B;从可用选项列表中选择区域设置。 在变量中存储区域设置的值时，必须定义区域设置代码。 例如，为英语指定&#x200B;**[!UICONTROL en_US]**，为法语指定&#x200B;**[!UICONTROL fr_FR]**。
 
-* **[!UICONTROL Adobe Sign云配置]**：选择一个 [!DNL Adobe Sign] 云配置。 如果您尚未配置 [!DNL Adobe Sign] 对象 [!DNL AEM Forms]，请参见 [将Adobe Sign与集成 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+* **[!UICONTROL Adobe Sign云配置]**：选择[!DNL Adobe Sign]云配置。 如果您尚未为[!DNL AEM Forms]配置[!DNL Adobe Sign]，请参阅[将Adobe Sign与 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)集成。
 
-* **[!UICONTROL 使用以下方式选择要签名的文档]**：您可以从有效负荷的相对位置选择文档，使用有效负荷作为文档，指定文档的绝对路径，或检索存储在Document数据类型变量中的文档。
-* **[!UICONTROL 距截止日期所剩天数]**：当任务中没有相应活动（天数）达到指定的天数后，文档将被标记为到期（已超过截止日期）。 **[!UICONTROL 距截止日期所剩天数]** 字段。 在将文档分配给用户进行签名后，计算天数。
+* **[!UICONTROL 使用选择要签名的文档]**：您可以从有效负荷的相对位置选择文档，使用有效负荷作为文档，指定文档的绝对路径，或检索存储在Document数据类型变量中的文档。
+* 截止日期&#x200B;**[!UICONTROL 天]**：在截止日期&#x200B;**[!UICONTROL 天]**&#x200B;字段中指定的天数内任务没有活动后，文档被标记为到期（已超过截止日期）。 在将文档分配给用户进行签名后，计算天数。
 * **[!UICONTROL 提醒电子邮件频率]**：您可以按每日或每周间隔发送提醒电子邮件。 从文档分配给用户进行签名的当天开始计算周数。
 * **[!UICONTROL 签名流程]**：您可以选择按顺序或并行顺序对文档进行签名。 按顺序依次依次接收文档，以供签名者每次签名。 在第一签名者完成文档签名后，文档被发送给第二签名者，依此类推。 多个签名者可以同时以并行顺序对文档进行签名。
 * **[!UICONTROL 重定向URL]**：指定重定向URL。 在签署文档后，您可以将受分派人重定向到URL。 通常，此URL包含感谢消息或进一步说明。
-* **[!UICONTROL 工作流暂存]**：一个工作流可以有多个阶段。 这些阶段显示在AEM收件箱中。 您可以在模型的属性中定义这些阶段( **[!UICONTROL Sidekick]** > **[!UICONTROL 页面]** > **[!UICONTROL 页面属性]** > **[!UICONTROL 暂存]**)。
+* **[!UICONTROL 工作流暂存]**：一个工作流可以有多个暂存。 这些阶段显示在AEM收件箱中。 您可以在模型的属性(**[!UICONTROL Sidekick]** > **[!UICONTROL 页面]** > **[!UICONTROL 页面属性]** > **[!UICONTROL 阶段]**)中定义这些阶段。
 * **[!UICONTROL 选择收件人]**：指定选择文档收件人的方法。 您可以动态地将工作流分配给用户或组，或手动添加收件人的详细信息。 在下拉列表中选择手动后，您会添加收件人详细信息，例如电子邮件、角色和身份验证方法。
 
   >[!NOTE]
   >
   >* 在“角色”部分，您可以将收件人角色指定为签名者、批准者、接受者、已认证收件人、表单填写者和委托人。
   >* 如果在“角色”选项中选择“委托人”，则委托人可以将该签名任务分配给其他收件人。
-  >* 如果已配置身份验证方法 [!DNL Adobe Sign]，根据您的配置，您可以选择身份验证方法，例如基于手机的身份验证、基于社交身份的身份验证、基于知识的身份验证、基于政府身份的身份验证。
+  >* 如果已为[!DNL Adobe Sign]配置了身份验证方法，则根据您的配置，请选择身份验证方法，例如基于电话的身份验证、基于社交身份的身份验证、基于知识的身份验证、基于政府身份的身份验证。
 
-* **[!UICONTROL 用于选择收件人的脚本或服务]**：仅当在选择收件人字段中选择动态选项时，该选项才可用。 您可以指定ECMAScript或服务来选择文档的签名者和验证选项。
-* **[!UICONTROL 收件人详细信息]**：仅当在选择收件人字段中选择了手动选项时，该选项才可用。 指定电子邮件地址并选择可选的验证机制。 在选择两步验证机制之前，请确保为配置的启用了相应的验证选项 [!DNL Adobe Sign] 帐户。 您可以使用String数据类型的变量来定义电子邮件、国家/地区代码和电话号码字段的值。 仅当您从两步验证下拉列表中选择“电话验证”时，才会显示“国家/地区代码”和“电话号码”字段。
+* **[!UICONTROL 用于选择收件人的脚本或服务]**：仅当您在“选择收件人”字段中选择“动态”选项时，该选项才可用。 您可以指定ECMAScript或服务来选择文档的签名者和验证选项。
+* **[!UICONTROL 收件人详细信息]**：只有在“选择收件人”字段中选择了“手动”选项时，该选项才可用。 指定电子邮件地址并选择可选的验证机制。 在选择两步验证机制之前，请确保为配置的[!DNL Adobe Sign]帐户启用相应的验证选项。 您可以使用String数据类型的变量来定义电子邮件、国家/地区代码和电话号码字段的值。 仅当您从两步验证下拉列表中选择“电话验证”时，才会显示“国家/地区代码”和“电话号码”字段。
 * **[!UICONTROL 已签署文档]**：您可以将已签署文档的状态保存到变量。 要为已签署文档添加电子签名审核跟踪，以提高安全性和合法性，您可以包括审核报表。 您可以使用变量或有效负荷文件夹保存签名文档。
 
   >[!NOTE]
@@ -520,9 +520,9 @@ Send a document directly to a printer. It supports the following printing access
 
 **[!UICONTROL 输入属性]**
 
-* **[!UICONTROL 使用以下方式选择模板文件]**：指定模板文件的路径。 您可以使用相对于有效负荷的路径、以绝对路径保存或者使用Document数据类型的变量来选择模板文件。 例如， [Payload_Directory]/Workflow/data.xml. 如果crx-repository中不存在该路径，则管理员可以在使用该路径之前创建该路径。 此外，您还可以接受有效负荷作为输入数据文件。
+* **[!UICONTROL 使用]**&#x200B;选择模板文件：指定模板文件的路径。 您可以使用相对于有效负荷的路径、以绝对路径保存或者使用Document数据类型的变量来选择模板文件。 例如，[Payload_Directory]/Workflow/data.xml。 如果crx-repository中不存在该路径，则管理员可以在使用该路径之前创建该路径。 此外，您还可以接受有效负荷作为输入数据文件。
 
-* **[!UICONTROL 使用以下方式选择数据文档]**：指定输入数据文件的路径。 您可以使用相对于有效负荷的路径（以绝对路径保存）或使用Document数据类型的变量来选择输入数据文件。 例如， [Payload_Directory]/Workflow/data.xml. 如果crx-repository中不存在该路径，则管理员可以在使用该路径之前创建该路径。
+* **[!UICONTROL 使用以下方式选择数据文档]**：指定输入数据文件的路径。 您可以使用相对于有效负荷的路径（以绝对路径保存）或使用Document数据类型的变量来选择输入数据文件。 例如，[Payload_Directory]/Workflow/data.xml。 如果crx-repository中不存在该路径，则管理员可以在使用该路径之前创建该路径。
 
 * **[!UICONTROL 打印机格式]**：指定在未提供XDC文件时用于生成输出流的页面描述语言的打印格式值。 如果提供文本值，请选择以下值之一：
 
@@ -537,38 +537,40 @@ Send a document directly to a printer. It supports the following printing access
    * **[!UICONTROL DPL300DPI]**：使用DPL 300 DPI。 使用dpl300.xdc。
    * **[!UICONTROL DPL400DPI]**：使用DPL 400 DPI。 使用dpl400.xdc。
    * **[!UICONTROL DPL600DPI]**：使用DPL 600 DPI。 使用dpl600.xdc。
-   * **[!UICONTROL HP_PCL_5e]**：使用选项支持多个佳能设备。
+   * **[!UICONTROL HP_PCL_5e]**：使用选项支持多个Canon设备。
 
 
 **[!UICONTROL 输出属性]**
 
-* **[!UICONTROL 保存输出文档，使用]**：指定保存输出文件的位置。 可将输出文件保存在相对于有效负荷的位置、变量中，或指定绝对位置以保存输出文件。 如果crx-repository中不存在该路径，则管理员可以在使用该路径之前创建该路径。
+* **[!UICONTROL 使用]**&#x200B;保存输出文档：指定保存输出文件的位置。 可将输出文件保存在相对于有效负荷的位置、变量中，或指定绝对位置以保存输出文件。 如果crx-repository中不存在该路径，则管理员可以在使用该路径之前创建该路径。
 
 **[!UICONTROL 高级属性]**
 
-* **[!UICONTROL 使用以下方式选择内容根位置]**：内容根是一个字符串值，它指定存储库中的URI、绝对引用或位置以检索表单设计使用的相对资源。 例如，如果窗体设计相对引用图像，如 `../myImage.gif`， `myImage.gif` 必须在 `repository://`. 默认值为 `repository://`，指向存储库的根级别。
+* **[!UICONTROL 使用以下方式选择内容根位置]**：内容根是一个字符串值，它指定存储库中的URI、绝对引用或位置以检索表单设计使用的相对资源。 例如，如果窗体设计相对引用了一个图像，如`../myImage.gif`，`myImage.gif`必须位于`repository://`。 默认值为`repository://`，它指向存储库的根级别。
 
-  从应用程序中选择资源时，内容根URI路径必须具有正确的结构。 例如，如果从名为SampleApp的应用程序中选取了一个表单，并将该表单放在 `SampleApp/1.0/forms/Test.xdp`，必须将内容根URI指定为 `repository://administrator@password/Applications/SampleApp/1.0/forms/`，或 `repository:/Applications/SampleApp/1.0/forms/` （当权限为空时）。 以这种方式指定内容根URI时，表单中所有引用资源的路径都将针对此URI解析。
+  从应用程序中选择资源时，内容根URI路径必须具有正确的结构。 例如，如果从名为SampleApp的应用程序中挑选了一个表单，并将其放置在`SampleApp/1.0/forms/Test.xdp`上，则内容根URI必须指定为`repository://administrator@password/Applications/SampleApp/1.0/forms/`或`repository:/Applications/SampleApp/1.0/forms/`（当授权为null时）。 以这种方式指定内容根URI时，表单中所有引用资源的路径都将针对此URI解析。
 
-* **[!UICONTROL 使用以下方式选择XCI文件]**：XCI文件用于描述用于窗体设计元素的字体和其他属性。 您可以将XCI文件相对于有效负荷保留在绝对路径上，或者使用Document数据类型的变量。
+* **[!UICONTROL 使用]**&#x200B;选择XCI文件： XCI文件用于描述用于窗体设计元素的字体和其他属性。 您可以将XCI文件相对于有效负荷保留在绝对路径上，或者使用Document数据类型的变量。
 
 * **[!UICONTROL 区域设置]**：指定用于生成PDF文档的语言。 如果提供文本值，请从列表中选择一种语言或选择以下值之一：
-   * **[!UICONTROL 使用服务器默认值]**：（默认）使用在上配置的区域设置。 [!DNL AEM Forms] 服务器。 “区域设置”设置是使用“管理控制台”配置的。 (请参阅 [Designer帮助](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf).)
+   * **[!UICONTROL 要使用服务器默认值]**：
+（默认）使用[!DNL AEM Forms]服务器上配置的区域设置。 “区域设置”设置是使用“管理控制台”配置的。 (请参阅[Designer帮助](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。)
 
-   * **[!UICONTROL 使用自定义值]**：在文本框中键入区域设置代码，或选择包含区域设置代码的字符串变量。 有关支持的区域设置代码的完整列表，请参阅https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html。
+   * **[!UICONTROL 要使用自定义值]**：
+在文本框中键入区域设置代码，或选择包含区域设置代码的字符串变量。 有关支持的区域设置代码的完整列表，请参阅https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html。
 
 * **[!UICONTROL 副本]**：一个整数值，它指定要为输出生成的副本数。 默认值为 1。
 
 * **[!UICONTROL 双面打印]**：指定使用双面打印还是单面打印的“分页”值。 支持PostScript和PCL的打印机使用此值。 如果提供文本值，请选择以下值之一：
-   * **[!UICONTROL 双面长边]**：使用双面打印并使用长边分页进行打印。
-   * **[!UICONTROL 双面短边]**：使用双面打印，并使用短边分页进行打印。
+   * **[!UICONTROL 双面长Edge]**：使用双面打印并使用长边分页进行打印。
+   * **[!UICONTROL 双面短Edge]**：使用双面打印并使用短边分页进行打印。
    * **[!UICONTROL 单面]**：使用单面打印。
 
 ## 生成非交互式PDF输出步骤   {#generatePDFdocuments}
 
 1. 在“Sidekick”中，将“生成非交互式PDF输出”Forms Workflow拖动到“工作流”选项卡下。
 1. 双击添加的工作流步骤以编辑组件。
-1. 在“编辑组件”对话框中，配置输入文档、输出文档和其他参数，然后单击 **[!UICONTROL 确定]**.
+1. 在“编辑组件”对话框中，配置输入文档、输出文档和其他参数，然后单击&#x200B;**[!UICONTROL 确定]**。
 
 ### 输入文档 {#input-documents-3}
 
@@ -582,11 +584,11 @@ Send a document directly to a printer. It supports the following printing access
 
 ### 其他参数 {#additional-parameters-1}
 
-* **内容根**：指定存储库中用于存储输入XDP模板中使用的片段或图像的文件夹的路径。
-* **区域设置**：指定生成的PDF表单的默认区域设置。
+* **内容根**：指定存储输入XDP模板中使用的片段或图像的存储库中的文件夹的路径。
+* **区域设置**：为生成的PDF表单指定默认区域设置。
 * **Acrobat版本**：为生成的PDF表单指定目标Acrobat版本。
-* **线性PDF**：指定是否优化生成的PDF以进行Web查看。
-* **已标记PDF**：指定是否使生成的PDF可访问。
+* **线性化PDF**：指定是否优化生成的PDF以进行Web查看。
+* **已标记的PDF**：指定是否使生成的PDF可访问。
 * **XCI文档**：指定XCI文件的路径。
 
 ## 另请参阅 {#see-also}

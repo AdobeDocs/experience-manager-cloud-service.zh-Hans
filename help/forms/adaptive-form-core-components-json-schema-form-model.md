@@ -30,14 +30,14 @@ ht-degree: 4%
 
 ## 使用JSON架构作为表单模型  {#using-a-json-schema-as-form-model}
 
-Adobe Experience Manager Forms支持使用现有JSON架构作为表单模型，基于核心组件创建自适应表单。 此JSON架构表示组织中的后端系统生成或使用数据的结构。 您使用的JSON架构应符合 [v4规范](https://json-schema.org/draft-04/schema).
+Adobe Experience Manager Forms支持使用现有JSON架构作为表单模型，基于核心组件创建自适应表单。 此JSON架构表示组织中的后端系统生成或使用数据的结构。 您使用的JSON架构应符合[v4规范](https://json-schema.org/draft-04/schema)。
 
 使用JSON架构的主要功能包括：
 
 * 在自适应表单的创作模式下，JSON的结构在内容查找器选项卡中显示为树。 您可以根据核心组件将元素从JSON层级拖放到自适应表单中。
 * 您可以使用与关联架构兼容的JSON预填充表单。
 * 在提交时，用户输入的数据将作为JSON提交，该JSON与关联的架构保持一致。
-* 您还可以根据的规范基于JSON架构创建表单 [2012-20版本](https://json-schema.org/draft/2020-12/release-notes).
+* 您还可以根据[2012-20 version](https://json-schema.org/draft/2020-12/release-notes)的规范基于JSON架构创建表单。
 
 JSON架构包含简单和复杂的元素类型。 元素具有向元素添加规则的属性。 将这些元素和属性拖动到自适应表单上时，会自动映射到相应的自适应表单组件。
 
@@ -84,15 +84,15 @@ JSON元素与自适应表单组件的映射如下所示：
   </tr>
   <tr>
    <td>数字属性<br /> </td>
-   <td>子类型设置为float的数字字段<br /> </td>
+   <td>子类型设置为float<br />的数值字段 </td>
   </tr>
   <tr>
-   <td>integer属性<br /> </td>
-   <td>子类型设置为整数的数字字段<br /> </td>
+   <td>整数属性<br /> </td>
+   <td>子类型设置为integer<br />的数字字段 </td>
   </tr>
   <tr>
    <td>布尔属性<br /> </td>
-   <td>切换<br /> </td>
+   <td>交换机<br /> </td>
   </tr>
   <tr>
    <td>对象属性<br /> </td>
@@ -100,7 +100,7 @@ JSON元素与自适应表单组件的映射如下所示：
   </tr>
   <tr>
    <td>数组属性</td>
-   <td>可重复面板，最小值和最大值分别等于minItems和maxItems。 仅支持同质数组。 因此项约束必须是对象，而不是数组。<br /> </td>
+   <td>可重复面板，最小值和最大值分别等于minItems和maxItems。 仅支持同质数组。 因此，项约束必须是对象，而不是数组。<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -109,17 +109,17 @@ JSON元素与自适应表单组件的映射如下所示：
 
 自适应表单使用JSON架构中可用的信息来映射每个生成的字段。 特别是：
 
-* 此 `title` 属性用作自适应表单组件的标签。
-* 此 `description` 属性设置为对自适应表单组件的详细说明。
-* 此 `default` 属性用作自适应表单字段的初始值。
-* 此 `maxLength` 属性设置为 `maxlength` 文本字段组件的属性。
-* 此 `minimum`， `maximum`， `exclusiveMinimum`、和 `exclusiveMaximum` 属性用于数值框组件。
-* 要支持的范围，请执行以下操作 `DatePicker component` 其他JSON架构属性 `minDate` 和 `maxDate` 提供……
-* 此 `minItems` 和 `maxItems` 属性用于限制可从面板组件添加或删除的项目/字段数。
-* 此 `readOnly` 属性设置 `readonly` 自适应表单组件的属性。
-* 此 `required` 属性将自适应表单字段标记为必填字段，而在面板（其中类型为对象）中，最终提交的JSON数据具有的字段具有对应于该对象的空值。
-* 此 `pattern` 属性在自适应表单中设置为验证模式（正则表达式）。
-* JSON架构文件的扩展名必须保留为.schema.json。 例如， &lt;filename>.schema.json。
+* `title`属性用作自适应表单组件的标签。
+* `description`属性设置为自适应表单组件的完整描述。
+* `default`属性用作自适应表单字段的初始值。
+* `maxLength`属性设置为文本字段组件的`maxlength`属性。
+* `minimum`、`maximum`、`exclusiveMinimum`和`exclusiveMaximum`属性用于数值框组件。
+* 为了支持`DatePicker component`范围，提供了其他JSON架构属性`minDate`和`maxDate`。
+* `minItems`和`maxItems`属性用于限制可从面板组件添加或删除的项/字段数。
+* `readOnly`属性设置自适应表单组件的`readonly`属性。
+* `required`属性将自适应表单字段标记为必填字段，而在面板（其中类型为对象）中，最终提交的JSON数据具有的字段具有对应于该对象的空值。
+* 在自适应表单中，`pattern`属性设置为验证模式（正则表达式）。
+* JSON架构文件的扩展名必须保留为.schema.json。 例如，&lt;文件名>.schema.json。
 
 ## 示例JSON架构 {#sample-json-schema}
 
@@ -302,7 +302,7 @@ JSON元素与自适应表单组件的映射如下所示：
 ```
 
 
->[!TAB JSON模式2012-20]
+>[!TAB JSON架构2012-20]
 
 
 ```json
@@ -429,12 +429,12 @@ JSON元素与自适应表单组件的映射如下所示：
 >[!ENDTABS]
 
 从JSON架构V4到版本2020-12规范的主要更改包括：
-* ID声明为 `$id`
-* 定义声明为 `$defs`
+* ID声明为`$id`
+* 定义声明为`$defs`
 
 ### 可重用架构定义 {#reusable-schema-definitions}
 
-定义键用于标识可重用架构。 可重用架构定义用于创建片段。 <!-- It is similar to identifying complex types in XSD.--> 下面给出了具有定义的示例JSON架构：
+定义键用于标识可重用架构。 可重用架构定义用于创建片段。 <!-- It is similar to identifying complex types in XSD.-->下面给出了具有定义的示例JSON架构：
 
 ```json
 {
@@ -857,10 +857,10 @@ Here is the sample JSON code for previously mentioned examples.
 
 要启用所有基于JSON架构的自适应Forms在提交表单时生成与架构兼容的数据，请执行以下步骤：
 
-1. 转到Experience ManagerWeb控制台，网址为 `https://server:host/system/console/configMgr`.
-1. 定位 **[!UICONTROL 自适应表单和互动通信Web渠道配置]**.
+1. 转到`https://server:host/system/console/configMgr`上的Experience ManagerWeb控制台。
+1. 找到&#x200B;**[!UICONTROL 自适应表单和交互通信Web渠道配置]**。
 1. 选择以在编辑模式下打开配置。
-1. 选择 **[!UICONTROL 生成符合架构的数据]** 复选框。
+1. 选中&#x200B;**[!UICONTROL 生成符合架构的数据]**&#x200B;复选框。
 1. 保存设置。
 
 ![自适应表单和交互式通信Web渠道配置](/help/forms/assets/af-ic-web-channel-configuration.png)
@@ -891,11 +891,11 @@ Here is the sample JSON code for previously mentioned examples.
 
 **JSON架构文件的扩展名应该是什么？**
 
-JSON架构文件的扩展名必须是.schema.json。 例如， &lt;filename>.schema.json。
+JSON架构文件的扩展名必须是.schema.json。 例如，&lt;文件名>.schema.json。
 
-**是 `aem:afProperties` 在基于核心组件的自适应Forms中，是否作为JSON架构的一部分受支持？**
+基于核心组件的自适应Forms中的JSON架构是否支持&#x200B;**`aem:afProperties`？**
 
-不， `aem:afProperties` 不支持核心组件。 仅基础组件支持此属性。
+否，核心组件不支持`aem:afProperties`。 仅基础组件支持此属性。
 
 ## 另请参阅 {#see-also}
 

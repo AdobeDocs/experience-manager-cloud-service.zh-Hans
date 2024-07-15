@@ -1,5 +1,5 @@
 ---
-title: 内容片段 — 删除注意事项（资产 — 内容片段）
+title: 内容片段 — 删除注意事项(Assets — 内容片段)
 description: 在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments
@@ -24,14 +24,14 @@ ht-degree: 91%
 
 1. **内容片段作为单个实体。**
 
-   * **用例**：必须编辑/更新内容片段的用户 —  **并删除整个片段**.
+   * **用例**：必须编辑/更新内容片段的用户 — **并删除整个片段**。
    * **权限**：可以通过“用户”和/或“群组管理”来分配“删除”权限。 <!-- The [Delete](/help/sites-administering/security.md#actions) permission can be [assigned through User and/or Group Management](/help/sites-administering/security.md#managing-permissions). -->
 
 2. **构成内容片段的多个子实体；例如，变体、子节点。**
 
    内容片段编辑器的基本操作要求可以删除此类临时子元素。 例如，在处理变量时；在编辑元数据或管理关联的内容时，也可以。
 
-   * **用例**：必须编辑/更新内容片段的用户 —  **不允许删除整个片段**.
+   * **用例**：必须编辑/更新内容片段的用户 — **不允许删除整个片段**。
    * **权限**：请参阅 [仅编辑器功能所需的权限](#permissions-required-for-editor-functionality-only)。
 
 >[!NOTE]

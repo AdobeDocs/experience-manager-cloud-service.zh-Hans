@@ -44,7 +44,7 @@ ht-degree: 98%
 
 为了在具有 Edge Delivery Services 的 AEM 项目中使用电子表格创建映射，您需要使用最新的站点模板创建站点。
 
-请参阅文档 [用于Edge Delivery Services的WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 以了解更多信息。
+有关详细信息，请参阅文档[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
 
 ## 创建电子表格 {#spreadsheet}
 

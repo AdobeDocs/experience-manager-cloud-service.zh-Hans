@@ -14,18 +14,18 @@ ht-degree: 0%
 
 # 配置重定向页面 {#configuring-redirect-page}
 
-在提交 [基于核心组件的自适应表单](creating-adaptive-form-core-components.md)，则可以将用户重定向到其他网页或显示消息。 配置重定向页面或感谢消息：
+在提交基于[核心组件的自适应表单](creating-adaptive-form-core-components.md)时，您可以将用户重定向到其他网页或显示消息。 配置重定向页面或感谢消息：
 
 1. 打开自适应表单进行编辑。
-1. 打开内容树并选择 **[!UICONTROL 参考线容器]**.
-1. 单击自适应表单容器属性 ![自适应表单容器属性](/help/forms/assets/configure-icon.svg) 图标。 此时将打开用于配置数据模型的自适应表单容器对话框。
-1. 打开 **[!UICONTROL 提交]** 选项卡。 显示用于配置重定向页面或消息的选项：
+1. 打开内容树并选择&#x200B;**[!UICONTROL 指南容器]**。
+1. 单击自适应表单容器属性![自适应表单容器属性](/help/forms/assets/configure-icon.svg)图标。 此时将打开用于配置数据模型的自适应表单容器对话框。
+1. 打开&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。 显示用于配置重定向页面或消息的选项：
 
-   ![用于配置重定向页面或消息的指南容器的“提交”对话框](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
+   向导容器的![提交对话框用于配置重定向页面或消息](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
-   * 要配置重定向URL，请为提交选项选择 **[!UICONTROL 重定向到URL选项]**，并提供AEM Sites页面的绝对地址或重定向URL或相对路径。
+   * 要配置重定向URL，请为提交选项选择&#x200B;**[!UICONTROL 重定向到URL选项]**，并提供绝对地址、重定向URL或AEM Sites页面的相对路径。
 
-   * 要配置自定义或感谢消息，请选择 **[!UICONTROL 显示消息]** 选项，并在消息内容框中提供消息。 它是一个富文本框，您可以使用全屏选项查看所有可用的富文本项。
+   * 要配置自定义消息或感谢消息，请选择&#x200B;**[!UICONTROL 显示消息]**&#x200B;选项，然后在“消息内容”框中提供消息。 它是一个富文本框，您可以使用全屏选项查看所有可用的富文本项。
 
 表单作者可为每个表单配置一个页面，表单用户在提交表单后会重定向到该页面。
 

@@ -17,23 +17,23 @@ ht-degree: 2%
 
 ## 简介 {#introduction}
 
-应用程序对页面或组件更新可能有不同的要求。 因此，Universal Editor会将定义的事件发送到远程应用程序。 如果远程应用程序没有已发送事件的自定义事件侦听器， [回退事件侦听器](#fallback-listeners) 由 `universal-editor-cors` 包被执行。
+应用程序对页面或组件更新可能有不同的要求。 因此，Universal Editor会将定义的事件发送到远程应用程序。 如果远程应用程序没有已发送事件的自定义事件侦听器，则会执行`universal-editor-cors`包提供的[回退事件侦听器](#fallback-listeners)。
 
-所有事件均会在远程页面中受影响的DOM元素上调用。 事件冒泡上升到 `BODY` 元素，其中提供的默认事件侦听器 `universal-editor-cors` 包已注册。 UI包含内容和事件。
+所有事件均会在远程页面中受影响的DOM元素上调用。 事件向上冒泡到`BODY`元素，其中注册了`universal-editor-cors`包提供的默认事件侦听器。 UI包含内容和事件。
 
 所有事件都遵循命名约定。
 
 * `aue:<content-or-ui>-<event-name>`
 
-例如， `aue:content-update` 和 `aue:ui-select`
+例如，`aue:content-update`和`aue:ui-select`
 
-事件包括请求和响应的有效负载，并在相应的调用成功后触发。 有关调用及其负载示例的更多详细信息，请参阅文档 [通用编辑器调用。](/help/implementing/universal-editor/calls.md)
+事件包括请求和响应的有效负载，并在相应的调用成功后触发。 有关调用及其负载示例的更多详细信息，请参阅文档[通用编辑器调用。](/help/implementing/universal-editor/calls.md)
 
 ## 内容更新事件 {#content-events}
 
 ### aue：content-add {#content-add}
 
-此 `aue:content-add` 将新组件添加到容器时会触发事件。
+向容器添加新组件时触发`aue:content-add`事件。
 
 有效负载是通用编辑器服务中的内容，其中包含组件定义中的回退内容。
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 ### aue：content-details {#content-details}
 
-此 `aue:content-details` 当组件加载到属性边栏中时，将触发事件。
+当组件加载到属性边栏中时，会触发`aue:content-details`事件。
 
 有效负载是组件的内容，并可以选择是组件的架构。
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 
 ### aue：content-move {#content-move}
 
-此 `aue:content-move` 移动组件时会触发事件。
+移动组件时会触发`aue:content-move`事件。
 
 有效负载包括组件、源容器和目标容器。
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 ### aue：content-patch {#content-patch}
 
-此 `aue:content-patch` 当组件数据在属性边栏中更新时，会触发事件。
+当组件数据在属性边栏中更新时，会触发`aue:content-patch`事件。
 
 有效负载是已更新属性的JSON修补程序。
 
@@ -110,7 +110,7 @@ ht-degree: 2%
 
 ### aue：content-remove {#content-remove}
 
-此 `aue:content-remove` 从容器中删除组件时会触发事件。
+从容器中删除组件时触发`aue:content-remove`事件。
 
 有效负载是已删除组件的项目ID。
 
@@ -126,7 +126,7 @@ ht-degree: 2%
 
 ### aue：content-update {#content-update}
 
-此 `aue:content-update` 在上下文中更新组件的属性时，将触发事件。
+在上下文中更新组件的属性时，会触发`aue:content-update`事件。
 
 有效负载是更新的值。
 
@@ -182,13 +182,13 @@ ht-degree: 2%
 
 ### aue：ui-publish {#ui-publish}
 
-此 `aue:ui-publish` 事件在发布内容时触发(调用 `BODY` 级别)。
+发布内容时触发`aue:ui-publish`事件（在`BODY`级别调用）。
 
 有效负载是项目ID及其发布状态的列表。
 
 ### aue：ui-select {#ui-select}
 
-此 `aue:ui-select` 选择组件时会触发事件。
+选择某个组件时会触发`aue:ui-select`事件。
 
 有效负载是所选组件的项目ID、项目属性和项目类型。
 
@@ -205,7 +205,7 @@ ht-degree: 2%
 
 ### aue：ui-preview {#ui-preview}
 
-此 `aue:ui-preview` 当页面的编辑模式更改为时，将触发事件 **预览**.
+当页面的编辑模式更改为&#x200B;**预览**&#x200B;时，将触发`aue:ui-preview`事件。
 
 此事件的有效负载为空。
 
@@ -217,7 +217,7 @@ ht-degree: 2%
 
 ### aue：ui-edit {#ui-edit}
 
-此 `aue:ui-edit` 当页面的编辑模式更改为时，将触发事件 **编辑**.
+当页面的编辑模式更改为&#x200B;**编辑**&#x200B;时，将触发`aue:ui-edit`事件。
 
 此事件的有效负载为空。
 
@@ -229,7 +229,7 @@ ht-degree: 2%
 
 ### aue：ui-viewport-change {#ui-viewport-change}
 
-此 `aue:ui-viewport-change` 事件在视区大小更改时触发。
+更改视区大小时会触发`aue:ui-viewport-change`事件。
 
 有效负载是视区的尺寸。
 
@@ -244,7 +244,7 @@ ht-degree: 2%
 
 ### aue：initialized {#initialized}
 
-此 `aue:initialized` 触发事件以告知远程页面已成功将其加载到通用编辑器中。
+触发`aue:initialized`事件是为了让远程页面知道它已成功加载到通用编辑器中。
 
 此事件的有效负载为空。
 
@@ -265,7 +265,7 @@ ht-degree: 2%
 | `aue:content-move` | 将组件的内容/结构移动到目标区域 |
 | `aue:content-patch` | 页面重新加载 |
 | `aue:content-remove` | 删除DOM元素 |
-| `aue:content-update` | 更新 `innerHTML` 包含有效负荷 |
+| `aue:content-update` | 使用有效负载更新`innerHTML` |
 
 ### UI事件 {#ui-event-fallbacks}
 
@@ -273,8 +273,8 @@ ht-degree: 2%
 |---|---|
 | `aue:ui-publish` | 不执行任何操作 |
 | `aue:ui-select` | 滚动到选定的元素 |
-| `aue:ui-preview` | 添加 `class="adobe-ue-preview"` HTML标记 |
-| `aue:ui-edit` | 添加 `class=adobe-ue-edit"` HTML标记 |
+| `aue:ui-preview` | 将`class="adobe-ue-preview"`添加到HTML标记 |
+| `aue:ui-edit` | 将`class=adobe-ue-edit"`添加到HTML标记 |
 | `aue:ui-viewport-change` | 不执行任何操作 |
 | `aue:initialized` | 不执行任何操作 |
 

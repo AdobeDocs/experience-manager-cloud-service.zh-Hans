@@ -66,7 +66,7 @@ ht-degree: 87%
 如果要为自己的组件使用样式系统，请执行以下操作：
 
 1. 按照[概述](#overview)部分中的所述，将 CSS 作为客户端库进行安装。
-1. 按照一节中的说明，配置您想让内容作者可以使用的CSS类 [作为模板作者](#as-a-template-author).
+1. 按照[作为模板作者](#as-a-template-author)一节中的说明，配置要可供内容作者使用的CSS类。
 1. 然后，内容作者可以按照[作为内容作者](#as-a-content-author)部分中的所述使用样式。
 
 ### 作为内容作者 {#as-a-content-author}
@@ -76,7 +76,7 @@ ht-degree: 87%
 
    ![作者的样式系统](/help/sites-cloud/authoring/assets/style-system-author1.png)
 
-1. 选择 **样式** 工具栏上的按钮 **列表** 组件打开样式菜单并更改组件的外观。
+1. 选择&#x200B;**列表**&#x200B;组件工具栏上的&#x200B;**样式**&#x200B;按钮以打开样式菜单并更改该组件的外观。
 
    ![选择样式](/help/sites-cloud/authoring/assets/style-system-author2.png)
 
@@ -86,7 +86,7 @@ ht-degree: 87%
 
 ### 作为模板作者 {#as-a-template-author}
 
-1. 编辑WKND的英语母版主页时 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`，通过编辑页面的模板 **“页面信息”>“编辑模板”**.
+1. 编辑WKND位于`http://<host>:<port>/sites.html/content/wknd/language-masters/en`的英语母版主页时，通过&#x200B;**页面信息>编辑模板**&#x200B;编辑该页面的模板。
 
    ![编辑模板](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
@@ -98,7 +98,7 @@ ht-degree: 87%
 
    ![编辑属性](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
-   * **组名称：** 样式可以在样式菜单中分为一组，内容作者在配置组件样式时会看到该样式菜单。
+   * **组名称：**&#x200B;样式可以在样式菜单中分为一组，内容作者在配置组件样式时会看到该样式菜单。
    * **样式可以合并：**&#x200B;允许一次选择该组中的多个样式。
    * **样式名称：**&#x200B;在配置组件样式时将向内容作者显示的样式描述。
    * **CSS 类：**&#x200B;与样式关联的 CSS 类的实际名称。
@@ -162,4 +162,4 @@ ht-degree: 87%
 
 这种定义样式名称的功能对于通用的组件（如布局容器或内容片段组件）非常有用，可为它们提供更多含义。
 
-例如，它允许为布局容器提供如下语义 `<main>`， `<aside>`， `<nav>`，等等。
+例如，它允许为布局容器提供`<main>`、`<aside>`、`<nav>`等语义。

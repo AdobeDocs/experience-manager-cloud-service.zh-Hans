@@ -323,7 +323,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. 在&#x200B;**资源**&#x200B;控制台中导航到您的内容片段。
 1. 选择要导出到 Target 的内容片段。
 
-1. 选择 **导出到Adobe Target优惠**.
+1. 选择&#x200B;**导出到Adobe Target选件**。
 
    ![导出到 Adobe Target](assets/cfm-export-target-01.png)
 
@@ -337,7 +337,7 @@ When you associate a page with the framework, the child pages inherit the associ
    
    -->
 
-1. 选择 **导出而不发布** 或 **Publish** 根据需要。
+1. 根据需要选择&#x200B;**导出而不发布**&#x200B;或&#x200B;**Publish**。
 
    >[!NOTE]
    >
@@ -349,7 +349,7 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >选择&#x200B;**发布**，内容片段将立即发布，并同时发送到 Target。
 
-1. 选择 **确定** 在确认对话框中。
+1. 在确认对话框中选择&#x200B;**确定**。
 
    您的内容片段现在应在 Target 中。
 

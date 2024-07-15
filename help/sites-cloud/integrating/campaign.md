@@ -15,7 +15,7 @@ ht-degree: 66%
 
 # 将 AEM as a Cloud Service 与 Adobe Campaign 集成 {#integrating-campaign}
 
-了解AEMas a Cloud Service支持与Adobe Campaign集成。
+了解AEM as a Cloud Service支持与Adobe Campaign集成。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 66%
 
 ## 与Adobe Campaign v7/v8集成 {#acc}
 
-是否支持与AEMas a Cloud Service集成，取决于您实施的Campaign版本。
+是否支持与AEM as a Cloud Service集成，取决于您实施的Campaign版本。
 
 | Campaign版本 | 与 AEMaaCS 集成 |
 |---|---|

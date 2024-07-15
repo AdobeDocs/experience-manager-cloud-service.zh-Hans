@@ -138,7 +138,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 >[!NOTE]
 >
-> AEM Forms提供了多种内置字体，可与PDF文件无缝集成。 要查看支持的字体列表， [单击此处](/help/forms/supported-out-of-the-box-fonts.md).
+> AEM Forms提供了多种内置字体，可与PDF文件无缝集成。 要查看支持的字体列表，[单击此处](/help/forms/supported-out-of-the-box-fonts.md)。
 
 <!-- 
 
@@ -168,7 +168,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## 文档提取
 
-<span class="preview"> 文档提取功能属于率先采用者计划。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
+<span class="preview">文档提取功能属于早期采用者计划。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 文档提取服务允许您获取PDF文档的属性，如使用权限、PDF属性和元数据。 文档提取功能包括：
 
@@ -176,7 +176,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 * 提取在PDF文档中启用的使用权限，用户将启用或禁用的使用权限检索到PDF文档，以实现Adobe Acrobat Reader的可扩展性。
 * 获取PDF文档中存在的元数据信息，元数据是有关文档的信息（与文档内容不同，例如文本和图形）。 Adobe可扩展元数据平台(XMP)是处理文档元数据的标准。 XMP Utilities服务可以从PDF文档中检索XMP元数据，并将XMP元数据导出到PDF文档中。
 
-此 [API参考文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 提供有关所有参数、身份验证方法以及API提供的服务的详细信息。 API参考文档也以.yaml格式提供。 您可以下载.yaml并将其上传到Postman以检查API的功能。
+[API参考文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供了有关API提供的所有参数、身份验证方法和服务的详细信息。 API参考文档也以.yaml格式提供。 您可以下载.yaml并将其上传到Postman以检查API的功能。
 
 <!--
 
@@ -198,7 +198,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### 将PDF转换为XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> 将PDF转换为XDP的功能属于率先采用者计划。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
+<span class="preview"> ConvertPDF到XDP的功能在早期采用者计划下。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 将PDF文档转换为XDP文件。 若要将PDF文档成功转换为XDP文件，PDF文档必须在词典中包含XFA流。
 
@@ -208,7 +208,7 @@ DocAssurance服务包括签名和加密API：
 
 ### 签名API
 
-利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。<!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> 安全功能应用于文档本身，在文档的整个生命周期内保持安全和受控。 在防火墙之外，当文档离线下载以及提交回组织时，文档将保持安全。 您可以使用签名API完成以下任务：
+利用 Signature API，您的组织可以保护其分发和接收的 Adobe PDF 文档的安全和隐私。<!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. -->安全功能应用于文档本身，在文档的整个生命周期内保持安全和受控制。 在防火墙之外，当文档离线下载以及提交回组织时，文档将保持安全。 您可以使用签名API完成以下任务：
 
 * 向PDF文档添加可见签名字段。
 * 向PDF文档添加不可见的签名字段。
@@ -217,7 +217,7 @@ DocAssurance服务包括签名和加密API：
 
 ### 加密API
 
-加密API允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问权限。 如果使用密码对PDF文档进行加密，则必须先指定打开密码，然后才能在Adobe Reader或Adobe Acrobat中查看文档。 <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
+加密API允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问权限。 如果使用密码对PDF文档进行加密，则必须先指定打开密码，然后才能在Adobe Reader或Adobe Acrobat中查看文档。<!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 您可以使用加密API完成以下任务：
 
@@ -226,17 +226,17 @@ DocAssurance服务包括签名和加密API：
 * 检索应用于PDF文档的安全类型。
 * 返回应用于PDF文档的安全类型。
 
-签名API和加密API都是 [同步API](#types-of-communications-apis-types).
+签名API和加密API都是[同步API](#types-of-communications-apis-types)。
 
 
 ### 文档实用工具 {#doc-utility}
 
-带同步API的文档实用程序可帮助您在PDF和XDP文件格式之间转换文档。 将使用权限应用到文档，并从文档中提取启用的使用权限。 查询有关PDF单据的信息。 <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities--> 使用权限API的详细信息如下：
+带同步API的文档实用程序可帮助您在PDF和XDP文件格式之间转换文档。 将使用权限应用到文档，并从文档中提取启用的使用权限。 查询有关PDF单据的信息。 <!-- determines whether a PDF document contains comments or attachments and more, and use document transformation services for XMP utilities-->使用权限API的详细信息如下：
 
 
 #### 使用权限API(Reader扩展)
 
-<span class="preview"> 使用权限(Reader扩展)功能受早期采用者计划限制。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
+<span class="preview">使用权限(Reader扩展)功能属于早期采用者计划。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 使用权限功能通过扩展具有其他使用权限的Adobe Reader的功能，使您的组织可以轻松共享交互式PDF文档。 该服务可与Adobe Reader 7.0或更高版本配合使用，并向PDF文档添加了使用权限。 此操作激活在使用Adobe Reader打开PDF文档时通常不可用的功能，例如向文档添加注释、填写表单和保存文档。
 
@@ -257,27 +257,27 @@ DocAssurance服务包括签名和加密API：
 
 用于扩展PDFReader服务的各种使用权限功能包括：
 
-* **条形码解码**：用于解码PDF文档中的条形码。
+* **条形码解码**：解码PDF文档中的条形码。
 
-* **评论**：在PDF文档上脱机批注。
+* **备注**：脱机评论PDF文档。
 
-* **在线评论**：在PDF文档上进行联机评论。
+* **联机评论**：联机评论PDF文档。
 
 * **数字签名**：向PDF文档添加数字签名。
 
 * **动态表单字段**：向PDF文档添加表单字段。
 
-* **动态表单页面**：将表单页面添加到PDF文档。
+* **动态表单页**：将表单页添加到PDF文档。
 
-* **嵌入式文件**：在PDF文档中嵌入文件。
+* **嵌入的文件**：在PDF文档中嵌入文件。
 
-* **表单数据导入**：将表单数据导入PDF文档。
+* **表单数据导入**：将表单数据导入到PDF文档。
 
-* **表单数据导出**：将表单数据导入PDF文档。
+* **表单数据导出**：将表单数据导入到PDF文档。
 
 * **表单填写**：在PDF文档中填写表单字段。
 
-* **在线Forms**：从PDF文档访问Web服务或数据库。
+* **联机Forms**：从PDF文档访问Web服务或数据库。
 
 * **独立提交**：从PDF文档离线提交表单数据。
 
@@ -287,7 +287,7 @@ DocAssurance服务包括签名和加密API：
 * **消息**：在打开应用了一个或多个使用权限的PDF文档时，Adobe Acrobat Reader中显示的消息。
 * **解锁密码**：打开加密的PDF文档所需的密码。 通常，这是文档打开密码，但如果PDF文档受权限密码的额外保护，则可以使用任一密码来打开文档。
 
-此 [API参考文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) 提供有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API参考文档也以.yaml格式提供。 您可以下载.yaml并将其上传到Postman以检查API的功能。
+[API参考文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供了有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API参考文档也以.yaml格式提供。 您可以下载.yaml并将其上传到Postman以检查API的功能。
 
 ## 通信 API 的类型 {#types}
 
@@ -319,7 +319,7 @@ DocAssurance服务包括签名和加密API：
 
 >[!NOTE]
 >
-> 要启用和配置文档操作API，请将以下规则添加到 [Dispatcher配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
+> 要启用和配置文档操作API，请将以下规则添加到[Dispatcher配置](setup-local-development-environment.md#forms-specific-rules-to-dispatcher)：
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

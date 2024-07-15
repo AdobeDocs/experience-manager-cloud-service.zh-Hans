@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # 自定义内容片段控制台和编辑器 {#customizing-content-fragment-console-and-editor}
 
-内容片段控制台和编辑器均可扩展，并且可以使用AdobeApp Builder根据您的需求进行自定义。
+内容片段控制台和编辑器都是可扩展的，可以使用AdobeApp Builder根据您的需求对其进行自定义。
 
 有关完整信息，请参阅：
 
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 * 内容片段控制台：
 
-   * [AEM内容片段控制台扩展分步开发](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/)
+   * [分步AEM内容片段控制台扩展开发](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/)
 
 * 内容片段编辑器
 

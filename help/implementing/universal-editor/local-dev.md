@@ -32,17 +32,17 @@ Universal Editor Service 是一项用于将 Universal Editor 与后端系统绑�
 
 为此，您需要将 AEM 设置为在 HTTPS 上运行。出于开发目的，您可以使用自签名证书。
 
-[请参阅此文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) 介绍如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
+[请参阅此文档](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)，了解如何设置在HTTPS上运行的AEM，包括您可以使用的自签名证书。
 
 ## 安装 Universal Editor Service {#install-ue-service}
 
 Universal Editor服务不是Universal Editor的完整副本，而只是其功能的子集，以确保来自本地AEM环境的调用不会通过Internet进行路由，而是从您控制的已定义端点进行路由。
 
-[NodeJS版本16](https://nodejs.org/en/download/releases) 运行Universal Editor服务的本地副本时需要。
+需要[NodeJS版本16](https://nodejs.org/en/download/releases)才能运行通用编辑器服务的本地副本。
 
-Universal Editor服务可通过Software Distribution使用。 请参阅 [Software Distribution文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html) 以获取有关如何访问的详细信息。
+Universal Editor服务可通过Software Distribution使用。 有关如何访问它的详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
-保存 `universal-editor-service.cjs` 从Software Distribution到本地开发环境的文件。
+将`universal-editor-service.cjs`文件从Software Distribution保存到本地开发环境。
 
 ## 创建证书以通过 HTTPS 运行 Universal Editor Service {#ue-https}
 
@@ -106,9 +106,9 @@ Universal Editor 根据页面的检测方式了解使用哪个 Universal Editor 
 
 >[!NOTE]
 >
->尝试直接访问 `https://localhost:8000` 结果位于 `404` 错误。 这是预期行为。
+>尝试直接访问`https://localhost:8000`导致`404`错误。 这是预期行为。
 >
->要测试对本地通用编辑器服务的访问，请使用 `https://localhost:8000/corslib/LATEST`. 请参阅 [下一节](#editing) 以了解详细信息。
+>要测试对本地通用编辑器服务的访问，请使用`https://localhost:8000/corslib/LATEST`。 有关详细信息，请参阅[下一部分](#editing)。
 
 >[!TIP]
 >

@@ -25,16 +25,16 @@ ht-degree: 70%
 
 ## 发布日期 {#release-date}
 
-的发布日期 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 当前版本(2021.10.0)为2021年11月4日。
+[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前版本(2021.10.0)的发布日期是2021年11月4日。
 以下版本(2021.11.0)的发布日期为2021年12月2日。
 
 ## 发布视频 {#release-video}
 
-请查看 [2021年10月发行版概述](https://video.tv.adobe.com/v/338253) 视频以了解新增功能的摘要。
+观看[2021年10月版概述](https://video.tv.adobe.com/v/338253)视频，大致了解新增功能。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### 中的新增功能 [!DNL Sites] {#sites-features}
+### [!DNL Sites]中的新功能 {#sites-features}
 
 * 内容片段模型现在在发布后自动设置为只读状态，以避免在重新发布已编辑的模型后无意中中断实时API查询。 在尝试编辑已发布的模型时，系统会提示用户并显示警告。 接受警告时可以进行编辑。
 
@@ -42,13 +42,13 @@ ht-degree: 70%
 
 ### [!DNL Assets] 中的新增功能 {#assets-features}
 
-* [!DNL Experience Manager] 现在支持使用内置连接器从支持的音频和视频资源自动生成文本转录，以 [!DNL Azure Media Services]. 此 [支持的文件类型](/help/assets/file-format-support.md#audio-video-transcription-formats) 将自动转录，文本以WebVTT格式存储。 WebVTT字幕用于更有效的搜索、字幕或翻译。 此外，该功能还提高了资源的可访问性、可发现性和本地化程度。
+* [!DNL Experience Manager]现在支持使用[!DNL Azure Media Services]的内置连接器从支持的音频和视频资源自动生成文本转录。 [支持的文件类型](/help/assets/file-format-support.md#audio-video-transcription-formats)将自动转录，文本以WebVTT格式存储。 WebVTT字幕用于更有效的搜索、字幕或翻译。 此外，该功能还提高了资源的可访问性、可发现性和本地化程度。
 
-### 的新增功能 [!DNL Assets] 预发行渠道 {#assets-prerelease-features}
+### [!DNL Assets]预发行渠道中的新功能 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 图像智能裁切和色板功能现在由最新的Sensei服务提供支持，可生成改进的裁切和色板。 还推出了一项增强功能，可生成宽高比相同但分辨率不同的各种裁切内容。此外，如果图像配置文件中的宽度和高度没有变化，则在重新处理时将保留任何手动编辑内容。
+* [!DNL Dynamic Media]图像智能裁切和色板功能现在由最新的Sensei服务提供支持，可生成改进的裁切和色板。 还推出了一项增强功能，可生成宽高比相同但分辨率不同的各种裁切内容。此外，如果图像配置文件中的宽度和高度没有变化，则在重新处理时将保留任何手动编辑内容。
 
-* 智能标记是使用资产微服务而不是智能内容服务自动应用于资产的。 更新底层模型以改善标记结果并减少偏差。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
+* 智能标记是使用资产微服务而不是智能内容服务自动应用于资产的。 更新底层模型以改善标记结果并减少偏差。<!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
 <!-- Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}

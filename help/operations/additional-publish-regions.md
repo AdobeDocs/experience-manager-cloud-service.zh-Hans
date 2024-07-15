@@ -51,7 +51,7 @@ ht-degree: 78%
 
 ## 日志记录 {#logging}
 
-如果启用了其他发布区域，将通过Cloud Manager为每个区域提供单独的日志。 有关更多信息，请参阅 [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md) 和 [其他发布区域的日志](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+如果启用了其他发布区域，将通过Cloud Manager提供每个区域的单独日志。 有关详细信息，请参阅[访问和管理其他Publish地区的日志](/help/implementing/cloud-manager/manage-logs.md)和[日志](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions)。
 
 ## 限制 {#limitations}
 

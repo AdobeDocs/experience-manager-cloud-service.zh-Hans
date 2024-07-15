@@ -13,9 +13,9 @@ ht-degree: 31%
 
 # 保护创作层 {#securing-the-author-tier}
 
-使用AEMas a Cloud Service创建环境时，默认情况下可以从Internet访问生成的创作层。 可以进一步配置网络策略以保护对创作层的访问。 请参阅 [应用IP允许列表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html) 以了解更多详细信息。 此过程基于应授予您的创作环境网络访问权限的 IP 范围授权。
+使用AEM as a Cloud Service创建环境时，默认情况下可以从Internet访问生成的创作层。 可以进一步配置网络策略以保护对创作层的访问。 有关详细信息，请参阅[应用IP允许列表](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html)。 此过程基于应授予您的创作环境网络访问权限的 IP 范围授权。
 
-要设置这些规则，请从以下位置提交支持工单： [Adobe Admin Console](https://adminconsole.adobe.com/) ，并提供以下所需信息：
+要设置这些规则，请从[Adobe Admin Console](https://adminconsole.adobe.com/)提交支持票证，其中包含所请求的信息：
 
 * 项目 ID
 * 环境 ID

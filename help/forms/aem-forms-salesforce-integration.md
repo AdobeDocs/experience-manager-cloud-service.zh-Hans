@@ -12,7 +12,7 @@ ht-degree: 56%
 
 ---
 
-# 将自适应表单与Salesforce集成 {#configure-salesforce-with-ouath-2.0-client-credential}
+# 将自适应表单与Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}集成
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -27,7 +27,7 @@ Adobe Experience Manager (AEM) Forms与Salesforce集成允许组织通过将表�
 
 AEM Forms交换在Salesforce连接的应用程序中定义的客户端凭据（使用者密钥和使用者密钥）以获取访问令牌。
 
-AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md) 文章。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
 
 与授权代码流身份验证相比，使用 OAuth 2.0 客户端凭据进行身份验证可获得多个好处：
 
@@ -74,9 +74,9 @@ AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交�
 1. 如果连接成功，请单击&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
 
 
-配置Salesforce应用程序后，您可以在创建表单数据模型(FDM)时使用该配置。 有关更多信息，请参阅 [创建表单数据模型(FDM)](create-form-data-models.md). [配置表单数据模型提交操作](/help/forms/using-form-data-model.md) ，以将数据发送到Salesforce应用程序。
+配置Salesforce应用程序后，您可以在创建表单数据模型(FDM)时使用该配置。 有关详细信息，请参阅[创建表单数据模型(FDM)](create-form-data-models.md)。 [为自适应表单配置表单数据模型提交操作](/help/forms/using-form-data-model.md)以将数据发送到Salesforce应用程序。
 
-有关在业务工作流中创建和使用表单数据模型(FDM)的更多信息，请参阅 [数据集成](data-integration.md).
+有关在业务工作流中创建和使用表单数据模型(FDM)的更多信息，请参阅[数据集成](data-integration.md)。
 
 ## 相关文章
 

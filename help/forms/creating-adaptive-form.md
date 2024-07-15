@@ -26,9 +26,9 @@ ht-degree: 68%
 
 在开始之前，了解可使用的表单组件类型：
 
-* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans) 是标准化数据捕获组件。 这些组件提供自定义功能，缩短开发时间并降低数字注册体验的维护成本。 开发人员可以轻松地自定义这些组件并设置其样式。Adobe建议使用这些现代化的、可扩展的组件来开发自适应Forms。
+* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)是标准化数据捕获组件。 这些组件提供自定义功能，缩短开发时间并降低数字注册体验的维护成本。 开发人员可以轻松地自定义这些组件并设置其样式。Adobe建议使用这些现代化的、可扩展的组件来开发自适应Forms。
 
-* [自适应Forms Foundation组件](creating-adaptive-form.md) 是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑您现有的基于基础组件的自适应表单。如果您正在创建新表单，Adobe建议使用  [自适应Forms核心组件](creating-adaptive-form-core-components.md) 创建自适应Forms。
+* [自适应Forms Foundation组件](creating-adaptive-form.md)是经典（旧）数据捕获组件。 您可以继续使用这些组件来编辑您现有的基于基础组件的自适应表单。如果创建新表单，Adobe建议使用[自适应Forms核心组件](creating-adaptive-form-core-components.md)创建自适应Forms。
 
 
 
@@ -60,13 +60,13 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 您需要以下项来创建自适应表单：
 
-* **权限**：将用户添加到[!DNL forms-users]，为他们提供创建自适应表单的权限。有关特定于表单的用户组的详细列表，请参阅 [组和权限](forms-groups-privileges-tasks.md).
+* **权限**：将用户添加到[!DNL forms-users]，为他们提供创建自适应表单的权限。有关表单特定用户组的详细列表，请参阅[组和权限](forms-groups-privileges-tasks.md)。
 
-* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以 [创建主题](themes.md) 或 [导入现有主题](import-export-forms-templates.md#uploading-a-theme). 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
+* **自适应表单主题**：主题包含组件和面板的样式详细信息。样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。在应用主题时，指定的样式会反映在相应的组件上。您可以[创建主题](themes.md)或[导入现有主题](import-export-forms-templates.md#uploading-a-theme)。 您还可以为一些示例主题部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
 * **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（版面和样式）。它的预格式化的组件包含某些属性和内容结构。它还提供用于定义主题和提交操作的选项。主题定义外观，提交操作定义在提交自适应表单时执行的操作。例如，将收集到的数据发送到数据源。Cloud Service 支持两种类型的模板：
 
-   * **可编辑的模板**：您可以 [创建](template-editor.md) 或 [导入现有的可编辑模板](migrate-to-forms-as-a-cloud-service.md). 您还可以部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以获取一些可编辑模板示例。
+   * **可编辑模板**：您可以[创建](template-editor.md)或[导入现有的可编辑模板](migrate-to-forms-as-a-cloud-service.md)。 您还可以部署[最新原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.)以获取一些可编辑模板示例。
 
    * **静态模板**：这些是旧版模板，仅建议从 Adobe Managed Services (AMS) 和内部部署 AEM Forms 安装（AEM 6.5 Forms 或更早版本）迁移的客户使用。它们可让您继续使用投资购买的现有静态模板。创建自适应表单时，请使用可编辑的模板。
 
@@ -78,9 +78,9 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. 在 Experience Manager 登录页面上输入您的凭据。
 
-   登录后，在左上角选择 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
+   登录后，在左上角选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
 
-1. 选择 **[!UICONTROL 创建]**  > **[!UICONTROL 自适应Forms]**. 向导随即打开。
+1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 自适应Forms]**。 向导随即打开。
 1. 在“源”选项卡中，选择一个模板：
 
    * 选择一个可编辑模板时，会自动选择该模板中指定的主题和提交操作，并启用&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。您可以转到&#x200B;**[!UICONTROL 样式]**&#x200B;或&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡以选择不同的主题或提交操作。如果所选可编辑模板未指定主题，则“创建”按钮将保持禁用状态。您可以转到&#x200B;**[!UICONTROL 样式]**&#x200B;选项卡以手动选择主题。
@@ -126,7 +126,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 1. 选择&#x200B;**[!UICONTROL 创建]**。自适应表单将创建并在自适应表单编辑器中打开。该编辑器显示模板中可用的内容。它还会显示侧栏，以根据需要自定义创建的表单。
 
-   根据自适应表单的类型，关联表单中存在的表单元素 <!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)显示在 **[!UICONTROL 数据模型对象]** 选项卡 **[!UICONTROL 内容浏览器]** 在侧栏中。 您还可以拖放这些元素来生成自适应表单。
+   根据自适应表单的类型，关联<!--XFA form template, XML schema or --> JSON架构或表单数据模型(FDM)中存在的表单元素将显示在侧边栏中&#x200B;**[!UICONTROL 内容浏览器]**&#x200B;的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中。 您还可以拖放这些元素来生成自适应表单。
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -181,13 +181,13 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 您可以更改自适应表单的表单模型（基于 JSON 或表单数据模型）。您无法从一种表单模型更改为另一种表单模型。
 
-1. 选择自适应表单，然后选择 **属性** 图标。
+1. 选择自适应表单并选择&#x200B;**属性**&#x200B;图标。
 1. 打开&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡并执行下列操作之一。
 
-   * 如果自适应表单没有表单模型，则可以选择其他表单模型并相应地选择 <!-- a form template, --> XML或JSON架构，或表单数据模型(FDM)。
-   * 如果自适应表单基于表单模型，则可以选择其他 <!-- form template, --> XML或JSON架构，或相同表单模型的表单数据模型(FDM)。
+   * 如果自适应表单没有表单模型，则可以选择其他表单模型，并相应地选择<!-- a form template, --> XML或JSON架构或表单数据模型(FDM)。
+   * 如果自适应表单基于表单模型，则可以为同一表单模型选择其他<!-- form template, --> XML或JSON架构，或者表单数据模型(FDM)。
 
-1. 选择 **[!UICONTROL 保存]** 以保存属性。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存属性。
 
 您还可以在自适应表单编辑器或自适应表单模板编辑器中修改表单模型属性。
 
@@ -195,9 +195,9 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 1. 单击![配置](/help/forms/assets/configure-icon.svg)图标来打开自适应表单容器的&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 数据模型]**&#x200B;选项卡并执行下列操作之一：
 
-   * 如果自适应表单没有表单模型，则可以选择表单模型并相应地选择 <!-- a form template, --> XML或JSON架构，或表单数据模型(FDM)。
-   * 如果自适应表单基于表单模型，则无法更改表单模型。您可以选择其他 <!-- form template, --> 适用时，适用于相同表单模型的XML或JSON架构或表单数据模型(FDM)。
-1. 选择 ![保存](/help/forms/assets/check-button.png) 以保存属性。
+   * 如果自适应表单没有表单模型，则可以选择表单模型，并相应地选择<!-- a form template, --> XML或JSON架构或表单数据模型(FDM)。
+   * 如果自适应表单基于表单模型，则无法更改表单模型。您可以为适用的相同表单模型选择其他<!-- form template, --> XML或JSON架构，或者选择表单数据模型(FDM)。
+1. 选择![保存](/help/forms/assets/check-button.png)以保存属性。
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
 
@@ -210,9 +210,9 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 要重命名自适应表单，请执行以下步骤：
 
 1. 在AEM Forms用户界面中选择自适应表单。
-1. 单击 **属性** 位于上边栏上。
-1. 在中更改表单名称 **标题** 选项卡，如下图所示。
-1. 单击 **保存并关闭**.
+1. 单击位于上边栏上的&#x200B;**属性**。
+1. 在&#x200B;**标题**&#x200B;选项卡中更改表单的名称，如下图所示。
+1. 单击&#x200B;**保存并关闭**。
 
 ![重命名AEM自适应表单](/help/forms/assets/change-af-name.png)
 

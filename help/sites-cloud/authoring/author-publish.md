@@ -15,11 +15,11 @@ ht-degree: 29%
 
 # 创作和发布概念 {#authoring-publishing}
 
-对于内容作者，可以将AEMas a Cloud Service安装视为其最基础级别的三个主要层
+对于内容作者，可以将AEM as a Cloud Service安装视为其最基础级别的三个主要层
 
 * 创作层
 * 预览层
-* 发布层
+* Publish层
 
 这些层进行交互以使内容在您的网站上可用，以便您的访客可以访问该内容。 基本的工作流程是：
 
@@ -31,7 +31,7 @@ ht-degree: 29%
 
 ![作者、发布者和调度程序示意图](assets/author-publish.jpg)
 
-有关AEMas a Cloud Service技术架构的更多详细信息，请参阅文档 [Adobe Experience Manager as a Cloud Service的架构简介。](/help/overview/architecture.md)
+有关AEM as a Cloud Service技术架构的更多详细信息，请参阅文档[Adobe Experience Manager as a Cloud Service架构简介。](/help/overview/architecture.md)
 
 {{edge-delivery-authoring}}
 
@@ -54,20 +54,20 @@ ht-degree: 29%
 
 AEM 也可通过创作环境进行管理。
 
-请参阅文档 [创作快速入门指南](/help/sites-cloud/authoring/quick-start.md) 有关创作过程的概述。
+有关创作过程的概述，请参阅文档[创作快速入门指南](/help/sites-cloud/authoring/quick-start.md)。
 
 ## 预览内容 {#previewing-content}
 
 AEM还提供了预览服务，可让开发人员和内容作者在网站到达发布环境并公开使用之前预览网站的最终体验。
 
-请参阅文档 [预览内容](/help/sites-cloud/authoring/sites-console/previewing-content.md) 以了解更多详细信息。
+有关详细信息，请参阅文档[预览内容](/help/sites-cloud/authoring/sites-console/previewing-content.md)。
 
 ## 发布环境 {#publish-environment}
 
 准备就绪后，站点的内容会被发布到发布层的发布环境。 在此，根据内容模板的外观，目标受众可以使用网站页面。
 
-请参阅文档 [发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md) 有关发布和取消发布页面的详细信息。
+有关发布和取消发布页面的详细信息，请参阅文档[发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md)。
 
 ## Dispatcher {#dispatcher}
 
-为了优化网站访客体验， **[Dispatcher](/help/implementing/dispatcher/overview.md)** 为发布层和预览层实施负载平衡和缓存。
+为了优化网站访问性能，**[Dispatcher](/help/implementing/dispatcher/overview.md)**&#x200B;为发布层和预览层实施了负载平衡和缓存。

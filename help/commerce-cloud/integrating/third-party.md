@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例 [Adobe Commerce开放源代码](https://business.adobe.com/products/magento/open-source.html).
+>如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Adobe Commerce打开Source](https://business.adobe.com/products/magento/open-source.html)。
 
 无需实施完整的GraphQL架构，只需实施架构的对象即可启用所需的用例。
 
@@ -42,15 +42,15 @@ CIF通过实时产品目录访问和产品体验管理工具扩展了Experience 
 
 ## 前端用例
 
-[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components) 通过CIF支持的Adobe Commerce API检索和交换数据。 要重用组件，必须实施相应的API。
+[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)通过CIF支持的Adobe Commerce API检索和交换数据。 要重用组件，必须实施相应的API。
 
 对性能关键的客户端组件的建议是直接与第三方解决方案通信以避免延迟。
 
 ## 开发集成 {#develop-integration}
 
-Adobe建议您使用 [Adobe Developer运行时](https://developer.adobe.com/runtime/) 用于集成层。 它包含在适用于第三方的CIF附加组件中。 由于它使用类似微服务的方法，因此非常适合轻松集成多个解决方案。
+Adobe建议您将[Adobe Developer运行时](https://developer.adobe.com/runtime/)用于集成层。 它包含在适用于第三方的CIF附加组件中。 由于它使用类似微服务的方法，因此非常适合轻松集成多个解决方案。
 
-此 [参考实现](https://github.com/adobe/commerce-cif-graphql-integration-reference) 是构建与您的商务解决方案集成的良好起点。 尽管它支持GraphQL，但它也可以与任何其他类型的API（例如REST）集成。
+[参考实施](https://github.com/adobe/commerce-cif-graphql-integration-reference)是构建与您的商务解决方案的集成的良好起点。 尽管它支持GraphQL，但它也可以与任何其他类型的API（例如REST）集成。
 
 如果第三方层可用（例如，Mulesoft），或者集成构建在第三方解决方案之上，则不需要此集成层。
 
@@ -58,8 +58,8 @@ Adobe建议您使用 [Adobe Developer运行时](https://developer.adobe.com/runt
 
 连接器为项目提供了一个良好的开始。 它们附带商业解决方案特定的连接和默认API映射。 这些连接器由第三方构建，不由Adobe维护。 请联系相应的合作伙伴以了解相关信息。
 
-* [SAP COMMERCE](https://github.com/diconium/commerce-cif-graphql-integration-hybris)，由Diconium构建
-* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool)，由Diconium构建
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris)，由Diconium生成
+* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool)，由Diconium生成
 
 >[!TIP]
 >

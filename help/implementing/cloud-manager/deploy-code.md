@@ -34,7 +34,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 在控制台中，点按或单击要为其部署代码的程序。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，点按或单击要为其部署代码的程序。
 
 1. 在&#x200B;**概述**&#x200B;屏幕上，从行动号召中单击&#x200B;**部署**&#x200B;启动部署过程。
 
@@ -154,7 +154,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 ### 重新执行 API {#reexecute-API}
 
-除了在UI中可用之外，您还可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 用于触发重新执行并标识作为重新执行触发的执行。
+除了在UI中可用之外，您还可以使用[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)来触发重新执行，并识别作为重新执行触发的执行。
 
 #### 触发重新执行 {#reexecute-deployment-api}
 

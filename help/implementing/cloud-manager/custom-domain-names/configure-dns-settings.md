@@ -40,7 +40,7 @@ ht-degree: 95%
 
 Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的 DNS 提供商，Apex 域配置有 `A`、`ALIAS` 或 `ANAME` 记录。Apex 域必须指向特定的IP地址。
 
-添加以下内容 `A` 通过域提供商记录到域的DNS设置。
+通过域提供商将以下`A`记录添加到域的DNS设置中。
 
 * `A RECORD`
 

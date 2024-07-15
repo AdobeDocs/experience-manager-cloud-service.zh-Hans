@@ -14,7 +14,7 @@ ht-degree: 20%
 
 # 配置管道变量 {#configuring-pipeline-variables}
 
-您的构建过程可能取决于特定的配置变量，这些变量不适合放置在Git存储库中，或者您可能需要在使用同一分支的管道执行之间切换这些变量。 Cloud Manager允许您将这些数据作为管道变量管理。
+您的构建过程可能取决于特定的配置变量，这些变量不适合放置在Git存储库中，或者您可能需要在使用同一分支的管道执行之间切换这些变量。 利用Cloud Manager，可将这些数据作为管道变量进行管理。
 
 ## 管道变量 {#pipeline-variables}
 
@@ -35,7 +35,7 @@ ht-degree: 20%
 * 每个管道最多有 200 个变量。
 * 每个名称的长度必须等于或少于100个字符。
 * 每个`string`变量值的长度必须少于 2048 个字符。
-* 每个 `secretString` 类型变量值的长度必须等于或少于500个字符。
+* 每个`secretString`类型变量值的长度必须等于或少于500个字符。
 
 ## 通过Cloud Manager UI {#ui}
 
@@ -45,43 +45,43 @@ ht-degree: 20%
 
 ### 添加管道变量 {#add-ui}
 
-1. 时间 [管理您的管道，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 点按或单击要为其创建管道变量的管道的省略号按钮，然后选择 **查看/编辑变量** 从上下文菜单中。
+1. 在[管理管道时，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)点按或单击要为其创建管道变量的管道的省略号按钮，然后从上下文菜单中选择&#x200B;**查看/编辑变量**。
 
    ![查看/编辑管道变量](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. 此 **变量配置** 窗口打开。 在表的第一行中输入变量详细信息，然后点按或单击 **添加**.
+1. 将打开&#x200B;**变量配置**&#x200B;窗口。 在表的第一行中输入变量详细信息，然后点按或单击&#x200B;**添加**。
 
-   * **配置名称** 是变量的唯一标识符，必须指向 [管道变量命名约定。](#naming-conventions)
-   * **值** 是变量保留的值。
-   * **已应用步骤** 是管道中应用变量的步骤。 它是必需的。
+   * **配置名称**&#x200B;是变量的唯一标识符，它必须遵循[管道变量命名约定。](#naming-conventions)
+   * **Value**&#x200B;是变量保存的值。
+   * **应用的步骤**&#x200B;是管道中变量应用的步骤。 它是必需的。
       * **生成**
       * **功能测试**
       * **UI测试**
-   * **类型** 定义变量是纯文本还是加密为密钥。
+   * **Type**&#x200B;定义变量是纯文本还是加密为密钥。
 
    ![添加变量](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
 
-1. 随即会添加到表中。 根据需要添加其他变量，然后点击或单击 **保存** 以保存添加到管道的变量。
+1. 随即会添加到表中。 根据需要添加其他变量，然后点按或单击&#x200B;**保存**&#x200B;以保存添加到管道的变量。
 
 ### 编辑管道变量 {#edit-ui}
 
-1. 时间 [管理您的管道，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 点按或单击要为其创建管道变量的管道的省略号按钮，然后选择 **查看/编辑变量** 从上下文菜单中。
+1. 在[管理管道时，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)点按或单击要为其创建管道变量的管道的省略号按钮，然后从上下文菜单中选择&#x200B;**查看/编辑变量**。
 
    ![查看/编辑管道变量](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. 此 **变量配置** 窗口打开。 点按或单击要编辑的变量的省略号按钮，然后选择 **编辑**.
+1. 将打开&#x200B;**变量配置**&#x200B;窗口。 点按或单击要编辑的变量的省略号按钮，然后选择&#x200B;**编辑**。
 
    ![编辑变量](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. 根据需要更新变量的值，然后点按或单击 **应用** （行末的复选标记）以应用更改或 **放弃** （后退箭头）以还原更改。
+1. 根据需要更新变量的值，然后点按或单击&#x200B;**应用**（行末尾的复选标记）以应用更改，或者点按或单击&#x200B;**放弃**（返回箭头）以还原更改。
 
    * 只能编辑变量的值。
 
    ![编辑变量](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
-1. 点击或单击 **保存** 以将您对管道变量所做的更改保存到该管道。
+1. 点按或单击&#x200B;**保存**&#x200B;以将您对变量所做的更改保存到管道。
 
-如果要删除变量，请选择 **删除** 而不是 **编辑** 从的管道变量的省略号菜单中 **变量配置** 窗口。
+如果要删除变量，请在&#x200B;**变量配置**&#x200B;窗口中从管道变量的省略号菜单中选择&#x200B;**删除**，而不是&#x200B;**编辑**。
 
 ## 使用Cloud Manager CLI {#cli}
 

@@ -17,7 +17,7 @@ ht-degree: 66%
 
 **[!UICONTROL 提交到 Azure Blob 存储]**&#x200B;提交操作将自适应表单与 Microsoft® Azure 门户连接起来。您可以将表单数据、文件、附件或记录文档提交到连接的Azure存储容器。
 
-AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md) 文章。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
 
 ## 优点
 

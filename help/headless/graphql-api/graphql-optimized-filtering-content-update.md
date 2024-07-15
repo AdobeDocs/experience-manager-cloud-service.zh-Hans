@@ -43,7 +43,7 @@ ht-degree: 87%
    | 1 | `CF_MIGRATION_ENABLED` | `1` | `0` | 所有 | | 变量 | Enables(!=0) 或 disables(0) 触发内容片段迁移作业。 |
    | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | 所有 | | 变量 | Enforce (!=0)重新迁移内容片段。 将此标志设置为0会执行CF的增量迁移。 这意味着，如果作业因任意原因终止，则作业的下一次运行将从它终止的位置开始迁移。建议强制执行第一次迁移 (value=1)。 |
    | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | 所有 | | 变量 | 用于保存迁移后的内容片段数的批次的大小。 这与在一个批次中保存到存储库的CF数量相关，并且可用于优化写入存储库的次数。 |
-   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | 所有 | | 变量 | 一次要处理的内容片段的最大数量。 另请参阅 `CF_MIGRATION_INTERVAL`. |
+   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | 所有 | | 变量 | 一次要处理的内容片段的最大数量。 另请参阅`CF_MIGRATION_INTERVAL`的注释。 |
    | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | 所有 | | 变量 | 处理剩余内容片段直到达到下个限制的时间间隔（秒）。 此间隔还被视为启动作业之前的等待时间，以及处理每个后续CF_MIGRATION_LIMIT数CF之间的延迟。 (*) |
 
    >[!NOTE]

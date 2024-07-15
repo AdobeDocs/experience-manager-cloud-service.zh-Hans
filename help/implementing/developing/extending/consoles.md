@@ -17,9 +17,9 @@ AEM 提供了自定义创作实例控制台（以及[页面创作功能](/help/i
 
 ## Clientlibs {#clientlibs}
 
-Clientlib 允许您扩展默认实现，以提供新功能，同时重新使用标准函数、对象和方法。使用clientlibs进行自定义时，您可以在下面创建自己的clientlib `/apps.` 例如，它可以保存自定义组件所需的代码。
+Clientlib 允许您扩展默认实现，以提供新功能，同时重新使用标准函数、对象和方法。使用clientlibs进行自定义时，您可以在`/apps.`下创建自己的clientlib。例如，它可以包含自定义组件所需的代码。
 
-请参阅 [在AEMas a Cloud Service上使用客户端库](/help/implementing/developing/introduction/clientlibs.md).
+请参阅[在AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)上使用客户端库。
 
 ## 叠加 {#overlays}
 
@@ -27,11 +27,11 @@ Clientlib 允许您扩展默认实现，以提供新功能，同时重新使用�
 
 可以通过多种方式使用叠加来扩展您的 AEM 控制台。以下部分提供了几个示例。
 
-另请参阅 [Adobe Experience Manager as a Cloud Service的叠加](/help/implementing/developing/introduction/overlays.md).
+另请参阅[Adobe Experience Manager as a Cloud Service的叠加图](/help/implementing/developing/introduction/overlays.md)。
 
 >[!TIP]
 >
->如果您对用于自定义创作体验的选项感兴趣，请参阅 [自定义页面创作](/help/implementing/developing/extending/page-authoring.md).
+>如果您对自定义创作体验的选项感兴趣，请参阅[自定义页面创作](/help/implementing/developing/extending/page-authoring.md)。
 
 ## 自定义控制台的默认视图 {#customizing-the-default-view-for-a-console}
 
@@ -119,4 +119,4 @@ Clientlib 允许您扩展默认实现，以提供新功能，同时重新使用�
 
 使用控制台时，用户通常必须从页面、组件或资源等资源中进行选择。这可以采用列表的形式，作者必须从中选择一个项目。
 
-为了使列表保持合理的大小并且与用例相关，可以通过自定义谓词的形式实施筛选条件。请参阅 [自定义页面创作](/help/implementing/developing/extending/page-authoring.md#filtering-resources) 以了解详细信息。
+为了使列表保持合理的大小并且与用例相关，可以通过自定义谓词的形式实施筛选条件。有关详细信息，请参阅[自定义页面创作](/help/implementing/developing/extending/page-authoring.md#filtering-resources)。

@@ -31,7 +31,7 @@ ht-degree: 0%
 * 基本了解Adobe Illustrator、Adobe Photoshop、Adobe XD等设计工具
 * 在Experience Manager时访问Dynamic Media会很有帮助，但不是必需的
 
-**_期待您了解的内容_**
+**_您可以了解的内容_**
 
 _第一部分_
 
@@ -52,7 +52,7 @@ _第二部分_
 * 业务分析师
 * 内容架构师
 * 内容作者
-* 设计器
+* Designer
 * 开发人员
 * 营销
 * 产品经理/所有者
@@ -69,17 +69,17 @@ Dynamic Media整合了Adobe Experience Manager Assets数字资产管理解决方
 
 ### 一个具有无限可能性的文件
 
-关于Dynamic Media，要了解的要点之一是的概念 _一个具有无限可能性的主要资源文件_.
+有关Dynamic Media要了解的要点之一是&#x200B;_一个具有无限可能性的主资源文件_&#x200B;的概念。
 
 要更好地理解此概念，请思考您传统上处理单个资产（如图像或视频）的方式。 通常创建一个主资源。 然后，为每个体验、所需的每个设备、每个网页以及使用资产的每个资产手动创建该资产的版本。 随着时间的推移，该单个资产可能会增长到20个、30个或更多版本，并且不会附加任何版本历史记录。 现在，想象一下，对每一个您拥有的图像或视频都这样做。 资产版本的数量将很快变得难以维护和更新，更不用说存储成本的增加了。
 
-但是，Dynamic Media与其他系统存在根本性差异，因为您使用它来交付媒体 _动态_ 来自单个主资产和URL调用。 您请求的Dynamic Media URL路径中包含一些说明，告知Adobe发布服务器在将资源交付到客户屏幕时如何显示资源。 例如，使用相同的单个主资产，您可以让资产以无限演绎版的形式即时交付，并可以更改大小、格式、分辨率、粗细、颜色、裁切和缩放视图等效果。
+但是，Dynamic Media与其他系统有着根本性的不同，因为您使用它来通过单个主要资源和URL调用动态地交付媒体&#x200B;__。 您请求的Dynamic Media URL路径中包含一些说明，告知Adobe发布服务器在将资源交付到客户屏幕时如何显示资源。 例如，使用相同的单个主资产，您可以让资产以无限演绎版的形式即时交付，并可以更改大小、格式、分辨率、粗细、颜色、裁切和缩放视图等效果。
 
 这种独特的投放方法可确保向任何屏幕发送一致的质量体验，而不管屏幕的大小或带宽如何。 全尺寸视频也针对所有屏幕类型进行了优化，并自适应流式传输，以确保获得一致、高质量的用户体验。
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![AdobeDynamic Media可将相同的主图像提供给大小和格式不同的介质](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![AdobeDynamic Media将相同的主图像提供给不同大小和格式的不同媒体](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _AdobeDynamic Media可确保向任何屏幕提供一致、优质的体验，而不管其大小或带宽如何。_
 
 随着您继续阅读，您将了解更多有关“一个主要资源文件，无限可能性”的概念为什么重要的原因。
@@ -92,13 +92,13 @@ _AdobeDynamic Media可确保向任何屏幕提供一致、优质的体验，而�
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-过去，CDN每月会向客户提供3.5 PB的流量。 该系统一天可以提供520亿项资产。 这一数字相当于成功向客户发送了864,000个图像和视频， _每秒_.
+过去，CDN每月会向客户提供3.5 PB的流量。 该系统一天可以提供520亿项资产。 该数字相当于已成功向客户交付864,000个图像和视频，_每秒_。
 
 ### 智能成像
 
 Dynamic Media在优化资源以及通过CDN确保每个资源在移动和桌面系统上快速加载方面已经功不可没。 要实现这一点，Dynamic Media中使用图像预设来定义图像的质量。 它们还定义了您要发送的图像类型、其锐化程度以及您的体验或页面各个部分的其他部分。
 
-但是，为了进一步让Dynamic Media在图像预设之外增加价值，我们提供了 _智能成像_.
+但是，若要进一步为Dynamic Media增加图像预设以外的价值，则有&#x200B;_智能成像_。
 
 智能图像可根据客户的浏览器功能自动优化图像的格式和文件大小，从而提供更好的图像资产交付性能。 它可与您现有的图像预设（此历程的第二部分中将讨论图像预设）配合使用，并在投放时使用智能。
 
@@ -119,11 +119,11 @@ _智能成像可根据客户的浏览器功能和网络速度自动优化图像�
 
 当页面上存在视频或主页时，客户往往会更长时间地关注该内容并在页面上停留较长时间，这通常是好事。 此行为通过Adobe完成的分析来展示。 但是，视频可能很复杂。 首先，您通常有一个大型主文件。 确定视频的大小和交付方式非常复杂，而所有这些都是为了确保体验能够平稳运行，而不管观看的是什么设备，也不管带宽如何。
 
-要解决此问题，Dynamic Media让您能够创建 _自适应视频集_.
+要解决此问题，Dynamic Media允许您创建&#x200B;_自适应视频集_。
 
 自适应视频集对以不同比特率和格式编码的相同视频的版本进行分组。
 
-首先从您上传到系统中的原始主视频开始。 Dynamic Media会自动调整大小，或者 _转码_，将该视频转换为多个视频。 然后，在交付时，它会智能地确定要使用哪种视频屏幕、哪种质量和哪种格式，并将其交付到手机、平板电脑或台式计算机。
+首先从您上传到系统中的原始主视频开始。 Dynamic Media会自动调整该视频的大小，或&#x200B;_将该视频转码为多个视频。_&#x200B;然后，在交付时，它会智能地确定要使用哪种视频屏幕、哪种质量和哪种格式，并将其交付到手机、平板电脑或台式计算机。
 
 例如，在iOS移动设备上，它会检测4G、5G或Wi-Fi等带宽。 然后，它自动从自适应视频集内的各种视频比特率中选择正确的编码视频。 视频将流式传输到移动设备、平板电脑或台式计算机。
 
@@ -144,10 +144,10 @@ Dynamic Media最重要的用例之一也是最明显的用例之一。 即，降
 ![内容页面权重](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
 _典型网页的内容页面权重。_
 
-其余10%是HTML、CSS代码和特定标记。 您希望优化该页面的90%权重，Dynamic Media会帮助完成该工作。 之前，您阅读了关于 _一个具有无限可能性的主要资源文件_. 此方法对于降低页面总体权重具有重要意义。 能够获取一项主要资产并将其用于产品详细信息页面、缩略图页面、购物车和搜索网格，是一种非常节省时间的方法。 它还可确保跨体验的一致性。
+其余10%是HTML、CSS代码和特定标记。 您希望优化该页面的90%权重，Dynamic Media会帮助完成该工作。 之前，您阅读了&#x200B;_一个具有无限可能性的主资源文件_&#x200B;的概念。 此方法对于降低页面总体权重具有重要意义。 能够获取一项主要资产并将其用于产品详细信息页面、缩略图页面、购物车和搜索网格，是一种非常节省时间的方法。 它还可确保跨体验的一致性。
 
-![主要文件方法](/help/assets/dynamic-media/assets/dm-onefile.png)
-_监视文件是一个主要资源文件，但会动态创建其多个演绎版（而非副本）。_
+![主文件方法](/help/assets/dynamic-media/assets/dm-onefile.png)
+_监视文件是一个主资源文件，但会动态创建它的多个演绎版（而不是副本）。_
 
 让我们更仔细地看一下Dynamic Media通过单个文件解决的问题，以及这种方法的一些解决方案。
 
@@ -181,7 +181,7 @@ Dynamic Media为解决的另一个用例是视频。 视频很复杂。 它很�
 
 来到Dynamic Media的客户有以下他们希望解决的问题：
 
-&quot;_我的公司有视频，部门花了很多钱制作它，但没把它放在网页上，也没有送出。 原因是因为从测试来看，视频的质量无法得到保证，甚至根本无法保证视频真的可以播放。 最终，这会影响企业的品牌，并影响其转化作用。_&quot;
+“_我的公司有视频，部门花了很多钱制作它，但没把它放在网页上，也没有送出。 原因是因为从测试来看，视频的质量无法得到保证，甚至根本无法保证视频真的可以播放。 最终，这会影响企业的品牌以及企业对转化的潜在作用。_”
 
 Dynamic Media的解决方案是采用一个主视频文件，让Dynamic Media通过转码过程生成所有大小。 然后，再将其与Dynamic Media的智能视频播放器配对。 此工作流程可确保您在主登录页面、类别或产品详细信息页面上使用该视频，并且始终保持一致和高质量交付。
 
@@ -192,7 +192,7 @@ Dynamic Media的解决方案是采用一个主视频文件，让Dynamic Media通
 | **问题** | **Dynamic Media解决方案** |
 |---|---|
 | 数字资产分散在组织内，孤立在不同的团队或业务部门中。 | 在一个中心位置存储和管理所有数字资产。 |
-| 团队成员下载并创建本地版本。 | 团队成员使用单个主文件来创建 _和_ 跨各种屏幕大小和设备提供所有必要的版本。 |
+| 团队成员下载并创建本地版本。 | 团队成员使用单个主文件创建&#x200B;_和_&#x200B;跨各种屏幕大小和设备提供所有必需的版本。 |
 | 为每个体验和设备创建的一次性资产。 | 消除一次性资产，节省创建这些资产的时间和金钱。 |
 
 ### 用例：AI支持的用于富媒体的智能裁剪
@@ -214,8 +214,8 @@ Dynamic Media的解决方案是采用一个主视频文件，让Dynamic Media通
 
 下面显示了Dynamic Media的典型工作流程。
 
-![Dynamic Media工作流程](/help/assets/dynamic-media/assets/dm-workflow.png)
-_资产如何在Dynamic Media系统中流动。_
+![Dynamic Media工作流](/help/assets/dynamic-media/assets/dm-workflow.png)
+_资源如何通过Dynamic Media系统。_
 
 您从创建阶段开始，主要目标是最终创建主资产。 这些主要资产可能来自照片拍摄或视频供应商，也可能是由您创建的一些音频文件。 您可以使用Adobe的Creative Suite应用程序(如Adobe InDesign、Adobe Photoshop、Adobe Illustrator)帮助您制作内容。
 
@@ -227,9 +227,9 @@ _资产如何在Dynamic Media系统中流动。_
 
 创建完主资源后，可将其上传到Dynamic Media。 上传的文件类型以及文件的格式和大小是Dynamic Media的重要属性。 在上传时，您希望确保获得一个文件支持的最大值。
 
-例如，下面的手表图像为4560 x 3020像素。 虽然您绝不能使用如此大小的图像，但您仍可以上传该图像。 图像越大，Dynamic Media提供的质量就越好，甚至可以向下扩展到缩略图演绎版。 记住：您可以轻松地 _减少_ 现有图像的分辨率。 但如果你试图 _增加_ 图像的分辨率，结果可能会令人不满意。
+例如，下面的手表图像为4560 x 3020像素。 虽然您绝不能使用如此大小的图像，但您仍可以上传该图像。 图像越大，Dynamic Media提供的质量就越好，甚至可以向下扩展到缩略图演绎版。 请记住：您可以轻松&#x200B;_降低_&#x200B;现有图像的分辨率。 但如果您尝试&#x200B;_提高_&#x200B;图像分辨率，结果可能会不令人满意。
 
-![上传到Dynamic Media的推荐格式](/help/assets/dynamic-media/assets/dm-upload-formats.png)
+![建议上传到Dynamic Media的格式](/help/assets/dynamic-media/assets/dm-upload-formats.png)
 _资源上传的注意事项。_
 
 Adobe建议您以无损格式上传资源。 通常，最好避免JPEG，因为当您交付JPEG或继续保存JPEG时，随着时间的推移，您会开始失去图像质量。 您希望以无损格式开始显示最高分辨率的图像，以便您随时使用。 该格式通常为TIFF或PNG文件。
@@ -238,33 +238,33 @@ Adobe建议您以无损格式上传资源。 通常，最好避免JPEG，因为�
 
 大多数用户都不会考虑使用CMYK交付某些内容，甚至不会考虑您为何希望使用CMYK交付内容。 原因在于，该色彩空间最常用于交付打印项目。 但是，Dynamic Media可以在两个色彩空间中进行交付。
 
-还有许多客户仍在从事印刷业务，如仓库批发俱乐部。 还有杂货店，它们经常每周打印传单。 此类客户要求他们的图像位于两个颜色空间中。 传统上，这需要两个不同的图像：一个是RGB图像，一个是CMYK图像。 但是，您可以将CMYK资源直接上传到Dynamic Media，并让Dynamic Media通过图像预设或色彩配置文件自动交付RGB资源。 无需创建文件的多个版本，因此保留了 _一个具有无限可能性的主要资源文件_.
+还有许多客户仍在从事印刷业务，如仓库批发俱乐部。 还有杂货店，它们经常每周打印传单。 此类客户要求他们的图像位于两个颜色空间中。 传统上，这需要两个不同的图像：一个是RGB图像，一个是CMYK图像。 但是，您可以将CMYK资源直接上传到Dynamic Media，并让Dynamic Media通过图像预设或色彩配置文件自动交付RGB资源。 无需创建文件的多个版本，因此维护了&#x200B;_一个主资源文件的概念，具有无限的可能性_。
 
 <!-- **The Value of Renditioning??? or Demo portion** -->
 
-### 发布和预览资源
+### Publish和预览资源
 
-将资源上传到Dynamic Media后，最佳做法是执行以下操作 _发布_ 选择资产，然后单击 **[!UICONTROL Publish]** 或 **[!UICONTROL 快速发布]** 在Dynamic Media中。 如果您打算在任何体验中使用资产，则必须发布资产。 发布资源后，您可以使用复制的由Dynamic Media生成的URL将资源包含在网页中，或者通过在页面上嵌入代码的方式将这些资源包含在网页中。
+将资源上传到Dynamic Media后，最好通过选择资源，然后单击Dynamic Media中的&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL 快速Publish]**&#x200B;来&#x200B;_发布_。 如果您打算在任何体验中使用资产，则必须发布资产。 发布资源后，您可以使用复制的由Dynamic Media生成的URL将资源包含在网页中，或者通过在页面上嵌入代码的方式将这些资源包含在网页中。
 
 除了手动发布资产之外，您还可以配置Dynamic Media，以便在上传时即时发布资产，而无需任何用户干预。
 
-上传后，可通过多种方式在Dynamic Media中预览资源的演绎版。 预览呈现版本可帮助您了解客户看到的内容。 一种常见的预览方法是选择资源，然后通过选择 _图像预设_ 如下所示。
+上传后，可通过多种方式在Dynamic Media中预览资源的演绎版。 预览呈现版本可帮助您了解客户看到的内容。 一种常见的预览方法是选择资产，然后通过选择&#x200B;_图像预设_&#x200B;查看其演绎版，如下所示。
 
 ![预览基于大型图像预设的资产演绎版](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
-_预览基于所选“大”图像预设的资产演绎版。 已单击URL按钮。 生成的URL路径包含“大”图像预设名称，可在网页中使用。_
+_根据选定的“大”图像预设预览资源的演绎版。 已单击URL按钮。 生成的URL路径包含“大”图像预设名称，可在网页中使用。_
 
-上述URL是实时的！ [试试看](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
+上述URL是实时的！ [尝试它](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}。
 
-另一种预览资源的方法是选择图像资源，然后选择 _查看器_ 预设，如下所示。
+预览资产的另一种方法是选择图像资产，然后选择&#x200B;_查看器_&#x200B;预设，如下所示。
 
-![基于缩放垂直光源查看器预设预览资源](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
-_根据选定的“ZoomVertical_light”查看器预设预览资源。 鼠标指针(`+`)移到手表上以放大。 请注意URL和嵌入按钮。_
+![基于Zoom Vertical Light查看器预设预览资源](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+_根据选定的“ZoomVertical_light”查看器预设预览资源。 将鼠标指针(`+`)移到手表上以放大。 注意URL和嵌入按钮。_
 
-以上演绎版是实时的！ [试试看](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
+以上演绎版是实时的！ [尝试它](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}。
 
 ## 可选 — 了解详情
 
-此历程的第一部分介绍了各种Dynamic Media主题的基础知识。 如果您想了解有关所读内容的更多信息，请使用以下材料更详细地探索概念。 否则，您可以继续历程的第二部分。 请参阅 [此Dynamic Media历程的后续内容](#whats-next).
+此历程的第一部分介绍了各种Dynamic Media主题的基础知识。 如果您想了解有关所读内容的更多信息，请使用以下材料更详细地探索概念。 否则，您可以继续历程的第二部分。 查看[此Dynamic Media历程的后续内容](#whats-next)。
 
 _Dynamic Media帮助主题_
 
@@ -275,23 +275,23 @@ _Dynamic Media帮助主题_
 * [如何上传资源](/help/assets/add-assets.md#upload-assets)
 * [如何预览资源](/help/assets/dynamic-media/previewing-assets.md)
 * [如何预览三维资源](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [如何交付Dynamic Media资产](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [如何交付Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [如何发布资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [使用 Dynamic Media 中的“选择性发布”功能](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Media教程_
 
-* [将Dynamic Media与Experience Manager Assets一起使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (搜索 _Dynamic Media_)
+* [将Dynamic Media与Experience Manager Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager内容库](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (在&#x200B;_Dynamic Media_&#x200B;上搜索)
 
 _Dynamic Media查看器_
 
-* [实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html) 每个查看者
+* 每个查看者的[实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)
 
 ## 此Dynamic Media历程的后续内容 {#whats-next}
 
 在此历程的第二部分中，您将仔细检查Dynamic Media URL，以更好地了解交付资产时发生了什么情况。 您还将了解有关创建图像预设以呈现资产的基础知识的更多信息，并了解图像集、旋转集和混合媒体集及其创建方式。
 
-带我到 [Dynamic Media历程：基础知识，第二部分](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+带我到[Dynamic Media历程：基础知识，第二部分](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d)。
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

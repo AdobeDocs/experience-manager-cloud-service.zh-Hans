@@ -53,7 +53,7 @@ ht-degree: 75%
 
 您最初为其创作站点内容的语言副本是语言母版。语言母版是翻译成其他语言的源。
 
-站点的每个语言分支均称为语言副本。语言副本的根页面（称为语言根）标识了语言副本中内容的语言。例如，`/content/wknd/fr` 是法语副本的语言根。语言副本必须使用 [已正确配置语言根](preparation.md#creating-a-language-root) 以便在翻译源站点内容时使用正确的语言。
+站点的每个语言分支均称为语言副本。语言副本的根页面（称为语言根）标识了语言副本中内容的语言。例如，`/content/wknd/fr` 是法语副本的语言根。语言副本必须使用[正确配置的语言根](preparation.md#creating-a-language-root)，以便在翻译源站点内容时使用正确的语言。
 
 使用以下步骤可准备站点以进行翻译：
 
@@ -69,23 +69,23 @@ ht-degree: 75%
 
 要创建语言根，您需要创建一个页面并使用 ISO 语言代码作为&#x200B;**名称**&#x200B;属性的值。语言代码必须采用下列格式之一：
 
-* `<language-code>`  — 支持的语言代码是由ISO-639-1定义的两字母代码，例如， `en`.
-* `<language-code>_<country-code>` 或 `<language-code>-<country-code>`  — 支持的国家/地区代码是由ISO 3166定义的小写或大写形式的两字母代码，例如， `en_US`， `en_us`， `en_GB`， `en-gb`.
+* `<language-code>` — 支持的语言代码是由ISO-639-1定义的两字母代码，例如`en`。
+* `<language-code>_<country-code>`或`<language-code>-<country-code>` — 支持的国家/地区代码是由ISO 3166定义的小写或大写两字母代码，例如，`en_US`、`en_us`、`en_GB`、`en-gb`。
 
-根据您为全球站点选择的结构，您可以使用任一格式。例如，WKND 站点的法语副本的根页面将 `fr` 用作&#x200B;**名称**&#x200B;属性。此 **名称** 属性用作存储库中页面节点的名称，从而确定页面的路径(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
+根据您为全球站点选择的结构，您可以使用任一格式。例如，WKND 站点的法语副本的根页面将 `fr` 用作&#x200B;**名称**&#x200B;属性。**Name**&#x200B;属性用作存储库中页面节点的名称，从而确定页面的路径(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)。
 
 1. 导航到站点。
 1. 选择要为其创建语言副本的站点。
-1. 选择 **创建**，然后选择 **页面**.
+1. 选择&#x200B;**创建**，然后选择&#x200B;**页面**。
 
    ![创建页面](../assets/create-page.png)
 
-1. 选择页面模板，然后选择 **下一个**.
-1. 在 **名称** 字段输入国家/地区代码，格式为 `<language-code>` 或 `<language-code>_<country-code>`例如， `en`， `en_US`， `en_us`， `en_GB`， `en_gb`. 为页面键入标题。
+1. 选择页面模板，然后选择&#x200B;**下一步**。
+1. 在&#x200B;**Name**&#x200B;字段中，以`<language-code>`或`<language-code>_<country-code>`格式键入国家/地区代码，例如，`en`、`en_US`、`en_us`、`en_GB`、`en_gb`。 为页面键入标题。
 
    ![创建语言根页面](../assets/create-language-root.png)
 
-1. 选择&#x200B;**创建**。在确认对话框中，选择 **完成** 以返回站点控制台，或者 **打开** 以打开语言副本。
+1. 选择&#x200B;**创建**。在确认对话框中，选择&#x200B;**完成**&#x200B;以返回站点控制台，或者选择&#x200B;**打开**&#x200B;以打开语言副本。
 
 ## 查看语言根的状态 {#seeing-the-status-of-language-roots}
 
@@ -95,11 +95,11 @@ AEM 提供了一个&#x200B;**引用**&#x200B;边栏来显示已创建的语言�
 
 使用[边栏选择器](/help/sites-cloud/authoring/basic-handling.md#rail-selector)通过以下过程查看页面的语言副本。
 
-1. 在站点控制台上，选择站点的页面，然后选择 **引用**.
+1. 在站点控制台上，选择站点的页面，然后选择&#x200B;**引用**。
 
    ![打开引用边栏](../assets/opening-references-rail.png)
 
-1. 在引用边栏中，选择 **语言副本**. 边栏显示网站的语言副本。
+1. 在引用边栏中，选择&#x200B;**语言副本**。 边栏显示网站的语言副本。
 
 ## 多个级别的语言副本 {#multiple-levels}
 

@@ -54,7 +54,7 @@ ht-degree: 96%
 >有关更多信息，请参阅以下内容：
 >
 >* [Adobe Target 开发](https://developers.adobetarget.com/)
->* [核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+>* [核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 >* [Adobe Target – 如何使用 Adobe Experience Manager (AEM) 体验片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5 – 手动配置与 Adobe Target 的集成 – 创建 Target 云配置](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
 
@@ -329,19 +329,19 @@ When you associate a page with the framework, the child pages inherit the associ
    >
    >它必须是体验片段 Web 变体。
 
-1. 选择 **导出到Adobe Target**.
+1. 选择&#x200B;**导出到Adobe Target**。
 
    >[!NOTE]
    >
    >如果已导出体验片段，请选择&#x200B;**在 Adobe Target 中更新**。
 
-1. 选择 **导出而不发布** 或 **Publish** 根据需要。
+1. 根据需要选择&#x200B;**导出而不发布**&#x200B;或&#x200B;**Publish**。
 
    >[!NOTE]
    >
    >选择&#x200B;**发布**&#x200B;将立即发布体验片段并将它发送到 Target。
 
-1. 选择 **确定** 在确认对话框中。
+1. 在确认对话框中选择&#x200B;**确定**。
 
    您的体验片段现在应在 Target 中。
 

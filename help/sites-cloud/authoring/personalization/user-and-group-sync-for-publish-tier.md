@@ -43,7 +43,8 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 
 **先决条件：**
 
-要使上述逻辑正常工作，请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。
+要使上述逻辑正常工作，请通过提交启用[数据同步](#data-synchronization-data-synchronization)
+向客户支持部门发送请求，说明适当的项目和环境。
 
 ### 外部 {#external-managed-registration}
 
@@ -66,7 +67,8 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 
 **先决条件：**
 
-要使上述逻辑正常工作，请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。
+要使上述逻辑正常工作，请通过提交启用[数据同步](#data-synchronization-data-synchronization)
+向客户支持部门发送请求，说明适当的项目和环境。
 
 ### 与标识提供者集成 {#integration-with-an-idp}
 
@@ -90,13 +92,13 @@ Web 应用程序通常会为最终用户提供帐户管理功能以便在网站�
 
 **先决条件：**
 
-作为最佳实践，在存储用户特定的数据时，始终依靠idP（身份提供程序）作为单一信任点。 如果附加用户信息存储在本地存储库中（它不是idP的一部分），请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。 此外 [数据同步](#data-synchronization-data-synchronization)对于SAML身份验证提供程序，请确保 [动态组成员资格](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 已启用。
+作为最佳实践，在存储用户特定的数据时，始终依靠idP（身份提供程序）作为单一信任点。 如果其他用户信息存储在非idP一部分的本地存储库中，请通过向客户支持提交请求（指明适当的项目和环境）来启用[数据同步](#data-synchronization-data-synchronization)。 除了[数据同步](#data-synchronization-data-synchronization)之外，对于SAML身份验证提供程序，请确保已启用[动态组成员资格](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)。
 
 ### 粘性会话和封装令牌 {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service启用基于Cookie的粘性会话，确保最终用户在每次请求时都被路由到相同的发布节点。 在特定情况下（例如用户流量尖峰），封装令牌功能可能会提高性能，因此无需在每次请求时都引用存储库中的用户记录。 如果最终用户与之关联的发布节点被替换，则其用户ID记录将在新发布节点上可用，如中所述 [数据同步](#data-synchronization-data-synchronization) 部分。
+AEM as a Cloud Service启用基于Cookie的粘性会话，确保最终用户在每次请求时都被路由到相同的发布节点。 在特定情况下（例如用户流量尖峰），封装令牌功能可能会提高性能，因此无需在每次请求时都引用存储库中的用户记录。 如果最终用户具有关联的发布节点被替换，则其用户ID记录将在新发布节点上可用，如下面的[数据同步](#data-synchronization-data-synchronization)部分中所述。
 
-要利用封装的令牌功能，请向客户支持提交请求，并指明适当的项目和环境。 更重要的是，如果没有封装令牌，则无法启用 [数据同步](#data-synchronization-data-synchronization) 并且必须一起启用。 因此，在启用之前仔细审查用例，并确保该功能至关重要。
+要利用封装的令牌功能，请向客户支持提交请求，并指明适当的项目和环境。 更重要的是，封装令牌在没有[数据同步](#data-synchronization-data-synchronization)的情况下无法启用，必须一起启用。 因此，在启用之前仔细审查用例，并确保该功能至关重要。
 
 ## 用户配置文件 {#user-profile}
 
@@ -111,7 +113,8 @@ AEM as a Cloud Service启用基于Cookie的粘性会话，确保最终用户在�
 
 **先决条件：**
 
-要使服务器端用户配置文件持久逻辑正确运行，请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。
+要使服务器端用户配置文件持久性逻辑正常工作，请通过提交启用[数据同步](#data-synchronization-data-synchronization)
+向客户支持部门发送请求，说明适当的项目和环境。
 
 ### 第三方数据存储 {#third-party-data-stores}
 
@@ -121,7 +124,8 @@ AEM as a Cloud Service启用基于Cookie的粘性会话，确保最终用户在�
 
 **先决条件：**
 
-要使上述逻辑正常工作，请启用 [数据同步](#data-synchronization-data-synchronization) ，方式是向客户支持提交请求，并指明适当的项目和环境。
+要使上述逻辑正常工作，请通过提交启用[数据同步](#data-synchronization-data-synchronization)
+向客户支持部门发送请求，说明适当的项目和环境。
 
 ## 权限（封闭用户组） {#permissions-closed-user-groups}
 
@@ -134,7 +138,7 @@ AEM as a Cloud Service启用基于Cookie的粘性会话，确保最终用户在�
 
 ## 数据同步 {#data-synchronization}
 
-网站最终用户期望在每个网页请求方面获得一致的体验，甚至当他们使用不同的浏览器登录时，（即使他们不知道）他们也将转至发布层基础架构的不同服务器节点。AEM as a Cloud Service通过快速同步 `/home` 跨发布层的所有节点的文件夹层次结构（用户配置文件信息、组成员资格等）。
+网站最终用户期望在每个网页请求方面获得一致的体验，甚至当他们使用不同的浏览器登录时，（即使他们不知道）他们也将转至发布层基础架构的不同服务器节点。AEM as a Cloud Service通过在发布层的所有节点中快速同步`/home`文件夹层次结构（用户配置文件信息、组成员资格等）来实现这一点。
 
 与其他 AEM 解决方案不同，AEM as a Cloud Service 中的用户和组成员资格同步不使用点对点消息传递方法，而是实施不需要客户配置的发布-订阅方法。
 

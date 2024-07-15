@@ -31,10 +31,10 @@ ht-degree: 8%
 * 设置自适应表单组件的最小或最大重复次数
 * 使用规则编辑器为可重复部分配置添加或删除操作
 
-您可以使用 [面板](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)， [折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)， [垂直选项卡](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 或 [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 组件使自适应表单的部分可重复。 可将子组件添加到这些组件中，以在表单中创建可重复部分。
+您可以使用[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、[折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)、[垂直选项卡](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)组件使自适应表单的部分可重复。 可将子组件添加到这些组件中，以在表单中创建可重复部分。
 
 
-本文档中的示例基于 [面板](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) 组件。 您可以执行相同的步骤，以使 [面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)， [折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)， [水平选项卡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)， [垂直选项卡](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) 或 [向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) 组件可重复。
+此文档中的示例基于[面板](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)组件。 您可以执行相同的步骤，以使[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、[折叠](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[水平制表符](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)、[垂直制表符](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[向导](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)组件可重复。
 
 ## 添加或删除表单中的可重复部分 {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -49,10 +49,10 @@ ht-degree: 8%
 ![“辅助功能”选项卡](/help/forms/assets/repeat-panel.png)
 
 要使面板可重复，请执行以下步骤：
-1. 选择面板容器并选择 ![cmppr](/help/forms/assets/cmppr.png).
-1. 单击 **重复面板** 并切换到 **使面板可重复**.
-1. 设置 **最小重复次数** 根据最小可重复部分的要求，您可以设置 **最小重复次数** 零表示面板不重复，或移除重复的面板。 默认情况下，最小重复次数值为0。
-1. 设置 **最大重复次数** 要重复面板所需的次数，该值默认为infinite。
+1. 选择一个面板容器，然后选择![cmppr](/help/forms/assets/cmppr.png)。
+1. 单击&#x200B;**重复面板**，然后打开切换开关以&#x200B;**使面板可重复**。
+1. 将最小可重复部分的&#x200B;**最小重复次数**&#x200B;设置为必需，您可以将面板的非重复的&#x200B;**最小重复次数**&#x200B;设置为零，或者删除重复的面板。 默认情况下，最小重复次数值为0。
+1. 设置&#x200B;**最大重复次数**&#x200B;以重复面板所需的次数，此值默认为无限。
 
    >[!NOTE]
    >
@@ -64,17 +64,17 @@ ht-degree: 8%
 
 要重复的面板的父级应包含一个“添加”按钮来管理面板的重复实例。 执行以下步骤将按钮插入到父代，并在按钮上启用脚本：
 
-1. 添加 **按钮组件** 到面板的父项。 在以下示例视频中，显示了一个带有标签名称的按钮组件 **添加** 和字段名称 **添加面板**，使用。 选择组件并选择 ![edit-rules](/help/forms/assets/edit-rules.png). 按钮组件的规则将在规则编辑器中打开。
-1. 在规则编辑器窗口中，单击 **创建**.
+1. 将&#x200B;**按钮组件**&#x200B;添加到面板的父面板。 在下面的示例视频中，使用了标签名为&#x200B;**Add**&#x200B;且字段名为&#x200B;**AddPanel**&#x200B;的按钮组件。 选择该组件并选择![edit-rules](/help/forms/assets/edit-rules.png)。 按钮组件的规则将在规则编辑器中打开。
+1. 在“规则编辑器”窗口中，单击&#x200B;**创建**。
 
-   选择 **可视编辑器** 表单对象和函数行中的。
+   在“表单对象和函数”行中选择&#x200B;**可视编辑器**。
 
-   1. 在规则区域的WHEN下，选择state **已单击**.
-   1. 在THEN下，选择 **添加实例**，并使用拖放面板 ![切换侧面板](/help/forms/assets/toggle-side-panel.png) 或使用以下方式选择它 **拖放对象或在此选择。**
+   1. 在规则区域的WHEN下，选择状态&#x200B;**被单击**。
+   1. 在THEN下，选择&#x200B;**添加实例**，并使用![切换侧面板](/help/forms/assets/toggle-side-panel.png)拖放面板，或使用&#x200B;**拖放对象或在此处选择。**
 
-   选择 **代码编辑器** 表单对象和函数行中的。 单击 **编辑规则** 在代码区域中：
+   在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”****，在代码区中：
 
-   * 要创建添加面板按钮，请指定 `this.panel.instanceManager.addInstance()`
+   * 若要创建添加面板按钮，请指定`this.panel.instanceManager.addInstance()`
 
    单击&#x200B;**完成**。
 
@@ -85,24 +85,24 @@ ht-degree: 8%
 
 面板的父级应包含一个删除按钮，用于删除可重复面板的实例。 执行以下步骤以将按钮插入到父项，并在按钮上启用脚本以删除可重复的面板：
 
-1. 添加 **按钮组件** 至面板的父面板，在下面的视频中，显示一个具有标签名称的按钮组件 **删除** 和字段名称 **DeletePanel** 已使用。 选择组件并选择 ![edit-rules](/help/forms/assets/edit-rules.png). 按钮组件的规则将在规则编辑器中打开。
-1. 在规则编辑器窗口中，单击 **创建**.
+1. 向面板的父项添加&#x200B;**按钮组件**。在下面的视频中，使用了标签名称为&#x200B;**delete**&#x200B;且字段名称为&#x200B;**DeletePanel**&#x200B;的按钮组件。 选择该组件并选择![edit-rules](/help/forms/assets/edit-rules.png)。 按钮组件的规则将在规则编辑器中打开。
+1. 在“规则编辑器”窗口中，单击&#x200B;**创建**。
 
-   选择 **可视编辑器** 表单对象和函数行中的。
+   在“表单对象和函数”行中选择&#x200B;**可视编辑器**。
 
-   1. 在规则区域中的WHEN下 **DeletePanel**，选择状态 **已单击**.
-   1. 在THEN下，选择 **删除实例**，并使用拖放面板 ![切换侧面板](/help/forms/assets/toggle-side-panel.png) 或使用以下方式选择它 **拖放对象或在此选择。**
+   1. 在规则区域的WHEN **DeletePanel**&#x200B;下，已单击&#x200B;**选择状态**。
+   1. 在THEN下，选择&#x200B;**删除实例**，并使用![切换侧面板](/help/forms/assets/toggle-side-panel.png)拖放面板，或使用&#x200B;**拖放对象或在此处选择。**
 
-   选择 **代码编辑器** 表单对象和函数行中的。 单击 **编辑规则** 在代码区域中：
+   在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”****，在代码区中：
 
-   * 要创建删除面板按钮，请指定 `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+   * 要创建删除面板按钮，请指定`this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
    单击&#x200B;**完成**。
 >[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >
->如果某个字段属于可重复面板，则无法在脚本中使用该字段名称直接访问该字段。 要访问字段，请使用指定字段所属的可重复实例 `instances` 中的API `InstanceManager`. 要使用的语法 `instances` 中的API `InstanceManager` 为：
+>如果某个字段属于可重复面板，则无法在脚本中使用该字段名称直接访问该字段。 要访问该字段，请在`InstanceManager`中使用`instances` API指定该字段所属的可重复实例。 在`InstanceManager`中使用`instances` API的语法为：
 >
 >
 >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -171,8 +171,8 @@ A panel has various layouts options. The Layout for accordian design option has 
 1. 要指定最小重复次数，请选择最小计数，然后在关联的框中键入一个数字。 如果将此选项设置为0，并且在数据合并时没有为子表单中的对象提供数据，则在呈现表单时不会放置子表单。
 1. 要指定子表单重复的最大次数，请选择“最大”，然后在相关框中键入一个数字。 如果未在“最大值”框中指定值，则子表单的重复次数将无限制。
 1. 要指定一组子表单重复次数，而不考虑数据量，请选择初始计数，然后在关联框中键入一个数字。 如果选择此选项，并且没有可用数据或存在的数据条目少于指定的初始计数值，则子表单的空实例仍会放置在表单上。
-1. 在父子表单中添加两个按钮 — 一个用于添加实例，另一个用于删除可重复子表单的实例。 有关详细步骤，请参阅 [构建操作](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. 现在，将表单模板链接到自适应表单。 有关详细步骤，请参阅 [基于模板创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
+1. 在父子表单中添加两个按钮 — 一个用于添加实例，另一个用于删除可重复子表单的实例。 有关详细步骤，请参阅[生成操作](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)。
+1. 现在，将表单模板链接到自适应表单。 有关详细步骤，请参阅[基于模板创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template)。
 1. 使用在第9步中创建的按钮添加和删除子表单。
 
 附加的.zip文件包含一个示例可重复的子表单。
@@ -181,9 +181,9 @@ A panel has various layouts options. The Layout for accordian design option has 
 
 ## 使用XML架构(XSD)的重复设置 {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-您可以从XML架构和任何复杂类型元素的minOccours和maxOccurs属性创建可重复面板。 有关XML架构的详细信息，请参见 [使用XML架构作为表单模型创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
+您可以从XML架构和任何复杂类型元素的minOccours和maxOccurs属性创建可重复面板。 有关XML架构的详细信息，请参阅[使用XML架构作为表单模型创建自适应表单](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html)。
 
-在以下代码中， `SampleType`面板使用minOccurs和maxOccurs属性。
+在以下代码中，`SampleType`面板使用minOccours和maxOccurs属性。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

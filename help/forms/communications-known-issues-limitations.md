@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ### 表单数据 {#form-data}
 
-Communications API接受通常在Designer中创建的表单设计和XML表单数据作为输入。 要使用数据填充文档，XML元素必须存在于要填充的每个表单字段的XML表单数据中。 XML元素名称必须与字段名称匹配。 如果XML元素与表单字段不对应，或者如果XML元素名称与字段名称不匹配，则忽略该元素。 无需匹配XML元素的显示顺序。 重要因素是XML元素是使用相应的值指定的。
+通信API接受通常在Designer中创建的表单设计和XML表单数据作为输入。 要使用数据填充文档，XML元素必须存在于要填充的每个表单字段的XML表单数据中。 XML元素名称必须与字段名称匹配。 如果XML元素与表单字段不对应，或者如果XML元素名称与字段名称不匹配，则忽略该元素。 无需匹配XML元素的显示顺序。 重要因素是XML元素是使用相应的值指定的。
 
 请考虑以下示例贷款申请表：
 
@@ -62,7 +62,7 @@ Communications API接受通常在Designer中创建的表单设计和XML表单数
 
 要完全访问Communications API的渲染功能，建议您使用XDP文件作为输入。 有时，可以使用PDF文件。 但是，使用PDF文件作为输入有以下限制：
 
-不包含XFA流的PDF文档无法呈现为PostScript、PCL或ZPL。 Communications API可以将具有XFA流（即在Designer中创建的表单）的PDF文档渲染为激光和标签格式。 如果PDF文档已经过签名、认证或包含使用权限(使用AEM FormsReader扩展服务应用)，则无法呈现这些打印格式。
+不包含XFA流的PDF文档无法呈现为PostScript、PCL或ZPL。 通信API可以将具有XFA流(即在Designer中创建的表单)的PDF文档渲染为激光和标签格式。 如果PDF文档已经过签名、认证或包含使用权限(使用AEM FormsReader扩展服务应用)，则无法呈现这些打印格式。
 
 
 ### 可打印区域 {#printable-areas}
@@ -73,16 +73,16 @@ Communications API接受通常在Designer中创建的表单设计和XML表单数
 
 ### 仅适用于XFA表单(XDP/PDF)的脚本 {#scripts}
 
-与Communications API一起使用的表单设计可以包含服务器上运行的脚本。 确保窗体设计不包含客户端上运行的脚本。 有关创建表单设计脚本的信息，请参阅 [Designer帮助](use-forms-designer.md).
+与Communications API一起使用的表单设计可以包含服务器上运行的脚本。 确保窗体设计不包含客户端上运行的脚本。 有关创建表单设计脚本的信息，请参阅[Designer帮助](use-forms-designer.md)。
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
 
 ### 字体映射 {#font-mapping}
 
-要设计使用打印机驻留字体的表单，请在Designer中选择与打印机上可用的字体匹配的字体名称。 PCL或PostScript支持的字体列表位于相应的设备配置文件（XDC文件）中。 或者，可以创建字体映射以将非打印机驻留的字体映射到具有不同字体名称的打印机驻留的字体。 例如，在PostScript方案中，对Arial®字体的引用可以映射到打印机驻留的Helvetica®字体。
+要设计使用打印机驻留字体的表单，请在Designer中选择与打印机上可用字体匹配的字体名称。 PCL或PostScript支持的字体列表位于相应的设备配置文件（XDC文件）中。 或者，可以创建字体映射以将非打印机驻留的字体映射到具有不同字体名称的打印机驻留的字体。 例如，在PostScript场景中，对Arial®字体的引用可以映射到打印机驻留的Helvetica®字体。
 
-如果字体安装在客户端计算机上，则它将显示在Designer的下拉列表中。 如果未安装字体，则需要手动指定字体名称。 可以关闭Designer中的“永久替换不可用的字体”选项。 否则，在Designer中保存XDP文件时，替代字体名称将写入XDP文件。 这意味着不使用打印机驻留字体。
+如果某个字体安装在客户端计算机上，则它在Designer的下拉列表中可用。 如果未安装字体，则需要手动指定字体名称。 可以关闭Designer中的“永久替换不可用字体”选项。 否则，当XDP文件保存在Designer中时，替代字体名称将写入XDP文件。 这意味着不使用打印机驻留字体。
 
 存在两种类型的OpenType®字体。 一种类型是PCL支持的TrueTypeOpenType®字体。 另一个是CFFOpenType®。 PDF和PostScript输出支持嵌入的Type-1、TrueType和OpenType®字体。 PCL输出支持嵌入的TrueType字体。
 
@@ -127,7 +127,7 @@ Type-1和OpenType®字体未嵌入到PCL输出中。 使用Type-1和OpenType®�
 
 ### 使用XCI配置文件 {#working-with-xci-files}
 
-通信API使用XCI配置文件执行任务，例如控制输出是单面板输出还是分页输出。 虽然此文件包含可以设置的设置，但通常不会修改此值。 <!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
+通信API使用XCI配置文件执行任务，例如控制输出是单面板输出还是分页输出。 虽然此文件包含可以设置的设置，但通常不会修改此值。<!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
 您可以在使用Communications API时传递修改后的XCI文件。 在执行此操作时，请创建默认文件的副本，仅更改需要修改的值以满足您的业务要求，并使用修改后的XCI文件。
 
@@ -163,7 +163,7 @@ Type-1和OpenType®字体未嵌入到PCL输出中。 使用Type-1和OpenType®�
 
 * 在打印选项列表中，只能使用一次特定渲染类型(PDF、打印)。 例如，不能有两个PRINT选项，每个选项都指定PCL渲染类型。
 
-* 对于批处理配置，只允许一个OutputType(PDF、打印)和RenderType（PostScript、PCL、IPL、ZPL等）值的组合实例。
+* 对于批处理配置，只允许一个OutputType(PDF、打印)和RenderType(PostScript、PCL、IPL、ZPL等)值的组合实例。
 
 * 对于异步API（批处理），默认记录级别设置为2。 您可以使用自定义XCI将记录级别更改为1。
 
@@ -179,9 +179,9 @@ Type-1和OpenType®字体未嵌入到PCL输出中。 使用Type-1和OpenType®�
 
 **我是否可以使用观察文件夹或其他存储机制来存储输入和输出？**
 
-目前，您可以使用Microsoft Azure Storage保存输入数据和生成的文档。 Microsoft Azure Storage提供多种选项来 [自动化数据移动操作](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
+目前，您可以使用Microsoft Azure Storage保存输入数据和生成的文档。 Microsoft Azure Storage提供了多种选项，用于[自动执行数据移动操作](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)。
 
-**Experience Manager FormsCloud Service许可证中是否包含Microsoft Azure Storage帐户？**
+**Experience Manager FormsCloud Service许可证中是否包括Microsoft Azure Storage帐户？**
 
 Microsoft Azure Storage帐户独立于Experience Manager FormsCloud Service许可证。
 
@@ -189,7 +189,7 @@ Microsoft Azure Storage帐户独立于Experience Manager FormsCloud Service许�
 
 输入和输出数据仅保存在Microsoft Azure Storage上。
 
-**通信API是否仅可用于Experience Manager FormsCloud Service？ 我可以在内部部署环境中获得类似功能吗？**
+**通信API是否仅可用于Experience Manager FormsCloud Service？ 能否在内部部署环境中获得类似的功能？**
 
 您可以使用AEM Forms Output服务将模板(XFA或PDF)与客户数据相结合，生成PDF、PS、PCL和ZPL格式的文档。
 
@@ -209,7 +209,7 @@ Microsoft Azure Storage帐户独立于Experience Manager FormsCloud Service许�
 >[!MORELIKETHIS]
 >
 >* [AEM Formsas a Cloud Service通信简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [自适应Forms的AEM Formsas a Cloud Service架构和通信API](/help/forms/aem-forms-cloud-service-architecture.md)
+>* 自适应AEM Forms和通信API的[Formsas a Cloud Service架构](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通信处理 — 批处理API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

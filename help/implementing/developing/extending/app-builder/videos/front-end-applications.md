@@ -26,6 +26,6 @@ ht-degree: 0%
 
 ## 构建前端App Builder应用程序
 
-了解如何使用React和在应用程序中使用Adobe运行时操作构建前端应用程序生成器。
+了解如何使用React和在应用程序中使用Adobe运行时操作构建前端App Builder应用程序。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Screensas a Cloud Service中的视频缩略图支持
+title: Screens中对视频的缩略图支持as a Cloud Service
 description: 本页介绍如何在Screensas a Cloud Service中为视频添加缩略图支持。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
@@ -33,39 +33,39 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >**前提条件**
->在了解如何使用视频缩略图之前，请确保了解如何在Screensas a Cloud Service项目中为渠道创建视频演绎版。 请参阅 [在Screensas a Cloud Service中创建视频演绎版](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
+>在了解如何使用视频缩略图之前，请确保了解如何在Screensas a Cloud Service项目中为渠道创建视频演绎版。 请参阅[在Screens中创建视频演绎版as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)。
 
 请按照以下步骤在视频中使用缩略图：
 
-1. 导航到现有的Screens频道或创建频道。
+1. 导航到现有Screens渠道或创建渠道。
 
    >[!NOTE]
-   >要了解如何创建渠道和向渠道添加内容，请参阅 [在Screensas a Cloud Service中创建和管理渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html).
+   >要了解如何创建渠道并将内容添加到渠道，请参阅[在Screens中创建和管理渠道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html)。
 
-1. 选择渠道。 在操作栏上，单击 **编辑** 以打开编辑器。
+1. 选择渠道。 在操作栏上，单击&#x200B;**编辑**&#x200B;以打开编辑器。
 
 
-   ![操作栏上的编辑按钮](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
-
-1. 添加或编辑现有视频组件，如下图所示。
-
-   ![高亮显示的视频资产图像](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
+   操作栏](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)上的![编辑按钮。
 
 1. 添加或编辑现有视频组件，如下图所示。
 
-1. 选择视频并单击配置(*扳手*)图标以打开视频属性。
+   ![高亮显示的视频资源图像](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)。
 
-   ![选定的视频资源图像，带有指向“配置”图标的箭头，被描绘为扳手。 在工具栏上](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
+1. 添加或编辑现有视频组件，如下图所示。
 
-1. 此 **视频** 对话框打开，您可以在其中查看 **缩略图** 放置区域。
+1. 选择视频，然后单击“配置（*扳手*）”图标以打开视频属性。
 
-   ![显示视频资源图像的视频对话框和缩略图下拉框](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
+   ![选定的视频资源图像，带有指向“配置”图标的箭头，被描绘为扳手。 在工具栏](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)上。
 
-1. 将图像从资产选取器拖放到 **缩略图** 放置区域并单击 **完成**.
+1. 将打开&#x200B;**视频**&#x200B;对话框，您可以在其中查看&#x200B;**缩略图**&#x200B;拖放区域。
 
-   ![资产图像选取器显示在“视频”对话框后面，图像资产显示在“缩略图”拖放框中](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
+   ![显示视频资源图像的视频对话框和缩略图拖放框](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)。
 
-1. 单击 **预览**.
+1. 将图像从资产选取器拖放到&#x200B;**缩略图**&#x200B;拖放区域，然后单击&#x200B;**完成**。
+
+   ![资产图像选取器显示在“视频”对话框后面，图像资产显示在“缩略图”拖放框](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)中。
+
+1. 单击&#x200B;**预览**。
 
 1. 如果已在组件上设置视频，则会播放视频。 如果未设置并且设置了缩略图，则会播放缩略图。 否则，该组件被视为未配置并被跳过。
 

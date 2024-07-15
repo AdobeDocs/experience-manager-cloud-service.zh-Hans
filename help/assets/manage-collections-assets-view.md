@@ -166,7 +166,7 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ![共享资源链接](assets/share-link-collections.png)
 
-有关如何与外部利益相关者共享收藏集链接的更多信息，请参阅 [共享资源链接](/help/assets/share-links-for-assets-view.md).
+有关如何与外部利益相关者共享收藏集链接的更多信息，请参阅[共享资源链接](/help/assets/share-links-for-assets-view.md)。
 
 ## 下载收藏集 {#download-collection}
 

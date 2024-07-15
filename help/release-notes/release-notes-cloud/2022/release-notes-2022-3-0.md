@@ -13,7 +13,7 @@ ht-degree: 83%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 版的发行说明 {#release-notes}
 
-以下部分概述了2022.3.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了[!DNL Experience Manager]as a Cloud Service2022.3.0版本的功能发行说明。
 
 >[!NOTE]
 >
@@ -92,11 +92,11 @@ ht-degree: 83%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 为了对云环境中的自定义功能进行更高效的故障排除，我们发布了一个新的开发人员工具 —  [存储库浏览器](/help/implementing/developing/tools/repository-browser.md). 它是一个可从开发人员控制台启动的轻型只读HTML浏览器。 在发布者、作者和预览层以及所有环境（包括生产、暂存和开发）中查看内容存储库。浏览内容结构，查看属性，预览和下载二进制文件。
+* 为了更加高效和有效地为云环境中的自定义功能排除故障，我们发布了一个新的开发人员工具 — [存储库浏览器](/help/implementing/developing/tools/repository-browser.md)。 它是一个可从Developer Console启动的轻型只读HTML浏览器。 在发布者、作者和预览层以及所有环境（包括生产、暂存和开发）中查看内容存储库。浏览内容结构，查看属性，预览和下载二进制文件。
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* 现在，用于验证服务器到服务器API调用(例如，用于GraphQL API请求)的凭据可以在过期之前从开发人员控制台以自助方式刷新。 如需更多信息，请参阅 [此](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 文档。
+* 现在，用于验证服务器到服务器API调用(例如，用于GraphQL API请求)的凭据可在Developer Console中以自助方式过期之前刷新。 如需更多信息，请参阅 [此](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) 文档。
 
 * 现在为新环境启用了以前未启用的版本清除和审核日志清除维护任务。 请参阅[维护任务](/help/operations/maintenance.md)文章中的相关值。
 
@@ -114,7 +114,7 @@ ht-degree: 83%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用“检查大小”功能，用户可以1)确定 `crx-quickstart` 子目录，以及2)估计迁移集大小并验证其是否受支持。 如果违反了其中一项或两项检查，用户将在CTT UI中看到警告。 有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。请参阅 [确定迁移集大小和磁盘空间](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) 以了解更多详细信息。
+* 检查“大小护栏” – 内容转移工具检查大小功能有助于减少失败的内容转移。使用检查大小功能，用户可以1)在提取之前确定`crx-quickstart`子目录中是否有足够的磁盘空间，以及2)估计迁移集大小并验证其是否受支持。 如果违反了其中一项或两项检查，用户将在CTT UI中看到警告。 有了这道护栏，您可以避免内容转移失败，并主动与 Adobe 客户关怀讨论迁移选项。有关详细信息，请参阅[确定迁移集大小和磁盘空间](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size)。
 
 ## Best Practices Analyzer {#bpa-release}
 

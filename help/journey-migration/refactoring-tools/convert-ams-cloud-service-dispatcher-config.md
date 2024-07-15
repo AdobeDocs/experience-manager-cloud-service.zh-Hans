@@ -3,8 +3,8 @@ title: 将 AMS 转换为 Adobe Experience Manager as a Cloud Service Dispatcher 
 description: 将 AMS 转换为 Adobe Experience Manager as a Cloud Service Dispatcher 配置
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 39%
+source-wordcount: '1262'
+ht-degree: 37%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 39%
 
 1. **重命名场文件**
 
-   必须重命名conf.dispatcher.d/enabled_farms中的所有场以匹配模式*.farm。 例如，重命名 `customerX_farm.any` 到 `customerX.farm`.
+   必须重命名conf.dispatcher.d/enabled_farms中的所有场以匹配模式*.farm。 例如，将`customerX_farm.any`重命名为`customerX.farm`。
 
 1. **检查 cache**
 
@@ -97,13 +97,13 @@ ht-degree: 39%
 
    移除所有前缀为 `ams_` 的文件。
 
-   如果conf.dispatcher.d/cache现在为空，请复制文件 `conf.dispatcher.d/cache/rules.any` 从标准Dispatcher配置复制到此文件夹。 标准Dispatcher配置可以在此SDK的src文件夹中找到。 别忘了修改引用 `ams_*_cache.any` 场文件中的规则文件。
+   如果conf.dispatcher.d/cache现在为空，请将文件`conf.dispatcher.d/cache/rules.any`从标准Dispatcher配置复制到此文件夹。 标准Dispatcher配置可在此SDK的src文件夹中找到。 同时，不要忘记修改场文件中引用`ams_*_cache.any`规则文件的$include语句。
 
-   如果conf.dispatcher.d/cache现在包含单个带后缀的文件 `_cache.any`，应将其重命名为 `rules.any`. 请记得修改场文件中引用该文件的$include语句。
+   如果conf.dispatcher.d/cache现在包含后缀为`_cache.any`的单个文件，则应将其重命名为`rules.any`。 请记得修改场文件中引用该文件的$include语句。
 
    但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
 
-   移除任何带有后缀的文件 `_invalidate_allowed.any`.
+   移除任何后缀`_invalidate_allowed.any`的文件。
 
    将文件conf.dispatcher.d/cache/default_invalidate_any从默认Dispatcher配置复制到该位置。
 
@@ -117,13 +117,13 @@ ht-degree: 39%
 
    移除所有前缀为 `ams_` 的文件。
 
-   如果conf.dispatcher.d/clientheaders包含带有后缀的单个文件 `_clientheaders.any`，将其重命名为 `clientheaders.any`. 请记得修改场文件中引用该文件的$include语句。
+   如果conf.dispatcher.d/clientheaders包含后缀为`_clientheaders.any`的单个文件，请将其重命名为`clientheaders.any`。 请记得修改场文件中引用该文件的$include语句。
 
    但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
 
-   复制文件 `conf.dispatcher/clientheaders/default_clientheaders.any` 从默认Dispatcher配置转到该位置。
+   将文件`conf.dispatcher/clientheaders/default_clientheaders.any`从默认Dispatcher配置复制到该位置。
 
-   在每个场文件中，将任意 `clientheader` “include”语句，显示如下：
+   在每个场文件中，替换以下所示的任何`clientheader`个“include”语句：
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -139,11 +139,11 @@ ht-degree: 39%
 
    * 移除所有前缀为 `ams_` 的文件。
 
-   * 如果conf.dispatcher.d/filters现在包含单个文件，请将其重命名为 `filters.any`. 请记得修改场文件中引用该文件的$include语句。
+   * 如果conf.dispatcher.d/filters现在包含单个文件，请将其重命名为`filters.any`。 请记得修改场文件中引用该文件的$include语句。
 
    * 但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
 
-   * 复制文件 `conf.dispatcher/filters/default_filters.any` 从默认Dispatcher配置转到该位置。
+   * 将文件`conf.dispatcher/filters/default_filters.any`从默认Dispatcher配置复制到该位置。
 
    * 在每个场文件中，替换以下所示的所有filter“include”语句：
 
@@ -158,7 +158,7 @@ ht-degree: 39%
 
    * 移除该文件夹中的所有文件。
 
-   * 复制文件 `conf.dispatcher.d/renders/default_renders.any` 从默认Dispatcher配置转到该位置。
+   * 将文件`conf.dispatcher.d/renders/default_renders.any`从默认Dispatcher配置复制到该位置。
 
    * 在每个场文件中，移除 renders 部分中的所有内容，并将其替换为：
 
@@ -170,11 +170,11 @@ ht-degree: 39%
 
    * 移除所有前缀为 `ams_` 的文件。
 
-   * 如果conf.dispatcher.d/virtualhosts现在包含单个文件，请将其重命名为 `virtualhosts.any`. 请记得修改场文件中引用该文件的$include语句。
+   * 如果conf.dispatcher.d/virtualhosts现在包含单个文件，请将其重命名为`virtualhosts.any`。 请记得修改场文件中引用该文件的$include语句。
 
    * 但是，如果文件夹包含多个使用该模式且特定于场的文件，则应将其内容复制到场文件中引用这些文件的$include语句中。
 
-   * 复制文件 `conf.dispatcher/virtualhosts/default_virtualhosts.any` 从默认Dispatcher配置转到该位置。
+   * 将文件`conf.dispatcher/virtualhosts/default_virtualhosts.any`从默认Dispatcher配置复制到该位置。
 
    * 在每个场文件中，替换以下所示的所有filter“include”语句：
 
@@ -204,7 +204,7 @@ ht-degree: 39%
 
 使用 Dispatcher SDK 中的脚本 `docker_run.sh`，您可以测试配置不包含只会在部署中显示的任何其他错误：
 
-1. 使用验证程序生成部署信息。
+1. 使用验证器生成部署信息。
 
    `validator full -d out`
 验证完整配置并在out中生成部署信息。

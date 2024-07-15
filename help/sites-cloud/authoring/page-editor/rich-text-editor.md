@@ -18,7 +18,7 @@ ht-degree: 95%
 
 ## 就地编辑 {#in-place-editing}
 
-通过单击选择基于文本的组件可显示 [组件工具栏。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+通过单击选择基于文本的组件可显示[组件工具栏。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
 
 ![组件工具栏](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

@@ -21,7 +21,7 @@ ht-degree: 87%
 1. [从“引用”（ Sites 控制台）中访问启动项](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)，即可显示可用操作。
 1. 选择&#x200B;**转到页面**，即可打开要编辑的页面。
 
-在编辑页面时，您可以在顶部工具栏中看到指示以及 **离开** 和 **导航** 选项：
+编辑页面时，您可以看到顶部工具栏中的指示以及&#x200B;**离开**&#x200B;和&#x200B;**导航**&#x200B;选项：
 
 ![从页面编辑器中离开和导航启动项](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

@@ -8,7 +8,7 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2307'
 ht-degree: 3%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 3%
 
 # 自适应Forms的样式结构{#styling-constructs-for-adaptive-forms}
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 了解CSS和LESS框架。
 
 ## 可自定义的内容 {#what-can-be-customized}
 
-本文列出了自适应Forms的公开可用的css类。 您可以使用这些类设置自适应表单各种组件的样式。 创作组件（如显示警告的对话框和状态栏）的样式超出了本文的范围。 仅当您无法通过以下方式设置组件的样式时，才使用这些样式构造创建样式（使用CSS或更少）： [主题编辑器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+本文列出了自适应Forms的公开可用的css类。 您可以使用这些类设置自适应表单各种组件的样式。 创作组件（如显示警告的对话框和状态栏）的样式超出了本文的范围。 仅当您无法使用[主题编辑器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)来样式组件时，才使用这些样式构造创建样式（使用CSS或更少）。
 
 ## 在自适应Forms中自定义样式 {#customizing-styles-in-adaptive-forms}
 
@@ -101,7 +101,7 @@ LESS框架简化了在Adaptive Forms中自定义样式的用例。 该框架允�
 
 ## 字段样式 {#field-styling}
 
-自适应Forms包括各种类型的字段。 每个字段都有一个唯一的类名称，即字段的名称。 该字段还具有公共类名称 `guideFieldNode`.
+自适应Forms包括各种类型的字段。 每个字段都有一个唯一的类名称，即字段的名称。 该字段还具有公共类名`guideFieldNode`。
 
 字段包括标签、小组件、帮助描述（长描述和短描述）和字段帮助图标（问号）。
 
@@ -137,7 +137,7 @@ LESS框架简化了在Adaptive Forms中自定义样式的用例。 该框架允�
 
 ## 标签样式 {#label-styling}
 
-HTML元素 **标签** 用于字段包括类 **左侧** 或 **top** 标签在顶部还是左侧。
+用于字段的HTML元素&#x200B;**标签**&#x200B;包括类&#x200B;**left**&#x200B;或&#x200B;**top**，具体取决于标签位于顶部还是左侧。
 
 <table>
  <tbody>
@@ -177,11 +177,11 @@ HTML元素 **标签** 用于字段包括类 **左侧** 或 **top** 标签在顶�
  </tbody>
 </table>
 
-使用以下方式应用标签的CSS规则 **guideFieldLabel** 标签。 如果您是作者，请覆盖此规则以使自定义更改可见。
+使用&#x200B;**guideFieldLabel**&#x200B;标签应用该标签的CSS规则。 如果您是作者，请覆盖此规则以使自定义更改可见。
 
 ## 构件样式 {#widgets-styling}
 
-根据其类型，构件还包含类。 通常，小组件包括 `guideFieldWidget` 类。 随HTML一起提供的小组件通常使用标准HTML元素输入和选择。 样式设置会相应地完成。 您不能通过更改变量来设置自定义小组件的样式。
+根据其类型，构件还包含类。 通常，构件包含`guideFieldWidget`类。 随HTML一起提供的小组件通常使用标准HTML元素输入和选择。 样式设置会相应地完成。 您不能通过更改变量来设置自定义小组件的样式。
 
 <table>
  <tbody>
@@ -287,7 +287,7 @@ HTML元素 **标签** 用于字段包括类 **左侧** 或 **top** 标签在顶�
 
 ## 帮助描述 {#help-description}
 
-作者可以使用短描述组件和长描述组件在字段中指定帮助内容。 两个组件都有一个公共类 `.guideHelpDescription` 和另一堂课 `.long`/ `.short`，具体取决于描述的类型。 帮助内容包含在段落元素中，用于覆盖描述的样式。 使用以widgetshelp开头的变量修改帮助说明（长说明和短说明），如下表所述：
+作者可以使用短描述组件和长描述组件在字段中指定帮助内容。 这两个组件都具有公共类`.guideHelpDescription`和另一个类`.long`/`.short`，具体取决于说明的类型。 帮助内容包含在段落元素中，用于覆盖描述的样式。 使用以widgetshelp开头的变量修改帮助说明（长说明和短说明），如下表所述：
 
 <table>
  <tbody>
@@ -328,7 +328,7 @@ HTML元素 **标签** 用于字段包括类 **左侧** 或 **top** 标签在顶�
 
 ## 条款和条件 {#terms-and-conditions}
 
-条款和条件(TnC) `` ``)小组件允许您指定条款和条件。 您可以使用下表所述的变量自定义构件。
+条款和条件(TnC `` ``)小组件允许您指定条款和条件。 您可以使用下表所述的变量自定义构件。
 
 <table>
  <tbody>
@@ -517,7 +517,7 @@ HTML元素 **标签** 用于字段包括类 **左侧** 或 **top** 标签在顶�
   </tr>
   <tr>
    <td><p><code>table-header-bg-color</code></p> </td>
-   <td><p>标题行的背景颜色。 默认值为 <code>#333</code>.<br /> </p> </td>
+   <td><p>标题行的背景颜色。 默认值为<code>#333</code>.<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>table-odd-row-bg-color</code></p> </td>
@@ -638,7 +638,7 @@ HTML元素 **标签** 用于字段包括类 **左侧** 或 **top** 标签在顶�
 
 `</div>`
 
-可以使用选择元素的CSS规则更改导航器的样式，这些元素使用 **子项** 选择器。 例如，要向锚点标记添加文本修饰样式，请执行以下操作：
+您可以使用CSS规则更改导航器的样式，这些规则使用&#x200B;**descendant**&#x200B;选择器选择元素。 例如，要向锚点标记添加文本修饰样式，请执行以下操作：
 
 顶部选项卡导航器：
 
@@ -718,7 +718,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
 
 >[!NOTE]
 >
->在创作（表单示例）的面板上提供CSS类，可以更改特定导航器的图标 &lt;class_name>. 您添加 **&lt;class_name>_nav** 用于导航器的图标。
+>可以通过在创作（例如&lt;CLASS_NAME>）的面板上提供CSS类来更改特定导航器的图标。 为导航器的图标添加&#x200B;**&lt;CLASS_NAME>_nav**。
 
 <table>
  <tbody>
@@ -939,7 +939,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
  </tbody>
 </table>
 
-面板节点分为导航器和内容。 那里 `` `` 对于内容，没有单独的样式组件。 所描述的变量适用于导航器和内容。
+面板节点分为导航器和内容。 内容没有`` ``单独的样式组件。 所描述的变量适用于导航器和内容。
 
 最上面的面板(RootPanel)没有此类。
 
@@ -1073,7 +1073,7 @@ guideNavIcon类提供了一个默认图标，用于选项卡导航器（左侧�
 
 ## 主题特定变量 {#theme-specific-variable}
 
-此 **简单注册** /etc/clientlibs/fd/af/guidetheme/simpleEnrollment上的主题和类别 `guide.theme.simpleEnrollment` 还引入了几个变量。 如果要创建主题以增强简单注册，您可以使用以下“额外变量：
+/etc/clientlibs/fd/af/guidetheme/simpleEnrollment中的&#x200B;**简单注册**&#x200B;主题和类别`guide.theme.simpleEnrollment`也引入了几个变量。 如果要创建主题以增强简单注册，您可以使用以下“额外变量：
 
 <table>
  <tbody>

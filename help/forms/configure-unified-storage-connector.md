@@ -21,37 +21,37 @@ ht-degree: 0%
 
 创建Azure存储配置并使用统一存储连接器(USC)引用该配置。 然后，您可以配置AEM Workflow模型以外部化数据存储以将其连接到Azure存储服务器。
 
-### 创建 [!DNL Azure] 存储配置 {#create-azure-storage-configuration}
+### 创建[!DNL Azure]存储配置 {#create-azure-storage-configuration}
 
-在执行这些步骤之前，请确保您已 [!DNL Azure] 存储帐户和一个访问密钥，用于授权访问 [!DNL Azure] 存储帐户。
+在执行这些步骤之前，请确保您拥有[!DNL Azure]存储帐户和访问密钥，以授权对[!DNL Azure]存储帐户的访问。
 
-执行以下步骤以创建 [!DNL Azure] 存储配置：
+执行以下步骤以创建[!DNL Azure]存储配置：
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**.
-1. 选择一个文件夹以创建配置，然后选择 **[!UICONTROL 创建]**.
-1. 在中指定配置的标题 **[!UICONTROL 标题]** 字段。
-1. 指定 [!DNL Azure] 中的存储帐户 **[!UICONTROL Azure存储帐户]** 字段。
-1. 指定用于访问Azure存储帐户的密钥 **[!UICONTROL Azure访问密钥]** 字段并选择 **[!UICONTROL 保存]**.
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**。
+1. 选择要创建配置的文件夹，然后选择&#x200B;**[!UICONTROL 创建]**。
+1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中指定配置的标题。
+1. 在&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;字段中指定[!DNL Azure]存储帐户的名称。
+1. 在&#x200B;**[!UICONTROL Azure访问密钥]**&#x200B;字段中指定用于访问Azure存储帐户的密钥，然后选择&#x200B;**[!UICONTROL 保存]**。
 
 ### 为AEM Workflow配置统一存储连接器(USC) {#configure-unified-storage-connector-workflows}
 
 执行以下步骤为AEM Workflow配置统一存储连接器(USC)：
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**.
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**。
 
-1. 在 **[!UICONTROL 工作流]** 部分，选择 **[!UICONTROL Azure]** 从“存储”下拉列表中。
-1. 指定 [Azure存储配置的配置路径](#create-azure-storage-configuration) 在 **[!UICONTROL 存储配置路径]** 字段。
-1. 选择 **[!UICONTROL Publish]** 然后选择 **[!UICONTROL 保存]** 以保存配置。
+1. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;部分中，从存储下拉列表中选择&#x200B;**[!UICONTROL Azure]**。
+1. 在&#x200B;**[!UICONTROL 存储配置路径]**&#x200B;字段中指定Azure存储配置](#create-azure-storage-configuration)的[配置路径。
+1. 选择&#x200B;**[!UICONTROL Publish]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。
 
 ### 为外部数据存储配置AEM Workflow模型 {#configure-workflow-external-data-storage}
 
 执行以下步骤可为外部数据存储配置AEM Workflow模型：
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**.
-1. 选择模型名称并选择 **[!UICONTROL 编辑]**.
-1. 选择页面信息图标并选择 **[!UICONTROL 打开属性]**.
-1. 选择 **[!UICONTROL 将工作流数据存储外部化]**.
-1. 选择 **[!UICONTROL 保存并关闭]** 以保存属性。
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。
+1. 选择模型名称并选择&#x200B;**[!UICONTROL 编辑]**。
+1. 选择“页面信息”图标，然后选择&#x200B;**[!UICONTROL 打开属性]**。
+1. 选择&#x200B;**[!UICONTROL 将工作流数据存储外部化]**。
+1. 选择&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存属性。
 
 >[!NOTE]
 >
@@ -61,17 +61,17 @@ ht-degree: 0%
 
 以下是使用AEM Workflow并将数据存储到外部数据存储(如Microsoft Azure Storage Server)时的准则：
 
-* 在工作流模型步骤中定义输入和输出数据文件及附件时，使用变量来存储数据。 不选择 **[!UICONTROL 相对于有效负荷]** 和 **[!UICONTROL 在绝对路径上可用]** 选项。 此 **[!UICONTROL 相对于有效负荷]** 和 **[!UICONTROL 在绝对路径上可用]** 选项不会自动显示一次 [为外部数据存储配置AEM Workflow模型](#configure-workflow-external-data-storage).
+* 在工作流模型步骤中定义输入和输出数据文件及附件时，使用变量来存储数据。 请勿选择&#x200B;**[!UICONTROL 相对于有效负荷]**&#x200B;和&#x200B;**[!UICONTROL 在绝对路径]**&#x200B;上可用的选项。 [为外部数据存储配置AEM Workflow模型](#configure-workflow-external-data-storage)后，**[!UICONTROL 相对于有效负载]**&#x200B;和&#x200B;**[!UICONTROL 在绝对路径上可用]**&#x200B;选项不会自动显示。
 
-* 向AEM Workflow提交自适应表单时，使用变量存储数据文件和附件。 不选择 **[!UICONTROL 相对于有效负荷]** 选项在将自适应表单提交到AEM工作流时。 此 **[!UICONTROL 相对于有效负荷]** 选项不会自动显示一次 [为外部数据存储配置AEM Workflow模型](#configure-workflow-external-data-storage).
+* 向AEM Workflow提交自适应表单时，使用变量存储数据文件和附件。 将自适应表单提交到AEM Workflow时，请勿选择&#x200B;**[!UICONTROL 相对于有效负载]**&#x200B;选项。 [为外部数据存储配置AEM Workflow模型后&#x200B;**[!UICONTROL 相对于有效负载]**&#x200B;选项不会自动显示](#configure-workflow-external-data-storage)。
 
-* 请勿在工作流模型中使用自定义AEM工作流步骤来将数据存储在CRX DE存储库中。
+* 请勿在工作流模型中使用自定义AEM工作流步骤将数据存储在CRX DE存储库中。
 
-* 当您 [为外部数据存储配置AEM Workflow模型](#configure-workflow-external-data-storage)时，请不要为AEM收件箱创建自定义列，因为如果AEM收件箱中的工作项目属于标记为外部存储的工作流，则不会获取自定义列的值。
+* 当您[为外部数据存储配置AEM Workflow模型](#configure-workflow-external-data-storage)时，不要为AEM收件箱创建自定义列，因为如果AEM收件箱中的工作项属于标记为外部存储的工作流，则不会获取自定义列的值。
 
 >[!MORELIKETHIS]
 >
 >* [为AEM Forms配置数据源](/help/forms/configure-data-sources.md)
 >* [为AEM Forms配置Azure存储](/help/forms/configure-azure-storage.md)
 >* [将Microsoft Dynamics 365和Salesforce与自适应Forms集成](/help/forms/configure-msdynamics-salesforce.md)
->  [将Forms Portal添加到AEM Sites页面](/help/forms/configure-forms-portal.md)
+>  [将Forms门户添加到AEM Sites页面](/help/forms/configure-forms-portal.md)

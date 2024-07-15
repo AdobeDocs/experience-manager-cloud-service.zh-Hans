@@ -23,7 +23,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 >[!TIP]
 >
->另请查看 [入门文档历程](/help/journey-onboarding/overview.md) 有关如何使用Cloud Manager启动和运行AEMas a Cloud Service的完整概述。
+>另请查看[入门文档历程](/help/journey-onboarding/overview.md)，全面了解如何使用Cloud Manager启动和运行AEM as a Cloud Service。
 
 ## 我的程序控制台 {#my-programs}
 
@@ -106,7 +106,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 * 程序图像（如果进行了配置）
 * 项目名称
-* 服务类型： **Experience Manager云** 对于AEM as a *Cloud Service计划或 [**Experience Manager** 用于AMS程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* 服务类型： AEM as a *Cloud Service程序的&#x200B;**Experience Manager云**&#x200B;或AMS程序的&#x200B;[**Experience Manager**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：沙盒或生产
 * 状态
 * 已配置的解决方案
@@ -120,7 +120,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 * [WAF-DDOS保护](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![waf-DDOS徽章](assets/waf-ddos-protection.png)
+  ![WAF-DDOS徽章](assets/waf-ddos-protection.png)
 
 * [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
@@ -145,11 +145,11 @@ Cloud manage UI 主要由两个图形界面组成：
 >
 >* [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 >* [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [正在创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
 #### 许可证选项卡 {#license-tab}
 
-此 **许可证** 选项卡可让您快速访问 [许可证仪表板。](/help/implementing/cloud-manager/license-dashboard.md)
+**许可证**&#x200B;选项卡可让您快速访问[许可证仪表板。](/help/implementing/cloud-manager/license-dashboard.md)
 
 ### 快速链接 {#quick-links}
 
@@ -168,7 +168,7 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 根据对程序的最后操作制定的[行动号召](#cta)
 1. 对程序[环境的概述](#environments)
 1. 对程序[管道的概述](#pipelines)
-1. An [性能概述](#performance) 的
+1. [计划绩效](#performance)概述
 1.  [有用资源](#useful-resources)的链接
 
 ### 工具栏 {#program-overview-toolbar}
@@ -213,7 +213,7 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 行动呼吁部分将会根据您的程序状态为您提供有用的信息。对于新程序，您可能会看到所提供的后续步骤，以及上线日期提醒（[在程序创建期间设置）。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
 
-![新项目的行动号召](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
+新项目的![行动号召](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
 对于实时程序，上次部署的状态包含详细信息链接以及开始新部署的链接。
 
@@ -237,7 +237,7 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 ### 性能卡 {#performance}
 
-此 **性能** 信息卡提供了 **[CDN功能板。](/help/implementing/cloud-manager/cdn-performance.md)**
+**性能**&#x200B;卡提供&#x200B;**[CDN仪表板](/help/implementing/cloud-manager/cdn-performance.md)**&#x200B;的概述
 
 ![性能卡](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

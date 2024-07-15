@@ -22,9 +22,9 @@ ht-degree: 4%
 
 ![数据集成](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] 通过数据集成，您可以使用不同的后端数据源来创建表单数据模型(FDM)，以将其用作各种自适应Forms中的架构 <!--and interactive communications--> 工作流。 它需要配置数据源并根据数据源中可用的数据模型对象和服务创建表单数据模型(FDM)。 有关更多信息，请参阅以下内容：
+[!DNL Experience Manager Forms]数据集成允许您使用不同的后端数据源来创建表单数据模型(FDM)，以将其用作各种自适应Forms <!--and interactive communications-->工作流中的架构。 它需要配置数据源并根据数据源中可用的数据模型对象和服务创建表单数据模型(FDM)。 有关更多信息，请参阅以下内容：
 
-* [[!DNL Experience Manager Forms] 数据集成](data-integration.md)
+* [[!DNL Experience Manager Forms]数据集成](data-integration.md)
 * [配置数据源](configure-data-sources.md)
 * [创建表单数据模型(FDM)](create-form-data-models.md)
 * [使用表单数据模型(FDM)](work-with-form-data-model.md)
@@ -40,23 +40,23 @@ ht-degree: 4%
 
 ## 创建自适应Forms和片段 {#create-af}
 
-您可以创建 [自适应Forms](creating-adaptive-form.md) 和自适应表单片段 <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> 基于表单数据模型(FDM)。 创建自适应表单或自适应表单片段时，请执行以下操作以使用表单数据模型(FDM)：
+您可以基于表单数据模型(FDM)创建[自适应Forms](creating-adaptive-form.md)和自适应表单片段<!-- [Adaptive Form Fragments](adaptive-form-fragments.md) -->。 创建自适应表单或自适应表单片段时，请执行以下操作以使用表单数据模型(FDM)：
 
-1. 在添加属性屏幕上的表单模型选项卡中，选择 **[!UICONTROL 表单数据模型]** 在 **[!UICONTROL 选择自]** 下拉列表。
+1. 在“添加属性”屏幕上的“表单模型”选项卡中，从&#x200B;**[!UICONTROL 从]**&#x200B;选择下拉列表中选择&#x200B;**[!UICONTROL 表单数据模型]**。
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-2. 选择以展开 **[!UICONTROL 选择表单数据模型]**. 列出所有可用的表单数据模型(FDM)。
+2. 选择以展开&#x200B;**[!UICONTROL 选择表单数据模型]**。 列出所有可用的表单数据模型(FDM)。
 
    从数据模型中选择。
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-3. (**仅自适应表单片段**)您可以仅基于表单数据模型(FDM)中的一个数据模型对象创建自适应表单片段。 展开 **[!UICONTROL 表单数据模型定义]** 下拉菜单。 它列出了指定表单数据模型(FDM)中的所有数据模型对象。 从列表中选择数据模型对象。
+3. （**仅限自适应表单片段**）您可以仅基于表单数据模型(FDM)中的一个数据模型对象创建自适应表单片段。 展开&#x200B;**[!UICONTROL 表单数据模型定义]**&#x200B;下拉列表。 它列出了指定表单数据模型(FDM)中的所有数据模型对象。 从列表中选择数据模型对象。
 
    ![create-af-3](assets/create-af-3.png)
 
-   创建基于表单数据模型(FDM)的自适应表单或自适应表单片段后，表单数据模型对象将显示在 **[!UICONTROL 数据源]** 自适应表单编辑器中内容浏览器的选项卡。
+   创建基于表单数据模型(FDM)的自适应表单或自适应表单片段后，表单数据模型对象会显示在自适应表单编辑器中的内容浏览器的&#x200B;**[!UICONTROL 数据源]**&#x200B;选项卡中。
 
    >[!NOTE]
    >
@@ -88,7 +88,7 @@ For more information, see:
 
 ## 使用示例数据预览 {#preview-ic}
 
-表单数据模型编辑器允许您为表单数据模型(FDM)中的数据模型对象生成和编辑示例数据。 您可以使用此数据来预览和测试 <!--interactive communications and--> 自适应Forms。 在预览之前必须生成示例数据，如中所述 [使用表单数据模型](work-with-form-data-model.md#sample).
+表单数据模型编辑器允许您为表单数据模型(FDM)中的数据模型对象生成和编辑示例数据。 您可以使用此数据预览和测试<!--interactive communications and-->自适应Forms。 您必须在预览之前生成样本数据，如[使用表单数据模型](work-with-form-data-model.md#sample)中所述。
 
 <!--To preview an interactive communication with sample Form Data Model data:
 
@@ -100,13 +100,13 @@ The interactive communication opens with prefilled sample data.
 
 ![web-preview](assets/web-preview.png)-->
 
-要预览包含示例数据的自适应表单，请在创作模式下打开自适应表单，然后选择 **[!UICONTROL 预览]**.
+若要预览包含示例数据的自适应表单，请在创作模式下打开该自适应表单，然后选择&#x200B;**[!UICONTROL 预览]**。
 
 ## 使用表单数据模型服务预填充 {#prefill}
 
-[!DNL Experience Manager Forms] 提供为自适应Forms启用的现成表单数据模型预填充服务 <!--and interactive communications--> 基于表单数据模型(FDM)。 预填充服务在自适应表单中查询数据模型对象的数据源 <!--and interactive communication--> 并相应地在呈现表单或通信时预填充数据。
+[!DNL Experience Manager Forms]提供现成的表单数据模型预填充服务，您可以为基于表单数据模型(FDM)的自适应Forms <!--and interactive communications-->启用该服务。 预填充服务查询自适应表单<!--and interactive communication-->中数据模型对象的数据源，并在呈现表单或通信时相应地预填充数据。
 
-要为自适应表单启用表单数据模型预填充服务，请打开自适应表单容器属性，然后选择 **[!UICONTROL 表单数据模型预填充服务]** 从 **[!UICONTROL 预填充服务]** 基本折叠面板中的下拉列表。 然后，保存属性。
+要为自适应表单启用表单数据模型预填充服务，请打开自适应表单容器属性，然后从“基本”折叠面板的&#x200B;**[!UICONTROL 预填充服务]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 表单数据模型预填充服务]**。 然后，保存属性。
 
 ![预填充服务](assets/prefill-service.png)
 
@@ -118,61 +118,61 @@ Edit Properties dialog for an interactive communication-->
 
 ## 将提交的自适应表单数据写入数据源 {#write-af}
 
-当用户提交基于表单数据模型(FDM)的表单时，您可以配置表单以将数据模型对象的已提交数据写入其数据源。 要实现此用例， [!DNL Experience Manager Forms] 提供 [表单数据模型提交操作](configuring-submit-actions.md)，现成仅适用于基于表单数据模型(FDM)的自适应Forms。 它将为数据模型对象提交的数据写入其数据源。
+当用户提交基于表单数据模型(FDM)的表单时，您可以配置表单以将数据模型对象的已提交数据写入其数据源。 为了达到此用例，[!DNL Experience Manager Forms]提供了[表单数据模型提交操作](configuring-submit-actions.md)，该操作仅可用于基于表单数据模型(FDM)的自适应Forms。 它将为数据模型对象提交的数据写入其数据源。
 
 要配置表单数据模型提交操作，请执行以下操作：
 
 1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
 1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
 1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。
-1. 从 **[!UICONTROL 提交操作]** 下拉列表，选择 **[!UICONTROL 使用表单数据模型提交]**.
+1. 从&#x200B;**[!UICONTROL 提交操作]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 使用表单数据模型提交]**。
 
    ![操作配置](/help/forms/assets/configure-submit-action-invoke-fdm.png)
 
-1. 指定 **[!UICONTROL 要提交的数据模型]**.
-1. 单击 **[!UICONTROL 完成]**
+1. 指定要提交的&#x200B;**[!UICONTROL 数据模型]**。
+1. 单击&#x200B;**[!UICONTROL 完成]**
 
-在表单提交时，将配置数据模型对象的数据写入各自的数据源。 此外，您可以使用表单数据模型(FDM)和记录文档(DoR)将表单附件提交到数据源。 有关表单数据模型(FDM)的信息，请参阅 [[!DNL AEM Forms] 数据集成](data-integration.md).
+在表单提交时，将配置数据模型对象的数据写入各自的数据源。 此外，您可以使用表单数据模型(FDM)和记录文档(DoR)将表单附件提交到数据源。 有关表单数据模型(FDM)的信息，请参阅[[!DNL AEM Forms] 数据集成](data-integration.md)。
 
 <!--![data-submission](assets/data-submission.png)-->
 
 >[!NOTE]
 >
-> AEMas a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+> AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
 
 您还可以使用二进制数据模型对象属性将表单附件提交到数据源。 执行以下操作以将附件提交到JDBC数据源：
 
 1. 将包含二进制属性的数据模型对象添加到表单数据模型(FDM)。
-1. 在自适应表单中，拖放 **[!UICONTROL 文件附件]** 将组件浏览器中的组件移入自适应表单。
-1. 选择以选择添加的组件，然后选择 ![settings_icon](assets/configure-icon.svg) 以打开组件的属性浏览器。
-1. 在绑定引用字段中，选择 ![foldersearch_18](assets/folder-search-icon.svg) 并导航以选择您在表单数据模型(FDM)中添加的二进制属性。 根据需要配置其他属性。
+1. 在自适应表单中，将&#x200B;**[!UICONTROL 文件附件]**&#x200B;组件从组件浏览器拖放到自适应表单上。
+1. 选择以选择添加的组件，然后选择![settings_icon](assets/configure-icon.svg)以打开该组件的“属性”浏览器。
+1. 在“绑定引用”字段中，选择![foldersearch_18](assets/folder-search-icon.svg)，然后导航以选择您在表单数据模型(FDM)中添加的二进制属性。 根据需要配置其他属性。
 
-   选择 ![复选按钮](assets/save_icon.svg) 以保存属性。 附件字段现在绑定到表单数据模型(FDM)的二进制属性。
+   选择![check-button](assets/save_icon.svg)以保存属性。 附件字段现在绑定到表单数据模型(FDM)的二进制属性。
 
-1. 在自适应表单容器属性的提交部分中，启用 **[!UICONTROL 提交表单附件]**. 在提交表单时，它将二进制属性字段中的附件提交到数据源。
+1. 在自适应表单容器属性的提交部分中，启用&#x200B;**[!UICONTROL 提交表单附件]**。 在提交表单时，它将二进制属性字段中的附件提交到数据源。
 
 ## 使用规则在自适应Forms中调用服务 {#invoke-services}
 
-在基于表单数据模型(FDM)的自适应表单中，您可以 [创建规则](rule-editor.md) 以调用在表单数据模型(FDM)中配置的服务。 此 **[!UICONTROL 调用服务]** 规则中的操作列出了表单数据模型(FDM)中的所有可用服务，并允许您选择服务的输入和输出字段。 您也可以使用 **[!UICONTROL 设置值]** 用于调用表单数据模型服务并将字段的值设置为服务返回的输出的规则类型。
+在基于表单数据模型(FDM)的自适应表单中，您可以[创建规则](rule-editor.md)以调用在表单数据模型(FDM)中配置的服务。 规则中的&#x200B;**[!UICONTROL 调用服务]**&#x200B;操作列出了表单数据模型(FDM)中的所有可用服务，并允许您选择服务的输入和输出字段。 您还可以使用&#x200B;**[!UICONTROL 设置值]**&#x200B;规则类型来调用表单数据模型服务，并将字段的值设置为服务返回的输出。
 
 例如，以下规则调用一个将Employee ID作为输入的get服务，返回的值将填充到表单中对应的Dependent ID、Last Name、First Name和Gender字段中。
 
-![invoke-service](assets/invoke-service.png)
+![调用服务](assets/invoke-service.png)
 
-此外，您可以使用 `guidelib.dataIntegrationUtils.executeOperation` 用于在规则编辑器的代码编辑器中编写JavaScript的API。 <!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
+此外，您可以使用`guidelib.dataIntegrationUtils.executeOperation` API在规则编辑器的代码编辑器中编写JavaScript。<!-- For API details, see [API to invoke Form Data Model service](invoke-form-data-model-services.md).-->
 
 ### 使用自定义函数调用表单数据模型(FDM) {#invoke-form-data-model-using-custom-functions}
 
-您可以 [使用自定义函数从规则编辑器调用表单数据模型](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). 列入允许列表要调用表单数据模型(FDM)，请将表单数据模型添加到。 要将表单数据模型添加到允许列表，请执行以下操作：
+您可以使用自定义函数](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)从规则编辑器[调用表单数据模型。 列入允许列表要调用表单数据模型(FDM)，请将表单数据模型添加到。 要将表单数据模型添加到允许列表，请执行以下操作：
 
-1. 转到Experience ManagerWeb控制台，网址为 `https://server:host/system/console/configMgr`.
-1. 定位 **[!UICONTROL 用于服务调用的表单数据模型的自适应表单级白名单 — 配置工厂]**.
-1. 单击 ![加号图标](/help/forms/assets/Smock_Add_18_N.svg) 图标以添加配置……
-1. 添加 **[!UICONTROL 内容路径模式]** 以指定自适应Forms的位置。  默认情况下，该值为 `/content/forms/af/(.*)` 包括所有自适应Forms。 您还可以指定特定自适应表单的路径。
-1. 添加 **[!UICONTROL 表单数据模型路径模式]** 以指定表单数据模型(FDM)的位置。 默认情况下，该值为 `/content/dams/formsanddocuments-fdm/(.*)` 包括所有表单数据模型(FDM)。 您还可以指定特定表单数据模型(FDM)的路径。
+1. 转到`https://server:host/system/console/configMgr`上的Experience ManagerWeb控制台。
+1. 找到&#x200B;**[!UICONTROL 用于服务调用的自适应表单级表单数据模型白名单 — 配置工厂]**。
+1. 单击![加号图标](/help/forms/assets/Smock_Add_18_N.svg)图标以添加配置。
+1. 添加&#x200B;**[!UICONTROL 内容路径模式]**&#x200B;以指定自适应Forms的位置。  默认情况下，该值是`/content/forms/af/(.*)`，其中包括所有自适应Forms。 您还可以指定特定自适应表单的路径。
+1. 添加&#x200B;**[!UICONTROL 表单数据模型路径模式]**&#x200B;以指定表单数据模型(FDM)的位置。 默认情况下，值为`/content/dams/formsanddocuments-fdm/(.*)`，其中包括所有表单数据模型(FDM)。 您还可以指定特定表单数据模型(FDM)的路径。
 1. 保存设置。
 
-添加的配置将保存在下 **[!UICONTROL 用于服务调用的表单数据模型的自适应表单级白名单 — 配置工厂]** 选项。
+添加的配置保存在用于服务调用的表单数据模型的&#x200B;**[!UICONTROL 自适应表单级白名单中 — 配置工厂]**&#x200B;选项。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423977/adaptive-forms-custom-function-rule-editor)
 
@@ -180,7 +180,7 @@ Edit Properties dialog for an interactive communication-->
 >
 > 要通过AEM原型项目使用自定义函数从规则编辑器调用表单数据模型(FDM)，请执行以下操作：
 >
->1. [创建配置文件](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
+>1. [创建配置文件](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json)。
 >1. 设置getContentPathPattern和getFormDataModelPathPattern的属性。
 >1. 部署项目。
 

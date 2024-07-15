@@ -1,6 +1,6 @@
 ---
 title: 内容搜索与索引
-description: 了解AEMas a Cloud Service中的“内容搜索”和“索引”。
+description: 了解AEM as a Cloud Service中的内容搜索和索引编制。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
@@ -21,55 +21,55 @@ ht-degree: 29%
 
 1. 用户无法访问单个AEM实例的索引管理器，无法再调试、配置或维护索引。 它仅用于本地开发和内部部署。
 1. 用户不会更改单个AEM实例上的索引，也不必再担心一致性检查或重新编制索引。
-1. 一般在投入生产之前开始更改索引，以免回避Cloud Manager CI/CD管道中的质量关卡以及影响生产中的业务KPI。
+1. 一般在投入生产之前开始更改索引，以免回避Cloud Manager CI/CD管道中的质量关卡以及影响生产过程中的业务KPI。
 1. 客户可在运行时获得所有相关量度（包括生产过程中的搜索性能），以提供关于搜索和索引编制主题的整体视图。
 1. 客户能够根据自己的需求设置警报。
 1. SRE全天候监控系统运行状况，并尽早采取行动。
 1. 通过部署更改索引配置。像其他内容更改一样配置索引定义更改。
-1. 在AEMas a Cloud Service的高层，随着 [滚动部署模型](#index-management-using-rolling-deployments)，则存在两组索引：一组用于旧版本，另一组用于新版本。
-1. 客户可以在Cloud Manager构建页面上查看索引作业是否完成，并在新版本准备好接收流量时收到通知。
+1. 在AEM as a Cloud Service的高层，随着[滚动部署模型](#index-management-using-rolling-deployments)的引入，存在两组索引：一组用于旧版本，另一组用于新版本。
+1. 客户可以在Cloud Manager内部版本页面上查看索引作业是否完成，并在新版本准备好接收流量时收到通知。
 
 限制：
 
 * 目前，仅限类型为 `lucene` 的索引支持 AEM as a Cloud Service 上的索引管理。
 * 仅支持标准分析器（即产品附带的分析器）。 不支持自定义分析器。
-* 可在内部配置其他索引并将其用于查询。例如，在 Skyline 上可能实际上针对 `damAssetLucene` 索引的 Elasticsearch 版本执行针对此索引编写的查询。应用程序和用户一般感受不到这一区别，但是，某些工具(例如 `explain` 功能报告不同的索引。 有关 Lucene 索引与 Elastic 索引之间的区别，请参阅 [Apache Jackrabbit Oak 中的 Elastic 文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。客户不需要直接配置Elasticsearch索引，也无法这样做。
-* 按相似特征向量搜索(`useInSimilarity = true`)不受支持。
+* 可在内部配置其他索引并将其用于查询。例如，在 Skyline 上可能实际上针对 `damAssetLucene` 索引的 Elasticsearch 版本执行针对此索引编写的查询。应用程序和用户通常看不到此差异，但是，某些工具（如`explain`功能）报告不同的索引。 有关 Lucene 索引与 Elastic 索引之间的区别，请参阅 [Apache Jackrabbit Oak 中的 Elastic 文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。客户不需要直接配置Elasticsearch索引，也无法这样做。
+* 不支持按相似特征向量(`useInSimilarity = true`)搜索。
 
 >[!TIP]
 >
->有关Oak索引和查询的更多详细信息，包括高级搜索和索引功能的详细说明，请参阅 [Apache Oak文档](https://jackrabbit.apache.org/oak/docs/query/query.html).
+>有关Oak索引和查询的更多详细信息，包括高级搜索和索引功能的详细说明，请参阅[Apache Oak文档](https://jackrabbit.apache.org/oak/docs/query/query.html)。
 
 
 ## 使用方法 {#how-to-use}
 
 索引定义可以分为三个主要用例，如下所示：
 
-1. **添加** 新的自定义索引定义。
-2. **更新** 通过添加新版本而得到的现有索引定义。
-3. **移除** 不再需要的索引定义。
+1. **添加**&#x200B;新的自定义索引定义。
+2. **通过添加新版本来更新**&#x200B;现有的索引定义。
+3. **删除**&#x200B;不再需要的索引定义。
 
-对于上面的第1点和第2点，您需要在相应的Cloud Manager发布计划中创建一个索引定义，作为自定义代码库的一部分。 欲了解更多信息，请参见 [部署到AEMas a Cloud Service](/help/implementing/deploying/overview.md) 文档。
+对于上面的第1点和第2点，您需要在相应的Cloud Manager发布计划中创建一个索引定义，作为自定义代码库的一部分。 有关详细信息，请参阅[部署到AEM as a Cloud Service](/help/implementing/deploying/overview.md)文档。
 
 ## 索引名称 {#index-names}
 
 索引定义可以分为以下类别之一：
 
-1. 开箱即用(OOTB)索引。 例如： `/oak:index/cqPageLucene-2` 或 `/oak:index/damAssetLucene-8`.
+1. 开箱即用(OOTB)索引。 对于实例： `/oak:index/cqPageLucene-2`或`/oak:index/damAssetLucene-8`。
 
-2. 自定义OOTB索引。 通过附加来指示这些变量 `-custom-` 后跟原始索引名的数字标识符。 例如：`/oak:index/damAssetLucene-8-custom-1`。
+2. 自定义OOTB索引。 在原始索引名后附加`-custom-`后跟数字标识符表示这些值。 例如：`/oak:index/damAssetLucene-8-custom-1`。
 
-3. 完全自定义索引：可以从头开始创建全新的索引。 它们的名称必须具有前缀以避免命名冲突。 例如： `/oak:index/acme.product-1-custom-2`，其中前缀为 `acme.`
+3. 完全自定义索引：可以从头开始创建全新的索引。 它们的名称必须具有前缀以避免命名冲突。 例如： `/oak:index/acme.product-1-custom-2`，前缀为`acme.`
 
 >[!NOTE]
 >
->在上引入新索引 `dam:Asset` 强烈建议不要使用节点类型（特别是全文索引），因为这些类型可能与OOTB产品功能冲突，从而导致功能和性能问题。 通常，向当前添加其他属性 `damAssetLucene-*` 索引版本是对以下内容编制查询索引的最合适方式： `dam:Asset` nodetype (这些更改将自动合并到索引的新产品版本中（如果随后发布）。 如有疑问，请联系Adobe支持以获取建议。
+>强烈建议不要在`dam:Asset`节点类型中引入新索引（特别是全文索引），因为这些索引可能会与OOTB产品功能冲突，从而导致功能和性能问题。 通常，向当前`damAssetLucene-*`索引版本添加其他属性是对`dam:Asset`节点类型上的查询进行索引的最合适方式（如果随后发布这些更改，将自动合并到索引的新产品版本中）。 如有疑问，请联系Adobe支持以获取建议。
 
 ## 准备新索引定义 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->例如，如果自定义开箱即用索引， `damAssetLucene-8`，从中复制最新的开箱即用索引定义 *Cloud Service环境* 使用CRX DE包管理器(`/crx/packmgr/`) 。 将其重命名为 `damAssetLucene-8-custom-1` （或更高版本），并将您的自定义项添加到XML文件中。 这样可确保不会无意中删除所需的配置。 例如， `tika` 节点在 `/oak:index/damAssetLucene-8/tika` 在部署到AEM Cloud Service环境的自定义索引中是必需的，但在本地AEM SDK上不存在。
+>如果自定义开箱即用索引，例如`damAssetLucene-8`，请使用CRX DE包管理器(`/crx/packmgr/`)从&#x200B;*Cloud Service环境*&#x200B;复制最新的开箱即用索引定义。 将其重命名为`damAssetLucene-8-custom-1`（或更高版本），并在XML文件中添加自定义项。 这样可确保不会无意中删除所需的配置。 例如，部署到AEM Cloud Service环境的自定义索引中需要`/oak:index/damAssetLucene-8/tika`下的`tika`节点，但本地AEM SDK上不存在该节点。
 
 对于OOTB索引的自定义，请准备一个新包，其中包含遵循此命名模式的实际索引定义：
 
@@ -85,7 +85,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->任何包含索引定义的内容包都应在 `properties.xml` 内容包的文件。 `properties.xml` 默认在新包中创建，位于 `<package_name>/META-INF/vault/properties.xml`：
+>任何包含索引定义的内容包都应在内容包的`properties.xml`文件中设置以下属性。 默认情况下，`properties.xml`是在新包中创建的，位于`<package_name>/META-INF/vault/properties.xml`：
 >
 > * `noIntermediateSaves=true`
 >
@@ -93,12 +93,13 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ## 部署自定义索引定义 {#deploying-custom-index-definitions}
 
-说明如何部署开箱即用索引的自定义版本 `damAssetLucene-8`，我们将提供分步指南。 在本例中，我们将它重命名为 `damAssetLucene-8-custom-1`. 然后按照如下步骤进行操作：
+为了说明如何部署开箱即用索引`damAssetLucene-8`的自定义版本，我们将提供分步指南。 在此示例中，我们将它重命名为`damAssetLucene-8-custom-1`。 然后按照如下步骤进行操作：
 
-1. 在中使用更新的索引名称创建新文件夹 `ui.apps` 目录：
+1. 在`ui.apps`目录中创建一个具有更新索引名称的新文件夹：
    * 示例： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
-2. 添加配置文件 `.content.xml` 将自定义配置放置在创建的文件夹中。 以下是自定义设置的示例：文件名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
+2. 添加包含已创建文件夹中的自定义配置的配置文件`.content.xml`。 以下是自定义示例：
+文件名： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -134,7 +135,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </jcr:root>
    ```
 
-3. 向中的FileVault过滤器添加一个条目 `ui.apps/src/main/content/META-INF/vault/filter.xml`：
+3. 向`ui.apps/src/main/content/META-INF/vault/filter.xml`中的FileVault筛选器添加一个条目：
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -144,7 +145,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </workspaceFilter>
    ```
 
-4. 在中添加Apache Tika的配置文件： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`：
+4. 在`ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/tika/config.xml`中添加Apache Tika的配置文件：
 
    ```xml
    <properties>
@@ -160,13 +161,13 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </properties>
    ```
 
-5. 确保您的配置符合 [项目配置](#project-configuration) 部分。 相应地进行任何必要的调整。
+5. 确保您的配置符合[项目配置](#project-configuration)部分中提供的准则。 相应地进行任何必要的调整。
 
 ## 项目配置
 
-我们强烈建议使用版本>= `1.3.2` Jackrabbit的 `filevault-package-maven-plugin`. 将该集成到项目中的步骤如下所示：
+我们强烈建议使用版本>= `1.3.2`的Jackrabbit `filevault-package-maven-plugin`。 将该集成到项目中的步骤如下所示：
 
-1. 更新顶级中的版本 `pom.xml`：
+1. 更新顶级`pom.xml`中的版本：
 
    ```xml
    <plugin>
@@ -178,7 +179,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </plugin>
    ```
 
-2. 将以下内容添加到顶级 `pom.xml`：
+2. 将以下内容添加到顶级`pom.xml`：
 
    ```xml
    <jackrabbit-packagetype>
@@ -188,7 +189,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </jackrabbit-packagetype>
    ```
 
-   以下是项目顶层的示例 `pom.xml` 文件包含上述配置：
+   以下是包含上述配置的项目顶级`pom.xml`文件的示例：
 
    文件名： `pom.xml`
 
@@ -211,9 +212,9 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </plugin>
    ```
 
-3. 在 `ui.apps/pom.xml` 和 `ui.apps.structure/pom.xml` 必须启用 `allowIndexDefinitions` 和 `noIntermediateSaves` 中的选项 `filevault-package-maven-plugin`. 正在启用 `allowIndexDefinitions` 允许自定义索引定义，而 `noIntermediateSaves` 确保自动添加配置。
+3. 在`ui.apps/pom.xml`和`ui.apps.structure/pom.xml`中，需要在`filevault-package-maven-plugin`中启用`allowIndexDefinitions`和`noIntermediateSaves`选项。 启用`allowIndexDefinitions`允许自定义索引定义，而`noIntermediateSaves`确保自动添加配置。
 
-   文件名： `ui.apps/pom.xml` 和 `ui.apps.structure/pom.xml`
+   文件名： `ui.apps/pom.xml`和`ui.apps.structure/pom.xml`
 
    ```xml
    <plugin>
@@ -229,7 +230,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </plugin>
    ```
 
-4. 添加筛选条件 `/oak:index` 在 `ui.apps.structure/pom.xml`：
+4. 在`ui.apps.structure/pom.xml`中添加`/oak:index`的筛选器：
 
    ```xml
    <filters>
@@ -242,7 +243,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!TIP]
 >
->有关AEMas a Cloud Service所需的包结构的更多详细信息，请参阅 [AEM项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>有关AEM as a Cloud Service所需的包结构的更多详细信息，请参阅[AEM项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。
 
 ## 使用滚动部署的索引管理 {#index-management-using-rolling-deployments}
 
@@ -256,7 +257,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 只读和读写区域 {#read-only-and-read-write-areas}
 
-存储库的某些区域（存储库的只读部分）在应用程序的旧版本和新版本中可能不同。 存储库的只读区域通常为 `/app` 和 `/libs`. 在下面的示例中，斜体用于标记只读区域，而粗体用于标记读写区域。
+存储库的某些区域（存储库的只读部分）在应用程序的旧版本和新版本中可能不同。 存储库的只读区域通常为`/app`和`/libs`。 在下面的示例中，斜体用于标记只读区域，而粗体用于标记读写区域。
 
 * **/**
 * */apps（只读）*
@@ -284,7 +285,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->此 `<indexName>-custom-<customerVersionNumber>` 需要，以使AEMas a Cloud Service将其标记为现有索引的替代。
+>AEM as a Cloud Service需要`<indexName>-custom-<customerVersionNumber>`才能将其标记为现有索引的替代。
 
 | 索引 | 开箱即用索引 | 在版本 1 中使用 | 在版本 2 中使用 |
 |---|---|---|---|
@@ -294,11 +295,11 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 | /oak:index/acme.product-custom-2 | 否 | 否 | 是 |
 | /oak:index/cqPageLucene | 是 | 是 | 是 |
 
-每次更改索引时，版本号都增大。要避免自定义索引名与产品本身的索引名冲突，自定义索引以及对开箱即用索引的更改必须以结尾 `-custom-<number>`.
+每次更改索引时，版本号都增大。为了避免自定义索引名与产品本身的索引名冲突，自定义索引以及对开箱即用索引的更改必须以`-custom-<number>`结尾。
 
 ### 对开箱即用索引的更改 {#changes-to-out-of-the-box-indexes}
 
-在Adobe更改开箱即用索引（如“damAssetLucene”或“cqPageLucene”）后，名为的新索引 `damAssetLucene-2` 或 `cqPageLucene-2` 创建。 或者，如果已自定义索引，则自定义的索引定义将与现成索引中的更改合并，如下所示。 这些更改自动合并。这意味着，如果开箱即用索引发生更改，您无需执行任何操作。 但是，之后可以再次自定义索引。
+在Adobe更改开箱即用索引（如“damAssetLucene”或“cqPageLucene”）后，将创建名为`damAssetLucene-2`或`cqPageLucene-2`的新索引。 或者，如果已自定义索引，则自定义的索引定义将与现成索引中的更改合并，如下所示。 这些更改自动合并。这意味着，如果开箱即用索引发生更改，您无需执行任何操作。 但是，之后可以再次自定义索引。
 
 | 索引 | 开箱即用索引 | 在版本 2 中使用 | 在版本 3 中使用 |
 |---|---|---|---|
@@ -309,15 +310,15 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 当前限制 {#current-limitations}
 
-仅类型为的索引支持索引管理 `lucene`，替换为 `compatVersion` 设置为 `2`. 在内部，可以配置其他索引并将其用于查询，例如Elasticsearch索引。 针对编写的查询 `damAssetLucene` 在AEMas a Cloud Service上，索引实际上可能针对此索引的Elasticsearch版本运行。 应用程序用户不会察觉到这种差异，但是 `explain` 功能报告不同的索引。 有关Lucene和Elasticsearch索引之间的区别，请参阅 [Apache Jackrabbit Oak中的Elasticsearch文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html). 客户不能也不需要直接配置Elasticsearch索引。
+仅类型`lucene`的索引（将`compatVersion`设置为`2`）支持索引管理。 在内部，可以配置其他索引并将其用于查询，例如Elasticsearch索引。 在AEM as a Cloud Service上，可能实际上针对此索引的Elasticsearch版本运行针对`damAssetLucene`索引编写的查询。 应用程序用户看不到此差异，但某些工具（如`explain`功能）报告不同的索引。 有关Lucene索引与Elasticsearch索引之间的区别，请参阅[Apache Jackrabbit Oak中的Elasticsearch文档](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。 客户不能也不需要直接配置Elasticsearch索引。
 
 仅支持内置分析器（即产品附带的分析器）。 不支持自定义分析器。
 
-为获得最佳运行性能，索引不应过大。 所有索引的总大小均可作为参考使用。 如果在添加了自定义索引并在开发环境中调整了标准索引后，此大小增加超过100%，则应调整自定义索引定义。 AEMas a Cloud Service可以阻止部署可能对系统稳定性和性能产生负面影响的索引。
+为获得最佳运行性能，索引不应过大。 所有索引的总大小均可作为参考使用。 如果在添加了自定义索引并在开发环境中调整了标准索引后，此大小增加超过100%，则应调整自定义索引定义。 AEM as a Cloud Service可以阻止部署可能对系统稳定性和性能产生负面影响的索引。
 
 ### 添加索引 {#adding-an-index}
 
-添加名为的完全自定义索引 `/oak:index/acme.product-custom-1`，以便在应用程序的新版本和更高版本中使用，必须按如下方式配置索引：
+要添加一个要在应用程序的新版本和更高版本中使用的名为`/oak:index/acme.product-custom-1`的完全自定义索引，必须按如下方式配置该索引：
 
 `acme.product-1-custom-1`
 
@@ -339,17 +340,17 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->AEM as a Cloud Service 上的索引定义可能与本地开发实例上的索引定义不完全相同。开发实例没有Tika配置，而AEMas a Cloud Service的实例有。 如果使用Tika配置自定义索引，请保留Tika配置。
+>AEM as a Cloud Service 上的索引定义可能与本地开发实例上的索引定义不完全相同。开发实例没有Tika配置，而AEM as a Cloud Service实例有。 如果使用Tika配置自定义索引，请保留Tika配置。
 
 ### 还原更改 {#undoing-a-change}
 
-有时，需要撤消索引定义中的修改。 这可能是由于意外错误或不再需要修改而导致的。 以索引定义为例 `damAssetLucene-8-custom-3,` 错误地创建并已部署。 因此，要恢复为以前的索引定义， `damAssetLucene-8-custom-2.` 要实现此目的，您需要引入名为的新索引 `damAssetLucene-8-custom-4` 包含了先前索引的定义， `damAssetLucene-8-custom-2.`
+有时，需要撤消索引定义中的修改。 这可能是由于意外错误或不再需要修改而导致的。 例如，以错误地创建且已经部署的索引定义`damAssetLucene-8-custom-3,`为例。 因此，要恢复为上一个索引定义`damAssetLucene-8-custom-2.`要实现此目的，需要引入名为`damAssetLucene-8-custom-4`的新索引，该索引包含上一个索引`damAssetLucene-8-custom-2.`中的定义
 
 ### 删除索引 {#removing-an-index}
 
 以下内容仅适用于自定义索引。当 AEM 使用产品索引时，无法删除这些索引。
 
-如果在应用程序的更高版本中删除了索引，则可以使用新名称定义空索引（从未使用且不包含任何数据的空索引）。 在本例中，您可以将其命名为 `/oak:index/acme.product-custom-3`. 此名称将替换索引 `/oak:index/acme.product-custom-2`. 之后 `/oak:index/acme.product-custom-2` 被系统删除，空索引 `/oak:index/acme.product-custom-3` 然后可以删除。 这种空索引的示例如下：
+如果在应用程序的更高版本中删除了索引，则可以使用新名称定义空索引（从未使用且不包含任何数据的空索引）。 对于此示例，您可以将其命名为`/oak:index/acme.product-custom-3`。 此名称替换索引`/oak:index/acme.product-custom-2`。 在系统删除`/oak:index/acme.product-custom-2`之后，可以删除空索引`/oak:index/acme.product-custom-3`。 这种空索引的示例如下：
 
 ```xml
 <acme.product-custom-3
@@ -378,4 +379,4 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 通过 Apache Jackrabbit Oak，可灵活地配置索引以高效地处理搜索查询。索引对于大型存储库尤其重要。确保所有查询都有适当的索引作为支持。 没有合适索引的查询可能会读取数千个节点，然后将其记录为警告。
 
-请参阅 [本文档](query-and-indexing-best-practices.md) 有关如何优化查询和索引的信息。
+有关如何优化查询和索引的信息，请参阅[本文档](query-and-indexing-best-practices.md)。

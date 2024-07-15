@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
 source-git-commit: aa7429d9ca9f67979303c0b85c9dbd5b8c74c05c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '260'
+ht-degree: 0%
 
 ---
 
@@ -26,10 +26,10 @@ ht-degree: 4%
 
 您可以每月为给定公司请求一次错误报告。
 
-**要为失败的Dynamic Media投放URL请求错误报告，请执行以下操作：**
+**为失败的Dynamic Media投放URL请求错误报告：**
 
-1. [发送电子邮件至reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com) ，其中包含与您的Dynamic Media帐户关联的公司名称。
+1. [向reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com)发送一封电子邮件，其中包含与您的Dynamic Media帐户关联的公司名称。
 
-   如果您不知道公司名称，请参见 [Dynamic Media配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hans#configuring-dynamic-media-cloud-services) 页面位置 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Dynamic Media配置]**. 在Dynamic Media配置浏览器页面上，单击 **[!UICONTROL 全局]**，选择 *[Dynamic_Media文件夹图标]* 复选框，然后选择 **[!UICONTROL 编辑]**. 您必须在AEM中拥有管理员权限才能访问Dynamic Media配置页面。
+   如果您不知道公司名称，请在&#x200B;**[!UICONTROL Dynamic Media]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 工具]** > **[!UICONTROL Dynamic Media配置]**&#x200B;中查看[Adobe Experience Manager配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hans#configuring-dynamic-media-cloud-services)页面。 在“Dynamic Media配置浏览器”页面上，单击&#x200B;**[!UICONTROL 全局]**，选中&#x200B;*[Dynamic_Media_folder_icon]*&#x200B;复选框，然后选择&#x200B;**[!UICONTROL 编辑]**。 您必须在AEM中拥有管理员权限才能访问Dynamic Media配置页面。
 
    ![访问Dynamic Media配置页面。](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

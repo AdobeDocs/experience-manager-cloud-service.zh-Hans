@@ -41,7 +41,7 @@ ht-degree: 93%
 体验片段无需复制/粘贴。
 * 支持 headless CMS 用例。
 作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/接触点将会使用该体验，然后交付给用户。
-* 替换为 [多站点管理(MSM)](/help/sites-cloud/administering/msm/overview.md)；作为体验片段属于页面。 这同时适用于单个片段及其所在的文件夹。
+* 具有[多站点管理(MSM)](/help/sites-cloud/administering/msm/overview.md)；作为体验片段是页面的一部分。 这同时适用于单个片段及其所在的文件夹。
 
 >[!NOTE]
 >
@@ -243,7 +243,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
      >[!NOTE]
      >
-     >将初始变体创建为Live Copy将通过使用主变体Live Copy源继承标题。
+     >将初始变量创建为Live Copy时，将通过使用Live Copy Source作为主变量来继承标题。
 
 1. 定义所需属性：
 

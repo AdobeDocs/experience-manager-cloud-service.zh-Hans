@@ -1,6 +1,6 @@
 ---
 title: 内容复制工具
-description: 内容复制工具使用户能够按需将可变内容从AEMas a Cloud Service上的生产环境复制到较低环境，以进行测试。
+description: 内容复制工具使用户能够按需将可变内容从其AEM as a Cloud Service上的生产环境复制到较低环境中，以供测试之用。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
@@ -13,13 +13,13 @@ ht-degree: 33%
 
 # 内容复制工具 {#content-copy}
 
-内容复制工具使用户能够按需将可变内容从AEMas a Cloud Service上的生产环境复制到较低环境，以进行测试。
+内容复制工具使用户能够按需将可变内容从其AEM as a Cloud Service上的生产环境复制到较低环境中，以供测试之用。
 
 ## 简介 {#introduction}
 
-当前的真实数据对于测试、验证和用户验收很有价值。内容复制工具允许您将内容从生产AEMas a Cloud Service环境复制到暂存、开发或 [快速开发环境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) 用于此类测试的环境。
+当前的真实数据对于测试、验证和用户验收很有价值。内容复制工具允许您将内容从生产AEM as a Cloud Service环境复制到暂存、开发或[快速开发环境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)环境，以便进行此类测试。
 
-要复制的内容由内容集定义。内容集由JCR路径列表组成，这些路径包含要从源创作服务环境复制到同一Cloud Manager项目中的目标创作服务环境的可变内容。 内容集中允许使用以下路径。
+要复制的内容由内容集定义。内容集由JCR路径列表组成，这些路径包含要从源创作服务环境复制到同一Cloud Manager程序中的目标创作服务环境的可变内容。 内容集中允许使用以下路径。
 
 ```text
 /content
@@ -43,7 +43,7 @@ ht-degree: 33%
 | 创建和修改[内容集](#create-content-set) | 非必填 | 必填 |
 | 开始或取消[内容复制过程](#copy-content) | 必填 | 必填 |
 
-有关权限以及如何设置这些权限的更多详细信息，请参阅 [AEMas a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md).
+有关权限以及如何设置这些权限的更多详细信息，请参阅[AEM as a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)。
 
 ## 创建内容集 {#create-content-set}
 
@@ -51,31 +51,31 @@ ht-degree: 33%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 使用侧面导航面板，导航到 **内容集** 选项卡 **概述** 页面。
+1. 使用侧面导航面板，从&#x200B;**概述**&#x200B;页面导航到&#x200B;**内容集**&#x200B;选项卡。
 
-1. 在屏幕的右上方，单击 **添加内容集**.
+1. 单击屏幕右上方的&#x200B;**添加内容集**。
 
    ![内容集](assets/content-sets.png)
 
-1. 在 **详细信息** 选项卡中，为内容集提供名称和描述，然后选择 **继续**.
+1. 在向导的&#x200B;**详细信息**&#x200B;选项卡上，提供内容集的名称和描述，然后选择&#x200B;**继续**。
 
    ![内容集详细信息](assets/add-content-set-details.png)
 
 1. 在向导的&#x200B;**内容路径**&#x200B;选项卡上，指定要包含在内容集中的可变内容的路径。
 
    1. 在&#x200B;**添加包含路径**&#x200B;字段中输入路径。
-   1. 单击 **添加路径** 将路径添加到内容集。
-   1. 单击 **添加路径** 必要时再来一次。
+   1. 单击&#x200B;**添加路径**&#x200B;以将路径添加到内容集。
+   1. 根据需要再次单击&#x200B;**添加路径**。
       * 最多允许50条路径。
 
    ![添加路径到内容集](assets/add-content-set-paths.png)
 
 1. 如果必须优化或限制内容集，则可以排除子路径。
 
-   1. 在包含的路径列表中，单击 **添加排除子路径** 位于要限制的路径旁。
+   1. 在包含的路径列表中，单击要限制的路径旁边的&#x200B;**添加排除子路径**。
    1. 在选定路径下输入要排除的子路径。
-   1. 选择 **排除路径**.
-   1. 选择 **添加排除子路径** 再次添加，以根据需要排除其他路径。
+   1. 选择&#x200B;**排除路径**。
+   1. 再次选择&#x200B;**添加排除子路径**&#x200B;以根据需要添加要排除的其他路径。
       * 排除的路径必须相对于包含的路径。
       * 排除的路径数没有限制。
 
@@ -84,17 +84,17 @@ ht-degree: 33%
 1. 您可以根据需要编辑指定的路径。
 
    1. 单击已排除子路径旁边的X ，以便可以删除它们。
-   1. 单击路径旁边的省略号按钮，以便您能够显示 **编辑** 和 **删除** 选项。
+   1. 单击路径旁边的省略号按钮，以便显示&#x200B;**编辑**&#x200B;和&#x200B;**删除**&#x200B;选项。
 
    ![编辑路径列表](assets/add-content-set-excluded-paths.png)
 
-1. 选择 **创建** 创建内容集。
+1. 选择&#x200B;**创建**&#x200B;以创建内容集。
 
 内容集现在可用于在环境之间复制内容。
 
 ## 编辑内容集 {#edit-content-set}
 
-遵循与创建内容步骤时类似的步骤。不要单击 **添加内容集**，从控制台中选择现有集，然后选择 **编辑** 从省略号菜单中。
+遵循与创建内容步骤时类似的步骤。不要单击&#x200B;**添加内容集**，请从控制台中选择现有内容集，然后从省略号菜单中选择&#x200B;**编辑**。
 
 ![编辑内容集](assets/edit-content-set.png)
 
@@ -105,7 +105,7 @@ ht-degree: 33%
 创建内容集后，您可以使用该内容集复制内容。 请按照以下步骤操作，以便复制内容。
 
 >[!NOTE]
-> 请勿在环境上使用内容复制 [内容传输](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) 操作正在该环境中运行。
+> 当[内容传输](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)操作正在环境中运行时，请勿在该环境中使用内容复制。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
@@ -134,9 +134,9 @@ ht-degree: 33%
       * 暂存
       * 开发/RDE
 
-1. 如有必要，您还可以选择 **包括访问控制列表** 在复制过程中。
+1. 如有必要，您还可以选择在复制过程中&#x200B;**包含访问控制列表**。
 
-1. 选择 **复制**.
+1. 选择&#x200B;**复制**。
 
 复制过程开始。复制过程的状态将反映在所选内容集的控制台中。
 
@@ -167,9 +167,9 @@ ht-degree: 33%
 
 如果在启动内容复制操作后必须中止该操作，则可以选择取消该操作。
 
-为此，请在 **复制内容活动** 页面上，选择 **取消** 之前启动的复制过程的省略号菜单中的操作。
+为此，请在&#x200B;**复制内容活动**&#x200B;页面上，从您之前启动的复制进程的省略号菜单中选择&#x200B;**取消**&#x200B;操作。
 
-![取消内容复制](assets/content-copy-cancel.png)
+![取消内容副本](assets/content-copy-cancel.png)
 
 >[!NOTE]
 >
@@ -181,9 +181,9 @@ ht-degree: 33%
 
 您可以检查源环境和目标环境的日志，以了解任何已完成的内容复制过程。
 
-为此，请在 **复制内容活动** 页面上，选择 **日志** 操作复制过程的省略号菜单，您要查看其日志，然后选择哪个环境。
+为此，请在&#x200B;**复制内容活动**&#x200B;页面上，从要检查日志的复制进程的省略号菜单中选择&#x200B;**日志**&#x200B;操作，然后选择哪个环境。
 
-![访问复制内容过程的日志](assets/copy-content-logs.png)
+![正在访问复制内容进程的日志](assets/copy-content-logs.png)
 
 日志将下载到您的本地计算机。 如果未开始下载，请检查弹出窗口阻止程序设置。
 

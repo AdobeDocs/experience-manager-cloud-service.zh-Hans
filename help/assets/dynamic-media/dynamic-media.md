@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 帮助按需提供丰富的视觉推销和营销资产，自动针对Web、移动和社交网站上的消费进行扩展。 Dynamic Media使用一组主要源资源，通过其可扩展、性能优化的全球网络实时生成并提供多种丰富内容变体。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可帮助按需提供丰富的视觉营销和营销资源，可自动扩展以用于Web、移动和社交网站上的使用。 Dynamic Media使用一组主要源资源，通过其可扩展、性能优化的全球网络实时生成并提供多种丰富内容变体。
 
 Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频。 Dynamic Media独特地整合了Adobe Experience Manager数字资产管理(Assets)解决方案的工作流，以简化和简化数字营销活动管理流程。
 
@@ -24,7 +24,7 @@ Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频�
 
 ## 使用Dynamic Media可以做什么 {#what-you-can-do-with-dynamic-media}
 
-通过Dynamic Media，您可以在发布资产之前管理资产。 中详细介绍了如何使用一般资产 [使用数字资产](/help/assets/manage-digital-assets.md). 一般主题包括上传、下载、编辑和发布资源；查看和编辑属性以及搜索资源。
+通过Dynamic Media，您可以在发布资产之前管理资产。 [使用数字Assets](/help/assets/manage-digital-assets.md)中详细介绍了如何使用常规资源。 一般主题包括上传、下载、编辑和发布资源；查看和编辑属性以及搜索资源。
 
 仅限Dynamic Media的功能包括：
 
@@ -37,11 +37,11 @@ Dynamic Media提供交互式查看体验，包括缩放、360°旋转和视频�
 
 * [旋转集](spin-sets.md)
 * [视频](video.md)
-* [交付Dynamic Media资源](delivering-dynamic-media-assets.md)
-* [管理资源](managing-assets.md)
+* [交付Dynamic Media Assets](delivering-dynamic-media-assets.md)
+* [管理Assets](managing-assets.md)
 * [使用快速视图创建自定义弹出窗口](custom-pop-ups.md)
 
-另请参阅 [设置Dynamic Media](administering-dynamic-media.md).
+另请参阅[设置Dynamic Media](administering-dynamic-media.md)。
 
 <!-- 
 
@@ -64,7 +64,7 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 ### 动态演绎版 {#dynamic-renditions}
 
-动态演绎版，例如图像和查看器预设(在 **[!UICONTROL 动态]**)在启用Dynamic Media时可用。
+启用Dynamic Media后，可以使用动态演绎版，例如图像和查看器预设（位于&#x200B;**[!UICONTROL Dynamic]**&#x200B;下）。
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -76,13 +76,13 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 ### PTIFF演绎版 {#ptiff-renditions}
 
-启用Dynamic Media的资源包括 `pyramid.tiffs`.
+已启用Dynamic Media的资源包括`pyramid.tiffs`。
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### 资源视图更改 {#asset-views-change}
 
-启用Dynamic Media后，您可以通过单击 `+` 和 `-` 按钮。 您还可以选择放大特定区域。 还原将您带入原始版本，您可以通过单击对角线箭头使图像变为全屏。 已启用Dynamic Media如下所示：
+启用Dynamic Media后，您可以通过单击`+`和`-`按钮进行放大和缩小。 您还可以选择放大特定区域。 还原将您带入原始版本，您可以通过单击对角线箭头使图像变为全屏。 已启用Dynamic Media如下所示：
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

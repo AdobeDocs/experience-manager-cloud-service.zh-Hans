@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 持久的GraphQL查询疑难解答 {#troubleshoot-persisted-graphql-queries}
 
-此 [操作中心](/help/operations/actions-center.md) 包括 **GraphQL持久查询错误** 警报。 这意味着当您的某个GraphQL持久查询引发错误时，系统会通知您。
+[操作中心](/help/operations/actions-center.md)包含&#x200B;**GraphQL持久查询错误**&#x200B;警报。 这意味着当您的某个GraphQL持久查询引发错误时，系统会通知您。
 
-为了帮助您排除和解决此类问题，本页涵盖 *最常见* 失败的原因以及如何修复它们的步骤。
+为了帮助您排除和解决此类问题，本页介绍了&#x200B;*最常见的*&#x200B;失败原因以及如何修复它们的步骤。
 
 ## 对内容片段模型的更改 {#changes-to-content-fragment-model}
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 发生此类错误的原因有很多。 示例包括（此列表并非详尽无遗），当创作内容片段模型时：
 
 * 删除或重新命名字段
-* 更新 **模型类型** 用于定义允许片段引用的模型
+* 更新定义允许片段引用的模型的&#x200B;**模型类型**
 * 取消发布由其他模型引用的模型
 
 要解决此类错误，您应：
@@ -34,24 +34,24 @@ ht-degree: 0%
 
 ## 未配置GraphQL端点 {#graphql-endpoint-not-configured}
 
-当持久查询返回 `404` 错误代码，以及信息 `No suitable endpoint found`，这意味着在AEM环境中未配置任何GraphQL端点。
+当持久查询返回`404`错误代码以及信息`No suitable endpoint found`时，这意味着在AEM环境中未配置任何GraphQL端点。
 
-要更正此问题，请按照启用和发布端点的步骤进行操作 [在AEM中管理GraphQL端点](/help/headless/graphql-api/graphql-endpoint.md).
+要更正此问题，请按照从[在AEM中管理GraphQL端点](/help/headless/graphql-api/graphql-endpoint.md)启用和发布端点的步骤进行操作。
 
 ## GraphQL持久查询URL中缺少路径 {#missing-path-query-url}
 
-如果持久查询返回 `400` 包含信息的错误代码 `Suffix: '/' does not contain a path`，则在调用GraphQL servlet时没有路径后缀。
+如果持久查询返回带有信息`Suffix: '/' does not contain a path`的`400`错误代码，则调用GraphQL servlet时没有路径后缀。
 
-模式应为 `/graphql/execute.json/thePath`.
+模式应为`/graphql/execute.json/thePath`。
 
 ## 由于IP允许列表而被阻止 {#blocked-due-to-ip-allow-list}
 
-在这种情况下，查询将返回 `405` 错误代码。
+在这种情况下，查询返回`405`错误代码。
 
-此类错误并非特定于GraphQL。 请参阅知识库文章 [不允许出现405错误](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
+此类错误并非特定于GraphQL。 请参阅知识库文章[405不允许错误](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824)。
 
 ## 被Dispatcher阻止 {#blocked-dispatcher}
 
-如果GraphQL端点返回 `404` 发布以下内容时出错： `POST` 请求，这意味着GraphQL查询在Dispatcher级别被阻止，并且端点需要手动启用。
+如果GraphQL端点在发布`POST`请求时返回`404`错误，这意味着在Dispatcher级别阻止GraphQL查询，并且需要手动启用端点。
 
-默认情况下不应出现这种情况，但自定义Dispatcher配置可能会导致此问题。 查看下的更多信息 [Dispatcher — 使用AEM Headless进行端点配置](/help/headless/deployment/dispatcher.md).
+默认情况下不应出现这种情况，但自定义Dispatcher配置可能会导致此问题。 在[Dispatcher — 使用AEM Headless的端点配置](/help/headless/deployment/dispatcher.md)下查看更多。

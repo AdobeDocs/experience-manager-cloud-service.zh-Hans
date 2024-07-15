@@ -46,7 +46,7 @@ Adobe Experience Manager提供了多个现成的同步配置。 在使用 Live C
 
 下表列出了随 AEM 一起提供的现成的转出配置。该表包含每个转出配置的触发器和同步操作。
 
-如果安装的转出配置操作不符合您的要求，您可以 [创建转出配置。](#creating-a-rollout-configuration)
+如果安装的转出配置操作不符合您的要求，您可以[创建转出配置。](#creating-a-rollout-configuration)
 
 | 名称 | 描述 | 触发器 | [同步操作](#synchronization-actions) |
 |---|---|---|---|
@@ -96,7 +96,7 @@ Adobe Experience Manager提供了多个现成的同步配置。 在使用 Live C
 
 您可以配置多个支持相应同步操作的 OSGi 服务，以便它们不会影响特定的节点类型和属性。例如，许多与 AEM 内部功能相关的属性和子节点不应包含在 Live Copy 中。只应复制与页面用户相关的内容。
 
-使用AEM时，可通过多种方法管理此类服务的配置设置。 请参阅 [配置OSGi](/help/implementing/deploying/configuring-osgi.md) 以了解更多详细信息和建议的做法。
+使用AEM时，可通过多种方法管理此类服务的配置设置。 有关更多详细信息和建议的做法，请参阅[配置OSGi](/help/implementing/deploying/configuring-osgi.md)。
 
 下表列出了可以为其指定要排除节点的同步操作。该表提供了要使用 Web 控制台进行配置的服务名称以及要使用存储库节点进行配置的 PID。
 
@@ -135,7 +135,7 @@ Adobe Experience Manager提供了多个现成的同步配置。 在使用 Live C
 
 您可以配置多个 OSGi 服务以支持与更新引用相关的对应同步操作。
 
-使用AEM时，可通过多种方法管理此类服务的配置设置。 请参阅 [配置OSGi](/help/implementing/deploying/configuring-osgi.md) 以了解更多详细信息和建议的做法。
+使用AEM时，可通过多种方法管理此类服务的配置设置。 有关更多详细信息和建议的做法，请参阅[配置OSGi](/help/implementing/deploying/configuring-osgi.md)。
 
 下表列出了可以为其指定引用更新的同步操作。该表提供了要使用 Web 控制台进行配置的服务名称以及要使用存储库节点进行配置的 PID。
 
@@ -175,7 +175,7 @@ MSM 允许您指定一般使用的转出配置集，并可在需要时覆盖特�
 
    ![从父页面的 Live Copy 继承](../assets/live-copy-inherit.png)
 
-1. 如有必要，请调整 **Live Copy继承** 标志。 如果选中，Live Copy 配置将在所有子项上都有效。
+1. 如有必要，请调整&#x200B;**Live Copy继承**&#x200B;标志。 如果选中，Live Copy 配置将在所有子项上都有效。
 
 1. 清除&#x200B;**继承父项的转出配置**&#x200B;属性，然后从列表中选择一个或多个转出配置。
 

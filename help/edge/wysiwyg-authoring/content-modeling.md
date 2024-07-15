@@ -18,7 +18,7 @@ ht-degree: 83%
 
 ## 先决条件 {#prerequisites}
 
-与Edge Delivery Services一起使用所见即所得创作项目的机制将继承任何其他Edge Delivery Services项目的大部分机制，这与内容源或无关。 [创作方法。](/help/edge/wysiwyg-authoring/authoring.md)
+使用WYSIWYG创作和Edge Delivery Services的项目将继承任何其他Edge Delivery Services项目的大部分机制，这与内容源或[创作方法无关。](/help/edge/wysiwyg-authoring/authoring.md)
 
 在开始为项目内容建模之前，请确保先阅读以下文档。
 
@@ -39,7 +39,7 @@ ht-degree: 83%
 * **图像**：来源、描述
 * **按钮**：文本、标题、URL、类型（默认、主要、辅助）
 
-这些元件的模型是 [使用Edge Delivery Services进行WYSIWYG创作的样板。](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+这些组件的模型是[用于WYSIWYG创作的Edge Delivery Services样板的一部分。](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## 区块 {#blocks}
 
@@ -345,7 +345,7 @@ ht-degree: 83%
 * **图像** - 如果对 AEM 中资源的引用是 MIME 类型的以 `image/` 开头的资源，则该引用将呈现为 `<picture><img src="${reference}"></picture>`。
 * **链接** - 如果引用在 AEM 中存在且不是图像，或者值以 `https?://` 或 `#` 开头，则引用将呈现为 `<a href="${reference}">${reference}</a>`。
 * **富文本** - 如果修剪后的值以段落（`p`、`ul`、`ol`、`h1`-`h6` 等）开头，该值将呈现为富文本。
-* **类名** - `classes` 属性被视为 [块选项](/help/edge/developer/markup-sections-blocks.md#block-options) 并在表标题中呈现 [简单块，](#simple) 或作为中项目的值列表 [容器块。](#container) 如果您希望，此功能非常有用 [用不同的方式设计区块，](/help/edge/wysiwyg-authoring/create-block.md#block-options) 但无需创建全新的块。
+* **类名** - `classes`属性被视为[块选项](/help/edge/developer/markup-sections-blocks.md#block-options)，并在[简单块](#simple)的表标头中呈现，或作为[容器块中项目的值列表呈现。](#container)如果您希望[以不同方式设置块的样式，](/help/edge/wysiwyg-authoring/create-block.md#block-options)，但不需要创建全新的块，则此功能非常有用。
 * **值列表** - 如果一个值是多值属性，并且第一个值不是前一个值，则所有值都以逗号分隔的列表形式连接起来。
 
 所有其他内容都将呈现为纯文本。
@@ -652,11 +652,11 @@ AEM 中提供的许多默认页面属性都映射到文档中相应的页面元�
 
 现在您知道了如何对内容进行建模了，可以使用所见即所得创作项目为自己的Edge Delivery Services创建块。
 
-查看文档 [创建指令用于通用编辑器的块](/help/edge/wysiwyg-authoring/create-block.md) 了解如何在WYSIWYG创作和Edge Delivery Services项目中创建指令用于通用编辑器的块。
+请参阅文档[创建检测用于通用编辑器的块](/help/edge/wysiwyg-authoring/create-block.md)，了解如何创建检测用于通用编辑器的块(通过Edge Delivery Services项目进行所见即所得创作)。
 
-如果您已经熟悉如何创建块，请参阅文档 [用于Edge Delivery Services的WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 以启动并运行一个新的Adobe Experience Manager站点，该站点使用Edge Delivery Services和通用编辑器进行内容创作。
+如果您已熟悉创建块，请参阅文档[用于Edge Delivery ServicesWYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，以使用Edge Delivery Services和通用编辑器进行内容创作，启动并运行新的Adobe Experience Manager站点。
 
 >[!TIP]
 >
->有关创建已启用WYSIWYG创作且将AEMas a Cloud Service作为内容源的新Edge Delivery Services项目的端到端演练，请查看 [本AEM GEM网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>有关创建启用WYSIWYG创作且将AEM as a Cloud Service作为内容源的新Edge Delivery Services项目的端到端演练，请查看[此AEM GEM网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 

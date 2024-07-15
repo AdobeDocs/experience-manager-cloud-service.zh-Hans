@@ -11,47 +11,47 @@ ht-degree: 1%
 
 ---
 
-# 配置 [!DNL Azure] 存储 {#configure-azure-storage}
+# 配置[!DNL Azure]存储 {#configure-azure-storage}
 
 
 ![数据集成](assets/data-integeration.png)
 
-[[!DNL Experience Manager Forms] 数据集成](data-integration.md) 提供 [!DNL Azure] 用于集成表单的存储配置 [!DNL Azure] 存储服务。 表单数据模型(FDM)可用于创建与之交互的自适应Forms [!DNL Azure] 服务器启用业务工作流。 例如：
+[[!DNL Experience Manager Forms] 数据集成](data-integration.md)提供[!DNL Azure]存储配置以将表单与[!DNL Azure]存储服务集成。 表单数据模型(FDM)可用于创建与[!DNL Azure]服务器交互以启用业务工作流的自适应Forms。 例如：
 
-* 将数据写入 [!DNL Azure] 在提交自适应表单时。
-* 将数据写入 [!DNL Azure] 通过表单数据模型(FDM)中定义的自定义实体，反之亦然。
-* 查询 [!DNL Azure] 数据服务器并预填充Adaptive Forms。
-* 从读取数据 [!DNL Azure] 服务器。
+* 在提交自适应表单时将数据写入[!DNL Azure]。
+* 通过表单数据模型(FDM)中定义的自定义实体在[!DNL Azure]中写入数据，反之亦然。
+* 查询[!DNL Azure]服务器以获取数据并预填充Adaptive Forms。
+* 从[!DNL Azure]服务器读取数据。
 
-## 创建 [!DNL Azure] 存储配置 {#create-azure-storage-configuration}
+## 创建[!DNL Azure]存储配置 {#create-azure-storage-configuration}
 
-在执行这些步骤之前，请确保您已 [!DNL Azure] 存储帐户和一个访问密钥，用于授权访问 [!DNL Azure] 存储帐户。
+在执行这些步骤之前，请确保您拥有[!DNL Azure]存储帐户和访问密钥，以授权对[!DNL Azure]存储帐户的访问。
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**.
-1. 选择一个文件夹以创建配置，然后选择 **[!UICONTROL 创建]**.
-1. 在中指定配置的标题 **[!UICONTROL 标题]** 字段。
-1. 指定 [!DNL Azure] 中的存储帐户 **[!UICONTROL Azure存储帐户]** 字段。
-1. 指定用于访问Azure存储帐户的密钥 **[!UICONTROL Azure访问密钥]** 字段并选择 **[!UICONTROL 保存]**.
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**。
+1. 选择要创建配置的文件夹，然后选择&#x200B;**[!UICONTROL 创建]**。
+1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中指定配置的标题。
+1. 在&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;字段中指定[!DNL Azure]存储帐户的名称。
+1. 在&#x200B;**[!UICONTROL Azure访问密钥]**&#x200B;字段中指定用于访问Azure存储帐户的密钥，然后选择&#x200B;**[!UICONTROL 保存]**。
 
 ## 创建表单数据模型 {#create-azure-form-data-model}
 
-创建 [!DNL Azure] 存储配置，您可以 [创建表单数据模型](create-form-data-models.md). 指定包含 [!DNL Azure] 中的配置 **[!UICONTROL 数据源配置]** 创建表单数据模型(FDM)时的字段。 然后，您可以从指定文件夹名称中存在的配置列表中选择配置。
+创建[!DNL Azure]存储配置后，您可以[创建表单数据模型](create-form-data-models.md)。 创建表单数据模型(FDM)时，在&#x200B;**[!UICONTROL 数据Source配置]**&#x200B;字段中指定包含[!DNL Azure]配置的文件夹。 然后，您可以从指定文件夹名称中存在的配置列表中选择配置。
 
-### 添加 [!DNL Azure] 表单数据模型的服务 {#add-azure-services}
+### 将[!DNL Azure]服务添加到表单数据模型 {#add-azure-services}
 
-创建表单数据模型(FDM)和数据模型对象后，您可以添加 [!DNL Azure] 表单数据模型(FDM)的服务。
+创建表单数据模型(FDM)和数据模型对象后，您可以将[!DNL Azure]服务添加到表单数据模型(FDM)。
 
-添加 [!DNL Azure] 服务：
+要添加[!DNL Azure]服务：
 
-1. 在“编辑”模式下，从 **[!UICONTROL 服务]** 部分，然后选择 **[!UICONTROL 添加选定项]**. 所选服务将显示在 **[!UICONTROL 服务]** 表单数据模型(FDM)的选项卡。
+1. 在编辑模式下，从左窗格的&#x200B;**[!UICONTROL 服务]**&#x200B;部分中选择服务，然后选择&#x200B;**[!UICONTROL 添加选定项]**。 所选服务显示在表单数据模型(FDM)的&#x200B;**[!UICONTROL 服务]**&#x200B;选项卡中。
 
-   ![添加所选服务](assets/select-services.png)
+   ![添加选定的服务](assets/select-services.png)
 
-1. 在 **[!UICONTROL 服务]** 选项卡，选择服务并 **[!UICONTROL 编辑属性]**. 根据服务，定义服务的输入或输出模型对象。
+1. 在&#x200B;**[!UICONTROL 服务]**&#x200B;选项卡中，选择该服务并&#x200B;**[!UICONTROL 编辑属性]**。 根据服务，定义服务的输入或输出模型对象。
 
-1. 选择 **[!UICONTROL 保存]** 以保存表单数据模型(FDM)。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型(FDM)。
 
-   下表描述了可用的 [!DNL Azure] 服务：
+   下表描述了可用的[!DNL Azure]服务：
 
    <table>
     <tbody>
@@ -94,9 +94,9 @@ ht-degree: 1%
 
 要将数据模型对象属性定义为搜索键，请执行以下操作：
 
-1. 在 **[!UICONTROL 模型]** 选项卡，选择数据模型对象属性，然后选择 **[!UICONTROL 编辑属性]**.
-1. 切换 **[!UICONTROL 搜索键]** 将选项切换到“开”状态。 此选项仅适用于主要数据类型。
-1. 选择 **[!UICONTROL 完成]** 然后选择 **[!UICONTROL 保存]** 以保存表单数据模型(FDM)。
+1. 在&#x200B;**[!UICONTROL 模型]**&#x200B;选项卡中，选择数据模型对象属性，然后选择&#x200B;**[!UICONTROL 编辑属性]**。
+1. 将&#x200B;**[!UICONTROL 搜索键]**&#x200B;切换选项切换到“开启”状态。 此选项仅适用于主要数据类型。
+1. 选择&#x200B;**[!UICONTROL 完成]**，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型(FDM)。
 
 将数据模型对象属性定义为搜索键后，哈希值存储在Azure索引标记中，Base64编码值存储在Azure元数据中。
 

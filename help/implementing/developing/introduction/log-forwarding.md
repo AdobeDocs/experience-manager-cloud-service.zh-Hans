@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此功能尚未发布，并且在发布时，某些日志记录目标可能不可用。 同时，您可以打开支持工单以将日志转发到 **Splunk**，如中所述 [日志文章](/help/implementing/developing/introduction/logging.md).
+>此功能尚未发布，并且在发布时，某些日志记录目标可能不可用。 同时，您可以打开支持票证以将日志转发到&#x200B;**Splunk**，如[日志记录文章](/help/implementing/developing/introduction/logging.md)中所述。
 
 拥有日志记录供应商许可证或托管日志记录产品的客户可以将AEM日志(包括Apache/Dispatcher)和CDN日志转发到关联的日志记录目标。 AEM as a Cloud Service支持以下日志记录目标：
 
@@ -51,7 +51,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
         logForwarding.yaml
    ```
 
-1. `logForwarding.yaml` 应包含类似于以下格式的元数据和配置（我们使用Splunk作为示例）。
+1. `logForwarding.yaml`应包含元数据和类似于以下格式的配置（我们使用Splunk作为示例）。
 
    ```
    kind: "LogForwarding"
@@ -67,11 +67,11 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
          index: "AEMaaCS"
    ```
 
-   此 **种类** 参数应设置为 `LogForwarding` 版本应设置为架构版本，即1。
+   **kind**&#x200B;参数应设置为`LogForwarding`，版本应设置为架构版本，即1。
 
-   配置中的令牌(如 `${{SPLUNK_TOKEN}}`)表示不应存储在Git中的密钥。 请声明它们为Cloud Manager  [环境变量](/help/implementing/cloud-manager/environment-variables.md) 类型 **密码**. 确保选择 **全部** 作为“已应用服务”字段的下拉值，因此可以将日志转发到创作层、发布层和预览层。
+   配置中的令牌（如`${{SPLUNK_TOKEN}}`）表示不应存储在Git中的密钥。 请声明它们为&#x200B;**密钥**&#x200B;类型的Cloud Manager [环境变量](/help/implementing/cloud-manager/environment-variables.md)。 确保选择&#x200B;**全部**&#x200B;作为“已应用服务”字段的下拉列表值，以便可以将日志转发到作者、发布和预览层。
 
-   通过添加其他值，可以在CDN日志和AEM日志(包括Apache/Dispatcher)之间设置不同的值 **cdn** 和/或 **aem** 之后阻止 **默认** 块，其中属性可以覆盖中定义的属性。 **默认** 块；仅需要已启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
+   通过在&#x200B;**default**&#x200B;块后添加额外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;块，可以设置CDN日志和AEM日志(包括Apache/Dispatcher)之间的不同值，其中的属性可以覆盖&#x200B;**default**&#x200B;块中定义的属性；只需要启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
 
    ```
       kind: "LogForwarding"
@@ -148,7 +148,7 @@ SAS令牌应该用于身份验证。 它应该从共享访问签名页面而不�
 
 #### Azure Blob存储CDN日志 {#azureblob-cdn}
 
-每个全局分布式日志服务器每隔几秒钟将生成一个新文件，该文件位于 `aemcdn` 文件夹。 创建后，该文件将不再附加到。 文件名格式为YYYY-MM-DDThh:mm:ss.sss-uniqueid.log. 例如，2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+每个全局分布式日志服务器每隔几秒会在`aemcdn`文件夹下生成一个新文件。 创建后，该文件将不再附加到。 文件名格式为YYYY-MM-DDThh:mm:ss.sss-uniqueid.log。 例如，2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log。
 
 例如，在某个时间点：
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-每个文件都包含多个json日志条目，每个条目位于一行中。 日志条目格式在 [日志文章](/help/implementing/developing/introduction/logging.md)，并且每个日志条目还包含 [日志条目格式](#log-format) 部分。
+每个文件都包含多个json日志条目，每个条目位于一行中。 日志条目格式在[日志记录文章](/help/implementing/developing/introduction/logging.md)中进行了说明，每个日志条目还包括以下[日志条目格式](#log-format)部分中提到的其他属性。
 
 #### Azure Blob Storage AEM日志 {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM日志(包括Apache/Dispatcher)显示在具有以下命名约定的文件夹�
 
 在每个文件夹下，将创建一个文件并将其附加到。 客户负责处理和管理此文件，以免它变得太大。
 
-请参阅中的日志条目格式 [日志文章](/help/implementing/developing/introduction/logging.md). 日志条目还将包括 [日志条目格式](#log-formats) 部分。
+请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md)中的日志条目格式。 日志条目还将包括以下[日志条目格式](#log-formats)部分中提到的其他属性。
 
 
 ### Datadog {#datadog}
@@ -234,7 +234,7 @@ data:
 
 ![弹性部署凭据](/help/implementing/developing/introduction/assets/ec-creds.png)
 
-* optional pipeline属性应设置为Elasticsearch或OpenSearch引入管道的名称，可以将其配置为将日志条目路由到相应的索引。 管道的处理器类型必须设置为 *脚本* 并且脚本语言应设置为 *无痛*. 以下是将日志条目路由到索引（如aemaccess_dev_26_06_2024）的脚本片段示例：
+* optional pipeline属性应设置为Elasticsearch或OpenSearch引入管道的名称，可以将其配置为将日志条目路由到相应的索引。 管道的处理器类型必须设置为&#x200B;*script*，脚本语言应设置为&#x200B;*无痛苦*。 以下是将日志条目路由到索引（如aemaccess_dev_26_06_2024）的脚本片段示例：
 
 ```
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
@@ -260,20 +260,20 @@ data:
 
 #### HTTPS CDN日志 {#https-cdn}
 
-Web请求(POST)将使用json有效负载连续发送，该有效负载是一个日志条目数组，日志条目格式请参见 [日志文章](/help/implementing/developing/introduction/logging.md#cdn-log). 有关其他属性，请参见 [日志条目格式](#log-formats) 部分。
+Web请求(POST)将使用json有效负载连续发送，该有效负载是日志条目的数组，日志条目格式在[日志记录文章](/help/implementing/developing/introduction/logging.md#cdn-log)中描述。 下面的[日志条目格式](#log-formats)部分中提及了其他属性。
 
-还有一个名为的属性 `sourcetype`，该值将设置为 `aemcdn`.
+还有一个名为`sourcetype`的属性，该属性设置为值`aemcdn`。
 
 >[!NOTE]
 >
-> 在发送第一个CDN日志条目之前，您的HTTP服务器必须成功完成一次性质询：发送到路径的请求 ``wellknownpath`` 必须响应为 ``*``.
+> 在发送第一个CDN日志条目之前，您的HTTP服务器必须成功完成一次性质询：发送到路径``wellknownpath``的请求必须以``*``响应。
 
 
 #### HTTPS AEM日志 {#https-aem}
 
-对于AEM日志（包括apache/dispacher），将连续发送Web请求(POST)，其中json有效负载是日志条目的数组，具有各种日志条目格式，如 [日志文章](/help/implementing/developing/introduction/logging.md). 有关其他属性，请参见 [日志条目格式](#log-format) 部分。
+对于AEM日志（包括apache/dispacher），将连续发送Web请求(POST)，JSON有效负载为日志条目数组，具有[日志记录文章](/help/implementing/developing/introduction/logging.md)中描述的各种日志条目格式。 下面的[日志条目格式](#log-format)部分中提及了其他属性。
 
-还有一个名为的属性 `sourcetype`，则设置为以下值之一：
+还有一个名为`sourcetype`的属性，该属性设置为以下值之一：
 
 * aemaccess
 * aemerror
@@ -318,7 +318,7 @@ data:
 
 ## 日志条目格式 {#log-formats}
 
-查看常规 [日志文章](/help/implementing/developing/introduction/logging.md) (CDN日志和包括Apache/Dispatcher的AEM日志)的日志类型。
+有关每种日志类型(CDN日志和包括Apache/Dispatcher的AEM日志)的格式，请参阅常规的[日志记录文章](/help/implementing/developing/introduction/logging.md)。
 
 由于来自多个程序和环境的日志可能会转发到同一日志记录目标，因此除了日志记录文章中所述的输出之外，每个日志条目中还将包含以下属性：
 
@@ -345,9 +345,9 @@ aem_tier: author
 
 某些组织选择限制日志记录目标可以接收的流量。
 
-对于CDN日志，您可以将IP地址添加到允许列表，如中所述 [本文](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). 如果共享IP地址列表过大，请考虑将流量发送到(非Adobe)Azure Blob存储区，在其中可以写入逻辑以将专用IP的日志发送到其最终目标。
+对于CDN日志，您可以将IP地址添加到允许列表，如[本文](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到(非Adobe)Azure Blob存储区，在其中可以写入逻辑以将专用IP的日志发送到其最终目标。
 
-对于AEM日志(包括Apache/Dispatcher)，您可以配置日志转发以通过 [高级联网](/help/security/configuring-advanced-networking.md). 请参阅以下三种高级联网类型的模式，它们使用可选 `port` 参数，以及 `host` 参数。
+对于AEM日志(包括Apache/Dispatcher)，您可以配置日志转发以通过[高级联网](/help/security/configuring-advanced-networking.md)。 查看以下三种高级联网类型的模式，它们使用可选的`port`参数以及`host`参数。
 
 ### 灵活端口出口 {#flex-port}
 

@@ -1,6 +1,6 @@
 ---
 title: 自适应Forms的AEM Formsas a Cloud Service架构和通信API
-description: 了解的架构 [!DNL AEM Forms] as a Cloud Service了解平台的可扩展性、可复原性和性能。
+description: 了解 [!DNL AEM Forms] as a Cloud Service的架构，了解平台的可扩展性、可复原性和性能方面。
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
@@ -18,7 +18,7 @@ ht-degree: 2%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html) |
 | AEM as a Cloud Service | 本文 |
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Service是一种云原生解决方案，适用于创建、管理、发布和更新复杂的数字表单和通信，同时将提交的数据与后端流程、业务规则集成，并将数据保存在外部数据存储中。 扩展了 [!DNL Adobe Experience Manager as a Cloud Service]. 要了解有关扩展、部署、环境和其他基础架构的更多信息，请参阅 [的架构简介 [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html).
+[!DNL Adobe Experience Manager Forms] as a Cloud Service是一种云原生解决方案，适用于创建、管理、发布和更新复杂的数字表单和通信，同时将提交的数据与后端流程、业务规则集成，并将数据保存在外部数据存储中。 它扩展[!DNL Adobe Experience Manager as a Cloud Service]。 要了解有关扩展、部署、环境和其他基础架构的更多信息，请参阅[ [!DNL Adobe Experience Manager as a Cloud Service]的架构简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html)。
 
 AEM Formsas a Cloud Service支持两个主要用例：数字注册和客户通信。 下图描述了这两个用例的架构。
 
@@ -28,15 +28,15 @@ AEM Formsas a Cloud Service支持两个主要用例：数字注册和客户通�
 
 ## Forms通信
 
-![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)
+![Forms通信](assets/forms-cloud-service-architecture-forms-communications.svg)
 
 ## 组件
 
-Formsas a Cloud Service包括多个组件：
+Formsas a Cloud Service包含多个组件：
 
 ### CDN（内容分发网络）
 
-每个AEM Formsas a Cloud Service程序都可以访问 [内置CDN服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html). 它包含在Forms as aCloud Service的许可证中。
+每个AEM Formsas a Cloud Service程序都可以访问[内置CDN服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)。 它包含在Forms as aCloud Service的许可证中。
 
 ### 创作
 
@@ -52,7 +52,7 @@ Author是在标准创作运行模式下运行的AEM Formsas a Cloud Service实�
 
 ### 发布
 
-发布实例是在标准发布运行模式下运行的AEM Formsas a Cloud Service。 发布实例面向基于表单的应用程序的最终用户，例如访问公共网站和提交表单的用户。 它支持以下功能：
+Publish实例是在标准AEM Forms运行模式下运行的Publishas a Cloud Service。 Publish实例面向基于表单的应用程序的最终用户，例如访问公共网站和提交表单的用户。 它支持以下功能：
 
 * 呈现和提交表单供最终用户使用。
 * 传输原始提交的表单数据，以供在最终记录系统中进一步处理和存储。
@@ -61,17 +61,17 @@ Author是在标准创作运行模式下运行的AEM Formsas a Cloud Service实�
 * 同步API ，以创建、组合和提供面向品牌的个性化通信。
 * 同步API以组合、重新排列和验证PDF文档。
 
-反向复制在AEMas a Cloud Service上不可用，因此无法将Publish服务的内容/数据发送到Author服务。 但是，您可以配置在Publish上运行的自适应Forms，以将数据提交到Author上的Workflow （Workflow只能在Author上运行）。 这在批准用例中很有用。
+反向复制在AEM as a Cloud Service上不可用，因此无法将Publish服务中的内容/数据发送到创作服务。 但是，您可以配置在Publish上运行的自适应Forms，以便将数据提交到作者所在的工作流（工作流只能对作者运行）。 这在批准用例中很有用。
 
 #### Dispatcher
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) 是Adobe Experience Manager的缓存和/或负载平衡工具，可与企业级Web服务器一起使用。
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html)是Adobe Experience Manager的缓存和/或负载平衡工具，可与企业级Web服务器一起使用。
 
 ### Adobe服务
 
-**automated forms conversion服务**
+**Automated forms conversion服务**
 
-[automated forms conversion服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) 自动将您的PDF和XFA表单转换为设备友好、响应迅速且基于HTML5的自适应表单。
+[Automated forms conversion服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)自动将您的PDF和XFA表单转换为设备友好、响应迅速且基于HTML5的自适应表单。
 
 **Adobe Sign**
 
@@ -82,32 +82,33 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 ### 客户管理的存储
 
-Formsas a Cloud Service提供在外部存储系统（如Blob存储、数据库或存储服务）中存储内容的选项。 您还可以将包含敏感个人数据(SPD)元素的进程内工作流数据(AEM工作流变量数据)存储在客户管理的存储库中以便安全处理。 Adobe建议仅在客户管理的存储中存储敏感数据。
+Formsas a Cloud Service提供了在外部存储系统（如Blob存储、数据库或存储服务）中存储内容的选项。 您还可以将包含敏感个人数据(SPD)元素的进程内工作流数据(AEM工作流变量数据)存储在客户管理的存储库中以便安全处理。 Adobe建议仅在客户管理的存储中存储敏感数据。
 
-您可以使用 **统一存储连接器** 连接到Blob存储和 **表单数据模型(FDM)** 连接到数据库或后端服务（RESTful、SOAP、Azure Blob Storage等）。
+您可以使用&#x200B;**统一存储连接器**&#x200B;连接到Blob存储，使用&#x200B;**表单数据模型(FDM)**&#x200B;连接到数据库或后端服务(RESTful、SOAP、Azure Blob Storage等)。
 
 ### 文档服务
 
 文档服务由以下部分组成：
 
-* **输出服务（通信 — 文档生成API）** 帮助创建品牌批准、个性化和标准化的文档，如业务往来函、报表、索赔处理函、福利通知、每月账单或欢迎资料包。
+* **输出服务（通信 — 文档生成API）**&#x200B;帮助创建品牌批准、个性化的标准化文档，如业务往来函、报表、索赔处理函、福利通知、每月账单或欢迎套件。
 
-* **Assembler服务（通信 — 文档操作API）** 帮助组合、重新排列和验证PDF文档。
+* **汇编程序服务（通信 — Document Manipulation API）**&#x200B;帮助合并、重新排列和验证PDF文档。
 
-* **记录文档(DoR)服务** 帮助生成记录文档(DoR)。 该服务在其自己的pod中运行，独立于Forms的Author和Publish实例as a Cloud Service。 它有助于提供更好的性能，并根据负载独立扩展Pod。
+* **记录文档(DoR)服务**&#x200B;帮助生成记录文档(DoR)。 该服务在独立于Formsas a Cloud Service的Author实例和Publish实例的Pod中运行。 它有助于提供更好的性能，并根据负载独立扩展Pod。
 
 ### Cloud Manager
 
-Cloud Manager是重要的组件， [AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html). 它是我们客户运营和开发人员角色的单一入口点。 这是可以管理AEM程序和环境的位置。 Cloud Manager已经演变成为自助服务门户，在其中可以创建和配置AEMas a Cloud Service的主要组件：
+Cloud Manager是[AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html)的必要组件。 它是我们客户运营和开发人员角色的单一入口点。 这是可以管理AEM程序和环境的位置。 Cloud Manager已经演变成为自助服务门户，在其中可以创建和配置AEM as a Cloud Service的主要组件：
 
 * 创建和管理项目
 * 在程序中创建和管理AEM环境
 * 创建和管理用于将客户代码和配置部署到特定环境的管道
-* 获取有关这些组件的重要生命周期事件（例如产品更新）的通知。有关Cloud Manager的更多信息，请参阅 [了解AdobeCloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html) 和 [Cloud Manager简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans).
+* 获取有关这些组件的重要生命周期事件（例如，产品更新）的通知
+有关Cloud Manager的更多信息，请参阅[了解AdobeCloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/cloud-manager/understand-cloud-manager-for-aem.html)和[Cloud Manager简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans)。
 
 ### 开发人员控制台
 
-开发人员控制台提供每个运行的Forms as a Cloud Service环境的各种详细信息。 这些详细信息有助于调试环境。 有关详细信息，请参阅 [使用开发人员控制台调试AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
+Developer Console提供了有关每个运行的Forms as a Cloud Service环境的各种详细信息。 这些详细信息有助于调试环境。 有关详细信息，请参阅[使用Developer Console调试AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)。
 
 <!--
 
@@ -190,15 +191,15 @@ Set up your development environment, [Configure your CI/CD Pipeline](https://exp
 
 ### 自适应表单创作 {#local-development}
 
-当您设置和配置 [!DNL AEM Forms] as a Cloud Service于环境，您可以设置开发、暂存和生产环境。 此外，为快速迭代和开发设置和配置本地开发环境。 您可以下载并设置AEM SDK，以及 [!DNL AEM Forms] 用于设置本地的附加功能存档 [!DNL Forms] as a Cloud Service开发环境。  有关详细说明，请参阅 [设置本地开发环境](setup-local-development-environment.md).
+当您设置和配置[!DNL AEM Forms]as a Cloud Service环境时，可以设置开发、暂存和生产环境。 此外，为快速迭代和开发设置和配置本地开发环境。 您可以下载并设置AEM SDK和[!DNL AEM Forms]附加功能存档以设置本地[!DNL Forms]as a Cloud Service开发环境。  有关详细说明，请参阅[设置本地开发环境](setup-local-development-environment.md)。
 
 ## 调试 {#debugging}
 
-AEMas a Cloud Service在自助式、可扩展的云基础架构上运行。 它要求AEM开发人员了解并调试AEMas a Cloud Service的各个方面，从构建和部署，到获取运行AEM应用程序的详细信息。 有关详细信息，请参阅 [调试AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html).
+AEM as a Cloud Service在自助式、可扩展的云基础架构上运行。 它要求AEM开发人员了解和调试AEM as a Cloud Service的各方面内容，从构建和部署到获取运行AEM应用程序的详细信息。 有关详细信息，请参阅[调试AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html)。
 
 
 >[!MORELIKETHIS]
 >
 >* [AEM Formsas a Cloud Service通信简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [AEM Formsas a Cloud Service通信批量处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [AEM Formsas a Cloud Service通信批次处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 >* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)

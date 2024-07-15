@@ -20,7 +20,7 @@ ht-degree: 29%
 为了帮助您快速掌握：
 
 * [什么是Headless？](/help/headless/what-is-headless.md)
-* AEM中各种环境的概述 [架构](/help/headless/deployment/architecture.md)
+* AEM [架构](/help/headless/deployment/architecture.md)中各种环境的概述
 
 ## 设置 {#setup}
 
@@ -51,7 +51,7 @@ ht-degree: 29%
 ### AEM Dispatcher缓存 {#dispatcher-caching}
 
 >[!NOTE]
->如果启用了Dispatcher中的缓存，则 [CORS设置](#cors-setup) 不需要使用，因此可以忽略。
+>如果启用了Dispatcher中的缓存，则不需要使用[CORS设置](#cors-setup)，因此可以忽略。
 
 默认情况下，Dispatcher 中未启用持久化查询的缓存。无法实施默认启用，因为对多个源使用 CORS（跨源资源共享）的客户需要检查并（可能需要）更新其 Dispatcher 配置。
 
@@ -68,9 +68,9 @@ Dispatcher通常配置为执行以下操作：
 ### CORS设置 {#cors-setup}
 
 >[!NOTE]
->如果缓存 [AEM调度程序](#dispatcher-caching) 启用，则无需进行CORS设置，因此可以忽略此部分。
+>如果启用了[AEM Dispatcher](#dispatcher-caching)中的缓存，则不需要CORS设置，因此可以忽略此部分。
 
-要访问GraphQL端点，必须配置CORS策略并添加到通过AEM Manager部署到AEM的Cloud项目。 此操作可通过为所需端点添加相应的OSGi CORS配置文件来完成。
+要访问GraphQL端点，必须配置CORS策略并添加到通过Cloud Manager部署到AEM的AEM项目。 此操作可通过为所需端点添加相应的OSGi CORS配置文件来完成。
 
 #### 详细信息 {#details-cors-setup}
 
@@ -127,7 +127,7 @@ CORS通常配置为用于：
 
 ### 使用内容交付网络(CDN) {#cdn}
 
-如果定位为，则可以缓存GraphQL查询及其JSON响应。 `GET` 使用CDN时的请求。 相比之下，未缓存的请求可能非常（资源）昂贵且处理缓慢，有可能对源头资源造成进一步的有害影响。
+使用CDN时，如果定位为`GET`请求，则可以缓存GraphQL查询及其JSON响应。 相比之下，未缓存的请求可能非常（资源）昂贵且处理缓慢，有可能对源头资源造成进一步的有害影响。
 
 #### 详细信息 {#details-cdn}
 
@@ -147,7 +147,7 @@ AEM GraphQL用于从您的内容片段中检索信息。 需要配置这些内�
 
 * [创建配置](/help/headless/setup/create-configuration.md)
 * [创建内容片段模型](/help/headless/setup/create-content-model.md)
-* [创建资源文件夹](/help/headless/setup/create-assets-folder.md)
+* [创建Assets文件夹](/help/headless/setup/create-assets-folder.md)
 * [创建和编辑您的内容片段](/help/headless/setup/create-content-fragment.md)
 
 #### 环境 {#eenvironments-content-fragments}
@@ -176,7 +176,7 @@ AEM GraphQL用于从您的内容片段中检索信息。 需要配置这些内�
 
 >[!NOTE]
 >
->优化指南涵盖缓存配置，已包含在 [设置](#setup).
+>优化准则涵盖已在[设置](#setup)中涵盖的缓存配置。
 
 ### 从您的应用程序访问GraphQL {#access-graphql-from-your-apps}
 
@@ -186,7 +186,7 @@ AEM Headless CMS使开发人员能够自由地使用他们已熟悉的语言、�
 
 * [安装并使用AEM SDK进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)
 * [AEM Headless开发人员资源](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* 示例，包括 [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html)， [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html)， [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html)，等等
+* 示例，包括[React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html)、[Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html)、[Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html)等
 
 #### 环境 {#environments-your-apps}
 

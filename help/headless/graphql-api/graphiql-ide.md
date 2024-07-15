@@ -83,7 +83,7 @@ ht-degree: 94%
 
 在两种情况下，编辑器面板中显示的查询都是在以下情况下运行的查询：
 
-* 选择 **执行查询** 图标
+* 选择&#x200B;**执行查询**&#x200B;图标
 * 使用键盘组合`Control-Enter`
 
 ## 查询变量 {#query-variables}
@@ -100,13 +100,13 @@ GraphiQL IDE 还让您管理[查询变量](/help/headless/graphql-api/content-fr
 
 >[!NOTE]
 >
->请参阅 [正在缓存您的持久查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>请参阅[正在缓存您的持久查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)。
 
 >[!NOTE]
 >
 >Dispatcher 上的自定义重写规则可能会覆盖来自 AEM 发布的默认值。
 >
->如果您根据位置匹配模式从Dispatcher发送基于TTL的缓存控制标头，则可能需要排除 `/graphql/execute.json/*` 从匹配项中。
+>如果您根据位置匹配模式从Dispatcher发送基于TTL的缓存控制标头，则如有必要，您可能希望从匹配项中排除`/graphql/execute.json/*`。
 
 使用 GraphQL，您可以配置 HTTP 缓存标头，以控制单个持久查询的这些参数。
 
@@ -114,7 +114,7 @@ GraphiQL IDE 还让您管理[查询变量](/help/headless/graphql-api/content-fr
 
    ![持久查询 HTTP 缓存标头](assets/cfm-graphqlapi-headers-01.png "持久查询 HTTP 缓存标头")
 
-1. 选择此项将打开 **缓存配置** 对话框：
+1. 选择此选项将打开&#x200B;**缓存配置**&#x200B;对话框：
 
    ![持久查询 HTTP 缓存标头设置](assets/cfm-graphqlapi-headers-02.png "持久查询 HTTP 缓存标头设置")
 

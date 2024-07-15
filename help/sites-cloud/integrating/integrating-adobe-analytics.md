@@ -50,13 +50,13 @@ ht-degree: 87%
 
 通过Analytics Standard API将Adobe Experience Manager as a Cloud Service (AEMaaCS)与Adobe Analytics集成需要配置Adobe IMS (Identity Management System)。
 
-请参阅 [为AEMas a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 了解如何创建IMS配置。
+请参阅[为AEM as a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)，了解如何创建IMS配置。
 
 >[!NOTE]
 >
->[IMS集成现在已使用S2S OAuth进行配置](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[IMS集成现在配置有S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)。
 >
->以前的配置使用的是 [现在可在Adobe Developer控制台中弃用的JWT凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>以前使用[JWT凭据进行配置，这些凭据现在在Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)中被弃用。
 
 ### 将配置添加到站点 {#add-configuration}
 

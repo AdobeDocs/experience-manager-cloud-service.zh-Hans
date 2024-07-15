@@ -1,5 +1,5 @@
 ---
-title: Markdown（资产 — 内容片段）
+title: Markdown (Assets — 内容片段)
 description: 了解内容片段编辑器如何使用Markdown语法，轻松地创建Headless内容。
 feature: Content Fragments
 role: User
@@ -14,13 +14,13 @@ ht-degree: 80%
 
 # Markdown {#markdown}
 
-当您 [创作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，内容片段编辑器使用 *Markdown* 语法，可让您轻松编写用于headless投放或页面创作的内容：
+当您[创作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)时，内容片段编辑器使用&#x200B;*Markdown*&#x200B;语法，可让您轻松编写用于Headless投放或页面创作的内容：
 
 >[!NOTE]
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
 ![Markdown 编辑器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

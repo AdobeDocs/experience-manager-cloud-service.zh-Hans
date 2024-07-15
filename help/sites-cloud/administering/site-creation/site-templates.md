@@ -46,7 +46,7 @@ ht-degree: 94%
 
    ![站点创建向导](../assets/site-creation-wizard.png)
 
-1. 在文件浏览器中，找到要使用的模板并选择 **上传**.
+1. 在文件浏览器中，找到要使用的模板并选择&#x200B;**上传**。
 
 1. 上传模板后，该模板将显示在可用模板列表中。
 
@@ -63,7 +63,7 @@ ht-degree: 94%
 * `files`：包含 UI 套件、XD 文件和可能的其他文件的文件夹
 * `previews`：包含站点模板的屏幕截图的文件夹
 * `site`：为从此模板创建的每个站点复制的内容的内容包，例如页面模板、页面等。
-* `theme`：源 [站点主题](site-themes.md) 修改网站的外观，包括CSS、JavaScript等。
+* `theme`：用于修改站点外观的[站点主题](site-themes.md)的源，包括CSS、JavaScript等。
 
 ## 标准站点模板 {#standard-site-template}
 

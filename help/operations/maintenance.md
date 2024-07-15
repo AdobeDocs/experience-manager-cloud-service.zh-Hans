@@ -46,14 +46,14 @@ ht-degree: 30%
   <tr>
     <td>版本清除</td>
     <td>客户</td>
-    <td>默认情况下，当前禁用版本清除，但可以配置策略，如 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a> 部分。<br/><br/>默认情况下将很快启用清除，并且这些值可覆盖。<br>
+    <td>当前默认禁用版本清除，但可以配置策略，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>审核日志清除</td>
     <td>客户</td>
-    <td>默认情况下，审核日志清除当前处于禁用状态，但可以配置策略，如中所述 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a> 部分。<br/><br/>默认情况下将很快启用清除，并且这些值可覆盖。<br>
+    <td>审核日志清除当前默认处于禁用状态，但可以配置策略，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和审核日志清除维护任务</a>部分中所述。<br/><br/>默认情况下将很快启用清除，这些值可覆盖。<br>
    </td>
    </td>
   </tr>
@@ -67,15 +67,15 @@ ht-degree: 30%
     <td>临时任务清理</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。覆盖下的开箱即用维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>， <code>granite_daily</code> 或 <code>granite_monthly</code>.</p>
-    <p>有关其他配置详细信息，请参阅下面的维护窗口表。通过在上述节点下添加另一个节点来启用维护任务。 将其命名为 <code>granite_TaskPurgeTask</code>，具有属性 <code>sling:resourceType</code> 设置为 <code>granite/operations/components/maintenance/task</code> 和属性 <code>granite.maintenance.name</code> 设置为 <code>TaskPurge</code>. 配置OSGI属性，请参见 <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> 以获取属性列表。</p>
+    <p>必须在 git 中完成。通过在文件夹<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下创建属性，覆盖<code>/libs</code>下的开箱即用维护窗口配置节点。</p>
+    <p>有关其他配置详细信息，请参阅下面的维护窗口表。通过在上述节点下添加另一个节点来启用维护任务。 将其命名为<code>granite_TaskPurgeTask</code>，属性<code>sling:resourceType</code>设置为<code>granite/operations/components/maintenance/task</code>，属性<code>granite.maintenance.name</code>设置为<code>TaskPurge</code>。 配置OSGI属性，请参阅<code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code>以获取属性列表。</p>
   </td>
   </tr>
     <tr>
     <td>工作流清除</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。覆盖下的开箱即用维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>， <code>granite_daily</code> 或 <code>granite_monthly</code>. 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
+    <p>必须在 git 中完成。通过在文件夹<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下创建属性，覆盖<code>/libs</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
     <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_WorkflowPurgeTask</code>），启用维护任务。配置 OSGI 属性，请参见<a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances"> AEM 6.5 维护任务文档</a>。</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ ht-degree: 30%
     <td>项目清除</td>
     <td>客户</td>
     <td>
-    <p>必须在 git 中完成。覆盖下的开箱即用维护窗口配置节点 <code>/libs</code> 通过在文件夹下创建属性 <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>， <code>granite_daily</code> 或 <code>granite_monthly</code>. 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
+    <p>必须在 git 中完成。通过在文件夹<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下创建属性，覆盖<code>/libs</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
     <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。请参阅“Adobe项目清除配置”下的OSGI属性列表。</p>
   </td>
   </tr>
@@ -118,7 +118,7 @@ ht-degree: 30%
     <p><strong>windowStartTime=HH:MM</strong> 用作 24 小时时钟。定义与每周维护窗口关联的维护任务应何时开始执行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 用作 24 小时时钟。定义与每周维护窗口关联的维护任务在尚未完成时应何时停止执行。</p>
     <p>在此时间范围内，维护任务不能执行多次。</p>
-    <p><strong>windowScheduleWeekdays =由1 - 7（例如，[5,5]）中的两个值组成的数组</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
+    <p><strong>windowScheduleWeekdays =由1 - 7（例如，[5,5]）中的两个值组成的数组</strong>数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
     </td>
   </tr>
   <tr>
@@ -126,11 +126,11 @@ ht-degree: 30%
     <td>客户</td>
     <td>JCR 节点定义</td>
     <td>
-    <p><strong>windowSchedule=每月</strong> （此值不应更改）</p>
+    <p><strong>windowSchedule=monthly</strong> （此值不应更改）</p>
     <p><strong>windowStartTime=HH:MM</strong> 用作 24 小时时钟。定义与每月维护窗口关联的维护任务应何时开始执行。</p>
     <p><strong>windowEndTime=HH:MM</strong> 用作 24 小时时钟。定义与每月维护窗口关联的维护任务在尚未完成时应何时停止执行。</p>
     <p>在此时间范围内，维护任务不能执行多次。</p>
-    <p><strong>windowScheduleWeekdays =由1 - 7（例如，[5,5]）中的两个值组成的数组</strong> 数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
+    <p><strong>windowScheduleWeekdays =由1 - 7（例如，[5,5]）中的两个值组成的数组</strong>数组的第一个值是计划作业的开始日期，第二个值是停止作业的结束日期。 开始和结束的确切时间分别由 windowStartTime 和 windowEndTime 控制。</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 表示安排在每月的第一周，或 1 表示安排在每月最后一周。如果没有值，则会有效地在受windowScheduleWeekdays控制的日期（每月）计划作业。</p>
     </td>
     </tr>
@@ -219,21 +219,21 @@ ht-degree: 30%
 > 
 >同样，在配置文件中部署审核日志清除节点后，必须将其保留为已声明状态而不是将其删除。
 
-**1**  — 在Git中的项目顶级文件夹中创建以下文件夹和文件结构：
+**1** — 在Git中项目的顶级文件夹中创建以下文件夹和文件结构：
 
 ```
 config/
      mt.yaml
 ```
 
-**2**  — 在配置文件中声明属性，包括：
+**2** — 在配置文件中声明属性，包括：
 
 * 值为“MaintenanceTasks”的“kind”属性。
 * “版本”资产（当前为版本1）。
-* 具有属性的可选“元数据”对象 `envTypes` 以逗号分隔的环境类型(dev、stage、prod)列表，此配置对此环境类型有效。 如果未声明任何元数据对象，则该配置对所有环境类型都有效。
-* 数据对象，同时具有两者 `versionPurge` 和 `auditLogPurge` 对象。
+* 具有属性`envTypes`的可选“元数据”对象，该对象具有此配置对其有效的环境类型(dev、stage、prod)的逗号分隔列表。 如果未声明任何元数据对象，则该配置对所有环境类型都有效。
+* 同时具有`versionPurge`和`auditLogPurge`对象的数据对象。
 
-请参阅的定义和语法 `versionPurge` 和 `auditLogPurge` 下方的对象。
+请参阅下面的`versionPurge`和`auditLogPurge`对象的定义和语法。
 
 您应构建类似于以下示例的配置：
 
@@ -271,13 +271,13 @@ data:
 * 必须遵循以下属性表中的类型（整数、字符串、布尔值等）。
 
 >[!NOTE]
->您可以使用 `yq` 在本地验证配置文件的YAML格式(例如， `yq mt.yaml`)。
+>您可以使用`yq`在本地验证配置文件的YAML格式（例如，`yq mt.yaml`）。
 
-**3**  — 配置非生产和生产配置管道。
+**3** — 配置非生产和生产配置管道。
 
 快速开发环境(RDE)不支持清除。 对于生产（非沙盒）程序中的其他环境类型，请在Cloud Manager中创建目标部署配置管道。
 
-请参阅 [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 和 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 以了解更多详细信息。
+有关详细信息，请参阅[配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
 
 ### 版本清除 {#version-purge}
 
@@ -309,7 +309,7 @@ data:
 
 下面列出了允许的属性。
 
-列指示 *默认* 指示将来（应用默认值时）的默认值； *待定* 反映了一个仍未确定的环境ID。
+指示&#x200B;*default*&#x200B;的列指示将来应用默认值时的默认值；*TBD*&#x200B;反映了一个仍未确定的环境ID。
 
 | 属性 | 环境未来的默认值>待定 | 环境&lt;=TBD的未来默认值 | 必填 | 类型 | 值 |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
@@ -332,9 +332,9 @@ maximumVersions = 10
 minimumVersions = 2
 ```
 
-如果第23天有11个版本，则下次清除维护任务运行时将清除最早的版本，因为 `maximumVersions` 属性设置为10。
+如果第23天有11个版本，则下次清除维护任务运行时将清除最早的版本，因为`maximumVersions`属性设置为10。
 
-如果第31天有5个版本，则只清除3个版本，因为 `minimumVersions` 属性设置为2。
+如果第31天有5个版本，则仅清除3个版本，因为`minimumVersions`属性设置为2。
 
 示例：
 
@@ -344,7 +344,7 @@ maximumVersions = 0
 minimumVersions = 1
 ```
 
-由于30天以上的 `maximumVersions` 属性设置为0。
+由于`maximumVersions`属性设置为0，因此不会清除任何超过30天的版本。
 
 将保留30天之前的版本。
 
@@ -375,7 +375,7 @@ minimumVersions = 1
 
 下面列出了允许的属性。
 
-列指示 *默认* 指示将来（应用默认值时）的默认值； *待定* 反映了一个仍未确定的环境ID。
+指示&#x200B;*default*&#x200B;的列指示将来应用默认值时的默认值；*TBD*&#x200B;反映了一个仍未确定的环境ID。
 
 
 | 属性 | 环境未来的默认值>待定 | 环境&lt;=TBD的未来默认值 | 必填 | 类型 | 值 |
@@ -383,4 +383,4 @@ minimumVersions = 1
 | 规则 | - | - | 是 | 对象 | 以下一个或多个节点：复制、页面、dam。 其中每个节点都定义了规则，并具有以下属性。 必须声明所有属性。 |
 | maximumAgeDay | 7 天 | 对于所有人，2557年（7年以上2个闰日） | 是 | 整数 | 对于复制、页面或dam：审核日志的保留天数。 将清除早于配置值的审核日志。 |
 | 内容路径 | “/content” | “/content” | 是 | 字符串 | 将清除审核日志的路径（针对相关类型）。 必须设置为“/content”。 |
-| 类型 | 所有值 | 所有值 | 是 | 枚举数组 | 对象 **复制**，枚举值为：Activate、Deactivate、Delete、Test、Reverse、Internal Poll。 对象 **页面**，枚举值为： PageCreated、PageModified、PageMoved、PageDeleted、VersionCreated、PageRestored、PageRolled、PageValid、PageInvalid。 对象 **dam**，枚举值包括：ASSET_EXPIRING、METADATA_UPDATED、ASSET_EXPIRED、ASSET_REMOVED、RESTORED、ASSET_MOVED、ASSET_VIEWED、PROJECT_VIEWED、PUBLISHED_EXTERNAL、COLLECTION_VIEWED、VERSIONED、ADDED_COMMENT、RENDITION_UPDATED、ACCEPTED、DOWNLOADED、SUBORED、ASSED、ASSED、ASSED、ASSET、CREATED、CREATED_CREATED、CREATED_CREATED_CREATED、CREATED_ASSED、ASSED_ASSED_ASSED_ASSELATED、ASSET REMOVED、ASSET_PUBLISHED、ORIGINAL_UPDATED、RENDITION_DOWNLOADED、已拒绝。 |
+| 类型 | 所有值 | 所有值 | 是 | 枚举数组 | 对于&#x200B;**复制**，枚举值为： Activate、Deactivate、Delete、Test、Reverse、Internal Poll。 对于&#x200B;**页面**，枚举值为： PageCreated、PageModified、PageMoved、PageDeleted、VersionCreated、PageRestored、PageRolled、PageValid、PageInvalid。 对于&#x200B;**dam**，枚举值包括：ASSET_EXPIRING、METADATA_UPDATED、ASSET_EXPIRED、ASSET_REMOVED、RESTORED、ASSET_MOVED、ASSET_VIEWED、PROJECT_VIEWED、PUBLISHED_EXTERNAL、COLLECTION_VIEWED、VERSIONED、ADDED_COMMENT、RENDITION_UPDATED、ACCEPTED、DOWATED、DOWNATED、DOWNATED、SUPATED、SUBONED、SUBASSET_UPDATED、RATED、SUBASSET_REMOVED、REMOVED、ASSET_REMOVED、ASSET已共享、RENDITION_REMOVED、ASSET_PUBLISHED、ORIGINAL_UPDATED、RENDITION_DOWNLOADED、REJECTED。 |

@@ -19,7 +19,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 >[!NOTE]
 >
->本文基于Angular框架。 有关React框架的相应文档，请参阅 [AEM中的SPA快速入门 — React](getting-started-react.md).
+>本文基于Angular框架。 有关React框架的相应文档，请参阅[AEM中的SPA快速入门 — React](getting-started-react.md)。
 
 ## 简介 {#introduction}
 
@@ -45,7 +45,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 ### 依赖项 {#dependencies}
 
-此 `package.json` 文件定义整个SPA包的要求。 此处列出了最低必需的AEM依赖项。
+`package.json`文件定义了整个SPA包的要求。 此处列出了最低必需的AEM依赖项。
 
 ```
 "dependencies": {
@@ -55,13 +55,13 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 }
 ```
 
-此 `aem-clientlib-generator` 用于在构建过程中自动创建客户端库。
+`aem-clientlib-generator`用于在生成过程中自动创建客户端库。
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-可以找到有关它的更多详细信息 [在此处GitHub上](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+有关它的更多详细信息，可在[上的GitHub上找到此处](https://github.com/wcm-io-frontend/aem-clientlib-generator)。
 
-此 `aem-clientlib-generator` 在中配置 `clientlib.config.js` 文件如下所示。
+`aem-clientlib-generator`在`clientlib.config.js`文件中配置如下。
 
 ```
 module.exports = {
@@ -92,7 +92,7 @@ module.exports = {
 
 ### 正在生成 {#building}
 
-实际构建应用程序使用 [网络包](https://webpack.js.org/) 用于转换，并且使用aem-clientlib-generator自动创建客户端库。 因此，构建命令将类似于：
+实际构建应用程序时，除了使用aem-clientlib-generator自动创建客户端库之外，还使用[Webpack](https://webpack.js.org/)进行转换。 因此，构建命令将类似于：
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -112,7 +112,7 @@ module.exports = {
 
 ### app.module.ts {#app-module-ts}
 
-SPA的入口点为 `app.module.ts` 此处显示的文件被简化为重点介绍重要内容。
+此处显示的`app.module.ts`文件是SPA的入口点，该文件经过简化，以重点关注重要内容。
 
 ```
 // app.module.ts
@@ -135,7 +135,7 @@ import { AppRoutingModule } from './app-routing.module';
 export class AppModule {}
 ```
 
-此 `app.module.ts` file是应用程序的起点，包含初始项目配置和使用 `AppComponent` 以引导应用程序。
+`app.module.ts`文件是应用程序的起点，包含初始项目配置并使用`AppComponent`引导应用程序。
 
 #### 静态实例化 {#static-instantiation}
 
@@ -143,7 +143,7 @@ export class AppModule {}
 
 ### app.component.ts {#app-component-ts}
 
-一次 `app.module.ts` bootstraps `AppComponent`，然后它可以初始化应用程序，此处以简化版的形式显示了应用程序，以便重点关注重要内容。
+在`app.module.ts`引导`AppComponent`后，它可以初始化应用程序，此处以简化版本显示，重点介绍重要内容。
 
 ```
 // app.component.ts
@@ -177,7 +177,7 @@ export class AppComponent {
 
 ### main-content.component.ts {#main-content-component-ts}
 
-通过处理页面， `app.component.ts` 调用 `main-content.component.ts` 此处以简化版本列出。
+通过处理页面，`app.component.ts`调用此处以简化版本列出的`main-content.component.ts`。
 
 ```
 import { Component } from '@angular/core';
@@ -208,11 +208,11 @@ export class MainContentComponent {
 }
 ```
 
-此 `MainComponent` 摄取页面模型的JSON表示形式并处理内容以包装/装饰页面的每个元素。 有关更多详情，请参阅 `Page` 可以在文档中找到 [SPA Blueprint](blueprint.md).
+`MainComponent`摄取页面模型的JSON表示形式，并处理内容以包装/装饰页面的每个元素。 有关`Page`的更多详细信息可在文档[SPA Blueprint](blueprint.md)中找到。
 
 ### image.component.ts {#image-component-ts}
 
-此 `Page` 由组件组成。 摄取JSON后， `Page` 可以处理这些组件，例如 `image.component.ts` 如下所示。
+`Page`由组件组成。 摄取JSON后，`Page`可以处理这些组件，如`image.component.ts`，如下所示。
 
 ```
 /// image.component.ts
@@ -241,13 +241,13 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在内容被修改时更新组件（反之亦然）。 查看文档 [SPA编辑器概述](editor-overview.md) 以获取该通信模型的摘要。
+AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在内容被修改时更新组件（反之亦然）。 有关此通信模型的摘要，请参阅文档[SPA编辑器概述](editor-overview.md)。
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
-此 `MapTo` 方法将SPA组件映射到AEM组件。 它支持使用单个字符串或字符串数组。
+`MapTo`方法将该SPA组件映射到AEM组件。 它支持使用单个字符串或字符串数组。
 
-`ImageEditConfig` 是一个配置对象，它通过为编辑器提供生成占位符所需的元数据来帮助启用组件的创作功能
+`ImageEditConfig`是一个配置对象，它通过为编辑器提供生成占位符所需的元数据来帮助启用组件的创作功能
 
 如果没有内容，则会提供标签作为占位符来表示空内容。
 
@@ -257,7 +257,7 @@ AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在内容被�
 
 ### image.component.html {#image-component-html}
 
-最后，可以在中呈现图像 `image.component.html`.
+最后，可以在`image.component.html`中呈现图像。
 
 ```
 // image.component.html
@@ -268,14 +268,14 @@ AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在内容被�
 
 单页应用程序中的组件经常需要共享信息。 有几种推荐的方法可以做到这一点，按复杂性递增的顺序如下所示。
 
-* **选项1：** 例如，通过使用util类作为纯面向对象的解决方案，将逻辑集中并广播到必要的组件。
-* **选项2：** 使用状态库（如NgRx）共享组件状态。
-* **选项3：** 通过自定义和扩展容器组件来利用对象层次结构。
+* **选项1：**&#x200B;将逻辑集中并广播到必需的组件，例如，通过使用util类作为纯面向对象解决方案。
+* **选项2：**&#x200B;使用状态库（如NgRx）共享组件状态。
+* **选项3：**&#x200B;通过自定义和扩展容器组件来利用对象层次结构。
 
 ## 后续步骤 {#next-steps}
 
-* [在AEM中使用React快速入门SPA](getting-started-react.md) 显示了如何使用React构建基本SPA以在AEM中使用SPA编辑器。
+* [使用React在AEM中开始使用SPA](getting-started-react.md)显示了如何使用React在AEM中构建基本SPA以与SPA编辑器一起使用。
 * [SPA 编辑器概述](editor-overview.md)更深入地介绍了 AEM 和 SPA 之间的通信模型。
-* [WKND SPA项目](wknd-tutorial.md) 是一个分步教程，用于在AEM中实施简单的SPA项目。
-* [SPA的动态模型到组件映射](model-to-component-mapping.md) 说明动态模型到组件的映射以及它在AEM中的SPA中的工作方式。
-* [SPA Blueprint](blueprint.md) 如果您希望在AEM中为React或Angular以外的框架实施SPA，或者只是希望更深入地了解SPA SDK for AEM，您可以深入了解SDK的工作原理。
+* [WKND SPA项目](wknd-tutorial.md)是在AEM中实施简单SPA项目的分步教程。
+* [SPA的动态模型到组件映射](model-to-component-mapping.md)说明了动态模型到组件映射以及它在AEM中的SPA中的工作方式。
+* [SPA Blueprint](blueprint.md)让您深入了解SPA SDK for AEM的工作原理，以防您想在AEM中为React或Angular以外的框架实施SPA，或者只是想更深入地了解。

@@ -31,9 +31,9 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
 
 计费API不考虑页数、文档或表单的长度或渲染文档的最终格式。 事务报表将事务分为两类：Forms Submitted和Documents Rendered。
 
-* **Forms已提交：** 如果从使用AEM Forms创建的任何类型的表单提交数据，并且将数据提交到任何数据存储存储库或数据库，则被视为表单提交。 例如，提交自适应表单或表单集被视为已提交的表单。 如果表单集有5个表单，在提交表单集时，Transaction Reporting服务将其计为5次提交。
+* **Forms已提交：**&#x200B;如果从使用AEM Forms创建的任何类型的表单提交数据，并且将数据提交到任何数据存储存储库或数据库，则视为表单提交。 例如，提交自适应表单或表单集被视为已提交的表单。 如果表单集有5个表单，在提交表单集时，Transaction Reporting服务将其计为5次提交。
 
-* **呈现的文档：** 通过组合模板和数据、对文档进行数字签名或认证、使用用于文档服务的可计费文档服务API或将文档从一种格式转换为另一种格式来生成文档，均被视为已渲染的文档。
+* **呈现的文档：**&#x200B;通过组合模板和数据来生成文档、对文档进行数字签名或认证、使用用于文档服务的计费文档服务API或将文档从一种格式转换为另一种格式均被视为呈现的文档。
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
@@ -461,7 +461,7 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
 
 当您执行以下一个或多个操作时，调用API的使用情况计为事务：
 
-1. 从非PDF格式转换为PDF格式。 <!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. 从非PDF格式转换为PDF格式。<!--For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. 从PDF格式转换为PDF/A格式。
 1. 从PDF格式转换为非PDF格式。 示例包括从PDF到图像的转换或从PDF到文本的转换。
 
@@ -495,7 +495,7 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
 
 ## 计费数据捕获API {#billable-data-capture-apis}
 
-所有自适应表单的提交事件均按交易入账。 默认情况下，提交PDF表单不会作为交易记帐。 使用提供的 [交易记录器API](record-transaction-custom-implementation.md) 将PDF forms提交记录为事务处理。
+所有自适应表单的提交事件均按交易入账。 默认情况下，提交PDF表单不会作为交易记帐。 使用提供的[事务记录器API](record-transaction-custom-implementation.md)将PDF forms提交记录为事务。
 
 ### 自适应表单 {#adaptive-forms}
 
@@ -647,7 +647,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ## 将可记帐API记录为自定义代码的交易 {#recording-billable-apis-as-transactions-for-custom-code}
 
-提交PDF表单、使用代理UI预览交互式通信、使用非标准表单提交和自定义实现等操作不计入事务。 AEM Forms提供了一个API，用于将此类操作记录为交易。 您可以从自定义实施中调用API以 [记录交易](/help/forms/record-transaction-custom-implementation.md).
+提交PDF表单、使用代理UI预览交互式通信、使用非标准表单提交和自定义实现等操作不计入事务。 AEM Forms提供了一个API，用于将此类操作记录为交易。 您可以从自定义实施中调用API以[记录事务](/help/forms/record-transaction-custom-implementation.md)。
 
 ## 相关文章 {#related-articles}
 

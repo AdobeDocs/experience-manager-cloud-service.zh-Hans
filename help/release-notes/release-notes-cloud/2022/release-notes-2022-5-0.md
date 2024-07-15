@@ -13,7 +13,7 @@ ht-degree: 67%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 版的发行说明 {#release-notes}
 
-以下部分概述了2022.5.0版的功能发行说明 [!DNL Experience Manager] as a Cloud Service。
+以下部分概述了[!DNL Experience Manager]as a Cloud Service2022.5.0版本的功能发行说明。
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ ht-degree: 67%
 
 * [Dynamic Media 智能图像](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f)现在支持 AVIF 文件格式 – 进一步改进 Google Core Web Vital（最大内容绘制），与 WebP 相比，AVIF 提供了 20% 的额外尺寸缩减。 与 JPEG 相比，AVIF 的平均大小缩减率高达 41%（在某些图像中甚至高达 76%）。
 
-* [!UICONTROL Experience Manager Assets Brand Portal] 现在，每12小时执行一次自动作业，以删除发布到AEM的所有Brand Portal资源。 因此，您无需手动删除“贡献”文件夹中的资产，即可将文件夹大小保持在阈值限制以下。 请参阅 [Experience Manager Assets·Brand Portal 的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
+* [!UICONTROL Experience Manager Assets Brand Portal]现在每12小时执行一次自动作业，以删除发布到AEM的所有Brand Portal资源。 因此，您无需手动删除“贡献”文件夹中的资产，即可将文件夹大小保持在阈值限制以下。 请参阅 [Experience Manager Assets·Brand Portal 的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
 ### [!DNL Assets] 预发行渠道中提供的新功能 {#prerelease-features-assets}
 
@@ -60,7 +60,7 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 * **将自适应表单与 Microsoft® Power Automate 集成**：现在，您可以配置自适应表单以在提交时运行 Microsoft® Power Automate Cloud Flow。 配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automation Cloud Flow 进行处理。 它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。
 
-* **创建自适应表单的向导**：您可以使用便于企业用户使用的向导来快速创作自适应Forms。 该向导提供了快速的选项卡导航，以便轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
+* **创建自适应表单的向导**：您可以使用业务用户友好的向导快速创作自适应Forms。 该向导提供了快速的选项卡导航，以便轻松选择预配置的模板、样式、字段和提交选项以创建自适应表单。
 
   ![创建自适应表单的向导](/help/release-notes/assets/wizard.png)
 
@@ -81,19 +81,19 @@ Experience Manager Assets 现在使用 Adobe Sensei AI 功能[区分图像中的
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 复制代理管理屏幕下的“添加树”选项 **“分发”选项卡**&#x200B;之前宣布已弃用的SSF将于2022年6月20日或之后不久删除。 而应使用以树层次结构表示的内容包进行复制[管理发布](/help/operations/replication.md#manage-publication)或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)。
+* 复制代理管理屏幕的&#x200B;**分发选项卡**&#x200B;下的“添加树”选项（之前宣布已弃用）已于2022年6月20日或之后不久删除。 而应使用以树层次结构表示的内容包进行复制[管理发布](/help/operations/replication.md#manage-publication)或 [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)。
 
-* 使用复制代理管理屏幕或复制API分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）已被弃用，并且将在2022年9月12日或之后不久实施。 相反，必须使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)来复制这些大型内容包。7月，复制代理管理屏幕中将显示一条警告消息 **“分发”选项卡** 如果尝试复制这些大型内容包，并且每当使用复制API复制这些大型内容包时，AEM错误日志中也会出现这种情况。 9月，警告被错误取代。 相应地调整您的流程。
+* 使用复制代理管理屏幕或复制API分发大于10 MB的内容包（具有属性的节点，不包括二进制文件）已被弃用，并且将在2022年9月12日或之后不久实施。 相反，必须使用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)来复制这些大型内容包。7月，如果尝试复制这些大型内容包，复制代理管理屏幕的&#x200B;**分发选项卡**&#x200B;中将显示一条警告消息，并且每当使用复制API复制这些大型内容包时，AEM错误日志中也会显示一条警告消息。 9月，警告被错误取代。 相应地调整您的流程。
 
 ### [!DNL Experience Manager] 预发行渠道中提供的新功能 {#prerelease-features-foundation}
 
-* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 请参阅 [Unified Shell上的AEMas a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md) 以了解更多详细信息。
+* AEM as a Cloud Service 现已与 Unified Shell 集成，以改进用户体验并将其与所有其他 Experience Cloud 应用程序相统一。 有关更多详细信息，请参阅Unified Shell上的[AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基础安全性 {#foundation-security}
 
 ### 弃用 TLS 1.0、1.1
 
-从2022年6月30日开始，Experience Manageras a Cloud Service将需要与用户系统进行更安全的网络通信和数据交换。 AEM 将专门使用传输层安全性 (TLS) 1.2 协议。 现已弃用旧版TLS 1.0和1.1。
+从2022年6月30日开始，as a Cloud ServiceExperience Manager将需要与用户系统进行更安全的网络通信和数据交换。 AEM 将专门使用传输层安全性 (TLS) 1.2 协议。 现已弃用旧版TLS 1.0和1.1。
 
 如果您继续将旧版 TLS 用作 1.0、1.1，则可能会失去对 Experience Manager as a Cloud Service 的访问权限。
 

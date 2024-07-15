@@ -30,7 +30,7 @@ ht-degree: 58%
 
 1. 不要引入回归。
 
-Cloud Manager中的体验审核可确保用户在站点上的体验达到最高标准。
+Cloud Manager中的体验审核可确保用户在该网站上的体验达到最高标准。
 
 审核结果可提供丰富信息，允许部署管理员查看分数以及当前分数和以前分数之间的变化。此细节对于确定当前部署中是否引入了回归非常有用。
 
@@ -47,7 +47,7 @@ Cloud Manager中的体验审核可确保用户在站点上的体验达到最高�
 * 默认情况下，站点生产管道。
 * 前端开发管道（可选）。
 
-请参阅 [配置部分](#configuration) 有关如何为可选环境配置审核的更多信息。
+有关如何为可选环境配置审核的更多信息，请参阅[配置部分](#configuration)。
 
 ## 配置 {#configuration}
 
@@ -57,25 +57,25 @@ Cloud Manager中的体验审核可确保用户在站点上的体验达到最高�
 
 1. 根据要配置的管道类型，按照以下说明进行操作：
 
-   * 添加新 [生产管道，](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 如果您希望定义要由审核评估的路径。
-   * 添加新 [非生产管道，](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 如果您希望在前端管道或开发全栈管道上启用审核。
-   * 或者，您可以 [编辑现有管道，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) 并更新现有选项。
+   * 添加新的[生产管道，](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)（如果您希望定义要由审核评估的路径）。
+   * 添加新的[非生产管道，](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)（如果您希望在前端或开发全栈管道上启用审核）。
+   * 或者，您可以[编辑现有管道，](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)并更新现有选项。
 
-1. 如果要添加或编辑要使用体验审核的非生产管道，则必须选择 **体验审核** 上的复选框 **源代码** 选项卡。
+1. 如果要添加或编辑要使用体验审核的非生产管道，则必须选中&#x200B;**Source代码**&#x200B;选项卡上的&#x200B;**体验审核**&#x200B;复选框。
 
-   ![启用体验审核](assets/experience-audit-enable.jpg)
+   ![正在启用体验审核](assets/experience-audit-enable.jpg)
 
    * 这仅对于非生产管道是必需的。
-   * 此 **体验审核** 选项卡。
+   * 选中该复选框后，将显示&#x200B;**体验审核**&#x200B;选项卡。
 
-1. 对于生产管道和非生产管道，您都可以定义应包含在上的体验审核中的路径 **体验审核** 选项卡。
+1. 对于生产和非生产管道，您定义应包含在&#x200B;**体验审核**&#x200B;选项卡上的体验审核中的路径。
 
-   * 页面路径必须以开头 `/` 和相对于您的网站。
-   * 例如，如果您的网站为 `wknd.site` 并希望 `https://wknd.site/us/en/about-us.html` 在体验审核中，输入路径 `/us/en/about-us.html`.
+   * 页面路径必须以`/`开头，并且相对于您的网站。
+   * 例如，如果您的网站为`wknd.site`，并且希望在体验审核中包含`https://wknd.site/us/en/about-us.html`，请输入路径`/us/en/about-us.html`。
 
    ![定义体验审核路径](assets/experience-audit-add-page.png)
 
-1. 点击或单击 **添加页面** 路径将自动填写您的环境地址，并添加到路径表中。
+1. 点按或单击&#x200B;**添加页面**，路径将自动填写您的环境地址，并添加到路径表中。
 
    ![保存表的路径](assets/experience-audit-page-added.png)
 
@@ -103,11 +103,11 @@ Cloud Manager中的体验审核可确保用户在站点上的体验达到最高�
 
 变化量度可以具有以下值之一。
 
-* **正值**  — 自上次生产管道运行以来，所选测试的页面有所改进。
+* **正值** — 自上次生产管道运行以来，所选测试的页面有所改进。
 
-* **负值**  — 自上次生产管道运行以来，页面已在所选测试上回归。
+* **负值** — 自上次生产管道运行以来，页面已在所选测试上回归。
 
-* **无更改**  — 自上次生产管道运行以来，页面得分相同。
+* **无更改** — 自上次生产管道运行以来，页面得分相同。
 
 * **不适用** – 没有可供比较的先前分数。
 

@@ -23,7 +23,7 @@ ht-degree: 64%
 * 从远程 Experience Manager 部署获取超过阈值限制设置的资产
 * 转出 Live Copy
 
-您可以从以下位置查看异步作业的状态 **[!UICONTROL 后台操作]** 仪表板位置 **全局导航** > **工具** > **常规** > **作业**.
+您可以从&#x200B;**[!UICONTROL 后台操作]**&#x200B;仪表板的&#x200B;**全局导航** > **工具** > **常规** > **作业**&#x200B;查看异步作业的状态。
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ ht-degree: 64%
 
 每当 AEM 异步处理操作时，您都会在[收件箱](/help/sites-cloud/authoring/inbox.md)中通过电子邮件收到通知（如果已启用）。
 
-要查看异步操作状态的详细信息，请导航至 **[!UICONTROL 后台操作]** 页面。
+要查看异步操作的详细状态，请导航到&#x200B;**[!UICONTROL 后台操作]**&#x200B;页面。
 
-1. 在Experience Manager界面中，选择 **全局导航** > **工具** > **常规** > **作业**.
+1. 在Experience Manager界面中选择&#x200B;**全局导航** > **工具** > **常规** > **作业**。
 
-1. 在 **[!UICONTROL 后台操作]** 页中，查看操作的详细信息。
+1. 在&#x200B;**[!UICONTROL 后台操作]**&#x200B;页面中，查看操作的详细信息。
 
    ![异步操作的状态和详细信息](assets/async-operation-status.png)
 
@@ -57,7 +57,7 @@ ht-degree: 64%
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. 要查看其他详细信息（例如，说明和日志），请选择操作并单击 **[!UICONTROL 打开]** 工具栏中。
+1. 要查看其他详细信息（例如，说明和日志），请选择操作，然后单击工具栏中的&#x200B;**[!UICONTROL 打开]**。
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -77,7 +77,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->[OSGi配置](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) 被视为可变内容，任何此类配置必须部署为生产环境的内容包。
+>[OSGi配置](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations)被视为可变内容，任何此类配置都必须作为生产环境的内容包进行部署。
 
 ### 清除已完成的作业 {#purging-completed-jobs}
 
@@ -85,8 +85,8 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 您可以修改清除作业的计划，以及删除之前保留已完成作业详细信息的持续时间。您还可以配置在任何时间点保留详细信息的已完成作业的最大数量。
 
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **osgi** > **配置**
+1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK快速入门Jar的AEM Web控制台。
+1. 导航到&#x200B;**OSGi** > **配置**
 1. 打开 **[!UICONTROL Adobe Granite 异步作业清除计划作业]**。
 1. 指定：
    * 删除已完成作业后的天数阈值。
@@ -101,8 +101,8 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 如果要删除的资产或文件夹数量超过阈值数，将异步执行删除操作。
 
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **osgi** > **配置**
+1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK快速入门Jar的AEM Web控制台。
+1. 导航到&#x200B;**OSGi** > **配置**
 1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步进程默认队列配置。]**
 1. 在&#x200B;**[!UICONTROL 资产的阈值数]**&#x200B;框中，指定用于异步处理删除操作的资产/文件夹的阈值数。
 
@@ -115,8 +115,8 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 如果要移动的资产/文件夹或引用数量超过阈值数，将异步执行移动操作。
 
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **osgi** > **配置**
+1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK快速入门Jar的AEM Web控制台。
+1. 导航到&#x200B;**OSGi** > **配置**
 1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步移动操作作业处理配置。]**
 1. 在&#x200B;**[!UICONTROL 资产/参考的阈值数]**&#x200B;框中，指定用于异步处理移动操作的资产/文件夹的阈值数。
 
@@ -127,8 +127,8 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 ### 配置异步MSM操作 {#configuring-asynchronous-msm-operations}
 
-1. 登录到AEM SDK快速入门Jar的AEM Web控制台，网址为 `https://<host>:<port>/system/console` 作为管理员用户。
-1. 导航到 **osgi** > **配置**
+1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK快速入门Jar的AEM Web控制台。
+1. 导航到&#x200B;**OSGi** > **配置**
 1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步页面移动操作作业处理配置。]**
 1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失败。
 

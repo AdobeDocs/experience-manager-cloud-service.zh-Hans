@@ -25,15 +25,15 @@ ht-degree: 13%
 
 ## 对资源上传应用限制 {#apply-restrictions-asset-uploadsssssss}
 
-配置 [!DNL Experience Manager] 限制用户上传特定MIME类型的文件：
+要将[!DNL Experience Manager]配置为限制用户上传特定MIME类型的文件：
 
-1. 导航到 **[!UICONTROL 工具>资产>资产配置]**.
+1. 导航到&#x200B;**[!UICONTROL 工具> Assets > Assets配置]**。
 
-1. 单击 **[!UICONTROL 上载限制]**.
+1. 单击&#x200B;**[!UICONTROL 上载限制]**。
 
-1. 单击 **[!UICONTROL 添加]** 以定义允许的MIME类型。
+1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以定义允许的MIME类型。
 
-1. 在文本框中指定MIME类型。 您可以单击 **[!UICONTROL 添加]** 再次指定更多允许的MIME类型。 您还可以单击 ![删除图标](assets/delete-icon.svg) 从列表中删除任何MIME类型。
+1. 在文本框中指定MIME类型。 您可以再次单击&#x200B;**[!UICONTROL 添加]**&#x200B;以指定更多允许的MIME类型。 您还可以单击![删除图标](assets/delete-icon.svg)以从列表中删除任何MIME类型。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -43,13 +43,13 @@ ht-degree: 13%
 
 ![资产上传限制](assets/asset-upload-restrictions.png)
 
-`image/*` 因为MIME类型允许上传所有格式的图像。 `application/pdf` 作为MIME类型，允许将PDF文件上传到Experience Manager Assets。
+`image/*`作为MIME类型，允许上传所有格式的图像。 `application/pdf`作为MIME类型，允许将PDF文件上传到Experience Manager Assets。
 
 如果您尝试上传的文件未包含在允许的MIME类型列表中，Experience Manager Assets会显示以下错误消息：
 
-![受限制的文件](assets/asset-upload-restricted-files.png)
+![受限文件](assets/asset-upload-restricted-files.png)
 
-`Screen Recording 2022-08-31 at 3.36.09 PM.mov` 是指未包含在允许的MIME类型中的文件名。
+`Screen Recording 2022-08-31 at 3.36.09 PM.mov`引用的文件名未包含在允许的MIME类型中。
 
 **示例2：允许将特定图像格式上传到Experience Manager Assets**
 
@@ -57,7 +57,7 @@ ht-degree: 13%
 
 ![资源限制](assets/asset-restrictions.png)
 
-根据映像中描述的设置，您可以将.PNG、.JPG和。GIF格式的映像上传到Experience Manager Assets。
+根据映像中描述的设置，您可以将。JPG、.PNG和。GIF格式的映像上传到Experience Manager Assets。
 
 **另请参阅**
 

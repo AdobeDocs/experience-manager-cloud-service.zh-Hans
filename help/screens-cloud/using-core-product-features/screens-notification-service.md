@@ -1,6 +1,6 @@
 ---
-title: Screensas a Cloud Service中的Screens通知服务
-description: 本页介绍如何在Screensas a Cloud Service中配置“通知服务”。
+title: Screens中的Screens Notification Serviceas a Cloud Service
+description: 本页介绍如何在Screensas a Cloud Service中配置Notification Service。
 index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 feature: Developing Screens
@@ -35,4 +35,4 @@ AEM Screens通知服务允许管理员接收包含所有AEM Screens播放器列�
 
 ### 示例用例
 
-如果将报表时间设置为5am，并将ping超时设置为1小时，则如果Screens设备在凌晨4:00到凌晨5:00之间未ping通，您将收到一封电子邮件通知，确认设备处于非活动状态。
+如果将报表时间设置为5am，并将ping超时设置为1小时，则如果Screens设备在凌晨4:00到凌晨5:00之间未执行ping操作，则会收到一封电子邮件通知，确认设备处于非活动状态。

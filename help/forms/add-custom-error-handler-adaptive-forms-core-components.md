@@ -194,7 +194,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 如果错误响应处于标准架构或服务器端验证失败，则支持默认错误处理程序以在字段上显示错误消息。
 为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#invoke)操作来使用默认错误处理程序，以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用默认错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用规则编辑器的调用服务操作添加默认错误处理程序，请执行以下步骤：
 
-1. 在创作模式下打开自适应表单，选择表单组件，然后选择 **[!UICONTROL 规则编辑器]** 以打开规则编辑器。
+1. 在创作模式下打开自适应表单，选择一个表单组件，然后选择&#x200B;**[!UICONTROL 规则编辑器]**&#x200B;以打开规则编辑器。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在规则的 **When** 部分中创建条件。例如，**在更改[宠物名称 ID 字段]**&#x200B;时，会从&#x200B;**选择状态**&#x200B;下拉列表中更改选择。
 1. 在 **Then** 部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 调用服务]**。
@@ -237,7 +237,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 并创建一个`ClientLibraryFolder` 作为 `clientlibs`。
 1. 创建一个名为 `js` 的文件夹。
 1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 文件夹。
-1. 添加JavaScript文件，例如， `function.js`. 该文件包含自定义错误处理程序的代码。
+1. 添加JavaScript文件，例如`function.js`。 该文件包含自定义错误处理程序的代码。
 让我们将以下代码添加到该 JavaScript 文件中，以在浏览器控制台中显示从 REST 服务端点接收到的响应和标头。
 
    ```javascript
@@ -256,7 +256,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
        return true; // true - call default error handler, false - don't call default error handler.
    }
    ```
-   在上面的代码中， `return true` 自动调用默认错误处理程序。 要防止默认调用错误处理程序，请包括 `return false`.
+   在上述代码中，`return true`自动调用默认错误处理程序。 要防止默认调用默认错误处理程序，请包括`return false`。
 
    >[!NOTE]
    >
@@ -302,7 +302,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 要通过&#x200B;**[!UICONTROL 规则编辑器的调用服务]**&#x200B;操作使用自定义错误处理程序，请执行以下操作：
 
-1. 在创作模式下打开自适应表单，选择表单组件，然后选择 **[!UICONTROL 规则编辑器]** 以打开规则编辑器。
+1. 在创作模式下打开自适应表单，选择一个表单组件，然后选择&#x200B;**[!UICONTROL 规则编辑器]**&#x200B;以打开规则编辑器。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在规则的 **When** 部分中创建条件。例如，在更改&#x200B;**[宠物名称 ID 字段]**&#x200B;时，会从&#x200B;**选择状态**&#x200B;下拉列表&#x200B;**更改**&#x200B;选择。
 1. 在 **Then** 部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 调用服务]**。

@@ -48,7 +48,7 @@ Cloud Manager 让您查看、更新、替换和删除自定义域名。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
 
-1. 导航至 **域设置** 第页，从 **概述** 屏幕。
+1. 从&#x200B;**概述**&#x200B;屏幕导航到&#x200B;**域设置**&#x200B;页面。
 
 1. 确定要删除的自定义域名的行。
 

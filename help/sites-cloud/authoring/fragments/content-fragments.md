@@ -133,8 +133,8 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 
 对于中间内容，您可以：
 
-* 从添加组件 [组件浏览器。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* 从添加资源 [资产浏览器。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* 从[组件浏览器添加组件。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* 从[Assets浏览器添加资源。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * 使用[关联内容](#using-associated-content)作为中间内容的源。
 
 >[!CAUTION]

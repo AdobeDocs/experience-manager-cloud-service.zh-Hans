@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 > 此功能仅适用于基于CIF的店面（例如Venia）。
 
-[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components) 使内容作者能够创建其他类别和产品页面。 这些页面可以通过附加营销内容进行扩充，并配置为针对特定类别和产品。 以下视频介绍了此功能的设置。
+[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)使内容作者能够创建其他类别和产品页面。 这些页面可以通过附加营销内容进行扩充，并配置为针对特定类别和产品。 以下视频介绍了此功能的设置。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
@@ -37,4 +37,4 @@ ht-degree: 0%
 
 ## 相关资源 {#related}
 
-还可以动态定位页面的特定区域并重复使用相同的模板。 了解如何 [用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md).
+还可以动态定位页面的特定区域并重复使用相同的模板。 了解如何[使用关联的AEM内容](./enrich-product-associated-content.md)扩充产品数据。

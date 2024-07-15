@@ -15,9 +15,9 @@ ht-degree: 53%
 
 # 编辑程序 {#editing-programs}
 
-要管理和编辑程序，请从 [**我的项目群** 控制台。](/help/implementing/cloud-manager/navigation.md) 此 **我的项目群** 页面提供了您有权访问的所有程序的概述。 在选择单个项目时， **项目概述** 页面提供程序的详细信息概览。
+要管理和编辑程序，请从&#x200B;[**我的程序**&#x200B;控制台开始。](/help/implementing/cloud-manager/navigation.md) **我的程序**&#x200B;页面提供了您有权访问的所有程序的概述。 选择单个项目时，**项目概述**&#x200B;页面提供项目的详细信息。
 
-从 **项目概述**，具有必要权限的用户可以编辑 [在您的组织中创建的生产程序](creating-production-programs.md) 和 [在您的组织中创建的沙盒程序。](creating-sandbox-programs.md) 通过编辑项目，您可以：
+在&#x200B;**程序概述**&#x200B;中，具有必要权限的用户可以编辑在您的组织中创建的[生产程序](creating-production-programs.md)以及在您的组织中创建的[沙盒程序。](creating-sandbox-programs.md) 通过编辑项目，您可以：
 
 * 将 Sites 解决方案添加到具有 Assets 的现有项目，反之亦然。
 * 从具有 Sites 和 Assets 的现有项目中删除 Sites 或 Assets。
@@ -26,25 +26,25 @@ ht-degree: 53%
 
 ## 权限 {#permissions}
 
-您必须是 **业务负责人** 用于编辑程序或删除沙盒程序以及访问许可证仪表板的角色。
+您必须是&#x200B;**业务负责人**&#x200B;角色的成员才能编辑程序或删除沙盒程序以及访问许可证仪表板。
 
 ## 编辑程序 {#editing}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](#my-programs)** 页面上，单击要编辑的程序以显示其详细信息。
+1. 在&#x200B;**[我的程序](#my-programs)**&#x200B;页面上，单击要编辑的程序以显示其详细信息。
 
 1. 单击页面左上方的项目名称，然后选择&#x200B;**编辑项目**。
 
    ![“编辑程序”选项](assets/edit-program-overview.png)
 
-1. 此 **编辑项目** 页面打开 **常规** 选项卡。
+1. **编辑程序**&#x200B;页面打开到&#x200B;**常规**&#x200B;选项卡。
 
    ![“常规”选项卡](assets/edit-program-prod1.png)
 
 1. 可用于编辑程序的选项与创建程序时的选项相同。
-   * 请查看文档 [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) 和 [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) 了解各个选项的详细信息。
-   * [其他选项](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) 可用于您的生产程序，具体取决于您组织的权利。
+   * 有关各个选项的详细信息，请参阅文档[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)和[创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
+   * [其他选项](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)可能适用于您的生产程序，具体取决于您组织的权限。
 
 1. 单击&#x200B;**更新**&#x200B;以将更改保存到项目。
 
@@ -66,9 +66,9 @@ ht-degree: 53%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](#my-programs)** 页面上，单击要编辑的程序以显示其详细信息。
+1. 在&#x200B;**[我的程序](#my-programs)**&#x200B;页面上，单击要编辑的程序以显示其详细信息。
 
-1. 单击页面左上角的程序名称，然后选择 **删除项目群**.
+1. 单击页面左上角的程序名称，然后选择&#x200B;**删除程序**。
 
    ![“删除程序”选项](assets/delete-sandbox1.png)
 

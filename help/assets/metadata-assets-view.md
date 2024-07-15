@@ -1,6 +1,6 @@
 ---
-title: 如何在“资源”视图中管理元数据？
-description: 了解如何在资产视图中管理元数据。 更好的元数据管理使资源更易于访问、更易于管理和完整。
+title: 如何在Assets视图中管理元数据？
+description: 了解如何在Assets视图中管理元数据。 更好的元数据管理使资源更易于访问、更易于管理和完整。
 role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
@@ -69,18 +69,18 @@ ht-degree: 87%
 >title="元数据表单"
 >abstract="[!DNL Experience Manager Assets] 默认提供许多标准元数据字段。组织有其他元数据需求时，就需要更多元数据字段来添加业务特有的元数据。 通过元数据表单，可将自定义元数据字段添加到资源的“详细信息”页面。业务特有的元数据改善对其资源的治理和发现。"
 
-默认情况下，资源视图提供了许多标准元数据字段。 组织有额外的元数据需求，就需要更多元数据字段以添加业务特有的元数据。通过元数据表单，可将自定义元数据字段添加到资源的[!UICONTROL 详细信息]页面。业务特有的元数据改善对其资源的治理和发现。您可以从头开始创建表单，也可以重新利用现有表单。
+默认情况下，Assets视图提供了许多标准元数据字段。 组织有额外的元数据需求，就需要更多元数据字段以添加业务特有的元数据。通过元数据表单，可将自定义元数据字段添加到资源的[!UICONTROL 详细信息]页面。业务特有的元数据改善对其资源的治理和发现。您可以从头开始创建表单，也可以重新利用现有表单。
 
-您可以为不同的资源类型（不同的 MIME 类型）配置元数据表单。使用与文件的 MIME 类型相同的表单名称。资源视图会自动将上传的资源MIME类型与表单名称相匹配，并根据表单字段更新上传资源的元数据。
+您可以为不同的资源类型（不同的 MIME 类型）配置元数据表单。使用与文件的 MIME 类型相同的表单名称。Assets视图会自动将上传的资源MIME类型与表单名称相匹配，并根据表单字段更新上传资源的元数据。
 <!--
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
 -->
-资源视图使用以下顺序搜索现有元数据表单名称，以将元数据字段应用于特定类型的已上传资源：
+Assets视图使用以下顺序搜索现有元数据表单名称，以将元数据字段应用于特定类型的上传资源：
 
 MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 
-例如，如果存在名为 `PDF` 或 `pdf` 的元数据表单，则上传的 PDF 文档将包含该表单中定义的元数据字段。如果元数据表单具有名称 `PDF` 或 `pdf` 不存在，如果存在名称为的元数据表单，则资源视图匹配 `application`. 如果存在名为 `application` 的元数据表单，则上传的 PDF 文档将包含该表单中定义的元数据字段。如果资源视图仍然找不到匹配的元数据表单，它将搜索 `default` 元数据表单，用于将表单中定义的元数据字段应用于上载的PDF文档。 如果这些步骤都不起作用，Assets视图会将现成表单中定义的元数据字段应用于所有上载的PDF文档。
-如果要将元数据表单分配给文件夹，则是 [请参阅](#assign-metadata-form-folder).
+例如，如果存在名为 `PDF` 或 `pdf` 的元数据表单，则上传的 PDF 文档将包含该表单中定义的元数据字段。如果不存在名为`PDF`或`pdf`的元数据表单，但存在名为`application`的元数据表单，则Assets视图匹配。 如果存在名为 `application` 的元数据表单，则上传的 PDF 文档将包含该表单中定义的元数据字段。如果Assets视图仍然找不到匹配的元数据表单，它将搜索`default`元数据表单，以将表单中定义的元数据字段应用于上载的PDF文档。 如果这些步骤都不起作用，Assets视图会将现成表单中定义的元数据字段应用于所有上载的PDF文档。
+如果要将元数据表单分配给文件夹[，请参阅](#assign-metadata-form-folder)。
 
 >[!IMPORTANT]
 >
@@ -145,13 +145,13 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 
 2. 单击&#x200B;**[!UICONTROL 分配到文件夹]**。
 
-3. 选择文件夹并单击 **[!UICONTROL 分配]**. 您可以通过单击文件夹名称来选择文件夹。
+3. 选择文件夹并单击&#x200B;**[!UICONTROL 分配]**。 您可以通过单击文件夹名称来选择文件夹。
 
    ![将元数据表单分配给文件夹](assets/assign-to-folder.png)
 
    还可导航到文件夹详细信息页面，然后从可在右侧窗格中找到的文件夹属性中选择一个元数据表单以将该元数据表单分配给该文件夹。
 
-   ![文件夹属性中的元数据表单](assets/metadata-from-folder-props.png)
+   ![来自文件夹属性的元数据表单](assets/metadata-from-folder-props.png)
 
 ### 从文件夹中移除元数据表单 {#remove-metadata-form-folder}
 
@@ -169,7 +169,7 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在“资源”视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
+* [观看视频，了解如何在Assets视图中管理元数据表单](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 

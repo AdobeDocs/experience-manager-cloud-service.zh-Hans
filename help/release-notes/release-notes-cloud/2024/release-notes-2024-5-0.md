@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.5.0 版�
 source-git-commit: 076d2a6aa6e02a7ef6f9347f2dc36ca02103c130
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -117,11 +117,11 @@ Experience Manager Assets 现在可让您使用“Assets”视图快速[将资�
 
 
 
-### AEM Forms中的抢先体验功能 {#forms-new-early-access-features}
+### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
 
-AEM Forms抢先体验计划为您提供了一个独一无二的机会，让您能够抢在其他人之前独享尖端创新技术，并帮助塑造其发展形态。 该计划支持多项创新。
+AEM Forms Early Access Program 项目为您提供了一个独特的机会，让您可以先于其他人独家访问尖端创新，并帮助塑造其发展。该计划支持多项创新。
 
-本发行说明列出了当前版本中提供的创新功能。有关早期访问计划下可用的创新的完整列表，请参阅 [AEM Forms抢先访问计划文档](/help/forms/early-access-ea-features.md).
+本发行说明列出了当前版本中提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
 #### 增强的机器人防护方法
 
@@ -133,7 +133,7 @@ AEM Forms 通过增加对两种流行的验证码解决方案的支持，增强�
 
 AEM Forms 提供多种验证码选项，您可以选择最适合您特定需求的解决方案。
 
-您是否准备将这些验证码解决方案中的任意一个与您的自适应表单集成？我们的文档为每种验证码解决方案提供了详细的说明：[Cloudflare Turnstile](https://experienceleague.adobe.com/cn/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/cn/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 和 [Google reCAPTCHA](https://experienceleague.adobe.com/cn/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)。
+您是否准备将这些验证码解决方案中的任意一个与您的自适应表单集成？我们的文档为每种验证码解决方案提供了详细的说明：[Cloudflare Turnstile](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 和 [Google reCAPTCHA](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)。
 
 
 ### 表单服务
@@ -146,7 +146,7 @@ AEM Forms 提供多种验证码选项，您可以选择最适合您特定需求�
 
 >[!IMPORTANT]
 >
-> 如果您有兴趣加入我们的抢先体验计划以获得任何抢先体验创新，只需将您的官方地址中的电子邮件发送至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 以请求访问权限。 您可以申请访问全部或任何特定的创新。
+> 如果您有兴趣加入我们的 Early Access 计划，了解任何早期访问创新功能，只需从您的官方邮箱发送电子邮件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，申请访问权限即可。您可以申请访问全部或任何特定的创新。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -235,7 +235,7 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 * **能够将主题资源元数据传递给原生 PDF 输出**
 您可以在生成原生 PDF 输出时添加主题资源元数据。此功能可帮助您将不同主题的特定元数据（如主题标题和作者）添加到主题页眉和页脚。
 
-如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/cn/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
+如需了解有关新版本中新增功能、增强功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -247,5 +247,5 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 
 ## Experience Cloud 发行说明 {#experience-cloud}
 
-您可以在[此处](https://experienceleague.adobe.com/cn/docs/release-notes/experience-cloud/current)找到有关其他 Experience Cloud 应用程序版本的信息。
+您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/release-notes/experience-cloud/current)找到有关其他 Experience Cloud 应用程序版本的信息。
 要收到有关 Experience Cloud 发行说明更新的每月电子邮件通知，请订阅 [Adobe 优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)。

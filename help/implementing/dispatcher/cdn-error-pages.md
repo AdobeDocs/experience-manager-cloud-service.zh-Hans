@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 配置CDN错误页面 {#cdn-error-pages}
 
-万一发生意外 [Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) 无法访问AEM源服务器，默认情况下，CDN会提供一个无品牌标志的通用错误页面，该页面指示无法访问服务器。 您可以覆盖默认错误页面，方法是：将静态文件托管在自托管存储中(如Amazon S3或Azure Blob Storage)，并在使用部署的配置文件中引用它们 [Cloud Manager配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+万一[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)无法访问AEM源服务器（这种情况不太可能发生），默认情况下，CDN会提供一个非品牌的一般错误页，指示无法访问服务器。 您可以覆盖默认错误页，方法是：将静态文件托管在自托管存储中(如Amazon S3或Azure Blob Storage)，然后在使用[Cloud Manager配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)部署的配置文件中引用它们。
 
 ## 设置 {#setup}
 
@@ -26,9 +26,9 @@ config/
      cdn.yaml
 ```
 
-* 此 `cdn.yaml` 配置文件应包含元数据和以下示例中描述的规则。 此 `kind` 参数应设置为 `CDN` 并且版本应设置为架构版本，当前为 `1`.
+* `cdn.yaml`配置文件应同时包含元数据和以下示例中描述的规则。 `kind`参数应设置为`CDN`，版本应设置为架构版本，当前版本为`1`。
 
-* 在Cloud Manager中创建目标部署配置管道。 请参阅 [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) 和 [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+* 在Cloud Manager中创建目标部署配置管道。 请参阅[配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
 
 **注释**
 

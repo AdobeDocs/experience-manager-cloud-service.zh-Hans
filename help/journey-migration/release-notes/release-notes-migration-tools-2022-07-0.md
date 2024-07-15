@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service2022.7.0版中迁移工具的发行说明
-description: AEMas a Cloud Service2022.7.0版中迁移工具的发行说明
+title: AEM as a Cloud Service 2022.7.0版中的迁移工具发行说明
+description: AEM as a Cloud Service 2022.7.0版中的迁移工具发行说明
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 9%
 
 ---
 
-# AEMas a Cloud Service2022.7.0版中迁移工具的发行说明 {#release-notes}
+# AEM as a Cloud Service 2022.7.0版中的迁移工具发行说明 {#release-notes}
 
-此页概述了AEMas a Cloud Service2022.7.0中迁移工具的发行说明。
+此页概述了AEM as a Cloud Service 2022.7.0中的迁移工具的发行说明。
 
 ## Best Practices Analyzer {#bpa-release}
 
@@ -23,8 +23,8 @@ Best Practices Analyzer v2.1.30的发布日期是2022年7月27日。
 
 ### 新增功能 {#what-is-new-bpa}
 
-* BPA现在可以检测和报告可迁移的Lucene索引总大小，即Lucene索引不包括的总数 `/oak:index/lucene` 和 `/oak:index/damAssetLucene`.
-* 在BPA中添加了新模式，用于检测和报告自定义i18n词典的使用情况。 Translator.html在AEMas a Cloud Service中不可用，必须通过Cloud Manager CI/CD管道从Git部署自定义i18n词典。
+* BPA现在可以检测和报告可迁移的Lucene索引总大小，即Lucene索引总数（不包括`/oak:index/lucene`和`/oak:index/damAssetLucene`）。
+* 在BPA中添加了新模式，用于检测和报告自定义i18n词典的使用情况。 Translator.html在AEM as a Cloud Service中不可用，必须通过Cloud Manager CI/CD管道从Git部署自定义i18n词典。
 
 ### 错误修复 {#bug-fixes-bpa}
 
@@ -60,5 +60,5 @@ Cloud Acceleration Manager的发布日期是2022年7月15日。
 
 ### 新增功能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager现在可让用户手动检索迁移令牌，以便能够在自动检索失败时开始摄取。 如果客户设置了阻止CAM的IP允许列表，或者非管理员用户尝试开始引入，则自动检索可能会失败。 请参阅 [疑难解答](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) 以了解更多信息。
+* Cloud Acceleration Manager现在为用户提供了手动检索迁移令牌的功能，以便能够在自动检索失败时开始引入。 如果客户设置了阻止CAM的IP允许列表，或者非管理员用户尝试开始引入，则自动检索可能会失败。 有关详细信息，请参阅[疑难解答](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting)。
 * 为了方便使用，“迁移复杂性”页面上的长表格现在可以折叠。

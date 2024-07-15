@@ -43,10 +43,10 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 在还原到完全内容还原之前，请考虑以下选项以更轻松地还原您的内容。
 
-* 如果已删除路径的软件包可用，请使用再次安装该软件包 [包管理器。](/help/implementing/developing/tools/package-manager.md)
-* 如果删除的路径是Sites中的页面，请使用 [恢复树功能。](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* 如果删除的路径是一个资源文件夹，并且原始文件可用，请通过以下方式重新上传它们 [资产控制台。](/help/assets/add-assets.md)
-* 如果删除内容是资源，请考虑以下事项 [恢复资产的早期版本。](/help/assets/manage-digital-assets.md)
+* 如果已删除路径的包可用，请使用[包管理器再次安装该包。](/help/implementing/developing/tools/package-manager.md)
+* 如果删除的路径是Sites中的页面，请使用[Restore Tree函数。](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* 如果删除的路径是一个资源文件夹，并且原始文件可用，请通过[Assets控制台重新上传它们。](/help/assets/add-assets.md)
+* 如果删除内容是资源，请考虑恢复[资源的早期版本。](/help/assets/manage-digital-assets.md)
 
 如果以上选项都不起作用，并且已删除路径的内容很重要，请按照以下部分中的详细说明执行内容恢复。
 
@@ -55,11 +55,11 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 默认情况下，任何用户都没有权限在开发、生产或暂存环境中执行内容恢复。 为了将此权限委派给特定用户或组，请执行以下步骤。
 
 1. 创建一个产品配置文件，其表达式名称引用了内容恢复。
-1. 提供 **项目访问** 所需程序的权限。
-1. 提供 **内容恢复** 访问所需的环境或项目的所有环境，具体取决于您的用例。
+1. 提供所需程序的&#x200B;**程序访问权限**&#x200B;权限。
+1. 根据您的用例，对程序的所需环境或所有环境提供&#x200B;**内容还原**&#x200B;权限。
 1. 将用户分配给该配置文件配置文件。
 
-有关管理权限的详细信息，请参阅 [自定义权限](/help/implementing/cloud-manager/custom-permissions.md) 文档。
+有关管理权限的详细信息，请参阅[自定义权限](/help/implementing/cloud-manager/custom-permissions.md)文档。
 
 ## 恢复内容 {#restoring-content}
 
@@ -67,19 +67,19 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 >[!NOTE]
 >
->用户必须具有 [适当权限](#user-role) 以启动还原操作。
+>用户必须具有[适当的权限](#user-role)才能启动还原操作。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 单击要启动还原的程序。
 
-1. 从 **项目概述** 页面，在 **环境** 信息卡，单击要启动还原的环境旁边的省略号按钮，然后选择 **恢复内容**.
+1. 在&#x200B;**程序概述**&#x200B;页面的&#x200B;**环境**&#x200B;信息卡中，单击要启动还原的环境旁边的省略号按钮，然后选择&#x200B;**还原内容**。
 
    ![还原选项](assets/backup-option.png)
 
    * 或者，您也可以直接导航到&#x200B;**还原内容**&#x200B;选项卡。
 
-1. 在 **恢复内容** 环境详细信息页面的选项卡中，首先在 **恢复时间** 下拉列表。
+1. 在环境详细信息页面的&#x200B;**还原内容**&#x200B;选项卡上，首先在&#x200B;**还原时间**&#x200B;下拉列表下选择还原的时间范围。
 
    1. 如果您选择&#x200B;**过去 24 小时**，则相邻的&#x200B;**时间**&#x200B;字段让您指定过去 24 小时内的准确时间来恢复。
 
@@ -93,13 +93,13 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
    ![备份可用](assets/backup-available.png)
 
-1. 使用信息图标查找要还原的备份，以查看有关该备份中包含的代码版本和AEM版本的信息，并考虑以下情况下还原的影响 [选择备份。](#choosing-the-right-backup)
+1. 使用信息图标查找要还原的备份，以查看有关该备份中包含的代码版本和AEM版本的信息，并在[选择备份时考虑还原的影响。](#choosing-the-right-backup)
 
    ![备份信息](assets/backup-info.png)
 
    * 为还原选项显示的时间戳全部基于用户计算机的时区。
 
-1. 单击 **恢复** 图标，表示要恢复以启动恢复过程的备份。
+1. 单击代表要还原以启动还原过程的备份的行右端的&#x200B;**还原**&#x200B;图标。
 
 1. 查看&#x200B;**恢复内容**&#x200B;对话框，然后单击&#x200B;**还原**&#x200B;以确认您的请求。
 

@@ -34,7 +34,7 @@ ht-degree: 84%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 在控制台中，点按或单击要休眠的程序，以显示其详细信息。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，点按或单击要休眠的程序以显示其详细信息。
 
 1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**Developer Console**。
 
@@ -50,11 +50,11 @@ ht-degree: 84%
 
    ![确认休眠](assets/hibernate-2.png)
 
-当休眠成功时，您会在中看到针对您环境的休眠进程完成通知 **开发人员控制台** 屏幕。
+当休眠成功时，您会在&#x200B;**Developer Console**&#x200B;屏幕中看到针对您环境的休眠进程完成通知。
 
 ![休眠确认](assets/hibernate-4.png)
 
-在开发人员控制台中，您还可以单击 **环境** 上面痕迹导航中的链接 **Pod** 要休眠的环境列表的下拉列表。
+在Developer Console中，您还可以单击&#x200B;**Pod**&#x200B;下拉列表上痕迹导航中的&#x200B;**环境**&#x200B;链接，查看要休眠的环境列表。
 
 ![要休眠的环境列表](assets/hibernate-1b.png)
 
@@ -68,13 +68,13 @@ ht-degree: 84%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 在控制台中，点按或单击要解除休眠的程序，以显示其详细信息。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，点按或单击要解除休眠的程序以显示其详细信息。
 
 1. 在&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**Developer Console**。
 
    * 有关 Developer Console 的更多详细信息，请参阅[访问 Developer Console。](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)
 
-1. 单击 **解除休眠**.
+1. 单击&#x200B;**解除休眠**。
 
    ![解除休眠按钮](assets/de-hibernation-img1.png)
 
@@ -91,7 +91,7 @@ ht-degree: 84%
    ![解除休眠完成](assets/de-hibernation-img4.png)
 
 
-在开发人员控制台中，您还可以单击 **环境** 上面痕迹导航中的链接 **Pod** 要解除休眠的环境列表的下拉列表。
+在Developer Console中，您还可以单击&#x200B;**Pod**&#x200B;下拉列表上痕迹导航中的&#x200B;**环境**&#x200B;链接，查看要解除休眠的环境列表。
 
 ![休眠 Pod 列表](assets/de-hibernate-1b.png)
 

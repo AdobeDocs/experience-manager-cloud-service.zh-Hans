@@ -23,7 +23,7 @@ Adobe 非常重视应用程序的监控、可用性和性能。AEM as a Cloud Se
 
 本文档描述了如何管理对您的 AEM as a Cloud Service 环境上启用的 New Relic One 应用程序性能监控 (APM) 功能的访问，促进支持性能并让您最大限度地利用 AEM as a Cloud Service。
 
-创建新的生产程序时，会自动创建与AEMas a Cloud Service程序关联的New Relic One子帐户。 [必须激活此子帐户](#activate-sub-account) 以开始摄取数据。
+创建新的生产程序时，会自动创建与您的AEM as a Cloud Service程序关联的New Relic One子帐户。 [必须激活此子帐户](#activate-sub-account)才能开始摄取数据。
 
 ## 功能 {#transaction-monitoring}
 
@@ -43,19 +43,19 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 >[!NOTE]
 >
->中的用户 **业务负责人** 或 **部署管理员** 必须登录角色才能管理New Relic One子帐户。
+>必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的用户才能管理New Relic One子帐户。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 在控制台中，点按或单击要管理New Relic One用户的程序。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，点按或单击要为其管理New Relic One用户的程序。
 
-1. 在底部 **环境** 在程序概述页面上，单击省略号按钮并选择 **激活New Relic**.
+1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮并选择&#x200B;**激活New Relic**。
 
    ![管理用户](assets/newrelic-activate-sub-account.png)
 
    * 您还可以通过程序的&#x200B;**环境**&#x200B;屏幕顶部的省略号按钮访问&#x200B;**管理用户**。
 
-1. [运行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) ，以便成功完成相同环境以完成对子帐户的激活。
+1. [为同一环境运行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)以成功完成，以完成子帐户激活。
 
 停用子帐户时，不会摄取任何数据。
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
    * 您还可以通过程序的&#x200B;**环境**&#x200B;屏幕顶部的省略号按钮访问&#x200B;**管理用户**。
 
-1. 在 **管理New Relic用户** 对话框，输入要添加的用户的名字和姓氏，然后单击 **添加** 按钮。 对要添加的所有用户重复此步骤。
+1. 在&#x200B;**管理New Relic用户**&#x200B;对话框中，输入要添加的用户的名字和姓氏，然后单击&#x200B;**添加**&#x200B;按钮。 对要添加的所有用户重复此步骤。
 
    ![添加用户](assets/newrelic-add-users.png)
 
@@ -145,7 +145,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 ## New Relic One用户访问疑难解答 {#troubleshooting}
 
-如果您按照一节所述被添加为New Relic One用户 [管理New Relic One用户](#manage-users) 并且无法按照以下步骤找到原始帐户确认电子邮件。
+如果您按照[管理New Relic One用户](#manage-users)部分中所述被添加为New Relic One用户，并且无法找到原始帐户确认电子邮件，请按照以下步骤操作。
 
 1. 导航至 New Relic 的登录页面，网址为 [`login.newrelic.com/login`](https://login.newrelic.com/login)。
 
@@ -179,9 +179,9 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 >
 >如果在90天或更长时间内New Relic One子帐户中未检测到任何活动，则将停止APM代理。
 >
->请按照中的相同步骤操作 [激活您的New Relic One子帐户](#activate-sub-account) 部分，以重新激活您的New Relic One子帐户。
+>按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。
 
-有关AEMas a Cloud Service计划的New Relic One产品的更多帮助或更多指导，请通过 [AEM支持门户。](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
+有关AEM as a Cloud Service计划的New Relic One产品的更多帮助或更多指导，请通过[AEM支持门户打开支持票证。](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
 
 ## 关于 New Relic One 的常见问题 {#faqs}
 
@@ -227,4 +227,4 @@ New Relic One 为用户提供了跨所有帐户搜索的能力，用户可以在
 
 ### 我的 New Relic One 帐户的 APM 代理已停止。发生了什么情况？ {#deactivated}
 
-如果在 90 天或更长时间内未检测到任何活动，[APM 代理将停止](#limitations)。请按照中的相同步骤操作 [激活您的New Relic One子帐户](#activate-sub-account) 部分，以重新激活您的New Relic One子帐户。
+如果在 90 天或更长时间内未检测到任何活动，[APM 代理将停止](#limitations)。按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。

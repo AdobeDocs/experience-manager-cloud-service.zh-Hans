@@ -1,6 +1,6 @@
 ---
-title: 管理内容片段（资产 — 内容片段）
-description: 了解如何使用Assets控制台管理您的AEM内容片段，作为Headless内容的基础或用于页面创作。
+title: 管理内容片段(Assets — 内容片段)
+description: 了解如何使用Assets控制台管理您的AEM内容片段，作为您的Headless内容的基础或用于页面创作。
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
@@ -14,7 +14,7 @@ ht-degree: 68%
 
 # 管理内容片段 {#managing-content-fragments}
 
-了解如何使用Assets控制台管理您的AEM内容片段，作为Headless内容的基础或用于页面创作。
+了解如何使用Assets控制台管理您的AEM内容片段，作为您的Headless内容的基础或用于页面创作。
 
 定义完您的[内容片段模型](#creating-a-content-model)后，您可以使用这些模型[创建您的内容片段](#creating-a-content-fragment)。
 
@@ -39,9 +39,9 @@ ht-degree: 68%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->现在，它们主要通过 **[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** 控制台，但是仍然可以从以下位置管理它们 **资产** 控制台。 本节介绍以下管理方面的信息： **资产** 控制台。
+>它们现在主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;控制台进行管理，但仍可以从&#x200B;**Assets**&#x200B;控制台进行管理。 本节介绍如何从&#x200B;**Assets**&#x200B;控制台进行管理。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
 
 ## 创建内容片段 {#creating-content-fragments}
 
@@ -57,11 +57,11 @@ ht-degree: 68%
 1. 选择 **创建**，然后选择 **内容片段** ，以打开向导。
 1. 向导的第一步要求您指定新片段的基础。
 
-   * [模型](/help/assets/content-fragments/content-fragments-models.md)  — 用于创建需要结构化内容的片段；例如， **冒险** 模型
+   * [模型](/help/assets/content-fragments/content-fragments-models.md) — 用于创建需要结构化内容的片段；例如，**冒险**&#x200B;模型
 
       * 将显示所有可用模型。
 
-   选择后，使用 **下一个** 以继续。
+   选择后，使用&#x200B;**下一步**&#x200B;继续。
 
    ![选择内容片段模型](assets/cfm-managing-01.png)
 
@@ -90,45 +90,45 @@ ht-degree: 68%
 1. 选 **择创建** ，以完成操作，然后打开片段 **进行编辑** ，或返回控制台并执行完 **成**。
 
    >[!NOTE]
-   >在 **列表** 控制台模式，您可以更新 **查看设置** 以启用 **内容片段模型** 列。
+   >在控制台的&#x200B;**列表**&#x200B;模式下，您可以更新&#x200B;**视图设置**&#x200B;以启用&#x200B;**内容片段模型**&#x200B;列。
 
-## 资产控制台中的内容片段操作 {#actions-for-a-content-fragment-assets-console}
+## Assets控制台中的内容片段操作 {#actions-for-a-content-fragment-assets-console}
 
-在 **资产** 控制台为您的内容片段提供了一系列可用操作，包括：
+在&#x200B;**Assets**&#x200B;控制台中，您的内容片段可以执行一系列操作：
 
 * 在工具栏中；选择片段后，所有适当的操作都可用。
-* 作为 [快速操作](/help/sites-cloud/authoring/basic-handling.md#quick-actions)；可用于各个片段信息卡的操作的子集。
+* 作为[快速操作](/help/sites-cloud/authoring/basic-handling.md#quick-actions)；可用于各个片段信息卡的操作的子集。
 
-![工具栏中的操作](assets/cfm-managing-02.png)
+工具栏中的![操作](assets/cfm-managing-02.png)
 
 选择片段以显示包含适用操作的工具栏：
 
-* **重新处理资产**
+* **重新处理Assets**
 * **创建**
 * **下载**
 
    * 将片段另存为ZIP文件；您可以定义是否包含元素、变体、元数据。
 
-* **结帐**
+* **签出**
 * **属性**
 
    * 用于查看、编辑或同时查看或编辑片段的元数据。
 
 * **编辑**
 
-   * 允许您 [打开片段以编辑内容](/help/assets/content-fragments/content-fragments-variations.md) 及其元素、变体、关联内容和元数据。
+   * 允许您[打开片段以编辑内容](/help/assets/content-fragments/content-fragments-variations.md)及其元素、变体、关联的内容和元数据。
 
 * **快速发布**
 * **管理发布**
 * **管理标记**
-* **目标收藏集**
-* **复制** (和 **粘贴**)
+* **到收藏集**
+* **复制**（和&#x200B;**粘贴**）
 * **移动**
 * **删除**
 
 >[!NOTE]
 >
->其中许多是 [资产标准操作](/help/assets/manage-digital-assets.md) 和/或 [AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html).
+>其中许多是Assets](/help/assets/manage-digital-assets.md)和/或[AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)的[标准操作。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
@@ -138,11 +138,11 @@ ht-degree: 68%
 >
 >要编辑内容片段，您需要[相应的权限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。如果您遇到问题，请联系您的系统管理员。
 
-1. 使用 **资产** 控制台以导航到内容片段的位置。
+1. 使用&#x200B;**Assets**&#x200B;控制台导航到内容片段的位置。
 1. 打开片段进行编辑，方法是：
 
    * 单击/点按片段或片段链接（具体取决于控制台视图）。
-   * 选择片段，然后 **编辑** 工具栏中。
+   * 选择片段，然后从工具栏中&#x200B;**编辑**。
 
 1. 片段编辑器将打开。 根据需要进行更改：
 
@@ -152,7 +152,7 @@ ht-degree: 68%
 
    >[!NOTE]
    >
-   >**保存并关闭** 通过以下方式提供 **保存** 下拉列表。
+   >**保存并关闭**&#x200B;可通过&#x200B;**保存**&#x200B;下拉列表使用。
 
    >[!NOTE]
    >
@@ -174,7 +174,7 @@ ht-degree: 68%
 * [结构树](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [预览](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![内容片段编辑器中的模式](assets/cfm-managing-04.png)
+内容片段编辑器中的![模式](assets/cfm-managing-04.png)
 
 ### 内容片段编辑器中的工具栏操作 {#toolbar-actions-in-the-content-fragment-editor}
 
@@ -198,7 +198,7 @@ ht-degree: 68%
    * **已修改**：橙色
    * **已停用**：红色
 
-* 按钮使您能够 **尝试新编辑器**，直接打开 *新建* [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md) 该页面可通过 [内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* 通过按钮可直接打开&#x200B;*新* [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)（可通过[内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)访问），您可以&#x200B;**尝试新编辑器**。
 
   >[!WARNING]
   >
@@ -240,7 +240,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
   >
   >除了仅保存您的更改外，这些操作还会更新任何引用，并确保 Dispatcher 按需要刷新。这些更改可能需要一些时间才能处理。因此，对于大型/复杂/重载系统，性能可能会受到影响。
   >
-  >使用时，请牢记此过程 **保存并关闭** 然后快速重新进入片段编辑器以进行并保存更多更改。
+  >使用&#x200B;**保存并关闭**&#x200B;时请记住此过程，然后快速重新进入片段编辑器以进行并保存更多更改。
 
 * **关闭**
 
@@ -344,7 +344,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 >比较片段时无法编辑片段内容。
 
-![比较变量](assets/cfm-managing-06.png)
+![比较变体](assets/cfm-managing-06.png)
 
 ## 恢复到某个版本  {#reverting-to-a-version}
 
@@ -364,17 +364,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 >如果发布的内容片段尚未发布模型，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
-必须发布内容片段才能在发布环境中使用。 可使用标准资产功能完成此操作：
+必须发布内容片段才能在发布环境中使用。 可使用标准Assets功能完成此操作：
 
 * [快速发布](/help/assets/manage-publication.md#quick-publish)
 * [管理发布](/help/assets/manage-publication.md#manage-publication)
 
 此地址可以访问：
 
-* 创建后；使用 [资产控制台中可用的操作](#actions-for-a-content-fragment-assets-console).
-* 从 [内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor).
+* 创建后；使用Assets控制台](#actions-for-a-content-fragment-assets-console)中可用的[操作。
+* 从[内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor)。
 
-此外，当您 [发布使用片段的页面](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)；片段在页面引用中列出。
+此外，当您[发布使用片段](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)的页面时；该片段在页面引用中列出。
 
 >[!CAUTION]
 >

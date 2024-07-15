@@ -23,7 +23,7 @@ ht-degree: 91%
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从 **概述** 页面，导航到 **IP允许列表** 使用侧面导航选项卡的页面。
+1. 从&#x200B;**概述**&#x200B;页面，使用侧导航选项卡导航到&#x200B;**IP允许列表**&#x200B;页面。
 
    ![侧面板中的“IP 允许列表”选项](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 

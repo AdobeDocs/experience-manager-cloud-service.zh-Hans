@@ -31,14 +31,14 @@ ht-degree: 49%
 * 使用表单数据模型(FDM)将数据无缝发送到配置的数据源。
 * 方便地将数据提交到 REST 端点。
 
-您可以 [扩展默认提交操作](custom-submit-action-form.md). 您还可以自定义提交操作，以满足组织特定的要求。
+您可以[扩展默认的提交操作](custom-submit-action-form.md)。 您还可以自定义提交操作，以满足组织特定的要求。
 
-要为自适应定义提交操作，请使用的“配置”对话框， **自适应表单容器** 组件。 的“配置”对话框 **自适应表单容器** 组件包括：
+要为自适应定义提交操作，请使用&#x200B;**自适应表单容器**&#x200B;组件的“配置”对话框。 **自适应表单容器**&#x200B;组件的“配置”对话框包括：
 * “基本”选项卡
 * 表单数据模型选项卡
 * “提交”选项卡
 
-您可以使用“配置”对话框定义表单容器属性。 要了解有关表单容器组件的“配置”对话框的更多信息， [单击此处。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
+您可以使用“配置”对话框定义表单容器属性。 要了解有关表单容器组件的“配置”对话框的详细信息，[请单击此处。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html)
 
 ## 选择并配置自适应表单的提交操作 {#select-and-configure-submit-action}
 
@@ -51,10 +51,10 @@ ht-degree: 49%
 
    ![单击扳手图标以打开“自适应表单容器”对话框来配置提交操作](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. 选择并配置 **[!UICONTROL 提交操作]**，具体取决于您的要求。
+1. 根据您的要求，选择并配置&#x200B;**[!UICONTROL 提交操作]**。
 
 您还可以为自适应表单提交配置不同的操作。
-* **重定向URL/路径**  — 此选项允许用户为每个表单配置一个页面，表单用户在提交自适应表单后会重定向到该页面。
+* **重定向URL/路径** — 此选项允许用户为每个表单配置一个页面，表单用户在提交自适应表单后会重定向到该页面。
 * **显示消息** - 通过此选项，用户可添加在成功提交自适应表单时显示的消息。预定义文本包含在对话框中，用户可对其进行修改。
 
 有关以下提交操作的详细信息，请参阅：
@@ -74,7 +74,7 @@ ht-degree: 49%
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
 * [将自适应表单连接到 Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
-您可以 [自定义默认提交操作](custom-submit-action-form.md). 此外，您可以自定义提交操作以符合特定的组织要求。
+您可以[自定义默认的提交操作](custom-submit-action-form.md)。 此外，您可以自定义提交操作以符合特定的组织要求。
 
 
 <!--
@@ -213,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 作为 AEM 安全和强化指南的一部分，配置自定义错误页面，例如 400.jsp、404.jsp 和 500.jsp。如果提交表单时出现 400、404 或 500 错误，则将调用这些处理程序。在发布节点上触发这些错误代码时，也将调用处理程序。您还可以为其他 HTTP 错误代码创建 JSP 页面。
 
-当您将包含XML或JSON数据投诉的表单数据模型(FDM)或基于架构的自适应表单预填充到数据不包含的架构时 `<afData>`， `<afBoundData>`、和 `</afUnboundData>` 标签时，自适应表单中无界字段的数据将丢失。 架构可以是XML架构、JSON架构或表单数据模型(FDM)。 未绑定的字段是自适应表单字段，不带 `bindref` 属性。
+当您将包含XML或JSON数据投诉的表单数据模型(FDM)或基于架构的自适应表单预填充到数据不包含`<afData>`、`<afBoundData>`和`</afUnboundData>`标记的架构时，自适应表单的未绑定字段的数据将丢失。 架构可以是XML架构、JSON架构或表单数据模型(FDM)。 未绑定的字段是自适应表单字段，不带 `bindref` 属性。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

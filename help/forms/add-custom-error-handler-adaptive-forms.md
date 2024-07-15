@@ -68,7 +68,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 其中：
 
 * `errorCausedBy` 描述失败的原因。
-* `errors` 提及未能通过验证标准的字段的SOM表达式以及验证错误消息。
+* `errors`提及验证条件失败的字段的SOM表达式以及验证错误消息。
 * `originCode` 字段由 AEM 添加，包含由外部服务返回的 http 状态代码。
 * `originMessage` 字段由 AEM 添加，包含由外部服务返回的原始错误数据。
 
@@ -111,7 +111,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 * `detail (optional)` 提供有关失败的其他详细信息（如有必要）。
 * `instance (optional)` 表示与失败相关的实例或标识符，并可帮助跟踪或识别具体发生的失败。
 * `validationErrors (required)` 包含有关验证错误的信息。它包含以下字段：
-   * `fieldname` 提及未能通过验证标准的字段的SOM表达式。
+   * `fieldname`提及未能通过验证条件的字段的SOM表达式。
    * `dataRef` 表示未通过验证的字段的 JSON 路径或 XPath。
    * `details` 包含带错误字段的验证错误消息。
 * `originCode (optional)` 字段由 AEM 添加，包含由外部服务返回的 http 状态代码。
@@ -141,9 +141,9 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
           ]}
   ```
 
-  您可以通过点按自适应表单中任何字段并选择 **[!UICONTROL 查看SOM表达式]**.
+  您可以通过点按自适应表单中任何字段并选择&#x200B;**[!UICONTROL 查看SOM表达式]**&#x200B;来查看该字段的SOM表达式。
 
-  ![在自定义错误处理程序中显示错误响应的自适应表单字段的SOM表达式](/help/forms/assets/custom-error-handler-somexpression.png)
+  ![自适应表单字段的Som表达式，用于显示自定义错误处理程序中的错误响应](/help/forms/assets/custom-error-handler-somexpression.png)
 
 +++
 
@@ -193,7 +193,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 如果错误响应处于标准架构或服务器端验证失败，则支持默认错误处理程序以在字段上显示错误消息。
 为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)操作来使用默认错误处理程序，以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用默认错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用规则编辑器的调用服务操作添加默认错误处理程序，请执行以下步骤：
 
-1. 在创作模式下打开自适应表单，选择表单组件，然后选择 **[!UICONTROL 规则编辑器]** 以打开规则编辑器。
+1. 在创作模式下打开自适应表单，选择一个表单组件，然后选择&#x200B;**[!UICONTROL 规则编辑器]**&#x200B;以打开规则编辑器。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在规则的 **When** 部分中创建条件。例如，**在更改[宠物名称 ID 字段]**&#x200B;时，会从&#x200B;**选择状态**&#x200B;下拉列表中更改选择。
 1. 在 **Then** 部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 调用服务]**。
@@ -229,12 +229,12 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 要创建自定义错误函数，请执行以下步骤：
 
-1. [克隆AEM Formsas a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+1. [克隆AEM Formsas a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)。
 1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 文件夹下创建一个文件夹。例如，创建一个名为 `experience-league` 的文件夹
 1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 并创建一个`ClientLibraryFolder` 作为 `clientlibs`。
 1. 创建一个名为 `js` 的文件夹。
 1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 文件夹。
-1. 添加JavaScript文件，例如， `function.js`. 该文件包含自定义错误处理程序的代码。
+1. 添加JavaScript文件，例如`function.js`。 该文件包含自定义错误处理程序的代码。
 让我们将以下代码添加到该 JavaScript 文件中，以在浏览器控制台中显示从 REST 服务端点接收到的响应和标头。
 
    ```javascript
@@ -258,7 +258,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
    >[!NOTE]
    >
-   > 在 `.content.xml` 文件，添加 `allowProxy` 和 `categories` 属性。
+   > 在`.content.xml`文件中，添加`allowProxy`和`categories`属性。
    >
    > * `allowProxy = [Boolean]true`
    > * `categories= customfunctionsdemo`
@@ -300,11 +300,11 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 ![在自适应表单容器配置中添加客户端库的名称](/help/forms/assets/client-library-category-name.png)
 
-在本例中，客户端库名称提供为 `customfunctionsdemo` 在 `.content.xml` 文件。
+在这种情况下，客户端库名称在`.content.xml`文件中提供为`customfunctionsdemo`。
 
 要通过&#x200B;**[!UICONTROL 规则编辑器的调用服务]**&#x200B;操作使用自定义错误处理程序，请执行以下操作：
 
-1. 在创作模式下打开自适应表单，选择表单组件，然后选择 **[!UICONTROL 规则编辑器]** 以打开规则编辑器。
+1. 在创作模式下打开自适应表单，选择一个表单组件，然后选择&#x200B;**[!UICONTROL 规则编辑器]**&#x200B;以打开规则编辑器。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在规则的 **When** 部分中创建条件。例如，在更改&#x200B;**[宠物名称 ID 字段]**&#x200B;时，会从&#x200B;**选择状态**&#x200B;下拉列表&#x200B;**更改**&#x200B;选择。
 1. 在 **Then** 部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 调用服务]**。

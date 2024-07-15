@@ -1,5 +1,5 @@
 ---
-title: 变量 — 创作片段内容（资产 — 内容片段）
+title: 变量 — 创作片段内容(Assets — 内容片段)
 description: 了解内容片段变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而提高灵活性。
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
@@ -14,15 +14,15 @@ ht-degree: 53%
 
 # 变体 – 创作片段内容{#variations-authoring-fragment-content}
 
-[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 是AdobeExperience Manager (AEM)as a Cloud Service中的内容片段的一项重要功能。 这是因为它们允许您创建和编辑 **母版** 用于特定渠道和方案的内容。 特别是，这使Headless内容投放更加灵活。
+[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)是Adobe体验管理器(AEM)as a Cloud Service中的内容片段的重要功能。 这是因为它们允许您创建和编辑&#x200B;**母版**&#x200B;内容的副本，以用于特定渠道和方案。 特别是，这使Headless内容投放更加灵活。
 
 >[!NOTE]
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
-从 **变体** 选项卡，您可以执行以下操作：
+在&#x200B;**变体**&#x200B;选项卡中，您可以执行以下操作：
 
 * 为片段[输入内容](#authoring-your-content)，
 * [创建和管理&#x200B;**主**&#x200B;内容的变体](#managing-variations)，
@@ -31,7 +31,7 @@ ht-degree: 53%
 
 * [将可视化资产插入片段](#inserting-assets-into-your-fragment)（图像）
 
-* 选择范围 [富文本](#rich-text)， [纯文本](#plain-text)、和 [Markdown](#markdown) 进行编辑
+* 选择介于[富文本](#rich-text)、[纯文本](#plain-text)和[Markdown](#markdown)之间以进行编辑
 
 * [上传内容](#uploading-content)
 
@@ -47,7 +47,7 @@ ht-degree: 53%
 
 ## 创作内容 {#authoring-your-content}
 
-当您打开内容片段进行编辑时， **变体** 选项卡默认处于打开状态。 在此，您可以为主要或任何变体创作内容。结构化片段包含在内容模型中定义的各种数据类型的字段。
+当您打开内容片段进行编辑时，**变体**&#x200B;选项卡默认处于打开状态。 在此，您可以为主要或任何变体创作内容。结构化片段包含在内容模型中定义的各种数据类型的字段。
 
 例如：
 
@@ -57,17 +57,17 @@ ht-degree: 53%
 
 * 直接在&#x200B;**变体**&#x200B;选项卡中编辑您的内容；每种数据类型都提供不同的编辑选项，例如：
 
-   * 对象 **多行文本** 字段，您还可以打开 [全屏编辑器](#full-screen-editor) 至：
+   * 对于&#x200B;**多行文本**&#x200B;字段，您还可以打开[全屏编辑器](#full-screen-editor)以：
 
       * 选择[格式](#formats)
       * 查看更多编辑选项([富文本](#rich-text)格式)
       * 访问[操作](#actions)
 
-   * 对象 **片段引用** 字段， [编辑内容片段](#fragment-references-edit-content-fragment) 选项可用，具体取决于模型定义。
+   * 对于&#x200B;**片段引用**&#x200B;字段，[编辑内容片段](#fragment-references-edit-content-fragment)选项可用，具体取决于模型定义。
 
-* 分配 **标记** 到当前变体；可以添加、更新和删除标记。
+* 将&#x200B;**标记**&#x200B;分配给当前变量；可以添加、更新和删除标记。
 
-   * [标记](/help/sites-cloud/authoring/sites-console/tags.md) 在组织片段时功能强大，因为其可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
+   * [标记](/help/sites-cloud/authoring/sites-console/tags.md)在组织片段时功能强大，因为它们可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
 
       * 搜索标记将返回片段，并突出显示标记变量。
       * 变体标记还可用于对特定内容分发网络（CDN）配置文件（用于 CDN 缓存）的变体进行分组，而不是使用变体名称。
@@ -82,7 +82,7 @@ ht-degree: 53%
 
 >[!NOTE]
 >
->根据底层模型中的定义，字段可以遵循某些类型 [验证](/help/assets/content-fragments/content-fragments-models.md#validation).
+>根据基础模型中的定义，字段可以受特定类型的[验证](/help/assets/content-fragments/content-fragments-models.md#validation)的约束。
 
 ### 全屏编辑器 {#full-screen-editor}
 
@@ -144,7 +144,7 @@ ht-degree: 53%
    * 查找/替换
    * 拼写检查程序
    * [注释](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [插入内容片段](#inserting-content-fragment-into-your-fragment)；在您的 **多行文本** 字段配置有 **允许片段引用**.
+* [插入内容片段](#inserting-content-fragment-into-your-fragment)；当您的&#x200B;**多行文本**&#x200B;字段配置为&#x200B;**允许片段引用**&#x200B;时可用。
 
 也可以从全屏编辑器访问[操作](#actions)。
 
@@ -154,13 +154,13 @@ ht-degree: 53%
 
 >[!CAUTION]
 >
->如果您选择 **纯文本**，您可能会丢失插入的任何格式、标记或资产 **富文本** 或 **Markdown**.
+>如果选择&#x200B;**纯文本**，则可能会丢失任何格式、标记或插入到&#x200B;**富文本**&#x200B;或&#x200B;**标记**&#x200B;中的资产。
 
 ### Markdown {#markdown}
 
 >[!NOTE]
 >
->欲了解更多信息，请参见 [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) 文档。
+>有关完整信息，请参阅[Markdown](/help/assets/content-fragments/content-fragments-markdown.md)文档。
 
 这让您使用 Markdown 设置文本格式。您可以定义：
 
@@ -191,21 +191,21 @@ ht-degree: 53%
 
 #### 编辑内容片段 {#fragment-references-edit-content-fragment}
 
-选项 **编辑内容片段** 在新编辑器选项卡中（在同一浏览器选项卡中）打开该片段。
+选项&#x200B;**编辑内容片段**&#x200B;在新编辑器选项卡（在同一浏览器选项卡中）中打开该片段。
 
-再次选择原始选项卡(例如， **小马公司**)关闭此辅助选项卡(在本例中， **Adam Smith**)。
+再次选择原始选项卡（例如，**Little Pony Inc.**）将关闭此二级选项卡（在本例中，即&#x200B;**Adam Smith**）。
 
 ![片段引用](assets/cfm-variations-editreference.png)
 
 #### 新内容片段 {#fragment-references-new-content-fragment}
 
-选项 **新内容片段** 允许您创建片段。 为此，将在编辑器中打开创建内容片段向导的变体。
+选项&#x200B;**新建内容片段**&#x200B;允许您创建片段。 为此，将在编辑器中打开创建内容片段向导的变体。
 
-**要创建内容片段，请执行以下操作：**
+**创建内容片段：**
 
 1. 导航到所需的文件夹，然后选择该文件夹。
 1. 选择&#x200B;**“下一个”**。
-1. 指定属性；例如， **标题**.
+1. 正在指定属性；例如，**标题**。
 1. 选择&#x200B;**“创建”**。
 1. 最后：
    1. **完成**:
@@ -217,7 +217,7 @@ ht-degree: 53%
 
 ### 查看关键统计信息 {#viewing-key-statistics}
 
-打开全屏编辑器时，操作 **文本统计信息** 显示有关文本的一系列信息。
+当全屏编辑器打开时，操作&#x200B;**文本统计信息**&#x200B;显示有关文本的一系列信息。
 
 例如：
 
@@ -233,7 +233,7 @@ ht-degree: 53%
 
 >[!NOTE]
 >
->在更高的技术水平上，该系统保留其认为的句子提供了 *最佳信息密度和唯一性比* 根据特定算法。
+>在更高的技术水平上，系统根据特定算法保持其认为提供&#x200B;*最佳信息密度和唯一性比*&#x200B;的句子。
 
 >[!CAUTION]
 >
@@ -325,15 +325,15 @@ ht-degree: 53%
 
 * 删除应用了注释的整个文本时，也会删除注释。
 
-* 可以通过选择 **注释** 选项卡。
+* 通过选择片段编辑器中的&#x200B;**注释**&#x200B;选项卡，可以列出和删除它。
 
   ![注释](assets/cfm-variations-08.png)
 
-* 您可在 [时间线](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) 所选片段的。
+* 可以在所选片段的[时间线](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中查看和删除它。
 
 ### 将资源插入片段 {#inserting-assets-into-your-fragment}
 
-要简化创作内容片段的过程，您可以添加 [资产](/help/assets/manage-digital-assets.md) （图像）直接复制到片段。
+为了简化内容片段的创作过程，您可以将[Assets](/help/assets/manage-digital-assets.md)（图像）直接添加到片段。
 
 它们会被添加到片段的段落序列中，且不加任何格式；在[页面上使用/引用片段时](/help/sites-cloud/authoring/fragments/content-fragments.md)，可以编排格式。
 
@@ -373,7 +373,7 @@ ht-degree: 53%
 
 >[!NOTE]
 >
->在以下情况下，此选项可用： **多行文本** 配置有 **允许片段引用**.
+>当您的&#x200B;**多行文本**&#x200B;配置为&#x200B;**允许片段引用**&#x200B;时，此选项可用。
 
 >[!CAUTION]
 >
@@ -401,11 +401,11 @@ ht-degree: 53%
    >添加对其他片段的引用后，如果将格式更改为：
    >
    >* **纯文本**：引用从片段中丢失。
-   >* **Markdown**：引用将保留。
+   >* **Markdown**：引用仍然存在。
 
 ## 继承 {#inheritance}
 
-继承是一种机制，通过该机制，可以将内容从一个片段自动推送到另一个片段。 继承的字段和变体可以是 [多站点管理](/help/assets/content-fragments/content-fragments-msm.md).
+继承是一种机制，通过该机制，可以将内容从一个片段自动推送到另一个片段。 继承的字段和变体可以是[多站点管理](/help/assets/content-fragments/content-fragments-msm.md)的产物。
 
 您可以取消（随后也可以重新启用）继承。根据上下文，这可用于变体，或者单个字段（如果片段是Live Copy的一部分）。
 
@@ -431,23 +431,23 @@ ht-degree: 53%
 
 ### 创建变体 {#creating-a-variation}
 
-变体允许您获取 **母版** 内容并根据不同目的（如有需要）进行更改。
+变体允许您获取&#x200B;**Master**&#x200B;内容，并根据不同目的（如有需要）进行更改。
 
-**要创建变体，请执行以下操作：**
+**创建变量：**
 
 1. 打开片段并确保侧面板可见。
 1. 选择&#x200B;**“变体”**&#x200B;图标栏。
 1. 选择&#x200B;**“创建变体”**。
-1. 这将打开一个对话框，您可以在此对话框中指定 **标题** 和 **描述** 用于新变体。
+1. 将打开一个对话框，您可以为新变体指定&#x200B;**标题**&#x200B;和&#x200B;**描述**。
 1. 选择 **添加**，片段&#x200B;**主要内容**&#x200B;会被复制到新变体中，该变体现在打开进行[编辑](#editing-a-variation)。
 
    >[!NOTE]
    >
-   >创建变体时，它始终 **母版** 而不是打开的变体。
+   >创建变体时，复制的始终是&#x200B;**主要内容**，而不是打开的变体。
 
    >[!NOTE]
    >
-   >当您创建变体时，所有 **标记** 当前分配给 **母版** 变体将会复制到您的新变体中。
+   >创建变量时，当前分配给&#x200B;**主**&#x200B;变量的所有&#x200B;**标记**&#x200B;都会复制到您的新变量中。
 
 ### 编辑变体 {#editing-a-variation}
 
@@ -486,7 +486,7 @@ ht-degree: 53%
 
 ### 与母版同步 {#synchronizing-with-master}
 
-**母版** 是内容片段的一部分，根据定义，它包含内容的母版副本。 而变体包含该内容的单独更新和定制版本。 更新母版时，这些更改可能也与变体相关，因此必须传播到这些变体中。
+**母版**&#x200B;是内容片段的一部分，根据定义它包含内容的母版副本。 而变体包含该内容的单独更新和定制版本。 更新母版时，这些更改可能也与变体相关，因此必须传播到这些变体中。
 
 编辑变体时，您有权使用将变体的当前元素与主要内容同步的操作。 这样，您就可以自动将对母版所做的更改复制到所需的变体。
 
@@ -496,7 +496,7 @@ ht-degree: 53%
 >
 >仅会同步变体的当前元素。
 >
->同步仅适用于 **多行文本** 数据类型。
+>同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
 >
 >不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
 

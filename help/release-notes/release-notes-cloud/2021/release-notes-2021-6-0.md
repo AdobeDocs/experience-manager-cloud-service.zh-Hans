@@ -25,27 +25,27 @@ ht-degree: 47%
 
 ## 发布日期 {#release-date}
 
-的发布日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.6.0为2021年6月28日。
+[!DNL Adobe Experience Manager]as a Cloud Service2021.6.0的发布日期是2021年6月28日。
 下一个版本(2021.7.0)将于2021年7月29日发布。
 
 ## 发布视频 {#release-video}
 
-请查看 [2021年6月发行版概述](https://video.tv.adobe.com/v/334296) 视频以了解新增功能的摘要。
+观看[2021年6月版概述](https://video.tv.adobe.com/v/334296)视频，大致了解新增功能。
 
 ## 适用于AEM as a Cloud Service的XML Documentation {#xml-documentation}
 
 ### 新增功能 {#what-is-new-xml-documentation}
 
-* 适用于AEM的XML Documentationas a Cloud Service现已正式推出。
+* 适用于AEM as a Cloud Service的XML Documentation现已正式推出。
 * 这将允许现有AEM Cloud Service客户获取XML Documentation加载项，以便跨多个渠道(包括AEM站点)导入、创建、管理和交付技术内容
 
 ## Cloud Manager {#cloud-manager}
 
-本节概述了AEMas a Cloud Service2021.6.0和2021.5.0中的Cloud Manager发行说明。
+本节概述了AEM as a Cloud Service 2021.6.0和2021.5.0中的Cloud Manager发行说明。
 
 ### 发布日期 {#release-date-june-cm}
 
-AEMas a Cloud Service2021.6.0中的Cloud Manager的发布日期是2021年6月10日。
+AEM as a Cloud Service 2021.6.0中的Cloud Manager的发布日期是2021年6月10日。
 下一个版本计划于2021年7月15日发布。
 
 ### 新增功能 {#what-is-new-junecm}
@@ -90,34 +90,34 @@ AEMas a Cloud Service2021.6.0中的Cloud Manager的发布日期是2021年6月10�
 
 ### [!DNL Assets] 中的新增功能 {#ga-features-assets}
 
-* 内容自动化功能允许 [!DNL Experience Manager Assets] 使用 [!DNL Adobe Creative Cloud] API可大规模自动进行资源生产。 它通过显着减少创建同一资源的变体所需的时间和反复操作来提高内容速度。 该功能不需要任何代码，并且可在DAM内使用。
-* [!DNL Adobe Asset Link] v3.0用于 [!DNL Adobe Photoshop]， [!DNL Adobe Illustrator]、和 [!DNL Adobe InDesign] 和 [!DNL Adobe Asset Link] v2.0用于 [!DNL Adobe XD] 已发布。 它提供：
+* 内容自动化功能允许[!DNL Experience Manager Assets]使用[!DNL Adobe Creative Cloud] API大规模自动进行资源生产。 它通过显着减少创建同一资源的变体所需的时间和反复操作来提高内容速度。 该功能不需要任何代码，并且可在DAM内使用。
+* 已发布[!DNL Adobe XD]的[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]和[!DNL Adobe InDesign]的[!DNL Adobe Asset Link] v3.0和[!DNL Adobe Asset Link] v2.0。 它提供：
 
-   * 支持 [!DNL Assets Essentials].
-   * 能够自动连接到 [!DNL Experience Manager] as a [!DNL Cloud Service] 或 [!DNL Assets Essentials].
+   * 支持[!DNL Assets Essentials]。
+   * 能够作为[!DNL Cloud Service]或[!DNL Assets Essentials]自动连接到[!DNL Experience Manager]。
 
 <!-- TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
-### 中可用的新功能 [!DNL Assets] 预发行渠道 {#beta-features-assets}
+### [!DNL Assets]预发行渠道中可用的新功能 {#beta-features-assets}
 
 * 增强了视图设置以允许用户选择默认视图和默认排序参数。
 * Linkshare下载功能使用可提高下载速度的异步下载。
 * 用户可以根据属性谓词搜索和筛选文件夹。
-* [!DNL Experience Manager Assets] 嵌入由提供支持的PDF查看器 [!DNL Adobe Document Cloud] 以预览支持的文档。 利用此功能，用户无需进行任何复杂处理即可预览PDF和其他多页文件。 这改进了与以下各项的功能对等性： [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets]嵌入由[!DNL Adobe Document Cloud]提供支持的PDF查看器以预览支持的文档。 利用此功能，用户无需进行任何复杂处理即可预览PDF和其他多页文件。 这改进了与[!DNL Experience Manager] 6.5的功能等同性。
 
 ### [!DNL Assets] 中修复的错误 {#bugs-fixed-assets}
 
-* 将所有者添加到子文件夹时， [!DNL Assets] 还将该用户添加为父文件夹的所有者。 (CQ-4323737)
+* 将所有者添加到子文件夹时，[!DNL Assets]还会添加该用户作为父文件夹的所有者。 (CQ-4323737)
 * 将资源添加到收藏集时，如果用户对收藏集搜索应用过滤器，则用户无法在“列表”视图中查看收藏集。 (CQ-4323181)
-* 搜索文件和文件夹时，如果用户应用过滤器并选择 [!UICONTROL 文件和文件夹]，则仅显示文件，但不显示文件夹。 (CQ-4319543)
+* 在搜索文件和文件夹时，如果用户应用筛选器并选择[!UICONTROL 文件和文件夹]，则仅显示文件，但不显示文件夹。 (CQ-4319543)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] 中的新增功能 {#ga-features-sites}
 
-* 现在，“发布到预览层”在站点管理UI中显示为页面状态
-* 现在，“发布到预览层”在操作结束时会显示预览URL，并将URL保留在页面属性中以供将来参考
+* 现在，预览层的Publish在站点管理UI中显示为页面状态
+* Publish到预览层现在在操作结束时显示预览URL，并将该URL保留在页面属性中以供将来参考
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -146,7 +146,7 @@ AEMas a Cloud Service2021.6.0中的Cloud Manager的发布日期是2021年6月10�
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
-本节概述了AEM Screensas a Cloud Service的发行说明。
+此部分概述了AEM Screens的发行说明as a Cloud Service。
 
 ### 发布日期 {#release-date-june-screens}
 
@@ -155,7 +155,7 @@ AEM Screensas a Cloud Service的发布日期是2021年6月24日。
 ### 新增功能 {#what-is-new-screens-june}
 
 >[!NOTE]
->请参阅 [AEM Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) 有关成功安装、配置和运行Screensas a Cloud Service所需的基础知识的指南，以及指向详细概念技术文档的链接。
+>有关成功安装、配置和运行AEM Screensas a Cloud Service所需的基础知识，请参阅[Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html)指南，并链接到详细的概念技术文档。
 
 * 批量设备注册管理意味着可以更快、更高效地配置大量播放器设备。
 
@@ -184,7 +184,7 @@ AEM Screensas a Cloud Service的发布日期是2021年6月24日。
 
 ### 新增功能 {#what-is-new-ctt-latest}
 
-* 支持可选 [预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) 添加了步骤以与CTT一起使用。 当源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储时，预复制步骤可用于显着加快内容传输活动的提取和摄取阶段。
+* 添加了对要与CTT一起使用的可选[预复制](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)步骤的支持。 当源AEM实例配置为使用Amazon S3或Azure Blob Storage数据存储时，预复制步骤可用于显着加快内容传输活动的提取和摄取阶段。
 
 * 向CTT添加了护栏，以防止用户停止摄取，并防止数据在摄取阶段达到临界点后可能损坏。
 
@@ -194,7 +194,7 @@ AEM Screensas a Cloud Service的发布日期是2021年6月24日。
 
 ### 错误修复 {#bug-fixes-ctt-latest}
 
-* 在创作实例上停止引入时，UI会覆盖发布实例上之前完成的引入 `STOPPED` 从 `FINISHED`. 此问题已得到修复。
+* 停止Author实例上的摄取时，UI将以前在Publish实例上完成的摄取从`FINISHED`覆盖到`STOPPED`。 此问题已得到修复。
 
 ## Best Practices Analyzer {#best-practices-analyzer}
 
@@ -204,7 +204,7 @@ Best Practices Analyzer v2.1.16的发布日期是2021年6月30日。
 
 ### 新增功能 {#what-is-new-bpa-latest}
 
-* 能够检测和报告文件夹下缺少的子节点 `/content/dam`.
+* 能够检测和报告`/content/dam`下的文件夹中缺少的子节点。
 
 * 能够检测和报告所使用的Best Practices Analyzer版本。
 

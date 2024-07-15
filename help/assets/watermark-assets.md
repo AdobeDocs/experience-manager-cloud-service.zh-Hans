@@ -19,19 +19,19 @@ ht-degree: 16%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
 | AEM as a Cloud Service | 本文 |
 
-[!DNL Adobe Experience Manager Assets] 允许您将数字水印添加到图像和视频。 [!DNL Assets] 支持将图像作为水印应用于其他图像文件。 水印可帮助用户验证资产的真实性和版权所有权。 此外，水印可用于表示文档的状态，如机密、草稿、有效性等。
+[!DNL Adobe Experience Manager Assets]允许您向图像和视频添加数字水印。 [!DNL Assets]支持将图像作为水印应用于其他图像文件。 水印可帮助用户验证资产的真实性和版权所有权。 此外，水印可用于表示文档的状态，如机密、草稿、有效性等。
 
-配置 [!DNL Experience Manager] 要对资产添加水印：
+要配置[!DNL Experience Manager]为资源添加水印，请执行以下操作：
 
 1. PNG文件会应用为水印。 将此文件上传到您的DAM存储库。
 
-1. 导航到 **[!UICONTROL 工具>资产>资产配置]**.
+1. 导航到&#x200B;**[!UICONTROL 工具> Assets > Assets配置]**。
 
-1. 单击 **[!UICONTROL 系统水印配置文件]**.
+1. 单击&#x200B;**[!UICONTROL 系统水印配置文件]**。
 
-1. 在 [!UICONTROL 系统水印配置文件页]，指定在步骤1中上传到DAM存储库的图像路径。
+1. 在[!UICONTROL 系统水印配置文件页面]上，指定在步骤1中上传到DAM存储库的图像路径。
 
-1. 在中指定相对于演绎版宽度的水印范围（从0.0到1.0） **[!UICONTROL 缩放]** 字段。
+1. 在&#x200B;**[!UICONTROL 比例]**&#x200B;字段中指定相对于演绎版宽度的水印比例，范围从0.0到1.0。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -39,16 +39,16 @@ ht-degree: 16%
 
    >[!NOTE]
    >
-   >如果您已使用配置了系统水印配置文件 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 配置文件（OSGi配置），您可以继续使用它，但Adobe建议使用新的方法。
+   >如果您已使用`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`配置文件（OSGi配置）配置了系统水印配置文件，则可以继续使用它，但Adobe建议使用新方法。
 
 
-1. [创建处理配置文件](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) 使用资产微服务应用水印。
+1. [创建处理配置文件](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile)以使用资源微服务应用水印。
 
    ![用于创建水印的资源处理配置文件](assets/watermark-processing-profile.png)
 
-   确保您启用 **[!UICONTROL 水印]** 在创建处理配置文件时进行切换。
+   确保在创建处理配置文件时启用&#x200B;**[!UICONTROL 水印]**&#x200B;切换开关。
 
-1. [将处理配置文件应用到文件夹](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 以创建带水印的资产。
+1. [将处理配置文件应用到文件夹](/help/assets/asset-microservices-configure-and-use.md#use-profiles)以创建带水印的资产。
 
 ## 提示和限制 {#tips-limitations-bestpractices}
 
@@ -74,5 +74,5 @@ ht-degree: 16%
 
 >[!MORELIKETHIS]
 >
->* [资源微服务概述](/help/assets/asset-microservices-overview.md).
->* [将资源微服务用于处理配置文件](/help/assets/asset-microservices-configure-and-use.md).
+>* [资源微服务概述](/help/assets/asset-microservices-overview.md)。
+>* [在处理配置文件时使用资源微服务](/help/assets/asset-microservices-configure-and-use.md)。

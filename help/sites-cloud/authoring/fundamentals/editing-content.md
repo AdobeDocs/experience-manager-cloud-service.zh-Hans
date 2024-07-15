@@ -151,9 +151,9 @@ ht-degree: 94%
 
      ![插入组件](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * 如果您使用的是桌面设备，则可以双击 **将组件拖动到此处** 盒子。
+   * 如果您使用的是桌面设备，则可以双击&#x200B;**将组件拖动到此处**&#x200B;框。
 
-   * 此 **插入新组件** 对话框打开，允许您选择所需的组件：
+   * 打开&#x200B;**插入新组件**&#x200B;对话框，允许您选择所需的组件：
 
      ![“插入新组件”对话框](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -173,7 +173,7 @@ ht-degree: 94%
 
    此时会在所需位置创建与该资源类型对应的组件 - 组件包含选定的资源。
 
-1. [编辑](#edit-content) 组件（如有必要）。
+1. 如有必要，请[编辑](#edit-content)该组件。
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ ht-degree: 94%
 
 * **转换为体验片段变体**
 
-  这让您能够创建 [体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) 或将它添加到现有的体验片段中。
+  允许您从选定的组件创建[体验片段](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)，或将其添加到现有的体验片段中。
 
   ![“转换为体验片段”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -341,7 +341,7 @@ ht-degree: 94%
 
    ![页面组件的组件工具栏](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   选择 **布局** 用于调整组件布局的操作。
+   选择&#x200B;**布局**&#x200B;操作以调整组件的布局。
 
    ![组件工具栏的“布局”按钮](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

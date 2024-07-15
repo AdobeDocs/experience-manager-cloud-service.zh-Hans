@@ -14,20 +14,20 @@ ht-degree: 2%
 
 # 将基于核心组件的自适应表单另存为草稿 {#save-af-form}
 
-将自适应表单另存为草稿是提高用户效率和准确性的重要功能。 此功能允许用户保存进度并在以后返回以完成任务，而不会丢失任何输入的信息。 提供  `save-as-draft` 选项可确保灵活管理时间，降低数据丢失风险，并维护提交的准确性。 您可以将表单另存为草稿以便稍后完成。
+将自适应表单另存为草稿是提高用户效率和准确性的重要功能。 此功能允许用户保存进度并在以后返回以完成任务，而不会丢失任何输入的信息。 提供`save-as-draft`选项可确保管理时间的灵活性，降低数据丢失的风险，并维护提交的精确性。 您可以将表单另存为草稿以便稍后完成。
 
 ## 注意事项
 
 * [为您的环境启用自适应Forms核心组件。](/help/forms/enable-adaptive-forms-core-components.md)
 
-* 确保 [核心组件设置为版本3.0.24或更高版本](https://github.com/adobe/aem-core-forms-components) 以使用此功能。
-* 确保您拥有 [Azure存储帐户和访问密钥](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) 以授权访问Azure存储帐户。
+* 确保将[核心组件设置为版本3.0.24或更高版本](https://github.com/adobe/aem-core-forms-components)以使用此功能。
+* 确保您拥有[Azure存储帐户和访问密钥](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)以授权访问Azure存储帐户。
 
 ## 将自适应表单另存为草稿
 
-[!DNL Experience Manager Forms] 数据集成(data-integration.md)提供 [!DNL Azure] 用于集成表单的存储配置 [!DNL Azure] 存储服务。 表单数据模型(FDM)可用于创建与交互的自适应Forms [!DNL Azure] 服务器启用业务工作流。
+[!DNL Experience Manager Forms]数据集成(data-integration.md)提供了[!DNL Azure]存储配置以将表单与[!DNL Azure]存储服务集成。 表单数据模型(FDM)可用于创建与[!DNL Azure]服务器交互以启用业务工作流的自适应Forms。
 
-要将表单另存为草稿，请确保您拥有Azure存储帐户和访问密钥以授权访问 [!DNL Azure] 存储帐户。 要将表单另存为草稿，请执行以下步骤：
+要将表单另存为草稿，请确保您拥有Azure存储帐户和访问密钥以授权访问[!DNL Azure]存储帐户。 要将表单另存为草稿，请执行以下步骤：
 
 1. [创建 Azure 存储配置](#create-azure-storage-configuration)
 1. [为Forms Portal配置统一存储连接器](#configure-usc-forms-portal)
@@ -36,18 +36,18 @@ ht-degree: 2%
 
 ### 1.创建Azure存储配置 {#create-azure-storage-configuration}
 
-一旦你拥有Azure存储帐户和访问密钥，可授权访问 [!DNL Azure] 请执行以下步骤以创建Azure存储配置：
+拥有Azure存储帐户和访问密钥以授权访问[!DNL Azure]存储帐户后，请执行以下步骤以创建Azure存储配置：
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**.
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**。
 
    ![Azure存储卡选择](/help/forms/assets/save-form-as-draft-azure-card.png)
 
-1. 选择配置文件夹以创建配置，然后选择 **[!UICONTROL 创建]**.
+1. 选择配置文件夹以创建配置，然后选择&#x200B;**[!UICONTROL 创建]**。
 
    ![选择Azure存储配置文件夹](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
-1. 在中指定配置的标题 **[!UICONTROL 标题]** 字段。
-1. 指定 [!DNL Azure] 中的存储帐户 **[!UICONTROL Azure存储帐户]** 和 **[!UICONTROL Azure访问密钥]** 字段。
+1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中指定配置的标题。
+1. 在&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;和&#x200B;**[!UICONTROL Azure访问密钥]**&#x200B;字段中指定[!DNL Azure]存储帐户的名称。
 
    ![Azure 存储配置](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
@@ -55,45 +55,45 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 您可以检索 **[!UICONTROL Azure存储帐户]** 和 **[!UICONTROL Azure访问密钥]** 从 [Microsoft Azure门户](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+> 您可以从[Microsoft Azure门户](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)检索&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;和&#x200B;**[!UICONTROL Azure访问密钥]**。
 
 
 ### 2.为Forms门户配置统一存储连接器 {#configure-usc-forms-portal}
 
 成功创建Azure存储配置后，请使用以下步骤为Forms Portal配置统一存储连接器：
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**.
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**。
 
-   ![统一的连接器存储](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![统一连接器存储](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
-1. 在 **[!UICONTROL Forms门户]** 部分，选择 **[!UICONTROL Azure]** 从 **[!UICONTROL 存储]** 下拉列表。
-1. 指定 [Azure存储配置的配置路径](#create-azure-storage-configuration) 在 **[!UICONTROL 存储配置路径]** 字段。
+1. 在&#x200B;**[!UICONTROL Forms门户]**&#x200B;部分中，从&#x200B;**[!UICONTROL 存储]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Azure]**。
+1. 在&#x200B;**[!UICONTROL 存储配置路径]**&#x200B;字段中指定Azure存储配置](#create-azure-storage-configuration)的[配置路径。
 
    ![统一连接器存储设置](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. 选择 **[!UICONTROL 保存]** 然后选择 **[!UICONTROL Publish]** 以发布配置。
+1. 选择&#x200B;**[!UICONTROL 保存]**，然后选择&#x200B;**[!UICONTROL Publish]**&#x200B;以发布配置。
 
 ### 3.创建规则以将自适应表单另存为草稿 {#rule-to-save-adaptive-form-as-draft}
 
-要将表单另存为草稿，请创建 **保存表单** 表单组件上的规则，例如按钮。 单击按钮时，将触发规则，并将表单另存为草稿。 执行以下步骤以创建 **保存表单** 按钮组件上的规则：
+要将表单另存为草稿，请在表单组件上创建&#x200B;**保存表单**&#x200B;规则，如按钮。 单击按钮时，将触发规则，并将表单另存为草稿。 执行以下步骤以在按钮组件上创建&#x200B;**保存表单**&#x200B;规则：
 
 1. 在创作实例中，以编辑模式打开自适应表单。
-1. 从左窗格中，选择 ![“组件”图标](assets/components_icon.png) 并拖动 **[!UICONTROL 按钮]** 组件添加到表单。
-1. 选择 **[!UICONTROL 按钮]** 组件，然后选择 ![“配置”图标](assets/configure_icon.png).
-1. 选择 **[!UICONTROL 编辑规则]** 图标以打开规则编辑器。
-1. 选择 **[!UICONTROL 创建]** 以配置和创建规则。
-1. 在 **[!UICONTROL 时间]** 部分，选择 **已单击** 和 **[!UICONTROL 则]** 部分，选择 **保存表单** 选项。
-1. 选择 **[!UICONTROL 完成]** 以保存规则。
+1. 从左窗格中，选择![组件图标](assets/components_icon.png)，然后将&#x200B;**[!UICONTROL 按钮]**&#x200B;组件拖到表单中。
+1. 选择&#x200B;**[!UICONTROL 按钮]**&#x200B;组件，然后选择![配置图标](assets/configure_icon.png)。
+1. 选择&#x200B;**[!UICONTROL 编辑规则]**&#x200B;图标以打开规则编辑器。
+1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以配置和创建规则。
+1. 在&#x200B;**[!UICONTROL When]**&#x200B;部分中，选择&#x200B;**已单击**，在&#x200B;**[!UICONTROL Then]**&#x200B;部分中，选择&#x200B;**保存表单**&#x200B;选项。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存规则。
 
-![为按钮创建规则](/help/forms/assets/save-form-as-drfat-create-rule.png)
+![为按钮](/help/forms/assets/save-form-as-drfat-create-rule.png)创建规则
 
-预览自适应表单时，请填写该表单，然后单击 **保存表单** 按钮时，表单将另存为草稿以供将来使用。
+当您预览自适应表单并填写该表单并单击&#x200B;**保存表单**&#x200B;按钮时，表单将另存为草稿以供将来使用。
 
 ## 草稿和提交组件可在AEM Sites页面上列出草稿
 
-AEM Forms提供 **草稿和提交** 开箱即用的门户组件，用于在AEM Sites页面上显示已保存的表单。 此 **草稿和提交** 组件显示另存为草稿以供以后完成的表单以及已提交的表单。 此组件通过列出与用户创建的自适应Forms相关的草稿和提交，为任何登录用户提供个性化体验。
+AEM Forms提供现成的&#x200B;**草稿和提交**&#x200B;门户组件，用于在AEM Sites页面上显示已保存的表单。 **草稿和提交**&#x200B;组件显示另存为草稿以供以后完成的表单以及已提交的表单。 此组件通过列出与用户创建的自适应Forms相关的草稿和提交，为任何登录用户提供个性化体验。
 
-您可以使用现成的Forms Portal组件在AEM Sites页面中列出表单草稿。 执行以下步骤以使用 **草稿和提交** 门户组件：
+您可以使用现成的Forms Portal组件在AEM Sites页面中列出表单草稿。 执行以下步骤以使用&#x200B;**草稿和提交**&#x200B;门户组件：
 
 1. [启用草稿和提交Forms门户组件](#enable-component)
 2. [在AEM Sites页面中添加草稿和提交组件](#Add-drafts-submissions-component)
@@ -101,13 +101,13 @@ AEM Forms提供 **草稿和提交** 开箱即用的门户组件，用于在AEM S
 
 ### 1.启用草稿和提交Forms门户组件{#enable-component}
 
-要启用 **[!UICONTROL 草稿和提交]** 组件时，请执行以下步骤：
+要在模板策略中启用&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;组件，请执行以下步骤：
 
-1. 在中打开AEM Sites页面 **编辑** 模式。
-1. 转到 **[!UICONTROL 页面信息]** > **[!UICONTROL 编辑模板]**
+1. 以&#x200B;**编辑**&#x200B;模式打开AEM Sites页面。
+1. 转到&#x200B;**[!UICONTROL 页面信息]** > **[!UICONTROL 编辑模板]**
    ![编辑模板策略](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. 单击 **[!UICONTROL 策略]** 并选择 **[!UICONTROL 草稿和提交]**  复选框 **[AEM原型项目名称] - Forms和通信门户**.
+1. 单击&#x200B;**[!UICONTROL 策略]**&#x200B;并选择&#x200B;**[AEM原型项目名称] - Forms和通信门户**&#x200B;下的&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;复选框。
 
    ![策略选择](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
@@ -117,30 +117,30 @@ AEM Forms提供 **草稿和提交** 开箱即用的门户组件，用于在AEM S
 
 ### 2.在AEM Sites页面中添加草稿和提交组件{#Add-drafts-submissions-component}
 
-您可以通过添加和配置门户组件，在使用AEM创作的网站上创建和自定义Forms门户。 确保 [已启用草稿和提交组件](#enable-component) 在AEM Sites页面中使用它们之前。
+您可以通过添加和配置门户组件，在使用AEM创作的网站上创建和自定义Forms门户。 在AEM Sites页面中使用[草稿和提交组件之前，请确保这些组件已启用](#enable-component)。
 
-要添加组件，请将组件从 **草稿和提交** 组件窗格到页面上的布局容器中，或选择布局容器上的添加图标，然后从以下位置添加组件： **[!UICONTROL 插入新组件]** 对话框。
+要添加组件，请将组件从&#x200B;**草稿和提交**&#x200B;组件窗格拖放到页面上的布局容器中，或选择布局容器上的添加图标并从&#x200B;**[!UICONTROL 插入新组件]**&#x200B;对话框中添加组件。
 
 ![添加草稿和提交组件](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 ### 3.配置草稿和提交组件 {#configure-drafts-submissions-component}
 
-此 **草稿和提交** 组件显示另存为草稿以供以后填写和提交的表单。 配置 **草稿和提交**，请执行以下步骤：
-1. 选择 **草稿和提交** 组件。
-1. 单击 ![“配置”图标](assets/configure_icon.png) 此时将显示对话框。
-1. 在 **[!UICONTROL 草稿和提交]** 对话框，请指定以下内容：
-   * **标题** 要在站点页面中标识组件，默认情况下，标题显示在组件顶部。
-   * **类型**：将表单指示为草稿或已提交的表单。
+**草稿和提交**&#x200B;组件显示另存为草稿以便稍后完成和提交的表单的表单。 要配置&#x200B;**草稿和提交**，请执行以下步骤：
+1. 选择&#x200B;**草稿和提交**&#x200B;组件。
+1. 单击![配置图标](assets/configure_icon.png)，此时将显示对话框。
+1. 在&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;对话框中，指定以下内容：
+   * **标题**&#x200B;为了识别站点页面中的组件，默认情况下，标题显示在组件顶部。
+   * **类型**：将表单列为草稿或已提交的表单。
    * **布局**：以卡片或列表格式显示列表草稿表单或已提交的表单。
 
    ![草稿和提交组件属性](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 1. 单击&#x200B;**完成**。
 
-时间 **[!UICONTROL 选择类型]** 被选为 **草稿Forms**，将显示另存为草稿的表单：
-![“草稿”图标](assets/drafts-component.png)
+选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**草稿Forms**时，将显示另存为草稿的表单：
+![草稿图标](assets/drafts-component.png)
 
-时间 **[!UICONTROL 选择类型]** 被选为 **已提交Forms**，则会显示提交的表单：
+当&#x200B;**[!UICONTROL 选择类型]**&#x200B;被选为&#x200B;**已提交的Forms**&#x200B;时，将显示已提交的表单：
 
 ![提交图标](assets/submission-listing.png)
 

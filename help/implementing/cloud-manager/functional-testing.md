@@ -20,13 +20,13 @@ ht-degree: 9%
 >title="功能测试"
 >abstract="了解 AEM as a Cloud Service 部署过程内置的三种不同类型的功能测试，确保代码的质量和可靠性。"
 
-了解中可用的质量关卡 [AEMas a Cloud Service部署过程](/help/implementing/cloud-manager/deploy-code.md)，以及内建的不同类型的功能测试、如何贡献以及如何在整个测试策略上下文中最好地利用它们。
+了解[AEM as a Cloud Service部署过程](/help/implementing/cloud-manager/deploy-code.md)中可用的质量关卡、内置的各种功能测试、如何贡献以及如何在整个测试策略环境中最好地利用这些关卡。
 
 ## 概述
 
-下图提供了整体测试策略背景下可用管道的高级概述，以及 [AEMas a Cloud Service部署过程](/help/implementing/cloud-manager/deploy-code.md).
+下图提供了整体测试策略和[AEM as a Cloud Service部署过程](/help/implementing/cloud-manager/deploy-code.md)上下文中的可用管道的整体概述。
 
-![AEM Cloud Service部署质量审核](assets/functional-testing/quality-gates-compact.svg)
+![AEM Cloud Service部署质量关卡](assets/functional-testing/quality-gates-compact.svg)
 
 ## 用途
 
@@ -40,17 +40,17 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 ## 质量审核
 
-下图提供了可用质量审核及其在整体测试策略和 [AEMas a Cloud Service部署过程](/help/implementing/cloud-manager/deploy-code.md).
+下图提供了可用质量审核及其在整体测试策略和[AEM as a Cloud Service部署过程](/help/implementing/cloud-manager/deploy-code.md)中的使用的详细视图。
 
-![AEM Cloud Service部署质量审核](assets/functional-testing/quality-gates-overview.svg)
+![AEM Cloud Service部署质量关卡](assets/functional-testing/quality-gates-overview.svg)
 
 ### 汇总客户提供的质量审核
 
-|                               | 单元测试 | 自定义<br/> 功能测试 | 自定义<br/> UI测试 | 客户<br/> 验证 | 手动<br/> 测试 |
+|                               | 单元测试 | 自定义<br/>功能测试 | 自定义<br/>用户界面测试 | 客户<br/>验证 | 手动<br/>测试 |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **生产管道** | 是<br/>阻止<br/> | 是<br/>阻止<br/>6000万超时 | 是<br/>阻止<br/>3000万超时 | 否 | 否 |
-| **非生产管道** | 是<br/>阻止<br/> | 选择加入<br/>阻止<br/>6000万超时 | 选择加入<br/>阻止<br/>3000万超时 | 否 | 否 |
-| **Adobe内部验证** | 是<br/>阻止<br/> | 是<br/>阻止<br/>6000万超时 | 是<br/>阻止<br/>3000万超时 | 否 | 否 |
+| **生产管道** | 是<br/>正在阻止<br/> | 是<br/>阻止<br/>60m超时 | 是<br/>阻止<br/>30m超时 | 否 | 否 |
+| **非生产管道** | 是<br/>正在阻止<br/> | 选择加入<br/>正在阻止<br/>60m超时 | 选择加入<br/>正在阻止<br/>30m超时 | 否 | 否 |
+| **Adobe内部验证** | 是<br/>正在阻止<br/> | 是<br/>阻止<br/>60m超时 | 是<br/>阻止<br/>30m超时 | 否 | 否 |
 | **客户CI/CD** | 是 | 是 | 是 | 是 | 是 |
 | **客户本地开发人员** | 是 | 是 | 是 | 是 | 是 |
 
@@ -58,23 +58,24 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 建议您为AEM应用程序提供单元测试，这是每个测试策略的基础。 它们旨在快速且频繁地运行，并尽早提供快速反馈。 它们紧密集成到开发人员工作流、您自己的CI/CD和AEM云服务部署管道中。
 
-它们使用JUnit实现，并使用Maven执行。 请参阅 [AEM项目原型的核心模块](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests) 有关AEM和入门的单元测试示例。
+它们使用JUnit实现，并使用Maven执行。 请参阅AEM项目原型的核心模块[1}，以获取AEM的单元测试示例和入门。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/core.html#unit-tests)
 
 ### 代码质量
 
 此质量审核是现成配置的，并对AEM应用程序代码运行静态代码分析。
 
-请参阅 [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md) 和 [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md) 以了解更多信息。
+有关详细信息，请参阅[代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)和[自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
 ### 产品测试
 
 产品功能测试是 AEM 中核心功能（如创作和复制任务）的一组稳定 HTTP 集成测试 (IT)。Adobe开箱即用地提供和维护这些组件。 它们旨在防止在破坏AEM产品中的核心功能的情况下部署对自定义应用程序代码所做的更改。
 
-它们使用Junit实施，使用Maven运行并使用官方的 [AEM测试客户端](https://github.com/adobe/aem-testing-clients). 产品测试套件将维护为 [开源项目](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)，遵循最佳实践，并可视为实施测试的良好起点。
+它们使用Junit实现，使用Maven运行并使用官方的[AEM测试客户端](https://github.com/adobe/aem-testing-clients)。 产品测试套件维护为
+[开源项目](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)遵循最佳实践，可视为实施测试的良好起点。
 
 ### 自定义功能测试
 
-与产品测试一样，客户功能测试是HTTP集成测试(IT)，并且使用Junit实施，使用Maven执行并构建在官方的基础之上 [AEM测试客户端](https://github.com/adobe/aem-testing-clients).
+与产品测试一样，客户功能测试是HTTP集成测试(IT)，并且使用Junit实施，使用Maven执行并构建在官方[AEM测试客户端](https://github.com/adobe/aem-testing-clients)之上。
 
 >[!NOTE]
 >
@@ -82,7 +83,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 为了保持管道高效运行，我们建议重点关注关键功能和主要用户交互流程。 建议将功能测试的运行时间设置为约15分钟或更短。 建议在客户开发流程期间，作为常规客户验证管道的一部分来运行不在此质量关卡中的全功能测试包。
 
-请参阅 [开源产品测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 或 [AEM项目原型的it.tests模块](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html) 例如。
+有关示例，请参阅[开源产品测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)或AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/ittests.html)的[it.tests模块。
 
 有关更多信息，请参阅 [Java 功能测试。](/help/implementing/cloud-manager/java-functional-testing.md)
 
@@ -96,29 +97,29 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 >
 >自定义UI测试在生产管道和非生产（选择加入）管道中执行，AEM应用程序使用这些管道更改部署和AEM产品推送更新，因此它是帮助确保应用程序正常运行并提高发布安全性的一个关键贡献。 客户UI测试还在每个客户的内部预发行验证管道中执行，这有助于提供早期反馈。
 >
->非Selenium容器应该使用HTTP代理，根据中的环境变量执行测试。 [UI测试部分。](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>非Selenium容器应根据[UI测试部分中的环境变量，使用HTTP代理执行测试。](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 为了保持管道执行高效，我们建议重点关注关键功能和主要用户交互流程。 建议在客户开发流程期间，作为常规客户验证管道的一部分执行不符合此质量关卡的完整UI测试包。
 
-请参阅 [开源示例测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/) 或 [AEM项目原型的ui.tests模块](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html) 例如。
+有关示例，请参阅[开源示例测试](https://github.com/adobe/aem-test-samples/tree/aem-cloud/)或AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uitests.html)的[ui.tests模块。
 
 有关详细信息，请参阅[自定义 UI 测试。](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 ### 体验审核
 
-正在执行体验审核质量审核 [Google灯塔](https://developer.chrome.com/docs/lighthouse/overview/) 针对客户网页的审核。
+体验审核质量关卡正在对客户的网页执行[Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)审核。
 
-此质量关卡由AEM现成提供，但不会阻止部署管道。 默认情况下，会针对根页面进行审核(`/`)。 您可通过配置考虑进行审核的最多25个自定义路径来投稿。
+此质量关卡由AEM现成提供，但不会阻止部署管道。 默认情况下，将对发布实例的根页面(`/`)执行审核。 您可通过配置考虑进行审核的最多25个自定义路径来投稿。
 
-请参阅 [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md) 以了解更多信息。
+有关详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)。
 
 ### 客户验证
 
 客户验证质量关卡是客户自己的测试策略和工作的占位符，在客户的应用程序更改到达AEM云部署管道之前执行。
 
-您可以在此处选择喜欢的工具和框架。 相对于客户功能测试和自定义UI测试，没有与AEMas a Cloud Service相关的限制，因此我们建议在此处执行长时间运行的功能和UI测试。
+您可以在此处选择喜欢的工具和框架。 相对于客户功能测试和自定义UI测试，没有与AEM as a Cloud Service相关的限制，因此我们建议在此处执行长时间运行的功能和UI测试。
 
-虽然您可以自由选择任何工具和框架，但我们建议您使基于HTTP的集成测试和UI测试与自定义功能测试和自定义UI测试质量审核中提供的工具和框架保持一致。 我们建议集成 [快速开发环境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) ，以便在尽可能接近AEM云环境的环境中进行测试。
+虽然您可以自由选择任何工具和框架，但我们建议您使基于HTTP的集成测试和UI测试与自定义功能测试和自定义UI测试质量审核中提供的工具和框架保持一致。 我们建议在您的本地测试策略中集成[快速开发环境(RDE)](/help/implementing/developing/introduction/rapid-development-environments.md)，以便尽可能接近AEM云环境进行测试。
 
 ### 手动测试
 

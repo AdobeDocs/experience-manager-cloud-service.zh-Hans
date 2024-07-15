@@ -39,7 +39,7 @@ ht-degree: 69%
 
    ![下载日志对话框](assets/download-preview.png)
 
-   以防万一 [其他发布区域](/help/operations/additional-publish-regions.md) 为您的环境启用，您将能够选择每个区域并单独下载其日志，如下所示：
+   如果您的环境启用了[其他Publish地区](/help/operations/additional-publish-regions.md)，您将能够选择每个地区并单独下载其日志，如下所示：
 
    ![下载其他发布区域的日志](assets/download-publish-region-logs.png)
 
@@ -92,14 +92,14 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->签出 [此视频资源](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) 了解有关调试AEMas a Cloud Service的更多信息。
+>查看[此视频资源](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab)，了解有关调试AEM as a Cloud Service的更多信息。
 
 请参阅以下附加资源，了解有关 Cloud Manager API 和 Adobe I/O CLI 的更多信息：
 
 * [Cloud Manager API 文档](https://developer.adobe.com/experience-cloud/cloud-manager/)
 * [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
-请参阅以下附加资源，以了解有关AEMas a Cloud Service中日志文件的更多信息：
+请参阅以下附加资源，了解有关AEM as a Cloud Service中日志文件的更多信息：
 
 * [Cloud 5 AEM日志文件](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
-* [使用日志调试AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
+* [使用日志调试AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)

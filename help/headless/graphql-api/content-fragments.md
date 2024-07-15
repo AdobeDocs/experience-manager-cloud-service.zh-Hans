@@ -33,7 +33,7 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->有关Experience ManagerAPI的最新信息，请访问 [ADOBE EXPERIENCE MANAGER AS A CLOUD SERVICE API](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>有关Experience ManagerAPI的最新信息，请同时访问[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
 
 ## GraphQL API {#graphql-api}
 
@@ -167,7 +167,7 @@ GraphQL 查询是在基础请求的 AEM 用户的许可下执行的。如果用�
 
 GraphQL 是一种强类型的 API，这意味着数据必须有明确的结构并按类型整理。
 
-GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。为此，客户端必须获取 [架构](#schema-generation)，其中包含查询所需的全部类型。
+GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。为此，客户端必须提取[架构](#schema-generation)，该架构包含查询所需的所有类型。
 
 对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)及其数据类型。
 
@@ -240,9 +240,9 @@ Sites GraphQL 服务监听（在后台）对内容片段模型所作的任何更
 
   使用选择的一组[数据类型](#Data-types)，根据您配置内容片段模型的方式来创建字段。字段名称获取自&#x200B;**数据类型**&#x200B;选项卡的&#x200B;**属性名称**。
 
-   * 还需要考虑 **呈现为**&#x200B;设置，因为用户可以配置某些数据类型。例如，通过选择将单行文本字段配置为包含多个单行文本 `multifield` 下拉列表中。
+   * 还需要考虑 **呈现为**&#x200B;设置，因为用户可以配置某些数据类型。例如，通过从下拉列表中选择`multifield`，可以将单行文本字段配置为包含多个单行文本。
 
-* GraphQL for AEM还生成了多个 [帮助程序字段](#helper-fields).
+* GraphQL for AEM还生成多个[帮助程序字段](#helper-fields)。
 
 ### 数据类型 {#data-types}
 
@@ -258,13 +258,13 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 | 枚举 | `String` | 用于显示在模型创建时定义的选项列表中的选项 |
 | 标记 | `[String]` | 用于显示表示在 AEM 中所用标记的字符串列表 |
 | 内容引用 | `String`、`[String]` | 用于显示指向 AEM 中其他资源的路径 |
-| 片段引用 |  *模型类型* <br><br>单个字段： `Model`  — 模型类型，直接引用 <br><br>具有一个引用类型的多字段： `[Model]`  — 类型数组 `Model`，直接从数组引用 <br><br>具有多个引用类型的多字段： `[AllFragmentModels]`  — 所有模型类型的数组，从具有合并类型的数组引用 | 用于引用创建模型时定义的特定模型类型的一个或多个内容片段 |
+| 片段引用 |  *模型类型* <br><br>单个字段： `Model` — 直接引用的模型类型<br><br>多字段，具有一个引用的类型： `[Model]` — 直接从数组<br><br>引用的类型为`Model`的数组多字段，具有多个引用的类型： `[AllFragmentModels]` — 从具有合并类型的数组引用的所有模型类型的数组 | 用于引用创建模型时定义的特定模型类型的一个或多个内容片段 |
 
 {style="table-layout:auto"}
 
 ### 帮助程序字段 {#helper-fields}
 
-除了用户生成的字段的数据类型之外，GraphQL for AEM还生成了多个 *辅助函数* 帮助标识内容片段或提供有关内容片段的附加信息的字段。
+在用户生成的字段数据类型之外，GraphQL for AEM还生成了多个&#x200B;*帮助程序*&#x200B;字段，用于帮助标识内容片段，或提供有关内容片段的更多信息。
 
 这些[帮助程序字段](#helper-fields)使用前缀 `_` 标记，用于区分哪些字段由用户定义，哪些字段为自动生成。
 
@@ -370,7 +370,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 
 >[!NOTE]
 >
->此 `_variations` 字段不包含 `master` 变体，从技术上讲，为原始数据(称为 *母版* （在UI中）不被视为显式变量。
+>`_variations`字段不包含`master`变量，从技术上讲，原始数据（在UI中称为&#x200B;*主变量*）不被视为显式变量。
 
 请参阅[示例查询 – 具有指定变体的所有城市](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)。
 
@@ -508,7 +508,7 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 | 选项 | 类型 | 描述 |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | 忽略字符串的大小写，例如 `time` 匹配 `TIME`， `time`， `tImE`， ... |
+| `_ignoreCase` | `String` | 忽略字符串的大小写，例如`time`的值与`TIME`、`time`、`tImE`匹配…… |
 | `_sensitiveness` | `Float` | 允许有一定的余地，将 `float` 值视为相同（以解决由于 `float` 值的内部表示引起的技术限制；应该避免，因为此选项可能有负面影响对性能的影响 |
 
 表达式可以在逻辑运算符 (`_logOp`) 的帮助下组合成一个集合：
@@ -520,11 +520,11 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 过滤器定义（作为 `filter` 参数传递给查询）包含：
 
-* 每个字段的子定义(可以通过其名称访问该字段，例如，有一个 `lastName` 的过滤器中的字段 `lastName` 字段类型)
+* 每个字段的子定义(可以通过其名称访问该字段，例如，数据（字段）类型中的`lastName`字段的过滤器中有一个`lastName`字段)
 * 每个子定义包含 `_expressions` 数组，提供表达式集，以及 `_logOp` 字段，该字段定义表达式应与之组合的逻辑运算符
 * 每个表达式由值（`value` 字段）和运算符（`_operator` 字段）定义，字段的内容应该与之进行比较
 
-您可以省略 `_logOp` 如果要将项目与 `AND` 和 `_operator` 如果您要检查是否相等，因为这些是默认值。
+如果要将项目与`AND`和`_operator`组合，则可以省略`_logOp`；如果要检查是否相等，则可以省略，因为这些是默认值。
 
 以下示例演示了一个完整的查询，该查询过滤所有 `lastName` 为 `Provo` 或包含 `sjö` 的人员，与大小写无关：
 
@@ -715,7 +715,7 @@ query {
 
 经 Web 优化的图像传递支持您使用 GraphQL 查询来：
 
-* 请求DAM资产图像的URL(由 **内容引用**)
+* 请求DAM资产图像的URL（由&#x200B;**内容引用**&#x200B;引用）
 
 * 通过查询传递参数，以便自动生成并返回图像的特定演绎版
 
@@ -735,17 +735,17 @@ query {
 
 GraphQL 中的解决方案意味着您可以：
 
-* 请求URL：使用 `_dynamicUrl` 在 `ImageRef` 引用
+* 请求URL：使用`ImageRef`引用上的`_dynamicUrl`
 
-* 传递参数：添加 `_assetTransform` 到在其中定义筛选器的列表标题
+* 传递参数：将`_assetTransform`添加到定义筛选器的列表标头
 
 >[!NOTE]
 >
->A **内容引用** 可以同时用于DAM资源和Dynamic Media资源。 检索相应的URL时，会使用不同的参数：
+>**内容引用**&#x200B;可用于DAM资源和Dynamic Media资源。 检索相应的URL时，会使用不同的参数：
 >* `_dynamicUrl` ：DAM资产
 >* `_dmS7Url` ：Dynamic Media资源
 > 
->如果引用的资产是DAM资产，则其值 `_dmS7Url` 将为 `null`. 请参阅 [GraphQL查询中按URL的Dynamic Media资产交付](#dynamic-media-asset-delivery-by-url).
+>如果引用的资产是DAM资产，则`_dmS7Url`的值将为`null`。 在GraphQL查询](#dynamic-media-asset-delivery-by-url)中查看按URL的[Dynamic Media资源投放。
 
 ### 转换请求的结构 {#structure-transformation-request}
 
@@ -923,7 +923,7 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
 
 ## GraphQL查询中按URL的Dynamic Media资产交付{#dynamic-media-asset-delivery-by-url}
 
-GraphQL for AEM内容片段允许您请求AEM Dynamic Media (Scene7)资产的URL（由引用） **内容引用**)。
+GraphQL for AEM内容片段允许您请求AEM Dynamic Media (Scene7)资源的URL（由&#x200B;**内容引用**&#x200B;引用）。
 
 GraphQL 中的解决方案意味着您可以：
 
@@ -931,23 +931,23 @@ GraphQL 中的解决方案意味着您可以：
 
 >[!NOTE]
 >
->为此，您需要拥有 [Dynamic Media云配置](/help/assets/dynamic-media/config-dm.md).
+>为此，您需要具有[Dynamic Media云配置](/help/assets/dynamic-media/config-dm.md)。
 >
->这会添加 `dam:scene7File` 和 `dam:scene7Domain` 创建资产元数据时显示的属性。
+>这会在创建资产时在该资产的元数据上添加`dam:scene7File`和`dam:scene7Domain`属性。
 
 >[!NOTE]
 >
->A **内容引用** 可以同时用于DAM资源和Dynamic Media资源。 检索相应的URL时，会使用不同的参数：
+>**内容引用**&#x200B;可用于DAM资源和Dynamic Media资源。 检索相应的URL时，会使用不同的参数：
 >
 >* `_dmS7Url` ：Dynamic Media资源
 >* `_dynamicUrl` ：DAM资产
 > 
->如果引用的资产是Dynamic Media资产，则其值 `_dynamicURL` 将为 `null`. 请参阅 [GraphQL查询中的Web优化图像投放](#web-optimized-image-delivery-in-graphql-queries).
+>如果引用的资产是Dynamic Media资产，则`_dynamicURL`的值将为`null`。 查看GraphQL查询中的[Web优化图像投放](#web-optimized-image-delivery-in-graphql-queries)。
 
 ### Dynamic Media资源交付的示例查询（按URL） — 图像引用{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 以下是示例查询：
-* 类型为的多个内容片段 `team` 和 `person`，返回 `ImageRef`
+* `team`和`person`类型的多个内容片段，返回`ImageRef`
 
 ```graphql
 query allTeams {
@@ -974,7 +974,7 @@ query allTeams {
 ### 按URL交付Dynamic Media资源的示例查询 — 多个引用{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 以下是示例查询：
-* 类型为的多个内容片段 `team` 和 `person`，返回 `ImageRef`， `MultimediaRef` 和 `DocumentRef`：
+* 对于类型为`team`和`person`的多个内容片段，返回`ImageRef`、`MultimediaRef`和`DocumentRef`：
 
 ```graphql
 query allTeams {
@@ -1087,17 +1087,17 @@ query allTeams {
    * 对于图像投放：
 
       * `_authorURL`：AEM创作实例上图像资源的完整URL
-      * `_publishURL`：AEM发布上的图像资源的完整URL
+      * `_publishURL`： AEM Publish上图像资源的完整URL
 
-      * 对象 [Web优化图像交付](#web-optimized-image-delivery-in-graphql-queries) （共DAM资产）：
+      * 对于[Web优化图像投放](#web-optimized-image-delivery-in-graphql-queries)（DAM资源）：
 
-         * `_dynamicUrl`：指向上的Web优化DAM资产的完整URL `ImageRef` 引用
+         * `_dynamicUrl`：`ImageRef`引用中针对Web优化的DAM资产的完整URL
 
            >[!NOTE]
            >
-           >`_dynamicUrl` 是用于Web优化的DAM资产的首选URL，应该取代使用 `_path`， `_authorUrl`、和 `_publishUrl` 尽可能。
+           >`_dynamicUrl`是用于Web优化DAM资产的首选URL，应尽可能替换使用`_path`、`_authorUrl`和`_publishUrl`。
 
-         * `_assetTransform`：在定义过滤器的列表标题上传递参数
+         * `_assetTransform`：在定义筛选器的列表标头上传递参数
 
          * 请参阅：
 
@@ -1105,13 +1105,13 @@ query allTeams {
 
             * [使用单个指定参数进行Web优化图像投放的示例查询](#web-optimized-image-delivery-single-query-variable)
 
-      * `_dmS7Url`：在 `ImageRef` 将URL投放到的引用 [Dynamic Media资源](#dynamic-media-asset-delivery-by-url)
+      * `_dmS7Url`：在用于将URL交付到[Dynamic Media资源](#dynamic-media-asset-delivery-by-url)的`ImageRef`引用上
 
-         * 请参阅 [按URL投放Dynamic Media资源的示例查询 — ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+         * 查看按URL进行的Dynamic Media资源投放的[示例查询 — ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-         * 请参阅 [按URL交付Dynamic Media资源的示例查询 — 多个引用](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+         * 查看按URL进行的Dynamic Media资源投放的[示例查询 — 多个引用](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
-   * `_tags`：用于显示包含标记的内容片段或变体的ID；这是一个数组 `cq:tags` 标识符。
+   * `_tags`：用于显示包含标记的内容片段或变体的ID；这是`cq:tags`标识符的数组。
 
       * 请参阅[示例查询 - 标记为“城市度假”的所有城市的名称](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks)
       * 请参阅[附加了特定标签的给定模型的内容片段变体的示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -1168,7 +1168,7 @@ query allTeams {
 
    * 因此，在何处：
 
-      * 两个（或多个模型）作为可能的参照；当它们被定义为允许参照时 **模型类型** 在内容片段引用中。
+      * 使用两个（或更多模型）作为可能的引用；当它们在内容片段引用中定义为允许的&#x200B;**模型类型**&#x200B;时。
 
      和：
 
@@ -1180,12 +1180,12 @@ query allTeams {
 
    * 例如：
 
-      * 当两个（或多个）片段具有不同模型时(例如， `M1`， `M2`)用作其他片段中的可能引用（内容引用或片段引用）；例如， `Fragment1` `MultiField/List`
-      * 这两个片段具有不同的模型(`M1`， `M2`)的字段具有相同名称，但类型不同。
+      * 当使用两个具有不同模型的片段（例如`M1`、`M2`）作为另一个片段的可能引用（内容引用或片段引用）时；例如`Fragment1` `MultiField/List`
+      * 这两个具有不同模型(`M1`、`M2`)的片段具有同名但类型不同的字段。
 举例说明：
-         * `M1.Title` 作为 `Text`
-         * `M2.Title` 作为 `Text/MultiField`
-      * 如果GraphQL查询包含 `Title` 字段。
+         * `M1.Title`作为`Text`
+         * `M2.Title`作为`Text/MultiField`
+      * 如果GraphQL查询包含`Title`字段，则会发生字段冲突错误。
 
 ## 常见问题解答 {#faqs}
 

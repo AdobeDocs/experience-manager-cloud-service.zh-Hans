@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # AEM页面编辑器 {#editing-page-content}
 
-在中创建页面后 [**站点** 控制台，](/help/sites-cloud/authoring/sites-console/introduction.md) 您可以使用AEM页面编辑器编辑页面的内容，该编辑器是用于创作内容的强大工具。
+在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中创建页面后，您可以使用AEM页面编辑器编辑该页面的内容，该编辑器是用于创作内容的强大工具。
 
 >[!NOTE]
 >
->在中编辑页面时 [**站点** 控制台，](/help/sites-cloud/authoring/sites-console/introduction.md) 控制台将打开与页面对应的编辑器 [模板：](/help/sites-cloud/authoring/sites-console/templates.md) 本文档中描述的页面编辑器，或者 [通用编辑器。](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中编辑页面时，该控制台将打开适用于该页面的[模板](/help/sites-cloud/authoring/sites-console/templates.md)的编辑器，可以是本文档中描述的页面编辑器，也可以是[通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)。
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ ht-degree: 39%
 
 AEM页面编辑器主要由三个部分组成：
 
-1. [工具栏](#toolbar)  — 利用工具栏，可快速更改页面模式并访问其他页面设置。
-1. [侧面板](#side-panel)  — 利用侧面板，可访问页面组件和资产以及其他创作工具。
-1. [编辑器](#editor)  — 在编辑器中，您可以对内容进行更改并进行预览。
+1. [工具栏](#toolbar) — 通过工具栏可以快速更改页面模式和访问其他页面设置。
+1. [侧面板](#side-panel) — 侧面板允许您访问页面组件和资产以及其他创作工具。
+1. [编辑器](#editor) — 在该编辑器中，您可以对内容进行更改并预览。
 
 ![页面编辑器的布局](assets/page-editor-layout.png)
 
@@ -44,7 +44,7 @@ AEM页面编辑器主要由三个部分组成：
 
 #### 侧面板 {#side-panel-button}
 
-这将打开/关闭 [侧面板，](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) ，其中包含资产浏览器、组件浏览器和内容树。
+这将打开/关闭[侧面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)，该面板包含资产浏览器、组件浏览器和内容树。
 
 ![侧面板切换](assets/page-editor-side-panel-toggle.png)
 
@@ -54,7 +54,7 @@ AEM页面编辑器主要由三个部分组成：
 
 ![“页面信息”按钮](assets/page-editor-page-information-icon.png)
 
-**页面信息** 打开一个下拉菜单，提供有关所选页面的最后一次编辑和最后一次发布的详细信息。 根据页面、其站点和实例的特性，其他操作可用。
+**页面信息**&#x200B;将打开一个下拉菜单，其中提供有关所选页面的最后一次编辑和上次发布的详细信息。 根据页面、其站点和实例的特性，其他操作可用。
 
 * [打开属性](/help/sites-cloud/authoring/sites-console/page-properties.md)
 * [转出页](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
@@ -72,13 +72,13 @@ AEM页面编辑器主要由三个部分组成：
 
 #### 模拟器 {#emulator}
 
-这将切换 [模拟器工具栏](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)，用于模拟页面在其他设备上的外观。 这会在布局模式下自动启用。
+这会切换[模拟器工具栏](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)，该工具栏用于模拟页面在其他设备上的外观。 这会在布局模式下自动启用。
 
 ![“模拟器”按钮](assets/page-editor-emulator.png)
 
 #### ContextHub {#context-hub}
 
-这将打开 [ContextHub。](/help/sites-cloud/authoring/personalization/contexthub.md) 它仅在 **预览** 模式。
+这将打开[ContextHub。](/help/sites-cloud/authoring/personalization/contexthub.md)它仅在&#x200B;**预览**&#x200B;模式下可用。
 
 ![ContextHub 按钮](assets/page-editor-context-hub.png)
 
@@ -90,37 +90,37 @@ AEM页面编辑器主要由三个部分组成：
 
 #### 模式选择器 {#mode-selector}
 
-模式选择器显示当前 [模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) 并允许您选择其他模式，如编辑、布局、时间扭曲或定位。
+模式选择器显示当前[模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)，并允许您选择其他模式，如编辑、布局、时间扭曲或定位。
 
 ![“模式选择器”按钮](assets/page-editor-mode-selector.png)
 
 编辑页面时可以使用多种模式来执行不同的操作：
 
-* [编辑](/help/sites-cloud/authoring/page-editor/edit-content.md)  — 编辑页面内容时使用的模式
-* [布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)  — 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
-* [定位](/help/sites-cloud/authoring/personalization/targeted-content.md)  — 通过在所有渠道中进行定位和衡量来提高内容相关性
-* [时间扭曲](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp)  — 查看特定时间点的页面状态
-* [Live Copy状态](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status)  — 允许快速概述Live Copy状态以及哪些组件是/不是继承的
+* [编辑](/help/sites-cloud/authoring/page-editor/edit-content.md) — 编辑页面内容时使用的模式
+* [布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md) — 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
+* [定位](/help/sites-cloud/authoring/personalization/targeted-content.md) — 通过在所有渠道中进行定位和衡量来提高内容相关性
+* [时间扭曲](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) — 查看特定时间点的页面状态
+* [Live Copy状态](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) — 允许快速概述Live Copy状态以及哪些组件是/不是继承的
 * [开发人员模式](/help/implementing/developing/tools/developer-mode.md)
-* [预览](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages)  — 查看发布环境中显示的页面；或使用内容中的链接进行导航
-* [批注](/help/sites-cloud/authoring/page-editor/annotations.md)  — 在页面上添加或查看注释
+* [预览](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) — 查看发布环境中显示的页面；或使用内容中的链接进行导航
+* [批注](/help/sites-cloud/authoring/page-editor/annotations.md) — 在页面上添加或查看批注
 
 >[!NOTE]
 >
 >* 根据页面的特性，某些模式可能不可用。
 >* 某些模式需要相应的许可/权限才能访问。
 >* 由于空间限制，“开发人员”模式在移动设备上不可用。
->* 有一个 [键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) ( `Ctrl-Shift-M`)以在 **预览** 和当前选择的模式(例如， **编辑**， **布局**，等等)。
+>* 有一个[键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) (`Ctrl-Shift-M`)可在&#x200B;**预览**&#x200B;和当前选择的模式（例如，**编辑**、**布局**&#x200B;等）之间切换。
 
 #### 预览 {#preview}
 
-此 **预览** 按钮启用 [预览模式。](#preview-mode)，显示发布时显示的页面。
+**预览**&#x200B;按钮启用[预览模式。](#preview-mode)，显示发布时显示的页面。
 
 ![“预览”按钮](assets/page-editor-preview.png)
 
 #### 批注 {#annotate}
 
-**批注** 模式允许您添加 [注释](/help/sites-cloud/authoring/page-editor/annotations.md) 查看页面时跳转到页面。 添加第一个注释后，该图标将切换为数字，以指示页面上的注释数量。
+**注释**&#x200B;模式允许您在查看页面时向页面添加[注释](/help/sites-cloud/authoring/page-editor/annotations.md)。 添加第一个注释后，该图标将切换为数字，以指示页面上的注释数量。
 
 ![“注释”按钮](assets/page-editor-annotations.png)
 
@@ -134,7 +134,7 @@ AEM页面编辑器主要由三个部分组成：
 
 ![页面编辑器的侧面板](assets/page-editor-side-panel.png)
 
-请参阅文档 [页面编辑器侧面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) 以了解更多信息。
+有关详细信息，请参阅文档[页面编辑器侧面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)。
 
 ### 编辑器 {#editor}
 
@@ -146,11 +146,11 @@ AEM页面编辑器主要由三个部分组成：
 
 现在，您已了解页面编辑器，可以开始编辑内容了。
 
-请参阅文档 [使用AEM页面编辑器编辑内容](/help/sites-cloud/authoring/page-editor/edit-content.md) 以了解更多信息。
+有关详细信息，请参阅文档[使用AEM页面编辑器编辑内容](/help/sites-cloud/authoring/page-editor/edit-content.md)。
 
 ## 状态通知 {#status-notification}
 
-如果页面属于 [工作流](/help/sites-cloud/authoring/workflows/overview.md) 或多个工作流时，此信息显示在编辑页面时工具栏下方的通知栏中。
+如果页面是[工作流](/help/sites-cloud/authoring/workflows/overview.md)或多个工作流的一部分，则在编辑该页面时，将在工具栏下方的通知栏中显示此信息。
 
 ![工作流通知](assets/page-editor-editing-workflow-notification.png)
 
@@ -172,7 +172,7 @@ AEM页面编辑器主要由三个部分组成：
 
 ## Live Copy 状态 {#live-copy-status}
 
-此 **Live Copy状态** 页面模式可让您快速概述Live Copy状态以及/不继承哪些组件：
+**Live Copy状态**&#x200B;页面模式可让您快速了解Live Copy状态以及哪些组件是/不是继承的：
 
 * 绿色边框：已继承
 * 粉色边框：继承已被取消
@@ -185,12 +185,12 @@ AEM页面编辑器主要由三个部分组成：
 
 可通过以下两个选项预览页面：
 
-* [预览模式](#preview-mode)  — 快速就地预览
-* [查看已发布的项目](#view-as-published)  — 在新选项卡中打开页面的完整预览
+* [预览模式](#preview-mode) — 快速就地预览
+* [以发布的形式查看](#view-as-published) — 在新选项卡中打开页面的完整预览
 
 >[!TIP]
 >
->* 内容中的链接是可见的，但在中不可访问 **编辑** 模式。
+>* 内容中的链接可见，但在&#x200B;**编辑**&#x200B;模式下不可访问。
 >* 如果您希望使用链接进行导航，请使用任一预览选项。
 >* 使用[键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Shift-M` 可在预览和最后选择的模式之间切换。
 
@@ -225,7 +225,7 @@ AEM允许您锁定页面，这样其他人就无法编辑其内容。 在对某�
 
 ![锁定页面的示例](assets/page-editor-editing-locked-page.png)
 
-解锁页面的方法与 [锁定页面](#locking-a-page). 锁定页面后，锁定选项就会被替换为解锁操作。
+解锁页面与[锁定页面](#locking-a-page)非常相似。 锁定页面后，锁定选项就会被替换为解锁操作。
 
 >[!CAUTION]
 >
@@ -246,4 +246,4 @@ AEM允许您锁定页面，这样其他人就无法编辑其内容。 在对某�
 
 >[!NOTE]
 >
->请参阅文档 [撤消和重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md) 有关撤消和重做页面编辑时可执行操作的完整详细信息。
+>有关撤消和重做页面编辑时可执行操作的完整详细信息，请参阅文档[撤消和重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)。

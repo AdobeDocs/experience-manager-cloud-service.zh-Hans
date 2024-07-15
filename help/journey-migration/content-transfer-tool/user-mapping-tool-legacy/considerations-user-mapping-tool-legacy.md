@@ -17,13 +17,13 @@ ht-degree: 1%
 
 >[!INFO]
 >
->本文档参考该工具的已弃用版本。 有关最新版本的更多信息，请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>本文档参考该工具的已弃用版本。 有关最新版本的更多信息，请参阅[用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
 
 ## 特殊情况 {#exceptional-cases}
 
 将记录以下特定案例：
 
-1. 如果用户在 `profile/email` 字段 *jcr* 节点，相关用户或组已迁移，但未映射。 即使电子邮件地址用作登录的用户名，此规则也是如此。
+1. 如果用户在其&#x200B;*jcr*&#x200B;节点的`profile/email`字段中没有电子邮件地址，则相关用户或组已迁移，但未映射。 即使电子邮件地址用作登录的用户名，此规则也是如此。
 
 1. 如果在AdobeIdentity Management System (IMS)系统上未找到所使用ID的电子邮件（或者如果无法检索IMS ID），则迁移用户或组，但不映射它们。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 其他注意事项 {#additional-considerations}
 
-* 如果设置 **请擦除云实例上的现有内容后再引入** 设置，则会删除Cloud Service实例中已转移的用户。 系统还会删除整个现有存储库，并创建一个新存储库以将内容摄取到其中。 此操作还会重置所有设置，包括目标Cloud Service实例的权限，对于添加到中的管理员用户，此操作正确。 **管理员** 组。 必须将管理员用户阅读至 **管理员** 组以检索CTT的访问令牌。
+* 如果设置了&#x200B;**在引入**&#x200B;之前擦除云实例上的现有内容，则将删除Cloud Service实例上已转移的用户。 系统还会删除整个现有存储库，并创建一个新存储库以将内容摄取到其中。 此操作还会重置所有设置，包括目标Cloud Service实例的权限，对于添加到&#x200B;**管理员**&#x200B;组的管理员用户为true。 必须将管理员用户读入&#x200B;**管理员**&#x200B;组，才能检索CTT的访问令牌。
 
 * Adobe建议您在使用“用户映射”运行CTT之前，从目标Cloud ServiceAEM实例中删除任何现有用户。 要防止在将用户从源AEM实例迁移到目标AEM实例时出现任何冲突，必须执行此操作。 如果源AEM实例和目标AEM实例中存在相同的用户，则在引入期间可能会发生冲突。
 

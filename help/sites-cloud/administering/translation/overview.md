@@ -36,7 +36,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->您的用户必须是 `project-administrators` 组以使用语言复制功能。
+>您的用户必须是`project-administrators`组的成员才能使用语言复制功能。
 
 ## 最佳实践 {#best-practices}
 

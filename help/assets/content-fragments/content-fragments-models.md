@@ -1,5 +1,5 @@
 ---
-title: 内容片段模型（资产 — 内容片段）
+title: 内容片段模型(Assets — 内容片段)
 description: 了解内容片段模型如何作为AEM中Headless内容的基础，让您能够创建具有结构化内容的内容片段。
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 # 内容片段模型 {#content-fragment-models}
 
-AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/help/assets/content-fragments/content-fragments.md) 作为Headless内容的基础。
+AEM中的内容片段模型定义了[内容片段的内容结构，](/help/assets/content-fragments/content-fragments.md)用作Headless内容的基础。
 
 要使用内容片段模型，您可以：
 
@@ -33,11 +33,11 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
    >
    >如果[未启用内容片段模型](/help/assets/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**“创建”**&#x200B;选项将不可用。
 
-1. 指定&#x200B;**模型标题**。您还可以定义各种属性；例如，添加 **标记**， a **描述**，并选择 **启用模型** 到 [启用模型](#enabling-disabling-a-content-fragment-model) 如有必要。
+1. 指定&#x200B;**模型标题**。您还可以定义各种属性；例如，添加&#x200B;**标记**、**描述**，然后选择&#x200B;**启用模型**&#x200B;以[启用模型](#enabling-disabling-a-content-fragment-model)（如有必要）。
 
    >[!NOTE]
    >
-   >欲知关于 **默认预览URL模式** 请参阅 [内容片段模型 — 属性](#content-fragment-model-properties).
+   >有关&#x200B;**默认预览URL模式**&#x200B;的详细信息，请参阅[内容片段模型 — 属性](#content-fragment-model-properties)。
 
    ![标题和描述](assets/cfm-models-02.png)
 
@@ -152,10 +152,10 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
   如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
 * **呈现为**
-用于在片段中实现/呈现字段的各种选项。通常，此属性允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。 时间 **多个字段** 用于定义项目的最小和最大数量 — 请参阅 [验证](#validation) 以了解更多详细信息。
+用于在片段中实现/呈现字段的各种选项。通常，此属性允许您定义作者是看到字段的单个实例，还是允许作者创建多个实例。 当使用**多个字段**&#x200B;时，您可以定义项目的最小和最大数量 — 有关详细信息，请参阅[验证](#validation)。
 
 * **字段标签**
-输入 **字段标签** 将自动生成 **属性名称**，如有必要，可以手动更新。
+输入**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有附加的验证字段。请参阅[验证](#validation)，了解更多详细信息。
@@ -187,7 +187,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 
   >[!CAUTION]
   >
-  如果要使用MSM（这将创建内容片段的副本），则任意 **独特** 应从在相应的内容片段模型中使用的任何数据类型中删除约束。
+  如果要使用MSM（这将创建内容片段的副本），则应该从相应内容片段模型中使用的任何数据类型中删除任何&#x200B;**唯一**&#x200B;约束。
 
 * 有关特定数据类型及其属性的更多详细信息，请参阅&#x200B;**[内容参考](#content-reference)**。
 
@@ -214,17 +214,17 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
    * 只能引用预定义的宽度和/或高度范围（以像素为单位）内的图像。
 * **片段引用**
    * 测试特定内容片段模型。
-* **最小项目数** / **项目的最大数量**
+* **最小项数** / **最大项数**
 
-  已定义为 **多个字段** (设置 **呈现为**)提供了以下选项：
+  已定义为&#x200B;**多个字段**（使用&#x200B;**渲染为**&#x200B;设置）的字段具有以下选项：
 
    * **最小项目数**
-   * **项目的最大数量**
+   * **最大项数**
 
   已验证以下各项：
 
-   * 最大值需在 [原始内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md).
-   * 两者均已在中验证 [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md).
+   * 已在[原始内容片段编辑器](/help/assets/content-fragments/content-fragments-variations.md)中验证最大值。
+   * 两者均已在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中验证。
 
 ## 使用引用表单嵌套内容 {#using-references-to-form-nested-content}
 
@@ -246,9 +246,11 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 >
 AEM 具有以下重复保护：
 >
-* 内容引用这会阻止用户添加对当前片段的引用。 这可能导致出现空的片段引用选取器对话框。
+* 内容引用
+这会阻止用户添加对当前片段的引用。 这可能导致出现空的片段引用选取器对话框。
 >
-* GraphQL中的片段引用如果您创建的深层查询返回多个相互引用的内容片段，则该查询在第一次出现时将返回空值。
+* GraphQL中的片段引用
+如果您创建的深层查询返回多个相互引用的内容片段，则该查询在第一次出现时将返回空值。
 
 ### 内容引用 {#content-reference}
 
@@ -333,7 +335,7 @@ GraphQL 还对片段引用提供了定期保护。如果在两个相互引用的
 
      >[!NOTE]
      >
-     这仅由 *新建* 内容片段编辑器。 请参阅 [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) 以了解详细信息。
+     只有&#x200B;*新*&#x200B;内容片段编辑器使用它。 有关详细信息，请参阅[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)。
 
 
 ## 启用或禁用内容片段模型 {#enabling-disabling-a-content-fragment-model}

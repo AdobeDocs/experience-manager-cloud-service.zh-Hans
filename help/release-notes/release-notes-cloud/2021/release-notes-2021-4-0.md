@@ -24,14 +24,14 @@ ht-degree: 44%
 
 ## 发布日期 {#release-date}
 
-的发布日期 [!DNL Adobe Experience Manager] as a Cloud Service2021.4.0是2021年5月6日。
+[!DNL Adobe Experience Manager]as a Cloud Service2021.4.0的发布日期是2021年5月6日。
 下一个版本(2021.5.0)将于2021年5月27日发布。
 
-## AEMas a Cloud Service基础{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
 ### 新增功能 {#what-is-new-foundation}
 
-* [发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)  — 新的工作流模型和步骤在发布层次结构较深的内容时提高了性能。
+* [Publish内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) — 新的工作流模型和步骤在发布层次结构较深的内容时提高了性能。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -55,21 +55,21 @@ ht-degree: 44%
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* [!DNL Experience Manager] 不会将下载的单个资源存档在下载原始文件的地方。 此增强可加快下载速度。
+* [!DNL Experience Manager]不存档下载原始文件的单个资源下载。 此增强可加快下载速度。
 
 * 现在，通过链接共享选项下载资产时，您可以选择下载或不下载演绎版。 以前，会下载所有资源演绎版。
 
-* 管理员可以配置 [!DNL Experience Manager] 在批量引入资源后删除资源的来源。 请参阅 [批量资源摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 管理员可以将[!DNL Experience Manager]配置为在批量引入资源后删除资源源。 请参阅[批量资源引入](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-* 在执行运行状况检查以批量导入资源时，Experience Manager现在提供失败原因的详细信息。 请参阅 [批量资源摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 在执行运行状况检查以批量导入资源时，Experience Manager现在提供失败原因的详细信息。 请参阅[批量资源引入](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-* 使用批量导入工具导入资源时，管理员现在可以选择在导入成功后删除源文件。 请参阅 [批量资源摄取](/help/assets/add-assets.md#asset-bulk-ingestor).
+* 使用批量导入工具导入资源时，管理员现在可以选择在导入成功后删除源文件。 请参阅[批量资源引入](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
 * 在编辑元数据架构时，新的根路径选择器字段允许管理员快速轻松地作出选择，从而减少配置时间。
 
-* 在编辑元数据架构时，会添加一种数据类型，以在元数据编辑器中提供自由格式文本区域。 用户可以使用此文本区域输入自由格式文本作为资源的元数据。 请参阅 [元数据架构编辑器](/help/assets/metadata-schemas.md).
+* 在编辑元数据架构时，会添加一种数据类型，以在元数据编辑器中提供自由格式文本区域。 用户可以使用此文本区域输入自由格式文本作为资源的元数据。 请参阅[元数据架构编辑器](/help/assets/metadata-schemas.md)。
 
-* 可以使用CSV文件批量导入许多资源的元数据，也可以将元数据导出到CSV文件。 默认日期格式现在为 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. 用户可以通过更新列标题来使用不同的格式。 例如，添加 `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` 作为CSV文件中的列标题，而不是Word `Date`.
+* 可以使用CSV文件批量导入许多资源的元数据，也可以将元数据导出到CSV文件。 默认日期格式现在为`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`。 用户可以通过更新列标题来使用不同的格式。 例如，在CSV文件中添加`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`作为列标题而非`Date`一词。
 
 * 在列视图中浏览资源时，有一个视觉标志显示每个资源的已批准或已拒绝状态。
 

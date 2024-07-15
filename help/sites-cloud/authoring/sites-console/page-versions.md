@@ -212,7 +212,7 @@ ht-degree: 97%
 
 时间扭曲是页面编辑器的一种[模式](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes)。要启动此模式，只需像切换任何其他模式一样切换此模式即可。
 
-1. 启动要从中启动Timewarp的页面的编辑器，然后选择 **时间扭曲** 模式选择中。
+1. 启动要从中启动Timewarp的页面的编辑器，然后在模式选择中选择&#x200B;**Timewarp**。
 
    ![时间扭曲模式](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 

@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1400'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 73%
 
 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
 
-用户必须具有 **[部署管理员](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** 用于配置非生产管道的角色。
+用户必须具有&#x200B;**[部署管理员](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;角色才能配置非生产管道。
 
 ## 非生产管道 {#non-production-pipelines}
 
@@ -72,7 +72,7 @@ ht-degree: 73%
    * **[全栈代码](#full-stack-code)**
    * **[目标部署](#targeted-deployment)**
 
-请参阅 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) 有关管道类型的更多信息。
+有关管道类型的更多信息，请参阅[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 根据您选择的源代码类型，完成非生产管道创建的步骤有所不同。 按照上面的链接跳到本文档的下一节，完成管道的配置。
 
@@ -103,7 +103,7 @@ ht-degree: 73%
       * **产品功能测试** – 针对开发环境执行[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
       * **自定义功能测试** - 针对开发环境执行[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
       * **自定义 UI 测试** – 为自定义应用程序执行[自定义 UI 测试](/help/implementing/cloud-manager/ui-testing.md)。
-      * **体验审核**  — 执行 [体验审核](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **体验审核** — 执行[体验审核](/help/implementing/cloud-manager/experience-audit-testing.md)
 
    ![全栈管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -113,23 +113,23 @@ ht-degree: 73%
 
 ### 有针对性的部署 {#targeted-deployment}
 
-目标部署仅会为AEM应用程序的选定部分部署代码。 在此类部署中，您可以选择 **包括** 以下代码类型之一：
+目标部署仅会为AEM应用程序的选定部分部署代码。 在此类部署中，您可以选择&#x200B;**包含**&#x200B;以下代码类型之一：
 
-* **配置**  — 在AEM环境中配置流量过滤器规则的设置。
-   * 查看文档 [包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md) 以了解如何管理存储库中的流量过滤器规则，以便正确部署这些规则。
-   * 运行目标部署管道时，配置 [例如WAF配置](/help/security/traffic-filter-rules-including-waf.md) 将部署，前提是将它们保存到您在管道中定义的环境、存储库和分支中。
+* **配置** — 在AEM环境中配置流量过滤器规则的设置。
+   * 请参阅文档[流量过滤器规则（包括WAF规则）](/help/security/traffic-filter-rules-including-waf.md)，了解如何管理存储库中的流量过滤器规则，以便正确部署这些规则。
+   * 运行目标部署管道时，将部署配置[，例如WAF配置](/help/security/traffic-filter-rules-including-waf.md)，前提是这些配置已保存到您在管道中定义的环境、存储库和分支中。
    * 在任何时候，每个环境只能有一个配置管道。
-* **前端代码**  — 为AEM应用程序的前端配置JavaScript和CSS。
+* **前端代码** — 为AEM应用程序的前端配置JavaScript和CSS。
    * 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。
    * 请参阅文档[使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，了解此流程的工作方式以及一些需要注意的事项，以便充分发挥此流程的潜力。
-* **Web层配置**  — 配置Dispatcher属性以存储、处理网页并将其交付给客户端。
-   * 查看文档 [CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 以了解更多详细信息。
+* **Web层配置** — 配置Dispatcher属性，以存储、处理网页并将网页交付给客户端。
+   * 有关更多详细信息，请参阅文档[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)。
    * 如果所选环境存在 Web 层代码管道，则会禁用此选择。
    * 如果将现有的全栈管道部署到环境中，则为同一环境创建 Web 层配置管道将忽略全栈管道中的现有 Web 层配置。
 
 >[!NOTE]
 >
->专用存储库不支持Web层和配置管道。 请参阅文档 [在Cloud Manager中添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md) 详细信息和完整的限制列表。
+>专用存储库不支持 Web 层和配置管道。请参阅文档[在 Cloud Manager 中添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)，了解详细信息和完整的限制列表。
 
 选择部署类型后，完成创建非生产目标部署管道的步骤相同。
 
@@ -137,11 +137,11 @@ ht-degree: 73%
 
 ![目标部署选项](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-targeted-deployment.png)
 
-1. 定义 **符合条件的部署环境**.
+1. 定义&#x200B;**符合条件的部署环境**。
 
    * 如果您的管道是部署管道，则必须选择它应该部署到哪些环境。
 
-1. 下 **源代码**，定义以下选项：
+1. 在&#x200B;**Source代码**&#x200B;下，定义以下选项：
 
    * **存储库** – 此选项定义管道应从中检索代码的 Git 存储库。
 
@@ -152,13 +152,13 @@ ht-degree: 73%
    * **Git 分支** – 此选项定义管道应从中检索代码的所选存储库的分支。
       * 输入分支名称的前几个字符，以及此字段的自动完成功能。它会找到您可以选择的匹配分支。
    * **代码位置** – 此选项定义管道应从中检索代码的所选存储库分支中的路径。
-   * **管道**  — 对于前端非生产管道，您可以选择启用 **[体验审核。](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **管道** — 对于前端非生产管道，您可以选择启用&#x200B;**[体验审核。](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
    ![配置管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. 如果已启用体验审核，请点按或单击 **继续** 以前进到 **体验审核** 选项卡，您可以在此处定义应始终包含在体验审核中的路径。
+1. 如果已启用体验审核，请点按或单击&#x200B;**继续**&#x200B;以前进到&#x200B;**体验审核**&#x200B;选项卡，您可以在其中定义应始终包含在体验审核中的路径。
 
-   * 如果您已启用 **体验审核**，请参阅文档 [体验审核](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) 以了解有关如何配置的详细信息。
+   * 如果您启用了&#x200B;**体验审核**，请参阅[体验审核](/help/implementing/cloud-manager/experience-audit-testing.md#configuration)文档，以了解有关如何配置的详细信息。
    * 如果未配置，请跳过此步骤。
 
 1. 点击或单击&#x200B;**保存**&#x200B;可保存管道。

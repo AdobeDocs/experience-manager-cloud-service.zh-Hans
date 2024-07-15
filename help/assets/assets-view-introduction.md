@@ -1,6 +1,6 @@
 ---
-title: AEM中的“Assets”视图如何使您受益？
-description: 详细了解AEM中“资源”视图的主要优势。 Adobe利用其增强营销和创意专业人士能力方面的专业知识，引入了改变游戏规则的新用户体验。
+title: Assets如何在AEM中查看对您有利？
+description: 详细了解AEM中Assets视图的主要优势。 Adobe利用其增强营销和创意专业人士能力方面的专业知识，引入了改变游戏规则的新用户体验。
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
@@ -12,13 +12,13 @@ ht-degree: 69%
 
 ---
 
-# 资产视图简介 {#assets-view}
+# Assets视图简介 {#assets-view}
 
 ![部署 Assets Essentials](assets/banner-image.jpg)
 
 在当今快节奏、数字优先的环境下（其中实时创作和投放内容必不可少），专为快速的下游市场营销而设计的数字资源管理 (DAM) 体验最为重要。Adobe利用其增强营销和创意专业人士能力方面的专业知识，引入了改变游戏规则的新用户体验。 这种工作流程优先的方法彻底改变了企业处理动态数字资源的方式，使营销人员能够最大限度地提高查找、协作、个性化和交付资源的效率。这些简化的工作流程可加快内容处理速度，并将您的营销工作推向新的高度。
 
-要详细了解Assetsas a Cloud Service的可用基于角色的体验，请参阅 [Assetsas a Cloud Service简介](/help/assets/overview.md#persona-based-experiences).
+要了解有关Assetsas a Cloud Service可用的基于角色的体验的更多信息，请参阅[Assetsas a Cloud Service简介](/help/assets/overview.md#persona-based-experiences)。
 
 ## 如何访问资源视图？ {#access-assets-view}
 
@@ -49,7 +49,7 @@ ht-degree: 69%
 
 ## 为什么使用资源视图？
 
-“资产”视图提供了以下在“管理员”视图中不可用的主要优势：
+Assets视图提供了以下在“管理员”视图中不可用的主要优势：
 
 * [通过“我的工作区”仪表板提供简化的体验](#my-workspace-for-streamlined-experience)
 * [通过以搜索优先的方法来提高效率](#search-first)
@@ -61,7 +61,7 @@ ht-degree: 69%
 
 ### 通过“我的工作区”仪表板提供简化的体验 {#my-workspace-for-streamlined-experience}
 
-获得可满足不同组织角色的不同需求的数字资源管理解决方案。时尚的Assets视图优先考虑易用性和速度，迎合了营销人员对视觉吸引力的偏好以及无杂乱的工作区。 借助可定制的用户特定的“我的工作区”仪表板，营销人员可以以卓越的效率快速查找、预览、编辑、管理和交付资源。无需再花费大量的时间寻找特定资源，享受简化的体验，让您所需的一切触手可及。
+获得可满足不同组织角色的不同需求的数字资源管理解决方案。时尚的Assets视图以易用性和速度为优先，迎合了营销人员对视觉吸引力的偏好以及无杂乱的工作空间。 借助可定制的用户特定的“我的工作区”仪表板，营销人员可以以卓越的效率快速查找、预览、编辑、管理和交付资源。无需再花费大量的时间寻找特定资源，享受简化的体验，让您所需的一切触手可及。
 
 ![“我的工作区”概述](assets/my-workspace-demo.gif)
 
@@ -69,7 +69,7 @@ ht-degree: 69%
 
 ### 有助于做出以数据为驱动的决策的见解 {#insights-data}
 
-为了跟上内容更新速度，可行的见解至关重要。“资产”视图在“我的工作区”中提供高级分析，提供关于资产性能、受众使用情况和参与的宝贵数据。 营销人员可以做出以数据驱动的决策、优化内容策略并完善下游交付以实现最佳结果。通过获得有意义的见解，企业可以在竞争中保持领先地位并取得卓越成果。
+为了跟上内容更新速度，可行的见解至关重要。Assets视图在“我的Workspace”中提供高级见解，提供关于资产性能、受众使用情况和参与的宝贵数据。 营销人员可以做出以数据驱动的决策、优化内容策略并完善下游交付以实现最佳结果。通过获得有意义的见解，企业可以在竞争中保持领先地位并取得卓越成果。
 
 ![见解概述](assets/insights-overview.gif)
 
@@ -85,7 +85,7 @@ ht-degree: 69%
 
 [![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-即将发布的Assetsas a Cloud Service版本还包括 [通过Adobe Express进行Adobe Firefly集成](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+即将发布的Assetsas a Cloud Service版本还将包括[通过Adobe Express的Adobe Firefly集成](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)。
 
 ### 上传文件夹以设置组织的层次结构 {#folder-uploads}
 
@@ -123,10 +123,10 @@ ht-degree: 69%
 
 * 重命名存储库中可用的资源和文件夹。
 
-“资产”视图专为简化工作流、促进协作和加快资产交付而量身定制。 通过实现内容周转率，营销人员可以前所未有地释放其数字资产的全部潜力并释放创造力。
+Assets视图专为简化工作流、促进协作和加快资产交付而量身定制。 通过实现内容周转率，营销人员可以前所未有地释放其数字资产的全部潜力并释放创造力。
 
 
-使用这些链接可快速开始使用资产视图：
+使用这些链接可快速开始使用Assets视图：
 
 * [我的工作区](/help/assets/my-workspace-assets-view.md)
-* [开始使用资源视图](/help/assets/get-started-assets-view.md)
+* [开始使用Assets视图](/help/assets/get-started-assets-view.md)

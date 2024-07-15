@@ -14,13 +14,13 @@ ht-degree: 26%
 
 # 站点控制台侧面板 {#side-panel}
 
-了解如何使用AEM中的侧面板 **站点** 控制台以更好地了解和导航您的内容。
+了解如何使用AEM **Sites**&#x200B;控制台中的侧面板，以更好地了解和导航您的内容。
 
 ## 方向 {#orientation}
 
-默认情况下，当您输入 **站点** 控制台。 这样，屏幕就完全专用于您的内容。
+进入&#x200B;**站点**&#x200B;控制台时，侧面板默认处于关闭状态。 这样，屏幕就完全专用于您的内容。
 
-点按或单击 **侧面板** 图标 **站点** 控制台工具栏以激活侧面板并选择内容的视图。
+点按或单击&#x200B;**站点**&#x200B;控制台工具栏中的&#x200B;**侧面板**&#x200B;图标以激活侧面板并选择内容的视图。
 
 * [仅限内容](#content-only)
 * [内容树](#content-tree)
@@ -30,7 +30,7 @@ ht-degree: 26%
 * [过滤器](#filter)
 * [设置 Analytics](#setup-analytics)
 
-![站点控制台的侧面板视图](assets/sites-console-side-panel-views.png)
+站点控制台的![侧面板视图](assets/sites-console-side-panel-views.png)
 
 下拉列表中显示有蓝色复选标记，并且工具栏中的侧面板图标会更新为所选视图的名称。
 
@@ -40,7 +40,7 @@ ht-degree: 26%
 
 >[!TIP]
 >
->使用抑音符/反撇号 `´` 用于切换到侧面板的“仅限内容”视图的键盘快捷键。
+>使用抑音符/反撇号`´`键盘快捷键切换到侧面板的仅内容视图。
 
 ## 内容树 {#content-tree}
 
@@ -56,7 +56,7 @@ ht-degree: 26%
 
 >[!TIP]
 >
->* 使用 `Alt+1` 用于切换到侧面板的内容树视图的键盘快捷键。
+>* 使用`Alt+1`键盘快捷键切换到侧面板的内容树视图。
 >* 在层次结构视图中选择某个条目后，可以使用箭头键在层次结构中快速导航。
 >* 有关更多信息，请参阅[键盘快捷键。](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
 
@@ -66,7 +66,7 @@ ht-degree: 26%
 
 ![时间线详细信息](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
-此 **时间线** 侧面板用于查看与选定项相关的各种事件，这些选定项可以从下拉列表中选择为类型：
+**时间轴**&#x200B;侧面板允许您查看与选定项相关的各种事件，这些选定项可以从下拉列表中选择为类型：
 
 * 评论
 * [注释](/help/sites-cloud/authoring/page-editor/annotations.md)
@@ -74,26 +74,26 @@ ht-degree: 26%
 * [启动项](/help/sites-cloud/authoring/launches/overview.md)
 * [版本](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [工作流](/help/sites-cloud/authoring/workflows/overview.md)
-   * 请注意，不会显示临时工作流的信息，因为不会保存这些工作流的历史记录信息。<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
+   * 请注意，不会显示临时工作流的任何信息，因为不会保存这些工作流的历史记录信息。<!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
 * 显示全部
 
-此外，您还可以使用添加/查看有关所选项目的注释 **注释** 框显示在事件列表的底部。 键入评论，然后按下 `Return` 将注册该评论。 选择“注释”或“显 **示全部** ” **时，将显示** “注释”。
+此外，您可以使用事件列表底部显示的&#x200B;**注释**&#x200B;框添加/查看有关所选项目的注释。 键入评论后跟`Return`将注册该评论。 选择“注释”或“显 **示全部** ” **时，将显示** “注释”。
 
-在 **站点** 控制台您还可以通过 **注释** 字段。
+在&#x200B;**站点**&#x200B;控制台中，您还可以通过&#x200B;**评论**&#x200B;字段旁边的省略号按钮访问其他功能。
 
 * [保存版本](/help/sites-cloud/authoring/sites-console/page-versions.md)
 * [启动工作流](/help/sites-cloud/authoring/workflows/applying.md)
 
-![站点控制台注释字段](assets/sites-console-comment-ellipsis.png)
+![站点控制台评论字段](assets/sites-console-comment-ellipsis.png)
 
 >[!TIP]
 >
->* 使用 `Alt+2` 用于切换到侧面板的时间轴视图的键盘快捷键。
+>* 使用`Alt+2`键盘快捷键切换到侧面板的时间线视图。
 >* 有关更多信息，请参阅[键盘快捷键。](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
 
 ## 引用 {#references}
 
-此 **引用** 视图显示在控制台中选择的资源的引用类型列表。
+**引用**&#x200B;视图显示指向或指向控制台中所选资源的引用类型的列表。
 
 ![引用详细信息](assets/console-side-panel-references-detail.png)
 
@@ -108,11 +108,11 @@ ht-degree: 26%
 
 ## 站点 {#site}
 
-此 **站点** 侧面板视图显示站点的详细信息 [使用站点模板创建。](/help/sites-cloud/administering/site-creation/create-site.md)
+侧面板的&#x200B;**站点**&#x200B;视图显示使用站点模板创建的[站点的详细信息。](/help/sites-cloud/administering/site-creation/create-site.md)
 
-![站点面板](assets/console-side-panel-site-paenl.png)
+![网站面板](assets/console-side-panel-site-paenl.png)
 
-查看文档 [使用站点面板管理站点主题](/help/sites-cloud/administering/site-creation/site-rail.md) 有关如何使用面板管理 [站点主题。](/help/sites-cloud/administering/site-creation/site-themes.md).
+查看文档[使用站点面板管理站点主题](/help/sites-cloud/administering/site-creation/site-rail.md)，了解有关如何使用面板管理站点主题[的更多详细信息。](/help/sites-cloud/administering/site-creation/site-themes.md)。
 
 如果尚未将前端管道设置为启用基于主题的站点创建，则侧面板将提供该选项。
 
@@ -124,11 +124,11 @@ ht-degree: 26%
 
 ## 过滤器 {#filter}
 
-此 **筛选** 面板类似于 [搜索功能](/help/sites-cloud/authoring/search.md) 设置相应的位置筛选器后，允许您进一步筛选要查看的内容。
+**筛选器**&#x200B;面板类似于[搜索功能](/help/sites-cloud/authoring/search.md)，已设置相应的位置筛选器，允许您进一步筛选要查看的内容。
 
 ![过滤器示例](assets/console-side-panel-filter.png)
 
-与侧面板的其他视图不同，要切换到其他视图，请点按或单击 `X` 在搜索字段中。
+与侧面板的其他视图不同，要切换到其他视图，请点击或单击搜索字段中的`X`。
 
 ## 设置 Analytics {#setup-analytics}
 

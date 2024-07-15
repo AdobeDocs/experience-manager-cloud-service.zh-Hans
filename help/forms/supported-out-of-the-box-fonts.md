@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 开箱即用(OOTB)支持的字体，用于Formsas a Cloud Service上的PDF生成  {#ootb-supported-fonts-overview}
 
-AEM Formsas a Cloud Service提供各种支持OOTB的内置字体，可在以下位置无缝使用： [通信API](/help/forms/aem-forms-cloud-service-communications-introduction.md)， [核心组件记录文档](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)、和 [基础组件的记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+AEM Formsas a Cloud Service提供各种受支持的OOTB内置字体，这些字体可在[通信API](/help/forms/aem-forms-cloud-service-communications-introduction.md)、[核心组件记录文档](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)和[基础组件记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)中无缝使用。
 
 <!--
 
@@ -52,5 +52,5 @@ OOTB支持的字体列表包括：
 * eurosign.ttf
 
 
-除了上述字体之外，您还可以使用自定义字体为PDF提供特定外观。 要启用自定义字体，您可以 [将自定义字体添加到Formsas a Cloud Service环境](/help/forms/use-custom-fonts.md) 许可证上签字。
+除了上述字体之外，您还可以使用自定义字体为PDF提供特定外观。 要启用自定义字体，请使用有效许可证[将自定义字体添加到Formsas a Cloud Service环境](/help/forms/use-custom-fonts.md)。
 

@@ -34,10 +34,10 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 要创建表单的版本，请执行以下步骤：
 
 1. 创建表单或使用现有表单。
-1. 在AEM UI上，导航到 **[!UICONTROL 表单]**>>**[!UICONTROL Forms和文档]** 并选择您的 **表单**.
-1. 在左侧面板上的选择下拉菜单中，选择 **[!UICONTROL 版本]**.
+1. 在AEM UI上，导航到&#x200B;**[!UICONTROL 表单]**>**[!UICONTROL Forms和文档]**，然后选择您的&#x200B;**表单**。
+1. 在左侧面板上的选择下拉列表中，选择&#x200B;**[!UICONTROL 版本]**。
    ![选择表单](select-a-form.png)
-1. 单击 **三点** 位于左下面板上，单击 **[!UICONTROL 另存为版本]**.
+1. 单击左下方面板上的&#x200B;**三个圆点**，然后单击&#x200B;**[!UICONTROL 另存为版本]**。
 1. 现在，为表单版本提供一个标签，您可以通过注释提供有关表单的信息。
    ![创建表单版本](create-a-form-version.png)
 
@@ -49,22 +49,22 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 ### 还原表单版本 {#revert-a-form-version}
 
-要将表单版本还原到上一个版本，请选择一个表单版本，然后单击 **[!UICONTROL 还原到此版本]**.
+若要将表单版本还原到之前的版本，请选择一个表单版本，然后单击&#x200B;**[!UICONTROL 还原到此版本]**。
 
 ![还原表单版本](revert-form-version.png)
 
 ### 比较表单版本 {#compare-form-versions}
 
-表单作者可以比较表单的两个不同版本以进行预览。 要比较版本，请选择任意表单版本，然后单击 **[!UICONTROL 与当前比较]**. 它在预览模式下显示两个不同的表单版本。
+表单作者可以比较表单的两个不同版本以进行预览。 要比较版本，请选择任意表单版本，然后单击&#x200B;**[!UICONTROL 与当前比较]**。 它在预览模式下显示两个不同的表单版本。
 
 ![比较表单版本](compare-form-versions.png)
 
 ## 添加评论 {#add-comments}
 
-审阅是一种允许一个或多个审阅人对表单进行评论的机制。 任何表单用户均可对表单进行注释或通过注释审阅表单。 要在表单上添加评论，请选择 **[!UICONTROL 表单]**，并添加 **[!UICONTROL 注释]** 到窗体。
+审阅是一种允许一个或多个审阅人对表单进行评论的机制。 任何表单用户均可对表单进行注释或通过注释审阅表单。 若要评论表单，请选择&#x200B;**[!UICONTROL 表单]**，然后向表单添加&#x200B;**[!UICONTROL 评论]**。
 
 >[!NOTE]
-> 如上所述，在自适应表单核心组件中使用注释时，表单功能 [创建和管理表单审核](/help/forms/create-reviews-forms.md) 已禁用。
+> 如上所述，在自适应表单核心组件中使用注释时，表单功能[创建和管理表单审核](/help/forms/create-reviews-forms.md)被禁用。
 
 
 ![在表单上添加评论](form-comments.png)
@@ -73,19 +73,19 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 在许多情况下，表单组用户需要向表单添加注释以进行审阅，例如在表单的特定选项卡上或表单的组件上。 在这种情况下，作者可以使用注释。 要将注释添加到表单，请执行以下步骤：
 
-1. 在中打开表单 **[!UICONTROL 编辑]** 模式。
+1. 以&#x200B;**[!UICONTROL 编辑]**&#x200B;模式打开表单。
 
-1. 单击 **“添加”图标** ，如图所示。
-   ![注释](annotation.png)
+1. 单击位于右上边栏的&#x200B;**添加图标**（如图像中所示）。
+   ![批注](annotation.png)
 
-1. 单击 **“添加”图标** 位于左上边栏的图像，用于添加注释。
-   ![添加注释](add-annotation.png)
+1. 单击位于左上边栏的&#x200B;**添加图标**（如图像中所示）以添加批注。
+   ![添加批注](add-annotation.png)
 
 1. 现在，您可以添加注释，用多种颜色绘制草图以形成组件。
 
 1. 要查看您在表单中添加的所有注释，请选择您的表单，然后您会看到在左侧面板中添加的注释，如图像所示。
 
-   ![查看添加的批注](see-annotations.png)
+   ![查看已添加批注](see-annotations.png)
 
 ## 另请参阅 {#see-also}
 

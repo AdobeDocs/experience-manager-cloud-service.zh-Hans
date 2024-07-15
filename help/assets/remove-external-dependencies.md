@@ -21,7 +21,7 @@ Adobe建议您为Workfront的现有增强型连接器安装执行配置步骤，
 
 要删除外部依赖项，请执行以下操作：
 
-1. 从父存储库中删除以下Hoodoo存储库配置 `pom.xml`：
+1. 从父`pom.xml`中删除以下Hoodoo存储库配置：
 
    ```XML
      <repository>
@@ -31,7 +31,7 @@ Adobe建议您为Workfront的现有增强型连接器安装执行配置步骤，
      </repository>
    ```
 
-1. 从删除以下服务器配置 `settings.xml` 文件，位于 `./cloudmanager/maven/settings.xml`：
+1. 从`settings.xml`文件（位于`./cloudmanager/maven/settings.xml`）中删除以下服务器配置：
 
    ```XML
          <server>
@@ -47,4 +47,4 @@ Adobe建议您为Workfront的现有增强型连接器安装执行配置步骤，
          </server>
    ```
 
-1. 执行 [新的安装步骤](workfront-connector-install.md).
+1. 执行[新安装步骤](workfront-connector-install.md)。

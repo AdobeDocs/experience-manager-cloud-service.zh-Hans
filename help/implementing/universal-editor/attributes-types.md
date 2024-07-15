@@ -30,11 +30,11 @@ ht-degree: 79%
 |---|---|
 | `data-aue-resource` | 资源的 URN，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
 | `data-aue-prop` | 资源的属性，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
-| `data-aue-type` | [可编辑项目的类型](#item-types) （例如，文本、图像和引用） |
+| `data-aue-type` | [可编辑项的类型](#item-types)（例如，文本、图像和引用） |
 | `data-aue-filter` | 定义可以使用哪些参考 |
 | `data-aue-label` | 为编辑器中显示的可选项目定义自定义标签<br>如果设置了 `data-aue-model`，则会通过模型检索标签 |
 | `data-aue-model` | 定义一个模型，该模型会用于属性边栏中基于表单的编辑 |
-| `data-aue-behavior` | 定义 [检测行为](#behaviors)例如，独立的文本或图像也可以模拟组件以使其可移动或删除 |
+| `data-aue-behavior` | 定义检测工具](#behaviors)的[行为，例如，独立文本或图像也可以模拟组件使其可移动或可删除 |
 
 ## 项目类型 {#item-types}
 

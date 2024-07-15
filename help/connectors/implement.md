@@ -17,7 +17,7 @@ ht-degree: 96%
 
 以下提供了构建 [AEM 连接器](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html)的有用参考，应结合有关[提交](submit.md)和[维护](maintain.md)连接器的指导阅读这些参考。
 
-可以通过获取AEM的开发人员许可证 [Adobe Exchange计划](https://partners.adobe.com/exchangeprogram/experiencecloud).
+可以通过[Adobe Exchange计划](https://partners.adobe.com/exchangeprogram/experiencecloud)获取AEM的开发人员许可证。
 
 常见集成模式
 ---------------------------
@@ -66,7 +66,7 @@ Experience Manager as a Cloud Service [文档](../overview/introduction.md)提�
 
 现有连接器可能也需要重构，以将可能曾放置 `/etc` 的任何配置移动到其他顶级文件夹中，例如 `/conf`。此重构是作为 AEM 6.5 的一部分完成的，并在 [AEM 6.5 文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中进行了描述。
 
-建议将大多数连接器代码放在 `/apps/connectors/<vendor>` 为具有多个连接器的客户推广干净的存储库结构。
+建议将大多数连接器代码放在`/apps/connectors/<vendor>`下，以便为具有多个连接器的客户提升干净的存储库结构。
 
 云服务配置
 -----------------------------

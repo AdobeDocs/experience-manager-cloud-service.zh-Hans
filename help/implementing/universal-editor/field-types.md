@@ -24,7 +24,7 @@ ht-degree: 10%
 
 >[!TIP]
 >
->如果您不熟悉如何针对通用编辑器检测应用程序，请参阅文档 [面向AEM开发人员的通用编辑器概述。](/help/implementing/universal-editor/developer-overview.md)
+>如果您不熟悉如何针对通用编辑器检测您的应用程序，请参阅文档[面向AEM开发人员的通用编辑器概述。](/help/implementing/universal-editor/developer-overview.md)
 
 ## 模型定义结构 {#model-structure}
 
@@ -41,9 +41,9 @@ ht-degree: 10%
 ]
 ```
 
-请参阅 **[字段](#fields)** 部分，以了解有关如何定义 `fields` 数组。
+有关如何定义`fields`数组的详细信息，请参阅本文档的&#x200B;**[字段](#fields)**&#x200B;部分。
 
-要将模型定义与元件一起使用，请将 `data-aue-model` 属性可以使用。
+要将模型定义与组件一起使用，可以使用`data-aue-model`属性。
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
@@ -77,11 +77,11 @@ ht-degree: 10%
 | `description` | `FieldDescription` | 字段描述 | 否 |
 | `placeholder` | `string` | 字段的占位符 | 否 |
 | `value` | `FieldValue` | 默认值 | 否 |
-| `valueType` | `ValueType` | 标准验证，可以是 `string`， `string[]`， `number`， `date`， `boolean` | 否 |
+| `valueType` | `ValueType` | 标准验证，可以是`string`、`string[]`、`number`、`date`、`boolean` | 否 |
 | `required` | `boolean` | 字段是否为必填字段 | 否 |
 | `readOnly` | `boolean` | 字段是否为只读 | 否 |
 | `hidden` | `boolean` | 默认情况下是否隐藏字段 | 否 |
-| `condition` | `RulesLogic` | 显示或隐藏字段的规则，基于 [条件](/help/implementing/universal-editor/customizing.md#conditionally-hide) | 否 |
+| `condition` | `RulesLogic` | 根据[条件](/help/implementing/universal-editor/customizing.md#conditionally-hide)显示或隐藏字段的规则 | 否 |
 | `multi` | `boolean` | 字段是否为多字段 | 否 |
 | `validation` | `ValidationType` | 字段的验证规则 | 否 |
 | `raw` | `unknown` | 组件可以使用的原始数据 | 否 |
@@ -114,7 +114,7 @@ AEM标记组件类型会启用AEM标记选取器，该选取器可用于将标�
 
 >[!BEGINTABS]
 
->[!TAB 示例]
+>[!TAB 样本]
 
 ```json
 {
@@ -132,7 +132,7 @@ AEM标记组件类型会启用AEM标记选取器，该选取器可用于将标�
 
 >[!TAB 屏幕快照]
 
-![AEM标记组件类型的屏幕截图](assets/component-types/aem-tag-picker.png)
+![AEM标记组件类型的屏幕快照](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
@@ -142,7 +142,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!BEGINTABS]
 
->[!TAB 示例]
+>[!TAB 样本]
 
 ```json
 {
@@ -161,7 +161,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕快照]
 
-![AEM内容组件类型屏幕截图](assets/component-types/aem-content-picker.png)
+![AEM内容组件类型的屏幕截图](assets/component-types/aem-content-picker.png)
 
 >[!ENDTABS]
 
@@ -212,7 +212,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕快照]
 
-![布尔组件类型的屏幕截图](assets/component-types/boolean.png)
+![布尔组件类型的屏幕快照](assets/component-types/boolean.png)
 
 >[!ENDTABS]
 
@@ -222,7 +222,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!BEGINTABS]
 
->[!TAB 示例]
+>[!TAB 样本]
 
 ```json
 {
@@ -258,7 +258,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!BEGINTABS]
 
->[!TAB 示例]
+>[!TAB 样本]
 
 ```json
  {
@@ -291,13 +291,13 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕快照]
 
-![容器组件类型的屏幕截图](assets/component-types/container.png)
+![容器组件类型的屏幕快照](assets/component-types/container.png)
 
 >[!ENDTABS]
 
 #### 内容片段 {#content-fragment}
 
-内容片段选取器可用于选择 [内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md) 及其变体（如果需要）。 它提供了额外的配置。
+内容片段选取器可用于选择[内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)及其变体（如果需要）。 它提供了额外的配置。
 
 | 配置 | 值类型 | 描述 | 必填 |
 |---|---|---|---|
@@ -343,7 +343,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 | 验证类型 | 值类型 | 描述 | 必填 |
 |---|---|---|---|
-| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `valueFormat` 不符合 | 否 |
+| `customErrorMsg` | `string` | 未满足`valueFormat`时将显示的消息 | 否 |
 
 >[!BEGINTABS]
 
@@ -417,13 +417,13 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕快照]
 
-![日期时间组件类型的屏幕截图](assets/component-types/date-time.png)
+![日期时间组件类型](assets/component-types/date-time.png)的屏幕截图
 
 >[!ENDTABS]
 
 #### 体验片段 {#experience-fragment}
 
-体验片段选取器可用于选择 [体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md) 及其变体（如果需要）。 它提供了额外的配置。
+体验片段选取器可用于选择[体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)及其变体（如果需要）。 它提供了额外的配置。
 
 | 配置 | 值类型 | 描述 | 必填 |
 |---|---|---|---|
@@ -520,8 +520,8 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕截图]
 
-![多选组件类型的屏幕截图](assets/component-types/multiselect.png)
-![带分组的多选组件类型的屏幕截图](assets/component-types/multiselect-group.png)
+![多选组件类型的屏幕快照](assets/component-types/multiselect.png)
+![包含分组的多选组件类型的屏幕截图](assets/component-types/multiselect-group.png)
 
 >[!ENDTABS]
 
@@ -533,7 +533,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 |---|---|---|---|
 | `numberMin` | `number` | 允许的最小数量 | 否 |
 | `numberMax` | `number` | 允许的最大数量 | 否 |
-| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `numberMin` 或 `numberMax` 不符合 | 否 |
+| `customErrorMsg` | `string` | 未满足`numberMin`或`numberMax`时将显示的消息 | 否 |
 
 >[!BEGINTABS]
 
@@ -580,7 +580,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕快照]
 
-![数字组件类型的屏幕截图](assets/component-types/number.png)
+![编号组件类型](assets/component-types/number.png)的屏幕快照
 
 >[!ENDTABS]
 
@@ -590,7 +590,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!BEGINTABS]
 
->[!TAB 示例]
+>[!TAB 样本]
 
 ```json
 {
@@ -612,7 +612,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕快照]
 
-![无线组组件类型的屏幕截图](assets/component-types/radio.png)
+![单选按钮组组件类型的屏幕快照](assets/component-types/radio.png)
 
 >[!ENDTABS]
 
@@ -622,7 +622,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!BEGINTABS]
 
->[!TAB 示例]
+>[!TAB 样本]
 
 ```json
 {
@@ -640,7 +640,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕快照]
 
-![引用组件类型的屏幕截图](assets/component-types/reference.png)
+![引用组件类型的屏幕快照](assets/component-types/reference.png)
 
 >[!ENDTABS]
 
@@ -651,7 +651,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 | 验证类型 | 值类型 | 描述 | 必填 |
 |---|---|---|---|
 | `maxSize` | `number` | 允许的最大字符数 | 否 |
-| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `maxSize` 已超出 | 否 |
+| `customErrorMsg` | `string` | 超过`maxSize`时将显示的消息 | 否 |
 
 >[!BEGINTABS]
 
@@ -693,7 +693,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕快照]
 
-![文本区域组件类型的屏幕截图](assets/component-types/richtext.png)
+![文本区域组件类型的屏幕快照](assets/component-types/richtext.png)
 
 >[!ENDTABS]
 
@@ -703,7 +703,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!BEGINTABS]
 
->[!TAB 示例]
+>[!TAB 样本]
 
 ```json
 {
@@ -725,7 +725,7 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 >[!TAB 屏幕快照]
 
-![选择组件类型的屏幕截图](assets/component-types/select.png)
+![选定组件类型的屏幕快照](assets/component-types/select.png)
 
 >[!ENDTABS]
 
@@ -733,13 +733,13 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 
 选项卡组件类型允许您在多个选项卡上将其他输入字段分组在一起，以改善作者的布局组织。
 
-A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `tab` 将被放置在该选项卡上，直到有新的 `tab` 之后，会将以下项目放置到新选项卡上。
+可以将`tab`定义视为`fields`数组中的分隔符。 `tab`之后的所有内容都将放在该选项卡上，直到遇到新`tab`为止，之后，以下项目将放在该新选项卡上。
 
 如果希望项目出现在所有选项卡上方，则必须在任何选项卡之前定义它们。
 
 >[!BEGINTABS]
 
->[!TAB 示例]
+>[!TAB 样本]
 
 ```json
 {
@@ -786,7 +786,7 @@ A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `ta
 | `minLength` | `number` | 允许的最小字符数 | 否 |
 | `maxLength` | `number` | 允许的最大字符数 | 否 |
 | `regExp` | `string` | 输入文本必须匹配的正则表达式 | 否 |
-| `customErrorMsg` | `string` | 出现以下情况时将显示的消息 `minLength`， `maxLength`，和/或 `regExp` 违反了 | 否 |
+| `customErrorMsg` | `string` | 违反`minLength`、`maxLength`和/或`regExp`时将显示的消息 | 否 |
 
 >[!BEGINTABS]
 
@@ -832,6 +832,6 @@ A `tab` 可以将定义视为数组中的分隔符 `fields`. 之后的一切 `ta
 
 >[!TAB 屏幕快照]
 
-![文本组件类型的屏幕截图](assets/component-types/simpletext.png)
+![文本组件类型的屏幕快照](assets/component-types/simpletext.png)
 
 >[!ENDTABS]

@@ -27,9 +27,9 @@ AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中�
 
 有关AEM中SPA的更多详细信息，请参阅以下内容：
 
-* [SPA Blueprint](blueprint.md) 以了解SPA的技术要求。
-* [在AEM中使用React快速入门SPA](getting-started-react.md) 快速浏览使用React的简单SPA。
-* [使用Angular在AEM中开始使用SPA](getting-started-angular.md) 以快速了解使用Angular的简单SPA。
+* 有关SPA的技术要求，请[SPA Blueprint](blueprint.md)。
+* [在AEM中使用React的SPA快速入门](getting-started-react.md)，快速了解使用React的简单SPA。
+* [使用Angular在AEM中使用SPA快速入门](getting-started-angular.md)，快速了解使用Angular的简单SPA。
 
 ## 设计 {#design}
 

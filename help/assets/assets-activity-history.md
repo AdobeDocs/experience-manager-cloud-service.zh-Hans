@@ -16,7 +16,7 @@ ht-degree: 35%
 
 # 在活动流中查看资源操作日志 {#activity-stream-in-timeline}
 
-此功能在时间轴上显示资源的活动日志。 如果您在中执行以下任何与资产相关的操作 [!DNL Experience Manager Assets]，活动流功能会更新时间线以反映该活动。
+此功能在时间轴上显示资源的活动日志。 如果在[!DNL Experience Manager Assets]中执行以下任何与资产相关的操作，则活动流功能会更新时间线以反映该活动。
 
 以下操作记录在活动流中：
 
@@ -29,13 +29,13 @@ ht-degree: 35%
 * 拒绝
 * 移动
 
-时间轴中显示的活动日志是从 CRX 中的 `/var/audit/com.day.cq.dam/content/dam` 位置获取的，日志文件就存储在该位置。此外，当上传新资产或修改现有资产并签入时，会记录时间轴活动 [!DNL Experience Manager] via [Adobe资源链接](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+时间轴中显示的活动日志是从 CRX 中的 `/var/audit/com.day.cq.dam/content/dam` 位置获取的，日志文件就存储在该位置。此外，当上传新资源或通过[AdobeAsset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)或[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)修改现有资源并签入[!DNL Experience Manager]时，将记录时间轴活动。
 
 >[!NOTE]
 >
 >临时工作流不会显示在时间轴中，因为不会保存这些工作流的历史记录信息。
 
-要查看活动流，请在资产上执行一个或多个操作，选择资产，然后选择 **[!UICONTROL 时间线]** 从GlobalNav列表中。
+要查看活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表中选择&#x200B;**[!UICONTROL 时间轴]**。
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 

@@ -1350,7 +1350,7 @@ query {
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询提供 `fragments` 作为数组 `[Article]`.
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询将`fragments`作为`[Article]`的数组提供。
 
 ```graphql
 {
@@ -1796,7 +1796,7 @@ query {
 } 
 ```
 
-## 交付DAM和Dynamic Media Assets的示例查询 {#sample-queries-delivery-DAM-DM}
+## 投放DAM和Dynamic Media Assets的示例查询 {#sample-queries-delivery-DAM-DM}
 
 对于（DAM资产的）Web优化图像投放：
 
@@ -1806,9 +1806,9 @@ query {
 
 用于将URL交付到Dynamic Media资源
 
-* 请参阅 [Dynamic Media资源交付的示例查询（按URL） — 图像引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* 请参阅[按URL进行的Dynamic Media资源投放的示例查询 — 图像引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* 请参阅 [按URL交付Dynamic Media资源的示例查询 — 多个引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* 查看按URL进行的Dynamic Media资源投放的[示例查询 — 多个引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## 示例内容片段结构（用于 GraphQL） {#content-fragment-structure-graphql}
 

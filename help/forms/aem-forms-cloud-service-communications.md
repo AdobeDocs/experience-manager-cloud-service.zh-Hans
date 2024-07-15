@@ -16,7 +16,7 @@ ht-degree: 6%
 
 Formsas a Cloud Service — 通信API允许您创建、汇编和提供面向品牌的个性化通信，例如业务往来函、文档、报表、索赔处理信函、福利通知、索赔处理信函、每月账单和欢迎套件。 您可以使用Communications API将模板(XFA或PDF)与客户数据相结合，生成PDF、PS、PCL、DPL、IPL和ZPL格式的文档。
 
-假设您有一个或多个模板，并且每个模板有多个XML数据记录。 您可以使用Communications API为每个记录生成打印文档。 <!-- You can also combine the records into a single document. --> 结果生成非交互式PDF文档。 非交互式PDF文档不允许用户在其字段中输入数据。
+假设您有一个或多个模板，并且每个模板有多个XML数据记录。 您可以使用Communications API为每个记录生成打印文档。 <!-- You can also combine the records into a single document. -->结果为非交互式PDF文档。 非交互式PDF文档不允许用户在其字段中输入数据。
 
 Formsas a Cloud Service — 通信提供了用于计划文档生成的按需和批处理API（异步API）：
 
@@ -43,15 +43,15 @@ Formsas a Cloud Service — 通信提供了用于计划文档生成的按需和�
 
 单租户API操作支持两种类型的身份验证：
 
-* **基本身份验证**：基本身份验证是HTTP协议中内置的简单身份验证方案。 客户端使用Authorization标头发送HTTP请求，该标头包含单词Basic，后跟空格和base64编码的字符串username：password。 例如，要授权为管理员/管理员，客户端发送Basic [base64编码字符串用户名]： [base64编码的字符串密码].
+* **基本身份验证**：基本身份验证是内置到HTTP协议中的简单身份验证方案。 客户端使用Authorization标头发送HTTP请求，该标头包含单词Basic，后跟空格和base64编码的字符串username：password。 例如，若要授权为管理员/管理员，客户端将发送基本[base64编码的字符串用户名]： [base64编码的字符串密码]。
 
-* **基于令牌的身份验证：** 基于令牌的身份验证使用访问令牌（持有者身份验证令牌）向Experience Manageras a Cloud Service发出请求。 AEM Formsas a Cloud Service提供API以安全检索访问令牌。 要检索并使用令牌对请求进行身份验证，请执行以下操作：
+* **基于令牌的身份验证：**&#x200B;基于令牌的身份验证使用访问令牌（持有者身份验证令牌）向Experience Manageras a Cloud Service发出请求。 AEM Formsas a Cloud Service提供API以安全检索访问令牌。 要检索并使用令牌对请求进行身份验证，请执行以下操作：
 
-   1. [从Developer Console检索Experience Manageras a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [在环境中安装Experience Manageras a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (应用程序服务器、Web服务器或其他非AEM服务器)配置为向（调用）云服务发送请求。
-   1. [生成JWT令牌并与Adobe IMS API交换访问令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [从Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)检索Experience Manageras a Cloud Service凭据。
+   1. [在环境中安装Experience Manageras a Cloud Service凭据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。 (应用程序服务器、Web服务器或其他非AEM服务器)配置为向（调用）云服务发送请求。
+   1. [生成JWT令牌并与Adobe IMS API交换访问令牌](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
    1. 将访问令牌作为持有者身份验证令牌运行Experience ManagerAPI。
-   1. [在Experience Manager环境中为技术帐户用户设置适当的权限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. [在Experience Manager环境中为技术帐户用户设置适当的权限](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)。
 
   >[!NOTE]
   >
@@ -137,7 +137,7 @@ While it is possible to do the entire JWT generation and exchange process in cus
 
 ### 调用API
 
-此 [API参考文档](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) 提供有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API参考文档还提供了.yaml格式的API定义文件。 您可以下载.yaml文件并将其上传到 [Postman](https://www.postman.com/) 以检查API的功能。
+[API参考文档](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)提供了有关API提供的所有参数、身份验证方法和各种服务的详细信息。 API参考文档还提供了.yaml格式的API定义文件。 您可以下载.yaml文件并将其上传到[Postman](https://www.postman.com/)，以检查API的功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
@@ -148,6 +148,6 @@ While it is possible to do the entire JWT generation and exchange process in cus
 >[!MORELIKETHIS]
 >
 >* [AEM Formsas a Cloud Service通信简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [自适应Forms的AEM Formsas a Cloud Service架构和通信API](/help/forms/aem-forms-cloud-service-architecture.md)
+>* 自适应AEM Forms和通信API的[Formsas a Cloud Service架构](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通信处理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通信处理 — 批处理API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

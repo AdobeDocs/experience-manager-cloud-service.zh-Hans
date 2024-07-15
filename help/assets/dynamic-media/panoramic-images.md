@@ -16,7 +16,7 @@ ht-degree: 1%
 
 本节介绍如何使用全景图像查看器渲染球面全景图像，以获得房间、属性、位置或横向的360°沉浸式观看体验。
 
-另请参阅 [管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md).
+另请参阅[管理查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
@@ -27,11 +27,11 @@ ht-degree: 1%
 * 长宽比为2。
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* 已用关键字标记 `equirectangular`，或 `spherical`和 `panorama`，或 `spherical` 和 `panoramic`. 请参阅 [使用标记](/help/sites-cloud/authoring/sites-console/tags.md).
+* 已用关键字`equirectangular`、`spherical`和`panorama`或`spherical`和`panoramic`标记。 请参阅[使用标记](/help/sites-cloud/authoring/sites-console/tags.md)。
 
-纵横比和关键字条件都适用于资产详细信息页面和 `Panoramic Media` wcm组件。
+纵横比和关键字条件都适用于资产详细信息页面和`Panoramic Media` WCM组件的全景资产。
 
-要上传用于全景图像查看器的资产，请参阅 [上传资源](/help/assets/manage-digital-assets.md#uploading-assets).
+要上传用于全景图像查看器的资源，请参阅[上传资源](/help/assets/manage-digital-assets.md#uploading-assets)。
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -78,8 +78,8 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 ## 预览全景图像 {#previewing-panoramic-images}
 
-请参阅 [预览资源](/help/assets/dynamic-media/previewing-assets.md).
+请参阅[预览资源](/help/assets/dynamic-media/previewing-assets.md)。
 
-## 发布全景图像 {#publishing-panoramic-images}
+## Publish全景图像 {#publishing-panoramic-images}
 
-请参阅 [发布资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+查看[Publish资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。

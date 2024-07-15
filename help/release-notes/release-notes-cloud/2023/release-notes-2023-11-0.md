@@ -92,7 +92,7 @@ ht-degree: 98%
 
 
 
-### 中的新增功能 [!DNL Forms] 预发行版 {#prerelease-features-forms}
+### [!DNL Forms]预发行版中的新增功能 {#prerelease-features-forms}
 
 * **[将自适应表单与 Microsoft® SharePoint 列表建立联系](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**：AEM Forms 提供现成的集成以将表单数据直接提交到 SharePoint 列表，使您可利用 SharePoint 的列表功能。您可以将 Microsoft SharePoint 列表配置为表单数据模型的数据源，并使用&#x200B;**使用表单数据模型提交**&#x200B;提交操作将自适应表单与 SharePoint 列表建立联系。
 

@@ -1,6 +1,6 @@
 ---
-title: App Builder安全性
-description: 了解AEMas a Cloud Service的App Builder应用程序安全性。
+title: App Builder安全
+description: 了解AEM as a Cloud Service的App Builder应用程序安全性。
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# App Builder安全性
+# App Builder安全
 
 了解Adobe运行时操作安全性、用户以及AppBuilder身份验证和授权。
 

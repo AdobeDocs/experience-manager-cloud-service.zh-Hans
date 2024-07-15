@@ -15,27 +15,27 @@ ht-degree: 2%
 
 Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构子包定义，其唯一用途是定义项目的代码子包部署到其中的JCR存储库根。 此方法确保按照JCR资源依赖关系对Experience Manageras a Cloud Service中包的安装自动排序。 缺少依赖项可能会导致出现以下情况：子结构将安装在父结构之前，因此被意外移除，从而破坏部署。
 
-如果您的代码包部署到位置 **未涵盖** 之后，必须在存储库结构包中枚举任何上级资源（比较靠近JCR根的JCR资源）。 建立这些依赖关系需要此过程。
+如果您的代码包部署到代码包未涵盖&#x200B;**的位置**，则必须在存储库结构包中枚举任何上级资源（靠近JCR根的JCR资源）。 建立这些依赖关系需要此过程。
 
 ![存储库结构包](./assets/repository-structure-packages.png)
 
-存储库结构包定义了的预期、常见状态 `/apps` 包验证器用来确定“免受潜在冲突影响”的区域，因为它们是标准根。
+存储库结构包定义了`/apps`的预期共同状态，包验证器将使用该状态来确定作为标准根的区域“免受潜在冲突的影响”。
 
 要包含在存储库结构包中的最典型路径包括：
 
-+ `/apps` 即系统提供的节点
-+ `/apps/cq/...`， `/apps/dam/...`， `/apps/wcm/...`、和 `/apps/sling/...` 这些组件为提供公共覆盖 `/libs`.
-+ `/apps/settings` 这是共享的上下文感知配置根路径
++ `/apps`是系统提供的节点
++ `/apps/cq/...`、`/apps/dam/...`、`/apps/wcm/...`和`/apps/sling/...`为`/libs`提供公共覆盖。
++ `/apps/settings`，共享上下文感知配置根路径
 
-此子包 **没有** 任何内容，且仅由 `pom.xml` 定义过滤器根。
+此子包&#x200B;**没有**&#x200B;任何内容，并且仅由定义过滤器根的`pom.xml`组成。
 
 ## 创建存储库结构包
 
-要为Maven项目创建存储库结构包，请创建一个空的Maven子项目，该项目包含以下内容 `pom.xml`，更新项目元数据以符合父Maven项目。
+要为Maven项目创建存储库结构包，请使用以下`pom.xml`创建一个空的Maven子项目，更新项目元数据以符合父Maven项目。
 
-更新 `<filters>` 要包含所有JCR存储库路径，请将您的代码包部署到的根。
+更新`<filters>`以包含您的代码包部署到的所有JCR存储库路径。
 
-确保将此新的Maven子项目添加到父项目 `<modules>` 列表。
+确保将此新的Maven子项目添加到父项目`<modules>`列表。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -118,9 +118,9 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 
 ## 引用存储库结构包
 
-要使用存储库结构包，请通过部署到的所有代码包（子包）引用它 `/apps`) Maven项目（通过FileVault内容包Maven插件） `<repositoryStructurePackage>` 配置。
+要使用存储库结构包，请通过FileVault内容包Maven插件`<repositoryStructurePackage>`配置通过所有代码包（部署到`/apps`的子包）引用Maven项目。
 
-在 `ui.apps/pom.xml`和任何其他代码包 `pom.xml`s，将项目存储库结构包(#repository-structure-package)配置的引用添加到FileVault包Maven插件中。
+在`ui.apps/pom.xml`和任何其他代码包`pom.xml`中，将对该项目的存储库结构包(#repository-structure-package)配置的引用添加到FileVault包Maven插件中。
 
 ```xml
 ...
@@ -161,15 +161,15 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 
 例如：
 
-+ 代码包A部署到 `/apps/a`
-+ 代码包B部署到中 `/apps/a/b`
++ 代码包A部署到`/apps/a`中
++ 代码包B部署到`/apps/a/b`
 
-如果尚未从代码包B在代码包A上建立包级别依赖关系，则代码包B可以首先部署到 `/apps/a`. 如果随后是代码包A ，它将部署到 `/apps/a`，因此删除了之前安装的 `/apps/a/b`.
+如果未从代码包A上的代码包B建立包级别依赖关系，则代码包B可能首先部署到`/apps/a`中。 如果随后是部署到`/apps/a`中的代码包A ，则结果为删除以前安装的`/apps/a/b`。
 
 在本例中：
 
-+ 代码包A应定义 `<repositoryStructurePackage>` 在项目的存储库结构包上（该包应具有过滤器） `/apps`)。
-+ 代码包B应定义 `<repositoryStructurePackage>` 在代码包A上，因为代码包B部署到代码包A共享的空间中。
++ 代码包A应在项目的存储库结构包中定义一个`<repositoryStructurePackage>`（它应具有`/apps`的筛选器）。
++ 代码包B应在代码包A上定义`<repositoryStructurePackage>`，因为代码包B部署到代码包A共享的空间中。
 
 ## 错误和调试
 
@@ -180,7 +180,7 @@ Adobe Experience Manager as a Cloud Service的Maven项目需要存储库结构�
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-此错误表示中断代码包没有 `<repositoryStructurePackage>` 该列表 `/apps/some/path` 在其过滤器列表中。
+此错误表示中断代码包在其筛选器列表中没有列出`/apps/some/path`的`<repositoryStructurePackage>`。
 
 ## 其他资源
 

@@ -29,11 +29,11 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 >[!NOTE]
 >
->中的用户 **业务负责人** 必须登录角色才能查看许可证仪表板。
+>必须登录具有&#x200B;**业务负责人**&#x200B;角色的用户才能查看许可证仪表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在 **[我的项目群](/help/implementing/cloud-manager/navigation.md#my-programs)** 控制台，切换到 **许可证** 选项卡。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，切换到&#x200B;**许可证**&#x200B;选项卡。
 
 ![许可证功能板](assets/license-dashboard.png)
 
@@ -45,14 +45,14 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 每个部分总结了可用的内容及其使用方式（如果有的话）。 目前，即使租户中存在其他解决方案，也只显示 Sites 解决方案。
 
-* 此 **状态** 列显示未使用的权利数量与租户可用的总权利数量。
+* **状态**&#x200B;列显示未使用的权利数量与租户可用的权利总数。
 * **配置的**&#x200B;列指示已应用解决方案授权的程序。
    * 只有在创建了生产环境时，或者如果存在生产环境，并且在该环境上运行了更新管道，才认为权利被使用。
 * **用途**&#x200B;列在单击时以图形形式显示过去 12 个月内消耗的内容请求。
 
 >[!TIP]
 >
->要了解如何通过Admin Console管理整个组织的Adobe权利，请参阅 [Admin Console概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html).
+>要了解如何从Admin Console管理整个组织的Adobe权利，请参阅[Admin Console概述](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)。
 
 ## 常见问题解答 {#faq}
 
@@ -64,7 +64,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 Content Request不包括仅出于提供产品和服务的目的而由Adobe发起或代表用户发起的请求或活动。 Adobe 识别的用户代理流量也不包括与常见搜索引擎和社交媒体服务相关的机器人、爬虫和蜘蛛。
 
-另请参阅 [了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md).
+另请参阅[了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)。
 
 ### Adobe Experience Manager 如何衡量内容请求？ {#how-are-content-requests-measured}
 
@@ -72,11 +72,11 @@ Content Request不包括仅出于提供产品和服务的目的而由Adobe发起
 
 AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷新其搜索索引或服务的知名服务。
 
-另请参阅 [了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md).
+另请参阅[了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)。
 
 ### 为什么我的分析报告显示的结果与 AEM 内容请求不同？ {#why-are-reports-different}
 
-内容请求可能与组织的Analytics报告工具不同。 有关更多信息，请参阅 [了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md).
+内容请求可能与组织的Analytics报告工具不同。 有关详细信息，请参阅[了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)。
 
 ### 如果我想了解有关我的内容请求量的更多信息怎么办？ {#current-request-volumes}
 

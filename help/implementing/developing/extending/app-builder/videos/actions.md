@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## App Builder应用程序中的操作
 
-了解如何创建可用作App Builder应用程序的操作。
+了解如何创建可作为App Builder应用程序使用的操作。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
 

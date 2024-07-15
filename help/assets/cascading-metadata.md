@@ -27,7 +27,7 @@ ht-degree: 8%
 * 根据在另一个字段中指定的值更改为特定字段显示的选项。
 * 根据在其他字段中指定的值在特定字段中设置默认元数据值。
 
-## 在中配置层叠元数据 [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+## 在[!DNL Experience Manager]中配置级联元数据 {#configure-cascading-metadata-in-aem}
 
 考虑一个方案，其中您要根据所选资源的类型显示层叠元数据。 一些示例
 
@@ -36,26 +36,26 @@ ht-degree: 8%
 
 无论选择的资产类型如何，都会将版权信息显示为必填字段。
 
-1. 选择 [!DNL Experience Manager] 徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**.
-1. 在 **[!UICONTROL 架构Forms]** 页面上，选择架构表单，然后选择 **[!UICONTROL 编辑]** 以编辑架构。
+1. 选择[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据架构]**。
+1. 在&#x200B;**[!UICONTROL 架构Forms]**&#x200B;页面中，选择一个架构表单，然后从工具栏中选择&#x200B;**[!UICONTROL 编辑]**&#x200B;以编辑架构。
 
-   ![select_form](assets/select_form.png)
+   ![选择表单](assets/select_form.png)
 
-1. （可选）在元数据架构编辑器中，创建一个要条件化的字段。 在中指定名称和属性路径 **[!UICONTROL 设置]** 选项卡。
+1. （可选）在元数据架构编辑器中，创建一个要条件化的字段。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中指定名称和属性路径。
 
-   要创建选项卡，请选择 `+` 以添加选项卡，然后添加元数据字段。
+   要创建选项卡，请选择`+`以添加选项卡，然后添加元数据字段。
 
    ![add_tab](assets/add_tab.png)
 
-1. 为资源类型添加下拉字段。 在中指定名称和属性路径 **[!UICONTROL 设置]** 选项卡。 添加可选描述。
+1. 为资源类型添加下拉字段。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中指定名称和属性路径。 添加可选描述。
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. 键值对是提供给表单用户的选项。 您可以手动或从JSON文件提供键值对。
 
-   * 要手动指定值，请选择 **[!UICONTROL 手动添加]**，并选择 **[!UICONTROL 添加选项]** 并指定选项文本和值。 例如，指定视频、PDF、Word和图像资源类型。
+   * 若要手动指定值，请选择&#x200B;**[!UICONTROL 手动添加]**，然后选择&#x200B;**[!UICONTROL 添加选项]**&#x200B;并指定选项文本和值。 例如，指定视频、PDF、Word和图像资源类型。
 
-   * 要动态获取JSON文件中的值，请选择 **[!UICONTROL 通过JSON路径添加]** 和提供JSON文件的路径。 [!DNL Experience Manager] 向用户呈现表单时实时获取键值对。
+   * 要动态获取JSON文件中的值，请选择&#x200B;**[!UICONTROL 通过JSON路径添加]**&#x200B;并提供JSON文件的路径。 [!DNL Experience Manager]在将表单呈现给用户时实时获取键值对。
 
    两个选项是互斥的。 您无法从JSON文件导入选项并手动编辑。
 
@@ -75,12 +75,12 @@ ht-degree: 8%
 
    ![video_dependent_fields](assets/video_dependent_fields.png)
 
-1. 要在资产类型字段和其他字段之间创建依赖关系，请选择依赖字段并打开 **[!UICONTROL 规则]** 选项卡。
+1. 要在资产类型字段和其他字段之间创建依赖关系，请选择依赖字段并打开&#x200B;**[!UICONTROL 规则]**&#x200B;选项卡。
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 下 **[!UICONTROL 要求]**，选择 **[!UICONTROL 必需，基于新规则]** 选项。
-1. 选择 **[!UICONTROL 添加规则]** 并选择 **[!UICONTROL 资源类型]** 创建依赖项的字段。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 选择 **[!UICONTROL 完成]** 以保存更改。
+1. 在&#x200B;**[!UICONTROL 要求]**&#x200B;下，根据新规则&#x200B;]**选项选择**[!UICONTROL &#x200B;必需。
+1. 选择&#x200B;**[!UICONTROL 添加规则]**&#x200B;并选择&#x200B;**[!UICONTROL 资产类型]**&#x200B;字段以创建依赖关系。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存更改。
 
    ![define_rule](assets/define_rule.png)
 
@@ -90,7 +90,7 @@ ht-degree: 8%
 
 1. 在“可 **[!UICONTROL 见性]**”下，根据新 **[!UICONTROL 规则选项选择“可见]** ”。
 
-1. 选择 **[!UICONTROL 添加规则]** 并选择 **[!UICONTROL 资源类型]** 创建依赖项的字段。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 选择 **[!UICONTROL 完成]** 以保存更改。
+1. 选择&#x200B;**[!UICONTROL 添加规则]**&#x200B;并选择&#x200B;**[!UICONTROL 资产类型]**&#x200B;字段以创建依赖关系。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存更改。
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -103,16 +103,16 @@ ht-degree: 8%
    >您可以应用&#x200B;**[!UICONTROL 要求]**&#x200B;条件和&#x200B;**[!UICONTROL 可见性]**&#x200B;条件，二者相互独立。
 
 1. 同样，在资产类型字段中的值Video与其他字段（例如，编解码器和持续时间）之间创建依赖关系。
-1. 重复这些步骤以在中的文档资源(PDF和Word)之间创建依赖关系 [!UICONTROL 资源类型] 字段和字段，例如 [!UICONTROL 页数] 和 [!UICONTROL 作者].
+1. 重复这些步骤以在[!UICONTROL Asset Type]字段和[!UICONTROL Page Count]和[!UICONTROL Author]等字段中的文档资源(PDF和Word)之间创建依赖关系。
 1. 单击&#x200B;**[!UICONTROL 保存]**。将元数据架构应用到文件夹。
 
 1. 导航到将元数据架构应用到的文件夹，然后打开资源的属性页面。 根据您在“资产类型”字段中的选择，将显示相关的级联元数据字段。
 
-   ![视频资源的级联元数据](assets/video_asset.png)
+   ![视频资源的层叠元数据](assets/video_asset.png)
    *图：视频资源的层叠元数据*
 
-   ![文档资产的级联元数据](assets/doc_type_fields.png)
-   *图：文档资源的层叠元数据*
+   ![文档资产的串联元数据](assets/doc_type_fields.png)
+   *图：文档资源*&#x200B;的层叠元数据
 
 **另请参阅**
 

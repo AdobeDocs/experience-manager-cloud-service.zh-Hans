@@ -19,7 +19,7 @@ ht-degree: 38%
 
 ## 概述 {#overview}
 
-站点面板允许您管理站点的主题和模板资源。 [与其他面板类似](/help/sites-cloud/authoring/sites-console/console-side-panel.md) 例如“内容树”面板、“引用”面板或“时间轴”面板，“站点”面板将显示为站点控制台中最左侧的面板，显示有关所选项目的信息。 与其他面板不同，“站点”面板仅适用于站点根。
+站点面板允许您管理站点的主题和模板资源。 [与其他面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)（如“内容树”面板、“引用”面板或“时间轴”面板）一样，“站点”面板在站点控制台中显示为最左侧的面板，显示有关选定项的信息。 与其他面板不同，“站点”面板仅适用于站点根。
 
 站点面板用于管理站点的主题和模板相关信息，包括：
 
@@ -34,13 +34,13 @@ ht-degree: 38%
 
 ## 下载主题源 {#downloading-theme-sources}
 
-当您在AEM中基于 [站点模板，](site-templates.md) 您可以下载 [站点主题](site-themes.md) 使用站点面板。
+当您基于[站点模板](site-templates.md)在AEM中创建站点时，可以使用站点面板下载[站点主题](site-themes.md)。
 
 利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息。
 
 ![下载主题源](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-选择 **下载主题源** 将站点主题的本地副本下载为 `.zip` 文件以进行自定义。
+选择&#x200B;**下载主题源**&#x200B;以将站点主题的本地副本下载为`.zip`文件以进行自定义。
 
 ## 下载模板资源 {#downloading-template-resources}
 
@@ -50,7 +50,7 @@ ht-degree: 38%
 
 ![下载主题源](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-选择标题下的一个或多个按钮 **下载其他模板资源** 下载可用文件的本地副本。
+选择标题&#x200B;**下载其他模板资源**&#x200B;下的一个或多个按钮以下载可用文件的本地副本。
 
 ## 查看和更改主题版本 {#them-versions}
 
@@ -58,15 +58,15 @@ ht-degree: 38%
 
 利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息。
 
-![面板中的站点版本](/help/sites-cloud/administering/assets/theme-versions.png)
+面板中的![站点版本](/help/sites-cloud/administering/assets/theme-versions.png)
 
 主题的当前版本连同其提交哈希以及上次更新时间戳一起显示。
 
-选择 **选择版本** 查看主题的早期版本。
+选择&#x200B;**选择版本**&#x200B;以查看主题的早期版本。
 
 ![选择主题版本](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-选择要更改为的版本，然后选择 **应用** 进行更改。
+选择要更改为的版本，然后选择&#x200B;**应用**&#x200B;以进行更改。
 
 如果 AEM 检测到较新版本的主题已通过前端管道部署但未应用于您的站点，则将显示一个通知图标。
 
@@ -80,7 +80,7 @@ ht-degree: 38%
 
 但是，您可以使用站点面板为站点启用前端管道。
 
-利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息，然后选择 **启用前端管道**.
+利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息，然后选择&#x200B;**启用前端管道**。
 
 ![启用前端管道](/help/sites-cloud/administering/assets/enable-fep.png)
 

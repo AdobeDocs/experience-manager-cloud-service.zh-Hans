@@ -18,9 +18,9 @@ ht-degree: 73%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | 本文 |
 
-**应用于**：✔️用自适应表单基础组件。 ❌ [自适应表单核心组件](/help/forms/configure-submit-actions-core-components.md). Adobe建议使用核心组件来 [将自适应Forms添加到AEM Sites页面](create-or-add-an-adaptive-form-to-aem-sites-page.md) 或 [创建独立的自适应Forms](creating-adaptive-form-core-components.md).
+**适用于**：✔️自适应表单基础组件。 ❌[自适应表单核心组件](/help/forms/configure-submit-actions-core-components.md)。 Adobe建议使用核心组件来[将自适应Forms添加到AEM Sites页面](create-or-add-an-adaptive-form-to-aem-sites-page.md)或[创建独立的自适应Forms](creating-adaptive-form-core-components.md)。
 
-当用户单击 **[!UICONTROL 提交]** 按钮。 Formsas a Cloud Service提供了以下开箱即用的提交操作。
+当用户单击自适应表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，会触发提交操作。 Formsas a Cloud Service提供了以下开箱即用的提交操作。
 
 * [提交到 REST 端点](#submit-to-rest-endpoint)
 * [发送电子邮件](#send-email)
@@ -32,9 +32,9 @@ ht-degree: 73%
 * [提交至 Power Automate](#microsoft-power-automate)
 * [提交到 Workfront Fusion](#workfront-fusion)
 
-您还可以 [扩展默认提交操作](custom-submit-action-form.md) 以创建您自己的提交操作。
+您也可以[扩展默认的提交操作](custom-submit-action-form.md)以创建您自己的提交操作。
 
-您可以在中配置提交操作 **[!UICONTROL 提交]** 侧边栏中的自适应表单容器属性部分。
+您可以在侧边栏的自适应表单容器属性的&#x200B;**[!UICONTROL 提交]**&#x200B;部分中配置提交操作。
 
 ![配置提交操作](assets/submission.png)
 
@@ -98,7 +98,7 @@ ht-degree: 73%
 
 ## 发送电子邮件 {#send-email}
 
-您可以使用 **[!UICONTROL 发送电子邮件]** “提交操作”可在成功提交表单时向一个或多个收件人发送电子邮件。 生成的电子邮件可以包含预定义格式的表单数据。 例如，在以下模板中，将从提交的表单数据中检索客户名称、送货地址、州名和邮政编码。
+您可以使用&#x200B;**[!UICONTROL 发送电子邮件]**&#x200B;提交操作在成功提交表单时向一个或多个收件人发送电子邮件。 生成的电子邮件可以包含预定义格式的表单数据。 例如，在以下模板中，将从提交的表单数据中检索客户名称、送货地址、州名和邮政编码。
 
     ```
     
@@ -118,9 +118,9 @@ ht-degree: 73%
 >[!NOTE]
 >
 > * 所有表单字段必须具有不同的元素名称，即使这些字段位于自适应表单的不同面板上也是如此。
-> * AEM as a Cloud Service要求对出站邮件进行加密。 默认情况下，出站电子邮件处于禁用状态。 要激活它，请将支持票证提交到 [请求访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hans#sending-email).
+> * AEM as a Cloud Service要求对出站邮件进行加密。 默认情况下，出站电子邮件处于禁用状态。 要激活它，请将支持票证提交到[请求访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hans#sending-email)。
 
-您还可以在电子邮件中包含附件和记录文档(DoR)。 要启用 **[!UICONTROL 附加记录文档]** 选项，配置自适应表单以生成记录文档(DoR)。 您可以启用相应选项，以从自适应表单属性生成记录文档。
+您还可以在电子邮件中包含附件和记录文档(DoR)。 要启用&#x200B;**[!UICONTROL 附加记录文档]**&#x200B;选项，请配置自适应表单以生成记录文档(DoR)。 您可以启用相应选项，以从自适应表单属性生成记录文档。
 
 
 
@@ -140,9 +140,9 @@ For information about how to configure the Submit to forms workflow Submit Actio
 
 ## 使用表单数据模型(FDM)提交 {#submit-using-form-data-model}
 
-此 **[!UICONTROL 使用表单数据模型提交]** 提交操作将表单数据模型(FDM)中指定数据模型对象的已提交自适应表单数据写入其数据源。 在配置该提交操作时，可以选择要将其提交数据写回其数据源的数据模型对象。
+**[!UICONTROL 使用表单数据模型提交]**&#x200B;提交操作将表单数据模型(FDM)中指定数据模型对象的已提交自适应表单数据写入其数据源。 在配置该提交操作时，可以选择要将其提交数据写回其数据源的数据模型对象。
 
-此外，您可以使用表单数据模型(FDM)和记录文档(DoR)将表单附件提交到数据源。 有关表单数据模型(FDM)的信息，请参阅 [[!DNL AEM Forms] 数据集成](data-integration.md).
+此外，您可以使用表单数据模型(FDM)和记录文档(DoR)将表单附件提交到数据源。 有关表单数据模型(FDM)的信息，请参阅[[!DNL AEM Forms] 数据集成](data-integration.md)。
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -182,19 +182,19 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ### 将自适应表单连接到SharePoint文档库 {#connect-af-sharepoint-doc-library}
 
-要使用 **[!UICONTROL 提交到SharePoint文档库]** 以自适应表单提交操作：
+要在自适应表单中使用&#x200B;**[!UICONTROL 提交到SharePoint文档库]**&#x200B;提交操作，请执行以下操作：
 
-1. [创建SharePoint文档库配置](#create-a-sharepoint-configuration-create-sharepoint-configuration)：用于将AEM Forms连接到Microsoft® Sharepoint存储。
+1. [创建SharePoint文档库配置](#create-a-sharepoint-configuration-create-sharepoint-configuration)：它将AEM Forms连接到您的Microsoft® Sharepoint存储。
 2. [在自适应表单中使用“提交到 SharePoint”提交操作](#use-sharepoint-configuartion-in-af)：它将自适应表单连接到配置的 Microsoft® SharePoint。
 
 #### 创建SharePoint文档库配置 {#create-sharepoint-configuration}
 
 要将AEM Forms连接到Microsoft®Sharepoint文档库存储，请执行以下操作：
 
-1. 转到您的 **AEM Forms Author** 实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®SharePoint]**.
-1. 一旦您选择 **[!UICONTROL Microsoft®SharePoint]**，您将被重定向到 **[!UICONTROL SharePoint Browser]**.
+1. 转到您的&#x200B;**AEM Forms创作**&#x200B;实例> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®SharePoint]**。
+1. 选择&#x200B;**[!UICONTROL Microsoft® SharePoint]**&#x200B;后，您将被重定向到&#x200B;**[!UICONTROL SharePoint浏览器]**。
 1. 选择&#x200B;**配置容器**。配置存储在选定的配置容器中。
-1. 单击 **[!UICONTROL 创建]** > **[!UICONTROL SharePoint文档库]** 下拉列表中。 这将显示 SharePoint 配置向导。
+1. 从下拉列表中单击&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL SharePoint文档库]**。 这将显示 SharePoint 配置向导。
 
    ![SharePoint 配置](/help/forms/assets/sharepoint_configuration.png)
 1. 指定&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 客户端 ID]**、**[!UICONTROL 客户端密码]**&#x200B;和 **[!UICONTROL OAuth URL]**。有关如何检索 OAuth URL 的客户端 ID、客户端密码、租户 ID 的信息，请参阅 [Microsoft® 文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
@@ -209,12 +209,12 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 1. 单击&#x200B;**[!UICONTROL 连接]**。连接成功后，将显示`Connection Successful`消息。
 
-1. 现在，选择 **SharePoint站点** > **文档库** > **SharePoint文件夹**，以保存数据。
+1. 现在，选择&#x200B;**SharePoint站点** > **文档库** > **SharePoint文件夹**&#x200B;以保存数据。
 
    >[!NOTE]
    >
-   >* 默认情况下， `forms-ootb-storage-adaptive-forms-submission` 在选定的SharePoint站点上出现。
-   >* 创建文件夹为 `forms-ootb-storage-adaptive-forms-submission`，如果列表中尚未存在 `Documents` 选定SharePoint站点的库，方法是单击 **创建文件夹**.
+   >* 默认情况下，`forms-ootb-storage-adaptive-forms-submission`存在于选定的SharePoint站点中。
+   >* 通过单击&#x200B;**创建文件夹**，将文件夹创建为`forms-ootb-storage-adaptive-forms-submission`(如果选定SharePoint站点的`Documents`库中尚不存在)。
 
 现在，您可以在自适应表单中将此SharePoint Sites配置用于提交操作。
 
@@ -226,7 +226,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
    >[!NOTE]
    >
-   > * 选择相同的 [!UICONTROL 配置容器] 用于自适应表单，您已在该表单中创建了SharePoint Document Library存储。
+   > * 为自适应表单选择相同的[!UICONTROL 配置容器]，您已在其中创建了SharePoint文档库存储。
    > * 如果未选择[!UICONTROL 配置容器]，则全局[!UICONTROL 存储配置]文件夹将显示在提交操作属性窗口中。
 
 1. 选择&#x200B;**[!UICONTROL 提交到 SharePoint]** 作为&#x200B;**提交操作**。
@@ -241,22 +241,22 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-要使用 [!UICONTROL 提交到SharePoint列表] 以自适应表单提交操作：
+要在自适应表单中使用[!UICONTROL 提交到SharePoint列表]提交操作，请执行以下操作：
 
-1. [创建SharePoint列表配置](#create-sharepoint-list-configuration)：用于将AEM Forms连接到Microsoft® Sharepoint List Storage。
+1. [创建SharePoint列表配置](#create-sharepoint-list-configuration)：它将AEM Forms连接到您的Microsoft® Sharepoint列表存储。
 1. [在自适应表单中使用表单数据模型(FDM)提交](#use-submit-using-fdm)：它将您的自适应表单连接到配置的Microsoft® SharePoint。
 
 #### 创建SharePoint列表配置 {#create-sharepoint-list-configuration}
 
 要将AEM Forms连接到Microsoft®Sharepoint列表：
 
-1. 转到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft®SharePoint]**.
+1. 转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**。
 1. 选择&#x200B;**配置容器**。配置存储在选定的配置容器中。
-1. 单击 **[!UICONTROL 创建]** > **[!UICONTROL SharePoint列表]** 下拉列表中。 这将显示 SharePoint 配置向导。
+1. 从下拉列表中单击&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL SharePoint列表]**。 这将显示 SharePoint 配置向导。
 1. 指定&#x200B;**[!UICONTROL 标题]**、**[!UICONTROL 客户端 ID]**、**[!UICONTROL 客户端密码]**&#x200B;和 **[!UICONTROL OAuth URL]**。有关如何检索 OAuth URL 的客户端 ID、客户端密码、租户 ID 的信息，请参阅 [Microsoft® 文档](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
    * 您可以从 Microsoft® Azure 门户检索应用程序的`Client ID` 和`Client Secret`。
    * 在 Microsoft® Azure 门户中，将重定向 URI 添加为 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`。将 `[author-instance]` 替换为创作实例 URL。
-   * 添加API权限 `offline_access` 和 `Sites.Manage.All` 在 **Microsoft® Graph** 选项卡以提供读/写权限。 添加 `AllSites.Manage` 中的权限 **Sharepoint** 选项卡，以与SharePoint数据远程交互。
+   * 在&#x200B;**Microsoft® Graph**&#x200B;选项卡中添加API权限`offline_access`和`Sites.Manage.All`以提供读/写权限。 在&#x200B;**Sharepoint**&#x200B;选项卡中添加`AllSites.Manage`权限以与SharePoint数据进行远程交互。
    * 使用 OAuth URL：`https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。将 `<tenant-id>` 替换为 Microsoft® Azure 门户中应用程序的 `tenant-id`。
 
      >[!NOTE]
@@ -264,8 +264,8 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
      > **客户端密码**&#x200B;字段是必填还是可选字段取决于 Azure Active Directory 应用程序配置。如果应用程序配置为使用客户端密码，则必须提供客户端密码。
 
 1. 单击&#x200B;**[!UICONTROL 连接]**。连接成功后，将显示`Connection Successful`消息。
-1. 选择 **[!UICONTROL SharePoint站点]** 和 **[!UICONTROL SharePoint列表]** 下拉列表中。
-1. 选择 **[!UICONTROL 创建]** 创建Microsoft® SharePointList的云配置。
+1. 从下拉列表中选择&#x200B;**[!UICONTROL SharePoint站点]**&#x200B;和&#x200B;**[!UICONTROL SharePoint列表]**。
+1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建Microsoft® SharePointList的云配置。
 
 
 #### 在自适应表单中使用表单数据模型(FDM)提交 {#use-submit-using-fdm}
@@ -410,7 +410,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 您可以配置自适应表单，以便在提交时将数据提交到Workfront Fusion。 Workfront Fusion允许流程自动化，以便用户能够专注于新任务，而不是一次又一次地重复相同的任务。 它自动化了简单和复杂的任务，节省了时间并确保了一致的流程执行。
 
-自适应Forms编辑器提供 **调用Workfront Fusion场景** 提交操作以将自适应Forms数据或附件发送到Workfront Fusion场景。 要使用提交操作将捕获的数据发送到Workfront Fusion方案，请参阅 [将自适应表单提交到Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md).
+自适应Forms编辑器提供&#x200B;**调用Workfront Fusion方案**&#x200B;提交操作以将自适应Forms数据或附件发送到Workfront Fusion方案。 要使用提交操作将捕获的数据发送到Workfront Fusion方案，请参阅[将自适应表单提交到Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)。
 
 ## 使用同步或异步提交 {#use-synchronous-or-asynchronous-submission}
 
@@ -464,10 +464,10 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 作为 AEM 安全和强化指南的一部分，配置自定义错误页面，例如 400.jsp、404.jsp 和 500.jsp。如果提交表单时出现 400、404 或 500 错误，则将调用这些处理程序。在发布节点上触发这些错误代码时，也将调用处理程序。您还可以为其他 HTTP 错误代码创建 JSP 页面。
 
-当您将包含XML或JSON数据投诉的表单数据模型(FDM)或基于架构的自适应表单预填充到数据不包含的架构时 `<afData>`， `<afBoundData>`、和 `</afUnboundData>` 标签时，自适应表单中无界字段的数据将丢失。 架构可以是XML架构、JSON架构或表单数据模型(FDM)。 未绑定的字段是自适应表单字段，不带 `bindref` 属性。
+当您将包含XML或JSON数据投诉的表单数据模型(FDM)或基于架构的自适应表单预填充到数据不包含`<afData>`、`<afBoundData>`和`</afUnboundData>`标记的架构时，自适应表单的未绑定字段的数据将丢失。 架构可以是XML架构、JSON架构或表单数据模型(FDM)。 未绑定的字段是自适应表单字段，不带 `bindref` 属性。
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
 >[!MORELIKETHIS]
 >
->* [创建自适应Forms的自定义提交操作](/help/forms/custom-submit-action-form.md)
+>* [为自适应Forms创建自定义提交操作](/help/forms/custom-submit-action-form.md)

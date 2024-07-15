@@ -21,12 +21,12 @@ ht-degree: 5%
 * [内容传输](#content-transfer)
 
 
-单击项目信息卡，以打开项目登陆页并导航到 **实现** 部分，如下图所示。
+单击项目信息卡，以打开项目登录页并导航到&#x200B;**实施**&#x200B;部分，如下图所示。
 
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->请参阅 [在Cloud Acceleration Manager中创建和管理项目](getting-started-cam.md#create-project) 了解更多信息。
+>请参阅[在Cloud Acceleration Manager中创建和管理项目](getting-started-cam.md#create-project)以了解详情。
 
 
 ## 使用本地开发卡 {#local-development}
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 阅读本节内容，以便您可以探索本地开发活动信息卡：
 
-1. 单击 **视图** 从 **本地开发** 卡片。
+1. 从&#x200B;**本地开发**&#x200B;卡中单击&#x200B;**查看**。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
@@ -46,11 +46,11 @@ ht-degree: 5%
 
 ## 使用代码重构卡片 {#code-refactoring}
 
-“代码重构”活动卡提供了所有相关信息，并突出显示要在迁移到AEMas a Cloud Service时查看和解决的代码重构区域。
+“代码重构”活动卡提供了所有相关信息，并突出显示要在迁移到AEM as a Cloud Service时查看和解决的代码重构区域。
 
 请阅读本节内容，以便您能够浏览“代码重构”活动信息卡：
 
-1. 单击 **审核** 从 **代码重构** 活动信息卡。
+1. 从&#x200B;**代码重构**&#x200B;活动卡中单击&#x200B;**审阅**。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
@@ -65,22 +65,22 @@ ht-degree: 5%
 >[!NOTE]
 >查看这些选项卡中的内容，了解Best Practices Analyzer未涵盖的一些其他区域。
 
-此 **Dispatcher** 选项卡提供了有关以下内容的信息：如何构建AEMas a Cloud Service的Apache和Dispatcher配置，以及如何在部署到云环境之前在本地验证和运行该配置。 它还介绍了在云环境中进行调试的情况。
+**Dispatcher**&#x200B;选项卡提供有关如何构建AEM as a Cloud Service Apache和Dispatcher配置的信息，以及如何在部署到云环境之前在本地验证和运行该配置的信息。 它还介绍了在云环境中进行调试的情况。
 
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-此 **测试** 选项卡提供有关功能、体验审核和UI测试的信息。
+**测试**&#x200B;选项卡提供有关功能、体验审核和UI测试的信息。
 
 ![图像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
-## 使用AEMas a Cloud Service部署卡 {#aem-as-a-cloud-service-deployment}
+## 使用AEM as a Cloud Service部署信息卡 {#aem-as-a-cloud-service-deployment}
 
-AEMas a Cloud Service部署信息卡提供所有相关内容，帮助您将代码部署到AEMas a Cloud Service。
+AEM as a Cloud Service部署信息卡提供所有相关内容，可帮助您将代码部署到AEM as a Cloud Service。
 
-请参阅此部分，以便您可以浏览AEMas a Cloud Service部署卡活动信息卡：
+请参阅此部分，以便您能够浏览AEM as a Cloud Service部署卡活动信息卡：
 
-1. 单击 **视图** 从 **AEMas a Cloud Service部署** 活动信息卡。
+1. 从&#x200B;**AEM as a Cloud Service部署**&#x200B;活动卡中单击&#x200B;**查看**。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
@@ -91,27 +91,27 @@ AEMas a Cloud Service部署信息卡提供所有相关内容，帮助您将代�
 
 ## 使用内容传输卡 {#content-transfer}
 
-内容传输卡允许您启动和管理从当前AEM实例到AEMas a Cloud Service的内容传输。
+内容传输卡允许您开始和管理从当前AEM实例到AEM as a Cloud Service的内容传输。
 
 请阅读以下章节，以便浏览内容传输活动信息卡：
 
-1. 单击 **审核** 从 **内容传输** 活动信息卡。
+1. 从&#x200B;**内容传输**&#x200B;活动卡中单击&#x200B;**审阅**。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. 要开始内容传输，您必须创建一个迁移集。 单击 **创建迁移集**. 迁移集允许将内容传输到AEMas a Cloud Service。
+1. 要开始内容传输，您必须创建一个迁移集。 单击&#x200B;**创建迁移集**。 迁移集允许将内容传输到AEM as a Cloud Service。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >迁移集在长时间不活动后过期。 请参阅 [迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) 以了解详细信息。
+   >迁移集在长时间不活动后过期。 有关详细信息，请参阅[迁移集到期](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)。
 
    >[!NOTE]
-   >请参阅 [先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) 和 [最佳实践和指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) ，然后再使用内容传输工具。
+   >在使用内容传输工具之前，请参阅[先决条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html)以及[最佳实践和准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)。
 
-1. 下载并安装内容传输工具以填充迁移集并完成内容传输的提取阶段。 审核 [内容传输工具快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans) 以了解如何使用内容传输工具。
+1. 下载并安装内容传输工具以填充迁移集并完成内容传输的提取阶段。 查看[内容传输工具入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hans)以了解如何使用内容传输工具。
 
-1. 要将内容从迁移集摄取到AEMas a Cloud Service上的环境中，您必须开始摄取。 导航到 **引入作业** 并单击 **新建引入**. 审核 [将内容提取到目标](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) 这样您就可以了解如何完成内容传输的摄取阶段。
+1. 要将内容从迁移集摄取到AEM as a Cloud Service上的环境，您必须开始摄取。 导航到&#x200B;**引入作业**，然后单击&#x200B;**新建引入**。 查看[将内容摄取到Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)，以便了解如何完成内容传输的摄取阶段。
 
    ![图像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -130,4 +130,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## 后续内容 {#whats-next}
 
-在了解如何登录Cloud Acceleration Manager以及如何使用实施阶段后，您便可以继续阅读中的下一步 [上线阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+在了解如何登录Cloud Acceleration Manager以及如何使用“实施”阶段后，您就可以继续查看[上线阶段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html)的下一步。

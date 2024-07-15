@@ -1,6 +1,6 @@
 ---
 title: AEM 现代化工具
-description: 了解可用于将旧版AEM功能转换为AEMas a Cloud Service的现代且受支持的功能的实用程序套件。
+description: 了解可用于将旧版AEM功能转换为AEM as a Cloud Service的现代且受支持的功能的一套实用程序。
 exl-id: d541fae0-6386-403f-99c9-373dc978ad13
 feature: Migration
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 35%
 
 # AEM 现代化工具 {#aem-moderization-tools}
 
-AEM现代化工具提供了一套实用程序，可用于将旧版AEM功能转换为AEMas a Cloud Service的现代且受支持的功能。
+AEM现代化工具提供了一套实用程序，可用于将旧版AEM功能转换为AEM as a Cloud Service的现代化且受支持的功能。
 
 
 ## 简介 {#introduction}
@@ -28,8 +28,8 @@ AEM 现代化工具可轻松完成以下转换：
 >[!NOTE]
 >AEM 现代化工具是社区共同努力的结果，Adobe 不为其提供支持或保证。
 
-请参阅 **[AEM现代化工具简介](https://opensource.adobe.com/aem-modernize-tools/)** 详细了解AEM现代化工具套件的规划、配置和开发。
+请参阅&#x200B;**[AEM现代化工具简介](https://opensource.adobe.com/aem-modernize-tools/)**，了解有关AEM现代化工具套件的规划、配置和开发的更多信息。
 
 ## 安装和实施AEM现代化工具套件 {#installing-implementing}
 
-请参阅 **[Git资源：AEM现代化工具套件](https://github.com/adobe/aem-modernize-tools)** 了解有关安装和实施的信息。
+请参阅&#x200B;**[Git资源：AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)**&#x200B;以了解有关安装和实施的信息。

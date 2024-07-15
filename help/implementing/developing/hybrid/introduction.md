@@ -221,7 +221,7 @@ SPA 背后的主要理念是减少对服务器的调用和依赖，最大程度�
 
 1. 使用浏览器的内置开发人员工具检查页面内容。使用选择工具，在页面上选择一个可编辑的组件并查看元素详细信息。
 
-   组件具有新的数据属性 `data-cq-data-path`.
+   该组件具有新的数据属性`data-cq-data-path`。
 
    ![检查 WKND SPA Project 元素](assets/wknd-inspector.png)
 

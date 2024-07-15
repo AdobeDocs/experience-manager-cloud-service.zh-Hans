@@ -1,30 +1,30 @@
 ---
 title: AEM FormsEdge Delivery Services表单组件
-description: AEM FormsEdge Delivery Services专为实现卓越性能而构建，使您能够预见简化数据收集和用户参与的未来。 本文列出了可用于EDD表单的所有现成表单组件。
+description: AEM Forms Edge Delivery Services 专为实现最佳性能而构建，让您能够畅想简化数据收集和用户参与的未来。本文列出了可用于EDD表单的所有现成表单组件。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
 
 
 
-# 表单块边缘交付中支持的HTML组件
+# 表单块Edge Delivery中支持的HTML组件
 
-AEM Forms Edge交付包含一个表单块。 表单块可帮助您轻松创建表单，以捕获和存储捕获的数据。
+AEM Forms Edge Delivery包含一个表单块。 表单块可帮助您轻松创建表单，以捕获和存储捕获的数据。
 
-表单块支持OOTBHTML-5组件，例如文本、电子邮件、数字、日期等。 它还支持文本区域、select和fieldset元素，并包括HTML-5固有的输入验证功能。 表单块为所有字段类型和容器创建统一的HTML结构，以确保一致性。 您也可以 [设置字段类型的样式](https://adobe-rnd.github.io/form-block/customization/styling_form) 使用 `form.css` 文件。
+表单块支持OOTBHTML-5组件，例如文本、电子邮件、数字、日期等。 它还支持文本区域、select和fieldset元素，并包括HTML-5固有的输入验证功能。 表单块为所有字段类型和容器创建统一的HTML结构，以确保一致性。 您还使用`form.css`文件[设置字段类型](https://adobe-rnd.github.io/form-block/customization/styling_form)的样式。
 
 ## 表单块中支持的HTML5输入类型
 
 表单块支持一系列HTML5输入类型，它还无缝呈现使用AEM核心组件创建的表单。
 
-下表概述了核心组件如何与Edge交付中的五个HTML输入类型相对应：
+下表概述了核心组件如何与Edge Delivery中的HTML5输入类型相对应：
 
 <table>
  <tbody>
@@ -110,7 +110,7 @@ AEM Forms Edge交付包含一个表单块。 表单块可帮助您轻松创建�
    <td> 允许用户输入和编辑电子邮件地址。 如果用户添加多个属性，则可以添加或编辑电子邮件地址列表。</td>
   </tr>
    <tr>
-   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/telephone-input.html">电话输入</a></td>
+   <td><a href ="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/telephone-input.html">电话号码输入</a></td>
    <td><a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel">电话</a></td>
    <td>允许用户输入和编辑电话号码。</td>
   </tr>

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 存储库简介
 
-了解App Builder存储选项，以及为什么存储在App Builder应用程序中很重要。
+了解App Builder存储选项以及为什么存储在App Builder应用程序中很重要。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
 

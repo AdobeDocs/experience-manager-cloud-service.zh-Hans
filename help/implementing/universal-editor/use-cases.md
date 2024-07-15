@@ -23,14 +23,14 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您尚未这样做，请查看文档 [通用编辑器简介](/help/implementing/universal-editor/introduction.md) 有关通用编辑器的完整概述和价值。
+>如果没有，请查看文档[通用编辑器简介](/help/implementing/universal-editor/introduction.md)，了解通用编辑器的完整概述和价值。
 
 ## 用例 {#use-cases}
 
 通用编辑器为您的内容作者提供了一个方便、直观的可视编辑器，而不管他们创建的是什么类型的内容。 两个主要用例包括：
 
-* [所见即所得创作](#wysiwyg-authoring)  — 使用AEM Sites控制台通过通用编辑器在AEM中管理您的内容和创作页面
-* [Headless创作](#headless-authoring)  — 使用通用编辑器在您自己的自定义Headless应用程序中创作内容。
+* [所见即所得创作](#wysiwyg-authoring) — 使用AEM Sites控制台使用通用编辑器在AEM中管理您的内容和创作页面
+* [Headless创作](#headless-authoring) — 使用通用编辑器在您自己的自定义Headless应用程序中创作内容。
 
 ### 所见即所得创作 {#wysiwyg-authoring}
 
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 如果您有这样的用例，作为紧接着的下一步，请参阅以下文档，全面了解如何在AEM中启动并运行通用编辑器。
 
-1. [用于Edge Delivery Services的WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)  — 开始使用AEM中的第一个通用编辑器项目
-1. [创建指令用于通用编辑器的块](/help/edge/wysiwyg-authoring/create-block.md)  — 了解如何检测块以使您的内容可在通用编辑器中编辑
-1. [用于WYSIWYG创作的Edge Delivery Services建模与内容项目](/help/edge/wysiwyg-authoring/content-modeling.md)  — 了解如何构建块以有效建模内容以供通用编辑器使用的详细信息。
+1. [用于Edge Delivery Services的WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) — 在AEM中开始使用您的第一个通用编辑器项目
+1. [创建检测为与通用编辑器一起使用的块](/help/edge/wysiwyg-authoring/create-block.md) — 了解如何检测块以使您的内容可在通用编辑器中编辑
+1. [用于Edge Delivery Services项目的WYSIWYG创作的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md) — 了解如何构建块以有效地对您的内容进行建模以便与通用编辑器一起使用的详细信息。
 
 阅读这些文档后，您可以返回本页以了解Headless创作用例以及通用编辑器的常规工作方式。
 
@@ -69,13 +69,13 @@ ht-degree: 0%
 1. 内容作者在直观的WYSIWYG界面中编辑页面内容，就地编辑。
 1. 通用编辑器会自动将更改保留回AEM。
 
-如果您想详细了解通用编辑器的架构，请参阅文档 [通用编辑器架构。](/help/implementing/universal-editor/architecture.md)
+如果您想了解有关通用编辑器的架构的更多信息，请参阅文档[通用编辑器架构。](/help/implementing/universal-editor/architecture.md)
 
 ## 通用编辑器概念 {#concepts}
 
 要使通用编辑器能够编辑某个页面或应用程序，必须正确检测该页面或应用程序。 一旦开始检测，它可以进一步适应您的项目需求。
 
-* [属性和类型](/help/implementing/universal-editor/attributes-types.md)  — 为了使通用编辑器能够编辑应用程序或页面，必须正确检测该应用程序或页面。 这包括包含正确的元数据，以便编辑器可以编辑应用程序的内容。
-* [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md)  — 元数据存在以启用组件编辑后，您可以在编辑器的属性边栏中定义它们可以处理的字段和组件类型。 可通过创建模型并从组件链接到模型来完成此操作。
-* [自定义通用编辑器创作体验](/help/implementing/universal-editor/customizing.md)  — 在完全分析应用程序或页面后，可以通过筛选可用组件或扩展编辑器的功能来进一步调整通用编辑器体验。
-* [通用编辑器事件](/help/implementing/universal-editor/events.md)  — 您可以通过响应通用发送的对内容和UI的更改的标准事件，进一步自定义您的应用程序。
+* [属性和类型](/help/implementing/universal-editor/attributes-types.md) — 为了使通用编辑器能够编辑应用程序或页面，必须正确检测该应用程序或页面。 这包括包含正确的元数据，以便编辑器可以编辑应用程序的内容。
+* [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md) — 元数据存在以启用组件编辑后，您定义它们可以在编辑器的属性边栏中操作的字段和组件类型。 可通过创建模型并从组件链接到模型来完成此操作。
+* [自定义通用编辑器创作体验](/help/implementing/universal-editor/customizing.md) — 在完全分析应用程序或页面后，可以通过筛选可用组件或扩展编辑器的功能来进一步调整通用编辑器体验。
+* [通用编辑器事件](/help/implementing/universal-editor/events.md) — 您可以通过响应通用发送对内容和UI进行更改的标准事件，进一步自定义您的应用程序。

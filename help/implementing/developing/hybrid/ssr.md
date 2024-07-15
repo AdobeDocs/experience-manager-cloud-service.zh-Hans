@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # SPA和服务器端渲染{#spa-and-server-side-rendering}
 
-单页应用程序(SPA)可以为用户提供丰富的动态体验，该体验会以熟悉的方式反应和行为，通常就像本机应用程序一样。 [此功能是通过依赖客户端预先加载内容，然后执行处理用户交互的繁重任务来实现的](introduction.md#how-does-a-spa-work). 此过程可最大限度地减少客户端和服务器之间所需的通信量，从而使应用程序更加被动地工作。
+单页应用程序(SPA)可以为用户提供丰富的动态体验，该体验会以熟悉的方式反应和行为，通常就像本机应用程序一样。 [此功能是通过依赖客户端先加载内容然后执行处理用户交互的重任务来实现的](introduction.md#how-does-a-spa-work)。 此过程可最大限度地减少客户端和服务器之间所需的通信量，从而使应用程序更加被动地工作。
 
 但是，此过程可能会导致初始加载时间较长，尤其是当SPA较大且内容丰富时。 为了优化加载时间，可以在服务器端渲染某些内容。 使用服务器端渲染(SSR)可以加速页面的初始加载，然后将进一步的渲染传递给客户端。
 
@@ -25,20 +25,20 @@ ht-degree: 0%
 
 SSR通常在以下任一问题明确为“是”时提供一些值：
 
-* **SEO：** 您的网站是否仍需要SSR才能由带来流量的搜索引擎正确编制索引？ 请记住，主搜索引擎爬虫现在评估JS。
+* **SEO：**&#x200B;您的网站是否仍需要SSR才能由带来流量的搜索引擎正确编制索引？ 请记住，主搜索引擎爬虫现在评估JS。
 * **页面速度：** SSR是否可以在实际环境中提供可衡量的速度提升，并增加总体用户体验？
 
-只有在以下两个问题中至少有一个问题得到明确的“是”回答时，Adobe才会建议实施SSR。 以下部分介绍了如何使用Adobe I/O Runtime（的一部分）执行此操作 [App Builder](https://developer.adobe.com/app-builder).
+只有在以下两个问题中至少有一个问题得到明确的“是”回答时，Adobe才会建议实施SSR。 以下部分介绍了如何使用[App Builder](https://developer.adobe.com/app-builder)中的Adobe I/O Runtime实现此目的。
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
-如果您 [确信您的项目需要实施SSR](#when-to-use-ssr)，Adobe推荐的解决方案是使用Adobe I/O Runtime。
+如果您[确信您的项目需要实施SSR](#when-to-use-ssr)，则Adobe推荐的解决方案是使用Adobe I/O Runtime。
 
 有关Adobe I/O Runtime的更多信息，请参阅以下内容：
 
-* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime)  — 概述App Builder的运行时功能
-* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder)  — 以了解有关完整版应用程序生成器产品的详细信息
-* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs)  — 有关详细文档
+* [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) — 有关App Builder运行时功能的概述
+* [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) — 以了解有关完整App Builder产品的详细信息
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs) — 有关详细文档
 
 以下部分详细介绍如何使用Adobe I/O Runtime在两种不同的模型中为SPA实施SSR：
 
@@ -47,7 +47,7 @@ SSR通常在以下任一问题明确为“是”时提供一些值：
 
 >[!NOTE]
 >
->Adobe建议为每个环境（暂存、生产、测试等）使用一个单独的Adobe I/O Runtime工作区。 这样做允许典型的系统开发生命周期(SDLC)模式与部署到不同环境的单个应用程序的不同版本。 请参阅 [App Builder应用程序的CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 以了解更多信息。
+>Adobe建议为每个环境（暂存、生产、测试等）使用一个单独的Adobe I/O Runtime工作区。 这样做允许典型的系统开发生命周期(SDLC)模式与部署到不同环境的单个应用程序的不同版本。 有关详细信息，请参阅App Builder应用程序的[CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/)。
 >
 >每个实例（创作、发布）不需要单独的工作区，除非每个实例类型的运行时实施存在差异。
 
@@ -57,32 +57,32 @@ SSR通常在以下任一问题明确为“是”时提供一些值：
 
 ## 远程渲染器配置 {#remote-content-renderer-configuration}
 
-AEM必须知道可在何处检索远程渲染的内容。 不论 [选择为SSR实施的模型，](#adobe-i-o-runtime) 您必须向AEM指定如何访问此远程渲染服务。
+AEM必须知道可在何处检索远程渲染的内容。 无论您选择为SSR实施哪种[模型，](#adobe-i-o-runtime)都必须向AEM指定如何访问此远程渲染服务。
 
-此服务通过以下方式完成 **RemoteContentRenderer — 配置工厂OSGi服务**. 在Web控制台配置控制台中搜索字符串“RemoteContentRenderer”，网址为 `http://<host>:<port>/system/console/configMgr`.
+此服务通过&#x200B;**RemoteContentRenderer - Configuration Factory OSGi服务**&#x200B;完成。 在`http://<host>:<port>/system/console/configMgr`处的Web控制台配置控制台中搜索字符串“RemoteContentRenderer”。
 
 ![渲染器配置](assets/renderer-configuration.png)
 
 以下字段可用于配置：
 
-* **内容路径模式**  — 匹配部分内容的正则表达式（如有必要）
-* **远程端点URL**  — 负责生成内容的端点的URL
+* **内容路径模式** — 匹配部分内容的正则表达式（如有必要）
+* **远程终结点URL** — 负责生成内容的终结点的URL
    * 如果不在本地网络中，请使用安全的HTTPS协议。
-* **其他请求标头**  — 要添加到发送到远程端点的请求的其他标头
+* **其他请求标头** — 要添加到发送到远程端点的请求的其他标头
    * 模式： `key=value`
-* **请求超时**  — 远程主机请求超时（以毫秒为单位）
+* **请求超时** — 远程主机请求超时（以毫秒为单位）
 
 >[!NOTE]
 >
->无论您选择实施 [AEM驱动的通信流](#aem-driven-communication-flow) 或 [Adobe I/O Runtime驱动的流动，](#adobe-i-o-runtime-driven-communication-flow) 您必须定义远程内容渲染器配置。
+>无论您选择实施[AEM驱动的通信流](#aem-driven-communication-flow)还是[Adobe I/O Runtime驱动的通信流](#adobe-i-o-runtime-driven-communication-flow)，都必须定义远程内容渲染器配置。
 
 >[!NOTE]
 >
->此配置使用 [远程内容呈现器、](#remote-content-renderer) 提供了额外的扩展和自定义选项。
+>此配置使用[远程内容渲染器](#remote-content-renderer)，它具有其他扩展和自定义选项。
 
 ## AEM驱动的通信流 {#aem-driven-communication-flow}
 
-使用SSR时， [组件交互工作流](introduction.md#interaction-with-the-spa-editor) AEM中的SPA包含在Adobe I/O Runtime上生成应用程序初始内容的阶段。
+使用SSR时，AEM中SPA的[组件交互工作流](introduction.md#interaction-with-the-spa-editor)包含在Adobe I/O Runtime上生成应用程序初始内容的阶段。
 
 1. 浏览器从AEM请求SSR内容。
 1. AEM将模型发布到Adobe I/O Runtime。
@@ -115,7 +115,7 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [选择为SSR�
     </ul> </td>
    <td>
     <ul>
-     <li>SPA开发人员可能不熟悉<br /> </li>
+     <li>可能不熟悉SPA开发人员<br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -126,8 +126,8 @@ AEM必须知道可在何处检索远程渲染的内容。 不论 [选择为SSR�
     </ul> </td>
    <td>
     <ul>
-     <li>AEM开发人员必须通过 <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> 属性<br /> </li>
-     <li>资源必须在AEM和Adobe I/O Runtime之间同步<br /> </li>
+     <li>应用程序所需的Clientlib资源(如CSS和JavaScript)必须由AEM开发人员通过<code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code>属性<br />提供 </li>
+     <li>必须在AEM和Adobe I/O Runtime<br />之间同步资源 </li>
      <li>要启用SPA创作，可能需要Adobe I/O Runtime的代理服务器</li>
     </ul> </td>
   </tr>
@@ -154,21 +154,21 @@ AEM中适用于SPA的SSR需要使用Adobe I/O Runtime，应用程序内容服务
 
 ## 远程内容渲染器 {#remote-content-renderer}
 
-此 [远程内容渲染器配置](#remote-content-renderer-configuration) 在AEM中将SSR与SPA结合使用时，需要用到更加通用的渲染服务，可以对其进行扩展和自定义以满足您的需求。
+在AEM中将SSR与SPA一起使用所需的[远程内容渲染器配置](#remote-content-renderer-configuration)将引入更为通用的渲染服务，可以根据您的需求对其进行扩展和自定义。
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` 用于检索在远程服务器上渲染的内容(例如从Adobe I/O)的OSGi服务。发送到远程服务器的内容基于传递的请求参数。
+`RemoteContentRenderingService`用于检索在远程服务器上呈现的内容(例如从Adobe I/O呈现的内容)的OSGi服务。发送到远程服务器的内容基于传递的请求参数。
 
-`RemoteContentRenderingService` 可以通过依赖关系反转在需要额外内容操作时注入自定义Sling模型或servlet。
+`RemoteContentRenderingService`可以通过依赖关系反转插入到自定义Sling模型或servlet中，当需要额外的内容操作时。
 
-此服务在内部由 [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet).
+此服务由[RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet)在内部使用。
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-此 `RemoteContentRendererRequestHandlerServlet` 用于以编程方式设置请求配置。 `DefaultRemoteContentRendererRequestHandlerImpl`（提供的默认请求处理程序实施）允许您创建多个OSGi配置，以便将内容结构中的位置映射到远程端点。
+`RemoteContentRendererRequestHandlerServlet`用于以编程方式设置请求配置。 `DefaultRemoteContentRendererRequestHandlerImpl`是提供的默认请求处理程序实现，允许您创建多个OSGi配置，以便可以将内容结构中的位置映射到远程端点。
 
-要添加自定义请求处理程序，请实施 `RemoteContentRendererRequestHandler` 界面。 请务必设置 `Constants.SERVICE_RANKING` 组件属性到大于100的整数，该整数的排名 `DefaultRemoteContentRendererRequestHandlerImpl`.
+要添加自定义请求处理程序，请实现`RemoteContentRendererRequestHandler`接口。 请确保将`Constants.SERVICE_RANKING`组件属性设置为大于100的整数，即`DefaultRemoteContentRendererRequestHandlerImpl`的排名。
 
 ```javascript
 @Component(immediate = true,
@@ -181,7 +181,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 配置默认处理程序的OSGi配置 {#configure-default-handler}
 
-必须按照一节中所述配置默认处理程序 [远程内容渲染器配置](#remote-content-renderer-configuration).
+默认处理程序的配置必须按照[远程内容渲染器配置](#remote-content-renderer-configuration)一节中的说明进行配置。
 
 ### 远程内容渲染器使用情况 {#usage}
 
@@ -200,4 +200,4 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 要求 {#requirements}
 
-servlet使用Sling模型导出器序列化组件数据。 默认情况下， `com.adobe.cq.export.json.ContainerExporter` 和 `com.adobe.cq.export.json.ComponentExporter` 支持作为Sling模型适配器。 如有必要，您可以添加请求应该适合的类，使用 `RemoteContentRendererServlet` 并实施 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. 其他类必须扩展 `ComponentExporter`.
+servlet使用Sling模型导出器序列化组件数据。 默认情况下，`com.adobe.cq.export.json.ContainerExporter`和`com.adobe.cq.export.json.ComponentExporter`都支持作为Sling模型适配器。 如有必要，您可以添加请求应调整为使用`RemoteContentRendererServlet`并实现`RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`的类。 附加类必须扩展`ComponentExporter`。

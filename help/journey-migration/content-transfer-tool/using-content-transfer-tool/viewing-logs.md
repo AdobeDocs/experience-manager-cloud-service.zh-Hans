@@ -31,15 +31,15 @@ ht-degree: 36%
 
 然后，执行以下步骤：
 
-1. 选择迁移集并单击 **查看日志** 从操作栏中。 这将显示日志对话框。 单击 **提取日志** 在新选项卡中查看日志。
+1. 选择一个迁移集，然后单击操作栏中的&#x200B;**查看日志**。 这将显示日志对话框。 单击&#x200B;**提取日志**&#x200B;以在新选项卡中查看日志。
 
    ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
-   或者，单击 **已完成** 状态以在新选项卡中查看日志。
+   或者，单击&#x200B;**已完成**&#x200B;状态以在新选项卡中查看日志。
 
 1. 要在不使用用户界面的情况下跟踪日志，您可以通过 SSH 连接到源 AEM 环境并跟踪 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`。
 
 ### 摄取日志
 
-要查看摄取日志，请转到Cloud Acceleration Manager中的摄取作业列表，然后找到所需的迁移作业并单击三个圆点(**...**)。 然后，您可以单击 **下载日志** 以下载日志。
+要查看引入日志，请转到Cloud Acceleration Manager中的引入作业列表，然后找到所需的迁移作业并单击该作业的三个圆点(**...**)。 然后，您可以单击&#x200B;**下载日志**&#x200B;来下载日志。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

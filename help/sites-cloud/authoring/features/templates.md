@@ -73,7 +73,7 @@ ht-degree: 86%
    * 或直接从以下网站进行访问：`https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
 * 如有必要，可以[创建模板文件夹](#creating-a-template-folder-admin)
 * [创建新模板](#creating-a-new-template-template-author)，新模板最初是空的
-* [定义其他属性](#defining-template-properties-template-author) 模板的（如有必要）
+* 如有必要，[为模板定义其他属性](#defining-template-properties-template-author)
 * [编辑该模板](#editing-templates-template-authors)，以定义以下各项：
    * [结构](#editing-a-template-structure-template-author) - 不能在使用该模板创建的页面上更改的预定义内容。
    * [初始内容](#editing-a-template-initial-content-author) - 能够在使用该模板创建的页面上更改的预定义内容。
@@ -89,17 +89,17 @@ ht-degree: 86%
 
 >[!TIP]
 >
->切勿在模板中输入任何必须国际化的信息。 <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>切勿在模板中输入任何必须国际化的信息。<!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
 >对于必须本地化的模板元素（如页眉和页脚），请利用[核心组件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
-您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在文档中进行了描述 [页面模板](/help/implementing/developing/components/templates.md#template-folders).
+您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在[页面模板](/help/implementing/developing/components/templates.md#template-folders)文档中有相关说明。
 
 ### 创建新模板 – 模板作者 {#creating-a-new-template-template-author}
 
-1. 打开 **模板控制台** (通过 **工具>** **常规**)，然后导航到所需的文件夹。
+1. 打开&#x200B;**模板控制台**（通过&#x200B;**工具>** **常规**），然后导航到所需的文件夹。
 
    >[!NOTE]
    >
@@ -143,7 +143,7 @@ ht-degree: 86%
 * 标题
    * 用于标识模板的标题，例如&#x200B;**创建页面**&#x200B;向导中的标题。
 * 描述
-   * 可选描述，用于提供更多有关模板及其用法的信息，例如 **创建页面** 向导。
+   * 可选描述，用于提供更多有关模板及其用法的信息，例如&#x200B;**创建页面**&#x200B;向导中显示的描述。
 
 要查看和/或编辑属性，请执行以下操作：
 
@@ -161,11 +161,11 @@ ht-degree: 86%
 
 1. 编辑模板属性。
 1. 选择要上传缩略图，还是从模板内容生成缩略图。
-   * 如果要上传缩略图，请选择 **上传图像**
-   * 如果要生成缩略图，请选择 **生成预览**
+   * 如果要上传缩略图，请选择&#x200B;**上传图像**
+   * 如果要生成缩略图，请选择&#x200B;**生成预览**
 1. 使用上述两种方法时，系统都会显示缩略图预览。
-   * 如果不满意，请选择 **清除** 上传其他图像或重新生成缩略图。
-1. 如果对缩略图满意，请选择 **保存并关闭**.
+   * 如果不满意，请选择&#x200B;**清除**&#x200B;以上传其他图像或重新生成缩略图。
+1. 如果对缩略图满意，请选择&#x200B;**保存并关闭**。
 
 ### 启用并允许模板 - 模板作者 {#enabling-and-allowing-a-template-template-author}
 
@@ -184,7 +184,7 @@ ht-degree: 86%
 
 1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
 1. 从工具栏中选择&#x200B;**启用**&#x200B;或&#x200B;**禁用**，然后在确认对话框中再次选择“启用”或“禁用”。
-1. 现在，您可以在以下情况下使用模板： [创建页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)，但您可能希望 [编辑模板](#editing-templates-template-authors) 根据您的要求。
+1. 现在，您可以在[创建页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)时使用模板，不过您可能希望根据自己的要求[编辑模板](#editing-templates-template-authors)。
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ ht-degree: 86%
 
 ![模板编辑器页面结构](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-您可以在中执行多个操作 **结构** 模板编辑器的模式和一些功能可以帮助您：
+在模板编辑器的&#x200B;**结构**&#x200B;模式下，您可以执行一些操作，并且可以使用一些功能来帮助您：
 
 #### 添加组件 {#add-components}
 
@@ -351,8 +351,8 @@ ht-degree: 86%
 
 配置窗口分为两个部分。
 
-* 在对话框左侧的下 **策略**&#x200B;中，您可以选择现有策略，也可以选择现有策略。
-* 在对话框右侧的下 **属性**&#x200B;中，您可以设置特定于组件类型的属性。
+* 在对话框左侧的&#x200B;**策略**&#x200B;下，您可以选择现有策略或选择现有策略。
+* 在对话框右侧的&#x200B;**属性**&#x200B;下，您可以设置特定于组件类型的属性。
 
 可用的属性取决于选定的组件。例如，对于文本组件，属性定义的是复制和粘贴选项、格式选项以及段落样式，等等。
 
@@ -360,21 +360,21 @@ ht-degree: 86%
 
 内容（或设计）策略可定义组件的设计属性。例如，可用的组件或最小/最大尺寸。这些属性适用于模板（和使用模板创建的页面）。
 
-下 **策略** 您可以通过下拉列表选择要应用于组件的现有策略。
+在&#x200B;**策略**&#x200B;下，您可以通过下拉列表选择要应用于该组件的现有策略。
 
 ![选择策略](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-可以通过选择旁边的“添加”按钮添加新策略。 **选择策略** 下拉菜单。 在中提供新标题 **策略标题** 字段。
+通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，可以添加新策略。 在&#x200B;**策略标题**&#x200B;字段中提供一个新标题。
 
 ![“添加策略”按钮](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-中选定的现有策略 **选择策略** 可以使用下拉列表旁边的复制按钮复制下拉列表作为新策略。 在中提供新标题 **策略标题** 字段。 默认情况下，复制的策略的标题为 **X 的副本**，其中 X 是被复制的策略的标题。
+可以使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，复制该下拉列表中选定的现有策略以将其作为新策略。 在&#x200B;**策略标题**&#x200B;字段中提供一个新标题。 默认情况下，复制的策略的标题为 **X 的副本**，其中 X 是被复制的策略的标题。
 
 ![“复制策略”按钮](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 **策略说明**&#x200B;字段中的策略说明是可选的。
 
-在 **同时使用该选定策略的其他模板** 部分中，您可以轻松地查看其他哪些模板使用了在中选定的策略 **选择策略** 下拉列表。
+在&#x200B;**同时使用选定策略**&#x200B;的其他模板部分中，您可以轻松地查看哪些其他模板使用了&#x200B;**选择策略**&#x200B;下拉列表中的选定策略。
 
 ![使用现有策略](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
@@ -395,13 +395,13 @@ ht-degree: 86%
 
 例如，对于图像组件，可定义允许的宽度，并启用延迟加载。
 
-如果设置允许多项配置，请选择 **添加** 按钮以添加其他配置。
+如果某个设置允许多个配置，请选择&#x200B;**添加**&#x200B;按钮以添加其他配置。
 
 ![“添加”按钮](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-要删除配置，请选择 **删除** 按钮进行配置。
+要删除配置，请选择位于配置右侧的&#x200B;**删除**&#x200B;按钮。
 
-要删除配置，请选择 **删除** 按钮。
+要删除配置，请选择&#x200B;**删除**&#x200B;按钮。
 
 ![“删除”按钮](/help/sites-cloud/authoring/assets/templates-delete-button.png)
 
@@ -415,7 +415,7 @@ ht-degree: 86%
 
 >[!CAUTION]
 >
->在AEM中，裁剪比例定义为 **高度/宽度**. 这与常见的宽高比的定义不同，这样做是出于对旧版兼容性的考虑。只要您清楚地定义&#x200B;**名称**，页面创作用户便不会察觉到任何差异，因为您定义的名称才是 UI 中显示的内容。
+>在AEM中，裁剪比例被定义为&#x200B;**高度/宽度**。 这与常见的宽高比的定义不同，这样做是出于对旧版兼容性的考虑。只要您清楚地定义&#x200B;**名称**，页面创作用户便不会察觉到任何差异，因为您定义的名称才是 UI 中显示的内容。
 
 >[!NOTE]
 >
@@ -461,9 +461,9 @@ ht-degree: 86%
 
 在&#x200B;**默认组件**&#x200B;选项卡上，您可以定义要自动与给定媒体类型关联的组件，以便作者从资源浏览器中拖动资源时，AEM 知道要将其与哪个组件关联。只有具有放置区域的组件才可用于此类配置。
 
-选择 **添加映射** 添加全新的组件和MIME类型映射。
+选择&#x200B;**添加映射**&#x200B;以添加全新的组件和MIME类型映射。
 
-在列表中选择一个组件并选择 **添加类型** 向已映射的组件添加额外的MIME类型。 单击&#x200B;**删除**&#x200B;图标可删除 MIME 类型。
+在列表中选择一个组件并选择&#x200B;**添加类型**&#x200B;以向已映射的组件添加其他MIME类型。 单击&#x200B;**删除**&#x200B;图标可删除 MIME 类型。
 
 ![“默认组件”选项卡](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -568,20 +568,20 @@ ht-degree: 86%
 
   ![策略选择器](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-  可以通过选择旁边的“添加”按钮添加新策略。 **选择策略** 下拉列表。 在中提供新标题 **策略标题** 字段。
+  通过选择&#x200B;**选择策略**&#x200B;下拉列表旁边的“添加”按钮，可以添加新策略。 在&#x200B;**策略标题**&#x200B;字段中提供一个新标题。
 
   ![“添加策略”按钮](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-  中选定的现有策略 **选择策略** 可以使用下拉列表旁边的复制按钮复制下拉列表作为新策略。 在中提供新标题 **策略标题** 字段。 默认情况下，复制的策略的标题为 **X 的副本**，其中 X 是被复制的策略的标题。
+  可以使用&#x200B;**选择策略**&#x200B;下拉列表旁边的“复制”按钮，复制该下拉列表中选定的现有策略以将其作为新策略。 在&#x200B;**策略标题**&#x200B;字段中提供一个新标题。 默认情况下，复制的策略的标题为 **X 的副本**，其中 X 是被复制的策略的标题。
 
   ![“复制策略”按钮](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
-* 在&#x200B;**策略标题**&#x200B;字段中定义策略的标题。策略需要具有标题，以便能够轻松地在 **选择策略** 下拉列表。
+* 在&#x200B;**策略标题**&#x200B;字段中定义策略的标题。策略必须具有标题，以便能够在&#x200B;**选择策略**&#x200B;下拉列表中轻松选择它。
 
   ![策略标题](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * **策略说明**&#x200B;字段中的策略说明是可选的。
-* 在 **同时使用该选定策略的其他模板** 部分中，您可以轻松地查看其他哪些模板使用了在中选定的策略 **选择策略** 下拉列表。
+* 在&#x200B;**同时使用选定策略**&#x200B;的其他模板部分中，您可以轻松地查看哪些其他模板使用了&#x200B;**选择策略**&#x200B;下拉列表中的选定策略。
 
   ![策略使用情况](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 

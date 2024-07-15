@@ -19,7 +19,7 @@ ht-degree: 10%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
-将来自Experience Manager的大型资源置于Adobe InDesign文档中，创意专业人士必须等待一段时间后再进行整理 [放置资产](https://helpx.adobe.com/indesign/using/placing-graphics.html). 同时，用户被阻止使用InDesign。 这会中断创作流并对用户体验产生负面影响。 Adobe功能允许从InDesign文档开始临时放置小型演绎版。 在需要最终输出时（例如，对于打印和发布工作流），原始的全分辨率资产会在后台替换临时演绎版。 这种后台异步更新可加快设计流程以提高工作效率，且不会阻碍创作过程。
+将大型资源从Experience Manager置入Adobe InDesign文档时，创意专业人士在[置入资源](https://helpx.adobe.com/indesign/using/placing-graphics.html)后必须等待相当长的时间。 同时，用户被阻止使用InDesign。 这会中断创作流并对用户体验产生负面影响。 Adobe功能允许从InDesign文档开始临时放置小型演绎版。 在需要最终输出时（例如，对于打印和发布工作流），原始的全分辨率资产会在后台替换临时演绎版。 这种后台异步更新可加快设计流程以提高工作效率，且不会阻碍创作过程。
 
 Assets提供仅用于置入(FPO)的演绎版。 这些FPO呈现版本的文件大小较小，但纵横比相同。 如果FPO演绎版不可用于某个资源，Adobe InDesign将改用原始资源。 此回退机制可确保创意工作流不间断地进行。
 
@@ -27,22 +27,22 @@ Experience Manageras a Cloud Service提供云原生资源处理功能以生成FP
 
 以下是生成FPO呈现形式的步骤：
 
-1. [创建处理配置文件](#create-processing-profile).
+1. [创建处理配置文件](#create-processing-profile)。
 
-1. 配置Experience Manager以使用此配置文件来 [处理新资产](#generate-renditions-of-new-assets).
-1. 使用配置文件可以 [处理现有资源](#generate-renditions-of-existing-assets).
+1. 配置Experience Manager以使用此配置文件[处理新资源](#generate-renditions-of-new-assets)。
+1. 使用配置文件[处理现有资源](#generate-renditions-of-existing-assets)。
 
 ## 创建处理配置文件 {#create-processing-profile}
 
-要生成FPO呈现版本，请创建 **[!UICONTROL 处理配置文件]**. 配置文件使用云原生资产微服务进行处理。 有关说明，请参阅 [创建资产微服务的处理配置文件](asset-microservices-configure-and-use.md).
+要生成FPO呈现版本，请创建&#x200B;**[!UICONTROL 处理配置文件]**。 配置文件使用云原生资产微服务进行处理。 有关说明，请参阅[创建资产微服务的处理配置文件](asset-microservices-configure-and-use.md)。
 
-选择 **[!UICONTROL 创建FPO呈现版本]** 以生成FPO演绎版。 （可选）单击 **[!UICONTROL 新增]** 以将其他演绎版设置添加到同一配置文件。
+选择&#x200B;**[!UICONTROL 创建FPO呈现版本]**&#x200B;以生成FPO呈现版本。 或者，单击&#x200B;**[!UICONTROL 新增]**&#x200B;以将其他节目设置添加到同一配置文件。
 
 ![create-processing-profile-fpo-renditions](assets/create-processing-profile-fpo-renditions.png)
 
 ## 生成新资源的演绎版 {#generate-renditions-of-new-assets}
 
-要生成新资产的FPO演绎版，请应用 **[!UICONTROL 处理配置文件]** 到文件夹属性中的文件夹。 在文件夹的“属性”页面中，单击 **[!UICONTROL 资产处理]** 选项卡，选择 **[!UICONTROL FPO配置文件]** as a **[!UICONTROL 处理配置文件]**，并保存更改。 使用此配置文件处理上传到该文件夹的所有新资源。
+要生成新资产的FPO演绎版，请将&#x200B;**[!UICONTROL 处理配置文件]**&#x200B;应用于文件夹属性中的文件夹。 在文件夹的“属性”页中，单击&#x200B;**[!UICONTROL 资产处理]**&#x200B;选项卡，选择&#x200B;**[!UICONTROL FPO配置文件]**&#x200B;作为&#x200B;**[!UICONTROL 处理配置文件]**，然后保存更改。 使用此配置文件处理上传到该文件夹的所有新资源。
 
 ![add-fpo-rendition](assets/add-fpo-rendition.png)
 
@@ -56,9 +56,9 @@ Experience Manageras a Cloud Service提供云原生资源处理功能以生成FP
 
 ## 查看FPO呈现版本 {#view-fpo-renditions}
 
-您可以在工作流完成后检查生成的FPO呈现版本。 在Experience Manager Assets用户界面中，单击资源以打开大型预览。 打开左边栏并选择 **[!UICONTROL 节目]**. 或者，使用键盘快捷键 `Alt + 3` 打开预览时。
+您可以在工作流完成后检查生成的FPO呈现版本。 在Experience Manager Assets用户界面中，单击资源以打开大型预览。 打开左边栏并选择&#x200B;**[!UICONTROL 格式副本]**。 或者，在预览打开时使用键盘快捷键`Alt + 3`。
 
-单击 **[!UICONTROL FPO演绎版]** 以加载其预览。 或者，您也可以右键单击该演绎版并将其保存到您的文件系统。 检查左边栏中是否有可用的演绎版。
+单击&#x200B;**[!UICONTROL FPO呈现版本]**&#x200B;以加载其预览。 或者，您也可以右键单击该演绎版并将其保存到您的文件系统。 检查左边栏中是否有可用的演绎版。
 
 ![rendition_list](assets/list-renditions.png)
 

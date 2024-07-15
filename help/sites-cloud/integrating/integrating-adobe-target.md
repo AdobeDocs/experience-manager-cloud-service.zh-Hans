@@ -21,7 +21,7 @@ ht-degree: 88%
 
 Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的客户端属性所必需的。也就是说，需要与 Launch 集成才能实施“体验定位”。
 
-要将体验片段和/或内容片段导出到Target，您需要 [Adobe Target配置](#create-configuration)，包括 [IMS集成](#ims-configuration).
+要将体验片段和/或内容片段导出到Target，您需要[Adobe Target配置](#create-configuration)，包括[IMS集成](#ims-configuration)。
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Adobe Launch 是管理 AEM 页面（JS 库/标记）中 Analytics 和 Target 的
 
 ### IMS 配置 {#ims-configuration}
 
-通过 Target Standard API 将 AEM 与 Adobe Target 集成需要配置 Adobe IMS (Identity Management System)。必须创建Target IMS配置（在配置Target之后）。 请参阅 [为AEMas a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) 和视频 [集成Experience Platform Launch和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) 了解如何创建Target IMS配置。
+通过 Target Standard API 将 AEM 与 Adobe Target 集成需要配置 Adobe IMS (Identity Management System)。必须创建Target IMS配置（在配置Target之后）。 请参阅[为AEM as a Cloud Service设置IMS集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)和视频[将Experience Platform Launch与AEM集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)，以了解如何创建Target IMS配置。
 
 >[!NOTE]
 >
->[IMS集成现在已使用S2S OAuth进行配置](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[IMS集成现在配置有S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)。
 >
->以前的配置使用的是 [现在可在Adobe Developer控制台中弃用的JWT凭据](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>以前使用[JWT凭据进行配置，这些凭据现在在Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)中被弃用。
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ AEM 提供与 Experience Platform Launch 的现成集成。通过将 Adobe Targe
 **扩展**&#x200B;是管理核心库设置的容器。Adobe Target 扩展通过使用适用于现代 Web at.js 的 Target JavaScript SDK 来支持客户端实施。同时添加 **Adobe Target** 和 **Adobe ContextHub** 扩展。
 
 1. 选择“扩展目录”选项，然后在过滤器中搜索 Target。
-2. 选择 **Adobe Target** at.js，然后单击“安装”选项。
+2. 选择&#x200B;**Adobe Target** at.js，然后单击“安装”选项。
    ![Target Search](assets/search_ext1.png "Target Search")
 3. 选择&#x200B;**配置**&#x200B;按钮。请注意包含已导入 Target 帐户凭据的配置窗口，以及此扩展的 at.js 版本。
 4. 选择&#x200B;**保存**&#x200B;以将 Target 扩展添加到 Launch 属性。**安装的扩展**列表的下方应列出 Target 扩展。

@@ -1,6 +1,6 @@
 ---
 title: 部署App Builder应用程序
-description: 了解如何as a Cloud Service部署适用于Adobe Experience Manager (AEM)的App Builder应用程序。
+description: 了解如何为Adobe Experience Manager (AEM)as a Cloud Service部署App Builder应用程序。
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development

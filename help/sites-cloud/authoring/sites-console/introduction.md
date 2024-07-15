@@ -14,20 +14,20 @@ ht-degree: 45%
 
 # Sites 控制台 {#sites-console}
 
-了解如何使用 **站点** 控制台以管理和组织AEM页面。
+了解如何使用&#x200B;**站点**&#x200B;控制台来管理和组织AEM页面。
 
 ## 方向 {#orientation}
 
-此 **站点** 控制台允许您查看页面层次结构。
+**站点**&#x200B;控制台允许您查看页面层次结构。
 
-![已选择项目的站点控制台的列视图](assets/sites-console-column-view-selected.png)
+![已选定项目的站点控制台的列视图](assets/sites-console-column-view-selected.png)
 
 它提供了不同的视图和工具栏，以帮助您管理和组织页面。
 
-* [控制台工具栏](#toolbar) 始终存在以帮助您导航。
-* [三种不同的视图](#views) 让您轻松查找并选择页面。
-* [操作工具栏](#action-toolbar) 选择某个项目并对其执行操作时显示。
-* [侧面板](#side-panel) 有多个选项可显示选定页面的详细信息。
+* [控制台工具栏](#toolbar)始终存在，可帮助您导航。
+* [三个不同的视图](#views)允许您轻松地查找并选择您的页面。
+* [选定要对其执行操作的项后，将显示操作工具栏](#action-toolbar)。
+* [侧面板](#side-panel)有多个选项可显示选定页面的详细信息。
 
 ## 控制台工具栏 {#console-toolbar}
 
@@ -45,7 +45,7 @@ ht-degree: 45%
 
 ![侧面板选择器示例](assets/sites-console-side-panel-selector.png)
 
-有关侧面板的更多信息，请参阅文档 [站点控制台侧面板。](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+有关侧面板的详细信息，请参阅文档[站点控制台侧面板。](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
 
 ### 痕迹导航 {#breadcrumbs}
 
@@ -60,22 +60,22 @@ ht-degree: 45%
 
 ### 全选 {#select-all}
 
-点击或单击 **全选** 按钮选择控制台当前视图中的所有项目。
+点击或单击&#x200B;**全选**&#x200B;按钮可选择控制台当前视图中的所有项目。
 
-![“全选”按钮](assets/sites-console-select-all.png)
+![选择所有按钮](assets/sites-console-select-all.png)
 
-选择所有项目后，所选项目的计数将显示在工具栏的右上方，其中 **全选** 按钮出现。
+选择所有项目后，所选项目的计数将显示在显示&#x200B;**全选**&#x200B;按钮的工具栏的右上方。
 
 您可以通过以下方式取消选择所有项并退出选择模式：
 
-* 单击或点按 **X** 在计数旁边。
-* 使用 **转义** 键。
+* 单击或点按计数旁边的&#x200B;**X**。
+* 使用&#x200B;**ESC**&#x200B;键。
 
 ![取消全选](assets/sites-console-deselect-all.png)
 
 ### 创建按钮 {#create-button}
 
-此 **创建** 按钮允许您向站点添加新页面，以及创建其他站点对象，如活动副本或启动项。
+使用&#x200B;**创建**&#x200B;按钮，可以向站点添加新页面以及创建其他Sites对象，如活动副本或启动项。
 
 ![“创建”按钮](assets/sites-console-create.png)
 
@@ -92,13 +92,13 @@ ht-degree: 45%
 
 ## 查看次数和选择页面 {#views}
 
-此 **站点** 控制台为您的内容层次结构提供了三种不同的视图。 您可以在任何可用视图中查看、导航和选择资源（以便执行进一步操作）。
+**Sites**&#x200B;控制台为您的内容层次结构提供了三种不同的视图。 您可以在任何可用视图中查看、导航和选择资源（以便执行进一步操作）。
 
 * [列视图](#column-view)
 * [信息卡视图](#card-view)
 * [列表视图](#list-view)
 
-此 **视图** AEM工具栏最右侧的图标表示当前选定的视图。
+AEM工具栏最右侧的&#x200B;**视图**&#x200B;图标表示当前选定的视图。
 
 通过点按或单击该视图，可选择其他视图。
 
@@ -181,11 +181,11 @@ ht-degree: 45%
    * 页面被锁定、隐藏或是LiveCopy的一部分时。
    * 指示您是否需要在工作流中对项目执行操作。
 
-卡片视图也提供 [快速操作](#quick-actions) 用于项目（例如选择项）和常用操作（例如编辑）。
+卡片视图还为项目提供[快速操作](#quick-actions)，例如选择和常用操作，例如编辑。
 
 ![快速操作](assets/sites-console-quick-actions.png)
 
-您可以通过点按/单击卡片对树进行向下导航（注意避免点按快速操作），或使用再次向上导航 [标题中的痕迹导航](#the-header).
+您可以通过点按/单击卡片对树进行向下导航（注意避免点按快速操作），或使用标题](#the-header)中的[痕迹导航再次向上导航。
 
 ### 列表视图 {#list-view}
 
@@ -194,7 +194,7 @@ ht-degree: 45%
 ![列表视图](assets/sites-console-list-view.png)
 
 * 您可以通过点按/单击资源名称对树进行向下导航，并使用[标题中的痕迹导航](#the-header)再次向上导航。
-* 要轻松选择列表中的所有项目，请使用 [**全选** 工具栏中的复选框。](#select-all)
+* 要轻松选择列表中的所有项目，请使用工具栏中的&#x200B;[**全选**&#x200B;复选框。](#select-all)
 
 * 可使用位于“视图”按钮下方的&#x200B;**查看设置**&#x200B;选项选择要显示的列。可以显示以下列：
 
@@ -208,7 +208,7 @@ ht-degree: 45%
    * **已翻译**
    * **页面查看次数**
    * **独特访客**
-   * **页面逗留时间**
+   * 第&#x200B;**页上的**&#x200B;时间
 
 ![配置各列](assets/sites-console-select-columns.png)
 
@@ -230,35 +230,35 @@ ht-degree: 45%
 
 每当选择资源时，您都可以对选定项目执行各种操作。 这些操作将显示在操作工具栏中。
 
-![“操作”工具栏](assets/introduction-actions-toolbar.png)
+![操作工具栏](assets/introduction-actions-toolbar.png)
 
 仅在控制台中选择资源时，才会显示操作工具栏。 操作工具栏中可用的操作会发生更改，以反映您可对特定选定项目执行的操作。 最常见的操作包括：
 
-* [**创建**](#create-action)  — 创建新内容或与内容相关的操作
-* **编辑**  — 根据所选页面的创建方式， **编辑** 操作将打开相应的编辑器。
-   * [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)  — 对于使用AEM页面编辑器创建的页面
-   * [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)  — 对于使用通用编辑器创建的页面
-* [**属性**](/help/sites-cloud/authoring/sites-console/page-properties.md)  — 打开页面属性窗口
-* [**锁定**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)  — 锁定页面以防止他人更改它
-* [**复制**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page)  — 复制页面
-* [**移动**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page)  — 移动或重命名页面
-* [**快速发布**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish)  — 立即发布一个或多个页面
-* [**管理发布**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)  — 计划要发布的页面
-* [**恢复**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version)  — 恢复页面或页面树的版本
-* [**删除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page)  — 删除一个或多个页面
+* [**创建**](#create-action) — 创建新内容或与内容相关的操作
+* **编辑** — 根据所选页面的创建方式，**编辑**&#x200B;操作将打开相应的编辑器。
+   * [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md) — 对于使用AEM页面编辑器创建的页面
+   * [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md) — 对于使用通用编辑器创建的页面
+* [**属性**](/help/sites-cloud/authoring/sites-console/page-properties.md) — 打开页面属性窗口
+* [**锁定**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) — 锁定页面以防止其他人更改它
+* [**复制**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) — 复制页面
+* [**移动**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) — 移动或重命名页面
+* [**快速Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) — 立即Publish一个或多个页面
+* [**管理发布**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) — 计划发布一个或多个页面
+* [**还原**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) — 还原页面或页面树的版本
+* [**删除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) — 删除一个或多个页面
 
-由于某些窗口存在空间限制，因此工具栏的长度可能很快就会超过可用空间。如果发生此情况，将会显示额外的选项。单击或点按省略号(三个点或 **...**)会打开一个下拉选择器，其中包含所有其余的操作。
+由于某些窗口存在空间限制，因此工具栏的长度可能很快就会超过可用空间。如果发生此情况，将会显示额外的选项。单击或点按省略号（三个点或&#x200B;**...**）会打开一个下拉选择器，其中包含所有其余的操作。
 
 ![其他选项](assets/sites-console-additional-options.png)
 
 ### 创建操作 {#create-action}
 
-创建操作提供了与 [**创建** 工具栏按钮](#create-button) 用于创建新页面和类似项目。
+创建操作提供了与&#x200B;[**创建**&#x200B;工具栏按钮](#create-button)类似的选项，用于创建新页面和类似项目。
 
 此外，它还提供了创建与页面相关的操作的能力。
 
-* [**工作流**](/help/sites-cloud/authoring/workflows/overview.md)  — 将工作流应用到页面
-* [**版本**](/help/sites-cloud/authoring/sites-console/page-versions.md)  — 创建页面的版本
+* [**工作流**](/help/sites-cloud/authoring/workflows/overview.md) — 将工作流应用到页面
+* [**版本**](/help/sites-cloud/authoring/sites-console/page-versions.md) — 创建页面的版本
 
 ## 模板
 

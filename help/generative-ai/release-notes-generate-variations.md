@@ -1,6 +1,6 @@
 ---
 title: 生成变体的发行说明
-description: 生成变体的发行说明，可从AEMas a Cloud Service和Edge Delivery ServicesSidekick访问
+description: 生成变体的发行说明，可从AEM as a Cloud Service和Edge Delivery ServicesSidekick访问
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # 生成变体的发行说明 {#release-notes-generate-variations}
 
-此页面记录了生成变体的发行说明，可从AEMas a Cloud Service和Edge Delivery ServicesSidekick访问。
+此页面记录了生成变体的发行说明，可从AEM as a Cloud Service和Edge Delivery ServicesSidekick访问。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 9%
 
 ## 已知问题 {#known-issues}
 
-* 有关从早期版本迁移时自定义提示的问题，请参阅 [v2.0.0中的自定义提示](/help/generative-ai/generate-variations.md#custom-prompts-v200)
+* 有关从早期版本迁移时自定义提示的问题，请参阅[v2.0.0](/help/generative-ai/generate-variations.md#custom-prompts-v200)中的自定义提示
 
 ## 之前版本 {#previous-releases}
 

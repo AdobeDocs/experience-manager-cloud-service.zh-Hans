@@ -1,6 +1,6 @@
 ---
 title: 内容传输工具概述
-description: 了解如何使用内容传输工具将内容从内部部署AEM实例传输到AEMas a Cloud Service
+description: 了解如何使用内容传输工具将内容从内部部署AEM实例传输到AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
@@ -21,9 +21,9 @@ ht-degree: 52%
 
 内容传输工具是由Adobe开发的工具，可用于启动将现有内容从源AEM实例（内部部署或AMS）迁移到目标AEM Cloud Service实例。
 
-此工具还会自动传输主体（用户或组）。  请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以了解更多信息。
+此工具还会自动传输主体（用户或组）。  有关详细信息，请参阅[用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
 
-内容传输工具将内容传输过程与Cloud Acceleration Manager集成。 这使用户能够获得它提供的所有好处：
+内容传输工具将内容传输过程与Cloud Acceleration Manager集成在一起。 这使用户能够获得它提供的所有好处：
 
 * 一次性提取迁移集并将它并行摄取到多个环境中的自助方式
 * 通过更好的加载状态、护栏和错误处理改善用户体验
@@ -36,10 +36,10 @@ ht-degree: 52%
 
 1. **提取**：提取是指将内容从源 AEM 实例提取到称为&#x200B;*迁移集*&#x200B;的临时区域。*迁移集*&#x200B;是 Adobe 提供的云存储区域，用于临时存储源 AEM 实例和云服务 AEM 实例之间的传输内容。
 
-   请参阅 [内容传输中的提取流程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) 以了解更多详细信息。
+   有关详细信息，请参阅内容传输中的[提取流程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
 
    >[!NOTE]
-   >现在，用户映射将作为作者提取阶段的一部分自动运行（但可以选择在作者上禁用或在发布上启用）。 请参阅 [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) 以了解更多详细信息。
+   >现在，用户映射将作为作者提取阶段的一部分自动运行（但可以选择在作者上禁用或在发布上启用）。 有关详细信息，请参阅[用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
 
 1. **摄取**：摄取是指将内容从&#x200B;*迁移集*&#x200B;摄取到目标云服务实例。
 
@@ -57,9 +57,9 @@ ht-degree: 52%
 >[!NOTE]
 >初始内容传输完成后，建议在云服务上线之前，经常对差异内容进行增补，以缩短最终差异内容传输的内容冻结期。
 
-在提取阶段，要对现有迁移集进行&#x200B;***增补***，则必须禁用&#x200B;*覆盖*&#x200B;选项。请参阅 [增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) 以了解更多详细信息。
+在提取阶段，要对现有迁移集进行&#x200B;***增补***，则必须禁用&#x200B;*覆盖*&#x200B;选项。有关详细信息，请参阅[增补提取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process)。
 
-在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。请参阅 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) 以了解更多详细信息。
+在摄取阶段，要在当前内容之上应用增量内容，则必须禁用&#x200B;*划出*&#x200B;选项。有关详细信息，请参阅[增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)。
 
 ## 迁移集到期 {#migration-set-expiry}
 

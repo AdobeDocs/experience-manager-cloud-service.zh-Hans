@@ -5,21 +5,22 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
+source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
-# 启用自适应Forms核心组件 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# 启用自适应表单核心组件 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service | 本文 |
 
-在AEM Formsas a Cloud Service上启用自适应Forms核心组件，允许您使用AEM FormsCloud Service实例在多个渠道中创建、发布和交付基于核心组件的自适应Forms和Headless Forms。 您需要具备启用了自适应表单核心组件的环境才能使用 Headless 自适应表单。
+在AEM Formsas a Cloud Service上启用自适应Forms核心组件后，您可以将AEM FormsCloud Service实例用于多个渠道，开始创建、发布和交付基于核心组件的自适应Forms和Headless Forms。 您需要具备启用了自适应表单核心组件的环境才能使用 Headless 自适应表单。
 
 ## 注意事项
 
@@ -27,7 +28,7 @@ ht-degree: 85%
 
 * 如果您拥有的是其中[未启用](#enable-components)核心组件的旧版 Forms as a Cloud Service 程序，则您可[将自适应表单核心组件依赖项添加到](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)您的 AEM as a Cloud Service 存储库，并将该存储库部署到您的 Cloud Service 环境以启用 Headless 自适应表单。
 
-* 如果您现有的Cloud Service环境提供了以下选项： [创建基于核心组件的自适应Forms](creating-adaptive-form-core-components.md)，已为您的环境启用了自适应Forms核心组件和Headless自适应Forms，您可以将基于核心组件的自适应Forms作为Headless表单提供给需要Headless表示自适应Forms的移动、Web、本机应用程序和服务等渠道。
+* 如果您现有的Cloud Service环境提供了[创建基于核心组件的自适应Forms](creating-adaptive-form-core-components.md)的选项，则您的环境已启用了自适应Forms核心组件和Headless自适应Forms，并且您可以将基于核心组件的自适应Forms作为Headless表单提供给需要Adaptive Forms的Headless呈现的移动设备、Web、本机应用程序和服务。
 
 
 ## 启用自适应表单核心组件和 Headless 自适应表单 {#enable-headless-forms}

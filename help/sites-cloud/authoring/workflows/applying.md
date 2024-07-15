@@ -55,7 +55,7 @@ ht-degree: 83%
 * [“站点”工具栏的“创建”选项](#starting-a-workflow-from-the-sites-toolbar)。
 * [ Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
 
-在这两种情况下，您必须 [在“创建工作流向导”中指定工作流详细信息](#specifying-workflow-details-in-the-create-workflow-wizard).
+在这两种情况下，您都必须[在“创建工作流向导”](#specifying-workflow-details-in-the-create-workflow-wizard)中指定工作流详细信息。
 
 ### 从 Sites 工具栏启动工作流 {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -119,7 +119,7 @@ ht-degree: 83%
 
 1. 在&#x200B;**范围**&#x200B;步骤中，您可以选择：
 
-   * **添加内容** 以打开 [路径浏览器](/help/sites-cloud/authoring/path-selection.md) 并选择其他资源；在浏览器中，选择 **选择** 将内容添加到工作流实例。
+   * **添加内容**&#x200B;以打开[路径浏览器](/help/sites-cloud/authoring/path-selection.md)并选择其他资源；在浏览器中，选择&#x200B;**选择**&#x200B;以将内容添加到工作流实例。
 
    * 现有资源以查看其他操作：
 

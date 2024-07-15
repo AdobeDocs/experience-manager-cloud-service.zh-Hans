@@ -28,7 +28,7 @@ ht-degree: 75%
 
 ## 连接到翻译服务提供商 {#connecting-to-a-translation-service-provider}
 
-创建用于将 AEM 连接到您的翻译服务提供商的云配置。AEM包括以下功能 [连接到Microsoft® Translator](connect-ms-translator.md) 默认情况下。
+创建用于将 AEM 连接到您的翻译服务提供商的云配置。默认情况下，AEM包括[连接到Microsoft® Translator](connect-ms-translator.md)的功能。
 
 以下翻译供应商为翻译项目提供 AEM API 的实现。
 
@@ -44,7 +44,7 @@ ht-degree: 75%
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 
-安装连接器软件包后，即可为连接器创建云配置。通常，您必须提供凭据，以便向翻译服务进行身份验证。 有关为Microsoft® Translator连接器添加云配置的信息，请参阅 [与Microsoft® Translator集成](connect-ms-translator.md).
+安装连接器软件包后，即可为连接器创建云配置。通常，您必须提供凭据，以便向翻译服务进行身份验证。 有关为Microsoft® Translator连接器添加云配置的信息，请参阅[与Microsoft® Translator集成](connect-ms-translator.md)。
 
 如果需要，可为同一连接器创建多个云配置。 例如，为您在同一供应商的每个帐户或项目都创建一个配置。
 
@@ -70,13 +70,13 @@ ht-degree: 75%
 
 只有一个框架配置可控制如何翻译页面内容和资源。要创建翻译配置，请执行以下操作：
 
-1. 在 [全局导航菜单，](/help/sites-cloud/authoring/basic-handling.md#global-navigation) 选择 **“工具”>“Cloud Service和翻译Cloud Service”**.
+1. 在[全局导航菜单中，](/help/sites-cloud/authoring/basic-handling.md#global-navigation)选择&#x200B;**工具>Cloud Service和翻译Cloud Service**。
 1. 在您的内容结构中导航到要创建该配置的位置。这一般为站点专属的位置，但也可为全局位置。
-1. 在字段中提供以下信息，然后选择 **创建**.：
+1. 在字段中提供以下信息，然后选择&#x200B;**创建**。
    1. 在下拉列表中选择&#x200B;**配置类型**。
    1. 为您的配置输入一个&#x200B;**标题**。**标题**&#x200B;在&#x200B;**Cloud Service**&#x200B;控制台中以及页面属性下拉列表中标识该配置。
    1. （可选）键入一个&#x200B;**名称**&#x200B;以用于存储该配置的存储库节点。
-1. 在 **编辑配置** 窗口中，配置属性 **站点** 和 **资产** 选项卡，然后选择 **保存并关闭**.
+1. 在&#x200B;**编辑配置**&#x200B;窗口中，配置&#x200B;**站点**&#x200B;和&#x200B;**Assets**&#x200B;选项卡上的属性，然后选择&#x200B;**保存并关闭**。
 
 ### 站点配置属性 {#sites-configuration-properties}
 
@@ -110,7 +110,7 @@ ht-degree: 75%
 | 翻译标记 | 激活此属性，以便您能够翻译与资源关联的标记。 |
 | 自动执行翻译 | 选择此属性可在创建翻译项目后自动运行翻译作业。 选择此选项时，无法复查翻译作业或划定其范围。 |
 | 禁用仅更新翻译 | 选中此选项后，更新翻译项目会提交所有可翻译字段以供翻译，而不仅仅是自上次翻译以来更改的字段。 |
-| 为翻译启用内容模型字段 | 启用此选项将使用 **可翻译** 字段于 [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) 以确定是否转换字段并自动创建 [翻译规则](rules.md) 相应地。 此选项取代了您可能已创建的任何翻译规则。 |
+| 为翻译启用内容模型字段 | 启用此选项使用[内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)上的&#x200B;**可翻译**&#x200B;字段确定是否翻译了该字段，并相应地自动创建[翻译规则](rules.md)。 此选项取代了您可能已创建的任何翻译规则。 |
 
 ## 配置页面以供翻译 {#configuring-pages-for-translation}
 
@@ -121,7 +121,7 @@ ht-degree: 75%
 
 翻译集成框架云配置标识要用于连接到服务提供商的云配置。 将源页面与框架云配置关联时，该页面必须与该框架云配置使用的服务提供商云配置关联。
 
-将页面与云配置关联时，该页面的后代页面继承这种关联。例如，如果您将 `/content/wknd/language-masters/en/magazine` 页面上的库， `magazine` 页面及其下方的子页面将根据框架进行翻译。
+将页面与云配置关联时，该页面的后代页面继承这种关联。例如，如果您将`/content/wknd/language-masters/en/magazine`页面与翻译集成框架关联，则根据该框架翻译`magazine`页面及其下方的子页面。
 
 必要时，可在后代页面上取代该关联。例如，站点的内容主要涉及旅行和生活方式，但某个分支的页面介绍公司情况。在这种情况下，站点的根页面可能与指定使用“生活方式”类别进行机器翻译的翻译集成框架关联。 描述公司情况的分支将使用按“常规”类别执行机器翻译的框架。
 
@@ -129,16 +129,16 @@ ht-degree: 75%
 
 将页面与您用于翻译该页面和后代页面的翻译提供商关联。
 
-1. 在站点控制台中，选择要配置的页面，然后选择 **查看属性**.
+1. 在站点控制台中，选择要配置的页面，然后选择&#x200B;**查看属性**。
 1. 选择&#x200B;**云服务**&#x200B;选项卡。
-1. 在 **添加配置** 从下拉列表中选择配置。
+1. 在&#x200B;**添加配置**&#x200B;下拉列表中选择配置。
 1. 选择&#x200B;**保存并关闭**。
 
 ### 将页面与翻译集成框架关联 {#associating-pages-with-a-translation-integration-framework}
 
 将页面与定义您要如何为该页面和后代页面执行翻译的翻译集成框架关联。
 
-1. 在站点控制台中，选择要配置的页面，然后选择 **查看属性**.
+1. 在站点控制台中，选择要配置的页面，然后选择&#x200B;**查看属性**。
 1. 选择&#x200B;**云服务**&#x200B;选项卡。
-1. 在 **添加配置** 从下拉列表中选择配置。
+1. 在&#x200B;**添加配置**&#x200B;下拉列表中选择配置。
 1. 选择&#x200B;**保存并关闭**。

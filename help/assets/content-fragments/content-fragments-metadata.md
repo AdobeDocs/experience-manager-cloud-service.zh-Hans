@@ -1,5 +1,5 @@
 ---
-title: 元数据 — 片段属性（资产 — 内容片段）
+title: 元数据 — 片段属性(Assets — 内容片段)
 description: 了解如何查看和编辑内容片段的元数据属性。
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
@@ -20,7 +20,7 @@ ht-degree: 68%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，可从以下位置访问该编辑器： **资产** 控制台。 请参阅Sites文档， [内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)，以了解新编辑器的详细信息(主要通过 **内容片段** 控制台)。
+>创作内容片段有两个编辑器。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
 ## 编辑属性/元数据 {#editing-properties-meta-data}
 

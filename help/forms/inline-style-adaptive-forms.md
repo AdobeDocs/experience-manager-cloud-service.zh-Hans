@@ -21,18 +21,18 @@ ht-degree: 10%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | 本文 |
 
-您可以通过以下方式指定样式，来定义自适应表单的整体外观和样式： [主题编辑器](themes.md). 此外，您还可以将内联CSS样式应用于各个自适应表单组件并即时预览更改。 内联样式会覆盖主题中提供的样式。
+可以使用[主题编辑器](themes.md)指定样式来定义自适应表单的整体外观和样式。 此外，您还可以将内联CSS样式应用于各个自适应表单组件并即时预览更改。 内联样式会覆盖主题中提供的样式。
 
 ## 应用内联CSS属性 {#apply-inline-css-properties}
 
 要将内联样式添加到组件，请执行以下操作：
 
-1. 在表单编辑器中打开表单，并将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中选择 ![画布下拉列表](assets/Smock_ChevronDown.svg) > **[!UICONTROL 样式]**.
-1. 在页面中选择组件，然后选择编辑按钮 ![编辑按钮](assets/edit.svg). 样式属性在侧栏中打开。
+1. 在表单编辑器中打开表单，并将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中选择![画布下拉列表](assets/Smock_ChevronDown.svg) > **[!UICONTROL 样式]**。
+1. 在页面中选择组件，然后选择编辑按钮![edit-button](assets/edit.svg)。 样式属性在侧栏中打开。
 
    您还可以从侧栏中的表单层次结构树中选择组件。 表单层次结构树在侧栏中可用作表单对象。
 
-   在 [!UICONTROL 样式] 模式中，您可以看到表单对象下列出的组件。 但是，侧边栏中的表单对象列表列出了字段和面板等组件。 字段和面板是可以包含文本框和单选按钮等组件的常规组件。
+   在[!UICONTROL 样式]模式下，您可以看到表单对象下列出的组件。 但是，侧边栏中的表单对象列表列出了字段和面板等组件。 字段和面板是可以包含文本框和单选按钮等组件的常规组件。
 
    从侧栏中选择组件时，您将看到列出的所有子组件以及所选组件的属性。 您可以选择特定的子组件并设置其样式。
 
@@ -40,19 +40,19 @@ ht-degree: 10%
 
    * [!UICONTROL Dimension和位置] （显示设置、填充、高度、宽度、边距、位置、z索引、浮动、清除、溢出）
    * [!UICONTROL 文本] （字体系列、粗细、颜色、大小、行高和对齐）
-   * [!UICONTROL 背景] （图像和渐变，背景颜色）
-   * [!UICONTROL 边框] （宽度、样式、颜色、半径）
-   * [!UICONTROL 效果] （阴影、不透明度）
+   * [!UICONTROL 背景]（图像和渐变，背景颜色）
+   * [!UICONTROL 边框]（宽度、样式、颜色、半径）
+   * [!UICONTROL 效果]（阴影、不透明度）
    * [!UICONTROL 高级] （允许您为组件编写自定义CSS）
 
-1. 同样，可以为组件的其他部分应用样式，例如 [!UICONTROL 构件]， [!UICONTROL 题注]、和 [!UICONTROL 帮助].
-1. 选择 **[!UICONTROL 完成]** 确认更改或 **[!UICONTROL 取消]** 以放弃更改。
+1. 同样，可以为组件的其他部分应用样式，如[!UICONTROL 小组件]、[!UICONTROL 题注]和[!UICONTROL 帮助]。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以确认更改，或选择&#x200B;**[!UICONTROL 取消]**&#x200B;以放弃更改。
 
 ## 示例：字段组件的内联样式 {#example-inline-styles-for-a-field-component}
 
 以下图像描述了应用内联样式之前和之后的文本字段。
 
-![应用内联样式之前的文本框组件](assets/no-style.png)
+应用内联样式之前的![文本框组件](assets/no-style.png)
 
 应用内联样式属性之前的文本框组件
 
@@ -99,7 +99,7 @@ ht-degree: 10%
  </tbody>
 </table>
 
-![应用内联样式后的文本框样式](assets/applied-style.png)
+应用内联样式后的![文本框样式](assets/applied-style.png)
 
 应用内联样式属性后的文本框组件
 
@@ -111,25 +111,25 @@ ht-degree: 10%
 
 ## 复制并粘贴样式 {#copy-paste-styles}
 
-您还可以在自适应表单中将样式从一个组件复制并粘贴到另一个组件。 在 **[!UICONTROL 样式]** 模式，选择组件并选择复制图标 ![复制](assets/property-copy-icon.svg).
+您还可以在自适应表单中将样式从一个组件复制并粘贴到另一个组件。 在&#x200B;**[!UICONTROL 样式]**&#x200B;模式下，选择该组件并选择“复制”图标![复制](assets/property-copy-icon.svg)。
 
-选择相同类型的另一个组件，然后选择粘贴图标 ![复制](assets/Smock_Paste_18_N.svg) 以粘贴复制的样式。 也可以选择“清除样式”图标 ![复制](assets/clear-style-icon.svg) 以清除应用的样式。
+选择相同类型的其他组件并选择“粘贴”图标![复制](assets/Smock_Paste_18_N.svg)以粘贴复制的样式。 您还可以选择“清除样式”图标![复制](assets/clear-style-icon.svg)以清除应用的样式。
 
 ## 为组件的不同状态设置样式 {#set-styles-for-states}
 
-您可以为组件类型的不同状态设置样式。 不同的状态包括： [!UICONTROL 焦点]， [!UICONTROL 已禁用]， [!UICONTROL 悬停]， [!UICONTROL 错误]， [!UICONTROL 成功]、和 [!UICONTROL 必需].
+您可以为组件类型的不同状态设置样式。 不同的状态包括： [!UICONTROL 焦点]、[!UICONTROL 已禁用]、[!UICONTROL 悬停]、[!UICONTROL 错误]、[!UICONTROL 成功]和[!UICONTROL 必需]。
 
 要定义组件状态的样式：
 
-1. 在 **[!UICONTROL 样式]** 模式，选择组件并选择编辑图标 ![编辑](assets/Smock_Edit_18_N.svg).
+1. 在&#x200B;**[!UICONTROL 样式]**&#x200B;模式下，选择该组件并选择“编辑”图标![编辑](assets/Smock_Edit_18_N.svg)。
 
-1. 使用选择组件的状态 **[!UICONTROL 状态]** 下拉列表。
+1. 使用&#x200B;**[!UICONTROL 状态]**&#x200B;下拉列表中选择组件的状态。
 
    ![选择状态](assets/select-state.png)
 
-1. 为元件的选定状态定义样式，然后选择 ![保存](assets/save_icon.svg) 以保存属性。
+1. 为组件的选定状态定义样式，然后选择![保存](assets/save_icon.svg)以保存属性。
 
-您还可以模拟成功和错误状态。 选择展开图标以查看 **[!UICONTROL 模拟成功]** 和 **[!UICONTROL 模拟错误]** 选项。
+您还可以模拟成功和错误状态。 选择“展开”图标以查看&#x200B;**[!UICONTROL 模拟成功]**&#x200B;和&#x200B;**[!UICONTROL 模拟错误]**&#x200B;选项。
 
 ![模拟状态](assets/simulate-states.png)
 

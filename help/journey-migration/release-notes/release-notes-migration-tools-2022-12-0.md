@@ -1,6 +1,6 @@
 ---
-title: AEMas a Cloud Service2022.12.0版中迁移工具的发行说明
-description: AEMas a Cloud Service2022.12.0版中迁移工具的发行说明
+title: AEM as a Cloud Service 2022.12.0版中的迁移工具发行说明
+description: AEM as a Cloud Service 2022.12.0版中的迁移工具发行说明
 feature: Release Information
 exl-id: e4b6795b-6999-451b-b51f-056a9d2ea652
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 8%
 
 ---
 
-# AEMas a Cloud Service2022.12.0版中迁移工具的发行说明 {#release-notes}
+# AEM as a Cloud Service 2022.12.0版中的迁移工具发行说明 {#release-notes}
 
-此页概述了AEMas a Cloud Service2022.12.0中迁移工具的发行说明。
+此页概述了AEM as a Cloud Service 2022.12.0中迁移工具的发行说明。
 
 ## Best Practices Analyzer {#bpa-release}
 

@@ -1,6 +1,6 @@
 ---
 title: 使用内容片段概述
-description: 了解AEMas a Cloud Service中的内容片段如何允许您创建和使用内容；非常适用于Headless投放和页面创作。
+description: 了解AEM as a Cloud Service中的内容片段如何允许您创建和使用内容；非常适用于Headless投放和页面创作。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a

@@ -36,8 +36,8 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
 要在“受众”控制台中创建 ContextHub 区段，请执行以下操作：
 
-1. 在导航控制台中，选择 **个性化**. 选择 **受众**.
-1. 选择 **创建ContextHub区段**.
+1. 在导航控制台中，选择&#x200B;**Personalization**。 选择&#x200B;**受众**。
+1. 选择&#x200B;**创建ContextHub区段**。
 
    ![创建区段](/help/sites-cloud/authoring/assets/audiences-create-segment.png)
 
@@ -45,7 +45,7 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
    >[!NOTE]
    >
-   >您可以通过点按或单击对修改后的列表进行排序 **修改时间** ，以按降序排序，从而查看任何创建的受众。
+   >您可以通过点按或单击&#x200B;**已修改**&#x200B;来对修改列表进行排序，按降序排序，以查看任何创建的受众。
 
 有关使用 ContextHub 创建区段的更多详细信息，请参阅“使用 ContextHub 配置分段”文档。<!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
@@ -63,19 +63,19 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
 要创建 Adobe Target 受众，请执行以下操作：
 
-1. 在导航控制台中，选择 **个性化**. 选择 **受众**.
+1. 在导航控制台中，选择&#x200B;**Personalization**。 选择&#x200B;**受众**。
 
    ![导航到受众](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. 在受众控制台中，选择 **创建** 然后 **创建目标受众**.
+1. 在“受众”控制台中，选择&#x200B;**创建**，然后选择&#x200B;**创建目标受众**。
 
    ![创建目标受众](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
-1. 在 **Adobe Target配置** 对话框中，选择目标配置并选择 **确定**.
+1. 在&#x200B;**Adobe Target配置**&#x200B;对话框中，选择Target配置并选择&#x200B;**确定**。
 1. 在“规则#1”区域，选择属性类型，并在可用的字段中输入任何属性信息。 完成后，选中该属性右侧的复选标记以保存该属性。有关所有属性的信息，请参阅[属性及其选项](#attributes-and-their-options)。
 1. 单击 **添加规则** ，以添加其他规则。根据需要输入任意数量的规则。规则与布尔运算符AND相结合，这意味着受众必须满足每个规则的所有要求才能符合活动条件。
 1. 选择&#x200B;**下一步**。
-1. 输入受众的名称并选择 **保存**.
+1. 输入受众的名称，然后选择&#x200B;**保存**。
 1. 选择&#x200B;**保存**。受众随即会列在“受众”列表中。
 
 ### 属性及其选项 {#attributes-and-their-options}
@@ -100,6 +100,6 @@ ContextHub 中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的
 
 您可以从“受众”控制台中编辑任何 ContextHub 受众。您也可以编辑 Adobe Target 受众，但只能编辑在 AEM 中创建的受众：
 
-1. 在导航控制台中，选择 **个性化**. 选择 **受众**.
-1. 选择要编辑的ContextHub区段旁边的图标，然后选择 **编辑**.
+1. 在导航控制台中，选择&#x200B;**Personalization**。 选择&#x200B;**受众**。
+1. 选择要编辑的ContextHub区段旁边的图标，然后选择&#x200B;**编辑**。
 1. 在区段编辑器中进行任何编辑。有关更多信息，请参阅 ContextHub 文档。<!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->

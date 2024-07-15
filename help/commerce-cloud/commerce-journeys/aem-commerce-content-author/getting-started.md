@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在此AEM Content和Commerce历程的上一个文档中， [了解AEM Content和Commerce](/help/commerce-cloud/introduction.md)您已了解Headless CMS和AEM Content以及Commerce的基本理论和概念。
+在此AEM Content和Commerce历程的上一个文档[了解AEM Content和Commerce](/help/commerce-cloud/introduction.md)中，您已了解Headless CMS和AEM Content以及Commerce的基本理论和概念。
 
 本文基于这些基础之上。
 
@@ -51,7 +51,7 @@ CIF扩展了AEM中的页面编辑器，使其能够在不离开上下文的情�
 ![产品选取器](assets/product-picker-open.png)
 
 通过浏览左侧的目录结构或搜索，可以找到产品。 全文搜索遵循所选类别并将搜索结果限制在此类别内。
-![产品选取器文件夹](assets/product-picker-folders.png)
+![产品选取器资料夹](assets/product-picker-folders.png)
 
 具有变体的产品标有一个文件夹图标，单击该图标可显示所有变体。
 ![产品选取器变体](assets/product-picker-variants.png)
@@ -73,7 +73,7 @@ CIF扩展了AEM中的页面编辑器，使其能够在不离开上下文的情�
 ![商务菜单项](assets/commerce-menu-item.png)
 
 这将显示所有连接的产品目录的列表。
-![驾驶舱综合目录](assets/cockpit-Integrated-catalogs.png)
+![驾驶舱集成目录](assets/cockpit-Integrated-catalogs.png)
 
 产品目录默认显示所有产品的所有第一级类别。 单击某个类别会打开该类别，其中包含所有相关产品和子类别，包括其产品。
 ![驾驶舱产品目录](assets/cockpit-product-catalog.png)
@@ -81,7 +81,7 @@ CIF扩展了AEM中的页面编辑器，使其能够在不离开上下文的情�
 您可以通过单击资产图标来打开产品资产。 图标通过将鼠标悬停在产品图块上来显示。
 ![驾驶舱产品属性](assets/cockpit-properties.png)
 
-所有产品属性均为只读，因为数据是从连接的后端实时加载的。 更改产品属性必须在后端系统（记录系统）中完成。 选项卡 **变量** 仅在产品具有变体时显示。 单击选项卡会显示所有变体及其属性。
+所有产品属性均为只读，因为数据是从连接的后端实时加载的。 更改产品属性必须在后端系统（记录系统）中完成。 选项卡&#x200B;**变体**仅在产品具有变体时显示。 单击选项卡会显示所有变体及其属性。
 ![驾驶舱产品变型](assets/cockpit-properties-variants.png)
 
 其余选项卡显示与产品关联的所有AEM内容。 这些选项卡将在下一模块中进行讨论。
@@ -91,7 +91,7 @@ CIF扩展了AEM中的页面编辑器，使其能够在不离开上下文的情�
 使用Omnisearch是一种通过全文搜索查找AEM内容的简单方法。 CIF对Omnisearch进行了扩展，对产品目录及其关联的AEM内容进行了全文搜索。
 ![商务菜单项](assets/omnisearch.png)
 
-Omnisearch在商务后端运行全文搜索以查找所有相关产品。 结果列在下 **查看所有产品**. Omnisearch还会搜索AEM中与搜索到的产品相关的内容。 结果列在相应的AEM类别下。 在此示例中，一个内容片段与产品相关。
+Omnisearch在商务后端运行全文搜索以查找所有相关产品。 结果列在&#x200B;**查看所有产品**&#x200B;下。 Omnisearch还会搜索AEM中与搜索到的产品相关的内容。 结果列在相应的AEM类别下。 在此示例中，一个内容片段与产品相关。
 
 ## 后续内容 {#what-is-next}
 
@@ -101,10 +101,10 @@ Omnisearch在商务后端运行全文搜索以查找所有相关产品。 结果
 * 如何使用产品和类别选取器访问AEM中的产品目录
 * 如何使用产品驾驶舱和AEM Omnisearch访问内容和商业数据
 
-在此知识的基础上继续您的历程，接下来查看文档 [管理产品目录页面和模板](catalog-templates.md)，了解如何构建和自定义您的第一个产品目录体验。
+在此知识的基础上继续您的历程，接下来查看文档[管理产品目录页面和模板](catalog-templates.md)，了解如何构建和自定义您的第一个产品目录体验。
 
 ## 其他资源 {#additional-resources}
 
-我们建议您继续此历程的下一部分 — [管理产品目录页面和模板](catalog-templates.md) — 以下是一些可选资源，这些资源对这里提到的一些概念进行了更深入的探究。 但是，无需这些可选资源即可继续历程。
+我们建议您继续历程的下一部分 — [管理产品目录页面和模板](catalog-templates.md) — 以下是一些可选资源，这些资源对这里提到的一些概念进行了更深入的探究。 但是，无需这些可选资源即可继续历程。
 
 * [配置存储和目录](/help/commerce-cloud/getting-started.md#catalog)

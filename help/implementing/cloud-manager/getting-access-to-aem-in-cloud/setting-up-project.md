@@ -113,7 +113,7 @@ AEM 项目需要遵守以下准则才能使用 Cloud Manager 成功地构建和�
 
 >[!NOTE]
 >
->应谨慎使用受密码保护的Maven存储库中的工件，因为通过此机制部署的代码当前不会运行 [代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md) 在Cloud Manager的质量关卡中实施。 因此，它只应在少数情况下使用，并且适用于与 AEM 无关的代码。 此外，还建议将 Java 源以及整个项目源代码和二进制文件一起部署。
+>应谨慎使用受密码保护的Maven存储库中的工件，因为通过此机制部署的代码当前未通过在Cloud Manager的质量审核中实现的[代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)运行。 因此，它只应在少数情况下使用，并且适用于与 AEM 无关的代码。 此外，还建议将 Java 源以及整个项目源代码和二进制文件一起部署。
 
 若要在 Cloud Manager 中使用受密码保护的 Maven 存储库，请执行以下操作：
 
@@ -123,7 +123,7 @@ AEM 项目需要遵守以下准则才能使用 Cloud Manager 成功地构建和�
 当 Cloud Manager 构建过程开始时：
 
 * 此文件中的 `<servers>` 元素会合并到 Cloud Manager 提供的默认 `settings.xml` 文件中。
-   * 服务器ID开头为 `adobe` 和 `cloud-manager` 视为保留项。 请勿在自定义服务器上使用它们。
+   * 以`adobe`和`cloud-manager`开头的服务器ID被视为保留的。 请勿在自定义服务器上使用它们。
    * Cloud Manager 绝不会对不带上述某个前缀的服务器 ID 或默认 ID `central` 进行镜像。
 * 有了此文件，将从 `pom.xml` 文件中的 `<repository>` 和/或 `<pluginRepository>` 元素中引用服务器 ID。
 * 通常，`<repository>` 和/或 `<pluginRepository>` 元素将包含在 [Cloud Manager 特定的配置文件](#activating-maven-profiles-in-cloud-manager)中，但这并不是完全必要的。

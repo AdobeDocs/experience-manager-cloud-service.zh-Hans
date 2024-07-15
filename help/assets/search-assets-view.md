@@ -1,5 +1,5 @@
 ---
-title: 了解如何在中搜索和发现资源 [!DNL Assets view]？
+title: 了解如何在 [!DNL Assets view]中搜索和发现资源？
 description: 了解如何在AEM Assets视图中搜索和发现资源。 利用强大的搜索功能，您可以快速发现合适的资源，并帮助您提高内容速度。
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
@@ -49,7 +49,7 @@ ht-degree: 92%
 
 * 到期日期：根据 `Expired` 资源状态筛选搜索结果。此外，还可指定资源的到期日期范围以进一步筛选搜索结果。
 
-* 自定义筛选条件： [添加自定义筛选条件](#custom-filters) 到Assets视图用户界面。 与标准筛选器一起应用自定义筛选器以细化搜索结果。
+* 自定义筛选器： [将自定义筛选器](#custom-filters)添加到Assets视图用户界面。 与标准筛选器一起应用自定义筛选器以细化搜索结果。
 
 可按 `Name`、`Relevancy`、`Size`、`Modified` 和 `Created` 的升序或降序为搜索到的资源排序。
 
@@ -57,9 +57,9 @@ ht-degree: 92%
 
 **所需的权限：**`Can Edit`、`Owner` 或管理员。
 
-资产视图还允许您向用户界面添加自定义筛选条件。 除了[标准筛选条件](#refine-search-results)之外，您还可以应用这些自定义筛选条件来优化您的搜索结果。
+Assets视图还允许您向用户界面添加自定义筛选条件。 除了[标准筛选条件](#refine-search-results)之外，您还可以应用这些自定义筛选条件来优化您的搜索结果。
 
-资产视图提供了以下自定义筛选条件：
+Assets视图提供了以下自定义过滤器：
 
 <table>
     <tbody>
@@ -322,13 +322,13 @@ Experience Manager Assets允许您为您的组织选择默认登录页面。 使
 
 ### “上下文搜索”反馈 {#contextual-search-feedback}
 
-如果您需要提供关于上下文搜索功能的反馈，请单击 ![“上下文搜索”图标](assets/do-not-localize/Smock_Help_18_N.svg) ，然后单击反馈图标。 选择反馈类型，指定主题和描述，然后单击&#x200B;**[!UICONTROL “提交”]**。
+如果您需要提供有关上下文搜索功能的反馈，请单击![上下文搜索图标](assets/do-not-localize/Smock_Help_18_N.svg)，然后单击“反馈”图标。 选择反馈类型，指定主题和描述，然后单击&#x200B;**[!UICONTROL “提交”]**。
 
 ![“上下文搜索”反馈](assets/contextual-search-feedback.png)
 
 ## 后续步骤 {#next-steps}
 
-* [观看视频，了解如何在“资产”视图中搜索资产](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=zh-Hans)
+* [观看视频，了解如何在Assets视图中搜索资源](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=zh-Hans)
 
 * 利用资源视图用户界面上的[!UICONTROL 反馈]选项提供产品反馈
 

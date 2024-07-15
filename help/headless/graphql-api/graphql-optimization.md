@@ -33,11 +33,11 @@ ht-degree: 64%
 
 持久的GraphQL查询利用内容交付网络(CDN)帮助降低查询执行性能。 客户端应用程序请求持久查询，GET请求快速边缘启用执行。
 
-**进一步参考**
+**进一步引用**
 
 请参阅：
 
-* [持久GraphQL查询](/help/headless/graphql-api/persisted-queries.md).
+* [持久的GraphQL查询](/help/headless/graphql-api/persisted-queries.md)。
 * [了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询](/help/headless/graphql-api/sample-queries.md)
 
 ### 缓存策略 {#cache-strategy}
@@ -48,9 +48,9 @@ ht-degree: 64%
 
 **推荐**
 
-[AEM调度程序](/help/implementing/dispatcher/overview.md) 是AEM服务中的第一级缓存，在CDN缓存之前。
+[AEM Dispatcher](/help/implementing/dispatcher/overview.md)是AEM服务中的第一级缓存，在CDN缓存之前。
 
-**进一步参考**
+**进一步引用**
 
 请参阅：
 
@@ -60,9 +60,9 @@ ht-degree: 64%
 
 **推荐**
 
-如果定位为，则可以缓存GraphQL查询及其JSON响应。 `GET` 使用CDN时的请求。 相比之下，未缓存的请求可能非常（资源）昂贵且处理缓慢，有可能对源头资源造成进一步的有害影响。
+使用CDN时，如果定位为`GET`请求，则可以缓存GraphQL查询及其JSON响应。 相比之下，未缓存的请求可能非常（资源）昂贵且处理缓慢，有可能对源头资源造成进一步的有害影响。
 
-**进一步参考**
+**进一步引用**
 
 请参阅：
 
@@ -74,9 +74,9 @@ ht-degree: 64%
 
 在将GraphQL持久查询与CDN结合使用时，建议设置适当的HTTP缓存控制标头。
 
-每个持久查询可以有自己的一组特定的缓存控制标头。 标头可设置在 [GRAPHQL API](/help/headless/graphql-api/content-fragments.md) 或 [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
+每个持久查询可以有自己的一组特定的缓存控制标头。 标头可以通过[GraphQL API](/help/headless/graphql-api/content-fragments.md)或[AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)进行设置。
 
-**进一步参考**
+**进一步引用**
 
 请参阅：
 
@@ -89,7 +89,7 @@ ht-degree: 64%
 
 此功能允许AEM进一步缓存GraphQL查询范围内的内容，然后可以在JSON输出中将这些内容组合为块，而不是逐行组合。
 
-**进一步参考**
+**进一步引用**
 
 请联系Adobe，为您的AEM Cloud Service程序和环境启用此功能。
 
@@ -110,7 +110,7 @@ AEM 提供了两种方法来优化 GraphQL 查询：
 
    * [排序](#use-graphql-sorting)与优化没有直接关系，而与分页有关
 
-每种方法都有自己的用例和限制。本节提供有关混合过滤和分页的信息，以及一些 [最佳实践](#best-practices) 以用于优化GraphQL查询。
+每种方法都有自己的用例和限制。本节提供有关混合过滤和分页的信息，以及一些[最佳实践](#best-practices)用于优化GraphQL查询的信息。
 
 #### 使用AEM GraphQL混合筛选 {#use-aem-graphql-hybrid-filtering}
 
@@ -130,7 +130,7 @@ AEM 提供了两种方法来优化 GraphQL 查询：
 >
 >AEM混合筛选需要更新现有的内容片段
 
-**进一步参考**
+**进一步引用**
 
 请参阅：
 
@@ -145,8 +145,8 @@ AEM 提供了两种方法来优化 GraphQL 查询：
 
 AEM 中的 GraphQL 支持两种类型的分页：
 
-* [基于限制/偏移的分页](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
-这用于列表查询；它们以 `List`；例如， `articleList`.
+* [限制/基于偏移的分页](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
+这用于列表查询；这些查询以`List`结尾；例如，`articleList`。
 要使用它，您必须提供要返回的第一个项目的位置 (`offset`) 和要返回的项目数（`limit` 或页面大小）。
 
 * [基于光标的分页](/help/headless/graphql-api/content-fragments.md#paginated-first-after)（由 `first` 和 `after` 表示）
@@ -161,7 +161,7 @@ AEM 中的 GraphQL 支持两种类型的分页：
   >
   >后向分页（使用 `before`/`last` 参数）不受支持。
 
-**进一步参考**
+**进一步引用**
 
 请参阅：
 
@@ -181,7 +181,7 @@ AEM 中的 GraphQL 支持两种类型的分页：
 >
 >对顶级字段进行排序也会对性能产生（虽然很小）影响。
 
-**进一步参考**
+**进一步引用**
 
 请参阅：
 
@@ -290,7 +290,7 @@ AEM 中的 GraphQL 支持两种类型的分页：
 
 ### 不输出所有格式（多行文本元素） {#do-not-output-all-formats}
 
-AEM GraphQL可以返回文本，文本创作于 **[多行文本](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** 数据类型，采用多种格式：富文本、简单文本和Markdown。
+AEM GraphQL可以返回在&#x200B;**[多行文本](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;数据类型中创作的文本，该文本具有多种格式：富文本、简单文本和Markdown。
 
 输出所有三种格式会将JSON中文本输出的大小增大三倍。 再加上来自非常宽泛查询的通常较大的结果集，可能会产生非常大的JSON响应，因此需要很长时间才能计算。 最好将输出限制为仅呈现内容所需的文本格式。
 

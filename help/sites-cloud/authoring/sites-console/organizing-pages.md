@@ -15,7 +15,7 @@ ht-degree: 67%
 
 # 组织页面 {#creating-and-organizing-pages}
 
-了解如何使用AEM整理您的网站。 了解如何组织页面后，您可以 [创建新页面](/help/sites-cloud/authoring/sites-console/creating-pages.md) 和 [管理现有页面。](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+了解如何使用AEM整理您的网站。 了解如何组织页面后，您可以[创建新页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)和[管理现有页面。](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 
 {{edge-delivery-authoring}}
 
@@ -30,7 +30,7 @@ ht-degree: 67%
 
 网站的结构可被认为是保留您的内容页面的树。这些内容页面的名称用于组成 URL，而标题则会在查看页面内容时显示出来。
 
-以下显示了 [WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans) 网站上的滑板场相关文章(`la-skateparks`)已访问：
+以下显示了[WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)网站上的一个示例，该网站上有一篇关于滑板场(`la-skateparks`)的文章：
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -51,7 +51,7 @@ ht-degree: 67%
    /...
 ```
 
-此结构可从以下位置查看： [**站点** 控制台，](/help/sites-cloud/authoring/sites-console/introduction.md) 您可以在其中导航浏览网站的各个页面，并对页面执行操作。
+此结构可以从&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中查看，您可以在此控制台中导航浏览网站的各个页面，并对这些页面执行操作。
 
 ## 页面命名惯例 {#page-naming-conventions}
 
@@ -77,7 +77,7 @@ ht-degree: 67%
 >
 >另请注意，某些浏览器（例如旧版本的 IE）只能接受一定长度的 URL，因此还有技术原因需缩短页面名称。
 
-创建页面时，AEM [按照约定验证页面名称](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR强制实施。
+创建页面时，AEM [将依据AEM和JCR实行的惯例](/help/implementing/developing/introduction/naming-conventions.md)验证页面名称。
 
 允许使用的字符最少包括：
 
@@ -95,7 +95,7 @@ ht-degree: 67%
 
 ### 标题 {#title}
 
-如果您只提供页面 **标题** 创建页面时，AEM将派生页面 **名称** 来自此字符串和 [根据惯例验证名称](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR强制实施。
+如果您在创建页面时只提供页面&#x200B;**Title**，则AEM将从此字符串派生页面&#x200B;**Name**，然后[根据AEM和JCR实行的约定](/help/implementing/developing/introduction/naming-conventions.md)验证该名称。
 
 虽然接受包含无效字符的&#x200B;**标题**&#x200B;字段，但派生的名称会将无效的字符替换掉。例如：
 
@@ -106,7 +106,7 @@ ht-degree: 67%
 
 ### 名称 {#name}
 
-当您提供页面时 **名称** 创建页面时，AEM [按照约定验证名称](/help/implementing/developing/introduction/naming-conventions.md) 由AEM和JCR强制实施。 您在&#x200B;**名称**&#x200B;字段中无法提交无效的字符。AEM 检测到无效字符时，该字段会突出显示，并提供有说明性消息。
+当您在创建页面时提供页面&#x200B;**Name**&#x200B;时，AEM [将依据AEM和JCR实行的约定](/help/implementing/developing/introduction/naming-conventions.md)验证此名称。 您在&#x200B;**名称**&#x200B;字段中无法提交无效的字符。AEM 检测到无效字符时，该字段会突出显示，并提供有说明性消息。
 
 ![输入无效页面名称的示例](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -118,19 +118,19 @@ ht-degree: 67%
 
 ## 模板 {#templates}
 
-在AEM中， [模板](/help/sites-cloud/authoring/sites-console/templates.md) 是一种专门化的页面类型，用作正在创建的任何新页面的基础。
+在AEM中，[模板](/help/sites-cloud/authoring/sites-console/templates.md)是一种特殊类型的页面，用作正在创建的任何新页面的基础。
 
 该模板定义了页面的结构，其中包括缩略图和其他属性。例如，您可能会有产品页面、站点地图和联系信息的单独模板。模板包括各个[组件](#components)。
 
 AEM 附带了一些现成的模板。可用模板取决于单个网站。关键的字段如下：
 
-* **标题**  — 在生成的网页上显示的标题
-* **名称**  — 在命名页面时使用
-* **模板**  — 可在生成新页面时使用的模板列表
+* **标题** — 生成的网页上显示的标题
+* **名称** — 在命名页面时使用
+* **模板** — 可在生成新页面时使用的模板列表
 
 ## 组件 {#components}
 
-[组件](/help/implementing/developing/components/overview.md) 是AEM提供的元素，以便您可以添加特定类型的内容。 AEM附带一系列现成的组件，称为 [核心组件、](/help/implementing/developing/components/overview.md#core-components) 功能齐全。 组件的一些示例包括：
+[组件](/help/implementing/developing/components/overview.md)是AEM提供的元素，用于添加特定类型的内容。 AEM附带一系列开箱即用的组件，称为[核心组件，](/help/implementing/developing/components/overview.md#core-components)，它们提供了全面的功能。 组件的一些示例包括：
 
 * 文本
 * 图像

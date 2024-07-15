@@ -1,5 +1,5 @@
 ---
-title: 如何将资源导入和导出到 [!DNL AEM Forms]？
+title: 如何将资产导入和导出到 [!DNL AEM Forms]？
 description: 了解如何将DocuSign与自适应表单一起使用来收集电子签名。
 source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
 workflow-type: tm+mt
@@ -11,32 +11,32 @@ ht-degree: 0%
 
 # 导入和导出资源 {#importing-and-exporting-assets-to-aem-forms}
 
-您可以在不同的页面之间移动表单、主题、模板、文档片段、主题和其他资源 [!DNL AEM Forms] 实例。 将系统或从开发或暂存服务器向生产服务器迁移表单时，需要执行此类移动。
+您可以在不同[!DNL AEM Forms]实例之间移动表单、主题、模板、文档片段、主题和其他资源。 将系统或从开发或暂存服务器向生产服务器迁移表单时，需要执行此类移动。
 
-对于通过以下方式上传和导入的资产： [!DNL AEM Forms] UI受支持，建议使用Forms UI进行导出或导入。 不建议使用AEM包管理器导出或导入此类资源。
+对于支持通过[!DNL AEM Forms] UI上载和导入的资源，建议使用Forms UI进行导出或导入。 不建议使用AEM包管理器导出或导入此类资源。
 
 ## 下载或上传Forms &amp; Documents资源 {#download-or-upload-forms-amp-documents-assets}
 
-[!DNL AEM Forms] 用户界面允许您将资源下载为AEM CRX包或二进制文件，从而从AEM实例导出资源。 然后，您可以将下载的AEM CRX包或二进制文件导入到另一个AEM实例中。
+通过[!DNL AEM Forms]用户界面，您可以通过将资源下载为AEM CRX包或二进制文件来从AEM实例导出资源。 然后，您可以将下载的AEM CRX包或二进制文件导入到另一个AEM实例中。
 
-导出和导入方式 [!DNL AEM Forms] 所有资产（自适应表单模板和自适应表单内容策略除外）都支持用户界面。 因此，从导出自适应表单时 [!DNL AEM Forms] UI、相关的自适应表单模板和内容策略不会像其他相关资产一样自动导出。
+除自适应表单模板和自适应表单内容策略之外，所有资产都支持通过[!DNL AEM Forms]用户界面导出和导入。 因此，在从[!DNL AEM Forms] UI导出自适应表单时，不会像其他相关的资产一样自动导出相关的自适应表单模板和内容策略。
 
-对于这些资源类型，必须使用AEM包管理器在源AEM服务器上创建CRX包，并在目标服务器上安装该包。 有关创建和安装软件包的信息，请参见 [部署到AEMas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html).
+对于这些资源类型，必须使用AEM包管理器在源AEM服务器上创建CRX包，并在目标服务器上安装该包。 有关创建和安装包的信息，请参阅[部署到AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)。
 
 ### 下载Forms和文档资源 {#download-forms-amp-documents-assets}
 
 要下载Forms和文档资源，请执行以下操作：
 
-1. 登录到 [!DNL AEM Forms] 实例。
-1. 选择Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标>导航 ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
-1. 选择表单资源并选择 **[!UICONTROL 下载]** 图标。
-1. 在下载资产中，选择以下选项之一，然后选择 **[!UICONTROL 下载]**.
+1. 登录到[!DNL AEM Forms]实例。
+1. 选择Experience Manager![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/Smock_Compass_18_N.svg)图标> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
+1. 选择表单资源并选择&#x200B;**[!UICONTROL 下载]**&#x200B;图标。
+1. 在下载资产中，选择以下选项之一，然后选择&#x200B;**[!UICONTROL 下载]**。
 
-   * **下载为CRX包：** 使用选项从下载和移动所有选定的资源和相关依赖项 [!DNL AEM Forms] 实例到另一个实例。 它将所有资源和文件夹下载为crx包。 任何表单资源，包括在AEM(自适应Forms和自适应表单片段)中创作的表单、PDF文档和资源（XSD、XFS、图像）都可从以下位置作为包下载： [!DNL AEM Forms] UI。
+   * **下载为CRX包：**&#x200B;使用选项从[!DNL AEM Forms]实例下载所有选定的资源和相关依赖项并将其移动到另一个实例。 它将所有资源和文件夹下载为crx包。 任何表单资源，包括在AEM(Adaptive Forms和自适应表单片段)、PDF文档和资源（XSD、XFS、图像）中创作的表单，都可以从[!DNL AEM Forms] UI中作为包下载。
 将资源下载为包的优势在于，它还可以下载选定要下载的资源已使用的资源。 例如，如果您有一个自适应表单，该表单使用表单模板、XSD和图像。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也会下载。
 
-   * **将资产下载为二进制文件：** 使用选项可仅下载表单模板(XDP)、PDF forms(PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它将具有二进制文件的表单资源(如XSD、XDP、图像、PDF和XDP)下载为.zip文件。
-您无法通过下载自适应Forms、自适应表单片段和主题 **[!UICONTROL 将资产下载为二进制文件]** 选项。 要下载这些资源，您应使用 **[!UICONTROL 下载为CRX包]** 选项。
+   * **将资源下载为二进制文件：**使用选项仅下载表单模板(XDP)、PDF forms(PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它将具有二进制文件的表单资源(如XSD、XDP、图像、PDF和XDP)下载为.zip文件。
+无法使用**[!UICONTROL 以二进制文件格式下载资源]**&#x200B;选项下载自适应Forms、自适应表单片段和主题。 要下载这些资源，您应该使用&#x200B;**[!UICONTROL 下载为CRX包]**&#x200B;选项。
 
    选定的资产将下载为存档（.zip文件）。
 
@@ -48,12 +48,12 @@ ht-degree: 0%
 
 要上传Forms和文档资源，请执行以下操作：
 
-1. 登录到 [!DNL AEM Forms] 实例。
-1. 选择Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标>导航 ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
-1. 选择 **创建** >**文件上传**. 此时会显示上传表单或资源包对话框。
-1. 在对话框中，浏览并选择要导入的软件包或存档。 您还可以选择PDF文档、XSD、图像、样式表和XDP表单。 选择 **[!UICONTROL 打开]**. 您选择的文件夹或文件名不得包含任何特殊字符。
+1. 登录到[!DNL AEM Forms]实例。
+1. 选择Experience Manager![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/Smock_Compass_18_N.svg)图标> **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
+1. 选择&#x200B;**创建** >**文件上传**。 此时会显示上传表单或资源包对话框。
+1. 在对话框中，浏览并选择要导入的软件包或存档。 您还可以选择PDF文档、XSD、图像、样式表和XDP表单。 选择&#x200B;**[!UICONTROL 打开]**。 您选择的文件夹或文件名不得包含任何特殊字符。
 
-   在对话框中，验证要上传的资源的详细信息，然后选择 **[!UICONTROL 上传]**.
+   在该对话框中，验证要上传的资源的详细信息，然后选择&#x200B;**[!UICONTROL 上传]**。
 
    如果上传现有的表单资源，则会更新该资源。
 
@@ -63,17 +63,17 @@ ht-degree: 0%
 
 ## 下载或上传主题 {#downloading-or-uploading-a-theme}
 
-替换为 [!DNL AEM Forms]，您可以创建、下载或上传主题。 创建主题的方式与创建表单、文档和信件等其他资产类似。 您可以创建主题，下载主题，然后将其上传到单独的实例上以重复使用。 有关主题的更多信息，请参阅 [主题](themes.md) 在 [!DNL AEM Forms].
+通过[!DNL AEM Forms]，您可以创建、下载或上传主题。 创建主题的方式与创建表单、文档和信件等其他资产类似。 您可以创建主题，下载主题，然后将其上传到单独的实例上以重复使用。 有关主题的更多信息，请参阅[!DNL AEM Forms]中的[主题](themes.md)。
 
 ### 下载主题 {#downloading-a-theme}
 
-您可以在中导出主题 [!DNL AEM Forms] 您可在其他项目或实例中使用的任何其他插件。 AEM允许您将主题下载为zip文件，并可在实例上上上传。
+您可以导出[!DNL AEM Forms]中在其他项目或实例中使用的主题。 AEM允许您将主题下载为zip文件，并可在实例上上上传。
 
 要下载主题，请执行以下操作：
 
-1. 登录到 [!DNL AEM Forms] 实例。
-1. 选择Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 图标>导航 ![指南针](assets/Smock_Compass_18_N.svg) 图标> **[!UICONTROL Forms]** > **[!UICONTROL 主题]**.
-1. 选择主题并选择 **[!UICONTROL 下载]**. 主题将下载为存档（.zip文件）。
+1. 登录到[!DNL AEM Forms]实例。
+1. 选择Experience Manager![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/Smock_Compass_18_N.svg)图标> **[!UICONTROL Forms]** > **[!UICONTROL 主题]**。
+1. 选择主题，然后选择&#x200B;**[!UICONTROL 下载]**。 主题将下载为存档（.zip文件）。
 
 ### 上传主题 {#uploading-a-theme}
 
@@ -81,9 +81,9 @@ ht-degree: 0%
 
 要上传主题，请执行以下操作：
 
-1. 在Experience Manager中，导航到 **[!UICONTROL Forms]** > **[!UICONTROL Forms主题]**.
-1. 在“主题”页面中，单击 **[!UICONTROL Forms创建]** > **[!UICONTROL Forms文件上传]**.
-1. 在“文件上传”提示符下，浏览并选择计算机上的主题包，然后单击 **[!UICONTROL Forms上传]**. 主题已上传。
+1. 在Experience Manager中，导航到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms主题]**。
+1. 在“主题”页面中，单击&#x200B;**[!UICONTROL Forms创建]** > **[!UICONTROL Forms文件上传]**。
+1. 在“文件上传”提示下，浏览并选择计算机上的主题包，然后单击&#x200B;**[!UICONTROL Forms上传]**。 主题已上传。
 
 <!--
 
@@ -162,13 +162,13 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 您可以使用AEM包管理器导出工作流应用程序。 此过程如下所示：
 
-1. 打开 [!DNL AEM Forms] 包管理器。
-1. 单击 **[!UICONTROL 创建包]**. 此 **[!UICONTROL 新建包]** 对话框。
+1. 打开[!DNL AEM Forms]包管理器。
+1. 单击&#x200B;**[!UICONTROL 创建包]**。 出现&#x200B;**[!UICONTROL 新包]**&#x200B;对话框。
 1. 指定包的名称、版本和组。 单击&#x200B;**[!UICONTROL 确定]**。
-1. 单击 **[!UICONTROL 编辑]** 然后打开 **[!UICONTROL 过滤器]** 选项卡。 单击 **[!UICONTROL 添加筛选器]**. 指定工作流应用程序的路径。 例如，/etc/fd/dashboard/startpoints/homemortgage。 单击 **[!UICONTROL 添加规则]**.
+1. 单击&#x200B;**[!UICONTROL 编辑]**&#x200B;并打开&#x200B;**[!UICONTROL 筛选器]**&#x200B;选项卡。 单击&#x200B;**[!UICONTROL 添加筛选器]**。 指定工作流应用程序的路径。 例如，/etc/fd/dashboard/startpoints/homemortgage。 单击&#x200B;**[!UICONTROL 添加规则]**。
 
-1. 打开 **[!UICONTROL 高级]** 选项卡。 选择 **[!UICONTROL 合并]** 或 **[!UICONTROL 覆盖]** 在ACL处理字段中。 单击&#x200B;**[!UICONTROL 保存]**。
-1. 单击 **[!UICONTROL 生成]** 以创建包。
+1. 打开&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。 在ACL处理字段中选择&#x200B;**[!UICONTROL 合并]**&#x200B;或&#x200B;**[!UICONTROL 覆盖]**。 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击&#x200B;**[!UICONTROL 生成]**&#x200B;以创建包。
 
    生成包后，您可以下载包并将其导入其他服务器。 工作流应用程序会出现在上传包的服务器上。
 
@@ -178,19 +178,19 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 ## 文件夹和组织资源 {#folders-and-organizing-assets}
 
-[!DNL AEM Forms] 用户界面使用文件夹排列资源。 这些文件夹用于排列在中创建的资源 [!DNL AEM Forms] 用户界面。 您可以重命名、创建子文件夹并将资源和文档存储在这些文件夹中。 在文件夹中组织文档和资产，可让您将文件分组在一起以便于管理。 您可以选择文件夹，然后选择下载或删除该文件夹。
+[!DNL AEM Forms]用户界面使用文件夹排列资源。 这些文件夹用于排列在[!DNL AEM Forms]用户界面中创建的资源。 您可以重命名、创建子文件夹并将资源和文档存储在这些文件夹中。 在文件夹中组织文档和资产，可让您将文件分组在一起以便于管理。 您可以选择文件夹，然后选择下载或删除该文件夹。
 
 要创建文件夹，请完成以下步骤：
 
 ### 创建文件夹 {#create-a-folder}
 
-1. 登录到 [!DNL AEM Forms] 用户界面位于 `https://<server>:<port>/aem/forms.html`.
+1. 登录到`https://<server>:<port>/aem/forms.html`上的[!DNL AEM Forms]用户界面。
 1. 导航到要创建文件夹的位置。
-1. 选择 **[!UICONTROL 创建]** > **[!UICONTROL 文件夹]**.
+1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 文件夹]**。
 1. 输入以下详细信息：
 
-   * **标题：** 文件夹的显示名称
-   * **名称：** *（必需）* 要在存储库中存储文件夹的节点名称
+   * **标题：**&#x200B;文件夹的显示名称
+   * **名称：** *（必需）*&#x200B;要将文件夹存储在存储库中的节点名称
 
    >[!NOTE]
    >
@@ -198,7 +198,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 1. 具有您定义的标题的新文件夹将显示在资产列表中的当前位置。
 
-   如果存在具有指定名称的文件夹，则提交会失败并出现错误。 您可以通过将鼠标悬停在错误上来查看错误消息 ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) 显示在“名称”字段旁边的图标。
+   如果存在具有指定名称的文件夹，则提交会失败并出现错误。 您可以将鼠标悬停在名称字段旁边显示的错误![aem6forms_error_alert](assets/Smock_Alert_18_N.svg)图标上，以查看错误消息。
 
    您可以选择创建的文件夹，以进入该文件夹，并在该文件夹中创建资源或文件夹。 此外，您还可以选择一个文件夹，并选择将该文件夹排入下载队列、删除或编辑其名称。
 

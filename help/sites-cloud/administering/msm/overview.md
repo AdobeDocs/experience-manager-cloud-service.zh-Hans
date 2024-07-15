@@ -33,7 +33,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->MSM 也可用于资源，包括内容片段。请参阅 [使用MSM对资产重用内容片段](/help/assets/reuse-assets-using-msm.md) （只能通过“资产”控制台使用）。
+>MSM 也可用于资源，包括内容片段。请参阅[使用MSM为Assets重用内容片段](/help/assets/reuse-assets-using-msm.md)(只能通过Assets控制台提供)。
 
 ## 可能的情况 {#possible-scenarios}
 
@@ -145,7 +145,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->MSM可同时用于页面和 [体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md) 因为这些片段是体验（页面）的一部分。
+>MSM可与页面和[体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)一起使用，因为这些片段是体验（页面）的一部分。
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->请参阅 [扩展多站点管理器](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) 对象名称的。
+>有关对象名称，请参阅[扩展多站点管理器](/help/implementing/developing/extending/msm.md#overview-of-the-java-api)
 
 ## Live Copy {#live-copies}
 
@@ -194,7 +194,7 @@ MSM Live Copy 是特定站点内容的副本，它保留了与原始源的实时
 
 * `/content/wknd/language-masters/en` 下的内容为源。
 * `/content/wknd/language-masters/en` 下的内容复制到 `/content/wknd/us/en/` 和 `/content/wknd/ca/en` 节点下。这些是 Live Copy。
-* 作者在下方更改页面 `/content/wknd/language-masters/en`.
+* 作者更改`/content/wknd/language-masters/en`下的页面。
 * 触发后，MSM 会将这些更改同步到 Live Copy。
 
 ### Live Copy – 构图 {#live-copies-composition}
@@ -324,11 +324,11 @@ Live Copy 中的每个页面和组件均通过实时关系与其源页面和组�
 1. 开发源站点的内容。
 1. 决定要使用的转出配置。
 
-   1. MSM [安装多个转出配置](live-copy-sync-config.md#installed-rollout-configurations) 可满足多个用例的要求。
-   1. 或者，您可以 [创建转出配置](live-copy-sync-config.md#creating-a-rollout-configuration) 如有必要。
+   1. MSM [安装了多个转出配置](live-copy-sync-config.md#installed-rollout-configurations)，可满足多个用例。
+   1. 如果需要，您可以[创建转出配置](live-copy-sync-config.md#creating-a-rollout-configuration)。
 
 1. 决定需要[指定要使用的转出配置](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)并按需配置的情况。
-1. 如有必要， [创建Blueprint配置](creating-live-copies.md#creating-a-blueprint-configuration) 标识Live Copy的源内容。
+1. 如有必要，[创建Blueprint配置](creating-live-copies.md#creating-a-blueprint-configuration)以标识Live Copy的源内容。
 1. [创建 Live Copy。](creating-live-copies.md#creating-a-live-copy)
 1. 根据需要更改源内容。您应采用您组织已制定的常规内容审查和审批流程。
 1. [转出](creating-live-copies.md#rolling-out-a-blueprint) Blueprint，或[将 Live Copy 与更改同步](creating-live-copies.md#synchronizing-a-live-copy)。

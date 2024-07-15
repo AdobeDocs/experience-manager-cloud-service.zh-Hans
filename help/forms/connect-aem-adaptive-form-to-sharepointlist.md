@@ -1,6 +1,6 @@
 ---
-title: 如何将AEM自适应表单连接到Microsoft&reg； SharePoint List？
-description: 将自适应表单连接到Microsoft&reg； SharePoint列表。 了解如何配置Microsoft&reg； SharePoint列表以及使用配置创建表单数据模型(FDM)。 此外，您还可了解如何将FDM与自适应表单相集成。
+title: 如何将AEM自适应表单连接到Microsoft&amp；reg； SharePoint列表？
+description: 将自适应表单连接到Microsoft&amp；reg； SharePoint List。 了解如何配置Microsoft&amp；reg； SharePoint列表以及使用配置创建表单数据模型(FDM)。 此外，您还可了解如何将FDM与自适应表单相集成。
 role: User, Developer
 keywords: 将AEM自适应表单连接到Microsoft SharePoint列表，将自适应表单连接到Microsoft SharePoint列表，将AEM自适应表单集成到Microsoft SharePoint列表，将自适应表单集成到Microsoft SharePoint列表，将自适应表单中的数据提交到SharePoint列表，将AEM工作流提交到SharePoint列表。
 hide: true
@@ -17,12 +17,12 @@ ht-degree: 4%
 
 <span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
-**Microsoft®SharePoint**：Microsoft® SharePoint通过为所有团队、部门和部门提供动态且高效的团队站点，实现了协作。 它可用于存储、组织、共享和访问使用任何Web浏览器(例如Microsoft®Edge、Internet Explorer、Chrome或Firefox)从任何设备获取的信息。 的两个主要组成部分 **Microsoft®SharePoint** 为：
+**Microsoft® SharePoint**： Microsoft® SharePoint通过为所有团队、部门和部门提供动态、高效的团队网站而支持协作。 它可用于存储、组织、共享和访问使用任何Web浏览器(例如Microsoft、Edge®Internet Explorer、Chrome或Firefox)从任何设备获取的信息。 **Microsoft®SharePoint**&#x200B;的两个主要组件是：
 
-* **Microsoft® SharePoint文档库**：Microsoft® SharePoint文档库显示文件和文件夹及其关键信息的列表，例如上次修改日期和文件所有者。 此功能使文件的组织和导航更轻松。
-有关如何集成 **Microsoft® SharePoint文档库** 对于自适应表单，请参阅 [自适应表单提交操作](/help/forms/configuring-submit-actions.md#submit-to-sharepoint) 文章。
+* **Microsoft® SharePoint Document Library**： Microsoft® SharePoint Document Library显示文件和文件夹列表及其关键信息，例如上次修改日期和文件所有者。 此功能使文件的组织和导航更轻松。
+有关如何将**Microsoft® SharePoint文档库**&#x200B;与自适应表单集成的说明，请参阅[自适应表单提交操作](/help/forms/configuring-submit-actions.md#submit-to-sharepoint)文章。
 
-* **Microsoft® SharePoint列表**：Microsoft®SharePoint列表是数据的集合。 您可以为不同类型的数据添加列，并创建视图以有效地显示数据。 您可以轻松对列表进行分组、筛选、排序和格式化。
+* **Microsoft® SharePoint列表**： Microsoft® SharePoint列表是数据的集合。 您可以为不同类型的数据添加列，并创建视图以有效地显示数据。 您可以轻松对列表进行分组、筛选、排序和格式化。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
@@ -42,7 +42,7 @@ ht-degree: 4%
 
 ## 将自适应表单连接到Microsoft® SharePoint列表 {#connect-af-sharepoint-list}
 
-要将Microsoft® SharePoint列表集成到您的自适应表单 [配置自适应表单以使用表单数据模型(FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+要将Microsoft® SharePoint列表集成到您的自适应表单[将自适应表单配置为使用表单数据模型(FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
 将自适应表单配置为使用表单数据模型(FDM)后，您可以：
 
@@ -69,7 +69,7 @@ ht-degree: 4%
 1. [配置提交操作以调用AEM Workflow](/help/forms/configuring-submit-actions.md#invoke-an-aem-workflow)
 
 
-了解如何 [使用AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html) 以协作、管理和处理自适应表单中的内容。
+了解如何[使用AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html)在自适应表单中协作、管理和处理内容。
 
 ## 最佳实践 {#best-practices}
 

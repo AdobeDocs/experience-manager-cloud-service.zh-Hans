@@ -58,7 +58,7 @@ Edge Delivery 是一组新的可组合服务，专注于最大限度地发挥内
 
 ### 管理视图中的新增功能 {#admin-view-features}
 
-* **将AEM Assetsas a Cloud Service与基于文档的创作功能集成以用于Edge Delivery Services**：将AEM Assets与基于文档的创作功能集成以便Edge Delivery Services能够让网站作者执行以下操作 [在AEM Assets Word或Google文档中创作文档时，使用Microsoft存储库中可用的图像](/help/edge/using.md#integrate-assets-edge).
+* **将AEM Assetsas a Cloud Service与基于文档的创作相集成，以便Edge Delivery Services**：将AEM Assets与基于文档的创作相集成，以便Edge Delivery Services在Microsoft Word或Google文档中创作文档时，能够[使用AEM Assets存储库中可用的图像](/help/edge/using.md#integrate-assets-edge)。
 
 * **提取 ZIP 存档**：可选择在 Experience Manager 中管理的 ZIP 存档，并且无需下载文件，即可[将文件直接提取到 Experience Manager 中](/help/assets/manage-digital-assets.md#extract-zip-archives)。
 

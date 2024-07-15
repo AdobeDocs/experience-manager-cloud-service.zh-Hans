@@ -48,7 +48,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 >
 >如果要查询多个引用的片段，则建议不要让各种片段模型具有具有相同名称但类型不同的字段名称。
 >
->有关更多详细信息，请参阅 [用于内容片段的AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
+>有关详细信息，请参阅用于内容片段的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### 内容片段模型 – 属性 {#content-fragment-model-properties}
 
@@ -206,10 +206,10 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 * **呈现为**
 
-  用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。 时间 **多个字段** 用于定义项目的最小和最大数量 — 请参阅 [验证](#validation) 以了解更多详细信息。
+  用于在片段中实现/呈现字段的各种选项。 通常，这允许您定义作者将看到字段的单个实例，还是允许作者创建多个实例。 当使用&#x200B;**多个字段**&#x200B;时，您可以定义项目的最小和最大数量 — 有关详细信息，请参阅[验证](#validation)。
 
 * **字段标签**
-输入 **字段标签** 自动生成 **属性名称**，如有必要，可以手动更新。
+输入**字段标签**&#x200B;将自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有附加的验证字段。请参阅[验证](#validation)，了解更多详细信息。
@@ -264,14 +264,14 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
    * 只能引用预定义的宽度和/或高度范围（以像素为单位）内的图像。
 * **片段引用**
    * 为特定的内容片段模型测试。
-* **最小项目数** / **项目的最大数量**
+* **最小项数** / **最大项数**
 
-  已定义为 **多个字段** (设置 **呈现为**)提供了以下选项：
+  已定义为&#x200B;**多个字段**（使用&#x200B;**渲染为**&#x200B;设置）的字段具有以下选项：
 
    * **最小项目数**
-   * **项目的最大数量**
+   * **最大项数**
 
-  这些将在中验证 [内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md).
+  已在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中验证这些内容。
 
 ## 使用引用表单嵌套内容 {#using-references-to-form-nested-content}
 
@@ -293,15 +293,17 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 >
 AEM 对于以下各项具有重复保护：
 >
-* 内容引用这会阻止用户添加对当前片段的引用，并可能导致出现空的片段引用选取器对话框。
+* 内容引用
+这会阻止用户添加对当前片段的引用，并可能导致出现空的片段引用选取器对话框。
 >
-* GraphQL中的片段引用如果您创建的深层查询返回多个相互引用的内容片段，那么它在第一次出现时返回空值。
+* GraphQL中的片段引用
+如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时返回null。
 
 >[!CAUTION]
 >
 如果要查询多个引用的片段，则建议不要让各种片段模型具有具有相同名称但类型不同的字段名称。
 >
-有关更多详细信息，请参阅 [用于内容片段的AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
+有关详细信息，请参阅用于内容片段的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### 内容引用 {#content-reference}
 

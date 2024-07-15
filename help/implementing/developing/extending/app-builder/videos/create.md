@@ -38,6 +38,6 @@ ht-degree: 0%
 
 ## 构建、运行和测试您的应用程序
 
-了解如何构建、运行和测试您的App Builder应用程序。
+了解如何构建、运行和测试App Builder应用程序。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)

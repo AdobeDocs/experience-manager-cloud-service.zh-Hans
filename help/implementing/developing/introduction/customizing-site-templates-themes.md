@@ -19,15 +19,15 @@ ht-degree: 25%
 
 为了使AEM管理员能够快速创建适应业务需求的站点，AEM支持使用站点模板和站点主题创建新站点。
 
-* An **AEM站点模板** 通常包含基本站点内容和结构以及站点样式信息（称为站点主题），以便快速启动新站点。 模板具有强大的功能，因为它们可重用和自定义。由于您可以在 AEM 安装中使用多个模板，因此可以灵活地创建不同的站点来满足各种业务需求。
-* An **AEM站点主题** 是一个包，其中包含定义AEM站点样式并符合AEM站点主题结构的CSS、JavaScript和静态资源。
+* **AEM站点模板**&#x200B;通常包含基本站点内容和结构以及站点样式信息（称为站点主题），以便快速启动新站点。 模板具有强大的功能，因为它们可重用和自定义。由于您可以在 AEM 安装中使用多个模板，因此可以灵活地创建不同的站点来满足各种业务需求。
+* **AEM站点主题**&#x200B;是一个包，其中包含定义AEM站点样式并符合AEM站点主题结构的CSS、JavaScript和静态资源。
 
 ## 其他资源 {#additional-resources}
 
-因为 [站点创建](/help/sites-cloud/administering/site-creation/create-site.md) 通常由AEM管理员负责，请参阅管理文档以了解有关自定义站点模板和主题的更多详细信息。
+由于[站点创建](/help/sites-cloud/administering/site-creation/create-site.md)通常由AEM管理员负责，有关自定义站点模板和主题的更多详细信息，请参阅管理文档。
 
-* [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md)  — 了解如何使用AEM站点模板来预定义站点结构和初始内容，以便您快速创建新站点。
-* [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md)  — 了解如何使用AEM站点主题来自定义站点的样式和设计。
+* [站点模板](/help/sites-cloud/administering/site-creation/site-templates.md) — 了解如何使用AEM站点模板来预定义站点结构和初始内容，以便您快速创建新站点。
+* [站点主题](/help/sites-cloud/administering/site-creation/site-themes.md) — 了解如何使用AEM站点主题自定义站点的样式和设计。
 
 >[!TIP]
 >

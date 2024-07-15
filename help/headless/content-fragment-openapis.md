@@ -15,4 +15,4 @@ ht-degree: 1%
 
 内容片段管理API的现代化OpenAPI实施允许开发人员以编程方式对AEM创作执行创建、读取、更新和删除操作，以管理存储在AEM中的内容片段模型和内容片段。 这些API支持许多用例。
 
-的现有用法 [资源HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) for内容片段应迁移到新的内容片段管理OpenAPI。 有关完整文档，请参阅 [内容片段管理API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+用于内容片段的[Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets)的现有使用应迁移到新的内容片段管理OpenAPI。 有关完整文档，请参阅[内容片段管理API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)。

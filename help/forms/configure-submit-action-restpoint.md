@@ -15,13 +15,13 @@ ht-degree: 60%
 
 # 为REST端点提交操作配置自适应表单
 
-使用 **[!UICONTROL 提交到REST端点]** 将提交的数据发布到REST URL的操作。 该 URL 可以属于内部服务器（呈现表单的服务器）或外部服务器。
+使用&#x200B;**[!UICONTROL 提交到REST端点]**&#x200B;操作将提交的数据发布到REST URL。 该 URL 可以属于内部服务器（呈现表单的服务器）或外部服务器。
 
-AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 有关这些选项的更多信息，请参阅 [自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)  文章。
+AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
 
 ## 优点
 
-配置 **[!UICONTROL 提交到REST端点]** 自适应Forms的提交操作包括：
+为自适应Forms配置&#x200B;**[!UICONTROL 提交到REST端点]**&#x200B;提交操作的一些优点包括：
 
 * 它通过RESTful API实现了表单数据与外部系统和服务的无缝集成。
 * 它提供了灵活性，可处理从自适应Forms提交的数据，并支持动态和复杂的数据结构。
@@ -35,8 +35,8 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
 1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
 1. 单击&#x200B;**[!UICONTROL 提交]**&#x200B;选项卡。
-1. 从 **[!UICONTROL 提交操作]** 下拉列表，选择 **[!UICONTROL 提交到Rest端点]**.
-   ![提交到Rest端点的操作配置](/help/forms/assets/submit-action-restendpoint.png)
+1. 从&#x200B;**[!UICONTROL 提交操作]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 提交到Rest终结点]**。
+   提交到Rest终结点的![操作配置](/help/forms/assets/submit-action-restendpoint.png)
 
    要将数据发布到内部服务器，请提供资源的路径。数据将发布到资源的路径。例如，`/content/restEndPoint`。对于此类 POST 请求，将使用提交请求的身份验证信息。
 

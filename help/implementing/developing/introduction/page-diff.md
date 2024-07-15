@@ -17,11 +17,11 @@ ht-degree: 12%
 
 内容创建是一个迭代过程。要进行高效创作，需要能够发现从一次迭代到另一次迭代所发生的更改。逐个查看页面版本的方式效率低下且容易出错。作者希望能够并排比较当前页面与先前版本，并突出显示差异。
 
-页面差异允许用户将当前页面与启动项、先前版本等进行比较。 有关此用户功能的详细信息，请参阅 [页面差异](/help/sites-cloud/authoring/sites-console/page-diff.md).
+页面差异允许用户将当前页面与启动项、先前版本等进行比较。 有关此用户功能的详细信息，请参阅[页面差异](/help/sites-cloud/authoring/sites-console/page-diff.md)。
 
 ## 操作详细信息 {#operation-details}
 
-在比较页面的版本时，用户要比较的先前版本由AEM在后台重新创建，以便于进行比较。 呈现内容需要此以前的版本 [用于并排比较](/help/sites-cloud/authoring/sites-console/page-diff.md).
+在比较页面的版本时，用户要比较的先前版本由AEM在后台重新创建，以便于进行比较。 要呈现内容[以进行并排比较](/help/sites-cloud/authoring/sites-console/page-diff.md)，必须使用该以前的版本。
 
 此重新创建操作由AEM在内部完成，对用户是透明的，无需干预。 但是，查看存储库的管理员(例如，在CRXDE Lite中)会在内容结构中看到这些重新创建的版本。
 

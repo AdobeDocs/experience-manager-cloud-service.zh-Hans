@@ -26,21 +26,21 @@ ht-degree: 21%
 
 ## 添加元数据配置文件 {#adding-a-metadata-profile}
 
-1. 导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据配置文件]**，然后单击 **[!UICONTROL 创建]**.
-1. 输入元数据配置文件的标题，例如示例元数据，然后选择 **[!UICONTROL 提交]**. 此时将显示元数据配置文件的编辑表单。
-1. 单击组件并在 **[!UICONTROL 设置]** 选项卡。 例如，单击 **[!UICONTROL 描述]** 组件并编辑其属性。
-编辑以下属性 **[!UICONTROL 描述]** 组件：
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据配置文件]**，然后单击&#x200B;**[!UICONTROL 创建]**。
+1. 输入元数据配置文件的标题，例如示例元数据，然后选择&#x200B;**[!UICONTROL 提交]**。 此时将显示元数据配置文件的编辑表单。
+1. 单击组件并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中配置其属性。 例如，单击&#x200B;**[!UICONTROL Description]**组件并编辑其属性。
+编辑**[!UICONTROL Description]**&#x200B;组件的以下属性：
 
-   * **[!UICONTROL 字段标签]**  — 元数据属性的显示名称。 仅供用户参考。
-   * **[!UICONTROL 映射到属性]**  — 此属性的值提供资产节点在存储库中保存的相对路径/名称。 该值应始终以下列开头 `./` 因为它指示路径在资产的节点下。
+   * **[!UICONTROL 字段标签]** — 元数据属性的显示名称。 仅供用户参考。
+   * **[!UICONTROL 映射到属性]** — 此属性的值提供资产节点在存储库中保存的相对路径/名称。 该值应始终以`./`开头，因为它指示路径在资产的节点下。
 
-     您为指定的值 **[!UICONTROL 映射到属性]** 将作为属性存储在资产的元数据节点下。 例如，如果您指定`/jcr:content/metadata/dc:desc` 作为的名称 **[!UICONTROL 映射到属性]**， [!DNL Adobe Experience Manager Assets] 存储值 `dc:desc` 在资产的元数据节点处。
+     您为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;指定的值作为属性存储在资产的元数据节点下。 例如，如果您指定`/jcr:content/metadata/dc:desc`作为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的名称，[!DNL Adobe Experience Manager Assets]将值`dc:desc`存储在资产的元数据节点。
 
-   * **[!UICONTROL 默认值]**  — 使用此属性为元数据组件添加默认值。 例如，如果您指定“My description”，则此值将分配给属性 `dc:desc` 在资产的元数据节点处。
+   * **[!UICONTROL 默认值]** — 使用此属性为元数据组件添加默认值。 例如，如果您指定“我的描述”，则此值将分配给资产元数据节点上的属性`dc:desc`。
 
      >[!NOTE]
      >
-     >向新元数据属性(不存在于 `/jcr:content/metadata` 节点)默认不会在资产的属性页面上显示属性及其值。 要在页面上查看新属性，请执行以下操作 [!UICONTROL 属性] 页面，修改相应的架构表单。
+     >默认情况下，向新元数据属性（不存在于`/jcr:content/metadata`节点中）添加默认值不会在资产的“属性”页面上显示该属性及其值。 要在[!UICONTROL 属性]页面上查看新属性，请修改相应的架构表单。
 
 1. （可选）从“构建表单”选项卡中向“编辑表单”添 **[!UICONTROL 加更多组件]** ，然后在“设置”选项卡中配置 **[!UICONTROL 其属性]** 。 “构建表单”选项卡中提供 **[!UICONTROL 以下属性]** :
 
@@ -53,20 +53,20 @@ ht-degree: 21%
 | 日期 | 字段标签，映射到属性，默认值 |
 | 标准标记 | 字段标签、映射到属性、默认值、描述 |
 
-1. 单击 **[!UICONTROL 完成]**. 元数据配置文件将添加到中的配置文件列表 **[!UICONTROL 元数据配置文件]** 页面。
+1. 单击&#x200B;**[!UICONTROL 完成]**。 元数据配置文件已添加到&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面的配置文件列表中。
 
 ## 复制元数据配置文件 {#copying-a-metadata-profile}
 
-1. 从 **[!UICONTROL 元数据配置文件]** 页面上，选择一个元数据配置文件以制作其副本。
-1. 单击 **[!UICONTROL 复制]** 工具栏中。
-1. 在 **[!UICONTROL 复制元数据配置文件]** 对话框，为元数据配置文件的新副本输入标题。
-1. 单击 **[!UICONTROL 复制]**. 元数据配置文件的副本将显示在&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面的配置文件列表中。
+1. 从&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面中，选择一个元数据配置文件以制作其副本。
+1. 单击工具栏中的&#x200B;**[!UICONTROL 复制]**。
+1. 在&#x200B;**[!UICONTROL 复制元数据配置文件]**&#x200B;对话框中，输入元数据配置文件新副本的标题。
+1. 单击&#x200B;**[!UICONTROL 复制]**。 元数据配置文件的副本将显示在&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面的配置文件列表中。
 
 ## 删除元数据配置文件 {#deleting-a-metadata-profile}
 
-1. 从 **[!UICONTROL 元数据配置文件]** 页面上，选择要删除的配置文件。
-1. 单击 **[!UICONTROL 删除元数据配置文件]** 工具栏中。
-1. 在对话框中，单击 **[!UICONTROL 删除]** 以确认删除操作。 元数据配置文件将从列表中删除。
+1. 从&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面中，选择要删除的配置文件。
+1. 单击工具栏中的&#x200B;**[!UICONTROL 删除元数据配置文件]**。
+1. 在对话框中，单击&#x200B;**[!UICONTROL 删除]**&#x200B;以确认删除操作。 元数据配置文件将从列表中删除。
 
 ## 将元数据配置文件应用到文件夹 {#applying-a-metadata-profile-to-folders}
 
@@ -76,7 +76,7 @@ ht-degree: 21%
 
 为其分配了配置文件的文件夹在用户界面中由卡片名称中显示的配置文件名称指示。
 
-如果文件夹已具有您后来更改的现有元数据配置文件，您可以重新处理该文件夹中的资产。 <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+如果文件夹已具有您后来更改的现有元数据配置文件，您可以重新处理该文件夹中的资产。<!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
 ### 将元数据配置文件应用到特定文件夹 {#applying-metadata-profiles-to-specific-folders}
 
@@ -84,31 +84,31 @@ ht-degree: 21%
 
 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-如果文件夹已具有您后来更改的现有视频配置文件，您可以重新处理该文件夹中的资产。 <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+如果文件夹已具有您后来更改的现有视频配置文件，您可以重新处理该文件夹中的资产。<!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
 #### 将元数据配置文件从“配置文件”用户界面应用到文件夹 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. 导航到 **[!UICONTROL 工具>资产>元数据配置文件]**.
+1. 导航到&#x200B;**[!UICONTROL 工具> Assets >元数据配置文件]**。
 1. 选择要应用于一个或多个文件夹的元数据配置文件。
-1. 单击 **[!UICONTROL 将元数据配置文件应用到文件夹]** 并选择一个或多个用于接收新上传资源的文件夹，然后单击 **[!UICONTROL 完成]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 单击&#x200B;**[!UICONTROL 将元数据配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资源的文件夹，然后单击&#x200B;**[!UICONTROL 完成]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
 #### 将元数据配置文件从“属性”应用到文件夹 {#applying-metadata-profiles-to-folders-from-properties}
 
-1. 在左边栏中，单击 **[!UICONTROL 资产]** 然后导航到要将元数据配置文件应用到其中的文件夹。
-1. 在文件夹中，选中复选标记以将其选中，然后选择 **属性**.
-1. 选择 **[!UICONTROL 元数据配置文件]** 选项卡，从下拉菜单中选择配置文件，然后单击 **[!UICONTROL 保存]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 在左边栏中，单击&#x200B;**[!UICONTROL Assets]**，然后导航到要将元数据配置文件应用到其中的文件夹。
+1. 在文件夹上，选中复选标记以将其选中，然后选择&#x200B;**属性**。
+1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，然后从下拉菜单中选择配置文件，然后单击&#x200B;**[!UICONTROL 保存]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
 ### 全局应用元数据配置文件 {#applying-a-metadata-profile-globally}
 
-除了将配置文件应用到文件夹外，您还可以全局应用配置文件，以便上传到的任何内容 [!DNL Experience Manager Assets] 已应用所选配置文件。
+除了将配置文件应用到文件夹外，您还可以全局应用配置文件，以便任何文件夹中上传到[!DNL Experience Manager Assets]的任何内容均已应用选定的配置文件。
 
-如果文件夹已具有您后来更改的现有元数据配置文件，您可以重新处理该文件夹中的资产。 <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
+如果文件夹已具有您后来更改的现有元数据配置文件，您可以重新处理该文件夹中的资产。<!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
-**要全局应用元数据配置文件，请执行以下操作之一**
+**若要全局应用元数据配置文件，请执行下列操作之一**
 
-* 导航到 `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` 并应用相应的配置文件，然后单击 **[!UICONTROL 保存]**.
+* 导航到`https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam`并应用相应的配置文件，然后单击&#x200B;**[!UICONTROL 保存]**。
 
-* 导航到CRXDE Lite以下节点： `/content/dam/jcr:content`. 添加属性 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. 单击&#x200B;**全部保存**。
+* 导航到CRXDE Lite到以下节点： `/content/dam/jcr:content`。 添加属性`metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`。 单击&#x200B;**全部保存**。
 
 ## 从文件夹中删除元数据配置文件 {#removing-a-metadata-profile-from-folders}
 
@@ -118,16 +118,16 @@ ht-degree: 21%
 
 ### 通过“配置文件”用户界面从文件夹中删除元数据配置文件 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. 单击Experience Manager徽标并导航到 **[!UICONTROL 工具>资产>元数据配置文件]**.
+1. 单击Experience Manager徽标并导航到&#x200B;**[!UICONTROL 工具> Assets >元数据配置文件]**。
 1. 选择要从一个或多个文件夹中删除的元数据配置文件。
-1. 单击 **[!UICONTROL 从文件夹中删除元数据配置文件]** 并选择一个或多个要从中删除配置文件的文件夹，然后单击 **[!UICONTROL 完成]**.
+1. 单击&#x200B;**[!UICONTROL 从文件夹中删除元数据配置文件]**，然后选择一个或多个要从中删除配置文件的文件夹，然后单击&#x200B;**[!UICONTROL 完成]**。
 
    您可以确认元数据配置文件不再应用于文件夹，因为该名称不再出现在文件夹名称下方。
 
 ### 通过属性从文件夹中删除元数据配置文件 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. 单击Experience Manager徽标并导航 **[!UICONTROL 资产]** 然后转到要删除元数据配置文件的文件夹。
-1. 在文件夹中，单击复选标记将其选中，然后单击 **[!UICONTROL 属性]**.
+1. 单击Experience Manager徽标并导航&#x200B;**[!UICONTROL Assets]**，然后转到要删除元数据配置文件的文件夹。
+1. 在文件夹上，单击复选标记将其选中，然后单击&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，并从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
 **另请参阅**

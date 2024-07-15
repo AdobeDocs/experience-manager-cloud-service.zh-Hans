@@ -25,7 +25,7 @@ ht-degree: 77%
 
 * [自动保存](#saving-autosaving)，以防止意外丢失编辑内容。
 * [直接上传资源作为内容引用](#reference-images)，而不必将它先上传到资源 DAM。
-* [生成变体](#generate-variations-ai) 使用创作AI根据提示加快内容创建。
+* [生成变体](#generate-variations-ai)以使用生成AI根据提示加速内容创建。
 * [预览](#preview-content-fragment)内容片段投放的所呈现的体验。
 * 可从编辑器[发布](#publish-content-fragment)和[取消发布](#unpublish-content-fragment)。
 * 可在编辑器中[查看和打开关联的语言副本](#view-language-copies)。
@@ -60,11 +60,11 @@ ht-degree: 77%
    * 在&#x200B;**属性**&#x200B;选项卡中，可更新片段或&#x200B;**变体**&#x200B;的&#x200B;**标题**&#x200B;和&#x200B;**描述**
 * 中央面板：显示所选变体的实际字段和内容
    * 使您可编辑内容
-   * 如果 **制表符占位符** 这些字段是在模型内定义的，显示在此处，并可用于导航；它们将会水平显示或作为下拉列表显示。
+   * 如果在模型中定义了&#x200B;**选项卡占位符**&#x200B;字段，则它们将显示在此处，并且可用于导航；它们将会水平显示或作为下拉列表显示。
 
   >[!NOTE]
   >
-  >根据底层模型中的定义，字段可以遵循某些类型 [验证](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >根据基础模型中的定义，字段可以受特定类型的[验证](/help/assets/content-fragments/content-fragments-models.md#validation)的约束。
 
 ![内容片段编辑器 – 概述](assets/cf-authoring-overview.png)
 
@@ -122,7 +122,7 @@ ht-degree: 77%
 
 * 为&#x200B;**主控**&#x200B;内容[创建变体](#create-variation)
 
-* [使用生成变体AI](#generate-variations-ai) 使用Generative AI来使用Adobe为特定用例创建的基于提示的模板。
+* [使用生成变体AI](#generate-variations-ai)使用生成AI来使用Adobe为特定用例创建的基于提示的模板。
 
 * 选择所需的变体以编辑内容
 
@@ -176,7 +176,7 @@ ht-degree: 77%
    >
    >可用的Adobe提示模板现在有限，但在未来版本中将添加更多模板。
 
-   ![导出以生成内容片段中的变体](assets/cfm-generate-variations2.png)
+   ![导出以在内容片段中生成变体](assets/cfm-generate-variations2.png)
 
 1. 通过填写提示来生成内容。 片段中的内容模型将通过GenAI自动用于生成内容。
 
@@ -184,28 +184,28 @@ ht-degree: 77%
    >
    >我们当前仅支持文本字段。
 
-   ![导出以生成内容片段中的变体](assets/cfm-generate-variations3.png)
+   ![导出以在内容片段中生成变体](assets/cfm-generate-variations3.png)
 
 1. 选择所需的生成变体并选择“导出变体”。 确认内容片段变体的名称并选择以下任一项：
 
-   * **导出**：将变体导出到内容片段并保留在生成变体应用程序中。
-   * **导出并打开**：将变量导出到内容片段并打开一个新选项卡，该选项卡显示带有GenAI新变量的内容片段。
+   * **导出**：将变体导出到内容片段，并停留在生成变体应用程序中。
+   * **导出并打开**：将变量导出到内容片段，并打开一个新选项卡，该选项卡显示具有来自GenAI的新变量的内容片段。
 
-     ![导出以生成内容片段中的变体](assets/cfm-generate-variations4.png)
+     ![导出以在内容片段中生成变体](assets/cfm-generate-variations4.png)
 
 1. 生成的变体显示在主内容片段编辑器中。
 
-   ![查看内容片段中的生成变体](assets/cfm-generate-variations5.png)
+   ![在内容片段中查看生成变体](assets/cfm-generate-variations5.png)
 
-您可以了解有关生成变体的更多信息 [此处](/help/generative-ai/generate-variations.md).
+您可以在[此处](/help/generative-ai/generate-variations.md)了解有关生成变体的更多信息。
 
 ### 删除变体 {#delete-variation}
 
 要删除内容片段的变体，请执行以下操作：
 
-    >[！注意]
+    >[！NOTE]
     >
-    >您无法删除**Main**。
+    >您无法删除**Main**.
 
 1. 选择变体。
 
@@ -366,8 +366,8 @@ ht-degree: 77%
 >
 >这不应用于引用以下内容：
 >
->* 内容片段 — 使用 [片段引用](#fragment-references)
->* 图像 — 使用 [参考图像](#reference-images)
+>* 内容片段 — 使用[片段引用](#fragment-references)
+>* 图像 — 使用[参考图像](#reference-images)
 
 ### 查看父引用 {#view-parent-references}
 
@@ -428,11 +428,11 @@ ht-degree: 77%
 
 1. 选择版本旁边的三个圆点图标。
 
-1. 选择 **比较**.
+1. 选择&#x200B;**比较**。
 
 ![内容片段编辑器 — 版本历史记录比较](assets/cf-authoring-version-history-compare.png)
 
-此时将打开一个视图，其中显示内容的当前版本与内容片段的所选先前版本之间的差异。 从 **有更改的变体** 从下拉列表中，您可以选择查看与主内容的差异和/或变体中的内容。
+此时将打开一个视图，其中显示内容的当前版本与内容片段的所选先前版本之间的差异。 从&#x200B;**包含更改的变体**&#x200B;下拉列表中，您可以选择查看与主内容的差异和/或变体内容的差异。
 
 差异以颜色表示：
 
@@ -473,7 +473,7 @@ ht-degree: 77%
 要使用此功能，您首先需要：
 
 * 与您的 IT 团队一起设置外部前端应用程序，该应用程序将使用其 JSON 输出来渲染内容片段。
-* 当设置外部前端应用程序时， **默认预览URL模式** 必须定义为 [相应内容片段模型的属性](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties).
+* 设置外部前端应用程序时，**默认预览URL模式**&#x200B;必须定义为相应内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)的[属性。
 
 在定义 URL 后，**预览**&#x200B;按钮将处于活动状态。您可以选择此按钮来启动外部应用程序（在单独的选项卡中）以渲染内容片段。
 
@@ -542,7 +542,7 @@ ht-degree: 77%
    <td><p> <img src="assets/cf-authoring-json-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>选项卡占位符</b></p><p><b>选项卡占位符</b>显示在左侧面板中，但未用实际图标表示。<br>它也显示在中心面板中，水平显示或下拉列表（当有太多内容无法水平显示时）中。</p> </td>
+   <td><p><b>选项卡占位符</b></p><p><b>选项卡占位符</b>显示在左侧面板中，但未用实际图标表示。<br>它也显示在中心面板中，水平显示或下拉列表（当有太多无法水平显示时）。</p> </td>
    <td><p> <img src="assets/cf-authoring-tab-icon.png"> </p></td>
   </tr>
  </tbody>

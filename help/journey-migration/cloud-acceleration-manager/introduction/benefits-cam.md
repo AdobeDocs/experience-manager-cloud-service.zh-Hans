@@ -27,13 +27,13 @@ ht-degree: 34%
 
    * 通过易于阅读的结果可视化表示形式，简化对当前实例的评估。
 
-   * 借助详细的自定义报告，评估和了解迁移到AEMas a Cloud Service的预计复杂性。
+   * 借助详细的自定义报告，评估和了解迁移到AEM as a Cloud Service的预计复杂性。
 
 1. 使用端到端指导简化移动过程：
 
    * 使用内置的智能功能管理迁移历程，并在迁移过程中提供上下文帮助。
 
-   * 查看并确定AEMas a Cloud Service中不支持的区域或需要重构以确保兼容性的区域。
+   * 查看并确定AEM as a Cloud Service中不支持的区域或需要重构以确保兼容性的区域。
 
 1. 优化工作：
 
@@ -41,4 +41,4 @@ ht-degree: 34%
 
 ## 后续内容 {#whats-next}
 
-在您了解什么是Cloud Acceleration Manager后，您现在可以使用和 [Cloud Acceleration Manager入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=zh-Hans).
+一旦您了解了Cloud Acceleration Manager的内容，您就可以随时使用和[开始使用Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=zh-Hans)。

@@ -18,6 +18,6 @@ ht-degree: 6%
 * [JCR节点类型](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling节点类型](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-除此之外。 AEM提供了一系列自定义节点类型。 对于包含所有关联属性的最新列表， [使用CRXDE](/help/implementing/developing/tools/crxde.md) 浏览AEM存储库中的以下路径：
+除此之外。 AEM提供了一系列自定义节点类型。 对于包含所有关联属性的最新列表，[使用CRXDE](/help/implementing/developing/tools/crxde.md)浏览AEM存储库中的以下路径：
 
 `/jcr:system/jcr:nodeTypes`

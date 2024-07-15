@@ -1,6 +1,6 @@
 ---
-title: ’[!DNL Live Search] 弹出CIF组件
-description: 使用CIF组件启用 [!DNL Live Search] AEM站点上的弹出组件
+title: “[!DNL Live Search]弹出框CIF组件”
+description: 使用CIF组件在AEM站点上启用 [!DNL Live Search] 弹出组件
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] 弹出窗口CIF组件 {#live-search-popover}
+# [!DNL Live Search]弹出框CIF组件 {#live-search-popover}
 
-此 [!DNL Live Search] 弹出窗口是包含 [!DNL Live Search] 在搜索字段中键入结果时显示的结果。
+[!DNL Live Search]弹出框是在搜索字段中键入内容时包含[!DNL Live Search]个结果的元素。
 本主题介绍如何将此组件集成到AEM站点。
 
 ## 文件结构 {#file-strucure}
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 
-  创建 `.content.xml` 文件：
+  创建`.content.xml`文件：
 
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css.txt
 
-  创建 `css.txt` 文件：
+  创建`css.txt`文件：
 
   ```text
   #base=css
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css/searchbar.css
 
-  创建 `searchbar.css` 文件：
+  创建`searchbar.css`文件：
 
 
   ```css
@@ -140,7 +140,7 @@ ht-degree: 0%
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js.txt
 
-  创建 `js.txt` 文件：
+  创建`js.txt`文件：
 
   ```text
   js/searchbar.js
@@ -148,7 +148,7 @@ ht-degree: 0%
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js
 
-  创建 `searchbar.js` 文件：
+  创建`searchbar.js`文件：
 
   ```javascript
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -494,7 +494,7 @@ ht-degree: 0%
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/searchbar.html
 
-  创建 `searchbar.html` 文件：
+  创建`searchbar.html`文件：
 
   ```html
   <!-- Livesearch popover -->
@@ -556,7 +556,7 @@ ht-degree: 0%
 
 * ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json
 
-  创建 `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` 文件：
+  创建`com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json`文件：
 
   ```json
   {
@@ -570,7 +570,7 @@ ht-degree: 0%
 
    * ui.tests/test-module/specs/venia/searchbar.js
 
-     编辑 `searchbar.js` 文件，第19-20行，更改 `describe` 到 `describe.skip`：
+     编辑`searchbar.js`文件，第19-20行，将`describe`更改为`describe.skip`：
 
      ```javascript
      describe.skip('Venia Searchbar Component', () => {

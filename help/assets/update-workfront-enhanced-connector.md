@@ -11,20 +11,20 @@ ht-degree: 0%
 
 ---
 
-# 更新 [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
+# 更新[!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
 
-[!UICONTROL Experience Manager Assetsas a Cloud Service] 可让您更新 [!DNL Workfront for Experience Manager enhanced connector] 从以前的版本到最新的版本。
+[!UICONTROL Experience Manager Assetsas a Cloud Service]允许您将[!DNL Workfront for Experience Manager enhanced connector]从以前的版本更新到最新的版本。
 
 >[!TIP]
 >
->您是否正在搜索 [!DNL Workfront for Experience Manager enhanced connector] AEM 6.5更新文档？ 单击 [此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront).
+>您是否正在搜索AEM 6.5的[!DNL Workfront for Experience Manager enhanced connector]更新文档？ 单击[此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront)。
 
 
-要更新 [!DNL Workfront for Experience Manager enhanced connector] 到最新版本：
+要将[!DNL Workfront for Experience Manager enhanced connector]更新到最新版本，请执行以下操作：
 
-1. 从下载最新版本的增强型连接器 [AdobeSoftware Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+1. 从[Adobe软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip)下载增强型连接器的最新版本。
 
-1. [访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) 并从Cloud Manager中克隆AEMas a Cloud Service存储库。
+1. [访问](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en)并从Cloud Manager克隆AEM as a Cloud Service存储库。
 
 1. 使用您选择的IDE打开克隆的Experience Manageras a Cloud Service存储库。
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果 `resources` 文件夹不存在，请创建该文件夹。
+   >如果`resources`文件夹不存在，请创建该文件夹。
 
-1. 更新父级中的增强型连接器版本 `pom.xml`.
+1. 更新父`pom.xml`中的增强型连接器版本。
 
    ```XML
       <dependency>
@@ -51,7 +51,7 @@ ht-degree: 0%
       </dependency>
    ```
 
-1. 更新中的依赖关系 `all module pom.xml`.
+1. 更新`all module pom.xml`中的依赖项。
 
    ```XML
       <dependency>
@@ -65,9 +65,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >确保添加 `<scope>` 和 `<systemPath>` 到步骤5和步骤6中的依赖项。
+   >请确保在步骤5和步骤6中将`<scope>`和`<systemPath>`添加到依赖项。
 
-1. 更新 `pom.xml` 嵌入。 添加 [!DNL Workfront for Experience Manager enhanced connector] 将包发送至 `embeddeds` 的部分 `pom.xml` 您的所有子项目的。 在所有模块中合并更新 `pom.xml`.
+1. 更新`pom.xml`嵌入。 将[!DNL Workfront for Experience Manager enhanced connector]包添加到所有子项目的`pom.xml`的`embeddeds`部分。 将更新合并到所有模块`pom.xml`中。
 
    ```XML
    <!-- Workfront Tools -->
@@ -79,10 +79,10 @@ ht-degree: 0%
    </embedded>
    ```
 
-   嵌入部分的目标设置为 `/apps/<path-to-project-install-folder>/install`. 此JCR路径 `/apps/<path-to-project-install-folder>` 必须包含在的过滤器规则中 `all/src/main/content/META-INF/vault/filter.xml` 文件。 存储库的过滤器规则通常派生自项目名称。 使用文件夹名称作为现有规则中的目标。
+   嵌入节的目标设置为`/apps/<path-to-project-install-folder>/install`。 此JCR路径`/apps/<path-to-project-install-folder>`必须包含在`all/src/main/content/META-INF/vault/filter.xml`文件的筛选器规则中。 存储库的过滤器规则通常派生自项目名称。 使用文件夹名称作为现有规则中的目标。
 
-1. [删除对Hoodoo分发点的依赖关系](remove-external-dependencies.md)，如果有。
+1. [删除Hoodoo分发点上的依赖项](remove-external-dependencies.md)（如果有）。
 
 1. 将更改推送到存储库。
 
-1. 将管道运行到 [将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. 运行管道以[将更改部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。

@@ -214,6 +214,6 @@ AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源
 
 要查看运行批量导入任务后导入资源的资源目标位置，请单击配置名称对应的![“更多”图标](assets/do-not-localize/more-icon.svg)，然后单击&#x200B;**[!UICONTROL 查看资源]**。
 
-## 视频：使用资源视图批量导入资源
+## 视频：使用Assets视图批量导入资源
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428012)

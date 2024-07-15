@@ -18,7 +18,7 @@ ht-degree: 43%
 
 ## 路径字段 {#path-fields}
 
-此处所用的说明示例是图像组件。有关使用和编辑组件的更多信息，请参阅 [用于页面创作的组件。](/help/sites-cloud/authoring/page-editor/components.md)
+此处所用的说明示例是图像组件。有关使用和编辑组件的详细信息，请参阅[用于页面创作的组件。](/help/sites-cloud/authoring/page-editor/components.md)
 
 路径字段具有自动完成和预见功能，可更轻松地查找资源。
 
@@ -32,13 +32,13 @@ ht-degree: 43%
 
 ## 路径浏览器 {#path-browser}
 
-路径浏览器的组织方式如下 [列视图](/help/sites-cloud/authoring/basic-handling.md#column-view) 的 [**站点** 控制台，](/help/sites-cloud/authoring/sites-console/introduction.md) 允许更详细地选择资源。
+路径浏览器的组织方式类似于&#x200B;[**站点**&#x200B;控制台的[列视图](/help/sites-cloud/authoring/basic-handling.md#column-view)，](/help/sites-cloud/authoring/sites-console/introduction.md)允许更详细的资源选择。
 
 ![路径浏览器](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* 选择资源后， **选择** 对话框右上角的按钮变为活动状态。
-   * 选择以确认选择或 **取消** 中止。
-* 如果上下文允许选择多个资源，则选择某个资源也会激活 **选择** 按钮，但也会将选定资源的计数添加到窗口的右上角。
+* 选择资源后，对话框右上角的&#x200B;**选择**&#x200B;按钮变为活动状态。
+   * 选择以确认选择，或&#x200B;**取消**&#x200B;以中止。
+* 如果上下文允许选择多个资源，则选择某个资源也会激活&#x200B;**选择**&#x200B;按钮，但也会将选定资源的计数添加到窗口的右上角。
    * 单击该 **数字旁边的** X可取消选择全部。
 * 在树中导航时，您的位置会反映在对话框顶部的痕迹导航中。
    * 还可使用这些痕迹导航在资源层次结构中快速跳转。
