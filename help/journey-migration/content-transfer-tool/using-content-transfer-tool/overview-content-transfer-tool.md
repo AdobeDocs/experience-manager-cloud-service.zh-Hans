@@ -4,7 +4,7 @@ description: 了解如何使用内容传输工具将内容从内部部署AEM实�
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 52%
@@ -68,7 +68,7 @@ ht-degree: 52%
 >title="迁移集的到期"
 >abstract="了解迁移集的到期。"
 
-所有迁移集将在长时间处于约90天的非活动状态后最终过期。 在项目信息卡和迁移作业表行上显示指示符一段时间后，迁移集将过期，并且其数据将不再可用。 通过以下方式根据迁移集执行操作，可以轻松延长到期时间：
+所有迁移集将在长时间不活动约45天后最终过期。 在项目信息卡和迁移作业表行上显示指示符一段时间后，迁移集将过期，并且其数据将不再可用。 通过以下方式根据迁移集执行操作，可以轻松延长到期时间：
 
 * 编辑其描述
 * 获取其提取密钥
