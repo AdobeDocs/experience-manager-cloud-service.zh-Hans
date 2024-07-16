@@ -2,10 +2,10 @@
 title: 具有OpenAPI功能的Dynamic Media
 description: 了解关键概念，例如为何将Dynamic Media与OpenAPI功能结合使用以及如何启用它。
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 0%
+source-wordcount: '1061'
+ht-degree: 1%
 
 ---
 
@@ -117,6 +117,10 @@ ht-degree: 0%
 </td>
 </table>
 <table>
+
+
+
+<table>
 <td>
    <a href="/help/assets/search-assets-api.md">
    <img alt="搜索资源Experience Manager Assets存储库" src="./assets/search-assets-api-overview.png" />
@@ -156,5 +160,48 @@ ht-degree: 0%
       <em> DAM管理员或品牌管理员通过在AEM as a Cloud Service创作实例上为批准的资源配置角色来限制访问。</em>
    </p>
 </td>
+
+</table>
+<table>
+<td>
+   <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+   <img alt="将远程 AEM Assets 与 AEM Sites 集成" src="./assets/connected-assets-rdam.png" />
+   </a>
+   <div>
+      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+      <strong>将远程AEM Assets与AEM Sites集成</strong>
+      </a>
+   </div>
+   <p>
+      <em>了解如何将远程AEM Assets与AEM Sites环境集成。</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+   <img alt="具有OpenAPI功能的Dynamic Media常见问题解答" src="./assets/dynamic-media-faqs.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-faqs.md">
+      <strong>具有OpenAPI功能的Dynamic Media常见问题解答</strong>
+      </a>
+   </div>
+   <p>
+      <em>获取对具有OpenAPI功能的最常问的Dynamic Media常见问题的响应。</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/configure-custom-domain.md">
+   <img alt="配置自定义域" src="./assets/configure-custom-domain.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/configure-custom-domain.md">
+      <strong>配置自定义域</strong>
+      </a>
+   </div>
+   <p>
+      <em>虽然AEM as a Cloud Service附带默认域，但您可以根据需要对其进行自定义。</em>
+   </p>
+</td>
+
 </table>
 
