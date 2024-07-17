@@ -1,8 +1,8 @@
 ---
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 86%
 
 ---
 # 代码片段 {#snippets}
@@ -87,8 +87,8 @@ ht-degree: 100%
      </tr>
    <tr>
     <td>对可重复面板字段执行数学运算 </td>
-    <td>OOTB 数学函数可应用于可重复面板字段来执行求和、平均值等函数。 </td>
-    <td>可以使用自定义函数对可重复面板字段执行数学运算。
+    <td>OOTB Math函数可应用于可重复的面板字段，以使用规则编辑器执行sum、average等函数。 需要提供两个参数：第一个参数指定包含字段的可重复面板，而第二个参数指定相应可重复面板中的字段。 </td>
+    <td>可使用自定义函数对可重复面板字段执行数学运算。 也可以使用规则编辑器将数学函数直接应用于可重复面板的字段。
    </td>
    </tr>
       <tr>
