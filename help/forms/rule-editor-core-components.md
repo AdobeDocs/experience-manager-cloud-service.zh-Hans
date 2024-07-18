@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
+source-git-commit: a9596774326d5756477c0a44c2715fc5c3561e2a
 workflow-type: tm+mt
-source-wordcount: '5735'
+source-wordcount: '5787'
 ht-degree: 1%
 
 ---
@@ -168,12 +168,12 @@ _
 
 _
 
-![允许在“何时”中使用多个字段](/help/forms/assets/allowed-multiple-field-when.png)
+![允许 When 中的多个字段](/help/forms/assets/allowed-multiple-field-when.png)
 
-##### 在条件功能中使用允许的多个字段时的注意事项
+##### 在“当条件”功能中使用“允许的多个字段”时的注意事项
 
-* [确保将核心组件设置为 3.0.14 或更高版本](https://github.com/adobe/aem-core-forms-components)，以便在规则编辑器中使用此功能。
-* 如果规则应用于 When 条件内的不同字段，则即使仅更改其中一个字段，规则也会触发。
+* 确保 [将核心组件设置为版本 3.0.14 或更高版本](https://github.com/adobe/aem-core-forms-components) ，以便在规则编辑器中使用此功能。
+* 如果规则应用于 When 条件中的不同字段，则即使仅更改其中一个字段，也会触发规则。
 
 
 <!--
@@ -278,11 +278,11 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 （字符串 ABC）或
 （对象 C 的对象属性 X）或
-（来自函数的值）或
+（函数的值）或
 （来自数学表达式的值）或
 （数据模型服务的输出值）;
 
-当（可选）时：
+时间（可选）：
 
 （条件 1 和条件 2 和条件 3）为 TRUE;
 
@@ -445,7 +445,7 @@ To define a rule based on a form data model:
 
 可视规则编辑器是规则编辑器用户界面的可视编辑器模式中用于编写规则的区域。 它允许您选择规则类型并相应地定义条件和操作。 在规则中定义条件和操作时，您可以从表单对象和函数窗格中拖放表单对象和函数。
 
-有关使用可视化规则编辑器的详细信息，请参阅 [编写规则](rule-editor.md#p-write-rules-p)。
+有关使用可视化规则编辑器的更多信息，请参阅 [编写规则](rule-editor.md#p-write-rules-p)。
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -462,7 +462,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. “完成”和“取消”按钮 {#done-and-cancel-buttons}
 
-“完成&#x200B;]**”**[!UICONTROL &#x200B;按钮用于保存规则。您可以保存不完整的规则。 但是，不完整是无效的，不会运行。 下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
+“完成”****&#x200B;按钮用于保存规则。您可以保存不完整的规则。 但是，不完整是无效的，不会运行。 当您下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
 
 使用&#x200B;**[!UICONTROL 取消]**&#x200B;按钮可放弃对规则所做的任何更改并关闭规则编辑器。
 
@@ -574,13 +574,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   在扩展表达式字段中，从&#x200B;**[!UICONTROL “选择运算符]**”字段中选择“除以”]**，从**[!UICONTROL “选择选项&#x200B;]**”字段中选择**[!UICONTROL “数字&#x200B;]****[!UICONTROL ”。然后，在数字字段中指定 **[!UICONTROL 2]** 。
+   在扩展表达式字段中，从&#x200B;**[!UICONTROL “选择运算符]**”字段中选择“除以&#x200B;]**”，**[!UICONTROL &#x200B;从“**[!UICONTROL 选择选项]**”字段中选择&#x200B;**[!UICONTROL “数字]**”。然后，在数字字段中指定 **[!UICONTROL 2]** 。
 
-   ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
+   ![编写规则视觉编辑器-14](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
-   >您可以使用“选择选项”字段中的组件、函数、数学表达式和属性值来创建复杂的表达式。
+   >您可以使用“选择选项”字段中的组件、函数、数学表达式和属性值来创建复杂表达式。
 
    接下来，创建一个条件，当该条件返回True时，表达式将执行。
 
@@ -863,7 +863,7 @@ var c = {
 
 ![复杂表达式](assets/complexexpression.png)
 
-您还可以拖放规则中的条件以进行编辑。 选择并将鼠标悬停在条件前面的句柄（![句柄](assets/drag-handle.svg)）上。 如下所示，一旦指针变成手形符号，即可将条件拖放到规则中的任意位置。 规则结构将发生更改。
+您还可以拖放规则中的条件以进行编辑。 选择并将鼠标悬停在条件前面的句柄（![句柄](assets/drag-handle.svg)）上。 一旦指针变为手形符号（如下所示），将条件拖放到规则中的任意位置。 规则结构发生变化。
 
 ![拖放](assets/drag-and-drop.png)
 
@@ -904,9 +904,17 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 ### 在具有内置功能的可重复面板中简化复杂的计算
 
 规则编辑器允许您对可重复面板中的字段直接使用开箱即用的函数，如Sum、Min、Max和Join。 这释放了强大的自动化功能，允许您实施复杂的业务逻辑而无需自定义代码。
-想象一个带有可重复面板的表单。 每个面板实例可能会收集产品数量等数据。 您可以使用Sum函数自动计算所有面板的总数量，从而消除人工计算和潜在错误。
+假设有一个带有可重复面板的表单，其中每个面板实例都收集有关资产的声明值的信息。
+
+![可重复的表单](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
+
+您可以使用`Sum`函数自动计算所有面板的总资产值，而无需手动计算，并降低错误的可能性。
 
 ![支持OOTB函数中的可重复面板字段](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+在填写表单时，添加实例以声明资产值，`Calculate Asset Value`按钮计算所有已声明资产值的总和，并将结果显示在`assetvalue`文本框中的总计中。
+
+![支持OOTB函数中的可重复面板字段](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
 
 这只是个例子！ 探索可用的[功能](#b-form-objects-and-functions-br)以简化工作流程并提高表单中的数据准确性。
 
