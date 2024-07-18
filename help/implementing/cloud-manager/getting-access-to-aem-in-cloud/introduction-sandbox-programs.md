@@ -5,10 +5,10 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 98%
+source-wordcount: '488'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,15 @@ ht-degree: 98%
 
 ### 没有自定义域或 IP 允许列表 {#ip-allow}
 
-自定义域和 IP 允许列表在沙盒程序中不可用。
+[自定义域](/help/implementing/cloud-manager/custom-domain-names/introduction.md)和[IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)在沙盒程序中不可用。
+
+### 无其他Publish地区 {#additional-publish-regions}
+
+[其他发布区域](/help/operations/additional-publish-regions.md)在沙盒程序中不可用。
+
+### 无99.99%SLA {#999-sla}
+
+[99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)不适用于沙盒程序。
 
 ### 无高级网络 {#advanced-networking}
 

@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1040'
 ht-degree: 34%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 34%
 
 如果您拥有必要的权利，**SLA**&#x200B;选项卡将在&#x200B;**为生产设置**&#x200B;对话框中显示为第二个或第三个选项卡。
 
-AEM Sites提供标准的99.9%服务级别协议(SLA)。 **99.99%服务级别协议**&#x200B;选项可为您的生产环境启用99.99%的最小正常运行时间百分比。
+AEM Sites和Forms提供标准的99.9%服务级别协议(SLA)。 **99.99%服务级别协议**&#x200B;选项允许将您的生产环境的最短正常运行时间百分比设为99.99%用于Sites和/或Forms。
 
 99.99%的SLA可提供更高的可用性和更低的延迟，并需要将[额外的发布区域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)应用于程序中的生产环境。
 
@@ -105,8 +105,8 @@ AEM Sites提供标准的99.9%服务级别协议(SLA)。 **99.99%服务级别协�
 * 为了激活99.99%的SLA和报告，必须已创建[生产/暂存环境](/help/implementing/cloud-manager/manage-environments.md#adding-environments)，并且必须在生产/暂存环境中至少应用一个附加发布区域。
    * 如果使用[高级联网，](/help/security/configuring-advanced-networking.md)请确保查看[将多个Publish区域添加到新环境](/help/implementing/cloud-manager/manage-environments.md#adding-regions)文档以获取建议，以便在区域出现故障时保持连接。
 * 您的99.99% SLA计划中必须至少保留一个额外的发布区域。 不允许用户从99.99% SLA程序中删除最后一个附加发布区域。
-* 99.99% SLA支持已启用Sites解决方案的生产程序。
-* 您必须运行[全栈管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)以激活（或在编辑程序时停用）99.99%的SLA。
+* 为启用了Sites或Forms解决方案的生产程序支持99.99%的SLA。
+* 您必须运行[全栈管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)才能激活（或在编辑程序时停用）99.99%的SLA。
 
 ## 访问您的程序 {#accessing}
 

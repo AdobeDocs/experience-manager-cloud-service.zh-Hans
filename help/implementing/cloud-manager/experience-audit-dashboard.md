@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1995'
 ht-degree: 8%
 
 ---
@@ -112,7 +112,7 @@ Cloud Manager中的体验审核可确保用户在该网站上的体验达到最�
 
 点击或单击&#x200B;**查看最慢的页面**&#x200B;打开&#x200B;**最慢的5个页面**&#x200B;对话框，显示您[配置为审核的五个性能最低的页面。](#configuration)
 
-![最慢的五个](assets/experience-audit-slowest-five.jpg)
+![最慢的五个](assets/experience-audit-slowest-five.png)
 
 得分按&#x200B;**性能**、**辅助功能**、**最佳实践**&#x200B;和&#x200B;**SEO**&#x200B;以及每个指标与上次审核的偏差进行划分。
 
@@ -166,7 +166,7 @@ Cloud Manager的&#x200B;**报告**&#x200B;选项卡已打开，显示&#x200B;**�
 
 点按或单击任何推荐的V形标记可显示有关该推荐的详细信息。
 
-![推荐详细信息](assets/experience-audit-recommendation-details.png)
+![推荐详细信息](assets/experience-audit-recommendations-details.png)
 
 如果可用，则扩展的推荐详细信息中还包含推荐影响的百分比，以帮助重点关注最具影响力的更改。
 
@@ -184,7 +184,7 @@ Cloud Manager的&#x200B;**报告**&#x200B;选项卡已打开，显示&#x200B;**�
 
 ![页结果](assets/experience-audit-page-results.png)
 
-**原始报告**&#x200B;选项卡为您提供了每次页面审核的得分。 点击或单击&#x200B;**下载**&#x200B;图标可检索原始数据的JSON文件。
+**原始报告**&#x200B;选项卡为您提供了每次页面审核的得分。 点按或单击&#x200B;**Lighthouse报表**&#x200B;列中的报表日期，可检索原始数据的JSON文件。
 
 ![原始报告](assets/experience-audit-raw-reports.png)
 
@@ -200,6 +200,10 @@ Cloud Manager的&#x200B;**报告**&#x200B;选项卡已打开，显示&#x200B;**�
 
 ![按需扫描](assets/experience-audit-on-demand.png)
 
+当按需扫描已在运行时，**运行扫描**&#x200B;按钮将变为不可用，并且带有时钟图标。
+
+![按需扫描正在运行](assets/experience-audit-on-demand-running.png)
+
 按需扫描会触发对最新25个[配置页面](#configuration)的体验审核，通常在几分钟内完成。
 
 完成后，分数图表将自动更新，您可以完全按照管道执行扫描来检查结果。
@@ -214,15 +218,15 @@ Cloud Manager的&#x200B;**报告**&#x200B;选项卡已打开，显示&#x200B;**�
 
 ## 体验审核遇到的问题 {#issues}
 
-如果您配置要审核的[页面](#configuration)不可用，则体验审核会反映这一点。
+如果配置为要审核的[页面](#configuration)不可用或审核中存在其他错误，则体验审核会反映这一点。
 
 管道显示一个可展开的错误部分，以查看它无法访问的相对URL路径。
 
 体验审核遇到的![问题](assets/experience-audit-issues.jpg)
 
-如果查看完整报告，将在&#x200B;**[体验审核扫描结果](#results)**&#x200B;部分中显示详细信息。
+如果查看完整报告，则详细信息将显示在&#x200B;**[体验审核扫描结果](#results)**&#x200B;部分中，该部分也是可扩展的。
 
-![完整报告问题](assets/experience-audit-issues-reports.jpeg)
+![完整报告问题](assets/experience-audit-issues-report.png)
 
 页面可能不可用的部分原因是：
 
@@ -253,8 +257,7 @@ Cloud Manager的&#x200B;**报告**&#x200B;选项卡已打开，显示&#x200B;**�
 
 以下详细信息提供了有关Experience Audit如何评估您的网站的其他信息。 对于功能的常规使用，这些参数不是必需的，此处提供这些参数是为了完整起见。
 
-* 虽然[配置的体验审核页面路径](#configuration)显示了发布者的`.com`域，但审核会扫描源(`.net`)域，以确保检测到开发过程中出现的问题。
-   * `.com`域使用CDN，可能会产生更好的分数或包含缓存的结果。
+* 审核会扫描发布者的[配置的体验审核页面路径](#configuration)中定义的源(`.com`)域，以更准确地模拟真实的用户体验，并帮助您在管理和优化网站方面做出更明智的决策。
 * 在生产全栈管道中，将扫描暂存环境。
    * 要确保审核在审核期间提供相关详细信息，暂存环境的内容应尽可能接近生产环境。
 * 在&#x200B;[**页面得分 — 趋势**&#x200B;部分](#trend)的&#x200B;**选择**&#x200B;下拉列表中显示的页面都是体验审核过去扫描过的已知页面。

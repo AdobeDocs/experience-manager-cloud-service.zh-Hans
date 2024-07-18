@@ -4,7 +4,7 @@ description: 了解如何使用AEM as a Cloud Service的日志记录功能配置
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 8%
@@ -561,9 +561,9 @@ CDN日志不同于其他日志，它遵循JSON格式。
 
 ### 其他Publish地区的日志 {#logs-for-additional-publish-regions}
 
-如上所述，如果为特定环境启用了其他Publish地区，则可以从Cloud Manager下载每个地区的日志。
+如果为特定环境启用了其他发布区域，则可以从Cloud Manager下载每个区域的日志，如上所述。
 
-其他Publish区域的AEM日志和Dispatcher日志将在环境ID之后的前3个字母中指定该区域，以下示例中的&#x200B;**nld2**&#x200B;即代表位于荷兰的其他AEM发布实例：
+其他发布区域的AEM日志和Dispatcher日志将在环境ID之后的前3个字母中指定该区域，以下示例中的&#x200B;**nld2**&#x200B;即代表位于荷兰的其他AEM发布实例：
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

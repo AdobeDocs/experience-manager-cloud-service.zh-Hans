@@ -4,12 +4,13 @@ description: 了解 AEM as a Cloud Service 如何支持附加的发布区域，�
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 78%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
+
 
 # 新增发布区域 {#additional-publish-regions}
 
@@ -22,7 +23,9 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->此功能目前仅适用于 AEM Sites。它也不能应用于沙盒程序。此外，其他发布区域功能要求您的程序更新到AEM发行版本12142或更高版本。
+>* 此功能适用于Sites和Forms解决方案。
+>* 此功能无法应用于[沙盒程序。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* 此功能要求您的程序更新到AEM发行版本12142或更高版本。
 
 ## 用例 {#use-cases}
 
@@ -57,7 +60,9 @@ ht-degree: 78%
 
 在考虑使用附加发布区域时，请考虑以下这些限制。
 
-* 附加发布区域只能添加到 AEM Sites。其他发布区域不会扩展到在同一项目中部署的其他AEM解决方案或相关功能(例如，AEM Forms或Adobe Learning Manager)。
+* 其他发布区域只能添加到AEM Sites或AEM Forms。
+   * 其他发布区域不会扩展到在同一项目中部署的其他AEM解决方案或相关功能(例如，AEM Assets或Adobe Learning Manager)。
+   * 但是，只要程序至少应用了一个Sites或Forms解决方案，便可以将这些解决方案添加到程序中。
 * 仅当关联的权限在租户中可用但未使用时，才能添加附加区域。
 * 最多可以向任何单个环境添加三个附加的发布区域。
 * 附加区域仅适用于生产程序。该功能在沙盒程序中不可用。

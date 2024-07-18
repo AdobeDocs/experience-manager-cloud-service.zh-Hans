@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
+source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
 workflow-type: tm+mt
-source-wordcount: '4482'
-ht-degree: 88%
+source-wordcount: '4513'
+ht-degree: 87%
 
 ---
 
@@ -1267,3 +1267,12 @@ AEM Cloud Service禁止在分析器中创建名称不正确的令牌化器。 �
 >[!WARNING]
 >
 >建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/implementing/cloud-manager/release-notes/current.md)。
+
+### 索引定义的配置不应包含空格 {#oakpal-indexing-definitions-spaces}
+
+* **键**： PathSpacesCheck
+* **类型**：改进
+* **严重性**：轻微
+* **开始版本**：版本 2024.7.0
+
+AEM Cloud Service禁止创建包含带空格的属性的索引定义。
