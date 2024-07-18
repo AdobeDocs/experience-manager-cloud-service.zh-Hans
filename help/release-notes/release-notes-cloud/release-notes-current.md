@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 445d15c1449b968325c77becce8b0a547ba151d6
+source-git-commit: 544fa6be686071275abd34a76f785c89b5ac3ed9
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1965'
 ht-degree: 99%
 
 ---
@@ -32,13 +32,11 @@ ht-degree: 99%
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!--  ## Release Video {#release-video}
+## 发布视频 {#release-video}
 
-Have a look at the June 2024 Release Overview video for a summary of the features added in the 2024.6.0 release:
+请查看 2024 年 6 月发布概述视频，了解 2024.6.0 版本中新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3430779?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -252,4 +250,4 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 
 ## Experience Cloud 发行说明 {#experience-cloud}
 
-您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/release-notes/experience-cloud/current)找到有关其他Experience Cloud应用程序版本的信息。
+您可以在[此处](https://experienceleague.adobe.com/cn/docs/release-notes/experience-cloud/current)找到有关其他Experience Cloud应用程序版本的信息。
