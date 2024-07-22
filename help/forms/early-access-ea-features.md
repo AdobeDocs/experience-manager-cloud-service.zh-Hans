@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 29da5119403d47502fe4dc1d2a5c728aa0828b0e
+source-git-commit: 681121c98f61f045702a7d9c2ffad1473d7f5b2a
 workflow-type: tm+mt
-source-wordcount: '2784'
-ht-degree: 26%
+source-wordcount: '1735'
+ht-degree: 22%
 
 ---
 
@@ -173,105 +173,3 @@ AEM Forms文档保证API是AEM FormsCloud Service通信API中的一组工具，�
 
 * [AEM 6.5 Forms （AMS和内部部署）与AEM Forms as a Cloud Service (AEM CS Forms)之间的区别](/help/forms/notable-changes.md)
 
-
-对话式Forms不仅仅是一种新外观，它还是改变用户体验的一种方式。  提升参与度，减少表单放弃，并使与您的网站互动成为每个人都更愉快的体验。
-
-
-### 用于Edge Delivery Services的WYSIWYG创作
-
-所见即所得创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，用于构建自适应表单并将其发布到Edge Delivery Services。 WYSIWYG创作提供了[基于文档的创作](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及多种其他功能：
-
-* 用于创建复杂逻辑的高级规则编辑器。
-* 自定义功能的服务器端可扩展性。
-* WYSIWYG 的编辑体验，可轻松创建表单和可视化。
-* 记录文档功能可创建提交数据的防篡改档案。
-* 与 Adobe Sign 集成以进行电子签名。
-* 与各种数据源集成以预填充表单和提交数据。
-* 表单数据模型 (FDM)，用于定义数据结构和与各种数据源的交互。
-* 能够从多个提交操作中进行选择，用于处理表单提交，包括将数据提交到Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多数据源。
-
-
-### AEM Forms到Marketo的连接器
-
-AEM Forms到Marketo连接器为使用Adobe Experience Manager (AEM)构建的Web表单(自适应Forms)与营销自动化平台Marketo之间架起了一座桥梁。
-
-当有人在您的网站上提交使用AEM Adaptive Forms创建的表单时，连接器可确保将提交的数据自动发送到Marketo。 这消除了对手动数据输入的需要，并降低了错误风险。
-
-![AEM表单 — Marketo连接器](/help/forms/assets/aem-forms-marketo-connector.jpeg)
-
-通过简化数据传输流程，连接器可以帮助您提高网站的转化率。 通过自动将潜在客户数据发送到Marketo，您可以确保将符合条件的潜在客户快速输入您的培育计划。
-
-本质上，AEM Forms到Marketo Connector可帮助您利用两个平台的优势，创建更高效和更高效的营销漏斗。
-
-
-## 其他早期访问创新
-
-### 从右至左(RTL)语言支持
-
-自适应Forms现在能够以从右至左(RTL)语言显示，从而提供更具包容性的用户体验并简化使用过程。
-
-此功能适用于阿拉伯语、希伯来语和乌尔都语等从右至左(RTL)书写和阅读的语言，从而提高表单的理解率和完成率。
-
-![从右至左(RTL)语言支持](mobile-responsive.png)
-
-自适应Forms中的从右至左(RTL)语言支持可帮助您：
-
-* **扩展用户群**：企业现在可以接触到全球超过20亿更熟悉RTL语言的人。
-
-* **提供增强的用户体验**： Forms呈现完美无瑕的风格，自然的文本从右到左流动，适当的UI元素对齐方式，以及反映用户阅读习惯的直观布局。 这减少了混淆，并提高了完成率。
-
-* **提供移动响应式体验**：由于固有的移动响应性，Forms在任何设备上都可以访问，从而确保在台式机、平板电脑和智能手机上获得流畅的体验。
-
-总体而言，自适应Forms中的RTL语言支持使企业能够设计真正的全球表单，扩大覆盖面、提高参与度和包容性。
-
-准备好开始了吗？ [自适应Forms RTL文档](/help/forms/supporting-new-language-localization-core-components.md)提供了使用RTL创新的分步指南。
-
-### 增强的机器人防护方法
-
-AEM Forms 通过增加对两种流行的验证码解决方案的支持，增强了其安全功能：Cloudflare Turnstile 和 hCaptcha。这为现有的 Google reCAPTCHA 增加了新的选择，为用户提供了更多的选择和灵活性，以保护他们的表单免受机器人和垃圾邮件的侵害。
-
-* **Cloudflare Turnstile**：这种无摩擦的验证码通过简单的挑战来验证用户，无需明确的互动。它能够无缝集成到您的表单中，从而提升用户体验。
-* **hCaptcha**：这款注重隐私的验证码提供了一种注重数据隐私的用户友好型替代方案。其旨在在安全性和用户体验之间取得平衡。
-* **Google reCAPTCHA**：AEM Forms 继续支持 reCAPTCHA v2 和 reCAPTCHA Enterprise，提供可靠且完善的解决方案。
-
-AEM Forms 提供多种验证码选项，您可以选择最适合您特定需求的解决方案。
-
-您是否准备将这些验证码解决方案中的任意一个与您的自适应表单集成？我们的文档为每种验证码解决方案提供了详细的说明：[Cloudflare Turnstile](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 和 [Google reCAPTCHA](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)。
-
-### 文档保证API
-
-
-AEM Forms文档保证API是AEM FormsCloud Service通信API中的一组工具，它允许您管理PDF文档的安全性和用户交互。
-
-以下是Doc Assurance API功能的划分信息：
-
-* **加密和解密文档**：通过加密使文档内容不可读，从而Protect您的文档。 您可以控制对PDF的哪些部分进行加密，包括整个文档、特定内容、元数据或附件。
-
-* **对文档进行数字签名**：将数字签名添加到文档以进行验证和防篡改验证。 这可用于认证目的或确保文档完整性
-
-* **Reader扩展文档(应用或编辑PDF文档的使用权限)**：通过扩展具有其他使用权限的Adobe Reader功能，使您的组织能够轻松共享交互式PDF文档。
-
-  Reader扩展（使用权限）API向PDF文档添加了使用权限。 此操作激活在使用Adobe Reader打开PDF文档时通常不可用的功能，例如向文档添加注释、填写表单和保存文档。 第三方用户无需其他软件或插件即可使用启用了权限的文档。
-
-  当PDF文档添加了相应的使用权限时，收件人可以从Adobe Reader中执行启用的活动。
-
-总体而言，[文档保证API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/)通过添加额外的控制层，帮助您提高文档安全性和合规性。
-
-
-### Forms服务API
-
-表单服务生成交互式 PDF 表单，用于数据捕获。它还可用于将数据导入/导出到现有的交互式PDF表单中，以及验证提交的数据。 以下是其功能的详细介绍：
-
-* **渲染表单**：使用 AEM Forms Designer 创建的模板和可选的 XML 数据生成交互式 PDF 表单。这实际上会生成可填写的 PDF 表单，其中可选择预先填充数据。
-
-* **数据提取和导入**：将数据导入现有 PDF 表单，也可从已填写的 PDF 表单中提取数据。支持 XDP 和 XML 数据格式，并且导入非 XFA PDF 表单（也称为 AcroForms）时还支持 FDF 和 XFDF 数据。
-
-* **数据验证**：根据使用 AEM Forms Designer 创建的模板，验证 XDP 或 XML 格式的提交数据。
-
-## 另请参阅
-
-* [AEM Forms中的最新创新](/help/forms/latest-innovations.md)
-
-* [AEM Forms as aCloud Service的功能](/help/forms/home.md)
-
-* [AEM 6.5 Forms （AMS和内部部署）与AEM Forms as a Cloud Service (AEM CS Forms)之间的区别](/help/forms/notable-changes.md)
