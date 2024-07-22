@@ -4,9 +4,9 @@ description: 了解AEM as a Cloud Service中的维护任务以及如何配置它
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
+source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2107'
 ht-degree: 30%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 30%
     <td>客户</td>
     <td>
     <p>必须在 git 中完成。通过在文件夹<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下创建属性，覆盖<code>/libs</code>下的开箱即用维护窗口配置节点。 有关其他配置详细信息，请参阅下面的维护窗口表。</p>
-    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。请参阅**Adobe项目清除配置**下的[OSGI属性](/help/implementing/deploying/configuring-osgi.md)列表。</p>
+    <p>通过在上面的节点下添加另一个具有适当属性的节点（将其命名为 <code>granite_ProjectPurgeTask</code>），启用维护任务。查看<b>Adobe项目清除配置</b>的<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi属性</a>列表。</p>
   </td>
   </tr>
   </tbody>
