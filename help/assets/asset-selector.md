@@ -5,10 +5,10 @@ contentOwner: KK
 role: Admin,User
 feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
+source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 36%
+source-wordcount: '4871'
+ht-degree: 35%
 
 ---
 
@@ -812,6 +812,60 @@ interface SelectedAsset {
 | *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | 数字 | 演绎版的高度。 |
 
 有关属性和详细示例的完整列表，请访问[资源选择器代码示例](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
+
+### 上下文调用过滤器{#contextual-invocation-filter}
+
+资产选择器允许您添加标记选取器过滤器。 它支持将所有相关标记组合到特定标记组的标记组。 此外，您还可以通过它选择与要查找的资源对应的其他标记。 此外，您还可以在上下文调用过滤器下设置您最常用的默认标记组，以便您能够随时访问它们。
+
+> 
+>
+> * 您需要添加上下文调用代码片段以在搜索中启用标记过滤器。
+> * 必须使用与标记组类型`(property=xcm:keywords.id=)`对应的名称属性。
+
+语法：
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+要在过滤器面板中添加标记组，必须添加至少一个标记组作为默认值。 此外，使用以下代码片段添加从标记组中预先选定的默认标记。
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![标记组筛选器](assets/tag-group.gif)
 
 ## 使用对象架构处理资源选择 {#handling-selection}
 
