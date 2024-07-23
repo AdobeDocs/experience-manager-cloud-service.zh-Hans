@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
+source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
 workflow-type: tm+mt
-source-wordcount: '5160'
-ht-degree: 100%
+source-wordcount: '5265'
+ht-degree: 97%
 
 ---
 
@@ -692,13 +692,21 @@ ht-degree: 100%
             + [在自适应表单中使用 Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
-            + [创建和使用自定义函数](/help/forms/create-and-use-custom-functions.md)
-            + [向基于核心组件的自适应表单模板添加规则](/help/forms/rule-editor-core-components.md)
             + [为自适应表单（核心组件）设计 JSON 架构](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [向自适应表单添加版本控制、评论和注释](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比较自适应表单](/help/forms/compare-forms.md)
             + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [将自适应表单另存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
+            + 基于核心组件的自适应Forms的规则编辑器简介{#rule-editor-core-components}
+               + [基于核心组件的自适应Forms的规则编辑器简介](/help/forms/rule-editor-core-components.md)
+               + [基于核心组件的自适应Forms的规则编辑器用户界面](/help/forms/rule-editor-core-components-user-interface.md)
+               + [基础规则编辑器和核心组件规则编辑器的区别](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [基于核心组件的自适应表单的规则编辑器中可用的运算符和事件类型](/help/forms/rule-editor-core-components-events-operators.md)
+               + [基于核心组件的自适应表单的规则编辑器示例](/help/forms/rule-editor-core-components-usecases.md)
+            + 基于核心组件的自适应Forms的自定义函数简介{#create-and-use-custom-function-core-component}
+               + [基于核心组件的自适应Forms的自定义函数简介](/help/forms/create-and-use-custom-functions.md)
+               + [基于核心组件为自适应表单创建并使用自定义函数](/help/forms/custom-function-core-component-create-function.md)
+               + [基于核心组件的自适应表单的自定义函数示例](/help/forms/custom-function-core-components-use-cases.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)

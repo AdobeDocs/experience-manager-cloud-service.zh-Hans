@@ -1,5 +1,5 @@
 ---
-title: 在自适应表单中创建和添加自定义函数
+title: 在自适应表单中使用自定义函数
 description: AEM Forms支持自定义函数，这些函数允许用户在规则编辑器中创建和使用自己的函数。
 keywords: 添加自定义函数、使用自定义函数、创建自定义函数、在规则编辑器中使用自定义函数。
 contentOwner: Ruchita Srivastav
@@ -7,30 +7,28 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
+source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
 workflow-type: tm+mt
-source-wordcount: '4333'
+source-wordcount: '1286'
 ht-degree: 1%
 
 ---
 
 
-# 自适应Forms中的自定义函数（核心组件）
+# 基于核心组件的自适应Forms的自定义函数简介
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
 | AEM as a Cloud Service | 本文 |
 
-## 简介
-
-AEM Forms支持自定义函数，允许用户定义JavaScript函数以实施复杂的业务规则。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们还支持根据预定义标准动态更改表单行为。
+AEM Forms支持自定义函数，允许用户定义JavaScript函数以实施复杂的业务规则。 这些自定义函数通过简化输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们允许根据预定义的标准动态更改表单行为。 通过自定义函数，开发人员还可以实施复杂的验证逻辑、执行动态计算，以及根据用户交互或预定义标准控制表单元素的显示或行为。
 
 >[!NOTE]
 >
 > 确保[核心组件](https://github.com/adobe/aem-core-forms-components)设置为最新版本以使用最新功能。
 
-### 自定义函数的使用 {#uses-of-custom-function}
+## 自定义函数的使用 {#uses-of-custom-function}
 
 在自适应Forms中使用自定义函数的优点包括：
 * **正在处理数据**：自定义函数可帮助处理输入到表单字段中的数据。
@@ -40,11 +38,11 @@ AEM Forms支持自定义函数，允许用户定义JavaScript函数以实施复�
 
 自定义函数本质上是添加到JavaScript文件中的客户端库。 创建自定义函数后，该函数即可在规则编辑器中供用户在自适应表单中选择。 自定义函数由规则编辑器中的JavaScript注释标识。
 
-### 自定义函数支持的JavaScript批注 {#js-annotations}
+## 自定义函数支持的JavaScript批注 {#js-annotations}
 
 JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定符号(例如/**和@)开头的注释。 注释提供了有关代码中的函数、变量和其他元素的重要信息。 自适应表单支持自定义函数的以下JavaScript注释：
 
-#### 名称
+### 名称
 
 该名称用于标识自适应表单的规则编辑器中的自定义函数。 以下语法用于命名自定义函数：
 
@@ -55,7 +53,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
   `<Function Name>`是自适应表单的规则编辑器中函数的显示名称。
 如果函数名称与函数本身的名称相同，则可以在语法中省略`[functionName]`。
 
-#### 参数
+### 参数
 
 参数是自定义函数使用的参数列表。 函数可以支持多个参数。 以下语法用于定义自定义函数中的参数：
 
@@ -74,13 +72,14 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
    * date[]：表示日期值的数组。
    * array：表示包含各种类型值的泛型数组。
    * 对象：表示传递到自定义函数的表单对象，而不是直接传递其值。
-   * 范围：表示全局对象，其中包含只读变量，如表单实例、目标字段实例以及在自定义函数中执行表单修改的方法。 此变量声明为JavaScript注释中的最后一个参数，在自适应表单的规则编辑器中不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。 有关Globals对象及其使用方法的详细信息，[单击此处](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects)。
+   * 范围：表示全局对象，其中包含只读变量，如表单实例、目标字段实例以及在自定义函数中执行表单修改的方法。 此变量声明为JavaScript注释中的最后一个参数，在自适应表单的规则编辑器中不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。 有关Globals对象及其使用方法的详细信息，[单击此处](/help/forms/custom-function-core-component-create-function.md#field-and-global-scope-objects-support-in-custom-functions)。
 
 参数类型不区分大小写，并且参数名称中不允许有空格。
 
 `<Parameter Description>`包含有关参数用途的详细信息。 它可以有多个单词。
 
-**可选参数**
+#### 可选参数
+
 默认情况下，所有参数都是必需的。 您可以在参数类型后添加`=`或在`[]`中封闭参数名称，从而将参数定义为可选参数。 在JavaScript注释中定义为可选的参数在规则编辑器中显示为可选。
 要将变量定义为可选参数，可以使用以下任意语法：
 
@@ -130,7 +129,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 要了解有关如何在JSDocs中定义可选参数的更多信息，[单击此处](https://jsdoc.app/tags-param)。
 
-#### 返回类型
+### 返回类型
 
 返回类型指定自定义函数在执行后返回的值的类型。 以下语法用于在自定义函数中定义退货类型：
 
@@ -150,7 +149,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
   返回类型不区分大小写。
 
-#### 专用
+### 专用
 
 声明为私有的自定义函数不会出现在自适应表单的规则编辑器的自定义函数列表中。 默认情况下，自定义函数是公用的。 将自定义函数声明为private的语法为`@private`。
 
@@ -215,828 +214,10 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
 
 如果用户没有将任何JavaScript注释添加到自定义函数，则该自定义函数不会列在自适应表单的规则编辑器中。
 
-## 创建自定义功能 {#create-custom-function}
+## 后续步骤
 
-创建客户端库以在规则编辑器中调用自定义函数。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
+要在自适应表单中创建和使用自定义函数，请参阅[基于核心组件创建自适应表单的自定义函数](/help/forms/custom-function-core-component-create-function.md)一文。
 
-创建自定义函数的步骤包括：
-1. [创建客户端库](#create-client-library)
-1. [将客户端库添加到自适应表单](#use-custom-function)
+## 另请参阅
 
-
-### 创建自定义函数的先决条件
-
-在开始将自定义函数添加到自适应Forms之前，请确保您满足以下条件：
-
-**软件：**
-
-* **纯文本编辑器(IDE)**：虽然任何纯文本编辑器都可以工作，但诸如Microsoft Visual Studio Code之类的集成开发环境(IDE)可提供高级功能，以便于编辑。
-
-* **Git：**&#x200B;管理代码更改需要此版本控制系统。 如果未安装，请从https://git-scm.com下载。
-
-### 创建客户端库 {#create-client-library}
-
-您可以通过添加客户端库来添加自定义函数。 要创建客户端库，请执行以下步骤：
-
-**克隆存储库**
-
-克隆[AEM Formsas a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)：
-
-1. 打开命令行或终端窗口。
-
-1. 导航到要在计算机上存储存储库的所需位置。
-
-1. 运行以下命令以克隆存储库：
-
-   `git clone [Git Repository URL]`
-
-此命令下载存储库并在计算机上创建克隆存储库的本地文件夹。 在本指南中，我们将此文件夹称为[AEMaaCS项目目录]。
-
-**添加客户端库文件夹**
-
-要将新的客户端库文件夹添加到[AEMaaCS项目目录]，请执行以下步骤：
-
-1. 在编辑器中打开[AEMaaCS项目目录]。
-
-   ![自定义函数文件夹结构](/help/forms/assets/custom-library-folder-structure.png)
-
-1. 找到`ui.apps`。
-1. 添加新文件夹。 例如，添加名为`experience-league`的文件夹。
-1. 导航到`/experience-league/`文件夹并添加`ClientLibraryFolder`。 例如，创建一个名为`customclientlibs`的客户端库文件夹。
-
-   `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
-
-**将文件和文件夹添加到客户端库文件夹**
-
-将以下内容添加到添加的客户端库文件夹：
-
-* .content.xml文件
-* js.txt文件
-* js文件夹
-
-`Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
-
-1. 在`.content.xml`中，添加以下代码行：
-
-   ```javascript
-   <?xml version="1.0" encoding="UTF-8"?>
-   <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-   jcr:primaryType="cq:ClientLibraryFolder"
-   categories="[customfunctionscategory]"/>
-   ```
-
-   >[!NOTE]
-   >
-   > 您可以为`client library folder`和`categories`属性选择任意名称。
-
-1. 在`js.txt`中，添加以下代码行：
-
-   ```javascript
-         #base=js
-       function.js
-   ```
-1. 在`js`文件夹中，将javascript文件添加为`function.js`，其中包含自定义函数：
-
-   ```javascript
-    /**
-        * Calculates Age
-        * @name calculateAge
-        * @param {object} field
-        * @return {string} 
-    */
-   
-    function calculateAge(field) {
-    var dob = new Date(field);
-    var now = new Date();
-   
-    var age = now.getFullYear() - dob.getFullYear();
-    var monthDiff = now.getMonth() - dob.getMonth();
-   
-    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
-    age--;
-    }
-   
-    return age;
-    }
-   ```
-1. 保存文件。
-
-![自定义函数文件夹结构](/help/forms/assets/custom-function-added-files.png)
-
-**在filter.xml中包含新文件夹**：
-
-1. 导航到[AEMaaCS项目目录]中的`/ui.apps/src/main/content/META-INF/vault/filter.xml`文件。
-
-1. 打开文件，并在末尾添加以下行：
-
-   `<filter root="/apps/experience-league" />`
-1. 保存文件。
-
-![自定义函数筛选器xml](/help/forms/assets/custom-function-filterxml.png)
-
-**将新创建的客户端库文件夹部署到您的AEM环境**
-
-将AEM as a Cloud Service [AEMaaCS项目目录]部署到您的Cloud Service环境。 要部署到Cloud Service环境，请执行以下操作：
-
-1. 提交更改
-
-   1. 使用以下命令在存储库中添加、提交和推送更改：
-
-   ```javascript
-       git add .
-       git commit -a -m "Adding custom functions"
-       git push
-   ```
-
-1. 部署更新的代码：
-
-   1. 通过现有的全栈管道触发代码部署。 这会自动构建和部署更新的代码。
-
-如果尚未设置管道，请参阅[上的指南如何为AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)设置管道。
-
-成功执行管道后，客户端库中添加的自定义函数将在[自适应表单规则编辑器](/help/forms/rule-editor-core-components.md)中变得可用。
-
-### 将客户端库添加到自适应表单{#use-custom-function}
-
-将客户端库部署到Forms CS环境后，请在自适应表单中使用其功能。 在自适应表单中添加客户端库
-
-1. 在编辑模式下打开表单。 要在编辑模式下打开表单，请选择一个表单，然后选择&#x200B;**[!UICONTROL 编辑]**。
-1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
-1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
-1. 打开&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡，并从下拉列表中选择&#x200B;**[!UICONTROL 客户端库类别]**&#x200B;的名称（在本例中，选择`customfunctionscategory`）。
-
-   ![正在添加自定义函数客户端库](/help/forms/assets/clientlib-custom-function.png)
-
-   >[!NOTE]
-   >
-   > 通过在&#x200B;**[!UICONTROL 客户端库类别]**&#x200B;字段中指定逗号分隔的列表，可以添加多个类别。
-
-1. 单击&#x200B;**[!UICONTROL 完成]**。
-
-您可以在自适应表单](/help/forms/rule-editor-core-components.md)的[规则编辑器中使用[JavaScript批注](##js-annotations)的自定义函数。
-
-## 在自适应表单中使用自定义函数
-
-在自适应表单中，您可以在规则编辑器](/help/forms/rule-editor-core-components.md)中使用[自定义函数。 让我们将以下代码添加到JavaScript文件（`Function.js`文件）中，以根据出生日期(YYYY-MM-DD)计算年龄。 创建自定义函数作为`calculateAge()`，它将出生日期作为输入并返回年龄：
-
-```javascript
-    /**
-        * Calculates Age
-        * @name calculateAge
-        * @param {object} field
-        * @return {string} 
-    */
-
-    function calculateAge(field) {
-    var dob = new Date(field);
-    var now = new Date();
-
-    var age = now.getFullYear() - dob.getFullYear();
-    var monthDiff = now.getMonth() - dob.getMonth();
-
-    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
-    age--;
-    }
-
-    return age;
-    }
-```
-
-在上例中，当用户以(YYYY-MM-DD)格式输入出生日期时，将调用自定义函数`calculateAge`并返回年龄。
-
-![规则编辑器中的Calcualte Agae自定义函数](/help/forms/assets/custom-function-calculate-age.png)
-
-让我们预览表单，观察自定义函数如何通过规则编辑器实现：
-
-![在规则编辑器表单预览中计算Agae自定义函数](/help/forms/assets/custom-function-age-calculate-form.png)
-
->[!NOTE]
->
-> 您可以引用以下[自定义函数](/help/forms/assets//customfunctions.zip)文件夹。 使用[包管理器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager)在AEM实例中下载并安装此文件夹。
-
-
-### 使用自定义函数设置下拉列表选项
-
-核心组件中的规则编辑器不支持&#x200B;**Set Options of**&#x200B;属性在运行时设置下拉列表选项。 但是，您可以使用自定义函数设置下拉列表选项。
-
-查看以下代码，了解如何使用自定义函数设置下拉列表选项：
-
-```javascript
-    /**
-    * @name setEnums
-    * @returns {string[]}
-    **/
-    function setEnums() {
-    return ["0","1","2","3","4","5","6"];   
-    }
-
-    /**
-    * @name setEnumNames
-    * @returns {string[]}
-    **/
-    function setEnumNames() {
-    return ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    }
-```
-
-在上述代码中，`setEnums`用于设置`enum`属性，`setEnumNames`用于设置下拉列表的`enumNames`属性。
-
-让我们为`Next`按钮创建一个规则，该规则在用户单击`Next`按钮时设置下拉列表选项的值：
-
-![下拉列表选项](/help/forms/assets/drop-down-list-options.png)
-
-请参阅下图以演示单击“显示”按钮时下拉列表的选项设置位置：
-
-![规则编辑器中的下拉选项](/help/forms/assets/drop-down-option-rule-editor.png)
-
-
-
-### 在自定义函数中支持异步函数 {#support-of-async-functions}
-
-异步自定义函数未出现在规则编辑器列表中。 但是，可以在使用同步函数表达式创建的自定义函数中调用异步函数。
-
-![同步和异步自定义函数](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> 在自定义函数中调用异步函数的优势在于，异步函数允许并行执行多个任务，并且自定义函数中使用了每个函数的结果。
-
-查看以下代码，了解如何使用自定义函数调用异步函数：
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-在上述示例中，asyncFunction函数是`asynchronous function`。 它通过向`https://petstore.swagger.io/v2/store/inventory`发出`GET`请求来执行异步操作。 它使用`await`等待响应，使用`response.json()`将响应正文解析为JSON，然后返回数据。 `callAsyncFunction`函数是一个同步自定义函数，它调用`asyncFunction`函数并在控制台中显示响应数据。 虽然`callAsyncFunction`函数是同步的，但它调用异步asyncFunction函数并使用`then`和`catch`语句处理其结果。
-
-要查看其是否有效，让我们添加一个按钮，并为按钮创建一个规则，该规则会在单击按钮时调用异步函数。
-
-![为异步函数创建规则](/help/forms/assets/rule-for-async-funct.png)
-
-请参考控制台窗口的插图以演示当用户单击`Fetch`按钮时，将调用自定义函数`callAsyncFunction`，进而调用异步函数`asyncFunction`。 在控制台窗口中Inspect以查看对单击按钮的响应：
-
-![控制台窗口](/help/forms/assets/async-custom-funct-console.png)
-
-让我们深入了解一下自定义函数的功能。
-
-## 自定义函数的各种功能
-
-您可以使用自定义函数向表单添加个性化功能。 这些函数支持各种功能，例如使用特定字段、使用全局字段或缓存。 这种灵活性允许您根据组织的要求自定义表单。
-
-### 自定义函数中的字段和全局范围对象 {#support-field-and-global-objects}
-
-字段对象是指表单中的单个组件或元素，例如文本字段和复选框。 全局对象包含只读变量，例如表单实例、目标字段实例以及在自定义函数中修改表单的方法。
-
->[!NOTE]
->
-> `param {scope} globals`必须是最后一个参数，它不会显示在自适应表单的规则编辑器中。
-
-<!-- Let us look at the following code snippet:
-
-```JavaScript
-   
-    /**
-    * updateDateTime
-    * @name updateDateTime
-    * @param {object} field
-    * @param {scope} globals
-    */
-    function updateDateTime(field, globals) {
-    // Accessing the Date object from the global scope
-    var currentDate = new Date();
-    // Formatting the date and time
-    var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time using setProperty.
-    globals.functions.setProperty(field, {value: formattedDateTime});
-    }
-```
-
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
-
-让我们了解自定义函数如何在`Contact Us`表单的帮助下使用字段和全局对象，并使用不同的用例。
-
-![与我们联系表单](/help/forms/assets/contact-us-form.png)
-
-+++ **用例**：使用`SetProperty`规则显示面板
-
-将以下代码添加到[create-custom-function](#create-custom-function)部分中说明的自定义函数中，以将表单字段设置为`Required`。
-
-```javascript
-    
-    /**
-    * enablePanel
-    * @name enablePanel
-    * @param {object} field1
-    * @param {object} field2
-    * @param {scope} globals 
-    */
-
-    function enablePanel(field1,field2, globals)
-    {
-       if(globals.functions.validate(field1).length === 0)
-       {
-       globals.functions.setProperty(field2, {visible: true});
-       }
-    }
-```
-
->[!NOTE]
->
-> * 您可以使用位于`[form-path]/jcr:content/guideContainer.model.json`中的可用属性配置字段属性。
-> * 使用Globals对象的`setProperty`方法对该表单进行的修改是异步的，在执行自定义函数期间不会反映这些修改。
-
-在此示例中，`personaldetails`面板的验证是在单击按钮时进行的。 如果在面板中未检测到错误，则单击按钮后，另一个面板（`feedback`面板）将变为可见。
-
-让我们为`Next`按钮创建一个规则，该规则将验证`personaldetails`面板，并在用户单击`Next`按钮时使`feedback`面板可见。
-
-![设置属性](/help/forms/assets/custom-function-set-property.png)
-
-请参阅下图以演示单击`Next`按钮时验证`personaldetails`面板的位置。 如果`personaldetails`中的所有字段都已验证，`feedback`面板将变为可见。
-
-![设置属性表单预览](/help/forms/assets/set-property-form-preview.png)
-
-如果`personaldetails`面板的字段中存在错误，则单击`Next`按钮时会在字段级别显示这些错误，并且`feedback`面板将保持不可见。
-
-![设置属性表单预览](/help/forms/assets/set-property-panel.png)
-
-+++
-
-+++ **用例**：验证字段。
-
-按照[create-custom-function](#create-custom-function)部分中的说明，在自定义函数中添加以下代码以验证字段。
-
-```javascript
-    /**
-    * validateField
-    * @name validateField
-    * @param {object} field
-    * @param {scope} globals
-    */
-    function validateField(field,globals)
-    {
-    
-        globals.functions.validate(field);
-    
-    }   
-```
-
->[!NOTE]
->
-> 如果未在`validate()`函数中传递任何参数，它将验证表单。
-
-在此示例中，自定义验证模式应用于`contact`字段。 用户需要输入以`10`开头后接`8`位数的电话号码。 如果用户输入的电话号码不以`10`开头或包含多或少`8`位数，则单击该按钮时将显示验证错误消息：
-
-![电子邮件地址验证模式](/help/forms/assets/custom-function-validation-pattern.png)
-
-现在，下一步是为`Next`按钮创建一个规则，以验证单击按钮时的`contact`字段。
-
-![验证模式](/help/forms/assets/custom-function-validate.png)
-
-请参阅下图以演示，如果用户输入的电话号码不是以`10`开头，则在字段级别将显示错误消息：
-
-![电子邮件地址验证模式](/help/forms/assets/custom-function-validate-error-message.png)
-
-如果用户输入有效的电话号码并且验证`personaldetails`面板中的所有字段，屏幕上会显示`feedback`面板：
-
-![电子邮件地址验证模式](/help/forms/assets/validate-form-preview-form.png)
-
-+++
-
-+++ **用例**：重置面板
-
-按照[create-custom-function](#create-custom-function)部分中的说明，在自定义函数中添加以下代码以重置面板。
-
-```javascript
-    /**
-    * resetField
-    * @name  resetField
-    * @param {string} input1
-    * @param {object} field
-    * @param {scope} globals 
-    */
-    function  resetField(field,globals)
-    {
-    
-        globals.functions.reset(field);
-    
-    }
-```
-
->[!NOTE]
->
-> 如果未在`reset()`函数中传递任何参数，它将验证表单。
-
-在此示例中，`personaldetails`面板在单击`Clear`按钮时重置。 下一步是为`Clear`按钮创建一个规则，该规则将在单击按钮时重置面板。
-
-![清除按钮](/help/forms/assets/custom-function-reset-field.png)
-
-请参阅下图以显示，如果用户单击`clear`按钮，`personaldetails`面板将重置：
-
-![重置表单](/help/forms/assets/custom-function-reset-form.png)
-
-+++
-
-+++ **用例**：在字段级别显示自定义消息并将字段标记为无效
-
-您可以使用`markFieldAsInvalid()`函数将字段定义为无效，并在字段级别设置自定义错误消息。 `fieldIdentifier`值可以是`fieldId`、`field qualifiedName`或`field dataRef`。 名为`option`的对象的值可以是`{useId: true}`、`{useQualifiedName: true}`或`{useDataRef: true}`。
-用于将字段标记为无效并设置自定义消息的语法包括：
-
-* `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
-* `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
-* `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
-
-按照[create-custom-function](#create-custom-function)部分中的说明，在自定义函数中添加以下代码，以在字段级别启用自定义消息。
-
-```javascript
-    /**
-    * customMessage
-    * @name customMessage
-    * @param {object} field
-    * @param {scope} globals 
-    */
-    function customMessage(field, globals) {
-    const minLength = 15;
-    const comments = field.$value.trim();
-    if (comments.length < minLength) {
-        globals.functions.markFieldAsInvalid(field.$id, "Comments must be at least 15 characters long.", { useId: true });
-    }
-}
-```
-
-在此示例中，如果用户在“注释”文本框中输入的字符数少于15个，则会在字段级别显示自定义消息。
-
-下一步是为`comments`字段创建规则：
-
-![将字段标记为无效](/help/forms/assets/custom-function-invalid-field.png)
-
-请参阅下面的演示，说明在`comments`字段中输入负反馈会触发字段级别的自定义消息显示：
-
-![将字段标记为无效的预览表单](/help/forms/assets/custom-function-invalidfield-form.png)
-
-如果用户在“注释”文本框中输入的字符数超过15个，则会验证该字段并提交表单：
-
-![将字段标记为有效的预览表单](/help/forms/assets/custom-function-validfield-form.png)
-
-+++
-
-+++ **用例**：将更改的数据提交到服务器
-
-以下代码行：
-`globals.functions.submitForm(globals.functions.exportData(), false);`用于在操作后提交表单数据。
-* 第一个参数是要提交的数据。
-* 第二个参数表示在提交之前是否验证表单。 它是`optional`，默认设置为`true`。
-* 第三个参数是提交的`contentType`，该参数也是可选的，默认值是`multipart/form-data`。 其他值可以是`application/json`和`application/x-www-form-urlencoded`。
-
-按照[create-custom-function](#create-custom-function)部分中的说明，在自定义函数中添加以下代码，以在服务器上提交操作数据：
-
-```javascript
-    /**
-    * submitData
-    * @name submitData
-    * @param {object} field
-    * @param {scope} globals 
-    */
-    function submitData(globals)
-    {
-    
-    var data = globals.functions.exportData();
-    if(!data.comments) {
-    data.comments = 'NA';
-    }
-    console.log('After update:{}',data);
-    globals.functions.submitForm(data, false);
-    }
-```
-
-在此示例中，如果用户将`comments`文本框留空，则`NA`在提交表单时提交给服务器。
-
-现在，为提交数据的`Submit`按钮创建一个规则：
-
-![提交数据](/help/forms/assets/custom-function-submit-data.png)
-
-请参阅以下`console window`的图示，以演示如果用户将`comments`文本框留空，则在服务器上提交值为`NA`：
-
-![在控制台窗口提交数据](/help/forms/assets/custom-function-submit-data-form.png)
-
-您还可以检查控制台窗口以查看提交到服务器的数据：
-
-在控制台窗口![Inspect数据](/help/forms/assets/custom-function-submit-data-console-data.png)
-
-+++
-
-+++ **用例**：覆盖表单提交成功和错误处理程序
-
-添加以下代码行（如[create-custom-function](#create-custom-function)部分中所述），以自定义表单提交的提交或失败消息，并在模式框中显示表单提交消息：
-
-```javascript
-/**
- * Handles the success response after a form submission.
- *
- * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
- * @returns {void}
- */
-function customSubmitSuccessHandler(globals) {
-    var event = globals.event;
-    var submitSuccessResponse = event.payload.body;
-    var form = globals.form;
-
-    if (submitSuccessResponse) {
-        if (submitSuccessResponse.redirectUrl) {
-            window.location.href = encodeURI(submitSuccessResponse.redirectUrl);
-        } else if (submitSuccessResponse.thankYouMessage) {
-            showModal("success", submitSuccessResponse.thankYouMessage);
-        }
-    }
-}
-
-/**
- * Handles the error response after a form submission.
- *
- * @param {string} customSubmitErrorMessage - The custom error message.
- * @param {scope} globals - This object contains a read-only form instance, target field instance, triggered event, and methods for performing form modifications within custom functions.
- * @returns {void}
- */
-function customSubmitErrorHandler(customSubmitErrorMessage, globals) {
-    showModal("error", customSubmitErrorMessage);
-}
-function showModal(type, message) {
-    // Remove any existing modals
-    var existingModal = document.getElementById("modal");
-    if (existingModal) {
-        existingModal.remove();
-    }
-
-    // Create the modal dialog
-    var modal = document.createElement("div");
-    modal.setAttribute("id", "modal");
-    modal.setAttribute("class", "modal");
-
-    // Create the modal content
-    var modalContent = document.createElement("div");
-    modalContent.setAttribute("class", "modal-content");
-
-    // Create the modal header
-    var modalHeader = document.createElement("div");
-    modalHeader.setAttribute("class", "modal-header");
-    modalHeader.innerHTML = "<h2>" + (type === "success" ? "Thank You" : "Error") + "</h2>";
-
-    // Create the modal body
-    var modalBody = document.createElement("div");
-    modalBody.setAttribute("class", "modal-body");
-    modalBody.innerHTML = "<p class='" + type + "-message'>" + message + "</p>";
-
-    // Create the modal footer
-    var modalFooter = document.createElement("div");
-    modalFooter.setAttribute("class", "modal-footer");
-
-    // Create the close button
-    var closeButton = document.createElement("button");
-    closeButton.setAttribute("class", "close-button");
-    closeButton.innerHTML = "Close";
-    closeButton.onclick = function() {
-        modal.remove();
-    };
-
-    // Append the elements to the modal content
-    modalFooter.appendChild(closeButton);
-    modalContent.appendChild(modalHeader);
-    modalContent.appendChild(modalBody);
-    modalContent.appendChild(modalFooter);
-
-    // Append the modal content to the modal
-    modal.appendChild(modalContent);
-
-    // Append the modal to the document body
-    document.body.appendChild(modal);
-}
-```
-
-在此示例中，当用户使用`customSubmitSuccessHandler`和`customSubmitErrorHandler`自定义函数时，成功和失败消息将以模式显示。 JavaScript函数`showModal(type, message)`用于在屏幕上动态创建和显示模式对话框。
-
-现在，为成功的表单提交创建规则：
-
-![表单提交成功](/help/forms/assets/form-submission-success.png)
-
-请参阅下图以演示成功提交表单后，成功消息将以模式显示：
-
-![表单提交成功消息](/help/forms/assets/form-submission-success-message.png)
-
-同样，让我们为失败的表单提交创建规则：
-
-![表单提交失败](/help/forms/assets/form-submission-fail.png)
-
-请参阅下图以演示，当表单提交失败时，将以模式模式显示错误消息：
-
-![表单提交失败消息](/help/forms/assets/form-submission-fail-message.png)
-
-若要以默认方式显示表单提交成功和失败，`Default submit Form Success Handler`和`Default submit Form Error Handler`函数是现成可用的。
-
-如果自定义提交处理程序无法按预期在现有AEM项目或表单中执行，请参阅[疑难解答](#troubleshooting)部分。
-
-+++
-
-+++ **用例**：在可重复面板的特定实例中执行操作
-
-使用可重复面板上的可视规则编辑器创建的规则将应用于可重复面板的最后一个实例。 要为可重复面板的特定实例编写规则，我们可以使用自定义函数。
-
-让我们创建另一个表单，以收集有关前往目的地的旅行者的信息。 将旅客面板添加为可重复面板，用户可以在其中使用`Add Traveler`按钮添加5名旅客的详细信息。
-
-![旅行者信息](/help/forms/assets/traveler-info-form.png)
-
-添加下面一行代码（如[create-custom-function](#create-custom-function)部分中所述），以在可重复面板的特定实例中执行操作，而不是最后一个实例：
-
-```javascript
-/**
-* @name hidePanelInRepeatablePanel
-* @param {scope} globals
-*/
-function hidePanelInRepeatablePanel(globals)
-{    
-    var repeatablePanel = globals.form.travelerinfo;
-    // hides a panel inside second instance of repeatable panel
-    globals.functions.setProperty(repeatablePanel[1].traveler, {visible : false});
-}  
-```
-
-在此示例中，`hidePanelInRepeatablePanel`自定义函数在可重复面板的特定实例中执行操作。 在上述代码中，`travelerinfo`表示可重复面板。 `repeatablePanel[1].traveler, {visible: false}`代码在可重复面板的第二个实例中隐藏面板。
-
-让我们添加标记为`Hide`的按钮并添加规则以隐藏可重复面板的第二个实例。
-
-![隐藏面板规则](/help/forms/assets/custom-function-hidepanel-rule.png)
-
-请参阅以下视频，以演示单击`Hide`后，第二个可重复实例中的面板将隐藏：
-
->[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
-
-+++
-
-+++ **用例**：加载表单时使用值预填充字段
-
-添加以下代码行（如[create-custom-function](#create-custom-function)部分中所述），以在初始化表单时在字段中加载预填充值：
-
-```javascript
-/**
- * Tests import data
- * @name testImportData
- * @param {scope} globals
- */
-function testImportData(globals)
-{
-    globals.functions.importData(Object.fromEntries([['amount','10000']]));
-} 
-```
-
-在上述代码中，`testImportData`函数在加载表单时预填充`Booking Amount`文本框字段。 假设预订表单要求最低预订金额为`10,000`。
-
-让我们在表单初始化时创建一个规则，其中加载表单时`Booking Amount`文本框字段中的值预填充为指定的值：
-
-![导入数据规则](/help/forms/assets/custom-function-import-data.png)
-
-请参阅下面的屏幕快照，该屏幕快照演示了在加载表单时，`Booking Amount`文本框中的值预填充了指定的值：
-
-![导入数据规则表单](/help/forms/assets/custom-function-prefill-form.png)
-
-+++
-
-+++ **用例**：将焦点设置为特定字段
-
-添加下面一行代码（如[create-custom-function](#create-custom-function)部分中所述），以便在单击`Submit`按钮时将焦点置于指定字段：
-
-```javascript
-/**
- * @name testSetFocus
- * @param {object} emailField
- * @param {scope} globals
- */
-    function testSetFocus(field, globals)
-    {
-        globals.functions.setFocus(field);
-    }
-```
-
-让我们向`Submit`按钮添加一个规则，以设置单击时`Email ID`文本框字段的焦点：
-
-![设置焦点规则](/help/forms/assets/custom-function-set-focus.png)
-
-请参阅下面的屏幕截图，其中演示了单击`Submit`按钮时，焦点设置在`Email ID`字段上：
-
-![设置焦点规则](/help/forms/assets/custom-function-set-focus-form.png)
-
->[!NOTE]
->
-> 如果要重点关注相对于`email`字段的下一个或上一个字段，则可以使用可选的`$focusOption`参数。
-
-+++
-
-+++ **Usecase**：使用`dispatchEvent`属性添加或删除可重复的面板
-
-添加以下代码行（如[create-custom-function](#create-custom-function)部分中所述），以便在使用`dispatchEvent`属性单击`Add Traveler`按钮时添加面板：
-
-```javascript
-/**
- * Tests add instance with dispatchEvent
- * @name testAddInstance
- * @param {scope} globals
- */
-function testAddInstance(globals)
-{
-    var repeatablePanel = globals.form.traveler;
-    globals.functions.dispatchEvent(repeatablePanel,'addInstance');
-}
-```
-
-让我们向`Add Traveler`按钮添加一个规则，以便在单击该按钮时添加可重复面板：
-
-![添加面板规则](/help/forms/assets/custom-function-add-panel.png)
-
-请参阅下面的gif，其中演示了单击`Add Traveler`按钮时，使用`dispatchEvent`属性添加面板：
-
-![添加面板](/help/forms/assets/custom-function-add-panel.gif)
-
-同样，添加以下代码行（如[create-custom-function](#create-custom-function)部分中所述），以便在使用`dispatchEvent`属性单击`Delete Traveler`按钮时删除面板：
-
-```javascript
-/**
- 
- * @name testRemoveInstance
- * @param {scope} globals
- */
-function testRemoveInstance(globals)
-{
-    var repeatablePanel = globals.form.traveler;
-    globals.functions.dispatchEvent(repeatablePanel, 'removeInstance');
-} 
-```
-
-让我们向`Delete Traveler`按钮添加一个规则，以便在单击可重复面板时将其删除：
-
-![删除面板规则](/help/forms/assets/custom-function-delete-panel.png)
-
-请参阅下面的gif，其中演示了在单击`Delete Traveler`按钮时，使用`dispatchEvent`属性删除旅行者面板：
-
-![删除面板](/help/forms/assets/custom-function-delete-panel.gif)
-
-+++
-
-## 对自定义函数的缓存支持
-
-自适应Forms在规则编辑器中检索自定义函数列表时，为自定义函数实施缓存以增强响应时间。 `error.log`文件中显示一条消息，名称为`Fetched following custom functions list from cache`。
-
-支持缓存的![自定义函数](/help/forms/assets/custom-function-cache-error.png)
-
-如果修改了自定义函数，缓存将失效，并且会进行解析。
-
-## 疑难解答 {#troubleshooting}
-
-* 如果自定义提交处理程序无法按预期在现有AEM项目或表单中执行，请执行以下步骤：
-   * 确保[核心组件版本已更新到3.0.18及更高版本](https://github.com/adobe/aem-core-forms-components)。 但是，对于现有AEM项目和表单，还需要执行其他步骤：
-
-   * 对于AEM项目，用户应使用`submitForm()`替换`submitForm('custom:submitSuccess', 'custom:submitError')`的所有实例，并通过Cloud Manager管道部署该项目。
-
-   * 对于现有表单，如果自定义提交处理程序无法正常运行，用户需要使用规则编辑器在&#x200B;**提交**&#x200B;按钮上打开并保存`submitForm`规则。 此操作将`submitForm('custom:submitSuccess', 'custom:submitError')`中的现有规则替换为表单中的`submitForm()`。
-
-
-* 如果包含自定义函数代码的JavaScript文件出错，则自定义函数不会列在自适应表单的规则编辑器中。 要检查自定义函数列表，您可以导航到`error.log`文件以查找错误。 如果出现错误，自定义函数列表显示为空：
-
-  ![错误日志文件](/help/forms/assets/custom-function-list-error-file.png)
-
-  如果没有错误，则会获取自定义函数并显示在`error.log`文件中。 `error.log`文件中显示一条消息，名称为`Fetched following custom functions list`：
-
-  使用正确的自定义函数![错误日志文件](/help/forms/assets/custom-function-list-fetched-in-error.png)
-
-## 注意事项
-
-* `parameter type`和`return type`不支持`None`。
-
-* 自定义函数列表中不支持的函数包括：
-   * 生成器函数
-   * 异步/等待函数
-   * 方法定义
-   * 类方法
-   * 默认参数
-   * Rest参数
-
-## 另请参阅 {#see-also}
-
-{{see-also}}
-
-
+{{see-also-rule-editor}}
