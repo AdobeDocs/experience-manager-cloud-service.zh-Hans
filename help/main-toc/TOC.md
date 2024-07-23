@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
+source-git-commit: a95da7f8cc0f16445970f13c1acad28b14daae44
 workflow-type: tm+mt
-source-wordcount: '5265'
+source-wordcount: '5270'
 ht-degree: 97%
 
 ---
@@ -861,8 +861,9 @@ ht-degree: 97%
 + Edge Delivery Services {#edge-delivery}
    + [Edge Delivery Services 概述](/help/edge/overview.md)
    + [将 Edge Delivery Services 与 AEM 结合使用](/help/edge/using.md)
+   + [选择和创作方法](/help/edge/authoring-methods.md)
    + 所见即所得的创作 {#wysiwyg-authoring}
-      + [针对 Edge Delivery 创作内容](/help/edge/wysiwyg-authoring/authoring.md)
+      + [为Edge Delivery制作WYSIWYG内容](/help/edge/wysiwyg-authoring/authoring.md)
       + [针对 Edge Delivery 发布内容](/help/edge/wysiwyg-authoring/publishing.md)
       + [开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [创建区块](/help/edge/wysiwyg-authoring/create-block.md)

@@ -1,18 +1,18 @@
 ---
-title: 为 Edge Delivery Services 创作内容
+title: 用于Edge Delivery Services的WYSIWYG内容创作
 description: 了解内容创作如何与 Edge Delivery Services 配合使用，以及如何使用 Edge Delivery Services 创作 AEM 内容。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 85%
+source-wordcount: '448'
+ht-degree: 69%
 
 ---
 
 
-# 为 Edge Delivery Services 创作内容 {#authoring-edge}
+# 用于Edge Delivery Services的WYSIWYG内容创作 {#authoring-edge}
 
 Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选择来为 Edge Delivery Services 创作内容：
 
@@ -25,7 +25,7 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 ![WYSIWYG创作如何与Edge Delivery Services配合使用](assets/how-aem-edge-works.png)
 
-1. [WYSIWYG创作环境](/help/sites-cloud/authoring/quick-start.md)用于内容管理，例如创建新页面、体验片段、内容片段等。
+1. [AEM Sites环境](/help/sites-cloud/authoring/quick-start.md)用于内容管理，例如创建新页面、体验片段、内容片段等。
    * AEM 的所有功能均可用，例如工作流程、MSM、翻译、启动等。
 1. [通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)用于创作 AEM 中管理的内容。
    * 通用编辑器为内容创作提供了全新且现代的用户界面。
@@ -52,9 +52,8 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 请参阅[用于Edge Delivery ServicesWYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解如何使用AEM和Edge Delivery Services开始您自己的项目以进行创作。
 
-## 基于文档的创作  {#document-based}
+## 其他创作方法  {#authoring-methods}
 
-使用基于文档的创作时，您可以使用各种来源，例如 Microsoft Word 和 Google Docs 文档。来自这些源的文档将成为您网站上的页面。标题、列表、图像、字体元素、视频都可以从初始源转移到网站中。您可以出于 SEO 目的添加元数据，也可以使用块来处理结构化内容并添加功能。
+所见即所得创作是供内容作者使用的功能强大且直观的工具。 但是，存在许多不同的创作用例，这就是AEM提供其他创作解决方案的原因。
 
-有关基于文档的创作的更多详细信息，请参阅 [Edge Delivery Services 文档中的该文档。](/help/edge/docs/authoring.md)
-
+请参阅文档[选择创作方法](/help/edge/authoring-methods.md)，了解有关AEM提供的创作解决方案（包括基于文档的创作和headless）的更多信息。
