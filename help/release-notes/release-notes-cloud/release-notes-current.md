@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
 workflow-type: tm+mt
 source-wordcount: '1965'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->要收到有关 Experience Cloud 发行说明更新的每月电子邮件通知，请订阅 [Adobe 优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)。
+>要收到有关 Experience Cloud 发行说明更新的每月电子邮件通知，请订阅 [Adobe 优先产品更新](https://www.adobe.com/cn/cn/subscription/priority-product-update.html)。
 
 ## 发布日期 {#release-date}
 
@@ -252,4 +252,4 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 
 ## Experience Cloud 发行说明 {#experience-cloud}
 
-您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/release-notes/experience-cloud/current)找到有关其他Experience Cloud应用程序版本的信息。
+您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/release-notes/experience-cloud/current)找到有关其他 Experience Cloud 应用程序版本的信息。
