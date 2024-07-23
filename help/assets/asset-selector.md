@@ -4,7 +4,7 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e357dd0b9b2e67d4989a34054737a91743d0933a
+source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
 workflow-type: tm+mt
 source-wordcount: '4550'
 ht-degree: 36%
@@ -745,7 +745,7 @@ const showToast = {
 
 资产选择器允许您添加标记选取器过滤器。 它支持将所有相关标记组合到特定标记组的标记组。 此外，您还可以通过它选择与要查找的资源对应的其他标记。 此外，您还可以在上下文调用过滤器下设置您最常用的默认标记组，以便您能够随时访问它们。
 
-> 
+>
 >
 > * 您需要添加上下文调用代码片段以在搜索中启用标记过滤器。
 > * 必须使用与标记组类型`(property=xcm:keywords.id=)`对应的名称属性。
