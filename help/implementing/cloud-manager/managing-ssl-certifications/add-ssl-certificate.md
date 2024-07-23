@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 80%
+source-wordcount: '665'
+ht-degree: 73%
 
 ---
 
@@ -43,7 +43,6 @@ ht-degree: 80%
    * 在&#x200B;**证书名称**&#x200B;中输入证书名称。
       * 这仅供参考，可以是任何有助于您轻松引用证书的名称。
    * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;值粘贴到各自的字段中。这三个字段都是必填字段。
-   * 在某些情况下，最终用户证书可能会包含在链中，并且必须在将链粘贴到字段之前将其清除。
 
    ![添加“SSL 证书”对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -61,13 +60,27 @@ ht-degree: 80%
 >
 >用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色成员，才能在 Cloud Manager 中安装 SSL 证书。
 
->[!NOTE]
->
->如果收到类似于`The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`的错误，则可能已将客户端证书包含在证书链中。 请确保该链不包含客户端证书，然后重试。
-
 ## 证书错误 {#certificate-errors}
 
 如果证书安装不正确或不符合 Cloud Manager 的要求，则可能会出现某些错误。
+
+### 确保正确的行格式 {#line-formatting}
+
+在粘贴&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;的值时，新行应仅在BEGIN CERTIFICATE之后、END CERTIFICATE之前。 即，粘贴的值应按如下方式构建：
+
+* `-----BEGIN CERTIFICATE-----`必须显示在其自己的行中。
+* `-----END CERTIFICATE-----`必须显示在其自己的行中。
+* 证书内容必须作为长字符串&#x200B;**显示在其自己的行中，且在`-----BEGIN CERTIFICATE-----`和`-----END CERTIFICATE-----`之间不显示任何新行**。
+
+### 删除客户端证书 {#client-certificates}
+
+添加证书时，如果收到类似于以下内容的错误：
+
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
+
+您可能已将客户端证书包含在证书链中。 请确保该链不包含客户端证书，然后重试。
 
 ### 证书策略 {#certificate-policy}
 
