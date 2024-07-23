@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 573de431328650778b3ef0979a24190477382310
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
@@ -18,26 +18,26 @@ ht-degree: 42%
 
 ## 版本 17098 {#release-17098}
 
-以下总结了维护版本17098的不断改进，该版本于2024年7月16日公开发布。 上一个维护版本是版本 16971。
+下面总结了维护版本 16799 的持续改进，该版本已于 2024 年 7 月 16 日公开发行。上一个维护版本是版本 16971。
 
-2024.7.0功能激活将提供此维护版本的完整功能集。 有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.7.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强 {#enhancements-17098}
 
-- SKYOPS-79817：为服务用户映射启用Sling功能分析器任务
+- SKYOPS-79817：为服务用户映射启用 Sling 功能分析器任务
 
 ### 修复的问题 {#fixed-issues-17098}
 
-- Assets-39665：从6.5迁移到AEMCS后，智能裁剪同步无法正常工作
-- Forms-14993：Forms API为以前使用的宣传资料返回500
-- GRANITE-52120：CRXDE在显示访问控制数据时返回500
-- GRANITE-52573：在重写的URL中使用//时请求返回400
+- ASSETS-39665：从 6.5 迁移到 AEMCS 后，Smart Crops Sync 不起作用
+- FORMS-14993：表格 API 返回 500，用于之前的工作抵押品
+- GRANITE-52120：显示 Access 控制数据时 CRXDE 返回 500
+- GRANITE-52573：在重写的 URL 中使用 // 时请求返回 400
 - GRANITE-52746：创建节点对话框中未加载所有节点类型
-- GRANITE-52777：请求被封装时对404的处理中断
-- GRANITE-52871：确保publish-worker与golden-publish同步，并在压缩前完成
-- SKYOPS-79173：复制程序未复制到与给定AgentIdFilter匹配的多个代理
-- SKYOPS-80075：资产名称中存在变音问题，导致发布队列阻塞(Mac)
-- SKYOPS-81032：使用增强型日志记录时过滤掉请求生成的日志以获取日志
+- GRANITE-52777：请求包装时 404 处理中断
+- GRANITE-52871：确保 publish-worker 与 golden-publish 同步并在压缩之前完成
+- SKYOPS-79173：复制器未复制到与给定 AgentIdFilter 匹配的多个代理
+- SKYOPS-80075：资产名称中的变音符号问题导致发布队列阻塞（Mac）
+- SKYOPS-81032：使用增强日志记录时，过滤掉获取日志的请求生成的日志
 
 ### 已知问题 {#known-issues-17098}
 
@@ -49,7 +49,7 @@ ht-degree: 42%
 
 ### 已弃用的功能和 API {#deprecated-17098}
 
-AEM as a Cloud Service中已弃用和已删除的功能和API在[已弃用和已删除的功能和API](/help/release-notes/deprecated-removed-features.md)文档中进行了详细介绍。
+AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
 ### 嵌套的技术 {#embedded-tech-17098}
 
