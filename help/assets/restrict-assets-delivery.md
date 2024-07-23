@@ -2,7 +2,8 @@
 title: 限制Experience Manager中的资源投放
 description: 了解如何在 [!DNL Experience Manager]中限制资源交付。
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Experience Manager中的中央资产治理允许DAM管理员或品牌经理管�
 
 ## 使用IMS令牌的受限制投放 {#restrict-delivery-ims-token}
 
-在Experience Manager中，通过IMS进行的受限投放涉及两个关键阶段：
+在Experience Manager Assets中，通过IMS进行的受限投放涉及两个关键阶段：
 
 * 创作
 * 交付
@@ -43,7 +44,7 @@ Experience Manager中的中央资产治理允许DAM管理员或品牌经理管�
       1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：roles_。
 
 1. 获取要添加到资源的角色元数据中的IMS组。 要获取IMS组，请执行以下步骤：
-   1. 登录到https://adminconsole.adobe.com/。
+   1. 在`https://adminconsole.adobe.com/.`登录
    1. 转到相应的组织并导航到&#x200B;**[!UICONTROL 用户组]**。
    1. 选择要添加的&#x200B;**[!UICONTROL 用户组]**，并从URL中提取&#x200B;**[!UICONTROL orgID]**&#x200B;和&#x200B;**[!UICONTROL userGroupID]**，或者使用您的组织ID，例如`{orgID}@AdobeOrg:{usergroupID}`。
 
