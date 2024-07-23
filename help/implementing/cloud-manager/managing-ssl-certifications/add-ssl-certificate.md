@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 07696086644d52199bada102e9aee163d868c9c0
+source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 73%
+source-wordcount: '598'
+ht-degree: 82%
 
 ---
 
@@ -63,14 +63,6 @@ ht-degree: 73%
 ## 证书错误 {#certificate-errors}
 
 如果证书安装不正确或不符合 Cloud Manager 的要求，则可能会出现某些错误。
-
-### 确保正确的行格式 {#line-formatting}
-
-在粘贴&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;的值时，新行应仅在BEGIN CERTIFICATE之后、END CERTIFICATE之前。 即，粘贴的值应按如下方式构建：
-
-* `-----BEGIN CERTIFICATE-----`必须显示在其自己的行中。
-* `-----END CERTIFICATE-----`必须显示在其自己的行中。
-* 证书内容必须作为长字符串&#x200B;**显示在其自己的行中，且在`-----BEGIN CERTIFICATE-----`和`-----END CERTIFICATE-----`之间不显示任何新行**。
 
 ### 删除客户端证书 {#client-certificates}
 
