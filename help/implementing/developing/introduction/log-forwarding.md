@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发给Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
             enabled: false
    ```
 
-1. 对于RDE以外的环境类型（当前不支持），请在Cloud Manager中创建目标部署配置管道。
+1. 对于RDE以外的环境类型（当前不支持），在Cloud Manager中创建目标部署配置管道；请注意，全栈管道和Web层管道不部署配置文件。
 
    * [请参阅配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
    * [请参阅配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+注意事项：
+
+* URL字符串必须包含&#x200B;**https://**，否则验证将失败。 如果url字符串中未包含任何端口，则采用端口443（默认的HTTPS端口）。
+* 如果您希望使用与443不同的端口，请将其作为URL的一部分提供。
 
 #### HTTPS CDN日志 {#https-cdn}
 
@@ -267,8 +272,7 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是日志�
 
 >[!NOTE]
 >
-> 在发送第一个CDN日志条目之前，您的HTTP服务器必须成功完成一次性质询：发送到路径``wellknownpath``的请求必须以``*``响应。
-
+> 在发送第一个CDN日志条目之前，您的HTTP服务器必须成功完成一次性质询：发送到路径``/.well-known/fastly/logging/challenge``的请求在正文中必须以星号``*``和200状态代码响应。
 
 #### HTTPS AEM日志 {#https-aem}
 
