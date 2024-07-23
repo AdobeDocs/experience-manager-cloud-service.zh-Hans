@@ -4,9 +4,9 @@ description: 本页介绍如何导航到Screens服务提供商。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 093cd62f282bd9842ad74124bb9bd4d5a33ef1c5
+source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '383'
 ht-degree: 4%
 
 ---
@@ -48,39 +48,41 @@ ht-degree: 4%
 
 1. 单击&#x200B;**保存**&#x200B;以连接到Screens内容提供程序。
 
-1. 如果您已将AEM发布实例配置为仅允许Cloud Manager的IP 允许列表功能访问受信任的IP地址，则需要在“设置”对话框中配置具有键值的标头，如下所示。
+1. 如果您已通过Cloud Manager列入允许列表的IP发布功能将AEM发布实例配置为只允许访问受信任的IP地址，则您需要在“设置”对话框中配置具有键值的标头，如下所示。
 需要列入白名单的IP还需要移动到配置文件，并需要从Cloud Manager设置中[取消应用](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list)。
 
-   ![图像](/help/screens-cloud/assets/configure/configure-screens20.png)
+   ![图像](/help/screens-cloud/assets/configure/configure-screens20b.png)
 需要在AEM CDN配置中配置相同的密钥。  建议不要将标头值直接放入GITHub中，并且使用[机密引用](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets)。
 下面提供了[CDN配置](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)示例：
-种类： &quot;CDN&quot;
-版本： &quot;1&quot;
-元数据：
-环境类型： [&quot;dev&quot;、&quot;stage&quot;、&quot;prod&quot;]
-数据：
-trafficFilters：
-规则：
- — 名称：“block-request-from-not-allowed-ips”
-时间：
-allOf：
-- reqProperty： clientIp
-notIn： [&quot;101.41.112.0/24&quot;]
-reqProperty：层
-等于：发布
-操作：块
- — 名称：“allow-requests-with-header”
-时间：
-allOf：
-- reqProperty：层
-等于：发布
-- reqProperty： path
-等于：/screens/channels.json
-- reqHeader： x-screens-允许列表键
-等于： $\
-   {CDN_HEADER_KEY}
-操作：
-类型：允许
+
+   ```kind: "CDN"
+       version: "1"
+       metadata:
+         envTypes: ["dev", "stage", "prod"]
+       data:
+         trafficFilters:
+           rules:
+             - name: "block-request-from-not-allowed-ips"
+               when:
+                 allOf:
+                   - reqProperty: clientIp
+                     notIn: ["101.41.112.0/24"]
+                    reqProperty: tier
+                     equals: publish
+               action: block
+             - name: "allow-requests-with-header"
+               when:
+                 allOf:
+                   - reqProperty: tier
+                     equals: publish
+                   - reqProperty: path
+                     equals: /screens/channels.json
+                   - reqHeader: x-screens-allowlist-key
+                     equals: $\
+       {CDN_HEADER_KEY}
+               action:
+                 type: allow
+   ```
 
 1. 从左侧导航栏中选择&#x200B;**渠道**，然后单击&#x200B;**在内容提供程序中打开**。
 
