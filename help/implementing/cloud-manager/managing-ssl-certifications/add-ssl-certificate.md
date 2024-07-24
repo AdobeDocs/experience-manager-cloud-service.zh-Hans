@@ -5,12 +5,13 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 82%
+source-wordcount: '664'
+ht-degree: 70%
 
 ---
+
 
 # 添加 SSL 证书 {#adding-an-ssl-certificate}
 
@@ -18,7 +19,7 @@ ht-degree: 82%
 
 >[!TIP]
 >
->提供证书可能需要几天时间。因此，Adobe 建议提前提供证书。
+>提供证书可能需要几天时间。因此，Adobe建议提前任何截止日期或上线日期设置证书。
 
 ## 证书要求 {#certificate-requirements}
 
@@ -42,7 +43,8 @@ ht-degree: 82%
 
    * 在&#x200B;**证书名称**&#x200B;中输入证书名称。
       * 这仅供参考，可以是任何有助于您轻松引用证书的名称。
-   * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;值粘贴到各自的字段中。这三个字段都是必填字段。
+   * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;值粘贴到各自的字段中。
+      * 这三个字段都是必填字段。
 
    ![添加“SSL 证书”对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -63,6 +65,32 @@ ht-degree: 82%
 ## 证书错误 {#certificate-errors}
 
 如果证书安装不正确或不符合 Cloud Manager 的要求，则可能会出现某些错误。
+
+### 正确的证书顺序 {#correct-certificate-order}
+
+证书部署失败的最常见原因是中间证书或链证书的顺序不正确。
+
+中间证书文件必须以根证书或最接近根的证书结尾。它们必须从 `main/server` 证书降序到根目录。
+
+可以使用以下命令确定中间文件的顺序。
+
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
+
+您可以使用以下命令验证私钥和 `main/server` 证书是否匹配。
+
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
+
+>[!NOTE]
+>
+>这两个命令的输出必须完全相同。如果您找不到 `main/server` 证书的匹配私钥，您需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
 
 ### 删除客户端证书 {#client-certificates}
 
@@ -124,32 +152,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### 正确的证书顺序 {#correct-certificate-order}
-
-证书部署失败的最常见原因是中间证书或链证书的顺序不正确。
-
-中间证书文件必须以根证书或最接近根的证书结尾。它们必须从 `main/server` 证书降序到根目录。
-
-可以使用以下命令确定中间文件的顺序。
-
-```shell
-openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-```
-
-您可以使用以下命令验证私钥和 `main/server` 证书是否匹配。
-
-```shell
-openssl x509 -noout -modulus -in certificate.pem | openssl md5
-```
-
-```shell
-openssl rsa -noout -modulus -in ssl.key | openssl md5
-```
-
->[!NOTE]
->
->这两个命令的输出必须完全相同。如果您找不到 `main/server` 证书的匹配私钥，您需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
-
 ### 证书有效日期 {#certificate-validity-dates}
 
 Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。您应该检查证书链的有效性。
+
+## 后续步骤 {#next-steps}
+
+恭喜！您现在拥有可用于项目的SSL证书。 这通常是设置自定义域名的第一步。
+
+* 请参阅文档[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)以继续设置自定义域名。
+* 请参阅文档[管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)，了解如何在Cloud Manager中更新和管理SSL证书。

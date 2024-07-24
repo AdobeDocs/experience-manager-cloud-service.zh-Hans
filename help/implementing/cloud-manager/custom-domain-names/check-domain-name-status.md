@@ -5,15 +5,25 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 88%
+source-wordcount: '826'
+ht-degree: 64%
 
 ---
 
 
 # 检查域名状态 {#check-status}
+
+了解如何确定 Cloud Manager 是否已成功验证您的自定义域名。
+
+## 要求 {#requirements}
+
+在Cloud Manager中检查域名状态之前，您必须满足这些要求。
+
+* 您必须首先为自定义域添加TXT记录，如[添加TXT记录文档中所述。](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+
+## 如何检查自定义域名的状态 {#how-to}
 
 您可以在 Cloud Manager 中确定自定义域名的状态。
 
@@ -27,16 +37,25 @@ ht-degree: 88%
 
 1. 单击域名的&#x200B;**状态**&#x200B;图标。
 
-Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息之一。
+将显示状态详细信息。 当显示&#x200B;**域已验证和部署**&#x200B;状态时，您的自定义域即可使用。 有关不同状态及其含义的详细信息，请参阅[下一部分](#statuses)。
+
+>[!NOTE]
+>
+>当您在&#x200B;**添加自定义域**&#x200B;向导的验证步骤中选择&#x200B;**创建**&#x200B;时，当[向Cloud Manager中添加新的自定义域名时，Cloud Manager将自动触发验证。](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)对于后续验证，您必须主动选择状态旁边的再次验证图标。
+
+## 了解验证状态 {#statuses}
+
+Cloud Manager将通过[TXT值](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)验证域所有权，并显示以下状态消息之一。
 
 * **域验证失败** – TXT 值缺失或检测到错误。
 
-   * 按照提供的说明解决问题。
+   * 按照状态消息中提供的说明解决问题。
    * 准备就绪后，您必须选择状态旁边的&#x200B;**再次验证**&#x200B;图标。
 
 * **域验证正在进行** – 验证正在进行中。
 
    * 通常，在您选择状态旁边的&#x200B;**再次验证**&#x200B;图标后，该状态会显示。
+   * 由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。
 
 * **已验证，部署失败** – 验证成功，但 CDN 部署失败。
 
@@ -53,11 +72,9 @@ Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息�
 
    * 请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)，了解更多信息。
 
-当您在&#x200B;**添加自定义域**&#x200B;向导的验证步骤中选择&#x200B;**保存**&#x200B;时，Cloud Manager 将自动触发 TXT 验证。对于后续验证，必须主动选择状态旁边的再次验证图标。
-
 ## 域名错误 {#domain-error}
 
-以下是一些常见的域名错误及其典型的解决方法。
+以下是一些常见的域名验证错误及其典型分辨率。
 
 ### 域未安装错误 {#domain-not-installed}
 
@@ -92,3 +109,7 @@ Cloud Manager 将通过 TXT 值验证域所有权，并显示以下状态消息�
 使用 UI 迁移所有预先存在的环境配置后，消息将消失。消息可能需要 1 – 2 个工作日才能消失。
 
 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)，了解更多详细信息。
+
+## 后续步骤 {#next-steps}
+
+在Cloud Manager中验证域状态后，您需要通过添加指向AEM as a Cloud Service的DNS CNAME或APEX记录来配置DNS设置。 继续文档[配置DNS设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)以继续设置自定义域名。
