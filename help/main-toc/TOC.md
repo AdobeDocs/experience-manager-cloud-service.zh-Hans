@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
+source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
 workflow-type: tm+mt
-source-wordcount: '5283'
+source-wordcount: '5297'
 ht-degree: 97%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 97%
    + AEMaaCS 功能发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [2024.6.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [2024.5.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
          + [2024.4.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [2024.3.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -686,6 +687,7 @@ ht-degree: 97%
             + [将自适应表单提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [将自适应表单提交到 Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [使用授权范围配置具有有限访问权限的SharePoint站点](/help/forms/configure-sharepoint-site-limited-access.md)
             + [将 AEM 自适应表单与 AEM 工作流集成](/help/forms/configure-submit-action-workflow.md)
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)

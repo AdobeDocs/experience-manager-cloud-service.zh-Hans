@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 4%
 
 ---
@@ -91,8 +91,6 @@ ht-degree: 4%
 * 如果规则检查条件，并在字段中提供值或退出字段时立即执行操作，则建议在评估条件的字段中编写具有condition-action结构或When规则类型的规则。
 * 当用户更改应用When规则的对象的值时，将评估When规则中的条件。 但是，如果您希望操作在服务器端更改时触发（如预填充值），则建议编写一个When规则以在字段初始化时触发操作。
 * 在编写下拉列表、单选按钮或复选框对象的规则时，表单中这些表单对象的选项或值会在规则编辑器中预填充。
-
-## 后续步骤
 
 要了解如何使用用户界面在规则编辑器中编写和管理规则，请参阅[基于核心组件的自适应Forms的规则编辑器用户界面](/help/forms/rule-editor-core-components-user-interface.md)一文。
 

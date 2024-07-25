@@ -1,10 +1,11 @@
 ---
 title: 基础和核心组件规则编辑器之间有何区别？
 description: 本文解释了基础组件规则编辑器和核心组件规则编辑器之间的区别
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: 0feef02c-6186-45f2-9929-07120126c596
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 1%

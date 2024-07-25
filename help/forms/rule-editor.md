@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 1%
@@ -561,7 +561,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 * 如果您需要自定义配置和描述
 * 因为有多种方法可以在`JavaScript,`中声明函数，而注释允许您跟踪这些函数。
 
-规则编辑器支持脚本和自定义函数的JavaScript ES2015语法。
+规则编辑器支持脚本和自定义函数的JavaScript ES5语法。
 有关详细信息，请参阅[jsdoc.app](https://jsdoc.app/)。
 
 支持的`jsdoc`标记：

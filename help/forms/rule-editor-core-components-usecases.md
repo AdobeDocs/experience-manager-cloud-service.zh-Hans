@@ -4,13 +4,13 @@ description: 本文概述了自适应表单中基于核心组件的规则编辑�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
-
 
 # 规则编辑器的不同用例
 
@@ -18,9 +18,10 @@ ht-degree: 0%
 现在，让我们讨论规则编辑器的不同实施。
 
 
-## 在具有内置功能的可重复面板中简化复杂的计算
+## 在具有函数的可重复面板中简化复杂的计算
 
-规则编辑器允许您对可重复面板中的字段直接使用开箱即用的函数，如Sum、Min、Max和Join。 这释放了强大的自动化功能，允许您实施复杂的业务逻辑而无需自定义代码。
+规则编辑器允许您对可重复面板中的字段直接使用开箱即用的函数，如Sum、Min、Max和Join。 您还可以将一个可重复的面板字段值传递到接受数字数组、字符串数组、布尔数组等的函数。 这释放了强大的自动化功能，允许您实施复杂的业务逻辑而无需自定义代码。
+
 假设有一个带有可重复面板的表单，其中每个面板实例都收集有关资产的声明值的信息。
 
 ![可重复的表单](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ ht-degree: 0%
 在填写表单时，添加实例以声明资产值，`Calculate Asset Value`按钮计算所有已声明资产值的总和，并将结果显示在`assetvalue`文本框中的总计中。
 
 ![支持OOTB函数中的可重复面板字段](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> 如果可重复面板字段的值传递到不接受数组的函数，则来自可重复面板的最后一个实例的字段值传递到函数。
 
 这只是个例子！ 探索可用的[功能](#b-form-objects-and-functions-br)以简化工作流程并提高表单中的数据准确性。
 

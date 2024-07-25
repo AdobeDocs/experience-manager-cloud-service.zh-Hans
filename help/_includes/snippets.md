@@ -1,8 +1,8 @@
 ---
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 74%
+source-wordcount: '662'
+ht-degree: 72%
 
 ---
 # 代码片段 {#snippets}
@@ -100,7 +100,7 @@ ht-degree: 74%
    </tr>
    <tr>
     <td>ES10 支持 </td>
-    <td>尚不支持 ES10。 </td>
+    <td>尚不支持ES10。 它仅支持ES5 JavaScript功能。 </td>
     <td>支持自定义函数中的现代 JavaScript 功能，例如 let 和箭头函数（ES10 支持）。 
    </td>
    </tr>
