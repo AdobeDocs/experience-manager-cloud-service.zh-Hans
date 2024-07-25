@@ -4,10 +4,10 @@ description: 了解Adobe Experience Manager (AEM) as a Cloud Service如何使用
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 1%
+source-wordcount: '997'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的
 #### 更新活动
 
 与之前一样，使用Cloud Manager UI环境面板仍然可以检查每个环境的当前AEM版本。 非侵入式维护更新（包括客户编写的测试）使用管道中使用的相同质量审核。
-每当对程序的环境应用非侵入式维护更新时，将发送Cloud Manager UI通知。 您可以将其配置为也发送到您的电子邮件。
+每当对程序环境应用非侵入式维护更新时，将发送[Cloud Manager UI通知](/help/implementing/cloud-manager/notifications.md)。 您可以将其配置为也发送到您的电子邮件。
 
 >[!NOTE]
 >
@@ -102,3 +102,11 @@ AEM更新需要执行大量且完全自动化的产品验证管道，该管道�
 此功能允许AEM同时引用多个存储库。 在[滚动部署](/help/implementing/deploying/overview.md#how-rolling-deployments-work)中，新AEM版本包含其自己的`/libs` （基于TarMK的不可变存储库）。 它与旧版AEM不同，不过两者都引用基于DocumentMK的共享可变存储库，该存储库包含`/content`、`/conf`、`/etc`等区域。
 
 由于旧版本和新版本都有各自的`/libs`版本，因此在滚动更新期间它们都可以处于活动状态。 而且，在旧设备完全被新设备取代之前，这两种设备都可以承受流量。
+
+## 更多信息 {#further-information}
+
+有关相关主题的更多详细信息：
+
+* [Cloud Manager CI/CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Cloud Manager UI通知](/help/implementing/cloud-manager/notifications.md)
+* [Adobe Experience Manager as a Cloud Service架构](/help/overview/architecture.md)
