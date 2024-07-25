@@ -4,9 +4,9 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
+source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4561'
 ht-degree: 36%
 
 ---
@@ -424,8 +424,7 @@ onErrorReceived: (type, msg) => {
 | *dialogSize* | 小型、中型、大型、全屏或全屏接管 | 字符串 | 可选 | 通过使用给定选项指定布局大小可控制布局。 |
 | *colorScheme* | 浅色或深色 | 否 | | 此属性用于设置Asset Selector应用程序的主题。 您可以选择浅色或深色主题。 |
 | *filterRepoList* | 函数 | 否 |  | 您可以使用`filterRepoList`回调函数来调用Experience Manager存储库并返回已过滤的存储库列表。 |
-| *getExpiryStatus* | 函数 | 否 | | 它提供已过期资产的状态。 函数根据您提供的资源的到期日期返回`EXPIRED`、`EXPIRING_SOON`或`NOT_EXPIRED`。 请参阅[自定义过期的资源](#customize-expired-assets)。 |
-| *allowSelectionAndDrag* | 布尔值 | 否 | 假 | 函数的值可以是`true`或`false`。 如果该值设置为`false`，则无法在画布上选择或拖动过期的资产。 |
+| *expiryOptions* | 函数 | | | 您可以在以下两个属性之间使用：**getExpiryStatus**，它提供已过期资源的状态。 函数根据您提供的资源的到期日期返回`EXPIRED`、`EXPIRING_SOON`或`NOT_EXPIRED`。 请参阅[自定义过期的资源](#customize-expired-assets)。 此外，您可以使用&#x200B;**allowSelectionAndDrag**，其中函数的值可以是`true`或`false`。 如果该值设置为`false`，则无法在画布上选择或拖动过期的资产。 |
 | *showToast* | | 否 | | 它允许资产选择器为已过期的资产显示自定义的toast消息。 |
 <!--
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
