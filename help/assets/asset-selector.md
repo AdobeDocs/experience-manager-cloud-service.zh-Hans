@@ -4,10 +4,10 @@ description: 使用资源选择器在您的应用程序中搜索、查找和检�
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
+source-git-commit: cdb35a56c1337012fa099135470b91e162e8e902
 workflow-type: tm+mt
-source-wordcount: '4561'
-ht-degree: 36%
+source-wordcount: '5339'
+ht-degree: 30%
 
 ---
 
@@ -107,6 +107,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 * [将资产选择器与 [!DNL Adobe] 应用程序集成](#adobe-app-integration-vanilla)
 * [将资源选择器与非Adobe应用程序集成](#adobe-non-app-integration)
+* [Dynamic Media与OpenAPI功能集成](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -386,6 +387,171 @@ onErrorReceived: (type, msg) => {
 >
 >如果您已使用注册登录工作流集成资产选择器，但仍无法访问投放存储库，请确保清理了浏览器Cookie。 否则，您最终会在控制台中收到`invalid_credentials All session cookies are empty`错误。
 
++++
+
+<!--Integration with Polaris application content starts here-->
+
+>[!TAB Dynamic Media与OpenAPI功能的集成]
+
+### 先决条件 {#prereqs-polaris}
+
+如果要将资产选择器与Dynamic Media以及OpenAPI功能集成，请使用以下先决条件：
+
+* [通信方法](#prereqs)
+* 要访问具有OpenAPI功能的Dynamic Media，您必须具有以下功能的许可证：
+   * Assets存储库(例如，Experience Manager Assetsas a Cloud Service)。
+   * AEM Dynamic Media。
+* 只有[个批准的资产](#approved-assets.md)可用于确保品牌一致性。
+
+### Dynamic Media与OpenAPI功能集成{#adobe-app-integration-polaris}
+
+资产选择器与Dynamic Media OpenAPI进程的集成涉及各种步骤，包括创建自定义的Dynamic Media URL或准备选择Dynamic Media URL等。
+
++++**将Dynamic Media的资源选择器与OpenAPI功能集成**
+
+`rootPath`和`path`属性不应包含在具有OpenAPI功能的Dynamic Media中。 相反，您可以配置`aemTierType`属性。 以下是配置的语法：
+
+```
+aemTierType:[1: "delivery"]
+```
+
+利用此配置，可查看所有批准的资产，但不包含文件夹或采用平面结构。 有关详细信息，请导航到[资产选择器属性](#asset-selector-properties)下的`aemTierType`属性
+
++++
+
++++**从批准的资源创建动态投放URL**
+设置资源选择器后，将使用对象架构从所选资源创建动态投放URL。
+例如，在选择资产时接收的来自对象数组中的某个对象的模式：
+
+```
+{
+"dc:format": "image/jpeg",
+"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+"repo:name": "image-7.jpg",
+"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
+...
+}
+```
+
+所有选定资源均由用作JSON对象的`handleSelection`函数承载。 例如，`JsonObj`。动态投放URL是通过组合以下运营商创建的：
+
+| 对象 | JSON |
+|---|---|
+| 主机 | `assetJsonObj["repo:repositoryId"]` |
+| API根 | `/adobe/dynamicmedia/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
+| 格式 | `.jpg` |
+
+**批准的资源交付API规范**
+
+URL格式：
+`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+
+其中，
+
+* 主机为`https://delivery-pxxxxx-exxxxxx.adobe.com`
+* API根是`"/adobe/dynamicmedia/deliver"`
+* `<asset-id>`是资产标识符
+* `<seo-name>`是资源的名称
+* `<format>`为输出格式
+* `<image modification query parameters>`作为已批准资产的投放API规范的支持
+
+**已批准的资产交付API**
+
+动态投放URL具有以下语法：
+`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`，其中，
+
+* 主机为`https://delivery-pxxxxx-exxxxxx.adobe.com`
+* 原始节目投放的API根为`"/adobe/assets/deliver"`
+* `<asset-id>`是资产标识符
+* `<seo-name>`是包含扩展名或不包含扩展名的资源的名称
+
++++
+
++++**已准备好挑选动态投放URL**
+所有选定资源都由用作JSON对象的`handleSelection`函数承载。 例如，`JsonObj`。动态投放URL是通过组合以下运营商创建的：
+
+| 对象 | JSON |
+|---|---|
+| 主机 | `assetJsonObj["repo:repositoryId"]` |
+| API根 | `/adobe/assets/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"]` |
+
+以下是遍历JSON对象的两种方式：
+
+![动态投放URL](assets/dynamic-delivery-url.png)
+
+* **缩略图：**缩略图可以是图像，资产可以是PDF、视频、图像等。 但是，您可以将资产缩略图的高度和宽度属性用作动态投放演绎版。
+以下演绎版集可用于PDF类型资源：
+在sidekick中选择PDF后，选择上下文会提供以下信息。 以下是遍历JSON对象的方式：
+
+  <!--![Thumbnail dynamic delivery url](image-1.png)-->
+
+  您可以在上面的屏幕快照中引用`selection[0].....selection[4]`以获取演绎版链接数组。 例如，其中一个缩略图呈现版本的关键属性包括：
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+在上面的屏幕快照中，如果需要PDF，则需要将PDF原始演绎版的投放URL合并到目标体验中，而不是合并其缩略图。 例如，`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+
+* **视频：**您可以为使用嵌入式iFrame的视频类型资源使用视频播放器URL。 您可以在Target体验中使用以下数组演绎版：
+  <!--![Video dynamic delivery url](image.png)-->
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+  您可以在上面的屏幕快照中引用`selection[0].....selection[4]`以获取演绎版链接数组。 例如，其中一个缩略图呈现版本的关键属性包括：
+
+  上述屏幕快照中的代码片段是视频资源的一个示例。 它包括呈现版本链接数组。 摘录中的`selection[5]`是图像缩略图的示例，可用作目标体验中视频缩略图的占位符。 演绎版数组中的`selection[5]`适用于视频播放器。 这提供了一个HTML，可以设置为iframe的`src`。 它支持自适应比特率流，该流是Web优化的视频交付。
+
+  在上例中，视频播放器URL为`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+
++++具有OpenAPI功能的Dynamic Media的&#x200B;**资源选择器用户界面**
+
+在与Adobe的微前端资源选择器集成后，您可以在Experience Manager资源存储库中查看所有已批准资源的仅资源结构。
+
+具有OpenAPI功能UI的![Dynamic Media](assets/polaris-ui.png)
+
+* **A**：[隐藏/显示面板](#hide-show-panel)
+* **B**： [Assets](#repository)
+* **C**： [排序](#sorting)
+* **D**：[过滤器](#filters)
+* **E**：[搜索栏](#search-bar)
+* **F**： [按升序或降序排序](#sorting)
+* **G**：取消选择
+* **H**：选择单个或多个资源
+
++++
+
++++**配置自定义筛选条件**
+通过OpenAPI功能的Dynamic Media资源选择器，可配置自定义属性以及基于这些属性的过滤器。 `filterSchema`属性用于配置此类属性。 自定义项可以作为`metadata.<metadata bucket>.<property name>.`公开，可以根据它配置筛选器，其中，
+
+* `metadata`是资产的信息
+* `embedded`是用于配置的静态参数，并且
+* `<propertyname>`是您配置的筛选器名称
+
+对于配置，对于要配置的筛选器，在`jcr:content/metadata/`级别定义的属性将公开为`metadata.<metadata bucket>.<property name>.`。
+
+例如，在用于具有OpenAPI功能的Dynamic Media的资源选择器中，`asset jcr:content/metadata/client_name:market`上的某个属性被转换为`metadata.embedded.client_name:market`以进行筛选器配置。
+
+要获取名称，必须完成一次性活动。 对资产进行搜索API调用，然后获取属性名称（本质上是存储桶）。
+
++++
+
 >[!ENDTABS]
 
 ## 资源选择器属性 {#asset-selector-properties}
@@ -398,8 +564,6 @@ onErrorReceived: (type, msg) => {
 | *imsOrg* | 字符串 | 是 | | 为组织设置 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 时分配的 Adobe Identity Management System (IMS) ID。需要使用`imsOrg`密钥来验证您访问的组织是否位于Adobe IMS下。 |
 | *imsToken* | 字符串 | 否 | | 用于身份验证的 IMS 持有者令牌。如果您使用[!DNL Adobe]应用程序进行集成，则需要`imsToken`。 |
 | *apiKey* | 字符串 | 否 | | 用于访问 AEM 发现服务的 API 密钥。如果您使用[!DNL Adobe]应用程序集成，则需要`apiKey`。 |
-| *rootPath* | 字符串 | 否 | /content/dam/ | 资源选择器从中显示您的资源的文件夹路径。也可采用封装形式使用 `rootPath`。例如，给定以下路径`/content/dam/marketing/subfolder/`，资产选择器不允许您遍历任何父文件夹，而仅显示子文件夹。 |
-| *path* | 字符串 | 否 | | 在呈现资源选择器时用于导航到特定资源目录的路径。 |
 | *filterSchema* | 数组 | 否 | | 用于配置过滤器属性的模型。这在需要限制资源选择器中的某些过滤器选项时很有用。 |
 | *filterFormProps* | 对象 | 否 | | 指定您需要用于细化搜索的过滤器属性。为了！ 例如，MIME类型JPG、PNG、GIF。 |
 | *selectedAssets* | 数组 `<Object>` | 否 |                 | 呈现资源选择器时指定选定资源。包含资源的 id 属性的必需对象数组。例如，`[{id: 'urn:234}, {id: 'urn:555'}]` 资源必须在当前目录中可用。如果您需要使用其他目录，请也为 `path` 属性提供一个值。 |
@@ -427,6 +591,8 @@ onErrorReceived: (type, msg) => {
 | *expiryOptions* | 函数 | | | 您可以在以下两个属性之间使用：**getExpiryStatus**，它提供已过期资源的状态。 函数根据您提供的资源的到期日期返回`EXPIRED`、`EXPIRING_SOON`或`NOT_EXPIRED`。 请参阅[自定义过期的资源](#customize-expired-assets)。 此外，您可以使用&#x200B;**allowSelectionAndDrag**，其中函数的值可以是`true`或`false`。 如果该值设置为`false`，则无法在画布上选择或拖动过期的资产。 |
 | *showToast* | | 否 | | 它允许资产选择器为已过期的资产显示自定义的toast消息。 |
 <!--
+| *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
 -->
