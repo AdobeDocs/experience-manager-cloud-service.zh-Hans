@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 55%
+source-wordcount: '1177'
+ht-degree: 46%
 
 ---
 
@@ -23,263 +23,13 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 为此，Universal Editor 为内容作者提供了一个直观的 UI，只需少量培训即可开始编辑内容。本文档介绍了 Universal Editor 的创作体验。
 
+>[!NOTE]
+>
+>本文档假设您已熟悉如何访问和导航通用编辑器。 如果不是，请参阅文档[访问和导航通用编辑器。](/help/sites-cloud/authoring/universal-editor/navigation.md)
+
 >[!TIP]
 >
 >有关 Universal Editor 的更详细介绍，请参阅文档 [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)。
-
-## 准备应用程序 {#prepare-app}
-
-要使用 Universal Editor 为应用程序创作内容，应用程序必须由开发人员进行检测以支持编辑器。
-
->[!TIP]
->
->请参阅 [AEM Universal Editor 快速入门](/help/implementing/universal-editor/getting-started.md)，查看有关如何配置 AEM 应用程序以使用 Universal Editor 的示例。
-
-## 访问通用编辑器 {#accessing}
-
-一旦检测到应用程序可以使用通用编辑器，则可在AEM as a Cloud Service内部直接访问通用编辑器，而无需访问AEM。
-
-### 在AEM as a Cloud Service中访问 {#accessing-aem}
-
-1. 登录您的AEM as a Cloud Service创作实例。
-1. 使用&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)导航到为与要编辑的通用编辑器一起使用而创建的页面。
-1. 编辑页面。
-1. 将打开通用编辑器以编辑选定的页面。
-
->[!NOTE]
->
->在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中编辑页面时，控制台将打开适用于该页面的[模板](/help/sites-cloud/authoring/sites-console/templates.md)的编辑器，可以是本文档中描述的通用编辑器，也可以是[页面编辑器。](/help/sites-cloud/authoring/page-editor/introduction.md)
-
-### 直接访问 {#accessing-directly}
-
-1. 登录通用编辑器。 您需要Adobe ID才能登录，[才能访问通用编辑器。](/help/implementing/universal-editor/getting-started.md#request-access)
-
-1. 登录后，将要编辑的页面的 URL 输入到[地址栏](#location-bar)中，这样您就可以开始编辑内容，例如[文本内容](#text-mode)或[媒体内容](#media-mode)。
-
-## 了解 UI {#ui}
-
-UI分为以下几个主要区域。
-
-* [Experience Cloud 标题](#experience-cloud-header)
-* [通用编辑器工具栏](#universal-editor-toolbar)
-* [编辑器](#editor)
-* [属性边栏](#properties-rail)
-
-![Universal Editor UI](assets/ui.png)
-
-### Experience Cloud 标题 {#experience-cloud-header}
-
-Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让您知道您在 Experience Cloud 中的位置，并帮助您导航到其他 Experience Cloud 应用程序。
-
-![Experience Cloud 标题](assets/experience-cloud-header.png)
-
-#### Experience Manager {#experience-manager}
-
-选择标题左侧的 Adobe Experience Cloud 链接可导航到 Experience Manager 解决方案的根来访问工具，例如 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 和 [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
-
-![“全局导航”按钮](assets/global-navigation.png)
-
-#### 组织 {#organization}
-
-这将显示您当前登录的组织。如果您的Adobe ID与多个组织关联，请选择切换到其他组织。
-
-![组织指示器](assets/organization.png)
-
-#### 解决方案 {#solutions}
-
-点按或单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
-
-![解决方案切换器](assets/solutions.png)
-
-#### 帮助 {#help}
-
-可使用帮助图标快速访问学习和支持资源。
-
-![帮助](assets/help.png)
-
-#### 通知 {#notifications}
-
-此图标带有一个标记，显示当前分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)的数量。
-
-![通知](assets/notifications.png)
-
-#### 用户属性 {#user-properties}
-
-选择代表用户的图标来访问用户设置。如果您尚未配置用户图片，系统会随机分配一个图标。
-
-![用户属性](assets/user-properties.png)
-
-### 通用编辑器工具栏 {#universal-editor-toolbar}
-
-Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的正下方。](#experience-cloud-header)它为您提供了快速访问权限，以便导航到另一个页面进行编辑以及发布当前页面。
-
-![通用编辑器工具栏](assets/universal-editor-toolbar.png)
-
-#### “主页”按钮 {#home-button}
-
-使用主页按钮可返回到通用编辑器的起始页
-
-![汉堡菜单](assets/home-button.png)
-
-在起始页上，您可以输入要用通用编辑器编辑的站点的URL。
-
-![起始页](assets/start-page.png)
-
->[!NOTE]
->
->要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器。](/help/implementing/universal-editor/getting-started.md)
-
-#### 位置栏 {#location-bar}
-
-位置栏为您显示正在编辑的页面的位置。选择可输入另一个要编辑的页面的地址。
-
-![位置栏](assets/location-bar.png)
-
->[!TIP]
->
->使用热键 `L` 可打开地址栏。
-
->[!NOTE]
->
->要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器。](/help/implementing/universal-editor/getting-started.md)
-
-#### 身份验证标头设置 {#authentication-settings}
-
-如果需要[设置自定义身份验证标头以进行本地开发，请选择身份验证标头设置图标。](/help/implementing/universal-editor/developer-overview.md#auth-header)
-
-![身份验证标题设置按钮](assets/authentication-header-settings.png)
-
-#### 模拟器设置 {#emulator}
-
-选择模拟图标以定义通用编辑器呈现页面的方式。
-
-![“模拟器”图标](assets/emulator.png)
-
-点按或单击模拟图标将显示选项。
-
-![模拟选项](assets/emulation-options.png)
-
-默认情况下，编辑器会在桌面布局中打开，其中高度和宽度由浏览器自动定义。
-
-您还可选择模拟移动设备并在 Universal Editor 中：
-
-* 定义其方向
-* 定义宽度和高度
-* 更改方向
-
-#### 预览模式 {#preview-mode}
-
-在预览模式中，编辑器中呈现的页面与在您发布的服务上看到的一样。这允许内容作者通过单击链接等来导航内容。
-
-![预览模式](assets/preview-mode.png)
-
->[!TIP]
->
->使用热键`P`切换到预览模式或从预览模式切换。
-
-#### 打开应用程序预览 {#open-app-preview}
-
-选择打开应用程序预览图标可在自身浏览器选项卡中打开您当前编辑的页面，无需编辑即可预览您的内容。
-
-![打开应用程序预览](assets/open-app-preview.png)
-
->[!TIP]
->
->使用热键 `O`（字母 O）可打开应用程序预览。
-
-#### 发布 {#publish}
-
-选择“发布”按钮，以便将更改发布到实时内容以供读者使用。
-
-![“发布”按钮](assets/publish.png)
-
->[!TIP]
->
->有关使用 Universal Editor 发布内容的更多信息，请参阅文档[使用 Universal Editor 发布内容](publishing.md)。
-
-### 编辑器 {#editor}
-
-编辑器占据窗口的大部分区域，并在其中呈现在[地址栏](#location-bar)中指定的页面。
-
-![编辑器](assets/editor.png)
-
-如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
-
-### 属性边栏 {#properties-rail}
-
-属性边栏始终位于编辑器的右侧。 根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
-
-![属性边栏](assets/component-rail.png)
-
-#### 属性模式 {#properties-mode}
-
-在属性模式中，边栏显示当前在编辑器中选择的组件的属性。这是加载页面时属性边栏的默认模式。
-
-![属性模式](assets/properties-mode.png)
-
-根据选择的组件类型，可以在属性边栏中显示和修改详细信息。
-
-![组件详细信息](assets/component-details.png)
-
-并非所有组件都具有可以显示和/或编辑的详细信息。
-
->[!TIP]
->
->使用热键 `D` 可切换到属性模式。
-
-#### 内容树模式 {#content-tree-mode}
-
-在内容树模式中，边栏显示页面内容的层次结构。
-
-![内容树模式](assets/content-tree-mode.png)
-
-在内容树中选择某个项目时，编辑器将滚动到该内容并将其选定。
-
-![内容树](assets/content-tree.png)
-
->[!TIP]
->
->使用热键 `F` 可切换到内容树模式。
-
-##### 编辑 {#edit}
-
-编辑时，所选组件的选项会显示在属性边栏中，您可以在此处编辑所选组件。 如果选定的组件是内容片段，您还可以选择编辑按钮。
-
-![“编辑”图标](assets/edit.png)
-
-点按或单击“编辑”按钮将在一个新的选项卡中打开[内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)。这将允许您访问内容片段编辑器的全部功能以编辑关联的内容片段。
-
-根据工作流的需求，您可能需要在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
-
->[!TIP]
->
->使用热键 `E` 可编辑所选组件。
-
-##### 添加 {#add}
-
-如果在内容树或编辑器中选择了容器组件，则属性边栏上会显示添加选项。
-
-![添加图标](assets/ue-add-component-icon.png)
-
-点击或单击“添加”按钮将打开一个可用组件的下拉菜单[添加到选定的容器。](#adding-components)
-
-![添加上下文菜单](assets/add-context-menu.png)
-
->[!TIP]
->
->使用热键`A`将组件添加到选定的容器组件。
-
-##### 删除 {#delete}
-
-如果在内容树或编辑器中选择容器组件中的组件，则属性边栏上会显示删除选项。
-
-![“删除”图标](assets/ue-delete-component-icon.png)
-
-点击或单击删除按钮[删除该组件。](#deleting-components)
-
->[!TIP]
->
->使用热键 `Shift+Backspace` 从容器中删除选定的组件。
 
 ## 编辑内容 {#editing-content}
 
@@ -289,9 +39,9 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 >[!TIP]
 >
->默认情况下，点击或单击内容会选择进行编辑。 如果要通过以下链接导航内容，请切换到[预览模式。](#preview-mode)
+>默认情况下，点击或单击内容会选择进行编辑。 如果要通过以下链接导航内容，请切换到[预览模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在[属性边栏中为该内容提供其他信息和选项。](#properties-rail)
+根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在[属性边栏中为该内容提供其他信息和选项。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ### 编辑纯文本 {#edit-plain-text}
 
@@ -301,7 +51,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 按Enter/Return键或选择文本框外部以保存更改。
 
-当您选择选择文本组件时，其详细信息将显示在属性边栏中。 您还可以编辑边栏中的文本。
+当您选择文本组件时，其详细信息将显示在[属性边栏中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您还可以编辑边栏中的文本。
 
 ![在属性边栏中编辑文本](assets/ue-editing-text-component-rail.png)
 
@@ -316,13 +66,13 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 为方便起见，文本上的格式选项和详细信息可在两个位置使用。
 
 * **上下文菜单**&#x200B;在RTF块上方打开，并在上下文中提供基本的格式设置选项。 由于空间限制，某些选项可能隐藏在省略号按钮后面。
-* **属性边栏**&#x200B;显示所有可用的格式设置选项以及文本。
+* **[属性边栏](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)**&#x200B;显示所有可用的格式设置选项以及文本。
 
 一旦焦点离开已编辑的字段，更改将自动保存。
 
 ### 编辑媒体 {#edit-media}
 
-您可以在属性边栏中查看其详细信息。
+您可以在[属性边栏中查看其详细信息。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![编辑媒体](assets/ue-edit-media.png)
 
@@ -335,7 +85,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ### 编辑内容片段 {#edit-content-fragment}
 
-如果选择[内容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，您可以在属性边栏中编辑其详细信息。
+如果选择[内容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，则可以在[属性边栏](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中编辑其详细信息。
 
 ![编辑内容片段](assets/ue-edit-cf.png)
 
@@ -345,13 +95,13 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
 
-如果要改在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑内容片段，请在模式边栏中单击[编辑按钮](#edit)。
+如果要改在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑内容片段，请单击属性边栏中的[编辑按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)。
 
 根据工作流的需求，您可能需要在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
 
 ### 向容器添加组件 {#adding-components}
 
-1. 在内容树或编辑器中选择一个容器组件。
+1. 在[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或编辑器中选择容器组件。
 1. 然后，在属性边栏中选择添加图标。
 
    ![选择要添加到容器的组件](assets/ue-add-component.png)
@@ -364,7 +114,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ### 从容器中删除组件 {#deleting-components}
 
-1. 在内容树或编辑器中选择一个容器组件。
+1. 在[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或编辑器中选择容器组件。
 1. 选择容器的V形图标以在内容树中展开其内容。
 1. 然后，在内容树中，选择容器内的一个组件。
 1. 在属性边栏中选择删除图标。
@@ -379,22 +129,22 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ### 对容器中的组件重新排序 {#reordering-components}
 
+1. 如果尚未进入[内容树模式，](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)切换到它。
 1. 在内容树或编辑器中选择一个容器组件。
-1. 如果尚未进入[内容树模式，](#content-tree-mode)切换到它。
 1. 选择容器的V形图标以在内容树中展开其内容。
 1. 拖动容器内组件旁边的手柄图标表明您可以重新排列它们。拖动组件以对它们在容器内重新排序。
 
    ![重新排序组件](assets/ue-reordering-components.png)
 
-1. 拖动的组件在组件树中变成灰色，而插入点由蓝线表示。释放组件以将其放置在新位置。
+1. 拖动的组件在内容树中变为灰色，而您的插入点以蓝线表示。 释放组件以将其放置在新位置。
 
 组件在内容树和编辑器中重新排序
 
 ## 预览内容 {#previewing-content}
 
-编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
+编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
 
-在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换出[预览模式。](#preview-mode)
+在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换出[预览模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
 ## 其他资源 {#additional-resources}
 
@@ -410,3 +160,10 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) – 了解 Universal Editor 所需的数据属性和类型。
 * [Universal Editor 身份验证](/help/implementing/universal-editor/authentication.md) – 了解 Universal Editor 如何进行身份验证。
 
+## 编辑组件继承 {#inheritance}
+
+继承是一种机制，通过该机制，可以链接内容，以便更改一个内容会自动更改另一个内容。
+
+使用通用编辑器，您可以通过简单地更新内容来取消内容的继承。 编辑器会自动禁用作者在该页面上所做所有更改的继承，确保在从Blueprint同步更新时保留修改的内容。
+
+有关使用通用编辑器继承如何工作的更多详细信息，请参阅通用编辑器中的文档[内容继承。](/help/sites-cloud/authoring/universal-editor/inheritance.md)

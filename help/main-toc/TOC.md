@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
 workflow-type: tm+mt
-source-wordcount: '5273'
+source-wordcount: '5283'
 ht-degree: 97%
 
 ---
@@ -330,8 +330,10 @@ ht-degree: 97%
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Universal Editor {#universal-editor}
+         + [导航通用编辑器](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [使用 Universal Editor 创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [使用 Universal Editor 发布内容](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [通用编辑器中的内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + 片段 {#fragments}
          + [内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)
