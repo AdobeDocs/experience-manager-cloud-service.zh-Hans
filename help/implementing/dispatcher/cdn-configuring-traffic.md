@@ -4,12 +4,13 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 3%
+source-wordcount: '1319'
+ht-degree: 2%
 
 ---
+
 
 # 在 CDN 上配置流量 {#cdn-configuring-cloud}
 
@@ -20,11 +21,11 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 * [客户端重定向](#client-side-redirectors) — 触发浏览器重定向。 此功能尚未正式发布，但可供早期采用者使用。
 * [源选择器](#origin-selectors) — 代理到其他源后端。
 
-在CDN上还可以配置流量过滤器规则（包括WAF），它控制CDN允许或拒绝的流量。 此功能已发布，您可以在[流量过滤器规则（包括WAF规则）](/help/security/traffic-filter-rules-including-waf.md)页面中了解更多相关信息。
+在CDN上还可配置的还有流量过滤器规则(包括WAF)，这些规则控制CDN允许或拒绝的流量。 此功能已发布，您可以在[流量筛选器规则(包括WAF规则)](/help/security/traffic-filter-rules-including-waf.md)页面中了解更多相关信息。
 
 此外，如果CDN无法联系其源，则可以编写引用自托管自定义错误页面（随后将渲染）的规则。 请阅读[配置CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md)文章，以了解有关此内容的更多信息。
 
-所有这些在源代码管理的配置文件中声明的规则，均使用[Cloud Manager的配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)进行部署。 请注意，配置文件（包括流量过滤器规则）的累积大小不能超过100 KB。
+所有这些在源代码管理的配置文件中声明的规则，均使用Cloud Manager [config管道进行部署。](/help/operations/config-pipeline.md)请注意，配置文件（包括流量过滤器规则）的累积大小不能超过100 KB。
 
 ## 评估顺序 {#order-of-evaluation}
 
@@ -36,23 +37,24 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 在CDN上配置流量之前，您需要执行以下操作：
 
-* 在Git项目的顶级文件夹中创建此文件夹和文件结构：
+1. 创建名为`cdn.yaml`或类似的文件，并引用以下部分中的各种配置片段。
 
-```
-config/
-     cdn.yaml
-```
+   所有代码片段都具有这些通用属性，这些通用属性在[配置管道文章](/help/operations/config-pipeline.md#common-syntax)中进行了说明。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为&#x200B;*1*。
 
-* `cdn.yaml`配置文件应同时包含元数据和以下示例中描述的规则。 `kind`参数应设置为`CDN`，版本应设置为架构版本，当前版本为`1`。
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   ```
 
-* 在Cloud Manager中创建目标部署配置管道。 请参阅[配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+1. 将文件放置在名为&#x200B;*config*&#x200B;或类似的顶级文件夹下，如[配置管道文章](/help/operations/config-pipeline.md#folder-structure)中所述。
 
-**注释**
+1. 在Cloud Manager中创建配置管道，如[配置管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)中所述。
 
-* RDE当前不支持配置管道。
-* 您可以使用 `yq` 在本地验证配置文件（例如 `yq cdn.yaml`）的 YAML 格式。
+1. 部署配置。
 
-## 语法 {#configuration-syntax}
+## 规则语法 {#configuration-syntax}
 
 以下部分中的规则类型具有相同的语法。
 
@@ -313,7 +315,7 @@ data:
 在某些情况下，可以使用源选择器将流量通过AEM Publish路由到AEMEdge Delivery Services：
 
 * 某些内容由AEM Publish管理的域交付，而来自同一域的其他内容由Edge Delivery Services交付
-* 通过Configuration Pipeline部署的规则（包括流量过滤器规则或请求/响应转换）将使Edge Delivery Services交付的内容受益
+* Edge Delivery Services交付的内容将受益于通过配置管道部署的规则，包括流量过滤器规则或请求/响应转换
 
 以下是可以实现此目标的原点选择器规则的示例：
 

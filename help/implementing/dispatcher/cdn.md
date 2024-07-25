@@ -4,12 +4,13 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1128'
 ht-degree: 23%
 
 ---
+
 
 # AEM as a Cloud Service 中的 CDN {#cdn}
 
@@ -43,7 +44,7 @@ AEM管理的CDN满足了大多数客户的性能和安全要求。 对于发布�
 
 ### 在 CDN 上配置流量 {#cdn-configuring-cloud}
 
-可在配置文件中声明用于配置CDN流量和过滤器的规则，并使用[Cloud Manager的配置管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)将其部署到CDN。 有关更多详细信息，请参阅[在CDN上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)和[包含WAF规则的流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md)。
+可在配置文件中声明用于配置CDN流量和过滤器的规则，并使用[Cloud Manager的配置管道将其部署到CDN。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)有关更多详细信息，请参阅[在CDN上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)和[流量过滤器规则(包括WAF规则)](/help/security/traffic-filter-rules-including-waf.md)。
 
 ### 配置CDN错误页面 {#cdn-error-pages}
 
@@ -70,7 +71,7 @@ CDN错误页面可以配置为在极少数无法访问AEM的情况下覆盖提�
 1. 将SNI设置为AdobeCDN的入口。
 1. 将Host标头设置为原始域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 使用域名设置`X-Forwarded-Host`标头，以便AEM能够确定主机标头。 例如：`X-Forwarded-Host:example.com`。
-1. 设置`X-AEM-Edge-Key`。 该值应来自Adobe。
+1. 设置`X-AEM-Edge-Key`。 应使用Cloud Manager配置管道配置该值，如[本文](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value)中所述。
 
    * 需要，以便AdobeCDN能够验证请求的源并将`X-Forwarded-*`标头传递到AEM应用程序。 例如，`X-Forwarded-For`用于确定客户端IP。 因此，受信任的调用方（即客户管理的CDN）有责任确保`X-Forwarded-*`标头的正确性（请参阅下面的注释）。
    * （可选）当`X-AEM-Edge-Key`不存在时，可以阻止对AdobeCDN入口的访问。 如果需要直接访问AdobeCDN的入口，请通知Adobe（将被阻止）。
@@ -79,7 +80,7 @@ CDN错误页面可以配置为在极少数无法访问AEM的情况下覆盖提�
 
 在接受实时流量之前，您应向Adobe的客户支持部门验证端到端流量路由是否正常运行。
 
-获取`X-AEM-Edge-Key`后，您可以按照以下步骤测试请求是否正确路由。
+设置`X-AEM-Edge-Key`后，您可以按照以下步骤测试请求是否正确路由。
 
 在Linux®中：
 

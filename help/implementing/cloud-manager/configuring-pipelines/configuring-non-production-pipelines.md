@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 75%
+source-wordcount: '1405'
+ht-degree: 74%
 
 ---
 
@@ -115,9 +115,9 @@ ht-degree: 75%
 
 目标部署仅会为AEM应用程序的选定部分部署代码。 在此类部署中，您可以选择&#x200B;**包含**&#x200B;以下代码类型之一：
 
-* **配置** — 在AEM环境中配置流量过滤器规则的设置。
-   * 请参阅文档[流量过滤器规则（包括WAF规则）](/help/security/traffic-filter-rules-including-waf.md)，了解如何管理存储库中的流量过滤器规则，以便正确部署这些规则。
-   * 运行目标部署管道时，将部署配置[，例如WAF配置](/help/security/traffic-filter-rules-including-waf.md)，前提是这些配置已保存到您在管道中定义的环境、存储库和分支中。
+* **配置** — 配置AEM环境中各种功能的设置。
+   * 有关支持的配置（包括日志转发、清除相关的维护任务和各种CDN配置）的列表，请参阅[使用配置管道文章](/help/operations/config-pipeline.md)，并在存储库中管理这些配置以便正确部署它们。
+   * 运行目标部署管道时，将部署配置，前提是这些配置已保存到您在管道中定义的环境、存储库和分支中。
    * 在任何时候，每个环境只能有一个配置管道。
 * **前端代码** — 为AEM应用程序的前端配置JavaScript和CSS。
    * 有了前端管道，前端开发人员可以获得更多的独立性，可加快开发过程。

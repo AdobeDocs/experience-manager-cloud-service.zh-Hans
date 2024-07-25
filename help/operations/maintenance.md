@@ -4,12 +4,13 @@ description: 了解AEM as a Cloud Service中的维护任务以及如何配置它
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: b0e72f0eee0f20b19b0d9c4317a061855ffd4f62
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2055'
 ht-degree: 30%
 
 ---
+
 
 # AEM as a Cloud Service 中的维护任务 {#maintenance-tasks-in-aem-as-a-cloud-service}
 
@@ -219,23 +220,19 @@ ht-degree: 30%
 > 
 >同样，在配置文件中部署审核日志清除节点后，必须将其保留为已声明状态而不是将其删除。
 
-**1** — 在Git中项目的顶级文件夹中创建以下文件夹和文件结构：
+**1**&#x200B;创建名为`mt.yaml`或类似的文件。
 
-```
-config/
-     mt.yaml
-```
+**2**&#x200B;将文件放置在名为`config`或类似的顶级文件夹下的某个位置，如[配置管道文章中所述。](/help/operations/config-pipeline.md#folder-structure)
 
-**2** — 在配置文件中声明属性，包括：
+**3** — 在配置文件中声明属性，包括：
 
-* 值为“MaintenanceTasks”的“kind”属性。
-* “版本”资产（当前为版本1）。
-* 具有属性`envTypes`的可选“元数据”对象，该对象具有此配置对其有效的环境类型(dev、stage、prod)的逗号分隔列表。 如果未声明任何元数据对象，则该配置对所有环境类型都有效。
+* 数据节点上方的一些属性 — 有关描述，请参阅[配置管道文章](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*MaintenanceTasks*，版本应设置为&#x200B;*1*。
+
 * 同时具有`versionPurge`和`auditLogPurge`对象的数据对象。
 
 请参阅下面的`versionPurge`和`auditLogPurge`对象的定义和语法。
 
-您应构建类似于以下示例的配置：
+构建类似于以下示例的配置：
 
 ```
 kind: "MaintenanceTasks"
@@ -270,14 +267,7 @@ data:
 * 必须定义所有属性。 没有继承的默认值。
 * 必须遵循以下属性表中的类型（整数、字符串、布尔值等）。
 
->[!NOTE]
->您可以使用`yq`在本地验证配置文件的YAML格式（例如，`yq mt.yaml`）。
-
-**3** — 配置非生产和生产配置管道。
-
-快速开发环境(RDE)不支持清除。 对于生产（非沙盒）程序中的其他环境类型，请在Cloud Manager中创建目标部署配置管道。
-
-有关详细信息，请参阅[配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+**4** — 在Cloud Manager中创建配置管道，如[配置管道文章中所述。](/help/operations/config-pipeline.md#managing-in-cloud-manager)沙盒和快速开发环境(RDE)不支持清除。
 
 ### 版本清除 {#version-purge}
 

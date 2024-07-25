@@ -4,10 +4,10 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '3938'
-ht-degree: 99%
+source-wordcount: '3939'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 流量过滤规则的子类别需要“增强安全性”许可证或“WAF-DDoS 保护”许可证。这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
 
-可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。未来还将支持 RDE。
+流量过滤器规则可以通过Cloud Manager配置管道部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。 未来还将支持 RDE。
 
 [按照教程进行操作，](#tutorial)快速建立有关此功能的具体专业知识。
 
@@ -63,7 +63,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
 例如，客户可在 Apache 层配置[ Dispatcher 模块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制访问某些内容。
 
-如本文所述，还可使用 Cloud Manager 的配置管道将流量过滤器规则部署到 Adobe Managed CDN。除了基于 IP 地址、路径和标头等属性的流量过滤规则或基于设置速率限制的规则之外，客户还可许可过滤规则的一个强有力的子类别，称为 WAF 规则。
+如本文所述，可以使用Cloud Manager的[配置管道将流量过滤器规则部署到Adobe托管的CDN。](/help/operations/config-pipeline.md)除了基于IP地址、路径和标头等属性的流量过滤器规则或基于设置速率限制的规则之外，客户还可以许可一个称为WAF规则的强大流量过滤器子类别。
 
 ## 建议流程 {#suggested-process}
 
@@ -79,14 +79,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
 ## 设置 {#setup}
 
-1. 首先，在您在 Git 中的项目的顶层文件夹中创建以下文件夹和文件结构：
-
-   ```
-   config/
-        cdn.yaml
-   ```
-
-1. `cdn.yaml` 应包含元数据以及流量过滤器规则和 WAF 规则的列表。
+1. 创建包含一组流量过滤器规则(包括WAF规则)的文件`cdn.yaml`。
 
    ```
    kind: "CDN"
@@ -107,33 +100,22 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
          action: block
    ```
 
-应将 `kind` 参数应设置为 `CDN`，并应将 version 设置为架构版本，即 `1`。请查看以下示例。
+   有关`data`节点上方属性的说明，请参阅[配置管道文章](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应设置为&#x200B;*CDN*，版本应设置为`1`。
 
-
-<!-- Two properties -- `envType` and `envId` -- may be included to limit the scope of the rules. The envType property may have values "dev", "stage", or "prod", while the envId property is the environment (for example, "53245"). This approach is useful if it is desired to have a single configuration pipeline, even if some environments have different rules. However, a different approach could be to have multiple configuration pipelines, each pointing to different repositories or git branches. -->
 
 1. 如果许可了 WAF 规则，则应在 Cloud Manager 中为新的和现有的程序场景启用它，如下所述。
 
    1. 要在新程序上配置 WAF，请在[添加生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)时，选中&#x200B;**安全性**&#x200B;选项卡上的 **WAF-DDOS 保护**&#x200B;复选框。
 
-   1. 要在现有程序上配置 WAF，可在任何时候[编辑您的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)，并在&#x200B;**安全性**&#x200B;选项卡上取消选中或选中 **WAF-DDOS** 选项。
+   1. 要在现有程序上配置WAF，请[编辑您的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)，并在&#x200B;**安全性**&#x200B;选项卡上随时取消选中或选中&#x200B;**WAF-DDOS**&#x200B;选项。
 
-1. 对于 RDE 以外的环境类型，请在 Cloud Manager 中创建目标部署配置管道。
-
-   * [请参阅配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
-   * [请参阅配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
-
-对于 RDE，使用命令行，但目前不支持 RDE。
-
-**注释**
-
-* 您可以使用 `yq` 在本地验证配置文件（例如 `yq cdn.yaml`）的 YAML 格式。
+1. 在Cloud Manager中创建配置管道，如[配置管道文章中所述。](/help/operations/config-pipeline.md#managing-in-cloud-manager)管道将引用一个顶级`config`文件夹，该文件夹中的`cdn.yaml`文件位于以下某个位置，如此处](/help/operations/config-pipeline.md#folder-structure)所述。[
 
 ## 流量过滤规则语法 {#rules-syntax}
 
-您可以配置 `traffic filter rules` 以匹配 IPS、用户代理、请求标头、主机名、地理位置和 URL 等模式。
+您可以配置&#x200B;*流量过滤规则*&#x200B;以匹配模式，如IP、用户代理、请求标头、主机名、地理位置和URL。
 
-许可“增强安全性”或“WAF-DDoS 保护”安全产品的客户还可配置一种特殊类别的流量过滤器规则，称为 `WAF traffic filter rules`（或简称为 WAF 规则），它们引用一个或多个 [WAF 标志](#waf-flags-list)。
+授权增强安全性或WAF-DDoS Protection Security产品的客户还可以配置一种名为&#x200B;*WAF流量过滤器规则*(简称WAF规则)的特殊流量过滤器规则类别，该类别引用一个或多个[WAF标志](#waf-flags-list)。
 
 下面是一组流量过滤规则（其中还包括 WAF 规则）的示例。
 
@@ -279,6 +261,8 @@ when:
 | SCANNER | 扫描程序 | 标识常用的扫描服务和工具 |
 | RESPONSESPLIT | HTTP 响应拆分 | 标识何时将 CRLF 字符作为输入提交给应用程序以将标头注入 HTTP 响应 |
 | XML-ERROR | XML 编码错误 | 指定为在“Content-Type”请求头中包含 XML，但包含 XML 解析错误的 POST、PUT 或 PATCH 请求正文。这通常与编程错误或自动或恶意请求有关。 |
+| DATACENTER | 数据中心 | 将请求标识为来自已知的托管提供商。 此类流量通常与实际最终用户无关。 |
+
 
 ## 注意事项 {#considerations}
 
@@ -751,7 +735,7 @@ data:
 
 本教程带领您完成以下操作：
 
-* 设置 Cloud Manager 配置管道
+* 设置Cloud Manager配置管道
 * 使用工具模拟恶意流量
 * 声明流量过滤规则，包括 WAF 规则
 * 用仪表板工具分析结果

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 7a0e40f53eb3bb84c973ec3e28c7edcd8c847e25
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '5270'
+source-wordcount: '5273'
 ht-degree: 97%
 
 ---
@@ -1251,6 +1251,7 @@ ht-degree: 97%
    + [维护任务](/help/operations/maintenance.md)
    + [自助服务恢复](/help/operations/restore.md)
    + [异步作业](/help/operations/asynchronous-jobs.md)
+   + [使用配置管道](/help/operations/config-pipeline.md)
    + [删除通用 lucene 索引](/help/operations/removal-generic-lucene-index.md)
    + [查询和索引最佳实践](/help/operations/query-and-indexing-best-practices.md)
 + 合规性 {#compliance}

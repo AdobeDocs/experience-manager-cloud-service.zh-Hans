@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 89%
+source-wordcount: '1500'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,8 @@ Cloud Manager 提供两种类型的管道：
 除了生产和非生产，管道还可以根据其部署的代码类型进行区分。
 
 * **[全栈管道](#full-stack-pipeline)** – 同时部署后端和前端代码构建，其中包含一个或多个 AEM 服务器应用程序以及 HTTPD/Dispatcher 配置。
-* **[配置管道](#config-deployment-pipeline)** — 在几分钟内配置和部署流量过滤器规则，包括WAF规则
+* **[配置管道](#config-deployment-pipeline)** — 快速部署功能配置，如日志转发、清除相关的维护任务，以及各种CDN配置，如流量过滤器规则(包括WAF规则)、请求和响应转换、源选择器、客户端重定向、错误页面、客户管理的CDN密钥、清除API密钥和基本身份验证。
+   * 有关详细信息，请参阅文档[使用配置管道](/help/operations/config-pipeline.md)。
 * **[前端管道](#front-end)** – 部署包含一个或多个客户端 UI 应用程序的前端代码版本。
 * **[Web 层配置管道](#web-tier-config-pipelines)** – 部署 HTTPD/Dispatcher 配置
 
@@ -71,11 +72,10 @@ Cloud Manager 提供两种类型的管道：
 | 生产或非生产 | 部署 | 全栈 | 同时部署后端和前端代码构建以及 HTTPD/Dispatcher 配置 | 前端代码必须与 AEM 服务器代码同时部署时。<br>尚未采用前端管道或 Web 层配置管道时。 |
 | 生产或非生产 | 部署 | 前端 | 部署包含一个或多个客户端 UI 应用程序的前端代码版本 | 支持多个并存前端管道<br>比全栈部署快得多 |
 | 生产或非生产 | 部署 | Web 层配置 | 部署 HTTPD/Dispatcher 配置 | 几分钟即可部署 |
-| 生产或非生产 | 部署 | 配置 | 部署流量过滤规则 | 几分钟即可部署 |
+| 生产或非生产 | 部署 | 配置 | 为与CDN、日志转发和清除维护任务相关的许多功能](/help/operations/config-pipeline.md)部署[配置 | 几分钟即可部署 |
 | 非生产 | 代码质量 | 全栈 | 在不部署的情况下对全栈代码运行代码质量扫描 | 支持多条管道 |
 | 非生产 | 代码质量 | 前端 | 在不部署的情况下对前端代码运行代码质量扫描 | 支持多条管道 |
 | 非生产 | 代码质量 | Web 层配置 | 在不部署的情况下对 Dispatcher 配置运行代码质量扫描 | 支持多条管道 |
-| 非生产 | 代码质量 | 配置 | 部署流量过滤规则 |  |
 
 下图说明了 Cloud Manager 的管道配置，包括传统的、单个前端存储库或独立的前端存储库设置。
 
@@ -116,9 +116,9 @@ Cloud Manager 提供两种类型的管道：
 
 ## 配置管道 {#config-deployment-pipeline}
 
-通过配置管道，您可以在几分钟内配置和部署流量过滤器规则，包括WAF规则。
+通过配置管道，您可以快速部署用于日志转发、清除相关的维护任务和各种CDN配置的配置，例如流量过滤器规则(包括WAF规则)、请求和响应转换、源选择器、客户端重定向、错误页面、客户管理的CDN密钥、清除API密钥和基本身份验证。
 
-请参阅[流量过滤器规则（包括WAF规则）](/help/security/traffic-filter-rules-including-waf.md)以了解如何管理存储库中的配置，以便正确部署这些配置。
+请参阅文档[使用配置管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)，获取受支持功能的完整列表，并了解如何管理存储库中的配置以便正确部署它们。
 
 ### 配置管道 {#configure-config-deployment}
 
