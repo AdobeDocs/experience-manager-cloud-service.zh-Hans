@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a1b0d37b2f2f4e58b491651cb8e6504a6909393e
+source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1405'
 ht-degree: 10%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 10%
 | --- | --- | --- |
 | HTTP代码100-299 | 已包含 | 这些是提交全部或部分内容的常规请求。 |
 | 用于自动化的HTTP库 | 已包含 | 示例：<br>· Amazon CloudFront<br>· Apache Http Client<br>· Asynchronous Http Client<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub Node Fetch<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· 15}· Reactor Netty<br>· Wget<br>· WinHTTP<br> |
-| 监控和运行状况检查工具 | 已包含 | 这些功能由客户设置，用于监控站点的某些方面。 例如，可用性或真实用户性能。 使用`/system/probes/health`终结点，而不是网站中的实际HTML页面。<br>示例：<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(兼容； UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
+| 监控和运行状况检查工具 | 已包含 | 这些功能由客户设置，用于监控站点的某些方面。 例如，可用性或真实用户性能。如果针对特定端点（如/system/probes/health）进行运行状况检查，我们建议您使用`/system/probes/health`端点，而不是来自站点的实际HTML页。[查看以下](#excluded-content-request)<br>示例：<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(兼容；UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThoudekEyes-Dragonfly-x1<br> · WebMon/2.0.0<br> |
 | `<link rel="prefetch">`个请求 | 已包含 | 为了提高下一页的加载速度，客户可以在用户单击链接之前让浏览器加载一组页面，以使这些页面已位于缓存中。 *请注意：这会显着增加流量*，具体取决于预取的页面数量。 |
 | 阻止Adobe Analytics或Google Analytics报表的流量 | 已包含 | 通常，网站访客会安装隐私软件（广告拦截器等），这会影响Google Analytics或Adobe Analytics的准确性。 AEM as a Cloud Service在进入Adobe运行的基础结构的第一个入口点而不是客户端计算请求。 |
 
@@ -73,7 +73,7 @@ ht-degree: 10%
 | 发送到/libs/*的请求 | 已排除 | AEM内部JSON请求，例如不可计费的CSRF令牌。 |
 | 来自DDOS攻击的流量 | 已排除 | DDOS保护。 AEM会自动检测一些DDOS攻击并阻止它们。 检测到的DDOS攻击无法计费。 |
 | AEM as a Cloud Service New Relic监控 | 已排除 | AEM as a Cloud Service全球监控。 |
-| 客户用于监控其Cloud Service计划的URL | 已排除 | 建议的URL用于外部监视可用性。<br><br>`/system/probes/health` |
+| 客户用于监控其Cloud Service计划的URL | 已排除 | 我们建议使用URL从外部监视可用性或运行状况检查。<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod预热服务 | 已排除 |
 | 座席： skyline-service-warmup/1.* |
 | 著名的搜索引擎、社交网络和HTTP库（由Fastly标记） | 已排除 | 已知的服务定期访问网站以刷新其搜索索引或服务： <br><br>示例： <br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuildWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBotBot <br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· MJ12bot<br>· Pingdom<br>· Pinterest<br>· SemrushBot<br>· SiteEnprovement<br>· StashBot<br>· StatusCake<br>· Yek{YandexBot |
