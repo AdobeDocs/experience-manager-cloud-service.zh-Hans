@@ -4,7 +4,7 @@ description: 了解如何在WYSIWYG创作和Edge Delivery Services项目中创�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 364acc6a76261a725a46fe3e1ef173bc03b5a289
+source-git-commit: 772fcc2688edb57eca3b84689de1d1c47f87dcd0
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 59%
@@ -96,14 +96,14 @@ Adobe 建议您采用三阶段方法来开发区块：
   "id": "quote",
   "fields": [
      {
-       "component": "text-area",
+       "component": "richtext",
        "name": "quote",
        "value": "",
        "label": "Quote",
        "valueType": "string"
      },
      {
-       "component": "text-input",
+       "component": "text",
        "valueType": "string",
        "name": "author",
        "label": "Author",
