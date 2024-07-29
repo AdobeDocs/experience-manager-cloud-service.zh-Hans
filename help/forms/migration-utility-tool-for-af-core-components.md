@@ -8,14 +8,16 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 1%
+source-wordcount: '991'
+ht-degree: 3%
 
 ---
 
 # 简介
+
+<span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
 Forms转换实用程序是[AEM现代化工具](https://opensource.adobe.com/aem-modernize-Tools/)套件的一部分，可帮助您轻松地将使用旧版基础组件构建的自适应Forms转换为利用核心组件支持的现代化功能的表单。
 
