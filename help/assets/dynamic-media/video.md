@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9a3678e8e28806c3c7574d2cfd047c30537d7f41
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '10491'
 ht-degree: 1%
@@ -909,6 +909,7 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
    | 为每个资源创建单独的文件夹 | 为您选择下载的每个字幕文件或音轨文件创建一个文件夹。 |
    | 电子邮件 | 使用默认电子邮件程序将.zip文件发送到指定的电子邮件地址。 |
    | 资源 | 指定正在下载的文件数以及所有选定文件的组合总大小。 取消选择此选项会使&#x200B;**[!UICONTROL 下载]**&#x200B;按钮变暗（关闭），从而阻止您下载任何文件。 |
+
 1. 选择&#x200B;**[!UICONTROL 下载]**。
 1. Publish视频。 查看[Publish资源](publishing-dynamicmedia-assets.md)。
 

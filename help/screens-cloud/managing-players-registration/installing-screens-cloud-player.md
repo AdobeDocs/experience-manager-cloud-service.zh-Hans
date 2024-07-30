@@ -4,7 +4,7 @@ description: 本页介绍如何在Screensas a Cloud Service中安装和配置播
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -71,10 +71,12 @@ AEM Screens播放器中的基本回放监控允许我们：
 | lastContentChange {string} | 上次内容更改的时间戳 |
 
 >[!NOTE]
+>
 >或者，您也可以从播放器首选项启用更高级的属性（启用回放监控）：
->|属性|描述|
->|—|—|
->|isContentRendering {boolean}|如果GPU可以确认它正在播放实际内容（基于像素分析），则为true|
+>
+>| 属性 | 描述 |
+>|---|---|
+>| isContentRendering {boolean} | 如果GPU可以确认它正在播放实际内容（基于像素分析），则为true |
 
 ### 限制 {#limitations}
 
