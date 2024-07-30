@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 06fc5cd31b07fcd8bf085b41bc5f39907d4f5a79
 workflow-type: tm+mt
 source-wordcount: '5299'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -703,16 +703,16 @@ ht-degree: 97%
             + [比较自适应表单](/help/forms/compare-forms.md)
             + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [将自适应表单另存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
-            + 基于核心组件的自适应Forms的规则编辑器简介{#rule-editor-core-components}
-               + [基于核心组件的自适应Forms的规则编辑器简介](/help/forms/rule-editor-core-components.md)
-               + [基于核心组件的自适应Forms的规则编辑器用户界面](/help/forms/rule-editor-core-components-user-interface.md)
-               + [基础规则编辑器和核心组件规则编辑器的区别](/help/forms/rule-editor-core-components-difference-tables.md)
-               + [基于核心组件的自适应表单的规则编辑器中可用的运算符和事件类型](/help/forms/rule-editor-core-components-events-operators.md)
-               + [基于核心组件的自适应表单的规则编辑器示例](/help/forms/rule-editor-core-components-usecases.md)
-            + 基于核心组件的自适应Forms的自定义函数简介{#create-and-use-custom-function-core-component}
-               + [基于核心组件的自适应Forms的自定义函数简介](/help/forms/create-and-use-custom-functions.md)
-               + [基于核心组件为自适应表单创建并使用自定义函数](/help/forms/custom-function-core-component-create-function.md)
-               + [基于核心组件的自适应表单的自定义函数示例](/help/forms/custom-function-core-components-use-cases.md)
+            + 基于核心组件的自适应表单规则编辑器简介{#rule-editor-core-components}
+               + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
+               + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
+               + [基础规则编辑者和核心组件规则编辑者之间的区别](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [规则编辑者中可用于基于核心组件的自适应表单的操作符和事件类型](/help/forms/rule-editor-core-components-events-operators.md)
+               + [基于核心组件的自适应Form规则编辑者示例](/help/forms/rule-editor-core-components-usecases.md)
+            + 基于核心组件的自适应表单规则编辑器简介{#create-and-use-custom-function-core-component}
+               + [基于核心组件的自适应表单规则编辑器简介](/help/forms/create-and-use-custom-functions.md)
+               + [为基于核心组件的自适应表单创建和使用自定义函数](/help/forms/custom-function-core-component-create-function.md)
+               + [基于核心组件的自适应表单自定义函数示例](/help/forms/custom-function-core-components-use-cases.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
@@ -869,7 +869,7 @@ ht-degree: 97%
    + [将 Edge Delivery Services 与 AEM 结合使用](/help/edge/using.md)
    + [选择创作方法](/help/edge/authoring-methods.md)
    + 所见即所得的创作 {#wysiwyg-authoring}
-      + [为Edge Delivery制作WYSIWYG内容](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Edge Delivery 的 WYSIWYG Content Authoring](/help/edge/wysiwyg-authoring/authoring.md)
       + [针对 Edge Delivery 发布内容](/help/edge/wysiwyg-authoring/publishing.md)
       + [开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [创建区块](/help/edge/wysiwyg-authoring/create-block.md)
