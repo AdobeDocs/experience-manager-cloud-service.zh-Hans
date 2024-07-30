@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 573de431328650778b3ef0979a24190477382310
-workflow-type: ht
-source-wordcount: '332'
-ht-degree: 100%
+source-git-commit: dc7150c6ce971aa6f89fa24f7ca387cbb28db1f2
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 58%
 
 ---
 
@@ -16,42 +16,41 @@ ht-degree: 100%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 17098 {#release-17098}
+## 版本 17258 {#release-17258}
 
-下面总结了维护版本 16799 的持续改进，该版本已于 2024 年 7 月 16 日公开发行。上一个维护版本是版本 16971。
+以下总结了维护版本17258的不断改进，该版本于2024年7月30日公开发布。 上一个维护版本是版本 17098。
 
-2024.7.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.8.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强 {#enhancements-17098}
+### 增强 {#enhancements-17258}
 
-- SKYOPS-79817：为服务用户映射启用 Sling 功能分析器任务
+* Assets-31445 — 初始Dynamic Media模板功能
+* Assets-40399 — 更新了DM自动转录队列设置
+* Assets-40873 — 允许通过OSGI配置设置元数据导出最大行数
 
-### 修复的问题 {#fixed-issues-17098}
+### 修复的问题 {#fixed-issues-17258}
 
-- ASSETS-39665：从 6.5 迁移到 AEMCS 后，Smart Crops Sync 不起作用
-- FORMS-14993：表格 API 返回 500，用于之前的工作抵押品
-- GRANITE-52120：显示 Access 控制数据时 CRXDE 返回 500
-- GRANITE-52573：在重写的 URL 中使用 // 时请求返回 400
-- GRANITE-52746：创建节点对话框中未加载所有节点类型
-- GRANITE-52777：请求包装时 404 处理中断
-- GRANITE-52871：确保 publish-worker 与 golden-publish 同步并在压缩之前完成
-- SKYOPS-79173：复制器未复制到与给定 AgentIdFilter 匹配的多个代理
-- SKYOPS-80075：资产名称中的变音符号问题导致发布队列阻塞（Mac）
-- SKYOPS-81032：使用增强日志记录时，过滤掉获取日志的请求生成的日志
+* Assets-30613 — 替换资产不会删除资产并在新交付层中添加资产
+* Assets-31882 — 禁止访问作者中的流清单文件
+* Assets-39598 — 批量导入无法从S3后端删除名称中包含特殊字符的资源
+* CNTBF-209 — 改进回流作业取消
+* SCRNS-3762 — 改进序列渠道中的playerLogger，可在浏览器上预览渠道时将日志置于控制台
+* SCRNS-4455 — 渠道的内容提供商中的非管理员用户缺少“管理发布”和“快速Publish”按钮
+* SITES-22940 — 无法查看内容片段作为工作流有效负载
 
-### 已知问题 {#known-issues-17098}
+### 已知问题 {#known-issues-17258}
 
 无
 
-### 更改通知 {#change-notice-17098}
+### 更改通知 {#change-notice-17258}
 
-- 从 2024 年 9 月开始，AEM as a Cloud Service 将会通过 Sling Model Exporter 框架禁用资源解析器的序列化。请参阅[该文档](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)了解更多详情。
+* 从 2024 年 9 月开始，AEM as a Cloud Service 将会通过 Sling Model Exporter 框架禁用资源解析器的序列化。请参阅[该文档](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)了解更多详情。
 
-### 已弃用的功能和 API {#deprecated-17098}
+### 已弃用的功能和 API {#deprecated-17258}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 嵌套的技术 {#embedded-tech-17098}
+### 嵌套的技术 {#embedded-tech-17258}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
