@@ -4,20 +4,17 @@ description: 了解如何通过配置随后可在API调用中使用的清除API�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 3%
+source-wordcount: '437'
+ht-degree: 1%
 
 ---
 
 # 清除 CDN 缓存 {#cdn-purge-cache}
 
->[!NOTE]
->此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至`aemcs-cdn-config-adopter@adobe.com`。
-
 清除会从AdobeCDN缓存中移除对象，从而导致将来的请求作为缓存缺失继续前往原点，而不是从缓存提供服务。
-AEM as a Cloud Service允许您配置清除API令牌，然后可以在API调用中使用它。 阅读[配置CDN凭据和身份验证文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)，了解如何使用Cloud Manager配置管道身份验证指令配置此令牌。
+AEM as a Cloud Service允许您配置清除API令牌，然后将其用于清除API调用。 阅读[配置CDN凭据和身份验证文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)，了解如何使用Cloud Manager配置管道身份验证指令配置此令牌。
 
 有三个受支持的清除变体：
 
