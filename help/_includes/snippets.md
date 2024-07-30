@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 72%
+ht-degree: 98%
 
 ---
 # 代码片段 {#snippets}
@@ -87,8 +87,8 @@ ht-degree: 72%
      </tr>
    <tr>
     <td>对可重复面板字段执行数学运算 </td>
-    <td>OOTB Math函数可应用于可重复的面板字段，以使用规则编辑器执行sum、average等函数。 需要提供两个参数：第一个参数指定包含字段的可重复面板，而第二个参数指定相应可重复面板中的字段。 </td>
-    <td>可使用自定义函数对可重复面板字段执行数学运算。 也可以使用规则编辑器将数学函数直接应用于可重复面板的字段。
+    <td>OOTB 数学函数可以应用于可重复面板字段以使用规则编辑者执行诸如求和、平均值等功能。需要提供两个参数：第一个指定包含字段的可重复面板，第二个指定对应可重复面板中的字段。 </td>
+    <td>可以使用自定义函数对可重复面板字段执行数学运算。您还可以使用规则编辑者直接对可重复面板的字段应用数学函数。
    </td>
    </tr>
       <tr>
@@ -117,13 +117,13 @@ ht-degree: 72%
   <table>
   </tbody>
 
-## 规则编辑器另请参阅 {#see-also-rule-editor}
+## 规则编辑者另见 {#see-also-rule-editor}
 
-* [基于核心组件的自适应Forms的规则编辑器简介](/help/forms/rule-editor-core-components.md)
-* [基于核心组件的自适应表单的规则编辑器中的运算符类型和事件](/help/forms/rule-editor-core-components-events-operators.md)
-* [基于核心组件的自适应Forms的规则编辑器用户界面](/help/forms/rule-editor-core-components-user-interface.md)
-* [基于核心组件的自适应表单的规则编辑器的不同用例](/help/forms/rule-editor-core-components-user-interface.md)
-* [不同版本规则编辑器的差异](/help/forms/rule-editor-core-components-difference-tables.md)
-* [基于核心组件的自适应Forms的自定义函数简介](/help/forms/create-and-use-custom-functions.md)
-* [基于核心组件创建自适应表单的自定义函数](/help/forms/custom-function-core-component-create-function.md)
+* [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
+* [基于核心组件的自适应Form规则编辑者中的操作符类型和事件](/help/forms/rule-editor-core-components-events-operators.md)
+* [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
+* [基于核心组件的自适应Form规则编辑者的不同用例](/help/forms/rule-editor-core-components-usecases.md)
+* [规则编辑者各版本之间的差异](/help/forms/rule-editor-core-components-difference-tables.md)
+* [基于核心组件的自适应Forms自定义函数介绍](/help/forms/create-and-use-custom-functions.md)
+* [为基于核心组件的自适应Form创建自定义函数](/help/forms/custom-function-core-component-create-function.md)
 * [开发和使用自定义函数的示例](/help/forms/custom-function-core-components-use-cases.md)
