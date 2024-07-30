@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
 source-wordcount: '3939'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -514,7 +514,7 @@ data:
 
 如果达到此阈值，Adobe 将阻止来自该 IP 地址的流量，但建议采取额外措施保护您的源，包括配置速率限制流量过滤规则以在较低阈值下阻止流量激增。请参阅[使用流量规则阻止 DoS 和 DDoS 攻击教程](#tutorial-blocking-DDoS-with-rules)，获取逐步指导。
 
-默认情况下，此警报处于启用状态，但可以使用&#x200B;*defaultTrafficAlerts*&#x200B;属性（设置为false）将其禁用。 一旦触发警报，它将不会再次触发，直到第二天（UTC）。
+此警报默认启用，但可以通过将 *defaultTrafficAlerts* 属性设置为 false 来禁用。一旦触发警报，它将不会再次触发，直到第二天（UTC）。
 
 ```
 kind: "CDN"
