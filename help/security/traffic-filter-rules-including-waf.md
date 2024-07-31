@@ -4,9 +4,9 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
 workflow-type: tm+mt
-source-wordcount: '3939'
+source-wordcount: '3932'
 ht-degree: 93%
 
 ---
@@ -505,10 +505,6 @@ data:
 ```
 
 ## 默认源流量尖峰警报 {#traffic-spike-at-origin-alert}
-
->[!NOTE]
->
->该功能正在逐步推出。
 
 当有大量流量发送到源时，如果来自同一 IP 地址的请求达到高阈值，则会发送[操作中心](/help/operations/actions-center.md)电子邮件通知，这表明可能存在 DDoS 攻击。
 
