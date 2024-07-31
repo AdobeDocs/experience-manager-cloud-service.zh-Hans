@@ -4,114 +4,131 @@ description: 在 EDS Form 中使用 Google reCAPTCHA
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: fe45123b3aefddaf02bc8584283941db168ba174
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '841'
+ht-degree: 24%
 
 ---
 
 
 # 将 reCAPTCHA 与 AEM Forms as a Cloud Service 的 Edge Delivery Services 结合使用
 
+<span> **reCAPTCHA**&#x200B;功能在预发行计划下。 要请求访问AEM FormsEdge Delivery Services的&#x200B;**reCAPTCHA**&#x200B;功能，请从您的工作地址发送电子邮件至mailto:aem-forms-ea@adobe.com。</span>
+
 reCAPTCHA 是一种流行的工具，用于保护网站免受欺诈活动、垃圾邮件和滥用。在 Edge Delivery Services 中，自适应表单块提供了添加 Google reCAPTCHA 的功能，以区分人类和机器人。此功能允许用户保护他们的网站免受垃圾邮件和滥用。
 例如，考虑一个收集旅行开始和结束日期、房间预算、预计旅行费用和旅行者信息等数据的查询表。在这种情况下，存在恶意用户利用该表单发送网络钓鱼电子邮件或使用垃圾邮件机器人向其中发送不相关或有害内容的风险。集成 reCAPTCHA 可验证提交内容是否来自真实用户，从而提供额外的安全性，有效减少垃圾邮件条目。
 
-Edge Delivery Services 仅支持 **基于分数(v3)-reCAPTCHA** 用于自适应表单块。
+<!-- ![Recaptcha Image](/help/edge/docs/forms/assets/recaptcha-image.png){width="300" align="center"} -->
 
-![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
+对于自适应表单块，Edge Delivery Services仅支持&#x200B;**基于得分的(v3)-reCAPTCHA**。
 
-**reCAPTCHA** 功能目前处于预发布计划之中。要请求访问 AEM Forms Edge Delivery Services 的&#x200B;**reCAPTCHA** 功能，请从您的工作地址发送电子邮件至 mailto:aem-forms-ea@adobe.com。
-
-<!--
-By the end of this article, you learn to:
-  * [Enable Google reCAPTCHA's for a single form](#enable-google-recaptchas-for-a-single-form)
-  * [Enable reCAPTCHA for all the forms on your Site](#enable-recaptcha-for-all-the-forms)
-
-## Pre-requisite
-
-Register your domain with [Google reCAPTCHA and obtain credentials](https://www.google.com/recaptcha/admin/create).
-
-## Enable Google reCAPTCHA's for a single form {#enable-google-recaptchas-for-a-single-form}
-
-Enabling Google reCAPTCHA for a single form involves integrating Google's reCAPTCHA service into a specific web form to prevent automated abuse or spam submissions.
-
-To enable Google reCAPTCHA's for a single form:
-1. [Configure the reCAPTCHA secret key in project configuration file](#configure-secret-key)
-1. [Add reCAPTCHA site key to your form](#add-site-key)
+![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png){width="300" align="center"}
 
 
-### Configure the reCAPTCHA secret key in project configuration file {#configure-secret-key}
+读完本文后，您将学会：
+* [为单个表单启用Google reCAPTCHA](#enable-google-recaptchas-for-a-single-form)
+* [为网站上的所有表单启用reCAPTCHA](#enable-recaptcha-for-all-the-forms)
 
-The Site Secret for domain registered with Google reCAPTCHA is added to project the configuration file (`.helix/config`) in your AEM Project folder at Microsoft SharePoint or Google Drive. To add the Site Secret to the config file:
+## 先决条件
 
-1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive. 
-1. Create the `.helix/config.xlsx` file in your AEM Project folder in Microsoft SharePoint Site or the `.helix/config` file in AEM Project folder within your Google Drive. 
+* 按照[使用自适应Forms块创建表单](/help/edge/docs/forms/create-forms.md)中所述的步骤开始开发Edge Delivery ServicesForms。
+* 使用[Google reCAPTCHA注册域并获取凭据](https://www.google.com/recaptcha/admin/create)。
 
-    >[!NOTE]
-    >
-    > The [project configuration file](https://www.aem.live/docs/configuration) is a spreadsheet located at `/.helix/config`. If the file does not exist, create it.
+## 为单个表单启用Google reCAPTCHA {#enable-google-recaptchas-for-a-single-form}
 
-1. Open the `config` file and add the following key and value pairs:
+为单个表单启用Google reCAPTCHA涉及将Google的reCAPTCHA服务集成到特定的Web表单中，以防止自动滥用或垃圾邮件提交。
 
-    * **captcha.secret**: Google reCAPTCHA secret key value
-    * **captcha.type**: reCAPTCHA v2
-  
-   Refer to the image for an illustration of a project configuration file:
+要为单个表单启用Google reCAPTCHA，请执行以下操作：
+1. [在项目配置文件中配置reCAPTCHA密钥](#configure-secret-key)
+1. [将reCAPTCHA站点密钥添加到表单](#add-site-key)
 
-    ![Project configuration file](/help/forms/assets/recaptcha-config-file.png)
+要在FormsEdge Delivery Services中开始配置reCaptcha，请参阅以下[电子表格](/help/edge/docs/forms/assets/recaptcha.xlsx)，其中包含表单的表单定义。
 
-    >[!NOTE]
-    >
-    >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
+### 在项目配置文件中配置reCAPTCHA密钥 {#configure-secret-key}
 
-1.  Preview and publish the `config` file using [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content). 
+在Google reCAPTCHA中注册的域的站点密钥已添加到位于Microsoft SharePoint或Google驱动器的AEM项目文件夹中的项目配置文件(`.helix/config`)。 要将站点密钥添加到配置文件，请执行以下操作：
 
-### Add reCAPTCHA site key to your form {#add-site-key}
+1. 转到Microsoft®SharePoint或Google Drive上的“AEM项目”文件夹。
+1. 在Microsoft SharePoint Site的AEM项目文件夹中创建`.helix/config.xlsx`文件，或在Google驱动器的AEM项目文件夹中创建`.helix/config`文件。
 
-The Site Key for domain registered with Google reCAPTCHA is added to the spreadsheet of the form that is to be protected. To add the Site key to a form:
+   >[!NOTE]
+   >
+   > [项目配置文件](https://www.aem.live/docs/configuration)是位于`/.helix/config`的电子表格。 如果文件不存在，请创建该文件。
 
-1. Go to your AEM Project folder on Microsoft® SharePoint or Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
-1. Insert a row into the spreadsheet to add new field as CAPTCHA, including the following details:
-    * **type**: captcha
-    * **value**: Google reCAPTCHA site key value
-  
-    Refer to the illustration below, depicting the spreadsheet with the new row type as CAPTCHA:
-  
-   ![Recaptcha spreadsheet](/help/forms/assets/recaptcha-spreadsheet.png)
+1. 打开`config`文件并添加以下键值对：
 
-    >[!NOTE]
-    >
-    >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
+   * **captcha.secret**： Google reCAPTCHA密钥值
+   * **captcha.type**： reCAPTCHA v2
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the sheet. 
-You can refer to the [spreadsheet](/help/forms/assets/recaptcha-enquiry.xlsx) that includes the form definition for an enquiry form.
+   >[!NOTE]
+   >
+   >  * 您可以从[Google reCAPTCHAAdmin Console](https://www.google.com/recaptcha/admin)检索reCAPTCHA密钥。
+   >  * 您必须在`config`文件中将&#x200B;**captcha.type**&#x200B;的值指定为&#x200B;**reCAPTCHA v2**。
 
-After adding new row in the form definition, a reCAPTCHA badge appears at the bottom-right corner of the form. This ensures that the form is now protected from fraudulent activities, spam, and misuse.
+   请参阅下面的项目配置文件屏幕截图：
 
-![recaptcha-form](/help/forms/assets/recaptcha-form.png)
+   ![项目配置文件](/help/forms/assets/recaptcha-config-file.png)
 
-Refer to the URL below, which showcases the live form with the reCAPTCHA badge:
-https://main--wefinance--wkndforms.hlx.live/enquiry
+1. 保存 `config` 文件。
 
-## Enable reCAPTCHA for all the forms on your Site{#enable-recaptcha-for-all-the-forms}
+1. 使用[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)预览和发布`config`文件。
 
-To apply Google reCAPTCHA to all the forms on your Site that use Adaptive Forms Block, skip the previous steps and directly embed the `sitekey` value into the `recaptcha.js` file. To include site key value in the `recaptcha.js` file:
+### 将reCAPTCHA站点密钥添加到表单 {#add-site-key}
 
-1. Open the corresponding GitHub repository on your local machine. 
-1. Navigate to `../blocks/form/integrations/recaptcha.js` file.
-1. Replace the `siteKey` with Google reCAPTCHA site key value.
+在Google reCAPTCHA中注册的域的站点密钥会添加到要保护的表单的电子表格中。 要将Site键添加到表单：
 
-    ![Recaptcha apply to all forms](/help/forms/assets/recaptcha-apply-to-all-forms.png)
+1. 转到 Microsoft® SharePoint 或 Google Drive 上的 AEM Project 文件夹并打开电子表格。您还可以为表单创建新的电子表格。
+1. 在电子表格中插入一行以添加新字段作为验证码，包括以下详细信息：
+   * **类型**： captcha
+   * **value**： Google reCAPTCHA站点密钥值
 
-    >[!NOTE]
-    >
-    >  You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
+   请参阅下面的屏幕截图，其中显示了新行类型为CAPTCHA的电子表格：
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the site. 
+   ![Recaptcha电子表格](/help/edge/docs/forms/assets/recaptcha-spreadsheet.png)
 
-The reCAPTCHA badge starts appearing for all the forms on your Site. 
--->
+   >[!NOTE]
+   >
+   >  您可以从[Google reCAPTCHAAdmin Console](https://www.google.com/recaptcha/admin)检索reCAPTCHA密钥。
+
+1. 保存电子表格。
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 预览和发布工作表。
+
+在表单定义中添加新行后，表单右下角会显示一个reCAPTCHA徽章。 这样可以确保表单现在不受欺诈活动、垃圾邮件和滥用的影响。
+
+![recaptcha-form](/help/edge/docs/forms/assets/recaptcha-form.png)
+
+## 为网站上的所有表单启用reCAPTCHA{#enable-recaptcha-for-all-the-forms}
+
+要将Google reCAPTCHA应用于网站上使用Adaptive Forms Block的所有表单，请跳过之前的步骤，直接将`sitekey`值嵌入到`recaptcha.js`文件中。 要在`recaptcha.js`文件中包含站点键值，请执行以下操作：
+
+1. [更新recaptcha.js文件中的Google reCAPTCHA站点密钥](#1-update-google-recaptcha-site-key-in-recaptchajs-file)
+1. [部署文件并生成项目](#2-deploy-the-file-and-build-the-project)
+1. [使用AEM Sidekick预览站点](#3-preview-the-site-using-the-aem-sidekick)
+
+### 更新recaptcha.js文件中的Google reCAPTCHA站点密钥
+
+1. 在本地计算机上打开相应的GitHub存储库。
+1. 导航到`[../Form Block/integrations]`文件夹并打开`recaptcha.js`文件。
+1. 将`siteKey`替换为Google reCAPTCHA站点密钥值。
+
+   ![Recaptcha应用于所有表单](/help/forms/assets/recaptcha-apply-to-all-forms.png)
+
+   >[!NOTE]
+   >
+   >  您可以从[Google reCAPTCHAAdmin Console](https://www.google.com/recaptcha/admin)检索reCAPTCHA密钥。
+
+1. 保存 `recaptcha.js` 文件。
+
+### 部署文件并生成项目
+
+将更新的`recaptcha.js`文件部署到GitHub项目并验证生成是否成功。
+
+### 使用AEM Sidekick预览站点
+
+使用[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)预览和发布网站。
+
+reCAPTCHA徽章开始显示在您网站上的所有表单中。
 
 ## 另请参阅
 
