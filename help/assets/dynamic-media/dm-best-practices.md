@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 最佳实践
-description: 了解Dynamic Media中有关使用图像和视频的最佳实践。
+description: 了解在使用Dynamic Media Viewer的图像和视频以及最佳实践时Dynamic Media中的最佳实践。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: de1116ee39024d30e14838f8b36f9ab087a45f85
+source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '4105'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,23 @@ Dynamic Media的一些关键原则包括：
 这两个最佳实践可帮助您更好地控制、管理和提高富媒体内容的工作效率。
 
 想要了解更多信息？ 转到[在Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)的文件夹级别配置选择性Publish。
+
+
+## Dynamic Media 查看器
+
+Dynamic Media Viewer最佳实践是旨在优化AEM上Dynamic Media资源的性能、功能和用户体验的基本准则。 这些实践可确保正确同步、发布和配置资源，以使用Dynamic Media的完整功能。
+
+通过遵循这些最佳实践，您可以实现无缝集成、高效的资产管理和增强的查看器交互。 同步资源、使用智能裁剪以及遵守JavaScript文件包含准则都是重要实践。 这些建议有助于保持跨各种平台和设备的介质传送的完整性和可靠性。
+
+* **同步查看器Assets：**&#x200B;在使用播放器之前，请确保所有查看器资源都与Dynamic Media同步。 有关查看器的疑难解答，请转到[Dynamic Media查看器疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
+* **示例管理器页面：**&#x200B;访问`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`上的示例管理器页面。
+* **Publish Assets：**&#x200B;在投放查看器中查看资源之前，请确保已发布资源。
+* **自动播放视频静音：**&#x200B;对于视频中的自动播放功能，请使用静音视频设置，因为浏览器会限制按音量播放视频。
+* **智能裁剪：**&#x200B;使用图像v3组件进行智能裁剪以增强图像资产呈现。
+* **JavaScript文件包含：**&#x200B;仅在您的页面上包含主查看器JavaScript文件。 避免引用查看器的运行时逻辑可能下载的其他JavaScript文件。 具体而言，请勿从`/s7viewers`上下文HTML（称为整合SDK包含）直接链接到Consolidated SDK `Utils.js`库。 查看器的逻辑管理`Utils.js`或类似的运行时查看器库的位置，这些库可以在版本之间更改。 Adobe不会保留服务器上包含的旧版本辅助查看器，因此直接引用这些版本可能会破坏查看器在将来更新中的功能。
+* **嵌入准则：**使用文档嵌入特定于每个查看者的准则。
+想要了解更多信息？ 转到AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的[查看器。
+* **SDK教程和示例：**&#x200B;查看[Viewer SDK教程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK应用程序示例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以全面了解SDK组件API。
 
 
 ## 准备资产以进行交付
@@ -156,7 +173,6 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 
 想要了解更多信息？ 转到[Google的URL结构最佳实践](https://developers.google.com/search/docs/crawling-indexing/url-structure)和[Google图像SEO最佳实践](https://developers.google.com/search/docs/appearance/google-images)
 
-
 ### 使用命令动态增强图像并创建视觉效果
 
 **商业案例：** *将丰富的视觉效果应用于图像。*
@@ -191,7 +207,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 | --- | --- |
 | **上载并发布基本映像** | 首先，上载并发布要在其上叠加徽标或图标的基本图像。 您可以使用任何图像作为基础。<br>例如，以下是基本映像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)。 |
 | **上载并发布徽标或图标图像** | 接下来，上传并发布要叠加在基本图像上的图像。 此图像应是透明的PNG，其中应包含要叠加的徽标或图标。<br>下面是即将叠加的具有透明效果的星形对象的透明PNG图像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **应用Dynamic Media URL** | 现在，创建一个Dynamic Media URL，以组合基本图像和徽标或图标图像。 可以使用URL命令达到此效果。<br>URL结构类似于：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>其中<br>· `hotspotRetailBaseImage`是基本图像。<br>· `starxp`是徽标/图标图像。<br>· `layer=1`指定徽标或图标应叠加在基本图像上。<br>· `scale=1.25`调整徽标/图标的大小。<br>· `posN=0.33,-.25`确定徽标/图标相对于基本图像的位置。<br>· `fmt=png`确保输出为PNG格式。 |
+| **应用Dynamic Media URL** | 现在，创建一个Dynamic Media URL，以组合基本图像和徽标或图标图像。 可以使用URL命令达到此效果。<br>URL结构类似于：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>其中资产<br>· `hotspotRetailBaseImage`是基本图像。<br>· `starxp`是徽标/图标图像。<br>· `layer=1`指定徽标或图标应叠加在基本图像上。<br>· `scale=1.25`调整徽标/图标的大小。<br>· `posN=0.33,-.25`确定徽标/图标相对于基本图像的位置。<br>· `fmt=png`确保输出为PNG格式。 |
 
 了解更多信息？ 请转到[src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)以了解有关`src`命令和其他Dynamic Media URL命令的更多详细信息。
 
@@ -246,6 +262,28 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 
 您可以随意探索这些变体，以满足您的特定需求。
 想要了解有关URL中可用命令的更多信息？ 转到[命令引用](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
+
+### 投放GIF图像
+
+**商业案例：** *使用Dynamic Media的流GIF*
+
+您可以通过Dynamic Media上传和投放GIF。 要渲染动画GIF，请在URL中将`is/image`替换为`is/content`。 例如，如果您已上传`abc.gif`，请使用以下内容：
+
+* 此URL路径呈现GIF的静态视图：
+
+  ```
+  https://your.domain.com/is/image/yourfolder/abc
+  ```
+
+* 此URL路径将渲染GIF的动画视图：
+
+  ```
+  https://your.domain.com/is/content/yourfolder/abc
+  ```
+
+>[!NOTE]
+>
+>在URL路径中使用`is/content`时，图像转换命令未应用于资源。
 
 ### Publish我的网站视频
 
@@ -349,3 +387,11 @@ Adobe建议您使用智能成像的功能，而不是手动将图像格式设置
 通过依赖智能成像，您可以确保以尽可能高效的方式提供图像，并根据每个用户的浏览环境量身定制。 此方法简化了流程，并且可以在图像加载时间和整体用户体验方面提高性能。
 
 想要了解更多信息？ 转到[智能成像](/help/assets/dynamic-media/imaging-faq.md)。
+
+### 将资产过帐交付给客户
+
+**业务案例：** *发布新内容或覆盖现有内容后，如何确保更改立即显示在CDN上？*
+
+CDN（内容分发网络）缓存Dynamic Media资产，以快速将其交付给客户。 更新这些资源后，所做的更改必须立即在网站上生效。 通过清除或使CDN缓存失效，Dynamic Media交付的资源可以快速更新。 此方法无需根据TTL（生存时间）值（通常设置为10小时）等待缓存过期。 而是可以从Dynamic Media用户界面中发送请求，以便在几分钟内使缓存过期。
+
+想要了解更多信息？ 转到[通过Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN缓存失效。
