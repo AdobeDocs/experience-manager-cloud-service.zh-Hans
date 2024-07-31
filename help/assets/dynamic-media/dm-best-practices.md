@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 0%
@@ -76,15 +76,23 @@ Dynamic Media Viewer最佳实践是旨在优化AEM上Dynamic Media资源的性�
 
 通过遵循这些最佳实践，您可以实现无缝集成、高效的资产管理和增强的查看器交互。 同步资源、使用智能裁剪以及遵守JavaScript文件包含准则都是重要实践。 这些建议有助于保持跨各种平台和设备的介质传送的完整性和可靠性。
 
-* **同步查看器Assets：**&#x200B;在使用播放器之前，请确保所有查看器资源都与Dynamic Media同步。 有关查看器的疑难解答，请转到[Dynamic Media查看器疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
-* **示例管理器页面：**&#x200B;访问`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`上的示例管理器页面。
-* **Publish Assets：**&#x200B;在投放查看器中查看资源之前，请确保已发布资源。
-* **自动播放视频静音：**&#x200B;对于视频中的自动播放功能，请使用静音视频设置，因为浏览器会限制按音量播放视频。
-* **智能裁剪：**&#x200B;使用图像v3组件进行智能裁剪以增强图像资产呈现。
-* **JavaScript文件包含：**&#x200B;仅在您的页面上包含主查看器JavaScript文件。 避免引用查看器的运行时逻辑可能下载的其他JavaScript文件。 具体而言，请勿从`/s7viewers`上下文HTML（称为整合SDK包含）直接链接到Consolidated SDK `Utils.js`库。 查看器的逻辑管理`Utils.js`或类似的运行时查看器库的位置，这些库可以在版本之间更改。 Adobe不会保留服务器上包含的旧版本辅助查看器，因此直接引用这些版本可能会破坏查看器在将来更新中的功能。
-* **嵌入准则：**使用文档嵌入特定于每个查看者的准则。
+* **同步查看器Assets：**
+在使用播放器之前，请确保所有查看器资源都与Dynamic Media同步。 有关查看器的疑难解答，请转到[Dynamic Media查看器疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
+* **示例管理器页面：**
+访问`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`上的示例管理器页面。
+* **Publish Assets：**
+在投放查看器中查看资产之前，请确保已发布资产。
+* **自动播放视频已静音：**
+对于视频中的自动播放功能，请使用静音视频设置，因为浏览器会限制按音量播放视频。
+* **智能裁剪：**
+使用用于智能裁剪的图像v3组件增强图像资产呈现。
+* **JavaScript文件包含：**
+页面上仅包含主查看器JavaScript文件。 避免引用查看器的运行时逻辑可能下载的其他JavaScript文件。 具体而言，请勿从`/s7viewers`上下文HTML（称为整合SDK包含）直接链接到Consolidated SDK `Utils.js`库。 查看器的逻辑管理`Utils.js`或类似的运行时查看器库的位置，这些库可以在版本之间更改。 Adobe不会保留服务器上包含的旧版本辅助查看器，因此直接引用这些版本可能会破坏查看器在将来更新中的功能。
+* **嵌入准则：**
+使用文档嵌入特定于每个查看器的准则。
 想要了解更多信息？ 转到AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的[查看器。
-* **SDK教程和示例：**&#x200B;查看[Viewer SDK教程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK应用程序示例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以全面了解SDK组件API。
+* **SDK教程和示例：**
+查看[Viewer SDK教程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK应用程序示例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以全面了解SDK组件API。
 
 
 ## 准备资产以进行交付
