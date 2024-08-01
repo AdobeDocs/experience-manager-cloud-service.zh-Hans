@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 0%
 
 ---
@@ -77,9 +77,11 @@ Dynamic Media Viewer最佳实践是旨在优化AEM上Dynamic Media资源的性�
 通过遵循这些最佳实践，您可以实现无缝集成、高效的资产管理和增强的查看器交互。 同步资源、使用智能裁剪以及遵守JavaScript文件包含准则都是重要实践。 这些建议有助于保持跨各种平台和设备的介质传送的完整性和可靠性。
 
 * **同步查看器Assets：**
-在使用播放器之前，请确保所有查看器资源都与Dynamic Media同步。 有关查看器的疑难解答，请转到[Dynamic Media查看器疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
-* **示例管理器页面：**
-访问`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`上的示例管理器页面。
+在使用播放器之前，请确保所有查看器资源都与Dynamic Media同步。
+
+   * 访问位于`/libs/dam/gui/content/s7dam/samplemanager/samplemanager`的示例管理器页面。 通过此页面，您可以重新同步查看器的资产，包括现成图标、CSS文件和预设。
+   * 如果您遇到任何查看器问题，请转到[Dynamic Media查看器疑难解答](/help/assets/dynamic-media/troubleshoot-dm.md#viewers)文章。
+
 * **Publish Assets：**
 在投放查看器中查看资产之前，请确保已发布资产。
 * **自动播放视频已静音：**
@@ -400,6 +402,7 @@ Adobe建议您使用智能成像的功能，而不是手动将图像格式设置
 
 **业务案例：** *发布新内容或覆盖现有内容后，如何确保更改立即显示在CDN上？*
 
-CDN（内容分发网络）缓存Dynamic Media资产，以快速将其交付给客户。 更新这些资源后，所做的更改必须立即在网站上生效。 通过清除或使CDN缓存失效，Dynamic Media交付的资源可以快速更新。 此方法无需根据TTL（生存时间）值（通常设置为10小时）等待缓存过期。 而是可以从Dynamic Media用户界面中发送请求，以便在几分钟内使缓存过期。
+CDN（内容分发网络）缓存Dynamic Media资产，以快速将其交付给客户。 更新这些资源后，所做的更改必须立即在网站上生效。 通过清除或使CDN缓存失效，Dynamic Media交付的资源可以快速更新。 此方法无需根据TTL（生存时间）值（通常设置为10小时）等待缓存过期。
+根据您的特定用例，您可以相应地更新CDN TTL（生存时间）设置。
 
 想要了解更多信息？ 转到[通过Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN缓存失效。
