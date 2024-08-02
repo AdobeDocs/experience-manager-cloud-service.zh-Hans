@@ -690,7 +690,7 @@ ht-degree: 99%
             + [将自适应表单提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [将自适应表单提交到 Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [使用授权范围配置具有有限访问权限的SharePoint站点](/help/forms/configure-sharepoint-site-limited-access.md)
+            + [使用授权范围配置具有有限访问权限的 SharePoint 网站](/help/forms/configure-sharepoint-site-limited-access.md)
             + [将 AEM 自适应表单与 AEM 工作流集成](/help/forms/configure-submit-action-workflow.md)
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
