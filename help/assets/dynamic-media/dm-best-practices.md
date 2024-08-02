@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
+source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -162,14 +162,17 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 
 * **有意义的图像文件名：**
 使用反映图像内容的描述性文件名。 例如，
+
    * 使用 `myCompany-Silver-Wrist-Watch`
    * *避免* `myCompany_Silver_Wrist_Watch`或`myCompanySilverWristWatch`
 
   这样做有助于搜索引擎了解图像上下文并改进SEO。 Google在文件名中首选使用连字符，而不是下划线或空格。 此外，请避免在文件名中连接单词。
 * **自定义域：**
 实施包含您的公司或品牌名称的自定义域，以增强品牌认知度和信任。 例如，
+
    * 使用 `http://images.mycompany.com/is/image/companyname/`
    * *避免* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **SEO友好的文件夹结构：**
 以包含公司名称或品牌的文件夹结构组织图像，以便更好地编制索引，如`http://images.mycompany.com/is/image/companyname/`。
 * **Dynamic Media规则集：**
@@ -309,6 +312,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 预览视频，以便确保一切按预期显示。 满意后，即可发布它。 此步骤使受众能够访问视频。
 * **链接或嵌入：**
 发布后，您有两个选项。
+
    * **直接链接：**
 使用提供的URL直接链接到视频。 在营销网站上以适当的方式超链接它。
    * **嵌入视频：**
