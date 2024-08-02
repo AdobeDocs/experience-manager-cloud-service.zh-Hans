@@ -3,9 +3,9 @@ title: 限制Experience Manager中的资源投放
 description: 了解如何在 [!DNL Experience Manager]中限制资源交付。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
+source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Experience Manager中的中央资产治理允许DAM管理员或品牌经理管�
    1. 选择要添加的&#x200B;**[!UICONTROL 用户组]**，并从URL中提取&#x200B;**[!UICONTROL orgID]**&#x200B;和&#x200B;**[!UICONTROL userGroupID]**，或者使用您的组织ID，例如`{orgID}@AdobeOrg:{usergroupID}`。
 
 1. 将组ID添加到资产属性的&#x200B;**[!UICONTROL 角色]**&#x200B;字段。 <br>
-在**[!UICONTROL 角色]**&#x200B;字段中定义的组ID是唯一可访问该资源的用户。 您还可以在&#x200B;**[!UICONTROL 角色]**&#x200B;字段中添加IMS客户端ID和IMS配置文件ID。 例如：`{orgId}@AdobeOrg:{profileId}`。
+在**[!UICONTROL 角色]**&#x200B;字段中定义的组ID是唯一可访问该资源的用户。 除了IMS组ID之外，您还可以在&#x200B;**[!UICONTROL 角色]**&#x200B;字段中添加IMS用户ID和IMS配置文件ID。 例如：`{orgId}@AdobeOrg:{profileId}`。
 
    >[!NOTE]
    >
