@@ -4,7 +4,7 @@ description: 使用由 [!DNL Adobe Express] 提供支持的选项编辑图像并
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 610da7c1e8f20156b165d819a4bb91ec5ffcad80
+source-git-commit: af5ca9c436dce1929f310d40369abf05e60836f8
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 59%
@@ -86,6 +86,7 @@ Assets视图UI支持由Adobe Express提供的基础图像编辑，该视图已�
 ### 在 Adobe Express 嵌入式编辑器中编辑图像 {#edit-images-in-adobe-express-embedded-editor}
 
 拥有Express权利的用户可以从Assets视图中使用嵌入的Express编辑器，轻松地在Adobe Firefly中使用GenAI编辑内容和创建新内容。 此功能改进了内容重用并加快了内容速度。 您还可以使用预定义的元素使您的资源看起来令人惊叹，或者只需单击几下即可执行快速操作来编辑图像。
+
 ![在Essentials UI中表达](/help/assets/assets/express-in-essentials-ui.jpg)
 要使用[!DNL Adobe Express]嵌入式编辑器编辑图像，请执行以下步骤：
 
