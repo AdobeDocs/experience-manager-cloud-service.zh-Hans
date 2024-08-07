@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 10%
+source-wordcount: '1269'
+ht-degree: 11%
 
 ---
 
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Cloud Service内容请求的差异 {#content-requests-variances}
 
-内容请求在组织的Analytics报告工具中可能有差异，如下表所示。 通常，*不*&#x200B;使用通过客户端检测收集数据的分析工具来报告给定站点的内容请求数，只是因为它们通常依赖于用户同意触发，因此缺少相当一部分流量。 收集日志文件中的服务器端数据的Analytics工具，或为在AEM as a Cloud Service上添加其自己CDN的客户提供的CDN报告，将提供更好的计数。 为了报告页面查看次数及其相关性能，[AdobeRUM数据服务](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)是Adobe推荐的选项。
+内容请求在组织的Analytics报告工具中可能有差异，如下表所示。 通常，*不*&#x200B;使用通过客户端检测收集数据的分析工具来报告给定站点的内容请求数，只是因为它们通常依赖于用户同意触发，因此缺少相当一部分流量。 收集日志文件中的服务器端数据的Analytics工具，或为在AEM as a Cloud Service上添加其自己CDN的客户提供的CDN报告，将提供更好的计数。
 
 | 差异原因 | 解释 |
 |---|---|
