@@ -5,12 +5,13 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 89%
+source-wordcount: '1500'
+ht-degree: 80%
 
 ---
+
 
 # 导航 Cloud Manger UI {#navigation}
 
@@ -18,14 +19,14 @@ ht-degree: 89%
 
 Cloud manage UI 主要由两个图形界面组成：
 
-* 在[我的程序控制台](#my-programs)中，您可以查看和管理您的所有程序。
+* 在[我的程序控制台](#my-programs-console)中，您可以查看和管理您的所有程序。
 * 在[程序概述窗口](#program-overview)中，您可以查看单个程序的详细信息，并对其进行管理。
 
 >[!TIP]
 >
 >另请查看[入门文档历程](/help/journey-onboarding/overview.md)，全面了解如何使用Cloud Manager启动和运行AEM as a Cloud Service。
 
-## 我的程序控制台 {#my-programs}
+## 我的程序控制台 {#my-programs-console}
 
 当您登录 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上的 Cloud Manager 并选择适当的组织时，您将会进入&#x200B;**我的程序**&#x200B;控制台。
 
@@ -34,9 +35,13 @@ Cloud manage UI 主要由两个图形界面组成：
 “我的程序”控制台提供了对您在所选组织中有权访问的所有程序的概述。它由几个部分组成。
 
 1. 用于组织选择、警报和帐户设置的[工具栏](#toolbars-my-programs-toolbars)
+1. 选项卡允许您切换程序的当前视图。
+   * **主页** 视图（默认），选择 **我的程序** 视图，其中显示所有项目的概览
+   * 访问[许可证仪表板的&#x200B;**许可证**。](/help/implementing/cloud-manager/license-dashboard.md)
+   * 请注意，选项卡默认为关闭，可以使用 [Cloud Manager 标题中的汉堡菜单显示。](#cloud-manager-header)
 1. [统计数据和行动号召](#statistics)，用于概述您最近的活动
-1. [计划和许可证](#programs-license)用于了解您当前的许可证状态并管理您的程序
-1. [快速链接](#quick-links)可用于轻松访问相关资源
+1. [**我的程序** 部分](#my-programs-section) ，其中概述了您的所有计划
+1. [快速链接](#quick-links-section)可用于轻松访问相关资源
 
 >[!TIP]
 >
@@ -52,6 +57,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![Experience Cloud 标头](assets/experience-cloud-header.png)
 
+1. 汉堡菜单提供对选项卡的访问权限，这些选项卡可以引导您访问单个计划中的特定部分，或者根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
 1. 无论您在浏览 Cloud Manager 的哪个分区，Cloud Manager 按钮都会带您返回到 Cloud Manager 中的“我的程序”控制台。
 1. 点击或单击“反馈”按钮，向 Adobe 提供有关 Cloud Manager 的反馈。
 1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。如果您的 Adobe ID 与多个组织关联，请点击或单击以切换到另一个组织。
@@ -70,9 +76,9 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 通过“快速入门”链接，您可以访问[入门文档历程](/help/journey-onboarding/overview.md)，以便快速开始使用 Cloud Manager。
 1. 操作按钮可以提供适合上下文的操作，例如创建新程序。
 
-### 统计数据 {#statistics}
+### 统计和行动号召 {#statistics}
 
-统计信息部分提供了您组织的汇总数据，例如，如果您已成功设置了程序，则可能会显示过去 90 天的活动统计数据，其中包括：
+统计和行动号召部分提供组织的汇总数据，例如，如果您已成功设置程序，则可能会显示过去90天的活动统计数据，包括：
 
 * [部署](/help/implementing/cloud-manager/deploy-code.md)次数
 * 已发现的[代码质量问题](/help/implementing/cloud-manager/code-quality-testing.md)数量
@@ -80,13 +86,15 @@ Cloud manage UI 主要由两个图形界面组成：
 
 或者，如果您刚刚开始建立您的组织，则可能会有关于后续步骤或文档资源的提示。
 
-### 程序和许可证 {#programs-license}
+### 我的程序部分 {#my-programs-section}
 
-“我的程序”控制台的主要内容是程序列表和许可证状态。
+**我的程序**&#x200B;控制台的主要内容是&#x200B;**我的程序**&#x200B;部分中的程序列表。
 
-#### 程序选项卡 {#programs}
+**我的程序**&#x200B;部分列出了代表每个程序的卡片。 点击或单击信息卡即可访问相关程序的&#x200B;**程序概述**&#x200B;页面，以了解有关该程序的详细信息。
 
-**程序**&#x200B;选项卡列出了代表您有权访问的每个程序的信息卡。点击或单击信息卡即可访问相关程序的&#x200B;**程序概述**&#x200B;页面，以了解有关该程序的详细信息。
+>[!NOTE]
+>
+>根据您的权限，您可能无法选择某些程序。
 
 使用排序选项可以更好地找到您需要的程序。
 
@@ -100,14 +108,20 @@ Cloud manage UI 主要由两个图形界面组成：
 * 网格视图（默认）
 * 列表视图
 
+#### 程序信息卡 {#program-cards}
+
 每个程序都会由一张信息卡（或表格中的一行）来表示，其中提供该程序的概述以及采取操作的快速链接。
 
 ![程序信息卡](assets/program-card.png)
 
 * 程序图像（如果进行了配置）
 * 项目名称
-* 服务类型： AEM as a *Cloud Service程序的&#x200B;**Experience Manager云**&#x200B;或AMS程序的&#x200B;[**Experience Manager**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
-* [程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：沙盒或生产
+* 服务类型：
+   * 用于AEM as a Cloud Service程序的&#x200B;**Experience Manager云**
+   * [AMS程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)的&#x200B;**Experience Manager**
+* [项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
+   * 沙盒
+   * 生产
 * 状态
 * 已配置的解决方案
 * 创建日期
@@ -147,21 +161,17 @@ Cloud manage UI 主要由两个图形界面组成：
 >* [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
 >* [正在创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-#### 许可证选项卡 {#license-tab}
-
-**许可证**&#x200B;选项卡可让您快速访问[许可证仪表板。](/help/implementing/cloud-manager/license-dashboard.md)
-
-### 快速链接 {#quick-links}
+### 快速链接部分 {#quick-links-section}
 
 通过快速链接部分可以访问常用的相关资源。
 
 ## 程序概述窗口 {#program-overview}
 
-当您在“我的程序”控制台中选择一个程序后，您就会进入“程序概述”。
+在&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台中选择程序后，将转到&#x200B;**程序概述**&#x200B;窗口。
 
 ![程序概述](assets/program-overview.png)
 
-通过程序概述，您可以访问 Cloud Manager 程序的所有详细信息。与“我的程序”控制台一样，它由几个部分组成。
+通过程序概述，您可以访问 Cloud Manager 程序的所有详细信息。与&#x200B;**我的程序**&#x200B;控制台一样，它由若干部分组成。
 
 1. 通过[工具栏](#program-overview-toolbar)可快速跳转回“我的程序”控制台并导航程序
 1. [选项卡](#program-tabs)用于在程序的不同方面之间进行切换
@@ -201,8 +211,12 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 * [存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)：为程序配置的所有存储库
 * [报告](/help/implementing/cloud-manager/sla-reporting.md)：SLA 数据等量度
 * [环境](/help/implementing/cloud-manager/manage-environments.md)：为程序配置的所有环境
+* [域设置](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理项目的自定义域名
+* [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) — 管理程序的SSL证书
+* [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 为某些IP地址定义允许列表
 * [内容集](/help/implementing/developing/tools/content-copy.md)：为复制目的而创建的内容集
 * [复制内容活动](/help/implementing/developing/tools/content-copy.md)：内容复制活动
+* [网络基础架构](/help/security/configuring-advanced-networking.md) — 管理程序的高级联网选项
 * 学习路径：有关 Cloud Manager 的其他学习资源
 
 默认情况下，当您打开一个程序时，您会进入&#x200B;**概述**&#x200B;选项卡。当前选项卡会突出显示。选择另一个选项卡来显示其详细信息。
