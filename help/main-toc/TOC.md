@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 4f01ca0076248442fe93161bbc8b98bffb64551b
 workflow-type: tm+mt
 source-wordcount: '5315'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -292,7 +292,7 @@ ht-degree: 99%
       + [AEM 现代化工具](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 + Sites {#sites}
    + [对 AEM Cloud Service 中的 AEM Sites 的重要更改](/help/sites-cloud/sites-cloud-changes.md)
-   + [站点和Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
+   + [Sites 和 Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
    + 创作 {#authoring}
       + [页面创作快速入门指南](/help/sites-cloud/authoring/quick-start.md)
       + [基本处理](/help/sites-cloud/authoring/basic-handling.md)
