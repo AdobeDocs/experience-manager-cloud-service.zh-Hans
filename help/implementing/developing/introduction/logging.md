@@ -4,7 +4,7 @@ description: 了解如何使用AEM as a Cloud Service的日志记录功能配置
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 8%
@@ -617,9 +617,9 @@ CDN日志将转发到Splunk以请求新的支持票证；已启用Splunk转发�
 
 >[!NOTE]
 >
->特定日志和特定用户日志无法转发到Splunk。
+>无法将&#x200B;*特定*&#x200B;日志和&#x200B;*特定*&#x200B;用户日志转发到Splunk。
 >
->所有日志都将转发给Splunk，客户可以在其中根据自己的需求进行任何进一步筛选。
+>**所有**&#x200B;日志都将转发到Splunk，客户可以在其中根据自己的要求进行任何进一步的筛选。
 
 ### 启用Splunk转发 {#enabling-splunk-forwarding}
 
