@@ -4,9 +4,9 @@ description: 了解如何使用AEM as a Cloud Service的日志记录功能配置
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
+source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2829'
 ht-degree: 8%
 
 ---
@@ -614,6 +614,12 @@ Apache层日志（包括Dispatcher）位于保存Dispatcher的Docker容器中。
 与发送到Splunk的日志关联的网络带宽被视为客户网络I/O使用的一部分。
 
 CDN日志将转发到Splunk以请求新的支持票证；已启用Splunk转发的客户将来可以添加CDN日志。
+
+>[!NOTE]
+>
+>特定日志和特定用户日志无法转发到Splunk。
+>
+>所有日志都将转发给Splunk，客户可以在其中根据自己的需求进行任何进一步筛选。
 
 ### 启用Splunk转发 {#enabling-splunk-forwarding}
 
