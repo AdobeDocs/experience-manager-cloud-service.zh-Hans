@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7c8f54d7c1139485717cc42dafbc87be74fd5883
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '527'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 [!DNL Assets view] 支持广泛的文件格式，各种功能支持的文件类型也各不相同。
 
 * ![图像文件类型图标](assets/image-icon.svg) 图像：JPG、PNG、GIF、TIFF 等
-* ![Creative Cloud 类型图标](assets/creative-cloud-files.svg) Creative Cloud 文件：PSD、AI 和 INDD
+* ![creative cloudtype图标](assets/creative-cloud-files.svg)Creative Cloud文件：PSD、PSB、AI和INDD
 * ![相机类型图标](assets/camera-icon.svg) Camera RAW 文件：CR2/CR3、NEF、SRW/SRF 等
 * ![文档文件类型图标](assets/document-icon.svg) 文档：DOCX、PDF、PPTX 和 XLSX
 * ![视频文件类型图标](assets/video-icon.svg) 视频：MP4
@@ -46,7 +46,7 @@ ht-degree: 100%
 | 文件夹 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | − |
 | MP4 视频 | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | PDF | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
-| PSD、AI 和 INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
+| PSD、PSB、AI和INDD | ✓ | ✓ | ✓ | − | ✓ | ✓ ‡ | − | ✓ |
 | 其他二进制文件 | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
 <!-- Hiding CC Libraries (considered beta) as per PM feedback.
@@ -63,7 +63,7 @@ ht-degree: 100%
 | 视频 | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC Libraries | − | − | − | − | − | ✓ | ✓ |
 | PDF | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
-| PSD | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
+| PSD和PSB | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | AI 和 INDD | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | 其他二进制文件 | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 | 视频 | − | ✓ | ✓ |
 | CC Libraries | − | − | − |
 | PDF | − | ✓ | ✓ |
-| PSD、AI 和 INDD | − | ✓ | ✓ |
+| PSD、PSB、AI和INDD | − | ✓ | ✓ |
 | 其他二进制文件 | − | ✓ | ✓ |
 | DOC | − | ✓ | ✓ |
 | DOCX | − | ✓ | ✓ |
@@ -99,7 +99,8 @@ ht-degree: 100%
 | 视频 | ✓ | − | ✓ | ✓ | ✓ |
 | CC Libraries | ✓ | − | − | − | − |
 | PDF | ✓ | − | ✓ | ✓ | ✓ |
-| PSD、AI 和 INDD | ✓ | − | ✓ | ✓ | ✓ |
+| AI 和 INDD | ✓ | − | ✓ | ✓ | ✓ |
+| PSD和PSB | ✓ | ✓ | ✓ | ✓ | ✓ |
 | 其他二进制文件 | ✓ | − | ✓ | ✓ | ✓ |
 
 [!DNL Adobe Asset Link] 的用户可以从支持的 [!DNL Adobe Creative Cloud] 桌面应用程序上传文件，并将其签入（上传新版本）[!DNL Assets view] 存储库中。
@@ -112,7 +113,7 @@ ht-degree: 100%
 | Videos        |          |
 | CC Libraries  |          |
 | PDF files     |          |
-| PSD           |          |
+| PSD, PSB           |          |
 | AI            |          |
 | INDD          |          |
 
