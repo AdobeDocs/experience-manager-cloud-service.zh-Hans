@@ -6,9 +6,10 @@ index: y
 type: Documentation
 solution: Experience Manager, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager, Experience Manager Screens
+version: Cloud Service
 cloud: Experience Cloud
 recommendations: noDisplay
-source-git-commit: 79cf47e8500bcd942264ee54b60ec67f59447020
+source-git-commit: d0e79edd83faafc1233b812019c877ec360e50c8
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 51%
@@ -49,4 +50,4 @@ ToC
 
 * `title`
 * `description`
-* `contentOwner` (仅对下的核心资产内容 `/help/assets`)
+* `contentOwner` （仅在`/help/assets`下的核心资源内容上）
