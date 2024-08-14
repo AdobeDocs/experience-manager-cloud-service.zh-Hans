@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd5f77e8e27b55c538bbe50d28ae56f6e983f541
+source-git-commit: 06a4bbb3ae2c5e7f3da5d4410b1fd09083574d84
 workflow-type: tm+mt
-source-wordcount: '5320'
+source-wordcount: '5329'
 ht-degree: 99%
 
 ---
@@ -191,6 +191,9 @@ ht-degree: 99%
       + [生成变体的当前发行说明](/help/generative-ai/release-notes-generate-variations.md)
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
+      + 2024 {#2024}
+         + [2024.07.28发行说明](/help/release-notes/universal-editor/2024/2024-07-28.md)
+         + [2024.06.28发行说明](/help/release-notes/universal-editor/2024/2024-06-28.md)
    + [新增功能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 中的重要更改](/help/release-notes/aem-cloud-changes.md)
    + [已弃用和已删除的功能和 API](/help/release-notes/deprecated-removed-features.md)
