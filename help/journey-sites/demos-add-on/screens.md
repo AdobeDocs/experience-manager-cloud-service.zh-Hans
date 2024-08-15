@@ -4,10 +4,10 @@ description: 了解在您的演示站点上启用完整 AEM Screens as a Cloud S
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2654'
-ht-degree: 100%
+source-wordcount: '2666'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->AEM Screens 演示需要将 Screens 加载项添加到 Cloud Manager 程序中。在[此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/adding-screens-addon/add-on-new-program-screens-cloud.html)了解如何添加它。
+>AEM Screens 演示需要将 Screens 加载项添加到 Cloud Manager 程序中。了解如何使用[将Screens作为加载项添加到Cloud Manager中的新程序](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)如何添加它。
 
 ## 迄今为止的故事 {#story-so-far}
 

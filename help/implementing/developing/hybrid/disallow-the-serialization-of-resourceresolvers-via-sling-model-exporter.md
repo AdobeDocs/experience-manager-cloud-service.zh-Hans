@@ -4,9 +4,9 @@ description: 禁止通过 Sling 模型导出器序列化 ResourceResolver
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 Sling模型导出器功能允许将Sling模型对象序列化为JSON格式。 此功能之所以得到广泛应用，是因为它使SPA（单页应用程序）能够轻松从AEM访问数据。 在实施端，使用Jacson Databind库来序列化这些对象。
 
-序列化是递归操作。 从“根对象”开始，递归遍历所有符合条件的对象并将其及其子对象序列化。 您可以找到在[本文](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)中序列化了哪些字段的说明。
+序列化是递归操作。 从“根对象”开始，递归遍历所有符合条件的对象并将其及其子对象序列化。 您可以在文章[Jackson - Decision What Fields Get Serialized/Deserialized](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)中找到有关哪些字段已序列化的说明。
 
 此方法将所有类型的对象序列化为JSON，自然，它还可以序列化Sling `ResourceResolver`对象（如果序列化规则涵盖该对象）。 这是有问题的，因为`ResourceResolver`服务（因此也是代表它的服务对象）包含不应公开的潜在敏感信息。 例如：
 

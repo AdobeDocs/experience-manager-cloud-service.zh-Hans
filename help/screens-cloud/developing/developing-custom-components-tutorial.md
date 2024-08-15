@@ -4,7 +4,7 @@ description: 以下教程将介绍为AEM Screens创建自定义组件的步骤�
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 ## 项目设置 {#project-setup}
 
-Screens项目的源代码通常作为多模块Maven项目进行管理。 为了加快本教程，已使用[AEM项目原型13](https://github.com/adobe/aem-project-archetype)预生成了一个项目。 有关[使用Maven AEM项目原型创建项目的更多详细信息见此处](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
+Screens项目的源代码通常作为多模块Maven项目进行管理。 为了加快本教程，已使用[AEM项目原型13](https://github.com/adobe/aem-project-archetype)预生成了一个项目。 有关使用Maven AEM项目原型创建项目的更多详细信息，请参阅[项目设置](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
 
 1. 使用[CRX包管理器](http://localhost:4502/crx/packmgr/index.jsp)下载并安装以下包：
 

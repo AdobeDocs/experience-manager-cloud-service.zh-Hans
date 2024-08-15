@@ -4,9 +4,9 @@ description: 了解如何使用AEM as a Cloud Service的日志记录功能配置
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2831'
 ht-degree: 8%
 
 ---
@@ -628,7 +628,7 @@ CDN日志将转发到Splunk以请求新的支持票证；已启用Splunk转发�
 * Splunk HEC终结点地址。 此端点必须具有有效的SSL证书并且可以公开访问。
 * Splunk索引
 * Splunk端口
-* Splunk HEC令牌。 有关详细信息，请参阅[此页面](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)。
+* Splunk HEC令牌。 有关详细信息，请参阅[HTTP事件收集器示例](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)。
 
 以上属性应该为每个相关的程序/环境类型组合指定。 例如，如果客户需要开发、暂存和生产环境，则应提供三组信息，如下所示。
 

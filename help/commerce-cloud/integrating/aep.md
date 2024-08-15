@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -329,7 +329,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
    - 使用给定的Experience Platform和/或ACDS配置初始化它们
    - 订阅来自Peregrine的所有事件并将它们转发到事件SDK
 
-   您可以在[此处](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)查看`EventCollectorContext`的实施详细信息。
+   您可以查看`EventCollectorContext`的实施详细信息。 请参阅GitHub](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)上的[aem-core-cif-components。
 
 ### 生成和部署更新的AEM项目
 

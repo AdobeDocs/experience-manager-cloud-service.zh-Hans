@@ -4,9 +4,9 @@ description: 了解AEM as a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2897'
 ht-degree: 1%
 
 ---
@@ -245,7 +245,7 @@ AEM层根据是否已设置缓存标头和请求类型的值来设置缓存标�
 
 如果您希望禁用此行为，请提交支持票证。
 
-对于2023年10月之前创建的环境，建议将Dispatcher配置的`ignoreUrlParams`属性配置为此处记录的[](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)。
+对于2023年10月之前创建的环境，建议配置Dispatcher配置的`ignoreUrlParams`属性；请参阅[配置Dispatcher — 忽略URL参数](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)。
 
 忽略营销参数有两种可能性。 （其中首选方法是通过查询参数忽略缓存无效）：
 

@@ -4,9 +4,9 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85dc92e1adc11a2ee513b7a43e0945b18b2f4790
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '4215'
+source-wordcount: '4241'
 ht-degree: 4%
 
 ---
@@ -153,7 +153,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 可以使用此处记录的方法[查找您自己的组织ID。](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+   * 可以使用[查看组织ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下记录的方法查找您自己的组织ID。
 
 1. 接下来，配置您的项目ID：
 
@@ -167,7 +167,7 @@ Setup the CLI configuration necessary to use the RDE commands.
 
    `aio login`
 
-   这些步骤要求您成为Cloud Manager **开发人员 — Cloud Service**&#x200B;产品配置文件的成员。 有关详细信息，请参阅[此页面](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)。
+   这些步骤要求您成为Cloud Manager **开发人员 — Cloud Service**&#x200B;产品配置文件的成员。 有关更多详细信息，请参阅[将团队成员分配给Cloud Manager产品配置文件 — 分配开发人员产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)。
 
 有关更多信息和演示，请观看视频教程[如何设置RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html)。
 </details>
@@ -1005,7 +1005,7 @@ Forms开发人员可以使用AEM FormsCloud Service快速开发环境快速开�
 
 ### 权限不足错误 {#insufficient-permissions}
 
-要使用RDE插件，它要求您是Cloud Manager **开发人员 — Cloud Service**&#x200B;产品配置文件的成员。 有关详细信息，请参阅[此页面](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)。
+要使用RDE插件，它要求您是Cloud Manager **开发人员 — Cloud Service**&#x200B;产品配置文件的成员。 有关更多详细信息，请参阅[将团队成员分配给Cloud Manager产品配置文件 — 分配开发人员产品配置文件](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)。
 
 或者，如果可以通过运行此命令登录到开发人员控制台，则可以确认您具有此开发人员角色：
 

@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 54159c25b60277268ade16b437891f268873fecf
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 66%
+source-wordcount: '1343'
+ht-degree: 64%
 
 ---
 
@@ -129,7 +129,7 @@ AEM as a Cloud Service启用基于Cookie的粘性会话，确保最终用户在�
 
 ## 权限（封闭用户组） {#permissions-closed-user-groups}
 
-发布层访问策略（也称为封闭用户组 (CUG)）是在 AEM 创作实例中定义的，如[此处所述](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)。为了限制某些用户访问网站的某些部分或页面，请使用 AEM 创作实例根据需要应用 CUG（如此处所述），并将它们复制到发布层。
+Publish层访问策略(也称为封闭用户组(CUG))是在AEM创作中定义的，请参阅[创建封闭用户组](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)。 为了限制某些用户访问网站的某些部分或页面，请使用 AEM 创作实例根据需要应用 CUG（如此处所述），并将它们复制到发布层。
 
 * 如果用户通过使用 SAML 向标识提供者 (IdP) 进行身份验证来登录，则身份验证处理程序将识别用户的组成员资格（应与发布层上的 CUG 匹配），并通过存储库记录保留用户与组之间的关联
 * 如果在没有 IdP 集成的情况下完成登录，则自定义代码可应用相同的存储库结构关系。

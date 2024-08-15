@@ -4,10 +4,10 @@ description: 了解与 Headless 部署相关的 Adobe Experience Manager 高级�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 * **Dispatcher** 是一个通过 AEM Dispatcher 模块增强的静态 Web 服务器。它提供缓存功能和其他安全层。**Dispatcher** 位于 **Publish** 和 **Preview** 服务前。
 
-在 AEM as a Cloud Service 程序中，您可以有多个环境：Dev、Stage 和 Prod。每个环境有自己独特的 **Author**、**Publish** 和 **Preview** 服务。您可在[此处](/help/implementing/cloud-manager/manage-environments.md)学习有关管理环境的更多信息。
+在 AEM as a Cloud Service 程序中，您可以有多个环境：Dev、Stage 和 Prod。每个环境有自己独特的 **Author**、**Publish** 和 **Preview** 服务。请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)以了解详情。
 
 ## 作者发布模型
 

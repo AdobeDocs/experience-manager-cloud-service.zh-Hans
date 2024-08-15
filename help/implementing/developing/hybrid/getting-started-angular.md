@@ -4,9 +4,9 @@ description: 本文介绍了一个SPA应用程序示例，说明它是如何组�
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '978'
 ht-degree: 6%
 
 ---
@@ -59,7 +59,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-有关它的更多详细信息，可在[上的GitHub上找到此处](https://github.com/wcm-io-frontend/aem-clientlib-generator)。
+有关详细信息，请参阅GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator)上的[aem-clientlib-generator。
 
 `aem-clientlib-generator`在`clientlib.config.js`文件中配置如下。
 

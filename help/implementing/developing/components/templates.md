@@ -4,9 +4,9 @@ description: 创建用作新页面基础的页面时，将使用页面模板
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3267'
+source-wordcount: '3268'
 ht-degree: 4%
 
 ---
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 如果您已创建可作为其他模板基础的模板，则可以将此模板作为模板类型复制。
 
-1. 创建模板，就像创建此处](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)记录的任意页面模板[一样，该模板将用作模板类型的基础。
+1. 创建模板，就像创建任何页面模板一样。 请参阅[创建页面模板](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author)。 这将用作模板类型的基础。
 1. 使用CRXDE Lite，将创建的模板从`templates`节点复制到[模板文件夹](#template-folders)下的`template-types`节点。
 1. 从[模板文件夹](#template-folders)下的`templates`节点中删除模板。
 1. 在`template-types`节点下的模板副本中，从所有`jcr:content`节点中删除所有`cq:template`和`cq:templateType`属性。

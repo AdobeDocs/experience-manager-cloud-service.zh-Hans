@@ -4,9 +4,9 @@ description: 本页介绍如何导航到Screens服务提供商。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '382'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 请按照以下步骤设置Screens服务提供商：
 
-1. 从[此处](https://experience.adobe.com/screens)导航到Screens服务提供商。
+1. 导航到[Screens服务提供商](https://experience.adobe.com/screens)。
 
    >[!CAUTION]
    >如果您有权访问多个组织，请确保您已登录到正确的组织。 要更改您的组织，请单击屏幕右上角的组织名称，然后选择您需要访问的所需组织。

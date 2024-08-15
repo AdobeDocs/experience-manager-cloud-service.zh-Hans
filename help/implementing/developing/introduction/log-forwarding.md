@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发给Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1375'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此功能尚未发布，并且在发布时，某些日志记录目标可能不可用。 同时，您可以打开支持票证以将日志转发到&#x200B;**Splunk**，如[日志记录文章](/help/implementing/developing/introduction/logging.md)中所述。
+>此功能尚未发布，并且在发布时，某些日志记录目标可能不可用。 同时，您可以打开支持票证以将日志转发到&#x200B;**Splunk**，如[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)中所述。
 
 拥有日志记录供应商许可证或托管日志记录产品的客户可以将AEM日志(包括Apache/Dispatcher)和CDN日志转发到关联的日志记录目标。 AEM as a Cloud Service支持以下日志记录目标：
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-每个文件都包含多个json日志条目，每个条目位于一行中。 日志条目格式在[日志记录文章](/help/implementing/developing/introduction/logging.md)中进行了说明，每个日志条目还包括以下[日志条目格式](#log-format)部分中提到的其他属性。
+每个文件都包含多个json日志条目，每个条目位于一行中。 日志条目格式在[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)下描述，每个日志条目还包括以下[日志条目格式](#log-format)部分中提到的其他属性。
 
 #### Azure Blob Storage AEM日志 {#azureblob-aem}
 
@@ -183,7 +183,7 @@ AEM日志(包括Apache/Dispatcher)显示在具有以下命名约定的文件夹�
 
 在每个文件夹下，将创建一个文件并将其附加到。 客户负责处理和管理此文件，以免它变得太大。
 
-请参阅[日志记录文章](/help/implementing/developing/introduction/logging.md)中的日志条目格式。 日志条目还将包括以下[日志条目格式](#log-formats)部分中提到的其他属性。
+请参阅AEM as a Cloud Service的[日志记录](/help/implementing/developing/introduction/logging.md)下的日志条目格式。 日志条目还将包括以下[日志条目格式](#log-formats)部分中提到的其他属性。
 
 
 ### Datadog {#datadog}
@@ -266,7 +266,7 @@ data:
 
 #### HTTPS CDN日志 {#https-cdn}
 
-Web请求(POST)将使用json有效负载连续发送，该有效负载是日志条目的数组，日志条目格式在[日志记录文章](/help/implementing/developing/introduction/logging.md#cdn-log)中描述。 下面的[日志条目格式](#log-formats)部分中提及了其他属性。
+Web请求(POST)将使用json有效负载连续发送，该有效负载是一个日志条目数组，日志条目格式在[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md#cdn-log)下描述。 下面的[日志条目格式](#log-formats)部分中提及了其他属性。
 
 还有一个名为`sourcetype`的属性，该属性设置为值`aemcdn`。
 
@@ -276,7 +276,7 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是日志�
 
 #### HTTPS AEM日志 {#https-aem}
 
-对于AEM日志（包括apache/dispacher），将连续发送Web请求(POST)，JSON有效负载为日志条目数组，具有[日志记录文章](/help/implementing/developing/introduction/logging.md)中描述的各种日志条目格式。 下面的[日志条目格式](#log-format)部分中提及了其他属性。
+对于AEM日志（包括apache/dispacher），将连续发送Web请求(POST)，JSON有效负载为日志条目数组，其日志条目格式多种多样，如[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)中所述。 下面的[日志条目格式](#log-format)部分中提及了其他属性。
 
 还有一个名为`sourcetype`的属性，该属性设置为以下值之一：
 
@@ -323,7 +323,7 @@ data:
 
 ## 日志条目格式 {#log-formats}
 
-有关每种日志类型(CDN日志和包括Apache/Dispatcher的AEM日志)的格式，请参阅常规的[日志记录文章](/help/implementing/developing/introduction/logging.md)。
+有关每种日志类型(CDN日志和包括Apache/Dispatcher的AEM日志)的格式，请参阅[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)。
 
 由于来自多个程序和环境的日志可能会转发到同一日志记录目标，因此除了日志记录文章中所述的输出之外，每个日志条目中还将包含以下属性：
 
@@ -350,7 +350,7 @@ aem_tier: author
 
 某些组织选择限制日志记录目标可以接收的流量。
 
-对于CDN日志，您可以将IP地址添加到允许列表，如[本文](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到(非Adobe)Azure Blob存储区，在其中可以写入逻辑以将专用IP的日志发送到其最终目标。
+对于CDN日志，您可以将IP地址添加到允许列表，如[fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到(非Adobe)Azure Blob存储区，在其中可以写入逻辑以将专用IP的日志发送到其最终目标。
 
 对于AEM日志(包括Apache/Dispatcher)，您可以配置日志转发以通过[高级联网](/help/security/configuring-advanced-networking.md)。 查看以下三种高级联网类型的模式，它们使用可选的`port`参数以及`host`参数。
 

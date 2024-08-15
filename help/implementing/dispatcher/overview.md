@@ -4,10 +4,10 @@ description: 详细了解内容交付数据流以及如何发布内容
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -36,4 +36,4 @@ ht-degree: 100%
 * [缓存](/help/implementing/dispatcher/caching.md)
 
 
-[此处](/help/operations/replication.md)提供了有关从创作服务到发布服务的复制的信息。
+有关从创作服务复制到发布服务的信息，请参阅[复制](/help/operations/replication.md)。

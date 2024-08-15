@@ -4,10 +4,10 @@ description: 利用行动中心方便地对事件和其他重要信息采取行�
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 22d5975a0c4ee180bbcda906b035d306a352b752
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 56%
+ht-degree: 54%
 
 ---
 
@@ -30,7 +30,7 @@ AEM as Cloud Service 在发生需要立即采取行动的关键事件时会发�
 
 ## 配置 {#configuration}
 
-要配置接收“操作中心”电子邮件通知的功能，请创建[本文中](/help/journey-onboarding/notification-profiles.md)讲解的“产品配置文件”，即事件通知 - Cloud Service和主动通知 - Cloud Service。此外，还要将组织的相应 Adobe ID 分配给这些配置文件。这允许管理员确定哪些用户有资格接收这些电子邮件通知。
+要配置接收操作中心电子邮件通知，请按照[通知配置文件](/help/journey-onboarding/notification-profiles.md)下的说明创建产品配置文件，即“事件通知” — “Cloud Service”和“主动通知” — “Cloud Service”。 此外，还要将组织的相应 Adobe ID 分配给这些配置文件。这允许管理员确定哪些用户有资格接收这些电子邮件通知。
 
 >[!NOTE]
 >“操作中心”电子邮件通知在组织级别运行，因此，订阅者将收到有关所有程序以及这些程序中的环境的通知。
@@ -65,7 +65,7 @@ AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | 操作问题 | 需要立即采取行动的关键问题 | 分配给“事件通知 - Cloud Service”产品配置文件的用户 | X |
 | 主动建议 | 应该计划的优化 | 分配给“主动通知 - Cloud Service”产品配置文件的用户 | X |
-| Cloud Manager 管道状态 | 有关您的管道状态的信息 | 在[Experience Cloud首选项](https://experience.adobe.com/preferences)中选中了业务负责人、项目管理员或部署管理员角色的“其他”复选框的用户，如此处[所述](/help/implementing/cloud-manager/notifications.md)。 |                           |
+| Cloud Manager 管道状态 | 有关您的管道状态的信息 | 在[Experience Cloud首选项](https://experience.adobe.com/preferences)中选中“业务所有者”、“项目管理员”或“部署管理员”角色、“其他”复选框的用户，请参阅[通知](/help/implementing/cloud-manager/notifications.md)。 |                           |
 
 ## 支持的通知类型 {#supported-notification-types}
 

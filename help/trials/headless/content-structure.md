@@ -6,10 +6,10 @@ index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 100%
+source-wordcount: '1003'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->该&#x200B;**冒险**&#x200B;模型基于 AEM 的 WKND 示例站点。您可以[在这里访问网站](https://wknd.site/us/en/adventures/yosemite-backpacking.html)，以查看使用&#x200B;**冒险**&#x200B;模型的内容。
+>该&#x200B;**冒险**&#x200B;模型基于 AEM 的 WKND 示例站点。您可以[在此处](https://wknd.site/us/en/adventures/yosemite-backpacking.html)访问WKND网站以查看使用&#x200B;**冒险**&#x200B;模型的内容。
 
 按照与上述相同的步骤添加这些附加字段。其中唯一的区别是您必须设置的属性。
 

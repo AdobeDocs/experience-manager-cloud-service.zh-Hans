@@ -4,7 +4,7 @@ description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2745'
 ht-degree: 4%
@@ -184,7 +184,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 客户可以在创作层的开发环境中访问CRXDE Lite，但不能在暂存或生产环境中访问。 运行时无法写入不可变存储库(`/libs`， `/apps`)，因此尝试这样做会导致错误。
 
-相反，存储库浏览器可以从AEM as a Cloud Service Developer Console启动，为创作、发布和预览层上的所有环境提供到存储库的只读视图。 有关存储库浏览器的更多信息，请参阅[此处](/help/implementing/developing/tools/repository-browser.md)。
+相反，存储库浏览器可以从AEM as a Cloud Service Developer Console启动，为创作、发布和预览层上的所有环境提供到存储库的只读视图。 有关详细信息，请参阅[存储库浏览器](/help/implementing/developing/tools/repository-browser.md)。
 
 AEM as a Cloud Service Developer Console中为RDE、开发、暂存和生产环境提供了一组用于调试AEM as a Cloud Service开发人员环境的工具。 可以通过调整Author或Publish服务URL来确定URL，如下所示：
 
@@ -194,7 +194,7 @@ AEM as a Cloud Service Developer Console中为RDE、开发、暂存和生产环�
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-有关详细信息，请参阅[此页面](/help/release-notes/home.md)。
+有关详细信息，请参阅[发行信息](/help/release-notes/home.md)。
 
 开发人员可以生成状态信息，并解析各种资源。
 

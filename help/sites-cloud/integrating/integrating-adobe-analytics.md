@@ -5,10 +5,10 @@ feature: Integration
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 87%
+source-wordcount: '593'
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 通过将 Adobe Analytics 与 AEM as a Cloud Service 集成，您可以跟踪您的网页活动。集成需要：
 
 * 使用 Touch UI 在 AEM as a Cloud Service 中创建 Analytics 配置。若要将 Adobe Analytics 与 AEM as a Cloud Service 集成，需要 IMS 身份验证。
-* 在 [Adobe Launch](#analytics-launch) 中将 Adobe Analytics 添加为扩展并进行配置。有关 Adobe Launch 的更多详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)。
+* 在 [Adobe Launch](#analytics-launch) 中将 Adobe Analytics 添加为扩展并进行配置。有关Adobe启动项的更多详细信息，您可以从[快速入门指南](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)开始。
 
 与以前版本的 AEM 相比，AEM as a Cloud Service 的 Analytics 配置中不提供框架支持。相反，此操作现在通过 Adobe Launch 完成，后者是用于通过 Analytics 功能（JS 库）检测 AEM Site 的实际工具。在 Adobe Launch 中，创建了一个属性，可以在其中配置 Adobe Analytics 扩展并创建规则以将数据发送到 Adobe Analytics。Adobe Launch 已取代由 SiteCatalyst 提供的分析任务。
 
@@ -43,7 +43,7 @@ ht-degree: 87%
 |---|---|
 | 标题 | 配置名称 |
 | IMS 配置 | 选择 IMS 配置（参阅上面的章节） |
-| 区段 | 用于使用当前报告包中定义的 Analytics 区段的选项。基于区段筛选 Analytics 报告。有关其他详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)。 |
+| 区段 | 用于使用当前报告包中定义的 Analytics 区段的选项。基于区段筛选 Analytics 报告。有关其他详细信息，请参阅[关于区段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)。 |
 | 报告包 | 从中发送数据和提取报告的存储库。报告包定义针对某个所选网站、网站集合或网页子集的完整、独立的报告。您可以查看从单个报告包中获取的报告，并且可以根据您的要求随时在配置中编辑此字段。 |
 
 ### 具有 IMS 身份验证的 Adobe Analytics {#configuration-parameters-ims}
@@ -68,7 +68,7 @@ Adobe Analytics 可以作为扩展添加到 Launch 属性中。可以定义规�
 
 * 观看[本视频](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)，了解如何在 Launch 中为基本 Sites 配置 Analytics 扩展。
 
-* 请参阅[此页面](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)以了解有关如何创建规则并将数据发送到 Adobe Analytics 的详细信息。
+* 有关如何创建规则并将数据发送到Adobe Analytics的详细信息，请参阅[添加Adobe Analytics](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)。
 
 >[!NOTE]
 >

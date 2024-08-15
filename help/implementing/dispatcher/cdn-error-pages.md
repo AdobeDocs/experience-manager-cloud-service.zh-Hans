@@ -4,9 +4,9 @@ description: 了解如何覆盖默认错误页面，其中将静态文件托管�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 1. 创建名为`cdn.yaml`或类似的文件，并引用下面的语法部分。
 
-1. 将该文件放置在名为&#x200B;*config*&#x200B;或类似的顶级文件夹下，如[配置管道文章](/help/operations/config-pipeline.md#folder-structure)中所述。
+1. 将文件放置在名为&#x200B;*config*&#x200B;或类似的顶级文件夹下，如[使用配置管道](/help/operations/config-pipeline.md#folder-structure)中所述。
 
-1. 在Cloud Manager中创建配置管道，如[配置管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)中所述。
+1. 在Cloud Manager中创建配置管道，如[使用配置管道](/help/operations/config-pipeline.md#managing-in-cloud-manager)中所述。
 
 1. 部署配置。
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-有关数据节点上方属性的说明，请参阅[配置管道项目](/help/operations/config-pipeline.md#common-syntax)。 kind属性值应为&#x200B;*CDN*，`version`属性应设置为&#x200B;*1*。
+有关数据节点上方属性的说明，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 kind属性值应为&#x200B;*CDN*，`version`属性应设置为&#x200B;*1*。
 
 
 | 名称 | 允许的属性 | 含义 |

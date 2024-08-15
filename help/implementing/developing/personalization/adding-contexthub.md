@@ -4,9 +4,9 @@ description: 将ContextHub添加到您的页面以启用ContextHub功能并链�
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ ContextHub提供了用于处理JavaScript对象的[`ContextHub.Utils.JSON.tree`]
 >
 >默认情况下，ContextHub不知道发布服务器上当前使用的已登录，并且ContextHub将此类用户视为“匿名”。
 >
->您可以通过加载配置文件存储区，使ContextHub感知已登录的用户。 请在此处](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)查看GitHub上的[示例代码。
+>您可以通过加载配置文件存储区，使ContextHub感知已登录的用户。 在GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上查看示例代码： [aem-sample-we-retail。
 
 ### ContextHub事件 {#contexthub-eventing}
 

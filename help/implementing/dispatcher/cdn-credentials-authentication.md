@@ -4,9 +4,9 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1266'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖
 
 作为设置的一部分，AdobeCDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到AdobeCDN之前，在客户CDN中对每个请求进行设置，CDN随后会验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
 
-*X-AEM-Edge-Key*&#x200B;值由名为`cdn.yaml`或类似文件中的`edgeKey1`和`edgeKey2`属性引用，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请阅读[配置管道文章](/help/operations/config-pipeline.md#folder-structure)。
+*X-AEM-Edge-Key*&#x200B;值由名为`cdn.yaml`或类似文件中的`edgeKey1`和`edgeKey2`属性引用，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。
 
 语法说明如下：
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-有关`data`节点上方属性的说明，请参阅[配置管道文章](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+有关`data`节点上属性的描述，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
 其他属性包括：
 
@@ -76,7 +76,7 @@ data:
 
 ## 清除API令牌 {#purge-API-token}
 
-客户可以使用声明的清除API令牌[清除CDN缓存](/help/implementing/dispatcher/cdn-cache-purge.md)。 令牌在名为`cdn.yaml`或类似的文件中声明，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请阅读[配置管道文章](/help/operations/config-pipeline.md#folder-structure)。
+客户可以使用声明的清除API令牌[清除CDN缓存](/help/implementing/dispatcher/cdn-cache-purge.md)。 令牌在名为`cdn.yaml`或类似的文件中声明，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。
 
 语法说明如下：
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-有关`data`节点上方属性的说明，请参阅[配置管道文章](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+有关`data`节点上属性的描述，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
 其他属性包括：
 
@@ -156,7 +156,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-有关`data`节点上方属性的说明，请参阅[配置管道文章](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+有关`data`节点上属性的描述，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
 此外，语法包括：
 

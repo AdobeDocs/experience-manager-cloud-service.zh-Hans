@@ -4,10 +4,10 @@ description: AEM - 使用 Commerce Integration Framework 的商业集成常见�
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '965'
+ht-degree: 98%
 
 ---
 
@@ -77,4 +77,4 @@ Adobe 建议使用抽象的付款方式。这会使浏览器客户端与支付�
 
 ## 16. 如何申请 I/O Runtime 试用许可证？
 
-您可以在[此处](https://developer.adobe.com/app-builder/trial/)申请使用 I/O Runtime 的试用许可证。
+有关请求试用许可证以使用I/O运行时的详细信息，请参阅[获取访问权限](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/)。

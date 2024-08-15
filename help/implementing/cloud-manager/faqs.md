@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 100%
+source-wordcount: '974'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 是。添加 `maven-toolchains-plugin` 和恰当的 Java™ 11 设置。
 
-[此处](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)记录了该流程。
+已记录此过程 — 请参阅[项目创建向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)。
 
 有关示例，请参阅 [wknd 示例项目代码](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
-有关如何删除此插件的说明，请见[此处。](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)
+有关如何删除此插件的说明，请参阅[从SCR注释到OSGI注释](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)。
 
 ## 从 Java™ 8 切换到 Java™ 11 后，我的构建失败，并显示一个有关 RequireJavaVersion 的错误。 我该怎么办？ {#build-fails-requirejavaversion}
 
@@ -61,11 +61,11 @@ ht-degree: 100%
 
 您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager 会自动设置适当的版本号并在 Git 中为您创建标记。 如果需要，可以稍后参考此标记。
 
-[此处记录了](/help/implementing/cloud-manager/managing-code/project-version-handling.md)有关版本处理的更多详细信息。
+有关版本处理的更多详细信息，请参阅[Maven项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)。
 
 ## 包和捆绑包版本控制如何用于暂存和生产部署？ {#snapshot-version}
 
-在暂存和生产部署中，将生成自动版本，[如该处所记录。](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+在暂存和生产部署中，将生成自动版本 — 请参阅[Maven项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)。
 
 对于暂存和生产部署中的自定义版本控制，请设置适当的三部分 maven 版本，如 `1.0.0`。 每次部署到生产环境时提高版本。
 

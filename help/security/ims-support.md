@@ -4,10 +4,10 @@ description: 面向 Adobe Experience Manager as a Cloud Service 的图像管理�
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 100%
+source-wordcount: '1941'
+ht-degree: 93%
 
 ---
 
@@ -60,9 +60,9 @@ AEM 客户应已设置组织，作为 IMS 设置的一部分，客户实例将�
 1. 系统管理员在 Admin Console 中进行 IDP 配置以设置单点登录。
 1. AEM 管理员可以像往常一样管理本地组以及权限。
 
-[此处](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)介绍了 Adobe Identity Management 基础知识，包括 IDP 配置。
+[设置标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)涵盖了Identity Management基础知识的Adobe，包括IDP配置。
 
-[此处](https://helpx.adobe.com/cn/enterprise/admin-guide.html)介绍了企业管理和 Admin Console 用法。
+企业管理和Admin Console使用在[欢迎使用企业和团队管理指南](https://helpx.adobe.com/cn/enterprise/admin-guide.html)中。
 
 ### 在 Admin Console 中载入用户 {#onboarding-users-in-admin-console}
 
@@ -96,27 +96,29 @@ AEM 客户应已设置组织，作为 IMS 设置的一部分，客户实例将�
 
 >[!NOTE]
 >
->支持创建动态组的预发行版 **2.4RC1** 可供使用，该版本可以在[此处](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)找到。
+>GitHub ](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)上的[用户同步工具v2.4rc1支持创建动态组，预发行版&#x200B;**2.4RC1**&#x200B;可供使用。
 
 此版本的主要功能是能够动态映射新的 LDAP 组以在 Admin Console 中获得用户成员资格，以及动态创建用户组。
 
-有关新组功能的更多信息，请访问[此位置](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)。
+有关新组功能的详细信息，请访问[Adobe用户同步工具 — 其他组选项](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)。
 
 **用户同步文档**
 
-有关更多详细信息，请参阅 [UST 文档。](https://adobe-apiplatform.github.io/user-sync.py/en/)
+请参阅：
 
-用户同步工具必须使用[此处](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)的过程注册为 Adobe Developer 客户端 UMAPI。
+* [UST文档](https://adobe-apiplatform.github.io/user-sync.py/en/)
 
-Adobe Developer Console 文档可在[此处](https://developer.adobe.com/developer-console/)找到。
+* 用户同步工具必须使用[API访问身份验证](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)中的过程注册为Adobe Developer客户端UMAPI
 
-[此处](https://adobe-apiplatform.github.io/user-sync.py/en/)介绍了用户同步工具使用的 User Management API。
+* [Adobe Developer Console文档](https://developer.adobe.com/developer-console/)
+
+* 用户同步工具](https://adobe-apiplatform.github.io/user-sync.py/en/)使用的[用户管理API
 
 ## Adobe Experience as a Cloud Service 配置 {#aem-configuration}
 
 >[!NOTE]
 >
->在配置 AEM 环境和实例时，会自动配置所需的 AEM IMS 配置。但是，管理员可以根据自己的需求使用[此处](/help/implementing/deploying/overview.md)描述的方法进行修改。
+>在配置 AEM 环境和实例时，会自动配置所需的 AEM IMS 配置。但是，管理员可以根据他们的要求修改它，请参阅[部署到AEM as a Cloud Service](/help/implementing/deploying/overview.md)。
 
 在配置 AEM 环境和实例时，会自动配置所需的 AEM IMS 配置。客户管理员可以根据自己的要求修改部分配置。
 

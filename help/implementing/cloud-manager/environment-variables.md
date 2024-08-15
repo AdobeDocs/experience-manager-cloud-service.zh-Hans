@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 78%
+source-wordcount: '988'
+ht-degree: 77%
 
 ---
 
@@ -132,4 +132,4 @@ ht-degree: 78%
 
 ### 管道变量 {#pipeline}
 
-除了环境变量，还有在构建阶段公开的管道变量。[可在此处详细了解管道变量。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+除了环境变量，还有在构建阶段公开的管道变量。了解有关[生成环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)下的管道变量的更多信息。

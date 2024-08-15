@@ -4,9 +4,9 @@ description: 了解如何通过配置随后可在API调用中使用的清除API�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 # 清除 CDN 缓存 {#cdn-purge-cache}
 
 清除会从AdobeCDN缓存中移除对象，从而导致将来的请求作为缓存缺失继续前往原点，而不是从缓存提供服务。
-AEM as a Cloud Service允许您配置清除API令牌，然后将其用于清除API调用。 阅读[配置CDN凭据和身份验证文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)，了解如何使用Cloud Manager配置管道身份验证指令配置此令牌。
+AEM as a Cloud Service允许您配置清除API令牌，然后将其用于清除API调用。 阅读[配置CDN凭据和身份验证](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)以了解如何使用Cloud Manager配置管道身份验证指令配置此令牌。
 
 有三个受支持的清除变体：
 
@@ -75,4 +75,4 @@ curl
 
 ## 与Apache/Dispatcher层的交互 {#apache-layer}
 
-如[内容交付流文章](/help/implementing/dispatcher/overview.md)中所述，如果缓存已过期，则CDN将从Apache/Dispatcher层检索内容。 这意味着在CDN上清除资源之前，您应确保在Dispatcher上也提供了内容的新版本。 有关详细信息，另请参阅[Dispatcher缓存无效](/help/implementing/dispatcher/caching.md#disp)。
+如[内容交付流程](/help/implementing/dispatcher/overview.md)中所述，如果缓存已过期，则CDN将从Apache/Dispatcher层检索内容。 这意味着在CDN上清除资源之前，您应确保在Dispatcher上也提供了内容的新版本。 有关详细信息，另请参阅[Dispatcher缓存无效](/help/implementing/dispatcher/caching.md#disp)。

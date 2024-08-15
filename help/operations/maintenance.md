@@ -4,9 +4,9 @@ description: 了解AEM as a Cloud Service中的维护任务以及如何配置它
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2053'
 ht-degree: 30%
 
 ---
@@ -222,11 +222,11 @@ ht-degree: 30%
 
 **1**&#x200B;创建名为`mt.yaml`或类似的文件。
 
-**2**&#x200B;将文件放置在名为`config`或类似的顶级文件夹下的某个位置，如[配置管道文章中所述。](/help/operations/config-pipeline.md#folder-structure)
+**2**&#x200B;将文件放置在名为`config`或类似的顶级文件夹下的某个位置，如[使用配置管道](/help/operations/config-pipeline.md#folder-structure)中所述。
 
 **3** — 在配置文件中声明属性，包括：
 
-* 数据节点上方的一些属性 — 有关描述，请参阅[配置管道文章](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*MaintenanceTasks*，版本应设置为&#x200B;*1*。
+* 数据节点上方的一些属性 — 有关说明，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*MaintenanceTasks*，版本应设置为&#x200B;*1*。
 
 * 同时具有`versionPurge`和`auditLogPurge`对象的数据对象。
 

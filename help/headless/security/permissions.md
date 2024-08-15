@@ -4,10 +4,10 @@ description: 了解使用 Adobe Experience Manager 的 Headless 实施的不同�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 96%
+source-wordcount: '817'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ Author 服务是内部用户创建、管理和发布内容的地方。权限以�
 
 >[!TIP]
 >
-> 管理 IMS 和 AEM 用户及组的详细视频演练见[此处](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=zh-Hans)。
+>有关管理IMS和AEM用户和组的详细视频演练，请参阅[配置对AEM as a Cloud Service的访问权限](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=zh-Hans)。
 
 要在 AEM 中管理&#x200B;**组**，请导航到&#x200B;**工具** > **安全** > **组**。
 

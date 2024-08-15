@@ -5,7 +5,7 @@ hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 服务器到服务器流 {#the-server-to-server-flow}
 
-具有IMS组织管理员角色并且也是AEM Author上的AEM用户或AEM管理员产品配置文件成员的用户可以生成AEM as a Cloud Service凭据。 随后，具有AEM as a Cloud Service环境管理员角色的用户可以检索该凭据，并且这些凭据应安装在服务器上，需要小心地将其视为密钥。 此JSON格式文件包含与AEM as a Cloud Service API集成所需的全部数据。 该数据用于创建已签名的JWT令牌，该令牌与IMS交换以获得IMS访问令牌。 然后，可将此访问令牌用作持有者身份验证令牌，以向AEM as a Cloud Service发出请求。 默认情况下，凭据在一年后过期，但可在需要时刷新，如[此处](#refresh-credentials)所述。
+具有IMS组织管理员角色并且也是AEM Author上的AEM用户或AEM管理员产品配置文件成员的用户可以生成AEM as a Cloud Service凭据。 随后，具有AEM as a Cloud Service环境管理员角色的用户可以检索该凭据，并且这些凭据应安装在服务器上，需要小心地将其视为密钥。 此JSON格式文件包含与AEM as a Cloud Service API集成所需的全部数据。 该数据用于创建已签名的JWT令牌，该令牌与IMS交换以获得IMS访问令牌。 然后，可将此访问令牌用作持有者身份验证令牌，以向AEM as a Cloud Service发出请求。 默认情况下，凭据在一年后过期，但可在需要时刷新，请参阅[刷新凭据](#refresh-credentials)。
 
 服务器到服务器流涉及以下步骤：
 

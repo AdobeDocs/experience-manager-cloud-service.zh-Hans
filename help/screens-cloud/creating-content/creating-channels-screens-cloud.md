@@ -4,9 +4,9 @@ description: 本页介绍如何在Screens中创建和管理渠道as a Cloud Serv
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ ht-degree: 1%
 
 此功能允许您为渠道定义默认激活计划，并默认将其用于显示的每个分配。 这提供了一种方法，使得繁琐的计划定义不需要重复。
 
-1. 从[此处](https://experience.adobe.com/screens)导航到Screens服务提供商。
+1. 导航到[Screens服务提供商](https://experience.adobe.com/screens)。
 
 ### 为渠道创建默认分配详细信息 {#create-default}
 

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '5503'
+source-wordcount: '5506'
 ht-degree: 6%
 
 ---
@@ -87,7 +87,7 @@ AEM中的资源搜索支持以下用例，本文介绍了这些用例的使用�
 
 如果需要切换到上一个行为（`statistical`模式），请参阅[内容搜索和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)以创建`damAssetLucene-9`索引的自定义版本。 由于对大型结果集的搜索响应时间产生影响，因此Adobe不建议切换到`secure`模式。
 
-有关Oak Facet功能的详细信息，包括这些模式的详细说明，请参阅[本文](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)。
+有关Oak的Facet功能的详细信息，包括这些模式的详细说明，请参阅[Facet - Oak文档 — Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)。
 
 ## 键入内容时搜索建议 {#searchsuggestions}
 

@@ -4,17 +4,17 @@ Description: Learn how to configure SharePoint Site with limited access using th
 keywords: 如何配置具有有限访问权限的SharePoint站点？，配置具有有限访问权限的SharePoint，使用授权范围限制SharePoint站点的访问权限。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 4962c058e2cc2135dd3626655ba7b21dbdcbd455
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 15%
+source-wordcount: '817'
+ht-degree: 16%
 
 ---
 
 
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
-# 使用授权范围配置具有有限访问权限的SharePoint站点
+# 使用授权范围配置具有有限访问权限的 SharePoint 网站
 
 受限或受限访问的目的是通过允许管理员控制用户对特定SharePoint站点或一组SharePoint站点的访问来增强安全管理。 当您需要授予用户或组访问特定网站的权限而不允许他们查看任何其他不允许的SharePoint网站时，权限级别非常有用。
 
@@ -52,7 +52,7 @@ ht-degree: 15%
 
 要使用`Sites.Selected` API权限，需要在Azure门户中注册的应用程序，该应用程序具有为SharePoint Online Sites设置的相应权限。 这种设置可确保应用程序拥有在定义的范围内与SharePoint站点交互所需的授权，从而提供所需的有限访问。
 
-有关开发对SharePoint Online Sites使用`Sites.Selected`权限的应用程序的说明，请参阅[文章](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)。
+请参阅[博客文章 — 开发使用Sites的应用程序。有关开发使用SharePoint Online Sites `Sites.Selected`权限的应用程序的说明，请参阅SPO Sites的选定权限](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476)。
 
 ### 在AEM实例中设置授权范围
 

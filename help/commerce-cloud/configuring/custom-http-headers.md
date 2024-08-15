@@ -4,9 +4,9 @@ description: 了解如何配置将发送到商业引擎的自定义HTTP标头，
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 3%
 
 ## 限制 {#restrictions}
 
-虽然该服务允许定义任何标头名称，包括标准标头名称，但它们将无法用于配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 [此处](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)可找到受限标头名称列表。 除了这些标头之外，还有两个标头无法使用：
+虽然该服务允许定义任何标头名称，包括标准标头名称，但它们将无法用于配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 可以在[mdn Web文档 — HTTP标头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)下找到受限标头名称的列表。 除了这些标头之外，还有两个标头无法使用：
 
 * &quot;Store&quot; - CIF用于识别Adobe Commerce商店
 * &quot;Preview-Version&quot; — 由CIF用于检索暂存产品

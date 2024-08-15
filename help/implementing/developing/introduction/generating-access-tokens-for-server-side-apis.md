@@ -4,7 +4,7 @@ description: 了解如何通过生成安全JWT令牌来促进第三方服务器�
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 服务器到服务器流 {#the-server-to-server-flow}
 
-具有IMS组织管理员角色以及AEM Author上的AEM用户或AEM管理员产品配置文件成员的用户可以从AEM as a Cloud Service生成一组凭据。 每个凭据都是JSON有效负载，其中包括证书（公共密钥）、私钥以及由`clientId`和`clientSecret`组成的技术帐户。 具有AEM as a Cloud Service环境管理员角色的用户以后可以检索这些凭据，这些凭据应安装在非AEM服务器上，并仔细视为密钥。 此JSON格式文件包含与AEM as a Cloud Service API集成所需的全部数据。 该数据用于创建已签名的JWT令牌，该令牌与AdobeIdentity Management服务(IMS)交换以获得IMS访问令牌。 然后，可将此访问令牌用作持有者身份验证令牌，以向AEM as a Cloud Service发出请求。 默认情况下，凭据中的证书在一年后到期，但可在需要时刷新，如[此处](#refresh-credentials)所述。
+具有IMS组织管理员角色以及AEM Author上的AEM用户或AEM管理员产品配置文件成员的用户可以从AEM as a Cloud Service生成一组凭据。 每个凭据都是JSON有效负载，其中包括证书（公共密钥）、私钥以及由`clientId`和`clientSecret`组成的技术帐户。 具有AEM as a Cloud Service环境管理员角色的用户以后可以检索这些凭据，这些凭据应安装在非AEM服务器上，并仔细视为密钥。 此JSON格式文件包含与AEM as a Cloud Service API集成所需的全部数据。 该数据用于创建已签名的JWT令牌，该令牌与AdobeIdentity Management服务(IMS)交换以获得IMS访问令牌。 然后，可将此访问令牌用作持有者身份验证令牌，以向AEM as a Cloud Service发出请求。 默认情况下，凭据中的证书在一年后到期，但可在需要时刷新，请参阅[刷新凭据](#refresh-credentials)。
 
 服务器到服务器流涉及以下步骤：
 
