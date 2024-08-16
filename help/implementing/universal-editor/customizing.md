@@ -4,9 +4,9 @@ description: 了解不同的扩展点和其他功能，这些功能允许您自�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -115,6 +115,18 @@ data-aue-filter="container-filter"
 ![显示的文本字段](assets/shown.png)
 
 >[!ENDTABS]
+
+### 自定义预览URL {#custom-preview-urls}
+
+您可以通过`urn:adobe:aue:config:preview`元配置指定自定义预览URL，单击[编辑器右上角工具栏中的&#x200B;**打开页面**&#x200B;按钮时，将打开该配置。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+这对于具有特定预览要求的应用程序特别有用，例如那些使用WYSIWYG创作的Edge Delivery Services的[。](/help/edge/wysiwyg-authoring/authoring.md)
+
+要实现此目的，只需将所需的预览URL包含在所检测应用程序的meta标记中，如下例所示。
+
+```html
+<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
+```
 
 ## 扩展通用编辑器UI {#extending}
 

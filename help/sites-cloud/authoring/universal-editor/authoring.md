@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 46%
+source-wordcount: '1297'
+ht-degree: 41%
 
 ---
 
@@ -33,7 +33,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ## 编辑内容 {#editing-content}
 
-编辑内容是简单而直观的。将鼠标悬停在编辑器中的内容上时，可编辑内容会以蓝色框突出显示。
+编辑内容是简单而直观的。将鼠标悬停在编辑器中的内容上时，可编辑内容会以蓝色细轮廓突出显示。
 
 ![可编辑内容用蓝色框突出显示](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ![编辑内容](assets/editing-content.png)
 
-按Enter/Return键或选择文本框外部以保存更改。
+蓝色细轮廓变为蓝色粗轮廓以指示选择，并且出现光标。 进行更改，然后按Enter/Return或选择文本框外部以保存更改。
 
 当您选择文本组件时，其详细信息将显示在[属性边栏中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您还可以编辑边栏中的文本。
 
@@ -65,10 +65,21 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 为方便起见，文本上的格式选项和详细信息可在两个位置使用。
 
-* **上下文菜单**&#x200B;在RTF块上方打开，并在上下文中提供基本的格式设置选项。 由于空间限制，某些选项可能隐藏在省略号按钮后面。
-* **[属性边栏](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)**&#x200B;显示所有可用的格式设置选项以及文本。
+#### 上下文菜单 {#context-menu}
+
+上下文菜单在RTF块上方打开，并在上下文中提供基本的格式选项。 由于空间限制，某些选项可能隐藏在省略号按钮后面。
+
+![富文本上下文菜单](assets/rich-text-context-menu.png)
 
 一旦焦点离开已编辑的字段，更改将自动保存。
+
+#### “属性”边栏 {#properties-rail}
+
+[属性边栏](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)显示选定文本的项目。 点击条目可打开一个显示较大画布的对话框以编辑文本。
+
+![富文本编辑对话框](assets/rich-text-canvas.png)
+
+点击或单击&#x200B;**取消**&#x200B;或&#x200B;**完成**&#x200B;可分别放弃或保存更改。
 
 ### 编辑媒体 {#edit-media}
 
@@ -95,9 +106,19 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
 
-如果要改在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑内容片段，请单击属性边栏中的[编辑按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)。
+如果要改在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑内容片段，请点按或单击属性边栏中的&#x200B;[**在CF编辑器中打开**&#x200B;按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)。
+
+>[!TIP]
+>
+>使用热键`e`在内容片段编辑器中编辑选定的内容片段。
 
 根据工作流的需求，您可能需要在通用编辑器中或直接在内容片段编辑器中编辑内容片段。
+
+>[!NOTE]
+>
+>通用编辑器[根据其模型验证内容片段字段](/help/assets/content-fragments/content-fragments-models.md#validation)，允许您实施数据完整性规则，如正则表达式模式和唯一性约束。
+>
+>这可确保在内容发布之前满足特定的业务要求。
 
 ### 向容器添加组件 {#adding-components}
 
@@ -110,7 +131,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!TIP]
 >
->使用热键 `A` 可将组件添加到选定容器。
+>使用热键 `a` 可将组件添加到选定容器。
 
 ### 从容器中删除组件 {#deleting-components}
 

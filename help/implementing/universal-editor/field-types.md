@@ -4,9 +4,9 @@ description: 通过示例了解通用编辑器可在属性边栏中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
+source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1183'
 ht-degree: 10%
 
 ---
@@ -302,6 +302,12 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 | 配置 | 值类型 | 描述 | 必填 |
 |---|---|---|---|
 | `variationName` | `string` | 用于存储所选变量的变量名称。 如果未定义，则不会显示变体选取器 | 否 |
+
+>[!NOTE]
+>
+>通用编辑器[根据其模型验证内容片段字段](/help/assets/content-fragments/content-fragments-models.md#validation)，允许您实施数据完整性规则，如正则表达式模式和唯一性约束。
+>
+>这可确保在内容发布之前满足特定的业务要求。
 
 >[!BEGINTABS]
 
