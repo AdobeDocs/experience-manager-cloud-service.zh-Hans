@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 15%
+ht-degree: 79%
 
 ---
 
@@ -24,71 +24,71 @@ ht-degree: 15%
 
 ### 增强 {#enhancements-17465}
 
-* Forms-15436 — 在Adobe Sign状态计划程序中正常处理异常。
-* Forms-15362 — 在aemds中为forms-foundation添加配置以启用登录。
-* Forms-15261 - SPA不会在Forms编辑器中渲染。
-* Forms-15138 — 处理由于sling commons json升级而导致的双重数据向后兼容性。
-* Forms-15113 — 将密钥名称从vistorId更改为sid，以便进行RUM跟踪。
-* Forms-15103 — 表单中附加的Assets未在Edge交付中发布。
-* Forms-15082 — 要映射到自定义自适应表单组件的JSON架构。
-* Forms-15002 - v1片段的模板类型注册。
-* Forms-14845 — 通过Forms Manager支持核心组件库表单中的xdpRef。
-* Forms-14840 - Forms预填充服务错误。
-* Forms-14836 — 改进表单管理器UI，以列出AF1片段模板。
-* Forms-14834 — 模板支持AF1中的片段。
-* Forms-14275 — 在嵌入容器中覆盖感谢页面和感谢消息。
-* Forms-13623 — 为V2启用基于时间的自动保存功能。
-* Forms-8651 — 有关更改表单属性页面上的数据模型配置的警告对话框。
-* SITES-23310 — 内容片段REST API：防止内容片段的嵌套引用中出现循环依赖关系。
-* SITES-23285 — 内容片段REST API：创建端点以列出所有可用语言。
-* SITES-22857 — 内容片段REST API：复选框枚举字段不应允许将多个属性设置为false。
-* SITES-22813 — 内容片段REST API：定义枚举字段的最小值/最大值属性。
-* SITES-22031 — 内容片段REST API：获取片段文件夹的允许内容片段模型。
-* SITES-17640 — 内容片段REST API：内容片段Publish操作验证。
+* FORMS-15436 - 妥善处理 Adobe Sign 状态调度程序中的异常。
+* FORMS-15362 - 在 aemds 中添加 forms-foundation 的配置以启用登录。
+* FORMS-15261 - SPA 未在表单编辑器中呈现。
+* FORMS-15138 - 由于 sling commons json 升级而导致的双重数据向后兼容性处理。
+* FORMS-15113 - 将密钥名称从 vistorId 更改为 sid，以进行 RUM 跟踪。
+* FORMS-15103 - 表单中附加的资产未在边缘交付中发布。
+* FORMS-15082 - 用于映射到自定义自适应表单组件的 JSON 模式
+* FORMS-15002 – v1 片段的模板类型注册。
+* FORMS-14845 - 通过表单管理器支持核心组件库中的 xdpRef。
+* FORMS-14840 – 表单预填服务错误。
+* FORMS-14836 - 改进表单管理器 UI，列出 AF1 片段模板。
+* FORMS-14834 - AF1 中对片段的模板支持。
+* FORMS-14275 - 覆盖嵌入容器中的感谢页面和感谢信息。
+* FORMS-13623 - 为 V2 启用基于自动保存时间的功能。
+* FORMS-8651 - 在表单属性页面上更改数据模型配置时出现警告对话框。
+* SITES-23310 - 内容片段 REST API：防止内容片段的嵌套引用中的循环依赖。
+* SITES-23285 - 内容片段 REST API：创建端点以列出所有可用的语言。
+* SITES-22857 - 内容片段 REST API：复选框枚举字段不应允许将多个属性设置为 false。
+* SITES-22813 - 内容片段 REST API：为枚举字段定义最小/最大属性。
+* SITES-22031 - 内容片段 REST API：获取片段文件夹允许的内容片段模型。
+* SITES-17640 - 内容片段 REST API：内容片段发布操作验证。
 * SITES-22677 — 内容片段REST API：检索后代引用的简单列表。
-* SITES-22207 — 创建内容片段时重复的模型。
-* SITES-23093 — 事件：将标记添加到内容片段模型事件的负载。
-* SITES-23092 — 事件：将标记添加到内容片段事件的负载。
-* SITES-22447 — 将体验片段属性继承支持添加到基本属性选项卡。
-* SITES-12209 — 通过将cq：policy添加到索引来提高策略编辑器的性能。
+* SITES-22207 - 内容片段创建时模型重复。
+* SITES-23093 - 事件：为内容片段模型事件的有效负载添加标记。
+* SITES-23092 - 事件：为内容片段事件的有效负载添加标记。
+* SITES-22447 - 在基本属性选项卡中添加体验片段属性继承支持。
+* SITES-12209 - 通过将 cq:policy 添加到索引来提高策略编辑器的性能。
 
 ### 修复的问题 {#fixed-issues-17465}
 
-* CQ-4358028 — 如果上传了缩略图，则无法创建项目。
-* CQ-4357891 — 导出的XLIFF的序列问题。
-* CQ-4357059 — 翻译作业需要几个小时才能完成，导致AEMaaCS中出现503超时。
-* Forms-15320 — 基于核心组件的表单中无法提交电子邮件。
-* Forms-15272 - AEM Forms — 复选框组仅发送1个值。
-* Forms-15269 — 维护版本16461行后面临产品相关问题。
-* Forms-15174 - JsonSchemaParser isValid问题。
-* Forms-15095 — 多行文本框可以拉长到AEM Forms中包含的面板之外。
-* Forms-15057 — 对于提交> 999，FDM Sharepoint列表抛出附件错误。
-* Forms-15011 — 在编辑器中打开表单时，核心编辑器导致控制台错误。
-* Forms-14809 — 未在共享的临时目录中自动创建SDK文件夹。
-* Forms-14327 - Forms服务API ：提取数据： — 当输入中提供非交互式pdf时，会提供500个响应代码。
-* Forms-7475 — 排序功能在自适应表单创建页面上不起作用。
-* Forms-3309 — 如果在提交表单时选择了多个选项，则在生成的DoR中只显示一个选项。
-* SITES-23646 — 对于使用OpenAPI创建的模型，如果字段包含唯一值，则GraphQL模型端点失败。
-* SITES-23637 — 内容片段REST API： OpenAPI没有为枚举使用正确的值类型。
-* SITES-23573 — 内容片段REST API：未按uuid遵循GET内容片段的实时关系。
-* SITES-23535 — 内容片段REST API：内容片段模型枚举多个字段具有空值。
-* SITES-23534 — 内容片段REST API：内容片段验证ClassCastException。
-* SITES-23524 — 调整GraphQL BFF模型端点以支持多字段枚举字段。
-* SITES-23467 — 内容片段REST API：由于光标问题，搜索模型失败。
-* SITES-23327 - AuditLogTimelineEventProvider中的ArrayIndexOutOfBoundsException在时间线事件处理说明期间发生。
-* SITES-23277 — 内容片段REST API：应仅对活动副本执行内容片段字段实时关系检查。
-* SITES-23232 — 自定义验证在新的CF编辑器UI中不起作用。
-* SITES-23090 — 内容片段REST API：无法更新锁定的内容片段的标题。
-* SITES-22981 — 不发布提升不深的嵌套启动项。
+* CQ-4358028 - 如果上传了缩略图，则无法创建项目。
+* CQ-4357891 - 导出的 XLIFF 的序列问题。
+* CQ-4357059 - 翻译工作需要数小时才能完成，导致 AEMaaCS 出现 503 超时。
+* FORMS-15320 - 在基于核心组件的表单中，电子邮件提交不起作用。
+* FORMS-15272 - AEM Forms - 复选框组仅发送 1 个值。
+* FORMS-15269 - 维护版本 16461 后面临与产品相关的问题。
+* FORMS-15174 - JsonSchemaParser isValid 问题。
+* FORMS-15095 - 多行文本框可以延伸至 AEM Forms 中包含的面板之外。
+* FORMS-15057 - FDM Sharepoint 列表抛出提交附件错误 > 999。
+* FORMS-15011 - 在编辑器中打开表单时核心编辑器导致控制台错误。
+* FORMS-14809 - 共享临时目录中未自动创建 SDK 文件夹。
+* FORMS-14327 - 表单服务 API：提取数据：- 当输入中提供非交互式 pdf 时提供 500 响应代码。
+* FORMS-7475 - 自适应表单创建页面上的排序不起作用。
+* FORMS-3309 - 如果在提交表单时选择了多个选项，则在生成的 DoR 中只会显示一个选项。
+* SITES-23646 - 如果字段包含唯一值，则使用 OpenAPI 创建的模型的 GraphQL 模型端点会失败。
+* SITES-23637 - 内容片段 REST API：OpenAPI 没有使用正确的枚举值类型。
+* SITES-23573 - 内容片段 REST API：通过 uuid 获取内容片段时不尊重实时关系。
+* SITES-23535 - 内容片段 REST API：内容片段模型枚举多字段具有空值。
+* SITES-23534 - 内容片段 REST API：内容片段验证 ClassCastException。
+* SITES-23524 - 调整 GraphQL BFF 模型端点以支持多字段枚举字段。
+* SITES-23467 - 内容片段 REST API：由于光标问题，搜索模型失败。
+* SITES-23327 - 时间线事件处理期间 AuditLogTimelineEventProvider 中出现 ArrayIndexOutOfBoundsException 描述。
+* SITES-23277 - 内容片段 REST API：内容片段字段实时关系检查仅应针对实时副本进行。
+* SITES-23232 - 自定义验证在新 CF 编辑器 UI 中不起作用。
+* SITES-23090 - 内容片段 REST API：无法更新已锁定的内容片段的标题。
+* SITES-22981 - 推广不深入的嵌套发布不会发布。
 * SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException。
-* SITES-22814 — 内容片段REST API：复选框枚举片段字段值应按照模型中定义的键排序。
-* SITES-22716 - OOTB组件实时使用列表问题。
-* SITES-22457 — 提升非深层启动项不会更新源内容。
-* SITES-22449 — 在AEM P20升级后，无法保存内容片段中的更改。
-* SITES-22279 — 内容片段REST API：内容片段缺少枚举类型的唯一属性。
-* SITES-22203 — 内容片段REST API：调整管理API以针对同一情况做出相同的响应。
-* SITES-21973 — 内容片段REST API：模型缺少枚举类型的唯一属性。
-* SITES-20364 - 302重定向不适用于URL中的选择器。
+* SITES-22814 - 内容片段 REST API：复选框枚举片段字段值应按模型中定义的键排序。
+* SITES-22716 - OOTB 组件实时使用列表存在问题。
+* SITES-22457 - 推广不够深入的发布不会更新源内容。
+* SITES-22449 - AEM P20 升级后无法保存内容片段中的更改。
+* SITES-22279 - 内容片段 REST API：内容片段缺少枚举类型的唯一属性。
+* SITES-22203 - 内容片段 REST API：调整管理 API 以对相同情况做出相同响应。
+* SITES-21973 - 内容片段 REST API：模型缺少枚举类型的唯一属性。
+* SITES-20364 - 302 重定向无法与 URL 中的选择器一起使用。
 * SITES-21198 - VersionPreviewServlet：清理在所有群集节点上并行运行，从而导致合并冲突和块提交。
 
 ### 已知问题 {#known-issues-17465}
