@@ -1,33 +1,31 @@
 ---
-title: 添加 SSL 证书
+title: 添加SSL证书
 description: 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 70%
+source-wordcount: '659'
+ht-degree: 50%
 
 ---
 
 
-# 添加 SSL 证书 {#adding-an-ssl-certificate}
+# 添加SSL证书 {#adding-an-ssl-certificate}
 
 了解如何使用 Cloud Manager 的自助服务工具添加您自己的 SSL 证书。
 
 >[!TIP]
 >
->提供证书可能需要几天时间。因此，Adobe建议提前任何截止日期或上线日期设置证书。
+>提供证书可能需要几天时间。因此，Adobe建议赶在任何截止日期或上线日期之前预配证书。
 
 ## 证书要求 {#certificate-requirements}
 
-查看文档[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)的&#x200B;**证书要求**&#x200B;部分，以确保AEM as a Cloud Service支持您要添加的证书。
+查看[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)中的&#x200B;**证书要求**，以确保AEM as a Cloud Service支持您要添加的证书。
 
 ## 添加证书 {#adding-a-cert}
-
-按照以下步骤使用 Cloud Manager 添加证书。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -35,28 +33,23 @@ ht-degree: 70%
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 从左侧导航面板中单击&#x200B;**SSL证书**。 主屏幕上显示一个包含任何现有 SSL 证书详细信息的表。
+1. 从左侧导航面板的&#x200B;**服务**&#x200B;下，单击&#x200B;**SSL证书**。 (如有必要，您可能需要单击左上角的汉堡图标，以需要使用导航面板。 此时将显示一个表，其中包含任何现有SSL证书的详细信息。
 
-   ![添加 SSL 证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+   ![添加SSL证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
 1. 单击&#x200B;**添加SSL证书**&#x200B;以打开&#x200B;**添加SSL证书**&#x200B;对话框。
 
-   * 在&#x200B;**证书名称**&#x200B;中输入证书名称。
-      * 这仅供参考，可以是任何有助于您轻松引用证书的名称。
-   * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;值粘贴到各自的字段中。
-      * 这三个字段都是必填字段。
+   * 在&#x200B;**证书名称**&#x200B;中输入证书名称。 此字段仅供参考，可以是任何有助于您轻松引用证书的名称。
+   * 将&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;值粘贴到各自的字段中。所有三个字段都是必填字段。
 
-   ![添加“SSL 证书”对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![添加SSL证书对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * 显示检测到的任何错误。
-      * 在保存证书之前，必须解决所有错误。
-      * 请参阅[证书错误](#certificate-errors)部分，了解有关解决常见错误的更多信息。
+   * 将显示在值中检测到的任何错误。 在保存证书之前，必须解决所有错误。
+请参阅[证书错误](#certificate-errors)，了解有关解决常见错误的更多信息。
 
-1. 单击&#x200B;**保存**，保存您的证书。
+1. 单击&#x200B;**保存**。
 
-保存后，您将看到证书在表中显示为新行。
-
-![保存的 SSL 证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![保存的SSL证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)您的证书现在在表中显示为新行，与上图类似。
 
 >[!NOTE]
 >
@@ -110,7 +103,7 @@ The Subject of an intermediate certificate must match the issuer in the previous
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-通常，证书策略由嵌入的 OID 值标识。将证书输出到文本并搜索 OID 将显示证书的策略。
+嵌入的OID值通常标识证书策略。 将证书输出到文本并搜索OID将显示证书的策略。
 
 您可以使用以下示例作为指导，将证书详细信息输出为文本。
 
@@ -154,11 +147,11 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 ### 证书有效日期 {#certificate-validity-dates}
 
-Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。您应该检查证书链的有效性。
+Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。检查证书链的有效性。
 
 ## 后续步骤 {#next-steps}
 
-恭喜！您现在拥有可用于项目的SSL证书。 这通常是设置自定义域名的第一步。
+恭喜！您现在拥有可用于项目的SSL证书。 此步骤通常是第一个设置自定义域名的步骤。
 
-* 请参阅文档[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)以继续设置自定义域名。
-* 请参阅文档[管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)，了解如何在Cloud Manager中更新和管理SSL证书。
+* 要设置自定义域名，请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
+* 要了解如何在Cloud Manager中更新和管理SSL证书，请参阅[管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)。
