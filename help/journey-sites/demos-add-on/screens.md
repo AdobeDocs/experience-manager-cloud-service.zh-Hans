@@ -5,9 +5,9 @@ exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2666'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->AEM Screens 演示需要将 Screens 加载项添加到 Cloud Manager 程序中。了解如何使用[将Screens作为加载项添加到Cloud Manager中的新程序](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)如何添加它。
+>AEM Screens 演示需要将 Screens 加载项添加到 Cloud Manager 程序中。了解如何通过 [将屏幕作为附加组件添加到 Cloud Manager 中的新程序](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) 如何添加它。
 
 ## 迄今为止的故事 {#story-so-far}
 

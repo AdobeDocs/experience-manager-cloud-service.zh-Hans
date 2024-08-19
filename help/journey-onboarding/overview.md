@@ -6,9 +6,9 @@ recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1292'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 ## 简介 {#introduction}
 
-Adobe Experience Manager 是一组功能强大的可组合内容服务，它在任何渠道上都快速地投放极具影响力的个性化体验，从而为所有人展示各种内容。**Edge Delivery Services** 是 Adobe Experience Manager 中最新的创新，通过它，可极快地投放内容并打造卓越的体验。通过咨询[Edge Delivery Services概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)，了解如何开始使用Edge Delivery Services。 要了解如何使用 Edge Delivery Services，请参阅[开发人员教程](https://www.hlx.live/developer/tutorial)页面。
+Adobe Experience Manager 是一组功能强大的可组合内容服务，它在任何渠道上都快速地投放极具影响力的个性化体验，从而为所有人展示各种内容。**Edge Delivery Services** 是 Adobe Experience Manager 中最新的创新，通过它，可极快地投放内容并打造卓越的体验。通过查阅 [Edge Delivery Services 概述](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)，了解如何开始使用 Edge Delivery Services。要了解如何使用 Edge Delivery Services，请参阅[开发人员教程](https://www.hlx.live/developer/tutorial)页面。
 
 入门培训是所指派的系统管理员为您的组织设置 AEM as a Cloud Service 的过程。这个过程包括云资源的初始配置，以及根据用户的工作职责为其分配角色。因此，每个成员都可以登录和访问其 AEM as a Cloud Service 资源。
 

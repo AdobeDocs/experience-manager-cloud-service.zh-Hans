@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 97%
 
 在将更新上传到 Cloud Manager 后，可以使用 [Cloud Manager 的 CI/CD 管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)将这些更新部署到 AEM as a Cloud Service。
 
-您可以使用Cloud Manager CI/CD管道开始部署代码，该管道在[通过Cloud Manager和包管理器部署内容包](/help/implementing/deploying/overview.md)中进行了广泛介绍。
+您可以使用 Cloud Manager CI/CD 管道开始部署代码，该管道在 [通过 Cloud Manager 和 包管理器部署内容包](/help/implementing/deploying/overview.md)中有详细介绍。
 
 ## 性能监控 {#performance-monitoring}
 
@@ -134,8 +134,8 @@ ht-degree: 97%
 ## 其他资源 {#additional-resources}
 
 * [AEM as a Headless CMS 简介](/help/headless/introduction.md)
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-hans)
 * [到 AEM as a Cloud Service 的部署概述](/help/implementing/deploying/overview.md)
 * [使用 Cloud Manager 部署代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [将 Cloud Manager Git 存储库与外部 Git 存储库集成，并将项目部署到 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=zh-Hans)
+* [将 Cloud Manager Git 存储库与外部 Git 存储库集成，并将项目部署到 AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=zh-hans)
