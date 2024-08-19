@@ -6,9 +6,9 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3454'
+source-wordcount: '3455'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 **智能成像的优点**
 
-智能成像可根据正在使用的客户端浏览器、设备显示和网络条件自动优化图像文件大小，从而提供更好的图像投放性能。 由于图像构成了页面加载时间的大部分，因此任何性能改进都会对业务KPI产生深远的影响，例如提高转化率、增加网站逗留时间和降低网站跳出率。
+智能成像可根据使用的客户端浏览器、设备显示和网络条件自动优化图像文件大小，从而提供更好的图像投放性能。 由于图像构成了页面加载时间的大部分，因此任何性能改进都会对业务KPI产生深远的影响，例如提高转化率、增加网站逗留时间和降低网站跳出率。
 
 最新智能成像的最新主要优势包括：
 
@@ -166,7 +166,7 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 
 +++**智能成像是否有相关许可成本？**
 
-不适用。 智能成像随现有许可证一起提供。 这条规则适用于Dynamic Media Classic或Experience Manager - Dynamic Media(内部部署、AMS和Experience Manageras a Cloud Service)。
+不会。智能成像随现有许可证一起提供。 这条规则适用于Dynamic Media Classic或Experience Manager - Dynamic Media(内部部署、AMS和Experience Manageras a Cloud Service)。
 
 >[!IMPORTANT]
 >
@@ -204,7 +204,7 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 
 +++**我是否必须在我的网站上更改任何URL、图像预设或部署新代码？**
 
-不适用。 智能成像可与您现有的图像URL和图像预设无缝配合使用。 此外，智能成像不要求您向网站添加代码以检测用户的浏览器。 所有这些功能都会自动处理。
+不会。智能成像可与您现有的图像URL和图像预设无缝配合使用。 此外，智能成像不要求您向网站添加代码以检测用户的浏览器。 所有这些功能都会自动处理。
 
 <!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
@@ -239,7 +239,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++**我可以为我的帐户启用智能成像吗？**
 
-不适用。 您启动了一个使用智能成像的请求；它不会自动启用。
+不会。您启动了一个使用智能成像的请求；它不会自动启用。
 
 创建支持案例，如下所述。 在您的支持案例中，请务必提及要在帐户中启用的以下智能成像功能（一项或多项）：
 
@@ -392,7 +392,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++**我可以设置最小和最大质量设置吗？**
 
-不适用。 目前没有此类配置。
+不会。目前没有此类配置。
 
 +++
 
