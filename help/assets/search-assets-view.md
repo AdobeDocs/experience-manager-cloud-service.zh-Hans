@@ -4,7 +4,7 @@ description: 了解如何在AEM Assets视图中搜索和发现资源。 利用�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 92%
@@ -239,7 +239,7 @@ Experience Manager Assets允许您为您的组织选择默认登录页面。 使
 1. 前往&#x200B;**[!UICONTROL 自定义搜索优先主页]**&#x200B;并点击&#x200B;**[!UICONTROL 预览]**。通过&#x200B;**[!UICONTROL 深色主题]**&#x200B;按钮来进行切换，以深色或浅色主题预览主页。
 1. 单击&#x200B;**[!UICONTROL 关闭]**&#x200B;来关闭预览屏幕。
 
-   ![搜索优先首页预览](assets/search-first-preview.gif)
+   ![搜索优先首页预览](/help/assets/assets/search-first-preview.gif)
 
 ## 上下文搜索 {#contextual-search}
 
@@ -255,7 +255,7 @@ Experience Manager Assets允许您为您的组织选择默认登录页面。 使
 
 1. 在“搜索”文本框中定义文本提示，然后单击&#x200B;**[!UICONTROL 上下文搜索]**。
 
-   ![上下文搜索文本提示](assets/contextual-search-text-prompt.png)
+   ![上下文搜索文本提示](/help/assets/assets/wknd-contextual-search.png)
 
    [!DNL Experience Manager Assets]显示搜索结果。
 
