@@ -1,8 +1,8 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 98%
+source-wordcount: '673'
+ht-degree: 95%
 
 ---
 # 代码片段 {#snippets}
@@ -80,7 +80,7 @@ ht-degree: 98%
   </tr>
   <tr>
     <td>设置下拉列表选项 </td>
-    <td>下拉列表选项是使用规则编辑器的<b>设置选项</b>属性来设置的。</td>
+    <td>下拉列表选项是使用规则编辑器的<b>Set Options of</b>属性设置的。</td>
     <td>下拉选项是使用自定义函数设置的。 
    </td>
    </tr>
@@ -100,7 +100,7 @@ ht-degree: 98%
    </tr>
    <tr>
     <td>ES10 支持 </td>
-    <td>尚不支持ES10。 它仅支持ES5 JavaScript功能。 </td>
+    <td>尚不支持 ES10。它仅支持 ES5 JavaScript 功能。 </td>
     <td>支持自定义函数中的现代 JavaScript 功能，例如 let 和箭头函数（ES10 支持）。 
    </td>
    </tr>
@@ -127,3 +127,10 @@ ht-degree: 98%
 * [基于核心组件的自适应Forms自定义函数介绍](/help/forms/create-and-use-custom-functions.md)
 * [为基于核心组件的自适应Form创建自定义函数](/help/forms/custom-function-core-component-create-function.md)
 * [开发和使用自定义函数的示例](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## IP允许列表和前端管道 {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>在此处添加重要说明。
