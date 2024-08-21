@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
+source-git-commit: 90bc7320899053b6b1d6cf0d1b06b193ad1c68f3
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 95%
+source-wordcount: '818'
+ht-degree: 78%
 
 ---
 # 代码片段 {#snippets}
@@ -129,8 +129,14 @@ ht-degree: 95%
 * [开发和使用自定义函数的示例](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## IP允许列表和前端管道 {#allowlist-frontend-pipeline}
+## Cloud Manager IP允许列表和前端管道 {#allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->在此处添加重要说明。
+>前端管道要求将以下IP允许列表预先添加到Cloud Manager。
+>如果需要，[通过复制下面的地址块添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。 每个地址用逗号分隔。 将块粘贴到&#x200B;**添加IP允许列表**&#x200B;对话框的&#x200B;**IP地址/ CIDR**&#x200B;字段中。 将光标放在地址列表中的第一个逗号之后，然后按&#x200B;**Enter**。 保存列表。
+>为避免运行前端管道中断，请确保在启用该管道之前&#x200B;*将此IP允许列表添加到Cloud Manager*。
+>
+>**Cloud Manager IP允许列表**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
