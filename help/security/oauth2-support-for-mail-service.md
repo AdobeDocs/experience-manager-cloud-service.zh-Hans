@@ -5,9 +5,9 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
 >
 > 您可以从[此位置](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow)获取 Postman API 收藏集。
 >
-> 有关详细信息，请参阅[MSFT OAuth文档](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)。
+> 请参阅[MSFT OAuth 文档](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth)了解更多详情。
 
 ### 与 AEM as a Cloud Service 集成 {#integration-with-aem-as-a-cloud-service}
 
@@ -167,7 +167,7 @@ AEM as a Cloud Service 提供对其集成的邮件服务的 OAuth2 支持，以�
    ```
 
 1. 对于 Outlook，`smtp.host` 配置值为 `smtp.office365.com`
-1. 在运行时，使用[Cloud Manager变量API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)或使用[Cloud Manager添加变量](/help/implementing/cloud-manager/environment-variables.md)传递`refreshToken values`和`clientSecret`密钥。 应定义变量 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 和 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 的值。
+1. 在运行时，使用 [Cloud Manager 变量 API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api)或通过使用 [Cloud Manager 添加变量](/help/implementing/cloud-manager/environment-variables.md)来传入`refreshToken values` 和`clientSecret`秘密。应定义变量 `SECRET_SMTP_OAUTH_REFRESH_TOKEN` 和 `SECRET_SMTP_OAUTH_CLIENT_SECRET` 的值。
 
 ### 疑难解答 {#troubleshooting}
 

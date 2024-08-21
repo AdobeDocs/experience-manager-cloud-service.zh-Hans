@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3937'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
          action: block
    ```
 
-   有关`data`节点上属性的描述，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 `kind` 属性值应设置为 *CDN* ，版本应设置为 `1`。
+   请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind` 属性值应设置为 *CDN* ，版本应设置为 `1`。
 
 
 1. 如果许可了 WAF 规则，则应在 Cloud Manager 中为新的和现有的程序场景启用它，如下所述。
@@ -109,7 +109,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
    1. 要在现有程序上配置 WAF，可在任何时候[编辑您的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)，并在&#x200B;**安全性**&#x200B;选项卡上取消选中或选中 **WAF-DDOS** 选项。
 
-1. 按照 [配置管道文章中的说明，在 Cloud Manager 中创建配置管道。](/help/operations/config-pipeline.md#managing-in-cloud-manager)管道将引用顶级`config`文件夹，并将`cdn.yaml`文件放置在下方的某个位置，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。
+1. 按照 [配置管道文章中的说明，在 Cloud Manager 中创建配置管道。](/help/operations/config-pipeline.md#managing-in-cloud-manager) 管道将引用顶层 `config` 文件夹，`cdn.yaml` 文件放置在其下方的某处，参见 [使用配置管道](/help/operations/config-pipeline.md#folder-structure)。
 
 ## 流量过滤规则语法 {#rules-syntax}
 
@@ -214,7 +214,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe 建议在使用正则表达式时采用 [regex101](https://regex101.com/) 和 [Fastly Fiddle](https://fiddle.fastly.dev/)。您还可以从[fastly文档 — Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)中的正则表达式了解有关Fastly如何处理regex的更多信息。
+* Adobe 建议在使用正则表达式时采用 [regex101](https://regex101.com/) 和 [Fastly Fiddle](https://fiddle.fastly.dev/)。您还可以从 [fastly 文档 - Fastly VCL 中的正则表达式中了解更多有关 Fastly 如何处理正则表达式的信息](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)。
 
 
 ### 操作结构 {#action-structure}

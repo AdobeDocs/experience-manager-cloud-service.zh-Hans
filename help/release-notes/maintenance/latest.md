@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1176'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 ## 版本 17465 {#release-17465}
 
-以下总结了维护版本17465的持续改进，该版本于2024年8月14日公开发布。 上一个维护版本是版本 17258。
+下面总结了维护版本 17465 的持续改进，该版本已于 2024 年 8 月 14 日公开发布。上一个维护版本是版本 17258。
 
 2024.8.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
@@ -45,7 +45,7 @@ ht-degree: 79%
 * SITES-22813 - 内容片段 REST API：为枚举字段定义最小/最大属性。
 * SITES-22031 - 内容片段 REST API：获取片段文件夹允许的内容片段模型。
 * SITES-17640 - 内容片段 REST API：内容片段发布操作验证。
-* SITES-22677 — 内容片段REST API：检索后代引用的简单列表。
+* SITES-22677 - 内容片段 REST API：检索后代引用的平面列表。
 * SITES-22207 - 内容片段创建时模型重复。
 * SITES-23093 - 事件：为内容片段模型事件的有效负载添加标记。
 * SITES-23092 - 事件：为内容片段事件的有效负载添加标记。
@@ -89,15 +89,15 @@ ht-degree: 79%
 * SITES-22203 - 内容片段 REST API：调整管理 API 以对相同情况做出相同响应。
 * SITES-21973 - 内容片段 REST API：模型缺少枚举类型的唯一属性。
 * SITES-20364 - 302 重定向无法与 URL 中的选择器一起使用。
-* SITES-21198 - VersionPreviewServlet：清理在所有群集节点上并行运行，从而导致合并冲突和块提交。
+* SITES-21198 - VersionPreviewServlet：在所有集群节点上同时运行清理，导致合并冲突并阻止提交。
 
 ### 已知问题 {#known-issues-17465}
 
-* Assets-40875 - AssetDeleteHandler类侦听资源删除事件，并根据删除DELETE类型(PRE_event或POST_event)执行特定DELETE。 在某些情况下，POST的DELETE类型会导致NullPointerException。
-* Forms-14340 — 实例化FormsAndDocumentOmniSearchHandler和CloudStorageSubmitActionInserter时出错。 这些是无害的log语句。
-* Forms-15818 — 组件描述符条目“OSGI-INF/com.adobe.aemfd.docmanager.impl”。在服务器日志中找不到*.xml&#39;语句。 这些是无害的log语句。
+* ASSETS-40875 - AssetDeleteHandler 类监听资产删除事件，并根据删除事件的类型（PRE_DELETE 或 POST_DELETE）执行特定操作。在某些情况下，POST_DELETE 类型的事件会导致 NullPointerException。
+* FORMS-14340 - FormsAndDocumentOmniSearchHandler 和 CloudStorageSubmitActionInserter 实例化时出错。这些是无害的日志语句。
+* FORMS-15818 - 组件描述符条目“OSGI-INF/com.adobe.aemfd.docmanager.impl。*.xml&#39; 在服务器日志中未找到语句。这些是无害的日志语句。
 * 
-   * SITES-23662 — 无法从服务器日志中的JCR日志语句中提取触发发布的用户。 这是针对正在开发的功能，该功能可能会在日志中导致“在批次OSGI事件中找不到有效用户ID”的间歇性且无害的错误。
+   * SITES-23662 - 无法从服务器日志中的 JCR 日志语句中提取触发发布的用户。这是针对正在开发的功能，可能会导致日志中出现间歇性且无害的“无法在 OSGI 事件批次中找到有效的用户 ID”错误。
 
 ### 更改通知 {#change-notice-17465}
 
@@ -105,13 +105,13 @@ ht-degree: 79%
 
 ### 已弃用的功能和 API {#deprecated-17465}
 
-请注意，我们正在更新`com.day.cq.wcm.api`，并且在当前版本中，我们已将它的几个方法和类标记为`@Deprecated`。 这些功能将在未来版本中删除，因此，如果您使用任何这些功能，请考虑改用其建议的替代功能。
+请注意，我们正在更新 `com.day.cq.wcm.api`，并且在当前版本中，我们已将其中的一些方法和类标记为 `@Deprecated`。这些将在未来的版本中删除，所以如果您正在使用其中任何一个，请考虑切换到其建议的替代方案。
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
 ### 安全修复 {#security-17465}
 
-AEM as a Cloud Service致力于优化平台的安全性和性能。 此维护版本解决了7个已识别的漏洞，强化了我们对强大系统保护的承诺。
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 7 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
 ### 嵌套的技术 {#embedded-tech-17465}
 
