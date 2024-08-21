@@ -2,13 +2,13 @@
 title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源、Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: 58194858-6e1c-460b-bab3-3496176b2851
+source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
-
 
 # 部署 Content Hub {#deploy-content-hub}
 
@@ -64,15 +64,23 @@ Content Hub现已为Experience Manager Assetsas a Cloud Service启用。
 
 ### Admin Console上的Content Hub实例和产品配置文件{#content-hub-instance-product-profile}
 
-在[使用Cloud Manager](#enable-content-hub)为Assets启用Content Hubas a Cloud Service后，在Admin Console上的AEM Assetsas a Cloud Service中创建了一个新实例，后缀为`contenthub`：
+在[使用Cloud Manager](#enable-content-hub)为Assets启用Content Hubas a Cloud Service后，在Admin Console上的AEM Assetsas a Cloud Service中创建了一个新实例，后缀为`delivery`：
 
 ![Content Hub的新实例](assets/new-instance-content-hub.png)
+
+>[!NOTE]
+>
+>如果您在2024年8月14日之前配置了Content Hub，则会创建新实例，并将`contenthub`作为后缀。
 
 请注意，Content Hub的实例名称中没有`author`或`publish`。
 
 单击实例名称以查看Content Hub产品配置文件。
 
 ![Content Hub产品配置文件](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`Limited Users`之后提及`contenthub`，而不是`delivery`。
 
 ## 步骤2：载入Content Hub管理员 {#onboard-content-hub-administrator}
 
@@ -192,6 +200,3 @@ Experience Manager Assets用户可以批准AEM as a Cloud Service上的资源，
    >[!NOTE]
    >
    > 您无需添加到Experience Manager Assets用户的[Content Hub产品配置文件](#onboard-content-hub-users)。
-
-
-
