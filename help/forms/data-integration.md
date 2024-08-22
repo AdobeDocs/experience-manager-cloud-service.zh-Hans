@@ -4,9 +4,9 @@ description: 从自适应表单或AEM Workflow中检索数据并将其保存到R
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '542'
 ht-degree: 3%
 
 ---
@@ -59,6 +59,10 @@ ht-degree: 3%
 * [使用表单数据模型(FDM)](work-with-form-data-model.md)
 * [使用表单数据模型(FDM)](using-form-data-model.md)
 
+<!--
+
 >[!NOTE]
 >
->[!UICONTROL Experience Manager Forms]不支持关系数据库。
+>[!UICONTROL Experience Manager Forms] does not support relational database.
+
+-->

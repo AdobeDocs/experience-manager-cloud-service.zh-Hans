@@ -6,10 +6,10 @@ role: User
 feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 100%
+source-wordcount: '975'
+ht-degree: 98%
 
 ---
 
@@ -76,8 +76,8 @@ Custom parameters are planned for an upcoming release. -->
 * **能否将图表添加到自适应表单？**
 是，可以将图表添加到自适应表单。自适应表单提供了一个图表组件。可使用它将图表添加到自适应表单。
 
-* **能否将表单数据模型 (FDM) 连接到关系数据库模型？**
-您可以将表单数据模型 (FDM) 作为数据源连接到 [!DNL RESTful web services]、[!DNL SOAP-based web services]、[!DNL OData services] 和 Experience Manager 用户配置文件。不支持将表单数据模型 (FDM) 连接到关系数据库。
+* **能否将表单数据模型连接到关系数据库模型？**
+您可以将表单数据模型连接到[!DNL RESTful web services]、[!DNL SOAP-based web services]、[!DNL OData services]，并将用户配置文件Experience Manager为数据源。<!--Support to connect a Form Data Model with a relational database is not available.-->
 
 * **能否将自定义证书与表单数据模型 (FDM) 结合使用进行身份验证？**
 表单数据模型 (FDM) 不提供使用自定义证书进行身份验证的方法。因此，不支持 x509 和双向 SSL 等自定义证书。
