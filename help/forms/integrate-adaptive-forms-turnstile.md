@@ -7,12 +7,15 @@ hide: true
 hidefromtoc: true
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: d69d64a02c62b9a796188107cfe1ab7543b5a2be
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '956'
 ht-degree: 12%
 
 ---
+
+
+# 将Turnstile CAPTCHA与自适应Forms集成
 
 <span class="preview">此功能在早期采用者计划下。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
