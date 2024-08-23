@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
-workflow-type: ht
-source-wordcount: '5340'
-ht-degree: 100%
+source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+workflow-type: tm+mt
+source-wordcount: '5348'
+ht-degree: 99%
 
 ---
 
@@ -319,7 +319,6 @@ ht-degree: 100%
          + [页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [预览页面](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-         + [页面模板](/help/sites-cloud/authoring/sites-console/templates.md)
          + [页面版本](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [页面差异](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [使用标记](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -330,6 +329,7 @@ ht-degree: 100%
          + [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [编辑器侧面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [编辑页面](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [页面模板](/help/sites-cloud/authoring/page-editor/templates.md)
          + [添加页面注释](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [富文本编辑器](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
          + [响应式布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
@@ -344,6 +344,7 @@ ht-degree: 100%
          + [使用 Universal Editor 创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [使用 Universal Editor 发布内容](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [通用编辑器中的内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [页面模板](/help/edge/wysiwyg-authoring/templates.md)
       + 片段 {#fragments}
          + [内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -886,6 +887,8 @@ ht-degree: 100%
       + [内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [表格数据和电子表格](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [现有项目和 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
+      + [管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [WIP站点功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 基于文档的创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
       + [批量元数据](/help/edge/docs/bulk-metadata.md)

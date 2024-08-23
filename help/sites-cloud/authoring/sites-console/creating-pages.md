@@ -5,12 +5,13 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6e13244d7ba7bb6e7a51525b66274427fe21d664
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 29%
+source-wordcount: '477'
+ht-degree: 27%
 
 ---
+
 
 # 创建页面 {#creating-pages}
 
@@ -38,9 +39,8 @@ ht-degree: 29%
 
 1. 在向导的第一步中，您可以：
 
-   * 选择要用于创建新页面的模板，然后选择&#x200B;**下一步**&#x200B;以继续。
-
-   * 单击/点按&#x200B;**取消**&#x200B;可中止该过程。
+   * 选择要用于创建新页面的模板，然后选择&#x200B;**下一步**&#x200B;以继续或&#x200B;**取消**&#x200B;以中止进程。
+   * [页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)和[通用编辑器](/help/edge/wysiwyg-authoring/templates.md)都支持模板。
 
    ![为新页面选择模板](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

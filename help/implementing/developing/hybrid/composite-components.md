@@ -4,7 +4,7 @@ description: 了解如何创建自己的复合组件，这些组件由使用AEM�
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -158,7 +158,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 将创建的`wknd-spa/components/imagecard`组件添加到页面模板](/help/sites-cloud/authoring/sites-console/templates.md)中的容器组件[允许的组件中。
+1. 将创建的`wknd-spa/components/imagecard`组件添加到页面模板](/help/sites-cloud/authoring/page-editor/templates.md)中的容器组件[允许的组件中。
 
 现在，可以在AEM编辑器中将`imagecard`组件直接添加到容器中。
 

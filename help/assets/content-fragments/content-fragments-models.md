@@ -5,7 +5,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3011'
 ht-degree: 87%
@@ -385,7 +385,7 @@ GraphQL 还对片段引用提供了定期保护。如果在两个相互引用的
 
 >[!NOTE]
 >
-该机制类似于[允许在页面的高级属性](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author)中为页面及其子页面设置页面模板。
+该机制类似于[允许在页面的高级属性](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)中为页面及其子页面设置页面模板。
 
 要为&#x200B;**允许的内容片段模型**&#x200B;配置&#x200B;**策略**：
 

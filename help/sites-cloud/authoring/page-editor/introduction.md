@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -18,7 +18,7 @@ ht-degree: 39%
 
 >[!NOTE]
 >
->在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中编辑页面时，该控制台将打开适用于该页面的[模板](/help/sites-cloud/authoring/sites-console/templates.md)的编辑器，可以是本文档中描述的页面编辑器，也可以是[通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)。
+>在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中编辑页面时，该控制台将打开适用于该页面的[模板](/help/sites-cloud/authoring/page-editor/templates.md)的编辑器，可以是本文档中描述的页面编辑器，也可以是[通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)。
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ AEM页面编辑器主要由三个部分组成：
 * [锁定页面](/help/sites-cloud/authoring/page-editor/introduction.md#locking-unlocking)
 * [发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md#publishing-pages-1)
 * [取消发布页面](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)
-* [编辑模板](/help/sites-cloud/authoring/sites-console/templates.md)
+* [编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)
 * [以发布的形式查看](/help/sites-cloud/authoring/page-editor/introduction.md#view-as-published)
 * [以管理员身份查看](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)
 * [帮助](/help/sites-cloud/authoring/basic-handling.md#accessing-help)

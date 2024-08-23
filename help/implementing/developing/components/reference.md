@@ -4,7 +4,7 @@ description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 组件参考指南 {#components-reference-guide}
 
-组件是在AEM中构建体验的核心。 使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，可以轻松开始使用一组现成的可靠组件。 [WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)将指导开发人员了解如何使用这些工具以及如何构建自定义组件来创建AEM站点。
+组件是在AEM中构建体验的核心。 使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，可以轻松开始使用一组现成的可靠组件。 [WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)将指导开发人员了解如何使用这些工具以及如何构建自定义组件来创建AEM站点。
 
 >[!TIP]
 >
@@ -223,9 +223,9 @@ AEM组件的对话框：
 
 ### 设计对话框 {#design-dialogs}
 
-“设计”对话框类似于用于编辑和配置内容的对话框，但它们为模板作者提供了界面，以便预配置页面模板上的该组件，并提供其设计详细信息。 然后，内容作者使用页面模板来创建内容页面。 有关如何创建模板的详细信息，请参阅[模板文档](/help/sites-cloud/authoring/sites-console/templates.md)。
+“设计”对话框类似于用于编辑和配置内容的对话框，但它们为模板作者提供了界面，以便预配置页面模板上的该组件，并提供其设计详细信息。 然后，内容作者使用页面模板来创建内容页面。 有关如何创建模板的详细信息，请参阅[模板文档](/help/sites-cloud/authoring/page-editor/templates.md)。
 
-编辑页面模板](/help/sites-cloud/authoring/sites-console/templates.md)时使用了[设计对话框，但并非所有组件都需要。 例如，**标题**&#x200B;和&#x200B;**图像组件**&#x200B;都具有设计对话框，而&#x200B;**社交媒体共享组件**&#x200B;没有。
+编辑页面模板](/help/sites-cloud/authoring/page-editor/templates.md)时使用了[设计对话框，但并非所有组件都需要。 例如，**标题**&#x200B;和&#x200B;**图像组件**&#x200B;都具有设计对话框，而&#x200B;**社交媒体共享组件**&#x200B;没有。
 
 ### Coral用户界面和Granite用户界面 {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Content not found
 
 定义组件后，必须使其可用。 要使组件可在模板中使用，必须在模板的布局容器策略中启用该组件。
 
-有关如何创建模板的详细信息，请参阅[模板文档](/help/sites-cloud/authoring/sites-console/templates.md)。
+有关如何创建模板的详细信息，请参阅[模板文档](/help/sites-cloud/authoring/page-editor/templates.md)。
 
 ### 组件及其创建的内容 {#components-and-the-content-they-create}
 

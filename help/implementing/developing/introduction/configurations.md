@@ -4,7 +4,7 @@ description: 了解Adobe Experience Manager (AEM)配置以及它们如何管理A
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -37,7 +37,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
 
 * [上下文中心区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [可编辑模板](/help/sites-cloud/authoring/sites-console/templates.md)
+* [可编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)
 * 各种云配置
 
 ### 示例 {#administrator-example}
@@ -83,7 +83,7 @@ AEM管理员和作者可以将配置视为工作区。 通过实施这些功能�
 1. 检查要允许的配置类型。
    * [上下文中心区段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [可编辑模板](/help/sites-cloud/authoring/sites-console/templates.md)
+   * [可编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)
    * 各种云配置
 1. 选择&#x200B;**创建**。
 

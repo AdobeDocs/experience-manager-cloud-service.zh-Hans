@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 94%
@@ -26,7 +26,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->不应混淆 AEM 站点模板与[页面模板。](/help/sites-cloud/authoring/sites-console/templates.md)站点模板定义了站点的整体结构。页面模板定义了单个页面的结构和初始内容。
+>不应混淆 AEM 站点模板与[页面模板。](/help/sites-cloud/authoring/page-editor/templates.md)站点模板定义了站点的整体结构。页面模板定义了单个页面的结构和初始内容。
 >
 >不应混淆 AEM 站点模板与 [AEM 站点主题。](site-themes.md)AEM 站点主题仅包含 AEM 站点的样式信息。AEM 站点模板定义站点结构和初始内容，并包含 AEM 站点主题，以便[快速创建站点。](create-site.md)
 

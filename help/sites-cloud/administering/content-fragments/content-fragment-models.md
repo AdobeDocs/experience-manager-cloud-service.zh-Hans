@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3209'
 ht-degree: 89%
@@ -434,7 +434,7 @@ GraphQL 中也有针对片段引用的重复保护。如果在两个互相引用
 
 >[!NOTE]
 >
-该机制类似于[允许在页面的高级属性](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author)中为页面及其子页面设置页面模板。
+该机制类似于[允许在页面的高级属性](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)中为页面及其子页面设置页面模板。
 
 要为&#x200B;**允许的内容片段模型**&#x200B;配置&#x200B;**策略**：
 

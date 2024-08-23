@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -223,9 +223,9 @@ AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项�
 
 要允许作者向内容页面添加更多响应式网格，您需要为页面启用布局容器组件。 您可以使用以下任一方式执行此操作：
 
-* **通过创作环境** - [编辑页面模板](/help/sites-cloud/authoring/sites-console/templates.md)以启用页面的布局容器。
+* **通过创作环境** - [编辑页面模板](/help/sites-cloud/authoring/page-editor/templates.md)以启用页面的布局容器。
 * **组件定义** — 在定义组件时使用`allowedComponent`或静态包含。
 
 ### 配置布局容器的网格 {#configure-the-grid-of-the-layout-container}
 
-您可以通过编辑页面模板来配置布局容器[的每个特定实例的可用列数。](/help/sites-cloud/authoring/sites-console/templates.md)
+您可以通过编辑页面模板来配置布局容器[的每个特定实例的可用列数。](/help/sites-cloud/authoring/page-editor/templates.md)

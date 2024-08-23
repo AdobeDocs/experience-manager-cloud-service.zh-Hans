@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 79%
@@ -42,7 +42,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 ## 核心组件 {#core-components}
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
 
 它们是使用AEM最佳实践构建的，是AEM创作体验的基础。 开发人员可以轻松扩展核心组件，以满足特定项目需求。
 
@@ -50,4 +50,4 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 ### 配置模板 {#configuring-templates}
 
-如果您的页面基于建议的现代化可编辑的模板，则可以通过[编辑模板](/help/sites-cloud/authoring/sites-console/templates.md)来启用/禁用这些组件以及编辑特定组件的参数。
+如果您的页面基于建议的现代化可编辑的模板，则可以通过[编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)来启用/禁用这些组件以及编辑特定组件的参数。

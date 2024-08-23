@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -118,7 +118,7 @@ ht-degree: 67%
 
 ## 模板 {#templates}
 
-在AEM中，[模板](/help/sites-cloud/authoring/sites-console/templates.md)是一种特殊类型的页面，用作正在创建的任何新页面的基础。
+在AEM中，[模板](/help/sites-cloud/authoring/page-editor/templates.md)是一种特殊类型的页面，用作正在创建的任何新页面的基础。
 
 该模板定义了页面的结构，其中包括缩略图和其他属性。例如，您可能会有产品页面、站点地图和联系信息的单独模板。模板包括各个[组件](#components)。
 

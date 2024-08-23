@@ -5,7 +5,7 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%
@@ -154,7 +154,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[核心组件文本组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)允许模板编辑器使用用户界面作为内容策略配置许多RTE插件，而无需技术配置。 内容策略可以与RTE UI配置配合使用，如本文档所述。 有关详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/sites-console/templates.md)和[核心组件开发人员文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
+[核心组件文本组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)允许模板编辑器使用用户界面作为内容策略配置许多RTE插件，而无需技术配置。 内容策略可以与RTE UI配置配合使用，如本文档所述。 有关详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md)和[核心组件开发人员文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
 
 >出于参考目的，默认文本组件（作为标准安装的一部分提供）可以在以下位置找到：
 >
@@ -220,7 +220,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 ## RTE用户界面设置和内容策略 {#rtecontentpolicies}
 
-管理员可以使用内容策略来控制RTE选项，而不是执行如上所述的配置。 当内容策略用作[可编辑模板](/help/sites-cloud/authoring/sites-console/templates.md)的一部分时，它定义组件的设计属性。 例如，如果将使用RTE的文本组件与可编辑模板一起使用，则内容策略可以定义粗体选项是否可用，以及几个段落格式选项是否可用。 内容策略可重复使用，并且可以跨多个模板应用。
+管理员可以使用内容策略来控制RTE选项，而不是执行如上所述的配置。 当内容策略用作[可编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)的一部分时，它定义组件的设计属性。 例如，如果将使用RTE的文本组件与可编辑模板一起使用，则内容策略可以定义粗体选项是否可用，以及几个段落格式选项是否可用。 内容策略可重复使用，并且可以跨多个模板应用。
 
 RTE中的可用选项会从用户界面配置下游流向内容策略。
 

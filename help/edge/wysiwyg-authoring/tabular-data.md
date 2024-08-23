@@ -4,10 +4,10 @@ description: 了解如何使用电子表格来管理各种值的表格数据，�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 98%
+source-wordcount: '970'
+ht-degree: 97%
 
 ---
 
@@ -130,6 +130,7 @@ ht-degree: 98%
 * 元数据
 * 标头
 * 配置
+* [分类](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 只需按照各部分中的相同步骤操作即可[创建电子表格](#spreadsheet)和[更新 paths.json](#paths-json)，选择合适的模板并`paths.json`相应地更新文件。
 
@@ -138,6 +139,7 @@ ht-degree: 98%
 * 配置：`/.helix/config.json`
 * 标头：`/.helix/headers.json`
 * 元数据：`/metadata.json`
+* 分类：有关详细信息，请参阅文档[管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)。
 
 此外，您还可以用任意列[创建您自己的电子表格](#own-spreadsheet)供您自己使用。
 

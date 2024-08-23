@@ -2,9 +2,12 @@
 title: 创建页面模板
 description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: c79aeaab9d33f1c2a15f93d58847798c6caff31c
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4524'
 ht-degree: 86%
 
 ---
@@ -13,7 +16,7 @@ ht-degree: 86%
 
 创建页面时，您必须选择一个模板，以用作创建新页面的基础。模板可定义生成页面的结构、任何初始内容以及可使用的组件。
 
-使用&#x200B;**模板编辑器**，创建和维护模板不是开发人员专属的任务。 高级用户(称为模板作者 **)也可能**。开发人员仍需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，模板作者就可以灵活地创建和配置模板，而无需开发项目。****
+使用模 **板编辑器**，创建和维护模板不再只是开发人员的任务。高级用户(称为模板作者 **)也可能**。开发人员仍需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，模板作者就可以灵活地创建和配置模板，而无需开发项目。****
 
 在&#x200B;**“模板”控制台**&#x200B;中，模板作者可以执行以下操作：
 
@@ -78,7 +81,7 @@ ht-degree: 86%
    * [结构](#editing-a-template-structure-template-author) - 不能在使用该模板创建的页面上更改的预定义内容。
    * [初始内容](#editing-a-template-initial-content-author) - 能够在使用该模板创建的页面上更改的预定义内容。
    * [布局](#editing-a-template-layout-template-author) - 针对各种设备。
-   * [样式](/help/sites-cloud/authoring/features/style-system.md) - 定义要用于该模板及其组件的样式。
+   * [样式](/help/sites-cloud/authoring/page-editor/style-system.md) - 定义要用于该模板及其组件的样式。
 * [启用该模板](#enabling-a-template-template-author)，以在创建页面时使用
 * [允许该模板](#allowing-a-template-author)用于您网站的所需页面或分支
 * [发布该模板](#publishing-a-template-template-author)，以使其可用于发布环境
@@ -184,7 +187,7 @@ ht-degree: 86%
 
 1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
 1. 从工具栏中选择&#x200B;**启用**&#x200B;或&#x200B;**禁用**，然后在确认对话框中再次选择“启用”或“禁用”。
-1. 现在，您可以在[创建页面](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)时使用模板，不过您可能希望根据自己的要求[编辑模板](#editing-templates-template-authors)。
+1. 现在，您可以在[创建页面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)时使用模板，不过您可能希望根据自己的要求[编辑模板](#editing-templates-template-authors)。
 
 >[!NOTE]
 >
@@ -194,7 +197,7 @@ ht-degree: 86%
 
 可以使模板可用于或不可用于某些页面分支。
 
-1. 对于希望可在其中使用模板的分支，打开其根页面的[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。
+1. 对于希望可在其中使用模板的分支，打开其根页面的[页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md)。
 1. 打开&#x200B;**高级**&#x200B;选项卡。
 1. 在&#x200B;**模板设置**&#x200B;下方，使用&#x200B;**添加字段**&#x200B;指定模板的路径。
 
@@ -270,7 +273,7 @@ ht-degree: 86%
 
 #### 布局 {#template-layout}
 
-通过[布局](#editing-a-template-layout-template-author)，您可以预定义所需设备格式的模板布局。模板创作的&#x200B;**布局**&#x200B;模式与&#x200B;[**页面创作的布局**&#x200B;模式](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)具有相同的功能。
+通过[布局](#editing-a-template-layout-template-author)，您可以预定义所需设备格式的模板布局。模板创作的&#x200B;**布局**&#x200B;模式与&#x200B;[**页面创作的布局**&#x200B;模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)具有相同的功能。
 
 #### 页面策略 {#template-page-policies}
 
@@ -278,9 +281,9 @@ ht-degree: 86%
 
 #### 样式 {#template-styles}
 
-[样式系统](/help/sites-cloud/authoring/features/style-system.md)允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
+样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 
-有关更多信息，请参阅[样式系统文档](/help/sites-cloud/authoring/features/style-system.md)。
+有关详细信息，请参阅[样式系统文档](/help/sites-cloud/authoring/page-editor/style-system.md)。
 
 ### 编辑模板 – 结构 – 模板作者 {#editing-a-template-structure-template-author}
 
@@ -319,7 +322,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->将组件和资源添加到模板的操作与在[页面创作](/help/sites-cloud/authoring/fundamentals/editing-content.md)时执行的类似操作虽然并不完全相同，但也存在许多相似之处。
+>将组件和资产添加到模板的操作与[页面创作时的类似操作虽然并不完全相同，但也存在许多相似之处。](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 #### 组件操作 {#component-actions}
 
@@ -536,7 +539,7 @@ ht-degree: 86%
 
 ### 编辑模板 – 布局 – 模板作者 {#editing-a-template-layout-template-author}
 
-您可以为各种设备定义模板布局。模板的[响应式布局](/help/sites-cloud/authoring/features/responsive-layout.md)与页面创作时的响应式布局功能相同。
+您可以为各种设备定义模板布局。模板的[响应式布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)与页面创作时的响应式布局功能相同。
 
 >[!NOTE]
 >
@@ -611,7 +614,7 @@ ht-degree: 86%
 
 ### 编辑模板 – 初始页面属性 – 作者 {#editing-a-template-initial-page-properties-author}
 
-使用&#x200B;**初始页面属性**&#x200B;选项，您可以定义要在创建生成页面时使用的初始[页面属性](/help/sites-cloud/authoring/fundamentals/page-properties.md)。
+使用&#x200B;**初始页面属性**&#x200B;选项，您可以定义要在创建生成页面时使用的初始[页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md)。
 
 1. 在模板编辑器中，从工具栏中选择&#x200B;**页面信息**，然后选择&#x200B;**初始页面属性**&#x200B;以打开相应的对话框。
 
