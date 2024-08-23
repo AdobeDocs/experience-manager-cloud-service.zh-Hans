@@ -4,7 +4,7 @@ description: 了解如何在AEM Assets视图中搜索和发现资源。 利用�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
+source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 76%
@@ -149,7 +149,7 @@ Assets视图提供了以下自定义过滤器：
 
    * 在 **另存为** 字段中输入文件的名称。
    * 选择目标文件夹。
-   * 提供项目或营销策划名称、关键字、渠道、时间范围和区域等详细信息。
+   * 输入详细信息，如项目或营销策划名称、关键字、渠道、时间范围和区域。
 
    ![Firefly 集成](assets/save-generated-asset.png)
 
