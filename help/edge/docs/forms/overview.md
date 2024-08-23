@@ -4,10 +4,10 @@ description: AEM Forms Edge Delivery Services 专为实现最佳性能而构建�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
+source-git-commit: 5670e0ab7e6cb47bcc2dd7608aa3f01dc4ec0704
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客户可直接从其 Git
 * [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
-* [实时用户监控](https://www.aem.live/developer/rum#authentication)
+* [实际使用监控](https://www.aem.live/developer/rum#authentication)
 
 <!-- 
 
