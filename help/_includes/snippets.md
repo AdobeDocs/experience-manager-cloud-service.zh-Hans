@@ -1,8 +1,8 @@
 ---
-source-git-commit: 90bc7320899053b6b1d6cf0d1b06b193ad1c68f3
+source-git-commit: 8728af7d9baee0c9324c1e9be1ae66d105396c40
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 78%
+source-wordcount: '711'
+ht-degree: 75%
 
 ---
 # 代码片段 {#snippets}
@@ -18,11 +18,11 @@ ht-degree: 78%
 ## 另请参阅 {#see-also}
 
 * [创建 AEM 自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-* [将 AEM 自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [将AEM自适应表单添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [将主题应用于 AEM 自适应表单](/help/forms/using-themes-in-core-components.md)
-* [将组件添加到 AEM 自适应表单 ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#components)
+* [将组件添加到 AEM 自适应表单 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [在 AEM 自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-* [生成 AEM 自适应表单的 PDF 版本 (DoR)](/help/forms/generate-document-of-record-core-components.md)
+* [生成AEM自适应表单的PDF版本(DoR)](/help/forms/generate-document-of-record-core-components.md)
 * [翻译 AEM 自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [为自适应表单启用 Adobe Analytics 以跟踪表单使用情况](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [将自适应表单连接到 Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -32,7 +32,7 @@ ht-degree: 78%
 * [将自适应表单连接到 Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [在 AEM 自适应表单中使用 Adobe Sign](/help/forms/working-with-adobe-sign.md)
 * [为自适应表单添加新区域设置](/help/forms/supporting-new-language-localization-core-components.md)
-* [将自适应表单数据发送到数据库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [将自适应表单数据发送到数据库](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [将自适应表单数据发送到 REST 端点](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [将自适应表单数据发送到 AEM 工作流](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [使用 Forms Portal 在 AEM 网站上列出 AEM 自适应表单](/help/forms/configure-forms-portal.md)
@@ -66,7 +66,7 @@ ht-degree: 78%
 * [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
 
 
-## 核心组件中的规则编辑器与基础组件中的规则编辑器之间的区别  {#rule-editor-diff}
+## 核心组件中的规则编辑器与基础组件中的规则编辑器的区别 {#rule-editor-diff}
 
 下表说明了规则编辑器的核心组件和规则编辑器的基础组件中可用的功能之间的区别：
 
@@ -79,23 +79,23 @@ ht-degree: 78%
     </tr>
   </tr>
   <tr>
-    <td>设置下拉列表选项 </td>
-    <td>下拉列表选项是使用规则编辑器的<b>Set Options of</b>属性设置的。</td>
+    <td>设置选项的下拉列表 </td>
+    <td>选项的下拉列表是使用规则编辑器的<b>Set Options of</b>属性设置的。</td>
     <td>下拉选项是使用自定义函数设置的。 
    </td>
    </tr>
      </tr>
    <tr>
     <td>对可重复面板字段执行数学运算 </td>
-    <td>OOTB 数学函数可以应用于可重复面板字段以使用规则编辑者执行诸如求和、平均值等功能。需要提供两个参数：第一个指定包含字段的可重复面板，第二个指定对应可重复面板中的字段。 </td>
-    <td>可以使用自定义函数对可重复面板字段执行数学运算。您还可以使用规则编辑者直接对可重复面板的字段应用数学函数。
+    <td>OOTB数学函数可应用于可重复的面板字段，以便使用规则编辑器执行sum、average等函数。 需要提供两个参数：第一个指定包含字段的可重复面板，第二个指定对应可重复面板中的字段。 </td>
+    <td>可以使用自定义函数对可重复面板字段执行数学运算。您也可以将数学函数直接应用于规则编辑器中可重复面板的字段。
    </td>
    </tr>
       <tr>
     <td>在“Then”中验证/重置字段/面板/表单规则 </td>
-    <td>验证和重置功能仅支持规则编辑器中的表单对象。 
+    <td>验证和重置函数仅支持规则编辑器中的表单对象。 
    </td>
-    <td>验证和重置功能支持规则编辑器中的表单/面板/字段对象。 
+    <td>验证和重置函数支持规则编辑器中的表单/面板/字段对象。 
    </td>
    </tr>
    <tr>
@@ -129,14 +129,9 @@ ht-degree: 78%
 * [开发和使用自定义函数的示例](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## Cloud Manager IP允许列表和前端管道 {#allowlist-frontend-pipeline}
+## 添加Cloud Manager IP允许列表和前端管道 {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->前端管道要求将以下IP允许列表预先添加到Cloud Manager。
->如果需要，[通过复制下面的地址块添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。 每个地址用逗号分隔。 将块粘贴到&#x200B;**添加IP允许列表**&#x200B;对话框的&#x200B;**IP地址/ CIDR**&#x200B;字段中。 将光标放在地址列表中的第一个逗号之后，然后按&#x200B;**Enter**。 保存列表。
->为避免运行前端管道中断，请确保在启用该管道之前&#x200B;*将此IP允许列表添加到Cloud Manager*。
->
->**Cloud Manager IP允许列表**
->52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
->   
+>如果您使用或打算使用前端管道来开发站点，则必须预先添加Cloud Manager IP允许列表。
+>请参阅[将Cloud Manager IP允许列表用于前端管道](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
