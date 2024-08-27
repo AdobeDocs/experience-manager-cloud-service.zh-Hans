@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
+source-git-commit: 82be9b2b328343e827b90bd8266d93127757f477
 workflow-type: tm+mt
-source-wordcount: '1176'
-ht-degree: 100%
+source-wordcount: '675'
+ht-degree: 39%
 
 ---
 
@@ -16,107 +16,82 @@ ht-degree: 100%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 17465 {#release-17465}
+## 版本 17569 {#release-17569}
 
-下面总结了维护版本 17465 的持续改进，该版本已于 2024 年 8 月 14 日公开发布。上一个维护版本是版本 17258。
+以下总结了维护版本17569的持续改进，该版本于2024年8月27日公开发布。 上一个维护版本是版本 17465。
 
-2024.8.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+2024.9.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强 {#enhancements-17465}
+### 增强 {#enhancements-17569}
 
-* FORMS-15436 - 妥善处理 Adobe Sign 状态调度程序中的异常。
-* FORMS-15362 - 在 aemds 中添加 forms-foundation 的配置以启用登录。
-* FORMS-15261 - SPA 未在表单编辑器中呈现。
-* FORMS-15138 - 由于 sling commons json 升级而导致的双重数据向后兼容性处理。
-* FORMS-15113 - 将密钥名称从 vistorId 更改为 sid，以进行 RUM 跟踪。
-* FORMS-15103 - 表单中附加的资产未在边缘交付中发布。
-* FORMS-15082 - 用于映射到自定义自适应表单组件的 JSON 模式
-* FORMS-15002 – v1 片段的模板类型注册。
-* FORMS-14845 - 通过表单管理器支持核心组件库中的 xdpRef。
-* FORMS-14840 – 表单预填服务错误。
-* FORMS-14836 - 改进表单管理器 UI，列出 AF1 片段模板。
-* FORMS-14834 - AF1 中对片段的模板支持。
-* FORMS-14275 - 覆盖嵌入容器中的感谢页面和感谢信息。
-* FORMS-13623 - 为 V2 启用基于自动保存时间的功能。
-* FORMS-8651 - 在表单属性页面上更改数据模型配置时出现警告对话框。
-* SITES-23310 - 内容片段 REST API：防止内容片段的嵌套引用中的循环依赖。
-* SITES-23285 - 内容片段 REST API：创建端点以列出所有可用的语言。
-* SITES-22857 - 内容片段 REST API：复选框枚举字段不应允许将多个属性设置为 false。
-* SITES-22813 - 内容片段 REST API：为枚举字段定义最小/最大属性。
-* SITES-22031 - 内容片段 REST API：获取片段文件夹允许的内容片段模型。
-* SITES-17640 - 内容片段 REST API：内容片段发布操作验证。
-* SITES-22677 - 内容片段 REST API：检索后代引用的平面列表。
-* SITES-22207 - 内容片段创建时模型重复。
-* SITES-23093 - 事件：为内容片段模型事件的有效负载添加标记。
-* SITES-23092 - 事件：为内容片段事件的有效负载添加标记。
-* SITES-22447 - 在基本属性选项卡中添加体验片段属性继承支持。
-* SITES-12209 - 通过将 cq:policy 添加到索引来提高策略编辑器的性能。
+* CQ-4353778：翻译流程事件。
+* CQ-4354583：通过Adobe管道发送翻译流程事件。
+* CQ-4356479：仅允许Adobe代码使用/adobe servlet上下文。
+* CQ-4358133：优化Jenkins工作程序的使用。
+* CQ-4358226：保存翻译关键词功能不适用于特定字符串格式。
+* CQ-4358270：AEM翻译包：2008年8月。
+* CQ-4358310：将oak-compat-query-spi-1.2添加到快速入门中。
+* GRANITE-36205：QS中的内部Oak版本的自动更新。
+* GRANITE-49833：对事件发送者和代理的批量处理支持。
+* GRANITE-52053：删除Commons Collections的使用情况3： Platform其他。
+* GRANITE-52492：在PIT还原的情况下进行弹性异步追溯。
+* GRANITE-53086：在AEMaaCS中将jacoco插件版本更新为0.8.12。
+* GRANITE-53099：更新到 Apache Felix Http Jetty 5.1.24。
+* GRANITE-53125：向CloudEvent添加分类。
+* GRANITE-53328：将Filevault更新为3.8.0-T20240726111512-3cc11d50，并包含存储日志记录改进功能。
+* GRANITE-53340：AEM660:660 CQ/Platform的正确版本控制和分支。
+* GRANITE-53341：对使用ACS Commons 6不发出警告。
+* GRANITE-53453：将commons-lang更新为3.15.0。
+* GRANITE-53473：取消弃用Sling设置。
+* GRANITE-53478：将Filevault更新到版本3.8.0。
+* GRANITE-53505：将QS更新为commons-collections-3.2.2-adobe-2。
+* GRANITE-53528：更新平台工件的版本。
+* GRANITE-53547：提供替代API，避免使用Apache Commons Lang 2。
+* GRANITE-53575：在CS中使用BSAFE 6.2.5。
+* GRANITE-53608：将Oak更新到最新公共版本(1.68.0)。
+* SITES-23583：Sites Evergreen测试在Java 17上失败。
+* SKYOPS-79535：更新至rum脚本v2。
+* SKYOPS-79816：在FACT工具中为服务用户映射启用Sling功能分析器任务。
+* SKYOPS-81179：AEM构建包切换测试。
+* SKYOPS-81866：报告已知与Java 21不兼容的捆绑包的警告。
+* SKYOPS-82660：将Sling API更新为2.27.6。
+* SKYOPS-82961：更新至Sling ResourceResolver 1.12.0-T20240723153354-a0270a0。
+* SKYOPS-83356：创建全局功能板，以跟踪AEM部署中使用的JVM版本。
+* SKYOPS-83436：Java Runtime 21转出会中断自适应表单AEM Forms的创建。
+* SKYOPS-84272：记录在aem启动器启动中使用的Java版本。
 
-### 修复的问题 {#fixed-issues-17465}
+### 修复的问题 {#fixed-issues-17569}
 
-* CQ-4358028 - 如果上传了缩略图，则无法创建项目。
-* CQ-4357891 - 导出的 XLIFF 的序列问题。
-* CQ-4357059 - 翻译工作需要数小时才能完成，导致 AEMaaCS 出现 503 超时。
-* FORMS-15320 - 在基于核心组件的表单中，电子邮件提交不起作用。
-* FORMS-15272 - AEM Forms - 复选框组仅发送 1 个值。
-* FORMS-15269 - 维护版本 16461 后面临与产品相关的问题。
-* FORMS-15174 - JsonSchemaParser isValid 问题。
-* FORMS-15095 - 多行文本框可以延伸至 AEM Forms 中包含的面板之外。
-* FORMS-15057 - FDM Sharepoint 列表抛出提交附件错误 > 999。
-* FORMS-15011 - 在编辑器中打开表单时核心编辑器导致控制台错误。
-* FORMS-14809 - 共享临时目录中未自动创建 SDK 文件夹。
-* FORMS-14327 - 表单服务 API：提取数据：- 当输入中提供非交互式 pdf 时提供 500 响应代码。
-* FORMS-7475 - 自适应表单创建页面上的排序不起作用。
-* FORMS-3309 - 如果在提交表单时选择了多个选项，则在生成的 DoR 中只会显示一个选项。
-* SITES-23646 - 如果字段包含唯一值，则使用 OpenAPI 创建的模型的 GraphQL 模型端点会失败。
-* SITES-23637 - 内容片段 REST API：OpenAPI 没有使用正确的枚举值类型。
-* SITES-23573 - 内容片段 REST API：通过 uuid 获取内容片段时不尊重实时关系。
-* SITES-23535 - 内容片段 REST API：内容片段模型枚举多字段具有空值。
-* SITES-23534 - 内容片段 REST API：内容片段验证 ClassCastException。
-* SITES-23524 - 调整 GraphQL BFF 模型端点以支持多字段枚举字段。
-* SITES-23467 - 内容片段 REST API：由于光标问题，搜索模型失败。
-* SITES-23327 - 时间线事件处理期间 AuditLogTimelineEventProvider 中出现 ArrayIndexOutOfBoundsException 描述。
-* SITES-23277 - 内容片段 REST API：内容片段字段实时关系检查仅应针对实时副本进行。
-* SITES-23232 - 自定义验证在新 CF 编辑器 UI 中不起作用。
-* SITES-23090 - 内容片段 REST API：无法更新已锁定的内容片段的标题。
-* SITES-22981 - 推广不深入的嵌套发布不会发布。
-* SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException。
-* SITES-22814 - 内容片段 REST API：复选框枚举片段字段值应按模型中定义的键排序。
-* SITES-22716 - OOTB 组件实时使用列表存在问题。
-* SITES-22457 - 推广不够深入的发布不会更新源内容。
-* SITES-22449 - AEM P20 升级后无法保存内容片段中的更改。
-* SITES-22279 - 内容片段 REST API：内容片段缺少枚举类型的唯一属性。
-* SITES-22203 - 内容片段 REST API：调整管理 API 以对相同情况做出相同响应。
-* SITES-21973 - 内容片段 REST API：模型缺少枚举类型的唯一属性。
-* SITES-20364 - 302 重定向无法与 URL 中的选择器一起使用。
-* SITES-21198 - VersionPreviewServlet：在所有集群节点上同时运行清理，导致合并冲突并阻止提交。
+* CMGR-60225：验证AEM发行说17486的更新时，在AEM Sites CS客户上发现管道执行失败。
+* GRANITE-45919：编辑用户设置中的“国家/地区”列表中已禁运的国家/地区。
+* GRANITE-51715：选取器有时不会在文本字段中输入选定内容。
+* GRANITE-53290：在解析XSS检查中的URL时，正确检查协议。
+* GRANITE-53576：OSGi配置中的服务排名定义错误。
+* SKYOPS-82129：Sling模型中的内存泄漏。
 
-### 已知问题 {#known-issues-17465}
+### 已知问题 {#known-issues-17569}
 
-* ASSETS-40875 - AssetDeleteHandler 类监听资产删除事件，并根据删除事件的类型（PRE_DELETE 或 POST_DELETE）执行特定操作。在某些情况下，POST_DELETE 类型的事件会导致 NullPointerException。
-* FORMS-14340 - FormsAndDocumentOmniSearchHandler 和 CloudStorageSubmitActionInserter 实例化时出错。这些是无害的日志语句。
-* FORMS-15818 - 组件描述符条目“OSGI-INF/com.adobe.aemfd.docmanager.impl。*.xml&#39; 在服务器日志中未找到语句。这些是无害的日志语句。
-* SITES-23662 - 无法从服务器日志中的 JCR 日志语句中提取触发发布的用户。这是针对正在开发的功能，可能会导致日志中出现间歇性且无害的“无法在 OSGI 事件批次中找到有效的用户 ID”错误。
+无。
 
-### 更改通知 {#change-notice-17465}
+### 更改通知 {#change-notice-17569}
 
 * 从 2024 年 9 月开始，AEM as a Cloud Service 将会通过 Sling Model Exporter 框架禁用资源解析器的序列化。请参阅[该文档](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)了解更多详情。
 
-### 已弃用的功能和 API {#deprecated-17465}
+### 已弃用的功能和 API {#deprecated-17569}
 
 请注意，我们正在更新 `com.day.cq.wcm.api`，并且在当前版本中，我们已将其中的一些方法和类标记为 `@Deprecated`。这些将在未来的版本中删除，所以如果您正在使用其中任何一个，请考虑切换到其建议的替代方案。
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-17465}
+### 安全修复 {#security-17569}
 
-AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 7 个已发现的漏洞，增强了我们对强大系统保护的承诺。
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 4 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-### 嵌套的技术 {#embedded-tech-17465}
+### 嵌套的技术 {#embedded-tech-17569}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
-| AEM Oak | 1.66.0 | [Oak API 1.66.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.66.0/index.html) |
-| AEM SLING API | 2.27.2 | [Apache Sling API 2.27.2 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| AEM Oak | 1.68.0 | [Oak API 1.68.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html) |
+| AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
-| AEM 核心组件 | 2.25.4 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
+| AEM 核心组件 | 2.26.0 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
