@@ -19,7 +19,7 @@ ht-degree: 10%
 >id="aemcloud_cug_migration"
 >title="封闭用户组的迁移"
 >abstract="封闭用户组 (CUG) 的迁移当前需要少量检查和步骤以使其在迁移后正常发挥作用。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=zh-Hans" text="AEM 中的封闭用户组"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html#" text="AEM 中的封闭用户组"
 
 目前，封闭用户组(CUG)需要一些额外的步骤才能在迁移的目标环境中正常运行。 本文档将介绍此方案，以及要求它们以预期方式保护节点所需的步骤。
 

@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Manager的IP允许列表可用于限制和控制对这些受信任IP地址
 
 当您[添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist)时，将其命名为&#x200B;*`Cloud Manager`*，然后复制下面的地址列表并将它们粘贴到IP允许列表对话框中。
 
-**Cloud Manager IP允许列表**
+**Cloud Manager IP 允许列表**
 
 ```text
 52.254.106.192/28

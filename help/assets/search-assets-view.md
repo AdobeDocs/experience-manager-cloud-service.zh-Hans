@@ -7,29 +7,29 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
-ht-degree: 76%
+ht-degree: 94%
 
 ---
 
-# 在 [!DNL Assets view] 中搜索资源 {#search-assets}
+# 在 [!DNL Assets view] 中搜索资产 {#search-assets}
 
 >[!CONTEXTUALHELP]
 >id="assets_search"
->title="搜索资源"
->abstract="搜索资源可通过在搜索栏中指定关键词，也可通过根据资源的状态、文件类型、MIME 类型、大小、创建日期、修改日期和到期日期筛选资源。除了标准筛选器，还可应用自定义筛选器。可将筛选出的结果另存为“保存的搜索”或“智能收藏集”。"
+>title="搜索资产"
+>abstract="搜索资产可通过在搜索栏中指定关键词，也可通过根据资产的状态、文件类型、MIME 类型、大小、创建日期、修改日期和到期日期筛选资产。除了标准筛选器，还可应用自定义筛选器。可将筛选出的结果另存为“保存的搜索”或“智能收藏集”。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-collections.html?lang=zh-Hans#manage-smart-collection" text="创建智能收藏集"
 
-[!DNL Assets view]提供了有效的搜索，默认情况下即可使用。 该搜索是全面的，因为它是一种全文搜索。 利用强大的搜索功能，您可以快速发现适用的资源，并帮助您提升内容速度。[!DNL Assets view] 提供全文搜索，甚至可以对元数据进行搜索，例如智能标记、标题、创建日期和版权。
+[!DNL Assets view] 提供了高效的搜索功能，只需按默认设置即可使用。该搜索执行全文搜索，因此非常全面。利用强大的搜索功能，您可以快速发现适用的资产，并帮助您提升内容速度。[!DNL Assets view] 提供全文搜索，甚至可以对元数据进行搜索，例如智能标记、标题、创建日期和版权。
 
-要搜索资源，
+要搜索资产，
 
 * 请单击页面顶部的搜索框。默认情况下，它会在您当前浏览的文件夹中进行搜索。执行下列操作之一：
 
   ![搜索框](assets/search-box.png)
 
-   * 使用关键词进行搜索，并可选择更改文件夹。 按 Return。
+   * 使用关键词搜索并可选择更改文件夹。按 Return。
 
-   * 通过直接搜索资源，开始处理最近查看过的资源。单击搜索框，从建议中选择最近查看过的资源。
+   * 通过直接搜索资产，开始处理最近查看过的资产。单击搜索框，从建议中选择最近查看过的资产。
 
 ## 筛选搜索结果 {#refine-search-results}
 
@@ -44,14 +44,14 @@ ht-degree: 76%
 * 文件类型：按照支持的文件类型筛选搜索结果，即 `Images`、`Documents` 和 `Videos`。
 * MIME 类型：筛选一种或多种支持的文件格式。<!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * 图像大小：提供一个或多个最小尺寸和最大尺寸来筛选图像。大小按照以像素为单位的尺寸提供，而不是图像的文件大小。
-* 创建日期：在元数据中提供的创建资源的日期。使用的标准日期格式为 `yyyy-mm-dd`。
-* 修改日期：资源的最后修改日期。使用的标准日期格式为 `yyyy-mm-dd`。
+* 创建日期：在元数据中提供的创建资产的日期。使用的标准日期格式为 `yyyy-mm-dd`。
+* 修改日期：资产的最后修改日期。使用的标准日期格式为 `yyyy-mm-dd`。
 
-* 到期日期：根据 `Expired` 资源状态筛选搜索结果。此外，还可指定资源的到期日期范围以进一步筛选搜索结果。
+* 到期日期：根据 `Expired` 资产状态筛选搜索结果。此外，还可指定资产的到期日期范围以进一步筛选搜索结果。
 
 * 自定义筛选器： [将自定义筛选器](#custom-filters)添加到Assets视图用户界面。 与标准筛选器一起应用自定义筛选器以细化搜索结果。
 
-可按 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的升序或降序为搜索到的资源排序。默认情况下，根据 `Relevance` 为搜索到的资源排序。
+可按 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的升序或降序为搜索到的资产排序。默认情况下，根据 `Relevance` 为搜索到的资产排序。
 
 ## 管理自定义筛选条件 {#custom-filters}
 
@@ -69,19 +69,19 @@ Assets视图提供了以下自定义过滤器：
      </tr>
      <tr>
       <td>标题</td>
-      <td>使用资源标题筛选资源。您在区分大小写的搜索条件中指定的标题必须与要在结果中显示的资源的确切标题匹配。</td>
+      <td>使用资产标题筛选资产。您在区分大小写的搜索条件中指定的标题必须与要在结果中显示的资产的确切标题匹配。</td>
      </tr>
      <tr>
       <td>名称</td>
-      <td>使用资源文件名筛选资源。您在区分大小写的搜索条件中指定的名称必须与要在结果中显示的资源的确切文件名匹配。</td>
+      <td>使用资产文件名筛选资产。您在区分大小写的搜索条件中指定的名称必须与要在结果中显示的资产的确切文件名匹配。</td>
      </tr>
      <tr>
-      <td>资源大小</td>
-      <td>对于要显示在结果中的资源，通过在该资源的搜索条件中定义大小范围（以字节为单位）来筛选资源。</td>
+      <td>资产大小</td>
+      <td>对于要显示在结果中的资产，通过在该资产的搜索条件中定义大小范围（以字节为单位）来筛选资产。</td>
      </tr>
      <tr>
       <td>预测的标记</td>
-      <td>使用资源智能标记筛选资源。您在区分大小写的搜索条件中指定的智能标记名称必须与要在结果中显示的资源的确切智能标记名称匹配。无法在搜索条件中指定多个智能标记。</td>
+      <td>使用资产智能标记筛选资产。您在区分大小写的搜索条件中指定的智能标记名称必须与要在结果中显示的资产的确切智能标记名称匹配。无法在搜索条件中指定多个智能标记。</td>
      </tr>    
     </tbody>
    </table>
@@ -121,31 +121,31 @@ Assets视图提供了以下自定义过滤器：
 
 1. 单击&#x200B;**[!UICONTROL 确认]**&#x200B;以从用户界面中移除筛选条件。
 
-## 使用 [!DNL Adobe Firefly] 搜索资源 {#search-firefly}
+## 使用 [!DNL Adobe Firefly] 搜索资产 {#search-firefly}
 
-可利用 [!DNL Experience Manager Assets] 中的 [!DNL Adobe Firefly] 资源搜索功能搜索并非在任何资源文件夹中都有的资源。这样即可高效地实时生成未存储在资源文件夹中的资源。
+可利用 [!DNL Experience Manager Assets] 中的 [!DNL Adobe Firefly] 资产搜索功能搜索并非在任何资产文件夹中都有的资产。这样即可高效地实时生成未存储在资产文件夹中的资产。
 
 ### 开始之前 {#search-assets-firefly-prereqs}
 
 您必须具有活跃的 [!DNL Adobe Express] 订阅。
 
-### 生成资源 {#generate-assets-firefly}
+### 生成资产 {#generate-assets-firefly}
 
-要使用 [!DNL Adobe Firefly] 生成新资源，请执行以下操作：
+要使用 [!DNL Adobe Firefly] 生成新资产，请执行以下操作：
 
 1. 导航到 [!DNL AEM Assets] 工作区。
 
-1. 在搜索栏中键入资源名称。 例如，您可以使用关键字`Bugatti Type 57`搜索资产。 搜索资产时，由于资产不存在于任何资产文件夹中，因此未找到任何结果。 要使用AI生成资源，请单击&#x200B;**[!UICONTROL 使用Firefly生成]**。 出现[!DNL Adobe Firefly]屏幕。
+1. 在搜索栏中，键入资产名称。例如，可使用关键字 `Bugatti Type 57` 搜索某个资产。在搜索该资产时，由于任何资产文件夹中都不存在该资产，因此未找到任何结果。要使用 AI 生成资产，请点击&#x200B;**[!UICONTROL 使用 Firefly 生成]**。出现 [!DNL Adobe Firefly] 屏幕。
 
    ![Firefly 集成](assets/firefly-integration.png)
 
-   新资产生成成功。 此外，您还可以通过在描述框中键入新的文本提示来更改图像描述。 [了解如何编写良好的AI提示来生成非凡的相关内容。](https://helpx.adobe.com/in/firefly/using/tips-and-tricks.html)或者，您也可以[使用各种其他功能（如更改样式、图像尺寸等）编辑图像。](https://helpx.adobe.com/in/firefly/using/text-to-image.html)
+   成功生成了新资产。此外，您可以通过在描述框中键入新的文本提示来更改图像描述。[了解如何编写优质的 AI 提示来生成非凡且相关的内容。](https://helpx.adobe.com/cn/firefly/using/tips-and-tricks.html) 或者，您可以[使用各种其他功能（如更改样式、图像尺寸等）编辑图像。](https://helpx.adobe.com/cn/firefly/using/text-to-image.html)
 
    ![Firefly 集成](assets/bugatti-type-57.png)
 
-1. 选择要保存的图像。 单击&#x200B;**[!UICONTROL 保存]**&#x200B;将资源保存在首选文件夹中，以便轻松访问。
+1. 选择您想要保存的图像。单击&#x200B;**[!UICONTROL 保存]**&#x200B;将资产保存到您喜欢的文件夹中，以便于访问。
 
-1. 此时会显示保存资源表单。 指定以下字段：
+1. 出现“保存资产”表单。指定以下字段：
 
    * 在 **另存为** 字段中输入文件的名称。
    * 选择目标文件夹。
@@ -153,23 +153,23 @@ Assets视图提供了以下自定义过滤器：
 
    ![Firefly 集成](assets/save-generated-asset.png)
 
-1. 单击&#x200B;**另存为新资产**&#x200B;以保存资产。
+1. 点击&#x200B;**另存为新资产**&#x200B;以保存资产。
 
-### 上传资源 {#upload-assets-firefly}
+### 上传资产 {#upload-assets-firefly}
 
-要将生成的资源上传到资源存储库，请执行以下操作：
+要将生成的资产上传到资产存储库，请执行以下操作：
 
 1. 单击&#x200B;**[!UICONTROL 上传]**。
-1. 选择需要将资源上传到的资源文件夹，然后单击&#x200B;**[!UICONTROL 选择文件夹]**。
-   ![上传资源](assets/upload-asset-firefly.jpg)
+1. 选择需要将资产上传到的资产文件夹，然后单击&#x200B;**[!UICONTROL 选择文件夹]**。
+   ![上传资产](assets/upload-asset-firefly.jpg)
 
 ## 保存的搜索 {#saved-search}
 
-[!DNL Assets view] 中的搜索功能非常易于使用。在搜索框中，不能只键入关键字并按Return键来查看结果，还可以通过一次单击快速再次搜索最近搜索的关键字。
+[!DNL Assets view] 中的搜索功能非常易于使用。在搜索框中，您不仅可以输入关键词并按回车键来查看结果，而且只需单击一次即可快速重新搜索最近搜索过的关键词。
 
-您还可以根据有关元数据和资源类型的特定标准来筛选搜索结果。对于经常使用的筛选条件，为了改进搜索体验，[!DNL Assets view] 允许您保存搜索参数。以后，您可以选择保存的搜索来执行搜索，只需一次单击即可应用筛选条件。
+您还可以根据有关元数据和资产类型的特定标准来筛选搜索结果。对于经常使用的筛选条件，为了改进搜索体验，[!DNL Assets view] 允许您保存搜索参数。以后，您可以选择保存的搜索来执行搜索，只需一次单击即可应用筛选条件。
 
-要创建保存的搜索，请搜索一些资源，应用一个或多个筛选条件，然后在[!UICONTROL 筛选条件]面板中单击&#x200B;**[!UICONTROL 保存为]** > **[!UICONTROL 保存的搜索]**。还可单击&#x200B;**[!UICONTROL 另存为]**&#x200B;并选择&#x200B;**[!UICONTROL 智能收藏集]**&#x200B;以将结果另存为智能收藏集。有关详细信息，请参阅[创建智能收藏集](manage-collections.md#create-a-smart-collection)。
+要创建保存的搜索，请搜索一些资产，应用一个或多个筛选条件，然后在[!UICONTROL 筛选条件]面板中单击&#x200B;**[!UICONTROL 保存为]** > **[!UICONTROL 保存的搜索]**。还可单击&#x200B;**[!UICONTROL 另存为]**&#x200B;并选择&#x200B;**[!UICONTROL 智能收藏集]**&#x200B;以将结果另存为智能收藏集。有关详细信息，请参阅[创建智能收藏集](manage-collections.md#create-a-smart-collection)。
 
 ![创建智能收藏集](assets/create-smart-collection.png)
 
@@ -186,37 +186,37 @@ When userA is searching and userB add an asset that matches search results, will
 
 ## 使用搜索结果 {#work-with-search-results}
 
-选择在搜索结果中显示的资源后可执行以下操作：
+选择在搜索结果中显示的资产后可执行以下操作：
 
-* **查找类似图像**：在Assets UI中基于元数据和智能标记查找类似图像资源。
+* **查找相似的图像**：根据元数据和智能标记查找 Assets UI 中相似的图像资产。
 
-* **详细信息**：查看和编辑资源属性。
+* **详细信息**：查看和编辑资产属性。
 
-* **下载**：下载资源。
+* **下载**：下载资产。
 
-* **添加到收藏集**：将所选资源添加到收藏集。
+* **添加到收藏集**：将所选资产添加到收藏集。
 
-* **固定到快速访问**：[固定资源](my-workspace-assets-view.md)，以便在以后需要它时更快地访问。所有固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分中。
+* **固定到快速访问**：[固定资产](my-workspace-assets-view.md)，以便在以后需要它时更快地访问。所有固定的项目都显示在“我的工作区”的&#x200B;**快速访问**&#x200B;部分中。
 
 * **在 Adobe Express 中打开**：在 Experience Manager Assets 屏幕中集成的 Adobe Express 中编辑图像。
 
 * **编辑**：使用 Adobe Express 编辑图像。
 
-* **共享链接**：与其他用户[共享某个资源的链接](share-links-for-assets-view.md)，以使其可访问和下载该资源。
+* **共享链接**：与其他用户[共享某个资产的链接](share-links-for-assets-view.md)，以使其可访问和下载该资产。
 
-* **删除**：删除资源。
+* **删除**：删除资产。
 
-* **复制**：将资源复制到不同的文件夹位置。
+* **复制**：将资产复制到不同的文件夹位置。
 
-* **移动**：将资源移至不同的文件夹位置。
+* **移动**：将资产移至不同的文件夹位置。
 
-* **重命名**：重命名资源。
+* **重命名**：重命名资产。
 
 * **复制到库**：将资产添加到库。
 
-* **分配任务**：将任务分配给资源的用户。
+* **分配任务**：将任务分配给资产的用户。
 
-* **监视**：[监视对资源执行的操作](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/search-assets)。
+* **监视**：[监视对资产执行的操作](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/search-assets)。
 
 ## 配置搜索优先主页 {#configuring-search-first-homepage}
 
@@ -225,20 +225,20 @@ When userA is searching and userB add an asset that matches search results, will
 要配置搜索优先主页，请执行以下步骤：
 
 1. 前往&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 常规设置]**。
-1. 选择&#x200B;**[!UICONTROL 搜索优先]**。它会进一步打开搜索优先相关配置。 您可以设置主页的[对齐方式](#setting-alignment-search-bar)或[设置背景和徽标图像](#setting-background-image-and-logo)。
+1. 选择&#x200B;**[!UICONTROL 搜索优先]**。这会进一步打开搜索优先相关配置。您可以设置[对齐方式](#setting-alignment-search-bar)或主页的[背景和徽标图像](#setting-background-image-and-logo)。
 
 ### 设置搜索栏的对齐方式 {#setting-alignment-search-bar}
 
-[!DNL Assets view]允许您更改搜索栏的对齐方式。 您可以使搜索栏显示在中心或顶部。 选择适当的对齐方式并单击&#x200B;**[!UICONTROL 保存]**。
+[!DNL Assets view] 允许您更改搜索栏的对齐方式。您可以使搜索栏显示在中心或顶部。选择适当的对齐方式并单击&#x200B;**[!UICONTROL 保存]**。
 
 ![搜索优先首页对齐](assets/search-first-alignment.png)
 
 ### 设置首页背景和标志图像 {#setting-background-image-and-logo}
 
-您可以将品牌徽标和背景图像添加到您的搜索第一个主页。 执行以下步骤：
+您可以将品牌徽标和背景图像添加到搜索优先首页。执行以下步骤：
 
-1. 导航到&#x200B;**[!UICONTROL 主页]**&#x200B;下的&#x200B;**[!UICONTROL 背景和徽标图像]**&#x200B;部分。
-1. 单击&#x200B;**[!UICONTROL 替换]**&#x200B;浏览现有资源存储库中的图像。
+1. 前往&#x200B;**[!UICONTROL 主页]**&#x200B;下的&#x200B;**[!UICONTROL 背景和徽标图像]**&#x200B;部分。
+1. 单击&#x200B;**[!UICONTROL 替换]**&#x200B;可浏览现有资产存储库中的图像。
 1. 单击&#x200B;**[!UICONTROL 保存]**。[预览](#preview-configured-homepage)更改，以查看修改内容。
 
 ### 预览配置的主页 {#preview-configured-homepage}
@@ -246,7 +246,7 @@ When userA is searching and userB add an asset that matches search results, will
 您可以通过预览来检查搜索优先首页的布局和格式。使用&#x200B;**[!UICONTROL 预览]**，您可以修复布局或根据要求进行修改。要预览配置的主页，请执行以下步骤：
 
 1. 点击&#x200B;**[!UICONTROL 常规设置]**&#x200B;并选择&#x200B;**[!UICONTROL 搜索优先]**。
-1. 前往&#x200B;**[!UICONTROL 自定义搜索优先主页]**&#x200B;并点击&#x200B;**[!UICONTROL 预览]**。切换&#x200B;**[!UICONTROL 深色主题]**&#x200B;按钮，以深色或浅色主题预览主页。
+1. 前往&#x200B;**[!UICONTROL 自定义搜索优先主页]**&#x200B;并点击&#x200B;**[!UICONTROL 预览]**。通过&#x200B;**[!UICONTROL 深色主题]**&#x200B;按钮来进行切换，以深色或浅色主题预览主页。
 1. 单击&#x200B;**[!UICONTROL 关闭]**&#x200B;来关闭预览屏幕。
 
    ![搜索优先首页预览](/help/assets/assets/search-first-preview.gif)
@@ -311,7 +311,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 **示例 3**
 
-**文本提示**：我需要蓝天高度为1500和2500像素的图像，这些图像是在上个月创建的，尚未过期且已获得批准。
+**文本提示**：我需要上个月创建的高度为 1500 至 2500 像素的蓝天图像，并且图像未过期且已经获得批准。
 
 [!DNL Experience Manager Assets] 自动应用以下过滤器并显示搜索结果：
 

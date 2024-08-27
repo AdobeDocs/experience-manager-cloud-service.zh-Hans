@@ -17,8 +17,8 @@ ht-degree: 22%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 故障排除"
 >abstract="查看有关持续开发和管理日志的最佳实践，以及使用 Developer Console 和 CRXDE Lite 等工具帮助排除 AEM 的问题"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=zh-Hans" text="访问和管理日志"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hans#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 开发工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html#" text="访问和管理日志"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 开发工具"
 
 此历程是最后一部分，您将了解如何监测问题并在迁移完成后提高性能。 您应确保清理临时文件，审查持续开发的最佳实践并管理日志。
 

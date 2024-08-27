@@ -94,7 +94,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion_topup"
 >title="增补引入"
 >abstract="使用增补功能移动自上次内容转移活动以来修改的内容。引入完毕后，检查日志中是否有任何错误或警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=zh-Hans" text="查看日志"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html#" text="查看日志"
 
 内容传输工具具备允许通过执行迁移集的&#x200B;*增补*&#x200B;来提取差异内容的功能。 这样可修改迁移集，使其仅包含自上次提取以来已更改的内容，而无需再次提取所有内容。
 

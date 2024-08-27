@@ -19,7 +19,7 @@ ht-degree: 19%
 >id="aemcloud_ctt_extraction"
 >title="内容提取"
 >abstract="提取是指将内容从源 Adobe Experience Manager (AEM) 实例提取到称为迁移集的临时区域。迁移集是 Adobe 提供的一个云存储区域，用于临时存储在存储源 AEM 实例与云服务 AEM 实例之间转移的内容。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hans#top-up-extraction-process" text="增补提取"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="增补提取"
 
 
 请按照以下步骤从内容传输工具中提取迁移集：
