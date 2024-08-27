@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 47%
+ht-degree: 45%
 
 ---
 
@@ -50,7 +50,7 @@ AEM 可以自动调整您的现有站点以使用前端管道。若要执行此�
 
 {{add-cm-allowlist-frontend-pipeline}}
 
-使用[站点边栏](site-rail.md)从 Sites 控制台启用站点。
+使用[站点边栏](site-rail.md)从站点控制台启用您的站点。
 
 1. 登录 AEM，然后通过&#x200B;**全局导航** > **站点**&#x200B;来导航到您的站点。
 1. 在控制台中选择您的站点。选择站点的根，而不是任何子页面。
