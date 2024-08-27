@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
+source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
 workflow-type: tm+mt
 source-wordcount: '9406'
 ht-degree: 2%
@@ -143,7 +143,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * 配置视频播放器以满足您的品牌推广需求。
 * 将视频与简单URL或嵌入代码集成到您的网站、移动网站或移动应用程序。
 
-请参阅[动态视频播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)示例。
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 另请参阅[Experience Manager Assets查看器参考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)中的[Experience Manager Assets查看器和Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[仅用于Dynamic Media的查看器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
 
@@ -562,7 +562,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 ## 关于Dynamic Media中对视频的多个字幕和音轨支持{#about-msma}
 
-借助Dynamic Media中的多个字幕和音轨功能，您可以轻松地将多个字幕和音轨添加到主视频中。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
+借助Dynamic Media中的多个字幕和音轨功能，您可以轻松地将多个字幕和音轨添加到主视频中。 这项功能意味着您的视频可供全球受众访问。 您可以用多种语言为全球观众自定单一的、已发布的主视频，并遵守不同地区的可访问性指南。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
 ![Dynamic Media中的“字幕和音轨”选项卡，以及显示视频的上传.VTT字幕文件和上传.MP3音轨文件的表。](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
@@ -601,7 +601,7 @@ WebVTT和AdobeVTT格式支持添加的字幕和字幕。 此外，添加的MP3�
 1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。
 1. 在工具栏上，选择“属性”图标（一个带有“i”的圆形）。
 
-   ![资源属性按钮。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*在卡片视图中选择了视频资产。*
+   ![资源属性按钮。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*在卡片视图中选择的视频资产。*
 
 1. 在视频的“属性”页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
 
@@ -609,7 +609,7 @@ WebVTT和AdobeVTT格式支持添加的字幕和字幕。 此外，添加的MP3�
    >[!TIP]
    >如果您看不到[!UICONTROL 字幕和音轨]选项卡，则表示以下两种情况之一：
    >* 所选视频所在的文件夹没有分配视频配置文件。 在这种情况下，请参阅[将视频配置文件应用到文件夹](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* 或者，视频必须由Dynamic Media重新处理。 在这种情况下，请参阅[重新处理文件夹](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的Dynamic Media资源。
+   >* 或者，Dynamic Media必须重新处理视频。 在这种情况下，请参阅[重新处理文件夹](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的Dynamic Media资源。
 
    完成以上任一任务后，请返回这些步骤。
 
@@ -618,7 +618,7 @@ WebVTT和AdobeVTT格式支持添加的字幕和字幕。 此外，添加的MP3�
 1. （可选）要将一个或多个字幕文件添加到视频，请执行以下操作：
 
    * 选择&#x200B;**[!UICONTROL 上传字幕]**。
-   * 导航到一个或多个.vtt（视频字幕）文件并将其打开。
+   * 导航到一个或多个`.vtt` （视频字幕）文件并将其打开。
    * 要使字幕在媒体播放器上可见，您必须添加有关您上传的每个字幕文件的所需详细信息（元数据）。 选择题注文件名右侧的铅笔图标。 在“编辑标题”对话框中，输入以下有关文件的所需详细信息，然后选择&#x200B;**[!UICONTROL 保存]**。 为您上传的每个字幕文件重复此过程：
 
 
@@ -626,7 +626,7 @@ WebVTT和AdobeVTT格式支持添加的字幕和字幕。 此外，添加的MP3�
    | --- | --- | 
    | 文件名 | 默认文件名是从原始文件名派生的。 只能在上传时更改文件名，以后不能更改。 文件名字符要求与AEM Assets相同。<br>不能将同一文件名用于其他字幕文件和音轨文件。 |
    | 语言 | 选择题注的语言。 |
-   | 类型 | 选择您正在使用的字幕类型。<br>**子标题** — 与翻译或转录此对话框的视频一起显示的标题文本。<br>**字幕** — 字幕文本还包含背景噪音、说话人辨别和其他相关信息，以及对话的翻译或转录，使耳聋或听力缺佳的人更容易访问内容。 |
+   | 类型 | 选择您正在使用的字幕类型。<br>**子标题** — 与翻译或转录此对话框的视频一起显示的标题文本。<br>**字幕** — 字幕文本包含背景噪音和说话人识别。 它还包括其他相关的细节以及对话的翻译或转录。 此功能使耳聋或听力缺佳的个人更容易访问内容。 |
    | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如，英语(CC)。 |
 
    您可以稍后更改或编辑字幕元数据（如有必要）。 发布视频时，这些详细信息会反映在已发布视频的公共URL上。
@@ -635,7 +635,7 @@ WebVTT和AdobeVTT格式支持添加的字幕和字幕。 此外，添加的MP3�
 
    * 选择&#x200B;**[!UICONTROL 上传音轨]**。
    * 导航到一个或多个.mp3文件并将其打开。
-   * 要使音轨显示在媒体播放器上的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中，您必须添加有关您添加的每个音轨文件的所需详细信息。 选择音轨文件名右侧的铅笔图标。 在“编辑音轨”对话框中，输入以下所需的详细信息，然后选择&#x200B;**[!UICONTROL 保存]**。 对您上传的每个音频轨道文件重复此过程。
+   * 若要使音轨在媒体播放器上的&#x200B;**[!UICONTROL 选择音频或标题]**&#x200B;弹出列表中可见，请为每个音轨文件添加所需的详细信息。 确保包含正确显示所需的所有信息。 选择音轨文件名右侧的铅笔图标。 在“编辑音轨”对话框中，输入以下所需的详细信息，然后选择&#x200B;**[!UICONTROL 保存]**。 对您上传的每个音频轨道文件重复此过程。
 
    | 音轨元数据 | 描述 |
    | --- | --- |
@@ -931,7 +931,7 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 1. 在右上角，选择&#x200B;**[!UICONTROL 保存并关闭]**。
 1. Publish视频。 查看[Publish资源](publishing-dynamicmedia-assets.md)。
 
-### 预览具有多个字幕和音频轨道的视频{#preview-video-audio-subtitle}
+### 预览具有多个字幕和音频轨道的视频 {#preview-video-audio-subtitle}
 
 将字幕文件和音轨文件上传到视频并进行处理后，您可以使用Dynamic Media视频查看器预览所有不同的音轨。 这样做有助于您了解视频在客户心目中的外观和声音，并确保视频按预期运行。
 
@@ -993,7 +993,7 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 
 **用例：**&#x200B;如果在`.vtt`文件中发现错误，则可能需要下载字幕文件。 只需下载不正确的`.vtt`文件，在纯文本编辑器中打开它，然后进行更正。 保存`.vtt`文件后，再次上传。 然后，使用&#x200B;**[!UICONTROL 翻译字幕]**&#x200B;选项重新翻译更正的`.vtt`文件。
 
-**若要从视频下载字幕或音轨文件：**
+**要下载上载到视频的字幕或音轨文件：**
 
 1. 导航到要设置其默认音频轨道的视频资产。
 1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。

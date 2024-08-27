@@ -1,15 +1,17 @@
 ---
-title: 购物车和Dispatcher设置
-description: 购物车和Dispatcher设置
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+title: 购物车和 Dispatcher 设置
+description: 购物车和 Dispatcher 设置
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 1%
+ht-degree: 18%
 
 ---
 
 
-# 购物车和Dispatcher设置
+# 购物车和 Dispatcher 设置
 
 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)附带开箱即用的[购物车](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)，可呈现购物车和结帐表单。 购物车需要具有GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher)路由设置的[AEM Dispatcher。 以下视频详细介绍使用Docker映像进行的本地配置和设置。
 
