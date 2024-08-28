@@ -4,7 +4,7 @@ description: 了解如何从源Adobe Experience Manager (AEM)实例提取内容�
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 19%
@@ -41,7 +41,7 @@ ht-degree: 19%
 
 1. 此时会显示“提取”对话框。 单击&#x200B;**提取**&#x200B;开始提取阶段。
 
-   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >您可以选择在提取阶段覆盖暂存容器。 如果禁用&#x200B;**覆盖暂存容器**，它可以加快内容路径或包含版本设置未更改的后续迁移的提取。 但是，如果内容路径或包含版本设置已更改，则应启用&#x200B;**覆盖暂存容器**。

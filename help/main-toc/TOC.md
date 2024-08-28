@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
 workflow-type: tm+mt
-source-wordcount: '5478'
+source-wordcount: '5481'
 ht-degree: 97%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 97%
       + [创建环境](/help/journey-onboarding/create-environments.md)
       + [分配 AEM 产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)
       + [开发人员和部署管理器任务](/help/journey-onboarding/developers.md)
+      + [管理主体](/help/journey-migration/managing-principals.md)
       + [AEM 用户任务](/help/journey-onboarding/aem-users.md)
       + [上线清单](/help/journey-onboarding/go-live-checklist.md)
    + AEM 参考演示加载项历程 {#demo-add-on}
@@ -276,13 +277,14 @@ ht-degree: 97%
          + [验证内容转移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [组迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
          + [从源中提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [将内容提取到云服务中](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [迁移内容后建立索引](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
          + [查看迁移集的日志](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [删除迁移集](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [在发布实例上运行内容转移工具](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
+         + [迁移后管理主体](/help/journey-migration/managing-principals-after-migration.md)
          + [内容转移工具疑难解答](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
          + 旧版用户映射工具（旧版）{#legacy-user-mapping-tool}
             + [概述](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)

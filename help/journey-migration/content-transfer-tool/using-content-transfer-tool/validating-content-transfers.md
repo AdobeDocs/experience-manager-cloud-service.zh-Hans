@@ -4,12 +4,13 @@ description: 使用内容传输工具验证内容传输
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 2%
+source-wordcount: '1189'
+ht-degree: 1%
 
 ---
+
 
 # 验证内容转移 {#validating-content-transfers}
 
@@ -134,23 +135,28 @@ Migration validation took 0 minutes
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## 如何验证主体迁移 {#how-to-validate-principal-migration}
+## 如何验证主体迁移 {#how-to-validate-group-migration}
 
-请参阅[用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)，以读取主体迁移的详细信息以及为什么需要这样做。
+请参阅[组迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)以了解主体迁移的详细信息以及为什么需要这样做。
 
-成功完成提取和引入后，即可使用主体迁移的摘要和报告。 此信息可用于验证哪些用户和组已成功迁移，也许还可用于确定为什么有些用户和组没有迁移。
+成功完成提取和引入后，即可使用主体迁移的摘要和报告。 此信息可用于验证哪些组已成功迁移，也可用于确定为什么有些组没有迁移。
 
 要查看此信息，请转到Cloud Acceleration Manager。 单击项目信息卡，然后单击内容传输信息卡。 导航到&#x200B;**引入作业**，并找到要验证的引入。 单击该摄取的三个圆点(**...**)，然后在下拉列表中单击&#x200B;**查看主体摘要**。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-您会看到一个包含摘要信息的对话框。 使用帮助图标阅读更完整的说明。 单击&#x200B;**下载报表**&#x200B;按钮可下载完整的逗号分隔(CSV)报表。
+您会看到一个包含摘要信息的对话框。 使用帮助图标阅读更完整的说明。 单击&#x200B;**下载报表**&#x200B;按钮可下载完整的逗号分隔(CSV)报表。  另请注意，此报表末尾是用户报表，可用于迁移后的用户管理。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->如果禁用了用户映射，则会显示此对话框的另一个变体。 它将指示用户映射已被禁用，并且不会显示给出用户映射值的3个字段。
+“Principal Migration”报告将报告：
+
+* 每个组都已迁移，并且是第一个触发该组迁移的内容路径；该组可能还位于其他路径上，但只报告为给定组找到的第一个路径。 它还会报告是否在ACL或CUG策略中找到它。
+* 每个组均未迁移，以及未迁移的原因。  通常，这可能是以下原因之一：
+   * 它是一个内置组
+   * 已在目标系统上
+   * 它不在正在迁移的内容的ACL或CUG策略中
+   * 它有一个重复的唯一字段（rep：principalName、rep：authorizableId、jcr：uuid或rep：externalId中的一个已在目标上，但所有这些字段都必须是唯一的）
 
 ## 疑难解答 {#troubleshooting}
 
@@ -166,6 +172,6 @@ Migration validation took 0 minutes
 
 我们当前从摘要中排除的路径包括： `cqdam.text.txt`演绎版、`/home`中的节点和`/jcr:system`中的节点。
 
-### 封闭用户组无法正常运行 {#validating-cugs}
+### 已关闭的用户组 {#validating-cugs}
 
 有关使用封闭用户组(CUG)策略时的额外注意事项，请参阅[迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)。

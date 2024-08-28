@@ -4,12 +4,13 @@ description: 了解使用内容传输工具的准则和最佳实践。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 15%
+source-wordcount: '1368'
+ht-degree: 14%
 
 ---
+
 
 # 使用内容传输工具的准则和最佳实践 {#guidelines}
 
@@ -22,32 +23,32 @@ ht-degree: 15%
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users" 
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
 
-已提供新版本的内容传输工具，它将内容传输过程与 Cloud Acceleration Manager 集成。强烈建议切换到此新版本以使用它提供的所有好处：
+内容传输工具将内容传输过程与Cloud Acceleration Manager集成在一起。 使用此版本（2.0或更高版本，但现在建议使用版本3.0）才能获得它提供的所有好处：
 
 * 一次性提取迁移集并将它并行摄取到多个环境中的自助方式
 * 通过更好的加载状态、护栏和错误处理来改善用户体验
 * 摄取日志将保留，并且始终可用于进行故障排除
 
-要开始使用新版本，请卸载旧版本的内容传输工具。 之所以需要，是因为新版本带来了重大的架构变化。 使用版本2.x，您可以创建迁移集，并对迁移集重新运行提取和摄取。
+要开始使用最新版本，请卸载旧版内容传输工具。 使用版本2.0及更高版本，您可以创建迁移集，并对迁移集重新运行提取和摄取。
 不支持低于2.0.0的版本，建议您使用最新版本。
 
 以下准则和最佳实践适用于内容传输工具的新版本：
 
 * 对&#x200B;**源**&#x200B;存储库运行[修订清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)和[数据存储一致性检查](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html)，以便识别潜在问题并降低存储库的大小。
 
-* 在摄取阶段，Adobe建议您在删除目标Adobe Experience Manager (AEM)Cloud Service环境中的现有存储库（创作或发布）的情况下使用启用的&#x200B;*划出*&#x200B;模式来运行摄取。 然后，使用迁移集数据更新。 此模式比非划出模式更快，在非划出模式下，迁移集将应用于当前内容的顶部。
+* 在摄取阶段，Adobe建议您在删除目标Adobe Experience Manager (AEM)Cloud Service环境中的现有存储库(创作或Publish)的情况下启用&#x200B;*划出*&#x200B;模式来运行摄取。 然后，使用迁移集数据更新。 此模式比非划出模式更快，在非划出模式下，迁移集将应用于当前内容的顶部。
 
 * 内容传输活动完成后，需要在云服务环境中使用正确的项目结构，才能确保内容在云服务环境中成功呈现。
 
 * 运行内容传输工具之前，必须确保源 AEM 实例的 `crx-quickstart` 子目录中有足够的磁盘空间。这是因为内容传输工具会创建存储库的本地副本，以便稍后将其上传到迁移集。计算所需可用磁盘空间的一般公式如下：
   `data store size + node store size * 1.5`
 
-   * *数据存储大小*：内容传输工具使用 64 GB，即使实际数据存储更大也是如此。
-   * *节点存储大小*：区段存储目录大小或 MongoDB 数据库大小。因此，对于 20 GB 的区段存储大小，所需的可用磁盘空间将为 94 GB。
+* *数据存储大小*：内容传输工具使用 64 GB，即使实际数据存储更大也是如此。
+* *节点存储大小*：区段存储目录大小或 MongoDB 数据库大小。因此，对于 20 GB 的区段存储大小，所需的可用磁盘空间将为 94 GB。
 
 * 必须在整个内容传输活动中维护迁移集，以支持内容增补。 在内容传输活动期间，Cloud Acceleration Manager中一次最多可以为每个项目创建和维护20个迁移集。 如果需要超过20个迁移集，请在Cloud Acceleration Manager中创建第二个项目。 但是，这需要额外的项目管理和产品外管理，以避免多个用户覆盖Target上的内容。
 
@@ -75,11 +76,11 @@ ht-degree: 15%
 
 * 在将内容从源实例传输到目标实例之前，内容传输工具(CTT)不执行任何类型的内容分析。 例如，将内容摄取到Publish环境中时，CTT不区分已发布和未发布的内容。 迁移集中指定的任何内容都将摄取到所选的目标实例中。 用户可以将迁移集摄取到创作实例或Publish实例，或同时摄取两者。 Adobe建议在将内容移动到生产实例时，在源创作实例上安装CTT以将内容移动到目标创作实例。 同样，在源Publish实例上安装CTT以将内容移动到目标Publish实例。 有关更多详细信息，请参阅[在Publish实例上运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
 
-* 内容传输工具传输的用户和组只是内容满足权限要求的用户和组。 _提取_&#x200B;进程将整个`/home`复制到迁移集中，并通过添加从每个用户的电子邮件地址创建的字段来进行用户映射。 有关详细信息，请参阅[用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。 _摄取_&#x200B;进程将复制迁移的内容ACL中引用的所有用户和组。 有关在封闭用户组(CUG)策略中使用的组的额外注意事项，请参阅[迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)。
+* 内容传输工具传输的组只是内容为满足权限所需的组。 _提取_&#x200B;进程将整个`/home/groups`复制到迁移集中。 有关详细信息，请参阅[组迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。 _摄取_&#x200B;进程复制迁移的内容ACL中引用的所有组。 有关在封闭用户组(CUG)策略中使用的组的额外注意事项，请参阅[迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)。
 
 * 在提取阶段，内容传输工具将在活动 AEM 源实例上执行。
 
-* 作者的&#x200B;*摄取阶段*&#x200B;缩小了整个作者部署。 这意味着创作的AEM在整个摄取过程中不可用。 同时确保在运行&#x200B;*摄取*&#x200B;阶段时没有执行Cloud Manager管道。
+* 作者的&#x200B;*摄取阶段*&#x200B;缩小了整个作者部署。 这意味着创作AEM在整个摄取过程中不可用。 同时确保在运行&#x200B;*摄取*&#x200B;阶段时没有执行Cloud Manager管道。
 
 * 使用`Amazon S3`或`Azure`作为源AEM系统上的数据存储时，应配置数据存储以便不能删除存储的Blob（垃圾收集）。 这将确保索引数据的完整性，如果未能按此方式进行配置，则可能会导致因此索引数据缺乏完整性而导致提取失败。
 

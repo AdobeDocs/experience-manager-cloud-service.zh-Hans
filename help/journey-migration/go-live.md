@@ -4,9 +4,9 @@ description: 了解在代码和内容准备就绪后，如何执行迁移
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1223'
 ht-degree: 3%
 
 ---
@@ -101,7 +101,6 @@ ht-degree: 3%
 
 * 名称长度超过150个字符的JCR节点
 * 大于16 MB的JCR节点
-* AEM as a Cloud Service上已存在任何已摄取`rep:AuthorizableID`的用户/组
 * 如果提取并引入的任何资源在迁移的下一次迭代之前移动到源或目标上的不同路径。
 
 ## 资产运行状况 {#asset-health}
@@ -119,4 +118,4 @@ ht-degree: 3%
 
 ## 后续内容 {#what-is-next}
 
-了解如何迁移到AEM as a Cloud Service后，您可以检查[Post-Go-Live](/help/journey-migration/post-go-live.md)页面以保持实例平稳运行。
+了解如何迁移到AEM as a Cloud Service后，您可以检查[上线后](/help/journey-migration/post-go-live.md)页面以保持实例平稳运行。

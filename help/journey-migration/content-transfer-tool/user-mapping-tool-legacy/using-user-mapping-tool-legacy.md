@@ -6,18 +6,19 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
+
 
 # 使用用户映射工具（旧版） {#using-user-mapping-tool}
 
 >[!INFO]
 >
->本文档参考该工具的已弃用版本。 有关最新版本的更多信息，请参阅[用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
+>本文档参考该工具的已弃用版本。 有关最新版本的更多信息，请参阅[组迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
 
 用户映射工具使用的API允许其通过电子邮件查找AdobeIdentity Management System (IMS)用户并返回其IMS ID。 此API要求用户为其组织创建客户端ID、客户端密钥以及访问或持有者令牌。
 

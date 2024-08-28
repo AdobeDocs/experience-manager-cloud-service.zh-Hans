@@ -4,10 +4,10 @@ description: 了解如何监测问题并提高性能
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 22%
+ht-degree: 16%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 22%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 故障排除"
->abstract="查看有关持续开发和管理日志的最佳实践，以及使用 Developer Console 和 CRXDE Lite 等工具帮助排除 AEM 的问题"
+>abstract="审查持续开发的最佳实践并管理日志，以及开发人员控制台和CRXDE Lite等工具，以帮助对AEM问题进行故障诊断"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html#" text="访问和管理日志"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 开发工具"
 

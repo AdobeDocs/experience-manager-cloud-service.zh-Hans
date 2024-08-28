@@ -4,24 +4,25 @@ description: 了解如何使用内容传输工具将内容从内部部署AEM实�
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
+source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 52%
+source-wordcount: '612'
+ht-degree: 55%
 
 ---
+
 
 # 概述 {#overview-content-transfer-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概述"
->abstract="内容传输工具是 Adobe 开发的一个工具，可用于启动从源 AEM 实例（内部部署或 AMS）到目标 AEM Cloud Service 实例的现有内容迁移。此工具还会自动传输主体（用户或组）。"
+>abstract="内容传输工具是 Adobe 开发的一个工具，可用于启动从源 AEM 实例（内部部署或 AMS）到目标 AEM Cloud Service 实例的现有内容迁移。此工具还会自动传输组。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="准则和最佳实践"
 
 内容传输工具是由Adobe开发的工具，可用于启动将现有内容从源AEM实例（内部部署或AMS）迁移到目标AEM Cloud Service实例。
 
-此工具还会自动传输主体（用户或组）。  有关详细信息，请参阅[用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
+此工具还会自动传输组。  有关详细信息，请参阅[组迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
 
 内容传输工具将内容传输过程与Cloud Acceleration Manager集成在一起。 这使用户能够获得它提供的所有好处：
 
@@ -37,9 +38,6 @@ ht-degree: 52%
 1. **提取**：提取是指将内容从源 AEM 实例提取到称为&#x200B;*迁移集*&#x200B;的临时区域。*迁移集*&#x200B;是 Adobe 提供的云存储区域，用于临时存储源 AEM 实例和云服务 AEM 实例之间的传输内容。
 
    有关详细信息，请参阅内容传输中的[提取流程](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
-
-   >[!NOTE]
-   >现在，用户映射将作为作者提取阶段的一部分自动运行（但可以选择在作者上禁用或在发布上启用）。 有关详细信息，请参阅[用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
 
 1. **摄取**：摄取是指将内容从&#x200B;*迁移集*&#x200B;摄取到目标云服务实例。
 
@@ -78,7 +76,6 @@ ht-degree: 52%
 可以在“迁移集”行上监视迁移集的到期情况。 此外，还添加了项目的信息卡，这是一个有用的视觉标志，表明迁移集即将到期。
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
-
 
 ## 后续内容 {#whats-next}
 

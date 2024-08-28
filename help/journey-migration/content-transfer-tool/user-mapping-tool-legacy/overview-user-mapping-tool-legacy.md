@@ -6,18 +6,19 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '289'
 ht-degree: 21%
 
 ---
+
 
 # 用户映射工具（旧版）概述 {#overview-user-mapping-tool}
 
 >[!INFO]
 >
->本文档参考该工具的已弃用版本。 有关最新版本的更多信息，请参阅[用户映射和主体迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)。
+>本文档参考该工具的已弃用版本。 有关最新版本的更多信息，请参阅[组迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
 
 <!-- Alexandru: drafting this for now
 
