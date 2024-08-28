@@ -4,10 +4,10 @@ description: 了解如何使用实时监控(RUM)实时捕获和分析网站或�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8ccef0103ae7fb75171431eeb36f7352f6467d56
+source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 0%
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 >[!INFO]
 >
->客户端监视仅适用于具有AEM Cloud Service版本&#x200B;**2024.5.16461**&#x200B;及更高版本的客户。
+>客户端监视仅适用于具有AEM (Adobe Experience Manager)Cloud Service版本&#x200B;**2024.5.16461**&#x200B;及更高版本的客户。
 
 ## 概述 {#overview}
 
-实时监控(RUM)服务是一种性能监控技术，可实时捕获和分析网站或应用程序的数字用户体验。 它提供了对Web应用程序实时性能的可视性，并提供了对最终用户体验的更深入洞察。 此服务侧重于通过监控网站参与来优化性能，而不是通过监控用户本身。
+RUM（实时监控）服务是一种性能监控技术，可实时捕获和分析网站或应用程序的数字用户体验。 它提供了对Web应用程序实时性能的可视性，并提供了对最终用户体验的更深入洞察。 此服务侧重于通过监控网站参与来优化性能，而不是通过监控用户本身。
 
 使用RUM时，会从URL启动开始一直跟踪关键性能指标，直到将请求发送回浏览器为止。 它有助于开发人员增强应用程序，使其易于最终用户使用。
 
@@ -33,9 +33,8 @@ ht-degree: 0%
 
 ## 谁可以从实际使用监控服务中受益？ {#who-can-benefit-from-rum-service}
 
-Real Use Monitoring服务对所有客户都有好处。 它提供了用户交互的有代表性的反映方式，通过捕获客户端页面查看次数来确保可靠衡量网站参与度。
+AEM开发了RUM以帮助客户和Adobe了解访客如何与AEM站点进行交互。 RUM可用于帮助诊断性能问题以及衡量实验的有效性。 RUM通过取样保护访客的隐私 — 仅监控所有页面查看中的一小部分 — 并且不收集任何个人身份信息(PII)。
 
-对于所有Adobe客户，此服务提供了有关用户交互的有价值见解。 使用自己CDN的客户可以从简化的流量报表中受益，因为Adobe现在直接集成了数据收集，从而无需在续订周期期间单独显示报表。
 
 ## 了解实际使用情况监控服务的工作方式 {#understand-how-the-rum-service-works}
 
@@ -110,7 +109,7 @@ RUM数据有利于以下目的：
 
 1. **我的网站上阻止了`/.rum`路径，我应该如何修复？**
 
-   需要`/.rum`路径才能使RUM集合正常工作。 如果您的CDN位于AEM as a Cloud Service中提供的Adobe之前，请确保`/.rum`路径转发到与其他AEM内容相同的AEM源。 并且，确保不会以任何方式对其进行调整。
+   需要`/.rum`路径才能使RUM集合正常工作。 如果您在Adobe的AEM as a Cloud Service之前使用CDN，请确保`/.rum`路径转发到与其他AEM内容相同的AEM源。 并且，确保不会以任何方式对其进行调整。
 
 1. **RUM集合是否计入合同目的的内容请求？**
 
