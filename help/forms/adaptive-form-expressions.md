@@ -1,7 +1,11 @@
 ---
 title: 什么是自适应表单表达式？
 description: 使用自适应Forms表达式可添加自动验证、计算以及打开或关闭部分的可见性。
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 0%

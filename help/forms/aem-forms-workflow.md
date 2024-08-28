@@ -4,9 +4,13 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: 使用AEM Forms Workflow自动化并快速构建业务流程工作流。 例如，审阅和批准、PDF生成、Adobe Sign工作流程。
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Adaptive Forms
+role: User, Developer
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2335'
 ht-degree: 1%
 
 ---
@@ -197,7 +201,7 @@ AEM提供了一个直观的用户界面，用于使用提供的工作流步骤�
 
 ### 从AEM收件箱提交应用程序 {#inbox}
 
-您创建的工作流应用程序可用作收件箱中的应用程序。 属于[!DNL workflow-users]组成员的用户可以填写并提交触发相关工作流的应用程序。 有关使用AEM收件箱提交应用程序和管理任务的信息，请参阅[在AEM收件箱中管理Forms应用程序和任务](manage-applications-/help/sites-cloud/authoring/inbox.md)。
+您创建的工作流应用程序可用作收件箱中的应用程序。 属于[!DNL workflow-users]组成员的用户可以填写并提交触发相关工作流的应用程序。
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -270,9 +274,3 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### 清除工作流实例 {#purge-workflow-instances}
 
 最大限度地减少工作流实例的数量可以提高工作流引擎的性能，因此您可以定期从存储库中清除已完成或正在运行的工作流实例。 有关详细信息，请参阅[定期清除工作流实例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=zh-Hans)清除工作流实例
-
-
->[!MORELIKETHIS]
->
->* [使用AEM翻译工作流本地化自适应Forms和记录文档](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* 以Forms为中心的AEM工作流中的[变量](/help/forms/variable-in-aem-workflows.md)

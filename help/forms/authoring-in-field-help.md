@@ -3,10 +3,13 @@ title: 如何为AEM自适应Forms字段添加帮助文本？
 description: AEM Forms允许您将上下文帮助作为文本或富媒体（包括视频）添加到自适应表单字段和面板。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -64,8 +67,3 @@ ht-degree: 0%
 添加面板的帮助是否显示&#x200B;**？面板描述旁边的**&#x200B;图标。 单击图标将显示在面板编辑对话框的“帮助内容”部分中添加的内容。
 
 ![表单面板级别](assets/photoshop-1.png)的上下文帮助示例
-
->[!MORELIKETHIS]
->
->* [将占位符文本添加到表单字段](/help/forms/placeholder-text-in-aem-forms.md)
->* [将脚注添加到富文本自适应表单](/help/forms/footnotes-richtextsupport.md)

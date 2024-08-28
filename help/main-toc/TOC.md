@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
-workflow-type: ht
-source-wordcount: '5348'
-ht-degree: 100%
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+workflow-type: tm+mt
+source-wordcount: '5478'
+ht-degree: 97%
 
 ---
 
@@ -681,6 +681,7 @@ ht-degree: 100%
          + [创建表单数据模型](/help/forms/create-form-data-models.md)
          + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
+         + [为自适应表单设计XML架构](/help/forms/adaptive-form-xml-schema-form-model.md)
    + 自适应表单 {#adaptive-forms-authoring}
       + [创建自适应表单](/help/forms/create-an-adaptive-form.md)
       + [创建自适应表单片段](/help/forms/adaptive-form-fragments.md)
@@ -730,12 +731,17 @@ ht-degree: 100%
             + [审阅并修正转换后的表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-hans#welcome-to-review-and-correct-editor)
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [自适应表单创作简介](/help/forms/introduction-forms-authoring.md)
+            + [为表单字段创作上下文帮助](/help/forms/authoring-in-field-help.md)
             + [创建自适应表单](/help/forms/creating-adaptive-form.md)
             + [参考主题、模板和数据模型](/help/forms/reference-themes-templates-data-models.md)
             + [创建模板](/help/forms/template-editor.md)
             + [创建主题](/help/forms/themes.md)
+            + [引用自适应表单片段](/help/forms/reference-adaptive-form-fragments.md)
+            + [将自适应Forms与XFA表单模板同步](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [在基于XDP的自适应Forms中支持XFA](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)
             + [使用延迟加载改进大型表单的性能](/help/forms/lazy-loading-adaptive-forms.md)
+            + [发布和取消发布表单和文档](/help/forms/publishing-unpublishing-forms.md)
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
             + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
             + [在自适应表单中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -748,10 +754,15 @@ ht-degree: 100%
             + [设置自适应表单的版面](/help/forms/layout-capabilities-adaptive-forms.md)
             + [使用版面模式调整组件大小](/help/forms/resize-using-layout-mode.md)
             + [创建多步骤数据捕获体验](/help/forms/introduction-form-sequence.md)
+            + [自适应Forms的样式结构](/help/forms/styling-constructs-adaptive-forms.md)
             + [将内联 CSS 样式应用于各个自适应表单组件](/help/forms/inline-style-adaptive-forms.md)
+            + [如何在自适应Forms中使用分隔符组件？](/help/forms/separator-component-in-adaptive-forms.md)
          + 在自适应表单中添加规则和使用表达式 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [将规则添加到自适应表单](/help/forms/rule-editor.md)
             + [使用规则编辑器的调用服务添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms.md)
+            + [向选定的用户组授予对规则编辑器的访问权限](/help/forms/rule-editor-access-user-groups.md)
+            + [在自适应Forms中使用SOM表达式](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [自适应表单表达式](/help/forms/adaptive-form-expressions.md)
          + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
             + [使用 Adobe Sign 对自适应表单进行电子签名](/help/forms/working-with-adobe-sign.md)
          + 配置提交操作和元数据提交 {#configure-submit-actions-and-metadata-submission}
@@ -759,6 +770,8 @@ ht-degree: 100%
             + [配置重定向页面](/help/forms/configuring-redirect-page.md)
             + [为自适应表单配置异步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [创建自定义提交操作](/help/forms/custom-submit-action-form.md)
+            + [将用户数据中的信息添加到表单提交元数据](/help/forms/form-submission-metadata.md)
+            + [用于从自适应Forms调用表单数据模型(FDM)服务的API](/help/forms/invoke-form-data-model-services.md)
          + [预填自适应表单字段](/help/forms/prepopulate-adaptive-form-fields.md)
          + [生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [将对新区域设置的支持添加到自适应表单](/help/forms/supporting-new-language-localization.md)
@@ -769,11 +782,16 @@ ht-degree: 100%
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
          + [创建和管理评论](/help/forms/create-reviews-forms.md)
+         + [将提交审核者与表单关联](/help/forms/adding-reviewers-form.md)
+         + [创建和管理自适应表单审核](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [自适应表单关键字](/help/forms/adaptive-forms-keywords.md)
       + [预览表单](/help/forms/previewing-forms.md)
    + 以表单为中心的工作流程 {#create-form-centric-workflows}
+      + [以Forms为中心的工作流简介](/help/forms/aem-forms-workflow.md)
       + [在工作流程中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以表单为中心的工作流程中使用变体](/help/forms/variable-in-aem-workflows.md)
+      + [AEM Workflow中的动态用户或组选择](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+      + [在AEM收件箱中管理Forms应用程序和任务](/help/forms/manage-applications-inbox.md)
       + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
    + 通信 API {#using-communications}
       + [通信 API 简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -781,6 +799,7 @@ ht-degree: 100%
       + [Communications API – 成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [使用 Forms Designer 创建模板](/help/forms/use-forms-designer.md)
+      + [在Designer中更改零页内容](/help/forms/changing-page-zero-content-designer.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [PDF 文档中支持的字体列表](/help/forms/supported-out-of-the-box-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
@@ -926,6 +945,7 @@ ht-degree: 100%
          + [将选项从 URL 加载到表单](/help/edge/docs/forms/load-options-from-url.md)
          + [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [使用规则向表单添加动态行为](/help/edge/docs/forms/rules-forms.md)
+         + [验证的正则表达式](/help/edge/docs/forms/regex-forms.md)
          + [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表单片段](/help/edge/docs/forms/form-fragments.md)

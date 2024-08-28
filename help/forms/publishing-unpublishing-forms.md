@@ -4,8 +4,11 @@ description: 安排自适应Forms的发布和取消发布。 发布的表单将�
 content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
-docset: aem65s
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+feature: Adaptive Forms
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 0%

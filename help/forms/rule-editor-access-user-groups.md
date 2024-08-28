@@ -4,7 +4,9 @@ description: 有多种不同类型的用户具有不同的技能来使用自适�
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+hide: true
+hidefromtoc: true
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
