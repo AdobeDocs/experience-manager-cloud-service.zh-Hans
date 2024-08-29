@@ -3,7 +3,7 @@ title: 如何使用Forms Portal组件在Adobe Experience Manager Sites页面上�
 description: 了解如何在AEM Sites页面上列出表单。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Forms Portal的&#x200B;**搜索和列表程序**&#x200B;组件允许您在Sites页面上显示和列出表单。 用户可以根据特定标准配置和提供全面的表单列表，以满足组织要求。 匿名用户可以访问Sites页面以查看和浏览可用表单。 使用位于屏幕右上角的&#x200B;**排序依据**&#x200B;下拉选项，可以按升序或降序对列出的表单进行排序。
 
-![搜索和列表程序图标](assets/search-and-lister-component.png){width="250" align="center"}
+![搜索和列表程序图标](assets/search-and-lister-component.png)
 
 ## 先决条件
 
@@ -58,11 +58,11 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 1. 以&#x200B;**编辑**&#x200B;模式打开AEM Sites页面。
 1. 转到&#x200B;**[!UICONTROL 页面信息]** > **[!UICONTROL 编辑模板]**
-   ![编辑模板策略](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![编辑模板策略](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. 单击&#x200B;**[!UICONTROL 策略]**&#x200B;并选择&#x200B;**[AEM原型项目名称] - Forms和通信门户**&#x200B;下的&#x200B;**[!UICONTROL 搜索和列表程序]**&#x200B;复选框。
 
-   ![策略选择](/help/forms/assets/search-lister-enable-policy.png){width="250" align="center"}
+   ![策略选择](/help/forms/assets/search-lister-enable-policy.png)
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 1. 现在，在创作模式下重新打开AEM Sites页面。
@@ -78,7 +78,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 1. 浏览对话框中的可用组件，并从列表中选择所需的组件。 例如，从列表中选择&#x200B;**搜索和列表程序**&#x200B;组件以添加&#x200B;**搜索和列表程序** Forms门户组件。
 
-   ![搜索和列表程序组件](/help/forms/assets/add-search-lister.png){width="250" align="center"}
+   ![搜索和列表程序组件](/help/forms/assets/add-search-lister.png)
 
 现在，配置&#x200B;**Search and Lister**&#x200B;组件的属性。
 
@@ -88,7 +88,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 ### “显示”选项卡
 
-![显示选项卡](/help/forms/assets/search-and-lister-display-tab.png){width="250" align="center"}
+![显示选项卡](/help/forms/assets/search-and-lister-display-tab.png)
 
 1. 在&#x200B;**[!UICONTROL Title]**&#x200B;中，指定Search &amp; Lister组件的标题。 指示性标题使用户能够在表单列表中执行快速搜索。
 1. 从&#x200B;**[!UICONTROL 布局]**&#x200B;列表中，选择以卡片或列表格式表示表单的布局。
@@ -97,14 +97,14 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 ### “资源”选项卡
 
-![资产选项卡](/help/forms/assets/search-and-lister-asset-tab.png){width="250" align="center"}
+![资产选项卡](/help/forms/assets/search-and-lister-asset-tab.png)
 
 1. 在&#x200B;**[!UICONTROL 资产文件夹]**&#x200B;选项卡中，指定从何处提取表单并将其列在页面上。
 1. 使用&#x200B;**[!UICONTROL 添加其他位置]**，您可以配置多个文件夹位置。
 
 ### “结果”选项卡
 
-![显示选项卡](/help/forms/assets/search-and-lister-result-tab.png){width="250" align="center"}
+![显示选项卡](/help/forms/assets/search-and-lister-result-tab.png)
 
 在&#x200B;**[!UICONTROL 结果]**&#x200B;选项卡中，配置每页显示的最大表单数。 默认设置是每页八个表单。
 
@@ -112,7 +112,7 @@ To enable out-of-the-box Forms Portal components on existing AEM Forms as a Clou
 
 要查看表单列表，请使用&#x200B;**Search &amp; Lister** Forms门户组件。 预览AEM Sites页面以查看屏幕上显示的&#x200B;**Assets**&#x200B;文件夹中的表单列表。 您还可以使用搜索栏搜索特定表单。
 
-![搜索和列表程序图标](assets/search-and-lister-component.png){width="250" align="center"}
+![搜索和列表程序图标](assets/search-and-lister-component.png)
 
 <!--
 ## Configure Azure Storage for Adaptive Forms {#configure-azure-storage-adaptive-forms}

@@ -4,19 +4,21 @@ description: 了解如何将基于核心组件的自适应表单另存为草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1376'
 ht-degree: 3%
 
 ---
 
 
-# 将表单另存为站点页面上的草稿并将其列出
+# 将表单另存为草稿并将其在站点页面上列出
+
+<span class="preview">本文包含有关&#x200B;**自动保存**&#x200B;功能（预发布功能）的内容。 该预发布功能仅可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 以某个用户为例，该用户开始填写表单，但需要暂停并稍后返回。 AEM提供了一个`save-as-draft`选项，允许用户将表单另存为草稿以供将来完成。 为方便起见，AEM提供了现成的&#x200B;**草稿和提交** Forsm Portal组件，该组件在AEM Sites页面上显示草稿和提交。 该组件列出已另存为草稿以供以后完成的表单以及已提交的表单。 只有登录的用户才能编辑其草稿或查看其提交的表单。 但是，如果匿名用户使用&#x200B;**搜索和列表程序**&#x200B;组件浏览表单列表并将表单另存为草稿，则&#x200B;**草稿和提交**&#x200B;组件不会列出该草稿。 要查看草稿和提交，用户必须在提交表单时登录。
 
-![草稿图标](assets/drafts-component.png){width="250" align="center"}
+![草稿图标](assets/drafts-component.png)
 
 ## 先决条件
 
@@ -32,16 +34,16 @@ ht-degree: 3%
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**。
 
-   ![Azure存储卡选择](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
+   ![Azure存储卡选择](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. 选择配置文件夹以创建配置，然后选择&#x200B;**[!UICONTROL 创建]**。
 
-   ![选择Azure存储配置文件夹](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
+   ![选择Azure存储配置文件夹](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中指定配置的标题。
 1. 在&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;和&#x200B;**[!UICONTROL Azure访问密钥]**&#x200B;字段中指定[!DNL Azure]存储帐户的名称。
 
-   ![Azure 存储配置](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
+   ![Azure 存储配置](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
 1. 单击&#x200B;**保存**。
 
@@ -53,12 +55,12 @@ ht-degree: 3%
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**。
 
-   ![统一连接器存储](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
+   ![统一连接器存储](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. 在&#x200B;**[!UICONTROL Forms门户]**&#x200B;部分中，从&#x200B;**[!UICONTROL 存储]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Azure]**。
 1. 在&#x200B;**[!UICONTROL 存储配置路径]**&#x200B;字段中指定Azure存储配置的配置路径。
 
-   ![统一连接器存储设置](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
+   ![统一连接器存储设置](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -74,11 +76,11 @@ ht-degree: 3%
 
 1. 以&#x200B;**编辑**&#x200B;模式打开AEM Sites页面。
 1. 转到&#x200B;**[!UICONTROL 页面信息]** > **[!UICONTROL 编辑模板]**
-   ![编辑模板策略](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![编辑模板策略](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. 单击&#x200B;**[!UICONTROL 策略]**&#x200B;并选择&#x200B;**[AEM原型项目名称] - Forms和通信门户**&#x200B;下的&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;复选框。
 
-   ![策略选择](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
+   ![策略选择](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 1. 现在，在创作模式下重新打开AEM Sites页面。
@@ -93,7 +95,7 @@ ht-degree: 3%
 
 1. 浏览对话框中的可用组件，并从列表中选择所需的组件。 例如，从列表中选择&#x200B;**草稿和提交**&#x200B;组件以添加&#x200B;**草稿和提交** Forms门户组件。
 
-   ![添加草稿和提交组件](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
+   ![添加草稿和提交组件](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 现在，根据需要配置&#x200B;**草稿和提交**&#x200B;组件的属性。
 
@@ -107,7 +109,7 @@ ht-degree: 3%
    * **选择类型**：将表单列为草稿或已提交的表单。 如果选择&#x200B;**草稿Forms**，将显示另存为草稿的表单。 或者，选择&#x200B;**已提交的Forms**&#x200B;将显示由登录用户提交的表单。
    * **布局**：以卡片或列表格式显示列表草稿表单或已提交的表单。
 
-   ![草稿和提交组件属性](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
+   ![草稿和提交组件属性](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## 配置表单以另存为草稿
 
@@ -129,13 +131,11 @@ ht-degree: 3%
 1. 在&#x200B;**[!UICONTROL When]**&#x200B;部分中，选择&#x200B;**已单击**，在&#x200B;**[!UICONTROL Then]**&#x200B;部分中，选择&#x200B;**保存表单**&#x200B;选项。
 1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存规则。
 
-   ![为按钮](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}创建规则
+   ![为按钮](/help/forms/assets/save-form-as-drfat-create-rule.png)创建规则
 
 当您预览自适应表单并填写该表单并单击&#x200B;**保存表单**&#x200B;按钮时，该表单将另存为草稿。
 
 ### 自动保存
-
-<span class="preview">本文包含有关&#x200B;**自动保存**&#x200B;功能（预发布功能）的内容。 该预发布功能仅可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ ht-degree: 3%
 1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
 1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标，然后打开&#x200B;**[!UICONTROL 自动保存]**&#x200B;选项卡。
 
-   ![自动保存](/help/forms/assets/auto-save.png){width="250" align="center"}
+   ![自动保存](/help/forms/assets/auto-save.png)
 
 1. 选中&#x200B;**[!UICONTROL 启用]**&#x200B;复选框以启用表单的自动保存。
 1. 将&#x200B;**[!UICONTROL 触发器]**&#x200B;配置为&#x200B;**基于时间**，以便在特定时间间隔后自动保存表单<!--based on the occurrence of an event or-->。
@@ -159,11 +159,11 @@ ht-degree: 3%
 要查看已保存的草稿或已提交的表单，请使用&#x200B;**草稿和提交** Forms门户组件。
 在草稿和提交组件](#configure-properties-of-the-drafts--submissions-component)的[配置对话框中选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**草稿Forms**&#x200B;时，另存为草稿的表单将显示在站点页面上。 您可以通过单击省略号(...)打开草稿以完成表单。
 
-![草稿图标](assets/drafts-component.png){width="250" align="center"}
+![草稿图标](assets/drafts-component.png)
 
 在草稿和提交组件](#configure-properties-of-the-drafts--submissions-component)的[配置对话框中选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**已提交的Forms**&#x200B;时，将显示已提交的表单。 您可以查看已提交的表单，但无法编辑它们。
 
-![提交图标](assets/submission-listing.png){width="250" align="center"}
+![提交图标](assets/submission-listing.png)
 
 也可以通过单击表单右下角显示的省略号(...)来放弃表单。
 
