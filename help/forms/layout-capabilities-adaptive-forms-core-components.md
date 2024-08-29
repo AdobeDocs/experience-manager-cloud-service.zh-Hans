@@ -4,7 +4,7 @@ description: 自适应Forms在各种设备上的布局和外观受布局设置�
 feature: Adaptive Forms, Core Components
 keywords: 基于核心组件的自适应表单布局、表单的不同布局、动态表单布局AEM、AEM Cloud Service表单布局、AEM核心组件中的表单布局类型、自适应表单布局
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -138,10 +138,10 @@ ht-degree: 1%
 
 1. 在表单编辑器中找到用于添加布局的部分。
 
-   ![表单编辑器](/help/forms/assets/form-editor.png){width="200" align="center"}
+   ![表单编辑器](/help/forms/assets/form-editor.png)
 1. 单击&#x200B;**添加**&#x200B;图标。 图标是一个加号(+)，表示添加新组件的选项。
 
-   ![插入布局](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+   ![插入布局](/help/forms/assets/insert-layout-add-icon.png)
 
    单击&#x200B;**添加**&#x200B;图标会显示&#x200B;**插入新组件**&#x200B;对话框，其中显示了要插入的各种组件。
 
@@ -151,20 +151,20 @@ ht-degree: 1%
 
 1. 浏览对话框中的可用组件，并从列表中选择所需的布局。 在本例中，我们选择“水平选项卡”组件来插入水平选项卡布局。
 
-   ![选择水平制表符](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
+   ![选择水平制表符](/help/forms/assets/select-horizontal-tab.png)
 
    将水平选项卡组件添加到表单时，它最初由两个空面板组成，默认情况下分别名为Item1和Item2。 您需要手动将表单组件添加到这些面板。
 
-   ![水平选项卡](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
+   ![水平选项卡](/help/forms/assets/insert-tabs-on-top.png)
 
 1. 打开水平选项卡组件的属性，并指定组件的名称。
 例如，在本例中，我们将水平选项卡组件的名称添加为IT请求表单。
 
-   ![添加水平选项卡的名称](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
+   ![添加水平选项卡的名称](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. 单击&#x200B;**完成**。
 
-   ![水平选项卡](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+   ![水平选项卡](/help/forms/assets/tabs-on-top-rename-component.png)
 
 在表单中添加布局组件后，根据需要修改面板数量。
 
@@ -174,43 +174,43 @@ ht-degree: 1%
 
 1. 打开水平选项卡组件属性，然后单击&#x200B;**项目**&#x200B;选项卡。
 
-   水平选项卡的![项选项卡](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+   水平选项卡的![项选项卡](/help/forms/assets/tabs-on-top-items-tab.png)
 
 1. 单击&#x200B;**添加**&#x200B;图标以添加新面板。
 
-   ![添加新面板](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
+   ![添加新面板](/help/forms/assets/tabs-on-top-add-panel.png)
 
    单击&#x200B;**添加**&#x200B;图标时，将显示&#x200B;**插入新组件**&#x200B;对话框。
 
 1. 选择面板组件。
 
-   ![添加新面板](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
+   ![添加新面板](/help/forms/assets/tabs-on-top-new-panel.png)
 
    选择面板组件后，新面板将添加到水平布局中。
 
-   ![添加新面板](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
+   ![添加新面板](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
    为新面板提供一个名称；否则，无法保存水平选项卡组件的属性。
 
 1. 指定面板的名称，如下图所示：
 
-   ![面板名称](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+   ![面板名称](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. 单击&#x200B;**完成**。
 
    单击&#x200B;**完成**&#x200B;后，三个面板会并排显示。 面板名称显示为每个面板的标题，您可以将表单组件添加到每个面板。
 
-   ![面板名称](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+   ![面板名称](/help/forms/assets/tabs-on-top-initial-view.png)
 
    您可以配置面板组件的属性。 例如，IT请求表单不包括面板标题，以下是配置面板组件属性的步骤。
 
 1. 打开第一个面板的属性。
 
-   ![面板1属性](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+   ![面板1属性](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
 1. 从&#x200B;**Basic**&#x200B;选项卡中选择&#x200B;**隐藏标题**&#x200B;复选框。
 
-   ![隐藏标题](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+   ![隐藏标题](/help/forms/assets/tabs-on-top-hide-panel.png)
 
 1. 单击&#x200B;**完成**。
 
@@ -224,41 +224,41 @@ ht-degree: 1%
 
 1. 在允许您添加组件的面板中查找部分。
 1. 单击&#x200B;**添加**图标。 图标是一个加号(+)，表示添加新组件的选项。
-   ![插入布局](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
+   ![插入布局](/help/forms/assets/tabs-on-top-add-component.png)
 
    单击&#x200B;**添加**&#x200B;图标会显示&#x200B;**插入新组件**&#x200B;对话框，其中显示了要插入的各种组件。
 
-   ![插入新组件对话框](/help/forms/assets/insert-new-component.png){width="200" align="center"}
+   ![插入新组件对话框](/help/forms/assets/insert-new-component.png)
 
 1. 浏览出现的对话框中的可用组件，然后选择所需的组件。 在本例中，选择文本框组件。
 1. 打开所添加组件的属性并指定其名称。 允许编辑已添加文本框组件的属性并指定其名称。
-   ![插入布局](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+   ![插入布局](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. 同样，添加另外两个文本框组件，名称将这两个组件添加为电子邮件ID和部门。\
-   ![第一个面板](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
+   ![第一个面板](/help/forms/assets/tabs-on-tops-first-panel.png)
 
    现在，第一个面板中的组件已添加，您可以继续将组件添加到第二个面板。
 
 1. 若要切换面板，请单击工具栏中的&#x200B;**选择面板**。
 
-   ![切换面板](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
+   ![切换面板](/help/forms/assets/tabs-on-top-select-panel.png)
 
    单击&#x200B;**选择面板**&#x200B;时，水平选项卡组件中已添加面板的列表即会显示。
 
-   ![切换面板](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+   ![切换面板](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. 从面板列表中选择&#x200B;**2面板**，视图将从第一个面板更改为第二个面板。
 
-   ![第二个面板](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+   ![第二个面板](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. 重复步骤2到步骤4中所述的步骤，在面板2中添加所需的组件，如下图所示：
 
-   ![第二个面板组件](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+   ![第二个面板组件](/help/forms/assets/panel-2-components.png)
 
 1. 按照步骤6和步骤7中所述的步骤切换到&#x200B;**3面板**。
 
 1. 重复步骤2到步骤4中列出的步骤，在面板3中添加所需的组件：
 
-   ![第三面板组件](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+   ![第三面板组件](/help/forms/assets/panel-3-component.png)
 
 1. 单击创作环境右上角的&#x200B;**[!UICONTROL 预览]**。
 
@@ -319,7 +319,7 @@ ht-degree: 1%
 
 您还可以使用![删除图标](/help/forms/assets/Smock_Delete_18_N.svg)图标从面板中删除表单组件。
 
-![删除组件](/help/forms/assets/delete-component.png){width="200" align="center"}
+![删除组件](/help/forms/assets/delete-component.png)
 
 您还可以根据需要为组件添加所需的验证。
 
@@ -333,11 +333,11 @@ ht-degree: 1%
 
 1. 单击布局组件工具栏中的替换图标，此时将显示&#x200B;**[!UICONTROL 替换组件]**&#x200B;对话框。
 
-   ![替换布局](/help/forms/assets/replace-layout.png){width="200" align="center"}
+   ![替换布局](/help/forms/assets/replace-layout.png)
 
 1. 从&#x200B;**[!UICONTROL 替换组件]**&#x200B;对话框中选择所需的布局。
 
-   ![替换组件对话框](/help/forms/assets/replace-component.png){width="200" align="center"}
+   ![替换组件对话框](/help/forms/assets/replace-component.png)
 
    选择布局后，布局中组件的排列方式会相应发生变化。 例如，从&#x200B;**[!UICONTROL 替换组件]**&#x200B;对话框中选择垂直选项卡组件；面板的排列方式将更改为左侧的选项卡：
 
@@ -350,11 +350,11 @@ ht-degree: 1%
 1. 找到用于添加组件的部分。
 1. 导航到创作环境中的左侧面板，然后单击&#x200B;**组件**。
 
-   ![组件面板](/help/forms/assets/add-new-component.png){width="200" align="center"}
+   ![组件面板](/help/forms/assets/add-new-component.png)
 
    单击&#x200B;**组件**&#x200B;选项时，将显示可用组件列表。
 
-   ![组件面板](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+   ![组件面板](/help/forms/assets/add-new-component2.png)
 
 1. 浏览可用的组件并选择所需的组件。
 
