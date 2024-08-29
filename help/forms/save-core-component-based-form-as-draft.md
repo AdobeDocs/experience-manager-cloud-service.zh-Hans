@@ -1,228 +1,180 @@
 ---
-title: 如何将基于核心组件的自适应表单另存为草稿？
-description: 了解如何将基于核心组件的自适应表单另存为草稿、创建Forms Portal并在AEM Sites页面上使用现成的核心组件。
+title: 如何将基于核心组件的自适应表单另存为草稿，并使用草稿和提交组件列出草稿和提交？
+description: 了解如何将基于核心组件的自适应表单另存为草稿。 还了解如何使用草稿和提交组件为登录用户列出草稿和提交？
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
+source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 2%
+source-wordcount: '1375'
+ht-degree: 3%
 
 ---
 
 
-# 将基于核心组件的自适应表单另存为草稿 {#save-af-form}
+# 将表单另存为站点页面上的草稿并将其列出
 
-将自适应表单另存为草稿是提高用户效率和准确性的重要功能。 此功能允许用户保存进度并在以后返回以完成任务，而不会丢失任何输入的信息。 提供`save-as-draft`选项可确保管理时间的灵活性，降低数据丢失的风险，并维护提交的精确性。 您可以将表单另存为草稿以便稍后完成。
+以某个用户为例，该用户开始填写表单，但需要暂停并稍后返回。 AEM提供了一个`save-as-draft`选项，允许用户将表单另存为草稿以供将来完成。 为方便起见，AEM提供了现成的&#x200B;**草稿和提交** Forsm Portal组件，该组件在AEM Sites页面上显示草稿和提交。 该组件列出已另存为草稿以供以后完成的表单以及已提交的表单。 只有登录的用户才能编辑其草稿或查看其提交的表单。 但是，如果匿名用户使用&#x200B;**搜索和列表程序**&#x200B;组件浏览表单列表并将表单另存为草稿，则&#x200B;**草稿和提交**&#x200B;组件不会列出该草稿。 要查看草稿和提交，用户必须在提交表单时登录。
 
-## 注意事项
+![草稿图标](assets/drafts-component.png){width="250" align="center"}
+
+## 先决条件
 
 * [为您的环境启用自适应Forms核心组件。](/help/forms/enable-adaptive-forms-core-components.md)
 
-* 确保将[核心组件设置为版本3.0.24或更高版本](https://github.com/adobe/aem-core-forms-components)以使用此功能。
-* 确保您拥有[Azure存储帐户和访问密钥](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)以授权访问Azure存储帐户。
+  将最新的核心组件部署到环境后，即可在创作环境中访问Forms Portal组件。
 
-## 将自适应表单另存为草稿
+* [为草稿和提交Forms门户组件配置Azure Storage和统一存储连接器](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-[!DNL Experience Manager Forms]数据集成(data-integration.md)提供了[!DNL Azure]存储配置以将表单与[!DNL Azure]存储服务集成。 表单数据模型(FDM)可用于创建与[!DNL Azure]服务器交互以启用业务工作流的自适应Forms。
+### 为草稿和提交Forms门户组件配置Azure Storage和统一存储连接器
 
-要将表单另存为草稿，请确保您拥有Azure存储帐户和访问密钥以授权访问[!DNL Azure]存储帐户。 要将表单另存为草稿，请执行以下步骤：
-
-1. [创建 Azure 存储配置](#create-azure-storage-configuration)
-1. [为Forms Portal配置统一存储连接器](#configure-usc-forms-portal)
-1. [创建规则以将自适应表单另存为草稿](#rule-to-save-adaptive-form-as-draft)
-
-
-### 1.创建Azure存储配置 {#create-azure-storage-configuration}
-
-拥有Azure存储帐户和访问密钥以授权访问[!DNL Azure]存储帐户后，请执行以下步骤以创建Azure存储配置：
+**草稿和提交**&#x200B;组件需要存储设置才能在AEM Sites页面上保存和列出草稿。 统一存储连接器提供了一个将AEM与外部存储关联的框架。 要将表单另存为草稿，请确保您拥有Azure存储帐户和访问密钥以授权访问[!DNL Azure]存储帐户。 拥有Azure存储帐户和访问密钥后，请执行以下步骤以创建Azure存储配置：
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure存储]**。
 
-   ![Azure存储卡选择](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Azure存储卡选择](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
 
 1. 选择配置文件夹以创建配置，然后选择&#x200B;**[!UICONTROL 创建]**。
 
-   ![选择Azure存储配置文件夹](/help/forms/assets/save-form-as-draft-select-config-folder.png)
+   ![选择Azure存储配置文件夹](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
 
 1. 在&#x200B;**[!UICONTROL 标题]**&#x200B;字段中指定配置的标题。
 1. 在&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;和&#x200B;**[!UICONTROL Azure访问密钥]**&#x200B;字段中指定[!DNL Azure]存储帐户的名称。
 
-   ![Azure 存储配置](/help/forms/assets/save-form-as-draft-azure-storage.png)
+   ![Azure 存储配置](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
 
 1. 单击&#x200B;**保存**。
 
->[!NOTE]
->
-> 您可以从[Microsoft Azure门户](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)检索&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;和&#x200B;**[!UICONTROL Azure访问密钥]**。
+   >[!NOTE]
+   >
+   > 您可以从[Microsoft Azure门户](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)检索&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;和&#x200B;**[!UICONTROL Azure访问密钥]**。
 
-
-### 2.为Forms门户配置统一存储连接器 {#configure-usc-forms-portal}
-
-成功创建Azure存储配置后，请使用以下步骤为Forms Portal配置统一存储连接器：
+   成功创建Azure Storage配置后，请使用以下步骤为Forms Portal配置统一存储连接器：
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 统一存储连接器]**。
 
-   ![统一连接器存储](/help/forms/assets/save-form-as-draft-unified-connector.png)
+   ![统一连接器存储](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
 
 1. 在&#x200B;**[!UICONTROL Forms门户]**&#x200B;部分中，从&#x200B;**[!UICONTROL 存储]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Azure]**。
-1. 在&#x200B;**[!UICONTROL 存储配置路径]**&#x200B;字段中指定Azure存储配置](#create-azure-storage-configuration)的[配置路径。
+1. 在&#x200B;**[!UICONTROL 存储配置路径]**&#x200B;字段中指定Azure存储配置的配置路径。
 
-   ![统一连接器存储设置](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![统一连接器存储设置](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
 
-1. 选择&#x200B;**[!UICONTROL 保存]**，然后选择&#x200B;**[!UICONTROL Publish]**&#x200B;以发布配置。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-### 3.创建规则以将自适应表单另存为草稿 {#rule-to-save-adaptive-form-as-draft}
+>[!NOTE]
+>
+> 如果需要配置Azure以外的存储选项，请从官方电子邮件地址写入aem-forms-ea@adobe.com并提供详细要求。
 
-要将表单另存为草稿，请在表单组件上创建&#x200B;**保存表单**&#x200B;规则，如按钮。 单击按钮时，将触发规则，并将表单另存为草稿。 执行以下步骤以在按钮组件上创建&#x200B;**保存表单**&#x200B;规则：
+成功配置Azure Storage和Unified Storage Connector以存储草稿和已提交的表单后，请在AEM Sites页面上添加&#x200B;**草稿和提交**&#x200B;组件。
 
-1. 在创作实例中，以编辑模式打开自适应表单。
-1. 从左窗格中，选择![组件图标](assets/components_icon.png)，然后将&#x200B;**[!UICONTROL 按钮]**&#x200B;组件拖到表单中。
-1. 选择&#x200B;**[!UICONTROL 按钮]**&#x200B;组件，然后选择![配置图标](assets/configure_icon.png)。
-1. 选择&#x200B;**[!UICONTROL 编辑规则]**&#x200B;图标以打开规则编辑器。
-1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以配置和创建规则。
-1. 在&#x200B;**[!UICONTROL When]**&#x200B;部分中，选择&#x200B;**已单击**，在&#x200B;**[!UICONTROL Then]**&#x200B;部分中，选择&#x200B;**保存表单**&#x200B;选项。
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存规则。
+## 如何将草稿和提交组件添加到AEM Sites页面？
 
-![为按钮](/help/forms/assets/save-form-as-drfat-create-rule.png)创建规则
-
-当您预览自适应表单并填写该表单并单击&#x200B;**保存表单**&#x200B;按钮时，表单将另存为草稿以供将来使用。
-
-## 草稿和提交组件可在AEM Sites页面上列出草稿
-
-AEM Forms提供现成的&#x200B;**草稿和提交**&#x200B;门户组件，用于在AEM Sites页面上显示已保存的表单。 **草稿和提交**&#x200B;组件显示另存为草稿以供以后完成的表单以及已提交的表单。 此组件通过列出与用户创建的自适应Forms相关的草稿和提交，为任何登录用户提供个性化体验。
-
-您可以使用现成的Forms Portal组件在AEM Sites页面中列出表单草稿。 执行以下步骤以使用&#x200B;**草稿和提交**&#x200B;门户组件：
-
-1. [启用草稿和提交Forms门户组件](#enable-component)
-2. [在AEM Sites页面中添加草稿和提交组件](#Add-drafts-submissions-component)
-3. [配置草稿和提交组件](#configure-drafts-submissions-component)
-
-### 1.启用草稿和提交Forms门户组件{#enable-component}
-
-要在模板策略中启用&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;组件，请执行以下步骤：
+您可以使用现成的Forms Portal组件在Sites页面上列出草稿和提交内容。 执行以下步骤以添加&#x200B;**草稿和提交**&#x200B;门户组件：
 
 1. 以&#x200B;**编辑**&#x200B;模式打开AEM Sites页面。
 1. 转到&#x200B;**[!UICONTROL 页面信息]** > **[!UICONTROL 编辑模板]**
-   ![编辑模板策略](/help/forms/assets/save-form-as-draft-edit-template.png)
+   ![编辑模板策略](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
 
 1. 单击&#x200B;**[!UICONTROL 策略]**&#x200B;并选择&#x200B;**[AEM原型项目名称] - Forms和通信门户**&#x200B;下的&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;复选框。
 
-   ![策略选择](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![策略选择](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
+1. 现在，在创作模式下重新打开AEM Sites页面。
+1. 在页面编辑器中找到用于添加Forms Portal组件的部分。
+1. 单击&#x200B;**添加**&#x200B;图标。 图标是一个加号(+)，表示添加新组件的选项。
 
-启用门户组件后，您可以在AEM Sites页面的创作实例中使用它。
+   单击&#x200B;**添加**&#x200B;图标会显示&#x200B;**插入新组件**&#x200B;对话框，其中显示了要插入的各种组件。
 
-### 2.在AEM Sites页面中添加草稿和提交组件{#Add-drafts-submissions-component}
+   >[!NOTE]
+   >
+   > 或者，您也可以拖放组件。
 
-您可以通过添加和配置门户组件，在使用AEM创作的网站上创建和自定义Forms门户。 在AEM Sites页面中使用[草稿和提交组件之前，请确保这些组件已启用](#enable-component)。
+1. 浏览对话框中的可用组件，并从列表中选择所需的组件。 例如，从列表中选择&#x200B;**草稿和提交**&#x200B;组件以添加&#x200B;**草稿和提交** Forms门户组件。
 
-要添加组件，请将组件从&#x200B;**草稿和提交**&#x200B;组件窗格拖放到页面上的布局容器中，或选择布局容器上的添加图标并从&#x200B;**[!UICONTROL 插入新组件]**&#x200B;对话框中添加组件。
+   ![添加草稿和提交组件](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
 
-![添加草稿和提交组件](/help/forms/assets/save-form-as-draft-add-dns.png)
+现在，根据需要配置&#x200B;**草稿和提交**&#x200B;组件的属性。
 
-### 3.配置草稿和提交组件 {#configure-drafts-submissions-component}
+## 配置草稿和提交组件的属性
 
-**草稿和提交**&#x200B;组件显示另存为草稿以便稍后完成和提交的表单的表单。 要配置&#x200B;**草稿和提交**，请执行以下步骤：
+您可以配置&#x200B;**草稿和提交**&#x200B;的属性：
 1. 选择&#x200B;**草稿和提交**&#x200B;组件。
 1. 单击![配置图标](assets/configure_icon.png)，此时将显示对话框。
 1. 在&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;对话框中，指定以下内容：
    * **标题**&#x200B;为了识别站点页面中的组件，默认情况下，标题显示在组件顶部。
-   * **类型**：将表单列为草稿或已提交的表单。
+   * **选择类型**：将表单列为草稿或已提交的表单。 如果选择&#x200B;**草稿Forms**，将显示另存为草稿的表单。 或者，选择&#x200B;**已提交的Forms**&#x200B;将显示由登录用户提交的表单。
    * **布局**：以卡片或列表格式显示列表草稿表单或已提交的表单。
 
-   ![草稿和提交组件属性](/help/forms/assets/save-form-as-draft-dns-properties.png)
+   ![草稿和提交组件属性](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
 
-1. 单击&#x200B;**完成**。
+## 配置表单以另存为草稿
 
-选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**草稿Forms**时，将显示另存为草稿的表单：
-![草稿图标](assets/drafts-component.png)
+您可以通过以下两种方式配置自适应Forms，以将它们另存为草稿以供将来使用：
+* [用户操作](#user-action)
+* [自动保存](#auto-save)
 
-当&#x200B;**[!UICONTROL 选择类型]**&#x200B;被选为&#x200B;**已提交的Forms**&#x200B;时，将显示已提交的表单：
+### 用户操作
 
-![提交图标](assets/submission-listing.png)
+>[!NOTE]
+>
+> 确保[核心组件版本设置为3.0.24或更高版本](https://github.com/adobe/aem-core-forms-components)以使用&#x200B;**保存表单**&#x200B;规则将表单另存为草稿。
 
-您可以通过单击相应的表单来打开该表单。
+要将表单另存为草稿，请在表单组件上创建&#x200B;**保存表单**&#x200B;规则，如按钮。 单击按钮时，将触发规则，并将表单另存为草稿。 执行以下步骤以在按钮组件上创建&#x200B;**保存表单**&#x200B;规则：
 
-<!--
+1. 在编辑模式下打开自适应表单。
+1. 选择&#x200B;**[!UICONTROL 编辑规则]**&#x200B;图标以打开&#x200B;**按钮**&#x200B;组件的规则编辑器。
+1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以配置和创建按钮的规则。
+1. 在&#x200B;**[!UICONTROL When]**&#x200B;部分中，选择&#x200B;**已单击**，在&#x200B;**[!UICONTROL Then]**&#x200B;部分中，选择&#x200B;**保存表单**&#x200B;选项。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存规则。
 
-### Configure Search & Lister Component {#configure-search-lister-component}
+   ![为按钮](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}创建规则
 
-The Search & Lister component is used to list adaptive forms on a page and to implement search on the listed forms. 
+当您预览自适应表单并填写该表单并单击&#x200B;**保存表单**&#x200B;按钮时，该表单将另存为草稿。
 
-![Search and Lister icon](assets/search-and-lister-component.png)
+### 自动保存
 
-To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Search and Lister] dialog opens.
+<span class="preview">本文包含有关&#x200B;**自动保存**&#x200B;功能（预发布功能）的内容。 该预发布功能仅可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
 
-1. In the [!UICONTROL Display] tab, configure the following:
-    * In **[!UICONTROL Title]**, specify the title for the Search & Lister component. An indicative title enables the users perform quick search across the list of forms.
-    * From the **[!UICONTROL Layout]** list, select the layout to represent the forms in card or list format.
-    * Select **[!UICONTROL Hide Search]** and **[!UICONTROL Hide Sorting]** to hide the search and sort by features.
-    * In **[!UICONTROL Tooltip]**, provide the tooltip that appears when you hover over the component. 
-1. In the [!UICONTROL Asset Folder] tab, specify the location from where the forms are pulled and listed on the page. You can configure multiple folder locations.
-1. In the [!UICONTROL Results] tab, configure the maximum number of forms to display per page. The default is eight forms per page.
+>[!NOTE]
+>
+> 确保将[核心组件版本设置为3.0.52或更高版本](https://github.com/adobe/aem-core-forms-components)以使用自动保存功能将表单另存为草稿。
 
-### Configure Link Component {#configure-link-component}
+您还可以将自适应表单配置为根据基于时间的事件自动保存，从而确保在指定的持续时间后保存表单。 当您[为环境启用Forms Portal组件](/help/forms/list-forms-on-sites-page.md#enable-forms-portal-components-for-your-existing-environment)时，**自动保存**&#x200B;选项卡将出现在Forms容器属性中。 您可以为自适应表单配置自动保存功能：
 
-The link component enables you to provide links to an adaptive form on the page. To configure, select the component and then select the ![Configure icon](assets/configure_icon.png). The [!UICONTROL Edit Link Component] dialog opens.
+1. 在创作实例中，以编辑模式打开自适应表单。
+1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
+1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标，然后打开&#x200B;**[!UICONTROL 自动保存]**&#x200B;选项卡。
 
-1. In the [!UICONTROL Display] tab, provide the link caption and tooltip to ease identification of the forms represented by the link.
-1. In the [!UICONTROL Asset Info] tab, specify the repository path where the asset is stored. 
-1. In the [!UICONTROL Query Params] tab, specify the additional parameters in the key-value pair format. When the link is clicked, these additional parameters and passed along with the form.
+   ![自动保存](/help/forms/assets/auto-save.png){width="250" align="center"}
 
-## Configure Asynchronous Form Submission Using Adobe Sign {#configure-asynchronous-form-submission-using-adobe-sign}
+1. 选中&#x200B;**[!UICONTROL 启用]**&#x200B;复选框以启用表单的自动保存。
+1. 将&#x200B;**[!UICONTROL 触发器]**&#x200B;配置为&#x200B;**基于时间**，以便在特定时间间隔后自动保存表单<!--based on the occurrence of an event or-->。
+1. 以&#x200B;**[!UICONTROL 自动保存此间隔（秒）]**&#x200B;为单位指定时间间隔，以设置按定义的时间间隔触发表单自动保存的持续时间。
+1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-You can configure to submit an adaptive form only when all the recipients have completed the signing ceremony. Follow the steps below to configure the setting using Adobe Sign.
+## 使用草稿和提交组件在Sites页面上查看草稿/提交的表单
 
-1. In the author instance, open an Adaptive Form in the edit mode.
-1. From the left pane, select the Properties icon and expand the **[!UICONTROL ELECTRONIC SIGNTATURE]** option.
-1. Select **[!UICONTROL Enable Adobe Sign]**. Various configuration options display. 
-1. In the [!UICONTROL Submit the form] section, select the **[!UICONTROL after every recipient completes signing ceremony]** option to configure the Submit Form action, where the form is first sent to all the recipients for signing. Once all the recipients have signed the form, only then the form is submitted. 
+要查看已保存的草稿或已提交的表单，请使用&#x200B;**草稿和提交** Forms门户组件。
+在草稿和提交组件](#configure-properties-of-the-drafts--submissions-component)的[配置对话框中选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**草稿Forms**&#x200B;时，另存为草稿的表单将显示在站点页面上。 您可以通过单击省略号(...)打开草稿以完成表单。
 
-## Save Adaptive Forms As Drafts {#save-adaptive-forms-as-drafts}
+![草稿图标](assets/drafts-component.png){width="250" align="center"}
 
-You can save forms as Drafts for completing them later. There are two ways in which a form is saved as a draft:
+在草稿和提交组件](#configure-properties-of-the-drafts--submissions-component)的[配置对话框中选择&#x200B;**[!UICONTROL 选择类型]**&#x200B;作为&#x200B;**已提交的Forms**&#x200B;时，将显示已提交的表单。 您可以查看已提交的表单，但无法编辑它们。
 
-* Create a "Save Form" rule on a form component, for example, a button. On clicking the button, the rule triggers and the form are saved a draft.
-* Enable Auto-Save feature, which saves the form as per the specified event or after a configured interval of time.
+![提交图标](assets/submission-listing.png){width="250" align="center"}
 
-### Create Rules to Save an Adaptive Form as Draft {#rule-to-save-adaptive-form-as-draft}
+也可以通过单击表单右下角显示的省略号(...)来放弃表单。
 
-To create a "Save Form" rule on a form component, for example, a button, follow the steps below:
+## 后续步骤
 
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select ![Components icon](assets/components_icon.png) and drag the [!UICONTROL Button] component to the form.
-1. Select the [!UICONTROL Button] component and then select the ![Configure icon](assets/configure_icon.png). 
-1. Select the [!UICONTROL Edit Rules] icon to open the Rule Editor. 
-1. Select **[!UICONTROL Create]** to configure and create the rule.
-1. In the [!UICONTROL When] section, select "is clicked" and in the [!UICONTROL Then] section, select the "Save Form" options.
-1. Select **[!UICONTROL Done]** to save the rule.
+在下一篇文章中，让我们了解如何使用](/help/forms/add-form-link-to-aem-sites-page.md)链接Forms门户组件在“站点”页面上添加对表单的引用[。
 
-### Enable Auto-save {#enable-auto-save}
+## 相关文章
 
-You can configure the auto-save feature for an adaptive form as follows:
-
-1. In the author instance, open an Adaptive Form in edit mode.
-1. From the left pane, select the ![Properties icon](assets/configure_icon.png) and expand the [!UICONTROL AUTO-SAVE] option.
-1. Select the **[!UICONTROL Enable]** check box to enable auto-save of the form. You can configure the following:
-* By default, the [!UICONTROL Adaptive Form Event] is set to "true", which implies that the form is auto-saved after every event.
-* In [!UICONTROL Trigger], configure to trigger auto-save based on the occurrence of an event or after a specific interval of time.
--->
+{{forms-portal-see-also}}
 
 ## 另请参阅 {#see-also}
 
 {{see-also}}
-
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Configure data sources for AEM Forms](/help/forms/configure-data-sources.md)
->* [Configure Azure storage for AEM Forms](/help/forms/configure-azure-storage.md)
->* [Integrate Microsoft Dynamics 365 and Salesforce with Adaptive Forms](/help/forms/configure-msdynamics-salesforce.md)
-
--->

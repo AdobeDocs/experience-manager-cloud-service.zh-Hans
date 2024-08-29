@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
+source-git-commit: 9c6cf85ccc4e15671669b2fc59b01e7c0cef10e2
 workflow-type: tm+mt
-source-wordcount: '5481'
-ht-degree: 97%
+source-wordcount: '5528'
+ht-degree: 96%
 
 ---
 
@@ -691,6 +691,7 @@ ht-degree: 97%
       + 核心组件 {#authoring-adaptive-forms-core-components}
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
+            + [基于核心组件设置自适应表单的布局](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [创建基于核心组件的自适应表单模板](/help/forms/template-editor-core-components.md)
@@ -715,7 +716,6 @@ ht-degree: 97%
             + [向自适应表单添加版本控制、评论和注释](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比较自适应表单](/help/forms/compare-forms.md)
             + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [将自适应表单另存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
             + 基于核心组件的自适应表单规则编辑器简介{#rule-editor-core-components}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
@@ -726,6 +726,11 @@ ht-degree: 97%
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/create-and-use-custom-functions.md)
                + [为基于核心组件的自适应表单创建和使用自定义函数](/help/forms/custom-function-core-component-create-function.md)
                + [基于核心组件的自适应表单自定义函数示例](/help/forms/custom-function-core-components-use-cases.md)
+            + Forms Portal及其组件简介{#introduction-to-forms-portal}
+               + [Forms Portal组件简介](/help/forms/configure-forms-portal.md)
+               + [使用搜索和列表程序组件在“站点”页面上列出表单](/help/forms/list-forms-on-sites-page.md)
+               + [使用草稿和提交组件在Sites页面上将表单另存为草稿并将其列出](/help/forms/save-core-component-based-form-as-draft.md)
+               + [使用链接组件将表单链接添加到站点页面](/help/forms/add-form-link-to-aem-sites-page.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-hans)
@@ -782,7 +787,6 @@ ht-degree: 97%
             + [重用自适应表单的元数据属性](/help/forms/reusing-adaptive-forms.md)
          + 提高自适应表单的可访问性 {#accessible-adaptive-forms}
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
-         + [配置 Forms Portal](/help/forms/configure-forms-portal.md)
          + [创建和管理评论](/help/forms/create-reviews-forms.md)
          + [将提交审核者与表单关联](/help/forms/adding-reviewers-form.md)
          + [创建和管理自适应表单审核](/help/forms/review-adaptiveforms-in-sites-page.md)
