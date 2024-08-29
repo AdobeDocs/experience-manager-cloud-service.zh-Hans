@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e11c869c2f8cc8847869ad67a2c752e7239bd44c
+source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
 workflow-type: tm+mt
-source-wordcount: '1511'
-ht-degree: 73%
+source-wordcount: '1142'
+ht-degree: 51%
 
 ---
 
@@ -28,21 +28,35 @@ ht-degree: 73%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2024.7.0)的发布日期是2024年7月25日。 下一个功能版本(2024.8.0)计划于2024年8月29日发布。
+[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2024.8.0)的发布日期是2024年8月29日。 下一个功能版本(2024.9.0)计划于2024年9月26日发布。
 
 ## 维护发行说明 {#maintenance}
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-## 发布视频 {#release-video}
+<!-- ## Release Video {#release-video}
 
-请观看 2024 年 7 月发布概述视频，大致了解 2024.7.0 版本中的新增功能：
+Have a look at the August 2024 Release Overview video for a summary of the features added in the 2024.8.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites 的新增功能 {#new-feature-sites}
+
+**适用于 Edge Delivery Services 的 AEM 创作**
+
+现在支持现有站点[继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)功能，包括：
+
+* [AEM 启动项](/help/sites-cloud/authoring/launches/overview.md)
+* 页面级别的[MSM](/help/sites-cloud/administering/msm/overview.md)
+
+此外，现在还支持以下页面管理功能：
+
+* [AEM标记](/help/sites-cloud/authoring/sites-console/tags.md)可以作为[分类](/help/edge/wysiwyg-authoring/taxonomy.md)导出到Edge Delivery Services。
+* 即将推出适用于Edge Delivery Services的[模板](/help/edge/wysiwyg-authoring/templates.md)！
 
 ### 早期采用者计划 {#sites-early-adopter}
 
@@ -50,87 +64,70 @@ ht-degree: 73%
 
 通过 AEM 的新功能[生成变体](/help/generative-ai/generate-variations.md)利用 GenAI，现在可在云服务中使用。生成变体功能可以帮助您通过使用生成式 AI 来生成和扩展内容创作。请与您的 Adobe 帐户团队联系，申请加入该项目。
 
-**内容片段控制台中的资源浏览功能**
-
-内容作者现在可以浏览、查看图像和其他资源并对其执行操作，而无需离开内容片段控制台。
-
-![资源浏览](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
-
-是否有兴趣试用该功能并分享反馈？从您的官方电子邮件 ID 向 aemcs-headless-adopter@adobe.com 发送电子邮件即可详细了解早期采用者计划。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**使用资产选择器上传资产**
+### 资源视图中的新增功能 {#assets-view-new-features}
 
-资产选择器现在允许内容作者通过拖动或从本地文件系统浏览，直接从选择器上传最终资产。 这允许从您选择的应用程序将最终资产上传到DAM。
+**已更新Adobe Firefly图像生成**
 
-### Assets 视图中的新增功能 {#assets-view-new-features}
+Assetsas a Cloud Service现在使用Firefly中的最新构件，该构件允许您使用Adobe Firefly生成各种样式的图像。 通过使用内置的Firefly编辑器定义其样式、构成、维度等，您可以直接在AEM Assets存储库中快速创建和保存所需的资源以供立即使用。
 
-**Content credentials集成**
+![Adobe Firefly图像生成](/help/assets/assets/bugatti-type-57.png)
 
-Experience Manager Assets现在支持用于受支持图像格式的content credentials。 这提供了有关资产的谱系以及创建资产的方式（包括是否使用GenAI修改了资产）的信息。
+**PSB文件支持**
 
-![Content credentials](/help/assets/assets/content-credentials.png)
+除了现有的PSD文件支持之外，Assetsas a Cloud Service现在还支持Photoshop大型文档（PSB文件）。
 
-**文件夹内容的可视预览**
+### Content Hub中的新增增强功能 {#content-hub-new-enhancements}
 
-现在，在浏览或搜索内容时，Experience Manager Assets会在文件夹缩略图上显示文件夹内容的可视预览，这改进了AEM Assets存储库中可用资源的可发现性。
+* 更好地处理长文件名，通过工具提示轻松扩展完整名称。
+* 改进了缩略图，以更好地适应内容纵横比并覆盖更大的内容区域。
+* 内容中心支持AEM中的自定义缩略图体验。
+* 改进了颜色搜索。
+* 对配置的改进可保存体验。
+* 改进了收藏集的信息页面，以反映创建者名称。
 
-<!--
-
-
-**Content Credentials**
-
-Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
-
-When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
-
-![check publish status1](/help/release-notes/assets/content-credentials.png)
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms 中的新功能 {#forms-new-prerelease-features}
+### AEM Forms中的新增预发行功能 {#forms-new-prerelease-features}
 
-#### 针对核心组件自适应表单的增强型可视化规则编辑器
+#### 自动保存基于核心组件的自适应Forms的草稿
 
-自适应表单作者可以使用可视规则编辑器中提供的开箱即用函数中的可重复表单字段，以便核心组件在表单中构建复杂的业务逻辑，而无需自定义或开发团队的协助。
+用户现在可以从自动保存功能中获益，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回，在同一台或其他设备上完成填写。 此功能通过减少表单放弃率来提高组织的转化率，因为用户不需要从头开始填写表单。
+
 
 ### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
 
-AEM Forms Early Access Program 项目为您提供了一个独特的机会，让您可以先于其他人独家访问尖端创新，并帮助塑造其发展。该计划支持多项创新。
+AEM Forms抢先体验计划为您提供独家体验尖端创新的机会，并帮助塑造其开发格局。
 
 本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-#### 使用通用编辑器创作自适应表单
+#### AEM Forms AI助手
 
-利用Adobe Experience Manager [通用编辑器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)，使用所见即所得拖放创作功能创建自适应表单，用于通过Edge Delivery服务交付的Headless和Headful注册体验。 自适应表单作者可以轻松地为网页中的表单变体创建和启动实验，并为最终用户确定最佳性能体验。
+自适应Forms的创作AI为您的表单开发过程带来了全新级别的功能和便利性。 它允许您以前所未有的速度构建更好的表单。
+
+![创作AI助手，自适应Forms](/help/forms/assets/generative-ai-assistant.png)
+
+提供的创作AI功能包括：
+
+* **产品查询AI助手**：即时获取您的AEM表单相关问题的答案。 AI助手将充当您自己的个人知识库，直接在平台上提供富有洞察力的指导和建议。
+
+* **自适应表单生成**：轻松创建具有生成AI提示的完整表单。 我们的创作AI会自动生成用户友好的表单，从而减少流失并个性化体验。
+
+* 为Forms生成&#x200B;**面板**：生成针对特定数据收集需求量身定制的表单节。 例如，生成用于收集付款信息、客户偏好设置或旅行详细信息的部分。
+
+* **更改表单布局**：使用创作AI提示试验不同的布局和设计。 尝试使用向导或选项卡式视图等不同的布局，以找到最适合您的表单的布局。 使用创作AI提示优化表单以实现移动响应并创建用户喜爱的具有视觉吸引力的表单。
+
+* **配置提交操作**：使用生成AI提示轻松配置表单的提交操作。 从预建提交操作库或由您自己的开发团队创建和部署的自定义提交操作列表中进行选择。
 
 >[!IMPORTANT]
 >
-> 如果您有兴趣加入 Adobe 的 Early Access Program，了解任何早期访问创新功能，只需从您的官方邮箱发送电子邮件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，申请访问权限即可。您可以申请访问全部或任何特定的创新。
+> 如果您有兴趣加入任何创新的“抢先体验计划”，只需将您的官方地址中的电子邮件发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，其中包含您感兴趣的功能列表。
+
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### 使用自助API密钥清除CDN上的内容 {#purge-cdn}
-
-使用HTTP Cache-Control标头设置TTL是平衡内容交付性能和内容新鲜度的有效方法。 但是，在必须立即提供更新内容的情况下，直接清除CDN缓存可能会有帮助。
-
-[了解如何](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)使用Cloud Manager配置管道自助配置清除API令牌，以便您可以[调用清除API](/help/implementing/dispatcher/cdn-cache-purge.md)，并使用以下任一变体：
-* 单个URL
-* 使用标记的多个URL
-* 完整CDN缓存清除
-
-### 适用于客户管理的CDN的X-AEM-Edge-Key的自助配置 {#customermanaged-keys}
-
-以前，需要提交支持请求工单才能生成配置客户托管 CDN 所需的 X-AEM-Edge-Key。现在，通过在使用配置管道部署的配置文件中声明键值来实现自助服务，从而消除载入新环境的任何延迟。 [了解详情](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
-
-### 流量筛选规则警报 {#traffic-filter-rules-alerts}
-
-流量过滤器规则包括可选许可的Web应用程序防火墙(WAF)规则，允许您配置应该阻止哪些流量。
-
-现在，只要触发流量过滤器规则，您就可以[订阅警报](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)。 当出现某些流量状况时，“操作中心”会通过发送电子邮件来通知您，以便采取适当的措施。
 
 ### 内容投放相关的早期采用者计划 {#foundation-early-adopter}
 
@@ -152,33 +149,6 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，这是一种用于边缘级动态 Web 内容组装的标记语言。通过加入 ESI 片段，您可以在具有更高 TTL 的 CDN 上缓存整个 HTML 页面，同时更频繁地从原始位置获取那些需要更高节奏更新（更低的 TTL）的较小部分。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-### 内容健康相关行动中心通知早期采用者计划 {#actions-center-notifications}
-
-当发生重要事件时，或者当您发现有关您的代码或配置的某些情况而需要您采取主动行动时，[Actions Center](/help/operations/actions-center.md)会发送电子邮件通知。Adobe 现在推出了几种与您的内容健康状况相关的新类型的通知。此功能可通过早期采用者计划获得。如需参与，请联系 Adobe 客户服务。
-
-#### 页面包含大量节点 {#page-nodes}
-
-大量节点会降低渲染性能并减少页面加载时间。当在页面上检测到大量节点时，通过操作中心接收主动通知，允许您采取必要的步骤来减少页面内的总节点数。
-
-#### 大量正在运行的工作流实例数 {#running-workflows}
-
-当创作环境中正在运行大量工作流时，工作流引擎的性能会受到影响。当检测到大量正在运行的工作流实例时，您会通过操作中心收到主动通知。此过程允许您配置清除作业以终止不必要的正在运行的工作流。
-
-#### 直接添加到自定义组的用户 {#users-customgroups}
-
-当用户被直接添加到自定义组时，您会通过操作中心收到主动通知。此过程允许您遵循 IMS 最佳实践，将用户添加到相关的 IMS 组，然后将这些 IMS 组作为 AEM 组的成员包括在内。
-
-#### 缺少 JCR 内容 {#jcr-content}
-
-当检测到缺少的 JCR 内容时，操作中心会主动通知您。通过这种方法，您可以添加缺失的内容并防止某些 AEM Assets 功能失败。
-
-#### 未清除已完成的工作流 {#workflows}
-
-当超过 90 天的已完成工作流程尚未清除时，操作中心会主动通知您。这种方法有助于减少工作流实例的数量，从而提高工作流引擎的性能。
-
-#### 缺少 Sling 资源 {#sling-resource}
-
-当检测到缺少 Sling 资源时，操作中心会主动通知您。通过这种方法，您可以添加缺失的资源并防止某些 AEM Assets 功能失败。
 
 ## [!DNL Experience Manager] Guides {#guides}
 
