@@ -3,8 +3,8 @@ title: 如何将基于核心组件的自适应表单另存为草稿，并使用�
 description: 了解如何将基于核心组件的自适应表单另存为草稿。 还了解如何使用草稿和提交组件为登录用户列出草稿和提交？
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
-role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+role: User, Developer
+source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 3%
