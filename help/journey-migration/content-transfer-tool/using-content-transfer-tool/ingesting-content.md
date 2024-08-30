@@ -4,9 +4,9 @@ description: 了解如何使用Cloud Acceleration Manager将内容从迁移集�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
+source-wordcount: '2982'
 ht-degree: 12%
 
 ---
@@ -214,11 +214,20 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 >abstract="引入失败的常见原因是节点属性值超过了最大值。请遵循文档（包括与 BPA 报告相关的文档）来纠正这种情况。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="迁移先决条件"
 
-MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，则引入将失败，日志将包含`BSONObjectTooLarge`错误，并指定哪个节点超过最大值。 这是MongoDB限制。
+MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，摄取将失败，并且日志将包含以下任一值：
+
+* 出现`BSONObjectTooLarge`错误并指定哪个节点超过了最大值，或者
+* `BsonMaximumSizeExceededException`错误，表示节点可能包含超过最大大小**的unicode字符
+
+这是MongoDB限制。
 
 有关更多信息以及有助于查找所有大型节点的Oak工具链接，请参阅[内容传输工具先决条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)中的`Node property value in MongoDB`注释。 修复所有大小较大的节点后，再次运行提取和摄取。
 
 要避免此限制，请在源AEM实例上运行[最佳实践分析器](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)并查看它提供的结果，特别是[“不支持的存储库结构”(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs)模式。
+
+>[!NOTE]
+>
+>[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 2.1.50+版将报告包含超过最大大小的Unicode字符的大型节点。 请确保您运行的是最新版本。 低于2.1.50的BPA版本将不会识别和报告这些大型节点，并且需要使用上述先决条件Oak工具单独发现它们。
 
 ### 引入已取消 {#ingestion-rescinded}
 
