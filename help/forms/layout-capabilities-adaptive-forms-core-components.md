@@ -4,7 +4,7 @@ description: 自适应Forms在各种设备上的布局和外观受布局设置�
 feature: Adaptive Forms, Core Components
 keywords: 基于核心组件的自适应表单布局、表单的不同布局、动态表单布局AEM、AEM Cloud Service表单布局、AEM核心组件中的表单布局类型、自适应表单布局
 role: User, Developer, Admin
-source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
+source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -326,8 +326,6 @@ ht-degree: 1%
 ## 如何使用新布局替换现有布局？
 
 您可以使用新布局替换表单的布局，其中涉及修改组件在表单中的排列和显示方式。
-
-
 
 执行以下步骤以替换表单的现有布局：
 
