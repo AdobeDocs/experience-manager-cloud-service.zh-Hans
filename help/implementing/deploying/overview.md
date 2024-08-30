@@ -4,10 +4,10 @@ description: 了解部署到 AEM as a Cloud Service 的基础知识和最佳实�
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
 workflow-type: tm+mt
-source-wordcount: '3441'
-ht-degree: 96%
+source-wordcount: '3440'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 与 AEM 内部部署和 Managed Services 解决方案相比，AEM as a Cloud Service 中的代码开发基础是相似的。开发人员编写代码并在本地进行测试，然后将代码推送到 AEM as a Cloud Service 上的远程环境。需要使用 Cloud Manager，它是 Managed Services 的一个可选内容交付工具。现在，该交付工具是用于将代码部署到 AEM as a Cloud Service 开发、暂存和生产环境的唯一机制。要在部署上述环境之前进行快速功能验证和调试，可以将代码从本地环境同步到[快速开发环境](/help/implementing/developing/introduction/rapid-development-environments.md)。
 
-[AEM 版本](/help/implementing/deploying/aem-version-updates.md)的更新始终是独立于推送[自定义代码](#customer-releases)的部署事件。从另一个角度来看，自定义代码版本应针对生产中的 AEM 版本进行测试，因为这是它部署到其上的版本。之后将频繁进行 AEM 版本更新，并会自动应用这些更新。它们旨在与已部署的客户代码向后兼容。
+[AEM 版本](/help/implementing/deploying/aem-version-updates.md)的更新始终是独立于推送[自定义代码](#customer-releases)的部署事件。从另一个角度来看，自定义代码版本应针对生产中的 AEM 版本进行测试，因为这是它部署到其上的版本。之后进行的AEM版本更新（经常进行并自动应用）旨在与已部署的客户代码向后兼容。
 
 本文档的其余部分描述开发人员应如何调整他们的实践，以便他们同时使用 AEM as a Cloud Service 的版本更新和客户更新。
 
