@@ -4,10 +4,10 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 2%
+source-wordcount: '1283'
+ht-degree: 5%
 
 ---
 
@@ -54,7 +54,7 @@ data:
           authenticator: edge-auth
 ```
 
-有关`data`节点上属性的描述，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
 其他属性包括：
 
@@ -100,7 +100,7 @@ data:
            authenticator: purge-auth
 ```
 
-有关`data`节点上属性的描述，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
 其他属性包括：
 
@@ -118,6 +118,8 @@ data:
 
 >[!NOTE]
 >在部署引用清除密钥的配置之前，必须将清除密钥配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。
+
+您可以引用[教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
 
 ## 基本身份验证 {#basic-auth}
 
@@ -156,7 +158,7 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-有关`data`节点上属性的描述，请参阅[使用配置管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
+请参阅 [使用配置管道](/help/operations/config-pipeline.md#common-syntax)，了解 `data` 节点上方属性的描述。`kind`属性值应为&#x200B;*CDN*，`version`属性应设置为`1`。
 
 此外，语法包括：
 
