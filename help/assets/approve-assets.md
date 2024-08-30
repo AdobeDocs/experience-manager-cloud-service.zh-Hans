@@ -2,9 +2,10 @@
 title: 批准Experience Manager中的资源
 description: 了解如何在 [!DNL Experience Manager]中批准资源。
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '676'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 2%
 
 ## 审批资源 {#approve-assets}
 
-您可以同时批准[!DNL Experience Manager]和[!DNL Experience Manager Assets]中的资源。 要在[!DNL Experience Manager]中批准资源，请执行以下步骤：
+要在[!DNL Experience Manager Admin view]中批准资源，请执行以下步骤：
 
 1. 选择资产并单击顶部窗格中的&#x200B;**[!UICONTROL 属性]**。
 1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，向下滚动到&#x200B;**[!UICONTROL 审核状态]**。
@@ -51,7 +52,7 @@ ht-degree: 2%
 ## 批量审批资产 {#bulk-approve-assets}
 
 通过一次快速批准多个资产来简化您的工作流。 您可以批量批准资产以加快批准流程，从而节省时间并提高工作效率。
-<br>按照以下步骤在[!DNL Experience Manager]中批准批量资产：
+<br>按照以下步骤在[!DNL Experience Manager Admin view]中批准批量资产：
 
 1. 在创作环境(https://author-pXXX-eYYY.adobeaemcloud.com)中创建文件夹。 将&#x200B;_XXX_&#x200B;替换为您的项目ID，将&#x200B;_YYY_&#x200B;替换为Experience Manager中的环境ID。
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据配置文件]**。
@@ -102,4 +103,3 @@ ht-degree: 2%
    >[!NOTE]
    >
    >仅在Assets视图中提供了复制已批准资源的投放URL的选项。
-

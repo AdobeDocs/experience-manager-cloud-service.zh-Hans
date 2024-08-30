@@ -4,10 +4,10 @@ description: 如何访问  [!DNL Assets View]，其登录体验，支持的用�
 role: User, Leader
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: d71107be2831bf00bff3856d7cd0e10818ec6be5
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 95%
+source-wordcount: '358'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,11 @@ ht-degree: 95%
 
 要更改您的 [!UICONTROL Experience Cloud 偏好设置]，请单击[!UICONTROL 偏好设置]。
 
-![切换设色和浅色主题的偏好设置](assets/theme-change.png)
+![用于切换深色和浅色主题的首选项](assets/theme-change.png)
+
+>[!NOTE]
+>
+>如果您导航到Assets视图并看到`Network Error`消息，请确保您执行[跨源资源共享(CORS)配置](/help/headless/deployment/cross-origin-resource-sharing.md)文章中提到的说明。
 
 ## [!DNL Assets View] 用例 {#use-cases}
 
