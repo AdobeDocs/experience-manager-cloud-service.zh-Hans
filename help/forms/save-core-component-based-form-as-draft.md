@@ -4,9 +4,9 @@ description: 了解如何将基于核心组件的自适应表单另存为草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2561145c37fe2ba6a38482fb2d1be614a971b418
+source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1384'
 ht-degree: 3%
 
 ---
@@ -44,6 +44,8 @@ ht-degree: 3%
 1. 在&#x200B;**[!UICONTROL Azure存储帐户]**&#x200B;和&#x200B;**[!UICONTROL Azure访问密钥]**&#x200B;字段中指定[!DNL Azure]存储帐户的名称。
 
    ![Azure 存储配置](/help/forms/assets/save-form-as-draft-azure-storage.png)
+
+   在`Azure Storage Account`文本框中输入`Connection String`，在`Azure Access key`文本框中输入`Azure Key`。
 
 1. 单击&#x200B;**保存**。
 
