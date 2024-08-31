@@ -4,9 +4,9 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
+source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1379'
 ht-degree: 5%
 
 ---
@@ -73,6 +73,29 @@ data:
 
 >[!NOTE]
 >在部署引用Edge密钥的配置之前，必须将其配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。
+
+### 安全迁移以降低流量受阻的风险 {#migrating-safely}
+
+如果您的站点已上线，请在迁移到客户管理的CDN时务必谨慎，因为错误配置可能会阻止公共流量；这是因为AdobeCDN只会接受具有预期X-AEM-Edge-Key标头值的请求。 建议采用一种方法，在此方法中身份验证规则中临时包含附加条件，这会使其仅在包含测试标头时评估请求：
+
+```
+    - name: edge-auth-rule
+        when:
+          allOf:  
+            - { reqProperty: tier, equals: "publish" }
+            - { reqHeader: x-edge-test, equals: "test" }
+        action:
+          type: authenticate
+          authenticator: edge-auth
+```
+
+可以使用以下`curl`请求模式：
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <CONFIGURED_EDGE_KEY>" -H "x-edge-test: test"
+```
+
+成功测试后，可以删除其他条件并重新部署配置。
 
 ## 清除API令牌 {#purge-API-token}
 
