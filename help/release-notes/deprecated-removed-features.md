@@ -4,10 +4,10 @@ description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
+source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
 workflow-type: tm+mt
 source-wordcount: '2172'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,8 +18,7 @@ ht-degree: 100%
 >title="AEM as a Cloud Service 中已弃用和已删除的功能"
 >abstract="AEM as a Cloud Service 具有云原生部署模型。某些功能和特性已由云原生对应功能和特性取代，此选项卡显示了它们。"
 
-
-Adobe 不断评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。此外，由于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供了云原生部署模型，因此某些功能和特性已由云原生对应功能和特性取代。
+Adobe不断评估产品功能，以便随着时间的推移，用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终仔细考虑向后兼容性。 此外，由于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供了云原生部署模型，因此某些功能和特性已由云原生对应功能和特性取代。
 
 为了传达即将删除/替换 [!DNL Experience Manager] 功能，以下规则适用：
 
