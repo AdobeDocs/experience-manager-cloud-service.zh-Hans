@@ -4,9 +4,9 @@ description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2172'
 ht-degree: 100%
 
 ---
@@ -95,12 +95,6 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
     <td>使用 Sling 的 Discovery API 作为替代方案</td>
     <td>2015</td>
     <td>已删除</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.settings</td>
-    <td>AEM as a Cloud Service 在运行时不支持运行模式或文件系统访问。 </td>
-    <td>10/5/20</td>
-    <td>2021 年底</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
