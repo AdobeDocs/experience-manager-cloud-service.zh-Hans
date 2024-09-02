@@ -3,11 +3,10 @@ title: 如何在自适应Forms中创建和使用主题？
 description: 您可以使用主题来设置样式，并使用核心组件为自适应表单提供视觉标识。 您可以跨任意数量的自适应Forms共享主题。
 keywords: 自适应表单设置核心组件样式。 在核心组件中使用主题、设置自适应表单的样式、自定义主题
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2816'
 ht-degree: 5%
 
 ---
@@ -172,7 +171,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 #### 3.自定义主题 {#customize-the-theme}
 
-您可以使用主题的全局变量自定义单个组件或进行主题级别更改。 对全局变量所做的任何更改都会影响所有单独的组件。 例如，您可以使用全局变量更改自适应表单所有组件的边框颜色，并使用明亮的填充颜色使用按钮组件设置CTA（行动号召）：
+您可以使用主题的全局变量自定义单个组件或进行主题级别更改。 对全局变量所做的任何更改都会影响所有单独的组件。 例如，您可以使用全局变量更改自适应表单所有组件的边框颜色，并使用明亮的填充颜色来使用按钮组件设置CTA（行动号召）：
 
 * [设置主题级别样式](#theme-customization-global-level)
 
@@ -428,11 +427,6 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * **更改容器面板布局宽度**
 
   不建议更改容器面板布局宽度。 指定容器面板的宽度时，其将变为静态并且不会适应不同的显示。
-
-* **使用表单编辑器或主题编辑器处理页眉和页脚**
-
-  如果要使用字体样式、背景和透明度等样式选项来设置页眉和页脚的样式，请使用主题编辑器。
-如果要提供徽标图像、标题中的公司名称以及页脚中的版权信息等信息，请使用表单编辑器选项。
 
 ## 常见问题解答 {#faq}
 
