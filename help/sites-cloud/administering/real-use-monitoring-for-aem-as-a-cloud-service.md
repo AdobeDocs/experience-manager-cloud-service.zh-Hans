@@ -4,9 +4,9 @@ description: 了解如何使用实时监控(RUM)实时捕获和分析网站或�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
+source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1213'
 ht-degree: 1%
 
 ---
@@ -34,11 +34,6 @@ RUM（实时监控）服务是一种性能监控技术，可实时捕获和分�
 ## 谁可以从实时监控服务中受益？ {#who-can-benefit-from-rum-service}
 
 AEM开发了RUM以帮助客户和Adobe了解访客如何与AEM站点进行交互。 RUM可用于帮助诊断性能问题以及衡量实验的有效性。 RUM通过取样保护访客的隐私 — 仅监控所有页面查看中的一小部分 — 并且不收集任何个人身份信息(PII)。
-
-
-## 了解实际使用情况监控服务的工作方式 {#understand-how-the-rum-service-works}
-
-AEM使用RUM帮助客户和Adobe了解访客如何与AEM站点进行交互。 它可以帮助他们诊断性能问题，并衡量实验的有效性。 RUM通过取样保护访客的隐私 — 仅监控所有页面查看中的一小部分 — 并且不收集任何个人身份信息(PII)。
 
 ## Real Use监控服务和隐私 {#rum-service-and-privacy}
 
