@@ -3,10 +3,10 @@ title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源、Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
+source-git-commit: ea5ce2f443f1502a690b34cbf1b951ecf6aae9b2
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 0%
+source-wordcount: '1524'
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,29 @@ Content Hub上各种权限的变体包括：
 
 * [Content Hub用户](#onboard-content-hub-users)：访问Content Hub门户上的品牌批准资源。
 
-* [Content Hub管理员](#onboard-content-hub-administrator)：除了访问品牌批准的资源、将资源上传到Content Hub、Adobe Express集成以编辑图像(如果您拥有Adobe Express权限)之外，还可以访问Content Hub上的[配置用户界面](/help/assets/configure-content-hub-ui-options.md)。
+* [Content Hub管理员](#onboard-content-hub-administrator)：除了访问Content Hub上品牌批准的资源、将资源上传到Content Hub、Adobe Express集成以编辑图像之外(如果您拥有Adobe Express权限)，还可以访问[配置用户界面](/help/assets/configure-content-hub-ui-options.md)。
 
 * [有权添加资产的Content Hub用户](#onboard-content-hub-users-add-assets)：除了访问Content Hub门户上的品牌批准资产外，还可以[将资产上传到Content Hub](/help/assets/upload-brand-approved-assets.md)。
 
 * [有权将资源重新混合到新变体的Content Hub用户](#onboard-content-hub-users-remix-assets)：[Adobe Express集成](/help/assets/edit-images-content-hub.md)(如果您具有Adobe Express权限)，以及访问Content Hub门户上的品牌批准资源。
 
 * [Experience Manager Assets用户](#experience-manager-assets-users)：能够在Experience Manager Assetsas a Cloud Service上批准资源，以便这些资源可在Content Hub上使用。
+
+下表汇总了可用的Content Hub用户类型、这些用户拥有的权限以及获取这些权限所需的产品配置文件：
+
+| 用户角色 | Content Hub用户 | 有权添加资源的Content Hub用户 | 有权重新组合资源的Content Hub用户 | Content Hub管理员 |
+|---------------|----------|----------|-------------------------|---|
+| **功能** |
+| 在Content Hub门户上访问品牌批准的资源 | ✓ | ✓ | ✓ | ✓ |
+| 从Content Hub门户上传资源 | − | ✓ | ✓ | ✓ |
+| 使用Adobe Express集成编辑图像 | − | − | ✓ | − |
+| 访问Content Hub配置用户界面 | − | − | − | ✓ |
+| **用户需要位于这些产品配置文件中(Admin Console)** |
+| AEM >交付实例> AEM Assets受限用户 | ✓ | ✓ | ✓ | ✓ |
+| AEM >生产创作实例> AEM用户 | − | ✓ | ✓ | − |
+| AEM >生产创作实例> AEM管理员 | − | − | − | ✓ |
+| Adobe Express | − | − | ✓ | − |
+| **更多信息** | 查看[Content Hub用户](#onboard-content-hub-users) | 查看有权添加资源的[Content Hub用户](#onboard-content-hub-users-add-assets) | 查看有权将资源重新混合到新变体的[Content Hub用户](#onboard-content-hub-users-remix-assets) | 查看[Content Hub管理员](#onboard-content-hub-administrator) |
 
 ## 步骤1：使用Cloud Manager启用适用于Experience Manager Assets的Content Hub {#enable-content-hub}
 
@@ -53,7 +69,7 @@ Content Hub上各种权限的变体包括：
 
 1. 单击&#x200B;**[!UICONTROL 更新]**。
 
-Content Hub现已为Experience Manager Assetsas a Cloud Service启用。
+Content Hub现已为Experience Manager Assetsas a Cloud Service启用。 在生产环境中启用Content Hub后，您将无法以自助方式禁用它。
 
 >[!NOTE]
 >
