@@ -3,9 +3,9 @@ title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源、Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 9ac22ebcca619d91a38111bd706986b8d4a4d189
+source-git-commit: 3bb3920d043c83dac6f8e566761b626236bd2a04
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1569'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Content Hub上各种权限的变体包括：
 
 >[!NOTE]
 >
->[Experience Manager Assets用户](#experience-manager-assets-users)能够在Experience Manager Assetsas a Cloud Service上批准资源，以便这些资源可在Content Hub上使用。 必须使用Admin Console将这些用户添加到AEM >生产创作实例> AEM用户产品配置文件中。
+>[Experience Manager Assets用户](#experience-manager-assets-users)能够在Experience Manager Assetsas a Cloud Service环境中批准资源，以便这些资源在Content Hub上可用。 必须使用Admin Console将这些用户添加到AEM >生产创作实例> AEM用户产品配置文件中。
 
 ## 步骤1：使用Cloud Manager启用适用于Experience Manager Assets的Content Hub {#enable-content-hub}
 
