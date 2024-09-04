@@ -4,9 +4,9 @@ description: 了解如何使用实时监控(RUM)实时捕获和分析网站或�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 1bb463fe59e89e6360dceefdaaec395084fc80c5
+source-git-commit: 917e9496dcbb8c6fe72b7a718211ee5bbecb3323
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1200'
 ht-degree: 1%
 
 ---
@@ -93,10 +93,11 @@ RUM数据有利于以下目的：
 
 ## 常见问题解答 {#faq}
 
+<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+1. **Can customers integrate the RUM service scripts with third-party systems like Dynatrace?**
 
-1. **客户能否将RUM服务脚本与Dynatrace等第三方系统集成？**
-
-   是的。
+   Yes.
+-->
 
 1. **是否正在收集“交互到下一个绘制”、“第一字节的时间”和“第一个内容绘制”Web虚拟量度？**
 
