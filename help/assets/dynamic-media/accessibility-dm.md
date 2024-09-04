@@ -7,7 +7,7 @@ content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 1%
@@ -15,6 +15,8 @@ ht-degree: 1%
 ---
 
 # Dynamic Media 中的辅助功能 {#accessibility-in-dm}
+
+{{work-with-dynamic-media}}
 
 Dynamic Media在整个创作用户界面中支持键盘控制和辅助技术，例如JAWS和NVDA屏幕阅读器。
 

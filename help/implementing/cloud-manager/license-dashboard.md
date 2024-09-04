@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 31%
+source-wordcount: '925'
+ht-degree: 37%
 
 ---
 
@@ -65,9 +65,12 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 ## 查看使用情况详细信息 {#view-usage-details}
 
-通过&#x200B;**查看使用情况详细信息**&#x200B;按钮，可以访问所选解决方案的&#x200B;**使用情况详细信息**&#x200B;窗口。 此窗口提供详细的细分，包括显示解决方案使用情况的图表。 如何衡量该使用情况取决于选择的解决方案。
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-### 网站使用情况详细信息 {#sites-usage-details}
+Cloud Manager的“许可证”区域中的&#x200B;**查看使用情况详细信息**&#x200B;按钮提供了当前资源使用情况的详细细目。 单击该链接后，将打开一个报表或功能板，其中显示与您的许可证相关的重要量度。 <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." -->此功能可帮助您进行监控，并确保您在合同范围内保持有效，同时提供见解以更好地规划和优化资源。
+
+### Sites 使用情况详细信息 {#sites-usage-details}
 
 **Sites使用详细信息**&#x200B;窗口显示的图形概述了基于[内容请求的站点许可证的使用情况。](#what-is-a-content-request)
 
@@ -77,27 +80,28 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 
 窗口的右侧显示一个面积图，其中显示了所选合同年度内按项目在一段时间内细分的使用情况。 将鼠标悬停在其上方将显示一个弹出窗口，其中包含所选时间点的每个项目的详细信息。
 
-### Assets使用情况详细信息 {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-**Assets使用情况详细信息**&#x200B;窗口显示的图形概述了基于[存储](#storage)和[标准用户的Assets许可证的使用情况。](#standard-users)选择相应的选项卡以在视图之间切换。
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
-对于存储和标准用户视图，您可以使用&#x200B;**环境类型**&#x200B;下拉菜单在生产、暂存和开发环境之间切换视图。
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
-#### 存储 {#storage}
+#### Storage {#storage}
 
-存储的![Assets使用情况详细信息窗口](assets/assets-usage-details-storage.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-窗口的左侧显示一个饼图，其中显示在&#x200B;**查看合同年度**&#x200B;下拉列表中选定合同年度的合同细目。
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-窗口的右侧显示一个面积图，其中显示了所选合同年度内按项目在一段时间内细分的使用情况。 将鼠标悬停在其上方将显示一个弹出窗口，其中包含所选时间点的每个项目的详细信息。
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-#### 标准用户 {#standard-users}
+#### Standard Users {#standard-users}
 
-![标准用户的Assets使用情况详细信息窗口](assets/assets-usage-details-standard-users.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-窗口的左侧显示一个饼图，其中显示在&#x200B;**查看合同年度**&#x200B;下拉列表中选定合同年度的合同细目。
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-窗口的右侧显示一个面积图，其中显示了所选合同年度内按项目在一段时间内细分的使用情况。 将鼠标悬停在其上方将显示一个弹出窗口，其中包含所选时间点的每个项目的详细信息。
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## 常见问题解答 {#faq}
 

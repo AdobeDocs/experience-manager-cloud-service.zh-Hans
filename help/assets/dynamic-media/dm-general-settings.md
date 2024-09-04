@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '2525'
 ht-degree: 0%
@@ -20,6 +20,8 @@ ht-degree: 0%
 
 <!-- hide: yes
 hidefromtoc: yes -->
+
+{{work-with-dynamic-media}}
 
 配置&#x200B;**[!UICONTROL Dynamic Media常规设置]**&#x200B;仅适用于以下情况：
 

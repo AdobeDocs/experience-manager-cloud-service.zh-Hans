@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 ---
 
 # 关于配置Dynamic MediaCloud Service {#configuring-dynamic-media}
+
+{{work-with-dynamic-media}}
 
 如果您将Adobe Experience Manager用于不同的环境，例如开发、暂存和实时生产，则请为每个环境配置Dynamic MediaCloud Service。
 

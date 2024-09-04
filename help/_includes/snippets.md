@@ -1,8 +1,8 @@
 ---
-source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 77%
+source-wordcount: '914'
+ht-degree: 75%
 
 ---
 # 代码片段 {#snippets}
@@ -155,3 +155,9 @@ ht-degree: 77%
 >
 >如果您使用或打算使用前端管道来开发站点，则必须预先添加Cloud Manager IP允许列表。
 >请参阅[将Cloud Manager IP允许列表用于前端管道](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
+
+## 使用 Dynamic Media {#work-with-dynamic-media}
+
+>[!TIP]
+>
+>您是Dynamic Media的新用户吗？ 有关Dynamic Media的简要概述，请参阅[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。

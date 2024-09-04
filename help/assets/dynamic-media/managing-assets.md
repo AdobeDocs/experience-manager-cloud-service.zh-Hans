@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 18%
@@ -13,6 +13,8 @@ ht-degree: 18%
 ---
 
 # 管理 Dynamic Media 资源 {#managing-assets}
+
+{{work-with-dynamic-media}}
 
 管理Dynamic Media资源（图像、视频和交互式资源）上传后，需要执行许多任务，包括预览、下载或发布。
 

@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
 workflow-type: tm+mt
 source-wordcount: '2677'
 ht-degree: 0%
@@ -19,6 +19,8 @@ ht-degree: 0%
 ---
 
 # Dynamic Media历程：基础知识，第二部分  {#dm-journey-part2}
+
+{{work-with-dynamic-media}}
 
 欢迎使用Dynamic Media历程：基础知识，第II部分，您可以从中学习以下内容：
 
