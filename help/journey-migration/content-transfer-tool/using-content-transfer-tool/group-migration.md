@@ -1,21 +1,21 @@
 ---
-title: 组迁移
+title: 群组迁移
 description: AEM as a Cloud Service中的组迁移概述。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# 组迁移 {#group-migration}
+# 群组迁移 {#group-migration}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_groupmigration"
->title="组迁移"
->abstract="内容传输工具可帮助您将组从现有Adobe Experience Manager (AEM)系统复制到AEM as a Cloud Service。"
+>title="群组迁移"
+>abstract="内容传输工具可帮助您将组从现有的 Adob&#x200B;&#x200B;e Experience Manager (AEM) 系统复制到 AEM as a Cloud Service."
 
 >[!NOTE]
 >有关用户映射工具的早期版本，请参阅[旧文档](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)。
@@ -25,9 +25,9 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermigration"
 >title="用户未迁移"
->abstract="内容传输工具不再迁移用户。 用户应在Admin Console中进行管理。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEMAdmin Console文档"
->additional-url="https://adminconsole.adobe.com/" text="AEMAdmin Console"
+>abstract="内容转移工具不再迁移用户。用户应在 Admin Console 中进行管理。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="AEM Admin Console 文档"
+>additional-url="https://adminconsole.adobe.com/" text="AEM Admin Console"
 
 在过渡到Adobe Experience Manager (AEM)as a Cloud Service的过程中，必须将组从现有AEM系统迁移到AEM as a Cloud Service。 此任务由内容传输工具完成。
 

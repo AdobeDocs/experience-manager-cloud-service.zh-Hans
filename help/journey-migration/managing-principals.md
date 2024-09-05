@@ -1,20 +1,20 @@
 ---
 title: 管理主体
 description: 管理迁移主体，使用Admin Console
-source-git-commit: 5bf497fb2122cc3d3ff0903aeb680a35e90f33b0
+exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
-
 
 # 管理主体 {#managing-principals}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_managingprincipals"
 >title="管理主体"
->abstract="了解在内容迁移期间或之后需要执行哪些操作来管理用户"
+>abstract="了解在内容迁移期间或之后管理用户需要做什么"
 
 在将内容传输到AEM as a Cloud Service云环境之前，可以在Admin Console上执行几项任务。  它们是：创建用户、创建组并将用户分配给组；这些用户和组将存在于Adobe的Identity Management服务IMS中，该服务用于管理所有基于Adobe云的服务的用户和组。
 

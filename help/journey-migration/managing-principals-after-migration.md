@@ -1,20 +1,20 @@
 ---
 title: 迁移后管理主体
-description: 了解如何在IMS和AEM中设置用户和组
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+description: 学习如何在 IMS 和 AEM 中设置用户和群组
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
-
 
 # 迁移后管理主体 {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
 >title="迁移后管理主体"
->abstract="了解如何在IMS和AEM中设置用户和组"
+>abstract="学习如何在 IMS 和 AEM 中设置用户和群组"
 
 本文档介绍了客户应采取的高级步骤，以便在IMS和AEM中设置用户和组以使用其AEM as a Cloud Service环境。
 
@@ -56,5 +56,3 @@ ht-degree: 0%
 * 当用户首次登录时，将会在AEM中创建其IMS用户，并且他们应该有权访问新组，从而有权访问原始收藏集组。
 
 注意：对于批量分配用户，必须使用上述步骤在IMS中创建用户；无法通过批量上传再次创建IMS中已存在的用户。
-
-

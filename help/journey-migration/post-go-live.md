@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 16%
+ht-degree: 22%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 故障排除"
->abstract="审查持续开发的最佳实践并管理日志，以及开发人员控制台和CRXDE Lite等工具，以帮助对AEM问题进行故障诊断"
+>abstract="审查持续开发的最佳实践，并管理日志以及像 Developer console 和 CRXDE Lite 这样的工具，以帮助解决 AEM 中的问题。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html#" text="访问和管理日志"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 开发工具"
 
