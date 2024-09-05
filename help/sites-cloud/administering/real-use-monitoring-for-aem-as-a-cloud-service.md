@@ -4,7 +4,7 @@ description: 了解如何使用实时监控(RUM)实时捕获和分析网站或�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 917e9496dcbb8c6fe72b7a718211ee5bbecb3323
+source-git-commit: c0b86950e36b936d7d471b5bf7b671df7db5d317
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 1%
