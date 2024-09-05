@@ -4,9 +4,9 @@ description: 了解如何将 AEM as a Cloud Service 与 Edge Delivery Services �
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 16531cf084ad1b9619f4dffc6d028c7df4002ff5
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '338'
 ht-degree: 100%
 
 ---
@@ -45,9 +45,3 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您可以选择
 Edge Delivery Services 基于块的概念。AEM 附带一个全面的预定义的块库，可扩展它以满足您的项目需求。在 GitHub 中管理 Edge Delivery Services 项目的代码。
 
 请参阅文档[使用 Edge Delivery Services 进行 WYSIWYG 的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解更多信息。
-
-## 现有 AEM 项目 {#existing-projects}
-
-您无需等待创建新 AEM 项目即可从 Edge Delivery Services 受益。可将 Edge Delivery Services 集成到您现有的 AEM 项目中，以使您可立即利用其性能提升。
-
-有关更多信息，请参阅文档[在现有 AEM 项目中使用 Edge Delivery Services](/help/edge/wysiwyg-authoring/existing-projects.md)。

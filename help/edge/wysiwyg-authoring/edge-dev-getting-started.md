@@ -1,20 +1,20 @@
 ---
-title: 用于Edge Delivery Services的WYSIWYG创作的开发人员快速入门指南
-description: 本指南将帮助您启动并运行一个新的Adobe Experience Manager站点，该站点使用Edge Delivery Services和通用编辑器进行WYSIWYG内容创作。
+title: 使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南
+description: 本指南将指导您启动并运行一个新的Adobe Experience Manager站点，该站点使用Edge Delivery Services和通用编辑器进行WYSIWYG内容创作。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 87%
+source-wordcount: '1207'
+ht-degree: 86%
 
 ---
 
 
-# 用于Edge Delivery Services的WYSIWYG创作的开发人员快速入门指南 {#edge-dev-getting-started}
+# 使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南 {#edge-dev-getting-started}
 
-本指南将帮助您启动并运行一个新的Adobe Experience Manager站点，该站点使用Edge Delivery Services和通用编辑器进行WYSIWYG内容创作。
+本指南将指导您启动并运行一个新的Adobe Experience Manager站点，该站点使用Edge Delivery Services和通用编辑器进行WYSIWYG内容创作。
 
 ## 先决条件 {#prerequisites}
 
@@ -23,15 +23,6 @@ ht-degree: 87%
 * 您已学完 [Edge Delivery Services 教程](/help/edge/developer/tutorial.md)。
 * 您有权访问 [AEM Cloud Service 沙盒](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
 * 您已[启用同一沙盒环境上的 Universal Editor](/help/implementing/universal-editor/getting-started.md)。
-
-## 选取适当的编辑器 {#editor-choice}
-
-AEM 提供两个不同的内容编辑器，您可根据自己的情况选择要使用哪个。
-
-* **Universal Editor** - 此编辑器应是新网站的默认选择。
-* **AEM 页面编辑器** - 对于将现有 AEM Sites 迁移到 Edge Delivery Services 应选择此编辑器。
-
-本指南重点介绍使用 Universal Editor 在 Edge Delivery Services 上创作 AEM 项目。有关选择适当的编辑器以及将现有 AEM Sites 迁移到 Edge Delivery Services 的更多详细信息，请参阅文档 [ Edge Delivery Services 与 AEM](/help/edge/using.md)结合使用。
 
 ## Edge Delivery Services 开发的核心概念 {#core-concepts}
 
@@ -131,7 +122,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 >
 >要使用 Universal Editor 编辑您的站点，您必须使用基于 Chromium 的浏览器。
 
-1. 从GitHub的[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)处下载最新的使用Edge Delivery Services站点模板进行WYSIWYG创作。
+1. 在[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)处从GitHub下载最新的使用Edge Delivery Services站点模板进行WYSIWYG创作。
 
 1. 登录到您的 AEM as a Cloud Service 创作实例，导航到“站点”控制台，然后点击或单击&#x200B;**创建** -> **从模板创建站点**。
 
@@ -193,10 +184,10 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 ## 后续步骤 {#next-steps}
 
-现在，您已通过Edge Delivery Services项目开始进行WYSIWYG创作，您可以开始创建和设置自己的块。
+现在，您已有一个使用Edge Delivery Services项目创作的WYSIWYG，您可以开始创建和设置自己的块。
 
 请参阅 [创建经过检测可与 Universal Editor 结合使用的区块](/help/edge/wysiwyg-authoring/create-block.md)指南以了解更多信息。
 
 >[!TIP]
 >
->有关创建启用WYSIWYG创作且将AEM as a Cloud Service作为内容源的新Edge Delivery Services项目的端到端演练，请查看[此AEM GEM网络研讨会。](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有关创建支持WYSIWYG以AEM as a Cloud Service作为内容源进行创作的新Edge Delivery Services项目的端到端演练，请查看[此AEM GEM网络研讨会。](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

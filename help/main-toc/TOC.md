@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f7508f2113d81aae205c63a25097ed920b124011
+source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
 workflow-type: tm+mt
-source-wordcount: '5538'
+source-wordcount: '5533'
 ht-degree: 96%
 
 ---
@@ -278,7 +278,7 @@ ht-degree: 96%
          + [验证内容转移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [迁移封闭用户组](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)
          + [处理大型内容存储库](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [组迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
+         + [群组迁移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)
          + [从源中提取内容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [将内容提取到云服务中](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [迁移内容后建立索引](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md)
@@ -609,7 +609,7 @@ ht-degree: 96%
       + [监视资源、文件夹和收藏集](/help/assets/manage-notifications-assets-view.md)
       + [管理报表](/help/assets/manage-reports-assets-view.md)
       + [管理标记](/help/assets/tagging-management-assets-view.md)
-      + [内容凭据](/help/assets/content-credentials.md)
+      + [Content Credentials](/help/assets/content-credentials.md)
       + [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 
@@ -913,7 +913,6 @@ ht-degree: 96%
       + [创建区块](/help/edge/wysiwyg-authoring/create-block.md)
       + [内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [表格数据和电子表格](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [现有项目和 Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
       + [管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
    + 基于文档的创作 {#document-authoring}
