@@ -4,9 +4,9 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: c8059260ab0ff13ed85f55eda2e09ca5cb678fa9
+source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1443'
 ht-degree: 5%
 
 ---
@@ -72,7 +72,7 @@ data:
    * 操作 — 必须指定“authenticate”（身份验证），并引用目标身份验证器。
 
 >[!NOTE]
->在部署引用Edge密钥的配置之前，必须将其配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。
+>在部署引用Edge密钥的配置之前，必须将其配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 建议使用长度最小为32字节的唯一随机密钥；例如，Open SSL加密库可以通过执行命令`openssl rand -hex 32`来生成随机密钥。
 
 ### 安全迁移以降低流量受阻的风险 {#migrating-safely}
 
@@ -140,7 +140,7 @@ data:
    * 操作 — 必须指定“authenticate”（身份验证），并引用目标身份验证器。
 
 >[!NOTE]
->在部署引用清除密钥的配置之前，必须将清除密钥配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。
+>在部署引用清除密钥的配置之前，必须将清除密钥配置为[机密类型Cloud Manager环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 建议使用长度最小为32字节的唯一随机密钥；例如，Open SSL加密库可以通过执行命令openssl rand -hex 32来生成随机密钥
 
 您可以引用[教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)，该教程侧重于配置清除密钥和执行CDN缓存清除。
 
