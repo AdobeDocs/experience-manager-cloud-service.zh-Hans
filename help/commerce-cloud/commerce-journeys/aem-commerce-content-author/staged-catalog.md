@@ -4,9 +4,9 @@ description: 了解如何管理分阶段的产品目录体验。
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 10%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 10%
 
 本文档可帮助您了解如何根据分阶段的产品数据和AEM启动次数来管理产品目录体验。 很多时候，作者必须同时准备即将推出的产品（如新的服装系列）。 这需要访问暂存的产品数据（尚未启用）以及准备内容的能力。 此新内容将在产品发布时上线。
 
-    >[！NOTE]
-    >
-    >此功能仅适用于支持基于令牌的身份验证的Adobe Commerce或Cloud Edition和第三方连接器。 有关其他信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
+>[!NOTE]
+>
+>此功能仅适用于支持基于令牌的身份验证的Adobe Commerce或Cloud Edition以及第三方连接器。 有关详细信息，请参阅[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
 
 首先，我们来了解作者如何使用CIF访问暂存的产品数据。
 
@@ -45,9 +45,9 @@ ht-degree: 10%
 
 ![阶段plp](assets/staged-plp.png)
 
-    >[！NOTE]
-    >
-    >Omnisearch没有上下文，因此将只返回实时产品目录数据
+>[!NOTE]
+>
+>Omnisearch没有上下文，因此将只返回实时产品目录数据
 
 ## AEM 启动项 {#launches}
 

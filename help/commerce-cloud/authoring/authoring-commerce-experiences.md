@@ -4,9 +4,9 @@ description: 了解如何通过在不离开上下文的情况下访问产品数�
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ CIF加载项通过特定于commerce的功能扩展了AEM创作。 这允许作�
 
 ![没有选择的轮播组件](../assets/authoring/carousel_component_without_selection.png)
 
-此组件的“配置”对话框需要1 ： n类别。 CIF使用UID/ID作为类别标识符。 作者可以手动输入UID，也可以单击文件夹图标以打开类别选取器。 选择并关闭选取器后，“组件”对话框将显示所选类别的名称。
+此组件的“配置”对话框需要1 ： n类别。 CIF使用UID / ID作为类别标识符。 作者可以手动输入UID或单击文件夹图标以打开类别选取器。 选择并关闭选取器后，“组件”对话框将显示所选类别的名称。
 
 ![包含选定内容的轮播组件](../assets/authoring/carousel_component_with_selection.png)
 
@@ -71,9 +71,9 @@ CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌�
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[！NOTE]
-    >
-    >如果同时选择了类别和产品，则使用该产品。
+>[!NOTE]
+>
+> 如果同时选择了类别和产品，则会选择产品。
 
 这会创建一个占位符链接，在页面渲染时，该链接会被替换为真实链接。
 
