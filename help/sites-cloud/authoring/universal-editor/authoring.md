@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
+source-git-commit: ffe90d3919c0f0c1a1c60efccc0191118dfaa84a
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 41%
@@ -88,7 +88,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 ![编辑媒体](assets/ue-edit-media.png)
 
 1. 点按或单击属性边栏中选定图像的预览。
-1. [资源选择器](/help/assets/asset-selector.md#using-asset-selector)窗口会打开，以供您选择资源。
+1. [资源选择器](/help/assets/overview-asset-selector.md#using-asset-selector)窗口会打开，以供您选择资源。
 1. 选择以选择新资源。
 1. 选择&#x200B;**选择**&#x200B;以返回到替换资产的属性边栏。
 

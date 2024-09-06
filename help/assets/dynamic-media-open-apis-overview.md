@@ -2,7 +2,8 @@
 title: 具有OpenAPI功能的Dynamic Media
 description: 了解关键概念，例如为何将Dynamic Media与OpenAPI功能结合使用以及如何启用它。
 role: User
-source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
+exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
+source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 1%
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 具有OpenAPI功能的Dynamic Media提供以下主要优势：
 
-* **无缝集成**：具有OpenAPI功能的Dynamic Media提供了一组全面的搜索和交付API。 它允许开发人员轻松[将资产交付与其应用程序](/help/assets/integrate-dynamic-media-open-apis.md)集成。 这些应用程序包括Adobe和第三方应用程序。 它提供了一个[Micro Frontend资产选择器用户界面](/help/assets/asset-selector.md)来搜索和选择批准的资产。 该选择器可以轻松地与任何基于JavaScript框架的应用程序(如React JS、AngularJS和Vanilla JS)集成。
+* **无缝集成**：具有OpenAPI功能的Dynamic Media提供了一组全面的搜索和交付API。 它允许开发人员轻松[将资产交付与其应用程序](/help/assets/integrate-dynamic-media-open-apis.md)集成。 这些应用程序包括Adobe和第三方应用程序。 它提供了一个[Micro Frontend资产选择器用户界面](/help/assets/overview-asset-selector.md)来搜索和选择批准的资产。 该选择器可以轻松地与任何基于JavaScript框架的应用程序(如React JS、AngularJS和Vanilla JS)集成。
 
 * **数字资产的集中管理**： DAM是所有数字资产的单一真实来源。 您的数字资源在AEM Assets中进行集中管理，并通过使用交付URL引用交付给使用应用程序，而无需复制资源二进制文件。
 
@@ -103,11 +104,11 @@ ht-degree: 1%
    </p>
 </td>
 <td>
-   <a href="/help/assets/asset-selector.md">
+   <a href="/help/assets/overview-asset-selector.md">
    <img alt="Adobe的资源选择器" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/asset-selector.md">
+      <a href="/help/assets/overview-asset-selector.md">
       <strong>Adobe的微前端资源选择器</strong>
       </a>
    </div>
@@ -204,4 +205,3 @@ ht-degree: 1%
 </td>
 
 </table>
-

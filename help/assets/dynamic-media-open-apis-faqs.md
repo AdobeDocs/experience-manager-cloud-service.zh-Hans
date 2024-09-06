@@ -2,9 +2,10 @@
 title: 具有OpenAPI功能的Dynamic Media常见问题解答
 description: 具有OpenAPI功能的Dynamic Media常见问题解答
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
+source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -108,14 +109,14 @@ Adobe的一般指导是将带有OpenAPI栈栈的Dynamic Media用于任何集成�
 | [仅适用于Assetsas a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | 内部部署或AdobeManaged Services中也有提供，其中包含其他配置和配置步骤。 |
 | [受支持的图像修饰符集有限，例如宽度、高度、旋转、翻转、质量和格式](/help/assets/deliver-assets-apis.md) | 丰富的可用图像修饰符集 |
 | [基于用户、角色、日期和时间的受限资源投放](/help/assets/restrict-assets-delivery.md) | 发布到Dynamic Media的Assets可供所有用户访问 |
-| 大多数开发人员熟悉OpenAPI规范。 通过使用[Micro Frontend Asset Selector](/help/assets/asset-selector.md)，AEM Assets的可扩展性变得非常简单。 | 基于SOAP的API，在开发集成自定义时会遇到障碍。 |
+| 大多数开发人员熟悉OpenAPI规范。 通过使用[Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md)，AEM Assets的可扩展性变得非常简单。 | 基于SOAP的API，在开发集成自定义时会遇到障碍。 |
 | 对DAM中的已批准资产所做的任何更改（包括版本更新和元数据修改）都会自动反映在投放URL中。 由于通过CDN为Dynamic Media的OpenAPI功能配置了10分钟的短生存时间(TTL)值，因此，在10分钟之内即可看到所有创作和发布界面的更新。 | 建议的CDN TTL为10小时。 您可以使用缓存失效操作覆盖TTL值。 |
 | 只有已获批准的资产可用于将资产交付到下游应用程序，从而在数字体验中启用品牌批准的资产。 | 对Dynamic Media发布资产的任何更新无需任何审批工作流即可自动发布，这无法确保在数字体验中拥有品牌批准的资产。 |
 | 使用情况报表基于交付的资产数量。 此功能即将推出。 | 使用情况报告不可用。 此功能即将推出。 |
 | 在Assetsas a Cloud Service存储库中标记为已过期的Assets不再可用于下游应用程序。 | 没有固有资产到期。 在从AEM as a Cloud Service存储库中删除资产之前，该资产将一直保持公共状态。 |
 | 不支持图像预设和视频智能裁剪功能。 | 支持图像预设和视频智能裁剪功能。 |
 | 动态视频编码，确保根据输入视频提供最佳编码。 无需进行设置即可进行本机视频交付。 | 无论输入视频如何，标准3都会进行编码（可能影响视频交付性能）。 您需要为不同的视频比特率手动设置不同的编码。 |
-| 很难猜测基于资产UID的URL（启用URL模糊处理），但SEO已优化。 | URL模糊处理仅可用于URL查询参数。 URL中的Assets ID（资源名称）是可识别的。 |
+| 很难猜测基于UID的资产URL（启用URL模糊处理），但SEO已优化。 | URL模糊处理仅可用于URL查询参数。 URL中的Assets ID（资源名称）是可识别的。 |
 
 +++
 
@@ -135,6 +136,3 @@ Adobe的一般指导是将带有OpenAPI栈栈的Dynamic Media用于任何集成�
 | 远程DAM上的资源元数据在AEM Sites实例上也可用。 | 远程DAM上的资源元数据在AEM Sites实例上不可用。 |
 
 +++
-
-
-

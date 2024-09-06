@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
-ht-degree: 96%
+source-wordcount: '5578'
+ht-degree: 95%
 
 ---
 
@@ -456,7 +456,17 @@ ht-degree: 96%
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + 管理数字资源{#manage}
-      + [微前端资源选择器](/help/assets/asset-selector.md)
+      + 微型前端资产选择器{#asset-selector}
+         + [资源选择器概述](/help/assets/overview-asset-selector.md)
+         + 资产选择器集成{#asset-selector-integration}
+            + [资产选择器集成概述](/help/assets/integrate-asset-selector.md)
+            + [将资源选择器与Adobe应用程序集成](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [将资源选择器与非Adobe应用程序集成](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [将Dynamic Media的资源选择器与OpenAPI功能集成](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [资源选择器属性](/help/assets/asset-selector-properties.md)
+         + [资源选择器示例](/help/assets/asset-selector-examples.md)
+         + [资源选择器自定义](/help/assets/asset-selector-customization.md)
+         + [资产选择器上传](/help/assets/asset-selector-upload.md)
       + [微前端目标选择器](/help/assets/destination-selector.md)
       + [共享资源](/help/assets/share-assets.md)
       + [再处理资源](/help/assets/reprocessing.md)
