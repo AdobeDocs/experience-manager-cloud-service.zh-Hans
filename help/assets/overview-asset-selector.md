@@ -2,7 +2,8 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 使用资产选择器可在应用程序中搜索、查找和检索资产的元数据和演绎版。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 35%
@@ -19,7 +20,7 @@ ht-degree: 35%
 
 资源选择器提供了许多好处，例如：
 
-* 使用Vanilla JavaScript库轻松与任何[Adobe](#integrate-asset-selector-adobe-app.md)或[非Adobe](#integrate-asset-selector.md)应用程序集成。
+* 使用Vanilla JavaScript库轻松与任何[Adobe](/help/assets/integrate-asset-selector-adobe-app.md)或[非Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)应用程序集成。
 * 易于维护，因为对资源选择器包的更新将自动部署到可用于应用程序的资源选择器。您的应用程序中无需更新即可加载最新的修改。
 * 易于定制，因为提供了用于控制应用程序中的资源选择器显示的属性。
 * 全文搜索、开箱即用和自定义过滤器，可快速导航到资源以便在创作体验中使用。
@@ -51,8 +52,8 @@ ht-degree: 35%
 
 **查看更多**
 
-* [将资源选择器与Adobe应用程序集成](#integrate-asset-selector-adobe-app.md)
-* [将资源选择器与非Adobe应用程序集成](#integrate-asset-selector-non-adobe-app.md)
+* [将资源选择器与Adobe应用程序集成](/help/assets/integrate-asset-selector-adobe-app.md)
+* [将资源选择器与非Adobe应用程序集成](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [集成资产选择器Dynamic Media打开API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
@@ -124,7 +125,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 * **[!UICONTROL 状态]：**&#x200B;包括`all`、`approved`、`rejected`或`no status`之间的资源的当前状态。
 * **[!UICONTROL 文件类型]：**&#x200B;包括`folder`、`file`、`images`、`documents`或`video`。
-* **[!UICONTROL 到期状态]：**&#x200B;根据资产的到期持续时间提及该资产。 您可以选中`[!UICONTROL Expired]`复选框以筛选已过期的资产；或将资产的`[!UICONTROL Expiration Duration]`设置为根据资产的到期持续时间显示资产。 当资产已过期或即将过期时，系统会显示一个描述该资产的徽章。 此外，您可以控制是否允许使用（或拖放）已过期的资源。 查看有关[自定义过期资产](#asset-selector-customization.md#customize-expired-assets)的详细信息。 默认情况下，对于在未来30天内过期的资产，会显示&#x200B;**即将过期**&#x200B;徽章。 但是，您可以使用`expirationDate`属性配置到期时间。
+* **[!UICONTROL 到期状态]：**&#x200B;根据资产的到期持续时间提及该资产。 您可以选中`[!UICONTROL Expired]`复选框以筛选已过期的资产；或将资产的`[!UICONTROL Expiration Duration]`设置为根据资产的到期持续时间显示资产。 当资产已过期或即将过期时，系统会显示一个描述该资产的徽章。 此外，您可以控制是否允许使用（或拖放）已过期的资源。 查看有关[自定义过期资产](/help/assets/asset-selector-customization.md#customize-expired-assets)的详细信息。 默认情况下，对于在未来30天内过期的资产，会显示&#x200B;**即将过期**&#x200B;徽章。 但是，您可以使用`expirationDate`属性配置到期时间。
 
   >[!TIP]
   >

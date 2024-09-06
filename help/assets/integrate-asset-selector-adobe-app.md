@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 将资源选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 8%
 
 ---
-
 
 # 将资源选择器与Adobe应用程序集成 {#integrate-asset-selector-with-adobe-app}
 
@@ -18,7 +18,7 @@ Asset Selector允许您使用各种Adobe应用程序进行集成，以使它们�
 
 如果要将资产选择器与[!DNL Adobe]应用程序集成，请使用以下先决条件：
 
-* [通信方法](#overview-asset-selector.md#prereqs)
+* [通信方法](/help/assets/overview-asset-selector.md#prereqs)
 * imsOrg
 * imsToken
 * apikey
@@ -27,7 +27,7 @@ Asset Selector允许您使用各种Adobe应用程序进行集成，以使它们�
 
 以下示例演示了在Unified Shell下运行[!DNL Adobe]应用程序或已经为身份验证生成`imsToken`时，资产选择器的用法。
 
-使用`script`标记将资产选择器包包含在您的代码中，如以下示例的&#x200B;_行6-15_&#x200B;所示。 加载该脚本后，`PureJSSelectors` 全局变量将可供使用。定义资产选择器[属性](#asset-selector-properties.md)，如&#x200B;_行16-23_&#x200B;中所示。 在Adobe应用程序中身份验证需要`imsOrg`和`imsToken`属性。 `handleSelection` 属性用于处理选定资源。要呈现资源选择器，请调用 `renderAssetSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。资源选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
+使用`script`标记将资产选择器包包含在您的代码中，如以下示例的&#x200B;_行6-15_&#x200B;所示。 加载该脚本后，`PureJSSelectors` 全局变量将可供使用。定义资产选择器[属性](/help/assets/asset-selector-properties.md)，如&#x200B;_行16-23_&#x200B;中所示。 在Adobe应用程序中身份验证需要`imsOrg`和`imsToken`属性。 `handleSelection` 属性用于处理选定资源。要呈现资源选择器，请调用 `renderAssetSelector` 函数，如&#x200B;_第 17 行_&#x200B;中所述。资源选择器将显示在 `<div>` 容器元素中，如&#x200B;_第 21 行和第 22 行_&#x200B;中所示。
 
 按照这些步骤，您可以将资产选择器与[!DNL Adobe]应用程序结合使用。
 
@@ -153,4 +153,3 @@ onErrorReceived: (type, msg) => {
 >* [资产选择器属性](/help/assets/asset-selector-properties.md)
 >* [集成资产选择器Dynamic Media打开API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 >* [资产选择器自定义](/help/assets/asset-selector-customization.md)
-

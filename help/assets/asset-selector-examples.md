@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 使用资产选择器根据需要进行自定义的示例。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 57%
+source-wordcount: '252'
+ht-degree: 50%
 
 ---
 
-
 # 有关使用资源选择器属性的示例 {#usage-examples}
 
-您可以在 `index.html` 文件中定义资源选择器[属性](#asset-selector-properties.md)，以自定义应用程序中的资源选择器显示。
+您可以在&#x200B;**index.html**&#x200B;文件中定义资产选择器[属性](/help/assets/asset-selector-properties.md)，以自定义应用程序中的资产选择器显示。
 
 ## 示例 1：边栏视图中的资源选择器
 
@@ -55,4 +55,3 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 >* [资产选择器自定义](/help/assets/asset-selector-customization.md)
 >* [资产选择器属性](/help/assets/asset-selector-properties.md)
 >* [集成资产选择器Dynamic Media打开API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-

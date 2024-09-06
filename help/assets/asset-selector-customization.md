@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 使用函数可自定义应用程序中的资产选择器。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1241'
 ht-degree: 24%
 
 ---
-
 
 # 资源选择器自定义 {#asset-selector-customization}
 
@@ -21,7 +21,7 @@ ht-degree: 24%
 * [自定义过期的资源](#customize-expired-assets)
 * [上下文调用过滤器](#contextual-invocation-filter)
 
-您需要在`index.html`文件或应用程序实施中的类似文件中定义先决条件，以定义访问[!DNL Experience Manager Assets]存储库的身份验证详细信息。 完成后，您可以根据需要添加代码片段。
+您需要在&#x200B;**index.html**&#x200B;文件或应用程序实施中的类似文件中定义先决条件，以定义访问[!DNL Experience Manager Assets]存储库的身份验证详细信息。 完成后，您可以根据需要添加代码片段。
 
 ## 自定义筛选器面板 {#customize-filter-panel}
 
@@ -186,12 +186,12 @@ interface SelectedAsset {
 | *tiff:imageLength* | 数字 | 资源的高度。 |
 | *computedMetadata* | `Record<string, any>` | 一个对象，表示所有类型的所有资源元数据（存储库、应用程序或嵌入式元数据）的存储桶。 |
 | *_links* | `Record<string, any>` | 关联资源的超媒体链接。包括元数据和演绎版等资源的链接。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | 对象数组，包含有关资源演绎版的信息。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | 字符串 | 演绎版的 URI。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | 字符串 | 演绎版的 MIME 类型。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>&#39;* | 数字 | 演绎版的大小，以字节为单位。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | 数字 | 演绎版的宽度。 |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | 数字 | 演绎版的高度。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | 对象数组，包含有关资源演绎版的信息。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | 字符串 | 演绎版的 URI。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | 字符串 | 演绎版的 MIME 类型。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | 数字 | 演绎版的大小，以字节为单位。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | 数字 | 演绎版的宽度。 |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | 数字 | 演绎版的高度。 |
 
 ### 使用对象架构处理资源选择 {#handling-selection}
 

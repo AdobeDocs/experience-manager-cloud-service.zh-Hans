@@ -2,13 +2,13 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 使用资源选择器可在应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
 
 ---
-
 
 # 将文件和文件夹上传到资源选择器 {#upload-files-folders}
 
@@ -28,13 +28,13 @@ ht-degree: 1%
 
    您还可以使用缩略图预览所选图像，然后单击X图标从列表中删除任何特定图像。 只有将鼠标悬停在图像名称或大小上时，才会显示X图标。 您还可以单击&#x200B;**[!UICONTROL 全部删除]**&#x200B;以从上载列表中删除所有项目。
 
-1. 要完成上载过程，请单击&#x200B;**[!UICONTROL 上载]**。 此时会显示您上传的资产。 有关可配置代码，请参阅[基本上传](asset-selector-customization.md#basic-upload)。
+1. 要完成上载过程，请单击&#x200B;**[!UICONTROL 上载]**。 此时会显示您上传的资产。 有关可配置代码，请参阅[基本上传](/help/assets/asset-selector-customization.md#basic-upload)。
 
 ## 上载包含元数据的资源 {#upload-assets-with-metadata}
 
-您可以将元数据添加到资源，同时将资源立即上传到应用程序。 元数据包括各种字段，例如业务主题行、产品详细信息、促销活动等。 为此，使用了`metadataSchema`属性。 转到[资产选择器属性](asset-selector-properties.md)以了解有关`metadataSchema`属性的更多信息。
+您可以将元数据添加到资源，同时将资源立即上传到应用程序。 元数据包括各种字段，例如业务主题行、产品详细信息、促销活动等。 为此，使用了`metadataSchema`属性。 转到[资产选择器属性](/help/assets/asset-selector-properties.md)以了解有关`metadataSchema`属性的更多信息。
 
-有关配置所需的代码段，请参阅[使用元数据](#upload-with-metadata)上传。
+有关配置所需的代码段，请参阅[使用元数据](/help/assets/asset-selector-customization.md#upload-with-metadata)上传。
 
 ![上载包含元数据的资源](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ ht-degree: 1%
 
 ## 自定义上载 {#customize-upload}
 
-资产选择器允许您添加自定义上传表单。 提供了多种自定义设置。 例如，[hideUploadButton](#asset-selector-properties.md)属性允许您隐藏应用程序中默认显示的上传按钮。 相反，您可以根据需要对其进行自定义，以在MFE应用程序之外呈现。 有关配置，请参阅[自定义上传](#asset-selector-customization.md#customized-upload)。
+资产选择器允许您添加自定义上传表单。 提供了多种自定义设置。 例如，[hideUploadButton](/help/assets/asset-selector-properties.md)属性允许您隐藏应用程序中默认显示的上传按钮。 相反，您可以根据需要对其进行自定义，以在MFE应用程序之外呈现。 有关配置，请参阅[自定义上传](/help/assets/asset-selector-customization.md#customized-upload)。
 
 ![自定义上传](assets/customized-upload.png)
-

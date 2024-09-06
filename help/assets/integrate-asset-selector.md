@@ -2,17 +2,17 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 将资源选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 47%
 
 ---
 
-
 # 使用 Vanilla JS 集成资源选择器 {#integration-using-vanilla-js}
 
-您可以将任何[!DNL Adobe]或非Adobe应用程序与[!DNL Experience Manager Assets]存储库集成并从应用程序中选择资源。 请参阅[资产选择器与各种应用程序的集成](#integrate-asset-selector.md)。
+您可以将任何[!DNL Adobe]或非Adobe应用程序与[!DNL Experience Manager Assets]存储库集成并从应用程序中选择资源。 请参阅[资产选择器与各种应用程序的集成](#asset-selector-integration-with-apps)。
 
 通过导入资源选择器包并使用 Vanilla JavaScript 库连接到 Assets as a Cloud Service 来实现集成。编辑应用程序中的`index.html`或任何适当的文件，以：
 
@@ -39,4 +39,3 @@ ht-degree: 47%
 >* [资产选择器自定义](/help/assets/asset-selector-customization.md)
 >* [资产选择器属性](/help/assets/asset-selector-properties.md)
 >* [集成资产选择器Dynamic Media打开API](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-
