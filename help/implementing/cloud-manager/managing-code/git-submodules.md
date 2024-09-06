@@ -4,10 +4,10 @@ description: 了解如何使用 Git 子模块在构建时跨 Git 存储库合并
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-可以在 [Git 参考手册](https://git-scm.com/book/en/v2/Git-Tools-Submodules)中找到有关 Git 子模块的更多信息。
+有关Git子模块的更多信息可在[Git参考手册](https://git-scm.com/book/en/v2/Git-Tools-Submodules)中找到。
 
 ### 限制和建议 {#limitations-recommendations}
 

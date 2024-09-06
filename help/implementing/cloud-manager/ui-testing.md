@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '2610'
 ht-degree: 79%
@@ -342,7 +342,7 @@ Docker容器的入口点需要检查`PROXY_HOST`环境变量的值。
    * 要检查准备情况，可以使用环境变量`PROXY_HOST`、`PROXY_OBSERVABILITY_PORT`、`PROXY_RETRY_ATTEMPTS`和`PROXY_RETRY_DELAY`。
    * 您可以使用cURL请求进行检查，并确保在`Dockerfile`中安装cURL。
 
-在[GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)上的Cypress示例测试模块的入口点中可以找到示例实施
+在[GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)上的Cypress示例测试模块的Entrypoint中可以找到示例实施。
 
 ## 特定于播放器的详细信息
 

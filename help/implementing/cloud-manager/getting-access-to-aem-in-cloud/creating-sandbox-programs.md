@@ -5,66 +5,69 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 74%
+source-wordcount: '436'
+ht-degree: 15%
 
 ---
 
 # 创建沙盒程序 {#create-sandbox-program}
 
-通常，创建沙盒程序是为了提供培训、运行演示、支持、概念验证 (POC) 或归档等目的，并不意味着要承载实时流量。
+通常，创建沙盒程序是为了提供培训、运行演示、支持、概念验证(POC)或归档等目的，而不是为了承载实时流量。 请参阅[沙盒程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
 
-请参阅文档[解程序和程序类型](program-types.md)，了解有关程序类型的更多信息。
+请参阅文档[了解程序和程序类型](program-types.md)以了解有关程序类型的更多信息。
 
 ## 创建沙盒程序 {#create}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择相应的组织。
 
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，点按或单击屏幕右上角附近的&#x200B;**添加程序**。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台右上角附近，单击&#x200B;**添加程序**。
 
    ![Cloud Manager 登陆页面](assets/log-in.png)
 
-1. 在“创建项目向导”中，选择&#x200B;**设置沙盒**，并提供项目名称。
+1. 在&#x200B;*让我们创建程序*&#x200B;向导的&#x200B;**程序名称**&#x200B;文本字段中，键入您希望程序的名称。
+
+1. 在&#x200B;**项目目标**&#x200B;下，选择&#x200B;**`Set up a sandbox`**。
 
    ![项目类型创建](assets/create-sandbox.png)
 
-1. 或者，您也可以将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标，或单击它以从文件浏览器中选择图像，从而将图像添加到项目中。选择&#x200B;**继续**。
+1. （可选）在向导对话框的右下角，执行以下任一操作：
 
-   * 该图像仅用作项目概览窗口中的磁贴，有助于识别项目。
+   * 将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标上。
+   * 单击&#x200B;**添加程序图像**，然后从文件浏览器中选择图像。
+   * 单击垃圾桶图标可删除您添加的图像。
 
-1. 在&#x200B;**设置沙盒**&#x200B;对话框中，通过选中&#x200B;**解决方案和加载项**&#x200B;表中的选项，选择要在沙盒程序中启用的解决方案。
+1. 单击&#x200B;**继续**。
 
-   * 使用该解决方案名称旁边的 V 形符号来显示解决方案的其他可选附加组件。
+1. 在&#x200B;**解决方案和加载项**&#x200B;列表框中，选择要包含在程序中的一个或多个解决方案。
 
-   * **Sites** 和 **Assets** 解决方案始终会包含在沙盒项目中并且不能取消选择。
+   * 单击解决方案名称左侧的>形标记以显示您要包含在所选解决方案中的任何可用可选加载项。
+   * 创建沙盒程序时，默认情况下始终选中&#x200B;**Sites**、**Assets**&#x200B;和&#x200B;**Edge Deliver Servicesy**&#x200B;解决方案。 不能取消选择它们。
 
    ![为沙盒选择解决方案和附加组件](assets/sandbox-solutions-add-ons.png)
 
-1. 为沙盒项目选择解决方案和附加组件后，单击&#x200B;**创建。**
-
-在安装过程中，您会在登陆页面上看到一个带有状态指示器的新沙盒程序信息卡。
+1. 单击&#x200B;**创建**。Cloud Manager会创建沙盒程序并将其显示在登陆页面上以供选择。
 
 ![从概述页面创建沙盒](assets/sandbox-setup.png)
 
-## 沙盒访问权限 {#access}
+## 沙盒访问 {#access}
 
-您可以查看沙盒设置的详细信息，也可以通过查看程序概述页面访问该环境（在可用后）。
+新沙盒程序创建完成后，您可以查看沙盒设置的详细信息，并通过查看程序概述页面访问环境。
 
-1. 从Cloud Manager登录页面，单击所创建程序上的省略号按钮。
+1. 从Cloud Manager登录页面，单击已创建沙盒程序上的省略号按钮。
 
    ![访问程序概述](assets/program-overview-sandbox.png)
 
-1. 项目创建步骤完成后，您可以访问&#x200B;**访问存储库信息**&#x200B;链接，以便能够使用您的 Git 存储库。
+1. 项目创建步骤完成后，您可以单击&#x200B;**访问存储库信息**&#x200B;链接以便能够使用您的Git存储库。
 
    ![程序配置](assets/create-program4.png)
 
    >[!TIP]
    >
-   >若要了解有关访问和管理 Git 存储库的更多信息，请参阅[访问 Git。](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   >要了解有关访问和管理Git存储库的更多信息，请参阅[访问Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
-1. 创建开发环境后，您可以使用 **Access AEM** 链接登录 AEM。
+1. 创建开发环境后，您可以单击&#x200B;**访问AEM**&#x200B;并登录到AEM。
 
    ![访问 AEM 链接](assets/create-program5.png)
 
@@ -74,4 +77,4 @@ ht-degree: 74%
 
 >[!TIP]
 >
->有关如何导航Cloud Manager以及了解&#x200B;**我的程序**&#x200B;控制台的详细信息，请参阅文档[导航Cloud Manager UI](/help/implementing/cloud-manager/navigation.md)。
+>有关如何浏览Cloud Manager以及了解&#x200B;**我的程序**&#x200B;控制台的详细信息，请参阅[浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md)。

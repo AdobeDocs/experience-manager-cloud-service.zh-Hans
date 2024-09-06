@@ -5,15 +5,15 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ec95438d704568076af045d8933be2125885f482
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '923'
 ht-degree: 37%
 
 ---
 
 
-# 许可证功能板 {#license-dashboard}
+# 许可证仪表板 {#license-dashboard}
 
 Cloud Manager 提供了一个仪表板，用于轻松查看您的组织或租户可用的 AEMaaCS 产品权利。
 
@@ -21,7 +21,7 @@ Cloud Manager 提供了一个仪表板，用于轻松查看您的组织或租户
 >
 >许可证仪表板仅适用于AEM as a Cloud Service程序。 [AMS程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在许可证仪表板中。
 >
->要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅文档[浏览Cloud Manager UI。](/help/implementing/cloud-manager/navigation.md#program-cards)
+>要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅文档[浏览Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 
 ## 概述 {#overview}
 
@@ -30,7 +30,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 1. 您可以在所有程序中获得解决方案权利，包括使用的内容和可用的内容
 1. Sites 解决方案的内容请求消耗量度按月趋势
 
-## 适用许可证仪表板 {#using-dashboard}
+## 使用许可证仪表板 {#using-dashboard}
 
 要访问许可证仪表板，请执行以下步骤。
 
@@ -39,7 +39,7 @@ Cloud Manager 许可证仪表板可轻松访问以下信息：
 >必须登录具有&#x200B;**业务负责人**&#x200B;角色的用户才能查看许可证仪表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，点按或单击[Cloud Manager标题上的“汉堡菜单”按钮。](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)此项显示选项卡。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击[Cloud Manager标题](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的“汉堡菜单”按钮。 这会显示选项卡。
 1. 点按或单击选项卡中的&#x200B;**许可证**&#x200B;选项。
 
 ![许可证功能板](assets/license-dashboard.png)
@@ -72,7 +72,7 @@ Cloud Manager的“许可证”区域中的&#x200B;**查看使用情况详细信
 
 ### Sites 使用情况详细信息 {#sites-usage-details}
 
-**Sites使用详细信息**&#x200B;窗口显示的图形概述了基于[内容请求的站点许可证的使用情况。](#what-is-a-content-request)
+**Sites使用详细信息**&#x200B;窗口显示的图形概述了基于[内容请求](#what-is-a-content-request)的Sites许可证的使用情况。
 
 ![站点使用情况详细信息窗口](assets/sites-usage-details.png)
 
@@ -83,7 +83,7 @@ Cloud Manager的“许可证”区域中的&#x200B;**查看使用情况详细信
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
-The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
 
 For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 

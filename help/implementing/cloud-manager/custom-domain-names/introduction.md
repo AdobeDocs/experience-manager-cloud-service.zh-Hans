@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1c9924b4477d53d86bb72eda8597a02304450195
+source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 65%
+source-wordcount: '714'
+ht-degree: 47%
 
 ---
 
@@ -36,33 +36,33 @@ Adobe Experience Manager as a Cloud Service 配置有默认域名，以 `*.adobe
 >
 >Cloud Manager 不是域名注册商，不提供 DNS 服务。
 
-## 自定义域名和 BYO CDN {#byo-cdn}
+## 自定义域名并自带CDN {#byo-cdn}
 
-AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也让您自带 (BYO) CDN 以与 AEM 一起使用。自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
+AEM as a Cloud Service提供了内置的内容交付网络(CDN)服务，还允许您通过BYO（自带）CDN来与AEM结合使用。 自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
 
-* 安装在 AEM 管理的 CDN 中的自定义域名（以及证书）通过 Cloud Manager 进行管理。
-* 安装在您自己的 CDN 中的自定义域名（以及证书）在该特定的 CDN 中进行管理。
+* Cloud Manager可管理在AEM管理的CDN中安装的自定义域名和证书。
+* BYO CDN中安装的自定义域名和证书将直接在该CDN中进行管理。
 
-**在您自己的CDN中管理的域不需要通过Cloud Manager进行安装。**&#x200B;它们通过X-Forwarded-Host提供给AEM，并且与Dispatcher中定义的vhost匹配。 请参阅[CDN文档。](/help/implementing/dispatcher/cdn.md)
+**在您自己的CDN中管理的域不需要通过Cloud Manager进行安装** — 这些域将通过X-Forwarded-Host提供给AEM，并且与Dispatcher中定义的vhost匹配。 请参阅[ CDN 文档](/help/implementing/dispatcher/cdn.md)。
 
-在一个环境中，您可以有一个安装在 AEM 管理的 CDN 中的域和一个安装在您自己的 CDN 中的域。
+在一个环境中，您可以将两个域安装在AEM管理的CDN中，也可以将两个域安装在BYO CDN中。
 
 ## 工作流 {#workflow}
 
-添加自定义域名需要 DNS 服务和云管理器之间的交互。因此，安装、配置和验证自定义域名需要执行多个步骤。 下表概述了所需的步骤，包括指向完成这些步骤的文档资源的链接。
+添加自定义域名需要 DNS 服务和云管理器之间的交互。由于此工作流，安装、配置和验证自定义域名需要执行多个步骤。 下表概述了所需的步骤，包括指向完成这些步骤的文档资源的链接。
 
 | 步骤 | 描述 | 文档 |
 |---|---|---|
-| 1 | 将 SSL 证书添加到 Cloud Manager | [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | 将 SSL 证书添加到 Cloud Manager | [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | 将自定义域添加到Cloud Manager | [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | 添加 TXT 记录验证域 | [添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 3 | 添加 TXT 记录验证域 | [添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 4 | 查看域验证状态 | [检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | 通过添加指向 AEM as a Cloud Service 的 DNS CNAME 或 APEX 记录来配置 DNS 设置 | [配置 DNS 设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | 检查 DNS 记录状态 | [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | 通过添加指向 AEM as a Cloud Service 的 DNS CNAME 或 APEX 记录来配置 DNS 设置 | [配置DNS设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
+| 6 | 检查 DNS 记录状态 | [检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
->一般而言，用 AEM as a Cloud Service 设置自定义域名是一个简单的过程。但是，有时域委派可能会发生问题，这可能需要1 - 2个工作日才能解决。 因此，强烈建议在上线日期之前安装好域。有关详细信息，请参阅文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
+>一般而言，用 AEM as a Cloud Service 设置自定义域名是一个简单的过程。但是，有时可能会出现域委派问题，这可能需要1 - 2个工作日才能解决。 因此，强烈建议在上线日期之前安装好域。有关详细信息，请参阅文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
 ## 限制 {#limitations}
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 提供内置的内容分发网络 (CDN) 服务，但也�
 * AEM as a Cloud Service 不支持通配符，例如`*.example.com`。
 * 在添加自定义域名之前，必须为程序安装包含自定义域名（通配符证书有效）的有效SSL证书。
 
-## 开始使用！ {#get-started}
+## 开始使用 {#get-started}
 
-* 通过添加[SSL证书开始为项目配置新的自定义域名。](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-* 通过查看文档[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)管理现有域名
+* 通过添加[SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)，开始为项目配置新的自定义域名。
+* 通过查看文档[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)来管理现有域名。

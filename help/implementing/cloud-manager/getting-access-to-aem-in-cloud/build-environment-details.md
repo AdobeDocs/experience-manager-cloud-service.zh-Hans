@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 77%
@@ -21,7 +21,7 @@ ht-degree: 77%
 
 Cloud Manager 使用专门的构建环境构建和测试代码。
 
-* 构建环境基于 Linux，并派生自 Ubuntu 22.04。
+* 该构建环境基于 Linux，并派生自 Ubuntu 22.04。
 * 安装了 Apache Maven 3.9.4。
    * Adobe 建议用户[更新其 Maven 存储库以使用 HTTPS 代替 HTTP](#https-maven)。
 * 安装的Java版本为OracleJDK 11.0.22和OracleJDK 8u401。
@@ -32,7 +32,7 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* 可以在构建时安装其他包，如[安装其他系统包](#installing-additional-system-packages)部分所述。
+* 可以在构建时安装其他包，如[安装其他系统包](#installing-additional-system-packages)部分中所述。
 * 每次构建都是在一个原始的环境中完成的；构建容器在执行之间不保持任何状态。
 * Maven 始终通过以下三条命令运行。
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
@@ -46,7 +46,7 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
 
 ## HTTPS Maven 存储库 {#https-maven}
 
-Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 开始了对构建环境的一项滚动更新（在推出版本 2023.12.0 时完成更新），其中包括对 Maven 3.8.8 的更新。Maven 3.8.1 中引入的一项重大更改是旨在减少潜在漏洞的一项安全增强。具体来说，Maven 现在默认禁用所有不安全的 `http://*` 镜像，如 [Maven 发行说明中所述。](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 开始了对构建环境的一项滚动更新（在推出版本 2023.12.0 时完成更新），其中包括对 Maven 3.8.8 的更新。Maven 3.8.1 中引入的一项重大更改是旨在减少潜在漏洞的一项安全增强。具体来说，Maven 现在默认禁用所有不安全的 `http://*` 镜像，如 [Maven 发行说明中所述](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)。
 
 此安全增强导致某些用户可能在构建步骤中遇到问题，尤其是从使用不安全 HTTP 连接的 Maven 存储库下载工件时。
 

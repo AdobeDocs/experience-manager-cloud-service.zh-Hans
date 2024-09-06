@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 51fa6e0fe56b1d5f0d8ada6bd2335175d603bc8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -645,7 +645,7 @@ public class DontDoThis implements Page {
 * **严重性**：阻断
 * **开始版本**：版本 2021.8.0
 
-`lucene`类型的 Oak 索引必须始终异步索引。 否则可能导致系统不稳定。 有关 Lucene 索引结构的更多信息，请参阅 [Oak 文档。](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
+`lucene`类型的 Oak 索引必须始终异步索引。 否则可能导致系统不稳定。 有关Lucene索引结构的更多信息，请参阅[Oak文档](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)。
 
 #### 不合规的代码 {#non-compliant-code-indexasync}
 
@@ -897,7 +897,7 @@ Experience Manager 客户端库可能包含静态资源，如图像和字体。�
 
 虽然静态模板的使用历来在 Experience Manager 项目中非常普遍，但 Adobe 建议使用可编辑的模板，因为它们提供了最大的灵活性，并支持静态模板中不存在的附加功能。 要获取更多信息，请参阅文档[页面模板。](/help/implementing/developing/components/templates.md)
 
-可以使用 [Experience Manager 现代化工具](https://opensource.adobe.com/aem-modernize-tools/)在很大程度上实现从静态模板到可编辑模板的迁移的自动化。
+可以使用[Experience Manager现代化工具](https://opensource.adobe.com/aem-modernize-tools/)在很大程度上实现从静态模板到可编辑模板的迁移的自动化。
 
 ### 建议不要使用旧的基础组件 {#oakpal-usage-legacy}
 
@@ -908,7 +908,7 @@ Experience Manager 客户端库可能包含静态资源，如图像和字体。�
 
 旧的基础组件（即 `/libs/foundation` 下的组件）已在多个 Experience Manager 版本中弃用以支持核心组件。建议不要使用基础组件作为自定义组件的基础（无论是通过叠加还是继承），并且应将这些基础组件转换为相应的核心组件。
 
-可以通过 [Experience Manager 现代化工具](https://opensource.adobe.com/aem-modernize-tools/)促进此转换。
+可以通过[Experience Manager现代化工具](https://opensource.adobe.com/aem-modernize-tools/)促进此转换。
 
 ### 仅应使用受支持的运行模式名称和排序 {#oakpal-supported-runmodes}
 
@@ -1207,7 +1207,7 @@ AEM Cloud Service 禁止在 UI 内容包中部署自定义搜索索引定义（�
 
 >[!WARNING]
 >
->建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/implementing/cloud-manager/release-notes/current.md)。
+>强烈建议您尽快解决此问题，因为从[Cloud Manager 2024年8月版](/help/implementing/cloud-manager/release-notes/current.md)开始，它会导致管道失败。
 
 ### damAssetLucene 类型的自定义全文索引定义必须正确添加“damAssetLucene”前缀 {#oakpal-dam-asset-lucene}
 
@@ -1220,7 +1220,7 @@ AEM Cloud Service 禁止类型 `damAssetLucene` 的自定义全文索引定义�
 
 >[!WARNING]
 >
->建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/implementing/cloud-manager/release-notes/current.md)。
+>强烈建议您尽快解决此问题，因为从[Cloud Manager 2024年8月版](/help/implementing/cloud-manager/release-notes/current.md)开始，它会导致管道失败。
 
 ### 索引定义节点不得包含同名的属性 {#oakpal-index-property-name}
 
@@ -1233,7 +1233,7 @@ AEM Cloud Service 禁止自定义搜索索引定义（即，类型为 `oak:Query
 
 >[!WARNING]
 >
->建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/implementing/cloud-manager/release-notes/current.md)。
+>强烈建议您尽快解决此问题，因为从[Cloud Manager 2024年8月版](/help/implementing/cloud-manager/release-notes/current.md)开始，它会导致管道失败。
 
 ### 禁止自定义某些 OOTB 索引定义 {#oakpal-customizing-ootb-index}
 
@@ -1253,7 +1253,7 @@ AEM Cloud Service 禁止对以下 OOTB 索引进行未经授权的修改：
 
 >[!WARNING]
 >
->建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/implementing/cloud-manager/release-notes/current.md)。
+>强烈建议您尽快解决此问题，因为从[Cloud Manager 2024年8月版](/help/implementing/cloud-manager/release-notes/current.md)开始，它会导致管道失败。
 
 ### 分析器中的标记器配置应使用名称“tokenizer”创建 {#oakpal-tokenizer}
 
@@ -1266,13 +1266,13 @@ AEM Cloud Service禁止在分析器中创建名称不正确的令牌化器。 �
 
 >[!WARNING]
 >
->建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/implementing/cloud-manager/release-notes/current.md)。
+>强烈建议您尽快解决此问题，因为从[Cloud Manager 2024年8月版](/help/implementing/cloud-manager/release-notes/current.md)开始，它会导致管道失败。
 
-### 索引定义的配置不应包含空格 {#oakpal-indexing-definitions-spaces}
+### 索引定义的配置不应包含空格。 {#oakpal-indexing-definitions-spaces}
 
-* **键**： PathSpacesCheck
+* **Key**: PathSpacesCheckKey
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.7.0
 
-AEM Cloud Service禁止创建包含带空格的属性的索引定义。
+AEM Cloud Service 禁止创建包含带有空格属性的索引定义。

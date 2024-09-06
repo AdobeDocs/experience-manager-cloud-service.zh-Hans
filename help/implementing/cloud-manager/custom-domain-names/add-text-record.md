@@ -5,7 +5,7 @@ exl-id: d441de29-af41-4d3e-9155-531af9702841
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 28%
@@ -45,7 +45,7 @@ Cloud Manager使用特定的TXT记录来授权要在CDN服务中托管的域。 
 
 1. 将`_aemverification.[yourdomainname]`添加为该值的&#x200B;**Name**，并添加该TXT值，它与&#x200B;**添加域名**&#x200B;对话框中显示的值完全相同。
 
-   * 请参阅以下部分中的[示例。](#examples)
+   * 请参阅以下部分](#examples)中的[示例。
 
 1. 将TXT记录保存到域主机。
 

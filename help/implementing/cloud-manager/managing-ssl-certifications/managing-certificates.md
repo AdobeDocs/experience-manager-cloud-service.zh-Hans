@@ -1,81 +1,90 @@
 ---
-title: 管理 SSL 证书
+title: 管理SSL证书
 description: 了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 35ac4cfb18e348281d2b126bdc3b292c84590f3a
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 76%
+source-wordcount: '722'
+ht-degree: 16%
 
 ---
 
 
-# 管理 SSL 证书 {#managing-ssl-certificates}
+# 管理SSL证书 {#managing-ssl-certificates}
 
-了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
+了解如何使用Cloud Manager检查Adobe托管和客户托管的SSL证书的状态以及如何删除它们。 对于客户管理的证书，您还可以编辑和更新（替换）它们。
 
-## 检查 SSL 证书的状态 {#checking-status-an-ssl-certificate}
+## 检查SSL证书的状态 {#checking-status-an-ssl-certificate}
 
-可以从 SSL 证书页面一眼就了解 SSL 证书的状态。
+可以从&#x200B;**SSL证书**&#x200B;页面一眼就了解SSL证书的状态。
 
-* **绿色** – 此状态表示您的证书自当前日期起至少 14 天内有效。
+| SSL证书的状态 | 描述 |
+| --- | --- |
+| 绿色 | 证书自当前日期起至少14天内有效。 |
+| 橙色 | 该证书将在14天内过期。<br>·确保您有计划续订证书并通过Cloud Manager用户界面替换该证书，以避免可能的站点访问中断。<br>· Cloud Manager会在UI中定期发送通知，提醒您证书即将到期。 |
+| 红色 | SSL证书已过期。<br>请参阅[更新已过期的客户管理的SSL证书](#update-ssl-certificate)或[删除SSL证书](#deleting-an-ssl-certificate)。 |
 
-* **橙色** – 此状态表示您的证书将在 14 天内到期。
-   * 现在需要确保您有计划续订证书并通过 Cloud Manager 用户界面替换该证书，从而避免可能的站点访问中断。
-   * Cloud Manager 将在 UI 中定期发送通知，提醒您证书即将到期。
+## 更新已过期的客户管理的SSL证书 {#update-ssl-certificate}
 
-* **红色** – 此状态表示 SSL 证书已过期。
+当客户管理的证书过期时，与已过期证书一起使用的任何域不再工作。 更新证书可确保域继续按需工作。
 
-## 更新 SSL 证书 {#update-ssl-certificate}
+用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能完成此任务。
 
-当证书过期时，与过期证书一起使用的任何域都将不再工作。通过以下步骤更新证书可确保域继续按需工作。
+**要更新已过期的客户管理的SSL证书，请执行以下操作：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
-1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
-1. 从&#x200B;**环境**&#x200B;页面导航到 **SSL 证书**&#x200B;屏幕。
-1. 您可以看到一个表，其中包含已在程序中成功安装的每个SSL证书的行。 单击要更新的证书行最右侧的省略号按钮，然后选择&#x200B;**查看和更新**。
-1. 将显示证书详细信息并可以更新。
-1. 保存更改。
+1. 从&#x200B;**概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;屏幕。
+1. 从&#x200B;**环境**&#x200B;屏幕，导航到&#x200B;**SSL证书**&#x200B;屏幕。
+1. 在要更新的过期客户托管证书的行中，单击最右侧的省略号按钮，然后选择&#x200B;**查看和更新**。
 
-保存更改后，将自动应用这些更改。
+   ![更新已过期的客户管理的SSL认证](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+
+1. 在&#x200B;**查看和更新SSL证书**&#x200B;对话框中，执行以下操作：
+
+   * （可选）在&#x200B;**证书名称**&#x200B;字段中，键入一个新名称。
+   * 在&#x200B;**证书**&#x200B;字段中，粘贴新的证书内容密钥。
+   * 在&#x200B;**私钥**&#x200B;字段中，仅当更改证书时才更新此字段。
+   * 在&#x200B;**证书链**&#x200B;字段（或信任链）中，粘贴证书链。
+
+1. 单击&#x200B;**更新**&#x200B;以保存更改并自动应用它们。
+
+## 替换已过期的客户管理的SSL证书 {#replace-ssl-certificate}
+
+按照[更新过期的SSL证书](#update-ssl-certificate)中描述的相同步骤操作，以替换已过期的客户管理的SSL证书。
+
+## 删除SSL证书 {#deleting-an-ssl-certificate}
+
+从Cloud Manager中删除Adobe托管或客户托管的SSL证书是一个无法撤消的永久操作。 作为最佳实践，Adobe建议在Cloud Manager中删除SSL文件之前，先在本地保存这些文件。
 
 >[!NOTE]
 >
->用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色成员，才能在 Cloud Manager 中更新 SSL 证书。
+>无法删除具有一个或多个关联活动域的Adobe托管SSL证书。 在删除SSL证书之前，必须删除所有关联的活动域。 请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)以了解详情。
 
-## 替换 SSL 证书 {#replace-ssl-certificate}
+用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能完成此任务。
 
-可以按照[更新 SSL 证书](#update-ssl-certificate)一节中描述的相同步骤替换 SSL 证书。
+**要删除SSL证书：**
 
-## 删除 SSL 证书 {#deleting-an-ssl-certificate}
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
+1. 从&#x200B;**概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;屏幕。
+1. 从&#x200B;**环境**&#x200B;屏幕，导航到&#x200B;**SSL证书**&#x200B;屏幕。
+1. 在要删除的证书的行中，单击最右侧的省略号按钮，然后选择&#x200B;**删除**。
+如果“删除”按钮具有如下图所示的信息图标，请参阅上面的注释。
 
-从Cloud Manager中移除证书是一个无法撤消的永久操作。 作为最佳实践，Adobe 建议在 Cloud Manager 中删除 SSL 文件之前，先在本地保存这些文件。
+   ![删除带有信息图标的按钮](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
-Cloud Manager 不允许您删除具有一个或多个关联域的 SSL 证书。在删除 SSL 证书之前，必须删除所有关联的域。请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)，了解更多信息。
-
-按照以下步骤删除 SSL 证书。
-
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
-1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
-1. 从&#x200B;**环境**&#x200B;页面导航到 **SSL 证书**&#x200B;屏幕。
-1. 您可以看到一个表，其中包含已在程序中成功安装的每个SSL证书的行。 单击要删除的证书行最右侧的省略号，然后选择&#x200B;**删除**。
-1. 在&#x200B;**删除 SSL 证书**&#x200B;对话框中，确认删除操作。
+1. 在&#x200B;**删除SSL证书**&#x200B;对话框中，单击&#x200B;**删除**&#x200B;以确认删除。
 1. 运行管道以取消部署已删除的证书。
 
->[!NOTE]
->
->用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色成员，才能在 Cloud Manager 中删除 SSL 证书。
+## 预先存在的CDN配置 {#pre-existing-cdn}
 
-## 预先存在的 CDN 配置 {#pre-existing-cdn}
+如果您已有SSL证书的CDN配置，**SSL证书**&#x200B;页面将显示一条信息性消息。 它鼓励您通过UI添加这些配置，以便它们在Cloud Manager中可见和可管理。
 
-如果您的SSL证书已有CDN配置，则&#x200B;**SSL证书**&#x200B;页面上将显示一条信息性消息，鼓励您通过UI添加这些配置，以便它们在Cloud Manager中可见和可配置。
+使用UI迁移所有预先存在的环境配置后，消息将消失。 消息可能需要 1 – 2 个工作日才能消失。
 
-使用 UI 迁移所有预先存在的环境配置后，消息将消失。消息可能需要 1 – 2 个工作日才能消失。
-
-请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)，了解更多信息。
+有关详细信息，请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
 **IP 允许列表**&#x200B;和&#x200B;**环境**&#x200B;页面上也提供了类似的消息，这些环境具有 IP 允许列表或自定义域名的预先存在的 CDN 配置。

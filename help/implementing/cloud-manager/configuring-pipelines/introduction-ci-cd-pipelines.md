@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
@@ -99,7 +99,7 @@ Cloud Manager 提供两种类型的管道：
 * 用户必须以&#x200B;**部署管理员**&#x200B;角色登录，才能配置或运行管道。
 * 在任何时候，每个环境只能有一个全栈管道。
 
-此外，如果您选择引入 [Web 层配置管道](#web-tier-config-pipelines)，请注意全栈管道的行为。
+此外，如果您选择引入[Web层配置管道](#web-tier-config-pipelines)，请注意全栈管道的行为。
 
 * 如果存在相应的Web层配置管道，则环境的全栈管道将忽略Dispatcher配置。
 * 如果环境的相应 Web 层配置管道不存在，则用户可以配置全栈管道，包括或忽略 Dispatcher 配置。

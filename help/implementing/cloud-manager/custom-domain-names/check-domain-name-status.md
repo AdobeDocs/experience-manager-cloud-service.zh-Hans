@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 64%
 
 在Cloud Manager中检查域名状态之前，您必须满足这些要求。
 
-* 您必须首先为自定义域添加TXT记录，如[添加TXT记录文档中所述。](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+* 您必须首先为自定义域添加TXT记录，如[添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)文档中所述。
 
 ## 如何检查自定义域名的状态 {#how-to}
 
@@ -41,7 +41,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->当您在&#x200B;**添加自定义域**&#x200B;向导的验证步骤中选择&#x200B;**创建**&#x200B;时，当[向Cloud Manager中添加新的自定义域名时，Cloud Manager将自动触发验证。](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)对于后续验证，您必须主动选择状态旁边的再次验证图标。
+>当您在&#x200B;**添加自定义域**&#x200B;向导的验证步骤中选择&#x200B;**创建**&#x200B;时，当[向Cloud Manager添加新自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)时，Cloud Manager将自动触发验证。 对于后续验证，必须主动选择状态旁边的再次验证图标。
 
 ## 了解验证状态 {#statuses}
 

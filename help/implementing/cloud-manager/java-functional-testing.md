@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->如果您的存储库先于 Cloud Manager 自动创建的 `it.tests` 文件夹之前创建，则也可以使用 [AEM 项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)生成最新版本。
+>如果在 Cloud Manager 自动创建的 `it.tests` 文件夹之前创建您的存储库，则也可使用 [AEM 项目原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)生成最新版本。
 
 在 `it.tests` 文件夹中包含内容后，您可以基于该内容创建自己的测试，然后：
 
-1. [开发您的测试案例。](#writing-functional-tests)
-1. [本地运行测试。](#local-test-execution)
+1. [开发您的测试用例](#writing-functional-tests)。
+1. [在本地运行测试](#local-test-execution)。
 1. 将代码提交到 Cloud Manager 存储库并执行 Cloud Manager 管道。
 
 ## 编写自定义功能测试 {#writing-functional-tests}

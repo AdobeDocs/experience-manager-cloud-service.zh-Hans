@@ -4,10 +4,10 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 18%
+source-wordcount: '1603'
+ht-degree: 11%
 
 ---
 
@@ -19,18 +19,24 @@ ht-degree: 18%
 >title="AEM as a Cloud Service 中的 CDN"
 >abstract="AEM as a Cloud Service 随附一个内置 CDN。其主要目的是通过从浏览器附近的边缘 CDN 节点提供可缓存的内容来减少延迟。它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。"
 
-AEM as a Cloud Service 随附一个内置 CDN。其主要目的是通过从浏览器附近的边缘 CDN 节点提供可缓存的内容来减少延迟。它经过全面的管理和配置，可提供最佳的 AEM 应用程序性能。
+AEM as a Cloud Service附带一个集成的CDN，旨在通过从靠近用户浏览器的边缘节点提供可缓存的内容来减少延迟。 此完全托管的CDN针对AEM应用程序性能进行了优化。
 
-AEM管理的CDN满足了大多数客户的性能和安全要求。 对于发布层，客户可以选择从自己的 CDN 指向发布层，但这种情况下客户必须自行管理。 这种情况视个案而定，具体取决于是否在满足某些先决条件，包括但不限于客户及其 CDN 供应商具有难以舍弃的旧版集成。
+AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布层，客户可以选择通过自己的CDN路由流量，他们必须管理此CDN。 此选项基于具体情况提供，尤其是当客户现有与难以替换的CDN提供商的旧版集成时。
+
+希望发布到Edge Delivery Services层的客户可以利用Adobe的托管CDN。 查看[托管CDN](#aem-managed-cdn)Adobe。<!-- CQDOC-21758, 5b -->
+
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## AEM管理的CDN  {#aem-managed-cdn}
+## Adobe 管理的 CDN {#aem-managed-cdn}
 
-请阅读以下章节，以使用Cloud Manager自助服务UI准备使用AEM的开箱即用CDN进行内容交付：
+<!-- CQDOC-21758, 5a -->
 
-1. [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-1. [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+要通过Cloud Manager的自助UI使用AEM的内置CDN准备内容交付，您可以利用Adobe的托管CDN功能。 此功能允许您处理自助服务CDN管理，包括配置和安装SSL证书，如DV（域验证）或EV/OV（扩展/组织验证）证书。 有关这些方法的更多详细信息，请参阅以下内容：
+
+* [管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+* [Cloud Manager 中的 Edge Delivery Services 支持](/help/implementing/cloud-manager/edge-delivery-services.md)
 
 **限制流量**
 
@@ -40,9 +46,9 @@ AEM管理的CDN满足了大多数客户的性能和安全要求。 对于发布�
 
 >[!CAUTION]
 >
->AEM托管CDN仅处理来自允许的IP的请求。 如果您将自己的CDN指向AEM托管的CDN，请确保CDN的IP包含在允许列表中。
+>AEM托管CDN仅处理来自允许的IP的请求。 如果您将自己的CDN指向AEM托管的CDN，请确保CDN的IP包含在IP允许列表中。
 
-### 在 CDN 上配置流量 {#cdn-configuring-cloud}
+### 在CDN上配置流量 {#cdn-configuring-cloud}
 
 您可以通过多种方式在CDN上配置流量，包括：
 
@@ -51,11 +57,11 @@ AEM管理的CDN满足了大多数客户的性能和安全要求。 对于发布�
 * 应用301/302 [客户端重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)
 * 声明[原始选择器](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)将请求反向代理到非AEM后端
 
-了解如何使用Git中的YAML文件配置这些功能，并使用Cloud Manager [配置管道](/help/implementing/dispatcher/cdn-configuring-traffic.md)部署这些功能。
+使用Git中的YAML文件来配置这些功能。 并且，使用Cloud Manager [配置管道](/help/implementing/dispatcher/cdn-configuring-traffic.md)来部署它们。
 
 ### 配置CDN错误页面 {#cdn-error-pages}
 
-CDN错误页面可以配置为在极少数无法访问AEM的情况下覆盖提供给浏览器的默认非品牌页面。 有关详细信息，请参阅[配置CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md)。
+您可以配置CDN错误页面以替换默认的非品牌页面。 在极少数情况下，当AEM不可用时，会显示此自定义页面。 有关详细信息，请参阅[配置CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md)。
 
 ### 清除CDN上的缓存内容 {#purge-cdn}
 
@@ -67,14 +73,14 @@ CDN错误页面可以配置为在极少数无法访问AEM的情况下覆盖提�
 
 对于轻度身份验证用例（包括审阅内容的业务利益相关者），通过显示需要用户名和密码的基本身份验证对话框来保护内容。 [了解详情](/help/implementing/dispatcher/cdn-credentials-authentication.md)并加入早期采用者计划。
 
-## 客户 CDN 指向 AEM 管理的 CDN {#point-to-point-CDN}
+## 客户管理的CDN指向AEM管理的CDN {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="客户 CDN 指向 AEM 托管 CDN"
 >abstract="AEM as a Cloud Service 为客户提供了使用现有 CDN 的选项。对于发布层，客户可以选择从自己的 CDN 指向发布层，但这种情况下客户必须自行管理。 这种情况视个案而定，具体取决于是否在满足某些先决条件，包括但不限于客户及其 CDN 供应商具有难以舍弃的旧版集成。"
 
-如果客户必须使用其现有的CDN，则可以管理该现有CDN，并将其指向AEM管理的CDN，前提是满足以下条件：
+如果客户必须使用其现有的CDN，则可以对其进行管理并将其指向AEM管理的CDN，前提是满足以下条件：
 
 * 客户必须拥有一个费时费力的现有CDN。
 * 客户必须管理它。
@@ -113,8 +119,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->使用您自己的CDN时，您不需要在Cloud Manager中安装域和证书。 AdobeCDN中的路由是使用默认域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，该域应在`Host`标头中发送。 使用自定义域名覆盖请求`Host`标头可能会导致AdobeCDN错误地路由该请求。
-
+>使用您自己的CDN时，您不需要在Cloud Manager中安装域和证书。 AdobeCDN中的路由是使用默认域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，该域应在`Host`标头中发送。 使用自定义域名覆盖请求`Host`标头可能会通过AdobeCDN错误地路由请求。
 
 >[!NOTE]
 >
@@ -149,9 +154,9 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 常见错误 {#common-errors}
 
-提供的示例配置显示了所需的基本设置，但客户配置可能具有其他影响规则，这些规则会删除、修改或重新排列AEM as a Cloud Service提供流量所需的标头。 以下是配置客户管理的CDN以指向AEM as a Cloud Service时发生的常见错误。
+提供的示例配置显示了所需的基本设置。 但是，客户配置可能具有其他影响规则，这些规则会删除、编辑或重新排列AEM as a Cloud Service提供流量所需的标头。 以下是配置客户管理的CDN以指向AEM as a Cloud Service时发生的常见错误。
 
-**重定向到Publish服务终结点**
+**重定向到发布服务终结点**
 
 当请求收到403禁止响应时，这意味着请求缺少某些所需的标头。 此问题的常见原因是CDN同时管理Apex和`www`域流量，但没有为`www`域添加正确的标头。 可通过检查您的AEM as a Cloud Service CDN日志并验证所需的请求标头，来诊断此问题。
 
@@ -169,14 +174,14 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ## 地理位置标题 {#geo-headers}
 
-AEM管理的CDN通过以下方式向每个请求添加标头：
+AEM托管的CDN通过以下方式向每个请求添加标头：
 
 * 国家/地区代码： `x-aem-client-country`
 * 大陆代码： `x-aem-client-continent`
 
 >[!NOTE]
 >
->如果存在客户管理的CDN，则这些标头反映的是客户CDN代理服务器的位置，而不是实际客户端的位置。 因此，对于客户管理的CDN，地理位置标头应由客户CDN管理。
+>如果存在客户管理的CDN，则这些标头反映的是客户CDN代理服务器的位置，而不是实际客户端的位置。 使用客户管理的CDN时，客户应通过自己的CDN管理地理位置标头。
 
 国家/地区代码的值是[ISO 3166-1](https://en.wikipedia.org/wiki/cn/ISO_3166-1)下描述的Alpha2代码。
 
@@ -190,4 +195,4 @@ AEM管理的CDN通过以下方式向每个请求添加标头：
 * OC大洋洲
 * 南美洲南美洲
 
-此信息对于用例可能很有用，例如根据请求的来源（国家/地区）重定向到不同的url。 对于依赖于地理信息的缓存响应，请使用Vary标头。 例如，重定向到特定国家/地区的登陆页面应始终包含`Vary: x-aem-client-country`。 如果需要，您可以使用`Cache-Control: private`防止缓存。 另请参阅[缓存](/help/implementing/dispatcher/caching.md#html-text)。
+此信息对于重定向到基于请求来源国家/地区的其他URL非常有用。 对于依赖于地理信息的缓存响应，请使用Vary标头。 例如，重定向到特定国家/地区的登陆页面应始终包含`Vary: x-aem-client-country`。 如果需要，您可以使用`Cache-Control: private`防止缓存。 另请参阅[缓存](/help/implementing/dispatcher/caching.md#html-text)。

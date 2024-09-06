@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
+source-git-commit: 2bf129d763fcad024eb3799cdf2a97bdbc2472c5
 workflow-type: tm+mt
-source-wordcount: '5578'
+source-wordcount: '5586'
 ht-degree: 95%
 
 ---
@@ -105,6 +105,7 @@ ht-degree: 95%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.8.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [2024.7.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [2024.6.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
          + [2024.5.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -1073,7 +1074,6 @@ ht-degree: 95%
          + [创建沙盒项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [编辑项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-         + [Edge Delivery Services 支持](/help/implementing/cloud-manager/edge-delivery-services.md)
       + 创建 AEM 应用程序项目 {#create-application-project}
          + [项目创建向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1107,7 +1107,6 @@ ht-degree: 95%
             + [功能测试概述](/help/implementing/cloud-manager/functional-testing.md)
             + [Java 功能测试](/help/implementing/cloud-manager/java-functional-testing.md)
             + [UI 测试](/help/implementing/cloud-manager/ui-testing.md)
-         + [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [体验审核仪表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [访问和管理日志](/help/implementing/cloud-manager/manage-logs.md)
       + [自定义权限](/help/implementing/cloud-manager/custom-permissions.md)
@@ -1116,11 +1115,9 @@ ht-degree: 95%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [高级网络](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=zh-hans)
-      + SSL 证书{#manage-ssl-certificates}
-         + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + 自定义域名{#custom-domain-names}
+      + Edge Delivery Sites {#edge-delivery-sites}
+         + [Cloud Manager中的Edge Delivery支持](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + 域设置{#custom-domain-names}
          + [简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [添加 TXT 记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -1128,7 +1125,12 @@ ht-degree: 95%
          + [配置 DNS 设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [域验证 (DV) 证书](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+      + SSL 证书{#manage-ssl-certificates}
+         + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      + CDN配置{#cdn-configurations}
+         + [添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + IP 允许列表{#ip-allow-lists}
          + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 69%
@@ -102,11 +102,11 @@ ht-degree: 69%
 
 1. 提供要包含在体验审核中的路径。
 
-   * 有关详细信息，请参阅文档[体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md#configuration)。
+   * 有关详细信息，请参阅文档[体验审核测试](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration)。
 
 1. 单击&#x200B;**保存**&#x200B;以保存管道。
 
-为体验审核配置的路径会提交给服务，并在管道运行时根据性能、可访问性、SEO（搜索引擎优化）、最佳实践和 PWA（Progressive Web 应用程序）测试进行评估。有关更多详细信息，请参阅[了解体验审核结果。](/help/implementing/cloud-manager/experience-audit-testing.md)
+为体验审核配置的路径会提交给服务，并在管道运行时根据性能、可访问性、SEO（搜索引擎优化）、最佳实践和 PWA（Progressive Web 应用程序）测试进行评估。有关更多详细信息，请参阅[了解体验审核结果。](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 

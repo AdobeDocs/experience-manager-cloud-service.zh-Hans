@@ -5,7 +5,7 @@ exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 49%
@@ -29,7 +29,7 @@ ht-degree: 49%
 
 * 如果您还不知道您的域主机或注册商，则必须确定其身份。
 * 您必须能够编辑组织域的DNS记录，或联系能够编辑记录的适当人员。
-* 您必须已按照文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)中所述验证配置的自定义域名
+* 您必须已按照文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)中所述验证配置的自定义域名。
 
 ## CNAME 记录 {#cname-record}
 

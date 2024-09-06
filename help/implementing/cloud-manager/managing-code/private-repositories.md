@@ -4,10 +4,10 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 77%
 
 >[!TIP]
 >
->有关在Cloud Manager中管理存储库的详细信息，请参阅[Cloud Manager存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
+>有关在 Cloud Manager 中管理存储库的详细信息，请参阅 [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
 
 ### 专用存储库所有权验证 {#validate-ownership}
 
@@ -56,7 +56,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 1. Cloud Manager 使用 GitHub 应用程序与您的存储库安全地交互。
    * 您的 GitHub 组织的所有者必须安装位于 `https://github.com/apps/cloud-manager-for-aem` 的应用程序并授予对存储库的访问权限。
-   * 有关如何完成此操作的详细信息，请参阅GitHub的文档。
+   * 请参阅 GitHub 的文档，了解如何执行此操作的详细信息。
 
 1. 为了增强安全性，您必须在存储库的默认分支中创建秘密文件。选择&#x200B;**生成**。
 
@@ -110,7 +110,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 ## 将私有存储库与管道关联 {#pipelines}
 
-经过验证的专用存储库可以与[全栈和前端管道相关联](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
+已验证的专用存储库可以与[全栈和前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)关联。
 
 >[!NOTE]
 >

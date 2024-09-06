@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1402'
 ht-degree: 75%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 75%
       * **产品功能测试** – 针对开发环境执行[产品功能测试](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。
       * **自定义功能测试** - 针对开发环境执行[自定义功能测试](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。
       * **自定义 UI 测试** – 为自定义应用程序执行[自定义 UI 测试](/help/implementing/cloud-manager/ui-testing.md)。
-      * **体验审核** — 执行[体验审核](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **体验审核** — 执行[体验审核](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![全栈管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -152,13 +152,13 @@ ht-degree: 75%
    * **Git 分支** – 此选项定义管道应从中检索代码的所选存储库的分支。
       * 输入分支名称的前几个字符，以及此字段的自动完成功能。它会找到您可以选择的匹配分支。
    * **代码位置** – 此选项定义管道应从中检索代码的所选存储库分支中的路径。
-   * **管道** — 对于前端非生产管道，您可以选择启用&#x200B;**[体验审核。](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **管道** — 对于前端非生产管道，您可以选择启用&#x200B;**[体验审核](/help/implementing/cloud-manager/experience-audit-dashboard.md)**。
 
    ![配置管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. 如果已启用体验审核，请点按或单击&#x200B;**继续**&#x200B;以前进到&#x200B;**体验审核**&#x200B;选项卡，您可以在其中定义应始终包含在体验审核中的路径。
 
-   * 如果您启用了&#x200B;**体验审核**，请参阅[体验审核](/help/implementing/cloud-manager/experience-audit-testing.md#configuration)文档，以了解有关如何配置的详细信息。
+   * 如果您启用了&#x200B;**体验审核**，请参阅[体验审核](/help/implementing/cloud-manager/experience-audit-dashboard.md)文档，以了解有关如何配置的详细信息。
    * 如果未配置，请跳过此步骤。
 
 1. 点击或单击&#x200B;**保存**&#x200B;可保存管道。

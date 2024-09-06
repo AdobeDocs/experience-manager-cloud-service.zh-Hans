@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 41%
+ht-degree: 48%
 
 ---
 
@@ -36,11 +36,11 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 要创建并使用您自己的自定义权限，需要执行三个步骤：
 
-1. [创建产品配置文件。](#create)
-1. [为产品配置文件分配自定义权限。](#assign-permissions)
-1. [将用户分配给产品配置文件。](#assign-users)
+1. [创建产品配置文件](#create)。
+1. [为产品配置文件分配自定义权限](#assign-permissions)。
+1. [将用户分配给产品配置文件](#assign-users)。
 
-本节详细介绍了这些步骤。 在创建自己的自定义权限时，您可能会发现查看[条款](#terms)和[可配置权限](#configurable-permissions)部分很有用。
+此部分详细介绍了这三个步骤。 在创建自己的自定义权限时，您可能会发现查看[条款](#terms)和[可配置权限](#configurable-permissions)部分很有用。
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
    * **产品配置文件名称** - 配置文件的描述性名称
    * **显示名称** - UI（选项）中显示的缩写名称
-   * **描述** - 配置文件的信息性描述，用于说明其用途（可选）
+   * **描述** - 有关配置文件的信息性描述，用于说明其用途（可选）
    * **通过电子邮件通知用户** — 在选中时，用户将在此配置文件中添加或删除时收到电子邮件通知。
 
 1. 完成后，选择&#x200B;**保存**。
@@ -104,13 +104,13 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 您现在可以将用户分配给使用自定义权限创建的新产品配置文件。
 
-1. 在Admin Console中，选择您为其分配自定义权限的[新产品配置文件的名称。](#assign-permissions)
+1. 在Admin Console中，选择您为其分配自定义权限的[新产品配置文件的名称](#assign-permissions)。
 
 1. 在打开的窗口中，选择&#x200B;**用户**&#x200B;选项卡。
 
 1. 选择&#x200B;**添加用户**&#x200B;按钮并将用户分配给具有自定义权限的新产品配置文件。
 
-有关如何使用此Admin Console的更多详细信息，请参阅文档[管理企业用户的产品配置文件](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)的&#x200B;**将用户和用户组添加到产品配置文件**&#x200B;部分。
+请参阅[管理企业用户的产品轮廓](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)文档中的&#x200B;**将用户和用户组添加到产品轮廓**&#x200B;部分，了解有关如何使用 Admin Console 的更多详细信息。
 
 ## 可配置的权限 {#configurable-permissions}
 
@@ -164,17 +164,17 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 | 术语 | 描述 |
 |---|---|
-| 预定义的权限 | 预定义角色（如&#x200B;**业务负责人**&#x200B;和&#x200B;**部署管理员**）可管理Cloud Manager的各种功能。 有关预定义角色的详细信息，请参阅[AEM as a Cloud Service团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md) |
+| 预定义的权限 | 预定义角色（如&#x200B;**业务负责人**&#x200B;和&#x200B;**部署管理员**）可管理Cloud Manager的各种功能。 有关预定义角色的详细信息，请参阅[AEM as a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)。 |
 | 自定义权限 | Cloud Manager功能允许用户创建权限配置文件以定义用来管理Cloud Manager所支持功能的角色 |
-| 产品配置文件 | 在Admin Console中创建，用于管理适用于权限配置文件中用户的可配置权限 |
+| 产品配置文件 | 在 Admin Console 中创建，用于管理可配置的权限，这些权限适用于权限配置文件中的用户 |
 | 可配置的权限 | Cloud Manager 权限，可在权限配置文件中配置 |
 | 权限项 | 可对其应用权限的项目、环境或管道资源 |
 
-权限项是指应用权限的范围。 通常，它是以下任一项。
+权限项是指应用权限的范围。 通常，它是下列项之一。
 
 | 权限项类型 | 示例 | 描述 |
 |---|---|---|
-| 组织 | 组织：A 公司 | 所有对组织适用的资源。资源可以是项目、环境或管道。如果用户为任何权限添加组织，则该组织中的所有新资源也具有该权限。 |
+| 组织 | 组织：A 公司 | 所有对组织适用的资源。资源可以是项目、环境或管道。如果用户为任意权限添加一个组织，则该组织中的所有新资源也会具有此权限。 |
 | 项目 | 项目 A | 所有对项目适用的资源 |
 | 环境 | 项目 A：环境 | 适用于特定环境 |
 | 管道 | 项目 A：管道 | 适用于特定管道 |
@@ -196,7 +196,7 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 * 部署管理员
 * 开发人员
 
-有关预定义角色的详细信息，请参阅[AEM as a Cloud Service团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md)
+有关预定义角色的详细信息，请参阅[AEM as a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)。
 
 ### 引入自定义配置文件后，预定义的权限配置文件会发生什么情况？
 
@@ -212,7 +212,7 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 ### 是否能将用户添加到多个权限配置文件？
 
-是，一个用户可以是多个配置文件的一部分，包括预定义的权限配置文件和自定义权限配置文件。当用户被分配给多个配置文件时，所有分配的权限配置文件的组合权限对该用户可用。
+是，一个用户可以是多个配置文件的一部分，包括预定义的权限配置文件和自定义权限配置文件。在将一个用户分配给多个配置文件时，所有分配的权限配置文件中的组合权限可供该用户使用。
 
 ### 如果用户有权编辑环境/管道，但无权访问包含该环境/管道的项目，会发生什么情况？
 

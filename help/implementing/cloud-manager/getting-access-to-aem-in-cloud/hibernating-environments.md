@@ -5,10 +5,10 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 84%
+source-wordcount: '696'
+ht-degree: 83%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 84%
 
 * 沙盒程序中的环境在八小时不活动后自动休眠。
    * 非活动性定义为作者服务和预览或发布服务都不会接收请求。
-   * 休眠后，可以将它们[手动解除休眠](#de-hibernation-introduction)。
+   * 一旦休眠，它们可以[手动解除休眠]。(#de-hibernation-introduction)
 * 沙盒程序在连续休眠模式下运行六个月后会被删除，然后可以重新创建。
 
 >[!NOTE]

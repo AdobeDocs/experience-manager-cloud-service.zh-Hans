@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 96%
 
 ---
 
@@ -59,10 +59,10 @@ ht-degree: 100%
 
 ## 从存储库窗口访问存储库信息 {#repositories-window}
 
-**访问存储库信息**&#x200B;按钮也可在&#x200B;[**存储库**&#x200B;窗口的工具栏中找到。](managing-repositories.md) 该工具栏显示有关访问 Adobe 管理的存储库的相同信息。
+[**存储库**&#x200B;窗口](managing-repositories.md)的工具栏中还提供了&#x200B;**访问存储库信息**&#x200B;按钮。 该工具栏显示有关访问 Adobe 管理的存储库的相同信息。
 
 ## 撤销访问密码 {#revoke-password}
 
-您可以随时撤销访问密码。为此，请[为此请求创建支持工单](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)。
+您可以随时撤销访问密码。为此，[为此请求创建支持工单](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)。
 
 该工单将被优先处理，并应在一天内撤销。

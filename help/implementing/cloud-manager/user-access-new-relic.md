@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. New Relic 将向您发送一封电子邮件，其中包含确认帐户的链接。
 
-如果您没有收到 New Relic 的确认电子邮件，请参阅[故障排除部分。](#troubshooting)
+如果未收到来自New Relic的确认电子邮件，请参阅[疑难解答部分](#troubshooting)。
 
 ## 正在访问 New Relic One {#accessing-new-relic}
 
@@ -159,7 +159,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. New Relic 将向您发送一封电子邮件，其中包含确认帐户的链接。
 
-如果您完成了注册过程，并且由于电子邮件或密码错误消息而无法登录到您的帐户，请通过 [Admin Console 提交支持请求工单。](https://adminconsole.adobe.com/)
+如果您完成了注册过程，并且由于电子邮件或密码错误消息而无法登录到您的帐户，请通过[Admin Console](https://adminconsole.adobe.com/)提交支持票证。
 
 如果您没有收到 New Relic 的电子邮件：
 
@@ -172,7 +172,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 以下限制适用于向 New Relic One 添加用户：
 
 * 最多可以添加 30 个用户。如果已达到最大用户数，请移除用户，以便能够添加新用户。
-* 添加到 New Relic 的用户属于&#x200B;**受限**&#x200B;类型。有关详细信息，请参阅 [New Relic 文档。](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
+* 添加到New Relic的用户属于&#x200B;**受限制类型**，有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
 * AEM as a Cloud Service 仅提供 New Relic One APM 解决方案，不支持警报、日志记录或 API 集成。
 
 >[!NOTE]
@@ -181,7 +181,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 >
 >按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。
 
-有关AEM as a Cloud Service计划的New Relic One产品的更多帮助或更多指导，请通过[AEM支持门户打开支持票证。](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
+有关您的 AEM as a Cloud Service 程序的 New Relic One 产品的更多帮助或更多指导，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持请求工单。
 
 ## 关于 New Relic One 的常见问题 {#faqs}
 

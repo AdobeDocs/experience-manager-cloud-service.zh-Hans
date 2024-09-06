@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -97,7 +97,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 >
 >自定义UI测试在生产管道和非生产（选择加入）管道中执行，AEM应用程序使用这些管道更改部署和AEM产品推送更新，因此它是帮助确保应用程序正常运行并提高发布安全性的一个关键贡献。 客户UI测试还在每个客户的内部预发行验证管道中执行，这有助于提供早期反馈。
 >
->非Selenium容器应根据[UI测试部分中的环境变量，使用HTTP代理执行测试。](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>非Selenium容器应根据[UI测试部分](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)中的环境变量，使用HTTP代理执行测试。
 
 为了保持管道执行高效，我们建议重点关注关键功能和主要用户交互流程。 建议在客户开发流程期间，作为常规客户验证管道的一部分执行不符合此质量关卡的完整UI测试包。
 
@@ -111,7 +111,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 此质量关卡由AEM现成提供，但不会阻止部署管道。 默认情况下，将对发布实例的根页面(`/`)执行审核。 您可通过配置考虑进行审核的最多25个自定义路径来投稿。
 
-有关详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)。
+有关详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
 
 ### 客户验证
 

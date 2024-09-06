@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 83%
+source-wordcount: '342'
+ht-degree: 60%
 
 ---
 
@@ -17,9 +17,11 @@ ht-degree: 83%
 
 Cloud Manager 让您查看、更新、替换和删除自定义域名。
 
-## 查看和更新 {#view-and-update}
+## 查看和更新自定义域名 {#view-and-update}
 
 使用&#x200B;**查看和更新**&#x200B;菜单查看任何自定义域名的详细信息。
+
+**要查看和更新自定义域名：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -33,21 +35,21 @@ Cloud Manager 让您查看、更新、替换和删除自定义域名。
 
 1. 选择&#x200B;**查看和更新**&#x200B;选项。
 
-## 更新自定义域名的 SSL 证书 {#update-cert}
+## 更新自定义域名的SSL证书 {#update-cert}
 
 您可以按照[相同的步骤查看和更新自定义域名](#view-and-update)，从而更新自定义域名的 SSL 证书。
 
 >[!NOTE]
 >
->SSL 证书必须有效，[已配置](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)，并包含要更新的自定义域名。
+>SSL证书必须有效，[已配置](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)，并包含要更新的自定义域名。
 
 ## 删除自定义域名 {#deleting}
 
 具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户可以使用 Cloud Manager 删除自定义域名。
 
-### 从所有关联环境中删除自定义域名 {#delete-cdn-all}
+### 从所有关联的环境中删除自定义域名 {#delete-cdn-all}
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
 1. 从&#x200B;**概述**&#x200B;屏幕导航到&#x200B;**域设置**&#x200B;页面。
 
@@ -61,7 +63,7 @@ Cloud Manager 让您查看、更新、替换和删除自定义域名。
 
 ### 从特定环境中删除自定义域名 {#delete-cdn-specific}
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织和程序。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 1. 从&#x200B;**环境**&#x200B;页面，导航到感兴趣环境的详细信息屏幕。
 1. 从域名表中，标识要删除的自定义域名的行。

@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 * **代码扫描** – 此步骤评估应用程序代码的质量。
    * 有关测试过程的详细信息，请参阅[代码质量测试。](/help/implementing/cloud-manager/code-quality-testing.md)
 * **构建图像** – 此过程负责将构建步骤生成的内容和 Dispatcher 程序包转换为 Docker 图像和 Kubernetes 配置。
-* **部署到暂存环境** – 将图像部署到暂存环境，为[暂存测试阶段做准备。](#stage-testing)
+* **部署到暂存环境** — 将映像部署到暂存环境，为[暂存测试阶段](#stage-testing)做准备。
 
 ![暂存部署](assets/stage-deployment.png)
 
@@ -86,7 +86,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
    * 配置的页面将提交给服务并进行评估。
    * 审核结果是信息性的，显示分数以及当前分数和以前分数之间的变化。
    * 此细节对于确定当前部署中是否会引入回归非常有用。
-   * 有关更多详细信息，请参阅[了解体验审核结果。](/help/implementing/cloud-manager/experience-audit-testing.md)
+   * 有关更多详细信息，请参阅[了解体验审核结果。](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
 ![暂存测试](assets/stage-testing.png)
 
@@ -154,7 +154,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 ### 重新执行 API {#reexecute-API}
 
-除了在UI中可用之外，您还可以使用[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)来触发重新执行，并识别作为重新执行触发的执行。
+除了在 UI 中可用之外，您还可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 触发重新执行以及标识已作为重新执行触发的执行。
 
 #### 触发重新执行 {#reexecute-deployment-api}
 

@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
@@ -51,7 +51,7 @@ ht-degree: 20%
 
 1. 将打开&#x200B;**变量配置**&#x200B;窗口。 在表的第一行中输入变量详细信息，然后点按或单击&#x200B;**添加**。
 
-   * **配置名称**&#x200B;是变量的唯一标识符，它必须遵循[管道变量命名约定。](#naming-conventions)
+   * **配置名称**&#x200B;是变量的唯一标识符，它必须遵循[管道变量命名约定](#naming-conventions)。
    * **Value**&#x200B;是变量保存的值。
    * **应用的步骤**&#x200B;是管道中变量应用的步骤。 它是必需的。
       * **生成**

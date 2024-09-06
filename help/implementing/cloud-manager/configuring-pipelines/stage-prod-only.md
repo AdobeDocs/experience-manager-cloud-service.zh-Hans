@@ -1,10 +1,10 @@
 ---
 title: 仅暂存和仅生产管道
 description: 了解如何使用专用管道拆分暂存和生产部署。
-source-git-commit: 94e5ecb67212bcced45141cba3af8c830791473b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 92%
+source-wordcount: '942'
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->此功能仅适用于[早期采用者计划。](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>此功能仅适用于[早期采用者计划](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)。
 
 ## 概述 {#overview}
 
@@ -54,9 +54,9 @@ ht-degree: 92%
 
 ## 管道创建 {#pipeline-creation}
 
-仅生产和仅暂存管道以与标准耦合的[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[非生产管道类似的方式创建。](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) 请参阅这些文件以了解详细信息。
+仅生产和仅暂存管道以与标准耦合的[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)类似的方式创建。请参阅这些文件，了解详细信息。
 
-1. 在&#x200B;**管道**&#x200B;窗口中，点击或单击&#x200B;**添加管道**。
+1. 在&#x200B;**管道**&#x200B;窗口中，单击&#x200B;**添加管道**。
 
    * 选择&#x200B;**添加非生产管道**&#x200B;来创建仅暂存管道。
    * 选择&#x200B;**添加仅生产管道**&#x200B;来创建仅生产管道。
@@ -74,7 +74,7 @@ ht-degree: 92%
 ### 仅暂存管道 {#stage-only}
 
 1. 在您选择&#x200B;**添加非生产管道**&#x200B;选项后，**添加非生产管道**&#x200B;对话框就会打开。
-1. 要创建仅暂存管道，请在管道的&#x200B;**符合资格的部署环境**&#x200B;字段中选择暂存环境。填写剩余的字段，然后点击或单击&#x200B;**继续**。
+1. 要创建仅暂存管道，请在管道的&#x200B;**符合资格的部署环境**&#x200B;字段中选择暂存环境。填写剩余的字段，然后单击&#x200B;**继续**。
 
    ![创建仅暂存管道](assets/stage-only.png)
 
@@ -82,12 +82,12 @@ ht-degree: 92%
 
 ### 仅生产管道 {#prod-only}
 
-1. 在您选择&#x200B;**添加仅生产管道**&#x200B;选项后，**添加仅生产管道**&#x200B;对话框就会打开。
-1. 提供&#x200B;**管道名称**。对话框的其余选项和功能与标准耦合管道创建对话框中的其余选项和功能相同。点击或单击&#x200B;**保存**&#x200B;可保存管道。
+1. 选择&#x200B;**仅添加生产管道**&#x200B;选项时，**仅添加生产管道**&#x200B;对话框打开。
+1. 提供&#x200B;**管道名称**。对话框的其余选项和功能与标准耦合管道创建对话框中的其余选项和功能相同。单击&#x200B;**保存**，以保存管道。
 
 ## 运营仅生产和仅暂存管道 {#running}
 
-仅生产管道和仅暂存管道的运行方式与[所有其他管道的运行方式相同。](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)有关详细信息，请参阅文档。
+仅生产管道和仅暂存管道的运行方式与[所有其他管道的运行方式](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)相同。有关详细信息，请参阅该文档。
 
 此外，可以直接从仅暂存管道的执行细节中触发仅生产管道运行。
 
@@ -97,7 +97,7 @@ ht-degree: 92%
 
 ![仅暂存管道运行](assets/stage-only-pipeline-run.png)
 
-**升级构建**&#x200B;按钮仅当您处于最近成功执行的进暂存管道中时才会出现。点击或单击后，它会要求您确认仅生产管道的运行，或者如果尚不存在仅生产管道，则创建一个这样的管道。
+**升级构建**&#x200B;按钮仅当您处于最近成功执行的进暂存管道中时才会出现。单击时，它会要求您确认仅生产管道的运行或创建仅生产管道（如果尚未存在）。
 
 ### 仅生产管道 {#prod-only-run}
 

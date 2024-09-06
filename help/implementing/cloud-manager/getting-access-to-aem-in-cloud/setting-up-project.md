@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 96%
@@ -20,10 +20,10 @@ ht-degree: 96%
 
 AEM 项目需要遵守以下准则才能使用 Cloud Manager 成功地构建和部署：
 
-* 必须使用 [Apache Maven](https://maven.apache.org) 构建项目。
+* 必须使用[Apache Maven](https://maven.apache.org)构建项目。
 * Git 存储库的根目录中必须有一个 `pom.xml` 文件。 此 `pom.xml` 文件可以根据需要引用尽可能多的子模块（这些子模块又可能包含其他子模块等）。
 * 可以将引用添加到您在其他 Maven 构件存储库中拥有的 `pom.xml` 文件中。
-   * 配置后，支持访问[受密码保护的构件存储库](#password-protected-maven-repositories)。但是，不支持访问受网络保护的构件存储库。
+   * 配置后，支持访问[受密码保护的工件存储库](#password-protected-maven-repositories)。但是，不支持访问受网络保护的构件存储库。
 * 通过扫描包含在 `target` 目录中的内容包 `.zip` 文件来发现可部署的内容包。
    * 任意数量的子模块都能生成内容包。
 * 通过扫描包含名为 `conf` 和 `conf.d` 目录的 `.zip` 文件（同样包含在名为 `target` 的目录中），可发现可部署的 Dispatcher 构件。
@@ -285,7 +285,7 @@ AEM 项目需要遵守以下准则才能使用 Cloud Manager 成功地构建和�
 
 开始执行时，将提取分支管道的当前 HEAD 承诺。 承诺哈希在 UI 中可见，也可通过 API 查看它。 在构建步骤成功完成时，生成的工件将基于该承诺哈希进行存储，并且可在后续管道执行中重用。
 
-如果包在同一个项目中，则将跨管道重用包。 在查找可重用的包时，AEM 会忽略分支并跨分支重用构件。
+如果包在同一个项目中，则将跨管道重用包。 在查找可重用的包时，AEM 会忽略分支并跨分支重用工件。
 
 在进行重用时，构建和代码质量步骤将有效替换为原始执行所产生的结果。 构建步骤的日志文件将列出构件和最初用于构建构件的执行信息。
 
@@ -332,16 +332,16 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 如果需要，可以通过将管道变量 `CM_DISABLE_BUILD_REUSE` 设置为 `true` 来禁止再次使用特定管道。如果设置了此变量，则仍将提取承诺哈希，并且会存储生成的工件以供以后使用，但不会再次使用任何之前存储的工件。为了理解此行为，请考虑以下场景。
 
 1. 创建一个新的管道。
-1. 执行此管道（执行 #1），当前 HEAD 承诺为 `becdddb`。 执行成功，并且将存储生成的构件。
+1. 执行此管道（执行 #1），当前 HEAD 承诺为 `becdddb`。 执行成功，并且将存储生成的工件。
 1. 设置 `CM_DISABLE_BUILD_REUSE` 变量。
-1. 重新执行管道而不更改代码。 尽管存在与 `becdddb` 关联的已存储构件，但由于有 `CM_DISABLE_BUILD_REUSE` 变量而不会重用这些构件。
-1. 更改代码并执行管道。 HEAD 承诺现在为 `f6ac5e6`。 执行成功，并且将存储生成的构件。
+1. 重新执行管道而不更改代码。 尽管存在与 `becdddb` 关联的已存储工件，但由于有 `CM_DISABLE_BUILD_REUSE` 变量而不会重用这些工件。
+1. 更改代码并执行管道。 HEAD 承诺现在为 `f6ac5e6`。 执行成功，并且将存储生成的工件。
 1. 已删除 `CM_DISABLE_BUILD_REUSE` 变量。
 1. 重新执行管道而不更改代码。 由于存在与 `f6ac5e6` 关联的已存储构件，因此将再次使用这些构件。
 
 ### 注意事项 {#caveats}
 
-* 无论承诺哈希是否相同，生成工件都不会在不同的项目中再次使用。
+* 无论承诺哈希是否相同，构建工件都不会在不同的项目中再次使用。
 * 即使分支和/或管道不同，生成工件也将在同一项目中再次使用。
 * [Maven 版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)仅在生产管道中替换项目版本。 因此，如果在开发部署执行和生产管道执行中使用同一承诺，并且首先执行开发部署管道，则版本会部署到暂存和生产环境中且不会进行更改。 不过，在此情况下仍会创建标记。
 * 如果无法检索已存储的工件，则会运行构建步骤，就像未存储任何工件一样。

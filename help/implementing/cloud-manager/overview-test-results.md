@@ -5,7 +5,7 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Cloud Service 管道的 Cloud Manager 支持三类测试。
 
    * 功能测试是[生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)的阶段测试阶段的一部分，也是[非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)的测试阶段的可选部分。
 
-1. [体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [体验审核测试](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    * 体验审核测试已在所有 Cloud Manager 生产管道中启用，无法跳过。
 

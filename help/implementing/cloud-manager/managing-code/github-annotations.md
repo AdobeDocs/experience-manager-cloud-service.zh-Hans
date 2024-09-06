@@ -4,7 +4,7 @@ description: 了解 GitHub 如何检查您专用存储库的批注 PR 以便为�
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 100%
@@ -42,4 +42,4 @@ ht-degree: 100%
 
 ![批注示例](assets/github-check-annotations-code-quality-2.png)
 
-您还可以以 CSV 的形式将问题可视化。可以通过[查看 Cloud Manager 中管道执行的详细信息来检索此信息](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)。
+您还可以以 CSV 的形式将问题可视化。可以通过[查看 Cloud Manager 中管道执行的详细信息](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)来检索此信息。

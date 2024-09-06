@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 80%
+source-wordcount: '1499'
+ht-degree: 76%
 
 ---
 
@@ -37,8 +37,8 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 用于组织选择、警报和帐户设置的[工具栏](#toolbars-my-programs-toolbars)
 1. 选项卡允许您切换程序的当前视图。
    * **主页** 视图（默认），选择 **我的程序** 视图，其中显示所有项目的概览
-   * 访问[许可证仪表板的&#x200B;**许可证**。](/help/implementing/cloud-manager/license-dashboard.md)
-   * 请注意，选项卡默认为关闭，可以使用 [Cloud Manager 标题中的汉堡菜单显示。](#cloud-manager-header)
+   * 访问[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)的&#x200B;**许可证**。
+   * 请注意，选项卡默认为关闭，可以使用 [Cloud Manager 标头中的汉堡菜单显示](#cloud-manager-header)。
 1. [统计数据和行动号召](#statistics)，用于概述您最近的活动
 1. [**我的程序** 部分](#my-programs-section) ，其中概述了您的所有计划
 1. [快速链接](#quick-links-section)可用于轻松访问相关资源
@@ -63,7 +63,7 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。如果您的 Adobe ID 与多个组织关联，请点击或单击以切换到另一个组织。
 1. 点击或单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
 1. 可使用帮助图标快速访问学习和支持资源。
-1. 通知图标带有一个标记，其中显示当前分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)的数量。
+1. 通知图标具有当前分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)的数量。
 1. 选择代表用户的图标来访问用户设置。如果您尚未配置用户图片，系统会随机分配一个图标。
 
 #### 程序工具栏 {#program-toolbar}
@@ -183,7 +183,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ### 工具栏 {#program-overview-toolbar}
 
-程序概述的工具栏与[我的程序控制台的工具栏非常相似。](#my-programs-toolbars) 这里仅说明差异。
+程序概述的工具栏与[我的程序控制台](#my-programs-toolbars)的工具栏类似。 这里仅说明差异。
 
 #### Cloud Manager 标头 {#cloud-manager-header-2}
 
@@ -225,7 +225,7 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 ### 行动呼吁 {#cta}
 
-行动呼吁部分将会根据您的程序状态为您提供有用的信息。对于新程序，您可能会看到所提供的后续步骤，以及上线日期提醒（[在程序创建期间设置）。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+行动呼吁部分将会根据您的程序状态为您提供有用的信息。对于新计划，您可能会看到提供的后续步骤以及上线日期提醒，[在计划创建期间设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。
 
 新项目的![行动号召](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -251,7 +251,7 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 ### 性能卡 {#performance}
 
-**性能**&#x200B;卡提供&#x200B;**[CDN仪表板](/help/implementing/cloud-manager/cdn-performance.md)**&#x200B;的概述
+**性能**&#x200B;卡提供&#x200B;**[CDN仪表板](/help/implementing/cloud-manager/cdn-performance.md)**&#x200B;的概述。
 
 ![性能卡](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

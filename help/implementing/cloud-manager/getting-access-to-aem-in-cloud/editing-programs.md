@@ -1,23 +1,23 @@
 ---
-title: 编辑程序
+title: 编辑项目群
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 53%
+source-wordcount: '429'
+ht-degree: 49%
 
 ---
 
 
-# 编辑程序 {#editing-programs}
+# 编辑项目群 {#editing-programs}
 
-要管理和编辑程序，请从&#x200B;[**我的程序**&#x200B;控制台开始。](/help/implementing/cloud-manager/navigation.md) **我的程序**&#x200B;页面提供了您有权访问的所有程序的概述。 选择单个项目时，**项目概述**&#x200B;页面提供项目的详细信息。
+要管理和编辑程序，请从&#x200B;[**我的程序**&#x200B;控制台](/help/implementing/cloud-manager/navigation.md)开始。 **我的程序**&#x200B;页面提供了您有权访问的所有程序的概述。 选择单个项目时，**项目概述**&#x200B;页面提供项目的详细信息。
 
-在&#x200B;**程序概述**&#x200B;中，具有必要权限的用户可以编辑在您的组织中创建的[生产程序](creating-production-programs.md)以及在您的组织中创建的[沙盒程序。](creating-sandbox-programs.md) 通过编辑项目，您可以：
+在&#x200B;**程序概述**&#x200B;中，具有必要权限的用户可以编辑在您组织中创建的[生产程序](creating-production-programs.md)以及在您的组织中创建的[沙盒程序](creating-sandbox-programs.md)。 通过编辑程序，您可以：
 
 * 将 Sites 解决方案添加到具有 Assets 的现有项目，反之亦然。
 * 从具有 Sites 和 Assets 的现有项目中删除 Sites 或 Assets。
@@ -29,6 +29,10 @@ ht-degree: 53%
 您必须是&#x200B;**业务负责人**&#x200B;角色的成员才能编辑程序或删除沙盒程序以及访问许可证仪表板。
 
 ## 编辑程序 {#editing}
+
+无论何时编辑项目，包括添加或删除解决方案或加载项，这些更改都将在下次部署后生效。
+
+**要编辑程序：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -43,18 +47,12 @@ ht-degree: 53%
    ![“常规”选项卡](assets/edit-program-prod1.png)
 
 1. 可用于编辑程序的选项与创建程序时的选项相同。
-   * 有关各个选项的详细信息，请参阅文档[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)和[创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
+   * 有关各个选项的详细信息，请参阅[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)和[创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
    * [其他选项](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)可能适用于您的生产程序，具体取决于您组织的权限。
 
 1. 单击&#x200B;**更新**&#x200B;以将更改保存到项目。
 
-将保存对程序所做的更改。
-
->[!NOTE]
->
->无论何时编辑项目，包括添加或删除解决方案或加载项，这些更改都将在下次部署后生效。
-
-## 删除沙盒项目 {#delete-sandbox-program}
+## 删除沙盒程序 {#delete-sandbox-program}
 
 删除沙盒项目将删除与其关联的所有环境和管道。
 
@@ -62,7 +60,7 @@ ht-degree: 53%
 >
 >具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户可以选择删除其生产和暂存环境，而非整个沙盒项目。
 
-要删除沙盒项目，请执行以下操作。
+**要删除沙盒程序：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 

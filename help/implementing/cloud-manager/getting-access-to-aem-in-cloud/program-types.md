@@ -5,10 +5,10 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 93%
+source-wordcount: '521'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager 是围绕实体的层次结构构建的。这方面的细节对于
 ![Cloud Manager 层级](assets/program-types1.png)
 
 * **租户** – 这是层次结构的顶层。每个客户均配有一个租户。
-* **程序** – 每个租户都有一个或多个项目，[这些项目通常反映了客户的许可解决方案](introduction-production-programs.md)。
+* **项目** — 每个租户都有一个或多个项目，[这些项目通常反映了客户的许可解决方案](introduction-production-programs.md)。
 * **环境** – 每个项目都有多个环境，例如用于实时内容的生产环境、一个用于暂存的环境，一个用于开发的环境。
    * 每个程序只能有一个生产环境，但可以有多个非生产环境。
 * **存储库** – 程序有 Git 存储库，其中应用程序和前端代码被维护的环境。
@@ -61,6 +61,6 @@ $ git clone {URL}
 * 创建&#x200B;**生产程序**，以便为您的站点启用实时流量。
    * 请参阅[生产程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)，了解更多详细信息。
 * 通常，创建&#x200B;**沙盒程序**&#x200B;是为了提供培训、运行演示、支持、概念验证 (POC) 或归档等目的。
-   * 沙盒环境并不意味着要承载实时流量，并且会有生产程序所没有的限制。
-   * 它包括 Sites 和 Assets，交付时自动填充 Git 分支，其中包括示例代码、开发环境和非生产管道。
+   * 沙盒环境并不意味着要承载实时流量，并且有生产程序没有的限制。
+   * 它包括Sites、Assets和Edge Delivery Services，交付时自动填充Git分支，其中包括示例代码、开发环境和非生产管道。
    * 请参阅[沙盒简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)，了解更多详细信息。
