@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
+source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 7%
+source-wordcount: '1950'
+ht-degree: 6%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 7%
 
 了解体验审核如何验证您的部署过程，确保更改符合性能、可访问性、最佳实践和SEO的基线标准。 它提供了一个清晰且信息丰富的仪表板界面来跟踪这些指标。
 
->[!NOTE]
->
->此功能仅适用于[早期采用者计划](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)。
->
->有关AEM as a Cloud Service现有体验审核功能的详细信息，请参阅[体验审核测试](/help/implementing/cloud-manager/experience-audit-testing.md)。
-
 ## 概述 {#overview}
 
 体验审核可验证部署过程并帮助确保部署更改：
 
-1. 满足性能、可访问性、最佳实践、SEO（搜索引擎优化）和 PWA（渐进式 Web 应用程序）的基线标准。
+1. 满足性能、可访问性、最佳实践和SEO（搜索引擎优化）的基线标准。
 
 1. 不要引入回归。
 
@@ -88,7 +82,7 @@ Cloud Manager中的体验审核可确保用户在该网站上的体验达到最�
 
 体验审核的结果通过[生产管道执行页面](/help/implementing/cloud-manager/deploy-code.md)显示在生产管道的&#x200B;**阶段测试**&#x200B;阶段。
 
-![管道中的仪表板](assets/experience-audit-dashboard.jpg)
+![管道中的仪表板](assets/experience-audit-dashboard.png)
 
 体验审核提供[配置的页面](#configuration)的Google Lighthouse得分中位数以及与上一次扫描的得分差异。
 
@@ -139,9 +133,17 @@ Cloud Manager的&#x200B;**报告**&#x200B;选项卡已打开，其中显示&#x20
 
 #### 页面得分 — 趋势 {#trend}
 
-默认情况下，**页面得分 — 趋势**&#x200B;的选定视图是&#x200B;**最近6个月**&#x200B;的&#x200B;**中间分数**。
+默认情况下，**页面得分 — 趋势**&#x200B;的选定视图是&#x200B;**去年**&#x200B;的&#x200B;**中间分数**。
 
-使用图表按钮顶部和底部的&#x200B;**选择**&#x200B;和&#x200B;**查看**&#x200B;下拉列表分别选择特定于页面的详细信息和不同的时间范围。 单击图表顶部的&#x200B;**更新趋势**&#x200B;以应用选择并刷新图表。
+通过单击图例中的类别名称，可以选择查看特定Lighthouse类别的趋势。
+
+![趋势可选](assets/experience-audit-trend-selectable.png)
+
+使用图表顶部的&#x200B;**选择**&#x200B;下拉列表选择特定于页面的详细信息，使用底部的&#x200B;**查看**&#x200B;和&#x200B;**触发器**&#x200B;下拉列表分别选择不同的时间范围和触发器类型。
+
+通过&#x200B;**视图**&#x200B;下拉列表可以选择预设时间范围，也可以选择更具体视图的自定义间隔。
+
+![趋势视图](assets/experience-audit-trend-view.png)
 
 将鼠标悬停在图表上时，工具提示会在特定的时间点显示Google Lighthouse类别的值。
 
@@ -164,11 +166,11 @@ Cloud Manager的&#x200B;**报告**&#x200B;选项卡已打开，其中显示&#x20
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-单击任何推荐的V形符号可显示有关该推荐的详细信息。
+单击任意推荐可显示有关该推荐的详细信息。
 
 ![推荐详细信息](assets/experience-audit-recommendations-details.png)
 
-如果可用，则扩展的推荐详细信息中还包含推荐影响的百分比，以帮助重点关注最具影响力的更改。
+如果可用，则扩展的推荐详细信息中还包含推荐影响的百分比，以帮助重点关注最具影响力的更改。 除此之外，扩展的建议可能还包含相关的AEM文档链接和提示，可指导您实施建议的修复。
 
 单击详细信息视图中的&#x200B;**查看页面**&#x200B;链接可查看建议适用的页面。
 
@@ -222,7 +224,7 @@ Cloud Manager的&#x200B;**报告**&#x200B;选项卡已打开，其中显示&#x20
 
 管道显示一个可展开的错误部分，以查看它无法访问的相对URL路径。
 
-体验审核遇到的![问题](assets/experience-audit-issues.jpg)
+体验审核遇到的![问题](assets/experience-audit-issues.png)
 
 如果查看完整报告，则详细信息将显示在&#x200B;**[体验审核扫描结果](#results)**&#x200B;部分中，该部分也是可扩展的。
 
