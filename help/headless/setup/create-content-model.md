@@ -5,9 +5,9 @@ exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 88%
 信息架构师只会在偶尔需要新模型时执行这些任务。对于本指南快速入门，我们只需要创建一个模型。
 
 1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**工具**、**常规**、**内容片段模型**。
-1. 选择通过创建配置生成的文件夹。
+1. 选择创建配置时生成的文件夹。
 
    ![模型文件夹 ](../assets/models-folder.png)
 1. 选择&#x200B;**创建**。
@@ -44,9 +44,9 @@ ht-degree: 88%
 
    ![配置属性](../assets/models-configure-properties.png)
 
-1. 当您完成模型构建后，选择&#x200B;**保存**。
+1. 当您完成模型构建之后，选择&#x200B;**保存**。
 
-1. 所创建模型的模式取决于您在创建模型时是否选择了&#x200B;**启用模型**：
+1. 创建模型的模式取决于您在创建模型时是否选择了&#x200B;**启用模型**：
    * 选择 – 新模型将已&#x200B;**启用**
    * 未选择 – 新模型会以&#x200B;**草稿**&#x200B;模式创建
 

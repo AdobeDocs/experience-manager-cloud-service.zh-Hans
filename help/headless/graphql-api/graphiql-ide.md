@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 94%
 
 在两种情况下，编辑器面板中显示的查询都是在以下情况下运行的查询：
 
-* 选择&#x200B;**执行查询**&#x200B;图标
+* 在&#x200B;**上选择执行查询** 图标
 * 使用键盘组合`Control-Enter`
 
 ## 查询变量 {#query-variables}
@@ -100,13 +100,13 @@ GraphiQL IDE 还让您管理[查询变量](/help/headless/graphql-api/content-fr
 
 >[!NOTE]
 >
->请参阅[正在缓存您的持久查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)。
+>参阅[缓存您的持久查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)。
 
 >[!NOTE]
 >
 >Dispatcher 上的自定义重写规则可能会覆盖来自 AEM 发布的默认值。
 >
->如果您根据位置匹配模式从Dispatcher发送基于TTL的缓存控制标头，则如有必要，您可能希望从匹配项中排除`/graphql/execute.json/*`。
+>如果你从 Dispatcher 发送基于 TTL 的缓存控制标头、基于位置匹配模式，则如有必要，您可能需要从匹配项中排除 `/graphql/execute.json/*`。
 
 使用 GraphQL，您可以配置 HTTP 缓存标头，以控制单个持久查询的这些参数。
 

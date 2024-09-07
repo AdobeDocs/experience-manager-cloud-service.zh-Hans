@@ -5,9 +5,9 @@ exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 8d14936ad21dc5879c72383defc3db22ce9a24ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '867'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -41,10 +41,10 @@ ht-degree: 87%
    | | 名称 | 值 | 默认值 | 服务 | 已应用 | 类型 | 注释 |
    |---|---|---|---|---|---|---|---|
    | 1 | `CF_MIGRATION_ENABLED` | `1` | `0` | 所有 | | 变量 | Enables(!=0) 或 disables(0) 触发内容片段迁移作业。 |
-   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | 所有 | | 变量 | Enforce (!=0)重新迁移内容片段。 将此标志设置为0会执行CF的增量迁移。 这意味着，如果作业因任意原因终止，则作业的下一次运行将从它终止的位置开始迁移。建议强制执行第一次迁移 (value=1)。 |
-   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | 所有 | | 变量 | 用于保存迁移后的内容片段数的批次的大小。 这与在一个批次中保存到存储库的CF数量相关，并且可用于优化写入存储库的次数。 |
-   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | 所有 | | 变量 | 一次要处理的内容片段的最大数量。 另请参阅`CF_MIGRATION_INTERVAL`的注释。 |
-   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | 所有 | | 变量 | 处理剩余内容片段直到达到下个限制的时间间隔（秒）。 此间隔还被视为启动作业之前的等待时间，以及处理每个后续CF_MIGRATION_LIMIT数CF之间的延迟。 (*) |
+   | 2 | `CF_MIGRATION_ENFORCE` | `1` | `0` | 所有 | | 变量 | Enforce (!=0) 重新迁移内容片段。将此标志设置为 0 会执行 CF 的增量迁移。这意味着，如果作业因任意原因终止，则作业的下一次运行将从它终止的位置开始迁移。建议强制执行第一次迁移 (value=1)。 |
+   | 3 | `CF_MIGRATION_BATCH` | `50` | `50` | 所有 | | 变量 | 用于在迁移后保存内容片段数量的批次大小。这与在一个批次中保存到存储库的 CF 数量有关，并且可以用于优化对存储库的写入次数。 |
+   | 4 | `CF_MIGRATION_LIMIT` | `1000` | `1000` | 所有 | | 变量 | 一次处理的内容片段的最大数目。请参阅有关 `CF_MIGRATION_INTERVAL` 的发行说明。 |
+   | 5 | `CF_MIGRATION_INTERVAL` | `60` | `600` | 所有 | | 变量 | 处理剩余内容片段直到下一个限制的间隔（秒）。该间隔也被视为开始作业之前的等待时间，以及处理每个后续 CF_MIGRATION_LIMIT 个 CF 之间的延迟。(*) |
 
    >[!NOTE]
    >

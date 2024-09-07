@@ -5,9 +5,9 @@ exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
 
 管理员只需要创建配置一次，或者在极少数情况下，需要新工作区用于组织内容模型时进行创建。对于本指南快速入门，我们只需要创建一个配置。
 
-1. 登录AEM as a Cloud Service，从主菜单选择&#x200B;**工具>常规>配置浏览器**。
+1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**工具 -> 常规 -> 配置浏览器**。
 1. 提供配置的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
    * **名称**&#x200B;会成为存储库中的节点名称。
@@ -41,7 +41,7 @@ ht-degree: 92%
 
 1. 选择&#x200B;**创建**
 
-您可以根据需要创建多个配置。 配置也可以嵌套。
+如果需要，您可以创建多个配置。配置也可以嵌套。
 
 >[!NOTE]
 >

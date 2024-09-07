@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1826'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -363,7 +363,7 @@ query {
 }
 ```
 
-### 示例查询 — 标记为城市分隔符的所有城市的名称 {#sample-names-all-cities-tagged-city-breaks}
+### 示例查询 - 标记为“城市度假”的所有城市的名称 {#sample-names-all-cities-tagged-city-breaks}
 
 如果您：
 
@@ -1350,7 +1350,7 @@ query {
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询将`fragments`作为`[Article]`的数组提供。
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询将`fragments`作为`[Article]`的数组传递
 
 ```graphql
 {
@@ -1796,19 +1796,19 @@ query {
 } 
 ```
 
-## 投放DAM和Dynamic Media Assets的示例查询 {#sample-queries-delivery-DAM-DM}
+## 用于传递 DAM 和动态媒体资产的示例查询 {#sample-queries-delivery-DAM-DM}
 
-对于（DAM资产的）Web优化图像投放：
+对于 Web 优化的图像传递（DAM 资产）：
 
-* [使用完整参数进行Web优化图像投放的示例查询](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
+* [具有完整参数的 Web 优化图像传递的示例查询](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-full-parameters)
 
-* [使用单个指定参数进行Web优化图像投放的示例查询](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
+* [具有单个指定参数的 Web 优化图像传递的示例查询](/help/headless/graphql-api/content-fragments.md#web-optimized-image-delivery-single-query-variable)
 
-用于将URL交付到Dynamic Media资源
+用于将 URL 传送到 Dynamic Media 资产
 
-* 请参阅[按URL进行的Dynamic Media资源投放的示例查询 — 图像引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* 参阅[通过 URL 传递动态媒体资产的示例查询 - 图像参考](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* 查看按URL进行的Dynamic Media资源投放的[示例查询 — 多个引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* 请参见[通过 URL 传递动态媒体资产的示例查询 - 多重引用](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## 示例内容片段结构（用于 GraphQL） {#content-fragment-structure-graphql}
 

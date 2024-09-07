@@ -5,9 +5,9 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 96%
 1. 选择&#x200B;**创建**。
 1. 此时，**创建新 GraphQL 端点**&#x200B;对话框会打开。在其中可以指定：
    * **名称**：端点的名称，您可以输入任意文本。
-   * **使用由**&#x200B;提供的GraphQL架构：使用下拉列表选择所需的配置。
+   * **使用**&#x200B;提供的 GraphQL 模式：使用下拉菜单选择所需的配置。
 1. 选择&#x200B;**创建**&#x200B;来确认。
 1. 在控制台中，此时会根据之前创建的配置显示一条&#x200B;**路径**。该路径用于执行 GraphQL 查询。
 
@@ -45,7 +45,7 @@ ht-degree: 96%
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-有关启用GraphQL端点的更多详细信息，请参阅[在AEM中管理GraphQL端点](/help/headless/graphql-api/graphql-endpoint.md)。
+有关启用 GraphQL 端点的更多详细信息，请参阅 [在 AEM 中管理 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)。
 
 ## 使用 GraphQL 及 GraphiQL 查询内容
 

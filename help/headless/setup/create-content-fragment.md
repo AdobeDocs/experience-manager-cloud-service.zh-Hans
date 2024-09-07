@@ -5,9 +5,9 @@ exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -27,12 +27,12 @@ ht-degree: 85%
 
 内容作者将创建任意数量的内容片段，用于呈现他们创建的内容。这会是他们在 AEM 中的主要任务。对于本指南快速入门，我们只需要创建一个。
 
-1. 登录AEM as a Cloud Service，从主菜单选择&#x200B;**导航** > **内容片段**。
+1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**导航** -> **Content Fragments**。
 
-1. 选择您之前创建的[文件夹。](create-assets-folder.md)
+1. 选择[您之前创建的文件夹。](create-assets-folder.md)
 1. 选择&#x200B;**创建**。
 1. 内容片段的创建将以对话框的形式呈现。
-选择要用于创建内容片段的位置和模型。
+选择想要用于创建内容片段的位置和模型。
 
    * 可用的模型取决于您为资源文件夹](create-assets-folder.md)定义的&#x200B;[**云配置**，您将在该文件夹中创建内容片段。
    * 如果模型不可用，请检查资产文件夹的配置。
@@ -41,7 +41,7 @@ ht-degree: 85%
 
    ![创建新内容片段对话框](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. 选择&#x200B;**创建**&#x200B;或&#x200B;**创建并打开**。
+1. 选择 **创建** 或 **创建并打开**。
 
 内容片段可以引用其他内容片段，在需要时允许嵌套内容结构。
 

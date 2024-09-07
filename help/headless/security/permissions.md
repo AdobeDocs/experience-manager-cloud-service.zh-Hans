@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '817'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Author 服务是内部用户创建、管理和发布内容的地方。权限以�
 
 作为最佳实践，应在 AEM 中设置组级别权限。这些组也称为本地组，可以在 AEM 创作环境中管理。
 
-管理组成员资格的最简单方式是使用 Adobe Identity Management System (IMS) 组，并将 [IMS 组分配到本地 AEM 组](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem)。
+管理组成员资格的最简单方式是使用 Adobe Identity Management System (IMS) 组，并将 [IMS 组分配到本地 AEM 组](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=zh-Hans#managing-permissions-in-aem)。
 
 ![Admin console 权限流](assets/admin-console-aem-group-permissions.png)
 
@@ -37,7 +37,7 @@ Author 服务是内部用户创建、管理和发布内容的地方。权限以�
 
 >[!TIP]
 >
->有关管理IMS和AEM用户和组的详细视频演练，请参阅[配置对AEM as a Cloud Service的访问权限](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=zh-Hans)。
+>有关管理 IMS 和 AEM 用户和组的详细视频演示，请参阅 [配置对 AEM as a Cloud Service 的访问](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=zh-Hans)。
 
 要在 AEM 中管理&#x200B;**组**，请导航到&#x200B;**工具** > **安全** > **组**。
 
@@ -65,7 +65,7 @@ Author 服务是内部用户创建、管理和发布内容的地方。权限以�
 >
 >对内容片段模型的修改会变更 Headless 应用程序依赖的底层 GraphQL API。
 
-如果您希望创建一个组来管理内容片段模型，但不提供完整的管理员访问权限，您可以创建具有以下访问控制条目的组：
+如果您想要创建一个组来管理内容片段模型，但不提供完整的管理员访问权限，您可以创建具有以下访问控制条目的组：
 
 | 路径 | 权限 | 特权 |
 |-----| -------------| ---------|

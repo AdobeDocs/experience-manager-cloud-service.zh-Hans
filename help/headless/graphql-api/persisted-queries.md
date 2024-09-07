@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1952'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -258,37 +258,36 @@ query getAdventuresByActivity($activity: String!) {
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-UTF-8编码`%3B`用于`;`，`%3D`是`=`的编码。 查询变量和任何特殊字符必须[正确编码](#encoding-query-url)才能执行持久查询。
+UTF-8 编码 `%3B` 是 `;` 的，`%3D` 是 `=` 的编码。查询变量和任何特殊字符必须[正确编码](#encoding-query-url)才能执行持久查询。
 
-### 使用查询变量 — 最佳实践 {#query-variables-best-practices}
+### 使用查询变量 - 最佳实践 {#query-variables-best-practices}
 
-在查询中使用变量时，应遵循一些最佳实践：
+在查询中使用变量时，应遵循一些最佳做法：
 
 * 编码
-作为一般方法，始终建议编码所有特殊字符；例如`;`、`=`、`?`、`&`等。
+作为一般方法，始终建议对所有特殊字符进行编码；例如，`;`、`=`、`?`、`&`等等。
 
 * 分号
-使用多个变量（以分号分隔）的持久查询需要具备以下任一项：
-   * 以分号编码(`%3B`)；对URL进行编码也可实现此目的
-   * 或在查询末尾添加尾随的分号
+使用多个变量（以分号分隔）的持久查询需要具有以下任一功能：
+   * 编码的分号（`%3B`）；对 URL 进行编码也能达到此目的
+   * 或者在查询末尾添加一个分号
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-为Dispatcher启用`CACHE_GRAPHQL_PERSISTED_QUERIES`后，其值中包含`/`或`\`字符的参数会在Dispatcher级别编码两次。
-要避免出现这种情况，请执行以下操作：
+什么时候 `CACHE_GRAPHQL_PERSISTED_QUERIES` 为 Dispatcher 启用，则包含 `/` 或者 `\` 其值中的字符在 Dispatcher 级别被编码两次。为了避免这种情况：
 
-   * 在Dispatcher上启用`DispatcherNoCanonURL`。
-这样可指示Dispatcher将原始URL转发到AEM，从而防止编码重复。
-但是，此设置当前仅适用于`vhost`级别，因此如果您已有Dispatcher配置可重写URL（例如，使用缩短的URL时），则可能需要为持久查询URL使用单独的`vhost`。
+   * 在 Dispatcher 上启用 `DispatcherNoCanonURL`。
+这将指示 Dispatcher 将原始 URL 转发到 AEM，从而防止重复编码。
+但是此设置目前仅适用于 `vhost` 级别，因此如果你已经有 Dispatcher 配置来重写 URL（例如使用缩短的 URL 时），则可能需要单独的 `vhost` 用于持久查询 URL。
 
-   * 发送`/`或`\`个字符未编码。
-调用持久查询URL时，请确保所有`/`或`\`字符在持久查询变量的值中保持未编码状态。
+   * 发送 `/` 或者 `\` 未编码的字符。
+调用持久查询 URL 时，确保所有 `/` 或者 `\` 字符在持久查询变量的值中仍未编码。
      >[!NOTE]
      >
-     >仅当由于任何原因无法实现`DispatcherNoCanonURL`解决方案时，才建议使用此选项。
+     >此选项仅建议用于 `DispatcherNoCanonURL` 解决方案因某种原因无法实施。
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 
-  为Dispatcher启用`CACHE_GRAPHQL_PERSISTED_QUERIES`后，无法在变量的值中使用`;`字符。
+  当为 Dispatcher 启用“`CACHE_GRAPHQL_PERSISTED_QUERIES`”时，则变量值中不能使用字符“`;`”。
 
 ## 正在缓存您的持久查询 {#caching-persisted-queries}
 
@@ -411,7 +410,7 @@ curl -u admin:admin -X POST \
 
 默认情况下，无论实际结果如何，`PersistedQueryServlet`在执行查询时都会发送`200`响应。
 
-您可以[配置&#x200B;**持久查询服务配置**&#x200B;的OSGi设置](/help/implementing/deploying/configuring-osgi.md)以控制`/execute.json/persisted-query`端点在持久查询中发生错误时是否返回更详细的状态代码。
+当持久查询中出现错误时，您可以为&#x200B;**持久查询服务配置**[配置 OSGi 设置](/help/implementing/deploying/configuring-osgi.md)，以控制 `/execute.json/persisted-query` 端点是否返回更详细的状态代码。
 
 >[!NOTE]
 >
@@ -420,21 +419,21 @@ curl -u admin:admin -X POST \
 字段 `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) 可以根据需要定义：
 
 * `false`（默认值）：
-持久化查询成功与否无关紧要。返回的`Content-Type`标头是`application/json`，`/execute.json/persisted-query` *始终*&#x200B;返回状态代码`200`。
+持久化查询成功与否无关紧要。`Content-Type` 标头返回的是`application/json`，而`/execute.json/persisted-query` *总是*&#x200B;返回状态代码`200`。
 
 * `true`：
-返回的`Content-Type`是`application/graphql-response+json`，当运行持久查询时存在任何形式的错误时，终结点将返回相应的响应代码：
+返回的`Content-Type`是`application/graphql-response+json`，并且当运行持久查询时出现任何形式的错误，端点将返回适当的响应代码：
 
   | 代码 | 描述 |
   |--- |--- |
   | 200 | 成功响应 |
-  | 400 | 指示缺少标头，或者持久查询路径存在问题。 例如，未指定配置名称，未指定后缀等。<br>请参阅[疑难解答 — 未配置GraphQL终结点](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url)。 |
-  | 404 | 无法找到请求的资源。 例如，Graphql端点在服务器上不可用。<br>请参阅[疑难解答 — GraphQL持久查询URL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured)中缺少路径。 |
-  | 500 | 内部服务器错误。 例如，验证错误、持久性错误和其他错误。 |
+  | 400 | 表示缺少标题，或者持久查询路径存在问题。例如：未指定配置名称、未指定后缀等。<br>参阅 [故障排除 - 未配置 GraphQL 端点](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url)。 |
+  | 404 | 未能找到所请求的资源。例如：Graphql 端点在服务器上不可用。<br>参阅 [故障排除 - GraphQL 持久查询 URL 中缺少路径](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured)。 |
+  | 500 | 内部服务器错误。例如：验证错误、持久性错误等。 |
 
   >[!NOTE]
   >
-  >另请参阅https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >另请参阅 https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## 为应用程序使用的查询 URL 编码 {#encoding-query-url}
 
@@ -477,12 +476,12 @@ URL 可以划分为以下部分：
 要创建包：
 
 1. 导航到&#x200B;**工具** > **部署** > **包**。
-1. 点击&#x200B;**创建包**&#x200B;创建一个新包。这将打开一个用于定义资源包的对话框。
+1. 点击&#x200B;**创建包**&#x200B;创建一个新包。这打开一个用于定义资源包的对话框。
 1. 在包定义对话框中，在&#x200B;**常规**&#x200B;下输入&#x200B;**名称**，如“wknd-persistent-queries”。
 1. 输入版本号，如“1.0”。
 1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。使用路径查找器选择 `persistentQueries` 文件夹。例如，对于 `wknd` 配置，完整路径为 `/conf/wknd/settings/graphql/persistentQueries`。
 1. 选择&#x200B;**保存**&#x200B;以保存新的包定义并关闭对话框。
-1. 在所创建的包定义中选择&#x200B;**生成**&#x200B;按钮。
+1. 在新创建的包定义中选择&#x200B;**生成**&#x200B;按钮。
 
 生成包后，您可以：
 

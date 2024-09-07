@@ -5,9 +5,9 @@ exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 83%
 
 管理员只需要偶尔创建文件夹，在创建内容时用于组织内容。对于本指南快速入门，我们只需要创建一个文件夹。
 
-1. 登录AEM as a Cloud Service，从主菜单选择&#x200B;**导航> Assets >文件**。
-1. 选择&#x200B;**创建>文件夹**。
+1. 登录 AEM as a Cloud Service，从主菜单选择&#x200B;**导航 -> 资源 -> 文件**。
+1. 选择 **创建 > 文件夹**。
 1. 提供文件夹的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
    * **名称**&#x200B;会成为存储库中的节点名称。
@@ -36,16 +36,16 @@ ht-degree: 83%
       * 如有必要可以调整。
 
    ![创建文件夹](../assets/assets-folder-create.png)
-1. 将鼠标悬停在其上并点击复选标记，选择您创建的文件夹。 然后从工具栏中选择&#x200B;**属性**（或者使用 `p` [键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)）。
+1. 将光标悬停在其上并点击复选标记，选择您创建的文件夹。然后从工具栏中选择&#x200B;**属性**（或者使用 `p` [键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)）。
 1. 在&#x200B;**属性**&#x200B;窗口中，选择 **Cloud Services** 选项卡。
 1. 对于&#x200B;**云配置**，选择[您之前创建的配置。](create-configuration.md)
    ![配置资源文件夹](../assets/assets-folder-configure.png)
 1. 选择&#x200B;**保存并关闭**。
-1. 在确认窗口中选择&#x200B;**确定**。
+1. 在确认窗口中选择 **好的**。
 
    ![确认窗口](../assets/assets-folder-confirmation.png)
 
-您可以在创建的文件夹中创建其他子文件夹。 子文件夹将继承父文件夹的&#x200B;**云配置**。但是，如果要使用来自其他配置的模型，则可以覆盖此项。
+您可以在创建的文件夹中创建其他子文件夹。子文件夹将继承父文件夹的&#x200B;**云配置**。但是，如果您想要使用来自其他配置的模型，则可以覆盖此项。
 
 如果您使用本地化的站点结构，则可以在新文件夹下[创建语言根](/help/assets/translate-assets.md)。
 

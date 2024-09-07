@@ -5,9 +5,9 @@ feature: Headless, Content Fragments,GraphQL API
 exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
 role: Admin, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 * **Dispatcher** 是一个通过 AEM Dispatcher 模块增强的静态 Web 服务器。它提供缓存功能和其他安全层。**Dispatcher** 位于 **Publish** 和 **Preview** 服务前。
 
-在 AEM as a Cloud Service 程序中，您可以有多个环境：Dev、Stage 和 Prod。每个环境有自己独特的 **Author**、**Publish** 和 **Preview** 服务。请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)以了解详情。
+在 AEM as a Cloud Service 程序中，您可以有多个环境：Dev、Stage 和 Prod。每个环境有自己独特的 **Author**、**Publish** 和 **Preview** 服务。请参阅 [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) 以了解更多信息。
 
 ## 作者发布模型
 

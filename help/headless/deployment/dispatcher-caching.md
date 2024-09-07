@@ -5,9 +5,9 @@ feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
 role: Admin, Developer
 source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->有关 Dispatcher 的详细文档，请参阅 [Dispatcher 指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
+>有关 Dispatcher 的详细文档，请参阅 [Dispatcher 指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)。
 
 ## 启用持久化查询的缓存 {#enable-caching-persisted-queries}
 
@@ -41,7 +41,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->要在缓存的持久化查询上实现单个`ETag`标头计算（对于&#x200B;*每个*&#x200B;唯一响应），必须在Dispatcher配置虚拟主机配置中使用`FileETag Digest`设置（如果尚不存在）：
+>为了对缓存的持久查询实现单独的 `ETag` 标头计算（对于 *每个* 唯一的响应），必须在 Dispatcher 配置虚拟主机配置中使用 `FileETag Digest` 设置（如果它尚不存在）：
 >
 >```xml
 ><Directory />    
@@ -52,7 +52,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->为了符合 [Dispatcher 对可缓存文档的要求](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)，Dispatcher 将后缀 `.json` 添加到所有持久化查询 URL，以便能够缓存结果。
+>为了符合 [Dispatcher 对可缓存文档的要求](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=zh-Hans#how-does-the-dispatcher-return-documents%3F)，Dispatcher 将后缀 `.json` 添加到所有持久化查询 URL，以便能够缓存结果。
 >
 >在启用持久化查询缓存后，将通过重写规则添加此后缀。
 
