@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 的发
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 100%
+source-wordcount: '1678'
+ht-degree: 98%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 以下部分概述了 [!DNL Workfront for Experience Manager enhanced connector] 的常规发行说明。
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.19 的发布日期是 2024 年 4 月 12 日。
+[!DNL Workfront for Experience Manager enhanced connector]的最新版本1.9.20的发布日期为2024年9月6日。
 
 ## 版本亮点 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
 
-* 无法关闭 HTTP 客户端导致内存不足问题。
+* 上传和创建现有资源的新版本时，MIME类型丢失。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.19 版](/help/assets/workfront-connector-install.md)。
+>Adobe 推荐您[升级到 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.20 版](/help/assets/workfront-connector-install.md)。
 
 ## 已知问题 {#known-issues}
 
@@ -38,6 +38,11 @@ ht-degree: 100%
 * 在使用经典 Workfront 体验时，**[!UICONTROL 更多]**&#x200B;下拉列表中的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项不允许您在 Experience Manager 中选择目标目的地。当使用&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表时，**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。**[!UICONTROL 更多]**&#x200B;下拉列表和可在新 Workfront 体验中找到的&#x200B;**[!UICONTROL 文档操作]**&#x200B;下拉列表的&#x200B;**[!UICONTROL 收件人]**&#x200B;选项正常地发挥作用。
 
 ## 以前的版本 {#previous-releases}
+
+### 2024 年 4 月版本 {#april-2024-release}
+
+* 无法关闭 HTTP 客户端导致内存不足问题。
+
 
 ### 2024 年 3 月版本 {#march-2024-release}
 
@@ -68,7 +73,7 @@ ht-degree: 100%
 
 * 对于链接文件夹、文档更新和注释更新中的关键流程无请求时处理。
 
-### 2023 年 11 月版本 {#november-2023-release}
+### 2023 年 11 月版本 {#nov-2023-release}
 
 * 查看 AEM 文件夹列表时，该对话框需要一分多钟的时间才能加载。
 * 授权 [!DNL Workfront] 用户持续收到身份验证失败错误日志。
