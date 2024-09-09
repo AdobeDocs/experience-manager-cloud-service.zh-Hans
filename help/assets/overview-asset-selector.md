@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选�
 description: 使用资产选择器可在应用程序中搜索、查找和检索资产的元数据和演绎版。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 34%
@@ -221,7 +221,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
     </td>
     <td>
         <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="资产选择器上传图"><br/>
-        <a href="asset-selector-upload.md">资源选择器自定义项</a>
+        <a href="asset-selector-upload.md">资产选择器上传</a>
         <p>
         <em>了解如何从本地或第三方文件系统将文件或文件夹上传到Asset Selector。</em>
         </p>
