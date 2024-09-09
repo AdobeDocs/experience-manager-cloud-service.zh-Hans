@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选�
 description: 使用资源选择器可在应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -54,3 +54,9 @@ ht-degree: 1%
 资产选择器允许您添加自定义上传表单。 提供了多种自定义设置。 例如，[hideUploadButton](/help/assets/asset-selector-properties.md)属性允许您隐藏应用程序中默认显示的上传按钮。 相反，您可以根据需要对其进行自定义，以在MFE应用程序之外呈现。 有关配置，请参阅[自定义上传](/help/assets/asset-selector-customization.md#customized-upload)。
 
 ![自定义上传](assets/customized-upload.png)
+
+>[!MORELIKETHIS]
+>
+>* [资产选择器示例](/help/assets/asset-selector-examples.md)
+>* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
+>* [资产选择器属性](/help/assets/asset-selector-properties.md)

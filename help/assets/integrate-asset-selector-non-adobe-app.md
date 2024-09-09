@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选�
 description: 将资源选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 6%
+source-wordcount: '424'
+ht-degree: 5%
 
 ---
 
@@ -141,3 +141,9 @@ Asset Selector允许您使用各种非Adobe应用程序或第三方应用程序�
 >
 >如果您已使用注册登录工作流集成资产选择器，但仍无法访问投放存储库，请确保清理了浏览器Cookie。 否则，您最终会在控制台中收到`invalid_credentials All session cookies are empty`错误。
 
+>[!MORELIKETHIS]
+>
+>* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
+>* [资产选择器属性](/help/assets/asset-selector-properties.md)
+>* [将资源选择器与Dynamic Media与OpenAPI功能集成](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [资产选择器自定义项](/help/assets/asset-selector-customization.md)
