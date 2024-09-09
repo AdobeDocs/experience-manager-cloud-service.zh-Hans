@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 74%
+source-wordcount: '993'
+ht-degree: 69%
 
 ---
 # 代码片段 {#snippets}
@@ -161,3 +161,22 @@ ht-degree: 74%
 >[!TIP]
 >
 >您是Dynamic Media的新用户吗？ 有关Dynamic Media的简要概述，请参阅[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
+
+## 另请参阅Dynamic Media {#see-also-dm}
+
+>[!NOTE]
+>
+>* 您是Dynamic Media的新用户吗？ 有关Dynamic Media的简要概述，请参阅[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
+>
+>* 遵循[Dynamic Media最佳实践](/help/assets/dynamic-media/dm-best-practices.md)以获取最大价值。
+>
+>* 尝试使用[快照工具](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)的Dynamic Media图像功能。
+>
+>* 确保流畅播放带有[自适应视频](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)的视频。
+>
+>* 使用智能裁切](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)自动裁切[图像。
+>
+>* 使用智能裁剪](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)自动裁剪[视频。
+>
+>* 提供[交互式3D支持的体验](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
+>* 其他[Dynamic Media资源银行](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。

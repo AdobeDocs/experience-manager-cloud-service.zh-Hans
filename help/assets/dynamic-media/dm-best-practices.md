@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -411,3 +411,5 @@ Adobe建议您使用智能成像的功能，而不是手动将图像格式设置
 CDN（内容分发网络）缓存Dynamic Media资产，以快速将其交付给客户。 更新这些资源后，所做的更改必须立即在网站上生效。 通过清除或使CDN缓存失效，Dynamic Media交付的资源可以快速更新。 此方法无需根据TTL（生存时间）值（通常设置为10小时）等待缓存过期。 根据您的特定用例，您可以相应地更新CDN TTL（生存时间）设置。
 
 想要了解更多信息？ 转到[通过Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN缓存失效。
+
+{{see-also-dm}}

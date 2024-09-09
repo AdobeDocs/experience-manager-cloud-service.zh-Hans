@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2621'
 ht-degree: 0%
 
 ---
@@ -212,15 +212,18 @@ _应用了弹出查看器的`Running`图像集。_
 
 如果要详细了解您刚刚阅读的内容，请使用以下材料更详细地探索概念。 否则，您的Dynamic Media历程已完成！
 
-_Dynamic Media帮助主题_
+{{see-also-dm}}
 
-* [如何创建图像预设](/help/assets/dynamic-media/image-presets.md)
-* [图像处理参数](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)的列表，在创建图像预设时，可在“图像修饰符”字段中使用该列表
-* [如何预览资源](/help/assets/dynamic-media/previewing-assets.md)
-* [如何预览三维资源](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [如何创建图像集](/help/assets/dynamic-media/image-sets.md)
-* [如何创建旋转集](/help/assets/dynamic-media/spin-sets.md)
-* [如何创建混合媒体集](/help/assets/dynamic-media/mixed-media-sets.md)
+<!--
+_Dynamic Media Help topics_
+
+* [How to create image presets](/help/assets/dynamic-media/image-presets.md)
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
+* [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
+* [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
+* [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md) -->
 
 _Dynamic Media教程_
 

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3615'
 ht-degree: 0%
 
 ---
@@ -268,18 +268,20 @@ _根据选定的“ZoomVertical_light”查看器预设预览资源。 将鼠标
 
 此历程的第一部分介绍了各种Dynamic Media主题的基础知识。 如果您想了解有关所读内容的更多信息，请使用以下材料更详细地探索概念。 否则，您可以继续历程的第二部分。 查看[此Dynamic Media历程的后续内容](#whats-next)。
 
-_Dynamic Media帮助主题_
+{{see-also-dm}}
+<!--
+_Dynamic Media Help topics_
 
-* [在Experience Manager中使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-* [关于智能成像](/help/assets/dynamic-media/imaging-faq.md)
-* [如何创建自适应视频集](/help/assets/dynamic-media/video.md)
-* [优化图像质量的最佳实践](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [如何上传资源](/help/assets/add-assets.md#upload-assets)
-* [如何预览资源](/help/assets/dynamic-media/previewing-assets.md)
-* [如何预览三维资源](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [如何交付Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [如何发布资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [使用 Dynamic Media 中的“选择性发布”功能](/help/assets/dynamic-media/selective-publishing.md)
+* [Work with Dynamic Media in Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
+* [About Smart Imaging](/help/assets/dynamic-media/imaging-faq.md)
+* [How to create Adaptive Video Sets](/help/assets/dynamic-media/video.md)
+* [Best practices for optimizing the quality of your images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
+* [How to upload assets](/help/assets/add-assets.md#upload-assets)
+* [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
+* [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [How to deliver Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
 
 _Dynamic Media教程_
 
