@@ -1,19 +1,19 @@
 ---
 title: Adaptive Form Block 组件及其属性
-description: 本文档概述了 AEM Forms Edge Delivery Service 中可用的表单组件及其属性。
+description: 本文档概述了AEM Forms的Edge Delivery Services中可用的表单组件及其属性。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 100%
+source-wordcount: '1009'
+ht-degree: 96%
 
 ---
 
 # Adaptive Form Block 组件及其属性
 
-AEM Forms Edge Delivery Services 允许您使用各种组件创建用户友好型交互式表单。这些组件可满足不同类型的数据收集需求，并且可以轻松定制以满足您的特定需求。
+AEM FormsEdge Delivery Services允许您使用各种组件创建用户友好的交互式表单。 这些组件可满足不同类型的数据收集需求，并且可以轻松定制以满足您的特定需求。
 
 
 ![包含某些组件和属性的示例电子表格](/help/edge/assets/sample-form-in-spreadsheet.png)

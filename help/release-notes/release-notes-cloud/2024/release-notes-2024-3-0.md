@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.3.0 版�
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 94%
+source-wordcount: '2293'
+ht-degree: 93%
 
 ---
 
@@ -116,7 +116,7 @@ Assets Essentials 允许管理员管理存储库中可用的专用收藏集的�
 
 ### AEM Forms 的新功能 {#forms-new-features}
 
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: AEM Forms Edge Delivery Services 是一组可组合的服务，可用于实现快速开发环境，作者可以在其中快速更新、发布和启动新表单。这些服务提供卓越且具有高影响力的表单体验，从而推动参与度和转化率。这些表单体验很容易创作和开发。
+* **[Adobe Experience Manager FormsEdge Delivery Services](/help/edge/docs/forms/overview.md)**： AEM FormsEdge Delivery Services是一组可组合的服务，可用于实现快速开发环境，以便作者能够快速更新、发布和启动新表单。 这些服务提供卓越且具有高影响力的表单体验，从而推动参与度和转化率。这些表单体验很容易创作和开发。
 
   ![EDS Forms 功能](/help/edge/assets/eds-forms-features.png)
 

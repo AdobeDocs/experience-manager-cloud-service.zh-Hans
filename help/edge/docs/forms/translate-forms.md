@@ -1,20 +1,20 @@
 ---
-title: 翻译和本地化 AEM Forms Edge Delivery ServicesForm
-description: 翻译和本地化 AEM Forms Edge Delivery ServicesForm
+title: 翻译和本地化AEM Forms的Edge Delivery Services
+description: 翻译和本地化AEM Forms的Edge Delivery Services
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 100%
+source-wordcount: '546'
+ht-degree: 94%
 
 ---
 
 
-# 翻译和本地化 AEM Forms Edge Delivery ServicesForm
+# 翻译和本地化AEM Forms的Edge Delivery Services
 
 在 Edge Delivery Services 中，表格翻译涉及将表格内容从一种语言转换为另一种语言，重点关注准确性、清晰度和一致性。翻译或本地化的形式能够覆盖不同地理位置的更广泛受众，从而提升用户体验并促进不同语言偏好之间的更好沟通。
 

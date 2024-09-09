@@ -1,13 +1,13 @@
 ---
 title: 使用规则向表单添加动态行为
-description: AEM Forms Edge Delivery Services 专为实现最佳性能而构建，让您能够畅想简化数据收集和用户参与的未来。使用规则向您的表单添加动态行为
+description: AEM Forms的Edge Delivery Services旨在提供最佳性能，使您能够未来有效地收集数据和进行用户参与。 使用规则向您的表单添加动态行为
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 100%
+source-wordcount: '2218'
+ht-degree: 98%
 
 ---
 

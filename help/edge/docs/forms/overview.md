@@ -1,19 +1,20 @@
 ---
-title: AEM Forms Edge Delivery Services 概述
-description: AEM Forms Edge Delivery Services 专为实现最佳性能而构建，让您能够畅想简化数据收集和用户参与的未来。
+title: AEM FormsEdge Delivery Services概述
+description: AEM Forms的Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 5670e0ab7e6cb47bcc2dd7608aa3f01dc4ec0704
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+workflow-type: tm+mt
+source-wordcount: '1037'
+ht-degree: 83%
 
 ---
 
-# AEM Forms Edge Delivery Services
+# AEM Forms的Edge Delivery Services
 
-AEM Forms Edge Delivery Services 是一组可组合的服务，可用于实现快速开发环境，作者可以在其中快速更新、发布和启动新表单。这些服务提供卓越且具有高影响力的表单体验，从而推动参与度和转化率。这些表单体验很容易创作和开发。
+
+AEM FormsEdge Delivery Services是一组可组合的服务，可帮助实现快速开发环境，以便作者能够快速更新、发布和启动新表单。 这些服务提供卓越且具有高影响力的表单体验，从而推动参与度和转化率。这些表单体验很容易创作和开发。
 
 这些服务使您能够：
 
@@ -21,11 +22,13 @@ AEM Forms Edge Delivery Services 是一组可组合的服务，可用于实现�
 
 * **提供卓越的数字注册体验：**&#x200B;提供快速加载和渲染的数字注册体验，并通过实际使用监控 (RUM) 持续监控表单性能。更快的加载时间和优化的用户体验有助于提高表单完成率和转化率。
 
-* **使用开发人员友好的工具集：** AEM Forms Edge Delivery Services 使用纯 HTML、现代 CSS 和普通 JavaScript 来创建卓越的体验，避免特定框架的陡峭学习曲线。具有基本 Web 开发技能的开发人员可以自定义并轻松构建表单组件和体验。无需等待管道运行，只需将代码签入 GitHub，所做的更改就会生效。
+* **使用开发人员友好的工具集：**Edge Delivery ServicesAEM Forms
+使用纯HTML、现代CSS和vanilla JavaScript创建卓越的体验，避免特定框架的陡峭学习曲线。 具有基本 Web 开发技能的开发人员可以自定义并轻松构建表单组件和体验。无需等待管道运行，只需将代码签入 GitHub，所做的更改就会生效。
 
-## AEM Forms Edge Delivery Services 概述 {#edge-overview}
+## AEM FormsEdge Delivery Services概述 {#edge-overview}
 
-AEM Forms Edge Delivery 服务让您在网站上创作表单的方式具有高度的灵活性。您可以使用[所见即所得的创作](/help/forms/creating-adaptive-form-core-components.md)功能以及[基于文档的创作](/help/edge/docs/forms/create-forms.md)功能来创作内容和表单。AEM Forms Edge Delivery Services 提供一个称为 [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) 的表单区块，将表单添加到您的 Edge Delivery Services 站点。
+AEM Forms的Edge Delivery Services允许您在网站上创作表单的方式高度灵活。 您可以使用[所见即所得的创作](/help/forms/creating-adaptive-form-core-components.md)功能以及[基于文档的创作](/help/edge/docs/forms/create-forms.md)功能来创作内容和表单。AEM Forms的Edge Delivery Services
+提供称为[自适应Forms块](/help/edge/docs/forms/create-forms.md)的表单块，以将表单添加到Edge Delivery Services站点。
 
 例如，您直接在 Microsoft Excel 或 Google Sheets 中创作表单，这些电子表格将转换为您网站的表单。任何新表单或表单内容（例如新表单字段）都可以立即在您的网站上使用，无需重建过程。
 
@@ -33,7 +36,7 @@ AEM Forms Edge Delivery 服务让您在网站上创作表单的方式具有高�
 
 ![发布到 Edge Delivery Services 和 AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
-AEM Forms Edge Delivery Services 使用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，可在 [Google Sheets](/help/edge/docs/forms/create-forms.md) 或 [Microsoft Excel](/help/edge/docs/forms/create-forms.md) 中编写表单，并且可以使用 GitHub 存储库中的 CSS 和 JavaScript 来开发表单的组件。
+AEM Forms的Edge Delivery Services使用GitHub，因此客户可以直接从其GitHub存储库管理和部署代码。 例如，可在 [Google Sheets](/help/edge/docs/forms/create-forms.md) 或 [Microsoft Excel](/help/edge/docs/forms/create-forms.md) 中编写表单，并且可以使用 GitHub 存储库中的 CSS 和 JavaScript 来开发表单的组件。
 
 当表单就绪时，您即可使用 [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content)（一款 Chrome 浏览器扩展）来预览和发布内容更新。
 
@@ -86,7 +89,9 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客户可直接从其 Git
 >
 > 所见即所得的创作功能可在早期采用者计划中使用。如果您有兴趣，请从您的工作地址向 aem-forms-ea@adobe.com 发送一封快速电子邮件，以请求访问该功能。
 
-### AEM Forms Edge Delivery Services：表单的创作、发布和提交
+### AEM Forms的Edge Delivery Services
+
+：Forms的创作、发布和提交
 
 下图说明了使用基于文档的创作和所见即所得的创作创建、发布和提交表单的过程。
 
@@ -96,7 +101,7 @@ AEM Forms Edge Delivery Services 使用 GitHub，因此客户可直接从其 Git
 
 ## 开始创建表单
 
-* [AEM Forms Edge Delivery Services 快速入门](/help/edge/docs/forms/tutorial.md)
+* [AEM FormsEdge Delivery Services入门](/help/edge/docs/forms/tutorial.md)
 * [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
 * [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
 * [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)

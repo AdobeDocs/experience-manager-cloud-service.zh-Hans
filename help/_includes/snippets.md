@@ -1,8 +1,8 @@
 ---
-source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 75%
+source-wordcount: '915'
+ht-degree: 74%
 
 ---
 # 代码片段 {#snippets}
@@ -56,7 +56,7 @@ ht-degree: 75%
 
 ## 另请参阅 {#see-more-forms-eds}
 
-* [AEM Forms Edge Delivery Services 快速入门](/help/edge/docs/forms/tutorial.md)
+* [AEM FormsEdge Delivery Services入门](/help/edge/docs/forms/tutorial.md)
 * [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
 * [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
 * [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
