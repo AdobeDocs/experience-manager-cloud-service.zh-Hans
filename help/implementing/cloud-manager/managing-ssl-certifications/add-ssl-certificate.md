@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: 3aec9d13e2eb4bbc9a972e28195a6f43e92c1842
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '968'
 ht-degree: 27%
 
 ---
@@ -44,12 +44,12 @@ ht-degree: 27%
 
 1. 在页面的右上角附近，单击&#x200B;**添加SSL证书**。
 
-1. 在&#x200B;**添加SSL证书**&#x200B;对话框中，根据您的特定用例，执行以下操作之一：
+1. 在&#x200B;**添加SSL证书**&#x200B;对话框中，根据[您的特定用例](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)，执行以下操作之一：
 
-   | 用例 | 步骤 |
-   | --- | --- |
-   | **添加Adobe托管证书(DV)** | **添加Adobe托管证书(DV)：**<br> a。选择证书类型&#x200B;**托管(DV)** Adobe。<br>![添加DV证书](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b。在&#x200B;**选择域**&#x200B;下拉列表中，选择要与DV证书关联的一个或多个域。<br>没有域可供选择？ 如果是这样，这意味着您必须添加自定义域。 请参阅[添加自定义域](#add-custom-domain)。 添加完自定义域名后，请返回到本主题并再次从步骤1开始。<br>天。继续执行步骤7。 |
-   | **添加客户管理的证书(OV/EV)** | **要添加客户管理的证书(OV/EV)：**<br> a。选择证书类型&#x200B;**客户托管(OV/EV)**。<br>b。在&#x200B;**证书名称**&#x200B;字段中，输入证书的名称。 此字段仅供参考，可以是任何有助于您轻松引用证书的名称。<br>c。在&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;字段中，将所需值粘贴到各自的字段中。<br>![添加SSL证书对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>显示值中检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，了解有关常见错误疑难解答的更多信息。<br>天。继续执行步骤7。 |
+   | | 用例 | 步骤 |
+   | --- | --- | --- |
+   | 1 | **添加Adobe托管证书(DV)** | **添加Adobe托管证书(DV)：**<br> a。选择证书类型&#x200B;**托管(DV)** Adobe。<br>![添加DV证书](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b。在&#x200B;**选择域**&#x200B;下拉列表中，选择要与DV证书关联的一个或多个域。<br>没有域可供选择？ 如果是这样，这意味着您必须添加自定义域。 请参阅[添加自定义域](#add-custom-domain)。 添加完自定义域名后，请返回到本主题并再次从步骤1开始。<br>天。继续执行步骤7。 |
+   | 2 | **添加客户管理的证书(OV/EV)** | **要添加客户管理的证书(OV/EV)：**<br> a。选择证书类型&#x200B;**客户托管(OV/EV)**。<br>b。在&#x200B;**证书名称**&#x200B;字段中，输入证书的名称。 此字段仅供参考，可以是任何有助于您轻松引用证书的名称。<br>c。在&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;字段中，将所需值粘贴到各自的字段中。<br>![添加SSL证书对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>显示值中检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，了解有关常见错误疑难解答的更多信息。<br>天。继续执行步骤7。 |
 
 <!--
     **Add an SSL certificate:**
@@ -98,109 +98,101 @@ ht-degree: 27%
 
 如果证书安装不正确或不符合Cloud Manager的要求，则可能会出现某些错误。
 
-+++
++++**正确的证书顺序**
 
-* **正确的证书顺序**
+证书部署失败的最常见原因是中间证书或链证书的顺序不正确。
 
-  证书部署失败的最常见原因是中间证书或链证书的顺序不正确。
+中间证书文件必须以根证书或最接近根的证书结尾。它们必须从 `main/server` 证书降序到根目录。
 
-  中间证书文件必须以根证书或最接近根的证书结尾。它们必须从 `main/server` 证书降序到根目录。
+可以使用以下命令确定中间文件的顺序。
 
-  可以使用以下命令确定中间文件的顺序。
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
 
-  ```shell
-  openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-  ```
+您可以使用以下命令验证私钥和 `main/server` 证书是否匹配。
 
-  您可以使用以下命令验证私钥和 `main/server` 证书是否匹配。
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
 
-  ```shell
-  openssl x509 -noout -modulus -in certificate.pem | openssl md5
-  ```
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
 
-  ```shell
-  openssl rsa -noout -modulus -in ssl.key | openssl md5
-  ```
-
-  >[!NOTE]
-  >
-  >这两个命令的输出必须完全相同。如果您找不到 `main/server` 证书的匹配私钥，您需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
+>[!NOTE]
+>
+>这两个命令的输出必须完全相同。如果您找不到 `main/server` 证书的匹配私钥，您需要通过生成新的 CSR 和/或向 SSL 供应商请求更新的证书来重新键入证书。
 
 +++
 
-+++
++++**删除客户端证书**
 
-* **删除客户端证书**
+添加证书时，如果收到类似于以下内容的错误：
 
-  添加证书时，如果收到类似于以下内容的错误：
+```text
+The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
+```
 
-  ```text
-  The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
-  ```
-
-  您可能已将客户端证书包含在证书链中。 请确保该链不包含客户端证书，然后重试。
+您可能已将客户端证书包含在证书链中。 请确保该链不包含客户端证书，然后重试。
 
 +++
 
-+++
++++**证书策略**
 
-* **证书策略**
+如果您看到以下错误，请检查证书的策略。
 
-  如果您看到以下错误，请检查证书的策略。
+```text
+Certificate policy must conform with EV or OV, and not DV policy.
+```
 
-  ```text
-  Certificate policy must conform with EV or OV, and not DV policy.
-  ```
+嵌入的OID值通常标识证书策略。 将证书输出到文本并搜索OID将显示证书的策略。
 
-  嵌入的OID值通常标识证书策略。 将证书输出到文本并搜索OID将显示证书的策略。
+您可以使用以下示例作为指导，将证书详细信息输出为文本。
 
-  您可以使用以下示例作为指导，将证书详细信息输出为文本。
+```text
+openssl x509 -in 9178c0f58cb8fccc.pem -text
+certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            91:78:c0:f5:8c:b8:fc:cc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
+        Validity
+            Not Before: Nov 10 22:55:36 2021 GMT
+            Not After : Dec  6 15:35:06 2022 GMT
+        Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
+        Subject Public Key Info:
+...
+```
 
-  ```text
-  openssl x509 -in 9178c0f58cb8fccc.pem -text
-  certificate:
-      Data:
-         Version: 3 (0x2)
-         Serial Number:
-             91:78:c0:f5:8c:b8:fc:cc
-         Signature Algorithm: sha256WithRSAEncryption
-         Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
-          Validity
-              Not Before: Nov 10 22:55:36 2021 GMT
-              Not After : Dec  6 15:35:06 2022 GMT
-          Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
-          Subject Public Key Info:
-  ...
-  ```
+文本中的 OID 模式定义证书的策略类型。
 
-  文本中的 OID 模式定义证书的策略类型。
+| 图案 | 策略 | 在 Cloud Manager 中可接受 |
+|---|---|---|
+| `2.23.140.1.1` | EV | 是 |
+| `2.23.140.1.2.2` | OV | 是 |
+| `2.23.140.1.2.1` | DV | 否 |
 
-  | 图案 | 策略 | 在 Cloud Manager 中可接受 |
-  |---|---|---|
-  | `2.23.140.1.1` | EV | 是 |
-  | `2.23.140.1.2.2` | OV | 是 |
-  | `2.23.140.1.2.1` | DV | 否 |
+通过 `grep`ping 输出证书文本中的 OID 模式，您可以确认您的证书策略。
 
-  通过 `grep`ping 输出证书文本中的 OID 模式，您可以确认您的证书策略。
+```shell
+# "EV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
 
-  ```shell
-  # "EV Policy"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
-  
-  # "OV Policy"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
-  
-  # "DV Policy - Not Accepted"
-  openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
-  ```
+# "OV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
+
+# "DV Policy - Not Accepted"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
+```
 
 +++
 
-+++
++++**证书有效日期**
 
-* **证书有效日期**
-
-  Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。检查证书链的有效性。
+Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。检查证书链的有效性。
 
 +++
 

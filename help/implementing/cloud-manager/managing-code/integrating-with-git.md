@@ -1,18 +1,18 @@
 ---
-title: 将 git 用于 Cloud Manager
+title: 将Git用于Cloud Manager
 description: 了解如何使用 Cloud Manager 的 Git 存储库，以及如何将您自己的本地客户管理的 Git 储存库与 Cloud Manager 集成。
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 80206fc1396896fe45e2c959c78a0bf30eba71c5
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
-# 将 git 用于 Cloud Manager {#git-integration}
+# 将Git用于Cloud Manager {#git-integration}
 
 Adobe Cloud Manager 附带了一个 Git 存储库，用于使用 Cloud Manager 的 CI/CD 管道部署代码。
 
@@ -66,6 +66,6 @@ Adobe Cloud Manager 附带了一个 Git 存储库，用于使用 Cloud Manager �
 
 ## 其他资源 {#additional-resources}
 
-* [GitHub 资源](https://try.github.io)
+* [GitHub 资源](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
 * [Atlassian Git 教程](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git 备忘单](https://education.github.com/git-cheat-sheet-education.pdf)
