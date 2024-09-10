@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: eb01b6982578ad1300163c2fd536e844afc815fa
+source-git-commit: 9323464610b804ff407f5eedf404ab2cca93a8da
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 51%
+source-wordcount: '572'
+ht-degree: 46%
 
 ---
 
@@ -16,75 +16,60 @@ ht-degree: 51%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 17569 {#release-17569}
+## 版本 17689 {#release-17689}
 
-以下总结了维护版本17569的持续改进，该版本于2024年8月27日公开发布。 上一个维护版本是版本 17465。
+以下总结了维护版本17689的不断改进，该版本于2024年9月10日公开发布。 上一个维护版本是版本 17569。
 
 2024.9.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强 {#enhancements-17569}
+### 增强 {#enhancements-17689}
 
-* CQ-4353778：翻译流程事件。
-* CQ-4354583：通过Adobe管道发送翻译流程事件。
-* CQ-4356479：仅允许Adobe代码使用/adobe servlet上下文。
-* CQ-4358226：保存翻译关键词功能不适用于特定字符串格式。
-* CQ-4358270：AEM翻译包：2008年8月。
-* CQ-4358310：将oak-compat-query-spi-1.2添加到快速入门中。
-* GRANITE-49833：对事件发送者和代理的批量处理支持。
-* GRANITE-52053：删除Commons Collections的使用情况3： Platform其他。
-* GRANITE-52492：在PIT还原的情况下进行弹性异步追溯。
-* GRANITE-53099：更新到 Apache Felix Http Jetty 5.1.24。
-* GRANITE-53125：向CloudEvent添加分类。
-* GRANITE-53328：将Filevault更新为3.8.0-T20240726111512-3cc11d50，并包含存储日志记录改进功能。
-* GRANITE-53453：将commons-lang更新为3.15.0。
-* GRANITE-53478：将Filevault更新到版本3.8.0。
-* GRANITE-53505：将QS更新为commons-collections-3.2.2-adobe-2。
-* GRANITE-53528：更新平台工件的版本。
-* GRANITE-53547：提供替代API，避免使用Apache Commons Lang 2。
-* GRANITE-53575：在CS中使用BSAFE 6.2.5。
-* GRANITE-53608：将Oak更新到最新公共版本(1.68.0)。
-* SITES-23583：Sites Evergreen测试在Java 17上失败。
-* SKYOPS-79535：更新至rum脚本v2。
-* SKYOPS-79816：在FACT工具中为服务用户映射启用Sling功能分析器任务。
-* SKYOPS-81179：AEM构建包切换测试。
-* SKYOPS-81866：报告已知与Java 21不兼容的捆绑包的警告。
-* SKYOPS-82660：将Sling API更新为2.27.6。
-* SKYOPS-82961：更新至Sling ResourceResolver 1.12.0-T20240723153354-a0270a0。
-* SKYOPS-83356：创建全局功能板，以跟踪AEM部署中使用的JVM版本。
-* SKYOPS-83436：Java Runtime 21转出会中断自适应表单AEM Forms的创建。
-* SKYOPS-84272：记录在aem启动器启动中使用的Java版本。
+* Assets-41404：进行了相应更改以支持DRM改进。
+* Assets-41621：更新了异步资产复制作业。
+* Assets-32166：更新了异步资产移动作业。
+* Assets-41429： DM OpenAPI中的图像预设支持。
+* Assets-38968：改进内容片段引用的表示方式。
+* Assets-41787、ASSETS-41183：对Assets批量操作框架的改进。
+* GRANITE-52917：优化了内容Copy包的安装时间。
+* SCRNS-3980：检测播放器上的灰色屏幕，查看是否有未计划任何资产的子序列。
 
-### 修复的问题 {#fixed-issues-17569}
+### 修复的问题 {#fixed-issues-17689}
 
-* CMGR-60225：验证AEM发行说17486的更新时，在AEM Sites CS客户上发现管道执行失败。
-* GRANITE-45919：编辑用户设置中的“国家/地区”列表中已禁运的国家/地区。
-* GRANITE-51715：选取器有时不会在文本字段中输入选定内容。
-* GRANITE-53290：在解析XSS检查中的URL时，正确检查协议。
-* GRANITE-53576：OSGi配置中的服务排名定义错误。
-* SKYOPS-82129：Sling模型中的内存泄漏。
+* Assets-40875：由AssetDeleteHandler记录的虚假NPE。
+* Assets-42422：避免为单个资产移动触发异步作业。
+* Assets-41234： Unified Shell — 如果在打开搜索栏时打开，全局导航可能无法工作。
+* Assets-42256： Unified Shell — 标记/徽章，指示环境仅间歇性地工作。
+* Assets-41271：防止在移动操作期间不必要地重新发布Assets。
+* Assets-38894：按处理监视程序限制重试。
+* Assets-40815：使用预览PDF演绎版在链接共享UI中显示PPT文件。
+* Assets-37123：无法在链接共享对话框中加载资源预览。
+* CQ-4358156：更新要删除的标记的反链接。
+* SCRNS-4495：修复的“粘贴”按钮对于不同的用户组无法正常工作。
+* SCRNS-4512：从AEMaaCS屏幕中删除与设备相关的组件。
+* SCRNS-4466：在渠道功能板上，隐藏 — 查看清单、生成离线内容、更新清单缓存、显示面板。
+* SCRNS-4513：在列表视图中为搜索结果页面添加列标题。
 
-### 已知问题 {#known-issues-17569}
+### 已知问题 {#known-issues-17689}
 
-* ASSETS-40875 - AssetDeleteHandler 类监听资产删除事件，并根据删除事件的类型（PRE_DELETE 或 POST_DELETE）执行特定操作。在某些情况下，POST_DELETE 类型的事件会导致 NullPointerException。
-* FORMS-14340 - FormsAndDocumentOmniSearchHandler 和 CloudStorageSubmitActionInserter 实例化时出错。这些是无害的日志语句。
-* FORMS-15818 - 组件描述符条目“OSGI-INF/com.adobe.aemfd.docmanager.impl。*.xml&#39; 在服务器日志中未找到语句。这些是无害的日志语句。
-* SITES-23662 - 无法从服务器日志中的 JCR 日志语句中提取触发发布的用户。这是针对正在开发的功能，可能会导致日志中出现间歇性且无害的“无法在 OSGI 事件批次中找到有效的用户 ID”错误。
+* Forms-14340：实例化FormsAndDocumentOmniSearchHandler和CloudStorageSubmitActionInserter时出错。 这些是无害的日志语句。
+* Forms-15818：组件描述符条目&quot;OSGI-INF/com.adobe.aemfd.docmanager.impl.在服务器日志中找不到*.xml&#39;语句。 这些是无害的日志语句。
+* SITES-23662：无法从服务器日志中的JCR日志语句中提取触发发布的用户。 这是针对正在开发的功能，该功能可能会在日志中导致“在批次OSGI事件中找不到有效用户ID”的间歇性且无害的错误。
 
-### 更改通知 {#change-notice-17569}
+### 更改通知 {#change-notice-17689}
 
 * 从 2024 年 9 月开始，AEM as a Cloud Service 将会通过 Sling Model Exporter 框架禁用资源解析器的序列化。请参阅[该文档](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)了解更多详情。
 
-### 已弃用的功能和 API {#deprecated-17569}
+### 已弃用的功能和 API {#deprecated-17689}
 
 请注意，我们正在更新 `com.day.cq.wcm.api`，并且在当前版本中，我们已将其中的一些方法和类标记为 `@Deprecated`。这些将在未来的版本中删除，所以如果您正在使用其中任何一个，请考虑切换到其建议的替代方案。
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-17569}
+### 安全修复 {#security-17689}
 
 AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 4 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-### 嵌套的技术 {#embedded-tech-17569}
+### 嵌套的技术 {#embedded-tech-17689}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
