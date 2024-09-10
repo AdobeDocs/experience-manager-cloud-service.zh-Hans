@@ -4,9 +4,9 @@ description: 了解如何使用Edge Delivery Services交付Cloud Manager项目�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
+source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1502'
 ht-degree: 5%
 
 ---
@@ -71,7 +71,7 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 * 访问SLA报告（*即将推出*） <!-- ADD LINK TO IT WHEN FINALLY ADDED -->
 * 获得Adobe支持。 确保您的Edge Delivery Services站点是通过Cloud Manager中的生产程序注册的，以获得Adobe的正确识别和支持。
 
-## 添加Edge Delivery Services站点 {#eds-add-site}
+## 添加Edge Delivery站点 {#eds-add-site}
 
 将Edge Delivery Services添加到生产程序后，您的Edge Delivery Services许可证将应用于该程序。
 
