@@ -3,9 +3,9 @@ title: 具有OpenAPI功能的Dynamic Media
 description: 了解关键概念，例如为何将Dynamic Media与OpenAPI功能结合使用以及如何启用它。
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
+source-git-commit: 6199a8ae0033feee0c1bee4e4c50e19cd55c805c
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  > 要与非Adobe应用程序集成，请提供域名以将应用程序托管位置列入白名单。
+  > 要与非Adobe应用程序集成，请提供域名以允许列表应用程序所在的位置。
 
 * 集成项目中涉及的关键客户联系人的详细信息。
 
