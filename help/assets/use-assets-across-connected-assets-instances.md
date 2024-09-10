@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 638b18beb5202ec34c1957a74d5b293236c2cf4e
 workflow-type: tm+mt
-source-wordcount: '3842'
+source-wordcount: '3869'
 ht-degree: 13%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 13%
 | AEM as a Cloud Service | 本文 |
 
 在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。一个原因可能是地理上分散但需要协同工作的现有部署。 另一个原因可能是并购导致基础架构存在差异，包括母公司希望一起使用的不同[!DNL Experience Manager]版本。
+
+>[!NOTE]
+>
+>Adobe建议利用带有OpenAPI功能的Dynamic Media来连接AEM Assetsas a Cloud Service和AEM Sites。 请参阅[将远程AEM Assets与AEM Sites集成](/help/assets/integrate-remote-approved-assets-with-sites.md)。
 
 通过集成[!DNL Experience Manager Sites]和[!DNL Experience Manager Assets]，“连接的Assets”功能支持上述用例。 用户可以在[!DNL Sites]中创建使用来自单独[!DNL Assets]部署的数字资产的网页。
 
