@@ -4,7 +4,7 @@ description: 了解如何使用Best Practices Analyzer了解升级准备情况�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 39%
@@ -35,7 +35,7 @@ ht-degree: 39%
 * BPA可以在任何环境中运行，但最好在&#x200B;*暂存*&#x200B;环境中运行它。
 
   >[!NOTE]
-  >为避免对业务关键型实例产生影响，建议您在自定义、配置、内容和用户应用程序方面尽可能接近&#x200B;*生产*&#x200B;环境的&#x200B;*创作*&#x200B;环境中运行BPA。 或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
+  >为避免对业务关键型实例产生影响，建议您在自定义、配置、内容和用户应用程序方面尽可能接近&#x200B;*生产*&#x200B;环境的&#x200B;*暂存*&#x200B;环境中运行BPA。 或者，也可以在克隆的生产“创作”**&#x200B;环境中运行。
 
 * 生成BPA报告内容可能需要相当长的时间，从几分钟到几小时不等。 具体所需的时间长短很大程度上取决于 AEM 存储库内容的大小和性质、AEM 版本以及其他因素。
 
