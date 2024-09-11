@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Dynamic Media历程：基础知识，第I部分 {#dm-journey-part1}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 欢迎使用Dynamic Media历程。
 
@@ -268,7 +268,6 @@ _根据选定的“ZoomVertical_light”查看器预设预览资源。 将鼠标
 
 此历程的第一部分介绍了各种Dynamic Media主题的基础知识。 如果您想了解有关所读内容的更多信息，请使用以下材料更详细地探索概念。 否则，您可以继续历程的第二部分。 查看[此Dynamic Media历程的后续内容](#whats-next)。
 
-{{see-also-dm}}
 <!--
 _Dynamic Media Help topics_
 
