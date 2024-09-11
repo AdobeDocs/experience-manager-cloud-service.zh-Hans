@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 26225938ff525a782314820f32f28c5af98c3669
+source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
 workflow-type: tm+mt
-source-wordcount: '5598'
-ht-degree: 95%
+source-wordcount: '5602'
+ht-degree: 93%
 
 ---
 
@@ -1066,16 +1066,18 @@ ht-degree: 95%
    + [生成变体](/help/generative-ai/generate-variations.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
+
+
    + 使用 Cloud Manager {#using-cloud-manager}
       + [导航](/help/implementing/cloud-manager/navigation.md)
       + 项目 {#programs}
          + [项目和项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生产项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [创建生产项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+         + [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [沙盒项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [创建沙盒项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [编辑项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-         + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [编辑项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [休眠环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 创建 AEM 应用程序项目 {#create-application-project}
          + [项目创建向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1083,12 +1085,12 @@ ht-degree: 95%
       + [管理环境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理代码 {#managing-code}
          + [Maven 项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [在 Cloud Manager 中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [添加 Adobe 存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [在Cloud Manager中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [添加Adobe存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模块支持](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-         + [将 git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [将Git用于Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多个存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企业开发团队设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
          + [GitHub 检查配置](/help/implementing/cloud-manager/managing-code/github-check-config.md)
@@ -1123,23 +1125,26 @@ ht-degree: 95%
          + [简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+         + [检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 证书{#manage-ssl-certificates}
          + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [SSL证书错误疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN配置{#cdn-configurations}
          + [添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + IP 允许列表{#ip-allow-lists}
          + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [应用和取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [许可证功能板](/help/implementing/cloud-manager/license-dashboard.md)
-      + [了解 Cloud Service 内容请求](/help/implementing/cloud-manager/content-requests.md)
+      + [了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)
       + [CDN 性能仪表板](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager 常见问题解答](/help/implementing/cloud-manager/faqs.md)
+
+
    + 针对 AEM as a Cloud Service 进行开发 {#developing}
       + [AEM 项目结构](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [AEM 项目存储库结构包](/help/implementing/developing/introduction/repository-structure-package.md)
