@@ -4,13 +4,13 @@ description: 了解如何为Edge Delivery站点或Cloud Manager环境添加CDN�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e57a6ceb2482e61acabe928da0f539d26989985c
+exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 8%
 
 ---
-
 
 # 添加CDN配置 {#add-cdn}
 
@@ -41,7 +41,3 @@ ht-degree: 8%
    * 选择SSL证书。 仅当选择&#x200B;**Adobe托管CDN**&#x200B;作为您的CDN类型时才需要。
 
 1. 单击&#x200B;**保存**。
-
-
-
-

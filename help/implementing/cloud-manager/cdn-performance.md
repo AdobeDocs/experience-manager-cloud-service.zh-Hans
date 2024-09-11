@@ -5,14 +5,14 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 4%
 
 ---
 
-# CDN 性能仪表板 {#cdn-performance}
+# CDN性能仪表板 {#cdn-performance}
 
 了解Cloud Manager如何评估Content Delivery Network (CDN)性能以及您可以从功能板中学到什么。
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ![CDN性能仪表板](assets/cdn-performance-dashboard.png)
 
-## 访问功能板 {#accessing}
+## 访问仪表板 {#accessing}
 
 CDN功能板可在每个项目的概述页面上找到。
 
@@ -36,7 +36,7 @@ CDN功能板可在每个项目的概述页面上找到。
 
    ![性能](assets/cdn-performance-overview.png)
 
-## 使用功能板 {#using}
+## 使用仪表板 {#using}
 
 仪表板显示CDN性能的整体分数，以及趋势、警报和必要的改进建议。
 
@@ -66,7 +66,7 @@ CDN功能板可在每个项目的概述页面上找到。
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **点击** — 从缓存中请求数据，已找到该数据。
+* **点击** — 从缓存中请求了数据，但找到了该数据。
 * **未命中** — 正在从缓存中请求数据，但未找到该数据。
 * **传递** — 从缓存中请求数据，无论如何，它都设置为不缓存此数据。
 * **Other** — 来自缓存的与任何其他大小写不匹配的所有数据请求。
@@ -75,4 +75,4 @@ Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 
 >[!TIP]
 >
->有关Cloud Manager和CDN如何与Dispatcher交互的更多详细信息，请参阅文档[AEM as a Cloud Service中的缓存](/help/implementing/dispatcher/caching.md)。
+>有关Cloud Manager和CDN如何与Dispatcher交互的更多详细信息，请参阅[AEM as a Cloud Service中的缓存](/help/implementing/dispatcher/caching.md)。

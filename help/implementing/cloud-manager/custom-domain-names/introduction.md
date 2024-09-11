@@ -5,9 +5,9 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '705'
 ht-degree: 47%
 
 ---
@@ -38,7 +38,7 @@ Adobe Experience Manager as a Cloud Service 配置有默认域名，以 `*.adobe
 
 ## 自定义域名并自带CDN {#byo-cdn}
 
-AEM as a Cloud Service提供了内置的内容交付网络(CDN)服务，还允许您通过BYO（自带）CDN来与AEM结合使用。 自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
+AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还允许您通过BYO（自带）CDN来与AEM一起使用。 自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
 
 * Cloud Manager可管理在AEM管理的CDN中安装的自定义域名和证书。
 * BYO CDN中安装的自定义域名和证书将直接在该CDN中进行管理。
@@ -52,13 +52,12 @@ AEM as a Cloud Service提供了内置的内容交付网络(CDN)服务，还允�
 添加自定义域名需要 DNS 服务和云管理器之间的交互。由于此工作流，安装、配置和验证自定义域名需要执行多个步骤。 下表概述了所需的步骤，包括指向完成这些步骤的文档资源的链接。
 
 | 步骤 | 描述 | 文档 |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 将 SSL 证书添加到 Cloud Manager | [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | 将自定义域添加到Cloud Manager | [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | 添加 TXT 记录验证域 | [添加TXT记录](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
+| 3 | 通过添加指向 AEM as a Cloud Service 的 DNS CNAME 或 APEX 记录来配置 DNS 设置 | [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 4 | 查看域验证状态 | [检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | 通过添加指向 AEM as a Cloud Service 的 DNS CNAME 或 APEX 记录来配置 DNS 设置 | [配置DNS设置](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | 检查 DNS 记录状态 | [检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 5 | 检查 DNS 记录状态 | [检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >

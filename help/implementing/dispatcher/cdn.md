@@ -4,9 +4,9 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1607'
 ht-degree: 11%
 
 ---
@@ -35,8 +35,10 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 要通过Cloud Manager的自助UI使用AEM的内置CDN准备内容交付，您可以利用Adobe的托管CDN功能。 此功能允许您处理自助服务CDN管理，包括配置和安装SSL证书，如DV（域验证）或EV/OV（扩展/组织验证）证书。 有关这些方法的更多详细信息，请参阅以下内容：
 
 * [管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+* [添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 * [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Cloud Manager 中的 Edge Delivery Services 支持](/help/implementing/cloud-manager/edge-delivery-services.md)
+
 
 **限制流量**
 
