@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
-source-wordcount: '5602'
-ht-degree: 93%
+source-wordcount: '5605'
+ht-degree: 98%
 
 ---
 
@@ -459,16 +459,16 @@ ht-degree: 93%
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + 管理数字资源{#manage}
-      + 微型前端资产选择器{#asset-selector}
-         + [资源选择器概述](/help/assets/overview-asset-selector.md)
-         + 资产选择器集成{#asset-selector-integration}
+      + 微前端资源选择器 {#asset-selector}
+         + [资产选择器概述](/help/assets/overview-asset-selector.md)
+         + 资产选择器集成 {#asset-selector-integration}
             + [资产选择器集成概述](/help/assets/integrate-asset-selector.md)
-            + [将资源选择器与Adobe应用程序集成](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [将资源选择器与非Adobe应用程序集成](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [将Dynamic Media的资源选择器与OpenAPI功能集成](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+            + [将资产选择器与一个 应用程序集成](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [将资产选择器与一个非应用程序集成](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [将动态媒体资产选择器与 OpenAPI 功能集成](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
          + [资源选择器属性](/help/assets/asset-selector-properties.md)
-         + [资源选择器示例](/help/assets/asset-selector-examples.md)
-         + [资源选择器自定义](/help/assets/asset-selector-customization.md)
+         + [资产选择器示例](/help/assets/asset-selector-examples.md)
+         + [资产选择器自定义](/help/assets/asset-selector-customization.md)
          + [资产选择器上传](/help/assets/asset-selector-upload.md)
       + [微前端目标选择器](/help/assets/destination-selector.md)
       + [共享资源](/help/assets/share-assets.md)
@@ -631,7 +631,7 @@ ht-degree: 93%
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
       + [配置 Content Hub 用户界面](/help/assets/configure-content-hub-ui-options.md)
       + [将品牌认可的资产上传或导入至 Content Hub](/help/assets/upload-brand-approved-assets.md)
-      + [批准Content Hub的资源](/help/assets/approve-assets-content-hub.md)
+      + [批准 Content Hub 的资产](/help/assets/approve-assets-content-hub.md)
       + [在 Content Hub 搜索资产](/help/assets/search-assets-content-hub.md)
       + [资源属性](/help/assets/asset-properties-content-hub.md)
       + [在 Content Hub 共享资源](/help/assets/share-assets-content-hub.md)
@@ -698,15 +698,15 @@ ht-degree: 93%
          + [创建表单数据模型](/help/forms/create-form-data-models.md)
          + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
-         + [为自适应表单设计XML架构](/help/forms/adaptive-form-xml-schema-form-model.md)
-   + 自适应表单 {#adaptive-forms-authoring}
+         + [为 Adaptive Form 设计 XML 架构](/help/forms/adaptive-form-xml-schema-form-model.md)
+   + Adaptive Form {#adaptive-forms-authoring}
       + [创建自适应表单](/help/forms/create-an-adaptive-form.md)
       + [创建自适应表单片段](/help/forms/adaptive-form-fragments.md)
       + [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 核心组件 {#authoring-adaptive-forms-core-components}
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-            + [基于核心组件设置自适应表单的布局](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
+            + [根据核心组件设置 Adaptive Form 的布局](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [创建基于核心组件的自适应表单模板](/help/forms/template-editor-core-components.md)
@@ -741,11 +741,11 @@ ht-degree: 93%
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/create-and-use-custom-functions.md)
                + [为基于核心组件的自适应表单创建和使用自定义函数](/help/forms/custom-function-core-component-create-function.md)
                + [基于核心组件的自适应表单自定义函数示例](/help/forms/custom-function-core-components-use-cases.md)
-            + Forms Portal及其组件简介{#introduction-to-forms-portal}
-               + [Forms Portal组件简介](/help/forms/configure-forms-portal.md)
-               + [使用搜索和列表程序组件在“站点”页面上列出表单](/help/forms/list-forms-on-sites-page.md)
-               + [使用草稿和提交组件在Sites页面上将表单另存为草稿并将其列出](/help/forms/save-core-component-based-form-as-draft.md)
-               + [使用链接组件将表单链接添加到站点页面](/help/forms/add-form-link-to-aem-sites-page.md)
+            + Forms Portal 及其组件简介{#introduction-to-forms-portal}
+               + [Forms Portal 组件简介](/help/forms/configure-forms-portal.md)
+               + [使用搜索和列表器组件在 Sites 页面上列出 Forms](/help/forms/list-forms-on-sites-page.md)
+               + [使用草稿和提交组件将 Form 保存并列为 Sites 页面上的草稿](/help/forms/save-core-component-based-form-as-draft.md)
+               + [使用链接组件将 Form 链接添加到 Sites 页面](/help/forms/add-form-link-to-aem-sites-page.md)
       + Foundation 组件 {#authoring-adaptive-forms-foundation-components}
          + 将 PDF 表单转换为自适应表单 {#afcs}
             + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-hans)
@@ -753,17 +753,17 @@ ht-degree: 93%
             + [审阅并修正转换后的表单](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=zh-hans#welcome-to-review-and-correct-editor)
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [自适应表单创作简介](/help/forms/introduction-forms-authoring.md)
-            + [为表单字段创作上下文帮助](/help/forms/authoring-in-field-help.md)
-            + [创建自适应表单](/help/forms/creating-adaptive-form.md)
+            + [为 Form 字段创作上下文帮助](/help/forms/authoring-in-field-help.md)
+            + [创建 Adaptive Form](/help/forms/creating-adaptive-form.md)
             + [参考主题、模板和数据模型](/help/forms/reference-themes-templates-data-models.md)
             + [创建模板](/help/forms/template-editor.md)
             + [创建主题](/help/forms/themes.md)
-            + [引用自适应表单片段](/help/forms/reference-adaptive-form-fragments.md)
-            + [将自适应Forms与XFA表单模板同步](/help/forms/synchronizing-adaptive-forms-xfa.md)
-            + [在基于XDP的自适应Forms中支持XFA](/help/forms/xfa-api-supported-in-adaptive-form.md)
+            + [参考 Adaptive Form 片段](/help/forms/reference-adaptive-form-fragments.md)
+            + [将Adaptive Form与 XFA Form 模板同步](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [基于 XDP 的 Adaptive Form 中的 XFA 支持](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [使用延迟加载改进大型表单的性能](/help/forms/lazy-loading-adaptive-forms.md)
-            + [发布和取消发布表单和文档](/help/forms/publishing-unpublishing-forms.md)
+            + [使用延迟加载改进大型 Form 的性能](/help/forms/lazy-loading-adaptive-forms.md)
+            + [发布和取消发布 Form 和文档](/help/forms/publishing-unpublishing-forms.md)
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
             + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
             + [在自适应表单中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
@@ -776,15 +776,15 @@ ht-degree: 93%
             + [设置自适应表单的版面](/help/forms/layout-capabilities-adaptive-forms.md)
             + [使用版面模式调整组件大小](/help/forms/resize-using-layout-mode.md)
             + [创建多步骤数据捕获体验](/help/forms/introduction-form-sequence.md)
-            + [自适应Forms的样式结构](/help/forms/styling-constructs-adaptive-forms.md)
-            + [将内联 CSS 样式应用于各个自适应表单组件](/help/forms/inline-style-adaptive-forms.md)
-            + [如何在自适应Forms中使用分隔符组件？](/help/forms/separator-component-in-adaptive-forms.md)
+            + [Adaptive Form 的样式构造](/help/forms/styling-constructs-adaptive-forms.md)
+            + [将内联 CSS 样式应用于各个 Adaptive Form 组件](/help/forms/inline-style-adaptive-forms.md)
+            + [如何在 Adaptive Form 中使用分隔符组件？](/help/forms/separator-component-in-adaptive-forms.md)
          + 在自适应表单中添加规则和使用表达式 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [将规则添加到自适应表单](/help/forms/rule-editor.md)
             + [使用规则编辑器的调用服务添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms.md)
             + [向选定的用户组授予对规则编辑器的访问权限](/help/forms/rule-editor-access-user-groups.md)
-            + [在自适应Forms中使用SOM表达式](/help/forms/using-som-expressions-adaptive-forms.md)
-            + [自适应表单表达式](/help/forms/adaptive-form-expressions.md)
+            + [在 Adaptive Form 中使用 SOM 表达式](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [Adaptive Form表达式](/help/forms/adaptive-form-expressions.md)
          + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
             + [使用 Adobe Sign 对自适应表单进行电子签名](/help/forms/working-with-adobe-sign.md)
          + 配置提交操作和元数据提交 {#configure-submit-actions-and-metadata-submission}
@@ -792,8 +792,8 @@ ht-degree: 93%
             + [配置重定向页面](/help/forms/configuring-redirect-page.md)
             + [为自适应表单配置异步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [创建自定义提交操作](/help/forms/custom-submit-action-form.md)
-            + [将用户数据中的信息添加到表单提交元数据](/help/forms/form-submission-metadata.md)
-            + [用于从自适应Forms调用表单数据模型(FDM)服务的API](/help/forms/invoke-form-data-model-services.md)
+            + [将用户数据中的信息添加到 Form 提交元数据中](/help/forms/form-submission-metadata.md)
+            + [API 从 Adaptive Form 调用 Form 数据模型 (FDM) 服务](/help/forms/invoke-form-data-model-services.md)
          + [预填自适应表单字段](/help/forms/prepopulate-adaptive-form-fields.md)
          + [生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [将对新区域设置的支持添加到自适应表单](/help/forms/supporting-new-language-localization.md)
@@ -803,16 +803,16 @@ ht-degree: 93%
          + 提高自适应表单的可访问性 {#accessible-adaptive-forms}
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [创建和管理评论](/help/forms/create-reviews-forms.md)
-         + [将提交审核者与表单关联](/help/forms/adding-reviewers-form.md)
-         + [创建和管理自适应表单审核](/help/forms/review-adaptiveforms-in-sites-page.md)
+         + [将提交审阅者与 Form 关联](/help/forms/adding-reviewers-form.md)
+         + [创建和管理 Adaptive Form 的审核](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [自适应表单关键字](/help/forms/adaptive-forms-keywords.md)
       + [预览表单](/help/forms/previewing-forms.md)
-   + 以表单为中心的工作流程 {#create-form-centric-workflows}
-      + [以Forms为中心的工作流简介](/help/forms/aem-forms-workflow.md)
+   + 以 Form 为中心的工作流程 {#create-form-centric-workflows}
+      + [以 Form 为中心的工作流简介](/help/forms/aem-forms-workflow.md)
       + [在工作流程中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
       + [在以表单为中心的工作流程中使用变体](/help/forms/variable-in-aem-workflows.md)
-      + [AEM Workflow中的动态用户或组选择](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
-      + [在AEM收件箱中管理Forms应用程序和任务](/help/forms/manage-applications-inbox.md)
+      + [AEM Workflow 中的动态用户或组选择](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
+      + [在 AEM Inbox 中管理 Forms 应用程序和任务](/help/forms/manage-applications-inbox.md)
       + [使用“离职”选项](/help/forms/configure-out-of-office-settings.md)
    + 通信 API {#using-communications}
       + [通信 API 简介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -820,7 +820,7 @@ ht-degree: 93%
       + [Communications API – 成批处理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [安装和配置 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [使用 Forms Designer 创建模板](/help/forms/use-forms-designer.md)
-      + [在Designer中更改零页内容](/help/forms/changing-page-zero-content-designer.md)
+      + [在 Designer 中更改 Page Zero 内容](/help/forms/changing-page-zero-content-designer.md)
       + [在 PDF 文档中使用自定义字体](/help/forms/use-custom-fonts.md)
       + [PDF 文档中支持的字体列表](/help/forms/supported-out-of-the-box-fonts.md)
       + [已知问题、最佳实践和常见问题](/help/forms/communications-known-issues-limitations.md)
@@ -965,7 +965,7 @@ ht-degree: 93%
          + [将选项从 URL 加载到表单](/help/edge/docs/forms/load-options-from-url.md)
          + [自定义表单的外观&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [使用规则向表单添加动态行为](/help/edge/docs/forms/rules-forms.md)
-         + [验证的正则表达式](/help/edge/docs/forms/regex-forms.md)
+         + [用于验证的正则表达式](/help/edge/docs/forms/regex-forms.md)
          + [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表单片段](/help/edge/docs/forms/form-fragments.md)
@@ -1068,6 +1068,7 @@ ht-degree: 93%
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
 
 
+
    + 使用 Cloud Manager {#using-cloud-manager}
       + [导航](/help/implementing/cloud-manager/navigation.md)
       + 项目 {#programs}
@@ -1119,9 +1120,9 @@ ht-degree: 93%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [高级网络](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=zh-hans)
-      + Edge Delivery Sites {#edge-delivery-sites}
-         + [Cloud Manager中的Edge Delivery支持](/help/implementing/cloud-manager/edge-delivery-services.md)
-      + 域设置{#custom-domain-names}
+      + Edge Delivery Sites{#edge-delivery-sites}
+         + [Cloud Manager 中的 Edge Delivery 支持](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + 域设置 {#custom-domain-names}
          + [简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
@@ -1132,8 +1133,9 @@ ht-degree: 93%
          + [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL证书错误疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + CDN配置{#cdn-configurations}
+      + CDN 配置{#cdn-configurations}
          + [添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [管理CDN配置](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允许列表{#ip-allow-lists}
          + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
@@ -1143,6 +1145,7 @@ ht-degree: 93%
       + [了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)
       + [CDN 性能仪表板](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager 常见问题解答](/help/implementing/cloud-manager/faqs.md)
+
 
 
    + 针对 AEM as a Cloud Service 进行开发 {#developing}

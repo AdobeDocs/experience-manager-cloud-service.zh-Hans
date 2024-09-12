@@ -1,19 +1,19 @@
 ---
-title: 管理SSL证书
+title: 管理 SSL 证书
 description: 了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
 
-# 管理SSL证书 {#managing-ssl-certificates}
+# 管理 SSL 证书 {#managing-ssl-certificates}
 
 了解如何使用Cloud Manager检查Adobe托管和客户托管的SSL证书的状态以及如何删除它们。 对于客户管理的证书，您还可以编辑和更新（替换）它们。
 
@@ -25,15 +25,15 @@ ht-degree: 16%
 | --- | --- |
 | 绿色 | 证书自当前日期起至少14天内有效。 |
 | 橙色 | 该证书将在14天内过期。<br>·确保您有计划续订证书并通过Cloud Manager用户界面替换该证书，以避免可能的站点访问中断。<br>· Cloud Manager会在UI中定期发送通知，提醒您证书即将到期。 |
-| 红色 | SSL证书已过期。<br>请参阅[更新已过期的客户管理的SSL证书](#update-ssl-certificate)或[删除SSL证书](#deleting-an-ssl-certificate)。 |
+| 红色 | SSL证书已过期。<br>请参阅[更新过期的客户托管的SSL证书](#update-ssl-certificate)或[删除SSL证书](#deleting-an-ssl-certificate)。 |
 
-## 更新已过期的客户管理的SSL证书 {#update-ssl-certificate}
+## 更新过期的客户管理的SSL证书 {#update-ssl-certificate}
 
 当客户管理的证书过期时，与已过期证书一起使用的任何域不再工作。 更新证书可确保域继续按需工作。
 
 用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能完成此任务。
 
-**要更新已过期的客户管理的SSL证书，请执行以下操作：**
+**要更新过期的客户管理的SSL证书，请执行以下操作：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
@@ -52,7 +52,7 @@ ht-degree: 16%
 
 1. 单击&#x200B;**更新**&#x200B;以保存更改并自动应用它们。
 
-## 替换已过期的客户管理的SSL证书 {#replace-ssl-certificate}
+## 替换过期的客户管理的SSL证书 {#replace-ssl-certificate}
 
 按照[更新过期的SSL证书](#update-ssl-certificate)中描述的相同步骤操作，以替换已过期的客户管理的SSL证书。
 
