@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
+source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 欢迎使用Dynamic Media历程：基础知识，第II部分，您可以从中学习以下内容：
 
-* Dynamic Media URL剖析，以及Dynamic Media如何交付内容
-* 创建图像预设以渲染资产的基础知识
-* 图像集、旋转集和混合媒体集
+* Dynamic Media URL剖析，以及Dynamic Media如何交付内容。
+* 创建图像预设以渲染资产的基础知识。
+* 图像集、旋转集和混合媒体集。
 
 另请参阅[Dynamic Media历程；基础知识，第一部分](/help/assets/dynamic-media/dm-journey-part1.md)。
 
