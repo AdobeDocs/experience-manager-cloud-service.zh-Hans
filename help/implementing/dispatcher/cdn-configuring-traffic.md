@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1350'
 ht-degree: 2%
 
 ---
@@ -153,6 +153,21 @@ data:
 |         | queryParamMatch | 删除与指定正则表达式匹配的所有查询参数。 |
 | **转换** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie），匹配，替换 | 将部分请求参数（仅支持“path”属性）、请求标头、查询参数或Cookie替换为新的值。 |
 |              | op：tolower， （reqProperty、reqHeader、queryParam或reqCookie） | 将请求参数（仅支持“path”属性），或请求标头、查询参数或Cookie设置为其小写值。 |
+
+替换操作支持捕获组，如下图所示：
+
+```
+      - name: replace-jpg-with-jpeg
+        when:
+          reqProperty: path
+          like: /mypath          
+        actions:
+          - type: transform
+            reqProperty: path
+            op: replace
+            match: (.*)(\.jpg)$
+            replacement: "\1\.jpeg"          
+```
 
 操作可以链接在一起。 例如：
 
@@ -384,3 +399,31 @@ data:
 |-----------|--------------------------|-------------|
 | **重定向** | 位置 | “Location”标头的值。 |
 |     | 状态（可选，默认为301） | 重定向消息中使用的HTTP状态，默认为301，允许值为：301、302、303、307、308。 |
+
+重定向的位置可以是字符串文字(例如https://www.example.com/page)，也可以是可选地使用以下语法进行转换的属性（例如path）的结果：
+
+```
+experimental_redirects:
+  rules:
+    - name: country-code-redirect
+      when: { reqProperty: path, like: "/" }
+      action:
+        type: redirect
+        location:
+          reqProperty: clientCountry
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1/home'
+            - op: tolower
+    - name: www-redirect
+      when: { reqProperty: domain, equals: "example.com" }
+      action:
+        type: redirect
+        location:
+          reqProperty: path
+          transform:
+            - op: replace
+              match: '^(/.*)$'
+              replacement: 'https://www.example.com/\1'
+```
