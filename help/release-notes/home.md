@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: 25179e93715c169e3e04c1530761eb7eff037063
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 99%
 
 要准备发布，请执行以下操作：
 
-1. 在日程表上做标记：在 [Experience Manager 版本路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)中检查每月发布的关键日期，在日程表上做标记，自行为关键活动做好准备以便进行发布。
+1. 在日程表上做标记：在 [Experience Manager 版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)中检查每月发布的关键日期，在日程表上做标记，自行为关键活动做好准备以便进行发布。
 1. 查看发行说明：阅读[最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)以熟悉发行版和预发行版的功能。
 1. 访问和试用新功能：在非生产环境中启用[预发行渠道](/help/release-notes/prerelease.md)，并在您的自定义环境中试用功能以进行评估。
 1. 对您的用户进行培训：使用文档和 Experience League 资源，让用户快速了解并熟悉新功能。

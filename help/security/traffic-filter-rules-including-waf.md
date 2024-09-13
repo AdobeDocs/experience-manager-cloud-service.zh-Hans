@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3928'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **属性** | **类型** | **描述** |
 |---|---|---|
-| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码（[区域指标符号](https://en.wikipedia.org/wiki/cn/Regional_indicator_symbol)）。</li></ul> |
+| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码（[区域指标符号](https://zh.wikipedia.org/wiki/cn/Regional_indicator_symbol)）。</li></ul> |
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
 | reqCookie | `string` | 返回具有指定名称的 Cookie |
@@ -244,7 +244,7 @@ when:
 | XSS | 跨站点脚本 | 跨站点脚本是指尝试通过恶意 JavaScript 代码来劫持用户帐户或 Web 浏览会话。 |
 | TRAVERSAL | 目录遍历 | 目录遍历是指尝试在整个系统中导航特权文件夹以获取敏感信息。 |
 | USERAGENT | 攻击工具 | 攻击工具是指使用自动化软件来找出安全漏洞或尝试利用已发现的漏洞。 |
-| LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻击尝试利用 2.16.0 版之前的 Log4J 版本中存在的 [Log4Shell 漏洞](https://en.wikipedia.org/wiki/cn/Log4Shell) |
+| LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻击尝试利用 2.16.0 版之前的 Log4J 版本中存在的 [Log4Shell 漏洞](https://zh.wikipedia.org/wiki/cn/Log4Shell) |
 | BHH | 错误跳头 | 错误跳头是指尝试通过格式错误的 Transfer-Encoding (TE) 或 Content-Length (CL) 头或格式良好的 TE 和 CL 头进行 HTTP 走私 |
 | CODEINJECTION | 代码注入 | 代码注入是指尝试通过用户输入的任意应用程序代码命令来获得控制权限或损坏目标系统。 |
 | ABNORMALPATH | 异常路径 | 异常路径表示原始路径与规范化路径不同（例如，`/foo/./bar` 标准化为 `/foo/bar`） |
@@ -254,7 +254,7 @@ when:
 | MALFORMED-DATA | 请求正文中的格式错误的数据 | 根据“Content-Type”请求头，格式错误的 POST、PUT 或 PATCH 请求正文。例如，如果指定了“Content-Type: application/x-www-form-urlencoded”请求头并包含 POST 正文 json。这通常是编程错误、自动或恶意请求。需要代理 3.2 版或更高版本。 |
 | SANS | 恶意 IP 流量 | 已报告从事恶意活动的 IP 地址的 [SANS Internet Storm Center](https://isc.sans.edu/) 列表。 |
 | NO-CONTENT-TYPE | 缺少“Content-Type”请求头 | 不具有“Content-Type”请求头的 POST、PUT 或 PATCH 请求。在此示例中，默认情况下，应用程序服务器应假定“Content-Type: text/plain; charset=us-ascii”。许多自动和恶意请求可能缺少“内容类型”。 |
-| NOUA | 无用户代理 | 指示请求未包含“User-Agent”标头或未设置标头值。 |
+| NOUA | 无用户代理 | 表示请求不包含“User-Agent”标头或未设置标头值。 |
 | TORNODE | Tor 流量 | Tor 是可以隐藏用户身份的软件。Tor 流量尖峰可能表明攻击者正在试图掩盖其位置。 |
 | NULLBYTE | 空字节 | 空字节通常不会出现在请求中，并表明请求的格式错误且可能是恶意请求。 |
 | PRIVATEFILE | 私有文件 | 私有文件是具有机密性的，例如 Apache `.htaccess` 文件或可能泄露敏感信息的配置文件 |
@@ -619,7 +619,7 @@ data:
 | *timestamp* | TLS 终止后请求开始的时间。 |
 | *ttfb* | *首字节时间*&#x200B;的缩写。从请求开始到响应正文开始流式传输之前的时间间隔。 |
 | *cli_ip* | 客户端 IP 地址。 |
-| *cli_country* | 客户国家/地区的两字母 [ISO 3166-1](https://en.wikipedia.org/wiki/cn/ISO_3166-1) alpha-2 国家/地区代码。 |
+| *cli_country* | 客户国家/地区的两字母 [ISO 3166-1](https://zh.wikipedia.org/wiki/cn/ISO_3166-1) alpha-2 国家/地区代码。 |
 | *rid* | 用于唯一标识请求的请求头的值。 |
 | *req_ua* | 负责发出给定 HTTP 请求的用户代理。 |
 | *host* | 请求所针对的颁发机构。 |

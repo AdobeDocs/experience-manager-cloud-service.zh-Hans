@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2172'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 >title="AEM as a Cloud Service 中已弃用和已删除的功能"
 >abstract="AEM as a Cloud Service 具有云原生部署模型。某些功能和特性已由云原生对应功能和特性取代，此选项卡显示了它们。"
 
-Adobe不断评估产品功能，以便随着时间的推移，用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终仔细考虑向后兼容性。 此外，由于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供了云原生部署模型，因此某些功能和特性已由云原生对应功能和特性取代。
+Adobe 在不断地评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。此外，由于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供了云原生部署模型，因此某些功能和特性已由云原生对应功能和特性取代。
 
 为了传达即将删除/替换 [!DNL Experience Manager] 功能，以下规则适用：
 
@@ -43,7 +43,7 @@ Adobe不断评估产品功能，以便随着时间的推移，用更现代的替
 | [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资源微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 复制代理的“分发”选项卡下的树复制 UI（在 2021 年 9 月 30 日后被删除） | [管理出版物](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow)方法 |
 | [!DNL Foundation] | 复制代理管理屏幕的“分发”选项卡和复制 API 都不能用于复制超过 10MB 的内容包。请改用[管理发布](/help/operations/replication.md#manage-publication)或[发布内容树工作流](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成将会逐步失去对服务帐户 (JWT) 凭据的支持。2024 年 5 月 1 日或之后，无法在 Adobe Developer Console 中创建新的服务帐户 (JWT) 凭据，但在 2025 年 1 月 1 日之前，现有服务帐户 (JWT) 凭据仍可用于已配置的集成，届时现有服务帐户 (JWT) 凭据将不再有效，客户必须迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/cn/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)到 OAuth 服务器到服务器凭据。 |
+| [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成将会逐步失去对服务帐户 (JWT) 凭据的支持。2024 年 5 月 1 日或之后，无法在 Adobe Developer Console 中创建新的服务帐户 (JWT) 凭据，但在 2025 年 1 月 1 日之前，现有服务帐户 (JWT) 凭据仍可用于已配置的集成，届时现有服务帐户 (JWT) 凭据将不再有效，客户必须迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)到 OAuth 服务器到服务器凭据。 |
 
 ## 已删除功能 {#removed-features}
 
