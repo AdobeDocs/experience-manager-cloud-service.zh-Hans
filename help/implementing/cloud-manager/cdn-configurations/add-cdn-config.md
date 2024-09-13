@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 7%
+source-wordcount: '356'
+ht-degree: 8%
 
 ---
 
@@ -40,11 +40,11 @@ ht-degree: 7%
    | Sites | 选择Edge Delivery站点。 |
    | 环境 | 选择要在AEM设置中定位的特定Cloud Service环境。<br>在&#x200B;**层**&#x200B;下拉列表中，选择以下任一项：<br>·选择&#x200B;**Publish**&#x200B;以将内容交付给最终用户的实时生产环境作为目标。<br>·选择&#x200B;**预览**&#x200B;用于暂存或非生产环境，您可在这些环境中测试更改的上线时间。 |
 
-1. 通过选择以下任一选项来选择您的CDN类型：
+1. 通过选择以下任一选项来选择您的CDN类型和关联的配置：
 
-   | CDN类型 | 描述 |
+   | CDN类型 | 配置详情 |
    | --- | --- |
-   | Adobe 管理的 CDN | a.在&#x200B;**域**&#x200B;下拉列表中，选择要使用的域名。<br>下拉列表中没有可用的验证域？ 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<br>b。在SSL证书下拉列表中，选择要使用的证书。<br>下拉列表中没有SSL证书可用？ 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
-   | 其他CDN提供商。 | 如果您使用的是自己的CDN提供商，而不是您可用的Adobe托管的CDN，请选择此选项。<br>在&#x200B;**域**&#x200B;下拉列表中，选择要使用的域名。<br>下拉列表中没有可用的SSL证书？ 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
+   | Adobe 管理的 CDN | 在&#x200B;**配置详细信息**&#x200B;下，执行以下操作：<br>a。在&#x200B;**域**&#x200B;下拉列表中，选择要使用的域名。<br>下拉列表中没有可用的验证域？ 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<br>b。在&#x200B;**SSL证书**&#x200B;下拉列表中选择要使用的证书。<br>下拉列表中没有SSL证书可用？ 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
+   | 其他 CDN 提供商 | 如果您使用的是自己的CDN提供商，而不是您可用的Adobe托管的CDN，请选择此选项。<br>在&#x200B;**配置详细信息**&#x200B;下，在&#x200B;**域**&#x200B;下拉列表中，选择要使用的域名。<br>下拉列表中没有可用的验证域？ 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 
 1. 单击&#x200B;**保存**。
