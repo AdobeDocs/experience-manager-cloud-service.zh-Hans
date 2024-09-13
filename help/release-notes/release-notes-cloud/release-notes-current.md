@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 99a36bab3ca8d5e6a64e1fdb9c179cf8a3190a14
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 52%
+source-wordcount: '1245'
+ht-degree: 79%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 52%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2024.8.0)的发布日期是2024年8月29日。 下一个功能版本(2024.9.0)计划于2024年9月26日发布。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2024.8.0) 的发布日期为 2024 年 8 月 29 日。下一个功能版本 (2024.9.0) 计划于 2024 年 9 月 26 日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -46,15 +46,15 @@ ht-degree: 52%
 
 **适用于 Edge Delivery Services 的 AEM 创作**
 
-现在支持现有站点[继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)功能，包括：
+现在支持现有 Sites [继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)功能，包括：
 
 * [AEM 启动项](/help/sites-cloud/authoring/launches/overview.md)
-* 页面级别的[MSM](/help/sites-cloud/administering/msm/overview.md)
+* 页面级别的 [MSM](/help/sites-cloud/administering/msm/overview.md)
 
 此外，现在还支持以下页面管理功能：
 
-* [AEM标记](/help/sites-cloud/authoring/sites-console/tags.md)可以作为[分类](/help/edge/wysiwyg-authoring/taxonomy.md)导出到Edge Delivery Services。
-* 即将推出适用于Edge Delivery Services的[模板](/help/edge/wysiwyg-authoring/templates.md)！
+* [AEM 标记](/help/sites-cloud/authoring/sites-console/tags.md)可以作为一项[分类法](/help/edge/wysiwyg-authoring/taxonomy.md)导出至 Edge Delivery Services。
+* Edge Delivery Services 的[模板](/help/edge/wysiwyg-authoring/templates.md)即将推出！
 
 ### 早期采用者计划 {#sites-early-adopter}
 
@@ -65,64 +65,70 @@ ht-degree: 52%
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### 资源视图中的新增功能 {#assets-view-new-features}
+### Dynamic Media中的抢先访问功能 {#dm-early-access}
 
-**已更新Adobe Firefly图像生成**
+**基于AI的视频字幕**
 
-Assetsas a Cloud Service现在使用Firefly中的最新构件，该构件允许您使用Adobe Firefly生成各种样式的图像。 通过使用内置的Firefly编辑器定义其样式、构成、维度等，您可以直接在AEM Assets存储库中快速创建和保存所需的资源以供立即使用。
+Adobe Dynamic Media中基于人工智能的视频字幕，使用人工智能为视频内容自动生成字幕。 此功能旨在通过提供准确的实时字幕来提高辅助功能并增强用户体验。 人工智能分析视频的音轨以转录语音并创建字幕，这些可以编辑以便精确或定制。 这些字幕有助于满足辅助功能要求，并提升依赖或偏好基于文本的视频支持的受众的视频参与度。
 
-![Adobe Firefly图像生成](/help/assets/assets/bugatti-type-57.png)
+### Assets 视图中的新增功能 {#assets-view-new-features}
 
-**PSB文件支持**
+**更新了 Adobe Firefly 图像生成**
 
-除了现有的PSD文件支持之外，Assetsas a Cloud Service现在还支持Photoshop大型文档（PSB文件）。
+Assets as a Cloud Service 现在可以使用 Firefly 的最新小组件，以便您使用 Adobe Firefly 生成不同风格的图像。通过使用内置的 Firefly 编辑器定义其样式、构成、维度等，您可以直接在 AEM Assets 存储库中快速创建和保存所需的资产，以供立即使用。
 
-### Content Hub中的新增增强功能 {#content-hub-new-enhancements}
+![Adobe Firefly 图像生成](/help/assets/assets/bugatti-type-57.png)
 
-* 更好地处理长文件名，通过工具提示轻松扩展完整名称。
+**PSB 文件支持**
+
+除了现有的 PSD 文件支持功能外，Assets as a Cloud Service 现在还支持 Photoshop 大文档（PSB 文件）。
+
+### Content Hub 的新增强功能 {#content-hub-new-enhancements}
+
+* 更好地处理长文件名，可以通过工具提示轻松扩展完整名称。
 * 改进了缩略图，以更好地适应内容纵横比并覆盖更大的内容区域。
-* 内容中心支持AEM中的自定义缩略图体验。
+* Content Hub 支持 AEM 的自定义缩略图体验。
 * 改进了颜色搜索。
-* 对配置的改进可保存体验。
+* 改进了配置保存体验。
 * 改进了收藏集的信息页面，以反映创建者名称。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms中的新增预发行功能 {#forms-new-prerelease-features}
+### AEM Forms 预发行版中的新功能 {#forms-new-prerelease-features}
 
-#### 自动保存基于核心组件的自适应Forms的草稿
+#### 自动保存基于核心组件的自适应表单草稿
 
-用户现在可以从自动保存功能中获益，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回，在同一台或其他设备上完成填写。 此功能通过减少表单放弃率来提高组织的转化率，因为用户不需要从头开始填写表单。
+用户现在可以享受自动保存功能，该功能可以自动将部分完成的表格保存为草稿。他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃率来提高组织的转化率，因为用户不需要从头开始重新填写表单。
 
 
 ### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
 
-AEM Forms抢先体验计划为您提供独家体验尖端创新的机会，并帮助塑造其开发格局。
+AEM Forms Early Access Program 项目为您提供了一个独特的机会，让您可以独家访问尖端创新技术，并帮助塑造其发展。
 
 本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-#### AEM Forms AI助手
+#### AEM Forms AI 助手
 
-自适应Forms的创作AI为您的表单开发过程带来了全新级别的功能和便利性。 它允许您以前所未有的速度构建更好的表单。
+自适应表单的生成式 AI 为您的表单开发流程带来了全新的强大功能和便捷性。它使您能够比以往更快地构建更优质的表单。
 
-![创作AI助手，自适应Forms](/help/forms/assets/generative-ai-assistant.png)
+![生成式 AI 助手、自适应表单](/help/forms/assets/generative-ai-assistant.png)
 
-提供的创作AI功能包括：
+我们提供的生成式 AI 功能包括：
 
-* **产品查询AI助手**：即时获取您的AEM表单相关问题的答案。 AI助手将充当您自己的个人知识库，直接在平台上提供富有洞察力的指导和建议。
+* **产品查询 AI 助手**：立即获得与 AEM 表单相关的问题的答案。AI 助手可以充当您自己的个人知识库，能够直接在平台内提供富有洞察力的指导和建议。
 
-* **自适应表单生成**：轻松创建具有生成AI提示的完整表单。 我们的创作AI会自动生成用户友好的表单，从而减少流失并个性化体验。
+* **自适应表单生成**：轻松创建具有生成AI提示的完整表单。 Adobe的创新型人工智能会自动生成用户友好的表单，从而减少流失并个性化体验。
 
-* 为Forms生成&#x200B;**面板**：生成针对特定数据收集需求量身定制的表单节。 例如，生成用于收集付款信息、客户偏好设置或旅行详细信息的部分。
+* **生成表单面板**：根据特定数据收集需求生成表单中的各部分。例如，生成用于收集付款信息、客户偏好或旅行详情的部分。
 
-* **更改表单布局**：使用创作AI提示试验不同的布局和设计。 尝试使用向导或选项卡式视图等不同的布局，以找到最适合您的表单的布局。 使用创作AI提示优化表单以实现移动响应并创建用户喜爱的具有视觉吸引力的表单。
+* **更改表单布局**：使用创作AI提示试验不同的布局和设计。 尝试不同的布局（如向导或选项卡视图），找到最适合您的表单的布局。使用创作AI提示优化表单以实现移动响应并创建用户喜爱的具有视觉吸引力的表单。
 
-* **配置提交操作**：使用生成AI提示轻松配置表单的提交操作。 从预建提交操作库或由您自己的开发团队创建和部署的自定义提交操作列表中进行选择。
+* **配置提交操作**：使用生成AI提示轻松配置表单的提交操作。 从预建提交操作库或由开发团队创建和部署的自定义提交操作库中进行选择。
 
 >[!IMPORTANT]
 >
-> 如果您有兴趣加入任何创新的“抢先体验计划”，只需将您的官方地址中的电子邮件发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，其中包含您感兴趣的功能列表。
+> 有兴趣加入提前访问计划以进行Forms任何创新吗？ 请将您的官方地址中的电子邮件发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，其中包含您感兴趣的功能列表。
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}

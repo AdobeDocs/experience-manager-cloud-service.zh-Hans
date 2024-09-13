@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.7.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.7.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 2edaca5637c735645e2b761377b9681d9b48daa1
+exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 100%
+source-wordcount: '1605'
+ht-degree: 77%
 
 ---
 
@@ -60,19 +61,25 @@ ht-degree: 100%
 
 **使用资产选择器上传资产**
 
-资产选择器现在允许内容作者通过拖动或从本地文件系统浏览的方式直接从选择器上传最终资产。这允许将最终资产从您选择的应用程序上传到 DAM。
+资产选择器现在为内容作者提供了直接从选择器上传最终资产的功能，既可以拖动也可以从本地文件系统浏览。 此功能允许从您选择的应用程序将最终资产上传到DAM。
+
+### Dynamic Media中的抢先访问功能 {#dm-early-access}
+
+**基于AI的视频字幕**
+
+Adobe Dynamic Media中基于人工智能的视频字幕，使用人工智能为视频内容自动生成字幕。 此功能旨在通过提供准确的实时字幕来提高辅助功能并增强用户体验。 人工智能分析视频的音轨以转录语音并创建字幕，这些可以编辑以便精确或定制。 这些字幕有助于满足辅助功能要求，并提升依赖或偏好基于文本的视频支持的受众的视频参与度。
 
 ### Assets 视图中的新增功能 {#assets-view-new-features}
 
-**内容凭据集成**
+**Content Credentials 集成**
 
-Experience Manager Assets 现在支持支持图像格式的内容凭据。这提供了有关资产谱系及其创建方式的信息，包括是否使用 GenAI 进行了修改。
+Experience Manager Assets 现在支持指定图像格式的 Content Credentials。此功能提供了有关资产的族系以及创建资产的方式（包括是否使用GenAI修改了资产）的信息。
 
-![内容凭据](/help/assets/assets/content-credentials.png)
+![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **文件夹内容的视觉预览**
 
-现在，在浏览或搜索内容时，Experience Manager Assets 会在文件夹缩略图上显示文件夹内容的视觉预览，从而提高了 AEM Assets 存储库中可用资产的可发现性。
+现在，在浏览或搜索内容时，Experience Manager Assets会在文件夹缩略图上显示文件夹内容的可视预览，这改进了AEM Assets存储库中可用资源的可发现性。
 
 <!--
 
@@ -93,7 +100,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### 针对核心组件自适应表单的增强型可视化规则编辑器
 
-自适应表单作者可以使用核心组件可视化规则编辑器中开箱即用的功能中的可重复表单字段来构建表单中的复杂业务逻辑，而无需定制或开发团队的协助。
+自适应表单作者可以使用可重复的表单字段和现成的可视化规则编辑器功能，在表单中创建复杂的业务逻辑，而无需开发团队进行自定义或提供支持。
 
 ### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
 
@@ -103,7 +110,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 #### 使用通用编辑器创作自适应表单
 
-利用 Adobe Experience Manager [通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) 通过所见即所得的拖放创作功能创建自适应表单，实现无头和有头注册体验，并通过 Edge Delivery Service 交付。自适应表单作者可以轻松创建和启动网页中表单变体的实验，并确定最终用户的最佳性能体验。
+利用 Adobe Experience Manager [通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) 通过所见即所得的拖放创作功能创建自适应表单，实现无头和有头注册体验，并通过 Edge Delivery Service 交付。自适应表单作者可以轻松地为网页中的表单变体创建和启动实验。 此功能使他们能够为最终用户确定最佳性能体验。
 
 >[!IMPORTANT]
 >
@@ -113,22 +120,23 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 ### 使用自助式 API 密钥清除 CDN 上的内容 {#purge-cdn}
 
-使用 HTTP Cache-Control 标头设置 TTL 是平衡内容传递性能和内容新鲜度的有效方法。但是，在需要立即提供更新内容的关键场景中，直接清除 CDN 缓存可能会有所帮助。
+使用 HTTP Cache-Control 标头设置 TTL 是平衡内容传递性能和内容新鲜度的有效方法。但是，在必须立即提供更新内容的情况下，直接清除CDN缓存可能会有帮助。
 
-[了解如何](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) 使用 Cloud Manager 配置管道自助配置清除 API 令牌，以便您可以 [调用清除 API](/help/implementing/dispatcher/cdn-cache-purge.md)，使用以下任意一种变体：
+[了解如何](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)使用Cloud Manager配置管道自助提供清除API令牌的配置，以使您可以[调用清除API](/help/implementing/dispatcher/cdn-cache-purge.md)，并使用以下任一变体：
+
 * 单一 URL
 * 使用标签的多个 URL
 * 全面清除 CDN 缓存
 
 ### 为客户管理的 CDN 自助配置 X-AEM-Edge-Key {#customermanaged-keys}
 
-以前，需要提交支持请求工单才能生成配置客户托管 CDN 所需的 X-AEM-Edge-Key。现在，通过在配置管道部署的配置文件中声明键值，可以实现自助服务，从而消除了加入新环境的任何延迟。[了解详情](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
+以前，需要提交支持请求工单才能生成配置客户托管 CDN 所需的 X-AEM-Edge-Key。此工作流现在通过声明使用配置管道部署的配置文件中的键值来提供自助服务，从而消除载入新环境的任何延迟。 [了解详情](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)。
 
 ### 流量筛选规则警报 {#traffic-filter-rules-alerts}
 
-流量过滤规则包括可选择许可的 Web 应用程序防火墙 (WAF) 规则，可让您配置应阻止的流量。
+流量过滤器规则包括可选许可的Web应用程序防火墙(WAF)规则，允许您配置应该阻止哪些流量。
 
-现在，每当您的流量过滤规则被触发时，您都可以 [订阅警报](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)。当出现某些流量状况时，“操作中心”会通过发送电子邮件来通知您，以便采取适当的措施。
+现在，只要触发流量过滤器规则，您就可以[订阅警报](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts)。 当出现某些流量状况时，“操作中心”会通过发送电子邮件来通知您，以便采取适当的措施。
 
 ### 内容投放相关的早期采用者计划 {#foundation-early-adopter}
 
