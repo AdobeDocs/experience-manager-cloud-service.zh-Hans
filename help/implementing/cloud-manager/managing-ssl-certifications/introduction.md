@@ -1,19 +1,19 @@
 ---
-title: 管理 SSL 证书简介
+title: SSL证书简介
 description: 了解 Cloud Manager 如何为您提供自助服务工具来安装 SSL 证书。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 41%
+source-wordcount: '765'
+ht-degree: 34%
 
 ---
 
 
-# 管理 SSL 证书简介{#introduction}
+# SSL证书简介{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -37,7 +37,7 @@ Cloud Manager提供自助服务工具来安装和管理SSL（安全套接字层�
 >不允许客户上传DV（域验证）证书。
 
 
-## 证书简介 {#certificates}
+## SSL证书简介 {#certificates}
 
 企业和组织使用SSL证书来保护其网站，并允许客户信任这些证书。 若要使用 SSL 协议，Web 服务器需要使用 SSL 证书。
 
@@ -46,8 +46,6 @@ Cloud Manager提供自助服务工具来安装和管理SSL（安全套接字层�
 >[!IMPORTANT]
 >
 >Cloud Manager 不提供 SSL 证书或私钥。 这些东西必须从证书颁发机构（受信任的第三方组织）获得。 一些知名的证书颁发机构包括&#x200B;*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*&#x200B;和&#x200B;*Verisign*。
-
-## Cloud Manager SSL管理功能 {#features}
 
 Cloud Manager 支持以下客户 SSL 证书使用选项。
 
@@ -58,14 +56,9 @@ Cloud Manager 支持以下客户 SSL 证书使用选项。
 * 平台 TLS 服务基于终止 SSL 证书和承载该域的 CDN 服务将请求路由到客户的 CDN 服务。
 * AEM as a Cloud Service 接受域的通配符 SSL 证书。
 
-## 推荐 {#recommendations}
+AEM as a Cloud Service仅支持安全`https`站点。 具有多个自定义域的客户不希望每次添加域时都上传证书。 这样的客户可受益于获得一个具有多个域的证书。
 
-AEM as a Cloud Service 仅支持安全`https`站点。
-
-* 具有多个自定义域的客户不希望每次添加域时都上传证书。
-* 这样的客户可受益于获得一个具有多个域的证书。
-
-## 证书要求 {#requirements}
+## SSL证书要求 {#requirements}
 
 * AEM as a Cloud Service接受符合OV（组织验证）、EV（扩展验证）或DV（域验证）策略的证书。<!-- CQDOC-21758, #2 -->
 * 任何证书都必须是来自受信任证书颁发机构的X.509 TLS证书，并具有匹配的2048位RSA私钥。
@@ -73,7 +66,7 @@ AEM as a Cloud Service 仅支持安全`https`站点。
 
 OV和EV证书提供CA验证的信息。 此类信息可帮助用户评估网站所有者、电子邮件发件人或代码或PDF文档的数字签名者是否可信。 DV 证书不允许进行此类所有权验证。
 
-### 客户管理的证书格式 {#certificate-format}
+### 客户管理的SSL证书格式 {#certificate-format}
 
 <!-- CQDOC-21758, #3 -->
 
@@ -99,14 +92,11 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。PE
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## 限制 {#limitations}
+## 已安装SSL证书数量的限制 {#limitations}
 
 在任何给定时间，Cloud Manager允许最多安装50个SSL证书。 这些证书可以与程序中的一个或多个环境相关联，并且还包括任何过期的证书。
 
-如果您已达到限制，请检查您的证书并考虑：
-
-* 正在删除任何过期的证书。
-* 在同一证书中对多个域进行分组，因为一个证书可以覆盖多个域（最多 100 个 SAN）。
+如果您已达到限制，请检查您的证书并考虑删除任何过期的证书。 或者，在同一证书中对多个域进行分组，因为一个证书可以覆盖多个域（最多100个SAN）。
 
 ## 了解详情 {#learn-more}
 

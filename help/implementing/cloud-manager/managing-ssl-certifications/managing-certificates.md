@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 17%
+ht-degree: 13%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 17%
 1. 从&#x200B;**环境**&#x200B;屏幕，导航到&#x200B;**SSL证书**&#x200B;屏幕。
 1. 在要更新的过期客户托管证书的行中，单击最右侧的省略号按钮，然后选择&#x200B;**查看和更新**。
 
-   ![更新已过期的客户管理的SSL认证](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![更新过期的客户管理的SSL认证](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. 在&#x200B;**查看和更新SSL证书**&#x200B;对话框中，执行以下操作：
 
@@ -87,4 +87,4 @@ ht-degree: 17%
 
 有关详细信息，请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
-**IP 允许列表**&#x200B;和&#x200B;**环境**&#x200B;页面上也提供了类似的消息，这些环境具有 IP 允许列表或自定义域名的预先存在的 CDN 配置。
+**IP允许列表**&#x200B;和&#x200B;**环境**&#x200B;页面上也提供了类似的消息，这些环境具有IP允许列表或自定义域名的预先存在的CDN配置。

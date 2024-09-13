@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5615'
 ht-degree: 98%
 
 ---
@@ -1123,13 +1123,13 @@ ht-degree: 98%
       + Edge Delivery Sites{#edge-delivery-sites}
          + [Cloud Manager 中的 Edge Delivery 支持](/help/implementing/cloud-manager/edge-delivery-services.md)
       + 域设置 {#custom-domain-names}
-         + [简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         + [域设置简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 证书{#manage-ssl-certificates}
-         + [简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [SSL证书错误疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
@@ -1137,7 +1137,7 @@ ht-degree: 98%
          + [添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
          + [管理CDN配置](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允许列表{#ip-allow-lists}
-         + [简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+         + [IP 允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
          + [应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)

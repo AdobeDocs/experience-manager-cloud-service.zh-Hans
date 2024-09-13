@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6fb672e03fe28ae8af6dc873791c7d1ac1fb8fd7
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 9%
@@ -13,12 +13,11 @@ ht-degree: 9%
 ---
 
 
-# 添加SSL证书
+# 添加SSL证书 {#add-ssl-cert}
 
 了解如何使用Cloud Manager的自助服务工具添加客户管理的SSL证书或Adobe生成和管理的DV（域验证）证书。
 
 另请参阅[SSL证书错误疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)。
-
 
 ## 添加SSL证书 {#adding-an-ssl-certificate}
 
