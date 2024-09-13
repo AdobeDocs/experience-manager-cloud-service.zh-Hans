@@ -2,7 +2,7 @@
 source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 69%
+ht-degree: 93%
 
 ---
 # 代码片段 {#snippets}
@@ -18,11 +18,11 @@ ht-degree: 69%
 ## 另请参阅 {#see-also}
 
 * [创建 AEM 自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-* [将AEM自适应表单添加到AEM Sites页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [将 AEM Adaptive Form添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [将主题应用于 AEM 自适应表单](/help/forms/using-themes-in-core-components.md)
-* [将组件添加到 AEM 自适应表单 ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [将组件添加到 AEM 自适应表单 ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [在 AEM 自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-* [生成AEM自适应表单的PDF版本(DoR)](/help/forms/generate-document-of-record-core-components.md)
+* [生成一个 AEM Adaptive Form 的 PDF 版本（DoR）](/help/forms/generate-document-of-record-core-components.md)
 * [翻译 AEM 自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [为自适应表单启用 Adobe Analytics 以跟踪表单使用情况](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [将自适应表单连接到 Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -32,7 +32,7 @@ ht-degree: 69%
 * [将自适应表单连接到 Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [在 AEM 自适应表单中使用 Adobe Sign](/help/forms/working-with-adobe-sign.md)
 * [为自适应表单添加新区域设置](/help/forms/supporting-new-language-localization-core-components.md)
-* [将自适应表单数据发送到数据库](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [将自适应表单数据发送到数据库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [将自适应表单数据发送到 REST 端点](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [将自适应表单数据发送到 AEM 工作流](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [使用 Forms Portal 在 AEM 网站上列出 AEM 自适应表单](/help/forms/configure-forms-portal.md)
@@ -66,7 +66,7 @@ ht-degree: 69%
 * [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
 
 
-## 核心组件中的规则编辑器与基础组件中的规则编辑器的区别 {#rule-editor-diff}
+## 核心组件中的规则编辑器与基础组件中的规则编辑器之间的区别 {#rule-editor-diff}
 
 下表说明了规则编辑器的核心组件和规则编辑器的基础组件中可用的功能之间的区别：
 
@@ -74,28 +74,28 @@ ht-degree: 69%
   <tbody>
   <tr>
     <td><strong>功能</strong></td>
-    <td><strong>自适应表单基础组件</strong></td>
-    <td><strong>自适应表单核心组件</strong></td>   
+    <td><strong>Adaptive Form 基础组件</strong></td>
+    <td><strong>Adaptive Form 核心组件</strong></td>   
     </tr>
   </tr>
   <tr>
-    <td>设置选项的下拉列表 </td>
-    <td>选项的下拉列表是使用规则编辑器的<b>Set Options of</b>属性设置的。</td>
+    <td>设置下拉列表选项 </td>
+    <td>使用规则编辑器的<b>设置选项</b>属性来设置选项的下拉列表。</td>
     <td>下拉选项是使用自定义函数设置的。 
    </td>
    </tr>
      </tr>
    <tr>
     <td>对可重复面板字段执行数学运算 </td>
-    <td>OOTB数学函数可应用于可重复的面板字段，以便使用规则编辑器执行sum、average等函数。 需要提供两个参数：第一个指定包含字段的可重复面板，第二个指定对应可重复面板中的字段。 </td>
-    <td>可以使用自定义函数对可重复面板字段执行数学运算。您也可以将数学函数直接应用于规则编辑器中可重复面板的字段。
+    <td>OOTB 数学函数可以应用于可重复面板字段，以使用规则编辑器执行诸如求和、平均值等功能。需要提供两个参数：第一个指定包含字段的可重复面板，第二个指定对应可重复面板中的字段。 </td>
+    <td>可以使用自定义函数对可重复面板字段执行数学运算。您还可以使用规则编辑者直接对可重复面板的字段应用数学函数。
    </td>
    </tr>
       <tr>
-    <td>在“Then”中验证/重置字段/面板/表单规则 </td>
-    <td>验证和重置函数仅支持规则编辑器中的表单对象。 
+    <td>在“Then”中验证/重置字段/面板/ Form 规则 </td>
+    <td>验证和重置功能仅支持规则编辑器中的 Form 对象。 
    </td>
-    <td>验证和重置函数支持规则编辑器中的表单/面板/字段对象。 
+    <td>验证和重置功能支持规则编辑器中的 Form /面板/字段对象。 
    </td>
    </tr>
    <tr>
@@ -129,12 +129,12 @@ ht-degree: 69%
 * [开发和使用自定义函数的示例](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## Forms门户{#forms-portal-see-also}
+## Forms Portal{#forms-portal-see-also}
 
-* [Forms Portal组件简介](/help/forms/configure-forms-portal.md)
-* [在站点页面上列出您的表单](/help/forms/list-forms-on-sites-page.md)
-* [将表单另存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
-* [将表单链接添加到站点页面](/help/forms/add-form-link-to-aem-sites-page.md)
+* [Forms Portal 组件简介](/help/forms/configure-forms-portal.md)
+* [在 Sites 页面上列出您的 Form ](/help/forms/list-forms-on-sites-page.md)
+* [将 Form 保存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
+* [将 Form 链接添加到 Sites 页面](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Cloud Manager IP 允许列表和前端管道 {#allowlist-frontend-pipeline}
@@ -149,24 +149,24 @@ ht-degree: 69%
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
-## 添加Cloud Manager IP允许列表和前端管道 {#add-cm-allowlist-frontend-pipeline}
+## 添加 Cloud Manager IP 允许列表和前端管道 {#add-cm-allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->如果您使用或打算使用前端管道来开发站点，则必须预先添加Cloud Manager IP允许列表。
->请参阅[将Cloud Manager IP允许列表用于前端管道](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
+>如果您使用或打算使用前端管道来开发 Sites，则必须事先添加 Cloud Manager IP 允许列表。
+>请参阅 [将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 
 >[!TIP]
 >
->您是Dynamic Media的新用户吗？ 有关Dynamic Media的简要概述，请参阅[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
+>您是 Dynamic Media 的新手吗？如需快速、全面地了解动态媒体，请参阅 [使用动态媒体](/help/assets/dynamic-media/dynamic-media.md)。
 
 ## 另请参阅Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* 您是Dynamic Media的新用户吗？ 有关Dynamic Media的简要概述，请参阅[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
+>* 您是 Dynamic Media 的新手吗？如需快速、全面地了解动态媒体，请参阅 [使用动态媒体](/help/assets/dynamic-media/dynamic-media.md)。
 >
 >* 遵循[Dynamic Media最佳实践](/help/assets/dynamic-media/dm-best-practices.md)以获取最大价值。
 >
