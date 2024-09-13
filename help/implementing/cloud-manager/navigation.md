@@ -1,14 +1,14 @@
 ---
-title: 浏览 Cloud Manager UI
+title: 导航Cloud Manager UI
 description: 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 76%
+source-wordcount: '1518'
+ht-degree: 68%
 
 ---
 
@@ -41,7 +41,7 @@ Cloud manage UI 主要由两个图形界面组成：
    * 请注意，选项卡默认为关闭，可以使用 [Cloud Manager 标头中的汉堡菜单显示](#cloud-manager-header)。
 1. [统计数据和行动号召](#statistics)，用于概述您最近的活动
 1. [**我的程序** 部分](#my-programs-section) ，其中概述了您的所有计划
-1. [快速链接](#quick-links-section)可用于轻松访问相关资源
+1. [快速链接](#quick-links-section)以轻松访问相关资源。
 
 >[!TIP]
 >
@@ -57,10 +57,10 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![Experience Cloud 标头](assets/experience-cloud-header.png)
 
-1. 汉堡菜单提供对选项卡的访问权限，这些选项卡可以引导您访问单个计划中的特定部分，或者根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
-1. 无论您在浏览 Cloud Manager 的哪个分区，Cloud Manager 按钮都会带您返回到 Cloud Manager 中的“我的程序”控制台。
+1. 汉堡菜单提供了对选项卡的访问权限，这些选项卡可以引导您访问各个项目的特定部分。 或者，您可以根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
+1. 无论您在浏览 Cloud Manager 的哪个部分，Cloud Manager 按钮都会带您返回到 Cloud Manager 中的“我的程序”控制台。
 1. 点击或单击“反馈”按钮，向 Adobe 提供有关 Cloud Manager 的反馈。
-1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。如果您的 Adobe ID 与多个组织关联，请点击或单击以切换到另一个组织。
+1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。 如果您的 Adobe ID 与多个组织关联，请点击或单击以切换到另一个组织。
 1. 点击或单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
 1. 可使用帮助图标快速访问学习和支持资源。
 1. 通知图标具有当前分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)的数量。
@@ -86,7 +86,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 或者，如果您刚刚开始建立您的组织，则可能会有关于后续步骤或文档资源的提示。
 
-### 我的程序部分 {#my-programs-section}
+### “我的项目群”部分 {#my-programs-section}
 
 **我的程序**&#x200B;控制台的主要内容是&#x200B;**我的程序**&#x200B;部分中的程序列表。
 
@@ -96,7 +96,8 @@ Cloud manage UI 主要由两个图形界面组成：
 >
 >根据您的权限，您可能无法选择某些程序。
 
-使用排序选项可以更好地找到您需要的程序。
+
+要更轻松地查找所需的程序，请使用排序选项。
 
 ![排序选项](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
@@ -110,7 +111,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 #### 程序信息卡 {#program-cards}
 
-每个程序都会由一张信息卡（或表格中的一行）来表示，其中提供该程序的概述以及采取操作的快速链接。
+信息卡（或表格中的行）表示每个项目，提供项目的概述以及要执行操作的快速链接。
 
 ![程序信息卡](assets/program-card.png)
 
@@ -158,14 +159,15 @@ Cloud manage UI 主要由两个图形界面组成：
 >有关程序以及创建和管理程序的详细信息，请参阅以下文档。
 >
 >* [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+>* [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 >* [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [正在创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+
 
 ### 快速链接部分 {#quick-links-section}
 
-通过快速链接部分可以访问常用的相关资源。
+利用快速链接部分，可访问相关的常用资源。
 
-## 程序概述窗口 {#program-overview}
+## 项目概述窗口 {#program-overview}
 
 在&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台中选择程序后，将转到&#x200B;**程序概述**&#x200B;窗口。
 
@@ -173,7 +175,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 通过程序概述，您可以访问 Cloud Manager 程序的所有详细信息。与&#x200B;**我的程序**&#x200B;控制台一样，它由若干部分组成。
 
-1. 通过[工具栏](#program-overview-toolbar)可快速跳转回“我的程序”控制台并导航程序
+1. [工具栏](#program-overview-toolbar)快速跳回“我的程序”控制台，并导航该程序
 1. [选项卡](#program-tabs)用于在程序的不同方面之间进行切换
 1. 根据对程序的最后操作制定的[行动号召](#cta)
 1. 对程序[环境的概述](#environments)
@@ -199,33 +201,43 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 ![程序工具栏](assets/cloud-manager-program-toolbar.png)
 
-此外，如果您选择使用汉堡菜单隐藏选项卡，则工具栏始终会提供您所在的选项卡。
+工具栏始终显示您当前所在的选项卡，即使您使用汉堡菜单隐藏了这些选项卡。
 
 ### 程序选项卡 {#program-tabs}
 
-每个程序都有许多与之相关的选项和数据。这些数据被收集到选项卡中，以简化程序导航。通过这些选项卡您可以访问：
+每个程序都有许多与之相关的选项和数据。 这些选项和数据会收集到选项卡中，以便简化程序导航。 通过这些选项卡您可以访问：
+
+**计划**
 
 * 概述：当前文档中描述的程序概述
 * [活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)：程序的管道运行历史
 * [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)：为程序配置的所有管道
 * [存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)：为程序配置的所有存储库
 * [报告](/help/implementing/cloud-manager/sla-reporting.md)：SLA 数据等量度
+
+**服务**
+
 * [环境](/help/implementing/cloud-manager/manage-environments.md)：为程序配置的所有环境
+* [Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) — 管理Edge Delivery站点
 * [域设置](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理项目的自定义域名
-* [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) — 管理程序的SSL证书
+* [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) — 管理程序的SSL证书
+* [CDN配置](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理CDN配置
 * [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 为某些IP地址定义允许列表
 * [内容集](/help/implementing/developing/tools/content-copy.md)：为复制目的而创建的内容集
 * [复制内容活动](/help/implementing/developing/tools/content-copy.md)：内容复制活动
 * [网络基础架构](/help/security/configuring-advanced-networking.md) — 管理程序的高级联网选项
+
+**资源**
+
 * 学习路径：有关 Cloud Manager 的其他学习资源
 
 默认情况下，当您打开一个程序时，您会进入&#x200B;**概述**&#x200B;选项卡。当前选项卡会突出显示。选择另一个选项卡来显示其详细信息。
 
 使用 [Cloud Manager 标头](#cloud-manager-header-2)中的汉堡菜单来隐藏选项卡。
 
-### 行动呼吁 {#cta}
+### 呼叫段 {#cta}
 
-行动呼吁部分将会根据您的程序状态为您提供有用的信息。对于新计划，您可能会看到提供的后续步骤以及上线日期提醒，[在计划创建期间设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。
+行动号召部分会根据您的程序状态为您提供有用的信息。 对于新计划，您可能会看到给出的后续步骤以及上线日期提醒，[在计划创建期间设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。
 
 新项目的![行动号召](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 

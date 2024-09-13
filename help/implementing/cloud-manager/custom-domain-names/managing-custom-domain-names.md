@@ -5,7 +5,7 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 60%
@@ -41,7 +41,7 @@ Cloud Manager 让您查看、更新、替换和删除自定义域名。
 
 >[!NOTE]
 >
->SSL证书必须有效，[已配置](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)，并包含要更新的自定义域名。
+>SSL证书必须有效，[已配置](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)，并包含要更新的自定义域名。
 
 ## 删除自定义域名 {#deleting}
 

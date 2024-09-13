@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 版�
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 11%
+source-wordcount: '657'
+ht-degree: 9%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 11%
 
 * 现在可以通过AEM [!DNL Sites]基于图像的核心组件访问[!DNL Dynamic Media]功能。 作者可以在创建网页时快速配置组件，以使用图像预设、智能裁切和图像修饰符。 请参阅[核心组件2.13.0版本](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)。
 
-* [!DNL Experience Manager]桌面应用程序允许用户通过从桌面应用程序界面上的Windows资源管理器或Mac Finder拖动文件来上传文件和文件夹。 请参阅[使用桌面应用程序添加资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)。
+* [!DNL Experience Manager]桌面应用程序允许用户通过从桌面应用程序界面上的Windows资源管理器或Mac Finder拖动文件来上传文件和文件夹。 请参阅[使用桌面应用程序添加资源](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem)。
 
 ## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
@@ -50,7 +50,7 @@ Adobe Experience Manager (AEM) 2020.12.0as a Cloud Service中的Cloud Manager的
 
 ### [!DNL Cloud Manager] 的新增功能 {#what-is-new-cm}
 
-* [SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)和[自定义域名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)的自助管理。
+* [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)和[自定义域名简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)的自助管理。
 
 * [IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)自助管理。
 
@@ -66,7 +66,7 @@ Adobe Experience Manager (AEM) 2020.12.0as a Cloud Service中的Cloud Manager的
 
 ### [!DNL Code Refactoring Tools] 的新增功能 {#what-is-new-crt}
 
-* 发布了AIO-CLI插件的新版本。 此增效工具的最新版本包括对AEM Dispatcher Converter和Repository Modernizer的错误修复，并且支持新的实用程序 — 索引转换器。 请参阅[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits)，您可以在其中了解有关此插件的更多信息。
+* 发布了AIO-CLI插件的新版本。 此增效工具的最新版本包括对AEM Dispatcher Converter和Repository Modernizer的错误修复，并且支持新的实用程序 — 索引转换器。 请参阅[Unified Experience](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits)，您可以在其中了解有关此插件的更多信息。
 
 * 索引转换器是一个实用程序，可用于将客户的自定义Oak索引定义转换为与AEM as a Cloud Service兼容的Oak索引定义。 有关详细信息，请参阅[索引转换器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
 
@@ -86,6 +86,6 @@ Adobe Experience Manager (AEM) 2020.12.0as a Cloud Service中的Cloud Manager的
 
 ### 错误修复 {#ctt-bug-fixes}
 
-* 迁移集的内容传输工具(CTT)用户界面状态在一段时间不活动后没有保留并发生了更改。 此问题已得到修复。
-* 如果日志不可用，则查看日志的选项将被禁用。 此问题已修复，并且添加了消息以通知用户日志缺失的原因。
-* 当用户停止引入时，内容传输工具用户界面状态显示为&#x200B;*失败*。 此问题已修复，改为显示&#x200B;*已停止*。
+* 迁移集的内容传输工具(CTT)用户界面状态在一段时间不活动后没有保留并发生了更改。 此问题现已修复。
+* 如果日志不可用，则查看日志的选项将被禁用。 此问题现已修复，并且添加了消息以通知用户日志缺失的原因。
+* 当用户停止引入时，内容传输工具用户界面状态显示为&#x200B;*失败*。 此问题现已修复为改为显示&#x200B;*已停止*。

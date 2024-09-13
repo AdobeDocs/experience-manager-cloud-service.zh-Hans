@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 9%
@@ -23,7 +23,7 @@ ht-degree: 9%
 
 提供证书可能需要几天时间。因此，Adobe建议在任何截止日期或上线日期之前提前配置证书。
 
-请查看[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements)中的&#x200B;**证书要求**，以确保AEM as a Cloud Service支持您要添加的证书。
+请查看[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中的&#x200B;**证书要求**，以确保AEM as a Cloud Service支持您要添加的证书。
 
 用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能完成此任务。
 
@@ -45,7 +45,7 @@ ht-degree: 9%
 
 1. 在页面的右上角附近，单击&#x200B;**添加SSL证书**。
 
-1. 在&#x200B;**添加SSL证书**&#x200B;对话框中，根据[您的特定用例](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)，执行以下操作之一：
+1. 在&#x200B;**添加SSL证书**&#x200B;对话框中，根据[您的特定用例](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)，执行以下操作之一：
 
    | | 用例 | 步骤 |
    | --- | --- | --- |
