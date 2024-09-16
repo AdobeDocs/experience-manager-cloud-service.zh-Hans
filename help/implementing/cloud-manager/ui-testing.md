@@ -5,9 +5,9 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: bb75e70fb83b63e12968f7cb01e6976e367ff70e
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2630'
 ht-degree: 79%
 
 ---
@@ -212,16 +212,20 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 
 根据您的框架，以下环境变量会在运行时传递给 Docker 映像。
 
+>[!NOTE]
+>
+> 这些值将在管道执行期间自动设置 — 无需作为管道变量手动进行设置。
+
 | 变量 | 示例 | 描述 | 测试框架 |
-|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
+|----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium 服务器的 URL | 仅 Selenium |
 | `SELENIUM_BROWSER` | `chrome` | Selenium 服务器使用的浏览器实施 | 仅 Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM 创作实例的 URL | 所有 |
 | `AEM_AUTHOR_USERNAME` | `admin` | 用于登录 AEM 创作实例的用户名 | 所有 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | 用于登录 AEM 创作实例的密码 | 所有 |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 发布实例的 URL | 所有 |
-| `AEM_PUBLISH_USERNAME` | `admin` | 用于登录 AEM 发布实例的用户名 | 所有 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | 用于登录到AEM发布实例的密码 | 所有 |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM 发布实例的 URL | 全部* |
+| `AEM_PUBLISH_USERNAME` | `admin` | 用于登录 AEM 发布实例的用户名 | 全部* |
+| `AEM_PUBLISH_PASSWORD` | `admin` | 用于登录到AEM发布实例的密码 | 全部* |
 | `REPORTS_PATH` | `/usr/src/app/reports` | 必须将测试结果的 XML 报告保存到的路径 | 所有 |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | 文件必须上传到的 URL，以便测试框架可以访问这些文件 | 所有 |
 | `PROXY_HOST` | `proxy-host` | 测试框架使用的内部HTTP代理的主机名 | 除Selenium之外的所有其他产品 |
@@ -231,6 +235,8 @@ Cloud Manager 会自动拾取包含 Docker 构建上下文的档案，它将在�
 | `PROXY_OBSERVABILITY_PORT` | `8081` | 代理服务器的HTTP运行状况检查端口 | 除Selenium之外的所有其他产品 |
 | `PROXY_RETRY_ATTEMPTS` | `12` | 等待代理服务器就绪时重试尝试的建议次数 | 除Selenium之外的所有其他产品 |
 | `PROXY_RETRY_DELAY` | `5` | 等待代理服务器就绪时重试尝试之间的建议延迟 | 除Selenium之外的所有其他产品 |
+
+`* these values will be empty if there is no publish instance`
 
 Adobe 测试示例提供了帮助程序函数来访问配置参数：
 
