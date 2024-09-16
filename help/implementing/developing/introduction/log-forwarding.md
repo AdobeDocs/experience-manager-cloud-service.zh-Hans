@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发给Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1359'
 ht-degree: 1%
 
 ---
@@ -177,9 +177,10 @@ AEM日志(包括Apache/Dispatcher)显示在具有以下命名约定的文件夹�
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 在每个文件夹下，将创建一个文件并将其附加到。 客户负责处理和管理此文件，以免它变得太大。
 
@@ -209,6 +210,9 @@ data:
 
 * 创建API密钥，而不与特定的云提供商进行任何集成。
 * tags属性是可选的
+* 对于AEM日志，Datadog源标记设置为`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`之一
+* 对于CDN日志，Datadog源标记设置为`aemcdn`
+* Datadog服务标记设置为`adobeaemcloud`，但您可以在标记部分中覆盖它
 
 
 ### Elasticsearch和OpenSearch {#elastic}
@@ -230,10 +234,12 @@ data:
 
 注意事项：
 
+* 默认情况下，端口为443。 可以选择使用名为`port`的属性覆盖它
 * 对于凭据，请确保使用部署凭据，而不是帐户凭据。 这些是在屏幕中生成的凭据，可能与以下图像类似：
 
 ![弹性部署凭据](/help/implementing/developing/introduction/assets/ec-creds.png)
 
+* 对于AEM日志，`index`设置为`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`之一
 * optional pipeline属性应设置为Elasticsearch或OpenSearch引入管道的名称，可以将其配置为将日志条目路由到相应的索引。 管道的处理器类型必须设置为&#x200B;*script*，脚本语言应设置为&#x200B;*无痛苦*。 以下是将日志条目路由到索引（如aemaccess_dev_26_06_2024）的脚本片段示例：
 
 ```
@@ -254,15 +260,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com:8443/aem_logs/aem"
+      url: "https://example.com/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
 注意事项：
 
-* URL字符串必须包含&#x200B;**https://**，否则验证将失败。 如果url字符串中未包含任何端口，则采用端口443（默认的HTTPS端口）。
-* 如果您希望使用与443不同的端口，请将其作为URL的一部分提供。
+* URL字符串必须包含&#x200B;**https://**，否则验证将失败。
+* URL可能包含端口。 例如，`https://example.com:8443/aem_logs/aem`。如果url字符串中未包含任何端口，则采用端口443（默认的HTTPS端口）。
 
 #### HTTPS CDN日志 {#https-cdn}
 
@@ -278,13 +284,14 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是一个�
 
 对于AEM日志（包括apache/dispacher），将连续发送Web请求(POST)，JSON有效负载为日志条目数组，其日志条目格式多种多样，如[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)中所述。 下面的[日志条目格式](#log-format)部分中提及了其他属性。
 
-还有一个名为`sourcetype`的属性，该属性设置为以下值之一：
+还有一个名为`Source-Type`的属性，该属性设置为以下值之一：
 
 * aemaccess
 * aemerror
+* aemrequest
 * aemdispatcher
-* httpdaccess
-* httpderror
+* aemhttpdaccess
+* aemhttpderror
 
 ### Splunk {#splunk}
 
@@ -299,8 +306,13 @@ data:
       enabled: true
       host: "splunk-host.example.com"
       token: "${{SPLUNK_TOKEN}}"
-      index: "AEMaaCS"
+      index: "aemaacs"
 ```
+
+注意事项：
+
+* 默认情况下，端口为443。 可以选择使用名为`port`的属性覆盖它。
+
 
 <!--
 ### Sumo Logic {#sumologic}
@@ -343,119 +355,26 @@ aem_tier: author
 
 ## 高级网络 {#advanced-networking}
 
->[!NOTE]
->
->此功能尚未准备好供早期采用者使用。
-
-
 某些组织选择限制日志记录目标可以接收的流量。
 
-对于CDN日志，您可以将IP地址添加到允许列表，如[fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到(非Adobe)Azure Blob存储区，在其中可以写入逻辑以将专用IP的日志发送到其最终目标。
+对于CDN日志，您可以将IP地址添加到允许列表，如[fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或(非Adobe)Azure Blob存储区，其中可以写入逻辑以将已知IP的日志发送到其最终目标。
 
-对于AEM日志(包括Apache/Dispatcher)，您可以配置日志转发以通过[高级联网](/help/security/configuring-advanced-networking.md)。 查看以下三种高级联网类型的模式，它们使用可选的`port`参数以及`host`参数。
-
-### 灵活端口出口 {#flex-port}
-
-如果日志通信流转到的端口不是443（例如，下面的8443），请配置高级联网，如下所示：
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 8443, # something other than 443
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-并配置yaml文件，如下所示：
+对于AEM日志(包括Apache/Dispatcher)，如果您已配置[高级网络](/help/security/configuring-advanced-networking.md)，则可以使用advancedNetworking属性从专用出口IP地址或通过VPN转发它们。
 
 ```
 kind: "LogForwarding"
 version: "1"
+metadata:
+  envTypes: ["dev"]
 data:
   splunk:
     default:
-      host: "${{AEM_PROXY_HOST}}"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
 ```
 
-### 专用出口IP {#dedicated-egress}
-
-
-如果日志流量需要从专用出口IP发出，请配置高级网络，如下所示：
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443, 
-            "portOrig": 30443
-        }    
-    ]
-}
-```
-
-并配置yaml文件，如下所示：
-
-```
-      
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443    
-```
-
-### VPN {#vpn}
-
-如果日志流量需要通过VPN，请配置高级网络，如下所示：
-
-```
-{
-    "portForwards": [
-        {
-            "name": "splunk-host.example.com",
-            "portDest": 443,
-            "portOrig": 30443
-        }    
-    ]
-}
-
-kind: "LogForwarding"
-version: "1"
-   metadata:
-     envTypes: ["dev"]
-data:
-  splunk:
-     default:
-       enabled: true
-       index: "index_name" 
-       token: "${{SPLUNK_TOKEN}}"  
-     aem:
-       enabled: true
-       host: "${{AEM_PROXY_HOST}}"
-       port: 30443       
-     cdn:
-       enabled: true
-       host: "splunk-host.example.com"
-       port: 443     
-```
