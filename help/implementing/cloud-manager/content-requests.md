@@ -5,10 +5,10 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
+source-git-commit: 9b31ea4218ce6a3a0f2a53e28efec4d9b98f9b38
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 11%
+source-wordcount: '1303'
+ht-degree: 10%
 
 ---
 
@@ -55,7 +55,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | 请求类型 | 内容请求 | 描述 |
 | --- | --- | --- |
 | HTTP代码100-299 | 已包含 | 这些是提交全部或部分内容的常规请求。 |
-| 用于自动化的HTTP库 | 已包含 | 示例：<br>· Amazon CloudFront<br>· Apache Http Client<br>· Asynchronous Http Client<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub Node Fetch<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· 15}· Reactor Netty<br>· Wget<br>· WinHTTP<br> |
+| 用于自动化的HTTP库 | 已包含 | 示例：<br>· Amazon CloudFront<br>· Apache Http Client<br>· Asynchronous Http Client<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub Node Fetch<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· 15}· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub Node Fetch<br>· Reactor Netty<br> |
 | 监控和运行状况检查工具 | 已包含 | 这些功能由客户设置，用于监控站点的某些方面。 例如，可用性或真实用户性能。如果针对特定端点（如/system/probes/health）进行运行状况检查，我们建议您使用`/system/probes/health`端点，而不是来自站点的实际HTML页。[查看以下](#excluded-content-request)<br>示例：<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(兼容；UptimeRobot/2.0；[https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThoudekEyes-Dragonfly-x1<br> · WebMon/2.0.0<br> |
 | `<link rel="prefetch">`个请求 | 已包含 | 为了提高下一页的加载速度，客户可以在用户单击链接之前让浏览器加载一组页面，以使这些页面已位于缓存中。 *请注意：这会显着增加流量*，具体取决于预取的页面数量。 |
 | 阻止Adobe Analytics或Google Analytics报表的流量 | 已包含 | 通常，网站访客会安装隐私软件（广告拦截器等），这会影响Google Analytics或Adobe Analytics的准确性。 AEM as a Cloud Service在进入Adobe运行的基础结构的第一个入口点而不是客户端计算请求。 |
@@ -75,7 +75,8 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | 客户用于监控其Cloud Service计划的URL | 已排除 | 我们建议使用URL从外部监视可用性或运行状况检查。<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod预热服务 | 已排除 |
 | 座席： skyline-service-warmup/1.* |
-| 著名的搜索引擎、社交网络和HTTP库（由Fastly标记） | 已排除 | 已知的服务定期访问网站以刷新其搜索索引或服务： <br><br>示例： <br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuildWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBotBot <br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· MJ12bot<br>· Pingdom<br>· Pinterest<br>· SemrushBot<br>· SiteEnprovement<br>· StashBot<br>· StatusCake<br>· Yek{YandexBot |
+| 著名的搜索引擎、社交网络和HTTP库（由Fastly标记） | 已排除 | 已知的服务定期访问网站以刷新其搜索索引或服务： <br><br>示例： <br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuildWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBotBot <br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· MJ12bot<br>· Pinterest<br>· SemrushBot<br>· SiteImprovement<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· Claudebe· Claudeb t |
 | 排除Commerce integration framework调用 | 已排除 | 这些是向AEM发出的请求，需要转发到Commerce integration framework（URL以`/api/graphql`开头），以避免重复计数，因此不会对Cloud Service计费。 |
 | 排除`manifest.json` | 已排除 | 清单不是API调用，它旨在提供有关如何在桌面或手机上安装网站的信息。 Adobe不应计为`/etc.clientlibs/*/manifest.json`的JSON请求 |
 | 排除`favicon.ico` | 已排除 | 虽然返回的内容不应为HTML或JSON，但我们发现，在某些场景（如SAML身份验证流）中，favicon可能会作为HTML返回，因此会从计数中显式排除。 |
+| 到其他后端的CDN代理 | 已排除 | 排除使用[CDN源选择器](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)技术路由到其他非AEM后端的请求，因为它们未命中AEM。 |
