@@ -5,15 +5,15 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
+source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 20%
+source-wordcount: '1490'
+ht-degree: 21%
 
 ---
 
 
-# 添加自定义域名 {#adding-cdn}
+# 添加客户自定义域名 {#adding-cdn}
 
 了解如何使用 Cloud Manager 添加自定义域名。
 
@@ -23,13 +23,13 @@ ht-degree: 20%
 
 * 在添加自定义域名之前，您必须为要添加的域添加域SSL证书，如文档[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)中所述。
 * 您必须具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色才能在Cloud Manager中添加自定义域名。
-* 正在使用Fastly CDN。
+* 使用Fastly或其他CDN。
 
 >[!IMPORTANT]
 >
 >即使您使用非AdobeCDN，也仍需要将域添加到Cloud Manager。
 
-## 在何处添加自定义域名{#}
+## 在何处添加自定义域名 {#where-to-add-cdn}
 
 您可以从 Cloud Manager 中的两个位置添加自定义域名：
 
@@ -68,7 +68,7 @@ ht-degree: 20%
 
    | 如果您选择了证书类型 | 描述 |
    | --- | ---  |
-   | Adobe 管理的证书 | 在继续下一步之前，请完成[Adobe托管证书步骤](#abobe-managed-cert-steps)。 |
+   | Adobe 管理的证书 | 在继续下一步之前，请完成[Adobe托管证书步骤](#adobe-managed-cert-steps)。 |
    | 客户管理的证书 | 在继续下一步之前，请完成[客户管理的证书步骤](#customer-managed-cert-steps)。 |
 
 1. 单击&#x200B;**验证**。
@@ -78,7 +78,6 @@ ht-degree: 20%
    >[!NOTE]
    >
    >如果您使用自托管SSL证书和自托管CDN提供程序，则可以跳过此步骤，在准备就绪时直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
-
 
 
 ### Adobe托管证书步骤 {#adobe-managed-cert-steps}
@@ -97,7 +96,7 @@ ht-degree: 20%
 >
 >对于Adobe管理的CDN，在使用DV（域验证）证书时，只允许使用ACME验证的站点。
 
-#### 要求 {#dv-requirements}
+#### 要求 {#adobe-managed-cert-dv-requirements}
 
 请在配置DNS记录之前满足这些要求。
 
@@ -105,7 +104,7 @@ ht-degree: 20%
 * 能够编辑组织域的DNS记录，或联系能够编辑记录的适当人员。
 * 您必须已按照文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)中所述验证配置的自定义域名。
 
-#### CNAME记录 {#cname-record}
+#### CNAME记录 {#adobe-managed-cert-cname-record}
 
 规范名称或 CNAME 记录是一种将别名映射为真实或规范域名的 DNS 记录类型。CNAME 记录通常用于映射子域，例如 `www.example.com` 到托管该子域内容的域。
 
@@ -115,7 +114,7 @@ ht-degree: 20%
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX记录 {#apex-record}
+#### APEX记录 {#adobe-managed-cert-apex-record}
 
 Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的DNS提供商，Apex域配置有`A`、`ALIAS`或`ANAME`记录。 Apex 域必须指向特定的IP地址。
 
@@ -132,7 +131,6 @@ Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的D
 * `A record for domain @ pointing to IP 151.101.195.10`
 
 
-
 ### 客户管理的证书步骤 {#customer-managed-cert-steps}
 
 如果您选择了证书类型&#x200B;*客户管理的证书*，请在&#x200B;**验证域**&#x200B;对话框中完成以下步骤。
@@ -145,7 +143,7 @@ Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的D
 
 Cloud Manager使用特定的TXT记录来授权要在CDN服务中托管的域。 在授权Cloud Manager使用自定义域部署CDN服务并将其与后端服务关联的区域中，创建DNS TXT记录。 此关联完全由您控制，并授权 Cloud Manager 将服务中的内容提供给域。 此授权可授予并撤销。 TXT记录特定于域和Cloud Manager环境。
 
-## 要求 {#requirements-customer-cert}
+#### 要求 {#customer-managed-cert-requirements}
 
 在添加TXT记录之前满足这些要求。
 
@@ -153,7 +151,7 @@ Cloud Manager使用特定的TXT记录来授权要在CDN服务中托管的域。 
 * 能够编辑组织域的DNS记录，或联系能够编辑记录的适当人员。
 * 首先，按照本文前面所述添加自定义域名。
 
-## 添加TXT记录以进行验证 {#verification}
+#### 添加TXT记录以进行验证 {#customer-managed-cert-verification}
 
 1. 在&#x200B;**验证域**&#x200B;对话框中，Cloud Manager显示用于验证的名称和TXT值。 复制此值。
 
@@ -170,7 +168,7 @@ Cloud Manager使用特定的TXT记录来授权要在CDN服务中托管的域。 
 
 1. 将TXT记录保存到域主机。
 
-## 验证TXT记录 {#verify}
+#### 验证TXT记录 {#customer-managed-cert-verify}
 
 完成后，可通过运行以下命令来验证结果。
 

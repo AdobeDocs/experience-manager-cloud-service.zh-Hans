@@ -4,7 +4,7 @@ description: 了解如何使用Edge Delivery Services交付Cloud Manager项目�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 6%
@@ -58,11 +58,11 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 | 我要将Edge Delivery站点添加到Cloud Manager | 请参阅[添加Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。 |
 | 我要将Edge Delivery Services添加到新的或现有的沙盒程序。 | 请参阅[创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。<br>创建沙盒程序时，默认情况下会将Edge Delivery Services添加到该程序中；无需选择它。<br>在Edge Delivery正式发布之前存在沙盒程序，将自动继承Edge Delivery Services。 |
 
-## 为签约客户Adobe推荐的路径 {#recommended-path-eds}
+## 为许可客户Adobe推荐的路径 {#recommended-path-eds}
 
-作为签约客户，请通过Cloud Manager访问和使用Edge Delivery Services许可证，确保您从Adobe中获得最大利益。 此方法允许您使用[Adobe托管CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，并利用诸如自助CDN管理等关键优势，包括配置和添加DV证书。 此外，创建DV证书后，除非将其删除，否则Adobe会每三个月自动更新一次。 如果您没有具有Adobe的Edge Delivery Services许可证，但决定绕过这些权益，则只能使用客户管理的CDN。 此设置必须在`aem.live`平台上。
+作为许可客户，请通过Cloud Manager访问和使用Edge Delivery Services许可证，确保您能够从Adobe中获得最大利益。 此方法允许您使用[Adobe托管CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，并利用诸如自助CDN管理等关键优势，包括配置和添加DV证书。 此外，创建DV证书后，除非将其删除，否则Adobe会每三个月自动更新一次。 如果您没有具有Adobe的Edge Delivery Services许可证，但决定绕过这些权益，则只能使用客户管理的CDN。 此设置必须在`aem.live`平台上。
 
-如果您已签订合同，具有AEM as a Cloud Service SitesEdge Delivery Services许可证，请登录Cloud Manager以确保能够执行以下操作：
+如果您已获得AEM as a Cloud Service SitesEdge Delivery Services许可证的许可，请登录Cloud Manager以确保能够执行以下操作：
 
 * 使用您选择的程序上的许可证。
 * 利用[API-1](https://developer.adobe.com/experience-cloud/experience-manager-apis/)的优势执行CRUD（创建、读取、更新、删除）操作。
