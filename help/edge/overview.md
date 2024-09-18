@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 如何从 Edge Delivery Services 提�
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
-workflow-type: ht
-source-wordcount: '1356'
-ht-degree: 100%
+source-git-commit: fa50e661d05a5083be3605a8c6e26450357f4aec
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 93%
 
 ---
 
@@ -135,7 +135,11 @@ Adobe 致力于通过为 Edge Delivery Services、WYSIWYG 以及基于文档的�
 
 ### 记录支持工单 {#support-ticket}
 
-如果产品问题需要额外调查和故障排除，并且需要满足响应 SLT，则可使用 Admin Console 按照该流程提交支持工单。
+如果产品问题需要进行额外的调查和疑难解答，并且必须满足响应SLT，则可以提交支持工单。
+
+要记录支持票证，您必须首先在Cloud Manager中注册Edge Delivery网站。 建议所有AEM as a Cloud Service用户在Cloud Manager中注册您的网站，这样将带来[诸多好处。](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)如果您尚未注册网站，请参阅[Cloud Manager文档](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)以了解详细信息。
+
+您的网站在Cloud Manager中注册后，请使用Admin Console按照以下流程提交支持票证：
 
 1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建一个工单。
 1. 在该工单的标题中添加 **Edge Delivery**。

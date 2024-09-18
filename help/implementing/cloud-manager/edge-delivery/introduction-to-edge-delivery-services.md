@@ -4,12 +4,13 @@ description: 了解如何使用Edge Delivery Services交付Cloud Manager项目�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
+source-git-commit: a51e2cf3f91b3bc1fe1600024943f6bd95f78352
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '737'
 ht-degree: 6%
 
 ---
+
 
 # Cloud Manager中的Edge Delivery Services简介 {#edge-delivery-services}
 
@@ -27,12 +28,6 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 >
 >有关Edge Delivery Services以及如何将其用于AEM的详细信息，请参阅[Edge Delivery Services概述](/help/edge/overview.md)。
 
-<!-- RELEASED TO GA SEPTEMBER 5, 2024
->[!NOTE]
->
->This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption). -->
-
-
 ## 关于Cloud Manager中的Edge Delivery Services {#edge-in-cloud-manager}
 
 如果您已将许可Edge Delivery Services作为Adobe Experience Manager Sites的一部分，则可以直接在Cloud Manager中使用Edge Delivery Services载入您的网站，并使用引导式自助服务体验[上线](/help/implementing/cloud-manager/managing-code/private-repositories.md)。
@@ -41,15 +36,7 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 
 ## 将Edge Delivery Services添加到生产程序或沙盒程序
 
-要添加或编辑程序，您必须是&#x200B;**业务负责人**&#x200B;角色的成员或拥有执行此操作所需的权限。
-
-您的组织必须具有一个未使用的Edge Delivery Services许可证，然后才能将其应用于生产程序。
-
->[!NOTE]
->
->将Edge Delivery Services许可证应用于程序或从程序中删除后，更改将立即生效，而无需运行管道。<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
-
-根据您的用例，执行以下操作之一：
+可以通过多种不同的方式添加Edge Delivery Services，具体取决于您启动项目的方式。
 
 | 用例 | 描述 |
 | --- | --- |
@@ -58,18 +45,23 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 | 我要将Edge Delivery站点添加到Cloud Manager | 请参阅[添加Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。 |
 | 我要将Edge Delivery Services添加到新的或现有的沙盒程序。 | 请参阅[创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。<br>创建沙盒程序时，默认情况下会将Edge Delivery Services添加到该程序中；无需选择它。<br>在Edge Delivery正式发布之前存在沙盒程序，将自动继承Edge Delivery Services。 |
 
-## 为许可客户Adobe推荐的路径 {#recommended-path-eds}
+>[!NOTE]
+>
+>* 要添加或编辑程序，您必须是&#x200B;**业务负责人**&#x200B;角色的成员或拥有执行此操作所需的权限。
+>* 您的组织必须具有一个未使用的Edge Delivery Services许可证，然后才能将其应用于生产程序。
+>* 将Edge Delivery Services许可证应用于程序或从程序中删除后，更改将立即生效，而无需运行管道。
 
-作为许可客户，请通过Cloud Manager访问和使用Edge Delivery Services许可证，确保您能够从Adobe中获得最大利益。 此方法允许您使用[Adobe托管CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，并利用诸如自助CDN管理等关键优势，包括配置和添加DV证书。 此外，创建DV证书后，除非将其删除，否则Adobe会每三个月自动更新一次。 如果您没有具有Adobe的Edge Delivery Services许可证，但决定绕过这些权益，则只能使用客户管理的CDN。 此设置必须在`aem.live`平台上。
 
-如果您已获得AEM as a Cloud Service SitesEdge Delivery Services许可证的许可，请登录Cloud Manager以确保能够执行以下操作：
+## AdobeEdge Delivery Services的建议路径 {#recommended-path-eds}
 
-* 使用您选择的程序上的许可证。
+通过Cloud Manager访问和使用Edge Delivery Services许可证，从Adobe中获取最大利益。 这样，您就可以获得几项主要优势。
+
+* [在您选择的程序上使用您的许可证](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)和/或[更新其他程序。](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
 * 利用[API-1](https://developer.adobe.com/experience-cloud/experience-manager-apis/)的优势执行CRUD（创建、读取、更新、删除）操作。
-<!-- REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+Self-service+access+to+Edge+Delivery+Services+and+Adobe+Managed+CDN * Access to license dashboard and reporting -->
-* 访问SLA报告（*即将推出*） <!-- ADD LINK TO IT WHEN FINALLY ADDED -->
-* 获得Adobe支持。 确保您的Edge Delivery Services站点是通过Cloud Manager中的生产程序注册的，以获得Adobe的正确识别和支持。
+* [访问SLA报告](/help/implementing/cloud-manager/sla-reporting.md) （*即将推出*）
+* [获取已注册生产程序的Adobe支持](/help/edge/overview.md#support-ticket)。
 
+此外，通过使用Cloud Manager，您可以为您的Edge Delivery站点使用[Adobe托管CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，并利用自助服务CDN管理等关键优势，包括配置和添加DV证书。 此外，创建DV证书后，除非将其删除，否则Adobe会每三个月自动更新一次。 如果您没有具有Adobe的Edge Delivery Services许可证并决定绕过这些权益，则只能使用您自己的自管理CDN。 此设置必须在[`aem.live`平台上。](https://www.aem.live/docs/go-live-checklist#cdn-configuration)
 
 ## 关于Edge Delivery待办事项列表 {#ed-todo-list}
 
@@ -87,13 +79,3 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 | 6 | 配置Edge Delivery站点的CDN | 请参阅[添加CDN配置](#add-cdn)。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
-
-<!--
-Edge Delivery Services can be enabled when adding a new production program or editing an existing one.
-
-![Add production program with Edge Delivery Services](assets/add-production-program-with-edge.png)
-
-For more information about adding programs, see the following:
-
-* [Create Production programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-* [Create Sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) -->
