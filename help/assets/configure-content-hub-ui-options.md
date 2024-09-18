@@ -1,14 +1,20 @@
 ---
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1185'
 ht-degree: 5%
 
 ---
 
 # 配置 Content Hub 用户界面 {#configure-content-hub-user-interface}
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="配置 Content Hub 用户界面"
+>abstract="Experience Manager Assets允许管理员配置Content Hub用户界面上可用的选项。 根据管理员选择的配置选项，Content Hub用户能够查看Content Hub上的字段。 配置选项包括导入资产时的元数据、过滤器、资产属性、搜索资产时的元数据、个性化品牌以及任何自定义链接。"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上配置资源](assets/configure-assets.png)
@@ -43,7 +49,7 @@ Experience Manager Assets允许管理员配置Content Hub用户界面上可用�
 
 ## 在Content Hub上管理配置选项 {#manage-configuration-options}
 
-为用户管理以下配置选项：
+作为管理员，为您的用户管理以下配置选项：
 
 * [导入](#configure-import-options-content-hub)
 
@@ -184,5 +190,3 @@ Content Hub上的![配置UI自定义链接](assets/configuration-ui-custom-links
 自定义链接在Content Hub主页的“分析”选项卡旁边显示为新选项卡。
 
 ![Content Hub上的配置UI自定义链接选项卡](assets/configuration-ui-custom-link-tab.png)
-
-
