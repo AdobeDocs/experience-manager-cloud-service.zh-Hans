@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 使用资源选择器在您的应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin,User
-source-git-commit: 63174176c944195ed21e481264e0a50062fd34f3
+source-git-commit: 5c76b28726403a6b011a55add190e6e3a6d7a390
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 8%
@@ -59,7 +59,7 @@ Additionally, you can [customize](/help/assets/asset-selector-customization.md) 
 
 >[!MORELIKETHIS]
 >
->* [资产选择器自定义](/help/assets/asset-selector-customization.md)
+>* [资产选择器自定义项](/help/assets/asset-selector-customization.md)
 >* [将资产选择器与各种应用程序集成](/help/assets/integrate-asset-selector.md)
 >* [资产选择器属性](/help/assets/asset-selector-properties.md)
 
