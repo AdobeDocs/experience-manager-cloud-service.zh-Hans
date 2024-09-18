@@ -3,9 +3,9 @@ title: 在Cloud Manager中管理Edge Delivery站点
 description: 了解如何将CDN配置添加到Edge Delivery站点或删除Edge Delivery站点。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,29 @@ ht-degree: 0%
 
 请参阅[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
+## 重命名Edge Delivery站点(#rename-edge-delivery-site)
+
+在AdobeCloud Manager中，出于以下几种原因，您可能想要重命名Edge Delivery站点：
+
+* **清晰明了，井然有序**：为了更好地描述站点的目的或其相关环境（例如，生产、暂存）。
+* **避免混淆**：如果正在使用多个网站，则重命名有助于轻松区分它们，减少将配置或更新应用到错误网站的机会。
+* **标准化**：遵循一致的命名约定，该约定与贵组织的准则保持一致，以便更轻松地管理和审核。
+
+**要重命名Edge Delivery网站：**
+
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择已配置Edge Delivery Services的程序，并从中添加Edge Delivery站点。
+1. 执行以下任一操作：
+
+   * 从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**Edge Delivery**选项卡。 在Edge Delivery站点表中，单击要重命名其站点的行末尾的省略号。
+单击**重命名**。
+   * 在页面的左上角，单击汉堡图标以显示左侧导航菜单。 在&#x200B;**服务**&#x200B;标题下，单击&#x200B;**Edge Delivery站点**。
+在Edge Delivery站点表中，单击要重命名其站点的行末尾的省略号。 单击**重命名**。
+
+1. 在&#x200B;**编辑Edge Delivery站点**&#x200B;对话框的&#x200B;**站点名称**&#x200B;文本字段中，输入站点的新名称。
+
+1. 单击&#x200B;**编辑**。
+
 ## 删除Edge Delivery站点 {#delete-edge-delivery-site}
 
 如果删除Edge Delivery Services站点，则任何关联的CDN配置也会被删除。 此操作中断自定义域与站点之间的连接。 有关详细信息，请参阅CDN配置。<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2024.9.0+Release -->
@@ -27,6 +50,7 @@ ht-degree: 0%
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择已配置Edge Delivery Services的程序，并从中添加Edge Delivery站点。
 1. 执行以下任一操作：
+
    * 从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**Edge Delivery**选项卡。 在Edge Delivery站点表中，单击要删除其站点的行末尾的省略号。
 单击“**删除**”，然后再次单击“**删除**”以确认移除网站。
 

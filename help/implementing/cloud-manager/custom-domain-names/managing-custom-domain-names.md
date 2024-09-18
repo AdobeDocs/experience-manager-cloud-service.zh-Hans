@@ -5,35 +5,41 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 60%
+source-wordcount: '445'
+ht-degree: 34%
 
 ---
 
 
 # 管理自定义域名 {#managing-custom-domain-names}
 
-Cloud Manager 让您查看、更新、替换和删除自定义域名。
+Cloud Manager允许您编辑、更新、替换和删除自定义域名。
 
-## 查看和更新自定义域名 {#view-and-update}
+## 编辑自定义域名配置 {#view-and-update}
 
-使用&#x200B;**查看和更新**&#x200B;菜单查看任何自定义域名的详细信息。
+在AdobeCloud Manager中，您可能想要编辑自定义域名配置，原因如下：
 
-**要查看和更新自定义域名：**
+* **切换环境**：根据您是向最终用户(Publish)还是内部用户（创作）提供内容，应用正确的配置。
+* **安全更新**：升级到较新的SSL证书，以增强安全性或合规性。
+* **更改部署策略**：确保将正确的SSL证书应用于特定环境，以便正确加密和访问站点。
+
+**要编辑自定义域名配置：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
+1. 在页面的左上角，单击汉堡图标以显示左侧导航菜单。
+1. 在&#x200B;**服务**&#x200B;标题下，单击&#x200B;**CDN配置**。
+1. 在&#x200B;**CDN配置**&#x200B;页面上，单击要编辑其CDN的行末尾的省略号。
+1. 单击&#x200B;**编辑**。
+1. 在&#x200B;**编辑CDN配置**&#x200B;对话框中，执行以下操作：
+   * 在&#x200B;**层**&#x200B;下拉列表中，选择要使用的层(Author或Publish)。
+   * 在&#x200B;**SSL证书**&#x200B;下拉列表中，选择要使用的SSL证书。
+1. 单击&#x200B;**更新**。
 
-1. 标识要查看或更新的自定义域名的行。
-
-1. 单击行最右端的省略号按钮。
-
-1. 选择&#x200B;**查看和更新**&#x200B;选项。
 
 ## 更新自定义域名的SSL证书 {#update-cert}
 
@@ -42,6 +48,7 @@ Cloud Manager 让您查看、更新、替换和删除自定义域名。
 >[!NOTE]
 >
 >SSL证书必须有效，[已配置](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)，并包含要更新的自定义域名。
+
 
 ## 删除自定义域名 {#deleting}
 
@@ -60,6 +67,7 @@ Cloud Manager 让您查看、更新、替换和删除自定义域名。
 1. 选择&#x200B;**删除**。
 
 1. 确认您的提交。
+
 
 ### 从特定环境中删除自定义域名 {#delete-cdn-specific}
 

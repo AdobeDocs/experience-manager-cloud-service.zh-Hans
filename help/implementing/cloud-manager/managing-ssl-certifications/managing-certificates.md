@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 13%
+source-wordcount: '904'
+ht-degree: 11%
 
 ---
 
@@ -50,11 +50,30 @@ ht-degree: 13%
    * 在&#x200B;**私钥**&#x200B;字段中，仅当更改证书时才更新此字段。
    * 在&#x200B;**证书链**&#x200B;字段（或信任链）中，粘贴证书链。
 
-1. 单击&#x200B;**更新**&#x200B;以保存更改并自动应用它们。
+1. 单击&#x200B;**更新**&#x200B;以保存更改并自动应用它们。—>
 
 ## 替换过期的客户管理的SSL证书 {#replace-ssl-certificate}
 
 按照[更新过期的SSL证书](#update-ssl-certificate)中描述的相同步骤操作，以替换已过期的客户管理的SSL证书。
+
+## 重命名Adobe托管的SSL证书(#rename-an-ssl-certificate)
+
+以下是可能需要重命名SSL证书的几个原因：
+
+* **已改进组织**：重命名证书有助于阐明其用途，例如标识证书用于哪个环境（例如，暂存、生产）或域。
+* **避免混淆**：如果您正在管理多个证书，则一个清晰的描述性名称有助于防止错误，例如将错误的证书应用到错误的域。
+* **合规性和审核**：为了安全和审核，命名正确的证书可能更容易跟踪。
+
+**要重命名Adobe托管的SSL证书：**
+
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
+1. 在页面的左上角，单击汉堡图标以显示左侧导航菜单。
+1. 在&#x200B;**服务**&#x200B;标题下，单击&#x200B;**SSL证书**。
+1. 在&#x200B;**SSL证书**&#x200B;页面上，单击要重命名其证书的行末尾的省略号。
+1. 单击&#x200B;**重命名**。
+1. 在&#x200B;**重命名DV证书**&#x200B;对话框的&#x200B;**证书名称**&#x200B;文本字段中，输入证书的新名称。
+1. 单击&#x200B;**重命名**。
 
 ## 删除SSL证书 {#deleting-an-ssl-certificate}
 

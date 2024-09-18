@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '548'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 9%
 
    | | 用例 | 步骤 |
    | --- | --- | --- |
-   | 1 | **添加Adobe托管证书(DV)** | **添加Adobe托管证书(DV)：**<br> a。选择证书类型&#x200B;**托管(DV)** Adobe。<br>![添加DV证书](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b。在&#x200B;**选择域**&#x200B;下拉列表中，选择要与DV证书关联的一个或多个域。<br>没有域可供选择？ 如果是这样，这意味着您必须添加自定义域。 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 添加完自定义域名后，请返回到本主题并再次从步骤1开始。<br>天。继续执行步骤7。 |
+   | 1 | **添加Adobe托管证书(DV)** | **添加Adobe托管证书(DV)：**<br> a。选择证书类型&#x200B;**托管(DV)** Adobe。<br>![添加DV证书](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b。在&#x200B;**证书名称**&#x200B;字段中，输入要与证书关联的名称。<br>c。在&#x200B;**选择域**&#x200B;下拉列表中，选择要与DV证书关联的一个或多个域。<br>没有域可供选择？ 如果是这样，这意味着您必须添加自定义域。 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 添加完自定义域名后，请返回到本主题并再次从步骤1开始。<br>天。继续执行步骤7。 |
    | 2 | **添加客户管理的证书(OV/EV)** | **要添加客户管理的证书(OV/EV)：**<br> a。选择证书类型&#x200B;**客户托管(OV/EV)**。<br>b。在&#x200B;**证书名称**&#x200B;字段中，输入证书的名称。 此字段仅供参考，可以是任何有助于您轻松引用证书的名称。<br>c。在&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;字段中，将所需值粘贴到各自的字段中。<br>![添加SSL证书对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>显示值中检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，了解有关常见错误疑难解答的更多信息。<br>天。继续执行步骤7。 |
 
 <!--
