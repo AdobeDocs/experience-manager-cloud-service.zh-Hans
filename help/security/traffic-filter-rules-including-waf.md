@@ -4,10 +4,10 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
-workflow-type: ht
-source-wordcount: '3928'
-ht-degree: 100%
+source-git-commit: cf9e1b3c290d142095912c794de58547913faece
+workflow-type: tm+mt
+source-wordcount: '4012'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe 邀请您通过发送电子邮件至 **aemcs-waf-adopter@adobe.com** 提�
 
 在当前的数字环境中，恶意流量是一种始终存在的威胁。Adobe 意识到此类风险的危害性，因此提供若干方法以保护客户应用程序并在发生攻击时减轻其影响。
 
-Adobe Managed CDN 在边缘的网络层（第 3 层和第 4 层）承受 DoS 攻击，其中包括洪泛和反射/放大攻击。
+在边缘，AdobeManaged CDN吸收网络层（第3层和第4层）的DoS攻击，包括泛洪和反射/放大攻击。
 
 Adobe 默认采取措施，以防因规模超预期的突发流量超出特定阈值而导致性能下降。如果 DoS 攻击影响站点可用性，则提醒 Adobe 的运营团队采取措施以减轻影响。
 
@@ -474,6 +474,14 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+## CVE规则 {#cve-rules}
+
+如果WAF获得许可，Adobe会自动应用阻止规则来抵御许多已知CVE（常见漏洞和暴露），并且新的CVE可能会在发现后不久添加。 客户不应也不需要自己配置CVE规则。
+
+如果流量请求与CVE匹配，它将显示在相应的CDN日志条目中。
+
+如果对某个CVE存在疑问，或者您的组织希望禁用某个特定CVE规则，请联系Adobe支持部门。
 
 ## 流量筛选规则警报 {#traffic-filter-rules-alerts}
 
