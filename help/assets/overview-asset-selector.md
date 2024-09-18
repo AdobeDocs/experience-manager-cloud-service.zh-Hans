@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选�
 description: 使用资产选择器可在应用程序中搜索、查找和检索资产的元数据和演绎版。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1314'
 ht-degree: 34%
 
 ---
@@ -196,15 +196,15 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <em>了解如何将Asset Selector与Dynamic Media Open API集成。</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="资产选择器属性图形"><br/>
         <a href="asset-selector-customization.md">资源选择器属性</a>
         <p>
         <em>了解自定义Asset Selector的各种组件（如筛选器、资产选择、过期资产等）的基础知识。</em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="资产选择器示例图形"><br/>
         <a href="asset-selector-customization.md">资源选择器示例</a>
@@ -225,6 +225,15 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <p>
         <em>了解如何从本地或第三方文件系统将文件或文件夹上传到Asset Selector。</em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="“资产选择器”收藏集图形"><br/>
+        <a href="asset-selector-collections.md">资产选择器收藏集</a>
+        <p>
+        <em>了解如何在Asset Selector中使用Experience Manager存储库。</em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
