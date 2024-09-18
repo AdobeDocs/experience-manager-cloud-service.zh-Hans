@@ -1,34 +1,29 @@
 ---
 title: 将Edge Delivery站点添加到Cloud Manager
-description: 了解如何将Edge Delivery站点添加到您的生产程序或沙盒程序及其带来的好处。
+description: 了解如何将Edge Delivery站点添加到生产程序或沙盒程序。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 68f05c49ebc3d46aa44b3998e6142ab8547e5455
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
 
 
-# 将Edge Delivery站点添加到Cloud Manager {#eds-add-site}
+# 将Edge Delivery站点添加到Cloud Manager {#adding}
 
-了解如何将Edge Delivery站点添加到您的生产程序或沙盒程序及其带来的好处。
+您可以将Edge Delivery站点添加到生产程序或沙盒程序。
 
-## 简介 {#introduction}
+需要将Edge Delivery站点添加到Cloud Manager才能[注册您的Edge Delivery项目的支持票证](/help/edge/overview.md##support-ticket)。
 
-作为与AEM as a Cloud Service进行的Edge Delivery Services项目的一部分，建议您将Edge Delivery网站添加到Cloud Manager。 将您的Edge Delivery网站添加到Cloud Manager可为您带来以下好处。
+另请参阅[Cloud Manager中的Edge Delivery Services简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。
 
-* [访问Adobe管理的CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [访问SLA报表](/help/implementing/cloud-manager/sla-reporting.md)
-* [访问许可使用报告](/help/implementing/cloud-manager/license-dashboard.md)
-
-请注意，必须将您的Edge Delivery站点添加到Cloud Manager，才能[注册您的Edge Delivery项目的支持票证。](/help/edge/overview.md##support-ticket)
-
-## 向Cloud Manager添加和Edge Delivery站点 {#adding}
+**要将Edge Delivery站点添加到Cloud Manager，请执行以下操作：**
 
 1. 在[`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
 1. 执行下列操作之一：
+
    * 从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**Edge Delivery**&#x200B;选项卡。 然后，在页面的右下角附近，单击&#x200B;**添加Edge Delivery站点**。
 
      ![从Edge Delivery选项卡添加Edge Delivery站点](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
@@ -59,11 +54,3 @@ ht-degree: 2%
 1. 单击&#x200B;**验证**。
 
 验证存储库后，其在Edge交付站点表格中的状态将更改为绿色圆圈，并在其内部显示白色复选标记。
-
-将Edge Delivery Services添加到生产程序后，您的Edge Delivery Services许可证即会应用于该程序。
-
-每个Edge Delivery站点都有一个&#x200B;**Edge Delivery待办事项列表**，可指导您创建Edge Delivery站点。
-
-![Edge Delivery待办事项应用程序](/help/implementing/cloud-manager/assets/edge-delivery-to-do-ist.png)
-
-有关这些步骤的详细信息，请参阅文档[Cloud Manager中的Edge Delivery Services简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)。
