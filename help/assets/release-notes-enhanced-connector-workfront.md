@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 98%
 
 以下部分概述了 [!DNL Workfront for Experience Manager enhanced connector] 的常规发行说明。
 
-[!DNL Workfront for Experience Manager enhanced connector]的最新版本1.9.20的发布日期为2024年9月6日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.20 版的发布日期是 2024 年 9 月 6 日。
 
 ## 版本亮点 {#release-highlights}
 
 [!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下错误修复：
 
-* 上传和创建现有资源的新版本时，MIME类型丢失。
+* 上传和创建现有资产的新版本时 MIME 类型丢失。
 
 >[!NOTE]
 >
->AEM 6.4 已结束延期支持。请参阅我们的[技术支持期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。请在[此处](https://experienceleague.adobe.com/docs/?lang=zh-Hans)查找支持的版本。
+>AEM 6.4 已结束延期支持。请参阅我们的[技术支持期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。请在[此处](https://experienceleague.adobe.com/docs/?lang=zh-hans)查找支持的版本。
 
 >[!IMPORTANT]
 >
@@ -262,4 +262,4 @@ ht-degree: 98%
 
 >[!MORELIKETHIS]
 >
->* [将 [!DNL Workfront for Experience Manager enhanced connector] 与 Experience Manager 6.5 集成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=zh-Hans)
+>* [将 [!DNL Workfront for Experience Manager enhanced connector] 与 Experience Manager 6.5 集成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=zh-hans)
