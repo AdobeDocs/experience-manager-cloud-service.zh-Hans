@@ -4,7 +4,7 @@ description: 了解如何使用Edge Delivery Services交付Cloud Manager项目�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
+source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 6%
@@ -80,10 +80,11 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 | 5 | 添加 SSL 证书 | 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 配置Edge Delivery站点的CDN | 请参阅[添加CDN配置](#add-cdn)。 |
 
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 记录支持票证 {#eds-support-ticket}
 
 {{support-ticket}}
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+
 
