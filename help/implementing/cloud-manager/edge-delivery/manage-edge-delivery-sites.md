@@ -3,7 +3,7 @@ title: 在Cloud Manager中管理Edge Delivery站点
 description: 了解如何将CDN配置添加到Edge Delivery站点或删除Edge Delivery站点。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -62,6 +62,8 @@ ht-degree: 0%
 
      ![从Edge Delivery站点添加Edge Delivery站点按钮](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-### 记录支持票证 {#eds-support-ticket}
+## 记录支持票证 {#eds-support-ticket}
 
 {{support-ticket}}
+
+
