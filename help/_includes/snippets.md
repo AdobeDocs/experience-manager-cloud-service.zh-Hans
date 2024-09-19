@@ -1,8 +1,8 @@
 ---
-source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 93%
+source-wordcount: '1139'
+ht-degree: 78%
 
 ---
 # 代码片段 {#snippets}
@@ -95,7 +95,7 @@ ht-degree: 93%
     <td>在“Then”中验证/重置字段/面板/ Form 规则 </td>
     <td>验证和重置功能仅支持规则编辑器中的 Form 对象。 
    </td>
-    <td>验证和重置功能支持规则编辑器中的 Form /面板/字段对象。 
+    <td>验证和重置函数支持规则编辑器中的表单/面板/字段对象。 
    </td>
    </tr>
    <tr>
@@ -134,7 +134,7 @@ ht-degree: 93%
 * [Forms Portal 组件简介](/help/forms/configure-forms-portal.md)
 * [在 Sites 页面上列出您的 Form ](/help/forms/list-forms-on-sites-page.md)
 * [将 Form 保存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
-* [将 Form 链接添加到 Sites 页面](/help/forms/add-form-link-to-aem-sites-page.md)
+* [将表单链接添加到站点页面](/help/forms/add-form-link-to-aem-sites-page.md)
 
 
 ## Cloud Manager IP 允许列表和前端管道 {#allowlist-frontend-pipeline}
@@ -143,7 +143,7 @@ ht-degree: 93%
 >
 >前端管道要求预先将以下 IP 允许列表添加到 Cloud Manager。
 >如果需要，[通过复制下面的地址块添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每个地址以逗号分隔。将该块粘贴到&#x200B;**添加 IP 允许列表**&#x200B;对话框的 **IP 地址 / CIDR** 字段中。将光标放在地址列表中第一个逗号后面，然后按 **进入**。保存列表。
->为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
+>为避免前端管道运行中断，请确保在启用该管道&#x200B;*之前，将此IP允许列表添加到Cloud Manager*。
 >
 >**Cloud Manager IP 允许列表**
 >52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
@@ -160,17 +160,17 @@ ht-degree: 93%
 
 >[!TIP]
 >
->您是 Dynamic Media 的新手吗？如需快速、全面地了解动态媒体，请参阅 [使用动态媒体](/help/assets/dynamic-media/dynamic-media.md)。
+>您是 Dynamic Media 的新手吗？有关Dynamic Media的快速、高级概述，请参阅[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 
 ## 另请参阅Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* 您是 Dynamic Media 的新手吗？如需快速、全面地了解动态媒体，请参阅 [使用动态媒体](/help/assets/dynamic-media/dynamic-media.md)。
+>* 您是 Dynamic Media 的新手吗？有关Dynamic Media的快速、高级概述，请参阅[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 >
 >* 遵循[Dynamic Media最佳实践](/help/assets/dynamic-media/dm-best-practices.md)以获取最大价值。
 >
->* 尝试使用[快照工具](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)的Dynamic Media图像功能。
+>* 使用[快照工具](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)试用Dynamic Media图像功能。
 >
 >* 确保流畅播放带有[自适应视频](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)的视频。
 >
@@ -180,4 +180,19 @@ ht-degree: 93%
 >
 >* 提供[交互式3D支持的体验](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
 >* 其他[Dynamic Media资源银行](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
+
+## 记录支持工单 {#support-ticket}
+
+如果产品问题需要进行额外的调查和疑难解答，并且必须满足响应SLT，则可以提交支持工单。
+
+要记录支持票证，您必须首先在Cloud Manager中注册Edge Delivery网站。 建议所有AEM as a Cloud Service用户在Cloud Manager中注册您的网站，[会带来许多好处](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。 如果您尚未注册网站，请参阅[Cloud Manager文档](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)以了解详细信息。
+
+您的网站在Cloud Manager中注册后，请使用Admin Console按照以下流程提交支持票证：
+
+1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建票证。
+1. 在该工单的标题中添加 **Edge Delivery**。
+1. 在描述中，除了问题描述之外，还要提供以下详细信息：
+
+   * 当前网站的 URL。例如：`www.mydomain.com`。
+   * 原始网站的 URL (`.hlx` URL)。
 
