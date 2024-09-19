@@ -1,20 +1,20 @@
 ---
-title: 翻译和本地化AEM Forms的Edge Delivery Services
-description: 翻译和本地化AEM Forms的Edge Delivery Services
+title: 适用于 AEM Forms 的翻译和本地化 Edge Delivery Services
+description: 适用于 AEM Forms 的翻译和本地化 Edge Delivery Services
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# 翻译和本地化AEM Forms的Edge Delivery Services
+# 适用于 AEM Forms 的翻译和本地化 Edge Delivery Services
 
 在 Edge Delivery Services 中，表格翻译涉及将表格内容从一种语言转换为另一种语言，重点关注准确性、清晰度和一致性。翻译或本地化的形式能够覆盖不同地理位置的更广泛受众，从而提升用户体验并促进不同语言偏好之间的更好沟通。
 
@@ -84,7 +84,7 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 **答**：要以特定的本地化语言输入文本，请调整设备上的键盘设置。请参阅以下链接以获取有关如何操作的说明：
 
 * [设置你的 Mac 以接受其他语言的输入](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
-* [设置你的 Windows 以接受其他语言的输入](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=选%20择%20开始%20%3E%20设置%20%3E%20想要的%20时间，%2C%20然后%20选择%20选项)
+* [设置你的 Windows 以接受其他语言的输入](https://support.microsoft.com/zh-hans/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=选%20择%20开始%20%3E%20设置%20%3E%20想要的%20时间，%2C%20然后%20选择%20选项)
 * [设置你的 Android 或 iPhone/iPad 以接受其他语言的输入](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid)
 
 

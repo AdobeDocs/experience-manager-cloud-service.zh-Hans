@@ -1,13 +1,13 @@
 ---
 title: 使用规则向表单添加动态行为
-description: AEM Forms的Edge Delivery Services旨在提供最佳性能，使您能够未来有效地收集数据和进行用户参与。 使用规则向您的表单添加动态行为
+description: 适用于 AEM Forms 的 Edge Delivery Services 专为实现最佳性能而构建，让您能够畅想简化数据收集和用户参与的未来。使用规则向您的表单添加动态行为
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2218'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -297,7 +297,7 @@ MIN(ageLimits[&quot;US&quot;], ageLimits[&quot;UK&quot;], ageLimits[&quot;France
 
 ## 创建和部署自定义函数
 
-开箱即用 (OOTB) 自适应表单块可以实施许多[常见电子表格功能](#spreadsheet-functions-for-rules)。但是，为了对表单进行更精细的控制，您可以使用自适应表单块中的 Microsoft® Excel 或 Google 表中提供的任何 OOTB 函数。自适应表单块不包含 Microsoft® Excel 或 Google 表中可用的所有 OOTB 功能的实施。如果您需要任何此类功能，您可以开发具有类似语法的自定义函数来实现 Microsoft® Excel 或 Google Sheets 提供的功能。例如，您可以通过实施 [Microsoft® Excel&#39;s Year() 函数](https://support.microsoft.com/zh-Hans/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#)来根据出生日期计算年龄。
+开箱即用 (OOTB) 自适应表单块可以实施许多[常见电子表格功能](#spreadsheet-functions-for-rules)。但是，为了对表单进行更精细的控制，您可以使用自适应表单块中的 Microsoft® Excel 或 Google 表中提供的任何 OOTB 函数。自适应表单块不包含 Microsoft® Excel 或 Google 表中可用的所有 OOTB 功能的实施。如果您需要任何此类功能，您可以开发具有类似语法的自定义函数来实现 Microsoft® Excel 或 Google Sheets 提供的功能。例如，您可以通过实施 [Microsoft® Excel&#39;s Year() 函数](https://support.microsoft.com/zh-hans/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#)来根据出生日期计算年龄。
 
 
 ### 创建自定义功能

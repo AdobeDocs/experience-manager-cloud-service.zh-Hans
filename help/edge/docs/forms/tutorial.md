@@ -1,19 +1,19 @@
 ---
-title: AEM FormsEdge Delivery Services快速入门 — 开发人员教程
+title: 适用于 AEM Forms 的 Edge Delivery Services 快速入门：开发人员教程
 description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。在十到二十分钟内，您将创建自己的表格。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1850'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 快速入门 - 开发人员教程
 
-在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。AEM Forms (EDS)Edge Delivery Services允许您使用熟悉的工具(如Google文档和Microsoft Office)创建表单。
+在当今的数字时代，创建用户友好的表单对于任何组织都至关重要。适用于 AEM Forms 的 Edge Delivery Services (EDS) 允许您使用 Google Docs 和 Microsoft Office 等熟悉的工具创建表单。
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
 

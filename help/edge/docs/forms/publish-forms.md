@@ -1,13 +1,13 @@
 ---
-title: Publish和AEM FormsEdge Delivery Services
-description: Publish和AEM FormsEdge Delivery Services
+title: 发布适用于 AEM Forms 的 Edge Delivery Services
+description: 发布适用于 AEM Forms 的 Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 

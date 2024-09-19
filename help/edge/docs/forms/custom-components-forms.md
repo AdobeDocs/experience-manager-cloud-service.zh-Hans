@@ -7,15 +7,15 @@ hidefromtoc: true
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
 role: Admin, Architect, Developer
 source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '665'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 创建自定义组件
 
-AEM Forms的Edge Delivery Services允许您自定义[本机HTML表单组件](/help/edge/docs/forms/form-components.md)并创建用户友好的交互式表单。 它使您能够使用预定义标记来修改表单组件，如 [表单字段的样式](/help/edge/docs/forms/style-theme-forms.md) 中所述，使用自定义 CSS（层叠样式表）和自定义代码来装饰组件，从而增强自适应表单块中表单字段的外观。
+适用于 AEM Forms 的 Edge Delivery Services 允许您自定义 [原生 HTML 表单组件](/help/edge/docs/forms/form-components.md) 并创建用户友好且交互式的表单。它使您能够使用预定义标记来修改表单组件，如 [表单字段的样式](/help/edge/docs/forms/style-theme-forms.md) 中所述，使用自定义 CSS（层叠样式表）和自定义代码来装饰组件，从而增强自适应表单块中表单字段的外观。
 
 ![自定义组件](/help/edge/assets/custom-component-image.png)
 
