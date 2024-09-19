@@ -7,7 +7,7 @@ exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -35,15 +35,15 @@ AEM as a Cloud Service 中的 Cloud Manager 版本 2024.9.0 的发布日期是 2
 
   >[!NOTE]
   >
-  >[Content Hub](/help/assets/product-overview.md)客户计划在逐步推出过程中分阶段接收此功能。
+  >[Content Hub](/help/assets/product-overview.md) 客户计划分阶段逐步推出此功能。
 
 * **Cloud Manager 中的 Edge Delivery Services 支持：**
 
-  如果您在AEM Sites中拥有Edge Delivery Services许可证，[您现在可以直接通过Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)使用Edge Delivery Services载入您的网站。 此功能可实现引导式、自助式的 Go Live 体验。它还统一了所有 AEM 属性中的域名管理、SSL 证书和 CDN 映射等基本工作流程，确保实现一致性和高效率。<!-- CMGR-49859 -->
+  如果您在 AEM Sites 中具有 Edge Delivery Services 许可证，[您现在可以直接通过 Cloud Manager 在您的网站中加入 Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。此功能可实现引导式、自助式的 Go Live 体验。它还统一了所有 AEM 属性中的域名管理、SSL 证书和 CDN 映射等基本工作流程，确保实现一致性和高效率。<!-- CMGR-49859 -->
 
   >[!NOTE]
   >
-  >[Content Hub](/help/assets/product-overview.md)客户计划在逐步推出过程中分阶段接收此功能。
+  >[Content Hub](/help/assets/product-overview.md) 客户计划分阶段逐步推出此功能。
 
 * 使用 GitHub 存储库的客户现在可以创建和使用 Web Tier Config 管道。<!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
