@@ -2,7 +2,7 @@
 source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 78%
+ht-degree: 83%
 
 ---
 # 代码片段 {#snippets}
@@ -56,7 +56,7 @@ ht-degree: 78%
 
 ## 另请参阅 {#see-more-forms-eds}
 
-* [AEM FormsEdge Delivery Services入门](/help/edge/docs/forms/tutorial.md)
+* [适用于 AEM Forms 的 Edge Delivery Services 快速入门](/help/edge/docs/forms/tutorial.md)
 * [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
 * [设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据](/help/edge/docs/forms/submit-forms.md)
 * [发布您的表单并开始收集数据](/help/edge/docs/forms/publish-forms.md)
@@ -162,24 +162,24 @@ ht-degree: 78%
 >
 >您是 Dynamic Media 的新手吗？有关Dynamic Media的快速、高级概述，请参阅[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 
-## 另请参阅Dynamic Media {#see-also-dm}
+## 另请参阅 Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
 >* 您是 Dynamic Media 的新手吗？有关Dynamic Media的快速、高级概述，请参阅[使用Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 >
->* 遵循[Dynamic Media最佳实践](/help/assets/dynamic-media/dm-best-practices.md)以获取最大价值。
+>* 遵循 [Dynamic Media 最佳实践](/help/assets/dynamic-media/dm-best-practices.md)，以获取最大价值。
 >
->* 使用[快照工具](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)试用Dynamic Media图像功能。
+>* 使用[快照工具](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)试用Dynamic Media图像功能。
 >
->* 确保流畅播放带有[自适应视频](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)的视频。
+>* 使用[自适应视频](https://experienceleague.adobe.com/zh-hans/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)确保视频播放流畅。
 >
->* 使用智能裁切](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)自动裁切[图像。
+>* 使用[智能裁剪](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)自动裁剪图像。
 >
->* 使用智能裁剪](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)自动裁剪[视频。
+>* 使用[智能裁剪](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)自动裁剪视频。
 >
->* 提供[交互式3D支持的体验](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
->* 其他[Dynamic Media资源银行](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
+>* 提供[交互式3D支持的体验](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
+>* 其他 [Dynamic Media 资源库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
 
 ## 记录支持工单 {#support-ticket}
 

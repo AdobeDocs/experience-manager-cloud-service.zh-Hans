@@ -9,7 +9,7 @@ user-guide-title: AEM as a Cloud Service
 source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
 workflow-type: tm+mt
 source-wordcount: '5651'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -637,8 +637,8 @@ ht-degree: 97%
       + [使用 Content Hub 下载资源](/help/assets/download-assets-content-hub.md)
       + [管理 Content Hub 里的收藏集](/help/assets/collections-content-hub.md)
       + [使用 Content Hub 中的 Adobe Express 编辑图像](/help/assets/edit-images-content-hub.md)
-      + [Content Hub中的资源分析](/help/assets/insights-content-hub.md)
-      + [Content Hub常见问题解答](/help/assets/frequently-asked-questions-content-hub.md)
+      + [Content Hub 的资源洞察](/help/assets/insights-content-hub.md)
+      + [Content Hub 常见问题解答](/help/assets/frequently-asked-questions-content-hub.md)
    + 最佳实践{#best-practices}
       + [搜索最佳实践](/help/assets/search-best-practices.md)
       + [元数据管理和最佳实践](/help/assets/metadata-best-practices.md)
@@ -1074,8 +1074,8 @@ ht-degree: 97%
          + [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [沙盒项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
          + [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-         + [编辑项目群](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-         + [休眠环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+         + [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + 创建 AEM 应用程序项目 {#create-application-project}
          + [项目创建向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1083,12 +1083,12 @@ ht-degree: 97%
       + [管理环境](/help/implementing/cloud-manager/manage-environments.md)
       + 管理代码 {#managing-code}
          + [Maven 项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [在Cloud Manager中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [添加Adobe存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [在 Cloud Manager 中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [添加 Adobe 存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模块支持](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-         + [将Git用于Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [使用多个存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [企业开发团队设置](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
          + [GitHub 检查配置](/help/implementing/cloud-manager/managing-code/github-check-config.md)
@@ -1100,7 +1100,7 @@ ht-degree: 97%
          + [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
-      + [部署代码](/help/implementing/cloud-manager/deploy-code.md)
+      + [部署您的代码](/help/implementing/cloud-manager/deploy-code.md)
       + 了解测试结果 {#test-results}
          + [概述](/help/implementing/cloud-manager/overview-test-results.md)
          + [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)
@@ -1125,23 +1125,23 @@ ht-degree: 97%
          + [域设置简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [检查DNS记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+         + [检查 DNS 记录状态](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + SSL 证书{#manage-ssl-certificates}
-         + [SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-         + [添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [SSL证书错误疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+         + [SSL 证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+         + [添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [解决 SSL 证书错误](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN 配置{#cdn-configurations}
-         + [添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [管理CDN配置](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [添加 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [管理 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允许列表{#ip-allow-lists}
          + [IP 允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [应用和取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [许可证功能板](/help/implementing/cloud-manager/license-dashboard.md)
-      + [了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)
+      + [了解 Cloud Service 内容请求](/help/implementing/cloud-manager/content-requests.md)
       + [CDN 性能仪表板](/help/implementing/cloud-manager/cdn-performance.md)
       + [Cloud Manager 常见问题解答](/help/implementing/cloud-manager/faqs.md)
    + 针对 AEM as a Cloud Service 进行开发 {#developing}
