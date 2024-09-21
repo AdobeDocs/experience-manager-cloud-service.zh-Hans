@@ -3,10 +3,10 @@ title: 将Edge Delivery站点添加到Cloud Manager
 description: 了解如何将Edge Delivery站点添加到生产程序或沙盒程序。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '500'
+ht-degree: 3%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 2%
 
      ![从Edge Delivery选项卡添加Edge Delivery站点](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * 在页面的左上角，单击![显示或隐藏侧面导航](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示侧面导航菜单。
-在**服务**&#x200B;标题下，单击![Edge Delivery网站的网页](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)**Edge Delivery网站**。
+   * 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示侧面导航菜单。
+在**服务**&#x200B;标题下，单击![网页图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)**Edge Delivery站点**。
 在页面的右上角附近，单击**添加站点**。
 
      ![从Edge Delivery站点添加Edge Delivery站点按钮](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
@@ -48,14 +48,14 @@ ht-degree: 2%
 
    | 步骤编号 | 描述 |
    | - | - |
-   | **1** | 将路径和名称为`well-known/adobe/cloudmanager-challenge.txt`的文件添加到&#x200B;**存储库URL**&#x200B;字段中列出的Git存储库的`main`分支。 请&#x200B;*不*&#x200B;在位置路径的开头添加句点。<br>如有必要，请单击![复制](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以将路径复制到剪贴板。 |
-   | **2** | 将步骤2中文本字段中显示的代码添加到您在步骤1中刚创建的文件。<br>如有必要，请单击![复制](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以将代码复制到剪贴板。 |
+   | **1** | 将路径和名称为`well-known/adobe/cloudmanager-challenge.txt`的文件添加到&#x200B;**存储库URL**&#x200B;字段中列出的Git存储库的`main`分支。 请&#x200B;*不*&#x200B;在位置路径的开头添加句点。<br>如有必要，请单击![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以将路径复制到剪贴板。 |
+   | **2** | 将步骤2中文本字段中显示的代码添加到您在步骤1中刚创建的文件。<br>如有必要，请单击![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以将代码复制到剪贴板。 |
    | **3** | 在Git存储库中为刚刚创建的更改创建拉取请求，然后将其合并到`main`以提交代码。 |
 
 1. 单击&#x200B;**验证**。
 
 验证存储库后，它在Edge Delivery sites表中的状态将变为一个绿色圆圈，其内带有白色复选标记。
 
-在同一表中，您可以单击![有关Edge Delivery网站的信息。](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)查看有关您站点的详细信息，如已验证的存储库URL以及预览和生产网站的URL。
+在同一表中，您可以单击![有关Edge Delivery网站的信息。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)查看有关您站点的详细信息，如已验证的存储库URL以及预览和生产网站的URL。
 
 
