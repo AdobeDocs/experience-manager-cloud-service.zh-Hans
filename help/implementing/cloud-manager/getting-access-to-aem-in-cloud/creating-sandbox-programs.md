@@ -5,9 +5,9 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '455'
 ht-degree: 15%
 
 ---
@@ -28,22 +28,22 @@ ht-degree: 15%
 
 1. 在&#x200B;*让我们创建程序*&#x200B;向导的&#x200B;**程序名称**&#x200B;文本字段中，键入您希望程序的名称。
 
-1. 在&#x200B;**项目目标**&#x200B;下，选择&#x200B;**`Set up a sandbox`**。
+1. 在&#x200B;**项目目标**&#x200B;下，选择![魔棒图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **设置沙盒**。
 
    ![项目类型创建](assets/create-sandbox.png)
 
 1. （可选）在向导对话框的右下角，执行以下任一操作：
 
-   * 将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标上。
-   * 单击&#x200B;**添加程序图像**，然后从文件浏览器中选择图像。
-   * 单击垃圾桶图标可删除您添加的图像。
+   * 将图像文件拖放到![图像图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **添加程序图像**&#x200B;目标上。
+   * 单击![图像图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **添加程序图像**，然后从文件浏览器中选择图像。
+   * 单击![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)可删除您添加的图像。
 
 1. 单击&#x200B;**继续**。
 
 1. 在&#x200B;**解决方案和加载项**&#x200B;列表框中，选择要包含在程序中的一个或多个解决方案。
 
    * 单击解决方案名称左侧的>形标记以显示您要包含在所选解决方案中的任何可用可选加载项。
-   * 创建沙盒程序时，默认情况下始终选中&#x200B;**Sites**、**Assets**&#x200B;和&#x200B;**Edge Deliver Servicesy**&#x200B;解决方案。 不能取消选择它们。
+   * 创建沙盒程序时，默认情况下始终选中&#x200B;**Sites**、**Assets**&#x200B;和&#x200B;**Edge Delivery Services**&#x200B;解决方案。 不能取消选择它们。
 
    ![为沙盒选择解决方案和附加组件](assets/sandbox-solutions-add-ons.png)
 
@@ -55,7 +55,7 @@ ht-degree: 15%
 
 新沙盒程序创建完成后，您可以查看沙盒设置的详细信息，并通过查看程序概述页面访问环境。
 
-1. 从Cloud Manager登录页面，单击已创建沙盒程序上的省略号按钮。
+1. 从Cloud Manager登录页面，在沙盒程序中单击您创建的沙盒程序上的![更多小列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
    ![访问程序概述](assets/program-overview-sandbox.png)
 

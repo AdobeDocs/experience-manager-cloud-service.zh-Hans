@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '447'
 ht-degree: 34%
 
 ---
@@ -33,10 +33,10 @@ Cloud Manager允许您编辑、更新、替换和删除自定义域名。
 
 1. 在页面的左上角，单击汉堡图标以显示左侧导航菜单。
 1. 在&#x200B;**服务**&#x200B;标题下，单击&#x200B;**CDN配置**。
-1. 在&#x200B;**CDN配置**&#x200B;页面上，单击要编辑其CDN的行末尾的省略号。
+1. 在&#x200B;**CDN配置**&#x200B;页面上，单击要编辑其CDN的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 1. 单击&#x200B;**编辑**。
 1. 在&#x200B;**编辑CDN配置**&#x200B;对话框中，执行以下操作：
-   * 在&#x200B;**层**&#x200B;下拉列表中，选择要使用的层(Author或Publish)。
+   * 在&#x200B;**层**&#x200B;下拉列表中，选择要使用的层(Publish或预览)。
    * 在&#x200B;**SSL证书**&#x200B;下拉列表中，选择要使用的SSL证书。
 1. 单击&#x200B;**更新**。
 

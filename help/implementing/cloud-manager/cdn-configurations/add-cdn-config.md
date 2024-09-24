@@ -1,19 +1,19 @@
 ---
-title: 添加CDN配置
+title: 添加 CDN 配置
 description: 了解如何为Edge Delivery站点或Cloud Manager环境添加CDN配置。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 6%
 
 ---
 
 
-# 添加 CDN 配置 {#add-cdn}
+# 添加CDN（内容分发网络）配置 {#add-cdn}
 
 要将域与项目中由Adobe管理的CDN上的SSL证书链接，您必须添加CDN（内容分发网络）配置。
 

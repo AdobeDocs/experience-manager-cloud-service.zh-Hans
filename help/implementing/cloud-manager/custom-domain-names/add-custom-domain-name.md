@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 21%
+source-wordcount: '1489'
+ht-degree: 20%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 21%
 
 * 在添加自定义域名之前，您必须为要添加的域添加域SSL证书，如文档[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)中所述。
 * 您必须具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色才能在Cloud Manager中添加自定义域名。
-* 使用Fastly或其他CDN。
+* 正在使用Fastly或其他CDN（内容分发网络）。
 
 >[!IMPORTANT]
 >
@@ -31,22 +31,22 @@ ht-degree: 21%
 
 ## 在何处添加自定义域名 {#where-to-add-cdn}
 
-您可以从 Cloud Manager 中的两个位置添加自定义域名：
+您可以在Cloud Manager中的以下两个位置添加自定义域名：
 
-* [从“域设置”页面](#adding-cdn-settings)
-* [从“环境”页面](#adding-cdn-environments)
+* [域设置页面](#adding-cdn-settings)
+* [“环境”页面](#adding-cdn-environments)
 
 添加自定义域名时，将使用最具体且有效的证书来提供该域。 如果多个证书具有相同的域，则选择最近更新的证书。 Adobe建议您管理证书，这样就不会有重叠域。
 
-本文档中描述的任一方法的步骤均基于Fastly。 如果您使用其他CDN，请使用您选择使用的CDN配置您的域。
+本文档中描述的任一方法的步骤均基于Fastly。 如果您使用了其他CDN（内容分发网络），请使用已选择使用的CDN配置您的域。
 
-## 从域设置页面添加自定义域名 {#adding-cdn-settings}
+## 添加客户自定义域名 {#adding-cdn-settings}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 在左侧导航面板中，选择&#x200B;**域设置**&#x200B;选项卡
+1. 在侧菜单的&#x200B;**服务**&#x200B;下，选择&#x200B;**域设置**。
 
    ![域设置窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -59,7 +59,7 @@ ht-degree: 21%
 
 1. 在&#x200B;**验证域**&#x200B;对话框中，在&#x200B;**您计划用于此域的证书类型是什么？**&#x200B;下拉列表，选择以下选项之一：
 
-   | 证书类型 | 描述 |
+   | 证书类型选项 | 描述 |
    | --- | --- |
    | Adobe 管理的证书 | 选择是否要使用DV（域验证）证书。 此选项适用于大多数情况，可提供基本的域验证。 Adobe会自动管理和更新证书。 |
    | 客户管理的证书 | 选择是否要使用EV/OV证书。 此选项通过EV（扩展验证）或OV（组织验证）提供增强的安全性。 如果需要对证书进行更严格的验证、更高的信任级别或自定义控制，请使用。 |
@@ -207,6 +207,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
 
 ## 从环境页面添加自定义域名 {#adding-cdn-environments}
+
+<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
 
 从&#x200B;**环境**&#x200B;页面添加自定义域名的步骤与[从“域设置”页面](#adding-cdn-settings)添加自定义域名的步骤相同，但入口点不同。 按照以下步骤从&#x200B;**环境**&#x200B;页面添加自定义域名。
 

@@ -1,18 +1,18 @@
 ---
-title: 管理CDN配置
+title: 管理 CDN 配置
 description: 了解如何使用Cloud Manager编辑和更新，或删除Edge Delivery站点或Cloud Manager环境的CDN配置。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 6%
+source-wordcount: '468'
+ht-degree: 7%
 
 ---
 
 
-# 管理CDN配置 {#manage-cdn-configurations}
+# 管理CDN（内容分发网络）配置 {#manage-cdn-configurations}
 
 了解如何使用Cloud Manager编辑和更新，或删除Edge Delivery站点或Cloud Manager环境的CDN配置。
 
@@ -31,7 +31,7 @@ ht-degree: 6%
 **要编辑CDN配置：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
-1. 在左侧导航面板中的&#x200B;**服务**&#x200B;下，单击&#x200B;**CDN配置**。
+1. 在侧面板的&#x200B;**服务**&#x200B;下，单击&#x200B;**CDN配置**。
 1. 在&#x200B;**CDN配置**&#x200B;表中，单击要编辑其CDN配置的行末尾的省略号。
 
    ![编辑CDN配置](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
