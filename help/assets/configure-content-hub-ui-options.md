@@ -5,7 +5,7 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 5%
+ht-degree: 13%
 
 ---
 
@@ -14,12 +14,12 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="配置 Content Hub 用户界面"
->abstract="Experience Manager Assets允许管理员配置Content Hub用户界面上可用的选项。 根据管理员选择的配置选项，Content Hub用户能够查看Content Hub上的字段。 配置选项包括导入资产时的元数据、过滤器、资产属性、搜索资产时的元数据、个性化品牌以及任何自定义链接。"
+>abstract="管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。配置选项包括导入资产时的元数据、过滤器、资产属性、搜索资产时的元数据、个性化品牌以及任何自定义链接。"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上配置资源](assets/configure-assets.png)
 
-Experience Manager Assets允许管理员配置Content Hub用户界面上可用的选项。 根据管理员选择的配置选项，Content Hub用户能够查看Content Hub上的字段。 配置选项包括：
+管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。配置选项包括：
 
 * 用户在搜索资产时可用的筛选器。
 

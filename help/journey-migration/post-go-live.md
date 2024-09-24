@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 16%
+ht-degree: 22%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="AEM 故障排除"
->abstract="审查持续开发和管理日志的最佳实践。 了解Developer Console和CRXDE Lite等工具，帮助对AEM问题进行故障诊断。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="访问和管理日志"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 开发工具"
+>abstract="回顾持续开发和管理日志的最佳实践。了解 Developer Console 和 CRXDE Lite 等工具来帮助解决 AEM 问题。"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="访问和管理日志"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 开发工具"
 
 此历程是最后一部分，您将了解如何监测问题并在迁移完成后提高性能。 确保清理临时文件，审查持续开发的最佳实践并管理日志。
 

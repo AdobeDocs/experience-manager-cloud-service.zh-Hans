@@ -1,5 +1,5 @@
 ---
-title: SSL证书简介
+title: SSL 证书简介
 description: 了解 Cloud Manager 如何为您提供自助服务工具来安装 SSL 证书。
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
@@ -8,12 +8,12 @@ role: Admin, Architect, Developer
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '765'
-ht-degree: 34%
+ht-degree: 36%
 
 ---
 
 
-# SSL证书简介{#introduction}
+# SSL 证书简介{#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -37,7 +37,7 @@ Cloud Manager提供自助服务工具来安装和管理SSL（安全套接字层�
 >不允许客户上传DV（域验证）证书。
 
 
-## SSL证书简介 {#certificates}
+## SSL 证书简介 {#certificates}
 
 企业和组织使用SSL证书来保护其网站，并允许客户信任这些证书。 若要使用 SSL 协议，Web 服务器需要使用 SSL 证书。
 
