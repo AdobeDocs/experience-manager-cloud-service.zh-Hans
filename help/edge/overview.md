@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1281'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 72%
 
 ## 敏捷响应业务需求 {#agile-reaction}
 
-作为公认的长期行业领袖，Adobe知道能够为客户快速创建和发布有意义的新内容是多么重要。 市场已经明确了扩大内容创作规模所面临的常见挑战，包括：
+作为长期公认的行业领导者，Adobe 知道能够为客户快速创建和发布新的、有意义的内容是多么重要。市场已经明确了扩大内容创作规模所面临的常见挑战，包括：
 
 1. **对内容的需求持续增长。**
    * 需要培养新的内容作者来满足这一需求。
@@ -36,7 +36,7 @@ ht-degree: 72%
 1. **提高内容投资回报率的压力越来越大。**
    * 作者本身需要有优化自己创作的内容的能力。
 
-事实证明，这些趋势在整个行业都是一致的。但是，个别要求不可避免地因项目而异。 任何Edge Delivery Services项目的目标是专注于查找适用于您的用户的解决方案。
+事实证明，这些趋势在整个行业都是一致的。但是，每个项目的个体要求必然会有所不同。任何 Edge Delivery Services 项目的目标都是专注于找到适合您的用户的解决方案。
 
 1. **注重价值而不是功能。** - 确定最优化的工作流程来为您的作者服务，而不是迷失在 AEM 的扩展功能集中。
 1. **充分利用 AEM 的灵活性。** - AEM 功能不需要在真空中使用。根据用例使用您需要的功能。
@@ -46,7 +46,7 @@ ht-degree: 72%
 
 ## 为内容创作者提供灵活的创作工具 {#overview}
 
-Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。您可以使用[通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)以及[基于文档的创作](https://www.aem.live/docs/authoring)来使用[AEM内容管理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/author-publish)和WYSIWYG创作。
+Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。您既可以使用 [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) 进行 [AEM 内容管理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/sites/authoring/author-publish)和 WYSIWYG 创作，也可以使用[基于文档的创作](https://www.aem.live/docs/authoring)。
 
 下图说明如何在 Microsoft Word 中编辑内容（基于文档的创作）并将其发布到 Edge Delivery Services。它还显示了使用 Universal Editor 进行 WYSIWYG 的编辑。
 
@@ -67,9 +67,9 @@ Edge Delivery Services 使用 GitHub，因此您可直接从您的 GitHub 存储
 
 基于文档的创作文档中的进一步阅读内容：
 
-* 有关如何开始使用Edge Delivery的详细信息，请参阅[生成部分](https://www.aem.live/docs/#build)。
+* 有关如何开始使用 Edge Delivery 的详细信息，请参阅[“生成”部分](https://www.aem.live/docs/#build)。
 * 要了解如何使用 Edge Delivery 创作和发布内容，请参阅[“发布”部分](https://www.aem.live/docs/authoring)。
-* 要了解如何正确启动您的网站项目，请参阅[启动部分](https://www.aem.live/docs/#launch)。
+* 要了解如何正确地启动您的网站项目，请参阅[“启动”部分](https://www.aem.live/docs/#launch)。
 
 ### 所见即所得的创作 {#wysiwyg-authoring}
 
@@ -84,8 +84,8 @@ Edge Delivery Services 使用 GitHub，因此您可直接从您的 GitHub 存储
 
 请参阅 WYSIWYG 创作文档中的进一步阅读内容：
 
-* 有关通用编辑器和WYSIWYG创作的概述，请参阅[为Edge Delivery Services创作WYSIWYG内容](/help/edge/wysiwyg-authoring/authoring.md)。
-* 有关开发人员概述，请参阅[适用于WYSIWYGEdge Delivery Services创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
+* 有关 Universal Editor 和 WYSIWYG 创作的概述，请参阅文档 [Edge Delivery Services 的 WYSIWYG 内容创作](/help/edge/wysiwyg-authoring/authoring.md)。
+* 有关开发人员概述，请参阅文档[使用 Edge Delivery Services 进行 WYSIWYG 创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解更多信息。
 
 ### 决定你的创作方法 {#authoring-method}
 
@@ -94,21 +94,21 @@ AEM 的灵活性可确保满足您的创作需求。Adobe 可以帮助您确定�
 * 始终让内容作者参与决策。
 * 可以实现多种创作方法。
 * 事后您可以随时改变您的创作方法。
-* 您无需在实施之前做出决定，而是将其作为实施的一部分。
+* 您不需要在实施之前做出决定，而应该将其作为实施的一部分。
 
-有关详细信息，请参阅[选择创作方法](authoring-methods.md)。
+请参阅 [选择创作方法](authoring-methods.md)，解更多信息。
 
 ## Edge Delivery Services 和其他 Adobe Experience Cloud 产品 {#edge-other-products}
 
-Edge Delivery Services是Adobe Experience Manager的一部分。 因此，Edge Delivery Services和AEM Sites可以共存于同一域中，这是大型网站的常见用例。 此外，您的AEM Sites页面可以无缝地使用Edge Delivery Services中的内容，反之亦然。
+Edge Delivery Services 是 Adobe Experience Manager 的一部分。因此，Edge Delivery Services 和 AEM Sites 可以在同一个域中共存，这是大型网站的常见用例。此外，您的 AEM Sites 页面可以无缝使用来自 Edge Delivery Services 的内容，反之亦然。
 
-请参阅[适用于具有Edge Delivery Services的WYSIWYG的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解如何使用AEM和Edge Delivery Services开始您自己的项目以供创作。
+请参阅[使用 Edge Delivery Services 进行 WYSIWYG 的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解如何开始您自己使用 AEM 和 Edge Delivery Services 创作的项目。
 
-您还可以将Edge Delivery Services与[Adobe Target](https://www.aem.live/developer/target-integration)、[实时监控(RUM)](https://www.aem.live/developer/rum)结合使用，以诊断网站的使用情况和性能，以及[Launch](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)。
+您还可以将 Edge Delivery Services 与 [Adobe Target、](https://www.aem.live/developer/target-integration)[实际使用监控 (RUM)](https://www.aem.live/developer/rum) 结合使用，以诊断网站的使用情况和性能，并且[启动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)。
 
 ## Edge Delivery Services 快速入门 {#getting-started}
 
-通过执行[快速入门 — 开发人员教程](https://www.aem.live/developer/tutorial)，可以轻松开始使用Edge Delivery Services。
+按照[快速入门：开发人员教程](https://www.aem.live/developer/tutorial)，可以轻松地开始使用 Edge Delivery Services。
 
 ## 从 Adobe 获取帮助 {#getting-help}
 
@@ -122,12 +122,12 @@ Adobe 提供三个渠道帮助您使用 Edge Delivery Services：
 
 Adobe 致力于通过为 Edge Delivery Services、WYSIWYG 以及基于文档的创作营造优秀的社区参与氛围并提供大力支持而为您助力。
 
-* 参与[Experience League社区](https://adobe.ly/3Q6kTKl)以提出问题、共享反馈、发起讨论、向Adobe专家和AEM顾问/冠军寻求帮助以及实时与志同道合的个人保持联系。
-* 加入[Discord频道](https://discord.gg/aem-live)，这是一个用于实时交互和快速想法交流的更轻松的平台。
+* 请在[Experience League 社区](https://adobe.ly/3Q6kTKl)参与提问、分享反馈、发起讨论、向 Adobe 专家和 AEM 顾问/支持者寻求帮助并实时与志同道合的人交流。
+* 加入[Discord 频道](https://discord.gg/aem-live)，通过这个更休闲的平台可实时互动和快速交流想法。
 
 ### 如何访问您的产品协作渠道 {#collaboration-channel}
 
-考虑到与用户直接通信渠道的价值，所有AEM项目在启动时都建立了一个用于速度、关键更新和体验质量缩放报表的Slack渠道。 您会从 Adobe 收到一条加入您组织特有的 Slack 频道的邀请。
+考虑到与用户建立的直接沟通渠道的作用，所有 AEM 项目都将在启动时建立一个 Slack 频道以快速获得关键更新和针对体验质量的大规模报告。您会从 Adobe 收到一条加入您组织特有的 Slack 频道的邀请。
 
 有关更多信息，请参阅[使用 Slack 机器人](https://www.aem.live/docs/slack)文档。
 
