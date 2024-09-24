@@ -5,9 +5,9 @@ exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 99%
       * 根据 CDN 供应商的文档配置 SSL 和 DNS。
    * 如果您不使用其他 CDN，请按照以下文档管理 SSL 和 DNS：
       * 管理 SSL 证书
-         * [SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
+         * [SSL 证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * 管理自定义域名（DNS）
          * 确保 DNS 切换不会引入意外问题。在上线之前创建一个测试子域来连接您的生产实例并进行一轮 UAT 测试。这样，如果您的域是 example.com，您可以创建一个子域 test.example.com 并将其应用于生产。在对域进行 UAT 测试期间，请查找正确的链接重定向、缓存和 Dispatcher 配置等内容。

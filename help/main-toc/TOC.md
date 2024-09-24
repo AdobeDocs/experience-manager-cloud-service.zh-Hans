@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 8349f6d4d4f04d8609d5a5241b973201b54b2cd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5651'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -470,7 +470,7 @@ ht-degree: 99%
          + [资产选择器示例](/help/assets/asset-selector-examples.md)
          + [资产选择器自定义](/help/assets/asset-selector-customization.md)
          + [资产选择器上传](/help/assets/asset-selector-upload.md)
-         + [资产选择器收藏集](/help/assets/asset-selector-collections.md)
+         + [资产选择器集合](/help/assets/asset-selector-collections.md)
       + [微前端目标选择器](/help/assets/destination-selector.md)
       + [共享资源](/help/assets/share-assets.md)
       + [再处理资源](/help/assets/reprocessing.md)
@@ -1118,9 +1118,9 @@ ht-degree: 99%
       + [通知](/help/implementing/cloud-manager/notifications.md)
       + [高级网络](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=zh-hans)
       + Edge Delivery Sites{#edge-delivery-sites}
-         + [Cloud Manager中的Edge Delivery Services简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
-         + [将Edge Delivery站点添加到Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [在Cloud Manager中管理Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
+         + [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+         + [将 Edge Delivery Site 添加到 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 域设置 {#custom-domain-names}
          + [域设置简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -1251,7 +1251,7 @@ ht-degree: 99%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [使用 ContextHub 配置分段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=zh-hans)
    + 配置和扩展 AEM as a Cloud Service {#configuring-and-extending}
-      + 使用App Builder {#app-builder}扩展AEM
+      + 使用 App Builder 扩展 AEM{#app-builder}
          + [使用 Adobe Developer App Builder 扩展 AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder 简介](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
@@ -1281,8 +1281,8 @@ ht-degree: 99%
       + [扩展 MSM](/help/implementing/developing/extending/msm.md)
       + 国际化{#internationalization}
          + [国际化组件](/help/implementing/developing/extending/i18n/components.md)
-         + [国际化UI字符串](/help/implementing/developing/extending/i18n/dev.md)
-         + [提取字符串以进行翻译](/help/implementing/developing/extending/i18n/extract.md)
+         + [国际化 UI 字符串](/help/implementing/developing/extending/i18n/dev.md)
+         + [提取用于翻译的字符串](/help/implementing/developing/extending/i18n/extract.md)
    + 部署到 AEM as a Cloud Service {#deploying}
       + [部署到 AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
