@@ -3,13 +3,13 @@ title: 管理分类数据
 description: 了解如何管理分类数据，以便在Edge Delivery Services网站的AEM中使用标记。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 8%
+source-wordcount: '845'
+ht-degree: 7%
 
 ---
-
 
 # 管理分类数据 {#managing-taxonomy-data}
 
@@ -108,6 +108,10 @@ ht-degree: 8%
    * 根据您的流程提交`main`或创建拉取请求。
 
 每个分类页面只需执行一次此过程。 完成后，您可以发布分类。
+
+>[!TIP]
+>
+>有关路径映射的详细信息，请参阅文档[Edge Delivery Services的路径映射。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## 发布分类 {#publishing}
 

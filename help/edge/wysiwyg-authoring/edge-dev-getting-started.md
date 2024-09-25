@@ -4,10 +4,10 @@ description: 本指南将指导您启动并运行一个新的Adobe Experience Ma
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 86%
+source-wordcount: '1223'
+ht-degree: 85%
 
 ---
 
@@ -113,6 +113,10 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 1. 按需添加一条提交消息，然后单击&#x200B;**提交更改**，将其直接提交到 `main` 分支。
 
    ![提交更改](assets/edge-dev-getting-started/commit-paths-changes.png)
+
+>[!TIP]
+>
+>有关路径映射的详细信息，请参阅文档[Edge Delivery Services的路径映射。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ### 创建并编辑新 AEM 站点 {#create-aem-site}
 

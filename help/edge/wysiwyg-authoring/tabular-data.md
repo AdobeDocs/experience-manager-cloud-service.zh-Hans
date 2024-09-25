@@ -4,10 +4,10 @@ description: 了解如何使用电子表格来管理各种值的表格数据，�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 97%
+source-wordcount: '986'
+ht-degree: 95%
 
 ---
 
@@ -121,6 +121,10 @@ ht-degree: 97%
    ![横幅确认发布](assets/tabular-data/tabular-data-publish-banner.png)
 
 重定向电子表格现已发布并可供公众访问。
+
+>[!TIP]
+>
+>有关路径映射的详细信息，请参阅文档[Edge Delivery Services的路径映射。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## 其他电子表格类型 {#other}
 
