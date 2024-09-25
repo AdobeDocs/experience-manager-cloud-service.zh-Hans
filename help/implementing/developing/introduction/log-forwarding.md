@@ -4,10 +4,10 @@ description: 了解如何在AEM as a Cloud Service中将日志转发给Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
+source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 1%
+source-wordcount: '1362'
+ht-degree: 0%
 
 ---
 
@@ -44,14 +44,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 ## 设置 {#setup}
 
-1. 在Git的项目顶级文件夹中创建以下文件夹和文件结构：
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. `logForwarding.yaml`应包含元数据和类似于以下格式的配置（我们使用Splunk作为示例）。
+1. 创建名为`logForwarding.yaml`的文件。 它应包含元数据，如[配置管道项目](/help/operations/config-pipeline.md#common-syntax)中所述（**kind**&#x200B;应设置为`LogForwarding`，版本应设置为“1”），其配置类似于以下内容（我们使用Splunk作为示例）。
 
    ```
    kind: "LogForwarding"
@@ -67,52 +60,51 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
          index: "AEMaaCS"
    ```
 
-   **kind**&#x200B;参数应设置为`LogForwarding`，版本应设置为架构版本，即1。
+1. 将文件放置在名为&#x200B;*config*&#x200B;或类似的顶级文件夹下，如[使用配置管道](/help/operations/config-pipeline.md#folder-structure)中所述。
 
-   配置中的令牌（如`${{SPLUNK_TOKEN}}`）表示不应存储在Git中的密钥。 请声明它们为&#x200B;**密钥**&#x200B;类型的Cloud Manager [环境变量](/help/implementing/cloud-manager/environment-variables.md)。 确保选择&#x200B;**全部**&#x200B;作为“已应用服务”字段的下拉列表值，以便可以将日志转发到作者、发布和预览层。
+1. 对于RDE以外的环境类型（当前不支持），在Cloud Manager中创建目标部署配置管道，如[此部分](/help/operations/config-pipeline.md#creating-and-managing)所引用；请注意，全栈管道和Web层管道不部署配置文件。
 
-   通过在&#x200B;**default**&#x200B;块后添加额外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;块，可以设置CDN日志和AEM日志(包括Apache/Dispatcher)之间的不同值，其中的属性可以覆盖&#x200B;**default**&#x200B;块中定义的属性；只需要启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
+1. 部署配置。
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          cdn:
-            enabled: true
-            token: "${{SPLUNK_TOKEN_CDN}}"
-            index: "AEMaaCS_CDN"   
-   ```
+配置中的令牌（如`${{SPLUNK_TOKEN}}`）表示不应存储在Git中的密钥。 请将其声明为Cloud Manager [机密环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 确保选择&#x200B;**全部**&#x200B;作为“已应用服务”字段的下拉列表值，以便可以将日志转发到作者、发布和预览层。
 
-   另一种方法是禁用CDN日志或AEM日志(包括Apache/Dispatcher)的转发。 例如，要仅转发CDN日志，可以配置以下内容：
+通过在&#x200B;**default**&#x200B;块后添加额外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;块，可以设置CDN日志和AEM日志(包括Apache/Dispatcher)之间的不同值，其中的属性可以覆盖&#x200B;**default**&#x200B;块中定义的属性；只需要启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          aem:
-            enabled: false
-   ```
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       cdn:
+         enabled: true
+         token: "${{SPLUNK_TOKEN_CDN}}"
+         index: "AEMaaCS_CDN"   
+```
 
-1. 对于RDE以外的环境类型（当前不支持），在Cloud Manager中创建目标部署配置管道；请注意，全栈管道和Web层管道不部署配置文件。
+另一种方法是禁用CDN日志或AEM日志(包括Apache/Dispatcher)的转发。 例如，要仅转发CDN日志，可以配置以下内容：
 
-   * [请参阅配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)。
-   * [请参阅配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       aem:
+         enabled: false
+```
 
 ## 记录目标配置 {#logging-destinations}
 

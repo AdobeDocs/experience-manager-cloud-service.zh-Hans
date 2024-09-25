@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 35%
@@ -115,7 +115,7 @@ Cloud Manager 提供两种类型的管道：
 
 使用配置管道，您可以快速部署用于日志转发、清除相关的维护任务和各种CDN配置的设置，包括流量过滤器规则(如WAF （Web应用程序防火墙）规则)。 此外，您还可以管理请求和响应转换、源选择器、客户端重定向、错误页面、客户管理的CDN密钥、清除API密钥和基本身份验证。
 
-请参阅[使用配置管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)获取受支持功能的完整列表，并了解如何管理存储库中的配置以使它们正确部署。
+请参阅[使用配置管道](/help/operations/config-pipeline.md)获取受支持功能的完整列表，并了解如何管理存储库中的配置以使它们正确部署。
 
 ### 配置配置管道 {#configure-config-deployment}
 
