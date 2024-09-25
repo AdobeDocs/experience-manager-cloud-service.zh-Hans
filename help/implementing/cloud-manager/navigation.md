@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: b5ae995623c41803f8704fa9699d3514c37e4550
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 52%
+source-wordcount: '1677'
+ht-degree: 42%
 
 ---
 
@@ -57,7 +57,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![Experience Cloud 标头](assets/experience-cloud-header.png)
 
-1. 单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)（显示/隐藏侧菜单）可让您访问各种选项卡，这些选项卡可带您访问各个程序的特定部分。 或者，您可以根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
+1. 单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)（显示或隐藏侧菜单）可让您访问各种选项卡，这些选项卡可引导您访问各个程序的特定部分。 或者，您可以根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
 1. 单击“AdobeCloud Manager”按钮可让您返回Cloud Manager的“我的程序”控制台，无论您在Cloud Manager中的哪个位置。
 1. 单击&#x200B;**反馈**&#x200B;向Adobe提供有关Cloud Manager的反馈。
 1. 单击组织选择器可显示您当前已登录的组织（在本例中为Foundation Internal）。 如果您的 Adobe ID 与多个组织关联，请单击以切换到另一个组织。
@@ -90,7 +90,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 **我的程序**&#x200B;控制台的主要内容是&#x200B;**我的程序**&#x200B;部分中的程序列表。
 
-**我的程序**&#x200B;部分列出了代表每个程序的卡片。 点击或单击信息卡即可访问相关程序的&#x200B;**程序概述**&#x200B;页面，以了解有关该程序的详细信息。
+**我的程序**&#x200B;部分列出了代表每个程序的卡片。 单击一张信息卡即可访问该程序的&#x200B;**程序概述**&#x200B;页面，了解有关该程序的详细信息。
 
 >[!NOTE]
 >
@@ -101,13 +101,13 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![排序选项](/help/implementing/cloud-manager/assets/my-programs-sorting.png)
 
-* 排序依据
-   * 创建日期（默认）
-   * 项目名称
-   * 状态
-* 升序（默认）/降序
-* 网格视图（默认）
-* 列表视图
+* 排序方式：
+   * **创建日期**（默认）
+   * **项目名称**
+   * **状态**
+* ![按顺序排序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)升序（默认）/![按顺序排序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)降序
+* ![经典网格视图图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg)网格视图（默认）
+* ![查看列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)列表视图
 
 #### 程序信息卡 {#program-cards}
 
@@ -115,48 +115,42 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![程序信息卡](assets/program-card.png)
 
-* 程序图像（如果进行了配置）
-* 项目名称
+* 与项目关联的图像（如果已配置）。 上图为“WKND”。
+* 分配给项目的名称。 上图将“SecurBank Sample”显示为程序名称。
 * 服务类型：
-   * 用于AEM as a Cloud Service程序的&#x200B;**Experience Manager云**
-   * [AMS程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)的&#x200B;**Experience Manager**
+   * **Experience Manager云** — 用于AEM as a Cloud Service程序
+   * **Experience Manager** — 用于[AMS (AdobeManaged Services)程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙盒
    * 生产
-* 状态
-* 已配置的解决方案
-* 创建日期
+* 状态。 在上图中，状态为“就绪”并带有复选标记。
+* 已配置解决方案。 在上图中，Sites和Assets是配置的解决方案。
+* 创建日期。
 
-根据创建项目时选择的选项，生产项目可能会带有显示附加功能的标记。
+生产程序可能会带有徽章，显示您在添加该程序时选择的附加功能，例如：
 
-* [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+* ![HIPAA徽章](assets/hipaa.png) [HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-  ![HIPAA徽章](assets/hipaa.png)
+* ![WAF-DDOS徽章](assets/waf-ddos-protection.png) [WAF-DDOS保护](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
 
-* [WAF-DDOS保护](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
-
-  ![WAF-DDOS徽章](assets/waf-ddos-protection.png)
-
-* [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
-
-  ![99.99% SLA徽章](assets/9999-sla.png)
+* [99.99% SLA（服务水平协议）](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
 通过信息图标还可以快速访问有关该程序的附加信息（在列表视图中很有用）。
 
 ![信息](assets/information-list-view.png)
 
-通过省略号图标可以访问可在该程序上执行的其他操作。
+通过![更多图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_22_N.svg)图标，您可以对程序执行其他操作。
 
 ![程序的省略号按钮](assets/program-ellipsis.png)
 
-* 导航至程序的特定[环境](/help/implementing/cloud-manager/manage-environments.md) 
-* 打开[程序概述](#program-overview)
-* [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* [删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* 导航到项目的特定![数据图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [环境](/help/implementing/cloud-manager/manage-environments.md)
+* 打开![项目概述图标](/help/implementing/cloud-manager/assets/program-overview.svg) [项目概述](#program-overview)
+* ![编辑图标](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
+* ![删除图标](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[删除沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
->有关程序以及创建和管理程序的详细信息，请参阅以下文档。
+>有关程序以及添加和管理程序的详细信息，请参阅以下内容：
 >
 >* [程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 >* [创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
@@ -167,9 +161,9 @@ Cloud manage UI 主要由两个图形界面组成：
 
 利用快速链接部分，可访问相关的常用资源。
 
-## 项目概述窗口 {#program-overview}
+## 项目概述页面 {#program-overview}
 
-在&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台中选择程序后，将转到&#x200B;**程序概述**&#x200B;窗口。
+在&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台中选择程序后，您将转到&#x200B;**程序概述**&#x200B;页面。
 
 ![程序概述](assets/program-overview.png)
 
@@ -189,11 +183,11 @@ Cloud manage UI 主要由两个图形界面组成：
 
 #### Cloud Manager 标头 {#cloud-manager-header-2}
 
-Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程序概述中的可导航选项卡。
+页面的左上角是Cloud Manager标题Adobe。 您可以单击![侧菜单图标](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)来显示或隐藏选项卡的侧菜单到软件的其他区域。
 
 ![Cloud Manager 汉堡菜单](assets/cloud-manager-hamburger.png)
 
-点击或单击汉堡菜单图标即可隐藏标签。
+单击AdobeCloud Manager以返回到主页。
 
 #### 程序工具栏 {#program-toolbar-2}
 
@@ -229,11 +223,11 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 **资源**
 
-* 学习路径：有关 Cloud Manager 的其他学习资源
+* ![书籍图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Book_18_N.svg)学习路径 — 有关Cloud Manager的其他学习资源
 
 默认情况下，当您打开一个程序时，您会进入&#x200B;**概述**&#x200B;选项卡。当前选项卡会突出显示。选择另一个选项卡来显示其详细信息。
 
-使用 [Cloud Manager 标头](#cloud-manager-header-2)中的汉堡菜单来隐藏选项卡。
+在[Cloud Manager标题](#cloud-manager-header-2)的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示或隐藏选项卡的侧菜单。
 
 ### 呼叫段 {#cta}
 
