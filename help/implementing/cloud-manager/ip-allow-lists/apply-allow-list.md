@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 18%
+source-wordcount: '303'
+ht-degree: 11%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 18%
 1. 从&#x200B;**概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;屏幕。
 1. 在&#x200B;**环境**&#x200B;屏幕上，导航到特定环境详细信息页面。
 1. 导航到&#x200B;**IP允许列表**&#x200B;表。
-1. 使用表顶部的输入字段，以便选择IP允许列表以及要应用它的创作或发布服务。
+1. 使用表顶部的输入字段，以便选择IP允许列表以及要应用它的作者、Publish或预览服务。
 IP允许列表必须已存在于Cloud Manager中才能应用它。 请参阅[添加IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。
-1. 单击&#x200B;**应用**，并确认您的提交。
+1. 单击![添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **应用**&#x200B;并确认您的提交。
 
 ## 取消应用IP允许列表 {#un-applying}
 
@@ -44,8 +44,10 @@ IP允许列表必须已存在于Cloud Manager中才能应用它。 请参阅[添
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager。
 1. 选择相应的组织。
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
-1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
-1. 导航到&#x200B;**环境**&#x200B;屏幕上的特定环境详细信息页面。1.导航到&#x200B;**IP允许列表**&#x200B;表。
+1. 从&#x200B;**概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;页面。
+1. 导航到特定环境详细信息页面。
+1. 在“常规”选项卡中，滚动到&#x200B;**IP允许列表**&#x200B;表。
 1. 标识要取消应用的IP允许列表的行。
-1. 在已识别行的右侧，单击省略号按钮，然后选择&#x200B;**取消应用**。
-1. 确认您的提交。
+1. 在已识别行的右侧，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 单击&#x200B;**取消应用**。
+1. 在&#x200B;**取消应用IP允许列表**&#x200B;对话框中，单击&#x200B;**取消应用**。

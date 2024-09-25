@@ -1,21 +1,21 @@
 ---
 title: 添加自定义域名
-description: 了解如何使用 Cloud Manager 添加自定义域名。
+description: 了解如何使用Cloud Manager中的域设置添加自定义域名。
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 20%
+source-wordcount: '1509'
+ht-degree: 18%
 
 ---
 
 
 # 添加客户自定义域名 {#adding-cdn}
 
-了解如何使用 Cloud Manager 添加自定义域名。
+了解如何使用Cloud Manager中的&#x200B;**域设置**&#x200B;添加自定义域名。
 
 ## 要求 {#requirements}
 
@@ -46,7 +46,7 @@ ht-degree: 20%
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 在侧菜单的&#x200B;**服务**&#x200B;下，选择&#x200B;**域设置**。
+1. 在侧菜单的&#x200B;**服务**&#x200B;下，选择![设置图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **域设置**。
 
    ![域设置窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -61,8 +61,8 @@ ht-degree: 20%
 
    | 证书类型选项 | 描述 |
    | --- | --- |
-   | Adobe 管理的证书 | 选择是否要使用DV（域验证）证书。 此选项适用于大多数情况，可提供基本的域验证。 Adobe会自动管理和更新证书。 |
-   | 客户管理的证书 | 选择是否要使用EV/OV证书。 此选项通过EV（扩展验证）或OV（组织验证）提供增强的安全性。 如果需要对证书进行更严格的验证、更高的信任级别或自定义控制，请使用。 |
+   | Adobe 管理的证书 | 如果要使用DV（域验证）证书，请选择此证书类型。 此选项适用于大多数情况，可提供基本的域验证。 Adobe会自动管理和更新证书。 |
+   | 客户管理的证书 | 如果要使用EV/OV证书，请选择此证书类型。 此选项通过EV（扩展验证）或OV（组织验证）提供增强的安全性。 如果需要对证书进行更严格的验证、更高的信任级别或自定义控制，请使用。 |
 
 1. 在&#x200B;**验证域**&#x200B;对话框中，根据您选择的证书类型，执行以下操作之一：
 
@@ -77,7 +77,7 @@ ht-degree: 20%
 
    >[!NOTE]
    >
-   >如果您使用自托管SSL证书和自托管CDN提供程序，则可以跳过此步骤，在准备就绪时直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+   >如果您使用客户管理的SSL证书和客户管理的CDN提供程序，则可以跳过添加SSL证书，并在准备就绪后直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
 
 ### Adobe托管证书步骤 {#adobe-managed-cert-steps}
@@ -222,8 +222,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
    1. 输入自定义域名。
    1. 从下拉列表中选择与此名称关联的 SSL 证书。
-   1. 单击&#x200B;**+添加**。
+   1. 单击![添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **添加**。
 
    ![添加自定义域名](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. 将打开&#x200B;**添加域名**&#x200B;对话框，显示&#x200B;**域名**&#x200B;选项卡。 像从“域设置”页面](#adding-cdn-settings)添加自定义域名[一样继续。 —>
+1. 将打开&#x200B;**添加域名**&#x200B;对话框，显示&#x200B;**域名**&#x200B;选项卡。 像从“域设置”页面](#adding-cdn-settings)添加自定义域名[一样继续。

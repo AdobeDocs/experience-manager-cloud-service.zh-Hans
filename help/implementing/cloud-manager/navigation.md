@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 68%
+source-wordcount: '1574'
+ht-degree: 52%
 
 ---
 
@@ -57,14 +57,14 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![Experience Cloud 标头](assets/experience-cloud-header.png)
 
-1. 汉堡菜单提供了对选项卡的访问权限，这些选项卡可以引导您访问各个项目的特定部分。 或者，您可以根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
-1. 无论您在浏览 Cloud Manager 的哪个部分，Cloud Manager 按钮都会带您返回到 Cloud Manager 中的“我的程序”控制台。
-1. 点击或单击“反馈”按钮，向 Adobe 提供有关 Cloud Manager 的反馈。
-1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。 如果您的 Adobe ID 与多个组织关联，请点击或单击以切换到另一个组织。
-1. 点击或单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
-1. 可使用帮助图标快速访问学习和支持资源。
-1. 通知图标具有当前分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)的数量。
-1. 选择代表用户的图标来访问用户设置。如果您尚未配置用户图片，系统会随机分配一个图标。
+1. 单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)（显示/隐藏侧菜单）可让您访问各种选项卡，这些选项卡可带您访问各个程序的特定部分。 或者，您可以根据上下文在[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
+1. 单击“AdobeCloud Manager”按钮可让您返回Cloud Manager的“我的程序”控制台，无论您在Cloud Manager中的哪个位置。
+1. 单击&#x200B;**反馈**&#x200B;向Adobe提供有关Cloud Manager的反馈。
+1. 单击组织选择器可显示您当前已登录的组织（在本例中为Foundation Internal）。 如果您的 Adobe ID 与多个组织关联，请单击以切换到另一个组织。
+1. 单击![应用图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) （解决方案切换器）可快速跳转到其他Experience Cloud解决方案。
+1. 单击![帮助图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg)可让您快速访问学习和支持资源。
+1. 单击![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[通知](/help/implementing/cloud-manager/notifications.md)）查看通知和公告等。
+1. 单击表示用户对您的用户设置的访问权限的图标。 如果您尚未配置用户图片，系统会随机分配一个图标。
 
 #### 程序工具栏 {#program-toolbar}
 
@@ -72,9 +72,9 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![程序工具栏](assets/program-toolbar.png)
 
-1. 程序选择器会打开一个下拉菜单，您可以在其中快速选择其他程序或采取适合上下文的操作，例如创建一个新程序
-1. 通过“快速入门”链接，您可以访问[入门文档历程](/help/journey-onboarding/overview.md)，以便快速开始使用 Cloud Manager。
-1. 操作按钮可以提供适合上下文的操作，例如创建新程序。
+1. **我的程序**&#x200B;选择器会打开一个下拉列表，您可以在其中快速选择其他程序或执行与上下文相关的操作，如创建新程序
+1. 通过&#x200B;**快速入门**&#x200B;链接，您可以访问[入门文档历程](/help/journey-onboarding/overview.md)，以启动并运行Cloud Manager。
+1. 操作按钮提供了与上下文相关的操作，例如添加项目。
 
 ### 统计和行动号召 {#statistics}
 
@@ -209,23 +209,23 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 **计划**
 
-* 概述：当前文档中描述的程序概述
-* [活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity)：程序的管道运行历史
-* [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines)：为程序配置的所有管道
-* [存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)：为程序配置的所有存储库
-* [报告](/help/implementing/cloud-manager/sla-reporting.md)：SLA 数据等量度
+* ![现代网格视图图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ModernGridView_18_N.svg)概述 — 程序概述，如当前文档中所述
+* ![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [活动](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) — 项目的管道运行历史记录
+* ![工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) — 为项目配置的所有管道
+* ![文件夹图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md) — 为项目配置的所有存储库
+* ![图形饼图图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [报表](/help/implementing/cloud-manager/sla-reporting.md) - SLA数据等量度
 
 **服务**
 
-* [环境](/help/implementing/cloud-manager/manage-environments.md)：为程序配置的所有环境
-* [Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) — 管理Edge Delivery站点
-* [域设置](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理项目的自定义域名
-* [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) — 管理程序的SSL证书
-* [CDN配置](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理CDN配置
-* [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 为某些IP地址定义允许列表
-* [内容集](/help/implementing/developing/tools/content-copy.md)：为复制目的而创建的内容集
-* [复制内容活动](/help/implementing/developing/tools/content-copy.md)：内容复制活动
-* [网络基础架构](/help/security/configuring-advanced-networking.md) — 管理程序的高级联网选项
+* ![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) [环境](/help/implementing/cloud-manager/manage-environments.md) — 为程序配置的所有环境
+* ![网页图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery站点](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) — 管理Edge Delivery站点
+* ![设置图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [域设置](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理项目的自定义域名
+* ![锁定已关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) — 管理程序的SSL证书
+* ![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN配置](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理CDN配置
+* ![任务列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 为某些IP地址定义允许列表
+* ![Box图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [内容集](/help/implementing/developing/tools/content-copy.md) — 为复制目的而创建的内容集
+* ![历史记录图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [复制内容活动](/help/implementing/developing/tools/content-copy.md) — 内容复制活动
+* ![渠道图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [网络基础架构](/help/security/configuring-advanced-networking.md) — 管理程序的高级联网选项
 
 **资源**
 
