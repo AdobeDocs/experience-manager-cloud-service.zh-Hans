@@ -3,7 +3,7 @@ title: Edge Delivery Services的路径映射
 description: 了解如何将AEM创作实例中使用的页面路径映射到网站中使用的公共页面路径，并控制将哪些内容发布到Edge Delivery Services。
 feature: Edge Delivery Services
 role: User
-source-git-commit: 51a2b453ccce39cb42c927a088bc088083545542
+source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -95,8 +95,8 @@ Edge Delivery Services页面上使用的Assets通常与网页一起发布。 它
    }'
    ```
 
-1. 如果项目不使用配置服务，则通过项目GitHub存储库中的paths.json文件配置路径映射。
+1. 如果项目不使用配置服务，则通过项目GitHub存储库中的`paths.json`文件配置路径映射。
 
-   * 有关示例，请参阅[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](/https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json)。
+   * 有关示例，请参阅[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/paths.json)。
 
 在这两种情况下，配置路径映射后，您可以通过可公开访问的配置URL `https://<branch>--<site>--<org>.aem.page/config.json`检查配置。
