@@ -4,9 +4,9 @@ description: AEM UI具有多种基础原则，并且由多个关键元素组成
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
+source-git-commit: bd5601661cd59c158802f900677855be76d5893b
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '937'
 ht-degree: 3%
 
 ---
@@ -180,6 +180,8 @@ AEM附带了多个已实施用于页面创作的图层；例如，包括编辑�
 
 * [从UI](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
-* 从项目代码中，通过设置`Boolean`属性：
+* 从项目代码中，按照：
 
-  `/conf/global/setting/unifiedshell` - `false`
+   * 在`/conf/global/setting/unifiedshell`
+
+      * 将`Boolean`属性`enable`设置为`false`
