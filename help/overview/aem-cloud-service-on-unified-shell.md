@@ -4,10 +4,10 @@ description: 了解 Unified Shell 上的 AEM as a Cloud Service 的优势
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 95%
 
 ---
 
@@ -44,6 +44,10 @@ AEM as a Cloud Service （创作服务）与 Unified Shell 集成，可改进用
 
    ![图像](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>还可以在项目代码中禁用Unified Shell。 请参阅[AEM UI的结构 — Unified Shell](/help/implementing/developing/introduction/ui-structure.md#unified-shell)。
+
 ## 更改为深色主题 {#changing-to-dark-theme}
 
 要更改为深色主题，请单击您的用户档案图标。该操作会显示一个弹出窗口，如下所示。您可以使用切换开关切换到 Unified Shell 程序的深色主题。
@@ -73,3 +77,4 @@ AEM as a Cloud Service 提供三种类型的环境：“生产”、“暂存”
 单击弹出窗口中的收件箱按钮，以转到您的 AEM 收件箱：
 
 ![图像](/help/overview/assets/unifiedshell6.png)
+
