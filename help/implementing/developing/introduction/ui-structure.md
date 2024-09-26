@@ -4,9 +4,9 @@ description: AEM UI具有多种基础原则，并且由多个关键元素组成
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd5601661cd59c158802f900677855be76d5893b
+source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -176,7 +176,7 @@ AEM附带了多个已实施用于页面创作的图层；例如，包括编辑�
 
 如果您将Unified Shell用作AEM UI，请参阅[Unified Shell上的AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)。
 
-如果您需要进行（或已经进行）任何自定义设置，则可以禁用此功能：
+如果您需要进行任何自定义或者已经进行任何自定义，则可以禁用Unified Should：
 
 * [从UI](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
