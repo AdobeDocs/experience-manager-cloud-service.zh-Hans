@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 47%
@@ -36,7 +36,7 @@ Adobe Experience Manager as a Cloud Service 配置有默认域名，以 `*.adobe
 >
 >Cloud Manager 不是域名注册商，不提供 DNS 服务。
 
-## 自定义域名并自带CDN {#byo-cdn}
+## 自定义域名并使用您自己的CDN {#byo-cdn}
 
 AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还允许您通过BYO（自带）CDN来与AEM一起使用。 自定义域可以安装在 AEM 管理的 CDN 或您管理的 CDN 中。
 
