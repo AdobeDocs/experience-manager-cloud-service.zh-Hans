@@ -7,9 +7,9 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: c9cddf9f0e344a2a24ee1a608b3ea920e258f34a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1013'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 99%
 
    * **呈现为：****文本域** – 当您创建冒险时，此字段会存储该旅行的简要描述。
    * **字段标签：**`Description` – 创建冒险时为该字段显示的标签。
-   * **默认类型**：**纯文本** — 此示例所需的格式。
+   * **默认类型**：**纯文本** - 此示例所需的格式。
 
 1. 通过拖放&#x200B;**单行文本**&#x200B;字段，添加一个字段来存储冒险的价格，并输入以下属性：
 
