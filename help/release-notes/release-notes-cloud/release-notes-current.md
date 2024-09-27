@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
-workflow-type: ht
-source-wordcount: '1266'
-ht-degree: 100%
+source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+workflow-type: tm+mt
+source-wordcount: '1248'
+ht-degree: 68%
 
 ---
 
@@ -28,33 +28,27 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2024.8.0) 的发布日期为 2024 年 8 月 29 日。下一个功能版本 (2024.9.0) 计划于 2024 年 9 月 26 日发布。
+[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2024.9.0)的发布日期是2024年9月26日。 下一个功能版本(2024.10.0)计划于2024年10月31日发布。
 
 ## 维护发行说明 {#maintenance}
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-## 发布视频 {#release-video}
+<!--  ## Release Video {#release-video}
 
-请查看 2024 年 8 月发行版概述视频，了解 2024.8.0 版本中新增功能的摘要：
+Have a look at the September 2024 Release Overview video for a summary of the features added in the 2024.9.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Experience Manager Sites 的新增功能 {#new-feature-sites}
 
-**适用于 Edge Delivery Services 的 AEM 创作**
+#### 翻译管理 {#translation-management}
 
-现在支持现有 Sites [继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)功能，包括：
-
-* [AEM 启动项](/help/sites-cloud/authoring/launches/overview.md)
-* 页面级别的 [MSM](/help/sites-cloud/administering/msm/overview.md)
-
-此外，现在还支持以下页面管理功能：
-
-* [AEM 标记](/help/sites-cloud/authoring/sites-console/tags.md)可以作为一项[分类法](/help/edge/wysiwyg-authoring/taxonomy.md)导出至 Edge Delivery Services。
-* Edge Delivery Services 的[模板](/help/edge/wysiwyg-authoring/templates.md)即将推出！
+AEM翻译工作流和API操作现在会触发事件，以提供有关翻译作业状态更改的分析。 用户可以通过Adobe Developer Console订阅这些事件。 有关AEM翻译管理API的更多信息，请参阅[此处](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)。
 
 ### 早期采用者计划 {#sites-early-adopter}
 
@@ -73,27 +67,10 @@ Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内�
 
 为了尽早获得 Dynamic Media 帐户上 AI 生成的字幕支持，[请创建并提交 Adobe 客户支持案例](/help/assets/dynamic-media/video.md##enable-dash)。
 
-### Assets 视图中的新增功能 {#assets-view-new-features}
+### 资产选择器中的新增功能 {#asset-selector-new-features}
 
-**更新了 Adobe Firefly 图像生成**
-
-Assets as a Cloud Service 现在可以使用 Firefly 的最新小组件，以便您使用 Adobe Firefly 生成不同风格的图像。通过使用内置的 Firefly 编辑器定义其样式、构成、维度等，您可以直接在 AEM Assets 存储库中快速创建和保存所需的资产，以供立即使用。
-
-![Adobe Firefly 图像生成](/help/assets/assets/bugatti-type-57.png)
-
-**PSB 文件支持**
-
-除了现有的 PSD 文件支持功能外，Assets as a Cloud Service 现在还支持 Photoshop 大文档（PSB 文件）。
-
-### Content Hub 的新增强功能 {#content-hub-new-enhancements}
-
-* 更好地处理长文件名，可以通过工具提示轻松扩展完整名称。
-* 改进了缩略图，以更好地适应内容纵横比，并覆盖更大面积的内容。
-* Content Hub 支持 AEM 的自定义缩略图体验。
-* 改进了颜色搜索功能。
-* 改进了配置保存体验。
-* 改进了收藏集的信息页面，以反映创作者的姓名。
-
+资产选择器现在支持浏览收藏集以找到所需的资产。
+![资产选择器收藏集](/help/assets/assets/collections-rail-modal-view.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -132,29 +109,49 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 >
 > 有兴趣加入早期访问计划以体验任何有关表单方面的创新技术吗？请从您的工作邮件发送一封电子邮件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，其中注明您感兴趣的功能列表。
 
+## CIF 加载项 {#cloud-services-cif}
+
+### 改进功能 {#improvements-fixes-cif}
+
+* 使类别限制可自定义。
+
+### 错误修复 {#bug-fixes-cif}
+
+* Commerce字段未与Assets元数据架构编辑器正确集成。
+* 拖放的轮播产品多字段问题。
+* 拖放的轮播类别多字段问题。
+* 单击不适用于类别和产品编辑器页面上的页面信息中的菜单。
+* 订单编号在订单确认页中不可见。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 内容投放相关的早期采用者计划 {#foundation-early-adopter}
+### 用于加载动态内容的Edge Side Include (ESI) {#esi}
 
-发送电子邮件至 **<aemcs-cdn-config-adopter@adobe.com>**，表明您对以下哪些早期采用者计划感兴趣。
+Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，这是一种用于边缘级动态 Web 内容组装的标记语言。通过加入 ESI 片段，您可以在具有更高 TTL 的 CDN 上缓存整个 HTML 页面，同时更频繁地从原始位置获取那些需要更高节奏更新（更低的 TTL）的较小部分。该功能将逐步推出。
 
-#### CDN 上的基本身份验证（早期采用者计划） {#basicauth-cdn}
+### CDN上的基本身份验证 {#basicauth-cdn}
 
-通过弹出需要用户名和密码的基本身份验证对话框来保护某些内容资源。此功能主要针对轻度身份验证用例，例如业务利益相关者审查内容，而不是作为最终用户访问权限的综合解决方案。用户名和密码列表通过 git 中的配置文件进行管理，该文件通过配置管道部署，并引用秘密类型的 Cloud Manager 环境变量。[了解详情](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
+通过弹出需要用户名和密码的基本身份验证对话框来保护某些内容资源。此功能主要针对轻度身份验证用例，例如业务利益相关者审查内容，而不是作为最终用户访问权限的综合解决方案。用户名和密码列表通过Git中的配置文件进行管理，该配置文件通过配置管道部署，并引用机密类型的Cloud Manager环境变量。 [了解详情](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
-#### 客户端重定向（早期采用者项目） {#client-side-redirects-early-adopter}
+### 客户端重定向 {#client-side-redirects}
 
-在源代码控制中配置 301/302 客户端重定向，并部署到 CDN。[了解详情](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> 请注意，目前已有与 [CDN 配置](/help/implementing/dispatcher/cdn-configuring-traffic.md)相关的其他多项功能可用，包括请求和响应变换以及将流量路由到非 AEM Sites。
+在配置文件git中声明[浏览器重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)，该文件已部署到CDN并在CDN中评估。 这对于删除页面、更改站点结构和SEO优化等方案非常有用。
 
-#### 企业用户可以在 Git 之外声明重定向（早期采用者计划） {#apache-rewritemaps-early-adopter}
+### 新的AEM Developer Console(公共Beta) {#aem-developer-console-beta}
 
-与 AEM 6.5 类似，Apache/dispatcher 会引入放置在发布存储库中特定位置的重写映射并对其进行加载，而无需执行 Web 层管道。这种方法让业务用户使用电子表格或 UI（如 ACS Commons Redirect Map Manager 或自定义应用程序）声明重定向<!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->。
+尝试使用经过改版的[AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)，该版本为在云环境中调试代码提供了更具交互性的体验。
 
-#### Edge Side Includes (ESI)，用于加载动态内容（早期采用者计划） {#esi-early-adopter}
+任何人都可以通过单击当前AEM Developer Console中的&#x200B;*新控制台可用*&#x200B;按钮访问公共测试版。 Adobe欢迎反馈，您可以通过电子邮件将其发送至&#x200B;**<aemcs-new-devconsole-ui-beta@adobe.com>**。
 
-Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，这是一种用于边缘级动态 Web 内容组装的标记语言。通过加入 ESI 片段，您可以在具有更高 TTL 的 CDN 上缓存整个 HTML 页面，同时更频繁地从原始位置获取那些需要更高节奏更新（更低的 TTL）的较小部分。<!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+AEM Developer Console中的![OSGi包屏幕](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
+### 企业用户可以在 Git 之外声明重定向（早期采用者计划） {#apache-rewritemaps-early-adopter}
+
+与AEM 6.5类似，Apache/Dispatcher摄取重写放置在发布存储库中特定位置的映射，并加载这些映射而无需执行Web层管道。 这种方法允许企业用户使用电子表格或UI（如ACS Commons重定向映射管理器或自定义应用程序）声明重定向。 通过电子邮件发送&#x200B;**<aemcs-cdn-config-adopter@adobe.com>**&#x200B;加入率先采用者计划。
+
+### RDE配置管道（早期采用者计划） {#config-pipeline-rdes-early-adopter}
+
+[配置管道](/help/operations/config-pipeline.md)用于部署yaml文件配置，包括CDN选项（流量过滤器规则、请求/响应转换等）。 通过电子邮件发送&#x200B;**<aemcs-cdn-config-adopter@adobe.com>**&#x200B;以将这些相同的配置部署到使用CLI的RDE（快速开发环境）来加入早期采用者计划。
 
 ## [!DNL Experience Manager] Guides {#guides}
 

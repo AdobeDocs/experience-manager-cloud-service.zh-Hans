@@ -4,10 +4,10 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 5%
+source-wordcount: '1415'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖
 
 * AdobeCDN用于验证来自客户管理的CDN的的X-AEM-Edge-Key HTTP标头值。
 * 用于清除CDN缓存中的资源的API令牌。
-* 通过提交基本身份验证表单，可访问受限内容的用户名/密码组合列表。 [此功能可供早期采用者使用。](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
+* 通过提交基本身份验证表单，可访问受限内容的用户名/密码组合列表。
 
 下面单独一节介绍了其中的每个术语，包括配置语法。
 
@@ -146,9 +146,6 @@ data:
 
 ## 基本身份验证 {#basic-auth}
 
->[!NOTE]
->此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至`aemcs-cdn-config-adopter@adobe.com`。
-
 通过弹出需要用户名和密码的基本身份验证对话框来保护某些内容资源。此功能主要用于轻度身份验证用例（如业务利益相关者对内容的审查），而不是作为最终用户访问权限的完整解决方案。
 
 最终用户将体验到类似于以下内容的基本身份验证对话框：
@@ -164,7 +161,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: my-basic-authenticator
          type: basic
@@ -185,12 +182,12 @@ data:
 
 此外，语法包括：
 
-* 包含`experimental_authentication`节点的`data`节点（在发布该功能时将删除实验前缀）。
-* 在`experimental_authentication`下，有一个`authenticators`节点和一个`rules`节点，两者都是数组。
+* 包含`authentication`节点的`data`节点。
+* 在`authentication`下，有一个`authenticators`节点和一个`rules`节点，两者都是数组。
 * 验证者：在此场景中，声明一个基本验证者，该验证者具有以下结构：
    * 名称 — 描述性字符串
    * 类型 — 必须为`basic`
-   * 凭据数组，每个凭据包括以下名称/值对，最终用户可以在基本身份验证对话框中输入这些凭据：
+   * 一个最多包含10个凭据的数组，每个凭据包含以下名称/值对，最终用户可以在基本身份验证对话框中输入这些名称/值对：
       * user — 用户的名称
       * 密码 — 其值必须引用[Cloud Manager密钥类型环境变量](/help/operations/config-pipeline.md#secret-env-vars)，并且选择&#x200B;**所有**&#x200B;作为服务字段。
 * 规则：用于声明应使用哪些身份验证器，以及应保护哪些资源。 每个规则包括：
@@ -208,7 +205,7 @@ data:
 1. 最初只定义了`edgeKey1`，在本例中引用为`${{CDN_EDGEKEY_052824}}`，作为推荐的约定，它反映创建日期。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -218,7 +215,7 @@ data:
 1. 在配置中，从`edgeKey2`引用它并进行部署。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -229,7 +226,7 @@ data:
 1. 一旦确定不再使用旧的边缘密钥，请从配置中删除`edgeKey1`以删除该密钥。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -240,7 +237,7 @@ data:
 1. 准备下一次轮换时，请遵循相同的过程，但这次您将向配置中添加`edgeKey1`，并引用名为的新Cloud Manager环境密钥，例如`${{CDN_EDGEKEY_031426}}`。
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge

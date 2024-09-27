@@ -4,17 +4,14 @@ description: Adobe托管的CDN现在支持Edge Side Include (ESI)，这是一种
 feature: Dispatcher
 exl-id: 35093477-2788-4f69-80a9-899f43567cae
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: d70a8030ca6687b1839adc0ce1becdf366ec7170
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 3%
+source-wordcount: '523'
+ht-degree: 2%
 
 ---
 
 # Edge 端包括 {#edge-side-includes}
-
->[!NOTE]
->此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至`aemcs-cdn-config-adopter@adobe.com`并描述您的用例。
 
 内容交付速度得益于积极缓存页面，通过设置具有高生存时间(TTL)值的缓存标头来实现。 当页面包含动态内容时，这可能具有挑战性，动态内容需要经常刷新或可能根本无法缓存。 幸运的是，有些策略可以使用高的TTL来缓存包含的HTML页面，从而将获取更多动态内容片段的过程推迟到以后（通过客户端Javascript或CDN）。 后一种方法是名为Edge Side Include (ESI)的标准，随AEM发布呈现的网站支持此标准。 该HTML包括ESI标记，指示CDN将页面的服务延迟到浏览器评估这些标记之前，从源检索额外的更动态（更低的TTL）内容（如果其TTL未过期，则为CDN缓存）。
 

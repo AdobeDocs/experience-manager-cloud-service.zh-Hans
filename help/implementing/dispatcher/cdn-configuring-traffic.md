@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1321'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 * [请求转换](#request-transformations) — 修改传入请求的各个方面，包括标头、路径和参数。
 * [响应转换](#response-transformations) — 修改返回客户端的标头（例如，Web浏览器）。
-* [客户端重定向](#client-side-redirectors) — 触发浏览器重定向。 此功能尚未正式发布，但可供早期采用者使用。
+* [客户端重定向](#client-side-redirectors) — 触发浏览器重定向。
 * [源选择器](#origin-selectors) — 代理到其他源后端。
 
 在CDN上还可配置的还有流量过滤器规则(包括WAF)，这些规则控制CDN允许或拒绝的流量。 此功能已发布，您可以在[流量筛选器规则(包括WAF规则)](/help/security/traffic-filter-rules-including-waf.md)页面中了解更多相关信息。
@@ -363,9 +363,6 @@ data:
 
 ## 客户端重定向 {#client-side-redirectors}
 
->[!NOTE]
->此功能尚未普遍可用。要加入率先采用者计划，请发送电子邮件至`aemcs-cdn-config-adopter@adobe.com`并描述您的用例。
-
 对于301、302和类似的客户端重定向，您可以使用客户端重定向规则。 如果规则匹配，CDN会使用包含状态代码和消息（例如，HTTP/1.1 301 Moved Permanently）以及位置标头集的状态行进行响应。
 
 允许使用具有固定值的绝对位置和相对位置。
@@ -380,7 +377,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }
