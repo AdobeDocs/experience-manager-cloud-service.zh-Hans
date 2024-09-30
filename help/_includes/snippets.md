@@ -1,8 +1,8 @@
 ---
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
-workflow-type: ht
-source-wordcount: '1139'
-ht-degree: 100%
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # 代码片段 {#snippets}
@@ -155,6 +155,22 @@ ht-degree: 100%
 >
 >如果您使用或打算使用前端管道来开发 Sites，则必须事先添加 Cloud Manager IP 允许列表。
 >请参阅 [将 Cloud Manager IP 允许列表与前端管道结合使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)。
+
+## IP允许列表和通用编辑器 {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[通用编辑器](/help/implementing/universal-editor/introduction.md)与IP允许列表不兼容。
+>
+>如果要使用Universal Editor，则不能启用IP允许列表。
+
+## Universal Editor和IP允许列表 {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>通用编辑器与[IP允许列表不兼容。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>
+>如果要使用Universal Editor，则不能启用IP允许列表。
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 

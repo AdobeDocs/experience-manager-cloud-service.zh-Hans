@@ -5,10 +5,10 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 14%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 14%
 具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户可以按照这些步骤添加IP允许列表。
 
 {{add-cm-allowlist-frontend-pipeline}}
+
+{{ip-allow-lists-ue}}
 
 **添加IP允许列表：**
 

@@ -4,17 +4,17 @@ description: 了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 55%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Universal Editor 简介 {#introduction}
 
-通用编辑器是一个通用的可视化编辑器，它是Adobe Experience Manager Sites的一部分。 它使作者能够对任何Headless或Headful体验进行“所见即所得”(WYSIWYG)编辑。 了解它如何帮助内容作者提供卓越的体验以及它如何为开发人员提供无与伦比的自由。
+通用编辑器是一个通用的可视化编辑器，它是Adobe Experience Manager Sites的一部分。 它使创作者能够对任何Headless或Headful体验进行“所见即所得”(WYSIWYG)编辑。 了解它如何帮助内容作者提供卓越的体验以及它如何为开发人员提供无与伦比的自由。
 
 ## 背景 {#background}
 
@@ -91,6 +91,8 @@ ht-degree: 55%
 * 需要AEM as a Cloud Service版本`2023.8.13099`或更高版本。
 * 内容作者必须拥有自己的个人Experience Cloud帐户。
 * Chrome和Edge是受支持的浏览器
+
+{{ue-ip-allow-lists}}
 
 ## 后续步骤 {#next-steps}
 

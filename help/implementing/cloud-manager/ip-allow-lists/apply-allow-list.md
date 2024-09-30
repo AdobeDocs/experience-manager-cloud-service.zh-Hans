@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 11%
 应用IP允许列表时，列表定义中包含的所有IP范围都与环境中的创作或发布服务相关联。 取消应用列表与此过程相反。
 
 {{add-cm-allowlist-frontend-pipeline}}
+
+{{ip-allow-lists-ue}}
 
 ## 应用IP允许列表 {#applying}
 
