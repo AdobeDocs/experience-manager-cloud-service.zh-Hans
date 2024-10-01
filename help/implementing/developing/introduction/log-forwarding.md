@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发给Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
+source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 * 记录目标配置 — 每个目标的格式略有不同
 * 日志条目格式 — 有关日志条目格式的信息
 * 高级联网 — 通过专用出口或VPN发送AEM和Apache/Dispatcher日志
+* 从旧版日志转发迁移 — 如何从之前由Adobe设置的日志转发迁移到自助方法
 
 
 ## 设置 {#setup}
@@ -369,4 +370,23 @@ data:
     aem:
       advancedNetworking: true
 ```
+
+## 从旧版日志转发迁移 {#legacy-migration}
+
+在通过自助模型实现日志转发配置之前，已请求客户打开支持工单，Adobe将在其中启动集成。
+
+欢迎通过Adobe以这种方式设置的客户在方便时改用自助模式。 进行此过渡有几个原因：
+
+* 已配置新环境（例如，新的开发环境或RDE）。
+* 更改您现有的Splunk端点或凭据。
+* 在CDN日志可用之前，Adobe已设置您的日志转发，您希望接收CDN日志。
+* 有意识地决定主动适应自助服务模式，使您的组织甚至在对时间敏感的更改之前就拥有了知识。
+
+准备迁移时，只需按照前几节所述配置YAML文件即可。 使用Cloud Manager配置管道部署到应应用配置的每个环境。
+
+建议将配置部署到所有环境，以便所有环境都处于自助控制状态，但不是必需的。 如果没有，您可能会忘记哪些环境已由Adobe配置，哪些是自助式配置的。
+
+>[!NOTE]
+>
+>在将日志转发部署到之前由Adobe支持配置的环境时，您最多可能会收到几个小时的重复日志。 这将最终自动解决。
 
