@@ -2,10 +2,10 @@
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
+source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 13%
+source-wordcount: '1374'
+ht-degree: 12%
 
 ---
 
@@ -60,6 +60,8 @@ ht-degree: 13%
 * [搜索](#configure-metadata-search-content-hub)
 
 * [品牌化](#configure-branding-content-hub)
+
+* [过期资产](#expired-assets-content-hub)
 
 * [自定义链接](#configure-custom-links-content-hub)
 
@@ -168,6 +170,33 @@ Content Hub上的![配置UI品牌](assets/configuration-ui-branding.png)
 在配置用户界面上启用的品牌更新将显示在Content Hub门户横幅上：
 
 Content Hub上的![配置UI品牌](assets/configuration-ui-branding-updates.png)
+
+### 过期资产 {#expired-assets-content-hub}
+
+管理员可以控制是否需要在Content Hub上显示过期的资源。 如果过期资产可见，则还可以定义用户是否可以下载这些资产。
+
+默认情况下，Content Hub中不显示过期的资源。
+
+若要禁用，请执行以下步骤：
+
+1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**[!UICONTROL 过期的Assets]**。
+
+1. 在&#x200B;**[!UICONTROL 可见]**&#x200B;部分中，启用&#x200B;**[!UICONTROL 允许用户查看过期的资源]**&#x200B;切换功能，以便在Content Hub上显示所有过期的资源。
+
+1. 启用资产可见性后，您可以使用&#x200B;**[!UICONTROL 允许用户下载过期的资产]**&#x200B;切换启用或禁用下载过期的资产的功能。
+
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
+
+   Content Hub上的![过期资源](assets/expired-assets-content-hub.png)
+
+启用资源的可见性后，您可以在Content Hub上查看过期的资源，如下图所示：
+
+Content Hub上的![过期资源](assets/view-download-expired-assets.png)
+
+如果管理员启用了下载，则Content Hub用户也可以下载它们，如图像中突出显示的内容。
+
+如果启用了过期资源的可见性，Content Hub还会使用资源卡上的`Expiring in n days`消息突出显示未来15天内过期的资源。
+
 
 ### 自定义链接 {#configure-custom-links-content-hub}
 
