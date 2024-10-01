@@ -1,13 +1,13 @@
 ---
 title: 在 Cloud Manager 中管理存储库
-description: 了解如何在Cloud Manager中创建、查看和删除GIT存储库。
+description: 了解如何在Cloud Manager中添加、查看和删除Git存储库。
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 14%
+source-wordcount: '708'
+ht-degree: 20%
 
 ---
 
@@ -50,6 +50,8 @@ Cloud Manager中的存储库用于使用Git存储和管理项目的代码。 对
 
 ## 添加存储库 {#adding-repositories}
 
+用户必须具有&#x200B;**部署管理员**&#x200B;或&#x200B;**业务负责人**&#x200B;角色才能添加存储库。
+
 在&#x200B;**存储库**&#x200B;页面的右上角附近，单击&#x200B;**添加存储库**
 
 ![添加存储库对话框。](assets/repository-add.png)
@@ -60,11 +62,15 @@ Cloud Manager支持两种类型的存储库：Adobe管理的存储库(**Adobe存
 * [在 Cloud Manager 中添加 Adobe 存储库](adobe-repositories.md)
 * [在 Cloud Manager 中添加专用存储库](private-repositories.md)
 
->[!NOTE]
->
->* 用户必须具有&#x200B;**部署管理员**&#x200B;或&#x200B;**业务负责人**&#x200B;角色才能添加存储库。
->* 在任何给定公司或 IMS 组织的所有项目中，存储库的数量限制为 300 个。
+在任何给定公司或 IMS 组织的所有项目中，存储库的数量限制为 300 个。
 
+## 访问存储库信息 {#repo-info}
+
+在&#x200B;**存储库**&#x200B;窗口中查看您的存储库时，您可以通过单击工具栏中的&#x200B;**访问存储库信息**&#x200B;按钮，查看有关如何以编程方式访问 Adobe 管理的存储库的详细信息。
+
+![存储库信息](assets/repository-access-repo-info2.png)
+
+**存储库信息**&#x200B;窗口将打开并显示详细信息。有关访问存储库信息的更多信息，请参阅[访问存储库信息](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
 ## 检查分支/创建项目 {#check-branches}
 
@@ -91,7 +97,7 @@ Cloud Manager支持两种类型的存储库：Adobe管理的存储库(**Adobe存
 
 ![删除](assets/repository-delete.png)
 
-删除存储库会使其名称不可用于将来创建的任何新存储库。 如果尝试使用相同的名称，则会出现以下错误消息：
+删除存储库会使其名称不可用于将来创建的任何新存储库。 如果尝试使用已删除存储库的相同名称添加存储库，则会出现以下错误消息：
 
 `Repository name should be unique within organization.`
 

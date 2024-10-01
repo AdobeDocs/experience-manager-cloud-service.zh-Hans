@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 44%
 
 ---
@@ -42,9 +42,9 @@ Cloud Manager 中没有关于[专用存储库](private-repositories.md)的访问
 
    ![访问管道信息卡上的存储库信息](assets/pipelines-card.png)
 
-1. 要访问密码，必须生成一个新密码。在“存储库信息”对话框中，单击&#x200B;**`Generate password`**。
+1. 要访问密码，必须生成一个新密码。在&#x200B;**存储库信息**&#x200B;对话框中，选择&#x200B;**生成密码**。
 
-1. 在确认对话框中，单击&#x200B;**`Generate password`**。
+1. 在确认对话框中，选择&#x200B;**生成密码**。
 
    ![确认密码生成](assets/confirm-generated-password.png)
 
