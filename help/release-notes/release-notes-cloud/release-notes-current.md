@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+source-git-commit: 894c5df2cdc6637bae9b4b8f2cbdd1f1162b3942
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 68%
+source-wordcount: '1289'
+ht-degree: 66%
 
 ---
 
@@ -71,6 +71,12 @@ Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内�
 
 资产选择器现在支持浏览收藏集以找到所需的资产。
 ![资产选择器收藏集](/help/assets/assets/collections-rail-modal-view.png)
+
+### Content Hub中的新增功能 {#content-hub-new-features}
+
+管理员现在可以控制他们是否需要在Content Hub上显示过期的资源。 如果过期资产可见，则还可以定义用户是否可以下载这些资产。
+
+Content Hub上的![过期资源](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
