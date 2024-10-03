@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 7f7ecfcca77cc3a38f3a4517bf41c48565b9faea
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1339'
 ht-degree: 2%
 
 ---
@@ -91,7 +91,14 @@ data:
           - type: set
             reqHeader: x-some-header
             value: some value
-            
+      - name: set-header-with-reqproperty-rule
+        when:
+          reqProperty: path
+          like: /set-header
+        actions:
+          - type: set
+            reqHeader: x-some-header
+            value: {reqProperty: path}           
       - name: unset-header-rule
         when:
           reqProperty: path
@@ -146,9 +153,9 @@ data:
 
 | 名称 | 属性 | 含义 |
 |-----------|--------------------------|-------------|
-| **设置** | （reqProperty、reqHeader、queryParam或reqCookie），值 | 将指定的请求参数（仅支持“path”属性）或请求标头、查询参数或Cookie设置为给定值。 |
+| **设置** | （reqProperty、reqHeader、queryParam或reqCookie），值 | 将指定的请求参数（仅支持“path”属性）或请求标头、查询参数或Cookie设置为给定值，该值可以是字符串文字或请求参数。 |
 |     | 变量，值 | 将指定的请求属性设置为给定值。 |
-| **取消设置** | reqProperty | 将指定的请求参数（仅支持“path”属性），或请求标头、查询参数或Cookie删除到给定值。 |
+| **取消设置** | reqProperty | 将指定的请求参数（仅支持“path”属性），或请求标头、查询参数或Cookie删除到给定值，该值可以是字符串文字或请求参数。 |
 |         | 变量 | 删除指定的变量。 |
 |         | queryParamMatch | 删除与指定正则表达式匹配的所有查询参数。 |
 | **转换** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie），匹配，替换 | 将部分请求参数（仅支持“path”属性）、请求标头、查询参数或Cookie替换为新的值。 |
