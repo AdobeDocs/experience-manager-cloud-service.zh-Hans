@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
 workflow-type: tm+mt
 source-wordcount: '1353'
-ht-degree: 16%
+ht-degree: 98%
 
 ---
 
@@ -18,116 +18,116 @@ ht-degree: 16%
 
 ## 版本 17964 {#release-17964}
 
-以下总结了维护版本17964的不断改进，该版本于2024年9月25日公开发布。 以前的维护版本是17689版。 由于出现问题，发行说17882已设为私有。
+下面总结了对维护版本 17964 的持续改进，该版本已于 2024 年 9 月 25 日公开发布。以前的维护版本是17689版。 由于出现问题，发行说17882已设为私有。
 
-2024.10.0 功能激活将会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2024.10.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强 {#enhancements-17964}
 
-* Assets - 37750： [优先级4] [GraphQL]支持DM scene7 URL：图像智能裁剪。
-* CQ - 4354583： [AEMaaCS]通过Adobe管道发送翻译流程事件。
-* CQ - 4357642：更新OOTB连接器中的MSFT凭据。
-* CQ - 4358217：从请求实体反序列化请求正文。
-* CQ - 4358342：仅在一个HTTP方法上注册RequestProcessors。
-* Forms - 10781：增强规则编辑器，为面板中的下一个/上一个项目创建规则。
-* Forms - 14595：当使用预填充数据计算无浏览器渲染的DoR时，DoR中缺少[无浏览器功能]值。
-* Forms - 15619： AEM Forms更新了翻译工具包。
-* Forms - 16113： [Adobe Sign]无法由其他用户更新协议状态。
-* Forms - 16155： [规则编辑器]实现异步函数。
-* GRANITE - 53872：为IMS客户端ID添加新的环境变量。
-* SITES - 23738：发行核心组件2.27.0。
-* 站点 — 16610：内容片段：获取启动项详细信息端点。
-* SITES - 16614：内容片段：重新构建Launch端点。
-* 站点 — 16615：内容片段：提升启动项端点。
-* 站点 — 24215：内容片段：实施获取启动项源端点。
-* 站点 — 20336：内容片段：改进删除内容片段模型时的验证。
-* SITES - 21090：内容片段：添加对数字字段的小数最小值/最大值支持
-* 站点 — 21658：内容片段：升级以使用UUID引用。
-* 站点 — 23054：内容片段：复制内容片段模型。
-* 站点 — 23264：内容片段：创建模型的静态架构。
-* SITES - 23265：内容片段：通过UI架构GET端点公开模型的静态架构。
-* 站点 — 23266：内容片段：能够向内容片段模型添加约束。
-* 站点 — 23778：内容片段：搜索内容片段模型应允许搜索从未发布的模型。
-* 站点 — 23335：内容片段：添加对外部资产引用的支持。
-* 站点 — 24626：内容片段：RTC：UUID迁移的权限：2。
-* 站点 — 24786：内容片段： `referencesTree`端点的增强功能。
-* 站点 — 24833：内容片段：根据允许的HTML标签列表删除HTML输入的验证。
-* 站点 — 23380：GraphQL：使用适当的API读取资源元数据。
-* SITES - 22864： [Edge Delivery]通用编辑器与新的AEM内容结构集成H2 2024。
-* SITES - 23584：基础组件测试在Java 17上失败。
-* SITES - 23662：事件：无法从服务器日志中的JCR日志语句中提取触发发布请求的用户。
-* 站点 — 23301：添加对启动新工作流的支持，以便在创建内容片段的翻译时创建文件夹结构。
+* ASSETS - 37750：[优先级 4] [GraphQL] 支持 DM scene7 URL：图像智能裁切。
+* CQ - 4354583：[AEMaaCS] 通过 Adobe Pipeline 发送翻译过程事件。
+* CQ - 4357642：在 OOTB 连接器中更新 MSFT 凭据。
+* CQ—4358217：从请求实体中反序列化请求正文。
+* CQ - 4358342：仅在一种 HTTP 方法上注册 RequestProcessors。
+* FORMS - 10781：增强规则编辑器，以为面板中的下一个/上一个项目创建规则。
+* FORMS - 14595：[无浏览器功能] 当使用预填充数据计算无浏览器渲染的 DoR 时，DoR 中缺少值。
+* FORMS - 15619：AEM Forms 更新了翻译工具包。
+* FORMS - 16113：[Adobe Sign]无法由其他用户更新协议状态。
+* FORMS - 16155：[规则编辑器] 实施异步功能。
+* GRANITE - 53872：为 IMS 客户端 ID 添加新的环境变量。
+* SITES - 23738：发布核心组件 2.27.0 版本。
+* SITES - 16610：内容片段：获取启动详细信息端点。
+* SITES - 16614：内容片段：重新设定启动端点。
+* SITES - 16615：内容片段：推广启动端点。
+* SITES - 24215：内容片段：实施获取启动源端点。
+* SITES - 20336：内容片段：删除内容片段模型时改进验证。
+* SITES - 21090：内容片段：添加对数字字段的分数最小/最大值的支持
+* SITES - 21658：内容片段：升级以使用 UUID 引用。
+* SITES - 23054：内容片段：复制内容片段模型。
+* SITES - 23264：内容片段：创建模型的静态模式。
+* SITES - 23265：内容片段：通过 UI 模式 GET 端点公开模型的静态模式。
+* SITES - 23266：内容片段：能够向内容片段模型添加约束。
+* SITES - 23778：内容片段：搜索内容片段模型时应该允许搜索从未发布的模型。
+* SITES - 23335：内容片段：添加对外部资产引用的支持。
+* SITES - 24626：内容片段：RTC：UUID 迁移的权限：2。
+* SITES - 24786：内容片段：`referencesTree` 端点的增强功能。
+* SITES - 24833：内容片段：移除针对允许的 HTML 标记列表的 HTML 输入验证。
+* SITES - 23380：GraphQL：使用适当的 API 读取资产元数据。
+* SITES - 22864：[Edge Delivery] 具有新 AEM 内容结构集成 H2 2024 的通用编辑器。
+* SITES - 23584：Java 17 上的基础组件测试失败。
+* SITES - 23662：事件：无法从服务器日志中的 JCR 日志语句中提取触发发布请求的用户。
+* SITES - 23301：添加在创建内容片段翻译时启动新工作流程以创建文件夹结构的支持。
 * SITES - 23336：内容片段：添加对外部资产引用的支持
-* 站点 — 24091：MSM内容包拆分：母版。
-* SITES - 24114： isSourceRenderCondition：将错误日志消息减少为DEBUG。
-* SITES - 24166：触屏UI编辑器的远程资产减轻。
-* SITES - 24409：仅在一个HTTP方法上注册所有请求处理器。
-* SITES - 25008：改进对PersistenceExceptions和权限问题的处理。
-* SITES - 24821： [Xwalk]将aem.page / aem.live设为默认值。
+* SITES - 24091：MSM 内容包拆分：主。
+* SITES - 24114: isSourceRenderCondition：将错误日志消息降低为调试。
+* SITES - 24166：Touch-UI 编辑器的远程资产缓解。
+* SITES - 24409：仅在一种 HTTP 方法上注册所有请求处理器。
+* SITES - 25008：改进对 PersistenceExceptions 和权限问题的处理。
+* SITES - 24821：[Xwalk] 将 aem.page / aem.live 设为默认设置。
 
 ### 修复的问题 {#fixed-issues-17964}
 
-* CQ - 4356887：Akamai Technologies Inc.的翻译项目状态不一致
-* CQ - 4357878：翻译框架在供应商失败翻译时未设置错误状态。
+* CQ - 4356887: Akamai Technologies Inc. 的翻译项目状态不一致。
+* CQ - 4357878：翻译框架未在供应商翻译失败时设置错误状态。
 * CQ - 4358028：如果上传了缩略图，则无法创建项目。
-* CQ - 4358290：目标设置不适用于已发布的页面。
-* Forms - 13173：自适应表单>规则编辑器>放置对象字段中的下拉列表未对齐。
-* Forms - 13873：组件名称中的AFv2： (“ — ”)导致规则失败。
-* Forms - 14340：实例化FormsAndDocumentOmniSearchHandler和CloudStorageSubmitActionInserter时出错。
-* Forms - 15363：规则编辑器中的显示名称。
-* Forms - 15381：对授权范围消息进行UI增强。
-* Forms - 15595： AEM表单TnC组件同意文本换行符问题。
-* Forms - 15623： AEMaaCS Forms — 使用一个POST更新Dynamics中的多个表的替代方法。
-* Forms - 15682： AEM Forms — 无法将DOR绑定到Dynamics FDM。
-* Forms - 15799： Adobe Sign GovCloud签名页面不会在iframe中渲染。
-* Forms - 15835：提交表单后URL重写问题。
-* Forms - 16091：使用重新构建的Binary.java。
-* Forms - 16096： Forms用户无权访问restendpoint对话框。
-* Forms - 16139：在核心组件表单中为DoR添加所需的日志记录。
-* Forms - 6935：活动组件的状态缺少3对1的对比度。
-* Forms - 7018：空元素接收焦点。
-* GRANITE - 53028： ExternalProcessPollingHandler中的NPE。
-* GRANITE - 53907：无法将服务用户标识为工作流超级用户。
-* 站点 — 24405：内容片段：枚举的扩展信息应更具弹性
-* 站点 — 23024：内容片段：枚举未返回locked： true (在GET片段中)。
-* 站点 — 23269：内容片段：创建内容片段允许设置锁定字段。
-* SITES - 23337：内容片段：具有`body`的批处理终结点失败，并出现铸造异常。
-* 站点 — 23474：内容片段：分页应在搜索内容片段中排除损坏的资源。
-* 站点 — 23615：内容片段：内容片段副本AuthoringInfo未更新
-* SITES - 23668：内容片段：修补包含多字段的Live Copy失败，返回400
-* 站点 — 23695：内容片段：选项卡描述在UiSchema中不可用
-* SITES - 23704：内容片段： _extendedInfo不支持多值枚举
-* SITES - 23781：内容片段：枚举字段中不允许存在重复值
-* 站点 — 24150：内容片段：缺少有关创建的内容片段版本创作数据
-* SITES - 24230：内容片段：修复了搜索内容片段模型中`modified`复制状态后的筛选问题
-* 站点 — 24233：内容片段：按`publishedBy`筛选可在搜索内容片段模型中包含未发布的资源
-* SITES - 24355：内容片段：未对创建的内容片段的文件夹应用实时关系
-* SITES - 24816：内容片段：ValidationStatus消息顺序不一致。
-* SITES - 23896：事件：更多事件与“页面移动”事件相关联
-* SITES - 23899：事件：页面事件延迟或根本未生成
-* SITES - 23961：事件：当存在配置文件夹时，创建包含引用的内容片段模型失败
-* SITES - 23963：事件：删除页面的事件有时不会出现
-* SITES - 23443： GraphQL： GraphQL光标查询不一致行为。
-* SITES - 10994：键盘焦点顺序不符合逻辑。
-* SITES - 16357：在“站点”菜单的“设置Analytics”选项卡中，AEM：按钮被截断。
-* SITES - 19836：容器中的Ghost组件显示在发布和预览实例上。
-* 站点 — 22348：如果某个项目的活动副本超过100个，则Live Copy概述页面加载失败。
-* SITES - 22960： ContentFragmentModelOmniSearchHandler中的资源解析程序未关闭。
-* SITES - 23284：URL编码导致空白路径浏览器对话框。
-* 站点 — 23505：将页面移动到其他位置时，组件显示错误的URL。
-* 站点 — 23574：无法预览/比较许多页面的当前版本
-* SITES - 23585：恢复具有cq：responsive节点的组件的继承时出现问题
-* SITES - 23650：AEM创作环境中传入链接计数的差异
-* SITES - 23659：切换导致的内容语言Servlet回归FT_* SITES - 9757
-* 站点 — 23759：在体验片段中添加的Assets未随启动项一起发布
-* SITES - 24025：AEM中的302重定向返回使用内部DNS而不是公共DNS的位置标头
-* SITES - 24036：调查ASCII格式的AEM RTE持久字符
+* CQ - 4358290：目标设置功能在已发布的页面上不起作用。
+* FORMS - 13173：自适应表格 > 规则编辑器 > 放置对象字段中的下拉列表错位。
+* FORMS - 13873：AFv2：组件名称中的 (“-”) 导致规则失败。
+* FORMS-14340：FormsAndDocumentOmniSearchHandler 和 CloudStorageSubmitActionInserter 实例化时出错。
+* FORMS - 15363：规则编辑器中显示的名称。
+* FORMS - 15381：授权范围消息的 UI 增强功能。
+* FORMS - 15595：AEM 表格 TnC 组件同意文本换行问题。
+* FORMS - 15623：AEMaaCS 表格 - 使用 One POST 更新 Dynamics 中的多个表的替代方法。
+* FORMS - 15682：AEM Forms - 无法将 DOR 绑定到 Dynamics FDM。
+* FORMS - 15799：Adobe Sign GovCloud 签名页面无法在 iframe 中呈现。
+* FORMS - 15835：提交后的表格 URL 重写问题。
+* FORMS - 16091：使用重组 Binary.java。
+* FORMS - 16096: Forms 用户无权访问 restendpoint 对话框。
+* FORMS - 16139：在核心组件表格中添加 DoR 所需的日志。
+* FORMS - 6935：活动成分状态缺乏 3 比 1 的对比度。
+* FORMS - 7018：空元素获得焦点。
+* GRANITE - 53028：ExternalProcessPollingHandler 中的 NPE。
+* GRANITE - 53907：无法将服务用户识别为工作流超级用户。
+* SITES - 24405：内容片段：枚举的扩展信息应该更具弹性
+* SITES - 23024：内容片段：枚举在 GET 片段中不会返回 locked: true。
+* SITES - 23269：内容片段：创建内容片段允许设置锁定字段。
+* SITES - 23337：内容片段：带有 `body` 的批处理端点因转换异常而失败。
+* SITES - 23474：内容片段：分页应该排除搜索内容片段中的损坏资源。
+* SITES - 23615：内容片段：内容片段副本 AuthoringInfo 未更新
+* SITES - 23668：内容片段：使用多字段修补 Live Copy 失败，错误代码为 400
+* SITES - 23695：内容片段：UiSchema 中没有选项卡描述
+* SITES - 23704：内容片段：_extendedInfo 中不支持多值枚举
+* SITES - 23781：内容片段：枚举字段中不允许出现重复值
+* SITES - 24150：内容片段：缺少有关创作的内容片段版本创作数据
+* SITES - 24230：内容片段：修复搜索内容片段模型中 `modified` 复制状态后的筛选问题
+* SITES - 24233：内容片段：按 `publishedBy` 筛选可以在搜索内容片段模型中包含未发布的资源
+* SITES - 24355：内容片段：对于创建的文件夹内容片段未实现实时关系
+* SITES - 24816：内容片段：ValidationStatus 消息顺序不一致。
+* SITES - 23896：活动：更多活动即将与“页面移动”活动一起举行
+* SITES - 23899：事件：页面事件延迟或根本没有生成
+* SITES - 23961：事件：当存在配置文件夹时，创建带有引用的内容片段模型失败
+* SITES - 23963：事件：页面删除事件有时不会发生
+* SITES - 23443：GraphQL：GraphQL Cursor 查询行为不一致。
+* SITES - 10994：键盘焦点顺序不合逻辑。
+* SITES - 16357：AEM：Sites 菜单中的“设置分析”选项卡中的按钮被截断。
+* SITES - 19836：容器中的幽灵组件显示在发布和预览实例上。
+* SITES - 22348：如果项目的 Live Copy 超过 100 个，则 Live Copy 概览页面无法加载。
+* SITES - 22960：ContentFragmentModelOmniSearchHandler 中未关闭的资源解析器。
+* SITES - 23284：URL 编码导致路径浏览器对话框空白。
+* SITES - 23505：当页面移动到另一个位置时，组件会显示不正确的 URL。
+* SITES - 23574：无法预览/比较许多页面的当前版本
+* SITES - 23585：恢复具有 cq:responsive 节点的组件的继承时出现问题
+* SITES - 23650：AEM 创作环境中传入链接计数存在差异
+* SITES - 23659：切换 FT_* SITES - 9757 导致内容语言 Servlet 回归
+* SITES - 23759：体验片段中添加的资产未随启动项一起发布
+* SITES - 24025：AEM 中的 302 重定向使用内部 DNS 而不是公共 DNS 返回位置标头
+* SITES - 24036：需要对 ASCII 格式的 AEM RTE 持久字符进行调查
 * SITES - 24317：代理配置不适用于基本身份验证
-* SITES - 24918： [Xwalk]修复了在使用专用ip出口时偶尔返回的504错误。
+* SITES - 24918：[Xwalk] 修复使用专用 IP 出口时偶尔返回的 504 错误。
 
 ### 已知问题 {#known-issues-17964}
 
-* Forms - 15818：在服务器日志中未找到组件描述符条目`OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`的语句。 这些是无害的日志语句。
+* FORMS - 15818：组件描述符条目 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 在服务器日志中未找到语句。这些是无害的日志语句。
 
 ### 已弃用的功能和 API {#deprecated-17964}
 
