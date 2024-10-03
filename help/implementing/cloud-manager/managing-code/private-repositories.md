@@ -4,14 +4,14 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 36%
+source-wordcount: '928'
+ht-degree: 33%
 
 ---
 
-# 在 Cloud Manager 中添加专用存储库 {#private-repositories}
+# 在Cloud Manager中添加专用GitHub存储库 {#private-repositories}
 
 通过设置Cloud Manager以与专用GitHub存储库集成，您可以使用Cloud Manager直接在GitHub中验证代码。 此配置消除了定期将代码与Adobe存储库同步的要求。
 
@@ -33,12 +33,12 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 
 ## 配置 {#configuration}
 
-Cloud Manager中专用存储库的配置包括两个步骤：
+Cloud Manager中专用GitHub存储库的配置包括两个步骤：
 
-1. [将专用存储库](#add-repo)添加到所选计划。
-1. 然后，[验证专用存储库](#validate-ownership)的所有权。
+1. [将专用GitHub存储库](#add-repo)添加到所选程序。
+1. 然后，[验证私有GitHub存储库的所有权](#validate-ownership)。
 
-### 向项目群添加专用存储库 {#add-repo}
+### 向项目添加专用GitHub存储库 {#add-repo}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -69,11 +69,13 @@ Cloud Manager中专用存储库的配置包括两个步骤：
 >
 >有关在 Cloud Manager 中管理存储库的详细信息，请参阅 [Cloud Manager 存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
 
-### 验证专用存储库的所有权 {#validate-ownership}
+
+
+### 验证专用GitHub存储库的所有权 {#validate-ownership}
 
 Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权限。要授予访问权限，您需要安装 Adobe GitHub 应用程序并验证您是否拥有指定的存储库。
 
-**验证专用存储库的所有权：**
+**验证私有GitHub存储库的所有权：**
 
 1. 添加自己的存储库后，请按照&#x200B;**私有存储库所有权验证**&#x200B;对话框中的其余步骤操作。
 
@@ -104,11 +106,13 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 如果您需要稍后返回到存储库以完成验证，请在&#x200B;**存储库**&#x200B;页面上，单击代表您刚刚添加的GitHub存储库的行中的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。 在下拉列表中选择&#x200B;**所有权验证**。
 
-## 将专用存储库与 Cloud Manager 结合使用 {#using}
+
+
+## 将专用GitHub存储库与Cloud Manager结合使用 {#using}
 
 在Cloud Manager中验证GitHub存储库后，集成即完成。 您可以将该存储库与Cloud Manager结合使用。
 
-**要将专用存储库与Cloud Manager结合使用，请执行以下操作：**
+**要将专用存储库与Cloud Manager一起使用：**
 
 1. 在创建提取请求时，GitHub 检查会自动启动。
 
@@ -130,22 +134,22 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 >
 >您可以控制自动创建的管道，验证对专用存储库的每个拉取请求。请参阅 [GitHub 检查专用存储库的配置](github-check-config.md)，了解更多信息。
 
+
+
 ## 将专用存储库与管道关联 {#pipelines}
 
 已验证的专用存储库可以与[全栈和前端管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)关联。
 
->[!NOTE]
->
->专用存储库不支持 Web 层和配置管道。
+
 
 ## 限制 {#limitations}
 
 在 Cloud Manager 中使用专用存储库时会受到某些限制。
 
-* 使用Cloud Manager中的GitHub检查，无法暂停拉取请求验证。
-如果在Cloud Manager中验证GitHub存储库，则Cloud Manager始终会尝试验证为该存储库创建的拉取请求。
-* 如果从您的GitHub组织中删除了AdobeGitHub应用程序，则会删除适用于所有存储库的拉取请求验证功能。
 * 专用存储库不支持 Web 层和配置管道。
 * 在生产全栈管道上使用专用存储库时，不会创建和推送任何 Git 标记。
+* 如果从您的GitHub组织中删除了AdobeGitHub应用程序，则会删除适用于所有存储库的拉取请求验证功能。
 * 当新的提交被推送到选定的分支时，使用专用存储库和提交构建触发器的管道不会自动启动。
 * [工件重用功能](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)不适用于专用存储库。
+* 使用Cloud Manager中的GitHub检查，无法暂停拉取请求验证。
+如果在Cloud Manager中验证GitHub存储库，则Cloud Manager始终会尝试验证为该存储库创建的拉取请求。

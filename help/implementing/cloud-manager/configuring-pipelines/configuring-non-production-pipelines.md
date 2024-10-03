@@ -1,20 +1,20 @@
 ---
-title: 配置非生产管道
-description: 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
+title: 添加非生产管道
+description: 了解如何添加非生产管道，以在部署到生产环境之前测试代码的质量。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 75%
+source-wordcount: '1405'
+ht-degree: 73%
 
 ---
 
 
-# 配置非生产管道 {#configuring-non-production-pipelines}
+# 添加非生产管道 {#configuring-non-production-pipelines}
 
 了解如何配置非生产管道，以便在部署到生产环境之前测试代码的质量。
 

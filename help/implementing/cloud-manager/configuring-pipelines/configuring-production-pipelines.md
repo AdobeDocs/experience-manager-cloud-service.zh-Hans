@@ -1,20 +1,20 @@
 ---
-title: 配置生产管道
-description: 了解如何配置生产管道以生成代码并将其部署到生产环境。
+title: 添加生产管道
+description: 了解如何添加生产管道以生成代码并将其部署到生产环境。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 69%
+source-wordcount: '1376'
+ht-degree: 67%
 
 ---
 
 
-# 配置生产管道 {#configure-production-pipeline}
+# 添加生产管道 {#configure-production-pipeline}
 
 了解如何配置生产管道以生成代码并将其部署到生产环境。 生产管道首先将代码部署到暂存环境，并在获得批准后将相同的代码部署到生产环境。
 
@@ -30,7 +30,7 @@ ht-degree: 69%
 >
 >在初始设置后，您可以[编辑管道设置](managing-pipelines.md)。
 
-## 添加新生产管道 {#adding-production-pipeline}
+## 添加新的生产管道 {#adding-production-pipeline}
 
 在设置项目并具有至少一个使用 [!UICONTROL Cloud Manager] UI 的环境后，便可以执行以下步骤来添加非生产管道。
 

@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ff7b76f7892269f6ca001ff2c079bc693c06d93
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 30%
+source-wordcount: '832'
+ht-degree: 26%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 30%
 
 在Cloud Manager中检查域名状态之前满足这些要求。
 
-* 首先为您的自定义域添加TXT记录，如文档[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)中所述。
+* 首先为您的自定义域添加EV/OV证书，如文档[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)中所述。
 
 ## 检查自定义域名的状态 {#how-to}
 
@@ -45,13 +45,13 @@ ht-degree: 30%
 
 ## 验证状态 {#statuses}
 
-Cloud Manager通过[TXT值](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)验证域所有权，并显示以下状态消息之一。
+Cloud Manager通过客户管理的证书验证域所有权。 完成后，它会显示以下状态消息之一：
 
 | 状态 | 描述 |
 | --- | --- |
-| 域验证失败 | TXT值缺失或检测到错误。<br>按照状态消息中提供的说明解决问题。 准备就绪后，您必须选择状态旁边的&#x200B;**再次验证**&#x200B;图标。 |
+| 域验证失败 | 客户管理的EV/OV证书缺失或检测到错误。<br>按照状态消息中提供的说明解决问题。 准备就绪后，您必须选择状态旁边的&#x200B;**再次验证**&#x200B;图标。 |
 | 正在进行域验证 | 正在进行验证。<br>选择状态旁边的&#x200B;**再次验证**&#x200B;图标后，通常会看到此状态。 由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。 |
-| 已验证 — 部署失败 | TXT验证成功，但CDN部署失败。<br>在这种情况下，请与您的Adobe代表联系。 |
+| 已验证 — 部署失败 | EV/OV证书验证成功，但CDN部署失败。<br>在这种情况下，请与您的Adobe代表联系。 |
 | 域已验证和部署 | 此状态表示您的自定义域名已准备好使用。<br>此时，您的自定义域名已准备好进行测试并指向Cloud Manager域名。 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)以了解详情。 |
 | 正在删除 | 正在删除自定义域名。 |
 | 删除失败 | 删除自定义域名失败，必须重试。<br>请参阅[管理自定义域名](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)以了解详情。 |
@@ -63,7 +63,7 @@ Cloud Manager通过[TXT值](/help/implementing/cloud-manager/custom-domain-names
 
 ### 域未安装错误 {#domain-not-installed}
 
-在 TXT 记录的域验证过程中可能会发生此错误，即使您已经检查过该记录是否已适当更新。
+此错误可能会在EV/OV证书的域验证期间发生，即使您已经检查证书是否已适当更新。
 
 #### 错误原因 {#cause}
 

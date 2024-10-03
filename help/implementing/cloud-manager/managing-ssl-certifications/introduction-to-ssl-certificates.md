@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 484f7b0fd8917902d028434451964dd9df3e3445
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 23%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 23%
 
 # SSL 证书简介{#introduction}
 
-了解Cloud Manager为您提供的自助服务工具，用于安装和管理SSL证书。
+了解Cloud Manager为您提供的自助服务工具，用于安装和管理SSL（安全套接字层）证书。
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -32,7 +32,7 @@ ht-degree: 23%
 
 >[!IMPORTANT]
 >
->Cloud Manager 不提供 SSL 证书或私钥。 这些必须从证书颁发机构（受信任的第三方组织）获得。 一些知名的证书颁发机构包括&#x200B;*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*&#x200B;和&#x200B;*Verisign*。
+>Cloud Manager 不提供 SSL 证书或私钥。 这些部分必须从证书颁发机构（受信任的第三方组织）获得。 一些知名的证书颁发机构包括&#x200B;*DigiCert*、*Let&#39;s Encrypt*、*GlobalSign*、*Entrust*&#x200B;和&#x200B;*Verisign*。
 
 ## 使用Cloud Manager管理证书 {#cloud-manager}
 
@@ -40,10 +40,10 @@ Cloud Manager提供自助服务工具来安装和管理SSL证书，确保用户�
 
 | | 模型 | 描述 |
 | --- | --- | --- |
-| 1 | **[Adobe托管证书(DV)](#adobe-managed)** | Cloud Manager允许用户配置Adobe为快速域设置而提供的DV（域验证）证书。 |
-| 2 | **[客户管理的证书(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS（传输层安全性）服务，允许您管理自己的OV和EV SSL证书以及来自第三方证书颁发机构的私钥，如&#x200B;*让我们加密*。 |
+| A | **[Adobe托管证书(DV)](#adobe-managed)** | Cloud Manager允许用户配置Adobe为快速域设置而提供的DV（域验证）证书。 |
+| B | **[客户管理的证书(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS（传输层安全性）服务，允许您管理您拥有的OV和EV SSL证书以及来自第三方证书颁发机构的私钥，例如&#x200B;*让我们加密*。 |
 
-这两种模型均提供以下一般特征。
+这两种模型都提供了以下用于管理证书的常规功能：
 
 * 每个 Cloud Manager 环境都可以使用多个证书。
 * 私钥可以颁发多个 SSL 证书。
@@ -51,7 +51,7 @@ Cloud Manager提供自助服务工具来安装和管理SSL证书，确保用户�
 
 >[!IMPORTANT]
 >
->[若要添加自定义域并将其关联到环境，](/help/implementing/cloud-manager/custom-domain-names/introduction.md)您必须具有覆盖该域的有效SSL证书。
+>[要添加自定义域并将其与环境](/help/implementing/cloud-manager/custom-domain-names/introduction.md)关联，您必须具有覆盖该域的有效SSL证书。
 
 ### Adobe托管证书 {#adobe-managed}
 
@@ -72,24 +72,24 @@ OV和EV证书提供CA验证的信息。 此类信息可帮助用户评估网站�
 
 >[!TIP]
 >
->如果您有多个自定义域，并且不希望每次添加域时都上传证书，则可以通过获取具有多个域的一个证书来受益。
+>如果您有多个自定义域，则可能不希望每次添加新域时都上载证书。 在这种情况下，您可以从获取覆盖多个域的单个证书中获益。
 
 >[!NOTE]
 >
 >如果安装了两个证书覆盖同一个域，则会应用更准确的证书。
 >
->例如，如果您的域是`dev.adobe.com`，并且您有一个覆盖`*.adobe.com`的证书和一个覆盖`dev.adobe.com`的证书，则将应用后者，因为它更准确。
+>例如，如果您的域是`dev.adobe.com`，并且您有一个用于`*.adobe.com`的证书和一个用于`dev.adobe.com`的证书，则使用更具体的证书(`dev.adobe.com`)。
 
 #### 客户管理的证书要求 {#requirements}
 
-如果您选择上传自己的EV/OV证书，该证书必须满足以下要求。
+如果您选择上传自己的EV/OV证书，该证书必须满足以下要求：
 
 * AEM as a Cloud Service接受符合OV（组织验证）或EV（扩展验证）策略的证书。
    * Cloud Manager不支持上传您自己的DV（域验证）证书。
 * 任何证书都必须是来自受信任证书颁发机构的X.509 TLS证书，并具有匹配的2048位RSA私钥。
 * 不接受自签名证书。
 
-#### 客户管理的证书格式 {#certificate-format}
+#### 客户管理的证书的格式 {#certificate-format}
 
 SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。PEM格式的通用文件扩展名包括`.pem,`。 `crt`, `.cer`, 和 `.cert`.
 

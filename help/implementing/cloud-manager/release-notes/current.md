@@ -1,19 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.9.0 的发行说明
-description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2024.9.0 发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.10.0 的发行说明
+description: 了解AEM as a Cloud Service中Cloud Manager 2024.10.0的发行说明。
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
-workflow-type: ht
-source-wordcount: '367'
-ht-degree: 100%
+source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+workflow-type: tm+mt
+source-wordcount: '472'
+ht-degree: 13%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.9.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.10.0 的发行说明 {#release-notes}
 
-本页记载 AEM as a Cloud Service 中 Cloud Manager 2024.9.0 版本的发行说明。
+本页记载 AEM as a Cloud Service 中 Cloud Manager 2024.10.0 版本的发行说明。
 
 >[!NOTE]
 >
@@ -21,41 +20,64 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 版本 2024.9.0 的发布日期是 2024 年 9 月 5 日。下一个版本计划于 2024 年 10 月 3 日发布。
+AEM as a Cloud Service中的Cloud Manager 2024.10.0版的发布日期是2024年10月3日。
+
+下一个版本计划于2024年11月14日发布。
 
 ## 新增功能 {#what-is-new}
 
-* **体验审核仪表板**
+* <!-- BOTH CS & AMS --> Cloud Manager中使用的AEM原型版本现已更新到版本26。 请参阅[https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
-  Adobe Cloud Manager 的[增强型体验审核仪表板](/help/implementing/cloud-manager/experience-audit-dashboard.md)由 Google Lighthouse 提供支持，可通过评估核心网络生命力、SEO 和可访问性量度，提供有关 AEM Sites 质量和性能的见解。它通过提供可行的建议帮助用户确定需要改进的领域，使团队能够增强用户体验、页面加载时间和网站合规性。该仪表板简化了对重要网站量度的监控，并确保 AEM 应用程序能够满足性能和可访问性方面的高标准。
+<!-- (CMGR-59817) -->
 
-* **Adobe 生成和管理的域验证证书：**
+* <!-- CS ONLY --> 添加或编辑网络基础架构时，将根据以下规则验证IP地址和网络掩码字段中的值：
 
-  借助 Cloud Manager，您现在可以[自助使用 Adobe 生成和管理的 DV（域验证）SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。此功能为您提供最快捷、最简单、最具成本效益的解决方案，为您的在线组织或业务创建一个安全的网站。<!-- CMGR-52403 -->
+   * 地址空间不得与连接地址空间中定义的地址重叠。
+   * DNS地址必须属于连接地址空间中定义的网络掩码或公用。
 
-  >[!NOTE]
-  >
-  >[Content Hub](/help/assets/product-overview.md) 客户计划分阶段逐步推出此功能。
+  ![添加网络基础结构对话框](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
 
-* **Cloud Manager 中的 Edge Delivery Services 支持：**
-
-  如果您在 AEM Sites 中具有 Edge Delivery Services 许可证，[您现在可以直接通过 Cloud Manager 在您的网站中加入 Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。此功能可实现引导式、自助式的 Go Live 体验。它还统一了所有 AEM 属性中的域名管理、SSL 证书和 CDN 映射等基本工作流程，确保实现一致性和高效率。<!-- CMGR-49859 -->
+* <!-- CS ONLY --> 正在更改用于编制索引、安装可变内容和转换作业的环境部署日志的格式。
 
   >[!NOTE]
   >
-  >[Content Hub](/help/assets/product-overview.md) 客户计划分阶段逐步推出此功能。
+  >这项变更计划分阶段推出，预计完成日期为2024年12月。
 
-* 使用 GitHub 存储库的客户现在可以创建和使用 Web Tier Config 管道。<!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
+  ![部署到生产卡](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
 
-<!--
-## Early adoption program {#early-adoption}
+  日志的格式将从以下所示的简单条目更改：
 
-For a chance to test some upcoming features, be a part of Adobe's early adoption program. -->
+  ![显示简单条目的日志文件](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
+
+  到下面所示的JSON条目：
+
+  ![日志文件，显示json条目](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
 
 
-## 错误修复
+## 早期采用计划 {#early-adoption}
 
-* SSL 证书表视图的分页功能现在可以正常工作。<!-- (CMGR-60804 - [UI] Pagination doesn't work for ssl certificates) -->
-* 使用执行中的&#x200B;**提升版本**&#x200B;按钮时提升的工件版本有误。<!-- ( KEEP IN? SP: YES CMGR-59519 and Slack https://cq-dev.slack.com/archives/C07LFPN2R08/p1725408253474129 ) -->
+加入Cloud Manager的早期采用计划，并有机会测试即将推出的功能。
 
-<!-- * Slack message says next release? SP: REMOVE (Leave in for now) SSL Certificates table in Cloud Manager now enables pagination in the user experience. ( https://jira.corp.adobe.com/browse/CMGR-61041 and Slack https://cq-dev.slack.com/archives/C07LFRE9QJU/p1725408553760009 ) --<>
+### 自带Git — 现在支持GitLab和Bitbucket {#gitlab-bitbucket}
+
+<!-- BOTH CS & AMS -->
+
+**自带Git**&#x200B;功能已扩展到包括对GitLab和Bitbucket等外部存储库的支持。 此新支持是对专用和企业GitHub存储库的现有支持之外的支持。 添加这些新存储库时，您还可以将其直接链接到管道。 您可以在公共云平台上或私有云或基础架构内托管这些存储库。 此集成还消除了对与Adobe存储库进行持续代码同步的需求，并提供了在合并到主分支之前验证拉取请求的功能。
+
+请参阅[在Cloud Manager中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
+
+![添加存储库对话框](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>目前，开箱即用的拉取请求代码质量检查专供GitHub托管的存储库使用，但正在研究如何将此功能扩展到其他Git供应商。
+
+如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)发送电子邮件。 请务必包括您要使用的Git平台，以及您使用的是专用/公共还是企业存储库结构。
+
+
+<!-- ## Bug fixes
+
+
+
+
+## Known Issues {#known-issues} -->

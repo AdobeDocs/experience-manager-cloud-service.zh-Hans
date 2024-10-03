@@ -1,8 +1,8 @@
 ---
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1202'
+ht-degree: 94%
 
 ---
 # 代码片段 {#snippets}
@@ -197,7 +197,7 @@ ht-degree: 0%
 >* 传递[交互式 3D 体验](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
 >* 其他 [Dynamic Media 资源库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
 
-## 记录支持工单 {#support-ticket}
+## 记录支持票证 {#support-ticket}
 
 如果产品问题需要额外调查和故障排除，并且需要满足响应 SLT，则可提交支持工单。
 

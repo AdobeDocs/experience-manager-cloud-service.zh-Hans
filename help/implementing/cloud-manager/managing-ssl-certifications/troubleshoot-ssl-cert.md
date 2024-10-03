@@ -1,13 +1,13 @@
 ---
-title: SSL证书错误疑难解答
+title: 解决 SSL 证书错误
 description: 了解如何通过识别常见原因来对SSL证书错误进行故障排除，以便维护安全连接。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9ffec422ec4b5a45962f07142c49a466e8892754
+source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 63%
+source-wordcount: '377'
+ht-degree: 56%
 
 ---
 
@@ -15,6 +15,18 @@ ht-degree: 63%
 # SSL证书错误疑难解答 {#certificate-errors}
 
 如果证书安装不正确或不符合Cloud Manager的要求，则可能会出现某些错误。
+
++++**证书无效**
+
+出现此错误是因为客户添加了加密的私钥并使用DER格式的私钥。
+
++++
+
++++**私钥必须是PKCS 8格式**
+
+出现此错误是因为客户添加了加密的私钥并使用DER格式的私钥。
+
++++
 
 +++**正确的证书顺序**
 
