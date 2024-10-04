@@ -4,10 +4,10 @@ description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 09a1d6065c42406f1004eb1bdd7dbf902edb279f
+source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
 workflow-type: tm+mt
-source-wordcount: '5685'
-ht-degree: 100%
+source-wordcount: '5675'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 在与 SaaS 供应商（例如 CRM 供应商）集成，或者对于在 AEM as a Cloud Service 之外提供 IP 地址允许列表的其他集成时，专用 IP 地址可以增强安全性。通过将专用 IP 地址添加到允许列表，可以确保只有来自 AEM Cloud Service 的流量允许流向外部服务。这是在允许的其他所有 IP 之外的流量。
 
-相同的专用 IP 应用于您 Adobe 组织中的所有程序以及每个程序中的所有环境。它适用于“创作”和“发布”服务。
+相同的专用IP适用于程序中的所有环境，并适用于Author和Publish服务。
 
 如果不启用专用 IP 地址功能，来自 AEM as a Cloud Service 的流量会流经与 AEM as a Cloud Service 的其他客户共享的一组 IP。
 
