@@ -4,10 +4,10 @@ description: 了解如何使用新的资源 UI（资源视图）批量导入资�
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 97%
+source-wordcount: '1881'
+ht-degree: 90%
 
 ---
 
@@ -125,11 +125,23 @@ AEM Assets 视图中的“批量导入”功能使管理员能够将大量资源
    >* 如果在创建 Dropbox 应用程序时选择&#x200B;**整个 Dropbox**，并且包含资源的文件夹存在于 `https://www.dropbox.com/home/bulkimport-assets`，则在&#x200B;**[!UICONTROL 源文件夹]**&#x200B;字段中指定 `bulkimport-assets`。
    >* 如果在创建 Dropbox 应用程序时选择&#x200B;**应用程序文件夹**，并且包含资源的文件夹存在于 `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`，则在&#x200B;**[!UICONTROL 源文件夹]**&#x200B;字段中指定 `bulkimport-assets`，其中 `BulkImportAppFolderScope` 表示应用程序的名称。这种情况下，自动在 `home` 之后添加 `Apps`。
 
+   >[!NOTE]
+   >
+   >如果您使用OneDrive作为数据源，请根据以下规则指定源文件夹路径：
+   >* 仅指定根文件夹名称，不包含域。 如果文件夹的完整URL路径为`https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`，请在&#x200B;**[!UICONTROL Source文件夹]**&#x200B;字段中指定`/Importfolder/`。
+   >* 如果文件夹名称包含多个用空格分隔的单词，请在“批量导入”配置中指定带有空格的名称。
+   >* 源文件夹必须位于目录的根目录下。 不支持文件夹路径。
+
 1. （可选）选择&#x200B;**[!UICONTROL “导入后删除源文件”]**&#x200B;选项，以在文件导入到 Experience Manager Assets 后，从源数据存储中删除原始文件。
 1. 选择&#x200B;**[!UICONTROL “导入模式”。]**&#x200B;选择&#x200B;**[!UICONTROL “跳过”]**、**[!UICONTROL “代替”]**，或者&#x200B;**[!UICONTROL 创建版本。]**跳过模式是默认模式，在该模式下，如果资源已经存在，则摄取器会跳过导入该资源。
    ![导入源详细信息](/help/assets/assets/bulk-import-source-details.png)
 
 1. （可选）在&#x200B;**[!UICONTROL 元数据文件]**&#x200B;字段中指定要导入的元数据文件（以 CSV 格式提供）。元数据源文件必须位于源文件夹中。单击&#x200B;**[!UICONTROL 下一步]**，导航至&#x200B;**[!UICONTROL 位置和过滤器]**。
+
+   >[!NOTE]
+   >
+   >根据您组织的安全规则，可能需要管理员同意才能使用此应用程序连接到批量导入工具。 如果需要，管理员需要先征得同意，然后才能保存批量导入配置。
+
 1. 要使用&#x200B;**[!UICONTROL 资源目标文件夹]**&#x200B;字段在 DAM 中定义要导入资源的位置，请指定路径。例如：`/content/dam/imported_assets`。
 1. （可选）在&#x200B;**[!UICONTROL “选择筛选器”]**&#x200B;部分，在&#x200B;**[!UICONTROL 按最小尺寸过滤]**&#x200B;字段中提供资源的最小文件大小（MB），以将其包括在摄取过程中。
 1. （可选）在&#x200B;**[!UICONTROL 按最大尺寸过滤]**&#x200B;字段中，以 MB 为单位提供资源的最大文件大小，以将其包括在摄取过程中。
