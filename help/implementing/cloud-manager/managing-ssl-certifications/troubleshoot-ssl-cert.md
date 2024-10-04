@@ -4,7 +4,7 @@ description: 了解如何通过识别常见原因来对SSL证书错误进行故�
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 56%
@@ -18,13 +18,13 @@ ht-degree: 56%
 
 +++**证书无效**
 
-出现此错误是因为客户添加了加密的私钥并使用DER格式的私钥。
+出现此错误是因为客户使用了加密的私钥并以DER格式提供了密钥。
 
 +++
 
 +++**私钥必须是PKCS 8格式**
 
-出现此错误是因为客户添加了加密的私钥并使用DER格式的私钥。
+出现此错误是因为客户使用了加密的私钥并以DER格式提供了密钥。
 
 +++
 
