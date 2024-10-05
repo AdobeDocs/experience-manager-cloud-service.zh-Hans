@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2371'
 ht-degree: 73%
 
 ---
@@ -50,13 +50,13 @@ ht-degree: 73%
 
    ![环境信息卡](assets/no-environments.png)
 
-   * **添加环境**&#x200B;选项也可在&#x200B;**环境**&#x200B;选项卡上使用。
+   * **添加环境**&#x200B;选项也可在![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**&#x200B;选项卡上使用。
 
      ![“环境”信息卡](assets/environments-tab.png)
 
    * **添加环境**&#x200B;选项可能由于缺少权限或根据许可的资源而被禁用。
 
-1. 在出现的&#x200B;**添加环境**&#x200B;对话框中：
+1. 在&#x200B;**添加环境**&#x200B;对话框中：
 
    * 选择&#x200B;[**环境类型**](#environment-types)。
       * 可用/使用的环境数显示在环境类型名称后面的括号中。
@@ -310,7 +310,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 >[!TIP]
 >
->有关详细信息，请参阅文档[自定义域名简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)。
+>有关详细信息，请参阅[自定义域名简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)。
 
 ## 管理 IP 允许列表 {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ Cloud Manager 支持针对 Sites 程序的作者、发布和预览服务的 IP �
 
 >[!TIP]
 >
->有关详细信息，请参阅文档[IP允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+>有关详细信息，请参阅[IP允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。

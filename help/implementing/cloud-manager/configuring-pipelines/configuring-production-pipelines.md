@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 67%
+source-wordcount: '1375'
+ht-degree: 66%
 
 ---
 
@@ -128,7 +128,7 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->专用存储库不支持 Web 层和配置管道。请参阅文档[在 Cloud Manager 中添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)，了解详细信息和完整的限制列表。
+>专用存储库不支持 Web 层和配置管道。有关详细信息和完整的限制列表，请参阅文档[在Cloud Manager中添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)。
 
 选择部署类型后，完成创建生产目标部署管道的步骤相同。
 

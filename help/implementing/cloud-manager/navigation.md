@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 42%
+source-wordcount: '1660'
+ht-degree: 40%
 
 ---
 
@@ -45,7 +45,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 >[!TIP]
 >
->有关程序的详细信息，请参阅文档[程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
+>有关程序的详细信息，请参阅[了解程序和程序类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)。
 
 ### 工具栏 {#my-programs-toolbars}
 
@@ -229,7 +229,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 在[Cloud Manager标题](#cloud-manager-header-2)的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示或隐藏选项卡的侧菜单。
 
-### 呼叫段 {#cta}
+### 行动号召 {#cta}
 
 行动号召部分会根据您的程序状态为您提供有用的信息。 对于新计划，您可能会看到给出的后续步骤以及上线日期提醒，[在计划创建期间设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)。
 
@@ -241,11 +241,11 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ### 环境信息卡 {#environments}
 
-**环境**&#x200B;信息卡可以为您提供环境概述以及快速操作的链接。
+**环境**&#x200B;信息卡可以为您提供环境概述和快速操作的链接。
 
 **环境**&#x200B;信息卡仅列出三个新环境。 单击&#x200B;**全部显示**&#x200B;按钮，查看程序的所有环境。
 
-请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)文档，了解有关如何管理环境的详细信息。
+另请参阅[管理环境](/help/implementing/cloud-manager/manage-environments.md)。
 
 ### 管道信息卡 {#pipelines}
 
@@ -253,7 +253,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 **管道**&#x200B;信息卡仅会列出三条管道。单击&#x200B;**全部显示**&#x200B;按钮，查看程序的所有管道。
 
-请参阅[管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)文档，了解有关如何管理管道的详细信息。
+有关如何管理管道的详细信息，另请参阅[管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)。
 
 ### 性能卡 {#performance}
 
@@ -261,6 +261,6 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![性能卡](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 
-### 有用的资源 {#useful-resources}
+### 实用资源 {#useful-resources}
 
 **实用资源**&#x200B;部分提供了 Cloud Manager 其他学习资源的链接。

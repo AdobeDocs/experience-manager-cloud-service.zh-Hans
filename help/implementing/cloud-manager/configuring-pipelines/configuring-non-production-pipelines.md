@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 73%
+source-wordcount: '1402'
+ht-degree: 71%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->专用存储库不支持 Web 层和配置管道。请参阅文档[在 Cloud Manager 中添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)，了解详细信息和完整的限制列表。
+>专用存储库不支持 Web 层和配置管道。有关详细信息和完整的限制列表，请参阅[在Cloud Manager中添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)。
 
 选择部署类型后，完成创建非生产目标部署管道的步骤相同。
 
@@ -165,7 +165,7 @@ ht-degree: 73%
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 
-## 跳过 Dispatcher 程序包 {#skip-dispatcher-packages}
+## 跳过Dispatcher包 {#skip-dispatcher-packages}
 
 如果希望将 Dispatcher 程序包作为管道的一部分构建，但不希望将其发布来构建存储，则可以禁用发布它们，这可能会缩短管道运行持续时间。
 

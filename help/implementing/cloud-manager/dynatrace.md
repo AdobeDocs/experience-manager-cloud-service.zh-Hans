@@ -5,9 +5,9 @@ exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Dynatrace客户可通过客户支持票证请求连接，从而监控其AEM环�
 | **字段** | **描述** |
 |---|---|
 | [!DNL Dynatrace Environment URL] | Dynatrace环境URL。<br><br>对于Dynatrace SaaS客户，格式为`https://<your-environment-id>.live.dynatrace.com`。<br><br>对于Dynatrace托管客户，格式为`https://<your-managed-url>/e/<environmentId>` |
-| [!DNL Dynatrace Environment ID] | 您的Dynatrace环境ID。 请查看[如何获取Dynatrace连接详细信息？](#how-do-i-get-my-dynatrace-connection-details)以了解如何获取此项。 |
-| [!DNL Dynatrace Environment Token] | 您的Dynatrace环境令牌。 请查看[如何获取Dynatrace连接详细信息？](#how-do-i-get-my-dynatrace-connection-details)以了解如何获取此项。<br><br>这应视为机密，因此请使用适当的安全做法。 例如，密码可在客户支持票证可以引用的&#x200B;**zerobin.net**&#x200B;等网站中保护该密码以及密码。 |
-| [!DNL Dynatrace API access token] | Dynatrace环境的API访问令牌。  有关如何创建此令牌的信息，请参阅[创建Dynatrace API访问令牌](#create-dynatrace-access-token)。<br><br>这应视为机密，因此请使用适当的安全做法。 例如，密码可在客户支持票证可以引用的&#x200B;**zerobin.net**&#x200B;等网站中保护该密码以及密码。<br><br>注意：只有Dynatrace Managed才需要此项。 |
+| [!DNL Dynatrace Environment ID] | 您的Dynatrace环境ID。 请参阅[如何获取Dynatrace连接详细信息？](#how-do-i-get-my-dynatrace-connection-details)以了解如何获取此项。 |
+| [!DNL Dynatrace Environment Token] | 您的Dynatrace环境令牌。 请参阅[如何获取Dynatrace连接详细信息？](#how-do-i-get-my-dynatrace-connection-details)以了解如何获取此项。<br><br>这应视为机密，因此请使用适当的安全做法。 例如，密码可在客户支持票证可以引用的&#x200B;**zerobin.net**&#x200B;等网站中保护该密码以及密码。 |
+| [!DNL Dynatrace API access token] | Dynatrace环境的API访问令牌。 请参阅[创建Dynatrace API访问令牌](#create-dynatrace-access-token)以了解如何创建该令牌。<br><br>这应视为机密，因此请使用适当的安全做法。 例如，密码可在客户支持票证可以引用的&#x200B;**zerobin.net**&#x200B;等网站中保护该密码以及密码。<br><br>注意：只有Dynatrace Managed才需要此项。 |
 | [!DNL Dynatrace ActiveGate Port] | AEM集成应连接到的Dynatrace ActiveGate端口。<br><br>注意：只有Dynatrace Managed才需要此项。 |
 | [!DNL Dynatrace ActiveGate Network Zone] | 您的[Dynatrace ActiveGate网络区域](https://docs.dynatrace.com/docs/manage/network-zones)可在数据中心和网络区域之间高效地路由AEM监控数据。<br><br>注意：Dynatrace ActiveGate网络区域是可选的。 |
 | [!DNL AEM Environment ID(s)] | Dynatrace要监视的AEM环境ID。 |
