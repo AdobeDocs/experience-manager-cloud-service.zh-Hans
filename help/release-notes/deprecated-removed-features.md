@@ -4,10 +4,10 @@ description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
+source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
 workflow-type: tm+mt
-source-wordcount: '2496'
-ht-degree: 82%
+source-wordcount: '2504'
+ht-degree: 81%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="AEM as a Cloud Service 中已弃用和已删除的功能"
->abstract="AEM as a Cloud Service 具有云原生部署模型。某些功能和特性已由云原生对应功能和特性取代，此选项卡显示了它们。"
+>abstract="AEM as a Cloud Service 具有云原生部署模型。某些功能和特性已被云原生对应功能和特性取代，此选项卡显示了这些功能。"
 
 Adobe 在不断地评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。此外，由于 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供了云原生部署模型，因此某些功能和特性已由云原生对应功能和特性取代。
 
@@ -35,6 +35,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 
 | 功能 | 已弃用功能 | 替换 |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | [JavaScript使用API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **社交媒体状态**&#x200B;的体验片段属性。 | 该功能将很快被删除。 |
 | [!DNL Sites] | 基于模板的简单内容片段。 | 现已提供[基于模型的结构化内容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | `DAM Asset Update` 工作流处理摄取的图像。 | 资源提取现在使用[资源微服务](/help/assets/asset-microservices-overview.md)。 |
@@ -57,7 +58,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 | [!DNL Sites] | 设计导入程序 | 此功能已被删除，因为 [!DNL Experience Manager] 存储库的不可更改部分在运行时无法访问。 | 已删除 |
 | [!DNL Assets] | [!DNL Assets] 无法与 Marketing Cloud Assets 核心服务和 Creative Cloud 服务进行共享。 | 要与 [!DNL Adobe Creative Cloud] 集成，请使用 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。 | 已删除 |
 | [!DNL Foundation] | 对 Apache Sling 数据源（OSGi 包 org.apache.sling.datasource）的支持 | 不适用 | 已删除 |
-| [!DNL Foundation] | 对 JST 脚本模板（OSGi 包 org.apache.sling.scripting.jst）的支持 | 不适用 | 已删除 |
+| [!DNL Foundation] | 支持JST脚本模板（OSGi包org.apache.sling.scripting.jst） | 不适用 | 已删除 |
 | [!DNL Foundation] | 对 Apache Felix Http Whiteboard 的支持 | OSGi Http Whiteboard | 2022 年 3 月 |
 | [!DNL Foundation] | 支持 com.adobe.granite.oauth.server | Adobe IMS 集成 | 2023 年 3 月 |
 | [!DNL Foundation] | 支持 org.apache.sling.serviceusermapping 功能，以[获取服务用户 ID](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不适用 | 8/30/24 |

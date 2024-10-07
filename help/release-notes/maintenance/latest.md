@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
+source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 98%
+source-wordcount: '1411'
+ht-degree: 89%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 98%
 * SITES - 24166：Touch-UI 编辑器的远程资产缓解。
 * SITES - 24409：仅在一种 HTTP 方法上注册所有请求处理器。
 * SITES - 25008：改进对 PersistenceExceptions 和权限问题的处理。
-* SITES - 24821：[Xwalk] 将 aem.page / aem.live 设为默认设置。
+* SITES - 24821：将aem.page / aem.live设为默认值。
 
 ### 修复的问题 {#fixed-issues-17964}
 
@@ -107,7 +107,7 @@ ht-degree: 98%
 * SITES - 23899：事件：页面事件延迟或根本没有生成
 * SITES - 23961：事件：当存在配置文件夹时，创建带有引用的内容片段模型失败
 * SITES - 23963：事件：页面删除事件有时不会发生
-* SITES - 23443：GraphQL：GraphQL Cursor 查询行为不一致。
+* SITES - 23443： GraphQL： GraphQL光标查询不一致行为。
 * SITES - 10994：键盘焦点顺序不合逻辑。
 * SITES - 16357：AEM：Sites 菜单中的“设置分析”选项卡中的按钮被截断。
 * SITES - 19836：容器中的幽灵组件显示在发布和预览实例上。
@@ -123,7 +123,7 @@ ht-degree: 98%
 * SITES - 24025：AEM 中的 302 重定向使用内部 DNS 而不是公共 DNS 返回位置标头
 * SITES - 24036：需要对 ASCII 格式的 AEM RTE 持久字符进行调查
 * SITES - 24317：代理配置不适用于基本身份验证
-* SITES - 24918：[Xwalk] 修复使用专用 IP 出口时偶尔返回的 504 错误。
+* SITES - 24918：修复使用专用ip出口时偶尔返回504错误。
 
 ### 已知问题 {#known-issues-17964}
 
@@ -131,9 +131,19 @@ ht-degree: 98%
 
 ### 已弃用的功能和 API {#deprecated-17964}
 
-请注意，我们正在更新 `com.day.cq.wcm.api`，并且在当前版本中，我们已将其中的一些方法和类标记为 `@Deprecated`。这些将在未来的版本中删除，所以如果您正在使用其中任何一个，请考虑切换到其建议的替代方案。
-
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
+
+以下是最近弃用的功能或正在弃用的功能的摘要。
+
+#### JavaScript使用API {#javascript-use-api}
+
+[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)已正式弃用，因为用户调试和维护利用API的代码时遇到挑战，并且与Java替代方案相比，存在性能限制。
+
+您应该转换到[Java Use API，](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)，它提供了更好的性能、更轻松的调试和更强大的长期支持。
+
+#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
+
+请注意，Adobe正在更新`com.day.cq.wcm.api`。 其某些方法和类在当前版本中被标记为`@Deprecated`。 这些功能将在未来版本中删除。 请考虑改用他们建议的替代方案。
 
 ### 安全修复 {#security-17964}
 
