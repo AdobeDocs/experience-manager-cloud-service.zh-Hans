@@ -5,21 +5,28 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 6%
+source-wordcount: '1038'
+ht-degree: 9%
 
 ---
 
 
 # 管理 SSL 证书 {#managing-ssl-certificates}
 
-了解如何使用Cloud Manager检查Adobe托管和客户托管的SSL证书的状态以及如何删除它们。 对于客户管理的证书，您还可以编辑和更新（替换）它们。
+了解如何使用 Cloud Manager 检查 SSL 证书的状态，以及如何编辑、替换、更新和删除这些证书。
 
 ## 检查SSL证书的状态 {#checking-status-an-ssl-certificate}
 
-可以从&#x200B;**SSL证书**&#x200B;页面一眼就了解SSL证书的状态。
+Cloud Manager概述了程序的所有证书的状态。
+
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
+1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示侧菜单。
+1. 在&#x200B;**服务**&#x200B;标题下，单击![锁定已关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL证书**。
+
+**SSL证书**&#x200B;页提供SSL证书的状态。
 
 | SSL证书的状态 | 描述 |
 | --- | --- |
@@ -51,6 +58,12 @@ ht-degree: 6%
    * 在&#x200B;**证书链**&#x200B;字段（或信任链）中，粘贴证书链。
 
 1. 单击&#x200B;**更新**&#x200B;以保存更改并自动应用它们。
+
+>[!NOTE]
+>
+>如果您有两个或更多SAN证书覆盖同一SAN域条目，如果该域由一个证书覆盖，而另一个证书已更新，则现在将为域安装后者。
+>
+>有关详细信息，请参阅[SSL证书问题疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)。
 
 ## 替换过期的客户管理的SSL证书 {#replace-ssl-certificate}
 
@@ -109,4 +122,3 @@ ht-degree: 6%
 有关详细信息，请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
 **IP允许列表**&#x200B;和&#x200B;**环境**&#x200B;页面上也提供了类似的消息，这些环境具有IP允许列表或自定义域名的预先存在的CDN配置。
-

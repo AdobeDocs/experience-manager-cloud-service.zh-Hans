@@ -1,13 +1,13 @@
 ---
 title: 添加 SSL 证书
-description: 了解如何使用Cloud Manager的自助服务工具添加您自己的SSL证书或DV（域验证）证书。
+description: 了解如何使用Cloud Manager的自助服务工具添加您自己的SSL证书或Adobe托管的DV（域验证）证书。
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: 493c5729c3107f151685a243006b17196b74c1bd
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '541'
 ht-degree: 6%
 
 ---
@@ -15,23 +15,18 @@ ht-degree: 6%
 
 # 添加SSL证书 {#add-ssl-cert}
 
-了解如何使用Cloud Manager的自助服务工具添加客户管理的SSL证书或Adobe生成和管理的DV（域验证）证书。
+了解如何使用Cloud添加您自己的SSL证书或Adobe托管的DV（域验证）证书
 
-另请参阅[SSL证书错误疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)。
-
-## 添加SSL证书 {#adding-an-ssl-certificate}
-
-提供证书可能需要几天时间。因此，Adobe建议在任何截止日期或上线日期之前提前配置证书。
-
-请查看[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中的&#x200B;**证书要求**，以确保AEM as a Cloud Service支持您要添加的证书。
-
-用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能完成此任务。
-
->[!NOTE]
+>[!TIP]
 >
->不允许客户上传DV（域验证）证书。
+>提供证书可能需要几天时间。因此，Adobe建议，如果您要提供自己的证书，那么最好在任何截止日期或上线日期之前预配该证书。
 
-**添加SSL证书：**
+## 先决条件 {#prerequisites}
+
+* 用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能添加证书。
+* 如果您正在安装自己的证书，请务必查看[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中的&#x200B;**证书要求**。
+
+## 添加SSL证书 {#add-certificate}
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
@@ -49,51 +44,15 @@ ht-degree: 6%
    | 1 | **添加Adobe托管(DV)证书** | **添加Adobe托管(DV)证书：**<br> a。在&#x200B;**添加SSL证书**&#x200B;对话框中，选择证书类型&#x200B;**托管Adobe(DV)**。<br>![添加DV证书](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)<br>b。在&#x200B;**证书名称**&#x200B;字段中，输入要与证书关联的名称。<br>c。在&#x200B;**选择域**&#x200B;下拉列表中，选择要与DV证书关联的一个或多个域。<br>没有域可供选择？ 如果是这样，这意味着您必须添加自定义域。 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 添加完自定义域名后，请返回到本主题并再次从步骤1开始。<br>天。继续执行步骤7。 |
    | 2 | **添加客户管理的(OV/EV)证书** | **要添加客户管理的(OV/EV)证书：**<br> a。在&#x200B;**添加SSL证书**&#x200B;对话框中，选择证书类型&#x200B;**客户托管(OV/EV)**。<br>b。在&#x200B;**证书名称**&#x200B;字段中，输入证书的名称。 此字段仅供参考，可以是任何有助于您轻松引用证书的名称。<br>c。在&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;字段中，将所需值粘贴到各自的字段中。<br>![添加SSL证书对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)<br>显示值中检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，了解有关常见错误疑难解答的更多信息。<br>天。继续执行步骤7。 |
 
-<!--
-    **Add an SSL certificate:**
-    1. Select the certificate type **Customer managed (OV/EV)**.
-    1. In **Certificate name** field, enter a name for your certificate. This field is for informational purposes only and can be any name that helps you reference your certificate easily.
-    1. In the **Certificate**, **Private key**, and **Certificate chain** fields, paste the required values into their respective fields.
-
-        ![Add SSL certificate dialog box](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
-  
-    Any detected errors in values are displayed. Before you can save your certificate, you must address all errors. See [Certificate errors](#certificate-errors) to learn more about troubleshooting common errors.
-
-    **Add a DV certificate:**
-    1. Select the certificate type **Adobe managed (DV)**.
-
-        ![Adding a DC certificate](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
-
-    1. In the **Select domains** drop-down list, select one or more domains that you want associated with the DV certificate.
-
-        No domains to select? If so, it means that you must add a custom domain. See [Add a custom domain](#add-custom-domain). When you are finished, resume the steps from the beginning again. -->
-
 1. 在对话框的右下角，点击&#x200B;**保存**。
 
-   成功颁发证书后，**SSL证书**&#x200B;表中将显示绿色复选标记（有效）。
+成功颁发证书后，**SSL证书**&#x200B;表中将显示绿色复选标记。
 
 您现在已为项目添加了一个有效的SSL证书。 此步骤通常是第一个设置自定义域名的步骤。
 
 * 要设置自定义域名，请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 * 要了解如何在Cloud Manager中更新和管理SSL证书，请参阅[管理SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)。
 
-<!--
-### Add a custom domain {#add-custom-domain}
-
-Before you can add an Adobe generated and managed Domain Validated (DV) certificate, you must first add a custom domain. The process for doing so is nearly the same as detailed in [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) and [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). However, that functionality is now slightly expanded, as described below.
-
-1. When adding a custom domain name, in the **Verify domain** dialog box, select an **Adobe managed certificate**.
-
-    ![Choose Adobe-managed](assets/verify-domain-dialog.png)
-
-1. In the **Verify domain** dialog box, add a CNAME verification record to your DNS.
-
-    ![Add CNAME entry](assets/verify-domain-dialog-adobe-managed.png)
-
-1. After the domain is created, click the ellipsis button in the list of domains and select **Verify** to verify the domain.
-
-    ![Verify domain](assets/verify-domain.png) 
-
-1. Resume the task [Add a DV certificate](#adding-an-ssl-certificate). -->
-
-
+>[!TIP]
+>
+>如果在添加或管理证书时遇到问题，请参阅文档[SSL证书错误疑难解答。](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)

@@ -1,22 +1,24 @@
 ---
-title: 解决 SSL 证书错误
-description: 了解如何通过识别常见原因来对SSL证书错误进行故障排除，以便维护安全连接。
+title: SSL证书问题疑难解答
+description: 了解如何通过识别常见原因来解决SSL证书问题，以便维护安全连接。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
+source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 56%
+source-wordcount: '556'
+ht-degree: 37%
 
 ---
 
 
-# SSL证书错误疑难解答 {#certificate-errors}
+# SSL证书问题疑难解答 {#certificate-problems}
 
-如果证书安装不正确或不符合Cloud Manager的要求，则可能会出现某些错误。
+了解如何通过识别常见原因来解决SSL证书问题，以便维护安全连接。
 
 +++**证书无效**
+
+## 证书无效 {#invalid-certificate}
 
 出现此错误是因为客户使用了加密的私钥并以DER格式提供了密钥。
 
@@ -24,11 +26,15 @@ ht-degree: 56%
 
 +++**私钥必须是PKCS 8格式**
 
+## 私钥必须是PKCS 8格式 {#pkcs-8}
+
 出现此错误是因为客户使用了加密的私钥并以DER格式提供了密钥。
 
 +++
 
 +++**正确的证书顺序**
+
+## 正确的证书顺序 {#certificate-order}
 
 证书部署失败的最常见原因是中间证书或链证书的顺序不正确。
 
@@ -58,6 +64,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 +++**删除客户端证书**
 
+## 删除客户端证书 {#client-certificates}
+
 添加证书时，如果收到类似于以下内容的错误：
 
 ```text
@@ -69,6 +77,8 @@ The Subject of an intermediate certificate must match the issuer in the previous
 +++
 
 +++**证书策略**
+
+## 证书策略 {#policy}
 
 如果您看到以下错误，请检查证书的策略。
 
@@ -117,11 +127,26 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 # "DV Policy - Not Accepted"
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
++++
+
++++**证书有效期
+
+## 证书有效期 {#validity}
+
+Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。检查证书链的有效性。
 
 +++
 
-+++**证书有效日期**
++++**错误的SAN证书应用于我的域
 
-Cloud Manager 希望 SSL 证书自当前日期起至少 90 天有效。检查证书链的有效性。
+## 对我的域应用了错误的SAN证书 {#wrong-san-cert}
+
+假设您要将`dev.yoursite.com`和`stage.yoursite.com`链接到非生产环境，将`prod.yoursite.com`链接到生产环境。
+
+为了配置这些域的CDN，您需要为每个域安装一个证书，因此您安装一个用于非生产域覆盖`*.yoursite.com`的证书，另一个用于生产域覆盖`*.yoursite.com`的证书。
+
+此配置有效。 但是，当您更新其中一个证书时，因为两个证书都涵盖相同的SAN条目，所以CDN将在所有适用的域上安装最新的证书，这可能显示为意外情况。
+
+尽管这可能意外，但这不是错误，并且是基础CDN的标准行为。 如果您有两个或更多SAN证书覆盖同一SAN域条目，如果该域由一个证书覆盖，而另一个证书已更新，则现在将为域安装后者。
 
 +++
