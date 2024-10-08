@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选�
 description: 将资源选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 7590e0240f3f429831aee5d9620ea4fa6f32847b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 5%
+source-wordcount: '442'
+ht-degree: 6%
 
 ---
 
 # 与非Adobe应用程序集成 {#integrate-asset-selector-non-adobe-app}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Asset Selector允许您使用各种非Adobe应用程序或第三方应用程序进行集成，以使它们能够无缝地协同工作。
 

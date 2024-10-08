@@ -4,14 +4,17 @@ description: 在Adobe Workfront和Experience Manager元数据应用程序之间�
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1030'
 ht-degree: 4%
 
 ---
 
 # 配置Adobe Workfront和Experience Manager Assets之间的资源元数据映射 {#asset-metadata-mapping-workfront-aem-assets}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 您可以在Adobe Workfront和Experience Manager元数据应用程序之间映射as a Cloud Service资源字段。 作为映射元数据字段的结果，在将资源从Workfront发送到Experience Manager Assets时，您可以在Experience Manager Assets中查看映射的资源元数据。
 

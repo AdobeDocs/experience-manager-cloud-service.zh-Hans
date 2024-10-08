@@ -4,14 +4,17 @@ description: 将您的数字资产作为 [!DNL Cloud Service]添加到 [!DNL Ado
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '3144'
+source-wordcount: '3162'
 ht-degree: 9%
 
 ---
 
 # 将数字资产作为[!DNL Cloud Service]添加到[!DNL Adobe Experience Manager][!DNL Assets] {#add-assets-to-experience-manager}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets]接受来自多个来源的多种数字资源。 它存储二进制文件和创建的演绎版，可以使用各种工作流和[!DNL Adobe Sensei]服务进行资产处理，允许跨多个表面通过多个渠道进行分发。
 
@@ -33,7 +36,7 @@ ht-degree: 9%
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | 当创意人员和营销人员从支持的[!DNL Creative Cloud]桌面应用程序中处理资产时非常有用。 | 创意、营销人员 |
 | [资源批量引入器](#asset-bulk-ingestor) | 建议进行大规模迁移和偶尔进行批量引入。 仅适用于支持的数据存储。 | 管理员、开发人员 |
 
-## 上传资源 {#upload-assets}
+## 上传资产 {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 

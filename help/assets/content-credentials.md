@@ -2,22 +2,25 @@
 title: content credentials集成
 description: 集成到AEM Assets并在Assets View中展现的Content credentials可以提供资源历史记录的上下文，包括资源的创建方式以及参与创建该资源的人员。 就像数字内容的营养标签一样，Content credentials可以帮助提高透明度并与受众建立信任。
 role: User
-source-git-commit: 1c0ffe9d6e45f1d6b3574d1ac5611b2c2e2d00e0
+exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 0%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
+# Content Credentials {#content-credentials}
 
-# 内容凭据 {#content-credentials}
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 各品牌比以往任何时候都更关注内容透明度、人工智能披露，以及防止资产被篡改。 Adobe的Content Authenticity Initiative (CAI)计划构建符合[内容来源和真实性联盟](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA)技术标准的工具。 content credentials是一种新型加密的、易于篡改的元数据，可帮助查看者了解内容的谱系并确保品牌资产的完整性。 它们可以包含范围广泛的来源数据，用于深入分析数字资产的历史。
 
 此信息可能包括：
 
 * **颁发者或签名者：**&#x200B;颁发数字签名以验证或签署资产的实体或公司的相关信息。
-* **问题日期：**&#x200B;将内容凭据应用于资产的日期。
+* **问题日期：**&#x200B;将Content Credential应用于资源的日期。
 * **点数和使用情况：**&#x200B;有关资产制作者的信息，包括名称、社交媒体句柄或其他与身份相关的信息。
 * **进程：**&#x200B;对资源进行任何编辑或修改的记录。
 * **设备详细信息：**&#x200B;有关用于创建或编辑资源的应用程序或设备的信息。

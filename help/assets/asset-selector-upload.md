@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选�
 description: 使用资源选择器可在应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '535'
 ht-degree: 1%
 
 ---
 
 # 将文件和文件夹上传到资源选择器 {#upload-files-folders}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 您可以从本地文件系统将文件或文件夹上传到Asset Selector。 要使用本地文件系统上传文件，您通常需要使用Asset Selector微型前端应用程序提供的上传功能。
 

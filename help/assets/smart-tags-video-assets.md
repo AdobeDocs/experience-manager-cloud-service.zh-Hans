@@ -4,14 +4,17 @@ description: Experience Manager使用 [!DNL Adobe Sensei]自动将上下文和�
 feature: Smart Tags
 role: Admin, User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 3%
+source-wordcount: '1243'
+ht-degree: 4%
 
 ---
 
 # 为视频资源添加智能标记 {#video-smart-tags}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 由于对新内容的需求不断增加，需要减少手动工作，以便及时提供引人入胜的数字体验。 [!DNL Adobe Experience Manager]作为[!DNL Cloud Service]支持使用人工智能自动标记视频资产。 手动标记视频可能非常耗时。 但是，[!DNL Adobe Sensei]支持的视频智能标记功能使用人工智能模型来分析视频内容并将标记添加到视频资产。 从而减少DAM用户为其客户提供丰富体验的时间。 Adobe的机器学习服务为视频生成两组标记。 而其中一组对应于该视频中的对象、场景和属性；另一组则与饮酒、跑步和慢跑等操作相关。
 

@@ -6,14 +6,17 @@ mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '4277'
+source-wordcount: '4295'
 ht-degree: 10%
 
 ---
 
 # 管理资源 {#manage-assets}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -40,7 +43,7 @@ ht-degree: 10%
 * 资源文件名不能包含以下任一字符： `* / : [ \\ ] | # % { } ? &`
 * 资产文件夹名称不能包含以下任一字符： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## 上传资源 {#uploading-assets}
+## 上传资产 {#uploading-assets}
 
 请参阅[将数字资源添加到Experience Manager](add-assets.md)。
 

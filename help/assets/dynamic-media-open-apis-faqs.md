@@ -3,14 +3,17 @@ title: 具有OpenAPI功能的Dynamic Media常见问题解答
 description: 具有OpenAPI功能的Dynamic Media常见问题解答
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: dcc233be4d1bb84534aaef64316406bb960ce51d
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
 
 # 具有OpenAPI功能的Dynamic Media常见问题解答 {#new-dynaminc-media-apis-frequently-asked-questions}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 +++**Experience Manager Assetsas a Cloud Service存储库中的所有资源是否都可供使用具有OpenAPI功能的Dynamic Media进行搜索和交付？**
 

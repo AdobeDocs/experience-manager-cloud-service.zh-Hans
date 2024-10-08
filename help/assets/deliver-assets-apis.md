@@ -2,14 +2,18 @@
 title: 交付 API
 description: 了解如何使用投放API。
 role: User
-source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
+exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 0%
+source-wordcount: '555'
+ht-degree: 1%
 
 ---
 
 # 投放API {#delivery-apis}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager资源存储库中可用的所有[批准的资源](approve-assets.md)都可以[搜索](search-assets-api.md)，然后使用投放URL传递到集成的下游应用程序。
 

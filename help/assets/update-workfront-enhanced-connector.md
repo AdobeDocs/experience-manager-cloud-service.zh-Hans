@@ -4,14 +4,17 @@ description: 更新 [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 feature: Workfront Integrations and Apps
 role: Admin
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 0%
+source-wordcount: '244'
+ht-degree: 2%
 
 ---
 
 # 更新[!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!UICONTROL Experience Manager Assetsas a Cloud Service]允许您将[!DNL Workfront for Experience Manager enhanced connector]从以前的版本更新到最新的版本。
 

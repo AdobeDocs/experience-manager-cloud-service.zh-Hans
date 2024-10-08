@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
 # 重新处理数字资产 {#reprocessing-digital-assets}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 如果文件夹已具有您后来更改的现有元数据配置文件，您可以重新处理该文件夹中的资产。 如果希望将新编辑的预设重新应用于文件夹中的现有资源，则必须重新处理文件夹。 您可以根据需要重新处理尽可能多的资产。
 
@@ -50,7 +53,7 @@ ht-degree: 0%
       * **[!UICONTROL 处理配置文件]：**&#x200B;要重新处理选定的配置文件时，请选择此选项。 您可以选择&#x200B;**[!UICONTROL 完整流程]**选项以包括在文件夹级别分配的默认处理和自定义配置文件。
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL Post处理工作流]：**&#x200B;选择此选项时，需要额外处理无法使用处理配置文件实现的资源。 可以向配置中添加其他后处理工作流。 Post-processing允许您在使用资源微服务的可配置处理之上添加完全自定义的处理。
+      * **[!UICONTROL 后处理工作流]：**&#x200B;选择此选项时，需要额外处理无法使用处理配置文件实现的资产。 可以向配置中添加其他后处理工作流。 后处理允许您在使用资产微服务的可配置处理之上添加完全自定义的处理。
 
 请参阅[使用资产微服务和处理配置文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)，了解有关处理配置文件和后处理工作流的详细信息。
 

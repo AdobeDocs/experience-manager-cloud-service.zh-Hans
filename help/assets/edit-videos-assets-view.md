@@ -4,14 +4,17 @@ description: 使用 [!DNL Adobe Express] 支持的选项编辑视频，并将更
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '797'
 ht-degree: 17%
 
 ---
 
 # 在[!DNL Assets view]中编辑视频 {#edit-videos}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 为视频嵌入了[!DNL Adobe Express]快速操作的Assets用户轻松创建视频内容的变体。 [!DNL Assets view]中由[!DNL Adobe Express]提供支持的快速操作提供了用户友好的视频编辑选项，包括裁切视频、调整视频大小、修剪视频以及将视频转换为GIF。
 
@@ -21,7 +24,7 @@ ht-degree: 17%
 
 有权访问AEM Assets中的[!DNL Adobe Express]和至少一个环境。 环境可以是 [!DNL Assets as a Cloud Service] 或 [!DNL Assets view] 内的任何存储库。
 
-## 使用Adobe Express编辑视频 {#edit-video-using-express}
+## 使用 Adobe Express 编辑视频 {#edit-video-using-express}
 
 使用嵌入的[!DNL Adobe Express]快速操作，将视频转换为完美大小和方向非常容易。
 

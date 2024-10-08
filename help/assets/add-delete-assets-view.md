@@ -4,14 +4,17 @@ description: 上传资产到 [!DNL Assets view]，查看上传状态，以及解
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 91%
+source-wordcount: '843'
+ht-degree: 89%
 
 ---
 
 # 上传资产 {#add-assets}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 要添加新资产进行处理，请从本地文件系统上传几个资产。<!-- TBD: Many of the [common file formats are supported](/help/assets/supported-file-formats-assets-view.md). -->
 

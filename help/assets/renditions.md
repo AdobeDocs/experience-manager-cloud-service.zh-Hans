@@ -4,14 +4,17 @@ description: 了解AEM Assets和Dynamic Media如何通过静态和动态图像�
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 0%
+source-wordcount: '453'
+ht-degree: 1%
 
 ---
 
 # 在Experience Manager Assets中查看和管理节目{#renditions}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Adobe Experience Manager (AEM)中的演绎版是数字资源（如图像）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 AEM有助于轻松地创建和管理这些演绎版，从而增强用户体验。 您可以创建缩略图、针对Web或移动设备优化图像、添加水印、查看和下载动态呈现版本或智能裁剪呈现版本，以及执行更多其他操作。
 

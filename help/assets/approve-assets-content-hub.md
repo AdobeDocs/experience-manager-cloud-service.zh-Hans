@@ -1,14 +1,18 @@
 ---
-title: 批准Content Hub的资源
+title: 批准 Content Hub 的资产
 description: 了解如何在Assetsas a Cloud Service中批准资源以使它们在Content Hub中可用。
-source-git-commit: f540f5934c4acbed4d7eff51a5a4ac1484fcb765
+exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 2%
+source-wordcount: '746'
+ht-degree: 4%
 
 ---
 
-# 批准Content Hub的资源 {#approve-assets-content-hub}
+# 批准 Content Hub 的资产 {#approve-assets-content-hub}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![批准Content Hub的资源](assets/content-hub-approve-assets.png)
 
@@ -24,7 +28,7 @@ ht-degree: 2%
 
 * 写入权限以编辑资源元数据，从而能够编辑资源的[资源属性](/help/assets/manage-organize-assets-view.md##manage-asset-status)中可用的&#x200B;**[!UICONTROL 状态]**&#x200B;字段。
 
-## 批准Content Hub的资源 {#approve-assets-for-content-hub}
+## 批准 Content Hub 的资产 {#approve-assets-for-content-hub}
 
 Assetsas a Cloud Service中标记为`approved`的资源在Content Hub中自动可用。
 
@@ -98,6 +102,3 @@ Assetsas a Cloud Service中标记为`approved`的资源在Content Hub中自动�
 * 如果禁用了&#x200B;**[!UICONTROL 自动审批]**&#x200B;切换功能，则使用Content Hub上传的资源不会自动显示。 这些资源位于Assetsas a Cloud Service环境的`hydrated-assets`文件夹中。 导航到文件夹，然后[批量编辑](#bulk-approve-assets-content-hub)这些资源的状态并更改为`Approved`，以便这些资源显示在Content Hub中。
 
 ![Content Hub审批流程](/help/assets/assets/content-hub-approval.png)
-
-
-

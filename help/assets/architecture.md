@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Management, Asset Compute Microservices
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 36%
+source-wordcount: '143'
+ht-degree: 33%
 
 ---
 
 # Assets作为[!DNL Cloud Service]解决方案的架构 {#assets-architecture}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]基于[!DNL Adobe Experience Manager]，与最新的产品[!DNL Experience Manager] 6.5进行了比较。[!DNL Cloud Service]产品具有经调整的架构和功能，可成为云原生服务。 基础架构中的更改不允许所有Experience Manager6.5功能都成为[!DNL Cloud Service]的一部分。
 

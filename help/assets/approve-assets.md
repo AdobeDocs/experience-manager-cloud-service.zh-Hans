@@ -3,14 +3,17 @@ title: 批准Experience Manager中的资源
 description: 了解如何在 [!DNL Experience Manager]中批准资源。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '694'
 ht-degree: 2%
 
 ---
 
 # 批准[!DNL Experience Manager]中的资源
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 品牌经理和营销人员对品牌资产进行严格控制。 只有获得批准的最新版本的资产才可供使用，从而确保跨所有渠道和应用程序的品牌一致性。
 

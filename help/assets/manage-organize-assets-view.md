@@ -5,14 +5,17 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 90%
+source-wordcount: '1222'
+ht-degree: 92%
 
 ---
 
 # 管理资源 {#manage-assets}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 您可以通过 [!DNL Assets view] 简单易用的用户界面，执行各种数字资源管理 (DAM) 任务。添加资源之后，您可以搜索、下载、移动、复制、重命名、删除、更新和编辑资源。
 
@@ -131,7 +134,7 @@ Assets视图允许您为存储库中可用的资源设置状态。 设置资源�
 1. 选择资源并单击工具栏中的&#x200B;**[!UICONTROL 详细信息]**。
 
 1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 状态]**下拉列表中选择资源状态。 可能的值包括“已批准”、“已拒绝”和“无状态”（默认值）。
-如果您的Dynamic Media为您的环境配置了OpenAPI功能，那么Experience Manager Assets会在您将资产标记为`Approved`后立即生成公共URL。
+如果您的环境配置了具有 OpenAPI 功能的 Dynamic Media，则 Experience Manager Assets 会在您将资产标记为 `Approved`时立即生成一个公共 URL。
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 

@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2542'
 ht-degree: 2%
 
 ---
 
 # AEM Assets搜索最佳实践
+
+| [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager Assets]提供强大的资源搜索方法，帮助您实现更高的内容速度。 有时，找到正确的资产可能会很费时又费力。 因此，[!DNL Adobe Experience Manager Assets]中的搜索资产功能对于数字资产管理系统的使用至关重要 — 无论是供创意人员进一步使用、供业务用户和营销人员稳健管理资产，还是DAM管理员管理。
 

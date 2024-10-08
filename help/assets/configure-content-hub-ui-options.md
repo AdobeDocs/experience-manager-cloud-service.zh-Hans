@@ -2,14 +2,17 @@
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1392'
 ht-degree: 12%
 
 ---
 
 # 配置 Content Hub 用户界面 {#configure-content-hub-user-interface}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"

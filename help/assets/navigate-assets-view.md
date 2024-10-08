@@ -4,14 +4,17 @@ description: 了解  [!DNL Assets view] 中的用户界面并在其中导航。
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 81%
+source-wordcount: '984'
+ht-degree: 86%
 
 ---
 
 # 浏览到文件和文件夹并查看资源 {#view-assets-and-details}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -31,8 +34,8 @@ ht-degree: 81%
 
 ## 浏览并查看资源和文件夹 {#browse-repository}
 
-您可以从主用户界面或者从左侧边栏浏览文件夹。现在，在浏览或搜索内容时，Experience Manager Assets会在文件夹缩略图上显示文件夹内容的可视预览，这改进了AEM Assets存储库中可用资源的可发现性。 此文件夹缩略图可节省您在搜索AEM Assets存储库中文件夹内的特定资源时花费的时间。
-浏览文件夹中的资产时，您可以使用界面查看资产缩略图，以直观地浏览存储库或查看资产详细信息，从而快速找到所需的资产。 左侧边栏中提供的选项包括：
+您可以从主用户界面或者从左侧边栏浏览文件夹。现在，在浏览或搜索内容时，Experience Manager Assets 会在文件夹缩略图上显示文件夹内容的视觉预览，从而提高了 AEM Assets 存储库中可用资产的可发现性。此文件夹缩略图可节省您在搜索AEM Assets存储库中文件夹内的特定资源时花费的时间。
+浏览文件夹中的资产时，您可以使用界面来查看资源缩略图，从而直观地浏览存储库或者查看资源详细信息，来快速查找所需的资源。左侧边栏中提供的选项包括：
 
 * [我的工作区](/help/assets/my-workspace-assets-view.md)：Assets 现在包括一个可自定义的工作区，此工作区提供各种小部件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。由于能够更方便地访问这些选项，因此可以提高您的效率和内容速度。
 * [任务](/help/assets/my-workspace-assets-view.md)：您可以在&#x200B;**我的任务**&#x200B;选项卡中查看分配给您的任务。而您创建的任务可以在&#x200B;**分配的任务**&#x200B;选项卡中查看。此外，您完成的任务位于&#x200B;**已完成的任务**&#x200B;选项卡下。

@@ -5,14 +5,17 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 85%
+source-wordcount: '1905'
+ht-degree: 84%
 
 ---
 
 # 微前端目标选择器 {#Overview}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 微前端目标选择器在您的应用程序中提供了一个用户界面，可以轻松地与 [!DNL Experience Manager Assets as a Cloud Service] 存储库集成。您可以搜索或浏览到 [!DNL Experience Manager Assets as a Cloud Service] 存储库中的相应文件夹，并从应用程序上传资源。
 

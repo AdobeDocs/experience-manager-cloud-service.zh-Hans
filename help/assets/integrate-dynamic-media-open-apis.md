@@ -3,14 +3,17 @@ title: 将AEM Assets与下游应用程序集成
 description: 将AEM Assets与下游应用程序集成
 role: User
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: 3022551a38ab287d4d6ea131dcee88fb1b40e5b7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 0%
+source-wordcount: '173'
+ht-degree: 1%
 
 ---
 
 # 将AEM Assets与下游应用程序集成 {#integrate-dynamic-media-open-apis}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager资源存储库中可用的所有[批准的资源](/help/assets/approve-assets.md)都可以交付给下游应用程序。
 

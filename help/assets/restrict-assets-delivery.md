@@ -3,14 +3,17 @@ title: 限制Experience Manager中的资源投放
 description: 了解如何在 [!DNL Experience Manager]中限制资源交付。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 0%
+source-wordcount: '1148'
+ht-degree: 1%
 
 ---
 
 # 限制对[!DNL Experience Manager]中资产的访问 {#restrict-access-to-assets}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager中的中央资产治理允许DAM管理员或品牌经理管理对资产的访问。 他们可以通过在创作端(特别是在AEM as a Cloud Service创作实例上)为批准的资源配置角色来限制访问。
 

@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '790'
 ht-degree: 5%
 
 ---
 
 # 使用[!DNL Adobe Creative Cloud]集成生成资源的变体 {#content-automation}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 内容自动化加载项将[!DNL Adobe Experience Manager Assets]作为[!DNL Cloud Service]和[!DNL Adobe Creative Cloud] API集成在一起，以大规模地创造性地处理您的资产。 [!DNL Experience Manager]使用基于云的[资源微服务](/help/assets/asset-microservices-overview.md)来使用[!DNL Adobe Creative Cloud]功能并自动创建和处理资源。
 

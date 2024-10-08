@@ -4,14 +4,17 @@ description: 通过Assets视图中的Quick Publish ，您可以同时或单独�
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 0%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
 # 发布资源到 AEM 和 Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 通过Experience Manager Assets，您可以使用Assets视图快速将资源发布到Experience Manager和Dynamic Media。 这可确保您管理资源，然后使用[Assets视图发布这些资源，而无需切换到“管理员”视图](/help/assets/overview.md##persona-based-experiences)。
 

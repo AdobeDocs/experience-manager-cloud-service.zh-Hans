@@ -2,15 +2,18 @@
 title: 在 [!DNL the Content Hub]中共享Assets
 description: 在 [!DNL the Content Hub]中共享Assets
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '472'
 ht-degree: 3%
 
 ---
 
-
 # 在 Content Hub 共享资源 {#search-assets-as-a-link}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![共享资源横幅图像](assets/share-assets-banner.png)
 
@@ -61,7 +64,3 @@ ht-degree: 3%
 单击共享链接，然后单击资产卡上可用的下载图标以下载资产。  您还可以选择多个资产并单击&#x200B;**[!UICONTROL 下载]**。<!--You can either download original assets or Original+Renditions of an asset.--> [!DNL The Content Hub]将每个资源逐个下载到本地文件系统。
 
 ![访问共享链接](assets/content-hub-access-shared-links.png)
-
-
-
-

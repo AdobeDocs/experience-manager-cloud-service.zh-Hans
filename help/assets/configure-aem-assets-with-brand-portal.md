@@ -5,14 +5,17 @@ contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 7%
+source-wordcount: '1784'
+ht-degree: 8%
 
 ---
 
-# 使用Brand Portal配置Experience Manager Assets {#configure-aem-assets-with-brand-portal}
+# 使用 Brand Portal 配置 Experience Manager Assets {#configure-aem-assets-with-brand-portal}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -141,7 +144,7 @@ Cloud Manager用户为Experience Manager Assets as a [!DNL Cloud Service]实例�
 * [Publish资源(从Experience Manager Assets到Brand Portal)](publish-to-brand-portal.md)
 * [从Experience Manager Assets到Brand Portal的Publish文件夹](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [从Experience Manager Assets到Brand Portal的Publish收藏集](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* 从Brand Portal到Experience Manager Assets的[Publish资源](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans) - Brand Portal中的资源源
+* 从Brand Portal到Experience Manager Assets的[Publish资源](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-hans) - Brand Portal中的资源源
 * [将预设、架构和 Facet 发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [将标记发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 

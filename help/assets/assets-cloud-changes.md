@@ -4,14 +4,17 @@ description: 与 [!DNL Adobe Experience Manager] 6.5相比，对 [!DNL Experienc
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1016'
 ht-degree: 9%
 
 ---
 
 # 对[!DNL Experience Manager Assets]的显着更改为[!DNL Cloud Service] {#notable-changes}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 [!DNL Adobe Experience Manager]作为[!DNL Cloud Service]提供了许多新功能和可能性来管理您的Experience Manager项目。 本地或作为Adobe托管服务托管的[!DNL Experience Manager Assets]与作为[!DNL Cloud Service]的[!DNL Experience Manager]之间存在许多差异。 本文重点介绍[!DNL Assets]功能的重要差异。
 

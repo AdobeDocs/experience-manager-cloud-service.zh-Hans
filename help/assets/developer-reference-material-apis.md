@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1956'
 ht-degree: 7%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]开发人员用例、API和参考资料 {#assets-cloud-service-apis}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 文章包含[!DNL Assets]作为[!DNL Cloud Service]的开发人员的推荐、参考资料和资源。 其中包括新的资产上传模块、API引用，以及有关后处理工作流中提供的支持的信息。
 

@@ -2,15 +2,18 @@
 title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选择器'
 description: 使用资源选择器在您的应用程序中搜索、查找和检索资源的元数据和演绎版。
 role: Admin,User
-source-git-commit: 5c76b28726403a6b011a55add190e6e3a6d7a390
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 8%
+source-wordcount: '479'
+ht-degree: 9%
 
 ---
 
 
 # 资产选择器收藏集 {#asset-selector-collections}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 收藏集是Asset Selector中的一组资源、文件夹或其他收藏集。 使用收藏集可在用户之间共享资源。收藏集与文件夹的不同之处是可包含来自不同位置的资源。
 

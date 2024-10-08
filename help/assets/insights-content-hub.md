@@ -2,14 +2,18 @@
 title: 在Content Hub中查看资产分析
 description: 了解如何在 [!DNL Content Hub]中查看资产分析
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 1%
 
 ---
 
 # [!DNL Content Hub]中的Assets分析 {#assets-insights}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Assets分析](assets/asset-insights-banner.jpg)
 
@@ -49,4 +53,3 @@ Data for the selected time frame is displayed, including the upload count for th
 * **[!UICONTROL 按营销活动列出的Assets]**：资源计数以及基于营销活动的相应百分比。
 * **[!UICONTROL 按渠道显示的Assets]**：资源计数以及基于所用渠道的各个百分比。
 * **[!UICONTROL 按地区划分的Assets]**：资源计数以及基于资源使用地区的相应百分比。
-

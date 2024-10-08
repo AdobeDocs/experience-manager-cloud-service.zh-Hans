@@ -2,14 +2,18 @@
 title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载资源
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 4%
+source-wordcount: '143'
+ht-degree: 5%
 
 ---
 
 # 从Content Hub下载资源 {#download-assets}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![下载资源](assets/download-asset-genstudio.jpeg)

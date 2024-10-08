@@ -4,9 +4,9 @@ description: 了解元数据最佳实践以有效管理您的数字资源。
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1399'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,9 @@ aem metadata
 experience manager metadata-->
 
 # 元数据管理和最佳实践 {#metadata-best-practices}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- |---------|----|-----|
 
 要让您的企业脱颖而出，吸引更多客户，利用高质量的视觉效果（如图像、视频和其他数字资产）至关重要。 要实现此目的，您需要一个流程，用于向所有数字资源添加元数据，使其可轻松搜索。 元数据是提供有关数字资源的基本详细信息（包括资源的名称、类型、在存储库中的位置、修改日期和关联的标记）的数据。 元数据可简化资产管理，提高可搜索性和可访问性，并确保有效的版本控制。
 

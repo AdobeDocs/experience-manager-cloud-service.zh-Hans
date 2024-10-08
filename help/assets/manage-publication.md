@@ -5,14 +5,17 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 4%
+source-wordcount: '1554'
+ht-degree: 5%
 
 ---
 
 # 在Experience Manager Assets中管理发布 {#manage-publication-in-aem}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 作为[!DNL Adobe Experience Manager Assets]管理员，您可以将包含资源的资源和文件夹从创作实例发布到[!DNL Experience Manager Assets]、[!DNL Dynamic Media]和[!DNL Brand Portal]。 此外，您还可以计划在稍后的日期或时间发布资产或文件夹。 发布后，用户可以访问资产，并进一步将资产分发给其他用户。 默认情况下，您可以将资源和文件夹发布到[!DNL Experience Manager Assets]。 但是，您可以将[!DNL Experience Manager Assets]配置为启用发布到[[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html)和[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html)。
 

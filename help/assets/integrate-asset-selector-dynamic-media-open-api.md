@@ -3,14 +3,17 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资源选�
 description: 将资源选择器与各种Adobe、非Adobe和第三方应用程序集成。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 3%
+source-wordcount: '902'
+ht-degree: 4%
 
 ---
 
 # Dynamic Media与OpenAPI功能集成 {#integrate-asset-selector-dynamic-media-open-apis}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Asset Selector允许您使用各种Adobe应用程序进行集成，以使它们能够无缝地协同工作。
 
@@ -29,7 +32,7 @@ Asset Selector允许您使用各种Adobe应用程序进行集成，以使它们�
 
 资产选择器与Dynamic Media OpenAPI进程的集成涉及各种步骤，包括创建自定义的Dynamic Media URL或准备选择Dynamic Media URL等。
 
-### 将Dynamic Media的资源选择器与OpenAPI功能集成 {#integrate-dynamic-media}
+### 将动态媒体资产选择器与 OpenAPI 功能集成 {#integrate-dynamic-media}
 
 `rootPath`和`path`属性不应包含在具有OpenAPI功能的Dynamic Media中。 相反，您可以配置`aemTierType`属性。 以下是配置的语法：
 

@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2884'
 ht-degree: 3%
 
 ---
 
 # 使用资产微服务和处理配置文件 {#get-started-using-asset-microservices}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 资产微服务使用云原生应用程序（也称为工作程序）提供可扩展和弹性的资产处理。 Adobe管理服务以优化处理各种资源类型和处理选项。
 
@@ -181,11 +184,11 @@ asset compute服务集成允许Experience Manager使用[!UICONTROL 服务参数]
 
 *图：由应用于父文件夹的处理配置文件生成的两个其他呈现形式的示例。*
 
-## Post处理工作流 {#post-processing-workflows}
+## 后处理工作流 {#post-processing-workflows}
 
-对于需要使用处理配置文件无法实现的额外资产处理的情况，可以向配置添加额外的后处理工作流。 Post-processing允许您在使用资源微服务的可配置处理之上添加完全自定义的处理。
+对于需要使用处理配置文件无法实现的额外资产处理的情况，可以向配置添加额外的后处理工作流。 后处理允许您在使用资产微服务的可配置处理之上添加完全自定义的处理。
 
-Post处理工作流或[自动启动工作流](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)（如果已配置）在微服务处理完成后由[!DNL Experience Manager]自动执行。 无需手动添加工作流启动器即可触发工作流。 示例包括：
+后期处理工作流，或[自动启动工作流](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)（如果已配置），在微服务处理完成后，由[!DNL Experience Manager]自动执行。 无需手动添加工作流启动器即可触发工作流。 示例包括：
 
 * 用于处理资产的自定义工作流步骤。
 * 集成以将元数据或属性从外部系统添加到资源，例如产品或流程信息。
@@ -202,7 +205,7 @@ Post处理工作流或[自动启动工作流](https://experienceleague.adobe.com
 
 ### 创建后处理工作流模型 {#create-post-processing-workflow-models}
 
-Post处理工作流模型是常规的[!DNL Experience Manager]工作流模型。 如果您需要对不同的存储库位置或资源类型进行不同的处理，请创建不同的模型。
+后处理工作流模型是常规的[!DNL Experience Manager]工作流模型。 如果您需要对不同的存储库位置或资源类型进行不同的处理，请创建不同的模型。
 
 根据需要添加处理步骤。 您可以同时使用受支持的可用步骤和任何自定义实施的工作流步骤。
 
@@ -229,8 +232,8 @@ Post处理工作流模型是常规的[!DNL Experience Manager]工作流模型。
 
 您可以为高级配置配置配置自定义工作流运行器服务，这些配置无法通过将工作流应用到文件夹来轻松完成。 例如，使用正则表达式的工作流。 Adobe CQ DAM自定义工作流运行器(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)是OSGi服务。 它提供了以下两个配置选项：
 
-* 按路径(`postProcWorkflowsByPath`)列出的Post处理工作流：可以根据不同的存储库路径列出多个工作流模型。 使用冒号分隔路径和模型。 支持简单的存储库路径。 将这些项目映射到`/var`路径中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
-* 按表达式(`postProcWorkflowsByExpression`)列出的Post处理工作流：可根据不同的正则表达式列出多个工作流模型。 表达式和模型应以冒号分隔。 正则表达式应直接指向Asset节点，而不是演绎版或文件之一。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
+* 按路径(`postProcWorkflowsByPath`)后处理工作流：可以根据不同的存储库路径列出多个工作流模型。 使用冒号分隔路径和模型。 支持简单的存储库路径。 将这些项目映射到`/var`路径中的工作流模型。 例如：`/content/dam/my-brand:/var/workflow/models/my-workflow`。
+* 按表达式(`postProcWorkflowsByExpression`)后处理工作流：可根据不同的正则表达式列出多个工作流模型。 表达式和模型应以冒号分隔。 正则表达式应直接指向Asset节点，而不是演绎版或文件之一。 例如：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`。
 
 要了解如何部署OSGi配置，请参阅[部署到 [!DNL Experience Manager]](/help/implementing/deploying/overview.md)。
 

@@ -2,14 +2,18 @@
 title: 搜索Assets API
 description: 了解如何使用Search Assets API。
 role: User
-source-git-commit: 3e2fe458460fe8ec4c1dd12152c1134bfb9ca62b
+exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
 # 搜索Assets API {#search-assets-api}
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 可以使用投放URL搜索Experience Manager资源存储库中可用的所有[批准的资源](approve-assets.md)，然后将其传递到集成的下游应用程序。
 
