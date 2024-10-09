@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 96%
+source-wordcount: '1100'
+ht-degree: 94%
 
 ---
 
@@ -159,7 +159,8 @@ ht-degree: 96%
 
 * 通过点按/单击缩略图选择相应的启动项。
 * 工具栏即会显示 — 选择“克隆”。
-   * 克隆将显示在控制台中。
+   * 克隆将创建并显示在控制台中。
+   * **启动项标题**&#x200B;将指示它是克隆。 您可以通过编辑[启动项配置](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) （**属性**）来更新标题。
 
 ## 删除启动项 {#deleting-a-launch}
 
