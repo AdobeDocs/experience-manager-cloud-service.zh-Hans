@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '5675'
+source-wordcount: '5678'
 ht-degree: 99%
 
 ---
@@ -1071,7 +1071,7 @@ ht-degree: 99%
    + [生成变体](/help/generative-ai/generate-variations.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
-   + 使用 Cloud Manager {#using-cloud-manager}
+   + 使用Cloud Manager {#using-cloud-manager}
       + [导航](/help/implementing/cloud-manager/navigation.md)
       + 项目 {#programs}
          + [项目和项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1081,12 +1081,12 @@ ht-degree: 99%
          + [创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [编辑程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [使环境休眠](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + 创建 AEM 应用程序项目 {#create-application-project}
+      + 创建AEM应用程序项目{#create-application-project}
          + [项目创建向导](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [项目设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [生成环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [管理环境](/help/implementing/cloud-manager/manage-environments.md)
-      + 管理代码 {#managing-code}
+      + 管理您的代码{#managing-code}
          + [Maven 项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [在 Cloud Manager 中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [添加Adobe资源库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
@@ -1101,13 +1101,13 @@ ht-degree: 99%
          + [GitHub 检查批注](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [环境变体](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI-CD 管道 {#cicd-pipelines}
-         + [简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [CI-CD管道简介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [配置生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [配置非生产管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [部署您的代码](/help/implementing/cloud-manager/deploy-code.md)
-      + 了解测试结果 {#test-results}
+      + 了解测试结果{#test-results}
          + [概述](/help/implementing/cloud-manager/overview-test-results.md)
          + [代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)
          + [自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)

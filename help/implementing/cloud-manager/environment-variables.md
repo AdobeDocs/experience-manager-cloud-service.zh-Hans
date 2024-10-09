@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 76%
+ht-degree: 72%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 76%
 
 1. 完成所需的配置更改后，选择&#x200B;**保存**。
 
-[当添加变量时](#add-variables)，状态为&#x200B;**更新**&#x200B;的指标会显示在表的顶部和新更新的变量旁边，表示正在使用该配置更新环境。完成后，更新的环境变量会显示在表中。
+[与添加变量](#add-variables)时一样，状态为&#x200B;**正在更新**&#x200B;的指示符显示在表的顶部和新更新的变量旁边，表示正在使用配置更新环境。 完成后，更新的环境变量会显示在表中。
 
 >[!TIP]
 >

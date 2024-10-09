@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -794,7 +794,7 @@ public class DontDoThis implements Page {
 * **严重性**：主要
 * **开始版本**：版本 2019.6.0
 
-与[“包不应包含重复的 OSGi 配置”规则](#oakpal-package-osgi)类似，这是复杂项目中的一个常见问题，其中同一节点路径被多个单独的内容包写入。 虽然可使用内容包依赖项来确保获得一致的结果，但最好是完全避免重叠。
+与[包不应包含重复的OSGi配置规则](#oakpal-package-osgi)类似，这是复杂项目中的一个常见问题，其中同一节点路径被多个单独的内容包写入。 虽然可使用内容包依赖项来确保获得一致的结果，但最好是完全避免重叠。
 
 ### 默认创作模式不应是经典 UI {#oakpal-default-authoring}
 
@@ -853,7 +853,7 @@ Cloud Service 部署中不支持反向复制，如 Experience Manager as a Cloud
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-Experience Manager 客户端库可能包含静态资源，如图像和字体。如[使用预处理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)文档中所述，在使用代理的客户端库时，这些静态资源必须包含在名为 `resources` 的子文件夹中，才能在发布实例上有效引用这些资源。
+Experience Manager 客户端库可能包含静态资源，如图像和字体。如文档[使用预处理器](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)中所述，在使用代理的客户端库时，这些静态资源必须包含在名为`resources`的子文件夹中，才能在发布实例上有效引用这些资源。
 
 #### 不合规的代码 {#non-compliant-proxy-enabled}
 

@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 17%
@@ -147,7 +147,7 @@ Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的D
 
    上传有效的EV/OV证书后，**域设置**&#x200B;表中域的状态标记为&#x200B;**已验证**。
 
-   ![域设置表显示验证状态。](/help/implementing/cloud-manager/assets/domain-settings-verified.png)
+   ![域设置表显示验证状态](/help/implementing/cloud-manager/assets/domain-settings-verified.png)。
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

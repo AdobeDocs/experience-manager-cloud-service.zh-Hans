@@ -5,10 +5,10 @@ exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 生产程序面向准备好开始编写、构建和测试代码的团队，目的是将其部署到托管实时流量。
 
-[创建生产程序](creating-production-programs.md)后，[程序创建向导](using-the-wizard.md)将根据用户创建程序的目标指导用户进行选择。
+在您[创建生产程序](creating-production-programs.md)之后，[程序创建向导](using-the-wizard.md)将根据用户创建程序的目标指导用户进行选择。
 
 ## 项目创建选项 {#program-creation-options}
 

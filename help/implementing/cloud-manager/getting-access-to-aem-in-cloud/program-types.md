@@ -5,25 +5,25 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 81%
+source-wordcount: '501'
+ht-degree: 44%
 
 ---
 
 
 # 程序和程序类型 {#understanding-programs}
 
-Cloud Manager 是围绕实体的层次结构构建的。这方面的细节对于您在 Cloud Manager 中的日常工作并不重要，但概述将有助于您了解程序并设置自己的程序。
+Cloud Manager 是围绕实体的层次结构构建的。详细信息对您在Cloud Manager中的日常工作并不重要，但概述详细信息可帮助您了解程序并设置自己的程序。
 
 ![Cloud Manager 层级](assets/program-types1.png)
 
-* **租户** – 这是层次结构的顶层。每个客户均配有一个租户。
+* **租户** — 层次结构的顶层。 每个客户均配有一个租户。
 * **项目** — 每个租户都有一个或多个项目，[这些项目通常反映了客户的许可解决方案](introduction-production-programs.md)。
 * **环境** – 每个项目都有多个环境，例如用于实时内容的生产环境、一个用于暂存的环境，一个用于开发的环境。
    * 每个程序只能有一个生产环境，但可以有多个非生产环境。
-* **存储库** – 程序有 Git 存储库，其中应用程序和前端代码被维护的环境。
+* **存储库** — 程序具有Git存储库，其中应用程序和前端代码被维护的环境。
 * **工具和工作流程** – 管道管理从存储库到环境的代码部署，而其他工具允许访问日志、监控和环境管理。
 
 示例通常有助于将此层级置于上下文中。
@@ -34,25 +34,25 @@ Cloud Manager 是围绕实体的层次结构构建的。这方面的细节对于
 
 ## 源代码存储库 {#source-code-repository}
 
-Cloud Manager 程序将自动配置自己的 Git 存储库。
+Cloud Manager程序将自动配置自己的Git存储库。
 
-要访问Cloud Manager Git存储库，用户需要使用带有命令行工具的Git客户端、独立的可视Git客户端或用户选择的IDE，例如Eclipse、IntelliJ或NetBeans。
+用户可以使用带有命令行工具的Git客户端或独立的可视Git客户端访问Cloud Manager Git存储库。 或者，他们可以使用自己的首选集成开发环境(IDE)，如Eclipse、IntelliJ或NetBeans。
 
-一旦设置了 Git 客户端，就可以从 Cloud Manager 用户界面管理 Git 存储库。要了解如何使用 Cloud Manager 用户界面管理 Git，请参阅[访问 Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
+设置Git客户端后，您可以从Cloud Manager用户界面管理您的Git存储库。 要了解如何使用Cloud Manager用户界面管理Git，请参阅[访问Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
-要开始开发 AEM Cloud 应用程序，必须通过将应用程序代码从 Cloud Manager 存储库签出到本地计算机上的某个位置来制作应用程序代码的本地副本。
+要开始开发AEM Cloud应用程序，请将Cloud Manager存储库中的应用程序代码签出到本地计算机。
 
 ```java
 $ git clone {URL}
 ```
 
-因此，该工作流程是一个标准的 Git 工作流程。
+该工作流遵循标准Git流程：
 
-1. 用户克隆 Git 存储库的本地副本。
-1. 用户在本地代码存储库中进行更改。
-1. 准备就绪后，用户将更改提交回远程 Git 存储库。
+1. 用户在本地克隆远程Git存储库。
+1. 用户在其本地存储库中进行更改。
+1. 准备就绪后，用户将更改提交回远程Git存储库。
 
-唯一的区别是远程 Git 存储库是 Cloud Manager 的一部分，对开发人员来说是透明的。
+唯一的区别是远程Git存储库是Cloud Manager的一部分，对开发人员是透明的。
 
 ## 程序类型 {#program-types}
 
@@ -62,5 +62,5 @@ $ git clone {URL}
    * 请参阅[生产程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)，了解更多详细信息。
 * 通常，创建&#x200B;**沙盒程序**&#x200B;是为了提供培训、运行演示、支持、概念验证 (POC) 或归档等目的。
    * 沙盒环境并不意味着要承载实时流量，并且有生产程序没有的限制。
-   * 它包括Sites、Assets和Edge Delivery Services，交付时自动填充Git分支，其中包括示例代码、开发环境和非生产管道。
+   * 它包括Sites、Assets和Edge Delivery Services，并预填充了包含示例代码、开发环境和非生产管道的Git分支。
    * 请参阅[沙盒简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)，了解更多详细信息。

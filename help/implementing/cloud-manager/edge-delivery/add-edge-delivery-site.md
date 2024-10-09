@@ -1,12 +1,12 @@
 ---
-title: 将Edge Delivery站点添加到Cloud Manager
+title: 将 Edge Delivery Site 添加到 Cloud Manager
 description: 了解如何将Edge Delivery站点添加到生产程序或沙盒程序。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 3%
+source-wordcount: '498'
+ht-degree: 5%
 
 ---
 
@@ -56,6 +56,6 @@ ht-degree: 3%
 
 验证存储库后，它在Edge Delivery sites表中的状态将变为一个绿色圆圈，其内带有白色复选标记。
 
-在同一表中，您可以单击![有关Edge Delivery网站的信息。](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)查看有关您站点的详细信息，如已验证的存储库URL以及预览和生产网站的URL。
+在同一表中，单击![有关Edge Delivery网站的信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)可查看有关您网站的详细信息，如已验证的存储库URL以及预览和生产网站的URL。
 
 

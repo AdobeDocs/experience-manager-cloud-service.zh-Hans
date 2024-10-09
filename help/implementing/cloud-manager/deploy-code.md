@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 94%
+source-wordcount: '1195'
+ht-degree: 90%
 
 ---
 
@@ -82,7 +82,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
    * UI 测试是打包在 Docker 图像中的基于 Selenium 的测试，允许在语言和框架（如 Java 和 Maven、Node 和 WebDriver.io，或任何其他基于 Selenium 构建的框架和技术）中进行广泛选择。
    * 有关详细信息，请参阅[自定义 UI 测试。](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)
 
-* **体验审核** – 管道中的此步骤始终执行，不能跳过。在执行生产管道时，在将运行检查的自定义功能测试之后，会包含体验审核步骤。
+* **体验审核** – 管道中的此步骤始终执行，不能跳过。在执行生产管道时，在运行检查的自定义功能测试之后会包含体验审核步骤。
    * 配置的页面将提交给服务并进行评估。
    * 审核结果是信息性的，显示分数以及当前分数和以前分数之间的变化。
    * 此细节对于确定当前部署中是否会引入回归非常有用。
@@ -110,7 +110,7 @@ _只有“完整堆栈代码”管道类型支持代码扫描、功能测试、U
 
 ## 超时 {#timeouts}
 
-如果继续等待用户反馈，则以下步骤将超时：
+如果继续等待用户反馈，则以下步骤超时：
 
 | 步骤 | 超时 |
 |--- |--- |

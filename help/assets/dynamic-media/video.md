@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '9402'
-ht-degree: 2%
+source-wordcount: '10490'
+ht-degree: 1%
 
 ---
 
@@ -67,16 +67,16 @@ ht-degree: 2%
    * 使用视频元数据
 
       * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
-        [正在编辑视频属性](/help/assets/manage-digital-assets.md#editing-properties)
+        [编辑视频属性](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [管理数字资源的元数据](/help/assets/manage-metadata.md)
       * [元数据架构](/help/assets/metadata-schemas.md)
 
    * 审核、批准和注释视频，并保持完整的版本控制
 
-      * [对视频添加批注](/help/assets/manage-video-assets.md#annotate-video-assets)或[对资产添加批注](/help/assets/manage-digital-assets.md#annotating)
+      * [为视频添加批注](/help/assets/manage-video-assets.md#annotate-video-assets)或[为资产添加批注](/help/assets/manage-digital-assets.md#annotating)
 
-      * [创建版本](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [创建一个版本](/help/assets/manage-digital-assets.md#asset-versioning)
       * [在资产上启动工作流](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
       * [审核文件夹资产](/help/assets/bulk-approval.md)
@@ -524,7 +524,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 * 短划线
 * 多字幕和音轨
-* AI生成的字幕（抢先体验）
+* AI生成的字幕（限量发布）
 
 创建并提交Adobe客户支持案例。
 
@@ -534,7 +534,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 | --- | --- |
 | 短划线 | DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广泛地应用于不同的视频观看者中。 在您的帐户上启用DASH后，您可以选择使用DASH或HLS进行自适应视频流传输。 或者，当在查看器预设中选择&#x200B;**[!UICONTROL auto]**&#x200B;作为播放类型时，您可以选择在播放器之间自动切换。<br>在您的帐户上启用DASH的一些主要优势包括：<br>·将DASH流视频打包用于自适应比特率流。 这种方法可以提高投放效率。 自适应流管理可确保为客户提供最佳观看体验。<br>·使用Dynamic Media播放器优化的浏览器流会在HLS和DASH流之间切换，以确保最佳服务质量。 使用Safari浏览器时，视频播放器会自动切换到HLS。<br>·您可以通过编辑视频查看器预设来配置首选的流方法（HLS或DASH）。<br>·优化的视频编码确保在启用DASH功能时不会使用额外的存储。 为HLS和DASH创建一组视频编码，以优化视频存储成本。<br>·帮助让您的客户更容易访问视频交付。<br>·也通过API获取流URL。 |
 | 多字幕和音轨 | 自动启用多个字幕和音轨支持将使您受益。 启用后，您上传的所有后续视频都将采用新的后端架构进行处理，该架构支持向视频添加多个字幕和音频轨道。 |
-| AI生成的字幕（抢先体验） | 为由AI支持的视频创建字幕。 利用人工智能，它创建视频的文字记录并将其转换为字幕。 甚至时间线也被定义了。 |
+| AI生成的字幕（限量发布） | 为由AI支持的视频创建字幕。 利用人工智能，它创建视频的文字记录并将其转换为字幕。 甚至时间线也被定义了。 |
 
 >[!IMPORTANT]
 >
@@ -549,7 +549,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    * 您的Cloud Service环境（项目ID和环境ID）。
    * 您的Dynamic Media公司帐户名称。
    * 您的Dynamic Media地区：北美(NA)、亚太(APAC)或欧洲 — 中东 — 亚洲(EMEA)。
-   * 指定您希望在AEM as a Cloud Service的Dynamic Media帐户中启用DASH、多字幕和多声道以及人工智能生成的字幕（提前访问）支持。
+   * 指定您希望在AEM as a Cloud Service的Dynamic Media帐户中启用DASH、多字幕和多声道以及人工智能生成的字幕（有限可用性）支持。
 
 1. Adobe客户支持根据提交请求的顺序将您添加到客户等待列表中。
 1. 当Adobe准备好处理您的请求时，客户支持联系您以协调并设置目标启用日期。
@@ -560,132 +560,26 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    * 照常创建[视频配置文件](/help/assets/dynamic-media/video-profiles.md)。
    * [向视频中添加多个字幕和音轨](#add-msma)。
 
-## 关于Dynamic Media中对视频的多个字幕和音轨支持{#about-msma}
 
-借助Dynamic Media中的多个字幕和音轨功能，您可以轻松地将多个字幕和音轨添加到主视频中。 这项功能意味着您的视频可供全球受众访问。 您可以用多种语言为全球观众自定单一的、已发布的主视频，并遵守不同地区的可访问性指南。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
-
-![Dynamic Media中的“字幕和音轨”选项卡，以及显示视频的上传.VTT字幕文件和上传.MP3音轨文件的表。](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
-
-
-向主视频添加多个字幕和音频轨道需要考虑的一些用例包括：
-
-
-| 类型 | 用例 |
-| --- | --- |
-| 字幕 | 多语言支持<br>用于辅助功能的描述性文本 |
-| 音频轨道 | 多语言支持<br>评论曲目<br>描述性音频 |
-
-
-支持在Dynamic Media](/help/assets/file-format-support.md)中支持的所有[视频格式以及除Dynamic Media Video_360查看器之外的所有Dynamic Media视频查看器与多个字幕和音轨一起使用。
-
-通过必须由Adobe客户支持启用（打开）的功能切换，您的Dynamic Media帐户可以使用多字幕和多音频跟踪功能。
-
-### 为视频添加多个字幕和音轨 {#add-msma}
-
-在将多个字幕和音频轨道添加到视频之前，请确保已具备以下功能：
-
-* Dynamic Media是在AEM环境中设置的。
-* [Dynamic Media视频配置文件已应用于从中摄取视频的文件夹](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
-* [已在您的Dynamic Media帐户中启用多字幕和多声道功能](/help/assets/dynamic-media/video.md#enable-dash)。
-
-WebVTT和AdobeVTT格式支持添加的字幕和字幕。 此外，添加的MP3格式音频轨道文件也受支持。
-
->[!IMPORTANT]
->
->在Dynamic Media帐户[上启用多个字幕和音轨支持之前上传的任何视频都必须重新处理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。 此视频重新处理步骤是必需的，这样他们才能使用多个字幕和音频跟踪功能。 重新处理之后，视频URL可继续像往常一样正常工作和播放。
-
-**要向视频添加多个字幕和音轨：**
-
-1. [将主视频上传到已分配了视频配置文件的文件夹](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
-1. 导航到要添加多个字幕和音频轨道的上传视频资产。
-1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。
-1. 在工具栏上，选择“属性”图标（一个带有“i”的圆形）。
-
-   ![资源属性按钮。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*在卡片视图中选择的视频资产。*
-
-1. 在视频的“属性”页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
-
-
-   >[!TIP]
-   >如果您看不到[!UICONTROL 字幕和音轨]选项卡，则表示以下两种情况之一：
-   >* 所选视频所在的文件夹没有分配视频配置文件。 在这种情况下，请参阅[将视频配置文件应用到文件夹](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* 或者，Dynamic Media必须重新处理视频。 在这种情况下，请参阅[重新处理文件夹](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的Dynamic Media资源。
-
-   完成以上任一任务后，请返回这些步骤。
-
-   ![资源属性&#x200B;](/help/assets/dynamic-media/assets/msma-audiotracks.png)*视频属性页面上的字幕和音轨选项卡。*
-
-1. （可选）要将一个或多个字幕文件添加到视频，请执行以下操作：
-
-   * 选择&#x200B;**[!UICONTROL 上传字幕]**。
-   * 导航到一个或多个`.vtt` （视频字幕）文件并将其打开。
-   * 要使字幕在媒体播放器上可见，您必须添加有关您上传的每个字幕文件的所需详细信息（元数据）。 选择题注文件名右侧的铅笔图标。 在“编辑标题”对话框中，输入以下有关文件的所需详细信息，然后选择&#x200B;**[!UICONTROL 保存]**。 为您上传的每个字幕文件重复此过程：
-
-
-   | 题注元数据 | 描述 |
-   | --- | --- | 
-   | 文件名 | 默认文件名是从原始文件名派生的。 只能在上传时更改文件名，以后不能更改。 文件名字符要求与AEM Assets相同。<br>不能将同一文件名用于其他字幕文件和音轨文件。 |
-   | 语言 | 选择题注的语言。 |
-   | 类型 | 选择您正在使用的字幕类型。<br>**子标题** — 与翻译或转录此对话框的视频一起显示的标题文本。<br>**字幕** — 字幕文本包含背景噪音和说话人识别。 它还包括其他相关的细节以及对话的翻译或转录。 此功能使耳聋或听力缺佳的个人更容易访问内容。 |
-   | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如，英语(CC)。 |
-
-   您可以稍后更改或编辑字幕元数据（如有必要）。 发布视频时，这些详细信息会反映在已发布视频的公共URL上。
-
-1. （可选）要将一个或多个音频轨道添加到视频，请执行以下操作：
-
-   * 选择&#x200B;**[!UICONTROL 上传音轨]**。
-   * 导航到一个或多个.mp3文件并将其打开。
-   * 若要使音轨在媒体播放器上的&#x200B;**[!UICONTROL 选择音频或标题]**&#x200B;弹出列表中可见，请为每个音轨文件添加所需的详细信息。 确保包含正确显示所需的所有信息。 选择音轨文件名右侧的铅笔图标。 在“编辑音轨”对话框中，输入以下所需的详细信息，然后选择&#x200B;**[!UICONTROL 保存]**。 对您上传的每个音频轨道文件重复此过程。
-
-   | 音轨元数据 | 描述 |
-   | --- | --- |
-   | 文件名 | 默认文件名是从原始文件名派生的。 只能在上传时更改文件名，以后不能更改。 文件名字符要求与AEM Assets相同。<br>不能对附加的音轨文件或字幕文件使用相同的文件名。 |
-   | 语言 | 选择音轨的语言。 |
-   | 类型 | 选择您正在使用的音轨类型。<br>**原始** — 音频曲目最初附加到视频，并在标签中以`[Original]`形式表示，默认情况下选择英语。 虽然&#x200B;**[!UICONTROL 标签]**&#x200B;和&#x200B;**[!UICONTROL 语言]**&#x200B;可以在&#x200B;**[!UICONTROL 编辑音轨]**&#x200B;对话框中更改，但如果重新处理主视频，则默认为原始值。<br>**标准** — 用于原始语言以外的语言的附加音频轨道。<br>**音频描述** — 一个音频轨道，其中还包括视频中非语言操作和手势的描述性叙述，使视障人士更容易访问内容。 |
-   | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中显示为音频轨道名称的文本。 该标签是客户看到的与音轨对应的内容。 例如，`English [Original]`。默认情况下，附加到视频的音频标签设置为`[Original]`。 |
-
-   您可以稍后更改或编辑此音频轨道元数据（如有必要）。 发布视频时，这些详细信息会反映在已发布视频的公共URL上。
-
-1. 在页面的右上角，从&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 保存]**。 文件已上载，元数据处理开始，如界面的“状态”列所示。
-
-   >[!NOTE]
-   >
-   >根据实例的缓存设置，元数据处理可能需要几分钟时间，然后才能反映在预览和已发布的URL中。
-
-1. （可选）如果您在上一步中选择了&#x200B;**[!UICONTROL 保存并关闭]**，而不是选择&#x200B;**[!UICONTROL 保存]**，您仍可以查看已上载文件的处理状态。 请参阅[查看已上传的字幕和音轨文件的生命周期状态](/help/assets/dynamic-media/video.md#lifecycle-status-video)。
-
-1. （可选）在发布之前预览视频，以确保字幕和音频按预期工作。 查看[预览具有多个字幕和音轨的视频](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle)。
-
-1. Publish视频。 查看[Publish资源](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
-
-
-
-<!--
+<!-- HIDDEN AS OF OCTOBER 7, 2024 AS PER EMAIL REQUEST FROM RIYA MIDHA ON SAME DATE 
 
 ## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
 
-With multiple caption and audio track capability in Dynamic Media, you can easily add multiple audio tracks. You can also add multiple caption files using either your own `.vtt` (Video Text Track) files or AI-generated caption files. AI-generated captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Some key features of this technology include the following:
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple captions and audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
 
-* **Automatic Transcription:** The AI system transcribes spoken words into text in real-time, ensuring that captions are generated quickly and accurately.
-* **Multilingual Support:** Captions can be automatically delivered in more than 60 languages, making it easier to reach a global audience.
-* **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, or people who prefer to watch videos with the sound off.
-* **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
+   ![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
-These features make AI-powered captions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. 
-
-![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case |
-|--- |--- |
-| **Captions** | Multiple language support |
-|  | Descriptive text for accessibility |
-| **Audio tracks** | Multiple language support  |
-|  | Commentary tracks |
-|  | Descriptive audio |
 
-All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple captions and audio tracks.
+| Type | Use case | 
+| --- | --- |
+| Captions | Multiple language support<br>Descriptive text for accessibility |
+|Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |
+
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers-except the Dynamic Media Video_360 viewer-are supported for use with multiple captions and audio tracks.
 
 Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
 
@@ -695,163 +589,268 @@ Before you add multiple caption and audio tracks to your video, be sure you alre
 
 * Dynamic Media is set up in an AEM environment.
 * A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [Multi-caption/audio tracks and AI-generated captions are enabled on your Dynamic Media account](#enable-dash).
+* [Multi-caption, and multi-audio track is enabled on your Dynamic Media account](/help/assets/dynamic-media/video.md#enable-dash).
 
-Added captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+Added captions and captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
 
 >[!IMPORTANT]
 >
->For videos uploaded *before* enabling multiple caption/audio track support or AI-generated captions on your Dynamic Media account, [you need to reprocess them](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This reprocessing step ensures that these videos can use the multiple caption/audio track and AI-generated caption features. After reprocessing, the video URLs continue to function and play as usual.
+>Any videos that you uploaded before enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
 **To add multiple captions and audio tracks to your video:**
 
 1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
 1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
-1. On the toolbar, click the Properties icon (a circle with an "i" in it).
-![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+1. On the toolbar, select the Properties icon (a circle with an "i" in it). 
+
+   ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+
 1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
 
+
    >[!TIP]
-   >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
-   >
+   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+    When you have completed either one of the above tasks, return to these steps.
+
+   ![Asset properties](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Captions and audio tracks tab on the video's Properties page.*
+
+1. (Optional) To add one or more caption files to a video, do the following:
+
+    * Select **[!UICONTROL Upload Captions]**.
+    * Navigate to, and select, one or more `.vtt` (Video Text Tracks) files and open them.
+    * For captions to be visible on the media player, you must add required details (metadata) about each caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the Edit Caption dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
+
+
+    | Caption metadata | Description | 
+    | --- | --- | 
+    Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+    | Language | Select the language of the caption. |
+    | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker identification. It also includes other relevant details alongside the translation or transcription of dialogue. This functionality makes the content more accessible to individuals who are deaf or hard of hearing. |
+    | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, English (CC). |
+
+    You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. (Optional) To add one or more audio tracks to a video, do the following:
+
+    * Select **[!UICONTROL Upload Audio Tracks]**.
+    * Navigate to, and select, one or more .mp3 files and open them.
+    * To make audio tracks visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, add the required details for each audio track file. Ensure you include all necessary information for proper display. Select the pencil icon to the right of an audio track file name. In the Edit Audio Track dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+
+    | Audio Track metadata | Description |
+    | --- | --- |
+    | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files.| 
+    | Language | Select the language of the audio track. |
+    | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with English language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+    | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+
+    You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+
+1. In the upper-right corner of the page, from the **[!UICONTROL Save & Close]** drop-down list, select **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the Status column of the interface.
+
+    >[!NOTE]
+    >
+    >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+
+1. (Optional) If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](/help/assets/dynamic-media/video.md#lifecycle-status-video).
+
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
+
+1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
+
+
+
+## 关于Dynamic Media中对视频的多个字幕和音轨支持{#about-msma}
+
+借助Dynamic Media中的多个字幕和音轨功能，您可以轻松添加多个音轨。 您还可以使用自己的`.vtt`（视频字幕）文件或AI生成的字幕文件添加多个字幕文件。 Dynamic Media中的AI生成字幕旨在通过自动生成准确且同步的字幕来增强视频可访问性和参与度。 该技术使用高级人工智能算法将口语内容转录为文本，然后作为字幕显示在视频上。 此技术的一些关键功能包括：
+
+* **自动转录：**&#x200B;人工智能系统将口语文字实时转录为文本，确保快速准确地生成字幕。
+* **多语言支持：**&#x200B;可以自动以60多种语言提供字幕，从而更易于联系全球受众。
+* **增强辅助功能：**&#x200B;通过提供字幕，使耳聋或听力缺佳的观众或喜欢关机看视频的人更容易访问视频。
+* **更好的参与度：**&#x200B;字幕有助于保持查看者的注意力并提高理解力，尤其是在嘈杂的环境中或当查看者的母语与视频的语言不同时。
+
+这些功能使AI支持的字幕成为内容创作者寻求提高其视频内容可访问性和参与度的宝贵工具。
+
+![Dynamic Media中的“字幕和音轨”选项卡，以及显示视频的上传.VTT字幕文件和上传.MP3音轨文件的表。](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+
+向主视频添加多个字幕和音频轨道需要考虑的一些用例包括：
+
+| 类型 | 用例 |
+|--- |--- |
+| **字幕** | 多语言支持 |
+|  | 用于辅助功能的描述性文本 |
+| **曲目** | 多语言支持 |
+|  | 评论轨道 |
+|  | 描述性音频 |
+
+除Dynamic Media *Video_360*&#x200B;查看器外，所有Dynamic Media ](/help/assets/file-format-support.md)和所有Dynamic Media视频查看器都支持所有[视频格式以便与多个字幕和音轨一起使用。
+
+通过必须由Adobe客户支持启用（打开）的功能切换，您的Dynamic Media帐户可以使用多字幕和多音频跟踪功能。
+
+### 为视频添加多个字幕和音轨 {#add-msma}
+
+在将多个字幕和音频轨道添加到视频之前，请确保已具备以下功能：
+
+* Dynamic Media是在AEM环境中设置的。
+* [Dynamic Media视频配置文件已应用于从中摄取视频的文件夹](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
+* [已在您的Dynamic Media帐户中启用多字幕/音轨和人工智能生成的字幕](#enable-dash)。
+
+WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音频轨道文件也受支持。
+
+>[!IMPORTANT]
+>
+>对于在&#x200B;*之前*&#x200B;在您的Dynamic Media帐户上启用多个字幕/音轨支持或人工智能生成的字幕上传的视频，[您需要重新处理它们](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)。 此重新处理步骤确保这些视频可以使用多个字幕/音频轨道和AI生成的字幕功能。 在重新处理之后，视频URL将继续正常工作并播放。
+
+**要向视频添加多个字幕和音轨：**
+
+1. [将主视频上传到已分配了视频配置文件的文件夹](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
+1. 导航到要添加多个字幕和音频轨道的上传视频资产。
+1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。
+1. 在工具栏上，单击“属性”图标（一个带有“i”的圆形）。
+   ![所选的视频资产在视频缩略图图像上带有复选标记，并且工具栏上突出显示了“查看属性”。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*在卡片视图中选择的视频资产。*
+1. 在视频的“属性”页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
+
+   >[!TIP]
+   >如果您看不到&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡，则表示以下两种情况之一：
    >
-   >When you have completed either one of the above tasks, return to these steps.
-  
-   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Captions and audio tracks tab on the video's Properties page.*
+   >* 所选视频所在的文件夹没有分配视频配置文件。 在这种情况下，请参阅[将视频配置文件应用到文件夹](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
+   >* 或者，Dynamic Media必须重新处理视频。 在这种情况下，请参阅[重新处理文件夹](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的Dynamic Media资源。
+   >
+   >完成以上任一任务后，请返回这些步骤。
 
-1. To add one or more audio tracks to a video, do the following:
-   1. Select **[!UICONTROL Upload Audio Tracks]**.
-   1. Navigate to, and select, one or more .mp3 files and open them.
-   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
-    
-      | Audio Track metadata | Description |
+   ![属性页面上的字幕和音轨选项卡。](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   *视频的“属性”页面上的“字幕和音轨”选项卡。*
+
+1. 要将一个或多个音频轨道添加到视频，请执行以下操作：
+   1. 选择&#x200B;**[!UICONTROL 上传音轨]**。
+   1. 导航到一个或多个.mp3文件并将其打开。
+   1. 要使音轨在媒体播放器上的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中可见，必须添加有关每个音轨文件的所需详细信息。 这样做可确保正确列出并访问所有音频轨道。 选择音轨文件名右侧的铅笔图标。 在&#x200B;**编辑音轨**&#x200B;对话框中，输入以下必需的详细信息：
+
+      | 音轨元数据 | 描述 |
       |--- |--- |
-      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
-      | Language | Select the correct language of the audio track. |
-      | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
-      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
+      | 文件名 | 默认文件名是从原始文件名派生的。 只能在上传时更改文件名，以后不能更改。 文件名字符要求与AEM Assets相同。<br>不能对附加的音轨文件或字幕文件使用相同的文件名。 |
+      | 语言 | 选择正确的音轨语言。 |
+      | 类型 | 选择您正在使用的音轨类型。<br>**原始** — 音频曲目最初附加到视频，并在标签中以`[Original]`形式表示，默认情况下选择`English`语言。 虽然&#x200B;**[!UICONTROL 标签]**&#x200B;和&#x200B;**[!UICONTROL 语言]**&#x200B;可以在&#x200B;**[!UICONTROL 编辑音轨]**&#x200B;对话框中更改，但如果重新处理主视频，则默认为原始值。<br>**标准** — 用于原始语言以外的语言的附加音频轨道。<br>**音频描述** — 一个音频轨道，其中还包括视频中非语言操作和手势的描述性叙述，使视障人士更容易访问内容。 |
+      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中显示为音频轨道名称的文本。 该标签是客户看到的与音轨对应的内容。 例如，`English [Original]`。默认情况下，附加到视频的音频标签设置为`[Original]`。 |
 
-      You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+      您可以稍后更改或编辑此音频轨道元数据（如有必要）。 发布视频时，这些详细信息会反映在已发布视频的公共URL上。
 
-   1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**.
-   1. Do one of the following:
-        * Repeat this process for each audio track file that you upload.
-        * Continue to the next step to add captions to a video.
+   1. 在页面的右上角附近，在&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;下拉列表中，单击&#x200B;**[!UICONTROL 保存]**。
+   1. 执行下列操作之一：
+      * 对上传的每个音频轨道文件重复此过程。
+      * 继续下一步以向视频添加字幕。
 
-1. To add one or more caption files to a video, choose which one of the following use cases best fits your scenario:
-   
-   |  | Use case | Create Caption option to use |
+1. 要将一个或多个字幕文件添加到视频，请选择以下哪个用例最适合您的场景：
+
+   |  | 用例 | 创建要使用的题注选项 |
    | --- | --- | --- |
-   | **Option 1** | I have my own pre-existing caption files that are in the languages that I want to use.<br>See **Option 1** below. | **[!UICONTROL Upload Files]** |
-   | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
-   | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
+   | **选项1** | 我有自己以前存在的字幕文件，这些文件使用我想要使用的语言。<br>请参阅下面的&#x200B;**选项1**。 | **[!UICONTROL 上载文件]** |
+   | **选项2** | 我希望人工智能能生成多种语言的字幕文件。<br>请参阅下面的&#x200B;**选项2**。 | **[!UICONTROL 转换音轨]** |
+   | **选项3** | 题注文件(`.vtt`)中的文本需要更正，重新上传以替换旧的`.vtt`文件，然后让AI翻译更正后的文件。<br>请参阅下面的&#x200B;**选项3**。 | **[!UICONTROL 翻译字幕]** |
 
-    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-    *The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
+   ![创建字幕选项。](/help/assets/dynamic-media/assets/msma-createcaption.png)
+   *创建字幕下拉菜单为您提供三个选项：上传文件、转换音轨和翻译字幕。*
 
-    +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
++++**选项1：** *我拥有自己预先存在的描述文件，这些文件使用我要使用的语言* （**[!UICONTROL 上传文件]**&#x200B;选项）
 
-    1. Near the upper-right side of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]**.
-    1. Navigate to, and select, one or more of your pre-existing `.vtt` files and open them.
-    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
-    
-        | Caption metadata | Description |
-        |--- |--- |
-        | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
-        | Language | Select the language of the caption. After a caption file is processed, this language field becomes uneditable (dimmed) |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises, speaker differentiation, and other relevant details, along with dialogue translation or transcription, enhancing accessibility for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+   1. 在页面的右上角附近，单击&#x200B;**[!UICONTROL 创建题注]** > **[!UICONTROL 上传文件]**。
+   1. 导航到一个或多个预先存在的`.vtt`文件并将其打开，并选择这些文件。
+   1. 为了在媒体播放器上显示字幕，您&#x200B;*必须*&#x200B;添加有关您上传的&#x200B;*每个*&#x200B;字幕文件的所需详细信息。 选择题注文件名右侧的铅笔图标。 在&#x200B;**编辑题注**&#x200B;对话框中，输入有关文件的以下必需详细信息：
 
-        You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
+      | 题注元数据 | 描述 |
+      |--- |--- |
+      | 文件名 | 默认文件名是从原始文件名派生的。 只能在上传时更改文件名，以后不能更改。 文件名字符要求与AEM Assets相同。<br>不能将同一文件名用于其他字幕文件和音轨文件。 |
+      | 语言 | 选择题注的语言。 处理字幕文件后，此语言字段将变为不可编辑（灰显） |
+      | 类型 | 选择您正在使用的字幕类型。<br>**子标题** — 与翻译或转录此对话框的视频一起显示的标题文本。<br>**字幕** — 字幕文本包括背景噪音、说话人辨别和其他相关细节，以及对话翻译或转录，增强了耳聋或听力缺佳者的可访问性。 |
+      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如：`English (CC)`。 |
 
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
+      您可以稍后更改或编辑字幕元数据（如有必要）。 发布视频时，这些详细信息会反映在已发布视频的公共URL上。
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+   1. 在页面的右上角附近，在&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;下拉列表中，单击&#x200B;**[!UICONTROL 保存]**。 文件已上载，元数据处理开始，如界面的&#x200B;**状态**&#x200B;列中所示。
 
-    1. If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
-    1. Continue to step 8.
+      >[!NOTE]
+      >
+      >根据实例的缓存设置，元数据处理可能需要几分钟时间，然后才能反映在预览和已发布的URL中。
 
-    +++
+   1. 如果您在上一步中选择了&#x200B;**[!UICONTROL 保存并关闭]**，而不是选择&#x200B;**[!UICONTROL 保存]**，您仍可以查看已上载文件的处理状态。 请参阅[查看已上传的字幕和音轨文件的生命周期状态](#lifecycle-status-video)。
+   1. 继续执行步骤8。
 
-    +++**Option 2:** *I want AI to generate my caption files in multiple languages* (**[!UICONTROL Convert audio tracks]** option)
++++
 
-    1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
++++**选项2：** *我希望AI生成多种语言的字幕文件* （**[!UICONTROL 转换音轨]**&#x200B;选项）
 
-        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
-        *The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
+   1. 在页面的右上角附近，单击&#x200B;**[!UICONTROL 创建字幕]** > **[!UICONTROL 转换音轨]**。
 
-    1. In the **Convert Audio Tracks** dialog box, set the following options:
-    
-        | Option | Description |
-        |--- |--- |
-        | Audio track to convert | In the drop-down list, choose the uploaded audio track file from which you want captions generated using AI.  |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+      ![转换音轨对话框。](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
+      *“转换音轨”对话框使用AI生成多种语言的字幕文件。*
 
-    1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
-    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+   1. 在&#x200B;**转换音轨**&#x200B;对话框中，设置以下选项：
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+      | 选项 | 描述 |
+      |--- |--- |
+      | 要转换的音轨 | 在下拉列表中，选择上传的音频轨道文件，您希望AI从中生成字幕。 |
+      | 输出语言 | 在下拉列表中，选择您希望字幕文件显示的一个或多个语言。<br>若要删除选定的语言，请单击&#x200B;**X**。<br>在视频播放期间，媒体播放器中会按照您在此处选择它们的顺序显示语言列表。 |
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+   1. 单击&#x200B;**[!UICONTROL 完成]**。
+   1. 在页面的右上角附近，在&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;下拉列表中，单击&#x200B;**[!UICONTROL 保存]**。
+   1. 再次单击&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。 已创建一个或多个字幕文件并开始处理，如界面的&#x200B;**状态**&#x200B;列中所示。 另请参阅[查看上传的字幕和音轨文件的生命周期状态](#lifecycle-status-video)。
 
-        | Caption metadata | Description |
-        | --- | --- |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+      >[!NOTE]
+      >
+      >根据实例的缓存设置，元数据处理可能需要几分钟时间，然后才能反映在预览和已发布的URL中。
 
-        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
-    1. Continue to step 8.
+   1. （可选）选择题注文件名右侧的铅笔图标。 在&#x200B;**编辑标题**&#x200B;对话框中，可以编辑有关文件的以下详细信息：
 
-    +++
+      | 题注元数据 | 描述 |
+      | --- | --- |
+      | 类型 | 选择您正在使用的字幕类型。<br>**子标题** — 与翻译或转录此对话框的视频一起显示的标题文本。<br>**字幕** — 字幕文本包含背景噪音和说话人辨别。 其中还包括其他相关信息，以及对话的翻译或转录。 这种方法使耳聋或听力缺佳的用户更容易访问内容。 |
+      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如：`English (CC)`。 |
 
-    +++**Option 3:** *Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file* (**[!UICONTROL Translate captions]** option)
+      如果需要，您可以稍后更改或编辑某些字幕元数据。 发布视频时，这些元数据详细信息会反映在已发布视频中的公共URL上。
+   1. 继续执行步骤8。
 
-    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
++++
 
-        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
-        *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
++++**选项3：** *需要更正字幕文件(`.vtt`)中的文本，重新上传以替换旧的`.vtt`文件，然后让AI翻译更正后的文件* （**[!UICONTROL 翻译字幕]**&#x200B;选项）
 
-    1. In the **Translate caption** dialog box, set the following options:
+   1. 单击&#x200B;**[!UICONTROL 创建标题]** > **[!UICONTROL 翻译标题]**。 如果已经添加并处理了一个或多个描述文件，则此选项可用。
 
-        | Option | Description |
-        |--- |--- |
-        | Caption to translate | In the drop-down list, choose a caption file from which you want the captions generated using AI. |
-        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
+      ![翻译字幕对话框。](/help/assets/dynamic-media/assets/msma-translate-captions.png)
+      *通过“翻译字幕”对话框，您可以使用现有的字幕文件让AI生成多种语言的新字幕文件。*
 
-    1. Click **[!UICONTROL Done]**.
-    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
-    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+   1. 在&#x200B;**翻译字幕**&#x200B;对话框中，设置以下选项：
 
-        >[!NOTE]
-        >
-        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
+      | 选项 | 描述 |
+      |--- |--- |
+      | 要翻译的题注 | 在下拉列表中，选择一个需要使用AI生成字幕的字幕文件。 |
+      | 输出语言 | 在下拉列表中，选择您希望字幕文件显示的一个或多个语言。<br>若要删除选定的语言，请单击&#x200B;**X**。<br>在视频播放期间，媒体播放器中会按照您在此处选择它们的顺序显示语言列表。 |
 
-    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
+   1. 单击&#x200B;**[!UICONTROL 完成]**。
+   1. 在页面的右上角附近，在&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;下拉列表中，单击&#x200B;**[!UICONTROL 保存]**。
+   1. 再次单击&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。 已创建一个或多个字幕文件并开始处理，如界面的&#x200B;**状态**&#x200B;列中所示。 另请参阅[查看上传的字幕和音轨文件的生命周期状态](#lifecycle-status-video)。
 
-        | Caption metadata | Description |
-        | --- | --- |
-        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text also includes background noises, speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
-        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
+      >[!NOTE]
+      >
+      >根据实例的缓存设置，元数据处理可能需要几分钟时间，然后才能反映在预览和已发布的URL中。
 
-        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
+   1. （可选）选择题注文件名右侧的铅笔图标。 在&#x200B;**编辑标题**&#x200B;对话框中，可以编辑有关文件的以下详细信息：
 
-    1. Continue to step 8.
+      | 题注元数据 | 描述 |
+      | --- | --- |
+      | 类型 | 选择您正在使用的字幕类型。<br>**子标题** — 与翻译或转录此对话框的视频一起显示的标题文本。<br>**字幕** — 字幕文本还包括背景噪音、说话人辨别。 其中还包括其他相关信息，以及对话的翻译或转录。 这种方法使耳聋或听力缺佳的用户更容易访问内容。 |
+      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如：`English (CC)`。 |
 
-    +++
+      如果需要，您可以稍后更改或编辑某些字幕元数据。 发布视频时，这些元数据详细信息会反映在已发布视频中的公共URL上。
 
-1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
-1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
+   1. 继续执行步骤8。
 
--->
++++
+
+1. （可选）在发布之前预览视频，以确保字幕和音频按预期工作。 查看[预览具有多个字幕和音轨的视频](#preview-video-audio-subtitle)。
+1. Publish视频。 查看[Publish资源](publishing-dynamicmedia-assets.md)。
 
 #### 关于将字幕和音频跟踪文件添加到已发布的视频
 

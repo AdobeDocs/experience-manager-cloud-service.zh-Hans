@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.10.0 �
 description: 了解AEM as a Cloud Service中Cloud Manager 2024.10.0的发行说明。
 feature: Release Information
 role: Admin
-source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 12%
@@ -90,4 +90,4 @@ AEM as a Cloud Service中的Cloud Manager 2024.10.0版的发布日期是2024年1
 
 
 
-## Known Issues {#known-issues} -->
+## Known issues {#known-issues} -->

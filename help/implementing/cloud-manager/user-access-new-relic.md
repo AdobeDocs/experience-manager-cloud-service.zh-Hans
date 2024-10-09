@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1850'
-ht-degree: 78%
+source-wordcount: '1836'
+ht-degree: 67%
 
 ---
 
@@ -55,11 +55,11 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
    * 您还可以通过程序的&#x200B;**环境**&#x200B;屏幕顶部的省略号按钮访问&#x200B;**管理用户**。
 
-1. [为同一环境运行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)以成功完成，以完成子帐户激活。
+1. [为同一环境运行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)以成功完成子帐户激活。
 
 停用子帐户时，不会摄取任何数据。
 
-## 管理 New Relic One 用户 {#manage-users}
+## 管理New Relic One用户 {#manage-users}
 
 按照以下步骤定义您 AEM as a Cloud Service 程序关联的 New Relic One 子帐户用户。
 
@@ -91,7 +91,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 >
 >如果您正在管理 New Relic One 用户，您还必须将自己添加为用户，以便您也可以访问。作为&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;没有足够权限访问 New Relic One。您还必须将自己创建为用户。
 
-## 激活您的 New Relic One 用户帐户 {#activate-user-account}
+## 激活您的New Relic One用户帐户 {#activate-user-account}
 
 按照预览部分[管理 New Relic One 用户](#manage-users)中所述创建 New Relic One 用户帐户后，New Relic 会向提供的地址发送确认电子邮件。要使用这些帐户，用户必须首先通过重置密码来使用 New Relic 激活其帐户。
 
@@ -107,15 +107,15 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
    ![输入电子邮件地址](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. New Relic 将向您发送一封电子邮件，其中包含确认帐户的链接。
+1. New Relic会向您发送一封电子邮件，其中包含确认帐户的链接。
 
 如果未收到来自New Relic的确认电子邮件，请参阅[疑难解答部分](#troubshooting)。
 
-## 正在访问 New Relic One {#accessing-new-relic}
+## 访问New Relic One {#accessing-new-relic}
 
-一旦[激活了您的 New Relic 帐户，](#activate-account)您就可以通过云管理器或直接访问 New Relic One。
+在您[激活您的New Relic帐户](#activate-account)后，您可以通过Cloud Manager或直接访问New Relic One。
 
-要通过 Cloud Manager 访问 New Relic One，请执行以下操作：
+**要通过Cloud Manager访问New Relic One，请执行以下操作：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -129,21 +129,21 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. 在打开的新浏览器选项卡中，登录到 New Relic One。
 
-要直接访问 New Relic One：
+**要直接访问New Relic One，请执行以下操作：**
 
 1. 导航至 New Relic 的登录页面，网址为 [`https://login.newrelic.com/login`](https://login.newrelic.com/login)
 
 1. 登录 New Relic One。
 
-### 正在验证您的电子邮件 {#verify-email}
+### 验证您的电子邮件 {#verify-email}
 
-如果在登录 New Relic One 时要求您验证电子邮件，这意味着您的电子邮件与多个帐户关联。这让您选择要访问的帐户。
+如果在登录 New Relic One 时要求您验证电子邮件，这意味着您的电子邮件与多个帐户关联。您可以选择要访问的帐户。
 
 如果您不验证您的电子邮件地址，New Relic 会尝试使用与您的电子邮件关联的最近创建的用户记录登录。要避免在每次登录时验证您的电子邮件，请单击登录屏幕中的&#x200B;**记住我**&#x200B;复选框。
 
 有关更多帮助，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持问题。
 
-## New Relic One用户访问疑难解答 {#troubleshooting}
+## New Relic One用户访问权限疑难解答 {#troubleshooting}
 
 如果您按照[管理New Relic One用户](#manage-users)部分中所述被添加为New Relic One用户，并且无法找到原始帐户确认电子邮件，请按照以下步骤操作。
 
@@ -157,15 +157,15 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
    ![输入电子邮件地址](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. New Relic 将向您发送一封电子邮件，其中包含确认帐户的链接。
+1. New Relic会向您发送一封电子邮件，其中包含确认帐户的链接。
 
 如果您完成了注册过程，并且由于电子邮件或密码错误消息而无法登录到您的帐户，请通过[Admin Console](https://adminconsole.adobe.com/)提交支持票证。
 
-如果您没有收到 New Relic 的电子邮件：
+如果您没有收到来自New Relic的电子邮件，请执行以下操作：
 
 * 检查您的[垃圾邮件过滤器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)。
 * 如果适用，[请将 New Relic 添加到您的电子邮件允许列表中](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)。
-* 如果这两个建议都没有帮助，请提供有关支持请求工单的反馈，Adobe 支持团队可以帮助您。
+* 如果这两个建议都没有帮助，请提供有关支持票证的反馈。
 
 ## 限制 {#limitations}
 
@@ -177,13 +177,15 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 >[!NOTE]
 >
->如果在90天或更长时间内New Relic One子帐户中未检测到任何活动，则将停止APM代理。
+>如果90天或更长时间未在New Relic One子帐户中检测到任何活动，则APM代理将停止。
 >
 >按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。
 
-有关您的 AEM as a Cloud Service 程序的 New Relic One 产品的更多帮助或更多指导，请通过 [AEM 支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持请求工单。
+有关AEM as a Cloud Service计划的New Relic One产品的更多帮助或更多指导，请通过[AEM支持门户](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)打开支持工单。
 
-## 关于 New Relic One 的常见问题 {#faqs}
+## 常见问题解答 {#faqs}
+
++++
 
 ### Adobe 使用 New Relic One 监控什么？ {#adobe-monitor}
 
@@ -200,18 +202,30 @@ Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java �
 * 每个应用程序使用一个许可证密钥。
 * AEM as a Cloud Service 环境仅向一个 New Relic One 帐户报告。
 * New Relic One 的全面监控指标和事件保留七天。
++++
+
++++
 
 ### Adobe 是否从 New Relic One 发送警报通知？ {#alerting-new-relic}
 
 Adobe 提供 New Relic One 访问权限以仅作观察用途，并不将它用于客户警报或内部运营警报。使用[用户通知配置文件](/help/journey-onboarding/notification-profiles.md)发送任何事件的通知。
++++
+
++++
 
 ### 谁可以访问 New Relic One 云服务数据？ {#access-new-relic-cloud}
 
-您的团队最多可以有 30 名成员获得完全读取权限。读取权限将包括 New Relic One 代理收集的所有 APM 量度。
+您的团队最多可以有 30 名成员获得完全读取权限。读取权限包括由New Relic One代理收集的所有APM指标。
++++
+
++++
 
 ### 是否支持自定义 SSO 配置？ {#custom-sso}
 
 Adobe 设置的 New Relic One 帐户不支持自定义 SSO 配置。
++++
+
++++
 
 ### 如果我已经有一个本地 New Relic 订阅怎么办？ {#new-relic-subscription}
 
@@ -219,12 +233,17 @@ New Relic One 是 New Relic 推出的新可观察性平台，它使 Adobe 支持
 
 New Relic One 为用户提供了跨所有帐户搜索的能力，用户可以在一个视图中访问和可视化来自所有服务和主机的数据。
 
-虽然 Adobe 支持人员将使用 New Relic One 和其他内部工具作为您服务的一部分，将 AEM as a Cloud Service 应用程序进行监控，但您的团队可以继续利用 New Relic 提供本地托管服务和基础设施。他们能够以可视化图表形式查看来自 Adobe New Relic One 帐户和客户管理的 New Relic 帐户的数据。
+虽然Adobe支持使用New Relic One和其他内部工具作为您服务的一部分来监控AEM as a Cloud Service应用程序，但您的团队可以继续将New Relic用于本地托管服务和基础架构。 他们能够以可视化图表形式查看来自 Adobe New Relic One 帐户和客户管理的 New Relic 帐户的数据。
 
 >[!NOTE]
 >
 >要在 New Relic One 中查看这两个数据集，用户必须具有正确的权限，并对这两个帐户（Adobe New Relic One 和客户管理的 New Relic 帐户）使用相同的登录方法。
 
++++
+
++++
+
 ### 我的 New Relic One 帐户的 APM 代理已停止。发生了什么情况？ {#deactivated}
 
 如果在 90 天或更长时间内未检测到任何活动，[APM 代理将停止](#limitations)。按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。
++++

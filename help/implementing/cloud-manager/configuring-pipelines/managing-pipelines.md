@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 69%
+source-wordcount: '1108'
+ht-degree: 67%
 
 ---
 
@@ -98,7 +98,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，单击要编辑的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**编辑**。
 
-1. 这将显示&#x200B;**编辑生产管道**&#x200B;或&#x200B;**编辑非生产管道**&#x200B;对话框，您可在其中编辑在创建管道时输入的相同详细信息。
+1. 此时会显示&#x200B;**编辑生产管道**&#x200B;或&#x200B;**编辑非生产管道**&#x200B;对话框，可让您编辑在创建管道时输入的相同详细信息。
 
    * 有关对管道可用的字段和配置选项的详细信息，请参阅以下页面。
       * [配置生产管道](configuring-production-pipelines.md)

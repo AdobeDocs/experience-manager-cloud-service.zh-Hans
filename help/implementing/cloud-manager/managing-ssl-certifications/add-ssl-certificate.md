@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 493c5729c3107f151685a243006b17196b74c1bd
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '535'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 6%
 ## 先决条件 {#prerequisites}
 
 * 用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能添加证书。
-* 如果您正在安装自己的证书，请务必查看[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中的&#x200B;**证书要求**。
+* 如果您正在安装自己的证书，请参阅[管理SSL证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中的&#x200B;**证书要求**。
 
 ## 添加SSL证书 {#add-certificate}
 
@@ -55,4 +55,4 @@ ht-degree: 6%
 
 >[!TIP]
 >
->如果在添加或管理证书时遇到问题，请参阅文档[SSL证书错误疑难解答。](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
+>如果在添加或管理证书时遇到问题，请参阅[SSL证书错误疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)。

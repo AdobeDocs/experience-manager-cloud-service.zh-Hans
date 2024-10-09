@@ -4,28 +4,28 @@ description: 了解如何使用 Git 子模块在构建时跨 Git 存储库合并
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 90%
+source-wordcount: '419'
+ht-degree: 24%
 
 ---
 
-# Adobe 存储库的 Git 子模块支持 {#git-submodule-support}
+# 为 Adobe 存储库提供的 Git 子模块支持 {#git-submodule-support}
 
 Git 子模块可用于在构建时跨 Git 存储库合并多个分支的内容。
 
-Cloud Manager 的构建流程执行期间，在克隆为管道配置的存储库并签出配置的分支后，如果该分支在根目录中包含 `.gitmodules` 文件，则执行此命令。
+Cloud Manager的构建过程运行时，会克隆管道的存储库并签出分支。 如果分支的根目录中存在`.gitmodules`文件，则执行相应的命令。
 
-以下命令将把每个子模块签出到适当的目录中。
+以下命令将每个子模块签出到适当的目录中。
 
 ```
 $ git submodule update --init
 ```
 
-这项技术是文档[使用多源 Git 存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)中所述解决方案的潜在替代方案，适用于习惯使用 Git 子模块且不想管理外部合并过程。
+此技术为[使用多个Source Git存储库](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)中所述的解决方案提供了替代方案。 它非常适合熟悉Git子模块并且更喜欢不管理外部合并流程的组织。
 
-例如，假设有三个存储库，每个存储库均包含一个名为 `main` 的分支。 在“主”存储库（即，在管道中配置的存储库）中，`main` 分支包含一个 `pom.xml` 文件，声明其他两个存储库所包含的项目。
+例如，假设有三个存储库。 每个存储库都包含一个名为`main`的分支。 在主存储库（即，在管道中配置的存储库）中，`main`分支包含一个`pom.xml`文件，声明其他两个存储库所包含的项目：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -46,14 +46,14 @@ $ git submodule update --init
 </project>
 ```
 
-之后，您将为其他两个存储库添加子模块。
+之后，您将为其他两个存储库添加子模块：
 
 ```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-这会导致 `.gitmodules` 文件类似于以下内容。
+结果生成了类似于以下内容的`.gitmodules`文件：
 
 ```text
 [submodule "project-a"]
@@ -66,25 +66,27 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-有关Git子模块的更多信息可在[Git参考手册](https://git-scm.com/book/en/v2/Git-Tools-Submodules)中找到。
+另请参阅[Git参考手册](https://git-scm.com/book/en/v2/Git-Tools-Submodules)以了解有关Git子模块的更多信息。
 
-### 限制和建议 {#limitations-recommendations}
+## 限制和建议 {#limitations-recommendations}
 
 将Git子模块与Adobe管理的存储库结合使用时，请注意以下限制。
 
-* Git URL 必须完全遵循上一节所述语法。
+* Git URL必须完全遵循上一节中所述的语法。
 * 仅支持分支的根目录中的子模块。
-* 为安全起见，请勿在 Git URL 中嵌入凭据。
-* 除非另有必要，否则强烈建议使用“浅”子模块。
-   * 为此，请为每个子模块运行 `git config -f .gitmodules submodule.<submodule path>.shallow true`。
-* Git 子模块引用将存储到特定的 git 承诺中。 因此，在对子模块存储库进行更改时，必须更新引用的承诺。
-   * 例如，通过使用 `git submodule update --remote`
+* 为安全起见，请勿在Git URL中嵌入凭据。
+* 除非另有必要，否则Adobe建议您通过运行以下命令来使用浅子模块：
+  每个子模块的`git config -f .gitmodules submodule.<submodule path>.shallow true`。
+* Git 子模块引用将存储到特定的 Git 承诺中。 因此，在对子模块存储库进行更改时，必须更新引用的承诺。
+例如，使用以下命令：
+
+  `git submodule update --remote`
 
 ## Git 子模块对专用存储库的支持 {#private-repositories}
 
-使用[专用存储库](private-repositories.md)时对 Git 子模块的支持与使用 Adobe 存储库时大致相同。
+对[专用存储库](private-repositories.md)中的Git子模块的支持通常与其在Adobe存储库中的使用类似。
 
-然而，在设置您的 `pom.xml` 文件并运行 `git submodule` 命令之后，您必须添加 `.gitmodules` 文件复制到聚合器存储库的根目录，以便 Cloud Manager 检测子模块设置。
+但是，在配置`pom.xml`文件并执行`git submodule`命令后，必须将`.gitmodules`文件添加到Cloud Manager的聚合器存储库的根目录，以识别子模块配置。
 
 ![.gitmodules 文件](assets/gitmodules.png)
 
@@ -92,9 +94,8 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ### 限制和建议 {#limitations-recommendations-private-repos}
 
-使用带有专用存储库的 Git 子模块时，注意以下限制。
+将Git子模块与专用存储库结合使用时，请牢记以下限制：
 
-* 子模块的 Git URL 可以是 HTTPS 或 SSH 格式，但必须链接到 github.com 存储库
-   * 将 Adobe 存储库子模块添加到 GitHub 聚合器存储库或反之亦然不起作用。
-* GitHub 子模块必须可供 Adobe GitHub App 访问。
+* 子模块Git URL可以是HTTPS或SSH格式，但必须指向GitHub.com存储库。 不支持将Adobe存储库子模块添加到GitHub聚合器存储库或反之。
+* GitHub子模块必须可由AdobeGitHub应用程序访问。
 * [使用 Git 子模块与 Adobe 管理的存储库的局限性](#limitations-recommendations)同样适用。

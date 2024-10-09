@@ -1,14 +1,14 @@
 ---
-title: CI/CD 管道
+title: CI/CD管道简介
 description: 了解Cloud Manager的CI/CD管道以及如何使用它们高效地部署代码。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1488'
 ht-degree: 35%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 35%
 
 了解Cloud Manager的CI/CD（持续集成/持续交付）管道，以及如何使用它们高效地部署代码。
 
-## 简介 {#introduction}
+## CI/CD管道简介 {#introduction}
 
 Cloud Manager 中的 CI/CD 管道是一种从源存储库构建代码并将其部署到环境中的机制。事件触发管道，例如来自源代码存储库（如Git）的拉取请求（即代码更改）。 或者，也可以定期触发以匹配发布节奏。
 
