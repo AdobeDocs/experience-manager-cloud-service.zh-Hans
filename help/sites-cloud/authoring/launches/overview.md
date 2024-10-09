@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 94%
+source-wordcount: '897'
+ht-degree: 93%
 
 ---
 
@@ -105,9 +105,13 @@ ht-degree: 94%
 
 ## “启动项”控制台 {#the-launches-console}
 
-启动项控制台提供了启动项的概述，并允许您对列出的启动项执行操作。 可以通过以下方式访问该控制台：
+启动项控制台提供了启动项的概述，并允许您对列出的启动项执行操作。
 
-* **工具**&#x200B;控制台：**工具**、**站点**、**启动项**。
+![启动项控制台 – 管理内容](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+可以通过以下方式访问该控制台：
+
+* **工具**&#x200B;控制台： **工具**，**常规**，**启动项**。
 
 * **引用**&#x200B;边栏的&#x200B;**启动项**&#x200B;部分底部的&#x200B;**启动项控制台**（在 Sites 控制台中导航源内容时）。
 
@@ -116,6 +120,3 @@ ht-degree: 94%
 * 右上方的&#x200B;**启动项**&#x200B;按钮（在 Sites 控制台中导航启动项内容时）：
 
   ![ Sites 控制台中的“启动项”选项](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* 或直接访问，例如：
-  `https://<host>:<port>/libs/launches/content/launches.html`

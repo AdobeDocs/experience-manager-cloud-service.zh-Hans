@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 98%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
@@ -153,7 +153,15 @@ ht-degree: 98%
 
 如果选择&#x200B;**“完成”**，您将返回到&#x200B;**Sites**&#x200B;控制台的&#x200B;**引用**&#x200B;边栏，如果您选择了相应的页面，则会显示新的启动项。
 
-### 删除启动项 {#deleting-a-launch}
+### 克隆启动项 {#cloning-a-launch}
+
+您可以从[启动项控制台](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)克隆启动项：
+
+* 通过点按/单击缩略图选择相应的启动项。
+* 工具栏即会显示 — 选择“克隆”。
+   * 克隆将显示在控制台中。
+
+## 删除启动项 {#deleting-a-launch}
 
 您可以从[“启动项”控制台](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)中删除启动项：
 
