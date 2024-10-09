@@ -4,7 +4,7 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 7f7ecfcca77cc3a38f3a4517bf41c48565b9faea
+source-git-commit: 6ea53e6b2b009895dccf99ac0265dc42b68db509
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 2%
@@ -294,7 +294,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy-me* }
+        when: { reqProperty: path, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
