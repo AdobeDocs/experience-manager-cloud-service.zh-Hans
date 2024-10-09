@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
+source-git-commit: ea7e027b5247b64e78da1d14e4e602f39a37e4bd
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 89%
+source-wordcount: '836'
+ht-degree: 27%
 
 ---
 
@@ -16,120 +16,70 @@ ht-degree: 89%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 17964 {#release-17964}
+## 版本 18099 {#release-18099}
 
-下面总结了对维护版本 17964 的持续改进，该版本已于 2024 年 9 月 25 日公开发布。以前的维护版本是17689版。 由于出现问题，发行说17882已设为私有。
+以下总结了维护版本18099的不断改进，该版本于2024年10月9日公开发布。 上一个维护版本是版本 17964。
 
 激活 2024.10.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强 {#enhancements-17964}
+### 增强 {#enhancements-18099}
 
-* ASSETS - 37750：[优先级 4] [GraphQL] 支持 DM scene7 URL：图像智能裁切。
-* CQ - 4354583：[AEMaaCS] 通过 Adobe Pipeline 发送翻译过程事件。
-* CQ - 4357642：在 OOTB 连接器中更新 MSFT 凭据。
-* CQ—4358217：从请求实体中反序列化请求正文。
-* CQ - 4358342：仅在一种 HTTP 方法上注册 RequestProcessors。
-* FORMS - 10781：增强规则编辑器，以为面板中的下一个/上一个项目创建规则。
-* FORMS - 14595：[无浏览器功能] 当使用预填充数据计算无浏览器渲染的 DoR 时，DoR 中缺少值。
-* FORMS - 15619：AEM Forms 更新了翻译工具包。
-* FORMS - 16113：[Adobe Sign]无法由其他用户更新协议状态。
-* FORMS - 16155：[规则编辑器] 实施异步功能。
-* GRANITE - 53872：为 IMS 客户端 ID 添加新的环境变量。
-* SITES - 23738：发布核心组件 2.27.0 版本。
-* SITES - 16610：内容片段：获取启动详细信息端点。
-* SITES - 16614：内容片段：重新设定启动端点。
-* SITES - 16615：内容片段：推广启动端点。
-* SITES - 24215：内容片段：实施获取启动源端点。
-* SITES - 20336：内容片段：删除内容片段模型时改进验证。
-* SITES - 21090：内容片段：添加对数字字段的分数最小/最大值的支持
-* SITES - 21658：内容片段：升级以使用 UUID 引用。
-* SITES - 23054：内容片段：复制内容片段模型。
-* SITES - 23264：内容片段：创建模型的静态模式。
-* SITES - 23265：内容片段：通过 UI 模式 GET 端点公开模型的静态模式。
-* SITES - 23266：内容片段：能够向内容片段模型添加约束。
-* SITES - 23778：内容片段：搜索内容片段模型时应该允许搜索从未发布的模型。
-* SITES - 23335：内容片段：添加对外部资产引用的支持。
-* SITES - 24626：内容片段：RTC：UUID 迁移的权限：2。
-* SITES - 24786：内容片段：`referencesTree` 端点的增强功能。
-* SITES - 24833：内容片段：移除针对允许的 HTML 标记列表的 HTML 输入验证。
-* SITES - 23380：GraphQL：使用适当的 API 读取资产元数据。
-* SITES - 22864：[Edge Delivery] 具有新 AEM 内容结构集成 H2 2024 的通用编辑器。
-* SITES - 23584：Java 17 上的基础组件测试失败。
-* SITES - 23662：事件：无法从服务器日志中的 JCR 日志语句中提取触发发布请求的用户。
-* SITES - 23301：添加在创建内容片段翻译时启动新工作流程以创建文件夹结构的支持。
-* SITES - 23336：内容片段：添加对外部资产引用的支持
-* SITES - 24091：MSM 内容包拆分：主。
-* SITES - 24114: isSourceRenderCondition：将错误日志消息降低为调试。
-* SITES - 24166：Touch-UI 编辑器的远程资产缓解。
-* SITES - 24409：仅在一种 HTTP 方法上注册所有请求处理器。
-* SITES - 25008：改进对 PersistenceExceptions 和权限问题的处理。
-* SITES - 24821：将aem.page / aem.live设为默认值。
+* Assets-43015：更新到最新的auth.ims包。
+* Assets-41684：更新src/main/features/docker/ethos/base-ims-oauth.json。
+* Assets-38322：启用AEM的http请求事件。
+* Assets-41684：添加OOB OSGI配置以定义Assets、Foundation、Sites和Forms的FI到组映射。
+* Assets-41448：更新auth.ims包以支持FI到组的映射。
+* CQ-4356633：在“仅限内容”工具提示中添加额外的字符。
+* SITES-23584：基础组件测试在Java 17上失败。
+* GUIDES-19069：添加guidesPeerLinkIndex for aem guides插件。
+* GRANITE-54300：将 Oak 更新至最新公开版本 (1.70.0)。
+* GRANITE-54274：接受Firefly的IMS客户端。
+* GRANITE-36205：将内部 oak 发行版更新到最新版本。
+* GRANITE-45298：低权限用户可以通过不使用JS但使用XSS方式构建恶意表单来获取RCE。
+* GRANITE-54266：生产SDK缺少搜索建议程序服务。
+* GRANITE-50948 — 将存储库服务集成到AEM中为本地开发添加替代存储库服务。
+* GRANITE-53966：对内容分发使用单独的线程池。
+* GRANITE-53514：树激活1.0.26。
+* GRANITE-54054：com.adobe.granite.repository.impl.SystemUserValidation warnOnly的环境变量。
+* GRANITE-50948：将存储库服务集成到AEM Support for repository service中。
+* GRANITE-52454：添加支持帮助程序0.1.2。
+* GRANITE-53514：树激活1.0.26。
+* GRANITE-54038：将Creative Cloud企业IMS客户端添加到AEM 列入允许列表 IMS客户端。
+* GRANITE-36205：将内部 oak 发行版更新到最新版本。
+* GRANITE-53485：复制Azure Blob存储的支持服务主体身份验证。
+* GRANITE-54006：将Jackson更新为2.17.2。
+* GRANITE-53287：正在更新安全权限集成测试版本。
+* GRANITE-53914：使用Java 17更新模块版本的平台测试失败。
+* GRANITE-53870：创建内部机制以跳过快速入门的最大JVM版本检查。
+* GRANITE-52454：升级支持帮助程序GRANITE-52454升级支持帮助程序以使用AEMaaCS的最新版本。
+* SKYOPS-85335：将org.apache.sling.jcr.repoinit更新为1.1.52。
+* SKYOPS-85336：将Sling Commons Threads更新为3.3.0。
+* SKYOPS-76378：提高i18n中ResourceBundle注册/注销的线程安全性。
+* SKYOPS-84951：可变内容校验和生成代码不正确。
+* SKYOPS-82383：在命令执行描述符中公开“helm-values”convert-merge-analyze结果。
+* SKYOPS-86329：更新平台测试模块的版本以支持java 21 sdk。
+* SKYOPS-69768： SlingModels不会反序列化ResourceResolvers。
+* SKYOPS-84810：在RDE启动时跳过执行“40-initialize-publish.sh”。
+* SKYOPS-79285：将Sling XSS更新为2.4.2
 
-### 修复的问题 {#fixed-issues-17964}
+### 修复的问题 {#fixed-issues-18099}
 
-* CQ - 4356887: Akamai Technologies Inc. 的翻译项目状态不一致。
-* CQ - 4357878：翻译框架未在供应商翻译失败时设置错误状态。
-* CQ - 4358028：如果上传了缩略图，则无法创建项目。
-* CQ - 4358290：目标设置功能在已发布的页面上不起作用。
-* FORMS - 13173：自适应表格 > 规则编辑器 > 放置对象字段中的下拉列表错位。
-* FORMS - 13873：AFv2：组件名称中的 (“-”) 导致规则失败。
-* FORMS-14340：FormsAndDocumentOmniSearchHandler 和 CloudStorageSubmitActionInserter 实例化时出错。
-* FORMS - 15363：规则编辑器中显示的名称。
-* FORMS - 15381：授权范围消息的 UI 增强功能。
-* FORMS - 15595：AEM 表格 TnC 组件同意文本换行问题。
-* FORMS - 15623：AEMaaCS 表格 - 使用 One POST 更新 Dynamics 中的多个表的替代方法。
-* FORMS - 15682：AEM Forms - 无法将 DOR 绑定到 Dynamics FDM。
-* FORMS - 15799：Adobe Sign GovCloud 签名页面无法在 iframe 中呈现。
-* FORMS - 15835：提交后的表格 URL 重写问题。
-* FORMS - 16091：使用重组 Binary.java。
-* FORMS - 16096: Forms 用户无权访问 restendpoint 对话框。
-* FORMS - 16139：在核心组件表格中添加 DoR 所需的日志。
-* FORMS - 6935：活动成分状态缺乏 3 比 1 的对比度。
-* FORMS - 7018：空元素获得焦点。
-* GRANITE - 53028：ExternalProcessPollingHandler 中的 NPE。
-* GRANITE - 53907：无法将服务用户识别为工作流超级用户。
-* SITES - 24405：内容片段：枚举的扩展信息应该更具弹性
-* SITES - 23024：内容片段：枚举在 GET 片段中不会返回 locked: true。
-* SITES - 23269：内容片段：创建内容片段允许设置锁定字段。
-* SITES - 23337：内容片段：带有 `body` 的批处理端点因转换异常而失败。
-* SITES - 23474：内容片段：分页应该排除搜索内容片段中的损坏资源。
-* SITES - 23615：内容片段：内容片段副本 AuthoringInfo 未更新
-* SITES - 23668：内容片段：使用多字段修补 Live Copy 失败，错误代码为 400
-* SITES - 23695：内容片段：UiSchema 中没有选项卡描述
-* SITES - 23704：内容片段：_extendedInfo 中不支持多值枚举
-* SITES - 23781：内容片段：枚举字段中不允许出现重复值
-* SITES - 24150：内容片段：缺少有关创作的内容片段版本创作数据
-* SITES - 24230：内容片段：修复搜索内容片段模型中 `modified` 复制状态后的筛选问题
-* SITES - 24233：内容片段：按 `publishedBy` 筛选可以在搜索内容片段模型中包含未发布的资源
-* SITES - 24355：内容片段：对于创建的文件夹内容片段未实现实时关系
-* SITES - 24816：内容片段：ValidationStatus 消息顺序不一致。
-* SITES - 23896：活动：更多活动即将与“页面移动”活动一起举行
-* SITES - 23899：事件：页面事件延迟或根本没有生成
-* SITES - 23961：事件：当存在配置文件夹时，创建带有引用的内容片段模型失败
-* SITES - 23963：事件：页面删除事件有时不会发生
-* SITES - 23443： GraphQL： GraphQL光标查询不一致行为。
-* SITES - 10994：键盘焦点顺序不合逻辑。
-* SITES - 16357：AEM：Sites 菜单中的“设置分析”选项卡中的按钮被截断。
-* SITES - 19836：容器中的幽灵组件显示在发布和预览实例上。
-* SITES - 22348：如果项目的 Live Copy 超过 100 个，则 Live Copy 概览页面无法加载。
-* SITES - 22960：ContentFragmentModelOmniSearchHandler 中未关闭的资源解析器。
-* SITES - 23284：URL 编码导致路径浏览器对话框空白。
-* SITES - 23505：当页面移动到另一个位置时，组件会显示不正确的 URL。
-* SITES - 23574：无法预览/比较许多页面的当前版本
-* SITES - 23585：恢复具有 cq:responsive 节点的组件的继承时出现问题
-* SITES - 23650：AEM 创作环境中传入链接计数存在差异
-* SITES - 23659：切换 FT_* SITES - 9757 导致内容语言 Servlet 回归
-* SITES - 23759：体验片段中添加的资产未随启动项一起发布
-* SITES - 24025：AEM 中的 302 重定向使用内部 DNS 而不是公共 DNS 返回位置标头
-* SITES - 24036：需要对 ASCII 格式的 AEM RTE 持久字符进行调查
-* SITES - 24317：代理配置不适用于基本身份验证
-* SITES - 24918：修复使用专用ip出口时偶尔返回504错误。
+* CNTBF-298：从CC导出的资源包中删除jcr：uuid。
+* SKYOPS-83910：修复了SKYOPS-82371中发现的并发问题。
+* GRANITE-52876：更新至com.adobe.granite.ui.content 0.8.1448。
+* GRANITE-53088：由SITES-11992的修复引入的回归。
+* GUIDES-14445：本机PDF生成失败，并出现与获取Node.js的依赖关系相关的错误。
+* GUIDES-16961：带有`<conref>`的标题无法在Web编辑器的基线和翻译功能板中解析。
+* GUIDES-17283：当选择在topicmeta **选项中添加的**&#x200B;使用PDF时，元数据属性不会在本机元数据输出的文档属性中传播。
+* GUIDES-17793：在批量激活已发布的PDF期间，未从&#x200B;**批量Publish功能板**&#x200B;中激活引用的内容。
 
-### 已知问题 {#known-issues-17964}
+有关版本中新增和增强的Guides功能和问题的更多信息，请查看[Experience Manager Guides版本路线图](https://experienceleague.adobe.com/cn/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
+
+### 已知问题 {#known-issues-18099}
 
 * FORMS - 15818：组件描述符条目 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 在服务器日志中未找到语句。这些是无害的日志语句。
 
-### 已弃用的功能和 API {#deprecated-17964}
+### 已弃用的功能和 API {#deprecated-18099}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
@@ -145,15 +95,19 @@ AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和�
 
 请注意，Adobe正在更新`com.day.cq.wcm.api`。 其某些方法和类在当前版本中被标记为`@Deprecated`。 这些功能将在未来版本中删除。 请考虑改用他们建议的替代方案。
 
-### 安全修复 {#security-17964}
+#### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
 
-AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 16 个已发现的漏洞，增强了我们对强大系统保护的承诺。
+* GRANITE-54165：弃用公共API中的org.apache.jackrabbit.oak.plugins.blob。
 
-### 嵌套的技术 {#embedded-tech-17964}
+### 安全修复 {#security-18099}
+
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 2 个已发现的漏洞，增强了我们对强大系统保护的承诺。
+
+### 嵌套的技术 {#embedded-tech-18099}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
-| AEM Oak | 1.68.0 | [Oak API 1.68.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.68.0/index.html) |
+| AEM Oak | 1.70.0 | [Oak API 1.70.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.70.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.24-1.4.0 | [HTML 模板语言规范](https://github.com/adobe/htl-spec) |
 | AEM 核心组件 | 2.27.0 | [AEM WCM 核心组件](https://github.com/adobe/aem-core-wcm-components) |
