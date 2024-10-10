@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ea7e027b5247b64e78da1d14e4e602f39a37e4bd
+source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 27%
+source-wordcount: '773'
+ht-degree: 25%
 
 ---
 
@@ -24,43 +24,37 @@ ht-degree: 27%
 
 ### 增强 {#enhancements-18099}
 
-* Assets-43015：更新到最新的auth.ims包。
-* Assets-41684：更新src/main/features/docker/ethos/base-ims-oauth.json。
 * Assets-38322：启用AEM的http请求事件。
-* Assets-41684：添加OOB OSGI配置以定义Assets、Foundation、Sites和Forms的FI到组映射。
 * Assets-41448：更新auth.ims包以支持FI到组的映射。
+* Assets-41684：添加OOB OSGI配置以定义Assets、Foundation、Sites和Forms的FI到组映射。
+* Assets-43015：更新到最新的auth.ims包。
 * CQ-4356633：在“仅限内容”工具提示中添加额外的字符。
-* SITES-23584：基础组件测试在Java 17上失败。
-* GUIDES-19069：添加guidesPeerLinkIndex for aem guides插件。
-* GRANITE-54300：将 Oak 更新至最新公开版本 (1.70.0)。
-* GRANITE-54274：接受Firefly的IMS客户端。
-* GRANITE-36205：将内部 oak 发行版更新到最新版本。
-* GRANITE-45298：低权限用户可以通过不使用JS但使用XSS方式构建恶意表单来获取RCE。
-* GRANITE-54266：生产SDK缺少搜索建议程序服务。
-* GRANITE-50948 — 将存储库服务集成到AEM中为本地开发添加替代存储库服务。
-* GRANITE-53966：对内容分发使用单独的线程池。
-* GRANITE-53514：树激活1.0.26。
-* GRANITE-54054：com.adobe.granite.repository.impl.SystemUserValidation warnOnly的环境变量。
 * GRANITE-50948：将存储库服务集成到AEM Support for repository service中。
 * GRANITE-52454：添加支持帮助程序0.1.2。
-* GRANITE-53514：树激活1.0.26。
-* GRANITE-54038：将Creative Cloud企业IMS客户端添加到AEM 列入允许列表 IMS客户端。
-* GRANITE-36205：将内部 oak 发行版更新到最新版本。
-* GRANITE-53485：复制Azure Blob存储的支持服务主体身份验证。
-* GRANITE-54006：将Jackson更新为2.17.2。
-* GRANITE-53287：正在更新安全权限集成测试版本。
-* GRANITE-53914：使用Java 17更新模块版本的平台测试失败。
-* GRANITE-53870：创建内部机制以跳过快速入门的最大JVM版本检查。
 * GRANITE-52454：升级支持帮助程序GRANITE-52454升级支持帮助程序以使用AEMaaCS的最新版本。
+* GRANITE-53287：正在更新安全权限集成测试版本。
+* GRANITE-53485：复制Azure Blob存储的支持服务主体身份验证。
+* GRANITE-53514：树激活已更新至版本1.0.26。
+* GRANITE-53870：创建内部机制以跳过快速入门的最大JVM版本检查。
+* GRANITE-53914：使用Java 17更新的模块版本修复平台测试失败。
+* GRANITE-53966：对内容分发使用单独的线程池。
+* GRANITE-54006：将Jackson更新为2.17.2。
+* GRANITE-54038：将Creative Cloud企业IMS客户端添加到AEM 列入允许列表 IMS客户端。
+* GRANITE-54054：com.adobe.granite.repository.impl.SystemUserValidation warnOnly的环境变量。
+* GRANITE-54266：生产SDK缺少搜索建议程序服务。
+* GRANITE-54274：接受Firefly的IMS客户端。
+* GRANITE-54300：将 Oak 更新至最新公开版本 (1.70.0)。
+* GUIDES-19069：添加guidesPeerLinkIndex for aem guides插件。
+* SITES-23584：修复了Java 17上基础组件的测试失败。
+* SKYOPS-69768： SlingModels不会反序列化ResourceResolvers。
+* SKYOPS-76378：提高i18n中ResourceBundle注册/注销的线程安全性。
+* SKYOPS-79285：将Sling XSS更新为2.4.2。
+* SKYOPS-82383：在命令执行描述符中公开“helm-values”convert-merge-analyze结果。
+* SKYOPS-84810：在RDE启动时跳过执行“40-initialize-publish.sh”。
+* SKYOPS-84951：修复可变内容校验和生成代码。
 * SKYOPS-85335：将org.apache.sling.jcr.repoinit更新为1.1.52。
 * SKYOPS-85336：将Sling Commons Threads更新为3.3.0。
-* SKYOPS-76378：提高i18n中ResourceBundle注册/注销的线程安全性。
-* SKYOPS-84951：可变内容校验和生成代码不正确。
-* SKYOPS-82383：在命令执行描述符中公开“helm-values”convert-merge-analyze结果。
 * SKYOPS-86329：更新平台测试模块的版本以支持java 21 sdk。
-* SKYOPS-69768： SlingModels不会反序列化ResourceResolvers。
-* SKYOPS-84810：在RDE启动时跳过执行“40-initialize-publish.sh”。
-* SKYOPS-79285：将Sling XSS更新为2.4.2
 
 ### 修复的问题 {#fixed-issues-18099}
 
@@ -77,7 +71,7 @@ ht-degree: 27%
 
 ### 已知问题 {#known-issues-18099}
 
-* FORMS - 15818：组件描述符条目 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 在服务器日志中未找到语句。这些是无害的日志语句。
+* Forms-15818：在服务器日志中未找到组件描述符条目`OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`的语句。 这些是无害的日志语句。
 
 ### 已弃用的功能和 API {#deprecated-18099}
 
