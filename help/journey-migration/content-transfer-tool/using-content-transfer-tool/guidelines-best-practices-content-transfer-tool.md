@@ -4,7 +4,7 @@ description: 了解使用内容传输工具的准则和最佳实践。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 14%
@@ -50,7 +50,7 @@ ht-degree: 14%
 * *数据存储大小*：内容传输工具使用 64 GB，即使实际数据存储更大也是如此。
 * *节点存储大小*：区段存储目录大小或 MongoDB 数据库大小。因此，对于 20 GB 的区段存储大小，所需的可用磁盘空间将为 94 GB。
 
-* 必须在整个内容传输活动中维护迁移集，以支持内容增补。 在内容传输活动期间，Cloud Acceleration Manager中一次最多可以为每个项目创建和维护20个迁移集。 如果需要超过20个迁移集，请在Cloud Acceleration Manager中创建第二个项目。 但是，这需要额外的项目管理和产品外管理，以避免多个用户覆盖Target上的内容。
+* 必须在整个内容传输活动中维护迁移集，以支持内容增补。 在内容传输活动期间，Cloud Acceleration Manager中一次最多可以为每个项目创建和维护10个迁移集。 如果需要超过10个迁移集，请在Cloud Acceleration Manager中创建第二个项目。 但是，这需要额外的项目管理和产品外管理，以避免多个用户覆盖Target上的内容。
 
 * 避免更改CTT工具的安装目录。 默认情况下，安装在crx-quickstart/cloud-migration路径中进行。 此特定位置由其他库在内部使用。 修改此路径可能会导致提取问题。
 
