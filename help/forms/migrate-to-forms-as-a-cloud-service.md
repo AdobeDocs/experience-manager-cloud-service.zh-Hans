@@ -9,9 +9,9 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1380'
 ht-degree: 1%
 
 ---
@@ -64,8 +64,7 @@ ht-degree: 1%
 
   ![练习结果](assets/enable-add-on.png)
 
-* 在Cloud Service环境中，迁移实用程序与“用户映射工具”和“内容传输工具”配合使用。 迁移实用程序使[!DNL AEM Forms]资源与Cloud Service兼容，内容传输工具将内容从[!DNL AEM Forms]环境迁移到[!DNL AEM]as a Cloud Service环境。 在使用迁移实用程序之前，请了解[移至AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)的过程。 该过程有两个工具：
-   * [用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)：用户映射工具可帮助您将用户映射到相应的Adobe IMS用户帐户。
+* 在Cloud Service环境中，迁移实用程序与内容传输工具结合使用。 迁移实用程序使[!DNL AEM Forms]资源与Cloud Service兼容，内容传输工具将内容从[!DNL AEM Forms]环境迁移到[!DNL AEM]as a Cloud Service环境。 在使用迁移实用程序之前，请了解[移至AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html)的过程。 该流程使用以下工具：
    * [内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)：内容传输工具可帮助您准备内容并将内容从现有环境传输到Cloud Service环境。 它有助于用户轻松从AEM Forms升级到云环境。
 * 在[!DNL AEM Forms]as a Cloud Service和您的本地[!DNL AEM Forms]环境中具有管理员权限的帐户。
 * 从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载并安装Best Practice Analyzer、内容传输工具和[!DNL AEM Forms]迁移实用程序。
@@ -86,11 +85,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   > 从6.5迁移到云服务时，建议使用克隆的环境来运行内容传输工具和迁移实用程序。 内容传输工具和迁移实用程序对内容和资产进行了一些更改。 因此，请勿在生产环境中运行内容传输工具和迁移实用程序。
+   > 从6.5迁移到云服务时，建议使用克隆的环境来运行内容传输工具和迁移实用程序。 内容传输工具和迁移实用程序对内容和资产进行了一些更改。 因此，请勿在生产环境中运行内容传输工具或迁移实用程序。
 
 1. 使用管理权限登录到您的克隆环境。
-
-1. 运行[用户映射工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)以将您的用户映射到相应的Adobe IMS用户帐户。 您需要Adobe IMS用户帐户才能登录到[!DNL AEM Forms]as a Cloud Service实例。
 
 1. 在克隆的环境中从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)下载并安装[内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration)和[!DNL AEM Forms]as a Cloud Service迁移实用程序。 可以使用AEM包管理器安装该工具和实用程序。
 
