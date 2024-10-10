@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
+source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 25%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 25%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 18099 {#release-18099}
+## 版本 18175 {#release-18175}
 
-以下总结了维护版本18099的不断改进，该版本于2024年10月9日公开发布。 上一个维护版本是版本 17964。
+以下总结了维护版本18175的不断改进，该版本于2024年10月10日公开发布。 上一个维护版本是版本 17964。由于存在问题，版本 18099 已被设为专有。
 
 激活 2024.10.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强 {#enhancements-18099}
+### 增强 {#enhancements-18175}
 
 * Assets-38322：启用AEM的http请求事件。
 * Assets-41448：更新auth.ims包以支持FI到组的映射。
@@ -56,12 +56,11 @@ ht-degree: 25%
 * SKYOPS-85336：将Sling Commons Threads更新为3.3.0。
 * SKYOPS-86329：更新平台测试模块的版本以支持java 21 sdk。
 
-### 修复的问题 {#fixed-issues-18099}
+### 修复的问题 {#fixed-issues-18175}
 
 * CNTBF-298：从CC导出的资源包中删除jcr：uuid。
 * SKYOPS-83910：修复了SKYOPS-82371中发现的并发问题。
 * GRANITE-52876：更新至com.adobe.granite.ui.content 0.8.1448。
-* GRANITE-53088：由SITES-11992的修复引入的回归。
 * GUIDES-14445：本机PDF生成失败，并出现与获取Node.js的依赖关系相关的错误。
 * GUIDES-16961：带有`<conref>`的标题无法在Web编辑器的基线和翻译功能板中解析。
 * GUIDES-17283：当选择在topicmeta **选项中添加的**&#x200B;使用PDF时，元数据属性不会在本机元数据输出的文档属性中传播。
@@ -69,11 +68,11 @@ ht-degree: 25%
 
 有关版本中新增和增强的Guides功能和问题的更多信息，请查看[Experience Manager Guides版本路线图](https://experienceleague.adobe.com/cn/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
-### 已知问题 {#known-issues-18099}
+### 已知问题 {#known-issues-18175}
 
 * Forms-15818：在服务器日志中未找到组件描述符条目`OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`的语句。 这些是无害的日志语句。
 
-### 已弃用的功能和 API {#deprecated-18099}
+### 已弃用的功能和 API {#deprecated-18175}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
@@ -93,11 +92,11 @@ AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和�
 
 * GRANITE-54165：弃用公共API中的org.apache.jackrabbit.oak.plugins.blob。
 
-### 安全修复 {#security-18099}
+### 安全修复 {#security-18175}
 
 AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 2 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-### 嵌套的技术 {#embedded-tech-18099}
+### 嵌套的技术 {#embedded-tech-18175}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
