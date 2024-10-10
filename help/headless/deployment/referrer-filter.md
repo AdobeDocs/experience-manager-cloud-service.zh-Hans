@@ -5,10 +5,10 @@ feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 solution: Experience Manager
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '275'
-ht-degree: 100%
+source-git-commit: 3096436f8057833419249d51cb6c15e6c28e9e13
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,13 @@ Adobe Experience Manager 的反向链接筛选条件实现了从第三方主机�
 
 文件的名称必须为 `org.apache.sling.security.impl.ReferrerFilter.cfg.json`。
 
+## 示例配置 {#example-configuration}
+
 例如，要授予反向链接 `my.domain` 的请求的访问权限，您可以：
+
+>[!CAUTION]
+>
+>这是一个可能覆盖标准配置的基本示例。 您需要确保始终将产品更新应用于任何自定义设置。
 
 ```xml
 {
@@ -52,16 +58,28 @@ Adobe Experience Manager 的反向链接筛选条件实现了从第三方主机�
 }
 ```
 
->[!CAUTION]
->
->客户仍然有下列责任：
->
->* 仅向可信域授予访问权限
->* 确保未公开敏感信息
->* 不使用通配符 [*] 语法，这不仅会禁用对 GraphQL 端点的经过身份验证的访问，还会将其向全世界公开。
+## 数据安全性 {#data-security}
 
 >[!CAUTION]
 >
->所有 GraphQL [架构](#schema-generation)（派生自&#x200B;**已启用**&#x200B;的内容片段模型）可通过 GraphQL 端点读取。
->
->这意味着您需要确保其中没有提供敏感数据，因为这种方式可能会导致泄露；例如，这包括可能在模型定义中作为字段名称呈现的信息。
+>您仍有责任充分处理以下各点。
+
+要确保数据安全，您必须确保：
+
+* 仅向受信任的域授予访问&#x200B;**权限**
+
+* **中未使用**&#x200B;中的通配符[`*`]语法；这既禁用了对GraphQL端点的经过身份验证的访问，也将其公开给整个世界
+
+* 敏感信息&#x200B;**从不公开**；不直接也不间接：
+
+   * 例如，所有[GraphQL架构](/help/headless/graphql-api/content-fragments.md#schema-generation)都是：
+
+      * 派生自&#x200B;**已启用**&#x200B;的内容片段模型
+
+     **和**
+
+      * 可通过GraphQL端点读取
+
+     这意味着在模型定义中以字段名称形式呈现的信息可以变得可用。
+
+您必须确保不以任何方式提供敏感数据，因此必须仔细考虑此类详细信息。
