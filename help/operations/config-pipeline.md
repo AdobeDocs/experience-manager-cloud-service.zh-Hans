@@ -3,13 +3,13 @@ title: 使用配置管道
 description: 了解如何使用配置管道来部署各种配置AEM as a Cloud Service，例如日志转发设置、清除相关的维护任务和各种CDN配置。
 feature: Operations
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
+source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '973'
 ht-degree: 1%
 
 ---
-
 
 # 使用配置管道 {#config-pipelines}
 
@@ -38,7 +38,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 | [流量筛选器规则，包括WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 声明规则以阻止恶意流量 |
 | [请求转换](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | 声明规则以转换流量请求的形状 |
 | [响应转换](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) | `CDN` | 声明规则以转换给定请求的响应形状 |
-| [客户端重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 声明301/302样式客户端重定向[（仅供早期采用者使用）](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter) |
+| [客户端重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) | `CDN` | 声明301/302样式客户端重定向 |
 | [来源选择器](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) | `CDN` | 声明规则以将流量路由到其他后端，包括非Adobe应用程序 |
 | [CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | 如果无法访问AEM源，则覆盖默认错误页面，并引用配置文件中自托管静态内容的位置 |
 | [CDN清除](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | 声明用于清除CDN的清除API密钥 |
