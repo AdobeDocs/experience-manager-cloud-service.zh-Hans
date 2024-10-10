@@ -4,9 +4,9 @@ description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: fd6fb14bf3acdd30efb984e1666ed91a2327d810
+source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
 workflow-type: tm+mt
-source-wordcount: '5675'
+source-wordcount: '5676'
 ht-degree: 99%
 
 ---
@@ -299,7 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Http 或 https 协议</b></td>
-    <td>流向 Azure 或 Adobe 服务的流量</td>
+    <td>流向Azure (*.windows.net)或Adobe服务的流量</td>
     <td>任意</td>
     <td>通过共享集群 IP（而非专用 IP）</td>
     <td>adobe.io<br>api.windows.net</td>
