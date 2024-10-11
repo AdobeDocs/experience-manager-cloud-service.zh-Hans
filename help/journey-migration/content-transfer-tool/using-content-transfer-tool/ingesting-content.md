@@ -4,10 +4,10 @@ description: 了解如何使用Cloud Acceleration Manager将内容从迁移集�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 12%
+source-wordcount: '3137'
+ht-degree: 11%
 
 ---
 
@@ -228,6 +228,20 @@ MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支�
 >[!NOTE]
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 2.1.50+版将报告包含超过最大大小的Unicode字符的大型节点。 请确保您运行的是最新版本。 低于2.1.50的BPA版本将不会识别和报告这些大型节点，并且需要使用上述先决条件Oak工具单独发现它们。
+
+### 由于意外的间歇性错误导致摄取失败 {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="意外的间歇性错误"
+>abstract="有时可能会发生意外的间歇性下游服务错误，不幸的是，唯一的解决办法是简单地重试引入。"
+
+有时，意外的间歇性问题可能会导致摄取失败，很遗憾，唯一的解决办法是重试摄取。 调查摄取日志以找出失败的原因，并查看它是否与下面列出的任何错误一致，其中应尝试重试。
+
+## MongoDB问题 {#mongo-db-issues}
+
+* `Atlas prescale timeout error` — 摄取阶段将尝试将目标云数据库预缩放到与正在摄取的迁移集内容大小一致的合适大小。 在少数情况下，此操作未在预期时间范围内完成。
+* `Exhausted mongo restore retries` — 尝试将引入的迁移集内容的本地转储恢复到云数据库的尝试已耗尽。 这表示MongoDB的整体运行状况/网络问题，该问题通常会在几分钟后自行修复。
 
 ### 引入已取消 {#ingestion-rescinded}
 
