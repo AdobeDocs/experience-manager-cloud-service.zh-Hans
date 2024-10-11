@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1321'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 3%
 
 发现[AEM as a Cloud Service部署流程](/help/implementing/cloud-manager/deploy-code.md)中可用的质量关卡以及各种类型的内置功能测试。 了解如何在全面的测试策略框架内贡献并优化其使用。
 
-## 概述
+## 关于功能测试
 
 下图提供了整体测试策略和[AEM as a Cloud Service部署过程](/help/implementing/cloud-manager/deploy-code.md)上下文中的可用管道的整体概述。
 
 ![AEM Cloud Service部署质量关卡](assets/functional-testing/quality-gates-compact.svg)
 
-## 用途
+## 功能测试的目的
 
 AEM Cloud Service部署管道的用途是在开发和AEM产品发布生命周期的各个阶段促进可靠且安全的部署。 这些管道包含位于不同级别的多个质量审核，以确保您的AEM应用程序更改和AEM产品更新的部署的完整性和安全性。
 
@@ -38,7 +38,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 请务必注意，这些质量关卡并非旨在作为整个测试策略的全面测试框架。 AEM产品在进入AEM Cloud Service部署过程之前会经过大量测试。 同样，您的应用程序在到达部署阶段之前应该已经处于高质量。 这种方法确保质量关卡专注于其保护部署过程的主要目标，而不是取代完整的测试方案。
 
-## 质量审核
+## 测试中的质量审核
 
 下图提供了可用质量审核及其在整体测试策略和[AEM as a Cloud Service部署过程](/help/implementing/cloud-manager/deploy-code.md)中的使用的详细视图。
 

@@ -1,22 +1,22 @@
 ---
-title: 配置管道变量
+title: Cloud Manager中的管道变量
 description: 了解如何在Cloud Manager中使用管道变量来管理内部版本的特定配置变量。
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 15%
+source-wordcount: '621'
+ht-degree: 14%
 
 ---
 
-# 配置管道变量 {#configuring-pipeline-variables}
+# Cloud Manager中的管道变量 {#configuring-pipeline-variables}
 
 您的构建过程可能依赖于不应存储在Git存储库中的特定配置变量。 或者，您可能需要在同一分支上的管道运行之间调整它们。 通过Cloud Manager，可将这些设置作为管道变量进行管理。
 
-## 管道变量 {#pipeline-variables}
+## 关于管道变量 {#pipeline-variables}
 
 使用Cloud Manager，您可以通过多种不同的方式配置管道变量。
 
@@ -34,7 +34,7 @@ ht-degree: 15%
 
 如果管道正在运行，则变量管理会被阻止。
 
-### 添加管道变量 {#add-ui}
+**要通过Cloud Manager添加管道变量：**
 
 1. 在[管理您的管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)时，单击要为其创建管道变量的管道的![省略号 — 更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
@@ -59,7 +59,7 @@ ht-degree: 15%
 
 1. 单击&#x200B;**保存**。
 
-### 编辑管道变量 {#edit-ui}
+## 编辑管道变量 {#edit-ui}
 
 1. 当[管理您的管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)时，单击要编辑其管道变量的![省略号 — 更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
@@ -84,7 +84,7 @@ ht-degree: 15%
 
 1. 单击&#x200B;**保存**。
 
-### 删除管道变量 {#delete-ui}
+## 删除管道变量 {#delete-ui}
 
 1. 当[管理您的管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)时，单击要删除其管道变量的![省略号 — 更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
