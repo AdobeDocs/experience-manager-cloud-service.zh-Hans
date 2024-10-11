@@ -1090,9 +1090,9 @@ ht-degree: 99%
       + 管理您的代码{#managing-code}
          + [Maven 项目版本处理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [在 Cloud Manager 中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [添加Adobe资源库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [添加专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [添加外部存储库（早期采用者）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [添加一个 Adobe 存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [添加一个专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [添加一个外部存储库（早期采用者）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模块支持](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
