@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 17%
+source-wordcount: '998'
+ht-degree: 15%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 17%
 
 在Cloud Manager中添加自定义域名之前，请先满足这些要求。
 
-* 在添加自定义域名之前，您必须为要添加的域添加域SSL证书，如文档[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)中所述。
+* 您必须在添加自定义域名&#x200B;*之前*&#x200B;添加要添加的域的域SSL证书，如文档[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)中所述。
 * 您必须具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色才能在Cloud Manager中添加自定义域名。
 * 使用Fastly或其他CDN（内容分发网络）。
 
 >[!IMPORTANT]
 >
->即使您使用非AdobeCDN，也仍需要将域添加到Cloud Manager。
+>如果您使用Adobe托管的CDN，则仍需要将域添加到Cloud Manager。
 
 ## 在何处添加自定义域名 {#where-to-add-cdn}
 
@@ -46,14 +46,14 @@ ht-degree: 17%
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 在侧菜单的&#x200B;**服务**&#x200B;下，选择![设置图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **域设置**。
+1. 在侧菜单的&#x200B;**服务**&#x200B;下，单击![设置图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) **域设置**。
 
    ![域设置窗口](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
 1. 在&#x200B;**域设置**&#x200B;页面的右上角附近，单击&#x200B;**添加域**。
 
 1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**字段中，输入您正在使用的自定义域名。
-输入域时不要包含 `http://`、`https://` 或空格。
+输入域名时，不要包含`http://`、`https://`或空格。
 
 1. 单击&#x200B;**创建**。
 
@@ -61,23 +61,19 @@ ht-degree: 17%
 
    | 证书类型选项 | 描述 |
    | --- | --- |
-   | Adobe 管理的证书 | 如果要使用DV（域验证）证书，请选择此证书类型。 此选项适用于大多数情况，可提供基本的域验证。 Adobe会自动管理和更新证书。 |
-   | 客户管理的证书 | 如果要使用EV/OV证书，请选择此证书类型。 此选项通过EV（扩展验证）或OV（组织验证）提供增强的安全性。 如果需要对证书进行更严格的验证、更高的信任级别或自定义控制，请使用。 |
+   | Adobe托管(DV) SSL证书 | 如果要使用DV（域验证）证书，请选择此证书类型。 此选项适用于大多数情况，可提供基本的域验证。 Adobe会自动管理和更新证书。 |
+   | 客户管理的(OV/EV) SSL证书 | 如果您打算使用EV/OV SSL证书来保护域，请选择此证书类型。 此选项通过OV（组织验证）或EV（扩展验证）提供增强的安全性。 如果需要对证书进行更严格的验证、更高的信任级别或自定义控制，请使用。 |
 
 1. 在&#x200B;**验证域**&#x200B;对话框中，根据您选择的证书类型，执行以下操作之一：
 
    | 如果您选择了证书类型 | 描述 |
    | --- | ---  |
-   | Adobe 管理的证书 | 在继续步骤9之前，请完成[Adobe托管证书步骤](#adobe-managed-cert-steps)。 |
-   | 客户管理的证书 | 在继续执行步骤9之前，请先完成[客户管理的证书步骤](#customer-managed-cert-steps)。 |
-
-1. 单击&#x200B;**验证**。
-
-1. 您现在已准备好[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
+   | Adobe 管理的证书 | a.完成以下[Adobe托管证书步骤](#adobe-managed-cert-steps)。 完成&#x200B;**验证域**&#x200B;对话框中的步骤后，单击&#x200B;**验证**。<ul><li>由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。</li><li>Cloud Manager最终验证域名所有权并更新&#x200B;**域设置**&#x200B;表中的状态。 有关详细信息，请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。</li>![验证域状态](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b.您现在可以[添加Adobe托管(DV) SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。</li></ul> |
+   | 客户管理的证书 | a.单击&#x200B;**确定**。<br>b。您现在可以[添加客户管理的(OV/EV) SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。<ul><li>添加证书后，您的域名在&#x200B;**域设置**&#x200B;表中标记为已验证。 有关详细信息，请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。</li></ul><br>![验证客户管理的EV/OV证书的域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
    >
-   >如果您使用客户管理的SSL证书和客户管理的CDN提供程序，则可以跳过添加SSL证书，并在准备就绪后直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+   >如果您使用客户管理的(OV/EV) SSL证书和客户管理的CDN提供程序，则可以跳过添加SSL证书，并在准备就绪后直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
 
 ### Adobe托管证书步骤 {#adobe-managed-cert-steps}
@@ -133,21 +129,6 @@ Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的D
 >[!TIP]
 >
 >可以在管理DNS服务器上设置&#x200B;*CNAME*&#x200B;或&#x200B;*A记录*&#x200B;以节省您的时间。
-
-
-### 客户管理的证书步骤 {#customer-managed-cert-steps}
-
-如果您选择了证书类型&#x200B;*客户管理的证书*，请完成以下步骤。
-
-1. 在&#x200B;**验证域**&#x200B;对话框中，上传覆盖所选域的新EV/OV证书。
-
-   ![验证客户管理的EV/OV证书的域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
-
-1. 单击&#x200B;**确定**。
-
-   上传有效的EV/OV证书后，**域设置**&#x200B;表中域的状态标记为&#x200B;**已验证**。
-
-   ![域设置表显示验证状态](/help/implementing/cloud-manager/assets/domain-settings-verified.png)。
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
@@ -206,11 +187,7 @@ dig TXT _aemverification.example.com -t txt
 
 -->
 
->[!NOTE]
->
->由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。
->
->Cloud Manager验证所有权并更新可在&#x200B;**域设置**&#x200B;表中看到的状态。 有关详细信息，请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
+
 
 <!--
 ## Next Steps {#next-steps}

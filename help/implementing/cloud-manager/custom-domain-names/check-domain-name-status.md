@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 26%
+source-wordcount: '847'
+ht-degree: 24%
 
 ---
 
@@ -17,15 +17,11 @@ ht-degree: 26%
 
 了解如何验证Cloud Manager是否已成功确认您的自定义域名。
 
-## 要求 {#requirements}
-
-在Cloud Manager中检查域名状态之前满足这些要求。
-
-* 首先为您的自定义域添加EV/OV证书，如文档[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)中所述。
-
 ## 检查自定义域名的状态 {#how-to}
 
-您可以在Cloud Manager中确定自定义域名的状态。
+在Cloud Manager中检查域名状态之前，请确保已按照[添加客户管理的SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md##add-customer-managed-ssl-cert)中的说明为自定义域添加了客户管理的(OV/EV) SSL证书。
+
+**检查自定义域名的状态：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -33,7 +29,7 @@ ht-degree: 26%
 
 1. 从&#x200B;**概述**&#x200B;页面导航到&#x200B;**环境**&#x200B;屏幕。
 
-1. 单击左侧导航面板中的&#x200B;**域设置**。
+1. 单击左侧菜单中的&#x200B;**域设置**。
 
 1. 单击域名的&#x200B;**状态**&#x200B;图标。
 
@@ -41,11 +37,14 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->当您在&#x200B;**添加自定义域**&#x200B;向导的验证步骤中选择&#x200B;**创建**&#x200B;时，当[向Cloud Manager添加新自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)时，Cloud Manager会自动触发验证。 对于后续验证，必须主动选择状态旁边的再次验证图标。
+>如果您正在将&#x200B;*Adobe托管(DV) SSL证书*&#x200B;与域一起使用，则当您在[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)时单击“验证域”对话框中的&#x200B;**验证**&#x200B;时，Cloud Manager会自动触发验证。
+>
+>如果您计划使用&#x200B;**客户管理的(OV/EV) SSL证书**，请在&#x200B;*之后*&#x200B;验证您的域[添加OV/EV SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
+
 
 ## 验证状态 {#statuses}
 
-Cloud Manager通过客户管理的证书验证域所有权。 完成后，它会显示以下状态消息之一：
+Cloud Manager通过客户管理的(OV/EV) SSL证书验证域所有权。 完成后，它会显示以下状态消息之一：
 
 | 状态 | 描述 |
 | --- | --- |
