@@ -4,7 +4,7 @@ description: 了解如何使用Cloud Acceleration Manager将内容从迁移集�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
+source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
 ht-degree: 11%
@@ -19,7 +19,7 @@ ht-degree: 11%
 >id="aemcloud_ctt_ingestion"
 >title="内容引入"
 >abstract="引入是指将内容从迁移集引入到目标 Cloud Service 实例中。内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html#top-up-extraction-process" text="增补提取"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="增补提取"
 
 请按照以下步骤使用Cloud Acceleration Manager摄取迁移集：
 
@@ -94,7 +94,7 @@ ht-degree: 11%
 >id="aemcloud_ctt_ingestion_topup"
 >title="增补引入"
 >abstract="使用增补功能移动自上次内容转移活动以来修改的内容。引入完毕后，检查日志中是否有任何错误或警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html#" text="查看日志"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="查看日志"
 
 内容传输工具具备允许通过执行迁移集的&#x200B;*增补*&#x200B;来提取差异内容的功能。 这样可修改迁移集，使其仅包含自上次提取以来已更改的内容，而无需再次提取所有内容。
 
@@ -113,7 +113,7 @@ ht-degree: 11%
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="内容摄取故障排除"
 >abstract="请参阅摄取日志和文档以查找针对摄取失败常见原因的解决方案并查找解决该问题的方法。修复后即可再次运行摄取。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html" text="验证内容转移"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="验证内容转移"
 
 ### CAM无法检索迁移令牌 {#cam-unable-to-retrieve-the-migration-token}
 
@@ -146,13 +146,13 @@ ht-degree: 11%
 > 显示“迁移令牌”字段，因为在某些情况下，实际上不允许检索该令牌。 通过允许手动提供，它可让用户无需任何其他帮助即可快速开始引入。 如果提供了令牌，但仍显示消息，则检索令牌不是问题。
 
 * AEM as a Cloud Service会维护环境状态，并且有时必须出于各种正常原因重新启动迁移服务。 如果该服务正在重新启动，则无法访问，但最终可用。
-* 可能正在实例上运行另一个进程。 例如，如果[AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html)正在应用更新，则系统可能忙，并且迁移服务定期不可用。 完成此过程后，可以再次尝试开始引入。
+* 可能正在实例上运行另一个进程。 例如，如果[AEM版本更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)正在应用更新，则系统可能忙，并且迁移服务定期不可用。 完成此过程后，可以再次尝试开始引入。
 * 列入允许列表如果已通过Cloud Manager应用[IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)，则会阻止Cloud Acceleration Manager访问迁移服务。 无法为摄取添加IP地址，因为其地址是动态的。 目前，唯一的解决方案是在摄取和索引过程中禁用IP允许列表。
 * 可能有其他原因需要调查。 如果摄取或索引继续失败，请联系Adobe客户关怀部门。
 
 ### AEM版本更新和引入 {#aem-version-updates-and-ingestions}
 
-[AEM版本更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html)会自动应用于环境，以使其与最新的AEM as a Cloud Service版本保持同步。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。
+[AEM版本更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)会自动应用于环境，以使其与最新的AEM as a Cloud Service版本保持同步。 如果在执行摄取时触发更新，则可能会导致不可预测的结果，包括环境损坏。
 
 如果“AEM版本更新”已载入目标程序，则摄取进程会尝试在启动之前禁用其队列。 完成摄取后，版本更新程序状态将返回到摄取开始前的状态。
 
@@ -174,7 +174,7 @@ ht-degree: 11%
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="违反唯一性约束"
 >abstract="非擦除引入失败的常见原因是节点 ID 冲突。冲突节点只能存在一个。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加数据引入"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="追加数据引入"
 
 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)失败的常见原因是节点ID中存在冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
@@ -194,7 +194,7 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="无法删除引用的节点"
 >abstract="非擦除引入失败的常见原因是目标实例上特定节点的版本冲突。必须修复节点的版本。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="追加数据引入"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="追加数据引入"
 
 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)失败的另一个常见原因是目标实例上特定节点的版本冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
@@ -212,7 +212,7 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="大节点属性"
 >abstract="引入失败的常见原因是节点属性值超过了最大值。请遵循文档（包括与 BPA 报告相关的文档）来纠正这种情况。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="迁移先决条件"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="迁移先决条件"
 
 MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，摄取将失败，并且日志将包含以下任一值：
 
