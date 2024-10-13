@@ -5,19 +5,19 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# 添加CDN（内容分发网络）配置 {#add-cdn}
+# 添加 CDN 配置 {#add-cdn}
 
 要将域与项目中由Adobe管理的CDN上的SSL证书链接，您必须添加CDN（内容分发网络）配置。
 
-对于Adobe托管的CDN，在使用DV证书时，只允许使用ACME验证的站点。
+对于Adobe托管的CDN，在使用DV SSL证书时，只允许使用ACME验证的站点。
 
 >[!IMPORTANT]
 >
@@ -31,8 +31,8 @@ ht-degree: 6%
 
    | 用例 | 步骤 |
    | --- | --- |
-   | 我要将CDN配置添加到Cloud Manager中的&#x200B;*现有*&#x200B;个Edge Delivery站点 | a.在左侧导航面板中的&#x200B;**服务**&#x200B;下，单击&#x200B;**Edge Delivery站点**。<br>b。在Edge Delivery表中，在没有关联域的行的末尾，单击省略号。<br>c。单击&#x200B;**配置CDN**。  ![单击“为Edge Delivery站点配置CDN”](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
-   | 我想在Cloud Manager中添加CDN配置 | a.在左侧导航面板中的&#x200B;**服务**&#x200B;下，单击&#x200B;**CDN配置**。<br>b。在“CDN配置”页面的右上角附近，单击&#x200B;**添加**。 |
+   | 我要将CDN配置添加到Cloud Manager中的&#x200B;*现有*&#x200B;个Edge Delivery站点 | a.在左侧菜单的&#x200B;**服务**&#x200B;下，单击&#x200B;**Edge Delivery站点**。<br>b。在Edge Delivery表格中，在无关联域的行的末尾，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。<br>c。单击&#x200B;**配置CDN**。  ![单击“为Edge Delivery站点配置CDN”](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | 我想在Cloud Manager中添加CDN配置 | a.在左侧菜单的&#x200B;**服务**&#x200B;下，单击&#x200B;**CDN配置**。<br>b。在“CDN配置”页面的右上角附近，单击&#x200B;**添加**。 |
 
 1. 在&#x200B;**配置CDN**&#x200B;对话框的&#x200B;**原点**&#x200B;下拉列表中，选择以下选项之一：
 
