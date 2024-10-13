@@ -1,66 +1,42 @@
 ---
-title: 限制Experience Manager中的资源投放
-description: 了解如何在 [!DNL Experience Manager]中限制资源交付。
+title: 使用具有OpenAPI功能的Dynamic Media限制资源交付
+description: 了解如何使用OpenAPI功能限制资源交付。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 1%
+source-wordcount: '1181'
+ht-degree: 2%
 
 ---
 
-# 限制对[!DNL Experience Manager]中资产的访问 {#restrict-access-to-assets}
+# 使用具有OpenAPI功能的Dynamic Media限制资源交付 {#restrict-access-to-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-Experience Manager中的中央资产治理允许DAM管理员或品牌经理管理对资产的访问。 他们可以通过在创作端(特别是在AEM as a Cloud Service创作实例上)为批准的资源配置角色来限制访问。
+Experience Manager中的中央资产治理允许DAM管理员或品牌管理员通过OpenAPI功能管理对Dynamic Media可用资产的访问。 他们可以通过在Identity Management AEM as a Cloud Service System (IMS)Adobe服务上的资源上配置某些元数据，将已批准的资源（精确到单个资源）限制为选定的[元数据用户或组](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)。
 
-成功通过授权过程后，用户[搜索](search-assets-api.md)或利用[投放URL](deliver-assets-apis.md)可以获得对受限资产的访问权限。
+一旦通过具有OpenAPI的Dynamic Media限制资源，则只有有权访问所述资源的（已载入Adobe IMS）用户才被授予访问权限。 要访问该资源，用户必须使用Dynamic Media的OpenAPI的[搜索](search-assets-api.md)和[交付](deliver-assets-apis.md)功能。
 
 ![限制了对资源的访问](/help/assets/assets/restricted-access.png)
-
-## 使用IMS令牌的受限制投放 {#restrict-delivery-ims-token}
 
 在Experience Manager Assets中，通过IMS进行的受限投放涉及两个关键阶段：
 
 * 创作
 * 交付
 
-### 创作 {#authoring}
+## 创作 {#authoring}
 
-您可以根据角色限制[!DNL Experience Manager]内资源的投放。 要配置角色，请执行以下步骤：
+### 使用IMS持有者令牌的受限投放 {#restrict-delivery-ims-token}
 
-1. 以DAM管理员身份转到[!DNL Experience Manager]。
-1. 选择需要为其配置角色的资源。
-1. 导航到&#x200B;**[!UICONTROL 属性]** > **[!UICONTROL 高级]**，并确保[!UICONTROL 高级元数据]选项卡中存在&#x200B;**[!UICONTROL 角色]**&#x200B;字段。
+您可以根据IMS用户和组身份限制[!DNL Experience Manager]内资源的投放。
 
-   ![角色元数据](/help/assets/assets/roles_metadata.jpg)
-如果该字段不可用，请使用以下步骤添加该字段：
+>[!NOTE]
+>
+> 此功能当前不是自助服务。 要限制IMS [用户](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html)和[组](https://helpx.adobe.com/in/enterprise/using/user-groups.html)的资源投放，请联系您的企业支持团队，以获取有关如何检索限制访问[Adobe Admin Console](https://adminconsole.adobe.com/)门户所需的信息以及如何在AEM as a Cloud Service创作服务中配置访问权限的指导。
 
-   1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据架构]**。
-   1. 选择元数据架构并单击&#x200B;**[!UICONTROL 编辑&#x200B;_(e)_]**。
-   1. 从表单右侧的&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区向元数据分区添加一个&#x200B;**[!UICONTROL 多值文本]**&#x200B;字段。
-   1. 单击新添加的字段，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中进行以下更新：
-      1. 将&#x200B;**[!UICONTROL 字段标签]**&#x200B;更改为&#x200B;_角色_。
-      1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：roles_。
-
-1. 获取要添加到资源的角色元数据中的IMS组。 要获取IMS组，请执行以下步骤：
-   1. 在`https://adminconsole.adobe.com/.`登录
-   1. 转到相应的组织并导航到&#x200B;**[!UICONTROL 用户组]**。
-   1. 选择要添加的&#x200B;**[!UICONTROL 用户组]**，并从URL中提取&#x200B;**[!UICONTROL orgID]**&#x200B;和&#x200B;**[!UICONTROL userGroupID]**，或者使用您的组织ID，例如`{orgID}@AdobeOrg:{usergroupID}`。
-
-1. 将组ID添加到资产属性的&#x200B;**[!UICONTROL 角色]**&#x200B;字段。 <br>
-在**[!UICONTROL 角色]**&#x200B;字段中定义的组ID是唯一可访问该资源的用户。 除了IMS组ID之外，您还可以在&#x200B;**[!UICONTROL 角色]**&#x200B;字段中添加IMS用户ID和IMS配置文件ID。 例如：`{orgId}@AdobeOrg:{profileId}`。
-
-   >[!NOTE]
-   >
-   >对于新的Assets视图，您只能将访问权限仅授予文件夹级别，并仅授予组而非单个用户。 了解有关[在Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)中管理权限的详细信息。
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427429)
-
-#### 使用开启和关闭日期和时间限制资源的交付 {#restrict-delivery-assets-date-time}
+### 使用开启和关闭日期和时间限制资源的交付 {#restrict-delivery-assets-date-time}
 
 DAM作者还可以通过定义资产属性中可用的激活的开启或关闭时间来限制资产的交付。
 
@@ -95,28 +71,36 @@ DAM作者还可以通过定义资产属性中可用的激活的开启或关闭�
 
 
 
-### 受限资产的交付 {#delivery-restricted-assets}
+## 受限资产的交付 {#delivery-restricted-assets}
 
-受限资产的交付基于访问资产的成功授权。 如果请求是从AEM创作实例或资源选择器发送的，则授权基于IMS令牌，或者如果您Publish或预览实例上设置了自定义身份提供程序，授权则基于特殊Cookie。
+受限资产的交付基于访问资产的成功授权。 授权是通过[IMS持有者令牌](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/)(用于从[AEM Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)启动的请求的应用程序)或安全Cookie(如果您在AEM Publish/Preview服务上设置了自定义身份提供程序，并在页面上设置了Cookie创建和包含)进行的。
 
-#### AEM创作或资源选择器请求的投放 {#delivery-aem-author-asset-selector}
+### AEM创作或资源选择器请求的投放 {#delivery-aem-author-asset-selector}
 
-要在从AEM创作实例或资产选择器发送请求时启用受限资产的投放，有效的IMS令牌至关重要。 请按照以下步骤操作：
+要在从AEM创作服务或AEM Asset Selector发送请求时启用受限资源的投放，有效的IMS持有者令牌至关重要。\
+在AEM Cloud Service创作服务和Asset Selector上，会自动生成IMS持有者令牌并在成功登录后用于请求。
 
-1. [生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)。
-   * 登录到您的AEM as a Cloud Service环境的开发控制台。
+>[!NOTE]
+>
+>要详细了解如何在基于AEM Asset Selector的集成上启用IMS身份验证，请联系企业支持
 
-   * 导航到&#x200B;**[!UICONTROL 环境]** > **[!UICONTROL 集成]** > **[!UICONTROL 本地令牌]** > **[!UICONTROL 获取本地开发令牌]** > **[!UICONTROL 复制accessToken值]**。 了解有关[如何访问令牌和相关方面的更多信息](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
+1. 对于非基于资产选择器的体验，具有OpenAPI功能的AEM as a Cloud Service和Dynamic Media当前支持服务器端API集成，并可生成IMS持有者令牌。
+   * 按照[此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)的说明执行服务到服务器API集成，这些集成可以通过[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)检索IMS持有者令牌
+   * 在有限持续时间内，本地开发人员访问（不适用于生产用例）可通过按照[此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)的说明生成[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)上身份验证的用户的短期IMS持有者令牌
 
-1. 将获得的访问令牌集成到&#x200B;**[!UICONTROL 授权]**&#x200B;标头，确保其值以&#x200B;**[!UICONTROL 持有者]**&#x200B;为前缀。
+1. 在发出[Search](search-assets-api.md)和[Delivery](deliver-assets-apis.md) API请求时，将获取的IMS持有者令牌添加到HTTP请求的&#x200B;**[!UICONTROL Authorization]**&#x200B;标头中（请确保其值带有&#x200B;**[!UICONTROL 持有者]**&#x200B;前缀）。
 
-1. 通过启动请求来验证访问令牌的功能。 如果没有IMS访问令牌，或提供的访问令牌缺少与资产元数据中添加的令牌相同的主体或组，则会产生404错误。
+1. 要验证访问限制，请启动传递API请求，该请求带有或不带&#x200B;**[!UICONTROL Authorization]**&#x200B;标头。
+   * 如果没有IMS持有者令牌，或提供的IMS持有者令牌不属于被授予资产访问权限（直接或通过组成员资格）的用户，响应将生成`404`错误状态代码。
+   * 如果IMS持有者令牌是被授予资产访问权限的一个或多个用户组之一，则响应将为资产的二进制内容生成`200`成功状态代码。
 
-#### Publish实例上自定义身份提供程序的投放 {#delivery-custom-identity-provider}
+### 在Publish服务上交付自定义身份提供程序 {#delivery-custom-identity-provider}
 
-如果您在Publish或“预览”实例上设置自定义身份提供程序，则可以在设置过程中提及必须有权访问`groupMembership`属性内安全资产的组。 当您通过[SAML集成](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)登录到自定义身份提供程序时，将读取`groupMembership`属性并用于构造Cookie，在所有身份验证请求中都会发送该Cookie，类似于IMS令牌(如果来自AEM作者或资产选择器的请求)。
+可将AEM Sites、AEM Assets和Dynamic Media与OpenAPI许可证一起使用，并且可在通过AEM Publish或Preview服务交付的网站上配置受限的资产交付。
+如果AEM Sites的Publish和预览服务配置为使用[自定义身份提供程序(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)，则在设置过程中，`groupMembership`属性中可以包含必须有权访问中安全资产的组。\
+当网站用户登录到自定义身份提供程序并访问Publish/Preview服务上托管的网站时，将读取`groupMembership`属性，并在成功身份验证后在网站上构建和交付安全Cookie。 所有后续用于将网站内容交付到用户代理的请求中都包含此安全Cookie。
 
-当页面上有安全资产并且向投放URL发出渲染资产的请求时，AEM检查Cookie或IMS令牌中存在的角色，并将其与资产创作期间应用的`dam:roles property`匹配。 如果存在匹配项，则会显示资源。
+当页面上请求受保护资产时，AEM Publish和预览层会从secure-cookie中提取授权材料并验证访问权限。 如果存在匹配项，则会显示资源。
 
 >[!NOTE]
 >
