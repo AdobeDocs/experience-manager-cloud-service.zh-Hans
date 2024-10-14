@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '996'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 4%
 * **对于客户管理的(OV/EV) SSL证书：**
 
    * 从证书颁发机构获取OV/EV SSL证书。 有关更多详细信息，请查看客户管理的OV/EV SSL证书的[要求](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)。
-   * 获取证书后，[在Cloud Manager中添加您的客户托管(OV/EV) SSL证书的](#add-customer-manage-ssl-cert)详细信息。
+   * 获取证书后，[在Cloud Manager中添加您的客户托管(OV/EV) SSL证书的](#add-customer-managed-ssl-cert)详细信息。
    * 添加后，自定义域名将标记为已验证，并应用SSL证书。
 
 无论属于哪种情况，在验证并安装证书后，都可以在环境中安全使用自定义域。 请务必[在Cloud Manager界面中定期检查域状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)，以确认一切都按预期运行。
@@ -76,8 +76,7 @@ ht-degree: 4%
 1. 在&#x200B;**证书名称**&#x200B;字段中，输入要与DV SSL证书关联的名称。
 
 1. 在&#x200B;**选择域**&#x200B;下拉列表中，选择要与DV SSL证书关联的一个或多个验证域。
-   * 没有域可供选择？ 如果是这样，您必须首先添加自定义域名，并确保在添加SSL证书之前验证域名。
-   * 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
+   * 没有域可供选择？ 如果是这样，您必须先[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)并确保其已验证，然后才能添加Adobe托管的SSL证书。
    * 添加完自定义域名后，请返回到本主题并再次从步骤1开始。
 
 1. 在对话框的右下角，点击&#x200B;**保存**。
