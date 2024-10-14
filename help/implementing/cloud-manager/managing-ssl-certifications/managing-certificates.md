@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1034'
 ht-degree: 9%
 
 ---
@@ -59,9 +59,10 @@ Cloud Manager概述了程序的所有证书的状态。
 
 1. 单击&#x200B;**更新**&#x200B;以保存更改并自动应用它们。
 
+
 >[!NOTE]
 >
->如果您有两个或更多SAN证书覆盖同一SAN域条目，如果该域由一个证书覆盖，而另一个证书已更新，则现在将为域安装后者。
+>如果您有两个或更多SAN证书覆盖同一SAN域条目，如果该域由一个证书覆盖，而另一个证书已更新，则该域将安装后者。
 >
 >有关详细信息，请参阅[SSL证书问题疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)。
 
@@ -80,13 +81,21 @@ Cloud Manager概述了程序的所有证书的状态。
 **要重命名Adobe托管的SSL证书：**
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
+
 1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示侧菜单。
+
 1. 在&#x200B;**服务**&#x200B;标题下，单击![锁定已关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL证书**。
-1. 在&#x200B;**SSL证书**&#x200B;页面上，单击要重命名其&#x200B;*Adobe托管的*&#x200B;证书的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+
+1. 在&#x200B;**SSL证书**&#x200B;页面上，单击要重命名其&#x200B;**Adobe托管的** SSL证书的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+
 1. 在下拉菜单中，单击&#x200B;**重命名**。
+
 1. 在&#x200B;**重命名DV证书**&#x200B;对话框的&#x200B;**证书名称**&#x200B;文本字段中，输入证书的新名称。
+
 1. 单击&#x200B;**重命名**。
+
 
 ## 删除SSL证书 {#deleting-an-ssl-certificate}
 
@@ -101,17 +110,25 @@ Cloud Manager概述了程序的所有证书的状态。
 **要删除SSL证书：**
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
+
 1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示侧菜单。
+
 1. 在&#x200B;**服务**&#x200B;标题下，单击![锁定已关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL证书**。
-1. 在“SSL证书”页面的要删除的证书的表行中，单击最右侧的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)
+
+1. 在“SSL证书”页面的要删除的证书的表行中，单击最右侧的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+
 1. 在下拉菜单中，单击&#x200B;**删除**。
-如果“删除”按钮具有如下图所示的信息图标，请参阅上面的注释。
+
+   如果&#x200B;**Delete**&#x200B;具有如下图所示的信息图标，请参阅上面的注释。
 
    ![删除带有信息图标的按钮](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
 1. 在&#x200B;**删除SSL证书**&#x200B;对话框中，单击&#x200B;**删除**&#x200B;以确认删除。
+
 1. 运行管道以取消部署已删除的证书。
+
 
 ## 预先存在的CDN配置 {#pre-existing-cdn}
 

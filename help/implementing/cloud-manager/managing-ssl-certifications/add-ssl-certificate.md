@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 4%
@@ -90,13 +90,18 @@ ht-degree: 4%
 
 ## 添加客户管理的(OV/ED) SSL证书 {#add-customer-managed-ssl-cert}
 
+<!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
+
 需要帮助您选择在您的域中使用Adobe托管的SSL证书（推荐）还是客户托管的SSL证书？ 请参阅[选择要添加的SSL证书](#which-ssl-to-add)
 
 **要添加客户管理的(OV/EV) SSL证书：**
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
+
 1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示侧菜单。
+
 1. 在&#x200B;**服务**&#x200B;标题下，单击![锁定已关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL证书**。
 
    ![添加SSL证书](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
@@ -108,8 +113,9 @@ ht-degree: 4%
 1. 在&#x200B;**证书名称**字段中，输入证书的名称。
 此字段仅供参考，可以是任何有助于您轻松引用SSL证书的名称。
 
-1. 在&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**字段中，复制OV或EV SSL证书中的必需值，并将其粘贴到对话框中各自的字段中。
-将显示在值中检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，了解有关常见错误疑难解答的更多信息。
+1. 在&#x200B;**证书**、**私钥**&#x200B;和&#x200B;**证书链**&#x200B;字段中，复制OV或EV SSL证书中的必需值，并将其粘贴到对话框中各自的字段中。
+
+   将显示在值中检测到的任何错误。 在保存证书之前，必须解决所有错误。 请参阅[证书错误](#certificate-errors)，了解有关常见错误疑难解答的更多信息。
 
    ![添加SSL证书对话框](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)|
 
