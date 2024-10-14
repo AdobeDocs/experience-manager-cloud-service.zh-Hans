@@ -4,9 +4,9 @@ description: 了解如何使用Cloud Manager编辑和更新，或删除Edge Deli
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '797'
 ht-degree: 9%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 9%
 **要从CDN配置页面编辑CDN配置，请执行以下操作：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
-1. 在侧面板中的&#x200B;**服务**&#x200B;下，单击![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **CDN配置**。
+1. 在左侧菜单的&#x200B;**服务**&#x200B;下，单击![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **CDN配置**。
 1. 在&#x200B;**CDN配置**&#x200B;表中，单击要更新其CDN配置的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
    ![编辑CDN配置](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
@@ -87,13 +87,11 @@ ht-degree: 9%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 在左侧面板的&#x200B;**服务**&#x200B;下，单击&#x200B;**CDN配置**。
+1. 在左侧菜单的&#x200B;**服务**&#x200B;下，单击&#x200B;**CDN配置**。
 
-1. 在CDN配置表中，单击与要删除的CDN对应的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在CDN配置表中，单击与要删除的CDN对应的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**删除**。
 
    ![正在删除CDN配置](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
-
-1. 在下拉菜单中，单击&#x200B;**删除**。
 
 1. 在&#x200B;**删除CDN配置**&#x200B;对话框中，单击&#x200B;**删除**。
 
@@ -112,11 +110,9 @@ ht-degree: 9%
 
 1. 在&#x200B;**环境**&#x200B;页面上，选择一个感兴趣的环境。
 
-1. 在环境详细信息页面的&#x200B;**CDN配置**&#x200B;分组中，单击与要删除的CDN配置相对应的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在环境详细信息页面的&#x200B;**CDN配置**&#x200B;分组中，单击与要删除的CDN配置相对应的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**删除**。
 
    环境详细信息页面上的![CDN配置组](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
-
-1. 在下拉菜单中，单击&#x200B;**删除**。
 
 1. 在&#x200B;**删除CDN配置**&#x200B;对话框中，单击&#x200B;**删除**。
 

@@ -5,10 +5,10 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1902e9b237adbdaff172535d0904d0faa615e9d1
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 14%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**程序概述**&#x200B;页面，使用侧面板（您可能需要单击左上角的![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)来查看面板），单击![任务列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP允许列表**。
+1. 从&#x200B;**程序概述**&#x200B;页面，使用左侧菜单（您可能需要单击左上角的![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)查看菜单），单击![任务列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP允许列表**。
 
-   侧面板中的![IP允许列表选项](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
+   左侧菜单中的![IP允许列表选项](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
 1. 在“IP允许列表”页面的右上角附近，单击&#x200B;**添加IP允许列表**。
 

@@ -5,7 +5,7 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 19%
@@ -23,7 +23,7 @@ ht-degree: 19%
 **要查看和更新IP允许列表：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
-1. 从&#x200B;**概述**&#x200B;页面，在&#x200B;**服务**&#x200B;下的侧面板中，单击![允许列表列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **任务列表**。
+1. 在&#x200B;**概述**&#x200B;页面的左侧菜单的&#x200B;**服务**&#x200B;下，单击![任务列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP允许列表**。
 1. 标识要查看或更新的IP允许列表的行。
 1. 单击行右端的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 1. 从下拉菜单中，单击&#x200B;**查看和更新**。
@@ -40,7 +40,7 @@ ht-degree: 19%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**概述**&#x200B;页面，在&#x200B;**服务**&#x200B;下的侧面板中，单击![允许列表列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **任务列表**。
+1. 在&#x200B;**概述**&#x200B;页面的左侧菜单的&#x200B;**服务**&#x200B;下，单击![任务列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP允许列表**。
 
 1. 在IP允许列表表的&#x200B;**Status**&#x200B;列中，将鼠标指针悬停在绿色（正在使用）的IP允许列表上，以查看应用到它的一个或多个服务。
 
@@ -63,10 +63,9 @@ ht-degree: 19%
 **删除IP允许列表：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
-1. 从&#x200B;**概述**&#x200B;页面，在&#x200B;**服务**&#x200B;下的侧面板中，单击![允许列表列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **任务列表**。
-1. 识别要删除的IP允许列表的行，然后单击行右端的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 在下拉菜单中，单击&#x200B;**删除**。
-1. 在“删除IP允许列表”对话框中，单击&#x200B;**删除**。
+1. 在&#x200B;**概述**&#x200B;页面的左侧菜单的&#x200B;**服务**&#x200B;下，单击![任务列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **IP允许列表**。
+1. 识别要删除的IP允许列表的行，然后单击该行右端的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**删除**。
+1. 在&#x200B;**删除IP允许列表**&#x200B;对话框中，单击&#x200B;**删除**。
 
 ## 预先存在的CDN配置 {#pre-existing-cdn}
 

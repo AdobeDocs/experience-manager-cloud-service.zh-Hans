@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1836'
-ht-degree: 67%
+source-wordcount: '1825'
+ht-degree: 62%
 
 ---
 
@@ -47,13 +47,13 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，点按或单击要为其管理New Relic One用户的程序。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击要为其管理New Relic One用户的程序。
 
-1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮并选择&#x200B;**激活New Relic**。
+1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg并选择&#x200B;**激活New Relic**。
 
    ![管理用户](assets/newrelic-activate-sub-account.png)
 
-   * 您还可以通过程序的&#x200B;**环境**&#x200B;屏幕顶部的省略号按钮访问&#x200B;**管理用户**。
+   * 您还可以通过单击程序的&#x200B;**环境**&#x200B;屏幕顶部的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg访问&#x200B;**管理用户**&#x200B;选项。
 
 1. [为同一环境运行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)以成功完成子帐户激活。
 
@@ -71,11 +71,11 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. 单击要管理New Relic One用户的程序。
 
-1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**管理用户**。
+1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg并选择&#x200B;**管理用户**。
 
    ![管理用户](assets/newrelic-manage-users.png)
 
-   * 您还可以通过程序的&#x200B;**环境**&#x200B;屏幕顶部的省略号按钮访问&#x200B;**管理用户**。
+   * 您还可以通过单击程序的&#x200B;**环境**&#x200B;屏幕顶部的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg访问&#x200B;**管理用户**&#x200B;选项。
 
 1. 在&#x200B;**管理New Relic用户**&#x200B;对话框中，输入要添加的用户的名字和姓氏，然后单击&#x200B;**添加**&#x200B;按钮。 对要添加的所有用户重复此步骤。
 
@@ -121,11 +121,11 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. 单击要访问New Relic One的程序。
 
-1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击省略号按钮，然后选择&#x200B;**打开 New Relic**。
+1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg并选择&#x200B;**打开New Relic**。
 
    ![管理用户](assets/newrelic-access.png)
 
-   * 您还可以通过程序的&#x200B;**环境**&#x200B;屏幕顶部的省略号按钮访问 New Relic。
+   * 您还可以通过单击程序的&#x200B;**环境**&#x200B;屏幕顶部的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg来访问New Relic。
 
 1. 在打开的新浏览器选项卡中，登录到 New Relic One。
 

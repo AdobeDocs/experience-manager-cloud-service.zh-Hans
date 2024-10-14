@@ -1,14 +1,14 @@
 ---
-title: 编辑项目群
+title: 编辑程序
 description: 了解如何在创建生产和沙盒程序后进行编辑，并调整其选项。
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 49%
+source-wordcount: '427'
+ht-degree: 45%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 49%
 
    ![“删除程序”选项](assets/delete-sandbox1.png)
 
-或者，您可以从 Cloud Manager 概述页面单击程序卡上的省略号按钮，然后选择&#x200B;**删除程序**。
+或者，您可以从Cloud Manager概述页面单击程序卡上的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，然后选择&#x200B;**删除程序**。
 
 ![从程序信息卡删除沙盒](assets/delete-sandbox2.png)
 

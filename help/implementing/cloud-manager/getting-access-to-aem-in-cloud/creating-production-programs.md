@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6a3d2d484bde20586b329010cdfe156570e736f5
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 12%
+source-wordcount: '1027'
+ht-degree: 13%
 
 ---
 
@@ -119,7 +119,7 @@ AEM Sites和Forms之间签订了标准的99.9%服务级别协议(SLA)。 **99.99
 
 ## 访问您的项目 {#accessing}
 
-1. 在登陆页面上看到项目卡时，选择省略号按钮以查看可用的菜单选项。
+1. 当您在登陆页面上看到项目信息卡时，单击https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg以查看可用的菜单选项。
 
    ![程序概述](assets/program-overview.png)
 

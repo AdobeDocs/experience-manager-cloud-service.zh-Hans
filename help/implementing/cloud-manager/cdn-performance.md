@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '376'
 ht-degree: 4%
 
 ---
@@ -42,17 +42,17 @@ CDN功能板可在每个项目的概述页面上找到。
 
 ![CDN性能仪表板](assets/cdn-performance-dashboard.png)
 
-有关您的CDN性能的详细信息以及如何改进它的建议，请点按或单击&#x200B;**查看趋势**。
+有关您的CDN性能以及如何改进它的详细信息，请单击&#x200B;**查看趋势**。
 
 ![性能趋势](assets/cdn-performance-trend.png)
 
-点按或单击图表下方的&#x200B;**查看**&#x200B;以更改图表的时间范围。
+单击图表下方的&#x200B;**查看**&#x200B;以更改图表的时间范围。
 
 有关如何提高CDN性能的建议，请选择&#x200B;**Recommendations**&#x200B;选项卡。
 
 ![CDN推荐](assets/cdn-performance-recommendations.png)
 
-点按或单击列表中任何推荐旁边的V形符号，可查看有关要采取的改进步骤和问题原因的详细信息。
+单击列表中任何建议案旁边的V形符号，可查看有关要采取的改进步骤和问题原因的详细信息。
 
 ## 缓存命中定义 {#cache-hit}
 

@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 71%
+source-wordcount: '1398'
+ht-degree: 72%
 
 ---
 
@@ -156,12 +156,12 @@ ht-degree: 71%
 
    ![配置管道](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. 如果已启用体验审核，请点按或单击&#x200B;**继续**&#x200B;以前进到&#x200B;**体验审核**&#x200B;选项卡，您可以在其中定义应始终包含在体验审核中的路径。
+1. 如果启用了体验审核，请单击&#x200B;**继续**&#x200B;前进到&#x200B;**体验审核**&#x200B;选项卡，您可以在其中定义应始终包含在体验审核中的路径。
 
    * 如果您启用了&#x200B;**体验审核**，请参阅[体验审核](/help/implementing/cloud-manager/experience-audit-dashboard.md)文档，以了解有关如何配置的详细信息。
    * 如果未配置，请跳过此步骤。
 
-1. 点击或单击&#x200B;**保存**&#x200B;可保存管道。
+1. 单击&#x200B;**保存**，以保存管道。
 
 管道已保存，您现在可以在[程序概述](managing-pipelines.md)页面的&#x200B;**管道**&#x200B;信息卡上&#x200B;**管理您的管道**。
 

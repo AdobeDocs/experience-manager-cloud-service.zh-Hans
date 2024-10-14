@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '3744'
+source-wordcount: '3742'
 ht-degree: 5%
 
 ---
@@ -151,7 +151,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（一组适�
 
 要为其他资源类型定义高级处理参数，请参阅[配置资源处理](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)。
 
-**要为自适应比特率流创建视频配置文件**，
+**要为自适应比特率流创建视频配置文件：**
 
 1. 选择Experience Manager徽标并导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频配置文件]**。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
@@ -192,7 +192,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（一组适�
 
 如果选择不使用自适应流播放的选项&#x200B;**[!UICONTROL 编码]**，则添加到配置文件的所有编码预设都将被视为单比特率流播放或渐进式视频交付的单个视频呈现形式。 此外，不会进行验证，以确保所有视频呈现具有相同的纵横比。
 
-支持的视频格式编解码器为H.264 (.mp4)和WebM。
+支持的视频格式编解码器是H.264 (.mp4)。<!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 另请参阅[为自适应比特率流创建视频编码配置文件](#creating-a-video-encoding-profile-for-adaptive-streaming)。
 

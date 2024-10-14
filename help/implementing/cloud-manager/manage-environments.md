@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 73%
+source-wordcount: '2357'
+ht-degree: 70%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 73%
 
 您还可以删除附加发布区域。但是，您只能在一次交易中添加或删除区域。如果您需要添加一个区域并删除一个区域，请先添加、保存您的更改，然后再删除（反之亦然）。
 
-1. 从程序的“程序概述”控制台中，单击生产环境的省略号按钮并从菜单中选择&#x200B;**编辑。**
+1. 从程序的程序概述控制台中，单击生产环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，然后从菜单中选择&#x200B;**编辑**。
 
    ![编辑环境](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ ht-degree: 73%
 
 从&#x200B;**概述**&#x200B;页面，您可以通过两种方式访问环境的详细信息。
 
-1. 从&#x200B;**概述**&#x200B;页面，单击侧面导航面板中的&#x200B;**环境**&#x200B;选项卡。
+1. 从&#x200B;**概述**&#x200B;页面，单击左侧菜单中的&#x200B;**环境**&#x200B;选项卡。
 
    ![“环境”信息卡](assets/environments-tab2.png)
 
@@ -141,11 +141,11 @@ ht-degree: 73%
 
    ![“环境”选项卡](assets/environments-tab2.png)
 
-1. 点按或单击列表中的环境，以便显示其详细信息。
+1. 单击列表中的环境以显示其详细信息。
 
    ![环境详细信息](assets/environ-preview1.png)
 
-或者，单击所需环境的省略号按钮，然后选择&#x200B;**查看详细信息**。
+或者，单击所需环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，然后选择&#x200B;**查看详细信息**。
 
 ![查看环境详细信息](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 1. 在&#x200B;**概述**&#x200B;页面上，选择&#x200B;**环境**&#x200B;标签页。
 
-1. 在&#x200B;**环境**&#x200B;选项卡上，在左侧导航面板中选择要查询的环境。
+1. 在&#x200B;**环境**&#x200B;选项卡上，在左侧菜单中选择要查询的环境。
 
 1. 选择环境后：
 
@@ -235,11 +235,11 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 >[!NOTE]
 > 截至2024年，开发实例和一些沙盒程序已自动更新，因此无需手动管理它们的更新。 由于此转换，手动为开发实例更新环境的选项可能对&#x200B;_某些_&#x200B;程序不可用。
 
-通过单击环境的省略号按钮，**更新**&#x200B;选项可从&#x200B;**环境**&#x200B;卡中用于沙盒程序中的某些开发环境和环境。
+通过单击环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg，可以从&#x200B;**环境**&#x200B;信息卡为沙盒程序中的某些开发环境和环境提供&#x200B;**更新**&#x200B;选项。
 
 ![从“环境”信息卡更新选项](assets/environ-update2.png)
 
-单击程序的&#x200B;**环境**&#x200B;选项卡，然后选择环境的省略号按钮，也可以使用此选项。
+通过单击程序的&#x200B;**环境**&#x200B;选项卡，然后单击环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，也可以使用此选项。
 
 ![从“环境”选项卡更新选项](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 具有&#x200B;**部署管理器**&#x200B;或&#x200B;**业务负责人**&#x200B;角色的用户能够删除开发环境。
 
-在&#x200B;**环境**&#x200B;信息卡的程序&#x200B;**概述**&#x200B;屏幕上，单击要删除的开发环境的省略号按钮。
+在&#x200B;**环境**&#x200B;信息卡上的程序&#x200B;**概述**&#x200B;屏幕中，单击要删除的开发环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg。
 
 ![删除选项](assets/environ-delete.png)
 
-在程序&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡上，也可以使用该删除选项。单击环境的省略号按钮，然后选择&#x200B;**删除。**
+在程序&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡上，也可以使用该删除选项。单击环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg并选择&#x200B;**删除**。
 
 ![“环境”选项卡上的删除选项](assets/environ-delete2.png)
 

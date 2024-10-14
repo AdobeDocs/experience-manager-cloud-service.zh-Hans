@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 13%
@@ -36,7 +36,7 @@ SLA报表数据跟踪两个生产层的性能指标：创作层和Publish层。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 从&#x200B;**项目概述**&#x200B;页面，在左侧导航面板中单击&#x200B;**报表**。
+1. 从&#x200B;**项目概述**&#x200B;页面的左侧菜单中，单击&#x200B;**报告**。
 
 1. 单击&#x200B;**SLA报表**。
 

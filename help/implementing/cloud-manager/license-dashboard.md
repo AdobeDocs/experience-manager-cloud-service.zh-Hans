@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '909'
 ht-degree: 34%
 
 ---
@@ -34,7 +34,7 @@ Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解�
 >必须登录具有&#x200B;**业务负责人**&#x200B;角色的用户才能查看许可证仪表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击[Cloud Manager标题](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的“汉堡菜单”按钮。 这会显示选项卡。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击[Cloud Manager标题](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg 。 此操作将显示选项卡。
 1. 单击选项卡中的&#x200B;**许可证**&#x200B;选项。
 
 ![许可证功能板](assets/license-dashboard.png)
