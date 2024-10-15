@@ -3,9 +3,9 @@ title: 使用具有OpenAPI功能的Dynamic Media限制资源交付
 description: 了解如何使用OpenAPI功能限制资源交付。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
+source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -96,12 +96,4 @@ DAM作者还可以通过定义资产属性中可用的激活的开启或关闭�
 
 ### 在Publish服务上交付自定义身份提供程序 {#delivery-custom-identity-provider}
 
-可将AEM Sites、AEM Assets和Dynamic Media与OpenAPI许可证一起使用，并且可在通过AEM Publish或Preview服务交付的网站上配置受限的资产交付。
-如果AEM Sites的Publish和预览服务配置为使用[自定义身份提供程序(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)，则在设置过程中，`groupMembership`属性中可以包含必须有权访问中安全资产的组。\
-当网站用户登录到自定义身份提供程序并访问Publish/Preview服务上托管的网站时，将读取`groupMembership`属性，并在成功身份验证后在网站上构建和交付安全Cookie。 所有后续用于将网站内容交付到用户代理的请求中都包含此安全Cookie。
-
-当页面上请求受保护资产时，AEM Publish和预览层会从secure-cookie中提取授权材料并验证访问权限。 如果存在匹配项，则会显示资源。
-
->[!NOTE]
->
-> 在用于激活具有OpenAPI功能的Dynamic Media的[支持工单中](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)，提及用例中的受限投放。 Adobe工程部将帮助进行必要的澄清和/或为受限交付设置流程。
+可将AEM Sites、AEM Assets和具有OpenAPI许可证的Dynamic Media结合使用，允许在托管在AEM Publish或预览服务上的网站上配置受限的资产交付。 安全交付流利用浏览器Cookie建立用户的访问权限，并具有作为发布域子域的交付层的自定义域，是实施此用例的先决条件。 如果AEM Sites的Publish和预览服务配置为使用[自定义身份提供程序(IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)，则必须在发布域发布用户的身份验证上设置一个名为`delivery-token`的新Cookie，封装用户的组成员资格。 投放层从安全Cookie中提取授权材料并验证访问。 有关更多详细信息，请记录[企业支持票证](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities)。
