@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.10.0 的发行说明
-description: 了解AEM as a Cloud Service中Cloud Manager 2024.10.0的发行说明。
+description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2024.10.0 发行说明。
 feature: Release Information
 role: Admin
 source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
@@ -20,69 +20,69 @@ ht-degree: 12%
 
 ## 发布日期 {#release-date}
 
-AEM as a Cloud Service中的Cloud Manager 2024.10.0版的发布日期是2024年10月3日。
+AEM as a Cloud Service 中 Cloud Manager 2023.10.0 版本的发布日期为 2024 年 10 月 3 日。
 
-下一个版本计划于2024年11月14日发布。
+下一个版本计划于 2024 年 11 月 14 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* <!-- BOTH CS & AMS --> Cloud Manager中使用的AEM原型版本现已更新到版本26。 请参阅[https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
+* <!-- BOTH CS & AMS --> Cloud Manager 中使用的 AEM Archetype 版本现已更新到版本 26。请参阅 [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
 
-* <!-- CS ONLY --> 添加新的自定义域时，以前的验证方法涉及漫长的DNS验证过程。 Adobe为客户简化了此过程。 现在，您只需要提供有效的SSL证书（EV或OV），用作所有权证明。 不再需要更新DNS中的TXT记录。
+* <!-- CS ONLY --> 添加新的自定义域时，以前的验证方法涉及漫长的 DNS 验证过程。Adobe 已为客户简化了这一流程。现在，您只需要提供有效的 SSL 证书（EV 或 OV）作为所有权证明。不再需要更新 DNS 中的 TXT 记录。
 
   >[!NOTE]
   >
-  >此功能仅适用于客户管理的EV和OV证书。 由Adobe管理的DV证书仍要求存在CNAME记录。
+  >此功能仅适用于客户管理的 EV 和 OV 证书。Adobe 管理的 DV 证书仍然需要存在 CNAME 记录。
 
-  请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
+  参见[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 
-  ![验证客户管理的EV/OV证书的域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
+  ![验证客户管理的 EV/OV 证书的域名](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
-* <!-- CS ONLY --> 添加或编辑网络基础架构时，将根据以下规则验证IP地址和网络掩码字段中的值：
+* <!-- CS ONLY --> 当您添加或编辑网络基础设施时，IP 地址和网络掩码字段中的值将根据以下规则进行验证：
 
-   * 地址空间不得与连接地址空间中定义的地址重叠。
-   * DNS地址必须属于连接地址空间中定义的网络掩码或公用。
+   * 该地址空间不能与连接地址空间中定义的地址重叠。
+   * DNS 地址必须属于连接地址空间中定义的网络掩码或者是公共的。
 
   ![添加网络基础结构对话框](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
 
-* <!-- CS ONLY --> 正在更改用于编制索引、安装可变内容和转换作业的环境部署日志的格式。
+* <!-- CS ONLY --> 正在对索引、安装可变内容和转换作业的环境部署日志的格式进行更改。
 
   >[!NOTE]
   >
-  >这项变更计划分阶段推出，预计完成日期为2024年12月。
+  >该变更计划分阶段推出，预计于 2024 年 12 月完成。
 
   ![部署到生产卡](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
 
-  日志的格式将从以下所示的简单条目更改：
+  日志的格式将从如下所示的简单条目改变：
 
   ![显示简单条目的日志文件](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
 
-  到下面所示的JSON条目：
+  对于如下所示的 JSON 条目：
 
-  ![日志文件，显示json条目](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
+  ![显示 json 条目的日志文件](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
 
 
 ## 早期采用计划 {#early-adoption}
 
-加入Cloud Manager的早期采用计划，并有机会测试即将推出的功能。
+加入 Cloud Manager 早期采用计划，即有机会测试即将推出的功能。
 
-### 自带Git — 现在支持GitLab和Bitbucket {#gitlab-bitbucket}
+### 自带 Git - 现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
-**自带Git**&#x200B;功能已扩展到包括对GitLab和Bitbucket等外部存储库的支持。 此新支持是对专用和企业GitHub存储库的现有支持之外的支持。 添加这些新存储库时，您还可以将其直接链接到管道。 您可以在公共云平台上或私有云或基础架构内托管这些存储库。 此集成还消除了对与Adobe存储库进行持续代码同步的需求，并提供了在合并到主分支之前验证拉取请求的功能。
+**自带 Git** 功能已得到扩展，包括对 GitLab 和 Bitbucket 等外部存储库的支持。这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
 
-请参阅[在Cloud Manager中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
+请参阅[在 Cloud Manager 中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
 ![添加“存储库”对话框](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
->目前，开箱即用的拉取请求代码质量检查专供GitHub托管的存储库使用，但正在研究如何将此功能扩展到其他Git供应商。
+>目前，开箱即用的提取请求代码质量检查仅限于 GitHub 托管的存储库，但正在计划将此功能扩展到其他 Git 供应商的更新。
 
-如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)发送电子邮件。 请务必包括您要使用的Git平台，以及您使用的是专用/公共还是企业存储库结构。
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
 
 
 <!-- ## Bug fixes

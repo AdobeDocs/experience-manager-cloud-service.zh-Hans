@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 09cc9c65aff42c3a169791d32dfdbdbfb044aecb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5676'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 >[!CAUTION]
 >
->如果您已配置了旧版专用出口技术并希望配置这些高级网络选项之一，[请联系 Adobe 客户服务。](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home_zh-hans)
+>如果您已配置了旧版专用出口技术并希望配置这些高级网络选项之一，[请联系 Adobe 客户服务。](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)
 >
 >尝试使用传统出口技术配置高级网络可能会影响站点连接。
 
@@ -216,7 +216,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 在与 SaaS 供应商（例如 CRM 供应商）集成，或者对于在 AEM as a Cloud Service 之外提供 IP 地址允许列表的其他集成时，专用 IP 地址可以增强安全性。通过将专用 IP 地址添加到允许列表，可以确保只有来自 AEM Cloud Service 的流量允许流向外部服务。这是在允许的其他所有 IP 之外的流量。
 
-相同的专用IP适用于程序中的所有环境，并适用于Author和Publish服务。
+相同的专用 IP 适用于程序中的所有环境，并且适用于作者和发布服务。
 
 如果不启用专用 IP 地址功能，来自 AEM as a Cloud Service 的流量会流经与 AEM as a Cloud Service 的其他客户共享的一组 IP。
 
@@ -299,7 +299,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Http 或 https 协议</b></td>
-    <td>流向Azure (*.windows.net)或Adobe服务的流量</td>
+    <td>流向 Azure (*.windows.net) 或 Adobe 服务的流量</td>
     <td>任意</td>
     <td>通过共享集群 IP（而非专用 IP）</td>
     <td>adobe.io<br>api.windows.net</td>
