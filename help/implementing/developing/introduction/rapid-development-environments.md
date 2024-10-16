@@ -4,10 +4,10 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
 workflow-type: tm+mt
-source-wordcount: '4241'
-ht-degree: 4%
+source-wordcount: '4537'
+ht-degree: 3%
 
 ---
 
@@ -94,10 +94,38 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
    aio plugins:update
    ```
 
-1. 配置RDE插件以使用您的组织、项目和环境。 下面的设置命令将以交互方式向用户提供其组织中的程序列表，并显示该程序中可供选择的RDE环境。
+1. 使用aio客户端登录。
 
    ```
    aio login
+   ```
+   登录信息（令牌）存储在全局aio配置中，因此仅支持一个登录和组织。 如果您要使用需要不同登录或组织的多个RDE，请遵循以下示例来引入上下文。
+
+   <details><summary>按照此示例为某个RDE登录设置本地上下文</summary>
+   要将登录信息本地存储到特定上下文当前目录的.aio文件中，请执行以下步骤。 上下文也是设置CI/CD环境或脚本的一种巧妙方法。  要使用此功能，请确保至少使用aio-cli版本10.3.1。使用“npm install -g @adobe/aio-cli”更新它
+
+   让我们创建一个名为“mycontext”的上下文，然后在调用登录命令之前使用auth插件将该上下文设置为默认上下文。
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+
+   >[!NOTE]
+   > 带`--no-open`选项的登录命令将在终端中输出一个URL，而不是打开默认浏览器。 这样，您就可以使用浏览器的&#x200B;**无痕显示**&#x200B;窗口复制并打开它。 这样，您在普通浏览器窗口中当前登录的会话将保持不变，您可以确保使用您的上下文所需的特定登录和组织。
+
+   第一个命令将在您的本地`.aio`配置文件中创建一个名为`mycontext`的新登录上下文配置（如果需要，将创建该文件）。 第二个命令将上下文`mycontext`设置为“当前”上下文，即默认值。
+
+   有了此配置，登录命令会自动将登录令牌存储在上下文`mycontext`中，从而使其保持在本地。
+
+   通过将本地配置保留在多个文件夹中，可以管理多个上下文。 或者，也可以在单个配置文件中设置多个上下文，并通过更改“当前”上下文在它们之间切换。
+   </details>
+
+1. 配置RDE插件以使用您的组织、项目和环境。 下面的设置命令将以交互方式向用户提供其组织中的程序列表，并显示该程序中可供选择的RDE环境。
+
+   ```
    aio aem:rde:setup
    ```
 
