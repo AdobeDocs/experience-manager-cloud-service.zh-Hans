@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '773'
+ht-degree: 97%
 
 ---
 
@@ -24,53 +24,53 @@ ht-degree: 0%
 
 ### 增强 {#enhancements-18175}
 
-* Assets-38322：启用AEM的http请求事件。
-* Assets-41448：更新auth.ims包以支持FI到组的映射。
-* Assets-41684：添加OOB OSGI配置以定义Assets、Foundation、Sites和Forms的FI到组映射。
-* Assets-43015：更新到最新的auth.ims包。
-* CQ-4356633：在“仅限内容”工具提示中添加额外的字符。
-* GRANITE-50948：将存储库服务集成到AEM Support for repository service中。
-* GRANITE-52454：添加支持帮助程序0.1.2。
-* GRANITE-52454：升级支持帮助程序GRANITE-52454升级支持帮助程序以使用AEMaaCS的最新版本。
-* GRANITE-53287：正在更新安全权限集成测试版本。
-* GRANITE-53485：复制Azure Blob存储的支持服务主体身份验证。
-* GRANITE-53514：树激活已更新至版本1.0.26。
-* GRANITE-53870：创建内部机制以跳过快速入门的最大JVM版本检查。
-* GRANITE-53914：使用Java 17更新的模块版本修复平台测试失败。
-* GRANITE-53966：对内容分发使用单独的线程池。
-* GRANITE-54006：将Jackson更新为2.17.2。
-* GRANITE-54038：将Creative Cloud企业IMS客户端添加到AEM 列入允许列表 IMS客户端。
-* GRANITE-54054：com.adobe.granite.repository.impl.SystemUserValidation warnOnly的环境变量。
-* GRANITE-54266：生产SDK缺少搜索建议程序服务。
-* GRANITE-54274：接受Firefly的IMS客户端。
+* ASSETS-38322：为 AEM 启用 http 请求事件。
+* ASSETS-41448：更新 auth.ims 捆绑包以支持 FI 到组映射。
+* ASSETS-41684：添加 OOB OSGI 配置以定义 FI 到资产、基础、Sites 和 Forms 的组映射。
+* ASSETS-43015：更新至最新的 auth.ims 捆绑包。
+* CQ-4356633：在“仅限内容”工具提示中添加额外字符。
+* GRANITE-50948：将存储库服务集成到 AEM 支持存储库服务中。
+* GRANITE-52454：添加支持助手 0.1.2。
+* GRANITE-52454：升级支持助手 GRANITE-52454 升级支持助手以使用 AEMaCS 的最新版本。
+* GRANITE-53287：更新安全权限集成测试版本。
+* GRANITE-53485：支持复制 Azure Blob 存储的服务主体身份验证。
+* GRANITE-53514：Treeactivation 已更新至版本 1.0.26。
+* GRANITE-53870：创建内部机制以跳过快速启动的最大 JVM 版本检查。
+* GRANITE-53914：使用 Java 17 更新模块版本修复平台测试失败。
+* GRANITE-53966：使用单独的线程池进行内容分发。
+* GRANITE-54006：更新 Jackson 至 2.17.2。
+* GRANITE-54038：将 Creative Cloud Enterprise IMS 客户端添加到 AEM IMS 客户端允许列表。
+* GRANITE-54054：com.adobe.granite.repository.impl.SystemUserValidation 的环境变量 warnOnly。
+* GRANITE-54266：生产 SDK 缺少搜索建议器服务。
+* GRANITE-54274：接受 Firefly IMS 客户端。
 * GRANITE-54300：将 Oak 更新至最新公开版本 (1.70.0)。
-* GUIDES-19069：添加guidesPeerLinkIndex for aem guides插件。
-* SITES-23584：修复了Java 17上基础组件的测试失败。
-* SKYOPS-69768： SlingModels不会反序列化ResourceResolvers。
-* SKYOPS-76378：提高i18n中ResourceBundle注册/注销的线程安全性。
-* SKYOPS-79285：将Sling XSS更新为2.4.2。
-* SKYOPS-82383：在命令执行描述符中公开“helm-values”convert-merge-analyze结果。
-* SKYOPS-84810：在RDE启动时跳过执行“40-initialize-publish.sh”。
+* GUIDES-19069：为 aem 指南插件添加 guidesPeerLinkIndex。
+* SITES-23584：修复 Java 17 上 Foundation 组件的测试失败。
+* SKYOPS-69768：SlingModels 不会反序列化 ResourceResolvers。
+* SKYOPS-76378：提高 i18n 中 ResourceBundle 注册/注销的线程安全性。
+* SKYOPS-79285：将 Sling XSS 更新至 2.4.2。
+* SKYOPS-82383：在命令执行描述符中公开“helm-values”转换合并分析结果。
+* SKYOPS-84810：在 RDE 启动时跳过“40-initialize-publish.sh”执行。
 * SKYOPS-84951：修复可变内容校验和生成代码。
-* SKYOPS-85335：将org.apache.sling.jcr.repoinit更新为1.1.52。
-* SKYOPS-85336：将Sling Commons Threads更新为3.3.0。
-* SKYOPS-86329：更新平台测试模块的版本以支持java 21 sdk。
+* SKYOPS-85335：将 org.apache.sling.jcr.repoinit 更新至 1.1.52。
+* SKYOPS-85336：将 Sling Commons Threads 更新至 3.3.0。
+* SKYOPS-86329：更新平台测试模块的版本以支持 Java 21 sdk。
 
 ### 修复的问题 {#fixed-issues-18175}
 
-* CNTBF-298：从CC导出的资源包中删除jcr：uuid。
-* SKYOPS-83910：修复了SKYOPS-82371中发现的并发问题。
-* GRANITE-52876：更新至com.adobe.granite.ui.content 0.8.1448。
-* GUIDES-14445：本机PDF生成失败，并出现与获取Node.js的依赖关系相关的错误。
-* GUIDES-16961：带有`<conref>`的标题无法在Web编辑器的基线和翻译功能板中解析。
-* GUIDES-17283：当选择在topicmeta **选项中添加的**&#x200B;使用PDF时，元数据属性不会在本机元数据输出的文档属性中传播。
-* GUIDES-17793：在批量激活已发布的PDF期间，未从&#x200B;**批量Publish功能板**&#x200B;中激活引用的内容。
+* CNTBF-298：从 CC 导出的包中删除 jcr:uuid。
+* SKYOPS-83910：修复在 SKYOPS-82371 中发现的并发问题。
+* GRANITE-52876：更新至 com.adobe.granite.ui.content 0.8.1448。
+* GUIDES-14445：本机 PDF 生成失败，并出现与获取 Node.js 依赖项相关的错误。
+* GUIDES-16961：带有  `<conref>`  的标题无法在 Web 编辑器的基线和翻译仪表板中解析。
+* GUIDES-17283：选择 **使用在 topicmeta 中添加的元数据** 选项时，元数据属性不会传播到原生 PDF 输出的文档属性中。
+* GUIDES-17793：在批量激活已发布内容期间，引用的 PDF 不会从 **批量发布仪表板** 激活。
 
-有关版本中新增和增强的Guides功能和问题的更多信息，请查看[Experience Manager Guides版本路线图](https://experienceleague.adobe.com/cn/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
+如需了解有关新版本中新增功能、增强指南功能和已修复问题的更多信息，请查看 [Experience Manager Guides 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 ### 已知问题 {#known-issues-18175}
 
-* Forms-15818：在服务器日志中未找到组件描述符条目`OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml`的语句。 这些是无害的日志语句。
+* FORMS - 15818：组件描述符条目 `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` 在服务器日志中未找到语句。这些是无害的日志语句。
 
 ### 已弃用的功能和 API {#deprecated-18175}
 
@@ -78,19 +78,19 @@ AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和�
 
 以下是最近弃用的功能或正在弃用的功能的摘要。
 
-#### JavaScript使用API {#javascript-use-api}
+#### JavaScript Use API {#javascript-use-api}
 
-[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)已正式弃用，因为用户调试和维护利用API的代码时遇到挑战，并且与Java替代方案相比，存在性能限制。
+[由于用户在调试和维护利用 API 的代码时遇到困难，并且与 Java 替代方案相比存在性能限制，因此 JavaScript 使用 API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) 已被正式弃用。
 
-您应该转换到[Java Use API，](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)，它提供了更好的性能、更轻松的调试和更强大的长期支持。
+您应该转换到 [Java 使用 API，](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-htl/content/java-use-api) 它提供更好的性能、更容易的调试和更好的长期支持。
 
 #### com.day.cq.wcm.api {#com-day-cq-wcm-api}
 
-请注意，Adobe正在更新`com.day.cq.wcm.api`。 其某些方法和类在当前版本中被标记为`@Deprecated`。 这些功能将在未来版本中删除。 请考虑改用他们建议的替代方案。
+请注意，Adobe 正在更新 `com.day.cq.wcm.api`。它的一些方法和类在当前版本中已被标记为 `@Deprecated` 。这些将在未来的版本中删除。请考虑切换到他们建议的替代方案。
 
-#### org.apache.jackrabbit.oak.plugins.blob {#org.apache.jackrabbit.oak.plugins.blob}
+#### org.apache.jackrabbit.oak.plugins.blob。{#org.apache.jackrabbit.oak.plugins.blob}
 
-* GRANITE-54165：弃用公共API中的org.apache.jackrabbit.oak.plugins.blob。
+* GRANITE-54165：在公共 API 中弃用 org.apache.jackrabbit.oak.plugins.blob。
 
 ### 安全修复 {#security-18175}
 
