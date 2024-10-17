@@ -6,7 +6,7 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 8d38ee90ed5b4e9a5d39d0580e35101187f2c457
+source-git-commit: 126ac2a086423ee52f88c5eb78693bd3c3d5bf63
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 1%
@@ -171,9 +171,7 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 
 ## 有关智能成像的常见问题解答{#smart-imaging-faq}
 
-+++
-
-**智能成像是否有相关许可成本？**
++++**智能成像是否有相关许可成本？**
 
 不会。智能成像随现有许可证一起提供。 这条规则适用于Dynamic Media Classic或Experience Manager - Dynamic Media(内部部署、AMS和Experience Manageras a Cloud Service)。
 
@@ -183,37 +181,34 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 
 +++
 
-+++
-
-**是否可以为任何请求关闭智能成像？**
++++**是否可以为任何请求关闭智能成像？**
 
 是。您可以通过添加以下任何修饰符来关闭智能成像：
 
 * `bfc=off`以关闭浏览器格式转换。 另请参阅[浏览器格式转换](#bfc)。
 * `dpr=off`以关闭设备像素比。 另请参阅[设备像素比](#dpr)。
 * `network=off`以关闭网络带宽。 另请参阅[网络带宽](#network)。
-+++
 
 +++
 
-**是否可以“调整”智能成像？**
++++**是否可以“调整”智能成像？**
 
 是。“智能成像”有三个选项，您可以启用或禁用。
 
 * [浏览器格式转换](#bfc)
 * [设备像素比](#dpr)
 * [网络带宽](#network)
-+++
 
 +++
 
-**智能成像是否可与我现有的图像预设一起使用？**
++++**智能成像是否可与我现有的图像预设一起使用？**
 
 智能映像可与您现有的映像预设无缝集成，同时遵循您所有的映像设置。
 
 唯一的调整涉及图像格式、质量或两者。 在格式转换过程中，智能成像会根据预设设置保留完整的视觉保真度，但会提供较小的文件大小。 只需通过将`bfc=on`、`dpr=on,dprValue`、`network=on`或全部三个参数设置添加到现有URL或预设中即可启用它。
 
 例如，假设图像预设指定了500 × 500像素的JPEG格式，即`quality=85`和`unsharp mask=0.1,1,5`。 智能成像可检测用户是否使用Chrome浏览器。 然后，它将图像转换为具有相同尺寸(500 × 500)的WebP以及与JPEG设置相匹配的钝化蒙版。 然后，系统将WebP和JPEG版本的文件大小进行比较，并将较小的文件大小提供给用户。
+
 +++
 
 <!-- OLD VERSION BELOW AS PER CQDOC-22085>
@@ -237,26 +232,20 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 -->
 
-+++
-
-**智能成像是否适用于HTTPS？ HTTP/2？**
++++**智能成像是否适用于HTTPS？ HTTP/2？**
 
 是的，两个问题。 智能成像处理通过HTTP或HTTPS交付的图像。 此外，它还适用于HTTP/2。
 +++
 
-+++
-
-**我是否有资格使用智能成像？**
++++**我是否有资格使用智能成像？**
 
 智能成像可立即供所有客户使用。 若要开始享受它的好处，只需将`bfc=on`、`dpr=on,dprValue`、`network=on`或全部三个参数设置添加到您现有的URL或预设中。
 
 要激活智能成像，贵公司的Dynamic Media Classic或Dynamic MediaExperience Manager帐户必须将Adobe捆绑的CDN（内容分发网络）作为许可证的一部分提供。
-+++
-
 
 +++
 
-**对帐户启用智能成像的过程是怎样的？**
++++**对帐户启用智能成像的过程是怎样的？**
 
 要开始使用智能成像，请将`bfc=on`、`dpr=on,dprValue`、`network=on`或全部三个参数设置附加到现有URL或预设。 如果您不想手动进行这些更改，则可以通过创建支持案例来默认启用“智能成像”。
 
@@ -311,10 +300,9 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
       1. 按照[这些说明](/help/assets/dynamic-media/config-dm.md)操作。
       1. 将&#x200B;**[!UICONTROL Expiration]**&#x200B;值设置为24小时或更长时间。
 
-
 +++
 
-**帐户何时启用智能成像？**
++++**帐户何时启用智能成像？**
 
 客户支持按照请求接收顺序处理请求，并遵循等待列表。
 
@@ -324,16 +312,15 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-**使用智能成像是否存在风险？**
++++**使用智能成像是否存在风险？**
 
 客户网页没有风险。 但是，过渡到智能成像确实会清除CDN缓存。 该操作涉及在Experience Manager时移动到Dynamic Media Classic或Dynamic Media的新配置。
 
 在初始过渡期间，未缓存的图像直接点击Adobe的原始服务器，直到再次重建缓存为止。 因此，Adobe计划一次处理几个客户过渡，以便在从源拉取请求时保持可接受的性能。 对于大多数客户，大约一到两天内，CDN会再次完全构建缓存。
-+++
 
 +++
 
-**能否验证智能成像是否正常工作？**
++++**能否验证智能成像是否正常工作？**
 
 是。您可以执行以下操作：
 
@@ -353,11 +340,10 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 >并非所有图像都会被转换。 智能成像可决定转换是否可以改善性能。 有时，当没有预期的性能增益或格式不是JPEG或PNG时，图像不会转换。
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-+++
 
 +++
 
-**是否有办法了解智能成像的优势？**
++++**是否有办法了解智能成像的优势？**
 
 是。智能成像页眉决定了智能成像的优势。 启用智能成像后，在&#x200B;**[!UICONTROL 响应标头]**&#x200B;标题下请求图像后，您可以看到`-X-Adobe-Smart-Imaging`，如以下高亮显示的示例中所示：
 
@@ -382,16 +368,13 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++
-
-**我能否在智能成像中禁用AVIF优化？**
++++**我能否在智能成像中禁用AVIF优化？**
 
 是。如果您希望切换回默认提供WebP，请为它创建支持案例。 与往常一样，可以通过将参数`bfc=off`添加到图像的URL来关闭智能成像。 但是，您不能在用于智能成像的URL修饰符中选择WebP或AVIF。 该功能在您的公司帐户级别进行维护。
-+++
 
 +++
 
-**当我的URL在Chrome Web浏览器上为fmt=tif时，为什么我的请求会失败？**
++++**当我的URL在Chrome Web浏览器上为fmt=tif时，为什么我的请求会失败？**
 
 如果您的帐户未启用智能成像，则不会发生此错误。 智能成像仅适用于JPEG或PNG格式。
 
@@ -400,73 +383,65 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 * 指定JPEG或PNG，或
 * 根本不使用`fmt`修饰符，或
 * 使用由智能成像定义的浏览器首选格式。 例如，您可以将WebP用于Chrome Web浏览器。
-+++
 
 +++
 
-**我是否可以从图像的URL下载TIFF图像？**
++++**我是否可以从图像的URL下载TIFF图像？**
 
 是。将`fmt=tif`和`bfc=off`添加到图像的URL路径。
-+++
 
 +++
 
-**智能成像是否管理图像格式和图像质量设置？**
++++**智能成像是否管理图像格式和图像质量设置？**
 
 是。智能成像同时使用格式和质量。 如果收到图像URL中的请求，其余参数将保持不变。
-+++
 
 +++
 
-**我可以设置最小和最大质量设置吗？**
++++**我可以设置最小和最大质量设置吗？**
 
 不会。目前没有此类配置。
-+++
 
 +++
 
-**智能成像是否调整百分比质量输出设置？**
++++**智能成像是否调整百分比质量输出设置？**
 
 是。智能成像可自动调整质量百分比。 该质量使用Adobe开发的机器学习算法来确定。 此百分比不特定于范围。
-+++
 
 +++
 
-**只有JPEG和PNG被智能成像替换吗？**
++++**只有JPEG和PNG被智能成像替换吗？**
 
 是。此功能仅适用于JPEG和PNG。
-+++
 
 +++
 
-**为何JPEG有时会返回到Chrome而不是WebP？**
++++**为何JPEG有时会返回到Chrome而不是WebP？**
 
 智能成像可确定转换是否有效。 它只返回转换有利的新图像。
-+++
 
 +++
 
-**为什么设备像素比(dpr)不适用于复合图像？**
++++**为什么设备像素比(dpr)不适用于复合图像？**
 
 如果复合图像涉及太多图层，则在使用position修饰符时，dpr功能可能会受到影响。 此问题已知，并将在未来版本的智能成像中修复。 如果其他智能成像功能无法按预期工作，您可以创建支持案例以报告问题。
-+++
 
 +++
 
-**为什么智能成像PNG转换为无损WebP/AVIF？**
++++**为什么智能成像PNG转换为无损WebP/AVIF？**
 
 由于PNG是一种无损格式，因此传送的早期WebP和AVIF是无损的，从而导致比预期更大的大小。 智能成像现在支持有损转换。 您可以在图像请求中使用修饰符`cache=update`（仅限一次）来修复此问题。 使用此修饰符的示例：
 
 `https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
 
 要使整个缓存失效，您必须创建一个请求此类工作的支持案例。
-+++
 
 +++
 
-**我能否在智能成像中继续使用PNG无损转换？**
++++**我能否在智能成像中继续使用PNG无损转换？**
 
 是。智能成像现在支持基于质量级别的有损转换。 您可以通过公司的设置将质量设置为100，或者通过将`qlt=100`添加到图像的URL路径来继续使用无损转换。
+
 +++
 
 
