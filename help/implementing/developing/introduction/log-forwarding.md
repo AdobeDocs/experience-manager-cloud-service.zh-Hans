@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发给Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
+source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1663'
 ht-degree: 0%
 
 ---
@@ -305,6 +305,12 @@ data:
 注意事项：
 
 * 默认情况下，端口为443。 可以选择使用名为`port`的属性覆盖它。
+* 根据特定日志，sourcetype字段将具有以下值之一： *aemaccess*，*aemerror*，
+  *aemrequest*，*aemdispatcher*，*aemhttpdaccess*，*aemhttpderror*，*aemcdn*
+
+>[!NOTE]
+>
+> [如果将](#legacy-migration)从旧版日志转发迁移到此自助模型，则发送到您的Splunk索引的`sourcetype`字段的值可能已更改，因此请进行相应调整。
 
 
 <!--
@@ -385,6 +391,10 @@ data:
 准备迁移时，只需按照前几节所述配置YAML文件即可。 使用Cloud Manager配置管道部署到应应用配置的每个环境。
 
 建议将配置部署到所有环境，以便所有环境都处于自助控制状态，但不是必需的。 如果没有，您可能会忘记哪些环境已由Adobe配置，哪些是自助式配置的。
+
+>[!NOTE]
+>
+>发送到Splunk索引的`sourcetype`字段的值可能已更改，因此请进行相应调整。
 
 >[!NOTE]
 >
