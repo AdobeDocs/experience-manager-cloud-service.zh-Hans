@@ -6,10 +6,10 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 0dbc3ae264f83672a212151d14011820aa5e3e78
+source-git-commit: 8d38ee90ed5b4e9a5d39d0580e35101187f2c457
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3243'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 >
 >尝试使用Dynamic Media [_快照_](https://snapshot.scene7.com/)来发现Dynamic Media图像修饰符和智能成像的好处。
 >
-> Snapshot是一种可视化演示工具，旨在说明Dynamic Media在优化和动态图像投放方面的强大功能。 试验测试图像或Dynamic Media URL，以可视化方式观察各种Dynamic Media图像修饰符的输出，并优化以下各项的智能成像：
+>Snapshot是一种可视化演示工具，旨在说明Dynamic Media在优化和动态图像投放方面的强大功能。 试验测试图像或Dynamic Media URL，以可视化方式观察各种Dynamic Media图像修饰符的输出，并优化以下各项的智能成像：
 >
 >* 文件大小（使用WebP和AVIF交付）
 >* 网络带宽
@@ -254,74 +254,73 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 +++
 
 
-<!-- QUESTIONS BELOW WERE REMOVED AS PER CQDOC-22085
++++
 
-+++**Can I enable Smart Imaging for my account?**
+**对帐户启用智能成像的过程是怎样的？**
 
-No. You initiate a request to use Smart Imaging; it is not automatically enabled.
+要开始使用智能成像，请将`bfc=on`、`dpr=on,dprValue`、`network=on`或全部三个参数设置附加到现有URL或预设。 如果您不想手动进行这些更改，则可以通过创建支持案例来默认启用“智能成像”。
 
-Create a support case as described below. In your support case, be sure you mention which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
+创建支持案例时，请指定要在帐户上激活的智能成像功能：
 
-* WebP
-* AVIF
-* DPR and Network Bandwidth optimization
-* PNG to lossy AVIF or lossy WebP
-
-If you already have Smart Imaging enabled with WebP, but desire other new capabilities as listed above, you must create a support case.
-
-**To create a support case to enable Smart Imaging on your account:**
-
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Provide the following information in your support case:
-
-    * Primary contact name, email, phone.
-
-    * List which of the following Smart Imaging capabilities (one or more) you want enabled on your account:
-      * WebP
-      * AVIF
-      * DPR and Network Bandwidth optimization
-      * PNG to lossy AVIF or lossy WebP
-    
-    * All domains to be enabled for Smart Imaging (that is, `images.company.com` or `mycompany.scene7.com`).
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. 
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**.
-    
-    * Verify that you are using the CDN through Adobe and not managed with a direct relationship.
-
-    * Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
-
-       To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts.
-
-       Go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.  
-
-       Look for the field labeled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media Classic domain, you can request moving over to your own custom domain as part of this transition.
-
-    * Indicate if you want it to work over HTTP/2.
-
-1. Adobe Customer Support adds you to the Smart Imaging customer Wait List based on the order in which requests are submitted.
-1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date.
-1. **Optional**: You can optionally test Smart Imaging in Staging before Adobe pushes the new feature to production.
-1. You are notified after completion by Customer Support.
-1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
-
-    1. If you use Dynamic Media Classic, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Set the **[!UICONTROL Default Client Cache Time To Live]** value to 24 or longer.
-    1. If you use Dynamic Media, follow [these instructions](config-dm.md). Set the **[!UICONTROL Expiration]** value 24 hours or longer.
-
-
-
-**When is my account enabled with Smart Imaging?**
-
-Requests are processed in the order in which they are received by Customer Support, according to the Wait List.
+* 浏览器格式转换（WebP或AVIF）
+* 网络带宽优化
 
 >[!NOTE]
 >
->There can be a long lead time because enabling Smart Imaging involves Adobe clearing the cache. Therefore, only a few customer transitions can be handled at any given time.
+>DPR需要客户端调整以确定正确的`dprValue`。 因此，Adobe建议通过附加`dpr=on,dprValue`来通过URL启用DPR。
 
--->
+**要创建支持案例以在您的帐户上启用智能成像：**
+
+1. [使用该Admin Console开始创建新的支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+1. 在您的支持案例中提供以下信息：
+
+   * **主要联系人详细信息：**
+
+      * 提供您的姓名、电子邮件和电话号码。
+
+   * **要启用的智能成像功能：**
+
+      * 列出您想要为您的帐户提供的功能：
+
+         * 浏览器格式转换：WebP或AVIF
+         * 网络带宽优化
+         * DPR： DPR需要客户端调整以确定正确的`dprValue`。 因此，Adobe建议通过附加`dpr=on,dprValue`来通过URL启用DPR。
+
+   * 智能成像的&#x200B;**域：**
+
+      * 列出所有相关域，如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
+      * 智能成像支持通用域和自定义域。
+      * 要识别您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后登录到您的公司帐户。
+
+         1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
+         1. 查找&#x200B;**[!UICONTROL 发布的服务器名称]**&#x200B;字段以确认您的域。
+         1. 验证您使用的是Adobe的CDN，而不是由其他提供商管理的CDN。
+
+   * **指示HTTP/2支持：**
+
+      * 指定是否需要智能成像来处理HTTP/2。
+
+1. 默认情况下，Adobe客户支持会启用所请求的智能成像功能，而无需手动将参数附加到URL。
+1. Adobe建议将生存时间(TTL)设置为至少24小时，以通过缓存来最大化性能。
+要调整TTL，请执行以下操作：
+
+   1. Dynamic Media Classic的&#x200B;**：**
+      1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL Publish设置]** > **[!UICONTROL 图像服务器]**。
+      1. 将&#x200B;**[!UICONTROL 默认客户端缓存生存时间]**&#x200B;值设置为24小时或更长。
+   1. Adobe Experience Manager上的Dynamic Media的&#x200B;**：**
+      1. 按照[这些说明](/help/assets/dynamic-media/config-dm.md)操作。
+      1. 将&#x200B;**[!UICONTROL Expiration]**&#x200B;值设置为24小时或更长时间。
+
+
++++
+
+**帐户何时启用智能成像？**
+
+客户支持按照请求接收顺序处理请求，并遵循等待列表。
+
+>[!NOTE]
+>
+>由于启用智能成像需要Adobe清除缓存，因此可能会存在较长的准备时间。 因此，在任何给定时间只能处理少数客户过渡。
 
 +++
 
@@ -469,27 +468,6 @@ Requests are processed in the order in which they are received by Customer Suppo
 
 是。智能成像现在支持基于质量级别的有损转换。 您可以通过公司的设置将质量设置为100，或者通过将`qlt=100`添加到图像的URL路径来继续使用无损转换。
 +++
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
