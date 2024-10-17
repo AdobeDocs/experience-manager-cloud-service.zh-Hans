@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
+source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1272'
 ht-degree: 5%
 
 ---
@@ -81,6 +81,10 @@ AEM Formsas a Cloud Service提供了一个OOTB连接器，用于连接自适应�
    > 建议您仔细选择您的webhook名称，因为指定的webhook名称会显示在AEM实例中。
 
 1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以添加新连接。 出现&#x200B;**[!UICONTROL 创建连接]**&#x200B;对话框。
+
+>[!NOTE]
+>
+> 确保技术帐户是&#x200B;**forms-users**&#x200B;组的成员；否则，添加webhook失败。
 
 #### 添加与webhook的连接 {#add-connection}
 
