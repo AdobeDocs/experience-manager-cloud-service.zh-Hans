@@ -4,7 +4,7 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 3%
@@ -99,6 +99,7 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
    ```
    aio login
    ```
+
    登录信息（令牌）存储在全局aio配置中，因此仅支持一个登录和组织。 如果您要使用需要不同登录或组织的多个RDE，请遵循以下示例来引入上下文。
 
    <details><summary>按照此示例为某个RDE登录设置本地上下文</summary>
@@ -111,7 +112,6 @@ RDE可用于代码、内容以及Apache或Dispatcher配置。 与常规云开发
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > 带`--no-open`选项的登录命令将在终端中输出一个URL，而不是打开默认浏览器。 这样，您就可以使用浏览器的&#x200B;**无痕显示**&#x200B;窗口复制并打开它。 这样，您在普通浏览器窗口中当前登录的会话将保持不变，您可以确保使用您的上下文所需的特定登录和组织。
@@ -153,8 +153,8 @@ Setup the CLI configuration necessary to use the RDE commands.
 选择本地或全局配置后，setup命令将尝试从当前登录中读取组织id，然后读取组织的程序。 如果找不到组织，您可以手动输入该组织并提供一些指导。
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 检索程序后，用户可以从列表中选择程序，也可以键入以进行筛选。
@@ -248,7 +248,6 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 * 有关命令的详细帮助，请键入：
 
   `aio aem rde <command> --help`
-
 
 ### 全局标志 {#global-flags}
 
@@ -507,7 +506,7 @@ RDE CLI还有其自己的日志命令，可用于快速配置应该记录哪些�
 >
 >如果您在播放创作服务的日志命令时看到错误`RDECLI:UNEXPECTED_API_ERROR`，请重置您的环境并重试。 如果最新的重置操作发生在2024年5月底之前，则会引发此错误。
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ RDE重置过程启动后，通常需要几分钟才能完成，并使环境恢�
   }
 }
 ```
+
 </details>
 
 ### 安装 {#install}
@@ -723,6 +723,7 @@ RDE重置过程启动后，通常需要几分钟才能完成，并使环境恢�
   ]
 }
 ```
+
 </details>
 
 ### 删除 {#delete}
@@ -901,6 +902,7 @@ RDE重置过程启动后，通常需要几分钟才能完成，并使环境恢�
   ]
 }
 ```
+
 </details>
 
 ### 重置 {#reset}
@@ -931,6 +933,7 @@ RDE重置过程启动后，通常需要几分钟才能完成，并使环境恢�
   "status": "reset"
 }
 ```
+
 </details>
 
 ### 重新启动 {#restart}
