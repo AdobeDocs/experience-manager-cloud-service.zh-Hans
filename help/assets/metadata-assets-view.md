@@ -8,13 +8,13 @@ feature: Metadata
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
 # 资源视图中的元数据 {#metadata}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 元数据是指有关数据的数据或者描述。例如，作为资源，您的图像可以包含有关拍摄图像所用相机的信息或者任何版权信息。此信息是图像的元数据。元数据对于高效的资源管理非常关键。元数据是某个资源的所有可用数据的集合，但资源中并不一定包含元数据。

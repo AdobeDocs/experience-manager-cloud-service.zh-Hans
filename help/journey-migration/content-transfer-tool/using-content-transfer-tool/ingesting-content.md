@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -229,12 +229,12 @@ MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支�
 >
 >[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) 2.1.50+版将报告包含超过最大大小的Unicode字符的大型节点。 请确保您运行的是最新版本。 低于2.1.50的BPA版本将不会识别和报告这些大型节点，并且需要使用上述先决条件Oak工具单独发现它们。
 
-### 由于意外的间歇性错误导致摄取失败 {#ingestion-failure-due-to-unexpected-intermittent-errors}
+### 意外间歇性错误导致数据引入失败 {#ingestion-failure-due-to-unexpected-intermittent-errors}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
->title="意外的间歇性错误"
->abstract="有时可能会发生意外的间歇性下游服务错误，不幸的是，唯一的解决办法是简单地重试引入。"
+>title="意外间歇性错误"
+>abstract="有时可能会出现意外的间歇性下游服务错误，遗憾的是，唯一的办法就是重试摄取。"
 
 有时，意外的间歇性问题可能会导致摄取失败，很遗憾，唯一的解决办法是重试摄取。 调查摄取日志以找出失败的原因，并查看它是否与下面列出的任何错误一致，其中应尝试重试。
 

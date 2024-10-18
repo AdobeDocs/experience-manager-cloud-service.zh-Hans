@@ -1,6 +1,6 @@
 ---
 title: 功能测试
-description: 了解AEM as a Cloud Service部署过程中内置的三种不同类型的功能测试，确保代码的质量和可靠性。
+description: 了解 AEM as a Cloud Service 部署过程内置的三种不同类型的功能测试，确保代码的质量和可靠性。
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="功能测试"
->abstract="了解AEM as a Cloud Service部署过程中内置的三种不同类型的功能测试，确保代码的质量和可靠性。"
+>abstract="了解 AEM as a Cloud Service 部署过程内置的三种不同类型的功能测试，确保代码的质量和可靠性。"
 
 发现[AEM as a Cloud Service部署流程](/help/implementing/cloud-manager/deploy-code.md)中可用的质量关卡以及各种类型的内置功能测试。 了解如何在全面的测试策略框架内贡献并优化其使用。
 

@@ -1,6 +1,6 @@
 ---
 title: 自定义代码质量规则
-description: 了解Cloud Manager的自定义代码质量规则，这些规则基于Adobe Experience Manager工程最佳实践，旨在通过彻底测试确保高质量的代码。
+description: 了解基于 Adobe Experience Manager 工程最佳实践的 Cloud Manager 自定义代码质量规则，通过全面测试确保高质量代码。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
 source-wordcount: '4421'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="自定义代码质量规则"
->abstract="了解Cloud Manager的自定义代码质量规则，这些规则基于Adobe Experience Manager工程最佳实践，旨在通过彻底测试确保高质量的代码。"
+>abstract="了解基于 Adobe Experience Manager 工程最佳实践的 Cloud Manager 自定义代码质量规则，通过全面测试确保高质量代码。"
 
 了解Cloud Manager的自定义代码质量规则，这些规则基于Adobe Experience Manager工程最佳实践，旨在通过彻底测试确保高质量的代码。 另请参阅[代码质量测试](/help/implementing/cloud-manager/code-quality-testing.md)。
 
