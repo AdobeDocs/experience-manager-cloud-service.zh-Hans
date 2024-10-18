@@ -4,9 +4,9 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
+source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
 workflow-type: tm+mt
-source-wordcount: '4537'
+source-wordcount: '4794'
 ht-degree: 3%
 
 ---
@@ -1052,3 +1052,17 @@ Forms开发人员可以使用AEM FormsCloud Service快速开发环境快速开�
 `aio cloudmanager:list-programs`
 
 这应列出您配置的组织下的所有程序，并确认您分配了正确的角色。
+
+### 使用已弃用的上下文“aio-cli-plugin-cloudmanager” {#aio-rde-plugin-troubleshooting-deprecatedcontext}
+
+由于“aio-cli-plugin-aem-rde”的历史记录，上下文名称“aio-cli-plugin-cloudmanager”使用了一段时间。 现在，rde插件使用IMS方式处理上下文信息，这意味着可以选择全局或本地存储上下文信息，并且如果愿意，可将所有aio调用默认到一个已配置的默认值。 配置的默认上下文存储在本地，使开发人员能够跟踪和使用文件夹中的各个上下文及其信息。 有关更多详细信息，请阅读[以上设置本地上下文的示例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)。
+
+同时使用aio-cli-plugin-cloudmanager和aio-cli-plugin-aem-rde这两个插件，并希望将所有信息保存在同一上下文中的开发人员，现在可以选择以下选项：
+
+#### 继续使用上下文“aio-cli-plugin-cloudmanager”
+
+仍可以使用上下文，RDE插件中将显示弃用警告。 可以使用```--quiet```模式忽略此警告。 更新版本的RDE插件将不再提供用于读取上下文“aio-cli-plugin-cloudmanager”的回退。 若要继续使用它，只需将默认上下文配置为“aio-cli-plugin-cloudmanager”，请参阅上面的[设置本地上下文的示例](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)。
+
+#### 还为Cloud Manager插件使用任何其他上下文名称
+
+cloud manager插件提供了一个参数来定义要使用的上下文。 它目前尚不支持IMS默认上下文配置。 为此，请使用[示例配置RDE插件以设置本地上下文](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools)，并告知Cloud Manager插件在每次调用它时都使用“myContext”，如```--imsContextName=myContext```。
