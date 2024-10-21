@@ -4,10 +4,10 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4492536120989423b639bbb75105568a9c328507
-workflow-type: ht
-source-wordcount: '5469'
-ht-degree: 100%
+source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
+workflow-type: tm+mt
+source-wordcount: '5557'
+ht-degree: 98%
 
 ---
 
@@ -928,6 +928,15 @@ AEM Content Fragments的 GraphQL 允许您请求 AEM Dynamic Media (Scene7) 资�
 GraphQL 中的解决方案意味着您可以：
 
 * 在 `ImageRef` 引用上使用 `_dmS7Url`
+   * 请参阅[通过URL进行Dynamic Media资源投放的示例查询 — 图像引用](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* 在多个引用上使用`_dmS7Url`；`ImageRef`、`MultimediaRef`和`DocumentRef`
+   * 请参阅[按URL交付Dynamic Media资源的示例查询 — 多个引用](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* 将`_dmS7Url`用于智能裁剪功能
+
+   * `_smartCrops`属性公开可用于特定资源的智能裁剪配置
+
+   * 请参阅使用Smart Crop按URL投放Dynamic Media资源的[示例查询](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1010,6 +1019,36 @@ query allTeams {
     }
   }
 }
+```
+
+### 按URL投放Dynamic Media资源的示例查询 — 具有智能裁切 {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+下面是一个示例查询：
+
+* 用于显示可用于所请求资源的智能裁剪配置
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## GraphQL for AEM – 执行摘要 {#graphql-extensions}
