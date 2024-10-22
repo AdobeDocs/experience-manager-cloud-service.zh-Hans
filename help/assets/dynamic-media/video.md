@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
 workflow-type: tm+mt
-source-wordcount: '10490'
+source-wordcount: '10543'
 ht-degree: 1%
 
 ---
@@ -440,7 +440,7 @@ Dynamic Media建议使用MP4 H.264视频编码预设。 由于MP4文件使用H.2
 
 **要查看视频报告：**
 
-1. 在Experience Manager的左上角，选择Experience Manager徽标。 在左边栏中，转到&#x200B;**[!UICONTROL 工具]** （锤子图标） > **[!UICONTROL Assets]** > **[!UICONTROL 视频报表]**。
+1. 在Experience Manager的左上角，选择Experience Manager徽标。 在左边栏中，单击![锤子图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL 视频报表]**。
 1. 在“视频报表”页面上，执行以下操作之一：
 
    * 在右上角附近，选择&#x200B;**[!UICONTROL 刷新视频报告]**图标。
@@ -532,7 +532,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 | 功能 | 描述 |
 | --- | --- |
-| 短划线 | DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广泛地应用于不同的视频观看者中。 在您的帐户上启用DASH后，您可以选择使用DASH或HLS进行自适应视频流传输。 或者，当在查看器预设中选择&#x200B;**[!UICONTROL auto]**&#x200B;作为播放类型时，您可以选择在播放器之间自动切换。<br>在您的帐户上启用DASH的一些主要优势包括：<br>·将DASH流视频打包用于自适应比特率流。 这种方法可以提高投放效率。 自适应流管理可确保为客户提供最佳观看体验。<br>·使用Dynamic Media播放器优化的浏览器流会在HLS和DASH流之间切换，以确保最佳服务质量。 使用Safari浏览器时，视频播放器会自动切换到HLS。<br>·您可以通过编辑视频查看器预设来配置首选的流方法（HLS或DASH）。<br>·优化的视频编码确保在启用DASH功能时不会使用额外的存储。 为HLS和DASH创建一组视频编码，以优化视频存储成本。<br>·帮助让您的客户更容易访问视频交付。<br>·也通过API获取流URL。 |
+| 短划线 | DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广泛地应用于不同的视频观看者中。 在您的帐户上启用DASH后，您可以选择使用DASH或HLS进行自适应视频流传输。 或者，当在查看器预设中选择&#x200B;**[!UICONTROL auto]**&#x200B;作为播放类型时，您可以选择在播放器之间自动切换。<br>在帐户中启用DASH的一些主要优势包括：<ul><li>将DASH流视频打包用于自适应比特率流。 这种方法可以提高投放效率。 自适应流管理可确保为客户提供最佳观看体验。</li><li>使用Dynamic Media播放器优化的浏览器流会在HLS和DASH流之间切换，以确保最佳服务质量。 使用Safari浏览器时，视频播放器会自动切换到HLS。</li><li>您可以通过编辑视频查看器预设来配置首选的流方法（HLS或DASH）。</li><li>优化的视频编码可确保在启用DASH功能时不会使用额外的存储。 为HLS和DASH创建一组视频编码，以优化视频存储成本。</li><li>帮助让您的客户更容易访问视频交付。</li><li>也通过API获取流URL。</li></ul> |
 | 多字幕和音轨 | 自动启用多个字幕和音轨支持将使您受益。 启用后，您上传的所有后续视频都将采用新的后端架构进行处理，该架构支持向视频添加多个字幕和音频轨道。 |
 | AI生成的字幕（限量发布） | 为由AI支持的视频创建字幕。 利用人工智能，它创建视频的文字记录并将其转换为字幕。 甚至时间线也被定义了。 |
 
@@ -554,7 +554,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 1. Adobe客户支持根据提交请求的顺序将您添加到客户等待列表中。
 1. 当Adobe准备好处理您的请求时，客户支持联系您以协调并设置目标启用日期。
 1. Adobe客户支持会在完成后通知您。
-1. 现在，执行以下任一操作：
+1. 现在，执行以下一项或多项操作：
 
    * 照常创建[视频查看器预设](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)。
    * 照常创建[视频配置文件](/help/assets/dynamic-media/video-profiles.md)。
@@ -708,8 +708,8 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
 
 1. [将主视频上传到已分配了视频配置文件的文件夹](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
 1. 导航到要添加多个字幕和音频轨道的上传视频资产。
-1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。
-1. 在工具栏上，单击“属性”图标（一个带有“i”的圆形）。
+1. 在资源选择模式下，从![查看卡片图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片视图）或![查看列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （列表视图）中选择视频资源。
+1. 在工具栏上，单击![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)属性。
    ![所选的视频资产在视频缩略图图像上带有复选标记，并且工具栏上突出显示了“查看属性”。](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*在卡片视图中选择的视频资产。*
 1. 在视频的“属性”页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
 
@@ -722,12 +722,12 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
    >完成以上任一任务后，请返回这些步骤。
 
    ![属性页面上的字幕和音轨选项卡。](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *视频的“属性”页面上的“字幕和音轨”选项卡。*
+   在视频的“属性”页面上，*字幕和音频曲目选项卡。*
 
 1. 要将一个或多个音频轨道添加到视频，请执行以下操作：
    1. 选择&#x200B;**[!UICONTROL 上传音轨]**。
    1. 导航到一个或多个.mp3文件并将其打开。
-   1. 要使音轨在媒体播放器上的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中可见，必须添加有关每个音轨文件的所需详细信息。 这样做可确保正确列出并访问所有音频轨道。 选择音轨文件名右侧的铅笔图标。 在&#x200B;**编辑音轨**&#x200B;对话框中，输入以下必需的详细信息：
+   1. 要使音轨在媒体播放器上的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中可见，必须添加有关每个音轨文件的所需详细信息。 这样做可确保正确列出并访问所有音频轨道。 单击音频轨道文件名右侧的![绘制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**编辑音轨**&#x200B;对话框中，输入以下必需的详细信息：
 
       | 音轨元数据 | 描述 |
       |--- |--- |
@@ -758,7 +758,7 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
 
    1. 在页面的右上角附近，单击&#x200B;**[!UICONTROL 创建题注]** > **[!UICONTROL 上传文件]**。
    1. 导航到一个或多个预先存在的`.vtt`文件并将其打开，并选择这些文件。
-   1. 为了在媒体播放器上显示字幕，您&#x200B;*必须*&#x200B;添加有关您上传的&#x200B;*每个*&#x200B;字幕文件的所需详细信息。 选择题注文件名右侧的铅笔图标。 在&#x200B;**编辑题注**&#x200B;对话框中，输入有关文件的以下必需详细信息：
+   1. 为了在媒体播放器上显示字幕，您&#x200B;*必须*&#x200B;添加有关您上传的&#x200B;*每个*&#x200B;字幕文件的所需详细信息。 单击标题文件名右侧的![绘制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**编辑题注**&#x200B;对话框中，输入有关文件的以下必需详细信息：
 
       | 题注元数据 | 描述 |
       |--- |--- |
@@ -791,8 +791,8 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
 
       | 选项 | 描述 |
       |--- |--- |
-      | 要转换的音轨 | 在下拉列表中，选择上传的音频轨道文件，您希望AI从中生成字幕。 |
-      | 输出语言 | 在下拉列表中，选择您希望字幕文件显示的一个或多个语言。<br>若要删除选定的语言，请单击&#x200B;**X**。<br>在视频播放期间，媒体播放器中会按照您在此处选择它们的顺序显示语言列表。 |
+      | 要转换的音轨 | 单击![向下V形图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然后选择上载的音频轨道文件，您希望使用AI从中生成字幕。 |
+      | 输出语言 | 单击![向下V形图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然后选择您希望字幕文件显示的一个或多个语言。<br>要删除选定的语言，请单击![关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。<br>在视频播放期间，媒体播放器中会按照您在此处选择它们的顺序显示语言列表。 |
 
    1. 单击&#x200B;**[!UICONTROL 完成]**。
    1. 在页面的右上角附近，在&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;下拉列表中，单击&#x200B;**[!UICONTROL 保存]**。
@@ -802,7 +802,7 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
       >
       >根据实例的缓存设置，元数据处理可能需要几分钟时间，然后才能反映在预览和已发布的URL中。
 
-   1. （可选）选择题注文件名右侧的铅笔图标。 在&#x200B;**编辑标题**&#x200B;对话框中，可以编辑有关文件的以下详细信息：
+   1. （可选）单击题注文件名右侧的![绘制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**编辑标题**&#x200B;对话框中，可以编辑有关文件的以下详细信息：
 
       | 题注元数据 | 描述 |
       | --- | --- |
@@ -825,8 +825,8 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
 
       | 选项 | 描述 |
       |--- |--- |
-      | 要翻译的题注 | 在下拉列表中，选择一个需要使用AI生成字幕的字幕文件。 |
-      | 输出语言 | 在下拉列表中，选择您希望字幕文件显示的一个或多个语言。<br>若要删除选定的语言，请单击&#x200B;**X**。<br>在视频播放期间，媒体播放器中会按照您在此处选择它们的顺序显示语言列表。 |
+      | 要翻译的题注 | 单击![向下V形图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然后选择一个需要使用AI生成字幕的字幕文件。 |
+      | 输出语言 | 单击![向下V形图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然后选择您希望字幕文件显示的一个或多个语言。<br>要删除选定的语言，请单击![关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。<br>在视频播放期间，媒体播放器中会按照您在此处选择它们的顺序显示语言列表。 |
 
    1. 单击&#x200B;**[!UICONTROL 完成]**。
    1. 在页面的右上角附近，在&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;下拉列表中，单击&#x200B;**[!UICONTROL 保存]**。
@@ -836,7 +836,7 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
       >
       >根据实例的缓存设置，元数据处理可能需要几分钟时间，然后才能反映在预览和已发布的URL中。
 
-   1. （可选）选择题注文件名右侧的铅笔图标。 在&#x200B;**编辑标题**&#x200B;对话框中，可以编辑有关文件的以下详细信息：
+   1. （可选）单击题注文件名右侧的![绘制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg)。 在&#x200B;**编辑标题**&#x200B;对话框中，可以编辑有关文件的以下详细信息：
 
       | 题注元数据 | 描述 |
       | --- | --- |
@@ -888,11 +888,12 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 **要查看视频的生命周期状态：**
 
 1. 导航到要查看其生命周期状态的视频资源。
-1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。
-1. 在工具栏上，选择“属性”图标（一个带有“i”的圆形）。
-1. 在“属性”页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。 在“状态”列中，记下每个字幕或音频文件的状态。
+1. 在资源选择模式下，从![查看卡片图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片视图）或![查看列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （列表视图）中选择视频资源。
+1. 在工具栏上，单击![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)属性。
+1. 在&#x200B;**属性**&#x200B;页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
+1. 在&#x200B;**[!UICONTROL 状态]**&#x200B;列中，记下每个字幕或音频文件的状态。
 
-| 字幕或音轨状态 | 描述 |
+| 字幕和音轨的状态 | 描述 |
 | --- | --- |
 | 正在处理 | 添加并保存新的字幕或音轨文件时，它进入“正在处理”状态。 Dynamic Media通过将流清单附加到主视频来处理该文件。 |
 | 已处理 | 处理完成后，字幕或音轨文件，或与主视频相关的原始音轨将显示为“已处理”状态。 在&#x200B;*发布实时视频之前，您可以预览显示为“已处理”的字幕和音轨文件*。 |
@@ -900,7 +901,6 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 | 失败 | “失败”状态表示字幕或音频轨道文件的处理未完成。 请删除字幕或音轨文件，然后重新上传。 |
 | 已取消发布 | 明确取消发布已发布的主视频时，您添加到该视频的任何字幕或音频跟踪文件也会被取消发布。 |
 
-为“字幕”和“音轨”字段突出显示![状态列。](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*每个上载的字幕和音轨文件的生命周期状态。*
 
 ### 为具有多个音频轨道的视频设置默认音频
 
@@ -918,16 +918,16 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 **要为具有多个音频轨道的视频设置默认音频：**
 
 1. 导航到要设置其默认音频轨道的视频资产。
-1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。
-1. 在工具栏上，选择“属性”图标（一个带有“i”的圆形）。
+1. 在资源选择模式下，从![查看卡片图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片视图）或![查看列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （列表视图）中选择视频资源。
+1. 在工具栏上，单击![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)属性。
 1. 在“属性”页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
 1. 在&#x200B;**音轨**&#x200B;标题下，选择要设置为视频的默认音轨文件。
-1. 选择&#x200B;**[!UICONTROL 设置为默认值]**。
-在**设置为默认值**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 替换]**。
+1. 单击![音频图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL 设置为默认值]**。
+1. 在&#x200B;**设置为默认值**&#x200B;对话框中，单击&#x200B;**[!UICONTROL 替换]**。
 
    ![声道标题具有选定的声道文件名并突出显示“设置为默认值”按钮。](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*正在设置视频的默认音轨。*
 
-1. 在右上角，选择&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 单击右上角的&#x200B;**[!UICONTROL 保存并关闭]**。
 1. Publish视频。 查看[Publish资源](publishing-dynamicmedia-assets.md)。
 
 ### 预览具有多个字幕和音频轨道的视频 {#preview-video-audio-subtitle}
@@ -947,22 +947,21 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 **要预览具有多个字幕和音轨的视频，请执行以下操作：**
 
 1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;中，导航到已添加多个字幕和音轨的现有视频。
-1. 单击视频资产，以便您可以在预览模式下打开它。
-1. 在预览页面左上角附近，选择下拉列表，然后选择&#x200B;**[!UICONTROL 查看器]**。
+1. 单击视频资产可在预览模式下将其打开。
+1. 在预览页面的左上角附近，单击![左边栏图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![V形向下图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然后选择&#x200B;**[!UICONTROL 查看器]**。
 
    ![显示“查看者”选项的下拉列表。](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. 从查看器列表中，选择要用于视频预览的查看器。 例如，以下屏幕截图显示了正在选择的&#x200B;**[!UICONTROL 视频]**&#x200B;查看器。
+1. 在页面的左上角附近，单击![左边栏图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg)查看器![向下V形图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然后选择要用于视频预览的查看器。
 
-   ![从“查看器”下拉列表中选择视频查看器。](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
-
-1. 在右下角附近，在音量图标的左侧，选择语音泡图标，然后选择要收听的音频或题注，或者选择收听的音频或题注，或者同时选择两者。 如果需要，在“字幕”下，您可以通过单击&#x200B;**[!UICONTROL 禁用]**&#x200B;来禁用任何字幕的显示。
+1. 在页面的右下角附近，单击语音泡泡图标，然后选择要听到的音频或字幕/字幕，或者同时选择两者。
 
    ![视频查看器中的“音频和字幕”弹出列表。](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*模拟用户选择音频和字幕进行视频播放。*
 
-1. 要开始播放，请选择视频的&#x200B;**[!UICONTROL 播放]**按钮。
-请注意左下角的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL 嵌入]**&#x200B;按钮。 使用这些按钮分别[将视频的URL链接到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[将视频嵌入网页](/help/assets/dynamic-media/embed-code.md)。
-1. 在预览页面的右上角附近，选择&#x200B;**[!UICONTROL 关闭]**。
+1. 要开始播放，请单击![PLay图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)。
+如有需要，请单击![最大化图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg)以最大化查看窗口。
+请注意页面左下角附近的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按钮。 使用这些按钮分别[将视频的URL链接到您的Web应用程序](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[将视频嵌入网页](/help/assets/dynamic-media/embed-code.md)。
+1. 在预览页面的右上角附近，单击&#x200B;**[!UICONTROL 关闭]**。
 
 ### 从视频中删除字幕或音频跟踪文件
 
@@ -973,13 +972,13 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 **要从视频中删除字幕或音频轨道文件：**
 
 1. 导航到要设置其默认音频轨道的视频资产。
-1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。
-1. 在工具栏上，选择“属性”图标（一个带有“i”的圆形）。
+1. 在资源选择模式下，从![查看卡片图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片视图）或![查看列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （列表视图）中选择视频资源。
+1. 在工具栏上，单击![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)属性。
 1. 在“属性”页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
 1. 执行以下任一操作：
 
-   * 字幕 — 在&#x200B;**字幕**&#x200B;标题下，选择一个或多个要从视频中删除的字幕文件，然后单击&#x200B;**[!UICONTROL 删除]**。
-   * 音轨 — 在&#x200B;**音轨**&#x200B;标题下，选择一个或多个要从视频中删除的音轨文件，然后单击&#x200B;**[!UICONTROL 删除]**。
+   * 字幕 — 在&#x200B;**字幕**&#x200B;标题下，选择一个或多个要从视频中删除的字幕文件，然后单击![删除图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg)**[!UICONTROL 删除]**。
+   * 音轨 — 在&#x200B;**音轨**&#x200B;标题下，选择一个或多个要从视频中删除的音轨文件，然后单击![删除图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 删除]**。
 
 1. 在“删除”对话框中，单击&#x200B;**[!UICONTROL 确定]**。
 1. Publish视频。
@@ -995,22 +994,23 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 **要下载上载到视频的字幕或音轨文件：**
 
 1. 导航到要设置其默认音频轨道的视频资产。
-1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。
-1. 在工具栏上，选择“属性”图标（一个带有“i”的圆形）。
-1. 在“属性”页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
+1. 在资源选择模式下，从![查看卡片图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片视图）或![查看列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （列表视图）中选择视频资源。
+1. 在工具栏上，单击![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)属性。
+1. 在&#x200B;**属性**&#x200B;页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
 1. 执行以下任一操作：
 
-   * 字幕 — 在&#x200B;**字幕**&#x200B;标题下，选择要从视频下载的一个或多个字幕文件，然后选择&#x200B;**[!UICONTROL 下载]**。
-   * 音轨 — 在&#x200B;**音轨**&#x200B;标题下，选择要从视频下载的一个或多个音轨文件，然后选择&#x200B;**[!UICONTROL 下载]**。
+   * 字幕 — 在&#x200B;**字幕**&#x200B;标题下，选择要从视频下载的一个或多个字幕文件，然后单击![下载图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg)**[!UICONTROL 下载]**。
+   * 音轨 — 在&#x200B;**音轨**&#x200B;标题下，选择要从视频下载的一个或多个音轨文件，然后单击![下载图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL 下载]**。
 
 1. 在“下载”对话框中，设置以下选项：
 
-   | 选项 | 描述 |
+   | 下载选项 | 描述 |
    |--- |--- |
    | 另存为 | 使用在“另存为”文本字段中指定的默认文件名，或指定您自己的名称。 |
    | 为每个资源创建单独的文件夹 | 为您选择下载的每个字幕文件或音轨文件创建一个文件夹。 |
    | 电子邮件 | 使用默认电子邮件程序将.zip文件发送到指定的电子邮件地址。 |
    | 资源 | 指定正在下载的文件数以及所有选定文件的组合总大小。 取消选择此选项会使&#x200B;**[!UICONTROL 下载]**&#x200B;按钮变暗（关闭），从而阻止您下载任何文件。 |
+   | 演绎版 | 演绎版是指原始文件的替代版本或预览，通常是较小或分辨率较低的版本。 如果显示为0 B，则可能意味着没有可用的替代版本，或者它太小而无法注册大小。 |
 
 1. 选择&#x200B;**[!UICONTROL 下载]**。
 1. Publish视频。 查看[Publish资源](publishing-dynamicmedia-assets.md)。
@@ -1060,7 +1060,7 @@ Dynamic Media可以将字幕文件转换为JSON(JavaScript对象表示法)格式
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
 按照站点中的屏幕说明创作和保存WebVTT文件。 完成后，复制字幕文件内容并将其粘贴到纯文本编辑器中，并以VTT文件扩展名保存。
 
@@ -1085,11 +1085,11 @@ Dynamic Media可以将字幕文件转换为JSON(JavaScript对象表示法)格式
 
      记下描述路径末尾的`,1`。 紧跟路径中的VTT文件扩展名之后，您可以选择分别设置为`,1`或`,0`来启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮。
 
-   * 对于嵌入的视频查看器体验，请选择&#x200B;**[!UICONTROL 嵌入代码]**。 在“嵌入代码”对话框中，选择嵌入代码，并将其复制到剪贴板，然后将该代码粘贴到简单的文本编辑器中。 使用以下语法附加复制的嵌入代码：
+   * 要获得嵌入的视频查看器体验，请单击&#x200B;**[!UICONTROL 嵌入代码]**。 在“嵌入代码”对话框中，选择嵌入代码，并将其复制到剪贴板，然后将该代码粘贴到简单的文本编辑器中。 使用以下语法附加复制的嵌入代码：
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-     记下描述路径末尾的`,1`。 紧跟路径中的VTT文件扩展名之后，您可以选择分别设置为`,1`或`,0`来启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮。
+     请注意题注路径末尾的`,1`。 紧跟路径中的VTT文件扩展名之后，您可以选择分别设置为`,1`或`,0`来启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮。
 
 ## 向视频添加章节标记 {#adding-chapter-markers-to-video}
 
@@ -1170,7 +1170,6 @@ Cost-efficient access to rapidly evolving technology.
    </table>
 
 
-
 ## 关于视频缩略图 {#about-video-thumbnails}
 
 视频缩略图是视频帧的缩减版本，或者向客户表示视频的图像资产。 缩略图应当用于鼓励客户选择视频。
@@ -1190,26 +1189,28 @@ Experience Manager中的所有视频都必须具有关联的缩略图。 默认�
 
    * [已将视频上传到文件夹](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
 
+
 1. 导航到要更改其缩略图图像的已上传视频资产。
-1. 在&#x200B;**[!UICONTROL 列表视图]**&#x200B;或&#x200B;**[!UICONTROL 卡片视图]**&#x200B;的资源选择模式下，选择视频资源。
-1. 在工具栏上，选择&#x200B;**[!UICONTROL 属性]**&#x200B;图标（一个带有“i”的圆圈）。
-1. 在视频的“属性”页面上，选择&#x200B;**[!UICONTROL 更改缩略图]**。
-1. 在“更改缩略图”页面上，执行下列操作之一：
+1. 在资源选择模式下，从![查看卡片图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) （卡片视图）或![查看列表图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) （列表视图）中选择视频资源。
+1. 在工具栏上，单击![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg)属性。
+1. 在视频的“属性”页面上，单击&#x200B;**[!UICONTROL 更改缩略图]**。
+1. 在“更改缩略图”对话框中，执行以下操作之一：
 
    * 要将视频中的帧用作新缩略图，请执行以下操作：
 
-      * 在工具栏上，单击&#x200B;**[!UICONTROL 从视频中选择帧]**&#x200B;选项。
-      * 选择“播放”按钮，然后在要捕获为视频新缩略图的帧上选择“暂停”按钮。
+      * 在工具栏上，单击&#x200B;**[!UICONTROL 从视频中选择帧]**&#x200B;选项卡。
+      * 单击![播放图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)。
+      * 在要捕获为视频新缩略图的帧上单击![暂停图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg)。
 
    * 要将图像资产用作新缩略图，请执行以下操作：
 
-      * 在工具栏上，选择&#x200B;**[!UICONTROL 从Assets中选择缩略图]**。
-      * 选择&#x200B;**[!UICONTROL 选择缩略图]**。
+      * 在工具栏上，单击&#x200B;**[!UICONTROL 从Assets中选择缩略图]**&#x200B;选项卡。
+      * 单击&#x200B;**[!UICONTROL 选择缩略图]**&#x200B;按钮。
       * 导航到要使用的之前上传和发布的图像资产。 资源会自动调整大小以用作视频的缩略图。
-      * 选择图像资源，然后选择&#x200B;**[!UICONTROL 选择]**。
+      * 选择图像资源，然后单击&#x200B;**[!UICONTROL 选择]**。
 
-1. 在“更改缩略图”页面上，选择&#x200B;**[!UICONTROL 保存更改]**。
-1. 在视频的“属性”页面的右上角，选择&#x200B;**[!UICONTROL 保存并关闭]**。
+1. 在“更改缩略图”对话框中，单击&#x200B;**[!UICONTROL 保存更改]**。
+1. 在视频的“属性”页面的右上角，单击&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;或&#x200B;**[!UICONTROL 保存]**。
 
 
 
