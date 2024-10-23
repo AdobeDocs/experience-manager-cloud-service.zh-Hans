@@ -4,9 +4,9 @@ description: 了解如何在Cloud Manager for Screensas a Cloud Service中将Scr
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 3%
 
 ---
@@ -33,14 +33,14 @@ ht-degree: 3%
 
 1. 导航到您的项目，然后单击Cloud Manager **概述**&#x200B;页面中的&#x200B;**编辑项目**&#x200B;选项。
 
-   ![图像](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
+   ![编辑项目](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
    >**编辑程序**&#x200B;页面显示两个选项卡：**常规**&#x200B;和&#x200B;**解决方案和加载项**。
 
 1. **解决方案和加载项**&#x200B;选项卡显示选项，例如Sites、Assets和Screens。 选择&#x200B;**Screens**&#x200B;附加组件选项，如下图所示。
 
-   ![图像](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
+   ![Screens附加组件选项](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
 1. 选择选项后，单击&#x200B;**更新**。
 

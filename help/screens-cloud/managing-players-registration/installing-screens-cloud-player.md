@@ -4,9 +4,9 @@ description: 本页介绍如何在Screensas a Cloud Service中安装和配置播
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 1. 单击“**配置**”选项卡，然后单击“**重置**”选项下的“**到工厂**”按钮。
 
-   ![图像](/help/screens-cloud/assets/player/installplayer-2.png)
+   在“重置”选项下![到“工厂”按钮](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. 单击&#x200B;**确认**&#x200B;以重置播放器。
 
 1. 再次从&#x200B;**配置**&#x200B;选项卡单击&#x200B;**切换运行模式**&#x200B;选项下的&#x200B;**更改为云模式**&#x200B;按钮。
 
-   ![图像](/help/screens-cloud/assets/player/installplayer-1.png)
+   在“切换运行模式”选项下![更改为云模式按钮](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. 单击&#x200B;**确认**&#x200B;在切换到云模式时提示取消注册播放器。
 
