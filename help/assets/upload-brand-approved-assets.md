@@ -3,16 +3,21 @@ title: 将品牌批准的资产上传到 [!DNL Content Hub]
 description: 了解如何将品牌批准的资产上传到Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
+source-wordcount: '958'
+ht-degree: 2%
 
 ---
 
 # 将品牌批准的资产上传到Content Hub {#upload-brand-approved-assets-content-hub}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+>[!CONTEXTUALHELP]
+>id="upload_assets_content_hub"
+>title="将品牌批准的资产上传到Content Hub"
+>abstract="将已批准的资源从本地文件系统添加到Content Hub，或从OneDrive或Dropbox数据源导入资源。 所有资源都显示在Content Hub的顶层，这与文件夹结构无关，这有助于增强搜索功能。"
+
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 有权添加资源的[Content Hub用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以从本地文件系统向Content Hub添加资源，或者从OneDrive或Dropbox数据源导入资源。 所有资源都显示在Content Hub的顶层，这与本地文件系统或OneDrive和Dropbox数据源上可用的文件夹结构无关，以增强搜索功能。
