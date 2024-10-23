@@ -1,22 +1,22 @@
 ---
-title: 用于Edge Delivery Services的WYSIWYG内容创作
+title: 面向Edge Delivery Services的WYSIWYG内容创作
 description: 了解内容创作如何与 Edge Delivery Services 配合使用，以及如何使用 Edge Delivery Services 创作 AEM 内容。
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: f0cb108c620a31c4f8a48f1d2530860ca01b06c3
+source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 69%
+source-wordcount: '452'
+ht-degree: 64%
 
 ---
 
 
-# 用于Edge Delivery Services的WYSIWYG内容创作 {#authoring-edge}
+# 面向Edge Delivery Services的WYSIWYG内容创作 {#authoring-edge}
 
 Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选择来为 Edge Delivery Services 创作内容：
 
-* [通用编辑器](#universal-editor) — 用于在AEM中创作内容的现代“所见即所得”(WYSIWYG) UI
+* [通用编辑器](#universal-editor) — 用于在AEM中创作内容的现代“所见即所得”(WYSIWYG)UI
 * [基于文档的创作](#document-based) - 例如 Microsoft Word 或 Google Docs
 
 ## 通用编辑器创作 {#universal-editor}
@@ -40,9 +40,9 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 区块是 Edge Delivery Services 交付页面的基本组件。作者可以从 Adobe 作为标准提供的默认区块或开发人员为您的项目定制的区块中进行选择。
 
-通用编辑器提供了一个现代且直观的 GUI，用于通过拖放区块来创作内容。
+通用编辑器提供了一个现代且直观的GUI，用于通过添加和排列块来创作内容。
 
-![在通用编辑器中拖放区块](assets/blocks.png)
+![在通用编辑器中添加和排列块](assets/blocks.png)
 
 然后可以在“属性”边栏中配置区块的详细信息。
 
@@ -50,10 +50,10 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 有关如何使用通用编辑器进行创作的详细信息，请参阅文档[使用通用编辑器创作内容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-请参阅[用于Edge Delivery ServicesWYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解如何使用AEM和Edge Delivery Services开始您自己的项目以进行创作。
+请参阅[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解如何使用AEM和Edge Delivery Services开始您自己的项目以进行创作。
 
 ## 其他创作方法  {#authoring-methods}
 
-所见即所得创作是供内容作者使用的功能强大且直观的工具。 但是，存在许多不同的创作用例，这就是AEM提供其他创作解决方案的原因。
+WYSIWYG创作是适用于内容创作的功能强大且直观的工具。 但是，创作用例多种多样，这就是AEM提供其他创作解决方案的原因。
 
 请参阅文档[选择创作方法](/help/edge/authoring-methods.md)，了解有关AEM提供的创作解决方案（包括基于文档的创作和headless）的更多信息。
