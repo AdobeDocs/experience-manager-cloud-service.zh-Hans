@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 05531a5c1eca996bd3652d6ce6233b7a960d0bc9
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1322'
 ht-degree: 7%
 
 ---
@@ -91,7 +91,7 @@ Adobe提供了多个内置的质量关卡，而其他质量关卡则需要您的
 
 为了最大程度地控制特定于客户的开发的风险，Adobe鼓励您将关键UI测试捕获到AEM as a Cloud Service中。 保持这些受限制的体验，但侧重于最大限度地提高它们对客户体验的影响。
 
-测试封装在Docker图像中 — 设计为尽可能易变(支持Cypress、Selenium、Java和JavaScript)。 它们遵循与自定义功能测试相同的特性和目的。
+测试打包到Docker图像中 — 设计为尽可能易变(支持Cypress、Playwright、Selenium、Java和JavaScript)。 它们遵循与自定义功能测试相同的特性和目的。
 
 >[!NOTE]
 >
