@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: b616f85df5211897286cc7031fdff809296ebcd6
+source-git-commit: 9d4c8946dcdf0e175a54a1dcf55513f01e5648aa
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '4114'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 
 由于对图像质量的感知因人而异，因此有时系统地进行实验对于获得理想结果至关重要。 Adobe Experience Manager通过100多条Dynamic Media命令来增强图像，从而帮助实现了这个过程。
 
-想要了解更多信息？ 观看[Dynamic Media快照](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)（3分钟17秒）。
+想要了解更多信息？ 观看[Dynamic Media快照](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)（3分钟17秒）。
 
 要评估这些命令对图像质量的影响，您可以将图像上传到Dynamic Media，使用工具在指定URL处的界面，并应用要尝试的命令。
 
@@ -154,7 +154,7 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 
 最佳做法是使用智能裁剪创建图像配置文件。 在配置文件中，您可以定义各种屏幕大小并让Adobe Sensei完成其余步骤，以确保您的图像和视频始终针对查看者的设备而优化。
 
-想要了解更多信息？ 观看[在AEM Assets Dynamic Media中使用智能裁切](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)（6分钟35秒）和[在视频中使用Dynamic Media智能裁切](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)（6分钟22秒）。
+想要了解更多信息？ 观看[在AEM Assets Dynamic Media中使用智能裁切](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)（6分钟35秒）和[在视频中使用Dynamic Media智能裁切](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)（6分钟22秒）。
 
 ### 改进SEO排名
 
@@ -182,7 +182,7 @@ Dynamic Media与Experience Manager Assets一起支持在用户之间高效地创
 想要了解更多信息？ 转到[使用规则集转换URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)。
 * **智能成像和智能裁切：**
 使用Dynamic Media中的智能成像和智能裁切功能来提供优化且响应式图像。 这样做不仅会缩短页面加载时间，还会对SEO排名产生积极影响。
-想要了解更多信息？ 转到[智能成像](/help/assets/dynamic-media/imaging-faq.md)，或观看[在AEM Assets Dynamic Media中使用智能裁切](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)（6分钟35秒）。
+想要了解更多信息？ 转到[智能成像](/help/assets/dynamic-media/imaging-faq.md)，或观看[在AEM Assets Dynamic Media中使用智能裁切](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)（6分钟35秒）。
 
 请记住，这些最佳实践与Google的图像SEO最佳实践高度一致。 此类实践强调通过适当的命名约定、结构化数据和优化的图像交付为搜索引擎提供上下文和清晰度的重要性。
 
@@ -198,9 +198,9 @@ Dynamic Media提供了一套用于增强图像和动态创建视觉效果的命�
 
 | 任务 | 要做什么 |
 | --- | --- |
-| **上载并发布原始图像** | ·首先，将原始图像上传到Dynamic Media。<br>·确保已发布并通过URL访问。<br>·在此示例中，具有白色背景的手表的库存图像（我们将其称为“图像X”）上传到Dynamic Media。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer) |
-| **创建掩码** | ·开发定义主题（要应用效果的区域）和背景（要更改的区域）的蒙版。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)<br>·蒙版通常是灰度图像，其中白色代表主题，黑色代表背景。 您可以使用Adobe Photoshop等工具创建蒙版。<br>想了解更多信息？ 转到[在Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html)中创建和编辑快速蒙版。<br>·对于“图像X”，请创建一个精确概述要增强的主题的蒙版。 例如，人员、对象等。 |
-| **应用Dynamic Media URL命令以获得效果** | 在蒙版完成后，使用URL命令应用阴影等效果，或将背景颜色更改为“图像X”。 以下是两个示例：<br><br> · **阴影效果：**<br>&#x200B;若要沿着主题边界添加阴影效果，请编辑URL，如下所示：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>在此URL中，`$shadow$`参数将创建阴影效果，`color=0,0,0`将阴影颜色设置为黑色。<br>· **背景颜色更改：**<br>&#x200B;要更改背景颜色，请使用具有不同背景颜色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br>在此示例中，`color=255,255,0`将背景颜色设置为黄色。 将背景编辑为特定颜色以实现视觉效果。 |
+| **上载并发布原始图像** | <ul><li> 首先，将原始图像上传到Dynamic Media。</li><li> 确保已发布并通过URL访问。</li><li> 在此示例中，具有白色背景的手表的库存图像（我们将其称为“图像X”）上传到Dynamic Media。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
+| **创建掩码** | <ul><li> 开发定义主题（要应用效果的区域）和背景（要更改的区域）的蒙版。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> 蒙版通常是灰度图像，其中白色代表主题，黑色代表背景。 您可以使用Adobe Photoshop等工具创建蒙版。<br>想了解更多信息？ 转到[在Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html)中创建和编辑快速蒙版。</li><li> 对于“图像X”，请创建一个精确概述了要增强的主题的蒙版。 例如，人员、对象等。</li></ul> |
+| **应用Dynamic Media URL命令以获得效果** | 在蒙版上后，使用URL命令应用外辉等效果，或将背景颜色更改为“图像X”。 以下是两个示例：<ul><li> **外辉光效果：**<br>&#x200B;若要沿着主体的边界添加外辉光效果，请编辑以下URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>在此URL中，`op_blur`、`op_grow`和`opac`参数将创建外辉光效果。</li><li> **背景颜色更改：**<br>&#x200B;要更改背景颜色，请使用具有不同背景颜色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br>在此示例中，`color=255,255,0`将背景颜色设置为黄色。 将背景编辑为特定颜色以实现视觉效果。</li></ul> |
 
 #### 添加图像边框
 
@@ -222,7 +222,7 @@ Dynamic Media允许您直接通过URL处理图像，使其成为创建动态数�
 | --- | --- |
 | **上载并发布基本映像** | 首先，上载并发布要在其上叠加徽标或图标的基本图像。 您可以使用任何图像作为基础。<br>例如，以下是基本映像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)。 |
 | **上载并发布徽标或图标图像** | 接下来，上传并发布要叠加在基本图像上的图像。 此图像应是透明的PNG，其中应包含要叠加的徽标或图标。<br>下面是即将叠加的具有透明效果的星形对象的透明PNG图像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **应用Dynamic Media URL** | 现在，创建一个Dynamic Media URL，以组合基本图像和徽标或图标图像。 可以使用URL命令达到此效果。<br>URL结构类似于：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>其中资产<br>· `hotspotRetailBaseImage`是基本图像。<br>· `starxp`是徽标/图标图像。<br>· `layer=1`指定徽标或图标应叠加在基本图像上。<br>· `scale=1.25`调整徽标/图标的大小。<br>· `posN=0.33,-.25`确定徽标/图标相对于基本图像的位置。<br>· `fmt=png`确保输出为PNG格式。 |
+| **应用Dynamic Media URL** | 现在，创建一个Dynamic Media URL，以组合基本图像和徽标或图标图像。 可以使用URL命令达到此效果。<br>URL结构类似于：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>资产所在的位置<ul><li> `hotspotRetailBaseImage`是基本映像。</li><li> `starxp`是徽标/图标图像。</li><li> `layer=1`指定徽标或图标应叠加在基本图像上。</li><li> `scale=1.25`调整徽标/图标的大小。</li><li> `posN=0.33,-.25`确定徽标/图标相对于基本图像的位置。</li><li> `fmt=png`确保输出为PNG格式。</li></ul> |
 
 了解更多信息？ 请转到[src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)以了解有关`src`命令和其他Dynamic Media URL命令的更多详细信息。
 
