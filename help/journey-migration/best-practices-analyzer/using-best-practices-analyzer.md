@@ -4,9 +4,9 @@ description: 了解如何使用Best Practices Analyzer了解升级准备情况�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
+source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2701'
 ht-degree: 39%
 
 ---
@@ -73,45 +73,43 @@ ht-degree: 39%
 
 1. 选择Adobe Experience Manager并导航到工具> **操作** > **最佳实践分析器**。
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![最佳实践分析器](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. 单击&#x200B;**生成报告**&#x200B;以执行最佳实践分析器。
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![生成报告](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. 提供BPA上传密钥，以自动将生成的BPA报告上传到[Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md)。 要获取上传密钥，请导航到CAM中的[最佳实践分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![设置BPA上传密钥](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >您可以通过选择&#x200B;**跳过报告自动上载到CAM**&#x200B;来选择跳过自动上载到CAM。 如果您选择跳过，则需要手动下载BPA报告作为逗号分隔值文件，然后在CAM中上传该文件。 建议使用上传密钥选项，因为它可简化操作。
 
 1. 提供有效密钥后，**生成**&#x200B;按钮将变为活动状态。 单击&#x200B;**生成**&#x200B;以启动报告生成。
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
-
+   ![生成报告](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
 1. 在BPA生成报告时，您可以在屏幕上看到该工具取得的进展。 它按完成百分比显示进度。 它还会显示分析的项目数以及找到的结果数。
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![正在生成报告](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
 >BPA上传密钥到期时间戳显示在右上角。 您应在BPA上传密钥即将到期时续订该密钥。 若要续订密钥，您可以单击&#x200B;**续订**&#x200B;以导航到CAM来续订密钥。
 
 1. 生成BPA报告后，它以表格形式显示调查结果的摘要和数量，按调查结果类型和重要性级别进行整理。 要获取有关特定发现结果的更多详细信息，您可以单击与表中发现结果类型对应的数字。
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![报告概述](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. 您可以通过单击&#x200B;**导出到CSV**，选择下载逗号分隔值(CSV)格式的报表。 您还可以通过单击&#x200B;**转到CAM**&#x200B;在CAM中查看报告。 这将带您进入CAM中的[最佳实践分析](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)页面。
 
 您可以通过单击&#x200B;**刷新报告**，强制BPA清除其缓存并重新生成报告。
 
-![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
-
+![刷新报告](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. 如果缓存过期，您可以选择在CAM中查看上次生成的报告，方法是单击&#x200B;**在CAM中查看上次生成的报告**，或者单击&#x200B;**生成新报告**&#x200B;启动新的报告生成。
 
-![图像](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
+![无报告](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
 #### 在最佳实践分析器报告中使用过滤器 {#bpa-filters}
@@ -120,14 +118,14 @@ ht-degree: 39%
 
 1. 单击页面左侧的左边栏图标。 这将显示&#x200B;**ACS Commons筛选器**。 单击&#x200B;**ACS Commons Filter**&#x200B;以显示交互式复选框，如下图所示。
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![ACS Commons筛选器](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >仅当BPA检测到使用了ACS Commons时，才会显示左边栏图标。
 
 1. 取消选中该框可筛选掉所有与ACS Commons相关的发现。 您应该会在报表中看到&#x200B;**已过滤的发现结果计数**，如下图所示。 当以逗号分隔值(CSV)格式导出时，也会将该过滤器应用于报表。
 
-   ![图像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![已过滤的发现结果计数](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >不应忽略ACS Commons调查结果。 请参阅[文档](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)以确定与AEM as a Cloud Service的兼容性。

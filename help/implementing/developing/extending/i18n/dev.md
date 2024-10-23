@@ -1,17 +1,17 @@
 ---
-title: 国际化UI字符串
+title: 国际化 UI 字符串
 description: Java&amp；trade；和JavaScript API使您能够国际化字符串
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
 
-# 国际化UI字符串 {#internationalizing-ui-strings}
+# 国际化 UI 字符串 {#internationalizing-ui-strings}
 
 Java™和JavaScript API使您能够国际化以下资源类型中的字符串：
 
@@ -174,7 +174,7 @@ UI字符串通常基于JCR节点属性。 例如，页面的`jcr:title`属性通
 
 下图显示了AEM主页的存根翻译：
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+AEM主页的![存根翻译](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 要为用户设置语言，请为用户帐户配置首选项节点的语言属性。
 

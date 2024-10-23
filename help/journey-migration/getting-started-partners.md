@@ -4,10 +4,10 @@ description: 面向合作伙伴的 Experience Manager as a Cloud Service 迁移�
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7c704aa09ae4a6a3368b1eccb12982360a3350b3
 workflow-type: tm+mt
-source-wordcount: '1464'
-ht-degree: 22%
+source-wordcount: '1472'
+ht-degree: 17%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 22%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#" text="新增功能和不同功能"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html#" text="AEM as a Cloud Service 简介。"
 
-Adobe Experience Manager (AEM) as a Cloud Service为Experience Manager提供了一个重新构建的基础，它基于基于容器基础架构、API驱动开发和引导式DevOps流程构建，使营销人员和开发人员能够在客户体验管理创新中始终保持领先。
+Adobe Experience Manager (AEM) as a Cloud Service提供了更新的Experience Manager架构。 这一基础是基于容器基础结构、API驱动的开发和引导式DevOps过程而构建的。 这使营销人员和开发人员能够在客户体验管理创新中保持领先。
 
-Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展性与现代云原生架构的灵活性结合在一起，使品牌能够满足不断变化的消费者需求。
+Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展性与现代云原生架构的灵活性相结合，使品牌能够满足不断变化的消费者需求。
 
-这份单页宣传材料概述了推荐的分阶段方法，用于将客户从各种 Experience Manager 部署过渡到 Experience Manager as a Cloud Service，并帮助现有客户在这个专门构建的现代化体验管理平台上提供无中断的互联体验。
+此页概述了建议的分阶段方法，用于将客户从以前的Experience Manager部署过渡到Experience Manageras a Cloud Service。 这个专门构建的全新平台可帮助您提供紧密联系、连续的体验。
 
 <!-- It primarily focuses on:
 * Getting Started with Adobe Experience Manager as a Cloud Service
@@ -33,7 +33,7 @@ Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展�
 
 有关迁移历程的一般描述，请参阅下图。
 
-![图像](/help/journey-migration/assets/migration-process.png)
+![迁移历程的一般表示形式](/help/journey-migration/assets/migration-process.png)
 
 ## Adobe Experience Manager as a Cloud Service快速入门 {#getting-started}
 
@@ -49,9 +49,9 @@ Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展�
 
 ### 开发
 
-与Adobe Experience Manager as a Cloud Service内部部署和Adobe Experience Manager解决方案相比，Managed Services中的代码开发基础是相似的。
+Adobe Experience Manager as a Cloud Service中的代码开发基础与Adobe Experience Manager内部部署和Managed Services解决方案中的基础类似。
 
-开发人员编写代码并在本地对其进行测试，然后将该代码推送到远程Adobe Experience Manager as a Cloud Service环境。
+开发人员编写代码并在本地对其进行测试，然后将其推送到远程Adobe Experience Manager as a Cloud Service环境。
 
 请参阅有关Experience Manageras a Cloud Service实施的自助资源，以了解如何自定义Experience Manageras a Cloud Service部署。
 
@@ -60,13 +60,13 @@ Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展�
 | <ol><li>查看[Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)文档以了解更多信息。</li><li>观看[安装Dispatcher SDK](https://video.tv.adobe.com/v/30601)，了解如何安装Dispatcher SDK</li><li>观看[配置Dispatcher SDK](https://video.tv.adobe.com/v/30602)，了解如何配置Dispatcher SDK</li><li>查看[本地开发设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up)文档以了解详情</li><li>正在配置对Experience Manager[演练](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html#accessing)的访问权限</li></ol> | <ol><li>[开发要点](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)</li><li>[开发准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)</li><li>[了解Experience Manager项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)</li><li>[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)</li><li>[Digital Foundation Blueprint](https://solutionpartners.adobe.com/content/dam/solution/en/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[样式系统](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)</li><li>[叠加](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manageras a Cloud ServiceAPI引用](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/)</li></ol> |
 
 >[!TIP]
-> 请参阅教程，了解如何[在本地Experience ManagerSDK上开发和部署WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
+> 请参阅教程，了解如何[在本地Experience ManagerSDK上开发和部署WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-hans)
 
 ### 正在部署
 
-开发人员编写代码并在本地对其进行测试，然后将该代码推送到远程AEM as a Cloud Service环境。
+开发人员编写代码并在本地对其进行测试，然后将其推送到远程AEM as a Cloud Service环境。
 
-需要使用 Cloud Manager，它是 Managed Services 的一个可选内容交付工具。现在，这是用于将代码部署到 AEM as a Cloud Service 环境的唯一机制。
+Cloud Manager以前是Managed Services的可选内容交付工具，现在需要它。 它是将代码部署到AEM as a Cloud Service环境的唯一机制。
 
 请参阅有关如何配置和部署到AEM as a Cloud Service环境的自助资源。
 
@@ -83,7 +83,7 @@ Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展�
    * [备份和恢复](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html)
 
 >[!TIP]
-> 请参阅教程，了解如何[将WKNDExperience Manager Cloud Service到](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
+> 请参阅教程，了解如何[将WKNDExperience Manager Cloud Service到](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-hans)
 
 ### 帮助及资源
 
@@ -118,13 +118,17 @@ Cloud Service将Adobe Experience Manager的丰富开箱即用功能和可扩展�
 
 下图显示了推荐的过渡到Cloud Service历程的高级呈现。
 
-![图像](/help/journey-migration/assets/home-img1.png)
+![推荐的过渡到Cloud Service历程的高级呈现](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
 ### 规划
 
-在开始过渡到Cloud Service的过程之前，您应该熟悉Experience Manageras a Cloud Service，并查看已对它所做的显着更改以及已替换或已弃用的功能。
+在开始过渡到Cloud Service的过程之前，您应：
+
+* 熟悉Experience Manageras a Cloud Service
+* 查看对其做出的显着更改
+* 查看已替换或已弃用的功能
 
 <table>
 <tr>
@@ -163,7 +167,7 @@ Cloud Manager使组织能够在云中自行管理Experience Manager。 它包含
 
 | 快速入门 | 审查并重构代码 | Dispatcher审核 |
 |---|---|---|
-| <ul><li>[本地开发设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up)</li><li>[本地Dispatcher安装程序](https://video.tv.adobe.com/v/30602/)</li><li>[使用SDK API jar编译代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)</li><li>[查看AEM开发准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)<ul><li>后台任务和长时间运行的作业</li><li>Sling调度程序</li><li>输入流使用情况等</li></ul></li></ul> | <ul><li>在源环境中运行[Best Practices Analyzer (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html#)。[**仅迁移**]<ul><li>项目结构化的注意事项（基于[云原型](https://github.com/adobe/aem-project-archetype)）<ul><li>代码和内容分离（可变与不可变）</li><li>[自定义索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)</li><li>[自定义运行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)</li></ul></li></ul></li><li>审核并执行必要的更改</li><li>在本地SDK上[部署](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)</li><li>通过AEM SDK执行烟雾测试</li></ul> | <ul><li>查看[Dispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html)以进行重构</li><li>在适当的时候使用[Dispatcher Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/dispatcher-transformation-utility-tools.html)工具。 [**仅迁移**]</li><li>可以使用[Dispatcher SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)进行测试</li></ul> |
+| <ul><li>[本地开发设置](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up)</li><li>[本地Dispatcher安装程序](https://video.tv.adobe.com/v/30602/)</li><li>[使用SDK API jar编译代码](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)</li><li>[查看AEM开发准则](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)<ul><li>后台任务和长时间运行的作业</li><li>Sling调度程序</li><li>输入流使用情况等</li></ul></li></ul> | <ul><li>在源环境中运行[Best Practices Analyzer (BPA)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html#)。[**仅迁移**]<ul><li>项目结构化的注意事项（基于[云原型](https://github.com/adobe/aem-project-archetype)）<ul><li>代码和内容分离（可变与不可变）</li><li>[自定义索引定义](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)</li><li>[自定义运行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)</li></ul></li></ul></li><li>审核并执行必要的更改</li><li>在本地SDK上[部署](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-hans)</li><li>通过AEM SDK执行烟雾测试</li></ul> | <ul><li>查看[Dispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html)以进行重构</li><li>在适当的时候使用[Dispatcher Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/dispatcher-transformation-utility-tools.html)工具。 [**仅迁移**]</li><li>可以使用[Dispatcher SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)进行测试</li></ul> |
 
 >[!TIP]
 > Assets客户：使用[Asset Cloud迁移](https://github.com/adobe/aem-cloud-migration)工具查看和重构Assets工作流

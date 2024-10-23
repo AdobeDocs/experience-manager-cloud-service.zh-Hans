@@ -4,9 +4,9 @@ description: 确保您的代码和内容已准备好迁移到云
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2288'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ Cloud Manager 使组织能够在云中自行管理 AEM。它包含一个持续�
 
 下图显示了此阶段涉及的主要步骤，其中涉及转换代码和内容以用于AEM as a Cloud Service：
 
-![图像](/help/journey-migration/assets/exec-image1.png)
+![转换步骤](/help/journey-migration/assets/exec-image1.png)
 
 我们将在以下章节中开始详细介绍您必须使用的工具，以便您能够实现这一点。
 
@@ -217,7 +217,7 @@ One more important datapoint is the amount of time it takes to complete the [use
 
 以下部分显示了可用于制定内容迁移策略和时间线的重要步骤和相关任务。
 
-![图像](/help/journey-migration/assets/content-migration2.png)
+![制定迁移策略的步骤](/help/journey-migration/assets/content-migration2.png)
 
 ### 设备 {#fitment}
 

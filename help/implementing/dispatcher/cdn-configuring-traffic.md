@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 6ea53e6b2b009895dccf99ac0265dc42b68db509
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1341'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 在功能上，前面提到的各种功能将按照以下顺序进行评估：
 
-![图像](/help/implementing/dispatcher/assets/order.png)
+![评估顺序](/help/implementing/dispatcher/assets/order.png)
 
 ## 设置 {#initial-setup}
 
