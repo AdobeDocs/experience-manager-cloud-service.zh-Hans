@@ -19,7 +19,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion"
 >title="内容引入"
 >abstract="引入是指将内容从迁移集引入到目标 Cloud Service 实例中。内容传输工具具备支持差异内容增补的功能，借助该功能，您可以仅传输自上次内容传输活动以来所做的更改。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="增补提取"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="增补提取"
 
 请按照以下步骤使用Cloud Acceleration Manager摄取迁移集：
 
@@ -94,7 +94,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion_topup"
 >title="增补引入"
 >abstract="使用增补功能移动自上次内容转移活动以来修改的内容。引入完毕后，检查日志中是否有任何错误或警告。应立即通过处理所报告的问题或联系 Adobe 客户服务而纠正任何错误。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="查看日志"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="查看日志"
 
 内容传输工具具备允许通过执行迁移集的&#x200B;*增补*&#x200B;来提取差异内容的功能。 这样可修改迁移集，使其仅包含自上次提取以来已更改的内容，而无需再次提取所有内容。
 
@@ -113,7 +113,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="内容摄取故障排除"
 >abstract="请参阅摄取日志和文档以查找针对摄取失败常见原因的解决方案并查找解决该问题的方法。修复后即可再次运行摄取。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="验证内容转移"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="验证内容转移"
 
 ### CAM无法检索迁移令牌 {#cam-unable-to-retrieve-the-migration-token}
 
@@ -174,7 +174,7 @@ ht-degree: 12%
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="违反唯一性约束"
 >abstract="非擦除引入失败的常见原因是节点 ID 冲突。冲突节点只能存在一个。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="追加数据引入"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="追加数据引入"
 
 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)失败的常见原因是节点ID中存在冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
@@ -194,7 +194,7 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="无法删除引用的节点"
 >abstract="非擦除引入失败的常见原因是目标实例上特定节点的版本冲突。必须修复节点的版本。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="追加数据引入"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="追加数据引入"
 
 [增补摄取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)失败的另一个常见原因是目标实例上特定节点的版本冲突。 要识别此错误，请使用Cloud Acceleration Manager UI下载摄取日志，并查找如下条目：
 
@@ -212,7 +212,7 @@ AEM中的每个节点都必须具有一个唯一的uuid。 此错误表示正在
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="大节点属性"
 >abstract="引入失败的常见原因是节点属性值超过了最大值。请遵循文档（包括与 BPA 报告相关的文档）来纠正这种情况。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="迁移先决条件"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="迁移先决条件"
 
 MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支持的大小，摄取将失败，并且日志将包含以下任一值：
 
