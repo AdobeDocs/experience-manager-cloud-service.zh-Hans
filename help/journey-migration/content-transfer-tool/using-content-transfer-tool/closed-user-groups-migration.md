@@ -6,10 +6,10 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+source-git-commit: c721a8db801602389822222b08ca4ea1fd2293e4
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 12%
+source-wordcount: '303'
+ht-degree: 13%
 
 ---
 
@@ -31,8 +31,9 @@ ht-degree: 12%
 要在AEM as a Cloud Service中使用CUG，用户必须位于创作实例上并且是相关CUG组的成员。  这可以使用包完成，或者，如果CUG用户是IMS用户，则它们可能已存在。  然后，CUG用户必须成为AEM CUG组的成员。
 
 要在Publish实例上启用CUG行为，
-1. 必须激活CUG组(这会将它们及其成员复制到Publish实例)，并且
-1. 必须发布受CUG策略保护的页面(这可以启用Publish实例并跟踪策略)。
+1. 必须激活CUG组(这会将它们及其成员复制到Publish实例)，
+1. 必须取消发布受CUG策略保护的所有&#x200B;*页面（以清除全局CUG计数），并且*
+1. 随后，必须发布受CUG策略保护的页面(这可以启用Publish实例并跟踪策略)。
 1. 发布所有页面后，验证每个受CUG保护的页面的功能。
 
 有关其他信息，请参阅[已关闭的用户组](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html#)。
