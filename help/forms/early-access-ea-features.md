@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 681121c98f61f045702a7d9c2ffad1473d7f5b2a
+source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 22%
+ht-degree: 30%
 
 ---
 
@@ -27,23 +27,23 @@ AEM Forms抢先体验计划为您提供了一个独特的机会，让您抢在�
 
 ## 抢先体验创新
 
-### AEM Forms创成人工智能(Gen AI)
+### AEM Forms人工智能助理(Gen AI)
 
-自适应Forms的创作AI为您的表单开发过程带来了全新级别的功能和便利性。 借助智能人工智能功能，您可以以前所未有的速度构建更好的表单。
+自适应表单的生成式 AI 为您的表单开发流程带来了全新的强大功能和便捷性。借助智能人工智能功能，您可以以前所未有的速度构建更好的表单。
 
-![创作AI助手，自适应Forms](/help/forms/assets/generative-ai-assistant.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-提供的创作AI功能包括：
+通过AEM Forms AI Assistant提供的创作AI功能包括：
 
-* **产品查询AI助手**：即时获取您的AEM表单相关问题的答案。 我们的AI助手将充当您自己的个人知识库，直接在平台上提供富有洞察力的指导和建议。
+* **产品查询 AI 助手**：立即获得与 AEM 表单相关的问题的答案。我们的AI助手将充当您自己的个人知识库，直接在平台上提供富有洞察力的指导和建议。
 
-* **自适应表单生成**：轻松创建具有生成AI提示的完整表单。 我们的创作AI会自动生成用户友好的表单，从而减少流失并个性化体验。
+* **生成自适应表单**：使用生成式 AI 提示轻松创建完整的表单。我们的生成式 AI 会自动生成易于用户使用的表格，从而减少流失率，并提供个性化的体验。
 
 * 为Forms生成&#x200B;**面板**：让AI完成繁重的工作。 生成根据特定数据收集需求定制的预建表单面板。 例如，生成用于收集付款信息、客户偏好设置或旅行详细信息的部分。 节省时间并确保与预定义布局和功能的一致性。
 
-* **更改表单布局**：使用创作AI提示试验不同的布局和设计。 尝试使用向导或选项卡式视图等不同的布局，以找到最适合您的表单的布局。 使用创作AI提示优化表单以实现移动响应并创建用户喜爱的具有视觉吸引力的表单。
+* **更改表单布局**：使用生成式 AI 提示尝试使用不同的布局和设计。尝试不同的布局（如向导或选项卡视图），找到最适合您的表单的布局。使用生成式 AI 提示来优化您的表单，以实现移动响应能力，并创建用户喜爱的具有视觉吸引力的表单。
 
-* **配置提交操作**：使用生成AI提示轻松配置表单的提交操作。 从预建提交操作库或由您自己的开发团队创建和部署的自定义提交操作列表中进行选择。
+* **配置提交操作**：使用生成式 AI 提示轻松为您的表单配置提交操作。从预先构建的提交操作库或由您自己的开发团队创建和部署的自定义提交操作列表中进行选择。
 
 
 ### AEM Forms Workfront Fusion连接器
@@ -74,9 +74,9 @@ AEM Forms Workfront Fusion连接器支持Adobe Experience Manager (AEM) Forms与
 对话式Forms不仅仅是一种新外观，它还是改变用户体验的一种方式。  提升参与度，减少表单放弃，并使与您的网站互动成为每个人都更愉快的体验。
 
 
-### 用于Edge Delivery Services的WYSIWYG创作
+### 面向Edge Delivery Services的WYSIWYG创作
 
-所见即所得创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，用于构建自适应表单并将其发布到Edge Delivery Services。 WYSIWYG创作提供了[基于文档的创作](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及多种其他功能：
+WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，用于构建自适应表单并将其发布到Edge Delivery Services。 WYSIWYG创作提供了[基于文档的创作](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及多种其他功能：
 
 * 用于创建复杂逻辑的高级规则编辑器。
 * 自定义功能的服务器端可扩展性。
@@ -135,10 +135,10 @@ AEM Forms 提供多种验证码选项，您可以选择最适合您特定需求�
 
 您是否准备将这些验证码解决方案中的任意一个与您的自适应表单集成？我们的文档为每种验证码解决方案提供了详细的说明：[Cloudflare Turnstile](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components)、[hCaptcha](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) 和 [Google reCAPTCHA](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)。
 
-### 文档保证API
+### 文档Assurance API
 
 
-AEM Forms文档保证API是AEM FormsCloud Service通信API中的一组工具，它允许您管理PDF文档的安全性和用户交互。
+AEM Forms Doc Assurance API是AEM FormsCloud Service通信API中的一组工具，它允许您管理PDF文档的安全性和用户交互。
 
 以下是Doc Assurance API功能的划分信息：
 
@@ -152,7 +152,7 @@ AEM Forms文档保证API是AEM FormsCloud Service通信API中的一组工具，�
 
   当PDF文档添加了相应的使用权限时，收件人可以从Adobe Reader中执行启用的活动。
 
-总体而言，[文档保证API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/)通过添加额外的控制层，帮助您提高文档安全性和合规性。
+总体而言，[Doc Assurance API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/)通过添加额外的控制层，帮助您提高文档安全性和合规性。
 
 
 ### Forms服务API
