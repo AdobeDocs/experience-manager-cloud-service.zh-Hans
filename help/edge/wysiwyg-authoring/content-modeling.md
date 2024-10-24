@@ -4,10 +4,10 @@ description: 了解内容建模如何用于WYSIWYG创作和Edge Delivery Service
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 83%
+source-wordcount: '2196'
+ht-degree: 80%
 
 ---
 
@@ -608,20 +608,7 @@ Edge Delivery Services 的内容模型有意只允许单级嵌套，即部分包
 
 可以在 AEM as a Cloud Service 中以类似表格的方式定义每个路径或每个路径模式的元数据。有一个可用于类似 Excel 或 Google Sheets 的表格数据的创作 UI。
 
-要创建此类表，请创建一个页面并使用 Sites 控制台中的元数据模板。
-
-在电子表格的页面属性中，定义所需的元数据字段以及 URL。然后添加每个页面路径或页面路径模式的元数据。
-
-在发布之前，请确保也已将电子表格添加到您的路径映射中。
-
-```json
-{
-  "mappings": [
-    "/content/site/:/",
-    "/content/site/metadata:/metadata.json"
-  ]
-}
-```
+有关详细信息，请参阅文档[使用电子表格管理表格式数据](/help/edge/wysiwyg-authoring/tabular-data.md)。
 
 ### 页面属性 {#page-properties}
 
@@ -631,7 +618,7 @@ AEM 中提供的许多默认页面属性都映射到文档中相应的页面元�
 * 文档最后发布的时间为 `published-time`（ISO8601 格式）
 * `cq:tags` as `cq-tags`作为逗号分隔标记 ID 列表。
 
-还可以为自定义页面元数据定义组件模型，作者可以将其作为 AEM Sites 页面属性对话框的选项卡使用。
+也可以为自定义页面元数据定义组件模型，作者可在通用编辑器中使用该模型。
 
 为此，请使用 ID `page-metadata` 创建组件模型。
 

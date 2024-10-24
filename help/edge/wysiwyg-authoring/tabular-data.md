@@ -4,10 +4,10 @@ description: 了解如何使用电子表格来管理各种值的表格数据，�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 95%
+source-wordcount: '1014'
+ht-degree: 92%
 
 ---
 
@@ -101,6 +101,10 @@ ht-degree: 95%
      ]
    }
    ```
+
+   >[!NOTE]
+   >
+   >此`paths.json`条目基于使用表格数据创建重定向的示例。 请确保更新适合您正在创建的[类型电子表格的路径。](#other)
 
 1. 单击“**提交更改...**”将更改保存到 `main`。
 
