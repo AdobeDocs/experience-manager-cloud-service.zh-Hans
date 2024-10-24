@@ -1,13 +1,13 @@
 ---
 title: 使用内容片段(Assets — 内容片段)
-description: 了解Adobe Experience Manager (AEM) as a Cloud Service中的内容片段如何让您设计、创建、策划和使用独立于页面的内容，非常适用于页面创作和headless投放。 以及它们如何与MSM结合使用。
+description: 了解Adobe Experience Manager (AEM) as a Cloud Service中的内容片段如何让您设计、创建、策划和使用内容，非常适用于页面创作和headless投放。
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2220'
 ht-degree: 59%
 
 ---
