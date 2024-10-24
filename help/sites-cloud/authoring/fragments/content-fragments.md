@@ -1,24 +1,24 @@
 ---
 title: 内容片段
-description: Adobe Experience Manager as a Cloud Service 内容片段允许您设计、创建、策划和使用独立于页面的内容
+description: Adobe Experience Manager as a Cloud Service内容片段允许您设计、创建、策划和使用独立于渠道的内容，这些内容也可在创作页面时使用。
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 99%
+source-wordcount: '1267'
+ht-degree: 90%
 
 ---
 
 # 内容片段 {#content-fragments}
 
-Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为独立于页面的资源创建和管理的](/help/sites-cloud/administering/content-fragments/overview.md)。
+Adobe Experience Manager (AEM) as a Cloud Service中的内容片段是[作为独立于页面的资产创建和管理的](/help/sites-cloud/administering/content-fragments/overview.md)，允许您创建渠道中性内容以及（特定于渠道的）变量。 您可以在创作内容页面时使用这些片段及其变体。
 
-这允许您创建渠道中性内容，以及各种（特定于渠道的）变体。您随后可以在创作内容页面时使用这些片段及其变体。
-
-结构化内容片段与更新的 JSON 导出程序结合使用时，还可用于通过 Content Services 将 AEM 内容传送到 AEM 页面以外的渠道。
+>[!CAUTION]
+>
+>本页必须结合[使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md)（及相关页面）一起阅读，因为它介绍了基本术语和概念，以及有关创建和管理片段，以及将结构化内容片段交付到AEM页面以外的渠道的信息。
 
 >[!NOTE]
 >
@@ -39,11 +39,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段是[作为�
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
-
->[!CAUTION]
->
->本页必须结合[使用内容片段](/help/sites-cloud/administering/content-fragments/overview.md)（及相关页面）一起阅读，因为它不仅介绍了基本术语和概念，还介绍了如何创建和管理片段。
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)
 
 内容片段允许：
 
