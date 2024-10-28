@@ -6,16 +6,16 @@ exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
 source-git-commit: 54300b9f27f1092a491820ab5279ee1633c6d53d
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
-# 将品牌批准的资产上传到Content Hub {#upload-brand-approved-assets-content-hub}
+# 将品牌认可的资产上传至 Content Hub {#upload-brand-approved-assets-content-hub}
 
 >[!CONTEXTUALHELP]
 >id="upload_assets_content_hub"
->title="将品牌批准的资产上传到Content Hub"
->abstract="将已批准的资源从本地文件系统添加到Content Hub，或从OneDrive或Dropbox数据源导入资源。 所有资源都显示在Content Hub的顶层，这与文件夹结构无关，这有助于增强搜索功能。"
+>title="将品牌认可的资产上传至 Content Hub"
+>abstract="从本地文件系统将批准的资产添加到 Content Hub，或者从 OneDrive 或 Dropbox 数据源导入资产。无论文件夹结构如何，所有资产都会显示在 Content Hub 的顶层，以增强搜索功能。"
 
 | [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
