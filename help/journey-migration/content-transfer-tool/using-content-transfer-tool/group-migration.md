@@ -2,9 +2,9 @@
 title: 群组迁移
 description: AEM as a Cloud Service中的组迁移概述。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
+source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1447'
 ht-degree: 4%
 
 ---
@@ -46,6 +46,8 @@ AEM as a Cloud Service的一项重大更改是完全集成使用AdobeID来访问
 
 大多数迁移的组都配置为由IMS管理。  这意味着IMS中具有相同名称的组将链接到AEM中的组，并且IMS组中的任何IMS用户都将成为AEM中的AEM用户和组的成员。  这允许这些用户根据组的ACL或CUG策略访问内容。
 
+请注意，迁移的组不再被视为“本地组”；它们是IMS组，必须在IMS中重新创建它们，以便它们可以在AEM和IMS之间同步。  可以在IMS中通过Admin Console及其他方法单独或批量创建组。  有关在Admin Console上单独或批量创建组的详细信息，请参阅[管理用户组](https://helpx.adobe.com/ca/enterprise/using/user-groups.html)。
+
 此IMS配置的例外情况是Assets收藏集创建的组。 在AEM上创建收藏集后，将创建组以访问该收藏集；此类组将迁移到云系统，但不会配置为由IMS管理。  要将IMS用户添加到这些组，必须在Assets UI的“组属性”页面中单独或集体地将这些用户添加为其他IMS组的一部分。
 
 
@@ -53,7 +55,7 @@ AEM as a Cloud Service的一项重大更改是完全集成使用AdobeID来访问
 
 CTT版本3.0.20及更高版本包含用于禁用组迁移的选项。  此操作在OSGI控制台中进行配置，如下所示：
 
-* 打开OSGI配置`(http://<server> /system/console/configMgr)`
+* 打开OSGI配置`(http://<server>/system/console/configMgr)`
 * 单击名为&#x200B;**内容传输工具提取服务配置**&#x200B;的配置
 * 取消选中&#x200B;**在迁移中包含组**&#x200B;以禁用组迁移
 * 单击&#x200B;**保存**&#x200B;以确保配置在服务器上已保存并处于活动状态
@@ -73,7 +75,9 @@ CTT版本3.0.20及更高版本包含用于禁用组迁移的选项。  此操作
 
 这些情况可以同时发生，并且与前几个情况相同。
 
-用户报告添加到主体迁移报告的末尾（因此是其中的一部分）（请参阅下面的[最终摘要和报告](#final-summary-and-report)）。
+用户报告添加到主体迁移报告的末尾（因此是其中的一部分）（请参阅下面的[最终摘要和报告](#final-summary-and-report)）。  此报告中的信息（包括为每个用户报告的组）可用于创建批量用户上传文件，该文件可用于Admin Console以批量创建IMS中的多个用户。  现有IMS用户也可以批量编辑。
+
+查看[管理多个用户 | 批量CSV上传](https://helpx.adobe.com/ca/enterprise/using/bulk-upload-users.html)，了解有关通过Admin Console批量创建或编辑用户的详细信息。
 
 ## 其他注意事项 {#additional-considerations}
 
