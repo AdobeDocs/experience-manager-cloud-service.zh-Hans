@@ -4,9 +4,9 @@ description: 了解如何使用配置管道来部署各种配置AEM as a Cloud S
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标环境。 通过这种方式，可以配置AEM as a Cloud Service中的许多功能，包括日志转发、清除相关的维护任务和几个CDN功能。
 
-配置管道可以通过Cloud Manager部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。 不支持RDE。
+配置管道可以通过Cloud Manager部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。 配置文件可以使用[命令行工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署到快速开发环境(RDE)。
 
 本文档的以下部分概述了有关如何使用配置管道以及如何为其构建配置的重要信息。 它描述了在配置管道支持的所有功能或功能子集之间共享的一般概念。
 
@@ -53,6 +53,9 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 有关如何创建和配置管道的信息，请参阅文档[CI/CD管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
 
 在Cloud Manager中创建配置管道时，请确保在配置管道时选择&#x200B;**目标部署**，而不是&#x200B;**全栈代码**。
+
+如前所述，RDE的配置是使用[命令行工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)而不是管道部署的。
+
 
 ## 通用语法 {#common-syntax}
 

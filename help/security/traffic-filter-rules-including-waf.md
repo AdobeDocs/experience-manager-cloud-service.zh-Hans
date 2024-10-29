@@ -4,10 +4,10 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cf9e1b3c290d142095912c794de58547913faece
-workflow-type: ht
-source-wordcount: '4012'
-ht-degree: 100%
+source-git-commit: 51c54d29f998d4c5fcd6ff2e5139638c495955b3
+workflow-type: tm+mt
+source-wordcount: '4019'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 流量过滤规则的子类别需要“增强安全性”许可证或“WAF-DDoS 保护”许可证。这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
 
-可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。未来还将支持 RDE。
+可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。配置文件可使用命令行工具部署到快速开发环境(RDE)。
 
 [按照教程进行操作，](#tutorial)快速建立有关此功能的具体专业知识。
 

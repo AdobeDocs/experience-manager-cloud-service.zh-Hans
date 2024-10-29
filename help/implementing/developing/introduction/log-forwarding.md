@@ -4,7 +4,7 @@ description: 了解如何在AEM as a Cloud Service中将日志转发给Splunk和
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
+source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 0%
@@ -63,7 +63,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 1. 将文件放置在名为&#x200B;*config*&#x200B;或类似的顶级文件夹下，如[使用配置管道](/help/operations/config-pipeline.md#folder-structure)中所述。
 
-1. 对于RDE以外的环境类型（当前不支持），在Cloud Manager中创建目标部署配置管道，如[此部分](/help/operations/config-pipeline.md#creating-and-managing)所引用；请注意，全栈管道和Web层管道不部署配置文件。
+1. 对于RDE（使用命令行工具）以外的环境类型，在Cloud Manager中创建目标部署配置管道，如[此部分](/help/operations/config-pipeline.md#creating-and-managing)所引用；请注意，全栈管道和Web层管道不部署配置文件。
 
 1. 部署配置。
 

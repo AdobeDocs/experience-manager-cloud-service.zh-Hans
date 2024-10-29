@@ -4,9 +4,9 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
-source-wordcount: '4794'
+source-wordcount: '4863'
 ht-degree: 3%
 
 ---
@@ -277,7 +277,7 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 
 您可以找到下面的一些示例：
 
-<u>部署内容包</u>
+#### 部署内容包 {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 >
 >WKND项目的Dispatcher配置不会通过上述内容包安装进行部署。 按照“部署Apache/Dispatcher配置”步骤单独部署它。
 
-<u>部署OSGI配置</u>
+#### 部署OSGI配置 {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>部署捆绑包</u>
+#### 部署捆绑包 {#deploy-bundle}
 
 要部署捆绑包，请使用：
 
@@ -324,7 +324,7 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>部署内容文件</u>
+#### 部署内容文件 {#deploy-content-file}
 
 要部署内容文件，请使用：
 
@@ -337,7 +337,7 @@ RDE一次支持一个项目。 由于代码从本地开发环境同步到RDE环�
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>部署Apache/Dispatcher配置</u>
+#### 部署Apache/Dispatcher配置 {#deploy-apache-config}
 
 对于此类配置，整个文件夹结构必须采用zip文件的形式。
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 上述代码示例说明了捆绑包无法解析时的行为。 在这种情况下，它是“暂存”的，并且仅在通过安装其他代码来满足其要求（在本例中缺少导入）时才进行安装。
+
+#### 部署与配置管道相关的配置（yaml配置） {#deploy-config-pipeline}
+
+可以按如下方式部署项目[使用配置管道](/help/operations/config-pipeline.md)中描述的特定于环境的配置（一个或多个yaml文件）：
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+其中，my-config-folder是包含yaml配置的父文件夹。
+
+或者，也可以安装包含配置文件夹树的zip文件：
+
+`aio aem:rde:install -t env-config config.zip`
+
+请注意，yaml文件的envTypes数组应包含值&#x200B;*rde*，如以下示例所示：
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### 根据站点主题和站点模板部署前端代码 {#deploying-themes-to-rde}
 
