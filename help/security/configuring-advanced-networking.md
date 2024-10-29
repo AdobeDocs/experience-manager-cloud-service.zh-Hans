@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5657'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -563,7 +563,7 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 ### 对配置非常有用的域 {#vpn-useful-domains-for-configuration}
 
-下表介绍了一组对配置和开发有用的域和IP。
+下表描述了一组对配置和开发有用的域和 IP。
 
 <table>
 <thead>
