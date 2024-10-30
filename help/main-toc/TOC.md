@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 04c9ab33d0f6023195cffe9929cfad172a230216
+source-git-commit: d9fec7d96bbea19549f3fcfe53606c0d59a01a53
 workflow-type: tm+mt
-source-wordcount: '5681'
+source-wordcount: '5709'
 ht-degree: 99%
 
 ---
@@ -462,6 +462,10 @@ ht-degree: 99%
    + [支持的文件格式](/help/assets/file-format-support.md)
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
+   + [Assetsas a Cloud Service旗舰版](/help/assets/assets-ultimate-overview.md)
+   + [启用Assetsas a Cloud Service旗舰版](/help/assets/enable-assets-ultimate.md)
+   + [Assetsas a Cloud ServicePrime](/help/assets/assets-prime.md)
+   + [Assets协作者用户](/help/assets/assets-collaborator-users.md)
    + 管理数字资源{#manage}
       + 微前端资源选择器 {#asset-selector}
          + [资产选择器概述](/help/assets/overview-asset-selector.md)
@@ -640,6 +644,7 @@ ht-degree: 99%
       + [在 Content Hub 共享资源](/help/assets/share-assets-content-hub.md)
       + [使用 Content Hub 下载资源](/help/assets/download-assets-content-hub.md)
       + [管理 Content Hub 里的收藏集](/help/assets/collections-content-hub.md)
+      + [在Content Hub上管理许可的Assets](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [使用 Content Hub 中的 Adobe Express 编辑图像](/help/assets/edit-images-content-hub.md)
       + [Content Hub 的资源洞察](/help/assets/insights-content-hub.md)
       + [Content Hub 常见问题解答](/help/assets/frequently-asked-questions-content-hub.md)
