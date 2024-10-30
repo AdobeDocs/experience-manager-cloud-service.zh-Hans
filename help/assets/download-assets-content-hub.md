@@ -3,10 +3,10 @@ title: 从Content Hub下载资源
 description: 了解如何从Content Hub门户下载资源
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 96b7b7fe32aefc81a9fde15d79e9089f71cb5d31
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 4%
+source-wordcount: '526'
+ht-degree: 3%
 
 ---
 
@@ -22,20 +22,12 @@ Content Hub允许您下载和共享资源。 这些资产可能包括图像、�
 
 您可以使用Content Hub下载单个或多个资源。 将下载资源的原始版本。
 
-## 先决条件 {#prerequisites}
-
-[Content Hub用户](deploy-content-hub.md#onboard-content-hub-users)可以执行本文中提到的操作。
-
-## 下载资源 {#download-single-asset}
-
-[在下载资产许可证之前先批准该许可证](/help/assets/approve-assets-content-hub.md)。
-
-### 单次下载 {#single-download-asset}
+## 下载单个许可资产 {#single-download-asset}
 
 选择一个资产，然后单击顶部边栏中的![下载](/help/assets/assets/download-icon.svg)。 下载资源对话框将显示资源的许可证。 接受许可条款和条件，然后单击&#x200B;**下载**。
 或者，单击资产卡中的![下载](/help/assets/assets/download-icon.svg)以下载资产。
 
-#### 从“资源”对话框下载单个资源 {#single-download-from-asset-dialog-box}
+### “从资源下载单个许可资源”对话框 {#single-download-from-asset-dialog-box}
 
 1. 单击资产缩略图。 此时将显示资源对话框。
 1. 单击最右边工具栏中的![下载](/help/assets/assets/download-icon.svg)。 下载窗格显示资产演绎版和许可条款和条件接受复选框。
@@ -49,7 +41,7 @@ Content Hub允许您下载和共享资源。 这些资产可能包括图像、�
    * 单击&#x200B;**原始呈现版本框**&#x200B;以返回到左窗格中的原始资源呈现版本。
 1. 接受许可条款和条件（针对许可资产），然后单击&#x200B;**下载**&#x200B;以下载资产。
 
-### 多次下载 {#multi-download}
+## 下载多个许可的Assets{#multi-download}
 
 1. 选择资源并单击顶部边栏中的![下载](/help/assets/assets/download-icon.svg)。 显示的对话框取决于下载列表是包含过期的资源还是仅包含未过期的资源。<br/>
    **下载过期的资源对话框：**&#x200B;此对话框在左窗格中显示过期的资源预览及其到期日期。 所选总数的过期资产计数将显示在右窗格中。 单击&#x200B;**继续处理所有资产**&#x200B;可下载过期资产和其他资产（如果存在）。 此时将显示下载资源对话框。 查看[下载资源对话框](#Download-asset-dialog-box)以继续操作。
@@ -69,7 +61,7 @@ Content Hub允许您下载和共享资源。 这些资产可能包括图像、�
 1. 接受条款和条件，然后单击&#x200B;**下载**以下载与左窗格中的可用许可证关联的资产。
    ![下载多许可证](/help/assets/assets/download-multiple-license.png)
 
-### 下载未许可的资产 {#download-non-licensed-assets}
+### 下载未许可的Assets {#download-non-licensed-assets}
 
 要下载未授权的资产，请选择这些资产，然后单击顶部边栏中的![下载](/help/assets/assets/download-icon.svg)。
 
