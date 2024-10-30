@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 82c0c5973c0e4145ed1ba027012d1bda160e8c93
+source-git-commit: 04c9ab33d0f6023195cffe9929cfad172a230216
 workflow-type: tm+mt
-source-wordcount: '5687'
+source-wordcount: '5681'
 ht-degree: 99%
 
 ---
@@ -728,7 +728,6 @@ ht-degree: 99%
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
             + [在自适应表单中使用 hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [在自适应表单中使用 Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [为自适应表单（核心组件）设计 JSON 架构](/help/forms/adaptive-form-core-components-json-schema-form-model.md)

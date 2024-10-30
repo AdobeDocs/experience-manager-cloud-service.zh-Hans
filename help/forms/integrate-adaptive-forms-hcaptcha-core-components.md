@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: bba5e5d283da616baa57b788181af73d59d86ee3
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 24%
+source-wordcount: '960'
+ht-degree: 25%
 
 ---
 
@@ -24,7 +24,6 @@ CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一�
 AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
 
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Cloudflare Turnstile](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
 * [验证码](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 ## 将AEM Forms环境与hCaptcha验证码集成
