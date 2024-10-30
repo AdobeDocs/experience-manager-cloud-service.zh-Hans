@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d9fec7d96bbea19549f3fcfe53606c0d59a01a53
+source-git-commit: b4b2c0a0a1e07707cab09ae81fef5fd161a57544
 workflow-type: tm+mt
 source-wordcount: '5709'
 ht-degree: 99%
@@ -643,8 +643,8 @@ ht-degree: 99%
       + [资源属性](/help/assets/asset-properties-content-hub.md)
       + [在 Content Hub 共享资源](/help/assets/share-assets-content-hub.md)
       + [使用 Content Hub 下载资源](/help/assets/download-assets-content-hub.md)
-      + [管理 Content Hub 里的收藏集](/help/assets/collections-content-hub.md)
       + [在Content Hub上管理许可的Assets](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [管理 Content Hub 里的收藏集](/help/assets/collections-content-hub.md)
       + [使用 Content Hub 中的 Adobe Express 编辑图像](/help/assets/edit-images-content-hub.md)
       + [Content Hub 的资源洞察](/help/assets/insights-content-hub.md)
       + [Content Hub 常见问题解答](/help/assets/frequently-asked-questions-content-hub.md)
