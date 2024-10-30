@@ -4,7 +4,7 @@ description: 详细了解内容交付数据流以及如何发布内容
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 93%
@@ -34,6 +34,5 @@ ht-degree: 93%
 以下部分提供了有关内容交付的更多详细信息：
 * [CDN 配置](/help/implementing/dispatcher/cdn.md)
 * [缓存](/help/implementing/dispatcher/caching.md)
-
 
 有关从创作服务复制到发布服务的信息，请参阅[复制](/help/operations/replication.md)。
