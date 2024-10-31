@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 团队和产品配置文件可怎样�
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 5f630c8a618502907e4be50844e07184e38e1b1e
+source-git-commit: 0ff50aa77711d70d372a1f43ad7336c39ab1167c
 workflow-type: tm+mt
 source-wordcount: '1821'
 ht-degree: 39%
