@@ -4,9 +4,9 @@ description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
-workflow-type: ht
-source-wordcount: '5657'
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+workflow-type: tm+mt
+source-wordcount: '5618'
 ht-degree: 100%
 
 ---
@@ -236,10 +236,6 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 >
 >创建后，专用出口 IP 地址基础设施类型将无法编辑。更改配置值的唯一方法是删除并重新创建它们。
 
->[!INFO]
->
->如果配置了专用出口 IP，Splunk 转发将继续使用动态出口范围。无法将 Splunk 转发配置为使用专用出口 IP。
-
 ### UI 配置 {#configuring-dedicated-egress-provision-ui}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
@@ -411,7 +407,6 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 >以下是 VPN 基础设施的限制：
 >
 >* 仅限于支持单个 VPN 连接
->* 无法在 VPN 连接上使用 Splunk 转发功能。
 >* 必须在网关地址空间中列出 DNS 解析器才能解析私有主机名。
 
 ### UI 配置 {#configuring-vpn-ui}

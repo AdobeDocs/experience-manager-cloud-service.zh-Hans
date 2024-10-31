@@ -4,10 +4,10 @@ description: 了解如何使用AEM as a Cloud Service的日志记录功能配置
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 8%
+source-wordcount: '2376'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 AEM as a Cloud Service是一个平台，客户可以在此平台上包含自定义代码，以便为其客户群创建独特的体验。 有鉴于此，日志记录服务是一个关键功能，可用于调试和了解在本地开发和云环境(特别是AEM as a Cloud Service的开发环境)中代码的执行情况。
 
-AEM as a Cloud Service日志记录和日志级别在配置文件中进行管理，这些配置文件作为AEM项目的一部分存储在Git中，并通过Cloud Manager部署为AEM项目的一部分。 AEM as a Cloud Service中的日志记录可以划分为两个逻辑集：
+AEM as a Cloud Service日志记录和日志级别在配置文件中进行管理，这些配置文件作为AEM项目的一部分存储在Git中，并通过Cloud Manager部署为AEM项目的一部分。 AEM as a Cloud Service中的日志记录可以划分为三个逻辑集：
 
 * AEM日志记录，在AEM应用程序级别执行日志记录
 * Apache HTTPD Web Server/Dispatcher日志记录，用于在Publish层上执行Web服务器和Dispatcher的日志记录。
@@ -344,7 +344,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>310</td>
 </tr>
 <tr>
-<td>Referer</td>
+<td>反向链接</td>
 <td>-</td>
 </tr>
 <tr>
@@ -510,8 +510,6 @@ Define DISP_LOG_LEVEL debug
 
 AEM as a Cloud Service提供对CDN日志的访问，这些日志对于包括缓存命中率优化在内的用例非常有用。 无法自定义CDN日志格式，并且没有将其设置为不同模式（例如“信息”、“警告”或“错误”）的概念。
 
-CDN日志将转发到Splunk以获取新的Splunk转发支持票证请求；已启用Splunk转发的客户将来可以添加CDN日志。
-
 **示例**
 
 ```
@@ -543,7 +541,7 @@ CDN日志不同于其他日志，它遵循JSON格式。
 | *timestamp* | TLS 终止后请求开始的时间 |
 | *ttfb* | *首字节时间*&#x200B;的缩写。从请求开始到响应正文开始流式传输之前的时间间隔。 |
 | *cli_ip* | 客户端 IP 地址。 |
-| *cli_country* | 客户国家/地区的两字母 [ISO 3166-1](https://en.wikipedia.org/wiki/cn/ISO_3166-1) alpha-2 国家/地区代码。 |
+| *cli_country* | 客户国家/地区的两字母 [ISO 3166-1](https://zh.wikipedia.org/wiki/cn/ISO_3166-1) alpha-2 国家/地区代码。 |
 | *rid* | 用于唯一标识请求的请求头的值。 |
 | *req_ua* | 负责发出给定 HTTP 请求的用户代理。 |
 | *host* | 请求所针对的颁发机构。 |
@@ -611,82 +609,18 @@ Apache层日志（包括Dispatcher）位于保存Dispatcher的Docker容器中。
 * 谨慎行事，而且只在绝对必要时
 * 恢复到适当级别并尽快重新部署
 
-## Splunk日志 {#splunk-logs}
+## 日志转发 {#log-forwarding}
 
-拥有Splunk帐户的客户可以通过客户支持票证请求将其AEM Cloud Service日志转发到相应的索引。 日志记录数据等同于通过Cloud Manager日志下载提供的数据，但客户可能会发现使用Splunk产品中提供的查询功能更方便。
+虽然可以从Cloud Manager下载日志，但一些组织认为将这些日志转发到首选日志记录目标比较有利。 AEM支持将日志流式传输到以下目标：
 
-与发送到Splunk的日志关联的网络带宽被视为客户网络I/O使用的一部分。
+* Azure Blob存储
+* Datadog
+* HTTPD
+* Elasticsearch（和OpenSearch）
+* Splunk
 
-CDN日志将转发到Splunk以请求新的支持票证；已启用Splunk转发的客户将来可以添加CDN日志。
-
->[!NOTE]
->
->无法将&#x200B;*特定*&#x200B;日志和&#x200B;*特定*&#x200B;用户日志转发到Splunk。
->
->**所有**&#x200B;日志都将转发到Splunk，客户可以在其中根据自己的要求进行任何进一步的筛选。
-
-### 启用Splunk转发 {#enabling-splunk-forwarding}
-
-在支持请求中，客户应表明：
-
-* Splunk HEC终结点地址。 此端点必须具有有效的SSL证书并且可以公开访问。
-* Splunk索引
-* Splunk端口
-* Splunk HEC令牌。 有关详细信息，请参阅[HTTP事件收集器示例](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)。
-
-以上属性应该为每个相关的程序/环境类型组合指定。 例如，如果客户需要开发、暂存和生产环境，则应提供三组信息，如下所示。
+有关如何配置此功能的详细信息，请参阅[日志转发文章](/help/implementing/developing/introduction/log-forwarding.md)。
 
 >[!NOTE]
 >
->不支持沙盒程序环境的Splunk转发。
-
->[!NOTE]
->
->无法对专用出口 IP 地址使用 Splunk 转发功能。
-
-您应该确保初始请求除了暂存/生产环境之外，还包括所有应该启用的开发环境。 Splunk必须具有SSL证书，并且面向公众。
-
-如果在初始请求后创建的任何新开发环境打算启用Splunk转发，但未启用它，则应发出其他请求。
-
-另请注意，如果请求了开发环境，则请求中或甚至沙盒环境中没有的其他开发环境可能会启用Splunk转发，并且将共享Splunk索引。 客户可以使用`aem_env_id`字段来区分这些环境。
-
-下面是一个示例客户支持请求：
-
-方案123，生产环境
-
-* Splunk HEC终结点地址： `splunk-hec-ext.acme.com`
-* Splunk索引：acme_123prod（客户可以选择所需的任何命名约定）
-* Splunk端口：443
-* Splunk HEC令牌：ABC123
-
-方案123，阶段Env
-
-* Splunk HEC终结点地址： `splunk-hec-ext.acme.com`
-* Splunk索引：acme_123stage
-* Splunk端口：443
-* Splunk HEC令牌：ABC123
-
-项目123，开发环境
-
-* Splunk HEC终结点地址： `splunk-hec-ext.acme.com`
-* Splunk索引： acme_123dev
-* Splunk端口：443
-* Splunk HEC令牌：ABC123
-
-对于每个环境使用相同的Splunk索引可能就足够了，在这种情况下，`aem_env_type`字段可用于根据值dev、stage和prod进行区分。 如果有多个开发环境，则还可以使用`aem_env_id`字段。 如果关联的索引将访问权限限制为一组缩减的Splunk用户，则某些组织可能会为生产环境的日志选择单独的索引。
-
-以下是示例日志条目：
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>不支持沙盒程序环境的日志转发。
