@@ -1,14 +1,14 @@
 ---
-title: 构建环境
+title: Cloud Manager的构建环境
 description: 了解 Cloud Manager 的构建环境以及它如何构建和测试您的代码。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: f5f7830ac6d7f5b65203b12bb1775e64379c7d14
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 77%
+source-wordcount: '776'
+ht-degree: 58%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
    * `imagemagick`
    * `graphicsmagick`
 * 可以在构建时安装其他包，如[安装其他系统包](#installing-additional-system-packages)部分中所述。
-* 每次构建都是在一个原始的环境中完成的；构建容器在执行之间不保持任何状态。
+* 每个构建都在干净的环境中运行，并且构建容器在执行之间不保留任何状态。
 * Maven 始终通过以下三条命令运行。
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -46,29 +46,27 @@ Cloud Manager 使用专门的构建环境构建和测试代码。
 
 ## HTTPS Maven 存储库 {#https-maven}
 
-Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 开始了对构建环境的一项滚动更新（在推出版本 2023.12.0 时完成更新），其中包括对 Maven 3.8.8 的更新。Maven 3.8.1 中引入的一项重大更改是旨在减少潜在漏洞的一项安全增强。具体来说，Maven 现在默认禁用所有不安全的 `http://*` 镜像，如 [Maven 发行说明中所述](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)。
+Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/2023/2023-10-0.md) 开始了对构建环境的一项滚动更新（在推出版本 2023.12.0 时完成更新），其中包括对 Maven 3.8.8 的更新。Maven 3.8.1 中引入的一项重大更改是旨在减少潜在漏洞的一项安全增强。具体来说，Maven 现在默认禁用所有不安全的 `http://*` 镜像，如 [Maven 发行说明中所述](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)。
 
 此安全增强导致某些用户可能在构建步骤中遇到问题，尤其是从使用不安全 HTTP 连接的 Maven 存储库下载工件时。
 
 为了确保更新版本的流畅体验，Adobe 建议用户更新其 Maven 存储库以使用 HTTPS 代替 HTTP。此调整与行业日益转向安全通信协议的趋势一致，并有助于构建过程保持安全可靠。
 
-### 使用特定的 Java 版本 {#using-java-support}
+### 使用特定的Java版本 {#using-java-support}
 
-默认情况下，项目是通过Cloud Manager构建过程使用Oracle8 JDK构建的，但建议AEM Cloud Service客户将用于执行Maven的JDK版本设置为`11`。
+默认情况下，Cloud Manager构建过程使用Oracle8 JDK构建项目，但AEM Cloud Service客户应将Maven执行JDK版本设置为`11`。
 
 #### 设置Maven JDK版本 {#alternate-maven-jdk-version}
 
-建议在`.cloudmanager/java-version`文件中将整个Maven执行的JDK版本设置为`11`。
+Adobe建议在`.cloudmanager/java-version`文件中将整个Maven执行的JDK版本设置为`11`。
 
-为此，请在管道使用的 Git 存储库分支中创建一个名为 `.cloudmanager/java-version` 的文件。 编辑文件，使其仅包含文本`11`。 虽然Cloud Manager也接受值`8`，但AEM Cloud Service项目不再支持此版本。 任何其他值将被忽略。 当指定`11`时，使用Oracle11，并且`JAVA_HOME`环境变量设置为`/usr/lib/jvm/jdk-11.0.22`。
+为此，请在管道使用的Git存储库分支中创建一个名为`.cloudmanager/java-version`的文件。 编辑文件，使其仅包含文本`11`。 虽然Cloud Manager也接受值`8`，但AEM Cloud Service项目不再支持此版本。 任何其他值将被忽略。 当指定`11`时，使用Oracle11，并且`JAVA_HOME`环境变量设置为`/usr/lib/jvm/jdk-11.0.22`。
 
-## 环境变量 {#environment-variables}
-
-### 标准环境变量 {#standard-environ-variables}
+## 环境变量 — 标准 {#environment-variables}
 
 您可能会发现必须根据项目或管道的相关信息来更改构建过程。
 
-例如，如果构建时 JavaScript 缩小是通过 gulp 等工具完成的，那么在为开发环境构建而不是为暂存和生产环境构建时，可能需要使用不同的缩小级别。
+例如，如果在构建时使用gulp等工具进行JavaScript缩小，则不同环境可能首选不同的缩小级别。 与暂存和生产版本相比，开发版本可能使用更轻的缩小级别。
 
 为此，Cloud Manager 会为每个执行将这些标准环境变量添加到构建容器中。
 
@@ -83,15 +81,15 @@ Cloud Manager [版本 2023.10.0](/help/implementing/cloud-manager/release-notes/
 | `ARTIFACTS_VERSION` | 对于暂存或生产管道，为由 Cloud Manager 生成的合成版本 |
 | `CM_AEM_PRODUCT_VERSION` | 发行版本 |
 
-### 管道变量 {#pipeline-variables}
+## 环境变量 — 管道 {#pipeline-variables}
 
-您的构建过程可能取决于特定的配置变量，这些变量不适合放置在 Git 存储库中，或您可能需要在使用同一分支的管道执行之间切换这些变量。
+您的构建过程可能需要特定的配置变量，这些变量不应存储在Git存储库中。 此外，您可能需要在使用同一分支的管道执行之间调整这些变量。
 
-有关详细信息，另请参阅[配置管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+有关详细信息，另请参阅[配置管道变量](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)。
 
 ## 安装其他系统包 {#installing-additional-system-packages}
 
-一些版本需要安装其他系统包才能完全运行。 例如，内部版本可能会调用Python或Ruby脚本，并且必须安装适当的语言解释程序。 可以通过在 `pom.xml` 中调用 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) 来调用 APT，从而达到此目的。此执行通常应封装在特定于 Cloud Manager 的 Maven 配置文件中。此示例安装 Python。
+一些构建需要其他系统包才能完全运行。 例如，内部版本可能会调用Python或Ruby脚本，并且必须安装适当的语言解释程序。 可以通过在`pom.xml`中调用[`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)以调用APT来管理此安装过程。 此执行通常应封装在特定于 Cloud Manager 的 Maven 配置文件中。此示例安装 Python。
 
 ```xml
         <profile>
