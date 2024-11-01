@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: d98aa9d206486022d465ca19c8888088562d56c3
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 62%
+source-wordcount: '1395'
+ht-degree: 61%
 
 ---
 
@@ -56,6 +56,10 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 **生成变体**
 
 通过 AEM 的新功能[生成变体](/help/generative-ai/generate-variations.md)利用 GenAI，现在可在云服务中使用。生成变体功能可以帮助您通过使用生成式 AI 来生成和扩展内容创作。请与您的 Adobe 帐户团队联系，申请加入该项目。
+
+用于内容片段投放的&#x200B;**AEM REST OpenAPI**
+
+用于内容片段投放的[AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)现在可用于AEM as a Cloud Service。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

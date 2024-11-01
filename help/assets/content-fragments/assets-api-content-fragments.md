@@ -4,10 +4,10 @@ description: 了解Assets HTTP API中对内容片段的支持，这是Adobe Expe
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 14%
+source-wordcount: '1829'
+ht-degree: 15%
 
 ---
 
@@ -24,6 +24,8 @@ ht-degree: 14%
 
 >[!NOTE]
 >
+>有关可用的各种AEM API的概述以及所涉及概念的比较，请参阅[结构化内容交付和管理的API](/help/headless/apis-headless-and-content-fragments.md)。
+>
 >[内容片段和内容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md) 也可用。
 
 >[!NOTE]
@@ -37,15 +39,15 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->有关Experience ManagerAPI的最新信息，请同时访问[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
+>有关 Experience Manager API 的最新信息，请访问 [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
 
 [Assets REST API](/help/assets/mac-api-assets.md)允许Adobe Experience Manager as a Cloud Service的开发者通过CRUD（创建、读取、更新、删除）操作，直接通过HTTP API访问内容(存储在AEM中)。
 
-此API允许您通过向Adobe Experience Manager as a Cloud Service前端应用程序提供内容服务，将JavaScript作为Headless CMS（内容管理系统）运行。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。
+该API允许您通过向Adobe Experience Manager as a Cloud Service前端应用程序提供内容服务，将JavaScript作为headless CMS（内容管理系统）运行。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。
 
 例如，[单页应用程序(SPA)](/help/implementing/developing/hybrid/introduction.md)（基于框架或自定义）需要通过HTTP API提供的内容，通常采用JSON格式。
 
-虽然[AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)提供了一个可自定义的API，该API可为此目的提供所需的读取操作，并且可以自定义其JSON输出，但它们确实需要AEM WCM （Web内容管理）专门知识才能实现。 这是因为它们必须在基于专用AEM模板的页面中托管。 并非每个SPA开发组织都可以直接访问此类知识。
+虽然[AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)提供了一个可自定义的API，该API可为此目的提供所需的读取操作，并且可以自定义其JSON输出，但它们确实需要AEM WCM （Web内容管理）专门知识才能实现。 这是因为它们必须在基于专用AEM模板的页面中托管。 并非每个SPA开发组织都可以直接访问此类知识。
 
 此时，可以使用Assets REST API。 它允许开发人员直接访问资产（例如图像和内容片段），而无需先将资产嵌入页面，然后以序列化JSON格式交付其内容。
 

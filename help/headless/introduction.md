@@ -5,10 +5,10 @@ landing-page-description: 了解如何使用和管理 Adobe Experience Manager a
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+workflow-type: tm+mt
+source-wordcount: '701'
+ht-degree: 96%
 
 ---
 
@@ -46,8 +46,8 @@ AEM as a Cloud Service 是一款灵活的工具，提供了三种强大的功能
    * 内容片段由内容作者使用 AEM 内容片段编辑器创建。
    * 内容片段存储为 AEM Assets，但可以通过资产控制台或[内容片段控制台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)进行管理。
 1. **用于投放的内容 API**
-   * AEM GraphQL API 支持内容片段投放。
-   * AEM Assets REST API 支持内容片段 CRUD 操作。
+   * 有关可用的各种AEM API的概述以及所涉及概念的比较，请参阅[结构化内容交付和管理的API](/help/headless/apis-headless-and-content-fragments.md)。
+
    * 使用[内容片段核心组件的 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)也可实现直接内容投放。
 
 ## 您的首要步骤 {#first-steps}

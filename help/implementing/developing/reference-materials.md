@@ -4,10 +4,10 @@ description: AEM具有广泛而强大的API，可用于您的数字体验项目�
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b3405279393be51b805c1129c171bb2249fd5726
+source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 4%
+source-wordcount: '635'
+ht-degree: 7%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Experience Manager (AEM)提供了许多API用于开发应用程序和扩�
 
 >[!NOTE]
 >
->有关Experience ManagerAPI的最新信息，请同时访问[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
+>有关 Experience Manager API 的最新信息，请访问 [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
 
 ## 其他框架 {#additional-apis}
 
@@ -67,14 +67,15 @@ AEM提供了可自定义的组件和内容交付选项。
 
 | 专题 | 描述 |
 |---|---|
-| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) | 适用于AEM的标准化网站内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
+| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans) | 适用于AEM的标准化网站内容管理(WCM)组件，可加快开发速度并降低网站的维护成本 |
 | [JSON导出程序](/help/implementing/developing/components/json-exporter.md) | 以JSON数据模型格式交付任何AEM页面的内容 |
 | [为组件启用 JSON 导出](/help/implementing/developing/components/enabling-json-exporter.md) | 基于建模器框架生成组件内容的JSON导出 |
 | [Assets API](/help/assets/mac-api-assets.md) | 允许对资源执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括二进制、元数据、演绎版和注释。 请参阅AEM Assets HTTP API |
 | [内容片段HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | 通过CRUD操作直接通过HTTP API访问内容片段内容 |
-| [内容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在Headless CMS实施中实现向JavaScript客户端的高效内容片段投放 |
+| [内容片段GraphQL API](/help/headless/graphql-api/content-fragments.md) | 在Headless CMS实施中实现向JavaScript客户端高效投放内容片段 |
 | [内容片段Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | 支持的HTTP资产请求的确切格式 |
 | [内容片段和内容片段模型OpenAPI](/help/headless/content-fragment-openapis.md) | 内容片段和内容片段模型OpenAPI |
+| 用于内容片段投放的[AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | AEMEdge Delivery Services上的HTTP REST API，旨在以JSON格式从内容片段提供结构化内容。 |
 
 ## SPA特定的API {#spa-apis}
 
