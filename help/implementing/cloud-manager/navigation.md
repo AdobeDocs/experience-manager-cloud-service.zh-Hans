@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1661'
 ht-degree: 39%
 
 ---
@@ -35,10 +35,10 @@ Cloud manage UI 主要由两个图形界面组成：
 “我的程序”控制台提供了对您在所选组织中有权访问的所有程序的概述。它由几个部分组成。
 
 1. 用于组织选择、警报和帐户设置的[工具栏](#toolbars-my-programs-toolbars)
-1. 选项卡允许您切换程序的当前视图。
+1. 使用选项卡可以切换程序的当前视图。
    * **主页** 视图（默认），选择 **我的程序** 视图，其中显示所有项目的概览
    * 访问[许可证仪表板](/help/implementing/cloud-manager/license-dashboard.md)的&#x200B;**许可证**。
-   * 请注意，这些选项卡默认为已关闭，可以使用[Cloud Manager标题](#cloud-manager-header)中的https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg显示。
+   * 请注意，这些选项卡默认为已关闭，可以使用[Cloud Manager标题](#cloud-manager-header)中的![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)显示。
 1. [统计数据和行动号召](#statistics)，用于概述您最近的活动
 1. [**我的程序** 部分](#my-programs-section) ，其中概述了您的所有计划
 1. [快速链接](#quick-links-section)以轻松访问相关资源。
@@ -195,7 +195,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![程序工具栏](assets/cloud-manager-program-toolbar.png)
 
-工具栏始终显示您当前所在的选项卡，即使您已使用https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg隐藏了这些选项卡。
+工具栏始终显示您当前所在的选项卡，即使您已使用![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)隐藏选项卡。
 
 ### 程序选项卡 {#program-tabs}
 

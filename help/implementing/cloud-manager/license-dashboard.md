@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 34%
+source-wordcount: '906'
+ht-degree: 25%
 
 ---
 
@@ -34,7 +34,7 @@ Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解�
 >必须登录具有&#x200B;**业务负责人**&#x200B;角色的用户才能查看许可证仪表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击[Cloud Manager标题](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg 。 此操作将显示选项卡。
+1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击[Cloud Manager标题](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)。 此操作将显示选项卡。
 1. 单击选项卡中的&#x200B;**许可证**&#x200B;选项。
 
 ![许可证功能板](assets/license-dashboard.png)
@@ -49,9 +49,9 @@ Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解�
 
 * **状态**&#x200B;列显示未使用的权利数量与租户可用的权利总数。
 * **配置的**&#x200B;列指示已应用解决方案授权的程序。
-   * 只有在创建了生产环境时，或者如果存在生产环境，并且在该环境上运行了更新管道，才认为权利被使用。
+   * 只有在创建生产环境时，才考虑使用权利。 或者，如果存在管道，且在该管道上运行了更新管道。
    * 只有有限数量的程序单独列在列中，其余程序由`+x`条目表示。
-   * 将鼠标悬停在`+x`条目上以显示包含所有程序详细信息的弹出窗口。
+   * 将鼠标悬停在`+x`条目上可查看包含所有程序详细信息的弹出窗口。
 * **使用情况**&#x200B;列显示&#x200B;**[查看使用情况详细信息](#view-usage-details)**&#x200B;按钮，以显示解决方案的使用情况统计数据。
 
 >[!TIP]
@@ -100,11 +100,9 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## 常见问题解答 {#faq}
 
-+++
++++**什么是内容请求？** {#what-is-a-content-request}
 
-### 什么是内容请求？ {#what-is-a-content-request}
-
-内容请求是进入AEM Sites或任何客户提供的缓存系统（如内容交付网络）的请求，以HTML格式作为页面视图或JSON格式作为API调用交付内容或数据。
+内容请求是指定向到AEM Sites或客户提供的缓存系统（如内容交付网络）的任何请求。 它会为页面查看检索HTML格式的内容或数据。 或者，采用JSON格式进行API调用。
 
 每个页面视图或每五个 API 调用计算一个内容请求，在第一个接收内容请求的缓存系统入口测量。 内容请求仅按生产环境计算。
 
@@ -113,9 +111,7 @@ Content Request不包括仅出于提供产品和服务的目的而由Adobe发起
 另请参阅[了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)。
 +++
 
-+++
-
-### Adobe Experience Manager 如何衡量内容请求？ {#how-are-content-requests-measured}
++++**Adobe Experience Manager如何度量内容请求？** {#how-are-content-requests-measured}
 
 内容请求在 AEM as a Cloud Service 的边缘服务器进行跟踪。 源站流量不计入内容请求。 AEM as a Cloud Service 中内置的 CDN 跟踪有效的 HTML 和 JSON 请求。
 
@@ -124,23 +120,17 @@ AEM 还制定了排除知名机器人的规则，包括定期访问网站以刷�
 另请参阅[了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)。
 +++
 
-+++
-
-### 为什么我的分析报告显示的结果与 AEM 内容请求不同？ {#why-are-reports-different}
++++**为什么我的Analytics报告显示的结果与AEM内容请求不同？** {#why-are-reports-different}
 
 内容请求可能与组织的Analytics报告工具不同。 有关详细信息，请参阅[了解Cloud Service内容请求](/help/implementing/cloud-manager/content-requests.md)。
 +++
 
++++**如果我想了解有关我的内容请求卷的更多信息，该怎么办？** {#current-request-volumes}
+
+如果您想进一步了解许可证仪表板中显示的内容请求量，您的Adobe团队可以提供一个报表，其中显示内容请求的主要数量驱动因素。 请联系您的Adobe团队或Adobe客户支持以请求最佳使用报告。
 +++
 
-### 如果我想了解有关我的内容请求量的更多信息怎么办？ {#current-request-volumes}
-
-如果您想进一步了解许可证仪表板中显示的内容请求量，您的 Adob&#x200B;e 团队可以提供一份报告，其中会显示内容请求的主要驱动因素。请联系您的Adobe团队或Adobe客户支持以请求最佳使用报告。
-+++
-
-+++
-
-### 如果我使用自己的 CDN 怎么办？ {#using-own-cdn}
++++**如果我使用自己的CDN怎么办？** {#using-own-cdn}
 
 许可证仪表板仅显示Cloud ServiceCDN跟踪的数据。 如果您选择使用自己的CDN (BYOCDN)，请按照合同中的规定每年向Adobe报告您的内容请求量。
 +++

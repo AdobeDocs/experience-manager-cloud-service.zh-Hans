@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 18%
+source-wordcount: '791'
+ht-degree: 19%
 
 ---
 
@@ -31,11 +31,11 @@ Cloud Manager允许您编辑、更新、替换、验证和删除自定义域名�
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
-1. 在页面的左上角，单击![显示图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。
+1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。
 
 1. 在&#x200B;**服务**&#x200B;标题下，单击&#x200B;**CDN配置**。
 
-1. 在&#x200B;**CDN配置**&#x200B;页面上，单击要编辑其CDN的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在&#x200B;**CDN配置**&#x200B;页面上，在要编辑其CDN的行末尾单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
 1. 单击&#x200B;**编辑**。
 
@@ -82,7 +82,7 @@ Cloud Manager允许您编辑、更新、替换、验证和删除自定义域名�
    | 如果您选择了证书类型 | 描述 |
    | --- | ---  |
    | Adobe 管理的证书 | a.完成[Adobe托管证书步骤](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps)。 完成&#x200B;**验证域**&#x200B;对话框中的步骤后，单击&#x200B;**验证**。<ul><li>由于 DNS 传播延迟，DNS 验证可能需要几个小时才能处理。</li><li>Cloud Manager最终验证域名所有权并更新&#x200B;**域设置**&#x200B;表中的状态。 有关详细信息，请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。</li>![验证域状态](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b.您现在可以[添加Adobe托管(DV) SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert)。</li></ul> |
-   | 客户管理的证书 | a.单击&#x200B;**确定**。<br>b。您现在可以[添加客户管理的(OV/EV) SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert)。<br>添加证书后，您的域名在&#x200B;**域设置**&#x200B;表中标记为已验证。 有关详细信息，请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。</li></ul><br>![验证客户管理的EV/OV证书的域](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
+   | 客户管理的证书 | a.单击&#x200B;**确定**。<br>b。您现在可以[添加客户管理的(OV/EV) SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert)。<br>添加证书后，您的域名在&#x200B;**域设置**&#x200B;表中标记为已验证。 有关详细信息，请参阅[检查自定义域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。</li></ul><br>![验证客户管理的 EV/OV 证书的域名](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
 
 ## 从所有关联的环境中删除自定义域名 {#deleting}
