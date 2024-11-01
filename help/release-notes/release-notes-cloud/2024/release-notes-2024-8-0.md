@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.8.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.8.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 35ec3edfec42936b9a5908265d6dbb529a70f6cf
+source-git-commit: d6f058bbb6bd7222327ff7bf3c5fe6a6ecf0461b
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2024.8.0 版的发行说明 {#release-notes}
 
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
+以下部分概述了 2024.8.0 版的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
 
 >[!NOTE]
 >

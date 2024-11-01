@@ -3,17 +3,14 @@ title: 无管道URL重定向
 description: 了解如何在没有访问Git或Cloud Manager管道的情况下声明301或302重定向。
 feature: Dispatcher
 role: Admin
-source-git-commit: 567c75f456f609dbc254753b439151d0f4100bc0
+source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
 # 无管道URL重定向 {#pipeline-free-redirects}
-
->[!NOTE]
->此功能尚未发布。
 
 由于各种原因，组织会重写URL，从而导致301（或302）重定向，这意味着浏览器会被重定向到不同的页面。
 
@@ -64,7 +61,7 @@ maps:
 
 `RewriteMap`指令应指示使用`sdbm` （简单DBM）格式以数据库管理器(DBM)文件格式存储数据。
 
-其余配置将取决于`redirectmap.txt`的格式。 如下例所示，最简单的格式是在原始url与映射url之间的一对一映射：
+其余配置取决于`redirectmap.txt`的格式。 如下例所示，最简单的格式是在原始url与映射url之间的一对一映射：
 
 ```
 # RewriteMap from managed rewrite maps
@@ -78,6 +75,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 请牢记以下内容：
 
-* 默认情况下，在加载重写映射时，Apache将启动，而无需等待加载完整映射文件，因此在加载完整映射之前，可能存在临时不一致的情况。 可以更改此设置，以便Apache会等待加载完整映射内容，但Apache需要更长的时间才能启动。 若要更改此行为以便Apache等待，请将`wait:true`添加到`managed-rewrite-maps.yaml`文件。
-* 要更改加载之间的频率，请将`ttl: <integer>`添加到`managed-rewrite-maps.yaml`文件中。 例如 `ttl: 120`。
+* 默认情况下，在加载重写映射时，Apache会启动，而不等待加载完整映射文件，因此在加载完整映射之前，可能存在临时不一致的情况。 可以更改此设置，以便Apache会等待加载完整映射内容，但Apache需要更长的时间才能启动。 若要更改此行为以便Apache等待，请将`wait:true`添加到`managed-rewrite-maps.yaml`文件。
+* 要更改加载之间的频率，请将`ttl: <integer>`添加到`managed-rewrite-maps.yaml`文件中。 例如：`ttl: 120`。
 * 对于RewriteMap单个条目，Apache的长度限制为1024。

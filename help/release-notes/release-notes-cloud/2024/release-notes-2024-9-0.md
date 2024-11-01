@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明。'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.9.0 版的发行说明。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.9.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 9b6cbe2d1a076b6c06fb3e9d55b79e124d4abc96
+source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 62%
+source-wordcount: '1324'
+ht-degree: 91%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 的当前发行说明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2024.9.0 版的发行说明 {#release-notes}
 
-以下部分概述了当前（最新）版本的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
+以下部分概述了 2024.9.0 版的 [!DNL Experience Manager] as a Cloud Service 的功能发行说明。
 
 >[!NOTE]
 >
@@ -28,34 +26,32 @@ ht-degree: 62%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2024.10.0)的发布日期是2024年10月31日。 下一个功能版本(2024.11.0)计划于2024年11月21日发布。
+[!DNL Adobe Experience Manager] 作为 [!DNL Cloud Service] 的当前功能版本 (2024.9.0) 的发布日期为 2024 年 9 月 26 日。下一个功能版本 (2024.10.0) 计划于 2024 年 10 月 31 日发布。
 
 ## 维护发行说明 {#maintenance}
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!-- ## Release Video {#release-video}
+## 发布视频 {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+观看 2024 年 9 月版概述视频可了解在 2024.9.0 版中添加的功能的概要：
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
--->
-
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**现代化页面事件**
+### Experience Manager Sites 的新增功能 {#new-feature-sites}
 
-以下AEM Sites页面事件现已作为基于AEM as a Cloud Service事件平台的外部可消费事件提供。 可以通过Adobe I/O处理事件以与外部进程交互。
-* 已发布页面
-* 已取消发布页面
-* 已删除页面
+#### 翻译管理 {#translation-management}
+
+AEM 翻译工作流程和 API 操作现在可以触发事件，以提供有关翻译作业状态变化的洞察。用户可以通过 Adobe Developer Console 订阅这些事件。有关 AEM 翻译管理 API 的更多信息，请参见 [此处](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) 。
 
 ### 早期采用者计划 {#sites-early-adopter}
 
 **生成变体**
 
 通过 AEM 的新功能[生成变体](/help/generative-ai/generate-variations.md)利用 GenAI，现在可在云服务中使用。生成变体功能可以帮助您通过使用生成式 AI 来生成和扩展内容创作。请与您的 Adobe 帐户团队联系，申请加入该项目。
+
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -67,33 +63,16 @@ Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内�
 
 为了尽早获得 Dynamic Media 帐户上 AI 生成的字幕支持，[请创建并提交 Adobe 客户支持案例](/help/assets/dynamic-media/video.md##enable-dash)。
 
-### Assets 视图中的新增功能 {#assets-view-new-features}
+### 资产选择器中的新功能 {#asset-selector-new-features}
 
-**计划报告**
-
-现在可以按定期计划或在未来日期在Assets视图中自动生成报告，从而减少揭示数据驱动型洞察的努力。
-
-![计划报告 — ](/help/assets/assets/scheduled-reports-tab.png)
+资产选择器现在支持浏览收藏集以查找所需的资产。
+![资产选择器收藏集](/help/assets/assets/collections-rail-modal-view.png)
 
 ### Content Hub 的新增强功能 {#content-hub-new-features}
 
-**许可资产的数字版权管理**
-
-现在，组织可以通过将DRM用于Content Hub用户的许可资产，来增加许可证合规性并最大限度地降低与许可条款共享资产的风险，从而要求用户在开始下载许可资产之前查看并接受许可条款。
-
-![下载多许可证](/help/assets/assets/download-multiple-license.png)
-
-**资源卡元数据配置**
-
-Content Hub现在允许您配置最多需要在6个字段的资源卡上显示的关键元数据字段。
-
-资产卡上的![密钥元数据](/help/assets/assets/asset-card-key-metadata.png)
-
-**配置过期资产的可见性和下载**
-
 管理员现在可以控制是否需要在 Content Hub 显示过期资产。如果过期的资产可见，他们还可以定义用户是否可以下载它们。
 
-![Content Hub 上的资产已过期](/help/assets/assets/expired-assets-content-hub.png)
+![Content Hub 上的资产已过期](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -102,6 +81,7 @@ Content Hub现在允许您配置最多需要在6个字段的资源卡上显示�
 #### 自动保存基于核心组件的自适应表单草稿
 
 用户现在可以享受自动保存功能，该功能可以自动将部分完成的表格保存为草稿。他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃来提高组织的转化率，因为用户不需要从头开始填写表单。
+
 
 ### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
 
@@ -133,34 +113,31 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 ## CIF 加载项 {#cloud-services-cif}
 
+### 改进功能 {#improvements-fixes-cif}
+
+* 使类别限制可自定义。
+
 ### 错误修复 {#bug-fixes-cif}
 
-* 修复了UI测试，以便能够与核心CIF组件正常配合使用。
-* 解决了类别URL格式在云实例中无法按预期发挥作用的问题。
+* 商业字段未与资产元数据模式编辑器正确集成。
+* 拖放式旋转产品多字段问题。
+* 拖放式旋转产品多字段问题。
+* 单击不适用于类别和产品编辑器页面上的页面信息中的菜单。
+* 订单编号在订单确认页面中不可见。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 具有高级联网选项的自助日志转发 {#log-forwarding}
+### 用于加载动态内容的边缘包含 (ESI) {#esi}
 
-虽然可以从Cloud Manager下载AEM(包括Apache/Dispatcher)和CDN日志，但许多组织都认为将这些日志流式传输到首选日志记录目标会很有用。 AEM现在支持[日志转发](/help/implementing/developing/introduction/log-forwarding.md)到Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和OpenSearch）和Splunk。 可以选择通过高级联网配置转发AEM日志，例如使用专用IP地址。
+Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md)，这是一种用于边缘级动态 Web 内容组装的标记语言。通过加入 ESI 片段，您可以在具有更高 TTL 的 CDN 上缓存整个 HTML 页面，同时更频繁地从原始位置获取那些需要更高节奏更新（更低的 TTL）的较小部分。该功能正在逐步推出。
 
-此功能由用户以自助方式配置，并使用[配置管道](/help/operations/config-pipeline.md)进行部署。
+### CDN 上的基本身份验证 {#basicauth-cdn}
 
-### 适用于企业用户的无管道URL重定向 {#pipeline-free-redirects}
+通过弹出需要用户名和密码的基本身份验证对话框来保护某些内容资源。此功能主要针对轻度身份验证用例，例如业务利益相关者审查内容，而不是作为最终用户访问权限的综合解决方案。用户名和密码列表通过Git中的配置文件进行管理，该配置文件通过配置管道部署，并引用机密类型的Cloud Manager环境变量。 [了解详情](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth)。
 
-当网页被删除或移动或其他场景时，浏览器端重定向很有用。 使用[无管道URL重定向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)，您可以将Apache重写映射文件放置在AEM发布位置，该文件会自动加载 — 无需将文件提交到源代码管理或启动Cloud Manager管道。
+### 客户端重定向 {#client-side-redirects}
 
-发布重写文件的选项包括将其作为资源上传、使用ACS Commons重写映射管理器或与自定义用户界面交互。
-
-### RDE的配置管道 {#config-pipeline-rdes}
-
-快速开发环境是一款功能强大的工具，用于在云环境中快速部署和测试代码和配置。 RDE现在支持[同步配置YAML文件](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)，包括CDN设置（如流量过滤器规则和请求/响应转换），以及日志转发和其他配置选项。 [有关更多详细信息，请查看支持的配置选项的完整列表](/help/operations/config-pipeline.md)。
-
-### 新产品配置文件 {#new-product-profiles}
-
-创建新的AEM环境后，产品配置文件会自动显示在Adobe Admin Console中，从而让管理员能够分配对许可解决方案和功能的访问权限。
-
-新环境现在包含一组更新的产品配置文件，使其与未来的功能(包括在Adobe Developer Console中生成API凭据)兼容。 现有环境将能够在未来版本中更新其产品配置文件。 [了解详情](/help/onboarding/aem-cs-team-product-profiles.md)。
+在部署到CDN并在CDN上计算的配置文件Git中声明[浏览器重定向](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)。 这对于删除页面、更改的网站结构和SEO优化等方案非常有用。
 
 ### 新的 AEM Developer Console（公开 Beta） {#aem-developer-console-beta}
 
@@ -169,6 +146,14 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 任何人都可以通过单击当前 AEM Developer Console 中的 *新控制台可用* 按钮来访问公开 Beta。Adobe 欢迎提供反馈，您可以发送电子邮件至 **<aemcs-new-devconsole-ui-beta@adobe.com>**。
 
 ![AEM Developer Console 中的 OSGi 捆绑包屏幕](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+
+### 企业用户可以在 Git 之外声明重定向（早期采用者计划） {#apache-rewritemaps-early-adopter}
+
+与 AEM 6.5 类似，Apache/dispatcher 会提取放置在发布存储库中特定位置的重写映射并对其进行加载，而无需执行 Web 层管道。这种方法让业务用户使用电子表格或 UI（如 ACS Commons Redirect Map Manager 或自定义应用程序）声明重定向。通过发送电子邮件至 **<aemcs-cdn-config-adopter@adobe.com>**&#x200B;加入早期采用者计划。
+
+### RDE 的配置管道（早期采用者计划） {#config-pipeline-rdes-early-adopter}
+
+[配置管道](/help/operations/config-pipeline.md)用于部署yaml文件配置，包括CDN选项（流量过滤规则、请求/响应转换等）。 通过电子邮件 **<aemcs-cdn-config-adopter@adobe.com>** 加入早期采用者计划，以将这些相同的配置部署到使用 CLI 的 RDE（快速开发环境）。
 
 ## [!DNL Experience Manager] Guides {#guides}
 

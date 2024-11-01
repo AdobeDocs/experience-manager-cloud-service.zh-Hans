@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
+source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 3%
+source-wordcount: '993'
+ht-degree: 4%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
-Forms转换实用程序是[AEM现代化工具](https://opensource.adobe.com/aem-modernize-Tools/)套件的一部分，可帮助您轻松地将使用旧版基础组件构建的自适应Forms转换为利用核心组件支持的现代化功能的表单。
+Forms转换实用程序是[AEM现代化工具](https://opensource.adobe.com/aem-modernize-tools/)套件的一部分，可帮助您轻松地将使用旧的基础组件构建的自适应Forms转换为利用核心组件的现代、受支持功能的表单。
 
 ## 什么是AEM现代化工具？
 
-[AEM现代化工具](https://opensource.adobe.com/aem-modernize-Tools/)是指一组旨在促进现代化或更新Adobe Experience Manager (AEM)项目的实用程序或软件应用程序。 这些工具通常有助于将AEM中的旧组件或功能转换为更新、更高效且受支持的替代项。 Forms转换实用程序安装在“AEM现代化工具”下，用于将基于基础组件的自适应Forms转换为基于核心组件的表单。
+[AEM现代化工具](https://opensource.adobe.com/aem-modernize-tools/)是指一组旨在促进现代化或更新Adobe Experience Manager (AEM)项目的实用程序或软件应用程序。 这些工具通常有助于将AEM中的旧组件或功能转换为更新、更高效且受支持的替代项。 Forms转换实用程序安装在“AEM现代化工具”下，用于将基于基础组件的自适应Forms转换为基于核心组件的表单。
 
 Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基于新版核心组件的表单。 此转换过程可确保表单符合现代标准和功能，从而潜在地提高AEM环境中的性能、兼容性和易维护性。
 
@@ -68,7 +68,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
    `java -jar aem-author-p4502.jar`
 
-1. 在本地系统中克隆[AEM Modernize Tool](https://git.corp.adobe.com/livecycle/forms-modernizer/tree/convertForms)存储库。
+1. 在本地系统中克隆[AEM Modernize Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)存储库。
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
