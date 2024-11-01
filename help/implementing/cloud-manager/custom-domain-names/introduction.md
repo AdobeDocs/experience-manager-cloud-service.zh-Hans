@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 47%
+source-wordcount: '704'
+ht-degree: 45%
 
 ---
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还�
 
 >[!TIP]
 >
->一般而言，用 AEM as a Cloud Service 设置自定义域名是一个简单的过程。但是，有时可能会出现域委派问题，这可能需要1 - 2个工作日才能解决。 因此，强烈建议在上线日期之前安装好域。有关详细信息，请参阅文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
+>一般而言，用 AEM as a Cloud Service 设置自定义域名是一个简单的过程。但是，有时可能会出现域委派问题，这可能需要1 - 2个工作日才能解决。 因此，建议在上线日期之前安装好域。 有关详细信息，请参阅文档[检查域名状态](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)。
 
 ## 限制 {#limitations}
 

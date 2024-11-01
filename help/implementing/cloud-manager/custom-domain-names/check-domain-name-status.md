@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 24%
+source-wordcount: '846'
+ht-degree: 22%
 
 ---
 
@@ -80,7 +80,7 @@ Fastly将域锁定到首先注册它的帐户，而其他帐户必须请求权�
 
 >[!TIP]
 >
->使用 Fastly 解决域授权问题通常需要 1-2 个工作日。因此，强烈建议在上线日期之前安装好域。
+>使用 Fastly 解决域授权问题通常需要 1-2 个工作日。因此，建议在上线日期之前安装好域。
 
 >[!NOTE]
 >

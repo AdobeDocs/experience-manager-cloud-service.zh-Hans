@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 62%
+source-wordcount: '1803'
+ht-degree: 45%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 62%
 
 了解 AEM as a Cloud Service 的 New Relic One 应用程序性能监控 (APM) 服务，以及如何访问该服务。
 
-## 简介 {#introduction}
+## 关于New Relic One {#introduction}
 
-Adobe 非常重视应用程序的监控、可用性和性能。AEM as a Cloud Service 作为标准产品的一部分，提供对自定义 New Relic One 监控套件的访问权限，以确保您的团队能够最大限度地了解 AEM as a Cloud Service 系统和环境性能量度。
+Adobe 非常重视应用程序的监控、可用性和性能。AEM as a Cloud Service包括访问New Relic One监控，作为标准产品的一部分，它使团队能够全面了解系统和环境性能指标。
 
-本文档描述了如何管理对您的 AEM as a Cloud Service 环境上启用的 New Relic One 应用程序性能监控 (APM) 功能的访问，促进支持性能并让您最大限度地利用 AEM as a Cloud Service。
+本文档概述了如何在AEM as a Cloud Service环境中管理对New Relic One应用程序性能监控(APM)功能的访问。 有效管理这些功能可支持最佳性能并最大限度地发挥AEM as a Cloud Service的优势。
 
 创建新的生产程序时，会自动创建与您的AEM as a Cloud Service程序关联的New Relic One子帐户。 [必须激活此子帐户](#activate-sub-account)才能开始摄取数据。
 
@@ -35,11 +35,11 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 * 通过结合基础架构级别监控和应用程序 (Adobe Experience Manager) 监控的关键指标，实现整体性能优化
 
-* 将 AEM as a Cloud Service JMX Mbeans 和健康检查直接暴露在 New Relic Insights 量度中，支持深入检查应用程序堆栈性能和健康量度。
+* AEM as a Cloud Service直接在New Relic Insights中公开Java管理扩展(JMX) MBean和执行状况检查，从而能够深入检查应用程序性能和运行状况指标。
 
 ## 激活您的New Relic One子帐户 {#activate-sub-account}
 
-对于新创建的项目，将为您创建New Relic One子帐户。 但是，您必须激活它才能摄取数据。 此操作不会自动完成。 按照以下步骤激活您的子帐户。
+对于新创建的项目，将为您创建New Relic One子帐户。 但是，您必须激活它才能摄取数据。 此激活不是自动的。 按照以下步骤激活您的子帐户。
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
    ![管理用户](assets/newrelic-activate-sub-account.png)
 
-   * 您还可以通过单击程序的&#x200B;**环境**&#x200B;屏幕顶部的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg访问&#x200B;**管理用户**&#x200B;选项。
+   * 您还可以访问&#x200B;**管理用户**&#x200B;选项。 在程序的&#x200B;**环境**&#x200B;屏幕顶部，单击![更多蒙版图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
 1. [为同一环境运行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)以成功完成子帐户激活。
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 >[!NOTE]
 >
->必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户才能管理 New Relic One 用户。
+>必须登录具有&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的用户才能管理New Relic One用户。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -75,7 +75,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
    ![管理用户](assets/newrelic-manage-users.png)
 
-   * 您还可以通过单击程序的&#x200B;**环境**&#x200B;屏幕顶部的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg访问&#x200B;**管理用户**&#x200B;选项。
+   * 您还可以访问&#x200B;**管理用户**&#x200B;选项。 在程序的&#x200B;**环境**&#x200B;屏幕顶部，单击![更多蒙版图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
 1. 在&#x200B;**管理New Relic用户**&#x200B;对话框中，输入要添加的用户的名字和姓氏，然后单击&#x200B;**添加**&#x200B;按钮。 对要添加的所有用户重复此步骤。
 
@@ -89,17 +89,17 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 >[!NOTE]
 >
->如果您正在管理 New Relic One 用户，您还必须将自己添加为用户，以便您也可以访问。作为&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;没有足够权限访问 New Relic One。您还必须将自己创建为用户。
+>如果您正在管理New Relic One用户，则还必须将自己添加为用户，以便您自己具有访问权限。 作为&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理员**&#x200B;没有足够权限访问 New Relic One。您还必须将自己创建为用户。
 
 ## 激活您的New Relic One用户帐户 {#activate-user-account}
 
 按照预览部分[管理 New Relic One 用户](#manage-users)中所述创建 New Relic One 用户帐户后，New Relic 会向提供的地址发送确认电子邮件。要使用这些帐户，用户必须首先通过重置密码来使用 New Relic 激活其帐户。
 
-按照以下步骤以 New Relic 用户身份激活您的帐户。
+**激活您的New Relic One用户帐户：**
 
-1. 单击 New Relic 电子邮件中提供的链接。这将打开浏览器，进入 New Relic 登录页面。
+1. 单击来自New Relic的电子邮件中提供的链接。
 
-1. 在 New Relic 登录页面上，选择&#x200B;**忘记密码？**。
+1. 在New Relic登录页面上，单击&#x200B;**忘记密码？**
 
    ![New Relic 登录](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
@@ -115,7 +115,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 在您[激活您的New Relic帐户](#activate-account)后，您可以通过Cloud Manager或直接访问New Relic One。
 
-**要通过Cloud Manager访问New Relic One，请执行以下操作：**
+**通过Cloud Manager访问New Relic One：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
@@ -125,7 +125,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
    ![管理用户](assets/newrelic-access.png)
 
-   * 您还可以通过单击程序的&#x200B;**环境**&#x200B;屏幕顶部的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg来访问New Relic。
+   * 您还可以访问New Relic。 在程序的&#x200B;**环境**&#x200B;屏幕顶部，单击![更多蒙版图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
 1. 在打开的新浏览器选项卡中，登录到 New Relic One。
 
@@ -137,7 +137,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 ### 验证您的电子邮件 {#verify-email}
 
-如果在登录 New Relic One 时要求您验证电子邮件，这意味着您的电子邮件与多个帐户关联。您可以选择要访问的帐户。
+如果在登录New Relic One期间要求您验证电子邮件，则意味着您的电子邮件与多个帐户相关联。 您可以选择要访问的帐户。
 
 如果您不验证您的电子邮件地址，New Relic 会尝试使用与您的电子邮件关联的最近创建的用户记录登录。要避免在每次登录时验证您的电子邮件，请单击登录屏幕中的&#x200B;**记住我**&#x200B;复选框。
 
@@ -145,11 +145,13 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 ## New Relic One用户访问权限疑难解答 {#troubleshooting}
 
-如果您按照[管理New Relic One用户](#manage-users)部分中所述被添加为New Relic One用户，并且无法找到原始帐户确认电子邮件，请按照以下步骤操作。
+如果您被添加为New Relic One用户(如[管理New Relic One用户](#manage-users)中所述)，并且找不到原始帐户确认电子邮件，则可以执行以下疑难解答步骤。
+
+**要对New Relic One用户访问权限进行故障排除：**
 
 1. 导航至 New Relic 的登录页面，网址为 [`login.newrelic.com/login`](https://login.newrelic.com/login)。
 
-1. 选择&#x200B;**忘记密码？**。
+1. 单击&#x200B;**[!UICONTROL 忘记密码？]**。
 
    ![New Relic 登录](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
@@ -159,12 +161,12 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. New Relic会向您发送一封电子邮件，其中包含确认帐户的链接。
 
-如果您完成了注册过程，并且由于电子邮件或密码错误消息而无法登录到您的帐户，请通过[Admin Console](https://adminconsole.adobe.com/)提交支持票证。
+如果您完成了注册过程，并且由于电子邮件或密码错误消息而无法登录到您的帐户，请通过[Admin Console](https://adminconsole.adobe.com/)提交支持工单。
 
 如果您没有收到来自New Relic的电子邮件，请执行以下操作：
 
 * 检查您的[垃圾邮件过滤器](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/)。
-* 如果适用，[请将 New Relic 添加到您的电子邮件允许列表中](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)。
+* 如果适用，[将New Relic添加到您的电子邮件允许列表](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist)。
 * 如果这两个建议都没有帮助，请提供有关支持票证的反馈。
 
 ## 限制 {#limitations}
@@ -172,7 +174,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 以下限制适用于向 New Relic One 添加用户：
 
 * 最多可以添加 30 个用户。如果已达到最大用户数，请移除用户，以便能够添加新用户。
-* 添加到New Relic的用户属于&#x200B;**受限制类型**，有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
+* 添加到New Relic的用户为&#x200B;**受限制**&#x200B;类型。 有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
 * AEM as a Cloud Service 仅提供 New Relic One APM 解决方案，不支持警报、日志记录或 API 集成。
 
 >[!NOTE]
@@ -185,9 +187,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 ## 常见问题解答 {#faqs}
 
-+++
-
-### Adobe 使用 New Relic One 监控什么？ {#adobe-monitor}
++++**Adobe使用New Relic One监视什么？** {#adobe-monitor}
 
 Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java 插件发布和预览（如果可用）服务。Adobe 支持跨非生产和生产 AEM as a Cloud Service 环境的自定义 New Relic One APM 遥测和监控。
 
@@ -204,36 +204,28 @@ Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java �
 * New Relic One 的全面监控指标和事件保留七天。
 +++
 
++++**Adobe是否从New Relic One发送警报通知？** {#alerting-new-relic}
+
+Adobe仅出于可观察性目的提供New Relic One访问权限，不将其用于客户警报或内部运营警报。 使用[用户通知配置文件](/help/journey-onboarding/notification-profiles.md)发送任何事件的通知。
 +++
 
-### Adobe 是否从 New Relic One 发送警报通知？ {#alerting-new-relic}
-
-Adobe 提供 New Relic One 访问权限以仅作观察用途，并不将它用于客户警报或内部运营警报。使用[用户通知配置文件](/help/journey-onboarding/notification-profiles.md)发送任何事件的通知。
-+++
-
-+++
-
-### 谁可以访问 New Relic One 云服务数据？ {#access-new-relic-cloud}
++++**谁可以访问New Relic One云服务数据？** {#access-new-relic-cloud}
 
 您的团队最多可以有 30 名成员获得完全读取权限。读取权限包括由New Relic One代理收集的所有APM指标。
 +++
 
-+++
-
-### 是否支持自定义 SSO 配置？ {#custom-sso}
++++**是否支持自定义SSO配置？** {#custom-sso}
 
 Adobe 设置的 New Relic One 帐户不支持自定义 SSO 配置。
 +++
 
-+++
-
-### 如果我已经有一个本地 New Relic 订阅怎么办？ {#new-relic-subscription}
++++**如果我已有本地New Relic订阅怎么办？** {#new-relic-subscription}
 
 New Relic One 是 New Relic 推出的新可观察性平台，它使 Adobe 支持和您的团队能够在一个地方观察、监控和查看指标和事件。
 
 New Relic One 为用户提供了跨所有帐户搜索的能力，用户可以在一个视图中访问和可视化来自所有服务和主机的数据。
 
-虽然Adobe支持使用New Relic One和其他内部工具作为您服务的一部分来监控AEM as a Cloud Service应用程序，但您的团队可以继续将New Relic用于本地托管服务和基础架构。 他们能够以可视化图表形式查看来自 Adobe New Relic One 帐户和客户管理的 New Relic 帐户的数据。
+Adobe支持使用New Relic One和其他工具监控AEM as a Cloud Service，而您的团队仍然可以使用New Relic提供本地服务和基础架构。 他们能够以可视化图表形式查看来自 Adobe New Relic One 帐户和客户管理的 New Relic 帐户的数据。
 
 >[!NOTE]
 >
@@ -241,9 +233,7 @@ New Relic One 为用户提供了跨所有帐户搜索的能力，用户可以在
 
 +++
 
-+++
-
-### 我的 New Relic One 帐户的 APM 代理已停止。发生了什么情况？ {#deactivated}
++++**我的New Relic One帐户的APM代理已停止。 发生什么情况？** {#deactivated}
 
 如果在 90 天或更长时间内未检测到任何活动，[APM 代理将停止](#limitations)。按照本文档的[激活您的New Relic One子帐户](#activate-sub-account)部分中的相同步骤重新激活您的New Relic One子帐户。
 +++
