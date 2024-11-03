@@ -1,9 +1,9 @@
 ---
 title: 在Content Hub上管理许可的Assets
-description: 了解各种元数据管理和编辑方法
-source-git-commit: 541d5819e19c67eb3f961e41000106178bff66de
+description: 了解如何将许可证字段添加到资源元数据表单、将许可证元数据属性应用于资源文件夹以及审批具有许可证的资源以供使用。
+source-git-commit: 9324faf8c93620f5fccb1476eb124f5e640f193e
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '251'
 ht-degree: 1%
 
 ---
@@ -21,5 +21,7 @@ ht-degree: 1%
 1. [批准许可的PDF](/help/assets/manage-organize-assets-view.md#set-asset-status)
 1. 选择资产并单击&#x200B;**详细信息**&#x200B;以查看其属性。 在步骤1中添加的许可证字段中，定义已在步骤3中批准或之前已批准的资产许可证的绝对路径。 Content Hub绝对路径遵循此标准模式： `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`。 例如， /content/dam/teamA/projects/documents/file1.pdf
    ![绝对路径](/help/assets/assets/absolute-path.png)
+1. 批准资源以使其在Content Hub中可用，然后单击&#x200B;**保存**。 有关如何批准资产的信息，请参阅[设置资产状态](/help/assets/manage-organize-assets-view.md#set-asset-status)。
+
 
 
