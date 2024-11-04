@@ -1,20 +1,20 @@
 ---
-title: 通用编辑器2024.08.13发行说明
-description: 这些是通用编辑器2024.08.13版的发行说明。
+title: 通用编辑器2024.09.3发行说明
+description: 这些是通用编辑器2024.09.3版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c66621eb336b8e6eb5ceb1056c089c190fcd1c34
+source-git-commit: b70acef8dc259fff3041617abe0a89f7eb73dfab
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
 
-# 通用编辑器2024.08.13发行说明 {#release-notes}
+# 通用编辑器2024.09.3发行说明 {#release-notes}
 
-这些是通用编辑器2024年8月13日版本的发行说明。
+这些是通用编辑器2024年9月3日版本的发行说明。
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ ht-degree: 0%
 
 ## 新增功能 {#what-is-new}
 
-* **自定义数据类型**：根据您的独特数据需求定制编辑器，使其能够在属性面板中[创建自定义字段。](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/item-types-renderers/)
-   * 无论您是开发用于商业用例的自定义产品选取器，还是使用来自后端的值填充下拉列表，此功能均可为您提供对作者用于撰写内容的数据所需的控制。
-* **跨容器拖放**：布局构成更加灵活，能够在[内容树面板中[通过拖放](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components)在不同容器之间移动组件。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* **优化的GitHub集成**：引入了GitHub响应的缓存，显着加快了标记和`universal-editor-cors-library`的检索，从而提供了更快、更流畅的用户体验。
-* **可配置的IMS令牌验证**：为了提高令牌管理的灵活性，[IMS令牌验证现在为可选。](/help/implementing/universal-editor/local-dev.md#setting-up-service)
-   * 此配置选项允许您根据需要禁用验证，从而简化云网关设置。
-* **Splunk集成**： Splunk日志记录已集成到[Universal Editor服务以进行本地开发，](/help/implementing/universal-editor/local-dev.md#setting-up-service)增强了监控和诊断。
-   * 此集成可确保高效的日志跟踪、更顺畅的操作和更快的故障排除。
+* **`rootPath`现在可用于内容选取器**：现在可以为内容选取器提供`rootPath`，以便在使用[AEM内容、](/help/implementing/universal-editor/field-types.md#aem-content) [内容片段、](/help/implementing/universal-editor/field-types.md#content-fragment)和[体验片段](/help/implementing/universal-editor/field-types.md#experience-fragment)字段类型时，向用户呈现目标内容选择。
+   * 因此，内容选择仅限于指定路径和任何子目录中的内容。
+
+## 提前采用6.5支持计划 {#early-adoption}
+
+现在，在早期采用者程序中使用AEM 6.5时，通用编辑器可用于Headless用例。
+
+如果您有兴趣测试这项新功能并分享您的反馈，请通过与您的Adobe ID关联的电子邮件地址向您的Adobe代表发送电子邮件。
 
 ## 错误修复 {#bug-fixes}
 
-* **增强的发布反馈**：如果发布由于权限不足而失败，则发布期间向用户提供的反馈将得到改进，以显示明确的警告，而不是简单地指示失败。
-* **已改进URL处理**：修复了导致发布失败的URL编码/解码错误问题。
-* **准确的数据处理**：解决了浮点数错误地存储为整数的问题，从而确保在整个内容中精确处理数据。
-* **安全性和稳定性**：修复了Docker映像中的安全漏洞，并实施了关键组件（如组件选取器和痕迹导航）的测试覆盖率，从而提供了更安全、稳定且可靠的编辑器体验。
+* **跨容器拖放**： [通过拖放在不同容器之间移动组件](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components)现在在源和目标中均遵循[组件筛选器](/help/implementing/universal-editor/customizing.md#filtering-components)。
