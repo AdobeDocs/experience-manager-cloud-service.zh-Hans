@@ -3,7 +3,7 @@ title: 无管道URL重定向
 description: 了解如何在没有访问Git或Cloud Manager管道的情况下声明301或302重定向。
 feature: Dispatcher
 role: Admin
-source-git-commit: 4be9d99de2a8fbebc508419630ce254d2f9fd6dc
+source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
