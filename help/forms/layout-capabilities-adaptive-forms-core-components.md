@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: 基于核心组件的自适应表单布局、表单的不同布局、动态表单布局AEM、AEM Cloud Service表单布局、AEM核心组件中的表单布局类型、自适应表单布局
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2104'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 自适应Forms提供一流的组件，可高效地布局和设计表单。 布局控制组件在表单中的显示方式。 自适应Forms支持各种布局：面板、向导、折叠面板、位于顶部/水平选项卡的选项卡以及位于左侧/垂直选项卡的选项卡。
 
-![布局类型](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## 先决条件
 

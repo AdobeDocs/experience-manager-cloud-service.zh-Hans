@@ -1,7 +1,7 @@
 ---
-source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1264'
 ht-degree: 95%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 95%
 * [提交到 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
 * [将自适应表单连接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 另请参阅 {#see-more-forms-eds}
 
