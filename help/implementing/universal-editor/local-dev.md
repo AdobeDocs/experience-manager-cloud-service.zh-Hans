@@ -1,20 +1,20 @@
 ---
-title: 使用 Universal Editor 进行本地 AEM 开发
-description: 了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
+title: 运行您自己的通用编辑器服务
+description: 了解如何运行您自己的通用编辑器服务，以供本地开发或作为您自己的基础架构的一部分。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5a6795056090908652a72730939024e974a9a697
+source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 50%
+source-wordcount: '894'
+ht-degree: 42%
 
 ---
 
 
-# 使用 Universal Editor 进行本地 AEM 开发 {#local-dev-ue}
+# 运行您自己的通用编辑器服务 {#local-ue-service}
 
-了解 Universal Editor 如何支持在本地 AEM 实例上进行编辑以进行开发。
+了解如何运行您自己的通用编辑器服务，以供本地开发或作为您自己的基础架构的一部分。
 
 ## 概述 {#overview}
 
@@ -24,7 +24,16 @@ Universal Editor Service 是一项用于将 Universal Editor 与后端系统绑�
 * 使用本地AEM SDK进行开发时，无法从Internet访问Adobe的通用编辑器服务。
 * 如果您的AEM实例具有IP限制，并且Adobe的Universal Editor服务不在定义的IP范围内，则可以自行托管。
 
-本文档介绍如何在HTTPS中将AEM与通用编辑器服务的本地副本一起运行，以便您可以在AEM上本地开发以用于通用编辑器。
+## 用例 {#use-cases}
+
+如果您希望：
+
+* 在AEM上进行本地开发，以便与通用编辑器一起使用。
+* 将您自己的Universal Editor服务作为您自己的基础架构的一部分运行，独立于Adobe的Universal Editor服务。
+
+这两个用例都受支持。 本文档介绍如何在HTTPS中运行AEM以及Universal Editor服务的本地副本。
+
+如果您希望将自己的通用编辑器服务作为您自己的基础架构的一部分运行，则遵循与本地开发示例相同的步骤。
 
 ## 将 AEM 设置为在 HTTPS 上运行 {#aem-https}
 
