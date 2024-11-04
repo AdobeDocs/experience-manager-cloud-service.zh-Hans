@@ -4,13 +4,13 @@ description: 自适应Forms在各种设备上的布局和外观受布局设置�
 feature: Adaptive Forms, Core Components
 keywords: 基于核心组件的自适应表单布局、表单的不同布局、动态表单布局AEM、AEM Cloud Service表单布局、AEM核心组件中的表单布局类型、自适应表单布局
 role: User, Developer, Admin
-source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
+exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
+source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
 
 ---
-
 
 # 基于核心组件的自适应Forms的布局功能
 
@@ -261,7 +261,6 @@ ht-degree: 1%
    ![第三面板组件](/help/forms/assets/panel-3-component.png)
 
 1. 单击创作环境右上角的&#x200B;**[!UICONTROL 预览]**。
-
    ![水平布局](/help/forms/assets/horizontal-layout.gif)
 
 您也可以[拖放组件](#extra-bytes)以将表单组件添加到每个面板。

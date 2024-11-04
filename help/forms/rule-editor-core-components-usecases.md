@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
+source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,26 @@ ht-degree: 0%
 文章提供了基于核心组件的自适应表单的规则编辑器的详细示例，提供了有关不同场景下正确实施的见解。 规则编辑器允许开发人员定义和管理用于控制表单行为的逻辑。
 现在，让我们讨论规则编辑器的不同实施。
 
+
+## 使用按钮在面板之间导航
+
+规则编辑器允许您向面板布局添加导航按钮，如“水平选项卡”、“垂直选项卡”、“折叠面板”或“向导”。 这些按钮通过简化表单中不同面板之间的过渡、将焦点移动到选定面板来增强用户体验。
+
+假设您正在与应用程序的配置文件设置部分进行交互，其中通过按钮而非选项卡来简化导航。 从主仪表板输入配置文件设置时，您会遇到一系列专门用于其配置文件不同方面的面板：**个人信息**、**帐户安全**&#x200B;和&#x200B;**通知首选项**。
+
+每个面板都包含用于更新特定信息的相关字段和选项。 导航按钮（如`Next`和`Back`）突出放置，允许您在这些面板之间移动。 单击`Next`将用户推进到&#x200B;**帐户安全**&#x200B;面板，然后单击`Back`返回到&#x200B;**个人信息**&#x200B;面板。 这种导航方法可确保各部分之间的无缝过渡，而不会丢失上下文，从而提供顺畅而直观的用户体验。 使用导航按钮可简化管理配置文件设置的过程，使交互更井井有条、更人性化。
+
+您可以使用`Navigate among the panels`规则为允许在不同面板之间切换的按钮创建导航规则。  选择`Shift focus to the next item`属性以将焦点移动到布局中的下一个面板。
+
+![下一个面板规则](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+
+单击`Next`按钮后，焦点将移至布局中的后续面板。
+
+![使用“下一步”按钮在面板中导航](/help/forms/assets/navigate-in-panel.gif)
+
+同样，您可以为`Previous`按钮创建规则以将焦点转移到前一个面板。
+
+![上一个面板规则](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## 在具有函数的可重复面板中简化复杂的计算
 

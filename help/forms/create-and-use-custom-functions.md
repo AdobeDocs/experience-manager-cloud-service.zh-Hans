@@ -7,15 +7,15 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# 基于核心组件的自适应Forms的自定义函数简介
+# 基于核心组件的自适应Forms自定义函数介绍
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -72,7 +72,7 @@ JavaScript注释用于为JavaScript代码提供元数据。 它包含以特定�
    * date[]：表示日期值的数组。
    * array：表示包含各种类型值的泛型数组。
    * 对象：表示传递到自定义函数的表单对象，而不是直接传递其值。
-   * 范围：表示全局对象，其中包含只读变量，如表单实例、目标字段实例以及在自定义函数中执行表单修改的方法。 此变量声明为JavaScript注释中的最后一个参数，在自适应表单的规则编辑器中不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。 有关Globals对象及其使用方法的详细信息，[单击此处](/help/forms/custom-function-core-component-create-function.md#field-and-global-scope-objects-support-in-custom-functions)。
+   * 范围：表示全局对象，其中包含只读变量，如表单实例、目标字段实例以及在自定义函数中执行表单修改的方法。 此变量声明为JavaScript注释中的最后一个参数，在自适应表单的规则编辑器中不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。 有关Globals对象及其使用方法的详细信息，[单击此处](/help/forms/custom-function-core-component-scope-function.md)。
 
 参数类型不区分大小写，并且参数名称中不允许有空格。
 

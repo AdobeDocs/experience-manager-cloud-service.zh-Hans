@@ -4,13 +4,13 @@ description: 本文概述了基于核心组件的自适应表单中自定义函�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
-
 
 # 开发和使用自定义函数的示例
 
@@ -264,7 +264,7 @@ ht-degree: 0%
 
 让我们了解自定义函数如何在`Contact Us`表单的帮助下使用字段和全局对象覆盖提交处理程序。
 
-添加以下代码行（如[create-custom-function](/help/forms/custom-function-core-component-create-function.md)部分中所述），以自定义表单提交的提交或失败消息，并在模式框中显示表单提交消息：
+添加下面一行代码（如[create-custom-functionas](/help/forms/custom-function-core-component-create-function.md)部分中所述），以自定义表单提交的提交或失败消息，并在模式框中显示表单提交消息：
 
 ```javascript
 /**

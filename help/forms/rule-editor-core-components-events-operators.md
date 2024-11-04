@@ -4,15 +4,15 @@ description: 自适应Forms规则编辑器支持各种运算符类型和事件�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
+source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
 workflow-type: tm+mt
-source-wordcount: '1921'
-ht-degree: 1%
+source-wordcount: '2106'
+ht-degree: 2%
 
 ---
 
-
-# 基于核心组件的自适应表单的规则编辑器中的运算符类型和事件
+# 基于核心组件的自适应Form规则编辑者中的操作符类型和事件
 
 在AEM Forms as a Cloud中，规则编辑器包括各种运算符类型和事件，使您能够轻松定义和执行复杂的条件和操作。
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 * **不为空**
 * **已选择：**&#x200B;当用户为复选框、下拉菜单单选按钮选择特定选项时，返回true。
 * **已初始化（事件）：**&#x200B;当表单对象在浏览器中呈现时返回true。
-* **Is Changed (event)：**&#x200B;当用户更改表单对象的输入值或选定选项时，返回true。
+* **已更改（事件）：** 当用户更改表单对象输入的值或所选选项时，返回 true。
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ### 规则编辑器中的可用规则类型 {#available-rule-types-in-rule-editor}
 
-规则编辑器提供了一组可用于编写规则的预定义规则类型。 让我们详细看看每种规则类型。 有关在规则编辑器中编写规则的详细信息，请参阅 [编写规则](/help/forms/rule-editor-core-components-user-interface.md#write-rules)。
+规则编辑器提供了一组可用于编写规则的预定义规则类型。 让我们详细看看每种规则类型。 有关在规则编辑器中编写规则的更多信息，请参阅[编写规则](/help/forms/rule-editor-core-components-user-interface.md#write-rules)。
 
 #### [!UICONTROL 时间] {#whenruletype}
 
@@ -77,9 +77,9 @@ _
 
 ![多值显示选项](assets/multivaluefcdisplaysoptions.png)
 
-编写 When 规则时，可以触发“清除值”操作。 清除操作值 清除指定对象的值。 在 When 语句中将“清除值”作为一个选项，可以创建具有多个字段的复杂条件。 您可以添加 Else 语句以添加更多条件
+编写 When 规则时，可以触发“清除值”操作。 清除值操作清除指定对象的值。 通过在When语句中将Clear Value设置为选项，可以创建具有多个字段的复杂条件。 您可以添加Else语句以添加更多条件
 
-![的明确值](assets/clearvalueof.png)
+![清除](assets/clearvalueof.png)的值
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ _
 
 ![在When](/help/forms/assets/allowed-multiple-field-when.png)中允许使用多个字段
 
-**在When条件功能**&#x200B;中使用允许多个字段时的注意事项
+**在条件功能中使用允许的多个字段时的注意事项**
 
 * [确保将核心组件设置为 3.0.14 或更高版本](https://github.com/adobe/aem-core-forms-components)，以便在规则编辑器中使用此功能。
 * 如果规则应用于 When 条件内的不同字段，则即使仅更改其中一个字段，规则也会触发。
@@ -130,10 +130,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-如果“当条件”功能中允许的多个字段遇到任何问题，请按照以下步骤执行故障排除步骤：
+如果When条件功能中允许的多个字段遇到任何问题，请按照以下疑难解答步骤操作：
 
 1. 在编辑模式下打开表单。
-1. 打开内容浏览器并选择 **[!UICONTROL 自适应表单的指南容器]** 组件。
+1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
 1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
 1. 单击完成，然后再次保存对话框。
 
@@ -163,10 +163,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 * 已启用（布尔值）
 * readOnly（布尔值）
 * 必需（布尔值）
-* screenReaderText（字符串）
+* screenReaderText （String）
 * 有效（布尔值）
 * 错误消息（字符串）
-* 默认值（数字、字符串、日期）
+* 默认（数字、字符串、日期）
 * enumNames （字符串[]）
 * chartType（字符串）
 
@@ -184,11 +184,11 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 ![对象属性](assets/object_property_set_property_new.png)
 
-**[!UICONTROL 清除值]**&#x200B;清除指定对象的值。
+**[!UICONTROL 清除值 清除]** 指定对象的值。
 
 **[!UICONTROL 设置焦点]** 将焦点设置在指定对象上。
 
-**[!UICONTROL 提交表单]**&#x200B;提交表单。
+**[!UICONTROL 提交表单]** 提交表单。
 
 **[!UICONTROL 重置]** 重置窗体或指定的对象。
 
@@ -196,7 +196,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 添加实例]** 添加指定的可重复面板或表格行的实例。
 
-**[!UICONTROL 删除实例]** 删除指定的可重复面板或表行的实例。
+**[!UICONTROL 删除实例]**&#x200B;删除指定的可重复面板或表行的实例。
 
 **[!UICONTROL 函数输出]**&#x200B;根据预定义的函数或自定义函数定义规则。
 
@@ -218,7 +218,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 （数学表达式中的值）或
 （数据模型服务的输出值）；
 
-时间（可选）：
+当（可选）时：
 
 （条件 1 和条件 2 和条件 3）为 TRUE;
 
@@ -226,7 +226,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表单数据模型服务的设置值规则示例。
+使用表单数据模型服务的设置值规则的示例。
 
 #### [!UICONTROL 节目] {#show}
 
@@ -309,6 +309,50 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 >如果指定的值不符合验证规则，则可以为用户显示验证消息。 您可以在侧边栏中组件属性的&#x200B;**[!UICONTROL 脚本验证消息]**&#x200B;字段中指定消息。
 
 ![脚本验证](assets/script-validation.png)
+
+#### [!UICONTROL 在面板之间导航]
+
+**[!UICONTROL 在面板之间导航]**&#x200B;规则类型允许您在表单的不同面板之间转移焦点。 例如，您可以创建表达式以将焦点移动到下一个面板。
+
+在面板之间导航&#x200B;**用于将焦点移动到下一个面板的常规**&#x200B;规则的结构如下所示：
+
+`Navigate among the panels`
+
+`Shift focus to the next item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+同样，您可以编写 **“在面板** 之间导航”规则，以将焦点转移到上一个面板：
+
+`Navigate among the panels`
+
+`Shift focus to the previous item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+有关如何创建规则以在面板中导航的更多详细信息， [请单击此处](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons)。
+
+#### [!UICONTROL 异步函数调用]
+
+<span class="preview">这是一项预发布功能，可通过我们的[预发布渠道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)访问。</span>
+
+**[!UICONTROL 异步函数调用]**&#x200B;规则类型允许您执行异步函数。 它使您能够启动独立于主执行线程的函数调用，允许其他进程继续运行，而无需等待异步函数完成。
+
+用于执行异步函数的典型Async Function调用规则的结构如下所示：
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+有关如何在可视规则编辑器中使用异步函数调用的更多信息，请参阅在规则编辑器中使用[异步函数调用](/help/forms/using-async-funct-in-rule-editor.md)一文。
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 97%
+source-wordcount: '1260'
+ht-degree: 95%
 
 ---
 # 代码片段 {#snippets}
@@ -111,6 +111,12 @@ ht-degree: 97%
    <td><b>设置值</b>选项不支持在规则编辑器中调用 API 的<b>服务输出</b>属性。
    </td>
    </tr>
+   <tr>
+   <td>在面板之间导航</td>
+   <td> 提供了<b>下一个按钮</b>和<b>上一个按钮</b>组件以便在面板之间导航。 放置在容器中的导航按钮可对其子元素起作用</td>
+   <td> 在规则编辑器中可以使用面板</b>中的<b>导航规则，该规则允许用户创建用于在面板的子项之间导航的规则。
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ ht-degree: 97%
 * [规则编辑者各版本之间的差异](/help/forms/rule-editor-core-components-difference-tables.md)
 * [基于核心组件的自适应Forms自定义函数介绍](/help/forms/create-and-use-custom-functions.md)
 * [为基于核心组件的自适应Form创建自定义函数](/help/forms/custom-function-core-component-create-function.md)
+* [自定义函数中的范围对象](/help/forms/custom-function-core-component-scope-function.md)
 * [开发和使用自定义函数的示例](/help/forms/custom-function-core-components-use-cases.md)
 
 
@@ -162,7 +169,7 @@ ht-degree: 97%
 >
 >[通用编辑器](/help/implementing/universal-editor/introduction.md) 与 IP 允许列表不兼容。
 >
->如果要使用Universal Editor，则不能启用IP允许列表。
+>如果您想使用通用编辑器，则不得启用 IP 允许列表。
 
 ## 通用编辑器和 IP 允许列表 {#ue-ip-allow-lists}
 
@@ -170,7 +177,7 @@ ht-degree: 97%
 >
 >通用编辑器与 [IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不兼容。
 >
->如果要使用Universal Editor，则不能启用IP允许列表。
+>如果您想使用通用编辑器，则不得启用 IP 允许列表。
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 
@@ -197,7 +204,7 @@ ht-degree: 97%
 >* 传递[交互式 3D 体验](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
 >* 其他 [Dynamic Media 资源库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
 
-## 记录支持票证 {#support-ticket}
+## 记录支持工单 {#support-ticket}
 
 如果产品问题需要额外调查和故障排除，并且需要满足响应 SLT，则可提交支持工单。
 

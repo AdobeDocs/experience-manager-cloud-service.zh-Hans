@@ -4,15 +4,15 @@ description: AEM Forms支持自定义函数，这些函数允许用户在规则�
 keywords: 添加自定义函数、使用自定义函数、创建自定义函数、在规则编辑器中使用自定义函数。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f5c17382052b4d116deaae564f1a2b9fdbb5ea0a
+exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 3%
+source-wordcount: '1340'
+ht-degree: 5%
 
 ---
 
-
-# 基于核心组件创建自适应表单的自定义函数
+# 为基于核心组件的自适应Form创建自定义函数
 
 基于核心组件的自适应Forms通过根据用户输入调整内容和行为来提供动态用户体验。 自定义函数允许开发人员扩展功能，确保表单满足特定要求。 通过集成自定义函数，开发人员可以实施复杂的逻辑、自动化流程并引入符合特定业务需求或用户期望的独特交互。 它确保表单不仅适应不断变化的条件，而且为各种用例提供更加精确和有效的解决方案。
 本文会指导您完成使用核心组件为自适应Forms创建自定义函数的步骤。
@@ -226,7 +226,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 您可以引用以下[自定义函数](/help/forms/assets//customfunctions.zip)文件夹。 使用[包管理器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager)在AEM实例中下载并安装此文件夹。
+> 您可以引用以下[自定义函数](/help/forms/assets//customfunctions.zip)文件夹。 使用[包管理器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager)在AEM实例中下载并安装此文件夹。
 
 ## 自定义函数的功能
 
@@ -238,49 +238,7 @@ AEM Forms中的自定义函数为扩展和个性化表单的功能提供了可�
 
 ### 自定义函数中的异步支持 {#support-of-async-functions}
 
-异步自定义函数未出现在规则编辑器列表中。 但是，可以在使用同步函数表达式创建的自定义函数中调用异步函数。
-
-![同步和异步自定义函数](/help/forms/assets/workflow-for-sync-async-custom-fumction.png)
-
->[!NOTE]
->
-> 在自定义函数中调用异步函数的优势在于，异步函数允许并行执行多个任务，并且自定义函数中使用了每个函数的结果。
-
-查看以下代码，了解如何使用自定义函数调用异步函数：
-
-```javascript
-    
-    async function asyncFunction() {
-    const response = await fetch('https://petstore.swagger.io/v2/store/inventory');
-    const data = await response.json();
-    return data;
-    }
-
-    /**
-    * callAsyncFunction
-    * @name callAsyncFunction callAsyncFunction
-    */
-    function callAsyncFunction() {
-    asyncFunction()
-        .then(responseData => {
-        console.log('Response data:', responseData);
-        })
-        .catch(error => {
-         console.error('Error:', error);
-    });
-}
-```
-
-在上述示例中，asyncFunction函数是`asynchronous function`。 它通过向`https://petstore.swagger.io/v2/store/inventory`发出`GET`请求来执行异步操作。 它使用`await`等待响应，使用`response.json()`将响应正文解析为JSON，然后返回数据。 `callAsyncFunction`函数是一个同步自定义函数，它调用`asyncFunction`函数并在控制台中显示响应数据。 虽然`callAsyncFunction`函数是同步的，但它调用异步asyncFunction函数并使用`then`和`catch`语句处理其结果。
-
-要查看其是否有效，让我们添加一个按钮，并为按钮创建一个规则，该规则会在单击按钮时调用异步函数。
-
-![为异步函数创建规则](/help/forms/assets/rule-for-async-funct.png)
-
-请参考控制台窗口的插图以演示当用户单击`Fetch`按钮时，将调用自定义函数`callAsyncFunction`，进而调用异步函数`asyncFunction`。 在控制台窗口中Inspect以查看对单击按钮的响应：
-
-![控制台窗口](/help/forms/assets/async-custom-funct-console.png)
-
+您可以使用自定义函数在规则编辑器中实施异步函数。 有关如何执行此操作的指导，请参阅文章[在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)。
 
 ### 自定义函数支持的字段和全局范围对象 {#support-field-and-global-objects}
 
@@ -289,6 +247,8 @@ AEM Forms中的自定义函数为扩展和个性化表单的功能提供了可�
 >[!NOTE]
 >
 > `param {scope} globals`必须是最后一个参数，它不会显示在自适应表单的规则编辑器中。
+
+有关范围对象的详细信息，请参阅自定义函数中的[范围对象](/help/forms/custom-function-core-component-scope-function.md)一文。
 
 ### 自定义函数中的缓存支持
 
@@ -308,7 +268,7 @@ AEM Forms中的自定义函数为扩展和个性化表单的功能提供了可�
 
   使用正确的自定义函数![错误日志文件](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
-## 后续步骤
+## 下一步
 
 现在，让我们查看基于核心组件的自适应表单的各种[自定义函数示例](/help/forms/custom-function-core-components-use-cases.md)。
 

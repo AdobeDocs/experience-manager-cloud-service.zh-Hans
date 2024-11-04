@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
+source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
 workflow-type: tm+mt
-source-wordcount: '5729'
-ht-degree: 99%
+source-wordcount: '5741'
+ht-degree: 98%
 
 ---
 
@@ -746,9 +746,11 @@ ht-degree: 99%
                + [基础规则编辑者和核心组件规则编辑者之间的区别](/help/forms/rule-editor-core-components-difference-tables.md)
                + [规则编辑者中可用于基于核心组件的自适应表单的操作符和事件类型](/help/forms/rule-editor-core-components-events-operators.md)
                + [基于核心组件的自适应Form规则编辑者示例](/help/forms/rule-editor-core-components-usecases.md)
+               + [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
             + 基于核心组件的自适应表单规则编辑器简介{#create-and-use-custom-function-core-component}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/create-and-use-custom-functions.md)
                + [为基于核心组件的自适应表单创建和使用自定义函数](/help/forms/custom-function-core-component-create-function.md)
+               + [自定义函数中的范围对象](/help/forms/custom-function-core-component-scope-function.md)
                + [基于核心组件的自适应表单自定义函数示例](/help/forms/custom-function-core-components-use-cases.md)
             + Forms Portal 及其组件简介{#introduction-to-forms-portal}
                + [Forms Portal 组件简介](/help/forms/configure-forms-portal.md)

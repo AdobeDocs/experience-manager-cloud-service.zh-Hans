@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
+source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2124'
 ht-degree: 3%
 
 ---
@@ -90,7 +90,7 @@ AEM Forms优先考虑以下方法来确定自适应表单的区域设置：
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   此命令下载存储库，并在您的计算机上创建名为`aem-core-forms-components`的文件夹。 在本指南中，我们将此文件夹称为`[Adaptive Forms Core Components repository]`
+   此命令下载存储库，并在您的计算机上创建名为`aem-core-forms-components`的文件夹。 在本指南中，我们将此文件夹称为`[Adaptive Forms Core Components repository]`。
 
 
 ## 添加区域设置 {#add-localization-support-for-non-supported-locales}
@@ -228,6 +228,28 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       ![正在粘贴clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
+1. 更新`languageinit.js`中的`aemLangUrl`路径
+
+   1. 导航到[AEMaaCS项目目录]中的以下目录：
+
+      ```
+      /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
+      ```
+
+   1. 在编辑器中打开`languageinit.js`文件。
+   1. 在`languageinit.js`文件中找到以下行：
+
+      `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
+
+   1. 在上行中将`forms-core-components-it`替换为您的`<app-id>`（应用程序的实际ID）。
+
+      `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
+
+      ![language-init-file](/help/forms/assets/language-init-name-change.png)
+
+>[!NOTE]
+>  
+> 如果您没有将`forms-core-components-it`替换为项目名称或`<app-id>`，则日期选取器组件无法翻译。
 
 ### 为您的新区域设置创建一个文件：
 
