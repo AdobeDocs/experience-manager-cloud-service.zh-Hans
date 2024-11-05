@@ -1321,7 +1321,7 @@ ht-degree: 98%
       + [使用旧版 Dispatcher 工具进行验证和调试](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [AEM as a Cloud Service 中的 CDN](/help/implementing/dispatcher/cdn.md)
       + [在 CDN 上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [无管道URL重定向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
+      + [无管道 URL 重定向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [Edge 端包括](/help/implementing/dispatcher/edge-side-includes.md)
       + [配置 CDN 凭证和身份验证](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [配置 CDN 错误页面](/help/implementing/dispatcher/cdn-error-pages.md)
