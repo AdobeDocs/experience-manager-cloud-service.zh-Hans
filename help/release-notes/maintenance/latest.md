@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 30%
+source-wordcount: '629'
+ht-degree: 29%
 
 ---
 
@@ -56,8 +56,11 @@ ht-degree: 30%
 * SITES-25456：事件：移动页面时，除页面移动事件外，还会生成页面删除事件。
 * SITES-25658：事件：页面内容状态事件中未填充层和sourceUrl。
 * SITES-6497：启动项：在启动项中创建页面不起作用。
+* SITES-25938：启动项：翻译项目后意外删除。
 * SITES-25393：带有通用编辑器的Edge Delivery：呈现带单个段落的格式化富文本时，文本节点丢失。
 * SITES-24643：带有通用编辑器的Edge Delivery：OpenGraph和twitter元数据属性在页面元数据模型中不起作用。
+* SITES-25401：体验片段：XF引用更新缓慢
+
 
 ### 已知问题 {#known-issues-18459}
 
