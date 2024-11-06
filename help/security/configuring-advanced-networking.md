@@ -4,10 +4,10 @@ description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
+source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
 workflow-type: tm+mt
-source-wordcount: '5618'
-ht-degree: 100%
+source-wordcount: '5524'
+ht-degree: 99%
 
 ---
 
@@ -398,7 +398,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 虚拟专用网络 (VPN) {#vpn}
 
-VPN 允许从创作、发布或预览实例连接到内部部署基础架构或数据中心。例如，这对于保护数据库访问很有用。它还允许连接到 SaaS 供应商（例如支持 VPN 的 CRM 供应商），或者允许从公司网络连接到 AEM as a Cloud Service 的创作、预览或发布实例。
+VPN 允许从创作、发布或预览实例连接到内部部署基础架构或数据中心。例如，这对于保护数据库访问很有用。它还允许连接到SaaS供应商，例如支持VPN的CRM供应商。
 
 支持大部分采用 IPSec 技术的 VPN 设备。请参阅[此设备列表中&#x200B;**RouteBased 配置说明**&#x200B;列中的信息。](https://learn.microsoft.com/zh-cn/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)按表中所述配置该设备。
 
@@ -558,7 +558,9 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 ### 对配置非常有用的域 {#vpn-useful-domains-for-configuration}
 
-下表描述了一组对配置和开发有用的域和 IP。
+下图直观地展示了在配置和开发时非常有用的一组域和关联 IP。该图下方的表进一步说明了这些域和 IP。
+
+![VPN 域配置](/help/security/assets/AdvancedNetworking.jpg)
 
 <table>
 <thead>
@@ -581,21 +583,6 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
   </tr>
 </tbody>
 </table>
-
-### 将传入限制为 VPN 连接 {#restrict-vpn-to-ingress-connections}
-
-如果您希望只允许通过 VPN 访问 AEM，则可以在 Cloud Manager 中配置环境允许列表，这样可以只允许 `p{PROGRAM_ID}.external.adobeaemcloud.com` 定义的 IP 与环境通信。此操作与在 Cloud Manager 中定义其他任何基于 IP 的允许列表相同。
-
-如果规则必须基于路径，则在 Dispatcher 级别使用标准 http 指令来拒绝或允许特定 IP。它们可以确保所需路径在 CDN 上不可缓存，因此请求始终将获取到来源。
-
-#### Httpd 配置示例 {#httpd-example}
-
-```
-Order deny,allow
-Deny from all
-Allow from 192.168.0.1
-Header always set Cache-Control private
-```
 
 ## 在环境中启用高级网络配置 {#enabling}
 
