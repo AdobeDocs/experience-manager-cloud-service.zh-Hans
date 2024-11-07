@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3f1cf2bfa5cc7d94bef22d0326dad7047fe0348b
+source-git-commit: 57a9f67c7c570c63809f19f2f737dcaa612ee836
 workflow-type: tm+mt
-source-wordcount: '5770'
+source-wordcount: '5776'
 ht-degree: 98%
 
 ---
@@ -204,6 +204,7 @@ ht-degree: 98%
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
+         + [2024.10.29发行说明](/help/release-notes/universal-editor/2024/2024-10-29.md)
          + [2024.09.27发行说明](/help/release-notes/universal-editor/2024/2024-09-27.md)
          + [2024.09.26发行说明](/help/release-notes/universal-editor/2024/2024-09-26.md)
          + [2024.09.18发行说明](/help/release-notes/universal-editor/2024/2024-09-18.md)
@@ -1090,6 +1091,7 @@ ht-degree: 98%
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + [导航](/help/implementing/cloud-manager/navigation.md)
+      + [AEM主页](/help/implementing/cloud-manager/aem-home.md)
       + 项目 {#programs}
          + [项目和项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生产项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
