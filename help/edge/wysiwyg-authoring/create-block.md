@@ -4,10 +4,10 @@ description: 了解如何创建在WYSIWYG创作活动中与Edge Delivery Service
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 57%
+ht-degree: 54%
 
 ---
 
@@ -165,7 +165,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 
    * 为了加载该页面，您可能需要点击或单击&#x200B;**使用 Adobe 登录**&#x200B;以在 Universal Editor 中向 AEM 进行身份验证。
 
-1. 在 Universal Editor 中，选择一个部分。在属性边栏中，点击或单击&#x200B;**添加**&#x200B;图标，然后从菜单中选择新的&#x200B;**引用**&#x200B;区块。
+1. 在 Universal Editor 中，选择一个部分。在属性面板中，点按或单击&#x200B;**添加**&#x200B;图标，然后从菜单中选择新的&#x200B;**Quote**&#x200B;块。
 
    * **添加**&#x200B;图标是一个加号。
    * 如果所选对象的蓝色轮廓有一个标记为&#x200B;**部分**&#x200B;的选项卡，则表明您已选择一个部分。
@@ -175,7 +175,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 1. 页面将重新加载，引用区块将与 `component-definitions.json` 文件中指定的默认内容一起添加到所选部分的底部。
 
-   * 可以像任何其他区块一样，就地或在属性边栏中选择和编辑引用区块。
+   * 可以在就地或属性面板中作为任何其他块选择和编辑报价块。
    * 将在下一步中应用样式。
 
    ![所选部分中包含新引用区块的页面](assets/create-block/quote-added.png)

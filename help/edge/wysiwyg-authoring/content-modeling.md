@@ -4,10 +4,10 @@ description: 了解内容建模如何用于WYSIWYG创作和Edge Delivery Service
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 80%
 * 必须定义区块名称，该名称将呈现在区块的表标题中。
    * 区块名称用于获取正确的样式和脚本，以装饰区块。
 * 可以定义[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure)。
-   * 模型 ID 是对组件模型的引用，它定义了作者在属性栏中可用的字段。
+   * 模型ID是对组件模型的引用，该模型定义了在属性面板中作者可用的字段。
 * 可以定义[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components)。
    * 过滤器 ID 是对组件过滤器的引用，它允许更改创作行为，例如通过限制可以将哪些子项添加到区块或部分，或者启用哪些 RTE 功能。
 

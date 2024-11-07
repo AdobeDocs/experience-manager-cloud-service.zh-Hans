@@ -4,10 +4,10 @@ description: 了解内容创作如何与 Edge Delivery Services 配合使用，�
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: 7e8446bec18eaeb4eb017dd63436a066d3a90fed
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 64%
+ht-degree: 61%
 
 ---
 
@@ -44,7 +44,7 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 ![在通用编辑器中添加和排列块](assets/blocks.png)
 
-然后可以在“属性”边栏中配置区块的详细信息。
+然后，可以在属性面板中配置块的详细信息。
 
 ![配置区块属性](assets/block-properties.png)
 

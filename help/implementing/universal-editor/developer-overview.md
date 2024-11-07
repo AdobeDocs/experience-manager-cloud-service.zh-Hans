@@ -4,7 +4,7 @@ description: 如果您是一名AEM开发人员，并且对Universal Editor的工
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 1%
@@ -240,7 +240,7 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 
 1. 在通用编辑器中，单击页面顶部的Teaser组件，查看是否现在可以选择该组件。
 
-1. 如果单击通用编辑器属性边栏中的&#x200B;**内容树**&#x200B;图标，则可以看到编辑器已识别页面上的所有Teaser，而您现在已检测了该编辑器。 您选择的Teaser是高亮显示的。
+1. 如果单击通用编辑器属性面板中的&#x200B;**内容树**&#x200B;图标，则可以看到编辑器已识别页面上的所有Teaser（您现在已检测该编辑器）。 您选择的Teaser是高亮显示的。
 
    ![选择检测的Teaser组件](assets/dev-select-teaser.png)
 
@@ -355,13 +355,13 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 >
 >基本身份验证标头示例`Basic YWRtaW46YWRtaW4=`用于用户/密码组合`admin:admin`，这是本地AEM开发中常见的。
 
-## 为应用程序检测属性边栏 {#properties-rail}
+## 为应用程序检测“属性”面板 {#properties-rail}
 
 现在，您拥有一个经检测可以使用通用编辑器进行编辑的应用程序！
 
-编辑当前仅限于Teaser标题的内联编辑。 但是，在某些情况下，就地编辑不够。 在键盘输入处，可以编辑Teaser的标题等文本。 不过，更复杂的项目需要能够显示并允许编辑结构化数据，这与它在浏览器中的呈现方式不同。 这是属性边栏的用途。
+编辑当前仅限于Teaser标题的内联编辑。 但是，在某些情况下，就地编辑不够。 在键盘输入处，可以编辑Teaser的标题等文本。 不过，更复杂的项目需要能够显示并允许编辑结构化数据，这与它在浏览器中的呈现方式不同。 这是属性面板的用途。
 
-要更新应用程序以使用属性边栏进行编辑，请返回到应用程序的页面组件的标题文件。 在这里，您已经建立了与本地AEM开发实例和本地Universal Editor服务的连接。 您必须在此定义可在应用程序中编辑的组件及其数据模型。
+要更新应用程序以使用属性面板进行编辑，请返回到应用程序的页面组件的头文件。 在这里，您已经建立了与本地AEM开发实例和本地Universal Editor服务的连接。 您必须在此定义可在应用程序中编辑的组件及其数据模型。
 
 1. 打开 CRXDE Lite。
 
@@ -462,7 +462,7 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 
 ## 这都是什么意思？ {#what-does-it-mean-2}
 
-要使用属性边栏进行编辑，必须将组件分配给`groups`，因此每个定义都以包含组件的组列表开头。
+要使用“属性”面板进行编辑，必须将组件分配给`groups`，因此每个定义都以包含组件的组列表开始。
 
 * `title`是组的名称。
 * `id`是组的唯一标识符，在本例中，是组成页面内容的一般组件，而不是页面布局的高级组件。
@@ -487,7 +487,7 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 * `label`是出现在编辑器UI中的字段描述。
 * `valueType`是数据类型。
 
-## 检测属性边栏的组件 {#properties-rail-component}
+## 为属性面板检测组件 {#properties-rail-component}
 
 您还需要在元件级别定义元件应使用的模型。
 
@@ -509,17 +509,17 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 
 1. 单击工具栏中的&#x200B;**全部保存**&#x200B;并重新加载通用编辑器。
 
-现在，您可以测试为组件检测的属性边栏。
+现在，您已准备好测试针对组件检测的属性面板。
 
 1. 在通用编辑器中，单击Teaser的标题可再次编辑它。
 
-1. 单击属性边栏以显示属性选项卡，并查看刚才检测的字段。
+1. 单击属性面板以显示属性选项卡，并查看刚刚检测的字段。
 
-   ![检测的属性边栏](assets/dev-properties-rail-instrumented.png)
+   ![检测的属性面板](assets/dev-properties-rail-instrumented.png)
 
-您现在可以像之前一样内联编辑Teaser的标题，或者在属性边栏中编辑。 在这两种情况下，更改将保留回本地AEM开发实例。
+您现在可以像之前一样内联编辑Teaser的标题，或者在属性面板中编辑。 在这两种情况下，更改将保留回本地AEM开发实例。
 
-## 向属性边栏添加其他字段 {#add-fields}
+## 向属性面板添加其他字段 {#add-fields}
 
 通过使用已实施组件的数据模型的基本结构，您可以按照相同的模型添加其他字段。
 
@@ -555,9 +555,9 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 
 1. 单击Teaser的标题可再次编辑它。
 
-1. 单击属性边栏并查看一个新字段来调整组件的样式。
+1. 单击属性面板并查看一个新字段可调整组件的样式。
 
-   ![带有样式字段的检测属性边栏](assets/dev-style-instrumented.png)
+   ![具有样式字段的检测属性面板](assets/dev-style-instrumented.png)
 
 通过此方式，组件的JCR中的任何字段都可以在通用编辑器中公开。
 
@@ -580,8 +580,8 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 1. [您检测了Teaser组件。](#instrumenting-components)
 1. [您检测了Teaser的子组件。](#subcomponents)
 1. [您定义了一个自定义身份验证标头，以便可以使用本地通用编辑器服务保存更改。](#auth-header)
-1. [您检测了应用程序是否使用属性边栏。](#properties-rail)
-1. [您检测了Teaser组件以使用属性边栏。](#properties-rail-component)
+1. [您检测了应用程序是否使用属性面板。](#properties-rail)
+1. [您检测了Teaser组件以使用属性面板。](#properties-rail-component)
 
 您可以按照这些相同的步骤来检测您自己的应用程序，以便与通用编辑器一起使用。 JCR中的任何属性都可以向通用编辑器公开。
 

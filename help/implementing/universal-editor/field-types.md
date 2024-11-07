@@ -1,10 +1,10 @@
 ---
 title: 模型定义、字段和组件类型
-description: 通过示例了解通用编辑器可在属性边栏中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
+description: 通过示例了解通用编辑器可在属性面板中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 11%
@@ -14,11 +14,11 @@ ht-degree: 11%
 
 # 模型定义、字段和组件类型 {#field-types}
 
-通过示例了解通用编辑器可在属性边栏中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
+通过示例了解通用编辑器可在属性面板中编辑的字段和组件类型。 了解如何通过创建模型定义并链接到组件来检测自己的应用程序。
 
 ## 概述 {#overview}
 
-调整自己的应用程序以便与通用编辑器一起使用时，必须检测组件，并定义它们可以在编辑器的属性边栏中操作的字段和组件类型。 可通过创建模型并从组件链接到模型来完成此操作。
+在调整自己的应用程序以便与通用编辑器一起使用时，必须检测组件，并定义它们可以在编辑器的属性面板中操作的字段和组件类型。 可通过创建模型并从组件链接到模型来完成此操作。
 
 本文档概述了模型定义以及可用的字段和组件类型以及示例配置。
 
@@ -28,7 +28,7 @@ ht-degree: 11%
 
 ## 模型定义结构 {#model-structure}
 
-要通过通用编辑器中的属性边栏配置组件，必须存在模型定义并将其链接到组件。
+要通过通用编辑器中的属性面板配置组件，必须存在模型定义并将其链接到组件。
 
 模型定义是一个JSON结构，从模型数组开始。
 
@@ -36,7 +36,7 @@ ht-degree: 11%
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```

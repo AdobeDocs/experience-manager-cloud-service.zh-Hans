@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 42%
+ht-degree: 39%
 
 ---
 
@@ -63,7 +63,7 @@ UI分为以下几个主要区域。
 * [Experience Cloud 标题](#experience-cloud-header)
 * [通用编辑器工具栏](#universal-editor-toolbar)
 * [编辑器](#editor)
-* [属性边栏](#properties-rail)
+* [属性面板](#properties-rail)
 
 ![Universal Editor UI](assets/ui.png)
 
@@ -224,19 +224,19 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
 
-### 属性边栏 {#properties-rail}
+### 属性面板 {#properties-rail}
 
-属性边栏始终位于编辑器的右侧。 根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
+属性面板始终显示在编辑器的右侧。 根据其模式的不同，它可显示在内容中选择的某个组件或页面内容的层次结构的详细信息。
 
-![属性边栏](assets/properties-rail.png)
+![属性面板](assets/properties-rail.png)
 
 #### 属性模式 {#properties-mode}
 
-在属性模式中，边栏显示当前在编辑器中选择的组件的属性。这是加载页面时属性边栏的默认模式。
+在属性模式中，面板显示编辑器中当前选定组件的属性。 这是加载页面时属性面板的默认模式。
 
 ![属性模式](assets/properties-mode.png)
 
-根据选择的组件类型，可以在属性边栏中显示和修改详细信息。
+根据您选择的组件类型，可以在属性面板中显示和修改详细信息。
 
 ![组件详细信息](assets/component-details.png)
 
@@ -248,7 +248,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 #### 内容树模式 {#content-tree-mode}
 
-在内容树模式中，边栏显示页面内容的层次结构。
+在内容树模式下，面板会显示页面内容的层次结构。
 
 ![内容树模式](assets/content-tree-mode.png)
 
@@ -262,7 +262,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ##### 在 CF 编辑器中打开 {#edit}
 
-编辑时，所选组件的选项会显示在属性边栏中，您可以在此处编辑所选组件。 如果选定的组件是内容片段，您还可以选择&#x200B;**在CF编辑器中打开**&#x200B;按钮。
+编辑时，所选组件的选项将显示在属性面板中，您可以在该面板中编辑所选组件。 如果选定的组件是内容片段，您还可以选择&#x200B;**在CF编辑器中打开**&#x200B;按钮。
 
 ![在CF编辑器中打开图标](assets/open-in-cf-editor.png)
 
@@ -276,7 +276,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ##### 添加 {#add}
 
-如果在内容树或编辑器中选择了容器组件，则属性边栏上会显示添加选项。
+如果在内容树或编辑器中选择容器组件，则属性面板上会显示添加选项。
 
 ![添加图标](assets/ue-add-component-icon.png)
 
@@ -290,7 +290,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ##### 复制 {#duplicate}
 
-如果在内容树或编辑器中选择容器组件中的组件，则属性边栏上会显示复制选项。
+如果在内容树或编辑器中选择容器组件中的组件，则“属性”面板上会显示复制选项。
 
 ![图标重复](assets/duplicate.png)
 
@@ -298,7 +298,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ##### 删除 {#delete}
 
-如果在内容树或编辑器中选择容器组件中的组件，则属性边栏上会显示删除选项。
+如果在内容树或编辑器中选择容器组件中的组件，则属性面板上会显示删除选项。
 
 ![“删除”图标](assets/ue-delete-component-icon.png)
 
@@ -310,7 +310,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 #### 其他按钮 {#additional-properties-rail-buttons}
 
-通用编辑器提供了可自定义且可扩展的创作体验。 如果在属性边栏中看到其他按钮，则表示已扩展通用编辑器。
+通用编辑器提供了可自定义且可扩展的创作体验。 如果在属性面板中看到其他按钮，则表示已扩展通用编辑器。
 
 * 有关扩展可能性的详细信息，请参阅[自定义和扩展通用编辑器。](/help/implementing/universal-editor/customizing.md)
 * 有关单个扩展如何工作的详细信息，请参阅[Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)

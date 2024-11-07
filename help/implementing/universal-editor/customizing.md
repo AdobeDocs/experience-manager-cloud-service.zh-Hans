@@ -4,7 +4,7 @@ description: 了解不同的扩展点和其他功能，这些功能允许您自�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
+source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 1%
@@ -75,9 +75,9 @@ data-aue-filter="container-filter"
 ]
 ```
 
-### 有条件地显示和隐藏属性边栏中的组件 {#conditionally-hide}
+### 有条件地显示和隐藏属性面板中的组件 {#conditionally-hide}
 
-尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型的[字段添加`condition`属性来隐藏属性边栏中的组件。](/help/implementing/universal-editor/field-types.md#fields)
+尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型的[字段添加`condition`属性来隐藏属性面板中的组件。](/help/implementing/universal-editor/field-types.md#fields)
 
 可以使用[JsonLogic架构定义条件。](https://jsonlogic.com/)如果条件为true，则将显示该字段。 如果条件为false，则字段将隐藏。
 
@@ -132,7 +132,7 @@ data-aue-filter="container-filter"
 
 作为Adobe Experience Cloud服务，可以使用App Builder和Experience Manager扩展通用编辑器的UI。
 
-UI扩展是使用AdobeApp Builder构建的JavaScript应用程序，可以嵌入在Adobe Experience Cloud unified shell下运行的UI应用程序，例如通用编辑器。 您可以将自己的按钮和操作添加到标题菜单和属性边栏，并为通用编辑器创建自己的事件。
+UI扩展是使用AdobeApp Builder构建的JavaScript应用程序，可以嵌入在Adobe Experience Cloud unified shell下运行的UI应用程序，例如通用编辑器。 您可以将自己的按钮和操作添加到标题菜单和属性面板，并为通用编辑器创建自己的事件。
 
 如果您想探索这些可能性，请参阅以下资源：
 

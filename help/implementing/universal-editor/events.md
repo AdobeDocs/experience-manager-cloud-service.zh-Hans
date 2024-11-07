@@ -4,7 +4,7 @@ description: 了解通用编辑器发送的不同事件，您可以使用这些�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 ### aue：content-details {#content-details}
 
-当组件加载到属性边栏中时，会触发`aue:content-details`事件。
+在属性面板中加载组件时触发`aue:content-details`事件。
 
 有效负载是组件的内容，并可以选择是组件的架构。
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 ### aue：content-patch {#content-patch}
 
-当组件数据在属性边栏中更新时，会触发`aue:content-patch`事件。
+当在属性面板中更新组件的数据时，会触发`aue:content-patch`事件。
 
 有效负载是已更新属性的JSON修补程序。
 

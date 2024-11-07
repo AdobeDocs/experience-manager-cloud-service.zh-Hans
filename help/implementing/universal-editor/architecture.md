@@ -4,10 +4,10 @@ description: 了解 Universal Editor 的架构以及数据如何在其服务和�
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 91%
+ht-degree: 82%
 
 ---
 
@@ -36,7 +36,7 @@ Universal Editor 由四个基本构建块组成，这些构建块将进行交互
 ### 编辑器 {#editors}
 
 * **Universal Editor** – Universal Editor 使用已插桩的 DOM 来允许就地编辑内容。 请参阅[属性和类型](attributes-types.md)，了解有关必要元数据的详细信息。请参阅文档 [AEM Universal Editor 快速入门](getting-started.md)，了解 AEM 中插桩示例。
-* **属性边栏** — 在上下文中无法编辑组件的某些属性，例如轮播的轮播时间或应始终打开或关闭折叠选项卡。 为了允许编辑此类组件信息，在编辑器的侧边栏中提供了一个基于表单的编辑器。
+* **属性面板** — 在上下文中无法编辑组件的某些属性，例如轮播的轮播时间或应始终打开或关闭折叠选项卡。 为了允许编辑此类组件信息，在编辑器的侧面板中提供了一个基于表单的编辑器。
 
 ### 远程应用程序 {#remote-app}
 
@@ -51,7 +51,7 @@ Universal Editor 力求成为最小 SDK，因此，插桩是远程应用程序�
 
 ### 持久层 {#persistence-layer}
 
-* **内容片段模型** – 为了支持用于编辑内容片段属性的边栏、内容片段编辑器和基于表单的编辑器，需要每个组件和内容片段的模型。
+* **内容片段模型** — 要支持用于编辑内容片段属性的面板，需要内容片段编辑器和基于表单的编辑器，则需要每个组件的模型和内容片段。
 * **Content** — 内容可以存储在任何位置，如AEM、Magento等。
 
 ![持久层](assets/persistence-layer.png)

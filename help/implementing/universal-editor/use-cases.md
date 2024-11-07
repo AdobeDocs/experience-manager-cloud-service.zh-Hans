@@ -4,7 +4,7 @@ description: 了解通用编辑器的主要用例，以及如何最好地了解�
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2db4428065b3611a43137514864573947d32fff7
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -76,7 +76,7 @@ ht-degree: 0%
 要使通用编辑器能够编辑某个页面或应用程序，必须正确检测该页面或应用程序。
 
 * [属性和类型](/help/implementing/universal-editor/attributes-types.md) — 为了使通用编辑器能够编辑应用程序或页面，必须正确检测该应用程序或页面。 这包括包含正确的元数据，以便编辑器可以编辑应用程序的内容。
-* [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md) — 元数据存在以启用组件编辑后，您定义它们可以在编辑器的属性边栏中操作的字段和组件类型。
+* [模型定义、字段和组件类型](/help/implementing/universal-editor/field-types.md) — 元数据存在以启用组件编辑后，您定义了在编辑器的属性面板中它们可以处理的字段和组件类型。
 * [通用编辑器事件](/help/implementing/universal-editor/events.md) — 您可以通过使用通用编辑器在内容或UI交互上发出的事件，来增强应用程序中的编辑体验，从而进一步自定义应用程序。
 
 通用编辑器也可以根据您的项目需求进行调整。

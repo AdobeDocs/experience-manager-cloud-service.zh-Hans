@@ -4,10 +4,10 @@ description: 了解通用编辑器所需的数据属性和项类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 79%
+ht-degree: 73%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 79%
 | `data-aue-type` | [可编辑项的类型](#item-types)（例如，文本、图像和引用） |
 | `data-aue-filter` | 定义可以使用哪些参考 |
 | `data-aue-label` | 为编辑器中显示的可选项目定义自定义标签<br>如果设置了 `data-aue-model`，则会通过模型检索标签 |
-| `data-aue-model` | 定义一个模型，该模型会用于属性边栏中基于表单的编辑 |
+| `data-aue-model` | 定义用于在属性面板中进行基于表单的编辑的模型 |
 | `data-aue-behavior` | 定义检测工具](#behaviors)的[行为，例如，独立文本或图像也可以模拟组件使其可移动或可删除 |
 
 ## 项目类型 {#item-types}
@@ -44,7 +44,7 @@ ht-degree: 79%
 | `richtext` | 文本是可编辑的，具有完整的富文本功能。RTE 会显示在右面板中 | 可选 | 必填 | 不适用 | 可选 | 不适用 | 可选 |
 | `media` | 可编辑的是资源，例如图像或视频 | 可选 | 必填 | 可选<br>传递到资源选择器的图像或视频筛选条件列表 | 可选 | 不适用 | 可选 |
 | `container` | 可编辑的行为与组件的容器（也就是段落系统）的行为类似。 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>允许的组件列表 | 可选 | 不适用 | 不适用 |
-| `component` | 可编辑项是一个组件。它不添加额外功能。指示 DOM 的可移动/可删除部分以及打开属性边栏及其字段需要用到它 | 必填 | 不适用 | 不适用 | 可选 | 可选 | 不适用 |
+| `component` | 可编辑项是一个组件。它不添加额外功能。需要指示DOM的可移动/可删除部分，并需要它来打开属性面板及其字段 | 必填 | 不适用 | 不适用 | 可选 | 可选 | 不适用 |
 | `reference` | 可编辑是一个引用，例如内容片段、体验片段或产品 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>传递到参考选择器的内容片段、产品或体验片段筛选条件列表 | 可选 | 可选 | 不适用 |
 
 根据使用案例，可能需要也可能不需要 `data-aue-prop` 或 `data-aue-resource`。例如：

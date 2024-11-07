@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1375'
-ht-degree: 40%
+ht-degree: 38%
 
 ---
 
@@ -41,7 +41,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 >
 >默认情况下，点击或单击内容会选择进行编辑。 如果要通过以下链接导航内容，请切换到[预览模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在[属性边栏中为该内容提供其他信息和选项。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中为该内容提供其他信息和选项。
 
 ### 编辑纯文本 {#edit-plain-text}
 
@@ -51,11 +51,11 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 蓝色细轮廓变为蓝色粗轮廓以指示选择，并且出现光标。 进行更改，然后按Enter/Return或选择文本框外部以保存更改。
 
-当您选择文本组件时，其详细信息将显示在[属性边栏中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您还可以编辑边栏中的文本。
+当您选择文本组件时，其详细信息将显示在[属性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您还可以在面板中编辑文本。
 
-![在属性边栏中编辑文本](assets/ue-editing-text-component-rail.png)
+![在属性面板中编辑文本](assets/ue-editing-text-component-rail.png)
 
-此外，可在属性边栏中找到有关文本的详细信息。 一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
+此外，可在属性面板中找到有关文本的详细信息。 一旦焦点离开属性面板中已编辑的字段，更改将自动保存。
 
 ### 编辑富文本 {#edit-rich-text}
 
@@ -73,9 +73,9 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 一旦焦点离开已编辑的字段，更改将自动保存。
 
-#### “属性”边栏 {#properties-rail}
+#### “属性”面板 {#properties-rail}
 
-[属性边栏](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)显示选定文本的项目。 点击条目可打开一个显示较大画布的对话框以编辑文本。
+[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)显示选定文本的项目。 点击条目可打开一个显示较大画布的对话框以编辑文本。
 
 ![富文本编辑对话框](assets/rich-text-canvas.png)
 
@@ -83,30 +83,30 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ### 编辑媒体 {#edit-media}
 
-您可以在[属性边栏中查看其详细信息。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+您可以在[属性面板中查看其详细信息。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![编辑媒体](assets/ue-edit-media.png)
 
-1. 点按或单击属性边栏中选定图像的预览。
+1. 在属性面板中，点按或单击所选图像的预览。
 1. [资源选择器](/help/assets/overview-asset-selector.md#using-asset-selector)窗口会打开，以供您选择资源。
 1. 选择以选择新资源。
-1. 选择&#x200B;**选择**&#x200B;以返回到替换资产的属性边栏。
+1. 选择&#x200B;**选择**&#x200B;以返回到资产被替换的属性面板。
 
 更改将会自动保存到您的内容中。
 
 ### 编辑内容片段 {#edit-content-fragment}
 
-如果选择[内容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，则可以在[属性边栏](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中编辑其详细信息。
+如果选择[内容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，则可以在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中编辑其详细信息。
 
 ![编辑内容片段](assets/ue-edit-cf.png)
 
-在选定内容片段的内容模型中定义的字段在属性边栏中显示和可编辑。
+在选定内容片段的内容模型中定义的字段将在属性面板中显示和编辑。
 
-如果您选择与内容片段相关的字段，则内容片段会加载到组件边栏中，并且会自动滚动到该字段。
+如果您选择与内容片段相关的字段，则内容片段将在组件面板中加载，并且字段会自动滚动到。
 
-一旦焦点离开属性边栏中已编辑的字段，更改将自动保存。
+一旦焦点离开属性面板中已编辑的字段，更改将自动保存。
 
-如果要改在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑内容片段，请点按或单击属性边栏中的&#x200B;[**在CF编辑器中打开**&#x200B;按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)。
+如果要改在[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md)中编辑内容片段，请点按或单击“属性”面板中的&#x200B;[**在CF编辑器中打开**&#x200B;按钮](/help/sites-cloud/authoring/universal-editor/navigation.md#edit)。
 
 >[!TIP]
 >
@@ -123,7 +123,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 ### 向容器添加组件 {#adding-components}
 
 1. 在[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或编辑器中选择容器组件。
-1. 然后，在属性边栏中选择添加图标。
+1. 然后，在属性面板中选择添加图标。
 
    ![选择要添加到容器的组件](assets/ue-add-component.png)
 
@@ -136,7 +136,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 ### 在容器中复制组件 {#duplicating-components}
 
 1. 使用[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或编辑器在容器中选择组件。
-1. 然后在属性边栏中选择&#x200B;**复制**&#x200B;图标。
+1. 然后在属性面板中选择&#x200B;**复制**&#x200B;图标。
 
    ![选择要添加到容器的组件](assets/ue-duplicate-component.png)
 1. 该组件将被复制并插入到选定组件的下方。
@@ -148,7 +148,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 1. 在[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或编辑器中选择容器组件。
 1. 选择容器的V形图标以在内容树中展开其内容。
 1. 然后，在内容树中，选择容器内的一个组件。
-1. 在属性边栏中选择删除图标。
+1. 在属性面板中选择删除图标。
 
    ![删除组件](assets/ue-delete-component.png)
 
