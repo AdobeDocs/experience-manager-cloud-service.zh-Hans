@@ -1,72 +1,51 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.10.0 的发行说明
-description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2024.10.0 发行说明。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.11.0 的发行说明
+description: 了解AEM as a Cloud Service中的Cloud Manager 2024.11.0版本。
 feature: Release Information
 role: Admin
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 29%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.10.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.11.0 的发行说明 {#release-notes}
 
-本页记载 AEM as a Cloud Service 中 Cloud Manager 2024.10.0 版本的发行说明。
+了解AEM (Adobe Experience Manager)as a Cloud Service中的Cloud Manager 2024.11.0版本。
 
 >[!NOTE]
 >
 >请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
-## 发布日期 {#release-date}
+## 发行日期 {#release-date}
 
-AEM as a Cloud Service 中 Cloud Manager 2023.10.0 版本的发布日期为 2024 年 10 月 3 日。
+AEM as a Cloud Service中的Cloud Manager 2024.11.0的发布日期是2024年11月7日。
 
-下一个版本计划于 2024 年 11 月 14 日发布。
+下一个计划发布日期为2024年12月5日。
 
 ## 新增功能 {#what-is-new}
 
-* <!-- BOTH CS & AMS --> Cloud Manager 中使用的 AEM Archetype 版本现已更新到版本 26。请参阅 [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
+* 使用AEM Cloud Service体验Edge Delivery Services创新的最新进展 — 现在可在您的沙盒项目中探索。 [了解详情](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation) <!-- (CMGR-62319) -->
+* AEM Cloud Manager中的“域设置”页面现在包含一个搜索功能，可让您按名称快速查找域。 您可以在搜索字段中输入关键字以筛选和显示匹配的域，从而更轻松地有效管理多个域。 此外，该页面还提供状态筛选器，如&#x200B;**已验证**&#x200B;和&#x200B;**未验证**，以进一步细化搜索结果。<!-- (CMGR-62615) -->
 
-<!-- (CMGR-59817) -->
-
-* <!-- CS ONLY --> 添加新的自定义域时，以前的验证方法涉及漫长的 DNS 验证过程。Adobe 已为客户简化了这一流程。现在，您只需要提供有效的 SSL 证书（EV 或 OV）作为所有权证明。不再需要更新 DNS 中的 TXT 记录。
-
-  >[!NOTE]
-  >
-  >此功能仅适用于客户管理的 EV 和 OV 证书。Adobe 管理的 DV 证书仍然需要存在 CNAME 记录。
-
-  参见[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
-
-  ![验证客户管理的 EV/OV 证书的域名](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
-
-* <!-- CS ONLY --> 当您添加或编辑网络基础设施时，IP 地址和网络掩码字段中的值将根据以下规则进行验证：
-
-   * 该地址空间不能与连接地址空间中定义的地址重叠。
-   * DNS 地址必须属于连接地址空间中定义的网络掩码或者是公共的。
-
-  ![添加网络基础结构对话框](/help/implementing/cloud-manager/release-notes/assets/network-infrastructure-add.png)
-
-* <!-- CS ONLY --> 正在对索引、安装可变内容和转换作业的环境部署日志的格式进行更改。
-
-  >[!NOTE]
-  >
-  >该变更计划分阶段推出，预计于 2024 年 12 月完成。
-
-  ![部署到生产卡](/help/implementing/cloud-manager/release-notes/assets/deploy-to-production-card.png)
-
-  日志的格式将从如下所示的简单条目改变：
-
-  ![显示简单条目的日志文件](/help/implementing/cloud-manager/release-notes/assets/log-file-simple-entry.png)
-
-  对于如下所示的 JSON 条目：
-
-  ![显示 json 条目的日志文件](/help/implementing/cloud-manager/release-notes/assets/log-file-json-entry.png)
-
+域设置中的![搜索字段](/help/implementing/cloud-manager/assets/domain-settings-search.png)
 
 ## 早期采用计划 {#early-adoption}
 
 加入 Cloud Manager 早期采用计划，即有机会测试即将推出的功能。
+
+### AEM主页 {#aem-home}
+
+AEM主页是一个新的集中式起点，用于管理Adobe Experience Manager中的内容、资源和站点。 AEM Home旨在提供个性化体验，帮助用户根据其角色和目标无缝导航AEM生态系统。 它旨在成为您的指南，提供关键见解和建议的行动以高效地实现预期结果。 通过展示清晰、角色驱动的路线图，AEM主页确保用户快速找到实现目标所需的内容，从而在所有AEM功能中支持更简化和更有效的体验。
+
+早期采用者客户可以使用AEM主页来初步了解优化工作流、确定目标优先级和推动结果的增强体验。 通过选择加入，您有机会塑造AEM主页的发展，提供反馈以影响其演变，从而最好地服务AEM社区。
+
+如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com)发送电子邮件。 请务必包含以下信息：
+
+* 最适合您个人资料的角色：内容作者、开发人员、业务负责人、管理员或其他（提供描述）。
+* 您的主要AEM访问表面：AEM Sites、AEM Assets、AEM Forms、Cloud Manager或其他（提供描述）。
 
 ### 自带 Git - 现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
 
@@ -82,12 +61,17 @@ AEM as a Cloud Service 中 Cloud Manager 2023.10.0 版本的发布日期为 2024
 >
 >目前，开箱即用的提取请求代码质量检查仅限于 GitHub 托管的存储库，但正在计划将此功能扩展到其他 Git 供应商的更新。
 
-如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必包括您要使用的Git平台，以及您使用的是专用/公共还是企业存储库结构。—>
 
 
-<!-- ## Bug fixes
+## 错误修复
+
+* 最近的一项更新解决了SonarQube中的一个问题：在某些情况下，无法检测到硬编码密码。 该修复现在包括扩展的模式检查，并与SonarQube中的默认检测标准保持一致。<!-- CMGR-62682 -->
+* 尝试在Cloud Manager中更新SSL证书时，在&#x200B;**[!UICONTROL 查看和更新SSL证书]**&#x200B;对话框中单击&#x200B;**[!UICONTROL 更新]**&#x200B;后出现未知错误。<!-- CMGR-62848 -->
+* 在Cloud Manager中，即使域相同但字母大小写（大写或小写）存在差异，SSL证书更新也会失败，并出现错误“新证书与现有域不匹配”。 该更新现在将域识别为不区分大小写，符合RFC标准。<!-- CMGR-62844 -->
+* 在Cloud Manager列入允许列表中，由于缺少到域配置的外键链接，IP绑定在运行状态下仍然卡住。 现在，此修复可确保IP允许列表绑定正确链接到关联的域配置。<!-- CMGR-62838 -->
+* Cloud Manager验证SSL证书的OCSP（在线证书状态协议）状态。 Adobe建议您在通过Cloud Manager安装证书之前，也使用诸如`openssl verify -untrusted intermediate.pem certificate.pem`之类的工具在本地验证证书的完整性。 有关更多详细信息，请参阅[SSL证书要求文档](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements)。<!-- CMGR-62341  -->
 
 
 
-
-## Known issues {#known-issues} -->
+<!-- ## Known issues {#known-issues} -->

@@ -1,18 +1,18 @@
 ---
-title: Cloud Manager中的Edge Delivery Services简介
+title: Cloud Manager 中的 Edge Delivery Services 简介
 description: 了解如何使用Edge Delivery Services交付Cloud Manager项目。
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 6%
+source-wordcount: '756'
+ht-degree: 10%
 
 ---
 
 
-# Cloud Manager中的Edge Delivery Services简介 {#edge-delivery-services}
+# Cloud Manager 中的 Edge Delivery Services 简介 {#edge-delivery-services}
 
 Edge Delivery Services 是一组可组合的服务，通过这些服务，可非常灵活地在网站上创作内容。此功能允许您执行以下操作：
 
@@ -76,13 +76,14 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 | 1 | 加入产品协作渠道 | 单击&#x200B;**立即提交请求**&#x200B;将向Adobe提交一个请求，以便为贵公司创建渠道。 如果该渠道已存在，则将您转发到公司的渠道。 |
 | 2 | 完成先决条件 | 单击&#x200B;**查看入门教程**，会将您引导至[快速入门 — 开发人员教程](https://www.aem.live/developer/tutorial)。 |
 | 3 | 添加Edge Delivery站点 | 请参阅[添加Edge Delivery站点](#eds-add-site)。 |
-| 4 | 添加域 | 请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
+| 4 | 添加域 | 参见[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 添加 SSL 证书 | 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
-| 6 | 配置Edge Delivery站点的CDN | 请参阅[添加CDN配置](#add-cdn)。 |
+| 6 | 配置Edge Delivery站点的CDN | 请参阅[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |
+| 7 | 上线 | 完成上线中的最后一步。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
-## 记录支持票证 {#eds-support-ticket}
+## 记录支持工单 {#eds-support-ticket}
 
 {{support-ticket}}
 

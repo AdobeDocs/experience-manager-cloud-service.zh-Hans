@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f829599145d983ca69cc7c19688907653f52fda9
+source-git-commit: 3f1cf2bfa5cc7d94bef22d0326dad7047fe0348b
 workflow-type: tm+mt
-source-wordcount: '5765'
+source-wordcount: '5770'
 ht-degree: 98%
 
 ---
@@ -110,6 +110,7 @@ ht-degree: 98%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.10.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md)
          + [2024.9.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
          + [2024.8.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [2024.7.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
