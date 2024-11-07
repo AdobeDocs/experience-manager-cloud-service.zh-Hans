@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 本文提供了基于核心组件的自适应表单的自定义函数的详细示例，提供了有关在各种场景中有效实施这些函数的宝贵见解。 自定义函数在AEM Forms的规则编辑器中使用，使开发人员能够定义和控制控制表单行为的逻辑。
 本文探讨了自定义函数的不同实现，展示了如何使用它们来定制表单以满足特定要求并增强整体功能。
 
-## 使用自定义函数设置下拉列表选项
+## 使用自定义函数填充下拉列表选项
 
-核心组件中的规则编辑器不支持&#x200B;**Set Options of**&#x200B;属性在运行时设置下拉列表选项。 但是，您可以使用自定义函数设置下拉列表选项。
+核心组件中的规则编辑器不支持&#x200B;**Set Options**&#x200B;属性在运行时动态填充下拉列表选项。 但是，您可以使用自定义函数填充下拉列表选项，这允许您根据特定逻辑检索选项。 自定义函数在填充下拉列表选项的方式和时间方面提供了更大的灵活性和控制力，增强了用户体验。
 
-在[create-custom-function](/help/forms/custom-function-core-component-create-function.md)部分中说明的自定义函数中添加以下代码，以使用自定义函数设置下拉列表选项：
+要使用自定义函数填充下拉列表选项，请按照[create-custom-function](/help/forms/custom-function-core-component-create-function.md)部分中的说明添加以下代码：
+
 
 ```javascript
     /**
