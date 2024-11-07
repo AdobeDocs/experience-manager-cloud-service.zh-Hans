@@ -4,10 +4,10 @@ description: 了解AEM as a Cloud Service中的Cloud Manager 2024.11.0版本。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 29%
+source-wordcount: '784'
+ht-degree: 30%
 
 ---
 
@@ -38,9 +38,9 @@ AEM as a Cloud Service中的Cloud Manager 2024.11.0的发布日期是2024年11�
 
 ### AEM主页 {#aem-home}
 
-AEM主页是一个新的集中式起点，用于管理Adobe Experience Manager中的内容、资源和站点。 AEM Home旨在提供个性化体验，帮助用户根据其角色和目标无缝导航AEM生态系统。 它旨在成为您的指南，提供关键见解和建议的行动以高效地实现预期结果。 通过展示清晰、角色驱动的路线图，AEM主页确保用户快速找到实现目标所需的内容，从而在所有AEM功能中支持更简化和更有效的体验。
+AEM主页为管理Adobe Experience Manager中的内容、资源和站点引入了一个集中的起点。 AEM主页旨在提供个性化的体验，可让您根据自己的角色和目标无缝导航AEM生态系统。 作为指南，它提供了关键见解和建议操作，以帮助您高效地实现目标。 AEM Home具有清晰、以人物为导向的布局，可确保快速访问基本工具，从而支持在所有AEM功能中实现简化而有效的体验。
 
-早期采用者客户可以使用AEM主页来初步了解优化工作流、确定目标优先级和推动结果的增强体验。 通过选择加入，您有机会塑造AEM主页的发展，提供反馈以影响其演变，从而最好地服务AEM社区。
+AEM主页可供早期采用者使用，它提供了优化的体验，重点在于改进工作流程、确定目标的优先级以及取得成果。 选择加入允许您通过提供反馈来影响AEM主页的发展，反馈有助于塑造其未来并提高其对整个AEM社区的价值。
 
 如果您有兴趣测试这项新功能并分享您的反馈，请从与Adobe ID关联的电子邮件地址向[Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com)发送电子邮件。 请务必包含以下信息：
 
