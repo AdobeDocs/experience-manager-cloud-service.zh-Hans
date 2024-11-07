@@ -3,16 +3,16 @@ title: 批准Experience Manager中的资源
 description: 了解如何在 [!DNL Experience Manager]中批准资源。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '713'
+ht-degree: 4%
 
 ---
 
 # 批准[!DNL Experience Manager]中的资源
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 品牌经理和营销人员对品牌资产进行严格控制。 只有获得批准的最新版本的资产才可供使用，从而确保跨所有渠道和应用程序的品牌一致性。
@@ -96,13 +96,15 @@ ht-degree: 2%
 
 1. 选择资产并单击&#x200B;**[!UICONTROL 详细信息]**。
 
-1. 单击右窗格中可用的“格式副本”图标。
+1. 单击右侧窗格中可用的Dynamic Media图标。
 
-1. 选择&#x200B;**[!UICONTROL Dynamic]**&#x200B;部分中提供的&#x200B;**[!UICONTROL 带有OpenAPI的Dynamic Media]**。
+1. 选择&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中提供的带有OpenAPI的&#x200B;**[!UICONTROL Dynamic Media]**。
 
 1. 单击&#x200B;**[!UICONTROL 复制URL]**以复制资产的投放URL。
-   ![复制投放URL](/help/assets/assets/copy-delivery-url.png)
+   ![动态呈现版本](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >仅在Assets视图中提供了复制已批准资源的投放URL的选项。
+
+有关在Dynamic Media面板中显示的其他呈现版本的信息，请参阅[查看和下载Dynamic Media呈现版本](/help/assets/renditions.md#view-download-dm-renditions)。

@@ -4,16 +4,16 @@ description: 了解  [!DNL Assets view] 中的用户界面并在其中导航。
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 86%
+source-wordcount: '998'
+ht-degree: 74%
 
 ---
 
 # 浏览到文件和文件夹并查看资源 {#view-assets-and-details}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
@@ -34,7 +34,7 @@ ht-degree: 86%
 
 ## 浏览并查看资源和文件夹 {#browse-repository}
 
-您可以从主用户界面或者从左侧边栏浏览文件夹。现在，在浏览或搜索内容时，Experience Manager Assets 会在文件夹缩略图上显示文件夹内容的视觉预览，从而提高了 AEM Assets 存储库中可用资产的可发现性。此文件夹缩略图可节省您在搜索AEM Assets存储库中文件夹内的特定资源时花费的时间。
+您可以从主用户界面或者从左侧边栏浏览文件夹。在浏览或搜索内容时，Experience Manager Assets会在文件夹缩略图上显示文件夹内容的可视预览。 这改进了AEM Assets存储库中可用资源的可发现性。 此文件夹缩略图可节省您在搜索AEM Assets存储库中文件夹内的特定资源时花费的时间。
 浏览文件夹中的资产时，您可以使用界面来查看资源缩略图，从而直观地浏览存储库或者查看资源详细信息，来快速查找所需的资源。左侧边栏中提供的选项包括：
 
 * [我的工作区](/help/assets/my-workspace-assets-view.md)：Assets 现在包括一个可自定义的工作区，此工作区提供各种小部件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。由于能够更方便地访问这些选项，因此可以提高您的效率和内容速度。
@@ -77,9 +77,9 @@ ht-degree: 86%
 
 要预览资源，请选择该资源并单击顶部工具栏中的[!UICONTROL 详细信息] ![详细信息图标](assets/do-not-localize/edit-in-icon.png)。您不仅可以查看资源，还可以查看其详细的元数据并采取其他操作。
 
-![预览资源](assets/preview-asset-2.png)
+![预览资源](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**：返回存储库中的当前文件夹或当前搜索结果 **B**：您正在预览的文件的名称和格式 **C**：分配任务 **D**：高级元数据 **E**：关键词和智能标记 **F**：评论和注释 **G**：查看与所选资源相关的任务 **H**：查看和管理版本 **I**：查看图像的演绎版 **J**：编辑图像 **K**：基本元数据 **L**：高级元数据 **M**：关键词和智能标记 **N**：更仔细地预览。缩放、全屏和其他选项 **O**：转入当前文件夹中的上一个或下一个资源但不返回文件夹
+**A**：返回存储库中的当前文件夹或当前搜索结果&#x200B;**B**：正在预览的文件的名称和格式&#x200B;**C**：分配任务&#x200B;**D**：高级元数据&#x200B;**E**：关键字和智能标记&#x200B;**F**：注释和批注&#x200B;**G**：查看与所选资源相关的任务&#x200B;**H**：查看和管理版本&#x200B;**I**：查看图像的演绎版&#x200B;**J**：编辑图像&#x200B;**K**：查看具有OpenAPI功能的Dynamic Media呈现版本，包括Smart Crop和Dynamic Media。 **L**：基本元数据&#x200B;**M**：高级元数据&#x200B;**N**：关键字和智能标记&#x200B;**O**：继续到当前文件夹中的上一个或下一个资源，而不返回文件夹&#x200B;**P**：更密切地预览。 缩放、全屏和其他选项。
 
 您也可以预览视频。
 
