@@ -4,13 +4,13 @@ description: 了解访问和导航通用编辑器的基础知识。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 44%
+source-wordcount: '1615'
+ht-degree: 42%
 
 ---
-
 
 # 访问和导航通用编辑器 {#navigating}
 
@@ -54,7 +54,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 1. 登录通用编辑器。 您需要Adobe ID才能登录，[才能访问通用编辑器。](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. 登录后，将要编辑的页面的 URL 输入到[地址栏](#location-bar)中，这样您就可以开始编辑内容，例如[文本内容](#text-mode)或[媒体内容](#media-mode)。
+1. 登录后，将要编辑的页面的 URL 输入到[地址栏](#location-bar)，以便您可以开始编辑文本内容或媒体内容等内容。
 
 ## 了解 UI {#ui}
 
@@ -280,7 +280,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ![添加图标](assets/ue-add-component-icon.png)
 
-点击或单击“添加”按钮将打开一个可用组件的下拉菜单[添加到选定的容器。](#adding-components)
+点击或单击“添加”按钮将打开一个可用组件的下拉菜单[添加到选定的容器。](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![添加上下文菜单](assets/add-context-menu.png)
 
@@ -288,13 +288,21 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 >
 >使用热键`a`将组件添加到选定的容器组件。
 
+##### 复制 {#duplicate}
+
+如果在内容树或编辑器中选择容器组件中的组件，则属性边栏上会显示复制选项。
+
+![图标重复](assets/duplicate.png)
+
+点击或单击重复按钮[将复制选定的组件。](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### 删除 {#delete}
 
 如果在内容树或编辑器中选择容器组件中的组件，则属性边栏上会显示删除选项。
 
 ![“删除”图标](assets/ue-delete-component-icon.png)
 
-点击或单击删除按钮[删除该组件。](#deleting-components)
+点击或单击删除按钮[删除该组件。](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >

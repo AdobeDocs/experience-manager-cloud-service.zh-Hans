@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1375'
 ht-degree: 40%
 
 ---
@@ -132,6 +132,16 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 >[!TIP]
 >
 >使用热键 `a` 可将组件添加到选定容器。
+
+### 在容器中复制组件 {#duplicating-components}
+
+1. 使用[内容树](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或编辑器在容器中选择组件。
+1. 然后在属性边栏中选择&#x200B;**复制**&#x200B;图标。
+
+   ![选择要添加到容器的组件](assets/ue-duplicate-component.png)
+1. 该组件将被复制并插入到选定组件的下方。
+
+该组件被插入到容器中并可以在编辑器中进行编辑。
 
 ### 从容器中删除组件 {#deleting-components}
 
