@@ -4,9 +4,9 @@ description: 本页介绍如何使用Screens Content Provider创建内容。
 exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: bdb82da7463bc6b5265a7271072fe3a771fbb380
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '382'
 ht-degree: 15%
 
 ---
