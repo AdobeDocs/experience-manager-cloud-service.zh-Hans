@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: 45d0d96e686d4e6c4d6cf96a8897533701665c64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 89%
 * [功能版本](/help/release-notes/release-notes-cloud/release-notes-current.md)按可预测的每月频率发布，侧重于新功能和产品创新。
 * [维护版本](/help/release-notes/maintenance/latest.md)经常发布，并侧重于安全更新、错误修复和性能增强。这可确保使用任何关键修复来使 [!DNL Adobe Experience Manager] as a Cloud Service 始终保持最新。
 
-除了创新速度之外，[!DNL Adobe Experience Manager] as a Cloud Service 还提供了灵活性，可在即将推出的功能发布到生产环境前的一整个月预览这些功能。这可让您在自己的自定义环境中试用功能并提前培训内部用户/帮助他们做好准备，从而评估即将发布的版本对其组织的影响。 如果您有 AEM 加载项（例如表单），也可以通过在[程序设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)中选择解决方案来确保对其进行更新。
+除了创新速度之外，[!DNL Adobe Experience Manager] as a Cloud Service 还提供了灵活性，可在即将推出的功能发布到生产环境前的一整个月预览这些功能。这可让您在自己的自定义环境中试用功能并提前培训/帮助内部用户做好准备，从而评估即将发布的版本对组织的影响。如果您有 AEM 加载项（例如表单），也可以通过在[程序设置](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)中选择解决方案来确保对其进行更新。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 89%
 
 要准备发布，请执行以下操作：
 
-1. 在日程表上做标记：在 [Experience Manager 版本路线图](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service)中检查每月发布的关键日期，在日程表上做标记，自行为关键活动做好准备以便进行发布。
+1. 在日程表上做标记：在 [Experience Manager 版本路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem-as-cloud-service)中检查每月发布的关键日期，在日程表上做标记，自行为关键活动做好准备以便进行发布。
 1. 查看发行说明：阅读[最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)以熟悉发行版和预发行版的功能。
 1. 访问和试用新功能：在非生产环境中启用[预发行渠道](/help/release-notes/prerelease.md)，并在您的自定义环境中试用功能以进行评估。
 1. 对您的用户进行培训：使用文档和 Experience League 资源，让用户快速了解并熟悉新功能。
