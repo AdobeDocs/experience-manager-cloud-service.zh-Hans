@@ -1,27 +1,31 @@
 ---
-title: 创建页面模板
-description: 模板可定义生成页面的结构，而且有了模板编辑器，创建和维护模板不再只是开发人员的任务
+title: 用于创建可使用页面编辑器编辑的页面的模板
+description: 您可以使用模板编辑器创建模板，内容作者可以使用模板创建可通过页面编辑器编辑的页面。
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
 workflow-type: tm+mt
-source-wordcount: '4524'
-ht-degree: 86%
+source-wordcount: '4415'
+ht-degree: 80%
 
 ---
 
-# 创建页面模板 {#creating-page-templates}
 
-创建页面时，您必须选择一个模板，以用作创建新页面的基础。模板可定义生成页面的结构、任何初始内容以及可使用的组件。
+# 用于创建可使用页面编辑器编辑的页面的模板 {#creating-page-templates}
 
-使用模 **板编辑器**，创建和维护模板不再只是开发人员的任务。高级用户(称为模板作者 **)也可能**。开发人员仍需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，模板作者就可以灵活地创建和配置模板，而无需开发项目。****
+您可以使用模板编辑器创建模板，内容作者可以使用模板创建可通过页面编辑器编辑的页面。
 
-在&#x200B;**“模板”控制台**&#x200B;中，模板作者可以执行以下操作：
+## 概述 {#overview}
 
-* 创建新模板，或复制现有模板。
-* 管理模板的生命周期。
+作者创建页面时，必须选择一个模板，该模板用作新页面的基础。 模板定义了结果页面的结构、任何初始内容，以及在页面编辑器中编辑页面时可以使用的组件。
+
+>[!NOTE]
+>
+>[模板也可用于创建可通过通用编辑器编辑的页面。](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+使用&#x200B;**模板编辑器**，创建和维护模板不是开发人员专属的任务。 高级用户（称为&#x200B;**模板作者**）可以创建模板。 开发人员需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，**模板作者**&#x200B;就可以灵活地创建和配置模板，而无需开发人员参与。
 
 在&#x200B;**模板编辑器**&#x200B;中，模板作者可以执行以下操作：
 
@@ -29,9 +33,9 @@ ht-degree: 86%
 * 预先配置组件。
 * 定义可在使用模板创建的页面上编辑的组件。
 
-本文档将介绍&#x200B;**模板作者**&#x200B;如何使用“模板”控制台和模板编辑器来创建和管理可编辑的模板。
+本文档介绍&#x200B;**模板作者**&#x200B;如何使用&#x200B;**模板编辑器**&#x200B;创建和管理可编辑模板。
 
-有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档[页面模板](/help/implementing/developing/components/templates.md)以了解更多信息。
+有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档[可编辑模板](/help/implementing/developing/components/templates.md)以了解更多信息。
 
 >[!NOTE]
 >
@@ -39,15 +43,15 @@ ht-degree: 86%
 
 ## 开始之前 {#before-you-start}
 
+在开始之前，请务必考虑创建模板需要协作。 因此，为每项任务指明了对应的[角色](#roles)。这并不会影响您使用模板来创建页面的实际操作方式，但却会影响页面与模板之间的关系。
+
 >[!NOTE]
 >
 >管理员必须在&#x200B;**配置浏览器**&#x200B;中配置一个模板文件夹，并应用适当的权限，之后模板作者才能在该文件夹中创建模板。
 
-在开始之前，请务必考虑创建模板需要协作。 因此，为每项任务指明了对应的[角色](#roles)。这并不会影响您使用模板来创建页面的实际操作方式，但却会影响页面与模板之间的关系。
-
 ### 角色 {#roles}
 
-使用&#x200B;**“模板”控制台**&#x200B;和&#x200B;**模板编辑器**&#x200B;创建新模板需要以下角色之间的协作：
+创建新模板需要以下角色之间的协作：
 
 * **管理员**:
    * 创建新的模板文件夹需要 `admin` 权限。
@@ -72,9 +76,6 @@ ht-degree: 86%
 
 创建可编辑模板时，您可以：
 
-* 使用&#x200B;**模板**&#x200B;控制台。此控制台可从&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分访问。
-   * 或直接从以下网站进行访问：`https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* 如有必要，可以[创建模板文件夹](#creating-a-template-folder-admin)
 * [创建新模板](#creating-a-new-template-template-author)，新模板最初是空的
 * 如有必要，[为模板定义其他属性](#defining-template-properties-template-author)
 * [编辑该模板](#editing-templates-template-authors)，以定义以下各项：
@@ -92,7 +93,7 @@ ht-degree: 86%
 
 >[!TIP]
 >
->切勿在模板中输入任何必须国际化的信息。<!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>切勿在模板中输入任何必须[国际化](/help/implementing/developing/extending/i18n/dev.md)的信息。
 >
 >对于必须本地化的模板元素（如页眉和页脚），请利用[核心组件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
@@ -102,7 +103,7 @@ ht-degree: 86%
 
 ### 创建新模板 – 模板作者 {#creating-a-new-template-template-author}
 
-1. 打开&#x200B;**模板控制台**（通过&#x200B;**工具>** **常规**），然后导航到所需的文件夹。
+1. 打开&#x200B;**[模板控制台](/help/sites-cloud/administering/templates-console.md)**，然后导航到所需的文件夹。
 
    >[!NOTE]
    >
@@ -129,7 +130,7 @@ ht-degree: 86%
    >
    >创建新模板后，会在控制台中将其标记为&#x200B;**草稿**，这表示页面作者还不能使用此模板。
 
->[!NOTE]
+>[!TIP]
 >
 >模板是简化页面创建工作流的强大工具。不过，太多的模板会让作者不知所措，并使页面创建变得混乱。一个好的经验法则是将模板的数量保持在 100 个以内。
 >
@@ -148,15 +149,7 @@ ht-degree: 86%
 * 描述
    * 可选描述，用于提供更多有关模板及其用法的信息，例如&#x200B;**创建页面**&#x200B;向导中显示的描述。
 
-要查看和/或编辑属性，请执行以下操作：
-
-1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
-1. 从工具栏或快速选项中选择&#x200B;**查看属性**&#x200B;以打开对话框。
-1. 此时您可以查看或编辑模板属性。
-
->[!NOTE]
->
->控制台中会指示模板的状态（“草稿”、“已启用”或“已禁用”）。
+创建模板后，使用&#x200B;**[模板控制台](/help/sites-cloud/administering/templates-console.md)**&#x200B;查看或编辑模板属性。
 
 #### 模板缩略图图像 {#template-thumbnail-image}
 
@@ -181,17 +174,11 @@ ht-degree: 86%
 
 可以启用或禁用模板，以使其在&#x200B;**创建页面**&#x200B;向导中可用或不可用。
 
+使用&#x200B;**[模板控制台](/help/sites-cloud/administering/templates-console.md)**&#x200B;启用或禁用模板。
+
 >[!CAUTION]
 >
 >启用模板后，当模板作者开始进一步更新模板时，系统会显示一条警告消息。此消息用于告知用户，该模板可能已被引用，因此所做的任何更改可能会影响引用该模板的页面。
-
-1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
-1. 从工具栏中选择&#x200B;**启用**&#x200B;或&#x200B;**禁用**，然后在确认对话框中再次选择“启用”或“禁用”。
-1. 现在，您可以在[创建页面](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page)时使用模板，不过您可能希望根据自己的要求[编辑模板](#editing-templates-template-authors)。
-
->[!NOTE]
->
->控制台中会指示模板的状态（“草稿”、“已启用”或“已禁用”）。
 
 #### 允许模板 – 作者 {#allowing-a-template-author}
 
@@ -211,7 +198,6 @@ ht-degree: 86%
    >
    >如果&#x200B;**允许的模板**&#x200B;列表为空，则树会向上追溯，直到找到值/列表。
    >
-   >
    >请参阅[模板可用性](/help/implementing/developing/components/templates.md#template-availability) – 对允许的模板适用的原则与此相同。
 
 1. 单击&#x200B;**保存**，以保存对页面属性所做的更改。
@@ -224,10 +210,7 @@ ht-degree: 86%
 
 由于渲染页面时会引用模板，因此必须发布完全配置的模板，才能在发布环境中使用该模板。
 
-1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
-1. 从工具栏中选择&#x200B;**发布**&#x200B;以打开向导。
-1. 选择要一同发布的&#x200B;**内容策略**。
-1. 从工具栏中选择&#x200B;**发布**&#x200B;以完成操作。
+使用&#x200B;**[模板控制台](/help/sites-cloud/administering/templates-console.md)**&#x200B;的Publish模板
 
 ## 编辑模板 - 模板作者 {#editing-templates-template-authors}
 
@@ -664,4 +647,4 @@ ht-degree: 86%
    >在已不再是草稿的模板上更改组件的锁定状态时，AEM 会显示明确的警告消息。
 
 1. 为特定于站点的模板[创建您自己的文件夹](#creating-a-template-folder-admin)。
-1. 从&#x200B;**模板**&#x200B;控制台[发布您的模板](#publishing-a-template-template-author)。
+1. 从&#x200B;**[模板控制台[Publish您的模板](#publishing-a-template-template-author)。]**(/help/sites-cloud/administering/templates-console.md)

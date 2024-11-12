@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8406caedaec4236d9fb2a0ce3e97f96417186c45
+source-git-commit: 69428ec9709dae212e568e6100b4451ea3c67289
 workflow-type: tm+mt
-source-wordcount: '5780'
+source-wordcount: '5782'
 ht-degree: 98%
 
 ---
@@ -362,7 +362,7 @@ ht-degree: 98%
          + [使用 Universal Editor 创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [使用 Universal Editor 发布内容](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [通用编辑器中的内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
-         + [页面模板](/help/edge/wysiwyg-authoring/templates.md)
+         + [页面模板](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 片段 {#fragments}
          + [内容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [体验片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -454,6 +454,7 @@ ht-degree: 98%
             + [翻译最佳实践](/help/sites-cloud/administering/translation/best-practices.md)
       + [管理标记](/help/sites-cloud/administering/tags.md)
       + [管理工作流程](/help/sites-cloud/administering/workflows-administering.md)
+      + [模板控制台](/help/sites-cloud/administering/templates-console.md)
    + 与 AEM as a Cloud Service 集成 {#integrations}
       + [与 Adobe Analytics 集成](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [与 Adobe Analytics 自动化设置集成](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)

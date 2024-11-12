@@ -1,46 +1,60 @@
 ---
-title: 页面模板
-description: 创建用作新页面基础的页面时，将使用页面模板
+title: 可编辑模板
+description: 了解在创建页面、定义其初始内容、结构化内容、创作策略和布局时如何使用可编辑模板。
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3443'
 ht-degree: 4%
 
 ---
 
-# 页面模板 {#page-templates}
+# 可编辑模板 {#editable-templates}
 
-创建页面时，您需要选择模板。 页面模板用作新页面的基础。 模板定义生成页面的结构、任何初始内容以及可以使用的组件（设计属性）。 这有几个优点：
+了解在创建页面、定义其初始内容、结构化内容、创作策略和布局时如何使用可编辑模板。
 
-* 页面模板允许专业作者[创建和编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)。
-   * 此类专用作者称为&#x200B;**模板作者**
-   * 模板作者必须是`template-authors`组的成员。
-* 页面模板会保留与从中创建的任何页面的动态连接。 这可确保对模板所做的任何更改都会反映在页面本身中。
-* 页面模板使页面组件变得更通用，以便无需自定义即可使用核心页面组件。
+## 概述 {#overview}
 
-使用页面模板，构成页面的片段被隔离在组件中。 您可以在UI中配置必要的组件组合，从而无需为每个页面变体开发新的页面组件。
+创建页面时，您需要选择模板。 页面模板用作新页面的基础。 模板可以定义生成页面的结构、任何初始内容以及可以使用的组件（设计属性）。
+
+* 可编辑的模板允许作者创建和使用模板。
+* 可编辑模板可用于创建可通过以下两种方式编辑的页面
+   * [页面编辑器](/help/sites-cloud/authoring/page-editor/templates.md)和
+   * [Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+用于创建可通过通用编辑器编辑的页面的页面模板使用可编辑模板功能的有限子集。 因此，本文档的其余部分侧重于用于创建可通过页面编辑器编辑的页面的可编辑模板。
+
+## 使用页面编辑器编辑的可编辑模板和页面 {#page-editor}
+
+在创建用于创建可使用页面编辑器编辑的页面的模板时，通常会识别专门的作者。
+
+* 此类专用作者称为&#x200B;**模板作者**
+* 模板作者必须是`template-authors`组的成员。
+* 可编辑的模板会保留与从这些模板创建的任何页面的动态连接。 这可确保对模板所做的任何更改都会反映在页面本身中。
+* 可编辑模板使页面组件变得更通用，以便无需自定义即可使用核心页面组件。
+
+使用可编辑的模板，构成页面的片段将被隔离在组件中。 您可以在UI中配置必要的组件组合，从而无需为每个页面变体开发新的页面组件。
 
 本文档：
 
-* 提供了创建页面模板的概述
+* 提供了创建可编辑模板的概述
 * 描述创建可编辑模板所需的管理员/开发人员任务
 * 描述可编辑模板的技术基础
 * 描述AEM如何评估模板的可用性
 
 >[!NOTE]
 >
->本文档假设您已熟悉创建和编辑模板。 请参阅创作文档[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md)，其中详细说明了向模板作者公开的可编辑模板的功能。
+>本文档假设您已熟悉创建和编辑模板。 请参阅创作文档[用于创建可使用页面编辑器编辑的页面的模板](/help/sites-cloud/authoring/page-editor/templates.md)，其中详细说明了向模板作者公开的可编辑模板的功能。
 
 >[!TIP]
 >
->[WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)通过实施示例深入了解如何使用页面模板，对于了解如何在新项目中设置模板非常有用
+>[WKND教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)通过实施示例深入探讨了如何使用可编辑模板，这对于了解如何在新项目中设置模板非常有用
 
-## 创建新模板 {#creating-a-new-template}
+## 创建新的可编辑模板 {#creating-a-new-template}
 
-创建页面模板主要由模板作者使用[模板控制台和模板编辑器](/help/sites-cloud/authoring/page-editor/templates.md)完成。 本节概述了此过程，并在后面描述了技术级别所发生的情况。
+创建可编辑模板主要由模板作者使用[模板控制台和模板编辑器](/help/sites-cloud/authoring/page-editor/templates.md)完成。 本节概述了此过程，并在后面描述了技术级别所发生的情况。
 
 创建可编辑模板时，您可以：
 
@@ -60,7 +74,7 @@ ht-degree: 4%
    * 如果要使页面作者能够添加和删除组件，请在模板中添加段落系统。
    * 可以解锁组件，然后再将其锁定，以便定义初始内容。
 
-   有关模板作者如何定义结构的详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)。
+   有关模板作者如何定义结构的详细信息，请参阅[用于创建可使用页面编辑器编辑的页面的模板](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)。
 
    有关结构的技术详细信息，请参阅本文档中的[结构](#structure)。
 
@@ -72,7 +86,7 @@ ht-degree: 4%
 
    * 这些属性适用于模板（和使用模板创建的页面）。
 
-   有关模板作者如何定义策略的详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)。
+   有关模板作者如何定义策略的详细信息，请参阅[创建可通过页面编辑器编辑的页面的模板](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author)。
 
    有关策略的技术详细信息，请参阅本文档中的[内容策略](#content-policies)。
 
@@ -81,7 +95,7 @@ ht-degree: 4%
    * 初始内容定义首次根据模板创建页面时将显示的内容。
    * 随后，页面作者可以编辑初始内容。
 
-   有关模板作者如何定义结构的详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author)。
+   有关模板作者如何定义结构的详细信息，请参阅[用于创建可使用页面编辑器编辑的页面的模板](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author)。
 
    有关初始内容的技术详细信息，请参阅本文档中的[初始内容](#initial-content)。
 
@@ -90,7 +104,7 @@ ht-degree: 4%
    * 您可以为各种设备定义模板布局。
    * 模板的响应式布局与页面创作时的响应式布局功能相同。
 
-   有关模板作者如何定义模板布局的详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author)。
+   有关模板作者如何定义模板布局的详细信息，请参阅[用于创建可使用页面编辑器编辑的页面的模板](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author)。
 
    有关模板布局的技术详细信息，请参阅本文档中的[布局](#layout)。
 
@@ -99,7 +113,7 @@ ht-degree: 4%
    * 可以启用或禁用模板，使其对页面作者可用或不可用。
    * 可以使模板可用于或不可用于某些页面分支。
 
-   有关模板作者如何启用模板的详细信息，请参阅[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)。
+   有关模板作者如何启用模板的详细信息，请参阅[创建可通过页面编辑器编辑的页面的模板](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author)。
 
    有关启用模板的技术详细信息，请参阅本文档中的[为我们启用和允许模板](#enabling-and-allowing-a-template-for-use)e
 
@@ -129,8 +143,6 @@ ht-degree: 4%
 >所有示例内容页面都包含`cq.shared`，因此任何基于它们的内容都会自动包含`cq.shared`。 但是，如果您决定从头开始创建自己的内容页面，而不基于示例内容，则必须确保包含`cq.shared`命名空间。
 >
 >有关详细信息，请参阅[使用客户端库](/help/implementing/developing/introduction/clientlibs.md)。
-
-
 
 ## 模板文件夹 {#template-folders}
 
@@ -357,7 +369,7 @@ When creating an editable template, the value is copied from the template type t
 
 如果您已创建可作为其他模板基础的模板，则可以将此模板作为模板类型复制。
 
-1. 创建模板，就像创建任何页面模板一样。 请参阅[创建页面模板](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)。 这将用作模板类型的基础。
+1. 创建模板，就像创建任何页面模板一样。 请参阅[创建可通过页面编辑器编辑的页面的模板](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)。 这将用作模板类型的基础。
 1. 使用CRXDE Lite，将创建的模板从`templates`节点复制到[模板文件夹](#template-folders)下的`template-types`节点。
 1. 从[模板文件夹](#template-folders)下的`templates`节点中删除模板。
 1. 在`template-types`节点下的模板副本中，从所有`jcr:content`节点中删除所有`cq:template`和`cq:templateType`属性。
@@ -455,9 +467,7 @@ GITHUB上的代码
 
 ### 布局 {#layout}
 
-在[编辑模板时，您可以定义布局](/help/sites-cloud/authoring/page-editor/templates.md)，这会使用[标准响应布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。
-
-<!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
+在[编辑模板时，您可以定义布局](/help/sites-cloud/authoring/page-editor/templates.md)，这会使用[标准响应布局，](/help/sites-cloud/administering/responsive-layout.md)，内容作者可以在页面上对该布局进行[配置。](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 ### 内容策略 {#content-policies}
 
