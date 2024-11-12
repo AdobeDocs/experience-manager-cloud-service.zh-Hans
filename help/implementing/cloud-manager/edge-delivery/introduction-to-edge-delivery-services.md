@@ -4,9 +4,9 @@ description: 了解如何使用Edge Delivery Services交付Cloud Manager项目�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '752'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 
 如果您已将许可Edge Delivery Services作为Adobe Experience Manager Sites的一部分，则可以直接在Cloud Manager中使用Edge Delivery Services载入您的网站，并使用引导式自助服务体验[上线](/help/implementing/cloud-manager/managing-code/private-repositories.md)。
 
-此外，您可以访问用于管理所有AEM属性的统一体验，同时确保关键工作流之间的一致性。 这些功能包括域名管理、SSL证书管理和CDN映射。
+此外，您可以访问用于管理所有AEM属性的统一体验，同时确保关键工作流之间的一致性。 这些工作流包括域名管理、SSL证书管理和CDN映射。
 
 ## 为Edge Delivery Services使用Adobe推荐路径的好处 {#recommended-path-eds}
 
@@ -74,12 +74,13 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 |   | 任务 | 描述 |
 | --- | --- | --- |
 | 1 | 加入产品协作渠道 | 单击&#x200B;**立即提交请求**&#x200B;将向Adobe提交一个请求，以便为贵公司创建渠道。 如果该渠道已存在，则将您转发到公司的渠道。 |
-| 2 | 完成先决条件 | 单击&#x200B;**查看入门教程**，会将您引导至[快速入门 — 开发人员教程](https://www.aem.live/developer/tutorial)。 |
+| 2 | 完成先决条件 | 请参阅[查看入门教程](https://www.aem.live/developer/tutorial)。 |
 | 3 | 添加Edge Delivery站点 | 请参阅[添加Edge Delivery站点](#eds-add-site)。 |
 | 4 | 添加域 | 参见[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 添加 SSL 证书 | 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 配置Edge Delivery站点的CDN | 请参阅[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |
-| 7 | 上线 | 完成上线中的最后一步。 |
+| 7 | 设置推送验证 | 请参阅[安装程序推送验证](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)。 |
+| 8 | 上线 | 查看[上线清单](/help/edge/docs/go-live-checklist.md)。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
