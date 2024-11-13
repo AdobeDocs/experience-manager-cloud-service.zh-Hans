@@ -1,10 +1,10 @@
 ---
-title: 通用编辑器2024.11.12发行说明
-description: 这些是通用编辑器2024.11.12版的发行说明。
+title: 通用编辑器2024.11.13发行说明
+description: 这些是通用编辑器2024.11.13版的发行说明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 03ccad00e689052ada8cca976d6c385be01d3cc9
+source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 5%
@@ -12,9 +12,9 @@ ht-degree: 5%
 ---
 
 
-# 通用编辑器2024.11.12发行说明 {#release-notes}
+# 通用编辑器2024.11.13发行说明 {#release-notes}
 
-这些是通用编辑器2024年11月12日版本的发行说明。
+这些是通用编辑器2024年11月13日版本的发行说明。
 
 >[!TIP]
 >
