@@ -3,9 +3,10 @@ title: AEM Assets视图UI可扩展性
 description: 了解AEM Assets视图的UI可扩展性功能。 AEM Assets视图UI允许添加自定义UI组件以满足特定业务需求。
 feature: App Builder
 role: User, Developer
-source-git-commit: c1446200898102881a20508031d4853c61f7c964
+exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
+source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 3%
 
 ---
@@ -26,7 +27,7 @@ AEM Assets视图具有UI可扩展性功能。 此功能允许用户将自定义U
 通过以下方式访问Assets视图：
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
 
-## 添加的UI可扩展性组件显示在Assets视图UI上的什么位置？ {#ui-extensibility-panel-assets-view}
+## UI扩展在Assets视图UI上的什么位置显示？ {#ui-extensibility-panel-assets-view}
 
 在Assets视图中，导航到资产、文件夹或收藏集的详细信息页面。 此详细信息页面有一个专用面板，用于显示添加的UI扩展。
 ![我的工作区](/help/assets/assets/my-workspace-assets-view3.png)
@@ -52,5 +53,3 @@ AEM Assets视图具有UI可扩展性功能。 此功能允许用户将自定义U
 1. 设置您的本地环境，并通过创建您的第一个UI扩展来体验在Assets视图中开发UI扩展的过程。 有关更多详细信息，请参阅[AEM Assets分步查看扩展开发](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)。
 1. 使用AIO CLI设置应用程序以生成基本扩展结构和所需代码。 有关详细信息，请参阅AEM Assets视图](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)的[代码生成。
 1. 在本地测试您的扩展，以确保它们在部署之前可按预期工作。 在完全隔离的环境中或以部分隔离的方式运行扩展，然后将扩展连接到生产AEM Assets视图进行测试。 有关详细信息，请参阅[疑难解答 — AEM Assets视图可扩展性](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/)。
-
-
