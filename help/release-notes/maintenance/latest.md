@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
+source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 29%
+source-wordcount: '820'
+ht-degree: 22%
 
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 29%
 * SITES-21199：带有通用编辑器的Edge Delivery：为从页面创建的模板添加支持。
 * SITES-20311：带有通用编辑器的Edge Delivery：添加支持以将CSV导入电子表格。
 * SITES-24821：带有通用编辑器的Edge Delivery：将aem.page / aem.live设置为默认与Edge Delivery集成。
+* Forms-11646：为AEM Forms相关页面设置globalContext变量
+* Forms-14833：AEM Forms现在能够在最终记录文档(DoR)中包含自适应表单片段。
+* Forms-14255：用户现在可以从自动保存功能中受益，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回，在同一台或其他设备上完成填写。
+
 
 ### 修复的问题 {#fixed-issues-18459}
 
@@ -60,6 +64,11 @@ ht-degree: 29%
 * SITES-25393：带有通用编辑器的Edge Delivery：呈现带单个段落的格式化富文本时，文本节点丢失。
 * SITES-24643：带有通用编辑器的Edge Delivery：OpenGraph和twitter元数据属性在页面元数据模型中不起作用。
 * SITES-25401：体验片段：XF引用更新缓慢
+* GRANITE-53907：无法将服务用户标识为工作流超级用户
+* CQ-4358028：当仅具有project-administrators组的用户在项目创建页面上上传新缩略图时，AEM项目创建失败。
+* Forms-15682：该问题涉及AEM Forms和Dynamics FDM集成。 当用户提交表单时，记录文档(DOR)未作为PDF附件发送到指定的实体字段。
+* Forms-15799： Adobe Sign GovCloud“签名”页面不会在iframe中渲染
+* Forms-16113：当作为Adobe Sign帐户管理员的用户尝试访问由其他用户（也是管理员）发送的文档时，获取协议API可能会返回与创建协议时最初生成的协议ID不同的协议ID。
 
 
 ### 已知问题 {#known-issues-18459}
