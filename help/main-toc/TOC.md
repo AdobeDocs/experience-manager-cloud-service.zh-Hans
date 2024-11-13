@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
 workflow-type: tm+mt
-source-wordcount: '5794'
+source-wordcount: '5799'
 ht-degree: 98%
 
 ---
@@ -1149,6 +1149,7 @@ ht-degree: 98%
       + Edge Delivery Sites{#edge-delivery-sites}
          + [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [将 Edge Delivery Site 添加到 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
+         + [为Edge Delivery站点设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 域设置 {#custom-domain-names}
          + [域设置简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1163,7 +1164,6 @@ ht-degree: 98%
          + [管理 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN 配置{#cdn-configurations}
          + [添加 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [设置推送验证](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)
          + [管理 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允许列表{#ip-allow-lists}
          + [IP 允许列表简介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

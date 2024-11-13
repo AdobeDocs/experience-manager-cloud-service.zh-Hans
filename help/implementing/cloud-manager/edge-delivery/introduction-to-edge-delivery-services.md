@@ -4,9 +4,9 @@ description: 了解如何使用Edge Delivery Services交付Cloud Manager项目�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '757'
 ht-degree: 10%
 
 ---
@@ -79,7 +79,7 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 | 4 | 添加域 | 参见[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 添加 SSL 证书 | 请参阅[添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 配置Edge Delivery站点的CDN | 请参阅[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |
-| 7 | 设置推送验证 | 请参阅[安装程序推送验证](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md)。 |
+| 7 | 设置推送验证 | 请参阅[为Edge Delivery站点设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
 | 8 | 上线 | 查看[上线清单](/help/edge/docs/go-live-checklist.md)。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
