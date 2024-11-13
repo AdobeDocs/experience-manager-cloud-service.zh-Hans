@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
+source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 22%
+source-wordcount: '842'
+ht-degree: 23%
 
 ---
 
@@ -16,15 +16,18 @@ ht-degree: 22%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 18459 {#18459}
+## 版本 18598 {#18598}
 
-以下总结了维护版本18459的不断改进，该版本于2024年11月5日公开发布。 上一个维护版本是版本 18311。
+以下总结了维护版本18598的不断改进，该版本于2024年11月13日公开发布。 上一个维护版本是版本 18311。由于存在问题，版本 18459 已被设为专有。
 
 激活 2024.11.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强 {#enhancements-18459}
+### 增强 {#enhancements-18598}
 
 * CQ-4357471：在AEMaaCS中添加对i18n词典翻译的支持。
+* Forms-11646：为AEM Forms相关页面设置globalContext变量。
+* Forms-14833：AEM Forms现在能够在最终记录文档(DoR)中包含自适应表单片段。
+* Forms-14255：用户现在可以从自动保存功能中受益，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回，在同一台或其他设备上完成填写。
 * SITES-23591：内容片段：升级内容片段以支持UUID。
 * SITES-25440：内容片段：CFM搜索API可显示复制状态。
 * SITES-24369：内容片段：OpenAPI文档改进。
@@ -33,16 +36,18 @@ ht-degree: 22%
 * SITES-21199：带有通用编辑器的Edge Delivery：为从页面创建的模板添加支持。
 * SITES-20311：带有通用编辑器的Edge Delivery：添加支持以将CSV导入电子表格。
 * SITES-24821：带有通用编辑器的Edge Delivery：将aem.page / aem.live设置为默认与Edge Delivery集成。
-* Forms-11646：为AEM Forms相关页面设置globalContext变量
-* Forms-14833：AEM Forms现在能够在最终记录文档(DoR)中包含自适应表单片段。
-* Forms-14255：用户现在可以从自动保存功能中受益，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回，在同一台或其他设备上完成填写。
 
-
-### 修复的问题 {#fixed-issues-18459}
+### 修复的问题 {#fixed-issues-18598}
 
 * CQ-4358730：当要翻译的键超过10个时，CQPagePreviewGenerator失败。
+* CQ-4358028：当仅具有project-administrators组的用户在项目创建页面上上传新缩略图时，AEM项目创建失败。
 * Forms-14978：为主题编辑器的基于核心组件的表单启用页面加载。
+* Forms-15682：该问题涉及AEM Forms和Dynamics FDM集成。 当用户提交表单时，记录文档(DOR)未作为PDF附件发送到指定的实体字段。
+* Forms-15799： Adobe Sign GovCloud签名页面不会在iframe中渲染注释。
+* Forms-16113：当作为Adobe Sign帐户管理员的用户尝试访问由其他用户（也是管理员）发送的文档时，获取协议API可能会返回与创建协议时最初生成的协议ID不同的协议ID。
 * Forms-16596：辅助功能问题：屏幕Reader无法识别已禁用的按钮。
+* GRANITE-53907：无法将服务用户标识为工作流超级用户。
+* SKYOPS-90560：最新Sling模型版本影响Sling模型导出的性能。
 * SITES-10575： MSM：Blueprint Bloomfilter加载器尝试加载超过100,000行。
 * SITES-20755：内容片段：刷新UUID的资源引用不显示缩略图。
 * SITES-26253：内容片段：UUID迁移：将sling作业主题更改为通用。
@@ -63,27 +68,21 @@ ht-degree: 22%
 * SITES-25938：启动项：翻译项目后意外删除。
 * SITES-25393：带有通用编辑器的Edge Delivery：呈现带单个段落的格式化富文本时，文本节点丢失。
 * SITES-24643：带有通用编辑器的Edge Delivery：OpenGraph和twitter元数据属性在页面元数据模型中不起作用。
-* SITES-25401：体验片段：XF引用更新缓慢
-* GRANITE-53907：无法将服务用户标识为工作流超级用户
-* CQ-4358028：当仅具有project-administrators组的用户在项目创建页面上上传新缩略图时，AEM项目创建失败。
-* Forms-15682：该问题涉及AEM Forms和Dynamics FDM集成。 当用户提交表单时，记录文档(DOR)未作为PDF附件发送到指定的实体字段。
-* Forms-15799： Adobe Sign GovCloud“签名”页面不会在iframe中渲染
-* Forms-16113：当作为Adobe Sign帐户管理员的用户尝试访问由其他用户（也是管理员）发送的文档时，获取协议API可能会返回与创建协议时最初生成的协议ID不同的协议ID。
+* SITES-25401：体验片段：XF引用更新缓慢。
 
-
-### 已知问题 {#known-issues-18459}
+### 已知问题 {#known-issues-18598}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-18459}
+### 已弃用的功能和 API {#deprecated-18598}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在 [已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-### 安全修复 {#security-18459}
+### 安全修复 {#security-18598}
 
 AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 21 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-### 嵌套的技术 {#embedded-tech-18459}
+### 嵌套的技术 {#embedded-tech-18598}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
