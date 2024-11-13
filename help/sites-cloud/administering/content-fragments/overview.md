@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 96%
+source-wordcount: '1818'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 >
 >可从&#x200B;**内容片段**&#x200B;和&#x200B;**资源**&#x200B;这两个控制台访问内容片段。
 >
->内容片段还有两个编辑器可用。（从这两个控制台均可访问这两个编辑器。）
+>还有两个编辑器用于创作内容片段；尽管基本功能相同，但存在一些差异。 两个编辑器都可从两个控制台中访问。
 >
 >此部分涉及&#x200B;**内容片段**&#x200B;控制台和&#x200B;*新*&#x200B;的内容片段编辑器。这些是专为 Headless 内容投放开发而成（虽然它们可用于所有场景）
 >

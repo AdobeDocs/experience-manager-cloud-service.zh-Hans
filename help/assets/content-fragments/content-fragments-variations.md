@@ -5,9 +5,9 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2504'
 ht-degree: 53%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 53%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
+>创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
 在&#x200B;**变体**&#x200B;选项卡中，您可以执行以下操作：
 
@@ -56,6 +56,8 @@ ht-degree: 53%
 您可以：
 
 * 直接在&#x200B;**变体**&#x200B;选项卡中编辑您的内容；每种数据类型都提供不同的编辑选项，例如：
+
+   * 当在模型中配置为（多个）时，各种数据类型允许您&#x200B;**添加相关字段的**&#x200B;个实例
 
    * 对于&#x200B;**多行文本**&#x200B;字段，您还可以打开[全屏编辑器](#full-screen-editor)以：
 

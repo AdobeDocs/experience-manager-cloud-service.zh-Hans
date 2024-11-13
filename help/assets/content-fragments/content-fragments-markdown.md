@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 80%
+source-wordcount: '597'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 80%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
+>创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
 ![Markdown 编辑器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

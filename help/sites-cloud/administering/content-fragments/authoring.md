@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2685'
-ht-degree: 77%
+source-wordcount: '2704'
+ht-degree: 76%
 
 ---
 
@@ -60,6 +60,7 @@ ht-degree: 77%
    * 在&#x200B;**属性**&#x200B;选项卡中，可更新片段或&#x200B;**变体**&#x200B;的&#x200B;**标题**&#x200B;和&#x200B;**描述**
 * 中央面板：显示所选变体的实际字段和内容
    * 使您可编辑内容
+      * 当在模型中配置为（多个）时，各种数据类型允许您&#x200B;**添加相关字段的**&#x200B;个实例
    * 如果在模型中定义了&#x200B;**选项卡占位符**&#x200B;字段，则它们将显示在此处，并且可用于导航；它们将会水平显示或作为下拉列表显示。
 
   >[!NOTE]

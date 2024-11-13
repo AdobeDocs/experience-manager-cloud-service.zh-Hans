@@ -5,10 +5,10 @@ exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 45%
+source-wordcount: '292'
+ht-degree: 44%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 45%
 >
 >内容片段是一项站点功能，但存储为&#x200B;**资源**。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。
+>创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。
 
 ## 添加关联内容 {#adding-associated-content}
 

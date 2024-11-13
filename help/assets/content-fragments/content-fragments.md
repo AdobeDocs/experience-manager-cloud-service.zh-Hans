@@ -5,9 +5,9 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 7afa76f62791cf7f34c39a09c5b80c6459028e5b
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2220'
+source-wordcount: '2231'
 ht-degree: 59%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 59%
 >
 >它们现在主要通过&#x200B;**[内容片段](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**&#x200B;控制台进行管理，但仍可以从&#x200B;**Assets**&#x200B;控制台进行管理。 本节介绍如何从&#x200B;**Assets**&#x200B;控制台进行管理。
 >
->创作内容片段有两个编辑器。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
+>创作内容片段有两个编辑器；尽管基本功能相同，但存在一些差异。 本节介绍原始编辑器，主要从&#x200B;**Assets**&#x200B;控制台访问。 有关新编辑器（主要从&#x200B;**内容片段**&#x200B;控制台访问）的详细信息，请参阅站点文档[内容片段 — 创作](/help/sites-cloud/administering/content-fragments/authoring.md)。 两个编辑器的顶部工具栏中都有一个切换开关，用于提供对另一个编辑器的快速访问。
 
 本页和以下页面介绍了创建、配置、维护和使用内容片段的任务：
 
