@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
-workflow-type: ht
-source-wordcount: '1514'
-ht-degree: 100%
+source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+workflow-type: tm+mt
+source-wordcount: '1670'
+ht-degree: 89%
 
 ---
 
@@ -101,11 +101,19 @@ Content Hub 现在允许您配置需要在资源卡信息上显示的关键元�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### AEM Forms 中的新功能 {#forms-new-features}
+
+* **使用面板布局中的导航按钮增强用户体验**：您现在可以将导航按钮添加到面板布局，如水平选项卡、垂直选项卡、折叠面板或向导。 这些按钮通过简化面板之间的过渡来增强用户体验，侧重于选定的面板。
+
+* **为记录文档(DoR)组件指定显示样式**：在XFA文件中，您现在可以为记录文档组件指定显示样式。 这些样式稍后可以应用于自适应Forms编辑器中的相应组件。
+
 ### AEM Forms 预发行版中的新功能 {#forms-new-prerelease-features}
 
-#### 自动保存基于核心组件的自适应表单草稿
+* **自动保存基于核心组件的自适应Forms的草稿**：用户现在可以受益于自动保存功能，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃来提高组织的转化率，因为用户不需要从头开始填写表单。
 
-用户现在可以享受自动保存功能，该功能可以自动将部分完成的表格保存为草稿。他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃来提高组织的转化率，因为用户不需要从头开始填写表单。
+* **轻松更新Adobe Sign作用域**：您可以直接从“AEM Cloud配置”页面修改Adobe Sign配置的作用域，以便更快、更轻松地更新现有配置。
+
+* **对自适应Forms的异步函数支持**：当自适应表单需要异步操作（如等待外部进程或数据检索）时，您可以使用自定义函数实施这些操作并在规则编辑器中配置它们。
 
 ### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
 
