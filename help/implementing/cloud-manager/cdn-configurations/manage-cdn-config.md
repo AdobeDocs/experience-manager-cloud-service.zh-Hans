@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
+source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 8%
@@ -63,7 +63,7 @@ ht-degree: 8%
 
 1. 在&#x200B;**编辑CDN配置**&#x200B;对话框中，在相应的下拉列表中设置一个或多个选项。
 
-对话框中显示的选项取决于您使用的是&#x200B;**Adobe托管的CDN**&#x200B;还是&#x200B;**其他CDN提供商** （客户托管的CDN）。
+   对话框中显示的选项取决于您使用的是&#x200B;**Adobe托管的CDN**&#x200B;还是&#x200B;**其他CDN提供商** （客户托管的CDN）。
 
 1. 单击&#x200B;**更新**。
 

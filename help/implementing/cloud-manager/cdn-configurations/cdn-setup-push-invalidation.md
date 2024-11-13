@@ -4,9 +4,10 @@ description: 了解如何配置推送失效以构建您自己的生产CDN。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
+exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
+source-git-commit: 0ac6856e8f3e664fcc7e3c08faac4c4f5c16af18
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '161'
 ht-degree: 2%
 
 ---
@@ -28,4 +29,4 @@ ht-degree: 2%
 
 一旦对配置工作表进行了更改，用户必须使用[Sidekick工具](/help/edge/docs/sidekick.md)来预览和激活它们以应用更新。
 
-另请参阅[Cloud Manager中的Edge Delivery Services简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)。
+另请参阅[关于Cloud Manager中的Edge Delivery待办事项列表](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)。
