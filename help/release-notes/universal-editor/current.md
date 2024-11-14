@@ -7,14 +7,14 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 98795cab471470442cf5c424a67ce2846cfe85dc
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
 
 # 通用编辑器2024.11.13发行说明 {#release-notes}
 
-这些是通用编辑器2024年11月13日版本的发行说明。
+这些是通用编辑器 2024 年 11 月 13 号版本的发行说明。
 
 >[!TIP]
 >
