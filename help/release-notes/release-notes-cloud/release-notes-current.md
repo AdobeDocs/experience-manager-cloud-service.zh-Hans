@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+source-git-commit: 4e74efa73f0f7d6d9db13001dbc5ebc2ddba98cd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1633'
 ht-degree: 89%
 
 ---
@@ -101,19 +101,19 @@ Content Hub 现在允许您配置需要在资源卡信息上显示的关键元�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms 中的新功能 {#forms-new-features}
+### AEM Forms中的新增功能 {#forms-new-features}
 
-* **使用面板布局中的导航按钮增强用户体验**：您现在可以将导航按钮添加到面板布局，如水平选项卡、垂直选项卡、折叠面板或向导。 这些按钮通过简化面板之间的过渡来增强用户体验，侧重于选定的面板。
+* [使用面板布局中的导航按钮增强用户体验](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)：您现在可以将导航按钮添加到面板布局，如水平选项卡、垂直选项卡、折叠面板或向导。 这些按钮通过简化面板之间的过渡来增强用户体验，侧重于选定的面板。
 
-* **为记录文档(DoR)组件指定显示样式**：在XFA文件中，您现在可以为记录文档组件指定显示样式。 这些样式稍后可以应用于自适应Forms编辑器中的相应组件。
+<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### AEM Forms 预发行版中的新功能 {#forms-new-prerelease-features}
 
-* **自动保存基于核心组件的自适应Forms的草稿**：用户现在可以受益于自动保存功能，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃来提高组织的转化率，因为用户不需要从头开始填写表单。
+* [自动保存基于核心组件的自适应Forms的草稿](/help/forms/save-core-component-based-form-as-draft.md)：用户现在可以受益于自动保存功能，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃来提高组织的转化率，因为用户不需要从头开始填写表单。
 
-* **轻松更新Adobe Sign作用域**：您可以直接从“AEM Cloud配置”页面修改Adobe Sign配置的作用域，以便更快、更轻松地更新现有配置。
+* [轻松更新Adobe Sign作用域](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms)：您可以直接从“AEM Cloud配置”页面修改Adobe Sign配置的作用域，以便更快、更轻松地更新现有配置。
 
-* **对自适应Forms的异步函数支持**：当自适应表单需要异步操作（如等待外部进程或数据检索）时，您可以使用自定义函数实施这些操作并在规则编辑器中配置它们。
+* [对自适应Forms的异步函数支持](/help/forms/using-async-funct-in-rule-editor.md)：当自适应表单需要异步操作（如等待外部进程或数据检索）时，您可以使用自定义函数实施这些操作并在规则编辑器中配置它们。
 
 ### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
 
@@ -123,7 +123,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 #### AEM Forms AI 助手
 
-自适应表单的生成式 AI 为您的表单开发流程带来了全新的强大功能和便捷性。它使您能够比以往更快地构建更优质的表单。
+[自适应Forms的创作AI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai)为您的表单开发过程带来了全新水平的功能和便利性。 它使您能够比以往更快地构建更优质的表单。
 
 ![生成式 AI 助手、自适应表单](/help/forms/assets/generative-ai-assistant.png)
 
