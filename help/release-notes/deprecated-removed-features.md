@@ -4,10 +4,10 @@ description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 04ec933125da9ee3c84ffd948b144581d31763d6
+source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 100%
+source-wordcount: '2576'
+ht-degree: 96%
 
 ---
 
@@ -499,3 +499,16 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
       * 类型：布尔值
 +++
 
+## Java运行时更新至版本21 {#java-runtime-update-21}
+
+AEM as a Cloud Service将迁移到Java 21运行时。 为确保兼容性，必须进行以下调整：
+
+### org.objectweb.asm {#org.objectweb.asm}的最低版本
+
+将org.objectweb.asm的使用更新到9.5版或更高版本，以确保支持更新的JVM运行时。
+
+### org.apache.groovy {#org.apache.groovy}的最低版本
+
+将org.apache.groovy的使用更新到4.0.22版或更高版本，以确保支持更新的JVM运行时。
+
+通过添加第三方依赖项(如AEM Groovy控制台)，可以间接包含此捆绑包。
