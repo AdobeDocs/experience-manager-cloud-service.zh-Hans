@@ -1,13 +1,13 @@
 ---
-title: 设置推送失效
-description: 了解如何配置推送失效以构建您自己的生产CDN。
+title: 为Edge Delivery站点设置推送失效
+description: 了解如何为Edge Delivery站点配置推送失效功能，以确保高效的内容更新和缓存控制。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---

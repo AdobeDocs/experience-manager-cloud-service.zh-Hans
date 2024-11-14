@@ -4,9 +4,9 @@ description: 了解如何使用Edge Delivery Services交付Cloud Manager项目�
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: abd0fa0ea3e6e18187bcb60731ec6fe823a98e45
+source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '766'
 ht-degree: 10%
 
 ---
@@ -63,13 +63,13 @@ AEM as a Cloud Service中的Cloud Manager允许您为项目启用Edge Delivery�
 >* 将Edge Delivery Services许可证应用于程序或从程序中删除后，更改将立即生效，而无需运行管道。
 
 
-## 关于Edge Delivery待办事项列表 {#ed-todo-list}
+## 关于Cloud Manager中的Edge Delivery待办事项列表 {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-**Edge Delivery待办事项列表**&#x200B;是一个入门任务核对清单，旨在指导您完成入门培训、管理Edge Delivery网站直到[上线](/help/journey-onboarding/go-live-checklist.md)。
+Cloud Manager中的&#x200B;**Edge Delivery待办事项列表**&#x200B;是一个入门任务核对清单，旨在指导您完成入门培训、管理Edge Delivery网站直到[上线](/help/journey-onboarding/go-live-checklist.md)。
 
-![Edge Delivery网站待办事项列表](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+Cloud Manager中的![Edge Delivery网站待办事项列表](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 任务 | 描述 |
 | --- | --- | --- |
