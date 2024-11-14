@@ -5,9 +5,9 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
 source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 99%
 
 AEM as a Cloud Service 提供以下高级网络选项：
 
-* [灵活端口出口](#flexible-port-egress) – 将 AEM as a Cloud Service 配置为允许从非标准端口传出流量。
-* [专用出口 IP 地址](#dedicated-egress-ip-address) – 将 AEM as a Cloud Service 的流量配置为从唯一 IP 传出。
-* [虚拟专用网络（VPN）](#vpn) - 如果您有 VPN，则保护您的基础架构与 AEM as a Cloud Service 之间的流量。
+* [灵活端口出口](#flexible-port-egress)：将 AEM as a Cloud Service 配置为允许从非标准端口传出流量。
+* [专用出口 IP 地址](#dedicated-egress-ip-address)：将 AEM as a Cloud Service 的流量配置为从唯一 IP 传出。
+* [虚拟专用网络（VPN）](#vpn)：如果您有 VPN，则保护您的基础架构与 AEM as a Cloud Service 之间的流量。
 
 本文详细描述了每个选项以及为什么您可能会使用它们，然后描述如何使用 Cloud Manager UI 和 API 配置它们。本文最后介绍了一些高级用例。
 
@@ -398,7 +398,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 虚拟专用网络 (VPN) {#vpn}
 
-VPN 允许从创作、发布或预览实例连接到内部部署基础架构或数据中心。例如，这对于保护数据库访问很有用。它还允许连接到SaaS供应商，例如支持VPN的CRM供应商。
+VPN 允许从创作、发布或预览实例连接到内部部署基础架构或数据中心。例如，这对于保护数据库访问很有用。它还允许连接到 SaaS 供应商，例如支持 VPN 的 CRM 供应商。
 
 支持大部分采用 IPSec 技术的 VPN 设备。请参阅[此设备列表中&#x200B;**RouteBased 配置说明**&#x200B;列中的信息。](https://learn.microsoft.com/zh-cn/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)按表中所述配置该设备。
 
