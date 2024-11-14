@@ -1,8 +1,8 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 93%
+source-wordcount: '1259'
+ht-degree: 92%
 
 ---
 # 代码片段 {#snippets}
@@ -214,7 +214,7 @@ ht-degree: 93%
 
 要记录支持工单，您必须首先在 Cloud Manager 中注册您的 Edge Delivery 站点。建议所有 AEM as a Cloud Service 用户使用 Cloud Manager 注册您的网站，[这会带来许多好处](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。如果您尚未注册您的站点，请参阅 [Cloud Manager 文档](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)了解详情。
 
-您的网站在 Cloud Manager 上注册后，请按照以下流程使用 Admin Console 提交支持工单：
+**要记录支持票证：**
 
 1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。
