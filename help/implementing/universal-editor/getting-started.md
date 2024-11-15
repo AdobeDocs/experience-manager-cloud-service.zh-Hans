@@ -4,10 +4,10 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 395cb7b2e37c7358baa7ae07329f42bd5a560cb1
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 71%
+source-wordcount: '574'
+ht-degree: 76%
 
 ---
 
@@ -20,82 +20,7 @@ ht-degree: 71%
 >
 >如果您想深入研究示例，可以查看 [GitHub 上的 Universal Editor 示例应用程序](https://github.com/adobe/universal-editor-sample-editable-app)。
 
-## 载入步骤 {#onboarding}
-
-虽然 Universal Editor 可以编辑来自任何来源的内容，但本文档将以 AEM 应用程序为例。
-
-载入您的AEM应用程序并检测它是否使用通用编辑器需要多个步骤。
-
-1. [包括 Universal Editor 核心库。](#core-library)
-1. [添加必要的 OSGi 配置。](#osgi-configurations)
-1. [在页面上插桩。](#instrument-page)
-
-本文档将引导您完成这些步骤。
-
-## 包括 Universal Editor 核心库 {#core-library}
-
-在将您的应用程序检测为可与通用编辑器一起使用之前，它必须包括以下依赖项。
-
-```javascript
-@adobe/universal-editor-cors
-```
-
-要激活检测，必须将以下导入添加到您的`index.js`。
-
-```javascript
-import "@adobe/universal-editor-cors";
-```
-
-### 非 React 应用程序的替代项 {#alternative}
-
-如果您未实施React应用程序和/或需要服务器端渲染，另一种方法是在文档正文中包含以下内容。
-
-```html
-<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
-```
-
-始终建议使用最新版本，但在发生重大更改时，可以引用服务的先前版本。
-
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` — 最新的UE CORS库
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` — 版本2.x下最新的UE CORS库
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - 2.1.x版下最新的UE CORS库
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1` — 精确的UE CORS库版本2.1.1
-
-## 添加必要的 OSGi 配置 {#osgi-configurations}
-
-要能够使用 Universal Editor 通过应用程序编辑 AEM 内容，必须在 AEM 中完成 CORS 和 Cookie 设置。
-
-[必须在 AEM 创作实例上设置以下 OSGi 配置。](/help/implementing/deploying/configuring-osgi.md)
-
-* `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` 中的 `SameSite Cookies = None`
-* 移除 X-FRAME-OPTIONS：`org.apache.sling.engine.impl.SlingMainServlet` 中的 SAMEORIGIN 标头
-
-### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
-
-登录令牌 Cookie 必须作为第三方域发送到 AEM。因此，必须将相同站点 Cookie 明确设置为 `None`。
-
-必须在 `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` OSGi 配置中设置此属性。
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-          token.samesite.cookie.attr="None" />
-```
-
-### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
-
-X-Frame-Options：SAMEORIGIN 阻止在 iframe 中呈现 AEM 页面。移除标头将允许加载页面。
-
-必须在 `org.apache.sling.engine.impl.SlingMainServlet` OSGi 配置中设置此属性。
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0"
-          jcr:primaryType="sling:OsgiConfig"
-          sling.additional.response.headers="[X-Content-Type-Options=nosniff]"/>
-```
+尽管通用编辑器可以编辑来自任何源的内容，但本文档将以AEM应用程序为例。 本文档将引导您完成这些步骤。
 
 ## 在页面上插桩 {#instrument-page}
 

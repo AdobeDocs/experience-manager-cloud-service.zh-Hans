@@ -4,10 +4,10 @@ description: 了解通用编辑器所需的数据属性和项类型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 73%
+source-wordcount: '574'
+ht-degree: 53%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 73%
 | `data-aue-resource` | 资源的 URN，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
 | `data-aue-prop` | 资源的属性，请参阅[检测文档“AEM Universal Editor 快速入门”页面](getting-started.md#instrument-thepage)部分 |
 | `data-aue-type` | [可编辑项的类型](#item-types)（例如，文本、图像和引用） |
-| `data-aue-filter` | 定义可以使用哪些参考 |
-| `data-aue-label` | 为编辑器中显示的可选项目定义自定义标签<br>如果设置了 `data-aue-model`，则会通过模型检索标签 |
+| `data-aue-filter` | 定义：<br> — 启用了哪些RTE功能<br> — 可以将哪些组件添加到容器<br> — 可以将哪些资产添加到媒体类型 |
+| `data-aue-label` | 为编辑器中显示的可选项目定义自定义标签 |
 | `data-aue-model` | 定义用于在属性面板中进行基于表单的编辑的模型 |
 | `data-aue-behavior` | 定义检测工具](#behaviors)的[行为，例如，独立文本或图像也可以模拟组件使其可移动或可删除 |
 
@@ -47,10 +47,14 @@ ht-degree: 73%
 | `component` | 可编辑项是一个组件。它不添加额外功能。需要指示DOM的可移动/可删除部分，并需要它来打开属性面板及其字段 | 必填 | 不适用 | 不适用 | 可选 | 可选 | 不适用 |
 | `reference` | 可编辑是一个引用，例如内容片段、体验片段或产品 | 取决于<br>见下文 | 取决于<br>见下文 | 可选<br>传递到参考选择器的内容片段、产品或体验片段筛选条件列表 | 可选 | 可选 | 不适用 |
 
-根据使用案例，可能需要也可能不需要 `data-aue-prop` 或 `data-aue-resource`。例如：
+`data-aue-resource`始终是必需的，因为它是指示内容更改写入位置的主键。
 
-* 如果您通过 GraphQL 查询内容片段并且希望使列表在上下文中可编辑，则需要 `data-aue-resource`。
-* 如果您有一个组件呈现已参考内容片段的内容并且您想更新组件中的参考，则需要 `data-aue-prop`。
+* 不需要直接在设置`data-aue-type`的标记上使用。
+* 如果未设置，则使用最接近父级的`data-aue-resource`属性。
+
+当您想要在上下文中编辑时，`data-aue-prop`是必需的，但容器是可选的（如果将该容器设置为内容片段并且prop指向多引用字段）。
+
+* `data-aue-prop`是`data-aue-resource`的主键要更新的属性。
 
 ## 行为 {#behaviors}
 
