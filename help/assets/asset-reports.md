@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
+source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 10%
@@ -65,7 +65,11 @@ ht-degree: 10%
    ![用于导航资产报表的“工具”页面](assets/navigation.png)
 
 1. 在[!UICONTROL 资产报表]页面上，单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
-1. 从&#x200B;**[!UICONTROL 创建报告]**&#x200B;页面中，选择要创建的报告，然后单击&#x200B;**[!UICONTROL 下一步]**。 使自己有权使用&#x200B;**AEM管理员产品配置文件**&#x200B;来创建&#x200B;**下载**&#x200B;报告。 请参阅[分配AEM产品配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，以授予您使用AEM管理员产品配置文件的权限。
+1. 从&#x200B;**[!UICONTROL 创建报告]**&#x200B;页面中，选择要创建的报告，然后单击&#x200B;**[!UICONTROL 下一步]**。
+
+   >[!NOTE]
+   >
+   >使自己有权使用&#x200B;**AEM管理员产品配置文件**&#x200B;来创建&#x200B;**下载**&#x200B;报告。 请参阅[分配AEM产品配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，以授予您使用AEM管理员产品配置文件的权限。
 
    ![选择报表类型](assets/choose_report.png)
 
