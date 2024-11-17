@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 9%
+source-wordcount: '991'
+ht-degree: 10%
 
 ---
 
 # 资源报告 {#asset-reports}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章链接 |
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 使用报告中的信息获得关键成功指标以衡量在您的企业内和客户采用[!DNL Assets]的情况。
 
-[!DNL Assets]报告框架使用[!DNL Sling]作业按顺序异步处理报告请求。 它可扩展到大型存储库。 异步报表处理提高了生成报表的效率和速度。
+[!DNL Assets]报告框架异步使用[!DNL Sling]作业按顺序处理报告请求。 它可扩展到大型存储库。 异步报表处理提高了生成报表的效率和速度。
 
 报告管理界面非常直观，包括细粒度选项和控件，可用于访问存档的报告和查看报告运行状态（成功、失败和排队）。
 
@@ -65,7 +65,7 @@ ht-degree: 9%
    ![用于导航资产报表的“工具”页面](assets/navigation.png)
 
 1. 在[!UICONTROL 资产报表]页面上，单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
-1. 从&#x200B;**[!UICONTROL 创建报告]**&#x200B;页面中，选择要创建的报告，然后单击&#x200B;**[!UICONTROL 下一步]**。
+1. 从&#x200B;**[!UICONTROL 创建报告]**&#x200B;页面中，选择要创建的报告，然后单击&#x200B;**[!UICONTROL 下一步]**。 使自己有权使用&#x200B;**AEM管理员产品配置文件**&#x200B;来创建&#x200B;**下载**&#x200B;报告。 请参阅[分配AEM产品配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，以授予您使用AEM管理员产品配置文件的权限。
 
    ![选择报表类型](assets/choose_report.png)
 
@@ -108,7 +108,7 @@ ht-degree: 9%
    ![选择或取消选择报表列](assets/custom_columns.png)
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 创建]**。 此时将显示一条消息，通知已启动报表生成。
-1. 在[!UICONTROL 资产报表]页面上，报表生成状态基于报表作业的当前状态，例如[!UICONTROL 成功]、[!UICONTROL 失败]、[!UICONTROL 已排队]或[!UICONTROL 已计划]。 通知收件箱中将显示相同的状态。要查看报告页面，请单击报告链接。 或者，选择报告，然后单击工具栏中的&#x200B;**[!UICONTROL 查看]**。
+1. 在[!UICONTROL 资产报表]页面上，报表生成状态基于报表作业的当前状态，例如[!UICONTROL 成功]、[!UICONTROL 失败]、[!UICONTROL 已排队]或[!UICONTROL 已计划]。 通知收件箱中将显示相同的状态。 要查看报表页面，请单击报表链接。 或者，选择报告，然后单击工具栏中的&#x200B;**[!UICONTROL 查看]**。
 
    <!--![A generated report](assets/report_page.png)-->
    ![已生成报告状态](assets/report-status.JPG)
