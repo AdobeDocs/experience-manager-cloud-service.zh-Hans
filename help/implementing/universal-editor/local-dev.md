@@ -4,7 +4,7 @@ description: 了解如何运行您自己的通用编辑器服务，以供本地�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
+source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 40%
@@ -154,7 +154,7 @@ Universal Editor 根据页面的检测方式了解使用哪个 Universal Editor 
 
 在[本地运行 Universal Editor Service](#running-ue) 并且您的[内容页面经过检测可使用本地服务后，](#using-loca-ue)您现在可以启动编辑器。
 
-1. 打开您的浏览器以转至 `https://localhost:8000/corslib/LATEST`。
+1. 打开您的浏览器以转至 `https://localhost:8000/ping`。
 1. 指示您的浏览器接受[您的自签名证书。](#ue-https)
 1. 在自签名证书获得信任后，您可以使用本地 Universal Editor Service 编辑页面。
 
