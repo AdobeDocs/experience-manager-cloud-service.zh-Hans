@@ -4,9 +4,9 @@ description: 了解使用内容传输工具的准则和最佳实践。
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
+source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1389'
 ht-degree: 14%
 
 ---
@@ -70,8 +70,6 @@ ht-degree: 14%
 
 * 如果启用了设置&#x200B;**在摄取之前擦除云实例上的现有内容**&#x200B;选项，它将删除整个现有存储库并创建一个新存储库以将内容摄取到。 这意味着它会重置所有设置，包括目标Cloud Service实例上的权限。 对于添加到&#x200B;**管理员**&#x200B;组的管理员用户也是如此。 必须将该用户读入&#x200B;**管理员**&#x200B;组，才能检索内容传输工具的访问令牌。
 
-* 如果将来自两个源的内容移动到目标上的相同路径，则摄取不支持将来自多个源的内容合并到目标Cloud Service实例中。 要将内容从多个源移动到单个目标Cloud Service实例，请确保源中的内容路径不重叠。
-
 * 提取密钥的有效期为自创建或续订密钥后的14天。 可以随时续订。 如果提取密钥已过期，则无法执行提取。
 
 * 在将内容从源实例传输到目标实例之前，内容传输工具(CTT)不执行任何类型的内容分析。 例如，将内容摄取到Publish环境中时，CTT不区分已发布和未发布的内容。 迁移集中指定的任何内容都将摄取到所选的目标实例中。 用户可以将迁移集摄取到创作实例或Publish实例，或同时摄取两者。 Adobe建议在将内容移动到生产实例时，在源创作实例上安装CTT以将内容移动到目标创作实例。 同样，在源Publish实例上安装CTT以将内容移动到目标Publish实例。 有关更多详细信息，请参阅[在Publish实例上运行内容传输工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
@@ -89,6 +87,8 @@ ht-degree: 14%
 * 如果要执行增补，则现有内容的内容结构不得从进行初始提取时更改为运行增补提取时。 无法对自初始提取以来结构已更改的内容运行增补。 确保在迁移过程中对此进行限制。
 
 * 如果您打算将版本包含在迁移集中，并使用`wipe=false`执行增补，则由于“内容传输工具”中的当前限制，必须禁用版本清除。 如果您希望启用版本清除，并且正在对迁移集执行增补，则必须作为`wipe=true`执行引入。
+
+* 内容传输工具(CTT)不支持合并引入。 要将来自多个系统的内容合并到单个Cloud Service实例中，只能迁移来自一个源系统的版本。 此过程需要使用带有wipe=false参数的迁移，由于此操作的增量性质，这可能会导致引入时间延长。 如果可能，请在开始迁移之前将内容整合到单个源系统中，以消除合并内容的需要。
 
 * 迁移集在长时间不活动后过期，此后其数据将不再可用。 有关更多详细信息，请查看[迁移集到期](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry)。
 
