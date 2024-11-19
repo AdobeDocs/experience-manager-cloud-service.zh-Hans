@@ -2,9 +2,9 @@
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1557'
 ht-degree: 15%
 
 ---
@@ -18,9 +18,16 @@ ht-degree: 15%
 >id="configure_content_hub"
 >title="配置 Content Hub 用户界面"
 >abstract="管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。配置选项包括导入资产时的元数据、过滤器、资产属性、搜索资产时的元数据、个性化品牌以及任何自定义链接。"
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="观看视频"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上配置资源](assets/configure-assets.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub指南现在提供了PDF格式。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>
+>[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。配置选项包括：
 
@@ -112,7 +119,7 @@ Content Hub允许管理员配置在搜索资源时显示的过滤器。 执行�
 
    >[!NOTE]
    >
-   >仅当存储库中还有另一个资源与筛选条件匹配时，新筛选器才会显示在“搜索”页面上。
+   仅当存储库中还有另一个资源与筛选条件匹配时，新筛选器才会显示在“搜索”页面上。
 
 同样，您可以单击每个可用筛选器旁边的![编辑图标](assets/do-not-localize/edit_icon.svg)来编辑标签，或者单击删除图标来删除任何现有筛选器。 完成所有修改后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以应用更改。
 
@@ -148,7 +155,7 @@ Content Hub上的![资源属性](assets/config-ui-asset-properties.png)
 
 您还可以配置需要在&#x200B;**资产卡**&#x200B;上显示的关键元数据字段，最多可显示6个字段。 若要禁用，请执行以下步骤：
 
-资产卡上的![密钥元数据](/help/assets/assets/asset-card-key-metadata.png)
+![资源信息卡上的关键元数据](/help/assets/assets/asset-card-key-metadata.png)
 
 1. 在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**资产卡**。
 2. 单击&#x200B;**添加元数据**。 显示&#x200B;**添加资源卡元数据**&#x200B;对话框。
