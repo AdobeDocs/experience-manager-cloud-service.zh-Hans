@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
+source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 73%
+source-wordcount: '852'
+ht-degree: 72%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 73%
 * SITES-24369：内容片段：OpenAPI 文档改进。
 * SITES-25478：内容片段：添加对外部资产引用的后端支持。
 * SITES-26119：内容片段：在引用类型中添加对外部资产引用的支持。
+* SITES-24609：内容片段：删除内容片段时增强验证。
 * SITES-21199：带有通用编辑器的 Edge Delivery：添加对从页面创建的模板的支持。
 * SITES-20311：带有通用编辑器的 Edge Delivery：添加将 CSV 导入电子表格的支持。
 * SITES-24821：带有通用编辑器的 Edge Delivery：将 aem.page / aem.live 设为与 Edge Delivery 集成的默认设置。
