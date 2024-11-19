@@ -4,7 +4,7 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 198b3e29c3cd392db3ee42eeca22e3c8c414420f
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 1%
@@ -369,7 +369,7 @@ data:
             - reqProperty: domain
               equals: <Production Host>
             - reqProperty: path
-              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+              matches: "^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
         action:
           type: selectOrigin
           originName: aem-live
@@ -431,7 +431,7 @@ experimental_redirects:
           reqProperty: clientCountry
           transform:
             - op: replace
-              match: '^(/.*)$'
+              match: '^(.*)$'
               replacement: 'https://www.example.com/\1/home'
             - op: tolower
     - name: www-redirect
@@ -442,6 +442,6 @@ experimental_redirects:
           reqProperty: path
           transform:
             - op: replace
-              match: '^(/.*)$'
+              match: '^/(.*)$'
               replacement: 'https://www.example.com/\1'
 ```

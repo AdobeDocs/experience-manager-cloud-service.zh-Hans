@@ -4,9 +4,9 @@ description: 了解如何通过配置随后可在API调用中使用的清除API�
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
+source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,19 @@ curl
 ```
 
 请注意，`X-AEM-Purge`标头必须包含“all”值。
+
+## 与客户管理的CDN交互
+
+如果是[客户管理的CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)，还需要提供`X-Forwarded-Host`和`X-AEM-Edge-Key`：
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Edge-Key: <my_edge_key>' \
+-H 'X-Forwarded-Host: <my_forwarded_domain>'
+```
+
 
 ## 与Apache/Dispatcher层的交互 {#apache-layer}
 
