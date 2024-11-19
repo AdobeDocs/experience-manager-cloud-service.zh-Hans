@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
 exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 4%
@@ -35,7 +35,7 @@ ht-degree: 4%
 | [语言副本](/help/sites-cloud/administering/translation/overview.md) | 部分可用 | 组件继承内容，但继承只能在页面级别还原 | 通用编辑器中的[内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [多站点管理](/help/sites-cloud/administering/msm/overview.md) | 部分可用 | 组件继承内容，但继承只能在页面级别还原 | 通用编辑器中的[内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [启动项](/help/sites-cloud/authoring/launches/overview.md) | 部分可用 | 组件继承内容，但继承只能在页面级别还原 | 通用编辑器中的[内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [页面模板](/help/sites-cloud/authoring/page-editor/templates.md) | 即将推出！ | 从模板创建的页面是原始模板的独立副本。 | [将页面模板与通用编辑器一起使用](/help/sites-cloud/authoring/universal-editor/templates.md) |
+| [页面模板](/help/sites-cloud/authoring/page-editor/templates.md) | 部分可用 | 从模板创建的页面是原始模板的独立副本。 | [将页面模板与通用编辑器一起使用](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [上下文中心和定位](/help/sites-cloud/authoring/personalization/overview.md) | 不可用 |  |  |
 | [时间扭曲](/help/sites-cloud/authoring/launches/preview.md) | 不可用 |  |  |
 | [关联的内容](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | 不可用 |  |  |

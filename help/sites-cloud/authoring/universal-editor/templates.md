@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '763'
 ht-degree: 2%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 2%
 # 用于创建可使用通用编辑器编辑的页面的模板 {#page-templates}
 
 了解如何创建模板，这些模板可用于创建可通过通用编辑器编辑的页面，从而节省时间并确保一致的品牌化。
-
->[!NOTE]
->
->此功能将在即将发布的AEM as a Cloud Service中提供。
 
 >[!NOTE]
 >
