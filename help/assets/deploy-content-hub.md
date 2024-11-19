@@ -3,19 +3,25 @@ title: 部署 [!DNL Content Hub]
 description: 了解如何部署和激活Content Hub，并为具有不同类型权限(上传资源、Adobe Express用户)的用户提供访问权限，以及如何为用户提供管理员权限。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 1%
+source-wordcount: '1615'
+ht-degree: 2%
 
 ---
 
 # 部署 Content Hub {#deploy-content-hub}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![部署Content Hub](assets/deploy-content-hub.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub指南现在提供了PDF格式。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>
+>[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub作为Experience Manager Assets as a Cloud Service的一部分提供，用于实现组织及其业务合作伙伴对品牌上内容的访问大众化。
 
@@ -53,7 +59,7 @@ Content Hub上各种权限的变体包括：
 
 >[!NOTE]
 >
->[Experience Manager Assets用户](#experience-manager-assets-users)能够在Experience Manager Assetsas a Cloud Service环境中批准资源，以便这些资源在Content Hub上可用。 必须使用Admin Console将这些用户添加到AEM >生产创作实例> AEM用户产品配置文件中。
+[Experience Manager Assets用户](#experience-manager-assets-users)能够在Experience Manager Assetsas a Cloud Service环境中批准资源，以便这些资源在Content Hub上可用。 必须使用Admin Console将这些用户添加到AEM >生产创作实例> AEM用户产品配置文件中。
 
 ## 步骤1：使用Cloud Manager启用适用于Experience Manager Assets的Content Hub {#enable-content-hub}
 
@@ -72,7 +78,7 @@ Content Hub上各种权限的变体包括：
 
    >[!NOTE]
    >
-   >如果在选择Content Hub后没有为您启用&#x200B;**[!UICONTROL 更新]**，请确保您已为项目指定上线设置。
+   如果在选择Content Hub后没有为您启用&#x200B;**[!UICONTROL 更新]**，请确保您已为项目指定上线设置。
 
 1. 单击&#x200B;**[!UICONTROL 更新]**。
 
@@ -80,7 +86,7 @@ Content Hub现已为Experience Manager Assetsas a Cloud Service启用。 在生�
 
 >[!NOTE]
 >
->您最多可以对250个Content Hub用户访问和使用Content Hub。 如果您还有其他问题，请联系您的Adobe代表。
+您最多可以对250个Content Hub用户访问和使用Content Hub。 如果您还有其他问题，请联系您的Adobe代表。
 
 
 如果您是Experience Manager Assets的新用户，请单击&#x200B;**[!UICONTROL 添加程序]**，然后提供程序详细信息（程序名称，为生产设置），然后单击&#x200B;**[!UICONTROL 继续]**。 然后在&#x200B;**[!UICONTROL 解决方案和加载项]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Assets]**&#x200B;和&#x200B;**[!UICONTROL Content Hub]**。
@@ -93,7 +99,7 @@ Content Hub现已为Experience Manager Assetsas a Cloud Service启用。 在生�
 
 >[!NOTE]
 >
->如果您在2024年8月14日之前配置了Content Hub，则会创建新实例，并将`contenthub`作为后缀。
+如果您在2024年8月14日之前配置了Content Hub，则会创建新实例，并将`contenthub`作为后缀。
 
 请注意，Content Hub的实例名称中没有`author`或`publish`。
 
@@ -103,7 +109,7 @@ Content Hub现已为Experience Manager Assetsas a Cloud Service启用。 在生�
 
 >[!NOTE]
 >
->如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`Limited Users`之后提及`contenthub`，而不是`delivery`。
+如果您在2024年8月14日之前配置了Content Hub，则Content Hub产品配置文件在`Limited Users`之后提及`contenthub`，而不是`delivery`。
 
 ## 步骤2：载入Content Hub管理员 {#onboard-content-hub-administrator}
 
@@ -144,7 +150,7 @@ Content Hub用户可以访问门户上可用的资源，但无法添加任何新
 
 >[!NOTE]
 >
->可以使用所有高级企业功能，如与外部身份提供程序同步。
+可以使用所有高级企业功能，如与外部身份提供程序同步。
 
 ### 如何访问Content Hub？ {#access-content-hub}
 
@@ -222,4 +228,4 @@ Experience Manager Assets用户可以批准AEM as a Cloud Service上的资源，
 
    >[!NOTE]
    >
-   > 您无需添加到Experience Manager Assets用户的[Content Hub产品配置文件](#onboard-content-hub-users)。
+   您无需添加到Experience Manager Assets用户的[Content Hub产品配置文件](#onboard-content-hub-users)。

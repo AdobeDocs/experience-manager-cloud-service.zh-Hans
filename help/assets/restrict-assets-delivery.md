@@ -3,9 +3,9 @@ title: 使用具有OpenAPI功能的Dynamic Media限制资源交付
 description: 了解如何使用OpenAPI功能限制资源交付。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1151'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 2%
 
 | [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI功能指南现在以PDF格式提供。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>
+>[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Manager中的中央资产治理允许DAM管理员或品牌管理员通过OpenAPI功能管理对Dynamic Media可用资产的访问。 他们可以通过在Identity Management AEM as a Cloud Service System (IMS)Adobe服务上的资源上配置某些元数据，将已批准的资源（精确到单个资源）限制为选定的[元数据用户或组](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)。
 
@@ -34,7 +40,7 @@ Experience Manager中的中央资产治理允许DAM管理员或品牌管理员�
 
 >[!NOTE]
 >
-> 此功能当前不是自助服务。 要限制IMS [用户](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html)和[组](https://helpx.adobe.com/in/enterprise/using/user-groups.html)的资源投放，请联系您的企业支持团队，以获取有关如何检索限制访问[Adobe Admin Console](https://adminconsole.adobe.com/)门户所需的信息以及如何在AEM as a Cloud Service创作服务中配置访问权限的指导。
+此功能当前不是自助服务。 要限制IMS [用户](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html)和[组](https://helpx.adobe.com/in/enterprise/using/user-groups.html)的资源投放，请联系您的企业支持团队，以获取有关如何检索限制访问[Adobe Admin Console](https://adminconsole.adobe.com/)门户所需的信息以及如何在AEM as a Cloud Service创作服务中配置访问权限的指导。
 
 ### 使用开启和关闭日期和时间限制资源的交付 {#restrict-delivery-assets-date-time}
 
@@ -82,7 +88,7 @@ DAM作者还可以通过定义资产属性中可用的激活的开启或关闭�
 
 >[!NOTE]
 >
->要详细了解如何在基于AEM Asset Selector的集成上启用IMS身份验证，请联系企业支持
+要详细了解如何在基于AEM Asset Selector的集成上启用IMS身份验证，请联系企业支持
 
 1. 对于非基于资产选择器的体验，具有OpenAPI功能的AEM as a Cloud Service和Dynamic Media当前支持服务器端API集成，并可生成IMS持有者令牌。
    * 按照[此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)的说明执行服务到服务器API集成，这些集成可以通过[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)检索IMS持有者令牌

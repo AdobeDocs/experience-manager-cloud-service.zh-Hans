@@ -2,9 +2,9 @@
 title: 批准 Content Hub 的资产
 description: 了解如何在Assetsas a Cloud Service中批准资源以使它们在Content Hub中可用。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '774'
 ht-degree: 6%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 6%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![批准Content Hub的资源](assets/content-hub-approve-assets.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub指南现在提供了PDF格式。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>
+>[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 品牌经理和营销人员对品牌资产进行严格控制。 只有获得批准的最新版本的资产才能在Content Hub中使用，从而确保所有渠道和应用程序之间的品牌一致性。
 
@@ -34,7 +40,7 @@ Assetsas a Cloud Service中标记为`approved`的资源在Content Hub中自动�
 
 >[!NOTE]
 >
->Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Content Hub中显示资产。
+Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Content Hub中显示资产。
 
 要使用AEM as a Cloud Service中的Assets视图将资源状态设置为`approved`，请执行以下操作：
 
@@ -89,7 +95,7 @@ Assetsas a Cloud Service中标记为`approved`的资源在Content Hub中自动�
 
 >[!NOTE]
 > 
->此方法可批准文件夹中新创建的资产。 对于文件夹中的现有资源，您需要手动选择并批准它们。
+此方法可批准文件夹中新创建的资产。 对于文件夹中的现有资源，您需要手动选择并批准它们。
 
 ## 管理使用Content Hub上传的资源 {#manage-assets-uploaded-using-content-hub}
 

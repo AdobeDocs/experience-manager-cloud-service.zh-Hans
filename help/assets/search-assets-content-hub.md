@@ -2,17 +2,23 @@
 title: 在 Content Hub 搜索资产
 description: 了解如何在 [!DNL Content Hub]中搜索资源
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
 
-
 # 在[!DNL Content Hub]中搜索Assets {#search-assets}
 
 ![共享资源横幅图像](assets/search.png)
+
+>[!AVAILABILITY]
+>
+>Content Hub指南现在提供了PDF格式。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>
+>[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 当存储库中有大量资源时，搜索合适的资源会非常耗时。 [!DNL The Content Hub]搜索使您能够查找已批准的资产，以便您可以对其执行其他操作，如下载、共享或创建收藏集。 您可以利用各种功能来缩小搜索结果的范围，例如，执行基于文本的搜索、使用过滤器、执行标记或智能标记特定的搜索、搜索特定的文件格式等。
 

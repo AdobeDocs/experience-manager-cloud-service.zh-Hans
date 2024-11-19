@@ -3,9 +3,9 @@ title: 批准Experience Manager中的资源
 description: 了解如何在 [!DNL Experience Manager]中批准资源。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 4%
 
 | [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>Dynamic Media with OpenAPI功能指南现在以PDF格式提供。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>
+>[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 品牌经理和营销人员对品牌资产进行严格控制。 只有获得批准的最新版本的资产才可供使用，从而确保跨所有渠道和应用程序的品牌一致性。
 
@@ -36,7 +42,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->如果您的资源或文件夹具有不同的默认架构，请确保在该特定架构中进行此更新。
+如果您的资源或文件夹具有不同的默认架构，请确保在该特定架构中进行此更新。
 
 ## 审批资源 {#approve-assets}
 
@@ -78,7 +84,7 @@ ht-degree: 4%
 
 >[!NOTE]
 > 
->此方法可批准文件夹中新创建的资产。 对于文件夹中的现有资源，您需要手动选择并批准它们。 <br>或者，您可以使用&#x200B;**[!UICONTROL 重新处理]**&#x200B;选项将更改从元数据配置文件应用到较旧的资源。
+此方法可批准文件夹中新创建的资产。 对于文件夹中的现有资源，您需要手动选择并批准它们。 <br>或者，您可以使用&#x200B;**[!UICONTROL 重新处理]**&#x200B;选项将更改从元数据配置文件应用到较旧的资源。
 
 同样，要在Assets视图中批量批准文件夹内的资源，请执行以下操作：
 
@@ -105,6 +111,6 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >仅在Assets视图中提供了复制已批准资源的投放URL的选项。
+   仅在Assets视图中提供了复制已批准资源的投放URL的选项。
 
 有关在Dynamic Media面板中显示的其他呈现版本的信息，请参阅[查看和下载Dynamic Media呈现版本](/help/assets/renditions.md#view-download-dm-renditions)。
