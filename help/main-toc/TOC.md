@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2652582ce2a740c958c10bea42c7674513706735
+source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
 workflow-type: tm+mt
-source-wordcount: '5799'
+source-wordcount: '5801'
 ht-degree: 98%
 
 ---
@@ -1095,7 +1095,7 @@ ht-degree: 98%
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + [导航](/help/implementing/cloud-manager/navigation.md)
-      + [AEM主页](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM 主页](/help/implementing/cloud-manager/aem-home.md)
       + 项目 {#programs}
          + [项目和项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生产项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
@@ -1186,6 +1186,7 @@ ht-degree: 98%
       + [配置和配置浏览器](/help/implementing/developing/introduction/configurations.md)
       + [AEM 技术基础](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 参考材料](/help/implementing/developing/reference-materials.md)
+      + [基于OpenAPI的API](/help/implementing/developing/open-api-based-apis.md)
       + [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [为服务器端 API 生成访问令牌（旧版）](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [快速站点创建和前端自定义](/help/implementing/developing/introduction/quick-site-creation.md)

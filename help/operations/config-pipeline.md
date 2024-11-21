@@ -1,12 +1,12 @@
 ---
-title: 使用\s
+title: 使用配置管道
 description: 了解如何使用配置管道来部署各种配置AEM as a Cloud Service，例如日志转发设置、清除相关的维护任务和各种CDN配置。
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
+source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
