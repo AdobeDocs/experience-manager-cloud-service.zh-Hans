@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 42%
+source-wordcount: '2374'
+ht-degree: 41%
 
 ---
 
@@ -194,7 +194,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### 转换为符合 PDF/A 标准的文档并进行验证
 
-通信文档转换API有助于将PDF文档转换为PDF/A。您可以使用这些API将PDF文档转换为符合PDF/A标准的文档，还可以确定PDF文档是否符合PDF/A标准。 PDF/A是一种用于长期保存文档内容的存档格式。 字体将嵌入到文档中，并且文件是未压缩的。因此，PDF/A 文档通常比标准 PDF 文档大。此外，PDF/A 文档不包含音频和视频内容。
+通信文档转换API有助于将PDF文档转换为PDF/A。您可以使用这些API将PDF文档转换为符合PDF/A标准的文档，还可以确定PDF文档是否符合PDF/A标准。 PDF/A是一种用于长期保存文档内容的存档格式。 字体将嵌入到文档中，并且文件是未压缩的。因此，PDF/A 文档通常比标准 PDF 文档大。此外，PDF/文档不包含音频和视频内容。 支持的PDF/A合规性标准包括PDF/A-1a、1b、2a、2b、3a和3b。
 
 ### 将PDF转换为XDP {#convert-pdf-to-xdp}
 
@@ -202,7 +202,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 将PDF文档转换为XDP文件。 若要将PDF文档成功转换为XDP文件，PDF文档必须在词典中包含XFA流。
 
-## 文档保证 {#doc-assurance}
+## 记录Assurance {#doc-assurance}
 
 DocAssurance服务包括签名和加密API：
 
@@ -214,6 +214,24 @@ DocAssurance服务包括签名和加密API：
 * 向PDF文档添加不可见的签名字段。
 * 在PDF文档中签署指定的签名字段。
 * 认证PDF文档
+* 从PDF文档中的指定签名字段中移除签名
+* 从PDF文档中删除指定的签名字段
+
+<span class="preview">从早期采用程序下可用的PDF文档中移除指定签名字段的签名并删除指定签名字段。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
+
+
+<!--
+
+### Remove Signature APIs
+
+The Remove Signature API helps to remove an existing digital signatures from a PDF document. This API is useful when you need to update or revise a signed document and reapply signatures. It maintains document integrity while effectively clearing signatures from specific pages or the entire file. Use cases include re-signing documents with updated data or clearing previous approvals for revised versions.
+
+
+### Remove Signature Field APIs
+
+The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
+
+-->
 
 ### 加密API
 

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
+source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
 workflow-type: tm+mt
-source-wordcount: '5801'
-ht-degree: 98%
+source-wordcount: '5873'
+ht-degree: 97%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 98%
    + AEMaaCS 功能发行说明{#release-notes}
       + [最新发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [2024.10.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [2024.9.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [2024.8.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
          + [2024.7.0 的发行说明](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
@@ -719,6 +720,11 @@ ht-degree: 98%
          + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
          + [为 Adaptive Form 设计 XML 架构](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + 将自适应Forms与Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}集成
+            + [将Adobe Marketo Engage与AEM Forms集成](/help/forms/integrate-form-to-marketo-engage.md)
+            + [配置新表单以与Marketo Engage集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [为现有的自适应Forms配置Adobe Marketo Engage数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [配置提交操作以Marketo Engage现有表单](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Adaptive Form {#adaptive-forms-authoring}
       + [创建自适应表单](/help/forms/create-an-adaptive-form.md)
       + [创建自适应表单片段](/help/forms/adaptive-form-fragments.md)
@@ -730,6 +736,7 @@ ht-degree: 98%
             + [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [创建基于核心组件的自适应表单模板](/help/forms/template-editor-core-components.md)
+            + [基于XFA表单模板创建自适应表单（核心组件）](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
             + [使用机器翻译或人工翻译来翻译自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -758,6 +765,7 @@ ht-degree: 98%
                + [规则编辑者中可用于基于核心组件的自适应表单的操作符和事件类型](/help/forms/rule-editor-core-components-events-operators.md)
                + [基于核心组件的自适应Form规则编辑者示例](/help/forms/rule-editor-core-components-usecases.md)
                + [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
+               + [在基于核心组件的表单的可视规则编辑器中调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
             + 基于核心组件的自适应表单规则编辑器简介{#create-and-use-custom-function-core-component}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/create-and-use-custom-functions.md)
                + [为基于核心组件的自适应表单创建和使用自定义函数](/help/forms/custom-function-core-component-create-function.md)

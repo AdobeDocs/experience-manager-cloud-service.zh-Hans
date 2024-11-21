@@ -5,10 +5,10 @@ keywords: 如何为自适应表单选择提交操作、将自适应表单连接�
 feature: Adaptive Forms, Core Components
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 49%
+source-wordcount: '701'
+ht-degree: 47%
 
 ---
 
@@ -21,7 +21,8 @@ ht-degree: 49%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service | 本文 |
+| AEM as a Cloud Service（基础组件） | [单击此处](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service（核心组件） | 本文 |
 
 提交操作让您选择通过自适应表单捕获的数据的目标。当用户单击自适应表单上的&#x200B;**[!UICONTROL 提交]**&#x200B;按钮时，将触发此操作。Forms as a Cloud Service（针对基于核心组件的自适应表单）提供了一系列预建的提交操作。这些现成的提交操作可让您：
 
@@ -68,11 +69,13 @@ ht-degree: 49%
 * [提交到 REST 端点](/help/forms/configure-submit-action-restpoint.md)
 * [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [调用 AEM 工作流](/help/forms/configure-submit-action-workflow.md)
+* [提交到Marketo启用](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 您还可以将自适应表单提交到其他存储配置：
 
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
 * [将自适应表单连接到 Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [将自适应表单连接到Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 您可以[自定义默认的提交操作](custom-submit-action-form.md)。 此外，您可以自定义提交操作以符合特定的组织要求。
 

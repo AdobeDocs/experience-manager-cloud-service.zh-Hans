@@ -1,8 +1,8 @@
 ---
-source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
+source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 92%
+source-wordcount: '1323'
+ht-degree: 88%
 
 ---
 # 代码片段 {#snippets}
@@ -53,6 +53,7 @@ ht-degree: 92%
 * [提交到 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
 * [将自适应表单连接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [将自适应表单连接到Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 另请参阅 {#see-more-forms-eds}
@@ -131,6 +132,8 @@ ht-degree: 92%
 * [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
 * [基于核心组件的自适应Form规则编辑者的不同用例](/help/forms/rule-editor-core-components-usecases.md)
 * [规则编辑者各版本之间的差异](/help/forms/rule-editor-core-components-difference-tables.md)
+* [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
+* [在基于核心组件的表单的可视规则编辑器中调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [基于核心组件的自适应Forms自定义函数介绍](/help/forms/create-and-use-custom-functions.md)
 * [为基于核心组件的自适应Form创建自定义函数](/help/forms/custom-function-core-component-create-function.md)
 * [自定义函数中的范围对象](/help/forms/custom-function-core-component-scope-function.md)
@@ -144,6 +147,12 @@ ht-degree: 92%
 * [将 Form 保存为草稿](/help/forms/save-core-component-based-form-as-draft.md)
 * [将 Form 链接添加到 Sites 页面](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [将Marketo Engage与AEM Forms集成](/help/forms/integrate-form-to-marketo-engage.md)
+* [配置新表单以与Marketo Engage集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [为现有的自适应Forms配置Marketo Engage数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [配置提交操作以Marketo Engage现有表单](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager IP 允许列表和前端管道 {#allowlist-frontend-pipeline}
 

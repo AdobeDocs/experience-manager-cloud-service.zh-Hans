@@ -4,9 +4,9 @@ description: 自适应表单提供了多个提交操作。提交操作定义了�
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3929'
 ht-degree: 73%
 
 ---
@@ -16,7 +16,8 @@ ht-degree: 73%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service | 本文 |
+| AEM as a Cloud Service（核心组件） | [单击此处](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service（基础组件） | 本文 |
 
 **适用于**：✔️自适应表单基础组件。 ❌[自适应表单核心组件](/help/forms/configure-submit-actions-core-components.md)。 Adobe建议使用核心组件来[将自适应Forms添加到AEM Sites页面](create-or-add-an-adaptive-form-to-aem-sites-page.md)或[创建独立的自适应Forms](creating-adaptive-form-core-components.md)。
 
@@ -31,6 +32,7 @@ ht-degree: 73%
 * [提交到 Azure Blob 存储](#azure-blob-storage)
 * [提交至 Power Automate](#microsoft-power-automate)
 * [提交到 Workfront Fusion](#workfront-fusion)
+* [提交至 Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 您也可以[扩展默认的提交操作](custom-submit-action-form.md)以创建您自己的提交操作。
 
@@ -274,7 +276,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 1. [使用Microsoft® SharePoint列表配置创建表单数据模型(FDM)](/help/forms/create-form-data-models.md)
 1. [配置表单数据模型(FDM)以检索和发送数据](/help/forms/work-with-form-data-model.md#configure-services)
-1. [创建自适应表单](/help/forms/creating-adaptive-form.md)
+1. [创建 Adaptive Form](/help/forms/creating-adaptive-form.md)
 1. [使用表单数据模型(FDM)配置提交操作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 提交表单时，数据将保存在指定的Microsoft® Sharepoint列表存储中。

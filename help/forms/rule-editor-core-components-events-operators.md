@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2148'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
 * **不为空**
 * **已选择：**&#x200B;当用户为复选框、下拉菜单单选按钮选择特定选项时，返回true。
 * **已初始化（事件）：**&#x200B;当表单对象在浏览器中呈现时返回true。
-* **已更改（事件）：** 当用户更改表单对象输入的值或所选选项时，返回 true。
+* **Is Changed (event)：**&#x200B;当用户更改表单对象的输入值或选定选项时，返回true。
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 ### 规则编辑器中的可用规则类型 {#available-rule-types-in-rule-editor}
 
-规则编辑器提供了一组可用于编写规则的预定义规则类型。 让我们详细看看每种规则类型。 有关在规则编辑器中编写规则的更多信息，请参阅[编写规则](/help/forms/rule-editor-core-components-user-interface.md#write-rules)。
+规则编辑器提供了一组可用于编写规则的预定义规则类型。 让我们详细了解一下每种规则类型。 有关在规则编辑器中编写规则的更多信息，请参阅[编写规则](/help/forms/rule-editor-core-components-user-interface.md#write-rules)。
 
 #### [!UICONTROL 时间] {#whenruletype}
 
@@ -63,13 +63,11 @@ ht-degree: 2%
 `Then, do the following:`
 
 `Action 2 on Object B;`
-`AND`
-&#39;对对象C执行操作3；
+`AND`&#39;关于对象C的行动3;
 
 `Else, do the following:`
 
-`Action 2 on Object C;`
-_
+`Action 2 on Object C;`_
 
 当具有多值组件（如单选按钮或列表）时，在为该组件创建规则时，会自动检索选项并使这些选项可用于规则创建者。 您无需再次键入选项值。
 
@@ -77,13 +75,13 @@ _
 
 ![多值显示选项](assets/multivaluefcdisplaysoptions.png)
 
-编写 When 规则时，可以触发“清除值”操作。 清除值操作清除指定对象的值。 通过在When语句中将Clear Value设置为选项，可以创建具有多个字段的复杂条件。 您可以添加Else语句以添加更多条件
+编写When规则时，可以触发Clear Value Of操作。 清除操作值 清除指定对象的值。 在 When 语句中将“清除值”作为一个选项，可以创建具有多个字段的复杂条件。 您可以添加 Else 语句以添加更多条件
 
-![清除](assets/clearvalueof.png)的值
+![的明确值](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> 当规则类型仅支持单级then-else语句时。
+> 当规则类型仅支持单级 then-else 语句时。
 
 ##### [!UICONTROL When]中允许使用多个字段 {#allowed-multiple-fields}
 
@@ -97,20 +95,20 @@ _
 
 和/或
 
-（对象B条件2）
+（对象 B 条件 2）
 
 然后，执行以下操作：
 
-对对象A执行操作1
+对象 A 上的操作 1
 
 _
 
-![在When](/help/forms/assets/allowed-multiple-field-when.png)中允许使用多个字段
+![允许在“何时”中使用多个字段](/help/forms/assets/allowed-multiple-field-when.png)
 
-**在条件功能中使用允许的多个字段时的注意事项**
+**在When条件功能**&#x200B;中使用允许多个字段时的注意事项
 
-* [确保将核心组件设置为 3.0.14 或更高版本](https://github.com/adobe/aem-core-forms-components)，以便在规则编辑器中使用此功能。
-* 如果规则应用于 When 条件内的不同字段，则即使仅更改其中一个字段，规则也会触发。
+* 确保将[核心组件设置为版本3.0.14或更高版本](https://github.com/adobe/aem-core-forms-components)以在规则编辑器中使用此功能。
+* 如果将规则应用于When条件中的不同字段，则即使仅更改了这些字段之一，也会触发规则。
 
 
 <!--
@@ -130,10 +128,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-如果When条件功能中允许的多个字段遇到任何问题，请按照以下疑难解答步骤操作：
+如果“当条件”功能中允许的多个字段遇到任何问题，请按照以下步骤执行故障排除步骤：
 
 1. 在编辑模式下打开表单。
-1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
+1. 打开内容浏览器并选择 **[!UICONTROL 自适应表单的指南容器]** 组件。
 1. 单击指南容器属性![指南属性](/help/forms/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
 1. 单击完成，然后再次保存对话框。
 
@@ -145,7 +143,13 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 禁用]**&#x200B;禁用指定的对象。
 
-**[!UICONTROL 调用服务]**&#x200B;调用表单数据模型(FDM)中配置的服务。 选择“调用服务”操作时，会出现一个字段。 点按该字段时，会显示在[!DNL Experience Manager]实例上的所有表单数据模型(FDM)中配置的所有服务。 在选择表单数据模型服务时，会出现更多字段，您可以在其中映射具有指定服务的输入和输出参数的表单对象。 请参阅有关调用表单数据模型(FDM)服务的示例规则。
+**[!UICONTROL 调用服务]**&#x200B;调用表单数据模型(FDM)中配置的服务。 选择“调用服务”操作时，会出现一个字段。 点按该字段时，会显示在[!DNL Experience Manager]实例上的所有表单数据模型(FDM)中配置的所有服务。 在选择表单数据模型服务时，会出现更多字段，您可以在其中使用指定服务的输入参数映射表单对象。 您可以通过指定服务的事件有效负载选项映射输出参数。 您还可以使用规则编辑器创建用于处理调用服务操作的成功和失败响应的规则。
+
+>[!NOTE]
+>
+> 若要了解有关调用服务的更多信息，请[单击此处](/help/forms/invoke-service-enhancements-rule-editor.md)。
+
+请参阅有关调用表单数据模型(FDM)服务的示例规则。
 
 除了表单数据模型服务之外，您还可以指定直接WSDL URL来调用Web服务。 但是，表单数据模型服务具有许多好处，并且推荐调用服务的方法。
 
@@ -163,14 +167,14 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 * 已启用（布尔值）
 * readOnly（布尔值）
 * 必需（布尔值）
-* screenReaderText （String）
+* screenReaderText（字符串）
 * 有效（布尔值）
-* 错误消息（字符串）
+* errorMessage（字符串）
 * 默认（数字、字符串、日期）
 * enumNames （字符串[]）
 * chartType（字符串）
 
-例如，您可以定义规则以在单击按钮时显示文本框。 您可以使用自定义函数、表单对象、对象属性或服务输出来定义规则。
+例如，它使您能够定义在单击按钮时显示文本框的规则。 您可以使用自定义函数、表单对象、对象属性或服务输出来定义规则。
 
 ![设置属性](assets/set_property_rule_new.png)
 
@@ -184,29 +188,29 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 ![对象属性](assets/object_property_set_property_new.png)
 
-**[!UICONTROL 清除值 清除]** 指定对象的值。
+**[!UICONTROL 清除值]**&#x200B;清除指定对象的值。
 
-**[!UICONTROL 设置焦点]** 将焦点设置在指定对象上。
+**[!UICONTROL 设置焦点]**&#x200B;设置指定对象的焦点。
 
-**[!UICONTROL 提交表单]** 提交表单。
+**[!UICONTROL 提交表单]**&#x200B;提交表单。
 
-**[!UICONTROL 重置]** 重置窗体或指定的对象。
+**[!UICONTROL 重置]**&#x200B;重置表单或指定的对象。
 
-**[!UICONTROL 验证]** 验证表单或指定的对象。
+**[!UICONTROL 验证]**&#x200B;验证表单或指定的对象。
 
-**[!UICONTROL 添加实例]** 添加指定的可重复面板或表格行的实例。
+**[!UICONTROL 添加实例]**&#x200B;添加指定可重复面板或表行的实例。
 
 **[!UICONTROL 删除实例]**&#x200B;删除指定的可重复面板或表行的实例。
 
 **[!UICONTROL 函数输出]**&#x200B;根据预定义的函数或自定义函数定义规则。
 
-**[!UICONTROL 导航到]**&#x200B;导航到其他自适应Forms、图像或文档片段等其他资源或外部URL。<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 导航到]** 导航到其他自适应表单、其他资源（如图像或文档片段）或外部 URL。 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL 调度事件]**&#x200B;根据预定义的条件或事件触发特定操作或行为。
+**[!UICONTROL 调度事件]** 根据预定义的条件或事件触发特定的操作或行为。
 
-#### [!UICONTROL 设置值] {#set-value-of}
+#### [!UICONTROL 将值设置为] {#set-value-of}
 
-]**规则类型的**[!UICONTROL &#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
+规则类型的“设置值&#x200B;]**”**[!UICONTROL &#x200B;允许您根据是否满足指定的条件来设置表单对象的值。该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
 
 **Set Value Of**&#x200B;规则类型不适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
 
@@ -324,7 +328,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-同样，您可以编写 **“在面板** 之间导航”规则，以将焦点转移到上一个面板：
+同样，您可以编写&#x200B;**在面板之间导航**&#x200B;规则以将焦点转移到上一个面板：
 
 `Navigate among the panels`
 
@@ -334,7 +338,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 `(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
 
-有关如何创建规则以在面板中导航的更多详细信息， [请单击此处](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons)。
+有关如何创建规则以在面板中导航的更多详细信息，[单击此处](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons)。
 
 #### [!UICONTROL 异步函数调用]
 

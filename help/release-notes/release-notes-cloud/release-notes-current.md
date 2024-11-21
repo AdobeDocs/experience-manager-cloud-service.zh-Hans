@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2b34b23c05ff125a24fb0969d0239a384e773011
+source-git-commit: b72d5fca4113f6d3b9cbabab655e36f2370231d9
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 89%
+source-wordcount: '1721'
+ht-degree: 40%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 89%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager][!DNL Cloud Service]当前功能版本（2024.10.0）的释放日期是 2024 年 10 月 31 号。下一个功能版本 (2024.11.0) 计划于 2023 年 11 月 21 号释放。
+[!DNL Adobe Experience Manager]作为[!DNL Cloud Service]当前功能版本(2024.11.0)的发布日期是2024年11月21日。 下一个功能版本(2024.12.0)计划于2024年12月12日发布。
 
 ## 维护发行说明 {#maintenance}
 
@@ -36,7 +36,7 @@ ht-degree: 89%
 
 <!-- ## Release Video {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+Have a look at the November 2024 Release Overview video for a summary of the features added in the 2024.11.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
@@ -44,18 +44,15 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**现代化页面事件**
+通过通用编辑器创作&#x200B;**[!DNL Edge Delivery Services]页面模板**
 
-以下 AEM Sites 页面事件现在可用作基于 AEM as a Cloud Service 事件平台的外部可用事件。可以通过 Adobe I/O 处理事件以与外部进程交互。
-* 已发布页面
-* 已取消发布页面
-* 已删除页面
+将任何Edge Delivery页面快速转换为页面模板。 这允许您启动具有预定义结构和内容的新页面，而不是空白页面。 [阅读更多](/help/sites-cloud/authoring/universal-editor/templates.md)。
+
+**[!DNL Edge Delivery Services]CSV导入程序用于通过AEM实例发布**
+
+在您喜爱的电子表格工具中高效地管理Edge Delivery电子表格数据（例如重定向），并通过新的CSV导入器将其上传到AEM。 [阅读更多](/help/edge/wysiwyg-authoring/tabular-data.md#importing)。
 
 ### 早期采用者计划 {#sites-early-adopter}
-
-**生成变体**
-
-通过 AEM 的新功能[生成变体](/help/generative-ai/generate-variations.md)利用 GenAI，现在可在云服务中使用。生成变体功能可以帮助您通过使用生成式 AI 来生成和扩展内容创作。请与您的 Adobe 帐户团队联系，申请加入该项目。
 
 **用于内容片段投放的 AEM REST OpenAPI**
 
@@ -63,7 +60,7 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media 中的早期访问功能 {#dm-early-access}
+### Dynamic Media中的抢先体验功能 {#dm-early-access}
 
 **AI 生成的视频字幕**
 
@@ -71,49 +68,38 @@ Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内�
 
 为了尽早获得 Dynamic Media 帐户上 AI 生成的字幕支持，[请创建并提交 Adobe 客户支持案例](/help/assets/dynamic-media/video.md##enable-dash)。
 
+**Dynamic Media传递报告**
+
+通过Dynamic Media提供的资产、资产级别投放计数、反向链接信息、AEM Assets中的资产路径和唯一资产ID，获得资产投放见解。 可以为AEM Assets存储库中通过Dynamic Media交付的所有资源或AEM Assets中的特定文件夹层次结构生成报表。 分析有助于衡量所交付资产的ROI、衡量渠道绩效并帮助制定针对资产的明智资产管理任务。
+
+若要提前访问您Dynamic Media帐户的Dynamic Media交付报告，请[创建并提交Adobe的客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+
 ### 资源视图中的新增功能 {#assets-view-new-features}
 
-**计划报告**
+**Dynamic Media面板**
 
-现在可以按照定期计划或未来日期在资产视图中自动生成报告，从而减少发现数据驱动洞察的工作量。
+通过Assets视图，您现在可以从提供给您的单独面板中使用OpenAPI演绎版访问Dynamic Media和Dynamic Media。 您可以选择复制投放URL，或根据资源和演绎版类型下载演绎版。 有关详细信息，请参阅具有OpenAPI功能的[Dynamic Media呈现](/help/assets/renditions.md#dynamic-media-renditions)和[Dynamic Media](/help/assets/renditions.md#dm-with-openapi-renditions)。
 
-![Scheduled Reports-](/help/assets/assets/scheduled-reports-tab.png)
-
-### Content Hub 的新增强功能 {#content-hub-new-features}
-
-**已授予许可资源的 Digital Rights Management**
-
-组织现在可以为 Content Hub 的用户利用 DRM 来获取已授予许可资源，从而提高许可证合规性并最大限度地降低共享授予许可条款资产的风险，要求用户在开始下载已授予许可资源之前先查看并接受许可条款。如需了解更多信息，请参阅 [管理 Content Hub 上的已授予许可资源](/help/assets/manage-licensed-assets-on-content-hub.md)。
-
-![download-multiple-license](/help/assets/assets/download-multiple-license.png)
-
-**资源信息卡元数据配置**
-
-Content Hub 现在允许您配置需要在资源卡信息上显示的关键元数据字段，最多 6 个字段。如需更多信息，请参阅 [配置 Content Hub ](/help/assets/configure-content-hub-ui-options.md#asset-card)中的资源信息卡分区。
-
-![资源信息卡上的关键元数据](/help/assets/assets/asset-card-key-metadata.png)
-
-**配置过期资源的可见性和下载**
-
-管理员现在可以控制是否需要在 Content Hub 显示过期资源。如果过期的资源可见，他们还可以定义用户是否可以下载它们。如需更多信息，请参阅 [配置 Content Hub ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub)中的过期资源分区。
-
-![Content Hub 上的资产已过期](/help/assets/assets/expired-assets-content-hub.png)
+![动态呈现版本](/help/assets/assets/dm-scene7-renditions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms中的新增功能 {#forms-new-features}
+### AEM Forms 中的新功能 {#forms-new-features}
 
-* [使用面板布局中的导航按钮增强用户体验](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)：您现在可以将导航按钮添加到面板布局，如水平选项卡、垂直选项卡、折叠面板或向导。 这些按钮通过简化面板之间的过渡来增强用户体验，侧重于选定的面板。
+* **[轻松更新 Adobe Sign 范围](/help/forms/adobe-sign-integration-adaptive-forms.md)**：您可以直接从 AEM 云配置页面修改 Adobe Sign 配置的范围，从而更快、更轻松地更新现有配置。
 
-<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
+* **[自适应表单的异步函数支持](/help/forms/using-async-funct-in-rule-editor.md)**：当您的自适应表单需要异步操作（例如等待外部流程或数据检索）时，可以使用自定义函数实施这些操作，并在规则编辑器中对其进行配置。
 
-### AEM Forms 预发行版中的新功能 {#forms-new-prerelease-features}
+### AEM Forms中的预发行功能 {#forms-new-prerelease-features}
 
-* [自动保存基于核心组件的自适应Forms的草稿](/help/forms/save-core-component-based-form-as-draft.md)：用户现在可以受益于自动保存功能，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃来提高组织的转化率，因为用户不需要从头开始填写表单。
+* **管理发布**：您可以使用管理发布工作流跨环境发布或取消发布表单，通常是从创作实例到发布和预览实例。 它允许用户以简化的方式发布、取消发布或计划内容发布。
 
-* [轻松更新Adobe Sign作用域](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms)：您可以直接从“AEM Cloud配置”页面修改Adobe Sign配置的作用域，以便更快、更轻松地更新现有配置。
+* **[自动保存基于核心组件的自适应表单草稿](/help/forms/save-core-component-based-form-as-draft.md)**：用户现在可以享受自动保存功能，该功能可以自动将部分完成的表单保存为草稿。他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃来提高组织的转化率，因为用户不需要从头开始填写表单。
 
-* [对自适应Forms的异步函数支持](/help/forms/using-async-funct-in-rule-editor.md)：当自适应表单需要异步操作（如等待外部进程或数据检索）时，您可以使用自定义函数实施这些操作并在规则编辑器中配置它们。
+* **[规则编辑器增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)**：对于基于核心组件的自适应Forms，现在可以使用“调用服务”的输出填充下拉选项，使用“调用服务”的输出设置可重复的面板，使用“调用服务”的输出设置各个面板，以及使用“调用服务”的输出参数验证其他字段。
+
+* **[使用面板布局中的导航按钮增强用户体验](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**：您现在可以向面板布局中添加水平选项卡、垂直选项卡、可折叠项或向导等导航按钮。这些按钮简化了面板之间的过渡，将注意力集中在所选面板上，从而增强了用户体验。
+
 
 ### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
 
@@ -121,29 +107,54 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-#### AEM Forms AI 助手
+#### 集成
 
-[自适应Forms的创作AI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai)为您的表单开发过程带来了全新水平的功能和便利性。 它使您能够比以往更快地构建更优质的表单。
+* **[将自适应Forms与Adobe Marketo Engage集成](/help/forms/integrate-form-to-marketo-engage.md)**： AEM Formsas a Cloud Service现在包含一个易于使用的选项，用于将自适应Forms与Adobe Marketo Engage连接。 通过此集成，您可以使用Marketo Engage的潜在客户捕获和相关自定义对象直接创建自适应Forms。 您现在可以使用Marketo Engage中的数据预填表单字段，并将其提交回以自动化智能营销活动和电子邮件自动化等工作流。 您还可以将自适应表单与Munchkin库连接起来，以跟踪访问次数、点击次数和表单提交次数。
 
-![生成式 AI 助手、自适应表单](/help/forms/assets/generative-ai-assistant.png)
+#### 自适应Forms和HTML5 Forms
 
-我们提供的生成式 AI 功能包括：
+* **[基于现有XFA模板创建自适应Forms](/help/forms/create-adaptive-form-using-xfa-templates.md)**：您现在可以使用XFA表单模板（*.XDP文件）创建基于核心组件的自适应Forms。 此功能有助于那些已在XFA技术方面进行了现有投资的AEM Forms内部部署客户采用AEM Formsas a Cloud Service。
 
-* **产品查询 AI 助手**：立即获得与 AEM 表单相关的问题的答案。AI 助手可以充当您自己的个人知识库，能够直接在平台内提供富有洞察力的指导和建议。
+* **HTML5 Forms（基于XFA的Web窗体）**：现在，使用XFA技术的AEM Forms本地客户可以轻松过渡到AEM Formsas a Cloud Service，同时保留他们现有的使用HTML5 Forms（基于XFA的Web窗体）的用户体验。 此功能支持以HTML5格式呈现XFA表单模板，使得在不支持基于XFA的PDF forms上可访问表单。
 
-* **生成自适应表单**：使用生成式 AI 提示轻松创建完整的表单。Adobe 的生成式 AI 会自动生成易于用户使用的表格，从而减少流失率，并提供个性化的体验。
+  ![HTMLForms（基于XFA的Web窗体）](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
-* **生成表单面板**：根据特定数据收集需求生成表单中的各部分。例如，生成用于收集付款信息、客户偏好或旅行详情的部分。
 
-* **更改表单布局**：使用生成式 AI 提示尝试使用不同的布局和设计。尝试不同的布局（如向导或选项卡视图），找到最适合您的表单的布局。使用生成式 AI 提示来优化您的表单，以实现移动响应能力，并创建用户喜爱的具有视觉吸引力的表单。
+* **[文件附件的Base64编码字符串支持](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**：基于核心组件的自适应Forms中的文件附件组件现在包含一个选项，可用于将附加文件作为Base64编码字符串提交。
 
-* **配置提交操作**：使用生成式 AI 提示轻松为您的表单配置提交操作。从预先构建的提交操作库或由您自己的开发团队创建和部署的自定义提交操作中进行选择。
+#### 交互式通信和通信API
+
+* **交互式通信编辑器**：交互式通信编辑器是一种用户友好的图形化通信设计工具，它简化了个性化数据驱动通信的创建，并在任何现代浏览器中运行。 它支持无缝的数据集成、复杂的逻辑定义以及富媒体集成，从而确保针对各种业务需求生成专业且合规的文档、通信和模板。
+
+  ![交互式通信编辑器](/help/forms/assets/ic-editor.png)
+
+
+* **[PDF/A合规性增强功能](/help/forms/aem-forms-cloud-service-communications-introduction.md#convert-to-and-validate-pdfa-compliant-documents)**：您现在可以使用通信API将PDF文档转换为PDF/A格式(1a、2a、3a)以进行存档，同时确保可访问性并验证是否符合这些标准。
+
+
+* **[签名API (Document Assurance)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance)**：通信API中新的RESTful API可轻松管理PDF签名。 它支持如下操作：
+   * 清除签名：从指定字段中删除签名。
+   * 删除签名字段：删除指定的签名字段。
+
+
+<!-- 
+* **Hamburger Menu Layout in Adaptive Forms**: Adaptive Forms now offers a responsive hamburger menu layout for mobile devices. This collapsible menu organizes form sections, making navigation more 
+intuitive and improving the mobile form-filling experience.
+
+* **Masked Field with Eye Icon (Password Box Component)**: The Password Box is a text input field that masks the characters typed into it by displaying placeholder symbols. It allows users to securely input sensitive information, such as passwords and enables them to toggle visibility on demand using the eye icon.
+
+-->
+
+## 自动化表单转换服务
+
+* **[将PDF forms转换为基于核心组件的自适应Forms](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**：您现在可以使用Automated forms conversion服务将PDF forms、AcroForms或基于XFA的表单转换为基于核心组件的自适应Forms。
+
 
 >[!IMPORTANT]
 >
-> 有兴趣加入早期访问计划以体验任何有关表单方面的创新技术吗？请从您的工作邮件发送一封电子邮件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，其中注明您感兴趣的功能列表。
+> 有兴趣加入早期访问计划以体验任何有关表单方面的创新技术吗？请从您的工作邮件发送一封电子邮件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，其中注明您感兴趣的功能列表。## CIF加载项{#cloud-services-cif}
 
-## CIF 加载项 {#cloud-services-cif}
+## CIF 加载项 {#cif}
 
 ### 错误修复 {#bug-fixes-cif}
 
@@ -152,52 +163,35 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 ## [!DNL Experience Manager] 作为 [!DNL Cloud Service] 的基础 {#foundation}
 
-### 控制表单提交的配置 {#configuration-submissions}
+### 提高了树复制性能(并弃用Publish内容树工作流) {#tree-replication-performance}
 
-为了控制特定位置的 Coral 或 Foundation 表单的表单提交，AEM 引入了新的配置：`com.adobe.granite.ui.components.FormRestrict`。此配置包含两个字段：
+[树激活工作流步骤](/help/operations/replication.md#tree-activation)是用于复制深层内容层次结构的新工作流模型步骤。 请注意，它允许独立复制（例如，通过快速发布或管理发布）与正在进行的树复制工作流并行进行。 如果您需要在批量复制仍在进行时发布一些时效性强的内容，此功能会特别有用。 树复制步骤取代了Publish内容树工作流及其相关的工作流步骤，这些步骤现已弃用。
 
-1. **添加允许的路径**：指定允许表单操作的路径。
-1. **限制行为**：确定受限路径（未包含在允许列表中的路径）的行为。您可以选择以下两个选项：
-   * **弹出窗口**（默认）：显示弹出窗口通知。
-   * **阻止**：阻止表单提交。
+### 基于OpenAPI的API — 早期采用者计划 {#open-apis-earlyadopter}
 
->[!NOTE]
->
->此配置不支持位于 `/apps`、 `/libs`、 `/mnt/overlay` 和  `/mnt/override` 下的所有 Coral 或 Foundation 表单。
+开发人员可以将AEM作为Cloud Service功能深入集成到他们自己的应用程序和工具中。 新的AEM as a Cloud Service API将遵循OpenAPI规范，目标是保持一致、详细记录并便于用户使用。 需要身份验证的端点的凭据将通过创建Adobe Developer Console项目生成。
 
-### 具有高级网络选项的自助日志转发 {#log-forwarding}
+详细了解基于OpenAPI的AEM API，并尝试使用说明配置和用法的端到端教程。
 
-虽然可以从 Cloud Manager 下载 AEM（包括 Apache/Dispatcher）和内容传递网络日志，但许多组织发现将这些日志流式传输到首选日志记录目的地是有益的。AEM 现在支持 [日志转发](/help/implementing/developing/introduction/log-forwarding.md) 到 Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和 OpenSearch）和 Splunk。AEM 日志可以选择通过高级网络配置转发，例如使用专用的 IP 地址。
+具体而言，下面列出的API端点作为率先采用者计划的一部分提供。 如有兴趣，请发送电子邮件至[aem-apis@adobe.com](mailto:aem-apis@adobe.com)，说明您打算如何使用它们。
+* [站点内容片段API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+* [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [站点和Assets文件夹API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* [Forms Communications API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
-此功能由用户以自助方式配置，并使用 [配置管道](/help/operations/config-pipeline.md)进行部署。
+### Edge计算 — 请求反馈！ {#edge-computing-feedback}
 
-### 面向企业用户的无管道 URL 重定向 {#pipeline-free-redirects}
-
-当页面被删除或移动，或出现其他情况时，浏览器端重定向很有用。借助 [无管道 URL 重定向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)，您可以将 Apache 重写映射文件放置在 AEM 发布位置，该文件会在该位置自动加载 - 无需将文件承诺到源代码控制或启动 Cloud Manager 管道。
-
-发布重写文件的选项包括将其作为资源上传、使用 ACS Commons Rewrite Map Manager 或与自定义用户界面交互。
-
-### RDE 的配置管道 {#config-pipeline-rdes}
-
-快速开发环境是在云环境中快速部署和测试代码和配置的强大工具。RDE 现在支持 [同步配置 YAML 文件](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)，包括内容传递网络设置（例如流量筛选条件规则和请求/响应转换），以及日志转发和其他配置选项。[有关更多详细信息，请参阅受支持的配置选项的完整列表](/help/operations/config-pipeline.md)。
-
-### 新产品轮廓 {#new-product-profiles}
-
-创建新的 AEM 环境时，产品轮廓文件会自动出现在 Adobe Admin Console 中，从而使管理员能够分配对已授予许可解决方案和功能的访问权限。
-
-新的环境现在包括一组更新的产品轮廓，使其与未来的功能兼容，包括在 Adobe Developer Console 中生成 API 凭据。现有环境将能够在未来的版本中更新其产品轮廓。[了解详情](/help/onboarding/aem-cs-team-product-profiles.md)。
+Edge计算使数据处理更接近浏览器，其优势包括减少延迟。 作为路线图中的投入，我们希望了解您是否认为这项技术对AEM Publish交付和Edge Delivery Services项目非常有用，以及您设想将其用于什么用途。 向[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)发送电子邮件，其中包含问题和评论！
 
 ### 新的 AEM Developer Console（公开 Beta） {#aem-developer-console-beta}
 
 尝试改进的 [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)，它为在云环境中调试代码提供了更具交互性的体验。
 
-任何人都可以通过单击当前 AEM Developer Console 中的 *新控制台可用* 按钮来访问公开 Beta。Adobe 欢迎提供反馈，您可以发送电子邮件至 **<aemcs-new-devconsole-ui-beta@adobe.com>**。
-
-![AEM Developer Console 中的 OSGi 捆绑包屏幕](/help/implementing/developing/introduction/assets/osgi-bundles.png)
+任何人都可以通过单击当前 AEM Developer Console 中的 *新控制台可用* 按钮来访问公开 Beta。Adobe欢迎反馈，您可以通过电子邮件将其发送至[aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com)
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表 [这里](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0)。
+您可以找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表 [这里](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)。
 
 ## Cloud Manager {#cloud-manager}
 
