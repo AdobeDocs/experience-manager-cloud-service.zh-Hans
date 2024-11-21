@@ -4,9 +4,9 @@ description: 了解AEM Assets视图的UI可扩展性功能。 AEM Assets视图UI
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
+source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '598'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,13 @@ ht-degree: 3%
 | ------------- | --------------------------- |---------|----|-----|
 
 AEM Assets视图具有UI可扩展性功能。 此功能允许用户将自定义UI组件添加到Assets视图UI，以满足AEM Assets视图的现成功能无法满足的特定业务需求。 此可扩展性功能增强了AEM Assets View的灵活性，使组织能够调整界面以满足特定工作流和要求。
-您可以将扩展添加到资产、文件夹和收藏集级别。 添加的扩展将显示在资产、收藏集或文件夹详细信息页面的专用面板中。
+您可以将扩展添加到资产、文件夹和收藏集级别。 添加的扩展将显示在“资产”、“收藏集”或“文件夹详细信息”页面的专用面板中。
 
 >[!IMPORTANT]
-> AEM Assets视图UI可扩展性在[Assets Ultimate](/help/assets/assets-ultimate-overview.md)中可用。
+>
+> * AEM Assets视图UI可扩展性在[Assets Ultimate](/help/assets/assets-ultimate-overview.md)中可用。
+> * Assets视图UI可扩展性适用于as a Beta版本。 若要提前访问Assets视图UI可扩展性，请[创建并提交Adobe的客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+> * 您可以通过展开“详细反馈”选项并单击“报告问题”来提供文档反馈。
 
 ## <a id="1"></a>如何访问Assets视图
 
@@ -32,9 +35,6 @@ AEM Assets视图具有UI可扩展性功能。 此功能允许用户将自定义U
 在Assets视图中，导航到资产、文件夹或收藏集的详细信息页面。 此详细信息页面有一个专用面板，用于显示添加的UI扩展。
 ![我的工作区](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> AEM Assets视图UI可扩展性适用于as a Beta版本。 您可以通过展开“详细反馈”选项并单击“报告问题”来提供文档反馈。
 
 ## 添加可扩展性组件的先决条件
 
