@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 25%
+source-wordcount: '890'
+ht-degree: 22%
 
 ---
 
@@ -41,9 +41,9 @@ Cloud Manager许可证仪表板允许您轻松访问所有项目中可用的解�
 
 仪表板分为三个部分，向您显示：
 
-* **解决方案** – 此部分总结了您已授予许可的解决方案，如 Sites 或 Assets。
-* **插件** – 此部分总结了您的许可解决方案中可用的插件。
-* **其他权利** — 此部分总结了可在租户中使用的沙盒和开发环境以及其他权利。
+* **解决方案** — 您已授予许可的解决方案。
+* **加载项** — 您可用的许可解决方案的哪些加载项。
+* **其他权利** — 可在租户中使用的沙盒和开发环境及其他权利。
 
 每个部分总结了可用的内容及其使用方式（如果有的话）。 目前，即使租户中存在其他解决方案，也只显示Sites和Assets解决方案。
 
