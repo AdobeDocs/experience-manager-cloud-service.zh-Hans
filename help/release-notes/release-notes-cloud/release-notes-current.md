@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
+source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 40%
+source-wordcount: '1778'
+ht-degree: 39%
 
 ---
 
@@ -51,6 +51,10 @@ Have a look at the November 2024 Release Overview video for a summary of the fea
 **[!DNL Edge Delivery Services]CSV导入程序用于通过AEM实例发布**
 
 在您喜爱的电子表格工具中高效地管理Edge Delivery电子表格数据（例如重定向），并通过新的CSV导入器将其上传到AEM。 [阅读更多](/help/edge/wysiwyg-authoring/tabular-data.md#importing)。
+
+### AEM Sites中的预发行版功能
+
+增强了内容片段引用功能，提供了基于唯一ID的引用，从而确保即使在移动资产或片段时，稳定的链接也保持有效，而无需更新或重新发布。 当前限制：唯一ID尚不支持页面引用。 如果页面在内容片段中被引用，则不应使用此功能。
 
 ### 早期采用者计划 {#sites-early-adopter}
 
