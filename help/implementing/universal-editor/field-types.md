@@ -4,9 +4,9 @@ description: 通过示例了解通用编辑器可在属性面板中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1343'
 ht-degree: 11%
 
 ---
@@ -139,7 +139,7 @@ AEM标记组件类型会启用AEM标记选取器，该选取器可用于将标�
 
 #### AEM内容 {#aem-content}
 
-AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置内容引用。 它提供了额外的验证类型。
+AEM内容组件类型启用了AEM内容选取器，该选取器可用于选择任何AEM资源。 与只能选择资源的[引用组件](#reference)不同，AEM内容组件可以引用任何AEM内容。 它提供了额外的验证类型。
 
 | 验证类型 | 值类型 | 描述 | 必填 |
 |---|---|---|---|
@@ -636,6 +636,8 @@ AEM内容组件类型会启用AEM内容选取器，该选取器可用于设置�
 >[!ENDTABS]
 
 #### 引用 {#reference}
+
+引用组件类型会启用AEM资源选取器，该选取器可用于选择要引用的任何AEM资源。 与可以选择任何AEM资源的[AEM内容组件](#aem-content)不同，引用组件只能引用资源。 它提供了额外的验证类型。
 
 引用组件类型允许从当前对象引用另一个数据对象。
 
