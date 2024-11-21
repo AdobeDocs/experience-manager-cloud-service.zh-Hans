@@ -2,7 +2,7 @@
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 15%
@@ -18,7 +18,7 @@ ht-degree: 15%
 >id="configure_content_hub"
 >title="配置 Content Hub 用户界面"
 >abstract="管理员使用 Experience Manager Assets 可以配置 Content Hub 用户界面上可用的选项。根据管理员选择的配置选项，Content Hub 用户可以查看 Content Hub 上的字段。配置选项包括导入资产时的元数据、过滤器、资产属性、搜索资产时的元数据、个性化品牌以及任何自定义链接。"
->additional-url="https://images-tv.adobe.com/mpcv3/4477/98bce651-721c-442e-98b8-c43e7708e44c_1698834577.854x480at800_h264.mp4" text="观看视频"
+>additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="观看视频"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![在Content Hub上配置资源](assets/configure-assets.png)
