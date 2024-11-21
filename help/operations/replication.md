@@ -4,10 +4,10 @@ description: 了解AEM as a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 38%
+source-wordcount: '1701'
+ht-degree: 31%
 
 ---
 
@@ -23,11 +23,10 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 
 >[!NOTE]
 >
->如果您有兴趣批量发布内容，请使用[Publish内容树工作流](#publish-content-tree-workflow)。
->此工作流步骤是专为Cloud Service构建的，可有效处理大型负载。
+>如果您有兴趣批量发布内容，请使用[树激活工作流步骤](#tree-activation)创建工作流，以便有效地处理大型负载。
 >不建议自行构建批量发布自定义代码。
->如果您必须出于任何原因进行自定义，则可以使用现有工作流API触发此工作流/工作流步骤。
->始终最好是仅发布必须发布的内容。 此外，如果不需要的话，对于不尝试发布大量内容也要谨慎。 但是，您可以通过Publish内容树工作流发送的内容数量没有限制。
+>如果您必须出于任何原因进行自定义，则可以使用现有工作流API通过此步骤触发工作流。
+>始终最好是仅发布必须发布的内容。 如果不需要的话，谨慎不要尝试发布大量内容。 但是，使用树激活工作流步骤可以通过工作流发送的内容数量没有限制。
 
 ### 快速取消/发布 – 计划取消/发布 {#publish-unpublish}
 
@@ -51,7 +50,84 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 
 您可以[在出版基础文档](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)中找到有关管理出版的更多详细信息。
 
+### 树激活工作流步骤 {#tree-activation}
+
+树激活工作流步骤旨在高效复制内容节点的深层层次结构。 当队列变得过大时，它会自动暂停，以允许以最小的延迟并行执行其他复制。
+
+创建使用`TreeActivation`流程步骤的工作流模型：
+
+1. 从AEM as a Cloud Service主页，转到&#x200B;**工具 — 工作流 — 模型**。
+1. 在“工作流模型”页面中，按屏幕右上角的&#x200B;**创建**。
+1. 为模型添加标题和名称。 有关详细信息，请参阅[创建工作流模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
+1. 从列表中选择已创建的模型，然后按&#x200B;**编辑**
+1. 在以下窗口中，删除默认显示的步骤
+1. 将“流程步骤”拖放到当前模型流中：
+
+   ![流程步骤](/help/operations/assets/processstep.png)
+
+1. 选择流中的“流程”步骤，然后按扳手图标选择&#x200B;**配置**。
+1. 选择&#x200B;**进程**&#x200B;选项卡并从下拉列表中选择`Publish Content Tree`，然后选中&#x200B;**处理程序前进**&#x200B;复选框
+
+   ![树激活](/help/operations/assets/new-treeactivationstep.png)
+
+1. 在&#x200B;**参数**&#x200B;字段中设置任何附加参数。 可以将多个以逗号分隔的参数字符串在一起。 例如：
+
+   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`
+
+   >[!NOTE]
+   >
+   >有关参数列表，请参阅&#x200B;**参数**&#x200B;部分。
+
+1. 按&#x200B;**完成**&#x200B;以保存工作流模型。
+
+**参数**
+
+| 名称 | 默认 | 说明 |
+| -------------- | ------- | --------------------------------------------------------------- |
+| 路径 |         | 要从其开始的根路径 |
+| agentId | 发布 | 要使用的复制代理名称 |
+| chunkSize | 50 | 要捆绑到单个复制中的路径数 |
+| maxTreeSize | 500000 | 树的最大节点数（视为小） |
+| maxQueueSize | 10 | 复制队列中的最大项目数 |
+| enableVersion | false | 启用版本控制 |
+| dryRun | false | 当设置为true时，实际上不调用复制 |
+| userId |         | 仅适用于作业。 在工作流中，使用调用工作流的用户 |
+| 个筛选条件 |         | 节点筛选器名称列表。 请参阅下面的支持的过滤器 |
+
+**支持筛选器**
+
+| 名称 | 说明 |
+| ------------- | ------------------------------------------- |
+| onlyModified | 自上次发布后修改的节点 |
+| onlyPublished | 之前发布的节点 |
+
+
+**恢复支持**
+
+该工作流会按块处理内容，每个块表示要发布的完整内容的子集。  如果系统停止了工作流，工作流将从之前停止的位置继续。
+
+**监视工作流进度**
+
+1. 从AEM as a Cloud Service主页，转到&#x200B;**工具 — 常规 — 作业**。
+1. 查看与您的工作流对应的行。 *progress*&#x200B;列指示复制进度。 例如，它可以显示41/564，并且在刷新时，它可以更新为52/564。
+
+   ![树激活进度](/help/operations/assets/treeactivation-progress.png)
+
+
+1. 选择行并打开它可提供有关工作流执行状态的更多详细信息。
+
+   ![树激活状态详细信息](/help/operations/assets/treeactivation-progress-details.png)
+
+
+
 ### 发布内容树工作流程 {#publish-content-tree-workflow}
+
+>[!NOTE]
+>
+>此功能已弃用，支持更高效的树激活步骤，此步骤可包含在自定义工作流中。
+
+<details>
+<summary>单击此处了解有关此已弃用功能的更多信息。</summary>
 
 您可以通过选择&#x200B;**工具 – 工作流 – 模型**&#x200B;和复制&#x200B;**发布内容树**&#x200B;现成的工作流模型，如下所示：
 
@@ -61,7 +137,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 
 与所有工作流一样，也可以通过 API 调用。 有关详细信息，请参阅[以编程方式与工作流交互](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)。
 
-或者，您也可以创建使用`Publish Content Tree`进程步骤的工作流模型：
+或者，您也可以创建使用`Publish Content Tree`进程步骤的工作流模型。
 
 1. 从AEM as a Cloud Service主页，转到&#x200B;**工具 — 工作流 — 模型**。
 1. 在“工作流模型”页面中，按屏幕右上角的&#x200B;**创建**。
@@ -117,10 +193,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
-**恢复支持**
-
-该工作流会按块处理内容，每个块表示要发布的完整内容的子集。 如果系统停止了工作流，它将重新启动并处理尚未处理的块。 日志语句声明内容已从特定路径恢复。
+</details>
 
 ### 复制 API {#replication-api}
 
