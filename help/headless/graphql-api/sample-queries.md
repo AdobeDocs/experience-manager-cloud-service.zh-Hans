@@ -4,16 +4,22 @@ description: 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1826'
-ht-degree: 100%
+source-git-commit: afff23f505b789667e4d34683d0dfd11b1a436a8
+workflow-type: tm+mt
+source-wordcount: '1940'
+ht-degree: 94%
 
 ---
 
 # 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询 {#learn-graphql-with-aem-sample-content-queries}
 
 通过探索示例内容和查询，了解如何将 GraphQL 与 AEM 结合使用，以 Headless 方式提供内容。
+
+>[!IMPORTANT]
+>
+>与内容片段一起使用的GraphQL API的各种功能可通过早期采用者计划获取。
+>
+>要查看状态以及如果您有兴趣如何应用，请查看[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 >[!NOTE]
 >
@@ -1479,6 +1485,79 @@ query {
         ... on ArchiveRef {
           _path
           format
+        }
+      }
+    }
+  }
+}
+```
+
+### 使用UUID引用的特定模型的内容片段的示例查询 {#sample-wknd-fragment-specific-model-uuid-references}
+
+<!-- CQDOC-21487 - need more details on both, text must be checked too -->
+
+这些查询查找：
+
+* 内容片段的UUID以及引用的内容片段或资产的UUID
+* 结果通过JSON属性`_id`返回
+
+#### 使用UUID引用的特定模型的内容片段示例查询 {#sample-wknd-fragment-specific-model-using-a-uuid-reference}
+
+以下查询使用`_id`和`_path`返回所有内容引用：
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+        title
+        featuredImage {
+          ... on ImageRef {
+            _id
+            _path           
+          }
+        }
+        authorFragment {
+          firstName
+          lastName
+          profilePicture {
+            ... on ImageRef {
+              _id
+              _path
+            }
+          }
+        }
+      }
+  }
+}
+```
+
+#### 按UUID引用显示的内容片段示例查询 {#sample-wknd-fragment-specific-model-by-uuid-reference}
+
+以下查询返回与特定`_id`相关的所有内容引用：
+
+```graphql
+{
+  articleById(_id: "3ce2bf53-7436-4d3e-b19a-2793bc2ca63e") {
+    item {
+      _id
+      _path
+      title
+      featuredImage {
+        ... on ImageRef {
+          _id
+          _path
+        }
+      }
+      authorFragment {
+        firstName
+        lastName
+        profilePicture {
+          ... on ImageRef {
+            _id
+            _path
+          }
         }
       }
     }

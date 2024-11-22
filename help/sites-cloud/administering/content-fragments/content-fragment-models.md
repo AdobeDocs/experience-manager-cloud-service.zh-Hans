@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
+source-git-commit: e59c432a2f6b0f2034829b3cb3f88679aa182048
 workflow-type: tm+mt
-source-wordcount: '3284'
-ht-degree: 86%
+source-wordcount: '3591'
+ht-degree: 79%
 
 ---
 
 # 内容片段模型 {#content-fragment-models}
+
+>[!IMPORTANT]
+>
+>内容片段模型的各种功能可通过早期采用者计划获得。
+>
+>要查看状态以及如果您有兴趣如何应用，请查看[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)的内容结构。随后可使用这些片段创作页面或作为 Headless 内容的基础。
 
@@ -179,18 +185,33 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 * **标记**
    * 允许片段作者访问和选择标记区域
+* **片段引用**
+   * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
+   * 数据类型可配置为允许片段作者执行以下操作：
+      * 直接编辑引用的片段。
+      * 根据相应的模型创建新内容片段
+      * 创建字段的新实例
+   * 引用指定了引用资源的路径；例如`/content/dam/path/to/resource`
+* **片段引用(UUID)**
+   * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
+   * 数据类型可配置为允许片段作者执行以下操作：
+      * 直接编辑引用的片段。
+      * 根据相应的模型创建新内容片段
+      * 创建字段的新实例
+   * 在编辑器中，引用指定被引用资源的路径；在内部，引用作为引用该资源的通用唯一ID (UUID)来保存
+      * 您无需知道UUID；在片段编辑器中，您可以浏览到所需的片段
 
 * **内容引用**
    * 引用任何类型的其他内容；可用于[创建嵌套内容](#using-references-to-form-nested-content)
    * 如果图像被引用，您可以选择显示缩略图
    * 字段可以配置为允许片段作者创建新字段实例
-
-* **片段引用**
-   * 引用其他内容片段；可用于[创建嵌套内容](#using-references-to-form-nested-content)
-   * 字段可以配置为允许片段作者：
-      * 直接编辑引用的片段
-      * 根据相应的模型创建新内容片段
-      * 创建字段的新实例
+   * 引用指定了引用资源的路径；例如`/content/dam/path/to/resource`
+* **内容引用(UUID)**
+   * 引用任何类型的其他内容；可用于[创建嵌套内容](#using-references-to-form-nested-content)
+   * 如果图像被引用，您可以选择显示缩略图
+   * 字段可以配置为允许片段作者创建新字段实例
+   * 在编辑器中，引用指定被引用资源的路径；在内部，引用作为引用该资源的通用唯一ID (UUID)来保存
+      * 您无需知道UUID；在片段编辑器中，您可以浏览到所需的资源资源
 
 * **JSON 对象**
    * 使内容片段作者可将 JSON 语法输入到片段的相应元素中。
@@ -292,17 +313,28 @@ Adobe Experience Manager (AEM) as a Cloud Service 中的内容片段模型定义
 
 内容片段可以使用以下任一数据类型形成嵌套内容：
 
-* **[内容引用](#content-reference)**
+* [内容引用](#content-reference)
    * 提供对其他内容的简单引用；任何类型的。
-   * 可以为一个或多个引用（在生成的片段中）配置。
+   * 由数据类型提供：
+      * **内容引用** — 基于路径
+      * **内容引用(UUID)** — 基于UUID
+   * 可为（所得片段中的）一个或多个引用配置它。
 
-* **[片段引用](#fragment-reference-nested-fragments)**（嵌套片段）
+* [片段引用](#fragment-reference-nested-fragments)（嵌套片段）
    * 引用其他片段，具体取决于指定的特定模型。
+   * 由数据类型提供：
+      * **片段引用** — 基于路径
+      * **片段引用(UUID)** — 基于UUID
    * 允许您包含/检索结构化数据。
+
      >[!NOTE]
      >
      当您使用[通过 GraphQL 使用内容片段投放 Headless 内容](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)时，此方法尤其值得关注。
    * 可为（所得片段中的）一个或多个引用配置它。
+
+>[!NOTE]
+>
+有关内容/片段引用和内容/片段引用(UUID)以及升级到基于UUID的数据类型的详细信息，请参阅[为UUID引用升级内容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)。
 
 >[!NOTE]
 >
@@ -322,11 +354,11 @@ AEM 对于以下各项具有重复保护：
 
 ### 内容引用 {#content-reference}
 
-通过内容引用，可从图像、页面或体验片段等另一来源呈现内容。
+**内容引用**&#x200B;和&#x200B;**内容引用(UUID)**&#x200B;数据类型允许您呈现来自其他源的内容；例如，图像、页面或体验片段。
 
 除了标准属性之外，您还可以指定：
 
-* **根路径**，它指定要将任何引用的内容存储在何处
+* **根路径**，它指定或表示存储任何引用内容的位置
   >[!NOTE]
   >
   如果您在使用内容片段编辑器时要在此字段中直接上传并引用图像，则必须指定此属性。
@@ -349,7 +381,7 @@ AEM 对于以下各项具有重复保护：
 
 ### 片段引用（嵌套片段） {#fragment-reference-nested-fragments}
 
-片段引用将引用一个或多个内容片段。在检索内容以供用于您的应用程序时，此功能尤其值得关注，因为通过此功能可检索有多层的结构化数据。
+**片段引用**&#x200B;和&#x200B;**片段引用(UUID)**&#x200B;数据类型可以引用一个或多个内容片段。 在检索内容以供用于您的应用程序时，此功能尤其值得关注，因为通过此功能可检索有多层的结构化数据。
 
 例如：
 
@@ -386,7 +418,7 @@ type CompanyModel {
 可以选择多个模型。在添加对内容片段的引用时，必须使用这些模型创建任何引用的片段。
 
 * **根路径**
-这会为引用的任何片段指定根路径。
+这会指定或表示引用的任何片段的根路径。
 
 * **允许创建片段**
 

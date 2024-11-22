@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
+source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
 workflow-type: tm+mt
-source-wordcount: '5873'
-ht-degree: 97%
+source-wordcount: '5880'
+ht-degree: 96%
 
 ---
 
@@ -1051,6 +1051,7 @@ ht-degree: 97%
       + [持久 GraphQL 查询](/help/headless/graphql-api/persisted-queries.md)
       + [优化 GraphQL 查询](/help/headless/graphql-api/graphql-optimization.md)
       + [更新内容片段以进行优化的 GraphQL 筛选](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [升级内容片段以获取UUID引用](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [示例 GraphQL 查询](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 查询疑难解答](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [用于内容片段投放的AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
