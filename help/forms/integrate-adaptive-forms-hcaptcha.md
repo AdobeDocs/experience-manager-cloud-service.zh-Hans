@@ -4,13 +4,10 @@ description: 使用 hCaptcha 服务轻松增强表单安全性。里面有分步
 topic-tags: Adaptive Forms, author
 keywords: 验证码&amp；reg；服务，自适应Forms， CAPTCHA挑战，机器人预防，表单提交安全，表单垃圾邮件预防
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-exl-id: dc7ca723-1008-472a-b6eb-8e9ed6332a16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 19%
 
 ---
@@ -31,7 +28,7 @@ AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
 
 hCaptcha® 服务项目可保护您的表单免受机器人、垃圾邮件和自动滥用的侵害。它提出一个复选框小部件挑战，并评估用户响应以确定与表单交互的是人还是机器人。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意活动来帮助确保在线交易的安全。
 
-AEM Formsas a Cloud Service支持自适应Forms核心组件中的hCaptcha®。 您可以用它来在提交表单时显示复选框构件质询。
+AEM Formsas a Cloud Service支持自适应Forms中的hCaptcha®。 您可以用它来在提交表单时显示复选框构件质询。
 
 <!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 

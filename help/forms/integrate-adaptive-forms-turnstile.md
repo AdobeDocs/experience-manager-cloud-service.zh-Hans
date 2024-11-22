@@ -3,13 +3,10 @@ title: 如何在AEM自适应表单中使用Turnstile？
 description: 使用Turnstile服务轻松增强表单安全性。 里面有分步指南！
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
-hide: true
-hidefromtoc: true
-exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 role: User, Developer
-source-git-commit: d69d64a02c62b9a796188107cfe1ab7543b5a2be
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 12%
 
 ---
@@ -29,13 +26,13 @@ AEM Formsas a Cloud Service支持以下CAPTCHA解决方案：
 
 ## 将AEM Forms环境与Turnstile验证码集成
 
-Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站点免受自动机器人、恶意攻击、垃圾邮件和不需要的自动流量的侵害。 在允许提交表单之前，它会在表单提交时显示一个复选框，以验证他们是人类。 AEM Formsas a Cloud Service支持自适应Forms核心组件中的Turnstile Captcha。
+Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站点免受自动机器人、恶意攻击、垃圾邮件和不需要的自动流量的侵害。 在允许提交表单之前，它会在表单提交时显示一个复选框，以验证他们是人类。 AEM Formsas a Cloud Service支持自适应Forms中的Turnstile Captcha。
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
 ### 将AEM Forms环境与Turnstile验证码集成的先决条件 {#prerequisite}
 
-要为AEM Forms核心组件配置Turnstile，您需要从Turnstile网站获取[Turnstile站点密钥和密钥](https://developers.cloudflare.com/turnstile/get-started/)。
+要为AEM Forms配置Turnstile，您需要从Turnstile网站获取[Turnstile站点密钥和密钥](https://developers.cloudflare.com/turnstile/get-started/)。
 
 ### 为AEM Forms配置Turnstile的步骤{#steps-to-configure-turnstile}
 

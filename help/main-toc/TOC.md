@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
+source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
 workflow-type: tm+mt
-source-wordcount: '5880'
+source-wordcount: '5883'
 ht-degree: 96%
 
 ---
@@ -750,7 +750,7 @@ ht-degree: 96%
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [在自适应表单中使用 hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [在自适应表单核心组件中使用hCAPTCHA](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [为自适应表单（核心组件）设计 JSON 架构](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -797,7 +797,7 @@ ht-degree: 96%
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
             + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
             + [在自适应表单中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [在自适应表单中使用 Turnstile](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [在自适应表单中使用Turnstile CAPTCHA](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)
             + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
             + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
