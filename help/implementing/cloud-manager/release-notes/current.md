@@ -4,8 +4,8 @@ description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2024.11.0 发行
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
-workflow-type: ht
+source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ AEM 主页向早期采用者提供优化的体验，专注于改善工作流、�
 >
 >目前，开箱即用的提取请求代码质量检查仅限于 GitHub 托管的存储库，但正在计划将此功能扩展到其他 Git 供应商的更新。
 
-如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。-->
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
 
 
 ## 错误修复

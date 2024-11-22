@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
+source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
-source-wordcount: '5883'
+source-wordcount: '5886'
 ht-degree: 96%
 
 ---
@@ -1100,6 +1100,7 @@ ht-degree: 96%
          + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
 + 生成式 AI {#generative-ai}
    + [生成变体](/help/generative-ai/generate-variations.md)
+   + [助理(Beta有限公司)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
@@ -1123,7 +1124,7 @@ ht-degree: 96%
          + [在 Cloud Manager 中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [添加一个 Adobe 存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [添加一个专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [添加一个外部存储库（早期采用者）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [添加外部存储库(有限的Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模块支持](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

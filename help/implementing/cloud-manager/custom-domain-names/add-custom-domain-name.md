@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2fb23918b04f63aab3ae859485be673034e7aec
+source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1016'
 ht-degree: 16%
 
 ---
@@ -52,6 +52,11 @@ ht-degree: 16%
 1. 在&#x200B;**添加域**&#x200B;对话框的&#x200B;**域名**字段中，输入您正在使用的自定义域名。
 输入域名时，不要包含`http://`、`https://`或空格。
 
+   >[!NOTE]
+   >
+   >如果您需要域的`www`和`non-www`版本，则必须单独添加它们。 例如，`example.com`和`www.example.com`。
+   <!-- Marius Petria on SLACK tmp-skyline-cdn-certificates - Actually  my opinion is that this option should be explicit in UI (that was present in the initial mocks of the design but for some reason it was dropped). I think when adding a domain there should be a check mark to also add www.domain. When adding example.com Customer should be prompted with the following options: Do you also want to add www.example.com and have a redirect example.com -> www.example.com?Do you also want to add www.example.com and have a redirect www.example.com -> example.com? -->
+
 1. 单击&#x200B;**创建**。
 
 1. 在&#x200B;**验证域**&#x200B;对话框中，在&#x200B;**您计划用于此域的证书类型是什么？**&#x200B;下拉列表，选择以下选项之一：
@@ -70,7 +75,7 @@ ht-degree: 16%
 
    >[!NOTE]
    >
-   >如果您使用自己的客户托管（OV/EV或DV） SSL证书，并打算使用客户托管的CDN ***提供程序***，则可以跳过添加SSL证书，并在准备就绪后直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+   >如果您使用自己的客户托管（OV/EV或DV） SSL证书，并打算使用客户托管的CDN ***提供程序***，则可以跳过添加SSL证书。 相反，请在准备就绪后直接转到[添加CDN配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
 
 
 ### Adobe托管证书步骤 {#adobe-managed-cert-steps}
