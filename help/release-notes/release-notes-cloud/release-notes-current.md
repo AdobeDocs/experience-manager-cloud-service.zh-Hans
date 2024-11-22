@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 39%
@@ -54,7 +54,7 @@ Have a look at the November 2024 Release Overview video for a summary of the fea
 
 ### AEM Sites中的预发行版功能
 
-增强了内容片段引用功能，提供了基于唯一ID的引用，从而确保即使在移动资产或片段时，稳定的链接也保持有效，而无需更新或重新发布。 当前限制：唯一ID尚不支持页面引用。 如果页面在内容片段中被引用，则不应使用此功能。
+使用基于唯一ID的引用增强了[内容片段引用](/help/headless/graphql-api/uuid-reference-upgrade.md)，从而确保即使在移动资产或片段时仍保持有效的稳定链接 — 无需更新或重新发布。 当前限制：唯一ID尚不支持页面引用。 如果页面在内容片段中被引用，则不应使用此功能。
 
 ### 早期采用者计划 {#sites-early-adopter}
 

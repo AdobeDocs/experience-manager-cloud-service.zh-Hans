@@ -4,7 +4,7 @@ description: 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: e44872277c4bda66fafd074416ea5253c365cc2f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 95%
@@ -257,8 +257,6 @@ Sites GraphQL 服务监听（在后台）对内容片段模型所作的任何更
 ### 数据类型 {#data-types}
 
 GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数据类型和对应的 GraphQL 类型呈现如下：
-
-<!-- CQDOC-21487 - check additions to table -->
 
 | 内容片段模型 – 数据类型 | GraphQL 类型 | 描述 |
 |--- |--- |--- |
@@ -1144,7 +1142,7 @@ query allTeams {
          * 请参阅[示例查询 – 一个特定城市片段](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
       * `_id_` ：存储库中内容片段的UUID
-        <!-- CQDOC-21487 -->
+
          * 查看具有UUID引用的特定模型的内容片段的[示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
          * [请参阅UUID引用的内容片段示例查询](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
