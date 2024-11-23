@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 0ca20c601a640e7acea5b49c7d399475e7af9fbc
+source-git-commit: ecf42a4bda424bb344e1b348924f1435a99f26c7
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 34%
@@ -52,5 +52,6 @@ AEM 主页向早期采用者提供优化的体验，专注于改善工作流、�
 如果没有可用的AEM Cloud Service生产环境，则对于用户而言，这些选项将暗显（不可用）。
 
 ![](/help/implementing/cloud-manager/assets/aem-home-no-prod-environs.png)
+
 
 
