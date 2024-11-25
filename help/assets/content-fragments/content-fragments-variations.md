@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
 workflow-type: tm+mt
 source-wordcount: '2504'
 ht-degree: 53%
@@ -14,7 +14,7 @@ ht-degree: 53%
 
 # 变体 – 创作片段内容{#variations-authoring-fragment-content}
 
-[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)是Adobe体验管理器(AEM)as a Cloud Service中的内容片段的重要功能。 这是因为它们允许您创建和编辑&#x200B;**母版**&#x200B;内容的副本，以用于特定渠道和方案。 特别是，这使Headless内容投放更加灵活。
+[变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)是Adobe Experience Manager (AEM)as a Cloud Service内容片段的一项重要功能。 这是因为它们允许您创建和编辑&#x200B;**母版**&#x200B;内容的副本，以用于特定渠道和方案。 特别是，这使Headless内容投放更加灵活。
 
 >[!NOTE]
 >
