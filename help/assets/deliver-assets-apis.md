@@ -3,9 +3,9 @@ title: 交付 API
 description: 了解如何使用投放API。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '619'
 ht-degree: 3%
 
 ---
@@ -40,6 +40,11 @@ Experience Manager资源存储库中可用的所有[批准的资源](approve-ass
 | [资源元数据](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | 返回与资产关联的属性，例如标题、描述、CreateDate、ModifyDate等。 |
 | 视频资源的[播放器容器](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | 返回视频资产的播放器容器。 您可以将播放器嵌入到iframeHTML元素中并播放视频。 |
 | [以所选输出格式显示的播放清单](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | 以所选输出格式返回指定视频资源的播放清单文件。 您必须构建一个自定义播放器，该播放器能够通过HLS或DASH协议进行自适应流式传输，以便能够拉取播放清单文件并播放视频。 |
+
+
+>[!NOTE]
+>
+[图像预设、智能成像和其他图像修饰符](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)仅作为有限可用性功能提供。 若要获得访问权限，请[创建并提交Adobe的客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
 
 ## 投放API端点 {#delivery-apis-endpoint}
 
