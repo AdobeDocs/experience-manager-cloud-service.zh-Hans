@@ -60,7 +60,7 @@ Have a look at the November 2024 Release Overview video for a summary of the fea
 
 **用于内容片段投放的 AEM REST OpenAPI**
 
-用于内容片段投放的 [ AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) 现已提供给 AEM AEM as a Cloud Service 使用。
+[用于内容片段投放的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) 现已提供给 AEM AEM as a Cloud Service 使用。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -165,7 +165,7 @@ intuitive and improving the mobile form-filling experience.
 * 修复了 UI 测试以便与 Core CIF 组件正常配合使用。
 * 解决了类别 URL 格式在云实例中无法按预期运行的问题。
 
-## [!DNL Experience Manager] 作为 [!DNL Cloud Service] 的基础 {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 提高了树复制性能(并弃用Publish内容树工作流) {#tree-replication-performance}
 
@@ -195,7 +195,7 @@ Edge计算使数据处理更接近浏览器，其优势包括减少延迟。 作
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表 [这里](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)。
+您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -205,7 +205,7 @@ Edge计算使数据处理更接近浏览器，其优势包括减少延迟。 作
 
 您可以在[此处](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到迁移工具版本的完整列表。
 
-## Universal Editor {#universal-editor}
+## 通用编辑器 {#universal-editor}
 
 您可以在[此处](/help/release-notes/universal-editor/current.md)找到通用编辑器版本的完整列表。
 

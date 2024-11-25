@@ -59,9 +59,9 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 | [!DNL Sites] | Portal Director 和 Portlet 组件 | 这些功能在 [!DNL Experience Manager] 6.4 中已弃用，现已从 [!DNL Experience Manager] 中删除。 | 已删除 |
 | [!DNL Sites] | 设计导入程序 | 此功能已被删除，因为 [!DNL Experience Manager] 存储库的不可更改部分在运行时无法访问。 | 已删除 |
 | [!DNL Assets] | [!DNL Assets] 无法与 Marketing Cloud Assets 核心服务和 Creative Cloud 服务进行共享。 | 要与 [!DNL Adobe Creative Cloud] 集成，请使用 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。 | 已删除 |
-| [!DNL Foundation] | 对 Apache Sling 数据源（OSGi 包 org.apache.sling.datasource）的支持 | 不适用 | 已删除 |
+| [!DNL Foundation] | 支持 Apache Sling 数据源（OSGi 包 org.apache.sling.datasource） | 不适用 | 已删除 |
 | [!DNL Foundation] | 支持 JST 脚本模板（OSGi 包 org.apache.sling.scripting.jst） | 不适用 | 已删除 |
-| [!DNL Foundation] | 对 Apache Felix Http Whiteboard 的支持 | OSGi Http Whiteboard | 2022 年 3 月 |
+| [!DNL Foundation] | 支持 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
 | [!DNL Foundation] | 支持 com.adobe.granite.oauth.server | Adobe IMS 集成 | 2023 年 3 月 |
 | [!DNL Foundation] | 支持 org.apache.sling.serviceusermapping 功能，以[获取服务用户 ID](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不适用 | 8/30/24 |
 
@@ -147,7 +147,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
     <td>7/30/21</td>
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty。websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>o rg.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.ecli pse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
-    <td>Eclipse Jetty 和 Felix Http Jetty 包不再受支持。<a href="#org.eclipse.jetty">请参阅下面的删除说明。</a></td>
+    <td>不再支持 Eclipse Jetty 和 Felix Http Jetty 包。<a href="#org.eclipse.jetty">请参阅下面的删除说明。</a></td>
     <td>5/27/21</td>
     <td>8/26/21</td>
   </tr>
@@ -346,17 +346,17 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 
 ### 使用 `org.apache.abdera*` 和 `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
-将`org.apache.abdera` 和 `org.apache.sling.atom.taglib`中任何包的使用替换为提供类似功能或您自己的代码的第三方库。
+将 `org.apache.abdera` 和 `org.apache.sling.atom.taglib` 中任何包的使用替换为提供类似功能或您自己的代码的第三方库。
 
 操作列表：
-* 使用其他第三方库/自己的代码替换`org.apache.abdera` 和 `org.apache.sling.atom.taglib`中包的使用。
+* 使用其他第三方库/自己的代码替换 `org.apache.abdera` 和 `org.apache.sling.atom.taglib` 中包的使用。
 
 ### 使用 `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard}
 
-将`org.apache.felix.http.whiteboard`的用法替换为[OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)。官方 OSGi API 具有类似的功能，并且大多数情况下的替换只需要更改服务注册属性。
+将 `org.apache.felix.http.whiteboard` 的用法替换为 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)。官方 OSGi API 具有类似的功能，并且大多数情况下的替换只需要更改服务注册属性。
 
 操作列表：
-* 将`org.apache.felix.http.whiteboard`的用法替换为[OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)
+* 将 `org.apache.felix.http.whiteboard` 的用法替换为 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)
 
 ## OSGI 配置 {#osgi-configuration}
 
