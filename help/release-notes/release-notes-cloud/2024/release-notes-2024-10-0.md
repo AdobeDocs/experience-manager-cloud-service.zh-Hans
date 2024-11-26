@@ -3,9 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.10.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.10.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 941d544a983ac4ad9b82c82edf3b68c964267e9c
+exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
+source-git-commit: c3beecaab03c3721ad2fb70658a335d17f9a66d0
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1664'
 ht-degree: 99%
 
 ---
@@ -26,19 +27,17 @@ ht-degree: 99%
 
 ## 发布日期 {#release-date}
 
-[!DNL Adobe Experience Manager][!DNL Cloud Service]当前功能版本（2024.10.0）的释放日期是 2024 年 10 月 31 号。下一个功能版本 (2024.11.0) 计划于 2023 年 11 月 21 号释放。
+[!DNL Adobe Experience Manager][!DNL Cloud Service] 当前功能版本（2024.10.0）的发布日期是 2024 年 10 月 31 号。下一个功能版本 (2024.11.0) 计划于 2023 年 11 月 21 号发布。
 
 ## 维护发行说明 {#maintenance}
 
 您可以在[此处](/help/release-notes/maintenance/latest.md)找到最新的维护发行说明。
 
-<!-- ## Release Video {#release-video}
+## 发布视频 {#release-video}
 
-Have a look at the October 2024 Release Overview video for a summary of the features added in the 2024.10.0 release:
+观看 2024 年 10 月版概述视频，大致了解 2024.10.0 版的新增功能：
 
->[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3440501?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -57,7 +56,7 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 
 **用于内容片段投放的 AEM REST OpenAPI**
 
-用于内容片段投放的 [ AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) 现已提供给 AEM AEM as a Cloud Service 使用。
+[用于内容片段投放的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md) 现已提供给 AEM AEM as a Cloud Service 使用。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -81,19 +80,19 @@ Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内�
 
 **已授予许可资源的 Digital Rights Management**
 
-组织现在可以为 Content Hub 的用户利用 DRM 来获取已授予许可资源，从而提高许可证合规性并最大限度地降低共享授予许可条款资产的风险，要求用户在开始下载已授予许可资源之前先查看并接受许可条款。如需了解更多信息，请参阅 [管理 Content Hub 上的已授予许可资源](/help/assets/manage-licensed-assets-on-content-hub.md)。
+组织现在可以为 Content Hub 的用户利用 DRM 来获取已授予许可资源，从而提高许可证合规性并最大限度地降低共享授予许可条款资产的风险，要求用户在开始下载已授予许可资源之前先查看并接受许可条款。如需了解更多信息，请参阅[管理 Content Hub 上的已授予许可资源](/help/assets/manage-licensed-assets-on-content-hub.md)。
 
 ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
 
 **资源信息卡元数据配置**
 
-Content Hub 现在允许您配置需要在资源卡信息上显示的关键元数据字段，最多 6 个字段。如需更多信息，请参阅 [配置 Content Hub ](/help/assets/configure-content-hub-ui-options.md#asset-card)中的资源信息卡分区。
+Content Hub 现在允许您配置需要在资源卡信息上显示的关键元数据字段，最多 6 个字段。如需更多信息，请参阅[配置 Content Hub ](/help/assets/configure-content-hub-ui-options.md#asset-card)中的资源信息卡分区。
 
 ![资源信息卡上的关键元数据](/help/assets/assets/asset-card-key-metadata.png)
 
 **配置过期资源的可见性和下载**
 
-管理员现在可以控制是否需要在 Content Hub 显示过期资源。如果过期的资源可见，他们还可以定义用户是否可以下载它们。如需更多信息，请参阅 [配置 Content Hub ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub)中的过期资源分区。
+管理员现在可以控制是否需要在 Content Hub 显示过期资源。如果过期的资源可见，他们还可以定义用户是否可以下载它们。如需更多信息，请参阅[配置 Content Hub ](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub)中的过期资源分区。
 
 ![Content Hub 上的资产已过期](/help/assets/assets/expired-assets-content-hub.png)
 
@@ -148,7 +147,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 * 修复了 UI 测试以便与 Core CIF 组件正常配合使用。
 * 解决了类别 URL 格式在云实例中无法按预期运行的问题。
 
-## [!DNL Experience Manager] 作为 [!DNL Cloud Service] 的基础 {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### 控制表单提交的配置 {#configuration-submissions}
 
@@ -165,19 +164,19 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 ### 具有高级网络选项的自助日志转发 {#log-forwarding}
 
-虽然可以从 Cloud Manager 下载 AEM（包括 Apache/Dispatcher）和内容传递网络日志，但许多组织发现将这些日志流式传输到首选日志记录目的地是有益的。AEM 现在支持 [日志转发](/help/implementing/developing/introduction/log-forwarding.md) 到 Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和 OpenSearch）和 Splunk。AEM 日志可以选择通过高级网络配置转发，例如使用专用的 IP 地址。
+虽然可以从 Cloud Manager 下载 AEM（包括 Apache/Dispatcher）和内容传递网络日志，但许多组织发现将这些日志流式传输到首选日志记录目的地是有益的。AEM 现在支持[日志转发](/help/implementing/developing/introduction/log-forwarding.md)到 Azure Blob Storage、Datadog、HTTPS、Elasticsearch（和 OpenSearch）和 Splunk。AEM 日志可以选择通过高级网络配置转发，例如使用专用的 IP 地址。
 
-此功能由用户以自助方式配置，并使用 [配置管道](/help/operations/config-pipeline.md)进行部署。
+此功能由用户以自助方式配置，并使用[配置管道](/help/operations/config-pipeline.md)进行部署。
 
 ### 面向企业用户的无管道 URL 重定向 {#pipeline-free-redirects}
 
-当页面被删除或移动，或出现其他情况时，浏览器端重定向很有用。借助 [无管道 URL 重定向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)，您可以将 Apache 重写映射文件放置在 AEM 发布位置，该文件会在该位置自动加载 - 无需将文件承诺到源代码控制或启动 Cloud Manager 管道。
+当页面被删除或移动，或出现其他情况时，浏览器端重定向很有用。借助[无管道 URL 重定向](/help/implementing/dispatcher/pipeline-free-url-redirects.md)，您可以将 Apache 重写映射文件放置在 AEM 发布位置，该文件会在该位置自动加载 - 无需将文件承诺到源代码控制或启动 Cloud Manager 管道。
 
 发布重写文件的选项包括将其作为资源上传、使用 ACS Commons Rewrite Map Manager 或与自定义用户界面交互。
 
 ### RDE 的配置管道 {#config-pipeline-rdes}
 
-快速开发环境是在云环境中快速部署和测试代码和配置的强大工具。RDE 现在支持 [同步配置 YAML 文件](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)，包括内容传递网络设置（例如流量筛选条件规则和请求/响应转换），以及日志转发和其他配置选项。[有关更多详细信息，请参阅受支持的配置选项的完整列表](/help/operations/config-pipeline.md)。
+快速开发环境是在云环境中快速部署和测试代码和配置的强大工具。RDE 现在支持[同步配置 YAML 文件](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)，包括内容传递网络设置（例如流量筛选条件规则和请求/响应转换），以及日志转发和其他配置选项。[有关更多详细信息，请参阅受支持的配置选项的完整列表](/help/operations/config-pipeline.md)。
 
 ### 新产品轮廓 {#new-product-profiles}
 
@@ -195,7 +194,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表 [这里](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0)。
+您可以在[此处](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -205,7 +204,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 您可以在[此处](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到迁移工具版本的完整列表。
 
-## Universal Editor {#universal-editor}
+## 通用编辑器 {#universal-editor}
 
 您可以在[此处](/help/release-notes/universal-editor/current.md)找到通用编辑器版本的完整列表。
 
