@@ -4,10 +4,10 @@ description: 了解如何创建在WYSIWYG创作活动中与Edge Delivery Service
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 54%
+source-wordcount: '1428'
+ht-degree: 53%
 
 ---
 
@@ -328,8 +328,6 @@ export default function decorate(block) {
 为简单起见，本指南要求您直接提交到 `main`。对于示例存储库中的试验，这通常不是问题。对于实际项目工作，[您应遵循开发最佳实践](https://www.aem.live/docs/dev-collab-and-good-practices)，在不同的分支上进行开发，并在合并到 `main` 之前通过拉取请求检查所有更改。
 
 当您未在 `main` 分支上进行开发时，可以在 Universal Editor 位置栏中追加 `?ref=<branch>` 以从分支加载页面。`<branch>` 是分支名称，因为它将用于项目的预览或实时 URL，例如 `https://<branch>--<repo>--<owner>.hlx.page`。
-
-仅在将新模型合并到 `main` 分支时，才支持使用该模型发布内容。
 
 ## 为基于文档的创作重用块 {#reusing-blocks}
 
