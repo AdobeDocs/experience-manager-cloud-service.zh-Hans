@@ -1,16 +1,16 @@
 ---
-title: ' [!DNL the Content Hub]中的资产属性'
-description: 了解如何在 [!DNL Content Hub]中查看和管理资源属性
+title: 在 [!DNL the Content Hub]中预览资源及其属性
+description: 了解如何在 [!DNL Content Hub]中预览资源和属性
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 2be8d61f1f00444f01772515760d15f2a6f81cd9
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 11%
+source-wordcount: '682'
+ht-degree: 10%
 
 ---
 
-# 在Content Hub中管理资源属性 {#asset-properties}
+# 在Content Hub中预览资源及其属性 {#asset-properties}
 
 | [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -25,17 +25,17 @@ ht-degree: 11%
 
 [!DNL The Content Hub]允许您查看对有效分配资产至关重要的资产的相关信息。 它是资产所有可用数据的集合。
 
-查看资源属性可帮助您进一步对资源进行分类，在数字信息量增长时非常有用。 它可以基于文件名、缩略图和内存管理数百个文件。但是，当涉及的人数以及托管资源数量增加时，此方法不可扩展。 此外，数字资源的价值会随着资源的变化而增长：
+查看资源预览及其属性可帮助您进一步分类资源，并且随着数字信息量的增长非常有用。 它可以基于文件名、缩略图和内存管理数百个文件。但是，当涉及的人数以及托管资源数量增加时，此方法不可扩展。 此外，数字资源的价值会随着资源的变化而增长：
 
 * 更易于访问 - 系统和用户可以轻松地找到它。
-* 更易于管理 — 您可以轻松地找到具有一组相同属性的资源并对其应用更改。
+* 更轻松地执行操作 — 您掌握着资产可视化图表和相关信息的完整信息，能够更快地执行操作，而且更加信任。
 * 完整 — 资产包含更多信息和上下文。
 
 ## 先决条件 {#prerequisites}
 
 [Content Hub用户](deploy-content-hub.md#onboard-content-hub-users)可以执行本文中提到的操作。
 
-## 查看资源的属性 {#properties-ui}
+## 预览资源及其属性 {#properties-ui}
 
 在使用、共享或下载资源之前，您可以更细致地查看该资源。使用预览功能，您不仅可以查看图像，还可以查看一些其他支持的资源类型。 您不仅可以查看资源，还可以查看其详细信息并采取其他操作。 要查看某个资产的信息，请导航到该资产或[搜索](search-assets.md)该资产，然后单击该资产以打开其属性。 下图演示了资源属性页面上可用的字段：
 
@@ -54,9 +54,9 @@ ht-degree: 11%
 * **K：**&#x200B;关闭预览屏幕
 * **L：**&#x200B;资产的信息，包括标题、格式、大小、分辨率、标记、颜色标记和智能标记。
 
-## 支持的格式 {#supported-formats}
+## 支持的资源格式 {#supported-formats}
 
-下表演示了[!DNL the Content Hub]中支持的文件格式：
+[!DNL Content Hub]支持基础[!DNL Assets]存储库支持的所有资源类型和格式。 下表列出了[!DNL the Content Hub]中的关键文件格式，这些格式为直观预览资产提供了额外的支持：
 
 <table> 
     <tbody>
@@ -104,15 +104,15 @@ ht-degree: 11%
     </tbody>
    </table>
 
-### 上传资产后的派生属性 {#derived-properties}
+### 派生属性 {#derived-properties}
 
-上传资源后，Content Hub会派生出一些自动生成的资产。 以下是其中一些规则列表：
+在将资源上传到[!DNL Assets]并批准其在[!DNL Content Hub]上可用时，[!DNL Content Hub]中显示的资源的某些属性是派生的，或自动生成的。 以下是其中一些规则列表：
 
-* **大小：**&#x200B;大小根据资产的维度演示资产的逻辑值。 它可阐明资产在存储库中占用的空间。 [!DNL The Content Hub]支持高达2GB的资源。
+* **大小：**&#x200B;大小表示基础存储库中存储的资产二进制文件的大小。
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **智能标记：** [!DNL The Content Hub]使用Adobe Sensei的智能内容服务，在基于标记的结构上使用识别算法来培训资源。 然后，此内容智能可用于将相关标记应用到其他资产集。 智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL The Content Hub]会自动将智能标记应用于资源。
+* **智能标记：** [!DNL The Content Hub]使用Adobe Sensei的智能内容服务，在基于标记的结构上使用识别算法来培训资源。 然后，此内容智能可用于将相关标记应用到其他资产集。 智能标记可帮助您快速查找相关资产，从而提高项目的内容速度。 智能标记是未包含在图像中的资产信息示例。 默认情况下，[!DNL Experience Manager Assets]会自动将智能标记应用于资源。
 
 * **颜色标记：** [颜色标记](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可帮助您使用通过Adobe的Sensei AI功能在资源中自动识别的颜色识别资源。
 
@@ -126,7 +126,10 @@ ht-degree: 11%
 
 向Content Hub添加资源时，还会指定一些资产。 有关详细信息，请参阅[将品牌批准的资源添加到Content Hub](upload-brand-approved-assets.md)。 这些属性也会显示在资产属性页面上。
 
-管理员还可以配置为每个资源显示的属性。 有关详细信息，请参阅[配置Content Hub用户界面](configure-content-hub-ui-options.md#configure-asset-details-content-hub)。
+管理员还可以配置针对每个资源显示的属性：
+
+* 在资源预览UI中：请参阅[配置Content Hub用户界面](configure-content-hub-ui-options.md#configure-asset-details-content-hub)。
+* 在搜索结果或收藏集中的资源卡上：请参阅[配置Content Hub用户界面](configure-content-hub-ui-options.md#asset-card)。
 
 <!--
 
