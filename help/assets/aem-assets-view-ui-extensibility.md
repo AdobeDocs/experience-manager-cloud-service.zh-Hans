@@ -4,9 +4,9 @@ description: 了解AEM Assets视图的UI可扩展性功能。 AEM Assets视图UI
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ AEM Assets视图具有UI可扩展性功能。 此功能允许用户将自定义U
 ## 添加可扩展性组件的先决条件
 
 * [访问Assets视图](#1)。
-* 访问[Adobe应用生成器](https://developer.adobe.com/app-builder/docs/overview/)，默认情况下包含在[Assets Ultimate](/help/assets/assets-ultimate-overview.md)中。
+* 访问[Adobe应用生成器](https://developer.adobe.com/app-builder/docs/overview/)。
 * 拥有组织内系统管理员角色的开发人员。 有关详细信息，请参阅[此](https://developer.adobe.com/uix/docs/guides/get-access/)。
 * 必须在本地计算机上安装AdobeIO命令行工具(AIO CLI)。 此工具对于创建和部署扩展项目至关重要。 有关详细信息，请参阅[此](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up)。
 * 很好地了解JavaScript、Node.js和React技术。

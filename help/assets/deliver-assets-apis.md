@@ -3,9 +3,9 @@ title: 交付 API
 description: 了解如何使用投放API。
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,8 @@ Experience Manager资源存储库中可用的所有[批准的资源](approve-ass
 
 >[!NOTE]
 >
-[图像预设、智能成像和其他图像修饰符](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)仅作为有限可用性功能提供。 若要获得访问权限，请[创建并提交Adobe的客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+* [图像预设、智能成像和其他图像修饰符](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)仅作为有限可用性功能提供。 若要获得访问权限，请[创建并提交Adobe的客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+* 智能裁剪不可用于[Assets Prime](/help/assets/assets-ultimate-overview.md)。
 
 ## 投放API端点 {#delivery-apis-endpoint}
 
