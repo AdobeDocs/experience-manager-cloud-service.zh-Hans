@@ -4,10 +4,10 @@ description: 了解如何使用Cloud Acceleration Manager将内容从迁移集�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
+source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 12%
+source-wordcount: '3296'
+ht-degree: 11%
 
 ---
 
@@ -169,6 +169,17 @@ ht-degree: 12%
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
+### 由于云环境未处于就绪状态，引入失败 {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
+>title="云环境未处于就绪状态"
+>abstract="在极少数情况下，目标云环境可能会遇到意外问题，从而导致摄取失败。"
+
+在极少数情况下，摄取的目标Cloud Service环境可能会遇到意外问题。 因此，摄取将失败，因为环境未处于预期的就绪状态。 检查摄取日志以显示所遇到的错误状态的更多详细信息。
+
+确保创作环境可用，并等待几分钟，然后再重新尝试引入。 如果问题仍然存在，请联系客户支持部门并提供遇到的错误状态。
+
 ### 因唯一性约束违规导致的追加数据引入失败 {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
@@ -239,7 +250,7 @@ MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支�
 
 有时，意外的间歇性问题可能会导致摄取失败，很遗憾，唯一的解决办法是重试摄取。 调查摄取日志以找出失败的原因，并查看它是否与下面列出的任何错误一致，其中应尝试重试。
 
-## MongoDB问题 {#mongo-db-issues}
+#### MongoDB问题 {#mongo-db-issues}
 
 * `Atlas prescale timeout error` — 摄取阶段将尝试将目标云数据库预缩放到与正在摄取的迁移集内容大小一致的合适大小。 在少数情况下，此操作未在预期时间范围内完成。
 * `Exhausted mongo restore retries` — 尝试将引入的迁移集内容的本地转储恢复到云数据库的尝试已耗尽。 这表示MongoDB的整体运行状况/网络问题，该问题通常会在几分钟后自行修复。
