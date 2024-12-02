@@ -1,24 +1,24 @@
 ---
 title: Publish到AEM和Dynamic Media的快速转换
-description: 通过Assets视图中的Quick Publish ，您可以同时或单独将资源发布到AEM和Dynamic Media。 您可以选择资源和文件夹，然后选择发布到Dynamic Media或AEM。
+description: Assets视图中的快速Publish允许您同时或单独将资源发布到AEM和Dynamic Media。 您可以选择资源和文件夹，然后选择发布到Dynamic Media或AEM。
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 1%
+source-wordcount: '1209'
+ht-degree: 2%
 
 ---
 
 # 发布资源到 AEM 和 Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 通过Experience Manager Assets，您可以使用Assets视图快速将资源发布到Experience Manager和Dynamic Media。 这可确保您管理资源，然后使用[Assets视图发布这些资源，而无需切换到“管理员”视图](/help/assets/overview.md##persona-based-experiences)。
 
-Experience Manager Assets视图提供了灵活性，允许您将资源同时发布到AEM和/或Dynamic Media。 您可以在上传、浏览和搜索资产时发布资产。 本文详细介绍了用于发布资产的所有选项。
+Experience Manager Assets视图提供了灵活性，允许您将资源同时发布到AEM和/或Dynamic Media。 您可以在上传、浏览和搜索资产时发布资产。 本文详细介绍了用于发布资产的所有这些选项。
 
 ## 开始之前 {#before-you-begin}
 
@@ -27,7 +27,7 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 * 要查看Dynamic Media的发布选项，请使用“管理员”视图配置以下设置：
 
    * [创建Dynamic Media云配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
-   * 在文件夹级别设置Dynamic Media Publish模式。 您也可以在创建Dynamic Media云配置时配置这些设置。 要在文件夹级别覆盖这些设置，请参阅[在Dynamic Media中在文件夹级别配置选择Publish](/help/assets/dynamic-media/selective-publishing.md)。
+   * 在文件夹级别设置Dynamic Media Publish模式。 您也可以在创建Dynamic Media云配置时配置这些设置。 若要在文件夹级别覆盖这些设置，请参阅[在Dynamic Media中在文件夹级别配置选择性Publish](/help/assets/dynamic-media/selective-publishing.md)。
 
 * 要查看AEM的发布选项，必须为环境配置AEM发布端点。
 
@@ -35,7 +35,7 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 
 在将资源上传到文件夹时，您可以将资源发布到AEM和Dynamic Media。 显示的发布选项取决于在资源将上传到的文件夹上设置的Dynamic Media发布模式。 Dynamic Media发布模式可以设置为：
 
-* **激活时：**&#x200B;将资产上传到此文件夹时，必须先明确发布资产，然后才能提供URL/嵌入链接。
+* **激活时：**&#x200B;将资源上传到此文件夹时，必须先明确发布资源，然后才能提供URL/嵌入链接。
 
 * **立即：**&#x200B;将资源上传到此文件夹时，系统会将这些资源摄取到Experience Manager中，并立即提供URL/Embed。
 * **选择性Publish：** Assets已发布到您选择的Experience Manager或Dynamic Media以在公共域中交付。
@@ -82,7 +82,7 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 要使用资源浏览页面发布资源，请执行以下操作：
 
 1. 单击左窗格中可用的&#x200B;**Assets Management**&#x200B;部分中的&#x200B;**Assets**。
-2. 选择需要发布的资源或文件夹，然后单击&#x200B;**Publish**。
+2. 选择需要发布的一个或多个资源或文件夹，然后单击&#x200B;**Publish**。
 3. 选择&#x200B;**AEM**&#x200B;并单击&#x200B;**Publish**以将资源发布到AEM和Dynamic Media。
    ![资源浏览](/help/assets/assets/browse-uactivation-immediate.svg)
 您无法发布Dynamic Media Publish模式设置为**选择性发布的文件夹。**所有其他选定的文件夹或资源在选择AEM后发布到AEM和Dynamic Media。
@@ -100,15 +100,15 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 
    >[!NOTE]
    >
-   >如果您选择文件夹并单击搜索结果页面中的&#x200B;**Publish**，Experience Manager Assets会显示一个将资产发布到AEM而不是Dynamic Media的选项，无论文件夹的Dynamic Media Publish模式设置如何。
+   >如果您选择文件夹并单击搜索结果页面中的&#x200B;**Publish**，则Experience Manager Assets会显示一个将资产发布到AEM而不是Dynamic Media的选项，无论文件夹的Dynamic Media Publish模式设置如何。
 
 ## 检查Publish状态 {#check-publish-status}
 
-要检查资产或文件夹的发布状态，请执行以下操作：
+要检查资产或文件夹的已发布状态，请执行以下操作：
 
 1. 单击左窗格中可用的&#x200B;**[!UICONTROL Assets Management]**&#x200B;部分中的&#x200B;**[!UICONTROL Assets]**。
-2. 使用视图切换器切换到列表视图。 您可以查看资源属性，如AEM Publish、Dynamic Media Publish、标题、大小、维度等。\
-   如果未发布资产或文件夹，**AEM Publish**&#x200B;和&#x200B;**Dynamic Media Publish**&#x200B;列的状态显示为&#x200B;**不适用。**
+2. 使用视图切换器切换到列表视图。 您可以查看资源属性，如AEM发布、Dynamic Media Publish、标题、大小、维度等。\
+   如果未发布资产或文件夹，列&#x200B;**AEM Publish**&#x200B;和&#x200B;**Dynamic Media Publish**&#x200B;的状态将显示为&#x200B;**不适用。**
    ![检查发布状态1](/help/assets/assets/check-publish-status1.png)
 如果您无法在列表视图中查看AEM Publish和Dynamic Media Publish列：
    1. 单击![设置](/help/assets/assets/settings-icon.svg)并从&#x200B;**可配置的列**&#x200B;对话框中选择&#x200B;**AEM Publish**&#x200B;和&#x200B;**Dynamic Media Publish**&#x200B;列。
@@ -125,7 +125,7 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 将资产发布到AEM和Dynamic Media时，以下功能暂时不可用：
 
 * 从Publish资源详细信息页面将其添加到AEM和Dynamic Media。
-* 使用“快速Publish”向导可视化要发布资源的端点。
+* 使用“快速Publish”向导可视化发布资源的端点。
 * 在“快速Publish”向导中添加或删除更多资源。
 * 查看已发布资源的页面。
 * 能够在资源级别复制或粘贴Dynamic Media URL(如果已将资源发布到Dynamic Media)。
