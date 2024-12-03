@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
 workflow-type: tm+mt
-source-wordcount: '2378'
-ht-degree: 90%
+source-wordcount: '2336'
+ht-degree: 86%
 
 ---
 
@@ -222,19 +222,24 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)操作来创建和使用自定义错误处理程序，我们以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用自定义错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。
 
 要在自适应表单中添加和使用自定义错误处理程序，请执行以下步骤：
-1. [创建自定义错误处理程序](#create-custom-error-message)
-1. [使用规则编辑器配置自定义错误处理程序](#use-custom-error-handler)
+1. [为错误处理程序添加自定义函数](#1-add-custom-function-for-error-handler)
+2. [使用规则编辑器配置自定义错误处理程序](#use-custom-error-handler)
 
-#### 1. 创建自定义错误处理程序 {#create-custom-error-message}
+#### 1.添加用于错误处理程序的自定义函数
 
-要创建自定义错误函数，请执行以下步骤：
+>[!NOTE]
+>
+> 要了解如何添加自定义函数，请单击[在基于核心组件的自适应表单中创建自定义函数](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function)。
 
-1. [克隆AEM Formsas a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)。
-1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 文件夹下创建一个文件夹。例如，创建一个名为 `experience-league` 的文件夹
-1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 并创建一个`ClientLibraryFolder` 作为 `clientlibs`。
-1. 创建一个名为 `js` 的文件夹。
-1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 文件夹。
-1. 添加JavaScript文件，例如`function.js`。 该文件包含自定义错误处理程序的代码。
+<!-- To create a custom error function, perform the following steps:
+
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
+3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
+4. Create a folder named `js`.
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+
+1. 在JavaScript文件中为自定义错误处理程序添加以下代码，例如`function.js`。 该文件包含自定义错误处理程序的代码。
 让我们将以下代码添加到该 JavaScript 文件中，以在浏览器控制台中显示从 REST 服务端点接收到的响应和标头。
 
    ```javascript
@@ -253,43 +258,45 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
        }
    ```
 
-   要从自定义错误处理程序调用默认错误处理程序，请使用以下示例代码行：
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+<!--
+1. Save the `function.js` file.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+2. Add a text file as `js.txt`. The file contains:
 
-   >[!NOTE]
-   >
-   > 在`.content.xml`文件中，添加`allowProxy`和`categories`属性。
-   >
-   > * `allowProxy = [Boolean]true`
-   > * `categories= customfunctionsdemo`
-   >例如，在此情况下，提供 [custom-errorhandler-name] 作为 `customfunctionsdemo`。
+    ```javascript
+        #base=js
+        functions.js
+    ```
 
-1. 保存 `function.js` 文件。
-1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` 文件夹。
-1. 添加文本文件作为 `js.txt`。该文件包含：
+3. Save the `js.txt` file.    
+The created folder structure looks like:
 
-   ```javascript
-       #base=js
-       functions.js
-   ```
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
 
-1. 保存 `js.txt` 文件。\
-   创建的文件夹结构如下所示：
 
-   ![创建的客户端库文件夹结构](/help/forms/assets/customclientlibrary_folderstructure.png)
+    >[！NOTE]
+    >
+    > *要从自定义错误处理程序调用默认错误处理程序，使用了示例代码的以下行： &#39;guidelib.dataIntegrationUtils.defaultErrorHandler(response， headers) &#39;
+    > *在“.content.xml”文件中，添加“allowProxy”和“categories”属性以在自适应表单中使用自定义错误处理程序客户端库。
+    >
+    >   * &#39;allowProxy = [Boolean]true&#39;
+    >   * &#39;categories= customfunctionsdemo&#39;
+    >       例如，在本例中，[custom-errorhandler-name]是以“customfunctionsdemo”的形式提供的。
 
-   >[!NOTE]
-   >
-   > 要了解有关如何创建自定义函数的更多信息，请单击[规则编辑器中的自定义函数](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules)。
 
-1. 使用以下命令在存储库中添加、提交和推送更改：
+1. 在存储库中添加、提交和推送更改。
 
-   ```javascript
-       git add .
-       git commit -a -m "Adding error handling files"
-       git push
-   ```
+<!--
+    using the below commands:
+         
+    ```javascript
 
+        git add .
+        git commit -a -m "Adding error handling files"
+        git push
+    ```
+
+-->
 1. [运行管道。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 成功执行管道后，便能在自适应表单规则编辑器中使用自定义错误处理程序。现在，让我们了解如何使用 AEM Forms 中规则编辑器的调用服务来配置和使用自定义错误处理程序。

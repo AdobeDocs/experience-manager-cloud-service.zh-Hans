@@ -5,7 +5,7 @@ keywords: 添加自定义函数、使用自定义函数、创建自定义函数�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 5%
@@ -40,7 +40,7 @@ ht-degree: 5%
 * **Git：**&#x200B;管理代码更改需要此版本控制系统。 如果未安装，请从https://git-scm.com下载。
 
 
-## 创建自定义功能 {#create-custom-function}
+## 创建自定义功能
 
 创建客户端库以在规则编辑器中调用自定义函数。 有关详细信息，请参阅[使用客户端库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
 
