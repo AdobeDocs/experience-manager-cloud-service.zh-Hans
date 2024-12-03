@@ -4,9 +4,9 @@ description: 了解AEM Assets视图的UI可扩展性功能。 AEM Assets视图UI
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: bbb183470e12c0fc81c821fc2e0c1e7d77c33707
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '576'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ AEM Assets视图具有UI可扩展性功能。 此功能允许用户将自定义U
 >[!IMPORTANT]
 >
 > * AEM Assets视图UI可扩展性在[Assets Ultimate](/help/assets/assets-ultimate-overview.md)中可用。
-> * Assets视图UI可扩展性适用于as a Beta版本。 若要提前访问Assets视图UI可扩展性，请[创建并提交Adobe的客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+> * 要访问Assets视图UI可扩展性，请[创建并提交Adobe的客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
 > * 您可以通过展开“详细反馈”选项并单击“报告问题”来提供文档反馈。
 
 ## <a id="1"></a>如何访问Assets视图
