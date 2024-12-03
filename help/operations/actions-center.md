@@ -4,10 +4,10 @@ description: 利用行动中心方便地对事件和其他重要信息采取行�
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
+source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 51%
+source-wordcount: '1118'
+ht-degree: 50%
 
 ---
 
@@ -86,4 +86,5 @@ AEM as a Cloud Service 有多种类型的通知，但只有一部分会出现在
 | 直接添加到自定义组的用户 | 主动 | 需要将用户添加到相关的IMS组，并且这些IMS组需要添加为AEM组的成员。 与[IMS最佳实践保持一致](/help/security/ims-support.md) | |
 | 缺少JCR内容 | 主动 | 添加缺失的JCR内容节点。 请参阅[Assets内容验证器文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | 未清除已完成的工作流 | 主动 | 通过清除已超过90天的工作流实例，最大程度地减少工作流实例数并提高性能。 了解如何[配置维护任务](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/maintenance) | |
-| 页面中缺少Sling资源类型 | 主动 | 添加缺少的Sling资源类型节点。 请参阅[Assets内容验证器文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
+| 页面中缺少Sling资源类型 | 主动 | 添加缺少的Sling资源类型节点。 请参阅[Assets内容验证器文档](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| 查询缓慢 | 主动 | 按照[JCQ查询备忘表](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)的建议，通过定义正确的索引定义修复较慢查询 |
