@@ -7,27 +7,27 @@ role: User
 source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
 # Assets 的“我的工作区” {#my-workspace}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 >[!CONTEXTUALHELP]
 >id="assets_my_workspace"
 >title="我的工作区"
->abstract="Assets 现在包括一个可自定义的工作区，此工作区提供各种小部件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。"
+>abstract="Assets 现在包括一个可自定义的工作区，此工作区提供各种小组件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。"
 
-Assets 现在包括一个可自定义的工作区，此工作区提供各种小部件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。由于能够更方便地访问这些选项，因此可以提高您的效率和内容速度。
+Assets 现在包括一个可自定义的工作区，此工作区提供各种小组件，以方便访问 Assets 用户界面的关键区域以及与您密切相关的信息。此页面充当一个综合解决方案以提供您工作项的概述，并且通过它可快速地访问关键工作流。由于能够更方便地访问这些选项，因此可以提高您的效率和内容速度。
 
-通过从可在左导航窗格中找到的各项中单击&#x200B;**[!UICONTROL 我的工作区]**，即可访问“我的工作区”。“我的工作区”包括多种小部件，其中显示“快速访问”、“见解”、“任务”和“内容”小部件。可根据自己的偏好配置如何在工作区中显示这些小部件。
+通过从可在左导航窗格中找到的各项中单击&#x200B;**[!UICONTROL 我的工作区]**，即可访问“我的工作区”。“我的工作区”包括多种小组件，其中显示“快速访问”、“见解”、“任务”和“内容”小组件。可根据自己的偏好配置如何在工作区中显示这些小组件。
 
 >[!NOTE]
 >
->“见解”小部件仅对管理员可见。
+>“见解”小组件仅对管理员可见。
 
 <!--
 
@@ -77,20 +77,20 @@ Highlights upcoming features for Assets.
 
 **内容**
 
-显示各种各样的资源视图，包括您最近查看的资源的列表。可选择在列表视图、网格视图、图库视图或瀑布视图的小部件中显示资源，并可按名称、大小和修改日期为资源排序。还可选择资源以查看该资源的详细信息或从最近查看过的资源的列表中删除该资源。
+显示各种各样的资源视图，包括您最近查看的资源的列表。可选择在列表视图、网格视图、图库视图或瀑布视图的小组件中显示资源，并可按名称、大小和修改日期为资源排序。还可选择资源以查看该资源的详细信息或从最近查看过的资源的列表中删除该资源。
 
 “**[!UICONTROL 热门下载]**”选项卡显示您的Assets视图环境中可用下载次数最多的前十个资源。 您可以选择在列表视图或网格视图中显示资源。两种视图都显示每个资源的格式类型和下载次数。您还可以选择一个资源并单击&#x200B;**[!UICONTROL 详细信息]**&#x200B;以查看其属性。
 
-![工作区中的“内容”小部件](assets/workspace-content.png)
+![工作区中的“内容”小组件](assets/workspace-content.png)
 
 ## 自定义“我的工作区” {#configure-widgets}
 
-默认情况下显示所有小部件，但您可启用或禁用在“我的工作区”中显示的小部件。首选项为每个用户所特有。
+默认情况下显示所有小组件，但您可启用或禁用在“我的工作区”中显示的小组件。首选项为每个用户所特有。
 
 1. 单击可在左侧导航窗格中找到的&#x200B;**[!UICONTROL 我的工作区]**，然后单击&#x200B;**[!UICONTROL 自定义]**。
 
-1. 关闭不需要在工作区中显示的小部件的开关。还可将小部件拖至适当位置以更新它在工作区中的显示顺序。
+1. 关闭不需要在工作区中显示的小组件的开关。还可将小组件拖至适当位置以更新它在工作区中的显示顺序。
 
 1. 单击&#x200B;**[!UICONTROL 完成]**&#x200B;以保存更改。
 
-   ![自定义工作区中的小部件](assets/customize-workspace.png)
+   ![自定义工作区中的小组件](assets/customize-workspace.png)
