@@ -4,9 +4,9 @@ description: 本页概述了Cloud Acceleration Manager中的就绪阶段。
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 7%
    ![获取上载密钥](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >报告仍可以手动上传，但使用上传密钥可简化操作。 请注意，如果您处于浏览器的无痕模式，则无法手动上传报告。
+   >报告仍可以手动上传，但使用上传密钥可简化操作。 请注意，如果报告的大小大约为200MB或更大，则无法手动上传报告。 也无法使用浏览器的无痕模式上传报告。
 
 1. 上传新报告后，您可以在CAM中看到“最佳实践分析”报告。
 

@@ -4,10 +4,10 @@ description: 了解如何使用Best Practices Analyzer了解升级准备情况�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 39%
+source-wordcount: '2724'
+ht-degree: 38%
 
 ---
 
@@ -85,6 +85,9 @@ ht-degree: 39%
 
 >[!NOTE]
 >您可以通过选择&#x200B;**跳过报告自动上载到CAM**&#x200B;来选择跳过自动上载到CAM。 如果您选择跳过，则需要手动下载BPA报告作为逗号分隔值文件，然后在CAM中上传该文件。 建议使用上传密钥选项，因为它可简化操作。
+
+>[!IMPORTANT]
+>当手动上载到CAM时，报表大小限制为大约200MB。 对于较大的报告，您将需要利用自动上传。
 
 1. 提供有效密钥后，**生成**&#x200B;按钮将变为活动状态。 单击&#x200B;**生成**&#x200B;以启动报告生成。
 
