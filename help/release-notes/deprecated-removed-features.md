@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
 source-wordcount: '2800'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -38,14 +38,14 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **社交媒体状态**&#x200B;的体验片段属性。 | 该功能将很快被删除。 |
 | [!DNL Sites] | 基于模板的简单内容片段。 | 现已提供[基于模型的结构化内容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
-| [!DNL Assets] | `DAM Asset Update` 工作流处理摄取的图像。 | 资源提取现在使用[资源微服务](/help/assets/asset-microservices-overview.md)。 |
-| [!DNL Assets] | 将资源直接上传至 [!DNL Experience Manager]。请参阅[已弃用的资源上传 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二进制上传](/help/assets/add-assets.md)。有关技术详细信息，请参阅[直接上传 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
-| [!DNL Assets] | 不支持 `DAM Asset Update` 工作流中的[某些工作流步骤](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)，包括 [!DNL ImageMagick] 等调用命令行工具。 | [资源微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
-| [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资源微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
-| [!DNL Foundation] | 复制代理的“分发”选项卡下的树复制 UI（在 2021 年 9 月 30 日后被删除） | [管理发布](/help/operations/replication.md#manage-publication)或[树激活工作流步骤](/help/operations/replication.md#tree-activation)方法。 |
-| [!DNL Foundation] | 复制代理管理屏幕的分发选项卡和复制API都不能用于复制超过10MB的内容包。 | [管理发布](/help/operations/replication.md#manage-publication)或[树激活工作流步骤](/help/operations/replication.md#tree-activation) |
+| [!DNL Assets] | `DAM Asset Update` 工作流处理摄取的图像。 | 资产提取现在使用[资产微服务](/help/assets/asset-microservices-overview.md)。 |
+| [!DNL Assets] | 将资产直接上传至 [!DNL Experience Manager]。请参阅[已弃用的资产上传 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二进制上传](/help/assets/add-assets.md)。有关技术详细信息，请参阅[直接上传 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
+| [!DNL Assets] | 不支持 `DAM Asset Update` 工作流中的[某些工作流步骤](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)，包括 [!DNL ImageMagick] 等调用命令行工具。 | [资产微服务](/help/assets/asset-microservices-overview.md)可替代许多工作流程。对于自定义处理，请使用[后处理工作流](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
+| [!DNL Assets] | FFmpeg 视频转码。 | 对于 FFmpeg 缩略图生成，请使用[资产微服务](/help/assets/asset-microservices-overview.md)。对于 FFmpeg 转码，请使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
+| [!DNL Foundation] | 复制代理的“分发”选项卡下的树复制 UI（在 2021 年 9 月 30 日后被删除） | [管理出版物](/help/operations/replication.md#manage-publication)或[树激活工作流步骤](/help/operations/replication.md#tree-activation)方法。 |
+| [!DNL Foundation] | 复制代理管理屏幕的“分发”选项卡和复制 API 都不能用于复制超过 10MB 的内容包。 | [管理出版物](/help/operations/replication.md#manage-publication)或[树激活工作流步骤](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | 使用从 Adobe Developer Console 项目生成的凭据的集成将会逐步失去对服务帐户 (JWT) 凭据的支持。2024 年 5 月 1 日或之后，无法在 Adobe Developer Console 中创建新的服务帐户 (JWT) 凭据，但在 2025 年 1 月 1 日之前，现有服务帐户 (JWT) 凭据仍可用于已配置的集成，届时现有服务帐户 (JWT) 凭据将不再有效，客户必须迁移到 OAuth 服务器到服务器凭据。[了解详情](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [迁移](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)到 OAuth 服务器到服务器凭据。 |
-| [!DNL Foundation] | Publish内容树工作流和与之相关的Publish内容树工作流步骤，用于复制内容的层级。 | 使用性能更高的[树激活工作流步骤](/help/operations/replication.md#tree-activation)。 |
+| [!DNL Foundation] | 发布内容树工作流和相关的发布内容树工作流步骤，用于复制内容层次结构。 | 使用[树激活工作流步骤](/help/operations/replication.md#tree-activation)，其性能更佳。 |
 
 
 ## 已删除功能 {#removed-features}
@@ -523,21 +523,21 @@ AEM as a Cloud Service 将迁移至 Java Runtime 21。为了确保兼容性，�
 
 必须进行这些调整，才能使用较新版本的Java构建项目，但运行时兼容性并不需要这些调整。 可以随时更新Maven插件，因为它们与旧版Java兼容。
 
-#### bnd-maven-plugin的最低版本 {#bnd-maven-plugin}
+#### bnd-maven-plugin 的最低版本 {#bnd-maven-plugin}
 
 将bnd-maven-plugin的使用更新到版本6.4.0，以确保支持更新的JVM运行时。 版本7或更高版本与Java 11或更低版本不兼容，因此目前不建议升级到该版本。
 
-#### aemanalyzer-maven-plugin的最低版本 {#aemanalyser-maven-plugin}
+#### aemanalyser-maven-plugin 的最低版本 {#aemanalyser-maven-plugin}
 
-将aemanalyzer-maven-plugin的使用更新到版本1.6.6或更高版本，以确保支持更新的JVM运行时。
+将 aemanalyser-maven-plugin 的使用更新到 1.6.6 或更高版本，以确保支持较新的 JVM Runtime。
 
-#### maven-bundle-plugin的最低版本  {#maven-bundle-plugin}
+#### maven-bundle-plugin 的最低版本  {#maven-bundle-plugin}
 
-将maven-bundle-plugin的使用更新到版本5.1.5或更高版本，以确保支持更新的JVM运行时。
+将 maven-bundle-plugin 的使用更新到 5.1.5 或更高版本，以确保支持较新的 JVM Runtime。
 
-#### 更新maven-scr-plugin中的依赖项  {#maven-scr-plugin}
+#### 更新 maven-scr-plugin 中的依赖项  {#maven-scr-plugin}
 
-`maven-scr-plugin`不直接与Java 17和21兼容。 但是，可以通过更新插件配置中的ASM依赖项版本来生成描述符文件，如下所示：
+`maven-scr-plugin` 与 Java 17 和 21 不直接兼容。但是，可以通过更新插件配置中的 ASM 依赖项版本来生成描述符文件，类似于下面的代码片段：
 
 ```
 [source,xml]
