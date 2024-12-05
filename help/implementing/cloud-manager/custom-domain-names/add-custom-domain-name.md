@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
+source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 16%
 
 要验证正在使用的域，需要添加和验证CNAME。
 
-`CNAME`或记录一旦配置，就会将域的所有互联网流量路由到它指向的任何位置。 如果该位置未配置为服务流量，则会出现停机。如果尚未测试，则内容可能有错误。这就是为什么这个步骤总是在测试完成后完成，并且您已经准备好上线。
+`CNAME`记录类型或`A`记录类型在配置后，会将域的所有Internet流量路由到它指向的任何位置。 如果该位置未配置为服务流量，则会出现停机。如果尚未测试，则内容可能有错误。这就是为什么这个步骤总是在测试完成后完成，并且您已经准备好上线。
 
 要配置这些设置，请确定是否必须配置`CNAME`或Apex记录以将您的自定义域名指向Cloud Manager域名。 本文档的以下部分可以帮助您确定哪种类型的记录适合您的DNS配置。
 
@@ -130,7 +130,7 @@ Apex 域是不包含子域的自定义域，例如 `example.com`。通过您的D
 
 >[!TIP]
 >
->可以在管理DNS服务器上设置&#x200B;*CNAME*&#x200B;或&#x200B;*A记录*&#x200B;以节省您的时间。
+>可以在管理DNS服务器上设置&#x200B;*CNAME记录*&#x200B;或&#x200B;*A记录*&#x200B;以节省您的时间。
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

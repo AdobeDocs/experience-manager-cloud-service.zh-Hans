@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 47ee6803146acd93ed62b7eef1419d52f870ae90
+source-git-commit: 9f376f64689855af21d72af010d8defb82ccac43
 workflow-type: tm+mt
-source-wordcount: '5890'
-ht-degree: 96%
+source-wordcount: '5895'
+ht-degree: 97%
 
 ---
 
@@ -111,6 +111,7 @@ ht-degree: 96%
    + Cloud Manager 发行说明 {#cloud-manager}
       + [最新发行说明](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [2024.11.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-11-0.md)
          + [2024.10.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md)
          + [2024.9.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-9-0.md)
          + [2024.8.0 的发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
@@ -208,11 +209,11 @@ ht-degree: 96%
          + [2024.11.13发行说明](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [2024.11.05发行说明](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [2024.10.29发行说明](/help/release-notes/universal-editor/2024/2024-10-29.md)
-         + [2024.09.27发行说明](/help/release-notes/universal-editor/2024/2024-09-27.md)
-         + [2024.09.26发行说明](/help/release-notes/universal-editor/2024/2024-09-26.md)
-         + [2024.09.18发行说明](/help/release-notes/universal-editor/2024/2024-09-18.md)
-         + [2024.09.03发行说明](/help/release-notes/universal-editor/2024/2024-09-03.md)
-         + [2024.08.13发行说明](/help/release-notes/universal-editor/2024/2024-08-13.md)
+         + [2024.09.27 版发行说明](/help/release-notes/universal-editor/2024/2024-09-27.md)
+         + [2024.09.26 版发行说明](/help/release-notes/universal-editor/2024/2024-09-26.md)
+         + [2024.09.18 版发行说明](/help/release-notes/universal-editor/2024/2024-09-18.md)
+         + [2024.09.03 版发行说明](/help/release-notes/universal-editor/2024/2024-09-03.md)
+         + [2024.08.13 版发行说明](/help/release-notes/universal-editor/2024/2024-08-13.md)
          + [2024.07.28 版发行说明](/help/release-notes/universal-editor/2024/2024-07-28.md)
          + [2024.06.28 版发行说明](/help/release-notes/universal-editor/2024/2024-06-28.md)
    + [新增功能](/help/release-notes/what-is-new.md)
@@ -474,11 +475,11 @@ ht-degree: 96%
    + [支持的文件格式](/help/assets/file-format-support.md)
    + [资源微服务概述](/help/assets/asset-microservices-overview.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
-   + [Assetsas a Cloud Service旗舰版](/help/assets/assets-ultimate-overview.md)
-   + [启用Assetsas a Cloud Service旗舰版](/help/assets/enable-assets-ultimate.md)
-   + [Assetsas a Cloud ServicePrime](/help/assets/assets-prime.md)
-   + [Assets协作者用户](/help/assets/assets-collaborator-users.md)
-   + 管理数字资源{#manage}
+   + [资产s as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
+   + [启用 资产s as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
+   + [资产s as a Cloud Service Prime](/help/assets/assets-prime.md)
+   + [资产s 合作者用户](/help/assets/assets-collaborator-users.md)
+   + 管理数字资产{#manage}
       + 微前端资源选择器 {#asset-selector}
          + [资产选择器概述](/help/assets/overview-asset-selector.md)
          + 资产选择器集成 {#asset-selector-integration}
@@ -542,7 +543,7 @@ ht-degree: 96%
       + [导入和导出资源元数据](/help/assets/metadata-import-export.md)
       + [配置资源上传限制](/help/assets/configure-asset-upload-restrictions.md)
    + 共享和分发资源 {#brand-portal}
-      + [使用 [!DNL Brand Portal] 配置 [!DNL Assets] ](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [使用 [!DNL Assets]  配置 [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [将资源发布到 [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
       + [将资源从 [!DNL Brand Portal] 发布到 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-hans)
    + 内容片段 {#content-fragments}
@@ -656,7 +657,7 @@ ht-degree: 96%
       + [资源属性](/help/assets/asset-properties-content-hub.md)
       + [在 Content Hub 共享资源](/help/assets/share-assets-content-hub.md)
       + [使用 Content Hub 下载资源](/help/assets/download-assets-content-hub.md)
-      + [在Content Hub上管理许可的Assets](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [管理 Content Hub 上的已授予许可资产](/help/assets/manage-licensed-assets-on-content-hub.md)
       + [管理 Content Hub 里的收藏集](/help/assets/collections-content-hub.md)
       + [使用 Content Hub 中的 Adobe Express 编辑图像](/help/assets/edit-images-content-hub.md)
       + [Content Hub 的资源洞察](/help/assets/insights-content-hub.md)
@@ -667,9 +668,9 @@ ht-degree: 96%
    + 与 Adobe Workfront 集成 {#integrations}
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
       + [配置资源元数据映射](/help/assets/configure-asset-metadata-mapping.md)
-      + [为 [!DNL Workfront] 安装 [!DNL enhanced connector] ](/help/assets/workfront-connector-install.md)
+      + [为 [!DNL enhanced connector]  安装 [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [移除现有安装的外部依赖](/help/assets/remove-external-dependencies.md)
-      + [为  [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
+      + [为  [!DNL enhanced connector]  配置 [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 
    + 与 Adobe Express 集成 {#integration-adobe-express}
@@ -758,7 +759,7 @@ ht-degree: 96%
             + [向自适应表单添加版本控制、评论和注释](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [比较自适应表单](/help/forms/compare-forms.md)
             + [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
-            + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [使用迁移实用工具将基于基础组件的自适应 Forms 转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
             + 基于核心组件的自适应表单规则编辑器简介{#rule-editor-core-components}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1044,7 +1045,7 @@ ht-degree: 96%
          + [Markdown 编辑器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=zh-hans)
       + [结构树](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=zh-hans)
       + [JSON 预览](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=zh-hans)
-   + [用于结构化内容交付和管理的AEM API](/help/headless/apis-headless-and-content-fragments.md)
+   + [用于结构化内容转递和管理的 AEM API](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL API {#graphql-api}
       + [内容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [管理 GraphQL 端点](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1055,7 +1056,7 @@ ht-degree: 96%
       + [升级内容片段以获取UUID引用](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [示例 GraphQL 查询](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 查询疑难解答](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [用于内容片段投放的AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [用于内容片段投放的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [内容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API 中的内容片段支持](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-hans)
    + 安全性 {#security}
