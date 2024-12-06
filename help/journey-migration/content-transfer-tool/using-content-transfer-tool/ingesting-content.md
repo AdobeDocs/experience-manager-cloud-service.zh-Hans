@@ -4,9 +4,9 @@ description: 了解如何使用Cloud Acceleration Manager将内容从迁移集�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3322'
 ht-degree: 11%
 
 ---
@@ -64,8 +64,9 @@ ht-degree: 11%
    >[!IMPORTANT]
    > 仅当属于目标Cloud Service创作服务上的本地&#x200B;**AEM管理员**&#x200B;组时，才能启动到目标环境的引入。 如果无法开始引入，请参阅[无法开始引入](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion)以了解更多详细信息。
 
-1. 选择摄取选项后，将会显示其估计持续时间。 这是基于类似摄取的历史数据的最佳估计。
+1. 选择摄取选项后，可能会显示其持续时间的估计值。 这是基于类似摄取的历史数据的最佳估计。
 
+   * 对于&#x200B;**非划出**&#x200B;引入，不会计算或显示此估计，因为CAM不知道在此情况下目标系统上有多少内容。
    * 此估算仅在提取的“检查大小”值已收集并且可用时才会计算并显示。
    * 该值是一个估计值，虽然可以智能计算，但不应视为精确值。 各种因素都会改变实际持续时间。
    * 在摄取运行时，此值还将在持续时间对话框中可用，可通过摄取的“**查看持续时间**”操作访问。
