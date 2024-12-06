@@ -4,10 +4,10 @@ description: 特定于  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
-source-wordcount: '2513'
-ht-degree: 79%
+source-wordcount: '2768'
+ht-degree: 78%
 
 ---
 
@@ -510,4 +510,77 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 
 ## Java运行时更新至版本21 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service正在过渡到Java 21运行时。 为确保兼容性，必须按照[运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中的说明更新库版本。
+<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+
+AEM as a Cloud Service 将迁移至 Java Runtime 21。为了确保兼容性，必须进行以下调整：
+
+### 运行时要求
+
+需要进行这些调整以确保与Java 21运行时兼容。 这些库可以随时更新，因为它们与旧版本的Java兼容。
+
+#### org.objectweb.asm 的最低版本{#org.objectweb.asm}
+
+将 org.objectweb.asm 的使用更新到 9.5 或更高版本，以确保支持较新的 JVM Runtime。
+
+#### org.apache.groovy 的最低版本{#org.apache.groovy}
+
+将 org.apache.groovy 的使用更新到 4.0.22 或更高版本，以确保支持较新的 JVM Runtime。
+
+可以通过添加第三方依赖项（例如 AEM Groovy Console）间接包含此捆绑包。
+
+### 构建时间要求
+
+必须进行这些调整，才能使用较新版本的Java构建项目，但运行时兼容性并不需要这些调整。 可以随时更新Maven插件，因为它们与旧版Java兼容。
+
+#### bnd-maven-plugin 的最低版本 {#bnd-maven-plugin}
+
+将bnd-maven-plugin的使用更新到版本6.4.0，以确保支持更新的JVM运行时。 版本7或更高版本与Java 11或更低版本不兼容，因此目前不建议升级到该版本。
+
+#### aemanalyser-maven-plugin 的最低版本 {#aemanalyser-maven-plugin}
+
+将 aemanalyser-maven-plugin 的使用更新到 1.6.6 或更高版本，以确保支持较新的 JVM Runtime。
+
+#### maven-bundle-plugin 的最低版本  {#maven-bundle-plugin}
+
+将 maven-bundle-plugin 的使用更新到 5.1.5 或更高版本，以确保支持较新的 JVM Runtime。
+
+#### 更新 maven-scr-plugin 中的依赖项  {#maven-scr-plugin}
+
+`maven-scr-plugin` 与 Java 17 和 21 不直接兼容。但是，可以通过更新插件配置中的 ASM 依赖项版本来生成描述符文件，类似于下面的代码片段：
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```
