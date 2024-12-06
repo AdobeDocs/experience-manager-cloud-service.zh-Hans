@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -241,7 +241,7 @@ data:
 
 ## 响应转换 {#response-transformations}
 
-响应转换规则允许您设置和取消设置CDN传出响应的标头。 另请参阅上述示例，以引用之前在请求转换规则中设置的变量。
+响应转换规则允许您设置和取消设置CDN传出响应的标头。 另请参阅上述示例，以引用之前在请求转换规则中设置的变量。 也可以设置响应的状态代码。
 
 配置示例：
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **操作**
@@ -291,6 +300,7 @@ data:
 | 名称 | 属性 | 含义 |
 |-----------|--------------------------|-------------|
 | **设置** | reqHeader，值 | 将指定的标头设置为响应中的给定值。 |
+|          | respProperty，值 | 设置响应属性。 仅支持“status”属性以设置状态代码。 |
 | **取消设置** | 响应标头 | 从响应中删除指定的标头。 |
 
 ## 源选择器 {#origin-selectors}
