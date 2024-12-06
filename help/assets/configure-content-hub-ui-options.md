@@ -2,10 +2,10 @@
 title: 配置 Content Hub 用户界面
 description: 配置 Content Hub 用户界面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
+source-git-commit: deeb1487ce51f2a91e556b32f9db2a644656d828
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,6 +73,8 @@ ht-degree: 15%
 * [品牌化](#configure-branding-content-hub)
 
 * [过期资产](#expired-assets-content-hub)
+
+* [演绎版](#renditions-content-hub)
 
 * [自定义链接](#configure-custom-links-content-hub)
 
@@ -165,7 +167,6 @@ Content Hub上的![资源属性](assets/config-ui-asset-properties.png)
 
 同样，单击每个可用属性旁边可用的![编辑](/help/assets/assets/edit-content-hub.svg)以进行任何必需的修改，或单击![删除](/help/assets/assets/delete-content-hub.svg)删除任何现有的元数据属性。 完成所有修改后单击&#x200B;**保存**&#x200B;以应用更改。
 
-
 ### 搜索 {#configure-metadata-search-content-hub}
 
 管理员可以定义在用户在Content Hub上指定搜索条件时搜索的元数据字段。 执行以下步骤：
@@ -223,6 +224,23 @@ Content Hub上的![配置UI品牌](assets/configuration-ui-branding-updates.png)
 
 如果启用了过期资源的可见性，Content Hub还会使用资源卡上的`Expiring in n days`消息突出显示未来15天内过期的资源。
 
+### 演绎版 {#renditions-content-hub}
+
+演绎版是数字资产（如图像、文档等）的自定义版本，专为不同的设备和平台而设计，可确保实现最佳性能。 在Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中查看有关[呈现形式的更多信息。
+
+Content Hub允许下载静态演绎版。 静态演绎版是本机生成的资源原始文件的不同表示形式。 示例包括缩略图或移动优化呈现版本。 管理员可以管理和控制资源演绎版的可用性；并管理您是否可以下载原始资源。
+
+若要禁用，请执行以下步骤：
+
+在[配置](#access-configuration-options-content-hub)用户界面上，单击&#x200B;**[!UICONTROL 呈现版本]**。 以下选项可供选择：
+
+* 启用[!UICONTROL 启用静态呈现的可用性]切换功能，使所有静态呈现在Content Hub中可见。
+
+* 启用或禁用&#x200B;**[!UICONTROL 允许用户下载原始资产]**&#x200B;切换开关以控制下载原始资产的可用性。
+
+  ![在Content Hub上配置演绎版](assets/config-renditions.png)
+
+有关如何在Content Hub中查看和下载静态呈现版本的信息，请参阅[在Content Hub中下载资源](/help/assets/download-assets-content-hub.md)。
 
 ### 自定义链接 {#configure-custom-links-content-hub}
 
