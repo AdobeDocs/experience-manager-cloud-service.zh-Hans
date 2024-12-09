@@ -1,87 +1,87 @@
 ---
 title: 管理分类数据
-description: 了解如何管理分类数据，以便在Edge Delivery Services网站的AEM中使用标记。
+description: 了解如何管理分类数据，以便使用 AEM 和 Edge Delivery Services sites的标签进行操作。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # 管理分类数据 {#managing-taxonomy-data}
 
-了解如何管理分类数据，以便在Edge Delivery Services网站的AEM中使用标记。
+了解如何管理分类数据，以便使用 AEM 和 Edge Delivery Services sites的标签进行操作。
 
 ## 简介 {#introduction}
 
-标记是帮助您组织和管理页面的一项重要功能。 [AEM中的“标记控制台”](/help/sites-cloud/administering/tags.md#tagging-console)允许您创建丰富的标记分类来整理您的页面。
+标记是一项重要功能，可帮助您组织和管理页面。[AEM 中的标记控制台](/help/sites-cloud/administering/tags.md#tagging-console) 允许您创建丰富的标记分类来组织您的页面。
 
-这些标记不仅对您和您的作者非常有用，而且对于您的读者也非常有用。 标记及其分类可用于页面上的组件中，以帮助读者导航您的内容。
+这些标签不仅对您和您的作者组织内容有用，而且对您的读者也很有用。标签及其分类法可用于页面上的组件，以帮助读者浏览您的内容。
 
-通用编辑器仅适用于标记的ID。 通过为内容创建分类页面，您可以向通用编辑器公开所有语言中这些标记的描述，以便在呈现内容时使用该信息。
+通用编辑器仅适用于您的标签 ID。通过为您的内容创建分类页面，您可以将所有语言的这些标签的描述公开给通用编辑器，以便它可以在呈现内容时使用该信息。
 
-## 创建分类页 {#creating}
+## 创建特征分类 {#creating}
 
-在AEM中创建的分类，类似于[任何其他页面。](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+分类法的创建方式与 [AEM 中的任何其他页面一样。](/help/sites-cloud/authoring/sites-console/creating-pages.md)
 
-1. 导航到&#x200B;[**站点**&#x200B;控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Navigate to the [**Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
-1. 选择要创建分类的位置。
+1. 选择您想要创建分类法的位置。
 
 1. 点击或单击&#x200B;**创建**-> **页面**。
 
    ![创建页面](assets/taxonomy/create-page.png)
 
-1. 在&#x200B;**创建页面**&#x200B;向导的&#x200B;**模板**&#x200B;选项卡上，选择&#x200B;**分类**&#x200B;模板，然后点按或单击&#x200B;**下一步**。
+1. 在 **创建页面** 向导的 **模板** 选项卡上，选择 **分类法** 模板，然后点击或单击 **下一步**。
 
    ![分类模板](assets/taxonomy/taxonomy-template.png)
 
-1. 在&#x200B;**创建页面**&#x200B;向导的&#x200B;**属性**&#x200B;选项卡上，为页面提供有意义的&#x200B;**标题**，在&#x200B;**标记**&#x200B;字段中，[使用标记选取器](/help/sites-cloud/authoring/sites-console/tags.md)选择要包含在分类中的标记或命名空间。
+1. 在“创建页面” **向导的** “属性” **选项卡上，为页面提供一个有意义的** 标题 **，并在** 标签 **字段中，** 使用标签选择器 [选择您想要包含在分类法中的标签或命名空间。](/help/sites-cloud/authoring/sites-console/tags.md) 
 
    ![分类属性](assets/taxonomy/create-page-wizard-properties.png)
 
 1. 点击或单击“**创建**”。
 
-此时将创建分类页面。 在&#x200B;**成功**&#x200B;对话框中，您可以点按或单击&#x200B;**完成**&#x200B;对话框以关闭消息，或者点按或单击&#x200B;**打开**&#x200B;以在[页面编辑器中编辑页面。](/help/sites-cloud/authoring/page-editor/introduction.md)
+分类页面已创建。在 **成功** 对话框中，您可以点击或单击 **完毕** 对话框以关闭消息或 **打开** 编辑页面 [页面编辑器。](/help/sites-cloud/authoring/page-editor/introduction.md)
 
-记下生成的分类页面名称，以便在以下步骤中使用。
+记下分类页面的结果页面名称，以便在以下步骤中使用。
 
-## 编辑分类页面 {#editing}
+## 创建特征分类 {#editing}
 
-与AEM中的任何其他页面一样，您开始编辑分类页面。
+您可以开始编辑分类页面，就像编辑 AEM 中的任何其他页面一样。
 
-1. 导航到&#x200B;[**站点**&#x200B;控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Navigate to the [**Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
-1. 选择要编辑的分类。
+1. 选择您想要编辑的分类法。
 
-1. 在操作栏中点击或单击&#x200B;**编辑**。
+1. 点击或单击 **编辑** 在操作栏中。
 
-1. 此时将打开页面编辑器，其中显示了分类。
+1. 页面编辑器打开并显示分类法。
 
    * 分类页面在页面编辑器中是只读的。
 
-   ![编辑分类](assets/taxonomy/edit-page.png)
+   ![编辑分类法](assets/taxonomy/edit-page.png)
 
-1. 点按或单击工具栏中的&#x200B;**页面信息**&#x200B;图标，然后选择&#x200B;**打开属性**。
+1. 点击或单击 **页面信息** 图标，然后选择 **打开属性**。
 
    ![打开属性](assets/taxonomy/open-properties.png)
 
-1. 在&#x200B;**页面属性**&#x200B;窗口中，您可以更新页面的名称并使用标记选择器更新分类中包含的标记和命名空间。
+1. 在 **页面属性** 窗口，您可以更新页面名称并使用标签选择器来更新分类法中包含的标签和命名空间。
 
    ![编辑页面属性](assets/taxonomy/edit-properties.png)
 
 1. 点按或单击&#x200B;**保存并关闭**。
 
-在页面编辑器中显示的页面是只读的，因为分类的内容是从选定的标记和命名空间自动生成的。 它们用作自动生成分类内容的一种过滤器。 因此，没有必要在编辑器中直接编辑页面。
+页面编辑器中显示的页面是只读的，因为分类法的内容是根据所选标签和命名空间自动生成的。它们充当一种过滤器，用于自动生成分类法的内容。因此没有理由直接在编辑器中编辑页面。
 
-当您更新基础标记和命名空间时，AEM会自动更新分类页面的内容。 但是，您必须在进行任何更改后[重新发布分类](#publishing)，才能将这些更改提供给您的用户。
+当您更新底层标签和命名空间时，AEM 会自动更新分类页面的内容。但是你必须 [重新发布分类法](#publishing) 在任何更改之后，让您的用户可以使用这些更改。
 
-## 更新分类发布的paths.json {#paths-json}
+## 更新分类发布的 paths.json {#paths-json}
 
-就像在[管理和发布Edge Delivery Services网站的表格数据时，](/help/edge/wysiwyg-authoring/tabular-data.md)一样，您需要更新项目的`paths.json`文件以允许发布分类数据。
+就像当 [管理和发布 Edge Delivery Services sites的表格数据，](/help/edge/wysiwyg-authoring/tabular-data.md) 你需要更新你的 `paths.json` 您的项目文件以允许发布您的分类数据。
 
 1. 在 GitHub 中打开您的项目的根目录。
 
@@ -89,7 +89,7 @@ ht-degree: 7%
 
    ![paths.json 文件](assets/taxonomy/paths-json.png)
 
-1. 添加一行以将新分类页面映射到`.json`资源。
+1. 添加一行以将新电子表格映射到`.json`资源。
 
    ```json
    {
@@ -100,41 +100,41 @@ ht-degree: 7%
    }
    ```
 
-   * `<taxonomy-page-name>`必须与您创建的[分类页面的名称匹配。](#creating)
-   * `<taxonomy-json-name>`可以是您选择的任何有效名称。
+   * `<taxonomy-page-name>` 必须与名称匹配 [您创建的分类页面。](#creating)
+   * `<taxonomy-json-name>` 可以是您选择的任何有效名称。
 
 1. 单击“**提交更改...**”将更改保存到 `main`。
 
    * 根据您的流程提交`main`或创建拉取请求。
 
-每个分类页面只需执行一次此过程。 完成后，您可以发布分类。
+每个分类页面只需执行一次此过程。完成后，您可以发布您的分类法。
 
 >[!TIP]
 >
->有关路径映射的详细信息，请参阅文档[Edge Delivery Services的路径映射。](/help/edge/wysiwyg-authoring/path-mapping.md)
+>有关路径映射的更多信息，请参阅文档 [Edge Delivery Services 的路径映射。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
-## 发布分类 {#publishing}
+## 发布分类法 {#publishing}
 
-在发布分类之前，该分类将无法供通用编辑器或您的用户使用。
+分类法在发布之前不可供通用编辑器或您的用户使用。
 
-分类页由[使用工具栏中的&#x200B;**快速Publish**&#x200B;或&#x200B;**管理发布**&#x200B;图标像任何其他页一样发布。](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+分类页面像其他页面一样发布， [使用 **快速发布** 或者 **管理出版物** 工具栏中的图标。](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
 
-每次执行以下操作时，您必须重新发布分类页面：
+每次执行以下操作时，都必须重新发布分类页面：
 
 * 编辑分类页面。
-* 编辑或添加到分类页面中包含的标记和命名空间。
+* 编辑或添加分类页面中包含的标签和命名空间。
 
-如果您创建新的分类页面，则必须先[将映射添加到项目中的`paths.json`文件。](#paths-json)
+如果你创建新的分类页面，你必须首先 [添加一个映射到 `paths.json` 项目中的文件。](#paths-json)
 
 ## 访问分类信息 {#accessing}
 
-发布分类后，通用编辑器会利用其信息并使其对用户可见。
+一旦您的分类法发布，通用编辑器就可以利用其信息并将其显示给您的用户。
 
-您可以在以下地址以JSON数据的形式访问分类。
+您可以通过以下地址以 JSON 数据形式访问分类法。
 
-`https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-json-name>.json`
+`https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-使用您在[将分类映射到项目中的`paths.json`文件时定义的`<taxonomy-json-name>`。](#paths-json)分类数据作为JSON数据返回，如下例所示。
+使用 `<taxonomy-json-name>` 你定义的 [将您的分类法映射到 `paths.json` 项目中的文件。](#paths-json) 分类数据以 JSON 数据形式返回，如下例所示。
 
 ```json
 {
@@ -159,6 +159,6 @@ ht-degree: 7%
 }
 ```
 
-当您更新分类并将其重新发布时，此JSON数据将自动更新。 您的应用程序能够以编程方式为用户访问此信息。
+当您更新分类法并重新发布时，此 JSON 数据将自动更新。您的应用可以通过编程为您的用户访问此信息。
 
-[如果您维护多种语言的标记，](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)您可以通过将ISO2语言代码作为`sheet=`参数的值传递来访问这些语言。
+[如果你维护多种语言的标签，](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages) 你可以通过传入 ISO2 语言代码作为 `sheet=` 范围。

@@ -1,33 +1,33 @@
 ---
 title: 创建经过检测可与 Universal Editor 结合使用的区块
-description: 了解如何创建在WYSIWYG创作活动中与Edge Delivery Services项目一起使用的块。
+description: 了解如何在使用 Edge Delivery Services 项目进行 WYSIWYG 创作时，创建与通用编辑器配合使用的工具块。
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 53%
+ht-degree: 97%
 
 ---
 
 
 # 创建经过检测可与 Universal Editor 结合使用的区块 {#create-block}
 
-了解如何创建在WYSIWYG创作活动中与Edge Delivery Services项目一起使用的块。
+了解如何在使用 Edge Delivery Services 项目进行 WYSIWYG 创作时，创建与通用编辑器配合使用的工具块。
 
 ## 先决条件 {#prerequisites}
 
-本指南提供了分步说明，介绍如何使用Edge Delivery Services项目在WYSIWYG创作中创建针对通用编辑器的块。 它包括添加组件、在 Universal Editor 中加载组件定义、发布页面、实施区块装饰和样式、将更改引入生产环境以及验证更改。完成本指南后，您可以为自己的项目创建和部署新区块。
+本指南将逐步说明如何在所见即所得创作中使用 Edge Delivery Services 项目创建通用编辑器工具块。它包括添加组件、在 Universal Editor 中加载组件定义、发布页面、实施区块装饰和样式、将更改引入生产环境以及验证更改。完成本指南后，您可以为自己的项目创建和部署新区块。
 
-本指南需要具备有关WYSIWYG创作与Edge Delivery Services项目以及通用编辑器的现有知识。 在开始阅读本指南之前，您应有权访问 Edge Delivery Services 并熟悉其基础知识，其中包括：
+本指南将逐步说明如何在所见即所得创作中使用 Edge Delivery Services 项目创建通用编辑器工具块。在开始阅读本指南之前，您应有权访问 Edge Delivery Services 并熟悉其基础知识，其中包括：
 
 * 您已学完 [Edge Delivery Services 教程](/help/edge/developer/tutorial.md)。
 * 您有权访问 [AEM Cloud Service 沙盒](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。
 * 您已[启用同一沙盒环境上的 Universal Editor](/help/implementing/universal-editor/getting-started.md)。
-* 您已完成使用Edge Delivery Services进行WYSIWYG创作的[开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
+* 您已完成 [使用 Edge Delivery Services 进行所见即所得创作的开发人员入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 指导。
 
-本指南以[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中所做的工作为基础。
+本指南基于[使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中完成的工作而构建。
 
 ## 向项目添加新区块 {#add-block}
 
@@ -45,17 +45,17 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 ### 创建区块定义和模型 {#create-block-model}
 
-1&amp;amp；句点；在本地克隆您在[适用于WYSIWYG创作的Edge Delivery Services开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中创建的GitHub项目，并在您选择的编辑器中打开它。
+本地克隆您在[使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中创建的 GitHub 项目，并在您选择的编辑器中打开此项目。
 
 * 此处使用的 Microsoft Code 用于说明目的。
 
 ![克隆项目](assets/create-block/clone.png)
 
-2&amp;amp；句点；编辑项目根目录中的`component-definition.json`文件，并为新报价块添加以下定义并保存文件。
+2、编辑`component-definition.json` 文件，为新的引用区块添加以下定义并保存该文件。
 
 >[!BEGINTABS]
 
->[!TAB JSON示例]
+>[!TAB JSON 示例]
 
 ```json
 {
@@ -83,13 +83,13 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 >[!ENDTABS]
 
-3&amp;amp；句点；编辑项目根目录中的`component-models.json`文件，并为新报价块添加以下[模型定义](/help/implementing/universal-editor/field-types.md#model-structure)并保存该文件。
+编辑项目的根目录下的 `component-models.json` 文件，为新的引用区块添加以下[模型定义](/help/implementing/universal-editor/field-types.md#model-structure)并保存该文件。
 
-* 有关创建内容模型时需要考虑哪些内容的更多信息，请参阅文档[使用Edge Delivery Services项目进行WYSIWYG创作的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)。
+* 请参阅文件 [利用 Edge Delivery Services 项目进行所见即所得创作的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md) 了解更多有关创建内容模型时需要考虑的重要因素的信息。
 
 >[!BEGINTABS]
 
->[!TAB JSON示例]
+>[!TAB JSON 示例]
 
 ```json
 {
@@ -119,11 +119,11 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 >[!ENDTABS]
 
-4&amp;amp；句点；编辑项目根目录中的`component-filters.json`文件，并将引用块添加到[筛选器定义](/help/implementing/universal-editor/customizing.md#filtering-components)中，以允许将该块添加到任何部分并保存该文件。
+编辑项目的根目录下的 `component-filters.json` 文件，将引用区块添加到[过滤器定义](/help/implementing/universal-editor/customizing.md#filtering-components)以允许将此区块添加到任意部分并保存该文件。
 
 >[!BEGINTABS]
 
->[!TAB JSON示例]
+>[!TAB JSON 示例]
 
 ```json
 {
@@ -147,7 +147,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 >[!ENDTABS]
 
-5&amp;amp；句点；使用Git将这些更改提交到`main`分支。
+5、使用 git 将这些更改提交到您的`main``main` 分支。
 
 * 提交到 `main` 仅用于说明目的。[遵循最佳实践](https://www.aem.live/docs/dev-collab-and-good-practices)，并对实际项目工作使用拉取请求。
 
@@ -155,7 +155,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 现在，已定义您的基本引用区块并将其提交到示例项目，您可以将引用区块添加到现有页面。
 
-1. 在浏览器中，登录到 AEM as a Cloud Service。[使用站点控制台，](/help/sites-cloud/authoring/basic-handling.md)导航到您在[适用于WYSIWYG创作的Edge Delivery Services开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)指南中创建的站点并选择页面。
+1. 在浏览器中，登录到 AEM as a Cloud Service。[使用sites控制台、](/help/sites-cloud/authoring/basic-handling.md) 导航到您在 [使用 Edge Delivery Services 进行所见即所得创作的开发人员入门指南s](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) 指南并选择页面。
 
    * 在此示例中，`index` 用于说明目的。
 
@@ -182,7 +182,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 1. 一旦您对引用内容感到满意，可以通过点击或单击 Universal Editor 工具栏中的&#x200B;**发布**&#x200B;按钮来发布页面。
 
-1. 通过导航到已发布的页面来验证是否已发布内容。该链接将类似于 `https://<branch>--<repo>--<owner>.hlx.page`
+1. 通过导航到已发布的页面来验证是否已发布内容。该链接将类似于 `https://<branch>--<repo>--<owner>.aem.page`
 
    ![已发布的引用](assets/create-block/quote-published.png)
 
@@ -190,17 +190,17 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 现在，您已使用一个可对其应用样式的引用区块。
 
-1&amp;amp；句点；返回到项目的编辑器。
+1、返回到您的项目的编辑器。
 
-2&amp;amp；句点；在`blocks`文件夹下创建`quote`文件夹。
+2&amp;period; 在 `quote` 文件夹下创建一个 `blocks` 文件夹。
 
 ![创建引用文件夹](assets/create-block/new-folder.png)
 
-3&amp;amp；句点；在新的`quote`文件夹中，添加`quote.js`文件以通过添加以下JavaScript实施块修饰并保存文件。
+在新的 `quote` 文件夹中，添加一个 `quote.js` 文件以通过添加以下 JavaScript 来实施区块装饰，然后保存该文件。
 
 >[!BEGINTABS]
 
->[!TAB JavaScript示例]
+>[!TAB JavaScript 错误示例]
 
 ```javascript
 export default function decorate(block) {
@@ -218,11 +218,11 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&amp;amp；句点；在`quote`文件夹中，添加一个`quote.css`文件以通过添加以下CSS代码来定义块的样式并保存该文件。
+在 `quote` 文件夹中，添加一个 `quote.css` 文件以通过添加以下 CSS 代码来定义区块的样式，然后保存该文件。
 
 >[!BEGINTABS]
 
->[!TAB CSS示例]
+>[!TAB CSS 示例]
 
 ```css
 .block.quote {
@@ -263,27 +263,27 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5&amp;amp；句点；使用Git将这些更改提交到`main`分支。
+5、使用 git 将这些更改提交到您的`main`分支。
 
 * 提交到 `main` 仅用于说明目的。[遵循最佳实践](https://www.aem.live/docs/dev-collab-and-good-practices)，并对实际项目工作使用拉取请求。
 
-6&amp;amp；句点；返回到Universal Editor的浏览器选项卡，您正在编辑项目的页面，请重新加载页面以查看样式化的块。
+返回到 Universal Editor 的浏览器选项卡，您在其中编辑项目页面并重新加载页面以查看样式化区块。
 
-7&amp;amp；句点；请参见页面上现在样式化的引号块。
+请参阅页面上的样式化引用区块。
 
 ![Universal Editor 中的样式化引用区块](assets/create-block/quote-styled.png)
 
-8&amp;amp；period；通过导航到已发布的页面，验证更改是否已推送到生产环境。 该链接将类似于 `https://<branch>--<repo>--<owner>.hlx.page`
+通过导航到已发布的页面来验证更改是否已推送到生产环境。该链接将类似于 `https://<branch>--<repo>--<owner>.aem.page`
 
 ![已发布的样式化引用区块](assets/create-block/quote-styled-published.png)
 
 恭喜！您现在拥有一个完全工作的样式化引用区块。您可以使用此示例作为设计您自己的项目特定区块的基础。
 
-### 块选项 {#block-options}
+### 阻止选项 {#block-options}
 
-如果您需要某个块的外观或行为因特定情况而略有不同，但差异不足以使其成为新的块，则可以让作者从[块选项中进行选择。](content-modeling.md#type-inference)
+如果您需要一个块根据特定情况看起来或表现得略有不同，但又不足以成为一个新的块，那么您可以让作者从中选择 [阻止选项。](content-modeling.md#type-inference)
 
-通过将`classes`属性添加到块，该属性在简单块的表标题中呈现，或作为容器块中项目的值列表。
+通过添加 `classes` 块的属性、简单块的表头中呈现的属性、或容器块中项目的帐户列表。
 
 ```json
 {
@@ -327,21 +327,21 @@ export default function decorate(block) {
 
 为简单起见，本指南要求您直接提交到 `main`。对于示例存储库中的试验，这通常不是问题。对于实际项目工作，[您应遵循开发最佳实践](https://www.aem.live/docs/dev-collab-and-good-practices)，在不同的分支上进行开发，并在合并到 `main` 之前通过拉取请求检查所有更改。
 
-当您未在 `main` 分支上进行开发时，可以在 Universal Editor 位置栏中追加 `?ref=<branch>` 以从分支加载页面。`<branch>` 是分支名称，因为它将用于项目的预览或实时 URL，例如 `https://<branch>--<repo>--<owner>.hlx.page`。
+当您未在 `main` 分支上进行开发时，可以在 Universal Editor 位置栏中追加 `?ref=<branch>` 以从分支加载页面。`<branch>` 是分支名称，因为它将用于项目的预览或实时 URL，例如 `https://<branch>--<repo>--<owner>.aem.page`。
 
-## 为基于文档的创作重用块 {#reusing-blocks}
+## 重用块进行基于文档的创作 {#reusing-blocks}
 
-如果遵循相同的内容模型，则可以使用通用编辑器为WYSIWYG创作创建的块进行基于文档的创作。
+如果您遵循相同的内容模型，您可以使用通用编辑器为所见即所得创作创建的块进行基于文档的创作。
 
-有关详细信息，请参阅文档[WYSIWYG和基于文档的创作](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)的块。
+请参阅文档 [用于所见即所得和基于文档的创作的块](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md) 了解更多信息。
 
 ## 后续步骤 {#next-steps}
 
 现在您知道了如何创建块，接下来，了解如何以语义的方式对内容进行建模以实现精益的开发人员体验至关重要。
 
-请参阅文档[用于WYSIWYG创作的Edge Delivery Services项目内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)，了解内容建模如何用于WYSIWYG创作的Edge Delivery Services项目。
+请参阅文档 [使用 Edge Delivery Services 项目进行 AEM 创作的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)，了解使用 Edge Delivery Services 项目进行 AEM 创作的内容建模的工作原理。
 
 >[!TIP]
 >
->有关创建支持WYSIWYG以AEM as a Cloud Service作为内容源进行创作的新Edge Delivery Services项目的端到端演练，请查看[此AEM GEM网络研讨会。](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有关创建新的Edge Delivery Services项目的端到端演练，该项目支持使用 AEM as a Cloud Service 作为内容源进行所见即所得创作，请查看[本次 AEM GEM 网络研讨会。](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 
