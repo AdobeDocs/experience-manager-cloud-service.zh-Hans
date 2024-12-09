@@ -3,10 +3,11 @@ title: Assets Prime
 description: 详细了解Assets Prime的主要方面，例如主要优势、用户类型及其权限。
 feature: Asset Management
 role: User, Admin
-source-git-commit: f033efd954ea7f9d27a891bfb9c0226e9d9c1432
+exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
+source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,21 +20,27 @@ ht-degree: 2%
 
 Assetsas a Cloud ServicePrime包括轻量级DAM，可让您执行各种关键功能，例如：
 
-* **资产管理和库服务**&#x200B;：使用户能够在集中式存储库中摄取、存储、编录、控制、管理和控制品牌的数字资产的工具
+* **资产管理和图书馆服务**&#x200B;：让用户能够在集中存储库中摄取、存储、目录、控制、管理和治理品牌数字资产的工具
 
-* **搜索、发现和Collaboration**：使用户能够浏览、发现、共享和协作创建丰富客户体验所需的资源的工具。
+* **搜索、发现和 Collaboration**：使用户能够浏览、发现、共享和协作创建丰富帐户体验所需资产的工具。
 
-* **安全性和Rights Management**：用于管理访问权限、权限、权限和安全性的工具，以确保法规遵从性、一致性和品牌完整性。
+* **安全性和 Rights Management**：用于管理访问、权限、权利和安全性的工具，以确保合规性、一致性和品牌完整性。
 
-* **Creative Cloud连接**：使营销和创意团队能够通过简化的访问、评论、审阅和注释进行协作以更新或最终确定数字资源的工具。
+* **Creative Cloud Connections**：使营销和创意团队能够通过简化的访问、评论、审核和注释进行协作以更新或完成数字资产的工具。
 
-* **Experience Cloud连接**：支持从其他Experience Cloud应用程序和服务本机访问数字资源的工具。
+* **Experience Cloud 连接**：支持从其他 Experience Cloud 应用程序和服务本地访问数字资产的工具。
 
 * **没有可扩展性选项的分发门户体验(Content Hub)**：用于向扩展的利益相关者扩展对品牌批准的数字资产的访问权限以确保使用和品牌一致性。
 
-* **集成**：与其他Adobe和非Adobe应用程序的集成。
+* **集成**：与其他 Adobe 和非 Adobe 应用程序的集成。
 
-* **Dynamic Media（加载项）**：用于转换和投放图像、视频和其他新兴内容的工具，可大规模为任何设备提供丰富的交互式多媒体体验。
+* **动态媒体（插件）**：用于转换和交付图像、视频和其他新兴内容的工具，可为任何设备提供丰富的交互式多媒体体验。
+
+  >[!NOTE]
+  >
+  >Dynamic Media具有OpenAPI功能，允许您访问基本图像修饰符，例如旋转、裁切（仅限手动 — 无智能裁切）、翻转、大小、偏好webp、高度、宽度、质量、格式和自适应视频流，Assets Prime也提供该功能。 请联系Adobe客户团队以了解更多信息。
+
+1. [创建新程序](/help/journey-onboarding/create-program.md)。
 
 但是，随着DAM需求的增长以及您对更多功能（如UI可扩展性、API驱动的自动化和自定义代码部署）的需求，您必须考虑升级到[Assets Ultimate](/help/assets/assets-ultimate-overview.md)。
 
@@ -77,13 +84,13 @@ Assets Prime现已为Experience Manager Assetsas a Cloud Service启用。
 
 Admin Console上的AEM as a Cloud Service实例包含以下产品配置文件：
 
-* AEM管理员
+* AEM 管理员
 
 * AEM 用户
 
-* [AEM Assets协作者用户](#onboard-collaborator-users)
+* [AEM 资产s 合作者用户](#onboard-collaborator-users)
 
-* [AEM Assets Power Users](#onboard-power-users)
+* [AEM 资产s 高级用户](#onboard-power-users)
 
 
 ![AEM Assets产品配置文件](assets/aem-assets-product-profiles.png)
