@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '3322'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -113,8 +113,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
->title="内容摄取故障排除"
->abstract="请参阅摄取日志和文档以查找针对摄取失败常见原因的解决方案并查找解决该问题的方法。修复后即可再次运行摄取。"
+>title="内容引入故障排除"
+>abstract="请参阅引入日志和文档以查找针对引入失败常见原因的解决方案并查找解决该问题的方法。修复后即可再次运行引入。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="验证内容转移"
 
 ### CAM无法检索迁移令牌 {#cam-unable-to-retrieve-the-migration-token}
@@ -170,12 +170,12 @@ ht-degree: 11%
 
 ![图像](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### 由于云环境未处于就绪状态，引入失败 {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### 由于云环境未处于就绪状态导致引入失败 {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
 >title="云环境未处于就绪状态"
->abstract="在极少数情况下，目标云环境可能会遇到意外问题，从而导致摄取失败。"
+>abstract="在极少数情况下，目标云环境可能会遇到意外问题，从而导致引入失败。"
 
 在极少数情况下，摄取的目标Cloud Service环境可能会遇到意外问题。 因此，摄取将失败，因为环境未处于预期的就绪状态。 检查摄取日志以显示所遇到的错误状态的更多详细信息。
 
@@ -247,7 +247,7 @@ MongoDB中存储的节点属性值不能超过16 MB。 如果节点值超过支�
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
 >title="意外间歇性错误"
->abstract="有时可能会出现意外的间歇性下游服务错误，遗憾的是，唯一的办法就是重试摄取。"
+>abstract="有时可能会出现意外的间歇性下游服务错误，遗憾的是，唯一的办法就是重试引入。"
 
 有时，意外的间歇性问题可能会导致摄取失败，很遗憾，唯一的解决办法是重试摄取。 调查摄取日志以找出失败的原因，并查看它是否与下面列出的任何错误一致，其中应尝试重试。
 
