@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
 source-wordcount: '2768'
-ht-degree: 78%
+ht-degree: 82%
 
 ---
 
@@ -514,9 +514,9 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 
 AEM as a Cloud Service 将迁移至 Java Runtime 21。为了确保兼容性，必须进行以下调整：
 
-### 运行时要求
+### Runtime 要求
 
-需要进行这些调整以确保与Java 21运行时兼容。 这些库可以随时更新，因为它们与旧版本的Java兼容。
+这些调整是为了确保与 Java Runtime 21 兼容。这些库可以随时更新，因为它们与旧版本的 Java 兼容。
 
 #### org.objectweb.asm 的最低版本{#org.objectweb.asm}
 
@@ -530,11 +530,11 @@ AEM as a Cloud Service 将迁移至 Java Runtime 21。为了确保兼容性，�
 
 ### 构建时间要求
 
-必须进行这些调整，才能使用较新版本的Java构建项目，但运行时兼容性并不需要这些调整。 可以随时更新Maven插件，因为它们与旧版Java兼容。
+这些调整是为了允许使用较新版本的 Java 构建项目，但不是 Runtime 兼容性所必需的。这些 Maven 插件可以随时更新，因为它们与旧版本的 Java 兼容。
 
 #### bnd-maven-plugin 的最低版本 {#bnd-maven-plugin}
 
-将bnd-maven-plugin的使用更新到版本6.4.0，以确保支持更新的JVM运行时。 版本7或更高版本与Java 11或更低版本不兼容，因此目前不建议升级到该版本。
+将 bnd-maven-plugin 的使用更新到 6.4.0 版本，以确保支持较新的 JVM Runtime。版本 7 或更高版本与 Java 11 或更低版本不兼容，因此目前不建议升级到该版本。
 
 #### aemanalyser-maven-plugin 的最低版本 {#aemanalyser-maven-plugin}
 
