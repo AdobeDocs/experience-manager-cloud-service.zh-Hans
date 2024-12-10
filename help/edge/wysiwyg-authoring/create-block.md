@@ -4,10 +4,10 @@ description: 了解如何在使用 Edge Delivery Services 项目进行 WYSIWYG �
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 97%
+source-wordcount: '1415'
+ht-degree: 94%
 
 ---
 
@@ -45,13 +45,13 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 ### 创建区块定义和模型 {#create-block-model}
 
-本地克隆您在[使用 Edge Delivery Services 进行 AEM 创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中创建的 GitHub 项目，并在您选择的编辑器中打开此项目。
+1\。 在本地克隆您在[适用于WYSIWYG创作的Edge Delivery Services开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中创建的GitHub项目，并在您选择的编辑器中打开它。
 
 * 此处使用的 Microsoft Code 用于说明目的。
 
 ![克隆项目](assets/create-block/clone.png)
 
-2、编辑`component-definition.json` 文件，为新的引用区块添加以下定义并保存该文件。
+2\。 编辑项目的根目录下的 `component-definition.json` 文件，为新的引用区块添加以下定义并保存该文件。
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 >[!ENDTABS]
 
-编辑项目的根目录下的 `component-models.json` 文件，为新的引用区块添加以下[模型定义](/help/implementing/universal-editor/field-types.md#model-structure)并保存该文件。
+3\。 编辑项目的根目录下的 `component-models.json` 文件，为新的引用区块添加以下[模型定义](/help/implementing/universal-editor/field-types.md#model-structure)并保存该文件。
 
 * 请参阅文件 [利用 Edge Delivery Services 项目进行所见即所得创作的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md) 了解更多有关创建内容模型时需要考虑的重要因素的信息。
 
@@ -119,7 +119,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 >[!ENDTABS]
 
-编辑项目的根目录下的 `component-filters.json` 文件，将引用区块添加到[过滤器定义](/help/implementing/universal-editor/customizing.md#filtering-components)以允许将此区块添加到任意部分并保存该文件。
+4\。 编辑项目的根目录下的 `component-filters.json` 文件，将引用区块添加到[过滤器定义](/help/implementing/universal-editor/customizing.md#filtering-components)以允许将此区块添加到任意部分并保存该文件。
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 >[!ENDTABS]
 
-5、使用 git 将这些更改提交到您的`main``main` 分支。
+5\。 使用 git 将这些更改提交到 `main` 分支。
 
 * 提交到 `main` 仅用于说明目的。[遵循最佳实践](https://www.aem.live/docs/dev-collab-and-good-practices)，并对实际项目工作使用拉取请求。
 
@@ -190,13 +190,13 @@ Adobe 建议您采用三阶段方法来开发区块：
 
 现在，您已使用一个可对其应用样式的引用区块。
 
-1、返回到您的项目的编辑器。
+1\。 返回到您项目的编辑器。
 
-2&amp;period; 在 `quote` 文件夹下创建一个 `blocks` 文件夹。
+2\。 在 `blocks` 文件夹下创建一个 `quote` 文件夹。
 
 ![创建引用文件夹](assets/create-block/new-folder.png)
 
-在新的 `quote` 文件夹中，添加一个 `quote.js` 文件以通过添加以下 JavaScript 来实施区块装饰，然后保存该文件。
+3\。 在新的 `quote` 文件夹中，添加一个 `quote.js` 文件以通过添加以下 JavaScript 来实施区块装饰，然后保存该文件。
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-在 `quote` 文件夹中，添加一个 `quote.css` 文件以通过添加以下 CSS 代码来定义区块的样式，然后保存该文件。
+4\。 在 `quote` 文件夹中，添加一个 `quote.css` 文件以通过添加以下 CSS 代码来定义区块的样式，然后保存该文件。
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5、使用 git 将这些更改提交到您的`main`分支。
+5\。 使用 git 将这些更改提交到 `main` 分支。
 
 * 提交到 `main` 仅用于说明目的。[遵循最佳实践](https://www.aem.live/docs/dev-collab-and-good-practices)，并对实际项目工作使用拉取请求。
 
-返回到 Universal Editor 的浏览器选项卡，您在其中编辑项目页面并重新加载页面以查看样式化区块。
+6\。 返回到 Universal Editor 的浏览器选项卡，您在其中编辑项目页面并重新加载页面以查看样式化区块。
 
-请参阅页面上的样式化引用区块。
+7\。 请参阅页面上的样式化引用区块。
 
 ![Universal Editor 中的样式化引用区块](assets/create-block/quote-styled.png)
 
-通过导航到已发布的页面来验证更改是否已推送到生产环境。该链接将类似于 `https://<branch>--<repo>--<owner>.aem.page`
+8\。 通过导航到已发布的页面来验证更改是否已推送到生产环境。该链接将类似于 `https://<branch>--<repo>--<owner>.aem.page`
 
 ![已发布的样式化引用区块](assets/create-block/quote-styled-published.png)
 
@@ -344,4 +344,3 @@ export default function decorate(block) {
 >[!TIP]
 >
 >有关创建新的Edge Delivery Services项目的端到端演练，该项目支持使用 AEM as a Cloud Service 作为内容源进行所见即所得创作，请查看[本次 AEM GEM 网络研讨会。](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-
