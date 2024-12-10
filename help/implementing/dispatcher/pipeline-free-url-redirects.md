@@ -1,16 +1,17 @@
 ---
-title: 无管道URL重定向
+title: 无管道 URL 重定向
 description: 了解如何在没有访问Git或Cloud Manager管道的情况下声明301或302重定向。
 feature: Dispatcher
 role: Admin
-source-git-commit: 36b7d72f24bd60ad94762c9c9937105bea6e31b6
+exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
+source-git-commit: c80454204837529007c1fda7eef4486c213eb509
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 无管道URL重定向 {#pipeline-free-redirects}
+# 无管道 URL 重定向 {#pipeline-free-redirects}
 
 由于各种原因，组织会重写URL，从而导致301（或302）重定向，这意味着浏览器会被重定向到不同的页面。
 
@@ -57,9 +58,9 @@ maps:
   path: /content/dam/redirectmaps/mysite-redirectmap.txt
 ```
 
-接下来，在Apache配置文件（如`rewrites/rewrite.rules`或`<yourfile>.vhost`）中，必须配置名称属性（上述示例中的`my.map`）引用的映射文件。
+接下来，在Apache配置文件（如`rewrites/rewrite.rules`或`<yourfile>.vhost`）中，必须配置名称属性（上述示例中的`my.map`）引用的映射文件。 加载后，此映射文件将保存在&#x200B;**fixed**&#x200B;位置`/tmp/rewrites/`下的Dispatcher本地存储中。
 
-`RewriteMap`指令应指示使用`sdbm` （简单DBM）格式以数据库管理器(DBM)文件格式存储数据。
+`RewriteMap`指令应指示使用`sdbm` （简单DBM）格式以数据库管理器(DBM)文件格式存储数据，并且完整文件路径是从存储位置前缀和name属性派生的。
 
 其余配置取决于`redirectmap.txt`的格式。 如下例所示，最简单的格式是在原始url与映射url之间的一对一映射：
 
