@@ -1,25 +1,25 @@
 ---
 title: 为Adobe InDesign生成“仅用于置入”演绎版
-description: 使用Experience Manager Assets工作流和ImageMagick生成新资源和现有资源的FPO演绎版。
+description: 使用Experience Manager Assets工作流和ImageMagick生成新资源和现有资源的FPO（仅用于置入）演绎版。
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 10%
+source-wordcount: '527'
+ht-degree: 13%
 
 ---
 
 # 为Adobe InDesign生成“仅用于置入”演绎版 {#fpo-renditions}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/configure-fpo-renditions.html?lang=en) |
+| AEM 6.5 | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/configure-fpo-renditions) |
 | AEM as a Cloud Service | 本文 |
 
 将大型资源从Experience Manager置入Adobe InDesign文档时，创意专业人士在[置入资源](https://helpx.adobe.com/indesign/using/placing-graphics.html)后必须等待相当长的时间。 同时，用户被阻止使用InDesign。 这会中断创作流并对用户体验产生负面影响。 Adobe功能允许从InDesign文档开始临时放置小型演绎版。 在需要最终输出时（例如，对于打印和发布工作流），原始的全分辨率资产会在后台替换临时演绎版。 这种后台异步更新可加快设计流程以提高工作效率，且不会阻碍创作过程。
@@ -59,7 +59,7 @@ Experience Manageras a Cloud Service提供云原生资源处理功能以生成FP
 
 ## 查看FPO呈现版本 {#view-fpo-renditions}
 
-您可以在工作流完成后检查生成的FPO呈现版本。 在Experience Manager Assets用户界面中，单击资源以打开大型预览。 打开左边栏并选择&#x200B;**[!UICONTROL 格式副本]**。 或者，在预览打开时使用键盘快捷键`Alt + 3`。
+您可以检查工作流完成之后生成的FPO演绎版。 在Experience Manager Assets用户界面中，单击资源以打开大型预览。 打开左边栏并选择&#x200B;**[!UICONTROL 格式副本]**。 或者，在预览打开时使用键盘快捷键`Alt + 3`。
 
 单击&#x200B;**[!UICONTROL FPO呈现版本]**&#x200B;以加载其预览。 或者，您也可以右键单击该演绎版并将其保存到您的文件系统。 检查左边栏中是否有可用的演绎版。
 
