@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中对�
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1874'
+source-git-commit: e8f992df5a270e7335af466a524daa013bff5f42
+workflow-type: tm+mt
+source-wordcount: '1824'
 ht-degree: 100%
 
 ---
@@ -82,16 +82,6 @@ ht-degree: 100%
 
 * [正在缓存您的持久查询](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
 * [管理保留查询的缓存](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
-
-#### 使用 AEM GraphQL 预缓存 {#use-aem-graphql-pre-caching}
-
-**推荐**
-
-此功能允许 AEM 进一步缓存 GraphQL 查询范围内的内容，然后将这些内容组合为 JSON 输出中的块，而不是逐行组合。
-
-**进一步的参考**
-
-联系 Adobe 为您的 AEM Cloud Service 程序和环境启用此功能。
 
 ### GraphQL 查询优化 {#graphql-query-optimization}
 
