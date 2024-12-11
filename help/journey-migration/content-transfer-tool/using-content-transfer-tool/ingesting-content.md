@@ -4,10 +4,10 @@ description: 了解如何使用Cloud Acceleration Manager将内容从迁移集�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
+source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3412'
+ht-degree: 12%
 
 ---
 
@@ -48,6 +48,9 @@ ht-degree: 0%
 
    >[!NOTE]
    > 如果目标层是`Author`，则创作实例将在摄取期间关闭，并对用户（例如，作者或执行维护的任何人）不可用。 原因是为了保护系统，并防止任何可能丢失或导致引入冲突的更改。 确保您的团队了解此事实。 另请注意，环境在创作引入期间似乎处于休眠状态。
+
+   >[!NOTE]
+   > 如果目标层是`Publish`，则发布实例在引入期间保持运行状态。  但是，如果在进行摄取期间压缩进程正在运行，则两个进程之间可能会发生冲突。  因此，摄取过程1)禁用压缩定时脚本，以便在摄取期间不会开始压缩，2)检查压缩当前是否正在运行，如果正在运行，则等待压缩完成后再进行摄取。  如果发布引入所花费的时间比预期要长，请检查引入日志以了解相关的日志语句。
 
    * **擦除：**&#x200B;选择`Wipe`值
       * **划出**&#x200B;选项设置目标的引入起点。 如果启用了&#x200B;**划出**，则包含其所有内容的目标将重置为Cloud Manager中指定的AEM版本。 如果未启用，则目标会保持其当前内容作为起点。
