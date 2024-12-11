@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2909'
 ht-degree: 3%
 
 ---
@@ -74,8 +74,6 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### 创建标准配置文件 {#create-standard-profile}
 
-要创建标准处理配置文件，请执行以下步骤：
-
 1. 管理员可访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 处理配置文件]**。 单击&#x200B;**[!UICONTROL 创建]**。
 1. 提供一个名称，帮助您在应用到文件夹时唯一地标识配置文件。
 1. 要生成FPO呈现版本，请在&#x200B;**[!UICONTROL 图像]**&#x200B;选项卡上启用&#x200B;**[!UICONTROL 创建FPO呈现版本]**。 输入1-100之间的&#x200B;**[!UICONTROL 质量]**&#x200B;值。
@@ -124,8 +122,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 >无法使用自定义应用程序编辑标准元数据。 您只能修改自定义元数据。
 
 ### 创建自定义配置文件 {#create-custom-profile}
-
-要创建自定义配置文件，请执行以下步骤：
 
 1. 管理员可访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 处理配置文件]** > **[!UICONTROL 创建]**。
 1. 在处理配置文件页面上，单击&#x200B;**[!UICONTROL 自定义]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL 新增]**。
