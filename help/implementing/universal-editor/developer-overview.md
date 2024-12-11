@@ -4,9 +4,9 @@ description: 如果您是一名AEM开发人员，并且对Universal Editor的工
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3160'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 1. 将JavaScript库添加到文件的末尾。
 
    ```html
-   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. 单击&#x200B;**全部保存**，然后重新加载通用编辑器。
@@ -160,7 +160,12 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 >[!TIP]
 >
 >* 库可以加载到页眉或页脚中。
->* `universal-editor-embedded.js`库[在NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors)上可用，如果需要，您可以自行托管它，或将其直接放入您的应用程序中。
+
+>[!NOTE]
+>
+>由于包已被弃用，因此不再建议使用以前推荐的方法包含JavaScript库`<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>`或通过npmjs.com来使用。
+>
+>如果应用程序仍使用已弃用的包，则通用编辑器将在UI中显示警告，指出检测到过时的包。
 
 ## 定义连接以保留更改 {#connection}
 

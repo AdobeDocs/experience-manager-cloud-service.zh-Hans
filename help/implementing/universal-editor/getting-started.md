@@ -4,10 +4,10 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 76%
+source-wordcount: '627'
+ht-degree: 65%
 
 ---
 
@@ -24,7 +24,17 @@ ht-degree: 76%
 
 ## 在页面上插桩 {#instrument-page}
 
-Universal Editor 服务需要一个[统一资源名称 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) 来为正在编辑的应用程序内容识别和使用正确的后端系统。因此，需要 URN 模式将内容映射回内容资源。
+通用编辑器需要JavaScript库才能在编辑器中呈现和编辑页面。
+
+此外，Universal Editor服务需要[统一资源名称(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)，以便为正在编辑的应用程序中的内容标识和利用正确的后端系统。 因此，需要 URN 模式将内容映射回内容资源。
+
+### 包含通用编辑器CORS库 {#cors-library}
+
+为了使通用编辑器连接到您的应用程序，您的应用程序必须包含通用编辑器CORS库。 将以下脚本添加到您的应用程序。
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### 创建连接 {#connections}
 
