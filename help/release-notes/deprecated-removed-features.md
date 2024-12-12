@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
 source-wordcount: '2768'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 82%
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
->title="AEM as a Cloud Service中已弃用和已删除的功能"
->abstract="AEM as a Cloud Service 具有云原生部署模型。此选项卡重点介绍其云原生对应产品所替代的特性和功能。"
+>title="AEM as a Cloud Service 中已弃用和已删除的功能"
+>abstract="AEM as a Cloud Service 具有云原生部署模型。此选项卡突出显示了由云原生对应取代的功能和特性。"
 
 Adobe 在不断地评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。由于[!DNL Adobe Experience Manager] as a [!DNL Cloud Service]使用云原生部署模型，因此它将某些功能和特性替换为云原生对应功能和特性。
 
