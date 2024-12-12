@@ -1,6 +1,6 @@
 ---
 title: 配置Dynamic Media常规设置
-description: 了解如何在Dynamic Media中管理常规设置。 您可以在此处设置发布服务器名称和原始服务器名称，并设置图像覆盖选项。 此外，还有用于图像钝化蒙版的默认上传选项，以及有关如何处理PostScript、Adobe Photoshop、PDF和Adobe Illustrator文件的上传选项。
+description: 了解如何在Dynamic Media中管理常规设置。 您可以配置发布服务器和原始服务器名称并设置图像覆盖选项。 调整默认上传设置，以便对PostScript、Photoshop、PDF和Illustrator文件进行钝化蒙版和文件处理。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 6251b9bb6f56d387fa1a158ac62ef3b25b1ab56b
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2506'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ hidefromtoc: yes -->
 * 您在Adobe Experience Manager as a Cloud Service中具有&#x200B;*现有* **[!UICONTROL Dynamic Media配置]** (在&#x200B;**[!UICONTROL Cloud Service]**&#x200B;中)。 请参阅[在Cloud Service中创建Dynamic Media配置](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)。
 * 您是具有管理员权限的Experience Manager系统管理员。
 
-Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 AdobeDynamic Media建议更改这些发布设置的用户熟悉Adobe Experience Manager上的Dynamic Media和基本图像技术。
+经验丰富的网站开发人员和程序员是Dynamic Media常规设置的目标受众。 AdobeDynamic Media建议更改发布设置的用户熟悉Adobe Experience Manager上的Dynamic Media和基本图像技术。
 
 在创建客户时，AdobeDynamic Media会自动为贵公司提供分配的服务器。 这些服务器用于构建网站和应用程序的URL字符串。 这些URL调用特定于您的帐户。
 
@@ -43,7 +43,7 @@ Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 
 **要配置Dynamic Media常规设置：**
 
 1. 在Experience Manager创作模式下，选择Experience Manager徽标以访问全局导航控制台。
-1. 在左边栏中，选择工具图标，然后转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media常规设置]**。
+1. 在左边栏中，单击![工具图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > ![齿轮编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GearsEdit_18_N.svg) **[!UICONTROL Dynamic Media常规设置]**。
 1. 在“服务器”页中，设置您的&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;和&#x200B;**[!UICONTROL 原始服务器名称]**，然后使用这五个选项卡配置用于图像编辑以及Postscript、Photoshop、PDF和Illustrator文件的默认上载选项。
 
    * [服务器](#server-general-setting)
@@ -57,7 +57,7 @@ Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 
    ![Dynamic Media常规设置页面](/help/assets/assets-dm/dm-general-settings.png)
    *Dynamic Media的“常规设置”页面，其中选择了&#x200B;**[!UICONTROL 图像编辑]**选项卡。*<br><br>
 
-1. 完成后，在页面的右上角附近，选择&#x200B;**[!UICONTROL 保存]**。
+1. 完成后，在页面的右上角附近，单击&#x200B;**[!UICONTROL 保存]**。
 
 ## 服务器 {#server-general-setting}
 
@@ -65,8 +65,8 @@ Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 
 
 | 选项 | 描述 |
 | --- | --- |
-| **[!UICONTROL 已发布的服务器名称]** | 必需。<br>该名称必须在路径中使用`https://`。<br>此服务器是在所有特定于您帐户的系统生成URL调用中使用的实时CDN（内容分发网络）服务器。 请勿更改此服务器名称，除非Adobe技术支持指示您这样做。 |
-| **[!UICONTROL 原始服务器名称]** | 必需。<br>此服务器仅用于质量保证测试。 请勿更改此服务器名称，除非Adobe技术支持指示更改此服务器名称。 |
+| **[!UICONTROL 已发布的服务器名称]** | 必需。<br>该名称必须在路径中使用`https://`。<br>此服务器是在所有特定于您帐户的系统生成URL调用中使用的实时CDN（内容分发网络）服务器。 仅在Adobe技术支持指示更改此服务器名称时才进行更改。 |
+| **[!UICONTROL 原始服务器名称]** | 必需。<br>此服务器仅用于质量保证测试。 仅在Adobe技术支持指示更改此服务器名称时才进行更改。 |
 
 ## 上载到应用程序 {#upload-to-application}
 
@@ -76,20 +76,20 @@ Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 
 
   >[!NOTE]
   >
-  >要保持与Experience Manager的一致性，请选择“覆盖图像”选项&#x200B;**[!UICONTROL 在当前文件夹中覆盖相同的基本名称/扩展名]**。
+  >要保持与Experience Manager的一致性，请选择“覆盖图像”选项&#x200B;**[!UICONTROL 在当前文件夹中覆盖，基本名称/扩展名相同]**。
 
   | “覆盖图像”选项 | 描述 |
   | --- | --- |
   | **[!UICONTROL 在当前文件夹内，使用相同的基本名称/扩展名进行覆盖]** | *仅新Dynamic Media帐户的*&#x200B;默认值。<br>此选项是最严格的替换规则。 它要求您将替换图像上传到与原始图像相同的文件夹，并且替换图像具有与原始图像相同的文件扩展名。 如果不满足这些要求，则会创建副本。<br>*要与Experience Manager保持一致，请选择此选项*。 |
-  | **[!UICONTROL 在当前文件夹内，使用相同的基本名称（不论扩展名是什么）进行覆盖]** | 要求您将替换图像上传到与原始图像相同的文件夹，但文件扩展名可能与原始图像不同。 例如，chair.tif将取代chair.jpg。 |
-  | **[!UICONTROL 在任意文件夹内，使用相同的基本资源名称/扩展名进行覆盖]** | 要求替换图像具有与原始图像相同的文件扩展名（例如，chair.jpg必须替换chair.jpg，而不是chair.tif）。 但是，您可以将替换图像上传到与原始图像不同的文件夹。 更新的图像驻留在新文件夹中；无法再在其原始位置找到该文件。 |
+  | **[!UICONTROL 在当前文件夹内，使用相同的基本名称（不论扩展名是什么）进行覆盖]** | 它要求您将替换图像上传到与原始图像相同的文件夹，但文件扩展名可能与原始图像不同。 例如，chair.tif将取代chair.jpg。 |
+  | **[!UICONTROL 在任意文件夹内，使用相同的基本资源名称/扩展名进行覆盖]** | 它要求替换图像具有与原始图像相同的文件扩展名（例如，chair.jpg必须替换chair.jpg，而不是chair.tif）。 但是，您可以将替换图像上传到与原始图像不同的文件夹。 更新的图像驻留在新文件夹中；无法再在其原始位置找到该文件。 |
   | **[!UICONTROL 在任意文件夹内，使用相同的基本资源名称（不论扩展名是什么）进行覆盖]** | 此选项是最具包容性的替换规则。 您可以将替换图像上载到与原始图像不同的文件夹，上载文件扩展名不同的文件，然后替换原始文件。 如果原始文件位于其他文件夹中，则替换图像将位于上载到的新文件夹中。 |
 
 * **[!UICONTROL 保留裁切]**
 
   控制任何现有手动裁切定义的保留。
 
-  另请参阅Dynamic Media查看器参考指南中的[UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html)和[ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html)中的`preserveCrop`。
+  另请参阅Dynamic Media查看器参考指南中的[UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)和[ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)中的`preserveCrop`。
 
 ## 默认上载选项 {#default-upload-options}
 
@@ -101,7 +101,7 @@ Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 
 
 | “USM锐化”选项 | 描述 |
 | --- | --- |
-| **[!UICONTROL 金额]** | 必需。<br>控制应用于边缘像素的对比度数量。<br>将其视为效果的强度。 AdobeDynamic Media中的“钝化蒙版”的量值与Adobe Photoshop中的量值的主要区别在于Photoshop的量范围为1%到500%。 而在AdobeDynamic Media中，值范围为`0.0`到`5.0`。 在AdobeDynamic Media中，值5.0大致相当于Photoshop中的500%；值0.9相当于90%，依此类推。 |
+| **[!UICONTROL 金额]** | 必需。<br>它控制应用于边缘像素的对比度数量。<br>将其视为效果的强度。 “钝化蒙版”的值在AdobeDynamic Media和Adobe Photoshop之间有所不同。 Photoshop提供的金额范围是1%到500%。 而在AdobeDynamic Media中，值范围为`0.0`到`5.0`。 在AdobeDynamic Media中，值5.0大致相当于Photoshop中的500%；值0.9相当于90%，依此类推。 |
 | **[!UICONTROL 半径]** | 必需。<br>控制效果的半径。<br>值范围为`0`到`250`。 该效果在图像中的所有像素上运行，并从所有像素向各个方向辐射。 半径以像素为单位测量。 例如，要对2000 x 2000像素图像和500 x 500像素图像获得类似的锐化效果，应将2000 x 2000像素图像上的半径设置为2像素。 然后在500 x 500像素图像上设置一个像素的半径值。 较大的值适用于像素较多的图像。 |
 | **[!UICONTROL 阈值]** | 必需。<br>阈值是应用钝化蒙版滤镜时忽略的对比度范围。 这种效果非常重要，因此使用此滤波器时，图像不会引入“杂色”。 值范围为`0` - `255`，这是灰度图像中的亮度阶数。 `0`=黑色，`128`=50%灰色和`255`=白色。<br>阈值为`12`时，忽略肤色亮度的细微变化，以避免添加杂色，但仍会为相异区域（如睫毛与皮肤相遇的区域）添加边缘对比度。<br>如果您有某人的面部照片，则“钝化蒙版”会影响图像的对比度部分。 例如，睫毛和皮肤相遇可产生明显对比区域，而皮肤本身光滑。 即使最光滑的皮肤也会表现出亮度值的细微变化。 如果不使用阈值，则滤镜会强调外观像素中的这些细微变化。 反过来，在增加睫毛上的对比度的同时，产生噪音和不希望的效果，增强锐利度。<br>为了避免此问题，引入了一个阈值，该阈值告知滤镜忽略对比度没有显着变化的像素，如平滑外观。<br>在前面显示的拉链图形中，请注意拉链旁边的纹理。 由于阈值过低，图像噪声难以抑制。 |
 | **[!UICONTROL 单色]** | 选择以钝化蒙版图像亮度（强度）。<br>取消选择以分别取消锐化每个颜色分量的蒙版。 |
@@ -119,9 +119,9 @@ Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 
 | PostScript选项 | 描述 |
 | --- | --- |
 | **[!UICONTROL 正在处理]** | 选择“栅格化”以将文件中的矢量图形转换为位图格式。 |
-| **[!UICONTROL 在渲染的图像中保持透明背景]** | 保留文件的背景透明度。 |
+| **[!UICONTROL 在渲染的图像中保持透明背景]** | 它保留文件的背景透明度。 |
 | **[!UICONTROL 分辨率（像素/英寸）]** | 确定分辨率设置。 此设置确定文件中每英寸显示的像素数。 |
-| **[!UICONTROL 色彩空间]** | · **[!UICONTROL 自动检测]** — 保留文件的颜色空间。<br>· **[!UICONTROL 强制作为RGB]** — 转换为RGB色彩空间。<br>· **[!UICONTROL 强制为CMYK]** — 转换为CMYK颜色空间。<br>· **[!UICONTROL 强制为灰度]** — 转换为灰度颜色空间。 |
+| **[!UICONTROL 色彩空间]** | · **[!UICONTROL 自动检测]** — 保留文件的颜色空间。<br>· **[!UICONTROL 强制作为RGB]** — 它转换为RGB色彩空间。<br>· **[!UICONTROL 强制为CMYK]** — 转换为CMYK颜色空间。<br>· **[!UICONTROL 强制为灰度]** — 它转换为灰度颜色空间。 |
 
 ### Photoshop选项卡 {#photoshop-tab}
 
@@ -145,9 +145,9 @@ Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 
 | PDF选项 | 描述 |
 | --- | --- |
 | **[!UICONTROL 正在处理]** | · **[!UICONTROL 无]** — 未对PDF进行任何处理。<br>· **[!UICONTROL 缩略图]** — 翻录PDF文件中的每一页，并将其转换为缩略图图像。<br> · **[!UICONTROL 栅格化]** — 断开PDF文件中的页面，并将矢量图形转换为位图图像。 要创建eCatalog，请选择此选项。 |
-| **[!UICONTROL 提取]** | · **[!UICONTROL 无]** — 未从PDF中提取任何搜索词或链接。<br>· **[!UICONTROL 搜索词]** — 从PDF文件中提取搜索词，以便在eCatalog查看器中按关键字搜索该文件。<br>· **[!UICONTROL 链接]** — 从PDF文件中提取链接，并将其转换为在eCatalog查看器中使用的图像映射。<br>· **[!UICONTROL 搜索词和链接]** — 提取搜索词和链接以在eCatalog查看器中使用。 |
+| **[!UICONTROL 提取]** | · **[!UICONTROL 无]** — 未从PDF中提取任何搜索词或链接。<br>· **[!UICONTROL 搜索词]** — 系统从PDF文件中提取搜索词，以便在eCatalog查看器中搜索关键字。<br>· **[!UICONTROL 链接]** — 从PDF文件中提取链接，并将其转换为在eCatalog查看器中使用的图像映射。<br>· **[!UICONTROL 搜索词和链接]** — 提取搜索词和链接以在eCatalog查看器中使用。 |
 | **[!UICONTROL 分辨率（像素/英寸）]** | 确定分辨率设置。 此设置确定PDF文件中每英寸显示的像素数。 默认值为150。 |
-| **[!UICONTROL 色彩空间]** | · **[!UICONTROL 自动检测]** — 保留PDF文件的色彩空间。<br>· **[!UICONTROL 强制作为RGB]** — 转换为RGB色彩空间。<br>· **[!UICONTROL 强制为CMYK]** — 转换为CMYK颜色空间。<br>· **[!UICONTROL 强制为灰度]** — 转换为灰度颜色空间。 |
+| **[!UICONTROL 色彩空间]** | · **[!UICONTROL 自动检测]** — 保留PDF文件的色彩空间。<br>· **[!UICONTROL 强制作为RGB]** — 它转换为RGB色彩空间。<br>· **[!UICONTROL 强制作为CMYK]** — 它转换为CMYK颜色空间。<br>· **[!UICONTROL 强制为灰度]** — 转换为灰度颜色空间。 |
 
 ### Illustrator选项卡 {#illustrator-tab}
 
@@ -161,6 +161,6 @@ Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 
 | Illustrator选项 | 描述 |
 | --- | --- |
 | **[!UICONTROL 正在处理]** | 选择“栅格化”以将文件中的矢量图形转换为位图格式。 |
-| **[!UICONTROL 在渲染的图像中保持透明背景]** | 保留文件的背景透明度。 |
+| **[!UICONTROL 在渲染的图像中保持透明背景]** | 它保留文件的背景透明度。 |
 | **[!UICONTROL 分辨率（像素/英寸）]** | 确定分辨率设置。 此设置确定文件中每英寸显示的像素数。 |
-| **[!UICONTROL 色彩空间]** | · **[!UICONTROL 自动检测]** — 保留文件的颜色空间。<br>· **[!UICONTROL 强制作为RGB]** — 转换为RGB色彩空间。<br>· **[!UICONTROL 强制为CMYK]** — 转换为CMYK颜色空间。<br>· **[!UICONTROL 强制为灰度]** — 转换为灰度颜色空间。 |
+| **[!UICONTROL 色彩空间]** | · **[!UICONTROL 自动检测]** — 保留文件的颜色空间。<br>· **[!UICONTROL 强制作为RGB]** — 它转换为RGB色彩空间。<br>· **[!UICONTROL 强制为CMYK]** — 转换为CMYK颜色空间。<br>· **[!UICONTROL 强制为灰度]** — 转换为灰度颜色空间。 |
