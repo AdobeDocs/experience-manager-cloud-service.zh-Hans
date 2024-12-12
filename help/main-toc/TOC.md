@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5d0af9f7eaea4ad1aa6a979f46713d735f3a461a
+source-git-commit: 6895addee405a33f26b66a436ca7aff99e7ea0aa
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5914'
 ht-degree: 97%
 
 ---
@@ -963,6 +963,9 @@ ht-degree: 97%
       + [WYSIWYG 和基于文档的块](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
       + [包含DAM Assets的页面](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
+      + [跨站点重用代码](/help/edge/wysiwyg-authoring/repoless.md)
+      + [重写多站点管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [重写暂存和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + 基于文档的创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
       + [批量元数据](/help/edge/docs/bulk-metadata.md)
