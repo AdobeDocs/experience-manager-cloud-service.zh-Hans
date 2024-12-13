@@ -4,10 +4,10 @@ description: 了解在 Adobe Developer Console 中弃用 JWT 凭据对 AEM 产�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
-workflow-type: ht
-source-wordcount: '483'
-ht-degree: 100%
+source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 63%
 
 ---
 
@@ -59,3 +59,35 @@ AEM 客户使用 AEM 配置与许多其他 Adobe 解决方案的集成。例如�
 当 Cloud Manager 预配 AEM as a Cloud Service 环境时，它自动生成一个具有 JWT 凭据的 Adobe Developer Console 项目。此项目被标为只读，如以下屏幕快照中所示。客户不能也不应该尝试将这些项目迁移到 OAuth 服务器到服务器凭据。相反，Adobe 将在凭据不再可用之前自行迁移这些项目。
 
 ![自动生成的项目](/help/security/assets/jwt-deprecation-autogen-projects.png)
+
+## 自动生成的项目常见问题解答 {#autogen-projects-faqs}
+
+本节提供了有关AEM as a Cloud Service中自动生成的项目的JWT凭据弃用的最常见问题解答。
+
+**如何自动生成哪些项目？**
+导航到Adobe Developer Console | “项目”部分。  AEM as a Cloud Service自动生成的项目将有一个带有“自动生成”标识符的锁图标。  自动生成的项目采用AEM-p#####-e####格式，由技术帐户用户创建。
+
+<img width="439" alt="图像" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+
+
+**如果我们自动生成的项目遇到问题，该怎么办？**
+
+联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+
+**我是否应该迁移自动生成的项目？**
+
+无需执行任何操作，因为Adobe将为具有AEM发行版17258（2024年8月）及更高版本的环境迁移代表您自动生成的环境。
+
+**迁移自动生成项目的时间表是什么？**
+
+Adobe将从2025年第一季度开始采用分阶段迁移方法，从开发环境开始。
+
+**如果我们的AEM版本早于AEM发行说17258（2024年8月），那么我们的AEM as a Cloud Service实例会受到什么影响？**
+
+如果自动生成的项目集成在2025年6月之前未迁移到OAuth，则将停止工作。
+
+为确保顺利过渡，客户应立即联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，并开始更新到[最新AEM版本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)的流程。 这将为回归测试提供充足的时间，并允许Adobe高效地管理项目的迁移。
+
+**我是否可以升级到支持的OAuth版本而不升级我的AEM as a Cloud Service AEM版本？**
+
+不会。为确保顺利过渡，客户应立即联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，并开始更新到[最新AEM版本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)的流程。 这将为回归测试提供充足的时间，并允许Adobe高效地管理项目的迁移。
