@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 87%
+source-wordcount: '1904'
+ht-degree: 82%
 
 ---
 
@@ -169,6 +169,19 @@ MIME 子类型 > MIME 类型 > `default`表单 > 现成表单
 1. 选择该文件夹并单击&#x200B;**[!UICONTROL 移除]**。您还可以从列表中选择多个文件夹。
 
 您还可以导航到文件夹详细信息页面，然后从&#x200B;**[!UICONTROL 元数据表单]**&#x200B;字段中选择&#x200B;**[!UICONTROL 系统映射的元数据表单]**，以从文件夹中移除分配的元数据表单。
+
+### 在元数据表单中使用链接组件 {#link-component-metadata-form}
+
+链接组件用于启用外部URL，包括存储链接、版权信息、联系表单等。 要在元数据表单上使用链接组件，您需要[配置元数据表单](#metadata-forms)。
+
+请按照以下步骤在元数据表单上使用链接组件：
+
+1. 转到资产详细信息页面并导航到&#x200B;**[!UICONTROL 链接URL]**。
+1. 添加一个要用于重定向选定资源的URL。
+1. 单击&#x200B;**[!UICONTROL 添加链接]**。 执行以下操作之一：
+   * 单击![复制图标](assets/do-not-localize/copy.svg)以复制URL。
+   * 单击![编辑图标](assets/do-not-localize/edit.svg)以编辑URL。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改。
 
 ## 后续步骤 {#next-steps}
 
