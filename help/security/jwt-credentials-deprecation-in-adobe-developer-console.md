@@ -4,9 +4,9 @@ description: 了解在 Adobe Developer Console 中弃用 JWT 凭据对 AEM 产�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -65,10 +65,10 @@ AEM 客户使用 AEM 配置与许多其他 Adobe 解决方案的集成。例如�
 本节提供了有关AEM as a Cloud Service中自动生成的项目的JWT凭据弃用的最常见问题解答。
 
 **如何自动生成哪些项目？**
+
 导航到Adobe Developer Console | “项目”部分。  AEM as a Cloud Service自动生成的项目将有一个带有“自动生成”标识符的锁图标。  自动生成的项目采用AEM-p#####-e####格式，由技术帐户用户创建。
 
-<img width="439" alt="图像" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
-
+![自动生成的项目](/help/security/assets/jwt-alert.png)
 
 **如果我们自动生成的项目遇到问题，该怎么办？**
 
