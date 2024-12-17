@@ -2,10 +2,10 @@
 title: 批准 Content Hub 的资产
 description: 了解如何在Assetsas a Cloud Service中批准资源以使它们在Content Hub中可用。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 6%
+source-wordcount: '837'
+ht-degree: 17%
 
 ---
 
@@ -59,9 +59,9 @@ Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Co
 
 要在Assets视图中批量批准文件夹内的资源，请执行以下操作：
 
-1. 选择资源并单击&#x200B;**[!UICONTROL 批量元数据编辑]**。
+1. 选择资产并点击 **[!UICONTROL 批量元数据编辑]**。
 
-1. 在右窗格的[!UICONTROL 属性]部分中的&#x200B;**[!UICONTROL 状态]**&#x200B;字段中选择&#x200B;**[!UICONTROL 已批准]**。
+1. 选择 **[!UICONTROL 得到正式认可的]** 在 **[!UICONTROL 地位]** 字段可用 [!UICONTROL 特性] 部分。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -85,6 +85,12 @@ Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Co
    1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：status_。
    1. 将默认值更改为&#x200B;_已批准_。
 
+1. 与步骤6类似，将&#x200B;**[!UICONTROL 单行文本字段]**&#x200B;从右侧的&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区拖到表单中的元数据分区中。
+1. 单击新添加的字段，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中进行以下更新：
+   1. 将&#x200B;**[!UICONTROL 字段标签]**&#x200B;更改为&#x200B;_激活目标_。
+   1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：activationTarget_。
+   1. 将默认值更改为&#x200B;_contenthub_。
+
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 1. 在&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面中，选择新创建的元数据配置文件。
 1. 单击顶部操作栏中的&#x200B;**[!UICONTROL 将元数据配置文件应用到文件夹]**。
@@ -103,8 +109,8 @@ Assets as a Cloud Service和Content Hub必须使用相同的组织，才能在Co
 
 是否显示使用Content Hub上传的资源，取决于您是否[启用了自动审批切换开关](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub)：
 
-* 如果启用了&#x200B;**[!UICONTROL 自动审批]**&#x200B;切换，则使用Content Hub上传的资源会自动可用。
+* 如果启用了 **[!UICONTROL 自动批准]** 切换按钮，您使用 Content Hub 上传的资产将自动可用。
 
-* 如果禁用了&#x200B;**[!UICONTROL 自动审批]**&#x200B;切换功能，则使用Content Hub上传的资源不会自动显示。 这些资源位于Assetsas a Cloud Service环境的`hydrated-assets`文件夹中。 导航到文件夹，然后[批量编辑](#bulk-approve-assets-content-hub)这些资源的状态并更改为`Approved`，以便这些资源显示在Content Hub中。
+* 如果禁用 **[!UICONTROL 自动审批]** 切换，则您使用 Content Hub 上传的资产不会自动显示。这些资产可在 资产s as a Cloud Service 环境的 `hydrated-资产s` `hydrated-assets` 文件夹中找到。导航到该文件夹并 [批量编辑](#bulk-approve-assets-content-hub) 这些资产的状态以 `Approved` 使这些资产显示在 Content Hub。
 
 ![Content Hub审批流程](/help/assets/assets/content-hub-approval.png)
