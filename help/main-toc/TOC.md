@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd502ff77faea5d6e7bbe6d39c0c22cb54e3c165
+source-git-commit: 4e9d49aef85f79e99894153237cc58a75458b1e5
 workflow-type: tm+mt
 source-wordcount: '5929'
 ht-degree: 97%
@@ -479,6 +479,7 @@ ht-degree: 97%
    + [启用 资产s as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [资产s as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [资产s 合作者用户](/help/assets/assets-collaborator-users.md)
+   + [在为Edge Delivery Services创作内容时集成AEM Assets](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + 管理数字资产{#manage}
       + 微前端资源选择器 {#asset-selector}
          + [资产选择器概述](/help/assets/overview-asset-selector.md)
@@ -649,7 +650,6 @@ ht-degree: 97%
       + [Content Credentials](/help/assets/content-credentials.md)
       + [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [AEM Assets视图UI可扩展性](/help/assets/aem-assets-view-ui-extensibility.md)
-      + [在为Edge Delivery Services创作内容时集成AEM Assets](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + Content Hub {#content-hub}
       + [概述](/help/assets/product-overview.md)
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
