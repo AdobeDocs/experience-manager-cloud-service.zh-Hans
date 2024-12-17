@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 771724c248e2c566d466b11d3560895062ce8da0
+source-git-commit: bd502ff77faea5d6e7bbe6d39c0c22cb54e3c165
 workflow-type: tm+mt
-source-wordcount: '5919'
+source-wordcount: '5929'
 ht-degree: 97%
 
 ---
@@ -630,18 +630,18 @@ ht-degree: 97%
       + [快速入门](/help/assets/get-started-assets-view.md)
       + [我的工作区](/help/assets/my-workspace-assets-view.md)
       + [支持的文件类型和用例](/help/assets/supported-file-formats-assets-view.md)
-      + [查看资源](/help/assets/navigate-assets-view.md)
-      + [上传和添加资源](/help/assets/add-delete-assets-view.md)
-      + [批量导入资源](/help/assets/bulk-import-assets-view.md)
-      + [搜索和发现资源](/help/assets/search-assets-view.md)
-      + [资源管理任务](/help/assets/manage-organize-assets-view.md)
+      + [查看资产](/help/assets/navigate-assets-view.md)
+      + [上传和添加资产](/help/assets/add-delete-assets-view.md)
+      + [批量导入资产](/help/assets/bulk-import-assets-view.md)
+      + [搜索和发现资产](/help/assets/search-assets-view.md)
+      + [资产管理任务](/help/assets/manage-organize-assets-view.md)
       + [编辑图像](/help/assets/edit-images-assets-view.md)
       + [编辑视频](/help/assets/edit-videos-assets-view.md)
       + [查看和管理演绎版](/help/assets/renditions.md)
       + [管理资源元数据](/help/assets/metadata-assets-view.md)
       + [批量重命名](/help/assets/bulk-rename-assets-view.md)
       + [批量元数据编辑](/help/assets/bulk-metadata-edit.md)
-      + [共享资源](/help/assets/share-links-for-assets-view.md)
+      + [共享资产](/help/assets/share-links-for-assets-view.md)
       + [管理收藏集](/help/assets/manage-collections-assets-view.md)
       + [监视资源、文件夹和收藏集](/help/assets/manage-notifications-assets-view.md)
       + [管理报表](/help/assets/manage-reports-assets-view.md)
@@ -649,6 +649,7 @@ ht-degree: 97%
       + [Content Credentials](/help/assets/content-credentials.md)
       + [发布资源到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [AEM Assets视图UI可扩展性](/help/assets/aem-assets-view-ui-extensibility.md)
+      + [在为Edge Delivery Services创作内容时集成AEM Assets](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + Content Hub {#content-hub}
       + [概述](/help/assets/product-overview.md)
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
