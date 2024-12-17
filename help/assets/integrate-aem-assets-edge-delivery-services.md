@@ -1,7 +1,8 @@
 ---
 title: 在为Edge Delivery Services创作内容时集成AEM Assets
-description: 了解如何将AEM Assets与Edge Delivery Services集成。 通过这种集成，您能够将AEM Assets与Microsoft Word和Google文档集成，将AEM Assets与通用编辑器集成，将Dynamic Media与OpenAPI功能与通用编辑器集成，并将Dynamic Media与Microsoft Word和Google文档中的OpenAPI功能集成。 完成此集成后，您可以在Microsoft Word和Google文档中使用AEM Assets，在通用编辑器中使用AEM Assets，在通用编辑器中将Dynamic Media与OpenAPI功能一起使用以交付资产，并在Microsoft Word和Google文档中使用Dynamic Media与OpenAPI功能以交付资产。
-source-git-commit: 6cb7fbb5fa09542b999ec5f2178880dd1c47d2e0
+description: 了解如何将AEM Assets与Edge Delivery Services集成。 通过此集成，您可以将AEM Assets与Microsoft Word和Google文档集成，将AEM Assets与通用编辑器集成，将Dynamic Media与OpenAPI功能与通用编辑器集成，并将Dynamic Media与Microsoft Word和Google文档中的OpenAPI功能集成。 完成此集成后，您可以在Microsoft Word和Google文档中使用AEM Assets，在通用编辑器中使用AEM Assets，在通用编辑器中将Dynamic Media与OpenAPI功能一起使用以交付资源，并在Microsoft Word和Google文档中使用Dynamic Media与OpenAPI功能一起交付资源。
+exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
+source-git-commit: 87acadf3664a180df758ee40e5f5e35c68aef7b8
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%
