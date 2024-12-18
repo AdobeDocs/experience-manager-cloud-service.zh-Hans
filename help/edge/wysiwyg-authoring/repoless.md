@@ -3,13 +3,13 @@ title: 跨站点重用代码
 description: 如果您有许多相似的网站，这些网站的外观和行为大致相同，但内容不同，那么您可以了解如何在一个重写模型中跨多个网站共享代码。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
+source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
-
 
 # 跨站点重用代码 {#repoless}
 
@@ -45,7 +45,7 @@ AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存�
 
 1. [检索访问令牌](#access-token)
 1. [设置配置服务](#config-service)
-1. [设置访问控制](#access-control)
+1. [添加站点配置和技术帐户](#access-control)
 1. [更新AEM配置](#update-aem)
 1. [验证站点](#authenticate-site)
 
@@ -126,9 +126,9 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 创建公共配置后，您可以通过类似于`https://main--<your-aem-project>--<your-github-org>.aem.page/config.json`的URL访问它以进行验证。
 
-### 设置访问控制 {#access-control}
+### 为站点配置添加路径映射并设置技术帐户 {#access-control}
 
-要设置访问控制，您需要提供技术帐户。
+您需要创建站点配置并将其添加到路径映射中。
 
 1. 在站点的根目录下创建一个新页面，然后选择&#x200B;[**配置**&#x200B;模板。](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * 您可以将配置留空，只保留预定义的`key`和`value`列。 您只需创建它。
@@ -156,28 +156,31 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. 在浏览器中，您现在可以在响应以下链接时检索技术帐户。
+
+映射站点配置后，您可以通过定义技术帐户来配置访问控制，使其具有发布权限。
+
+1. 在您的浏览器中，作为对以下链接的响应，检索技术帐户。
 
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
 
-响应将类似于以下内容。
+1. 响应将类似于以下内容。
 
-```json
-{
-  "total": 1,
-  "offset": 0,
-  "limit": 1,
-  "data": [
-    {
-      "key": "admin.role.publish",
-      "value": "<tech-account-id>@techacct.adobe.com"
-    }
-  ],
-  ":type": "sheet"
-}
-```
+   ```json
+   {
+     "total": 1,
+     "offset": 0,
+     "limit": 1,
+     "data": [
+       {
+         "key": "admin.role.publish",
+         "value": "<tech-account-id>@techacct.adobe.com"
+       }
+     ],
+     ":type": "sheet"
+   }
+   ```
 
 1. 使用类似于以下内容的cURL命令在配置中设置技术帐户。
 
