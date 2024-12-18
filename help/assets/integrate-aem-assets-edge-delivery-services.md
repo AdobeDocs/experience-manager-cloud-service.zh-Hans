@@ -2,9 +2,9 @@
 title: 在为Edge Delivery Services创作内容时集成AEM Assets
 description: 了解如何将AEM Assets与Edge Delivery Services集成。 通过此集成，您可以将AEM Assets与Microsoft Word和Google文档集成，将AEM Assets与通用编辑器集成，将Dynamic Media与OpenAPI功能与通用编辑器集成，并将Dynamic Media与Microsoft Word和Google文档中的OpenAPI功能集成。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
+source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ AEM Assets与基于文档的创作工具(如Microsoft Word或Google Docs)集成�
 * 有权访问启用了带开放API功能的Dynamic Media的AssetsCloud Service环境。
 * Dynamic Media许可证。
 * 启用了AEM Assets sidekick插件，并为图像资源启用了复制引用。 有关更多详细信息，请参阅基于文档的创作的[this](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode)和基于通用编辑器的创作的[this](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)。
-* 已批准的Assets。 已批准的Assets通过AssetsCloud Service后端或UI操作具有`dam:status=Approved`。
+* 已批准的Assets。 批准的资源通过AssetsCloud Service后端或UI操作具有`dam:status=Approved`。
 
 ### 使用通过Dynamic Media提供的具有OpenAPI功能的资源{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
