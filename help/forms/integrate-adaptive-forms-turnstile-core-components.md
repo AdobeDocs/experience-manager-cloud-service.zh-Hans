@@ -4,7 +4,8 @@ description: 使用Turnstile服务轻松增强表单安全性。 里面有分步
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 819c376671ee141e1bcf885a22f161b327ce2c15
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 14%
@@ -91,13 +92,13 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
    * **[!UICONTROL 配置设置]：**&#x200B;选择为Turnstile验证码服务配置的云配置。
      >[!NOTE]
      >* 出于类似目的，您的环境中可以有多个云配置。 所以，请仔细选择服务。 如果未列出任何服务，请参阅[配置Turnstile](#steps-to-configure-hcaptcha)部分，了解如何创建配置容器以将您的AEM Forms环境连接到Turnstile服务。
+
    * **[!UICONTROL 验证]：**&#x200B;以错误消息的形式提供验证码验证：
+
       * **错误消息：**&#x200B;提供验证码提交失败时向用户显示的错误消息。
         >[!NOTE]
         >* 仅当客户端已填写验证码时，才会显示错误消息。
-
-
-1. 选择&#x200B;**[!UICONTROL 完成]**。
+1. 单击&#x200B;**[!UICONTROL 完成]**。
 
 
 现在，只有合法的表单，表单填写者才能成功清除Turnstile服务带来的挑战，才能提交表单。
