@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
+source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 14%
@@ -98,6 +98,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
       * **错误消息：**&#x200B;提供验证码提交失败时向用户显示的错误消息。
         >[!NOTE]
         >* 仅当客户端已填写验证码时，才会显示错误消息。
+
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
 
