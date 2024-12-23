@@ -7,7 +7,7 @@ role: Admin, User, Developer
 source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
 source-wordcount: '2059'
-ht-degree: 34%
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 34%
 
 授予用户访问特定 Adobe 解决方案的权限时，您不一定要授予他们完全访问权限。 产品配置文件使每个解决方案都有自己的用户权限集。 可以通过 [Admin Console](/help/journey-onboarding/admin-console.md) 访问这些内容。
 
-Adobe Admin Console具有产品、产品实例和产品配置文件的结构化层次结构，可以为该组织的内部用户分配成员资格，使他们有权访问已许可的解决方案和功能。
+Adobe Admin Console 具有由产品、产品实例和产品配置文件组成的结构化层次结构，其中可以为组织的内部用户分配成员资格，从而使他们能够访问已获得已授予许可的解决方案和功能。
 
 <!-- Alexandru: Drafting for now 
 
@@ -34,18 +34,18 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 ## AEM as a Cloud Service 产品配置文件 {#aem-product-profiles}
 
-AEM as a Cloud Service 是一种全云本地服务，将 AEM 作为服务提供。 它以云端原生的方式提供 AEM，具有新的属性，如始终打开、始终最新、始终安全和始终保持规模。 同时，它保留了 AEM 作为可定制平台向客户提供的主要价值主张，并允许企业级团队整合到其开发和交付过程中。 请参阅 [Adobe Experience Manager as a Cloud Service 简介](/help/overview/introduction.md)，了解有关 AEM as a Cloud Service 的更多信息。
+AEM as a Cloud Service 是一种全云本地服务，将 AEM 作为服务提供。 它以云端原生的方式提供 AEM，具有新的属性，如始终打开、始终最新、始终安全和始终保持规模。 同时，它保留了 AEM 作为可定制平台向客户提供的主要价值主张，并允许企业级团队整合到其开发和传递过程中。 请参阅 [Adobe Experience Manager as a Cloud Service 简介](/help/overview/introduction.md)，了解有关 AEM as a Cloud Service 的更多信息。
 
-### 组织级别的产品实例 {#org-level-product-instances}
+### 组织级别产品实例 {#org-level-product-instances}
 
 >[!NOTE]
 >
-> 本文中介绍的某些产品实例和产品配置文件可能只显示给新创建的环境。 未来的机制还将允许更新现有环境。
+> 本文介绍的某些产品实例和产品配置文件可能仅出现在新创建的环境中。未来的机制将允许现有环境也进行更新。
 
-当Adobe首次处理AEM解决方案的许可时，Adobe Admin Console中的Adobe Experience Manager as a Cloud Service产品下将显示两个产品实例：
+当 Adobe 首次处理 AEM 解决方案的许可时，两个产品实例将出现在 Adobe Experience Manager as a Cloud Service 产品下的 Adobe Admin Console 中：
 
-* **AEM组织级别** — 包含一个或多个产品配置文件，这些配置文件表示对适用于所有AEM环境的功能的访问权限，而不只是对单个功能的访问权限
-* **Cloud Manager** — 包含与对Cloud Manager功能的不同访问级别对应的产品配置文件。
+* **AEM 组织级别**：包含一个或多个产品配置文件，这些配置文件表示对所有 AEM 环境范围内的功能的访问，而不仅仅是单个环境
+* **Cloud Manager**：包含与对 Cloud Manager 功能的不同访问级别相对应的产品配置文件。
 
 <!--
 >[!NOTE]
@@ -53,43 +53,43 @@ AEM as a Cloud Service 是一种全云本地服务，将 AEM 作为服务提供�
 >For existing programs, the AEM Org-Level Product Instance is created upon selecting the **Update product** profiles action for a given environment.
 -->
 
-![组织级别的产品实例](/help/onboarding/assets/orglevel.png)
+![组织级别产品实例](/help/onboarding/assets/orglevel.png)
 
-AEM组织级产品实例内有一个名为AEM组织级报告者的产品配置文件，它目前不使用，但将来可能会用于表示对检索有关AEM产品许可证信息的访问权限。
+AEM 组织级产品实例内部有一个名为 AEM 组织级报告器的产品配置文件，目前尚未使用，但将来可能会用于表示检索有关 AEM 产品许可证信息的权限。
 
-在许可Forms通信解决方案后，AEM组织级别的产品实例下也会显示相应的产品配置文件。
+当 Forms 通信解决方案获得许可时，相应的产品配置文件也将出现在 AEM 组织级产品实例下。
 
-![Reporters产品配置文件](/help/onboarding/assets/org-level-reporters.png)
+![报告器产品配置文件](/help/onboarding/assets/org-level-reporters.png)
 
 ### 环境和层级产品实例 {#environment-and-tier-level-product-instances}
 
-在使用一个或多个AEM环境配置新程序时，每个环境将显示两个产品实例，分别包含用于创作和发布的产品配置文件。
+在使用一个或多个 AEM 环境配置新程序时，每个环境将出现两个产品实例，分别包含用于创作和发布的产品配置文件。
 
 ![环境产品实例](/help/onboarding/assets/env-productinstances.png)
 
-以下是创作产品实例中的产品配置文件，适用于在包含AEM Sites的项目中设置环境的组织：
+对于已在包含 AEM Sites 的程序中配置环境的组织，以下是作者产品实例中的产品配置文件：
 
-![站点产品实例](/help/onboarding/assets/sites-product-instances.png)
+![Sites 产品实例](/help/onboarding/assets/sites-product-instances.png)
 
-下表介绍了特定于环境层的产品实例下的可能产品配置文件列表。
+下表描述了特定于环境层的产品实例下可能的产品配置文件列表。
 
 <table style="table-layout:auto">
     <tr>
         <th>产品实例</th>
-        <th>命名约定</th>
-        <th>默认服务</th>
+        <th>命名惯例</th>
+        <th>默认服务器</th>
         <th>描述</th>
     </tr>
     <tr>
-        <td>AEM Author</td>
-        <td>AEM Sites Content Managers — 作者 — 项目<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM Sites Content Managers</td>
+        <td>AEM 作者</td>
+        <td>AEM Sites 内容管理员 - 作者 - 程序 <code>id</code> - 环境 <code>id</code></td>
+        <td>AEM Sites 内容管理员</td>
         <td>
             <ul>
-                <li>旨在控制对此环境中的AEM Sites创作功能的访问。 此产品配置文件中的用户将成为AEM Sites内容创作AEM组的成员，该组是在AEM中自动创建的。 应在AEM中使用所需的访问级别配置AEM组权限。</li><br>
-                <li>如果默认服务保持选中状态
+                <li>旨在控制对此环境中 AEM Sites 作者功能的访问。此产品配置文件中的用户将是 AEM Sites 内容作者 AEM 组的成员，该组会在 AEM 中自动创建。AEM 组权限应在 AEM 中配置为所需的访问级别。</li><br>
+                <li>如果仍选择默认服务
                     <ul>
-                        <li>此产品配置文件中的用户也将成为“AEM Sites内容管理器 — 服务”AEM组的成员。</li>
+                        <li>此产品配置文件中的用户也将成为“AEM Sites 内容管理员 - 服务”AEM 组的成员。</li>
                       <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
                         <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
                     </ul>
@@ -99,14 +99,14 @@ AEM组织级产品实例内有一个名为AEM组织级报告者的产品配置�
     </tr>
     <tr>
         <td></td>
-        <td>AEM管理员 — 作者 — 项目<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM管理员</td>
+        <td>AEM 管理员 - 作者 - 程序 <code>id</code> - 环境 <code>id</code></td>
+        <td>AEM 管理员</td>
         <td>
             <ul>
-                <li>旨在实现对AEM创作和发布环境功能的无限制访问。 此产品配置文件中的用户将成为在AEM中自动创建的AEM Administrators创作AEM组的成员。</li><br>
-                <li>如果默认服务保持选中状态
+                <li>旨在不受限制地访问 AEM 作者和发布环境功能。此产品配置文件中的用户将成为 AEM 中自动创建的 AEM 管理员作者 AEM 组的成员。</li><br>
+                <li>如果仍选择默认服务
                     <ul>
-                        <li>此产品配置文件中的用户也将成为“AEM管理员 — 服务”AEM组的成员</li>
+                        <li>此产品配置文件中的用户也将成为“AEM 管理员 - 服务”AEM 组的成员</li>
                     </ul>
                 </li>
             </ul>
@@ -114,14 +114,14 @@ AEM组织级产品实例内有一个名为AEM组织级报告者的产品配置�
     </tr>
     <tr>
         <td></td>
-        <td>AEM用户 — 作者 — 项目<code>id</code> — 环境 <code>id</code></td>
+        <td>AEM 用户 - 作者 - 程序 <code>id</code> - 环境 <code>id</code></td>
         <td>AEM 用户</td>
         <td>
             <ul>
-                <li>旨在提供对极其有限的AEM创作环境功能的访问。 此产品配置文件中的用户将成为在AEM中自动创建的“参与者”AEM组的成员</li><br>
-                <li>如果默认服务保持选中状态
+                <li>旨在对 AEM 作者环境功能进行非常有限的访问。此产品配置文件中的用户将成为 AEM 中自动创建的“投稿人”AEM 组的成员</li><br>
+                <li>如果仍选择默认服务
                     <ul>
-                        <li>此产品配置文件中的用户也将成为“AEM用户 — 服务”AEM组的成员</li>
+                        <li>此产品配置文件中的用户也将成为“AEM 用户 - 服务”AEM 组的成员</li>
                     </ul>
                 </li>
             </ul>
@@ -129,51 +129,51 @@ AEM组织级产品实例内有一个名为AEM组织级报告者的产品配置�
     </tr>
     <tr>
         <td></td>
-        <td>AEM Reporters — 作者 — 项目<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM记者</td>
+        <td>AEM 报告器 - 作者 - 程序 <code>id</code> - 环境 <code>id</code></td>
+        <td>AEM 报告器</td>
         <td>
             <ul>
-                <li>当前未使用，但将来可能会提供对此环境的创作层的相关报表信息的访问权限。</li>
+                <li>目前未使用，但将来可能会提供对此环境的作者层的报告信息的访问权限。</li>
             </ul>
         </td>
     </tr>
     <tr>
         <td></td>
-        <td>AEM Assets Collaborator — 作者 — 项目<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM Assets协作者用户</td>
+        <td>AEM Assets 协作者 - 作者 - 程序 <code>id</code> - 环境 <code>id</code></td>
+        <td>AEM Assets 协作者用户</td>
         <td>
         <ul>
-                <li>旨在提供对DAM的只读访问权限。 此产品配置文件中的用户将成为在AEM中自动创建的“参与者”AEM组的成员。
+                <li>用于对 DAM 进行只读访问。此产品配置文件中的用户将成为 AEM 中自动创建的“投稿人”AEM 组的成员。
                 </li>
                 <li>
-                此外，它还提供创建Adobe Express变体的资源权限。
+                此外，它还提供 Adobe Express 权限，以创建资产变体。
                 </li>
           <ul>
     </tr>
     <tr>
         <td></td>
-        <td>AEM Assets超级用户 — 作者 — 项目<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM Assets Power Users</td>
+        <td>AEM Assets 高级用户 - 作者 - 程序 <code>id</code> - 环境 <code>id</code></td>
+        <td>AEM Assets 高级用户</td>
 <td>
         <ul>
-                <li>旨在提供对DAM的只读访问权限。 此产品配置文件中的用户将成为在AEM中自动创建的“参与者”AEM组的成员。
+                <li>用于对 DAM 进行只读访问。此产品配置文件中的用户将成为 AEM 中自动创建的“投稿人”AEM 组的成员。
                 </li>
                 <li>
-                此外，它还提供创建Adobe Express变体的资源权限。
+                此外，它还提供 Adobe Express 权限，以创建资产变体。
                 </li>
           <ul>
 </td>
     </tr>
     <tr>
         <td></td>
-        <td>AEM Forms Content Managers — 作者 — 项目<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM Forms Content Managers</td>
+        <td>AEM Forms 内容管理员 - 作者 - 程序 <code>id</code> - 环境 <code>id</code></td>
+        <td>AEM Forms 内容管理员</td>
         <td>
             <ul>
-                <li>旨在控制对此环境中的AEM Forms创作功能的访问。 此产品配置文件中的用户将成为AEM Forms forms-users AEM组的成员，该组是在AEM中自动创建的。</li><br>
-                <li>如果默认服务保持选中状态
+                <li>旨在控制对此环境中 AEM Forms 作者功能的访问。此产品配置文件中的用户将成为 AEM Forms 表单用户 AEM 组的成员，该组在 AEM 中自动创建。</li><br>
+                <li>如果仍选择默认服务
                     <ul>
-                        <li>此产品配置文件中的用户也将成为“AEM Forms内容管理器 — 服务”AEM组的成员。</li>
+                        <li>此产品配置文件中的用户也将成为“AEM Forms 内容管理员 - 服务”AEM 组的成员。</li>
                     </ul>
                 </li>
             </ul>
@@ -181,14 +181,14 @@ AEM组织级产品实例内有一个名为AEM组织级报告者的产品配置�
     </tr>
     <tr>
         <td></td>
-        <td>AEM Forms开发人员 — 作者 — 计划<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM Forms开发人员</td>
+        <td>AEM Forms 开发人员 - 作者 - 程序 <code>id</code>  - 环境 <code>id</code></td>
+        <td>AEM Forms 开发人员</td>
         <td>
             <ul>
-                <li>旨在控制对此环境中的AEM Forms创作功能的访问。 此产品配置文件中的用户将成为AEM Forms forms-power-users AEM组的成员，该组是在AEM中自动创建的。 除了正常的表单创作任务外，这些用户还有权上传XDP和创作表单数据模型。</li><br>
-                <li>如果默认服务保持选中状态
+                <li>旨在控制对此环境中 AEM Forms 作者功能的访问。此产品配置文件中的用户将成为 AEM Forms 表单高级用户 AEM 组的成员，该组在 AEM 中自动创建。除了正常的表单创作任务外，这些用户还有权上传 XDP 和作者表单数据模型。</li><br>
+                <li>如果仍选择默认服务
                     <ul>
-                        <li>此产品配置文件中的用户还将是“AEM Forms开发人员 — 服务”AEM组的成员。</li>
+                        <li>此产品配置文件中的用户也将成为“AEM Forms 开发人员 - 服务”AEM 组的成员。</li>
                     </ul>
                 </li>
             </ul>
@@ -196,14 +196,14 @@ AEM组织级产品实例内有一个名为AEM组织级报告者的产品配置�
     </tr>
     <tr>
         <td></td>
-        <td>AEM Forms Communications Service用户 — 作者 — 项目<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM Forms Communications Service用户</td>
+        <td>AEM Forms 通信服务用户 - 作者 - 程序 <code>id</code>  - 环境 <code>id</code></td>
+        <td>AEM Forms 通信服务用户</td>
         <td>
             <ul>
-                <li>旨在控制对此环境中的AEM Forms Communications Services功能的访问。 此产品配置文件中的用户将成为AEM Forms forms-users AEM组的成员，该组是在AEM中自动创建的。</li><br>
-                <li>如果默认服务保持选中状态
+                <li>旨在控制对此环境中的 AEM Forms 通信服务功能的访问。此产品配置文件中的用户将成为 AEM Forms 表单用户 AEM 组的成员，该组在 AEM 中自动创建。</li><br>
+                <li>如果仍选择默认服务
                     <ul>
-                        <li>此产品配置文件中的用户也将成为“AEM Forms Communications Service用户 — 服务”AEM组的成员。</li>
+                        <li>此产品配置文件中的用户也将成为“AEM Forms 通信服务用户 - 服务”AEM 组的成员。</li>
                     </ul>
                 </li>
             </ul>
@@ -211,14 +211,14 @@ AEM组织级产品实例内有一个名为AEM组织级报告者的产品配置�
     </tr>
     <tr>
         <td>AEM 发布</td>
-        <td>AEM用户 — 发布 — 项目<code>id</code> — 环境 <code>id</code></td>
+        <td>AEM 用户 - 发布 - 程序 <code>id</code>  - 环境 <code>id</code></td>
         <td>AEM 用户</td>
         <td>
             <ul>
-                <li>旨在提供对极其有限的AEM创作环境功能的访问。 此产品配置文件中的用户将成为在AEM中自动创建的“contrib”AEM组的成员</li><br>
-                <li>如果默认服务保持选中状态
+                <li>旨在对 AEM 作者环境功能进行非常有限的访问。此产品配置文件中的用户将成为 AEM 中自动创建的“投稿人”AEM 组的成员</li><br>
+                <li>如果仍选择默认服务
                     <ul>
-                        <li>此产品配置文件中的用户也将成为“AEM用户 — 服务”AEM组的成员。</li>
+                        <li>此产品配置文件中的用户也将成为“AEM 用户 - 服务”AEM 组的成员</li>
                     </ul>
                 </li>
             </ul>
@@ -226,24 +226,24 @@ AEM组织级产品实例内有一个名为AEM组织级报告者的产品配置�
     </tr>
     <tr>
         <td></td>
-        <td>AEM记者 — 发布 — 项目<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM记者</td>
+        <td>AEM 报告器 - 发布 - 程序 <code>id</code>  - 环境 <code>id</code></td>
+        <td>AEM 报告器</td>
         <td>
             <ul>
-                <li>当前未使用，但将来可能会提供对此环境的发布层的相关报表信息的访问权限。</li>
+                <li>目前未使用，但将来可能会提供对此环境的发布层的报告信息的访问权限。</li>
             </ul>
         </td>
     </tr>
    <tr>
         <td></td>
-        <td>AEM Forms Communications Service用户 — 发布 — 项目<code>id</code> — 环境 <code>id</code></td>
-        <td>AEM Forms Communications Service用户</td>
+        <td>AEM Forms 通信服务用户 - 发布 - 程序 <code>id</code> - 环境 <code>id</code></td>
+        <td>AEM Forms 通信服务用户</td>
         <td>
             <ul>
-                <li>旨在控制对此环境中的AEM Forms Communications Services功能的访问。 此产品配置文件中的用户将成为AEM Forms forms-users AEM组的成员，该组是在AEM中自动创建的。</li><br>
-                <li>如果默认服务保持选中状态
+                <li>旨在控制对此环境中的 AEM Forms 通信服务功能的访问。此产品配置文件中的用户将成为 AEM Forms 表单用户 AEM 组的成员，该组在 AEM 中自动创建。</li><br>
+                <li>如果仍选择默认服务
                     <ul>
-                        <li>此产品配置文件中的用户也将成为“AEM Forms Communications Service用户 — 服务”AEM组的成员。</li>
+                        <li>此产品配置文件中的用户也将成为“AEM Forms 通信服务用户 - 服务”AEM 组的成员。</li>
                     </ul>
                 </li>
             </ul>
@@ -251,15 +251,15 @@ AEM组织级产品实例内有一个名为AEM组织级报告者的产品配置�
     </tr>
 </table>
 
-请注意，默认情况下，每个产品配置文件都启用了一个关联的产品配置文件服务。 除非您有复杂的访问要求，否则建议仅选择默认服务。 将在AEM中使用命名约定`<Product Profile Prefix> - Service`创建相应的AEM组(例如，**AEM Sites Content Managers - Service**)，父产品配置文件中的用户将自动成为该相应AEM组的成员。
+请注意，每个产品配置文件都默认启用关联的产品配置文件服务。除非您有复杂的访问要求，否则建议仅选择默认服务。系统会在 AEM 中创建一个相应的 AEM 组，命名惯例为 `<Product Profile Prefix> - Service` （例如，**AEM Sites 内容管理员 - 服务**），并且上层产品配置文件中的用户将自动成为该相应 AEM 组的成员。
 
-与该服务相关联的AEM中的AEM组将具有一组聚合的用户，这些用户存在于该服务的所有关联产品配置文件中，以用于该环境层组合。
+AEM 中与该服务关联的 AEM 组将拥有该环境层组合中该服务的所有关联产品配置文件中存在的用户聚合集。
 
 ![服务](/help/onboarding/assets/services.png)
 
-下图显示了反映AEM Sites Content Manager创作层产品配置文件和服务的AEM组。
+以下图像表示反映 AEM Sites 内容管理器作者层产品配置文件和服务的 AEM 组。
 
-![AEM组到服务的映射](/help/onboarding/assets/profile-to-service-mapping.png)
+![AEM 组到服务映射](/help/onboarding/assets/profile-to-service-mapping.png)
 
 >[!NOTE]
 >

@@ -2,7 +2,7 @@
 source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
 source-wordcount: '1323'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 # 代码片段 {#snippets}
@@ -90,7 +90,7 @@ ht-degree: 88%
    <tr>
     <td>对可重复面板字段执行数学运算 </td>
     <td>OOTB 数学函数可以应用于可重复面板字段，以使用规则编辑器执行诸如求和、平均值等功能。需要提供两个参数：第一个指定包含字段的可重复面板，第二个指定对应可重复面板中的字段。 </td>
-    <td>可以使用自定义函数对可重复面板字段执行数学运算。您还可以使用规则编辑者直接对可重复面板的字段应用数学函数。
+    <td>可以使用自定义函数对可重复面板字段执行数学运算。您还可以使用规则编辑器直接对可重复面板的字段应用数学函数。
    </td>
    </tr>
       <tr>
@@ -115,8 +115,8 @@ ht-degree: 88%
    </tr>
    <tr>
    <td>在面板之间导航</td>
-   <td> 提供了<b>下一个按钮</b>和<b>上一个按钮</b>组件以便在面板之间导航。 放置在容器中的导航按钮可对其子元素起作用</td>
-   <td> 在规则编辑器中可以使用面板</b>中的<b>导航规则，该规则允许用户创建用于在面板的子项之间导航的规则。
+   <td> <b>下一个按钮</b>和<b>上一个按钮</b>组件用于在面板之间进行导航。放置在容器内的导航按钮适用于其子元素</td>
+   <td> <b>面板导航</b>规则在规则编辑器中可用，以便用户创建在面板子任务之间导航的规则。
    </td>
    </tr>
    </tr>
@@ -125,13 +125,13 @@ ht-degree: 88%
   <table>
   </tbody>
 
-## 规则编辑者另见 {#see-also-rule-editor}
+## 规则编辑器另见 {#see-also-rule-editor}
 
 * [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
-* [基于核心组件的自适应Form规则编辑者中的操作符类型和事件](/help/forms/rule-editor-core-components-events-operators.md)
+* [基于核心组件的自适应Form规则编辑器中的操作符类型和事件](/help/forms/rule-editor-core-components-events-operators.md)
 * [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
-* [基于核心组件的自适应Form规则编辑者的不同用例](/help/forms/rule-editor-core-components-usecases.md)
-* [规则编辑者各版本之间的差异](/help/forms/rule-editor-core-components-difference-tables.md)
+* [基于核心组件的自适应Form规则编辑器的不同用例](/help/forms/rule-editor-core-components-usecases.md)
+* [规则编辑器各版本之间的差异](/help/forms/rule-editor-core-components-difference-tables.md)
 * [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
 * [在基于核心组件的表单的可视规则编辑器中调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [基于核心组件的自适应Forms自定义函数介绍](/help/forms/create-and-use-custom-functions.md)
@@ -187,16 +187,16 @@ ht-degree: 88%
 >
 >通用编辑器与 [IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不兼容。
 >
->如果要使用通用编辑器，您必须：
+>如果您想使用通用编辑器，则必须：
 >
->* 未启用IP允许列表。
->* [运行您自己的Universal Editor服务实例。](/help/implementing/universal-editor/local-dev.md)
+>* 不启用 IP 允许列表。
+>* [运行您自己的通用编辑器服务实例。](/help/implementing/universal-editor/local-dev.md)
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 
 >[!TIP]
 >
->您是 Dynamic Media 的新手吗？如需快速、全面地了解动态媒体，请参阅 [使用动态媒体](/help/assets/dynamic-media/dynamic-media.md)。
+>您是 Dynamic Media 的新手吗？如需快速、全面地了解 Dynamic Media，请参阅 [使用 Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)。
 
 ## 另请参阅 Dynamic Media {#see-also-dm}
 
@@ -215,7 +215,7 @@ ht-degree: 88%
 >* 使用[智能裁剪](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video)自动裁剪视频。
 >
 >* 传递[交互式 3D 体验](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video)。
->* 其他 [Dynamic Media 资源库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
+>* 其他 [Dynamic Media 资产库](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use)。
 
 ## 记录支持工单 {#support-ticket}
 

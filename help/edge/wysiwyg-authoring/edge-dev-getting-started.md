@@ -1,6 +1,6 @@
 ---
-title: 使用Edge Delivery Services进行所见即所得创作的开发人员入门指南
-description: 本指南将帮助您让一个使用 Edge Delivery Services 和 Universal Editor 创作内容的新 Adobe Experience Manager 网站投入正常运转
+title: 使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南
+description: 本指南将帮助您使用 Edge Delivery Services 和用于所见即所得内容创作的通用编辑器，启动并运行新的 Adobe Experience Manager 网站。
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
@@ -12,9 +12,9 @@ ht-degree: 100%
 ---
 
 
-# 使用Edge Delivery Services进行所见即所得创作的开发人员入门指南 {#edge-dev-getting-started}
+# 使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南 {#edge-dev-getting-started}
 
-本指南将帮助您让一个使用 Edge Delivery Services 和 Universal Editor 创作内容的新 Adobe Experience Manager 网站投入正常运转
+本指南将帮助您使用 Edge Delivery Services 和用于所见即所得内容创作的通用编辑器，启动并运行新的 Adobe Experience Manager 网站。
 
 ## 先决条件 {#prerequisites}
 
@@ -28,15 +28,15 @@ ht-degree: 100%
 
 Edge Delivery Services 基于块的概念。AEM 附带一个全面的预定义的块库，可扩展它以满足您的项目需求。在 GitHub 中管理 Edge Delivery Services 项目的代码。
 
-### 区块 {#blocks}
+### 块 {#blocks}
 
-区块是 Edge Delivery Services 交付页面最基本的部分。区块封装了用于驱动内容页的逻辑组件的样式和代码。
+块是 Edge Delivery Services 传递页面最基本的部分。块封装了用于驱动内容页的逻辑组件的样式和代码。
 
-AEM 提供标准区块，作为项目样板中产品的一部分。这些区块包括标题、文本、图像、链接、列表等。
+AEM 提供标准块，作为项目样板中产品的一部分。这些块包括标题、文本、图像、链接、列表等。
 
 >[!TIP]
 >
->请参阅 Edge Delivery Services 文档中的[构建部分](/help/edge/developer/block-collection.md)，了解有关区块以及如何开发 Edge Delivery Services 的更多详细信息。
+>请参阅 Edge Delivery Services 文档中的[构建部分](/help/edge/developer/block-collection.md)，了解有关块以及如何开发 Edge Delivery Services 的更多详细信息。
 
 ### Edge Delivery Services 和 GitHub {#github-edge}
 
@@ -44,13 +44,13 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 您的作者可以使用基于文档的创作或使用 Universal Editor 在 AEM 中创建内容。无论作者如何创建其内容，开发人员都可以使用 GitHub 中的 CSS 和 JavaScript 自定义网站的功能。
 
-从内容预览到生产，将自动为您的每个分支创建网站。您放入 GitHub 存储库中的每个资源都在您的网站上可供使用，无需构建过程。
+从内容预览到生产，将自动为您的每个分支创建网站。您放入 GitHub 存储库中的每个资产都在您的网站上可供使用，无需构建过程。
 
 >[!TIP]
 >
->请参阅 Edge Delivery Services 文档中的[构建部分](/help/edge/developer/block-collection.md)，了解有关区块以及如何开发 Edge Delivery Services 的更多详细信息。
+>请参阅 Edge Delivery Services 文档中的[构建部分](/help/edge/developer/block-collection.md)，了解有关块以及如何开发 Edge Delivery Services 的更多详细信息。
 
-## 开始使用所见即所得创作和Edge Delivery Services {#getting-started}
+## 所见即所得创作和 Edge Delivery Services 快速入门 {#getting-started}
 
 一旦满足[先决条件](#prerequisites)并[选择使用 Universal Editor](#editor-choice)，即可开始您自己的项目。
 
@@ -126,7 +126,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 >
 >要使用 Universal Editor 编辑您的站点，您必须使用基于 Chromium 的浏览器。
 
-1. 从 GitHub 下载最新的使用 Edge Delivery Services sites模板进行所见即所得创作：[`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. 在 [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) 从 GitHub 下载最新的所见即所得创作和 Edge Delivery Services 网站模板。
 
 1. 登录到您的 AEM as a Cloud Service 创作实例，导航到“站点”控制台，然后点击或单击&#x200B;**创建** -> **从模板创建站点**。
 
@@ -136,7 +136,7 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
    ![导入模板](assets/edge-dev-getting-started/site-templates.png)
 
-1. 上传从 GitHub 下载的 Edge Delivery Services WYSIWYG 制作网站模板。
+1. 上传您从 GitHub 下载的带有 Edge Delivery Services 网站模板的所见即所得创作。
 
    * 该模板只能上传一次。上传后，即可重复使用，以创建其他站点。
 
@@ -188,10 +188,10 @@ Edge Delivery 利用 GitHub，因此您可直接从您的 GitHub 存储库管理
 
 ## 后续步骤 {#next-steps}
 
-现在，您已经有了一个可以使用 Edge Delivery Services 进行所见即所得创作的项目，可以开始创建和设计自己的区块了。
+现在，您已经拥有了一个带有 Edge Delivery Services 项目的有效的所见即所得创作环境，您可以开始创建和设计自己的块了。
 
-请参阅 [创建经过检测可与 Universal Editor 结合使用的区块](/help/edge/wysiwyg-authoring/create-block.md)指南以了解更多信息。
+有关更多信息，请参阅[创建用于通用编辑器的块](/help/edge/wysiwyg-authoring/create-block.md)指南。
 
 >[!TIP]
 >
->有关创建新的Edge Delivery Services项目的端到端演练，该项目支持使用 AEM as a Cloud Service 作为内容源进行所见即所得创作，请查看[本次 AEM GEM 网络研讨会。](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>有关创建新的 Edge Delivery Services 项目的端到端演练，该项目支持使用 AEM as a Cloud Service 作为内容源进行所见即所得创作，请查看[此 AEM GEM 网络研讨会。](https://experienceleague.adobe.com/zh-hans/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

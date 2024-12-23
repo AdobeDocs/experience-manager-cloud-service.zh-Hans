@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 73%
 
 为了在具有 Edge Delivery Services 的 AEM 项目中使用电子表格创建映射，您需要使用最新的站点模板创建站点。
 
-有关详细信息，请参阅文档[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)。
+请参阅文档[使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，以了解更多信息。
 
 ## 创建电子表格 {#spreadsheet}
 
@@ -137,7 +137,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
    ![paths.json 文件](assets/tabular-data/tabular-data-paths-json.png)
 
-1. 添加一行以将新电子表格映射到`redirects.json`资源。
+1. 添加一行以将新电子表格映射到`redirects.json`资产。
 
    ```json
    {
@@ -150,7 +150,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
    >[!NOTE]
    >
-   >此`paths.json`条目基于使用表格数据创建重定向的示例。 请确保更新适合您正在创建的[类型电子表格的路径。](#other)
+   >该 `paths.json` 条目基于使用表格数据创建重定向的示例。确保更新与[您正在创建的电子表格类型](#other)相对应的路径。
 
 1. 单击“**提交更改...**”将更改保存到 `main`。
 
@@ -174,7 +174,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 >[!TIP]
 >
->有关路径映射的详细信息，请参阅文档[Edge Delivery Services的路径映射。](/help/edge/wysiwyg-authoring/path-mapping.md)
+>有关路径映射的更多信息，请参阅文档 [Edge Delivery Services 的路径映射。](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## 其他电子表格类型 {#other}
 
@@ -193,7 +193,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 * 配置：`/.helix/config.json`
 * 标头：`/.helix/headers.json`
 * 元数据：`/metadata.json`
-* 分类：有关详细信息，请参阅文档[管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)。
+* 分类：请参阅文档[管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)，以了解更多信息。
 
 此外，您还可以用任意列[创建您自己的电子表格](#own-spreadsheet)供您自己使用。
 
@@ -201,7 +201,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 >
 >您无需创建电子表格来管理带有 Edge Delivery Services 项目的 AEM as a Cloud Service 的索引。
 >
->如果您想创建自己的索引，[请遵循此文档](https://www.aem.live/developer/indexing#setting-up-more-index-configurations) 创建你自己的`helix-query.yaml`文件。
+>如果您想创建自己的索引，[请遵循此文档](https://www.aem.live/developer/indexing#setting-up-more-index-configurations) 创建您自己的`helix-query.yaml`文件。
 
 ## 创建您自己的电子表格 {#own-spreadsheet}
 
