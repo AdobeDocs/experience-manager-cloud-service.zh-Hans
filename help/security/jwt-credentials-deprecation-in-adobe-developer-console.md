@@ -5,9 +5,9 @@ exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
 source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -62,32 +62,32 @@ AEM 客户使用 AEM 配置与许多其他 Adobe 解决方案的集成。例如�
 
 ## 自动生成的项目常见问题解答 {#autogen-projects-faqs}
 
-本节提供了有关AEM as a Cloud Service中自动生成的项目的JWT凭据弃用的最常见问题解答。
+本节提供有关 AEM as a Cloud Service 中自动生成项目 JWT 凭据弃用的最常见问题解答。
 
-**如何自动生成哪些项目？**
+**如何知道哪些项目是自动生成的？**
 
-导航到Adobe Developer Console | “项目”部分。  AEM as a Cloud Service自动生成的项目将有一个带有“自动生成”标识符的锁图标。  自动生成的项目采用AEM-p#####-e####格式，由技术帐户用户创建。
+导航至“Adobe Developer Console | 项目”部分。AEM as a Cloud Service 自动生成的项目将有一个带有“自动生成”标识符的锁定图标。自动生成的项目遵循 AEM-p#####-e###### 格式，由技术帐户用户创建。
 
 ![自动生成的项目](/help/security/assets/jwt-alert.png)
 
-**如果我们自动生成的项目遇到问题，该怎么办？**
+**如果我们自动生成的项目遇到问题该怎么办？**
 
-联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 
 
-**我是否应该迁移自动生成的项目？**
+**应该继续迁移我们自动生成的项目吗？**
 
-无需执行任何操作，因为Adobe将为具有AEM发行版17258（2024年8月）及更高版本的环境迁移代表您自动生成的环境。
+无需进行任何操作，因为 Adobe 将代表您迁移 AEM 版本 17258（2024 年 8 月发行）及更高版本环境中的自动生成项目。
 
-**迁移自动生成项目的时间表是什么？**
+**迁移自动生成项目的时间线是什么？**
 
-Adobe将从2025年第一季度开始采用分阶段迁移方法，从开发环境开始。
+Adobe 将于 2025 年第一季度启动分阶段迁移方法，从开发环境开始迁移。
 
-**如果我们的AEM版本早于AEM发行说17258（2024年8月），那么我们的AEM as a Cloud Service实例会受到什么影响？**
+**如果我们的 AEM 版本早于 AEM 版本 17258（2024 年 8 月发行），AEM as a Cloud Service 实例将受到怎样的影响？**
 
-如果自动生成的项目集成在2025年6月之前未迁移到OAuth，则将停止工作。
+如果自动生成的项目集成未在 2025 年 6 月之前迁移到 OAuth，则将停止工作。
 
-为确保顺利过渡，客户应立即联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，并开始更新到[最新AEM版本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)的流程。 这将为回归测试提供充足的时间，并允许Adobe高效地管理项目的迁移。
+要确保顺利过渡，客户应立即联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，开始更新至[最新的 AEM 版本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)。这将为回归测试提供充足的时间，并允许 Adobe 有效地管理项目的迁移。
 
-**我是否可以升级到支持的OAuth版本而不升级我的AEM as a Cloud Service AEM版本？**
+**是否可以在不升级 AEM as a Cloud Service AEM 版本的情况下升级到受支持的 OAuth 版本？**
 
-不会。为确保顺利过渡，客户应立即联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，并开始更新到[最新AEM版本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)的流程。 这将为回归测试提供充足的时间，并允许Adobe高效地管理项目的迁移。
+不行。要确保顺利过渡，客户应立即联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)，开始更新至[最新的 AEM 版本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest)。这将为回归测试提供充足的时间，并允许 Adobe 有效地管理项目的迁移。
