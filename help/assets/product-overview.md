@@ -3,9 +3,9 @@ title: Content Hub 概览
 description: 了解有关 Content Hub 的更多信息、其主要优势、如何访问它以及如何围绕 Content Hub 中的可用选项提供反馈。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '704'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 96%
 
 >[!AVAILABILITY]
 >
->Content Hub指南现在提供了PDF格式。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>Content Hub 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
 >
->[!BADGE Content Hub指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+>[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub 是 Experience Manager Assets as a Cloud Service 的一部分，旨在为组织及其业务合作伙伴提供对品牌内容的普及化访问。它侧重于大规模分发资产以进行激活，并创建品牌内容变体，以提高营销敏捷度。
 

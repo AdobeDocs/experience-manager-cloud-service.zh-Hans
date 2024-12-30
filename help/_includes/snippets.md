@@ -1,15 +1,15 @@
 ---
 source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1323'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 # 代码片段 {#snippets}
 
 ## Headless 试用推广 {#headless-trials-promotion}
 
-[![通过 30 天试用了解我们的 Headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
+[![通过 30 天试用了解我们的 Headless CMS](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang-zh-hans)
 
 ## Edge Delivery Services 创作 {#edge-delivery-authoring}
 
@@ -53,7 +53,7 @@ ht-degree: 95%
 * [提交到 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
 * [将自适应表单连接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
-* [将自适应表单连接到Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
+* [将自适应表单连接到 Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## 另请参阅 {#see-more-forms-eds}
@@ -133,7 +133,7 @@ ht-degree: 95%
 * [基于核心组件的自适应Form规则编辑器的不同用例](/help/forms/rule-editor-core-components-usecases.md)
 * [规则编辑器各版本之间的差异](/help/forms/rule-editor-core-components-difference-tables.md)
 * [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
-* [在基于核心组件的表单的可视规则编辑器中调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
+* [在可视化规则编辑器中针对基于核心组件的表单调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [基于核心组件的自适应Forms自定义函数介绍](/help/forms/create-and-use-custom-functions.md)
 * [为基于核心组件的自适应Form创建自定义函数](/help/forms/custom-function-core-component-create-function.md)
 * [自定义函数中的范围对象](/help/forms/custom-function-core-component-scope-function.md)
@@ -149,10 +149,10 @@ ht-degree: 95%
 
 ## Marketo Engage{#marketo-engage-see-also}
 
-* [将Marketo Engage与AEM Forms集成](/help/forms/integrate-form-to-marketo-engage.md)
-* [配置新表单以与Marketo Engage集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-* [为现有的自适应Forms配置Marketo Engage数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
-* [配置提交操作以Marketo Engage现有表单](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [将 Marketo Engage 与 AEM Forms 集成](/help/forms/integrate-form-to-marketo-engage.md)
+* [配置新表单以与 Marketo Engage 集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [为现有自适应表单配置 Marketo Engage 数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [将现有表单的提交操作配置到 Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Cloud Manager IP 允许列表和前端管道 {#allowlist-frontend-pipeline}
 
@@ -223,7 +223,7 @@ ht-degree: 95%
 
 要记录支持工单，您必须首先在 Cloud Manager 中注册您的 Edge Delivery 站点。建议所有 AEM as a Cloud Service 用户使用 Cloud Manager 注册您的网站，[这会带来许多好处](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。如果您尚未注册您的站点，请参阅 [Cloud Manager 文档](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)了解详情。
 
-**要记录支持票证：**
+**若要记录支持工单：**
 
 1. [按照标准支持流程](https://experienceleague.adobe.com/?support-tab=home#support)创建工单。
 1. 在该工单的标题中添加 **Edge Delivery**。

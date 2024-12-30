@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: db661281831dcb07491dca16e73e835b487814a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '495'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -55,6 +55,6 @@ ht-degree: 96%
 
 1. 单击&#x200B;**验证**。
 
-验证存储库后，其在Edge Delivery站点表中的状态会更新。 内部带有白色复选标记的绿色圆圈表示状态。
+在验证存储库后，它在 Edge Delivery 网站表中的状态就会更新。内部带有白色复选标记的绿色圆圈表示状态。
 
 在同一个表中，单击![Edge Delivery 网站信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)，以查看网站详情。此信息包括经过验证的存储库 URL，以及预览和生产网站 URL。

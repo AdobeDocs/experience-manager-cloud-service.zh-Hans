@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
 source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1284'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -83,24 +83,24 @@ ht-degree: 78%
 
 ## 导入电子表格数据 {#importing}
 
-除了在AEM页面编辑器中编辑电子表格之外，您还可以从CSV文件导入数据。
+除了在 AEM 页面编辑器中编辑电子表格之外，您还可以从 CSV 文件导入数据。
 
-1. 在AEM中编辑电子表格时，点按或单击屏幕左上角的&#x200B;**上传**&#x200B;按钮。
-1. 在下拉菜单中，选择您希望如何导入数据。
-   * **替换Doc**，将整个电子表格的内容替换为您要上载的CSV文件的内容。
-   * **附加到文档**&#x200B;以将要上载的CSV文件的数据附加到现有的电子表格内容。
-1. 在打开的对话框中，选择您的CSV文件，然后点按或单击&#x200B;**打开**。
+1. 在 AEM 中编辑电子表格时，点击或单击屏幕左上角的&#x200B;**上传**&#x200B;按钮。
+1. 在下拉菜单中，选择您想要如何导入数据。
+   * 使用&#x200B;**替换文档**&#x200B;功能将整个电子表格的内容替换为您要上传的 CSV 文件的内容。
+   * 使用&#x200B;**附加到文档**&#x200B;功能将您要上传的 CSV 文件的数据附加到现有电子表格内容中。
+1. 在打开的对话框中，选择您的 CSV 文件，然后点击或单击&#x200B;**打开**。
 
-处理导入时，将打开一个对话框。 完成后，CSV文件中的数据将添加到电子表格或替换该电子表格的内容。 如果遇到任何错误（如列不匹配），将报告这些错误，以便您更正CSV文件。
+在导入过程中会打开一个对话框。完成后，CSV 文件中的数据将会被添加到电子表格中或替换电子表格的内容。如果遇到任何错误（例如列不匹配），则会报告这些错误，以便更正 CSV 文件。
 
 >[!NOTE]
 >
->* CSV文件中的标题必须与电子表格中的列完全匹配。
->* 导入整个CSV不会修改列标题，只会修改内容行。
->* 如果需要更新列，则必须在执行CSV导入之前在AEM页面编辑器中执行该操作。
->* CSV文件的导入大小不能大于10 MB。
+>* CSV 文件中的标题必须与电子表格中的列完全匹配。
+>* 导入整个 CSV 不会修改列标题，只会修改内容行。
+>* 如果需要更新列，则必须在执行 CSV 导入之前在 AEM 页面编辑器中执行此操作。
+>* 导入的 CSV 文件不能大于 10 MB。
 
-根据您选择的`mode`，您还可以使用CSV和cURL命令`create`、`replace`或`append`到电子表格，如下所示。
+根据您选择的 `mode`，您还可以使用类似于以下内容的 CSV 和 cURL 命令 `create`、`replace` 或 `append` 到电子表格。
 
 ```text
 curl --request POST \
@@ -115,13 +115,13 @@ curl --request POST \
   --form mode=append
 ```
 
-调用将返回一个HTML页面，其中包含有关作业ID的信息。
+该调用会返回一个包含有关作业 ID 的信息的 HTML 页面。
 
 ```text
 Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
 ```
 
-[您可以使用&#x200B;**作业**&#x200B;控制台](/help/operations/asynchronous-jobs.md)查看作业的状态，或使用返回的ID进行查询。
+[您可以使用&#x200B;**作业**&#x200B;控制台](/help/operations/asynchronous-jobs.md)来查看作业的状态，或者使用返回的 ID 进行查询。
 
 ```text
 https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1

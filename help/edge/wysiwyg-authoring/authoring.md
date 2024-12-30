@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 ![在通用编辑器中添加和排列块](assets/blocks.png)
 
-然后，可以在属性面板中配置块的详细信息。
+然后可以在“属性”面板中配置块的详细信息。
 
 ![配置块属性](assets/block-properties.png)
 

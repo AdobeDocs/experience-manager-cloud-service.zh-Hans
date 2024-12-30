@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service 中的 Cloud Manager 允许您为项目启用 Edge Delive
 
 如果您已将 Edge Delivery Services 作为 Adobe Experience Manager Sites 的一部分获得许可，您可以直接在 Cloud Manager 中为您的网站启用 Edge Delivery Services，并[通过引导式的自助服务体验快速上线](/help/implementing/cloud-manager/managing-code/private-repositories.md)。
 
-此外，您可以在确保关键工作流程一致性的同时，获得管理所有 AEM 属性的统一体验。这些工作流包括域名管理、SSL证书管理和CDN映射。
+此外，您可以在确保关键工作流程一致性的同时，获得管理所有 AEM 属性的统一体验。这些工作流包括域名管理、SSL 证书管理以及 CDN 映射。
 
 ## 使用 Adobe 推荐的 Edge Delivery Services 路径的益处 {#recommended-path-eds}
 
@@ -63,24 +63,24 @@ AEM as a Cloud Service 中的 Cloud Manager 允许您为项目启用 Edge Delive
 >* 一旦将 Edge Delivery Services 许可证应用于某个程序或从程序中移除，更改将立即生效，无需运行管道。
 
 
-## 关于Cloud Manager中的Edge Delivery待办事项列表 {#ed-todo-list}
+## 关于 Cloud Manager 中的 Edge Delivery 待办事项列表 {#ed-todo-list}
 
 <!-- &#x2460; for "1" inside circle -->
 
-Cloud Manager中的&#x200B;**Edge Delivery待办事项列表**&#x200B;是一个入门任务核对清单，旨在指导您完成入门培训、管理Edge Delivery网站直到[上线](/help/journey-onboarding/go-live-checklist.md)。
+Cloud Manager 中的 **Edge Delivery 待办事项列表**&#x200B;是一份加入任务清单，旨在引导您完成加入流程，管理您的 Edge Delivery 网站，直至[上线](/help/journey-onboarding/go-live-checklist.md)。
 
-Cloud Manager中的![Edge Delivery网站待办事项列表](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager 中的 Edge Delivery 网站待办事项列表](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 任务 | 描述 |
 | --- | --- | --- |
 | 1 | 加入产品协作渠道 | 点击&#x200B;**立即提交请求**&#x200B;向 Adobe 提交请求，为您的公司创建一个渠道。如果该渠道已经存在，您将被转到您公司的渠道。 |
-| 2 | 完成先决条件 | 请参阅[查看入门教程](https://www.aem.live/developer/tutorial)。 |
+| 2 | 完成先决条件 | 请参阅[查看快速入门教程](https://www.aem.live/developer/tutorial)。 |
 | 3 | 添加 Edge Delivery 网站 | 请参阅[添加 Edge Delivery 网站](#eds-add-site)。 |
 | 4 | 添加域 | 请参阅[添加自定义域名称](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 添加 SSL 证书 | 请参阅[添加 SSL 证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
 | 6 | 配置 Edge Delivery 网站的内容传递网络 | 请参阅[添加 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |
-| 7 | 设置推送验证 | 请参阅[为Edge Delivery站点设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
-| 8 | 上线 | 查看[上线清单](/help/edge/docs/go-live-checklist.md)。 |
+| 7 | 设置推送验证 | 请参阅[为 Edge Delivery 网站设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)。 |
+| 8 | 上线 | 请参阅[上线清单](/help/edge/docs/go-live-checklist.md)。 |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

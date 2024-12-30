@@ -5,9 +5,9 @@ exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -45,13 +45,13 @@ Adobe 建议您采用三阶段方法来开发块：
 
 ### 创建块定义和模型 {#create-block-model}
 
-1\。 在本地克隆您在[适用于WYSIWYG创作的Edge Delivery Services开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中创建的GitHub项目，并在您选择的编辑器中打开它。
+1\. 在本地克隆您在[使用 Edge Delivery Services 进行所见即所得创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)中创建的 GitHub 项目，并使用您选择的编辑器打开它。
 
 * 此处使用的 Microsoft Code 用于说明目的。
 
 ![克隆项目](assets/create-block/clone.png)
 
-2\。 编辑项目的根目录下的 `component-definition.json` 文件，为新的引用区块添加以下定义并保存该文件。
+2\. 编辑项目的根目录下的 `component-definition.json` 文件，为新的引用块添加以下定义并保存该文件。
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ Adobe 建议您采用三阶段方法来开发块：
 
 >[!ENDTABS]
 
-3\。 编辑项目的根目录下的 `component-models.json` 文件，为新的引用区块添加以下[模型定义](/help/implementing/universal-editor/field-types.md#model-structure)并保存该文件。
+3\. 编辑项目的根目录下的 `component-models.json` 文件，为新的引用块添加以下[模型定义](/help/implementing/universal-editor/field-types.md#model-structure)并保存该文件。
 
 * 请参阅文档[使用 Edge Delivery Services 项目进行所见即所得创作的内容建模](/help/edge/wysiwyg-authoring/content-modeling.md)，以获取更多关于创建内容模型时需要考虑的重要事项的信息。
 
@@ -119,7 +119,7 @@ Adobe 建议您采用三阶段方法来开发块：
 
 >[!ENDTABS]
 
-4\。 编辑项目的根目录下的 `component-filters.json` 文件，将引用区块添加到[过滤器定义](/help/implementing/universal-editor/customizing.md#filtering-components)以允许将此区块添加到任意部分并保存该文件。
+4\. 编辑项目的根目录下的 `component-filters.json` 文件，将引用块添加到[过滤器定义](/help/implementing/universal-editor/customizing.md#filtering-components)，以允许将此块添加到任意部分并保存该文件。
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ Adobe 建议您采用三阶段方法来开发块：
 
 >[!ENDTABS]
 
-5\。 使用 git 将这些更改提交到 `main` 分支。
+5\. 使用 git 将这些更改提交到 `main` 分支。
 
 * 提交到 `main` 仅用于说明目的。[遵循最佳实践](https://www.aem.live/docs/dev-collab-and-good-practices)，并对实际项目工作使用拉取请求。
 
@@ -165,7 +165,7 @@ Adobe 建议您采用三阶段方法来开发块：
 
    * 为了加载该页面，您可能需要点击或单击&#x200B;**使用 Adobe 登录**&#x200B;以在 Universal Editor 中向 AEM 进行身份验证。
 
-1. 在 Universal Editor 中，选择一个部分。在属性面板中，点按或单击&#x200B;**添加**&#x200B;图标，然后从菜单中选择新的&#x200B;**Quote**&#x200B;块。
+1. 在 Universal Editor 中，选择一个部分。在属性面板中，点击或单击&#x200B;**添加**&#x200B;图标，然后从菜单中选择新的&#x200B;**引用**&#x200B;块。
 
    * **添加**&#x200B;图标是一个加号。
    * 如果所选对象的蓝色轮廓有一个标记为&#x200B;**部分**&#x200B;的选项卡，则表明您已选择一个部分。
@@ -175,7 +175,7 @@ Adobe 建议您采用三阶段方法来开发块：
 
 1. 页面将重新加载，引用块将与 `component-definitions.json` 文件中指定的默认内容一起添加到所选部分的底部。
 
-   * 可以在就地或属性面板中作为任何其他块选择和编辑报价块。
+   * 可以像任何其他块一样，就地或在属性面板中选择和编辑引用块。
    * 将在下一步中应用样式。
 
    ![所选部分中包含新引用块的页面](assets/create-block/quote-added.png)
@@ -190,13 +190,13 @@ Adobe 建议您采用三阶段方法来开发块：
 
 现在，您已使用一个可对其应用样式的引用块。
 
-1\。 返回到您项目的编辑器。
+1\. 返回到您项目的编辑器。
 
-2\。 在 `blocks` 文件夹下创建一个 `quote` 文件夹。
+2\. 在 `blocks` 文件夹下创建一个 `quote` 文件夹。
 
 ![创建引用文件夹](assets/create-block/new-folder.png)
 
-3\。 在新的 `quote` 文件夹中，添加一个 `quote.js` 文件以通过添加以下 JavaScript 来实施区块装饰，然后保存该文件。
+3\. 在新的 `quote` 文件夹中，添加一个 `quote.js` 文件以通过添加以下 JavaScript 来实施块装饰，然后保存该文件。
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4\。 在 `quote` 文件夹中，添加一个 `quote.css` 文件以通过添加以下 CSS 代码来定义区块的样式，然后保存该文件。
+4\. 在 `quote` 文件夹中，添加一个 `quote.css` 文件以通过添加以下 CSS 代码来定义块的样式，然后保存该文件。
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5\。 使用 git 将这些更改提交到 `main` 分支。
+5\. 使用 git 将这些更改提交到 `main` 分支。
 
 * 提交到 `main` 仅用于说明目的。[遵循最佳实践](https://www.aem.live/docs/dev-collab-and-good-practices)，并对实际项目工作使用拉取请求。
 
-6\。 返回到 Universal Editor 的浏览器选项卡，您在其中编辑项目页面并重新加载页面以查看样式化区块。
+6\. 返回到您正在编辑项目页面的通用编辑器浏览器选项卡，并重新加载页面以查看您已设置样式的块。
 
-7\。 请参阅页面上的样式化引用区块。
+7\. 请参阅页面上的样式化引用块。
 
-![Universal Editor 中的样式化引用区块](assets/create-block/quote-styled.png)
+![Universal Editor 中的样式化引用块](assets/create-block/quote-styled.png)
 
-8\。 通过导航到已发布的页面来验证更改是否已推送到生产环境。该链接将类似于 `https://<branch>--<repo>--<owner>.aem.page`
+8\. 通过导航到已发布的页面来验证更改是否已推送到生产环境。该链接将类似于 `https://<branch>--<repo>--<owner>.aem.page`
 
 ![已发布的样式化引用块](assets/create-block/quote-styled-published.png)
 

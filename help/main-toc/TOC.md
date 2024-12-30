@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的工作�
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
 source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5938'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -206,9 +206,9 @@ ht-degree: 97%
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
-         + [2024.11.13发行说明](/help/release-notes/universal-editor/2024/2024-11-13.md)
-         + [2024.11.05发行说明](/help/release-notes/universal-editor/2024/2024-11-05.md)
-         + [2024.10.29发行说明](/help/release-notes/universal-editor/2024/2024-10-29.md)
+         + [2024.11.13 发行说明](/help/release-notes/universal-editor/2024/2024-11-13.md)
+         + [2024.11.05 发行说明](/help/release-notes/universal-editor/2024/2024-11-05.md)
+         + [2024.10.29 发行说明](/help/release-notes/universal-editor/2024/2024-10-29.md)
          + [2024.09.27 版发行说明](/help/release-notes/universal-editor/2024/2024-09-27.md)
          + [2024.09.26 版发行说明](/help/release-notes/universal-editor/2024/2024-09-26.md)
          + [2024.09.18 版发行说明](/help/release-notes/universal-editor/2024/2024-09-18.md)
@@ -479,7 +479,7 @@ ht-degree: 97%
    + [启用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Assets 协作者用户](/help/assets/assets-collaborator-users.md)
-   + [在为Edge Delivery Services创作内容时集成AEM Assets](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+   + [在为 Edge Delivery Services 创作内容时集成 AEM Assets](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + 管理数字资产{#manage}
       + 微前端资产选择器 {#asset-selector}
          + [资产选择器概述](/help/assets/overview-asset-selector.md)
@@ -649,7 +649,7 @@ ht-degree: 97%
       + [管理标记](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [发布资产到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
-      + [AEM Assets视图UI可扩展性](/help/assets/aem-assets-view-ui-extensibility.md)
+      + [AEM Assets 视图 UI 扩展性](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
       + [概述](/help/assets/product-overview.md)
       + [部署 Content Hub](/help/assets/deploy-content-hub.md)
@@ -714,11 +714,11 @@ ht-degree: 97%
          + [在 AEM Sites 页面中嵌入自适应表单](/help/forms/embed-adaptive-form-aem-sites.md)
          + [将基于核心组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [将基于 Foundation 组件的自适应表单嵌入到外部网页](/help/forms/embed-adaptive-form-external-web-page.md)
-         + 将自适应Forms与Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}集成
-            + [将Adobe Marketo Engage与AEM Forms集成](/help/forms/integrate-form-to-marketo-engage.md)
-            + [配置新表单以与Marketo Engage集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [为现有的自适应Forms配置Adobe Marketo Engage数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [配置提交操作以Marketo Engage现有表单](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+         + 将自适应表单与 Adobe Marketo Engage 集成{#integrate-adaptive-form-with-market-engage}
+            + [将 Adobe Marketo Engage 与 AEM Forms 集成](/help/forms/integrate-form-to-marketo-engage.md)
+            + [配置新表单以与 Marketo Engage 集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [为现有自适应表单配置 Adobe Marketo Engage 数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [将现有表单的提交操作配置到 Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + 表单数据模型 {#use-form-data-model}
          + [将 AEM Forms 连接到数据库或数据源](/help/forms/data-integration.md)
          + [配置数据源](/help/forms/configure-data-sources.md)
@@ -741,7 +741,7 @@ ht-degree: 97%
             + [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [创建基于核心组件的自适应表单模板](/help/forms/template-editor-core-components.md)
-            + [基于XFA表单模板创建自适应表单（核心组件）](/help/forms/create-adaptive-form-using-xfa-templates.md)
+            + [根据 XFA 表单模板创建自适应表单（核心组件）](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [为自适应表单生成记录文档](/help/forms/generate-document-of-record-core-components.md)
             + [使用机器翻译或人工翻译来翻译自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [配置重定向页面或感谢消息](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -755,8 +755,8 @@ ht-degree: 97%
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)
             + [以自适应表单的形式使用 Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [在自适应表单核心组件中使用Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
-            + [在自适应表单核心组件中使用Turnstile验证码](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+            + [在自适应表单核心组件中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [在自适应表单核心组件中使用 Turnstile Captcha](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [在自适应表单中添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [为基于核心组件的自适应表单添加区域设置](/help/forms/supporting-new-language-localization-core-components.md)
             + [为自适应表单（核心组件）设计 JSON 架构](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -771,7 +771,7 @@ ht-degree: 97%
                + [规则编辑器中可用于基于核心组件的自适应表单的操作符和事件类型](/help/forms/rule-editor-core-components-events-operators.md)
                + [基于核心组件的自适应Form规则编辑器示例](/help/forms/rule-editor-core-components-usecases.md)
                + [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
-               + [在基于核心组件的表单的可视规则编辑器中调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [在可视化规则编辑器中针对基于核心组件的表单调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
             + 基于核心组件的自适应表单规则编辑器简介{#create-and-use-custom-function-core-component}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/create-and-use-custom-functions.md)
                + [为基于核心组件的自适应表单创建和使用自定义函数](/help/forms/custom-function-core-component-create-function.md)
@@ -803,7 +803,7 @@ ht-degree: 97%
          + 将组件添加到自适应表单 {#add-components-to-an-adaptive-form}
             + [在自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms.md)
             + [在自适应表单中使用 hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [在自适应表单中使用Turnstile CAPTCHA](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [在自适应表单中使用 Turnstile CAPTCHA](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)
             + [应用涂写签名](/help/forms/signing-forms-using-scribble.md)
             + [将表添加到自适应表单](/help/forms/adaptive-forms-tables.md)
@@ -965,11 +965,11 @@ ht-degree: 97%
       + [表格数据和电子表格](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [管理分类数据](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [所见即所得和基于文档的块](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [包含DAM Assets的页面](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
-      + [跨站点重用代码](/help/edge/wysiwyg-authoring/repoless.md)
-      + [重写多站点管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [重写暂存和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+      + [包含 DAM 资产的页面](/help/edge/wysiwyg-authoring/dam-assets.md)
+      + [WIP 网站功能](/help/edge/wysiwyg-authoring/wip-features.md)
+      + [跨网站重用代码](/help/edge/wysiwyg-authoring/repoless.md)
+      + [无重复多站点管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+      + [无重复阶段和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
    + 基于文档的创作 {#document-authoring}
       + [创作](/help/edge/docs/authoring.md)
       + [批量元数据](/help/edge/docs/bulk-metadata.md)
@@ -1060,8 +1060,8 @@ ht-degree: 97%
       + [持久 GraphQL 查询](/help/headless/graphql-api/persisted-queries.md)
       + [优化 GraphQL 查询](/help/headless/graphql-api/graphql-optimization.md)
       + [更新内容片段以进行优化的 GraphQL 筛选](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-      + [升级内容片段以获取UUID引用](/help/headless/graphql-api/uuid-reference-upgrade.md)
-      + [示例 GraphQL 查询](/help/headless/graphql-api/sample-queries.md)
+      + [升级内容片段以支持 UUID 引用](/help/headless/graphql-api/uuid-reference-upgrade.md)
+      + [GraphQL 查询示例](/help/headless/graphql-api/sample-queries.md)
       + [GraphQL 查询疑难解答](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [用于内容片段传递的 AEM REST OpenAPI](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [内容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
@@ -1109,12 +1109,12 @@ ht-degree: 97%
          + [了解如何为内容片段定义元数据和标记](/help/journey-headless/author/metadata-tagging.md)
 + 生成式 AI {#generative-ai}
    + [生成变体](/help/generative-ai/generate-variations.md)
-   + [助理(Beta有限公司)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [助手（有限 Beta 版）](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + 实施 {#implementing}
    + [实施 AEM as a Cloud Service 的应用程序](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + [导航](/help/implementing/cloud-manager/navigation.md)
-      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM 快速启动板](/help/implementing/cloud-manager/aem-home.md)
       + 项目 {#programs}
          + [项目和项目类型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [生产项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
@@ -1133,7 +1133,7 @@ ht-degree: 97%
          + [在 Cloud Manager 中管理存储库](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [添加一个 Adobe 存储库](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [添加一个专用存储库](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [添加外部存储库(有限的Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [添加外部存储库（有限 Beta 版）](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Git 子模块支持](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [将 Git 用于 Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1168,7 +1168,7 @@ ht-degree: 97%
       + Edge Delivery Sites{#edge-delivery-sites}
          + [Cloud Manager 中的 Edge Delivery Services 简介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [将 Edge Delivery Site 添加到 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [为Edge Delivery站点设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
+         + [为 Edge Delivery 网站设置推送验证](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 域设置 {#custom-domain-names}
          + [域设置简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -1205,7 +1205,7 @@ ht-degree: 97%
       + [配置和配置浏览器](/help/implementing/developing/introduction/configurations.md)
       + [AEM 技术基础](/help/implementing/developing/introduction/aem-technologies.md)
       + [API 参考材料](/help/implementing/developing/reference-materials.md)
-      + [基于OpenAPI的API](/help/implementing/developing/open-api-based-apis.md)
+      + [基于 OpenAPI 的 API](/help/implementing/developing/open-api-based-apis.md)
       + [为服务器端 API 生成访问令牌](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
       + [为服务器端 API 生成访问令牌（旧版）](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [快速站点创建和前端自定义](/help/implementing/developing/introduction/quick-site-creation.md)

@@ -5,9 +5,9 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2059'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -276,25 +276,25 @@ AEM 中与该服务关联的 AEM 组将拥有该环境层组合中该服务的�
 >* 要详细了解 AEM 产品配置文件，请参阅[分配 AEM 产品配置文件](/help/journey-onboarding/assign-profiles-aem.md)。
 >* 有关上线过程的详细信息，请参阅[上线历程](/help/journey-onboarding/overview.md)。
 
-### 添加现有环境的产品配置文件 {#adding-product-profiles-for-existing-environments}
+### 为现有环境添加产品轮廓 {#adding-product-profiles-for-existing-environments}
 
-在2024年11月初之前创建的环境可能缺少上文中所述的组织级别产品实例，以及某些产品配置文件。 现有产品配置文件也将缺少服务切换。 建议更新这些产品配置文件，这是访问某些未来API的先决条件。
+2024 年 11 月初之前创建的环境可能会缺少上述部分描述的组织级产品实例以及某些产品轮廓。现有的产品轮廓也会缺少服务切换功能。建议更新这些产品轮廓，这是访问某些未来 API 的前提条件。
 
-如果项目中的一个或多个环境需要更新其产品配置文件，Cloud Manager将显示以下通知。 请注意，在更新产品配置文件之前，环境必须是最新AEM版本。
+如果程序中的一个或多个环境需要更新其产品轮廓，则 Cloud Manager 将会显示下面的通知。请注意，环境必须处于最新的 AEM 版本，然后才能更新其产品轮廓。
 
-![使产品配置文件现代化](/help/onboarding/assets/modernize-product-profiles.png)
+![实现产品轮廓现代化](/help/onboarding/assets/modernize-product-profiles.png)
 
-单击&#x200B;**添加产品配置文件**&#x200B;按钮将打开一个菜单，其中显示用于将新产品配置文件添加到程序或单个环境中所有可用环境的选项。
+点击&#x200B;**添加产品轮廓**&#x200B;按钮将会打开一个菜单，其中会显示将新产品轮廓添加到该程序中所有可用环境或个体环境的选项。
 
 ![替换环境](/help/onboarding/assets/choose-env-r.png)
 
-单击&#x200B;**所有环境**&#x200B;以将新的产品配置文件添加到程序中的所有环境。 或者，单击&#x200B;**单个环境**&#x200B;以将新产品配置文件添加到所选环境；这会将用户导航到环境列表页面，在该页面中，可以从&#x200B;**更多选项**&#x200B;图标中选择&#x200B;**添加产品配置文件**&#x200B;操作。
+点击&#x200B;**所有环境**&#x200B;将新的产品轮廓添加到该程序中的所有环境。或者，单击&#x200B;**个体环境**&#x200B;将新产品轮廓添加到选定的环境；这会将用户导航到“环境”列表页面，在该页面可以从&#x200B;**更多选项**&#x200B;图标中选择&#x200B;**添加产品轮廓**&#x200B;操作。
 
-![单个环境](/help/onboarding/assets/individual-environments.png)
+![个体环境](/help/onboarding/assets/individual-environments.png)
 
-您还可以通过以下方法将产品配置文件添加到所选环境：导航到项目概述页面的环境部分，单击与环境对应的更多选项图标，然后选择添加产品配置文件。
+您还可以通过导航到“程序概述”页面的“环境”部分，单击与环境相对应的“更多选项”图标，然后选择“添加产品轮廓”，将产品轮廓添加到选定的环境。
 
-添加新产品配置文件时，环境的状态将显示添加产品配置文件，流程完成后，环境状态将显示为正在运行。
+在添加新的产品轮廓时，环境状态会显示“正在添加产品轮廓”，随后在该过程完成后会显示“正在运行”。
 
 
 ## Cloud Manager 产品配置文件 {#cloud-manager-product-profiles}
