@@ -2,7 +2,7 @@
 title: 在为 Edge Delivery Services 创作内容时集成 AEM Assets
 description: 了解如何将AEM Assets与Edge Delivery Services集成。 通过此集成，您可以将AEM Assets与Microsoft Word和Google文档集成，将AEM Assets与通用编辑器集成，将Dynamic Media与OpenAPI功能与通用编辑器集成，并将Dynamic Media与Microsoft Word和Google文档中的OpenAPI功能集成。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 3a758af4d17d761b8e3e4a77ea3cda6a4b6d0bb7
+source-git-commit: b908cb1e8d9c7814f4b23142aee589af74047cd8
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 3%
@@ -84,4 +84,3 @@ AEM Assets与基于文档的创作工具(如Microsoft Word或Google Docs)集成�
 
 * 请参阅Edge Delivery站点中的[配置](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)以在Universal Editor中添加自定义资产选取器函数。 通过自定义资产选取器，可将资产直接插入通用编辑器内容。
 * 请参阅[扩展概述](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)，了解如何在Universal Editor中进行创作时访问AEM Assets和插入资源。
-
