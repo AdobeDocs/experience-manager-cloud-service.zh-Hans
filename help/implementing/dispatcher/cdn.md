@@ -4,10 +4,10 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 12%
+source-wordcount: '1745'
+ht-degree: 11%
 
 ---
 
@@ -23,12 +23,12 @@ AEM as a Cloud Service附带一个集成的CDN，旨在通过从靠近用户浏�
 
 AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布层，客户可以选择通过自己的CDN路由流量，他们必须管理此CDN。 此选项基于具体情况提供，尤其是当客户现有与难以替换的CDN提供商的旧版集成时。
 
-希望发布到Edge Delivery Services层的客户可以利用Adobe的托管CDN。 查看[托管CDN](#aem-managed-cdn)Adobe。<!-- CQDOC-21758, 5b -->
+希望发布到Edge Delivery Services层的客户可以利用Adobe的托管CDN。 查看[Adobe托管CDN](#aem-managed-cdn)。<!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe 管理的 CDN {#aem-managed-cdn}
+## Adobe托管的CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -91,7 +91,7 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 
 配置说明：
 
-1. 将CDN指向AdobeCDN的入口作为其源域。 例如：`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
+1. 将CDN指向AdobeCDN的入口作为其源域。 例如 `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 将SNI设置为AdobeCDN的入口。
 1. 将Host标头设置为原始域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 使用域名设置`X-Forwarded-Host`标头，以便AEM能够确定主机标头。 例如：`X-Forwarded-Host:example.com`。
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->使用您自己的CDN时，您不需要在Cloud Manager中安装域和证书。 AdobeCDN中的路由是使用默认域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，该域应在`Host`标头中发送。 使用自定义域名覆盖请求`Host`标头可能会通过AdobeCDN错误地路由请求。
+>使用您自己的CDN时，您不需要在Cloud Manager中安装域和证书。 AdobeCDN中的路由是使用默认域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，该域应在`Host`标头中发送。 使用自定义域名覆盖请求`Host`标头可能会通过AdobeCDN错误地路由该请求，或导致421错误。
 
 >[!NOTE]
 >
@@ -134,7 +134,31 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 发布层支持此客户CDN配置，但创作层不支持此配置。
 
-### CDN供应商配置示例 {#sample-configurations}
+### 调试配置
+
+为了调试BYOCDN配置，请使用值为`edge=true`的`x-aem-debug`标头。 例如：
+
+在Linux®中：
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
+```
+
+在Windows中：
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
+```
+
+这将反映`x-aem-debug`响应标头中的请求中使用的某些属性。 例如：
+
+```
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+```
+
+例如，使用此项可以验证主机的值（如果配置了边缘身份验证），以及x-forwarded-host标头值（如果设置了边缘密钥并且使用了哪个密钥，在一个密钥匹配的情况下）。
+
+### 示例CDN供应商配置 {#sample-configurations}
 
 下面显示了来自几家领先的CDN供应商的几项配置示例。
 
@@ -160,6 +184,11 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 **重定向到发布服务终结点**
 
 当请求收到403禁止响应时，这意味着请求缺少某些所需的标头。 此问题的常见原因是CDN同时管理Apex和`www`域流量，但没有为`www`域添加正确的标头。 可通过检查您的AEM as a Cloud Service CDN日志并验证所需的请求标头，来诊断此问题。
+
+**错误421重定向错误**
+
+当请求收到包含`Requested host does not match any Subject Alternative Names (SANs) on TLS certificate`周围正文的421错误时，它表示HTTP `Host`集与主机的证书上的任何主机都不匹配。 这通常表明`Host`或SNI设置错误。 确保`Host`以及SNI设置都指向publish-p&lt;PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com主机。
+
 
 **重定向循环太多**
 

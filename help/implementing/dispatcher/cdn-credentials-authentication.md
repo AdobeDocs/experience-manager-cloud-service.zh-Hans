@@ -4,9 +4,9 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
+source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -28,9 +28,11 @@ Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖
 
 如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)页面中的[CDN中所述，客户可以选择通过自己的CDN路由流量，该CDN称为客户CDN（有时也称为BYOCDN）。
 
-作为设置的一部分，AdobeCDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到AdobeCDN之前，在客户CDN中对每个请求进行设置，CDN随后会验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
+作为设置的一部分，AdobeCDN和客户CDN必须同意`X-AEM-Edge-Key` HTTP标头的值。 此值在发送到AdobeCDN之前在客户CDN的每个上设置，然后验证该值是否按预期可用，因此它可以信任其他HTTP标头，包括有助于将请求路由到相应AEM源的标头。
 
 *X-AEM-Edge-Key*&#x200B;值由名为`cdn.yaml`或类似文件中的`edgeKey1`和`edgeKey2`属性引用，位于顶级`config`文件夹下的某个位置。 有关文件夹结构和如何部署配置的详细信息，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。  以下示例中介绍了语法。
+
+有关进一步的调试信息和常见错误，请检查[常见错误](/help/implementing/dispatcher/cdn.md#common-errors)。
 
 >[!WARNING]
 >对于符合条件的所有请求（在以下示例中，表示对发布层的所有请求），不通过正确的X-AEM-Edge-Key直接访问将被拒绝。 如果您需要逐步引入身份验证，请参阅[安全迁移以降低流量受阻的风险](#migrating-safely)部分。
@@ -147,7 +149,7 @@ data:
    * name — 描述性字符串。
    * 类型 — 必须清除。
    * purgeKey1 — 其值必须引用[Cloud Manager机密类型的环境变量](/help/operations/config-pipeline.md#secret-env-vars)。 对于“已应用服务”字段，选择全部。 建议值（例如`${{CDN_PURGEKEY_031224}}`）反映添加日期。
-   * purgeKey2 — 用于轮换密码，有关说明，请参见下面的[轮换密码部分](#rotating-secrets)。 必须声明`purgeKey1`和`purgeKey2`中的至少一个。
+   * purgeKey2 — 用于轮换密钥，下面的[轮换密钥](#rotating-secrets)部分中对此进行了说明。 必须声明`purgeKey1`和`purgeKey2`中的至少一个。
 * 规则：用于声明应使用哪些验证器，以及它是否用于发布和/或预览层。  它包括：
    * 名称 — 描述性字符串
    * when — 根据[流量过滤器规则](/help/security/traffic-filter-rules-including-waf.md)文章中的语法确定何时应评估规则的条件。 通常，它包括当前层的比较（例如，发布）。
@@ -202,7 +204,7 @@ data:
    * 名称 — 描述性字符串
    * 类型 — 必须为`basic`
    * 一个最多包含10个凭据的数组，每个凭据包含以下名称/值对，最终用户可以在基本身份验证对话框中输入这些名称/值对：
-      * user — 用户的名称
+      * user — 用户的名称。
       * 密码 — 其值必须引用[Cloud Manager密钥类型环境变量](/help/operations/config-pipeline.md#secret-env-vars)，并且选择&#x200B;**所有**&#x200B;作为服务字段。
 * 规则：用于声明应使用哪些身份验证器，以及应保护哪些资源。 每个规则包括：
    * 名称 — 描述性字符串
