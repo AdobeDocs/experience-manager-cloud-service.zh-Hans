@@ -2,7 +2,7 @@
 title: 在为 Edge Delivery Services 创作内容时集成 AEM Assets
 description: 了解如何将AEM Assets与Edge Delivery Services集成。 通过此集成，您可以将AEM Assets与Microsoft Word和Google文档集成，将AEM Assets与通用编辑器集成，将Dynamic Media与OpenAPI功能与通用编辑器集成，并将Dynamic Media与Microsoft Word和Google文档中的OpenAPI功能集成。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: e6fd7b1d16aac5e7021a8c309f6483f98746e85e
+source-git-commit: f57edede03cf55110122c59f2874a5f40ffa9c76
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 3%
@@ -78,7 +78,7 @@ AEM Assets与基于文档的创作工具(如Microsoft Word或Google Docs)集成�
 
 ## 示例Edge Delivery Services站点{#example-of-an-Edge-Delivery-Services-site}
 
-请参阅[WKND旅游](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home)。 此站点是使用Edge Delivery Services的基于文档的创作功能构建的。 网站内容是在[Google文档](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)中创作的，使用Dynamic Media的OpenAPI功能进行资源交付。 创作后，将直接从文档发布内容。 对于此基于文档的创作设置，所有必需的文件、文件夹、配置、网站样式和功能代码都存储在此[Git存储库](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)中。
+请参阅[WKND旅游](http://bit.ly/3DExLnf)。 此站点是使用Edge Delivery Services的基于文档的创作功能构建的。 网站内容是在[Google文档](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)中创作的，使用Dynamic Media的OpenAPI功能进行资源交付。 创作后，将直接从文档发布内容。 对于此基于文档的创作设置，所有必需的文件、文件夹、配置、网站样式和功能代码都存储在此[Git存储库](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)中。
 
 ## 将AEM Assets与基于Universal Editor的Edge Delivery Services创作流集成 {#integrate-aem-assets-with-universal-editor}
 
