@@ -2,9 +2,9 @@
 title: 在为 Edge Delivery Services 创作内容时集成 AEM Assets
 description: 了解如何将AEM Assets与Edge Delivery Services集成。 通过此集成，您可以将AEM Assets与Microsoft Word和Google文档集成，将AEM Assets与通用编辑器集成，将Dynamic Media与OpenAPI功能与通用编辑器集成，并将Dynamic Media与Microsoft Word和Google文档中的OpenAPI功能集成。
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fc19e2bf43237418f3636d982c46915c8013cbfa
+source-git-commit: ed9d559e09746023577c27dafbd64a8c46acc5da
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '743'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 3%
 ## 将AEM Assets与Edge Delivery Services的基于文档的创作流集成 {#integrate-aem-assets-with-document-based-authoring-tools}
 
 AEM Assets与基于文档的创作工具(如Microsoft Word或Google Docs)集成，可在您的编辑器中直接提供资产选择器。 使用此资源选择器可访问AEM Assets，并将批准的资源插入到您的文档中。
+如果您已有Edge Delivery Services网站，请参阅[AEM Assets插件](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md)将AEM Assets与您现有的AEM项目集成。 如果您没有Edge Delivery Services网站，请参阅下面的[先决条件](#integrate-aem-assets-with-microsoft-word-and-google-docs)和[将AEM Assets与基于文档的创作环境集成](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs)部分。
 
 ### 先决条件{#integrate-aem-assets-with-microsoft-word-and-google-docs}
 
@@ -35,7 +36,7 @@ AEM Assets与基于文档的创作工具(如Microsoft Word或Google Docs)集成�
 
 ### 将AEM Assets与基于文档的创作环境集成{#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs}
 
-配置AEM AssetsSidekick插件，以便在Microsoft Word或Google文档中创作内容时使用资源。
+配置AEM AssetsSidekick插件以在Microsoft Word或Google文档中创作内容时使用资源。
 
 * 请参阅[Adobe Experience Manager AssetsSidekick插件](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-experience-manager-assets-for-website-authors)，了解如何在Microsoft Word或Google文档中访问和使用AEM Assets。
 * 有关配置详细信息，请参阅[配置Adobe Experience Manager AssetsSidekick插件](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin)。
