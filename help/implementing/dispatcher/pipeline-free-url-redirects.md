@@ -4,9 +4,9 @@ description: 了解如何在没有访问Git或Cloud Manager管道的情况下声
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: e30a9fbe74f1f5cd8a924dc3fec140fad5e0a164
+source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service提供了[多种方法来实施客户端重定向](https:/
 * 重定向的数量范围从数到数万不等。
 * 您需要作为自定义项目或通过使用[ACS Commons重定向映射管理器](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)或[ACS Commons重定向管理器](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html)创建的用户界面选项。
 
-此功能的核心是AEM Apache/Dispatcher能够加载（或重新加载）一个或多个已放置在发布存储库中指定位置中的重写映射文件。 请务必注意，文件到达的方式超出了此功能的范围，但您可以考虑以下方法之一：
+此功能的核心是AEM Apache/Dispatcher能够加载（或重新加载）一个或多个已放置在发布存储库中指定位置中的重写映射文件(以便可以从AEM发布中下载)。 请务必注意，文件到达的方式超出了此功能的范围，但您可以考虑以下方法之一：
 
 * 在创作用户界面中将重写映射摄取为资产并进行发布。
 * 安装[ACS Commons重定向映射管理器](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)（[至少6.7.0版本或更高版本](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)），该管理器包括一个用于管理url映射的用户界面，并且还可以发布重写映射文件。
