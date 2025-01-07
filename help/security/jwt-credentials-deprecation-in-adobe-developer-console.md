@@ -4,10 +4,10 @@ description: 了解在 Adobe Developer Console 中弃用 JWT 凭据对 AEM 产�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
-workflow-type: ht
-source-wordcount: '770'
-ht-degree: 100%
+source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >
 >AEM 6.5 客户应参考 [AEM 6.5 的类似文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console)了解更多信息。
 
-Adobe 客户使用 [Adobe Developer Console](https://developer.adobe.com/console) 生成通过其可访问各种 API 的凭据。客户可选择从 OAuth 服务器到服务器到单页应用程序的多种凭据类型。已弃用其中一种凭据类型，服务帐户 (JWT) 凭据，改为使用 OAuth 服务器到服务器凭据。从 2024 年 6 月 3 日起无法创建新的服务帐户 (JWT) 凭据，而现有的 JWT 凭据将从 2025 年 1 月 1 日起失效。可[了解该弃用](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)。
+Adobe 客户使用 [Adobe Developer Console](https://developer.adobe.com/console) 生成通过其可访问各种 API 的凭据。客户可选择从 OAuth 服务器到服务器到单页应用程序的多种凭据类型。已弃用其中一种凭据类型，服务帐户 (JWT) 凭据，改为使用 OAuth 服务器到服务器凭据。无法在2024年6月3日或之后创建新的服务帐户(JWT)凭据，并且现有的JWT凭据在2025年6月30日或之后将无法工作。 可[了解该弃用](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)。
 
 本文提供关于 AEM as a Cloud Service 应如何处理该弃用的某些其他背景信息。
 
@@ -48,7 +48,7 @@ AEM 客户使用 AEM 配置与许多其他 Adobe 解决方案的集成。例如�
 
 **相关 AEM 版本**：AEM as a Cloud Service
 
-客户创建 Adobe Developer Console 项目，以使其可调用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。在弃用的 JWT 凭证于 2025 年 1 月到期之前，Adobe Developer 项目中的凭据应迁移到 OAuth 服务器到服务器凭据类型。
+客户创建 Adobe Developer Console 项目，以使其可调用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。在弃用的JWT凭据于2025年6月过期之前，Adobe Developer项目中的凭据应迁移到OAuth服务器到服务器凭据类型。
 
 ## 自动生成的项目 {#autogen-projects}
 
