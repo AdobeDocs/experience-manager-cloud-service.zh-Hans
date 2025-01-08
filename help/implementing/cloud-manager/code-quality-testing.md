@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 96%
+source-wordcount: '1169'
+ht-degree: 79%
 
 ---
 
@@ -29,21 +29,23 @@ ht-degree: 96%
 
 ## 代码质量规则 {#understanding-code-quality-rules}
 
-代码质量测试将扫描源代码以确保它符合特定的质量标准。 结合 SonarQube 和使用 OakPAL 的内容包级别检查来实现这一点。 有 100 多条规则结合了通用 Java 规则和特定于 AEM 的规则。 一些特定于 AEM 的规则基于来自 AEM Engineering 的最佳实践而创建，这些规则称作[自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
+代码质量测试将扫描源代码以确保它符合特定的质量标准。 SonarQube和使用OakPAL的内容包级别检查的组合实现了此步骤。 有 100 多条规则结合了通用 Java 规则和特定于 AEM 的规则。 一些特定于 AEM 的规则基于来自 AEM Engineering 的最佳实践而创建，这些规则称作[自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
->[!NOTE]
+您可以使用此链接](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下载当前完整的规则[列表。
+
+>[!IMPORTANT]
 >
->可以[使用此链接](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下载规则的完整列表。
+>从2025年2月13日星期四(Cloud Manager 2025.2.0)开始，Cloud Manager代码质量使用更新的SonarQube 9.9版本和更新的规则列表，您可以[在此下载](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx)。
 
 ### 三层评级 {#three-tiered-gate}
 
 代码质量测试确定的问题被分配到三个类别中的一个。
 
-* **严重** – 这些是导致管道立即失效的问题。
+* **重要** – 导致管道立即失效的问题。
 
-* **重要** – 这些是导致管道进入暂停状态的问题。 部署经理、项目经理或业务负责人既可以覆盖问题，也可以接受问题，在前一种情况下，管道将继续运行，在后一种情况下，管道将停止并显示故障。
+* **重要** – 导致管道进入暂停状态的问题。部署管理员、项目管理员或业务负责人可以覆盖这些问题，从而允许管道继续运行。 或者，他们可以接受这些问题，导致管道因故障而停止。
 
-* **信息** – 这些是仅供参考并且对管道执行没有影响的问题
+* **信息** — 仅供参考并且对管道执行没有影响的问题
 
 >[!NOTE]
 >
@@ -68,7 +70,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅 [SonarQube 的量度定义。](https://docs.sonarqube.org/latest/user-guide/metric-definitions/)
+>有关更多详细信息，请参阅 [SonarQube 的量度定义。](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/)
 
 >[!NOTE]
 >
@@ -76,7 +78,7 @@ ht-degree: 96%
 
 ## 处理误报 {#dealing-with-false-positives}
 
-质量扫描过程并不完善，有时会错误地识别出实际上并不是问题的问题。 此情况称作&#x200B;**误报**。
+质量扫描过程并不完善，有时会错误地识别出实际上不是问题的问题。 此状态称为&#x200B;**误报**。
 
 在这些情况下，可以使用标准 Java `@SuppressWarnings` 注释为源代码添加注释，并将规则 ID 指定为注释属性。例如，一种常见误报是用于检测硬编码密码的 SonarQube 规则可能会妨碍识别硬编码密码的方式。
 
@@ -87,7 +89,7 @@ ht-degree: 96%
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-之后，SonarQube 将引发阻断漏洞。 不过，在查看代码后，您会发现这并不是漏洞，并且可以使用适当的规则 ID 注释代码。
+SonarQube引发阻止程序漏洞。 不过，在查看代码后，您会发现这个问题并不是漏洞，并且可以使用适当的规则 ID 注释代码。
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -95,7 +97,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-然而，如果代码的实际情况如此：
+但是，如果代码的实际上如下：
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -106,14 +108,14 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->虽然最佳实践是尽可能创建具体的 `@SuppressWarnings` 注释（仅注释导致问题的特定语句或块），但可以添加类级别注释。
+>虽然最佳实践是尽可能创建具体的`@SuppressWarnings`注释（仅注释导致问题的语句或块），但也可以进行类级别注释。
 
 >[!NOTE]
 >虽然没有明确的安全测试步骤，但在代码质量步骤中会评估与安全相关的代码质量规则。 请参阅 [AEM as a Cloud Service 安全性概述](/help/security/cloud-service-security-overview.md)，了解更多有关 Cloud Service 的安全性。
 
 ## 内容包扫描优化 {#content-package-scanning-optimization}
 
-在质量分析过程中，Cloud Manager 会对 Maven 构建生成的内容包进行分析。 Cloud Manager 提供优化功能以加速此过程，当遵守某些打包限制时，这些优化功能将生效。 最重要的是对输出单个内容包（通常称为“完整”包）的项目执行的优化，其中包含构建生成的几个其他内容包（这些内容包标记为已跳过）。 当 Cloud Manager 检测到此情况时，它不会解压缩“所有”包，而是直接扫描各个内容包并根据依赖关系对它们进行排序。 例如，考虑以下构建输出。
+在质量分析过程中，Cloud Manager 会对 Maven 构建生成的内容包进行分析。 Cloud Manager提供了优化功能以加速此过程，当遵守某些打包限制时，优化功能将生效。 最重要的优化目标是生成单个“所有”包（包含构建中的多个内容包）的项目，这些内容包标记为已跳过。 当 Cloud Manager 检测到此情况时，它不会解压缩“所有”包，而是直接扫描各个内容包并根据依赖关系对它们进行排序。 例如，考虑以下构建输出。
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
@@ -128,4 +130,4 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >[!NOTE]
 >
 >* 此优化不会影响部署到 AEM 的包。
->* 由于将根据文件名匹配嵌入的内容包和跳过的内容包，因此，如果多个跳过的内容包具有完全相同的文件名或文件名在嵌入时发生变化，则无法进行此优化。
+>* 嵌入的内容包和跳过的内容包之间的匹配取决于文件名。 如果多个跳过的包共享相同的文件名，或者文件名在嵌入期间发生更改，则无法进行此优化。

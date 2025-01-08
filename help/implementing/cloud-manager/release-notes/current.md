@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2024.12.0 发行
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8e89adcaadbc53c3d525d57ef452f671137a619f
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 42%
+source-wordcount: '700'
+ht-degree: 92%
 
 ---
 
@@ -21,33 +21,37 @@ ht-degree: 42%
 
 ## 发行日期 {#release-date}
 
-AEM as a Cloud Service中Cloud Manager 2024.12.0的发布日期是2024年12月5日星期四。
+AEM as a Cloud Service 中的 Cloud Manager 2024.12.0 的发布日期是 2024 年 12 月 5 日星期四。
 
-下一个计划发行日期为2025年1月23日。
+下一个版本计划于 2025 年 1 月 23 日发布。
 
 
 ## 新增功能 {#what-is-new}
+
+* **代码质量规则：**&#x200B;从2025年2月13日星期四开始，Cloud Manager代码质量步骤现在使用升级的SonarQube版本9.9.5.90363。
+
+  更新后的规则适用于AEM as a Cloud Service上的Cloud Manager，位于[此链接](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)，这些规则确定Cloud Manager管道的安全分数和代码质量。 此更新可能会影响质量关卡，潜在阻止部署。
 
 <!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
 
     Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
 
-* **已添加对A记录类型的支持：**&#x200B;以改进使用AEM Cloud Manager中的CDN配置的域的上线准备工作。 现在，您可以选择通过添加CNAME记录类型或代表Fastly的IP的A记录类型来上线，从而简化域路由。 此增强消除了仅依赖CNAME记录来使用Fastly设置域的限制。
+* **A 记录类型：**&#x200B;已添加对 A 记录类型的支持，以提高使用 AEM Cloud Manager 中内容传递网络配置的域的“上线准备”情况。您现在可以选择通过添加 CNAME 记录类型或代表 Fastly IP 的 A 记录类型来上线，从而简化域路由。此增强功能消除了使用 Fastly 设置域时仅依赖 CNAME 记录的限制。
 
-  请参阅[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<!-- CMGR-63076 -->
+  参见[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<!-- CMGR-63076 -->
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
 
-* **将多个域添加到Edge Delivery站点：**&#x200B;您现在可以在AEM Cloud Manager中将多个域（包括Apex域和非Apex域）添加到Edge Delivery站点(EDS)。 此增强功能解决了以前的限制，即无法将多个域与EDS源关联起来。 此更新确保更灵活地管理域配置，并简化了具有复杂域设置的站点的上线流程。<!-- CMGR-63007 -->
+* **将多个域添加到 Edge Delivery Site：**&#x200B;您现在可以将多个域（包括 Apex 和非 Apex 域）添加到 AEM Cloud Manager 中的 Edge Delivery Site（EDS）。此增强功能解决了以前限制将多个域与 EDS 来源相关联的问题。此更新确保了管理域配置的最佳灵活性，并简化了具有复杂域设置的 Sites 的“上线”流程。<!-- CMGR-63007 -->
 
-* **高级筛选选项：**&#x200B;在AEM Cloud Manager的管道执行页面和SSL证书页面上引入了高级筛选选项。 您现在可以按多个标准进行筛选，使您能够更快地访问相关数据并提高部署效率。<!-- CMGR-26263 -->
+* **高级筛选选项：** AEM Cloud Manager 中的管道执行页面和 SSL 证书页面引入了高级筛选选项。您现在可以按多个条件进行筛选，从而更快地访问相关数据并提高部署效率。<!-- CMGR-26263 -->
 
-   * **管道活动筛选：**包含管道活动筛选，可让您优化特定管道活动的搜索结果。 可用的过滤器包括管道、操作和状态。
-     ![管道活动正在筛选](/help/implementing/cloud-manager/assets/filters-pipeline.png)
+   * **管道活动筛选：**包括管道活动筛选，让您优化特定管道活动的搜索结果。可用的筛选条件包括管道、操作和状态。
+     ![管道活动筛选](/help/implementing/cloud-manager/assets/filters-pipeline.png)
 
 
-   * **SSL证书过滤：**包括SSL证书过滤，用于优化特定证书的搜索结果。 可用的过滤器包括SSL证书名称、所有权和状态。
-     ![SSL证书筛选](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
+   * **SSL 证书筛选：**包括 SSL 证书筛选，让您优化特定证书的搜索结果。可用的筛选条件包括 SSL 证书名称、所有权和状态。
+     ![SSL 证书筛选](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
 
 ## 早期采用计划 {#early-adoption}
 
@@ -57,9 +61,9 @@ AEM as a Cloud Service中Cloud Manager 2024.12.0的发布日期是2024年12月5�
 
 <!-- BOTH CS & AMS -->
 
-**自带Git**&#x200B;功能已扩展到包括对外部存储库（如GitLab和Bitbucket）的支持。 这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
+**自带 Git** 功能已得到扩展，包括对 GitLab 和 Bitbucket 等外部存储库的支持。这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
 
-使用外部存储库（不包括GitHub托管的存储库）且&#x200B;**部署触发器**&#x200B;在Git更改&#x200B;**上设置为**&#x200B;的管道现在会自动启动。
+使用外部存储库（不包括 GitHub 托管的存储库）和&#x200B;**部署触发器**&#x200B;设置为&#x200B;**在 Git 发生更改时**&#x200B;的管道现在会自动启动。
 
 请参阅[在 Cloud Manager 中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
@@ -73,8 +77,8 @@ AEM as a Cloud Service中Cloud Manager 2024.12.0的发布日期是2024年12月5�
 
 ## 错误修复
 
-* 添加了阻止删除AEM Cloud Manager中具有活动域映射的域的保护措施。 尝试删除此类域的用户现在会收到一条错误消息，指示他们先删除域映射，然后再继续删除域。 此工作流可确保域完整性并防止意外配置错误。<!-- CMGR-63033 -->
-* 在少数情况下，用户无法添加域名或更新SSL证书，因为各个情况中关联的状态不正确。<!-- CMGR-62816 -->
+* 已添加一种保护措施，以防止删除 AEM Cloud Manager 中具有活动域映射的域。尝试删除此类域的用户现在会收到一条错误消息，指示他们先删除域映射，然后再继续删除域。此工作流程可确保域的完整性并防止意外的错误配置。<!-- CMGR-63033 -->
+* 偶尔，用户会因为相应情况下关联的状态不正确而无法添加域名或更新 SSL 证书。<!-- CMGR-62816 -->
 
 
 <!-- ## Known issues {#known-issues} -->
