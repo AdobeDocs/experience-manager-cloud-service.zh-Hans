@@ -63,7 +63,7 @@ ht-degree: 56%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
->title="迁移集的到期"
+>title="迁移集的过期"
 >abstract="了解迁移集的到期。"
 
 所有迁移集将在长时间不活动约45天后最终过期。 在项目信息卡和迁移作业表行上显示指示符一段时间后，迁移集将过期，并且其数据将不再可用。 通过以下方式根据迁移集执行操作，可以轻松延长到期时间：
