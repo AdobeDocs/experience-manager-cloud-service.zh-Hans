@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: f971857e10cbed5f7c64870c53fa7409e39493bc
+source-git-commit: c3e3905d3896d79149a386241d798f78631184b3
 workflow-type: tm+mt
-source-wordcount: '5940'
+source-wordcount: '5948'
 ht-degree: 99%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 的安全性概述](/help/security/cloud-service-security-overview.md)
    + [为 AEM as a Cloud Service 配置高级联网功能](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service 的 IMS 支持](/help/security/ims-support.md)
+   + [用户组和产品配置文件同步中的更改](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [面向 AEM as a Cloud Service 的相同网站 Cookie 支持](/help/security/same-site-cookie-support.md)
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
