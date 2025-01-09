@@ -4,10 +4,10 @@ description: 了解使用 Edge Delivery Services 项目进行所见即所得创�
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
-workflow-type: ht
-source-wordcount: '2196'
-ht-degree: 100%
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+workflow-type: tm+mt
+source-wordcount: '2195'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 100%
 
 请注意，并非每个块都必须具有模型。一些块只是子级列表的[容器](#container)，其中每个子级都具有自己的模型。
 
-还需要定义哪些块存在并可使用 Universal Editor 将其添加到页面中。[`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) 文件列出了由 Universal Editor 提供的组件。
+还需要定义哪些块存在并可使用 Universal Editor 将其添加到页面中。[`component-definitions.json`](/help/implementing/universal-editor/component-definition.md)文件列出了通用编辑器提供的组件。
 
 ```json
 {
