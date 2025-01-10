@@ -5,13 +5,13 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 32ce30ce136a714e277e00197d38ea380c777377
+exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
+source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # 用户组和产品配置文件同步中的更改 {#changes-in-user-group-and-product-profile-synchronization}
 
@@ -43,3 +43,4 @@ ht-degree: 0%
 Admin Console中的![后缀](/help/security/assets/admin-console-profile-suffixes.png)
 
 在极少数情况下，您的AEM应用程序会引用将不再出现在AEM中的组，请确保改用i)正确的AEM实例中的产品配置文件或ii) Adobe Admin Console用户组。
+
