@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 45%
+source-wordcount: '1812'
+ht-degree: 42%
 
 ---
 
@@ -174,7 +174,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 以下限制适用于向 New Relic One 添加用户：
 
 * 最多可以添加 30 个用户。如果已达到最大用户数，请移除用户，以便能够添加新用户。
-* 添加到New Relic的用户为&#x200B;**受限制**&#x200B;类型。 有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
+* 添加到New Relic的用户为&#x200B;**受限制**&#x200B;类型。 有关详细信息，请参阅[New Relic文档](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)。
 * AEM as a Cloud Service 仅提供 New Relic One APM 解决方案，不支持警报、日志记录或 API 集成。
 
 >[!NOTE]
@@ -193,15 +193,15 @@ Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java �
 
 您的 New Relic One 帐户连接到 Adobe 维护的主帐户，并有多个应用程序向其报告：每个 AEM as a Cloud Service 环境三个应用程序。
 
-* 每个环境一个作者服务应用程序
-* 每个环境一个发布服务应用程序（包括 Golden Publish）
+* 每个环境一个Author服务应用程序
+* 每个环境(包括Golden Publish)一个用于`Publish`服务的应用程序
 * 每个环境一个预览服务应用程序
 
 注意:
 
 * 每个应用程序使用一个许可证密钥。
 * AEM as a Cloud Service 环境仅向一个 New Relic One 帐户报告。
-* New Relic One 的全面监控指标和事件保留七天。
+* New Relic One的全面监控指标和事件将保留三个月。 &lt;！— CQDOC-22238 — 从七天更新为三个月。 >
 +++
 
 +++**Adobe是否从New Relic One发送警报通知？** {#alerting-new-relic}
