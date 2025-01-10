@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
+source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
 workflow-type: tm+mt
-source-wordcount: '10543'
-ht-degree: 1%
+source-wordcount: '10564'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,8 @@ ht-degree: 1%
 
    * 创建自己的视频编码配置文件。 或者，您只需使用Dynamic Media附带的预定义&#x200B;_自适应视频编码_&#x200B;配置文件即可。
 
-      * [创建视频编码配置文件](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * [创建视频编码配置文件](/help/assets/dynamic-media/video-profiles.
+      * 最大输出视频编码分辨率为8,192 × 4,320或4,320 × 8,192.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
       * 了解有关[视频编码最佳实践](#best-practices-for-encoding-videos)的更多信息。
 
    * 将视频处理配置文件关联到一个或多个要上传主源视频的文件夹。
@@ -41,7 +42,8 @@ ht-degree: 1%
 
    * 将您的主源视频上传到指定的文件夹。 添加后，将根据分配给文件夹的视频处理配置文件对视频进行编码。
 
-      * Dynamic Media主要支持最长30分钟且最小分辨率大于25 x 25的短格式视频。
+      * Dynamic Media主要支持最长30分钟、最小分辨率大于25 × 25的短格式视频。
+      * 支持的最大输入视频分辨率为16,384 × 16,384。
       * 您可以上传每个大小最大为15 GB的视频文件。
       * [上传您的视频](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
       * 了解有关[支持的输入文件格式](/help/assets/file-format-support.md)的详细信息。
@@ -168,9 +170,9 @@ Dynamic MediaHTML5视频查看器预设是可靠的视频播放器。 您可以�
 
 对于桌面和移动设备自适应视频流，用于比特率切换的视频基于自适应视频集中的所有MP4视频。
 
-使用HLS或DASH或渐进式视频下载进行视频播放。 在Experience Manager的先前版本（如6.0、6.1和6.2）中，视频是通过HTTP进行流式传输的。
+使用HLS、DASH或渐进式视频下载即可播放视频。 在Experience Manager的先前版本（如6.0、6.1和6.2）中，视频是通过HTTP进行流式传输的。
 
-但是，在Experience Manager6.3及更高版本中，视频现在通过HTTPS（即HLS或DASH）进行流式传输，因为DM网关服务URL也始终使用HTTPS。 此默认行为对客户没有影响。 如果浏览器支持HTTPS，则始终会通过HTTPS进行视频流。 请参阅下表。
+但是，在Experience Manager6.3及更高版本中，视频现在通过HTTPS(即HLS或DASH)进行流式传输，因为DM网关服务URL也始终使用HTTPS。 此默认行为对客户没有影响。 如果浏览器支持HTTPS，则始终会通过HTTPS进行视频流。 请参阅下表。
 
 因此，
 
@@ -198,7 +200,7 @@ DASH是国际标准，HLS是Apple标准。 两者都用于自适应视频流。 
   <tr>
    <td>桌面</td>
    <td>Internet Explorer 11+</td>
-   <td>在Windows® 8和Windows® 10上 — 每当请求DASH或HLS时，强制使用HTTPS。 已知限制： DASH或HLS上的HTTP在此浏览器/操作系统组合中不起作用<br /> <br /> Windows® 7上的 — 渐进式下载。 对HTTP与HTTPS协议使用标准逻辑。</td>
+   <td>在Windows® 8和Windows® 10上 — 每当请求DASH或HLS时，强制使用HTTPS。 已知限制： DASH或HLS上的HTTP在此浏览器/操作系统组合中不起作用<br /> <br /> Windows® 7上的渐进式下载。 对HTTP与HTTPS协议使用标准逻辑。</td>
   </tr>
   <tr>
    <td>桌面</td>
@@ -284,16 +286,16 @@ DASH是国际标准，HLS是Apple标准。 两者都用于自适应视频流。 
 
 编码视频文件时，请使用可能具有最高质量的源视频文件。 避免使用以前编码的视频文件，因为这些文件已压缩，进一步编码会创建质量不佳的视频。
 
-* Dynamic Media主要支持最长30分钟且最小分辨率大于25 x 25的短格式视频。
+* Dynamic Media主要支持最长30分钟、最小分辨率大于25 × 25的短格式视频。
 * 您可以上载每个大小最大为15 GB的主源视频文件。
 
 下表描述了编码源视频文件之前必须具有的建议大小、长宽比和最小比特率：
 
 | 大小 | 宽高比 | 最小比特率 |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 大多数视频为4500 kbps。 |
-| 1280 X 720 | 16:9 | 3000 - 6000 kbps，具体取决于视频中的移动量。 |
-| 1920 X 1080 | 16:9 | 6000 - 8000 kbps，具体取决于视频中的运动量。 |
+| 1024 × 768 | 4:3 | 大多数视频为4500 kbps。 |
+| 1280 × 720 | 16:9 | 3000 - 6000 kbps，具体取决于视频中的移动量。 |
+| 1920 × 1080 | 16:9 | 6000 - 8000 kbps，具体取决于视频中的运动量。 |
 
 ### 获取文件的元数据 {#obtaining-a-file-s-metadata}
 
@@ -320,7 +322,7 @@ DASH是国际标准，HLS是Apple标准。 两者都用于自适应视频流。 
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-例如，宽度为1440 x高度为1080的视频的长宽比为1440/1080，即1.33。在这种情况下，您可以选择宽高比为4:3的视频编码预设来编码视频文件。
+例如，宽度为1440×高度为1080的视频的长宽比为1440/1080，即1.33。在这种情况下，您可以选择宽高比为4:3的视频编码预设来编码视频文件。
 
 ### 比特率 {#bitrate}
 
@@ -354,16 +356,16 @@ VBR编码时间较长，但产生的结果最理想；媒体文件的质量更�
 
 ### 解决方法 {#resolution}
 
-**分辨率**&#x200B;描述视频文件的高度和宽度（以像素为单位）。 大多数源视频以高分辨率存储（例如，1920 x 1080）。 为了流传输目的，源视频被压缩成较小的分辨率（640 x 480或更小）。
+**分辨率**&#x200B;描述视频文件的高度和宽度（以像素为单位）。 大多数源视频都以高分辨率存储(例如，1920 × 1080)。 为了流传输目的，源视频被压缩成较小的分辨率(640 × 480或更小)。
 
-分辨率和数据速率是决定视频质量的两个相互关联的因素。 要保持相同的视频质量，视频文件中的像素数越高（分辨率越高），数据速率必须越高。 例如，考虑分辨率为320 x 240和640 x 480的视频文件中每帧的像素数：
+分辨率和数据速率是决定视频质量的两个相互关联的因素。 要保持相同的视频质量，视频文件中的像素数越高（分辨率越高），数据速率必须越高。 例如，假定分辨率为320×240的视频文件和640×480分辨率的视频文件中每帧的像素数：
 
 | 解决方法 | 每帧的像素 |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 × 240 | 76,800 |
+| 640 × 480 | 307,200 |
 
-640 x 480文件的每帧像素是其他像素的四倍。 要获得这两个示例分辨率的相同数据速率，对640 x 480文件应用四倍压缩，这会降低视频质量。 因此，250 Kbps的视频数据速率在320 x 240的分辨率下产生高质量观看，而不是在640 x 480的分辨率下产生高质量观看。
+640 × 480文件的每帧像素是其他像素的四倍。 要获得这两个示例分辨率的相同数据速率，对640 × 480文件应用四倍压缩，这会降低视频质量。 因此，250 Kbps的视频数据速率在320 × 240分辨率下产生高质量观看，而不是在640 × 480分辨率下产生高质量观看。
 
 通常，您使用的数据速率越高，视频的显示效果就越好，而且您使用的分辨率越高，则必须保持较高的数据速率（与较低的分辨率相比）。
 
@@ -383,6 +385,8 @@ VBR编码时间较长，但产生的结果最理想；媒体文件的质量更�
 | 720p | 720 | 大屏幕 |
 | 1080p | 1080 | 高清大屏幕 |
 
+支持的最大输入视频分辨率为16,384 × 16,384。 最大输出视频编码分辨率为8,192 × 4,320或4,320 × 8,192。
+
 ### Fps（每秒帧数） {#fps-frames-per-second}
 
 在美国和日本，大多数视频的拍摄速度为29.97 fps；在欧洲，大多数视频的拍摄速度为25 fps。 电影的拍摄速度为24 fps。
@@ -397,14 +401,14 @@ VBR编码时间较长，但产生的结果最理想；媒体文件的质量更�
 
 如果生成的比例是整数，则表示视频得到最佳缩放。 如果生成的比例不是整数，则会通过在显示器上留下多余的像素伪像而影响视频质量。 当视频包含文本时，这种效果最为明显。
 
-例如，假设源视频为1920 x 1080。 在下表中，三个编码的视频提供了要使用的最佳编码设置。
+例如，假设源视频为1920 × 1080。 在下表中，三个编码的视频提供了要使用的最佳编码设置。
 
-| 视频类型 | 宽x高 | 宽度比例 | 高宽比 |
+| 视频类型 | 宽度×高度 | 宽度比例 | 高宽比 |
 |--- |--- |--- |--- |
-| 源 | 1920 x 1080 | 1 | 1 |
-| 已编码 | 960 x 540 | 2 | 2 |
-| 已编码 | 640 x 360 | 3 | 3 |
-| 已编码 | 480 x 270 | 4 | 4 |
+| 源 | 1920 × 1080 | 1 | 1 |
+| 已编码 | 960 × 540 | 2 | 2 |
+| 已编码 | 640 × 360 | 3 | 3 |
+| 已编码 | 480 × 270 | 4 | 4 |
 
 ### 编码视频文件格式 {#encoded-video-file-format}
 
@@ -532,7 +536,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 | 功能 | 描述 |
 | --- | --- |
-| 短划线 | DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广泛地应用于不同的视频观看者中。 在您的帐户上启用DASH后，您可以选择使用DASH或HLS进行自适应视频流传输。 或者，当在查看器预设中选择&#x200B;**[!UICONTROL auto]**&#x200B;作为播放类型时，您可以选择在播放器之间自动切换。<br>在帐户中启用DASH的一些主要优势包括：<ul><li>将DASH流视频打包用于自适应比特率流。 这种方法可以提高投放效率。 自适应流管理可确保为客户提供最佳观看体验。</li><li>使用Dynamic Media播放器优化的浏览器流会在HLS和DASH流之间切换，以确保最佳服务质量。 使用Safari浏览器时，视频播放器会自动切换到HLS。</li><li>您可以通过编辑视频查看器预设来配置首选的流方法（HLS或DASH）。</li><li>优化的视频编码可确保在启用DASH功能时不会使用额外的存储。 为HLS和DASH创建一组视频编码，以优化视频存储成本。</li><li>帮助让您的客户更容易访问视频交付。</li><li>也通过API获取流URL。</li></ul> |
+| 短划线 | DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广泛地应用于不同的视频观看者中。 在您的帐户上启用DASH后，您可以选择使用DASH或HLS进行自适应视频流传输。 或者，当在查看器预设中选择&#x200B;**[!UICONTROL auto]**&#x200B;作为播放类型时，您可以选择在播放器之间自动切换。<br>在帐户中启用DASH的一些主要优势包括：<ul><li>将DASH流视频打包用于自适应比特率流。 这种方法可以提高投放效率。 自适应流管理可确保为客户提供最佳观看体验。</li><li>使用Dynamic Media播放器优化浏览器流会在HLS和DASH流之间切换，以确保最佳服务质量。 在使用Safari浏览器时，视频播放器会自动切换到HLS。</li><li>您可以通过编辑视频查看器预设来配置首选的流方法(HLS或DASH)。</li><li>优化的视频编码可确保在启用DASH功能时不会使用额外的存储。 为HLS和DASH创建一组视频编码，以优化视频存储成本。</li><li>帮助让您的客户更容易访问视频交付。</li><li>也通过API获取流URL。</li></ul> |
 | 多字幕和音轨 | 自动启用多个字幕和音轨支持将使您受益。 启用后，您上传的所有后续视频都将采用新的后端架构进行处理，该架构支持向视频添加多个字幕和音频轨道。 |
 | AI生成的字幕（限量发布） | 为由AI支持的视频创建字幕。 利用人工智能，它创建视频的文字记录并将其转换为字幕。 甚至时间线也被定义了。 |
 
@@ -765,7 +769,7 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
       | 文件名 | 默认文件名是从原始文件名派生的。 只能在上传时更改文件名，以后不能更改。 文件名字符要求与AEM Assets相同。<br>不能将同一文件名用于其他字幕文件和音轨文件。 |
       | 语言 | 选择题注的语言。 处理字幕文件后，此语言字段将变为不可编辑（灰显） |
       | 类型 | 选择您正在使用的字幕类型。<br>**子标题** — 与翻译或转录此对话框的视频一起显示的标题文本。<br>**字幕** — 字幕文本包括背景噪音、说话人辨别和其他相关细节，以及对话翻译或转录，增强了耳聋或听力缺佳者的可访问性。 |
-      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如：`English (CC)`。 |
+      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如 `English (CC)`。 |
 
       您可以稍后更改或编辑字幕元数据（如有必要）。 发布视频时，这些详细信息会反映在已发布视频的公共URL上。
 
@@ -807,7 +811,7 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
       | 题注元数据 | 描述 |
       | --- | --- |
       | 类型 | 选择您正在使用的字幕类型。<br>**子标题** — 与翻译或转录此对话框的视频一起显示的标题文本。<br>**字幕** — 字幕文本包含背景噪音和说话人辨别。 其中还包括其他相关信息，以及对话的翻译或转录。 这种方法使耳聋或听力缺佳的用户更容易访问内容。 |
-      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如：`English (CC)`。 |
+      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如 `English (CC)`。 |
 
       如果需要，您可以稍后更改或编辑某些字幕元数据。 发布视频时，这些元数据详细信息会反映在已发布视频中的公共URL上。
    1. 继续执行步骤8。
@@ -841,7 +845,7 @@ WebVTT和AdobeVTT格式支持添加的字幕。 此外，添加的MP3格式音�
       | 题注元数据 | 描述 |
       | --- | --- |
       | 类型 | 选择您正在使用的字幕类型。<br>**子标题** — 与翻译或转录此对话框的视频一起显示的标题文本。<br>**字幕** — 字幕文本还包括背景噪音、说话人辨别。 其中还包括其他相关信息，以及对话的翻译或转录。 这种方法使耳聋或听力缺佳的用户更容易访问内容。 |
-      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如：`English (CC)`。 |
+      | 标签 | 在媒体播放器的&#x200B;**[!UICONTROL 选择音频或题注]**&#x200B;弹出列表中为题注名称显示的文本。 标签是客户看到的与字幕或描述跟踪对应的内容。 例如 `English (CC)`。 |
 
       如果需要，您可以稍后更改或编辑某些字幕元数据。 发布视频时，这些元数据详细信息会反映在已发布视频中的公共URL上。
 
@@ -1224,7 +1228,7 @@ Based on the total time of the video, Dynamic Media captures ten (default) thumb
 
 Ideally, you can add a video thumbnail anytime after you upload your video but before you publish the video on your website.
 
-If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 x 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
+If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 &times; 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
