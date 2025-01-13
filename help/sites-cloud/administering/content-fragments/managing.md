@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
 workflow-type: tm+mt
-source-wordcount: '2628'
-ht-degree: 86%
+source-wordcount: '2661'
+ht-degree: 85%
 
 ---
 
 # 管理内容片段 {#managing-content-fragments}
+
+>[!IMPORTANT]
+>
+>内容片段和内容片段模型的各种功能可通过早期采用者计划获得。
+>
+>要查看状态以及如果您有兴趣如何应用，请查看[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 了解如何在 Adobe Experience Manager (AEM) as a Cloud Service 中从专用的[内容片段控制台](#content-fragments-console)和[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)管理您的&#x200B;**内容片段**。这些内容片段可用作 Headless 内容的基础或用于页面创作。
 

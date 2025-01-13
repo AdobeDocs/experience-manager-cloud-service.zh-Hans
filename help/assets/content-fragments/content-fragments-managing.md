@@ -5,9 +5,9 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1907'
 ht-degree: 67%
 
 ---
@@ -313,6 +313,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >* 在片段编辑器中输入
 >* 特定于片段中选定的文本区段
 >
+>两者都不显示新[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment)中输入的注释。
 
 例如：
 

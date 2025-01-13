@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: abc114373f5db501bb8709fd2d4c33aebc1c5ec9
+source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
 workflow-type: tm+mt
-source-wordcount: '2504'
-ht-degree: 53%
+source-wordcount: '2518'
+ht-degree: 52%
 
 ---
 
@@ -314,6 +314,10 @@ ht-degree: 53%
 1. 关闭全屏编辑器时，注释仍会高亮显示。如果选中，将打开一个对话框，以便您进一步编辑注释。
 
    ![注释](assets/cfm-variations-07c.png)
+
+>[!NOTE]
+>
+>注释功能不显示在新[内容片段编辑器](/help/sites-cloud/administering/content-fragments/authoring.md#commenting-on-your-fragment)中输入的注释。
 
 ### 查看、编辑和删除注释 {#viewing-editing-deleting-annotations}
 

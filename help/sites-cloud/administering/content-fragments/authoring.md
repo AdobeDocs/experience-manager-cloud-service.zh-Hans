@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 76%
+source-wordcount: '2841'
+ht-degree: 73%
 
 ---
 
 # 创作内容片段 {#authoring-content-fragments}
+
+>[!IMPORTANT]
+>
+>内容片段编辑器的各种功能可通过早期采用者程序使用。
+>
+>要查看状态以及如果您有兴趣如何应用，请查看[发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 创作内容片段侧重于 Headless 投放和页面创作。
 
@@ -58,6 +64,7 @@ ht-degree: 76%
    * 可使用这些链接[在内容片段结构中导航](#navigate-structure)
 * 右侧面板：有多个选项卡，[其中显示属性（元数据）和标记](#view-properties-tags)、关于[版本历史记录](#view-version-history)的信息以及与任何[语言副本](#view-language-copies)相关的信息
    * 在&#x200B;**属性**&#x200B;选项卡中，可更新片段或&#x200B;**变体**&#x200B;的&#x200B;**标题**&#x200B;和&#x200B;**描述**
+   * 在&#x200B;**评论**&#x200B;选项卡中，您可以添加和阅读评论，以帮助您与其他作者协作
 * 中央面板：显示所选变体的实际字段和内容
    * 使您可编辑内容
       * 当在模型中配置为（多个）时，各种数据类型允许您&#x200B;**添加相关字段的**&#x200B;个实例
@@ -466,6 +473,25 @@ ht-degree: 76%
 >
 >有关翻译内容片段和创建语言副本的更多详细信息，请参阅 [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md)。
 
+## 评论您的片段 {#commenting-on-your-fragment}
+
+右侧面板中的&#x200B;**注释**&#x200B;选项卡提供以下功能：
+
+* 添加新评论
+* 在评论中标记特定用户
+   * 他们将收到通知，其中包含直接打开片段的链接
+* 为现有评论点赞
+* 回复评论
+* 设置评论的格式；可使用基本格式
+* 对现有注释执行文本搜索
+* 编辑现有评论
+* 删除评论
+
+![内容片段编辑器 — “评论”选项卡](assets/cf-authoring-comments.png)
+
+>[!NOTE]
+>
+>这些注释在原始编辑器](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不可见，在Assets控制台的[时间轴](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中不可见。[
 
 ## 预览您的片段 {#preview-content-fragment}
 
