@@ -5,13 +5,13 @@ feature: Security
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: d00a3099d5468c711ed80a69d74f0a3d51f24672
+exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
+source-git-commit: 18fe0125351c635c226bebf0f309710634230e64
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 0%
 
 ---
-
 
 # 为AEM as a Cloud Service设置客户管理的密钥 {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
@@ -100,7 +100,7 @@ az keyvault create `
   --default-action=Deny `
   --enable-purge-protection `
   --enable-rbac-authorization `
-  --public-network-access Disabled
+  --public-network-access Enabled
 ```
 
 ## 授予Adobe访问密钥库的权限 {#grant-adone-access-to-the-key-vault}
