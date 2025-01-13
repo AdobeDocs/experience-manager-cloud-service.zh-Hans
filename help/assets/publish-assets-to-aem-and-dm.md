@@ -4,14 +4,14 @@ description: Assets视图中的快速Publish允许您同时或单独将资源发
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
+source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1212'
 ht-degree: 2%
 
 ---
 
-# 发布资源到 AEM 和 Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
+# 发布资产到 AEM 和 Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
 | [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -33,7 +33,7 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 
 ## 上传期间的Publish Assets {#piblish-assets-during-upload}
 
-在将资源上传到文件夹时，您可以将资源发布到AEM和Dynamic Media。 显示的发布选项取决于在资源将上传到的文件夹上设置的Dynamic Media发布模式。 Dynamic Media发布模式可以设置为：
+在将资源上传到文件夹时，您可以将资源发布到AEM和Dynamic Media。 显示的发布选项取决于上传资源的文件夹的Dynamic Media发布模式设置。 Dynamic Media发布模式可以设置为：
 
 * **激活时：**&#x200B;将资源上传到此文件夹时，必须先明确发布资源，然后才能提供URL/嵌入链接。
 
@@ -42,7 +42,7 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 
 ### Dynamic Media Publish模式设置为激活时 {#dynamic-media-publish-mode-set-to-upon-activation}
 
-要在将Dynamic Media Publish模式设置为&#x200B;**激活时**&#x200B;的情况下将资源上传到文件夹，请执行以下操作：
+要在将资源上传到其Dynamic Media Publish模式设置为&#x200B;**激活时**&#x200B;的文件夹时发布资源，请执行以下操作：
 
 1. 单击&#x200B;**添加Assets** > **浏览** > **浏览文件**&#x200B;以导航到相应的文件夹以上传资源。 **Publish选项**&#x200B;部分将&#x200B;**DM Publish模式**&#x200B;显示为&#x200B;**激活时**。
    ![激活时上传图像](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +50,15 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 
 ### Dynamic Media Publish模式设置为立即 {#dynamic-media-publish-mode-set-to-immediate}
 
-要在将Dynamic Media Publish模式设置为&#x200B;**立即**&#x200B;的文件夹中上传资产，请执行以下操作：
+要在将资源上传到Dynamic Media Publish模式设置为&#x200B;**立即**&#x200B;的文件夹时发布资源，请执行以下操作：
 
-1. 单击&#x200B;**添加Assets** > **浏览** > **浏览文件**&#x200B;以导航到相应的文件夹以上传资源。 Publish选项部分将&#x200B;**DM Publish模式**&#x200B;显示为&#x200B;**立即**。
+1. 单击&#x200B;**添加Assets** > **浏览** > **浏览文件**&#x200B;以导航到相应的文件夹以上传资源。 **Publish选项**&#x200B;部分将&#x200B;**DM Publish模式**&#x200B;显示为&#x200B;**立即**。
    ![文件上传图像 — 立即模式](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    由于Dynamic Media Publish模式为&#x200B;**立即**，因此当您单击&#x200B;**上传**&#x200B;时，上传的资源会自动发布到Dynamic Media。
 
-2. 选择Publish到&#x200B;**AEM以将上传的资源发布到** AEM，然后单击“上传”。
+2. 选择&#x200B;**Publish到AEM**&#x200B;以将上传的资源发布到AEM，然后单击“上传”。
 
    如果选择&#x200B;**Publish到AEM**，则资源将发布到AEM和Dynamic Media，否则资源将发布到Dynamic Media。
 
@@ -68,7 +68,7 @@ Experience Manager Assets视图提供了灵活性，允许您将资源同时发�
 
 要在将Dynamic Media Publish模式设置为&#x200B;**选择性Publish**&#x200B;的情况下将资源上传到文件夹，请执行以下操作：
 
-1. 单击&#x200B;**添加Assets** > **浏览** > **浏览文件**&#x200B;以导航到相应的文件夹以上传资源。 Publish选项部分将&#x200B;**DM Publish模式**&#x200B;显示为&#x200B;**选择性Publish**。
+1. 单击&#x200B;**添加Assets** > **浏览** > **浏览文件**&#x200B;以导航到相应的文件夹以上传资源。 **Publish选项**&#x200B;部分将&#x200B;**DM Publish模式**&#x200B;显示为&#x200B;**选择性Publish**。
    ![上载图像选择性管道模式](/help/assets/assets/upload-selective.svg)
 
 2. 根据您的要求，选择&#x200B;**Publish到AEM**、**Publish到Dynamic Media**&#x200B;或两者，然后单击&#x200B;**上传**。
