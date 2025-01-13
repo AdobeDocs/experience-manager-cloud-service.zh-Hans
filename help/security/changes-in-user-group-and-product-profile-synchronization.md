@@ -6,7 +6,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: ccfcecb77c7999784d6eaf6c1c6cfcb4269f5c80
+source-git-commit: 605a8032430b1be4aacebfcf73cfc16ba7691349
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 每当用户登录到AEM as a Cloud Service或使用访问令牌时，Adobe Admin Console用户组、产品配置文件和产品配置文件服务都会作为组同步到AEM存储库中。
 
-1月28日，为了减少UI混乱并优化性能，将对同步行为进行一些更改，从而减少AEM中出现的组。 将删除两种类别的AEM组：
+1月27日，为了减少UI混乱并优化性能，将对同步行为进行一些更改，从而减少AEM中显示的组。 将删除两种类别的AEM组：
 
 1. 后缀为`GROUP_NAME_SUFFIX`的AEM组。 这些组不会显示在Adobe Developer Console中，而是显示在AEM组管理屏幕中，如下所示。 在您的AEM应用程序引用这些组（这不太可能）的情况下，请确保引用不带该后缀的Adobe Admin Console用户组。
 
