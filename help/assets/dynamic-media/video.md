@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '10564'
+source-wordcount: '10560'
 ht-degree: 2%
 
 ---
@@ -31,8 +31,8 @@ ht-degree: 2%
 
    * 创建自己的视频编码配置文件。 或者，您只需使用Dynamic Media附带的预定义&#x200B;_自适应视频编码_&#x200B;配置文件即可。
 
-      * [创建视频编码配置文件](/help/assets/dynamic-media/video-profiles.
-      * 最大输出视频编码分辨率为8,192 × 4,320或4,320 × 8,192.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * [创建视频编码配置文件](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+      * 最大输出视频编码分辨率为8,192 × 4,320或4,320 × 8,192.md。
       * 了解有关[视频编码最佳实践](#best-practices-for-encoding-videos)的更多信息。
 
    * 将视频处理配置文件关联到一个或多个要上传主源视频的文件夹。

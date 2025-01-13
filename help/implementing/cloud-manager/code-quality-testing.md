@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 80%
 
 ---
 
@@ -29,13 +29,13 @@ ht-degree: 79%
 
 ## 代码质量规则 {#understanding-code-quality-rules}
 
-代码质量测试将扫描源代码以确保它符合特定的质量标准。 SonarQube和使用OakPAL的内容包级别检查的组合实现了此步骤。 有 100 多条规则结合了通用 Java 规则和特定于 AEM 的规则。 一些特定于 AEM 的规则基于来自 AEM Engineering 的最佳实践而创建，这些规则称作[自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
+代码质量测试将扫描源代码以确保它符合特定的质量标准。 SonarQube和使用OakPAL的内容包级别检查的组合实现了此步骤。 有100多条规则结合了通用Java规则和特定于AEM的规则。 某些特定于AEM的规则基于AEM Engineering的最佳实践，称为[自定义代码质量规则](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
-您可以使用此链接](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下载当前完整的规则[列表。
+可以[使用此链接](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下载当前完整的规则列表。
 
 >[!IMPORTANT]
 >
->从2025年2月13日星期四(Cloud Manager 2025.2.0)开始，Cloud Manager代码质量使用更新的SonarQube 9.9版本和更新的规则列表，您可以[在此下载](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx)。
+>从 2025 年 2 月 13 日星期四（Cloud Manager 2025.2.0）开始，Cloud Manager Code Quality 将使用更新的 SonarQube 9.9 版本和更新的规则列表，您可以[在此处下载](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx)。
 
 ### 三层评级 {#three-tiered-gate}
 
