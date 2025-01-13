@@ -1,17 +1,17 @@
 ---
-title: 重写多站点管理
+title: 无重复多站点管理
 description: 了解最佳实践建议，了解如何使用利用单个代码库(每个代码库由Edge Delivery Services提供)的本地化站点，以可靠的方式设置项目。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# 重写多站点管理 {#repoless-msm}
+# 无重复多站点管理 {#repoless-msm}
 
 了解最佳实践建议，了解如何使用利用单个代码库(每个代码库由Edge Delivery Services提供)的本地化站点，以可靠的方式设置项目。
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 1. 选择为您的项目自动创建的配置（在本例中为wknd），然后点按或单击工具栏中的&#x200B;**创建**。
 1. 在&#x200B;**创建配置**&#x200B;对话框中，为您的本地化站点（如`Switzerland`）提供描述性&#x200B;**名称**，对于&#x200B;**标题**，使用与本地化大小相同的标题（在此例中为`ch`）。
 1. 选择&#x200B;**云配置**&#x200B;功能以及您的项目可能需要的任何其他功能，如&#x200B;**可编辑模板**。
-1. 点击或单击“**创建**”。
+1. 点击或单击&#x200B;**创建**。
 
 为您需要的每个本地化站点创建配置。 对于wknd，您需要为`de`创建配置以及`ch`配置。
 
@@ -95,7 +95,7 @@ ht-degree: 1%
 1. 点按或单击工具栏中的&#x200B;**属性**。
 1. 在页面属性窗口中，选择&#x200B;**高级**&#x200B;选项卡，在&#x200B;**配置**&#x200B;标题下，取消选择&#x200B;**继承自/content/wknd**&#x200B;选项，其中`wknd`是站点根。
 1. 在&#x200B;**云配置**&#x200B;字段中，使用路径浏览器选择您为本地化站点创建的配置，如`/conf/wknd/ch`下的`Switzerland`。
-1. 点按或单击&#x200B;**保存并关闭**。
+1. 点击或单击&#x200B;**保存并关闭**。
 
 将相应的配置分配给其他本地化的站点。 对于wknd，您还需要将`/conf/wknd/de`配置分配给德国站点。
 
@@ -140,7 +140,7 @@ ht-degree: 1%
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
@@ -184,7 +184,7 @@ ht-degree: 1%
    * 在&#x200B;**组织**&#x200B;字段中提供您的GitHub组织。
    * 将站点名称更改为您在上一部分中创建的站点名称。 在这种情况下，那将为`wknd-ch`。
    * 使用重写配置设置&#x200B;**将项目类型更改为** aem.live。
-1. 点按或单击&#x200B;**保存并关闭**。
+1. 点击或单击&#x200B;**保存并关闭**。
 
 ## 验证设置 {#verify}
 

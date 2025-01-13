@@ -1,17 +1,17 @@
 ---
-title: 重写暂存和生产环境
+title: 无重复阶段和生产环境
 description: 了解如何通过不断利用单个代码库为您的暂存和生产环境设置单独的站点。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 709d0661286d023c5cec51be2c51a1123ef7deb6
+exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-
-# 重写暂存和生产环境 {#repoless-stage-prod}
+# 无重复阶段和生产环境 {#repoless-stage-prod}
 
 了解如何通过不断利用单个代码库为您的暂存和生产环境设置单独的站点。
 
@@ -73,7 +73,7 @@ ht-degree: 1%
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
@@ -115,7 +115,7 @@ ht-degree: 1%
    * 在&#x200B;**组织**&#x200B;字段中提供您的GitHub组织。
    * 将站点名称更改为您在上一部分中创建的站点名称。 在这种情况下，那将为`wknd-prod`。
    * 使用重写配置设置&#x200B;**将项目类型更改为** aem.live。
-1. 点按或单击&#x200B;**保存并关闭**。
+1. 点击或单击&#x200B;**保存并关闭**。
 
 ## 验证设置 {#verify}
 
