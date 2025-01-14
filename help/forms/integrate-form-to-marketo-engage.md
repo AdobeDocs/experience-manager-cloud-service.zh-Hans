@@ -4,15 +4,15 @@ Description: Learn how to integrate your Marketo Engage instance with AEM Forms.
 Keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-
-# 将Marketo Engage与AEM Forms集成
+# 将 Marketo Engage 与 AEM Forms 集成
 
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
@@ -66,24 +66,26 @@ ht-degree: 4%
 
 ![工作流](/help/forms/assets/workflow-marketo-1.png)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442865/engage-marketo-aem-forms-aem)
+
 云配置可将您的Experience Manager实例连接到Adobe Marketo Engage实例。 执行以下步骤以创建Marketo Engage云配置：
 
 1. 转到&#x200B;**工具** > **Cloud Service** > **Marketo Engage**。
 
    ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-1. 打开文件夹以托管配置，然后单击&#x200B;**创建**。 出现&#x200B;**创建Marketo Engage配置**&#x200B;窗口。
+2. 打开文件夹以托管配置，然后单击&#x200B;**创建**。 出现&#x200B;**创建Marketo Engage配置**&#x200B;窗口。
 
    >[!NOTE]
    >
    > 您还可以[为云服务配置](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations)配置文件夹。
 
-1. 指定要连接到服务的配置和凭据的&#x200B;**标题**。 您可以从Adobe Marketo Engage仪表板检索身份验证凭据：
+3. 指定要连接到服务的配置和凭据的&#x200B;**标题**。 您可以从Adobe Marketo Engage仪表板检索身份验证凭据：
    * **客户端ID**&#x200B;和&#x200B;**客户端密钥**&#x200B;在&#x200B;**管理员** > **集成** > **启动点**&#x200B;中可用，方法是选择自定义服务并单击&#x200B;**查看详细信息**。
    * **标识URL**&#x200B;在&#x200B;**管理员** > **集成** > **Web服务**&#x200B;中可用，作为&#x200B;**REST API**&#x200B;部分中的&#x200B;**标识**。
 
-1. 单击&#x200B;**连接**。  连接成功后，将显示`Authentication Successful`消息。
-1. 单击&#x200B;**[!UICONTROL 创建]**&#x200B;以保存云配置设置。
+4. 单击&#x200B;**连接**。  连接成功后，将显示`Authentication Successful`消息。
+5. 单击&#x200B;**[!UICONTROL 创建]**&#x200B;以保存云配置设置。
 
 ![Marketo Engage云配置](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
@@ -102,6 +104,3 @@ ht-degree: 4%
 ## 另请参阅
 
 {{marketo-engage-see-also}}
-
-
-

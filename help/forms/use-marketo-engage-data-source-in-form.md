@@ -4,15 +4,15 @@ Description: Learn how to use Marketo Engage schema in Adaptive Forms.
 Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
-
-# 为现有的自适应Forms配置Marketo Engage数据源
+# 为现有自适应表单配置 Marketo Engage 数据源
 
 <span class="preview">该功能在早期采用者计划下可用。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
 
@@ -36,16 +36,18 @@ ht-degree: 6%
 
 ## 如何为Marketo Engage数据源配置现有自适应表单？
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
+
 要使用Marketo Engage数据源配置自适应表单，请执行以下步骤：
 1. 登录到您的[!DNL Experience Manager Forms]创作实例。
 
-1. 打开自适应表单进行编辑。
-1. 打开内容树并选择&#x200B;**[!UICONTROL 指南容器]**。
-1. 单击自适应表单容器属性![自适应表单容器属性](/help/forms/assets/configure-icon.svg)图标。 将打开用于配置数据源的自适应表单容器对话框。
-1. 打开&#x200B;**[!UICONTROL 数据模型]**&#x200B;选项卡并选择表单模型作为&#x200B;**连接器**。
-1. 从下拉列表中选择&#x200B;**[!UICONTROL 连接器]**。
+2. 打开自适应表单进行编辑。
+3. 打开内容树并选择&#x200B;**[!UICONTROL 指南容器]**。
+4. 单击自适应表单容器属性![自适应表单容器属性](/help/forms/assets/configure-icon.svg)图标。 将打开用于配置数据源的自适应表单容器对话框。
+5. 打开&#x200B;**[!UICONTROL 数据模型]**&#x200B;选项卡并选择表单模型作为&#x200B;**连接器**。
+6. 从下拉列表中选择&#x200B;**[!UICONTROL 连接器]**。
 
-1. 选择&#x200B;**[!UICONTROL 连接器]**&#x200B;后，您可以选择云配置。
+7. 选择&#x200B;**[!UICONTROL 连接器]**&#x200B;后，您可以选择云配置。
 
    ![选择Marketo连接器](/help/forms/assets/select-marketo-connector.png)
 
@@ -53,7 +55,7 @@ ht-degree: 6%
 
    ![Marketo Data Source](/help/forms/assets/marketo-engage-data-source.png)
 
-1. 单击&#x200B;**[!UICONTROL 完成]**。
+8. 单击&#x200B;**[!UICONTROL 完成]**。
 
 或者，您也可以编辑自适应表单属性以更改其关联配置。
 
@@ -81,5 +83,3 @@ ht-degree: 6%
 ## 另请参阅
 
 {{marketo-engage-see-also}}
-
-
