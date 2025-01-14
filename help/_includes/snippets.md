@@ -1,8 +1,8 @@
 ---
-source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
-workflow-type: ht
-source-wordcount: '1323'
-ht-degree: 100%
+source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
+workflow-type: tm+mt
+source-wordcount: '1367'
+ht-degree: 96%
 
 ---
 # 代码片段 {#snippets}
@@ -232,3 +232,11 @@ ht-degree: 100%
    * 当前网站的 URL。例如：`www.mydomain.com`。
    * 原始网站的 URL (`.hlx` URL)。
 
+## 与SPA编辑器相比，首选使用通用编辑器 {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>Adobe仍支持SPA编辑器，但现在用于管理AEM中的Headless内容的首选编辑器包括：
+>
+>* [用于可视化编辑Headless内容的通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)。
+>* [用于基于表单编辑Headless内容的内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)。

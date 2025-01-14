@@ -4,7 +4,7 @@ description: 了解如何创建自己的复合组件，这些组件由使用AEM�
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -18,6 +18,8 @@ ht-degree: 1%
 在AEM单页应用程序(SPA)编辑器框架中正确实施复合组件后，内容作者可以像拖放任何其他组件一样拖放此类组件，但仍可以单独编辑构成复合组件的每个组件。
 
 本文演示了如何将复合组件添加到单页应用程序，以便与AEM SPA编辑器无缝地配合使用。
+
+{{ue-over-spa}}
 
 ## 用例 {#use-case}
 

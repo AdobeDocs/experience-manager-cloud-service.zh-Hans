@@ -4,7 +4,7 @@ description: 在SPA中，页面组件不提供其子组件的HTML元素，而是
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 # SPA 页面组件 {#spa-page-component}
 
 SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HTML元素。 此操作将委派给 SPA 框架。子组件的表示形式作为JSON数据结构（即模型）获取。 然后，根据提供的JSON模型将SPA组件添加到页面。 因此，页面组件初始正文构成不同于其预渲染的HTML对应内容。
+
+{{ue-over-spa}}
 
 ## 页面模型管理 {#page-model-management}
 

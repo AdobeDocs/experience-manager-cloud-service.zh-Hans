@@ -4,7 +4,7 @@ description: 对于AEM中的单页应用程序，由应用程序负责路由。 
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # SPA模型路由{#spa-model-routing}
 
 对于AEM中的单页应用程序，由应用程序负责路由。 本文档介绍了路由机制、合同和可用选项。
+
+{{ue-over-spa}}
 
 ## 项目路由 {#project-routing}
 

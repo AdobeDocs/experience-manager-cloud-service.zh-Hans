@@ -4,7 +4,7 @@ description: 本文介绍了与前端开发人员合作开发适用于AEM的SPA�
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 8%
@@ -16,6 +16,8 @@ ht-degree: 8%
 单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用 SPA 框架构建站点，而作者则希望能够在 AEM 中顺畅地为使用此类框架构建的站点编辑内容。
 
 本文介绍了在让前端开发人员开发SPA for AEM时需要考虑的重要问题，并概述了AEM关于在AEM上部署SPA的架构。
+
+{{ue-over-spa}}
 
 ## AEM的SPA开发原则 {#spa-development-principles-for-aem}
 
@@ -72,17 +74,17 @@ SPA应仅依赖于内容的动态渲染。 这是默认设置，AEM会获取并�
    <th><strong>缺点</strong></th>
   </tr>
   <tr>
-   <td>AEM用作Headless CMS，而不使用<a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK框架。</a></td>
+   <td>AEM用作headless CMS，而不使用<a href="/help/implementing/developing/hybrid/reference-materials.md">SPA Editor SDK框架。</a></td>
    <td>前端开发人员可以完全控制应用程序。</td>
    <td><p>内容作者无法使用AEM的内容创作体验。</p> <p>如果代码包含静态引用或路由，则该代码不可移植或重用。</p> <p>不允许使用模板编辑器，因此前端开发人员必须通过JCR维护可编辑的模板。</p> </td>
   </tr>
   <tr>
-   <td>前端开发人员使用SPA编辑器SDK框架，但只向内容作者打开某些区域。</td>
+   <td>前端开发人员使用SPA Editor SDK框架，但只向内容作者打开某些区域。</td>
    <td>开发人员通过仅在应用程序的受限区域中启用创作，来保持对应用程序的控制。</td>
    <td><p>内容作者仅限于AEM的一组有限内容创作体验。</p> <p>如果代码包含静态引用或路由，则代码存在不可移植或不可重用的风险。</p> <p>不允许使用模板编辑器，因此前端开发人员必须通过JCR维护可编辑的模板。</p> </td>
   </tr>
   <tr>
-   <td>项目完全使用SPA编辑器SDK，前端组件开发为库，应用程序的内容结构委派给AEM。</td>
+   <td>项目完全使用SPA编辑器SDK，前端组件作为库开发，并且应用程序的内容结构委托给AEM。</td>
    <td><p>该应用程序可重用和移植。</p> <p>内容作者可以使用AEM的内容创作体验编辑应用程序。<br /> </p> <p>SPA与模板编辑器兼容。</p> </td>
    <td><p>开发人员无法控制应用程序的结构和委派给AEM的内容部分。</p> <p>开发人员仍可以保留应用程序的区域，以便用于不应使用AEM创作的内容。</p> </td>
   </tr>
@@ -212,4 +214,4 @@ SPA应仅依赖于内容的动态渲染。 这是默认设置，AEM会获取并�
 * [SPA 编辑器概述](editor-overview.md)更深入地介绍了 AEM 和 SPA 之间的通信模型。
 * [WKND SPA项目](wknd-tutorial.md)是在AEM中实施简单SPA项目的分步教程。
 * [SPA的动态模型到组件映射](model-to-component-mapping.md)说明了动态模型到组件映射以及它在AEM中的SPA中的工作方式。
-* [SPA Blueprint](blueprint.md)让您深入了解SPA SDK for AEM的工作原理，以防您想在AEM中为React或Angular以外的框架实施SPA。 或者，您只是希望更深入地了解一下。
+* [SPA Blueprint](blueprint.md)让您深入了解SPA SDK for AEM的工作方式，以防您想要在AEM中为React或Angular以外的框架实施SPA。 或者，您只是希望更深入地了解一下。

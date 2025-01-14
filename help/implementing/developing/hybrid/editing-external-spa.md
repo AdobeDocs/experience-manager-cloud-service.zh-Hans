@@ -4,9 +4,9 @@ description: 本文档介绍了将独立SPA上传到AEM实例、添加内容的�
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2370'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 1%
 # 在 AEM 中编辑外部 SPA {#editing-external-spa-within-aem}
 
 在决定[您希望在外部SPA与AEM之间进行哪种级别的集成](/help/implementing/developing/headful-headless.md)时，请考虑您通常必须能够编辑和查看AEM中的SPA。
+
+{{ue-over-spa}}
 
 ## 概述 {#overview}
 
@@ -79,7 +81,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 * `path` — 初始化时，将获取定义路径上的模型并将其存储在`ModelStore`中。 如果需要，此路径可用于在初始化时获取`rootModel`。
 * `modelClient` — 允许提供负责提取模型的自定义客户端。
-* `model` — 作为参数传递的`model`对象通常在使用[SSR](/help/implementing/developing/hybrid/ssr.md)时填充。
+* `model` — 使用SSR时，通常填充作为参数传递的`model`对象。
 
 ### AEM可授权的叶组件 {#authorable-leaf-components}
 
@@ -370,9 +372,8 @@ RemotePage组件希望该实施提供资产清单，如GitHub](https://github.co
 
 * [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
 * [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [WKND SPA项目](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hans)
+* [WKND SPA项目](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-hans)
 * [在AEM中使用React快速入门SPA](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA参考资料（API参考）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint和PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [SPA模型路由](/help/implementing/developing/hybrid/routing.md)
-* [SPA和服务器端渲染](/help/implementing/developing/hybrid/ssr.md)

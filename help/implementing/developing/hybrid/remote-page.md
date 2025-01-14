@@ -4,7 +4,7 @@ description: RemotePage组件是一个自定义页面组件，用于在AEM中编
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 # RemotePage 组件 {#remote-page-component}
 
 在决定您希望在外部SPA与AEM之间进行[何种级别的集成](/help/implementing/developing/headful-headless.md)时，通常很明显您需要能够查看和编辑AEM中的SPA。 RemotePage组件只是用于此目的的自定义页面组件。
+
+{{ue-over-spa}}
 
 ## 概述 {#overview}
 

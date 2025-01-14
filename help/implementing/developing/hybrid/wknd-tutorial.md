@@ -4,7 +4,7 @@ description: 使用此多部分教程让自己沉浸在SPA开发中，引导您�
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # WKND SPA项目 {#wknd-spa-project}
+
+{{ue-over-spa}}
 
 使用这个多部分教程让自己沉浸在SPA开发中，引导您完成项目设置、组件映射、前端开发工具和应用程序路由，以实施您自己的SPA。
 

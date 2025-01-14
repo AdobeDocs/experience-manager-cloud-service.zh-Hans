@@ -4,7 +4,7 @@ description: 本文介绍了一个SPA应用程序示例，说明它是如何组�
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 6%
@@ -20,6 +20,8 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 >[!NOTE]
 >
 >本文基于Angular框架。 有关React框架的相应文档，请参阅[AEM中的SPA快速入门 — React](getting-started-react.md)。
+
+{{ue-over-spa}}
 
 ## 简介 {#introduction}
 

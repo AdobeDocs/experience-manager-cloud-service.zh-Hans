@@ -4,7 +4,7 @@ description: 本文全面概述了 SPA 编辑器及其工作原理，包括 SPA 
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
@@ -16,6 +16,8 @@ ht-degree: 93%
 单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用 SPA 框架构建站点，而作者则希望能够在 AEM 中顺畅地为使用此类框架构建的站点编辑内容。
 
 SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。此页面概述了 SPA 支持在 AEM 中的结构、SPA 编辑器的工作原理以及 SPA 框架和 AEM 保持同步的方式。
+
+{{ue-over-spa}}
 
 ## 简介 {#introduction}
 

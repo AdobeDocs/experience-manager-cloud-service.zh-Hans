@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 07539e1f0907b87d0b866a2cbcd534bb2c87692b
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '5957'
+source-wordcount: '5954'
 ht-degree: 99%
 
 ---
@@ -1214,6 +1214,7 @@ ht-degree: 99%
       + [使用前端管道开发站点](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [自定义站点模板和主题](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [AEM 中的 Headful 和 Headless](/help/implementing/developing/headful-headless.md)
+      + [禁止通过 Sling 模型导出器序列化 ResourceResolver](/help/implementing/developing/disallow-resourceresolver-serialization.md)
       + 全栈 AEM 开发 {#full-stack}
          + [AEM站点开发入门 – WKND 教程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [AEM UI 的结构](/help/implementing/developing/introduction/ui-structure.md)
@@ -1278,11 +1279,9 @@ ht-degree: 99%
          + [RemotePage 组件](/help/implementing/developing/hybrid/remote-page.md)
          + [在 AEM 中编辑外部 SPA](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA 中的复合组件](/help/implementing/developing/hybrid/composite-components.md)
-         + [服务器端呈现](/help/implementing/developing/hybrid/ssr.md)
          + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-hans)
          + [启动集成](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA 参考文档](/help/implementing/developing/hybrid/reference-materials.md)
-         + [禁止通过 Sling 模型导出器序列化 ResourceResolver](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md)
    + 开发人员工具 {#developer-tools}
       + [开发人员模式](/help/implementing/developing/tools/developer-mode.md)
       + [适用于 Eclipse 的 AEM 开发人员工具](/help/implementing/developing/tools/eclipse.md)

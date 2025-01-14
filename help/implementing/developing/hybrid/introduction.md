@@ -4,7 +4,7 @@ description: 本文介绍了 SPA 的概念，演练了如何使用基本 SPA 应
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
@@ -17,13 +17,15 @@ ht-degree: 93%
 
 SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本文演练了如何使用基本 SPA 应用程序进行创作，并展示了它与底层 AEM SPA Editor 的关系。
 
+{{ue-over-spa}}
+
 ## 简介 {#introduction}
 
 ### 文章目标 {#article-objective}
 
 本文先介绍了 SPA 的基本概念，然后使用简单 SPA 应用程序来演示基本内容编辑，从而引导完成浏览 SPA 编辑器演练。随后，深入探究了页面构造以及 SPA 应用程序如何与 AEM SPA Editor 相关并与之交互。
 
-此简介和演练的目的是，向 AEM 开发人员说明 SPA 为何相关及其通常如何工作、AEM SPA Editor 如何处理 SPA，以及它与标准 AEM 应用程序的差异。
+此简介和演练的目标是，向 AEM 开发人员说明 SPA 为何相关及其通常如何工作、AEM SPA Editor 如何处理 SPA，以及它与标准 AEM 应用程序的差异。
 
 ## 要求 {#requirements}
 
