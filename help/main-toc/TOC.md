@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+source-git-commit: bd2162d7b2187637d76a5182a0cae39b5bac8791
 workflow-type: tm+mt
-source-wordcount: '5954'
+source-wordcount: '5958'
 ht-degree: 99%
 
 ---
@@ -206,6 +206,7 @@ ht-degree: 99%
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
+         + [2024.12.02发行说明](/help/release-notes/universal-editor/2024/2024-12-02.md)
          + [2024.11.13 发行说明](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [2024.11.05 发行说明](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [2024.10.29 发行说明](/help/release-notes/universal-editor/2024/2024-10-29.md)
@@ -224,7 +225,7 @@ ht-degree: 99%
    + [AEM as a Cloud Service 的安全性概述](/help/security/cloud-service-security-overview.md)
    + [为 AEM as a Cloud Service 配置高级联网功能](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service 的 IMS 支持](/help/security/ims-support.md)
-   + [用户组和产品配置文件同步中的更改](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
+   + [用户组和产品轮廓同步变更](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
    + [面向 AEM as a Cloud Service 的相同网站 Cookie 支持](/help/security/same-site-cookie-support.md)
    + [对邮件服务的 OAuth2 支持](/help/security/oauth2-support-for-mail-service.md)
    + [流量过滤规则（包括 WAF 规则）](/help/security/traffic-filter-rules-including-waf.md)
