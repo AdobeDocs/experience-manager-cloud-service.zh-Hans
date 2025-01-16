@@ -4,10 +4,10 @@ description: 了解如何在使用 Edge Delivery Services 项目进行的所见�
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe 建议您采用三阶段方法来开发块：
 
 ![克隆项目](assets/create-block/clone.png)
 
-2\. 编辑项目根目录中的[`component-definition.json`文件](/help/implementing/universal-editor/component-definition.md)，并为新报价块添加以下定义并保存文件。
+2\. 编辑项目的根目录下的 [`component-definition.json` 文件](/help/implementing/universal-editor/component-definition.md)，为新的引用区块添加以下定义并保存该文件。
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ Adobe 建议您采用三阶段方法来开发块：
 
 >[!ENDTABS]
 
-4\. 编辑项目根目录中的[`component-filters.json`文件](/help/implementing/universal-editor/customizing.md#filtering-components)，并将引用块添加到[筛选器定义](/help/implementing/universal-editor/customizing.md#filtering-components)中，以允许将该块添加到任何部分并保存该文件。
+4\. 编辑项目的根目录下的 [`component-filters.json` 文件](/help/implementing/universal-editor/filtering.md)，将引用块添加到[过滤器定义](/help/implementing/universal-editor/filtering.md)，以允许将此块添加到任意部分并保存该文件。
 
 >[!BEGINTABS]
 

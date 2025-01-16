@@ -4,10 +4,10 @@ description: 了解不同的扩展点和其他功能，这些功能允许您自�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
+source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
@@ -41,39 +41,7 @@ ht-degree: 1%
 
 ### 筛选组件 {#filtering-components}
 
-使用通用编辑器时，您可以限制每个容器组件允许的组件。 为此，必须引入额外的脚本标记，该标记指向过滤器定义。
-
-```html
-<script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
-```
-
-过滤器定义可能如下所示，这将限制容器仅允许添加文本和图像。
-
-```json
-[
-  {
-    "id": "container-filter",
-     "components": ["text", "image"]
-   }
-]
-```
-
-然后，您可以通过添加属性`data-aue-filter`，传递您之前定义的筛选器的ID，从容器组件中引用筛选器定义。
-
-```html
-data-aue-filter="container-filter"
-```
-
-将筛选器定义中的`components`属性设置为`null`将允许所有组件，就像没有筛选器一样。
-
-```json
-[
-  {
-    "id": "another-container-filter",
-     "components": null
-   }
-]
-```
+您可以使用组件过滤器在通用编辑器中限制每个容器允许的组件。 有关详细信息，请参阅文档[筛选组件](/help/implementing/universal-editor/filtering.md)。
 
 ### 有条件地显示和隐藏属性面板中的组件 {#conditionally-hide}
 
@@ -120,7 +88,7 @@ data-aue-filter="container-filter"
 
 您可以通过`urn:adobe:aue:config:preview`元配置指定自定义预览URL，单击[编辑器右上角工具栏中的&#x200B;**打开页面**&#x200B;按钮时，将打开该配置。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-这对于具有特定预览要求的应用程序特别有用，例如那些将Edge Delivery Services与WYSIWYG创作结合使用的[。](/help/edge/wysiwyg-authoring/authoring.md)
+这对于具有特定预览要求的应用程序特别有用，例如那些[使用具有所见即所得创作的 Edge Delivery Services 的应用程序。](/help/edge/wysiwyg-authoring/authoring.md)
 
 要实现此目的，只需将所需的预览URL包含在所检测应用程序的meta标记中，如下例所示。
 

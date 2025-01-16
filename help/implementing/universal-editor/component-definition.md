@@ -3,13 +3,13 @@ title: 组件定义
 description: 详细了解组件定义与通用编辑器之间的JSON约定。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # 组件定义 {#component-definition}
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 * `title`定义UI中显示的组件的文本说明。
 * `id`唯一标识该组件。
    * 同一`id`的[组件模型](/help/implementing/universal-editor/field-types.md#model-structure)定义了组件的字段。
-   * 由于它是唯一的，因此例如可在[筛选器定义](/help/implementing/universal-editor/customizing.md#filtering-components)中使用它来确定可将哪些组件添加到容器中。
+   * 由于它是唯一的，因此例如可在[筛选器定义](/help/implementing/universal-editor/filtering.md)中使用它来确定可将哪些组件添加到容器中。
 
 ## `plugins` {#plugins}
 

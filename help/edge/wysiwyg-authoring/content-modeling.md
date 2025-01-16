@@ -4,10 +4,10 @@ description: 了解使用 Edge Delivery Services 项目进行所见即所得创�
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 99%
 
 请注意，并非每个块都必须具有模型。一些块只是子级列表的[容器](#container)，其中每个子级都具有自己的模型。
 
-还需要定义哪些块存在并可使用 Universal Editor 将其添加到页面中。[`component-definitions.json`](/help/implementing/universal-editor/component-definition.md)文件列出了通用编辑器提供的组件。
+还需要定义哪些块存在并可使用 Universal Editor 将其添加到页面中。[`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) 文件列出了由 Universal Editor 提供的组件。
 
 ```json
 {
@@ -113,7 +113,7 @@ ht-degree: 99%
    * 块名称用于获取正确的样式和脚本，以装饰块。
 * 可以定义[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure)。
    * 模型 ID 是对组件模型的引用，它定义了作者在属性面板中可用的字段。
-* 可以定义[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components)。
+* 可以定义[过滤器 ID](/help/implementing/universal-editor/filtering.md)。
    * 过滤器 ID 是对组件过滤器的引用，它允许更改创作行为，例如通过限制可以将哪些子项添加到块或部分，或者启用哪些 RTE 功能。
 
 在将块添加到页面时，所有这些信息都存储在 AEM 中。如果缺少资产类型或块名称，则该块将不会在页面上呈现。
@@ -245,7 +245,7 @@ ht-degree: 99%
 
 前面的两个结构都具有一个维度：属性列表。容器块允许添加子级（通常属于相同类型或模型），因此是二维的。这些块仍支持首先将其属性呈现为具有单列的行。但它们还允许添加子级，其中每个项目呈现为行，每个属性呈现为该行中的列。
 
-在以下示例中，块接受链接图标列表作为子级，其中每个链接的图标均有一个图像和一个链接。请注意块数据中设置的[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components)，以便引用过滤器配置。
+在以下示例中，块接受链接图标列表作为子级，其中每个链接的图标均有一个图像和一个链接。请注意块数据中设置的[过滤器 ID](/help/implementing/universal-editor/filtering.md)，以便引用过滤器配置。
 
 >[!BEGINTABS]
 
@@ -536,9 +536,9 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 Edge Delivery Services 的内容模型有意只允许单级嵌套，即部分包含的任何默认内容或块。这意味着，要拥有可包含其他组件的更复杂的视觉组件，必须使用自动屏蔽客户端将它们作为部分进行建模和组合。典型示例是选项卡和可折叠部分，例如可折叠项。
 
-可按照定义块的方式定义部分，但资产类型为 `core/franklin/components/section/v1/section`。部分可具有一个名称、一个[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components)（仅由 [Universal Editor](/help/implementing/universal-editor/introduction.md) 使用）和一个[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure)（用于呈现部分元数据）。这样一来，模型便为部分元数据块的模型，如果它不为空，则会自动作为键值块附加到部分中。
+可按照定义块的方式定义部分，但资产类型为 `core/franklin/components/section/v1/section`。部分可具有一个名称、一个[过滤器 ID](/help/implementing/universal-editor/filtering.md)（仅由 [Universal Editor](/help/implementing/universal-editor/introduction.md) 使用）和一个[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure)（用于呈现部分元数据）。这样一来，模型便为部分元数据块的模型，如果它不为空，则会自动作为键值块附加到部分中。
 
-默认部分的[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure) 和[过滤器 ID](/help/implementing/universal-editor/customizing.md#filtering-components) 是 `section`。它可用于更改默认部分的行为。以下示例将一些样式和背景图像添加到部分元数据模型。
+默认部分的[模型 ID](/help/implementing/universal-editor/field-types.md#model-structure) 和[过滤器 ID](/help/implementing/universal-editor/filtering.md) 是 `section`。它可用于更改默认部分的行为。以下示例将一些样式和背景图像添加到部分元数据模型。
 
 ```json
 {
