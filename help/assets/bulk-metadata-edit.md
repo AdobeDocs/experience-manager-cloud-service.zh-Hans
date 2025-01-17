@@ -1,10 +1,10 @@
 ---
 title: 在Assets视图中批量编辑元数据
-description: 了解如何在Assets视图中同时编辑多个可用资源的元数据。
+description: 了解如何在Assets视图中同时更新多个可用资源的预定义标准元数据字段集。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 55cb3bb5771c154191fe5b59e56cf9f077590169
+source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
