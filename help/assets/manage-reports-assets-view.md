@@ -4,10 +4,10 @@ description: 访问资源视图的报表部分中的数据，即可评估产品�
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
+source-git-commit: c92fc95d7f2774b24664b457bf785120945fc966
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 67%
+source-wordcount: '1540'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 67%
 
 所有分配给AEM管理员产品配置文件的用户均可在Assets视图中访问分析仪表板或创建用户定义的报表。
 
-要访问报告，请导航到&#x200B;**[!UICONTROL 设置]**&#x200B;下方的&#x200B;**[!UICONTROL 报告]**。
+要访问报告，请导航到 **[!UICONTROL 设置]**&#x200B;下方的 **[!UICONTROL 报告]**。
 
 ![报告](assets/reports.png)
 
@@ -48,7 +48,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 
    **在“配置”选项卡中：**
 
-   1. **报告类型：**&#x200B;从[!UICONTROL 上传]、[!UICONTROL 下载]或[Dynamic Media交付报告](#dynamic-media-delivery-reports)类型中进行选择。
+   1. **报告类型：**&#x200B;选择 [!UICONTROL 上传]、[!UICONTROL 下载]或[ Dynamic Media 投放报告](#dynamic-media-delivery-reports)类型。
    1. **标题：**&#x200B;为报告添加标题。
    1. **描述：**&#x200B;为报告添加可选描述。
    1. **选择文件夹路径：**&#x200B;选择一个文件夹路径，生成该特定文件夹内上传和下载资产的报告。例如，如果需要上传至文件夹的资产报告，请指定该文件夹的路径。
@@ -115,7 +115,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
      </tr>
      <tr>
       <td>到期</td>
-      <td>资产的到期状态。</td>
+      <td>资产的过期状态。</td>
       <td>上传和下载</td>
      </tr>
      <tr>
@@ -124,64 +124,66 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
       <td>下载</td>
      </tr> 
      <tr>
-      <td>引用</td>
-      <td>交付或包含资产的URL</td>
+      <td>反向链接</td>
+      <td>资产投放或包含的 URL</td>
       <td>Dynamic Media 投放</td>
      </tr>  
      <tr>
       <td>点击量</td>
-      <td>交付资产的次数（投放计数）</td>
+      <td>资产投放的次数（投放计数）</td>
       <td>Dynamic Media 投放</td>
      </tr>          
     </tbody>
    </table>
 
-## Dynamic Media投放报告 {#dynamic-media-delivery-reports}
+## Dynamic Media 投放报告 {#dynamic-media-delivery-reports}
 
-获取通过 Dynamic Media 投放资产的投放洞察，包括资产级别投放计数、推荐人信息、AEM Assets 中的资产路径和唯一资产 ID。可以为AEM Assets存储库中通过Dynamic Media交付的所有资源或AEM Assets中的特定文件夹层次结构生成报表。 此外，Dynamic Media交付报表分析有助于衡量所交付资产的ROI、衡量渠道绩效并帮助执行针对资产的明智资源管理任务。
+获取通过 Dynamic Media 投放资产的投放洞察，包括资产级别投放计数、反向链接信息、AEM Assets 中的资产路径和唯一资产 ID。可针对通过 AEM Assets 存储库 Dynamic Media 投放的所有资产或 AEM Assets 中的特定文件夹层级生成报告。此外，Dynamic Media 投放报告洞察有助于衡量投放资产的 ROI、衡量渠道性能，并有助于对资产采取明智的资产管理任务。
 
+<!--
 >[!NOTE]
 > 
->若要提前访问您Dynamic Media帐户的Dynamic Media交付报告，请[创建并提交Adobe的客户支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+-->
 
 ### 先决条件 {#prereqs-dynamic-media-delivery-reports}
 
-您应该具有Dynamic Media许可证才能创建并使用此报表。
+您应该拥有 Dynamic Media 许可证才能创建和使用此报告。
 
 >[!IMPORTANT]
 > 
->* 提供通过动态媒体投放的资产的报告。
->* 报告针对前 100 万行生成。要捕获此限制内的所有文件，请考虑为较小的文件夹添加引荐来源列。
+>* 提供通过 Dynamic Media 投放的资产的报告。
+>* 报告针对前 100 万行生成。要捕获此限制内的所有文件，请考虑为较小的文件夹添加反向链接列。
 >* 仅可生成过去 3 个月的报告。
 
-### 创建Dynamic Media投放报告{#create-dynamic-media-delivery-report}
+### 创建 Dynamic Media 投放报告{#create-dynamic-media-delivery-report}
 
-1. 使用[创建报告](#create-report)中所述的步骤创建Dynamic Media投放报告。
+1. 使用[创建报告](#create-report)中提到的步骤创建 Dynamic Media 投放报告。
 
-1. 从&#x200B;**[!UICONTROL 报告类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Dynamic Media投放]**。
+1. 从 **[!UICONTROL 报告类型]**&#x200B;下拉列表中选择 **[!UICONTROL Dynamic Media 投放]**。
 
-   ![Dynamic Media投放报告下拉列表](assets/dynamic-media-delivery-report-option.png)
+   ![Dynamic Media 投放报告下拉菜单](assets/dynamic-media-delivery-report-option.png)
 
 
-1. 在&#x200B;**[!UICONTROL 列]**&#x200B;选项卡中，您可以选择&#x200B;**[!UICONTROL 反向链接]**&#x200B;列以将其包含在您的报表中。
+1. 在 **[!UICONTROL 列]**&#x200B;选项卡中，您可以选择 **[!UICONTROL 反向链接]**&#x200B;列，以将其包含在报告中。
 
    ![反向链接](assets/referrer.png)
 
-   下载的报表的所有列都是只读的，但&#x200B;**反向链接**&#x200B;列除外，您可以将其修改为包含或排除在此报表中。<!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
+   下载的报告中的所有列都是只读的，但&#x200B;**反向链接**&#x200B;列除外，您可以修改该列以将其包含在报告中或从报告中排除。<!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
 
-### 对Dynamic Media投放报告执行的操作 {#actions-performed-dynamic-media-delivery-reports}
+### 对 Dynamic Media 投放报告执行的操作 {#actions-performed-dynamic-media-delivery-reports}
 
 创建报告后，您可以执行以下操作：
 
-* **[!UICONTROL 删除]**：您可以删除所选的报告。
-* **[!UICONTROL 下载CSV]**：您可以以CSV格式下载选定的报表。 下载的报表包含名称、路径、DynamicMediaID、反向链接、点击量列。
-   * **反向链接**&#x200B;列列出了交付或包含资产的URL。
+* **[!UICONTROL 删除]**：您可以删除选定的报告。
+* **[!UICONTROL 下载 CSV]**：您可以以 CSV 格式下载选定的报告。下载的报告包含名称、路径、DynamicMediaID、反向链接、点击量列。
+   * **反向链接**&#x200B;列列出了资产投放或包含的 URL。
 
-   * **点击**&#x200B;列列出了交付资产的次数（投放计数）。
+   * **点击量**&#x200B;列列出了资产被投放的次数（投放计数）。
 
-要删除或下载CSV格式的Dynamic Media交付报表，请参阅[查看和下载现有报表](#View-and-download-existing-report)。
+要删除或下载 CSV 格式的 Dynamic Media 投放报告，请参阅[查看和下载现有报告](#View-and-download-existing-report)。
 
-![已下载Dynamic Media投放报告中的CSV](assets/csv-dynamic-media-delivery-report.png)
+![下载的 Dynamic Media 投放报告 CSV](assets/csv-dynamic-media-delivery-report.png)
 
 
 ## 查看和下载现有报告 {#View-and-download-existing-report}
@@ -238,7 +240,7 @@ AEM Assets视图环境通过报表仪表板提供全面的报表功能。 这项
 
 <!--![Toolbar options when you select an asset](assets/assets-view-live-statistics.png)-->
 
-单击可在左侧导航窗格中找到的&#x200B;**[!UICONTROL 见解]**&#x200B;以查看以下自动生成的图表：
+单击可在左侧导航窗格中找到的 **[!UICONTROL 见解]**&#x200B;以查看以下自动生成的图表：
 
 * **下载**：过去30天或12个月从Assets视图环境下载的资源数量，用折线图表示。
   ![分析 — 下载](/help/assets/assets/insights-downloads2341.svg)
