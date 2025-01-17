@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b491afccbd9e92b59c3d752c0d066efd34f2c776
+source-git-commit: 69cb4bb962e495725dfffff89bcddc16ce65cab1
 workflow-type: tm+mt
-source-wordcount: '5960'
+source-wordcount: '5961'
 ht-degree: 99%
 
 ---
@@ -233,7 +233,7 @@ ht-degree: 99%
    + [Adobe Developer Console 中的 JWT 凭据弃用](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [为 AEM as a Cloud Service 设置 IMS 集成](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Sling Service 用户映射和服务用户定义的最佳实践](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
-   + [客户管理的用于Adobeas a Cloud Service的密钥](/help/security/customer-managed-keys.md)
+   + [Adobe as a Cloud Service 客户管理的密钥](/help/security/customer-managed-keys.md)
 + 上线 {#onboarding}
    + [从此处开始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hans)
    + 上线历程 {#journey}
@@ -649,6 +649,7 @@ ht-degree: 99%
       + [管理收藏集](/help/assets/manage-collections-assets-view.md)
       + [监视资产、文件夹和收藏集](/help/assets/manage-notifications-assets-view.md)
       + [管理报表](/help/assets/manage-reports-assets-view.md)
+      + [重新处理](/help/assets/reprocessing-assets-view.md)
       + [管理标记](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
       + [发布资产到 AEM 和 Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
