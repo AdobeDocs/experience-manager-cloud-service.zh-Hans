@@ -1,15 +1,15 @@
 ---
-title: 在Assets视图中批量编辑元数据
+title: 在资产视图中批量元数据编辑
 description: 了解如何在Assets视图中同时更新多个可用资源的预定义标准元数据字段集。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
+source-git-commit: f986cbc979ecdb9e704257a8b94db9de0d67d4f1
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 在Assets视图中批量编辑元数据{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
+# 在资产视图中批量元数据编辑{#how-to-edit-the-metadata-of-multiple-assets-simultaneously}
 
 Assets视图中的&#x200B;**批量元数据编辑**&#x200B;功能允许用户同时为多个资源文件编辑预定义的标准元数据字段集。 选择多个资源并一次批量更新其预定义的标准元数据集，而不是为每个资源单独更新这些标准元数据。 此功能提高了标准元数据属性在大量资产中的效率、一致性和准确性，从而提高资产的可搜索性和组织性。
 
@@ -34,7 +34,7 @@ Assets视图中的&#x200B;**批量元数据编辑**&#x200B;功能允许用户同
      >
      >您可以一次编辑100个资源的元数据。
 
-要查看更新到资源的已应用元数据，请导航到资源详细信息页面（选择资源，然后单击&#x200B;**详细信息**），然后单击![](/help/assets/assets/info-icon-solid-black.svg)，在&#x200B;**信息**&#x200B;面板中查看资源的元数据。
+要查看对某个资源应用的元数据更新，请导航到资源详细信息页面（选择资源，然后单击&#x200B;**详细信息**），然后单击![](/help/assets/assets/info-icon-solid-black.svg)，在&#x200B;**信息**&#x200B;面板中查看该资源的元数据。
 
 >[!NOTE]
 >
