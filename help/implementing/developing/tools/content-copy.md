@@ -4,10 +4,10 @@ description: 内容复制工具使用户能够按需将可变内容从其AEM as 
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
+source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 36%
 
 ---
 
@@ -200,10 +200,3 @@ ht-degree: 34%
 * 内容复制工具没有版本控制功能，并且自上次内容复制操作以来，无法自动检测内容集中的源环境中已修改的内容或已创建的内容。
    * 如果只想使用内容更改来更新目标环境，则自上次内容复制操作以来，您必须创建一个内容集。 然后，指定自上次内容复制操作以来在其中进行了更改的源实例上的路径。
 * 版本信息不包含在内容副本中。
-
-## 已知问题 {#known-issues}
-
-在使用[内容复制功能时，请注意以下已知问题。](/help/implementing/developing/tools/content-copy.md)
-
-* 如果重命名源环境中的资源，则可能会由于目标环境中的冲突UUID而导致内容复制操作失败。
-   * 要避免此错误，请首先删除资源，然后使用所需的新资源名称重新创建，而不是重命名资源。
