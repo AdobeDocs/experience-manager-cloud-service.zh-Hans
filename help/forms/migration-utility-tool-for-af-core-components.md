@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
+source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 4%
+source-wordcount: '1060'
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,18 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 * 成功转换后，将删除应用于表单的所有规则。 规则不会自动迁移。 您应该手动重新创建这些规则，并将其应用到转换后的表单。
 * 原始表单中使用的翻译设置不会延续。 为转换后的表单重新配置翻译。
-  <!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
+* 如果基于基础组件构建的表单包含脚本或自定义函数规则，则必须为基于核心组件的转换表单重写这些脚本或规则。
+* 核心组件尚不支持以下OOTB基础组件，因此将以转换后的形式将其删除：
+   * Adobe Sign Block
+   * 图表
+   * 文件附件列表
+   * 脚注占位符
+   * 图像选择
+   * “下一个”按钮
+   * 上一按钮
+   * 潦草签名
+   * 摘要步骤
+   * 工具栏
 
 ## 使用AEM现代化工具的先决条件
 
@@ -68,7 +79,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
    `java -jar aem-author-p4502.jar`
 
-1. 在本地系统中克隆[AEM Modernize Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)存储库。
+1. 在本地系统中克隆[AEM Modernize Tool](https://github.com/adobe/forms-modernizer)存储库。
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
@@ -97,7 +108,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 1. 导航到`http://[host]:[port]/system/console/configMgr`
 1. 查找并编辑`AEM Modernize Tools - Component Rewrite Rule Service`。
 1. 将`Component Rule Paths`添加为`/apps/forms-modernizer/rules`。
-1. 单击&#x200B;**保存**&#x200B;以保存更改。
+1. 点击&#x200B;**保存**&#x200B;即可保存更改。
 
 ![AEM现代化组件规则](/help/forms/assets/aem-modernize-tools-component-rule.png)
 

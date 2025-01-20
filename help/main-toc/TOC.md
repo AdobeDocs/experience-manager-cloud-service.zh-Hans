@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 69cb4bb962e495725dfffff89bcddc16ce65cab1
+source-git-commit: 74b0c51c00601b645e9eba537c632efb3f48fb79
 workflow-type: tm+mt
-source-wordcount: '5961'
+source-wordcount: '5967'
 ht-degree: 99%
 
 ---
@@ -398,7 +398,7 @@ ht-degree: 99%
          + [如何构建目标内容的多站点管理](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [管理活动](/help/sites-cloud/authoring/personalization/activities.md)
          + [管理受众](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [创建和管理优惠（优惠控制台）](/help/sites-cloud/authoring/personalization/offers.md)
+         + [创建和管理产品建议（产品建议控制台）](/help/sites-cloud/authoring/personalization/offers.md)
          + [了解分段](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [使用 ContextHub 配置分段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [注册、登录和用户配置文件](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -1020,6 +1020,7 @@ ht-degree: 99%
          + [使用 reCAPTCHA 保护您的表单](/help/edge/docs/forms/recaptacha-forms.md)
          + [自定义组件](/help/edge/docs/forms/custom-components-forms.md)
          + [表单的实际使用监控](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
+         + [发布Forms以进行Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
       + 引用 {#forms-references}
          + [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 资产 {#resources}

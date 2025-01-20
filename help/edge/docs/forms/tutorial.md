@@ -4,10 +4,10 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+workflow-type: tm+mt
+source-wordcount: '1806'
+ht-degree: 92%
 
 ---
 
@@ -61,27 +61,27 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    >
    > 如果您使用带有 IP 过滤功能的 GitHub Enterprise，则可以将以下 IP 添加到允许列表：3.227.118.73
 
-   恭喜！您有一个在 `https://<branch>--<repo>--<owner>.hlx.page/` 上运行的新网站。
+   恭喜！您有一个在 `https://<branch>--<repo>--<owner>.aem.page/` 上运行的新网站。
 
    * `<branch>` 指 GitHub 存储库的分支。
    * `<repository>` 表示您的 GitHub 存储库。
    * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
-   例如，如果分支名称为 `main`，存储库为 `wefinance`，所有者为 `wkndforms`，则网站将在 [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/) 启动并运行。
+   例如，如果分支名称为`main`，存储库为`wefinance`，所有者为`wkndform`，则网站将在[https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)上启动并运行
 
 
 
 ### 链接您自己的内容源
 
-您新创建的 GitHub 存储库指向[存储在 Google Drive 文件夹](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ)中的示例内容。此只读内容为您的表单提供了一个很好的起点。请随意将其复制到您自己的 Google Drive 中并对其进行自定义以满足您的需求。
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Google Drive 上的示例内容](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 要将示例内容复制到您自己的内容文件夹并将 GitHub 存储库指向您自己的内容文件夹：
 
 1. 在 Google Drive 或 Microsoft SharePoint 中专门为您的 AEM 内容创建一个新文件夹。本文档使用在 Microsoft SharePoint 上创建的文件夹。
 
-1. 与 Adobe Experience Manager 用户（helix@adobe.com）共享该文件夹。
+1. 与Adobe Experience Manager用户共享文件夹(forms@adobe.com)。
 
    ![使用“管理访问权限”选项与 AEM 用户共享文件夹 - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -90,13 +90,13 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
    确保您已向 Adobe Experience Manager 用户提供对该文件夹的编辑权限。
 
-   ![与 AEM 用户共享文件夹，提供编辑权限- SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![与AEM用户共享文件夹，提供编辑权限 — SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![与 AEM 用户共享文件夹，提供编辑权限 - Google Drive](/help/edge/assets/add-aem-user-google-folder.png)
+   ![与AEM用户共享文件夹，提供编辑权限 — Google驱动器](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. 将 [Google Drive 文件夹中存储的示例内容复制到](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_)您的文件夹。复制：
+1. 将[示例内容](/help/edge/assets/wefinance1.zip)复制到您的文件夹。 复制：
 
-   1. 一起下载文件或下载单个文件。
+   1. 解压缩下载的文件夹并复制内容。
 
       ![下载示例内容](/help/edge/assets/download-sample-content.png)
 
@@ -113,7 +113,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
    1. 转到您之前使用 AEM Forms Boilerplate 创建的 GitHub 存储库。
    1. 打开 `fstab.yaml` 以供编辑。
-   1. 将现有引用替换为您与 AEM 用户共享的文件夹的路径（helix@adobe.com）。
+   1. 将现有引用替换为您与AEM用户共享的文件夹的路径(forms@adobe.com)。
 
       ![Google Drive 上的示例内容](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -175,7 +175,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 
    ```HTML
-   https://<branch>--<repository>--<owner>.hlx.live
+   https://<branch>--<repository>--<owner>.aem.live
    ```
 
    * `<branch>` 指 GitHub 存储库的分支。
@@ -183,11 +183,9 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
 
-   `https://<branch>--<repo>--<owner>.hlx.page/enquiry` URL.
+   `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   例如，如果您的项目存储库名为“wefinance”，位于帐户所有者“wkndforms”下，并且您使用的是“main”分支，则 URL 为：
-
-   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page)
+   例如，如果项目的存储库名为“wefinance”，它位于帐户所有者“wkndform”下，并且您使用“main”分支和表单名称作为`enquiry`，则URL为：[https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)。
 
 ### 创建表单
 
@@ -195,11 +193,11 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 ![查询表格](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-让我们从更新字段标签开始。打开“查询”表进行编辑，将提交按钮的标签更改为 `Let's Chat`，并使用 AEM Sidekick 预览和发布该文件。
+让我们从更新字段标签开始。打开“查询”表进行编辑，将提交按钮的标签更改为 `Let's Talk`，并使用 AEM Sidekick 预览和发布该文件。
 
 ![查询表格](/help/edge/assets/enquiry-form-preview-publish.png)
 
-当您预览或发布文件时，该文件的 JSON 版本将显示在新选项卡中。复制文件的预览 (.hlx.page) 或发布 (.hlx.live) URL。
+当您预览或发布文件时，该文件的 JSON 版本将显示在新选项卡中。复制文件的预览(.aem.page)或发布(.aem.live) URL。
 
 ![表单电子表格的 JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -216,13 +214,16 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 
 ```HTML
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ```
 
-提交按钮的标签更新为 `Let's Chat`。
+提交按钮的标签更新为 `Let's Talk`。
 
-![查询表格](/help/edge/assets/updated-form.png)
+[![查询表单](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+
+URL： [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+
 
 有关创建和发布新表单的详细信息，请参阅[创建表单](/help/edge/docs/forms/create-forms.md)指南。
 
@@ -254,8 +255,8 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 
 准备好展示您的创作了吗？使用 Git 提交并推送您的更改。这将更新可通过以下 URL 访问的预览和生产环境（将占位符替换为您的项目详细信息）：
 
-预览：`https://<branch>--<repo>--<owner>.hlx.page/`
-制作：`https://<branch>--<repo>--<owner>.hlx.live/`
+预览：`https://<branch>--<repo>--<owner>.aem.page/`
+制作：`https://<branch>--<repo>--<owner>.aem.live/`
 
 恭喜！您已成功设置本地开发环境并部署了更改。
 

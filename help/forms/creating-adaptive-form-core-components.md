@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 66fd6f506aa8dddc2a948b3c7a07134b9ae3df54
+source-git-commit: 812b1e41b460783d3fa220bd24ecfcfd4208a5df
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 52%
+source-wordcount: '2370'
+ht-degree: 51%
 
 ---
 
-# 创建自适应表单 {#creating-an-adaptive-form-core-components}
+# 创建自适应表单（核心组件） {#creating-an-adaptive-form-core-components}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
