@@ -1,14 +1,14 @@
 ---
 title: 创作内容片段
-description: 了解如何为内容片段创作内容，并根据用途创建该内容的变体。 这让投放 Headless 和创造页面变得更加灵活。
+description: 了解如何为内容片段创作内容，并根据用途创建该内容的变体。 内容片段为Headless投放和页面创作增加了灵活性。
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
+source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
 workflow-type: tm+mt
-source-wordcount: '2841'
-ht-degree: 73%
+source-wordcount: '2851'
+ht-degree: 72%
 
 ---
 
@@ -68,7 +68,9 @@ ht-degree: 73%
 * 中央面板：显示所选变体的实际字段和内容
    * 使您可编辑内容
       * 当在模型中配置为（多个）时，各种数据类型允许您&#x200B;**添加相关字段的**&#x200B;个实例
-   * 如果在模型中定义了&#x200B;**选项卡占位符**&#x200B;字段，则它们将显示在此处，并且可用于导航；它们将会水平显示或作为下拉列表显示。
+   * 如果在模型中定义了&#x200B;**制表符占位符**&#x200B;字段，则它们将显示在此处，并且：
+      * 可用于导航
+      * 将水平显示或以下拉列表形式显示
 
   >[!NOTE]
   >
@@ -102,7 +104,7 @@ ht-degree: 73%
 
 ### 关注链接 {#follow-links}
 
-在编辑器的各个部分中，您可以看到链接图标。 这可用于打开显示的项目；例如，内容片段模型、父引用或被引用的片段：
+在编辑器的各个部分中，您可以看到链接图标。 此图标可用于打开显示的项目；例如，内容片段模型、父引用或引用的片段：
 
 ![内容片段编辑器 - 链接图标](assets/cf-authoring-link-icon.png)
 
@@ -475,7 +477,7 @@ ht-degree: 73%
 
 ## 评论您的片段 {#commenting-on-your-fragment}
 
-右侧面板中的&#x200B;**注释**&#x200B;选项卡提供以下功能：
+为了使您能够在产品内和上下文中协作，右侧面板中的&#x200B;**注释**&#x200B;选项卡提供了以下功能：
 
 * 添加新评论
 * 在评论中标记特定用户
