@@ -1,7 +1,7 @@
 ---
-source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1371'
 ht-degree: 96%
 
 ---
@@ -66,6 +66,7 @@ ht-degree: 96%
 * [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
+* [使用表单提交服务](/help/forms/forms-submission-service.md)
 
 
 ## 核心组件中的规则编辑器与基础组件中的规则编辑器之间的区别 {#rule-editor-diff}

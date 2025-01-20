@@ -4,7 +4,7 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 92%
@@ -67,7 +67,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    * `<repository>` 表示您的 GitHub 存储库。
    * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
-   例如，如果分支名称为`main`，存储库为`wefinance`，所有者为`wkndform`，则网站将在[https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)上启动并运行
+   例如，如果分支名称为`main`，存储库为`wefinance`，所有者为`wkndform`，则网站将在[https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)上启动并运行
 
 
 
