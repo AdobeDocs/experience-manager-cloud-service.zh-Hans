@@ -4,7 +4,7 @@ description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 16379d9cb7cdf876502205c12a233a95b410a67a
+source-git-commit: 9c684e3a82353c9e241efc9ee1f3bed694d8635a
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 3%
@@ -174,7 +174,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 对于本地开发，开发人员具有对CRXDE Lite(`/crx/de`)和AEM Web控制台(`/system/console`)的完全访问权限。
 
-在本地开发（使用SDK）中，`/apps`和`/libs`可以直接写入，这与那些顶级文件夹不可变的云环境不同。
+在本地开发(使用SDK)中，`/apps`和`/libs`可以直接写入，这与那些顶级文件夹不可变的云环境不同。
 
 ### AEM as a Cloud Service 开发工具 {#aem-as-a-cloud-service-development-tools}
 
@@ -191,7 +191,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 AEM as a Cloud Service Developer Console中为RDE、开发、暂存和生产环境提供了一组用于调试AEM as a Cloud Service开发人员环境的工具。 可以通过调整Author或Publish服务URL来确定URL，如下所示：
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 作为快捷方式，以下Cloud Manager CLI命令可用于基于如下所述的环境参数启动AEM as a Cloud Service Developer Console：
 
