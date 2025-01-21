@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: 268c7357e77412d177aa29dfd22ce381192f13d6
 workflow-type: tm+mt
-source-wordcount: '5971'
+source-wordcount: '5978'
 ht-degree: 99%
 
 ---
@@ -87,6 +87,8 @@ ht-degree: 99%
          + [2020.2.0 的发行说明](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
    + AEMaaCS 维护发行说明{#maintenance}
       + [当前维护发行说明](/help/release-notes/maintenance/latest.md)
+      + 2025 {#2025}
+         + [2025.1.0 的维护发行说明](/help/release-notes/maintenance/2025/2025-1-0.md)
       + 2024 {#2024}
          + [2024.11.0 的维护发行说明](/help/release-notes/maintenance/2024/2024-11-0.md)
          + [2024.10.0 的维护发行说明](/help/release-notes/maintenance/2024/2024-10-0.md)
@@ -206,7 +208,7 @@ ht-degree: 99%
    + 通用编辑器发行说明 {#univeral-editor}
       + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
-         + [2024.12.02发行说明](/help/release-notes/universal-editor/2024/2024-12-02.md)
+         + [2024.12.02 版发行说明](/help/release-notes/universal-editor/2024/2024-12-02.md)
          + [2024.11.13 发行说明](/help/release-notes/universal-editor/2024/2024-11-13.md)
          + [2024.11.05 发行说明](/help/release-notes/universal-editor/2024/2024-11-05.md)
          + [2024.10.29 发行说明](/help/release-notes/universal-editor/2024/2024-10-29.md)
