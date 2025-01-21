@@ -4,9 +4,9 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1803'
 ht-degree: 92%
 
 ---
@@ -67,9 +67,8 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    * `<repository>` 表示您的 GitHub 存储库。
    * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
-   例如，如果分支名称为`main`，存储库为`wefinance`，所有者为`wkndform`，则网站将在[https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)上启动并运行
-
-
+   例如，如果分支名称为`main`，存储库为`wefinance`，所有者为`wkndforms`，则网站将在`https://main--wefinance--wkndforms.aem.page`启动并运行
+&lt;！—(https://main--wefinance--wkndform.aem.page)-->
 
 ### 链接您自己的内容源
 
@@ -135,8 +134,6 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
    1. 提交更新的`fsatb.yaml`文件，一旦您更新了参考并且一切看起来都很好。如果您遇到任何构建问题，请参阅 [解决 GitHub 构建问题](#troubleshooting-github-build-issues)。
 
-
-
       ![提交更新的 fsatab.yaml 文件](/help/edge/assets/commit-updated-fstab-yaml.png)
 
       这会将您的内容文件夹连接到您的网站。更新参考后，您最初可能会遇到“404 未找到”错误。这是因为您的内容尚未预览。下一部分将介绍如何开始创作和预览内容。
@@ -185,7 +182,8 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   例如，如果项目的存储库名为“wefinance”，它位于帐户所有者“wkndform”下，并且您使用“main”分支和表单名称作为`enquiry`，则URL为：[https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)。
+   例如，如果项目的存储库名为“wefinance”，它位于帐户所有者“wkndform”下，而您使用“main”分支和表单名称作为`enquiry`，则URL为： `https://main--wefinance--wkndform.aem.live/enquiry`。
+&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### 创建表单
 
@@ -199,7 +197,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 当您预览或发布文件时，该文件的 JSON 版本将显示在新选项卡中。复制文件的预览(.aem.page)或发布(.aem.live) URL。
 
-![表单电子表格的 JSON](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![表单电子表格的 JSON](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 打开 `enquiry` 文件，并将表单区块中的 URL 替换为上一步中复制的文件的 URL。确保 URL 是超链接。
 
@@ -220,9 +218,12 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 提交按钮的标签更新为 `Let's Talk`。
 
-[![查询表单](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+![查询表格](/help/edge/assets/updated-form.png)
 
-URL： [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL： `https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 有关创建和发布新表单的详细信息，请参阅[创建表单](/help/edge/docs/forms/create-forms.md)指南。

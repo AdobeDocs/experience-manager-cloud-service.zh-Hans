@@ -4,10 +4,10 @@ description: 发布适用于 AEM Forms 的 Edge Delivery Services
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 80%
+source-wordcount: '587'
+ht-degree: 81%
 
 ---
 
@@ -53,7 +53,8 @@ ht-degree: 80%
 
    例如，如果项目的存储库名为“wefinance”，位于帐户“wkndform”下，并且您使用“main”分支和表单作为“enquiry”，则URL如下所示：
 
-   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json`
+&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
@@ -74,7 +75,7 @@ ht-degree: 80%
 
    | 表单 |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
    ![将名为“表单”的区块添加到文件中](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -95,16 +96,16 @@ ht-degree: 80%
 
    | 表单 |
    |---|
-   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
    **发布 URL**
 
    | 表单 |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 预览网页。页面现在显示表单。例如，以下是基于[查询电子表格](/help/edge/assets/enquiry.xlsx)的表单：
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 预览网页。页面现在显示表单。例如，以下是基于[查询电子表格](/help/edge/assets/enquiry-form.docx)的表单：
 
 
    ![EDS 表单样本](/help/edge/assets/updated-form.png)

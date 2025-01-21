@@ -4,10 +4,10 @@ description: 快速制作完美的表单！⚡ AEM Forms Edge Delivery 基于文
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 88%
+source-wordcount: '782'
+ht-degree: 86%
 
 ---
 
@@ -60,8 +60,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ 步骤 1：使用 Microsoft Excel 或 Google Sheet 创建表单。
 
 使用电子表格可以轻松地制作表单，而无需执行复杂的流程。您可以定义构成表单结构的行和列。每行代表一个单独的[表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的[字段属性](/help/edge/docs/forms/form-components.md#components-properties)。
@@ -76,15 +74,15 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 1. 在 AEM Edge Delivery 项目目录中的任意位置创建一份 Microsoft Excel 工作簿或 Google 工作表。例如，在 Google Drive 上的 AEM Edge Delivery 项目目录中创建一个名为 `enquiry` 的电子表格。
 
-   ![Google Drive 上的示例内容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. 确保根据为项目指定的配置，与适当的 AEM 用户（例如 `forms@adobe.com`）[共享表](https://www.aem.live/docs/setup-customer-sharepoint)。授予用户编辑表的权限。
 
-1. 打开创建的电子表格并将默认表重命名为“shared-default”。
+1. 打开创建的电子表格，并将默认工作表重命名为“shared-aem”。
 
    ![将默认工作表重命名为“shared-default”](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. 要添加表单字段，请将行和列标题插入“shared-default”表中。每行应该代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的字段[属性](/help/edge/docs/forms/form-components.md#components-properties)。
+1. 要添加表单字段，请在“shared-aem”工作表中插入行和列标题。 每行应该代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，列标题定义相应的字段[属性](/help/edge/docs/forms/form-components.md#components-properties)。
 
 
    为了快速开始，请考虑复制[查询电子表格](/help/edge/assets/enquiry.xlsx)中的内容到电子表格中。复制内容后，保存电子表格。
@@ -109,7 +107,8 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    例如，如果项目的存储库名为“wefinance”，它位于帐户“wkndform”下，而您使用的是“main”分支，则URL如下所示：
 
-   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+&lt;！—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
@@ -131,7 +130,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
    | 表单 |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
    ![将 Adaptive Forms Block 添加到您的网页](/help/edge/assets/enquiry-doc-to-embed-form.png)

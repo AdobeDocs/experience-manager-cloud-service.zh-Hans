@@ -4,17 +4,17 @@ description: 使用电子表格和 Adaptive Forms Block 字段更快地制作功
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 84%
+source-wordcount: '426'
+ht-degree: 65%
 
 ---
 
 # 设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据
 
 
-在[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，就可以启用相应的电子表格开始接收数据。您可以手动启用电子表格以接受数据，或使用 Admin API 启用电子表格以接受数据。
+在您[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，就可以启用相应的电子表格以开始接收数据。 您可以手动启用电子表格以接受数据，或使用 Admin API 启用电子表格以接受数据。
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -34,19 +34,19 @@ ht-degree: 84%
    >
    > 如果 `incoming` 工作表不存在，AEM 不会向电子表格发送任何数据。
 
-2. 在此工作表中，插入一个名为“intake_form”的表。选择与表单字段名称匹配所需的列数。然后，在工具栏中转到“插入”>“表格”并单击“确定”。
+1. 在此工作表中，插入一个名为“intake_form”的表。选择与表单字段名称匹配所需的列数。然后，在工具栏中转到“插入”>“表格”并单击“确定”。
 
-3. 将表的名称更改为“intake_form”。在 Microsoft Excel 中，要更改表的名称，请选择该表并单击“表设计”。
+1. 将表的名称更改为“intake_form”。在 Microsoft Excel 中，要更改表的名称，请选择该表并单击“表设计”。
 
-4. 接下来，添加表单字段名称作为表标题。为了确保字段完全相同，您可以从“shared-default”表中复制并粘贴它们。在“shared-default”工作表中，选择并复制“名称”列下列出的表单 ID（提交字段除外）。
+1. 接下来，添加表单字段名称作为表标题。要确保字段完全相同，您可以从“shared-aem”工作表中复制并粘贴它们。  在“shared-aem”工作表中，选择并复制“Name”列下列出的表单ID（提交字段除外）。
 
-5. 在“传入”工作表中，选择“选择性粘贴”>“将行转置为列”，将字段 ID 复制为该新工作表中的列标题。只保留需要捕获数据的字段，其他可以忽略。
+1. 在“传入”工作表中，选择“选择性粘贴”>“将行转置为列”，将字段 ID 复制为该新工作表中的列标题。只保留需要捕获数据的字段，其他可以忽略。
 
-   `shared-default`工作表的`Name`列中的每个值（不包括提交按钮）都可以用作`incoming`工作表中的标题。例如，请考虑下图说明“查询”表单的标头：
+   `shared-aem`工作表的`Name`列中的每个值（不包括提交按钮）都可以用作`incoming`工作表中的标题。例如，请考虑下图说明“查询”表单的标头：
 
    ![“contact-us”表单的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. 使用[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)扩展预览表单更新。 您的工作表现已准备好接受传入的表单提交。
+1. 使用[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)扩展预览表单更新。 您的工作表现已准备好接受传入的表单提交。
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ ht-degree: 84%
 
 >[!WARNING]
 >
->  在任何情况下，“shared-default”工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
+>  “共享aem”工作表绝不应包含任何您不希望公开访问的个人身份信息或敏感数据。
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data
