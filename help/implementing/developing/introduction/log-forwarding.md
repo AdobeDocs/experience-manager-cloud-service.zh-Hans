@@ -4,10 +4,10 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
+source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 0%
+source-wordcount: '1975'
+ht-degree: 1%
 
 ---
 
@@ -31,23 +31,21 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 请注意，与发送到日志记录目的地的日志相关联的网络带宽被视为您组织的网络I/O使用的一部分。
 
-
 ## 本文的结构 {#how-organized}
 
 本文按以下方式组织：
 
 * 设置 — 适用于所有日志记录目标
+* 传输和高级网络 — 在创建日志记录配置之前，应考虑网络设置
 * 记录目标配置 — 每个目标的格式略有不同
 * 日志条目格式 — 有关日志条目格式的信息
-* 高级联网 — 通过专用出口或VPN发送AEM和Apache/Dispatcher日志
 * 从旧版日志转发迁移 — 如何从之前由Adobe设置的日志转发迁移到自助方法
-
 
 ## 设置 {#setup}
 
 1. 创建名为`logForwarding.yaml`的文件。 它应包含元数据，如[配置管道项目](/help/operations/config-pipeline.md#common-syntax)中所述（**kind**&#x200B;应设置为`LogForwarding`，版本应设置为“1”），其配置类似于以下内容（我们使用Splunk作为示例）。
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -71,7 +69,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 通过在&#x200B;**default**&#x200B;块后添加额外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;块，可以设置CDN日志和AEM日志(包括Apache/Dispatcher)之间的不同值，其中的属性可以覆盖&#x200B;**default**&#x200B;块中定义的属性；只需要启用的属性。 一个可能的用例可能是对CDN日志使用不同的Splunk索引，如下面的示例所示。
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -91,7 +89,7 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
 
 另一种方法是禁用CDN日志或AEM日志(包括Apache/Dispatcher)的转发。 例如，要仅转发CDN日志，可以配置以下内容：
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -107,13 +105,90 @@ AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（
          enabled: false
 ```
 
+## 传输和高级网络 {#transport-advancednetworking}
+
+有些组织选择限制日志记录目标可以接收哪些流量，而有些组织则可能需要使用HTTPS (443)以外的端口。  如果是，则在部署日志转发配置之前，需要配置[高级网络](/help/security/configuring-advanced-networking.md)。
+
+根据您是否使用端口443以及是否需要从固定IP地址显示日志，使用下表查看高级联网和日志配置的要求。
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>目标端口</th>
+      <th>需要从固定IP显示日志？</th>
+      <th>需要高级联网</th>
+      <th>需要LogForwarding.yaml端口定义</th>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTPS (443)</td>
+      <td>否</td>
+      <td>否</td>
+      <td>否</td>
+    </tr>
+    <tr>
+      <td>是</td>
+      <td>是，<a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">专用出口</a></td>
+      <td>否</td>
+    <tr>
+    <tr>
+      <td rowspan="2">非标准端口（如8088）</td>
+      <td>否</td>
+      <td>是，<a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress">灵活出口</a></td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>是</td>
+      <td>是，<a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">专用出口</a></td>
+      <td>是</td>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>是否从单个IP地址显示日志取决于您选择的高级联网配置。  必须使用专用出口实现此目的。
+>
+> 高级网络配置是[两步流程](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling)，需要在程序和环境级别启用。
+
+对于AEM日志(包括Apache/Dispatcher)，如果您已配置[高级网络](/help/security/configuring-advanced-networking.md)，则可以使用`aem.advancedNetworking`属性从专用出口IP地址或通过VPN转发它们。
+
+以下示例说明如何使用高级联网在标准HTTPS端口上配置日志记录。
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  splunk:
+    default:
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
+```
+
+对于CDN日志，您可以将IP地址添加到允许列表，如[Fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或(非Adobe)Azure Blob存储区，其中可以写入逻辑以将已知IP的日志发送到其最终目标。
+
+>[!NOTE]
+>CDN日志不可能显示自AEM日志显示来源的IP地址，这是因为日志是直接从Fastly而不是AEM Cloud Service发送的。
+
 ## 记录目标配置 {#logging-destinations}
 
 下面列出了受支持的日志记录目标的配置以及任何特定注意事项。
 
 ### Azure Blob存储 {#azureblob}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -147,7 +222,7 @@ SAS令牌应该用于身份验证。 它应该从共享访问签名页面而不�
 
 例如，在某个时间点：
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -155,7 +230,7 @@ aemcdn/
 
 30秒后：
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -164,7 +239,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-每个文件都包含多个json日志条目，每个条目位于一行中。 日志条目格式在[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)下描述，每个日志条目还包括以下[日志条目格式](#log-format)部分中提到的其他属性。
+每个文件都包含多个json日志条目，每个条目位于一行中。 日志条目格式在[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)下描述，每个日志条目还包括以下[日志条目格式](#log-formats)部分中提到的其他属性。
 
 #### Azure Blob Storage AEM日志 {#azureblob-aem}
 
@@ -181,10 +256,9 @@ AEM日志(包括Apache/Dispatcher)显示在具有以下命名约定的文件夹�
 
 请参阅AEM as a Cloud Service的[日志记录](/help/implementing/developing/introduction/logging.md)下的日志条目格式。 日志条目还将包括以下[日志条目格式](#log-formats)部分中提到的其他属性。
 
-
 ### Datadog {#datadog}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -210,11 +284,9 @@ data:
 * Datadog服务标记设置为`adobeaemcloud`，但您可以在标记部分中覆盖它
 * 如果您的摄取管道使用Datadog标记确定转发日志的适当索引，请验证这些标记在日志转发YAML文件中是否正确配置。 如果管道依赖于缺少标记，则可能会阻止成功的日志摄取。
 
-
-
 ### Elasticsearch和OpenSearch {#elastic}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -239,7 +311,7 @@ data:
 * 对于AEM日志，`index`设置为`aemaccess`、`aemerror`、`aemrequest`、`aemdispatcher`、`aemhttpdaccess`或`aemhttpderror`之一
 * optional pipeline属性应设置为Elasticsearch或OpenSearch引入管道的名称，可以将其配置为将日志条目路由到相应的索引。 管道的处理器类型必须设置为&#x200B;*script*，脚本语言应设置为&#x200B;*无痛苦*。 以下是将日志条目路由到索引（如aemaccess_dev_26_06_2024）的脚本片段示例：
 
-```
+```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
 def sourceType = ctx._index;
 def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
@@ -248,7 +320,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 ### HTTPS {#https}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -279,7 +351,7 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是一个�
 
 #### HTTPS AEM日志 {#https-aem}
 
-对于AEM日志（包括apache/dispacher），将连续发送Web请求(POST)，JSON有效负载为日志条目数组，其日志条目格式多种多样，如[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)中所述。 下面的[日志条目格式](#log-format)部分中提及了其他属性。
+对于AEM日志（包括apache/dispacher），将连续发送Web请求(POST)，JSON有效负载为日志条目数组，其日志条目格式多种多样，如[AEM as a Cloud Service日志记录](/help/implementing/developing/introduction/logging.md)中所述。 下面的[日志条目格式](#log-formats)部分中提及了其他属性。
 
 还有一个名为`Source-Type`的属性，该属性设置为以下值之一：
 
@@ -292,7 +364,7 @@ Web请求(POST)将使用json有效负载连续发送，该有效负载是一个�
 
 ### Splunk {#splunk}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -313,16 +385,14 @@ data:
   *aemrequest*，*aemdispatcher*，*aemhttpdaccess*，*aemhttpderror*，*aemcdn*
 * 如果所需的IP已列入允许列表并且日志仍未交付，请验证是否没有实施Splunk令牌验证的防火墙规则。 Fastly执行初始验证步骤，其中有意发送无效的Splunk令牌。 如果防火墙设置为终止使用无效Splunk令牌的连接，则验证过程将失败，从而阻止Fastly将日志投放到您的Splunk实例。
 
-
 >[!NOTE]
 >
 > [如果将](#legacy-migration)从旧版日志转发迁移到此自助模型，则发送到您的Splunk索引的`sourcetype`字段的值可能已更改，因此请进行相应调整。
 
-
 <!--
 ### Sumo Logic {#sumologic}
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -351,36 +421,11 @@ data:
 
 例如，属性可能具有以下值：
 
-```
+```text
 aem_env_id: 1242
 aem_env_type: dev
 aem_program_id: 12314
 aem_tier: author
-```
-
-## 高级网络 {#advanced-networking}
-
-某些组织选择限制日志记录目标可以接收的流量。
-
-对于CDN日志，您可以将IP地址添加到允许列表，如[fastly文档 — 公共IP列表](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共享IP地址列表过大，请考虑将流量发送到https服务器或(非Adobe)Azure Blob存储区，其中可以写入逻辑以将已知IP的日志发送到其最终目标。
-
-对于AEM日志(包括Apache/Dispatcher)，如果您已配置[高级网络](/help/security/configuring-advanced-networking.md)，则可以使用advancedNetworking属性从专用出口IP地址或通过VPN转发它们。
-
-```
-kind: "LogForwarding"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  splunk:
-    default:
-      enabled: true
-      host: "splunk-host.example.com"
-      port: 443
-      token: "${{SPLUNK_TOKEN}}"
-      index: "aemaacs"
-    aem:
-      advancedNetworking: true
 ```
 
 ## 从旧版日志转发迁移 {#legacy-migration}
@@ -399,10 +444,6 @@ data:
 建议将配置部署到所有环境，以便所有环境都处于自助控制状态，但不是必需的。 如果没有，您可能会忘记哪些环境已由Adobe配置，哪些是自助式配置的。
 
 >[!NOTE]
->
 >发送到Splunk索引的`sourcetype`字段的值可能已更改，因此请进行相应调整。
-
->[!NOTE]
 >
 >在将日志转发部署到之前由Adobe支持配置的环境时，您最多可能会收到几个小时的重复日志。 这将最终自动解决。
-
