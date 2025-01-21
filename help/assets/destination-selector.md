@@ -5,16 +5,16 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
 source-wordcount: '1905'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
 # 微前端目标选择器 {#Overview}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 微前端目标选择器在您的应用程序中提供了一个用户界面，可以轻松地与 [!DNL Experience Manager Assets as a Cloud Service] 存储库集成。您可以搜索或浏览到 [!DNL Experience Manager Assets as a Cloud Service] 存储库中的相应文件夹，并从应用程序上传资源。
@@ -78,7 +78,7 @@ ht-degree: 84%
 </script>
 ```
 
-在使用 **ESM CDN 版本**&#x200B;并支持 `import maps` 的浏览器中：
+在使用 `import maps`ESM CDN 版本&#x200B;**并支持** 的浏览器中：
 
 ```
 <script type="module">
@@ -249,7 +249,7 @@ interface SelectedDestination {
 
 ### 搜索栏 {#search-bar}
 
-通过目标选择器，您可以对所选存储库中的资源执行全文搜索。 例如，如果您在搜索栏中键入关键字 `wave`，则将显示任意元数据属性中提及的所有带 `wave` 关键字的资源。
+通过目标选择器，您可以对所选存储库中的资源执行全文搜索。 例如，如果您在搜索栏中键入关键字 `wave`，则将显示任意元数据属性中提及的所有带 `wave` 关键字的资产。
 
 ### 排序 {#sorting}
 
@@ -271,10 +271,10 @@ interface SelectedDestination {
 
 通过目标选择器，您可以在四种不同的视图中查看资源：
 
-* **![列表视图](assets/do-not-localize/list-view.png)[!UICONTROL 列表视图]**：列表视图在单个列中显示可滚动的文件和文件夹。
-* **![网格视图](assets/do-not-localize/grid-view.png)[!UICONTROL 网格视图]**：网格视图在行和列的网格中显示可滚动的文件和文件夹。
-* **![库视图](assets/do-not-localize/gallery-view.png)[!UICONTROL 库视图]**：库视图在居中锁定的水平列表中显示文件或文件夹。
-* **![瀑布视图](assets/do-not-localize/waterfall-view.png)[!UICONTROL 瀑布视图]**：瀑布视图以桥的形式显示文件或文件夹。
+* ![列表视图](assets/do-not-localize/list-view.png)[!UICONTROL **列表视图**]：列表视图在单个列中显示可滚动的文件和文件夹。
+* ![网格视图](assets/do-not-localize/grid-view.png)[!UICONTROL **网格视图**]：网格视图在行和列的网格中显示可滚动的文件和文件夹。
+* ![库视图](assets/do-not-localize/gallery-view.png)[!UICONTROL **库视图**]：库视图在居中锁定的水平列表中显示文件或文件夹。
+* ![瀑布视图](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布视图**]：瀑布视图以桥的形式显示文件或文件夹。
 
 ### 信息 {#info}
 

@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的资产选�
 description: 使用资产选择器在您的应用程序中搜索、查找和检索资产的元数据和演绎版。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
-workflow-type: ht
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+workflow-type: tm+mt
 source-wordcount: '1332'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -159,10 +159,10 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 资产选择器允许您在四种不同的视图中查看资产：
 
-* **![列表视图](assets/do-not-localize/list-view.png) [!UICONTROL 列表视图]** 列表视图在单个列中显示可滚动的文件和文件夹。
-* **![网格视图](assets/do-not-localize/grid-view.png) [!UICONTROL 网格视图]** 网格视图以行和列的网格显示可滚动的文件和文件夹。
-* **![库视图](assets/do-not-localize/gallery-view.png) [!UICONTROL 库视图]** 库视图以居中锁定的水平列表显示文件或文件夹。
-* **![瀑布视图](assets/do-not-localize/waterfall-view.png) [!UICONTROL 瀑布视图]** 瀑布图以桥的形式显示文件或文件夹。
+* ![列表视图](assets/do-not-localize/list-view.png) [!UICONTROL **列表视图**] 列表视图在单个列中显示可滚动的文件和文件夹。
+* ![网格视图](assets/do-not-localize/grid-view.png) [!UICONTROL **网格视图**] 网格视图以行和列的网格显示可滚动的文件和文件夹。
+* ![库视图](assets/do-not-localize/gallery-view.png) [!UICONTROL **库视图**] 库视图以居中锁定的水平列表显示文件或文件夹。
+* ![瀑布视图](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布**&#x200B;视图]瀑布视图以Bridge的形式显示文件或文件夹。
 
 **概述图形**
 

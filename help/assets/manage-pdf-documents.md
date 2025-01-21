@@ -4,28 +4,29 @@ description: 在 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中管
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 5%
+source-wordcount: '853'
+ht-degree: 6%
 
 ---
 
 # 在Experience Manager Assetsas a Cloud Service中管理PDF文档 {#add-assets-to-experience-manager}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 Experience Manager Assets与Document CloudPDF查看器无缝集成，这使您能够预览PDF文档的多个页面。 此外，您还可以使用高级Document CloudPDF查看器功能，如注释、搜索文本、使用书签和缩略图导航PDF文档等。 Experience Manager Assets还允许您上传其他受支持格式的文档，并以PDF格式预览文档。
 
 Document CloudPDF查看器可通过以下方式为AEM Assets带来好处：
+
 * [支持PDFDocument Cloud查看器组件](#pdf-doc-cloud)
 * [支持PDF资源的多页面预览和批注](#multi-page)
 * [支持其他格式文档的多页预览](#multi-format)
 
-> 提示
-> 如果您无法获取以前上载的PDF文档的多页预览，请选择该PDF并单击&#x200B;**![重新处理](/help/assets/assets/Reprocess.svg)重新处理Assets**。
+>[!TIP]
 >
+> 如果您无法获取以前上载的PDF文档的多页预览，请选择该PDF并单击![重新处理](/help/assets/assets/Reprocess.svg) **重新处理Assets**。
 
 ## 支持PDFDocument Cloud查看器组件 {#pdf-doc-cloud}
 
@@ -57,9 +58,9 @@ Adobe Experience Manager Assets允许您预览包含多页的PDF文档。 要预
 
 您还可以在多页预览中将[批注](#pdf-annotations)应用于PDF文档。
 
-> 注意
-> 您可以预览的资源大小上限为100 MB。
+>[!NOTE]
 >
+> 您可以预览的资源大小上限为100 MB。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -72,6 +73,7 @@ Adobe Experience Manager Assets允许您预览包含多页的PDF文档。 要预
 Experience Manager Assets允许向PDF文档添加注释。 一个PDF文档可以有多个注释。
 
 要为PDF文档添加批注，请执行以下步骤：
+
 1. 转到Assets界面，导航到要添加注释的PDF文档。 本机PDF查看器将在右侧打开，显示所选PDF文档的预览。
 1. 从顶部菜单中单击&#x200B;**注释**。
 以下是可应用于PDF文档的注释：
@@ -126,15 +128,16 @@ Experience Manager Assets允许向PDF文档添加注释。 一个PDF文档可以
 ![其他格式文档的多页预览](/help/assets/assets/multi-page-other-formats.png)
 
 对于其他支持的文档格式的多页预览，请执行以下步骤：
+
 1. 按照步骤[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)中上传资源。
 1. 浏览要上载和预览的文档。
 1. 打开文档。
 1. 在左侧面板的静态部分下选择PDF。 右侧面板可显示资产的多个页面预览。 从左侧面板中选择缩略图以选择要预览的页面。
 
-> 注意
+>[!NOTE]
+>
 > * 您可以预览的资源大小上限为100 MB。
 > * 要预览的XLS或XLSX文件的最大大小为20 MB。
->
 
 **另请参阅**
 
