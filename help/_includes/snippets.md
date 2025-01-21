@@ -2,7 +2,7 @@
 source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 # 代码片段 {#snippets}
@@ -18,11 +18,11 @@ ht-degree: 96%
 ## 另请参阅 {#see-also}
 
 * [创建 AEM 自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-* [将 AEM Adaptive Form添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [将 AEM 自适应表单添加到 AEM Sites 页面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [将主题应用于 AEM 自适应表单](/help/forms/using-themes-in-core-components.md)
 * [将组件添加到 AEM 自适应表单 ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [在 AEM 自适应表单中使用 CAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-* [生成一个 AEM Adaptive Form 的 PDF 版本（DoR）](/help/forms/generate-document-of-record-core-components.md)
+* [生成一个 AEM 自适应表单的 PDF 版本（DoR）](/help/forms/generate-document-of-record-core-components.md)
 * [翻译 AEM 自适应表单](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [为自适应表单启用 Adobe Analytics 以跟踪表单使用情况](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [将自适应表单连接到 Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
@@ -77,8 +77,8 @@ ht-degree: 96%
   <tbody>
   <tr>
     <td><strong>功能</strong></td>
-    <td><strong>Adaptive Form 基础组件</strong></td>
-    <td><strong>Adaptive Form 核心组件</strong></td>   
+    <td><strong>自适应表单基础组件</strong></td>
+    <td><strong>自适应表单核心组件</strong></td>   
     </tr>
   </tr>
   <tr>
@@ -135,7 +135,7 @@ ht-degree: 96%
 * [规则编辑器各版本之间的差异](/help/forms/rule-editor-core-components-difference-tables.md)
 * [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
 * [在可视化规则编辑器中针对基于核心组件的表单调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
-* [基于核心组件的自适应Forms自定义函数介绍](/help/forms/create-and-use-custom-functions.md)
+* [基于核心组件的自适应表单的自定义函数简介](/help/forms/create-and-use-custom-functions.md)
 * [为基于核心组件的自适应Form创建自定义函数](/help/forms/custom-function-core-component-create-function.md)
 * [自定义函数中的范围对象](/help/forms/custom-function-core-component-scope-function.md)
 * [开发和使用自定义函数的示例](/help/forms/custom-function-core-components-use-cases.md)
@@ -178,7 +178,7 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->[通用编辑器](/help/implementing/universal-editor/introduction.md) 与 IP 允许列表不兼容。
+>[通用编辑器](/help/implementing/universal-editor/introduction.md)与 IP 允许列表不兼容。
 >
 >如果您想使用通用编辑器，则不得启用 IP 允许列表。
 
@@ -209,7 +209,7 @@ ht-degree: 96%
 >
 >* 试用带有[快照工具](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)的 Dynamic Media 图像功能。
 >
->* 使用[自适应视频](https://experienceleague.adobe.com/zh-hans/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)确保视频播放流畅。
+>* 使用[自适应视频](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash)确保视频播放流畅。
 >
 >* 使用[智能裁剪](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)自动裁剪图像。
 >
@@ -233,11 +233,11 @@ ht-degree: 96%
    * 当前网站的 URL。例如：`www.mydomain.com`。
    * 原始网站的 URL (`.hlx` URL)。
 
-## 与SPA编辑器相比，首选使用通用编辑器 {#ue-over-spa}
+## 与 SPA 编辑器相比，首选通用编辑器 {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->Adobe仍支持SPA编辑器，但现在用于管理AEM中的Headless内容的首选编辑器包括：
+>Adobe 仍然支持 SPA 编辑器，但现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 >
->* [用于可视化编辑Headless内容的通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)。
->* [用于基于表单编辑Headless内容的内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)。
+>* [通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)，用于可视化编辑 Headless 内容。
+>* [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑 Headless 内容。

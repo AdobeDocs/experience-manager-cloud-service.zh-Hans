@@ -209,9 +209,9 @@ ht-degree: 99%
       + [通用编辑器当前发布说明](/help/release-notes/universal-editor/current.md)
       + 2024 {#2024}
          + [2024.12.02 版发行说明](/help/release-notes/universal-editor/2024/2024-12-02.md)
-         + [2024.11.13 发行说明](/help/release-notes/universal-editor/2024/2024-11-13.md)
-         + [2024.11.05 发行说明](/help/release-notes/universal-editor/2024/2024-11-05.md)
-         + [2024.10.29 发行说明](/help/release-notes/universal-editor/2024/2024-10-29.md)
+         + [2024.11.13 版发行说明](/help/release-notes/universal-editor/2024/2024-11-13.md)
+         + [2024.11.05 版发行说明](/help/release-notes/universal-editor/2024/2024-11-05.md)
+         + [2024.10.29 版发行说明](/help/release-notes/universal-editor/2024/2024-10-29.md)
          + [2024.09.27 版发行说明](/help/release-notes/universal-editor/2024/2024-09-27.md)
          + [2024.09.26 版发行说明](/help/release-notes/universal-editor/2024/2024-09-26.md)
          + [2024.09.18 版发行说明](/help/release-notes/universal-editor/2024/2024-09-18.md)
@@ -270,7 +270,7 @@ ht-degree: 99%
       + [创建 Headless 内容](/help/trials/headless/create-content.md)
       + [通过 GraphQL API 提取内容](/help/trials/headless/extract-content.md)
       + [使用 JavaScript 获取 JSON 内容](/help/trials/headless/code-playground.md)
-      + [使用 Universal Editor 进行内联编辑](/help/trials/headless/universal-editor.md)
+      + [使用通用编辑器进行内联编辑](/help/trials/headless/universal-editor.md)
 + AEM as a Cloud Service 迁移历程 {#migration-journey}
    + [AEM as a Cloud Service 迁移快速入门](/help/journey-migration/getting-started.md)
    + [就绪阶段](/help/journey-migration/readiness.md)
@@ -366,10 +366,10 @@ ht-degree: 99%
          + [键盘快捷键](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)
          + [样式系统](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [还原重做限制](/help/sites-cloud/authoring/page-editor/undo-redo.md)
-      + Universal Editor {#universal-editor}
+      + 通用编辑器{#universal-editor}
          + [导航通用编辑器](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [使用 Universal Editor 创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [使用 Universal Editor 发布内容](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [使用通用编辑器创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [使用通用编辑器发布内容](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [通用编辑器中的内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [页面模板](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 片段 {#fragments}
@@ -446,7 +446,7 @@ ht-degree: 99%
          + 翻译 {#translation}
             + Sites 翻译历程 {#sites}
                + [了解 AEM 中的站点翻译](/help/journey-sites/translation/overview.md)
-               + [AEM站点翻译快速入门](/help/journey-sites/translation/getting-started.md)
+               + [AEM 站点翻译快速入门](/help/journey-sites/translation/getting-started.md)
                + [了解 AEM 中的站点内容和翻译方法](/help/journey-sites/translation/learn-about.md)
                + [配置翻译连接器](/help/journey-sites/translation/configure-connector.md)
                + [配置翻译规则](/help/journey-sites/translation/translation-rules.md)
@@ -735,15 +735,15 @@ ht-degree: 99%
          + [创建表单数据模型](/help/forms/create-form-data-models.md)
          + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
-         + [为 Adaptive Form 设计 XML 架构](/help/forms/adaptive-form-xml-schema-form-model.md)
-   + Adaptive Form {#adaptive-forms-authoring}
+         + [为自适应表单设计 XML 架构](/help/forms/adaptive-form-xml-schema-form-model.md)
+   + 自适应表单{#adaptive-forms-authoring}
       + [创建自适应表单](/help/forms/create-an-adaptive-form.md)
       + [创建自适应表单片段](/help/forms/adaptive-form-fragments.md)
       + [将自适应表单添加到 AEM Sites 页面或体验片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 核心组件 {#authoring-adaptive-forms-core-components}
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [创建自适应表单](/help/forms/creating-adaptive-form-core-components.md)
-            + [根据核心组件设置 Adaptive Form 的布局](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
+            + [根据核心组件设置自适应表单的布局](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [创建自适应表单片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [为自适应表单创建主题 - 核心组件](/help/forms/using-themes-in-core-components.md)
             + [创建基于核心组件的自适应表单模板](/help/forms/template-editor-core-components.md)
@@ -778,8 +778,8 @@ ht-degree: 99%
                + [基于核心组件的自适应Form规则编辑器示例](/help/forms/rule-editor-core-components-usecases.md)
                + [在自适应表单中使用异步函数](/help/forms/using-async-funct-in-rule-editor.md)
                + [在可视化规则编辑器中针对基于核心组件的表单调用服务增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)
-            + 基于核心组件的自适应表单规则编辑器简介{#create-and-use-custom-function-core-component}
-               + [基于核心组件的自适应表单规则编辑器简介](/help/forms/create-and-use-custom-functions.md)
+            + 基于核心组件的自适应表单的自定义函数简介{#create-and-use-custom-function-core-component}
+               + [基于核心组件的自适应表单的自定义函数简介](/help/forms/create-and-use-custom-functions.md)
                + [为基于核心组件的自适应表单创建和使用自定义函数](/help/forms/custom-function-core-component-create-function.md)
                + [自定义函数中的范围对象](/help/forms/custom-function-core-component-scope-function.md)
                + [基于核心组件的自适应表单的自定义函数示例](/help/forms/custom-function-core-components-use-cases.md)
@@ -796,13 +796,13 @@ ht-degree: 99%
          + 创建自适应表单 {#create-an-adaptive-form-on-forms-cs}
             + [自适应表单创作简介](/help/forms/introduction-forms-authoring.md)
             + [为 Form 字段创作上下文帮助](/help/forms/authoring-in-field-help.md)
-            + [创建 Adaptive Form](/help/forms/creating-adaptive-form.md)
+            + [创建自适应表单](/help/forms/creating-adaptive-form.md)
             + [参考主题、模板和数据模型](/help/forms/reference-themes-templates-data-models.md)
             + [创建模板](/help/forms/template-editor.md)
             + [创建主题](/help/forms/themes.md)
-            + [参考 Adaptive Form 片段](/help/forms/reference-adaptive-form-fragments.md)
-            + [将Adaptive Form与 XFA Form 模板同步](/help/forms/synchronizing-adaptive-forms-xfa.md)
-            + [基于 XDP 的 Adaptive Form 中的 XFA 支持](/help/forms/xfa-api-supported-in-adaptive-form.md)
+            + [参考自适应表单片段](/help/forms/reference-adaptive-form-fragments.md)
+            + [将自适应表单与 XFA Form 模板同步](/help/forms/synchronizing-adaptive-forms-xfa.md)
+            + [基于 XDP 的自适应表单中的 XFA 支持](/help/forms/xfa-api-supported-in-adaptive-form.md)
             + [为自适应表单设计 JSON 架构](/help/forms/adaptive-form-json-schema-form-model.md)
             + [使用延迟加载改进大型 Form 的性能](/help/forms/lazy-loading-adaptive-forms.md)
             + [发布和取消发布 Form 和文档](/help/forms/publishing-unpublishing-forms.md)
@@ -818,15 +818,15 @@ ht-degree: 99%
             + [设置自适应表单的版面](/help/forms/layout-capabilities-adaptive-forms.md)
             + [使用版面模式调整组件大小](/help/forms/resize-using-layout-mode.md)
             + [创建多步骤数据捕获体验](/help/forms/introduction-form-sequence.md)
-            + [Adaptive Form 的样式构造](/help/forms/styling-constructs-adaptive-forms.md)
-            + [将内联 CSS 样式应用于各个 Adaptive Form 组件](/help/forms/inline-style-adaptive-forms.md)
-            + [如何在 Adaptive Form 中使用分隔符组件？](/help/forms/separator-component-in-adaptive-forms.md)
+            + [自适应表单的样式构造](/help/forms/styling-constructs-adaptive-forms.md)
+            + [将内联 CSS 样式应用于各个自适应表单组件](/help/forms/inline-style-adaptive-forms.md)
+            + [如何在自适应表单中使用分隔符组件？](/help/forms/separator-component-in-adaptive-forms.md)
          + 在自适应表单中添加规则和使用表达式 {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [将规则添加到自适应表单](/help/forms/rule-editor.md)
             + [使用规则编辑器的调用服务添加自定义错误处理程序](/help/forms/add-custom-error-handler-adaptive-forms.md)
             + [向选定的用户组授予对规则编辑器的访问权限](/help/forms/rule-editor-access-user-groups.md)
-            + [在 Adaptive Form 中使用 SOM 表达式](/help/forms/using-som-expressions-adaptive-forms.md)
-            + [Adaptive Form表达式](/help/forms/adaptive-form-expressions.md)
+            + [在自适应表单中使用 SOM 表达式](/help/forms/using-som-expressions-adaptive-forms.md)
+            + [自适应表单表达式](/help/forms/adaptive-form-expressions.md)
          + 使用 [!DNL Adobe Sign] {#use-adobe-sign}
             + [使用 Adobe Sign 对自适应表单进行电子签名](/help/forms/working-with-adobe-sign.md)
          + 配置提交操作和元数据提交 {#configure-submit-actions-and-metadata-submission}
@@ -835,7 +835,7 @@ ht-degree: 99%
             + [为自适应表单配置异步提交](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [创建自定义提交操作](/help/forms/custom-submit-action-form.md)
             + [将用户数据中的信息添加到 Form 提交元数据中](/help/forms/form-submission-metadata.md)
-            + [API 从 Adaptive Form 调用 Form 数据模型 (FDM) 服务](/help/forms/invoke-form-data-model-services.md)
+            + [API 从自适应表单调用 Form 数据模型 (FDM) 服务](/help/forms/invoke-form-data-model-services.md)
          + [预填自适应表单字段](/help/forms/prepopulate-adaptive-form-fields.md)
          + [生成记录文档](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [将对新区域设置的支持添加到自适应表单](/help/forms/supporting-new-language-localization.md)
@@ -846,7 +846,7 @@ ht-degree: 99%
             + [创建可访问的自适应表单](/help/forms/creating-accessible-adaptive-forms.md)
          + [创建和管理评论](/help/forms/create-reviews-forms.md)
          + [将提交审阅者与 Form 关联](/help/forms/adding-reviewers-form.md)
-         + [创建和管理 Adaptive Form 的审核](/help/forms/review-adaptiveforms-in-sites-page.md)
+         + [创建和管理自适应表单的审核](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [自适应表单关键字](/help/forms/adaptive-forms-keywords.md)
       + [预览表单](/help/forms/previewing-forms.md)
    + 以 Form 为中心的工作流程 {#create-form-centric-workflows}
@@ -1252,7 +1252,7 @@ ht-degree: 99%
             + [实施自定义谓词评估器](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [自定义错误页面](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM 节点类型](/help/implementing/developing/introduction/node-types.md)
-      + Universal Editor {#universal-editor}
+      + 通用编辑器{#universal-editor}
          + [简介](/help/implementing/universal-editor/introduction.md)
          + [用例](/help/implementing/universal-editor/use-cases.md)
          + [属性和项类型](/help/implementing/universal-editor/attributes-types.md)
