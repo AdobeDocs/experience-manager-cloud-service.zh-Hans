@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
+source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 >[!NOTE]
 > 
-> 建议在本地AEM设置中安装AEM现代化工具。 将基于基础组件的自适应Forms迁移到基于核心组件的表单。 下载表单及其资产。 然后，将表单及其资源上传到所需的环境。
+>建议在本地AEM设置中安装AEM现代化工具。 将基于基础组件的自适应Forms迁移到基于核心组件的表单。 下载表单及其资产。 然后，将表单及其资源上传到所需的环境。
 
 ## 使用AEM现代化工具时的注意事项 {#considerations}
 
@@ -39,6 +39,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 * 原始表单中使用的翻译设置不会延续。 为转换后的表单重新配置翻译。
 * 如果基于基础组件构建的表单包含脚本或自定义函数规则，则必须为基于核心组件的转换表单重写这些脚本或规则。
 * 核心组件尚不支持以下OOTB基础组件，因此将以转换后的形式将其删除：
+
    * Adobe Sign Block
    * 图表
    * 文件附件列表
@@ -54,10 +55,9 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 * [为AEM Forms设置本地开发环境](/help/forms/setup-local-development-environment.md)
 * [为您的环境启用自适应Forms核心组件。](/help/forms/enable-adaptive-forms-core-components.md)
-
 * 将您的用户添加到[!DNL forms-users]组。 [!DNL forms-users]组的成员有权创建自适应表单。
-
 * 具有以下角色的用户有权在AEM环境中安装AEM现代化工具：
+
    * 开发人员角色
    * 管理员角色
 
@@ -68,7 +68,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 安装和配置AEM现代化工具：
 
 1. [将AEM现代化工具安装到本地AEM Forms环境](#install-aem-modernize-Tools)
-2. [为本地AEM Forms环境启用AEM现代化工具](#enable-aem-modernize-Tools)
+1. [为本地AEM Forms环境启用AEM现代化工具](#enable-aem-modernize-Tools)
 
 ### 将AEM现代化工具安装到本地AEM Forms环境 {#install-aem-modernize-Tools}
 
@@ -93,6 +93,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
    ```Shell
        mvn clean install 
    ```
+
 ![成功安装映像](/help/forms/assets/aem-modernize-install-steps.png)
 
 成功安装后，AEM现代化工具将可用于您的环境。
@@ -128,10 +129,12 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 1. 指定&#x200B;**[!UICONTROL 作业名称]**。
 1. 在&#x200B;**[!UICONTROL 表单]**&#x200B;选项卡中，您可以选择以下选项之一：
+
    * **无** ：如果不想在开始表单转换之前创建基于Foundation组件的表单的副本，请选择选项。
    * **还原** ：选择选项以将表单还原到开始表单转换之前的状态。
    * **复制到Target**：选择相应选项以在开始表单转换之前创建基于Foundation组件的表单的副本。
-在本例中，已选择**复制到目标**&#x200B;选项。 如果选择了&#x200B;**复制到目标**&#x200B;选项，则&#x200B;**[!UICONTROL Source路径]**&#x200B;和&#x200B;**[!UICONTROL 目标路径]**&#x200B;选项将变为可见。
+
+   在本例中，已选择&#x200B;**复制到目标**&#x200B;选项。 如果选择了&#x200B;**复制到目标**&#x200B;选项，则&#x200B;**[!UICONTROL Source路径]**&#x200B;和&#x200B;**[!UICONTROL 目标路径]**&#x200B;选项将变为可见。
 
 1. 在&#x200B;**[!UICONTROL Source路径]**&#x200B;中指定`source folder`名称。
 1. 在&#x200B;**[!UICONTROL 目标路径]**&#x200B;中指定`target folder`名称。
@@ -152,6 +155,7 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
    ![AEM现代化工具成功](/help/forms/assets/aem-modernize-tools-success.png)
 
 1. 选择自适应表单，然后选择> **[!UICONTROL 属性]**。 这将打开“表单属性”页面。
+
    ![AEM现代化工具目标文件夹](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. 选择&#x200B;**[!UICONTROL 保存并关闭]**以再次保存已转换表单的属性。
