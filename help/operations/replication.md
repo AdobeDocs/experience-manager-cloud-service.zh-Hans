@@ -4,7 +4,7 @@ description: 了解AEM as a Cloud Service中的分发和故障排除复制。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
+source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
 workflow-type: tm+mt
 source-wordcount: '1701'
 ht-degree: 31%
@@ -99,7 +99,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling内容分发](https://sli
 | 名称 | 说明 |
 | ------------- | ------------------------------------------- |
 | onlyModified | 自上次发布后修改的节点 |
-| onlyPublished | 之前发布的节点 |
+| onlyActivated | 之前发布的节点 |
 
 
 **恢复支持**
