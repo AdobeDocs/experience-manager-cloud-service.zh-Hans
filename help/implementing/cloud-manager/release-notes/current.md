@@ -3,9 +3,10 @@ title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 �
 description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2025.1.0 发行。
 feature: Release Information
 role: Admin
-source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '367'
 ht-degree: 20%
 
 ---
@@ -54,7 +55,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.1.0的发布日期是2025年1月2
    * **Java 21运行时部署**
       * 使用Java 17或Java 21构建时会部署Java 21运行时。
       * Cloud Manager沙盒和开发环境的逐步推出将于2月份开始，并将在4月份扩展到生产环境。
-      * 希望采用Java 21运行时&#x200B;*提前*&#x200B;的客户可通过[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)联系Adobe。
+      * 使用Java 11构建的客户希望采用Java 21运行时&#x200B;*提前*，可以通过[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)联系Adobe。
 
 
 <!-- ## Early adoption program {#early-adoption}
