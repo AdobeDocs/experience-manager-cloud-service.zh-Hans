@@ -4,9 +4,9 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 51c54d29f998d4c5fcd6ff2e5139638c495955b3
+source-git-commit: 1b4c427a36ee26522e9da499156f78276e099bd0
 workflow-type: tm+mt
-source-wordcount: '4019'
+source-wordcount: '4037'
 ht-degree: 99%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 99%
 
 流量过滤规则的子类别需要“增强安全性”许可证或“WAF-DDoS 保护”许可证。这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
 
-可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。配置文件可使用命令行工具部署到快速开发环境(RDE)。
+可通过 Cloud Manager 配置管道将流量过滤规则部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。可以使用调用命令行工具将配置文件部署到快速开发环境 (RDE)。
 
-[按照教程进行操作，](#tutorial)快速建立有关此功能的具体专业知识。
+[按照教程进行操作，](#tutorial)快速生成有关此功能的具体专业知识。
 
 >[!NOTE]
 >有关在 CDN 上配置流量的其他选项，包括编辑请求/响应、声明重定向以及代理到非 AEM 来源，请参阅[在 CDN 上配置流量](/help/implementing/dispatcher/cdn-configuring-traffic.md)文章。
@@ -184,7 +184,7 @@ data:
 
 | **属性** | **类型** | **描述** |
 |---|---|---|
-| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码（[区域指标符号](https://zh.wikipedia.org/wiki/cn/Regional_indicator_symbol)）。</li></ul> |
+| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的URL的完整路径。 （对未转义的变体使用`pathRaw`）</li><li>`url`：返回包含查询参数的完整URL。 （对未转义的变体使用`urlRaw`）</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码（[区域指标符号](https://zh.wikipedia.org/wiki/cn/Regional_indicator_symbol)）。</li></ul> |
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
 | reqCookie | `string` | 返回具有指定名称的 Cookie |

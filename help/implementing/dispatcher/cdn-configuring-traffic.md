@@ -4,9 +4,9 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
+source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -158,6 +158,7 @@ data:
 | **取消设置** | reqProperty | 将指定的请求参数（仅支持“path”属性），或请求标头、查询参数或Cookie删除到给定值，该值可以是字符串文字或请求参数。 |
 |         | 变量 | 删除指定的变量。 |
 |         | queryParamMatch | 删除与指定正则表达式匹配的所有查询参数。 |
+|         | queryParamDoesNotMatch | 删除与指定的正则表达式不匹配的所有查询参数。 |
 | **转换** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie或var），匹配，替换 | 将部分请求参数（仅支持“path”属性）、请求标头、查询参数、Cookie或变量替换为新值。 |
 |              | op：tolower， （reqProperty或reqHeader、queryParam或reqCookie或var） | 将请求参数（仅支持“path”属性）、请求标头、查询参数、Cookie或变量设置为其小写值。 |
 
@@ -449,7 +450,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'
