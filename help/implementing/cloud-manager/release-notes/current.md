@@ -1,19 +1,18 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.12.0 的发行说明
-description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2024.12.0 发行。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 的发行说明
+description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2025.1.0 发行。
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 92%
+source-wordcount: '363'
+ht-degree: 20%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2024.12.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 的发行说明 {#release-notes}
 
-了解 AEM (Adobe Experience Manager) as a Cloud Service 中的 Cloud Manager 2024.12.0 发行。
+了解 AEM (Adobe Experience Manager) as a Cloud Service 中的 Cloud Manager 2025.1.0 发行。
 
 >[!NOTE]
 >
@@ -21,64 +20,50 @@ ht-degree: 92%
 
 ## 发行日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2024.12.0 的发布日期是 2024 年 12 月 5 日星期四。
+AEM as a Cloud Service中的Cloud Manager 2025.1.0的发布日期是2025年1月22日星期三。
 
-下一个版本计划于 2025 年 1 月 23 日发布。
+下一个计划发布于2025年2月13日星期四。
 
 
 ## 新增功能 {#what-is-new}
 
-* **代码质量规则：**&#x200B;从2025年2月13日星期四开始，Cloud Manager代码质量步骤现在使用升级的SonarQube版本9.9.5.90363。
+* **代码质量规则：** Cloud Manager代码质量步骤将开始将SonarQube Server 9.9与Cloud Manager 2025.2.0版本一起使用，该版本计划于2025年2月13日星期四发布。
 
-  更新后的规则适用于AEM as a Cloud Service上的Cloud Manager，位于[此链接](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)，这些规则确定Cloud Manager管道的安全分数和代码质量。 此更新可能会影响质量关卡，潜在阻止部署。
+为了准备，更新的SonarQube规则现在可在[代码质量规则](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)中获取。
 
-<!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
+您可以通过设置以下管道文本变量“提前检查”新规则：
 
-    Starting February 2025, sandboxes and dev environments upgrade to the Java 21 runtime, regardless of the build version (Java 8, 11, 17, or 21). Production environments follow with an upgrade in April 2025. -->
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-* **A 记录类型：**&#x200B;已添加对 A 记录类型的支持，以提高使用 AEM Cloud Manager 中内容传递网络配置的域的“上线准备”情况。您现在可以选择通过添加 CNAME 记录类型或代表 Fastly IP 的 A 记录类型来上线，从而简化域路由。此增强功能消除了使用 Fastly 设置域时仅依赖 CNAME 记录的限制。
+此外，设置以下变量以确保为同一提交运行代码质量步骤（通常为同一`commitId`跳过）：
 
-  参见[添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<!-- CMGR-63076 -->
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. -->
-
-* **将多个域添加到 Edge Delivery Site：**&#x200B;您现在可以将多个域（包括 Apex 和非 Apex 域）添加到 AEM Cloud Manager 中的 Edge Delivery Site（EDS）。此增强功能解决了以前限制将多个域与 EDS 来源相关联的问题。此更新确保了管理域配置的最佳灵活性，并简化了具有复杂域设置的 Sites 的“上线”流程。<!-- CMGR-63007 -->
-
-* **高级筛选选项：** AEM Cloud Manager 中的管道执行页面和 SSL 证书页面引入了高级筛选选项。您现在可以按多个条件进行筛选，从而更快地访问相关数据并提高部署效率。<!-- CMGR-26263 -->
-
-   * **管道活动筛选：**包括管道活动筛选，让您优化特定管道活动的搜索结果。可用的筛选条件包括管道、操作和状态。
-     ![管道活动筛选](/help/implementing/cloud-manager/assets/filters-pipeline.png)
-
-
-   * **SSL 证书筛选：**包括 SSL 证书筛选，让您优化特定证书的搜索结果。可用的筛选条件包括 SSL 证书名称、所有权和状态。
-     ![SSL 证书筛选](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
-
-## 早期采用计划 {#early-adoption}
-
-加入 Cloud Manager 早期采用计划，即有机会测试即将推出的功能。
-
-### 自带 Git - 现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
-
-<!-- BOTH CS & AMS -->
-
-**自带 Git** 功能已得到扩展，包括对 GitLab 和 Bitbucket 等外部存储库的支持。这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
-
-使用外部存储库（不包括 GitHub 托管的存储库）和&#x200B;**部署触发器**&#x200B;设置为&#x200B;**在 Git 发生更改时**&#x200B;的管道现在会自动启动。
-
-请参阅[在 Cloud Manager 中添加外部存储库](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
-
-![添加“存储库”对话框](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+![变量配置页面](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->目前，开箱即用的提取请求代码质量检查仅限于 GitHub 托管的存储库，但正在计划将此功能扩展到其他 Git 供应商的更新。
+>Adobe建议创建一个新的CI/CD代码质量管道，并将其配置为与主生产管道位于同一分支。 在&#x200B;*2025年2月13日版本之前*&#x200B;设置适当的变量，以验证新的强制执行规则不会引入阻止程序。
 
-如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
+* **Java 17和Java 21内部版本支持：**&#x200B;客户现在可以使用Java 17或Java 21进行内部版本，从而获得性能增强功能和新的语言功能。 有关配置步骤，包括更新Maven项目和库版本，请参阅[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。 当内部版本设置为Java 17或Java 21时，部署的运行时是Java 21。
 
-## 错误修复
+   * **功能启用**
+      * 此功能将在2025年2月13日星期四为所有客户启用，同时默认推出新的SonarQube版本。
+      * 客户可以通过设置上述两个变量配置来升级SonarQube 9.9版本，从而立即启用它&#x200B;**。
 
-* 已添加一种保护措施，以防止删除 AEM Cloud Manager 中具有活动域映射的域。尝试删除此类域的用户现在会收到一条错误消息，指示他们先删除域映射，然后再继续删除域。此工作流程可确保域的完整性并防止意外的错误配置。<!-- CMGR-63033 -->
-* 偶尔，用户会因为相应情况下关联的状态不正确而无法添加域名或更新 SSL 证书。<!-- CMGR-62816 -->
+   * **Java 21运行时部署**
+      * 使用Java 17或Java 21构建时会部署Java 21运行时。
+      * Cloud Manager沙盒和开发环境的逐步推出将于2月份开始，并将在4月份扩展到生产环境。
+      * 希望采用Java 21运行时&#x200B;*提前*&#x200B;的客户可通过[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)联系Adobe。
+
+
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+
+<!-- ## Bug fixes -->
+
+
 
 
 <!-- ## Known issues {#known-issues} -->
