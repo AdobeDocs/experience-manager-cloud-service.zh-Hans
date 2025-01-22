@@ -4,7 +4,7 @@ description: 使用电子表格和 Adaptive Forms Block 字段更快地制作功
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 65%
@@ -18,10 +18,9 @@ ht-degree: 65%
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
-<!-- 
+
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
--->
 
 
 ## 手动启用电子表格以接受数据

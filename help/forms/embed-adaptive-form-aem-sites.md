@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5321fed58f66b2beabcacc2de4b7dfb2dc3754f1
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 5%
@@ -75,13 +75,11 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 在使用&#x200B;**[!UICONTROL 自适应Forms — 嵌入(v2)]**&#x200B;嵌入新的自适应表单或预先存在的自适应表单之前，请启用&#x200B;**自适应Forms核心组件**&#x200B;并将&#x200B;**自适应Forms客户端库**&#x200B;添加到AEM Sites页面：
 
-+++  为您的AEM Cloud Service环境启用自适应Forms核心组件
+### 为您的AEM Cloud Service环境启用自适应Forms核心组件
 
 确保 AEM Forms as a Cloud Service 环境已启用[自适应表单核心组件。](enable-adaptive-forms-core-components.md)
 
-+++
-
-+++  将自适应Forms客户端库添加到AEM Sites页面或体验片段
+### 将自适应Forms客户端库添加到AEM Sites页面或体验片段
 
 在&#x200B;**[!UICONTROL 表单容器]**&#x200B;配置对话框中选择了&#x200B;**[!UICONTROL 当表单涵盖整个页面宽度]**&#x200B;选项并且使用了使用核心组件的自适应Forms时，需要在相应的站点页面上包含客户端库。
 
@@ -130,9 +128,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 1. [运行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，将客户端库部署到 AEM as a Cloud Service 环境。
 
-+++
-
-+++ 为您的AEM Sites页面或体验片段启用&#x200B;**[!UICONTROL 自适应Forms — 嵌入(v2)]**
+### 为您的AEM Sites页面或体验片段启用自适应Forms — 嵌入(v2)
 
 要在模板策略中启用&#x200B;**[!UICONTROL 自适应Forms - Embed(v2)]**&#x200B;组件，请执行以下步骤：
 
@@ -142,8 +138,6 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
-
-+++
 
 ## 使用自适应Forms — 嵌入(v2)组件嵌入自适应表单 {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
@@ -249,7 +243,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 您可以自定义&#x200B;**[!UICONTROL 自适应表单 — 嵌入(v2)]**&#x200B;组件的高级设置。 在&#x200B;**[!UICONTROL 编辑自适应Forms — 嵌入]**&#x200B;对话框中，可以指定以下内容：
 
 * **资产路径**：浏览并选择要嵌入的自适应表单。 如果您将其从Assets浏览器中删除，则会自动填充该变量。
-* **Post提交** ：选择要在提交表单时触发的操作。 您可以选择显示感谢消息或感谢页面。
+* **提交后** ：选择要在提交表单时触发的操作。 您可以选择显示感谢消息或感谢页面。
    * **显示感谢消息**：使用富文本编辑器编写要在提交表单时显示的消息。 仅当您选择显示感谢消息时，此选项才可用。
    * **显示感谢页面**：浏览并选择要在表单提交时显示的页面。 仅当您选择显示感谢页面时，此选项才可用。
    * **重定向以感谢页面**：启用该选项以将包含嵌入的自适应表单的页面替换为感谢页面。 否则，“感谢”页面将替换&#x200B;**[!UICONTROL 自适应Forms - Embed(v2)]**&#x200B;组件中的自适应表单，而不刷新页面上的基础网站。 仅当您选择显示感谢页面时，此选项才可用。

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3184'
 ht-degree: 19%
@@ -41,7 +41,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 * **标记：** AEM Sites页面允许您[为页面、资源或其他内容分配标记或标签](/help/implementing/developing/introduction/tagging-framework.md)。 标记是关键字或元数据标签，它们提供了一种根据特定标准对内容进行分类和整理的方法。 您可以为AEM中的页面、资源或任何其他内容项分配一个或多个标记，以改进搜索并对资源分类。
 * **锁定和解锁内容：** AEM Sites允许用户在AEM Sites环境中[控制对页面的访问和修改](/help/sites-cloud/authoring/page-editor/edit-content.md)。 锁定页面时，即表示页面不会遭到其他用户未经授权的更改或编辑。 只有锁定了内容的用户或指定的管理员才能解锁内容以允许修改。
 
-此外，AEM页面编辑器中的自适应Forms使用[自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 这些核心组件提供了简单标准的方法来样式化和自定义组件，与[AEM Sites WCM组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)相同。
+此外，AEM页面编辑器中的自适应Forms使用[自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 这些核心组件提供了简单标准的方法来样式化和自定义组件，与[AEM Sites WCM组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)相同。
 
 
 ## 如何在AEM Sites页面或AEM Experience Fragment中创建或添加自适应表单？ {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -72,13 +72,11 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
 在开始创建或自适应表单之前，请启用自适应Forms核心组件并将自适应Forms客户端库添加到AEM Sites页面：
 
-+++  为您的AEM Cloud Service环境启用自适应Forms核心组件
+### 为您的AEM Cloud Service环境启用自适应Forms核心组件
 
 确保 AEM Forms as a Cloud Service 环境已启用[自适应表单核心组件。](enable-adaptive-forms-core-components.md)
 
-+++
-
-+++  将自适应Forms客户端库添加到AEM Sites页面或体验片段
+### 将自适应Forms客户端库添加到AEM Sites页面或体验片段
 
 要启用自适应表单容器组件的完整功能，请使用部署管道将 Customheaderlibs 和 Customfooterlibs 客户端库添加到 AEM Sites 页面。要添加库：
 
@@ -123,9 +121,7 @@ AEM FormsCloud Service提供自适应表单容器和自适应Forms — 嵌入组
 
 1. [运行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，将客户端库部署到 AEM as a Cloud Service 环境。
 
-+++
-
-+++ 为您的AEM Sites页面或体验片段启用自适应Forms容器
+### 为您的AEM Sites页面或体验片段启用自适应Forms容器
 
 若要启用模板策略中的[!UICONTROL 自适应表单容器]组件，请执行以下步骤：
 

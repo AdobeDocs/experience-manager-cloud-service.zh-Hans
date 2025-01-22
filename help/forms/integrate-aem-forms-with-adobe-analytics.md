@@ -5,7 +5,7 @@ exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 1%
@@ -118,7 +118,7 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存数据元素。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337472)
+>[!VIDEO](https://video.tv.adobe.com/v/337472)
 
 ### 配置规则 {#configure-rules}
 
@@ -180,7 +180,7 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
    您可以为所有事件类型创建规则，例如“放弃”、“错误”、“字段访问”、“帮助”、“渲染”、“保存”和“提交”。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
 ### Publish流程 {#publish-flow}
