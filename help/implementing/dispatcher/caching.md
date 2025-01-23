@@ -4,9 +4,9 @@ description: 了解AEM as a Cloud Service中的缓存基础知识
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: fc555922139fe0604bf36dece27a2896a1a374d9
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2924'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Define DISABLE_DEFAULT_CACHING
     </LocationMatch>
   ```
 
-* 虽然未在CDN中缓存设置为私有的HTML内容，但如果配置了[权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans)，则可以在Dispatcher中缓存该内容，从而确保仅授权用户提供该内容。
+* 虽然未在CDN中缓存设置为私有的HTML内容，但如果配置了[权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-hans)，则可以在Dispatcher中缓存该内容，从而确保仅授权用户提供该内容。
 
   >[!NOTE]
   >其他方法(包括[Dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))未成功覆盖值。
@@ -147,7 +147,7 @@ AEM层根据是否已设置缓存标头和请求类型的值来设置缓存标�
 >[!NOTE]
 >通过将Cloud Manager环境变量AEM_BLOB_ENABLE_CACHING_HEADERS设置为true，更改旧的默认行为以便与新行为(高于65000的程序ID)一致。 如果项目已经上线，请确保您验证在更改后，内容是否按预期运行。
 
-现在，无法使用[权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans)在Dispatcher中缓存标记为“私有”的Blob存储中的图像。 始终会从AEM源请求图像，并在用户获得授权时提供图像。
+现在，无法使用[权限敏感型缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-hans)在Dispatcher中缓存标记为“私有”的Blob存储中的图像。 始终会从AEM源请求图像，并在用户获得授权时提供图像。
 
 >[!NOTE]
 >其他方法(包括[dispatcher-ttl AEM ACS Commons项目](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))无法成功覆盖这些值。
@@ -240,12 +240,24 @@ AEM层根据是否已设置缓存标头和请求类型的值来设置缓存标�
 对于在2023年10月或之后创建的环境，为了更好地缓存请求，CDN将删除与营销相关的常见查询参数，特别是与以下正则表达式模式匹配的参数：
 
 ```
-^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
 
-如果您希望禁用此行为，请提交支持票证。
+可以使用[CDN配置](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)中的`requestTransformations`标志来打开和关闭此功能。
 
-对于2023年10月之前创建的环境，建议配置Dispatcher配置的`ignoreUrlParams`属性；请参阅[配置Dispatcher — 忽略URL参数](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)。
+例如，要停止删除CDN级别1的营销参数，应使用包含以下部分的配置部署`removeMarketingParams: false`。
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  requestTransformations:
+    removeMarketingParams: false
+```
+
+如果`removeMarketingParams`功能在CDN级别被禁用，仍建议配置Dispatcher配置的`ignoreUrlParams`属性；请参阅[配置Dispatcher — 忽略URL参数](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)。
 
 忽略营销参数有两种可能性。 （其中首选方法是通过查询参数忽略缓存无效）：
 
@@ -304,7 +316,7 @@ Adobe建议您依赖标准缓存标头来控制内容交付生命周期。 但�
   <tr>
     <th>不适用</th>
     <th>层可用性</th>
-    <th>删除重复项 </th>
+    <th>重复数据删除 </th>
     <th>保证 </th>
     <th>操作 </th>
     <th>影响 </th>
