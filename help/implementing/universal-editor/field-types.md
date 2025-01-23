@@ -4,10 +4,10 @@ description: 通过示例了解通用编辑器可在属性面板中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
+source-git-commit: f6ae3160fc2f12519f840f646f852169b2dcb57c
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
@@ -316,7 +316,7 @@ AEM内容组件类型启用了AEM内容选取器，该选取器可用于选择�
 >
 >通用编辑器[根据其模型验证内容片段字段](/help/assets/content-fragments/content-fragments-models.md#validation)，允许您实施数据完整性规则，如正则表达式模式和唯一性约束。
 >
->这可确保在内容发布之前满足特定的业务要求。
+>这可确保您的内容在发布之前满足特定的业务要求。
 
 >[!BEGINTABS]
 
@@ -455,14 +455,17 @@ AEM内容组件类型启用了AEM内容选取器，该选取器可用于选择�
 ```json
 [
   {
-    "id": "aem-experience-fragment",
+    "id": "experience-fragment",
     "fields": [
       {
         "component": "aem-experience-fragment",
-        "name": "picker",
-        "label": "Experience Fragment Picker",
         "valueType": "string",
-        "variationName": "experienceFragmentVariation"
+        "name": "experience-fragment",
+        "label": "experience-fragment",
+        "variationName": "experienceFragmentVariation",
+        "validation": {
+            "rootPath": "/content/refresh"
+        }
       }
     ]
   }
