@@ -1,17 +1,17 @@
 ---
-title: 跨站点重用代码
+title: 跨网站重用代码
 description: 如果您有许多相似的网站，这些网站的外观和行为大致相同，但内容不同，那么您可以了解如何在一个重写模型中跨多个网站共享代码。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
+source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 2%
 
 ---
 
-# 跨站点重用代码 {#repoless}
+# 跨网站重用代码 {#repoless}
 
 如果您有许多相似的网站，这些网站的外观和行为大致相同，但内容不同，那么您可以了解如何在一个重写模型中跨多个网站共享代码。
 
@@ -34,10 +34,11 @@ AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存�
 * 按照文档[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南，已完全设置您的网站。](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 * 您至少正在运行AEM as a Cloud Service 2024.08 。
 
-您还需要请求Adobe为您配置两个项目。 通过Slack渠道联系Adobe或提出支持问题以提出这些请求。
+您还需要请求Adobe为您配置以下项目。 通过您的Slack渠道联系或提出支持问题以请求Adobe进行这些更改：
 
-* [aem.live配置服务](https://www.aem.live/docs/config-service-setup#prerequisites)对您的环境处于活动状态，并且您被配置为管理员。
-* 必须按Adobe为您的项目启用可重写功能。
+* 请求为您的环境激活[aem.live配置服务](https://www.aem.live/docs/config-service-setup#prerequisites)，并配置为管理员。
+* 请求按Adobe为您的项目启用可重写功能。
+* 请求Adobe为您创建组织。
 
 ## 激活重写功能 {#activate}
 
@@ -64,67 +65,6 @@ AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存�
 ```text
 --header 'x-auth-token: <your-token>'
 ```
-
-### 配置配置服务 {#config-service}
-
-如[先决条件](#prerequisites)中所述，必须为您的环境启用配置服务。 您可以使用此cURL命令检查配置服务设置。
-
-```text
-curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
---header 'x-auth-token: <your-token>'
-```
-
-如果配置服务设置正确，将返回类似于以下内容的JSON。
-
-```json
-{
-  "title": "<your-github-org>",
-  "description": "Your GitHub Org",
-  "lastModified": "2024-11-14T12:14:04.230Z",
-  "created": "2024-11-14T12:13:37.032Z",
-  "version": 1,
-  "users": [
-    {
-      "email": "justthisguyyouknow@adobe.com",
-      "roles": [
-        "admin"
-      ],
-      "id": "<your-id>"
-    }
-  ]
-}
-```
-
-通过项目Slack渠道联系Adobe，或者如果您未启用配置服务，则提出支持问题。 一旦您拥有令牌并验证配置服务已启用，您就可以继续配置。
-
-1. 检查您的内容源是否设置正确。
-
-   ```text
-   curl --request GET \
-   --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>.json \
-   --header 'x-auth-token: <your-token>'
-   ```
-
-1. 将路径映射添加到公共配置。
-
-   ```text
-   curl --request POST \
-     --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
-     --header 'x-auth-token: <your-token>' \
-     --header 'Content-Type: application/json' \
-     --data '{
-       "paths": {
-           "mappings": [
-               "/content/<your-site-content>/:/"
-      ],
-           "includes": [
-               "/content/<your-site-content>/"
-           ]
-       }
-   }'
-   ```
-
-创建公共配置后，您可以通过类似于`https://main--<your-aem-project>--<your-github-org>.aem.page/config.json`的URL访问它以进行验证。
 
 ### 为站点配置添加路径映射并设置技术帐户 {#access-control}
 
@@ -184,6 +124,11 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 1. 使用类似于以下内容的cURL命令在配置中设置技术帐户。
 
+   * 调整`admin`块以定义应具有网站的完全管理访问权限的用户。
+      * 它是一个电子邮件地址数组。
+      * 可使用通配符`*`。
+      * 有关详细信息，请参阅文档[为作者配置身份验证](https://www.aem.live/docs/authentication-setup-authoring#default-roles)。
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/access.json \
@@ -193,7 +138,7 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
        "admin": {
            "role": {
                "admin": [
-                   "*@adobe.com"
+                   "<email>@<domain>.<tld>"
                ],
                "config_admin": [
                    "<tech-account-id>@techacct.adobe.com"
@@ -229,8 +174,8 @@ curl  --location 'https://admin.hlx.page/config/<your-github-org>.json' \
 
 现在，您的基础站点已配置为可重复使用，您可以创建其他利用相同代码库的站点。 根据您的用例，请参阅以下文档。
 
-* [重写多站点管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
-* [重写暂存和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [无重复多站点管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
+* [无重复阶段和生产环境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
 
 ## 疑难解答 {#troubleshooting}
 

@@ -4,9 +4,9 @@ description: 了解最佳实践建议，了解如何使用利用单个代码库(
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1261'
 ht-degree: 2%
 
 ---
@@ -112,6 +112,10 @@ ht-degree: 2%
    * `code`配置应与您在初始项目创建时使用的配置相同。
    * `content` > `source` > `url`必须调整为您正在创建的新站点的名称。 在此示例中，它是`wknd-ch`。
    * 即POSTURL中的网站名称必须与`content` > `source` > `url`相同。
+   * 调整`admin`块以定义应具有网站的完全管理访问权限的用户。
+      * 它是一个电子邮件地址数组。
+      * 可使用通配符`*`。
+      * 有关详细信息，请参阅文档[为作者配置身份验证](https://www.aem.live/docs/authentication-setup-authoring#default-roles)。
 
    ```text
    curl --request POST \
@@ -138,7 +142,7 @@ ht-degree: 2%
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
