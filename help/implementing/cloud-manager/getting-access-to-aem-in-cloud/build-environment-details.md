@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 14162af8ab209b04645502546912af106c67f2b1
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 36%
@@ -117,7 +117,7 @@ Java 21运行时用于具有Java 21和Java 17的内部版本，并将逐步应�
 >当`.cloudmanager/java-version`设置为`21`或`17`时，将部署Java 21运行时。 Java 21运行时计划从2025年2月13日星期四开始逐步推出到所有环境（不仅仅是使用Java 11构建代码的那些环境）。 开始使用沙盒和开发环境，然后在2025年4月推出到所有生产环境。 希望采用Java 21运行时&#x200B;*提前*&#x200B;的客户可通过[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)联系Adobe。
 
 
-#### 构建时间要求
+#### 构建时间要求 {#build-time-reqs}
 
 需要进行以下调整以允许使用Java 21和Java 17构建项目。 您可以在运行Java 21和Java 17之前更新它们，因为它们与旧版Java兼容。
 
