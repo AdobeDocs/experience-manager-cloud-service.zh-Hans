@@ -5,16 +5,16 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '984'
 ht-degree: 68%
 
 ---
 
 # Assets视图简介 {#assets-view}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 ![部署 Assets Essentials](assets/banner-image.jpg)
@@ -68,7 +68,7 @@ Assets视图提供了以下在“管理员”视图中不可用的主要优势�
 
 ![“我的工作区”概述](assets/my-workspace-demo.gif)
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![查看指南](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### 有助于做出以数据为驱动的决策的见解 {#insights-data}
 
@@ -76,7 +76,7 @@ Assets视图提供了以下在“管理员”视图中不可用的主要优势�
 
 ![见解概述](assets/insights-overview.gif)
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![查看指南](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Adobe Photoshop Express 集成可加速协作 {#accelerate-collaboration}
 
@@ -86,7 +86,7 @@ Assets视图提供了以下在“管理员”视图中不可用的主要优势�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![查看指南](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 即将发布的Assetsas a Cloud Service版本还将包括[通过Adobe Express的Adobe Firefly集成](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838)。
 
@@ -96,7 +96,7 @@ Assets视图提供了以下在“管理员”视图中不可用的主要优势�
 
 ![上传文件夹](assets/folder-uploads.gif)
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![查看指南](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### 通过以搜索优先的方法来提高效率 {#search-first}
 
@@ -110,7 +110,7 @@ Assets视图提供了以下在“管理员”视图中不可用的主要优势�
 
 ![接收通知](assets/notifications.gif)
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![查看指南](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### 软删除资源，提升管理员的控制能力 {#soft-delete-assets}
 
@@ -118,7 +118,7 @@ Assets视图提供了以下在“管理员”视图中不可用的主要优势�
 
 ![软删除](assets/soft-delete.gif)
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
+[![查看指南](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 除了这些功能之外，资源视图还使您能够执行管理视图中不可用的以下功能：
 
