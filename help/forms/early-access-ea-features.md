@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 7654289713246e894388bcd9bfa995248aeb3c38
+source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1779'
 ht-degree: 30%
 
 ---
@@ -90,7 +90,7 @@ WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，�
 
 ### AEM Forms到Marketo的连接器
 
-[AEM Forms到Marketo连接器](/help/forms/integrate-adaptive-form-with-marketo-engage.md)弥合了使用Adobe Experience Manager (AEM)构建的Web表单(自适应Forms)与营销自动化平台Marketo之间的差距。
+[AEM Forms到Marketo连接器](/help/forms/integrate-form-to-marketo-engage.md)弥合了使用Adobe Experience Manager (AEM)构建的Web表单(自适应Forms)与营销自动化平台Marketo之间的差距。
 
 当有人在您的网站上提交使用AEM Adaptive Forms创建的表单时，连接器可确保将提交的数据自动发送到Marketo。 这消除了对手动数据输入的需要，并降低了错误风险。
 
@@ -100,6 +100,12 @@ WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，�
 
 本质上，AEM Forms到Marketo Connector可帮助您利用两个平台的优势，创建更高效和更高效的营销漏斗。
 
+准备好开始了吗？ 以下文章提供了使用创新的详细说明。
+
+* [将 Marketo Engage 与 AEM Forms 集成](/help/forms/integrate-form-to-marketo-engage.md)
+* [将自适应表单与Marketo Engage集成](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [为现有的自适应Forms配置Marketo Engage和数据源](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [提交现有自适应表单以Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## 其他早期访问创新
 
