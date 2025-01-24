@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 22%
+source-wordcount: '1025'
+ht-degree: 19%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager提供自助服务工具来安装和管理SSL证书，确保用户�
 
 | | 模型 | 描述 |
 | --- | --- | --- |
-| A | **[托管SSL证书(DV)Adobe](#adobe-managed)** | Cloud Manager允许用户配置Adobe为快速域设置而提供的DV（域验证）证书。 |
+| A | **[托管SSL证书(DV)Adobe](#adobe-managed)** | Cloud Manager允许用户配置Adobe为快速域设置提供的DV（域验证）证书。 |
 | B | **[客户管理的SSL证书(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS（传输层安全性）服务，允许您管理您拥有的OV和EV SSL证书以及来自第三方证书颁发机构的私钥，例如&#x200B;*让我们加密*。 |
 
 这两种模型都提供了以下用于管理证书的常规功能：
@@ -73,20 +73,47 @@ OV和EV证书提供CA验证的信息。 此类信息可帮助用户评估网站�
 >
 >如果您有多个自定义域，则可能不希望每次添加新域时都上载证书。 在这种情况下，您可以从获取覆盖多个域的单个证书中获益。
 
->[!NOTE]
->
->如果安装了两个证书覆盖同一个域，则会应用更准确的证书。
->
->例如，如果您的域是`dev.adobe.com`，并且您有一个用于`*.adobe.com`的证书和一个用于`dev.adobe.com`的证书，则使用更具体的证书(`dev.adobe.com`)。
-
 #### 客户管理的OV/EV SSL证书要求 {#requirements}
 
 如果您选择添加自己的客户管理的OV/EV SSL证书，它必须满足以下要求：
 
-* AEM as a Cloud Service接受符合OV（组织验证）或EV（扩展验证）策略的证书。
+* 证书必须符合OV（组织验证）或EV（扩展验证）策略。
    * Cloud Manager不支持添加您自己的DV（域验证）证书。
+* 不支持自签名证书。
 * 任何证书都必须是来自受信任证书颁发机构的X.509 TLS证书，并具有匹配的2048位RSA私钥。
-* 不接受自签名证书。
+
+#### 证书管理最佳实践
+
+* **避免证书重叠：**
+
+   * 为了确保顺利的证书管理，请避免部署与同一域匹配的重叠证书。 例如，将通配符证书(*.example.com)与特定证书(dev.example.com)一起使用可能会导致混淆。
+   * TLS层优先处理最具体和最近部署的证书。
+
+  示例场景：
+
+   * “开发证书”涵盖`dev.example.com`并部署为`dev.example.com`的域映射。
+   * “暂存证书”涵盖`stage.example.com`并部署为`stage.example.com`的域映射。
+   * 如果“暂存证书”在&#x200B;*“开发证书”之后部署/更新*，则它还会为`dev.example.com`提供请求。
+
+     要避免此类冲突，请确保将证书的作用域仔细限定为其目标域。
+
+* **通配符证书：**
+
+  虽然支持通配符证书（例如`*.example.com`），但应仅在必要时使用。 在重叠的情况下，以更具体的证书为准。 例如，特定证书为`dev.example.com`提供服务，而不是通配符(`*.example.com`)。
+
+* **验证和故障排除：**
+在尝试使用Cloud Manager安装证书之前，Adobe建议您使用`openssl`等工具在本地验证证书的完整性。 例如，
+
+  `openssl verify -untrusted intermediate.pem certificate.pem`
+
+
+<!--
+>[!NOTE]
+>
+>If two certificates cover the same domain are installed, the one that is more exact is applied.
+>
+>For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
+-->
 
 #### 客户管理的证书的格式 {#certificate-format}
 
@@ -112,13 +139,9 @@ SSL 证书文件必须采用 PEM 格式才能与 Cloud Manager 一起安装。PE
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
->[!TIP]
->
->Adobe建议您在尝试使用Cloud Manager安装证书之前，先使用诸如`openssl verify -untrusted intermediate.pem certificate.pem`之类的工具在本地验证证书的完整性。
-
 ## 已安装SSL证书数量的限制 {#limitations}
 
-在任何给定时间，Cloud Manager允许最多安装50个SSL证书。 这些证书可以与程序中的一个或多个环境相关联，并且还包括任何过期的证书。
+在任何给定时间，Cloud Manager最多支持50个已安装的证书。 这些证书可以与程序中的一个或多个环境相关联，并且还包括任何过期的证书。
 
 如果您已达到限制，请检查您的证书并考虑删除任何过期的证书。 或者，在同一证书中对多个域进行分组，因为一个证书可以覆盖多个域（最多100个SAN）。
 
