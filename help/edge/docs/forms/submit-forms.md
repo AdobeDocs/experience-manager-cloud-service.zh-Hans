@@ -4,23 +4,31 @@ description: 使用电子表格和 Adaptive Forms Block 字段更快地制作功
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 65%
+source-wordcount: '890'
+ht-degree: 79%
 
 ---
 
 # 设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据
 
 
-在您[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，就可以启用相应的电子表格以开始接收数据。 您可以手动启用电子表格以接受数据，或使用 Admin API 启用电子表格以接受数据。
+在您[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，就可以启用相应的电子表格以开始接收数据。 您可以
+
+* [手动启用电子表格以接受数据](#manually-enable-the-spreadsheet-to-accept-data)
+* [使用管理 API 使电子表格能够接受数据](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![基于文档的创作生态系统](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 
+<!--
+
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
+-->
+
+您可以[手动配置Forms提交服务](#configuring-the-forms-submission-service-manually)或[使用API配置Forms提交服务](#configuring-the-forms-submission-service-using-api)。
 
 
 ## 手动启用电子表格以接受数据
@@ -60,118 +68,112 @@ ht-degree: 65%
 >
 >  “共享aem”工作表绝不应包含任何您不希望公开访问的个人身份信息或敏感数据。
 
-<!--
-### Use Admin APIs to enable a spreadsheet to accept data
 
-You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
+## 使用管理 API 使电子表格能够接受数据
 
-To use Admin APIs to enable a spreadsheet to accept data: 
+您还可以向表单发送 POST 请求，使其能够接受数据并配置 `incoming` 工作表的标头。收到 POST 请求后，该服务会分析请求正文并自动生成数据摄取所需的基本标头和工作表。
 
-
-1. Open the workbook that you have created and change the name of the default sheet to `incoming`. 
-
-    >[!WARNING] 
-    >
-    > If the `incoming` sheet doesn't exist, AEM won't send any data to this workbook.
-
-1. Preview the sheet in the sidekick.
-
-    >[!NOTE] 
-    >
-    >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
-
-1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exist already.
-
-    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). You can look at the example provided below: 
-
-    **Request** 
-    
-    ```JSON
-
-    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "john@wknd.com",
-            "Name": "John",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
+要使用管理员 API 以使电子表格能够接受数据，请执行以下操作：
 
 
-    **Response**
+1. 打开您创建的工作簿并将默认工作表的名称更改为 `incoming`。
 
-    ```JSON
+   >[!WARNING]
+   >
+   > 如果 `incoming` 工作表不存在，AEM 不会向此工作簿发送任何数据。
 
-    HTTP/2 200 
-    content-type: application/json
-    x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
-    cache-control: no-store, private, must-revalidate
-    accept-ranges: bytes
-    date: Sat, 10 Feb 2024 09:26:48 GMT
-    via: 1.1 varnish
-    x-served-by: cache-del21736-DEL
-    x-cache: MISS
-    x-cache-hits: 0
-    x-timer: S1707557205.094883,VS0,VE3799
-    strict-transport-security: max-age=31557600
-    content-length: 138
+1. 在 Sidekick 中预览工作表。
 
-    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   >[!NOTE]
+   >
+   >即使您之前已经预览过该工作表，在第一次创建 `incoming` 工作表后也必须再次预览它。
 
-    ```
+1. 发送 POST 请求以在 `incoming` 工作表中生成适当的标头，并将 `shared-default` 工作表添加到电子表格（如果它尚不存在）。
 
-    You can use tools like curl or Postman to execute this POST request, as demonstrated below:
+   要了解如何设置用于设置工作表的 POST 请求的格式，请参阅[管理员 API 文档](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)。您可以查看下面提供的示例：
 
-    ```JSON
+   **请求**
 
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-        --header 'Content-Type: application/json' \
-        --data '{
-            "data": {
-                "Email": "john@wknd.com",
-                "Name": "John",
-                "Subject": "Regarding Product Inquiry",
-                "Message": "I have some questions about your products.",
-                "Phone": "123-456-7890",
-                "Company": "Wknd Inc.",
-                "Country": "United States",
-                "PreferredContactMethod": "Email",
-                "SubscribeToNewsletter": true
-        }
-    }'
+   ```JSON
+   POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
+   --header 'Content-Type: application/json' \
+   --data '{
+       "data": {
+           "Email": "john@wknd.com",
+           "Name": "John",
+           "Subject": "Regarding Product Inquiry",
+           "Message": "I have some questions about your products.",
+           "Phone": "123-456-7890",
+           "Company": "Adobe Inc.",
+           "Country": "United States",
+           "PreferredContactMethod": "Email",
+           "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-    ```
 
-    The above mentioned POST request provides sample data, including both form fields and their respective sample values. This data is used by the Admin service to set up the form.
+   **响应**
 
-    Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
+   ```JSON
+   HTTP/2 200 
+   content-type: application/json
+   x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
+   cache-control: no-store, private, must-revalidate
+   accept-ranges: bytes
+   date: Sat, 10 Feb 2024 09:26:48 GMT
+   via: 1.1 varnish
+   x-served-by: cache-del21736-DEL
+   x-cache: MISS
+   x-cache-hits: 0
+   x-timer: S1707557205.094883,VS0,VE3799
+   strict-transport-security: max-age=31557600
+   content-length: 138
+   
+   {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   ```
 
-## Automatic changes to sheet once it is enabled to accept data. 
+   您可以使用 curl 或 Postman 等工具来执行此 POST 请求，如下所示：
 
-Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
+   ```JSON
+   curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
+       --header 'Content-Type: application/json' \
+       --data '{
+           "data": {
+               "Email": "john@wknd.com",
+               "Name": "John",
+               "Subject": "Regarding Product Inquiry",
+               "Message": "I have some questions about your products.",
+               "Phone": "123-456-7890",
+               "Company": "Wknd Inc.",
+               "Country": "United States",
+               "PreferredContactMethod": "Email",
+               "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
+   上述 POST 请求提供了示例数据，包括表单字段及其各自的示例值。管理服务会使用此数据来设置表单。
 
-1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
+   您的表单现已能够接受数据。您还可以在电子表格中观察到以下变化：
 
-    >[!NOTE] 
-    >
-    > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
+## 启用工作表接受数据后自动更改工作表。
 
-1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
+将工作表设置为接收数据后，您会在电子表格中观察到以下变化：
 
-    >[!WARNING] 
-    >
-    >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+一份名为“Slack”的工作表将会被添加到您的 Excel 工作簿或 Google 工作表中。在此工作表中，您可以在电子表格中引入新数据时为指定的 Slack 渠道配置自动通知。目前，AEM 仅支持向 AEM Engineering Slack 组织和 Adobe Enterprise 支持组织发送通知。
+
+1. 要设置 Slack 通知，请输入 Slack 工作区的“teamId”和“频道名称”或“ID”。您还可以向 slack-bot（使用调试命令）询问“teamId”和“channel ID”。最好使用“频道 ID”而不是“频道名称”，因为它在频道重命名后仍然有效。
+
+   >[!NOTE]
+   >
+   > 旧的表单没有“teamId”列。“teamId”包含在频道列中，以“#”或“/”分隔。
+
+1. 输入您想要的任何标题，然后在字段下输入您想要在 Slack 通知中看到的字段的名称。每个标题应以逗号分隔（例如姓名、电子邮件）。
+
+   >[!WARNING]
+   >
+   >  在任何情况下，“shared-default”工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
 
 
 

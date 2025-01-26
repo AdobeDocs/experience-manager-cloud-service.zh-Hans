@@ -5,7 +5,7 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 4f2dcb02c3ad00ef9735679d8bd4cce568bfabb5
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%
@@ -100,7 +100,7 @@ ht-degree: 1%
 > * 将`incoming`工作表与Adobe Experience Manager共享`forms@adobe.com`并授予编辑权限。
 > * 在Sidekick中预览和发布`incoming`工作表。
 
-要了解如何设置POST请求格式以设置工作表，请参阅[API文档](https://main--afb--adobe.hlx.page/docs/index.html#/paths/~1%7Bid%7D/post)。 您可以查看下面提供的示例：
+要了解如何设置POST请求格式以设置工作表，请参阅[API文档](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)。 您可以查看下面提供的示例：
 
 您可以使用curl或Postman等工具来执行此POST请求，如下所示。
 
