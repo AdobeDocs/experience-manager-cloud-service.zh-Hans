@@ -1,14 +1,14 @@
 ---
 title: 适用于 AEM Forms 的 Edge Delivery Services 概述
-description: '适用于 AEM Forms 的 Edge Delivery Services '
+description: AEM Forms的Edge Delivery Services专为实现卓越性能而构建，使您能够预见简化数据收集和用户参与的未来。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 60998217ea7d3d9c426975510b433308b0ddea14
+source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 15%
+source-wordcount: '956'
+ht-degree: 14%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 通用编辑器专门针对Edge Delivery Services(EDS)。 通用编辑器的核心优势在于其强大的功能集，其中包括高级表单创建功能、动态规则编辑以及与各种数据源的无缝集成。 用户可以使用预建的组件、可自定义的模板和广泛的表单元素库快速设计响应式表单。
 
-![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){{width=50%, align-center}}
 
 
 
@@ -43,7 +43,7 @@ Universal Editor的功能经过精心设计，可保持轻量级的客户端渲�
     <p>设计可跨设备无缝调整的响应式表单。 使用响应模式预览和测试台式机、平板电脑和移动设备的设计。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG界面" alt="提交操作">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="WYSIWYG界面" alt="提交操作">
     <h3>响应式模式 </h3>
     <p>设计可在各种设备（台式机、平板电脑和移动设备）之间无缝调整的表单。 使用响应模式预览各种屏幕大小的表单。</p>
   </div>
@@ -68,17 +68,17 @@ Universal Editor的功能经过精心设计，可保持轻量级的客户端渲�
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG界面" alt="预填充服务">
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="WYSIWYG界面" alt="预填充服务">
     <h3>预填充服务</h3>
     <p>预填充服务会自动使用来自各种来源的相关用户数据填充表单字段，从而减少手动输入并增强用户体验。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG界面" alt="数据绑定">
+    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="WYSIWYG界面" alt="数据绑定">
     <h3>数据绑定</h3>
     <p>数据绑定允许在表单字段和后端数据源之间直接连接，支持实时更新和高级数据映射。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/localization.svg" alt="WYSIWYG界面" alt="国际化/本地化">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG界面" alt="国际化/本地化">
     <h3>发布/取消发布</h3>
     <p>轻松控制表单的可见性 — 只需单击几下即可发布或取消发布表单，以动态管理可用性、用户访问和内容更新。</p>
   </div>
@@ -96,7 +96,7 @@ Universal Editor的功能经过精心设计，可保持轻量级的客户端渲�
     <p>提交操作支持后端集成、条件提交逻辑、安全端点和预处理器，从而简化了提交工作流。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG界面" alt="任务管理">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="WYSIWYG界面" alt="任务管理">
     <h3>自定义组件</h3>
     <p>通过自定义组件，开发人员可创建针对特定组织用例的独特元素，以扩展表单功能。</p>
   </div>
@@ -104,17 +104,17 @@ Universal Editor的功能经过精心设计，可保持轻量级的客户端渲�
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG界面" alt="编辑器自定义">
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG界面" alt="编辑器自定义">
     <h3>编辑器自定义</h3>
     <p>开发人员可以通过UI扩展来扩展通用编辑器的功能，从而实现符合特定组织需求的定制解决方案。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG界面" alt="嵌入Forms">
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG界面" alt="嵌入Forms">
     <h3>嵌入Forms</h3>
     <p>使用通用编辑器的内置嵌入组件将表单直接嵌入到Edge Delivery Services Sites页面中，以实现无缝的用户体验。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG界面" alt="自定义组件">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="WYSIWYG界面" alt="自定义组件">
     <h3>感谢配置</h3>
     <p>轻松自定义在成功提交表单后向用户显示的确认消息或页面。
     </p>

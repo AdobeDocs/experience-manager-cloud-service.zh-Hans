@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '5998'
 ht-degree: 99%
 
 ---
@@ -771,6 +771,7 @@ ht-degree: 99%
             + [比较自适应表单](/help/forms/compare-forms.md)
             + [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
+            + [自适应Forms中的电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
             + 基于核心组件的自适应表单规则编辑器简介{#rule-editor-core-components}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1016,7 +1017,7 @@ ht-degree: 99%
          + [使用规则向表单添加动态行为](/help/edge/docs/forms/rules-forms.md)
          + [用于验证的正则表达式](/help/edge/docs/forms/regex-forms.md)
          + [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
-         + [使用Forms提交服务](/help/forms/forms-submission-service.md)
+         + [使用表单提交服务](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
          + [概述 — 适用于FormsEdge Delivery Services的通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
@@ -1026,7 +1027,7 @@ ht-degree: 99%
          + [使用 reCAPTCHA 保护您的表单](/help/edge/docs/forms/recaptacha-forms.md)
          + [自定义组件](/help/edge/docs/forms/custom-components-forms.md)
          + [表单的实际使用监控](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
-         + [发布Forms以进行Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md)
+         + [发布 Edge Delivery Services 表单](/help/edge/docs/forms/publishing-forms.md)
       + 引用 {#forms-references}
          + [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
    + Edge Delivery 资产 {#resources}
