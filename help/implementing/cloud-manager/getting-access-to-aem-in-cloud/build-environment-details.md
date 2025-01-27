@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
+source-git-commit: 0723d7a3166650d10f8af0210f24bb9b6c5cf325
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 36%
+source-wordcount: '1374'
+ht-degree: 34%
 
 ---
 
@@ -75,9 +75,7 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 #### 设置Maven JDK版本 {#alternate-maven-jdk-version}
 
-Adobe建议在`.cloudmanager/java-version`文件中将Maven执行JDK版本设置为`21`或`17`。
-
-为此，请在管道使用的Git存储库分支中创建一个名为`.cloudmanager/java-version`的文件。 编辑文件，使其仅包含文本`21`或`17`。 虽然Cloud Manager也接受值`8`，但AEM Cloud Service项目不再支持此版本。 任何其他值将被忽略。 当指定`21`或`17`时，使用OracleJava 21或OracleJava 17。<!-- Removed this last part as per Brian's feedback on Slack. ...and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-21` or `/usr/lib/jvm/jdk-17`. -->
+要设置Maven执行JDK，请在管道使用的Git存储库分支中创建名为`.cloudmanager/java-version`的文件。 编辑文件，使其仅包含文本`21`或`17`。 虽然Cloud Manager也接受值`8`，但AEM Cloud Service项目不再支持此版本。 任何其他值将被忽略。 当指定`21`或`17`时，使用OracleJava 21或OracleJava 17。
 
 
 #### 迁移到使用Java 21或Java 17进行构建的先决条件 {#prereq-for-building}
@@ -99,27 +97,31 @@ Java 21运行时用于具有Java 21和Java 17的内部版本，并将逐步应�
 
 库更新可以随时应用，因为它们仍与旧版Java兼容。
 
-* **最低版本`org.objectweb.asm`：**
-将`org.objectweb.asm`的使用更新到9.5或更高版本，以确保支持较新的JVM运行时。
+* **ASM的最低版本：**
+请将Java包`org.objectweb.asm`（通常捆绑在`org.ow2.asm.*`项目中）的使用情况更新到9.5或更高版本，以确保支持较新的JVM运行时。
 
-* **最低版本`org.apache.groovy`：**
-将`org.apache.groovy`的使用更新到4.0.22或更高版本，以确保支持较新的JVM运行时。
+* **Groovy的最低版本：**
+将Java包`org.apache.groovy`或`org.codehaus.groovy`的使用更新到版本4.0.22或更高版本，以确保支持较新的JVM运行时。
 
   可以通过添加第三方依赖项（例如 AEM Groovy Console）间接包含此捆绑包。
+
+AEM Cloud Service SDK与Java 21兼容，并可用于在执行Cloud Manager管道之前验证项目与Java 21的兼容性。
 
 * **编辑运行时参数：**
 使用Java 21在本地运行AEM时，由于`MaxPermSize`参数，启动脚本（`crx-quickstart/bin/start`或`crx-quickstart/bin/start.bat`）失败。 作为补救措施，请从脚本中删除`-XX:MaxPermSize=256M`或定义环境变量`CQ_JVM_OPTS`，并将其设置为`-Xmx1024m -Djava.awt.headless=true`。
 
-  Adobe计划在以后的版本中解决此问题。
+  AEM Cloud Service SDK版本19149和更高版本中已解决此问题。
 
 >[!IMPORTANT]
 >
->当`.cloudmanager/java-version`设置为`21`或`17`时，将部署Java 21运行时。 Java 21运行时计划从2025年2月13日星期四开始逐步推出到所有环境（不仅仅是使用Java 11构建代码的那些环境）。 开始使用沙盒和开发环境，然后在2025年4月推出到所有生产环境。 希望采用Java 21运行时&#x200B;*提前*&#x200B;的客户可通过[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)联系Adobe。
+>当`.cloudmanager/java-version`设置为`21`或`17`时，将部署Java 21运行时。 Java 21运行时计划从2025年2月4日星期二开始逐步推出到所有环境（不仅仅是使用Java 11构建代码的那些环境）。 开始使用沙盒和开发环境，然后在2025年4月推出到所有生产环境。 希望采用Java 21运行时&#x200B;*提前*&#x200B;的客户可通过[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)联系Adobe。
 
 
 #### 构建时间要求 {#build-time-reqs}
 
 需要进行以下调整以允许使用Java 21和Java 17构建项目。 您可以在运行Java 21和Java 17之前更新它们，因为它们与旧版Java兼容。
+
+我们建议AEM Cloud Service客户尽早使用Java 21构建其项目，以便利用新的语言功能。
 
 * **最低版本`bnd-maven-plugin`：**
 将`bnd-maven-plugin`的使用更新到版本6.4.0，以确保支持较新的JVM运行时。
