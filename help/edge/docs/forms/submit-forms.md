@@ -4,17 +4,17 @@ description: 使用电子表格和 Adaptive Forms Block 字段更快地制作功
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 79%
+source-wordcount: '873'
+ht-degree: 97%
 
 ---
 
 # 设置您的 Google Sheets 或 Microsoft Excel 文件，即可开始接受数据
 
 
-在您[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，就可以启用相应的电子表格以开始接收数据。 您可以
+在[创建并预览表单](/help/edge/docs/forms/create-forms.md)后，就可以启用相应的电子表格开始接收数据。您可以
 
 * [手动启用电子表格以接受数据](#manually-enable-the-spreadsheet-to-accept-data)
 * [使用管理 API 使电子表格能够接受数据](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
@@ -28,32 +28,29 @@ ht-degree: 79%
 
 -->
 
-您可以[手动配置Forms提交服务](#configuring-the-forms-submission-service-manually)或[使用API配置Forms提交服务](#configuring-the-forms-submission-service-using-api)。
-
-
 ## 手动启用电子表格以接受数据
 
 使电子表格能够接受数据
 
-1. 打开具有表单的电子表格，然后附加一个新工作表，将其重命名为`incoming`。 例如，Microsoft Excel工作簿中的[inquiry](/help/edge/assets/enquiry.xlsx)。
+1. 打开包含您的表单的电子表格并附加一个新工作表，并将其重命名为 `incoming`。例如，[“enquiry”](/help/edge/assets/enquiry.xlsx) 表单 Microsoft Excel 工作簿。
 
    >[!WARNING]
    >
    > 如果 `incoming` 工作表不存在，AEM 不会向电子表格发送任何数据。
 
-1. 在此工作表中，插入一个名为“intake_form”的表。选择与表单字段名称匹配所需的列数。然后，在工具栏中转到“插入”>“表格”并单击“确定”。
+1. 在此工作表中，插入一个名为 “intake_form” 的表。选择与表单字段名称匹配所需的列数。然后，在工具栏中转到“插入”>“表格”并单击“确定”。
 
-1. 将表的名称更改为“intake_form”。在 Microsoft Excel 中，要更改表的名称，请选择该表并单击“表设计”。
+1. 将表的名称更改为 “intake_form”。在 Microsoft Excel 中，要更改表的名称，请选择该表并单击“表设计”。
 
-1. 接下来，添加表单字段名称作为表标题。要确保字段完全相同，您可以从“shared-aem”工作表中复制并粘贴它们。  在“shared-aem”工作表中，选择并复制“Name”列下列出的表单ID（提交字段除外）。
+1. 接下来，添加表单字段名称作为表标题。为了确保字段完全相同，您可以从 “shared-aem” 表中复制并粘贴它们。在 “shared-aem” 工作表中，选择并复制“名称”列下列出的表单 ID（提交字段除外）。
 
 1. 在“传入”工作表中，选择“选择性粘贴”>“将行转置为列”，将字段 ID 复制为该新工作表中的列标题。只保留需要捕获数据的字段，其他可以忽略。
 
-   `shared-aem`工作表的`Name`列中的每个值（不包括提交按钮）都可以用作`incoming`工作表中的标题。例如，请考虑下图说明“查询”表单的标头：
+   `shared-aem` 工作表的`Name`列中的每个值（不包括提交按钮）都可以用作`incoming`工作表中的标题。例如，请考虑下图，其中说明了 “enquiry” 表单的标题：
 
-   ![“contact-us”表单的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+   ![“contact-us” 表单的字段](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. 使用[AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content)扩展预览表单更新。 您的工作表现已准备好接受传入的表单提交。
+1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 扩展预览表单更新。您的工作表现已准备好接受传入的表单提交。
 
    >[!NOTE]
    >
@@ -62,11 +59,11 @@ ht-degree: 79%
 
 将字段名称添加到 `incoming` 工作表后，您的表单便能接受提交。您可以预览表单并使用它向工作表提交数据。
 
-将工作表设置为接收数据后，您可以[预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)-->以开始将数据发送到工作表。
+将工作表设置为接收数据后，您可以[预览表单](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) <!--or [use POST requests](#use-admin-apis-to-send-data-to-your-sheet)-->并开始将数据发送到工作表。
 
 >[!WARNING]
 >
->  “共享aem”工作表绝不应包含任何您不希望公开访问的个人身份信息或敏感数据。
+>  在任何情况下，“shared-aem” 工作表都不应包含您不愿意公开的任何个人身份信息或敏感数据。
 
 
 ## 使用管理 API 使电子表格能够接受数据
