@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0723d7a3166650d10f8af0210f24bb9b6c5cf325
+source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 34%
+source-wordcount: '1489'
+ht-degree: 31%
 
 ---
 
@@ -84,6 +84,12 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 将应用程序迁移到新的Java内部版本和运行时版本时，请先在开发和暂存环境中进行全面测试，然后再部署到生产环境。
 
+我们建议使用以下部署策略：
+
+1. 使用Java 21运行本地SDK(可从https://experience.adobe.com/#/downloads下载)，然后将应用程序部署到其中并验证其功能。 检查日志中是否存在错误，这些错误表示类加载或字节码编织有问题。
+1. 在Cloud Manager存储库中配置分支以将Java 21用作构建时Java版本，配置开发管道以使用此分支并运行管道。 运行验证测试。
+1. 如果一切正常，请将stage/prod管道配置为使用Java 21作为buildtime Java版本，然后运行该管道。
+
 ##### 关于某些翻译功能 {#translation-features}
 
 使用Java 21或Java 17构建时，以下功能可能无法正确运行，Adobe预计将在2025年初解决这些问题：
@@ -93,7 +99,7 @@ To do so, create a file named `.cloudmanager/java-version` in the git repository
 
 #### 运行时要求 {#runtime-requirements}
 
-Java 21运行时用于具有Java 21和Java 17的内部版本，并将逐步应用于Java 11内部版本（请参阅下面的注释）。 为确保兼容性，需要进行以下调整。
+Java 21运行时用于具有Java 21和Java 17的内部版本，并将逐步应用于Java 11内部版本（请参阅下面的注释）。 环境必须位于AEM版本17098或更高版本上才能接收Java 21更新。 为确保兼容性，需要进行以下调整。
 
 库更新可以随时应用，因为它们仍与旧版Java兼容。
 
