@@ -5,25 +5,22 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 12%
+source-wordcount: '1114'
+ht-degree: 11%
 
 ---
 
 # FormsEdge Delivery Services的通用编辑器(EDS Forms块)
 
+通用编辑器通过提供简单、直观的可视Adobe Edge (WYSIWYG)界面，彻底变革了What You See Is What You Get Delivery Services (EDS)的表单创建方式。 它专为内容创建者和表单作者而设计，消除了传统表单构建流程的复杂性，使其甚至可供非技术用户访问。
 
-通用编辑器旨在帮助内容创建者和表单作者轻松构建、管理和编辑表单。 它提供了针对Edge Delivery Services(EDS)的简单、直观且高效的编辑体验。
+使用通用编辑器，您可以使用预建组件（如文本字段、复选框和单选按钮）快速设计响应式交互式表单。 其强大的功能集支持动态规则、无缝数据集成和高级个性化，确保根据您的需求定制每个表单。
 
-通过通用编辑器，用户可以使用表单元素（如文本字段、复选框和单选按钮）在What You See Is What You Get (WYSIWYG)界面中创建表单。 WYSIWYG方法使表单创建变得直观且可访问，即使对于没有技术专业知识的人也是如此。
+无论您是管理轻量级的客户端渲染、确保跨浏览器兼容性，还是遵循严格的辅助功能标准，通用编辑器都可为创建和管理表单提供简化的解决方案。
 
-通用编辑器专门针对Edge Delivery Services(EDS)。 通用编辑器的核心优势在于其强大的功能集，其中包括高级表单创建功能、动态规则编辑以及与各种数据源的无缝集成。 用户可以使用预建的组件、可自定义的模板和广泛的表单元素库快速设计响应式表单。
-
-![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=50%， align-center}
-
-Universal Editor的功能经过精心设计，可保持轻量级的客户端渲染、跨浏览器兼容以及严格遵守辅助功能标准。
+![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%， align-center} —>
 
 ## EDS Forms通用编辑器的主要功能
 
@@ -36,65 +33,65 @@ Universal Editor的功能经过精心设计，可保持轻量级的客户端渲�
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="WYSIWYG界面" alt="规则编辑器">
+    <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="规则编辑器">
     <h3>规则编辑器</h3>
     <p>通过规则编辑器，用户可以使用事件驱动规则、即时验证以及通过轻量级JavaScript和JSON进行的错误处理来创建动态表单交互。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="WYSIWYG界面" alt="响应式模式">
+    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="响应式模式">
     <h3>响应式模式 </h3>
     <p>设计可在各种设备（台式机、平板电脑和移动设备）之间无缝调整的表单。 使用响应模式预览和测试各种屏幕大小的表单。</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="WYSIWYG界面alt=" WYSIWYG Interface"> 
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="个性化"> 
     <h3>个性化</h3>
     <p>Personalization使用用户数据来提供量身定制的表单体验，并根据用户偏好动态调整内容、布局或选项。</p>
   </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="WYSIWYG界面" alt="规则编辑器">
-    <h3>A/B测试</h3>
-    <p>A/B测试（试验）使组织能够试验不同的表单设计、布局和功能，以识别性能最佳的变体。</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="WYSIWYG界面" alt="与Adobe Workfront集成">
-    <h3> 任务管理 </h3>
-    <p>与Adobe Workfront集成使团队能够管理表单创建和维护任务，从而确保简化工作流。</p>
-  </div>
-</div>
-
-<div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="WYSIWYG界面" alt="预填充服务">
+    <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="预填充服务">
     <h3>预填充服务</h3>
     <p>预填充服务会自动使用来自各种来源的相关用户数据填充表单字段，从而减少手动输入并增强用户体验。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="WYSIWYG界面" alt="数据绑定">
-    <h3>数据绑定</h3>
-    <p>数据绑定实现了表单字段与后端数据源之间的直接连接，支持对结构化投诉数据存储进行实时更新和高级数据映射。</p>
-  </div>
-  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG界面" alt="国际化/本地化">
-    <h3>发布/取消发布</h3>
-    <p>轻松控制表单的可见性 — 只需单击几下即可直接从编辑器中发布或取消发布表单，使您能够实时动态管理可用性、用户访问和内容更新，确保表单始终保持最新状态并根据需要访问。</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="规则编辑器">
+    <h3>A/B测试</h3>
+    <p>A/B测试（试验）使组织能够试验不同的表单设计、布局和功能，以识别性能最佳的变体。</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="WYSIWYG界面" alt="Analytics和Tracking">
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analytics和Tracking">
     <h3>Analytics和Tracking</h3>
     <p>通过内置的分析和跟踪功能深入了解用户行为、表单交互和提交率，从而支持数据驱动的表单优化。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="WYSIWYG界面" alt="提交操作">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="与Adobe Workfront集成">
+    <h3> 任务管理 </h3>
+    <p>与Adobe Workfront集成使团队能够管理表单创建和维护任务，从而确保简化工作流。</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="数据绑定">
+    <h3>数据绑定</h3>
+    <p>数据绑定实现了表单字段与后端数据源之间的直接连接，支持对结构化投诉数据存储进行实时更新和高级数据映射。</p>
+  </div>
+</div>
+
+<div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="国际化/本地化">
+    <h3>发布/取消发布</h3>
+    <p>轻松控制表单的可见性 — 只需单击几下即可直接从编辑器中发布或取消发布表单，从而允许您实时动态管理可用性和内容更新。</p>
+  </div>
+  <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="提交操作">
     <h3>提交操作</h3>
     <p>提交操作支持后端集成、条件提交逻辑、安全端点和预处理器，从而简化了提交工作流。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="WYSIWYG界面" alt="任务管理">
+    <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="任务管理">
     <h3>自定义组件</h3>
     <p>通过自定义组件，开发人员可创建针对特定组织用例的独特元素，以扩展表单功能。</p>
   </div>
@@ -102,17 +99,17 @@ Universal Editor的功能经过精心设计，可保持轻量级的客户端渲�
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG界面" alt="编辑器自定义">
+    <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="编辑器自定义">
     <h3>编辑器自定义</h3>
     <p>开发人员可以通过UI扩展来扩展编辑器的功能，从而实现符合特定组织需求的定制解决方案。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG界面" alt="嵌入Forms">
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="嵌入Forms">
     <h3>嵌入Forms</h3>
     <p>使用通用编辑器的内置嵌入组件将表单直接嵌入到Edge Delivery Services Sites页面中，以实现无缝的用户体验。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="WYSIWYG界面" alt="自定义组件">
+    <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="自定义组件">
     <h3>感谢配置</h3>
     <p>轻松自定义在成功提交表单后向用户显示的确认消息或页面。
     </p>
@@ -284,8 +281,28 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 入门培训
 
-要为您的环境启用通用编辑器和规则编辑器，或请求诸如Forms Portal、记录文档、Adobe Sign集成或从右至左的语言支持等附加功能，只需发送电子邮件从您的官方地址访问[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
+要启用通用编辑器及其高级功能（如规则编辑器），请通过您的正式电子邮件ID向我们发送电子邮件： aem-forms-ea@adobe.com 。 Adobe团队将帮助您转变构建表单的体验。
 
+## 常见问题解答(FAQ)
+
+**Q.谁可以使用通用编辑器？**
+通用编辑器专为广泛的受众而设计，包括：
+
+* 希望构建美观表单的内容创建者。
+* 需要高级自定义和集成功能的开发人员。
+* 寻求可扩展、安全且合规的表单解决方案的组织。
+
+**问：我是否可以将使用通用编辑器创建的表单集成到现有系统中？**
+当然。 通用编辑器支持与后端系统的无缝数据绑定，支持实时更新和高级数据映射。 它还与Adobe Workfront等工具集成以便进行任务管理，并支持数据提交工作流的安全端点。
+
+**问：是否可以自定义表单组件？**
+是的，通用编辑器允许开发人员创建针对特定组织需求的自定义组件。 此外，您还可以通过UI扩展和自定义工作流扩展编辑器的功能。
+
+**问：通用编辑器如何处理辅助功能？**
+通用编辑器在设计中严格遵守辅助功能标准，包括WCAG（Web内容辅助功能准则）。 这可确保残障人士可以使用表单，提供包容性的体验。
+
+**问：我可以从表单中获得什么类型的分析？**
+通用编辑器包括内置的分析和跟踪工具，用于监控用户交互、表单提交率和转化量度。 这些见解有助于优化您的表单以获得更好的性能。
 
 
 ## 开始创建表单
