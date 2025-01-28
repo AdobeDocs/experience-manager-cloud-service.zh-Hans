@@ -4,9 +4,9 @@ description: 了解如何在AEM as a Cloud Service中将日志转发到日志记
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 * HTTPS
 * Splunk
 
-以自助方式配置日志转发，方法是在Git中声明一个配置，并通过Cloud Manager配置管道将其部署到生产（非沙盒）程序中的RDE、开发、暂存和生产环境类型。
+日志转发以自助方式配置，方法是在Git中声明配置，并且可以通过Cloud Manager配置管道部署到开发、暂存和生产环境类型。 配置文件可以使用命令行工具部署到快速开发环境(RDE)。
 
 AEM和Apache/Dispatcher日志可以选择通过AEM的高级网络基础架构（如专用出口IP）进行路由。
 

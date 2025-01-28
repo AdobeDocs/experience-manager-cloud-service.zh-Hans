@@ -4,9 +4,9 @@ description: 了解如何使用配置管道来部署各种配置AEM as a Cloud S
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
+source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标环境。 通过这种方式，可以配置AEM as a Cloud Service中的许多功能，包括日志转发、清除相关的维护任务和几个CDN功能。
 
-配置管道可以通过Cloud Manager部署到生产（非沙盒）程序中的开发、暂存和生产环境类型。 配置文件可以使用[命令行工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署到快速开发环境(RDE)。
+配置管道可以通过Cloud Manager部署到开发、暂存和生产环境类型。 配置文件可以使用[命令行工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署到快速开发环境(RDE)。
 
 本文档的以下部分概述了有关如何使用配置管道以及如何为其构建配置的重要信息。 它描述了在配置管道支持的所有功能或功能子集之间共享的一般概念。
 

@@ -4,10 +4,10 @@ description: 了解AEM as a Cloud Service中的维护任务以及如何配置它
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 30%
+source-wordcount: '2043'
+ht-degree: 31%
 
 ---
 
@@ -267,7 +267,7 @@ data:
 * 必须定义所有属性。 没有继承的默认值。
 * 必须遵循以下属性表中的类型（整数、字符串、布尔值等）。
 
-**4** — 在Cloud Manager中创建配置管道，如[配置管道文章中所述。](/help/operations/config-pipeline.md#managing-in-cloud-manager)沙盒和快速开发环境(RDE)不支持清除。
+**4** — 在Cloud Manager中创建配置管道，如[配置管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)中所述。
 
 ### 版本清除 {#version-purge}
 
@@ -373,4 +373,4 @@ minimumVersions = 1
 | 规则 | - | - | 是 | 对象 | 以下一个或多个节点：复制、页面、dam。 其中每个节点都定义了规则，并具有以下属性。 必须声明所有属性。 |
 | maximumAgeDay | 7 天 | 对于所有人，2557年（7年以上2个闰日） | 是 | 整数 | 对于复制、页面或dam：审核日志的保留天数。 将清除早于配置值的审核日志。 |
 | 内容路径 | “/content” | “/content” | 是 | 字符串 | 将清除审核日志的路径（针对相关类型）。 必须设置为“/content”。 |
-| 类型 | 所有值 | 所有值 | 是 | 枚举数组 | 对于&#x200B;**复制**，枚举值为： Activate、Deactivate、Delete、Test、Reverse、Internal Poll。 对于&#x200B;**页面**，枚举值为： PageCreated、PageModified、PageMoved、PageDeleted、VersionCreated、PageRestored、PageRolled、PageValid、PageInvalid。 对于&#x200B;**dam**，枚举值包括：ASSET_EXPIRING、METADATA_UPDATED、ASSET_EXPIRED、ASSET_REMOVED、RESTORED、ASSET_MOVED、ASSET_VIEWED、PROJECT_VIEWED、PUBLISHED_EXTERNAL、COLLECTION_VIEWED、VERSIONED、ADDED_COMMENT、RENDITION_UPDATED、ACCEPTED、DOWATED、DOWNATED、DOWNATED、SUPATED、SUBONED、SUBASSET_UPDATED、RATED、SUBASSET_REMOVED、REMOVED、ASSET_REMOVED、ASSET已共享、RENDITION_REMOVED、ASSET_PUBLISHED、ORIGINAL_UPDATED、RENDITION_DOWNLOADED、REJECTED。 |
+| 类型 | 所有值 | 所有值 | 是 | 枚举数组 | 对于&#x200B;**复制**，枚举值为： Activate、Deactivate、Delete、Test、Reverse、Internal Poll。 对于&#x200B;**页面**，枚举值为： PageCreated、PageModified、PageMoved、PageDeleted、VersionCreated、PageRestored、PageRolled、PageValid、PageInvalid。 对于&#x200B;**dam**，枚举值包括：ASSET_EXPIRING、METADATA_UPDATED、ASSET_EXPIRED、ASSET_REMOVED、RESTORED、ASSET_MOVED、ASSET_VIEWED、PROJECT_VIEWED、PUBLISHED_EXTERNAL、COLLECTION_VIEWED、VERSIONED、ADDED_COMMENT、RENDITION_UPDATED、ACCEPATED、DOWATED、DOWNATED、DOWNATED、DOWNATED、SUBONED、SUBASSET、SUBASSET_RATED、RATED_RATED、REMOVED_REMOVED、ASSET Shared、RENDITION_REMOVED、ASSET_PUBLISHED、ORIGINAL_UPDATED、RENDITION_DOWNLOADED、REJECTED。 |
