@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 13%
+source-wordcount: '1045'
+ht-degree: 12%
 
 ---
 
@@ -33,15 +33,15 @@ ht-degree: 13%
 
 1. 在&#x200B;*让我们创建程序*&#x200B;向导的&#x200B;**程序名称**&#x200B;文本字段中，键入您希望程序的名称。
 
-1. 在&#x200B;**项目目标**&#x200B;下，选择&#x200B;**`Set up for production`**。
+1. 在&#x200B;**项目目标**&#x200B;下，选择![地球图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**为生产设置**。
 
    ![创建项目向导](assets/create-production-program.png)
 
 1. （可选）在向导对话框的右下角，执行以下任一操作：
 
-   * 将图像文件拖放到&#x200B;**添加项目图像**&#x200B;目标上。
-   * 单击&#x200B;**添加程序图像**，然后从文件浏览器中选择图像。
-   * 单击垃圾桶图标可删除您添加的图像。
+   * 将图像文件拖放到![图像图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **添加程序图像**&#x200B;目标上。
+   * 单击![图像图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **添加程序图像**，然后从文件浏览器中选择图像。
+   * 单击![删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)可删除您添加的图像。
 
 1. 单击&#x200B;**继续**。
 
@@ -52,13 +52,13 @@ ht-degree: 13%
    * 为优化数字体验的完全托管的CDN解决方案选择&#x200B;**Edge Deliver Services**。 查看[关于使用Edge Delivery Services交付您的Cloud Manager项目](#edge-overview)
    * 如果您选择了&#x200B;**[启用增强安全性](#security)**&#x200B;选项，则您只能选择HIPAA权利可用的解决方案。
 
-   ![选择解决方案](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+     ![选择解决方案](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
 
-1. 单击解决方案名称左侧的>形标记可显示任何可选的加载项，例如&#x200B;**站点**&#x200B;下的&#x200B;**Commerce**&#x200B;加载项选项。
+   * 单击解决方案名称左侧的![V形300大小图标](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)以显示任何可选的加载项，例如&#x200B;**站点**&#x200B;下的&#x200B;**Commerce**&#x200B;加载项选项。
 
    ![选择“插件”](assets/setup-prod-commerce.png)
 
-1. 选择了解决方案和加载项后，单击&#x200B;**继续**。
+1. 选择完解决方案和加载项后，单击&#x200B;**继续**。
 
 1. 在&#x200B;**上线日期**&#x200B;选项卡上，输入您计划让生产程序上线的日期。
 
@@ -69,7 +69,7 @@ ht-degree: 13%
 
 1. 单击&#x200B;**创建**。Cloud Manager会创建您的项目并将其显示在登录页面上以供选择。
 
-![Cloud Manager 概述](assets/navigate-cm.png)
+   ![Cloud Manager 概述](assets/navigate-cm.png)
 
 ## 其他生产程序选项 {#options}
 
@@ -98,7 +98,7 @@ ht-degree: 13%
 
 ![SLA选项](assets/create-production-program-sla.png)
 
-AEM Sites和Forms之间签订了标准的99.9%服务级别协议(SLA)。 **99.99%服务级别协议**&#x200B;选项允许将您的生产环境的最短正常运行时间百分比设为99.99%用于Sites和/或Forms。
+AEM Sites和Forms提供标准的99.9% service level agreement (SLA)。 使用&#x200B;**99.99% Service level agreement**&#x200B;选项，可以将Sites和/或Forms生产环境的最低正常运行时间百分比提高至99.99%。
 
 99.99%的SLA可提供更高的可用性和更低的延迟，并需要将[额外的发布区域](/help/implementing/cloud-manager/manage-environments.md#multiple-regions)应用于程序中的生产环境。
 
