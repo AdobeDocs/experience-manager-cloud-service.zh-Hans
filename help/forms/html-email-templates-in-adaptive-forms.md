@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -43,10 +43,13 @@ ht-degree: 0%
 1. 打开自适应表单进行编辑。
 1. 转到&#x200B;**内容浏览器**，选择&#x200B;**指南容器**，然后点按属性图标。 出现标题为`Adaptive Form Container`的对话框。
 1. 转到&#x200B;**提交**&#x200B;选项卡并选择&#x200B;**发送电子邮件**&#x200B;提交操作。
+
+   ![发送电子邮件提交操作](/help/forms/assets/send-email-action.png)
+
 1. 启用&#x200B;**使用外部模板**&#x200B;选项。
 1. 启用&#x200B;**使用HTML模板**&#x200B;选项。
 1. 单击“外部模板路径”选项的文件夹图标，然后浏览以选择您的HTML模板。
-1. 单击完成以保存配置。
+1. 单击&#x200B;**完成**&#x200B;以保存配置。
 
 现在已为自适应表单配置了HTML模板。
 
@@ -55,7 +58,6 @@ ht-degree: 0%
 1. 打开自适应表单进行编辑。
 1. 转到&#x200B;**内容浏览器**，选择&#x200B;**指南容器**，然后点按属性图标。 出现标题为`Adaptive Form Container`的对话框。
 1. 转到&#x200B;**提交**&#x200B;选项卡并选择&#x200B;**发送电子邮件**&#x200B;提交操作。
-1. 启用&#x200B;**使用外部模板**&#x200B;选项。
 1. 启用&#x200B;**使用HTML模板**&#x200B;选项。
 1. 在提供的&#x200B;**电子邮件HTML**&#x200B;框中直接键入或粘贴模板代码。
 
@@ -149,8 +151,6 @@ ht-degree: 0%
     Best regards,
     Your Team
 ```
-
-将占位符（${name}、${email}等）替换为自适应表单中的相应表单字段名称。
 
 ## HTML电子邮件模板的最佳实践
 

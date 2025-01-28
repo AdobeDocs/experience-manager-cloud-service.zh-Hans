@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 13%
+source-wordcount: '980'
+ht-degree: 12%
 
 ---
 
@@ -78,7 +78,7 @@ Universal Editor的功能经过精心设计，可保持轻量级的客户端渲�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="WYSIWYG界面" alt="国际化/本地化">
     <h3>发布/取消发布</h3>
-    <p>轻松控制表单的可见性 — 只需单击几下即可发布或取消发布表单，以动态管理可用性和内容更新。</p>
+    <p>轻松控制表单的可见性 — 只需单击几下即可直接从编辑器中发布或取消发布表单，使您能够实时动态管理可用性、用户访问和内容更新，确保表单始终保持最新状态并根据需要访问。</p>
   </div>
 </div>
 
@@ -104,7 +104,7 @@ Universal Editor的功能经过精心设计，可保持轻量级的客户端渲�
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="WYSIWYG界面" alt="编辑器自定义">
     <h3>编辑器自定义</h3>
-    <p>开发人员可以通过UI扩展来扩展通用编辑器的功能，从而实现符合特定组织需求的定制解决方案。</p>
+    <p>开发人员可以通过UI扩展来扩展编辑器的功能，从而实现符合特定组织需求的定制解决方案。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="WYSIWYG界面" alt="嵌入Forms">
