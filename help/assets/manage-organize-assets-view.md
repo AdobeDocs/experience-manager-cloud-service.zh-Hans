@@ -5,16 +5,16 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 92%
+source-wordcount: '1633'
+ht-degree: 73%
 
 ---
 
 # 管理资源 {#manage-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 您可以通过 [!DNL Assets view] 简单易用的用户界面，执行各种数字资源管理 (DAM) 任务。添加资源之后，您可以搜索、下载、移动、复制、重命名、删除、更新和编辑资源。
@@ -139,9 +139,56 @@ Assets视图允许您为存储库中可用的资源设置状态。 设置资源�
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
+
+### 设置审批目标 {#set-approval-target}
+
+通过Assets视图，您可以根据在“资源详细信息”页面上的&#x200B;**批准Dynamic Media**&#x200B;字段中设置的值，使用OpenAPI功能和/或Content Hub将批准的资源发布到。
+
+要设置审批目标，请执行以下操作：
+
+1. 选择资源并单击工具栏中的&#x200B;**[!UICONTROL 详细信息]**。
+
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL 状态]**&#x200B;下拉列表中选择资源状态。 可能的值包括“已批准”、“已拒绝”和“无状态”（默认值）。
+
+1. 如果您在步骤2中选择了&#x200B;**已批准**，请选择一个批准目标。 可能的值包括“交付”和“Content Hub”。
+
+   * **投放**&#x200B;是下拉菜单中的默认选项，如果将资产和[Dynamic Media均启用了Experience Manager Assets，则它将通过OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)将资产发布到[Content Hub](/help/assets/product-overview.md)。
+
+   * 选择&#x200B;**Content Hub**&#x200B;会将资源仅发布到Content Hub。 仅当Content Hub启用了Experience Manager Assets时，它才会显示为选项。
+
+   * 如果您未从下拉列表中选择选项，则为您的AEM as a Cloud Service环境启用的默认选项将自动应用于该资源。
+
+
+   有关可用选项的详细信息，请参阅[已批准资产的默认批准目标和发布目标](#default-approval-target-options-publish-destinations)。
+
+   >[!NOTE]
+   >
+   >设置批准目标是一项有限可用性功能。 您可以通过创建支持票证来启用或禁用它。 如果您已启用Dynamic Media并启用了OpenAPI，则默认情况下会启用它。
+
+   ![审批状态](/help/assets/assets/approval-status-delivery.png)
+
+1. 指定其他资源属性，然后单击&#x200B;**[!UICONTROL 保存]**。
+
+其他需要注意的要点包括：
+
+* 当您未使用默认元数据表单且无法查看&#x200B;**[!UICONTROL 批准目标]**&#x200B;字段时，[编辑您的元数据表单](/help/assets/metadata-assets-view.md#metadata-forms)以将&#x200B;**[!UICONTROL 批准]**&#x200B;字段从可用组件拖到您的元数据表单中，然后单击&#x200B;**[!UICONTROL 保存]**。
+
+* 当您使用Assets视图将审批目标选择为`Content Hub`时，Content Hub中的资源将可供属于同一组织的用户使用。
+
+#### 已批准资产的默认批准目标和发布目标 {#default-approval-target-options-publish-destinations}
+
+下表说明了显示`Approval Target`下拉列表和默认批准目标(基于您的AEM as a Cloud Service环境中使用OpenAPI和Content Hub启用DM)的先决条件：
+
+| 带有OpenAPI的Dynamic Media | Content Hub | 是否显示批准目标下拉列表？ | 已批准资产的默认审批目标 | Publish目标 |
+| --- | --- | --- | --- |---|
+| 已启用 | 已启用 | 是 | 交付 | Dynamic Media与OpenAPI和Content Hub |
+| 未启用 | 已启用 | 是 | Content Hub | Content Hub |
+| 已启用 | 未启用 | 是 | 交付 | 带有OpenAPI的Dynamic Media |
+| 未启用 | 未启用 | 否 | 不适用 | 不适用 |
+
 ### 设置资源过期日期 {#set-asset-expiration-date}
 
-Assets视图还允许您为存储库中可用的资源设置到期日期。 然后，可根据 `Expired` 资源状态[筛选搜索结果](search-assets-view.md#refine-search-results)。此外，还可指定资源的到期日期范围以进一步筛选搜索结果。
+Assets视图还允许您为存储库中可用的资源设置到期日期。 然后，可根据 `Expired` 资源状态[筛选搜索结果](search-assets-view.md#refine-search-results)。此外，还可指定资源的有效期限日期范围以进一步筛选搜索结果。
 
 要设置资源过期日期，请执行以下操作：
 

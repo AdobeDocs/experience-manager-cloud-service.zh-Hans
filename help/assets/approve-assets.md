@@ -3,10 +3,10 @@ title: 批准Experience Manager中的资源
 description: 了解如何在 [!DNL Experience Manager]中批准资源。
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 4%
+source-wordcount: '1115'
+ht-degree: 11%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 4%
 
 >[!AVAILABILITY]
 >
->Dynamic Media with OpenAPI功能指南现在以PDF格式提供。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>具有 OpenAPI 功能的 Dynamic Media 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
 >
->[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-品牌经理和营销人员对品牌资产进行严格控制。 只有获得批准的最新版本的资产才可供使用，从而确保跨所有渠道和应用程序的品牌一致性。
+品牌经理和营销人员对品牌资产进行严格控制。 只有经过批准的最新版本资产可供使用，以确保所有渠道和应用程序的品牌一致性。
 
 您可以在AEM Assets中批准资源以简化资源管理，确保处理资源流程的受控高效性。
 
@@ -37,22 +37,33 @@ ht-degree: 4%
 1. 选择适用的元数据架构并单击&#x200B;**[!UICONTROL 编辑]**。 <br>将打开&#x200B;**[!UICONTROL 元数据架构表单编辑器]**，并突出显示&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡。
 1. 向下滚动并单击&#x200B;**[!UICONTROL 审核状态]**。
 1. 单击右侧面板上的&#x200B;**[!UICONTROL 规则]**&#x200B;选项卡。
-1. 取消选中&#x200B;**[!UICONTROL 禁用编辑]**，然后单击&#x200B;**[!UICONTROL 保存]**。
+1. 取消选中&#x200B;**[!UICONTROL 禁用编辑]**。
 如果需要查看**[!UICONTROL 审阅状态]**&#x200B;字段映射到的属性，请导航到&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡，并查看&#x200B;**[!UICONTROL 映射到属性]**&#x200B;字段中的`./jcr:content/metadata/dam:status`值。
+1. 将&#x200B;**[!UICONTROL 下拉]**&#x200B;字段从右侧的&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区拖放到表单中的元数据分区。
+1. 单击新添加的字段，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中进行以下更新：
+   1. 将&#x200B;**[!UICONTROL 字段标签]**&#x200B;更改为&#x200B;_审批目标_。
+   1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：activationTarget_。
+   1. 添加选项值`contenthub`和`delivery`。
+
+   >[!NOTE]
+   >
+   当您使用Assets视图将审批目标选择为Content Hub时，Content Hub中的资源可供属于同一组织的用户使用。 当您选择审批目标为交付时，所有用户都可以使用这些资产。
+
+1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 >[!NOTE]
 >
 如果您的资源或文件夹具有不同的默认架构，请确保在该特定架构中进行此更新。
 
-## 审批资源 {#approve-assets}
+## 审批资产 {#approve-assets}
 
 要在[!DNL Experience Manager Admin view]中批准资源，请执行以下步骤：
 
 1. 选择资产并单击顶部窗格中的&#x200B;**[!UICONTROL 属性]**。
 1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，向下滚动到&#x200B;**[!UICONTROL 审核状态]**。
-1. 将审阅状态更改为&#x200B;**[!UICONTROL 已批准]**。
+1. 将审核状态更改为&#x200B;**[!UICONTROL 已批准]**。
    ![图像](/help/assets/assets/approve-old-ui.png)
-1. 单击“**[!UICONTROL 保存并关闭]**”。
+1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
@@ -74,6 +85,15 @@ ht-degree: 4%
    1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：status_。
    1. 将默认值更改为&#x200B;_已批准_。
 
+1. 将&#x200B;**[!UICONTROL 下拉]**&#x200B;字段从右侧的&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区拖放到表单中的元数据分区。
+1. 单击新添加的字段，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;面板中进行以下更新：
+   1. 将&#x200B;**[!UICONTROL 字段标签]**&#x200B;更改为&#x200B;_审批目标_。
+   1. 将&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的更新为&#x200B;_。/jcr：content/metadata/dam：activationTarget_。
+   1. 添加选项值`contenthub`和`delivery`。
+
+   >[!NOTE]
+   >
+   当您使用Assets视图将审批目标选择为Content Hub时，Content Hub中的资源可供属于同一组织的用户使用。 当您选择审批目标为交付时，所有用户都可以使用这些资产。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 1. 在&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面中，选择新创建的元数据配置文件。
 1. 单击顶部操作栏中的&#x200B;**[!UICONTROL 将元数据配置文件应用到文件夹]**。
@@ -88,9 +108,22 @@ ht-degree: 4%
 
 同样，要在Assets视图中批量批准文件夹内的资源，请执行以下操作：
 
-1. 选择资源并单击&#x200B;**[!UICONTROL 批量元数据编辑]**。
+1. 选择资产并点击&#x200B;**[!UICONTROL 批量编辑元数据]**。
 
-1. 在右窗格的[!UICONTROL 属性]部分中的&#x200B;**[!UICONTROL 状态]**&#x200B;字段中选择&#x200B;**[!UICONTROL 已批准]**。
+1. 在右侧面板的[!UICONTROL 属性]部分，选择&#x200B;**[!UICONTROL 状态]**&#x200B;字段中的&#x200B;**[!UICONTROL 已批准]**。
+
+   如果将状态选择为`Approved`，并且已为您的Experience Manager Assets启用具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或同时启用这两者，则可以查看&#x200B;**[!UICONTROL 审批目标]**&#x200B;字段中提供的`Delivery`和`Content Hub`选项。
+
+   * 选择&#x200B;**[!UICONTROL 投放]**&#x200B;以使资源对具有OpenAPI功能的Dynamic Media和Content Hub均可用。 如果您未启用Content Hub，选择此选项将仅允许具有OpenAPI功能的Dynamic Media使用这些资源。
+   * 选择&#x200B;**[!UICONTROL Content Hub]**&#x200B;以使Content Hub可以使用这些资源。
+
+   ![审批状态](/help/assets/assets/approval-status-delivery.png)
+
+   如果您未使用默认元数据表单，并且无法查看&#x200B;**[!UICONTROL 批准目标]**&#x200B;字段，请[编辑您的元数据表单](/help/assets/metadata-assets-view.md#metadata-forms)以将&#x200B;**[!UICONTROL 批准]**&#x200B;字段从可用组件拖到您的元数据表单中，然后单击&#x200B;**[!UICONTROL 保存]**。
+
+   >[!NOTE]
+   >
+   如果您使用组织内的Assets视图将审批目标选择为`Content Hub`，则同一组织内的用户可在Content Hub中获得这些资源。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -107,7 +140,7 @@ ht-degree: 4%
 1. 选择&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中提供的带有OpenAPI的&#x200B;**[!UICONTROL Dynamic Media]**。
 
 1. 单击&#x200B;**[!UICONTROL 复制URL]**以复制资产的投放URL。
-   ![动态呈现版本](/help/assets/assets/dm-with-openapi-non-image-assets.png)
+   ![动态演绎](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
