@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 18d19acfedce57a3ae52020d36785689b715ed08
+source-git-commit: f57d90078b5fc0e0c8a79ca60cbc19e7b37323cd
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1250'
 ht-degree: 9%
 
 ---
@@ -75,7 +75,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | 客户用于监控其Cloud Service计划的URL | 已排除 | Adobe建议您使用URL从外部监视可用性或运行状况检查。<br><br>`/system/probes/health` |
 | AEM as a Cloud Service Pod预热服务 | 已排除 |
 | 座席： skyline-service-warmup/1.* |
-| 著名的搜索引擎、社交网络和HTTP库（由Fastly标记） | 已排除 | 已知的服务定期访问网站以刷新其搜索索引或服务： <br><br>示例： <br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuildWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsAds机器人<br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· Claudet |
+| 著名的搜索引擎、社交网络和HTTP库（由Fastly标记） | 已排除 | 已知的服务定期访问网站以刷新其搜索索引或服务： <br><br>示例： <br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuildWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsAds机器人<br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprovement<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>克劳德博特<br> |
 | 排除Commerce integration framework调用 | 已排除 | 向AEM发出的请求将转发到Commerce integration framework（URL以`/api/graphql`开头）以避免重复计数，因此不计费Cloud Service。 |
 | 排除`manifest.json` | 已排除 | 清单不是API调用。 本文件旨在提供有关如何在桌面或手机上安装网站的信息。 Adobe不应计为`/etc.clientlibs/*/manifest.json`的JSON请求 |
 | 排除`favicon.ico` | 已排除 | 尽管返回的内容不应为HTML或JSON，但已观察到某些场景（如SAML身份验证流）会返回favicon作为HTML。 因此，Favicon会明确从计数中排除。 |
