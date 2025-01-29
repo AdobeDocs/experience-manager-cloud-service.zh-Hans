@@ -4,7 +4,7 @@ description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2025.1.0 发行�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
+source-git-commit: 613a5602706d4d0d63fce7a20bf52660d9a9d335
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 19%
@@ -96,11 +96,11 @@ AEM as a Cloud Service中的Cloud Manager 2025.1.0的发布日期是2025年1月2
 
 * **早期采用者程序更新 — 对Bitbucket和GitLab的PR验证支持：** Cloud Manager现在对Bitbucket和GitLab的云版本和自托管版本都支持拉取请求(PR)验证。 通过此功能，客户可在合并PR之前根据Adobe的代码质量阈值测试其代码更改。 通过在合并之前确保较高的代码质量，此增强功能显着提高了生产管道中代码更改的成功率，从而缩短上市时间并简化开发工作流。
 
-有关“自带Git”（现在支持GitLab和Bitbucket）以及注册为率先采用者的更多信息，请参阅[Cloud Manager 2024年10月发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)。
+  有关“自带Git”（现在支持GitLab和Bitbucket）以及注册为率先采用者的更多信息，请参阅[Cloud Manager 2024年10月发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)。
 
 * **高级测试环境：**&#x200B;专门构建的解决方案，旨在弥合开发和生产之间的差距。 此环境针对企业需求而定制，复制了生产级的规格以支持准确的用户验收测试(UAT)和全面的性能评估。
 
-如果您有兴趣加入早期采用者计划，请[填写此表单](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg！fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIawMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，并随您的`OrgID`向[earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com)发送电子邮件。
+  如果您有兴趣加入早期采用者计划，请[填写此表单](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg！fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIawMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，并随您的`OrgID`向[earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com)发送电子邮件。
 
 
 
