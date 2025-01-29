@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2025.1.0 发行�
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
+source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 10%
+ht-degree: 19%
 
 ---
 
@@ -25,20 +25,20 @@ ht-degree: 10%
 
 AEM as a Cloud Service中的Cloud Manager 2025.1.0的发布日期是2025年1月22日星期三。
 
-下一个计划发布于2025年2月13日星期四。
+下一个计划版本于 2025 年 2 月 13 日星期四发布。
 
 
 ## 新增功能 {#what-is-new}
 
 * **代码质量规则 — SonarQube服务器升级：** Cloud Manager代码质量步骤将开始将SonarQube Server 9.9与Cloud Manager 2025.2.0版本一起使用，该版本计划于2025年2月13日星期四发布。
 
-  为了准备，更新的SonarQube规则现在可在[代码质量规则](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)中获取。
+  为做好准备，更新后的 SonarQube 规则现已在[代码质量规则](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)中提供。
 
   您可以通过设置以下管道文本变量“提前检查”新规则：
 
   `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-  此外，设置以下变量以确保为同一提交运行代码质量步骤（通常为同一`commitId`跳过）：
+  此外，设置以下变量以确保代码质量步骤针对相同的提交运行（通常会跳过相同的 `commitId`）：
 
   `CM_DISABLE_BUILD_REUSE` = `true`
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.1.0的发布日期是2025年1月2
 
 >[!NOTE]
 >
->Adobe建议创建一个新的CI/CD代码质量管道，并将其配置为与主生产管道位于同一分支。 在&#x200B;*2025年2月13日版本之前*&#x200B;设置适当的变量，以验证新的强制执行规则不会引入阻止程序。
+>Adobe 建议创建一个新的 CI/CD 代码质量管道，并将其配置为与主生产管道相同的分支。在 2025 年 2 月 13 日发布&#x200B;*之前*&#x200B;设置适当的变量，以验证新实施的规则不会引入阻碍因素。
 
 * **Java 17和Java 21内部版本支持：**&#x200B;客户现在可以使用Java 17或Java 21进行内部版本，从而获得性能增强功能和新的语言功能。 有关配置步骤，包括更新Maven项目和库版本，请参阅[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。 当内部版本设置为Java 17或Java 21时，部署的运行时是Java 21。
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.1.0的发布日期是2025年1月2
 
 * **高级测试环境：**&#x200B;专门构建的解决方案，旨在弥合开发和生产之间的差距。 此环境针对企业需求而定制，复制了生产级的规格以支持准确的用户验收测试(UAT)和全面的性能评估。
 
-如果您有兴趣加入早期采用者计划，请[完成此表单](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg！fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIawMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，并通过电子邮件将您的详细信息`OrgID`发送给我们。
+如果您有兴趣加入早期采用者计划，请[填写此表单](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg！fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqdgpuOMAVL5CQpkZ6ths76A qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIawMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，并随您的`OrgID`向[earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com)发送电子邮件。
 
 
 
