@@ -4,12 +4,13 @@ description: 了解如何管理分类数据，以便在 AEM with Edge Delivery S
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+workflow-type: tm+mt
+source-wordcount: '974'
+ht-degree: 85%
 
 ---
+
 
 # 管理分类数据 {#managing-taxonomy-data}
 
@@ -77,7 +78,7 @@ ht-degree: 100%
 
 页面编辑器中显示的页面是只读的，因为分类的内容是根据所选标签和命名空间自动生成的。它们起到一种过滤器的作用，可以自动生成分类的内容。因此，没有理由直接在编辑器中编辑页面。
 
-当您更新底层标签和命名空间时，AEM 会自动更新分类页面的内容。但是您必须在进行任何更改之后[重新发布分类](#publishing)，以便您的用户能够看到这些更改。
+当您更新底层标签和命名空间时，AEM 会自动更新分类页面的内容。但是，您必须在进行任何更改后[重新发布分类](#publishing)，以便将这些更改提供给您的用户。
 
 ## 更新分类发布的 paths.json {#paths-json}
 
@@ -155,6 +156,10 @@ ht-degree: 100%
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -162,3 +167,47 @@ ht-degree: 100%
 当您更新分类并重新发布时，此 JSON 数据将自动更新。您的应用程序可以通过编程方式为用户获取这些信息。
 
 [如果您需要维护多种语言的标签，](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)您可以通过将 ISO2 语言代码作为 `sheet=` 参数值传入来访问这些语言。
+
+## 公开其他标记属性 {#additional-properties}
+
+默认情况下，您的分类将包含`tag`和`title`值，如上一个示例中的[所示。](#accessing)您可以配置分类以公开其他标记属性。 在此示例中，我们将公开标记描述。
+
+1. 使用站点控制台选择您创建的分类。
+1. 点按或单击工具栏中的&#x200B;**属性**&#x200B;图标。
+1. 在&#x200B;**其他属性**&#x200B;部分中，点按或单击&#x200B;**添加**&#x200B;以添加字段。
+1. 在新字段中，输入要公开的JRC属性名称。 在这种情况下，请为标记描述输入`jcr:description`。
+1. 点击或单击&#x200B;**保存并关闭**。
+1. 在分类仍被选中时，点按或单击工具栏中的&#x200B;**快速Publish**。
+
+现在[当您访问分类时，](#accessing)标记描述（或您选择公开的任何属性）包含在JSON中。
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```

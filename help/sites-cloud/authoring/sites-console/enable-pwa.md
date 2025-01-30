@@ -5,10 +5,10 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4c4e05ae636701d914b654b7342a4bc2403c56c0
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 99%
+source-wordcount: '1926'
+ht-degree: 97%
 
 ---
 
@@ -26,6 +26,12 @@ ht-degree: 99%
 >* 来自开发团队的支持
 >
 >在使用此功能之前，Adobe 建议您与开发团队讨论它以确定将它用于项目的最佳方式。
+
+>[!IMPORTANT]
+>
+>已弃用AEM Sites的渐进式Web应用程序(PWA)功能。
+>
+>将继续支持使用此功能的现有项目，但新项目不应使用此功能。
 
 ## 简介 {#introduction}
 

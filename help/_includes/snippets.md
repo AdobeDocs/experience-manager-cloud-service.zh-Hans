@@ -1,8 +1,8 @@
 ---
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: 7b4bb513b928bf94b4ada4e1a06a1e254f33aafa
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 99%
+source-wordcount: '1388'
+ht-degree: 97%
 
 ---
 # 代码片段 {#snippets}
@@ -66,7 +66,7 @@ ht-degree: 99%
 * [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block 组件及其属性](/help/edge/docs/forms/form-components.md)
-* [使用表单提交服务](/help/forms/forms-submission-service.md)
+* [正在使用表单提交服务](/help/forms/forms-submission-service.md)
 
 
 ## 核心组件中的规则编辑器与基础组件中的规则编辑器之间的区别 {#rule-editor-diff}
@@ -95,7 +95,7 @@ ht-degree: 99%
    </td>
    </tr>
       <tr>
-    <td>在“Then”中验证/重置字段/面板/ Form 规则 </td>
+    <td>在 “Then” 中验证/重置字段/面板/ Form 规则 </td>
     <td>验证和重置功能仅支持规则编辑器中的 Form 对象。 
    </td>
     <td>验证和重置功能支持规则编辑器中的 Form / 面板 / 字段对象。 
@@ -237,7 +237,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Adobe 仍然支持 SPA 编辑器，但现在管理 AEM 中的 Headless 内容时首选以下编辑器：
+>新项目的SPA编辑器[已弃用](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated)。 它仍受Adobe对现有项目的支持，但不应用于新项目。 现在，在AEM中管理Headless内容的首选编辑器包括：
 >
 >* [通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)，用于可视化编辑 Headless 内容。
 >* [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑 Headless 内容。
