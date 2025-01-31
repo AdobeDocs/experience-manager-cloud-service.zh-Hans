@@ -6,23 +6,26 @@ feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
-source-git-commit: d3c089dcca80255f53c0888d46ee1b4b6246741e
+exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
+source-git-commit: 64f4e62201c590e5da2f3b1f7e570a018dc8135c
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 0%
+source-wordcount: '945'
+ht-degree: 1%
 
 ---
 
-
 # 在Experience Manager Forms中&#x200B;管理发布
 
-作为Adobe Experience Manager Forms管理员，您可以将表单从创作实例发布到Experience Manager Forms。 您可以计划在稍后的日期或时间发布表单或文件夹。 发布后，用户可以访问和填写表单。
+作为Adobe Experience Manager (AEM) Forms管理员，您可以将表单从创作实例发布到Experience Manager Forms。 您还可以选择计划在稍后的日期或时间发布表单或文件夹。 发布后，用户可以访问和填写表单。
 
-在Experience Manager Forms界面中，您可以使用以下内容发布表单：
+在Experience Manager Forms中，您可以使用以下方法之一发布表单：
 * [Publish选项](#publish-forms-using-the-publish-option)
 * [“管理发布”选项](#publish-forms-using-the-manage-publication-option)
 
-如果您对Experience Manager Forms中的原始表单或文件夹进行后续修改，则在从Experience Manager Forms重新发布之前，这些更改不会反映在&#x200B;**Publish**&#x200B;实例中。 它确保&#x200B;**Publish**&#x200B;实例中没有正在进行的更改。 只有管理员发布的更改在&#x200B;**Publish**&#x200B;实例中可用。
+## 注意事项
+
+* 只有`forms-users`组的成员可以使用&#x200B;**管理发布**&#x200B;选项发布表单。
+* 在重新发布之前，对Experience Manager Forms中的表单或文件夹所做的更改不会显示在&#x200B;**Publish**&#x200B;实例中。 这可以确保&#x200B;**Publish**&#x200B;实例中正在进行的更新仍然不可用。 只有管理员明确发布的更改才会反映在&#x200B;**Publish**&#x200B;实例中。
 
 ## 使用Publish选项的Publish表单
 
@@ -34,13 +37,14 @@ ht-degree: 0%
 
    ![Publish和取消发布表单](/help/edge/docs/forms/assets/publish-form-option.png)
 
-   成功发布表单及其相关资源后，将显示&#x200B;**成功**&#x200B;对话框。 单击&#x200B;**关闭**&#x200B;以关闭对话框。
+   成功发布表单及其相关资源后，将显示&#x200B;**成功**&#x200B;对话框。
+1. 单击&#x200B;**关闭**。
 
    ![“成功”对话框](/help/forms/assets/publish-success.png)
 
 ### 取消发布表单
 
-使用&#x200B;**Publish**&#x200B;选项成功发布表单及其相关资源后，您甚至可以使用工具栏上的&#x200B;**[!UICONTROL 取消发布]**&#x200B;按钮取消发布它们。 要取消发布表单，请执行以下操作：
+使用&#x200B;**Publish**&#x200B;选项成功发布表单及其相关资源后，您甚至可以使用工具栏上提供的&#x200B;**[!UICONTROL 取消发布]**&#x200B;按钮取消发布它们。 要取消发布表单，请执行以下操作：
 
 1. 要取消发布表单及其相关资源，请选择该表单，然后单击工具栏中的&#x200B;**[!UICONTROL 取消发布]**
 
@@ -49,24 +53,25 @@ ht-degree: 0%
 
    ![取消对话框](/help/forms/assets/unpublish-asset.png)
 
-   成功取消发布表单及其相关资源后，将显示&#x200B;**成功**&#x200B;对话框。 单击&#x200B;**关闭**&#x200B;以关闭对话框。
+   成功取消发布表单及其相关资源后，将显示&#x200B;**成功**&#x200B;对话框。
+1. 单击&#x200B;**关闭**。
 
    ![取消发布成功](/help/forms/assets/unpublishing-start.png)
 
 ## 使用管理发布选项的Publish表单
 
-管理发布允许您向所选目标发布内容或从中取消发布内容，跨表单和文档文件夹向发布列表添加内容，选择要发布的引用，以及安排发布到晚一点的日期或时间。  要使用“管理发布”选项发布表单，请执行以下操作：
+管理发布允许您向所选目标发布内容或从中取消发布内容，将内容从`forms&documents`文件夹添加到发布列表，选择要发布的引用，以及安排发布到以后的日期或时间。  要使用&#x200B;**管理发布**&#x200B;选项发布表单，请执行以下操作：
 
 1. 在Experience Manager Forms控制台中，导航到父文件夹，然后选择要发布的表单。
 1. 单击工具栏中的&#x200B;**[!UICONTROL 管理发布]**&#x200B;选项。
 
    ![管理发布选项](/help/forms/assets/manage-publication-option.png)
 
-   出现&#x200B;**管理发布**&#x200B;界面：
+   出现&#x200B;**管理发布** UI：
 
    ![管理发布](/help/forms/assets/manage-publication.png)
 
-   以下选项在&#x200B;**管理发布**&#x200B;界面中可用：
+   以下选项在&#x200B;**管理发布** UI中可用：
 
    * **操作**
 
@@ -84,28 +89,33 @@ ht-degree: 0%
       * **稍后**：基于&#x200B;**激活日期**&#x200B;或时间的Publish表单
 
 1. 单击&#x200B;**下一步**&#x200B;继续。
-1. 在&#x200B;**范围**&#x200B;选项卡中，使用[添加内容](#add-content)选项添加更多内容以进行发布。 例如，您可以添加更多Forms或记录文档文件。
+1. （可选）在&#x200B;**范围**&#x200B;选项卡中，使用[添加内容](#add-content)选项添加更多内容以进行发布。 例如，您可以添加更多Forms或记录文档文件。
    ![范围选项卡](/help/forms/assets/scope-tab.png)
 1. 单击&#x200B;**[!UICONTROL Publish]**发布表单和相关资源，并显示成功消息。
    ![成功发布消息](/help/forms/assets/publish-successful.png)
 
 ### 添加内容
 
-将发布到Experience Manager Forms允许您进一步向发布列表添加更多内容（表单和文件夹）。 您可以从`formsanddocuments`文件夹向列表添加更多表单或文件夹。 但无法一次从多个文件夹添加表单。 添加更多表单以进行发布：
+将发布到Experience Manager Forms允许您进一步向发布列表添加更多内容（表单）。
+添加更多表单以进行发布：
 
 1. 单击“**添加内容**”按钮可添加更多内容。
 
    ![添加内容](/help/forms/assets/add-content.png)
 
-1. 从&#x200B;**选择路径**&#x200B;屏幕中选择表单。 您可以从一个文件夹添加多个表单，也可以一次添加多个文件夹。 但无法一次从多个文件夹添加表单。
+2. 从&#x200B;**选择路径**&#x200B;屏幕中选择表单。
 
    ![添加内容](/help/forms/assets/add-assets.png)
 
-1. 要将引用配置为发布或不发布表单，请选择该表单，然后单击&#x200B;**[!UICONTROL 已发布引用]**。
+   >[!NOTE]
+   >
+   > 您可以从`formsanddocuments`文件夹向列表添加更多表单或文件夹。 但无法一次从多个文件夹添加表单。
+
+3. 要将引用配置为发布或不发布表单，请选择该表单，然后单击&#x200B;**[!UICONTROL 已发布引用]**。
 
    ![已发布引用](/help/forms/assets/published-references.png)
 
-1. 在&#x200B;**已发布的引用**&#x200B;对话框中，取消选中您计划不发布的资源，然后单击&#x200B;**[!UICONTROL 完成]**。
+4. 在&#x200B;**已发布的引用**&#x200B;对话框中，取消选中您计划不发布的资源，然后单击&#x200B;**[!UICONTROL 完成]**。
    ![已发布引用对话框](/help/forms/assets/published-references-dialog.png)
 
 <!--
@@ -135,27 +145,30 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
 
 ### Publish或稍后取消发布表单
 
-除了允许您在以后的日期和时间发布或取消发布表单外，发布或取消发布选项还允许您配置工作流。 工作流完成后，将发布或取消发布表单。 要计划表单以供发布或取消发布，请执行以下操作：
+除了允许您在以后的日期和时间发布或取消发布表单外，发布或取消发布选项还允许您配置工作流。 工作流完成后，将发布或取消发布表单。
+
+要计划表单以供发布或取消发布，请执行以下操作：
 
 1. 在Experience Manager Forms控制台中，导航到父文件夹，然后选择要计划发布的表单。
 1. 单击工具栏中的&#x200B;**[!UICONTROL 管理发布]**&#x200B;选项。
 
    ![管理发布](/help/forms/assets/manage-publication.png)
 
-1. 单击&#x200B;**Publish**&#x200B;或&#x200B;**从**[!UICONTROL &#x200B;操作&#x200B;]**中取消发布**，然后选择要发布或取消发布内容的&#x200B;**[!UICONTROL 目标]**。
+1. 单击&#x200B;**Publish**&#x200B;或&#x200B;**从**[!UICONTROL &#x200B;操作&#x200B;]**中取消发布**。
+1. 选择要发布或取消发布内容的&#x200B;**[!UICONTROL 目标]**。
    * **预览**：使用&#x200B;**预览**&#x200B;选项发布或取消发布到Experience Manager Forms预览环境。 Experience Manager Forms预览环境用于测试开发表单。
-   * **Publish**：当表单准备好用于生产环境后，使用Experience Manager Forms Publish选项将表单发送到Experience Manager Forms发布环境。
+   * **Publish**：在表单准备好用于生产环境后，使用Experience Manager Forms **Publish**&#x200B;选项将表单发送到Experience Manager Forms发布环境。
 
-1. 从计划中选择&#x200B;**[!UICONTROL 稍后]**。
+1. 从&#x200B;**计划**&#x200B;中选择&#x200B;**[!UICONTROL 稍后]**。
 
    ![稍后管理发布](/help/forms/assets/manage-publication-later.png)
 
 1. 选择&#x200B;**[!UICONTROL 激活日期]**&#x200B;并指定日期和时间。
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
-1. 在&#x200B;**范围**&#x200B;选项卡中，**[!UICONTROL 添加内容]**（如有必要）。
+1. （可选）在&#x200B;**范围**&#x200B;选项卡中，使用&#x200B;**[!UICONTROL 添加内容]**添加内容。
    ![稍后管理发布添加内容](/help/forms/assets/publish-later-add-content.png)
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
-1. （可选）在&#x200B;**工作流**&#x200B;选项卡中，指定&#x200B;**[!UICONTROL 工作流标题]**。
+1. 在&#x200B;**工作流**&#x200B;选项卡中，指定&#x200B;**[!UICONTROL 工作流标题]**。
 1. 单击&#x200B;**[!UICONTROL Publish Later]**。
 
    ![管理发布工作流](/help/forms/assets/manage-publication-workflows.png)
