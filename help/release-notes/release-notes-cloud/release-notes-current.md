@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 20db0990c506aeb473b71132813cec053009275f
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 40%
+source-wordcount: '1750'
+ht-degree: 36%
 
 ---
 
@@ -126,13 +126,21 @@ Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内�
 
 ### AEM Forms 中的新功能 {#forms-new-features}
 
-* **管理发布**：您可以使用“管理发布”工作流跨环境发布或取消发布表单，通常是从创作实例到发布和预览实例。 它允许用户以简化的方式发布、取消发布或计划内容的出版物。
+#### 管理发布
 
-* **[自动保存基于核心组件的自适应表单草稿](/help/forms/save-core-component-based-form-as-draft.md)**：用户现在可以享受自动保存功能，该功能可以自动将部分完成的表单保存为草稿。他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃来提高组织的转化率，因为用户不需要从头开始填写表单。
+您可以使用“管理发布”工作流跨环境发布或取消发布表单，通常从创作实例到发布和预览实例。 它允许用户以简化的方式发布、取消发布或计划内容的出版物。
 
-* **[规则编辑器增强功能](/help/forms/invoke-service-enhancements-rule-editor.md)**：对于基于核心组件的自适应Forms，您可以使用调用服务的输出填充下拉选项并设置可重复面板或单个面板。 此外，此输出可用于验证其他字段。
+#### 自动保存基于核心组件的自适应表单草稿
 
-* **[使用面板布局中的导航按钮增强用户体验](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**：您现在可以向面板布局中添加水平选项卡、垂直选项卡、可折叠项或向导等导航按钮。这些按钮简化了面板之间的过渡，将注意力集中在所选面板上，从而增强了用户体验。
+用户现在可以从[自动保存功能](/help/forms/save-core-component-based-form-as-draft.md)中获益，该功能会自动将部分完成的表单另存为草稿。 他们可以稍后返回同一设备或其他设备来完成填写。此功能通过减少表单放弃来提高组织的转化率，因为用户不需要从头开始填写表单。
+
+#### 规则编辑器增强功能
+
+对于基于核心组件的自适应Forms，您可以使用[的Invoke Service输出填充下拉选项并设置可重复面板或单个面板](/help/forms/invoke-service-enhancements-rule-editor.md)。 此外，此输出可用于验证其他字段。
+
+#### 使用面板布局中的导航按钮增强用户体验
+
+您现在可以将导航按钮添加到面板布局，如“水平选项卡”、“垂直选项卡”、“折叠面板”或“向导”。 这些按钮[通过简化面板之间的过渡来增强用户体验，侧重于选定的面板](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)。
 
 
 ### AEM Forms 中的早期访问功能 {#forms-new-early-access-features}
@@ -141,15 +149,15 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 本发行说明列出了当前版本提供的创新功能。有关 Early Access Program 下可用创新功能的完整列表，请参阅 [AEM Forms Early Access Program 文档](/help/forms/early-access-ea-features.md)。
 
-#### [在自适应Forms中HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### 在自适应Forms中HTML电子邮件模板
 
-自适应Forms允许您使用HTML电子邮件模板。 通过HTML电子邮件模板，您可以在提交表单时发送丰富、个性化且具有视觉吸引力的电子邮件。 这些电子邮件可使用表单数据自定义，并使用各种电子邮件标记（如图像和链接）进行增强。 通过自适应Forms，您可以上传包含HTML模板的文件或使用纯文本编辑器创建这些模板。
+自适应Forms允许您使用[HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)。 通过HTML电子邮件模板，您可以在提交表单时发送丰富、个性化且具有视觉吸引力的电子邮件。 这些电子邮件可使用表单数据自定义，并使用各种电子邮件标记（如图像和链接）进行增强。 通过自适应Forms，您可以上传包含HTML模板的文件或使用纯文本编辑器创建这些模板。
 
 ![HTML电子邮件模板](/help/forms/assets/html-email.png)
 
 #### 增强的云存储支持：直接将PDF上传到Azure Blob Storage
 
-AEM Forms Document Generation API现在支持将生成的PDF文档直接上传到Azure Blob Storage。 此增强功能可简化存储和检索，提高效率以及与云工作流的集成。
+AEM Forms Document Generation API现在允许您[直接将生成的PDF文档上传到Azure Blob Storage](/help/forms/early-access-ea-features.md#doc-generation-api)。 此增强功能可简化存储和检索，提高效率以及与云工作流的集成。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
