@@ -4,9 +4,9 @@ description: 了解您必须执行的步骤，以便确保AEM安装已准备好�
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1915'
 ht-degree: 6%
 
 ---
@@ -196,7 +196,7 @@ Adobe建议您查阅[已弃用的功能](https://experienceleague.adobe.com/docs
 * 详细说明特定AEM安装的功能集的文档
 * 有关AEM自定义配置和代码的详细信息
 * 生产Dispatcher配置
-* CDN配置（如果有）
+* 域映射（CDN配置）（如果有）
 
 **使报告社会化**
 

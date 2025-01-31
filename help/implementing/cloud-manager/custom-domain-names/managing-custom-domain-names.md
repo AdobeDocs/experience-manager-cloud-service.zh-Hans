@@ -5,10 +5,10 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 19%
+source-wordcount: '795'
+ht-degree: 20%
 
 ---
 
@@ -33,9 +33,9 @@ Cloud Manager允许您编辑、更新、替换、验证和删除自定义域名�
 
 1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。
 
-1. 在&#x200B;**服务**&#x200B;标题下，单击&#x200B;**CDN配置**。
+1. 在&#x200B;**服务**&#x200B;标题下，单击![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **域映射**。
 
-1. 在&#x200B;**CDN配置**&#x200B;页面上，在要编辑其CDN的行末尾单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在&#x200B;**域映射**&#x200B;页面上，在要编辑其CDN的行末尾单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
 1. 单击&#x200B;**编辑**。
 

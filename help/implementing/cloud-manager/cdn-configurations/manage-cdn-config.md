@@ -1,22 +1,22 @@
 ---
-title: 管理 CDN 配置
+title: 管理域映射
 description: 了解如何使用Cloud Manager编辑和更新，或删除Edge Delivery站点或Cloud Manager环境的CDN配置。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: ea478d73307c3b57b0a12e35b247bb1c46b33595
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '783'
 ht-degree: 8%
 
 ---
 
-# 管理CDN配置 {#manage-cdn-configurations}
+# 管理域映射 {#manage-cdn-configurations}
 
 了解如何使用Cloud Manager编辑或删除Edge Delivery站点或Cloud Manager环境的CDN配置。
 
-## 从“CDN配置”页面编辑CDN配置 {#edit-cdn}
+## 从域映射页面编辑CDN配置 {#edit-cdn}
 
 在AdobeCloud Manager中，出于多种原因，您可能希望编辑CDN（内容分发网络）配置，包括环境层(Publish或预览)和SSL证书。
 
@@ -28,11 +28,11 @@ ht-degree: 8%
 
 用户必须是&#x200B;**业务负责人**&#x200B;或&#x200B;**部署管理器**&#x200B;角色的成员才能完成此任务。
 
-**要从CDN配置页面编辑CDN配置，请执行以下操作：**
+**若要从域映射页面编辑CDN配置：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
-1. 在左侧菜单的&#x200B;**服务**&#x200B;下，单击![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **CDN配置**。
-1. 在&#x200B;**CDN配置**&#x200B;表中，单击要更新其CDN配置的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在左侧菜单的&#x200B;**服务**&#x200B;下，单击![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **域映射**。
+1. 在&#x200B;**域映射**&#x200B;表中，单击要更新其CDN配置的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
 1. 从下拉菜单中，单击&#x200B;**编辑**。
 
@@ -42,22 +42,22 @@ ht-degree: 8%
 
 1. 单击&#x200B;**更新**。
 
-   已编辑CDN的状态将在&#x200B;**CDN配置**&#x200B;表中更新，以反映您所做的更改。
+   已编辑CDN的状态将在&#x200B;**域映射**&#x200B;表中更新，以反映您所做的更改。
 
 
 ## 从环境页面编辑CDN配置
 
-从&#x200B;**环境**&#x200B;页面编辑CDN配置的步骤与[从CDN配置页面](#edit-cdn)编辑CDN配置的步骤几乎相同，但入口点不同。
+从&#x200B;**环境**&#x200B;页面编辑CDN配置的步骤与从“域映射”页面](#edit-cdn)编辑CDN配置的步骤[几乎相同，但入口点不同。
 
 **若要从环境页面编辑CDN配置：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 在左侧菜单中，单击&#x200B;**环境**。
+1. 在左侧菜单中，单击![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**。
 
 1. 在&#x200B;**环境**&#x200B;页面上，选择一个感兴趣的环境。
 
-1. 在环境详细信息页面的CDN配置分组中，单击与要编辑的CDN配置相对应的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在环境详细信息页面的域映射分组中，单击与要编辑的CDN配置相对应的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
 1. 在弹出菜单中，单击&#x200B;**编辑**。
 
@@ -83,9 +83,9 @@ ht-degree: 8%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 在左侧菜单的&#x200B;**服务**&#x200B;下，单击&#x200B;**CDN配置**。
+1. 在左侧菜单的&#x200B;**服务**&#x200B;下，单击![社交网络图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **域映射**。
 
-1. 在CDN配置表中，单击与要删除的CDN对应的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**删除**。
+1. 在域映射表中，单击与要删除的CDN对应的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**删除**。
 
 1. 在&#x200B;**删除CDN配置**&#x200B;对话框中，单击&#x200B;**删除**。
 
@@ -94,17 +94,17 @@ ht-degree: 8%
 
 ## 从环境页面删除CDN配置
 
-从&#x200B;**环境**&#x200B;页面删除CDN配置的步骤与从[CDN配置页面](#edit-cdn)删除CDN配置的步骤几乎相同，但入口点不同。
+从&#x200B;**环境**&#x200B;页面中删除CDN配置的步骤与从“域映射”页面](#edit-cdn)中删除CDN配置的步骤[几乎相同，但入口点不同。
 
 **要从环境页面删除CDN配置：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 在左侧菜单中，单击&#x200B;**环境**。
+1. 在左侧菜单中，单击![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**。
 
 1. 在&#x200B;**环境**&#x200B;页面上，选择一个感兴趣的环境。
 
-1. 在环境详细信息页面的&#x200B;**CDN配置**&#x200B;分组中，单击与要删除的CDN配置相对应的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**删除**。
+1. 在环境详细信息页面的&#x200B;**域映射**&#x200B;分组中，单击与要删除的CDN配置相对应的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**删除**。
 
 1. 在&#x200B;**删除CDN配置**&#x200B;对话框中，单击&#x200B;**删除**。
 

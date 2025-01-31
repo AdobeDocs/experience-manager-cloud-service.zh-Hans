@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2374'
 ht-degree: 44%
 
 ---
@@ -194,9 +194,9 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 或者，您可以从&#x200B;**环境**&#x200B;标签页访问相同的信息。
 
-1. 在&#x200B;**概述**&#x200B;页面上，选择&#x200B;**环境**&#x200B;标签页。
+1. 在&#x200B;**概述**&#x200B;页面上，单击![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**。
 
-1. 在&#x200B;**环境**&#x200B;选项卡上，在左侧菜单中选择要查询的环境。
+1. 在&#x200B;**环境**&#x200B;页面上，在左侧菜单中选择要查询的环境。
 
 1. 选择环境后：
 
@@ -306,7 +306,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
      ![本地登录](assets/environ-login-locally.png)
 
-   * 从左侧面板中，单击&#x200B;**环境**。 在&#x200B;**环境**&#x200B;页面上，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**本地登录**。
+   * 从左侧面板中，单击![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**。 在&#x200B;**环境**&#x200B;页面上，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**本地登录**。
 
      ![从“环境”选项卡本地登录](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 Cloud Manager支持IP允许列表，用于Sites程序的创作、发布和预览服务。
 
-要管理IP允许列表，请导航到程序的&#x200B;**概述**&#x200B;页面的&#x200B;**环境**&#x200B;选项卡。 单击单个环境管理其详细信息。
+要管理IP允许列表，请导航到程序的&#x200B;**概述**&#x200B;页面的![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**&#x200B;页面。 单击单个环境管理其详细信息。
 
 ### 应用IP允许列表 {#apply-ip-allow-list}
 

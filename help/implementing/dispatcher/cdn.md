@@ -4,9 +4,9 @@ description: 了解如何使用AEM管理的CDN以及如何将您自己的CDN指�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1729'
 ht-degree: 11%
 
 ---
@@ -37,7 +37,7 @@ AEM管理的CDN满足了大多数客户的性能和安全需求。 对于发布�
 * [Cloud Manager中的Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [自定义域名简介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [SSL 证书简介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [添加 CDN 配置](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [配置CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
 
 **限制流量**
 
@@ -136,7 +136,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ### 调试配置
 
-为了调试BYOCDN配置，请使用值为`edge=true`的`x-aem-debug`标头。 例如：
+要调试BYOCDN配置，请使用值为`edge=true`的`x-aem-debug`标头。 例如：
 
 在Linux®中：
 
@@ -150,13 +150,13 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarde
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
 ```
 
-这将反映`x-aem-debug`响应标头中的请求中使用的某些属性。 例如：
+此进程反映`x-aem-debug`响应标头中的请求中使用的某些属性。 例如：
 
 ```
 x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
 ```
 
-例如，使用此项可以验证主机的值（如果配置了边缘身份验证），以及x-forwarded-host标头值（如果设置了边缘密钥并且使用了哪个密钥，在一个密钥匹配的情况下）。
+此过程允许验证详细信息，如主机值、边缘身份验证配置和x-forwarded-host标头值。 它还标识是否设置了Edge键以及在存在匹配项时使用哪个键。
 
 ### 示例CDN供应商配置 {#sample-configurations}
 
@@ -187,8 +187,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 
 **错误421重定向错误**
 
-当请求收到包含`Requested host does not match any Subject Alternative Names (SANs) on TLS certificate`周围正文的421错误时，它表示HTTP `Host`集与主机的证书上的任何主机都不匹配。 这通常表明`Host`或SNI设置错误。 确保`Host`以及SNI设置都指向publish-p&lt;PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com主机。
-
+消息`Requested host does not match any Subject Alternative Names (SANs) on TLS certificate`出现421错误，表示HTTP `Host`与证书上列出的任何主机都不匹配。 此问题通常表明`Host`或SNI设置错误。 确保`Host`以及SNI设置都指向publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com主机。
 
 **重定向循环太多**
 
