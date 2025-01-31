@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
+source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 30%
+source-wordcount: '1998'
+ht-degree: 26%
 
 ---
 
@@ -109,6 +109,11 @@ WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，�
 
 ## 其他早期访问创新
 
+### 在自适应Forms中HTML电子邮件模板
+
+自适应Forms允许您使用HTML电子邮件模板。 通过HTML电子邮件模板，您可以在提交表单时发送丰富、个性化且具有视觉吸引力的电子邮件。 这些电子邮件可使用表单数据自定义，并使用各种电子邮件标记（如图像和链接）进行增强。 通过自适应Forms，您可以上传包含HTML模板的文件或使用纯文本编辑器创建这些模板。
+
+
 ### 从右至左(RTL)语言支持
 
 自适应Forms现在能够以从右至左(RTL)语言显示，从而提供更具包容性的用户体验并简化使用过程。
@@ -170,6 +175,20 @@ AEM Forms Doc Assurance API是AEM FormsCloud Service通信API中的一组工具�
 * **数据提取和导入**：将数据导入现有 PDF 表单，也可从已填写的 PDF 表单中提取数据。支持 XDP 和 XML 数据格式，并且导入非 XFA PDF 表单（也称为 AcroForms）时还支持 FDF 和 XFDF 数据。
 
 * **数据验证**：根据使用 AEM Forms Designer 创建的模板，验证 XDP 或 XML 格式的提交数据。
+
+### 文档生成API
+
+文档生成API包括一个可选功能，允许将生成的PDF直接上传到Azure Blob Storage。 使用文档生成API直接将PDF上传到Azure Blob Storage的一些主要优势包括：
+
+* **与云存储的无缝集成**：
+直接将生成的PDF上传到Azure Blob Storage无需额外的手动或编程步骤来传输文件，从而简化工作流并提高效率。
+
+* **集中式文档管理**：
+将PDF存储在Azure Blob Storage中可集中管理文档，从而更轻松地组织、检索和管理各种用例中生成的文件。
+
+* **改进的安全性**：通过利用Azure的内置安全功能，如静态加密和基于角色的访问控制(RBAC)，敏感文档在存储期间仍受到保护。
+
+* **可自定义的存储路径**：能够定义自定义目录路径可确保生成的PDF存储在组织有序且特定于应用程序的位置，从而改进文件管理。
 
 ## 另请参阅
 
