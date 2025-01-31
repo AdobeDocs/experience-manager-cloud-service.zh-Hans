@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
+source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
 workflow-type: tm+mt
-source-wordcount: '6006'
+source-wordcount: '6020'
 ht-degree: 99%
 
 ---
@@ -708,6 +708,7 @@ ht-degree: 99%
       + [从  [!DNL AEM 6.5 Forms]  或更低版本迁移到  [!DNL AEM Forms]  as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [组和权限](/help/forms/forms-groups-privileges-tasks.md)
       + [导入、导出和组织自适应表单、PDF 表单和其他资产](/help/forms/import-export-forms-templates.md)
+      + [使用管理发布的Publish自适应Forms](/help/forms/manage-publication.md)
    + 快速入门 {#getting-started-forms}
       + [用例和设置开发环境](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [创建贷款申请表](/help/forms/create-adaptive-form-tutorial.md)
@@ -773,7 +774,7 @@ ht-degree: 99%
             + [比较自适应表单](/help/forms/compare-forms.md)
             + [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用迁移实用工具将基于基础组件的自适应表单转换为基于核心组件的表单](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [自适应Forms中的电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [自适应表单中的电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)
             + 基于核心组件的自适应表单规则编辑器简介{#rule-editor-core-components}
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components.md)
                + [基于核心组件的自适应表单规则编辑器简介](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1020,8 +1021,10 @@ ht-degree: 99%
          + [用于验证的正则表达式](/help/edge/docs/forms/regex-forms.md)
          + [提交表单后显示自定义感谢消息](/help/edge/docs/forms/thank-you-page-form.md)
          + [使用表单提交服务](/help/forms/forms-submission-service.md)
-      + WYSIWYG {#universal-editor}
-         + [概述 — 适用于FormsEdge Delivery Services的通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + 所见即所得 {#universal-editor}
+         + [概述 - 表单 Edge Delivery Services 通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [使用规则编辑器将规则添加到](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表单片段](/help/edge/docs/forms/form-fragments.md)
          + [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
