@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 9%
+source-wordcount: '1023'
+ht-degree: 14%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 Cloud Manager概述了程序的所有证书的状态。
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+1. 登录 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上的 Cloud Manager，然后选择合适的程序。
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示侧菜单。
 1. 在&#x200B;**服务**&#x200B;标题下，单击![锁定已关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL证书**。
@@ -42,11 +42,11 @@ Cloud Manager概述了程序的所有证书的状态。
 
 **要更新过期的客户管理的SSL证书，请执行以下操作：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+1. 登录 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上的 Cloud Manager，然后选择合适的程序。
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示侧菜单。
 1. 在&#x200B;**服务**&#x200B;标题下，单击![锁定已关闭图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL证书**。
-1. 在要更新的过期客户托管证书的行中，单击最右侧的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，然后单击“**查看和更新”**。
+1. 在要更新的过期客户托管证书的行中，单击最右侧的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**查看和更新**。
 
    ![更新过期的客户管理的SSL认证](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -62,7 +62,7 @@ Cloud Manager概述了程序的所有证书的状态。
 
 >[!NOTE]
 >
->如果您有两个或更多SAN证书覆盖同一SAN域条目，如果该域由一个证书覆盖，而另一个证书已更新，则该域将安装后者。
+>如果有两个或多个SAN证书覆盖同一SAN域条目，并且其中一个证书已更新，则系统将为该域安装更新的证书。
 >
 >有关详细信息，请参阅[SSL证书问题疑难解答](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert)。
 
@@ -80,7 +80,7 @@ Cloud Manager概述了程序的所有证书的状态。
 
 **要重命名Adobe托管的SSL证书：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+1. 登录 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上的 Cloud Manager，然后选择合适的程序。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 
@@ -109,7 +109,7 @@ Cloud Manager概述了程序的所有证书的状态。
 
 **要删除SSL证书：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的程序。
+1. 登录 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上的 Cloud Manager，然后选择合适的程序。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，选择该程序。
 

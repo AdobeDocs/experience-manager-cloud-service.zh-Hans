@@ -5,9 +5,9 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '698'
 ht-degree: 42%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 42%
 
 ![要休眠的环境列表](assets/hibernate-1b.png)
 
-## 从Developer Console手动休眠沙盒程序 {#de-hibernation-introduction}
+## 手动从Developer Console解除沙盒程序休眠 {#de-hibernation-introduction}
 
 您可以从Developer Console手动休眠沙盒程序。
 
@@ -74,7 +74,7 @@ ht-degree: 42%
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击要解除休眠的程序以显示其详细信息。
 
-1. 在&#x200B;**环境**&#x200B;信息卡上，单击https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg，然后单击&#x200B;**Developer Console**。
+1. 在&#x200B;**环境**&#x200B;信息卡上，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**Developer Console**。
 
    * 有关 Developer Console 的更多详细信息，请参阅[访问 Developer Console。](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)
 

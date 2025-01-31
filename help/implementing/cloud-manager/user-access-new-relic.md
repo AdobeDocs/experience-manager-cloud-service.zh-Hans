@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1818'
 ht-degree: 42%
 
 ---
@@ -49,7 +49,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击要为其管理New Relic One用户的程序。
 
-1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg并选择&#x200B;**激活New Relic**。
+1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后选择&#x200B;**激活New Relic**。
 
    ![管理用户](assets/newrelic-activate-sub-account.png)
 
@@ -71,7 +71,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. 单击要管理New Relic One用户的程序。
 
-1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg并选择&#x200B;**管理用户**。
+1. 在程序概述页面的&#x200B;**环境**&#x200B;卡片底部，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)并选择&#x200B;**管理用户**。
 
    ![管理用户](assets/newrelic-manage-users.png)
 
@@ -121,7 +121,7 @@ AEM as a Cloud Service 的 New Relic One APM 具有许多功能。
 
 1. 单击要访问New Relic One的程序。
 
-1. 在程序概述页面的&#x200B;**环境**&#x200B;信息卡上，单击https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg并选择&#x200B;**打开New Relic**。
+1. 在程序概述页面的&#x200B;**环境**&#x200B;卡片底部，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后选择&#x200B;**打开New Relic**。
 
    ![管理用户](assets/newrelic-access.png)
 
@@ -201,7 +201,7 @@ Adobe 监控 AEM as a Cloud Service 作者，并通过 New Relic One 的 Java �
 
 * 每个应用程序使用一个许可证密钥。
 * AEM as a Cloud Service 环境仅向一个 New Relic One 帐户报告。
-* New Relic One的全面监控指标和事件将保留三个月。 &lt;！— CQDOC-22238 — 从七天更新为三个月。 >
+* New Relic One的全面监控指标和事件将保留三个月。 &lt;!— CQDOC-22238 — 从七天更新为三个月。 >
 +++
 
 +++**Adobe是否从New Relic One发送警报通知？** {#alerting-new-relic}

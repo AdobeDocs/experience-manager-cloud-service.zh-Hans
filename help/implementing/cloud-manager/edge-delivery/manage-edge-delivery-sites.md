@@ -3,10 +3,11 @@ title: 在 Cloud Manager 中管理 Edge Delivery Sites
 description: 了解如何将 CDN 配置添加到 Edge Delivery 网站或删除 Edge Delivery 网站。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
-workflow-type: ht
-source-wordcount: '538'
-ht-degree: 100%
+exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 91%
 
 ---
 
@@ -51,17 +52,15 @@ ht-degree: 100%
 1. 执行以下任一操作：
 
    * 从&#x200B;**程序概览**&#x200B;页面，单击 **Edge Delivery** 选项卡。 在 Edge Delivery 网站表中，单击要删除其网站的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-点击![删除 Edge Delivery 网站](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**删除**，然后再次点击&#x200B;**删除**&#x200B;以确认移除该网站。
+单击![删除Edge Delivery站点图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **删除**，然后再次单击&#x200B;**删除**&#x200B;以确认删除该站点。
 
      ![从 Edge Delivery 选项卡添加 Edge Delivery 网站](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * 在页面左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。在&#x200B;**服务**&#x200B;标题下，单击 ![Edge Delivery 网站的网页](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery 网站**。
-在 Edge Delivery 网站表中，单击要移除其网站的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。单击![删除 Edge Delivery 网站](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**删除**，然后再次单击&#x200B;**删除**&#x200B;以确认移除该网站。
+   * 在页面左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。在&#x200B;**服务**&#x200B;标题下，单击![Edge Delivery网站的网页图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery网站**。
+在 Edge Delivery 网站表中，单击要移除其网站的行末尾的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。单击![删除Edge Delivery站点图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **删除**，然后再次单击&#x200B;**删除**&#x200B;以确认删除该站点。
 
      ![通过 Edge Delivery 网站按钮添加 Edge Delivery 网站](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
 ## 记录支持工单 {#eds-support-ticket}
 
 {{support-ticket}}
-
-

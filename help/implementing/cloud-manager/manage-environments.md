@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 70%
+source-wordcount: '2367'
+ht-degree: 44%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 70%
 
 具有必要权限的用户可以创建以下环境类型（在特定租户可用的范围内）。
 
-* **生产+暂存** — 生产和暂存环境成对可用，分别用于生产和测试目的。 在暂存环境中执行性能测试和安全性测试。 它的规模与生产环境相同。
+| 环境类型 | 描述 |
+| --- | --- |
+| **生产+暂存** | 生产和暂存环境成对可用，分别用于生产和测试目的。 在暂存环境中执行性能测试和安全性测试。 它的规模与生产环境相同。 |
+| **开发** | 开发环境可以创建用于开发和测试目的，并且只能与非生产管道相关联。 开发环境的规模与暂存和生产环境不同，不应用于进行性能和安全测试。 |
+| **快速开发** | 快速开发环境(RDE)允许开发人员快速部署和查看更改。 此功能可减少测试已在本地开发环境中验证的功能所需的时间。 请参阅[快速开发环境文档](/help/implementing/developing/introduction/rapid-development-environments.md)，了解有关如何使用 RDE 的详细信息。 |
 
-* **开发** — 可以为开发和测试目的创建开发环境，并且只能与非生产管道相关联。  开发环境的规模与暂存和生产环境不同，不应用于进行性能和安全测试。
-
-* **快速开发环境** - 快速开发环境 (RDE) 允许开发人员快速部署和审查更改，最大程度地减少测试已证明适用于本地开发环境的功能所需的时间。请参阅[快速开发环境文档](/help/implementing/developing/introduction/rapid-development-environments.md)，了解有关如何使用 RDE 的详细信息。
-
-单个环境的功能取决于环境的[程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中启用的解决方案。
+各个环境的功能取决于环境的[项目](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中启用的解决方案。
 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
@@ -36,43 +36,43 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->生产和暂存环境只能成对创建。 您不能仅创建暂存环境或生产环境。
+>生产和暂存环境只能成对创建。 您不能创建仅限生产环境或仅限暂存的环境。
 
 ## 添加环境 {#adding-environments}
 
 要添加或编辑环境，用户必须是&#x200B;**业务负责人**&#x200B;角色的成员。
 
+**添加环境：**
+
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
 1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击要为其添加环境的程序。
 
-1. 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台上，单击&#x200B;**环境**&#x200B;信息卡上的&#x200B;**添加环境**&#x200B;以添加环境。
+1. 执行下列操作之一：
+
+   如果&#x200B;**添加环境**&#x200B;选项灰显（已禁用），则可能是由于缺少权限或依赖于许可资源。
+
+   * 在&#x200B;**[我的程序](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;控制台的&#x200B;**环境**&#x200B;信息卡上，单击&#x200B;**添加环境**。
 
    ![环境信息卡](assets/no-environments.png)
 
-   * **添加环境**&#x200B;选项也可在![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**&#x200B;选项卡上使用。
+   * 在左侧面板上，单击![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**，然后在“环境”页面的右上角附近，单击&#x200B;**添加环境**。
 
      ![“环境”信息卡](assets/environments-tab.png)
 
-   * **添加环境**&#x200B;选项可能由于缺少权限或根据许可的资源而被禁用。
+1. 在&#x200B;**添加环境**&#x200B;对话框中，执行以下操作：
 
-1. 在&#x200B;**添加环境**&#x200B;对话框中：
-
-   * 选择&#x200B;[**环境类型**](#environment-types)。
-      * 可用/使用的环境数显示在环境类型名称后面的括号中。
-   * 提供环境&#x200B;**名称**。
-      * 创建环境后，无法更改环境名称。
-   * 提供环境&#x200B;**描述**。
+   * 选择&#x200B;[**环境类型**](#environment-types)。 可用/使用的环境数显示在环境类型名称后面的括号中。
+   * 提供环境&#x200B;**名称**。 创建环境后，无法更改环境名称。
+   * 为环境提供可选的&#x200B;**描述**。
    * 如果您要添加&#x200B;**生产和暂存**&#x200B;环境，则需要为生产环境和暂存环境提供环境名称和描述。
-   * 从下拉列表中选择&#x200B;**主要区域。**
-      * 主区域创建后无法更改。
-      * 根据您的可用权限，您可以配置[多个区域。](#multiple-regions)
+   * 从下拉列表中选择&#x200B;**主区域**。 创建后无法更改主区域。 此外，根据您的可用权利，您或许可以配置[多个区域](#multiple-regions)。
 
    ![添加环境对话框](assets/add-environment2.png)
 
-1. 单击&#x200B;**保存**&#x200B;来添加指定环境。
+1. 单击&#x200B;**保存**。
 
-**概述**&#x200B;屏幕现在在&#x200B;**环境**&#x200B;信息卡中显示您的新环境。 现在可以为新环境设置管道。
+**概述**&#x200B;页面现在在&#x200B;**环境**&#x200B;信息卡中显示您的新环境。 现在可以为新环境设置管道。
 
 ## 多个发布区域 {#multiple-regions}
 
@@ -107,9 +107,9 @@ ht-degree: 70%
 
 如果您最初没有指定任何附加区域，并且您拥有必要的权限，则可以在创建环境后执行此操作。
 
-您还可以删除附加发布区域。但是，您只能在一次交易中添加或删除区域。如果您需要添加一个区域并删除一个区域，请先添加、保存您的更改，然后再删除（反之亦然）。
+您还可以删除附加发布区域。但是，在一个事务中只能添加或删除区域。 如果您需要添加一个区域并删除一个区域，请先添加、保存您的更改，然后再删除（反之亦然）。
 
-1. 从程序的程序概述控制台中，单击生产环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，然后从菜单中选择&#x200B;**编辑**。
+1. 从程序的程序概述控制台中，单击生产环境的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后从菜单中选择&#x200B;**编辑**。
 
    ![编辑环境](assets/select-edit-environment.png)
 
@@ -125,33 +125,36 @@ ht-degree: 70%
 
 如果您希望为程序提供[高级网络](/help/security/configuring-advanced-networking.md)，建议在将附加发布区域添加到环境之前完成该设置。否则，附加发布区域的流量会通过主要区域的代理。
 
-## 环境详细信息 {#viewing-environment}
+## 访问环境详细信息 {#viewing-environment}
 
-从&#x200B;**概述**&#x200B;页面，您可以通过两种方式访问环境的详细信息。
 
-1. 从&#x200B;**概述**&#x200B;页面，单击左侧菜单中的&#x200B;**环境**&#x200B;选项卡。
+1. 要访问环境详细信息，请执行以下操作之一：
+
+   * 在&#x200B;**概述**&#x200B;页面的左侧菜单中，单击![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **环境**。
 
    ![“环境”信息卡](assets/environments-tab2.png)
 
-   * 或者，单击&#x200B;**环境**&#x200B;信息卡上的&#x200B;**全部显示**&#x200B;按钮，直接跳转到&#x200B;**环境**&#x200B;选项卡。
+   * 在&#x200B;**环境**&#x200B;信息卡中，单击![工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **显示所有**。
 
      ![显示所有选项](assets/environment-showall.png)
 
-1. **环境**&#x200B;将打开并列出程序的所有环境。
+   **环境**&#x200B;页面将打开，并列出程序的所有环境。
 
    ![“环境”选项卡](assets/environments-tab2.png)
 
-1. 单击列表中的环境以显示其详细信息。
+1. 在环境页面上，执行以下操作之一：
+
+   * 单击列表中的环境以显示其详细信息。
 
    ![环境详细信息](assets/environ-preview1.png)
 
-或者，单击所需环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，然后选择&#x200B;**查看详细信息**。
+   * 单击所需环境的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**查看详细信息**。
 
-![查看环境详细信息](assets/view-environment-details.png)
+   ![查看环境详细信息](assets/view-environment-details.png)
 
 >[!NOTE]
 >
->**环境**&#x200B;信息卡仅列出三个新环境。 如前所述，单击&#x200B;**全部显示**&#x200B;按钮，查看程序的所有环境。
+>**环境**&#x200B;信息卡仅列出三个新环境。 单击卡片中的&#x200B;**显示全部**&#x200B;以查看程序的所有环境。
 
 ### 访问预览服务 {#access-preview-service}
 
@@ -163,17 +166,17 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 ![预览服务及其允许列表](assets/preview-ip-allow.png)
 
-具有必要权限的用户必须在共享预览服务 URL 之前完成以下步骤，才能访问它。
+具有必要权限的用户必须在共享预览服务URL之前完成以下步骤，以确保访问它。
 
-1. 创建适当的 IP 允许列表，将其应用于预览服务，然后立即取消应用 `Preview Default [<envId>]` 允许列表。
+1. 创建适当的IP允许列表 列入允许列表，将其应用于预览服务，然后立即取消应用`Preview Default [<envId>]`。
 
-   * 请参阅[应用和取消应用 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)，了解更多详细信息。
+   有关详细信息，请参阅[应用和取消应用IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)。
 
-1. 使用更新 **IP 允许列表**&#x200B;工作流，移除默认 IP 并根据需要添加 IP。 请参阅[管理 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)了解详细信息。
+1. 使用&#x200B;**IP允许列表**&#x200B;更新工作流删除默认IP并添加必要的IP。 请参阅[管理IP允许列表](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)以了解详情。
 
-在解锁对预览服务的访问后，预览服务名称前面的锁定图标不会再显示。
+解锁对预览服务的访问后，预览服务名称前面的锁定图标不再显示。
 
-激活后，您可以使用 AEM 中的管理发布 UI 将内容发布到预览服务。 有关更多详细信息，请参阅[预览内容。](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+激活后，您可以使用AEM中的&#x200B;**`Manage Publication`**&#x200B;用户界面将内容发布到预览服务。 有关详细信息，请参阅[预览内容](/help/sites-cloud/authoring/sites-console/previewing-content.md)。
 
 >[!NOTE]
 >
@@ -185,7 +188,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 1. 在&#x200B;**概述**&#x200B;页面上，找到&#x200B;**环境**&#x200B;信息卡。
 
-1. 在&#x200B;**环境**&#x200B;信息卡上，**状态**&#x200B;列将反映配置的其他发布区域是否存在问题。单击&#x200B;**信息**&#x200B;图标以了解各个区域的详细信息。
+1. 在&#x200B;**环境**&#x200B;信息卡上，**状态**&#x200B;列反映配置的其他发布区域是否存在任何问题。 单击&#x200B;**信息**&#x200B;图标以了解各个区域的详细信息。
 
    ![环境信息卡上的其他发布区域的状态信息](assets/additional-publish-region-status-environments-card.png)
 
@@ -197,23 +200,20 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 1. 选择环境后：
 
-   * **环境信息**&#x200B;表将显示为所选环境配置的区域。
-   * **环境区段**&#x200B;表的&#x200B;**状态**&#x200B;列将反映配置的其他发布区域是否存在问题。将鼠标悬停在状态上可查看任何问题的详细信息。
+   * **环境信息**&#x200B;表显示为所选环境配置的区域。
+   * **环境区段**&#x200B;表的&#x200B;**状态**&#x200B;列反映配置的附加发布区域是否存在任何问题。 将鼠标悬停在状态上可查看任何问题的详细信息。
 
    ![环境标签页上的其他发布区域的状态信息](assets/additional-publish-region-status-environments-tab.png)
 
-如果报告与其他发布区域相关的任何问题：
-
-1. 耐心点。 Cloud Manager会不断尝试恢复该地区，并可能随时提供该地区。
-1. 如果问题在几小时后仍然存在，您可以删除其他发布区域并重新添加它（同一区域或其他区域），以触发完整的部署。
+如果报告了使用其他发布区域出现任何问题，请耐心等待。 Cloud Manager会不断尝试恢复该地区，并可能随时提供该地区。 如果问题在几小时后仍然存在，您可以删除其他发布区域并重新添加它（同一区域或其他区域），以触发完整的部署。
 
 在执行其他操作之前等待系统自行恢复的时长取决于该区域的故障对系统的影响。
 
-在任何情况下，[流量始终路由到在线](/help/operations/additional-publish-regions.md)的其他最近区域。 如果您仍然遇到问题，请联系Adobe客户关怀部门。
+不管如何，[流量始终路由到在线](/help/operations/additional-publish-regions.md)的最近区域。 如果您仍然遇到问题，请联系Adobe客户关怀部门。
 
 ## 更新环境 {#updating-dev-environment}
 
-作为云原生服务，Adobe会自动管理生产程序中开发、暂存和生产环境的更新。
+作为云原生服务，Adobe可自动管理生产程序中开发、暂存和生产环境的更新。
 
 但是，对沙盒程序中环境的更新是在程序中管理的。 当此类环境未运行最新的公开可用 AEM 版本时，程序&#x200B;**概述**&#x200B;屏幕上的&#x200B;**环境**&#x200B;信息状态会显示&#x200B;**可用更新。**
 
@@ -223,7 +223,7 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 管道是[将代码](deploy-code.md)部署到AEM as a Cloud Service环境的唯一方法。 因此，每个管道都与特定的AEM版本相关联。
 
-如果 Cloud Manager 检测到有比上次随管道部署的 AEM 更新的版本可用，则会显示环境的&#x200B;**可用更新**&#x200B;状态。
+当Cloud Manager检测到比上次使用管道部署的AEM更新的版本时，它显示环境的&#x200B;**可用更新**&#x200B;状态。
 
 因此，更新过程分为两步：
 
@@ -235,11 +235,11 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 >[!NOTE]
 > 截至2024年，开发实例和一些沙盒程序已自动更新，因此无需手动管理它们的更新。 由于此转换，手动为开发实例更新环境的选项可能对&#x200B;_某些_&#x200B;程序不可用。
 
-通过单击环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg，可以从&#x200B;**环境**&#x200B;信息卡为沙盒程序中的某些开发环境和环境提供&#x200B;**更新**&#x200B;选项。
+**更新**&#x200B;选项在&#x200B;**环境**&#x200B;卡上可用于特定开发和沙盒环境。 单击环境旁边的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以访问&#x200B;**更新**。
 
 ![从“环境”信息卡更新选项](assets/environ-update2.png)
 
-通过单击程序的&#x200B;**环境**&#x200B;选项卡，然后单击环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，也可以使用此选项。
+单击程序的&#x200B;**环境**&#x200B;选项卡，然后单击环境的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，也可以使用此选项。
 
 ![从“环境”选项卡更新选项](assets/environ-update3.png)
 
@@ -247,23 +247,25 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 管道版本更新为最新的公开可用 AEM 版本后，系统会提示用户运行关联的管道，将最新版本部署到环境中。
 
-![提示运行管道可更新环境](assets/update-run-pipeline.png)
+![运行管道以更新环境的提示示例](assets/update-run-pipeline.png)
 
 **更新**&#x200B;选项的行为因程序的配置和当前状态而异。
 
-* 如果管道已经更新，则&#x200B;**更新**&#x200B;选项会提示用户执行管道。
-* 如果管道已在更新中，则&#x200B;**更新**&#x200B;选项会通知用户更新已在运行。
-* 如果不存在合适的管道，则&#x200B;**更新**&#x200B;选项会提示用户创建管道。
+| 状态 | 更新选项…… |
+| --- | --- |
+| 管道已更新 | 提示用户执行管道。 |
+| 管道已在更新中 | 通知用户更新已在运行。 |
+| 管道不存在 | 提示用户创建一个。 |
 
 ## 删除开发环境 {#deleting-environment}
 
 具有&#x200B;**部署管理器**&#x200B;或&#x200B;**业务负责人**&#x200B;角色的用户能够删除开发环境。
 
-在&#x200B;**环境**&#x200B;信息卡上的程序&#x200B;**概述**&#x200B;屏幕中，单击要删除的开发环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg。
+在&#x200B;**环境**&#x200B;信息卡上的程序&#x200B;**概述**&#x200B;屏幕中，单击要删除的开发环境的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
 ![删除选项](assets/environ-delete.png)
 
-在程序&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡上，也可以使用该删除选项。单击环境的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg并选择&#x200B;**删除**。
+**删除**&#x200B;选项也可在程序的&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡中找到。 单击环境的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后选择&#x200B;**删除**。
 
 ![“环境”选项卡上的删除选项](assets/environ-delete2.png)
 
@@ -280,29 +282,33 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 >[!TIP]
 >
->如果您想了解 AEM as a Cloud Service 团队和产品配置文件如何授予和限制对您获得许可的 Adobe 解决方案的访问权限，请参阅 [AEM as a Cloud Service 团队和产品配置文件。](/help/onboarding/aem-cs-team-product-profiles.md)
+>请参阅[AEM as a Cloud Service团队和产品配置文件](/help/onboarding/aem-cs-team-product-profiles.md)，了解AEM as a Cloud Service团队和产品配置文件如何授予和限制对您的许可Adobe解决方案的访问权限。
 
 ## 访问开发人员控制台 {#accessing-developer-console}
 
-从&#x200B;**环境**&#x200B;信息卡上环境的省略号菜单中选择&#x200B;**Developer Console**。 浏览器中会打开一个新的选项卡，其中包含&#x200B;**Developer Console**&#x200B;的登录页面。
+1. 在&#x200B;**环境**&#x200B;信息卡中，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**Developer Console**。
+
+使用登录到&#x200B;**Developer Console**&#x200B;的登录页在浏览器中打开了一个新选项卡。
 
 ![登录 Developer Console](assets/environ-devconsole.png)
 
-只有具有&#x200B;**开发人员**&#x200B;角色的用户才能访问&#x200B;**Developer Console。** 但是，对于沙盒程序来说，任何有权访问沙盒程序的用户都可以访问&#x200B;**Developer Console。**
+只有具有&#x200B;**开发人员**&#x200B;角色的用户才能访问&#x200B;**Developer Console。** 但是，对于沙盒程序，任何有权访问沙盒程序的用户都可以访问&#x200B;**Developer Console**。
 
-有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html#hibernation)
+有关更多详细信息，请参阅[使沙盒环境休眠和解除沙盒环境休眠。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)
 
-单击单个环境的省略号菜单时，也可以从&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡中找到此选项。
+单击单个环境的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)时，也可以从&#x200B;**概述**&#x200B;窗口的&#x200B;**环境**&#x200B;选项卡中使用此选项。
 
 ## 本地登录 {#login-locally}
 
-从&#x200B;**Environments**&#x200B;信息卡中环境的省略号菜单中选择&#x200B;**本地登录**&#x200B;以本地登录到Adobe Experience Manager。
+1. 执行下列操作之一：
 
-![本地登录](assets/environ-login-locally.png)
+   * 在&#x200B;**环境**&#x200B;信息卡中，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**本地登录**。
 
-此外，您可以从&#x200B;**概述**&#x200B;页面的&#x200B;**环境**&#x200B;选项卡中本地登录。
+     ![本地登录](assets/environ-login-locally.png)
 
-![从“环境”选项卡本地登录](assets/environ-login-locally-2.png)
+   * 从左侧面板中，单击&#x200B;**环境**。 在&#x200B;**环境**&#x200B;页面上，单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**本地登录**。
+
+     ![从“环境”选项卡本地登录](assets/environ-login-locally-2.png)
 
 ## 管理自定义域名 {#manage-cdn}
 
@@ -314,13 +320,13 @@ Cloud Manager 将预览服务（作为额外的发布服务提供）提供给每
 
 ## 管理 IP 允许列表 {#manage-ip-allow-lists}
 
-Cloud Manager 支持针对 Sites 程序的作者、发布和预览服务的 IP 允许列表。
+Cloud Manager支持IP允许列表，用于Sites程序的创作、发布和预览服务。
 
-要管理 IP 允许列表，请导航到程序的&#x200B;**概述**&#x200B;页面的&#x200B;**环境**&#x200B;选项卡。 单击单个环境管理其详细信息。
+要管理IP允许列表，请导航到程序的&#x200B;**概述**&#x200B;页面的&#x200B;**环境**&#x200B;选项卡。 单击单个环境管理其详细信息。
 
 ### 应用IP允许列表 {#apply-ip-allow-list}
 
-应用IP允许列表会将允许列表定义中包含的所有IP范围与环境中的作者或发布服务相关联。
+应用IP允许列表可将所有定义的IP范围链接到环境中的创作或发布服务。
 
 >[!TIP]
 >

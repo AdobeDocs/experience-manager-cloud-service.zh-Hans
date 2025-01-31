@@ -4,10 +4,10 @@ description: 了解如何将 Edge Delivery 网站添加到您的生产程序或�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
-workflow-type: ht
-source-wordcount: '495'
-ht-degree: 100%
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 92%
 
 ---
 
@@ -49,12 +49,12 @@ ht-degree: 100%
 
    | 步骤数 | 描述 |
    | - | - |
-   | **1** | 将路径和名称为 `well-known/adobe/cloudmanager-challenge.txt` 的文件添加到 Git 存储库的 `main` 分支，该分支列在&#x200B;**存储库 URL** 字段中。请&#x200B;*不要*&#x200B;在位置路径的开头添加句点。<br>如有必要，请单击![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)将该路径复制到剪贴板。 |
-   | **2** | 将步骤 2 中文本字段中看到的代码添加到您在步骤 1 中刚刚创建的文件中。<br>如有必要，单击![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)将代码复制到剪贴板。 |
+   | **1** | 将路径和名称为 `well-known/adobe/cloudmanager-challenge.txt` 的文件添加到 Git 存储库的 `main` 分支，该分支列在&#x200B;**存储库 URL** 字段中。请&#x200B;*不要*&#x200B;在位置路径的开头添加句点。<br>如有必要，请单击![复制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以将路径复制到剪贴板。 |
+   | **2** | 将步骤 2 中文本字段中看到的代码添加到您在步骤 1 中刚刚创建的文件中。<br>如有必要，请单击![复制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以将代码复制到剪贴板。 |
    | **3** | 在 Git 存储库中为您刚才创建的更改创建一个拉取请求，然后将其合并到 `main` 以提交代码。 |
 
 1. 单击&#x200B;**验证**。
 
 在验证存储库后，它在 Edge Delivery 网站表中的状态就会更新。内部带有白色复选标记的绿色圆圈表示状态。
 
-在同一个表中，单击![Edge Delivery 网站信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)，以查看网站详情。此信息包括经过验证的存储库 URL，以及预览和生产网站 URL。
+在同一表格中，单击![有关Edge Delivery站点图标的信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)以查看站点详细信息。 此信息包括经过验证的存储库 URL，以及预览和生产网站 URL。

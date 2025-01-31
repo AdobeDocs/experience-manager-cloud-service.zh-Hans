@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 45%
+source-wordcount: '420'
+ht-degree: 42%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 45%
 
 * 将 Sites 解决方案添加到具有 Assets 的现有项目，反之亦然。
 * 从具有 Sites 和 Assets 的现有项目中删除 Sites 或 Assets。
-* 将另一未使用的解决方案权利添加到现有项目或添加为新项目。
+* 将未使用的解决方案权利添加到现有计划或创建新计划。
 * 删除沙盒项目。
 
 ## 权限 {#permissions}
 
-您必须是&#x200B;**业务负责人**&#x200B;角色的成员才能编辑程序或删除沙盒程序以及访问许可证仪表板。
+您必须具有&#x200B;**业务负责人**&#x200B;角色才能编辑程序、删除沙盒程序和访问许可证仪表板。
 
 ## 编辑程序 {#editing}
 
@@ -46,7 +46,7 @@ ht-degree: 45%
 
    ![“常规”选项卡](assets/edit-program-prod1.png)
 
-1. 可用于编辑程序的选项与创建程序时的选项相同。
+1. 可用于编辑程序的选项与用于创建程序的选项相同。
    * 有关各个选项的详细信息，请参阅[创建生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)和[创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
    * [其他选项](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options)可能适用于您的生产程序，具体取决于您组织的权限。
 
@@ -70,7 +70,7 @@ ht-degree: 45%
 
    ![“删除程序”选项](assets/delete-sandbox1.png)
 
-或者，您可以从Cloud Manager概述页面单击程序卡上的https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg ，然后选择&#x200B;**删除程序**。
+或者，您可以从Cloud Manager概述页面单击程序卡上的![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后选择&#x200B;**删除程序**。
 
 ![从程序信息卡删除沙盒](assets/delete-sandbox2.png)
 
