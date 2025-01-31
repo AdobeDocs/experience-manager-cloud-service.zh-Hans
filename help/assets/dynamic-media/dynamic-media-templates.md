@@ -3,9 +3,10 @@ title: 如何管理Dynamic Media模板？
 description: 了解如何使用Dynamic Media模板编辑器创建WYSIWYG模板，并包含多个图像和文本图层，以快速创建横幅和活页并在下游应用程序中使用它们。
 hide: true
 role: User
-source-git-commit: ada339567716a126d3288246c148c551dff298f4
+exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
+source-git-commit: ea903daafedb420602700f4b1b4a3ad6bd8ede97
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2590'
 ht-degree: 0%
 
 ---
@@ -55,19 +56,18 @@ Dynamic Media模板的一些主要优势包括：
 1. [编辑或删除图层](#edit-or-delete-a-layer)
 1. [参数化图层](#parameterise-a-layer)
 
-
 ### 创建空白画布{#create-a-canvas}
 
 执行以下步骤可创建空白画布：
 
-1. 导航到Assets视图，然后单击左侧面板中提供的&#x200B;**Dynamic Media Assets**。
+1. 导航到Assets视图，然后单击左侧面板中提供的&#x200B;**[!UICONTROL Dynamic Media Assets]**。
 
    ![](/help/assets/assets/dm-templates/DM-Assets1.png)
 
-1. 单击&#x200B;**创建模板**&#x200B;以将模板保存在Dynamic Media Assets下，或者导航到某个文件夹，然后单击&#x200B;**创建模板**&#x200B;以将模板保存在该文件夹中。 此时将显示&#x200B;**新模板**对话框。
+1. 单击&#x200B;**[!UICONTROL 创建模板]**&#x200B;以将模板保存在Dynamic Media Assets下，或者导航到某个文件夹，然后单击&#x200B;**[!UICONTROL 创建模板]**&#x200B;以将模板保存在该文件夹中。 此时将显示&#x200B;**[!UICONTROL 新模板]**对话框。
    ![](/help/assets/assets/dm-templates/new-template.png)
-要在**Dynamic Media Assets**&#x200B;下[创建文件夹](/help/assets/add-delete-assets-view.md)，请在&#x200B;**Assets**&#x200B;下创建文件夹。 **Assets**&#x200B;下的文件夹树将在&#x200B;**Dynamic Media Assets**&#x200B;下复制。
-1. 指定模板名称，定义画布宽度和高度，然后单击&#x200B;**创建**。 屏幕上会显示一个空白画布，画布的两侧都有用于创建模板的菜单选项。 将鼠标悬停在菜单选项上可查看其工具提示。
+要在**[!UICONTROL Dynamic Media Assets]**&#x200B;下[创建文件夹](/help/assets/add-delete-assets-view.md)，请在&#x200B;**[!UICONTROL Assets]**&#x200B;下创建文件夹。 **[!UICONTROL Assets]**&#x200B;下的文件夹树将在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;下复制。
+1. 指定模板名称，定义画布宽度和高度，然后单击&#x200B;**[!UICONTROL 创建]**。 屏幕上会显示一个空白画布，画布的两侧都有用于创建模板的菜单选项。 将鼠标悬停在菜单选项上可查看其工具提示。
    ![](/help/assets/assets/dm-templates/blank-canvas-page.png)
 
 >[!NOTE]
@@ -91,7 +91,7 @@ Dynamic Media模板的一些主要优势包括：
 * ![](/help/assets/assets/dm-templates/zoomout.svg)：单击以缩小画布或按&#x200B;**Ctrl** + **-** (Windows)或&#x200B;**Cmd** + **-** (Mac)。
 * 如果没有编辑文本或属性，请按&#x200B;**Backspace**&#x200B;或&#x200B;**delete**&#x200B;删除选定的图层。
 
-在创建模板时，单击画布层上的![](/help/assets/assets/dm-templates/show-layers-list.svg)和更多选项(![](/help/assets/assets/dm-templates/three-dots.svg))随时编辑画布维度。
+在创建模板时，单击画布层上的![](/help/assets/assets/dm-templates/show-layers-list.svg) **>**&#x200B;其他选项(![](/help/assets/assets/dm-templates/three-dots.svg))随时编辑画布维度。
 ![](/help/assets/assets/dm-templates/edit-canvas1.png)
 
 >[!NOTE]
@@ -104,7 +104,7 @@ Dynamic Media模板的一些主要优势包括：
 
 1. 单击![](/help/assets/assets/dm-templates/add-image.svg)以显示[资产选择器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 该面板会显示您的AEM Assets实例中已同步到Dynamic Media的图像。
 1. 浏览面板或使用搜索栏中的关键字查找特定图像。
-1. 将图像拖放到画布上以使用。 查看[属性面板](#4)以调整画布上的图层大小或重新定位图层。
+1. 将图像拖放到画布上以使用。 查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以调整画布上的图层大小或重新定位图层。
    ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ### 在画布中添加文本图层{#add-text-to-the-canvas}
@@ -113,10 +113,10 @@ Dynamic Media模板的一些主要优势包括：
 
 1. 单击![](/help/assets/assets/dm-templates/add-text.svg)将文本图层添加到画布并打开“属性”面板。
 1. 选择图层并单击文本进行更新。
-1. 在“属性”面板中启用&#x200B;**智能文本大小调整**以自动调整文本长度和字体大小以最佳方式适应指定区域。
+1. 在“属性”面板中启用&#x200B;**[!UICONTROL 智能文本大小调整]**以自动调整文本长度和字体大小以最佳方式适应指定区域。
    ![](/help/assets/assets/dm-templates/add-text-layer.png)
 
-查看[属性面板](#4)以重新定位、调整大小、旋转或删除图层。 通过更改面板&#x200B;**文本**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。
+查看[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)以重新定位、调整大小、旋转或删除图层。 通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。
 
 >[!NOTE]
 >
@@ -128,8 +128,8 @@ Dynamic Media模板的一些主要优势包括：
 
 1. 单击![](/help/assets/assets/dm-templates/show-layers-list.svg)并在画布上或从“图层”列表中选择图层。
 1. 单击&#x200B;**更多选项** (![](/help/assets/assets/dm-templates/three-dots.svg))以编辑或删除层。
-1. 单击&#x200B;**删除**&#x200B;以删除图层。
-1. 单击&#x200B;**编辑**&#x200B;以使用[属性面板](#4)编辑图层。
+1. 单击&#x200B;**[!UICONTROL 删除]**&#x200B;以删除图层。
+1. 单击&#x200B;**[!UICONTROL 编辑]**&#x200B;以使用[**[!UICONTROL 属性面板]**](#reposition-resize-delete-a-layer)编辑图层。
    ![](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
 ### 属性面板{#properties-panel}
@@ -144,7 +144,7 @@ Dynamic Media模板的一些主要优势包括：
 ![](/help/assets/assets/dm-templates/properties-panel.png)
 
 从图层的属性面板中，选择画布上的另一个图层以导航到其属性面板。
-<a id="4"></a>
+
 
 #### 重新定位、调整大小、旋转或删除图层{#reposition-resize-delete-a-layer}
 
@@ -153,27 +153,27 @@ Dynamic Media模板的一些主要优势包括：
 * **重新定位图层：**&#x200B;拖动图层可将其移动到画布上的任意位置。 此操作将更新属性面板中的X和Y值。
 * **调整图层大小：**&#x200B;选择图层并拖动其边缘手柄以调整其大小。 此操作更新属性面板中的W（宽度）和H（高度）值。
 * **旋转图层：**&#x200B;拖动垂直放置在图层上方的方形手柄，使其绕其中心旋转。 此操作将更新属性面板中的角度值。
-* **删除层：**&#x200B;按&#x200B;**Backspace**&#x200B;或&#x200B;**删除**，然后单击&#x200B;**确认**&#x200B;以删除选定的层。
+* **删除层：**&#x200B;按&#x200B;**Backspace**&#x200B;或&#x200B;**删除**，然后单击&#x200B;**[!UICONTROL 确认]**&#x200B;以删除选定的层。
 
 #### 文本格式设置选项{#text-formatting-options-on-properties-panel}
 
-通过更改面板&#x200B;**文本**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。
+通过更改面板&#x200B;**[!UICONTROL 文本]**&#x200B;部分下相应字段中的值，将文本格式设置为所需的字体、大小、颜色、样式、对齐方式（在图层中）。
 
-**智能文本大小调整：**&#x200B;确保包含&#x200B;**智能文本大小调整** ([Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting))以通过智能调整其字体大小和长度来优化适应指定区域中的任何文本。 此功能可防止文本溢出，或最大限度地减少文本底部的额外空格。
+**[!UICONTROL 智能文本大小调整]**&#x200B;确保包含&#x200B;**[!UICONTROL 智能文本大小调整]** ([Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting))以通过智能调整其字体大小和长度来优化适应指定区域中的任何文本。 此功能可防止文本溢出，或最大限度地减少文本底部的额外空格。
 ![](/help/assets/assets/dm-templates/smart-text-resize.png)
 
 ### 参数化图层 {#parameterise-a-layer}
 
 创建包含多个图像和文本层的模板后，将所选图层参数化。 将图层或其属性参数化后，它将获得一个键值对（也称为参数）。 此参数可以包含在模板URL中，以实时更新图层的位置、大小或内容，从而实时自定义模板。
 
-要参数化图层： <a id="1"></a>
+要参数化图层，请执行以下操作：
 
-1. 单击![](/help/assets/assets/dm-templates/show-layers-list.svg)，选择一个图层，然后单击&#x200B;**参数**。 显示&#x200B;**参数**&#x200B;面板。
-1. 切换&#x200B;**包含参数**&#x200B;以参数化属性。 请参阅[此](#parameterisation-options-or-allowed-parameters)以了解该属性在参数化后的行为。
+1. 单击![](/help/assets/assets/dm-templates/show-layers-list.svg)，选择一个图层，然后单击&#x200B;**[!UICONTROL 参数]**。 显示&#x200B;**[!UICONTROL 参数]**&#x200B;面板。
+1. 切换&#x200B;**[!UICONTROL 包含参数]**&#x200B;以参数化属性。 请参阅[此](#parameterisation-options-or-allowed-parameters)以了解该属性在参数化后的行为。
 1. **可选：**&#x200B;重命名参数名称。 参数名称具有层名称后跟一个后缀。 对于选定层，其所有参数化属性共享相同的层名称，后跟一个变化的后缀。 按照语义命名约定重命名层名称，以便在URL中包含参数时，参数名称本身可以说明层的内容或其用途。
-1. 单击&#x200B;**保存**。
+1. 单击&#x200B;**[!UICONTROL 保存]**。
    ![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
-若要在图像和文本图层的“参数”面板之间进行切换，请选择画布上的图层，然后单击**参数**。
+若要在图像和文本图层的“参数”面板之间进行切换，请选择画布上的图层，然后单击**[!UICONTROL 参数]**。
 
 #### “参数”面板选项 {#parameterisation-options-or-allowed-parameters}
 
@@ -203,32 +203,32 @@ Dynamic Media模板的一些主要优势包括：
 
 按照以下步骤为多个图层的隐藏参数(![](/help/assets/assets/dm-templates/Visibility-icon.svg))指定相同的名称，以便同时隐藏或显示它们。
 
-1. 导航到图层的[参数面板](#1)。
-1. 如果之前未设置参数，请切换&#x200B;**隐藏**&#x200B;参数。
+1. 导航到图层的[**[!UICONTROL 属性面板]**](#parameterise-a-layer)。
+1. 如果之前未设置参数，请切换&#x200B;**[!UICONTROL 隐藏]**&#x200B;参数。
 1. **可选：**&#x200B;重命名Hide参数。
 1. 复制隐藏参数名称。
-1. 从画布中选择其他图层以转到这些图层的“参数”面板，并切换其&#x200B;**隐藏**&#x200B;参数（如果未设置参数）。
-1. 将其&#x200B;**隐藏参数**&#x200B;名称替换为复制的名称。
-1. 单击&#x200B;**保存**&#x200B;将图层分组。
-1. 在[预览和Publish](#2)部分中执行步骤3，然后执行步骤4，以查看所做的更改。
+1. 从画布中选择其他图层以转到这些图层的“参数”面板，并切换其&#x200B;**[!UICONTROL 隐藏]**&#x200B;参数（如果未设置参数）。
+1. 将他们的&#x200B;**[!UICONTROL 隐藏参数]**&#x200B;名称替换为复制的名称。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;将图层分组。
+1. 在[**[!UICONTROL 预览和Publish]**](#preview-and-publish-template-and-copy-template-deliver-url)部分中执行步骤3，然后执行步骤4，以查看所做的更改。
 
 ## 预览并发布模板以复制投放URL{#preview-and-publish-template-and-copy-template-deliver-url}
 
 执行以下步骤以预览和发布模板并复制投放URL：
 
-1. 在画布页面上，单击&#x200B;**预览**。 您还可以导航到&#x200B;**Assets视图> Dynamic Media Assets >**&#x200B;查找并选择您的模板&#x200B;**>**&#x200B;单击&#x200B;**编辑模板>**&#x200B;单击&#x200B;**预览**。 预览页显示模板、其参数（参数化层和属性）、发布状态以及&#x200B;**Publish**&#x200B;选项。<a id="3"></a>
-1. 从&#x200B;**模板参数**&#x200B;面板中选择参数以编辑其值，并立即更新预览中相应模板图层的内容、大小、位置或文本格式。 例如：
+1. 在画布页面上，单击&#x200B;**[!UICONTROL 预览]**。 您还可以导航到&#x200B;**[!UICONTROL Assets视图]** **>** **[!UICONTROL Dynamic Media Assets]** **>**&#x200B;查找并选择您的模板&#x200B;**>**&#x200B;单击&#x200B;**[!UICONTROL 编辑模板]** **>**&#x200B;单击&#x200B;**[!UICONTROL 预览]**。 预览页显示模板、其参数（参数化层和属性）、发布状态以及&#x200B;**[!UICONTROL Publish]**&#x200B;选项。
+1. 从&#x200B;**[!UICONTROL 模板参数]**&#x200B;面板中选择参数以编辑其值，并立即更新预览中相应模板图层的内容、大小、位置或文本格式。 例如：
    1. 选择文本图层并编辑其文本或
-   1. 选择图像图层，单击![](/help/assets/assets/dm-templates/add-image.svg)，从资产选择器中选择图像，然后单击&#x200B;**刷新**。
+   1. 选择图像图层，单击![](/help/assets/assets/dm-templates/add-image.svg)，从资产选择器中选择图像，然后单击&#x200B;**[!UICONTROL 刷新]**。
 
-   模板会立即更新，显示编辑过的文本并将以前的图像替换为新图像。 此外，图像参数值反映了新的图像路径。 同样，可以通过调整图层的值来调整其大小，所做的更改将实时应用于模板。<a id="2"></a>
+   模板会立即更新，显示编辑过的文本并将以前的图像替换为新图像。 此外，图像参数值反映了新的图像路径。 同样，可以通过调整图层的值来调整其大小，所做的更改将实时应用于模板。
 1. 从列表中选择[分组图层](#group-layers)的hide参数以在模板中显示或隐藏它们。
-1. **可选：**&#x200B;将介于0和1之间的&#x200B;**隐藏参数**&#x200B;值更改为1并单击&#x200B;**刷新**&#x200B;以查看更改内容。 具有相同隐藏参数的图层会一起隐藏或显示。 同样，您可以从URL控制图层的可见性。
+1. **可选：**&#x200B;将&#x200B;**[!UICONTROL 隐藏]**&#x200B;参数值在0和1之间更改，然后单击&#x200B;**[!UICONTROL 刷新]**&#x200B;以查看更改内容。 具有相同隐藏参数的图层会一起隐藏或显示。 同样，您可以从URL控制图层的可见性。
 
    ![](/help/assets/assets/dm-templates-publish-status.png)
-您还可以切换**包含所有参数**以编辑所有显示的参数值，并在模板预览中查看更新。
+您还可以切换**[!UICONTROL 包含所有参数]**以编辑所有显示的参数值，并在模板预览中查看更新。
    <br>
-1. 要在预览页面上发布模板，请单击&#x200B;**Publish**&#x200B;并确认发布。 此时会显示Publish结束消息，并且发布状态会更新为“已发布”。
+1. 要在预览页面上发布模板，请单击&#x200B;**[!UICONTROL Publish]**&#x200B;并确认发布。 此时会显示Publish结束消息，并且发布状态会更新为“已发布”。
 
 >[!NOTE]
 >
@@ -236,12 +236,12 @@ Dynamic Media模板的一些主要优势包括：
 
 ### 复制投放URL
 
-**预览**&#x200B;页面上选定的参数将成为模板URL中的URL参数。
+**[!UICONTROL 预览]**&#x200B;页面上选定的参数将成为模板URL中的URL参数。
 
 要复制预览中显示的已发布模板的URL，请执行以下操作：
 
-1. 单击&#x200B;**复制URL**。 将显示&#x200B;**复制URL**&#x200B;对话框。 选择并复制显示的URL。 请注意，URL中的第一个参数在问号&#x200B;**(？)之后开始**&#x200B;和一个键值对以&#x200B;**$**&#x200B;开头，以&#x200B;**&amp;**&#x200B;结尾。 键和值用等号&#x200B;**(=)**&#x200B;分隔，键在左侧，值在右侧。
-1. 将此URL粘贴到浏览器选项卡中，并查看您的实时模板。 通过直接更新URL中所需参数的值（键值）实时自定义模板，如&#x200B;**预览和Publish**&#x200B;部分的[步骤2](#3)所示。
+1. 单击&#x200B;**[!UICONTROL 复制URL]**。 将显示&#x200B;**[!UICONTROL 复制URL]**&#x200B;对话框。 选择并复制显示的URL。 请注意，URL中的第一个参数在问号&#x200B;**(？)之后开始**&#x200B;和一个键值对以&#x200B;**$**&#x200B;开头，以&#x200B;**&amp;**&#x200B;结尾。 键和值用等号&#x200B;**(=)**&#x200B;分隔，键在左侧，值在右侧。
+1. 将此URL粘贴到浏览器选项卡中，并查看您的实时模板。 通过直接更新URL中所需参数的值（键值）实时自定义模板，如&#x200B;**预览和Publish**&#x200B;部分的[步骤2](#preview-and-publish-template-and-copy-template-deliver-url)所示。
 1. 使用此URL快速推销您的产品或服务。 您可以与客户共享此URL，或将其集成到您的网站或任何下游第三方应用程序，以显示横幅并实时更新以反映持续优惠。
 
 在本视频中了解如何分步创建Dynamic Media模板。
@@ -264,10 +264,10 @@ Dynamic Media模板的一些主要优势包括：
 
 按以下这些步骤编辑模板：
 
-1. 在Assets视图中，单击&#x200B;**Dynamic Media Assets**。
+1. 在Assets视图中，单击&#x200B;**[!UICONTROL Dynamic Media Assets]**。
 2. 导航到模板位置。
 3. 选择模板。
-4. 单击&#x200B;**编辑模板**。 模板画布在“图层”面板中显示模板及其所有图层的列表。 根据需要开始编辑模板。
+4. 单击&#x200B;**[!UICONTROL 编辑模板]**。 模板画布在“图层”面板中显示模板及其所有图层的列表。 根据您的要求开始编辑模板。
 
 ## 要注意的重要事项 {#important-points-to-note}
 
