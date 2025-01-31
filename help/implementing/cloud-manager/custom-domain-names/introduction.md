@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+source-git-commit: 2724eaaaade94be89d33da5eecec4444cf851bd0
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 44%
@@ -75,7 +75,7 @@ AEM as a Cloud Service提供了内置的CDN（内容分发网络）服务，还�
 * 一次只能添加一个域名。
 * AEM as a Cloud Service 不支持通配符，例如`*.example.com`。
 * 在添加自定义域名之前，必须为程序安装包含自定义域名（通配符证书有效）的有效SSL证书。
-* 使用具有[前端管道功能的自定义域名需要额外的配置步骤。](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains)
+* 使用具有[前端管道功能](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains)的自定义域名需要额外的配置步骤。
 
 ## 开始使用 {#get-started}
 
