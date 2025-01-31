@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c4e05ae636701d914b654b7342a4bc2403c56c0
+source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 97%
@@ -29,7 +29,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->已弃用AEM Sites的渐进式Web应用程序(PWA)功能。
+>AEM Sites [的渐进式Web应用程序(PWA)功能已被弃用。](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
 >
 >将继续支持使用此功能的现有项目，但新项目不应使用此功能。
 
