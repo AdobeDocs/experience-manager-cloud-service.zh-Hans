@@ -1,18 +1,19 @@
 ---
-title: FormsEdge Delivery Services的通用编辑器(EDS Forms块)
-description: 使用Universal Editor for Edge Delivery Services for Forms (EDS Forms Block)创建自适应Forms。
+title: 表单 Edge Delivery Services 通用编辑器（EDS 表单区块）
+description: 使用表单 Edge Delivery Services 通用编辑器（EDS 表单区块）创建自适应表单。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
+source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 11%
+ht-degree: 63%
 
 ---
 
-# FormsEdge Delivery Services的通用编辑器(EDS Forms块)
+# 表单 Edge Delivery Services 通用编辑器（EDS 表单区块）
 
 通用编辑器通过提供简单、直观的可视Adobe Edge (WYSIWYG)界面，彻底变革了What You See Is What You Get Delivery Services (EDS)的表单创建方式。 它专为内容创建者和表单作者而设计，消除了传统表单构建流程的复杂性，使其甚至可供非技术用户访问。
 
@@ -22,60 +23,60 @@ ht-degree: 11%
 
 ![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%， align-center} —>
 
-## EDS Forms通用编辑器的主要功能
+## EDS Forms 通用编辑器的主要功能
 
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="WYSIWYG界面"> 
-    <h3>WYSIWYG界面</h3>
-    <p>通用编辑器为表单设计提供了WYSIWYG界面，其中包括预建的组件库、响应式设计、基于模板的创建和实时字段修改。
+    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="所见即所得界面"> 
+    <h3>所见即所得界面</h3>
+    <p>通用编辑器为表单设计提供了所见即所得的界面，具有预建组件库、响应式设计、基于模板的创建和实时字段修改。
  </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="规则编辑器">
     <h3>规则编辑器</h3>
-    <p>通过规则编辑器，用户可以使用事件驱动规则、即时验证以及通过轻量级JavaScript和JSON进行的错误处理来创建动态表单交互。</p>
+    <p>规则编辑器允许用户使用事件驱动规则、即时验证和通过轻量级 JavaScript 和 JSON 进行错误处理来创建动态表单交互。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="响应式模式">
     <h3>响应式模式 </h3>
-    <p>设计可在各种设备（台式机、平板电脑和移动设备）之间无缝调整的表单。 使用响应模式预览和测试各种屏幕大小的表单。</p>
+    <p>设计可跨设备（台式机、平板电脑和移动设备）无缝适应的表单。使用响应式模式预览和测试各种屏幕尺寸的表单。</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="个性化"> 
     <h3>个性化</h3>
-    <p>Personalization使用用户数据来提供量身定制的表单体验，并根据用户偏好动态调整内容、布局或选项。</p>
+    <p>通过个性化使用用户数据来提供量身定制的表单体验，根据用户偏好动态调整内容、布局或选项。</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="预填充服务">
-    <h3>预填充服务</h3>
-    <p>预填充服务会自动使用来自各种来源的相关用户数据填充表单字段，从而减少手动输入并增强用户体验。</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/prefill-services.svg" alt="预填服务">
+    <h3>预填服务</h3>
+    <p>预填服务会自动使用来自各种来源的相关用户数据填充表单字段，从而减少手动输入并增强用户体验。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg" alt="规则编辑器">
-    <h3>A/B测试</h3>
-    <p>A/B测试（试验）使组织能够试验不同的表单设计、布局和功能，以识别性能最佳的变体。</p>
+    <h3>A/B 测试</h3>
+    <p>A/B 测试（实验）使组织能够尝试不同的表单设计、布局和功能，以确定性能最佳的变体。</p>
   </div>
 </div>
 
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="Analytics和Tracking">
-    <h3>Analytics和Tracking</h3>
-    <p>通过内置的分析和跟踪功能深入了解用户行为、表单交互和提交率，从而支持数据驱动的表单优化。</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg" alt="分析与跟踪">
+    <h3>分析与跟踪</h3>
+    <p>通过内置分析和跟踪功能深入了解用户行为、表单交互和提交率，从而实现数据驱动的表单优化。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="与Adobe Workfront集成">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="与 Adobe Workfront 集成 ">
     <h3> 任务管理 </h3>
-    <p>与Adobe Workfront集成使团队能够管理表单创建和维护任务，从而确保简化工作流。</p>
+    <p>与 Adobe Workfront 集成使团队能够管理表单创建和维护任务，确保简化的工作流程。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="数据绑定">
     <h3>数据绑定</h3>
-    <p>数据绑定实现了表单字段与后端数据源之间的直接连接，支持对结构化投诉数据存储进行实时更新和高级数据映射。</p>
+    <p>数据绑定实现了表单字段和后端数据源的直接连接，支持结构化投诉数据存储的实时更新和高级数据映射。</p>
   </div>
 </div>
 
@@ -88,12 +89,12 @@ ht-degree: 11%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="提交操作">
     <h3>提交操作</h3>
-    <p>提交操作支持后端集成、条件提交逻辑、安全端点和预处理器，从而简化了提交工作流。</p>
+    <p>提交操作支持后端集成、条件提交逻辑、安全端点和预处理器，简化提交工作流程。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/custom-components.svg" alt="任务管理">
     <h3>自定义组件</h3>
-    <p>通过自定义组件，开发人员可创建针对特定组织用例的独特元素，以扩展表单功能。</p>
+    <p>自定义组件允许开发人员通过创建针对特定组织用例定制的独特元素来扩展表单功能。</p>
   </div>
 </div>
 
@@ -101,17 +102,17 @@ ht-degree: 11%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="编辑器自定义">
     <h3>编辑器自定义</h3>
-    <p>开发人员可以通过UI扩展来扩展编辑器的功能，从而实现符合特定组织需求的定制解决方案。</p>
+    <p>开发人员可以通过 UI 扩展来扩展编辑器的功能，从而实现符合特定组织需求的定制解决方案。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="嵌入Forms">
-    <h3>嵌入Forms</h3>
-    <p>使用通用编辑器的内置嵌入组件将表单直接嵌入到Edge Delivery Services Sites页面中，以实现无缝的用户体验。</p>
+    <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="嵌入表单">
+    <h3>嵌入表单</h3>
+    <p>使用通用编辑器的内置嵌入组件将表单直接嵌入到 Edge Delivery Services Sites，实现无缝的用户体验。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/thank-you.svg" alt="自定义组件">
-    <h3>感谢配置</h3>
-    <p>轻松自定义在成功提交表单后向用户显示的确认消息或页面。
+    <h3>谢谢配置</h3>
+    <p>轻松地自定义成功提交表单后向用户显示的确认信息或页面。
     </p>
   </div>
 </div>
@@ -141,7 +142,7 @@ ht-degree: 11%
 
 ## 预建表单组件
 
-通用编辑器提供了以下现成的表单组件：
+通用编辑器提供以下现成的表单组件：
 
 <table>
   <thead>
@@ -163,7 +164,7 @@ ht-degree: 11%
     </tr>
     <tr>
       <td><b>验证码</b></td>
-      <td>通过要求用户使用Google reCaptcha或HCaptcha完成人工验证任务来阻止垃圾邮件。</td>
+      <td>要求用户使用 Google reCaptcha 或 HCaptcha 完成人工验证任务，从而防止垃圾邮件。</td>
     </tr>
     <tr>
       <td><b>复选框</b></td>
@@ -171,75 +172,75 @@ ht-degree: 11%
     </tr>
     <tr>
       <td><b>复选框组</b></td>
-      <td>允许用户从组中选择多个选项。</td>
+      <td>允许用户从一个组中选择多个选项。</td>
     </tr>
     <tr>
       <td><b>日期选取器</b></td>
-      <td>允许用户使用日历界面选择日期。</td>
+      <td>允许用户使用日程表界面选择日期。</td>
     </tr>
     <tr>
       <td><b>下拉列表</b></td>
-      <td>从预定义列表中提供单选或多选选项。</td>
+      <td>在预定义列表中提供单选或多选选项。</td>
     </tr>
     <tr>
       <td><b>电子邮件</b></td>
-      <td>通过基本格式验证捕获电子邮件地址。</td>
+      <td>使用基本格式验证捕获电子邮件地址。</td>
     </tr>
     <tr>
       <td><b>文件附件</b></td>
-      <td>允许上载文档、图像或其他文件类型。</td>
+      <td>支持上传文档、图像或其他文件类型。</td>
     </tr>
     <tr>
       <td><b>表单片段</b></td>
-      <td>地址字段或联系人详细信息等部分的可重用表单组件。</td>
+      <td>可重复使用的表单组件，用于地址字段或联系详细信息等部分。</td>
     </tr>
     <tr>
       <td><b>图像</b></td>
-      <td>支持在表单中上传和显示图像。</td>
+      <td>支持在表单内上传和显示图像。</td>
     </tr>
     <tr>
       <td><b>模态</b></td>
-      <td>显示弹出对话框，通常用于警报、其他信息或确认。</td>
+      <td>显示弹出窗口对话框，通常用于警告、附加信息或确认。</td>
     </tr>
     <tr>
       <td><b>数值字段</b></td>
-      <td>捕获数字输入，允许验证数字或范围。</td>
+      <td>捕获数值输入，允许验证数字或范围。</td>
     </tr>
     <tr>
       <td><b>面板</b></td>
-      <td>使用可展开/可折叠的面板组织表单部分。</td>
+      <td>使用可扩展/折叠面板来组织表单部分。</td>
     </tr>
     <tr>
       <td><b>单选按钮</b></td>
-      <td>从选项组启用单选选择。</td>
+      <td>允许从一组选项中进行单选。</td>
     </tr>
     <tr>
       <td><b>评分</b></td>
-      <td>允许用户提供基于星级的评级。</td>
+      <td>允许用户提供星级评分。</td>
     </tr>
     <tr>
-      <td><b>“重置”按钮</b></td>
+      <td><b>重置按钮</b></td>
       <td>将表单字段重置为其默认状态。</td>
     </tr>
     <tr>
-      <td><b>“提交”按钮</b></td>
-      <td>触发表单提交并启动定义的工作流。</td>
+      <td><b>提交按钮</b></td>
+      <td>触发器表单提交并启动定义的工作流程。</td>
     </tr>
     <tr>
       <td><b>电话号码字段</b></td>
-      <td>根据国家/地区捕获带有格式的电话号码。</td>
+      <td>捕获基于国家/地区格式的电话号码。</td>
     </tr>
     <tr>
       <td><b>文本</b></td>
-      <td>提供一个专用部分，用于显示法律术语并通过复选框收集用户协议。</td>
+      <td>通过复选框提供一个专门用于显示法律条款和收集用户协议的分区。</td>
     </tr>
     <tr>
       <td><b>文本字段</b></td>
-      <td>DCaptures单行输入，如名称或电子邮件地址。</td>
+      <td>捕获单行输入，例如姓名或电子邮件地址。</td>
     </tr>
     <tr>
       <td><b>向导</b></td>
-      <td>指导用户逐步完成多部分表单过程。</td>
+      <td>指导用户逐步完成多部分表单流程。</td>
     </tr>
   </tbody>
 </table>
