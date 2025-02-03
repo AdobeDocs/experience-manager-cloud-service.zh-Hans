@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '453'
 ht-degree: 11%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 11%
 >[!IMPORTANT]
 >
 >您[是否已添加自定义域名](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)和[是否已分别添加SSL证书](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)？ 如果不能，则必须先完成这两项任务，然后才能添加CDN配置。
+
+另请参阅[Adobe托管的CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)。
 
 **添加CDN配置：**
 
