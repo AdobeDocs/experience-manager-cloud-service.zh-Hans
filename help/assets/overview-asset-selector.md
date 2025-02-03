@@ -4,9 +4,9 @@ description: 使用资产选择器在您的应用程序中搜索、查找和检�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 98%
 </script>
 ```
 
-在使用 `import maps`ESM CDN 版本&#x200B;**并支持** 的浏览器中：
+在使用 **ESM CDN 版本**&#x200B;带有 `import maps` 支持的浏览器中：
 
 ```
 <script type="module">
@@ -112,7 +112,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ### 隐藏/显示面板 {#hide-show-panel}
 
-要隐藏左侧导航中的文件夹，请单击&#x200B;**[!UICONTROL 隐藏文件夹]**&#x200B;图标。要撤消更改，请再次单击&#x200B;**[!UICONTROL 隐藏文件夹]**&#x200B;图标。
+要隐藏左侧导航中的文件夹，请单击 **[!UICONTROL 隐藏文件夹]**&#x200B;图标。要撤消更改，请再次单击 **[!UICONTROL 隐藏文件夹]**&#x200B;图标。
 
 ### 存储库切换器 {#repository-switcher}
 
@@ -127,7 +127,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 资产选择器还提供开箱即用的过滤器选项来细化您的搜索结果。可用过滤器如下：
 
 * **[!UICONTROL 状态]：** 包括 `all`、`approved`、`rejected` 或 `no status` 中的当前资产状态。
-* **[!UICONTROL 文件类型]：** 包括 `folder`、 `file`、 `images`、 `documents`或 `video`。
+* **[!UICONTROL 文件类型]：** 包括 `folder`、 `file`、 `images`、 `documents` 或 `video`。
 * **[!UICONTROL 过期状态]：** 根据到期时间提及资产。您可以选中 `[!UICONTROL Expired]` 复选框来过滤过期的资产；或设置资产的 `[!UICONTROL Expiration Duration]`，以根据资产的到期持续时间显示资产。当资产已过期或即将过期时，就会出现一个徽章来表示该资产已过期或即将过期。此外，您可以控制是否允许使用（或拖放）过期资产。详细了解[自定义过期资产](/help/assets/asset-selector-customization.md#customize-expired-assets)。默认情况下，对于将在未来 30 天内到期的资产，会显示&#x200B;**即将到期**&#x200B;徽章。但是，您可以使用 `expirationDate` 属性配置有效期限。
 
   >[!TIP]
@@ -159,10 +159,10 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 资产选择器允许您在四种不同的视图中查看资产：
 
-* ![列表视图](assets/do-not-localize/list-view.png) [!UICONTROL **列表视图**] 列表视图在单个列中显示可滚动的文件和文件夹。
+* ![列表视图](assets/do-not-localize/list-view.png) [!UICONTROL **列表视图**]&#x200B;列表视图在单个列中显示可滚动的文件和文件夹。
 * ![网格视图](assets/do-not-localize/grid-view.png) [!UICONTROL **网格视图**] 网格视图以行和列的网格显示可滚动的文件和文件夹。
 * ![库视图](assets/do-not-localize/gallery-view.png) [!UICONTROL **库视图**] 库视图以居中锁定的水平列表显示文件或文件夹。
-* ![瀑布视图](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布**&#x200B;视图]瀑布视图以Bridge的形式显示文件或文件夹。
+* ![瀑布视图](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布**&#x200B;视图]瀑布视图以桥的形式显示文件或文件夹。
 
 **概述图形**
 
