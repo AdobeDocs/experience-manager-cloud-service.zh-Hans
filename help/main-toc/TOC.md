@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
 workflow-type: tm+mt
-source-wordcount: '6020'
+source-wordcount: '6026'
 ht-degree: 99%
 
 ---
@@ -854,6 +854,8 @@ ht-degree: 99%
          + [创建和管理自适应表单的审核](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [自适应表单关键字](/help/forms/adaptive-forms-keywords.md)
       + [预览表单](/help/forms/previewing-forms.md)
+   + 交互式通信{#interactive-communocation}
++[交互式通信简介](/help/forms/introduction-to-interactive-communication.md)
    + 以 Form 为中心的工作流程 {#create-form-centric-workflows}
       + [以 Form 为中心的工作流简介](/help/forms/aem-forms-workflow.md)
       + [在工作流程中使用以表单为中心的步骤 + 步骤参考](/help/forms/aem-forms-workflow-step-reference.md)
