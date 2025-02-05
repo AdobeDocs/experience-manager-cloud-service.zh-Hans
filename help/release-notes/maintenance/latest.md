@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
+source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 89%
+source-wordcount: '887'
+ht-degree: 20%
 
 ---
 
@@ -16,69 +16,89 @@ ht-degree: 89%
 
 以下部分概述 Experience Manager as a Cloud Service 的当前维护版本的技术发行说明。
 
-## 版本 19149 {#19149}
+## 版本 19352 {#19352}
 
-下方总结了维护版本 19149（于 2025 年 1 月 21 日公开发布该版本）的持续改进。上一个维护版本是版本 18751。
+以下总结了维护版本19352的持续改进，该版本于2025年2月5日公开发布。 上一个维护版本是版本 19149。
 
-激活 2025.1.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+激活 2025.2.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增强功能 {#enhancements-19149}
+### 增强功能 {#enhancements-19352}
 
-* ASSETS-45286：显示下载归档异步作业的详细进度。
-* ASSETS-46296：支持资产选择器中的 Dynamic Media 模板。
-* ASSETS-44796：针对 DAM 异步资产作业触发资产事件。
+* Forms-13998：添加折叠组件。
+* Forms-17913：为单选按钮组添加卡片变体。
+* Forms-17333：在AEM表单提交中启用HTML电子邮件模板。
+* Forms-17702：允许在输出同步API中生成的PDF上传到Azure Blob Storage。
+* SITES-28282：带有通用编辑器的Edge Delivery：提供基本路径、站点名称和组织，作为任何页面的页面信息。
+* SITES-27055：带有通用编辑器的Edge Delivery：支持反向代理servlet中的查询参数。
+* SITES-26796：带有通用编辑器的Edge Delivery：支持分类电子表格的自定义列。
+* SITES-26087：带有通用编辑器的Edge Delivery：支持对电子表格进行CSV导出。
+* SITES-26265：带有通用编辑器的Edge Delivery：在配置UI中显示要与Edge Delivery集成的TA帐户。
+* SITES-20372：带有通用编辑器的Edge Delivery：为电子表格启用基本的MSM用例。
+* SITES-26681：带有通用编辑器的Edge Delivery：支持对作者上的分类电子表格使用？sheet=参数。
+* SITES-26479： [架构]内容片段模型计划发布状态终结点。
+* SITES-25944： [Livecopy概述]添加状态“继承受限的Live Copy为最新版本”。
+* SITES-28713： [V2]为内容刮刀添加结构化数据支持。
+* SITES-27896：在通知时自动打开CommentsTab。
+* SITES-26720：不应允许用户从资产选择器中选择整个收藏集。
+* SITES-27875：默认情况下，将容器中的任何可编辑内容设为可移动。
+* SITES-28340：深条通用编辑器服务插件。
+* SITES-26098：可避免在发布内容片段时发布引用的页面。
+* SITES-27789：支持DOM中的数据属性data-aue-component。
+* SITES-25997：增强变体以支持修改日期。
+* SITES-28023：用于远程资源引用（存储库+资源ID）的GraphQL输出。
+* SITES-26058：内容片段模型计划发布状态端点。
+* SITES-25108：用于UUID引用的模型迁移。
+* SITES-26630：多个内容片段的内容片段计划发布状态端点。
+* SITES-23432：改进删除引用功能。
+* SITES-25797：支持外部资源引用 — GraphQL。
+* SITES-17514：删除端点增强以取消发布内容片段。
+* SITES-14633：验证内容片段模型，在安装之前创建负载 — 试运行。
 
-### 修复的问题 {#fixed-issues-19149}
+### 修复的问题 {#fixed-issues-19352}
 
-* GRANITE-55074：确保在错误响应上设置 CORS 响应标头。
-* ASSETS-43755：与批量资产相关的可扩展性改进。
-* ASSETS-45399：创建资产实时副本后重定向到资产控制台。
-* ASSETS-45462：自定义文件夹缩略图的浏览器缓存问题。
-* ASSETS-46398：隐藏 DM 模板的下载和重新处理操作。
-* ASSETS-44484：重新保存连接资产配置时出现问题。
-* ASSETS-44122：异步复制资产作业在复制到当前文件夹时不会重命名目标文件夹。
-* ASSETS-44463：成功导出元数据后，下载 CSV 按钮不可见。
-* ASSETS-45134：移动带有目标标题的作业时会覆盖所有文件夹标题。
-* ASSETS-45137：通过资产视图批量上传时发生冲突。
-* ASSETS-45758：添加关系后，资产关系会显示一个无限忙碌/加载的动画。
-* ASSETS-44148：AEM 中的 NODE_MOVED 事件可能会导致日志中出现虚假 NPE。
-* ASSETS-28607：设置自定义视频缩略图时出现 JS 错误。
-* GRANITE-55781：改进 Adobe Developer Console 和 AEM 之间的群组同步。更多详情请参见[用户组和产品轮廓同步变更](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)。
-* GRANITE-55754：确保 SDK 启动脚本支持 Java 21。
-* GRANITE-54248：无法滚动浏览大型资产文件夹中的所有项目。
-* SCRNS-4597：搜索结果列表视图改进。
+* SITES-28415：带有通用编辑器的Edge Delivery：修复电子表格的“打开属性”按钮。
+* SITES-26669：使用通用编辑器的Edge Delivery：修复了在上传以UTF-8编码并以电子表格形式使用BOM的CSV文件时的问题。
+* SITES-26543：使用通用编辑器的Edge Delivery：修复没有模型渲染错误标记的空块。
+* SITES-26857：使用通用编辑器的Edge Delivery：修复了在基于文件的配置用户界面中可见的站点身份验证令牌。
+* SITES-26662：使用通用编辑器的Edge Delivery：修复区分大小写的批量元数据的问题。
+* SITES-28133：将Publish设为“预览”会导致内容在生产环境中可用。
+* SITES-27187：计划页面/资产激活，包括未发布引用的引用（实验性）。
+* SITES-27264： 2与Content-Fragment-LiveCopy-Creation相关的Selenium测试在主服务器上始终失败。
+* SITES-26559：将内容片段模型的查询固定到cqPageLucene索引。
+* SITES-24469：交互式元素无法通过键盘访问。
+* SITES-24518：“父引用”表格中的“名称”和“模型”按钮不可使用键盘。
+* SITES-27937：更新模型后，UISchema约束设置为null。
+* SITES-27852：模型UISchema缺少分类。
+* SITES-27904：完整投影的列表/搜索内容片段模型中缺少MetadataSchema。
+* SITES-26827：列出片段最终会陷入无限循环。
+* SITES-27678： [性能]防止不必要地获取_references。
+* SITES-27589：具有多个内容/片段引用字段的内容片段模型的UUID升级失败。
+* SITES-26679：取消发布内容片段模型应仅验证已发布的引用。
+* SITES-26666：referencesTree和引用端点返回不同的结果。
+* SITES-26499：标记字段的值在GET片段中的顺序错误，PATCH会随机排列这些顺序。
+* SITES-26585：修复架构中的小描述错误。
+* SITES-26647：对非管理员用户而言，删除端点和UnpublishFragments引用验证可能会失败。
+* SITES-26458： [搜索内容片段模型]按复制状态修复筛选。
+* SITES-23513： [内容片段模型编辑器]对“片段引用” — “允许的内容片段模型”属性验证失败。
+* SITES-26575：从预览中取消发布片段应更新previewStatus。
+* SITES-26571：启用FT_SITES-12435时，无法保存页面引用。
+* SITES-26660：当@ContentType为“字符串”类型时，内容片段版本比较可能会中断。
+* SITES-26626：数字和布尔字段上缺少customErrorMessage。
+* SITES-26268：如果在创建片段时引用无效，则返回错误状态代码。
 
-
-### 已知问题 {#known-issues-19149}
+### 已知问题 {#known-issues-19352}
 
 无。
 
-### 已弃用的功能和 API {#deprecated-19149}
+### 已弃用的功能和 API {#deprecated-19352}
 
 AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删除的功能和 API](/help/release-notes/deprecated-removed-features.md) 文档中有详细说明。
 
-#### 用户组和产品轮廓同步变更
+### 安全修复 {#security-19352}
 
-在使用 Adobe Admin Console 进行权限管理时，不得使用以下群组，因为它们将不再与 AEM 同步：
-* 以 _GROUP_NAME_SUFFIX 结尾的 AEM 组。
-* 来自其他环境、程序或产品的产品轮廓。
+AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 36 个已发现的漏洞，增强了我们对强大系统保护的承诺。
 
-更多详细信息请查看[用户组和产品轮廓同步变更](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)。
-
-#### 弃用SPA编辑器 {#deprecate-spa-editor}
-
-[从2025.1.0版开始的新项目已弃用SPA编辑器](/help/implementing/developing/hybrid/introduction.md)。现有项目仍支持SPA编辑器，但不应将其用于新项目。
-
-在AEM中管理Headless内容的首选编辑器包括：
-
-* [用于可视化编辑的通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)。
-* [用于基于表单的编辑的内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)。
-
-### 安全修复 {#security-19149}
-
-AEM as a Cloud Service 致力于优化您平台的安全性和性能。此维护版本解决了 4 个已发现的漏洞，增强了我们对强大系统保护的承诺。
-
-### 嵌套的技术 {#embedded-tech-19149}
+### 嵌套的技术 {#embedded-tech-19352}
 
 | 技术 | 版本 | 链接 |
 |---|---|---|
