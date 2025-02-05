@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
+exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
+source-git-commit: 32558fc6cd0e325132230b09f7f00a0dfaf7af0d
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 2%
+source-wordcount: '366'
+ht-degree: 3%
 
 ---
-
 
 # 交互式通信
 
@@ -45,11 +45,22 @@ ht-degree: 2%
 | **云集成** | 直接在AEM Forms中编辑文档as a Cloud Service |
 
 
-## 快速入门
+## 入门培训
 
 1. **请求访问**：从您的官方地址发送电子邮件[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 2. **管理员安装程序**：Adobe将启用访问权限并提供管理员权限
 3. **开始创建**：使用我们的[直观编辑器](https://video.tv.adobe.com/v/3444094/)从您的第一封通信开始。
+
+## 常见问题解答
+
+**问：能否将现有的XDP导入交互式通信编辑器中？**
+可以，您可以导入现有XDP并将其用作起点。 导入过程中会突出显示任何不支持的功能。
+
+**问：交互式通信编辑器是否可用于内部部署？**
+不需要，该编辑器仅可用于Formsas a Cloud Service部署。
+
+
+
 
 
 
@@ -128,4 +139,3 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 * 交互式通信编辑器的演练
 * 创建片段
 * 预览和测试通信
-
