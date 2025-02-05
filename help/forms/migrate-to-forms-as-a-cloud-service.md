@@ -9,7 +9,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 1c6ab84a7fadb543cc8e28424efe634627923e70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 1%
@@ -132,7 +132,7 @@ ht-degree: 1%
 从AEM Forms 6.5迁移到云服务时，您可以在以下位置找到特定于AEM Forms的资源：
 
 * **自适应Forms**：您可以在`/content/dam/formsanddocuments/`和`/content/forms/af`找到自适应表单。 例如，对于标题为WKND注册的自适应表单，请添加路径`/content/dam/formsanddocuments/wknd-registration`和`/content/forms/af/wknd-registration`。
-* **表单数据模型**：您可以在`/content/dam/formsanddocuments-fdm`找到所有表单数据模型(FDM)。 例如：`/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`。
+* **表单数据模型**：您可以在`/content/dam/formsanddocuments-fdm`找到所有表单数据模型(FDM)。 例如 `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`。
 
 * **客户端库**：客户端库的默认路径为`/etc/clientlibs/fd/theme`。
 

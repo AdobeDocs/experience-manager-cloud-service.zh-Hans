@@ -4,7 +4,7 @@ description: 了解在创建页面、定义其初始内容、结构化内容、�
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 4%
@@ -22,7 +22,7 @@ ht-degree: 4%
 * 可编辑的模板允许作者创建和使用模板。
 * 可编辑模板可用于创建可通过以下两种方式编辑的页面
    * [页面编辑器](/help/sites-cloud/authoring/page-editor/templates.md)和
-   * [Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md)
+   * [通用编辑器](/help/sites-cloud/authoring/universal-editor/templates.md)
 
 用于创建可通过通用编辑器编辑的页面的页面模板使用可编辑模板功能的有限子集。 因此，本文档的其余部分侧重于用于创建可通过页面编辑器编辑的页面的可编辑模板。
 
@@ -467,7 +467,7 @@ GITHUB上的代码
 
 ### 布局 {#layout}
 
-在[编辑模板时，您可以定义布局](/help/sites-cloud/authoring/page-editor/templates.md)，这会使用[标准响应布局，](/help/sites-cloud/administering/responsive-layout.md)，内容作者可以在页面上对该布局进行[配置。](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+在[编辑模板时，您可以定义布局](/help/sites-cloud/authoring/page-editor/templates.md)，这会使用[标准响应布局](/help/sites-cloud/administering/responsive-layout.md)，内容作者可以在页面上配置该布局[](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。
 
 ### 内容策略 {#content-policies}
 

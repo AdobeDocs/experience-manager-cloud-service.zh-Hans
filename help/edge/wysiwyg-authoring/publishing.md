@@ -4,10 +4,10 @@ description: 了解内容发布如何与 Edge Delivery Services 配合使用，�
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 来自 AEM 的发布流程 {#publishing-flow}
 
-使用通用编辑器创作 AEM 内容时，发布任务就像单击通用编辑器中的&#x200B;**发布**&#x200B;按钮一样简单。请参阅文档[使用通用编辑器发布内容。](/help/sites-cloud/authoring/universal-editor/publishing.md)
+使用通用编辑器创作 AEM 内容时，发布任务就像单击通用编辑器中的&#x200B;**发布**&#x200B;按钮一样简单。请参阅文档[使用通用编辑器发布内容](/help/sites-cloud/authoring/universal-editor/publishing.md)。
 
 发布时的信息流程如下。当作者开始发布时，此流程就会自动进行，并会在此处进行说明以供参考。
 

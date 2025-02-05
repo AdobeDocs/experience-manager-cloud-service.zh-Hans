@@ -4,7 +4,7 @@ description: 了解在 AEM as a Cloud Service 上进行开发的准则，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9c684e3a82353c9e241efc9ee1f3bed694d8635a
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 3%
@@ -183,7 +183,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 >
 
 >[!NOTE]
->一些客户将可以选择为AEM Cloud Service Developer Console试用经过改进的体验。 有关详细信息，请参阅[本文](/help/implementing/developing/introduction/aem-developer-console.md)。]
+>一些客户将可以选择为AEM Cloud Service Developer Console试用经过改进的体验。 有关详细信息，请参阅[本文](/help/implementing/developing/introduction/aem-developer-console.md)。
 
 客户可以在创作层的开发环境中访问CRXDE Lite，但不能在暂存或生产环境中访问。 运行时无法写入不可变存储库(`/libs`， `/apps`)，因此尝试这样做会导致错误。
 

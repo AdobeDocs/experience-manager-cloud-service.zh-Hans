@@ -5,7 +5,7 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2518'
 ht-degree: 52%
@@ -105,7 +105,7 @@ ht-degree: 52%
 
 当全屏编辑器（即多行文本）打开时，以下操作也可用（适用于所有[格式](#formats)）
 
-* 选择[格式](#formats)（[富文本](#rich-text)、[纯文本、](#plain-text) [Markdown](#markdown)）
+* 选择[格式](#formats) （[富文本](#rich-text)，[纯文本](#plain-text)，[Markdown](#markdown)）
 
 * [上传内容](#uploading-content)
 

@@ -4,10 +4,10 @@ description: 了解如何扩展多站点管理器的功能。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 >[!TIP]
 >
->本页在文件[重用内容：多站点管理器](/help/sites-cloud/administering/msm/overview.md)提供的上下文中更容易理解。
+>在文档[重用内容：多站点管理器](/help/sites-cloud/administering/msm/overview.md)的上下文中更容易理解此页面。
 
 >[!CAUTION]
 >
@@ -255,7 +255,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    * **`artifactName`**：`MyLiveActionFactory package`
    * **`packageGroup`**：`myPackages`
 
-1. 启动 Eclipse 并[导入 Maven 项目](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)。
+1. 启动Eclipse并[导入Maven项目](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)。
 
 ### 将依赖项添加到 POM 文件。 {#add-dependencies-to-the-pom-file}
 

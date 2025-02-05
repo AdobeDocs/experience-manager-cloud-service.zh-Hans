@@ -4,10 +4,10 @@ description: 了解如何设置新项目和管道以部署加载项。
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 Adobe Experience Manager (AEM) 参考演示加载项历程的上一个文档[了解参考演示加载项安装](installation.md)中，您已了解参考演示加载项安装过程的工作原理，并说明了各个部分的协作方式。您现在应：
+在Adobe Experience Manager (AEM)参考演示加载项历程的上一个文档[了解参考演示加载项安装](installation.md)中，您已了解参考演示加载项安装过程的工作原理，并说明了各个部分的协作方式。 您现在应：
 
 * 基本了解 Cloud Manager。
 * 了解管道如何将内容和配置交付给 AEM。

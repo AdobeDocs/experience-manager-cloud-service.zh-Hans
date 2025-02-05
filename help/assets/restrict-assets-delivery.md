@@ -3,10 +3,10 @@ title: 使用具有OpenAPI功能的Dynamic Media限制资源交付
 description: 了解如何使用OpenAPI功能限制资源交付。
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 2%
+source-wordcount: '1150'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 2%
 
 >[!AVAILABILITY]
 >
->Dynamic Media with OpenAPI功能指南现在以PDF格式提供。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>具有 OpenAPI 功能的 Dynamic Media 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
 >
->[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Experience Manager中的中央资产治理允许DAM管理员或品牌管理员通过OpenAPI功能管理对Dynamic Media可用资产的访问。 他们可以通过在Identity Management AEM as a Cloud Service System (IMS)Adobe服务上的资源上配置某些元数据，将已批准的资源（精确到单个资源）限制为选定的[元数据用户或组](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy)。
 

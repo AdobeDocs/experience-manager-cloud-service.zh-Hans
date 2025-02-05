@@ -4,20 +4,20 @@ description: 了解如何使用 Cloud Manager 创建您的首批环境。
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # 创建环境 {#create-environments}
 
-在[入门历程的这一可选部分中，](overview.md) 您将了解如何使用 Cloud Manager 创建第一个环境。
+在[入门培训历程](overview.md)的这一可选部分中，您将了解如何使用Cloud Manager创建首批环境。
 
 ## 目标 {#objective}
 
-在阅读了本次入门历程的前一篇文档[创建程序](create-program.md)后，您现在拥有了自己的 Cloud Manager 程序。 现在您可以了解如何使用 Cloud Manager 为该程序创建您的首批环境。
+在阅读了本次入门培训历程的前一篇文档[创建程序](create-program.md)后，您现在拥有了自己的Cloud Manager程序。 现在您可以了解如何使用 Cloud Manager 为该程序创建您的首批环境。
 
 阅读本文档后，您将：
 

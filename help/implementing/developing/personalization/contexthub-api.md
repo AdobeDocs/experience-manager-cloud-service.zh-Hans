@@ -4,7 +4,7 @@ description: 将ContextHub组件添加到页面后，脚本即可使用ContextHu
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -483,7 +483,7 @@ ContextHub.Store.JSONPStore扩展[ContextHub.Store.Core](#contexthub-store-core)
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore`扩展[ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore)，以便继承该类的所有函数。 但是，根据ContextHub持久性的配置，将保留从JSONP服务检索的数据。 （请参阅[持久性模式：](adding-contexthub.md#persistence-modes)）
+`ContextHub.Store.PersistedJSONPStore`扩展[ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore)，以便继承该类的所有函数。 但是，根据ContextHub持久性的配置，将保留从JSONP服务检索的数据。 （请参阅[持久性模式](adding-contexthub.md#persistence-modes)）
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
@@ -1033,7 +1033,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(tree， key， value) {#setitem-tree-key-value}
 
-将键/值对添加到对象副本的数据树中。 有关数据树的信息，请参阅[持久性。](contexthub.md#persistence)
+将键/值对添加到对象副本的数据树中。 有关数据树的信息，请参阅[持久性](contexthub.md#persistence)。
 
 ##### 参数 {#parameters-setitem-2}
 

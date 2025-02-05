@@ -4,10 +4,10 @@ description: 了解 Cloud Manager 以及如何使用它安装加载项。
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -104,7 +104,7 @@ AEM 参考演示加载项包括多个模板，可满足各种测试和演示需�
 * 了解管道如何将内容和配置交付给 AEM。
 * 了解如何通过单击几下来使用模板创建已预填充演示内容的站点。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，查看[创建项目和管道](create-program.md)，您将了解如何设置新项目和管道以部署加载项。
+在此知识的基础上继续您的AEM快速站点创建历程，方法是查看[创建项目和管道](create-program.md)，了解如何设置新项目和管道以部署加载项。
 
 ## 其他资源 {#additional-resources}
 

@@ -4,7 +4,7 @@ description: 对于自适应Forms，除了现成可用的语言之外，您还�
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 3%
@@ -56,7 +56,7 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 #### 1.克隆存储库 {#clone-the-repository}
 
 1. 在命令行中，导航到要克隆FormsCloud Service存储库的位置。
-1. 执行[从Cloud Manager检索到的命令。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)它类似于`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。
+1. 执行[从Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)检索到的命令。 它类似于`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。
 1. 使用Git用户名和密码克隆存储库。
 1. 在首选编辑器中打开克隆的FormsCloud Service存储库文件夹。
 

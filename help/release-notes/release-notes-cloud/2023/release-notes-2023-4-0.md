@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.4.0 版�
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 100%
@@ -122,7 +122,7 @@ ht-degree: 100%
 
 ## Cloud Manager {#cloud-manager}
 
-您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 月度发行版本的完整列表。
+您可以在[此处](/help/implementing/cloud-manager/release-notes/current.md)找到 Cloud Manager 每月发布的完整列表。
 
 ## 迁移工具 {#migration-tools}
 

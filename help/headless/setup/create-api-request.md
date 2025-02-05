@@ -4,10 +4,10 @@ description: 了解如何使用 GraphQL API 实现内容片段的 Headless 投�
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 什么是 GraphQL 和 Assets REST API？ {#what-are-the-apis}
 
-[现在您已经创建了一些内容片段，](create-content-fragment.md)您可以使用 AEM 的 API 以 Headless 的方式投放它们。
+[现在您已创建了一些内容片段](create-content-fragment.md)，可以使用AEM API无头投放它们。
 
 * [GraphQL API](/help/headless/graphql-api/content-fragments.md) 允许您创建请求来访问和投放内容片段。此 API 提供了最可靠的一组功能用于查询和使用内容片段内容。
    * 若要使用该 API，[定义并启用 AEM](/help/headless/graphql-api/graphql-endpoint.md) 中的端点以及安装的 [GraphiQL 接口（如有必要）。](/help/headless/graphql-api/graphiql-ide.md)
@@ -37,7 +37,7 @@ ht-degree: 100%
 1. 选择&#x200B;**创建**。
 1. 此时，**创建新 GraphQL 端点**&#x200B;对话框会打开。在其中可以指定：
    * **名称**：端点的名称，您可以输入任意文本。
-   * **使用**&#x200B;提供的 GraphQL 模式：使用下拉菜单选择所需的配置。
+   * **使用**&#x200B;提供的 GraphQL 架构：使用下拉菜单选择所需的配置。
 1. 选择&#x200B;**创建**&#x200B;来确认。
 1. 在控制台中，此时会根据之前创建的配置显示一条&#x200B;**路径**。该路径用于执行 GraphQL 查询。
 

@@ -5,10 +5,10 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 如果您是只负责站点主题自定义的前端开发人员，则无需了解 AEM 的设置方式，可以直接跳至本文档的[目标](#objective)部分。
 
-如果您还担任 Cloud Manager 或 AEM 管理员以及前端开发人员的角色，您已在 AEM 快速站点创建历程的上一个文档[向前端开发人员授予访问权限](grant-access.md)中了解如何载入前端开发人员，以便他们能够访问 Git 存储库，现在应知道：
+如果您还担任Cloud Manager或AEM管理员以及前端开发人员的角色，您已在AEM快速站点创建历程的上一个文档[向前端开发人员授予访问权限](grant-access.md)中了解如何载入前端开发人员，以便他们能够访问Git存储库，现在应知道：
 
 * 如何将前端开发人员添加为用户。
 * 如何向前端开发人员授予所需的角色。
@@ -114,7 +114,7 @@ Cloud Manager 管理员会将您作为 Cloud Manager 用户载入。您应该已
 * 从较高层面了解什么是 Cloud Manager。
 * 已检索您的凭据来访问 AEM Git，以便您能提交自定义项。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[自定义站点主题](customize-theme.md)，其中您将了解如何使用实时 AEM 内容构建、自定义和测试站点主题。
+在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档[自定义站点主题](customize-theme.md)，其中您将了解如何使用实时AEM内容构建、自定义和测试站点主题。
 
 ## 其他资源 {#additional-resources}
 

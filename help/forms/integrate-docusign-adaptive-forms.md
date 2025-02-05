@@ -4,7 +4,7 @@ description: 了解如何将DocuSign与自适应表单一起使用来收集电�
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 7%
@@ -185,7 +185,7 @@ AEM Formsas a Cloud Service为DocuSign提供了一个自定义提交操作。 �
 
    - 如果没有自定义表单模板，请选择&#x200B;**[!UICONTROL 生成记录文档]**&#x200B;选项。 使用选项时，发送以供签名的文档显示自适应表单的所有字段。
 
-1. 选择&#x200B;**[!UICONTROL 创建。]**&#x200B;已创建启用签名的自适应表单。 您可以将[!DNL DocuSign]字段添加到表单并发送以供签名。
+1. 选择&#x200B;**[!UICONTROL 创建]**。将创建一个支持签名的自适应表单。 您可以将[!DNL DocuSign]字段添加到表单并发送以供签名。
 1. 在编辑模式下打开自适应表单。 在&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL 表单容器]**，然后选择![配置](assets/configure-icon.svg)。
 
 1. 在&#x200B;**[!UICONTROL 提交]**&#x200B;部分中，从&#x200B;**[!UICONTROL 提交操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 使用DocuSign电子签名提交]**。

@@ -4,10 +4,10 @@ description: 了解如何将 AEM 创作实例上使用的页面路径映射到�
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 * 它会映射并创建 AEM 创作实例上使用的页面路径与您网站上使用的公共页面路径之间的关系。
 * 它会控制哪些内容（页面、工作表、资产等）发布到 Edge Delivery Services。
 
-必须根据项目的内容和 URL 结构为每个项目单独配置路径映射。AEM 在内容发布期间以及在[通用编辑器](/help/sites-cloud/authoring/universal-editor/navigation.md)中编辑内容时会使用它。
+必须根据项目的内容和 URL 结构为每个项目单独配置路径映射。AEM在内容发布期间以及在[通用编辑器](/help/sites-cloud/authoring/universal-editor/navigation.md)中编辑内容时使用该编辑器。
 
 ## 配置格式 {#configuration-format}
 

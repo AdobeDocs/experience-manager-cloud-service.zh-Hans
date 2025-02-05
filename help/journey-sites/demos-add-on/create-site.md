@@ -4,10 +4,10 @@ description: 基于预配置的模板库在 AEM 中创建演示站点。
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM 参考演示加载项历程的上一个文档[创建项目](create-program.md)中，您执行了第一个配置步骤来创建项目以进行测试并使用管道来部署加载项内容。您现在应：
+在AEM参考演示加载项历程的上一个文档[创建项目](create-program.md)中，您执行了第一个配置步骤来创建项目以进行测试并使用管道来部署加载项内容。 您现在应：
 
 * 了解如何使用 Cloud Manager 创建项目。
 * 了解如何为新项目激活参考演示加载项。
@@ -105,8 +105,8 @@ ht-degree: 100%
 
 您现在可以使用加载项内容测试 AEM 的功能。为您提供了两个选项以继续历程：
 
-* 如果要完全演示和测试 AEM Screens 内容，请确保已如以前所述基于 **We.Cafe 站点模板**&#x200B;部署了站点，然后继续[为演示站点启用 AEM Screens](screens.md)。
-* 如果只想演示 Sites 内容，请继续[管理您的演示站点](manage.md)，其中您将了解可用于帮助您管理演示站点的工具以及如何删除它们。
+* 如果要完全演示和测试AEM Screens内容，请确保已部署基于&#x200B;**We.Cafe站点模板**&#x200B;的站点（如前所述），并继续[为演示站点启用AEM Screens](screens.md)。
+* 如果仅需演示Sites内容，请继续[管理您的演示站点](manage.md)，了解可用于帮助您管理演示站点的工具以及如何删除它们。
 
 ## 其他资源 {#additional-resources}
 

@@ -5,10 +5,10 @@ exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM Headless 翻译历程的上一个文档[翻译内容](configure-connector.md)中，您已了解如何使用 AEM 翻译项目来翻译 Headless 内容。您现在应：
+在AEM headless翻译历程的上一个文档[翻译内容](configure-connector.md)中，您已了解如何使用AEM翻译项目来翻译headless内容。 您现在应：
 
 * 了解什么是翻译项目。
 * 能够创建新的翻译项目。
@@ -119,7 +119,7 @@ ht-degree: 100%
 
 您可能会发现，新信息卡上列出的统计数据（资源和内容片段数量）有所不同。这是因为 AEM 识别自上次翻译以来发生变化的内容，并且仅包括必须翻译的内容。这包括已更新内容的重新翻译以及新内容的首次翻译。
 
-从此时起，您可以[像处理初始翻译一样启动和管理您的翻译作业。](translate-content.md#using-translation-project)
+从此时起，您[开始并管理您的翻译作业，就像您处理原始](translate-content.md#using-translation-project)一样。
 
 ### 更新手动创建的翻译项目 {#updating-manual-project}
 
@@ -141,15 +141,15 @@ ht-degree: 100%
    ![选择目标语言](assets/select-target-language.png)
 
 1. 设置新翻译作业的目标语言后，选择作业信息卡底部的省略号按钮以查看作业的详细信息。
-1. 作业在首次创建时为空。通过点按或单击&#x200B;**添加**&#x200B;按钮并使用路径浏览器将内容添加到作业，[就像您最初创建翻译项目时所做的那样。](translate-content.md##manually-creating)
+1. 作业在首次创建时为空。通过点按或单击&#x200B;**添加**&#x200B;按钮并使用路径浏览器[将内容添加到作业，就像您最初创建翻译项目](translate-content.md##manually-creating)时所做的那样。
 
 >[!TIP]
 >
 >路径浏览器的功能强大的过滤器在查找已更新的内容时同样有用。
 >
->可在[其他资源](#additional-resources)部分中详细了解路径浏览器。
+>您可以在[其他资源部分](#additional-resources)中了解有关路径浏览器的更多信息。
 
-从此时起，您可以[像处理初始翻译一样启动和管理您的翻译作业。](translate-content.md#using-translation-project)
+从此时起，您[开始并管理您的翻译作业，就像您处理原始](translate-content.md#using-translation-project)一样。
 
 ## 历程结束？ {#end-of-journey}
 

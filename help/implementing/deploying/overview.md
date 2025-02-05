@@ -4,10 +4,10 @@ description: 了解部署到 AEM as a Cloud Service 的基础知识和最佳实�
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -112,7 +112,7 @@ GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)上
    * 上下文感知配置（`/conf` 下的任何内容）（添加、修改、删除）
    * 脚本（包可以在包安装的安装过程的各个阶段触发安装挂钩。有关安装挂钩的信息，请参阅 [Jackrabbit filevault 文档](https://jackrabbit.apache.org/filevault/installhooks.html)。AEM CS 目前使用 Filevault 版本 3.4.0，它仅允许管理员用户、系统用户和管理员组的成员安装挂钩）。
 
-可以通过在 `/apps` 下的 install.author 或 install.publish 文件夹中嵌入包，来仅允许创作或发布可变内容安装。在 AEM 6.5 中进行了重构以反映此分离，可以在 [AEM 6.5 文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中找到有关推荐的项目重构的详细信息。
+可以通过在 `/apps` 下的 install.author 或 install.publish 文件夹中嵌入包，来仅允许创作或发布可变内容安装。反映此分隔的重构已在AEM 6.5中完成，有关建议的项目重构的详细信息可在[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中找到。
 
 >[!NOTE]
 >内容包将部署到所有环境类型（开发、暂存、生产）。无法将部署限于特定环境。施加此限制以确保能够选择自动执行的测试运行。特定于环境的内容需要通过[包管理器](/help/implementing/developing/tools/package-manager.md)手动安装。
@@ -121,7 +121,7 @@ GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)上
 
 必须确认任何包含的第三方包与 AEM as a Cloud Service 兼容，否则包含此包会导致部署失败。
 
-如上所述，拥有现有代码库的客户应遵守 [AEM 6.5 文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中所述的 6.5 存储库更改所需的存储库重构实践。
+如上所述，具有现有代码库的客户应遵循[AEM 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中所述的6.5存储库更改所需的存储库重构练习。
 
 ## Repoinit {#repoinit}
 

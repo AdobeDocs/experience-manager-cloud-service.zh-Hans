@@ -2,10 +2,10 @@
 title: Content Hub 常见问题 (FAQ)
 description: 获取有关 Content Hub 的一些最常见问题 (FAQ) 的答复。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: a509cb6b2d6fea0d8c53c570c46b1feef2a15191
-workflow-type: ht
-source-wordcount: '1113'
-ht-degree: 100%
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Content Hub 是 Adobe 提供和维护的一项功能，它没有任何需要通�
 * Admin Console 管理员将[一些选定的用户](/help/assets/deploy-content-hub.md#onboard-content-hub-users)添加到 Content Hub 产品配置文件，以便他们可以开始评估。
 * 评估完成后，作者实例中的 AEM 用户可以移除测试资产的审批，批准 Content Hub 的生产资产，然后 Admin Console 管理员可以添加所有需要访问 Content Hub 和批准内容的用户。恭喜，您的 Content Hub 现已上线。
 
-在沙盒程序及其作者生产环境中，有一个早期访问 Content Hub 的计划。请参阅[沙盒程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)，了解更多详细信息。若要了解详情有关早期访问计划的更多信息，请联系您的 Adobe 帐户团队。
+在沙盒程序及其作者生产环境中，有一个早期访问 Content Hub 的计划。请参阅[沙盒程序简介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)，了解更多详细信息。要了解有关抢先体验计划的更多信息，请联系您的Adobe客户团队。
 
 目前，Content Hub 尚不适用于非生产环境（阶段和开发）。Assets Ultimate 的阶段/开发环境预计将于 2025 年 3 月可用。
 

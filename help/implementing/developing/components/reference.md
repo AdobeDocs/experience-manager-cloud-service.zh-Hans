@@ -4,7 +4,7 @@ description: 有关组件及其结构的详细信息的开发人员参考指南
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -92,7 +92,7 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
 
 组件的定义可细分如下：
 
-* AEM组件基于[Sling.](https://sling.apache.org/documentation.html)
+* AEM组件基于[Sling](https://sling.apache.org/documentation.html)。
 * AEM组件位于`/libs/core/wcm/components`下。
 * 项目/站点特定的组件位于`/apps/<myApp>/components`下。
 * AEM标准组件定义为`cq:Component`并具有关键元素：
@@ -105,32 +105,32 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
 * **根节点**：
    * `<mycomponent> (cq:Component)` — 组件的层次结构节点。
 * **重要属性**：
-   * `jcr:title` — 组件标题；例如，当组件在[组件浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)和[组件控制台](/help/sites-cloud/authoring/components-console.md)中列出时用作标签
-   * `jcr:description` — 组件的描述；在组件浏览器和组件控制台中用作鼠标悬停提示
-   * 有关详细信息，请参阅[组件图标](#component-icon)部分
+   * `jcr:title` — 组件标题；例如，当组件在[组件浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)和[组件控制台](/help/sites-cloud/authoring/components-console.md)中列出时用作标签。
+   * `jcr:description` — 组件的描述；在组件浏览器和组件控制台中用作鼠标悬停提示。
+   * 有关详细信息，请参阅[组件图标](#component-icon)部分。
 * **重要子节点**：
-   * `cq:editConfig (cq:EditConfig)` — 定义组件的编辑属性，并使组件显示在组件浏览器中
+   * `cq:editConfig (cq:EditConfig)` — 定义组件的编辑属性，并使组件显示在组件浏览器中。
       * 如果组件有对话框，它会自动显示在组件浏览器或Sidekick中，即使cq：editConfig不存在也是如此。
    * `cq:childEditConfig (cq:EditConfig)` — 控制未定义自身`cq:editConfig`的子组件的作者UI方面。
    * `cq:dialog (nt:unstructured)` — 此组件的对话框。 定义允许用户配置组件和/或编辑内容的界面。
-   * `cq:design_dialog (nt:unstructured)` — 此组件的设计编辑
+   * `cq:design_dialog (nt:unstructured)` — 正在编辑此组件的设计。
 
 #### 组件图标 {#component-icon}
 
 组件的图标或缩写在开发人员创建组件时通过组件的JCR属性定义。 这些属性的计算顺序如下，并且使用找到的第一个有效属性。
 
-1. `cq:icon` — 字符串属性，指向要在组件浏览器中显示的[Coral UI库](https://opensource.adobe.com/coral-spectrum/examples/#icon)中的标准图标
+1. `cq:icon` — 字符串属性，指向要在组件浏览器中显示的[Coral UI库](https://opensource.adobe.com/coral-spectrum/examples/#icon)中的标准图标。
    * 使用Coral图标的HTML属性的值。
-1. `abbreviation` — 用于自定义组件浏览器中组件名称的缩写的字符串属性
+1. `abbreviation` — 用于自定义组件浏览器中组件名称的缩写的字符串属性。
    * 缩写应限制为两个字符。
    * 提供空字符串将从`jcr:title`属性的前两个字符生成缩写。
-      * 例如，“Im”表示“图像”
+      * 例如，“Im”表示“图像”。
       * 本地化的标题用于构建缩写。
    * 仅在该组件具有`abbreviation_commentI18n`属性（随后用作翻译提示）时才翻译缩写。
-1. `cq:icon.png`或`cq:icon.svg` — 此组件的图标，显示在组件浏览器中
+1. `cq:icon.png`或`cq:icon.svg` — 此组件的图标，显示在组件浏览器中。
    * 20 x 20像素是标准组件的图标大小。
       * 较大的图标会被缩小（客户端）。
-   * 推荐的颜色为rgb(112， 112， 112) > #707070
+   * 推荐的颜色为rgb(112， 112， 112) > #707070。
    * 标准组件图标的背景透明。
    * 仅支持`.png`和`.svg`文件。
    * 如果通过Eclipse插件从文件系统导入，则文件名需要以`_cq_icon.png`或`_cq_icon.svg`形式转义。
@@ -172,7 +172,7 @@ AEM组件的结构强大而灵活。 主要工作内容包括：
 | `cq:isContainer` | `Boolean` | 该指示组件是否为容器组件，因此可以包含其他组件，例如段落系统。 |
 | `cq:dialog` | `nt:unstructured` | 这是组件的“编辑”对话框的定义。 |
 | `cq:design_dialog` | `nt:unstructured` | 这是组件的“设计”对话框的定义。 |
-| `cq:editConfig` | `cq:EditConfig` | 这将定义组件的[编辑配置。](#edit-behavior) |
+| `cq:editConfig` | `cq:EditConfig` | 这会定义组件](#edit-behavior)的[编辑配置。 |
 | `cq:htmlTag` | `nt:unstructured` | 这会返回添加到周围HTML标记的其他标记属性。 允许向自动生成的div添加属性。 |
 | `cq:noDecoration` | `Boolean` | 如果为true，则组件不会使用自动生成的div和css类渲染。 |
 | `cq:template` | `nt:unstructured` | 如果找到，则在从组件浏览器添加组件时，此节点将用作内容模板。 |
@@ -256,7 +256,7 @@ Content not found
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-更具体地说，Granite UI提供了一系列字段组件，这些组件适合在对话框中使用，或者更一般地说是在[表单中使用。](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+更具体地说，Granite UI提供了一系列字段组件，这些组件适合在对话框中使用，或者更一般地说是在[表单](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)中使用。
 
 创建资源类型后，可以通过在对话框中添加新节点来实例化字段，其中属性`sling:resourceType`引用您刚刚引入的资源类型。
 
@@ -339,7 +339,7 @@ AEM中有许多现有配置。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
 
 在上一个示例中，`isEmpty`是一个变量，仅当组件没有内容并且作者不可见时才会为真。
 
-为避免重复，Adobe建议组件的实施者对这些占位符使用HTL模板，[类似于核心组件提供的占位符。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+为避免重复，Adobe建议组件的实施者为这些占位符使用HTL模板，例如[由核心组件提供的占位符](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)。
 
 然后，通过下面的HTL行完成上一个链接中的模板使用：
 
@@ -350,7 +350,7 @@ AEM中有许多现有配置。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
 
 在上一个示例中，`model.text`是变量，仅当内容包含内容且可见时才会为真。
 
-可在核心组件[中看到此模板的示例用法，例如在标题组件中。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+可在核心组件[中看到此模板的示例用法，例如在标题组件](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)中。
 
 ### 使用cq：EditConfig子节点进行配置 {#configuring-with-cq-editconfig-child-nodes}
 

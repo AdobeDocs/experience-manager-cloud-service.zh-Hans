@@ -4,7 +4,7 @@ description: 外部化器是一种OSGi服务，允许您以编程方式将资源
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->与为AEM as a Cloud Service应用任何[OSGi配置时一样，](/help/implementing/deploying/overview.md#osgi-configuration)应在本地开发人员实例上执行以下步骤，然后将其提交到项目代码以进行部署。
+>与为AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration)应用任何[OSGi配置时一样，应在本地开发人员实例上执行以下步骤，然后提交到项目代码以进行部署。
 
 要为Externalizer服务定义域映射，请执行以下操作：
 

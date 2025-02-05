@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 2314ad30ea31b49d832ce0fdf729420e0ee70e0c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 65%
+ht-degree: 53%
 
 ---
 
@@ -18,7 +18,7 @@ AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
 
 | 属性 | 描述 |
 |---|---|
@@ -29,7 +29,7 @@ AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business
 
 以下过程将创建 Microsoft Translator 配置。
 
-1. 在[导航面板中，](/help/sites-cloud/authoring/basic-handling.md#first-steps)选择&#x200B;**工具** > **Cloud Service** > **翻译Cloud Service**。
+1. 在[导航面板](/help/sites-cloud/authoring/basic-handling.md#first-steps)中，选择&#x200B;**工具** > **Cloud Service** > **翻译Cloud Service**。
 1. 导航到要创建配置的位置。 通常它在您的站点根中，也可以是全局默认配置。
 1. 选择&#x200B;**创建**&#x200B;按钮。
 1. 定义您的配置。

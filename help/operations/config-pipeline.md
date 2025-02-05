@@ -4,9 +4,9 @@ description: 了解如何使用配置管道来部署各种配置AEM as a Cloud S
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
 
 ## 创建和管理配置管道 {#creating-and-managing}
 
-有关如何创建和配置管道的信息，请参阅文档[CI/CD管道。](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+有关如何创建和配置管道的信息，请参阅[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)。
 
 在Cloud Manager中创建配置管道时，请确保在配置管道时选择&#x200B;**目标部署**，而不是&#x200B;**全栈代码**。
 
@@ -95,7 +95,7 @@ Cloud Manager配置管道将配置文件（以YAML格式创建）部署到目标
     cdn.yaml
 ```
 
-`/config`下的文件夹名称和文件名是任意的。 但是，YAML文件必须包含有效的[`kind`属性值。](#configurations)
+`/config`下的文件夹名称和文件名是任意的。 但是，YAML文件必须包含有效的[`kind`属性值](#configurations)。
 
 通常，配置会部署到所有环境。 如果每个环境的所有属性值都相同，则单个YAML文件就足够了。 但是，属性值在环境中不同是常见的现象，例如，在测试较低环境时。
 

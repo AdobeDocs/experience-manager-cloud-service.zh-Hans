@@ -4,10 +4,10 @@ description: 了解 Cloud Manager 如何通过其程序、环境和管道支持�
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要组成部分，是您团队的
 
 按照以下步骤导航到 Cloud Manager。
 
-1. 导航至 Cloud Manager 的登录页面，网址为 [`https://my.cloudmanager.adobe.com`。](https://my.cloudmanager.adobe.com/)
+1. 导航至Cloud Manager登录页面，网址为[`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)。
 
 1. 在 Cloud Manager 的&#x200B;**程序和产品**&#x200B;页面中选择程序，可启动&#x200B;**概述**&#x200B;页面。
 

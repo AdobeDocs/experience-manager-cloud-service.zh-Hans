@@ -4,10 +4,10 @@ description: 了解如何获取 Universal Editor 访问权限以及如何对第�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 43%
+ht-degree: 41%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 43%
 
 >[!TIP]
 >
->如果您想深入研究示例，可以查看 [GitHub 上的 Universal Editor 示例应用程序](https://github.com/adobe/universal-editor-sample-editable-app)。
+>如果您希望深入了解一个示例，则可以查看GitHub上的[通用编辑器示例应用程序](https://github.com/adobe/universal-editor-sample-editable-app)。
 
 尽管通用编辑器可以编辑来自任何源的内容，但本文档将以AEM应用程序为例。 本文档将引导您完成这些步骤。
 
@@ -26,7 +26,7 @@ ht-degree: 43%
 
 通用编辑器需要JavaScript库才能在编辑器中呈现和编辑页面。
 
-此外，Universal Editor服务需要[统一资源名称(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)，以便为正在编辑的应用程序中的内容标识和利用正确的后端系统。 因此，需要 URN 模式将内容映射回内容资源。
+此外，Universal Editor服务需要[统一资源名称(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)，以便为正在编辑的应用程序中的内容标识和利用正确的后端系统。 因此，需要 URN 架构将内容映射回内容资源。
 
 ### 包含通用编辑器CORS库 {#cors-library}
 
@@ -122,7 +122,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ## 定义将为其打开内容路径或`sling:resourceType`通用编辑器。 (可选) {#content-paths}
 
-如果您有一个使用[页面编辑器，](/help/sites-cloud/authoring/page-editor/introduction.md)的现有AEM项目，则在内容作者编辑页面时，页面将自动使用页面编辑器打开。 您可以根据内容路径或`sling:resourceType`定义应打开哪个编辑器AEM，使您的作者体验无缝化，而不管所选内容需要哪个编辑器。
+如果您有一个使用[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)的现有AEM项目，则在内容作者编辑页面时，页面将自动使用页面编辑器打开。 您可以根据内容路径或`sling:resourceType`定义应打开哪个编辑器AEM，使您的作者体验无缝化，而不管所选内容需要哪个编辑器。
 
 1. 打开Configuration Manager。
 

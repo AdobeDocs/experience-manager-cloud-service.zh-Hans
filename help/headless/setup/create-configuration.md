@@ -4,10 +4,10 @@ description: 以创建配置作为第一步，开始在 AEM as a Cloud Service �
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 在 AEM 的 Headless 内容管理的上下文中，请将配置视为 AEM 中的工作区，您可以在其中创建内容模型，这将定义未来内容和内容片段的结构。您可以使用多个配置来分隔这些模型。
 
-如果您熟悉[全栈 AEM 实施中的页面模板](/help/sites-cloud/authoring/page-editor/templates.md)，使用配置进行内容模型的管理的过程非常相似。
+如果您熟悉[全栈AEM实施](/help/sites-cloud/authoring/page-editor/templates.md)中的页面模板，使用配置进行内容模型管理的过程非常相似。
 
 ## 如何创建配置 {#how-to-create-a-configuration}
 
@@ -53,4 +53,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
->有关配置浏览器的完整详细信息，[请参阅配置浏览器文档。](/help/implementing/developing/introduction/configurations.md)
+>有关配置浏览器的完整详细信息，请参阅[配置浏览器文档](/help/implementing/developing/introduction/configurations.md)。

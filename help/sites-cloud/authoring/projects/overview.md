@@ -5,16 +5,16 @@ exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
 # 项目 {#projects}
 
-通过“项目”，您可以将资源分组到一个实体中。通用共享环境使您能够轻松管理项目。可以与项目关联的资源类型在 AEM 中称为“拼贴”。拼贴可以包含项目和团队信息、资源、工作流及其他类型的信息，如[项目拼贴](#project-tiles)中详述。
+通过“项目”，您可以将资源分组到一个实体中。通用共享环境使您能够轻松管理项目。可以与项目关联的资源类型在 AEM 中称为“拼贴”。拼贴可以包含项目和团队信息、资产、工作流及其他类型的信息，如[项目拼贴](#project-tiles)中详述。
 
 >[!CAUTION]
 >

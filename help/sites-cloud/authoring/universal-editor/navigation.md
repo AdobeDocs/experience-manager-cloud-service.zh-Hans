@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 39%
+source-wordcount: '1613'
+ht-degree: 30%
 
 ---
 
@@ -24,8 +24,8 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!TIP]
 >
->* 有关使用通用编辑器创作的详细信息，请参阅文档[使用通用编辑器创作内容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
->* 有关 Universal Editor 的更详细介绍，请参阅文档 [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)。
+>* 有关使用通用编辑器创作的详细信息，请参阅文档[使用通用编辑器创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)。
+>* 有关通用编辑器的更详细介绍，请参阅[通用编辑器简介](/help/implementing/universal-editor/introduction.md)。
 
 ## 准备应用程序 {#prepare-app}
 
@@ -48,13 +48,13 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!NOTE]
 >
->在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中编辑页面时，控制台将打开适用于该页面的[模板](/help/sites-cloud/authoring/page-editor/templates.md)的编辑器，可以是本文档中描述的通用编辑器，也可以是[页面编辑器。](/help/sites-cloud/authoring/page-editor/introduction.md)
+>在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中编辑页面时，控制台将打开适用于该页面的[模板](/help/sites-cloud/authoring/page-editor/templates.md)的编辑器，可以是本文档中描述的通用编辑器，也可以是[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)。
 
 ### 直接访问 {#accessing-directly}
 
-1. 登录通用编辑器。 您需要Adobe ID才能登录，[才能访问通用编辑器。](/help/implementing/universal-editor/getting-started.md#request-access)
+1. 登录通用编辑器。 您需要Adobe ID才能登录，[才能访问通用编辑器](/help/implementing/universal-editor/getting-started.md#request-access)。
 
-1. 登录后，将要编辑的页面的 URL 输入到[地址栏](#location-bar)，以便您可以开始编辑文本内容或媒体内容等内容。
+1. 登录后，在[位置栏](#location-bar)中输入要编辑的页面的URL，以便开始编辑文本内容或媒体内容等内容。
 
 ## 了解 UI {#ui}
 
@@ -75,7 +75,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 #### Experience Manager {#experience-manager}
 
-选择标题左侧的 Adobe Experience Cloud 链接可导航到 Experience Manager 解决方案的根来访问工具，例如 [Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) 和 [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
+选择标题左侧的Adobe Experience Cloud链接可导航到Experience Manager解决方案的根目录以访问诸如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之类的工具。
 
 ![“全局导航”按钮](assets/global-navigation.png)
 
@@ -111,7 +111,7 @@ Experience Cloud 标题始终显示在屏幕顶部。它是一个锚点，可让
 
 ### 通用编辑器工具栏 {#universal-editor-toolbar}
 
-Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的正下方。](#experience-cloud-header)它为您提供了快速访问权限，以便导航到另一个页面进行编辑以及发布当前页面。
+通用编辑器工具栏始终位于屏幕顶部[Experience Cloud标题](#experience-cloud-header)的正下方。 通过它，可快速导航到其他页面以编辑和发布当前页面。
 
 ![通用编辑器工具栏](assets/universal-editor-toolbar.png)
 
@@ -127,7 +127,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 >[!NOTE]
 >
->要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器。](/help/implementing/universal-editor/getting-started.md)
+>要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器](/help/implementing/universal-editor/getting-started.md)。
 
 #### 位置栏 {#location-bar}
 
@@ -141,11 +141,11 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 >[!NOTE]
 >
->要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器。](/help/implementing/universal-editor/getting-started.md)
+>要使用通用编辑器编辑的任何页面都必须进行[检测以支持通用编辑器](/help/implementing/universal-editor/getting-started.md)。
 
 #### 身份验证标头设置 {#authentication-settings}
 
-如果需要[设置自定义身份验证标头以进行本地开发，请选择身份验证标头设置图标。](/help/implementing/universal-editor/developer-overview.md#auth-header)
+如果您需要[设置自定义身份验证标头以进行本地开发](/help/implementing/universal-editor/developer-overview.md#auth-header)，请选择身份验证标头设置图标。
 
 ![身份验证标题设置按钮](assets/authentication-header-settings.png)
 
@@ -189,7 +189,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 >[!TIP]
 >
->可以自定义应用[的预览URL。](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
+>可以自定义应用[的预览URL](/help/implementing/universal-editor/customizing.md#custom-preview-urls)。
 
 #### 发布 {#publish}
 
@@ -213,8 +213,8 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 通用编辑器提供了可自定义且可扩展的创作体验。 如果您在工具栏中看到其他按钮，则表示您的通用编辑器已扩展。
 
-* 有关扩展可能性的详细信息，请参阅[自定义和扩展通用编辑器。](/help/implementing/universal-editor/customizing.md)
-* 有关单个扩展如何工作的详细信息，请参阅[Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 有关扩展可能性的详细信息，请参阅[自定义和扩展通用编辑器](/help/implementing/universal-editor/customizing.md)。
+* 有关单个扩展如何工作的详细信息，请参阅[Extension Manager文档](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
 
 ### 编辑器 {#editor}
 
@@ -222,7 +222,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ![编辑器](assets/editor.png)
 
-如果编辑器处于[预览模式](#preview-mode)下，则可在内容中导航并可访问链接，但无法编辑内容。
+如果编辑器处于[预览模式](#preview-mode)，则内容将可导航，您可以关注链接，但无法编辑内容。
 
 ### 属性面板 {#properties-rail}
 
@@ -280,7 +280,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ![添加图标](assets/ue-add-component-icon.png)
 
-点击或单击“添加”按钮将打开一个可用组件的下拉菜单[添加到选定的容器。](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
+点击或单击添加按钮会打开一个下拉菜单，其中包含可供[添加到选定容器](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)的组件。
 
 ![添加上下文菜单](assets/add-context-menu.png)
 
@@ -294,7 +294,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ![图标重复](assets/duplicate.png)
 
-点击或单击重复按钮[将复制选定的组件。](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+点击或单击重复按钮[将复制选定的组件](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)。
 
 ##### 删除 {#delete}
 
@@ -302,7 +302,7 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 ![“删除”图标](assets/ue-delete-component-icon.png)
 
-点击或单击删除按钮[删除该组件。](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
+点击或单击删除按钮[可删除组件](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)。
 
 >[!TIP]
 >
@@ -312,9 +312,9 @@ Universal Editor工具栏始终出现在屏幕顶部[Experience Cloud标题的�
 
 通用编辑器提供了可自定义且可扩展的创作体验。 如果在属性面板中看到其他按钮，则表示已扩展通用编辑器。
 
-* 有关扩展可能性的详细信息，请参阅[自定义和扩展通用编辑器。](/help/implementing/universal-editor/customizing.md)
-* 有关单个扩展如何工作的详细信息，请参阅[Extension Manager文档。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* 有关扩展可能性的详细信息，请参阅[自定义和扩展通用编辑器](/help/implementing/universal-editor/customizing.md)。
+* 有关单个扩展如何工作的详细信息，请参阅[Extension Manager文档](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
 
 ## 后续步骤 {#next-steps}
 
-现在您已经知道如何访问和导航通用编辑器，您可以使用该编辑器[创作内容了。](/help/sites-cloud/authoring/universal-editor/authoring.md)
+现在您已经知道如何访问和导航通用编辑器，您可以使用该编辑器[创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)。

@@ -4,7 +4,7 @@ description: 通过示例了解通用编辑器可在属性面板中编辑的字�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 13%
@@ -24,7 +24,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->如果您不熟悉如何针对通用编辑器检测您的应用程序，请参阅文档[面向AEM开发人员的通用编辑器概述。](/help/implementing/universal-editor/developer-overview.md)
+>如果您不熟悉如何针对通用编辑器检测您的应用程序，请参阅文档[面向AEM开发人员的通用编辑器概述](/help/implementing/universal-editor/developer-overview.md)。
 
 ## 模型定义结构 {#model-structure}
 

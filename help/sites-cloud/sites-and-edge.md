@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
-source-git-commit: a9adbb1886dcfedfc3fccb6f56939c46ba1365ee
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 什么是 Edge Delivery Services？ {#what-is-edge}
 
-Edge Delivery Services 通过提供可快速创作和开发的高影响力体验，带来卓越的用户体验，从而推动参与度和转化率。它是一组可组合的服务，支持快速开发环境，作者可以在其中快速更新和发布，并快速启动新网站。若要了解有关 Edge Delivery Services 的更多信息，请参阅文档 [Edge Delivery Services 概述。](/help/edge/overview.md)
+Edge Delivery Services 通过提供可快速创作和开发的高影响力体验，带来卓越的用户体验，从而推动参与度和转化率。它是一组可组合的服务，支持快速开发环境，作者可以在其中快速更新和发布，并快速启动新网站。在文档[Edge Delivery Services概述](/help/edge/overview.md)中了解有关Edge Delivery Services的更多信息。
 
 将 Edge Delivery Services 与 AEM Sites as a Cloud Service 结合使用，您的项目可以从以下方面受益：
 

@@ -5,10 +5,10 @@ exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 1. 选择您创建的上下文，然后选择&#x200B;**编辑**。这将打开&#x200B;**翻译规则编辑器**以配置属性。
    ![翻译规则编辑器](assets/translation-rules-editor.png)
 1. 默认情况下，所有配置都继承自父路径，在此示例中为 `/content/dam`。取消选中选项&#x200B;**继承自`/content/dam`**&#x200B;以便向配置添加其他字段。
-1. 取消选中后，在列表的&#x200B;**常规**&#x200B;部分下，添加您[以前标为要翻译的字段](getting-started.md#content-models)的内容片段模型的属性名称。
+1. 取消选中后，在列表的&#x200B;**常规**&#x200B;部分下，添加您[之前标识为翻译字段](getting-started.md#content-models)的内容片段模型的属性名称。
    1. 在&#x200B;**新属性**&#x200B;字段中，输入该属性名称。请注意，将自动选中&#x200B;**翻译**&#x200B;和&#x200B;**继承**&#x200B;选项。
    1. 选择&#x200B;**添加**。
    1. 对您必须翻译的所有字段重复这些步骤。
@@ -105,6 +105,6 @@ ht-degree: 100%
 
 ## 其他资源 {#additional-resources}
 
-我们建议您查看文档[翻译内容](translate-content.md)来继续 Headless 翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续 Headless 历程所必需的。
+我们建议您查看文档[翻译内容](translate-content.md)来继续无头翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续无头翻译历程所必需的。
 
 * [标识要翻译的内容](/help/sites-cloud/administering/translation/rules.md) – 了解翻译规则如何标识需要翻译的内容。

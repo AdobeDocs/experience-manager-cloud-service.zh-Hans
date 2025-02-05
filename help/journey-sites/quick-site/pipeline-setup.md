@@ -5,10 +5,10 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM 快速站点创建历程的上一个文档[从模板创建站点](create-site.md)中，您已了解如何使用站点模板快速创建可通过前端工具进行详细自定义的 AEM 站点，现在您应：
+在AEM快速站点创建历程的上一个文档[从模板创建站点](create-site.md)中，您已了解如何使用站点模板快速创建可通过前端工具进一步自定义的AEM站点，现在您应：
 
 * 了解如何获取 AEM 站点模板。
 * 了解如何使用模板创建站点。
@@ -114,7 +114,7 @@ ht-degree: 100%
 * 了解什么是前端管道。
 * 了解如何在 Cloud Manager 中设置前端管道。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[向前端开发人员授予访问权限](grant-access.md)，其中您会将前端开发人员加入 Cloud Manager，以便他们有权访问您的 AEM 站点 Git 存储库和管道。
+在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档[向前端开发人员授予访问权限](grant-access.md)，其中您会将前端开发人员加入Cloud Manager，以便他们有权访问您的AEM站点Git存储库和管道。
 
 ## 其他资源 {#additional-resources}
 

@@ -6,7 +6,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 1%
@@ -93,7 +93,7 @@ ht-degree: 1%
 
    * 如果没有自定义表单模板，请选择&#x200B;**[!UICONTROL 生成记录文档]**&#x200B;选项。 使用选项时，发送以供签名的文档显示自适应表单的所有字段。
 
-1. 选择&#x200B;**[!UICONTROL 创建。]**&#x200B;已创建启用签名的自适应表单。 您可以将[!DNL Adobe Sign]字段添加到表单并发送以供签名。
+1. 选择&#x200B;**[!UICONTROL 创建]**。将创建一个支持签名的自适应表单。 您可以将[!DNL Adobe Sign]字段添加到表单并发送以供签名。
 
 #### 为自适应表单启用[!DNL Adobe Sign] {#editafsign}
 

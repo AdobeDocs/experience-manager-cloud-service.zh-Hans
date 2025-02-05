@@ -4,7 +4,7 @@ description: 了解通用编辑器的主要用例，以及如何最好地了解�
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 内容作者在直观的WYSIWYG界面中编辑页面内容，并就地编辑。
 1. 通用编辑器自动将更改保留到数据源。
 
-如果您想了解有关通用编辑器的架构的更多信息，请参阅文档[通用编辑器架构。](/help/implementing/universal-editor/architecture.md)
+如果您想了解有关通用编辑器的架构的更多信息，请参阅文档[通用编辑器架构](/help/implementing/universal-editor/architecture.md)。
 
 ## 通用编辑器概念 {#concepts}
 

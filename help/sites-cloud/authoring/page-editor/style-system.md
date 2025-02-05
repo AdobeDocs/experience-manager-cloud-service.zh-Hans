@@ -5,10 +5,10 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -113,7 +113,7 @@ ht-degree: 87%
 
 核心组件版本 2 及更高版本完全支持使用样式系统，并且无需进行额外配置。
 
-只有为您自己的自定义组件启用样式系统，或者[在“编辑”对话框中启用可选的“样式”选项卡](#enable-styles-tab-edit)时，才需执行以下步骤。
+只有为您自己的自定义组件启用样式系统，或者[在“编辑”对话框](#enable-styles-tab-edit)中启用可选的“样式”选项卡时，才需执行以下步骤。
 
 ### 在“设计”对话框中启用“样式”选项卡 {#enable-styles-tab-design}
 

@@ -4,20 +4,20 @@ description: 了解如何使用 Cloud Manager 创建您的第一个项目。
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 # 创建项目 {#create-program}
 
-在[入门历程的这一可选部分中，](overview.md) 您将了解如何使用 Cloud Manager 创建第一个项目。
+在[入门培训历程](overview.md)的这一可选部分中，您将了解如何使用Cloud Manager创建第一个程序。
 
 ## 目标 {#objective}
 
-在阅读了本次入门历程中的上一篇文档访问 [Cloud Manager](cloud-manager.md) 之后，已确保您有适当权限访问 Cloud Manager。现在您可以创建第一个项目。
+在阅读了本次入门培训历程中的上一篇文档[访问Cloud Manager](cloud-manager.md)后，已确保您有适当权限访问Cloud Manager。 现在您可以创建第一个项目。
 
 阅读本文档后，您将能够：
 
@@ -68,7 +68,7 @@ Cloud Manager 程序代表多组 Cloud Manager 环境。这些程序支持业务
 
 ## 后续内容 {#whats-next}
 
-现在您的第一个项目已经创建，您可以为该项目创建环境。通过进一步查看文档[创建环境](create-environments.md)来继续您的载入之旅。
+现在您的第一个项目已经创建，您可以为该项目创建环境。通过进一步查看文档[创建环境](create-environments.md)，继续您的入门培训历程。
 
 ## 其他资源 {#additional-resources}
 

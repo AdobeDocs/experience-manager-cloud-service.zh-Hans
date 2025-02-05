@@ -3,13 +3,13 @@ title: 筛选组件
 description: 了解如何使用组件过滤器在通用编辑器中限制每个容器允许的组件。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 48c1a109c060db4ce19bf645723357008d51c572
+exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # 筛选组件 {#filtering-components}
 
@@ -53,4 +53,4 @@ data-aue-filter="container-filter"
 
 >[!TIP]
 >
->在文档[自定义和扩展通用编辑器中了解通用编辑器可用的其他自定义和扩展选项。](/help/implementing/universal-editor/customizing.md)
+>在文档[自定义和扩展通用编辑器](/help/implementing/universal-editor/customizing.md)中了解通用编辑器可用的其他自定义和扩展选项。

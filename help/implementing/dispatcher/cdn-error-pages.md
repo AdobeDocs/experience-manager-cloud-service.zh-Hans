@@ -4,7 +4,7 @@ description: 了解如何覆盖默认错误页面，其中将静态文件托管�
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 配置CDN错误页面 {#cdn-error-pages}
 
-万一[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)无法访问AEM源服务器（这种情况不太可能发生），默认情况下，CDN会提供一个非品牌的一般错误页，指示无法访问服务器。 您可以覆盖默认错误页，方法是：将静态文件托管在自托管存储中(如Amazon S3或Azure Blob Storage)，然后在使用Cloud Manager [配置管道部署的配置文件中引用它们。](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+万一[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)无法访问AEM源服务器（这种情况不太可能发生），默认情况下，CDN会提供一个非品牌的一般错误页，指示无法访问服务器。 您可以覆盖默认错误页，方法是：将静态文件托管在自托管存储中(如Amazon S3或Azure Blob Storage)，并在使用Cloud Manager [配置管道](/help/operations/config-pipeline.md#managing-in-cloud-manager)部署的配置文件中引用它们。
 
 ## 设置 {#setup}
 

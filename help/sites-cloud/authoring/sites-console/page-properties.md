@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2268'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 91%
 
 * **品牌化**
 
-  通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+  通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用2.14.0版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
 
    * **Brand Slug**
 

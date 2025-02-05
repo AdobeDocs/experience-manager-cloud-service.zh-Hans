@@ -4,7 +4,7 @@ description: 如果您有许多相似的网站，这些网站的外观和行为�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存储库并在专用GitHub存储库之外运行每个站点，同时保持同步。
 
-这种简化的设置免除了代码复制的需要，也称为[“repoless”，](https://www.aem.live/docs/repoless)，因为除了您的第一个站点之外，其他所有站点都不需要自己的GitHub存储库。
+这种简化的设置免除了代码复制的需要，也称为[“repoless”](https://www.aem.live/docs/repoless)，因为除了您的第一个站点之外，其他所有站点都不需要自己的GitHub存储库。
 
 如果您的项目需要跨站点重新使用代码的可重复灵活性，则可以激活该功能。
 
@@ -31,7 +31,7 @@ AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存�
 
 要利用此功能，请确保您已完成以下操作。
 
-* 按照文档[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南，已完全设置您的网站。](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* 按照文档[使用Edge Delivery Services进行WYSIWYG创作的开发人员快速入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，已完全设置您的网站。
 * 您至少正在运行AEM as a Cloud Service 2024.08 。
 
 您还需要请求Adobe为您配置以下项目。 通过您的Slack渠道联系或提出支持问题以请求Adobe进行这些更改：
@@ -70,7 +70,7 @@ AEM支持从同一代码库运行多个站点，而不是创建多个GitHub存�
 
 您需要创建站点配置并将其添加到路径映射中。
 
-1. 在站点的根目录下创建一个新页面，然后选择&#x200B;[**配置**&#x200B;模板。](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. 在站点的根目录下创建一个新页面，然后选择&#x200B;[**配置**&#x200B;模板](/help/edge/wysiwyg-authoring/tabular-data.md#other)。
    * 您可以将配置留空，只保留预定义的`key`和`value`列。 您只需创建它。
 1. 使用类似于以下内容的cURL命令，在公共配置中创建到站点配置的映射。
 

@@ -5,10 +5,10 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 100%
 
 但 AEM 中的 Headless 存储不需要止步于此。您可能还记得，在[历程的快速入门部分](getting-started.md#integration-levels)中，我们简要讨论了 AEM 如何支持 Headless 交付和传统全栈模型，并支持结合了两者优点的混合模型。
 
-如果您的项目需要这种灵活性，请继续进行历程的可选附加部分[如何使用 AEM 创建单页应用程序 (SPA)。](create-spa.md)
+如果您的项目需要这种灵活性，请继续此历程的另一可选部分，[如何使用AEM创建单页应用程序(SPA)](create-spa.md)。
 
 ## 其他资源 {#additional-resources}
 

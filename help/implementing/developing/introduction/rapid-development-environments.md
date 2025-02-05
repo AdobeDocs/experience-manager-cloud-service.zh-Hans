@@ -4,7 +4,7 @@ description: 了解如何使用快速开发环境在云环境中进行快速开�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4990'
 ht-degree: 3%

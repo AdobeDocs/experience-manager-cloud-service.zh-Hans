@@ -4,7 +4,7 @@ description: CRXDE Lite是AEM快速入门的一部分，您可以在浏览器中
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 1%
@@ -42,7 +42,7 @@ CRXDE Lite的用户界面有很多部分，功能也很多。
 
 ### 顶部切换器栏 {#top-switcher-bar}
 
-顶部切换器栏允许您在CRXDE Lite和[包管理器之间快速切换。](package-manager.md)
+顶部切换器栏允许您在CRXDE Lite和[包管理器](package-manager.md)之间快速切换。
 
 ### 节点路径小组件 {#node-path-widget}
 
@@ -183,7 +183,7 @@ CRXDE Lite的用户界面有很多部分，功能也很多。
 要创建具有CRXDE Lite的节点，请执行以下操作：
 
 1. 在浏览器中打开CRXDE Lite。
-1. 在&#x200B;[**浏览器窗格**&#x200B;中，](#explorer-pane)右键单击要创建新节点的节点，选择&#x200B;**创建**，然后选择&#x200B;**创建节点**。
+1. 在&#x200B;[**浏览器窗格**](#explorer-pane)&#x200B;中，右键单击要创建新节点的节点，选择&#x200B;**创建**，然后选择&#x200B;**创建节点**。
 1. 输入&#x200B;**名称**&#x200B;并选择&#x200B;**类型**。
 1. 单击&#x200B;**确定**。
 1. 单击&#x200B;[**全部保存按钮**](#save-all-button)&#x200B;将更改保存在服务器上。
@@ -201,7 +201,7 @@ CRXDE Lite的用户界面有很多部分，功能也很多。
 要创建具有CRXDE Lite的资产，请执行以下操作：
 
 1. 在浏览器中打开CRXDE Lite。
-1. 在&#x200B;[**浏览器窗格**，](#explorer-pane)中，选择要添加新属性的节点。
+1. 在&#x200B;[**浏览器窗格**](#explorer-pane)&#x200B;中，选择要添加新属性的节点。
 1. 在底部窗格的&#x200B;[**属性选项卡**](#properties-tab)&#x200B;中，输入&#x200B;**名称**、**类型**&#x200B;和&#x200B;**值**。
 1. 单击&#x200B;**添加**。
 1. 单击&#x200B;[**全部保存按钮**](#save-all-button)&#x200B;将更改保存在服务器上。
@@ -211,10 +211,10 @@ CRXDE Lite的用户界面有很多部分，功能也很多。
 要创建具有CRXDE Lite的文件，请执行以下操作：
 
 1. 在浏览器中打开CRXDE Lite。
-1. 在&#x200B;[**浏览器窗格**&#x200B;中，](#explorer-pane)右键单击要创建文件的组件，选择&#x200B;**创建**，然后选择&#x200B;**创建文件**。
+1. 在&#x200B;[**浏览器窗格**](#explorer-pane)&#x200B;中，右键单击要创建文件的组件，选择&#x200B;**创建**，然后选择&#x200B;**创建文件**。
 1. 输入文件&#x200B;**名称**，包括其扩展名。
 1. 单击&#x200B;**确定**。
-1. 新文件在&#x200B;[**编辑窗格**.](#edit-pane)中作为选项卡打开
+1. 新文件在&#x200B;[**编辑窗格**](#edit-pane)&#x200B;中作为选项卡打开。
 1. 编辑文件。
 1. 单击&#x200B;[**全部保存按钮**](#save-all-button)&#x200B;以保存更改。
 

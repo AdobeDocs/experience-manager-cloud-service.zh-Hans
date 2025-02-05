@@ -4,10 +4,10 @@ description: 了解如何运行您自己的通用编辑器服务，以供本地�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 40%
+ht-degree: 37%
 
 ---
 
@@ -101,7 +101,7 @@ UES_CORS_PRIVATE_NETWORK=true
 | `UES_SPLUNK_TOKEN` | 是 | 无 | Splunk令牌 |
 | `UES_SPLUNK_INDEX` | 是 | 无 | 要写入日志的索引 |
 | `UES_SPLUNK_SOURCE` | 是 | `universal-editor-service` | splunk日志中的源名称 |
-| `UES_CORS_PRIVATE_NETWORK` | 是 | `false` | 启用发送CORS标头以允许[专用网络。Chrome版本130及更高版本的用户需要](https://wicg.github.io/private-network-access/#private-network-request) |
+| `UES_CORS_PRIVATE_NETWORK` | 是 | `false` | 启用发送CORS标头以允许[专用网络](https://wicg.github.io/private-network-access/#private-network-request)。 Chrome版本130及更高版本的用户需要 |
 
 >[!NOTE]
 >
@@ -152,9 +152,9 @@ Universal Editor 根据页面的检测方式了解使用哪个 Universal Editor 
 
 ## 使用本地 Universal Editor Service 编辑页面 {#editing}
 
-在[本地运行 Universal Editor Service](#running-ue) 并且您的[内容页面经过检测可使用本地服务后，](#using-loca-ue)您现在可以启动编辑器。
+如果[通用编辑器服务在本地运行](#running-ue)，并且您的[内容页面配置为使用本地服务](#using-loca-ue)，您现在可以启动该编辑器。
 
 1. 打开您的浏览器以转至 `https://localhost:8000/ping`。
-1. 指示您的浏览器接受[您的自签名证书。](#ue-https)
+1. 引导浏览器接受[您的自签名证书](#ue-https)。
 1. 在自签名证书获得信任后，您可以使用本地 Universal Editor Service 编辑页面。
 

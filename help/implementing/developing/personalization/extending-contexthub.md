@@ -4,7 +4,7 @@ description: 当提供的ContextHub存储和模块不符合您的解决方案要
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -60,7 +60,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-在大多数情况下，只需要一个候选，并且优先级可以设置为`0`，但是如果您有兴趣，可以了解有关[更多高级注册、](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)的信息，该信息允许根据Javascript条件(`applies`)和候选优先级选择少数存储实现之一。
+在大多数情况下，只需要一个候选，并且优先级可以设置为`0`，但是如果您有兴趣，可以了解[更多高级注册](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)，这允许根据javascript条件(`applies`)和候选优先级选择少数存储实现之一。
 
 ## 创建ContextHub UI模块类型 {#creating-contexthub-ui-module-types}
 

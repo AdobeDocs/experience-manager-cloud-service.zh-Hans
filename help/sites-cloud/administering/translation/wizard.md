@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 70%
+ht-degree: 57%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 70%
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
 
 >[!NOTE]
 >

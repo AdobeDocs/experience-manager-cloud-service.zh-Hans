@@ -4,7 +4,7 @@ description: 了解如何创建自己的复合组件，这些组件由使用AEM�
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -30,16 +30,16 @@ ht-degree: 1%
 以下支持复合组件用例的模型需要以下先决条件。
 
 * 您的AEM开发实例正在带有示例项目的端口4502上本地运行。
-* 您已启用工作正常的外部React应用程序[以便在AEM中编辑。](editing-external-spa.md)
-* 使用RemotePage组件在AEM编辑器[中加载React应用程序。](remote-page.md)
+* 您已启用工作正常的外部React应用程序[以便在AEM](editing-external-spa.md)中进行编辑。
+* 使用RemotePage组件](remote-page.md)在AEM编辑器[中加载React应用程序。
 
 ## 将复合组件添加到SPA {#adding-composite-components}
 
 实施复合组件有三种不同的模型，具体取决于AEM中的SPA实施。
 
-* [您的AEM项目中不存在该组件。](#component-does-not-exist)
-* [您的AEM项目中存在该组件，但其必需的内容不存在。](#content-does-not-exist)
-* [AEM项目中同时存在该组件及其必需内容。](#both-exist)
+* [您的AEM项目中不存在该组件](#component-does-not-exist)。
+* [组件存在于您的AEM项目中，但其必需的内容不是](#content-does-not-exist)。
+* [组件及其所需内容都存在于您的AEM项目](#both-exist)中。
 
 以下部分提供了使用卡组件作为示例来实施每个用例的示例。
 
@@ -134,7 +134,7 @@ function Home() {
 
 然后，您可以将其添加到SPA并检索其内容。
 
-1. 在SPA中为此创建对应的组件。 确保子组件映射到SPA项目中的相应AEM资源类型。 在此示例中，我们使用与上一个示例中详细的[相同的`AEMText`和`AEMImage`组件。](#component-does-not-exist)
+1. 在SPA中为此创建对应的组件。 确保子组件映射到SPA项目中的相应AEM资源类型。 在此示例中，我们使用与上一个案例](#component-does-not-exist)中详细的[相同的`AEMText`和`AEMImage`组件。
 
    ```javascript
    import React from 'react';
@@ -178,4 +178,4 @@ function Home() {
 
 ![节点结构中的复合路径](assets/composite-path.png)
 
-`AEMCard`组件与上一个使用案例中定义的[相同。](#content-does-not-exist)此处，在AEM项目的上述位置中定义的内容包含在SPA中。
+`AEMCard`组件与上一个用例](#content-does-not-exist)中定义的[相同。 此处，在AEM项目的上述位置中定义的内容包含在SPA中。

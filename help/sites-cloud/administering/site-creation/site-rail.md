@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 38%
+ht-degree: 31%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 38%
 
 ## 下载模板资源 {#downloading-template-resources}
 
-[站点模板](site-templates.md)可以包含信息以及站点内容结构和[站点主题。](site-themes.md)例如，站点模板可以包含线框设计或其他与站点相关的文件。
+[站点模板](site-templates.md)可以包含信息以及站点内容结构和[站点主题](site-themes.md)。 例如，站点模板可以包含线框设计或其他与站点相关的文件。
 
 如果站点基于站点模板，利用站点控制台中显示的站点面板，选择站点的根以显示有关站点的主题信息，包括其他站点资源。
 
@@ -84,4 +84,4 @@ ht-degree: 38%
 
 ![启用前端管道](/help/sites-cloud/administering/assets/enable-fep.png)
 
-有关更多信息，请参阅[启用前端管道](enable-front-end-pipeline.md)文档。
+有关详细信息，请参阅文档[启用前端管道](enable-front-end-pipeline.md)。

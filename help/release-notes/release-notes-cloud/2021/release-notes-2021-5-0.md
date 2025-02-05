@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 版�
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 46%
 
 #### Dynamic Media的新增功能 {#what-is-new-dm}
 
-* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和受限网络带宽的设备上高效地提供最佳质量的图像。 有关详细信息，请参阅[智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md)和[使用下一代图像格式WebP和AVIF的图像优化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* 智能成像DPR（设备像素比）和网络带宽优化使您能够在具有高分辨率显示器和受限网络带宽的设备上高效地提供最佳质量的图像。 有关详细信息，请参阅[智能成像常见问题解答](/help/assets/dynamic-media/imaging-faq.md)和[使用下一代图像格式WebP和AVIF的图像优化](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)。
 * 在Dynamic Media交付中引入了对下一代图像格式AVIF的支持（fmt URL修饰符）。
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -99,7 +99,7 @@ Output as a Cloud Service：Output 服务可帮助您组合 XDP 模板和 XML �
 
 ## Cloud Manager {#cloud-manager}
 
-此部分概述了 AEM as a Cloud Service 2021.5.0 中的 Cloud Manager 的发行说明。
+本节概述了AEM as a Cloud Service 2021.5.0中的Cloud Manager发行说明。
 
 ### 发布日期 {#release-date-cm-may}
 

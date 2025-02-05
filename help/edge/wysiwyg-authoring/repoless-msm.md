@@ -4,7 +4,7 @@ description: 了解最佳实践建议，了解如何使用利用单个代码库(
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 要在可重用用例中配置MSM，必须首先完成多项任务。
 
 * 本文档假定您已根据《使用Edge Delivery Services创作WYSIWYG的[开发人员快速入门指南》](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)为项目创建了一个站点。
-* 您必须已[为项目启用重写功能。](/help/edge/wysiwyg-authoring/repoless.md)
+* 您必须已[为项目](/help/edge/wysiwyg-authoring/repoless.md)启用重写功能。
 
 ## 用例 {#use-case}
 
@@ -55,9 +55,9 @@ ht-degree: 2%
 
 配置MSM重写使用案例有几个步骤。
 
-1. [更新AEM站点配置。](#update-aem-configurations)
-1. [为本地化Edge Delivery Services创建新的页面站点。](#create-edge-sites)
-1. [在AEM中为本地化的站点更新云配置。](#update-cloud-configurations)
+1. [更新AEM站点配置](#update-aem-configurations)。
+1. [为您的本地化Edge Delivery Services创建新的页面站点](#create-edge-sites)。
+1. [在AEM中更新本地化站点的云配置](#update-cloud-configurations)。
 
 ### 更新AEM站点配置 {#update-aem-configurations}
 

@@ -4,7 +4,7 @@ description: AEM中的查询生成器提供了一种简单、可自定义的方�
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -101,7 +101,7 @@ replic.action=Activate
 
 >[!TIP]
 >
->[WKND教程](develop-wknd-tutorial.md)详细介绍了新AEM项目的设置，包括使用maven的设置。
+>[WKND教程](develop-wknd-tutorial.md)详细介绍了新AEM项目的设置，包括使用maven。
 
 首先，您需要更新项目的Maven依赖项。 `PredicateEvaluator`是`cq-search`工件的一部分，因此必须将其添加到Maven pom文件中。
 

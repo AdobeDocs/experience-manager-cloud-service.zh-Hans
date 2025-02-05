@@ -4,16 +4,16 @@ description: 在载入流程开始之前，系统管理员必须了解一些步�
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # 入门准备 {#onboarding-preparation}
 
-现在，通过阅读文章[AEM as a Cloud Service 上线历程简介](overview.md)，您已经知道了在载入流程的具体内容，您可能已经为此做好准备。然而，在载入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。
+现在，通过阅读文章[AEM as a Cloud Service入门培训历程简介](overview.md)，您已经知道了在载入流程的具体内容，您可能已经为此做好准备。 然而，在载入流程开始之前，系统管理员必须了解一些步骤或准备步骤，然后才能登录系统。
 
 ## 目标 {#objective}
 
@@ -69,7 +69,7 @@ Adobe 会由以下人员代表参加：
 * 您指定的客户成功工程师（如适用）
 * 根据需要增加主题专家
 
-通话的目的是让您有机会提问，了解支持流程，并可能首次查看产品。
+通话的目标是让您有机会提问，了解支持流程，并可能首次查看产品。
 
 ## 欢迎电子邮件 {#welcome-email}
 

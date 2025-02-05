@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -18,7 +18,7 @@ ht-degree: 39%
 
 >[!NOTE]
 >
->在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中编辑页面时，该控制台将打开适用于该页面的[模板](/help/sites-cloud/authoring/page-editor/templates.md)的编辑器，可以是本文档中描述的页面编辑器，也可以是[通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)。
+>在&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)中编辑页面时，控制台将打开适用于该页面的[模板](/help/sites-cloud/authoring/page-editor/templates.md)的编辑器，可以是本文档中描述的页面编辑器，也可以是[通用编辑器](/help/sites-cloud/authoring/universal-editor/authoring.md)。
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ AEM页面编辑器主要由三个部分组成：
 
 #### ContextHub {#context-hub}
 
-这将打开[ContextHub。](/help/sites-cloud/authoring/personalization/contexthub.md)它仅在&#x200B;**预览**&#x200B;模式下可用。
+这将打开[ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)。 它仅在&#x200B;**预览**&#x200B;模式下可用。
 
 ![ContextHub 按钮](assets/page-editor-context-hub.png)
 
@@ -114,7 +114,7 @@ AEM页面编辑器主要由三个部分组成：
 
 #### 预览 {#preview}
 
-**预览**&#x200B;按钮启用[预览模式。](#preview-mode)，显示发布时显示的页面。
+**预览**&#x200B;按钮启用[预览模式](#preview-mode)，显示发布时显示的页面。
 
 ![“预览”按钮](assets/page-editor-preview.png)
 

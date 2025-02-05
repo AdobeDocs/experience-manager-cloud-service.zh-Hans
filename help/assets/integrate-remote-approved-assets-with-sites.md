@@ -2,10 +2,10 @@
 title: 将远程 AEM Assets 与 AEM Sites 集成
 description: 了解如何配置AEM站点并将其与批准的AEM Assets连接。
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 15%
+source-wordcount: '1028'
+ht-degree: 17%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 15%
 
 >[!AVAILABILITY]
 >
->Dynamic Media with OpenAPI功能指南现在以PDF格式提供。 下载整个指南，并使用Adobe Acrobat AI Assistant来回答您的疑问。
+>具有 OpenAPI 功能的 Dynamic Media 指南现以 PDF 格式提供。下载完整指南并使用 Adobe Acrobat AI 助手来回答您的疑问。
 >
->[!BADGE 具有OpenAPI功能的Dynamic Media指南PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE 具有 OpenAPI 功能的 Dynamic Media 指南 PDF]{type=Informative url="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 有效管理数字资产对于在各种在线平台上提供引人入胜且一致的品牌体验至关重要。 具有OpenAPI功能的Dynamic Media通过实现AEM Sites与AEM Assetsas a Cloud Service之间的无缝集成，增强了数字资源管理。 这项创新功能允许您轻松地在多个AEM环境中共享和管理不同类型的已批准数字资产，从而简化站点作者和内容编辑器的工作流程。
 
@@ -73,7 +73,7 @@ ht-degree: 15%
 
   了解有关[IMS身份验证](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html)的更多信息。
 
-  有关如何配置 OSGi 的详细信息，请参见以下文档：
+  有关如何配置OSGi的详细信息，请参阅以下文档：
 
    * 为 AEM as a Cloud Service [配置 Adobe Experience Manager as a Cloud Service 的 OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html)
    * 为 AEM 6.5 [配置 OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)

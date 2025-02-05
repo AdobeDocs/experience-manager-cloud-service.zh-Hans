@@ -5,10 +5,10 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM 快速站点创建历程的上一个文档[设置您的管道](pipeline-setup.md)中，您已了解如何创建前端管道来管理站点主题的自定义，现在应：
+在AEM快速站点创建历程的上一个文档[设置您的管道](pipeline-setup.md)中，您已了解如何创建前端管道来管理站点主题的自定义，现在应：
 
 * 了解什么是前端管道。
 * 了解如何在 Cloud Manager 中设置前端管道。
@@ -101,7 +101,7 @@ ht-degree: 100%
 * 如何将前端开发人员添加为用户。
 * 如何向前端开发人员授予所需的角色。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[检索 Git 存储库访问信息](retrieve-access.md)，此文档将视角专门切换到前端开发人员，并说明了前端开发人员如何使用 Cloud Manager 访问 Git 存储库信息。
+在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档[检索Git存储库访问信息](retrieve-access.md)，此文档将视角专门切换到前端开发人员，并说明了前端开发人员如何使用Cloud Manager访问Git存储库信息。
 
 ## 其他资源 {#additional-resources}
 

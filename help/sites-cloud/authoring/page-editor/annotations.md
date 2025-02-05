@@ -5,10 +5,10 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 83%
+ht-degree: 81%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 83%
 
 1. 完成特定注释编辑之后，您可以：
 
-   * 选择文本标记以打开注释。 打开后，即可查看全文、作出更改或[删除注释](#deleting-annotations)。
+   * 选择文本标记以打开注释。 打开后，即可查看全文、进行更改或[删除注释](#deleting-annotations)。
    * 调整文本标记位置。
    * 选取草绘线以选取该草绘，并将其拖动到所需位置。
    * 移动或复制组件

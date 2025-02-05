@@ -5,10 +5,11 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 请使用以下流程将组件国际化，并提供不同语言的UI：
 
-1. [使用国际化字符串的代码实施组件。](/help/implementing/developing/extending/i18n/dev.md)您的代码标识要翻译的字符串，并选择要在运行时呈现的语言。
+1. [使用国际化字符串的代码实施组件](/help/implementing/developing/extending/i18n/dev.md)。 您的代码标识要翻译的字符串，并选择要在运行时呈现的语言。
 1. 创建词典并添加要翻译的英语字符串。
 1. 将字典导出为XLIFF格式，翻译字符串，然后将XLIFF文件导入回AEM。
 1. 将字典合并到应用程序的发布管理流程中。

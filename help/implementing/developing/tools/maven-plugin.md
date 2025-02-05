@@ -4,7 +4,7 @@ description: 使用内容包Maven插件部署AEM应用程序
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 使用Adobe内容包Maven插件将包部署和管理任务集成到Maven项目中。
 
-将构造的包部署到AEM由Adobe内容包Maven插件执行，并使通常使用AEM [包管理器：](/help/implementing/developing/tools/package-manager.md)执行的任务实现自动化
+将构造的包部署到AEM由Adobe内容包Maven插件执行，并使通常使用AEM [包管理器](/help/implementing/developing/tools/package-manager.md)执行的任务实现自动化
 
 * 从文件系统中的文件创建新包。
 * 在AEM上安装并卸载包。
@@ -23,7 +23,7 @@ ht-degree: 4%
 * 获取AEM上安装的软件包列表。
 * 从AEM中删除包。
 
-本文档详细介绍如何使用Maven管理这些任务。 但是，了解[AEM项目及其包的结构也非常重要。](#aem-project-structure)
+本文档详细介绍如何使用Maven管理这些任务。 但是，了解[AEM项目及其包的结构方式也很重要](#aem-project-structure)。
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->包&#x200B;**创建**&#x200B;现在归[Apache Jackrabbit FileVault包Maven插件所有。](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>包&#x200B;**创建**&#x200B;现在归[Apache Jackrabbit FileVault包Maven插件](https://jackrabbit.apache.org/filevault-package-maven-plugin/)所有。
 >
 >本文介绍了由Adobe内容包Maven插件执行的将构造的包部署到AEM的&#x200B;**部署**。
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service遵循由最新的AEM项目原型实施的包管理和项�
 
 ## 获取内容包Maven插件 {#obtaining-the-content-package-maven-plugin}
 
-插件可从[Maven中央存储库中获取。](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+插件可从[Maven中央存储库](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)获得。
 
 ## 内容包Maven插件目标和参数
 

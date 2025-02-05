@@ -4,7 +4,7 @@ description: 详细了解组件定义与通用编辑器之间的JSON约定。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->有关内容建模过程的概述，请参阅文档[使用Edge Delivery Services项目进行WYSIWYG创作的内容建模。](/help/edge/wysiwyg-authoring/content-modeling.md)
+>有关内容建模过程的概述，请参阅文档[用于WYSIWYG创作的Edge Delivery Services建模](/help/edge/wysiwyg-authoring/content-modeling.md)。
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ## `groups` {#groups}
 
-`groups`定义作者在通用编辑器中看到的组件组，在编辑器的属性面板中单击&#x200B;**添加**&#x200B;图标可将新组件[添加到页面时，该组件组位于编辑器中。](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)组帮助组织组件。 公共组可能是&#x200B;**常规组件**&#x200B;和&#x200B;**高级组件**。
+`groups`定义作者在通用编辑器中看到的组件组，在编辑器的属性面板中单击&#x200B;**添加**&#x200B;图标以[向页面添加新组件](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)。 组可帮助组织组件。 公共组可能是&#x200B;**常规组件**&#x200B;和&#x200B;**高级组件**。
 
 * `title`定义编辑器UI中显示的组的文本说明。
 * `id`唯一标识该组。
@@ -94,7 +94,7 @@ ht-degree: 1%
 定义`plugin`后，您需要指示它是与页面相关还是与片段相关。
 
 * `page`指示组件在当前页面上为内容。
-* `cf`指示组件与[内容片段中的内容相关。](/help/assets/content-fragments/content-fragments.md)
+* `cf`指示组件与[内容片段](/help/assets/content-fragments/content-fragments.md)中的内容相关。
 
 ### `page` {#page}
 

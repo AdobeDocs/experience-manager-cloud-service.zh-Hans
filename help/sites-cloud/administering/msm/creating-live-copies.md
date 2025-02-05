@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -348,7 +348,7 @@ Blueprint 页面（在 Blueprint 配置中引用）为您提供使用当前 (Blu
 
 您可以随时向 Live Copy 页面添加组件。Live Copy 及其段落系统的继承状态不会控制您添加组件的能力。
 
-当 Live Copy 页面与源页面同步时，添加的组件保持不变。另请参阅[更改 Live Copy 页面上的组件顺序](#changing-the-order-of-components-on-a-live-copy-page)。
+当 Live Copy 页面与源页面同步时，添加的组件保持不变。另请参阅[更改Live Copy页面上的组件顺序](#changing-the-order-of-components-on-a-live-copy-page)。
 
 >[!TIP]
 >

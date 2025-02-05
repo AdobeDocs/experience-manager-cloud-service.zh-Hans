@@ -5,10 +5,10 @@ exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 文档历程通过提供叙述来帮助可能是 AEM 新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或 AEM 知识，从而将许多不同且复杂的主题和功能联系起来。
 
-文档历程与 AEM 现有的技术文档形成对比，这些文档主要侧重于单项功能和任务文档（假设您熟悉 AEM）。 文档历程将重点放在概念上，并将详细信息推迟到现有技术文档中，从而为刚接触 AEM 的读者提供一个新的平台，让他们能够开始了解如何通过使用最佳实践来满足常见的业务需求和工作流程来利用该平台。 因此，文档历程是对的补充，而不是 [AEM 现有技术文档。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+文档历程与 AEM 现有的技术文档形成对比，这些文档主要侧重于单项功能和任务文档（假设您熟悉 AEM）。 文档历程将重点放在概念上，并将详细信息推迟到现有技术文档中，从而为刚接触 AEM 的读者提供一个新的平台，让他们能够开始了解如何通过使用最佳实践来满足常见的业务需求和工作流程来利用该平台。 因此，文档历程是对的补充，而不是[AEM现有技术文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)的替代。
 
 ### 按叙事学习 {#narrative}
 

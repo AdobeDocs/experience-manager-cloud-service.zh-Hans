@@ -5,10 +5,10 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 
 ## 后续内容 {#what-is-next}
 
-您现在已准备好开始您的 Adobe Headless 历程。我们鼓励您继续此历程的下一部分，并阅读[针对 AEM Headless as a Cloud Service 进行创作 – 简介](introduction.md)一文。
+您现在已准备好开始您的 Adobe Headless 历程。我们鼓励您继续此历程的下一部分，并阅读文章[为AEM Headless创作as a Cloud Service — 简介](introduction.md)。
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

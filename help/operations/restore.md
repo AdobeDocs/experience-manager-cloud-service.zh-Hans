@@ -4,10 +4,10 @@ description: 了解如何使用 Cloud Manager 从备份中恢复 AEM as a Cloud 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 64%
+source-wordcount: '1338'
+ht-degree: 63%
 
 ---
 
@@ -31,7 +31,7 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 >[!TIP]
 >
->还可以[使用公共 API 恢复备份。](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+>还可以使用公共API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)还原备份[。
 
 >[!WARNING]
 >
@@ -43,10 +43,10 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
 在还原到完全内容还原之前，请考虑以下选项以更轻松地还原您的内容。
 
-* 如果已删除路径的包可用，请使用[包管理器再次安装该包。](/help/implementing/developing/tools/package-manager.md)
-* 如果删除的路径是Sites中的页面，请使用[Restore Tree函数。](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* 如果删除的路径是一个资源文件夹，并且原始文件可用，请通过[Assets控制台重新上传它们。](/help/assets/add-assets.md)
-* 如果删除内容是资源，请考虑恢复[资源的早期版本。](/help/assets/manage-digital-assets.md)
+* 如果已删除路径的包可用，请使用[包管理器](/help/implementing/developing/tools/package-manager.md)再次安装该包。
+* 如果删除的路径是Sites中的页面，请使用[还原树功能](/help/sites-cloud/authoring/sites-console/page-versions.md)。
+* 如果删除的路径是一个资源文件夹，并且原始文件可用，请通过[Assets控制台](/help/assets/add-assets.md)重新上传它们。
+* 如果删除内容是资源，请考虑恢复[资源的早期版本](/help/assets/manage-digital-assets.md)。
 
 如果以上选项都不起作用，并且已删除路径的内容很重要，请按照以下部分中的详细说明执行内容恢复。
 
@@ -93,7 +93,7 @@ Cloud Manager 提供两种类型的备份，您可以从中恢复内容。
 
    ![备份可用](assets/backup-available.png)
 
-1. 使用信息图标查找要还原的备份，以查看有关该备份中包含的代码版本和AEM版本的信息，并在[选择备份时考虑还原的影响。](#choosing-the-right-backup)
+1. 使用信息图标查找要还原的备份，以查看有关该备份中包含的代码版本和AEM版本的信息，并在[选择备份](#choosing-the-right-backup)时考虑还原的影响。
 
    ![备份信息](assets/backup-info.png)
 

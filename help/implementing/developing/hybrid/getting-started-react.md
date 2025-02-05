@@ -4,7 +4,7 @@ description: 本文介绍了一个SPA应用程序示例，说明它是如何组�
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 6%
@@ -182,7 +182,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 在此示例中，`AppPage`类扩展`Page`，其中包含随后可以使用的内部内容方法。
 
-`Page`摄取页面模型的JSON表示形式，并处理内容以包装/装饰页面的每个元素。 有关`Page`的更多详细信息可在文档[SPA Blueprint.](blueprint.md)中找到。
+`Page`摄取页面模型的JSON表示形式，并处理内容以包装/装饰页面的每个元素。 有关`Page`的更多详细信息可在文档[SPA Blueprint](blueprint.md)中找到。
 
 ### Image.js {#image-js}
 

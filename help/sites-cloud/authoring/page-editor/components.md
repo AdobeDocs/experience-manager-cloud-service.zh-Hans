@@ -5,10 +5,10 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 79%
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 
 ## 一般用法 {#general-usage}
 
-在[编辑页面时，组件在页面编辑器侧面板的&#x200B;**组件**&#x200B;选项卡上可用。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+[编辑页面](/help/sites-cloud/authoring/page-editor/edit-content.md)时，可以在页面编辑器侧面板上的&#x200B;**组件**&#x200B;选项卡中使用组件。
 
 您可以选择一个组件，并将其拖动到页面上的所需位置。然后，可以使用下列方法编辑该组件：
 
@@ -34,7 +34,7 @@ AEM 附带多种现成的组件，这些组件为网站作者提供了全面功�
 * [编辑内容](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [编辑内容 – 全屏模式](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-有关将组件添加到页面的详细信息，请参阅[编辑页面内容。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+有关将组件添加到页面的更多信息，请参阅[编辑页面内容。](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 ## 全部组件概述 {#overview-of-all-components}
 

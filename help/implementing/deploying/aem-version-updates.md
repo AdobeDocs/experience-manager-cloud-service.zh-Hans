@@ -4,7 +4,7 @@ description: 了解Adobe Experience Manager (AEM) as a Cloud Service如何使用
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 2%
@@ -55,7 +55,7 @@ AEM as a Cloud Service使用持续集成和持续交付(CI/CD)，以确保您的
 
 >[!NOTE]
 >
-> 在[Experience Manager版本路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)上检查每月发布的关键日期，并标记您的日历，自行为关键活动做好准备以便进行发布。
+> 在[Experience Manager版本路线图](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)上检查每月发布的关键日期，并标记您的日历，自行为关键活动做好准备以便进行发布。
 
 ## 更新失败 {#update-failure}
 
@@ -97,7 +97,7 @@ AEM更新需要执行大量且完全自动化的产品验证管道，该管道�
 
 ## 复合节点存储 {#composite-node-store}
 
-通常，更新会产生零停机时间，包括创作实例（节点集群）的停机时间。 由于Oak中的[复合节点存储功能，可能会进行滚动更新。](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+通常，更新会产生零停机时间，包括创作实例（节点集群）的停机时间。 由于Oak](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)中的[复合节点存储功能，可能会进行滚动更新。
 
 此功能允许AEM同时引用多个存储库。 在[滚动部署](/help/implementing/deploying/overview.md#how-rolling-deployments-work)中，新AEM版本包含其自己的`/libs` （基于TarMK的不可变存储库）。 它与旧版AEM不同，不过两者都引用基于DocumentMK的共享可变存储库，该存储库包含`/content`、`/conf`、`/etc`等区域。
 

@@ -4,7 +4,7 @@ description: AEM具有广泛而强大的API，可用于您的数字体验项目�
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4182374ea9d603ed53e75511d34fdfcf69829200
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 8%
@@ -59,7 +59,7 @@ AEM基于以下四个主要Java API集构建，并按优先级降序排列。
 
 >[!TIP]
 >
->有关这些准则的详细信息，请参阅文档[了解Java API最佳实践。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+>有关这些准则的详细信息，请参阅文档[了解Java API最佳实践](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)。
 
 ## AEM交付和内容管理服务及API {#delivery-apis}
 

@@ -4,7 +4,7 @@ description: AEM Content Services旨在概括AEM中/来自AEM的内容的描述�
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%
@@ -65,7 +65,7 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 
   >[!NOTE]
   >
-  >虽然不是标准实施，但支持[多个选择器，](enabling-json-exporter.md#multiple-selectors)但`model`必须是第一个选择器。
+  >虽然不是标准实施，但支持[多个选择器](enabling-json-exporter.md#multiple-selectors)，但`model`必须是第一个选择器。
 
 ### 更多信息 {#further-information}
 
@@ -81,4 +81,4 @@ AEM Content Services旨在概括AEM中/来自Web页面的内容的描述和交�
 * [内容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [内容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 * [使用内容片段创作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)

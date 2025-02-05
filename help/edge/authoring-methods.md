@@ -4,10 +4,10 @@ description: 了解在 AEM 中决定如何创作内容时的重要注意事项�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
-source-git-commit: ceaedd8ee76b6a5008e0310cf7677660d84c1e44
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -54,7 +54,7 @@ Adobe 了解这一点，因此不提供一刀切的方法。AEM 是您的单一�
 这可以帮助您决定是否需要：
 
 * 使用内容片段编辑器和/或通用编辑器，[将 AEM 作为 headless CMS](/help/headless/introduction.md)。
-* AEM Edge Delivery Services 采用[基于文档的编辑](/help/edge/docs/authoring.md)，或使用[通用编辑器进行所见即所得的创作。](/help/edge/wysiwyg-authoring/authoring.md)
+* AEMEdge Delivery Services使用基于文档的编辑[进行编辑](/help/edge/docs/authoring.md)或使用通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)进行[WYSIWYG创作。
 
 ## 内容创作首选项 {#content-authoring}
 
@@ -64,8 +64,8 @@ Adobe 了解这一点，因此不提供一刀切的方法。AEM 是您的单一�
 
 这可以帮助您决定是否需要：
 
-* 使用[基于文档的编辑](/help/edge/docs/authoring.md)的 AEM Edge Delivery Services。
-* [使用通用编辑器进行所见即所得的创作。](/help/edge/wysiwyg-authoring/authoring.md)
+* 使用基于[文档的编辑](/help/edge/docs/authoring.md)的AEMEdge Delivery Services。
+* 使用通用编辑器[WYSIWYG创作](/help/edge/wysiwyg-authoring/authoring.md)。
 
 ## 项目目标 {#project-goals}
 

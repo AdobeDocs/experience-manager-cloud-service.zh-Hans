@@ -8,10 +8,10 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Sites 是用于创建和管理数字体验的强大工具集。内容作者�
 
 AEM 提供了同样强大的工具来翻译您的内容，以便您尽快地将该内容交付给其他地区或区域的受众。本文档历程向您介绍了创作工具，以便您了解如何在 AEM 中创建和管理内容，然后深入探究了管理您自己的翻译项目所需的知识。
 
-如果您已熟悉 AEM Sites 和您的翻译要求，则您可能已大致了解此历程。如果是这样的话，请考虑参阅[下面的其他资源部分](#additional-resources)下链接的技术文档。
+如果您已熟悉 AEM Sites 和您的翻译要求，则您可能已大致了解此历程。如果是这样的话，请考虑参阅以下](#additional-resources)的[其他资源部分下链接的技术文档。
 
 ## AEM 文档历程 {#documentation-journeys}
 

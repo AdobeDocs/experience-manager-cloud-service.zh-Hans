@@ -4,7 +4,7 @@ description: 了解如何通过在随后使用Cloud Manager配置管道部署的
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # 配置 CDN 凭证和身份验证 {#cdn-credentials-authentication}
 
-Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖凭据和身份验证以确保适当级别的企业安全。 通过使用Cloud Manager [配置管道部署的配置文件中声明规则，](/help/operations/config-pipeline.md)客户能够以自助方式配置以下内容：
+Adobe提供的CDN具有多种功能和服务，其中一些功能和服务依赖凭据和身份验证以确保适当级别的企业安全。 通过使用Cloud Manager [配置管道](/help/operations/config-pipeline.md)部署的配置文件中声明规则，客户可以自助配置以下内容：
 
 * AdobeCDN用于验证来自客户管理的CDN的的X-AEM-Edge-Key HTTP标头值。
 * 用于清除CDN缓存中的资源的API令牌。

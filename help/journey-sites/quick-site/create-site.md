@@ -5,10 +5,10 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM 快速站点创建历程的上一个文档[了解 Cloud Manager 和快速站点创建工作流](cloud-manager.md)中，您已了解 Cloud Manager 以及它如何将新的快速站点创建流程联系起来，您现在应：
+在AEM快速站点创建历程的上一个文档[了解Cloud Manager和快速站点创建工作流](cloud-manager.md)中，您已了解Cloud Manager以及它如何将新的快速站点创建流程联系起来，您现在应：
 
 * 了解 AEM Sites 和 Cloud Manager 如何协作来推动前端开发
 * 了解如何在不具有 AEM 知识的情况下将前端自定义步骤与 AEM 完全分离开来。
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 ## 获取站点模板 {#obtaining-template}
 
-最简单的入门方法是[从其 GitHub 存储库下载最新版本的 AEM 标准站点模板。](https://github.com/adobe/aem-site-template-standard/releases)
+最简单的入门方法是从其GitHub存储库[下载最新版本的AEM标准站点模板](https://github.com/adobe/aem-site-template-standard/releases)。
 
 下载后，您可以像上传任何其他包一样将它上传到您的 AEM 环境。如果您想了解有关此主题的更多信息，请参阅[“其他资源”部分](#additional-resources)，了解有关如何使用包的详细信息。
 
@@ -177,7 +177,7 @@ ht-degree: 100%
 * 了解如何使用模板创建站点。
 * 了解如何从新站点下载模板以提供给前端开发人员。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[设置您的管道](pipeline-setup.md)，其中您将创建前端管道来管理站点主题的自定义。
+在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档[设置您的管道](pipeline-setup.md)，其中您将创建前端管道来管理站点主题的自定义。
 
 ## 其他资源 {#additional-resources}
 

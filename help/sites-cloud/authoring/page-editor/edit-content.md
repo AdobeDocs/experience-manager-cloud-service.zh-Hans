@@ -5,10 +5,10 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 32%
+ht-degree: 34%
 
 ---
 
@@ -54,8 +54,8 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 您可以使用[组件浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)添加新组件。[组件占位符](#component-placeholder)显示组件所在的位置。
 
-1. 确保页面编辑器处于&#x200B;[**编辑**&#x200B;模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. 打开[组件浏览器。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+1. 确保页面编辑器处于&#x200B;[**编辑**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)。
+1. 打开[组件浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)。
 1. 将所需的组件拖动到[所需的位置](#component-placeholder)并释放。
 1. [编辑](#edit-content)新放置的组件。
 
@@ -67,7 +67,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 您可以使用段落系统的&#x200B;**将组件拖动到此处**&#x200B;占位符添加新组件：
 
-1. 确保页面编辑器处于&#x200B;[**编辑**&#x200B;模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. 确保页面编辑器处于&#x200B;[**编辑**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)。
 1. 可通过以下两种方式在段落系统中选择和添加新组件：
 
    * 从现有组件的工具栏或&#x200B;**将组件拖动到此处**&#x200B;框中选择&#x200B;**插入组件**&#x200B;选项 (+)。
@@ -87,13 +87,13 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
 ## 添加资产 {#adding-asset}
 
-您还可以通过从[资源浏览器拖动资源来向页面添加新组件。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)这将自动创建相应类型的组件（并包含资产）。
+您还可以通过从[资源浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)拖动资源来向页面添加新组件。这会自动创建相应类型的组件（并包含资产）。
 
 可针对您的安装配置此行为。有关更多详细信息，请参阅文档[组件参考指南](/help/implementing/developing/components/reference.md#component-placeholders)。
 
 要通过拖动以上某一资源类型创建组件，请执行以下操作：
 
-1. 确保您的页面处于&#x200B;[**编辑**&#x200B;模式。](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)。
 1. 打开[资源浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)。
 1. 将所需的资源拖动到所需位置。[组件占位符](#component-placeholder)显示组件所在的位置，如果插入该组件，将显示目标。
 1. 将资产发布到目标上。 在包含选定资产的所需位置创建一个适合该资产类型的组件。
@@ -133,7 +133,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
   ![“删除”按钮](assets/edit-content-delete.png)
 
-* **插入组件**&#x200B;打开对话框以[添加新组件。](#adding-a-component-from-the-paragraph-system)
+* **插入组件**&#x200B;打开对话框以[添加新组件](#adding-a-component-from-the-paragraph-system)。
 
   ![“插入”按钮](assets/edit-content-insert-component.png)
 
@@ -219,7 +219,7 @@ AEM页面编辑器提供了用于执行这些任务的直观的UI，并且还提
 
    ![组件工具栏的“布局”按钮](assets/edit-content-layout.png)
 
-1. 在选择Layout操作后，您可以像在[布局模式下一样修改组件的布局。](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
+1. 在选择Layout操作后，您可以修改组件的布局，就像在[布局模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)中一样。
 
    * 将显示用于调整组件大小的手柄。
    * 在屏幕的顶部将显示模拟器工具栏。

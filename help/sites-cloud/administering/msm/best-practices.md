@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 95%
+source-wordcount: '1414'
+ht-degree: 94%
 
 ---
 
@@ -99,7 +99,7 @@ MSM 可通过两种方式来帮助创建多语言网站：
 * 在 Blueprint 中&#x200B;**移动**&#x200B;页面将&#x200B;**不会**&#x200B;导致在使用标准转出配置进行转出后，在 Live Copy 中移动相应的页面：
    * 此行为的原因是页面移动隐式包含页面删除。这可能会导致发布时出现意外行为，因为删除创作实例上的页面会自动停用发布实例上的相应内容。这也可能对相关项目（如链接、书签等）产生其他影响。
       * 相应 Live Copy 页面中的内容继承已更新，以反映其源在 Blueprint 中的新位置。
-      * 要完全实施从 Blueprint 到 Live Copy 的页面移动，请考虑[页面移动最佳实践。](#page-move)
+      * 要完全实现从Blueprint到活动副本的页面移动，请考虑[页面移动最佳实践]。(#page-move)
 
 ### 页面移动最佳实践 {#page-move}
 

@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -91,4 +91,4 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 Live Copy 子树中的此类独立页面一般是&#x200B;**分离**&#x200B;操作的结果，或者是作者手动删除了以前的 Live Copy 页面，然后重新创建一个同名的页面所致。
 
-要避免发生这种情况，请使用 Live Copy **暂停**&#x200B;功能代替&#x200B;**分离**。可在[本文](creating-live-copies.md)中找到关于&#x200B;**分离**&#x200B;操作的更多详情。
+要避免发生这种情况，请使用 Live Copy **暂停**&#x200B;功能代替&#x200B;**分离**。有关&#x200B;**分离**&#x200B;操作的更多详细信息，请参阅[本文](creating-live-copies.md)。

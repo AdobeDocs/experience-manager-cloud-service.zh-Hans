@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 94%
+ht-degree: 85%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 使用预定义的结构可以方便地根据一组现有标准快速部署新站点。站点模板是一种将基本站点内容组合成方便且可重用的包的方法。
 
-站点模板通常包含基本站点内容和结构以及站点样式信息（称作[站点主题](site-themes.md)），以便快速启动新站点。管理员可以在[站点创建过程中](create-site.md)选择站点模板作为站点的基础。
+站点模板通常包含基本站点内容和结构以及站点样式信息（称为[站点主题](site-themes.md)），以便快速启动新站点。 管理员在站点创建过程](create-site.md)中选择站点[所基于的站点模板。
 
 模板具有强大的功能，因为它们可重用和自定义。由于您可以在 AEM 安装中使用多个模板，因此可以灵活地创建不同的站点来满足各种业务需求。
 
@@ -67,7 +67,7 @@ ht-degree: 94%
 
 ## 标准站点模板 {#standard-site-template}
 
-Adobe 提供了一个最佳实践参考模板，您可以基于此模板创建自己的模板。[GitHub 上提供了标准站点模板](https://github.com/adobe/aem-site-template-standard)。
+Adobe 提供了一个最佳实践参考模板，您可以基于此模板创建自己的模板。[GitHub上提供了标准站点模板](https://github.com/adobe/aem-site-template-standard)。
 
 可以下载[最新版本的标准站点模板](https://github.com/adobe/aem-site-template-standard/releases)，并可直接使用它[创建新站点。](create-site.md)
 

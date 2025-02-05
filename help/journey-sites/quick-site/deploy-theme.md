@@ -5,10 +5,10 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM 快速站点创建历程的上一个文档[自定义站点主题](customize-theme.md)中，您已了解如何构建主题、如何对主题进行自定义以及如何使用实时 AEM 内容测试主题，您现在应：
+在AEM快速站点创建历程的上一个文档[自定义站点主题](customize-theme.md)中，您已了解如何构建主题、如何对主题进行自定义以及如何使用实时AEM内容测试主题，您现在应：
 
 * 了解站点主题的基本结构以及如何对其进行编辑。
 * 了解如何通过本地代理使用实际 AEM 内容测试您的主题自定义。

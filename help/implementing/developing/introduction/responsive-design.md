@@ -4,7 +4,7 @@ description: 通过响应式设计，可以在多个设备上以多个方向有�
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 1%
@@ -73,7 +73,7 @@ W3C组提供了描述此CSS3功能和语法的[媒体查询](https://www.w3.org/
 
 ### 在AEM页面中使用媒体查询 {#using-media-queries-with-aem-pages}
 
-[WKND示例项目](/help/implementing/developing/introduction/develop-wknd-tutorial.md)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)使用[页面核心组件，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html)，该组件通过页面策略包含clientlibs。
+[WKND示例项目](/help/implementing/developing/introduction/develop-wknd-tutorial.md)和[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)使用[页面核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html)，该组件通过页面策略包含clientlibs。
 
 如果您自己的页面组件不基于页面核心组件，则还可以将客户端库文件夹包含在其的HTL或JSP脚本中。 这样做将生成并引用CSS文件，其中包含响应式网格正常运行所需的媒体查询。
 
@@ -126,7 +126,7 @@ JSP脚本将生成引用样式表的以下HTML代码：
 [核心组件图像组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)具有自适应图像选择等功能。
 
 * 默认情况下，图像组件使用[自适应图像Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html)来提供正确的演绎版。
-* [Web优化图像投放](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)也可通过其策略中的简单复选框使用，该复选框以WebP格式从DAM投放图像资产，平均可将图像的下载大小减小约25%。
+* [Web优化图像投放](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=zh-Hans)也可通过其策略中的简单复选框使用，该复选框以WebP格式从DAM投放图像资产，平均可将图像的下载大小减小约25%。
 
 ## 布局容器 {#layout-container}
 

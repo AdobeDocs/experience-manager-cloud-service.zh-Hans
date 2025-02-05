@@ -4,7 +4,7 @@ description: 了解通用编辑器发送的不同事件，您可以使用这些�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 例如，`aue:content-update`和`aue:ui-select`
 
-事件包括请求和响应的有效负载，并在相应的调用成功后触发。 有关调用及其负载示例的更多详细信息，请参阅文档[通用编辑器调用。](/help/implementing/universal-editor/calls.md)
+事件包括请求和响应的有效负载，并在相应的调用成功后触发。 有关调用及其负载示例的更多详细信息，请参阅文档[通用编辑器调用](/help/implementing/universal-editor/calls.md)。
 
 ## 内容更新事件 {#content-events}
 

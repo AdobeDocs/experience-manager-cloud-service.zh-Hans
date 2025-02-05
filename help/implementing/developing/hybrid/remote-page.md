@@ -4,7 +4,7 @@ description: RemotePage组件是一个自定义页面组件，用于在AEM中编
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -41,9 +41,9 @@ RemotePage组件从应用程序生成的`asset-manifest.json`中获取所有必�
 
 ## 限制 {#limitations}
 
-* RemotePage组件希望该实施提供与此处所找到的[类似的资产清单。](https://github.com/shellscape/webpack-manifest-plugin)但是，RemotePage组件仅经过测试可用于React框架（和通过remote-page-next组件的Next.js），因此不支持从其他框架(如Angular)远程加载应用程序。
+* RemotePage组件希望该实施提供类似于此处](https://github.com/shellscape/webpack-manifest-plugin)所提供的[的资源清单。 但是，RemotePage组件仅经过测试可用于React框架（以及通过remote-page-next组件的Next.js），因此不支持从其他框架(如Angular)远程加载应用程序。
 * 在AEM中执行远程渲染时，在应用程序的根HTML文件中定义的内部CSS和根DOM节点上的内联CSS将不可用。
 
 ## 技术详细信息 {#technical-details}
 
-与AEM SPA项目的其余部分一样，RemotePage组件是开源的。 有关RemotePage组件的完整技术详细信息，[请参阅GitHub存储库。](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+与AEM SPA项目的其余部分一样，RemotePage组件是开源的。 有关RemotePage组件的完整技术详细信息，[请参阅GitHub存储库](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)。

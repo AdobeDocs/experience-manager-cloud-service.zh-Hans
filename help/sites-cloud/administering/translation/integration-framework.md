@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 72%
+ht-degree: 69%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 72%
 
 翻译集成框架与第三方翻译服务集成，以编排 AEM 内容的译文。其中涉及三个基本步骤。
 
-1. [连接到您的翻译服务提供商。](#connecting-to-a-translation-service-provider)
-1. [创建翻译集成框架配置。](#creating-a-translation-integration-configuration)
-1. [将云配置与您的页面关联。](#configuring-pages-for-translation)
+1. [连接到您的翻译服务提供商](#connecting-to-a-translation-service-provider)。
+1. [创建翻译集成框架配置](#creating-a-translation-integration-configuration)。
+1. [将云配置与您的页面关联](#configuring-pages-for-translation)。
 
 有关 AEM 中内容翻译功能的概述，请参阅[翻译多语言站点的内容](overview.md)。
 
 >[!TIP]
 >
->如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用 AEM 强大的翻译工具翻译您的 AEM Sites 内容，非常适合没有 AEM 或翻译经验的人士。
+>如果不熟悉如何翻译内容，请参阅[站点翻译历程](/help/journey-sites/translation/overview.md)，将指导您使用AEM强大的翻译工具翻译您的AEM Sites内容，非常适合没有AEM或翻译经验的人士。
 
 ## 连接到翻译服务提供商 {#connecting-to-a-translation-service-provider}
 
@@ -58,7 +58,7 @@ ht-degree: 72%
 
 只有一个框架配置可控制如何翻译页面内容和资源。要创建翻译配置，请执行以下操作：
 
-1. 在[全局导航菜单中，](/help/sites-cloud/authoring/basic-handling.md#global-navigation)选择&#x200B;**工具>Cloud Service和翻译Cloud Service**。
+1. 在[全局导航菜单](/help/sites-cloud/authoring/basic-handling.md#global-navigation)中，选择&#x200B;**工具>Cloud Service和翻译Cloud Service**。
 1. 在您的内容结构中导航到要创建该配置的位置。这一般为站点专属的位置，但也可为全局位置。
 1. 在字段中提供以下信息，然后选择&#x200B;**创建**。
    1. 在下拉列表中选择&#x200B;**配置类型**。

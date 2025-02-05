@@ -4,7 +4,7 @@ description: AEM as a Cloud Service中的查询生成器API的谓词引用。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -171,7 +171,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-此谓词将结果限制在当前会话具有指定[JCR权限的项目中。](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+此谓词将结果限制在当前会话具有指定[JCR权限](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)的项目中。
 
 仅限过滤的谓词，不能使用搜索索引。 它不支持彩块化提取。
 
@@ -249,7 +249,7 @@ group.2_group.type=dam:Asset
 * **`path`** — 定义路径模式。
    * 根据`exact`属性，整个子树匹配（如在xpath中附加`//*`，但请注意，它不包括基路径），或者只匹配精确路径，该路径可以包括通配符(`*`)。
       * 默认为`true`。
-&lt;！—   *如果设置了`self`属性，则会搜索包含基节点的整个子树。—>
+&lt;!—   *如果设置了`self`属性，则会搜索包含基节点的整个子树。—>
 * **`exact`** — 如果`exact`是`true`，则确切的路径必须匹配，但它可以包含简单通配符(`*`)，这些通配符与名称匹配，但不匹配`/`；如果它是`false`（默认值），则包括所有后代（可选）。
 * **`flat`** — 仅搜索直接子级（例如在xpath中附加`/*`）（仅在`exact`不是true或可选时使用）。
 * **`self`** — 搜索子树，但包含作为路径指定的基节点（无通配符）。

@@ -4,9 +4,9 @@ description: 如果您是一名AEM开发人员，并且对Universal Editor的工
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '3160'
+source-wordcount: '3179'
 ht-degree: 1%
 
 ---
@@ -33,17 +33,17 @@ ht-degree: 1%
 要遵循本概述，您需要以下可用项。
 
 * [AEM as a Cloud Service的本地开发实例](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * 您的本地开发实例必须在`localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上使用HTTPS进行[配置以进行开发
-   * [必须安装WKND演示站点。](https://github.com/adobe/aem-guides-wknd)
-* [访问通用编辑器](/help/implementing/universal-editor/getting-started.md#onboarding)
-* [本地通用编辑器服务](/help/implementing/universal-editor/local-dev.md)正在运行以进行开发
-   * 确保将浏览器引导至[接受本地服务自签名证书。](/help/implementing/universal-editor/local-dev.md#editing)
+   * 您的本地开发实例必须在`localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上使用HTTPS进行[配置以进行开发。
+   * [必须安装WKND演示站点](https://github.com/adobe/aem-guides-wknd)。
+* [访问通用编辑器](/help/implementing/universal-editor/getting-started.md#onboarding)。
+* [本地通用编辑器服务](/help/implementing/universal-editor/local-dev.md)正在运行以进行开发。
+   * 确保将浏览器引导至[接受本地服务自签名证书](/help/implementing/universal-editor/local-dev.md#editing)。
 
-除了Web开发一般熟悉之外，本文档假定您基本熟悉AEM开发。 如果您没有开发AEM的经验，请考虑先查看[WKND教程，然后再继续。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+除了Web开发一般熟悉之外，本文档假定您基本熟悉AEM开发。 如果您没有开发AEM的经验，请考虑先查看[WKND教程，然后再继续](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
 
 ## 启动AEM并登录到通用编辑器 {#sign-in}
 
-如果您尚未安装WKND，则必须运行本地AEM开发实例，并启用HTTPS，如先决条件中所述。[](#prerequisites)此概述假定您的实例在`https://localhost:8443`上运行。
+如果您尚未安装WKND，则必须运行本地AEM开发实例，并启用HTTPS，如先决条件](#prerequisites)中所述。 [此概述假定您的实例在`https://localhost:8443`上运行。
 
 1. 在AEM编辑器中打开主WKND英语母版页。
 
@@ -189,7 +189,7 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * 始终建议使用最新版本的库。 如果您需要以前的版本，请参阅文档[AEM中的通用编辑器快速入门。](/help/implementing/universal-editor/getting-started.md#alternative)
+   * 始终建议使用最新版本的库。 如果您需要以前的版本，请参阅文档[AEM中的通用编辑器快速入门](/help/implementing/universal-editor/getting-started.md#alternative)。
 
 1. 将连接到本地Universal Editor服务所需的元数据添加到文件末尾。
 
@@ -572,21 +572,21 @@ X-Frame选项`sameorigin`阻止在框架中呈现AEM页面。 必须删除此标
 
 开始检测您自己的应用程序时，请牢记您在本示例中执行的基本步骤。
 
-1. [您可以设置开发环境。](#prerequisites)
+1. [您已设置开发环境](#prerequisites)。
    * 在安装了WKND的HTTPS上本地运行的AEM
    * 在HTTPS上本地运行的通用编辑器服务
 1. 您已更新AEM的OSGi设置，以允许远程加载其内容。
    * [&#39;org.apache.sling.engine.impl.SlingMainServlet&#39;](#sameorigin)
    * [&#39;com.day.crx.security.token.impl.impl.TokenAuthenticationHandler&#39;](#samesite-cookies)
-1. [您已添加 ](#ue-connect-remote-frame)
-1. [您定义了一个连接，以将更改保留在 ](#connection)
+1. [您已将`universal-editor-embedded.js`库添加到应用程序](#ue-connect-remote-frame)的页面组件的`customheaderlibs.html`文件中。
+1. [您定义了一个连接以在应用程序](#connection)的页面组件的`customheaderlibs.html`文件中保留更改。
    * 您定义了到本地AEM开发实例的连接。
    * 您还定义了到本地Universal Editor服务的连接。
-1. [您检测了Teaser组件。](#instrumenting-components)
-1. [您检测了Teaser的子组件。](#subcomponents)
-1. [您定义了一个自定义身份验证标头，以便可以使用本地通用编辑器服务保存更改。](#auth-header)
-1. [您检测了应用程序是否使用属性面板。](#properties-rail)
-1. [您检测了Teaser组件以使用属性面板。](#properties-rail-component)
+1. [您检测了Teaser组件](#instrumenting-components)。
+1. [您检测了Teaser](#subcomponents)的子组件。
+1. [您定义了一个自定义身份验证标头，以便可以使用本地通用编辑器服务保存更改](#auth-header)。
+1. [您已检测应用程序以使用属性面板](#properties-rail)。
+1. [您已检测Teaser组件以使用属性面板](#properties-rail-component)。
 
 您可以按照这些相同的步骤来检测您自己的应用程序，以便与通用编辑器一起使用。 JCR中的任何属性都可以向通用编辑器公开。
 

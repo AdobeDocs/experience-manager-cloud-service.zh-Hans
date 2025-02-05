@@ -4,10 +4,10 @@ description: 配置流量过滤规则（包括 Web 应用程序防火墙 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
 例如，客户可在 Apache 层配置[ Dispatcher 模块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制访问某些内容。
 
-正如本文所述，还可使用 Cloud Manager 的[配置管道将流量过滤器规则部署到 Adobe Managed CDN。](/help/operations/config-pipeline.md)除了基于 IP 地址、路径和标头等属性的流量过滤规则或基于设置速率限制的规则之外，客户还可许可过滤规则的一个强有力的子类别，称为 WAF 规则。
+如本文所述，可以使用Cloud Manager的[配置管道](/help/operations/config-pipeline.md)将流量过滤器规则部署到Adobe托管的CDN。 除了基于 IP 地址、路径和标头等属性的流量过滤规则或基于设置速率限制的规则之外，客户还可许可过滤规则的一个强有力的子类别，称为 WAF 规则。
 
 ## 建议流程 {#suggested-process}
 
@@ -105,11 +105,11 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
 1. 如果许可了 WAF 规则，则应在 Cloud Manager 中为新的和现有的程序场景启用它，如下所述。
 
-   1. 要在新程序上配置 WAF，请在[添加生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)时，选中&#x200B;**安全性**&#x200B;选项卡上的 **WAF-DDOS 保护**&#x200B;复选框。
+   1. 要在新程序上配置WAF，请在[添加生产程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)时选中“**安全性**”选项卡上的&#x200B;**WAF-DDOS保护**&#x200B;复选框。
 
    1. 要在现有程序上配置 WAF，可在任何时候[编辑您的程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)，并在&#x200B;**安全性**&#x200B;选项卡上取消选中或选中 **WAF-DDOS** 选项。
 
-1. 按照 [配置管道文章中的说明，在 Cloud Manager 中创建配置管道。](/help/operations/config-pipeline.md#managing-in-cloud-manager) 管道将引用顶层 `config` 文件夹，`cdn.yaml` 文件放置在其下方的某处，参见 [使用配置管道](/help/operations/config-pipeline.md#folder-structure)。
+1. 在Cloud Manager中创建配置管道，如[配置管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)中所述。 管道将引用顶级`config`文件夹，并将`cdn.yaml`文件放置在下方的某个位置，请参阅[使用配置管道](/help/operations/config-pipeline.md#folder-structure)。
 
 ## 流量过滤规则语法 {#rules-syntax}
 

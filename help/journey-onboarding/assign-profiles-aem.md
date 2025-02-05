@@ -4,10 +4,10 @@ description: 在配置云资源后，可使用 AEM 产品配置文件授予您�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 >title="分配 AEM 产品配置文件"
 >abstract="您无权使用 Experience Manager Assets。请联系您的管理员。"
 
-在[上线历程](overview.md)的此部分中，您将了解如何使用 AEM 产品配置文件授予您的团队访问 AEM 的权限。
+在[入门培训历程](overview.md)的这一可选部分中，您将了解如何使用AEM产品配置文件授予您的团队访问AEM的权限。
 
 ## 目标 {#objective}
 
-在您阅读此上线历程中的上一篇文档[创建环境](create-environments.md)并配置云资源后，可使用 AEM 产品配置文件授予您的团队访问 AEM 本身的权限。作为系统管理员，通过分配 AEM 产品配置文件即可实现这一点。
+在阅读了本次入门培训历程中的上一篇文档[创建环境](create-environments.md)并配置云资源后，使用AEM产品配置文件授予您的团队访问AEM本身的权限。 作为系统管理员，通过分配 AEM 产品配置文件即可实现这一点。
 
 阅读本文档后，您应该了解：
 
@@ -64,7 +64,7 @@ ht-degree: 100%
 
 按照以下步骤从 Admin Console 查看 AEM 产品配置文件。
 
-1. 登录到 Admin Console，网址是 [`https://adminconsole.adobe.com`。](https://adminconsole.adobe.com)
+1. 在[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)登录Admin Console。
 
 1. 在&#x200B;**概述**&#x200B;页面，从&#x200B;**产品和服务**&#x200B;信息卡中选择 **Adobe Experience Manager as a Cloud Service**。
 

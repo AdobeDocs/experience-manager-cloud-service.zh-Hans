@@ -5,10 +5,10 @@ exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 
 ## 其他资源 {#additional-resources}
 
-我们建议您查看文档 [AEM Headless 翻译快速入门](getting-started.md)来继续 Headless 翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续 Headless 历程所必需的。
+我们建议您查看文档[AEM headless翻译入门](getting-started.md)来继续无头翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续无头翻译历程所必需的。
 
 * [MSM 和翻译](/help/sites-cloud/administering/msm-and-translation.md) – AEM 的多站点管理器的详细信息及其使用翻译工具的方式
 * [AEM as a Headless CMS 简介](/help/headless/introduction.md)

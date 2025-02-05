@@ -5,10 +5,10 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 
 目标是让您广泛了解 Headless 技术、AEM 提供 Headless 内容的方式以及翻译 Headless 内容的方式。如果您不熟悉所有这些主题，这将是您的理想起点。
 
-如果您已熟悉 AEM、Headless 和翻译，则您可能已大致了解此历程。请考虑参阅[下面的“其他资源”部分](#additional-resources)下链接的技术文档。
+如果您已熟悉 AEM、Headless 和翻译，则您可能已大致了解此历程。请考虑参阅以下[其他资源部分](#additional-resources)下链接的技术文档。
 
 ## AEM 文档历程 {#documentation-journeys}
 

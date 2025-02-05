@@ -4,7 +4,7 @@ description: 具有机密值和特定于环境的值的OSGi配置
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 1%
@@ -22,7 +22,7 @@ OSGi提供了标准化的基元，允许从小型、可重用的协作组件构�
 
 >[!TIP]
 >
->您可以使用Cloud Manager配置环境变量。 有关详细信息，请参阅[此处](/help/implementing/cloud-manager/environment-variables.md)的文档。
+>您可以使用Cloud Manager配置环境变量。 有关详细信息，请参阅文档[此处](/help/implementing/cloud-manager/environment-variables.md)。
 
 ## OSGi配置文件 {#osgi-configuration-files}
 
@@ -189,13 +189,13 @@ OSGi配置工厂文件名使用`<factoryPID>-<name>.cfg.json`命名约定
 
 ### 使用AEM SDK快速入门生成OSGi配置 {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
-AEM SDK快速入门Jar的AEM Web控制台可用于配置OSGi组件，并将OSGi配置导出为JSON。 这对于配置AEM提供的OSGi组件非常有用，在AEM项目中定义OSGi配置的开发人员可能无法很好地了解这些组件的OSGi属性及其值格式。
+AEM SDK Quickstart Jar的AEM Web Console可用于配置OSGi组件，并将OSGi配置导出为JSON。 这对于配置AEM提供的OSGi组件非常有用，在AEM项目中定义OSGi配置的开发人员可能无法很好地了解这些组件的OSGi属性及其值格式。
 
 >[!NOTE]
 >
 >AEM Web控制台的配置UI确实将`.cfg.json`文件写入存储库。 因此，请注意，当AEM项目定义的OSGi配置可能与生成的配置不同时，此工作流可避免在本地开发期间潜在的意外行为。
 
-1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK快速入门Jar的AEM Web控制台
+1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK Quickstart Jar的AEM Web控制台
 1. 导航到&#x200B;**OSGi** > **配置**
 1. 要进行配置，请找到OSGi组件并选择要编辑的其标题
    ![OSGi配置](./assets/configuring-osgi/configuration.png)

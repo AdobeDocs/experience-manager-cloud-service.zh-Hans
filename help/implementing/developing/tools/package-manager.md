@@ -4,7 +4,7 @@ description: 了解AE的基础知识；使用包管理器进行包管理。
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3772'
 ht-degree: 3%
@@ -197,7 +197,7 @@ Package Manager分为四个主要功能区域：
 | include | Include将包括指定目录中与正则表达式匹配的所有文件和文件夹。 Include **将不会**&#x200B;包含指定根路径下的其他文件或文件夹。 |
 | 排除 | 排除将排除与正则表达式匹配的所有文件和文件夹。 |
 
-最常在首次[创建包时定义包筛选器。](#creating-a-new-package)但是，以后也可以编辑它们，此后应重新构建包以根据新的筛选器定义更新其内容。
+最常在首次[创建包](#creating-a-new-package)时定义包筛选器。 但是，它们也可以稍后进行编辑，之后应重建包以根据新的筛选器定义更新其内容。
 
 >[!TIP]
 >
@@ -242,7 +242,7 @@ Package Manager分为四个主要功能区域：
 
 ### 创建资源包 {#creating-a-new-package}
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击&#x200B;**创建包**。
 
@@ -266,7 +266,7 @@ Package Manager分为四个主要功能区域：
 
    ![新包](assets/new-package.png)
 
-1. 单击&#x200B;**编辑**&#x200B;以定义[包内容。完成编辑设置后，](#package-contents)单击&#x200B;**保存**。
+1. 单击&#x200B;**编辑**&#x200B;以定义[包内容](#package-contents)。 完成编辑设置后，单击&#x200B;**保存**。
 
 1. 您现在可以[生成](#building-a-package)您的包。
 
@@ -274,13 +274,13 @@ Package Manager分为四个主要功能区域：
 
 >[!TIP]
 >
->为避免超时，Adobe建议[不要创建大型包。](#package-size)
+>为避免超时，Adobe建议[不要创建大型包](#package-size)。
 
 ### 构建资源包 {#building-a-package}
 
 通常在[创建包](#creating-a-new-package)的同时生成包，但可在以后返回生成或重建包。 如果存储库中的内容已更改或包过滤器已更改，此功能会很有用。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开包详细信息。
 
@@ -290,13 +290,13 @@ Package Manager分为四个主要功能区域：
 
 >[!TIP]
 >
->为避免超时，Adobe建议[不要创建大型包。](#package-size)
+>为避免超时，Adobe建议[不要创建大型包](#package-size)。
 
 ### 编辑资源包 {#edit-package}
 
 将包上传到AEM后，您可以修改其设置。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开包详细信息。
 
@@ -310,7 +310,7 @@ Package Manager分为四个主要功能区域：
 
 生成包后，可以对其进行重新包装。 重新包装会更改包信息，但不更改包内容，如缩略图、描述等。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开包详细信息。
 
@@ -324,7 +324,7 @@ Package Manager分为四个主要功能区域：
 
 由于包的每个版本都作为任何其他包出现在列表中，因此包管理器可以找到选定包的其他版本。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开包详细信息。
 
@@ -334,7 +334,7 @@ Package Manager分为四个主要功能区域：
 
 生成包后，可以查看其内容。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开包详细信息。
 
@@ -348,7 +348,7 @@ Package Manager分为四个主要功能区域：
 
 ### 正在将包下载到您的文件系统 {#downloading-packages-to-your-file-system}
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开包详细信息。
 
@@ -358,11 +358,11 @@ Package Manager分为四个主要功能区域：
 
 >[!TIP]
 >
->为避免超时，Adobe建议[不要创建大型包。](#package-size)
+>为避免超时，Adobe建议[不要创建大型包](#package-size)。
 
 ### 从您的文件系统上传包 {#uploading-packages-from-your-file-system}
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 选择要将包上载到其中的组文件夹。
 
@@ -370,7 +370,7 @@ Package Manager分为四个主要功能区域：
 
 1. 提供有关已上传文件包的必需信息。
 
-   ![包上载对话框](assets/package-upload-dialog.png)
+   ![包上载对话框。](assets/package-upload-dialog.png)
 
    * **包** — 使用&#x200B;**浏览……**&#x200B;按钮从本地文件系统中选择所需的包。
    * **强制上传** — 如果已存在具有此名称的包，则此选项将强制上传并覆盖现有包。
@@ -381,7 +381,7 @@ Package Manager分为四个主要功能区域：
 
 >[!TIP]
 >
->为避免超时，Adobe建议[不要创建大型包。](#package-size)
+>为避免超时，Adobe建议[不要创建大型包](#package-size)。
 
 ### 验证包 {#validating-packages}
 
@@ -471,14 +471,14 @@ Package Manager分为四个主要功能区域：
 
 可以通过两种不同的方式验证包：
 
-* [通过包管理器UI](#via-package-manager)
-* [通过HTTPPOST请求，例如使用cURL](#via-post-request)
+* 通过包管理器UI[](#via-package-manager)。
+* [通过HTTPPOST请求，例如使用cURL](#via-post-request)。
 
 在上传包后但在安装包之前应始终进行验证。
 
 ##### 通过包管理器验证包 {#via-package-manager}
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开包详细信息。
 
@@ -516,7 +516,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 包由其过滤器定义。 您可以让包管理器将包的过滤器应用于现有存储库内容，以显示包的过滤器定义涵盖的存储库的内容。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开包详细信息。
 
@@ -534,7 +534,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 在安装包之前，包管理器会自动创建包含被覆盖内容的快照包。 如果您卸载包，则会重新安装此快照。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开要安装的包的包详细信息。
 
@@ -556,7 +556,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 ### 重新安装包 {#reinstalling-packages}
 
-重新安装软件包对[初始安装软件包时处理的已安装软件包执行相同的步骤。](#installing-packages)
+重新安装软件包对[初始安装软件包](#installing-packages)时所处理的已安装软件包执行相同的步骤。
 
 ### 基于文件系统的上载和安装 {#file-system-based-upload-and-installation}
 
@@ -576,7 +576,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 卸载软件包会将存储库的内容还原为软件包管理器在安装之前自动生成的快照。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开要卸载的包的包详细信息。
 
@@ -590,7 +590,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 删除包只会从包管理器中删除其详细信息。 如果已经安装了此包，则不会删除安装的内容。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 通过单击包名称，打开要从包列表中删除的包的包详细信息。
 
@@ -602,7 +602,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 复制包的内容以将其安装在发布实例上。
 
-1. [访问包管理器。](#accessing)
+1. [访问包管理器](#accessing)。
 
 1. 单击包名称，从包列表中打开要复制的包的包详细信息。
 
@@ -616,4 +616,4 @@ AEM包可用于在AEMaaCS环境中创建和共享内容。
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com)提供用于本地开发AEM SDK的AEM包。 在Software Distribution上提供的AEM包不得安装在AEMaaCS云环境中，除非经Adobe支持明确批准。
 
-有关详细信息，请参阅[软件分发文档。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+有关详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。

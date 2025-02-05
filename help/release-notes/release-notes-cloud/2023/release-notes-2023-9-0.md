@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2023.9.0 版�
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 95%
@@ -58,7 +58,7 @@ Edge Delivery 是一组新的可组合服务，专注于最大限度地发挥内
 
 ### 管理视图中的新增功能 {#admin-view-features}
 
-* **将AEM Assetsas a Cloud Service与基于文档的创作相集成，以便Edge Delivery Services**：将AEM Assets与基于文档的创作相集成，以便Edge Delivery Services在Microsoft Word或Google文档中创作文档时，能够[使用AEM Assets存储库中可用的图像](/help/edge/using.md#integrate-assets-edge)。
+* **将AEM Assetsas a Cloud Service与基于文档的创作相集成，以便Edge Delivery Services**：将AEM Assets与基于文档的创作相集成，以便Edge Delivery Services在Microsoft Word或Google Docs中创作文档时，能够[使用AEM Assets存储库中可用的图像](/help/edge/using.md#integrate-assets-edge)。
 
 * **提取 ZIP 存档**：可选择在 Experience Manager 中管理的 ZIP 存档，并且无需下载文件，即可[将文件直接提取到 Experience Manager 中](/help/assets/manage-digital-assets.md#extract-zip-archives)。
 
@@ -66,7 +66,7 @@ Edge Delivery 是一组新的可组合服务，专注于最大限度地发挥内
 
 ### 可在 [!DNL Experience Manager Assets] 中找到的预发布功能 {#prerelease-features-assets}
 
-* **Dynamic Media**：[Dynamic Media 中的视频支持多字幕和多音轨](/help/assets/dynamic-media/video.md#about-msma)，现在可轻松地将多个字幕和多个音轨添加到主视频。此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
+* **Dynamic Media**：[Dynamic Media 中的视频支持多字幕和多音轨](/help/assets/dynamic-media/video.md#about-msma)，现在可轻松地将多个字幕和多个音轨添加到主视频。此功能意味着全球观众都能观看您的视频。您可以用多种语言为全球观众自定单一的、已发布的主视频，并遵守不同地区的可访问性指南。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
   ![所选视频资源的“属性”页面上的“字幕和音轨”选项卡。](/help/release-notes/assets/msma-aem-cs.png)*所选视频资源的“属性”页面上的“字幕和音轨”选项卡。*
 
@@ -118,7 +118,7 @@ Edge Delivery 是一组新的可组合服务，专注于最大限度地发挥内
 
 ### 与营销活动相关的 URL 参数的新 CDN 缓存行为 {#cache-url-params}
 
-对于新环境，CDN将默认删除与营销相关的查询参数，以提高营销活动性能和缓存命中率。 现有环境不受影响。[了解详情。](/help/implementing/dispatcher/caching.md#marketing-parameters)
+对于新环境，CDN将默认删除与营销相关的查询参数，以提高营销活动性能和缓存命中率。 现有环境不受影响。[了解详情](/help/implementing/dispatcher/caching.md#marketing-parameters)。
 
 ### 流量过滤规则（包括 WAF 规则）早期采用者计划 {#waf-early-adopter}
 

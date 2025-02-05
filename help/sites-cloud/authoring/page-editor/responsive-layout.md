@@ -5,7 +5,7 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 85%
@@ -137,7 +137,7 @@ AEM 让您根据设备的宽度定义布局：
 
 >[!NOTE]
 >
->如果布局容器尚不可用，则必须为段落系统/页面显式[激活&#x200B;**布局容器**。](/help/sites-cloud/administering/responsive-layout.md)
+>如果布局容器&#x200B;**尚不可用，则必须为段落系统/页面](/help/sites-cloud/administering/responsive-layout.md)显式[激活**。
 
 1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)。从此处，您可以将其拖动到页面上的所需位置，之后您可以看到&#x200B;**将组件拖动到此处**&#x200B;占位符。
 1. 接下来，您可以向布局容器中添加组件。这些组件将存放实际的内容：

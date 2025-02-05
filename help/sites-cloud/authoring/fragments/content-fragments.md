@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 90%
@@ -129,8 +129,8 @@ Adobe Experience Manager (AEM) as a Cloud Service中的内容片段是[作为独
 
 对于中间内容，您可以：
 
-* 从[组件浏览器添加组件。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* 从[Assets浏览器添加资源。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* 从[组件浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)添加组件
+* 从[Assets浏览器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)添加资源
 * 使用[关联内容](#using-associated-content)作为中间内容的源。
 
 >[!CAUTION]

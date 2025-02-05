@@ -5,7 +5,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4415'
 ht-degree: 80%
@@ -23,7 +23,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->[模板也可用于创建可通过通用编辑器编辑的页面。](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[模板也可用于创建可通过通用编辑器编辑的页面](/help/sites-cloud/authoring/universal-editor/templates.md)。
 
 使用&#x200B;**模板编辑器**，创建和维护模板不是开发人员专属的任务。 高级用户（称为&#x200B;**模板作者**）可以创建模板。 开发人员需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，**模板作者**&#x200B;就可以灵活地创建和配置模板，而无需开发人员参与。
 
@@ -95,7 +95,7 @@ ht-degree: 80%
 >
 >切勿在模板中输入任何必须[国际化](/help/implementing/developing/extending/i18n/dev.md)的信息。
 >
->对于必须本地化的模板元素（如页眉和页脚），请利用[核心组件的本地化功能。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>对于必须本地化的模板元素（如页眉和页脚），请使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
 
 ### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ ht-degree: 80%
 
 由于渲染页面时会引用模板，因此必须发布完全配置的模板，才能在发布环境中使用该模板。
 
-使用&#x200B;**[模板控制台](/help/sites-cloud/administering/templates-console.md)**&#x200B;的Publish模板
+使用&#x200B;**[模板控制台](/help/sites-cloud/administering/templates-console.md)**&#x200B;的Publish模板。
 
 ## 编辑模板 - 模板作者 {#editing-templates-template-authors}
 
@@ -305,7 +305,7 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->将组件和资产添加到模板的操作与[页面创作时的类似操作虽然并不完全相同，但也存在许多相似之处。](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>将组件和资源添加到模板的操作与在[页面创作](/help/sites-cloud/authoring/page-editor/edit-content.md)时执行的类似操作虽然并不完全相同，但也存在许多相似之处。
 
 #### 组件操作 {#component-actions}
 
@@ -647,4 +647,4 @@ ht-degree: 80%
    >在已不再是草稿的模板上更改组件的锁定状态时，AEM 会显示明确的警告消息。
 
 1. 为特定于站点的模板[创建您自己的文件夹](#creating-a-template-folder-admin)。
-1. 从&#x200B;**[模板控制台[Publish您的模板](#publishing-a-template-template-author)。]**(/help/sites-cloud/administering/templates-console.md)
+1. 从&#x200B;**[模板控制台]**(/help/sites-cloud/administering/templates-console.md)中[Publish您的模板](#publishing-a-template-template-author)。

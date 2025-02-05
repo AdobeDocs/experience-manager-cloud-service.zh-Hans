@@ -5,16 +5,16 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '703'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 # 重新处理数字资产 {#reprocessing-digital-assets}
 
-| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | 具有OpenAPI功能的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
 如果文件夹已具有您后来更改的现有元数据配置文件，您可以重新处理该文件夹中的资产。 如果希望将新编辑的预设重新应用于文件夹中的现有资源，则必须重新处理文件夹。 您可以根据需要重新处理尽可能多的资产。
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ### 重新处理文件夹中的Dynamic Media资源 {#reprocessing-dynamic-media}
 
-如果文件夹已具有现有的Dynamic Media图像配置文件或您后来更改的Dynamic Media视频配置文件，您可以重新处理该文件夹中的资产。 有关详细信息，请访问[重新处理文件夹中的Dynamic Media资源。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+如果文件夹已具有现有的Dynamic Media图像配置文件或您后来更改的Dynamic Media视频配置文件，您可以重新处理该文件夹中的资产。 有关详细信息，请访问[重新处理文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)中的Dynamic Media资源。
 
 >[!NOTE]
 >

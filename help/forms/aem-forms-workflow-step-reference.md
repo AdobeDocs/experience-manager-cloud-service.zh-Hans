@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流，使用分配任务步骤，转换为PDF/A步骤，生成记录步骤的文档，使用工作流，签名文档步骤，生成打印输出步骤，生成非交互式PDF输出
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '7379'
 ht-degree: 0%
@@ -121,7 +121,7 @@ ht-degree: 0%
     -->
 
 * **[!UICONTROL 代理人]** > **[!UICONTROL 分配选项]**：指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或者将任务分配给特定的AEM用户或组。
-* **[!UICONTROL 参与者选择器]**：在“分配选项”字段中选择了&#x200B;**[!UICONTROL 动态到用户或组]**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[将工作流动态分配给用户](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[创建自定义Adobe Experience Manager动态参与者步骤。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL 参与者选择器]**：在“分配选项”字段中选择了&#x200B;**[!UICONTROL 动态到用户或组]**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[将工作流动态分配给用户](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[创建自定义Adobe Experience Manager动态参与者步骤](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)。
 
 * **[!UICONTROL 参与者]**：在&#x200B;**[!UICONTROL 参与者选择器]**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;选项时，该字段可用。 利用字段，可为RandomParticipantChooser选项选择用户或组。
 
@@ -554,7 +554,7 @@ Send a document directly to a printer. It supports the following printing access
 
 * **[!UICONTROL 区域设置]**：指定用于生成PDF文档的语言。 如果提供文本值，请从列表中选择一种语言或选择以下值之一：
    * **[!UICONTROL 要使用服务器默认值]**：
-（默认）使用[!DNL AEM Forms]服务器上配置的区域设置。 “区域设置”设置是使用“管理控制台”配置的。 (请参阅[Designer帮助](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。)
+（默认）使用[!DNL AEM Forms]服务器上配置的区域设置。 “区域设置”设置是使用“管理控制台”配置的。 (请参阅[Designer帮助](https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf)。)
 
    * **[!UICONTROL 要使用自定义值]**：
 在文本框中键入区域设置代码，或选择包含区域设置代码的字符串变量。 有关支持的区域设置代码的完整列表，请参阅https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html。

@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2721'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 95%
 
 * **创建 Live Copy**（**站点**）
 
-   * MSM 可让您[创建单个页面或网站子分支的临时（一次性）Live Copy。](creating-live-copies.md#creating-a-live-copy-of-a-page)例如，复制子分支可提供有关产品的新/更新版本的信息。通过此方式创建 Live Copy：
+   * MSM允许您[创建单个页面或网站子分支的临时（一次性）Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page)。 例如，复制子分支可提供有关产品的新/更新版本的信息。 通过此方式创建 Live Copy：
       * 创建临时 Live Copy（无需 Blueprint 配置）。
       * 可用于（立即）创建任何页面/分支的 Live Copy。
       * 需要&#x200B;**同步**（不提供&#x200B;**转出**&#x200B;按钮）。
@@ -137,11 +137,11 @@ ht-degree: 95%
 
 * **Live Copy 概述**（**站点**）
 
-   * 利用此控制台，您可以[查看和管理您的 Blueprint 及其 Live Copy。](live-copy-overview.md)
+   * 此控制台允许您[查看和管理您的Blueprint及其活动副本](live-copy-overview.md)。
 
 * **蓝图**（**工具** – **Sites**）
 
-   * 利用此控制台，您可以[创建和管理您的 Blueprint 配置。](creating-live-copies.md#creating-a-blueprint-configuration)
+   * 此控制台允许您[创建和管理您的Blueprint配置](creating-live-copies.md#creating-a-blueprint-configuration)。
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ Live Copy 的源可以是常规页面，也可以是 Blueprint 配置包含的�
 
 ### 转出冲突 {#rollout-conflicts}
 
-转出可能会变得复杂，尤其是当作者同时在源和 Live Copy 中编辑内容时。因此，了解 AEM 如何处理[转出期间可能发生的任何冲突](rollout-conflicts.md)会很有用。
+转出可能会变得复杂，尤其是当作者同时在源和 Live Copy 中编辑内容时。因此，了解AEM如何处理转出](rollout-conflicts.md)期间可能发生的任何[冲突很有用。
 
 ### 暂停和取消继承与同步 {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -329,7 +329,7 @@ Live Copy 中的每个页面和组件均通过实时关系与其源页面和组�
 
 1. 决定需要[指定要使用的转出配置](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)并按需配置的情况。
 1. 如有必要，[创建Blueprint配置](creating-live-copies.md#creating-a-blueprint-configuration)以标识Live Copy的源内容。
-1. [创建 Live Copy。](creating-live-copies.md#creating-a-live-copy)
+1. [创建Live Copy](creating-live-copies.md#creating-a-live-copy)。
 1. 根据需要更改源内容。您应采用您组织已制定的常规内容审查和审批流程。
 1. [转出](creating-live-copies.md#rolling-out-a-blueprint) Blueprint，或[将 Live Copy 与更改同步](creating-live-copies.md#synchronizing-a-live-copy)。
 

@@ -5,10 +5,10 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM 快速站点创建历程的上一个文档[检索 Git 存储库访问信息](retrieve-access.md)中，您已了解前端开发人员如何使用 Cloud Manager 访问 Git 存储库信息，您现在应：
+在AEM快速站点创建历程的上一个文档[检索Git存储库访问信息](retrieve-access.md)中，您已了解前端开发人员如何使用Cloud Manager访问Git存储库信息，您现在应：
 
 * 从较高层面了解什么是 Cloud Manager。
 * 已检索您的凭据来访问 AEM Git，以便您能提交自定义项。
@@ -111,7 +111,7 @@ ht-degree: 100%
 自定义完成后，可以将其提交到 AEM Git 存储库。首先，您必须将存储库克隆到本地计算机。
 
 1. 从命令行中，导航到要克隆存储库的位置。
-1. 执行[之前从 Cloud Manager 中检索到的命令。](retrieve-access.md)它应类似于 `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。使用[在此历程的上一部分中检索到的](retrieve-access.md) Git 用户名和密码。
+1. 执行您[之前从Cloud Manager](retrieve-access.md)中检索到的命令。 它应类似于`git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`。 使用在此历程的上一部分中[检索到的Git用户名和密码](retrieve-access.md)。
 
    ![克隆存储库](assets/clone-repo.png)
 
@@ -138,7 +138,7 @@ ht-degree: 100%
 * 了解如何通过本地代理使用实际 AEM 内容测试您的主题自定义。
 * 了解如何将更改提交到 AEM Git 存储库。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[部署自定义主题](deploy-theme.md)，其中您将了解如何使用前端管道部署主题。
+在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档[部署自定义主题](deploy-theme.md)，了解如何使用前端管道部署主题。
 
 ## 其他资源 {#additional-resources}
 

@@ -5,10 +5,10 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2200'
-ht-degree: 73%
+ht-degree: 68%
 
 ---
 
@@ -75,8 +75,8 @@ ht-degree: 73%
 可通过以下几个步骤来创建并使用标记来整理您的内容。
 
 1. [为标记创建命名空间](#creating-namespaces)（或选择一个现有的命名空间以重用）。
-1. [新建标记。](#creating-tags)
-1. [发布标记。](#publishing-tags)
+1. [创建新标记](#creating-tags)。
+1. [Publish标记](#publishing-tags)。
 
 ### 创建命名空间 {#creating-namespaces}
 
@@ -96,7 +96,7 @@ ht-degree: 73%
 
 将创建命名空间。在标记控制台中，命名空间位于最低级别（位于控制台的最左列），由文件夹图标表示，这反映了它们作为“容器”或其他标记分组的性质。
 
-您现在可以在此命名空间中[创建新标记](#creating-tags)或[管理现有标记](#managing-tags)。
+您现在可以[在此命名空间中创建新标记](#creating-tags)或[管理现有标记](#managing-tags)。
 
 命名空间无需包含任何子标记。由于命名空间本身是一个标记，因此它可以像任何其他标记一样用来整理内容。但是，要继续创建结构化标记分类，您可以根据项目要求在该命名空间内[创建子标记](#creating-tags)。
 
@@ -104,7 +104,7 @@ ht-degree: 73%
 
 标记通常将添加到命名空间中。
 
-1. 要创建标记，请打开[标记控制台。](#tagging-console)
+1. 要创建标记，请打开[标记控制台](#tagging-console)。
 
 1. 选择要创建标记的命名空间。 或者选择另一个标记以在其下方创建子标记。
 
@@ -206,7 +206,7 @@ Be sure to [apply permissions](#setting-tag-permissions) to the namespace before
 
 有关添加语言翻译的详细信息，请参阅[管理不同语言的标记](#managing-tags-in-different-languages)部分。
 
-如果您对已发布的标记进行了更改，则可能需要[重新发布它](#publishing-tags)。
+如果对已发布的标记进行了更改，则可能需要[重新发布该标记](#publishing-tags)。
 
 ### 取消发布标记 {#unpublishing-tags}
 

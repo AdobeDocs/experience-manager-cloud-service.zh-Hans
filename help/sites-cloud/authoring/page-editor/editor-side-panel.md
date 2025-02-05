@@ -5,7 +5,7 @@ exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 38%
@@ -79,7 +79,7 @@ ht-degree: 38%
 
 ![组件浏览器信息](assets/editor-side-panel-component-description.png)
 
-有关可供您使用的组件的更多详细信息，请参阅[组件控制台。](/help/sites-cloud/authoring/components-console.md)
+有关可供您使用的组件的更多详细信息，请参阅[组件控制台](/help/sites-cloud/authoring/components-console.md)
 
 ## 资源浏览器 {#assets-browser}
 
@@ -182,4 +182,4 @@ ht-degree: 38%
 
 ## 关联的内容浏览器 {#associated-content-browser}
 
-如果您的页面包含内容片段，则还可以访问[浏览器以获取相关内容。](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+如果您的页面包含内容片段，则还可以访问[浏览器以获取关联内容](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)。

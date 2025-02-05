@@ -4,10 +4,10 @@ description: 了解如何为 AEM as a Cloud Service 配置高级联网功能，�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 2a7d46e91bbd6ca96bd8b7fd5d4d84cf69bdee36
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '5524'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->除了本文档之外，还有一系列教程旨在引导您了解此[位置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/advanced-networking)的每个高级网络选项。
+>除了此文档之外，还有一系列教程，旨在向您介绍此[位置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/networking/advanced-networking)的每个高级联网选项。
 
 ## 概述 {#overview}
 
@@ -54,8 +54,8 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 使用高级网络功能需要两个步骤：
 
-1. 配置高级网络选项，无论是[灵活端口出口、](#flexible-port-egress)[专用出口 IP 地址](#dedicated-egress-ip-address)还是 [VPN，](#vpn)必须首先在程序级别完成。
-1. 要使用高级网络选项，必须[在环境级别启用。](#enabling)
+1. 高级联网选项的配置，无论是[灵活端口出口](#flexible-port-egress)、[专用出口IP地址](#dedicated-egress-ip-address)还是[VPN](#vpn)，都必须在程序级别首先完成。
+1. 若要使用，则必须在环境级别](#enabling)启用[高级联网选项。
 
 这两个步骤都可以使用 Cloud Manager UI 或 Cloud Manager API 来完成。
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service 提供以下高级网络选项：
 
 >[!TIP]
 >
->[API 文档中可以引用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)完整的参数集和准确的语法，以及以后无法更改的参数等重要信息。
+>API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中可以引用[完整的参数集、精确的语法以及诸如哪些参数以后不能更改等重要信息。
 
 ### 流量路由 {#flexible-port-egress-traffic-routing}
 
@@ -220,7 +220,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 如果不启用专用 IP 地址功能，来自 AEM as a Cloud Service 的流量会流经与 AEM as a Cloud Service 的其他客户共享的一组 IP。
 
-专用出口 IP 地址的配置方法与[灵活端口出口相同。](#flexible-port-egress)主要差别在于，配置后，流量始终从专用的唯一 IP 地址传出。要查找该 IP，请使用 DNS 解析器来确定与 `p{PROGRAM_ID}.external.adobeaemcloud.com` 关联的 IP 地址。该 IP 地址不应改变，但如果必须改变，则会提供提前通知。
+配置专用出口IP地址类似于[灵活端口出口](#flexible-port-egress)。 主要区别在于，在配置之后，流量将始终从专用的唯一IP地址传出。 要查找该 IP，请使用 DNS 解析器来确定与 `p{PROGRAM_ID}.external.adobeaemcloud.com` 关联的 IP 地址。该 IP 地址不应改变，但如果必须改变，则会提供提前通知。
 
 >[!TIP]
 >
@@ -270,7 +270,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!TIP]
 >
->[API 文档中可以引用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)完整的参数集和准确的语法，以及以后无法更改的参数等重要信息。
+>API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中可以引用[完整的参数集、精确的语法以及诸如哪些参数以后不能更改等重要信息。
 
 ### 流量路由 {#dedicated-egress-ip-traffic-routing}
 
@@ -400,7 +400,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 VPN 允许从创作、发布或预览实例连接到内部部署基础架构或数据中心。例如，这对于保护数据库访问很有用。它还允许连接到 SaaS 供应商，例如支持 VPN 的 CRM 供应商。
 
-支持大部分采用 IPSec 技术的 VPN 设备。请参阅[此设备列表中&#x200B;**RouteBased 配置说明**&#x200B;列中的信息。](https://learn.microsoft.com/zh-cn/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)按表中所述配置该设备。
+支持大部分采用 IPSec 技术的 VPN 设备。请参阅[此设备列表](https://learn.microsoft.com/zh-cn/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)中的&#x200B;**RouteBased配置说明**&#x200B;列中的信息。 按表中所述配置设备。
 
 >[!NOTE]
 >
@@ -465,7 +465,7 @@ VPN 允许从创作、发布或预览实例连接到内部部署基础架构或�
 
 >[!TIP]
 >
->[API 文档中可以引用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)完整的参数集和准确的语法，以及以后无法更改的参数等重要信息。
+>API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中可以引用[完整的参数集、精确的语法以及诸如哪些参数以后不能更改等重要信息。
 
 ### 流量路由 {#vpn-traffic-routing}
 
@@ -653,11 +653,11 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 >[!TIP]
 >
->[API 文档中可以引用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)完整的参数集和准确的语法，以及以后无法更改的参数等重要信息。
+>API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中可以引用[完整的参数集、精确的语法以及诸如哪些参数以后不能更改等重要信息。
 
 ## 编辑和删除环境中的高级网络配置 {#editing-deleting-environments}
 
- [为环境启用高级网络配置后，](#enabling) 您可以更新这些配置的详细信息或将其删除。
+在[为环境](#enabling)启用高级联网配置后，您可以更新这些配置的详细信息或删除它们。
 
 >[!NOTE]
 >
@@ -675,7 +675,7 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 1. 在省略号菜单中，选择&#x200B;**编辑**&#x200B;或&#x200B;**删除**。
 
-   * 如果您选择&#x200B;**编辑**，请按照上一节[启用用户界面](#enabling-ui)中描述的步骤更新信息，然后单击&#x200B;**保存**。
+   * 如果选择&#x200B;**编辑**，请按照上一节[使用UI启用](#enabling-ui)中描述的步骤更新信息，然后单击&#x200B;**保存**。
    * 如果您选择 **删除**，请在&#x200B;**删除网络配置**&#x200B;对话框中使用“**删除**”确认删除或使用“**取消**”中止。
 
 更改将反映在&#x200B;**环境**&#x200B;选项卡上。
@@ -686,7 +686,7 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 >[!TIP]
 >
->[API 文档中可以引用](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)完整的参数集和准确的语法，以及以后无法更改的参数等重要信息。
+>API文档](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)中可以引用[完整的参数集、精确的语法以及诸如哪些参数以后不能更改等重要信息。
 
 ## 编辑和删除程序的网络基础架构 {#editing-deleting-program}
 
@@ -729,10 +729,10 @@ API 应该会在几秒钟内做出响应，并且状态会显示为 `updating`�
 
 如果您决定需要另一种高级网络基础架构类型而不是已配置的网络基础架构类型，则删除现有的网络基础架构类型，并再创建一个网络基础架构类型。执行以下操作：
 
-1. [删除所有环境中的高级网络。](#editing-deleting-environments)
-1. [删除高级网络基础架构。](#editing-deleting-program)
-1. 创建您现在需要的高级网络基础架构类型，[灵活端口出口、](#flexible-port-egress)[专用出口 IP 地址](#dedicated-egress-ip-address)或 [VPN。](#vpn)
-1. [在环境级别启用高级网络。](#enabling)
+1. [删除所有环境中的高级网络](#editing-deleting-environments)。
+1. [删除高级网络基础结构](#editing-deleting-program)。
+1. 创建您现在需要的高级网络基础结构类型： [灵活端口出口](#flexible-port-egress)、[专用出口IP地址](#dedicated-egress-ip-address)或[VPN](#vpn)。
+1. [在环境级别](#enabling)重新启用高级联网。
 
 >[!WARNING]
 >

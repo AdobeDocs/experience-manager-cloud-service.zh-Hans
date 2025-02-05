@@ -4,7 +4,7 @@ description: 了解如何使用AEM Developer Tools for Eclipse，这是一个基
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -62,7 +62,7 @@ _适用于Eclipse的Experience Manager开发人员工具_&#x200B;是一个基于
 
 ## AEM视角 {#the-aem-perspective}
 
-在Eclipse中，透视可确定窗口内可用的操作和视图，并支持与Eclipse中的资源进行面向任务的交互。 有关透视的更多详细信息，请参阅[Eclipse文档。](https://help.eclipse.org/latest/index.jsp)
+在Eclipse中，透视可确定窗口内可用的操作和视图，并支持与Eclipse中的资源进行面向任务的交互。 有关透视的详细信息，请参阅[Eclipse文档](https://help.eclipse.org/latest/index.jsp)。
 
 _Eclipse的Experience Manager开发工具_&#x200B;提供了AEM Perspective，可让您完全控制AEM项目和实例。 要打开AEM Perspective，请执行以下操作：
 

@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: a5661b6b75180dd77eb794eb5d215fd2e1d5eed0
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '625'
-ht-degree: 39%
+ht-degree: 35%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 39%
 
 ## 概述 {#overview}
 
-前端管道是一种机制，可以根据[站点主题](site-themes.md)和[站点模板](site-templates.md)快速部署网站的前端代码。
+前端管道是一种机制，它可以根据[站点主题](site-themes.md)和[站点模板](site-templates.md)快速部署网站的前端代码。
 
 此管道仅处理前端代码，这使得部署过程比全栈部署更快。 它允许前端开发人员轻松自定义您的站点，而无需了解AEM。
 
@@ -44,7 +44,7 @@ AEM可以将站点配置为加载使用前端管道部署的主题，即使您�
 
 ## 要求 {#requirements}
 
-AEM 可以自动调整您的现有站点以使用前端管道。若要执行此工作流，您的网站必须使用[v2或更高版本的核心组件页面组件。](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)
+AEM 可以自动调整您的现有站点以使用前端管道。若要执行此工作流，您的网站必须使用核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)的[v2或更高版本页面组件。
 
 ## 启用前端管道 {#enabling}
 

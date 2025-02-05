@@ -4,7 +4,7 @@ description: 了解如何为自适应Forms核心组件的记录文档(DoR)生成
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3131'
 ht-degree: 1%
@@ -44,7 +44,7 @@ ht-degree: 1%
 1. 在“属性”窗口中，选择&#x200B;**[!UICONTROL 表单模型]**。
 1. 在&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选择自]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 表单数据模型]**、**[!UICONTROL 架构]**&#x200B;或&#x200B;**[!UICONTROL 无]**。 您还可以在创建表单时选择表单模型。
 1. 在“表单模型”选项卡的“记录文档模板配置”部分中，选择&#x200B;**将表单模板关联为记录文档模板**。 选择此选项时，将显示计算机上可用的所有XFA模板（XDP文件）。 选择相应的文件。 此外，请确保自适应表单和选定的XFA模板（XDP文件）使用相同的架构（数据架构）。
-1. 单击&#x200B;**[!UICONTROL 完成。]**
+1. 单击&#x200B;**[!UICONTROL 完成]**
 
 您的自适应表单现在配置为使用XDP文件作为记录文档的模板。 下一步是[将自适应表单组件与相应的模板字段绑定](#bind-adaptive-form-components-with-template-fields)。
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 1. 在“属性”窗口中，选择&#x200B;**[!UICONTROL 表单模型]**。
 1. 在&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选择自]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 表单数据模型]**、**[!UICONTROL 架构]**&#x200B;或&#x200B;**[!UICONTROL 无]**。 您还可以在创建表单时选择表单模型。
 1. 在“表单模型”选项卡的“记录文档模板配置”部分中，选择&#x200B;**将表单模板关联为记录文档模板**。 选择此选项时，将显示计算机上可用的所有AcrobatPDF(Acroform)。 选择要使用的Acroform。
-1. 单击&#x200B;**[!UICONTROL 完成。]**
+1. 单击&#x200B;**[!UICONTROL 完成]**
 
 您的自适应表单现在配置为使用Acroform作为记录文档的模板。 下一步是[将自适应表单组件与相应的模板字段绑定](#bind-adaptive-form-components-with-template-fields)。
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 1. 在“属性”窗口中，选择&#x200B;**[!UICONTROL 表单模型]**。
 1. 在&#x200B;**[!UICONTROL 表单模型]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选择自]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 表单数据模型]**、**[!UICONTROL 架构]**&#x200B;或&#x200B;**[!UICONTROL 无]**。 您还可以在创建表单时选择表单模型。
 1. 在“表单模型”选项卡的“记录文档模板配置”部分中，选择&#x200B;**生成记录文档**。
-1. 单击&#x200B;**[!UICONTROL 完成。]**
+1. 单击&#x200B;**[!UICONTROL 完成]**
 
 ## 将自适应表单组件与模板字段绑定 {#bind-adaptive-form-components-with-template-fields}
 
@@ -218,7 +218,7 @@ When you select a form model, configure Document of Record using options availab
   </tr>
   <tr>
    <td>“重置”按钮</td>
-   <td>“重置”按钮</td>
+   <td>重置按钮</td>
    <td>false</td>
    <td> </td>
   </tr>

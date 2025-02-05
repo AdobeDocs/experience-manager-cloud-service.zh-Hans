@@ -4,10 +4,10 @@ description: 了解如何管理分类数据，以便在 AEM with Edge Delivery S
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 85%
+ht-degree: 65%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 85%
 
 ## 创建分类页面 {#creating}
 
-分类法的创建方式与 [AEM 中的任何其他页面一样。](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+在AEM](/help/sites-cloud/authoring/sites-console/creating-pages.md)中创建的分类，类似于[任何其他页面。
 
-1. 导航至 [**Sites** 控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 导航到&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 
 1. 选择您想要创建分类的位置。
 
@@ -46,7 +46,7 @@ ht-degree: 85%
 
 1. 点击或单击&#x200B;**创建**。
 
-分类页面已创建。在&#x200B;**成功**&#x200B;对话框中，您可以点击或单击&#x200B;**完成**&#x200B;对话框，以关闭该消息，或点击或单击&#x200B;**打开**&#x200B;在[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)中编辑该页面。
+分类页面已创建。在&#x200B;**成功**&#x200B;对话框中，您可以点按或单击&#x200B;**完成**&#x200B;对话框以关闭消息，或者点按或单击&#x200B;**打开**&#x200B;以在[页面编辑器](/help/sites-cloud/authoring/page-editor/introduction.md)中编辑页面。
 
 记下分类页面生成的页面名称，以便在后续步骤中使用。
 
@@ -54,7 +54,7 @@ ht-degree: 85%
 
 您可以像编辑 AEM 中的其他页面一样开始编辑分类页面。
 
-1. 导航至 [**Sites** 控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 导航到&#x200B;[**站点**&#x200B;控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 
 1. 选择您想要编辑的分类。
 
@@ -82,7 +82,7 @@ ht-degree: 85%
 
 ## 更新分类发布的 paths.json {#paths-json}
 
-就像在[管理和发布 Edge Delivery Services 网站的表格数据](/help/edge/wysiwyg-authoring/tabular-data.md)时一样，您需要更新项目的 `paths.json` 文件，以便能够发布分类数据。
+就像在[管理和发布Edge Delivery Services站点](/help/edge/wysiwyg-authoring/tabular-data.md)的表格式数据时一样，您需要更新项目的`paths.json`文件以允许发布分类数据。
 
 1. 在 GitHub 中打开您的项目的根目录。
 
@@ -101,7 +101,7 @@ ht-degree: 85%
    }
    ```
 
-   * `<taxonomy-page-name>` 必须与[您创建的分类页面](#creating)的名称相匹配。
+   * `<taxonomy-page-name>`必须与您创建的[分类页面](#creating)的名称匹配。
    * `<taxonomy-json-name>` 可以是您选择的任何有效名称。
 
 1. 单击“**提交更改...**”将更改保存到 `main`。
@@ -112,20 +112,20 @@ ht-degree: 85%
 
 >[!TIP]
 >
->有关路径映射的更多信息，请参阅文档 [Edge Delivery Services 的路径映射。](/help/edge/wysiwyg-authoring/path-mapping.md)
+>有关路径映射的详细信息，请参阅文档[Edge Delivery Services的路径映射](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
 ## 发布分类 {#publishing}
 
 分类在发布之前不可供通用编辑器或您的用户使用。
 
-分类页面与其他页面一样，可以[通过工具栏中的&#x200B;**快速发布**&#x200B;或&#x200B;**管理发布**&#x200B;图标进行发布。](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
+分类页由[使用工具栏中的&#x200B;**快速Publish**&#x200B;或&#x200B;**管理发布**&#x200B;图标像任何其他页一样发布](/help/sites-cloud/authoring/sites-console/publishing-pages.md)。
 
 每次执行以下操作时，都必须重新发布分类页面：
 
 * 编辑分类页面。
 * 编辑或添加分类页面中包含的标签和命名空间。
 
-如果您创建了一个新的分类页面，则必须首先[在项目中的 `paths.json` 文件中添加一个它的映射。](#paths-json)
+如果您创建新的分类页面，则必须先[将映射添加到项目](#paths-json)中的`paths.json`文件。
 
 ## 访问分类信息 {#accessing}
 
@@ -135,7 +135,7 @@ ht-degree: 85%
 
 `https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
-在将您的分类法[映射到项目中的 `paths.json` 文件时，请使用您定义的 `<taxonomy-json-name>`。](#paths-json) 分类数据以 JSON 数据的形式返回，如下例所示。
+使用您在[将分类映射到项目](#paths-json)中的`paths.json`文件时定义的`<taxonomy-json-name>`。 分类数据作为JSON数据返回，如下例所示。
 
 ```json
 {
@@ -166,11 +166,11 @@ ht-degree: 85%
 
 当您更新分类并重新发布时，此 JSON 数据将自动更新。您的应用程序可以通过编程方式为用户获取这些信息。
 
-[如果您需要维护多种语言的标签，](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)您可以通过将 ISO2 语言代码作为 `sheet=` 参数值传入来访问这些语言。
+[如果您维护多种语言的标记](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages)，您可以通过将ISO2语言代码作为`sheet=`参数的值传递来访问这些语言。
 
 ## 公开其他标记属性 {#additional-properties}
 
-默认情况下，您的分类将包含`tag`和`title`值，如上一个示例中的[所示。](#accessing)您可以配置分类以公开其他标记属性。 在此示例中，我们将公开标记描述。
+默认情况下，您的分类将包含`tag`和`title`值，如上一个示例](#accessing)中的[所示。 您可以配置分类以公开其他标记属性。 在此示例中，我们将公开标记描述。
 
 1. 使用站点控制台选择您创建的分类。
 1. 点按或单击工具栏中的&#x200B;**属性**&#x200B;图标。
@@ -179,7 +179,7 @@ ht-degree: 85%
 1. 点击或单击&#x200B;**保存并关闭**。
 1. 在分类仍被选中时，点按或单击工具栏中的&#x200B;**快速Publish**。
 
-现在[当您访问分类时，](#accessing)标记描述（或您选择公开的任何属性）包含在JSON中。
+现在[当您访问分类](#accessing)时，标记描述（或您选择公开的任何属性）包含在JSON中。
 
 ```json
 {

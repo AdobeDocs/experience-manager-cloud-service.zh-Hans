@@ -4,7 +4,7 @@ description: ContextHub是一个用于存储、操作和呈现上下文数据的
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ContextHub允许您：
 
 ## 演示文稿 {#presentation}
 
-通过[ContextHub工具栏](/help/sites-cloud/authoring/personalization/contexthub.md)，营销人员和作者可以查看和处理存储数据，以模拟创作页面时的用户体验。 工具栏由几组UI模块组成，这些模块提供对[ContextHub存储区](#persistence)的访问权限，这些存储区将ContextHub数据保留在客户端上。
+通过[ContextHub工具栏](/help/sites-cloud/authoring/personalization/contexthub.md)，营销人员和作者可以查看和处理存储数据，以模拟创作页面时的用户体验。 工具栏由提供对[ContextHub存储](#persistence)访问权限的UI模块组组成，这些存储区将ContextHub数据保留在客户端上。
 
 每个ContextHub UI模块都是预定义模块类型的实例：
 

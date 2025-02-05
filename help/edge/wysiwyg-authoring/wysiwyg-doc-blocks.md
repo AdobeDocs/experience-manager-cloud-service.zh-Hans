@@ -3,13 +3,13 @@ title: 用于所见即所得和基于文档创作的块
 description: 了解如何创建可用于所见即所得创作和基于文档创作的块。
 feature: Edge Delivery Services
 role: User
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
-workflow-type: ht
+exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
-
 
 # 用于所见即所得和基于文档的创作的块 {#wysiwyg-and-doc-blocks}
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 概述 {#overview}
 
-在某些项目中，您可能希望同时支持[使用通用编辑器进行所见即所得创作](/help/edge/wysiwyg-authoring/authoring.md)以及[基于文档的创作。](/help/edge/docs/authoring.md) 为了最大限度地减少开发时间并确保相同的网站体验，您可以创建一组块来支持这两种用例。
+在某些项目中，您可能希望同时支持使用通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)的[WYSIWYG创作以及[基于文档的创作](/help/edge/docs/authoring.md)。 为了最大限度地缩短开发时间并确保获得相同的站点体验，您可以创建一组块来支持这两个用例。
 
 为此，您必须对所见即所得的创作设置和基于文档的创作设置使用相同的内容建模方法。
 

@@ -4,7 +4,7 @@ description: 了解如何通过在配置文件中声明规则和过滤器并使�
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -25,7 +25,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 此外，如果CDN无法联系其源，则可以编写引用自托管自定义错误页面（随后将渲染）的规则。 请阅读[配置CDN错误页面](/help/implementing/dispatcher/cdn-error-pages.md)文章，以了解有关此内容的更多信息。
 
-所有这些在源代码管理的配置文件中声明的规则，均使用Cloud Manager [config管道进行部署。](/help/operations/config-pipeline.md)请注意，配置文件（包括流量过滤器规则）的累积大小不能超过100 KB。
+所有这些在源代码管理的配置文件中声明的规则，都使用Cloud Manager [config pipeline](/help/operations/config-pipeline.md)进行部署。 请注意，配置文件（包括流量过滤器规则）的累积大小不能超过100 KB。
 
 ## 评估顺序 {#order-of-evaluation}
 

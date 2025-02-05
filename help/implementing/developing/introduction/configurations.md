@@ -4,7 +4,7 @@ description: 了解Adobe Experience Manager (AEM)配置以及它们如何管理A
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -200,7 +200,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供了可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置，如上一个示例](#developer-example)中所述[。
 
-有关上下文感知配置、示例及其使用方式的更多详细信息，请参阅[Sling文档。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)。
+有关上下文感知配置、示例及其使用方式的更多详细信息，请参阅[Sling文档](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)。
 
 ### ConfMgr Web控制台 {#confmgr-web-console}
 

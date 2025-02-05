@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 6%
@@ -53,8 +53,8 @@ Forms转换实用程序将基于旧版基础组件的自适应Forms转换为基�
 
 ## 使用AEM现代化工具的先决条件
 
-* [为AEM Forms设置本地开发环境](/help/forms/setup-local-development-environment.md)
-* [为您的环境启用自适应Forms核心组件。](/help/forms/enable-adaptive-forms-core-components.md)
+* [为AEM Forms设置本地开发环境](/help/forms/setup-local-development-environment.md)。
+* [为您的环境启用自适应Forms核心组件](/help/forms/enable-adaptive-forms-core-components.md)。
 * 将您的用户添加到[!DNL forms-users]组。 [!DNL forms-users]组的成员有权创建自适应表单。
 * 具有以下角色的用户有权在AEM环境中安装AEM现代化工具：
 

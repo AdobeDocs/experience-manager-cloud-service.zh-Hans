@@ -5,7 +5,7 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 64%
@@ -18,7 +18,7 @@ ht-degree: 64%
 
 >[!TIP]
 >
->在开始管理页面之前，请熟悉[AEM中页面的组织方式。](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>在开始管理页面之前，请熟悉[AEM中页面的组织方式](/help/sites-cloud/authoring/sites-console/organizing-pages.md)。
 
 >[!TIP]
 >
@@ -34,7 +34,7 @@ ht-degree: 64%
 
 在[创建页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)或使用[站点&#x200B;**控制台](/help/sites-cloud/authoring/sites-console/introduction.md)导航到现有页面后，您可以打开它进行编辑。**
 
-1. 打开[站点&#x200B;****&#x200B;控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 打开[站点&#x200B;**控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。**
 1. 导航以查找要编辑的页面。
 1. 通过以下方式选择您的页面：
 
@@ -53,7 +53,7 @@ ht-degree: 64%
 
 您可以将页面及其所有子页面复制到一个新位置：
 
-1. 打开[站点&#x200B;****&#x200B;控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 打开[站点&#x200B;**控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。**
 1. 导航以查找要复制的页面。
 1. 通过以下方式选择您的页面：
 
@@ -95,7 +95,7 @@ ht-degree: 64%
 
 AEM 还有一项功能是允许您对引用被重命名页面或被移动页面的所有内部链接进行更新。此操作非常灵活，可以一个页面一个页面地执行。
 
-1. 打开[站点&#x200B;****&#x200B;控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 打开[站点&#x200B;**控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。**
 1. 导航以查找要移动的页面。
 1. 通过以下方式选择您的页面：
 
@@ -181,7 +181,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 ### 删除页面 {#deleting-a-page}
 
-1. 打开[站点&#x200B;****&#x200B;控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 打开[站点&#x200B;**控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。**
 1. 导航到要删除的页面。
 1. 使用[选择模式](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources)选择所需页面，然后使用工具栏中的&#x200B;**删除**。
 
@@ -213,7 +213,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 您可以创建文件夹来帮助组织文件和页面。
 
-1. 打开[站点&#x200B;****&#x200B;控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 打开[站点&#x200B;**控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。**
 1. 导航到所需的位置。
 1. 要打开选项列表，请从工具栏中选择&#x200B;**创建**
 1. 选择&#x200B;**文件夹**&#x200B;以打开对话框。您可在此输入&#x200B;**名称**&#x200B;和&#x200B;**标题**：

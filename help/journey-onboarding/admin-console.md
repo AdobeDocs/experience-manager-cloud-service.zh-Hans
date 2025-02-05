@@ -4,16 +4,16 @@ description: 一旦您了解了入门所需的准备工作和 AEMaaCS 结构的�
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # 访问 Admin Console {#accessing-admin-console}
 
-在[上线历程](overview.md)的此部分中，您将了解首次登录系统之前所需的准备工作。
+在[入门培训历程](overview.md)的这一可选部分中，您将了解首次登录系统之前所需的准备工作。
 
 ## 目标 {#objective}
 

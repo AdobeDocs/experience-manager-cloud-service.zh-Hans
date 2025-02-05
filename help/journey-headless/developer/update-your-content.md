@@ -5,16 +5,16 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # 如何通过 AEM Assets API 更新您的内容 {#update-your-content}
 
-在 [AEM Headless 开发人员历程](overview.md)的这一部分中，了解如何使用 REST API 访问和更新内容片段的内容。
+在[AEM Headless开发人员历程](overview.md)的这一部分中，了解如何使用REST API访问和更新内容片段的内容。
 
 ## 迄今为止的故事 {#story-so-far}
 

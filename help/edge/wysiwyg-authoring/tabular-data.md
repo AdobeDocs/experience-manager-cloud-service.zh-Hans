@@ -4,10 +4,10 @@ description: 了解如何使用电子表格来管理各种值的表格数据，�
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1284'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 100%
 
 >[!TIP]
 >
->有关电子表格通常如何与 Edge Delivery Services 配合使用的详细信息，请参阅文档[电子表格和 JSON。](/help/edge/developer/spreadsheets.md)
+>有关电子表格如何与Edge Delivery Services一起使用的详细信息，请参阅文档[电子表格和JSON](/help/edge/developer/spreadsheets.md)。
 
 >[!TIP]
 >
->电子表格只能用于维护表格数据。要存储结构化数据，[请查看 AEM 的无头功能。](/help/headless/introduction.md)
+>电子表格只能用于维护表格数据。用于存储结构化数据，[请查看AEM的Headless功能](/help/headless/introduction.md)。
 
 ## 先决条件 {#prerequisites}
 
@@ -150,7 +150,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
    >[!NOTE]
    >
-   >该 `paths.json` 条目基于使用表格数据创建重定向的示例。确保更新与[您正在创建的电子表格类型](#other)相对应的路径。
+   >该 `paths.json` 条目基于使用表格数据创建重定向的示例。请确保更新适合您正在创建的[类型电子表格的路径](#other)。
 
 1. 单击“**提交更改...**”将更改保存到 `main`。
 
@@ -174,7 +174,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 >[!TIP]
 >
->有关路径映射的更多信息，请参阅文档 [Edge Delivery Services 的路径映射。](/help/edge/wysiwyg-authoring/path-mapping.md)
+>有关路径映射的详细信息，请参阅文档[Edge Delivery Services的路径映射](/help/edge/wysiwyg-authoring/path-mapping.md)。
 
 ## 其他电子表格类型 {#other}
 
@@ -205,7 +205,7 @@ https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da6
 
 ## 创建您自己的电子表格 {#own-spreadsheet}
 
-1. 请按照本节中的相同步骤进行操作[创建电子表格。](#spreadsheet)
+1. 执行[创建电子表格](#spreadsheet)部分中的相同步骤。
 
 1. 选择模板时，选择&#x200B;**电子表格**。
 

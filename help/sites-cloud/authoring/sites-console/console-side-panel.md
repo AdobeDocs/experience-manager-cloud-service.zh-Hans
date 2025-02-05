@@ -5,7 +5,7 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 26%
@@ -108,11 +108,11 @@ ht-degree: 26%
 
 ## 站点 {#site}
 
-侧面板的&#x200B;**站点**&#x200B;视图显示使用站点模板创建的[站点的详细信息。](/help/sites-cloud/administering/site-creation/create-site.md)
+侧面板的&#x200B;**站点**&#x200B;视图显示使用站点模板](/help/sites-cloud/administering/site-creation/create-site.md)创建的站点[的详细信息。
 
 ![网站面板](assets/console-side-panel-site-paenl.png)
 
-查看文档[使用站点面板管理站点主题](/help/sites-cloud/administering/site-creation/site-rail.md)，了解有关如何使用面板管理站点主题[的更多详细信息。](/help/sites-cloud/administering/site-creation/site-themes.md)。
+查看文档[使用站点面板管理站点主题](/help/sites-cloud/administering/site-creation/site-rail.md)，了解有关如何使用面板管理站点主题[的详细信息](/help/sites-cloud/administering/site-creation/site-themes.md)。
 
 如果尚未将前端管道设置为启用基于主题的站点创建，则侧面板将提供该选项。
 

@@ -4,10 +4,10 @@ description: 了解不同的扩展点和其他功能，这些功能允许您自�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -45,9 +45,9 @@ ht-degree: 4%
 
 ### 有条件地显示和隐藏属性面板中的组件 {#conditionally-hide}
 
-尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型的[字段添加`condition`属性来隐藏属性面板中的组件。](/help/implementing/universal-editor/field-types.md#fields)
+尽管一个或多个组件通常可供您的作者使用，但在某些情况下可能没有意义。 在这种情况下，可以通过向组件模型](/help/implementing/universal-editor/field-types.md#fields)的[字段添加`condition`属性来隐藏属性面板中的组件。
 
-可以使用[JsonLogic架构定义条件。](https://jsonlogic.com/)如果条件为true，则将显示该字段。 如果条件为false，则字段将隐藏。
+可以使用[JsonLogic架构](https://jsonlogic.com/)定义条件。 如果条件为true，则会显示字段。 如果条件为false，则字段将隐藏。
 
 >[!BEGINTABS]
 
@@ -86,9 +86,9 @@ ht-degree: 4%
 
 ### 自定义预览URL {#custom-preview-urls}
 
-您可以通过`urn:adobe:aue:config:preview`元配置指定自定义预览URL，单击[编辑器右上角工具栏中的&#x200B;**打开页面**&#x200B;按钮时，将打开该配置。](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+您可以通过`urn:adobe:aue:config:preview`元配置指定自定义预览URL，单击[编辑器右上角工具栏](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)中的&#x200B;**打开页面**&#x200B;按钮时，将打开该配置。
 
-这对于具有特定预览要求的应用程序特别有用，例如那些[使用具有所见即所得创作的 Edge Delivery Services 的应用程序。](/help/edge/wysiwyg-authoring/authoring.md)
+这对于具有特定预览要求的应用程序特别有用，例如那些将Edge Delivery Services与WYSIWYG创作](/help/edge/wysiwyg-authoring/authoring.md)结合使用的[应用程序。
 
 要实现此目的，只需将所需的预览URL包含在所检测应用程序的meta标记中，如下例所示。
 
@@ -110,6 +110,6 @@ UI扩展是使用AdobeApp Builder构建的JavaScript应用程序，可以嵌入�
 
 >[!TIP]
 >
->如果您希望通过示例学习，请参阅[AEM UI可扩展性教程。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
+>如果您希望通过示例学习，请参阅[AEM UI可扩展性教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 虽然它侧重于扩展内容片段控制台，但在通用编辑器中实施UI扩展的概念是相同的。
 
-[在AEM Sites中使用Extension Manager，](https://developer.adobe.com/uix/docs/extension-manager/)您可以基于每个实例启用或禁用扩展，访问Adobe的第一方扩展，包括通用编辑器的第一方扩展等等。
+[使用AEM Sites中的Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)，您可以按实例启用或禁用扩展，访问Adobe的第一方扩展（包括通用编辑器的第一方扩展）等等。

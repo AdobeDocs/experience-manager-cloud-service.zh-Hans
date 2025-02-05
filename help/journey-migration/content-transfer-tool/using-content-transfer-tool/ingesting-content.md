@@ -4,9 +4,9 @@ description: 了解如何使用Cloud Acceleration Manager将内容从迁移集�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '3412'
+source-wordcount: '3411'
 ht-degree: 12%
 
 ---

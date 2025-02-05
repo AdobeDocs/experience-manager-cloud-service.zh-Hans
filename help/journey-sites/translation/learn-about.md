@@ -8,10 +8,10 @@ exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## AEM Sites 概述 {#aem-sites}
 
-AEM Sites 是一个用于创建、管理和交付数字体验的综合平台。内容作者使用简单的 WYSIWYG 拖放工具在直观的编辑器中创建页面，该编辑器按照用户使用内容的方式呈现内容。
+AEM Sites 是一个用于创建、管理和交付数字体验的综合平台。内容作者使用简单、所见即所得的拖放工具，在直观的编辑器中创建页面。此编辑器以网站访客的视角呈现内容。
 
 可在站点控制台中轻松管理构成您体验的页面，该控制台以易于理解的层级为您提供内容概览，并允许轻松重新排列、复制和发布内容。
 
@@ -63,7 +63,7 @@ AEM Sites 是一个用于创建、管理和交付数字体验的综合平台。�
 
 ## 其他资源 {#additional-resources}
 
-我们建议您查看文档 [AEM Sites 翻译快速入门](getting-started.md)来继续站点翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
+我们建议您查看文档[AEM Sites翻译入门](getting-started.md)来继续站点翻译历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
 * [页面创作快速入门指南](/help/sites-cloud/authoring/quick-start.md) – 使用 AEM Sites 创建内容的最重要概念的简要概述
 * [MSM 和翻译](/help/sites-cloud/administering/msm-and-translation.md) – AEM 的多站点管理器的详细信息及其使用翻译工具的方式

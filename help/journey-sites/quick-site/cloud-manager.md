@@ -5,10 +5,10 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '1113'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 在继续此历程的下一步来开始配置之前，可通过本文档了解快速站点创建解决方案的这些基本部分。
 
-虽然我们建议您逐步完成此历程，但如果您已了解 AEM Sites 和 Cloud Manager 的协作方式，并且希望直接从配置开始操作，则可以[跳至此历程的下一步](create-site.md)。
+虽然建议您逐步完成此历程，但如果您已了解AEM Sites和Cloud Manager的协作方式，并且希望直接从配置开始操作，则可以[跳至此历程的下一步](create-site.md)。
 
 ## 负责角色 {#responsible-role}
 
@@ -122,11 +122,11 @@ Cloud Manager 是 AEM as a Cloud Service 的必要组件，并且充当平台的
 * 了解 AEM Sites 和 Cloud Manager 如何协作来推动前端开发
 * 了解如何在不具有 AEM 知识的情况下将前端自定义步骤与 AEM 完全分离开来。
 
-在此知识的基础上继续您的 AEM 快速站点创建历程，接下来查看文档[从模板创建站点](create-site.md)，其中您将了解如何使用模板快速创建新的 AEM 站点。
+在此知识的基础上继续您的AEM快速站点创建历程，接下来查看文档[从模板创建站点](create-site.md)，了解如何使用模板快速创建新的AEM站点。
 
 ## 其他资源 {#additional-resources}
 
-我们建议您查看文档[从模板创建站点](create-site.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
+我们建议您查看文档[从模板创建站点](create-site.md)来继续快速站点创建历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续此历程所必需的。
 
 * [Cloud Manager 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) – 如果您想了解有关 Cloud Manager 功能的更多详细信息，您可能需要直接参阅深入的技术文档。
 * [基于角色的权限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) – Cloud Manager 预配置了一些具有适当权限的角色。有关这些角色及其管理方式的详细信息，请参阅本文档。

@@ -4,7 +4,7 @@ description: 以下教程将介绍为AEM Screens创建自定义组件的步骤�
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 1. 本地开发环境
 
-使用&#x200B;**CRXDE Lite**&#x200B;执行教程步骤和屏幕截图。 IDE也可用于完成本教程。 有关使用IDE开发带有AEM的[的详细信息，请参阅此处。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+使用&#x200B;**CRXDE Lite**&#x200B;执行教程步骤和屏幕截图。 IDE也可用于完成本教程。 有关使用IDE开发带有AEM的[的详细信息，请参见此处](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
 
 
 ## 项目设置 {#project-setup}

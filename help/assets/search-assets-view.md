@@ -4,10 +4,10 @@ description: 了解如何在AEM Assets视图中搜索和发现资源。 利用�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2020'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -142,7 +142,7 @@ Assets视图提供了以下自定义过滤器：
 
    ![Firefly 集成](assets/firefly-integration.png)
 
-   成功生成了新资产。此外，您可以通过在描述框中键入新的文本提示来更改图像描述。[了解如何编写优质的 AI 提示来生成非凡且相关的内容。](https://helpx.adobe.com/cn/firefly/using/tips-and-tricks.html) 或者，您可以[使用各种其他功能（如更改样式、图像尺寸等）编辑图像。](https://helpx.adobe.com/cn/firefly/using/text-to-image.html)
+   成功生成了新资产。此外，您可以通过在描述框中键入新的文本提示来更改图像描述。[了解如何编写良好的AI提示来生成非凡的相关内容](https://helpx.adobe.com/cn/firefly/using/tips-and-tricks.html)。 或者，您也可以[使用各种其他功能（如更改样式、图像尺寸等）编辑图像](https://helpx.adobe.com/cn/firefly/using/text-to-image.html)。
 
    ![Firefly 集成](assets/bugatti-type-57.png)
 

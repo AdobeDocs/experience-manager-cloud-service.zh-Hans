@@ -4,10 +4,10 @@ description: 了解Assets HTTP API中对内容片段的支持，这是Adobe Expe
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 15%
+source-wordcount: '1827'
+ht-degree: 14%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->有关 Experience Manager API 的最新信息，请访问 [Adobe Experience Manager as a Cloud Service APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
+>有关Experience ManagerAPI的最新信息，请访问[Adobe Experience Manager as a Cloud Service API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
 
 [Assets REST API](/help/assets/mac-api-assets.md)允许Adobe Experience Manager as a Cloud Service的开发者通过CRUD（创建、读取、更新、删除）操作，直接通过HTTP API访问内容(存储在AEM中)。
 

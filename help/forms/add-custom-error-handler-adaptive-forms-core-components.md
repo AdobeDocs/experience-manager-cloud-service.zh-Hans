@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2332'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -232,7 +232,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 要创建自定义错误函数，请执行以下步骤：
 
-1. [克隆您的 AEM Forms as a Cloud Service 存储库。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)
+1. [克隆AEM Formsas a Cloud Service存储库](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git)。
 1. 在 `[AEM Forms as a Cloud Service repository folder]/apps/` 文件夹下创建一个文件夹。例如，创建一个名为 `experience-league` 的文件夹
 1. 导航到 `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` 并创建一个`ClientLibraryFolder` 作为 `clientlibs`。
 1. 创建一个名为 `js` 的文件夹。
@@ -290,7 +290,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
        git push
    ```
 
-1. [运行管道。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)
+1. [运行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)。
 
 成功执行管道后，便能在自适应表单规则编辑器中使用自定义错误处理程序。现在，让我们了解如何使用 AEM Forms 中规则编辑器的调用服务来配置和使用自定义错误处理程序。
 

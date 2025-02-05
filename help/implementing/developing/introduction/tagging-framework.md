@@ -4,7 +4,7 @@ description: 标记内容，并使用AEM标记基础架构对其进行分类和�
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 要标记内容并使用AEM标记基础架构，请执行以下操作：
 
-* 标记必须作为类型[`cq:Tag`](#cq-tag-node-type)的节点存在于[分类根节点下。](#taxonomy-root-node)
+* 标记必须作为类型[`cq:Tag`](#cq-tag-node-type)的节点存在于[分类根节点](#taxonomy-root-node)下。
 * 标记的内容节点的`NodeType`必须包含[`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin。
-* [`TagID`](#tagid)已添加到内容节点的[`cq:tags`](#cq-tags-property)属性，并解析为类型为[`cq:Tag`.](#cq-tag-node-type)的节点
+* [`TagID`](#tagid)已添加到内容节点的[`cq:tags`](#cq-tags-property)属性，并解析为类型为[`cq:Tag`](#cq-tag-node-type)的节点。
 
 ## cq：Tag节点类型 {#cq-tag-node-type}
 
@@ -41,18 +41,18 @@ ht-degree: 0%
 ### 标记特征 {#tag-characteristics}
 
 * 节点类型为`cq:Tag`。
-* 节点名称是[`TagID`.](#tagid)的组件
-* [`TagID`](#tagid)始终包含[命名空间。](#tag-namespace)
+* 节点名称是[`TagID`](#tagid)的组件。
+* [`TagID`](#tagid)始终包含[命名空间](#tag-namespace)。
 * `jcr:title`属性（UI中显示的标题）是可选的。
 * `jcr:description`属性是可选的。
-* 包含子节点时，称为[容器标记。](#container-tags)
-* 标记存储在名为[分类根节点的基本路径下的存储库中。](#taxonomy-root-node)
+* 包含子节点时，称为[容器标记](#container-tags)。
+* 标记存储在名为[分类根节点](#taxonomy-root-node)的基本路径下的存储库中。
 
 ### 标记 ID {#tagid}
 
 `TagID`标识解析为存储库中标记节点的路径。
 
-通常，`TagID`是以命名空间开头的简写`TagID`，或者可以是从[分类根节点开始的绝对`TagID`。](#taxonomy-root-node)
+通常，`TagID`是以命名空间开头的简写`TagID`，或者可以是从[分类根节点](#taxonomy-root-node)开始的绝对`TagID`。
 
 当标记内容时，如果内容尚不存在，[`cq:tags`](#cq-tags-property)属性将添加到内容节点，而`TagID`将添加到属性的`String`数组值。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 命名空间允许您对事物进行分组。 最典型的用例是每个站点或大型应用程序(例如，Sites或Assets)都有一个命名空间（例如，公共与内部），但命名空间可用于各种其他需求。 命名空间在用户界面中用于仅显示适用于当前内容的标记（即特定命名空间的标记）的子集。
 
-标记的命名空间是分类子树中的第一个级别，它是[分类根节点正下方的节点。](#taxonomy-root-node)命名空间是`cq:Tag`类型的节点，其父项不是`cq:Tag`节点类型。
+标记的命名空间是分类子树中的第一个级别，它是[分类根节点](#taxonomy-root-node)正下方的节点。 命名空间是`cq:Tag`类型的节点，其父项不是`cq:Tag`节点类型。
 
 所有标记都具有命名空间。 如果未指定命名空间，则将标记分配给默认命名空间`TagID` `default`，即`/content/cq:tags/default`。 在这种情况下，标题默认为`Standard Tags`。
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 ### 访问控制 {#access-control}
 
-标记作为[分类根节点下的存储库中的节点存在。](#taxonomy-root-node)通过在存储库中设置适当的ACL，可以允许或拒绝作者和网站访客在给定命名空间中创建标记。
+标记作为[分类根节点](#taxonomy-root-node)下的存储库中的节点存在。 通过在存储库中设置适当的ACL，可以允许或拒绝作者和网站访客在给定的命名空间中创建标记。
 
 拒绝某些标记或命名空间的读取权限会控制将标记应用于特定内容的能力。
 

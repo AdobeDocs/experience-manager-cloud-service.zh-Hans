@@ -5,10 +5,10 @@ exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 ## 就地编辑 {#in-place-editing}
 
-通过单击选择基于文本的组件可显示[组件工具栏。](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+通过单击选择基于文本的组件可显示[组件工具栏](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)。
 
 ![组件工具栏](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

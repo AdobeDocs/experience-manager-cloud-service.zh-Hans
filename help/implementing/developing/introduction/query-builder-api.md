@@ -4,7 +4,7 @@ description: 资产共享查询生成器的功能通过Java&amp；trade； API�
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -487,7 +487,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 >
 >记录器的配置在文档[记录](/help/implementing/developing/introduction/logging.md)中描述。
 
-执行上一节[测试和调试：](#testing-and-debugging)中描述的查询时，查询生成器实现的日志输出（INFO级别）
+执行上一节[测试和调试](#testing-and-debugging)中描述的查询时，查询生成器实现的日志输出（INFO级别）
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

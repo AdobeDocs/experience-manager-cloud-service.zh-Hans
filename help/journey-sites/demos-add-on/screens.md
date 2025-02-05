@@ -4,10 +4,10 @@ description: 了解在您的演示站点上启用完整 AEM Screens as a Cloud S
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '2666'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM 参考演示加载项历程的上一个文档[创建演示站点](create-site.md)中，您基于参考演示加载项模板创建了一个演示站点。您现在应：
+在AEM参考演示加载项历程的上一个文档[创建演示站点](create-site.md)中，您基于参考演示加载项模板创建了一个演示站点。 您现在应：
 
 * 了解如何访问 AEM 创作环境。
 * 了解如何基于模板创建站点。
@@ -104,8 +104,8 @@ We.Cafe 位置具有以下布局。
 
 现在您已拥有 We.Cafe 演示内容，您可选择要如何测试 AEM Screens：
 
-* 如果您只想在 AEM Sites 控制台中浏览该内容，那就开始浏览，并可在[其他资源](#additional-resources)部分中发现更多内容！无需执行其他操作。
-* 如果要体验 AEM Screens 的完整动态功能，请继续下一部分，即[动态更改 Screens 内容](#dynamically-change)。
+* 如果只想浏览AEM Sites控制台中的内容，只需在[其他资源](#additional-resources)部分开始浏览和发现更多内容；无需执行其他操作。
+* 如果要体验AEM Screens的完整动态功能，请继续下一部分，[动态更改Screens内容](#dynamically-change)。
 
 ## 动态更改 Screens 内容 {#dynamically-change}
 
@@ -390,7 +390,7 @@ AEM Screens 可以根据上下文动态更改内容。在 We.Cafe 演示中，�
 * 了解 We.Cafe 演示内容。
 * 了解如何为 We.Cafe 配置 AEM Screens。
 
-您现在可以使用自己的演示站点来探索 AEM Screens 的功能。 继续历程的下一部分[管理您的演示站点](manage.md)，其中您将了解帮助您管理演示站点可用的工具以及如何删除站点。
+您现在可以使用自己的演示站点来探索 AEM Screens 的功能。 继续历程的下一部分[管理您的演示站点](manage.md)，了解可用于帮助您管理演示站点的工具以及如何删除它们。
 
 您也可以查看[“其他资源”部分](#additional-resources)中的一些其他资源，详细了解您在此历程中看到的功能。
 

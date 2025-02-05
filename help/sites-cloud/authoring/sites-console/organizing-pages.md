@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 # 组织页面 {#creating-and-organizing-pages}
 
-了解如何使用AEM整理您的网站。 了解如何组织页面后，您可以[创建新页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)和[管理现有页面。](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+了解如何使用AEM整理您的网站。 了解如何组织页面后，您可以[创建新页面](/help/sites-cloud/authoring/sites-console/creating-pages.md)和[管理现有页面](/help/sites-cloud/authoring/sites-console/managing-pages.md)。
 
 {{edge-delivery-authoring}}
 
@@ -130,7 +130,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 ## 组件 {#components}
 
-[组件](/help/implementing/developing/components/overview.md)是AEM提供的元素，用于添加特定类型的内容。 AEM附带一系列开箱即用的组件，称为[核心组件，](/help/implementing/developing/components/overview.md#core-components)，它们提供了全面的功能。 组件的一些示例包括：
+[组件](/help/implementing/developing/components/overview.md)是AEM提供的元素，用于添加特定类型的内容。 AEM附带一系列开箱即用的组件，称为[核心组件](/help/implementing/developing/components/overview.md#core-components)，它们提供了全面的功能。 组件的一些示例包括：
 
 * 文本
 * 图像

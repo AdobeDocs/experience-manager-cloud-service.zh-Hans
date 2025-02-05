@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 您的网站和应用程序通过URL调用访问Dynamic Media服务。 发布资源后，Dynamic Media会激活一个引用该资源的URL字符串。 您可以将这些URL粘贴到Web浏览器中进行测试。
 
-仅当您&#x200B;*不是*&#x200B;使用Adobe Experience Manager作为您的WCM时，才会链接到URL。 当您要以弹出窗口或模式窗口形式交付视频播放器时，将使用链接（与嵌入）。 如果您将Experience Manager用作WCM，请[直接在页面上添加资源。](adding-dynamic-media-assets-to-pages.md)
+仅当您&#x200B;*不是*&#x200B;使用Adobe Experience Manager作为您的WCM时，才会链接到URL。 当您要以弹出窗口或模式窗口形式交付视频播放器时，将使用链接（与嵌入）。 如果您将Experience Manager用作WCM，请[直接在页面上添加资源](adding-dynamic-media-assets-to-pages.md)。
 
 要将这些URL字符串放置在网页和应用程序中，请从Dynamic Media复制它们。
 
@@ -110,7 +110,7 @@ Dynamic Media支持静态资源的交付，而静态资源不仅仅是图像和�
 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-        例如：`https://aem.com/is/content/adobe/image.gif`。
+        例如 `https://aem.com/is/content/adobe/image.gif`。
 
    * 选择&#x200B;**[!UICONTROL 资源]** > **[!UICONTROL 动态演绎版]**，然后选择静态资源的动态演绎版并复制URL。
 
@@ -153,7 +153,7 @@ Dynamic Media支持静态资源的交付，而静态资源不仅仅是图像和�
 
    此路径是已发布视频演绎版的完整视频URL。
 
-## 获取用于自适应比特率流(HLS)的视频URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## 获取用于自适应比特率流的视频URL (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. 在Experience Manager中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 云]** > **[!UICONTROL Cloud Service]**。
 1. 在&#x200B;**[!UICONTROL Cloud Service]**&#x200B;页面上，向下滚动到&#x200B;**[!UICONTROL Dynamic MediaCloud Service]**&#x200B;标题，然后选择&#x200B;**[!UICONTROL 显示配置]**。

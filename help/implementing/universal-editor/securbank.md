@@ -4,7 +4,7 @@ description: 使用SecurBank应用程序了解具有实践经验的通用编辑�
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -24,12 +24,12 @@ ht-degree: 1%
 
 SecurBank应用程序的安装很简单，但由于涉及AEM as a Cloud Service的许多领域，因此需要执行多个步骤。 以下是主要步骤的概述。
 
-1. [在Cloud Manager中创建沙盒程序。](#create-sandbox-program)
-1. [克隆程序的Git存储库，并使用SecurBank AEM项目内容进行更新。](#clone-and-update)
-1. [运行管道以部署SecurBank AEM项目。](#run-pipeline)
-1. [检索Cloud Manager凭据以进行本地Web应用程序开发。](#retrieve-credentials)
-1. [下载并配置SecurBank Web应用程序。](#download-web-app)
-1. [运行SecurBank Web应用程序。](#run-web-app)
+1. [在Cloud Manager中创建沙盒程序](#create-sandbox-program)。
+1. [克隆程序的Git存储库并使用SecurBank AEM项目内容进行更新](#clone-and-update)。
+1. [运行管道以部署SecurBank AEM项目](#run-pipeline)。
+1. [检索本地Web应用开发的Cloud Manager凭据](#retrieve-credentials)。
+1. [下载并配置SecurBank Web应用](#download-web-app)。
+1. [运行SecurBank Web应用](#run-web-app)。
 
 以下各节详细介绍了所需的各项任务。
 
@@ -42,13 +42,13 @@ SecurBank应用程序的安装很简单，但由于涉及AEM as a Cloud Service�
 1. 为SecurBank应用程序创建新的沙盒程序。
 
    * 选择&#x200B;**解决方案和加载项**&#x200B;时使用默认选项。
-   * 有关如何创建沙盒程序的详细信息，请参阅文档[创建沙盒程序。](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+   * 有关如何创建沙盒程序的详细信息，请参阅文档[创建沙盒程序](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。
 
 ### 克隆程序的Git存储库，并使用SecurBank AEM项目内容进行更新。 {#clone-and-update}
 
 1. 创建项目后，请将其打开，然后在&#x200B;**存储库**&#x200B;选项卡上，点按或单击&#x200B;**访问存储库信息**&#x200B;按钮以打开&#x200B;**存储库信息**&#x200B;对话框，并查看访问沙盒环境的Git存储库所需的凭据。
 
-   * 有关如何访问存储库信息的详细信息，请参阅文档[访问存储库。](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   * 有关如何访问存储库信息的详细信息，请参阅文档[访问存储库](/help/implementing/cloud-manager/managing-code/accessing-repos.md)。
 
 1. 使用&#x200B;**存储库信息**&#x200B;对话框中的凭据，在本地计算机上克隆存储库。
 
@@ -71,7 +71,7 @@ SecurBank应用程序的安装很简单，但由于涉及AEM as a Cloud Service�
 1. 返回到Cloud Manager中沙盒程序的&#x200B;**概述**&#x200B;选项卡，并运行全栈非生产管道。
 
    * 取消选中管道运行的所有选项。
-   * 有关运行管道的详细信息，请参阅文档[管理管道。](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
+   * 有关运行管道的详细信息，请参阅文档[管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)。
 
 ### 检索Cloud Manager凭据以进行本地Web应用程序开发。 {#retrieve-credentials}
 

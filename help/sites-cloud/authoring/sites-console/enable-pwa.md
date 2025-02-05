@@ -5,10 +5,10 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1926'
-ht-degree: 97%
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->AEM Sites [的渐进式Web应用程序(PWA)功能已被弃用。](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)
+>AEM Sites [的渐进式Web应用程序(PWA)功能已被弃用](/help/release-notes/release-notes-cloud/release-notes-current.md#pwa-features)。
 >
 >将继续支持使用此功能的现有项目，但新项目不应使用此功能。
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->渐进式 Web 应用程序是一项不断发展的技术，并且支持本地应用程序安装和其他功能，[具体取决于您使用的浏览器。](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)
+>渐进式Web应用程序是一项不断发展的技术，并且支持本地应用程序安装和其他功能[取决于您使用的浏览器](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)。
 
 ## 前提条件 {#prerequisites}
 
@@ -63,9 +63,9 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Adobe 建议不要在自定义组件或未[从核心组件扩展](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)的组件上使用 PWA 功能。
+>Adobe不建议在自定义组件或不是从核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)扩展的[组件上使用PWA功能。
 <!--
-Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
+Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
  To do this, the developer adds the following link to the `customheaderlibs.html` file of your page component.
 
@@ -108,7 +108,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 为站点启用 PWA {#enabling-pwa-for-your-site}
 
-满足[前提条件](#prerequisites)后，内容作者可以轻松地为站点启用 PWA 功能。以下是有关如何执行此操作的基本概览。[详细选项](#detailed-options)部分中详述了各个选项。
+满足[前提条件](#prerequisites)后，内容作者可以轻松地为站点启用 PWA 功能。以下是有关如何执行此操作的基本概览。单个选项在[详细选项](#detailed-options)部分中有详细说明。
 
 1. 登录 AEM。
 1. 从主菜单中选择&#x200B;**导航** > **站点**。
@@ -134,11 +134,11 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 1. 选择&#x200B;**保存并关闭**。
 
-您的站点现已配置，您可以[将它作为本地应用程序安装。](#using-pwa-enabled-site)
+您的站点现已配置，您可以[将其作为本地应用](#using-pwa-enabled-site)安装。
 
 ## 使用已启用 PWA 的站点 {#using-pwa-enabled-site}
 
-现在，您[已配置站点以支持 PWA](#enabling-pwa-for-your-site)，您可以自行体验它。
+现在您已[将您的站点配置为支持PWA](#enabling-pwa-for-your-site)，您可以自行体验它。
 
 1. 在[支持的浏览器](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary)中访问该站点。
 1. 您在浏览器的地址栏中看到一个新图标，这表明可将该站点安装为本地应用程序。
@@ -149,7 +149,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## 详细选项 {#detailed-options}
 
-以下部分提供了有关在[为 PWA 配置站点](#enabling-pwa-for-your-site)时可用的选项的更多详细信息。
+以下部分提供了有关[为PWA配置站点](#enabling-pwa-for-your-site)时可用的选项的更多详细信息。
 
 ### 配置安装体验 {#configure-installable-experience}
 

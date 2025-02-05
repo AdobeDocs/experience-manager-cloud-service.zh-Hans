@@ -4,10 +4,10 @@ description: 了解内容创作如何与 Edge Delivery Services 协同工作，�
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ Edge Delivery Services 让创作变得简单、快速且灵活。您有两种选
 
 ![配置块属性](assets/block-properties.png)
 
-有关如何使用通用编辑器进行创作的详细信息，请参阅文档[使用通用编辑器创作内容。](/help/sites-cloud/authoring/universal-editor/authoring.md)
+有关如何使用通用编辑器创作内容的详细信息，请参阅文档[使用通用编辑器创作内容](/help/sites-cloud/authoring/universal-editor/authoring.md)。
 
 请参阅[使用 Edge Delivery Services 进行所见即所得创作的开发人员入门指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，了解如何使用 AEM 和 Edge Delivery Services 启动自己的项目，以进行创作。
 

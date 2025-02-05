@@ -4,7 +4,7 @@ description: AEM as a Cloud Service 中的基础设施和服务监控
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%
@@ -29,7 +29,7 @@ AEM as a Cloud Service使用数百个云原生监视器，每年365天不间断�
 
 ### 服务Edge {#service-edge}
 
-您的所有AEM as a Cloud Service环境都受可用性监控。 但是，Service Edge Monitoring仅针对生产环境设置，并且量度用于计算客户的SLA。 它考虑到了环境运行时和AEM as a Cloud Service CDN。 服务Edge Monitoring采用五个不同的位置靠近您选择的区域，并定期检查可用性。 站点的不可用性会触发警报，并吸引Adobe的待命支持团队和流程。
+您的所有AEM as a Cloud Service环境都受可用性监控。 但是，“服务Edge监控”仅针对生产环境设置，并且量度将用于计算客户的SLA。 它考虑到了环境运行时和AEM as a Cloud Service CDN。 服务Edge Monitoring采用五个不同的位置靠近您选择的区域，并定期检查可用性。 站点的不可用性会触发警报，并吸引Adobe的待命支持团队和流程。
 
 ### 自定义监控 {#custom-monitoring}
 
@@ -37,7 +37,7 @@ AEM as a Cloud Service使用数百个云原生监视器，每年365天不间断�
 
 >[!NOTE]
 >
-> 此功能仅适用于具有[高级云支持的生产环境和客户。](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons)如果您有任何问题，请与您的Adobe客户团队联系。
+> 此功能仅适用于具有[高级云支持](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons)的生产环境和客户。 如果您有任何问题，请联系您的Adobe客户团队。
 
 ## 内部模块监控 {#module-monitoring}
 

@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 39%
+source-wordcount: '1370'
+ht-degree: 37%
 
 ---
 
@@ -25,11 +25,11 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!NOTE]
 >
->本文档假设您已熟悉如何访问和导航通用编辑器。 如果不是，请参阅文档[访问和导航通用编辑器。](/help/sites-cloud/authoring/universal-editor/navigation.md)
+>本文档假设您已熟悉如何访问和导航通用编辑器。 如果没有，请参阅[访问和导航通用编辑器](/help/sites-cloud/authoring/universal-editor/navigation.md)。
 
 >[!TIP]
 >
->有关 Universal Editor 的更详细介绍，请参阅文档 [Universal Editor 简介](/help/implementing/universal-editor/introduction.md)。
+>有关通用编辑器的更详细介绍，请参阅[通用编辑器简介](/help/implementing/universal-editor/introduction.md)。
 
 ## 编辑内容 {#editing-content}
 
@@ -39,7 +39,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 >[!TIP]
 >
->默认情况下，点击或单击内容会选择进行编辑。 如果要通过以下链接导航内容，请切换到[预览模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+>默认情况下，点击或单击内容会选择进行编辑。 如果要通过以下链接导航内容，请切换到[预览模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)。
 
 根据您选择的内容，您可能有不同的就地编辑选项，并且您可能会在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中为该内容提供其他信息和选项。
 
@@ -51,7 +51,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 蓝色细轮廓变为蓝色粗轮廓以指示选择，并且出现光标。 进行更改，然后按Enter/Return或选择文本框外部以保存更改。
 
-当您选择文本组件时，其详细信息将显示在[属性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您还可以在面板中编辑文本。
+当您选择文本组件时，其详细信息将显示在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中。 您还可以在面板中编辑文本。
 
 ![在属性面板中编辑文本](assets/ue-editing-text-component-rail.png)
 
@@ -83,7 +83,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ### 编辑媒体 {#edit-media}
 
-您可以在[属性面板中查看其详细信息。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+您可以在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中查看其详细信息。
 
 ![编辑媒体](assets/ue-edit-media.png)
 
@@ -96,7 +96,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ### 编辑内容片段 {#edit-content-fragment}
 
-如果选择[内容片段，](/help/sites-cloud/administering/content-fragments/overview.md)，则可以在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中编辑其详细信息。
+如果选择[内容片段](/help/sites-cloud/administering/content-fragments/overview.md)，则可以在[属性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中编辑其详细信息。
 
 ![编辑内容片段](assets/ue-edit-cf.png)
 
@@ -163,7 +163,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 ### 对容器中的组件重新排序 {#reordering-components}
 
-1. 如果尚未进入[内容树模式，](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)切换到它。
+1. 如果尚未处于[内容树模式](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，请切换到它。
 1. 在内容树或编辑器中选择一个容器组件。
 1. 选择容器的V形图标以在内容树中展开其内容。
 1. 拖动容器内组件旁边的手柄图标表明您可以重新排列它们。拖动组件以对它们在容器内重新排序。
@@ -182,7 +182,7 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 编辑完内容后，您通常需要导航内容以查看它在其他页面内容中的外观。在[预览模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以单击链接来像阅读器一样导航您的内容。内容在编辑器中呈现，就像它将要发布的那样。
 
-在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换出[预览模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
+在预览模式下，点按或单击内容的反应与对内容的读者一样。 如果要选择要编辑的内容，请切换出[预览模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)。
 
 ## 其他资源 {#additional-resources}
 
@@ -204,4 +204,4 @@ Universal Editor 支持在任意实施中编辑任何内容的任何方面，以
 
 使用通用编辑器，您可以通过简单地更新内容来取消内容的继承。 编辑器会自动禁用作者在该页面上所做所有更改的继承，确保在从Blueprint同步更新时保留修改的内容。
 
-有关使用通用编辑器继承如何工作的更多详细信息，请参阅通用编辑器中的文档[内容继承。](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+有关使用通用编辑器继承如何工作的更多详细信息，请参阅通用编辑器中的[内容继承](/help/sites-cloud/authoring/universal-editor/inheritance.md)。

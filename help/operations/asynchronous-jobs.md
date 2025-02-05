@@ -4,10 +4,10 @@ description: Adobe Experience Manager通过以后台操作方式异步完成某�
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 64%
+ht-degree: 60%
 
 ---
 
@@ -85,7 +85,7 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 您可以修改清除作业的计划，以及删除之前保留已完成作业详细信息的持续时间。您还可以配置在任何时间点保留详细信息的已完成作业的最大数量。
 
-1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK快速入门Jar的AEM Web控制台。
+1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK Quickstart Jar的AEM Web控制台。
 1. 导航到&#x200B;**OSGi** > **配置**
 1. 打开 **[!UICONTROL Adobe Granite 异步作业清除计划作业]**。
 1. 指定：
@@ -101,9 +101,9 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 如果要删除的资产或文件夹数量超过阈值数，将异步执行删除操作。
 
-1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK快速入门Jar的AEM Web控制台。
+1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK Quickstart Jar的AEM Web控制台。
 1. 导航到&#x200B;**OSGi** > **配置**
-1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步进程默认队列配置。]**
+1. 从Web控制台中，打开&#x200B;**[!UICONTROL 异步进程默认队列配置]**。
 1. 在&#x200B;**[!UICONTROL 资产的阈值数]**&#x200B;框中，指定用于异步处理删除操作的资产/文件夹的阈值数。
 
    ![资产删除阈值](assets/async-delete-threshold.png)
@@ -115,9 +115,9 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 如果要移动的资产/文件夹或引用数量超过阈值数，将异步执行移动操作。
 
-1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK快速入门Jar的AEM Web控制台。
+1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK Quickstart Jar的AEM Web控制台。
 1. 导航到&#x200B;**OSGi** > **配置**
-1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步移动操作作业处理配置。]**
+1. 从Web控制台中，打开&#x200B;**[!UICONTROL 异步移动操作作业处理配置]**。
 1. 在&#x200B;**[!UICONTROL 资产/参考的阈值数]**&#x200B;框中，指定用于异步处理移动操作的资产/文件夹的阈值数。
 
    ![资产移动阈值](assets/async-move-threshold.png)
@@ -127,9 +127,9 @@ AEM每天01:00运行清除作业，以删除已完成的已超过一天的异步
 
 ### 配置异步MSM操作 {#configuring-asynchronous-msm-operations}
 
-1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK快速入门Jar的AEM Web控制台。
+1. 以管理员用户身份登录到位于`https://<host>:<port>/system/console`的AEM SDK Quickstart Jar的AEM Web控制台。
 1. 导航到&#x200B;**OSGi** > **配置**
-1. 从 Web 控制台中，打开&#x200B;**[!UICONTROL 异步页面移动操作作业处理配置。]**
+1. 从Web控制台中，打开&#x200B;**[!UICONTROL 异步页面移动操作作业处理配置]**。
 1. 选中选项&#x200B;**启用电子邮件通知**，以接收此作业状态的电子邮件通知。例如，成功、失败。
 
    ![MSM 配置](assets/async-msm.png)

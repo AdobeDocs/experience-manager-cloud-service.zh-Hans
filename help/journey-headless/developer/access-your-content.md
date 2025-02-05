@@ -5,16 +5,16 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1344'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # 如何通过 AEM 交付 API 访问您的内容 {#access-your-content}
 
-在 [AEM Headless 开发人员历程](overview.md)的这部分中，您可以了解如何使用 GraphQL 查询访问内容片段的内容并将其提供给您的应用程序（Headless 交付）。
+在[AEM Headless开发人员历程](overview.md)的这一可选部分中，您可以了解如何使用GraphQL查询访问内容片段的内容并将其馈送到应用程序（headless投放）。
 
 ## 迄今为止的故事 {#story-so-far}
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 那么...您已获得所有这些结构整齐的内容（在内容片段中），并且正等待为您的新应用程序提供信息。问题是如何做到这一点？
 
-您需要通过一种方式来定位特定的内容，选择所需内容并将其返回到您的应用程序以供进一步处理。
+您需要通过一种方式来锁定特定的内容，选择所需内容并将其返回到您的应用程序以供进一步处理。
 
 借助 Adobe Experience Manager (AEM) as a Cloud Service，您可以使用 AEM GraphQL API 选择性地访问您的内容片段以仅返回您需要的内容。这意味着您可以实施结构化内容的 Headless 交付以便在您的应用程序中使用。
 

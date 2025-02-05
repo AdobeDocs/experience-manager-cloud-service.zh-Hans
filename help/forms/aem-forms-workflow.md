@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 1%
 
 ---
-
 
 # OSGi上以Forms为中心的工作流 {#forms-centric-workflow-on-osgi}
 
@@ -78,7 +78,7 @@ AEM提供了一个直观的用户界面，用于使用提供的工作流步骤�
 1. 启用电子邮件通知。 您可以在OSGi上配置以Forms为中心的工作流，以向用户或受分配人发送电子邮件通知。 执行以下配置以启用电子邮件通知：
 
    1. 前往`https://[server]:[port]/system/console/configMgr`处的AEM配置管理器。
-   1. 打开&#x200B;**[!UICONTROL 天CQ邮件服务]**&#x200B;配置。 指定&#x200B;**[!UICONTROL SMTP服务器主机名]**、**[!UICONTROL SMTP服务器端口、]**&#x200B;和&#x200B;**[!UICONTROL “发件人”地址]**&#x200B;字段的值。 单击&#x200B;**[!UICONTROL 保存]**。
+   1. 打开&#x200B;**[!UICONTROL 天CQ邮件服务]**&#x200B;配置。 指定&#x200B;**[!UICONTROL SMTP服务器主机名]**、**[!UICONTROL SMTP服务器端口]**&#x200B;和&#x200B;**[!UICONTROL “发件人”地址]**&#x200B;字段的值。 单击&#x200B;**[!UICONTROL 保存]**。
    1. 打开&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;配置。 在&#x200B;**[!UICONTROL 域]**&#x200B;字段中，为本地、作者和发布实例指定实际的主机名/IP地址和端口号。 单击&#x200B;**[!UICONTROL 保存]**。
 
 1. 创建工作流暂存。 一个工作流可以有多个阶段。 这些阶段显示在AEM收件箱中并报告工作流的进度。
@@ -268,7 +268,7 @@ You can associate and execute a Forms-centric workflow on OSGi on submission of 
 You can use the Assign Task and Send Email steps of AEM Workflows to send an email. Perform the following steps to specify email servers and other configurations required to send email:
 
 1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
+1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**. -->
 
 ### 清除工作流实例 {#purge-workflow-instances}

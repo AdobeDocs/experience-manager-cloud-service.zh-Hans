@@ -8,15 +8,15 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1328'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# 发布和取消发布表单和文档{#publishing-and-unpublishing-forms-and-documents}
+# 发布和取消发布 Form 和文档{#publishing-and-unpublishing-forms-and-documents}
 
 [!DNL AEM Forms]允许您轻松创建、发布和取消发布表单。 [!DNL AEM Forms]服务器提供两个实例： Author和Publish。 创作实例用于创建和管理表单资源和资源。 Publish实例用于保留可供最终用户使用的资源和相关资源。
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 ## 自动发布和取消发布Forms和文档 {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-[!DNL AEM Forms]允许您为Forms和文档计划资产发布和取消发布。 您可以在元数据编辑器中指定计划。 有关管理表单元数据的详细信息，请参阅[管理表单元数据。](manage-form-metadata.md)
+[!DNL AEM Forms]允许您为Forms和文档计划资产发布和取消发布。 您可以在元数据编辑器中指定计划。 有关管理表单元数据的详细信息，请参阅[管理表单元数据](manage-form-metadata.md)。
 
 请按照以下步骤计划发布和取消发布Forms &amp; Documents资产的日期和时间：
 

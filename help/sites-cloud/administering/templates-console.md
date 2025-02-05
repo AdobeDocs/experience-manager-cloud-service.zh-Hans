@@ -4,13 +4,13 @@ description: 了解模板控制台如何充当查看和管理页面模板的中�
 solution: Experience Manager Sites
 feature: Administering
 role: User
-source-git-commit: 993f81e0ff2b71ce2edf59a2c74398db3abe8f06
+exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '863'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # 模板控制台 {#templates-console}
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 创建页面时，需要选择模板。 页面模板用作新页面的基础。 [AEM可编辑模板](/help/implementing/developing/components/templates.md)可以定义生成页面的结构、任何初始内容以及可以使用的组件（设计属性）。
 
-内容作者在站点控制台中[创建新页面时，会看到一系列可用的模板。](/help/sites-cloud/authoring/sites-console/creating-pages.md)模板可用于创建可通过以下方式编辑的页面：
+内容作者在站点控制台[中创建新页面时，会看到一系列可用的模板](/help/sites-cloud/authoring/sites-console/creating-pages.md)。 模板可用于创建可通过以下方式编辑的页面：
 
 * [页面编辑器](/help/sites-cloud/authoring/page-editor/templates.md)或
 * [通用编辑器](/help/sites-cloud/authoring/universal-editor/templates.md)
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 ## 属性 {#properties}
 
-您可以像编辑[页面属性一样编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)的[属性。](/help/sites-cloud/authoring/sites-console/page-properties.md)模板属性包括：
+您可以编辑模板](/help/sites-cloud/authoring/page-editor/templates.md)的[属性，其方式与[编辑页面属性](/help/sites-cloud/authoring/sites-console/page-properties.md)的方式非常相似。模板属性包括：
 
 * 模板标题
 * 描述
@@ -135,6 +135,6 @@ ht-degree: 1%
 
 ## 创建模板 {#create}
 
-使用控制台中的&#x200B;**创建**&#x200B;按钮，在当前位置创建新模板。 有关创建模板的详细信息，请参阅文档[用于创建可通过页面编辑器编辑的页面的模板。](/help/sites-cloud/authoring/page-editor/templates.md)
+使用控制台中的&#x200B;**创建**&#x200B;按钮，在当前位置创建新模板。 有关创建模板的详细信息，请参阅文档[用于创建可通过页面编辑器编辑的页面的模板](/help/sites-cloud/authoring/page-editor/templates.md)。
 
 **创建**&#x200B;按钮仅用于创建可通过页面编辑器编辑的模板。 请参阅文档[创建可通过通用编辑器编辑的页面的模板](/help/sites-cloud/authoring/universal-editor/templates.md)，了解如何基于使用通用编辑器创建的页面创建模板。

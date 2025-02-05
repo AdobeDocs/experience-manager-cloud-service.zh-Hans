@@ -5,9 +5,9 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1625'
 ht-degree: 45%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 45%
 
 ![侧面板选择器示例](assets/sites-console-side-panel-selector.png)
 
-有关侧面板的详细信息，请参阅文档[站点控制台侧面板。](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+有关侧面板的详细信息，请参阅[站点控制台侧面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)。
 
 ### 痕迹导航 {#breadcrumbs}
 
@@ -194,7 +194,7 @@ AEM工具栏最右侧的&#x200B;**视图**&#x200B;图标表示当前选定的视
 ![列表视图](assets/sites-console-list-view.png)
 
 * 您可以通过点按/单击资源名称对树进行向下导航，并使用[标题中的痕迹导航](#the-header)再次向上导航。
-* 要轻松选择列表中的所有项目，请使用工具栏中的&#x200B;[**全选**&#x200B;复选框。](#select-all)
+* 要轻松选择列表中的所有项目，请使用工具栏](#select-all)中的&#x200B;[**全选**&#x200B;复选框。
 
 * 可使用位于“视图”按钮下方的&#x200B;**查看设置**&#x200B;选项选择要显示的列。可以显示以下列：
 

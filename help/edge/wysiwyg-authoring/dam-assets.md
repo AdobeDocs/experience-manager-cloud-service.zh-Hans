@@ -3,13 +3,13 @@ title: 使用Edge Delivery Services发布带DAM Assets的页面
 description: 了解确保将页面的DAM资源无缝发布到Edge Delivery Services所需的设置。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 65a3b4d923a91702e7ea9b13356802836fa4ce0b
+exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
 
 ---
-
 
 # 使用Edge Delivery Services发布带DAM Assets的页面 {#dam-assets}
 
@@ -21,8 +21,8 @@ ht-degree: 2%
 
 要确保这种无缝行为，AEM和Edge Delivery Services必须具有对DAM的正确访问权限才能发布。 这包括：
 
-* [确保资产文件夹可访问。](#accessible)
-* [确保为assets文件夹分配了正确的配置（如果需要）。](#configuration)
+* [确保资源文件夹可访问](#accessible)。
+* [确保为资源文件夹分配了正确的配置（根据需要）](#configuration)。
 
 ## 确保Assets文件夹可访问 {#accessible}
 
@@ -54,4 +54,4 @@ ht-degree: 2%
 1. 在属性窗口中点按或单击&#x200B;**取消**，然后导航到&#x200B;**Assets** -> **文件**，并选择您的DAM文件夹。
 1. 点按或单击工具栏中的&#x200B;**属性**。
 1. 在Cloud Service窗口的&#x200B;**属性**&#x200B;选项卡的&#x200B;**云配置**&#x200B;字段中，选择与之前说明的相同的配置。
-1. 点按或单击&#x200B;**保存并关闭**。
+1. 点击或单击&#x200B;**保存并关闭**。

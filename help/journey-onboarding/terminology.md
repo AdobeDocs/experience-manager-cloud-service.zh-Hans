@@ -4,20 +4,20 @@ description: 在登录 AEMaaCS 之前，了解系统的一些术语及其基本�
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 # AEM as a Cloud Service 术语 {#terminology}
 
-在[上线历程](overview.md)的此部分中，您将了解 AEM as a Cloud Service 的一些术语及其基本结构。
+在[入门培训历程](overview.md)的这一可选部分中，您将了解AEM as a Cloud Service的一些术语及其基本结构。
 
 ## 目标 {#objective}
 
-现在，通过阅读文档[入门准备](preparation.md)，您已经了解载入的原因，在登录之前，了解一些系统术语及其基本结构是很有帮助的。
+现在，通过阅读文档[入门准备](preparation.md)，您已经了解载入的原因，在登录之前，了解一些系统术语及其基本结构会很有帮助。
 
 AEM as a Cloud Service 是一种强大而灵活的工具，要使用任何工具，您都应该熟悉其组织结构以及用于描述它的术语和语言。本文档总结了开始使用系统之前需要理解的一些关键术语。
 

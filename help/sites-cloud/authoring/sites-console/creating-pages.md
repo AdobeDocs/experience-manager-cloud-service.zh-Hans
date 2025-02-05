@@ -5,7 +5,7 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 27%
@@ -19,7 +19,7 @@ ht-degree: 27%
 
 >[!TIP]
 >
->在开始创建新页面之前，请熟悉[AEM中页面的组织方式。](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>在开始创建新页面之前，请熟悉[AEM中页面的组织方式](/help/sites-cloud/authoring/sites-console/organizing-pages.md)。
 
 ## 访问权限 {#access-privileges}
 
@@ -31,7 +31,7 @@ ht-degree: 27%
 
 除非提前为您创建了所有页面，否则必须先创建页面，然后才能开始创建内容：
 
-1. 打开[站点&#x200B;****&#x200B;控制台。](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. 打开[站点&#x200B;**控制台](/help/sites-cloud/authoring/sites-console/introduction.md)。**
 1. 导航到要创建新页面的位置。
 1. 使用工具栏中的&#x200B;**创建**&#x200B;打开下拉选择器，然后从列表中选择&#x200B;**页**：
 

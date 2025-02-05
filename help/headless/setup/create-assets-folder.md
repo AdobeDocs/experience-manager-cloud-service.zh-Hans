@@ -4,10 +4,10 @@ description: 使用 AEM 内容片段模型定义内容片段的结构，也就�
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
    ![创建文件夹](../assets/assets-folder-create.png)
 1. 将光标悬停在其上并点击复选标记，选择您创建的文件夹。然后从工具栏中选择&#x200B;**属性**（或者使用 `p` [键盘快捷键](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)）。
 1. 在&#x200B;**属性**&#x200B;窗口中，选择 **Cloud Services** 选项卡。
-1. 对于&#x200B;**云配置**，选择[您之前创建的配置。](create-configuration.md)
+1. 对于&#x200B;**云配置**，请选择您之前创建的[配置](create-configuration.md)。
    ![配置资源文件夹](../assets/assets-folder-configure.png)
 1. 选择&#x200B;**保存并关闭**。
 1. 在确认窗口中选择 **好的**。

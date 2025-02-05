@@ -4,7 +4,7 @@ description: AEM提供了用于处理HTTP错误的标准错误处理程序，该
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -21,7 +21,7 @@ AEM附带了用于处理HTTP错误的标准错误处理程序；例如，通过�
 
 >[!TIP]
 >
->由于AEM基于Apache Sling，因此Apache错误处理文档[中提供了更多信息。](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
+>由于AEM基于Apache Sling，因此[Apache错误处理文档](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)中提供了更多信息。
 
 >[!NOTE]
 >

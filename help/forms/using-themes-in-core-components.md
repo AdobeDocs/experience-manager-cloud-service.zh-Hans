@@ -4,13 +4,13 @@ description: 您可以使用主题来设置样式，并使用核心组件为自�
 keywords: 自适应表单设置核心组件样式。 在核心组件中使用主题、设置自适应表单的样式、自定义主题
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 5%
 
 ---
-
 
 # 使用主题为基于核心组件的自适应Forms设置样式{#themes-for-af-using-core-components}
 
@@ -65,7 +65,7 @@ Forms如Cloud Service所提供，下面列出了基于核心组件的自适应Fo
 
 * 熟悉[在Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)中设置管道，并了解如何设置管道的基础知识可帮助您高效地管理和部署主题自定义项。
 * 了解如何[配置具有参与者角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)的用户。 通过了解如何使用参与者角色配置用户，您可以授予进行主题自定义所需的权限。
-* 安装[Apache Maven的最新版本。](https://maven.apache.org/download.cgi) Apache Maven是常用于Java™项目的生成自动化工具。 安装最新版本可确保您具有主题自定义所需的依赖项。
+* 安装[Apache Maven](https://maven.apache.org/download.cgi)的最新版本。 Apache Maven是一种常用于Java™项目的构建自动化工具。 安装最新版本可确保您具有主题自定义所需的依赖项。
 * 安装纯文本编辑器。 例如，Microsoft® Visual Studio Code。 使用Microsoft等纯文本编辑器®Visual Studio Code为编辑和修改主题文件提供了用户友好的环境。
 
 ### 设置环境
@@ -182,7 +182,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 `variable.scss`文件包含主题的全局变量。 通过更新这些变量，您可以在主题级别进行与样式相关的更改。 要应用主题级别的样式，请执行以下步骤：
 
 1. 打开 `<your-theme-sources>/src/site/_variables.scss` 文件以供编辑。
-1. 更改任何属性的值。 例如，默认错误颜色为`red`。 若要将错误颜色从`red`更改为`blue`，请更改`$errorvariable`的颜色十六进制代码。 例如：`$error: #196ee5`。
+1. 更改任何属性的值。 例如，默认错误颜色为`red`。 若要将错误颜色从`red`更改为`blue`，请更改`$errorvariable`的颜色十六进制代码。 例如 `$error: #196ee5`。
 1. 保存并关闭该文件。
 
    ![编辑主题](/help/forms/assets/edit_theme.png)
@@ -373,7 +373,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 5.3运行前端管道 {#run-a-frontend-pipeline}
 
-使用[前端管道部署主题。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。要部署主题，请执行以下步骤：
+使用[前端管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)部署主题。 要部署主题，请执行以下步骤：
 
 1. 登录到AEM Cloud Manager存储库。
 1. 单击&#x200B;**[!UICONTROL 管道]**&#x200B;部分中的&#x200B;**[!UICONTROL 添加]**&#x200B;按钮。

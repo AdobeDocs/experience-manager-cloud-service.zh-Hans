@@ -5,10 +5,10 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3088'
-ht-degree: 43%
+ht-degree: 40%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 43%
 
 ### 组件中的查询 {#queries-in-components}
 
-由于查询可能是在 AEM 系统上执行的最繁重的操作之一，因此最好在组件中避免查询。每次呈现页面时执行多个查询通常会降低系统的性能。有两种策略可用于在呈现组件时避免执行查询：**[遍历节点](#traversing-nodes)**&#x200B;和&#x200B;**[预取结果。](#prefetching-results)**
+由于查询可能是在 AEM 系统上执行的最繁重的操作之一，因此最好在组件中避免查询。每次呈现页面时执行多个查询通常会降低系统的性能。有两种策略可用于在呈现组件时避免执行查询：**[遍历节点](#traversing-nodes)**&#x200B;和&#x200B;**[预取结果](#prefetching-results)**。
 
 ### 遍历节点 {#traversing-nodes}
 
@@ -62,14 +62,14 @@ ht-degree: 43%
 
 ## 优化查询 {#optimizing-queries}
 
-Oak 文档提供了如何执行查询的[高级概述。](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing)这是本文件所述所有优化活动的基础。
+Oak文档提供了[有关如何执行查询的高级概述](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing)。 这是本文档中介绍的所有优化活动的基础。
 
 AEM as a Cloud Service提供了[查询性能工具](#query-performance-tool)，该工具旨在支持实现高效的查询。
 
 * 它可显示已执行的查询及其相关性能特征和查询计划。
 * 从仅显示查询计划到执行完整查询，它允许在不同级别执行特殊查询。
 
-查询性能工具可通过云管理器中的[开发者控制台访问。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)与 AEM 6.x 版本相比，AEM as a Cloud Service 的查询性能工具可提供更多有关查询执行细节的信息。
+查询性能工具可通过Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的[Developer Console访问。 与AEM 6.x版本相比，AEM as a Cloud Service的查询性能工具可提供更多有关查询执行细节的信息。
 
 此图表说明了使用查询性能工具优化查询的一般流程。
 

@@ -2,7 +2,8 @@
 title: 重新处理数字资产
 description: 了解重新处理数字资产的各种方法
 role: User, Leader, Developer
-source-git-commit: b041aa680b65ba4da0d7bf90fcb849a6388a9838
+exl-id: 19ca5278-929e-438b-9436-928f6c9f87d5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -81,7 +82,7 @@ ht-degree: 0%
 
 ### 重新处理文件夹中的Dynamic Media资源 {#reprocessing-dynamic-media}
 
-如果文件夹已具有现有的Dynamic Media图像配置文件或您后来更改的Dynamic Media视频配置文件，您可以重新处理该文件夹中的资产。 有关详细信息，请访问[重新处理文件夹中的Dynamic Media资源。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)
+如果文件夹已具有现有的Dynamic Media图像配置文件或您后来更改的Dynamic Media视频配置文件，您可以重新处理该文件夹中的资产。 有关详细信息，请访问[重新处理文件夹](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)中的Dynamic Media资源。
 
 >[!NOTE]
 >

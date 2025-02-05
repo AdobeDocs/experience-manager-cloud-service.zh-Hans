@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2414'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Experience Manager提供了多个现成的同步配置。 在使用 Live C
 
 下表列出了随 AEM 一起提供的现成的转出配置。该表包含每个转出配置的触发器和同步操作。
 
-如果安装的转出配置操作不符合您的要求，您可以[创建转出配置。](#creating-a-rollout-configuration)
+如果安装的转出配置操作不符合您的要求，您可以[创建转出配置](#creating-a-rollout-configuration)。
 
 | 名称 | 描述 | 触发器 | [同步操作](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Adobe Experience Manager提供了多个现成的同步配置。 在使用 Live C
 
 下表列出了随 AEM 一起提供的现成的同步操作。
 
-如果安装的操作不满足您的要求，您可以[创建新的同步操作](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)。
+如果安装的操作不符合您的要求，您可以[新建同步操作](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)。
 
 | 操作名称 | 描述 | 属性 |
 |---|---|---|
@@ -88,7 +88,7 @@ Adobe Experience Manager提供了多个现成的同步配置。 在使用 Live C
 当安装的转出配置不符合您的应用程序要求时，您可以采取以下步骤[创建转出配置：](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration)
 
 1. [创建转出配置-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [将同步操作添加到转出配置中。](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [将同步操作添加到转出配置](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)。
 
 然后，在 Blueprint 或 Live Copy 页面上配置转出配置时，您就可以使用新的转出配置。
 

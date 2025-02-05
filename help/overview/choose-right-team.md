@@ -4,10 +4,10 @@ description: 了解如何为您的项目选择合适的人员，并为他们分�
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 100%
 
 <br>
 
-![显示虚构角色及其在 AEM Assets 团队中的参与程度的水平条形图。](/help/overview/assets/team_involvement2.png)
+![显示虚拟角色及其在AEM Assets团队中的参与级别的水平条形图](/help/overview/assets/team_involvement2.png)。
 
 >[!TIP]
 >
