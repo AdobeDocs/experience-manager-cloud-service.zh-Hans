@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 35%
+ht-degree: 89%
 
 ---
 
@@ -18,34 +18,34 @@ ht-degree: 35%
 
 ## 版本 19149 {#19149}
 
-以下总结了维护版本19149的持续改进，该版本于2025年1月21日公开发布。 上一个维护版本是版本 18751。
+下方总结了维护版本 19149（于 2025 年 1 月 21 日公开发布该版本）的持续改进。上一个维护版本是版本 18751。
 
 激活 2025.1.0 功能后会为此维护版本提供全套功能。有关更多信息，请参阅[ Experience Manager 发布路线图](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增强功能 {#enhancements-19149}
 
-* Assets-45286：显示下载存档异步作业的粒度进度。
-* Assets-46296：支持资产选择器中的Dynamic Media模板。
-* Assets-44796：为DAM异步资源作业触发Assets事件。
+* ASSETS-45286：显示下载归档异步作业的详细进度。
+* ASSETS-46296：支持资产选择器中的 Dynamic Media 模板。
+* ASSETS-44796：针对 DAM 异步资产作业触发资产事件。
 
 ### 修复的问题 {#fixed-issues-19149}
 
-* GRANITE-55074：确保在错误响应上设置CORS响应标头。
-* Assets-43755：改进了可批量处理资源的可扩展性。
-* Assets-45399：在创建Asset Live-copy后重定向到Assets Console。
-* Assets-45462：自定义文件夹缩略图存在浏览器缓存问题。
-* Assets-46398：隐藏DM模板的下载和重新处理操作。
-* Assets-44484：重新保存连接的Assets配置时出现问题。
-* Assets-44122：异步复制资源作业在复制到当前文件夹时不会重命名目标文件夹。
-* Assets-44463：成功导出元数据时，“下载CSV”按钮不可见。
-* Assets-45134：使用目标标题移动作业会覆盖所有文件夹标题。
-* Assets-45137：与通过Assets视图批量上传冲突。
-* Assets-45758：资源关系在添加关系后获得无限忙/加载动画。
-* Assets-44148： AEM中的NODE_MOVED事件可能会导致日志中出现假的NPE。
-* Assets-28607：设置自定义视频缩略图时出现JS错误。
-* GRANITE-55781：改进Adobe Developer Console和AEM之间的组同步。 有关[用户组和产品配置文件同步中的更改](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)的更多详细信息。
-* GRANITE-55754：确保SDK启动脚本支持Java 21。
-* GRANITE-54248：无法滚动查看大型资源文件夹中的所有项目。
+* GRANITE-55074：确保在错误响应上设置 CORS 响应标头。
+* ASSETS-43755：与批量资产相关的可扩展性改进。
+* ASSETS-45399：创建资产实时副本后重定向到资产控制台。
+* ASSETS-45462：自定义文件夹缩略图的浏览器缓存问题。
+* ASSETS-46398：隐藏 DM 模板的下载和重新处理操作。
+* ASSETS-44484：重新保存连接资产配置时出现问题。
+* ASSETS-44122：异步复制资产作业在复制到当前文件夹时不会重命名目标文件夹。
+* ASSETS-44463：成功导出元数据后，下载 CSV 按钮不可见。
+* ASSETS-45134：移动带有目标标题的作业时会覆盖所有文件夹标题。
+* ASSETS-45137：通过资产视图批量上传时发生冲突。
+* ASSETS-45758：添加关系后，资产关系会显示一个无限忙碌/加载的动画。
+* ASSETS-44148：AEM 中的 NODE_MOVED 事件可能会导致日志中出现虚假 NPE。
+* ASSETS-28607：设置自定义视频缩略图时出现 JS 错误。
+* GRANITE-55781：改进 Adobe Developer Console 和 AEM 之间的群组同步。更多详情请参见[用户组和产品轮廓同步变更](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)。
+* GRANITE-55754：确保 SDK 启动脚本支持 Java 21。
+* GRANITE-54248：无法滚动浏览大型资产文件夹中的所有项目。
 * SCRNS-4597：搜索结果列表视图改进。
 
 
@@ -59,11 +59,11 @@ AEM as a Cloud Service 中已弃用和删除的功能和 API 在[已弃用和删
 
 #### 用户组和产品轮廓同步变更
 
-使用Adobe Admin Console进行权限管理时，不得使用以下组，因为它们将不再与AEM同步：
-* 以_GROUP_NAME_SUFFIX结尾的AEM组。
-* 来自其他环境、项目或产品的产品配置文件。
+在使用 Adobe Admin Console 进行权限管理时，不得使用以下群组，因为它们将不再与 AEM 同步：
+* 以 _GROUP_NAME_SUFFIX 结尾的 AEM 组。
+* 来自其他环境、程序或产品的产品轮廓。
 
-有关更多详细信息，请检查用户组和产品配置文件同步中的[更改](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)。
+更多详细信息请查看[用户组和产品轮廓同步变更](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization)。
 
 #### 弃用SPA编辑器 {#deprecate-spa-editor}
 

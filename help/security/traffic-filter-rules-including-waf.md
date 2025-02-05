@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: bc5dbee5b5accc747288638fd8e22ed8f2d12fd5
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **属性** | **类型** | **描述** |
 |---|---|---|
-| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的URL的完整路径。 （对未转义的变体使用`pathRaw`）</li><li>`url`：返回包含查询参数的完整URL。 （对未转义的变体使用`urlRaw`）</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`forwardedDomain`：返回在`X-Forwarded-Host`标头中定义的第一个域（小写）</li><li>`forwardedIp`：返回`X-Forwarded-For`标头中的第一个IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码（[区域指标符号](https://zh.wikipedia.org/wiki/cn/Regional_indicator_symbol)）。</li></ul> |
+| reqProperty | `string` | 请求属性。<br><br>以下各项之一：<br><ul><li>`path`：返回不带查询参数的 URL 的完整路径。（使用 `pathRaw` 作为非转义变体）</li><li>`url`：返回包含查询参数的完整 URL。（使用 `urlRaw` 作为非转义变体）</li><li>`queryString`：返回 URL 的查询部分</li><li>`method`：返回在请求中使用的 HTTP 方法。</li><li>`tier`：返回 `author`、`preview` 或 `publish` 之一。</li><li>`domain`：以小写形式返回域属性（如 `Host` 标头中所定义）</li><li>`clientIp`：返回客户端 IP。</li><li>`forwardedDomain`：以小写形式返回 `X-Forwarded-Host` 标头中所定义的首个域</li><li>`forwardedIp`：返回 `X-Forwarded-For` 标头中的第一个 IP。</li><li>`clientCountry`：返回标识客户端位于哪个国家/地区的二字母代码（[区域指标符号](https://zh.wikipedia.org/wiki/cn/Regional_indicator_symbol)）。</li></ul> |
 | reqHeader | `string` | 返回具有指定名称的请求头 |
 | queryParam | `string` | 返回具有指定名称的查询参数 |
 | reqCookie | `string` | 返回具有指定名称的 Cookie |
