@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '919'
 ht-degree: 20%
 
 ---
@@ -85,6 +85,8 @@ ht-degree: 20%
 * SITES-26660：当@ContentType为“字符串”类型时，内容片段版本比较可能会中断。
 * SITES-26626：数字和布尔字段上缺少customErrorMessage。
 * SITES-26268：如果在创建片段时引用无效，则返回错误状态代码。
+* Forms-18098、FORMS-17954：在Microsoft Edge浏览器的Internet Explorer模式下加载自适应Forms失败。
+* Forms-17162：发布资源会导致运行OOTB查询，从而降低发布性能。
 
 ### 已知问题 {#known-issues-19352}
 

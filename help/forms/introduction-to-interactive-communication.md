@@ -3,7 +3,7 @@ title: 交互式通信简介
 description: 通过AEM Forms交互式通信轻松设计动态的数据驱动通信
 feature: Release Information
 role: Admin
-source-git-commit: 2f4fd0c380c612042cfe5d755b0b1e5ddc7e7c88
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 2%
@@ -18,12 +18,12 @@ ht-degree: 2%
 
 从生成帐户报表的金融机构到精简福利通知的政府机构，交互式通信是轻松高效地制作高质量、安全且符合法律要求的信函的首选工具。
 
-
-[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+>[!VIDEO](https://video.tv.adobe.com/v/3444094/)
 
 <!-- ![Interactive Communication Editor](/help/assets/ic-editor.png)
 
 -->
+
 ## 核心功能
 
 交互式通信编辑器的核心功能包括：
