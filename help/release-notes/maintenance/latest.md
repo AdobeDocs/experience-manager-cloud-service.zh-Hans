@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的当前维�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 20%
+source-wordcount: '950'
+ht-degree: 19%
 
 ---
 
@@ -56,6 +56,11 @@ ht-degree: 20%
 
 ### 修复的问题 {#fixed-issues-19352}
 
+* CQ-4356756：不翻译对相关资产的支持。
+* CQ-4358206：重复翻译计划程序不适用于翻译项目。
+* CQ-4358126：无法在翻译云服务中选择配置子文件夹。
+* Forms-18098、FORMS-17954：在Microsoft Edge浏览器的Internet Explorer模式下加载自适应Forms失败。
+* Forms-17162：发布资源会导致运行OOTB查询，从而降低发布性能。
 * SITES-28415：带有通用编辑器的Edge Delivery：修复电子表格的“打开属性”按钮。
 * SITES-26669：使用通用编辑器的Edge Delivery：修复了在上传以UTF-8编码并以电子表格形式使用BOM的CSV文件时的问题。
 * SITES-26543：使用通用编辑器的Edge Delivery：修复没有模型渲染错误标记的空块。
@@ -85,8 +90,6 @@ ht-degree: 20%
 * SITES-26660：当@ContentType为“字符串”类型时，内容片段版本比较可能会中断。
 * SITES-26626：数字和布尔字段上缺少customErrorMessage。
 * SITES-26268：如果在创建片段时引用无效，则返回错误状态代码。
-* Forms-18098、FORMS-17954：在Microsoft Edge浏览器的Internet Explorer模式下加载自适应Forms失败。
-* Forms-17162：发布资源会导致运行OOTB查询，从而降低发布性能。
 
 ### 已知问题 {#known-issues-19352}
 
