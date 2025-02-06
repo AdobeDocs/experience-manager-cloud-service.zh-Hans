@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 401685af02c720994d72cd95d36f0cfcdf15d198
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 请使用以下流程将组件国际化，并提供不同语言的UI：
 
-1. [使用国际化字符串的代码实施组件](/help/implementing/developing/extending/i18n/dev.md)。 您的代码标识要翻译的字符串，并选择要在运行时呈现的语言。
-1. 创建词典并添加要翻译的英语字符串。
-1. 将字典导出为XLIFF格式，翻译字符串，然后将XLIFF文件导入回AEM。
+1. [使用国际化字符串的代码实施组件。](/help/implementing/developing/extending/i18n/dev.md)您的代码标识要翻译的字符串，并选择要在运行时呈现的语言。
+1. [创建词典](/help/implementing/developing/extending/i18n/translator.md#creating-a-dictionary)。
+1. [将字典导出](/help/implementing/developing/extending/i18n/translator.md#exporting-a-dictionary)为XLIFF格式，翻译字符串，然后将XLIFF文件导入回AEM。
 1. 将字典合并到应用程序的发布管理流程中。
 
 >[!NOTE]
@@ -37,10 +37,11 @@ AEM国际化框架使用存储库中的词典存储英语字符串及其翻译�
 * 代码易于阅读。
 * 默认语言始终可用。
 
-翻译更改需要通过AEM as a Cloud Service中的[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)从Git进行。
+[翻译工具](/help/implementing/developing/extending/i18n/translator.md)允许您从一个中心位置管理所有字典。
 
 ![i18n-components-2](/help/implementing/developing/extending/assets/i18n-comp2.png)
 
+翻译更改需要通过AEM as a Cloud Service中的[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)从Git进行。
 
 ### 在系统词典中覆盖字符串 {#overlaying-strings-in-system-dictionaries}
 

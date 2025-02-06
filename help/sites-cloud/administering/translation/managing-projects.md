@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 82%
+source-wordcount: '4129'
+ht-degree: 79%
 
 ---
 
@@ -275,6 +275,28 @@ AEM 中的翻译项目使用标准 [AEM 项目控制台。](/help/sites-cloud/au
 >[!TIP]
 >
 >此方法将页面/资源及其子级添加到项目中。如果只需添加父级，请选择&#x200B;**资源/页面(不带子级)**。
+
+### 将i18n词典添加到翻译作业 {#adding-i-n-dictionaries-to-a-translation-job}
+
+您可以将页面、资产、标记或i18n词典添加到翻译项目的翻译作业中。 添加i18n词典：
+
+1. 在翻译项目的翻译作业拼贴的底部，单击省略号。
+
+   ![翻译作业拼贴](../assets/translation-job.png)
+
+1. 单击添加和I18N词典。
+
+   ![添加i18n词典](../assets/add-i18n.png)
+
+1. 选择要添加的&#x200B;**根目录**&#x200B;和字典（如有必要），然后选择&#x200B;**添加**。
+
+   ![选择i18N词典](../assets/select-i18n.png)
+
+您的词典现在位于翻译作业中，然后可以启动翻译过程以在`/content/cq:i18n`中创建词典语言副本，并发送这些词典语言副本以供翻译。
+
+>[!NOTE]
+>
+>有关i18n词典的详细信息，请阅读[使用Translator管理词典](/help/implementing/developing/extending/i18n/translator.md)。
 
 ### 将标记添加到翻译作业 {#adding-tags-to-a-translation-job}
 
