@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2056'
 ht-degree: 26%
 
 ---
@@ -111,7 +111,19 @@ WYSIWYG创作提供WYSIWYG界面(通用编辑器和自适应Forms编辑器)，�
 
 ### 在自适应Forms中HTML电子邮件模板
 
-自适应Forms允许您使用HTML电子邮件模板。 通过HTML电子邮件模板，您可以在提交表单时发送丰富、个性化且具有视觉吸引力的电子邮件。 这些电子邮件可使用表单数据自定义，并使用各种电子邮件标记（如图像和链接）进行增强。 通过自适应Forms，您可以上传包含HTML模板的文件或使用纯文本编辑器创建这些模板。
+
+自适应Forms允许您使用[HTML电子邮件模板](/help/forms/html-email-templates-in-adaptive-forms.md)。 通过HTML电子邮件模板，您可以在提交表单时发送丰富、个性化且具有视觉吸引力的电子邮件。 这些电子邮件可使用表单数据自定义，并使用各种电子邮件标记（如图像和链接）进行增强。 通过自适应Forms，您可以上传包含HTML模板的文件或使用纯文本编辑器创建这些模板。
+
+![HTML电子邮件模板](/help/forms/assets/html-email.png)
+
+### RESTful Web服务提交操作
+
+自适应Forms现在可以使用新的RESTful Web服务提交操作，将捕获的数据无缝发送到经过身份验证的外部REST端点：
+
+* 支持的标准：Swagger 2.0和3.0可轻松API集成
+* 安全身份验证：OAuth 2.0、基本身份验证、API密钥和自定义身份验证
+* 灵活的数据格式：多部分表单数据、JSON和URL编码（键值对）
+
 
 
 ### 从右至左(RTL)语言支持
