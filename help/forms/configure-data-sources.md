@@ -5,10 +5,10 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '2129'
-ht-degree: 2%
+source-wordcount: '2339'
+ht-degree: 3%
 
 ---
 
@@ -123,7 +123,10 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 ## 配置RESTful Web服务 {#configure-restful-web-services}
 
-可在[!DNL Swagger]定义文件中使用JSON或YAML格式的[Swagger规范](https://swagger.io/specification/v2/)对RESTful Web服务进行描述。 若要在[!DNL Experience Manager]as a Cloud Service中配置RESTful Web服务，请确保您的文件系统上有[!DNL Swagger]文件（[Swagger版本2.0](https://swagger.io/specification/v2/)）或[!DNL Swagger]文件（[Swagger版本3.0](https://swagger.io/specification/v3/)），或者托管该文件的URL。
+可在[!DNL Swagger]定义文件或服务终结点中使用JSON或YAML格式的[Swagger规范](https://swagger.io/specification/v2/)描述RESTful Web服务。
+
+>[!NOTE]
+> 若要在[!DNL Experience Manager]as a Cloud Service中配置RESTful Web服务，请确保您的文件系统上有[!DNL Swagger]文件（[Swagger版本2.0](https://swagger.io/specification/v2/)）或[!DNL Swagger]文件（[Swagger版本3.0](https://swagger.io/specification/v3/)），或者托管该文件的URL。
 
 ### 为Open API规范版本2.0 {#configure-restful-services-open-api-2.0}配置RESTful服务
 
@@ -177,6 +180,31 @@ RESTful服务Open API规范版本3.0不支持的一些操作包括：
 * 针对单次操作的不同MIME类型的不同请求主体
 
 有关详细信息，请参阅[OpenAPI 3.0规范](https://swagger.io/specification/v3/)。
+
+### 使用服务端点配置RESTful服务 {#configure-restful-services-service-endpoint}
+
+<span class="preview">服务终结点功能在早期采用程序下，仅适用于核心组件。 您可以使用官方电子邮件 ID 写信给 aem-forms-ea@adobe.com，加入早期采用者计划并申请使用该功能。</span>
+
+1. 转到&#x200B;**[!UICONTROL 工具>Cloud Service>数据源]**。 选择以选择要创建云配置的文件夹。
+
+   有关为云服务配置创建和配置文件夹的信息，请参阅[为云服务配置文件夹](configure-data-sources.md#cloud-folder)。
+
+1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据Source配置向导]**。
+
+1. 指定配置的名称和标题，从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESTful服务]**，浏览并选择配置的缩略图图像，然后选择&#x200B;**[!UICONTROL 下一步]**。
+
+1. 在下一页上，从&#x200B;**[!UICONTROL RESTful服务下拉列表]**&#x200B;中选择&#x200B;**[!UICONTROL 服务终结点]**。
+
+   ![服务终结点](/help/forms/assets/select-service-endpoint.png)
+
+1. 指定&#x200B;**[!UICONTROL 服务终结点URL]**。
+
+   >[!NOTE]
+   > 默认情况下，方法类型POST。
+1. 从下拉列表中选择一种内容类型。 内容类型包括多部分表单数据、JSON和URL编码（键值对）。
+1. 现在，您可以从下拉列表中选择任意身份验证类型，如OAuth 2.0、基本身份验证、API密钥、自定义身份验证。
+   ![服务终结点身份验证类型](/help/forms/assets/service-endpoint-authtype.png)
+1. 单击“创建”。
 
 ### 表单数据模型(FDM) HTTP客户端配置可优化性能 {#fdm-http-client-configuration}
 
