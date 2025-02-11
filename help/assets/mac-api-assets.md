@@ -5,14 +5,14 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
+source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1693'
 ht-degree: 6%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
+# 使用[!DNL Adobe Experience Manager Assets] HTTP API管理数字资源{#assets-http-api}
 
 | [搜索最佳实践](/help/assets/search-best-practices.md) | [元数据最佳实践](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [具有 OpenAPI 功能的 Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) | [AEM Assets 开发人员文档](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
@@ -24,7 +24,7 @@ ht-degree: 6%
 
 ## 概述 {#overview}
 
-[!DNL Assets] HTTP API允许对数字资源执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括对元数据、演绎版和评论的操作，以及使用[!DNL Experience Manager]内容片段的结构化内容。 它在`/api/assets`中公开，并作为REST API实现。 它包括对内容片段](/help/assets/content-fragments/assets-api-content-fragments.md)的[支持。
+AEM [!DNL Assets] HTTP API通过位于/`api/assets`的REST接口对数字资源启用CRUD（创建、读取、更新和删除）操作。 这些操作适用于资源元数据、演绎版和注释。 它包括对内容片段](/help/assets/content-fragments/assets-api-content-fragments.md)的[支持。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 ## 内容片段 {#content-fragments}
 
-[内容片段](/help/assets/content-fragments/content-fragments.md)是一种特殊类型的资产。 它可用于访问结构化数据，如文本、数字、日期等。 由于`standard`资产（如图像或文档）存在若干差异，因此处理内容片段时适用一些其他规则。
+[内容片段](/help/assets/content-fragments/content-fragments.md)是存储文本、数字和日期的结构化资产。 由于`standard`资产（如图像或文档）存在若干差异，因此处理内容片段时适用一些其他规则。
 
 有关详细信息，请参阅 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[内容片段支持。
 
@@ -55,7 +55,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 ## 数据模型 {#data-model}
 
-[!DNL Assets] HTTP API公开两个主要元素：文件夹和资源（用于标准资源）。 此外，它还会为描述内容片段中结构化内容的自定义数据模型显示更详细的元素。 有关详细信息，请参阅[内容片段数据模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)。
+[!DNL Assets] HTTP API主要公开两个元素：文件夹和标准资源。 它还为内容片段中使用的自定义数据模型提供详细元素。 有关更多详细信息，请参阅内容片段数据模型。 有关详细信息，请参阅[内容片段数据模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)。
 
 >[!NOTE]
 >
@@ -63,14 +63,14 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 ### 文件夹 {#folders}
 
-文件夹与传统文件系统中的目录类似。 文件夹可以只包含资源，也可以只包含文件夹或文件夹和资源。 文件夹具有以下组件：
+文件夹与传统文件系统中的目录类似。 文件夹可以包含资源和/或子文件夹。 文件夹具有以下组件：
 
 **实体**：文件夹的实体是其子元素，可以是文件夹和资源。
 
 **属性**：
 
-* `name`是文件夹的名称。 这与URL路径中没有扩展的最后一个区段相同。
-* `title`是文件夹的可选标题，可以显示它而不是其名称。
+* `name`：文件夹的名称（URL路径的最后一个区段，不带扩展名）。
+* `title`：显示的可选标题代替文件夹名称。
 
 >[!NOTE]
 >
@@ -78,18 +78,18 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 **链接**&#x200B;文件夹显示三个链接：
 
-* `self`：链接到自身。
-* `parent`：链接到父文件夹。
-* `thumbnail`：（可选）链接到文件夹缩略图图像。
+* `self`：指向文件夹本身的链接。
+* `parent`：指向父文件夹的链接。
+* `thumbnail` （可选）：指向文件夹缩略图图像的链接。
 
 ### 资源 {#assets}
 
 在[!DNL Experience Manager]中，资产包含以下元素：
 
-* 资源的属性和元数据。
-* 最初上传的资产的二进制文件。
-* 已配置多个演绎版。 这些可以是不同大小的图像、不同编码的视频，或者从PDF或[!DNL Adobe InDesign]文件中提取的页面。
-* 可选注释。
+* **属性和元数据：**&#x200B;有关资产的描述性信息。
+* **二进制文件：**&#x200B;最初上载的文件。
+* **演绎版：**&#x200B;多个配置的演绎版(例如，不同大小的图像、不同的视频编码或从PDF/Adobe InDesign文件中提取的页面)。
+* **备注（可选）：**&#x200B;用户提供的备注。
 
 有关内容片段中元素的信息，请参阅[Experience Manager Assets HTTP API中的内容片段支持](/help/assets/content-fragments/assets-api-content-fragments.md)。
 
@@ -173,7 +173,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 ## 创建资产 {#create-an-asset}
 
-有关如何创建资产的信息，请参阅[资产上传](developer-reference-material-apis.md)。 无法使用HTTP API创建资源。
+不支持通过此HTTP API创建资源。 要创建资源，请使用[资源上传](developer-reference-material-apis.md) API。
 
 ## 更新资产二进制文件 {#update-asset-binary}
 
@@ -181,7 +181,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 ## 更新资源的元数据 {#update-asset-metadata}
 
-更新资源元数据属性。 如果更新`dc:`命名空间中的任何属性，则API会更新`jcr`命名空间中的相同属性。 该API不会同步两个命名空间下的属性。
+此操作将更新资源的元数据。 更新`dc:`命名空间中的属性时，相应的`jcr:`属性已更新。 但是，该API不会同步两个命名空间下的属性。
 
 **请求**： `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -196,7 +196,10 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 为资源创建演绎版。 如果未提供请求参数名称，则使用文件名作为演绎版名称。
 
-**参数**：格式副本的名称为`name`，文件引用为`file`。
+**参数**：参数为：
+
+`name`：用于呈现版本名称。
+`file`：作为引用的格式副本的二进制文件。
 
 **请求**
 
@@ -292,9 +295,9 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 ## 提示、最佳实践和限制 {#tips-limitations}
 
-* 在[!UICONTROL 结束时间]后，无法通过[!DNL Assets] Web界面和HTTP API使用资产及其演绎版。 如果[!UICONTROL 开启时间]是未来的时间，或者[!UICONTROL 结束时间]是过去的时间，则API会返回404错误消息。
+* 当达到[!UICONTROL 结束时间]时，通过[!DNL Assets] Web界面和HTTP API，Assets及其演绎版将变得不可用。 如果[!UICONTROL 开启时间]是未来的时间，或者[!UICONTROL 结束时间]是过去的时间，则API返回404错误。
 
-* Assets HTTP API不返回完整的元数据。 命名空间是硬编码的，并且只返回这些命名空间。 有关完整的元数据，请参阅资源路径`/jcr_content/metadata.json`。
+* Assets HTTP API仅返回元数据的子集。 命名空间是硬编码的，并且只返回这些命名空间。 有关完整的元数据，请参阅资源路径`/jcr_content/metadata.json`。
 
 * 使用API更新时，文件夹或资产的某些属性会映射到不同的前缀。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`前缀已替换为`dc`前缀。 因此，在返回的JSON中，`dc:title`和`dc:description`分别包含`jcr:title`和`jcr:description`的值。
 

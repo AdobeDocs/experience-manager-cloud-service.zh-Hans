@@ -4,14 +4,26 @@ description: 通过响应式设计，可以在多个设备上以多个方向有�
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '1165'
 ht-degree: 1%
 
 ---
 
+
 # 响应式设计 {#responsive-design}
+
+通过响应式设计，可以在多个设备上以多个方向有效地显示相同的体验。
+
+>[!TIP]
+>
+>本文档概述了面向开发人员的响应式设计以及在AEM中如何实现功能。 其他资源可供使用：
+>
+>* 对于内容作者，文档[响应式布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)中提供了如何在内容页面上使用响应式设计功能的详细信息。
+>* 对于站点管理员，有关如何为站点配置布局容器的详细信息，请参阅[配置布局容器和布局模式文档。](/help/sites-cloud/administering/responsive-layout.md)
+
+## 概述 {#overview}
 
 设计您的体验，使其适应显示它们的客户端视区。 通过响应式设计，可以在两个方向上的多个设备上有效地显示相同页面。 下图演示了页面响应视区大小更改的一些方式：
 
@@ -132,4 +144,65 @@ JSP脚本将生成引用样式表的以下HTML代码：
 
 通过AEM布局容器，您可以高效实施响应式布局，以根据客户端视区调整页面尺寸。
 
-有关布局容器如何工作以及如何为内容启用响应式布局的更多信息，请参阅文档[配置布局容器和布局模式](/help/sites-cloud/administering/responsive-layout.md)。
+>[响应式网格的GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)是可供前端开发人员使用的参考，例如在为将来的AEM站点创建静态AEM模型时，允许他们在AEM外部使用HTML网格。
+
+>[!TIP]
+>
+>有关布局容器如何工作以及如何为内容启用响应式布局的更多信息，请参阅文档[配置布局容器和布局模式](/help/sites-cloud/administering/responsive-layout.md)。
+
+## 嵌套响应式网格 {#nested-responsive-grids}
+
+在某些情况下，您可能会发现有必要嵌套响应式网格来支持项目的需求。 但是，请记住，Adobe推荐的最佳做法是尽可能保持结构平整。
+
+当您无法避免使用嵌套的响应式网格时，请确保：
+
+* 所有容器（容器、选项卡、折叠等）都具有属性`layout = responsiveGrid`。
+* 不要在容器层次结构中混合使用属性`layout = simple`。
+
+这包括页面模板中的所有结构化容器。
+
+内部容器的列号不得大于外部容器的列号。 下面的示例满足此条件。 对于默认（桌面）屏幕，外部容器的列号为8，而内部容器的列号为4。
+
+>[!BEGINTABS]
+
+>[!TAB 示例节点结构]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB 示例结果HTML]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+>[!ENDTABS]

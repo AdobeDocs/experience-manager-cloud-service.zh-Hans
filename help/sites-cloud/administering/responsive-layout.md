@@ -5,16 +5,28 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1377'
 ht-degree: 3%
 
 ---
 
+
 # 配置布局容器和布局模式 {#configuring-layout-container-and-layout-mode}
 
-[响应式布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)是一种用于实现[响应式网页设计](https://en.wikipedia.org/wiki/Responsive_web_design)的机制。 这允许内容作者创建网页，这些网页的布局和维度取决于其用户使用的设备。
+了解如何配置布局容器和布局模式以便为内容作者启用响应式布局。
+
+>[!TIP]
+>
+>本文档介绍站点管理员如何配置布局容器以支持响应式Web设计。 其他资源可供使用：
+>
+>* 对于内容作者，文档[响应式布局](/help/sites-cloud/authoring/page-editor/responsive-layout.md)中提供了如何在内容页面上使用响应式设计功能的详细信息。
+>* 对于开发人员而言，布局容器和响应式网格的详细信息在[响应式设计文档](/help/implementing/developing/introduction/responsive-design.md)中进行了描述，该文档提供了在设计网站时使用布局容器和响应式网格的提示和技巧。
+
+## 概述 {#overview}
+
+响应布局是一种实现[响应式网页设计](https://en.wikipedia.org/wiki/Responsive_web_design)的机制。 这允许内容作者创建网页，这些网页的布局和维度取决于其用户使用的设备。
 
 AEM 使用一组机制为页面实现响应式布局：
 
@@ -229,3 +241,9 @@ AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项�
 ### 配置布局容器的网格 {#configure-the-grid-of-the-layout-container}
 
 您可以通过编辑页面模板](/help/sites-cloud/authoring/page-editor/templates.md)来配置布局容器[的每个特定实例的可用列数。
+
+### 嵌套响应式网格 {#nested-responsive-grids}
+
+Adobe建议的最佳做法是保持结构尽可能平坦。
+
+当您无法避免使用嵌套的响应式网格时，请参阅开发人员文档[响应式设计。](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)

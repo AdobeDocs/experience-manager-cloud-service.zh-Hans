@@ -1,22 +1,32 @@
 ---
 title: 响应式布局
-description: AEM 让您能够为页面实现响应式布局
+description: AEM允许您使用布局容器组件为页面实现响应式布局。
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 85%
+source-wordcount: '1789'
+ht-degree: 81%
 
 ---
+
 
 # 响应式布局 {#responsive-layout}
 
 AEM 让您能够使用&#x200B;**布局容器**&#x200B;组件为页面实现响应式布局。
 
-由此提供的段落系统让您能够将组件放置在响应式网格内。此网格可以根据设备/窗口大小和格式重新安排布局。此组件可与&#x200B;[**布局**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)配合使用，让您能够根据设备创建和编辑响应式布局。
+>[!TIP]
+>
+>本文档概述了内容作者可用的布局容器功能。 其他资源可供使用：
+>
+>* 对于站点管理员，有关如何为站点配置布局容器的详细信息，请参阅[配置布局容器和布局模式文档。](/help/sites-cloud/administering/responsive-layout.md)
+>* 对于开发人员而言，布局容器和响应式网格的详细信息在[响应式设计文档](/help/implementing/developing/introduction/responsive-design.md)中进行了描述，该文档提供了在设计网站时使用布局容器和响应式网格的提示和技巧。
+
+## 概述 {#overview}
+
+**布局容器**&#x200B;组件提供了一个段落系统，允许您在响应式网格中放置组件。 此网格可以根据设备/窗口大小和格式重新安排布局。此组件可与&#x200B;[**布局**&#x200B;模式](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)配合使用，让您能够根据设备创建和编辑响应式布局。
 
 布局容器：
 
@@ -49,10 +59,6 @@ AEM 使用一组机制为页面实现响应式布局：
 * 实现列控件。
 
 根据您的项目，可以将布局容器用作页面的默认段落系统，或用作可通过组件浏览器添加到页面中的组件（或同时用作两者）。
-
->[!TIP]
->
->Adobe提供了响应式布局的[GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)，前端开发人员可以参考该文档，以便在AEM之外使用AEM网格，例如，在为将来的AEM站点创建静态HTML模型时。
 
 >[!NOTE]
 >
