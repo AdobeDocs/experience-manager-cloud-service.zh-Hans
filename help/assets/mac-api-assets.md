@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
+source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1709'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 6%
 | AEM 6.5 | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | 本文 |
 
-## 概述 {#overview}
+## AEM [!DNL Assets] HTTP API入门 {#overview}
 
 AEM [!DNL Assets] HTTP API通过位于/`api/assets`的REST接口对数字资源启用CRUD（创建、读取、更新和删除）操作。 这些操作适用于资源元数据、演绎版和注释。 它包括对内容片段](/help/assets/content-fragments/assets-api-content-fragments.md)的[支持。
 
@@ -41,7 +41,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 >
 >所有与上传或更新一般资源或二进制文件（如演绎版）相关的API调用在[!DNL Experience Manager]中作为[!DNL Cloud Service]部署已弃用。 要上载二进制文件，请改用[直接二进制上载API](developer-reference-material-apis.md#asset-upload)。
 
-## 内容片段 {#content-fragments}
+## 管理内容片段 {#content-fragments}
 
 [内容片段](/help/assets/content-fragments/content-fragments.md)是存储文本、数字和日期的结构化资产。 由于`standard`资产（如图像或文档）存在若干差异，因此处理内容片段时适用一些其他规则。
 
@@ -53,7 +53,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 >
 >[内容片段和内容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md) 也可用。
 
-## 数据模型 {#data-model}
+## 检查数据模型 {#data-model}
 
 [!DNL Assets] HTTP API主要公开两个元素：文件夹和标准资源。 它还为内容片段中使用的自定义数据模型提供详细元素。 有关更多详细信息，请参阅内容片段数据模型。 有关详细信息，请参阅[内容片段数据模型](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)。
 
@@ -61,7 +61,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 >
 >[内容片段和内容片段模型 OpenAPI](/help/headless/content-fragment-openapis.md) 也可用。
 
-### 文件夹 {#folders}
+### 管理文件夹 {#folders}
 
 文件夹与传统文件系统中的目录类似。 文件夹可以包含资源和/或子文件夹。 文件夹具有以下组件：
 
@@ -82,7 +82,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 * `parent`：指向父文件夹的链接。
 * `thumbnail` （可选）：指向文件夹缩略图图像的链接。
 
-### 资源 {#assets}
+### 管理资源 {#assets}
 
 在[!DNL Experience Manager]中，资产包含以下元素：
 
@@ -103,7 +103,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 * 属性。
 * 链接。
 
-## 可用功能 {#available-features}
+## 探索可用的API操作 {#available-features}
 
 [!DNL Assets] HTTP API包含以下功能：
 
@@ -293,7 +293,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 * 412 - PRECONDITION FAILED — 如果找不到或无法访问根集合。
 * 500 — 内部服务器错误 — 如果出现其他错误。
 
-## 提示、最佳实践和限制 {#tips-limitations}
+## 遵循最佳实践并注意限制 {#tips-limitations}
 
 * 当达到[!UICONTROL 结束时间]时，通过[!DNL Assets] Web界面和HTTP API，Assets及其演绎版将变得不可用。 如果[!UICONTROL 开启时间]是未来的时间，或者[!UICONTROL 结束时间]是过去的时间，则API返回404错误。
 
@@ -301,7 +301,7 @@ API响应是适用于某些MIME类型的JSON文件，是适用于所有MIME类�
 
 * 使用API更新时，文件夹或资产的某些属性会映射到不同的前缀。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`前缀已替换为`dc`前缀。 因此，在返回的JSON中，`dc:title`和`dc:description`分别包含`jcr:title`和`jcr:description`的值。
 
-**另请参阅**
+**浏览相关资源**
 
 * [翻译资源](translate-assets.md)
 * [资源支持的文件格式](file-format-support.md)
