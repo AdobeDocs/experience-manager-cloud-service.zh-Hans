@@ -2,7 +2,7 @@
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 # 代码片段 {#snippets}
@@ -160,7 +160,7 @@ ht-degree: 96%
 >[!IMPORTANT]
 >
 >前端管道要求预先将以下 IP 允许列表添加到 Cloud Manager。
->如果需要，[通过复制下面的地址块添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每个地址以逗号分隔。将该块粘贴到&#x200B;**添加 IP 允许列表**&#x200B;对话框的 **IP 地址 / CIDR** 字段中。将光标放在地址列表中第一个逗号后面，然后按 **进入**。保存列表。
+>如果需要，通过复制下面的地址 Block [添加 IP 允许列表](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每个地址以逗号分隔。将 Block 粘贴到&#x200B;**添加 IP 允许列表**&#x200B;对话框的 **IP 地址 / CIDR** 字段中。将光标放在地址列表中第一个逗号后面，然后按 **进入**。保存列表。
 >为了避免中断前端管道的运行，请确保在启用管道&#x200B;*之前将此 IP 允许列表添加到 Cloud Manager*。
 >
 >**Cloud Manager IP 允许列表**
@@ -222,7 +222,7 @@ ht-degree: 96%
 
 如果产品问题需要额外调查和故障排除，并且需要满足响应 SLT，则可提交支持工单。
 
-要记录支持工单，您必须首先在 Cloud Manager 中注册您的 Edge Delivery 站点。建议所有 AEM as a Cloud Service 用户使用 Cloud Manager 注册您的网站，[这会带来许多好处](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。如果您尚未注册您的站点，请参阅 [Cloud Manager 文档](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)了解详情。
+要记录支持工单，您必须首先在 Cloud Manager 中注册您的 Edge Delivery Site。建议所有 AEM as a Cloud Service 用户使用 Cloud Manager 注册您的网站，[这会带来许多好处](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)。如果您尚未注册您的 Site，请参阅 [Cloud Manager 文档](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)了解详情。
 
 **若要记录支持工单：**
 
@@ -237,7 +237,7 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->新项目的SPA编辑器[已弃用](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated)。 它仍受Adobe对现有项目的支持，但不应用于新项目。 现在，在AEM中管理Headless内容的首选编辑器包括：
+>SPA 编辑器[已被新项目弃用](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated)。Adobe 对现有项目仍提供支持，但不应在新项目中使用。目前，AEM 中用于管理 Headless 内容的首选编辑器是：
 >
 >* [通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)，用于可视化编辑 Headless 内容。
 >* [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑 Headless 内容。

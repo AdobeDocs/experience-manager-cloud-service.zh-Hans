@@ -1,6 +1,6 @@
 ---
-title: 表单 Edge Delivery Services 通用编辑器（EDS 表单区块）
-description: 使用表单 Edge Delivery Services 通用编辑器（EDS 表单区块）创建自适应表单。
+title: Edge Delivery Services Forms 通用编辑器（EDS Forms Block）
+description: 使用 Edge Delivery Services Forms 通用编辑器（EDS Forms Block）创建自适应表单。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
@@ -9,19 +9,19 @@ exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 source-git-commit: 5059437eca1dcfbfb26d1ff7b12d532472951568
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# 表单 Edge Delivery Services 通用编辑器（EDS 表单区块）
+# Edge Delivery Services Forms 通用编辑器（EDS Forms Block）
 
-通用编辑器通过提供简单、直观的可视Adobe Edge (WYSIWYG)界面，彻底变革了What You See Is What You Get Delivery Services (EDS)的表单创建方式。 它专为内容创建者和表单作者而设计，消除了传统表单构建流程的复杂性，使其甚至可供非技术用户访问。
+通用编辑器通过提供简单、可视和直观的所见即所得（WYSIWYG）界面，彻底改变了 Adobe Edge Delivery Services（EDS）的表单创建方式。它专为内容创建者和表单作者设计，消除了传统表单构建流程的复杂性，使非技术用户也能使用。
 
-使用通用编辑器，您可以使用预建组件（如文本字段、复选框和单选按钮）快速设计响应式交互式表单。 其强大的功能集支持动态规则、无缝数据集成和高级个性化，确保根据您的需求定制每个表单。
+使用通用编辑器，您可以使用预建组件（如文本字段、复选框和单选按钮）快速设计响应式交互表单。其强大的功能集支持动态规则、无缝数据集成和高级个性化，确保每个表单都符合您的需求。
 
-无论您是管理轻量级的客户端渲染、确保跨浏览器兼容性，还是遵循严格的辅助功能标准，通用编辑器都可为创建和管理表单提供简化的解决方案。
+无论您是要管理轻量级客户端渲染、确保跨浏览器兼容性，还是要遵守严格的可访问性标准，通用编辑器都能为创建和管理表单提供简化的解决方案。
 
-![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%， align-center} —>
+![通用编辑器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} -->
 
 ## EDS Forms 通用编辑器的主要功能
 
@@ -84,7 +84,7 @@ ht-degree: 63%
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="国际化/本地化">
     <h3>发布/取消发布</h3>
-    <p>轻松控制表单的可见性 — 只需单击几下即可直接从编辑器中发布或取消发布表单，从而允许您实时动态管理可用性和内容更新。</p>
+    <p>轻松控制表单的可见性——只需单击几下即可直接从编辑器发布或取消发布表单，从而让您实时动态管理可用性和内容更新。</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="提交操作">
@@ -282,28 +282,28 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 入门培训
 
-要启用通用编辑器及其高级功能（如规则编辑器），请通过您的正式电子邮件ID向我们发送电子邮件： aem-forms-ea@adobe.com 。 Adobe团队将帮助您转变构建表单的体验。
+要启用通用编辑器及其高级功能（如规则编辑器），请使用您的官方电子邮件 ID 写信至 aem-forms-ea@adobe.com。Adobe 团队随时恭候您的光临，协助您改变表单创建体验。
 
-## 常见问题解答(FAQ)
+## 常见问题解答（FAQ）
 
-**Q.谁可以使用通用编辑器？**
-通用编辑器专为广泛的受众而设计，包括：
+**问：谁可以使用通用编辑器？**
+通用编辑器专为广大用户设计，包括：
 
-* 希望构建美观表单的内容创建者。
+* 希望创建具有视觉吸引力表单的内容创建者。
 * 需要高级自定义和集成功能的开发人员。
-* 寻求可扩展、安全且合规的表单解决方案的组织。
+* 寻求可扩展、安全和合规表单解决方案的组织。
 
-**问：我是否可以将使用通用编辑器创建的表单集成到现有系统中？**
-当然。 通用编辑器支持与后端系统的无缝数据绑定，支持实时更新和高级数据映射。 它还与Adobe Workfront等工具集成以便进行任务管理，并支持数据提交工作流的安全端点。
+**问：可以把使用通用编辑器创建的表单集成到我现有的系统中吗？**
+绝对可以。通用编辑器支持与后端系统的无缝数据绑定，实现实时更新和高级数据映射。它还与 Adobe Workfront 等工具集成，用于任务管理，并支持用于数据提交工作流的安全端点。
 
-**问：是否可以自定义表单组件？**
-是的，通用编辑器允许开发人员创建针对特定组织需求的自定义组件。 此外，您还可以通过UI扩展和自定义工作流扩展编辑器的功能。
+**问：可以自定义表单组件吗？**
+可以，通用编辑器允许开发人员创建符合特定组织需求的自定义组件。此外，您还可以通过 UI 扩展和自定义工作流来扩展编辑器的功能。
 
-**问：通用编辑器如何处理辅助功能？**
-通用编辑器在设计中严格遵守辅助功能标准，包括WCAG（Web内容辅助功能准则）。 这可确保残障人士可以使用表单，提供包容性的体验。
+**问：通用编辑器如何处理可访问性？**
+通用编辑器的设计严格遵守可访问性标准，包括 WCAG（Web 内容无障碍准则）。这可确保残障人士也能使用表单，从而提供一种包容性的体验。
 
-**问：我可以从表单中获得什么类型的分析？**
-通用编辑器包括内置的分析和跟踪工具，用于监控用户交互、表单提交率和转化量度。 这些见解有助于优化您的表单以获得更好的性能。
+**问：可以从表单中获得哪些分析结果？**
+通用编辑器包含内置分析和跟踪工具，可监测用户互动、表单提交率和转化量度。这些洞察有助于优化表单，提高性能。
 
 
 ## 开始创建表单
