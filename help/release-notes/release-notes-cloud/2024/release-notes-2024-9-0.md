@@ -3,7 +3,8 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.9.0 版的发�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.9.0 版的发行说明。'
 feature: Release Information
 role: Admin
-source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
+exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
+source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 91%
@@ -99,7 +100,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 * **产品查询 AI 助手**：立即获得与 AEM 表单相关的问题的答案。AI 助手可以充当您自己的个人知识库，能够直接在平台内提供富有洞察力的指导和建议。
 
-* **生成自适应表单**：使用生成式 AI 提示轻松创建完整的表单。Adobe 的生成式 AI 会自动生成易于用户使用的表格，从而减少流失率，并提供个性化的体验。
+* **生成自适应表单**：使用生成式 AI 提示轻松创建完整的表单。Adobe 的生成式 AI 会自动生成易于用户使用的表单，从而减少流失率，并提供个性化的体验。
 
 * **生成表单面板**：根据特定数据收集需求生成表单中的各部分。例如，生成用于收集付款信息、客户偏好或旅行详情的部分。
 
@@ -119,7 +120,7 @@ AEM Forms Early Access Program 项目为您提供了一个独特的机会，让�
 
 ### 错误修复 {#bug-fixes-cif}
 
-* 商业字段未与资产元数据模式编辑器正确集成。
+* 商业字段未与资产元数据架构编辑器正确集成。
 * 拖放式旋转产品多字段问题。
 * 拖放式旋转产品多字段问题。
 * 单击不适用于类别和产品编辑器页面上的页面信息中的菜单。
@@ -157,7 +158,7 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表 [这里](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)。
+您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -167,7 +168,7 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 
 您可以在[此处](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到迁移工具版本的完整列表。
 
-## Universal Editor {#universal-editor}
+## 通用编辑器 {#universal-editor}
 
 您可以在[此处](/help/release-notes/universal-editor/current.md)找到通用编辑器版本的完整列表。
 

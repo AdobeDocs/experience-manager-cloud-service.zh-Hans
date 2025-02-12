@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.7.0 版�
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
+source-git-commit: ce6b0db34488a49d15d4c1197bdee80c63a2e0fa
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 76%
+ht-degree: 83%
 
 ---
 
@@ -63,15 +63,15 @@ ht-degree: 76%
 
 资产选择器现在为内容作者提供了直接从选择器上传最终资产的功能，既可以拖动也可以从本地文件系统浏览。 此功能允许从您选择的应用程序将最终资产上传到DAM。
 
-### Dynamic Media中的抢先访问功能 {#dm-early-access}
+### Dynamic Media 中的早期访问功能 {#dm-early-access}
 
-**AI生成的视频字幕**
+**AI 生成的视频字幕**
 
-AdobeDynamic Media中人工智能生成的视频字幕，使用人工智能为视频内容自动生成字幕。 此功能旨在通过提供准确的实时字幕来提高辅助功能并增强用户体验。 人工智能分析视频的音轨以转录语音并创建字幕，这些可以编辑以便精确或定制。 这些字幕有助于满足辅助功能要求，并提升依赖或偏好基于文本的视频支持的受众的视频参与度。
+Adobe Dynamic Media 中 AI 生成的视频字幕使用人工智能为视频内容自动生成字幕。此功能旨在通过提供准确的实时字幕来提高视频的可观看性，并增强用户体验。AI 会分析视频的音轨以转录语音并创建字幕，这些字幕可以进行编辑，以提高准确性或实现定制化。这些字幕有助于满足可访问性要求，并提高依赖或偏好基于文本的视频支持服务的观众的视频参与度。
 
-若要提前访问您Dynamic Media帐户上由AI生成的字幕支持，请[创建并提交Adobe的客户支持案例](/help/assets/dynamic-media/video.md##enable-dash)。
+为了尽早获得 Dynamic Media 帐户上 AI 生成的字幕支持，[请创建并提交 Adobe 客户支持案例](/help/assets/dynamic-media/video.md##enable-dash)。
 
-### Assets 视图中的新增功能 {#assets-view-new-features}
+### 资源视图中的新增功能 {#assets-view-new-features}
 
 **Content Credentials 集成**
 
@@ -190,7 +190,7 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 
 ## [!DNL Experience Manager] Guides {#guides}
 
-您可以找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表 [这里](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0)。
+您可以在[此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)找到最新版本的 Adobe Experience Manager 指南的新增功能和增强功能的完整列表。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -200,7 +200,7 @@ Adobe Managed CDN 现在支持 [Edge Side Includes (ESI)](/help/implementing/dis
 
 您可以在[此处](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)找到迁移工具版本的完整列表。
 
-## Universal Editor {#universal-editor}
+## 通用编辑器 {#universal-editor}
 
 您可以在[此处](/help/release-notes/universal-editor/current.md)找到通用编辑器版本的完整列表。
 

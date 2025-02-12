@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2024.4.0 版�
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: bc0ae042c378f24b88da84768cdcc9573926ac89
 workflow-type: tm+mt
-source-wordcount: '2727'
+source-wordcount: '2707'
 ht-degree: 97%
 
 ---
@@ -166,7 +166,7 @@ Experience Manager Assets 现在提供[通过单击来重命名资产或文件�
 * **[您可以利用Real Use Monitoring (RUM)数据服务](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**启用AEM as a Cloud Service的客户端收集。
 Real Use Monitoring (RUM) Data Service提供了对用户交互的更精确的反映，从而确保了对网站参与度的可靠衡量。 这是一个深入了解页面性能的绝佳机会。而这对于使用 Adobe 管理的 CDN 或非 Adobe 管理的 CDN 的客户都很有用。此外，对于使用非 Adobe 管理的 CDN 的客户，现在可为其启用自动流量报告，这样即无需与 Adobe 共享任何流量报告。
 
-  如果您有兴趣测试这项新功能并分享您的反馈，请从您与您的 Adobe ID 关联的电子邮件地址将一封电子邮件发送到 `aemcs-rum-adopter@adobe.com`，其中包含您要为其启用 RUM 的每个环境的域名。然后，Adobe的产品团队将为您启用实时监控(RUM)数据服务。
+  如果您有兴趣测试这项新功能并分享您的反馈，请从您与您的 Adobe ID 关联的电子邮件地址将一封电子邮件发送到 `aemcs-rum-adopter@adobe.com`，其中包含您要为其启用 RUM 的每个环境的域名。Adobe的产品团队将为您启用实时监控(RUM)数据服务。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -286,9 +286,7 @@ Experience Manager Guides 现在允许您创建语言组，并轻松地将您的
 作为管理员，您可以为某些连接器（如通用 REST 客户端、Salsify、Akeneo 和 Microsoft Azure DevOps Boards (ADO)）配置多个资源 URL。
 然后，作为作者，通过连接数据源来使用生成器创建内容片段或主题。此功能非常方便，因为您不必为每个 URL 创建数据源。它可以帮助您从单个内容片段或主题中的特定数据源的任何资源中快速获取数据。查看有关数据源连接器的更多详细信息，以及如何[从用户界面中配置数据源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools)。了解如何[使用数据源中的数据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet)。
 
-有关新功能和增强功能的更多信息，请查看 [2024.04.0 版本中的新增功能](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0)。
-
-有关此版本中修复的问题列表，请查看 [2024.4.0 版本中已修复的问题](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0)。
+有关新增功能和增强功能的详细信息，请查看[Experience Manager Guides版本信息](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 ## Cloud Manager {#cloud-manager}
 
