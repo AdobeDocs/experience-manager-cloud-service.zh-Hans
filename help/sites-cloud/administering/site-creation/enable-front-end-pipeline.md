@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d37bdc060ea569748745011346bc448a569ae91d
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 35%
+source-wordcount: '910'
+ht-degree: 25%
 
 ---
 
@@ -69,11 +69,41 @@ AEM 可以自动调整您的现有站点以使用前端管道。若要执行此�
 
 ## 前端管道和自定义域 {#custom-domains}
 
+前端管道可以与[Cloud Manager的自定义域功能](/help/implementing/cloud-manager/custom-domain-names/introduction.md)一起使用，但将这两项功能一起使用时，请注意以下要求。
+
+### 静态前端文件 {#static-files}
+
+默认情况下，通过Front-End Pipeline部署的静态前端资源将由Adobe的预定义静态域提供服务。
+
+如果前端资源需要自定义域，则可以在发布层上安装自定义域，并配置Dispatcher以将特定路径（如`/static/`）路由到Adobe的静态托管位置。 此方法需要更新您的[Dispatcher规则](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/dispatcher)，以正确转发和缓存静态资源的请求。
+
+配置自定义域和Dispatcher后，您可以配置AEM以从静态域为前端资源提供服务。
+
+### 配置 {#configuration}
+
 如[技术详细信息](#technical-details)部分中所述，为站点激活前端管道功能会在`/conf/<site-name>/sling:configs`下创建`SiteConfig`和`HtmlPageItemsConfig`节点。
 
-如果要将[Cloud Manager的自定义域功能](/help/implementing/cloud-manager/custom-domain-names/introduction.md)与前端管道一起用于您的站点，则必须将其他属性添加到这些节点。
+如果您希望将适用于您的站点的Cloud Manager自定义域功能与用于状态资源的前端管道结合使用，则必须将其他属性添加到这些节点。
 
 1. 在`SiteConfig`中为站点设置`customFrontendPrefix`属性。
+   1. 导航到 `/conf/<site-name>/sling:configs/com.adobe.aem.wcm.site.manager.config.SiteConfig`。
+   1. 添加或更新属性`customFrontendPrefix = "https://your-custom-domain.com/static/"`。
 1. 这会使用自定义域更新`HtmlPageItemsConfig`的`prefixPath`值。
+   1. 导航到 `/conf/<site-name>/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig`。
+   1. 验证`prefixPath`是否反映了您的自定义域，如`prefixPath = "https://your-custom-domain.com/static/<hash>/..."`。
+   * 需要时也可以手动覆盖此值。
+1. 验证设置。
+   1. 部署后，检查页面是否正确引用了自定义域中的主题工件。
+   1. 打开浏览器的开发人员工具并检查`theme.css`和`theme.js`文件路径以确认它们是从正确的域加载的。
 
-站点的页面，然后引用该更新URL中的主题工件。
+站点的页面，然后引用该更新URL中的主题工件。 然后，Dispatcher将这些资源的请求路由到静态域。
+
+## 面向前端开发人员的最佳实践 {#best-practices}
+
+如果在通过前端管道进行部署之前需要在本地开发和测试前端资产，请考虑以下方法：
+
+* 使用[站点主题生成器的代理模式](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy)在本地覆盖主题工件以进行测试。
+* 从本地开发服务器手动提供主题文件并更新`HtmlPageItemsConfig`中的`prefixPath`以匹配本地服务器地址。
+* 确保在测试期间禁用浏览器缓存以查看实时更新。
+
+有关本地前端开发的更多详细信息，请参阅[站点主题生成器文档。](https://github.com/adobe/aem-site-theme-builder)
