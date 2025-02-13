@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2543'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,8 +35,8 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
 
 | 功能 | 已弃用功能 | 替换 |
 | ------------ | ------------------ | ----------- |
-| Sites | [PWA功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 无 |
-| Sites | [SPA编辑器](/help/implementing/developing/hybrid/introduction.md) | 在AEM中管理Headless内容的首选编辑器为： <br>- [用于可视化编辑的通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)。用于基于表单的编辑的<br>- [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)。 |
+| Sites | [PWA 功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 无 |
+| Sites | [SPA 编辑器](/help/implementing/developing/hybrid/introduction.md) | 管理 AEM 中的 Headless 内容时首选以下编辑器：<br>- [通用编辑器](/help/edge/wysiwyg-authoring/authoring.md)，用于可视化编辑。<br>- [内容片段编辑器](/help/assets/content-fragments/content-fragments-managing.md)，用于以基于表单的方法编辑。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **社交媒体状态**&#x200B;的体验片段属性。 | 此功能计划很快被删除。 |
 | [!DNL Sites] | 基于模板的简单内容片段。 | 现已提供[基于模型的结构化内容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
@@ -510,7 +510,7 @@ Adobe 在不断地评估产品功能，以便随着时间的推移，使用更�
       * 类型：布尔值
 +++
 
-## Java Runtime 更新至版本 21 {#java-runtime-update-21}
+## Java 运行时更新至版本 21 {#java-runtime-update-21}
 
 Adobe Experience Manager as a Cloud Service 正在转换到 Java 21 运行时。为了确保兼容性，请按照[运行时要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中所述更新库版本至关重要。
 

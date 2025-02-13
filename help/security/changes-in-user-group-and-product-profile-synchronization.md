@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
 source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 79%
 
 当用户登录 AEM as a Cloud Service 或使用访问令牌时，Adobe Admin Console 用户组、产品轮廓和产品轮廓服务都会作为组同步到 AEM 存储库中。
 
-从AEM维护版本19149开始，更改组同步行为以减少UI混乱并优化性能。 具体来说，以下两类AEM组的用户组成员资格将不再同步：
+从 AEM 维护版本 19149 开始，群组同步行为发生了变化，以减少 UI 混乱并优化性能。具体来说，以下两类 AEM 组的用户组成员资格将不再同步：
 
 1. 具有后缀 `GROUP_NAME_SUFFIX` 的 AEM 组。这些组不会出现在 Adobe Developer Console 中，但会出现在 AEM 群组管理屏幕中，如下所示。如果您的 AEM 应用程序引用这些组（这种情况不太可能发生），请确保引用不带该后缀的 Adobe Admin Console 用户组。
 
@@ -44,4 +44,4 @@ ht-degree: 79%
 
 如果您的 AEM 应用程序引用了不再出现在 AEM 中的组（这种情况不太可能发生），请确保改用 i) 来自正确 AEM 实例的产品轮廓或 ii) Adobe Admin Console 用户组。
 
-用户的组成员资格将在用户登录到环境时同步，并从与当前环境无关的组中删除。 这些组本身将保留，并包括自启用该功能以来未登录的用户。
+用户的组成员资格在他们登录环境时同步，并且他们会从与当前环境无关的组中移除。这些组本身仍然存在，并且包括自启用该功能以来未登录的用户。
