@@ -3,10 +3,10 @@ title: 如何为自适应Forms配置现成的Microsoft Dynamics 365表单数据�
 description: 了解如何将Microsoft Dynamics 365与自适应Forms集成。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: fadbe44e0dba4e7dcbad230c286d6126e68910bc
+source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -68,8 +68,9 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 配置上述先决条件后，您可以继续将自适应Forms与Microsoft® Dynamics 365集成。 要在提交表单时将数据发送到Microsoft® Dynamics 365，请执行以下步骤：
 
-[1. 配置Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)的云服务配置
-[2。 创建表单数据模型(FDM)](#2-create-form-data-model-fdm)
+[1.配置Microsoft Dynamics的云服务配置](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+
+[2.创建表单数据模型(FDM)](#2-create-form-data-model-fdm)
 
 ### 1.配置Microsoft Dynamics的云服务配置
 
