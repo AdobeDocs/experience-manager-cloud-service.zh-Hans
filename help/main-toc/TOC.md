@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 901172d201e968ec00eb8c988107a6a9fb7a5e7b
+source-git-commit: 3ab46e78581893591f56793bc0561aea4f2fbef5
 workflow-type: tm+mt
-source-wordcount: '6058'
+source-wordcount: '6077'
 ht-degree: 99%
 
 ---
@@ -737,7 +737,8 @@ ht-degree: 99%
          + [配置 [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [使用 OAuth 2.0 客户端凭据流将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
          + [配置 [!DNL Azure] 存储](/help/forms/configure-azure-storage.md)
-         + [配置 [!DNL Microsoft Dynamics 365] 和  [!DNL Salesforce] Cloud Service](/help/forms/configure-msdynamics-salesforce.md)
+         + [配置 [!DNL Microsoft Dynamics 365] 云服务](/help/forms/configure-msdynamics.md)
+         + [配置Salesforce云服务](/help/forms/configure-salesforce.md)
          + [创建表单数据模型](/help/forms/create-form-data-models.md)
          + [处理表单数据模型](/help/forms/work-with-form-data-model.md)
          + [使用表单数据模型](/help/forms/using-form-data-model.md)
@@ -761,8 +762,11 @@ ht-degree: 99%
             + [配置自适应表单的提交操作](/help/forms/configure-submit-actions-core-components.md)
             + [将自适应表单提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [将自适应表单提交到 Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-            + [使用授权范围配置具有有限访问权限的 SharePoint Site](/help/forms/configure-sharepoint-site-limited-access.md)
+            + 将自适应表单连接到Microsoft® SharePoint{#connect-to-sharepoint}
+               + [将自适应表单连接到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+               + [提交到SharePoint文档库](/help/forms/connect-forms-to-sharepoint-document-library.md)
+               + [提交到SharePoint列表](/help/forms/connect-forms-to-sharepoint-list.md)
+               + [使用授权范围配置具有有限访问权限的 SharePoint Site](/help/forms/configure-sharepoint-site-limited-access.md)
             + [将 AEM 自适应表单与 AEM 工作流集成](/help/forms/configure-submit-action-workflow.md)
             + [为自适应表单配置“提交到 REST 端点”提交操作](/help/forms/configure-submit-action-restpoint.md)
             + [为自适应表单配置“发送电子邮件”提交操作](/help/forms/configure-submit-action-send-email.md)

@@ -4,10 +4,10 @@ description: 本教程将帮助您启动并运行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: ec3a9982494df35faf1df9f49416197dc96f1b4a
+source-git-commit: 12ac8fd43d56fb95bf63b2ce92d1ec1a776e464a
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 92%
+source-wordcount: '1658'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 这些表单可将数据直接提交到 Microsoft Excel 或 Google Sheets 文件，使您能够使用 Google Sheets、Microsoft Excel 和 Microsoft SharePoint 充满活力的生态系统和强大的 API 来轻松处理提交的数据或启动现有的业务工作流程。
 
-AEM Forms 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻松创建表单来捕获和存储捕获的数据。您可以[创建一个预先配置了 Adaptive Forms Block 的新 AEM 项目](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)或[将 Adaptive Forms Block 添加到现有的 AEM 项目](#add-adaptive-forms-block-to-your-existing-aem-project)。
+AEM Forms 提供了一个称为 Adaptive Forms Block 的区块，可帮助您轻松创建表单来捕获和存储捕获的数据。您可以[创建预配置自适应AEM块的新Forms项目](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) <!--or [add the Adaptive Forms Block to an existing AEM project](#add-adaptive-forms-block-to-your-existing-aem-project)-->。
 
 本 AEM Forms 教程将指导您使用新的 Adobe Experience Manager (AEM) Forms 项目创建、预览和发布您自己的自定义表单。
 
@@ -261,49 +261,48 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 恭喜！您已成功设置本地开发环境并部署了更改。
 
 
-
-## 将 Adaptive Forms Block 添加到您现有的 AEM 项目
+<!--
+## Add Adaptive Forms Block to your existing AEM project
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-如果您有现有的 AEM 项目，则可以将 Adaptive Forms Block 集成到当前项目中以开始表单创建。
+If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
 
 >[!NOTE]
 >
 >
-> 此步骤适用于使用 [AEM Boilerplate](https://github.com/adobe/aem-boilerplate) 构建的项目。如果您使用 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 创建 AEM 项目，则可以跳过此步骤。
+> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
 
-集成：
+To Integrate:
 
-1. **添加必需的文件和文件夹**
-   1. 将[AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms)中的以下文件夹和文件复制并粘贴到AEM项目中：
+1. **Add required files and folders**
+   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
 
-      * [表单块](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)文件夹
-      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)文件夹
-      * [表单组件](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)文件夹
-      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)文件
-      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)文件
+      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
+       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
+       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
+       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
+       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
 
-1. **更新组件定义和模型文件**
-   1. 导航到AEM项目中的`../models/_component-definition.json`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)中的[_component-definition.json文件的更改对其进行更新。
+1. **Update component definitions and models files**
+    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+    
+    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
-   1. 导航到AEM项目中的`../models/_component-models.json`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)中的[_component-models.json文件的更改对其进行更新
+1. **Add Form Editor in editor script**
+    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Update ESLint configuration file**
+    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
+        ```
+            blocks/form/rules/formula/*
+            blocks/form/rules/model/*
+        ```
 
-1. **在编辑器脚本中添加表单编辑器**
-   1. 导航到AEM项目中的`../scripts/editor-support.js`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)中的[editor-support.js文件中的更改对其进行更新
-1. **更新ESLint配置文件**
-   1. 导航到AEM项目中的`../.eslintignore`文件，并添加以下代码行以防止与表单块规则引擎相关的错误：
+1. Commit and push these changes to your AEM Project repository on GitHub.
 
-      ```
-          blocks/form/rules/formula/*
-          blocks/form/rules/model/*
-      ```
-
-1. 提交这些更改并将其推送到 GitHub 上的 AEM 项目存储库。
-
-就是这样！Adaptive Forms Block 现在是您的 AEM 项目的一部分。您可以开始创建表单并将其添加到 AEM 页面。
-
+That's it! The Adaptive Forms Block is now part of your AEM project. You can start creating and adding forms to your AEM pages.
+-->
 
 ## 解决 GitHub 构建问题
 

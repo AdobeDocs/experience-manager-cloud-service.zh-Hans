@@ -5,7 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+hide: true
+hidefromtoc: true
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 2%
@@ -34,7 +36,7 @@ ht-degree: 2%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics ODataCloud Service（OData服务）在所有运行模式下均可用。 有关为[!DNL Experience Manager]实例配置运行模式的详细信息，请参阅[运行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes)。
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service （OData服务）在所有运行模式下均可用。 有关为[!DNL Experience Manager]实例配置运行模式的详细信息，请参阅[运行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes)。
 
 AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交。 您可以在[自适应表单提交操作](/help/forms/configure-submit-actions-core-components.md)文章中了解有关这些选项的更多信息。
 
@@ -117,7 +119,7 @@ AEM as a Cloud Service提供了多种现成的提交操作来处理表单提交�
 
 ## 为您的[!DNL Microsoft Dynamics]服务配置云服务 {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-OData服务由其服务根URL标识。 要在[!DNL Experience Manager]as a Cloud Service中配置OData服务，请确保您拥有该服务的服务根URL，并执行以下操作：
+OData服务由其服务根URL标识。 要在[!DNL Experience Manager] as a Cloud Service中配置OData服务，请确保您拥有该服务的服务根URL，并执行以下操作：
 
 <!--The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with default OData configuration. To configure it to connect with your [!DNL Microsoft Dynamics] service, do the following.-->
 
@@ -125,7 +127,7 @@ OData服务由其服务根URL标识。 要在[!DNL Experience Manager]as a Cloud
 >
 >有关配置[!DNL Microsoft Dynamics 365]（在线或本地）的分步指南，请参阅[[!DNL Microsoft Dynamics] OData配置](ms-dynamics-odata-configuration.md)。
 
-1. 转到&#x200B;**[!UICONTROL 工具>Cloud Service>数据源]**。 选择以选择要创建云配置的文件夹。
+1. 转到&#x200B;**[!UICONTROL 工具>云服务>数据源]**。 选择以选择要创建云配置的文件夹。
 
    有关为云服务配置创建和配置文件夹的信息，请参阅[为云服务配置文件夹](#cloud-folder)。
 
@@ -147,7 +149,7 @@ OData服务由其服务根URL标识。 要在[!DNL Experience Manager]as a Cloud
 
    您是云服务配置页面的表单数据模型，该页面显示一条消息，表明OData配置已成功保存。
 
-MS Dynamics ODataCloud Service（OData服务）云服务已配置并与您的Dynamics服务连接。 表单数据模型(FDM)
+MS Dynamics OData Cloud Service （OData服务）云服务已配置并与您的Dynamics服务连接。 表单数据模型(FDM)
 
 ## 创建表单数据模型(FDM) {#create-form-data-model}
 

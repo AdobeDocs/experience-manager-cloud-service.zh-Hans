@@ -1,8 +1,8 @@
 ---
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 98%
+source-wordcount: '1394'
+ht-degree: 97%
 
 ---
 # 代码片段 {#snippets}
@@ -43,7 +43,8 @@ ht-degree: 98%
 ## 自适应表单提交操作 {#af-submit-action}
 
 * [发送电子邮件](/help/forms/configure-submit-action-send-email.md)
-* [提交到 SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [提交到SharePoint文档库](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [提交到SharePoint列表](/help/forms/connect-forms-to-sharepoint-list.md)
 * [使用表单数据模型提交](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [提交到 Azure Blob 存储](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [提交到 REST 端点](/help/forms/configure-submit-action-restpoint.md)
@@ -52,7 +53,7 @@ ht-degree: 98%
 * [提交至 Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交到 Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [将自适应表单连接到 Salesforce 应用程序](/help/forms/aem-forms-salesforce-integration.md)
-* [将自适应表单连接到 Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [将自适应表单连接到 Microsoft](/help/forms/configure-msdynamics.md)
 * [将自适应表单连接到 Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [创建自定义提交操作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
