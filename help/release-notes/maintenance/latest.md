@@ -66,7 +66,7 @@ ht-degree: 19%
 * SITES-26543：使用通用编辑器的Edge Delivery：修复没有模型渲染错误标记的空块。
 * SITES-26857：使用通用编辑器的Edge Delivery：修复了在基于文件的配置用户界面中可见的站点身份验证令牌。
 * SITES-26662：使用通用编辑器的Edge Delivery：修复区分大小写的批量元数据的问题。
-* SITES-28133：将Publish设为“预览”会导致内容在生产环境中可用。
+* SITES-28133：发布到“预览”会导致内容在生产中可用。
 * SITES-27187：计划页面/资产激活，包括未发布引用的引用（实验性）。
 * SITES-27264： 2与Content-Fragment-LiveCopy-Creation相关的Selenium测试在主服务器上始终失败。
 * SITES-26559：将内容片段模型的查询固定到cqPageLucene索引。
@@ -80,7 +80,7 @@ ht-degree: 19%
 * SITES-27589：具有多个内容/片段引用字段的内容片段模型的UUID升级失败。
 * SITES-26679：取消发布内容片段模型应仅验证已发布的引用。
 * SITES-26666：referencesTree和引用端点返回不同的结果。
-* SITES-26499：标记字段的值在GET片段中的顺序错误，PATCH会随机排列这些顺序。
+* SITES-26499：GET片段中的标记字段值顺序错误，PATCH会随机排列这些顺序。
 * SITES-26585：修复架构中的小描述错误。
 * SITES-26647：对非管理员用户而言，删除端点和UnpublishFragments引用验证可能会失败。
 * SITES-26458： [搜索内容片段模型]按复制状态修复筛选。

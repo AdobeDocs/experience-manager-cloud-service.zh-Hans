@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4049'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 
 流量过滤规则的子类别需要“增强安全性”许可证或“WAF-DDoS 保护”许可证。这些强有力的规则称为 WAF（Web 应用程序防火墙）流量过滤规则（或简称为 WAF 规则），它们可访问本文稍后所述的 [WAF 标志](#waf-flags-list)。
 
-流量过滤器规则可以通过Cloud Manager配置管道部署到开发、暂存和生产环境类型。 配置文件可以使用命令行工具部署到快速开发环境(RDE)。
+可以通过 Cloud Manager 配置管道将流量过滤规则部署到开发、阶段和生产环境类型。可以使用调用命令行工具将配置文件部署到快速开发环境（RDE）。
 
 [按照教程进行操作，](#tutorial)快速生成有关此功能的具体专业知识。
 
@@ -63,7 +63,7 @@ Adobe 默认采取措施，以防因规模超预期的突发流量超出特定�
 
 例如，客户可在 Apache 层配置[ Dispatcher 模块](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制访问某些内容。
 
-如本文所述，可以使用Cloud Manager的[配置管道](/help/operations/config-pipeline.md)将流量过滤器规则部署到Adobe托管的CDN。 除了基于 IP 地址、路径和标头等属性的流量过滤规则或基于设置速率限制的规则之外，客户还可许可过滤规则的一个强有力的子类别，称为 WAF 规则。
+如本文所述，可以使用Adobe的[配置管道](/help/operations/config-pipeline.md)将流量过滤器规则部署到Cloud Manager托管的CDN。 除了基于 IP 地址、路径和标头等属性的流量过滤规则或基于设置速率限制的规则之外，客户还可许可过滤规则的一个强有力的子类别，称为 WAF 规则。
 
 ## 建议流程 {#suggested-process}
 
