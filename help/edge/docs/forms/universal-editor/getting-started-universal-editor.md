@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
+source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 100%
+source-wordcount: '1778'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,6 @@ AEM Forms 提供 Adaptive Forms Block，可帮助您轻松创建 Edge Delivery S
 ## 先决条件
 
 * 您有 GitHub 帐户，并且了解 Git 基础知识。
-* 您有一个 Google 或 Microsoft SharePoint 帐户。
 * 您了解 HTML、CSS 和 JavaScript 的基础知识。
 * 您已安装 Node/npm 以进行本地开发。
 
@@ -156,14 +155,33 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 >[!NOTE]
 >
 >
-> 此步骤适用于使用 [AEM Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-xwalk) 构建的项目。如果您使用 [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) 创建 AEM 项目，则可以跳过此步骤。
+> 此步骤适用于使用 [AEM Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-xwalk) 构建的项目。如果您使用[AEM样板](https://github.com/adobe-rnd/aem-boilerplate-forms)创建了AEM Forms项目，则可以跳过此步骤。
 
-集成：
+要集成，请执行以下操作：
+1. **添加必需的文件和文件夹**
+   1. 将[AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms)中的以下文件夹和文件复制并粘贴到AEM项目中：
 
-1. 将 Adaptive Forms Block GitHub 存储库 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) 克隆到您的计算机。
-1. 在下载的文件夹中，找到 `blocks/form` 文件夹并复制该文件夹。
-1. 将您的 AEM 项目 GitHub 存储库克隆到您的计算机。
-1. 现在，导航至本地 AEM 项目存储库中的 `blocks` 文件夹，并将复制的表单文件夹粘贴到该文件夹。
+      * [表单块](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)文件夹
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)文件夹
+      * [表单组件](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)文件夹
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)文件
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)文件
+
+1. **更新组件定义和模型文件**
+   1. 导航到AEM项目中的`../models/_component-definition.json`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)中的[_component-definition.json文件的更改对其进行更新。
+
+   1. 导航到AEM项目中的`../models/_component-models.json`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)中的[_component-models.json文件的更改对其进行更新
+
+1. **在编辑器脚本中添加表单编辑器**
+   1. 导航到AEM项目中的`../scripts/editor-support.js`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)中的[editor-support.js文件中的更改对其进行更新
+1. **更新ESLint配置文件**
+   1. 导航到AEM项目中的`../.eslintignore`文件，并添加以下代码行以防止与表单块规则引擎相关的错误：
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
 1. 提交这些更改并将其推送到 GitHub 上的 AEM 项目存储库。
 
 就是这样！Adaptive Forms Block 现在是您 AEM 项目的一部分。您可以[开始创建表单并将其添加到 AEM 项目](#add-edge-delivery-services-forms-to-aem-site-project)。
@@ -173,14 +191,14 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 您可以在通用编辑器中打开 AEM 项目，进行所见即所得的创作，在这里您可以编辑项目并添加自适应表单分区，以便在 AEM 项目页面上包含 Edge Delivery Services Forms。
 
 1. 将自适应表单分区添加到您的 AEM 项目页面。要添加：
-   1. 在 Sites 控制台中导航到您的 AEM 项目，然后单击&#x200B;**编辑**。AEM 项目页面将在通用编辑器中打开以供编辑。
+   1. 在站点控制台中导航到您的AEM项目，选择要编辑的站点页面，然后单击&#x200B;**编辑**。 AEM项目页面将在通用编辑器中打开以进行编辑。
 在此示例中，`index.html` 页面用于说明。
-   1. 打开内容树，导航到要添加自适应表单分区的位置。
+   1. 打开内容树并导航到要添加自适应表单部分的部分。
    1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;图标，然后从组件列表中选择&#x200B;**[!UICONTROL 自适应表单]**&#x200B;组件。
 
    ![内容树](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
 
-   自适应表单分区已添加到指定位置。您现在可以开始将表单组件添加到 AEM 项目页面。
+   添加了自适应表单部分。 您现在可以开始将表单组件添加到 AEM 项目页面。
 
 1. 将表单组件添加到已添加的自适应表单分区。要添加表单组件：
    1. 导航到内容树中已添加的自适应表单分区。
@@ -198,13 +216,16 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
       ![打开属性](/help/edge/docs/forms/assets/component-properties.png)
 
-      下面的屏幕快照显示了使用所见即所得创作在 AEM 项目中创作的表单：
+   1. 预览表单。
+下面的屏幕快照显示了使用所见即所得创作在 AEM 项目中创作的表单：
 
       ![已添加的表单](/help/edge/docs/forms/assets/added-form-aem-sites.png)
 
-   >[!NOTE]
-   >
-   > 重要的是，更改后要再次发布 AEM 项目页面。否则，浏览器中将无法看到更新。
+      对预览感到满意后，用户可以继续发布页面。
+
+      >[!NOTE]
+      >
+      > 重要的是，更改后要再次发布 AEM 项目页面。否则，浏览器中将无法看到更新。
 
 1. 重新发布 AEM 项目页面。
 
@@ -258,7 +279,8 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 完成更改后，使用 Git 命令提交并推送。这将更新可通过以下 URL 访问的预览和生产环境（将占位符替换为您的项目详细信息）：
 
 预览：`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
-制作：`https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
+
+生产： `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 
 
 ## 解决 GitHub 构建问题
@@ -268,5 +290,9 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 * **处理 Linting 错误：**
 如果您遇到任何 Linting 错误，可以绕过它们。打开 [EDS Project]/package.json 文件并将 “lint” 脚本从 `"lint": "npm run lint:js && npm run lint:css"` 修改为 `"lint": "echo 'skipping linting for now'"`。保存文件并将更改提交到您的 GitHub 项目。
 
-<!-- * **Resolve Module Path Error:**
-    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file. -->
+* **解决模块路径错误：**
+如果遇到错误“无法解析模块 &quot;&#39;../../scripts/lib-franklin.js&#39; 的路径”，请导航至 [EDS 项目]/blocks/forms/form.js 文件。将 lib-franklin.js 文件替换为 aem.js 文件，可更新导入语句。
+
+## 另请参阅
+
+{{see-more-forms-eds}}

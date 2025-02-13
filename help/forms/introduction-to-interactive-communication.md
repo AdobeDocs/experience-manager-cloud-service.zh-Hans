@@ -3,13 +3,13 @@ title: 交互式通信简介
 description: 通过AEM Forms交互式通信轻松设计动态的数据驱动通信
 feature: Release Information
 role: Admin
-source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: 2b0231b960c7e7ded0fc891124f170feb45f9f2c
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 2%
 
 ---
-
 
 # 交互式通信
 
@@ -19,7 +19,17 @@ ht-degree: 2%
 
 从生成帐户报表的金融机构到精简福利通知的政府机构，交互式通信是轻松高效地制作高质量、安全且符合法律要求的信函的首选工具。
 
+
+<!--  >[!VIDEO](https://video.tv.adobe.com/v/3444094)
+
+[!VIDEO](https://video.tv.adobe.com/v/3444094/)
+
+ ![Interactive Communication Editor](/help/assets/ic-editor.png)
+
+-->
+
 ![交互式通信编辑器](/help/forms/assets/ic-editor.png)
+
 
 ## 核心功能
 
@@ -36,12 +46,12 @@ ht-degree: 2%
 | **富媒体** | 无缝地整合文本、图像和交互式元素 |
 | **版本控制** | 跟踪更改和维护文档历史记录 |
 | **模板支持** | 从头开始创建或使用模板高效生成文档 |
-| **云集成** | 直接在AEM Forms中编辑文档as a Cloud Service |
+| **云集成** | 直接在AEM Forms as a Cloud Service中编辑文档 |
 
 
 ## 入门培训
 
-可在Formsas a Cloud Service部署的抢先访问计划下找到的交互式通信编辑器。 若要通过电子邮件请求访问，请将您的组织ID以及Formsas a Cloud Service部署的程序详细信息从您的官方地址发送到[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。 获得访问权限后，开始[创建您的第一封邮件](https://video.tv.adobe.com/v/3444094/)。
+可在Forms as a Cloud Service部署的抢先访问计划下找到的交互式通信编辑器。 若要通过电子邮件请求访问，请将贵组织ID以及Forms as a Cloud Service部署的计划详细信息从您的官方地址发送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。 获得访问权限后，开始[创建您的第一封邮件](https://video.tv.adobe.com/v/3444094/)。
 
 
 ## 下一个

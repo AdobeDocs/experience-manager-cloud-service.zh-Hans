@@ -1,12 +1,12 @@
 ---
 title: 适用于 AEM Forms 的 Edge Delivery Services 快速入门：开发人员教程
-description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。在十到二十分钟内，您将创建自己的表格。
+description: 本教程将帮助您启动并运行新的 Adobe Experience Manager Forms (AEM) 项目。在十到二十分钟内，您将创建自己的表单。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: ec3a9982494df35faf1df9f49416197dc96f1b4a
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1920'
 ht-degree: 92%
 
 ---
@@ -67,8 +67,8 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
    * `<repository>` 表示您的 GitHub 存储库。
    * `<owner>` 指托管您 GitHub 存储库的 GitHub 帐户用户名。
 
-   例如，如果分支名称为`main`，存储库为`wefinance`，所有者为`wkndforms`，则网站将在`https://main--wefinance--wkndforms.aem.page`启动并运行
-&lt;！—(https://main--wefinance--wkndform.aem.page)-->
+   例如，如果分支名称为 `main`，存储库为 `wefinance`，所有者为 `wkndforms`，则网站将在 `https://main--wefinance--wkndforms.aem.page` 启动并运行
+&lt;!--(https://main--wefinance--wkndform.aem.page)-->
 
 ### 链接您自己的内容源
 
@@ -80,7 +80,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 1. 在 Google Drive 或 Microsoft SharePoint 中专门为您的 AEM 内容创建一个新文件夹。本文档使用在 Microsoft SharePoint 上创建的文件夹。
 
-1. 与Adobe Experience Manager用户共享文件夹(forms@adobe.com)。
+1. 与 Adobe Experience Manager 用户（forms@adobe.com）共享该文件夹。
 
    ![使用“管理访问权限”选项与 AEM 用户共享文件夹 - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -89,13 +89,13 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
    确保您已向 Adobe Experience Manager 用户提供对该文件夹的编辑权限。
 
-   ![与AEM用户共享文件夹，提供编辑权限 — SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
+   ![与 AEM 用户共享文件夹，提供编辑权限 - SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png) {width=50%}
 
-   ![与AEM用户共享文件夹，提供编辑权限 — Google驱动器](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
+   ![与 AEM 用户共享文件夹，提供编辑权限 - Google Drive](/help/edge/assets/add-aem-user-google-folder.png) {width=50%}
 
-1. 将[示例内容](/help/edge/assets/wefinance1.zip)复制到您的文件夹。 复制：
+1. 复制[示例内容](/help/edge/assets/wefinance1.zip)到您的文件夹。复制：
 
-   1. 解压缩下载的文件夹并复制内容。
+   1. 将已下载的文件夹解压缩并复制内容。
 
       ![下载示例内容](/help/edge/assets/download-sample-content.png)
 
@@ -106,13 +106,13 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
       ![Google Drive 上的示例内容](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-      确保您`enquiry`将示例内容中的工作表复制到 Google Drive 或 Microsoft SharePoint 上的文件夹中。它包含样本表单的结构。
+      确保您将示例内容中的 `enquiry` 工作表复制到 Google Drive 或 Microsoft SharePoint 上的文件夹中。它包含样本表单的结构。
 
 1. 现在您已经设置了内容文件夹，是时候将其链接到您之前使用 AEM Forms Boilerplate 创建的 GitHub 上的项目了。连接：
 
    1. 转到您之前使用 AEM Forms Boilerplate 创建的 GitHub 存储库。
    1. 打开 `fstab.yaml` 以供编辑。
-   1. 将现有引用替换为您与AEM用户共享的文件夹的路径(forms@adobe.com)。
+   1. 将现有引用替换为您与 AEM 用户共享的文件夹的路径（forms@adobe.com）。
 
       ![Google Drive 上的示例内容](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -136,7 +136,7 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
       ![提交更新的 fsatab.yaml 文件](/help/edge/assets/commit-updated-fstab-yaml.png)
 
-      这会将您的内容文件夹连接到您的网站。更新参考后，您最初可能会遇到“404 未找到”错误。这是因为您的内容尚未预览。下一部分将介绍如何开始创作和预览内容。
+      这会将您的内容文件夹连接到您的网站。更新参考后，您最初可能会遇到 “404 未找到”错误。这是因为您的内容尚未预览。下一部分将介绍如何开始创作和预览内容。
 
 
 
@@ -182,33 +182,32 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
 
-   例如，如果项目的存储库名为“wefinance”，它位于帐户所有者“wkndform”下，而您使用“main”分支和表单名称作为`enquiry`，则URL为： `https://main--wefinance--wkndform.aem.live/enquiry`。
-&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry).-->
+   例如，如果您的项目存储库名为 “wefinance” 且位于帐户所有者 “wkndform” 下，并且您使用的是 “main” 分支和名为 “`enquiry`” 的表单，则 URL 为：`https://main--wefinance--wkndform.aem.live/enquiry`。&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### 创建表单
 
-示例内容包括一个“查询”表，用作“查询”表单的模板。工作表的每一行代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，并且列标题定义[字段属性](/help/edge/docs/forms/form-components.md#available-components)。此示例表单让您在构建表单方面取得了先机。
+示例内容包括一个 “enquiry” 表，用作 “enquiry” 表单的模板。工作表的每一行代表一个[表单字段](/help/edge/docs/forms/form-components.md#available-components)，并且列标题定义[字段属性](/help/edge/docs/forms/form-components.md#available-components)。此示例表单让您在构建表单方面取得了先机。
 
-![查询表格](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
+![“Enquiry” 表单](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-让我们从更新字段标签开始。打开“查询”表进行编辑，将提交按钮的标签更改为 `Let's Talk`，并使用 AEM Sidekick 预览和发布该文件。
+让我们从更新字段标签开始。打开 “enquiry” 表进行编辑，将提交按钮的标签更改为 `Let's Talk`，并使用 AEM Sidekick 预览和发布该文件。
 
-![查询表格](/help/edge/assets/enquiry-form-preview-publish.png)
+![“Enquiry” 表单](/help/edge/assets/enquiry-form-preview-publish.png)
 
-当您预览或发布文件时，该文件的 JSON 版本将显示在新选项卡中。复制文件的预览(.aem.page)或发布(.aem.live) URL。
+当您预览或发布文件时，该文件的 JSON 版本将显示在新选项卡中。复制文件的预览（.aem.page）或发布（.aem.live）URL。
 
 ![表单电子表格的 JSON](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 打开 `enquiry` 文件，并将表单区块中的 URL 替换为上一步中复制的文件的 URL。确保 URL 是超链接。
 
-![带有电子表格 URL 的 .json URL 的查询文件](/help/edge/assets/enquiry-doc-to-embed-form.png)
+![带有电子表格 URL 的 .json URL 的 “enquiry” 文件](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
-使用 AEM Sidekick 预览和发布查询文件。
+使用 AEM Sidekick 预览和发布 “enquiry” 文档。
 
-![带有电子表格 URL 的 .json URL 的查询文件](/help/edge/assets/preview-and-publish-enquiry-document.png)
+![带有电子表格 URL 的 .json URL 的 “enquiry” 文件](/help/edge/assets/preview-and-publish-enquiry-document.png)
 
 
-要预览更新后的查询表单，请访问以下 URL：
+要预览更新后的 “enquiry” 表单，请访问以下 URL：
 
 
 ```HTML
@@ -218,12 +217,12 @@ AEM Forms Boilerplate 模板可帮助您快速开始使用预先配置了 Adapti
 
 提交按钮的标签更新为 `Let's Talk`。
 
-![查询表格](/help/edge/assets/updated-form.png)
+![“Enquiry” 表单](/help/edge/assets/updated-form.png)
 
-&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
-URL： `https://main--wefinance--wkndform.aem.live/enquiry`
-&lt;！—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+URL：`https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;!--(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 有关创建和发布新表单的详细信息，请参阅[创建表单](/help/edge/docs/forms/create-forms.md)指南。
@@ -277,12 +276,31 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 
 集成：
 
-1. 将 Adaptive Forms Block 存储库 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) 克隆到您的计算机。
+1. **添加必需的文件和文件夹**
+   1. 将[AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms)中的以下文件夹和文件复制并粘贴到AEM项目中：
 
-1. 在下载的文件夹中，找到 `blocks/form` 文件夹。复制此文件夹。现在，导航到 AEM 项目的本地 `blocks` 文件夹并将复制的表单文件夹粘贴到此处。
+      * [表单块](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)文件夹
+      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)文件夹
+      * [表单组件](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)文件夹
+      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)文件
+      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)文件
 
-1. 提交这些更改并将其推送到 GitHub 上的 AEM 项目。
+1. **更新组件定义和模型文件**
+   1. 导航到AEM项目中的`../models/_component-definition.json`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)中的[_component-definition.json文件的更改对其进行更新。
 
+   1. 导航到AEM项目中的`../models/_component-models.json`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)中的[_component-models.json文件的更改对其进行更新
+
+1. **在编辑器脚本中添加表单编辑器**
+   1. 导航到AEM项目中的`../scripts/editor-support.js`文件，并使用AEM Forms样板](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)中的[editor-support.js文件中的更改对其进行更新
+1. **更新ESLint配置文件**
+   1. 导航到AEM项目中的`../.eslintignore`文件，并添加以下代码行以防止与表单块规则引擎相关的错误：
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. 提交这些更改并将其推送到 GitHub 上的 AEM 项目存储库。
 
 就是这样！Adaptive Forms Block 现在是您的 AEM 项目的一部分。您可以开始创建表单并将其添加到 AEM 页面。
 
@@ -295,7 +313,7 @@ Adaptive Forms Block `blocks/form` 文件夹是您表单样式和代码的游乐
 如果遇到错误“无法解析模块 &quot;&#39;../../scripts/lib-franklin.js&#39; 的路径”，请导航至 [EDS 项目]/blocks/forms/form.js 文件。将 lib-franklin.js 文件替换为 aem.js 文件，可更新导入语句。
 
 * **处理 Linting 错误：**
-如果您遇到任何 Linting 错误，可以绕过它们。打开 [EDS Project]/package.json 文件并将“lint”脚本从 `"lint": "npm run lint:js && npm run lint:css"` 修改为 `"lint": "echo 'skipping linting for now'"`。保存文件并将更改提交到您的 GitHub 项目。
+如果您遇到任何 Linting 错误，可以绕过它们。打开 [EDS Project]/package.json 文件并将 “lint” 脚本从 `"lint": "npm run lint:js && npm run lint:css"` 修改为 `"lint": "echo 'skipping linting for now'"`。保存文件并将更改提交到您的 GitHub 项目。
 
 
 ## 另请参阅

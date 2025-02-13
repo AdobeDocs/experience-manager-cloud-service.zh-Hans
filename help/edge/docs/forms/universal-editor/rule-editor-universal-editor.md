@@ -6,14 +6,14 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0410e1d16ad26d3169c01cca3ad9040e3c4bfc9f
+source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 100%
+source-wordcount: '2236'
+ht-degree: 77%
 
 ---
 
-# 通用编辑器中的规则编辑器介绍
+# WYSIWYG创作中的规则编辑器简介
 
 您可以使用规则编辑器添加动态表单行为，该编辑器允许您创建规则。这些规则可实现条件字段的可见性，根据用户输入进行自动计算，并改善整体用户体验。通过简化表单填写流程，规则编辑器有助于确保准确性和效率。
 
@@ -41,21 +41,23 @@ ht-degree: 100%
 
 ## 如何启用规则编辑器扩展？
 
-在通用编辑器中，规则编辑器默认为未启用。要为您的环境启用规则编辑器扩展，请从您的工作邮件发送一封电子邮件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)，其中附上您的请求。
+在通用编辑器中，默认情况下不启用规则编辑器扩展。 要启用规则编辑器扩展，请从您的正式电子邮件ID中通过[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)向我们发送电子邮件。
 
 为您的环境启用规则编辑器扩展后，![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标会出现在编辑器的右上角。
 
 ![通用编辑器规则编辑器](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-选择要编写规则的表单对象，然后单击![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。出现规则编辑器用户界面。
+选择要为其编写规则的表单组件，然后单击![edit-rules](/help/forms/assets/edit-rules-icon.svg)图标。 出现规则编辑器用户界面。
 
 ![规则编辑器用户界面](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+
+在本文中，`form object`和`form component`可互换使用。
 
 现在，您可以开始使用[规则编辑器中可用的规则类型](#available-rule-types-in-rule-editor)为所选表单字段编写规则或业务逻辑。
 
 ## 了解规则编辑器用户界面
 
-单击![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标时，将打开规则编辑器的可视化编辑器：
+单击![edit-rules](/help/forms/assets/edit-rules-icon.svg)图标时，将打开规则编辑器的编辑器：
 
 ![规则编辑器用户界面](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -68,20 +70,20 @@ ht-degree: 100%
   </thead>
   <tbody>
     <tr>
-      <td>1. 组件-规则显示</td>
-      <td>显示启动规则编辑器的表单对象标题和当前选择的规则类型。</td>
+      <td>1.标题</td>
+      <td>显示表单组件的标题和选定的规则类型。 例如，“输入薪金总额”是为其选择了“When”规则类型的文本框组件。 </td>
     </tr>
     <tr>
       <td>2. 表单对象和函数</td>
-      <td><b>表单对象</b>选项卡显示表单中包含的所有对象的分层视图。<b>函数</b>选项卡包含一组内置函数。</td>
+      <td><b>Forms对象</b>选项卡显示表单中包含的所有组件的分层视图。 <b>Functions</b>选项卡在规则编辑器中包含一组内置函数。</td>
     </tr>
     <tr>
       <td>3. 表单对象和函数切换</td>
-      <td>点击切换按钮，可切换表单对象和功能窗格。</td>
+      <td>切换按钮交替显示或隐藏表单对象和函数窗格。 </td>
     </tr>
     <tr>
       <td>4. 可视化规则编辑器</td>
-      <td>可视化规则编辑器是规则编辑器用户界面可视化编辑器模式下编写规则的区域。</td>
+      <td>可视化规则编辑器是可用于为表单组件创建规则的界面。</td>
     </tr>
     <tr>
       <td>5. 完成和取消按钮</td>
@@ -90,7 +92,7 @@ ht-degree: 100%
   </tbody>
 </table>
 
-选择表单对象时，会列出该对象上的任何现有规则。您可以在可视化规则编辑器上查看标题并预览规则摘要。此外，您还可以更改规则顺序、编辑规则、启用/禁用规则或删除规则。
+选择表单组件时，会列出该组件上的任何现有规则。 您可以在规则编辑器中查看标题和预览规则摘要。 此外，您还可以更改规则顺序、编辑规则、启用/禁用规则或删除规则。
 
 ![显示表单对象的可用规则](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -108,51 +110,55 @@ ht-degree: 100%
   <tbody>
     <tr>
       <td>设置值</td>
-      <td>根据是否满足指定条件设置表单对象的值。</td>
+      <td>根据是否满足指定的条件设置表单组件的值。</td>
     </tr>
     <tr>
       <td>清除值</td>
-      <td>清除指定对象的值。</td>
+      <td>清除指定表单组件的值。</td>
     </tr>
     <tr>
       <td>隐藏/显示</td>
-      <td>根据条件是否满足隐藏或显示表单对象。</td>
+      <td>根据是否满足条件隐藏或显示表单组件。</td>
     </tr>
     <tr>
       <td>启用/禁用</td>
-      <td>根据条件是否满足启用或禁用表单对象。</td>
+      <td>根据是否满足条件启用或禁用表单组件。</td>
     </tr>
     <tr>
       <td>验证</td>
-      <td>验证表单或指定对象。</td>
+      <td>根据条件检查表单组件，如果不满足该条件，则显示错误。 </td>
     </tr>
     <tr>
       <td>时间</td>
-      <td>遵循<i>条件-操作-替代</i>操作规则结构或<i>条件-操作</i>规则结构。指定评估条件，并在条件满足时触发操作。</td>
+      <td>它指定评估条件，并在满足该条件时触发操作。 它遵循<i>condition-action-alternate</i>操作规则构造或<i>condition-action</i>规则构造。 </td>
     </tr>
     <tr>
       <td>格式化</td>
-      <td>根据函数或正则表达式格式化表单对象。</td>
+      <td> 当表单组件的值发生更改时，使用给定的表达式修改表单组件的显示值。</td>
     </tr>
     <tr>
       <td>调用服务</td>
-      <td>调用表单数据模型（FDM）中配置的服务。</td>
+      <td>调用使用外部API、表单数据模型或RESTful Web服务配置的服务。</td>
     </tr>
     <tr>
       <td>设置属性</td>
-      <td>根据条件设置指定对象的属性值。</td>
+      <td>根据条件设置指定表单组件的属性值。</td>
     </tr>
     <tr>
       <td>设置焦点</td>
-      <td>在指定对象上设置焦点。</td>
+      <td>将焦点设置为指定的表单组件。</td>
     </tr>
     <tr>
       <td>保存表单</td>
-      <td>保存表单。</td>
+      <td>它允许用户使用草稿和提交Forms门户组件将表单另存为草稿。 </td>
     </tr>
     <tr>
-      <td>提交/重置表单</td>
-      <td>提交或重置表单。</td>
+      <td>提交表单</td>
+      <td>提交表单。</td>
+    </tr>
+    <tr>
+      <td>重设表单</td>
+      <td>重置表单。</td>
     </tr>
     <tr>
       <td>添加/移除实例</td>
@@ -208,10 +214,10 @@ ht-degree: 100%
 1. 在通用编辑器中打开表单进行编辑。
 1. 添加以下表单组件：
    * 税款计算表单（标题）
-   * 工资总额（文本输入）
-   * 额外扣除（文本输入）
-   * 应税收入（文本输入）
-   * 应缴税款 (文本输入)
+   * 薪金总额（数字输入）
+   * 附加扣款（数字输入）
+   * 应纳税收入（数字输入）
+   * 应付税（进项编号）
    * 提交（提交按钮）
 1. 通过打开表单 `Properties`，隐藏 `Additional Deduction` 表单字段。
 
@@ -221,11 +227,10 @@ ht-degree: 100%
 
 创作表单后，编写第一条规则，即只有当工资总额超过 50000 美元时才显示 `Additional Deduction` 字段。要添加条件规则：
 
-1. 在通用编辑器中打开表单进行编辑。
-1. 在内容树中选择&#x200B;**[!UICONTROL 工资总额]**&#x200B;组件，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)。
+1. 在通用编辑器中打开表单进行编辑，然后在内容树中选择&#x200B;**[!UICONTROL Gross Salary]**&#x200B;字段，然后选择![edit-rules](/help/forms/assets/edit-rules-icon.svg)。 或者，您可以直接从&#x200B;**[!UICONTROL Forms对象]**&#x200B;窗格中选择&#x200B;**[!UICONTROL Gross Salary]**字段。
    ![规则编辑器示例 1](/help/edge/docs/forms/assets/rule-editor3.png)
 出现可视化规则编辑器界面。
-1. 单击&#x200B;**[!UICONTROL 创建]**启动规则编辑器。
+1. 单击&#x200B;**[!UICONTROL 创建]**以创建规则。
    ![规则编辑器示例 2](/help/edge/docs/forms/assets/rule-editor4.png)
 默认情况下，已选择 `Set Value Of` 规则类型。虽然不能更改或修改所选对象，但可以使用规则下拉列表选择其他规则类型。\
    ![规则编辑器示例 3](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -258,7 +263,8 @@ ht-degree: 100%
 
 接下来，编写规则计算 `Taxable Income`，即 `Gross Salary` 和 `Additional Deduction` 之间的差值（如果适用）。要在&#x200B;**[!UICONTROL 应税收入]**&#x200B;字段添加计算规则，请执行以下步骤：
 
-1. 在创作模式下，选择&#x200B;**[!UICONTROL 应税收入]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。接下来，选择&#x200B;**[!UICONTROL 创建]**启动规则编辑器。
+1. 在创作模式下，选择&#x200B;**[!UICONTROL 应税收入]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。或者，您可以直接从&#x200B;**[!UICONTROL Forms对象]**&#x200B;窗格中选择&#x200B;**[!UICONTROL 应纳税所得]**&#x200B;字段。
+1. 接下来，选择&#x200B;**[!UICONTROL 创建]**以创建规则。
    ![规则编辑器示例 13](/help/edge/docs/forms/assets/rule-editor16.png)
 1. 选择&#x200B;**[!UICONTROL 选择选项]**，并选择&#x200B;**[!UICONTROL 数学表达式]**。打开用于编写数学表达式的字段。
    ![规则编辑器示例 14](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -276,7 +282,7 @@ ht-degree: 100%
 
    现在，为 `Tax Payable ` 字段添加规则，该规则由应税收入乘以税率确定。为简单起见，假设固定税率为 `10%`。
 
-1. 在创作模式下，选择&#x200B;**[!UICONTROL 应缴税款]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。接下来，选择&#x200B;**[!UICONTROL 创建]**启动规则编辑器。
+1. 在创作模式下，选择&#x200B;**[!UICONTROL 应缴税款]**&#x200B;字段，并选择![编辑-规则](/help/forms/assets/edit-rules-icon.svg)图标。接下来，选择&#x200B;**[!UICONTROL 创建]**以创建规则。
    ![规则编辑器示例 16](/help/edge/docs/forms/assets/rule-editor19.png)
 1. 选择&#x200B;**[!UICONTROL 选择选项]**，并选择&#x200B;**[!UICONTROL 数学表达式]**。打开用于编写数学表达式的字段。
    ![规则编辑器示例 17](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -364,9 +370,15 @@ export { getFullName, days };
 
    ![规则编辑器中的自定义函数](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **预览表单**：预览具有新实施的功能的表单。
+1. **预览表单**：使用新实现的函数预览表单。
 
-## 相关文章
+## 附加信息
+
+>[!NOTE]
+>
+> 在通用编辑器中，自定义函数脚本不支持静态和动态导入。 您需要在`../[blocks]/form/functions.js`文件中添加完整的代码。
+
+本文提供了有关通用编辑器中可用的规则编辑器的有限信息。 要了解有关规则编辑器和自定义函数的更多信息，请参阅以下文章：
 
 {{see-also-rule-editor}}
 

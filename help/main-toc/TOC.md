@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的工作方式以及该软件可为您做什么。
 breadcrumb-title: 用户指南
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
+source-git-commit: 477d29855ca6ea89322cdb91e01140983243678c
 workflow-type: tm+mt
-source-wordcount: '6039'
+source-wordcount: '6052'
 ht-degree: 99%
 
 ---
@@ -1013,6 +1013,7 @@ ht-degree: 99%
       + [重定向](/help/edge/docs/redirects.md)
    + 构建表单 {#build-forms}
       + [概述](/help/edge/docs/forms/overview.md)
+      + [Edge Delivery Services Forms的工作原理](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + 开始使用 {#getting-started-edge-delivery-services-forms}
          + [快速入门](/help/edge/docs/forms/tutorial.md)
          + [使用 Google Sheets 或 Microsoft Excel 创建表单](/help/edge/docs/forms/create-forms.md)
@@ -1028,7 +1029,9 @@ ht-degree: 99%
       + 所见即所得 {#universal-editor}
          + [概述 - Edge Delivery Services Forms 通用编辑器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [快速入门](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [使用规则编辑器添加规则](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [使用规则编辑器将规则添加到](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [创建自定义组件](/help/edge/docs/forms/universal-editor/create-custom-component)
+         + [在表单中使用reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + 功能 {#advanced-features-edge-delivery-services-forms}
          + [使用表单片段](/help/edge/docs/forms/form-fragments.md)
          + [将可重复部分添加到表单&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
