@@ -1,54 +1,41 @@
 ---
-title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 的发行说明
-description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2025.1.0 版本。
+title: Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.2.0 的发行说明
+description: 了解 AEM as a Cloud Service 中的 Cloud Manager 2025.2.0 版本。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c2a0961cae6d36d8ea3116c6e7982889257f90c8
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 97%
+source-wordcount: '720'
+ht-degree: 32%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.1.0 的发行说明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.2.0 的发行说明 {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3389843928 -->
 
-了解 AEM (Adobe Experience Manager) as a Cloud Service 中的 Cloud Manager 2025.1.0 版本。
+了解 AEM (Adobe Experience Manager) as a Cloud Service 中的 Cloud Manager 2025.2.0 版本。
 
->[!NOTE]
->
->请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+
+另请参阅[当前的Adobe Experience Manager as a Cloud Service发行说明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 发行日期 {#release-date}
 
-AEM as a Cloud Service 中的 Cloud Manager 2025.1.0 的发布日期是 2025 年 1 月 22 日星期三。
+AEM as a Cloud Service中Cloud Manager 2025.2.0的发布日期是2025年2月13日星期四。
 
-下一个版本计划于 2025 年 2 月 13 日星期四发布。
-
+下一个计划发布于2025年3月13日星期四。
 
 ## 新增功能 {#what-is-new}
 
-* **代码质量规则 - SonarQube 服务器升级：** Cloud Manager 代码质量步骤将从计划于 2025 年 2 月 13 日星期四发布的 Cloud Manager 2025.2.0 版本开始使用 SonarQube Server 9.9。
+* **更新代码质量规则。**
+从2025年2月13日星期四开始，Cloud Manager代码质量步骤现在使用升级的SonarQube版本9.9.5.90363。
 
-  为做好准备，更新后的 SonarQube 规则现已在[代码质量规则](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)中提供。
+  更新后的规则可通过[此链接](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)获取，适用于 AEM as a Cloud Service 上的 Cloud Manager，可确定 Cloud Manager 管道的安全分数和代码质量。此更新可能会影响您的质量关卡，甚至可能阻碍部署。
 
-  您可以通过设置以下管道文本变量来“提前检查”新规则：
+* **Java 17和Java 21内部版本支持。**
 
-  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
-
-  此外，设置以下变量以确保代码质量步骤针对相同的提交运行（通常会跳过相同的 `commitId`）：
-
-  `CM_DISABLE_BUILD_REUSE` = `true`
-
-![变量配置页面](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
-
->[!NOTE]
->
->Adobe 建议创建一个新的 CI/CD 代码质量管道，并将其配置为与主生产管道相同的分支。在 2025 年 2 月 13 日发布&#x200B;*之前*&#x200B;设置适当的变量，以验证新实施的规则不会引入阻碍因素。
-
-* **Java 17 和 Java 21 构建支持：**&#x200B;客户现在可以使用 Java 17 或 Java 21 进行构建，从而获得性能提升和新的语言功能。有关配置步骤（包括更新 Maven 项目和库版本），请参阅[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。当构建版本设置为 Java 17 或 Java 21 时，部署的运行时为 Java 21。
+  客户现在可以使用Java 17或Java 21进行构建，从而访问性能增强功能和新的语言功能。 有关配置步骤（包括更新 Maven 项目和库版本），请参阅[构建环境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。当构建版本设置为 Java 17 或 Java 21 时，部署的运行时为 Java 21。
 
    * **功能支持**
       * 此功能将于 2025 年 2 月 13 日星期四对所有客户启用，与新 SonarQube 版本的默认推出时间相一致。
@@ -59,52 +46,46 @@ AEM as a Cloud Service 中的 Cloud Manager 2025.1.0 的发布日期是 2025 年
       * 从二月开始，将逐步向所有 Cloud Manager 环境推出沙盒和开发环境，并在四月扩展到生产环境。
       * 使用 Java 11 进行构建并希望&#x200B;*尽早*&#x200B;采用 Java 21 运行时的客户可以通过 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) 联系 Adobe。
 
-* **“CDN 配置”重命名为“域映射”：**&#x200B;作为 AEM Cloud Manager 用户界面改进的一部分，“CDN 配置”标签现已重命名为“域映射”。这一更改提高了术语与功能的一致性。<!-- CMGR-64738 -->
+* Edge Delivery Services的&#x200B;**99.99%正常运行时间报告。**
+高可用性99.99%的正常运行时间报告现在可用于符合条件的Edge Delivery Services计划。 要启用此功能，客户必须成功载入其Edge Delivery Services站点，并在Cloud Manager中应用其99.99%的Service level agreement (SLA)。
 
-  ![用户界面中的“CDN 配置”重命名为“域映射”](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+  另请参阅[SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)。
 
-* **一键配置 Edge Delivery 站点：**&#x200B;现在，Cloud Manager 允许具有适当权限和许可证的用户只需单击即可创建示例 Edge Delivery Services 站点。这一简化流程提供了以下自动化功能：
+* **改进了Edge Delivery Services的用户邀请体验。**
+邀请用户访问与Edge Delivery Services关联的内容存储库的体验得到了改进。<!-- CMGR-65331 -->
 
-   * **GitHub 集成** - 在现有组织内自动创建 GitHub 存储库，并预先配置了 Edge Delivery Services 的样板模板。
-   * **AEM Code Sync 应用程序安装** - 在存储库上安装 AEM Code Sync 应用程序，确保无缝同步和部署。
-   * **内容协作设置** - 链接指定的 Google Drive 文件夹以存储内容，为内容管理提供协作环境。
-   * **内容发布** - 用户现在可以直接从 Cloud Manager 用户界面发布已配置站点的内容，从而简化工作流程并提高效率。
-   * **增强协作** - 该平台允许用户将多个合作者添加到 Google Drive 内容存储文件夹，以促进团队合作和内容贡献。
+* **在发布实例上自动创建管理员配置文件。**
+以前，Cloud Manager允许在发布实例上手动创建管理员配置文件，但默认情况下不支持自动创建。 通过此更新，现在可在发布实例上自动创建管理员配置文件，从而提高可用性并缩短客户的设置时间。
 
-  这些增强功能旨在提高自动化程度、简化设置流程并增强 Edge Delivery Services 用户的协作。<!-- CMGR-59362 -->
+  有关详细信息，请参阅[自定义权限](/help/implementing/cloud-manager/custom-permissions.md)。
 
-  ![配置 Edge Delivery 站点](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+  ![管道活动筛选](/help/implementing/cloud-manager/release-notes/assets/product-profiles.png)
 
-  ![配置 Edge Delivery 站点对话框](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+* **过渡到Cloud Service环境的OAuth。**
+新的Cloud Service环境现在为Adobe Developer Console集成项目使用基于OAuth的服务到服务身份验证，而不是以前使用的JWT身份验证方法。 JWT身份验证已弃用，计划于2025年6月结束生命周期。
 
-* **增强对 Edge Delivery Services 站点的支持：** Cloud Manager 现在支持加入最新的 Edge Delivery Services 站点。此更新包括对内容传递网络和传递堆栈的全面重构，从而提高了稳健性和可维护性。
+* **支持EC（椭圆曲线）私钥(secp384r1)。**
+Cloud Manager现在支持`secp384r1`椭圆曲线(EC)私钥，从而改进了客户管理的OV/EV SSL证书的安全性和合规性。
+有关更多详细信息，请参阅[客户管理的OV/EV SSL证书的要求](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)。<!-- CMGR-63636 -->
 
-* **管道的高级筛选选项：** Cloud Manager 现在在“管道”页面上提供了高级筛选选项，使您能够快速访问相关数据并提高部署效率。其中一些主要功能如下：
+<!--
+## Early adoption program {#early-adoption}
 
-   * **多标准筛选：**&#x200B;使用管道名称、环境和部署代码等过滤器优化搜索结果。
-   * **简化的管道搜索：**&#x200B;轻松定位特定管道，以实现更快的导航和改进的工作流程管理。
-
-  总而言之，这些增强功能使得管道的管理和部署更加高效、更加用户友好。
-
-  ![管道过滤器功能](/help/implementing/cloud-manager/release-notes/assets/pipeline-filters.png)
-
-* **Edge Delivery Service 的自助 CDN 配置：** Edge Delivery Service 的新采用者现在可以通过 Cloud Manager 独立配置其 CDN。此次更新将支持范围从 `.hlx.page/live` 扩展到新的 `.aem.page/live`，为用户提供了更大的灵活性和简化的设置流程。
-
-## 早期采用计划 {#early-adoption}
-
-加入 Cloud Manager 早期采用计划，即有机会测试即将推出的功能。
-
-* **早期采用者计划更新 - 提供对 Bitbucket 和 GitLab 的 PR 验证支持：** Cloud Manager 现在支持 Bitbucket 和 GitLab 的云版本和自托管版本的提取请求 (PR) 验证。这个功能允许客户在合并 PR 之前，根据 Adobe 的代码质量阈值测试他们的代码更改。通过在合并之前确保更高的代码质量，此增强功能显著提高了生产流程中代码更改的成功率，缩短了产品上市时间并简化了开发工作流程。
-
-  有关“自带 Git”的更多信息（现已支持 GitLab 和 Bitbucket）以及注册成为早期采用者，请参阅 [Cloud Manager 2024 年 10 月发行说明](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket)。
-
-* **先进的测试环境：**&#x200B;专门构建的解决方案，旨在弥合开发与生产之间的差距。该环境专为企业需求量身定制，可复制生产级规格，以支持准确的用户验收测试（UAT）和全面的性能评估。
-
-  如果您有兴趣加入早期采用者计划，请[填写此表单](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAAa8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7Cpanchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dccd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638610680502164019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo3CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0)，并随您的`OrgID`向[earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com)发送电子邮件。
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
+## 错误修复
 
-<!-- ## Bug fixes -->
+* **(UI)修复了阻止在Cloud Manager中配置域的CDN的问题。**
+尝试在Cloud Manager中添加CDN配置的客户在从下拉菜单中选择域时遇到了屏幕错误。 此用户界面错误会阻止在生产环境中进行域映射，从而阻止配置过程。
+
+  此外，尽管从用户界面中删除了某些域，但这些域在后端仍无法访问。 此问题会导致与现有CDN配置冲突。
+
+  通过此修复，您现在可以从下拉列表中成功选择域，而不会遇到错误。 解决了阻止重新配置域的后端不一致问题。 最后，改进的验证现在可确保冲突域在重新添加之前被正确删除。<!-- CMGR-64888 -->
+* **（后端）修复了导致多次发送SSL到期通知的问题。**
+已识别出以下错误：SSL到期通知计划程序设计为在午夜每天运行一次，但在午夜错误地触发了每天两次，在上午12:30再次触发。 此问题导致发送多个有关过期SSL证书的冗余通知。
+
+  现在，通知计划程序每天只能按预期正确运行一次。 并且，您不会再收到重复的SSL到期通知。<!-- CMGR-64748 -->
 
 
 
