@@ -4,7 +4,7 @@ description: 了解 Universal Editor 如何实现所见即所得 (WYSIWYG) 地�
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b8d56873b7bc23295fefc35a826b8047c626649e
+source-git-commit: 2947c4cb1fad7e1c7635a0e423a4adfe23013f79
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 54%
@@ -22,7 +22,7 @@ ht-degree: 54%
 
 作者得益于通用编辑器的灵活性，因为它支持对所有形式的AEM内容进行相同的一致可视化编辑：内容片段和页面组件同样可以进行就地编辑和布局合成。 当在Web体验中并排显示时，甚至可以编辑这两种形式的内容，而作者不必切换上下文。 与AEM中以前的编辑器相比，这是一个巨大的改进，以前的编辑器仅支持一种类型的内容。
 
-开发人员受益于通用编辑器的多功能性，因为它也支持实施之间的真正分离。 它允许开发人员利用他们选择的几乎任何框架或架构，而无需施加任何SDK或技术限制。 这种灵活性甚至可以轻松为通用编辑器检测现有Web应用程序，而无需重新构建它们。
+开发人员受益于通用编辑器的多功能性，因为它也支持实施之间的真正分离。 它允许开发人员利用他们选择的几乎任何框架或体系结构，而不施加任何SDK或技术限制。 这种灵活性甚至可以轻松为通用编辑器检测现有Web应用程序，而无需重新构建它们。
 
 ## 真正的通用 {#universal}
 
@@ -39,7 +39,7 @@ ht-degree: 54%
 利用 Universal Editor 的实施的要求非常直接，并且支持以下内容：
 
 * **任意架构** — 服务器端渲染、边缘端渲染、客户端渲染等。
-* **任何Framework** - Vanilla AEM或任何第三方框架，如React、Next.js、Angular等。
+* **任何框架** - Vanilla AEM或任何第三方框架，如React、Next.js、Angular等。
 * **任何托管** – 可以本地托管到 AEM，或托管于远程域上
 
 ### 任何内容 {#any-content}
@@ -86,11 +86,11 @@ ht-degree: 54%
 
 当您探索通用编辑器并在自己的项目中进一步实施时，请牢记以下限制。
 
-* 在单个页面上作为工具引用的AEM资源(内容片段、页面、体验片段、Assets等)不得超过25个。
+* 在单个页面上，作为工具引用的AEM资源(内容片段、页面、体验片段、Assets等)不得超过25个。
 * AEM as a Cloud Service和[AEM 6.5](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)是唯一受支持的AEM后端。
 * 需要AEM as a Cloud Service版本`2023.8.13099`或更高版本。
-* 内容作者必须拥有自己的个人Experience Cloud帐户。
-* 作为AEM的一部分，通用编辑器支持与AEM相同的桌面浏览器。
+* 内容作者必须具有自己的各个Experience Cloud帐户。
+* 作为AEM的一部分，通用编辑器[支持与AEM相同的桌面浏览器。](/help/overview/supported-platforms.md)
    * 不支持这些浏览器的移动版本。
 
 {{ue-ip-allow-lists}}
