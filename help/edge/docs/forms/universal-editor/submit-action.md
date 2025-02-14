@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
+source-git-commit: da2f673319dd5cec764408b4517698a9d39031bb
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 12%
+source-wordcount: '735'
+ht-degree: 13%
 
 ---
 
@@ -140,3 +140,8 @@ ht-degree: 12%
 1. 单击后，您会看到以下选项：
    * **[!UICONTROL 在提交时]**：在提交时，可帮助您自定义在提交表单时要显示的消息。 默认情况下，成功提交表单后，会向用户显示自定义消息“感谢您提交表单”。
 您还可以通过选择**[!UICONTROL 显示消息]**&#x200B;的选项自定义表单提交的“感谢您”消息，并在富文本&#x200B;**编辑器**&#x200B;中添加/编辑您的消息。
+
+
+## 另请参阅
+
+{{see-more-forms-eds}}

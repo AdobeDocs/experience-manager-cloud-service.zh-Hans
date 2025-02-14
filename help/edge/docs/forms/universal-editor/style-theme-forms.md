@@ -6,10 +6,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: c7f973e373137654bd9c2084bd592ed392896cf1
+source-git-commit: 4fc312fe8a52b7c5733a68014136e297479ab2a0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -46,6 +46,29 @@ ht-degree: 88%
 * [框模型](https://www.w3schools.com/css/css_boxmodel.asp)：CSS 框模型将 HTML 元素的结构描述为由间距、边框和边距包围的内容区域。
 * Flexbox/网格：CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和[网格版面](https://www.w3schools.com/css/css_grid.asp)是用于创建响应式和灵活设计的强大工具。
 
+## 为 Adaptive Forms Block 设置表单样式
+
+Adaptive Forms Block 提供了标准化 HTML 结构，简化了选择表单组件并设计其样式的过程：
+
+* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file` 来修改表单的默认样式。此文件为表单提供全面的样式，并支持多步骤向导表单。它强调使用自定义 CSS 变量来轻松跨表单进行自定义、维护和统一样式设置。&lt;! — 有关将自适应Forms块添加到项目的说明，请参阅[创建表单](/help/edge/docs/forms/create-forms.md)。
+
+* Forms的&#x200B;**CSS样式**：为确保正确应用样式，请将`main .form form`选择器中特定于表单的CSS换行。 这可确保样式仅以主内容区域中的表单元素为目标，从而避免与网站其他部分发生冲突。
+
+  示例：
+
+  ```css
+  main .form form input {
+    /* Add styles specific to input fields inside the form */
+  }
+  
+  main .form form button {
+    /* Add styles specific to buttons inside the form */
+  }
+  
+  main .form form label {
+    /* Add styles specific to labels inside the form */
+  }
+  ```
 
 ## 组件结构
 
@@ -137,30 +160,6 @@ main .form form .field-first-name input {
   border-radius: 4px;
 }
 ```
-
-**为自适应Forms块设置表单样式**
-
-Adaptive Forms Block 提供了标准化 HTML 结构，简化了选择表单组件并设计其样式的过程：
-
-* **更新默认样式**：您可以通过编辑 `/blocks/form/form.css file` 来修改表单的默认样式。此文件为表单提供全面的样式，并支持多步骤向导表单。它强调使用自定义 CSS 变量来轻松跨表单进行自定义、维护和统一样式设置。&lt;! — 有关将自适应Forms块添加到项目的说明，请参阅[创建表单](/help/edge/docs/forms/create-forms.md)。
-
-* Forms的&#x200B;**CSS样式**：为确保正确应用样式，请将`main .form form`选择器中特定于表单的CSS换行。 这可确保样式仅以主内容区域中的表单元素为目标，从而避免与网站其他部分发生冲突。
-
-  示例：
-
-  ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
-  
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
-  
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
-  ```
 
 +++
 
